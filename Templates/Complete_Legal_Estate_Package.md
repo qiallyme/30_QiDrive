@@ -1,21 +1,42 @@
 ---
-title: "Complete Legal Estate Package"
-author: "QiAlly LegalEase"
-category: "Legal Documentation"
-tags: ["estate-planning", "complete-package", "legal-documents"]
 layout: page
+title: "Complete Legal Estate Package"
 slug: ""
 summary: ""
+
+# Lifecycle / publish gate
 status: active
+visibility: internal
+publish_target: none
+publish_url: ""
+
 created_at: ""
 updated_at: ""
+
+# Ownership
+author: "QiAlly LegalEase"
 owner: ""
-keywords: []
-aliases: []
-context: ""
+
+# Navigation
+nav_title: "Complete Legal Estate Package"
+nav_group: ""
+nav_order: 999
+nav_hidden: false
+is_index: false
+parent_ref: ""
+
+# Classification / safety
 sensitivity: internal
 classification: business_internal
 realm_label: ""
+
+# Discovery
+tags: ["estate-planning", "complete-package", "legal-documents"]
+keywords: []
+aliases: []
+context: ""
+
+# Identity / references
 uid: ""
 canonical_ref: ""
 source_type: manual
