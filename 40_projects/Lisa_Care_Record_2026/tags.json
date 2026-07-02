@@ -1,0 +1,277 @@
+{
+  "schema_version": "2.0",
+  "name": "Lisa Care Record 2026 Tag Overlay",
+  "description": "Folder-level overlay for Lisa Care Record notes, evidence, timeline, exhibits, medical context, communications, and related caregiver record materials.",
+  "scope": "folder",
+  "registry_type": "overlay",
+  "applies_to": "./",
+  "inherits": "global",
+  "tag_policy": {
+    "allow_new_tags_within_overlay": false,
+    "minimum_tags_per_note": 3,
+    "max_bonus": 4,
+    "always_include": [
+      "#project/lisa-care-record"
+    ],
+    "instructions": [
+      "Use this overlay only inside the Lisa Care Record folder tree.",
+      "Use allegation tags only when the note discusses an accusation or claim.",
+      "Use fact tags when the note supports or rebuts an allegation.",
+      "Use exhibit tags based on the folder or evidence category.",
+      "Use sensitivity and visibility tags based on disclosure risk."
+    ]
+  },
+  "allowed_tags": {
+    "project": [
+      "#project/lisa-care-record",
+      "#care-record",
+      "#lisa-care-record"
+    ],
+    "people": [
+      "#person/cody",
+      "#person/lisa",
+      "#person/aunt",
+      "#person/otis",
+      "#person/frank",
+      "#person/zai"
+    ],
+    "roles": [
+      "#role/caregiver",
+      "#role/dependent-adult",
+      "#role/family-member",
+      "#role/third-party",
+      "#role/provider",
+      "#role/case-manager",
+      "#role/care-agency",
+      "#role/medical-provider"
+    ],
+    "organizations": [
+      "#org/humana",
+      "#org/comfort-keepers",
+      "#org/hospital",
+      "#org/physical-therapy",
+      "#org/medicaid",
+      "#org/subsidized-housing",
+      "#org/hertz",
+      "#org/lyft"
+    ],
+    "allegations": [
+      "#allegation/neglect",
+      "#allegation/abandonment",
+      "#allegation/financial-exploitation",
+      "#allegation/debt-owed",
+      "#allegation/jeep-theft",
+      "#allegation/substance-abuse",
+      "#allegation/criminalization",
+      "#allegation/mental-health-incapacity",
+      "#allegation/ignored-messages",
+      "#allegation/blocked-contact",
+      "#allegation/refused-door",
+      "#allegation/locked-out",
+      "#allegation/housing-pressure"
+    ],
+    "facts": [
+      "#fact/care-provided",
+      "#fact/financial-support-provided",
+      "#fact/vehicle-paid-by-cody",
+      "#fact/logistical-constraint",
+      "#fact/technical-failure",
+      "#fact/withheld-funds",
+      "#fact/lost-income",
+      "#fact/unpaid-labor",
+      "#fact/underpaid-labor",
+      "#fact/hospital-support",
+      "#fact/transportation-support",
+      "#fact/household-support",
+      "#fact/medication-organization",
+      "#fact/care-coordination-attempt",
+      "#fact/safety-boundary",
+      "#fact/not-abandonment",
+      "#fact/not-neglect",
+      "#fact/not-substance-related"
+    ],
+    "exhibits": [
+      "#exhibit/a-financial-support",
+      "#exhibit/b-jeep-vehicle",
+      "#exhibit/c-caregiving-labor",
+      "#exhibit/d-pay-discrepancies",
+      "#exhibit/e-housing-transition",
+      "#exhibit/f-indianapolis-constraints",
+      "#exhibit/g-access-door-events",
+      "#exhibit/h-hospital-medical-transitions",
+      "#exhibit/i-family-os-coordination",
+      "#exhibit/j-third-party-aggression",
+      "#exhibit/k-caregiver-collapse",
+      "#exhibit/l-contradictory-demands"
+    ],
+    "financial": [
+      "#financial/support-sent",
+      "#financial/funds-withheld",
+      "#financial/funds-delayed",
+      "#financial/bill-money",
+      "#financial/vehicle-value",
+      "#financial/lost-income",
+      "#financial/cancelled-work",
+      "#financial/pay-discrepancy",
+      "#financial/missed-pay",
+      "#financial/underpaid-hours",
+      "#financial/caregiver-pay",
+      "#financial/cashapp",
+      "#financial/check",
+      "#financial/bank-transfer",
+      "#financial/receipt"
+    ],
+    "work": [
+      "#work/daily-care",
+      "#work/transportation",
+      "#work/medical-transport",
+      "#work/hospital-transition",
+      "#work/equipment-setup",
+      "#work/equipment-teardown",
+      "#work/household-setup",
+      "#work/cleaning",
+      "#work/moving",
+      "#work/organizing",
+      "#work/medication-organization",
+      "#work/care-planning",
+      "#work/family-os",
+      "#work/client-work-cancelled",
+      "#work/unpaid",
+      "#work/underpaid"
+    ],
+    "property_logistics": [
+      "#property/jeep",
+      "#property/title",
+      "#property/vehicle-use",
+      "#property/lock",
+      "#property/door-access",
+      "#property/keypad",
+      "#logistics/immobilized",
+      "#logistics/transportation-failure",
+      "#logistics/vehicle-failure",
+      "#logistics/key-fob",
+      "#logistics/dead-battery",
+      "#logistics/rental-car",
+      "#logistics/expired-plate",
+      "#logistics/device-failure",
+      "#logistics/banking-friction"
+    ],
+    "communication_threats": [
+      "#communication/text",
+      "#communication/email",
+      "#communication/call",
+      "#communication/voicemail",
+      "#communication/missed-call",
+      "#communication/delayed-response",
+      "#communication/contradictory-message",
+      "#threat/police",
+      "#threat/removal",
+      "#threat/third-party-sent",
+      "#threat/kicked-out",
+      "#threat/vehicle-sale",
+      "#threat/criminalization",
+      "#threat/od-remark",
+      "#threat/verbal-aggression",
+      "#threat/safety-concern",
+      "#threat/unannounced-visit",
+      "#threat/aggressive-knocking"
+    ],
+    "medical_care": [
+      "#medical/copd",
+      "#medical/hospitalization",
+      "#medical/rehab",
+      "#medical/discharge-planning",
+      "#medical/medication",
+      "#medical/medical-equipment",
+      "#medical/mobility",
+      "#medical/oxygen",
+      "#medical/caregiver-health",
+      "#medical/burnout",
+      "#medical/ambulance",
+      "#medical/health-decline",
+      "#medical/unsafe-care-arrangement"
+    ]
+  },
+  "tag_aliases": {
+    "#exhibit/A-financial-support": "#exhibit/a-financial-support",
+    "#exhibit/B-jeep-vehicle": "#exhibit/b-jeep-vehicle",
+    "#exhibit/C-caregiving-labor": "#exhibit/c-caregiving-labor",
+    "#exhibit/D-pay-discrepancies": "#exhibit/d-pay-discrepancies",
+    "#exhibit/E-housing-transition": "#exhibit/e-housing-transition",
+    "#exhibit/F-indianapolis-constraints": "#exhibit/f-indianapolis-constraints",
+    "#exhibit/G-access-door-events": "#exhibit/g-access-door-events",
+    "#exhibit/H-hospital-medical-transitions": "#exhibit/h-hospital-medical-transitions",
+    "#exhibit/I-family-os-coordination": "#exhibit/i-family-os-coordination",
+    "#exhibit/J-third-party-aggression": "#exhibit/j-third-party-aggression",
+    "#exhibit/K-caregiver-collapse": "#exhibit/k-caregiver-collapse",
+    "#exhibit/L-contradictory-demands": "#exhibit/l-contradictory-demands"
+  },
+  "folder_defaults": {
+    ".": [
+      "#project/lisa-care-record",
+      "#domain/caregiving",
+      "#sensitivity/confidential"
+    ],
+    "01_FORMAL_RECORD": [
+      "#type/record",
+      "#visibility/selective",
+      "#sensitivity/internal"
+    ],
+    "02_TIMELINE": [
+      "#type/timeline",
+      "#visibility/selective",
+      "#sensitivity/internal"
+    ],
+    "03_EXHIBITS": [
+      "#type/evidence",
+      "#visibility/selective",
+      "#sensitivity/confidential"
+    ],
+    "04_FINANCIAL_LEDGER": [
+      "#type/ledger",
+      "#domain/finance",
+      "#sensitivity/financial"
+    ],
+    "05_CAREGIVING_WORK": [
+      "#type/record",
+      "#domain/caregiving",
+      "#sensitivity/internal"
+    ],
+    "06_COMMUNICATIONS": [
+      "#type/communication",
+      "#visibility/selective",
+      "#sensitivity/confidential"
+    ],
+    "07_MEDICAL_AND_CARE_CONTEXT": [
+      "#domain/medical",
+      "#sensitivity/medical",
+      "#visibility/selective"
+    ],
+    "08_HOUSING_AND_PROPERTY": [
+      "#domain/evidence",
+      "#visibility/selective",
+      "#sensitivity/confidential"
+    ],
+    "99_ARCHIVE_RAW": [
+      "#type/archive",
+      "#type/evidence",
+      "#sensitivity/confidential"
+    ]
+  },
+  "keyword_suggestions": {
+    "jeep": "#property/jeep",
+    "vehicle": "#property/vehicle-use",
+    "title": "#property/title",
+    "police": "#threat/police",
+    "od": "#threat/od-remark",
+    "overdose": "#threat/od-remark",
+    "hospital": "#medical/hospitalization",
+    "rehab": "#medical/rehab",
+    "oxygen": "#medical/oxygen",
+    "morphine": "#medical/medication",
+    "comfort keepers": "#org/comfort-keepers",
+    "humana": "#org/humana",
+    "lyft": "#org/lyft",
+    "hertz": "#org/hertz"
+  }
+}

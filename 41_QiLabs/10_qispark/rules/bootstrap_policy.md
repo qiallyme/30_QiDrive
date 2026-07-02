@@ -1,0 +1,28 @@
+---
+layout: page
+title: Bootstrap Policy
+slug: ""
+summary: ""
+status: active
+created_at: ""
+updated_at: ""
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
+# Bootstrap Policy
+
+- No undocumented dependencies allowed at bootstrap.
+- Every environment variable and runtime dependency should be documented before it is treated as required.
+- Every service dependency should be verified before a page claims it is operational.

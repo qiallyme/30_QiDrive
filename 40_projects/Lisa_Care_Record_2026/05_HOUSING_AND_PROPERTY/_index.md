@@ -1,0 +1,28 @@
+---
+title: "05_HOUSING_AND_PROPERTY"
+type: index
+status: active
+generated_by: qilabs-housekeeping
+generated_at: "20260701-200047"
+---
+
+# 05_HOUSING_AND_PROPERTY
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[00_housing_summary|00 housing summary]]
+- [[01_subsidized_housing_exit|01 subsidized housing exit]]
+- [[02_move_to_house|02 move to house]]
+- [[03_locks_access_utilities|03 locks access utilities]]
+- [[04_jeep_summary|04 jeep summary]]
+- [[08_HOUSING_AND_PROPERTY|08 HOUSING AND PROPERTY]]
+- [[08_property_access_jeep_and_belongings|08 property access jeep and belongings]]
+- [[2026-05-09_s_elliott_st_household_meeting_summary_source|2026 05 09 s elliott st household meeting summary source]]
+- [[E-2026-04-15-001-household-transition|E 2026 04 15 001 household transition]]
+- [[E-2026-05-09-001-household-meeting-summary|E 2026 05 09 001 household meeting summary]]
+- [[E-2026-06-20-003-security-measures|E 2026 06 20 003 security measures]]
+- [[E-2026-06-24-001-lease-utilities|E 2026 06 24 001 lease utilities]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

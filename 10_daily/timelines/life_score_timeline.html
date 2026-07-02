@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Score Timeline & Dashboard</title>
+    <meta name="description" content="An interactive, premium dashboard and visual timeline detailing personal life scores, incidents, and milestones over a 37-year span.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #080c14;
+            --card-bg: rgba(17, 24, 39, 0.6);
+            --card-border: rgba(255, 255, 255, 0.06);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            
+            --color-stable: #10b981;
+            --color-stable-glow: rgba(16, 185, 129, 0.15);
+            --color-moderate: #f59e0b;
+            --color-moderate-glow: rgba(245, 158, 11, 0.15);
+            --color-severe: #f43f5e;
+            --color-severe-glow: rgba(244, 63, 94, 0.15);
+            
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --font-display: 'Cabinet Grotesk', sans-serif;
+            --font-mono: 'Space Grotesk', monospace;
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(244, 63, 94, 0.04) 0%, transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.02) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 5rem 1.5rem;
+        }
+
+        /* Header section */
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo-area {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 9999px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .logo-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--color-severe);
+            box-shadow: 0 0 8px var(--color-severe);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* Dashboard Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1.25rem;
+            padding: 1.75rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        }
+
+        .stat-card.severe-stat::before {
+            background: var(--color-severe);
+        }
+        .stat-card.moderate-stat::before {
+            background: var(--color-moderate);
+        }
+        .stat-card.stable-stat::before {
+            background: var(--color-stable);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .stat-value {
+            font-family: var(--font-mono);
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Chart section */
+        .chart-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 3.5rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            position: relative;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .chart-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chart-legend {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--text-secondary);
+        }
+
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            width: 100%;
+            height: 350px;
+        }
+
+        svg.interactive-chart {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+
+        .chart-line {
+            fill: none;
+            stroke: url(#line-gradient);
+            stroke-width: 4;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .chart-area {
+            fill: url(#area-gradient);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .grid-line {
+            stroke: rgba(255, 255, 255, 0.05);
+            stroke-width: 1;
+            stroke-dasharray: 4 4;
+        }
+
+        .grid-text {
+            fill: var(--text-muted);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-anchor: end;
+        }
+
+        .x-axis-text {
+            fill: var(--text-muted);
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-anchor: middle;
+        }
+
+        .chart-dot {
+            cursor: pointer;
+            transition: r 0.2s ease, fill 0.2s ease;
+        }
+
+        .chart-dot:hover {
+            r: 8px;
+        }
+
+        /* Tooltip */
+        .chart-tooltip {
+            position: absolute;
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            max-width: 250px;
+            z-index: 10;
+        }
+
+        .tooltip-year {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tooltip-score {
+            font-size: 0.75rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+
+        .tooltip-desc {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        /* Controls Section */
+        .controls-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .search-container {
+            position: relative;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 0.75rem;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            color: var(--text-primary);
+            font-family: var(--font-main);
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.85rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            fill: var(--text-muted);
+            pointer-events: none;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            font-family: var(--font-main);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-primary);
+        }
+
+        .filter-btn.active {
+            background: var(--text-primary);
+            color: var(--bg-color);
+            border-color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Timeline structure */
+        .timeline-container {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 7px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: linear-gradient(to bottom, 
+                var(--color-stable) 0%, 
+                var(--color-severe) 30%, 
+                var(--color-moderate) 70%, 
+                var(--color-stable) 100%
+            );
+            opacity: 0.2;
+            border-radius: 99px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-node {
+            position: absolute;
+            left: -2rem;
+            top: 12px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--bg-color);
+            border: 3px solid var(--text-muted);
+            transform: translateX(1px);
+            z-index: 2;
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-item.severe-node .timeline-node {
+            border-color: var(--color-severe);
+            box-shadow: 0 0 10px var(--color-severe-glow);
+        }
+        .timeline-item.moderate-node .timeline-node {
+            border-color: var(--color-moderate);
+            box-shadow: 0 0 10px var(--color-moderate-glow);
+        }
+        .timeline-item.stable-node .timeline-node {
+            border-color: var(--color-stable);
+            box-shadow: 0 0 10px var(--color-stable-glow);
+        }
+
+        .timeline-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            position: relative;
+        }
+
+        .timeline-card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+        }
+
+        .timeline-item.severe-node .timeline-card::after {
+            background: var(--color-severe);
+        }
+        .timeline-item.moderate-node .timeline-card::after {
+            background: var(--color-moderate);
+        }
+        .timeline-item.stable-node .timeline-card::after {
+            background: var(--color-stable);
+        }
+
+        .timeline-item:hover .timeline-card {
+            transform: translateX(6px);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .timeline-year {
+            font-family: var(--font-mono);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .timeline-badges {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .badge {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .badge-score {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .badge-severity {
+            background: var(--severity-bg);
+            color: var(--severity-fg);
+        }
+
+        .timeline-item.severe-node {
+            --severity-bg: rgba(244, 63, 94, 0.15);
+            --severity-fg: #fda4af;
+        }
+        .timeline-item.moderate-node {
+            --severity-bg: rgba(245, 158, 11, 0.15);
+            --severity-fg: #fde047;
+        }
+        .timeline-item.stable-node {
+            --severity-bg: rgba(16, 185, 129, 0.15);
+            --severity-fg: #6ee7b7;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .timeline-card-footer {
+            margin-top: 0.5rem;
+        }
+
+        .bar-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 99px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 99px;
+            transition: width 0.5s ease-out;
+        }
+
+        .timeline-item.severe-node .bar-fill { background: var(--color-severe); }
+        .timeline-item.moderate-node .bar-fill { background: var(--color-moderate); }
+        .timeline-item.stable-node .bar-fill { background: var(--color-stable); }
+
+        /* Card highlight animation when clicked from chart */
+        @keyframes highlight-flash {
+            0% {
+                box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+            30% {
+                box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.15);
+                border-color: var(--text-primary);
+                background: rgba(255, 255, 255, 0.08);
+            }
+            100% {
+                box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
+                border-color: var(--card-border);
+            }
+        }
+
+        .highlight-card {
+            animation: highlight-flash 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--card-bg);
+            border: 1px dashed var(--card-border);
+            border-radius: 1.5rem;
+            color: var(--text-secondary);
+            display: none;
+        }
+
+        .empty-state svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+
+            .chart-section {
+                padding: 1.25rem;
+            }
+
+            .chart-wrapper {
+                height: 250px;
+            }
+
+            .controls-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <span class="logo-dot"></span>
+            <span>DATA RECORD: LIFE SCORE</span>
+        </div>
+        <h1>Personal Event Analytics</h1>
+        <p class="subtitle">An interactive retrospective charting life scores, critical occurrences, and milestones from 1990 to 2026.</p>
+    </header>
+
+    <!-- Stats Dashboard -->
+    <section class="stats-grid">
+        <div class="stat-card" id="stat-total-years">
+            <div class="stat-label">Total Period</div>
+            <div class="stat-value">37 Yrs</div>
+            <div class="stat-desc">Continuous records (1990-2026)</div>
+        </div>
+        <div class="stat-card severe-stat" id="stat-peak">
+            <div class="stat-label">Peak Severity</div>
+            <div class="stat-value" style="color: var(--color-severe);">999</div>
+            <div class="stat-desc">Recorded in 2003 and 2023</div>
+        </div>
+        <div class="stat-card moderate-stat" id="stat-avg">
+            <div class="stat-label">Average Score</div>
+            <div class="stat-value" id="avg-val">--</div>
+            <div class="stat-desc">Overall life load level</div>
+        </div>
+        <div class="stat-card severe-stat" id="stat-critical">
+            <div class="stat-label">Severe Years</div>
+            <div class="stat-value" id="critical-count" style="color: var(--color-severe);">--</div>
+            <div class="stat-desc">Years with score above 600</div>
+        </div>
+    </section>
+
+    <!-- Data Visualization Chart -->
+    <section class="chart-section">
+        <div class="chart-header">
+            <div class="chart-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                </svg>
+                Severity Index Chart
+            </div>
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: var(--color-severe);"></span>
+                    <span>Severe (&gt;600)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: var(--color-moderate);"></span>
+                    <span>Moderate (300-600)</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: var(--color-stable);"></span>
+                    <span>Stable (&lt;300)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-wrapper">
+            <svg class="interactive-chart" id="svg-chart" viewBox="0 0 1000 300" preserveAspectRatio="none">
+                <defs>
+                    <!-- Line color gradient -->
+                    <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="var(--color-stable)" />
+                        <stop offset="15%" stop-color="var(--color-stable)" />
+                        <stop offset="30%" stop-color="var(--color-severe)" />
+                        <stop offset="50%" stop-color="var(--color-severe)" />
+                        <stop offset="70%" stop-color="var(--color-stable)" />
+                        <stop offset="90%" stop-color="var(--color-severe)" />
+                        <stop offset="100%" stop-color="var(--color-moderate)" />
+                    </linearGradient>
+                    <!-- Under area fill gradient -->
+                    <linearGradient id="area-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="rgba(147, 51, 234, 0.4)" />
+                        <stop offset="100%" stop-color="rgba(8, 12, 20, 0)" />
+                    </linearGradient>
+                </defs>
+                <!-- Rendered dynamically by JS -->
+                <g id="grid-lines"></g>
+                <path id="chart-area-path" class="chart-area" d="" />
+                <path id="chart-line-path" class="chart-line" d="" />
+                <g id="chart-dots-group"></g>
+            </svg>
+            <div class="chart-tooltip" id="chart-tooltip"></div>
+        </div>
+    </section>
+
+    <!-- Controls Row -->
+    <div class="controls-row">
+        <div class="search-container">
+            <svg class="search-icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search years or events...">
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Years</button>
+            <button class="filter-btn" data-filter="severe">Severe</button>
+            <button class="filter-btn" data-filter="moderate">Moderate</button>
+            <button class="filter-btn" data-filter="stable">Stable</button>
+        </div>
+    </div>
+
+    <!-- Timeline of Events -->
+    <section class="timeline-container">
+        <div class="timeline-line"></div>
+        <div id="timeline-list">
+            <!-- Rendered dynamically by JS -->
+        </div>
+        <div class="empty-state" id="empty-state">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/>
+            </svg>
+            <p>No timeline records found matching the current search criteria.</p>
+        </div>
+    </section>
+</div>
+
+<script>
+    // Data definition
+    const rawData = [
+        { year: 1990, score: 50, desc: "" },
+        { year: 1991, score: 75, desc: "" },
+        { year: 1992, score: 150, desc: "" },
+        { year: 1993, score: 125, desc: "" },
+        { year: 1994, score: 150, desc: "" },
+        { year: 1995, score: 750, desc: "Sexual Assaults and other Traumas" },
+        { year: 1996, score: 550, desc: "Sexual Assaults and other Traumas" },
+        { year: 1997, score: 450, desc: "Sexual Assaults and other Traumas" },
+        { year: 1998, score: 350, desc: "Sexual Assaults and other Traumas" },
+        { year: 1999, score: 150, desc: "" },
+        { year: 2000, score: 200, desc: "" },
+        { year: 2001, score: 250, desc: "Sexual Assaults and other Traumas" },
+        { year: 2002, score: 750, desc: "Suicidal Ideation, Attempted Sexual Assault and Assault with a deadly weapon" },
+        { year: 2003, score: 999, desc: "Continued Sexual Harassment, assault, violence, and more. Attempted Suicide" },
+        { year: 2004, score: 950, desc: "Continued Suicidal Ideation" },
+        { year: 2005, score: 850, desc: "Preyed on by Sexual Predators" },
+        { year: 2006, score: 750, desc: "Taken Advantage of by men" },
+        { year: 2007, score: 550, desc: "Raped" },
+        { year: 2008, score: 450, desc: "" },
+        { year: 2009, score: 300, desc: "" },
+        { year: 2010, score: 250, desc: "" },
+        { year: 2011, score: 200, desc: "" },
+        { year: 2012, score: 350, desc: "" },
+        { year: 2013, score: 450, desc: "" },
+        { year: 2014, score: 550, desc: "" },
+        { year: 2015, score: 350, desc: "" },
+        { year: 2016, score: 750, desc: "" },
+        { year: 2017, score: 550, desc: "" },
+        { year: 2018, score: 350, desc: "" },
+        { year: 2019, score: 250, desc: "" },
+        { year: 2020, score: 200, desc: "" },
+        { year: 2021, score: 200, desc: "" },
+        { year: 2022, score: 200, desc: "" },
+        { year: 2023, score: 999, desc: "Raped, Joel Deported" },
+        { year: 2024, score: 850, desc: "Raped, Business Collapses, loss of support, misunderstood, taken advantage of" },
+        { year: 2025, score: 950, desc: "Raped" },
+        { year: 2026, score: 500, desc: "Mother Turns on Cody after he gave everything, even his own health." }
+    ];
+
+    // Helper: Determine severity class
+    function getSeverity(score) {
+        if (score > 600) return 'severe';
+        if (score >= 300) return 'moderate';
+        return 'stable';
+    }
+
+    function getSeverityColor(score) {
+        if (score > 600) return 'var(--color-severe)';
+        if (score >= 300) return 'var(--color-moderate)';
+        return 'var(--color-stable)';
+    }
+
+    // Stats calculations
+    function calculateStats() {
+        const sum = rawData.reduce((acc, curr) => acc + curr.score, 0);
+        const avg = Math.round(sum / rawData.length);
+        const critical = rawData.filter(d => d.score > 600).length;
+
+        document.getElementById('avg-val').textContent = avg;
+        document.getElementById('critical-count').textContent = critical + ' Yrs';
+    }
+
+    // SVG Line chart generator
+    function drawChart() {
+        const svg = document.getElementById('svg-chart');
+        const gridGroup = document.getElementById('grid-lines');
+        const dotsGroup = document.getElementById('chart-dots-group');
+        const linePath = document.getElementById('chart-line-path');
+        const areaPath = document.getElementById('chart-area-path');
+        const tooltip = document.getElementById('chart-tooltip');
+
+        // Clear dynamically drawn elements
+        gridGroup.innerHTML = '';
+        dotsGroup.innerHTML = '';
+
+        const width = 1000;
+        const height = 300;
+        const paddingLeft = 50;
+        const paddingRight = 30;
+        const paddingTop = 30;
+        const paddingBottom = 40;
+
+        const chartWidth = width - paddingLeft - paddingRight;
+        const chartHeight = height - paddingTop - paddingBottom;
+
+        // Draw horizontal gridlines & text
+        const gridValues = [0, 250, 500, 750, 1000];
+        gridValues.forEach(val => {
+            const y = paddingTop + chartHeight - (val / 1000) * chartHeight;
+            
+            // Gridline
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', paddingLeft);
+            line.setAttribute('y1', y);
+            line.setAttribute('x2', width - paddingRight);
+            line.setAttribute('y2', y);
+            line.setAttribute('class', 'grid-line');
+            gridGroup.appendChild(line);
+
+            // Grid Label
+            const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            text.setAttribute('x', paddingLeft - 10);
+            text.setAttribute('y', y + 4);
+            text.setAttribute('class', 'grid-text');
+            text.textContent = val;
+            gridGroup.appendChild(text);
+        });
+
+        // Compute points coordinates
+        const points = rawData.map((d, index) => {
+            const x = paddingLeft + (index / (rawData.length - 1)) * chartWidth;
+            const y = paddingTop + chartHeight - (d.score / 1000) * chartHeight;
+            return { x, y, data: d };
+        });
+
+        // Draw path string
+        let dLine = '';
+        let dArea = `M ${points[0].x} ${paddingTop + chartHeight} `;
+
+        points.forEach((pt, idx) => {
+            if (idx === 0) {
+                dLine += `M ${pt.x} ${pt.y} `;
+            } else {
+                // Straight connection
+                dLine += `L ${pt.x} ${pt.y} `;
+            }
+            dArea += `L ${pt.x} ${pt.y} `;
+        });
+
+        dArea += `L ${points[points.length - 1].x} ${paddingTop + chartHeight} Z`;
+
+        linePath.setAttribute('d', dLine);
+        areaPath.setAttribute('d', dArea);
+
+        // Draw dots and interactive trigger targets
+        points.forEach((pt, idx) => {
+            // Draw x-axis labels periodically (every 5 years)
+            if (pt.data.year % 5 === 0 || idx === 0 || idx === points.length - 1) {
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', pt.x);
+                text.setAttribute('y', height - 12);
+                text.setAttribute('class', 'x-axis-text');
+                text.textContent = pt.data.year;
+                gridGroup.appendChild(text);
+            }
+
+            // Glowing Outer Ring (only on severe score points)
+            if (pt.data.score > 600) {
+                const pulseCircle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                pulseCircle.setAttribute('cx', pt.x);
+                pulseCircle.setAttribute('cy', pt.y);
+                pulseCircle.setAttribute('r', 8);
+                pulseCircle.setAttribute('fill', 'none');
+                pulseCircle.setAttribute('stroke', getSeverityColor(pt.data.score));
+                pulseCircle.setAttribute('stroke-width', 1.5);
+                pulseCircle.setAttribute('opacity', 0.6);
+                dotsGroup.appendChild(pulseCircle);
+            }
+
+            // Core Interactive dot
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('cx', pt.x);
+            circle.setAttribute('cy', pt.y);
+            circle.setAttribute('r', 5);
+            circle.setAttribute('fill', getSeverityColor(pt.data.score));
+            circle.setAttribute('class', 'chart-dot');
+            circle.setAttribute('data-year', pt.data.year);
+            
+            // Events
+            circle.addEventListener('mouseenter', (e) => {
+                circle.setAttribute('r', 8);
+                
+                // Position and show tooltip
+                const wrapperRect = svg.parentElement.getBoundingClientRect();
+                const svgRect = svg.getBoundingClientRect();
+                
+                // Map SVG coordinate back to actual screen coordinate inside the wrapper
+                const ratioX = svgRect.width / width;
+                const ratioY = svgRect.height / height;
+                
+                const tooltipX = pt.x * ratioX;
+                const tooltipY = pt.y * ratioY - 10;
+                
+                tooltip.style.left = `${tooltipX}px`;
+                tooltip.style.top = `${tooltipY}px`;
+                tooltip.style.transform = 'translate(-50%, -100%)';
+                
+                const severity = getSeverity(pt.data.score);
+                const sevColor = getSeverityColor(pt.data.score);
+                const descText = pt.data.desc ? pt.data.desc : 'No major incidents.';
+                
+                tooltip.innerHTML = `
+                    <div class="tooltip-year">
+                        <span>${pt.data.year}</span>
+                        <span class="tooltip-score" style="background: ${sevColor}20; color: ${sevColor}; border: 1px solid ${sevColor}30;">
+                            Score ${pt.data.score}
+                        </span>
+                    </div>
+                    <div class="tooltip-desc">${descText}</div>
+                `;
+                
+                tooltip.style.opacity = '1';
+            });
+
+            circle.addEventListener('mouseleave', () => {
+                circle.setAttribute('r', 5);
+                tooltip.style.opacity = '0';
+            });
+
+            circle.addEventListener('click', () => {
+                const targetCard = document.getElementById(`card-${pt.data.year}`);
+                if (targetCard) {
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Flash effect
+                    targetCard.classList.remove('highlight-card');
+                    void targetCard.offsetWidth; // Trigger reflow to restart animation
+                    targetCard.classList.add('highlight-card');
+                }
+            });
+
+            dotsGroup.appendChild(circle);
+        });
+    }
+
+    // Render Timeline List
+    function renderTimeline(filter = 'all', searchQuery = '') {
+        const listContainer = document.getElementById('timeline-list');
+        const emptyState = document.getElementById('empty-state');
+        listContainer.innerHTML = '';
+        
+        let filtered = rawData;
+
+        // Apply filter category
+        if (filter === 'severe') {
+            filtered = filtered.filter(d => d.score > 600);
+        } else if (filter === 'moderate') {
+            filtered = filtered.filter(d => d.score >= 300 && d.score <= 600);
+        } else if (filter === 'stable') {
+            filtered = filtered.filter(d => d.score < 300);
+        }
+
+        // Apply Search query
+        if (searchQuery.trim() !== '') {
+            const query = searchQuery.toLowerCase();
+            filtered = filtered.filter(d => 
+                d.year.toString().includes(query) || 
+                d.score.toString().includes(query) || 
+                d.desc.toLowerCase().includes(query)
+            );
+        }
+
+        if (filtered.length === 0) {
+            emptyState.style.display = 'block';
+            return;
+        } else {
+            emptyState.style.display = 'none';
+        }
+
+        filtered.forEach(item => {
+            const severity = getSeverity(item.score);
+            const severityLabel = severity.charAt(0).toUpperCase() + severity.slice(1);
+            
+            const itemDiv = document.createElement('div');
+            itemDiv.className = `timeline-item ${severity}-node`;
+            itemDiv.id = `card-${item.year}`;
+
+            // Scale calculations (out of 1000)
+            const percent = (item.score / 1000) * 100;
+            const descText = item.desc ? item.desc : 'Standard year - no major trauma or incidents recorded.';
+
+            itemDiv.innerHTML = `
+                <div class="timeline-node"></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="timeline-year">${item.year}</span>
+                        <div class="timeline-badges">
+                            <span class="badge badge-score">Score: ${item.score}</span>
+                            <span class="badge badge-severity">${severityLabel}</span>
+                        </div>
+                    </div>
+                    <div class="timeline-desc">${descText}</div>
+                    <div class="timeline-card-footer">
+                        <div class="bar-container">
+                            <div class="bar-fill" style="width: ${percent}%"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            listContainer.appendChild(itemDiv);
+        });
+
+        // Dim non-matching points on the graph
+        const dots = document.querySelectorAll('.chart-dot');
+        dots.forEach(dot => {
+            const dotYear = parseInt(dot.getAttribute('data-year'));
+            const isMatch = filtered.some(fd => fd.year === dotYear);
+            if (isMatch) {
+                dot.style.opacity = '1';
+                dot.style.pointerEvents = 'auto';
+            } else {
+                dot.style.opacity = '0.15';
+                dot.style.pointerEvents = 'none';
+            }
+        });
+    }
+
+    // App Initialization
+    document.addEventListener('DOMContentLoaded', () => {
+        calculateStats();
+        drawChart();
+        renderTimeline();
+
+        // Handle filters
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                const searchQuery = document.getElementById('search-input').value;
+                renderTimeline(filter, searchQuery);
+            });
+        });
+
+        // Handle Search input
+        const searchInput = document.getElementById('search-input');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value;
+            const activeFilterBtn = document.querySelector('.filter-btn.active');
+            const filter = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'all';
+            renderTimeline(filter, query);
+        });
+
+        // Redraw chart on window resize
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                drawChart();
+                // Dim lines according to current filters
+                const activeFilterBtn = document.querySelector('.filter-btn.active');
+                const filter = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'all';
+                const searchQuery = document.getElementById('search-input').value;
+                renderTimeline(filter, searchQuery);
+            }, 100);
+        });
+    });
+</script>
+
+</body>
+</html>

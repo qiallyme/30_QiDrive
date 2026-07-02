@@ -1,0 +1,245 @@
+{
+  "schema_version": "2.0",
+  "name": "QiLabs Global Tag Registry",
+  "description": "Lean global tag vocabulary for QiLabs Markdown, vault, repo, docs, records, configs, and operational notes. Project-specific tags belong in folder-level overlay tags.json files.",
+  "scope": "global",
+  "registry_type": "base",
+  "updated_at": "2026-07-01",
+  "tag_policy": {
+    "allow_new_tags": false,
+    "minimum_tags_per_note": 3,
+    "maximum_tags_per_note": 8,
+    "absolute_maximum_tags_per_note": 12,
+    "always_include": [],
+    "style": {
+      "case": "lowercase",
+      "separator": "hyphen",
+      "namespace_separator": "/",
+      "prefix_required": "#"
+    },
+    "instructions": [
+      "Use global tags for broad classification only.",
+      "Use folder-level overlay tags.json files for case, client, project, people, exhibit, and domain-specific tags.",
+      "Prefer one type tag, one status tag, and one sensitivity or visibility tag when possible.",
+      "Do not add tags merely because a word appears in the note; tag the note's purpose and handling needs.",
+      "Do not auto-apply folder overlay defaults outside the folder where the overlay was found.",
+      "Flag unknown tags for review instead of deleting them automatically."
+    ]
+  },
+  "overlay_policy": {
+    "enabled": true,
+    "inherit_global": true,
+    "overlay_file_names": [
+      "tags.json",
+      "_qiconfig/tags.json",
+      ".qilabs/tags.json"
+    ],
+    "resolution": "For each Markdown file, load the global registry first, then merge overlay registries found from the vault/repo root down to the file's folder.",
+    "merge_rules": {
+      "allowed_tags": "union by category; overlay tags are valid only for files under the overlay folder",
+      "folder_defaults": "deep merge; nearest overlay wins on same folder key",
+      "keyword_suggestions": "deep merge; nearest overlay wins on same keyword",
+      "minimum_tags_per_note": "max(global minimum, overlay minimum if provided)",
+      "maximum_tags_per_note": "min(global absolute maximum, global maximum + overlay max_bonus if provided)",
+      "always_include": "overlay-only; never applied globally unless declared in global registry"
+    },
+    "default_overlay_max_bonus": 2,
+    "require_overlay_scope": true
+  },
+  "allowed_tags": {
+    "system": [
+      "#qilabs",
+      "#system/qilabs",
+      "#system/qispark",
+      "#system/qiserver",
+      "#system/qivault",
+      "#system/qiapps",
+      "#system/qicode",
+      "#system/qimemo",
+      "#system/qifinance",
+      "#system/qiconfig"
+    ],
+    "type": [
+      "#type/note",
+      "#type/document",
+      "#type/index",
+      "#type/template",
+      "#type/standard",
+      "#type/decision",
+      "#type/task",
+      "#type/report",
+      "#type/record",
+      "#type/timeline",
+      "#type/ledger",
+      "#type/communication",
+      "#type/evidence",
+      "#type/source",
+      "#type/code",
+      "#type/config",
+      "#type/manifest",
+      "#type/media",
+      "#type/archive"
+    ],
+    "status": [
+      "#status/inbox",
+      "#status/draft",
+      "#status/active",
+      "#status/review",
+      "#status/final",
+      "#status/published",
+      "#status/archived",
+      "#status/deprecated",
+      "#status/blocked",
+      "#status/needs-review"
+    ],
+    "visibility": [
+      "#visibility/private",
+      "#visibility/internal",
+      "#visibility/selective",
+      "#visibility/public"
+    ],
+    "sensitivity": [
+      "#sensitivity/low",
+      "#sensitivity/internal",
+      "#sensitivity/confidential",
+      "#sensitivity/legal",
+      "#sensitivity/financial",
+      "#sensitivity/medical",
+      "#sensitivity/personal"
+    ],
+    "domain": [
+      "#domain/operations",
+      "#domain/technical",
+      "#domain/legal",
+      "#domain/finance",
+      "#domain/medical",
+      "#domain/caregiving",
+      "#domain/creative",
+      "#domain/personal",
+      "#domain/client",
+      "#domain/evidence",
+      "#domain/transportation"
+    ],
+    "workflow": [
+      "#workflow/intake",
+      "#workflow/triage",
+      "#workflow/review",
+      "#workflow/reconcile",
+      "#workflow/migrate",
+      "#workflow/normalize",
+      "#workflow/validate",
+      "#workflow/publish",
+      "#workflow/archive"
+    ],
+    "action": [
+      "#action/follow-up",
+      "#action/verify",
+      "#action/update",
+      "#action/link",
+      "#action/rename",
+      "#action/move",
+      "#action/split",
+      "#action/merge",
+      "#action/delete-review",
+      "#action/push"
+    ],
+    "quality": [
+      "#quality/canonical",
+      "#quality/source-of-truth",
+      "#quality/generated",
+      "#quality/manual",
+      "#quality/stale",
+      "#quality/duplicate",
+      "#quality/broken-link",
+      "#quality/missing-metadata"
+    ]
+  },
+  "folder_defaults": {
+    "00_QiLabs.workspace": [
+      "#system/qilabs",
+      "#domain/operations",
+      "#visibility/internal"
+    ],
+    "10_QiSpark": [
+      "#system/qispark",
+      "#type/document",
+      "#visibility/internal"
+    ],
+    "20_QiServer": [
+      "#system/qiserver",
+      "#domain/technical",
+      "#visibility/internal"
+    ],
+    "40_QiVault": [
+      "#system/qivault",
+      "#domain/evidence",
+      "#sensitivity/confidential"
+    ],
+    "toolbox": [
+      "#type/code",
+      "#domain/technical",
+      "#workflow/validate"
+    ],
+    "_housekeeping": [
+      "#system/qiconfig",
+      "#workflow/normalize",
+      "#quality/generated"
+    ],
+    "_qiconfig": [
+      "#system/qiconfig",
+      "#type/config",
+      "#quality/source-of-truth"
+    ],
+    "_templates": [
+      "#type/template",
+      "#quality/source-of-truth",
+      "#visibility/internal"
+    ],
+    "archive": [
+      "#type/archive",
+      "#status/archived",
+      "#visibility/internal"
+    ],
+    "inbox": [
+      "#status/inbox",
+      "#workflow/intake",
+      "#status/needs-review"
+    ]
+  },
+  "keyword_suggestions": {
+    "index": "#type/index",
+    "template": "#type/template",
+    "standard": "#type/standard",
+    "decision": "#type/decision",
+    "adr": "#type/decision",
+    "manifest": "#type/manifest",
+    "config": "#type/config",
+    "timeline": "#type/timeline",
+    "ledger": "#type/ledger",
+    "evidence": "#type/evidence",
+    "receipt": "#type/evidence",
+    "screenshot": "#type/evidence",
+    "medical": "#domain/medical",
+    "legal": "#domain/legal",
+    "finance": "#domain/finance",
+    "tax": "#domain/finance",
+    "qicode": "#system/qicode",
+    "qispark": "#system/qispark",
+    "qiserver": "#system/qiserver",
+    "qivault": "#system/qivault",
+    "housekeeping": "#workflow/normalize",
+    "broken link": "#quality/broken-link",
+    "duplicate": "#quality/duplicate",
+    "missing metadata": "#quality/missing-metadata"
+  },
+  "llm_output_format": {
+    "required_json_output": {
+      "tags": [],
+      "confidence": "low | medium | high",
+      "rationale": "",
+      "needs_review": true,
+      "unknown_tags": [],
+      "source_registry": "global | overlay | mixed"
+    }
+  }
+}

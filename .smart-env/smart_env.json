@@ -1,0 +1,86 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true,
+    "min_chars": 200
+  },
+  "smart_sources": {
+    "min_chars": 200,
+    "embed_model": {
+      "adapter": "transformers",
+      "transformers": {
+        "model_key": "TaylorAI/bge-micro-v2"
+      }
+    },
+    "excluded_headings": "",
+    "file_exclusions": "Untitled,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/neurodivergence_truth_misreadings.md,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/30_neurodivergence truth misreadings.md,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html/truthfulness_anxiety_phenotype_infographic.html.md,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol/conflict navigation protocol.md,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol/conflict_navigation_protocol.md,_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/audio/how_systemic_overwhelming_crushed_cody_life.m4a.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.25_Title_Action_and_Automation/_1.25_Title_Action_and_Automation.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.24_Title_Relations_and_Exchange/1.24_Title_Relations_and_Exchange.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.25_Title_Action_and_Automation/1.25_Title_Action_and_Automation.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.24_Title_Relations_and_Exchange/_1.24_Title_Relations_and_Exchange.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.26_Title_Identity_and_Integrity/1.26_Title_Identity_and_Integrity.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.26_Title_Identity_and_Integrity/_1.26_Title_Identity_and_Integrity.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/00_QiCode/1.29_Title_Ethics_and_Evolution/_1.29_Title_Ethics_and_Evolution.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/D_pay_discrepancies/D03.missed_punches_and_corrections.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/B_jeep_vehicle/B03.acknowledgment_as_codys_vehicle.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/F_indianapolis_constraints/F02.rental_plate_and_sticker_issue.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/F_indianapolis_constraints/F04.banking_and_income_constraints.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/F_indianapolis_constraints/F03.phone_device_technical_failures.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/H_hospital_medical_transitions/H03.equipment_and_home_setup.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/H_hospital_medical_transitions/H02.transport_and_delivery_tasks.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/G_access_and_door_events/G02.lock_code_battery_issue.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/G_access_and_door_events/G03.front_door_hearing_limitations.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/I_family_os_coordination/I02.medication_organization.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/I_family_os_coordination/I04.custom_app_or_system_attempts.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/K_caregiver_collapse/K02.ambulance_or_hospital_event.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/L_contradictory_demands/L01.coming_home_not_coming_home.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/L_contradictory_demands/L02.get_out_police_threats.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/J_third_party_aggression/J02.jail_and_criminalization_comments.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/40_projects/Lisa_Care_Record_2026/03_EXHIBITS/J_third_party_aggression/J03.shame_and_where_is_she_messages.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/20_freeze flight patterns/freeze_flight_patterns.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/10_communication breakdown/communication_breakdown.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/50_shutdown in high conflict/shutdown_high_conflict.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/vulnerability cascade,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/_manifestation_capsule_template.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/40_self-trust distortions/self-trust_distortions.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/anxiety_response.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/attachment_reactions.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/dissociation_patterns.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/othello_error_effect.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/vulnerability_cascade,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/neurodivergence_truth_misreadings.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/case_analysis_cody_rice_velasquez.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/_FILE_ORGANIZATION_SUMMARY.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/60_Trauma Records/2023_business_collapse/2023_business_collapse.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/30_conflict scripts/conflict_scripts.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/20_conflict navigation/conflict_navigation_protocol.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/10_boundaries/boundary_protocols.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/40_regulation methods/regulation_methods.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/adhd manifestations/adhd.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse/2023_business_collapse.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol/conflict_navigation_protocol.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/vulnerability_cascade/vulnerability_cascade.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/vulnerability cascade/vulnerability_cascade.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html/truthfulness_anxiety_phenotype_infographic.html.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/audio/how_systemic_overwhelming_crushed_cody_life.m4a.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports/cognitive_load_studies.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports/social_executive_function.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/video/the_vulnerability_cascade.mp4.md,40_projects/Lisa_Care_Record_2026/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports/deception_detection_misreads.md",
+    "folder_exclusions": ""
+  },
+  "language": "en",
+  "re_import_wait_time": 13,
+  "smart_chat_threads": {
+    "chat_model": {
+      "adapter": "ollama",
+      "ollama": {}
+    }
+  },
+  "smart_notices": {},
+  "smart_view_filter": {
+    "expanded_view": false,
+    "render_markdown": true,
+    "show_full_path": false
+  },
+  "version": "",
+  "new_user": true,
+  "models": {
+    "embedding_platform": "transformers",
+    "chat_completion_platform": "open_router"
+  },
+  "connections_lists": {
+    "results_collection_key": "smart_sources",
+    "score_algo_key": "similarity",
+    "connections_post_process": "none",
+    "results_limit": 20,
+    "connections_view_location": "right",
+    "exclude_frontmatter_blocks": true,
+    "connections_list_component_key": "connections_list_v4",
+    "connections_list_item_component_key": "connections_list_item_v3",
+    "frontmatter_filter_include": "",
+    "frontmatter_filter_exclude": "",
+    "components": {
+      "connections_list_v4": {
+        "show_graph": true
+      },
+      "connections_list_item_v3": {
+        "render_markdown": true,
+        "show_full_path": false
+      }
+    },
+    "footer_connections": false
+  },
+  "context_items": {
+    "template_preset": "xml_structured",
+    "template_before": "<item loc=\"{{KEY}}\" at=\"{{TIME_AGO}}\">",
+    "template_after": "</item>"
+  },
+  "event_logs": {
+    "native_notice_info": false,
+    "native_notice_warning": true,
+    "native_notice_error": true,
+    "native_notice_attention": false,
+    "native_notice_milestone": true
+  },
+  "lookup_lists": {
+    "results_collection_key": "smart_blocks",
+    "score_algo_key": "similarity",
+    "results_limit": 20
+  },
+  "smart_contexts": {
+    "template_preset": "xml_structured",
+    "template_before": "<context>\n{{FILE_TREE}}",
+    "template_after": "</context>"
+  },
+  "embedding_models": {
+    "default_model_key": "transformers#1782676482706"
+  }
+}

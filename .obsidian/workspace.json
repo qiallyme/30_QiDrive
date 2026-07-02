@@ -1,0 +1,334 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "5479f061d8bc7e44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aa3d0bf99a7b6aca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "41_QiLabs/10_qispark/10_QiSpark/10_QiOS/90_Templates/_1.30_Templates.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "_1.30_Templates"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "046b1c4184e578a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "7511be8e5a32d2db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6eda121786a5714f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "aa471ea80da359e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 250.51103591918945
+  },
+  "right": {
+    "id": "a97d5932031af1ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "96da5e83d906ab0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5549faba865dc6a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "e87b900b33456ea3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "c5d9d47d3d66a712",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d6507d6c60eb1c20",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "14c5b4248b0d37ac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "907a1f77d87144ff",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "5442c49564862866",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
+            }
+          },
+          {
+            "id": "af6e57d5f2ffc3e5",
+            "type": "leaf",
+            "state": {
+              "type": "semantic-auto-linker-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "semantic-auto-linker-view"
+            }
+          },
+          {
+            "id": "6e7ec38e8f188a48",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-visualizer",
+              "state": {},
+              "icon": "git-fork",
+              "title": "Smart connections visualizer"
+            }
+          },
+          {
+            "id": "226b5e8edf8073ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "master_template.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for master_template"
+            }
+          },
+          {
+            "id": "e8f73657c199641a",
+            "type": "leaf",
+            "state": {
+              "type": "tag-network-view",
+              "state": {},
+              "icon": "git-graph",
+              "title": "Tag Network Visualization"
+            }
+          },
+          {
+            "id": "da20b8adee659dbf",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "ReferenceMapIconScroll",
+              "title": "Reference Map"
+            }
+          },
+          {
+            "id": "505e384d1082c07f",
+            "type": "leaf",
+            "state": {
+              "type": "setup-view",
+              "state": {},
+              "icon": "cog",
+              "title": "Setup"
+            }
+          },
+          {
+            "id": "7c638a6c63337f07",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "ReferenceMapIconScroll",
+              "title": "Reference Map"
+            }
+          }
+        ],
+        "currentTab": 9
+      }
+    ],
+    "direction": "horizontal",
+    "width": 350.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-kanban:Create new board": false,
+      "markwhen:Create new Markwhen file": false,
+      "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false,
+      "omnisearch:Omnisearch": false,
+      "semantic-auto-linker:Semantic auto-linker": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "tasks-map:Open tasks map view": false,
+      "vault-timeline:Open Vault Timeline": false,
+      "templater-obsidian:Templater": false,
+      "ai-tagger-universe:Analyze and tag current note": false,
+      "ai-tagger-universe:View tag relationships network": false,
+      "map-of-content:Update Map of Content": false,
+      "smart-connections-visualizer:Open smart connections visualizer": false,
+      "smart-second-brain:Open S2B Chat": false,
+      "webpage-html-export:Export as HTML": false,
+      "reference-map:Reference Map": false
+    }
+  },
+  "active": "6eda121786a5714f",
+  "lastOpenFiles": [
+    "40_projects/Lisa_Care_Record_2026/tags.json",
+    "_qiconfig/TAG_REGISTRY_PATTERN.md",
+    "_qiconfig/templates/tags.folder-overlay.template.json",
+    "_qiconfig/templates",
+    "_qiconfig/New folder",
+    "_qiconfig/tags.folder-overlay.template.json",
+    "40_projects/Lisa_Care_Record_2026/tags.lisa-care-record.overlay.json",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/lisa_care_timeline_spine_merged_2026-07-02.csv",
+    "40_projects/Lisa_Care_Record_2026/10_EXHIBITS/C_caregiving_labor/E-TBD-COUCH-001-couch-purchase-pickup.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-021-populated-mvp-csv.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-020-simplified-mvp-spreadsheet.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-019-google-sheet-spine-decision.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-018-folder-tree-duplication.md",
+    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-017-care-case-docs-generated.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS/drafts_not_sent/E-2026-06-30-016-aps-draft-not-sent.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS/drafts_not_sent",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS",
+    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-015-professional-type-wording.md",
+    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-014-reporter-confidentiality.md",
+    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-013-aps-reporting-lane.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-012-otis-housing-theory.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS/06_third_party_pressure.md/E-2026-06-30-011-otis-safety-context.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS/06_third_party_pressure.md",
+    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS",
+    "40_projects/Lisa_Care_Record_2026/08_THIRD_PARTY_PRESSURE/E-2026-06-30-010-otis-on-lease.md",
+    "40_projects/Lisa_Care_Record_2026/10_EXHIBITS/G_access_and_door_events/E-2026-06-30-009-frank-social-workers-access.md",
+    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-008-cat-accusation.md",
+    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-007-cops-following-message.md",
+    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-006-cat-to-jeep-pivot.md",
+    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-005-cody-cat-response.md",
+    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-004-police-threat-cat.md",
+    "40_projects/Lisa_Care_Record_2026/99_EVIDENCE_RAW/E-2026-06-30-003-cat-food-water-question.md",
+    "40_projects/Lisa_Care_Record_2026/99_EVIDENCE_RAW/E-2026-06-30-002-lisa-asks-cat.md",
+    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-001-mr-link-fed-before-leaving.md",
+    "40_projects/Lisa_Care_Record_2026/06_CAREGIVING_WORK/E-2026-06-28-003-financial-loss-expansion.md",
+    "_qiconfig/scripts/one_time_archived/qicode_root_manifest.csv",
+    "10_qispark/90_ARCH/legacy/qios_00_genesis.canvas",
+    "10_qispark/90_ARCH/legacy/qios_runtime_mindmap.canvas",
+    "Untitled.canvas",
+    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
+    "systemic_patterns_infographic.png",
+    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
+    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas"
+  ]
+}

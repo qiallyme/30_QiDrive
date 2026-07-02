@@ -1,0 +1,384 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e91f8aa22896b98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "60ef9782387d35d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "40_projects/Lisa_Care_Record_2026/00_OVIERVIEW/index.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "a1eedec4ec6a8795",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_OVIERVIEW/00_START_HERE.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "00_START_HERE"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "046b1c4184e578a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "7511be8e5a32d2db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6eda121786a5714f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "aa471ea80da359e2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 486.5
+  },
+  "right": {
+    "id": "a97d5932031af1ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "96da5e83d906ab0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5549faba865dc6a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "e87b900b33456ea3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "c5d9d47d3d66a712",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d6507d6c60eb1c20",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "14c5b4248b0d37ac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_decision_record/01_private_decision_log_not_sent_report.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 01_private_decision_log_not_sent_report"
+            }
+          },
+          {
+            "id": "907a1f77d87144ff",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "5442c49564862866",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "af6e57d5f2ffc3e5",
+            "type": "leaf",
+            "state": {
+              "type": "semantic-auto-linker-view",
+              "state": {},
+              "icon": "git-branch",
+              "title": "Semantic auto-linker"
+            }
+          },
+          {
+            "id": "6e7ec38e8f188a48",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-visualizer",
+              "state": {},
+              "icon": "git-fork",
+              "title": "Smart connections visualizer"
+            }
+          },
+          {
+            "id": "226b5e8edf8073ce",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "01_decision_record/01_private_decision_log_not_sent_report.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for 01_private_decision_log_not_sent_report"
+            }
+          },
+          {
+            "id": "e8f73657c199641a",
+            "type": "leaf",
+            "state": {
+              "type": "tag-network-view",
+              "state": {},
+              "icon": "git-graph",
+              "title": "Tag Network Visualization"
+            }
+          },
+          {
+            "id": "da20b8adee659dbf",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "ReferenceMapIconScroll",
+              "title": "Reference Map"
+            }
+          },
+          {
+            "id": "505e384d1082c07f",
+            "type": "leaf",
+            "state": {
+              "type": "setup-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "setup-view"
+            }
+          },
+          {
+            "id": "7b327ab2050bdb89",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "reference-map-view"
+            }
+          },
+          {
+            "id": "918f24cf4cc95d51",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "reference-map-view"
+            }
+          },
+          {
+            "id": "5d03f5de4776738c",
+            "type": "leaf",
+            "state": {
+              "type": "reference-map-view",
+              "state": {},
+              "icon": "ReferenceMapIconScroll",
+              "title": "Reference Map"
+            }
+          }
+        ],
+        "currentTab": 9
+      },
+      {
+        "id": "1b52f29e8fbd2d5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b652f1d733824652",
+            "type": "leaf",
+            "state": {
+              "type": "map-of-content",
+              "state": {},
+              "icon": "stacked-levels",
+              "title": "Map of Content"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 350.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-kanban:Create new board": false,
+      "markwhen:Create new Markwhen file": false,
+      "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false,
+      "omnisearch:Omnisearch": false,
+      "semantic-auto-linker:Semantic auto-linker": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "tasks-map:Open tasks map view": false,
+      "vault-timeline:Open Vault Timeline": false,
+      "templater-obsidian:Templater": false,
+      "ai-tagger-universe:Analyze and tag current note": false,
+      "ai-tagger-universe:View tag relationships network": false,
+      "smart-connections-visualizer:Open smart connections visualizer": false,
+      "smart-second-brain:Open S2B Chat": false,
+      "webpage-html-export:Export as HTML": false,
+      "reference-map:Reference Map": false,
+      "map-of-content:Update Map of Content": false
+    }
+  },
+  "active": "a1eedec4ec6a8795",
+  "lastOpenFiles": [
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/60_QiApps/QiLife/10_product/10_product.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/60_QiApps/QiLife/00_overview/00_overview.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/60_QiApps/applications/qinote/qinote.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/60_QiApps/applications/CareLite/CareLite.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/services/productivity/productivity.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/infrastructure/cockpit/cockpit.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/tools/tools.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/pipelines/pipelines.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/paperless/paperless.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/legacy_tools/legacy_tools.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/80_sync_backups/80_sync_backups.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/70_memory/70_memory.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/60_retrieval/60_retrieval.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/50_graphs/50_graphs.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/40_RAG/40_RAG.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/40_embeddings/40_embeddings.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/30_chunking/30_chunking.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/20_extraction/20_extraction.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/30_QiMemory/10_ingestion/10_ingestion.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/50_QiConnect/workflows/workflows.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/50_QiConnect/integrations/integrations.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/20_QiServer/50_QiConnect/apis/apis.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/90_Templates/KB/KB.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/90_Templates/Mini/Mini.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/90_Templates/Docs/Docs.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/10_qispark/10_QiSpark/90_Templates/Client/Client.md",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/20_Mechanisms/1.20.30_mechanisms/vulnerability_cascade",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/vulnerability cascade",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/adhd manifestations",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/20_conflict navigation",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/40_Navigation_Strategies/40_regulation methods",
+    "_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/50_shutdown in high conflict",
+    "Untitled.canvas",
+    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
+    "systemic_patterns_infographic.png",
+    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
+    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
+    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas"
+  ]
+}

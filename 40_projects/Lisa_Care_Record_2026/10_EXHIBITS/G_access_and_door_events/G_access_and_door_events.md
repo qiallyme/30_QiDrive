@@ -1,0 +1,34 @@
+---
+layout: section
+title: G Access And Door Events
+slug: g-access-and-door-events
+status: active
+updated_at: "2026-06-30"
+tags:
+  - projects
+  - lisa-care-record
+source_type: manual
+summary: ""
+created_at: ""
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+template_key: master-template
+---
+
+# G Access And Door Events
+
+Claim: door/access issues need context: unannounced visits, hearing limitations, lock/keypad issues, illness, sleep, and safety concerns.
+
+- [[G00_access_and_door_events_summary]]
+- [[G01_unannounced_visits]]
+- [[G02_lock_code_battery_issue]]
+- [[G03_front_door_hearing_limitations]]
+- [[04_timeline_escalation_and_contradictions]]

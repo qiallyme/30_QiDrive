@@ -1,0 +1,41 @@
+---
+layout: page
+title: Event: Lockout/access incident while Lisa inpatient
+slug: lockout-access-incident-while-lisa-inpatient
+status: Needs screenshots/notes
+updated_at: 2026-07-02
+tags:
+  - projects
+  - lisa-care-record
+  - housing-property
+source_type: manual
+summary: ""
+created_at: ""
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+template_key: master-template
+---
+
+# Event: Lockout/access incident while Lisa inpatient
+
+- **Event ID**: `E-2026-06-20-002`
+- **Date**: `2026-06-20`
+- **Time**: `evening`
+- **Category**: `Housing / Property`
+- **People**: `Cody; Lisa; Otis; Frank; friends/visitors`
+- **Evidence / Link**: `G-ACCESS-2026-06-20`
+- **Related Ledger**: ``
+- **Related Evidence**: ``
+- **Estimated Hours**: ``
+- **Status**: `Needs screenshots/notes`
+
+## Notes
+Cody reports being locked out / access interfered with while Lisa inpatient; Frank/Otis access concerns.

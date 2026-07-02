@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Truthfulness–Anxiety Phenotype</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Palette: Electric Indigo & Cyan
+         Primary: #1a237e (Deep Indigo)
+         Secondary: #2962ff (Bright Blue)
+         Accent: #00b0ff (Cyan)
+         Alert: #f50057 (Pink/Red)
+         Background: #f5f7fa
+    -->
+    
+    <style>
+        body { font-family: 'Roboto', sans-serif; background-color: #f5f7fa; color: #1f2937; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 640px) {
+            .chart-container { height: 300px; }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2962ff, #00b0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .flow-arrow { font-size: 2rem; color: #9ca3af; display: flex; justify-content: center; align-items: center; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <header class="bg-[#1a237e] text-white py-16 px-4 shadow-lg relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==')]"></div>
+        <div class="max-w-6xl mx-auto relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">THE TRUTHFULNESS–ANXIETY PHENOTYPE</h1>
+            <p class="text-xl md:text-2xl font-light text-[#00b0ff] max-w-3xl mx-auto">
+                Why honest people look deceptive: The science of the "Othello Error" in neurodivergent and high-anxiety individuals.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- Section 1: Definition & The Othello Error -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="bg-white rounded-xl shadow-md p-8 border-l-8 border-[#2962ff]">
+                <h2 class="text-3xl font-bold text-[#1a237e] mb-4">The Othello Error</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    Standard lie detection fails because it assumes stress equals guilt. The <strong>Truthfulness–Anxiety Phenotype</strong> describes honest individuals who exhibit "deceptive" cues—shaking, gaze aversion, speech hesitation—not because they are lying, but because they are terrified of being disbelieved.
+                </p>
+                <div class="flex items-center space-x-4">
+                    <div class="text-5xl">🎭</div>
+                    <div>
+                        <p class="font-bold text-lg text-gray-800">The Tragic Misinterpretation</p>
+                        <p class="text-sm text-gray-500">Paul Ekman's term for mistaking the fear of disbelief for the fear of detection.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Core Components of the Phenotype</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="flex items-start p-4 bg-blue-50 rounded-lg">
+                        <span class="text-2xl mr-4">⚡</span>
+                        <div>
+                            <h4 class="font-bold text-[#2962ff]">High Arousal</h4>
+                            <p class="text-sm text-gray-600">Visible autonomic activation: sweating, shaking, rapid breathing.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-4 bg-cyan-50 rounded-lg">
+                        <span class="text-2xl mr-4">🧠</span>
+                        <div>
+                            <h4 class="font-bold text-[#00b0ff]">Cognitive Load Displacement</h4>
+                            <p class="text-sm text-gray-600">Mental energy consumed by emotion regulation, not fabrication.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start p-4 bg-pink-50 rounded-lg">
+                        <span class="text-2xl mr-4">≠</span>
+                        <div>
+                            <h4 class="font-bold text-[#f50057]">Incongruence</h4>
+                            <p class="text-sm text-gray-600">Mismatch between the truth of the statement and the demeanor of guilt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Neurological Basis (Radar Chart) -->
+        <section>
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-[#1a237e]">The Neural Signature</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-2">
+                    Behavior mimics deception, but the neural drivers are distinct. Anxious truth-tellers show hyper-activation in areas associated with threat processing and emotional regulation, rather than the executive control required for lying.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center">
+                    <h3 class="text-lg font-bold text-gray-700 mb-4 w-full text-center">Brain Activation: Liar vs. Anxious Truth-Teller</h3>
+                    <div class="chart-container">
+                        <canvas id="neuralRadarChart"></canvas>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2 text-center italic">Comparison of relative activation intensity across key brain regions.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white p-5 rounded-lg shadow border-l-4 border-[#f50057]">
+                        <h4 class="font-bold text-[#f50057] flex items-center"><span class="mr-2">🔥</span> Amygdala Hyper-Activation</h4>
+                        <p class="text-sm text-gray-600 mt-1">
+                            While a liar fears punishment, the anxious truth-teller experiences <strong>Rejection Sensitive Dysphoria (RSD)</strong>. The amygdala screams "Danger!" triggering a Fight or Flight response that looks like guilt.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border-l-4 border-[#2962ff]">
+                        <h4 class="font-bold text-[#2962ff] flex items-center"><span class="mr-2">🛡️</span> PFC: Effortful Regulation</h4>
+                        <p class="text-sm text-gray-600 mt-1">
+                            A liar uses the Prefrontal Cortex to invent a story. The phenotype uses it to <strong>suppress panic</strong> and manage sensory overload, leaving less processing power for articulate speech.
+                        </p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow border-l-4 border-[#00b0ff]">
+                        <h4 class="font-bold text-[#00b0ff] flex items-center"><span class="mr-2">⚠️</span> ACC: Performance Anxiety</h4>
+                        <p class="text-sm text-gray-600 mt-1">
+                            The Anterior Cingulate Cortex detects the conflict. In this phenotype, it creates a feedback loop: "They don't believe me -> Panic increases -> Look more guilty."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Cognitive Load Paradox (Bar Chart) -->
+        <section class="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+            <h2 class="text-3xl font-bold text-[#1a237e] mb-6">The Cognitive Load Paradox</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700 mb-4">
+                        Traditional theory states that lying takes more mental effort than truth-telling. This is false for the Truthfulness–Anxiety Phenotype. The combination of <strong>truth-retrieval</strong> plus <strong>extreme anxiety management</strong> creates a cognitive load that far exceeds that of a prepared liar.
+                    </p>
+                    <ul class="space-y-3 mt-6">
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-3 h-3 bg-green-500 rounded-full mr-3"></span>
+                            <strong>Standard Truth:</strong> Low effort, direct memory access.
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-3 h-3 bg-red-500 rounded-full mr-3"></span>
+                            <strong>Lying:</strong> High effort, requires fabrication and suppression.
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <span class="w-3 h-3 bg-[#2962ff] rounded-full mr-3"></span>
+                            <strong>Anxious Truth:</strong> Extreme effort (Memory + Sensory Regulation + Fear Suppression).
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-4">
+                     <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2 text-center">Cognitive Load Intensity</h3>
+                    <div class="chart-container">
+                        <canvas id="cognitiveLoadChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Neurodivergence Breakdown (Cards) -->
+        <section>
+            <h2 class="text-3xl font-bold text-[#1a237e] mb-8 text-center">Neurodivergence & The Deception Trap</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- ADHD -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#ff9100] card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">⚡</span>
+                        <h3 class="text-xl font-bold text-gray-800">ADHD</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-2">The "Guilty" Executive</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• <strong>Correction:</strong> "I was there at 4... no, 4:15." Honesty looks like backtracking.</li>
+                        <li>• <strong>Impulsivity:</strong> Interrupting is read as defensiveness.</li>
+                        <li>• <strong>Fidgeting:</strong> Stimming (tapping, picking) is read as nervous energy leakage.</li>
+                    </ul>
+                </div>
+
+                <!-- ASD -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#00e5ff] card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🧩</span>
+                        <h3 class="text-xl font-bold text-gray-800">Autism (ASD)</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-2">The Baseline Deviation</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• <strong>Gaze Aversion:</strong> Looking away to reduce sensory input, often interpreted as shame.</li>
+                        <li>• <strong>Flat Affect:</strong> Lack of visible emotion during trauma recall is read as "cold-bloodedness."</li>
+                        <li>• <strong>Literalness:</strong> Specificity can be mistaken for evasion.</li>
+                    </ul>
+                </div>
+
+                <!-- PTSD -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#f50057] card-hover">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">❤️‍🩹</span>
+                        <h3 class="text-xl font-bold text-gray-800">Trauma / PTSD</h3>
+                    </div>
+                    <p class="text-sm text-gray-500 font-bold mb-2">The Defense Mechanism</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>• <strong>Hyperarousal:</strong> Entering an interview already in "Fight or Flight."</li>
+                        <li>• <strong>Dissociation:</strong> "Checking out" mimics the cognitive pause of a liar.</li>
+                        <li>• <strong>Defensiveness:</strong> Reaction to perceived threat, not protection of a lie.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Internal vs External Diagram (HTML Structure) -->
+        <section class="bg-[#1a237e] text-white rounded-2xl p-8 shadow-xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Visual Analysis: Internal State vs. External Cues</h2>
+            <div class="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
+                
+                <!-- Diagram Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-900">
+                    
+                    <!-- Left Column: The Liar -->
+                    <div class="flex flex-col space-y-4">
+                        <div class="bg-red-100 p-4 rounded-lg border-2 border-red-300 text-center shadow">
+                            <h4 class="font-bold text-red-800">Internal State: The Liar</h4>
+                            <p class="text-xs mt-2">Goal: Fabricate Reality</p>
+                        </div>
+                        <div class="flow-arrow">⬇</div>
+                        <div class="bg-red-50 p-4 rounded-lg border border-red-200 text-center">
+                            <p class="font-bold text-red-700">Fear of Detection</p>
+                            <p class="text-xs">Amygdala activation due to consequence</p>
+                        </div>
+                        <div class="flow-arrow">↘</div>
+                    </div>
+
+                    <!-- Middle Column: Observer -->
+                    <div class="flex flex-col justify-end space-y-4 md:mt-32">
+                        <div class="bg-white p-6 rounded-xl border-4 border-gray-800 text-center shadow-2xl relative z-10">
+                            <h4 class="font-black text-xl mb-2">THE OBSERVED BEHAVIOR</h4>
+                            <div class="flex justify-center space-x-2 text-2xl mb-2">
+                                <span>🫣</span> <span>😰</span> <span>🦶</span>
+                            </div>
+                            <p class="font-bold text-gray-700">Fidgeting • Gaze Aversion • Stuttering</p>
+                            <div class="my-4 border-t border-gray-300"></div>
+                            <p class="text-sm font-bold text-gray-500 uppercase">Observer's Interpretation</p>
+                            <div class="mt-2 bg-gray-800 text-white py-2 px-4 rounded font-bold">
+                                DECEPTION / GUILT
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Anxious Truth-Teller -->
+                    <div class="flex flex-col space-y-4">
+                        <div class="bg-blue-100 p-4 rounded-lg border-2 border-blue-300 text-center shadow">
+                            <h4 class="font-bold text-blue-800">Internal State: Truth-Teller</h4>
+                            <p class="text-xs mt-2">Goal: Be Believed</p>
+                        </div>
+                        <div class="flow-arrow">⬇</div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-blue-50 p-2 rounded border border-blue-200 text-center text-xs flex flex-col justify-center">
+                                <span class="font-bold text-blue-700">Fear of Disbelief</span>
+                            </div>
+                            <div class="bg-cyan-50 p-2 rounded border border-cyan-200 text-center text-xs flex flex-col justify-center">
+                                <span class="font-bold text-cyan-700">Sensory Overload</span>
+                            </div>
+                        </div>
+                        <div class="flow-arrow">↙</div>
+                    </div>
+
+                </div>
+                <p class="text-center text-blue-200 mt-6 text-sm italic">Notice: Identical external behaviors stem from diametrically opposed internal states.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: Diagnostic Cross-Map (Interactive-style Layout) -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Text Context -->
+                <div class="lg:col-span-1">
+                    <h2 class="text-3xl font-bold text-[#1a237e] mb-4">Decoding the Signals</h2>
+                    <p class="text-gray-600 mb-6">
+                        We must separate signal from noise. This diagnostic map reinterprets common "deception cues" through the lens of neurodivergence and anxiety.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg shadow border-l-4 border-[#2962ff]">
+                        <h4 class="font-bold text-[#2962ff]">Key Takeaway</h4>
+                        <p class="text-sm text-gray-600">
+                            Context is everything. Without a baseline, "looking away" is biologically meaningless.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Table/List -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-xl shadow overflow-hidden">
+                        <div class="grid grid-cols-12 bg-gray-100 p-4 font-bold text-gray-700 border-b">
+                            <div class="col-span-4">Behavioral Cue</div>
+                            <div class="col-span-4 text-red-500">Traditional Interpretation</div>
+                            <div class="col-span-4 text-[#2962ff]">Phenotype Interpretation</div>
+                        </div>
+                        
+                        <!-- Row 1 -->
+                        <div class="grid grid-cols-12 p-4 border-b hover:bg-gray-50 transition">
+                            <div class="col-span-4 font-medium text-gray-800 flex items-center"><span class="mr-2">👀</span> Avoids Eye Contact</div>
+                            <div class="col-span-4 text-sm text-gray-600">Hiding something; shame.</div>
+                            <div class="col-span-4 text-sm text-[#1a237e] font-medium">Reducing sensory input to process audio.</div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="grid grid-cols-12 p-4 border-b hover:bg-gray-50 transition">
+                            <div class="col-span-4 font-medium text-gray-800 flex items-center"><span class="mr-2">🗣️</span> Excessive Detail</div>
+                            <div class="col-span-4 text-sm text-gray-600">Filibustering; over-selling.</div>
+                            <div class="col-span-4 text-sm text-[#1a237e] font-medium">Infodumping; context-blindness.</div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="grid grid-cols-12 p-4 border-b hover:bg-gray-50 transition">
+                            <div class="col-span-4 font-medium text-gray-800 flex items-center"><span class="mr-2">🦶</span> Fidgeting</div>
+                            <div class="col-span-4 text-sm text-gray-600">Nervous energy leakage.</div>
+                            <div class="col-span-4 text-sm text-[#1a237e] font-medium">Stimming for self-regulation.</div>
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="grid grid-cols-12 p-4 hover:bg-gray-50 transition">
+                            <div class="col-span-4 font-medium text-gray-800 flex items-center"><span class="mr-2">⏸️</span> Long Pauses</div>
+                            <div class="col-span-4 text-sm text-gray-600">Constructing a lie.</div>
+                            <div class="col-span-4 text-sm text-[#1a237e] font-medium">Auditory processing delay.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: The C.A.L.M. Protocol -->
+        <section class="bg-gradient-to-br from-[#1a237e] to-[#2962ff] rounded-2xl p-10 text-white shadow-2xl">
+            <h2 class="text-3xl font-bold mb-2 text-center">The C.A.L.M. Protocol</h2>
+            <p class="text-center text-blue-200 mb-10">A Standardized Framework for Identification</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- C -->
+                <div class="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20">
+                    <div class="text-5xl font-black text-[#00b0ff] mb-2 opacity-50">C</div>
+                    <h3 class="text-xl font-bold mb-2">Contextual Baseline</h3>
+                    <p class="text-sm text-gray-100">Establish behavior in low-stakes settings first. Does the subject fidget during rapport building? That's a baseline, not a cue.</p>
+                </div>
+                <!-- A -->
+                <div class="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20">
+                    <div class="text-5xl font-black text-[#00b0ff] mb-2 opacity-50">A</div>
+                    <h3 class="text-xl font-bold mb-2">Alternative Hypothesis</h3>
+                    <p class="text-sm text-gray-100">Force the brain to ask: "What else could cause this?" Check for medical/neurodivergent disclosures (ADHD, ASD).</p>
+                </div>
+                <!-- L -->
+                <div class="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20">
+                    <div class="text-5xl font-black text-[#00b0ff] mb-2 opacity-50">L</div>
+                    <h3 class="text-xl font-bold mb-2">Load Management</h3>
+                    <p class="text-sm text-gray-100">Reduce cognitive load. Allow the subject to look away or draw. If the story remains consistent, the cues are anxiety.</p>
+                </div>
+                <!-- M -->
+                <div class="bg-white/10 backdrop-blur rounded-lg p-6 border border-white/20">
+                    <div class="text-5xl font-black text-[#00b0ff] mb-2 opacity-50">M</div>
+                    <h3 class="text-xl font-bold mb-2">Micro-Ex Re-evaluation</h3>
+                    <p class="text-sm text-gray-100">Ignore "fear" expressions. Focus on <strong>Verifiable Detail</strong>. Truth-tellers provide sensory-rich details liars avoid.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Real-Life Impact & Footer -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="bg-white p-8 rounded-xl shadow-lg border-t-8 border-[#f50057]">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Real-Life Impact</h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-[#1a237e]">⚖️ Legal System</h4>
+                        <p class="text-sm text-gray-600">High rates of false confessions among neurodivergent youths who confess simply to end the intolerable anxiety of interrogation.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[#1a237e]">💼 Employment</h4>
+                        <p class="text-sm text-gray-600">Qualified candidates rejected for "lacking confidence" or "seeming shady" due to poor eye contact or fidgeting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-6xl font-black text-[#1a237e] mb-2">54%</p>
+                <p class="text-xl text-gray-500 font-light mb-4">Average accuracy of human lie detection (barely above chance)</p>
+                <p class="text-sm text-gray-400">Moving away from "body language myths" toward content verification is the only way to protect these individuals from systemic bias.</p>
+            </div>
+        </section>
+        
+        <footer class="text-center text-gray-400 text-sm py-8 border-t">
+            <p>Analysis based on Truthfulness–Anxiety Phenotype Research • 2025</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- Helper Function: Label Wrapping ---
+        function wrapLabels(labels, limit) {
+            return labels.map(label => {
+                if (label.length <= limit) return label;
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = words[0];
+
+                for (let i = 1; i < words.length; i++) {
+                    if ((currentLine + " " + words[i]).length <= limit) {
+                        currentLine += " " + words[i];
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = words[i];
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            });
+        }
+
+        // --- Common Chart Options ---
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                tooltip: {
+                    backgroundColor: 'rgba(26, 35, 126, 0.9)',
+                    titleFont: { size: 14, family: 'Roboto' },
+                    bodyFont: { size: 13, family: 'Roboto' },
+                    padding: 12,
+                    cornerRadius: 8,
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    labels: {
+                        font: { family: 'Roboto', size: 12 },
+                        color: '#374151'
+                    }
+                }
+            }
+        };
+
+        // --- Chart 1: Neural Radar Chart ---
+        const radarCtx = document.getElementById('neuralRadarChart').getContext('2d');
+        const radarLabels = wrapLabels(['Amygdala (Fear/Threat)', 'Prefrontal Cortex (Regulation)', 'Anterior Cingulate (Conflict)', 'Broca\'s Area (Speech Latency)'], 16);
+
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: radarLabels,
+                datasets: [
+                    {
+                        label: 'Anxious Truth-Teller',
+                        data: [95, 85, 90, 80],
+                        backgroundColor: 'rgba(0, 176, 255, 0.2)', // Cyan transparent
+                        borderColor: '#00b0ff',
+                        pointBackgroundColor: '#00b0ff',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Deceptive Individual',
+                        data: [60, 90, 70, 50],
+                        backgroundColor: 'rgba(245, 0, 87, 0.2)', // Pink transparent
+                        borderColor: '#f50057',
+                        pointBackgroundColor: '#f50057',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                ...commonOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(0,0,0,0.1)' },
+                        grid: { color: 'rgba(0,0,0,0.1)' },
+                        pointLabels: {
+                            font: { size: 11, family: 'Roboto', weight: 'bold' },
+                            color: '#1a237e'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 100
+                    }
+                }
+            }
+        });
+
+        // --- Chart 2: Cognitive Load Bar Chart ---
+        const loadCtx = document.getElementById('cognitiveLoadChart').getContext('2d');
+        const loadLabels = wrapLabels(['Standard Truth', 'Deceptive Fabrication', 'Anxious Truth-Telling'], 16);
+
+        new Chart(loadCtx, {
+            type: 'bar',
+            data: {
+                labels: loadLabels,
+                datasets: [{
+                    label: 'Cognitive Load Intensity (0-100)',
+                    data: [20, 70, 95],
+                    backgroundColor: [
+                        '#4caf50', // Green for Standard Truth
+                        '#f50057', // Pink for Deception
+                        '#2962ff'  // Blue for Anxious Truth
+                    ],
+                    borderRadius: 6,
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                ...commonOptions,
+                plugins: {
+                    ...commonOptions.plugins,
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: { borderDash: [5, 5] },
+                        title: { display: true, text: 'Relative Cognitive Effort' }
+                    },
+                    x: {
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

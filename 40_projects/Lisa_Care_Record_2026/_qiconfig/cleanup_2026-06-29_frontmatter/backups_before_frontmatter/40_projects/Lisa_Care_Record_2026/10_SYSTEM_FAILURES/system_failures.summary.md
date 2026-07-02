@@ -1,0 +1,2 @@
+﻿# system failures summary
+

@@ -1,0 +1,39 @@
+---
+layout: section
+title: Third Party Pressure
+slug: third-party-pressure
+status: active
+updated_at: "2026-06-30"
+tags:
+  - projects
+  - lisa-care-record
+source_type: manual
+summary: ""
+created_at: ""
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+template_key: master-template
+---
+
+# Third Party Pressure
+
+## Index
+
+- [[00_third_party_pressure_summary]]
+- [[01_aunt_aggression]]
+- [[02_friends_assumptions]]
+- [[03_outside_people_not_helping]]
+- [[04_grandview_tower_community_rules_critique]]
+- [[J00_third_party_aggression_summary]]
+
+## Current Summary
+
+This section preserves outside pressure, assumptions, and mischaracterizations. It should be supported with screenshots or message exports before external use.

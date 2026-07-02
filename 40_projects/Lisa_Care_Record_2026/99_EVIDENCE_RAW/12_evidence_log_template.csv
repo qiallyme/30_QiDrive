@@ -1,0 +1,4 @@
+date_time,source_person,evidence_type,screenshot_filename,issue_tags,factual_summary,private_notes,report_ready_yes_no
+2026-06-30,Lisa,text screenshot,,cat;police threat;Mr Link,"Lisa threatened police/charges over cat and asked if Mr. Link was okay/alive.","Attach screenshot from cat thread.",yes
+2026-06-30,Lisa,text screenshot,,Otis;Frank;access;social workers,"Lisa referenced Frank/Otis and stated people could not get into the residence.","Useful for access-chaos pattern.",yes
+2026-06-30,Lisa,text screenshot,,Jeep;money;property,"Lisa demanded Jeep/keys and made money accusations.","Keep separate from APS core concern unless relevant to coercion/property conflict.",partial

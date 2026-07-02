@@ -1,0 +1,13 @@
+action,path,reason
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_01_truth/title_01_truth.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_02_self/title_02_self.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_03_identity/title_03_identity.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_04_mind/title_04_mind.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_05_work/title_05_work.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_06_people/title_06_people.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_07_ethics/title_07_ethics.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_08_cycles_legacy/title_08_cycles_legacy.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/title_09_qispark_bridge/title_09_qispark_bridge.md,Legal-style citations before stable IDs.
+rewrite,10_qispark/10_QiSpark/00_QiCode/_index.md,Updated index citation examples and title labels.
+rewrite,10_qispark/10_QiSpark/00_QiCode/citation_guide.md,Rewrote citation guide around legal citations first.
+rewrite,10_qispark/10_QiSpark/00_QiCode/01_core_overview.md,Updated overview to use Title labels first.
