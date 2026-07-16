@@ -2,7 +2,7 @@
 layout: page
 title: GINA (Generative Intelligence Neural Archivist)
 slug: gina-generative-intelligence-neural-archivist
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

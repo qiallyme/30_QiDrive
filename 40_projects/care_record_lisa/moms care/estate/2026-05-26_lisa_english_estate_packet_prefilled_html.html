@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lisa Annette English Estate Planning Packet</title>
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #4b5563;
+      --line: #9ca3af;
+      --soft: #f3f4f6;
+      --paper: #ffffff;
+      --accent: #2563eb;
+      --danger: #b91c1c;
+      --ok: #047857;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--soft);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 1px solid #d1d5db;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .toolbar-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-subtitle {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+
+    .toolbar-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-secondary { background: #e5e7eb; color: #111827; }
+    .btn-danger { background: #fee2e2; color: var(--danger); }
+    #saveStatus { color: var(--ok); font-size: 13px; opacity: 0; transition: opacity .25s ease; }
+
+    .document {
+      width: min(100%, 980px);
+      margin: 28px auto 80px;
+      background: var(--paper);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.16);
+      padding: 56px;
+    }
+
+    .page {
+      page-break-before: always;
+      break-before: page;
+      padding-top: 14px;
+      margin-top: 52px;
+      border-top: 3px double #111827;
+    }
+
+    .page:first-child {
+      page-break-before: auto;
+      break-before: auto;
+      margin-top: 0;
+      border-top: 0;
+    }
+
+    .cover {
+      min-height: 880px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 6px double #111827;
+      padding: 64px 40px;
+    }
+
+    .cover h1 {
+      font-size: 46px;
+      line-height: 1.12;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 36px;
+    }
+
+    .cover h2 {
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--muted);
+      margin: 18px 0 8px;
+    }
+
+    h1, h2, h3, h4 { color: #111827; }
+
+    h1.section-title {
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 10px;
+      margin: 0 0 22px;
+    }
+
+    h2 {
+      font-size: 22px;
+      border-bottom: 1px solid #d1d5db;
+      padding-bottom: 6px;
+      margin: 30px 0 14px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 24px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    p { margin: 0 0 14px; }
+    li { margin-bottom: 6px; }
+
+    .notice {
+      background: #f9fafb;
+      border: 1px solid #d1d5db;
+      border-left: 6px solid #111827;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .warning {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-left: 6px solid #ea580c;
+      padding: 16px 18px;
+      margin: 18px 0;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 24px;
+      margin: 14px 0 20px;
+    }
+
+    .field-full { grid-column: 1 / -1; }
+
+    label.field-label {
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #374151;
+      margin-bottom: 4px;
+    }
+
+    input[type="date"], select, textarea, .inline-field {
+      width: 100%;
+      max-width: 100%;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    input[type="date"], select, textarea.line-field, .inline-field {
+      border: 0;
+      border-bottom: 1.5px solid var(--line);
+      background: transparent;
+      padding: 6px 4px;
+      min-height: 34px;
+    }
+
+    textarea.field, td textarea {
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: #fff;
+      padding: 8px;
+      min-height: 58px;
+    }
+
+    textarea {
+      resize: vertical;
+      overflow: hidden;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    textarea.short { min-height: 38px; }
+    textarea.medium { min-height: 72px; }
+    textarea.large { min-height: 130px; }
+
+    textarea.cover-field {
+      text-align: center;
+      font-weight: 800;
+      max-width: 620px;
+      font-size: 30px;
+      border: 0;
+      border-bottom: 1.5px solid var(--line);
+      background: transparent;
+      resize: none;
+      overflow: hidden;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      padding: 8px;
+    }
+
+    textarea.inline-field {
+      display: inline-block;
+      width: 260px;
+      min-height: 30px;
+      vertical-align: bottom;
+      resize: vertical;
+      overflow: hidden;
+      white-space: pre-wrap;
+    }
+
+    textarea.inline-small { width: 80px; }
+    textarea.inline-med { width: 220px; }
+    textarea.inline-large { width: 360px; }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--accent);
+      background: #eff6ff;
+    }
+
+    .checkbox-list { display: grid; gap: 8px; margin: 10px 0 16px; }
+    .check-row { display: flex; gap: 10px; align-items: flex-start; break-inside: avoid; }
+    input[type="checkbox"], input[type="radio"] { width: 18px; height: 18px; margin-top: 4px; flex: 0 0 auto; }
+
+    table {
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 24px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 8px;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    th {
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+    }
+
+    td textarea, td select { font-size: 14px; min-height: 48px; }
+
+    .signature-block {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 42px;
+      margin-top: 44px;
+      margin-bottom: 34px;
+      break-inside: avoid;
+    }
+
+    .sig-line {
+      border-top: 2px solid #111827;
+      padding-top: 8px;
+      min-height: 76px;
+      break-inside: avoid;
+    }
+
+    .small { font-size: 13px; color: var(--muted); }
+
+    .toc-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px dotted #9ca3af;
+      padding: 6px 0;
+    }
+
+    .toc-row span:first-child { font-weight: 700; }
+
+    .notary-box {
+      border: 2px solid #111827;
+      padding: 24px;
+      margin-top: 28px;
+      break-inside: avoid;
+    }
+
+    .seal {
+      width: 130px;
+      height: 130px;
+      border: 2px dashed #6b7280;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #6b7280;
+      margin-left: auto;
+    }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .center { text-align: center; }
+    .uppercase { text-transform: uppercase; }
+
+    @media print {
+      @page { size: letter; margin: 0.65in 0.6in 0.7in 0.6in; }
+      html, body {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        color: black !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .toolbar, .no-print { display: none !important; }
+      .document {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+      }
+      .page {
+        display: block !important;
+        position: relative !important;
+        break-before: page !important;
+        page-break-before: always !important;
+        break-after: auto !important;
+        page-break-after: auto !important;
+        margin: 0 !important;
+        padding-top: 0 !important;
+        border-top: none !important;
+      }
+      .page:first-child { break-before: auto !important; page-break-before: auto !important; }
+      .page:not(:first-child)::before {
+        content: "";
+        display: block;
+        border-top: 2px solid #111827;
+        margin: 0 0 0.18in 0;
+      }
+      .cover {
+        min-height: 9.25in !important;
+        border: 4px double black !important;
+        padding: 0.55in 0.45in !important;
+        break-after: page !important;
+        page-break-after: always !important;
+      }
+      h1.section-title, h2, h3 { break-after: avoid !important; page-break-after: avoid !important; }
+      p, li, .notice, .warning { orphans: 3; widows: 3; }
+      input, textarea, select {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+      }
+      textarea {
+        overflow: visible !important;
+        white-space: pre-wrap !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+        height: auto !important;
+      }
+      textarea.field, td textarea { border: 1px solid #777 !important; }
+      textarea.line-field, textarea.inline-field, textarea.cover-field { border-bottom: 1px solid #777 !important; }
+      table { width: 100% !important; table-layout: fixed !important; border-collapse: collapse !important; break-inside: auto !important; page-break-inside: auto !important; }
+      thead { display: table-header-group !important; }
+      tbody { display: table-row-group !important; }
+      tr { break-inside: avoid !important; page-break-inside: avoid !important; }
+      td, th { overflow-wrap: anywhere !important; word-break: break-word !important; vertical-align: top !important; }
+      .sig-line, .signature-block, .notary-box, .seal, .check-row { break-inside: avoid !important; page-break-inside: avoid !important; }
+      .notice, .warning { background: transparent !important; }
+    }
+
+    @media (max-width: 760px) {
+      .document { padding: 24px; margin: 16px auto 40px; }
+      .field-grid, .signature-block, .two-col { grid-template-columns: 1fr; }
+      .cover h1 { font-size: 32px; }
+      .toolbar-inner { align-items: flex-start; flex-direction: column; }
+      .toolbar-actions { justify-content: flex-start; }
+      textarea.inline-field { width: 100%; display: block; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <div class="toolbar-inner">
+      <div>
+        <span class="brand-title">QiFillDocs</span>
+        <span class="brand-subtitle">Lisa Annette English Estate Packet • Prefilled HTML • Autosave Enabled</span>
+      </div>
+      <div class="toolbar-actions">
+        <span id="saveStatus">Autosaved</span>
+        <button class="btn-secondary" onclick="expandAllTextareas()">Fit Text</button>
+        <button class="btn-danger" onclick="confirmClear()">Clear Edits</button>
+        <button class="btn-primary" onclick="printPacket()">Print / Save PDF</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="document">
+    <section class="cover page">
+      <h1>Comprehensive<br />Estate Planning<br />Portfolio</h1>
+      <h2>Prepared for</h2>
+      <textarea data-field="cover_name" class="cover-field" rows="1">Lisa Annette English</textarea>
+      <h2>Jurisdiction</h2>
+      <textarea data-field="cover_state" class="cover-field" rows="1" style="font-size:22px;max-width:360px;font-weight:400;">Indiana</textarea>
+      <h2>Prepared Date</h2>
+      <textarea data-field="cover_date" class="cover-field" rows="1" style="font-size:22px;max-width:360px;font-weight:400;">May 18, 2026</textarea>
+      <p class="small uppercase" style="margin-top:70px;letter-spacing:.12em;">Confidential Estate Planning Document</p>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">Table of Contents</h1>
+      <div class="toc-row"><span>00. Document Status</span><span>Page ___</span></div>
+      <div class="toc-row"><span>01. Critical Legal Disclaimer</span><span>Page ___</span></div>
+      <div class="toc-row"><span>02. Formatting and Completion Key</span><span>Page ___</span></div>
+      <div class="toc-row"><span>03. Portfolio Overview</span><span>Page ___</span></div>
+      <div class="toc-row"><span>04. Immediate Action Checklist</span><span>Page ___</span></div>
+      <div class="toc-row"><span>05. Execution Requirements Snapshot</span><span>Page ___</span></div>
+      <div class="toc-row"><span>06. Client Intake and Decision Worksheet</span><span>Page ___</span></div>
+      <div class="toc-row"><span>07. Role Appointment Worksheet</span><span>Page ___</span></div>
+      <div class="toc-row"><span>08. Asset Inventory</span><span>Page ___</span></div>
+      <div class="toc-row"><span>09. Beneficiary Planning Worksheet</span><span>Page ___</span></div>
+      <div class="toc-row"><span>10. Last Will and Testament</span><span>Page ___</span></div>
+      <div class="toc-row"><span>11. Indiana Self-Proving Clause for Will</span><span>Page ___</span></div>
+      <div class="toc-row"><span>12. Personal Property Memorandum</span><span>Page ___</span></div>
+      <div class="toc-row"><span>13. Indiana Advance Health Care Directive</span><span>Page ___</span></div>
+      <div class="toc-row"><span>14. HIPAA Authorization and Medical Records Release</span><span>Page ___</span></div>
+      <div class="toc-row"><span>15. Durable Financial Power of Attorney</span><span>Page ___</span></div>
+      <div class="toc-row"><span>16. Optional Revocable Living Trust Planning Memo</span><span>Page ___</span></div>
+      <div class="toc-row"><span>17. Optional Transfer-on-Death Deed Planning Memo</span><span>Page ___</span></div>
+      <div class="toc-row"><span>18. Digital Estate Directive</span><span>Page ___</span></div>
+      <div class="toc-row"><span>19. Final Wishes Addendum</span><span>Page ___</span></div>
+      <div class="toc-row"><span>20. Professional Contacts</span><span>Page ___</span></div>
+      <div class="toc-row"><span>21. Document Control and Storage Record</span><span>Page ___</span></div>
+      <div class="toc-row"><span>22. Attorney Review Checklist</span><span>Page ___</span></div>
+      <div class="toc-row"><span>23. Clean Completion Checklist</span><span>Page ___</span></div>
+      <div class="toc-row"><span>24. Master Signing Packet</span><span>Page ___</span></div>
+      <div class="toc-row"><span>25. Reusable Notary Certificates</span><span>Page ___</span></div>
+      <div class="toc-row"><span>26. Witness Qualification Certificate</span><span>Page ___</span></div>
+      <div class="toc-row"><span>27. Agent Acceptance and Contact Sheet</span><span>Page ___</span></div>
+      <div class="toc-row"><span>28. Distribution and Copies Register</span><span>Page ___</span></div>
+      <div class="toc-row"><span>29. Final Pre-Signing Control Checklist</span><span>Page ___</span></div>
+      <div class="toc-row"><span>30. Plain-English Summary for Lisa</span><span>Page ___</span></div>
+      <div class="notice"><strong>Notice to Reader:</strong> This packet contains sensitive legal, financial, medical, and personal information. It should be handled only by Lisa English, Cody James Rice-Velasquez, selected agents, attorney, and authorized trusted parties.</div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">00. Document Status</h1>
+      <div class="notice"><strong>Working Draft / Attorney Review Recommended.</strong> This package is a structured self-help estate planning workbook and document draft set. It is not a substitute for legal advice.</div>
+      <p>Before signing, Lisa should review the package with a licensed Indiana estate planning attorney, especially because it excludes one child, omits another biological child due to legal adoption, gives Cody full authority, and includes medical life-support instructions.</p>
+
+      <h1 class="section-title">01. Critical Legal Disclaimer</h1>
+      <p>This document package is a self-help educational template and planning workbook. It does not create an attorney-client relationship between Lisa English and Cody Rice-Velasquez, QiAlly, or any related service. It is not legal, tax, financial, medical, or fiduciary advice.</p>
+      <p>Indiana estate planning laws, probate rules, health care directive rules, power of attorney rules, deed rules, tax rules, Medicaid/public benefit rules, and execution requirements may change. A document can be invalid, ineffective, or contested if it is drafted poorly, signed incorrectly, witnessed incorrectly, notarized incorrectly, conflicts with beneficiary designations, or fails to account for Lisa’s actual assets and family situation.</p>
+      <div class="warning"><strong>Plain-English warning:</strong> A beautiful document that is signed incorrectly can be useless. Execution matters.</div>
+
+      <h1 class="section-title">02. Formatting and Completion Key</h1>
+      <table>
+        <thead><tr><th>Marking</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>Fillable line</td><td>Complete names, dates, signatures, addresses, phone numbers, emails, and instructions.</td></tr>
+          <tr><td>Multiline box</td><td>Accepts returns and longer entries. Use for addresses, contacts, notes, explanations, and legal descriptions.</td></tr>
+          <tr><td>Checkbox</td><td>Mark before signing or review.</td></tr>
+          <tr><td>N/A</td><td>Use when a section does not apply. Do not leave key blanks empty.</td></tr>
+          <tr><td>%</td><td>Percentage shares must total 100%.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Signing-copy rule:</strong> Each legal document must be signed separately where indicated. The Master Signing Packet is a control record, not a substitute for signing the actual legal documents.</p>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">03. Portfolio Overview</h1>
+      <p>This estate planning portfolio centralizes Lisa Annette English’s core planning documents so her wishes are easier to understand, execute, and defend if she becomes incapacitated or passes away.</p>
+      <ol>
+        <li>Identify Cody James Rice-Velasquez as the primary person authorized to handle estate, medical, financial, digital, and care-related matters.</li>
+        <li>Clarify that Cody is Lisa’s sole heir and executor/personal representative.</li>
+        <li>Document that Danny English is intentionally excluded.</li>
+        <li>Document that Christopher Dewayne is not included because he was legally adopted by another family.</li>
+        <li>Document that grandchildren are not included because Lisa has no real relationship / very little contact with them.</li>
+        <li>Preserve Lisa’s desire to live and receive all possible reasonable care while avoiding being left permanently as a vegetable.</li>
+        <li>Provide clear instructions for cremation and a simple, not-sad remembrance.</li>
+      </ol>
+
+      <h1 class="section-title">04. Immediate Action Checklist</h1>
+      <h2>Confirmed</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="chk_legal_name" type="checkbox" checked /> Lisa’s full legal name confirmed.</label>
+        <label class="check-row"><input data-field="chk_dob" type="checkbox" checked /> Date of birth confirmed: July 25, 1964.</label>
+        <label class="check-row"><input data-field="chk_maiden" type="checkbox" checked /> Maiden name confirmed: Dobbs.</label>
+        <label class="check-row"><input data-field="chk_address" type="checkbox" checked /> Current address confirmed as Elliot Street address.</label>
+        <label class="check-row"><input data-field="chk_county" type="checkbox" checked /> Vanderburgh County, Indiana.</label>
+        <label class="check-row"><input data-field="chk_marital" type="checkbox" checked /> Divorced status noted.</label>
+        <label class="check-row"><input data-field="chk_children" type="checkbox" checked /> Children/family structure entered.</label>
+        <label class="check-row"><input data-field="chk_real_estate" type="checkbox" checked /> No real estate, land, inherited property, or timeshare reported.</label>
+        <label class="check-row"><input data-field="chk_accounts" type="checkbox" checked /> Known accounts listed.</label>
+        <label class="check-row"><input data-field="chk_roles" type="checkbox" checked /> Cody selected for all major roles.</label>
+      </div>
+      <h2>Still Needed Before Signing</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="chk_attorney" type="checkbox" /> Attorney review completed or consciously declined.</label>
+        <label class="check-row"><input data-field="chk_vehicle" type="checkbox" /> Vehicle make/model/year/VIN/title details added.</label>
+        <label class="check-row"><input data-field="chk_christopher" type="checkbox" /> Exact Christopher full legal name/spelling confirmed.</label>
+        <label class="check-row"><input data-field="chk_parklawn" type="checkbox" /> Park Lawn Cemetery plot details confirmed.</label>
+        <label class="check-row"><input data-field="chk_doctor" type="checkbox" /> Primary doctor/provider added.</label>
+        <label class="check-row"><input data-field="chk_witnesses" type="checkbox" /> Qualified witnesses arranged.</label>
+        <label class="check-row"><input data-field="chk_notary" type="checkbox" /> Notary arranged.</label>
+        <label class="check-row"><input data-field="chk_store" type="checkbox" /> Storage location for originals selected.</label>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">05. Execution Requirements Snapshot</h1>
+      <table>
+        <thead><tr><th>Document</th><th>Signature</th><th>Witnesses</th><th>Notary</th><th>Recommendation</th></tr></thead>
+        <tbody>
+          <tr><td>Last Will and Testament</td><td>Lisa</td><td>2 witnesses</td><td>Self-proving notarization recommended</td><td>Use 2 disinterested adult witnesses and complete the self-proving clause.</td></tr>
+          <tr><td>Self-Proving Clause</td><td>Lisa + witnesses</td><td>Same witnesses</td><td>Recommended</td><td>Sign immediately after the Will with the same witnesses present.</td></tr>
+          <tr><td>Advance Health Care Directive</td><td>Lisa</td><td>2 adult witnesses or notarial officer</td><td>May replace witnesses</td><td>Use one method clearly and correctly.</td></tr>
+          <tr><td>HIPAA Authorization</td><td>Lisa</td><td>Not always required</td><td>Recommended</td><td>Helpful for institutional acceptance.</td></tr>
+          <tr><td>Durable Financial Power of Attorney</td><td>Lisa</td><td>Witness method may be available</td><td>Strongly recommended</td><td>Use a notary. Banks often resist weak POAs.</td></tr>
+          <tr><td>Deed / TOD Deed</td><td>N/A</td><td>N/A</td><td>N/A</td><td>Lisa reports no real estate.</td></tr>
+          <tr><td>Trust</td><td>Optional only</td><td>Attorney dependent</td><td>Strongly recommended if used</td><td>Likely unnecessary unless attorney recommends otherwise.</td></tr>
+        </tbody>
+      </table>
+      <div class="notice"><strong>Signing-room rule:</strong> Do not pre-sign documents. Everyone who needs to witness should be physically present unless the final document is specifically designed for a legally permitted remote, electronic, or counterpart signing process.</div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">06. Client Intake and Decision Worksheet</h1>
+      <h2>A. Personal Information</h2>
+      <div class="field-grid">
+        <div class="field-full"><label class="field-label">Full Legal Name</label><textarea data-field="full_legal_name" class="line-field short" rows="1">Lisa Annette English</textarea></div>
+        <div><label class="field-label">Other Names Used</label><textarea data-field="other_names" class="line-field medium" rows="2">Lisa English
+Maiden name: Dobbs</textarea></div>
+        <div><label class="field-label">Date of Birth</label><input data-field="dob" type="date" value="1964-07-25" /></div>
+        <div><label class="field-label">County of Residence</label><textarea data-field="county_residence" class="line-field short" rows="1">Vanderburgh</textarea></div>
+        <div><label class="field-label">State</label><textarea data-field="state_residence" class="line-field short" rows="1">Indiana</textarea></div>
+        <div class="field-full"><label class="field-label">Current Address</label><textarea data-field="current_address" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="phone" class="line-field medium" rows="2">812-543-5452
+Alternate/prior number to verify: 812-916-3941</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="email" class="line-field short" rows="1">lisaenglish1119@gmail.com</textarea></div>
+      </div>
+      <h2>B. Family Information</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="marital_single" type="radio" name="marital" /> Single</label>
+        <label class="check-row"><input data-field="marital_married" type="radio" name="marital" /> Married</label>
+        <label class="check-row"><input data-field="marital_divorced" type="radio" name="marital" checked /> Divorced</label>
+        <label class="check-row"><input data-field="marital_widowed" type="radio" name="marital" /> Widowed</label>
+        <label class="check-row"><input data-field="marital_separated" type="radio" name="marital" /> Separated</label>
+      </div>
+      <label class="field-label">Spouse / Partner Name</label><textarea data-field="spouse_partner" class="line-field short" rows="1">N/A / Divorced</textarea>
+      <h3>Children / Dependents</h3>
+      <table>
+        <thead><tr><th>Name</th><th>Relationship</th><th>Living?</th><th>Address / Contact</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><textarea data-field="child1_name" rows="2">Cody James Rice-Velasquez</textarea></td>
+            <td><textarea data-field="child1_rel" rows="2">Child / primary caregiver / care coordinator / sole heir</textarea></td>
+            <td><select data-field="child1_living"><option></option><option selected>Yes</option><option>No</option></select></td>
+            <td><textarea data-field="child1_contact" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></td>
+            <td><textarea data-field="child1_notes" rows="5">Lisa directs that Cody is sole heir, executor/personal representative, financial POA, medical POA/health care representative, HIPAA recipient, digital agent, caregiver, and decision-maker for estate, medical, financial, and digital matters.</textarea></td>
+          </tr>
+          <tr>
+            <td><textarea data-field="child2_name" rows="2">Christopher Dewayne — VERIFY exact full legal name/spelling</textarea></td>
+            <td><textarea data-field="child2_rel" rows="2">Biological child / legally adopted by another family</textarea></td>
+            <td><select data-field="child2_living"><option></option><option selected>Yes</option><option>No</option></select></td>
+            <td><textarea data-field="child2_contact" rows="3">UNKNOWN — not included as beneficiary because he was legally adopted by another family.</textarea></td>
+            <td><textarea data-field="child2_notes" rows="4">Living adult child. Lisa does not include Christopher because he was legally adopted by another family. Attorney should review omitted-person/adoption language.</textarea></td>
+          </tr>
+          <tr>
+            <td><textarea data-field="child3_name" rows="2">Danny English</textarea></td>
+            <td><textarea data-field="child3_rel" rows="2">Child</textarea></td>
+            <td><select data-field="child3_living"><option></option><option selected>Yes</option><option>No</option></select></td>
+            <td><textarea data-field="child3_contact" rows="3">UNKNOWN — intentionally excluded.</textarea></td>
+            <td><textarea data-field="child3_notes" rows="4">Living adult child. Lisa intentionally excludes Danny English from inheritance. Attorney review strongly recommended for disinheritance wording.</textarea></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Grandchildren / Other Dependents</h3>
+      <table>
+        <thead><tr><th>Name</th><th>Relationship</th><th>Should Inherit?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="dependent1_name" rows="2">Grandchildren — names not listed</textarea></td><td><textarea data-field="dependent1_rel" rows="2">Grandchildren</textarea></td><td><select data-field="dependent1_inherit"><option></option><option>Yes</option><option selected>No</option><option>Discuss with attorney</option></select></td><td><textarea data-field="dependent1_notes" rows="3">Lisa has grandchildren but has no real relationship / very little contact with them and does not wish to include them.</textarea></td></tr>
+        </tbody>
+      </table>
+      <h3>People Lisa Wants Specifically Excluded or Limited</h3>
+      <textarea data-field="excluded_people" class="field large" rows="5">Danny English is intentionally excluded from inheritance. Christopher Dewayne is not included because he was legally adopted by another family. Grandchildren are not included due to no real relationship / very little contact. Attorney should review omitted-person/disinheritance language so the plan is clear and enforceable.</textarea>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">07. Role Appointment Worksheet</h1>
+      <h2>A. Personal Representative / Executor</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Name</label><textarea data-field="pr_primary_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Relationship</label><textarea data-field="pr_primary_relationship" class="line-field short" rows="1">Child / primary caregiver / care coordinator / sole heir / executor</textarea></div>
+        <div class="field-full"><label class="field-label">Address</label><textarea data-field="pr_primary_address" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="pr_primary_phone" class="line-field short" rows="1">317-266-1369</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="pr_primary_email" class="line-field short" rows="1">crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Name</label><textarea data-field="pr_successor_name" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Relationship</label><textarea data-field="pr_successor_relationship" class="line-field short" rows="1">N/A or to be determined</textarea></div>
+        <div class="field-full"><label class="field-label">Successor Address / Contact</label><textarea data-field="pr_successor_contact" class="line-field medium" rows="2">N/A or to be determined</textarea></div>
+      </div>
+
+      <h2>B. Financial Agent Under Durable Power of Attorney</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Name</label><textarea data-field="fin_primary_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Relationship</label><textarea data-field="fin_primary_relationship" class="line-field short" rows="1">Child / primary caregiver / care coordinator / financial POA</textarea></div>
+        <div class="field-full"><label class="field-label">Address</label><textarea data-field="fin_primary_address" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="fin_primary_phone" class="line-field short" rows="1">317-266-1369</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="fin_primary_email" class="line-field short" rows="1">crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Name</label><textarea data-field="fin_successor_name" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Relationship</label><textarea data-field="fin_successor_relationship" class="line-field short" rows="1">N/A or to be determined</textarea></div>
+      </div>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="poa_immediate" type="radio" name="poa_effective" checked /> Effective immediately</label>
+        <label class="check-row"><input data-field="poa_incapacity" type="radio" name="poa_effective" /> Effective only upon incapacity</label>
+      </div>
+
+      <h2>C. Health Care Representative</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Name</label><textarea data-field="hc_primary_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Relationship</label><textarea data-field="hc_primary_relationship" class="line-field short" rows="1">Child / primary caregiver / care coordinator / medical POA / health care representative</textarea></div>
+        <div class="field-full"><label class="field-label">Address</label><textarea data-field="hc_primary_address" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="hc_primary_phone" class="line-field short" rows="1">317-266-1369</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="hc_primary_email" class="line-field short" rows="1">crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Name</label><textarea data-field="hc_successor_name" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Relationship</label><textarea data-field="hc_successor_relationship" class="line-field short" rows="1">N/A or to be determined</textarea></div>
+      </div>
+
+      <h2>D. Digital Executor / Digital Agent</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Digital Agent</label><textarea data-field="digital_agent_primary" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Primary Contact</label><textarea data-field="digital_agent_primary_contact" class="line-field medium" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Digital Agent</label><textarea data-field="digital_agent_successor" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Contact</label><textarea data-field="digital_agent_successor_contact" class="line-field medium" rows="2">N/A or to be determined</textarea></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">08. Asset Inventory</h1>
+      <h2>A. Real Estate</h2>
+      <table>
+        <thead><tr><th>Property Address</th><th>County</th><th>Owner(s) on Title</th><th>Mortgage?</th><th>Transfer Plan</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="re1_address" rows="3">N/A — no real estate, land, inherited property, timeshare, or real property interest reported.</textarea></td><td><textarea data-field="re1_county" rows="2">N/A</textarea></td><td><textarea data-field="re1_owners" rows="2">N/A</textarea></td><td><select data-field="re1_mortgage"><option></option><option>Yes</option><option selected>No</option></select></td><td><textarea data-field="re1_plan" rows="2">N/A</textarea></td><td><textarea data-field="re1_notes" rows="3">Lisa reports no real estate, land, inherited property, timeshare, or other real property interest.</textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h2>B. Financial Accounts and Insurance</h2>
+      <table>
+        <thead><tr><th>Institution / Company</th><th>Account / Policy Type</th><th>Last 4</th><th>Joint Owner?</th><th>Beneficiary?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="acct1_inst" rows="2">Cash App</textarea></td><td><textarea data-field="acct1_type" rows="2">Money app / payment account</textarea></td><td><textarea data-field="acct1_last4" rows="1">VERIFY</textarea></td><td><select data-field="acct1_joint"><option></option><option>Yes</option><option>No</option><option selected>Verify</option></select></td><td><select data-field="acct1_beneficiary"><option></option><option>Yes</option><option>No</option><option selected>Verify</option></select></td><td><textarea data-field="acct1_notes" rows="3">Verify balance and linked account. Cody has full access/authority per Lisa.</textarea></td></tr>
+          <tr><td><textarea data-field="acct2_inst" rows="2">Chase</textarea></td><td><textarea data-field="acct2_type" rows="2">Bank account</textarea></td><td><textarea data-field="acct2_last4" rows="1">VERIFY</textarea></td><td><select data-field="acct2_joint"><option></option><option>Yes</option><option>No</option><option selected>Verify</option></select></td><td><select data-field="acct2_beneficiary"><option></option><option>Yes</option><option>No</option><option selected>Verify</option></select></td><td><textarea data-field="acct2_notes" rows="3">Verify account type, balance, joint owner/POD status, and last four. Cody has full access/authority per Lisa.</textarea></td></tr>
+          <tr><td><textarea data-field="acct3_inst" rows="2">Capital One / Affirm / Afterpay</textarea></td><td><textarea data-field="acct3_type" rows="2">Credit / consumer accounts / debts</textarea></td><td><textarea data-field="acct3_last4" rows="1">VERIFY</textarea></td><td><select data-field="acct3_joint"><option></option><option>Yes</option><option selected>No</option><option>Verify</option></select></td><td><select data-field="acct3_beneficiary"><option></option><option>Yes</option><option selected>No</option><option>Verify</option></select></td><td><textarea data-field="acct3_notes" rows="3">Minimal debts reported. Verify balances. No life insurance. No retirement accounts. Lisa is on disability with modest assets.</textarea></td></tr>
+        </tbody>
+      </table>
+      <div class="notice"><strong>Critical:</strong> Retirement accounts, life insurance, payable-on-death accounts, transfer-on-death accounts, and jointly owned assets often pass outside the Will. Beneficiary forms must be checked directly even if none are expected.</div>
+
+      <h2>C. Vehicles, Personal Property, and Debts</h2>
+      <table>
+        <thead><tr><th>Item / Creditor</th><th>Type</th><th>Value / Balance</th><th>Recipient / Plan</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="asset_misc1" rows="3">Vehicle titled in Lisa’s name for handicap plates / use arrangement</textarea></td><td><textarea data-field="asset_misc1_type" rows="2">Vehicle</textarea></td><td><textarea data-field="asset_misc1_value" rows="2">Paid off; value unknown</textarea></td><td><textarea data-field="asset_misc1_plan" rows="3">Vehicle goes to Cody James Rice-Velasquez because it is his car and is only in Lisa’s name for handicap plates.</textarea></td><td><textarea data-field="asset_misc1_notes" rows="3">Get make/model/VIN/title details before signing. User states car is paid off.</textarea></td></tr>
+          <tr><td><textarea data-field="asset_misc2" rows="3">Medical equipment</textarea></td><td><textarea data-field="asset_misc2_type" rows="2">Personal property / care equipment</textarea></td><td><textarea data-field="asset_misc2_value" rows="2">UNKNOWN / likely modest</textarea></td><td><textarea data-field="asset_misc2_plan" rows="3">Cody may manage, return, keep, dispose of, or distribute after verifying ownership/rental/insurance/DME rules.</textarea></td><td><textarea data-field="asset_misc2_notes" rows="3">Do not distribute rented or insurer-owned equipment as estate property.</textarea></td></tr>
+          <tr><td><textarea data-field="asset_misc3" rows="3">Furniture, personal items, and anything else of value, whether physical or non-physical</textarea></td><td><textarea data-field="asset_misc3_type" rows="2">Tangible and intangible personal property</textarea></td><td><textarea data-field="asset_misc3_value" rows="2">Less than approximately $3,000 total personal property value reported.</textarea></td><td><textarea data-field="asset_misc3_plan" rows="3">Cody receives all property of value, physical or non-physical, and may decide any division of personal property after his own selection.</textarea></td><td><textarea data-field="asset_misc3_notes" rows="3">Lisa is on disability, has minimal debts, no life insurance, no retirement accounts, and limited assets.</textarea></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">09. Beneficiary Planning Worksheet</h1>
+      <h2>A. Residuary Estate</h2>
+      <p>The residuary estate is everything left after debts, expenses, taxes, and specific gifts.</p>
+      <table>
+        <thead><tr><th>Beneficiary</th><th>Relationship</th><th>Percentage / Share</th><th>Address / Contact</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="res_ben1_name" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="res_ben1_rel" rows="2">Child / sole heir</textarea></td><td><textarea data-field="res_ben1_share" rows="1">100%</textarea></td><td><textarea data-field="res_ben1_contact" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></td></tr>
+          <tr><td><textarea data-field="res_ben2_name" rows="2">N/A</textarea></td><td><textarea data-field="res_ben2_rel" rows="2">N/A</textarea></td><td><textarea data-field="res_ben2_share" rows="1">0%</textarea></td><td><textarea data-field="res_ben2_contact" rows="2">N/A</textarea></td></tr>
+          <tr><td><textarea data-field="res_ben3_name" rows="2">N/A</textarea></td><td><textarea data-field="res_ben3_rel" rows="2">N/A</textarea></td><td><textarea data-field="res_ben3_share" rows="1">0%</textarea></td><td><textarea data-field="res_ben3_contact" rows="2">N/A</textarea></td></tr>
+        </tbody>
+      </table>
+      <h2>B. Specific Gifts</h2>
+      <table>
+        <thead><tr><th>Gift / Item</th><th>Recipient</th><th>Recipient Address / Contact</th><th>Alternate Recipient</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="gift1_item" rows="3">Vehicle titled in Lisa’s name</textarea></td><td><textarea data-field="gift1_recipient" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="gift1_contact" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></td><td><textarea data-field="gift1_alt" rows="2">N/A</textarea></td><td><textarea data-field="gift1_notes" rows="3">Vehicle is Cody’s car and is only in Lisa’s name for handicap plates; car is paid off.</textarea></td></tr>
+          <tr><td><textarea data-field="gift2_item" rows="3">All items of value, whether physical or non-physical</textarea></td><td><textarea data-field="gift2_recipient" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="gift2_contact" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></td><td><textarea data-field="gift2_alt" rows="2">N/A</textarea></td><td><textarea data-field="gift2_notes" rows="3">Cody may select what he wants and decide whether any remaining personal property should be divided, gifted, donated, discarded, sold, or otherwise handled.</textarea></td></tr>
+        </tbody>
+      </table>
+      <h2>C. Personal Property Memorandum Needed?</h2>
+      <div class="checkbox-list"><label class="check-row"><input data-field="ppm_needed_yes" type="radio" name="ppm_needed" checked /> Yes</label><label class="check-row"><input data-field="ppm_needed_no" type="radio" name="ppm_needed" /> No</label></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">10. Last Will and Testament</h1>
+      <h2>Last Will and Testament of Lisa Annette English</h2>
+      <p>I, <strong>Lisa Annette English</strong>, of <textarea data-field="will_county" class="inline-field inline-med" rows="1">Vanderburgh</textarea> County, Indiana, being eighteen years of age or older and of sound mind and disposing memory, make, publish, and declare this instrument to be my Last Will and Testament. I revoke all prior wills and codicils made by me.</p>
+
+      <h2>Article I. Family Information</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Marital Status</label><textarea data-field="will_marital_status" class="line-field short" rows="1">Divorced</textarea></div>
+        <div><label class="field-label">Spouse / Partner, if any</label><textarea data-field="will_spouse" class="line-field short" rows="1">N/A / Divorced</textarea></div>
+        <div class="field-full"><label class="field-label">Children, if any</label><textarea data-field="will_children" class="line-field medium" rows="4">Cody James Rice-Velasquez
+Danny English — living adult child, intentionally excluded
+Christopher Dewayne — living adult child, legally adopted by another family and not included</textarea></div>
+        <div class="field-full"><label class="field-label">Other Relevant Family Information</label><textarea data-field="will_family_notes" class="field medium" rows="5">Lisa has adult children. Cody James Rice-Velasquez is sole heir and executor/personal representative. Danny English is intentionally excluded. Christopher Dewayne is not included because he was legally adopted by another family. There are grandchildren, but Lisa has no relationship or very little contact with them and does not wish to include them.</textarea></div>
+      </div>
+
+      <h2>Article II. Payment of Expenses and Debts</h2>
+      <p>I direct my Personal Representative to pay from my estate, as soon as practical and legally appropriate, my legally enforceable debts, funeral and disposition expenses, expenses of last illness, costs of estate administration, and other valid obligations.</p>
+
+      <h2>Article III. Taxes</h2>
+      <p>Unless otherwise required by law or specifically stated in this Will, all estate, inheritance, succession, transfer, or similar taxes, together with any interest and penalties, shall be paid from my residuary estate without apportionment among beneficiaries.</p>
+
+      <h2>Article IV. Specific Gifts</h2>
+      <table>
+        <thead><tr><th>Gift</th><th>Recipient</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="will_gift1" rows="3">Vehicle titled in Lisa’s name</textarea></td><td><textarea data-field="will_gift1_to" rows="3">Cody James Rice-Velasquez</textarea></td></tr>
+          <tr><td><textarea data-field="will_gift2" rows="3">All property of value, whether physical or non-physical</textarea></td><td><textarea data-field="will_gift2_to" rows="3">Cody James Rice-Velasquez</textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Article V. Tangible Personal Property</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="tpp_memo" type="checkbox" checked /> As listed in a separate written personal property memorandum.</label>
+        <label class="check-row"><input data-field="tpp_named" type="checkbox" checked /> To the following person or people:</label>
+        <textarea data-field="tpp_named_people" class="field medium" rows="3">Cody James Rice-Velasquez receives all tangible personal property and may decide any division, distribution, sale, donation, disposal, or retention after his own selection.</textarea>
+        <label class="check-row"><input data-field="tpp_residuary" type="checkbox" checked /> To my residuary beneficiaries in the same shares as the residuary estate.</label>
+      </div>
+
+      <h2>Article VI. Residuary Estate</h2>
+      <p>I give all the rest, residue, and remainder of my estate, whether real, personal, mixed, tangible, intangible, wherever located, and whether acquired before or after execution of this Will, as follows:</p>
+      <table>
+        <thead><tr><th>Beneficiary</th><th>Relationship</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="will_res1" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="will_res1_rel" rows="2">Child / sole heir</textarea></td><td><textarea data-field="will_res1_share" rows="1">100%</textarea></td></tr>
+          <tr><td><textarea data-field="will_res2" rows="2">N/A</textarea></td><td><textarea data-field="will_res2_rel" rows="2">N/A</textarea></td><td><textarea data-field="will_res2_share" rows="1">0%</textarea></td></tr>
+          <tr><td><textarea data-field="will_res3" rows="2">N/A</textarea></td><td><textarea data-field="will_res3_rel" rows="2">N/A</textarea></td><td><textarea data-field="will_res3_share" rows="1">0%</textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Article VII. Personal Representative</h2>
+      <p>I nominate <textarea data-field="will_pr" class="inline-field inline-large" rows="1">Cody James Rice-Velasquez</textarea> as Personal Representative of my estate. If that person is unable or unwilling to serve, I nominate <textarea data-field="will_pr_successor" class="inline-field inline-large" rows="1">No successor named at this time</textarea> as successor Personal Representative.</p>
+
+      <h2>Article VIII. Powers of Personal Representative</h2>
+      <p>My Personal Representative may collect, hold, manage, protect, sell, exchange, lease, mortgage, distribute, compromise, settle, and administer estate assets, and may hire attorneys, accountants, appraisers, real estate agents, and other professionals as needed.</p>
+
+      <h2>Article IX. Bond</h2>
+      <p>I request that no bond be required of any Personal Representative nominated in this Will, unless a court requires bond.</p>
+
+      <h2>Article X. Survivorship</h2>
+      <p>Any beneficiary who does not survive me by thirty days shall be treated as having predeceased me, unless this Will clearly states otherwise.</p>
+
+      <h2>Article XI. No-Contest Clause</h2>
+      <p>If any beneficiary directly or indirectly contests this Will, challenges any provision of this Will, or attempts to impair or invalidate any estate planning document I have executed, that person shall forfeit any gift, inheritance, appointment, or benefit under this Will to the fullest extent permitted by Indiana law.</p>
+
+      <h2>Article XII. Guardianship of Minor Children</h2>
+      <p>If I have minor children at the time of my death, I nominate <textarea data-field="will_guardian" class="inline-field inline-large" rows="1">N/A — no minor children</textarea> as guardian of the person of my minor children. If that person cannot serve, I nominate <textarea data-field="will_guardian_successor" class="inline-field inline-large" rows="1">N/A — no minor children</textarea> as successor guardian.</p>
+
+      <h2>Article XIII. Omitted Persons</h2>
+      <p>Except as otherwise required by law, I intentionally make no provision for any person not named in this Will or in a valid beneficiary designation, trust, deed, or other estate planning instrument. This includes Danny English, who is intentionally excluded. Christopher Dewayne is not included because he was legally adopted by another family. Grandchildren are not included because I have no real relationship or very little contact with them.</p>
+
+      <h2>Article XIV. Governing Law</h2>
+      <p>This Will shall be governed by the laws of the State of Indiana.</p>
+
+      <h2>Signature</h2>
+      <p>I, Lisa Annette English, sign this Will as my Last Will and Testament on this <textarea data-field="will_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="will_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="will_year" class="inline-field inline-small" rows="1"></textarea>, at <textarea data-field="will_city" class="inline-field inline-med" rows="1">Evansville</textarea>, Indiana.</p>
+      <div class="signature-block">
+        <div class="sig-line"><strong>Testator Signature</strong><br />Printed Name: Lisa Annette English</div>
+        <div class="sig-line"><strong>Date</strong></div>
+        <div class="sig-line"><strong>Witness 1 Signature</strong><br />Printed Name: <textarea data-field="will_w1_name" class="line-field short" rows="1"></textarea><br />Address: <textarea data-field="will_w1_addr" class="line-field medium" rows="2"></textarea></div>
+        <div class="sig-line"><strong>Witness 2 Signature</strong><br />Printed Name: <textarea data-field="will_w2_name" class="line-field short" rows="1"></textarea><br />Address: <textarea data-field="will_w2_addr" class="line-field medium" rows="2"></textarea></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">11. Indiana Self-Proving Clause for Will</h1>
+      <p>We, the undersigned testator and the undersigned witnesses, respectively, whose names are signed to the attached or foregoing instrument, declare the following:</p>
+      <ol>
+        <li>The testator executed the instrument as the testator’s Will.</li>
+        <li>In the presence of both witnesses, the testator signed the Will, acknowledged the testator’s signature already made, or directed another person to sign for the testator in the testator’s presence.</li>
+        <li>The testator executed the Will as a free and voluntary act for the purposes expressed in it.</li>
+        <li>Each witness, in the presence of the testator and in the presence of the other witness, signed the Will as a witness.</li>
+        <li>The testator was of sound mind when the Will was executed.</li>
+        <li>To the best knowledge of each witness, the testator was at least eighteen years of age at the time the Will was executed.</li>
+      </ol>
+      <div class="signature-block">
+        <div class="sig-line"><strong>Testator</strong><br />Lisa Annette English</div>
+        <div class="sig-line"><strong>Date</strong></div>
+        <div class="sig-line"><strong>Witness 1</strong><br />Printed Name: <textarea data-field="self_w1" class="line-field short" rows="1">To be completed at signing</textarea></div>
+        <div class="sig-line"><strong>Witness 2</strong><br />Printed Name: <textarea data-field="self_w2" class="line-field short" rows="1">To be completed at signing</textarea></div>
+      </div>
+      <div class="notary-box">
+        <h2 class="center">Optional Notarial Certificate for Self-Proving Clause</h2>
+        <p>State of Indiana<br />County of <textarea data-field="self_notary_county" class="inline-field inline-large" rows="1">Vanderburgh</textarea></p>
+        <p>This instrument was acknowledged before me on this <textarea data-field="self_notary_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="self_notary_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="self_notary_year" class="inline-field inline-small" rows="1"></textarea>, by Lisa Annette English, as testator, and by <textarea data-field="self_notary_w1" class="inline-field inline-med" rows="1"></textarea> and <textarea data-field="self_notary_w2" class="inline-field inline-med" rows="1"></textarea>, as witnesses.</p>
+        <div class="two-col">
+          <div class="sig-line"><strong>Notary Signature</strong><br />Printed Name: <textarea data-field="self_notary_name" class="line-field short" rows="1"></textarea><br />Commission Number: <textarea data-field="self_notary_commission" class="line-field short" rows="1"></textarea><br />My Commission Expires: <textarea data-field="self_notary_expires" class="line-field short" rows="1"></textarea></div>
+          <div class="seal">Notary<br />Seal</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">12. Personal Property Memorandum</h1>
+      <p>This memorandum is intended to identify certain items of tangible personal property and the people I wish to receive them after my death. This memorandum should be read together with my Last Will and Testament.</p>
+      <table>
+        <thead><tr><th>Item / Description</th><th>Recipient</th><th>Alternate Recipient</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="ppm1_item" rows="3">Vehicle titled in Lisa’s name</textarea></td><td><textarea data-field="ppm1_recipient" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="ppm1_alt" rows="2">N/A</textarea></td><td><textarea data-field="ppm1_notes" rows="3">Car is Cody’s vehicle and is only in Lisa’s name for handicap plates; paid off.</textarea></td></tr>
+          <tr><td><textarea data-field="ppm2_item" rows="3">All personal property and items of value, physical or non-physical</textarea></td><td><textarea data-field="ppm2_recipient" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="ppm2_alt" rows="2">N/A</textarea></td><td><textarea data-field="ppm2_notes" rows="3">Cody may decide what to keep and whether/how to divide any remaining personal property.</textarea></td></tr>
+          <tr><td><textarea data-field="ppm3_item" rows="3">Medical equipment</textarea></td><td><textarea data-field="ppm3_recipient" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="ppm3_alt" rows="2">N/A</textarea></td><td><textarea data-field="ppm3_notes" rows="3">Cody may manage, return, keep, dispose of, or distribute after verifying ownership/rental/insurance/DME rules.</textarea></td></tr>
+        </tbody>
+      </table>
+      <div class="signature-block"><div class="sig-line"><strong>Lisa Annette English Signature</strong></div><div class="sig-line"><strong>Date</strong></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">13. Indiana Advance Health Care Directive</h1>
+      <p>I, <strong>Lisa Annette English</strong>, make this Advance Health Care Directive to state my health care wishes and appoint a person to make health care decisions for me if I cannot make or communicate those decisions myself.</p>
+      <h2>Part A. Statement of Values</h2>
+      <ol>
+        <li>I want to live and receive all possible reasonable care.</li>
+        <li>I want CPR and revival efforts attempted.</li>
+        <li>I do not want to be left permanently as a vegetable.</li>
+        <li>I do not want to be intubated without sedation first unless there is no other choice.</li>
+        <li>Cody James Rice-Velasquez, with doctors’ input, is the sole person authorized to decide termination or withdrawal of life support if needed.</li>
+      </ol>
+      <label class="field-label">Additional Values and Instructions</label><textarea data-field="hc_values" class="field large" rows="4">Lisa wants to live and wants all possible reasonable care, including CPR and revival efforts. She does not want to be left permanently as a vegetable. Cody James Rice-Velasquez, with doctors’ input, is the sole person authorized to decide termination or withdrawal of life support if needed.</textarea>
+
+      <h2>Part B. Appointment of Health Care Representative</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Representative</label><textarea data-field="directive_hc_primary" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Relationship</label><textarea data-field="directive_hc_primary_rel" class="line-field short" rows="1">Child / primary caregiver / care coordinator / medical POA / health care representative</textarea></div>
+        <div class="field-full"><label class="field-label">Primary Address</label><textarea data-field="directive_hc_primary_addr" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="directive_hc_primary_phone" class="line-field short" rows="1">317-266-1369</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="directive_hc_primary_email" class="line-field short" rows="1">crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Representative</label><textarea data-field="directive_hc_successor" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Relationship</label><textarea data-field="directive_hc_successor_rel" class="line-field short" rows="1">N/A or to be determined</textarea></div>
+      </div>
+
+      <h2>Part C. Authority of Health Care Representative</h2>
+      <p>My Health Care Representative may make health care decisions for me if I am unable to make or communicate decisions myself, including consenting to, refusing, or withdrawing treatment; accessing medical records; selecting physicians or facilities; deciding on hospitalization, discharge, hospice, palliative care, and end-of-life decisions consistent with my wishes.</p>
+
+      <h2>Part D. Life-Prolonging Procedures</h2>
+      <p>I want CPR and all possible reasonable care to revive and preserve my life. I do not want to be left permanently as a vegetable. Cody James Rice-Velasquez, with doctors’ input, is the sole decision-maker for termination or withdrawal of life support if needed.</p>
+
+      <h2>Part E. Nutrition and Hydration</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="nutrition_yes" type="radio" name="nutrition" /> I want artificially supplied nutrition and hydration provided if medically appropriate.</label>
+        <label class="check-row"><input data-field="nutrition_no" type="radio" name="nutrition" /> I do not want artificially supplied nutrition and hydration if my body cannot tolerate them, if they only prolong dying, or if they do not provide meaningful comfort or benefit.</label>
+        <label class="check-row"><input data-field="nutrition_rep" type="radio" name="nutrition" checked /> I want my Health Care Representative to decide based on my condition, comfort, medical advice, survival, recovery, and known values.</label>
+      </div>
+      <label class="field-label">Additional Medical Instructions</label><textarea data-field="directive_additional_medical" class="field large" rows="5">Lisa wants CPR and all possible care to revive and preserve life. She does not want to be intubated without sedation first unless there is no other choice. She does not want to be left permanently as a vegetable. Cody James Rice-Velasquez, with doctors’ input, is the sole decision-maker for termination or withdrawal of life support if needed. Organ/tissue donation is not authorized.</textarea>
+
+      <h2>Part F. Pain Relief and Comfort Care</h2>
+      <p>I want medication and treatment necessary to relieve pain, anxiety, breathlessness, or distress, while still preserving my stated desire to live and receive all possible reasonable care.</p>
+      <label class="field-label">Additional Pain Relief / Comfort Instructions</label><textarea data-field="directive_comfort_instructions" class="field medium" rows="3">Prioritize comfort, pain relief, anxiety relief, breathlessness relief, and dignity-focused treatment while still preserving Lisa’s stated desire to live and receive all possible reasonable care.</textarea>
+
+      <h2>Part G. Preferred Location and Care Priorities</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="care_home" type="checkbox" checked /> Home care</label>
+        <label class="check-row"><input data-field="care_hospital" type="checkbox" /> Hospital care</label>
+        <label class="check-row"><input data-field="care_hospice" type="checkbox" /> Hospice care if appropriate</label>
+        <label class="check-row"><input data-field="care_facility" type="checkbox" /> Skilled nursing / facility care if necessary</label>
+        <label class="check-row"><input data-field="care_rep_decides" type="checkbox" checked /> Cody should decide based on safety, comfort, survival, medical advice, and reality.</label>
+      </div>
+      <label class="field-label">Additional Care Preferences</label><textarea data-field="directive_care_preferences" class="field medium" rows="3">Lisa wants to live and receive all possible reasonable care. She is oxygen-dependent and requires ongoing access to respiratory/oxygen equipment. Care planning should account for uninterrupted access to oxygen and medically necessary equipment.</textarea>
+
+      <h2>Part H. People to Include or Exclude</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Relationship</th><th>Include / Exclude</th><th>Contact / Reason / Notes</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="hc_person1_name" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="hc_person1_rel" rows="2">Child / medical POA / health care representative / caregiver</textarea></td><td><select data-field="hc_person1_status"><option></option><option selected>Include</option><option>Exclude</option></select></td><td><textarea data-field="hc_person1_notes" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Signature</h2>
+      <div class="signature-block">
+        <div class="sig-line"><strong>Lisa Annette English Signature</strong></div>
+        <div class="sig-line"><strong>Date</strong></div>
+        <div class="sig-line"><strong>Witness 1</strong><br />Printed Name: <textarea data-field="directive_w1" class="line-field short" rows="1"></textarea><br />Address: <textarea data-field="directive_w1_addr" class="line-field medium" rows="2"></textarea></div>
+        <div class="sig-line"><strong>Witness 2</strong><br />Printed Name: <textarea data-field="directive_w2" class="line-field short" rows="1"></textarea><br />Address: <textarea data-field="directive_w2_addr" class="line-field medium" rows="2"></textarea></div>
+      </div>
+      <div class="notary-box">
+        <h2 class="center">Notary Acknowledgment</h2>
+        <p>State of Indiana<br />County of <textarea data-field="directive_notary_county" class="inline-field inline-large" rows="1">Vanderburgh</textarea></p>
+        <p>Subscribed and acknowledged before me on this <textarea data-field="directive_notary_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="directive_notary_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="directive_notary_year" class="inline-field inline-small" rows="1"></textarea>.</p>
+        <div class="two-col"><div class="sig-line"><strong>Notary Signature</strong><br />Printed Name: <textarea data-field="directive_notary_name" class="line-field short" rows="1"></textarea><br />My Commission Expires: <textarea data-field="directive_notary_exp" class="line-field short" rows="1"></textarea></div><div class="seal">Notary<br />Seal</div></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">14. HIPAA Authorization and Medical Records Release</h1>
+      <p>I, <strong>Lisa Annette English</strong>, authorize the disclosure of my protected health information to the people listed below so they can assist with my medical care, insurance, billing, care coordination, health care decision-making, and related matters.</p>
+      <h2>Authorized Recipients</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Relationship</th><th>Phone</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="hipaa1_name" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="hipaa1_rel" rows="2">Child / primary caregiver / coordinator / HIPAA-authorized representative</textarea></td><td><textarea data-field="hipaa1_phone" rows="2">317-266-1369</textarea></td><td><textarea data-field="hipaa1_email" rows="2">crice4485@gmail.com</textarea></td></tr>
+        </tbody>
+      </table>
+      <h2>Information Authorized for Release</h2>
+      <p>This authorization includes all protected health information, including medical records, diagnoses, treatment plans, medication information, test results, hospital records, physician notes, billing and insurance information, mental health information where legally permitted, substance use treatment information where legally permitted, communicable disease information where legally permitted, and long-term care, hospice, palliative care, or home health records.</p>
+      <label class="field-label">Expiration Date or Event</label><textarea data-field="hipaa_expiration" class="line-field short" rows="1">Until revoked in writing, unless Lisa chooses a shorter period.</textarea>
+      <div class="signature-block"><div class="sig-line"><strong>Lisa Annette English Signature</strong></div><div class="sig-line"><strong>Date</strong></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">15. Durable Financial Power of Attorney</h1>
+      <p>I, <strong>Lisa Annette English</strong>, of 1745 S Elliot St, Evansville, IN 47713, appoint the following person as my attorney-in-fact / agent to act for me in financial, legal, property, and personal business matters.</p>
+      <h2>Article I. Agent Appointment</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Agent</label><textarea data-field="poa_agent" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Relationship</label><textarea data-field="poa_agent_rel" class="line-field short" rows="1">Child / primary caregiver / care coordinator / financial power of attorney</textarea></div>
+        <div class="field-full"><label class="field-label">Address</label><textarea data-field="poa_agent_addr" class="line-field medium" rows="2">1745 S Elliot St
+Evansville, IN 47713</textarea></div>
+        <div><label class="field-label">Phone</label><textarea data-field="poa_agent_phone" class="line-field short" rows="1">317-266-1369</textarea></div>
+        <div><label class="field-label">Email</label><textarea data-field="poa_agent_email" class="line-field short" rows="1">crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Agent</label><textarea data-field="poa_successor" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Successor Relationship</label><textarea data-field="poa_successor_rel" class="line-field short" rows="1">N/A or to be determined</textarea></div>
+      </div>
+      <h2>Article II. Durability</h2>
+      <p>This Power of Attorney is durable. It shall not be affected by my later incapacity, disability, or inability to manage my affairs.</p>
+      <h2>Article III. Effective Date</h2>
+      <div class="checkbox-list"><label class="check-row"><input data-field="poa_effective_now" type="radio" name="poa_effect" checked /> This Power of Attorney is effective immediately upon signing.</label><label class="check-row"><input data-field="poa_effective_incapacity" type="radio" name="poa_effect" /> This Power of Attorney becomes effective only when I am determined to be incapacitated.</label></div>
+      <label class="field-label">Method for Determining Incapacity</label><textarea data-field="poa_incapacity_method" class="field medium" rows="3">N/A if effective immediately. If attorney recommends springing authority, method must be revised.</textarea>
+      <h2>Article IV. General Grant of Authority</h2>
+      <p>I grant my agent broad authority to act for me in all lawful financial, legal, and property matters, including authority over tangible personal property, banking, investments, insurance, business operations, claims, litigation, government benefits, taxes, digital financial records, personal and family maintenance, hiring professionals, managing records, and any other lawful act I could perform myself unless limited below.</p>
+      <h2>Article V. Specific Authorities</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="poa_gifts" type="checkbox" checked /> Authority to make gifts, subject to limitations.</label>
+        <label class="check-row"><input data-field="poa_trust" type="checkbox" /> Authority to create, amend, revoke, or fund a trust, if legally permitted.</label>
+        <label class="check-row"><input data-field="poa_survivorship" type="checkbox" /> Authority to change rights of survivorship, if legally permitted.</label>
+        <label class="check-row"><input data-field="poa_beneficiaries" type="checkbox" /> Authority to create or change beneficiary designations, if legally permitted.</label>
+        <label class="check-row"><input data-field="poa_digital" type="checkbox" checked /> Authority to access digital assets and electronic communications to the extent legally permitted.</label>
+        <label class="check-row"><input data-field="poa_realestate" type="checkbox" /> Authority to handle real estate transactions. N/A unless later needed.</label>
+        <label class="check-row"><input data-field="poa_taxes" type="checkbox" checked /> Authority to handle tax filings, tax disputes, refunds, and agency communications.</label>
+      </div>
+      <label class="field-label">Limitations</label><textarea data-field="poa_limitations" class="field medium" rows="3">No additional limitations stated. Cody James Rice-Velasquez is intended to have full financial authority as Lisa’s financial POA, subject to legal limits and fiduciary duties.</textarea>
+      <label class="field-label">Gifting Limits</label><textarea data-field="poa_gifting_limits" class="field medium" rows="3">Attorney review recommended. Lisa’s intent is that Cody has broad authority to manage her finances and affairs, but gifting powers should be confirmed to avoid Medicaid/tax problems.</textarea>
+      <h2>Signature and Notary</h2>
+      <div class="signature-block"><div class="sig-line"><strong>Lisa Annette English Signature</strong></div><div class="sig-line"><strong>Date</strong></div></div>
+      <div class="notary-box"><h2 class="center">Notary Acknowledgment</h2><p>State of Indiana<br />County of <textarea data-field="poa_notary_county" class="inline-field inline-large" rows="1">Vanderburgh</textarea></p><p>Subscribed and acknowledged before me by Lisa Annette English on this <textarea data-field="poa_notary_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="poa_notary_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="poa_notary_year" class="inline-field inline-small" rows="1"></textarea>.</p><div class="two-col"><div class="sig-line"><strong>Notary Signature</strong><br />Printed Name: <textarea data-field="poa_notary_name" class="line-field short" rows="1"></textarea><br />Commission Number: <textarea data-field="poa_notary_commission" class="line-field short" rows="1"></textarea><br />My Commission Expires: <textarea data-field="poa_notary_exp" class="line-field short" rows="1"></textarea></div><div class="seal">Notary<br />Seal</div></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">16. Optional Revocable Living Trust Planning Memo</h1>
+      <p>A revocable living trust may not be necessary because Lisa reports no real estate, no life insurance, no retirement accounts, minimal debt, disability income, and less than approximately $3,000 in personal property value. Attorney should confirm whether a simple Will + POA + Health Care Directive is sufficient.</p>
+      <h2>Trust Decision Questions</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="trust_real_estate" type="checkbox" /> Does Lisa own real estate? Currently reported: No.</label>
+        <label class="check-row"><input data-field="trust_privacy" type="checkbox" /> Does Lisa need probate privacy? Likely low concern due to minimal estate.</label>
+        <label class="check-row"><input data-field="trust_conflict" type="checkbox" checked /> Does Lisa expect family conflict? Possible due to exclusion/omissions.</label>
+      </div>
+      <h2>Recommended Trust Structure If Needed</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Settlor / Grantor</label><textarea data-field="trust_settlor" class="line-field short" rows="1">Lisa Annette English</textarea></div>
+        <div><label class="field-label">Initial Trustee</label><textarea data-field="trust_initial_trustee" class="line-field short" rows="1">Lisa Annette English</textarea></div>
+        <div><label class="field-label">Successor Trustee</label><textarea data-field="trust_successor" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Backup Successor Trustee</label><textarea data-field="trust_backup" class="line-field short" rows="1">No backup trustee named at this time</textarea></div>
+        <div class="field-full"><label class="field-label">Primary Beneficiaries</label><textarea data-field="trust_primary_bens" class="field medium" rows="2">Cody James Rice-Velasquez — 100% / sole heir</textarea></div>
+        <div class="field-full"><label class="field-label">Contingent Beneficiaries</label><textarea data-field="trust_contingent_bens" class="field medium" rows="2">No contingent beneficiaries named at this time</textarea></div>
+      </div>
+      <div class="warning"><strong>Attorney review required if trust is used.</strong> A trust is probably overkill unless an attorney identifies a specific reason.</div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">17. Optional Transfer-on-Death Deed Planning Memo</h1>
+      <p>Lisa reports no real estate, land, inherited property, timeshare, or other real property interest. This section is marked N/A unless that changes.</p>
+      <div class="field-grid">
+        <div class="field-full"><label class="field-label">Property Address</label><textarea data-field="tod_address" class="field medium" rows="2">N/A — Lisa reports no real estate, land, inherited property, timeshare, or other real property interest.</textarea></div>
+        <div><label class="field-label">County</label><textarea data-field="tod_county" class="line-field short" rows="1">N/A</textarea></div>
+        <div><label class="field-label">Current Owner(s)</label><textarea data-field="tod_owners" class="line-field short" rows="1">N/A</textarea></div>
+        <div class="field-full"><label class="field-label">Legal Description</label><textarea data-field="tod_legal_description" class="field large" rows="3">N/A</textarea></div>
+        <div><label class="field-label">Parcel Number</label><textarea data-field="tod_parcel" class="line-field short" rows="1">N/A</textarea></div>
+        <div><label class="field-label">Mortgage Lender</label><textarea data-field="tod_mortgage" class="line-field short" rows="1">N/A</textarea></div>
+        <div><label class="field-label">Primary Beneficiary</label><textarea data-field="tod_primary_ben" class="line-field short" rows="1">N/A</textarea></div>
+        <div><label class="field-label">Contingent Beneficiary</label><textarea data-field="tod_contingent_ben" class="line-field short" rows="1">N/A</textarea></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">18. Digital Estate Directive</h1>
+      <p>I appoint Cody James Rice-Velasquez as my Digital Agent to help manage, preserve, access, transfer, close, memorialize, or delete digital accounts and digital property after my incapacity or death, to the extent permitted by law and provider terms.</p>
+      <div class="field-grid">
+        <div><label class="field-label">Primary Digital Agent</label><textarea data-field="digital_primary" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div>
+        <div><label class="field-label">Phone / Email</label><textarea data-field="digital_primary_contact" class="line-field medium" rows="4">1745 S Elliot St
+Evansville, IN 47713
+Phone: 317-266-1369
+Email: crice4485@gmail.com</textarea></div>
+        <div><label class="field-label">Successor Digital Agent</label><textarea data-field="digital_successor" class="line-field short" rows="1">No successor named at this time</textarea></div>
+        <div><label class="field-label">Phone / Email</label><textarea data-field="digital_successor_contact" class="line-field medium" rows="2">N/A or to be determined</textarea></div>
+      </div>
+      <h2>Account Inventory</h2>
+      <table>
+        <thead><tr><th>Account / Platform</th><th>Username / Email</th><th>Action Wanted</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Email</td><td><textarea data-field="digital_email_user" rows="2">lisaenglish1119@gmail.com</textarea></td><td><textarea data-field="digital_email_action" rows="3">Cody has full authority to access, preserve, close, transfer, delete, or manage as needed.</textarea></td><td><textarea data-field="digital_email_notes" rows="3">Primary known email account.</textarea></td></tr>
+          <tr><td>Google / Drive / Photos</td><td><textarea data-field="digital_google_user" rows="2">lisaenglish1119@gmail.com</textarea></td><td><textarea data-field="digital_google_action" rows="3">Cody has full authority to preserve Drive/Photos/records if applicable.</textarea></td><td><textarea data-field="digital_google_notes" rows="3">Verify account contents and recovery access.</textarea></td></tr>
+          <tr><td>Social Media</td><td><textarea data-field="digital_social_user" rows="2">UNKNOWN</textarea></td><td><textarea data-field="digital_social_action" rows="3">Cody has full authority to decide preserve, memorialize, delete, or close.</textarea></td><td><textarea data-field="digital_social_notes" rows="3">Verify accounts.</textarea></td></tr>
+          <tr><td>Password Manager</td><td><textarea data-field="digital_pw_manager" rows="2">UNKNOWN</textarea></td><td><textarea data-field="digital_pw_action" rows="3">Do not list passwords in this document. Use a password manager or sealed emergency-access document.</textarea></td><td><textarea data-field="digital_pw_notes" rows="3">Set up emergency access if possible.</textarea></td></tr>
+        </tbody>
+      </table>
+      <label class="field-label">Additional Digital Instructions</label><textarea data-field="digital_additional" class="field large" rows="4">Cody James Rice-Velasquez has full digital access authority. Known digital/account references include email lisaenglish1119@gmail.com, FamilyWall login using lisaenglish1119, Cash App, Chase, Capital One, Affirm, and Afterpay. Do not write passwords in this document.</textarea>
+      <div class="signature-block"><div class="sig-line"><strong>Lisa Annette English Signature</strong></div><div class="sig-line"><strong>Date</strong></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">19. Final Wishes Addendum</h1>
+      <h2>A. Funeral, Burial, Cremation, or Memorial Preferences</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="final_burial" type="checkbox" /> Burial</label>
+        <label class="check-row"><input data-field="final_cremation" type="checkbox" checked /> Cremation</label>
+        <label class="check-row"><input data-field="final_science" type="checkbox" /> Donation of body for science</label>
+        <label class="check-row"><input data-field="final_green" type="checkbox" /> Green burial</label>
+        <label class="check-row"><input data-field="final_rep_decides" type="checkbox" /> Cody decides if needed</label>
+      </div>
+      <div class="field-grid">
+        <div><label class="field-label">Preferred Funeral Home / Provider</label><textarea data-field="final_funeral_home" class="line-field medium" rows="2">No formal funeral desired; simple, not sad, as Cody arranges.</textarea></div>
+        <div><label class="field-label">Preferred Cemetery / Location</label><textarea data-field="final_cemetery" class="line-field medium" rows="2">Park Lawn Cemetery — Lisa has a plot. Verify exact cemetery name/location and plot details.</textarea></div>
+      </div>
+      <h2>B. Service Details</h2>
+      <label class="field-label">Music Requested</label><textarea data-field="final_music" class="field medium" rows="3">Simple, not sad. Cody may decide.</textarea>
+      <label class="field-label">Readings / Scriptures / Poems</label><textarea data-field="final_readings" class="field medium" rows="3">No formal readings specified. Cody may decide if needed.</textarea>
+      <label class="field-label">People to Notify</label><textarea data-field="final_notify" class="field medium" rows="3">Cody may decide who should be notified.</textarea>
+      <label class="field-label">People to Speak, If Willing</label><textarea data-field="final_speakers" class="field medium" rows="3">No formal funeral desired. Cody may decide if any simple remembrance is held.</textarea>
+      <h2>C. Obituary Details</h2>
+      <label class="field-label">Obituary Details</label><textarea data-field="final_obituary" class="field large" rows="6">Full legal name: Lisa Annette English
+Maiden name: Dobbs
+DOB: July 25, 1964
+Residence: Evansville, Vanderburgh County, Indiana
+Final wishes: cremation; no formal sad funeral; simple remembrance if any. Other obituary details may be completed by Cody/family.</textarea>
+      <h2>D. Organ and Tissue Donation</h2>
+      <div class="checkbox-list"><label class="check-row"><input data-field="organ_yes" type="checkbox" /> I wish to be an organ/tissue donor if medically appropriate.</label><label class="check-row"><input data-field="organ_no" type="checkbox" checked /> I do not wish to be an organ/tissue donor.</label></div>
+      <h2>E. Pet Care</h2>
+      <table>
+        <thead><tr><th>Pet Name</th><th>Type</th><th>Caregiver</th><th>Funds / Instructions</th></tr></thead>
+        <tbody>
+          <tr><td><textarea data-field="pet1_name" rows="2">Mr. Link</textarea></td><td><textarea data-field="pet1_type" rows="2">Black tuxedo cat</textarea></td><td><textarea data-field="pet1_caregiver" rows="2">Cody James Rice-Velasquez</textarea></td><td><textarea data-field="pet1_instructions" rows="3">Cody James Rice-Velasquez will take or rehome if needed. Confirm food, vet, microchip, and rehoming instructions.</textarea></td></tr>
+        </tbody>
+      </table>
+      <label class="field-label">Messages to Loved Ones</label><textarea data-field="final_messages" class="field large" rows="4">Lisa does not want a sad formal funeral. Cody may arrange something simple if appropriate.</textarea>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">20. Professional Contacts</h1>
+      <table>
+        <thead><tr><th>Role</th><th>Name</th><th>Company</th><th>Phone</th><th>Email</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Attorney</td><td><textarea data-field="pro_attorney_name" rows="2">UNKNOWN</textarea></td><td><textarea data-field="pro_attorney_company" rows="2"></textarea></td><td><textarea data-field="pro_attorney_phone" rows="2"></textarea></td><td><textarea data-field="pro_attorney_email" rows="2"></textarea></td><td><textarea data-field="pro_attorney_notes" rows="3">Attorney review recommended before signing.</textarea></td></tr>
+          <tr><td>Accountant / Tax Preparer</td><td><textarea data-field="pro_tax_name" rows="2">UNKNOWN</textarea></td><td><textarea data-field="pro_tax_company" rows="2"></textarea></td><td><textarea data-field="pro_tax_phone" rows="2"></textarea></td><td><textarea data-field="pro_tax_email" rows="2"></textarea></td><td><textarea data-field="pro_tax_notes" rows="3">Lisa is on disability, has minimal debts, no life insurance, no retirement accounts, no real estate, and limited personal property value.</textarea></td></tr>
+          <tr><td>Primary Doctor</td><td><textarea data-field="pro_doc_name" rows="2">UNKNOWN</textarea></td><td><textarea data-field="pro_doc_company" rows="2"></textarea></td><td><textarea data-field="pro_doc_phone" rows="2"></textarea></td><td><textarea data-field="pro_doc_email" rows="2"></textarea></td><td><textarea data-field="pro_doc_notes" rows="3">Lisa is oxygen-dependent and Cody is caregiver/medical representative. Fill primary physician/provider before signing.</textarea></td></tr>
+          <tr><td>Funeral Home</td><td><textarea data-field="pro_funeral_name" rows="2">UNKNOWN</textarea></td><td><textarea data-field="pro_funeral_company" rows="2"></textarea></td><td><textarea data-field="pro_funeral_phone" rows="2"></textarea></td><td><textarea data-field="pro_funeral_email" rows="2"></textarea></td><td><textarea data-field="pro_funeral_notes" rows="3">Cremation desired. Park Lawn Cemetery plot reported. No formal funeral; simple and not sad.</textarea></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">21. Document Control and Storage Record</h1>
+      <h2>Signed Document Log</h2>
+      <table>
+        <thead><tr><th>Document</th><th>Date Signed</th><th>Witnesses</th><th>Notary</th><th>Original Location</th><th>Copies Given To</th></tr></thead>
+        <tbody>
+          <tr><td>Last Will and Testament</td><td><textarea data-field="log_will_date" rows="2"></textarea></td><td><textarea data-field="log_will_wit" rows="2"></textarea></td><td><textarea data-field="log_will_notary" rows="2"></textarea></td><td><textarea data-field="log_will_location" rows="3"></textarea></td><td><textarea data-field="log_will_copies" rows="3">Cody James Rice-Velasquez</textarea></td></tr>
+          <tr><td>Advance Health Care Directive</td><td><textarea data-field="log_hc_date" rows="2"></textarea></td><td><textarea data-field="log_hc_wit" rows="2"></textarea></td><td><textarea data-field="log_hc_notary" rows="2"></textarea></td><td><textarea data-field="log_hc_location" rows="3"></textarea></td><td><textarea data-field="log_hc_copies" rows="3">Cody James Rice-Velasquez; primary doctor/provider</textarea></td></tr>
+          <tr><td>HIPAA Authorization</td><td><textarea data-field="log_hipaa_date" rows="2"></textarea></td><td><textarea data-field="log_hipaa_wit" rows="2"></textarea></td><td><textarea data-field="log_hipaa_notary" rows="2"></textarea></td><td><textarea data-field="log_hipaa_location" rows="3"></textarea></td><td><textarea data-field="log_hipaa_copies" rows="3">Cody James Rice-Velasquez; medical providers</textarea></td></tr>
+          <tr><td>Durable Financial POA</td><td><textarea data-field="log_poa_date" rows="2"></textarea></td><td><textarea data-field="log_poa_wit" rows="2"></textarea></td><td><textarea data-field="log_poa_notary" rows="2"></textarea></td><td><textarea data-field="log_poa_location" rows="3"></textarea></td><td><textarea data-field="log_poa_copies" rows="3">Cody James Rice-Velasquez; banks/institutions if needed</textarea></td></tr>
+          <tr><td>Digital Estate Directive</td><td><textarea data-field="log_digital_date" rows="2"></textarea></td><td><textarea data-field="log_digital_wit" rows="2"></textarea></td><td><textarea data-field="log_digital_notary" rows="2"></textarea></td><td><textarea data-field="log_digital_location" rows="3"></textarea></td><td><textarea data-field="log_digital_copies" rows="3">Cody James Rice-Velasquez</textarea></td></tr>
+        </tbody>
+      </table>
+      <label class="field-label">Original Documents Stored At</label><textarea data-field="storage_originals" class="field medium" rows="3">UNKNOWN — choose secure original document location after signing.</textarea>
+      <label class="field-label">Emergency Access Person(s)</label><textarea data-field="storage_emergency" class="field medium" rows="3">Cody James Rice-Velasquez</textarea>
+      <label class="field-label">Digital Backup Location</label><textarea data-field="storage_digital" class="field medium" rows="3">Suggested: secure digital archive controlled by Lisa/Cody after signing. Do not upload unsigned scattered drafts.</textarea>
+      <label class="field-label">Next Review Date</label><input data-field="storage_review_date" type="date" />
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">22. Attorney Review Checklist</h1>
+      <ol>
+        <li>Confirm Indiana execution requirements.</li>
+        <li>Confirm small-estate strategy given disability income, minimal debts, no real estate, no life insurance, no retirement accounts, and estimated personal property under $3,000.</li>
+        <li>Confirm whether trust/TOD deed sections can be removed or marked N/A because Lisa reports no real estate.</li>
+        <li>Confirm Will language clearly names Cody James Rice-Velasquez as sole heir and Personal Representative/executor.</li>
+        <li>Confirm disinheritance/omitted-person wording for Danny English and Christopher Dewayne, who was legally adopted by another family and is not included.</li>
+        <li>Confirm whether grandchildren should be mentioned as intentionally omitted due to no real relationship / very little contact.</li>
+        <li>Confirm Cody’s authority as financial POA, health care representative/medical POA, HIPAA recipient, digital agent, caregiver, and sole decision-maker.</li>
+        <li>Confirm medical directive language: Lisa wants CPR and all possible reasonable care; no intubation without sedation unless no other choice; Cody, with doctors’ input, decides termination/withdrawal of life support if she would otherwise be left permanently as a vegetable; organ/tissue donation not authorized.</li>
+        <li>Confirm cremation language, Park Lawn Cemetery plot details, and simple/no-sad-funeral preference.</li>
+        <li>Confirm whether vehicle language should be a specific bequest and/or title transfer note because vehicle is Cody’s car but titled in Lisa’s name for handicap plates.</li>
+      </ol>
+      <label class="field-label">Attorney Notes</label><textarea data-field="attorney_notes" class="field large" rows="8">High-priority review items:
+1. Confirm Indiana execution requirements.
+2. Confirm small-estate strategy given disability income, minimal debts, no real estate, no life insurance, no retirement accounts, and estimated personal property under $3,000.
+3. Confirm whether trust/TOD deed sections can be removed or marked N/A because Lisa reports no real estate.
+4. Confirm Will language clearly names Cody James Rice-Velasquez as sole heir and Personal Representative/executor.
+5. Confirm disinheritance/omitted-person wording for Danny English and Christopher Dewayne, who was legally adopted by another family and is not included.
+6. Confirm whether grandchildren should be mentioned as intentionally omitted due to no real relationship / very little contact.
+7. Confirm Cody’s authority as financial POA, health care representative/medical POA, HIPAA recipient, digital agent, caregiver, and sole decision-maker.
+8. Confirm medical directive language: Lisa wants CPR and all possible reasonable care; no intubation without sedation unless no other choice; Cody, with doctors’ input, decides termination/withdrawal of life support if she would otherwise be left permanently as a vegetable; organ/tissue donation not authorized.
+9. Confirm cremation language, Park Lawn Cemetery plot details, and simple/no-sad-funeral preference.
+10. Confirm whether vehicle language should be a specific bequest and/or title transfer note because vehicle is Cody’s car but titled in Lisa’s name for handicap plates.</textarea>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">23. Clean Completion Checklist</h1>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="complete_blanks" type="checkbox" /> All blanks completed.</label>
+        <label class="check-row"><input data-field="complete_placeholders" type="checkbox" /> All UNKNOWN / VERIFY items resolved or intentionally left for signing/attorney review.</label>
+        <label class="check-row"><input data-field="complete_percentages" type="checkbox" checked /> Beneficiary percentages total 100%.</label>
+        <label class="check-row"><input data-field="complete_successors" type="checkbox" /> Lisa confirms whether no successors are intentionally named.</label>
+        <label class="check-row"><input data-field="complete_agents" type="checkbox" checked /> Cody has been named for all major roles.</label>
+        <label class="check-row"><input data-field="complete_beneficiaries" type="checkbox" /> Beneficiary designations checked directly with institutions.</label>
+        <label class="check-row"><input data-field="complete_real_estate" type="checkbox" checked /> Real estate marked N/A because Lisa reports none.</label>
+        <label class="check-row"><input data-field="complete_attorney" type="checkbox" /> Attorney has reviewed the documents, or Lisa has knowingly chosen not to use attorney review.</label>
+        <label class="check-row"><input data-field="complete_signed" type="checkbox" /> Documents signed with correct witnesses and notary.</label>
+        <label class="check-row"><input data-field="complete_stored" type="checkbox" /> Originals stored securely.</label>
+        <label class="check-row"><input data-field="complete_copies" type="checkbox" /> Copies distributed.</label>
+        <label class="check-row"><input data-field="complete_review" type="checkbox" /> Review date scheduled.</label>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">24. Master Signing Packet</h1>
+      <p>This section is the signing control center. It does not replace the signature lines inside each legal document. Its job is to keep the full package organized and create a clear record of what was signed, witnessed, notarized, copied, and distributed.</p>
+      <h2>A. Signing Appointment Details</h2>
+      <div class="field-grid">
+        <div><label class="field-label">Date of Signing</label><input data-field="signing_date" type="date" /></div>
+        <div><label class="field-label">County</label><textarea data-field="signing_county" class="line-field short" rows="1">Vanderburgh</textarea></div>
+        <div class="field-full"><label class="field-label">Location of Signing</label><textarea data-field="signing_location" class="line-field medium" rows="2">Evansville, Indiana — exact signing location to be filled on signing day.</textarea></div>
+        <div><label class="field-label">Time Signing Began</label><textarea data-field="signing_start" class="line-field short" rows="1"></textarea></div>
+        <div><label class="field-label">Time Signing Ended</label><textarea data-field="signing_end" class="line-field short" rows="1"></textarea></div>
+      </div>
+      <h2>B. People Present</h2>
+      <table>
+        <thead><tr><th>Role</th><th>Name</th><th>Phone / Email</th><th>Present?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Lisa English / Principal / Testator</td><td>Lisa Annette English</td><td>lisaenglish1119@gmail.com</td><td><select data-field="present_lisa"><option></option><option selected>Yes</option><option>No</option></select></td><td><textarea data-field="present_lisa_notes" rows="2"></textarea></td></tr>
+          <tr><td>Witness 1</td><td><textarea data-field="present_w1_name" rows="2"></textarea></td><td><textarea data-field="present_w1_contact" rows="2"></textarea></td><td><select data-field="present_w1"><option></option><option>Yes</option><option>No</option></select></td><td><textarea data-field="present_w1_notes" rows="2"></textarea></td></tr>
+          <tr><td>Witness 2</td><td><textarea data-field="present_w2_name" rows="2"></textarea></td><td><textarea data-field="present_w2_contact" rows="2"></textarea></td><td><select data-field="present_w2"><option></option><option>Yes</option><option>No</option></select></td><td><textarea data-field="present_w2_notes" rows="2"></textarea></td></tr>
+          <tr><td>Notary</td><td><textarea data-field="present_notary_name" rows="2"></textarea></td><td><textarea data-field="present_notary_contact" rows="2"></textarea></td><td><select data-field="present_notary"><option></option><option>Yes</option><option>No</option></select></td><td><textarea data-field="present_notary_notes" rows="2"></textarea></td></tr>
+        </tbody>
+      </table>
+      <h2>C. Identity Verification</h2>
+      <div class="checkbox-list"><label class="check-row"><input data-field="id_driver" type="checkbox" /> Driver’s license</label><label class="check-row"><input data-field="id_state" type="checkbox" /> State ID</label><label class="check-row"><input data-field="id_passport" type="checkbox" /> Passport</label><label class="check-row"><input data-field="id_other" type="checkbox" /> Other</label></div>
+      <div class="field-grid"><div><label class="field-label">ID Name</label><textarea data-field="id_name" class="line-field short" rows="1">Lisa Annette English</textarea></div><div><label class="field-label">ID Number / Last Four Only</label><textarea data-field="id_last4" class="line-field short" rows="1"></textarea></div><div><label class="field-label">Expiration Date</label><input data-field="id_expiration" type="date" /></div></div>
+      <h2>D. Capacity and Voluntariness Check</h2>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="capacity_name" type="checkbox" /> Lisa can confirm her full name.</label>
+        <label class="check-row"><input data-field="capacity_documents" type="checkbox" /> Lisa understands she is signing estate planning documents.</label>
+        <label class="check-row"><input data-field="capacity_property" type="checkbox" /> Lisa understands the general nature of her property and family situation.</label>
+        <label class="check-row"><input data-field="capacity_agents" type="checkbox" /> Lisa understands Cody is being named to act for her.</label>
+        <label class="check-row"><input data-field="capacity_beneficiaries" type="checkbox" /> Lisa understands Cody receives property under the plan.</label>
+        <label class="check-row"><input data-field="capacity_voluntary" type="checkbox" /> Lisa is signing voluntarily.</label>
+        <label class="check-row"><input data-field="capacity_no_pressure" type="checkbox" /> No one is forcing, pressuring, threatening, or rushing her.</label>
+      </div>
+      <label class="field-label">Capacity / Voluntariness Notes</label><textarea data-field="capacity_notes" class="field large" rows="4">Complete at signing. Lisa should be alert, oriented, understand the documents, understand that Cody is sole heir and sole decision-maker, understand Danny is excluded and Christopher/grandchildren are not included, and sign voluntarily without pressure.</textarea>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">25. Reusable Notary Certificates</h1>
+      <div class="notary-box"><h2 class="center">A. Individual Acknowledgment</h2><p>State of Indiana<br />County of <textarea data-field="notary_a_county" class="inline-field inline-large" rows="1">Vanderburgh</textarea></p><p>This instrument was acknowledged before me on this <textarea data-field="notary_a_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="notary_a_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="notary_a_year" class="inline-field inline-small" rows="1"></textarea>, by Lisa Annette English.</p><div class="two-col"><div class="sig-line"><strong>Notary Signature</strong><br />Printed Name: <textarea data-field="notary_a_name" class="line-field short" rows="1"></textarea><br />Commission Number: <textarea data-field="notary_a_commission" class="line-field short" rows="1"></textarea><br />My Commission Expires: <textarea data-field="notary_a_exp" class="line-field short" rows="1"></textarea><br />County of Residence: <textarea data-field="notary_a_residence" class="line-field short" rows="1"></textarea></div><div class="seal">Notary<br />Seal</div></div></div>
+      <div class="notary-box"><h2 class="center">B. Jurat / Oath or Affirmation</h2><p>State of Indiana<br />County of <textarea data-field="notary_c_county" class="inline-field inline-large" rows="1">Vanderburgh</textarea></p><p>Subscribed and sworn to, or affirmed, before me on this <textarea data-field="notary_c_day" class="inline-field inline-small" rows="1"></textarea> day of <textarea data-field="notary_c_month" class="inline-field inline-med" rows="1"></textarea>, 20<textarea data-field="notary_c_year" class="inline-field inline-small" rows="1"></textarea>, by Lisa Annette English.</p><div class="two-col"><div class="sig-line"><strong>Notary Signature</strong><br />Printed Name: <textarea data-field="notary_c_name" class="line-field short" rows="1"></textarea><br />Commission Number: <textarea data-field="notary_c_commission" class="line-field short" rows="1"></textarea><br />My Commission Expires: <textarea data-field="notary_c_exp" class="line-field short" rows="1"></textarea><br />County of Residence: <textarea data-field="notary_c_residence" class="line-field short" rows="1"></textarea></div><div class="seal">Notary<br />Seal</div></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">26. Witness Qualification Certificate</h1>
+      <div class="two-col"><div><h2>Witness 1 Certification</h2><div class="checkbox-list"><label class="check-row"><input data-field="w1_adult" type="checkbox" /> I am an adult.</label><label class="check-row"><input data-field="w1_observed" type="checkbox" /> I personally observed Lisa Annette English sign or acknowledge the document.</label><label class="check-row"><input data-field="w1_capacity" type="checkbox" /> Lisa appeared to understand the document and sign voluntarily.</label><label class="check-row"><input data-field="w1_no_pressure" type="checkbox" /> I am not forcing, pressuring, or influencing Lisa.</label><label class="check-row"><input data-field="w1_not_rep" type="checkbox" /> I am not the appointed health care representative for the advance directive I am witnessing.</label></div><div class="sig-line"><strong>Witness 1 Signature</strong><br />Printed Name: <textarea data-field="w1_cert_name" class="line-field short" rows="1"></textarea></div></div><div><h2>Witness 2 Certification</h2><div class="checkbox-list"><label class="check-row"><input data-field="w2_adult" type="checkbox" /> I am an adult.</label><label class="check-row"><input data-field="w2_observed" type="checkbox" /> I personally observed Lisa Annette English sign or acknowledge the document.</label><label class="check-row"><input data-field="w2_capacity" type="checkbox" /> Lisa appeared to understand the document and sign voluntarily.</label><label class="check-row"><input data-field="w2_no_pressure" type="checkbox" /> I am not forcing, pressuring, or influencing Lisa.</label><label class="check-row"><input data-field="w2_not_rep" type="checkbox" /> I am not the appointed health care representative for the advance directive I am witnessing.</label></div><div class="sig-line"><strong>Witness 2 Signature</strong><br />Printed Name: <textarea data-field="w2_cert_name" class="line-field short" rows="1"></textarea></div></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">27. Agent Acceptance and Contact Sheet</h1>
+      <h2>A. Personal Representative Acceptance</h2><p>I acknowledge that Lisa Annette English has nominated me to serve as Personal Representative of her estate. I understand that I am not required to serve unless and until appointment is needed and I am legally authorized to act.</p><div class="signature-block"><div class="sig-line"><strong>Name / Signature</strong><br /><textarea data-field="accept_pr_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div><div class="sig-line"><strong>Date / Contact</strong><br /><textarea data-field="accept_pr_contact" class="line-field medium" rows="3">317-266-1369
+crice4485@gmail.com</textarea></div></div>
+      <h2>B. Financial Agent Acceptance</h2><p>I acknowledge that Lisa Annette English has named me as an agent or successor agent under her Durable Financial Power of Attorney. I understand that I must act in good faith, within the authority granted, in Lisa’s best interest, and with reasonable recordkeeping.</p><div class="signature-block"><div class="sig-line"><strong>Name / Signature</strong><br /><textarea data-field="accept_fin_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div><div class="sig-line"><strong>Date / Contact</strong><br /><textarea data-field="accept_fin_contact" class="line-field medium" rows="3">317-266-1369
+crice4485@gmail.com</textarea></div></div>
+      <h2>C. Health Care Representative Acceptance</h2><p>I acknowledge that Lisa Annette English has named me as her Health Care Representative or successor representative. I understand that I should follow Lisa’s known wishes, values, and instructions, and make decisions in her best interest if her wishes are unknown.</p><div class="signature-block"><div class="sig-line"><strong>Name / Signature</strong><br /><textarea data-field="accept_hc_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div><div class="sig-line"><strong>Date / Contact</strong><br /><textarea data-field="accept_hc_contact" class="line-field medium" rows="3">317-266-1369
+crice4485@gmail.com</textarea></div></div>
+      <h2>D. Digital Agent Acceptance</h2><p>I acknowledge that Lisa Annette English has named me as her Digital Agent or successor Digital Agent. I understand that digital access should be handled carefully, privately, and only as legally permitted.</p><div class="signature-block"><div class="sig-line"><strong>Name / Signature</strong><br /><textarea data-field="accept_digital_name" class="line-field short" rows="1">Cody James Rice-Velasquez</textarea></div><div class="sig-line"><strong>Date / Contact</strong><br /><textarea data-field="accept_digital_contact" class="line-field medium" rows="3">317-266-1369
+crice4485@gmail.com</textarea></div></div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">28. Distribution and Copies Register</h1>
+      <table>
+        <thead><tr><th>Recipient / Institution</th><th>Document(s) Provided</th><th>Format</th><th>Date Provided</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Primary Personal Representative</td><td><textarea data-field="dist_pr_docs" rows="3">Will location / copy if appropriate</textarea></td><td><textarea data-field="dist_pr_format" rows="2">Paper and/or digital after signing only</textarea></td><td><textarea data-field="dist_pr_date" rows="2"></textarea></td><td><textarea data-field="dist_pr_notes" rows="3">Cody is executor/personal representative and sole heir. Do not distribute unsigned drafts except for attorney review.</textarea></td></tr>
+          <tr><td>Financial Agent</td><td><textarea data-field="dist_fin_docs" rows="3">Durable Financial POA</textarea></td><td><textarea data-field="dist_fin_format" rows="2">Paper and/or digital after signing only</textarea></td><td><textarea data-field="dist_fin_date" rows="2"></textarea></td><td><textarea data-field="dist_fin_notes" rows="3">Cody is financial POA.</textarea></td></tr>
+          <tr><td>Health Care Representative</td><td><textarea data-field="dist_hc_docs" rows="3">Advance Directive + HIPAA Authorization</textarea></td><td><textarea data-field="dist_hc_format" rows="2">Paper and/or digital after signing only</textarea></td><td><textarea data-field="dist_hc_date" rows="2"></textarea></td><td><textarea data-field="dist_hc_notes" rows="3">Cody is medical POA/health care representative and HIPAA-authorized person.</textarea></td></tr>
+          <tr><td>Primary Doctor</td><td><textarea data-field="dist_doc_docs" rows="3">Advance Directive + HIPAA Authorization</textarea></td><td><textarea data-field="dist_doc_format" rows="2">Paper and/or digital after signing only</textarea></td><td><textarea data-field="dist_doc_date" rows="2"></textarea></td><td><textarea data-field="dist_doc_notes" rows="3">Add provider name/contact before distribution.</textarea></td></tr>
+          <tr><td>Attorney</td><td><textarea data-field="dist_attorney_docs" rows="3">Full packet for review</textarea></td><td><textarea data-field="dist_attorney_format" rows="2">Paper and/or digital</textarea></td><td><textarea data-field="dist_attorney_date" rows="2"></textarea></td><td><textarea data-field="dist_attorney_notes" rows="3">Attorney review recommended before signing.</textarea></td></tr>
+          <tr><td>Secure Digital Archive</td><td><textarea data-field="dist_archive_docs" rows="3">Full signed packet scan</textarea></td><td><textarea data-field="dist_archive_format" rows="2">Digital archive after signing</textarea></td><td><textarea data-field="dist_archive_date" rows="2"></textarea></td><td><textarea data-field="dist_archive_notes" rows="3">Do not upload unsigned scattered drafts.</textarea></td></tr>
+        </tbody>
+      </table>
+      <div class="notice"><strong>Control rule:</strong> Do not scatter unsigned drafts. Only distribute final signed copies, except to an attorney for review.</div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">29. Final Pre-Signing Control Checklist</h1>
+      <div class="checkbox-list">
+        <label class="check-row"><input data-field="final_blank" type="checkbox" /> Every blank is filled, crossed out, or clearly marked “Not Applicable.”</label>
+        <label class="check-row"><input data-field="final_no_drafts" type="checkbox" /> No bracketed drafting notes remain in the final signing copy.</label>
+        <label class="check-row"><input data-field="final_names" type="checkbox" checked /> Names match government ID where possible.</label>
+        <label class="check-row"><input data-field="final_100" type="checkbox" checked /> Beneficiary shares total 100%.</label>
+        <label class="check-row"><input data-field="final_successors" type="checkbox" /> Lisa confirms whether no successors are intentionally named.</label>
+        <label class="check-row"><input data-field="final_witnesses" type="checkbox" /> Witnesses are present and qualified.</label>
+        <label class="check-row"><input data-field="final_notary" type="checkbox" /> Notary is present if notarization is being used.</label>
+        <label class="check-row"><input data-field="final_id" type="checkbox" /> Lisa has ID available for the notary.</label>
+        <label class="check-row"><input data-field="final_alert" type="checkbox" /> Lisa is alert, oriented, and not being pressured.</label>
+        <label class="check-row"><input data-field="final_conflicted" type="checkbox" /> No beneficiary, agent, or conflicted person is hovering over the signing.</label>
+        <label class="check-row"><input data-field="final_will_order" type="checkbox" /> The Will and self-proving clause are signed in the correct order.</label>
+        <label class="check-row"><input data-field="final_poa_notarized" type="checkbox" /> The POA is notarized.</label>
+        <label class="check-row"><input data-field="final_directive_method" type="checkbox" /> The advance directive uses either the witness method or notary method correctly.</label>
+        <label class="check-row"><input data-field="final_scans" type="checkbox" /> Scans are made after signing.</label>
+        <label class="check-row"><input data-field="final_stored" type="checkbox" /> The signed originals are stored in the documented location.</label>
+      </div>
+    </section>
+
+    <section class="page">
+      <h1 class="section-title">30. Plain-English Summary for Lisa</h1>
+      <p>Lisa, this package is meant to make sure the right person can help you and that your wishes are clear.</p>
+      <ol>
+        <li><strong>Cody James Rice-Velasquez gets everything.</strong></li>
+        <li><strong>Cody handles your estate after death.</strong></li>
+        <li><strong>Cody handles your money and legal affairs if you cannot.</strong></li>
+        <li><strong>Cody makes medical decisions if you cannot speak.</strong></li>
+        <li><strong>You want CPR and all possible reasonable care, but you do not want to be left permanently as a vegetable.</strong></li>
+        <li><strong>You do not want intubation without sedation unless there is no other choice.</strong></li>
+        <li><strong>You do not want organ or tissue donation.</strong></li>
+        <li><strong>You want cremation and something simple, not sad.</strong></li>
+        <li><strong>You have a plot at Park Lawn Cemetery, but the exact plot details still need to be verified.</strong></li>
+      </ol>
+      <p>The Will handles probate property. It does not automatically control retirement accounts, life insurance, payable-on-death bank accounts, transfer-on-death property, or jointly owned assets. Those must be checked separately, even though none are currently expected except known accounts/apps.</p>
+      <p>The power of attorney helps while you are alive. The Will helps after death. The health care directive helps if you cannot speak for yourself. Each document has a different job.</p>
+      <div class="warning">The key move now is attorney review if possible, then correct signing with witnesses and notary. Do not let this sit half-finished. Half-finished estate planning creates the exact mess this package is trying to prevent.</div>
+    </section>
+  </main>
+
+  <script>
+    const STORAGE_KEY = "lisa_annette_english_estate_packet_prefilled_v1";
+    let saveTimer;
+
+    function fields() {
+      return Array.from(document.querySelectorAll("input, textarea, select"));
+    }
+
+    function fieldKey(el) {
+      return el.dataset.field || el.name || el.id;
+    }
+
+    function autoGrow(el) {
+      if (!el || el.tagName !== "TEXTAREA") return;
+      el.style.height = "auto";
+      const min = Number.parseInt(window.getComputedStyle(el).minHeight, 10) || 34;
+      el.style.height = Math.max(el.scrollHeight, min) + "px";
+    }
+
+    function expandAllTextareas() {
+      document.querySelectorAll("textarea").forEach(autoGrow);
+    }
+
+    function saveForm() {
+      const data = {};
+      fields().forEach(el => {
+        const key = fieldKey(el);
+        if (!key) return;
+        if (el.type === "checkbox") data[key] = el.checked;
+        else if (el.type === "radio") {
+          if (el.checked) data[el.name || key] = key;
+        } else data[key] = el.value;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      showSaved();
+    }
+
+    function loadForm() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      try {
+        const data = JSON.parse(raw);
+        fields().forEach(el => {
+          const key = fieldKey(el);
+          if (!key) return;
+          if (el.type === "checkbox") el.checked = !!data[key];
+          else if (el.type === "radio") el.checked = data[el.name || key] === key;
+          else if (data[key] !== undefined) el.value = data[key];
+          autoGrow(el);
+        });
+      } catch (err) {
+        console.warn("Could not load saved estate packet data", err);
+      }
+    }
+
+    function scheduleSave(el) {
+      autoGrow(el);
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(saveForm, 250);
+    }
+
+    function showSaved() {
+      const status = document.getElementById("saveStatus");
+      if (!status) return;
+      status.style.opacity = "1";
+      setTimeout(() => status.style.opacity = "0", 1400);
+    }
+
+    function confirmClear() {
+      const ok = window.confirm("Clear saved edits and restore the prefilled document values? This cannot be undone.");
+      if (!ok) return;
+      localStorage.removeItem(STORAGE_KEY);
+      window.location.reload();
+    }
+
+    function printPacket() {
+      expandAllTextareas();
+      document.body.classList.add("printing");
+      requestAnimationFrame(() => {
+        expandAllTextareas();
+        setTimeout(() => {
+          expandAllTextareas();
+          window.print();
+        }, 250);
+      });
+    }
+
+    window.addEventListener("beforeprint", () => {
+      document.body.classList.add("printing");
+      expandAllTextareas();
+    });
+
+    window.addEventListener("afterprint", () => {
+      document.body.classList.remove("printing");
+      expandAllTextareas();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      loadForm();
+      fields().forEach(el => {
+        el.addEventListener("input", () => scheduleSave(el));
+        el.addEventListener("change", () => scheduleSave(el));
+        autoGrow(el);
+      });
+    });
+  </script>
+</body>
+</html>

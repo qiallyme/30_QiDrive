@@ -1,0 +1,184 @@
+{
+  "household": {
+    "packetTitle": "Estate Planning Packet",
+    "jurisdictionState": "Indi",
+    "principalFullName": "l",
+    "preferredName": "",
+    "dateOfBirth": "",
+    "addressLine1": "",
+    "addressLine2": "",
+    "city": "",
+    "state": "",
+    "postalCode": "",
+    "familyNotes": "",
+    "dependentNotes": ""
+  },
+  "people": {
+    "executor": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "alternateExecutor": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "primaryHealthAgent": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "alternateHealthAgent": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "attorneyInFact": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "successorTrustee": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "guardian": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    },
+    "primaryHipaaRecipient": {
+      "fullName": "",
+      "relationship": "",
+      "addressLine1": "",
+      "addressLine2": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "phone": "",
+      "email": ""
+    }
+  },
+  "assets": [
+    {
+      "id": "asset-home",
+      "category": "Real Property",
+      "description": "",
+      "locationHint": "",
+      "intendedRecipient": "",
+      "placeInTrust": true,
+      "notes": ""
+    }
+  ],
+  "beneficiaryAccounts": [
+    {
+      "id": "beneficiary-401k",
+      "institutionName": "",
+      "accountLabel": "",
+      "accountType": "Retirement",
+      "primaryBeneficiary": "",
+      "contingentBeneficiary": "",
+      "percentageNotes": "",
+      "reviewedOn": ""
+    }
+  ],
+  "will": {
+    "primaryBeneficiary": "",
+    "alternateBeneficiary": "",
+    "bequestNotes": "",
+    "taxAndExpenseInstructions": "All debts, taxes, and final expenses should be paid before distribution.",
+    "guardianshipNotes": "",
+    "funeralReference": ""
+  },
+  "healthCare": {
+    "lifeSupportPreference": "",
+    "cprPreference": "",
+    "feedingTubePreference": "",
+    "comfortCarePreference": "",
+    "organDonationPreference": "",
+    "autopsyPreference": "",
+    "specialMedicalInstructions": ""
+  },
+  "financialPoa": {
+    "effectiveDate": "Immediately upon signing",
+    "powersGranted": "Manage bank accounts, investments, taxes, insurance, property transactions, and advisor engagement.",
+    "benefitsAuthority": "Social Security, Medicare, and other public or private benefits as needed.",
+    "propertyAuthority": "Buy, sell, lease, transfer, and maintain real and personal property.",
+    "specialLimits": ""
+  },
+  "hipaa": {
+    "releaseScope": "Medical history, treatment details, provider discussions, and billing information.",
+    "expirationRule": "Remains effective until revoked in writing or until death.",
+    "additionalRecipients": ""
+  },
+  "trust": {
+    "trustEnabled": "Optional but recommended when probate avoidance matters.",
+    "trustName": "",
+    "trustPurpose": "Hold titled assets privately and allow successor administration after incapacity or death.",
+    "scheduleANotes": "",
+    "revocationTerms": "Grantor may amend or revoke the trust at any time during life."
+  },
+  "finalWishes": {
+    "remainsPreference": "",
+    "funeralHome": "",
+    "burialLocation": "",
+    "memorialMusic": "",
+    "memorialReadings": "",
+    "memorialTheme": "",
+    "personalMessage": "",
+    "digitalVaultLocation": "",
+    "digitalExecutorNotes": ""
+  },
+  "signatures": {
+    "witnessCount": "2",
+    "notaryRequired": "Review by state before execution",
+    "storagePlan": "Keep one signed copy at home, one with the primary agent, and one in secure cloud storage.",
+    "attorneyReviewStatus": "",
+    "finalChecklist": "Confirm state-specific execution rules, witness order, and notarization before signing."
+  },
+  "lastUpdatedAt": "5/30/2026, 9:53:52 AM"
+}

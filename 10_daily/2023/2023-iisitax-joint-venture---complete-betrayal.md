@@ -1,0 +1,61 @@
+---
+date: 2023
+title: "IISITAX Joint Venture - Complete Betrayal"
+category: career
+life_stage: early-30s
+critical: true
+tags:
+  - financial
+  - iisitax
+  - critical-event
+  - relationship
+slug: iisitax-joint-venture---complete-betrayal
+realm: 2_QsKb
+owner: CRV
+privacy: private
+qi_decimal: 2.30.10.2023
+layout: page
+summary: ""
+status: active
+created_at: ""
+updated_at: ""
+author: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
+# IISITAX Joint Venture - Complete Betrayal
+
+Five-phase breakdown: False Promises, Exploitation, Hostile Takeover, Smear Campaign, Total Collapse. Your Contribution: $8,493.66 in capital + 683 documented hours. Arleth's Contribution: $1,577 received with ZERO documented contributions. Arleth's Theft: $800 stolen from client. You: 'The only person who actually built anything of value' but 'Financially exploited, Gaslit and scapegoated... Left with the debt, the blame, and no way forward.' Business collapse triggered loss of health insurance.
+
+## Event Details
+
+**Date**: 2023
+**Location**: Indiana
+**Type**: financial
+**Severity**: 5/5
+**People Involved**: Crystal Varela, Arleth Gonzalez
+
+## Source Documentation
+
+- Enhanced_Comprehensive_Timeline_2015-2025.md
+
+## Context
+
+This event occurred during the **early-30s** life period.
+
+## Impact
+
+This was a major life-altering event with significant long-term consequences.
+
+---
+
+*For full context and analysis, see the comprehensive timeline documents in the parent LIFE directory.*

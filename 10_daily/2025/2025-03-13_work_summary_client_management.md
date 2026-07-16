@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Work Summary - Client Management - 2025-03-13
 slug: work-summary-client-management-2025-03-13
@@ -21,8 +21,8 @@ realm_label: ""
 uid: ""
 canonical_ref: ""
 template_key: master-template
+date: 2025-03-13
 ---
-
 # Work Summary - Client Management - 2025-03-13
 
 Mood/Intention: On a Mission

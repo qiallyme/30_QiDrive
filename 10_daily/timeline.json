@@ -1,0 +1,67 @@
+[
+  {
+    "id": "2025-01-qially-issitax",
+    "date": "2025-01-01",
+    "title": "Founded QiAlly LLC & IssiTax LLC",
+    "category": "personal",
+    "life_stage": "established-career",
+    "critical": true,
+    "tags": [],
+    "description": "Founded QiAlly LLC and IssiTax LLC, expanding into tech platform and tax services. QiAlly provides comprehensive platform development with AI integration. IssiTax delivers specialized tax and financial consulting services.",
+    "slug": "founded-qially-llc-issitax-llc",
+    "life_stage_label": "Established Career",
+    "life_stage_order": 7
+  },
+  {
+    "id": "2018-08-wgu-graduation",
+    "date": "2018-08-01",
+    "title": "Graduated Western Governors University",
+    "category": "education",
+    "life_stage": "young-professional",
+    "critical": true,
+    "tags": [],
+    "description": "BBA in Human Resources Management and Services. Comprehensive study of HR principles, business administration, and management practices.",
+    "slug": "graduated-western-governors-university",
+    "life_stage_label": "Young Professional",
+    "life_stage_order": 6
+  },
+  {
+    "id": "2013-01-ivy-tech-graduation",
+    "date": "2013-01-01",
+    "title": "Graduated from Ivy Tech",
+    "category": "education",
+    "life_stage": "young-professional",
+    "critical": true,
+    "tags": [],
+    "description": "Associate of Applied Science in Information Security with Certificate in Network & Information Security, Computer and Information Systems Security/Information Assurance.",
+    "slug": "graduated-from-ivy-tech",
+    "life_stage_label": "Young Professional",
+    "life_stage_order": 6
+  },
+  {
+    "id": "2009-01-angel-ayuda",
+    "date": "2009-01-01",
+    "title": "Founded Angel Ayuda LLC",
+    "category": "personal",
+    "life_stage": "early-adulthood",
+    "critical": true,
+    "tags": [],
+    "description": "Founded Angel Ayuda LLC during the 2009 crisis, providing computer repair services while studying full time. Achieved fluency in Spanish and deep immersion in Hispanic culture.",
+    "slug": "founded-angel-ayuda-llc",
+    "life_stage_label": "Early Adulthood",
+    "life_stage_order": 5
+  },
+  {
+    "id": "2008-07-enkei-america",
+    "date": "2008-07-01",
+    "title": "Started at Enkei America, Inc",
+    "category": "career",
+    "life_stage": "early-adulthood",
+    "critical": false,
+    "tags": [],
+    "description": "Began as VDH Operator, overseeing machine processes and coordinating crew members. Responsible for minor maintenance issues and reporting product waste, production, and specifications.",
+    "slug": "started-at-enkei-america-inc",
+    "life_stage_label": "Early Adulthood",
+    "life_stage_order": 5
+  }
+]

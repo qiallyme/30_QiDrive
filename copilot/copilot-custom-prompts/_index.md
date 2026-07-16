@@ -1,9 +1,33 @@
 ---
-title: "copilot-custom-prompts"
+title: copilot-custom-prompts
 type: index
 status: active
 generated_by: qilabs-housekeeping
-generated_at: "20260701-200047"
+generated_at: 20260701-200047
+copilot-command-context-menu-enabled: true
+copilot-command-slash-enabled: true
+copilot-command-context-menu-order: 10
+copilot-command-model-key: ""
+copilot-command-last-used: 0
+layout: page
+slug: ""
+summary: ""
+created_at: ""
+updated_at: ""
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+index_scope: ""
 ---
 
 # copilot-custom-prompts

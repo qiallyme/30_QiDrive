@@ -2,7 +2,7 @@
 layout: page
 title: Streamlining the vendor management and contract signing process in a travel industry | Use Cases - Zoho CRM
 slug: streamlining-the-vendor-management-and-contract-signing-process-in-a-travel-industry-use-cases-zoho-crm
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

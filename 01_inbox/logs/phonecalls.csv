@@ -1,0 +1,684 @@
+﻿activitytypecode,actualend,actualstart,activityadditionalparams,description,directioncode,scheduledend,actualdurationminutes,exchangerate,importsequencenumber,isbilled,isregularactivity,isworkflowcreated,lastonholdtime,leftvoicemail,onholdtime,activityid,phonenumber,prioritycode,processid,scheduleddurationminutes,sortdate,scheduledstart,statuscode,subcategory,subject,timezoneruleversionnumber,utcconversiontimezonecode,versionnumber
+phonecall,2023-09-06 00:00:00.0000000,2023-05-08 17:36:15.0000000,,,False,,,,,False,True,False,,False,,6526a7d4-c6ed-ed11-8849-0022482605f4,13176263065,1,,,,,2,,Call from +13176263065,8,,45040092
+phonecall,2023-09-06 00:00:00.0000000,2023-05-08 17:37:35.0000000,,,False,,,,,False,True,False,,False,,839f9eff-c6ed-ed11-8849-0022482605f4,13176263065,1,,,,,2,,Call from +13176263065,8,,45040084
+phonecall,2023-09-06 00:00:00.0000000,2023-05-13 19:06:18.0000000,,,False,,,,,False,True,False,,False,,56002a3c-c1f1-ed11-8849-0022482605f4,13177934950,1,,,,,2,,Call from +13177934950,8,,45040077
+phonecall,2023-09-06 00:00:00.0000000,2023-05-27 21:36:03.0000000,,,False,,,,,False,True,False,,False,,f005ae75-d6fc-ed11-8f6e-0022482605f4,18123447719,1,,,,,2,,Call from +18123447719,8,,45040067
+phonecall,2023-09-06 00:00:00.0000000,2023-05-27 21:57:16.0000000,,,True,,,,,False,True,False,,False,,2f486872-d9fc-ed11-8f6e-00224834e1cb,18123447719,1,,,,,2,,Call to Samuel Ruiz Vasquez,8,,45040058
+phonecall,2023-09-06 00:00:00.0000000,2023-05-27 22:09:23.0000000,,,False,,,,,False,True,False,,False,,eaabc123-dbfc-ed11-8f6e-00224834e1cb,18123447719,1,,,,,2,,Call from +18123447719,8,,45040049
+phonecall,2023-09-06 00:00:00.0000000,2023-06-08 20:53:37.0000000,,,False,,9,,,False,True,False,,False,,fd30ce88-3e06-ee11-8f6e-00224834e1cb,14632535949,1,,,,,2,,Call from +14632535949,8,,45040040
+phonecall,2023-03-02 19:18:37.0000000,2023-03-02 19:14:46.0000000,,"After listening to the call, that was with Gustavo, not actually with our left. That are less station and did not log into his own. Loggins. This client was waiting for I guess the the salvage title for the vehicle that he had brought to us in order to title and I imagine he would also need a refund, so we need to investigate that and see if that was actually completed. Once I identify when this call is from, then I can identify how long ago this should have been done.",True,2023-03-07 16:00:00.0000000,4,,,False,True,False,,False,,70ef7e7c-2eb9-ed11-83fd-00224834e1cb,+1(571) 269-5623,1,,0,,2023-03-07 16:00:00.0000000,2,,Call to Javier Soriano Marquez,8,,36609344
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 21:18:18.0000000,,,False,,3,,,False,True,False,,False,,af31803f-e4b6-ed11-83fd-00224834e1cb,+1 7864420326,1,,,,,2,,"Call from Guevara Ortiz, Domingo",0,,36568744
+phonecall,2023-07-19 05:44:02.0000000,,,"Hola, mi nombre es Lisandro Castillo en quiero que me avisen por favor, cuándo que van a estar en la oficina porque necesito ir A ¿ Hacer un pago de mis Taxes. Por favor, avíseme si es tan amable para. ¿¿Para ir, OK? Gracias.",False,,30,,,False,True,False,,False,,5edb7b3a-f725-ee11-9cbd-0022482b2538,13178338416,1,,,,,2,,Pago de Taxes,8,,35985834
+phonecall,2023-07-19 05:38:33.0000000,,,,False,,1,,,False,True,False,,False,,23f62b74-f625-ee11-9cbd-0022482b2538,+1 3177422450,1,,,,,2,,Called no VM,8,,35985610
+phonecall,2023-07-19 05:37:20.0000000,,,no message.,False,,1,,,False,True,False,,False,,9b16da49-f625-ee11-9cbd-0022482b2538,+1 3179699500,1,,,,,2,,Called,8,,35985532
+phonecall,2023-06-23 22:00:29.0000000,,,I just emailed you about Shelby. She said she has not gotten her DD yet. Was this set up? I know it’s still early and I told her to give it till noon but I wanted to double check with you anyway.,False,,30,,,False,True,False,,False,,93566ccf-0f12-ee11-8f6d-0022482605f4,,1,,,,,2,,text to owner,8,,31345128
+phonecall,2023-06-23 22:00:28.0000000,,,Just emailed you again about Shelby. Her DD has not gone through yet. This is her account info if you can double check it please. ,False,,30,,,False,True,False,,False,,8c5f48f0-0f12-ee11-8f6d-0022482605f4,,1,,,,,2,,text message,8,,31345124
+phonecall,2023-06-23 22:00:28.0000000,,,"Arleth called David to verify the reason for the calls as cody was assisting another client. Per Arleth sounded annoyed and was ""Just seeing if cody would answer"" hung up before Arleth had concluded. ",True,,30,,,False,True,False,,False,,885e446f-1012-ee11-8f6d-0022482605f4,+1 7655436979,1,,,,,2,,Call to Client,8,,31345119
+phonecall,2023-06-23 21:59:26.0000000,,,"4:32 PM
+4:06 PM
+3:56 PM
+3:42 PM",False,,30,,,False,True,False,,False,,df5fd931-1112-ee11-8f6d-0022482605f4,,1,00000000-0000-0000-0000-000000000000,,,,2,,Missed Call from David,8,,31345093
+phonecall,2023-06-21 02:47:00.0000000,,,Isai called and provided the client with the help. ,True,,30,,,False,True,False,,False,,7c56e2dc-dd0f-ee11-8f6d-000d3a1daf86,,1,00000000-0000-0000-0000-000000000000,,,,2,,Next Insurance,8,,31174395
+phonecall,2023-06-18 00:00:00.0000000,,,,True,2023-06-19 18:00:00.0000000,,1,29,False,True,False,,False,,c0cc1aeb-330e-ee11-8f6d-0022482b2ca6,,2,,0,,2023-06-19 18:00:00.0000000,2,,Very likely will order from us (sample),8,,30911101
+phonecall,2023-06-18 00:00:00.0000000,,,,True,2023-06-23 14:00:00.0000000,,1,29,False,True,False,,False,,c8cc1aeb-330e-ee11-8f6d-0022482b2ca6,,2,,0,,2023-06-23 14:00:00.0000000,2,,Will be ordering soon (sample),8,,30911091
+phonecall,2023-06-18 00:00:00.0000000,,,,True,2023-06-24 14:00:00.0000000,,1,29,False,True,False,,False,,cacc1aeb-330e-ee11-8f6d-0022482b2ca6,,2,,0,,2023-06-24 14:00:00.0000000,2,,Discuss new opportunity (sample),8,,30911082
+phonecall,2023-06-18 23:59:07.0000000,,,,False,2023-06-17 14:00:00.0000000,,1,29,False,True,False,,False,,cccc1aeb-330e-ee11-8f6d-0022482b2ca6,,2,,0,,2023-06-17 14:00:00.0000000,2,,Mailed an interest card back (sample),8,,30902661
+phonecall,2023-01-19 18:40:57.0000000,2023-01-19 18:26:54.0000000,,,True,,15,,,False,True,False,,False,,877861d5-2698-ed11-aad1-00224828938f,+1 4632490007,1,,,,,2,,Call to Victor Gomez,0,,26046633
+phonecall,2023-01-16 21:58:08.0000000,2023-01-16 21:58:02.0000000,,,True,,1,,,False,True,False,,False,,d54619d5-e895-ed11-aad1-00224828938f,+1 4632490007,1,,,,,2,,Call to Victor Gomez,0,,26046632
+phonecall,2023-04-17 04:00:00.0000000,2023-04-17 20:40:12.0000000,,,True,,1,,,False,True,False,,False,,efb2e207-60dd-ed11-a7c7-0022482605f4,14632490007,1,,,,,2,,Call to Victor Gomez,8,,26046631
+phonecall,2023-04-27 04:00:00.0000000,2023-04-17 20:40:12.0000000,,,True,,,,,False,True,False,,False,,eeb2e207-60dd-ed11-a7c7-0022482605f4,14632490007,1,,,,,2,,Call to Victor Gomez,8,,26046630
+phonecall,2023-06-02 04:00:00.0000000,2023-06-02 21:00:57.0000000,,,False,,1,,,False,True,False,,False,,193b2d8e-8801-ee11-8f6e-000d3a1daf86,14704076704,1,,,,,2,,Call from +14704076704,8,,24969537
+phonecall,2023-06-02 19:43:46.0000000,2023-06-02 19:43:29.0000000,,,True,,1,,,False,True,False,,False,,8bafb2bf-7d01-ee11-8f6e-0022482605f4,+1 3174537648,1,,,,,2,,Call to Vegas LawncareLandscaping LLC,8,,24419190
+phonecall,2023-06-02 19:45:15.0000000,2023-06-02 19:43:29.0000000,,,True,,,,,False,True,False,,False,,8cafb2bf-7d01-ee11-8f6e-0022482605f4,+1 3174537648,1,,,,,2,,Call to Vegas LawncareLandscaping LLC,8,,24419148
+phonecall,2023-03-01 16:15:26.0000000,2023-03-01 16:15:15.0000000,,,True,,1,,,False,True,False,,False,,d7478e3f-4cb8-ed11-83fe-0022482605f4,13172892082,1,,,,,2,,Call to +13172892082,0,,20674604
+phonecall,2023-02-24 18:29:26.0000000,2023-02-24 18:15:59.0000000,,,False,,14,,,False,True,False,,False,,2328d744-6fb4-ed11-83fe-0022482605f4,13177965243,1,,,,,2,,Call from CARMEN SANCHEZ,0,,20674021
+phonecall,2023-02-24 18:14:47.0000000,2023-02-24 18:14:07.0000000,,,True,,1,,,False,True,False,,False,,1c006f04-6fb4-ed11-83fe-0022482605f4,+1 3177965243,1,,,,,2,,Call to Muebleria Dulce Hogar LLC,0,,20673836
+phonecall,2023-02-24 18:06:38.0000000,2023-02-24 18:05:29.0000000,,,True,,2,,,False,True,False,,False,,309383d0-6db4-ed11-83fe-0022482605f4,+1 3173326739,1,,,,,2,,Call to Bless Me LLC,0,,20673645
+phonecall,2023-02-22 19:59:55.0000000,2023-02-22 19:59:43.0000000,,,True,,1,,,False,True,False,,False,,d6c5d36f-ebb2-ed11-83fe-0022482605f4,15712695623,1,,,,,2,,Call to +15712695623,0,,20673468
+phonecall,2023-02-17 22:01:02.0000000,2023-02-17 21:48:20.0000000,,,True,,13,,,False,True,False,,False,,b60729c9-0caf-ed11-aad1-000d3a1daf86,+1 (317) 384-1465,1,,,,,2,,Call to Masters Group Auto Center - Essence Consulting,0,,20673277
+phonecall,2023-02-17 21:47:40.0000000,2023-02-17 21:33:45.0000000,,,True,,14,,,False,True,False,,False,,914fb8bd-0aaf-ed11-aad1-000d3a1daf86,+1 (317) 384-1465,1,,,,,2,,Call to Masters Group Auto Center - Essence Consulting,0,,20673100
+phonecall,2023-02-16 17:28:51.0000000,2023-02-16 17:28:04.0000000,,,True,,1,,,False,True,False,,False,,1dd1a93f-1fae-ed11-aad1-000d3a1daf86,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,0,,20672881
+phonecall,2023-02-16 17:25:20.0000000,2023-02-16 17:25:07.0000000,,,True,,1,,,False,True,False,,False,,63909ad9-1eae-ed11-aad1-000d3a1daf86,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,0,,20672700
+phonecall,2023-02-06 20:32:14.0000000,2023-02-06 20:32:05.0000000,,,True,,1,,,False,True,False,,False,,b6d4b850-5da6-ed11-aad1-0022482605f4,+1 3173326739,1,,,,,2,,Call to Rony A Sanchez Guifarro,0,,20672511
+phonecall,2023-02-02 21:04:38.0000000,2023-02-02 21:04:02.0000000,,,True,,1,,,False,True,False,,False,,2e7b2719-3da3-ed11-aad0-000d3a1daf86,13177461384,1,,,,,2,,Call to +13177461384,0,,20672327
+phonecall,2023-01-30 18:53:17.0000000,2023-01-30 18:52:42.0000000,,,True,,1,,,False,True,False,,False,,f474e142-cfa0-ed11-aad0-000d3a1daf86,8667292402,1,,,,,2,,Call to 8667292402,0,,20672128
+phonecall,2023-03-04 18:18:55.0000000,2023-03-04 18:10:02.0000000,,,True,,9,,,False,True,False,,False,,d002dcc7-b7ba-ed11-83ff-0022482605f4,+1 3173326739,1,,,,,2,,Call to Bless Me LLC,0,,20671920
+phonecall,2023-02-10 22:43:45.0000000,2023-02-10 22:43:34.0000000,,,True,,1,,,False,True,False,,False,,33e1c654-94a9-ed11-aad1-0022482605f4,17655353963,1,,,,,2,,Call to Oliver E Cabrera Najera,0,,20671732
+phonecall,2023-02-10 22:35:51.0000000,2023-02-10 22:35:20.0000000,,,True,,1,,,False,True,False,,False,,81fb3a2d-93a9-ed11-aad1-0022482605f4,13177423090,1,,,,,2,,Call to Oliver E Cabrera Najera,0,,20671569
+phonecall,2023-02-10 22:34:47.0000000,2023-02-10 22:34:30.0000000,,,True,,1,,,False,True,False,,False,,182ef410-93a9-ed11-aad1-0022482605f4,+1(765) 535-3963,1,,,,,2,,Call to Oliver E Cabrera Najera,0,,20671413
+phonecall,2023-02-10 22:34:05.0000000,2023-02-10 22:33:56.0000000,,,True,,1,,,False,True,False,,False,,f4002bfe-92a9-ed11-aad1-0022482605f4,+1(765) 535-3963,1,,,,,2,,Call to Oliver E Cabrera Najera,0,,20671264
+phonecall,2023-01-27 22:01:49.0000000,2023-01-27 22:01:40.0000000,,,True,,1,,,False,True,False,,False,,de9ed128-8e9e-ed11-aad1-0022482605f4,13173667810,1,,,,,2,,Call to Maria Susana Cortez Vides,0,,20671093
+phonecall,2023-01-27 21:21:08.0000000,2023-01-27 21:20:30.0000000,,"Llamada realizada, Se dejo mensaje de voz",True,,1,,,False,True,False,,False,,aee00667-889e-ed11-aad1-0022482605f4,13173667810,1,,,,,2,,Call to Maria Susana Crotez Vides,0,,20670947
+phonecall,2023-02-16 20:54:11.0000000,2023-02-16 20:37:19.0000000,,"Paula Valderrama y Erick (Conocidos en el matrimonio de Alexander rony bless me)
+* Solicitud de impuestos estatales de sus compañias:
+   - Acciones Indy LLC
+   - Projecto. Corp
+* Deben entregar el 1099 de su contratista Rony (Bless Me)",True,,17,,,False,True,False,,False,,f52f26af-39ae-ed11-aad1-000d3a1daf86,13058349054,1,,,,,2,,Call to +13058349054,0,,20670780
+phonecall,2023-02-02 20:31:34.0000000,2023-02-02 20:31:23.0000000,,,True,,1,,,False,True,False,,False,,76837087-38a3-ed11-aad0-000d3a1daf86,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,0,,20670603
+phonecall,2023-01-30 20:49:36.0000000,2023-01-30 20:49:20.0000000,,,True,,1,,,False,True,False,,False,,ce87da8b-dfa0-ed11-aad0-000d3a1daf86,3174572434,1,,,,,2,,Call to Oscar Arnulfo Chicas Romero,0,,20670479
+phonecall,2023-01-29 21:31:42.0000000,2023-01-29 21:25:51.0000000,,,True,,6,,,False,True,False,,False,,67a8e77f-1ba0-ed11-aad0-000d3a1daf86,+1 7656501961,1,,,,,2,,Call to Martina Santiago,0,,20670319
+phonecall,2023-01-30 19:29:01.0000000,2023-01-30 19:28:48.0000000,,,True,,1,,,False,True,False,,False,,f681814f-d4a0-ed11-aad0-000d3a1daf86,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,0,,20670156
+phonecall,2023-01-30 18:06:10.0000000,2023-01-30 18:05:22.0000000,,,True,,1,,,False,True,False,,False,,21211eaa-c8a0-ed11-aad0-000d3a1daf86,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,0,,20669979
+phonecall,2023-01-30 20:50:31.0000000,2023-01-30 20:50:18.0000000,,,True,,1,,,False,True,False,,False,,c0e3ecaf-dfa0-ed11-aad0-000d3a1daf86,13174572434,1,,,,,2,,Call to Oscar Arnulfo Chicas Romero,0,,20669809
+phonecall,2023-01-30 20:49:01.0000000,2023-01-30 20:48:51.0000000,,,True,,1,,,False,True,False,,False,,b4a1cf7f-dfa0-ed11-aad0-000d3a1daf86,3174572434,1,,,,,2,,Call to Oscar Arnulfo Chicas Romero,0,,20669602
+phonecall,2023-01-27 22:02:44.0000000,2023-01-27 22:02:37.0000000,,,True,,1,,,False,True,False,,False,,439f044e-8e9e-ed11-aad1-0022482605f4,+1 3177946862,1,,,,,2,,Call to Alejandra Flores,0,,20669439
+phonecall,2023-01-27 23:44:52.0000000,2023-01-27 23:39:58.0000000,,,True,,5,,,False,True,False,,False,,9cc50ce4-9b9e-ed11-aad1-0022482605f4,+1 3179691431,1,,,,,2,,Call to Edi Santos Carranza Sanchez,0,,20669283
+phonecall,2023-01-27 18:56:23.0000000,2023-01-27 18:46:32.0000000,,"Llamada relacionada a su ventas de Diciembre para pagar al estado. Dice no haber hecho ventas ese mes porque estuvo cerrrado, razones medicas 
+",True,,10,,,False,True,False,,False,,9298f1ea-729e-ed11-aad1-0022482605f4,+1 3176657700,1,,,,,2,,Call to Electronicos Nachito,0,,20669106
+phonecall,2023-01-23 20:08:16.0000000,2023-01-23 20:07:30.0000000,,,True,,1,,,False,True,False,,False,,94773e8b-599b-ed11-aad1-0022482605f4,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,0,,20668929
+phonecall,2023-01-19 19:29:10.0000000,2023-01-19 19:27:47.0000000,,,True,,2,,,False,True,False,,False,,880fbd55-2f98-ed11-aad1-00224828938f,+1 4846810104,1,,,,,2,,Call to R&Y Pluming LLC,0,,20668794
+phonecall,2023-01-19 19:27:25.0000000,2023-01-19 19:27:18.0000000,,,True,,1,,,False,True,False,,False,,344a3649-2f98-ed11-aad1-00224828938f,+1 4846810104,1,,,,,2,,Call to R&Y Pluming LLC,0,,20668615
+phonecall,2023-01-14 00:12:26.0000000,2023-01-14 00:11:48.0000000,,,True,,1,,,False,True,False,,False,,bf45d806-a093-ed11-aad1-00224828938f,+1 3177174023,1,,,,,2,,Call to Amadeo Ortiz,0,,20668247
+phonecall,2022-10-27 00:00:00.0000000,2022-10-27 22:49:43.0000000,,,True,,1,,,False,True,False,,False,,0eafa4a3-4956-ed11-bba3-00224828938f,4078005769,1,,,,,2,,Call to Julio Canvas,4,,20668123
+phonecall,2022-12-19 20:13:29.0000000,2022-12-19 20:10:47.0000000,,Llame a julio para que me diera autorizacion del pago de los Sales Taxes Nov (199.78),True,,3,,,False,True,False,,False,,3f497e3a-d97f-ed11-81ad-0022482605f4,+1 4078005769,1,,,,,2,,Call to Julio Canvas,0,,20667954
+phonecall,2022-12-11 00:00:00.0000000,2022-12-11 21:11:11.0000000,,,True,,1,,,False,True,False,,False,,ad699653-9879-ed11-81ad-0022482605f4,+1 4078005769,1,,,,,2,,Call to Julio Canvas,4,,20667768
+phonecall,2023-01-10 01:54:29.0000000,2023-01-10 01:52:17.0000000,,,True,,3,,,False,True,False,,False,,61ae0468-8990-ed11-aad1-0022482605f4,+1 7656501961,1,,,,,2,,Call to Martina Santiago,0,,20667595
+phonecall,2023-01-10 01:49:33.0000000,2023-01-10 01:45:34.0000000,,,True,,4,,,False,True,False,,False,,ec43b978-8890-ed11-aad1-0022482605f4,+1 7656501961,1,,,,,2,,Call to Martina Santiago,0,,20667439
+phonecall,2023-01-10 02:04:03.0000000,2023-01-10 02:03:55.0000000,,,True,,1,,,False,True,False,,False,,69a9b608-8b90-ed11-aad1-0022482605f4,+1 7656501961,1,,,,,2,,Call to Martina Santiago,0,,20667250
+phonecall,2023-01-10 01:31:37.0000000,2023-01-10 01:29:07.0000000,,,True,,3,,,False,True,False,,False,,ab955827-8690-ed11-aad1-0022482605f4,+1 7656508240,1,,,,,2,,Call to Martina Santiago,0,,20667059
+phonecall,2023-01-05 18:53:55.0000000,2023-01-05 18:46:17.0000000,,,True,,8,,,False,True,False,,False,,69e9de3b-298d-ed11-81ad-00224828938f,+1 3177948782,1,,,,,2,,Call to Alfonso Rafael Bogarin De La Cruz,0,,20666903
+phonecall,2023-01-05 23:28:18.0000000,2023-01-05 23:23:22.0000000,,,True,,5,,,False,True,False,,False,,829db0ef-4f8d-ed11-81ad-00224828938f,+1 3176280911,1,,,,,2,,Call to Carlos Daniel Antunez,0,,20666733
+phonecall,2023-01-06 00:31:24.0000000,2023-01-06 00:27:35.0000000,,Llamada para solicitar los recibos de Diciembre y las ventas del mes de Diciembre. dice ella haber entregado Noviembre. Estamos revisando los registros,True,,4,,,False,True,False,,False,,c6d59ce4-588d-ed11-81ad-00224828938f,+1 3176400269,1,,,,,2,,Call to Ana Maria Gonzalez de Jesus,0,,20666521
+phonecall,2023-01-05 22:18:41.0000000,2023-01-05 22:03:15.0000000,,"Llame para informar de su pago pendiente del mes de enero
+quedamos pendientes de informarle acerca de un texto que ella malinterpreto. ",True,,16,,,False,True,False,,False,,c58467be-448d-ed11-81ad-00224828938f,+1 3176400269,1,,,,,2,,Call to Ana Maria Gonzalez de Jesus,0,,20666369
+phonecall,2022-10-27 21:32:18.0000000,2022-10-27 21:14:50.0000000,,,True,,18,,,False,True,False,,False,,51785564-3c56-ed11-bba3-00224828938f,3177376277,1,,,,,2,,Call to Garcia Painting Pro,4,,20666188
+phonecall,2022-11-29 00:00:00.0000000,2022-11-29 20:35:09.0000000,,,True,,1,,,False,True,False,,False,,44243c4c-2570-ed11-9562-00224828938f,13172502637,1,,,,,2,,Call to Kondor High Performance LLC,4,,20665983
+phonecall,2022-11-15 00:00:00.0000000,2022-11-15 18:09:24.0000000,,,True,,1,,,False,True,False,,False,,411bc39c-1065-ed11-9562-00224828938f,+1 (317) 384-1465,1,,,,,2,,Call to Masters Group Auto Center - Essence Consulting,4,,20665749
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 19:39:20.0000000,,,True,,1,,,False,True,False,,False,,3dcd48cf-d47f-ed11-81ad-00224828938f,+1 7652427170,1,,,,,2,,Call to Diego Hernandez,0,,20665578
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 22:50:09.0000000,,,True,,1,,,False,True,False,,False,,657f4ad0-ca7c-ed11-81ad-00224828938f,+1 3174572190,1,,,,,2,,Call to +1 3174572190,4,,20665399
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 21:17:45.0000000,,,True,,2,,,False,True,False,,False,,c437b0e5-bd7c-ed11-81ad-00224828938f,+1 4632490007,1,,,,,2,,Call to +1 4632490007,4,,20665259
+phonecall,2022-12-12 21:07:14.0000000,2022-12-12 21:01:54.0000000,,"Hable con luis acerca de las preguntas que segun hacian falta contestar, el me dice que ya el se comunico con ellos para responder lo que hacia falta, aun asi enviare un correo con las respuestas para que quede registro.
+",True,,6,,,False,True,False,,False,,5df39534-607a-ed11-81ad-00224828938f,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,4,,20665101
+phonecall,2022-12-10 19:04:03.0000000,2022-12-10 19:01:30.0000000,,Llamada al cliente para confirmar que las copias certificadas de documentos como actas de matrimonio solo se pueden realizar de manera presencial,True,,3,,,False,True,False,,False,,151a3f0c-bd78-ed11-81ad-00224828938f,+1 7653379014,1,,,,,2,,Call to Fernando Gonzalez Ochoa,4,,20664939
+phonecall,2022-12-08 00:00:00.0000000,2022-12-08 20:32:41.0000000,,,True,,2,,,False,True,False,,False,,e7a6f074-3777-ed11-81ab-00224828938f,+1 3177240057,1,,,,,2,,Call to +1 3177240057,4,,20664769
+phonecall,2022-10-29 23:47:39.0000000,,,"Stephanie please give client a call to confirm we are ok to make the sales tax payment, it is due on Monday I believe. See the email on her contact timeline, I believe the total is $1360, this was the client we worked on earlier. ",True,2022-10-29 15:00:00.0000000,30,,,False,True,False,,False,,ccf534d6-3e57-ed11-bba3-0022482605f4,,2,00000000-0000-0000-0000-000000000000,0,,2022-10-29 15:00:00.0000000,2,,Judith Sales Tax Follow Up,8,,20664591
+phonecall,2022-11-15 00:31:23.0000000,2022-11-15 00:18:41.0000000,,"Recibi informacion Faltante de la cotizacion del Honda Pilot. Acerca de su pareja Alexander Gonzalez Lopez
+Esta pendiente El VIN del vehiculo porque fue mal escrito en el formulario ",True,,13,,,False,True,False,,False,,44d7bb0a-7b64-ed11-9562-0022482605f4,+1 (317) 438-1369,1,,,,,2,,Call to Florinda Maldonado Diaz,4,,20664427
+phonecall,2022-12-22 21:54:55.0000000,,,"Payment was returned, Tried both check and card, It appears as if the account was closed. Client has 2 days before teh account is put on hold, or 7 moe days before the contract will term for non-payment and assigned to bad debt. 
+
+11/17/2022 Liliana gave her a call to inform her about the payment for her account or if she just wanted to go ahead and cancel it , but she did not answer. 
+
+
+11/19/2022 Called client this morning she states the reason she has not paid because they are investigating her account. Money was not being deposited to her account they are unsure where money has been going. Client states she knows she owes us but she has not been able to use her card or her bank account. She will try and pay us this week. Client states she is available to speak tomorrow from 8-10AM. ",True,2022-11-28 16:00:00.0000000,15,,,False,True,False,,False,,cd09691b-4a63-ed11-9562-0022482605f4,+1 2706457607,1,,20160,,2022-11-14 16:00:00.0000000,2,,Cancellation Pending Non-Payment - Pupuseria El Buen Sabor,8,,20664236
+phonecall,2022-11-08 00:42:36.0000000,2022-11-07 23:44:12.0000000,,,True,,59,,,False,True,False,,False,,2290e210-f65e-ed11-9562-0022482605f4,+1 3173326739,1,,,,,2,,Call to Bless Me LLC,4,,20664061
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 22:55:30.0000000,,Estuve llamando al señor Diego pero no pude recibir respuesta. es la segunda llamada. ,True,,1,,,False,True,False,,False,,48051f37-f07f-ed11-81ad-0022482605f4,+1 7652427170,1,,,,,2,,Call to Diego Hernandez,0,,20663903
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 21:40:15.0000000,,,True,,1,,,False,True,False,,False,,6c4896b4-e57f-ed11-81ad-0022482605f4,+1 3175036964,1,,,,,2,,Call to Noe Garcia,0,,20663738
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 21:39:49.0000000,,,True,,1,,,False,True,False,,False,,a3a154a8-e57f-ed11-81ad-0022482605f4,3175036964,1,,,,,2,,Call to Noe Garcia,0,,20663581
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 19:59:17.0000000,,,True,,1,,,False,True,False,,False,,388cea9d-d77f-ed11-81ad-0022482605f4,+1 7652427170,1,,,,,2,,Call to Diego Hernandez,0,,20663402
+phonecall,2022-12-08 00:00:00.0000000,2022-12-08 20:37:08.0000000,,,True,,1,,,False,True,False,,False,,a13d1312-3877-ed11-81ab-0022482605f4,+1 3177240057,1,,,,,2,,Call to Gustavo Cruz Vazquez,4,,20663265
+phonecall,2022-12-04 00:00:00.0000000,2022-12-04 21:32:56.0000000,,,True,,3,,,False,True,False,,False,,c445d833-1b74-ed11-81ab-0022482605f4,13177174023,1,,,,,2,,Call to +13177174023,4,,20663130
+phonecall,2022-12-04 00:00:00.0000000,2022-12-04 21:19:34.0000000,,,True,,6,,,False,True,False,,False,,8114d054-1974-ed11-81ab-0022482605f4,14632490007,1,,,,,2,,Call to +14632490007,4,,20662957
+phonecall,2022-11-03 22:51:00.0000000,,,Contact client or provide new client survey to get necessary details.,True,2022-11-03 22:50:52.0000000,,,,False,True,False,,False,,a953e6f5-c95b-ed11-9562-0022482605f4,,1,,0,,2022-11-03 22:50:52.0000000,2,,First Contact,8,,20646624
+phonecall,2022-11-05 00:00:00.0000000,2022-11-05 22:26:57.0000000,,,True,,2,,,False,True,False,,False,,0e66f6ee-585d-ed11-9562-0022482605f4,3177174023,1,,,,,2,,Call to Ortiz Electronicos LLC,4,,20644768
+phonecall,2023-02-05 21:53:11.0000000,2023-02-05 21:52:02.0000000,,,True,,2,,,False,True,False,,False,,b41dda4c-9fa5-ed11-aad1-00224828938f,+1 4078005769,1,,,,,2,,Call to Indy Fuds LLC d.b.a. CANVAS P.A.D.,0,,20644523
+phonecall,2022-12-16 23:54:49.0000000,2022-12-16 23:53:16.0000000,,"Hable con Vanessa, le explique que ese pago esta atrasado, ademas de haber recibido un correo de parte de nosotros con la fecha de expiracion. Solicito realizar el pago el dia Lunes bajo cualquier consecuencia que eso implique.",True,,2,,,False,True,False,,False,,7eb99bcb-9c7d-ed11-81ad-00224828938f,+1 3177714114,1,,,,,2,,Call to Suriland,4,,20643373
+phonecall,2022-12-08 20:42:11.0000000,2022-12-08 20:38:32.0000000,,"Llamada para revisar un deposito en efectivo, (Owner Investments)  y para acordar la programacion del pago de los sales and FAB Taxes del mes de noviembre para el 26 de Diciembre",True,,4,,,False,True,False,,False,,2b1c2742-3877-ed11-81ab-0022482605f4,+1 3177714114,1,,,,,2,,Call to Suriland,4,,20643363
+phonecall,2023-02-26 06:00:00.0000000,2023-02-26 23:27:30.0000000,,,True,,2,,,False,True,False,,False,,90aed11f-2db6-ed11-83fd-00224834e1cb,+1 3175035624,1,,,,,2,,Call to El Kiosco,0,,20643105
+phonecall,2023-01-05 16:41:35.0000000,2023-01-05 16:36:55.0000000,,Llamada para confirmar el uso de square desde la semana pasada. tambien se pregunto por una transaccion sin categorizar de Diciembre 6. pregunto acerca de como cancelar su servicio con shopkeep y acerca del pago de un credito que tiene pendiente.,True,,5,,,False,True,False,,False,,7cbf9529-178d-ed11-81ad-00224828938f,+1 3175035624,1,,,,,2,,Call to El Kiosco,0,,20643103
+phonecall,2022-12-19 20:35:57.0000000,2022-12-19 20:24:56.0000000,,"Llame a monica para programar el pago de Sales taxes del mes de Noviembre (1081.04) Quedamos en que para futuros pagos la fecha seran los 26 de cada mes
+",True,,12,,,False,True,False,,False,,c0ffc633-db7f-ed11-81ad-00224828938f,+1 3175035624,1,,,,,2,,Call to El Kiosco,0,,20643101
+phonecall,2023-04-20 05:00:00.0000000,2023-04-20 18:40:37.0000000,,,True,,1,,,False,True,False,,False,,402842d5-aadf-ed11-a7c7-00224834e1cb,(317) 982-9362,1,,,,,2,,Call to Lauro Bernal Vazquez,0,,20642796
+phonecall,2023-04-23 22:31:51.0000000,2023-04-20 18:40:37.0000000,,,True,,,,,False,True,False,,False,,3f2842d5-aadf-ed11-a7c7-00224834e1cb,(317) 982-9362,1,,,,,2,,Call to Lauro Bernal Vazquez,8,,20642794
+phonecall,2023-04-20 05:00:00.0000000,2023-04-20 18:39:51.0000000,,,True,,1,,,False,True,False,,False,,7508d0b6-aadf-ed11-a7c7-00224834e1cb,(317) 982-9362,1,,,,,2,,Call to Lauro Bernal Vazquez,0,,20642792
+phonecall,2023-04-23 22:31:55.0000000,2023-04-20 18:39:51.0000000,,,True,,,,,False,True,False,,False,,7408d0b6-aadf-ed11-a7c7-00224834e1cb,(317) 982-9362,1,,,,,2,,Call to Lauro Bernal Vazquez,8,,20642790
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 16:01:00.0000000,,,False,,1,,,False,True,False,,False,,09e716e9-b7b6-ed11-83fd-00224834e1cb,13175239598,1,,,,,2,,Call from WIRELESS CALLER,0,,20642574
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 15:45:36.0000000,,,False,,2,,,False,True,False,,False,,2314c5c3-b5b6-ed11-83fd-00224834e1cb,13175239598,1,,,,,2,,Call from WIRELESS CALLER,0,,20642572
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 15:44:38.0000000,,,True,,1,,,False,True,False,,False,,fdd5a79e-b5b6-ed11-83fd-00224834e1cb,+1 4439298308,1,,,,,2,,Call to Celzo Efrain Guillen Ponce,0,,20642570
+phonecall,2023-01-06 00:00:00.0000000,2023-01-06 21:34:39.0000000,,,True,,5,,,False,True,False,,False,,0a808ee7-098e-ed11-81ad-00224828938f,+1 7656070800,1,,,,,2,,Call to Felipa Angeles,4,,20642467
+phonecall,2023-02-11 16:58:32.0000000,2023-02-11 16:45:40.0000000,,,True,,13,,,False,True,False,,False,,8c6f5480-2baa-ed11-aad1-000d3a1daf86,+1 7656070800,1,,,,,2,,Call to Felipa Angeles,0,,20642465
+phonecall,2023-05-27 04:00:00.0000000,2023-05-27 22:09:23.0000000,,Client signed the return and all has been submitted ,False,,1,,,False,True,False,,False,,e9abc123-dbfc-ed11-8f6e-00224834e1cb,18123447719,1,,,,,2,,Call Back,8,,20478891
+phonecall,2023-05-27 04:00:00.0000000,2023-05-27 21:57:16.0000000,,,True,,5,,,False,True,False,,False,,30486872-d9fc-ed11-8f6e-00224834e1cb,18123447719,1,,,,,2,,Call to Samuel Ruiz Vasquez,8,,20478309
+phonecall,2023-05-26 04:00:00.0000000,2023-05-26 20:16:01.0000000,,,False,,3,,,False,True,False,,False,,68901b1f-02fc-ed11-8849-0022482605f4,18003433831,1,,,,,2,,Call from +18003433831,8,,20054982
+phonecall,2023-05-26 04:00:00.0000000,2023-05-26 18:56:59.0000000,,,False,,2,,,False,True,False,,False,,2d852215-f7fb-ed11-8849-0022482605f4,13174014845,1,,,,,2,,Call from +13174014845,8,,20053428
+phonecall,2023-05-26 04:00:00.0000000,2023-05-26 18:24:16.0000000,,,True,,5,,,False,True,False,,False,,4d1c0080-f2fb-ed11-8849-0022482605f4,1 (855) 757-3574,1,,,,,2,,Call to 1 (855) 757-3574,8,,20052823
+phonecall,2023-05-21 04:00:00.0000000,2023-05-21 18:40:05.0000000,,,False,,1,,,False,True,False,,False,,4fd61ce4-06f8-ed11-8849-0022482605f4,13174289740,1,,,,,2,,Call from Marcos G Velazquez Roblero,8,,19410284
+phonecall,2023-05-19 04:00:00.0000000,2023-05-19 21:11:58.0000000,,,False,,3,,,False,True,False,,False,,522f2ebc-89f6-ed11-8848-00224834e1cb,13177376277,1,,,,,2,,Call from +13177376277,8,,19228211
+phonecall,2023-05-13 20:56:56.0000000,,,,True,,30,,,False,True,False,,False,,59a084a7-d0f1-ed11-8849-0022482605f4,,1,00000000-0000-0000-0000-000000000000,,,,2,,Called about status of return,8,,18947764
+phonecall,2023-05-13 04:00:00.0000000,2023-05-13 17:43:29.0000000,,"Call from +13177934950
+
+Participants:
+
++13177934950, Cody Rice-Velasquez
+
+Call date and time:
+
+May 13, 2023 01:43 PM
+
+Related records:
+
+Contact: +13177934950
+Lead: +13177934950
+Phone call activity: Call from +13177934950
+
+
+Notes:
+
+Elisa Santana Santiago, 317.793.4950
+
+Check status of return
+",False,,2,,,False,True,False,,False,,d0abdeaa-b5f1-ed11-8849-0022482605f4,13177934950,1,,,,,2,,Call from +13177934950,8,,18947364
+phonecall,2023-05-08 04:00:00.0000000,2023-05-08 17:36:15.0000000,,,False,,1,,,False,True,False,,False,,6426a7d4-c6ed-ed11-8849-0022482605f4,13176263065,1,,,,,2,,Call from +13176263065,8,,18790583
+phonecall,2023-05-08 04:00:00.0000000,2023-05-08 17:37:35.0000000,,,False,,1,,,False,True,False,,False,,849f9eff-c6ed-ed11-8849-0022482605f4,13176263065,1,,,,,2,,Call from +13176263065,8,,18790572
+phonecall,,,,,True,,30,,,False,True,False,,False,,dc204fe3-d7e9-ed11-a7c6-0022482605f4,+1 7654097650,1,,,,,1,,Cita De Consulado,,,18389421
+phonecall,2023-04-27 04:00:00.0000000,2023-04-17 16:29:22.0000000,,,True,,12,,,False,True,False,,False,,a6119dfd-3cdd-ed11-a7c7-0022482605f4,13176468017,1,,,,,2,,Call to Sun-Ray Foundation LLC,8,,16588279
+phonecall,2023-04-27 04:00:00.0000000,2023-04-17 16:29:22.0000000,,,True,,,,,False,True,False,,False,,a7119dfd-3cdd-ed11-a7c7-0022482605f4,13176468017,1,,,,,2,,Call to Sun-Ray Foundation LLC,8,,16588272
+phonecall,2023-04-27 04:00:00.0000000,2023-04-17 19:16:27.0000000,,,False,,,,,False,True,False,,False,,c24a5858-54dd-ed11-a7c7-0022482605f4,13176109476,1,,,,,2,,Call from Narciso Javier Velasquez,8,,16588264
+phonecall,2023-04-21 04:00:00.0000000,2023-04-21 18:41:25.0000000,,,False,,1,,,False,True,False,,False,,f757bb12-74e0-ed11-a7c7-00224834e1cb,13177347611,1,,,,,2,,Call from +13177347611,8,,16174789
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 21:29:14.0000000,,,True,,2,,,False,True,False,,False,,2a0c960d-79d9-ed11-a7c7-0022482605f4,+1 3178275801,1,,,,,2,,Call to Daniel Alfredo Rivas Mujica & Rosa Iraima Garcia de Rivas,0,,15340172
+phonecall,,2023-04-12 21:29:14.0000000,,,True,,,,,False,True,False,,False,,290c960d-79d9-ed11-a7c7-0022482605f4,+1 3178275801,1,,,,,1,,Call to Daniel Alfredo Rivas Mujica & Rosa Iraima Garcia de Rivas,0,,15340002
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 20:11:00.0000000,,,True,,4,,,False,True,False,,False,,1aa06722-6ed9-ed11-a7c7-0022482605f4,3174386580,1,,,,,2,,Call to OLGA MARTINEZ,0,,15338055
+phonecall,,2023-04-12 20:11:00.0000000,,,True,,,,,False,True,False,,False,,1ba06722-6ed9-ed11-a7c7-0022482605f4,3174386580,1,,,,,1,,Call to OLGA MARTINEZ,0,,15337794
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 19:41:40.0000000,,,True,,3,,,False,True,False,,False,,0196580b-6ad9-ed11-a7c7-00224834e1cb,3175298092,1,,,,,2,,Call to Nidi Barrientos,0,,15337583
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 19:31:39.0000000,,,True,,3,,,False,True,False,,False,,866350a5-68d9-ed11-a7c7-00224834e1cb,3172095775,1,,,,,2,,Call to Robyn Rice-Foster,0,,15337481
+phonecall,,2023-04-12 19:41:40.0000000,,,True,,,,,False,True,False,,False,,0096580b-6ad9-ed11-a7c7-00224834e1cb,3175298092,1,,,,,1,,Call to Nidi Barrientos,0,,15337390
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 19:27:30.0000000,,,True,,2,,,False,True,False,,False,,c7b6ed0e-68d9-ed11-a7c7-00224834e1cb,3172095775,1,,,,,2,,Call to Robyn Rice-Foster,0,,15337187
+phonecall,2023-04-12 19:20:53.0000000,2023-04-12 19:11:41.0000000,,,True,,10,,,False,True,False,,False,,6f5c3cdb-65d9-ed11-a7c7-00224834e1cb,13175206923,1,,,,,1,,Call to Arlen Ramos,0,,15336453
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 18:54:27.0000000,,,True,,5,,,False,True,False,,False,,8e1b8070-63d9-ed11-a7c7-00224834e1cb,+1 4632535949,1,,,,,2,,Call to Lorena Lazo Mendez,0,,15336216
+phonecall,2023-04-12 05:00:00.0000000,2023-04-12 18:47:06.0000000,,,True,,4,,,False,True,False,,False,,c94f8968-62d9-ed11-a7c7-00224834e1cb,+1 3178275801,1,,,,,2,,Call to Daniel Alfredo Rivas Mujica & Rosa Iraima Garcia de Rivas,0,,15336126
+phonecall,2023-04-09 05:00:00.0000000,2023-04-09 23:56:08.0000000,,,True,,1,,,False,True,False,,False,,bc2f8917-32d7-ed11-a7c7-0022482605f4,(317) 749-5310,1,,,,,2,,Call to Jefrin Antonio Granado Castro,0,,15289409
+phonecall,,2023-04-09 23:56:08.0000000,,,True,,,,,False,True,False,,False,,bb2f8917-32d7-ed11-a7c7-0022482605f4,(317) 749-5310,1,,,,,1,,Call to Jefrin Antonio Granado Castro,0,,15288994
+phonecall,2023-04-09 23:55:25.0000000,2023-04-09 23:55:20.0000000,,,True,,1,,,False,True,False,,False,,3117f2fb-31d7-ed11-a7c7-0022482605f4,+1 8125300151,1,,,,,1,,Call to El Amigo Chapin LLC,0,,15288983
+phonecall,,2023-04-09 23:55:20.0000000,,,True,,,,,False,True,False,,False,,3217f2fb-31d7-ed11-a7c7-0022482605f4,+1 8125300151,1,,,,,1,,Call to El Amigo Chapin LLC,0,,15288941
+phonecall,2023-03-30 20:38:09.0000000,2023-03-30 20:07:09.0000000,,,True,,32,,,False,True,False,,False,,4e0bbc6f-36cf-ed11-b597-00224834e1cb,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,8,,14988737
+phonecall,2023-03-24 18:41:00.0000000,2023-03-24 18:29:17.0000000,,,True,,12,,,False,True,False,,False,,79d4f3c7-71ca-ed11-b597-0022482605f4,18008294933,1,,,,,2,,Call to 18008294933,8,,14988735
+phonecall,2023-03-18 19:28:43.0000000,2023-03-18 19:20:27.0000000,,,False,,9,,,False,True,False,,False,,a01fe2ee-c1c5-ed11-b597-00224834e1cb,12816615770,1,,,,,2,,Call from +12816615770,8,,14988733
+phonecall,2023-03-16 20:51:43.0000000,2023-03-16 20:48:17.0000000,,,False,,4,,,False,True,False,,False,,141d76dd-3bc4-ed11-83ff-0022482605f4,13177349998,1,,,,,2,,Call from +13177349998,8,,14988731
+phonecall,2023-03-11 19:49:54.0000000,2023-03-11 19:22:36.0000000,,,False,,28,,,False,True,False,,False,,ced2c311-42c0-ed11-83ff-0022482605f4,18129163941,1,,,,,2,,Call from +18129163941,8,,14988729
+phonecall,2023-03-10 20:45:08.0000000,2023-03-10 20:41:31.0000000,,,False,,4,,,False,True,False,,False,,00eb53ed-83bf-ed11-83ff-0022482605f4,14632532604,1,,,,,2,,Call from +14632532604,0,,14988727
+phonecall,2023-03-06 23:02:38.0000000,2023-03-06 22:59:08.0000000,,,False,,4,,,False,True,False,,False,,49011d7e-72bc-ed11-83ff-0022482605f4,13176263065,1,,,,,2,,Call from +13176263065,8,,14988725
+phonecall,2023-03-06 18:35:37.0000000,2023-03-06 18:32:50.0000000,,,False,,3,,,False,True,False,,False,,524e6244-4dbc-ed11-83ff-0022482605f4,13173837198,1,,,,,2,,Call from +13173837198,8,,14988722
+phonecall,2023-03-03 18:12:05.0000000,2023-03-03 18:11:03.0000000,,,False,,2,,,False,True,False,,False,,3c7ed0bc-eeb9-ed11-83fd-00224834e1cb,13175565863,1,,,,,2,,Call from +13175565863,0,,14988720
+phonecall,2023-02-27 21:03:27.0000000,2023-02-27 20:54:43.0000000,,,False,,9,,,False,True,False,,False,,55e1d6f0-e0b6-ed11-83fd-00224834e1cb,13177723369,1,,,,,2,,Call from +13177723369,0,,14988716
+phonecall,2023-02-26 17:29:45.0000000,2023-02-26 17:15:08.0000000,,,True,,15,,,False,True,False,,False,,36939217-f9b5-ed11-83fd-00224834e1cb,18004901945,1,,,,,2,,Call to 18004901945,0,,14988714
+phonecall,2023-02-25 19:36:11.0000000,2023-02-25 19:28:41.0000000,,,True,,8,,,False,True,False,,False,,49d4bb9a-42b5-ed11-83fd-00224834e1cb,3175155515,1,,,,,2,,Call to 3175155515,4,,14988712
+phonecall,2023-02-24 18:59:15.0000000,2023-02-24 18:45:24.0000000,,,False,,14,,,False,True,False,,False,,5df15563-73b4-ed11-83fd-00224834e1cb,13173326739,1,,,,,2,,Call from WIRELESS CALLER,0,,14988710
+phonecall,2023-02-20 19:17:34.0000000,2023-02-20 19:08:15.0000000,,,False,,10,,,False,True,False,,False,,2e266de7-51b1-ed11-83fe-0022482605f4,13176957567,1,,,,,2,,Call from +13176957567,0,,14988700
+phonecall,2023-02-20 17:27:12.0000000,2023-02-20 17:17:24.0000000,,,False,,10,,,False,True,False,,False,,74e7516b-42b1-ed11-83fe-0022482605f4,19294031974,1,,,,,2,,Call from +19294031974,0,,14988698
+phonecall,2023-02-20 16:53:05.0000000,2023-02-20 16:50:25.0000000,,,False,,3,,,False,True,False,,False,,ce3305ab-3eb1-ed11-83fe-0022482605f4,17657012021,1,,,,,2,,Call from +17657012021,0,,14988696
+phonecall,2023-02-16 18:21:21.0000000,2023-02-16 18:17:07.0000000,,,False,,5,,,False,True,False,,False,,1690e41b-26ae-ed11-aad1-0022482605f4,13176673230,1,,,,,2,,Call from +13176673230,0,,14988690
+phonecall,2023-02-13 18:12:06.0000000,2023-02-13 18:11:08.0000000,,,False,,1,,,False,True,False,,False,,4f25e3c4-c9ab-ed11-aad1-0022482605f4,13177938844,1,,,,,2,,Call from +13177938844,0,,14988684
+phonecall,2023-02-10 17:41:44.0000000,2023-02-10 17:41:18.0000000,,,True,,1,,,False,True,False,,False,,2478d21e-6aa9-ed11-aad1-000d3a1daf86,(561) 729-2387,1,,,,,2,,Call to Manuel G Lopez Gonzalez,4,,14988682
+phonecall,2023-02-10 17:32:28.0000000,2023-02-10 17:31:57.0000000,,,True,,1,,,False,True,False,,False,,e6dde8ce-68a9-ed11-aad1-000d3a1daf86,(317) 772-6040,1,,,,,2,,Call to (317) 772-6040,4,,14988680
+phonecall,2023-02-06 21:55:55.0000000,2023-02-06 21:53:08.0000000,,Client called to book an appointment for taxes .,True,,3,,,False,True,False,,False,,4b52e79d-68a6-ed11-aad1-0022482605f4,+1 4632021237,1,,,,,2,,Jimmy Flores Lopez taxes call,0,,14988678
+phonecall,2023-02-02 18:00:37.0000000,2023-02-02 17:58:37.0000000,,,False,,1,,,False,True,False,,False,,2165ad35-23a3-ed11-aad0-000d3a1daf86,anonymous,1,,,,,2,,Call from anonymous,4,,14988672
+phonecall,2023-02-02 17:56:31.0000000,2023-02-02 17:56:23.0000000,,,True,,1,,,False,True,False,,False,,7f0c75e7-22a3-ed11-aad0-000d3a1daf86,3177661901,1,,,,,2,,Call to 3177661901,4,,14988670
+phonecall,2023-03-15 20:40:35.0000000,2023-03-15 20:02:08.0000000,,,True,,39,,,False,True,False,,False,,93cda440-6cc3-ed11-83ff-0022482605f4,+1 3175188596,1,,,,,2,,Call to Brenda & Yamile Granados,8,,14946290
+phonecall,2022-12-12 20:32:27.0000000,2022-12-12 20:27:00.0000000,,Le llame para que me entregara informacion de ricardo para llenar el w9 y pueda entregarle el cheque como pago por su trabajo como contratista solo estoy en espera de la informacion Nombre como sale en su id y el Numero Id,True,,6,,,False,True,False,,False,,06e08551-5b7a-ed11-81ad-00224828938f,+1 3176468017,1,,,,,2,,Call to Sun-Ray Foundation LLC,4,,14648739
+phonecall,2022-12-08 20:27:31.0000000,2022-12-08 20:23:11.0000000,,"Llamada preguntando del avance de los taxes a pagar del año 2022
+Piensa regalar un dinero a ricardo
+y quieren tener suficiente dinero en la cuenta para la fecha de pago de sus income tax",True,,5,,,False,True,False,,False,,18f3c61c-3677-ed11-81ab-00224828938f,+1 3176468017,1,,,,,2,,Call to Sun-Ray Foundation LLC,4,,14648737
+phonecall,2023-03-19 04:00:00.0000000,2023-03-19 17:16:39.0000000,,,False,,2,,,False,True,False,,False,,b2ff3fcd-79c6-ed11-b597-00224834e1cb,13177604315,1,,,,,2,,Call from +13177604315,8,,12758026
+phonecall,2023-03-19 04:00:00.0000000,2023-03-19 16:53:54.0000000,,needs update on return,False,,3,,,False,True,False,,False,,ae05b09b-76c6-ed11-b597-00224834e1cb,18123447719,1,,,,,2,,Call from +18123447719,8,,12757384
+phonecall,2023-03-13 04:00:00.0000000,2023-03-13 20:23:27.0000000,,,False,,2,,,False,True,False,,False,,d60a13e7-dcc1-ed11-83ff-0022482605f4,+1 4632535949,1,,,,,2,,Call from Lorena Lazo Mendez,8,,12234107
+phonecall,2023-03-12 05:00:00.0000000,2023-03-12 20:56:13.0000000,,,True,,1,,,False,True,False,,False,,c0948451-18c1-ed11-83ff-0022482605f4,+1 3173326739,1,,,,,2,,Call to Rony A Sanchez Guifarro,8,,12212774
+phonecall,2023-03-12 05:00:00.0000000,2023-03-12 21:00:50.0000000,,,True,,3,,,False,True,False,,False,,53c6c9f7-18c1-ed11-83ff-0022482605f4,+1 3173326739,1,,,,,2,,Call to Rony A Sanchez Guifarro,8,,12212766
+phonecall,2023-03-11 05:00:00.0000000,2023-03-11 21:16:08.0000000,,,False,,4,,,False,True,False,,False,,22d9b4ed-51c0-ed11-83ff-0022482605f4,18123447719,1,,,,,2,,Call from +18123447719,8,,12187094
+phonecall,2023-03-11 05:00:00.0000000,2023-03-11 18:02:46.0000000,,,True,,1,,,False,True,False,,False,,bd568de8-36c0-ed11-83ff-0022482605f4,12404681239,1,,,,,2,,Call to 12404681239,8,,12168195
+phonecall,2023-03-09 22:55:52.0000000,2023-03-09 22:55:23.0000000,,Called to let client know I was ready for him. ,True,,1,,,False,True,False,,False,,65fde376-cdbe-ed11-83ff-0022482605f4,+1 4632490007,1,,,,,2,,Call to Victor Gomez,8,,11915550
+phonecall,2023-03-06 05:00:00.0000000,2023-03-06 23:21:28.0000000,,,True,,1,,,False,True,False,,False,,dee1499d-75bc-ed11-83ff-0022482605f4,13179828059,1,,,,,2,,Call to 13179828059,8,,11653197
+phonecall,2023-03-06 05:00:00.0000000,2023-03-06 21:18:11.0000000,,,False,,1,,,False,True,False,,False,,c190be60-64bc-ed11-83ff-0022482605f4,+1 3175292840,1,,,,,2,,Call from Yasiry Rodriguez,8,,11650773
+phonecall,2023-03-06 05:00:00.0000000,2023-03-06 21:10:49.0000000,,,False,,1,,,False,True,False,,False,,5c0bd75d-63bc-ed11-83ff-0022482605f4,15045331950,1,,,,,2,,Call from +15045331950,8,,11650499
+phonecall,2023-03-06 21:01:36.0000000,2023-03-06 21:00:08.0000000,,Will send images of document for estimate of translations.,False,,2,,,False,True,False,,False,,804d91e0-61bc-ed11-83ff-0022482605f4,13175292840,1,,,,,2,,Call from +13175292840,8,,11649921
+phonecall,2023-03-06 05:00:00.0000000,2023-03-06 20:42:22.0000000,,,False,,1,,,False,True,False,,False,,a66d165f-5fbc-ed11-83ff-0022482605f4,18573139184,1,,,,,2,,Call from +18573139184,8,,11649633
+phonecall,2023-03-06 05:00:00.0000000,2023-03-06 18:56:51.0000000,,,False,,3,,,False,True,False,,False,,a2f1f19e-50bc-ed11-83ff-0022482605f4,13179860475,1,,,,,2,,Call from +13179860475,8,,11647363
+phonecall,2023-03-06 18:42:42.0000000,2023-03-06 18:41:41.0000000,,,False,,2,,,False,True,False,,False,,b2303181-4ebc-ed11-83ff-0022482605f4,13176407314,1,,,,,2,,Call from Noemi Mancia Polanco,8,,11644504
+phonecall,2023-03-06 18:41:40.0000000,2023-03-06 18:41:08.0000000,,,True,,1,,,False,True,False,,False,,58f7156f-4ebc-ed11-83ff-0022482605f4,13176407314,1,,,,,2,,Call to Noemi Mancia Polanco,8,,11644485
+phonecall,2023-03-06 18:27:19.0000000,2023-03-06 18:25:05.0000000,,,False,,3,,,False,True,False,,False,,c7815e32-4cbc-ed11-83ff-0022482605f4,+1 3175995974,1,,,,,2,,Call from Santos Sanchez,8,,11642348
+phonecall,2023-03-06 18:09:13.0000000,2023-03-06 17:49:35.0000000,,,True,,20,,,False,True,False,,False,,fd5c9039-47bc-ed11-83ff-0022482605f4,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,8,,11641881
+phonecall,2023-03-04 05:00:00.0000000,2023-03-04 21:41:47.0000000,,,False,,1,,,False,True,False,,False,,9e2c9a55-d5ba-ed11-83ff-0022482605f4,+1 3179387483,1,,,,,2,,Call from Juan Alanis,0,,11518098
+phonecall,2023-03-04 05:00:00.0000000,2023-03-04 19:26:23.0000000,,,False,,6,,,False,True,False,,False,,b58f2e6e-c2ba-ed11-83ff-0022482605f4,13177376549,1,,,,,2,,Call from +13177376549,0,,11516617
+phonecall,2023-03-04 05:00:00.0000000,2023-03-04 18:05:58.0000000,,,False,,1,,,False,True,False,,False,,f43bea34-b7ba-ed11-83ff-0022482605f4,17864820412,1,,,,,2,,Call from +17864820412,0,,11515462
+phonecall,2023-03-04 05:00:00.0000000,2023-03-04 17:44:16.0000000,,,False,,2,,,False,True,False,,False,,9d20ac2c-b4ba-ed11-83ff-0022482605f4,13177604315,1,,,,,2,,Call from +13177604315,0,,11515239
+phonecall,2023-03-03 05:00:00.0000000,2023-03-03 18:28:39.0000000,,,False,,5,,,False,True,False,,False,,209e4631-f1b9-ed11-83fd-00224834e1cb,17867570113,1,,,,,2,,Call from +17867570113,0,,11437698
+phonecall,2023-03-02 06:00:00.0000000,2023-03-02 19:24:14.0000000,,,True,,2,,,False,True,False,,False,,f4e061cb-2fb9-ed11-83fd-00224834e1cb,13172892082,1,,,,,2,,Call to +13172892082,0,,11419510
+phonecall,2023-03-02 05:00:00.0000000,2023-03-02 18:59:36.0000000,,,False,,2,,,False,True,False,,False,,a15fb45e-2cb9-ed11-83fd-00224834e1cb,18123444691,1,,,,,2,,Call from +18123444691,0,,11419103
+phonecall,2023-01-04 15:43:27.0000000,2023-01-04 15:41:55.0000000,,,True,,2,,,False,True,False,,False,,c9450751-468c-ed11-81ad-00224828938f,+1 7654145306,1,,,,,2,,Call to Oscar Alfredo Garcia Picos,8,,11418274
+phonecall,2023-03-01 19:03:52.0000000,2023-03-01 19:03:18.0000000,,"Contacted client that the 3 COAs are available. 
+Client did not ans and was unable to leave voicemail",True,,1,,,False,True,False,,False,,a4b8ddb3-63b8-ed11-83fd-00224834e1cb,+1 3214322895,1,,,,,2,,Call to Angelys Atilano,8,,11396843
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 22:12:12.0000000,,,False,,4,,,False,True,False,,False,,0d36d2c8-ebb6-ed11-83fd-00224834e1cb,anonymous,1,,,,,2,,Call from anonymous,0,,11364094
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 21:50:03.0000000,,,False,,5,,,False,True,False,,False,,7e7107b0-e8b6-ed11-83fd-00224834e1cb,13177016027,1,,,,,2,,Call from +13177016027,0,,11363759
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 21:39:45.0000000,,,True,,1,,,False,True,False,,False,,3488323b-e7b6-ed11-83fd-00224834e1cb,+1 7654145306,1,,,,,2,,Call to Oscar Alfredo Garcia Picos,0,,11363631
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 21:25:38.0000000,,,True,,5,,,False,True,False,,False,,5c881a46-e5b6-ed11-83fd-00224834e1cb,7864420326,1,,,,,2,,Call to 7864420326,0,,11363384
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 18:45:04.0000000,,,False,,5,,,False,True,False,,False,,6af086d3-ceb6-ed11-83fd-00224834e1cb,19145846326,1,,,,,2,,Call from +19145846326,0,,11361225
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 17:06:43.0000000,,,False,,3,,,False,True,False,,False,,92f5311b-c1b6-ed11-83fd-00224834e1cb,13174950430,1,,,,,2,,Call from +13174950430,0,,11359925
+phonecall,2023-02-27 05:00:00.0000000,2023-02-27 15:37:59.0000000,,,False,,2,,,False,True,False,,False,,aa4f60b0-b4b6-ed11-83fd-00224834e1cb,14439298308,1,,,,,2,,Call from WIRELESS CALLER,0,,11358290
+phonecall,2023-02-10 20:43:27.0000000,2023-02-10 20:34:53.0000000,,Inquiry on ITIN,True,,9,,,False,True,False,,False,,ea988e5d-82a9-ed11-aad1-0022482605f4,+1 7655353963,1,,,,,2,,Call to +17655353963,0,,11316709
+phonecall,2023-02-26 06:00:00.0000000,2023-02-26 17:13:05.0000000,,,True,,2,,,False,True,False,,False,,d2c7ded0-f8b5-ed11-83fd-00224834e1cb,18004901945,1,,,,,2,,Call to 18004901945,0,,11296293
+phonecall,2023-02-25 05:00:00.0000000,2023-02-25 21:32:35.0000000,,,False,,4,,,False,True,False,,False,,6fce10e6-53b5-ed11-83fd-00224834e1cb,12813361067,1,,,,,2,,Call from +12813361067,8,,11185854
+phonecall,2023-02-25 05:00:00.0000000,2023-02-25 21:36:28.0000000,,,True,,1,,,False,True,False,,False,,61a92071-54b5-ed11-83fd-00224834e1cb,3179094023,1,,,,,2,,Call to 3179094023,8,,11185848
+phonecall,2023-02-25 00:00:00.0000000,2023-02-25 19:22:00.0000000,,,True,,1,,,False,True,False,,False,,5a22dfa8-41b5-ed11-83fd-00224834e1cb,3175155515,1,,,,,2,,Call to 3175155515,4,,11183071
+phonecall,2023-02-25 00:00:00.0000000,2023-02-25 19:22:37.0000000,,,True,,1,,,False,True,False,,False,,a24f1dc2-41b5-ed11-83fd-00224834e1cb,3175155515,1,,,,,2,,Call to 3175155515,4,,11183064
+phonecall,2023-02-24 20:11:19.0000000,2023-02-24 20:10:04.0000000,,"Called client to ask if he could stop by at the office so we can get a copy of his ID. 
+",True,,2,,,False,True,False,,False,,a567c035-7fb4-ed11-83fd-00224834e1cb,+1 8123967241,1,,,,,2,,Call to Pualin Florez Marquez,0,,10966626
+phonecall,2023-02-24 20:00:49.0000000,2023-02-24 19:59:23.0000000,,Client called to let us know he sent a picture of his ID. ,False,,2,,,False,True,False,,False,,48b3ebb8-7db4-ed11-83fd-00224834e1cb,+1 8123967241,1,,,,,2,,Call from Pualin Florez Marquez,0,,10966391
+phonecall,2023-02-24 15:15:36.0000000,2023-02-24 15:15:12.0000000,,,True,,1,,,False,True,False,,False,,cae72d08-56b4-ed11-83fd-00224834e1cb,7657012021,1,,,,,2,,Call to 7657012021,4,,10963529
+phonecall,2023-02-24 15:25:54.0000000,2023-02-24 15:15:37.0000000,,,False,,11,,,False,True,False,,False,,2b358f16-56b4-ed11-83fd-00224834e1cb,17657012021,1,,,,,2,,Call from +17657012021,4,,10963521
+phonecall,2023-02-24 00:00:00.0000000,2023-02-24 15:14:03.0000000,,,True,,1,,,False,True,False,,False,,abc21edb-55b4-ed11-83fd-00224834e1cb,7657012021,1,,,,,2,,Call to 7657012021,4,,10962982
+phonecall,2023-02-23 19:10:34.0000000,2023-02-23 19:03:46.0000000,,Called to verify no training was due to weird call we had received. ,True,,7,,,False,True,False,,False,,3a0eb8c8-acb3-ed11-83fe-0022482605f4,8558515161,1,,,,,2,,Call to 8558515161,0,,10907129
+phonecall,2023-02-23 05:00:00.0000000,2023-02-23 19:01:09.0000000,,,False,,2,,,False,True,False,,False,,76be6f6a-acb3-ed11-83fe-0022482605f4,523338951388,1,,,,,2,,Call from +523338951388,0,,10907087
+phonecall,2023-02-23 17:36:35.0000000,2023-02-23 17:35:38.0000000,,He stated he didn't have any sales for OCTOBER or NOVEMBER. ,True,,1,,,False,True,False,,False,,3430a477-a0b3-ed11-83fe-0022482605f4,3179094677,1,,,,,2,,Call to 3179094677,4,,10905734
+phonecall,2023-02-23 17:27:25.0000000,2023-02-23 17:26:47.0000000,,"Gave her a call to see if she has already been helped, and she stated she has. ",True,,1,,,False,True,False,,False,,3e62aa3b-9fb3-ed11-83fe-0022482605f4,7866389112,1,,,,,2,,Call to 7866389112,4,,10905399
+phonecall,2023-02-10 15:34:00.0000000,2023-02-10 15:30:03.0000000,,"Gave her a call to see if she already had her problem solved and she stated she did , someone already reached out to her. ",True,,4,,,False,True,False,,False,,a2b29fc7-57a9-ed11-aad1-0022482605f4,7866389112,1,,,,,2,,Call to 7866389112,4,,10905351
+phonecall,2023-02-23 15:24:31.0000000,2023-02-23 15:22:31.0000000,,"Called client to ask if he still wanted to process his ITIN. 
+He said he is trying to get his passport though a lawyer. 
+He stated he will be in Today at 12PM to bring in his ID and Birth Certificate. ",True,,3,,,False,True,False,,False,,c84db1e2-8db3-ed11-83fe-0022482605f4,7865863671,1,,,,,2,,Call to +1 7865863671,0,,10903837
+phonecall,2022-12-01 23:19:33.0000000,2022-12-01 23:16:53.0000000,,,True,,3,,,False,True,False,,False,,e73fe13b-ce71-ed11-9562-0022482605f4,+1 7135157659,1,,,,,2,,Call to Rolando Zeledon,8,,10892649
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 23:45:20.0000000,,,False,,1,,,False,True,False,,False,,fb081e9e-78b1-ed11-83fe-000d3a1daf86,13174424630,1,,,,,2,,Call from +13174424630,8,,10799230
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 23:46:56.0000000,,,True,,1,,,False,True,False,,False,,151c3dda-78b1-ed11-83fe-000d3a1daf86,3177661901,1,,,,,2,,Call to 3177661901,8,,10799225
+phonecall,2023-02-10 17:26:56.0000000,2023-02-10 17:25:38.0000000,,,True,,2,,,False,True,False,,False,,9ed787eb-67a9-ed11-aad1-000d3a1daf86,+1 8168745055,1,,,,,3,,Call to OSMAN JOSUE CHACON LLC,4,,10796682
+phonecall,2023-02-02 23:02:51.0000000,2023-02-02 22:57:05.0000000,,,True,,6,,,False,True,False,,False,,38d457d7-4ca3-ed11-aad0-000d3a1daf86,+1 3177965243,1,,,,,2,,Call to Coco Bongos Indy LLC,8,,10796569
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 18:20:15.0000000,,,True,,1,,,False,True,False,,False,,a30c2237-4bb1-ed11-83fe-0022482605f4,(561) 729-2387,1,,,,,2,,Call to (561) 729-2387,0,,10793854
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 18:21:34.0000000,,,True,,1,,,False,True,False,,False,,9f672468-4bb1-ed11-83fe-0022482605f4,(317) 795-5289,1,,,,,2,,Call to (317) 795-5289,0,,10793848
+phonecall,2023-02-17 17:48:33.0000000,2023-02-17 17:43:49.0000000,,,False,,5,,,False,True,False,,False,,41e819a0-eaae-ed11-aad1-000d3a1daf86,+1 7323518376,1,,,,,2,,Call from Darling Madrid Salguero,0,,10793038
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 16:59:42.0000000,,,False,,4,,,False,True,False,,False,,f2eb81f6-3fb1-ed11-83fe-0022482605f4,7655081492,1,,,,,2,,Call from Teresa Adkins,0,,10792797
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 16:10:19.0000000,,,False,,1,,,False,True,False,,False,,3b81e511-39b1-ed11-83fe-0022482605f4,17322130262,1,,,,,2,,Call from +17322130262,0,,10792175
+phonecall,2023-02-20 05:00:00.0000000,2023-02-20 15:47:47.0000000,,,True,,1,,,False,True,False,,False,,bd5778e9-35b1-ed11-83fe-0022482605f4,7655081492,1,,,,,2,,Call to 7655081492,0,,10791985
+phonecall,2023-02-20 03:04:29.0000000,,,Llamar a juan para el update. ,True,2023-02-04 16:00:00.0000000,30,,,False,True,False,,False,,10361ec7-34a3-ed11-aad0-000d3a1daf86,+1 8125300151,2,,0,,2023-02-04 16:00:00.0000000,3,,Follow Up,8,,10783519
+phonecall,2023-02-19 06:00:00.0000000,2023-02-19 22:26:56.0000000,,,True,,1,,,False,True,False,,False,,ae03f97e-a4b0-ed11-83fe-0022482605f4,13175206923,1,,,,,2,,Call to +13175206923,0,,10778682
+phonecall,2023-02-18 05:00:00.0000000,2023-02-18 14:45:45.0000000,,,True,,1,,,False,True,False,,False,,d12f25ed-9aaf-ed11-83fe-0022482605f4,7653379014,1,,,,,2,,Call to 7653379014,0,,10758418
+phonecall,2023-02-17 05:00:00.0000000,2023-02-17 20:14:37.0000000,,,True,,1,,,False,True,False,,False,,93b3c1ae-ffae-ed11-aad1-000d3a1daf86,(571) 269-5623,1,,,,,2,,Call to (571) 269-5623,0,,10656266
+phonecall,2023-02-17 05:00:00.0000000,2023-02-17 17:01:47.0000000,,,False,,3,,,False,True,False,,False,,304e9ebf-e4ae-ed11-aad1-000d3a1daf86,17372927574,1,,,,,2,,Call from +17372927574,0,,10653980
+phonecall,2023-02-17 05:00:00.0000000,2023-02-17 17:10:37.0000000,,,True,,1,,,False,True,False,,False,,780b4ffe-e5ae-ed11-aad1-000d3a1daf86,7372927574,1,,,,,2,,Call to 7372927574,0,,10653972
+phonecall,2023-02-16 05:00:00.0000000,2023-02-16 17:45:22.0000000,,,False,,1,,,False,True,False,,False,,44080cab-21ae-ed11-aad1-0022482605f4,13172901501,1,,,,,2,,Call from +13172901501,0,,10636575
+phonecall,2023-02-16 05:00:00.0000000,2023-02-16 17:21:43.0000000,,,False,,2,,,False,True,False,,False,,f3198c61-1eae-ed11-aad1-0022482605f4,13177376277,1,,,,,2,,"Call from PAINTING PRO,GA",0,,10636122
+phonecall,2023-02-16 05:00:00.0000000,2023-02-16 15:47:12.0000000,,,False,,4,,,False,True,False,,False,,a5e7a128-11ae-ed11-aad1-000d3a1daf86,13177016027,1,,,,,2,,Call from +13177016027,0,,10635012
+phonecall,2023-02-13 05:00:00.0000000,2023-02-13 14:40:15.0000000,,,False,,3,,,False,True,False,,False,,72fe5050-acab-ed11-aad1-0022482605f4,13173452557,1,,,,,2,,Call from +13173452557,0,,10582620
+phonecall,2023-02-12 06:00:00.0000000,2023-02-12 22:05:06.0000000,,,True,,2,,,False,True,False,,False,,81d17c4d-21ab-ed11-aad1-0022482605f4,+1 3176263065,1,,,,,2,,Call to +1 3176263065,0,,10483850
+phonecall,2023-02-11 05:00:00.0000000,2023-02-11 22:23:59.0000000,,,False,,4,,,False,True,False,,False,,c7c19ac7-5aaa-ed11-aad1-0022482605f4,16785771043,1,,,,,2,,Call from +16785771043,0,,10468460
+phonecall,2023-02-11 00:00:00.0000000,2023-02-11 19:24:21.0000000,,,False,,1,,,False,True,False,,False,,c3f13ca9-41aa-ed11-aad1-000d3a1daf86,13175196922,1,,,,,2,,Call from +13175196922,4,,10466008
+phonecall,2023-02-11 00:00:00.0000000,2023-02-11 16:20:58.0000000,,,True,,1,,,False,True,False,,False,,3eedde0d-28aa-ed11-aad1-000d3a1daf86,3179869969,1,,,,,2,,Call to 3179869969,4,,10454844
+phonecall,2023-02-11 05:00:00.0000000,2023-02-11 16:07:46.0000000,,,False,,1,,,False,True,False,,False,,d31f9837-26aa-ed11-aad1-0022482605f4,13175196922,1,,,,,2,,Call from +13175196922,0,,10454471
+phonecall,2023-02-11 00:00:00.0000000,2023-02-11 15:34:49.0000000,,,True,,2,,,False,True,False,,False,,415c819e-21aa-ed11-aad1-000d3a1daf86,4632302461,1,,,,,2,,Call to 4632302461,4,,10454139
+phonecall,2023-02-11 00:00:00.0000000,2023-02-11 15:19:14.0000000,,,True,,3,,,False,True,False,,False,,36462b6c-1faa-ed11-aad1-000d3a1daf86,3174088721,1,,,,,2,,Call to 3174088721,4,,10453811
+phonecall,2023-02-11 15:05:21.0000000,2023-02-11 15:04:06.0000000,,Called about business entity but they stated they did not have anything to renew so i think we have the wrong number. ,True,,2,,,False,True,False,,False,,db2d1653-1daa-ed11-aad1-000d3a1daf86,8125286881,1,,,,,2,,Call to  8125286881,0,,10453364
+phonecall,2023-02-11 14:50:16.0000000,2023-02-11 14:49:31.0000000,,Called client to see if he wanted to renew his business with us this year. he said he would stop at the office later today to pay. ,True,,1,,,False,True,False,,False,,b7ac2345-1baa-ed11-aad1-000d3a1daf86,(812) 343-7222,1,,,,,2,,Call to (812) 343-7222,0,,10453103
+phonecall,2023-02-11 00:37:48.0000000,2023-02-11 00:24:17.0000000,,"Arleth reached out to client to share the details about the close of year. Appears there was some misunderstanding so call was escalated. Called client back and assured everything was ok and that we will begin working on the following:
+1. Research and Prep 1099s
+2. Research and Prep 1065
+3. Research and Prep 1040
+- Send estimates.",True,,14,,,False,True,False,,False,,fc7fbe68-a2a9-ed11-aad1-0022482605f4,+1 3175065213,1,,,,,2,,Call to JB LLP,8,,10334508
+phonecall,2023-02-10 06:00:00.0000000,2023-02-10 21:19:00.0000000,,,True,,3,,,False,True,False,,False,,b6bc6883-88a9-ed11-aad1-0022482605f4,+1 3175065213,1,,,,,2,,"Call to Catalan Morales, Elmer",0,,10333950
+phonecall,2023-02-10 06:00:00.0000000,2023-02-10 23:23:37.0000000,,,True,,7,,,False,True,False,,False,,37d15cef-99a9-ed11-aad1-0022482605f4,+1 8125300151,1,,,,,2,,Call to El Amigo Chapin LLC,0,,10333004
+phonecall,2023-02-10 05:00:00.0000000,2023-02-10 20:52:51.0000000,,,True,,7,,,False,True,False,,False,,bdb9c7e0-84a9-ed11-aad1-0022482605f4,7655081492,1,,,,,2,,Call to 7655081492,0,,10329062
+phonecall,2023-02-10 19:15:25.0000000,2023-02-10 19:11:31.0000000,,Client called asking if his ITIN has arrived. He stated he needs plates asap has been having to ask for rides. He wants a call back on what is the next step. ,False,,4,,,False,True,False,,False,,032889b5-76a9-ed11-aad1-0022482605f4,+1 3176280911,1,,,,,2,,Call from Carlos Daniel Antunez,0,,10326691
+phonecall,2023-02-10 00:00:00.0000000,2023-02-10 18:56:55.0000000,,,False,,1,,,False,True,False,,False,,d9ec3caa-74a9-ed11-aad1-000d3a1daf86,17792064691,1,,,,,2,,Call from +17792064691,4,,10326495
+phonecall,2023-02-10 00:00:00.0000000,2023-02-10 15:39:51.0000000,,,True,,5,,,False,True,False,,False,,aef94e23-59a9-ed11-aad1-0022482605f4,3179020280,1,,,,,2,,Call to 3179020280,4,,10304284
+phonecall,2023-02-10 05:00:00.0000000,2023-02-10 15:30:09.0000000,,,True,,1,,,False,True,False,,False,,bab29fc7-57a9-ed11-aad1-0022482605f4,9549450298,1,,,,,2,,Call to 9549450298,0,,10303917
+phonecall,2023-02-10 05:00:00.0000000,2023-02-10 15:32:33.0000000,,,True,,1,,,False,True,False,,False,,3494d121-58a9-ed11-aad1-0022482605f4,(317) 213-8514,1,,,,,2,,Call to (317) 213-8514,0,,10303912
+phonecall,2023-02-10 05:00:00.0000000,2023-02-10 15:34:15.0000000,,,True,,1,,,False,True,False,,False,,c0d1f15e-58a9-ed11-aad1-0022482605f4,3177935243,1,,,,,2,,Call to 3177935243,0,,10303907
+phonecall,2023-02-10 00:00:00.0000000,2023-02-10 15:35:17.0000000,,,True,,1,,,False,True,False,,False,,d9ca2c83-58a9-ed11-aad1-0022482605f4,8122986068,1,,,,,2,,Call to 8122986068,4,,10303882
+phonecall,2023-02-10 15:29:28.0000000,2023-02-10 15:29:00.0000000,,Called client to let her know that we have received her ITIN. ,True,,1,,,False,True,False,,False,,6447faa1-57a9-ed11-aad1-0022482605f4,+1 3177922216,1,,,,,2,,Call to 3177922216,0,,10303800
+phonecall,2023-02-06 06:00:00.0000000,2023-02-07 00:07:33.0000000,,,True,,3,,,False,True,False,,False,,30264e6b-7ba6-ed11-aad1-0022482605f4,17655854696,1,,,,,2,,Call to +17655854696 - CLIENT QUESTION,0,,10085783
+phonecall,2023-02-06 05:00:00.0000000,2023-02-06 20:31:02.0000000,,,False,,2,,,False,True,False,,False,,b886b52b-5da6-ed11-aad1-0022482605f4,16195984976,1,,,,,2,,Call from +16195984976,0,,10082613
+phonecall,2023-02-06 05:00:00.0000000,2023-02-06 18:11:55.0000000,,,False,,4,,,False,True,False,,False,,595964ba-49a6-ed11-aad1-0022482605f4,13178502094,1,,,,,2,,Call from +13178502094,0,,10081039
+phonecall,2023-02-02 22:35:46.0000000,2023-02-02 22:31:49.0000000,,,True,,4,,,False,True,False,,False,,653ed562-49a3-ed11-aad1-0022482605f4,7654180876,1,,,,,2,,Call to 7654180876,0,,10057098
+phonecall,2023-02-04 16:04:11.0000000,2023-02-04 16:01:43.0000000,,,False,,3,,,False,True,False,,False,,54180134-a5a4-ed11-aad1-000d3a1daf86,13173841465,1,,,,,2,,Call from AA,0,,10055194
+phonecall,2023-02-02 16:44:16.0000000,2023-02-02 16:41:33.0000000,,,True,,3,,,False,True,False,,False,,fbf3b472-18a3-ed11-aad0-000d3a1daf86,3177661901,1,,,,,2,,Call to 3177661901,4,,10055150
+phonecall,2023-02-04 05:00:00.0000000,2023-02-04 22:14:29.0000000,,,False,,1,,,False,True,False,,False,,f08e4147-d9a4-ed11-aad1-000d3a1daf86,13177799846,1,,,,,2,,Call from +13177799846,0,,10023631
+phonecall,2023-02-04 05:00:00.0000000,2023-02-04 17:41:50.0000000,,,False,,2,,,False,True,False,,False,,2d7dc533-b3a4-ed11-aad1-000d3a1daf86,17655436485,1,,,,,2,,Call from +17655436485,0,,10019932
+phonecall,2023-02-03 05:00:00.0000000,2023-02-03 21:44:35.0000000,,,False,,2,,,False,True,False,,False,,63959ced-0ba4-ed11-aad1-0022482605f4,13175795647,1,,,,,2,,Call from +13175795647,0,,9942689
+phonecall,2023-02-03 05:00:00.0000000,2023-02-03 16:28:11.0000000,,,True,,2,,,False,True,False,,False,,259f7fbd-dfa3-ed11-aad0-000d3a1daf86,3176660777,1,,,,,2,,Call to 3176660777,0,,9928947
+phonecall,2023-02-03 05:00:00.0000000,2023-02-03 16:03:01.0000000,,,True,,1,,,False,True,False,,False,,709c5b3a-dca3-ed11-aad0-000d3a1daf86,3176660777,1,,,,,2,,Call to 3176660777,0,,9928421
+phonecall,2023-02-03 05:00:00.0000000,2023-02-03 15:35:18.0000000,,,False,,1,,,False,True,False,,False,,2b701c59-d8a3-ed11-aad0-000d3a1daf86,14634263694,1,,,,,2,,Call from +14634263694,0,,9928035
+phonecall,2023-02-02 05:00:00.0000000,2023-02-03 00:54:53.0000000,,,True,,1,,,False,True,False,,False,,7f0d4e59-5da3-ed11-aad1-0022482605f4,7328018126,1,,,,,2,,Call to 7328018126,8,,9758104
+phonecall,2023-02-02 05:00:00.0000000,2023-02-03 00:55:32.0000000,,,True,,4,,,False,True,False,,False,,a8c47575-5da3-ed11-aad1-0022482605f4,+1 7328017126,1,,,,,2,,Call to Gloria Chirinos Matute,8,,9758098
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 21:26:26.0000000,,,False,,4,,,False,True,False,,False,,5773cc3b-40a3-ed11-aad1-0022482605f4,anonymous,1,,,,,2,,Call from anonymous,0,,9755150
+phonecall,2023-02-02 20:06:52.0000000,2023-02-02 19:04:12.0000000,,,True,,63,,,False,True,False,,False,,a72c264f-2ca3-ed11-aad0-000d3a1daf86,+1 8125300151,1,,,,,2,,Call to El Amigo Chapin LLC,8,,9753673
+phonecall,2023-01-31 01:06:50.0000000,2023-01-31 00:26:02.0000000,,,True,,3,,,False,True,False,,False,,31a902c4-fda0-ed11-aad1-0022482605f4,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,8,,9753646
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 19:02:24.0000000,,,False,,2,,,False,True,False,,False,,6eed2f1e-2ca3-ed11-aad1-0022482605f4,anonymous,1,,,,,2,,Call from anonymous,0,,9752212
+phonecall,2023-02-02 18:35:40.0000000,2023-02-02 18:34:25.0000000,,,False,,2,,,False,True,False,,False,,63701336-28a3-ed11-aad1-0022482605f4,,1,,,,,2,,CIta de consulado,0,,9751522
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 18:18:30.0000000,,,False,,1,,,False,True,False,,False,,6b2cc7e7-25a3-ed11-aad0-000d3a1daf86,anonymous,1,,,,,2,,Call from anonymous,8,,9751356
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 17:34:55.0000000,,,False,,1,,,False,True,False,,False,,430ce4d5-1fa3-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,8,,9750613
+phonecall,2023-02-02 15:42:37.0000000,2023-02-02 15:30:51.0000000,,Client called to sch. consulado appt. ,True,,12,,,False,True,False,,False,,6b351e91-0ea3-ed11-aad1-0022482605f4,7137327468,1,,,,,2,,Call to 7137327468,0,,9749944
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 16:44:52.0000000,,,True,,1,,,False,True,False,,False,,24b848e5-18a3-ed11-aad1-0022482605f4,3177661901,1,,,,,2,,Call to 3177661901,0,,9749701
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 16:47:07.0000000,,,True,,3,,,False,True,False,,False,,ded8ab35-19a3-ed11-aad1-0022482605f4,+1 3177661901,1,,,,,2,,Call to Cody Rice-Velasquez,0,,9749695
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 16:50:37.0000000,,,False,,1,,,False,True,False,,False,,daed96b3-19a3-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9749681
+phonecall,2023-02-02 00:00:00.0000000,2023-02-02 16:40:08.0000000,,,True,,1,,,False,True,False,,False,,8960743c-18a3-ed11-aad0-000d3a1daf86,13177661901,1,,,,,2,,Call to 13177661901,4,,9749529
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 16:39:46.0000000,,,False,,1,,,False,True,False,,False,,aa6ded2d-18a3-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9749505
+phonecall,2023-02-02 05:00:00.0000000,2023-02-02 14:47:35.0000000,,,False,,1,,,False,True,False,,False,,d8877f81-08a3-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9747664
+phonecall,2023-01-30 05:00:00.0000000,2023-01-31 00:19:41.0000000,,,True,,2,,,False,True,False,,False,,d97e5fe2-fca0-ed11-aad1-0022482605f4,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,8,,9683866
+phonecall,2023-01-30 05:00:00.0000000,2023-01-31 00:21:13.0000000,,,True,,5,,,False,True,False,,False,,3cd93f1c-fda0-ed11-aad1-0022482605f4,+1 3177376277,1,,,,,2,,Call to Garcia Painting Pro LLC,8,,9683859
+phonecall,2023-01-30 23:00:13.0000000,2023-01-30 22:51:53.0000000,,"Llamada sobre sus impuestos, queda pendiente la cita para que se puedan realizar. se notifico que tiene aun tiempo para entregar las formas 1099 para sus contratistas. Aun esta pendiente que a Oscar y compañia le entreguen sus formas 1099 por parte de sus empleadores",True,,9,,,False,True,False,,False,,65fdc6ae-f0a0-ed11-aad1-0022482605f4,13174572434,1,,,,,2,,Call to Oscar Arnulfo Chicas Romero,0,,9683307
+phonecall,2023-01-30 22:46:45.0000000,2023-01-30 22:40:28.0000000,,"Call to Luis about his tax return, we are waiting the wife info on intuit link, waiting for appointment.
+I notified  that his audit insurance documents are being worked on by Cody, today 01/30/2023",True,,7,,,False,True,False,,False,,57240414-efa0-ed11-aad1-0022482605f4,3177376277,1,,,,,2,,Call to 3177376277,0,,9682169
+phonecall,2023-01-30 05:00:00.0000000,2023-01-30 21:33:23.0000000,,,True,,2,,,False,True,False,,False,,33896bb3-e5a0-ed11-aad1-0022482605f4,(317) 746-3218,1,,,,,2,,Call to Donald Antonio Buitrago Torrez,0,,9680971
+phonecall,2023-01-30 05:00:00.0000000,2023-01-30 19:13:27.0000000,,,False,,1,,,False,True,False,,False,,c687d026-d2a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9678282
+phonecall,2023-01-30 05:00:00.0000000,2023-01-30 17:55:40.0000000,,,False,,1,,,False,True,False,,False,,6a8e4848-c7a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9677522
+phonecall,2023-01-29 00:00:00.0000000,2023-01-29 20:16:26.0000000,,,False,,1,,,False,True,False,,False,,17d208cc-11a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,4,,9665643
+phonecall,2023-01-29 05:00:00.0000000,2023-01-29 20:04:01.0000000,,,False,,1,,,False,True,False,,False,,ed74f50f-10a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9665486
+phonecall,2023-01-29 05:00:00.0000000,2023-01-29 20:04:24.0000000,,,False,,1,,,False,True,False,,False,,9769001c-10a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9665481
+phonecall,2023-01-29 05:00:00.0000000,2023-01-29 20:15:54.0000000,,,False,,1,,,False,True,False,,False,,30aa00ba-11a0-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9665475
+phonecall,2023-01-28 05:00:00.0000000,2023-01-28 19:43:02.0000000,,,False,,1,,,False,True,False,,False,,082c25f8-439f-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9644536
+phonecall,2023-01-28 05:00:00.0000000,2023-01-28 19:45:58.0000000,,,False,,1,,,False,True,False,,False,,211b325f-449f-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,0,,9644531
+phonecall,2023-01-28 18:57:02.0000000,2023-01-28 18:54:54.0000000,,,False,,3,,,False,True,False,,False,,0524b63b-3d9f-ed11-aad0-000d3a1daf86,anonymous,1,,,,,2,,Tax Return Questions,0,,9644213
+phonecall,2023-01-27 05:00:00.0000000,2023-01-27 22:20:10.0000000,,,False,,1,,,False,True,False,,False,,012be0bc-909e-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9513702
+phonecall,2023-01-27 00:00:00.0000000,2023-01-27 22:20:44.0000000,,,False,,1,,,False,True,False,,False,,49ec4fd5-909e-ed11-aad0-000d3a1daf86,,1,,,,,2,,Call from Unknown,4,,9513688
+phonecall,2023-01-27 22:04:38.0000000,2023-01-27 22:03:32.0000000,,Client called to check if ITIN had arrived. ,True,,2,,,False,True,False,,False,,a71f126d-8e9e-ed11-aad1-0022482605f4,+1 4632535949,1,,,,,2,,Call to Lorena Lazo Mendez,0,,9513412
+phonecall,2023-01-27 05:00:00.0000000,2023-01-27 20:05:29.0000000,,,False,,1,,,False,True,False,,False,,dcbcf4ef-7d9e-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9512501
+phonecall,2023-01-26 00:00:00.0000000,2023-01-26 22:15:18.0000000,,,True,,1,,,False,True,False,,False,,ea292ce5-c69d-ed11-aad1-00224828938f,+1 3179094677,1,,,,,2,,Call to Rafael Rodriguez Tovar,4,,9476961
+phonecall,2023-01-26 20:53:08.0000000,2023-01-26 20:48:44.0000000,,Client called about renewing her plate sticker. She sent a picture of her plate but it does not expire till 8/21/23. she stated she has another plate that she thinks expires soon. Client will call back with that information so we can help her get her sticker. ,True,,5,,,False,True,False,,False,,2bfac4cf-ba9d-ed11-aad1-00224828938f,3174014850,1,,,,,2,,Call to 3174014850,0,,9475565
+phonecall,2023-01-26 05:00:00.0000000,2023-01-26 19:57:37.0000000,,,False,,1,,,False,True,False,,False,,673053ab-b39d-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9475334
+phonecall,2022-12-26 21:38:05.0000000,2022-12-26 21:37:31.0000000,,"Llamó y la agencia está cerrada, le daré seguimiento nuevamente mañana.",True,,1,,,False,True,False,,False,,e6ab0b7f-6585-ed11-81ad-00224828938f,+1 3173841465,1,,,,,2,,Call to +1 3173841465,8,,9475112
+phonecall,2023-01-26 05:00:00.0000000,2023-01-26 14:56:59.0000000,,,False,,3,,,False,True,False,,False,,6872e8ae-899d-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9473179
+phonecall,2023-01-23 16:50:07.0000000,2023-01-23 16:40:30.0000000,,"Called to make payment.
+Stephanie - No need to hand off you can always google or chat someone.
+Gustavo - You should check what they are asking for in the moment to reduce unnecessary follow up. 
+Stephanie, you started strong then you got nervous. Try to avoid passing off work.
+Gustavo - Great customer services, just try to take care of the client in the moment so there is no need for followup. ",False,,10,,,False,True,False,,False,,0d0b0fa1-3c9b-ed11-aad1-0022482605f4,,1,,,,,2,,Call From Nester Rodriguez Chiroy,0,,9466471
+phonecall,2023-01-23 20:04:56.0000000,2023-01-23 20:02:21.0000000,,,False,,3,,,False,True,False,,False,,010fa4d6-589b-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9445075
+phonecall,2023-01-23 05:00:00.0000000,2023-01-23 17:23:56.0000000,,,True,,1,,,False,True,False,,False,,103576b5-429b-ed11-aad1-0022482605f4,+1 6155405982,1,,,,,2,,Call to Nestor Rodriguez Chiroy,0,,9443808
+phonecall,2023-01-23 05:00:00.0000000,2023-01-23 17:25:12.0000000,,,False,,3,,,False,True,False,,False,,64d2cee0-429b-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,0,,9443800
+phonecall,2023-01-22 05:00:00.0000000,2023-01-22 19:41:36.0000000,,,False,,3,,,False,True,False,,False,,0f31fbc2-8c9a-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9436406
+phonecall,2023-01-21 05:00:00.0000000,2023-01-21 17:04:39.0000000,,,False,,1,,,False,True,False,,False,,9bf885b0-ad99-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9426207
+phonecall,2023-01-21 15:25:24.0000000,2023-01-21 15:24:55.0000000,,called client to confirm if he needed an appt for consulado. left a vm . ,True,,1,,,False,True,False,,False,,6f50a0c0-9f99-ed11-aad1-00224828938f,8124100613,1,,,,,2,,Call to 8124100613,0,,9406598
+phonecall,2023-01-20 22:27:52.0000000,2023-01-20 22:27:04.0000000,,,True,,1,,,False,True,False,,False,,37fd7390-1199-ed11-aad1-00224828938f,+1 3173326739,1,,,,,2,,Call to Bless Me LLC,0,,9406321
+phonecall,2023-01-20 05:00:00.0000000,2023-01-20 19:48:29.0000000,,,True,,1,,,False,True,False,,False,,33f38765-fb98-ed11-aad1-00224828938f,3177788312,1,,,,,2,,Call to 3177788312,0,,9307847
+phonecall,2023-01-20 05:00:00.0000000,2023-01-20 19:33:03.0000000,,,False,,2,,,False,True,False,,False,,6e95aa3e-f998-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9307752
+phonecall,2023-01-19 05:00:00.0000000,2023-01-19 20:56:36.0000000,,,False,,4,,,False,True,False,,False,,3b4cefc1-3b98-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,0,,9194134
+phonecall,2022-11-28 17:40:22.0000000,,,Contact client or provide new client survey to get necessary details.,True,2022-11-28 17:39:57.0000000,,,,False,True,False,,False,,c50d1eaa-436f-ed11-9562-00224828938f,,1,,0,,2022-11-28 17:39:57.0000000,2,,First Contact,4,,9165676
+phonecall,2023-01-19 00:00:00.0000000,2023-01-19 17:55:54.0000000,,,False,,2,,,False,True,False,,False,,1dd8a37f-2298-ed11-aad1-0022482605f4,anonymous,1,,,,,2,,Call from anonymous,4,,9153253
+phonecall,2023-01-19 00:00:00.0000000,2023-01-19 17:40:03.0000000,,,False,,5,,,False,True,False,,False,,e4029f4b-2098-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,4,,9152177
+phonecall,2023-01-19 00:00:00.0000000,2023-01-19 17:39:08.0000000,,,True,,1,,,False,True,False,,False,,4b244a2c-2098-ed11-aad1-00224828938f,13177569969,1,,,,,2,,Call to 13177569969,0,,9152063
+phonecall,2023-01-15 00:00:00.0000000,2023-01-15 17:02:25.0000000,,,False,,4,,,False,True,False,,False,,50ed1860-f694-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,9017937
+phonecall,2023-01-14 00:00:00.0000000,2023-01-14 22:36:31.0000000,,,False,,1,,,False,True,False,,False,,209690e0-5b94-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8984055
+phonecall,2023-01-14 00:00:00.0000000,2023-01-14 21:49:28.0000000,,,False,,1,,,False,True,False,,False,,4022e64b-5594-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8983852
+phonecall,2023-01-14 00:00:00.0000000,2023-01-14 20:52:47.0000000,,,False,,1,,,False,True,False,,False,,29ddab60-4d94-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8983271
+phonecall,2023-01-14 00:00:00.0000000,2023-01-14 19:38:29.0000000,,,False,,2,,,False,True,False,,False,,95358401-4394-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8982549
+phonecall,2023-01-14 18:11:07.0000000,2023-01-14 18:09:28.0000000,,Called requesting for someone at the Indy office to call her,False,,2,,,False,True,False,,False,,bc5a7095-3694-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8982032
+phonecall,2023-01-14 00:00:00.0000000,2023-01-14 15:14:43.0000000,,,False,,1,,,False,True,False,,False,,fb92b62b-1e94-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8980932
+phonecall,2023-01-13 00:00:00.0000000,2023-01-13 21:17:18.0000000,,,True,,1,,,False,True,False,,False,,ee14b5a6-8793-ed11-aad1-0022482605f4,(571) 269-5623,1,,,,,2,,Call to (571) 269-5623,4,,8972197
+phonecall,2023-01-13 15:48:40.0000000,2023-01-13 15:47:04.0000000,,Called client to let him know he has a balance that is ready to go to collections. Client stated he will try and go Thursday and pay. ,True,,2,,,False,True,False,,False,,3fae8585-5993-ed11-aad1-0022482605f4,7654629523,1,,,,,2,,Call to 7654629523,4,,8969749
+phonecall,2023-01-13 15:32:57.0000000,2023-01-13 15:32:46.0000000,,Called to ask for a payment but did not answer,True,,1,,,False,True,False,,False,,242b9783-5793-ed11-aad1-0022482605f4,2706457607,1,,,,,2,,Call to 2706457607,4,,8969625
+phonecall,2022-12-03 22:44:59.0000000,,,Called client two times to advise on notary requested but none of the 3 pages are signed. ,True,,30,,,False,True,False,,False,,37efd417-5c73-ed11-81ab-00224828938f,+1 4078005769,1,,,,,2,,Follow Up on Notary,8,,8961726
+phonecall,2023-01-12 00:00:00.0000000,2023-01-12 21:00:13.0000000,,,False,,2,,,False,True,False,,False,,a6d52018-bc92-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,4,,8958590
+phonecall,2023-01-12 00:00:00.0000000,2023-01-12 18:59:12.0000000,,,False,,4,,,False,True,False,,False,,4b572130-ab92-ed11-aad1-0022482605f4,,1,,,,,2,,Call from Unknown,4,,8957554
+phonecall,2023-01-09 19:34:25.0000000,2023-01-09 19:29:21.0000000,,"Gracias
+Elvin Magdiel Gomez Tevalan
+ • 
+5:18 PM
+Message from Elvin Magdiel Gomez Tevalan, Necesita algo más, Monday, January 9 2023, 5:18 PM.
+E
+Necesita algo más
+Message from you, Ocupo el nombre de los 2. Numero de telefono. Planea darde el beso? Haran su propio votos?, Monday, January 9 2023, 5:45 PM.
+Ocupo el nombre de los 2. Numero de telefono. Planea darde el beso? Haran su propio votos?
+5:45 PMMessage from you, y en que idioma les gustaria?, Monday, January 9 2023, 5:45 PM.
+
+y en que idioma les gustaria?
+Elvin Magdiel Gomez Tevalan
+ • 
+5:46 PM
+Message from Elvin Magdiel Gomez Tevalan, Ya le di la información a la señorita que me contesto, Monday, January 9 2023, 5:46 PM.
+E
+Ya le di la información a la señorita que me contesto
+5:48 PMMessage from you, A OK DISCULPE, Monday, January 9 2023, 5:48 PM.
+
+A OK DISCULPE
+Elvin Magdiel Gomez Tevalan
+ • 
+5:48 PM
+Message from Elvin Magdiel Gomez Tevalan, Elvin Magdiel Gomez Tevalan 317 646 0775 Claudia Yomara Gómez Gómez 310 658 2949 Si planeamos darnos el beso Y no tenemos votos, Monday, January 9 2023, 5:48 PM.
+E
+Elvin Magdiel Gomez Tevalan 
+317 646 0775 
+
+Claudia Yomara Gómez Gómez 
+310 658 2949
+
+Si planeamos darnos el beso 
+Y no tenemos votos",False,,6,,,False,True,False,,False,,7fa9f2e4-5390-ed11-aad1-00224828938f,,1,,,,,2,,Call from Elvin,4,,8899224
+phonecall,2023-01-10 02:15:56.0000000,2023-01-10 02:12:06.0000000,,Advised client we cannot falsify a talon de cheque que vaya su contractista a pregunta que otros comprobaciones de ingreso puede porcionar. ,True,,4,,,False,True,False,,False,,767b6a28-8c90-ed11-aad1-00224828938f,+1 3173326739,1,,,,,2,,Call to +1 3173326739,8,,8896303
+phonecall,2023-01-09 00:00:00.0000000,2023-01-09 21:37:40.0000000,,,True,,1,,,False,True,False,,False,,1ac017d7-6590-ed11-aad1-00224828938f,3176460775,1,,,,,2,,Call to 3176460775,4,,8893292
+phonecall,2023-01-09 00:00:00.0000000,2023-01-09 18:16:12.0000000,,,True,,1,,,False,True,False,,False,,cb0cc3ac-4990-ed11-aad1-00224828938f,5712695623,1,,,,,2,,Call to 5712695623,4,,8891612
+phonecall,2023-01-09 00:00:00.0000000,2023-01-09 17:51:56.0000000,,,False,,3,,,False,True,False,,False,,681d684c-4690-ed11-aad1-00224828938f,,1,,,,,2,,Call from Unknown,4,,8891472
+phonecall,2023-01-03 19:24:49.0000000,2023-01-03 19:21:25.0000000,,,True,,4,,,False,True,False,,False,,f07c8fd0-9b8b-ed11-81ad-00224828938f,+1 7738388199,1,,,,,2,,Call to +1 7738388199,8,,8866534
+phonecall,2023-01-06 20:02:17.0000000,2023-01-06 19:39:42.0000000,,,True,,23,,,False,True,False,,False,,2e7cbedd-f98d-ed11-81ad-0022482605f4,+1 7738388199,1,,,,,2,,Call to 7738388199,4,,8866521
+phonecall,2023-01-07 21:48:09.0000000,2023-01-07 21:47:31.0000000,,,True,,1,,,False,True,False,,False,,5291d6e2-d48e-ed11-aad1-0022482605f4,3174088721,1,,,,,2,,Call to 3174088721,4,,8859483
+phonecall,2023-01-07 17:44:49.0000000,2023-01-07 17:40:47.0000000,,,True,,5,,,False,True,False,,False,,9f99ac6a-b28e-ed11-aad1-0022482605f4,+1 (317) 384-1465,1,,,,,2,,Call to Masters Group Auto Center - Essence Consulting,4,,8858101
+phonecall,2023-01-06 19:56:48.0000000,2023-01-06 19:54:39.0000000,,client called wanting to know about her account. Requested to speak to Arleth ,False,,3,,,False,True,False,,False,,914798f1-fb8d-ed11-81ad-00224828938f,+1 3177463696,1,,,,,2,,Call from Unknown,4,,8714876
+phonecall,2023-01-06 16:18:06.0000000,2023-01-06 16:17:32.0000000,,Called client to ask her to please fill form that was emailed. ,True,,1,,,False,True,False,,False,,3c95499e-dd8d-ed11-81ad-00224828938f,7656070800,1,,,,,2,,Call to 7656070800,4,,8694417
+phonecall,2023-01-06 15:15:58.0000000,2023-01-06 15:04:33.0000000,,Client was very upset since we did not do her company registration. I told her we would email her the state registration today but we will have to wait for her EIN. She is coming in on Sunday at 2PM to train on how to do receipts on QuickBooks. ,True,,12,,,False,True,False,,False,,b461d269-d38d-ed11-81ad-00224828938f,7656070800,1,,,,,2,,Call to 7656070800,4,,8693431
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 22:43:57.0000000,,,False,,5,,,False,True,False,,False,,1e185970-4a8d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8559838
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 22:17:15.0000000,,,False,,1,,,False,True,False,,False,,eb330bb1-468d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8559587
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 22:01:10.0000000,,,True,,1,,,False,True,False,,False,,f7578071-448d-ed11-81ad-00224828938f,(919) 358-7880,1,,,,,2,,Call to (919) 358-7880,4,,8559399
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 21:58:59.0000000,,,True,,1,,,False,True,False,,False,,488e8227-448d-ed11-81ad-0022482605f4,2706457607,1,,,,,2,,Call to 2706457607,4,,8559387
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 22:00:16.0000000,,,True,,3,,,False,True,False,,False,,9c2df750-448d-ed11-81ad-0022482605f4,2706457607,1,,,,,2,,Call to 2706457607,4,,8559381
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 21:19:18.0000000,,,True,,2,,,False,True,False,,False,,6c4b409c-3e8d-ed11-81ad-0022482605f4,3179705369,1,,,,,2,,Call to 3179705369,4,,8558937
+phonecall,2023-01-05 21:24:17.0000000,2023-01-05 21:23:53.0000000,,,True,,1,,,False,True,False,,False,,58e6983e-3f8d-ed11-81ad-00224828938f,9193587880,1,,,,,2,,Call to 9193587880,4,,8558928
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 19:09:20.0000000,,,False,,2,,,False,True,False,,False,,c1543b71-2c8d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8557993
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 17:10:27.0000000,,,False,,3,,,False,True,False,,False,,b87233d4-1b8d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8557152
+phonecall,2023-01-05 00:00:00.0000000,2023-01-05 15:11:00.0000000,,,False,,2,,,False,True,False,,False,,86ca8d24-0b8d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8556058
+phonecall,2023-01-03 05:00:00.0000000,2023-01-03 19:28:27.0000000,,,True,,1,,,False,True,False,,False,,0a0be5ca-9c8b-ed11-81ad-00224828938f,+1 7653373520,1,,,,,2,,Call to La Fiesta Burrito,8,,8539379
+phonecall,2023-01-03 05:00:00.0000000,2023-01-03 19:17:41.0000000,,,False,,1,,,False,True,False,,False,,80d61a48-9b8b-ed11-81ad-00224828938f,anonymous,1,,,,,2,,Call from anonymous,8,,8539303
+phonecall,2023-01-03 19:15:43.0000000,2023-01-03 19:14:31.0000000,,,True,,2,,,False,True,False,,False,,017abfd9-9a8b-ed11-81ad-00224828938f,+1 7738388199,1,,,,,2,,Call to +1 7738388199,8,,8539101
+phonecall,2023-01-02 00:00:00.0000000,2023-01-02 16:44:26.0000000,,,False,,3,,,False,True,False,,False,,de8e73b2-bc8a-ed11-81ad-0022482605f4,,1,,,,,2,,Call from Unknown,4,,8526619
+phonecall,2022-12-30 00:00:00.0000000,2022-12-30 22:33:13.0000000,,,True,,1,,,False,True,False,,False,,282a20f1-9188-ed11-81ad-00224828938f,9198626998,1,,,,,2,,Call to 9198626998,4,,8507395
+phonecall,2022-12-30 00:00:00.0000000,2022-12-30 22:34:24.0000000,,,True,,1,,,False,True,False,,False,,c8f6501b-9288-ed11-81ad-00224828938f,9193587880,1,,,,,2,,Call to 9193587880,4,,8507389
+phonecall,2022-12-30 20:33:17.0000000,2022-12-30 20:32:46.0000000,,,True,,1,,,False,True,False,,False,,26a5ef19-8188-ed11-81ad-00224828938f,3177480078,1,,,,,2,,Call to 3177480078,4,,8506401
+phonecall,2022-12-30 00:00:00.0000000,2022-12-30 16:44:43.0000000,,,True,,1,,,False,True,False,,False,,e3e1123d-6188-ed11-81ad-00224828938f,3177246259,1,,,,,2,,Call to 3177246259,4,,8504884
+phonecall,2022-12-29 15:58:58.0000000,2022-12-29 15:54:02.0000000,,Client called asking if his ITIN had arrived. Copy was texted to him ,False,,5,,,False,True,False,,False,,c4816001-9187-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8495328
+phonecall,2022-12-29 00:00:00.0000000,2022-12-29 14:40:41.0000000,,,True,,1,,,False,True,False,,False,,f2135dc0-8687-ed11-81ad-00224828938f,9012373218,1,,,,,2,,Call to 9012373218,4,,8494442
+phonecall,2022-12-26 21:40:22.0000000,2022-12-26 21:40:15.0000000,,Did not answer,True,,1,,,False,True,False,,False,,04b855e1-6585-ed11-81ad-00224828938f,+1 3174082984,1,,,,,2,,Call to Martin Arias 2,8,,8469724
+phonecall,2022-12-26 21:20:06.0000000,2022-12-26 21:18:32.0000000,,"Called client on sales tax, client advised on amount of $899",True,,2,,,False,True,False,,False,,b212ffd8-6285-ed11-81ad-0022482605f4,+1 3177725819,1,,,,,2,,Call to Felecita Hernandez Anastacio,4,,8469713
+phonecall,2022-12-26 21:23:31.0000000,2022-12-26 21:22:45.0000000,,LMTC in reference to invoice. ,True,,1,,,False,True,False,,False,,68f43b70-6385-ed11-81ad-0022482605f4,9198626998,1,,,,,2,,Call to 9198626998,4,,8469701
+phonecall,2022-12-26 21:15:45.0000000,2022-12-26 21:15:10.0000000,,,True,,1,,,False,True,False,,False,,da6d2860-6285-ed11-81ad-0022482605f4,9193587880,1,,,,,2,,Call to 9193587880,4,,8469155
+phonecall,2022-12-26 00:00:00.0000000,2022-12-26 18:39:24.0000000,,,True,,1,,,False,True,False,,False,,ae4fd098-4c85-ed11-81ad-0022482605f4,9193587880,1,,,,,2,,Call to 9193587880,4,,8466692
+phonecall,2022-12-26 00:00:00.0000000,2022-12-26 18:40:54.0000000,,,True,,1,,,False,True,False,,False,,fba2ffd0-4c85-ed11-81ad-0022482605f4,9198626998,1,,,,,2,,Call to 9198626998,4,,8466686
+phonecall,2022-12-26 15:10:32.0000000,,,Contact client or provide new client survey to get necessary details.,True,2022-12-26 15:10:15.0000000,,,,False,True,False,,False,,18274166-2f85-ed11-81ad-0022482605f4,,1,,0,,2022-12-26 15:10:15.0000000,2,,First Contact,4,,8464963
+phonecall,2022-12-26 15:04:09.0000000,2022-12-26 15:03:29.0000000,,,True,,1,,,False,True,False,,False,,ed802274-2e85-ed11-81ad-0022482605f4,9198626998,1,,,,,2,,Call to 9198626998,4,,8464868
+phonecall,2022-12-26 14:52:50.0000000,2022-12-26 14:52:34.0000000,,,True,,1,,,False,True,False,,False,,c0d0a0e9-2c85-ed11-81ad-0022482605f4,9193587880,1,,,,,2,,Call to +1 9193587880,4,,8464743
+phonecall,2022-12-23 16:24:56.0000000,,,Called client and advised that he should eventually get a check back. ,True,,30,,,False,True,False,,False,,5f87f64c-9282-ed11-81ad-00224828938f,,1,,,,,2,,Letter,4,,8440588
+phonecall,2022-12-22 19:30:51.0000000,2022-12-22 19:21:28.0000000,,Client states she had to close her business on Tuesday due to going bankrupt. She states she wants to cancel her contract and will sent receipts over to us. She will call 12/31/2022 and make a payment to us. She stated she tried to get ahold of us on Tuesday but she thinks she had the wrong number. ,True,,10,,,False,True,False,,False,,e0c829d1-2d82-ed11-81ad-00224828938f,+1 2706457607,1,,,,,2,,Call to Pupuseria Salvadorena El Buen Pastor,4,,8429714
+phonecall,2022-12-22 21:19:55.0000000,2022-12-22 21:18:26.0000000,,,True,,2,,,False,True,False,,False,,0b28ab1f-3e82-ed11-81ad-0022482605f4,+1 3177181747,1,,,,,2,,Call to +1 3177181747,8,,8429215
+phonecall,2022-12-22 21:16:56.0000000,2022-12-22 21:14:20.0000000,,,True,,3,,,False,True,False,,False,,5133908a-3d82-ed11-81ad-0022482605f4,+1 8004771660,1,,,,,2,,Call to +1 8004771660,8,,8429133
+phonecall,2022-12-22 00:00:00.0000000,2022-12-22 20:40:38.0000000,,,True,,1,,,False,True,False,,False,,49c136e4-3882-ed11-81ad-00224828938f,3178626998,1,,,,,2,,Call to 3178626998,4,,8428893
+phonecall,2022-12-22 00:00:00.0000000,2022-12-22 20:41:27.0000000,,,True,,2,,,False,True,False,,False,,4fa923ff-3882-ed11-81ad-00224828938f,9193587880,1,,,,,2,,Call to 9193587880,4,,8428887
+phonecall,2022-12-22 18:55:34.0000000,2022-12-22 18:54:04.0000000,,Plates arrived,True,,2,,,False,True,False,,False,,266d0fff-2982-ed11-81ad-0022482605f4,(240) 468-1239,1,,,,,2,,Call to Esmeralda Lissette Guerra Rodriguez,4,,8428358
+phonecall,2022-12-22 19:59:09.0000000,2022-12-22 19:58:09.0000000,,Plates arrived,True,,1,,,False,True,False,,False,,f5380df3-3282-ed11-81ad-0022482605f4,+1 (317) 438-1369,1,,,,,2,,Call to Florinda Maldonado Diaz,4,,8428344
+phonecall,2022-12-22 00:00:00.0000000,2022-12-22 18:45:05.0000000,,,False,,2,,,False,True,False,,False,,ebe008bd-2882-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8426733
+phonecall,2022-12-22 00:00:00.0000000,2022-12-22 16:32:15.0000000,,,True,,1,,,False,True,False,,False,,f331be2c-1682-ed11-81ad-00224828938f,8125300151,1,,,,,2,,Call to 8125300151,4,,8424524
+phonecall,2022-12-22 00:00:00.0000000,2022-12-22 14:55:28.0000000,,,True,,1,,,False,True,False,,False,,75c0ffab-0882-ed11-81ad-00224828938f,3179986301,1,,,,,2,,Call to 3179986301,4,,8423715
+phonecall,2022-12-19 22:36:32.0000000,2022-12-19 21:39:46.0000000,,,True,,13,,,False,True,False,,False,,8f9257a2-e57f-ed11-81ad-0022482605f4,+1 3174807513,1,,,,,2,,Call to Annia Germania Serrano Perez,8,,8399415
+phonecall,2022-12-19 05:00:00.0000000,2022-12-19 19:04:24.0000000,,,True,,1,,,False,True,False,,False,,c92e4fed-cf7f-ed11-81ad-0022482605f4,+1 3175908970,1,,,,,2,,Call to +1 3175908970,8,,8396927
+phonecall,2022-12-19 19:05:48.0000000,2022-12-19 19:04:48.0000000,,,True,,1,,,False,True,False,,False,,c4fbf4f9-cf7f-ed11-81ad-0022482605f4,+1 3173841465,1,,,,,2,,Call to Essence Consulting Multiservices INC,8,,8396785
+phonecall,2022-12-18 21:04:23.0000000,2022-12-18 20:58:35.0000000,,Client called to sch. an appt to get an insurance quote ,False,,6,,,False,True,False,,False,,ce04a8bb-167f-ed11-81ad-00224828938f,+1 7652427170,1,,,,,2,,Call from Unknown,4,,8388586
+phonecall,2022-12-17 19:40:30.0000000,2022-12-12 21:37:11.0000000,,,True,,,,,False,True,False,,False,,38fe3520-657a-ed11-81ad-00224828938f,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,4,,8376079
+phonecall,2022-12-16 17:34:15.0000000,2022-12-16 17:33:23.0000000,,Client will stop by this weekend to make her payment. Also was notified her ITIN should arrive soon. ,True,,1,,,False,True,False,,False,,304eb1bb-677d-ed11-81ad-00224828938f,+1 3177463269,1,,,,,2,,Call to 3177463269,4,,8324827
+phonecall,2022-12-16 00:00:00.0000000,2022-12-16 17:19:21.0000000,,,False,,2,,,False,True,False,,False,,4b6670c3-657d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8324732
+phonecall,2022-12-16 00:00:00.0000000,2022-12-16 17:01:24.0000000,,,False,,2,,,False,True,False,,False,,c0361945-637d-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8324626
+phonecall,2022-12-16 14:49:50.0000000,2022-12-16 14:49:29.0000000,,Client will call back she is at dentist appt. ,True,,1,,,False,True,False,,False,,10c63bd4-507d-ed11-81ad-00224828938f,+1 3175035624,1,,,,,2,,Call to 3175035624,4,,8323401
+phonecall,2022-12-16 14:45:58.0000000,2022-12-16 14:44:58.0000000,,Client might stop by this weekend to plate his car. ,True,,1,,,False,True,False,,False,,da60a633-507d-ed11-81ad-00224828938f,+1 3178402068,1,,,,,2,,Call to 3178402068,4,,8323344
+phonecall,2022-12-15 21:29:54.0000000,2022-12-15 21:29:04.0000000,,Returned phone call. ,True,,1,,,False,True,False,,False,,249e2f7b-bf7c-ed11-81ad-0022482605f4,+1 8603846372,1,,,,,2,,Call to +1 8603846372,8,,8313553
+phonecall,2022-12-15 20:42:50.0000000,2022-12-15 20:42:09.0000000,,,True,,1,,,False,True,False,,False,,80233ded-b87c-ed11-81ad-0022482605f4,3174381369,1,,,,,2,,Call to 3174381369,4,,8312527
+phonecall,2022-12-15 20:48:55.0000000,2022-12-15 20:48:23.0000000,,Metal plates are in. Client states she will tell her husband to pick them up. ,True,,1,,,False,True,False,,False,,01c5b4cc-b97c-ed11-81ad-0022482605f4,3174576508,1,,,,,2,,Call to 3174576508,4,,8312514
+phonecall,2022-12-15 20:39:03.0000000,2022-12-15 20:38:33.0000000,,Temp plates arrived ,True,,1,,,False,True,False,,False,,00ccfc6f-b87c-ed11-81ad-0022482605f4,2404681239,1,,,,,2,,Call to 2404681239,4,,8312321
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 19:56:23.0000000,,,False,,2,,,False,True,False,,False,,14b7838b-b27c-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8311973
+phonecall,2022-12-15 19:29:00.0000000,2022-12-15 19:27:35.0000000,,,True,,2,,,False,True,False,,False,,ebd92d86-ae7c-ed11-81ad-00224828938f,7654629523,1,,,,,2,,Call to 7654629523,4,,8311414
+phonecall,2022-12-15 18:55:54.0000000,2022-12-15 18:52:32.0000000,,Called client to verify her email and ask for payment to continue with her account. Client stated she would call me back in a little to take payment. ,True,,4,,,False,True,False,,False,,4af5a89f-a97c-ed11-81ad-00224828938f,7656070800,1,,,,,2,,Call to 7656070800,4,,8311010
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 18:04:32.0000000,,,True,,1,,,False,True,False,,False,,977a4fe9-a27c-ed11-81ad-00224828938f,3176263065,1,,,,,2,,Call to 3176263065,4,,8310686
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 17:29:30.0000000,,,False,,3,,,False,True,False,,False,,2fd8e007-9e7c-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8310169
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 16:37:28.0000000,,,True,,5,,,False,True,False,,False,,29f834c3-967c-ed11-81ad-00224828938f,3176263065,1,,,,,2,,Call to 3176263065,4,,8309588
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 16:29:26.0000000,,,False,,2,,,False,True,False,,False,,67f5a69f-957c-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8309529
+phonecall,2022-12-15 00:00:00.0000000,2022-12-15 16:16:06.0000000,,,False,,3,,,False,True,False,,False,,72f92dc5-937c-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8309347
+phonecall,2022-12-15 15:29:19.0000000,2022-12-15 15:29:09.0000000,,"12/12/22 Called client to let him know we received hiss EIN & wanted to see if he had received it. 
+
+ Client did not answer and has no voicemail set up. ",True,,1,,,False,True,False,,False,,b16e0e37-8d7c-ed11-81ad-00224828938f,+1 3178402068,1,,,,,2,,EIN RECIEVED,4,,8308797
+phonecall,2022-12-15 15:11:17.0000000,2022-12-15 15:11:06.0000000,,"Called client to let him know there is Jan. Appts for the consulado.
+Client had left $20 for us to schedule and check for him
+Did not answer and did not have a voicemail set up. ",True,,1,,,False,True,False,,False,,44f81db2-8a7c-ed11-81ad-00224828938f,5759144775,1,,,,,2,,Call to 5759144775,4,,8308619
+phonecall,2022-12-12 21:49:15.0000000,2022-12-12 21:48:23.0000000,,,True,,15,,,False,True,False,,False,,05403ead-667a-ed11-81ad-00224828938f,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,8,,8276588
+phonecall,2022-12-12 14:56:59.0000000,2022-12-12 14:56:24.0000000,,,True,,1,,,False,True,False,,False,,e92cfe23-2d7a-ed11-81ad-00224828938f,3175032612,1,,,,,2,,Call to 3175032612,4,,8271648
+phonecall,2022-11-17 00:00:00.0000000,2022-11-17 22:14:04.0000000,,,True,,2,,,False,True,False,,False,,8b32901f-c566-ed11-9562-00224828938f,+1 7654218267,1,,,,,2,,Call to Care Cleaning Of Lafayette LLC Jaime Pacheco,4,,8271361
+phonecall,2022-12-11 20:19:53.0000000,2022-12-11 20:17:06.0000000,,Client called asking about his temp plates ,True,,3,,,False,True,False,,False,,6bae91c2-9079-ed11-81ad-00224828938f,4637010012,1,,,,,2,,Call to 4637010012,4,,8262184
+phonecall,2022-12-11 20:16:03.0000000,2022-12-11 20:15:36.0000000,,,False,,1,,,False,True,False,,False,,15420890-9079-ed11-81ad-00224828938f,,1,,,,,2,,Call from Unknown,4,,8262143
+phonecall,2022-12-11 06:00:00.0000000,2022-12-11 19:26:39.0000000,,,True,,1,,,False,True,False,,False,,f19081bb-8979-ed11-81ad-00224828938f,+1 6122981155,1,,,,,2,,Call to Erick Francisco Carreto Vasquez LLC,0,,8261695
+phonecall,2022-12-10 21:22:57.0000000,2022-12-10 21:21:30.0000000,,,True,,2,,,False,True,False,,False,,c2ae0e99-d078-ed11-81ad-00224828938f,+1 3173841465,1,,,,,2,,Call to Masters Group Auto Center - Essence Consulting,4,,8260850
+phonecall,2022-12-11 16:42:03.0000000,2022-12-11 16:41:33.0000000,,"12/11/2022 Michelle aguayo called him he did not answer. 
+
+12/11/2022 Liliana Quinonez called to let know his plates arrived , he did state he would be here around 3 to 4 tomorrow to pick them up. ",True,,1,,,False,True,False,,False,,82bd43aa-7279-ed11-81ad-00224828938f,+1 7654218267,1,,,,,2,,Call to Care Cleaning Of Lafayette LLC Jaime Pacheco,4,,8260329
+phonecall,2022-12-10 20:28:40.0000000,2022-12-10 20:27:28.0000000,,Client called to say he was unable to make his appointment today. So he rescheduled for next Saturday. ,False,,2,,,False,True,False,,False,,baec680c-c978-ed11-81ad-00224828938f,+1 3173503984,1,,,,,2,,Canceling Appt.,4,,8245888
+phonecall,2022-12-10 15:54:47.0000000,2022-12-10 15:49:17.0000000,,Client called asking about his plates. Told him it usually takes 2 weeks. Due to thanksgiving it would of gotten backed up. ,False,,6,,,False,True,False,,False,,ba4e9d33-a278-ed11-81ad-0022482605f4,,1,,,,,2,,Call from Unknown,4,,8234055
+phonecall,2022-12-09 05:00:00.0000000,2022-12-04 21:01:27.0000000,,"Conversation with Mirian Aguilar of LFB, employee corrected owner in front of client multiple times in an unprofessional matter, the employee also has other issues with attendance, using the phone",True,,12,,,False,True,False,,False,,8a051ccc-1674-ed11-81ab-0022482605f4,+1 7653373520,1,,,,,2,,Call to +1 7653373520,8,,8126551
+phonecall,2022-12-09 05:00:00.0000000,2022-12-04 21:24:22.0000000,,,True,,10,,,False,True,False,,False,,b6459401-1a74-ed11-81ab-0022482605f4,+1 7653373520,1,,,,,2,,Call to La Fiesta Burrito,8,,8126537
+phonecall,2022-12-09 17:01:39.0000000,2022-12-09 17:00:01.0000000,,,False,,2,,,False,True,False,,False,,7c0be4e5-e277-ed11-81ab-00224828938f,,1,,,,,2,,Call from Unknown,4,,8123805
+phonecall,2022-12-08 05:00:00.0000000,2022-12-08 20:51:39.0000000,,,True,,10,,,False,True,False,,False,,c15efe1c-3a77-ed11-81ab-0022482605f4,+1 3173503984,1,,,,,2,,Call to Felipe Domingo Veliz Turcios,8,,8015205
+phonecall,2022-12-08 00:00:00.0000000,2022-12-08 17:16:43.0000000,,,True,,1,,,False,True,False,,False,,9d610912-1c77-ed11-81ab-00224828938f,3173503984,1,,,,,2,,Call to 3173503984,4,,8012784
+phonecall,2022-12-08 00:00:00.0000000,2022-12-08 15:34:31.0000000,,,True,,5,,,False,True,False,,False,,5fdf2ecc-0d77-ed11-81ab-00224828938f,3173503984,1,,,,,2,,Call to 3173503984,4,,8011714
+phonecall,2022-12-08 15:18:43.0000000,2022-12-08 15:18:00.0000000,,Client has called asking about her ITIN told her the estimated time is around 1/27/22. ,True,,1,,,False,True,False,,False,,30c6117d-0b77-ed11-81ab-00224828938f,+1 4632535949,1,,,,,2,,Call to 4632535949,4,,8011320
+phonecall,2022-12-05 20:28:20.0000000,2022-12-05 20:25:11.0000000,,,True,,4,,,False,True,False,,False,,aff4b6e4-da74-ed11-81ab-0022482605f4,+1 3173841465,1,,,,,2,,Call to 3173841465,4,,8010691
+phonecall,2022-12-05 20:22:24.0000000,2022-12-05 20:22:05.0000000,,,True,,1,,,False,True,False,,False,,d65da57b-da74-ed11-81ab-0022482605f4,+1 3173841465,1,,,,,2,,Call to 3173841465,4,,8010676
+phonecall,2022-12-08 14:48:06.0000000,,,"Lourdes called confused that we resent her the same info, I informed her it was just confirmation and we should have it to her tomorrow or Thursday.",True,2022-12-08 16:00:00.0000000,30,,,False,True,False,,False,,efdff53b-a675-ed11-81ab-0022482605f4,+1 2036515316,2,,0,,2022-12-08 16:00:00.0000000,2,,Call with Lourdes,4,,8010650
+phonecall,2022-12-04 22:34:29.0000000,2022-12-04 22:20:30.0000000,,,True,,14,,,False,True,False,,False,,51f79cd7-2174-ed11-81ab-0022482605f4,+1 7653373520,1,,,,,2,,Call to Noe Garica (LFB),8,,7983835
+phonecall,2022-12-05 22:40:14.0000000,2022-12-05 22:23:59.0000000,,,False,,17,,,False,True,False,,False,,5e94457c-eb74-ed11-81ab-0022482605f4,,1,,,,,2,,Call from Unknown,4,,7976547
+phonecall,2022-12-05 21:35:46.0000000,2022-12-05 21:25:46.0000000,,,True,,10,,,False,True,False,,False,,57b7985d-e374-ed11-81ab-0022482605f4,+1 3176400269,1,,,,,2,,Call to Ana Maria Gonzalez de Jesus,8,,7975797
+phonecall,2022-12-05 00:00:00.0000000,2022-12-05 20:44:17.0000000,,,True,,1,,,False,True,False,,False,,5354df92-dd74-ed11-81ab-0022482605f4,3175155308,1,,,,,2,,Call to 3175155308,4,,7975042
+phonecall,2022-12-05 20:38:50.0000000,2022-12-05 20:38:16.0000000,,Called for 5 star list. Did not answer left a voicemail ,True,,1,,,False,True,False,,False,,74013dbb-dc74-ed11-81ab-0022482605f4,+1 3179993638,1,,,,,2,,Call to 3179993638,4,,7974856
+phonecall,2022-12-05 18:45:13.0000000,2022-12-05 18:42:03.0000000,,,True,,4,,,False,True,False,,False,,42427c82-cc74-ed11-81ab-0022482605f4,+1 3173326739,1,,,,,2,,Call to Rony A Sanchez Guifarro,8,,7973269
+phonecall,2022-12-05 18:39:33.0000000,2022-12-05 18:39:22.0000000,,,True,,1,,,False,True,False,,False,,e8a82823-cc74-ed11-81ab-0022482605f4,+1 3173326739,1,,,,,2,,Call to Rony A Sanchez Guifarro,8,,7973178
+phonecall,2022-12-05 15:01:44.0000000,2022-12-05 14:59:42.0000000,,"CLIENT STATED SHE ALREADY GOT AN EMAIL THAT ANSWERED HER QUESTIONS. 
+ASKED IF SHE WANTED TO SCH. AN ITIN APPT. SHE SAID SHE WILL WAIT UNTIL SHE KNOWS WHEN SHE CAN GO. 
+SHE DID NOT HAVE ANY OTHER QUESTIONS. ",True,,3,,,False,True,False,,False,,1bbc206b-ad74-ed11-81ab-0022482605f4,+1 3172502637,1,,,,,2,,Call to 3172502637,4,,7971198
+phonecall,2022-12-05 14:48:53.0000000,2022-12-05 14:47:40.0000000,,Told client we recommend he gets his EIN to be able to plate vehicles in the future. He states he has not had time to go but he will think about it & asked for price. He also stated he already received his ITIN as well. ,True,,2,,,False,True,False,,False,,7bcdd2c1-ab74-ed11-81ab-0022482605f4,+1 3174061966,1,,,,,2,,Call to 3174061966,4,,7971043
+phonecall,2022-12-04 05:00:00.0000000,2022-12-04 22:04:16.0000000,,,True,,1,,,False,True,False,,False,,7aac6192-1f74-ed11-81ab-0022482605f4,+1 7653373520,1,,,,,2,,Call to La Fiesta Burrito,8,,7962405
+phonecall,2022-12-03 14:46:43.0000000,2022-12-01 19:46:48.0000000,,,True,,,,,False,True,False,,False,,53d42ae2-b071-ed11-9562-0022482605f4,+1 3174906109,1,,,,,2,,Call to +1 3174906109,4,,7927340
+phonecall,2022-12-02 08:28:40.0000000,2022-12-01 20:00:58.0000000,,,True,,,,,False,True,False,,False,,524bc4e3-b271-ed11-9562-0022482605f4,3176109476,1,,,,,2,,Call to Narciso Javier Velasquez,8,,7860771
+phonecall,2022-12-01 06:00:00.0000000,2022-12-01 20:07:58.0000000,,,True,,1,,,False,True,False,,False,,0e2914dd-b371-ed11-9562-0022482605f4,+1 3177923972,1,,,,,2,,Call to +1 3177923972,0,,7853137
+phonecall,2022-12-01 06:00:00.0000000,2022-12-01 20:09:23.0000000,,,True,,2,,,False,True,False,,False,,6657ad08-b471-ed11-9562-0022482605f4,+1 3177923972,1,,,,,2,,Call to +1 3177923972,0,,7853132
+phonecall,2022-11-10 23:15:19.0000000,2022-11-10 23:13:27.0000000,,,False,,2,,,False,True,False,,False,,0e945146-4d61-ed11-9562-0022482605f4,+1 3177661901,1,,,,,2,,Cody,4,,7835465
+phonecall,2022-11-28 20:15:01.0000000,2022-11-28 20:14:37.0000000,,wrong number ,True,,1,,,False,True,False,,False,,89349f46-596f-ed11-9562-00224828938f,+1 5043429785,1,,,,,2,,Call to Lilian Xiomara Lagos Baca,4,,7818029
+phonecall,2022-11-28 18:10:10.0000000,2022-11-28 18:09:28.0000000,,,True,,1,,,False,True,False,,False,,108643c9-476f-ed11-9562-0022482605f4,3177246259,1,,,,,2,,Call to 3177246259,4,,7817840
+phonecall,2022-11-26 06:00:00.0000000,2022-11-26 20:15:11.0000000,,,True,,1,,,False,True,False,,False,,ff067007-c76d-ed11-9562-00224828938f,+1 7654629523,1,,,,,2,,Call to +1 7654629523,0,,7794576
+phonecall,2022-11-26 20:12:52.0000000,2022-11-26 20:12:11.0000000,,,True,,1,,,False,True,False,,False,,24b03597-c66d-ed11-9562-00224828938f,+1 3175133278,1,,,,,2,,Call to Javier Jimenez Onofre,0,,7794495
+phonecall,2022-11-21 23:48:09.0000000,2022-11-21 23:47:03.0000000,,,True,,2,,,False,True,False,,False,,5a9d73a5-ed69-ed11-9562-0022482605f4,+1 3176109476,1,,,,,2,,Call to Narciso Javier Velasquez,0,,7794489
+phonecall,2022-11-26 06:00:00.0000000,2022-11-26 20:06:43.0000000,,,True,,1,,,False,True,False,,False,,d72273d4-c56d-ed11-9562-00224828938f,+1 3174802101,1,,,,,2,,Call to Jorge Osornio,0,,7794406
+phonecall,2022-11-26 06:00:00.0000000,2022-11-26 20:10:32.0000000,,,True,,1,,,False,True,False,,False,,4bdeb55e-c66d-ed11-9562-00224828938f,+1 3175133278,1,,,,,2,,Call to Javier Jimenez Onofre,0,,7794398
+phonecall,2022-11-26 06:00:00.0000000,2022-11-26 19:57:30.0000000,,,True,,2,,,False,True,False,,False,,bb76e38d-c46d-ed11-9562-00224828938f,+1 7654218267,1,,,,,2,,Call to Care Cleaning Of Lafayette LLC Jaime Pacheco,0,,7794259
+phonecall,2022-11-22 00:06:31.0000000,2022-11-22 00:05:46.0000000,,,True,,1,,,False,True,False,,False,,cb444343-f069-ed11-9562-0022482605f4,+1 3177923972,1,,,,,2,,Call to +1 3177923972,0,,7793975
+phonecall,2022-11-18 01:51:24.0000000,2022-11-18 01:50:22.0000000,,,True,,2,,,False,True,False,,False,,e0a9c135-da66-ed11-9562-00224828938f,+1 3174802101,1,,,,,2,,Call to Jorge Osornio,0,,7793817
+phonecall,2022-11-17 18:49:12.0000000,2022-11-17 18:45:25.0000000,,,True,,4,,,False,True,False,,False,,0e18bbdc-9e66-ed11-9562-00224828938f,3176275727,1,,,,,2,,Nicole Velasquez,0,,7793715
+phonecall,2022-11-17 23:00:46.0000000,2022-11-17 22:59:57.0000000,,,True,,1,,,False,True,False,,False,,93e1ec66-c266-ed11-9562-00224828938f,3174576508,1,,,,,2,,Call to Lilian Xiomara Lagos,0,,7764284
+phonecall,2022-11-18 00:00:00.0000000,2022-11-18 20:05:05.0000000,,,True,,1,,,False,True,False,,False,,1275d948-7c67-ed11-9562-00224828938f,3176528389,1,,,,,2,,Call to 3176528389,4,,7571284
+phonecall,2022-11-17 00:00:00.0000000,2022-11-17 22:11:53.0000000,,,True,,1,,,False,True,False,,False,,a2b0d1d2-c466-ed11-9562-00224828938f,+1 7654218267,1,,,,,2,,Call to Care Cleaning Of Lafayette LLC Jaime Pacheco,4,,7478178
+phonecall,2022-11-17 00:00:00.0000000,2022-11-17 22:13:20.0000000,,,False,,1,,,False,True,False,,False,,a8b05706-c566-ed11-9562-00224828938f,,1,,,,,2,,Call from Unknown,4,,7478170
+phonecall,2022-11-17 17:54:35.0000000,2022-11-17 17:52:47.0000000,,,True,,2,,,False,True,False,,False,,1050bda0-a066-ed11-9562-00224828938f,7652696243,1,,,,,2,,Call to 7652696243,4,,7474854
+phonecall,2022-11-17 17:40:51.0000000,,,"11/17/2022 i already spoke to him about his appointment. 
+",True,2022-11-10 16:00:00.0000000,1,,,False,True,False,,False,,4fc048ab-035f-ed11-9562-0022482605f4,,1,,0,,2022-11-10 16:00:00.0000000,2,,Ivan Muebleria - Phone Call,4,,7474503
+phonecall,2022-11-14 00:00:00.0000000,2022-11-14 22:13:47.0000000,,,True,,1,,,False,True,False,,False,,2caae197-6964-ed11-9562-00224828938f,3177246259,1,,,,,2,,Call to 3177246259,4,,7442144
+phonecall,2022-11-14 00:00:00.0000000,2022-11-14 22:11:02.0000000,,,True,,1,,,False,True,False,,False,,b1d23237-6964-ed11-9562-0022482605f4,3174572434,1,,,,,2,,Call to 3174572434,4,,7442059
+phonecall,2022-11-14 21:12:22.0000000,2022-11-14 20:54:18.0000000,,,False,,19,,,False,True,False,,False,,b501417f-5e64-ed11-9562-0022482605f4,+1 3173326739,1,,,,,2,,Call from Rony,8,,7441498
+phonecall,2022-11-14 00:00:00.0000000,2022-11-14 16:48:09.0000000,,,True,,1,,,False,True,False,,False,,e1216a1c-3c64-ed11-9562-0022482605f4,7654262888,1,,,,,2,,Call to 7654262888,4,,7439022
+phonecall,2022-11-14 16:09:19.0000000,2022-11-14 16:09:08.0000000,,Did not answer and voicemail was not set up ,True,,1,,,False,True,False,,False,,387f17a6-3664-ed11-9562-0022482605f4,,1,,,,,2,,Called to see if they are wanting to cancel,4,,7438538
+phonecall,2022-11-13 19:39:47.0000000,2022-11-13 19:39:35.0000000,,"Client called this morning asking if his plates were in. After speaking with Cody due to holiday he think they will arrive by 11/17/22. 
+
+Called client back but did not answer. ",True,,1,,,False,True,False,,False,,cb4116e0-8a63-ed11-9562-0022482605f4,+1 3174802101,1,,,,,2,,Call to 3174802101,4,,7429229
+phonecall,2022-11-12 20:40:27.0000000,2022-11-12 20:37:41.0000000,,"Client called stating he did an envio yesterday and the money is not able to pick up. He wants to know what he can do to correct it. 
+Sent to Nicaragua ",False,,3,,,False,True,False,,False,,04b066d9-c962-ed11-9562-00224828938f,+1 5139973860,1,,,,,2,,Envio Coreection,4,,7409853
+phonecall,2022-11-12 07:30:19.0000000,,,"Gave his work a call (Garcias remodeling ) no answer. Then gave both of these two numbers listed a call but no answer , so i did leaqve a voicemail on all 3. 
+11/11/2022  - Gave him a call again no answer on both numbers .
+Then gave Garcia Remodeling a phone call and he was mad because he wanted to know reason why we was looking for him, told him it was regarding a loan , employer stated he was going to speak to ricardo and try to get him to give us a call back. Employer was not happy that we kept bothering him. 
+",True,,30,,,False,True,False,,False,,f4cf28b4-cf53-ed11-bba3-00224828938f,"317-746-1134 , 317-687-8807",1,,,,,2,,Past Due Loan Ricardo Rubicel,8,,7355905
+phonecall,2022-11-12 07:27:09.0000000,2022-10-31 18:21:40.0000000,,,True,,,,,False,True,False,,False,,2a3a6fef-4859-ed11-9562-00224828938f,13179187281,1,,,,,2,,Call to Jesus Lopez Isaura,8,,7355878
+phonecall,2022-11-11 19:02:32.0000000,2022-11-11 19:00:49.0000000,,,True,,2,,,False,True,False,,False,,8e38951f-f361-ed11-9562-0022482605f4,+1 3173621044,1,,,,,2,,Call to Elia Zapata Perez,8,,7324176
+phonecall,2022-11-11 18:38:47.0000000,2022-11-11 18:37:40.0000000,,Client stated she already went to pay the returned checks.  That she had the receipts. ,True,,2,,,False,True,False,,False,,c39acaea-ef61-ed11-9562-00224828938f,+1 3173621044,1,,,,,2,,Call to 3173621044,4,,7323952
+phonecall,2022-11-11 18:37:00.0000000,2022-11-11 18:36:33.0000000,,,True,,1,,,False,True,False,,False,,1e564abe-ef61-ed11-9562-00224828938f,1+ 3173621044,1,,,,,2,,Call to 3173621044,4,,7323892
+phonecall,2022-11-11 00:00:00.0000000,2022-11-11 16:41:38.0000000,,,False,,1,,,False,True,False,,False,,ef043db3-df61-ed11-9562-00224828938f,,1,,,,,2,,Call from Unknown,4,,7313790
+phonecall,2022-11-11 15:51:08.0000000,2022-11-11 15:49:55.0000000,,called didnt answer ,True,,2,,,False,True,False,,False,,aac8677c-d861-ed11-9562-00224828938f,+1 712516718,1,,,,,2,,Call to +1 7122516718,4,,7313261
+phonecall,2022-11-06 20:47:07.0000000,2022-11-06 20:45:52.0000000,,,True,,2,,,False,True,False,,False,,fe238ddf-0a5e-ed11-9562-00224828938f,+1 3157751669,1,,,,,2,,call,0,,7312981
+phonecall,2022-11-10 00:00:00.0000000,2022-11-10 23:18:39.0000000,,,False,,1,,,False,True,False,,False,,4595d6fd-4d61-ed11-9562-0022482605f4,,1,,,,,2,,Call from Unknown,4,,7259453
+phonecall,2022-11-10 23:01:03.0000000,2022-11-10 22:34:16.0000000,,,True,,27,,,False,True,False,,False,,2cf0c1cc-4761-ed11-9562-0022482605f4,+1 3177376277,1,,,,,2,,Call to Luis Alvarenga Garcia,8,,7258931
+phonecall,2022-11-10 21:06:57.0000000,2022-11-10 21:06:47.0000000,,,True,,1,,,False,True,False,,False,,9366cc95-3b61-ed11-9562-0022482605f4,+1 3175239598,1,,,,,2,,Call to Indy Taping and Drywall LLC,8,,7257686
+phonecall,2022-11-10 19:04:22.0000000,2022-11-10 19:02:16.0000000,,Called bout plate. advised only 11 days but I would check and let him know if it had arrived. ,False,,3,,,False,True,False,,False,,a753c731-2a61-ed11-9562-0022482605f4,,1,,,,,4,,Call from Unknown,8,,7256310
+phonecall,2022-11-10 18:31:29.0000000,2022-11-10 18:28:43.0000000,,,False,,3,,,False,True,False,,False,,059f0d81-2561-ed11-9562-0022482605f4,+1 2702314460,1,,,,,2,,Call from Unknown,8,,7255306
+phonecall,2022-11-10 00:00:00.0000000,2022-11-10 17:59:09.0000000,,,False,,3,,,False,True,False,,False,,843bf85b-2161-ed11-9562-0022482605f4,,1,,,,,2,,Call from Unknown,4,,7255120
+phonecall,2022-11-10 05:00:00.0000000,2022-11-10 18:01:42.0000000,,,False,,1,,,False,True,False,,False,,a66ac4b7-2161-ed11-9562-0022482605f4,anonymous,1,,,,,2,,Call from anonymous,8,,7254899
+phonecall,2022-11-07 05:00:00.0000000,2022-11-08 00:31:17.0000000,,,True,,2,,,False,True,False,,False,,670eb9a5-fc5e-ed11-9562-00224828938f,+1 3177896362,1,,,,,2,,Call to Ramon Valverde Agama,8,,7220167
+phonecall,2022-11-08 00:22:23.0000000,2022-11-08 00:21:42.0000000,,,True,,1,,,False,True,False,,False,,e2704a4e-fb5e-ed11-9562-00224828938f,+1 3175155308,1,,,,,2,,Call to Blanca Valverde (Roman),8,,7219645
+phonecall,2022-11-07 23:43:40.0000000,2022-11-07 23:40:54.0000000,,"Called about the loan for the person, advised he has 4000.00 to give the person $1000.00",False,,1,,,False,True,False,,False,,635b979a-f55e-ed11-9562-0022482b27f1,+1 3173326739,1,,,,,2,,Call from Bless Me LLC,8,,7219205
+phonecall,2022-11-07 23:26:45.0000000,2022-11-07 23:08:12.0000000,,"The called to ask to assist in doing her annual taxes, but they do not match what was reported to INTIME. I will review and advise later, but if the client is trying to commit fraud, I will not complete her taxes. ",True,,19,,,False,True,False,,False,,43492008-f15e-ed11-9562-00224828938f,+1 3177246259,1,,,,,2,,Call to +1 3177246259,8,,7219038
+phonecall,2022-11-07 05:00:00.0000000,2022-11-07 23:03:28.0000000,,,True,,1,,,False,True,False,,False,,9acf875f-f05e-ed11-9562-00224828938f,+1 3177246259,1,,,,,2,,Call to +1 3177246259,8,,7218596
+phonecall,2022-11-07 05:00:00.0000000,2022-11-07 23:04:00.0000000,,,True,,1,,,False,True,False,,False,,64389971-f05e-ed11-9562-00224828938f,+1 3177246259,1,,,,,2,,Call to +1 3177246259,8,,7218591
+phonecall,2022-11-07 22:53:58.0000000,2022-11-07 22:53:46.0000000,,Called to review this loan the client wants me to provide to one of his employee. Client had not spoken to me yet and the person is already in my office. This is not acceptable. ,True,,1,,,False,True,False,,False,,074f3206-ef5e-ed11-9562-00224828938f,+1 3173326739,1,,,,,2,,Call to Bless Me LLC,8,,7218353
+phonecall,2022-11-07 00:00:00.0000000,2022-11-07 21:43:58.0000000,,,True,,1,,,False,True,False,,False,,a6b7eb45-e55e-ed11-9562-0022482605f4,6787905355,1,,,,,2,,Call to 6787905355,4,,7217794
+phonecall,2022-11-07 00:00:00.0000000,2022-11-07 21:32:12.0000000,,,True,,1,,,False,True,False,,False,,2120149e-e35e-ed11-9562-0022482605f4,+1 3177661901,1,,,,,2,,Call to Cody Rice-Velasquez,4,,7217637
+phonecall,2022-11-07 00:00:00.0000000,2022-11-07 21:35:48.0000000,,,False,,5,,,False,True,False,,False,,6fe5031e-e45e-ed11-9562-0022482605f4,,1,,,,,2,,Call from Unknown,4,,7217630
+phonecall,2022-11-07 21:34:25.0000000,2022-11-07 07:40:34.0000000,,,True,,,,,False,True,False,,False,,c7d2bf72-6f5e-ed11-9562-00224828938f,13177661901,1,,,,,2,,Call to 13177661901,4,,7217386
+phonecall,2022-11-07 00:00:00.0000000,2022-11-07 16:41:11.0000000,,,True,,2,,,False,True,False,,False,,07e849f9-ba5e-ed11-9562-00224828938f,+1 3174319702,1,,,,,2,,Call to Jesús Adrián transportation LLC,4,,7214259
+phonecall,2022-11-06 00:00:00.0000000,2022-11-06 21:44:43.0000000,,,False,,2,,,False,True,False,,False,,433a5c33-1c5e-ed11-9562-0022482605f4,,1,,,,,2,,Call from Unknown,4,,7189655
+phonecall,2022-11-05 00:00:00.0000000,2022-11-05 15:50:02.0000000,,,True,,1,,,False,True,False,,False,,191d1981-215d-ed11-9562-0022482605f4,7652424198,1,,,,,2,,Call to 7652424198,4,,7149994
+phonecall,2022-11-05 00:00:00.0000000,2022-11-05 16:00:38.0000000,,,True,,1,,,False,True,False,,False,,00aa1dfa-225d-ed11-9562-0022482605f4,3173326739,1,,,,,2,,Call to 3173326739,4,,7149989
+phonecall,2022-11-05 00:00:00.0000000,2022-11-05 16:01:44.0000000,,,True,,1,,,False,True,False,,False,,622de91f-235d-ed11-9562-0022482605f4,3173326739,1,,,,,2,,Call to 3173326739,4,,7149984
+phonecall,2022-10-28 00:12:32.0000000,,,No answer,True,,1,,,False,True,False,,False,,4d85d79f-5456-ed11-bba3-0022482605f4,,1,,,,,2,,Return Check Alexander Audio,8,,7058350
+phonecall,2022-11-04 23:37:20.0000000,2022-11-04 23:37:06.0000000,,,True,,1,,,False,True,False,,False,,44d39077-905c-ed11-9562-00224828938f,+1 3179701915,1,,,,,2,,Call to +1 3179701915,0,,7058211
+phonecall,2022-11-05 00:07:55.0000000,2022-11-05 00:06:53.0000000,,LMTC,True,,1,,,False,True,False,,False,,89df9cbc-9d5c-ed11-9562-0022482605f4,+1 3175155308,1,,,,,2,,Call to Rays Construction LLC,8,,7056895
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 17:09:24.0000000,,,True,,1,,,False,True,False,,False,,db845a6e-635c-ed11-9562-0022482605f4,7122516718,1,,,,,2,,Call to 7122516718,4,,7053467
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 17:00:02.0000000,,,True,,1,,,False,True,False,,False,,efefdd1c-625c-ed11-9562-0022482605f4,7653372230,1,,,,,2,,Call to 7653372230,4,,7053335
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 17:01:49.0000000,,,True,,1,,,False,True,False,,False,,5a3bb85c-625c-ed11-9562-0022482605f4,7653726765,1,,,,,2,,Call to 7653726765,4,,7053330
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 17:05:29.0000000,,,True,,2,,,False,True,False,,False,,fd015de0-625c-ed11-9562-0022482605f4,7653260341,1,,,,,2,,Call to 7653260341,4,,7053325
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 16:47:04.0000000,,,True,,1,,,False,True,False,,False,,8301064a-605c-ed11-9562-0022482605f4,3177461134,1,,,,,2,,Call to 3177461134,4,,7043820
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 16:47:55.0000000,,,True,,2,,,False,True,False,,False,,bf81a469-605c-ed11-9562-0022482605f4, (317) 457-6202,1,,,,,2,,Call to  (317) 457-6202,4,,7043815
+phonecall,2022-11-04 00:00:00.0000000,2022-11-04 16:42:14.0000000,,,True,,1,,,False,True,False,,False,,2a82669f-5f5c-ed11-9562-0022482605f4,3177461134,1,,,,,2,,Call to 3177461134,4,,7043743
+phonecall,2022-11-03 04:00:00.0000000,2022-11-03 21:42:53.0000000,,,True,,1,,,False,True,False,,False,,804f0171-c05b-ed11-9562-0022482605f4,+1 3177661901,1,,,,,2,,Call to +1 3177661901,8,,6899086
+phonecall,2022-11-03 21:41:57.0000000,2022-11-03 21:41:35.0000000,,,True,,1,,,False,True,False,,False,,74362246-c05b-ed11-9562-0022482605f4,+1 3176528544,1,,,,,2,,Call to Angela Martinez,8,,6898926
+phonecall,2022-11-03 21:41:27.0000000,2022-11-03 21:41:16.0000000,,,True,,1,,,False,True,False,,False,,30c1b039-c05b-ed11-9562-0022482605f4,3176528544,1,,,,,2,,Call to Angela Martinez,8,,6898923
+phonecall,2022-11-03 21:34:30.0000000,2022-11-03 21:34:09.0000000,,,True,,1,,,False,True,False,,False,,f3b27a39-bf5b-ed11-9562-0022482605f4,+1 3176528389,1,,,,,2,,Call to Angela Martinez,8,,6898856
+phonecall,2022-11-03 21:24:29.0000000,2022-11-03 21:23:22.0000000,,,True,,2,,,False,True,False,,False,,084ea4bd-bd5b-ed11-9562-0022482605f4,+1 3176528389,1,,,,,2,,"Call to Food Produce Service (FPS, LLP)",8,,6898664
+phonecall,2022-11-03 00:00:00.0000000,2022-11-03 20:32:49.0000000,,,True,,1,,,False,True,False,,False,,6e0139a9-b65b-ed11-9562-00224828938f,7655430454,1,,,,,2,,Call to 7655430454,4,,6897827
+phonecall,2022-11-01 20:07:23.0000000,2022-11-01 20:07:12.0000000,,"Called client to follow up on new vehicle purchase, client did not answer. Will close out Teams task and send follow up message on teams. ",True,,1,,,False,True,False,,False,,397a7cc5-205a-ed11-9562-0022482605f4,3173326739,1,,,,,2,,Call to 3173326739,8,,6847258
+phonecall,2022-11-01 00:00:00.0000000,2022-11-01 15:48:52.0000000,,,True,,1,,,False,True,False,,False,,47aab2a8-fc59-ed11-9562-00224828938f,3176585524,1,,,,,2,,Call to 3176585524,4,,6845191
+phonecall,2022-11-01 00:00:00.0000000,2022-11-01 15:51:36.0000000,,,True,,1,,,False,True,False,,False,,bbae580b-fd59-ed11-9562-00224828938f,3177461384,1,,,,,2,,Call to 3177461384,4,,6845186
+phonecall,2022-11-01 00:00:00.0000000,2022-11-01 15:53:07.0000000,,,True,,1,,,False,True,False,,False,,920d2f42-fd59-ed11-9562-00224828938f,3176294222,1,,,,,2,,Call to 3176294222,4,,6845179
+phonecall,2022-11-01 00:00:00.0000000,2022-11-01 15:54:57.0000000,,,True,,1,,,False,True,False,,False,,91605984-fd59-ed11-9562-00224828938f,7654214701,1,,,,,2,,Call to 7654214701,4,,6845174
+phonecall,2022-10-31 00:00:00.0000000,2022-10-31 18:31:35.0000000,,,True,,1,,,False,True,False,,False,,b3b78f50-4a59-ed11-9562-00224828938f,(317) 749-5310,1,,,,,2,,Call to Jefrin Antonio Granado Castro,4,,6832909
+phonecall,2022-10-31 04:00:00.0000000,2022-10-31 08:44:37.0000000,,,True,,1,,,False,True,False,,False,,135b323f-f858-ed11-9562-0022482605f4,3177661901,1,,,,,2,,Call to 3177661901,8,,6825914
+phonecall,2022-10-31 04:00:00.0000000,2022-10-31 04:02:43.0000000,,,True,,1,,,False,True,False,,False,,a64d2bdc-d058-ed11-9562-0022482605f4,3177661901,1,,,,,2,,Call to 3177661901,8,,6805145
+phonecall,2022-10-30 00:00:00.0000000,2022-10-30 15:28:25.0000000,,,True,,1,,,False,True,False,,False,,0a0cb77e-6758-ed11-9562-0022482605f4,4632378930,1,,,,,2,,Call to Zeferino Morales,4,,6788924
+phonecall,2022-10-30 15:36:31.0000000,,,You received a voice mail from WIRELESS CALLER.,True,2022-10-30 15:00:00.0000000,30,,,False,True,False,,False,,33b61462-6358-ed11-9562-00224828938f,12035016551,1,,0,,2022-10-30 15:00:00.0000000,2,,Shared Voicemail (SRV Main Line Attendant),8,,6788869
+phonecall,2022-10-30 15:17:18.0000000,2022-10-30 15:17:09.0000000,,,True,,1,,,False,True,False,,False,,4623e9e8-6558-ed11-9562-00224828938f,12035016551,1,,,,,2,,Call to Nery Montes,4,,6788752
+phonecall,2022-10-30 04:00:00.0000000,2022-10-30 15:11:27.0000000,,,True,,1,,,False,True,False,,False,,3ecfa41f-6558-ed11-9562-00224828938f,3177661901,1,,,,,2,,Call to 3177661901,8,,6788655
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 23:43:28.0000000,,,True,,1,,,False,True,False,,False,,d7ff7a7b-e357-ed11-bba3-00224828938f,3179705359,1,,,,,2,,Call to +3179705359,8,,6737383
+phonecall,2022-10-29 23:51:58.0000000,2022-10-29 23:51:47.0000000,,,True,,1,,,False,True,False,,False,,c318a9a3-e457-ed11-bba3-00224828938f,3179705369,1,,,,,2,,Call to 3179705369,8,,6737321
+phonecall,2022-10-29 23:45:35.0000000,2022-10-29 23:44:11.0000000,,Called to confirm payment with the client. ,True,,2,,,False,True,False,,False,,66c47893-e357-ed11-bba3-00224828938f,3179705369,1,,,,,2,,Call to 3179705369,8,,6737220
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 17:20:59.0000000,,,True,,1,,,False,True,False,,False,,be28a90c-ae57-ed11-bba3-00224828938f,3173326739,1,,,,,2,,Call to 3173326739,8,,6733838
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 17:21:43.0000000,,,True,,1,,,False,True,False,,False,,f51d0524-ae57-ed11-bba3-00224828938f,3173326739,1,,,,,2,,Call to 3173326739,8,,6733832
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 17:24:12.0000000,,,True,,1,,,False,True,False,,False,,2d824b7f-ae57-ed11-bba3-00224828938f,3173326739,1,,,,,2,,Call to 3173326739,8,,6733826
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 17:25:00.0000000,,,True,,2,,,False,True,False,,False,,f469289c-ae57-ed11-bba3-00224828938f,3177240057,1,,,,,2,,Call to 3177240057,8,,6733820
+phonecall,2022-10-29 04:00:00.0000000,2022-10-29 17:27:57.0000000,,,True,,1,,,False,True,False,,False,,3bef8300-af57-ed11-bba3-00224828938f,+1 3177240057,1,,,,,2,,Call to Gustavo Cruz Vazquez,8,,6733815
+phonecall,2022-10-29 17:32:23.0000000,2022-10-29 17:28:36.0000000,,,True,,4,,,False,True,False,,False,,71e79819-af57-ed11-bba3-00224828938f,3173326739,1,,,,,2,,Call to 3173326739,8,,6733698
+phonecall,2022-10-29 14:16:25.0000000,2022-10-29 14:14:55.0000000,,,True,,,,,False,True,False,,False,,6a36d50e-9457-ed11-bba3-00224828938f,5833655641,1,,,,,2,,Call to 5833655641,4,,6729447
+phonecall,2022-10-29 03:59:25.0000000,,,"Gave them a call to ask for EIN , bank info, drop of reciepts , mother full name , and documents for business need by friday. 
+
+They said they would gather all the information and give me a call to give us the details.  ",True,,30,,,False,True,False,,False,,4b71ef21-cd53-ed11-bba3-00224828938f,765-650-8240,1,,,,,2,,Gather info,8,,6724452
+phonecall,2022-10-28 00:00:00.0000000,2022-10-28 22:09:39.0000000,,,False,,2,,,False,True,False,,False,,da1f3131-0d57-ed11-bba3-00224828938f,,1,,,,,2,,Call from Unknown,4,,6720968
+phonecall,2022-10-28 04:00:00.0000000,2022-10-28 18:47:54.0000000,,,False,,3,,,False,True,False,,False,,51c33903-f156-ed11-bba3-00224828938f,,1,,,,,2,,Call from Unknown,8,,6719230
+phonecall,2022-10-28 00:00:00.0000000,2022-10-28 17:27:53.0000000,,,False,,5,,,False,True,False,,False,,b1467dd5-e556-ed11-bba3-00224828938f,,1,,,,,2,,Call from Unknown,4,,6718508
+phonecall,2022-10-27 04:00:00.0000000,2022-10-28 00:16:06.0000000,,,True,,1,,,False,True,False,,False,,2fb4a5b3-5556-ed11-bba3-0022482605f4,(317) 746-1134,1,,,,,2,,Call to (317) 746-1134,8,,6704781
+phonecall,2022-10-28 00:17:40.0000000,,,,True,,30,,,False,True,False,,False,,e603acda-5556-ed11-bba3-0022482605f4,3177461134,1,,,,,2,,Follow up call,8,,6704561
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 23:11:03.0000000,,,True,,1,,,False,True,False,,False,,e6c2629f-4c56-ed11-bba3-0022482605f4,3177461134,1,,,,,2,,Call to 3177461134,8,,6702977
+phonecall,2022-10-27 23:15:03.0000000,,,,True,,30,,,False,True,False,,False,,3452cc00-4d56-ed11-bba3-0022482605f4,,1,,,,,2,,Past Due Reminder,8,,6702898
+phonecall,2022-10-27 23:10:44.0000000,,,Called no answer left a voicemail,True,,30,,,False,True,False,,False,,de1a757e-fe52-ed11-bba3-0022482605f4,317-746-1134,1,,,,,2,,Reminder past due loan,8,,6702873
+phonecall,2022-10-27 00:00:00.0000000,2022-10-27 21:58:38.0000000,,,False,,1,,,False,True,False,,False,,ad73a77d-4256-ed11-bba3-0022482605f4,,1,,,,,2,,Call from Unknown,4,,6701881
+phonecall,2022-10-27 20:05:45.0000000,2022-10-27 20:03:16.0000000,,,True,,3,,,False,True,False,,False,,31cd8763-3256-ed11-bba3-0022482605f4,8125301360,1,,,,,2,,Call to 8125301360,4,,6700125
+phonecall,2022-10-27 20:30:34.0000000,2022-10-27 20:29:32.0000000,,,True,,2,,,False,True,False,,False,,3622a70f-3656-ed11-bba3-0022482605f4,13175133278,1,,,,,2,,Call to Javier Jimenez Onofre,4,,6700074
+phonecall,2022-10-27 00:00:00.0000000,2022-10-27 19:53:46.0000000,,,False,,3,,,False,True,False,,False,,e8b1300c-3156-ed11-bba3-0022482605f4,,1,,,,,2,,Call from Unknown,4,,6699549
+phonecall,2022-10-27 20:06:50.0000000,,,Called client to notify him the envio was ready for pick up.,True,,1,,,False,True,False,,False,,6f49d7ac-c050-ed11-bba1-00224828938f,7654260517,1,,,,,2,,Envio,4,,6699321
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 19:29:12.0000000,,,True,,1,,,False,True,False,,False,,7769859d-2d56-ed11-bba3-0022482605f4,3176468017,1,,,,,2,,Call to Sun-Ray Foundation LLC,8,,6698881
+phonecall,2022-10-27 19:35:06.0000000,2022-10-27 19:29:53.0000000,,Called to get credentials for bank account spoke with Lexy and got account access. ,True,,6,,,False,True,False,,False,,2f3763b9-2d56-ed11-bba3-0022482605f4,3176468017,1,,,,,2,,Call to 3176468017,8,,6698853
+phonecall,2022-10-27 19:25:35.0000000,2022-10-27 19:24:20.0000000,,"Inquired on if we can help with plates etc for venezuela, confirmed.",False,,1,,,False,True,False,,False,,ec8f35f3-2c56-ed11-bba3-0022482605f4,13174133088,1,,,,,2,,Call from Luis de Huntington,8,,6698638
+phonecall,2022-10-27 19:16:42.0000000,2022-10-27 19:14:16.0000000,,,False,,3,,,False,True,False,,False,,3885c78a-2b56-ed11-bba3-0022482605f4,17652507946,1,,,,,2,,Call from +17652507946,8,,6698499
+phonecall,2022-10-27 18:40:13.0000000,2022-10-27 18:39:15.0000000,,Client cashed a bad check and owed us $939. Due ASAP.,True,,1,,,False,True,False,,False,,888df5a8-2656-ed11-bba3-0022482605f4,7122516718,1,,,,,2,,Call to 7122516718,8,,6697910
+phonecall,2022-10-27 18:11:55.0000000,2022-10-27 18:10:44.0000000,,,False,,2,,,False,True,False,,False,,e52c89a7-2256-ed11-bba3-0022482605f4,,1,,,,,2,,Teams call from Arleth Gonzalez,8,,6697462
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 18:05:28.0000000,,,True,,1,,,False,True,False,,False,,be89f3ed-2156-ed11-bba3-0022482605f4,3177965243,1,,,,,2,,Call to Muebleria Dulce Hogar LLC,8,,6697384
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 18:10:34.0000000,,,False,,1,,,False,True,False,,False,,93c47da1-2256-ed11-bba3-0022482605f4,,1,,,,,2,,Teams call from Arleth Gonzalez,8,,6697370
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 18:01:02.0000000,,,True,,1,,,False,True,False,,False,,a247f84d-2156-ed11-bba3-0022482605f4,3177965243,1,,,,,2,,Call to Muebleria Dulce Hogar LLC,8,,6697254
+phonecall,2022-10-27 04:00:00.0000000,2022-10-27 17:31:39.0000000,,,False,,3,,,False,True,False,,False,,b26a1c31-1d56-ed11-bba3-0022482605f4,15853655641,1,,,,,2,,Call from Angel Farias Romano,8,,6696718
+phonecall,2022-10-27 17:22:19.0000000,2022-10-27 17:17:48.0000000,,Cita de consulado,False,,5,,,False,True,False,,False,,6d992a43-1b56-ed11-bba3-0022482605f4,5853655641,1,,,,,2,,Call From Angel Farias,8,,6696518
+phonecall,2022-10-27 16:56:45.0000000,2022-10-27 16:50:08.0000000,,,False,,7,,,False,True,False,,False,,172bee67-1756-ed11-bba3-0022482605f4,,1,,,,,4,,Call from Unknown,8,,6695791
+phonecall,2022-10-27 16:39:19.0000000,2022-10-27 16:31:03.0000000,,,True,,9,,,False,True,False,,False,,daeaa3bc-1456-ed11-bba3-0022482605f4,3173324535,1,,,,,2,,Call to 3173324535,8,,6695362
+phonecall,2022-10-27 16:29:06.0000000,2022-10-27 16:26:30.0000000,,,False,,3,,,False,True,False,,False,,01389a1b-1456-ed11-bba3-0022482605f4,,1,,,,,4,,Teams call from Arleth Gonzalez,8,,6695082
+phonecall,2022-10-27 16:14:01.0000000,2022-10-27 16:12:43.0000000,,,False,,2,,,False,True,False,,False,,6bc22d2f-1256-ed11-bba3-00224828938f,3177661901,1,,,,,4,,Call from Unknown,4,,6694693
+phonecall,2022-10-27 16:08:38.0000000,2022-10-27 16:05:21.0000000,,,False,,4,,,False,True,False,,False,,073c9f25-1156-ed11-bba3-0022482605f4,,1,,,,,2,,Call from Unknown,4,,6693933
+phonecall,2022-10-27 16:03:51.0000000,2022-10-27 16:03:25.0000000,,,True,,1,,,False,True,False,,False,,f682d5df-1056-ed11-bba3-0022482605f4,3177661901,1,,,,,2,,Call to Cody Rice-Velasquez,4,,6693890
+phonecall,2022-10-26 07:21:43.0000000,2022-10-26 07:21:22.0000000,,testing,True,,1,,,False,True,False,,False,,0edbfbc6-fe54-ed11-bba3-0022482605f4,3177661901,1,,,,,2,,Call to 3177661901,8,,6676493
+phonecall,2022-10-25 16:59:21.0000000,,,"Client received a rejection letter for ITIN, I reviewed the application and everything looks fine, client is going to send to our email the letter in better qualify. I will need to email the ITIN office to verify. ",False,,15,,,False,True,False,,False,,e2113cfd-6751-ed11-bba1-00224828938f,,0,,,,,2,,ITIN Rejection,8,,6627737
+phonecall,2022-10-20 04:34:49.0000000,,,,False,,15,,,False,True,False,,False,,3021a0fc-0250-ed11-bba1-0022482605f4,,1,,,,,2,,Phone Call,8,,4968655
+phonecall,2022-10-18 15:45:01.0000000,2022-10-18 15:44:27.0000000,,Testing the call,True,,1,,,False,True,False,,False,,31077ebb-fb4e-ed11-bba1-00224828938f,3177661901,1,,,,,2,,Testing calling feature,8,,4286331
+phonecall,2022-10-17 22:48:39.0000000,,,Did not receive text messages,True,,1,,,False,True,False,,False,,c02918c8-6d4e-ed11-bba1-0022482605f4,9347771688,1,,,,,2,,Follow-up,8,,3828027

@@ -4,25 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5479f061d8bc7e44",
+        "id": "f0e5da678f69d0e4",
         "type": "tabs",
         "children": [
           {
-            "id": "aa3d0bf99a7b6aca",
+            "id": "49c61a034112ae46",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "41_QiLabs/10_qispark/10_QiSpark/10_QiOS/90_Templates/_1.30_Templates.md",
-                "mode": "preview",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "_1.30_Templates"
+              "type": "vault-timeline-view",
+              "state": {},
+              "icon": "calendar-clock",
+              "title": "Vault Timeline"
             }
           }
-        ],
-        "stacked": true
+        ]
       }
     ],
     "direction": "vertical"
@@ -54,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#moc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,27 +59,52 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "0c7b3e67efb3ff79",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 250.51103591918945
+    "width": 340.5
   },
   "right": {
     "id": "a97d5932031af1ea",
     "type": "split",
     "children": [
       {
-        "id": "96da5e83d906ab0f",
+        "id": "a2ba06ae1caaa47b",
         "type": "tabs",
         "children": [
           {
-            "id": "5549faba865dc6a2",
+            "id": "2af2b2a61f614763",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "220912108e19682a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "_qiconfig/Templates 1/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,24 +114,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for _index"
             }
           },
           {
-            "id": "e87b900b33456ea3",
+            "id": "11c10bc868ae5e41",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "_qiconfig/Templates 1/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from _index"
             }
           },
           {
-            "id": "c5d9d47d3d66a712",
+            "id": "dd5866ab90413d32",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -126,131 +147,26 @@
             }
           },
           {
-            "id": "d6507d6c60eb1c20",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "14c5b4248b0d37ac",
+            "id": "872b2d6059761c51",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "_qiconfig/Templates 1/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
-            }
-          },
-          {
-            "id": "907a1f77d87144ff",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "smart-connections",
-              "title": "Connections"
-            }
-          },
-          {
-            "id": "5442c49564862866",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
-            }
-          },
-          {
-            "id": "af6e57d5f2ffc3e5",
-            "type": "leaf",
-            "state": {
-              "type": "semantic-auto-linker-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "semantic-auto-linker-view"
-            }
-          },
-          {
-            "id": "6e7ec38e8f188a48",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-visualizer",
-              "state": {},
-              "icon": "git-fork",
-              "title": "Smart connections visualizer"
-            }
-          },
-          {
-            "id": "226b5e8edf8073ce",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "master_template.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for master_template"
-            }
-          },
-          {
-            "id": "e8f73657c199641a",
-            "type": "leaf",
-            "state": {
-              "type": "tag-network-view",
-              "state": {},
-              "icon": "git-graph",
-              "title": "Tag Network Visualization"
-            }
-          },
-          {
-            "id": "da20b8adee659dbf",
-            "type": "leaf",
-            "state": {
-              "type": "reference-map-view",
-              "state": {},
-              "icon": "ReferenceMapIconScroll",
-              "title": "Reference Map"
-            }
-          },
-          {
-            "id": "505e384d1082c07f",
-            "type": "leaf",
-            "state": {
-              "type": "setup-view",
-              "state": {},
-              "icon": "cog",
-              "title": "Setup"
-            }
-          },
-          {
-            "id": "7c638a6c63337f07",
-            "type": "leaf",
-            "state": {
-              "type": "reference-map-view",
-              "state": {},
-              "icon": "ReferenceMapIconScroll",
-              "title": "Reference Map"
+              "title": "Outline of _index"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 350.5
+    "width": 401.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,7 +177,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "copilot:Open Copilot Chat": false,
       "obsidian-kanban:Create new board": false,
       "markwhen:Create new Markwhen file": false,
       "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false,
@@ -270,65 +185,72 @@
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
       "smart-connections:Smart Connections: Open random connection": false,
-      "tasks-map:Open tasks map view": false,
       "vault-timeline:Open Vault Timeline": false,
       "templater-obsidian:Templater": false,
-      "ai-tagger-universe:Analyze and tag current note": false,
-      "ai-tagger-universe:View tag relationships network": false,
-      "map-of-content:Update Map of Content": false,
       "smart-connections-visualizer:Open smart connections visualizer": false,
       "smart-second-brain:Open S2B Chat": false,
       "webpage-html-export:Export as HTML": false,
-      "reference-map:Reference Map": false
+      "smart-lookup:Smart Lookup: Open lookup view": false,
+      "code-space:Open code space dashboard": false
     }
   },
-  "active": "6eda121786a5714f",
+  "active": "49c61a034112ae46",
   "lastOpenFiles": [
-    "40_projects/Lisa_Care_Record_2026/tags.json",
-    "_qiconfig/TAG_REGISTRY_PATTERN.md",
-    "_qiconfig/templates/tags.folder-overlay.template.json",
-    "_qiconfig/templates",
-    "_qiconfig/New folder",
-    "_qiconfig/tags.folder-overlay.template.json",
-    "40_projects/Lisa_Care_Record_2026/tags.lisa-care-record.overlay.json",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/lisa_care_timeline_spine_merged_2026-07-02.csv",
-    "40_projects/Lisa_Care_Record_2026/10_EXHIBITS/C_caregiving_labor/E-TBD-COUCH-001-couch-purchase-pickup.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-021-populated-mvp-csv.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-020-simplified-mvp-spreadsheet.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-019-google-sheet-spine-decision.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-018-folder-tree-duplication.md",
-    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-017-care-case-docs-generated.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS/drafts_not_sent/E-2026-06-30-016-aps-draft-not-sent.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS/drafts_not_sent",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 05_REPORTS_AND_STATEMENTS",
-    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-015-professional-type-wording.md",
-    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-014-reporter-confidentiality.md",
-    "40_projects/Lisa_Care_Record_2026/01_FORMAL_RECORD/E-2026-06-30-013-aps-reporting-lane.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE/E-2026-06-30-012-otis-housing-theory.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS/06_third_party_pressure.md/E-2026-06-30-011-otis-safety-context.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS/06_third_party_pressure.md",
-    "40_projects/Lisa_Care_Record_2026/02_TIMELINE and 04_TOPIC_BRIEFS",
-    "40_projects/Lisa_Care_Record_2026/08_THIRD_PARTY_PRESSURE/E-2026-06-30-010-otis-on-lease.md",
-    "40_projects/Lisa_Care_Record_2026/10_EXHIBITS/G_access_and_door_events/E-2026-06-30-009-frank-social-workers-access.md",
-    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-008-cat-accusation.md",
-    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-007-cops-following-message.md",
-    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-006-cat-to-jeep-pivot.md",
-    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-005-cody-cat-response.md",
-    "40_projects/Lisa_Care_Record_2026/03_COMMUNICATIONS/E-2026-06-30-004-police-threat-cat.md",
-    "40_projects/Lisa_Care_Record_2026/99_EVIDENCE_RAW/E-2026-06-30-003-cat-food-water-question.md",
-    "40_projects/Lisa_Care_Record_2026/99_EVIDENCE_RAW/E-2026-06-30-002-lisa-asks-cat.md",
-    "40_projects/Lisa_Care_Record_2026/09_SYSTEM_FAILURES/E-2026-06-30-001-mr-link-fed-before-leaving.md",
-    "40_projects/Lisa_Care_Record_2026/06_CAREGIVING_WORK/E-2026-06-28-003-financial-loss-expansion.md",
-    "_qiconfig/scripts/one_time_archived/qicode_root_manifest.csv",
-    "10_qispark/90_ARCH/legacy/qios_00_genesis.canvas",
-    "10_qispark/90_ARCH/legacy/qios_runtime_mindmap.canvas",
-    "Untitled.canvas",
-    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
-    "20_qispark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
-    "systemic_patterns_infographic.png",
-    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
-    "10_QiSpark/90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas",
-    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_runtime_mindmap.canvas",
-    "Cadence/Knowledge/10_QiSpark/1.90_ARCH/reports/superseeded/from_30_qiserver_legacy/legacy/qios_00_genesis.canvas"
+    "40_projects/jobs_apply_zai/_index.md",
+    "40_projects/jobs_apply_zai/02_open_jobs.md",
+    "40_projects/jobs_apply_zai/03_application_kit.md",
+    "40_projects/jobs_apply_zai/04_application_tracker.md",
+    "40_projects/jobs_apply_zai/05_interview_prep.md",
+    "40_projects/jobs_apply_zai/01_candidate_profile.md",
+    "40_projects/jobs_apply_zai/10_resume_and_identity/README.md",
+    "40_projects/jobs_apply_zai/20_submissions/README.md",
+    "40_projects/jobs_apply_zai/20_submissions/_submission_template.md",
+    "40_projects/jobs_apply_zai/30_interviews/README.md",
+    "40_projects/jobs_apply_zai/40_assessments/README.md",
+    "40_projects/jobs_apply_zai/50_offers_and_onboarding/README.md",
+    "40_projects/jobs_apply_zai/90_closed_and_archive/README.md",
+    "40_projects/jobs_apply_zai/90_closed_and_archive/_index.md",
+    "40_projects/jobs_apply_zai/50_offers_and_onboarding/_index.md",
+    "40_projects/_index.md",
+    "40_projects/jobs_apply_zai/00_ZAI_JOB_LAUNCH_BRIEFING.html",
+    "TaskNotes/_index.md",
+    "40_projects/jobs_apply_cody/_index.md",
+    "10_daily/_index.md",
+    "40_projects/jobs_apply_cody/05_interview_prep.md",
+    "40_projects/jobs_apply_cody/04_application_tracker.md",
+    "40_projects/jobs_apply_cody/03_application_kit.md",
+    "40_projects/jobs_apply_cody/02_open_jobs.md",
+    "40_projects/jobs_apply_cody/01_candidate_profile.md",
+    "10_daily/voice_notes/voice_notes.md",
+    "10_daily/voice_notes/_index.md",
+    "TaskNotes/Views/agenda-default.base",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/video",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/audio",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/vulnerability cascade",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/adhd manifestations",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse",
+    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html",
+    "40_projects/care_record_lisa/99_EVIDENCE_RAW/lisa A. English/health/Results/Screenshot 2026-05-22 at 12.57.25 PM.png",
+    "40_projects/care_record_lisa/moms care/image 1.png",
+    "40_projects/care_record_lisa/moms care/image.png",
+    "40_projects/care_record_lisa/moms care/image 2.png",
+    "30_empowerqnow713/20_Series/2026-07-02_the_burden_of_the_signal_showcase/media/hero.jpg",
+    "30_empowerqnow713/20_Series/90_source_work_public/signal-through-the-system (2).jpg",
+    "30_empowerqnow713/20_Series/90_source_work_public/signal in the system (2).png",
+    "30_empowerqnow713/20_Series/40_reflections_of_one/let god.png",
+    "30_empowerqnow713/20_Series/10_empqnow713/2026-07-02_the_burden_of_the_signal_showcase/media/hero.jpg",
+    "30_empowerqnow713/20_Series/Source Work/signal-through-the-system.jpg",
+    "30_empowerqnow713/90_archive/messy_imports/Untitled.canvas",
+    "30_empowerqnow713/Untitled.canvas",
+    "50_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_runtime_mindmap.canvas",
+    "50_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_00_genesis.canvas",
+    "50_QiLabs/10_Qispark/90_ARCH/legacy/qios_runtime_mindmap.canvas",
+    "50_QiLabs/10_Qispark/90_ARCH/legacy/qios_00_genesis.canvas",
+    "30_empqnow713/Untitled.canvas",
+    "00_home/QiLabs_Root_Canvas.canvas",
+    "41_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_runtime_mindmap.canvas",
+    "41_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_00_genesis.canvas"
   ]
 }

@@ -28,4 +28,4 @@ template_key: master-template
 ## Areas
 
 - [Beauty and health](./_Beauty-N-Health.md)
-- [Hair removal](Hair-Removal/_Hair-Removal.md)
+- [Hair removal](_Hair-Removal.md)

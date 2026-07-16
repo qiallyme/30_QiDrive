@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Work Summary - 2025-03-06
 slug: work-summary-2025-03-06
@@ -21,8 +21,8 @@ realm_label: ""
 uid: ""
 canonical_ref: ""
 template_key: master-template
+date: 2025-03-06
 ---
-
 # Work Summary - 2025-03-06
 
 Mood/Intention: Focused, Mindful, On a Mission

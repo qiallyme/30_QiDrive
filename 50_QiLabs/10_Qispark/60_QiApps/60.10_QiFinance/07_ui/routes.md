@@ -1,0 +1,46 @@
+---
+layout: page
+title: Routes
+slug: ""
+summary: ""
+status: publish
+created_at: ""
+updated_at: ""
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
+# Routes
+
+## MVP Routes
+
+```text
+/
+/dashboard
+/accounts
+/transactions
+/transactions/new
+/reports
+/settings
+```
+
+## Future Routes
+
+```text
+/imports
+/rules
+/receipts
+/mileage
+/taxes
+```

@@ -1,0 +1,19 @@
+{
+  "name": "interactive-timeline",
+  "version": "1.0.0",
+  "description": "Interactive timeline built from markdown files",
+  "scripts": {
+    "build": "python build.py",
+    "build:node": "node build-timeline.js",
+    "serve": "npx http-server dist -p 8000",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "timeline",
+    "markdown",
+    "obsidian"
+  ],
+  "author": "Cody J. Rice-Velasquez",
+  "license": "MIT"
+}
+

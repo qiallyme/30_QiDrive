@@ -1,12 +1,5 @@
 {
-  "theme": "obsidian",
+  "cssTheme": "",
   "accentColor": "",
-  "cssTheme": "Lucid",
-  "showRibbon": true,
-  "showViewHeader": false,
-  "interfaceFontFamily": "Inter",
-  "textFontFamily": "Calibri",
-  "monospaceFontFamily": "",
-  "baseFontSize": 20,
-  "baseFontSizeAction": true
+  "theme": "obsidian"
 }

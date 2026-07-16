@@ -2,7 +2,7 @@
 layout: page
 title: Git LFS Setup Guide
 slug: git-lfs-setup-guide
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

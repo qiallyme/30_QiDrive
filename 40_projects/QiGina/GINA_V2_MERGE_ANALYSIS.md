@@ -2,7 +2,7 @@
 layout: page
 title: G.I.N.A_v2 Merge Analysis & Integration Plan
 slug: g-i-n-a-v2-merge-analysis-integration-plan
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

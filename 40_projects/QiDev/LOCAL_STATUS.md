@@ -2,7 +2,7 @@
 layout: page
 title: Local Status & Control API
 slug: local-status-control-api
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

@@ -2,7 +2,7 @@
 layout: page
 title: QiOne — Supabase-Only (No Docker) Setup
 slug: qione-supabase-only-no-docker-setup
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

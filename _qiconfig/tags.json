@@ -50,7 +50,6 @@
     "system": [
       "#qilabs",
       "#system/qilabs",
-      "#system/qispark",
       "#system/qiserver",
       "#system/qivault",
       "#system/qiapps",
@@ -62,7 +61,6 @@
     "type": [
       "#type/note",
       "#type/document",
-      "#type/index",
       "#type/template",
       "#type/standard",
       "#type/decision",
@@ -161,7 +159,6 @@
       "#visibility/internal"
     ],
     "10_QiSpark": [
-      "#system/qispark",
       "#type/document",
       "#visibility/internal"
     ],
@@ -207,7 +204,6 @@
     ]
   },
   "keyword_suggestions": {
-    "index": "#type/index",
     "template": "#type/template",
     "standard": "#type/standard",
     "decision": "#type/decision",
@@ -224,7 +220,6 @@
     "finance": "#domain/finance",
     "tax": "#domain/finance",
     "qicode": "#system/qicode",
-    "qispark": "#system/qispark",
     "qiserver": "#system/qiserver",
     "qivault": "#system/qivault",
     "housekeeping": "#workflow/normalize",

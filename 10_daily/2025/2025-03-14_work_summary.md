@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Work Summary - 2025-03-14
 slug: work-summary-2025-03-14
@@ -21,8 +21,8 @@ realm_label: ""
 uid: ""
 canonical_ref: ""
 template_key: master-template
+date: 2025-03-14
 ---
-
 # Work Summary - 2025-03-14
 
 Skills & Interests: Business (https://www.notion.so/Business-1a7f84a04402817b8f5afaa5c5b3c02d-pvs=21)

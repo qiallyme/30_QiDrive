@@ -1,0 +1,50 @@
+# Ignore Obsidian workspace layout and local caches
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/backups/
+.obsidian/cache/
+.obsidian/plugins/obsidian-copilot/
+.obsidian/plugins/copilot/
+
+# Ignore Smart Connections AI environment folder and embeds cache
+.smart-env/
+**/.smart-env/
+*.ajson
+
+# Ignore trash
+.trash/
+**/.trash/
+
+# Ignore system/temp files
+.DS_Store
+Thumbs.db
+
+# Ignore media files (prevent repository bloat)
+*.wav
+*.m4a
+*.mp3
+*.mp4
+*.mov
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.jfif
+*.gif
+*.svg
+
+# Ignore compiled documents and archives
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.zip
+*.tar
+*.gz
+
+# Ignore chat backups, database logs, and dump files
+*_ingested/
+**/*_ingested/**
+*.dat
+combined.txt

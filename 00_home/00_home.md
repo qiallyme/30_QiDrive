@@ -3,7 +3,7 @@ layout: home
 title: QiNotesSync Home
 slug: qinotessync-home
 summary: Primary navigation for the QiNotesSync vault.
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - moc
@@ -38,7 +38,7 @@ template_key: master-template
 
 ## Dashboards
 
-- [Inbox dashboard](inbox_dashboard.md)
+- [Inbox dashboard](01_inbox/inbox_dashboard.md)
 - [Projects dashboard](projects_dashboard.md)
 - [Timeline dashboard](timeline_dashboard.md)
 - [Missing metadata](missing_metadata.md)

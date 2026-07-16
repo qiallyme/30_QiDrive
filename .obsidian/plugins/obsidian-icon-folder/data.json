@@ -5,7 +5,13 @@
     "fontSize": 16,
     "emojiStyle": "native",
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "LiAppWindow",
+      "LiArchive",
+      "💼",
+      "LiMessageCircleDashed",
+      "👼"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraMargin": {
@@ -27,5 +33,30 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "_qiconfig": "LiTableConfig",
+  "00_home": "LiHome",
+  "01_inbox": "📥",
+  "10_daily": "📅",
+  "20_life": "🧑",
+  "40_projects": "🏗",
+  "90_outputs": {
+    "iconName": "LiFolderOutput",
+    "iconColor": "#9b8f08"
+  },
+  "95_archive": "LiArchive",
+  "TaskNotes": "LiListTodo",
+  "Markwhen": "LiBetweenHorizonalEnd",
+  "copilot": "🪐",
+  "02_directory": "ℹ",
+  "45_cases": "👨‍⚖️",
+  "70_Knowledge": "🧠",
+  "80_records": "🗄",
+  "50_QiLabs": "🥼",
+  "30_empowerqnow713": "👼",
+  "60_cases": "💼",
+  "99_archive": "LiArchive",
+  "_system": "LiAppWindow",
+  "01_inbox/Voice Entries": "LiAudioWaveform",
+  "_qiconfig/Templates 1": "LiBookTemplate"
 }

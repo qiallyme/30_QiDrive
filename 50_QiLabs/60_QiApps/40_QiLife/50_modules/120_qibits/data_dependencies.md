@@ -1,0 +1,26 @@
+---
+layout: page
+title: Data Dependencies
+slug: ""
+summary: ""
+status: publish
+created_at: ""
+updated_at: ""
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ""
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
+# QiBits: Data Dependencies
+*   **Reads/Writes**: Primary write targets are the `qibits` table.
+*   **Links**: Serves as the origin parent node for almost all links in the `links` table.

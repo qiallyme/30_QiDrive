@@ -2,7 +2,7 @@
 layout: page
 title: Local Development Guide
 slug: local-development-guide
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

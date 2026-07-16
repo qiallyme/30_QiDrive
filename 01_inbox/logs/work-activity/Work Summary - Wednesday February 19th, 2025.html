@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Work Summary - Wednesday February 19th, 2025</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1c6f84a0-4402-809d-8909-dd3a0310908e" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/chart-mixed_purple.svg"/></div><h1 class="page-title">Work Summary - Wednesday February 19th, 2025</h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-file"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/attachment_gray.svg" style="width:14px;height:14px;display:block"/></span>Related Documents</th><td><span style="margin-right:6px"><a href="2ccb611a-e71d-4dc6-b2ec-15c3486e81fe_Work_Summary_Feb19.pdf">2ccb611a-e71d-4dc6-b2ec-15c3486e81fe_Work_Summary_Feb19.pdf</a></span></td></tr><tr class="property-row property-row-date"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/calendar-day_gray.svg" style="width:14px;height:14px;display:block"/></span>Date</th><td><time>@February 19, 2025</time></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/categories_gray.svg" style="width:14px;height:14px;display:block"/></span>Type</th><td><span class="selected-value select-value-color-default">Work Summary</span></td></tr><tr class="property-row property-row-text"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/compose_gray.svg" style="width:14px;height:14px;display:block"/></span>Notes</th><td>Completed various tasks including finalizing agreements, processing tax returns, and improving workflows. Pending items focus on invoice updates, operations documentation, and addressing technical issues. Financial challenges and workload distribution concerns noted, with recommendations for prioritizing critical tasks and enhancing team collaboration.</td></tr></tbody></table></header><div class="page-body"><h1 id="1c6f84a0-4402-801e-84cb-f12565502672" class=""><strong>Daily Work Summary &amp; Action Plan</strong></h1><p id="1c6f84a0-4402-8015-b345-d3fbce1ed8ce" class=""><strong>Date:</strong> 02/19/2025</p><hr id="1c6f84a0-4402-809e-83dc-cb1e5d24dee8"/><h2 id="1c6f84a0-4402-80a7-a11e-e652cd0557f5" class=""><strong>Completed Tasks</strong></h2><ul id="1c6f84a0-4402-8003-81a4-ce6c02570d18" class="bulleted-list"><li style="list-style-type:disc">Finalized clauses and agreements, engagement letters, and invoice notices.</li></ul><ul id="1c6f84a0-4402-807f-96b1-f3b32cede490" class="bulleted-list"><li style="list-style-type:disc">Processed two tax returns using 1099s ($388 charged after bundling discount).</li></ul><ul id="1c6f84a0-4402-80a9-9af4-df77004dd4eb" class="bulleted-list"><li style="list-style-type:disc">Entered task templates into practice management software.</li></ul><ul id="1c6f84a0-4402-803b-9548-eab2a93d2ec2" class="bulleted-list"><li style="list-style-type:disc">Created a 1099 checklist, workflow, and checklist database.</li></ul><ul id="1c6f84a0-4402-80c7-9f82-df5abd679a41" class="bulleted-list"><li style="list-style-type:disc">Completed an audit risk assessment for a client.</li></ul><ul id="1c6f84a0-4402-80a4-942e-ef09dae075f2" class="bulleted-list"><li style="list-style-type:disc">Developed an insurance quote questionnaire.</li></ul><ul id="1c6f84a0-4402-80da-a1a6-f90453d2a97c" class="bulleted-list"><li style="list-style-type:disc">Researched &quot;mail notes&quot; and found Zoho CRM or Slack as potential solutions.</li></ul><ul id="1c6f84a0-4402-8000-9fd3-fb89e3162d57" class="bulleted-list"><li style="list-style-type:disc">Worked on Brothers Painting (six-hour session) and prepared their P&amp;L and Schedule C.</li></ul><ul id="1c6f84a0-4402-80eb-88ce-f033f37bc290" class="bulleted-list"><li style="list-style-type:disc">Submitted four pending tax returns electronically.</li></ul><ul id="1c6f84a0-4402-80d5-b682-e4e06832f289" class="bulleted-list"><li style="list-style-type:disc">Integrated Slack for centralized communication.</li></ul><ul id="1c6f84a0-4402-80b6-99bd-ecbf5eefa187" class="bulleted-list"><li style="list-style-type:disc">Updated chat bot and added rule tables for automated categorizations.</li></ul><ul id="1c6f84a0-4402-8068-ad56-ee9d5489dfc8" class="bulleted-list"><li style="list-style-type:disc">Created various tax and bookkeeping checklists.</li></ul><ul id="1c6f84a0-4402-80c1-b475-e244e3741aa5" class="bulleted-list"><li style="list-style-type:disc">Updated the company wiki and planned for a physical copy distribution.</li></ul><ul id="1c6f84a0-4402-8017-b9a6-e0871fcb05f2" class="bulleted-list"><li style="list-style-type:disc">Cleaned and organized client files; laminated key documents.</li></ul><ul id="1c6f84a0-4402-8063-a2c8-feeb38a9b49e" class="bulleted-list"><li style="list-style-type:disc">Ordered ink for the HP printer in the other office.</li></ul><ul id="1c6f84a0-4402-8085-b231-c0b7417d8759" class="bulleted-list"><li style="list-style-type:disc">Managed invoice reminders, applied late fees, and reconciled tax returns.</li></ul><ul id="1c6f84a0-4402-8091-b9e3-c75ce97b2fe9" class="bulleted-list"><li style="list-style-type:disc">Updated workflow tasks, lists, and checklists for in-office client handouts.</li></ul><ul id="1c6f84a0-4402-8033-a175-e9b8ffdbdb2c" class="bulleted-list"><li style="list-style-type:disc">Researched office furniture and paint options, pending revenue availability.</li></ul><ul id="1c6f84a0-4402-806c-8d90-f7a254c179ac" class="bulleted-list"><li style="list-style-type:disc">Added tools and extensions to improve productivity.</li></ul><ul id="1c6f84a0-4402-8095-b762-d29cb212df29" class="bulleted-list"><li style="list-style-type:disc">Managed large email backlogs across different inboxes.</li></ul><ul id="1c6f84a0-4402-8001-9f4b-e1d3b544b365" class="bulleted-list"><li style="list-style-type:disc">Assisted a client with document preparation and legal paperwork.</li></ul><ul id="1c6f84a0-4402-806b-98ba-de4a33373e23" class="bulleted-list"><li style="list-style-type:disc">Created an updated scheduling system for client appointments.</li></ul><ul id="1c6f84a0-4402-801b-a863-d26fa924a0ea" class="bulleted-list"><li style="list-style-type:disc">Reviewed backlog invoices and ensured all payments were properly accounted for.</li></ul><ul id="1c6f84a0-4402-808b-9723-de03a9856d9b" class="bulleted-list"><li style="list-style-type:disc">Conducted an internal audit to verify accounting consistency.</li></ul><ul id="1c6f84a0-4402-809b-b685-e22090c4ca87" class="bulleted-list"><li style="list-style-type:disc">Provided a training session for new software implementation for employees.</li></ul><ul id="1c6f84a0-4402-80ba-94af-e50aaa33e36c" class="bulleted-list"><li style="list-style-type:disc">Developed an automated report generation tool for tax filing updates.</li></ul><hr id="1c6f84a0-4402-80e4-974c-d9f36640d8bc"/><h2 id="1c6f84a0-4402-808b-bd68-fffea462276c" class=""><em><strong>Pending &amp; To-Do Items</strong></em></h2><h3 id="1c6f84a0-4402-80e9-aeb4-ccf5cba84f43" class=""><em><strong>Invoice &amp; Agreement Updates</strong></em></h3><ul id="1c6f84a0-4402-809c-b545-c86a631b763f" class="bulleted-list"><li style="list-style-type:disc"><em>Add payment terms clauses to invoices.</em></li></ul><ul id="1c6f84a0-4402-806e-b922-c38b4f8b5b76" class="bulleted-list"><li style="list-style-type:disc"><em>Include collection clauses in agreements.</em></li></ul><ul id="1c6f84a0-4402-805b-b0a0-e5dc98c15aad" class="bulleted-list"><li style="list-style-type:disc"><em>Document retention and lien clauses for monthly clients.</em></li></ul><ul id="1c6f84a0-4402-8067-9c90-e0e1b731ba5d" class="bulleted-list"><li style="list-style-type:disc"><em>Add invoice notice disclaimer with late fees and percentages.</em></li></ul><ul id="1c6f84a0-4402-807b-a7f9-e0206048b7b9" class="bulleted-list"><li style="list-style-type:disc"><em>Update the website with these modifications.</em></li></ul><ul id="1c6f84a0-4402-80b2-9e70-cc492e943ee0" class="bulleted-list"><li style="list-style-type:disc"><em>Create an FAQ section explaining the updates.</em></li></ul><h3 id="1c6f84a0-4402-8058-8b62-fa39591225fb" class=""><em><strong>Operations &amp; Documentation</strong></em></h3><ul id="1c6f84a0-4402-8065-82f3-c0f85e9b96a3" class="bulleted-list"><li style="list-style-type:disc"><em>Complete Risk Management section (4.3) in the Operations Manual.</em></li></ul><ul id="1c6f84a0-4402-8031-92e3-f2eefbe34b28" class="bulleted-list"><li style="list-style-type:disc"><em>Ensure cover pages are in place.</em></li></ul><ul id="1c6f84a0-4402-8038-99ae-ca13fd2f21a7" class="bulleted-list"><li style="list-style-type:disc"><em>Draft a quick reference guide for employees on updated policies.</em></li></ul><ul id="1c6f84a0-4402-80ec-928c-ef947dab7573" class="bulleted-list"><li style="list-style-type:disc"><em>Implement a document verification system for legal compliance.</em></li></ul><h3 id="1c6f84a0-4402-8091-bba1-e1debf8db3a3" class=""><em><strong>Collection &amp; Accounting</strong></em></h3><ul id="1c6f84a0-4402-80f3-939d-ccabb5873fe7" class="bulleted-list"><li style="list-style-type:disc"><em>Link collection links appropriately.</em></li></ul><ul id="1c6f84a0-4402-80e6-a4a4-f1602d521bf8" class="bulleted-list"><li style="list-style-type:disc"><em>Ensure Ortiz Electronical’s payments are completed.</em></li></ul><ul id="1c6f84a0-4402-800f-b669-eb680fd709b6" class="bulleted-list"><li style="list-style-type:disc"><em>Follow up with Amadeo regarding accounts.</em></li></ul><ul id="1c6f84a0-4402-8082-a5f3-e92daea5edda" class="bulleted-list"><li style="list-style-type:disc"><em>Prepare a checklist for Crystal.</em></li></ul><ul id="1c6f84a0-4402-808d-8d91-c37969eaaf3f" class="bulleted-list"><li style="list-style-type:disc"><em>Confirm Brothers Painting&#x27;s reconciliation before finalizing monthly accounting.</em></li></ul><ul id="1c6f84a0-4402-80de-8b1a-d1d7e4bd4a24" class="bulleted-list"><li style="list-style-type:disc"><em>Process and update the 2023 amended return for Oscar.</em></li></ul><ul id="1c6f84a0-4402-805a-a307-cc6f72b2c067" class="bulleted-list"><li style="list-style-type:disc"><em>Set up an IN-DOR account for Tachopolis to reduce charges.</em></li></ul><ul id="1c6f84a0-4402-809f-af5a-c420e388c0bb" class="bulleted-list"><li style="list-style-type:disc"><em>Reconcile all outstanding accounts before quarter-end.</em></li></ul><h3 id="1c6f84a0-4402-8055-990e-dc5b4217594d" class=""><em><strong>Printers &amp; Technical Issues</strong></em></h3><ul id="1c6f84a0-4402-8057-8db2-f3dfbdeb8cd7" class="bulleted-list"><li style="list-style-type:disc"><em>Check Konica printer functionality.</em></li></ul><ul id="1c6f84a0-4402-806b-88c8-d23cbbbde454" class="bulleted-list"><li style="list-style-type:disc"><em>Consider calling a technician for the Lanier printer ($100 est.).</em></li></ul><ul id="1c6f84a0-4402-8052-a20f-f8259de7f971" class="bulleted-list"><li style="list-style-type:disc"><em>Address Epson printer ink issue (Arleth&#x27;s device).</em></li></ul><ul id="1c6f84a0-4402-80d1-9d62-ca96890964fc" class="bulleted-list"><li style="list-style-type:disc"><em>Determine a solution for Brother printer ink issue.</em></li></ul><ul id="1c6f84a0-4402-80e4-9f48-c5313847da88" class="bulleted-list"><li style="list-style-type:disc"><em>Recover corrupted OneDrive files and migrate to Google Drive.</em></li></ul><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1c6f84a0-4402-8032-9d9e-f57be91e5f28"><div style="font-size:1.5em"><span class="icon">⚠️</span></div><div style="width:100%"><ul id="1c6f84a0-4402-8058-a0ec-e81afbb2bd79" class="bulleted-list"><li style="list-style-type:disc"><em>Acquire a 5TB external hard drive for data backup (Crystal’s request).</em></li></ul></div></figure><ul id="1c6f84a0-4402-80a0-96e2-cd86eced8e3f" class="bulleted-list"><li style="list-style-type:disc"><em>Implement a backup system to prevent future file losses.</em></li></ul><h3 id="1c6f84a0-4402-804c-97e9-e52a89127091" class=""><em><strong>Task &amp; Workflow Optimization</strong></em></h3><ul id="1c6f84a0-4402-8083-83d6-e784989a7bdb" class="bulleted-list"><li style="list-style-type:disc"><em>Continue automation of workflows and integration into systems.</em></li></ul><ul id="1c6f84a0-4402-80ea-86e7-fc7edd9e1f37" class="bulleted-list"><li style="list-style-type:disc"><em>Improve task delegation and consider hiring additional help.</em></li></ul><ul id="1c6f84a0-4402-8056-b27b-dd273acb7eaf" class="bulleted-list"><li style="list-style-type:disc"><em>Encourage team members to accept invitations for Motion and Slack.</em></li></ul><ul id="1c6f84a0-4402-80af-a062-c0d8eec44178" class="bulleted-list"><li style="list-style-type:disc"><em>Review pending emails (300+ in Easy Tax, 1000+ in other inboxes).</em></li></ul><ul id="1c6f84a0-4402-8002-9474-cc77a2b13a0f" class="bulleted-list"><li style="list-style-type:disc"><em>Continue organization of tax and financial reports.</em></li></ul><ul id="1c6f84a0-4402-8052-b2fc-cfa00f5fd48a" class="bulleted-list"><li style="list-style-type:disc"><em>Conduct a workflow analysis for additional efficiency improvements.</em></li></ul><ul id="1c6f84a0-4402-8049-9f31-cbd37b7c788e" class="bulleted-list"><li style="list-style-type:disc"><em>Develop a reporting dashboard to visualize pending and completed tasks.</em></li></ul><h3 id="1c6f84a0-4402-8081-ac40-fa09ccadfc15" class=""><em><strong>Pending Client Actions</strong></em></h3><ul id="1c6f84a0-4402-8043-9e30-f60a999805f7" class="bulleted-list"><li style="list-style-type:disc"><em>Deliver Diego Lopez&#x27;s client copy.</em></li></ul><ul id="1c6f84a0-4402-8075-8025-c08d6186f446" class="bulleted-list"><li style="list-style-type:disc"><em>Finalize Luis Munoz Altamirano&#x27;s tax return (pending office visit).</em></li></ul><ul id="1c6f84a0-4402-80c6-b67c-f3089f765e04" class="bulleted-list"><li style="list-style-type:disc"><em>Connect with Tachopolis on Thursday to ensure tax readiness.</em></li></ul><ul id="1c6f84a0-4402-8080-b4da-f044b2745b13" class="bulleted-list"><li style="list-style-type:disc"><em>Follow up with past clients for document updates and renewals.</em></li></ul><ul id="1c6f84a0-4402-807a-abbd-c787419acc63" class="bulleted-list"><li style="list-style-type:disc"><em>Establish a communication system to notify clients about upcoming deadlines.</em></li></ul><h3 id="1c6f84a0-4402-8058-a2d8-e0fb59f79acc" class=""><em><strong>Office Planning &amp; Improvements</strong></em></h3><ul id="1c6f84a0-4402-8027-81a9-df4b07ec13d4" class="bulleted-list"><li style="list-style-type:disc"><em>Purchase additional client chairs, desk, and paint (pending available funds).</em></li></ul><ul id="1c6f84a0-4402-80e5-9c34-c8c5aa57ed6f" class="bulleted-list"><li style="list-style-type:disc"><em>Maintain cost-conscious office improvements.</em></li></ul><ul id="1c6f84a0-4402-80fb-bc53-c4f4bb3559a4" class="bulleted-list"><li style="list-style-type:disc"><em>Update and distribute printed workflow checklists.</em></li></ul><ul id="1c6f84a0-4402-800f-9159-e18771235c57" class="bulleted-list"><li style="list-style-type:disc"><em>Evaluate additional space organization solutions to improve efficiency.</em></li></ul><ul id="1c6f84a0-4402-800f-baf6-f816022c1368" class="bulleted-list"><li style="list-style-type:disc"><em>Research better lighting solutions to enhance workspace productivity.</em></li></ul><hr id="1c6f84a0-4402-8033-8aaf-df36e9af2dd8"/><h2 id="1c6f84a0-4402-8049-b8c7-d83806a3eb58" class=""><strong>Financial &amp; Cost Summary</strong></h2><ul id="1c6f84a0-4402-8005-9ac3-e362e7f9cceb" class="bulleted-list"><li style="list-style-type:disc"><strong>Completed Tax Returns:</strong> $388 earned</li></ul><ul id="1c6f84a0-4402-8013-9415-d1579981ee80" class="bulleted-list"><li style="list-style-type:disc"><strong>Upcoming Bills (March):</strong> ~$1,100</li></ul><ul id="1c6f84a0-4402-804e-9e58-fcb4a203ee9b" class="bulleted-list"><li style="list-style-type:disc"><strong>Technician Cost (Lanier Printer):</strong> ~$100</li></ul><ul id="1c6f84a0-4402-80ac-877d-cb8b8fef8b11" class="bulleted-list"><li style="list-style-type:disc"><strong>Office Upgrades &amp; Ink Purchases:</strong> TBD, pending revenue</li></ul><ul id="1c6f84a0-4402-809b-aaec-d15df371a039" class="bulleted-list"><li style="list-style-type:disc"><strong>Projected Equipment Upgrades:</strong> Additional budget consideration for hardware updates</li></ul><hr id="1c6f84a0-4402-801e-b803-d99ea9fb090f"/><h2 id="1c6f84a0-4402-80c3-b872-d1a33de0a7d0" class=""><strong>Concerns &amp; Notes</strong></h2><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1c6f84a0-4402-802f-88e4-f34c50c79cac"><div style="font-size:1.5em"><span class="icon">⚠️</span></div><div style="width:100%"><ul id="1c6f84a0-4402-805d-932a-f9e28151c84f" class="bulleted-list"><li style="list-style-type:disc"><strong>Workload Distribution:</strong> More assistance is required; team members need to acknowledge and accept delegated tasks.</li></ul></div></figure><ul id="1c6f84a0-4402-805c-8c4a-d7121e1940af" class="bulleted-list"><li style="list-style-type:disc"><strong>Financial Challenges:</strong> Immediate concerns over revenue flow, pending payments, and urgent expenses (personal &amp; business-related).</li></ul><ul id="1c6f84a0-4402-8071-ab37-ea5dc616451d" class="bulleted-list"><li style="list-style-type:disc"><strong>System Issues:</strong> OneDrive data corruption affecting productivity, necessitating a migration to Google Drive.</li></ul><ul id="1c6f84a0-4402-806b-a9ca-f207865ad31b" class="bulleted-list"><li style="list-style-type:disc"><strong>Personal Challenges:</strong> Ongoing issues with sleep disorder, foreclosure risks, and essential utility maintenance.</li></ul><ul id="1c6f84a0-4402-8008-9371-fde3152fa740" class="bulleted-list"><li style="list-style-type:disc"><strong>Process Optimization:</strong> Need for better task tracking and internal efficiency enhancements.</li></ul><ul id="1c6f84a0-4402-80a6-9f5c-f9813201835f" class="bulleted-list"><li style="list-style-type:disc"><strong>Communication Improvements:</strong> Encouraging better client and team communication for smoother operations.</li></ul><hr id="1c6f84a0-4402-8047-9ab2-c43ae8ca1c4d"/><h2 id="1c6f84a0-4402-80d1-b951-cecc0a788d23" class=""><strong>Recommendations &amp; Next Steps</strong></h2><ol type="1" id="1c6f84a0-4402-80ef-8a82-f20541ac8699" class="numbered-list" start="1"><li><strong>Prioritize critical financial tasks</strong> to ensure operational cash flow.</li></ol><ol type="1" id="1c6f84a0-4402-809b-b414-f049fe9714be" class="numbered-list" start="2"><li><strong>Confirm team participation in task management tools</strong> to optimize workload.</li></ol><ol type="1" id="1c6f84a0-4402-80df-b2aa-e649da24f0a3" class="numbered-list" start="3"><li><strong>Focus on automation solutions</strong> to streamline invoicing, collections, and workflows.</li></ol><ol type="1" id="1c6f84a0-4402-8083-8cb4-f32ed7517a24" class="numbered-list" start="4"><li><strong>Allocate dedicated time to resolve system issues</strong> to avoid productivity losses.</li></ol><ol type="1" id="1c6f84a0-4402-8072-98a7-f8c6f3863868" class="numbered-list" start="5"><li><strong>Explore potential hiring options</strong> or outsourcing for workload management.</li></ol><ol type="1" id="1c6f84a0-4402-801f-bed5-e070453a95b5" class="numbered-list" start="6"><li><strong>Plan a strategy for financial stability</strong> given current personal and business challenges.</li></ol><ol type="1" id="1c6f84a0-4402-8057-908c-f2179eb9c68a" class="numbered-list" start="7"><li><strong>Develop a structured follow-up system</strong> to ensure pending client work is addressed promptly.</li></ol><ol type="1" id="1c6f84a0-4402-8023-b151-fea6705a351a" class="numbered-list" start="8"><li><strong>Enhance team engagement</strong> through periodic check-ins and collaboration sessions.</li></ol><hr id="1c6f84a0-4402-800e-a35f-c75d1828bb4b"/><h2 id="1c6f84a0-4402-80a9-8c14-c274e6f8f633" class=""><strong>Closing Notes</strong></h2><p id="1c6f84a0-4402-8099-9655-d69279b7826b" class="">The workload remains heavy, and prioritization is key. Collaboration and automation will be crucial to streamlining operations and ensuring smoother workflows. The team’s engagement in using available tools (Motion, Slack, Zoho CRM) will significantly improve efficiency.</p><p id="1c6f84a0-4402-8051-933d-e5a2d5092c44" class=""><strong>Immediate focus:</strong> Resolving printer issues, finalizing tax filings, and addressing pending collections.</p><p id="1c6f84a0-4402-80f3-92be-f36e04380c96" class=""><strong>Long-term focus:</strong> Improving financial stability and operational efficiency, optimizing internal workflows, and enhancing client communication strategies.</p><hr id="1c6f84a0-4402-807c-a388-e471b15722ad"/><h3 id="1c6f84a0-4402-80b1-87b1-fe9759f3069f" class=""><strong>End of Report</strong></h3></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

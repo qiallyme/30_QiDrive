@@ -1,0 +1,26 @@
+# Cloudflare Pages configuration for Timeline
+
+# Build configuration
+build:
+  command: node build-timeline.js
+  destination: /dist
+
+# Node version
+environment:
+  NODE_VERSION: "18"
+
+# Headers for better performance
+headers:
+  - path: "/*"
+    headers:
+      - Cache-Control: public, max-age=3600
+  - path: "/timeline.json"
+    headers:
+      - Cache-Control: public, max-age=300
+  - path: "/*.css"
+    headers:
+      - Cache-Control: public, max-age=31536000, immutable
+  - path: "/*.js"
+    headers:
+      - Cache-Control: public, max-age=31536000, immutable
+

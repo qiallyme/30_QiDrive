@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Timeline | Interactive Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Life Timeline</h1>
+        <p class="subtitle">An Interactive Journey Through Time</p>
+    </header>
+
+    <!-- Timeline Controls -->
+    <div class="controls">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="critical">Critical Events</button>
+        <button class="filter-btn" data-filter="career">Career</button>
+        <button class="filter-btn" data-filter="personal">Personal</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="timeline-container">
+        <div id="timeline" class="timeline">
+            <!-- Timeline will be dynamically generated here -->
+        </div>
+    </div>
+
+    <!-- Add Event Button -->
+    <button id="addEventBtn" class="add-event-btn">+ Add New Event</button>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Event Details</h2>
+            <div id="modalBody">
+                <!-- Event details will be shown here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Event Form Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close-form">&times;</span>
+            <h2>Add New Event</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="eventDate">Date *</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventTitle">Title *</label>
+                    <input type="text" id="eventTitle" required placeholder="Event title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventCategory">Category *</label>
+                    <select id="eventCategory" required>
+                        <option value="career">Career</option>
+                        <option value="personal">Personal</option>
+                        <option value="education">Education</option>
+                        <option value="achievement">Achievement</option>
+                        <option value="milestone">Milestone</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="eventCritical">
+                        Mark as Critical Event
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventDescription">Description</label>
+                    <textarea id="eventDescription" rows="4" placeholder="Event description..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="eventTags">Tags (comma separated)</label>
+                    <input type="text" id="eventTags" placeholder="tag1, tag2, tag3">
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Save Event</button>
+                    <button type="button" class="btn-secondary" id="cancelForm">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Interactive Timeline. All rights reserved.</p>
+        <button id="exportBtn" class="export-btn">Export Timeline Data</button>
+    </footer>
+
+    <script src="timeline-loader-json.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

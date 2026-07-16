@@ -1,0 +1,703 @@
+(=) Square
+
+Checking Statement
+November 01 - November 30, 2023
+
+Location Starting Balance
+SRVGroup.co $889.86
+Starting balance
+
+| Payment processing (credits & debits)
+
+Square Debit Card
+
+Transfers (and related activity)
+
+The net amount of all inbound and outbound transfers.
+
+Ending balance
+
+The starting balance on the account on November 01, 2023.
+
+The ending balance on the account on November 30, 2023.
+
+Activities
+
+107
+
+The net amount of payment processing credits & debits during the period.
+
+Square Checking
+Routing number: 041215663
+Account number: «**2943
+
+SRVGroup.co
+
+3585 Commercial Drive
+Ste. 730
+
+Indianapolis, IN 46222
+
+Ending Balance
+
+$2,495.18
+
+The net amount of Square Debit Card spend, refunds, ATM withdrawals, & other activity.
+
+Starting balance $889.66 |
+Payment processing +$2,715.01
+Square Debit Card -$4,217.86
+Transfers +$2,430.42
+Transfers out -$2,696.13
+Instant Transfer fees -$8.22
+Transfers in 495,134.77
+Loans +$2,148.75
+Bill Payments -$1,471.00
+Ending balance $2,495.18
+
+Block Inc.
+1955 Broadway, Suite 815
+Oakland, CA 94612
+
+squareup.com/help
+
+(855) 700-6000
+Available 9am - 5pm PT
+
+Date
+
+11/30/2023
+
+11/30/2023
+
+11/29/2023
+
+11/29/2023
+
+11/29/2023
+
+11/29/2023
+
+11/29/2023
+
+11/28/2023
+
+11/28/2023
+
+11/27/2023
+
+1/27/2023
+
+11/27/2023
+
+11/27/2023
+
+1727/2023
+
+11/27/2023
+
+19/27/2023
+
+11/26/2023
+
+11/26/2023
+
+11/26/2023
+
+11/26/2023
+
+11/26/2023
+
+11/26/2023
+
+11/26/2023
+
+11/25/2023
+
+Block Inc.
+
+Details
+
+DoorDash
+
+Outgoing check
+
+Bill payment refund
+
+Bill payment refund
+
+Cricket Wireless
+
+DoorDash
+
+DoorDash
+
+Amazon
+
+DoorDash
+
+Amazon
+
+DoorDash
+
+AMAZON.COM, INC, PAYMENTS
+
+In Biz Conv. Fee
+
+Amazon
+
+Amazon
+
+Postscan Mail
+
+DoorDash
+
+DoorDash
+
+Card payment
+
+Tmobile Auto Pay
+
+Interfaces Premium
+
+Indiana Secretary
+
+Burger King
+
+Amazon
+
+7955 Broadway, Suite 815
+Oakland, CA 94612
+
+Activity type Amount
+
+cara spend: Cony nice-veloscuez 8393 -$47.30
+Transfer out -$1,250.88
+Transfers $630.00
+Transfers $930.00
+Card spend - Cody Rice-Velasquez 8393 -$73.00
+Card spend « Cody Rice-Velasquez 8393 -$29.99
+Card spend - Cady Rice-Velasquez 8393 -$31.18
+Card spend - Cody Rice-Velasquez 8393 -$7.99
+Card spend - Cody Rice-Velasquez 8393 -$30.04
+Card spend - Cady Rice-Velasquez 8393 -$14.41
+Card spend - Cody Rice-Velasquez 8393 -$17.56
+Transfer in $1.47
+Card spend - Cody Rice-Velasquez 8393 -$1.00
+Card spend - Cady Rice-Velasquez 8393 -$15.24
+Card spend - Cody Rice-Velasquez 8393 -$10.48
+Card spend - Cody Rice-Vetasquez 8393 -$20.00
+Card spend - Cody Rice-Velasquez 8393 -$26.30
+Card spend - Cody Rice-Velasquez 8393 -$42.56
+Sales $60.27
+Card spend - Cody Rice-Velasquez 8393 -$50.00
+Card spend - Cody Rice-Velasquez 8393 -$20.00
+Card spend - Cody Rice-Velasquez 8393 -$31,00
+Card spend - Cody Rice-Velasquez 8393 -$28,62
+Card spend - Cody Rice-Velasquez 8393 -$33.09
+
+squareup.com/help (855) 700-6000
+
+Available 9am - Spm PT
+
+Balance
+
+$2,495.18
+
+$2,542.48
+
+$3,793.36
+
+$3,163.36
+
+$2,233.36
+
+$2,306.36
+
+$2,336.55
+
+$2,367.53
+
+$2,375.52
+
+$2,405.56
+
+$2,419.97
+
+$2,437.53
+
+$2,436.06
+
+$2,437.06
+
+$2,452.30
+
+$2,462.78
+
+$2,482.78
+
+$2,509.08
+
+$2,551.64
+
+$2,491,37
+
+$2,541.37
+
+$2,561.37
+
+$2,592.37
+
+$2,620.99
+
+11/25/2023 Tesla, Inc.
+
+11/25/2023 Amazon
+
+11/25/2023 Amazon
+
+11/25/2023 2 Activities
+
+11/24/2023 Phillips 66 Villag
+
+11/24/2023 Card payment
+
+11/24/2023 Amazon.com
+
+11/23/2023 Postscan Mai!
+
+11/23/2023 Spdy Reg Finance Loan Pmn
+
+11/23/2023 Comcast
+
+11/22/2023 Transfer in
+
+11/20/2023 Amazon
+
+11/20/2023 Amazon
+
+11/20/2023 Card payment
+
+11/20/2023 Bill Pay * IDM Group LTD nov23
+
+11/20/2023 Zoho Corporation
+
+11/20/2023 Zoho Corporation
+
+91/20/2023 Legalshield Membrship
+
+11/19/2023 Www.tango.us
+
+11/19/2023 Https Scribe.how B
+
+71/19/2023 Square Loan
+
+11/19/2023 Bill Pay * IDM Group LTD 16042
+
+11/19/2023 Transfer in
+
+11/19/2023 Card payment
+
+11/19/2023 Xbox
+
+11/18/2023 Twilio HQ 4.0
+
+Card spend - Cody Rice-Velasquez 8393 -$9.99
+Card spend - Cody Rice-Velasquez 8393 -$14.97
+Card spend - Cody Rice-Velasquez 8393 -$64.14
+Sales $34.96
+Card spend - Cody Rice-Velasquez 8393 -$9.59
+Sales $113.22
+Card spend - Cody Rice-Velasquez 8393 -$134.92
+Card spend - Cody Rice-Velasquez 8393 -$10.00
+Card spend : Cody Rice-Velasquez 8393 -$300.00
+Card spend - Cody Rice-Velasquez 8393 “$71.95
+Transfer in $1,000.00
+Card spend - Cody Rice-Velasquez 8393 -$19.81
+Card spend - Cody Rice-Velasquez 8393 -$11.58
+Sales $155.06
+Transfers -$630.00
+Card spend - Cody Rice-Velasquez 8393 -$20.00
+Card spend - Cody Rice-Velasquez 8393 -$2.00
+Card spend - Cody Rice-Velasquez 8393 -$75.00
+Card spend - Cady Rice-Velasquez 8393 -$20,00
+Card spend - Cody Rice-Velasquez 8393 -$29.00
+Transfers $2,148.75
+Transfers -$930.00
+Transfer in $400.00
+Sales $74.06
+Card spend - Cody Rice-Velasquez 8393 -$11.99
+Card spend - Cody Rice-Velasquez 8393 -$20.00
+
+$2,654.08
+
+$2,664.07
+
+$2,679.04
+
+$2,743.18
+
+$2,708.22
+
+$2,717.81
+
+$2,604.59
+
+$2,739.51
+
+$2,749.51
+
+$3,049.51
+
+$3,121.46
+
+$2,121.46
+
+$2,141.27
+
+$2,152.85
+
+$1,997.79
+
+$2,627.79
+
+$2,647.79
+
+$2,649.79
+
+$2,724.79
+
+$2,744.79
+
+$2,773.79
+
+$625.04
+
+$1,555.04
+
+$1,155.04
+
+$1,080.98
+
+$1,092.97
+
+Biock Inc.
+7955 Broadway, Suite 815
+Oakland, CA 94612
+
+squareup.com/help
+
+(855) 700-6000
+Available 9am - 5pm PT
+
+11/18/2023 Amazon
+
+11/18/2023 Amazon
+
+11/18/2023 Squarespace Inc.
+
+11/18/2023 Zoho Corporation
+
+11/18/2023 Amazon
+
+11/18/2023 Amazon
+
+11/18/2023 Amazon Grocery Amzn.co
+
+11/17/2023 Humblefax
+
+11/17/2023 Amazon
+
+11/17/2023 Transfer in
+
+11/17/2023 Transfer in
+
+11/16/2023 Card payment
+
+11/15/2023 Zoho Corporation
+
+41/18/2023 Bill Pay * Robert Rice Jr. DailyloanRtrn
+
+11/15/2023 Transfer in
+
+11/15/2023 Transfer in
+
+11/13/2023 Financial Center Fi
+
+11/13/2023 Amazon
+
+11/13/2023 MASTERCARD 4896
+
+11/13/2023 Card payment
+
+11/12/2023 MASTERCARD 4896
+
+11/12/2023 2 Activities
+
+11/11/2023 MASTERCARD 4896
+
+11/10/2023 Transfer in
+
+11/10/2023 Card payment
+
+11/10/2023 Eqvista.com
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend : Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Transfer in
+
+Transfer in
+
+Sales
+
+Card spend - Cody Rice-Velasquez 8393
+
+Transfers
+
+Transfer in
+
+Transfer in
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+instant transfer out
+
+Sates
+
+Instant transfer out
+
+Sales
+
+Instant transfer out
+
+Ahorros generales
+
+Sales
+
+Card spend - Cody Rice-Velasquez 8393
+
+-$5.00
+
+~$19.25
+
+-$39,00
+
+-$20.00
+
+“$171.71
+
+-$48.12
+
+-368.57
+
+-$10.00
+
+-$63.52
+
+$950.00
+
+$600.00
+
+$8.14
+
+-$529.00
+
+-$1,471.00
+
+$1,471.00
+
+$529,00
+
+-$1,210.00
+
+-$22,45
+
+-$57.17
+
+$1,267.17
+
+-$172.35
+
+$194.80
+
+-$239.95
+
+$84.20
+
+$84.93
+
+-$16,56
+
+$1,112,97
+
+$1,117.97
+
+$1,137.22
+
+$1,176.22
+
+$1,196.22
+
+$1,367.93
+
+$1,416.05
+
+$1,484.62
+
+$1,494.62
+
+$1,558.14
+
+$608.14
+
+$8.14
+
+$0.00
+
+$529.00
+
+$2,000.00
+
+$529.00
+
+$0.00
+
+$1,210.00
+
+$1,232.45
+
+$1,289.62
+
+$22.45
+
+$194.80
+
+$0.00
+
+$239.95
+
+$155.75
+
+$70.82
+
+Block Inc.
+1955 Broadway, Suite 815
+Oakland, CA 94612
+
+squareup.com/help
+
+(855) 700-6000
+
+Available 9am - Spm PT
+
+11/08/2023 Paypro Systweak Card spend - Cody Rice-Velasquez 8393 -$5.99 $87.38
+11/08/2023 Card payment Sales $71.80 $93.37
+11/08/2023 Outgoing check Transter out -$410.00 $21.57
+11/07/2023 Outgoing check Transfer out -$344.00 $431.57
+11/07/2023 Outgoing check Transfer out -$230,00 $775.57
+11/06/2023 Amazon Card spend - Cody Rice-Velasquez 8393 -$10.65 $1,005.57
+11/05/2023 DoorDash Card spend » Cody Rice-Velasquez 8393 -$23.63 $1,016.22
+11/05/2023 Card payment Sates $16.55 $1,039.85
+11/05/2023 Microsoft Card spend - Cody Rice-Velasquez 8393 -$55.96 $1,023.50
+11/05/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$33.53 $1,079.26
+11/05/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$60.09 $1,112.79
+11/05/2023 Adobe Stock Card spend - Cody Rice-Velasquez 8393 -$21,39 $1,172.88
+11/04/2023 Zoho Corporation Card spend - Cody Rice-Velasquez 8393 -$20.00 $1,194.27
+11/04/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$20,03 $1,214.27
+11/03/2023 Card payment Sales $428.85 $1,234.30
+11/03/2023 Transfer in Ahorros generales $99.10 $805.45
+11/03/2023 4 Activities Sales $205.20 $706.35
+11/03/2023 in Biz Conv. Fee Card spend - Cody Rice-Velasquez 8393 -$2.04 $501.15
+11/03/2023 Square Paid Services Card spend - Cody Rice-Velasquez 8393 -$35,00 $503.19
+11/03/2023 Square Paid Services Card spend - Cody Rice-Velasquez 8393 -$10.00 $538.19
+11/03/2023 Square Paid Services Card spend - Cody Rice-Velasquez 8393 -$20.00 $548.19
+11/03/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$52.44 $568.19
+11/03/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$30.61 $600.63
+11/03/2023 DoorDash Card spend - Cody Rice-Velasquez 8393 -$44.46 $631.24
+11/02/2023 Gsuite_cjr Co. Card spend - Cody Rice-Velasquez 8393 -$12.00 $675.70
+11/02/2023 Svescjr Co.com Card spend - Cody Rice-Velasquez 8393 -$12.78 $687.70
+Block Inc. squareup.com/hetp (855) 700-6000
+
+1955 Broadway, Suite 815
+Oakland, CA 94612
+
+Available 9am - Spm PT
+
+11/02/2023
+
+11/02/2023
+
+1/02/2023
+
+11/07/2023
+
+1/01/2023
+
+Indiana Secretary
+
+Google
+
+Murf.ai
+
+Murf.ai
+
+Burger King Q07
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+Card spend - Cody Rice-Velasquez 8393
+
+-$95.00
+
+-$7.20
+
+-$10.26
+
+-$29.00
+
+~$47.92
+
+5700.48
+
+$795.48
+
+$802.68
+
+$812.94
+
+$841.94
+
+A
+
+Block Inc.
+
+1955 Broadway, Suite 815
+Oakland, CA 94612
+
+squareup.com/help (855) 700-6000
+
+Available 9am - 5pm PT

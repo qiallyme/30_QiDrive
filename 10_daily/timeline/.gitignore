@@ -1,0 +1,21 @@
+# Timeline build artifacts
+timeline.json
+dist/
+
+# Node
+node_modules/
+package-lock.json
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Local
+.env

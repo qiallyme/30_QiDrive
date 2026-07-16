@@ -1,18 +1,21 @@
 ---
-title: "_qiconfig"
-type: index
+layout: section
+title: Qi Config
+slug: qiconfig
+summary: Vault configuration notes, cleanup manifests, and maintenance records.
 status: active
-generated_by: qilabs-housekeeping
-generated_at: "20260701-200047"
+updated_at: "2026-06-28"
+tags:
+  - moc
+  - config
+source_type: manual
 ---
+# Qi Config
 
-# _qiconfig
+## Cleanup records
 
-<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+- [2026-06-28 cleanup folder](cleanup_2026-06-28/change_manifest.csv)
 
-## Housekeeping Index
+## Local notes
 
-- [[TAG_REGISTRY_PATTERN|TAG REGISTRY PATTERN]]
-- [[_qiconfig| qiconfig]]
-
-<!-- QILABS:HOUSEKEEPING_INDEX_END -->
+- [Predefined tags](qiconfig.md)

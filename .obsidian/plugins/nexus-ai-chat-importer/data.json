@@ -12,7 +12,7 @@
     "hasShownUpgradeNotice": false,
     "hasSeenClaude132UpgradeNotice": false,
     "hasCompletedUpgrade": false,
-    "currentVersion": "1.6.7",
+    "currentVersion": "1.6.8",
     "previousVersion": "1.6.7"
   },
   "importedArchives": {},
@@ -22,12 +22,17 @@
         "version": "1.6.7",
         "date": "2026-06-27T06:40:59.190Z",
         "completed": true
+      },
+      "1_6_8": {
+        "version": "1.6.8",
+        "date": "2026-07-08T09:25:12.488Z",
+        "completed": true
       }
     },
     "completedOperations": {}
   },
-  "lastVersion": "1.6.7",
+  "lastVersion": "1.6.8",
   "hasCompletedUpgrade": true,
-  "upgradeDate": "2026-06-27T06:40:59.190Z",
+  "upgradeDate": "2026-07-08T09:25:12.489Z",
   "versionTrackingEnabled": true
 }

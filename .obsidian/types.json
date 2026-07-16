@@ -25,9 +25,9 @@
     "TQ_show_toolbar": "checkbox",
     "TQ_show_tree": "checkbox",
     "TQ_show_urgency": "checkbox",
-    "type": "text",
+    "type": "multitext",
     "name": "text",
-    "status": "text",
+    "status": "multitext",
     "priority": "text",
     "owner": "multitext",
     "started": "date",
@@ -48,6 +48,18 @@
     "size": "text",
     "subject": "text",
     "when": "date",
-    "with": "multitext"
+    "with": "multitext",
+    "visibility": "multitext",
+    "created_at": "datetime",
+    "updated_at": "datetime",
+    "sensitivity": "multitext",
+    "classification": "multitext",
+    "realm_label": "multitext",
+    "source_type": "multitext",
+    "template_key": "multitext",
+    "realm": "multitext",
+    "privacy": "multitext",
+    "layout": "multitext",
+    "merge_candidates": "multitext"
   }
 }

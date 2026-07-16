@@ -2,7 +2,7 @@
 layout: page
 title: GINA Memory System Merge - Phase 1 Complete ✅
 slug: gina-memory-system-merge-phase-1-complete
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects

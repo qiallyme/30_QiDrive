@@ -2,7 +2,7 @@
 layout: page
 title: QiOne RAG — One Zip Setup (Step-by-Step)
 slug: qione-rag-one-zip-setup-step-by-step
-status: active
+status: publish
 updated_at: "2026-06-29"
 tags:
   - projects
