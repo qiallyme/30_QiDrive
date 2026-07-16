@@ -40,3 +40,11 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[themes_ideas|themes ideas]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

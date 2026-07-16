@@ -31,13 +31,14 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[E-2026-06-20-002-lockout-access|E 2026 06 20 002 lockout access]]
-- [[E-2026-06-25-001-keypad-door-event|E 2026 06 25 001 keypad door event]]
-- [[E-2026-06-30-009-frank-social-workers-access|E 2026 06 30 009 frank social workers access]]
 - [[G00_access_and_door_events_summary|G00 access and door events summary]]
 - [[G01_unannounced_visits|G01 unannounced visits]]
 - [[G02_lock_code_battery_issue|G02 lock code battery issue]]
 - [[G03_front_door_hearing_limitations|G03 front door hearing limitations]]
 - [[G_access_and_door_events|G access and door events]]
+- [[e_2026_06_20_002_lockout_access|e 2026 06 20 002 lockout access]]
+- [[e_2026_06_25_001_keypad_door_event|e 2026 06 25 001 keypad door event]]
+- [[e_2026_06_30_009_frank_social_workers_access|e 2026 06 30 009 frank social workers access]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -40,3 +40,11 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2025-12-04_qially_com_blog_technical_spec|2025 12 04 qially com blog technical spec]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

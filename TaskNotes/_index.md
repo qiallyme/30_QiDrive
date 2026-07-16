@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[Start Here|Start Here]]
+- [[start_here|start here]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

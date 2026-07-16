@@ -31,6 +31,9 @@ index_scope: ""
 
 ## Housekeeping Index
 
+- [[Complete_Legal_Estate_Package|Complete Legal Estate Package]]
 - [[Lisa_Care_Record_2026|Lisa Care Record 2026]]
+- [[caregiver_assessment_master_markdown_v5|caregiver assessment master markdown v5]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

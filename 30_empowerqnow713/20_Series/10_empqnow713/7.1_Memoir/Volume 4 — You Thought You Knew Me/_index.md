@@ -31,11 +31,12 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[03 — You Thought You Knew Me|03 — You Thought You Knew Me]]
-- [[Living Between Worlds|Living Between Worlds]]
-- [[PART VI – Collapse Continues (2024–Present)|PART VI – Collapse Continues (2024–Present)]]
-- [[_16.10_You-thought-you-knew-me| 16.10 You thought you knew me]]
-- [[part_vi_collapse_continues_2024present_|part vi collapse continues 2024present ]]
-- [[you-thought-you-knew|you thought you knew]]
+- [[03_you_thought_you_knew_me|03 you thought you knew me]]
+- [[16_10_you_thought_you_knew_me|16 10 you thought you knew me]]
+- [[living_between_worlds|living between worlds]]
+- [[part_vi_collapse_continues_2024_present|part vi collapse continues 2024 present]]
+- [[part_vi_collapse_continues_2024present|part vi collapse continues 2024present]]
+- [[you_thought_you_knew|you thought you knew]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

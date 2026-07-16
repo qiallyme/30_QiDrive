@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[E-2026-06-30-016-aps-draft-not-sent|E 2026 06 30 016 aps draft not sent]]
+- [[e_2026_06_30_016_aps_draft_not_sent|e 2026 06 30 016 aps draft not sent]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

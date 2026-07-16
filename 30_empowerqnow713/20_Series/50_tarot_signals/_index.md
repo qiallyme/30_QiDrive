@@ -40,3 +40,13 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[index_2|index 2]]
+- [[summary_of_tarot_readings_meditation_and_telepat|summary of tarot readings meditation and telepat]]
+- [[summary_of_tarot_readings_meditation_and_telepat_2|summary of tarot readings meditation and telepat 2]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

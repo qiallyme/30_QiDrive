@@ -31,9 +31,15 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[02 How I Work Focus, Flow, Boundaries|02 How I Work Focus, Flow, Boundaries]]
-- [[05 How I Grow Learning & Creativity|05 How I Grow Learning & Creativity]]
-- [[06 How I Operate Routines & Energy Management|06 How I Operate Routines & Energy Management]]
-- [[Understanding My Neurodivergence & Disabilities A 9|Understanding My Neurodivergence & Disabilities A 9]]
+- [[02_how_i_work_focus_flow_boundaries|02 how i work focus flow boundaries]]
+- [[05_how_i_grow_learning_and_creativity|05 how i grow learning and creativity]]
+- [[06_how_i_operate_routines_and_energy_management|06 how i operate routines and energy management]]
+- [[07_how_to_support_me_needs_and_triggers|07 how to support me needs and triggers]]
+- [[08_when_i_struggle_overwhelm_shutdown_recovery|08 when i struggle overwhelm shutdown recovery]]
+- [[10_learn_more_about|10 learn more about]]
+- [[identity_context|identity context]]
+- [[index|index]]
+- [[understanding_my_neurodivergence_and_disabilities_a_9|understanding my neurodivergence and disabilities a 9]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

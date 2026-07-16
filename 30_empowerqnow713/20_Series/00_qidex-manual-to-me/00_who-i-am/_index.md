@@ -32,10 +32,13 @@ index_scope: ""
 ## Housekeeping Index
 
 - [[01_Core_Identity_and_Values|01 Core Identity and Values]]
-- [[1 5 Personality NTFJ|1 5 Personality NTFJ]]
-- [[10 1 Transgender|10 1 Transgender]]
-- [[10 2 Sleep inertia|10 2 Sleep inertia]]
-- [[10 4 Person of Color|10 4 Person of Color]]
+- [[01_who_i_am_core_identity_and_values|01 who i am core identity and values]]
+- [[10_1_transgender|10 1 transgender]]
+- [[10_2_sleep_inertia|10 2 sleep inertia]]
+- [[10_4_person_of_color|10 4 person of color]]
+- [[1_5_personality_ntfj|1 5 personality ntfj]]
 - [[PERSONALITY_ARCHITECTURE_AND_COGNITIVE_STYLE|PERSONALITY ARCHITECTURE AND COGNITIVE STYLE]]
+- [[professional_profile|professional profile]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

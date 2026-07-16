@@ -40,3 +40,19 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[condition_template|condition template]]
+- [[front_matter_templates|front matter templates]]
+- [[manifestation_capsule_template|manifestation capsule template]]
+- [[manifestation_template|manifestation template]]
+- [[mechanism_template|mechanism template]]
+- [[research_template|research template]]
+- [[strategy_template|strategy template]]
+- [[trauma_capsule_template|trauma capsule template]]
+- [[trauma_template|trauma template]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

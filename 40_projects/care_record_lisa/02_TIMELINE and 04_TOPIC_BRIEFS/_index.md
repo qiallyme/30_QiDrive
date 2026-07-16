@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[06_third_party_pressure|06 third party pressure]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

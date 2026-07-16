@@ -31,6 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
+- [[Chatnotw|Chatnotw]]
 - [[ai_chats|ai chats]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

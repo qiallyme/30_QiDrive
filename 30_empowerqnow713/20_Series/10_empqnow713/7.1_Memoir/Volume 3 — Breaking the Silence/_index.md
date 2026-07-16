@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[02 — Breaking the Silence|02 — Breaking the Silence]]
+- [[02_breaking_the_silence|02 breaking the silence]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

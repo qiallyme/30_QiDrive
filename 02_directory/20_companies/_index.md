@@ -31,7 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[Qially, LLC|Qially, LLC]]
-- [[Rabbit Inc.|Rabbit Inc.]]
+- [[qially_llc|qially llc]]
+- [[rabbit_inc|rabbit inc]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

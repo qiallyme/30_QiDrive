@@ -31,6 +31,12 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/50_Research/_research_template| research template]]
+- [[0276_psychological_evidence_1|0276 psychological evidence 1]]
+- [[0330_medical_and_psychological_evaluations_1|0330 medical and psychological evaluations 1]]
+- [[10_9c_the_invisible_weight_of_executive_function_c|10 9c the invisible weight of executive function c]]
+- [[c2_completion_summary|c2 completion summary]]
+- [[research_template|research template]]
+- [[research_template_1|research template 1]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

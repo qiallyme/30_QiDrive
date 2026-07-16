@@ -23,3 +23,12 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2026-05-26_qi_ally_estate_planning_document_package|2026 05 26 qi ally estate planning document package]]
+- [[2026-05-26_qially_estate_planning_portfolio|2026 05 26 qially estate planning portfolio]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

@@ -31,6 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[Building Systems for Neurodivergent Minds|Building Systems for Neurodivergent Minds]]
+- [[building_systems_for_neurodivergent_minds|building systems for neurodivergent minds]]
+- [[neurodivergent_design_systems_that_see_us_1|neurodivergent design systems that see us 1]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

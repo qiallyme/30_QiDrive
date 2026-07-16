@@ -31,14 +31,16 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[Abusive Roommate|Abusive Roommate]]
-- [[Accident Tesla - Driver Zaitullah|Accident Tesla   Driver Zaitullah]]
-- [[Compounded Grief|Compounded Grief]]
-- [[Crisis-Response-Hotel-Deposit-Strategy|Crisis Response Hotel Deposit Strategy]]
-- [[Early Trauma|Early Trauma]]
-- [[Family Dynamics|Family Dynamics]]
-- [[See Gerald he is ill|See Gerald he is ill]]
+- [[abusive_roommate|abusive roommate]]
+- [[accident_tesla_driver_zaitullah|accident tesla driver zaitullah]]
+- [[compounded_grief|compounded grief]]
+- [[crisis_response_hotel_deposit_strategy|crisis response hotel deposit strategy]]
+- [[early_trauma|early trauma]]
+- [[family_dynamics|family dynamics]]
 - [[generaltimeline|generaltimeline]]
+- [[legacy_index|legacy index]]
+- [[see_gerald_he_is_ill|see gerald he is ill]]
 - [[vulnerability_cascade|vulnerability cascade]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

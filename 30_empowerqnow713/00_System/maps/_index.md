@@ -40,3 +40,13 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2026-07-02_qisaysit_series_routing_map|2026 07 02 qisaysit series routing map]]
+- [[empowerqnow713_series_roadmap|empowerqnow713 series roadmap]]
+- [[manifesto|manifesto]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

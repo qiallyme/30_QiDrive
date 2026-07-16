@@ -38,7 +38,8 @@ index_scope: ""
 - [[04_worklog_household_tasks|04 worklog household tasks]]
 - [[05_CAREGIVING_WORK|05 CAREGIVING WORK]]
 - [[05_worklog_cancelled_jobs|05 worklog cancelled jobs]]
-- [[E-2026-05-24-001-family-ledger-source|E 2026 05 24 001 family ledger source]]
-- [[E-2026-06-28-003-financial-loss-expansion|E 2026 06 28 003 financial loss expansion]]
+- [[e_2026_05_24_001_family_ledger_source|e 2026 05 24 001 family ledger source]]
+- [[e_2026_06_28_003_financial_loss_expansion|e 2026 06 28 003 financial loss expansion]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[2026-05-29_Unclaimed-property|2026 05 29 Unclaimed property]]
+- [[2026-05-29_unclaimed_property|2026 05 29 unclaimed property]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

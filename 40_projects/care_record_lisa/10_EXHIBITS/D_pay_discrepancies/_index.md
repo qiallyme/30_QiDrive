@@ -36,6 +36,7 @@ index_scope: ""
 - [[D02_hours_worked_vs_paid|D02 hours worked vs paid]]
 - [[D03_missed_punches_and_corrections|D03 missed punches and corrections]]
 - [[D_pay_discrepancies|D pay discrepancies]]
-- [[E-2026-06-10-002-pay-clocking-dispute|E 2026 06 10 002 pay clocking dispute]]
+- [[e_2026_06_10_002_pay_clocking_dispute|e 2026 06 10 002 pay clocking dispute]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

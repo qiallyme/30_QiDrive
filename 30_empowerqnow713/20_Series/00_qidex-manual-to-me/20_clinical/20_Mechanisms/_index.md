@@ -31,6 +31,9 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/20_Mechanisms/_mechanism_template| mechanism template]]
+- [[mechanism_template|mechanism template]]
+- [[mechanism_template_1|mechanism template 1]]
+- [[stress_body_response|stress body response]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

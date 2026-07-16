@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/30_Manifestations/50_shutdown in high conflict/shutdown_high_conflict|shutdown high conflict]]
+- [[shutdown_high_conflict|shutdown high conflict]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

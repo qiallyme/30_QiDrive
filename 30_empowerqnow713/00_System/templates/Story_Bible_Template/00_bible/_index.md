@@ -52,3 +52,25 @@ template_key: master-template
 **Primary platform:** QSaysIt  
 **Current phase:**  
 **Next decision:**
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[01_project_identity|01 project identity]]
+- [[02_core_thesis_and_purpose|02 core thesis and purpose]]
+- [[03_manifesto|03 manifesto]]
+- [[04_audience|04 audience]]
+- [[05_themes_and_motifs|05 themes and motifs]]
+- [[06_voice_and_style|06 voice and style]]
+- [[07_canon_and_boundaries|07 canon and boundaries]]
+- [[08_structure_and_outline|08 structure and outline]]
+- [[09_content_map|09 content map]]
+- [[10_seed_bank|10 seed bank]]
+- [[11_research_and_sources|11 research and sources]]
+- [[12_glossary|12 glossary]]
+- [[13_connections|13 connections]]
+- [[14_publishing_notes|14 publishing notes]]
+- [[15_continuity_log|15 continuity log]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

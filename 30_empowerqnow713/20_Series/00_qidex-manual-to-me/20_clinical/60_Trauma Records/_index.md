@@ -31,6 +31,12 @@ index_scope: ""
 
 ## Housekeeping Index
 
+- [[03_Traumas|03 Traumas]]
+- [[2023_business_collapse|2023 business collapse]]
+- [[trauma_capsule_template|trauma capsule template]]
 - [[trauma_neurobiology|trauma neurobiology]]
+- [[trauma_safe_summary|trauma safe summary]]
+- [[trauma_template|trauma template]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

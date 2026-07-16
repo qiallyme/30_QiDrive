@@ -60,3 +60,15 @@ Use this name for each application folder: `YYYY-MM-DD_company_role`.
 - [ ] Export a clean PDF résumé after final fact check
 
 Research checked: 2026-07-16. Openings can close without notice; verify the company page immediately before applying.
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[01_candidate_profile|01 candidate profile]]
+- [[02_open_jobs|02 open jobs]]
+- [[03_application_kit|03 application kit]]
+- [[04_application_tracker|04 application tracker]]
+- [[05_interview_prep|05 interview prep]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

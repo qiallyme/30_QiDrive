@@ -23,3 +23,17 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2024-10-02_event_youtube_analysis|2024 10 02 event youtube analysis]]
+- [[2025-03-15_event_worked_remote|2025 03 15 event worked remote]]
+- [[2025-03-19_event_very_ill|2025 03 19 event very ill]]
+- [[2025-05-16_event_chatgpt_boundaries|2025 05 16 event chatgpt boundaries]]
+- [[2025-10-16_event_argument_transcript|2025 10 16 event argument transcript]]
+- [[2025-11-19_event_building_bridges|2025 11 19 event building bridges]]
+- [[2025-11-19_qivault_building_bridges_understanding|2025 11 19 qivault building bridges understanding]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

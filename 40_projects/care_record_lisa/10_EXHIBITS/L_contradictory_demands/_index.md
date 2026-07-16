@@ -31,11 +31,12 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[E-2026-06-07-002-lisa-threatens-police|E 2026 06 07 002 lisa threatens police]]
 - [[L00_contradictory_demands_summary|L00 contradictory demands summary]]
 - [[L01_coming_home_not_coming_home|L01 coming home not coming home]]
 - [[L02_get_out_police_threats|L02 get out police threats]]
 - [[L03_utilities_and_responsibility_shift|L03 utilities and responsibility shift]]
 - [[L_contradictory_demands|L contradictory demands]]
+- [[e_2026_06_07_002_lisa_threatens_police|e 2026 06 07 002 lisa threatens police]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

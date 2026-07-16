@@ -32,10 +32,13 @@ index_scope: ""
 ## Housekeeping Index
 
 - [[00_STEP_BY_STEP|00 STEP BY STEP]]
+- [[2_50_10_10_1_tandero|2 50 10 10 1 tandero]]
 - [[GIT_LFS_SETUP|GIT LFS SETUP]]
 - [[LOCAL_DEV|LOCAL DEV]]
 - [[LOCAL_STATUS|LOCAL STATUS]]
+- [[QiMobileResourcetolumar|QiMobileResourcetolumar]]
 - [[STEP_BY_STEP_SUPABASE|STEP BY STEP SUPABASE]]
-- [[Streamlining the vendor management and contract si|Streamlining the vendor management and contract si]]
+- [[streamlining_the_vendor_management_and_contract_si|streamlining the vendor management and contract si]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

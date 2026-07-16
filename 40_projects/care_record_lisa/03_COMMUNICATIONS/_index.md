@@ -40,9 +40,10 @@ index_scope: ""
 - [[05_emails_humana|05 emails humana]]
 - [[05_text_message_pattern_summary|05 text message pattern summary]]
 - [[06_COMMUNICATIONS|06 COMMUNICATIONS]]
-- [[E-2026-06-09-001-police-threat-funds-password|E 2026 06 09 001 police threat funds password]]
-- [[E-2026-06-30-004-police-threat-cat|E 2026 06 30 004 police threat cat]]
-- [[E-2026-06-30-006-cat-to-jeep-pivot|E 2026 06 30 006 cat to jeep pivot]]
-- [[E-2026-06-30-007-cops-following-message|E 2026 06 30 007 cops following message]]
+- [[e_2026_06_09_001_police_threat_funds_password|e 2026 06 09 001 police threat funds password]]
+- [[e_2026_06_30_004_police_threat_cat|e 2026 06 30 004 police threat cat]]
+- [[e_2026_06_30_006_cat_to_jeep_pivot|e 2026 06 30 006 cat to jeep pivot]]
+- [[e_2026_06_30_007_cops_following_message|e 2026 06 30 007 cops following message]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

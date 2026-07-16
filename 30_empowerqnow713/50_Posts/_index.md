@@ -31,6 +31,13 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/50_Posts/20_Posts|20 Posts]]
+- [[2025-12-04_high_voltage_moment|2025 12 04 high voltage moment]]
+- [[2025-12-04_qially_com_blog_technical_spec|2025 12 04 qially com blog technical spec]]
+- [[2026-05-18_birthday_boundaries_and_the_cost_of_carrying_everything|2026 05 18 birthday boundaries and the cost of carrying everything]]
+- [[2026-07-02_qisaysit_series_routing_map|2026 07 02 qisaysit series routing map]]
+- [[2026-07-02_qsaysit_prompt_pack_by_series|2026 07 02 qsaysit prompt pack by series]]
+- [[2026-07-02_qsaysit_top10_hero_video_prompt_pack|2026 07 02 qsaysit top10 hero video prompt pack]]
+- [[20_Posts|20 Posts]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -32,5 +32,11 @@ index_scope: ""
 ## Housekeeping Index
 
 - [[10_ADHD|10 ADHD]]
+- [[adhd_coping_strategies|adhd coping strategies]]
+- [[adhd_memory_problems|adhd memory problems]]
+- [[adhd_operating_notes|adhd operating notes]]
+- [[adhd_rejection_sensitivity|adhd rejection sensitivity]]
+- [[what_is_the_adhd_tax|what is the adhd tax]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

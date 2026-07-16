@@ -31,7 +31,15 @@ index_scope: ""
 
 ## Housekeeping Index
 
+- [[10_5_phonophobia|10 5 phonophobia]]
+- [[10_6_depression|10 6 depression]]
+- [[10_7_ptsd|10 7 ptsd]]
+- [[10_8_anxiety|10 8 anxiety]]
+- [[10_9_adhd|10 9 adhd]]
 - [[10_Conditions|10 Conditions]]
-- [[_condition_template| condition template]]
+- [[DEPRESSION|DEPRESSION]]
+- [[c1_inventory|c1 inventory]]
+- [[condition_template|condition template]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[01 — The Awakening of Angela|01 — The Awakening of Angela]]
+- [[01_the_awakening_of_angela|01 the awakening of angela]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

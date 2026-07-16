@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[caregiver_assessment_master_markdown_v5|caregiver assessment master markdown v5]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

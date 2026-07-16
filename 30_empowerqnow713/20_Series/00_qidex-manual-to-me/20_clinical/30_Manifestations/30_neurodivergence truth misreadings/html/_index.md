@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[truthfulness_anxiety_phenotype_infographic.html|truthfulness anxiety phenotype infographic.html]]
+- [[truthfulness_anxiety_phenotype_infographic_html|truthfulness anxiety phenotype infographic html]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

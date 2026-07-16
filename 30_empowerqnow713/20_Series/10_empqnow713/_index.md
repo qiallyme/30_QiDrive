@@ -40,3 +40,15 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[01_empowerqnow713|01 empowerqnow713]]
+- [[04_empowerqnow_the_living_qidex|04 empowerqnow the living qidex]]
+- [[empowerqnow713_mapped_to_sacred_teachings|empowerqnow713 mapped to sacred teachings]]
+- [[empowerqnow713_the_living_code|empowerqnow713 the living code]]
+- [[manifesto|manifesto]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

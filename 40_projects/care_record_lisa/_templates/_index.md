@@ -31,13 +31,14 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[00_template.universal_record|00 template.universal record]]
-- [[01_template.formal_record|01 template.formal record]]
-- [[02_template.timeline|02 template.timeline]]
-- [[03_template.exhibit|03 template.exhibit]]
-- [[04_template.ledger|04 template.ledger]]
-- [[05_template.worklog|05 template.worklog]]
-- [[06_template.communication|06 template.communication]]
-- [[07_template.raw_evidence|07 template.raw evidence]]
+- [[00_template_universal_record|00 template universal record]]
+- [[01_template_formal_record|01 template formal record]]
+- [[02_template_timeline|02 template timeline]]
+- [[03_template_exhibit|03 template exhibit]]
+- [[04_template_ledger|04 template ledger]]
+- [[05_template_worklog|05 template worklog]]
+- [[06_template_communication|06 template communication]]
+- [[07_template_raw_evidence|07 template raw evidence]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

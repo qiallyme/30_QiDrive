@@ -39,12 +39,13 @@ index_scope: ""
 - [[03_timeline_mom_care_safety_conflict|03 timeline mom care safety conflict]]
 - [[04_timeline_escalation_and_contradictions|04 timeline escalation and contradictions]]
 - [[2026-06-27_master_timeline_cody_situation_source|2026 06 27 master timeline cody situation source]]
-- [[E-2026-04-10-001-caregiving-tracking-begins|E 2026 04 10 001 caregiving tracking begins]]
-- [[E-2026-06-27-001-master-timeline-source|E 2026 06 27 001 master timeline source]]
-- [[E-2026-06-30-012-otis-housing-theory|E 2026 06 30 012 otis housing theory]]
-- [[E-2026-06-30-018-folder-tree-duplication|E 2026 06 30 018 folder tree duplication]]
-- [[E-2026-06-30-019-google-sheet-spine-decision|E 2026 06 30 019 google sheet spine decision]]
-- [[E-2026-06-30-020-simplified-mvp-spreadsheet|E 2026 06 30 020 simplified mvp spreadsheet]]
-- [[E-2026-06-30-021-populated-mvp-csv|E 2026 06 30 021 populated mvp csv]]
+- [[e_2026_04_10_001_caregiving_tracking_begins|e 2026 04 10 001 caregiving tracking begins]]
+- [[e_2026_06_27_001_master_timeline_source|e 2026 06 27 001 master timeline source]]
+- [[e_2026_06_30_012_otis_housing_theory|e 2026 06 30 012 otis housing theory]]
+- [[e_2026_06_30_018_folder_tree_duplication|e 2026 06 30 018 folder tree duplication]]
+- [[e_2026_06_30_019_google_sheet_spine_decision|e 2026 06 30 019 google sheet spine decision]]
+- [[e_2026_06_30_020_simplified_mvp_spreadsheet|e 2026 06 30 020 simplified mvp spreadsheet]]
+- [[e_2026_06_30_021_populated_mvp_csv|e 2026 06 30 021 populated mvp csv]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -40,3 +40,12 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2026-07-02_qsaysit_prompt_pack_by_series|2026 07 02 qsaysit prompt pack by series]]
+- [[2026-07-02_qsaysit_top10_hero_video_prompt_pack|2026 07 02 qsaysit top10 hero video prompt pack]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[self-trust_distortions|self trust distortions]]
+- [[self_trust_distortions|self trust distortions]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

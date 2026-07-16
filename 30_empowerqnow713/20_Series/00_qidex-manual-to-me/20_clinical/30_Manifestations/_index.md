@@ -31,10 +31,17 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[10 10 Correspondence Anxiety|10 10 Correspondence Anxiety]]
-- [[10 9b Focus Irregularities and How They Impact Dai|10 9b Focus Irregularities and How They Impact Dai]]
-- [[_manifestation_capsule_template| manifestation capsule template]]
-- [[_manifestation_template| manifestation template]]
-- [[_manifestation_template2| manifestation template2]]
+- [[10_10_correspondence_anxiety|10 10 correspondence anxiety]]
+- [[10_9a_time_management_challenges_in_neurodivergent|10 9a time management challenges in neurodivergent]]
+- [[10_9b_focus_irregularities_and_how_they_impact_dai|10 9b focus irregularities and how they impact dai]]
+- [[dissociation_under_threat|dissociation under threat]]
+- [[manifestation_capsule_template|manifestation capsule template]]
+- [[manifestation_template|manifestation template]]
+- [[manifestation_template2|manifestation template2]]
+- [[neurodivergence_anxiety_and_misinterpreted_truthfulness|neurodivergence anxiety and misinterpreted truthfulness]]
+- [[neurodivergence_truth_misreadings|neurodivergence truth misreadings]]
+- [[pattern_self_victimizing_narcissistic_cycling|pattern self victimizing narcissistic cycling]]
+- [[shutdown_high_conflict|shutdown high conflict]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

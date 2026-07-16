@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[E-2026-06-30-011-otis-safety-context|E 2026 06 30 011 otis safety context]]
+- [[e_2026_06_30_011_otis_safety_context|e 2026 06 30 011 otis safety context]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

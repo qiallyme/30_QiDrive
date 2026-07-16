@@ -31,6 +31,13 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/40_Navigation_Strategies/_strategy_template| strategy template]]
+- [[2025-03-05_1906_adhd_tips|2025 03 05 1906 adhd tips]]
+- [[conflict_navigation_protocol|conflict navigation protocol]]
+- [[core_principles_for_adhd_friendly_organization_9|core principles for adhd friendly organization 9]]
+- [[dr_martha_beck_this_weird_trick_reduces_anxiety_and_fixed_my_childhood_trauma|dr martha beck this weird trick reduces anxiety and fixed my childhood trauma]]
+- [[mental_health_support|mental health support]]
+- [[strategy_template|strategy template]]
+- [[strategy_template_1|strategy template 1]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

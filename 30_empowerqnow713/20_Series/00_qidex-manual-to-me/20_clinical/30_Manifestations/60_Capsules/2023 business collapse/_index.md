@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse/2023_business_collapse|2023 business collapse]]
+- [[2023_business_collapse|2023 business collapse]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

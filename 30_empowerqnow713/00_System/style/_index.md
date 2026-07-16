@@ -40,3 +40,12 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2026-07-02_qsaysit_visual_style_guide|2026 07 02 qsaysit visual style guide]]
+- [[2026-07-02_qsaysit_visual_style_guide_1|2026 07 02 qsaysit visual style guide 1]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

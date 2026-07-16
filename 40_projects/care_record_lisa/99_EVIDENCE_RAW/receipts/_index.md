@@ -34,3 +34,4 @@ index_scope: ""
 - [[receipts|receipts]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

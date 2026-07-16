@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[02_directory/03_places/2026-05-09_s_elliott_st_household_meeting_summary|2026 05 09 s elliott st household meeting summary]]
+- [[2026-05-09_s_elliott_st_household_meeting_summary|2026 05 09 s elliott st household meeting summary]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

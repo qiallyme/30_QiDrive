@@ -38,9 +38,10 @@ index_scope: ""
 - [[04_grandview_tower_community_rules_critique|04 grandview tower community rules critique]]
 - [[06_unsafe_persons_otis_mike_frank_context|06 unsafe persons otis mike frank context]]
 - [[09_THIRD_PARTY_PRESSURE|09 THIRD PARTY PRESSURE]]
-- [[E-2026-05-03-001-otis-room-access|E 2026 05 03 001 otis room access]]
-- [[E-2026-06-15-003-otis-housing-money-pressure|E 2026 06 15 003 otis housing money pressure]]
-- [[E-2026-06-15-004-otis-substance-use-concern|E 2026 06 15 004 otis substance use concern]]
-- [[E-2026-06-30-010-otis-on-lease|E 2026 06 30 010 otis on lease]]
+- [[e_2026_05_03_001_otis_room_access|e 2026 05 03 001 otis room access]]
+- [[e_2026_06_15_003_otis_housing_money_pressure|e 2026 06 15 003 otis housing money pressure]]
+- [[e_2026_06_15_004_otis_substance_use_concern|e 2026 06 15 004 otis substance use concern]]
+- [[e_2026_06_30_010_otis_on_lease|e 2026 06 30 010 otis on lease]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[readme|readme]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

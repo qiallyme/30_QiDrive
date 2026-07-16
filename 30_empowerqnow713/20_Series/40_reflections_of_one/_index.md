@@ -40,3 +40,12 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2025-12-04_high_voltage_moment|2025 12 04 high voltage moment]]
+- [[burden_of_the_signal|burden of the signal]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

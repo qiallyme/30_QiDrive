@@ -38,6 +38,7 @@ index_scope: ""
 - [[04_FINANCIAL_LEDGER|04 FINANCIAL LEDGER]]
 - [[04_ledger_caregiver_pay_gap|04 ledger caregiver pay gap]]
 - [[05_ledger_lost_income|05 ledger lost income]]
-- [[E-2026-01-01-001-financial-support-begins|E 2026 01 01 001 financial support begins]]
+- [[e_2026_01_01_001_financial_support_begins|e 2026 01 01 001 financial support begins]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

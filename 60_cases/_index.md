@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[gemini_export_fcfeu_litigation_fcra_audit|gemini export fcfeu litigation fcra audit]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

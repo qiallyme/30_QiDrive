@@ -40,3 +40,12 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[_qsaysit.com| qsaysit.com]]
+- [[qsaysit_com|qsaysit com]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

@@ -31,10 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[20_life/Luis Palacios/Luis Project – Narcissistic Relationship Analysis-2-2|Luis Project – Narcissistic Relationship Analysis 2 2]]
-- [[20_life/Luis Palacios/Luis Project – Narcissistic Relationship Analysis-2-3|Luis Project – Narcissistic Relationship Analysis 2 3]]
-- [[20_life/Luis Palacios/Luis Project – Narcissistic Relationship Analysis-2|Luis Project – Narcissistic Relationship Analysis 2]]
-- [[20_life/Luis Palacios/Luis Project – Narcissistic Relationship Analysis-3|Luis Project – Narcissistic Relationship Analysis 3]]
-- [[20_life/Luis Palacios/Luis Project – Narcissistic Relationship Analysis|Luis Project – Narcissistic Relationship Analysis]]
+- [[luis_antonio_palacios_de_la_rosa|luis antonio palacios de la rosa]]
+- [[luis_project_narcissistic_relationship_analysis_2_2|luis project narcissistic relationship analysis 2 2]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

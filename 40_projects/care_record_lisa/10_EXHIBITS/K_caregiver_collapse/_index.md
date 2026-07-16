@@ -31,13 +31,14 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[E-2026-06-19-001-hospital-regroup|E 2026 06 19 001 hospital regroup]]
-- [[E-2026-06-26-001-hotel-boundary|E 2026 06 26 001 hotel boundary]]
-- [[E-2026-06-27-002-caregiver-collapse-addendum|E 2026 06 27 002 caregiver collapse addendum]]
 - [[K00_caregiver_collapse_summary|K00 caregiver collapse summary]]
 - [[K01_health_decline|K01 health decline]]
 - [[K02_ambulance_or_hospital_event|K02 ambulance or hospital event]]
 - [[K03_burnout_indicators|K03 burnout indicators]]
 - [[K_caregiver_collapse|K caregiver collapse]]
+- [[e_2026_06_19_001_hospital_regroup|e 2026 06 19 001 hospital regroup]]
+- [[e_2026_06_26_001_hotel_boundary|e 2026 06 26 001 hotel boundary]]
+- [[e_2026_06_27_002_caregiver_collapse_addendum|e 2026 06 27 002 caregiver collapse addendum]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

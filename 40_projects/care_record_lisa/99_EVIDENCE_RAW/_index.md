@@ -33,8 +33,9 @@ index_scope: ""
 
 - [[2026-06-30_source_inventory_review|2026 06 30 source inventory review]]
 - [[99_ARCHIVE_RAW|99 ARCHIVE RAW]]
-- [[E-2026-06-28-001-mom-conversation-transcript|E 2026 06 28 001 mom conversation transcript]]
-- [[E-2026-06-30-002-lisa-asks-cat|E 2026 06 30 002 lisa asks cat]]
-- [[E-2026-06-30-003-cat-food-water-question|E 2026 06 30 003 cat food water question]]
+- [[e_2026_06_28_001_mom_conversation_transcript|e 2026 06 28 001 mom conversation transcript]]
+- [[e_2026_06_30_002_lisa_asks_cat|e 2026 06 30 002 lisa asks cat]]
+- [[e_2026_06_30_003_cat_food_water_question|e 2026 06 30 003 cat food water question]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

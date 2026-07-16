@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[joel_and_cody_immigration_case_management_system|joel and cody immigration case management system]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

@@ -23,3 +23,11 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[PRIVATE_NOTES|PRIVATE NOTES]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

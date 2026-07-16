@@ -39,9 +39,10 @@ index_scope: ""
 - [[08_HOUSING_AND_PROPERTY|08 HOUSING AND PROPERTY]]
 - [[08_property_access_jeep_and_belongings|08 property access jeep and belongings]]
 - [[2026-05-09_s_elliott_st_household_meeting_summary_source|2026 05 09 s elliott st household meeting summary source]]
-- [[E-2026-04-15-001-household-transition|E 2026 04 15 001 household transition]]
-- [[E-2026-05-09-001-household-meeting-summary|E 2026 05 09 001 household meeting summary]]
-- [[E-2026-06-20-003-security-measures|E 2026 06 20 003 security measures]]
-- [[E-2026-06-24-001-lease-utilities|E 2026 06 24 001 lease utilities]]
+- [[e_2026_04_15_001_household_transition|e 2026 04 15 001 household transition]]
+- [[e_2026_05_09_001_household_meeting_summary|e 2026 05 09 001 household meeting summary]]
+- [[e_2026_06_20_003_security_measures|e 2026 06 20 003 security measures]]
+- [[e_2026_06_24_001_lease_utilities|e 2026 06 24 001 lease utilities]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

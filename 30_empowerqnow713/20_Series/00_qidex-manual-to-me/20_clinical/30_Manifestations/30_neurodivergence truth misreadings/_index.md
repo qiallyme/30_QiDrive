@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[30_empowerqnow713/30_Books/04 — The QiDex Manual of Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/neurodivergence_truth_misreadings|neurodivergence truth misreadings]]
+- [[neurodivergence_truth_misreadings|neurodivergence truth misreadings]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

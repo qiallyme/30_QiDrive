@@ -31,9 +31,10 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[_FILE_ORGANIZATION_SUMMARY| FILE ORGANIZATION SUMMARY]]
 - [[_MEDIA_INDEX| MEDIA INDEX]]
 - [[case_analysis_cody_rice_velasquez|case analysis cody rice velasquez]]
+- [[file_organization_summary|file organization summary]]
 - [[media_index|media index]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

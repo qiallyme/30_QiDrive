@@ -31,6 +31,19 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[04 — The QiDex Manual of Me|04 — The QiDex Manual of Me]]
+- [[00_cliff_notes_manual_to_me_cody_s_guide|00 cliff notes manual to me cody s guide]]
+- [[03_how_i_relate_communication_and_boundaries|03 how i relate communication and boundaries]]
+- [[04_how_i_feel_emotional_landscape|04 how i feel emotional landscape]]
+- [[04_the_qidex_manual_of_me|04 the qidex manual of me]]
+- [[06_how_i_operate_routines_and_energy_management|06 how i operate routines and energy management]]
+- [[08_when_i_struggle_overwhelm_shutdown_recovery|08 when i struggle overwhelm shutdown recovery]]
+- [[10_10_correspondence_anxiety|10 10 correspondence anxiety]]
+- [[10_2_sleep_inertia|10 2 sleep inertia]]
+- [[10_5_phonophobia|10 5 phonophobia]]
+- [[10_6_depression|10 6 depression]]
+- [[10_9_adhd|10 9 adhd]]
+- [[10_9b_focus_irregularities_and_how_they_impact_dai|10 9b focus irregularities and how they impact dai]]
+- [[10_learn_more_about|10 learn more about]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

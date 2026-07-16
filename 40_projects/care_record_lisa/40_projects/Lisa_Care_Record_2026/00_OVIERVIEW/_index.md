@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[40_projects/Lisa_Care_Record_2026/40_projects/Lisa_Care_Record_2026/00_OVIERVIEW/index|index]]
+- [[index|index]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

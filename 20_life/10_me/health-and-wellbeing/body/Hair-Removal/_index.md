@@ -31,7 +31,8 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[_Hair-Removal| Hair Removal]]
+- [[hair_removal|hair removal]]
 - [[laser_hair_removal_home|laser hair removal home]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

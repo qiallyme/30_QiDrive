@@ -36,6 +36,7 @@ index_scope: ""
 - [[C02_household_labor|C02 household labor]]
 - [[C03_equipment_setup_teardown|C03 equipment setup teardown]]
 - [[C_caregiving_labor|C caregiving labor]]
-- [[E-TBD-COUCH-001-couch-purchase-pickup|E TBD COUCH 001 couch purchase pickup]]
+- [[e_tbd_couch_001_couch_purchase_pickup|e tbd couch 001 couch purchase pickup]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -16,8 +16,23 @@
               "icon": "calendar-clock",
               "title": "Vault Timeline"
             }
+          },
+          {
+            "id": "949a8c62f2dd1147",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "40_projects/jobs_apply_zai/_index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "_index"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,8 +209,22 @@
       "code-space:Open code space dashboard": false
     }
   },
-  "active": "49c61a034112ae46",
+  "active": "949a8c62f2dd1147",
   "lastOpenFiles": [
+    "40_projects/_index.md",
+    "01_inbox/_index.md",
+    "10_daily/2005/_index.md",
+    "qilabs_full_tree.md",
+    "00_home/_index.md",
+    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0005_fleet_orchestration.md",
+    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0005_fleet_orchestration_2.md",
+    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0004_single_account_modular_mode.md",
+    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0004_single_account_modular_mode_2.md",
+    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0003_band_model.md",
+    "50_QiLabs/10_Qispark/10_QiOS/50_metadata/1_50_meta.md",
+    "02_directory/10_people/cody_j_rice_velasquez.md",
+    "10_daily/_index.md",
+    "01_inbox/ai_chats/_index.md",
     "40_projects/jobs_apply_zai/_index.md",
     "40_projects/jobs_apply_zai/02_open_jobs.md",
     "40_projects/jobs_apply_zai/03_application_kit.md",
@@ -208,21 +237,7 @@
     "40_projects/jobs_apply_zai/30_interviews/README.md",
     "40_projects/jobs_apply_zai/40_assessments/README.md",
     "40_projects/jobs_apply_zai/50_offers_and_onboarding/README.md",
-    "40_projects/jobs_apply_zai/90_closed_and_archive/README.md",
-    "40_projects/jobs_apply_zai/90_closed_and_archive/_index.md",
-    "40_projects/jobs_apply_zai/50_offers_and_onboarding/_index.md",
-    "40_projects/_index.md",
     "40_projects/jobs_apply_zai/00_ZAI_JOB_LAUNCH_BRIEFING.html",
-    "TaskNotes/_index.md",
-    "40_projects/jobs_apply_cody/_index.md",
-    "10_daily/_index.md",
-    "40_projects/jobs_apply_cody/05_interview_prep.md",
-    "40_projects/jobs_apply_cody/04_application_tracker.md",
-    "40_projects/jobs_apply_cody/03_application_kit.md",
-    "40_projects/jobs_apply_cody/02_open_jobs.md",
-    "40_projects/jobs_apply_cody/01_candidate_profile.md",
-    "10_daily/voice_notes/voice_notes.md",
-    "10_daily/voice_notes/_index.md",
     "TaskNotes/Views/agenda-default.base",
     "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/video",
     "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports",

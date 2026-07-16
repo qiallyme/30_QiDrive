@@ -40,3 +40,16 @@ template_key: master-template
 ## Key Information
 
 ## Notes / Actions
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[core_thesis|core thesis]]
+- [[empq_manifesto|empq manifesto]]
+- [[mission_and_purpose|mission and purpose]]
+- [[shared_glossary|shared glossary]]
+- [[shared_voice_principles|shared voice principles]]
+- [[worldview|worldview]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

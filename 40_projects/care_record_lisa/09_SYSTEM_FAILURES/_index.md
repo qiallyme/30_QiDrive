@@ -38,12 +38,13 @@ index_scope: ""
 - [[04_pt_failure_google_it|04 pt failure google it]]
 - [[07_animal_welfare_mr_link_and_gigi|07 animal welfare mr link and gigi]]
 - [[10_SYSTEM_FAILURES|10 SYSTEM FAILURES]]
-- [[E-2026-05-23-001-care-support-escalation|E 2026 05 23 001 care support escalation]]
-- [[E-2026-06-15-001-humana-sfc-termination|E 2026 06 15 001 humana sfc termination]]
-- [[E-2026-06-15-002-humana-meals-pers|E 2026 06 15 002 humana meals pers]]
-- [[E-2026-06-25-002-ck-emails-rehab|E 2026 06 25 002 ck emails rehab]]
-- [[E-2026-06-30-001-mr-link-fed-before-leaving|E 2026 06 30 001 mr link fed before leaving]]
-- [[E-2026-06-30-005-cody-cat-response|E 2026 06 30 005 cody cat response]]
-- [[E-2026-06-30-008-cat-accusation|E 2026 06 30 008 cat accusation]]
+- [[e_2026_05_23_001_care_support_escalation|e 2026 05 23 001 care support escalation]]
+- [[e_2026_06_15_001_humana_sfc_termination|e 2026 06 15 001 humana sfc termination]]
+- [[e_2026_06_15_002_humana_meals_pers|e 2026 06 15 002 humana meals pers]]
+- [[e_2026_06_25_002_ck_emails_rehab|e 2026 06 25 002 ck emails rehab]]
+- [[e_2026_06_30_001_mr_link_fed_before_leaving|e 2026 06 30 001 mr link fed before leaving]]
+- [[e_2026_06_30_005_cody_cat_response|e 2026 06 30 005 cody cat response]]
+- [[e_2026_06_30_008_cat_accusation|e 2026 06 30 008 cat accusation]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

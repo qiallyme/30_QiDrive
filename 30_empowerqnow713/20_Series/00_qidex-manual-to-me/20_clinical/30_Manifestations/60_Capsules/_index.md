@@ -31,6 +31,7 @@ index_scope: ""
 
 ## Housekeeping Index
 
-- [[_manifestation_capsule_template| manifestation capsule template]]
+- [[manifestation_capsule_template|manifestation capsule template]]
 
 <!-- QILABS:HOUSEKEEPING_INDEX_END -->
+

@@ -113,3 +113,15 @@ Use `YYYY-MM-DD_company_role` for every submitted-application folder.
   <div style="font-size:28px;font-weight:900;">THE FOUNDATION IS BUILT.</div>
   <div style="font-size:19px;margin-top:8px;color:#99f6e4;">Now we apply, follow up, interview, and get to work.</div>
 </div>
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[01_candidate_profile|01 candidate profile]]
+- [[02_open_jobs|02 open jobs]]
+- [[03_application_kit|03 application kit]]
+- [[04_application_tracker|04 application tracker]]
+- [[05_interview_prep|05 interview prep]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->

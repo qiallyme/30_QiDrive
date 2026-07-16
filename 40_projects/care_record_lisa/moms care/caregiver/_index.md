@@ -23,3 +23,13 @@ template_key: master-template
 
 ```folder-index-content
 ```
+
+<!-- QILABS:HOUSEKEEPING_INDEX_START -->
+
+## Housekeeping Index
+
+- [[2026-05-26_care_app_architecture_and_schema|2026 05 26 care app architecture and schema]]
+- [[2026-05-26_single_patient_clinical_reality_ai_build_spec|2026 05 26 single patient clinical reality ai build spec]]
+- [[gemini_code_1780084657175|gemini code 1780084657175]]
+
+<!-- QILABS:HOUSEKEEPING_INDEX_END -->
