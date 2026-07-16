@@ -1,30 +1,27 @@
 ---
 layout: page
-type: note
+type: event
 title: "{{title}}"
 slug: "{{title}}"
 summary: ""
 status: active
 visibility: internal
 publish_target: none
-publish_url: /{{title}}
+publish_url: ""
 created_at: "{{date}} {{time}}"
 updated_at: "{{date}} {{time}}"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "{{title}}"
-nav_group: ""
+nav_group: timeline
 nav_order: 999
-nav_hidden: false
+nav_hidden: true
 is_index: false
-parent_ref: ""
+parent_ref: "[[10_daily/_index]]"
 sensitivity: internal
-classification:
-  - blog-post
-realm_label:
-  - empowerqnow
-tags:
-  - EmpowerQNow
+classification: business_internal
+realm_label: ""
+tags: [event]
 keywords: []
 aliases: []
 context: ""
@@ -32,7 +29,7 @@ uid: ""
 canonical_ref: ""
 source_type: manual
 template_key: master-template
-date: ""
+date: "{{date}}"
 event_type: ""
 people: []
 location: ""
@@ -44,8 +41,18 @@ timeline_status: unreviewed
 
 # {{title}}
 
-## Overview
+## What happened
 
-## Key Information
+## Why it matters
 
-## Notes / Actions
+## People and place
+
+## Sources
+
+## Timeline review
+
+- [ ] Date confirmed
+- [ ] People and location confirmed
+- [ ] Duplicate/canonical status reviewed
+- [ ] Source linked
+- [ ] Set `canonical: true` and `timeline_include: true` only when ready

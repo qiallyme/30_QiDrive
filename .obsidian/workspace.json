@@ -1,271 +1,81 @@
 {
   "main": {
-    "id": "5324373015726ba8",
+    "id": "qivault-main",
     "type": "split",
     "children": [
       {
-        "id": "f0e5da678f69d0e4",
+        "id": "qivault-tabs",
         "type": "tabs",
         "children": [
           {
-            "id": "49c61a034112ae46",
+            "id": "home-tab",
             "type": "leaf",
-            "state": {
-              "type": "vault-timeline-view",
-              "state": {},
-              "icon": "calendar-clock",
-              "title": "Vault Timeline"
-            }
+            "state": {"type":"markdown","state":{"file":"00_home/00_home.md","mode":"preview","source":false},"icon":"lucide-home","title":"QiVault Home"}
           },
           {
-            "id": "949a8c62f2dd1147",
+            "id": "projects-tab",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "40_projects/jobs_apply_zai/_index.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_index"
-            }
+            "state": {"type":"markdown","state":{"file":"00_home/projects_dashboard.md","mode":"preview","source":false},"icon":"lucide-list-checks","title":"Projects"}
+          },
+          {
+            "id": "timeline-tab",
+            "type": "leaf",
+            "state": {"type":"markdown","state":{"file":"00_home/timeline_dashboard.md","mode":"preview","source":false},"icon":"lucide-clock-3","title":"Timeline"}
+          },
+          {
+            "id": "vault-timeline-tab",
+            "type": "leaf",
+            "state": {"type":"vault-timeline-view","state":{},"icon":"calendar-clock","title":"Vault Timeline"}
           }
         ],
-        "currentTab": 1
+        "currentTab": 0
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "046b1c4184e578a1",
+    "id": "qivault-left",
     "type": "split",
     "children": [
       {
-        "id": "7511be8e5a32d2db",
+        "id": "navigation-tabs",
         "type": "tabs",
         "children": [
-          {
-            "id": "6eda121786a5714f",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          },
-          {
-            "id": "aa471ea80da359e2",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#moc",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "0c7b3e67efb3ff79",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          }
+          {"id":"files-tab","type":"leaf","state":{"type":"file-explorer","state":{"sortOrder":"alphabetical","autoReveal":true},"icon":"lucide-folder-closed","title":"Files"}},
+          {"id":"search-tab","type":"leaf","state":{"type":"search","state":{"query":"","matchingCase":false,"explainSearch":false,"collapseAll":false,"extraContext":true,"sortOrder":"byModifiedTime"},"icon":"lucide-search","title":"Search"}},
+          {"id":"bookmarks-tab","type":"leaf","state":{"type":"bookmarks","state":{},"icon":"lucide-bookmark","title":"Bookmarks"}}
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 320
   },
   "right": {
-    "id": "a97d5932031af1ea",
+    "id": "qivault-right",
     "type": "split",
     "children": [
       {
-        "id": "a2ba06ae1caaa47b",
+        "id": "context-tabs",
         "type": "tabs",
         "children": [
-          {
-            "id": "2af2b2a61f614763",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "220912108e19682a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "_qiconfig/Templates 1/_index.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for _index"
-            }
-          },
-          {
-            "id": "11c10bc868ae5e41",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "_qiconfig/Templates 1/_index.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from _index"
-            }
-          },
-          {
-            "id": "dd5866ab90413d32",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "872b2d6059761c51",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "_qiconfig/Templates 1/_index.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of _index"
-            }
-          }
+          {"id":"outline-tab","type":"leaf","state":{"type":"outline","state":{"file":"00_home/00_home.md","followCursor":true,"showSearch":false,"searchQuery":""},"icon":"lucide-list","title":"Outline"}},
+          {"id":"backlinks-tab","type":"leaf","state":{"type":"backlink","state":{"file":"00_home/00_home.md","collapseAll":false,"extraContext":true,"sortOrder":"alphabetical","showSearch":false,"searchQuery":"","backlinkCollapsed":false,"unlinkedCollapsed":true},"icon":"links-coming-in","title":"Backlinks"}},
+          {"id":"tags-tab","type":"leaf","state":{"type":"tag","state":{"sortOrder":"frequency","useHierarchy":true,"showSearch":true,"searchQuery":""},"icon":"lucide-tags","title":"Tags"}}
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 401.5,
+    "width": 350,
     "collapsed": true
   },
-  "left-ribbon": {
-    "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-kanban:Create new board": false,
-      "markwhen:Create new Markwhen file": false,
-      "nexus-ai-chat-importer:Nexus AI Chat Importer - Import new file": false,
-      "omnisearch:Omnisearch": false,
-      "semantic-auto-linker:Semantic auto-linker": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "vault-timeline:Open Vault Timeline": false,
-      "templater-obsidian:Templater": false,
-      "smart-connections-visualizer:Open smart connections visualizer": false,
-      "smart-second-brain:Open S2B Chat": false,
-      "webpage-html-export:Export as HTML": false,
-      "smart-lookup:Smart Lookup: Open lookup view": false,
-      "code-space:Open code space dashboard": false
-    }
-  },
-  "active": "949a8c62f2dd1147",
+  "left-ribbon": {"hiddenItems":{}},
+  "active": "home-tab",
   "lastOpenFiles": [
-    "40_projects/_index.md",
-    "01_inbox/_index.md",
-    "10_daily/2005/_index.md",
-    "qilabs_full_tree.md",
-    "00_home/_index.md",
-    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0005_fleet_orchestration.md",
-    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0005_fleet_orchestration_2.md",
-    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0004_single_account_modular_mode.md",
-    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0004_single_account_modular_mode_2.md",
-    "50_QiLabs/10_Qispark/10_QiOS/60_decisions/adr_0003_band_model.md",
-    "50_QiLabs/10_Qispark/10_QiOS/50_metadata/1_50_meta.md",
-    "02_directory/10_people/cody_j_rice_velasquez.md",
-    "10_daily/_index.md",
-    "01_inbox/ai_chats/_index.md",
+    "00_home/00_home.md",
+    "00_home/projects_dashboard.md",
+    "00_home/timeline_dashboard.md",
+    "00_home/inbox_dashboard.md",
     "40_projects/jobs_apply_zai/_index.md",
-    "40_projects/jobs_apply_zai/02_open_jobs.md",
-    "40_projects/jobs_apply_zai/03_application_kit.md",
-    "40_projects/jobs_apply_zai/04_application_tracker.md",
-    "40_projects/jobs_apply_zai/05_interview_prep.md",
-    "40_projects/jobs_apply_zai/01_candidate_profile.md",
-    "40_projects/jobs_apply_zai/10_resume_and_identity/README.md",
-    "40_projects/jobs_apply_zai/20_submissions/README.md",
-    "40_projects/jobs_apply_zai/20_submissions/_submission_template.md",
-    "40_projects/jobs_apply_zai/30_interviews/README.md",
-    "40_projects/jobs_apply_zai/40_assessments/README.md",
-    "40_projects/jobs_apply_zai/50_offers_and_onboarding/README.md",
-    "40_projects/jobs_apply_zai/00_ZAI_JOB_LAUNCH_BRIEFING.html",
-    "TaskNotes/Views/agenda-default.base",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/video",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/reports",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/50_Research/10_case analysis/audio",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/vulnerability cascade",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/conflict navigation protocol",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/adhd manifestations",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/60_Capsules/2023 business collapse",
-    "40_projects/care_record_lisa/_qiconfig/cleanup_2026-06-29_frontmatter/backups_before_frontmatter/30_empowerqnow713/00_Q-Manual-to-Me/20_clinical/30_Manifestations/30_neurodivergence truth misreadings/html",
-    "40_projects/care_record_lisa/99_EVIDENCE_RAW/lisa A. English/health/Results/Screenshot 2026-05-22 at 12.57.25 PM.png",
-    "40_projects/care_record_lisa/moms care/image 1.png",
-    "40_projects/care_record_lisa/moms care/image.png",
-    "40_projects/care_record_lisa/moms care/image 2.png",
-    "30_empowerqnow713/20_Series/2026-07-02_the_burden_of_the_signal_showcase/media/hero.jpg",
-    "30_empowerqnow713/20_Series/90_source_work_public/signal-through-the-system (2).jpg",
-    "30_empowerqnow713/20_Series/90_source_work_public/signal in the system (2).png",
-    "30_empowerqnow713/20_Series/40_reflections_of_one/let god.png",
-    "30_empowerqnow713/20_Series/10_empqnow713/2026-07-02_the_burden_of_the_signal_showcase/media/hero.jpg",
-    "30_empowerqnow713/20_Series/Source Work/signal-through-the-system.jpg",
-    "30_empowerqnow713/90_archive/messy_imports/Untitled.canvas",
-    "30_empowerqnow713/Untitled.canvas",
-    "50_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_runtime_mindmap.canvas",
-    "50_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_00_genesis.canvas",
-    "50_QiLabs/10_Qispark/90_ARCH/legacy/qios_runtime_mindmap.canvas",
-    "50_QiLabs/10_Qispark/90_ARCH/legacy/qios_00_genesis.canvas",
-    "30_empqnow713/Untitled.canvas",
-    "00_home/QiLabs_Root_Canvas.canvas",
-    "41_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_runtime_mindmap.canvas",
-    "41_QiLabs/10_Qispark/10_QiOS/95_reports/50_superseeded/30_from_30_qiserver_legacy/10_legacy/qios_00_genesis.canvas"
+    "40_projects/jobs_apply_cody/_index.md"
   ]
 }

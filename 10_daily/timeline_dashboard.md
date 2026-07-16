@@ -1,35 +1,38 @@
 ---
 layout: page
+type: index
 title: Timeline Dashboard
-slug: timeline-dashboard
-summary: Quick links for chronological and timeline notes.
-status: publish
-updated_at: "2026-07-16T06:49:27-04:00"
-tags: []
-  - dashboard
-  - timeline
-  - home
-source_type: manual
-created_at: "2026-07-16T06:19:39-04:00"
-author: ""
-owner: ""
-keywords: []
-aliases: []
-context: ""
+slug: timeline-dashboard-daily
+summary: Redirect to the canonical timeline dashboard in Home.
+status: active
+visibility: internal
+publish_target: none
+publish_url: ""
+created_at: "2026-07-16"
+updated_at: "2026-07-16"
+author: Cody J. Rice-Velasquez
+owner: Cody
+nav_title: Timeline
+nav_group: daily
+nav_order: 1
+nav_hidden: false
+is_index: true
+parent_ref: "[[10_daily/_index]]"
 sensitivity: internal
 classification: business_internal
 realm_label: ""
+tags: [dashboard, timeline]
+keywords: [timeline, chronology]
+aliases: []
+context: ""
 uid: 0f0df2244e3a4f1aa128f9c5ddb93377
-canonical_ref: ""
+canonical_ref: "[[00_home/timeline_dashboard]]"
+source_type: manual
 template_key: master-template
 ---
 
 # Timeline Dashboard
 
-## Chronological views
+The canonical timeline command center is [[../00_home/timeline_dashboard|Timeline Dashboard]].
 
--[Daily notes](10_daily/02_daily.md))
--[2026 daily notes](2026.md))
--[2025 daily notes](2025.md))
--[Timelines](timelines.md))
-- [Life score](../02_daily/timelines/life_score.md)
+Use [[_index|10 Daily]] to browse records by folder and year.

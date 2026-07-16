@@ -7,9 +7,10 @@
     "downscalePercent": 76
   },
   "alwaysUpdateLinks": true,
-  "promptDelete": false,
-  "newFileLocation": "current",
-  "attachmentFolderPath": "./",
+  "promptDelete": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01_inbox",
+  "attachmentFolderPath": "_attachments",
   "showUnsupportedFiles": true,
   "deleteUnlinkedAttachments": "never",
   "defaultViewMode": "preview"

@@ -14,9 +14,24 @@
   "renderFolderBold": true,
   "renderFolderItalic": true,
   "useBulletPoints": false,
-  "excludeFolders": [],
-  "excludePatterns": [],
-  "recursionLimit": 3,
+  "excludeFolders": [
+    ".git",
+    ".obsidian",
+    ".smart-env",
+    ".neural_memory",
+    ".trash",
+    "_attachments",
+    "_qiconfig",
+    "_system",
+    "90_outputs",
+    "99_archive"
+  ],
+  "excludePatterns": [
+    "(^|/)(media|assets|images|audio|video|attachments)(/|$)",
+    "(^|/)(raw|evidence_raw|backups?|cleanup)(/|$)",
+    "(^|/)20_submissions/[^/]+(/|$)"
+  ],
+  "recursionLimit": 1,
   "headlineLimit": 6,
   "indexFileUserSpecified": true,
   "indexFilename": "_index"
