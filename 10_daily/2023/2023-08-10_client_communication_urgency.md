@@ -3,9 +3,9 @@ layout: page
 title: "Client Communication Urgency"
 slug: "client_communication_urgency"
 created_at: "2023-08-10 19:26:00"
-updated_at: "2023-08-10 19:26:00"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

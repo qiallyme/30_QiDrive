@@ -3,9 +3,9 @@ layout: page
 title: "Factual comparison"
 slug: "factual_comparison"
 created_at: "2025-09-10 08:42:34"
-updated_at: "2025-09-10 08:42:34"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Crafting response email"
 slug: "crafting_response_email"
 created_at: "2025-11-15 07:44:47"
-updated_at: "2025-11-15 07:44:47"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

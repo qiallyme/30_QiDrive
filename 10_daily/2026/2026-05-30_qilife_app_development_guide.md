@@ -3,9 +3,9 @@ layout: page
 title: "QiLife App Development Guide"
 slug: "qilife_app_development_guide"
 created_at: "2026-05-30 18:01:16"
-updated_at: "2026-05-30 18:01:16"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -807,21 +807,36 @@ canonical_ref: ""
 > 4. a **“make me 5 screens” prompt** for faster mockups.
 
 ### User
-> Viewed vizvibe.mmd:1-107
-> Edited vizvibe.mmd
-> Edited task.md
-> 
-> I've fully implemented the v1 mock vertical slice for the QiLife frontend! Here's a breakdown of the completion details:
-> 
-> 1. **New Capture Flow (`/capture`)**: The "What happened?" input in the app shell now functions as a shortcut to a dedicated Capture Page. Here you can write out any raw text or thoughts. 
-> 2. **Mock Agent & Ingestion**: Instead of calling the backend, we process the capture using an in-memory rule engine (`mock-agent.ts`) that simulates categorizing events (e.g. tagging text containing "bill" as "finance" or text containing "doctor" as "care"). 
-> 3. **Review Screen (`/review`)**: This acts as your staging ground. The simulated agent provides its draft (suggested summary, tags, type, priority) which you can freely edit before accepting it into the system.
-> 4. **Timeline Re-wire (`/timeline`)**: The timeline has been updated to query your `localStorage` instead of attempting real API calls. Once you save from the Review page, your new records instantly populate the timeline chronologically.
-> 5. **Persistence**: We are safely keeping your pending drafts and finished timeline items in `localStorage`, so your progress easily survives browser reloads. 
-> 6. **VizVibe Trajectory Updated**: I've successfully mapped this feature addition into the `vizvibe.mmd` context map so that your history accurately represents the work we just did.
-> 
-> To test this out, make sure your Vite dev server is running and try adding a capture like "Need to pay my doctor bill" to see the simulated AI in action. 
-> 
+> Viewed vizvibe.mmd:1-107
+
+> Edited vizvibe.mmd
+
+> Edited task.md
+
+> 
+
+> I've fully implemented the v1 mock vertical slice for the QiLife frontend! Here's a breakdown of the completion details:
+
+> 
+
+> 1. **New Capture Flow (`/capture`)**: The "What happened?" input in the app shell now functions as a shortcut to a dedicated Capture Page. Here you can write out any raw text or thoughts. 
+
+> 2. **Mock Agent & Ingestion**: Instead of calling the backend, we process the capture using an in-memory rule engine (`mock-agent.ts`) that simulates categorizing events (e.g. tagging text containing "bill" as "finance" or text containing "doctor" as "care"). 
+
+> 3. **Review Screen (`/review`)**: This acts as your staging ground. The simulated agent provides its draft (suggested summary, tags, type, priority) which you can freely edit before accepting it into the system.
+
+> 4. **Timeline Re-wire (`/timeline`)**: The timeline has been updated to query your `localStorage` instead of attempting real API calls. Once you save from the Review page, your new records instantly populate the timeline chronologically.
+
+> 5. **Persistence**: We are safely keeping your pending drafts and finished timeline items in `localStorage`, so your progress easily survives browser reloads. 
+
+> 6. **VizVibe Trajectory Updated**: I've successfully mapped this feature addition into the `vizvibe.mmd` context map so that your history accurately represents the work we just did.
+
+> 
+
+> To test this out, make sure your Vite dev server is running and try adding a capture like "Need to pay my doctor bill" to see the simulated AI in action. 
+
+> 
+
 > You can find a summary of the implementation and usage in the new `README.md` and the walkthrough artifact I created! Let me know if you want any further refinements to the UI or categorization logic.
 
 ### Assistant
@@ -1716,50 +1731,94 @@ canonical_ref: ""
 > So: **Cloudflare Pages for frontend, qiserver for real backend, Cloudflare Tunnel/Worker as the bridge.**
 
 ### User
-> 2026-05-30T23:53:51.624072Z	Cloning repository...
-> 2026-05-30T23:53:53.295719Z	From https://github.com/qiallyme/qilife
-> 2026-05-30T23:53:53.296138Z	 * branch            90a9ba9b3d0f3650a05e3dd746f69f0c9972572b -> FETCH_HEAD
-> 2026-05-30T23:53:53.296222Z	
-> 2026-05-30T23:53:53.352904Z	HEAD is now at 90a9ba9 init app
-> 2026-05-30T23:53:53.353553Z	
-> 2026-05-30T23:53:53.412416Z	
-> 2026-05-30T23:53:53.412951Z	Using v2 root directory strategy
-> 2026-05-30T23:53:53.426912Z	Success: Finished cloning repository files
-> 2026-05-30T23:53:55.575135Z	Checking for configuration in a Wrangler configuration file (BETA)
-> 2026-05-30T23:53:55.575681Z	
-> 2026-05-30T23:53:55.746287Z	No Wrangler configuration file found. Continuing.
-> 2026-05-30T23:53:56.155395Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
-> 2026-05-30T23:53:56.155899Z	Installing project dependencies: npm clean-install --progress=false
-> 2026-05-30T23:53:58.272175Z	npm error code EUSAGE
-> 2026-05-30T23:53:58.272577Z	npm error
-> 2026-05-30T23:53:58.272662Z	npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
-> 2026-05-30T23:53:58.272727Z	npm error
-> 2026-05-30T23:53:58.272782Z	npm error Missing: lucide-react@0.544.0 from lock file
-> 2026-05-30T23:53:58.272835Z	npm error
-> 2026-05-30T23:53:58.272886Z	npm error Clean install a project
-> 2026-05-30T23:53:58.27294Z	npm error
-> 2026-05-30T23:53:58.272994Z	npm error Usage:
-> 2026-05-30T23:53:58.273165Z	npm error npm ci
-> 2026-05-30T23:53:58.273254Z	npm error
-> 2026-05-30T23:53:58.273326Z	npm error Options:
-> 2026-05-30T23:53:58.273386Z	npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
-> 2026-05-30T23:53:58.273446Z	npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
-> 2026-05-30T23:53:58.273497Z	npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
-> 2026-05-30T23:53:58.273557Z	npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
-> 2026-05-30T23:53:58.273618Z	npm error [--no-bin-links] [--no-fund] [--dry-run]
-> 2026-05-30T23:53:58.273669Z	npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
-> 2026-05-30T23:53:58.273704Z	npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
-> 2026-05-30T23:53:58.273736Z	npm error
-> 2026-05-30T23:53:58.273767Z	npm error aliases: clean-install, ic, install-clean, isntall-clean
-> 2026-05-30T23:53:58.273803Z	npm error
-> 2026-05-30T23:53:58.273838Z	npm error Run "npm help ci" for more info
-> 2026-05-30T23:53:58.273874Z	npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-05-30T23_53_56_871Z-debug-0.log
-> 2026-05-30T23:53:58.333649Z	Error: Exit with error code: 1
-> 2026-05-30T23:53:58.333883Z	    at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
-> 2026-05-30T23:53:58.334112Z	    at Object.onceWrapper (node:events:652:26)
-> 2026-05-30T23:53:58.334216Z	    at ChildProcess.emit (node:events:537:28)
-> 2026-05-30T23:53:58.334283Z	    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
-> 2026-05-30T23:53:58.339689Z	Failed: build command exited with code: 1
+> 2026-05-30T23:53:51.624072Z	Cloning repository...
+
+> 2026-05-30T23:53:53.295719Z	From https://github.com/qiallyme/qilife
+
+> 2026-05-30T23:53:53.296138Z	 * branch            90a9ba9b3d0f3650a05e3dd746f69f0c9972572b -> FETCH_HEAD
+
+> 2026-05-30T23:53:53.296222Z	
+
+> 2026-05-30T23:53:53.352904Z	HEAD is now at 90a9ba9 init app
+
+> 2026-05-30T23:53:53.353553Z	
+
+> 2026-05-30T23:53:53.412416Z	
+
+> 2026-05-30T23:53:53.412951Z	Using v2 root directory strategy
+
+> 2026-05-30T23:53:53.426912Z	Success: Finished cloning repository files
+
+> 2026-05-30T23:53:55.575135Z	Checking for configuration in a Wrangler configuration file (BETA)
+
+> 2026-05-30T23:53:55.575681Z	
+
+> 2026-05-30T23:53:55.746287Z	No Wrangler configuration file found. Continuing.
+
+> 2026-05-30T23:53:56.155395Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+
+> 2026-05-30T23:53:56.155899Z	Installing project dependencies: npm clean-install --progress=false
+
+> 2026-05-30T23:53:58.272175Z	npm error code EUSAGE
+
+> 2026-05-30T23:53:58.272577Z	npm error
+
+> 2026-05-30T23:53:58.272662Z	npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+
+> 2026-05-30T23:53:58.272727Z	npm error
+
+> 2026-05-30T23:53:58.272782Z	npm error Missing: lucide-react@0.544.0 from lock file
+
+> 2026-05-30T23:53:58.272835Z	npm error
+
+> 2026-05-30T23:53:58.272886Z	npm error Clean install a project
+
+> 2026-05-30T23:53:58.27294Z	npm error
+
+> 2026-05-30T23:53:58.272994Z	npm error Usage:
+
+> 2026-05-30T23:53:58.273165Z	npm error npm ci
+
+> 2026-05-30T23:53:58.273254Z	npm error
+
+> 2026-05-30T23:53:58.273326Z	npm error Options:
+
+> 2026-05-30T23:53:58.273386Z	npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+
+> 2026-05-30T23:53:58.273446Z	npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+
+> 2026-05-30T23:53:58.273497Z	npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+
+> 2026-05-30T23:53:58.273557Z	npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]
+
+> 2026-05-30T23:53:58.273618Z	npm error [--no-bin-links] [--no-fund] [--dry-run]
+
+> 2026-05-30T23:53:58.273669Z	npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+
+> 2026-05-30T23:53:58.273704Z	npm error [-ws|--workspaces] [--include-workspace-root] [--install-links]
+
+> 2026-05-30T23:53:58.273736Z	npm error
+
+> 2026-05-30T23:53:58.273767Z	npm error aliases: clean-install, ic, install-clean, isntall-clean
+
+> 2026-05-30T23:53:58.273803Z	npm error
+
+> 2026-05-30T23:53:58.273838Z	npm error Run "npm help ci" for more info
+
+> 2026-05-30T23:53:58.273874Z	npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-05-30T23_53_56_871Z-debug-0.log
+
+> 2026-05-30T23:53:58.333649Z	Error: Exit with error code: 1
+
+> 2026-05-30T23:53:58.333883Z	    at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
+
+> 2026-05-30T23:53:58.334112Z	    at Object.onceWrapper (node:events:652:26)
+
+> 2026-05-30T23:53:58.334216Z	    at ChildProcess.emit (node:events:537:28)
+
+> 2026-05-30T23:53:58.334283Z	    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+
+> 2026-05-30T23:53:58.339689Z	Failed: build command exited with code: 1
+
 > 2026-05-30T23:53:59.083455Z	Failed: error occurred while running build command
 
 ### Assistant
@@ -1858,35 +1917,64 @@ canonical_ref: ""
 > This is a normal deploy papercut. Annoying, not serious.
 
 ### User
-> 2026-05-30T23:56:31.698412Z	Cloning repository...
-> 2026-05-30T23:56:32.59513Z	From https://github.com/qiallyme/qilife
-> 2026-05-30T23:56:32.595687Z	 * branch            ea9cadcaa7bd5f34c521b682129d59c233a36fb1 -> FETCH_HEAD
-> 2026-05-30T23:56:32.595847Z	
-> 2026-05-30T23:56:32.648415Z	HEAD is now at ea9cadc fix
-> 2026-05-30T23:56:32.648887Z	
-> 2026-05-30T23:56:32.700047Z	
-> 2026-05-30T23:56:32.700455Z	Using v2 root directory strategy
-> 2026-05-30T23:56:32.714316Z	Success: Finished cloning repository files
-> 2026-05-30T23:56:34.163843Z	Checking for configuration in a Wrangler configuration file (BETA)
-> 2026-05-30T23:56:34.164371Z	
-> 2026-05-30T23:56:34.351122Z	No Wrangler configuration file found. Continuing.
-> 2026-05-30T23:56:34.54184Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
-> 2026-05-30T23:56:34.542256Z	Installing project dependencies: npm clean-install --progress=false
-> 2026-05-30T23:56:38.341256Z	
-> 2026-05-30T23:56:38.341732Z	added 74 packages, and audited 75 packages in 3s
-> 2026-05-30T23:56:38.341837Z	
-> 2026-05-30T23:56:38.341898Z	10 packages are looking for funding
-> 2026-05-30T23:56:38.341942Z	  run `npm fund` for details
-> 2026-05-30T23:56:38.342638Z	
-> 2026-05-30T23:56:38.34282Z	found 0 vulnerabilities
-> 2026-05-30T23:56:38.412414Z	Executing user command: npm run build
-> 2026-05-30T23:56:38.705992Z	
-> 2026-05-30T23:56:38.706311Z	> qilife-frontend@0.1.0 build
-> 2026-05-30T23:56:38.706383Z	> tsc -b && vite build
-> 2026-05-30T23:56:38.706426Z	
-> 2026-05-30T23:56:40.13714Z	src/App.tsx(98,1): error TS1128: Declaration or statement expected.
-> 2026-05-30T23:56:40.364918Z	Failed: Error while executing user command. Exited with error code: 2
-> 2026-05-30T23:56:40.372036Z	Failed: build command exited with code: 1
+> 2026-05-30T23:56:31.698412Z	Cloning repository...
+
+> 2026-05-30T23:56:32.59513Z	From https://github.com/qiallyme/qilife
+
+> 2026-05-30T23:56:32.595687Z	 * branch            ea9cadcaa7bd5f34c521b682129d59c233a36fb1 -> FETCH_HEAD
+
+> 2026-05-30T23:56:32.595847Z	
+
+> 2026-05-30T23:56:32.648415Z	HEAD is now at ea9cadc fix
+
+> 2026-05-30T23:56:32.648887Z	
+
+> 2026-05-30T23:56:32.700047Z	
+
+> 2026-05-30T23:56:32.700455Z	Using v2 root directory strategy
+
+> 2026-05-30T23:56:32.714316Z	Success: Finished cloning repository files
+
+> 2026-05-30T23:56:34.163843Z	Checking for configuration in a Wrangler configuration file (BETA)
+
+> 2026-05-30T23:56:34.164371Z	
+
+> 2026-05-30T23:56:34.351122Z	No Wrangler configuration file found. Continuing.
+
+> 2026-05-30T23:56:34.54184Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+
+> 2026-05-30T23:56:34.542256Z	Installing project dependencies: npm clean-install --progress=false
+
+> 2026-05-30T23:56:38.341256Z	
+
+> 2026-05-30T23:56:38.341732Z	added 74 packages, and audited 75 packages in 3s
+
+> 2026-05-30T23:56:38.341837Z	
+
+> 2026-05-30T23:56:38.341898Z	10 packages are looking for funding
+
+> 2026-05-30T23:56:38.341942Z	  run `npm fund` for details
+
+> 2026-05-30T23:56:38.342638Z	
+
+> 2026-05-30T23:56:38.34282Z	found 0 vulnerabilities
+
+> 2026-05-30T23:56:38.412414Z	Executing user command: npm run build
+
+> 2026-05-30T23:56:38.705992Z	
+
+> 2026-05-30T23:56:38.706311Z	> qilife-frontend@0.1.0 build
+
+> 2026-05-30T23:56:38.706383Z	> tsc -b && vite build
+
+> 2026-05-30T23:56:38.706426Z	
+
+> 2026-05-30T23:56:40.13714Z	src/App.tsx(98,1): error TS1128: Declaration or statement expected.
+
+> 2026-05-30T23:56:40.364918Z	Failed: Error while executing user command. Exited with error code: 2
+
+> 2026-05-30T23:56:40.372036Z	Failed: build command exited with code: 1
+
 > 2026-05-30T23:56:40.978014Z	Failed: error occurred while running build command
 
 ### Assistant
@@ -2650,83 +2738,160 @@ canonical_ref: ""
 > That’s the move. Load him up, but with rails. Otherwise he’ll go build a “beautiful future dashboard” while the actions still don’t populate. Bad trade.
 
 ### User
-> • 1. Files changed: README.md, docs/70_deployment/00_local_dev.md, backend/
->      app/main.py, frontend/src/App.tsx, frontend/src/api/client.ts, frontend/
->      src/components/app-shell.tsx, frontend/src/components/context-dock.tsx,
->      frontend/src/components/quick-capture.tsx, frontend/src/hooks/use-
->      api.ts, frontend/src/pages/actions-page.tsx, frontend/src/pages/capture-
->      page.tsx, frontend/src/pages/review-page.tsx, frontend/src/pages/
->      shared.tsx, frontend/src/pages/timeline-page.tsx, frontend/src/pages/
->      today-page.tsx, frontend/src/pages/knowledge-page.tsx, frontend/src/
->      pages/more-page.tsx, frontend/src/styles.css, frontend/src/types.ts,
->      frontend/src/utils/mock-agent.ts, frontend/src/utils/storage.ts.
->      Unrelated repo state: frontend/src/pages/threads-page.tsx was already
->      dirty and I did not use it for this task. .git/index.lock also exists in
->      the repo.
-> 
->   2. Build result: frontend/npm run build passes. Production bundle no longer
->      carries an app-level localhost:8000 fallback. The only localhost string
->      left in dist is React Router’s internal parser constant, not an API
->      target.
-> 
->   3. Example capture tested: all four requested cases A-D were exercised
->      through a compiled localStorage-backed validation script, plus an
->      action-status update check. I did not run a browser UI smoke test.
-> 
->   4. Generated QiBit result:
->      A produced care, title Mom oxygen drop after chair transfer, summary Mom
->      had lower oxygen after moving to the chair; doctor follow-up needed.,
->      priority high, space Moms Care.
->      B produced finance, title Pay electric bill and save receipt, priority
->      medium, space Finance.
->      C produced legal, title Court filing deadline and motion prep, priority
->      high, space Legal.
->      D produced tech, title Cloudflare build failed from package lock
->      mismatch, priority high, space Tech.
-> 
->   5. Generated action result:
->      A generated Call doctor tomorrow about oxygen drop after transfer.
->      B generated Pay the electric bill Friday and Save receipt.
->      C generated Finish motion and Organize exhibits.
->      D generated no action, which matches the technical-incident case.
-> 
->   6. Whether Today dashboard now updates from real saved state: yes. Today
->      now reads pending draft, saved QiBits, open actions, recent timeline
->      items, and agent insights from local storage-backed saved state rather
->      than isolated page-local mock output.
-> 
->   7. Whether Timeline updates: yes. Saving from Review writes a timeline
->      entry with title, summary, type, priority, tags, space, linked actions,
->      and agent insight, and that data survives refresh.
-> 
->   8. Whether Actions updates: yes. Generated actions are persisted, shown
->      with linked QiBit title and due hint, and marking an action done updates
->      both stored actions and linked timeline action status.
-> 
->   9. Backend readiness summary:
->      uvicorn imports cleanly: I verified python -c "import uvicorn; from
->      app.main import app" in backend/.
->      Active SQLite path: C:\QiLabs\60_QiApps\_qilife\data\db\qilife.sqlite.
->      Existing routes confirmed: /api/health, /api/qibits, /api/qibits/
->      capture, /api/qibits/{id}, /api/qibits/{id}/triage, /api/actions, /api/
->      actions/{id}, /api/actions/{id}/steps, /api/timeline, plus buckets/
->      people/threads.
->      Quick backend fix made: CORS now also allows local preview on 4173 and
->      *.pages.dev.
->      Missing for real frontend integration: a docs/knowledge categories
->      endpoint, a review-save endpoint that accepts final QiBit plus actions
->      in one request, richer QiBit persistence fields for the reviewed draft
->      shape, and a richer backend timeline payload that includes summary/tags/
->      space/insight/linked actions.
-> 
->   10. Remaining blockers:
->      No backend docs endpoint yet, so Knowledge is a clean placeholder plus
->      repo-doc explanation, not a live index.
->      The frontend save loop is still localStorage-first until the backend
->      gains the richer save/review APIs.
->      I did not run a rendered browser QA pass, so visual/runtime verification
->      is build-plus-logic level, not screenshot/UI level.
->      The repo has a pre-existing frontend/src/pages/threads-page.tsx diff
+> • 1. Files changed: README.md, docs/70_deployment/00_local_dev.md, backend/
+
+>      app/main.py, frontend/src/App.tsx, frontend/src/api/client.ts, frontend/
+
+>      src/components/app-shell.tsx, frontend/src/components/context-dock.tsx,
+
+>      frontend/src/components/quick-capture.tsx, frontend/src/hooks/use-
+
+>      api.ts, frontend/src/pages/actions-page.tsx, frontend/src/pages/capture-
+
+>      page.tsx, frontend/src/pages/review-page.tsx, frontend/src/pages/
+
+>      shared.tsx, frontend/src/pages/timeline-page.tsx, frontend/src/pages/
+
+>      today-page.tsx, frontend/src/pages/knowledge-page.tsx, frontend/src/
+
+>      pages/more-page.tsx, frontend/src/styles.css, frontend/src/types.ts,
+
+>      frontend/src/utils/mock-agent.ts, frontend/src/utils/storage.ts.
+
+>      Unrelated repo state: frontend/src/pages/threads-page.tsx was already
+
+>      dirty and I did not use it for this task. .git/index.lock also exists in
+
+>      the repo.
+
+> 
+
+>   2. Build result: frontend/npm run build passes. Production bundle no longer
+
+>      carries an app-level localhost:8000 fallback. The only localhost string
+
+>      left in dist is React Router’s internal parser constant, not an API
+
+>      target.
+
+> 
+
+>   3. Example capture tested: all four requested cases A-D were exercised
+
+>      through a compiled localStorage-backed validation script, plus an
+
+>      action-status update check. I did not run a browser UI smoke test.
+
+> 
+
+>   4. Generated QiBit result:
+
+>      A produced care, title Mom oxygen drop after chair transfer, summary Mom
+
+>      had lower oxygen after moving to the chair; doctor follow-up needed.,
+
+>      priority high, space Moms Care.
+
+>      B produced finance, title Pay electric bill and save receipt, priority
+
+>      medium, space Finance.
+
+>      C produced legal, title Court filing deadline and motion prep, priority
+
+>      high, space Legal.
+
+>      D produced tech, title Cloudflare build failed from package lock
+
+>      mismatch, priority high, space Tech.
+
+> 
+
+>   5. Generated action result:
+
+>      A generated Call doctor tomorrow about oxygen drop after transfer.
+
+>      B generated Pay the electric bill Friday and Save receipt.
+
+>      C generated Finish motion and Organize exhibits.
+
+>      D generated no action, which matches the technical-incident case.
+
+> 
+
+>   6. Whether Today dashboard now updates from real saved state: yes. Today
+
+>      now reads pending draft, saved QiBits, open actions, recent timeline
+
+>      items, and agent insights from local storage-backed saved state rather
+
+>      than isolated page-local mock output.
+
+> 
+
+>   7. Whether Timeline updates: yes. Saving from Review writes a timeline
+
+>      entry with title, summary, type, priority, tags, space, linked actions,
+
+>      and agent insight, and that data survives refresh.
+
+> 
+
+>   8. Whether Actions updates: yes. Generated actions are persisted, shown
+
+>      with linked QiBit title and due hint, and marking an action done updates
+
+>      both stored actions and linked timeline action status.
+
+> 
+
+>   9. Backend readiness summary:
+
+>      uvicorn imports cleanly: I verified python -c "import uvicorn; from
+
+>      app.main import app" in backend/.
+
+>      Active SQLite path: C:\QiLabs\60_QiApps\_qilife\data\db\qilife.sqlite.
+
+>      Existing routes confirmed: /api/health, /api/qibits, /api/qibits/
+
+>      capture, /api/qibits/{id}, /api/qibits/{id}/triage, /api/actions, /api/
+
+>      actions/{id}, /api/actions/{id}/steps, /api/timeline, plus buckets/
+
+>      people/threads.
+
+>      Quick backend fix made: CORS now also allows local preview on 4173 and
+
+>      *.pages.dev.
+
+>      Missing for real frontend integration: a docs/knowledge categories
+
+>      endpoint, a review-save endpoint that accepts final QiBit plus actions
+
+>      in one request, richer QiBit persistence fields for the reviewed draft
+
+>      shape, and a richer backend timeline payload that includes summary/tags/
+
+>      space/insight/linked actions.
+
+> 
+
+>   10. Remaining blockers:
+
+>      No backend docs endpoint yet, so Knowledge is a clean placeholder plus
+
+>      repo-doc explanation, not a live index.
+
+>      The frontend save loop is still localStorage-first until the backend
+
+>      gains the richer save/review APIs.
+
+>      I did not run a rendered browser QA pass, so visual/runtime verification
+
+>      is build-plus-logic level, not screenshot/UI level.
+
+>      The repo has a pre-existing frontend/src/pages/threads-page.tsx diff
+
 >      and .git/index.lock, which I left untouched.
 
 ### Assistant
@@ -4829,28 +4994,49 @@ canonical_ref: ""
 > The next suspect is the startup shortcut, especially `QiAccess.lnk`.
 
 ### User
-> PS C:\WINDOWS\system32> Get-ChildItem C:\Users\codyr -Recurse -File -ErrorAction SilentlyContinue |
-> >>   Select-String -Pattern "C:\\_QiOne_MonoRepo_Astro|C:\\QiOS_WORKING|_QiOne_MonoRepo_Astro|QiOS_WORKING" |
-> >>   Select-Object Path, LineNumber, Line
-> PS C:\WINDOWS\system32> Get-ChildItem C:\ -File -ErrorAction SilentlyContinue |
-> >>   Select-String -Pattern "_QiOne_MonoRepo_Astro|QiOS_WORKING" |
-> >>   Select-Object Path, LineNumber, Line
-> Select-String : The file C:\DumpStack.log cannot be read: Access to the path 'C:\DumpStack.log' is denied.
-> At line:2 char:3
-> +   Select-String -Pattern "_QiOne_MonoRepo_Astro|QiOS_WORKING" |
-> +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->     + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
->     + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
-> 
+> PS C:\WINDOWS\system32> Get-ChildItem C:\Users\codyr -Recurse -File -ErrorAction SilentlyContinue |
+
+> >>   Select-String -Pattern "C:\\_QiOne_MonoRepo_Astro|C:\\QiOS_WORKING|_QiOne_MonoRepo_Astro|QiOS_WORKING" |
+
+> >>   Select-Object Path, LineNumber, Line
+
+> PS C:\WINDOWS\system32> Get-ChildItem C:\ -File -ErrorAction SilentlyContinue |
+
+> >>   Select-String -Pattern "_QiOne_MonoRepo_Astro|QiOS_WORKING" |
+
+> >>   Select-Object Path, LineNumber, Line
+
+> Select-String : The file C:\DumpStack.log cannot be read: Access to the path 'C:\DumpStack.log' is denied.
+
+> At line:2 char:3
+
+> +   Select-String -Pattern "_QiOne_MonoRepo_Astro|QiOS_WORKING" |
+
+> +   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>     + CategoryInfo          : InvalidArgument: (:) [Select-String], ArgumentException
+
+>     + FullyQualifiedErrorId : ProcessingFile,Microsoft.PowerShell.Commands.SelectStringCommand
+
+> 
+
 > PS C:\WINDOWS\system32>
-> PS C:\WINDOWS\system32> $shell = New-Object -ComObject WScript.Shell
-> PS C:\WINDOWS\system32> $shortcut = $shell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\QiAccess.lnk")
-> PS C:\WINDOWS\system32> $shortcut.TargetPath
-> C:\Program Files\Google\Chrome\Application\chrome_proxy.exe
-> PS C:\WINDOWS\system32> $shortcut.Arguments
->  --profile-directory=Default --app-id=kcogdcjjkhhnkldgjdlmknmkajcfljbj --app-run-on-os-login-mode=windowed
-> PS C:\WINDOWS\system32> $shortcut.WorkingDirectory
-> C:\Program Files\Google\Chrome\Application
+> PS C:\WINDOWS\system32> $shell = New-Object -ComObject WScript.Shell
+
+> PS C:\WINDOWS\system32> $shortcut = $shell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\QiAccess.lnk")
+
+> PS C:\WINDOWS\system32> $shortcut.TargetPath
+
+> C:\Program Files\Google\Chrome\Application\chrome_proxy.exe
+
+> PS C:\WINDOWS\system32> $shortcut.Arguments
+
+>  --profile-directory=Default --app-id=kcogdcjjkhhnkldgjdlmknmkajcfljbj --app-run-on-os-login-mode=windowed
+
+> PS C:\WINDOWS\system32> $shortcut.WorkingDirectory
+
+> C:\Program Files\Google\Chrome\Application
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -4963,28 +5149,50 @@ canonical_ref: ""
 > Run the metadata + contents commands first. That will tell us whether these are harmless empty zombies or some old system still writing real files into them.
 
 ### User
-> >>   Select-Object FullName, CreationTime, LastWriteTime, Attributes
-> 
-> FullName                 CreationTime          LastWriteTime         Attributes
-> --------                 ------------          -------------         ----------
-> C:\_QiOne_MonoRepo_Astro 5/31/2026 12:29:30 PM 5/31/2026 12:29:30 PM  Directory
-> C:\QiOS_WORKING          5/31/2026 6:03:20 PM  5/31/2026 6:03:20 PM   Directory
-> 
-> 
-> PS C:\WINDOWS\system32>PS C:\WINDOWS\system32> Get-ChildItem "C:\_QiOne_MonoRepo_Astro","C:\QiOS_WORKING" -Force -ErrorAction SilentlyContinue |
-> >>   Select-Object FullName, Mode, LastWriteTime
-> 
-> FullName                          Mode   LastWriteTime
-> --------                          ----   -------------
-> C:\_QiOne_MonoRepo_Astro\supabase d----- 5/31/2026 12:29:30 PM
-> C:\QiOS_WORKING\My Drive          d----- 5/31/2026 6:03:20 PM
-> 
-> 
-> PS C:\WINDOWS\system32>
-> 
-> Link             : C:\Users\codyr\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\QiOne.lnk
-> TargetPath       : G:\My Drive\QiOne
-> Arguments        :
+> >>   Select-Object FullName, CreationTime, LastWriteTime, Attributes
+
+> 
+
+> FullName                 CreationTime          LastWriteTime         Attributes
+
+> --------                 ------------          -------------         ----------
+
+> C:\_QiOne_MonoRepo_Astro 5/31/2026 12:29:30 PM 5/31/2026 12:29:30 PM  Directory
+
+> C:\QiOS_WORKING          5/31/2026 6:03:20 PM  5/31/2026 6:03:20 PM   Directory
+
+> 
+
+> 
+
+> PS C:\WINDOWS\system32>PS C:\WINDOWS\system32> Get-ChildItem "C:\_QiOne_MonoRepo_Astro","C:\QiOS_WORKING" -Force -ErrorAction SilentlyContinue |
+
+> >>   Select-Object FullName, Mode, LastWriteTime
+
+> 
+
+> FullName                          Mode   LastWriteTime
+
+> --------                          ----   -------------
+
+> C:\_QiOne_MonoRepo_Astro\supabase d----- 5/31/2026 12:29:30 PM
+
+> C:\QiOS_WORKING\My Drive          d----- 5/31/2026 6:03:20 PM
+
+> 
+
+> 
+
+> PS C:\WINDOWS\system32>
+
+> 
+
+> Link             : C:\Users\codyr\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\QiOne.lnk
+
+> TargetPath       : G:\My Drive\QiOne
+
+> Arguments        :
+
 > WorkingDirectory :
 
 ### Assistant
@@ -5077,41 +5285,76 @@ canonical_ref: ""
 > The next place to hunt is **`G:\My Drive\QiOne`**, not `C:\QiLabs`.
 
 ### User
-> ." |
-> >>   Set-Content "C:\_QiOne_MonoRepo_Astro__QUARANTINED_20260601\README_QUARANTINED.txt" -ErrorAction SilentlyContinue
-> PS C:\WINDOWS\system32>
-> PS C:\WINDOWS\system32> "Quarantined on 2026-06-01. If original folder returns, another process is recreating it." |
-> >>   Set-Content "C:\QiOS_WORKING__QUARANTINED_20260601\README_QUARANTINED.txt" -ErrorAction SilentlyContinue
-> PS C:\WINDOWS\system32> Get-ChildItem "G:\My Drive\QiOne" -Force -ErrorAction SilentlyContinue |
-> >>   Select-Object FullName, Mode, LastWriteTime
-> PS C:\WINDOWS\system32> Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction SilentlyContinue |
-> >>   Select-String -Pattern "C:\\_QiOne_MonoRepo_Astro|C:\\QiOS_WORKING|_QiOne_MonoRepo_Astro|QiOS_WORKING" |
-> >>   Select-Object Path, LineNumber, Line
-> Get-ChildItem : A parameter cannot be found that matches parameter name 'File'.
-> At line:1 char:44
-> + Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction Silentl ...
-> +                                            ~~~~~
->     + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
->     + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
-> 
-> PS C:\WINDOWS\system32>>>   Select-Object Path, LineNumber, Line
-> Get-ChildItem : A parameter cannot be found that matches parameter name 'File'.
-> At line:1 char:44
-> + Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction Silentl ...
-> +                                            ~~~~~
->     + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
->     + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
-> 
-> PS C:\WINDOWS\system32> $shell = New-Object -ComObject WScript.Shell
-> PS C:\WINDOWS\system32> $shortcut = $shell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\QiOne.lnk")
-> PS C:\WINDOWS\system32> $shortcut.TargetPath
-> G:\My Drive\QiOne
-> PS C:\WINDOWS\system32> $shortcut.Arguments
-> 
-> PS C:\WINDOWS\system32> $shortcut.WorkingDirectory
-> 
-> PS C:\WINDOWS\system32> Rename-Item "C:\_QiOne_MonoRepo_Astro" "_QiOne_MonoRepo_Astro__QUARANTINED_20260601" -ErrorAction SilentlyContinue
-> PS C:\WINDOWS\system32> Rename-Item "C:\QiOS_WORKING" "QiOS_WORKING__QUARANTINED_20260601" -ErrorAction SilentlyContinue
+> ." |
+
+> >>   Set-Content "C:\_QiOne_MonoRepo_Astro__QUARANTINED_20260601\README_QUARANTINED.txt" -ErrorAction SilentlyContinue
+
+> PS C:\WINDOWS\system32>
+
+> PS C:\WINDOWS\system32> "Quarantined on 2026-06-01. If original folder returns, another process is recreating it." |
+
+> >>   Set-Content "C:\QiOS_WORKING__QUARANTINED_20260601\README_QUARANTINED.txt" -ErrorAction SilentlyContinue
+
+> PS C:\WINDOWS\system32> Get-ChildItem "G:\My Drive\QiOne" -Force -ErrorAction SilentlyContinue |
+
+> >>   Select-Object FullName, Mode, LastWriteTime
+
+> PS C:\WINDOWS\system32> Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction SilentlyContinue |
+
+> >>   Select-String -Pattern "C:\\_QiOne_MonoRepo_Astro|C:\\QiOS_WORKING|_QiOne_MonoRepo_Astro|QiOS_WORKING" |
+
+> >>   Select-Object Path, LineNumber, Line
+
+> Get-ChildItem : A parameter cannot be found that matches parameter name 'File'.
+
+> At line:1 char:44
+
+> + Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction Silentl ...
+
+> +                                            ~~~~~
+
+>     + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+
+>     + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+> 
+
+> PS C:\WINDOWS\system32>>>   Select-Object Path, LineNumber, Line
+
+> Get-ChildItem : A parameter cannot be found that matches parameter name 'File'.
+
+> At line:1 char:44
+
+> + Get-ChildItem "G:\My Drive\QiOne" -Recurse -File -ErrorAction Silentl ...
+
+> +                                            ~~~~~
+
+>     + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingException
+
+>     + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetChildItemCommand
+
+> 
+
+> PS C:\WINDOWS\system32> $shell = New-Object -ComObject WScript.Shell
+
+> PS C:\WINDOWS\system32> $shortcut = $shell.CreateShortcut("$env:APPDATA\Microsoft\Windows\Start Menu\Programs\QiOne.lnk")
+
+> PS C:\WINDOWS\system32> $shortcut.TargetPath
+
+> G:\My Drive\QiOne
+
+> PS C:\WINDOWS\system32> $shortcut.Arguments
+
+> 
+
+> PS C:\WINDOWS\system32> $shortcut.WorkingDirectory
+
+> 
+
+> PS C:\WINDOWS\system32> Rename-Item "C:\_QiOne_MonoRepo_Astro" "_QiOne_MonoRepo_Astro__QUARANTINED_20260601" -ErrorAction SilentlyContinue
+
+> PS C:\WINDOWS\system32> Rename-Item "C:\QiOS_WORKING" "QiOS_WORKING__QUARANTINED_20260601" -ErrorAction SilentlyContinue
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant

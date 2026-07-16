@@ -1,11 +1,11 @@
 ---
 layout: adr ... ...
 title: "ADR-0000: "
-slug: ""
+slug: adr-0000
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 sensitivity: internal ... ...
@@ -19,8 +19,8 @@ references: []
 target_system: ""
 target_scope: ""
 canonical_ref: ""
-uid: ""
-template_key:
+uid: a7866821c24c4f3d91ca5e217af05971
+template_key: master-template
 source_type: manual ... ...
 adr_id: ADR-0000 ... ...
 supersedes: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Git reset commit push"
 slug: "git_reset_commit_push"
 created_at: "2025-11-19 14:12:03"
-updated_at: "2025-11-19 14:12:03"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -73,27 +73,48 @@ canonical_ref: ""
 > That’s it. Git is dramatic, but it’s not complicated.
 
 ### User
-> modified:   quartz (modified content, untracked content)
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")
-> PS C:\QiOS\QiVault> git reset
-> PS C:\QiOS\QiVault> git add .
-> PS C:\QiOS\QiVault> git commit -m "reset cleanup"
-> On branch main
-> Your branch is ahead of 'origin/main' by 1 commit.
->   (use "git push" to publish your local commits)
-> 
-> Changes not staged for commit:
->   (use "git add <file>..." to update what will be committed)
->   (use "git restore <file>..." to discard changes in working directory)
->   (commit or discard the untracked or modified content in submodules)
->         modified:   quartz (modified content, untracked content)
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")
-> PS C:\QiOS\QiVault> git push origin main --force
-> Enumerating objects: 6327, done.
-> Counting objects: 100% (6327/6327), done.
-> Delta compression using up to 4 threads
+> modified:   quartz (modified content, untracked content)
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+> PS C:\QiOS\QiVault> git reset
+
+> PS C:\QiOS\QiVault> git add .
+
+> PS C:\QiOS\QiVault> git commit -m "reset cleanup"
+
+> On branch main
+
+> Your branch is ahead of 'origin/main' by 1 commit.
+
+>   (use "git push" to publish your local commits)
+
+> 
+
+> Changes not staged for commit:
+
+>   (use "git add <file>..." to update what will be committed)
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+>   (commit or discard the untracked or modified content in submodules)
+
+>         modified:   quartz (modified content, untracked content)
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+> PS C:\QiOS\QiVault> git push origin main --force
+
+> Enumerating objects: 6327, done.
+
+> Counting objects: 100% (6327/6327), done.
+
+> Delta compression using up to 4 threads
+
 > Compressing objects:  49% (3028/6178)
 
 ### Assistant
@@ -179,20 +200,34 @@ canonical_ref: ""
 > You’re good. Let it finish.
 
 ### User
-> riting objects: 100% (6317/6317), 1.73 GiB | 9.16 MiB/s, done.
-> Total 6317 (delta 501), reused 0 (delta 0), pack-reused 0 (from 0)
-> remote: Resolving deltas: 100% (501/501), completed with 3 local objects.
-> remote: warning: File 5_assets/chatgpt_json/conversations.json is 66.60 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-> remote: warning: File 2_KB/tarotjournal/20250419.-Activity_Screenshots.zip is 51.05 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-> remote: warning: File 2_KB/tarotjournal/20250420.zip is 75.27 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-> remote: warning: File 3_Docs/AES_Hardship_2025_Final_Packet/15_Exports/12_Affidavit_of_Hardship.pdf is 70.99 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
-> remote: error: Trace: e28aa54ba094ae35c061afd4b2b9d7048790d364e4575368df2c731c98d3c410
-> remote: error: See https://gh.io/lfs for more information.
-> remote: error: File 3_Docs/tarotjournal/20250420-Activity_Screenshots.pdf is 119.68 MB; this exceeds GitHub's file size limit of 100.00 MB
-> remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
-> To https://github.com/qiallyme/qivault-os.git
->  ! [remote rejected] main -> main (pre-receive hook declined)
-> error: failed to push some refs to 'https://github.com/qiallyme/qivault-os.git'
+> riting objects: 100% (6317/6317), 1.73 GiB | 9.16 MiB/s, done.
+
+> Total 6317 (delta 501), reused 0 (delta 0), pack-reused 0 (from 0)
+
+> remote: Resolving deltas: 100% (501/501), completed with 3 local objects.
+
+> remote: warning: File 5_assets/chatgpt_json/conversations.json is 66.60 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+
+> remote: warning: File 2_KB/tarotjournal/20250419.-Activity_Screenshots.zip is 51.05 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+
+> remote: warning: File 2_KB/tarotjournal/20250420.zip is 75.27 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+
+> remote: warning: File 3_Docs/AES_Hardship_2025_Final_Packet/15_Exports/12_Affidavit_of_Hardship.pdf is 70.99 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+
+> remote: error: Trace: e28aa54ba094ae35c061afd4b2b9d7048790d364e4575368df2c731c98d3c410
+
+> remote: error: See https://gh.io/lfs for more information.
+
+> remote: error: File 3_Docs/tarotjournal/20250420-Activity_Screenshots.pdf is 119.68 MB; this exceeds GitHub's file size limit of 100.00 MB
+
+> remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+
+> To https://github.com/qiallyme/qivault-os.git
+
+>  ! [remote rejected] main -> main (pre-receive hook declined)
+
+> error: failed to push some refs to 'https://github.com/qiallyme/qivault-os.git'
+
 > PS C:\QiOS\QiVault>
 
 ### Assistant

@@ -3,7 +3,7 @@ layout: page
 title: "Business Partner Final Breakdown"
 slug: "business_partner_final_breakdown"
 created_at: "2024-04-28"
-updated_at: "2024-04-28"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7b8a56b9afce4090a4b3f85640736b5f
 canonical_ref: ""
 ---
 

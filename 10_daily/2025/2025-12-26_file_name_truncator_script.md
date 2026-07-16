@@ -3,9 +3,9 @@ layout: page
 title: "File Name Truncator Script"
 slug: "file_name_truncator_script"
 created_at: "2025-12-26 12:35:36"
-updated_at: "2025-12-26 12:35:36"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -453,75 +453,144 @@ canonical_ref: ""
 > Tell me which direction you want to go.
 
 ### User
-> heres my current index.md file i need to udpate it for quartz 4. ---
-> title: Case Hub
-> layout: basic
-> ---
-> 
-> <header style="margin: 20px 0 30px; text-align: left;">
->   <h1 style="font-size: 1.8rem; font-weight: 800; margin: 0;">Case Hub</h1>
->   <p style="color: var(--gray); font-size: 0.9rem; margin: 5px 0 0;">FCFCU v. Cody • Legal Repository</p>
-> </header>
-> 
-> <div class="case-grid" style="display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%;">
-> 
->   <a href="/00_admin/40_action_center/" style="text-decoration: none; color: inherit;">
->     <div style="background: var(--secondary); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px; color: white;">
->       <div style="width: 44px; height: 44px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">⚡</div>
->       <div>
->         <h2 style="font-size: 1rem; margin: 0; color: white;">Action Center</h2>
->         <p style="font-size: 0.85rem; margin: 2px 0 0; color: rgba(255,255,255,0.8);">Pre-hearing checklists & strategy</p>
->       </div>
->     </div>
->   </a>
-> 
->   <a href="/10_filings/" style="text-decoration: none; color: inherit;">
->     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
->       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">10</div>
->       <div>
->         <h2 style="font-size: 1rem; margin: 0;">Filings</h2>
->         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Drafts, exhibits, and filed receipts</p>
->       </div>
->     </div>
->   </a>
-> 
->   <a href="/20_evidence_vault/" style="text-decoration: none; color: inherit;">
->     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
->       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">20</div>
->       <div>
->         <h2 style="font-size: 1rem; margin: 0;">Evidence Vault</h2>
->         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Raw photos, video, and exhibits A-P</p>
->       </div>
->     </div>
->   </a>
-> 
->   <a href="/30_court_record/" style="text-decoration: none; color: inherit;">
->     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
->       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">30</div>
->       <div>
->         <h2 style="font-size: 1rem; margin: 0;">Court Record</h2>
->         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Official docket and complete record</p>
->       </div>
->     </div>
->   </a>
-> 
->   <a href="/00_admin/05_timeline/" style="text-decoration: none; color: inherit;">
->     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
->       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">📅</div>
->       <div>
->         <h2 style="font-size: 1rem; margin: 0;">Timeline</h2>
->         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Chronological log of case events</p>
->       </div>
->     </div>
->   </a>
-> 
-> </div>
-> 
-> ---
-> 
-> ### Strategy & Overviews
-> * [[00_admin/20_strategy/index|Case Strategy]]
-> * [[00_admin/10_overviews/index|Failure Maps & PDFs]]
+> heres my current index.md file i need to udpate it for quartz 4. ---
+
+> title: Case Hub
+
+> layout: basic
+
+> ---
+
+> 
+
+> <header style="margin: 20px 0 30px; text-align: left;">
+
+>   <h1 style="font-size: 1.8rem; font-weight: 800; margin: 0;">Case Hub</h1>
+
+>   <p style="color: var(--gray); font-size: 0.9rem; margin: 5px 0 0;">FCFCU v. Cody • Legal Repository</p>
+
+> </header>
+
+> 
+
+> <div class="case-grid" style="display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%;">
+
+> 
+
+>   <a href="/00_admin/40_action_center/" style="text-decoration: none; color: inherit;">
+
+>     <div style="background: var(--secondary); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px; color: white;">
+
+>       <div style="width: 44px; height: 44px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">⚡</div>
+
+>       <div>
+
+>         <h2 style="font-size: 1rem; margin: 0; color: white;">Action Center</h2>
+
+>         <p style="font-size: 0.85rem; margin: 2px 0 0; color: rgba(255,255,255,0.8);">Pre-hearing checklists & strategy</p>
+
+>       </div>
+
+>     </div>
+
+>   </a>
+
+> 
+
+>   <a href="/10_filings/" style="text-decoration: none; color: inherit;">
+
+>     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
+
+>       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">10</div>
+
+>       <div>
+
+>         <h2 style="font-size: 1rem; margin: 0;">Filings</h2>
+
+>         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Drafts, exhibits, and filed receipts</p>
+
+>       </div>
+
+>     </div>
+
+>   </a>
+
+> 
+
+>   <a href="/20_evidence_vault/" style="text-decoration: none; color: inherit;">
+
+>     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
+
+>       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">20</div>
+
+>       <div>
+
+>         <h2 style="font-size: 1rem; margin: 0;">Evidence Vault</h2>
+
+>         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Raw photos, video, and exhibits A-P</p>
+
+>       </div>
+
+>     </div>
+
+>   </a>
+
+> 
+
+>   <a href="/30_court_record/" style="text-decoration: none; color: inherit;">
+
+>     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
+
+>       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">30</div>
+
+>       <div>
+
+>         <h2 style="font-size: 1rem; margin: 0;">Court Record</h2>
+
+>         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Official docket and complete record</p>
+
+>       </div>
+
+>     </div>
+
+>   </a>
+
+> 
+
+>   <a href="/00_admin/05_timeline/" style="text-decoration: none; color: inherit;">
+
+>     <div style="background: var(--light); border: 1px solid var(--lightgray); padding: 18px; border-radius: 16px; display: flex; align-items: center; gap: 16px;">
+
+>       <div style="width: 44px; height: 44px; background: var(--highlight); color: var(--secondary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800;">📅</div>
+
+>       <div>
+
+>         <h2 style="font-size: 1rem; margin: 0;">Timeline</h2>
+
+>         <p style="font-size: 0.85rem; margin: 2px 0 0; color: var(--gray);">Chronological log of case events</p>
+
+>       </div>
+
+>     </div>
+
+>   </a>
+
+> 
+
+> </div>
+
+> 
+
+> ---
+
+> 
+
+> ### Strategy & Overviews
+
+> * [[00_admin/20_strategy/index|Case Strategy]]
+
+> * [[00_admin/10_overviews/index|Failure Maps & PDFs]]
+
 > * [[00_admin/00_trackers/index|Financial Tracker & Log]]
 
 ### Assistant

@@ -3,14 +3,14 @@ layout: page
 title: Event: Humana/PathWays letter: Structured Family Care terminated
 slug: humana-pathways-letter-structured-family-care-terminated
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - system-failure-care-coordination
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: acd15dd62da14e73afd871a6283b7761
 canonical_ref: ""
 template_key: master-template
 ---

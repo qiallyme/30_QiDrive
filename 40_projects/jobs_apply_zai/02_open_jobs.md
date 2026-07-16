@@ -1,3 +1,26 @@
+---
+layout: page
+title: 02 Open Jobs
+slug: 02-open-jobs
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 7d11a666712141e2ab5488292f9a401d
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # Zaitullah — Prioritized open jobs
 
 Checked 2026-07-16. Apply through official company career pages.

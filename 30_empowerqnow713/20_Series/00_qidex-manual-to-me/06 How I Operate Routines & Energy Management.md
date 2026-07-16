@@ -1,3 +1,26 @@
+---
+layout: page
+title: 06 How I Operate Routines & Energy Management
+slug: 06-how-i-operate-routines-energy-management
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 65cfa46e257a47c1bd524db05c910754
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 06 | How I Operate: Routines & Energy Management
 
 <aside>

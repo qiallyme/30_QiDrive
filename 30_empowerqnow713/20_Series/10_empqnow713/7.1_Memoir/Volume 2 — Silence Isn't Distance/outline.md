@@ -1,3 +1,25 @@
+---
+layout: page
+title: Outline
+slug: outline
+summary: ""
+status: active
+created_at: "2026-07-04T20:36:22-04:00"
+updated_at: "2026-07-16T06:49:35-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: c0a45acb716f4b3bb14a52220ea246ca
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
 
 ## Suggested Directory Structure for "Silence Isn't Distance"
 

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0009 Agent First Copilot Cockpit
-slug: ""
+slug: 0009-agent-first-copilot-cockpit
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 26fbf40fe62942f0ba1d8350318f302a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

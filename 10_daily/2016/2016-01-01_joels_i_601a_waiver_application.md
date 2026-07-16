@@ -3,7 +3,7 @@ layout: page
 title: "Joel's I-601a Waiver Application"
 slug: "joels_i_601a_waiver_application"
 created_at: "2016-01-01"
-updated_at: "2016-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["legal"]
 category: "legal"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0f9e65c0fa4841f7b650029455fbccf6
 canonical_ref: ""
 ---
 

@@ -3,12 +3,12 @@ layout: page
 title: 🧠 **PERSONALITY ARCHITECTURE & COGNITIVE STYLE**
 slug: personality-architecture-cognitive-style
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b375be7b343947778232ffed3d6be3d3
 canonical_ref: ""
 template_key: master-template
 ---

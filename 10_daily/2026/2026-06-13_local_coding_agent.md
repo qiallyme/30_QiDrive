@@ -3,9 +3,9 @@ layout: page
 title: "Local Coding Agent"
 slug: "local_coding_agent"
 created_at: "2026-06-13 12:08:22"
-updated_at: "2026-06-13 12:08:22"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -427,17 +427,28 @@ canonical_ref: ""
 > That’s the system. Aider is the current engine. Ollama is the local model runtime. tmux is the persistence wrapper.
 
 ### User
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ ollama serve
-> Couldn't find '/home/qiadmin/.ollama/id_ed25519'. Generating new private key.
-> Your new public key is: 
-> 
-> ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINF5HklsJkKobLJWWPL/1B/AfhdW3ZeBTcbS6kngylGP
-> 
-> Error: listen tcp 127.0.0.1:11434: bind: address already in use
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ ollama serve
+
+> Couldn't find '/home/qiadmin/.ollama/id_ed25519'. Generating new private key.
+
+> Your new public key is: 
+
+> 
+
+> ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINF5HklsJkKobLJWWPL/1B/AfhdW3ZeBTcbS6kngylGP
+
+> 
+
+> Error: listen tcp 127.0.0.1:11434: bind: address already in use
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -642,59 +653,112 @@ canonical_ref: ""
 > ```
 
 ### User
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ ollama serve
-> Couldn't find '/home/qiadmin/.ollama/id_ed25519'. Generating new private key.
-> Your new public key is: 
-> 
-> ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINF5HklsJkKobLJWWPL/1B/AfhdW3ZeBTcbS6kngylGP
-> 
-> Error: listen tcp 127.0.0.1:11434: bind: address already in use
-> qiadmin@qiserver:~$ curl http://127.0.0.1:11434/api/tags
-> {"models":[{"name":"qwen2.5-coder:3b","model":"qwen2.5-coder:3b","modified_at":"2026-05-12T01:56:09.283131995-05:00","size":1929912626,"digest":"f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"3.1B","quantization_level":"Q4_K_M"}},{"name":"qwen2.5-coder:7b","model":"qwen2.5-coder:7b","modified_at":"2026-05-12T01:07:32.352011529-05:00","size":4683087561,"digest":"dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"7.6B","quantization_level":"Q4_K_M"}},{"name":"llama3.2:latest","model":"llama3.2:latest","modified_at":"2026-05-12T01:06:26.014474367-05:00","size":2019393189,"digest":"a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72","details":{"parent_model":"","format":"gguf","family":"llama","families":["llama"],"parameter_size":"3.2B","quantization_level":"Q4_K_M"}},{"name":"nomic-embed-text:latest","model":"nomic-embed-text:latest","modified_at":"2026-05-12T01:06:16.307391029-05:00","size":274302450,"digest":"0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f","details":{"parent_model":"","format":"gguf","family":"nomic-bert","families":["nomic-bert"],"parameter_size":"137M","quantization_level":"F16"}},{"name":"embeddinggemma:latest","model":"embeddinggemma:latest","modified_at":"2026-04-19T01:12:03.403547499-05:00","size":621875917,"digest":"85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1","details":{"parent_model":"","format":"gguf","family":"gemma3","families":["gemma3"],"parameter_size":"307.58M","quantization_level":"BF16"}}]}qiadmin@qiserver:~$ ollama list
-> NAME                       ID              SIZE      MODIFIED    
-> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    4 weeks ago    
-> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    4 weeks ago    
-> llama3.2:latest            a80c4f17acd5    2.0 GB    4 weeks ago    
-> nomic-embed-text:latest    0a109f422b47    274 MB    4 weeks ago    
-> embeddinggemma:latest      85462619ee72    621 MB    7 weeks ago    
-> qiadmin@qiserver:~$ sudo ss -ltnp | grep 11434
-> [sudo] password for qiadmin: 
-> LISTEN 0      4096               100.121.111.106:11434      0.0.0.0:*    users:(("tailscaled",pid=1958593,fd=52))                       
-> LISTEN 0      4096                     127.0.0.1:11434      0.0.0.0:*    users:(("ollama",pid=1260,fd=4))                               
-> LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:11434         [::]:*    users:(("tailscaled",pid=1958593,fd=47))                       
-> qiadmin@qiserver:~$ sudo lsof -i :11434
-> COMMAND       PID   USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
-> ollama       1260 ollama    4u  IPv4    14735      0t0  TCP localhost:11434 (LISTEN)
-> tailscale 1958593   root   47u  IPv6 28467284      0t0  TCP qiserver:11434 (LISTEN)
-> tailscale 1958593   root   52u  IPv4 28465394      0t0  TCP qiserver-1.cerberus-sirius.ts.net:11434 (LISTEN)
-> qiadmin@qiserver:~$ systemctl status ollama --no-pager
-> ● ollama.service - Ollama Service
->      Loaded: loaded (/etc/systemd/system/ollama.service; enabled; preset: enabled)
->     Drop-In: /etc/systemd/system/ollama.service.d
->              └─override.conf
->      Active: active (running) since Tue 2026-05-26 15:30:52 CDT; 2 weeks 3 days ago
->    Main PID: 1260 (ollama)
->       Tasks: 12 (limit: 9026)
->      Memory: 19.2M (peak: 5.8G swap: 296.4M swap peak: 1.7G)
->         CPU: 19min 6.310s
->      CGroup: /system.slice/ollama.service
->              └─1260 /usr/local/bin/ollama serve
-> 
-> Jun 12 10:34:21 qiserver ollama[1260]: time=2026-06-12T10:34:21.655-…s=0
-> Jun 12 14:13:23 qiserver ollama[1260]: time=2026-06-12T14:13:23.849-…s=0
-> Jun 12 18:08:08 qiserver ollama[1260]: time=2026-06-12T18:08:08.739-…s=0
-> Jun 12 22:14:34 qiserver ollama[1260]: time=2026-06-12T22:14:34.106-…s=0
-> Jun 13 02:56:09 qiserver ollama[1260]: time=2026-06-13T02:56:09.101-…s=0
-> Jun 13 07:38:59 qiserver ollama[1260]: time=2026-06-13T07:38:59.341-…s=0
-> Jun 13 11:45:34 qiserver ollama[1260]: time=2026-06-13T11:45:34.076-…s=0
-> Jun 13 12:11:57 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:11:57 |…gs"
-> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 … "/"
-> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 |…gs"
-> Hint: Some lines were ellipsized, use -l to show in full.
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ ollama serve
+
+> Couldn't find '/home/qiadmin/.ollama/id_ed25519'. Generating new private key.
+
+> Your new public key is: 
+
+> 
+
+> ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINF5HklsJkKobLJWWPL/1B/AfhdW3ZeBTcbS6kngylGP
+
+> 
+
+> Error: listen tcp 127.0.0.1:11434: bind: address already in use
+
+> qiadmin@qiserver:~$ curl http://127.0.0.1:11434/api/tags
+
+> {"models":[{"name":"qwen2.5-coder:3b","model":"qwen2.5-coder:3b","modified_at":"2026-05-12T01:56:09.283131995-05:00","size":1929912626,"digest":"f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"3.1B","quantization_level":"Q4_K_M"}},{"name":"qwen2.5-coder:7b","model":"qwen2.5-coder:7b","modified_at":"2026-05-12T01:07:32.352011529-05:00","size":4683087561,"digest":"dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"7.6B","quantization_level":"Q4_K_M"}},{"name":"llama3.2:latest","model":"llama3.2:latest","modified_at":"2026-05-12T01:06:26.014474367-05:00","size":2019393189,"digest":"a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72","details":{"parent_model":"","format":"gguf","family":"llama","families":["llama"],"parameter_size":"3.2B","quantization_level":"Q4_K_M"}},{"name":"nomic-embed-text:latest","model":"nomic-embed-text:latest","modified_at":"2026-05-12T01:06:16.307391029-05:00","size":274302450,"digest":"0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f","details":{"parent_model":"","format":"gguf","family":"nomic-bert","families":["nomic-bert"],"parameter_size":"137M","quantization_level":"F16"}},{"name":"embeddinggemma:latest","model":"embeddinggemma:latest","modified_at":"2026-04-19T01:12:03.403547499-05:00","size":621875917,"digest":"85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1","details":{"parent_model":"","format":"gguf","family":"gemma3","families":["gemma3"],"parameter_size":"307.58M","quantization_level":"BF16"}}]}qiadmin@qiserver:~$ ollama list
+
+> NAME                       ID              SIZE      MODIFIED    
+
+> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    4 weeks ago    
+
+> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    4 weeks ago    
+
+> llama3.2:latest            a80c4f17acd5    2.0 GB    4 weeks ago    
+
+> nomic-embed-text:latest    0a109f422b47    274 MB    4 weeks ago    
+
+> embeddinggemma:latest      85462619ee72    621 MB    7 weeks ago    
+
+> qiadmin@qiserver:~$ sudo ss -ltnp | grep 11434
+
+> [sudo] password for qiadmin: 
+
+> LISTEN 0      4096               100.121.111.106:11434      0.0.0.0:*    users:(("tailscaled",pid=1958593,fd=52))                       
+
+> LISTEN 0      4096                     127.0.0.1:11434      0.0.0.0:*    users:(("ollama",pid=1260,fd=4))                               
+
+> LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:11434         [::]:*    users:(("tailscaled",pid=1958593,fd=47))                       
+
+> qiadmin@qiserver:~$ sudo lsof -i :11434
+
+> COMMAND       PID   USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
+
+> ollama       1260 ollama    4u  IPv4    14735      0t0  TCP localhost:11434 (LISTEN)
+
+> tailscale 1958593   root   47u  IPv6 28467284      0t0  TCP qiserver:11434 (LISTEN)
+
+> tailscale 1958593   root   52u  IPv4 28465394      0t0  TCP qiserver-1.cerberus-sirius.ts.net:11434 (LISTEN)
+
+> qiadmin@qiserver:~$ systemctl status ollama --no-pager
+
+> ● ollama.service - Ollama Service
+
+>      Loaded: loaded (/etc/systemd/system/ollama.service; enabled; preset: enabled)
+
+>     Drop-In: /etc/systemd/system/ollama.service.d
+
+>              └─override.conf
+
+>      Active: active (running) since Tue 2026-05-26 15:30:52 CDT; 2 weeks 3 days ago
+
+>    Main PID: 1260 (ollama)
+
+>       Tasks: 12 (limit: 9026)
+
+>      Memory: 19.2M (peak: 5.8G swap: 296.4M swap peak: 1.7G)
+
+>         CPU: 19min 6.310s
+
+>      CGroup: /system.slice/ollama.service
+
+>              └─1260 /usr/local/bin/ollama serve
+
+> 
+
+> Jun 12 10:34:21 qiserver ollama[1260]: time=2026-06-12T10:34:21.655-…s=0
+
+> Jun 12 14:13:23 qiserver ollama[1260]: time=2026-06-12T14:13:23.849-…s=0
+
+> Jun 12 18:08:08 qiserver ollama[1260]: time=2026-06-12T18:08:08.739-…s=0
+
+> Jun 12 22:14:34 qiserver ollama[1260]: time=2026-06-12T22:14:34.106-…s=0
+
+> Jun 13 02:56:09 qiserver ollama[1260]: time=2026-06-13T02:56:09.101-…s=0
+
+> Jun 13 07:38:59 qiserver ollama[1260]: time=2026-06-13T07:38:59.341-…s=0
+
+> Jun 13 11:45:34 qiserver ollama[1260]: time=2026-06-13T11:45:34.076-…s=0
+
+> Jun 13 12:11:57 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:11:57 |…gs"
+
+> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 … "/"
+
+> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 |…gs"
+
+> Hint: Some lines were ellipsized, use -l to show in full.
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -969,23 +1033,40 @@ canonical_ref: ""
 > ```
 
 ### User
-> Jun 13 02:56:09 qiserver ollama[1260]: time=2026-06-13T02:56:09.101-…s=0
-> Jun 13 07:38:59 qiserver ollama[1260]: time=2026-06-13T07:38:59.341-…s=0
-> Jun 13 11:45:34 qiserver ollama[1260]: time=2026-06-13T11:45:34.076-…s=0
-> Jun 13 12:11:57 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:11:57 |…gs"
-> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 … "/"
-> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 |…gs"
-> Hint: Some lines were ellipsized, use -l to show in full.
-> qiadmin@qiserver:~$ ollama run qwen2.5-coder:7b "Say READY if QiServer local coding model is working."
-> READY
-> 
-> qiadmin@qiserver:~$ which aider
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ aider --version
-> Command 'aider' not found, did you mean:
->   command 'rider' from snap rider (2026.1.2)
->   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
-> See 'snap info <snapname>' for additional versions.
+> Jun 13 02:56:09 qiserver ollama[1260]: time=2026-06-13T02:56:09.101-…s=0
+
+> Jun 13 07:38:59 qiserver ollama[1260]: time=2026-06-13T07:38:59.341-…s=0
+
+> Jun 13 11:45:34 qiserver ollama[1260]: time=2026-06-13T11:45:34.076-…s=0
+
+> Jun 13 12:11:57 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:11:57 |…gs"
+
+> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 … "/"
+
+> Jun 13 12:12:06 qiserver ollama[1260]: [GIN] 2026/06/13 - 12:12:06 |…gs"
+
+> Hint: Some lines were ellipsized, use -l to show in full.
+
+> qiadmin@qiserver:~$ ollama run qwen2.5-coder:7b "Say READY if QiServer local coding model is working."
+
+> READY
+
+> 
+
+> qiadmin@qiserver:~$ which aider
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ aider --version
+
+> Command 'aider' not found, did you mean:
+
+>   command 'rider' from snap rider (2026.1.2)
+
+>   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
+
+> See 'snap info <snapname>' for additional versions.
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1116,39 +1197,72 @@ canonical_ref: ""
 > You are one install away. Don’t overthink this one. Install Aider, bind it to Ollama, wrap it, then we have your local grind machine.
 
 ### User
-> Reading state information... Done
-> 41 packages can be upgraded. Run 'apt list --upgradable' to see them.
-> qiadmin@qiserver:~$ source ~/.profile
-> 
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ source ~/.bashrc
-> 
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ which aider
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ aider --version
-> Command 'aider' not found, did you mean:
->   command 'rider' from snap rider (2026.1.2)
->   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
-> See 'snap info <snapname>' for additional versions.
-> qiadmin@qiserver:~$ QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ which aider
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ aider --version
-> Command 'aider' not found, did you mean:
->   command 'rider' from snap rider (2026.1.2)
->   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
-> See 'snap info <snapname>' for additional versions.
-> qiadmin@qiserver:~$ ~/.local/bin/aider --version
-> bash: /home/qiadmin/.local/bin/aider: No such file or directory
+> Reading state information... Done
+
+> 41 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+> qiadmin@qiserver:~$ source ~/.profile
+
+> 
+
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ source ~/.bashrc
+
+> 
+
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ which aider
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ aider --version
+
+> Command 'aider' not found, did you mean:
+
+>   command 'rider' from snap rider (2026.1.2)
+
+>   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
+
+> See 'snap info <snapname>' for additional versions.
+
+> qiadmin@qiserver:~$ QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ which aider
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ aider --version
+
+> Command 'aider' not found, did you mean:
+
+>   command 'rider' from snap rider (2026.1.2)
+
+>   command 'aide' from deb aide (0.18.6-2ubuntu0.1)
+
+> See 'snap info <snapname>' for additional versions.
+
+> qiadmin@qiserver:~$ ~/.local/bin/aider --version
+
+> bash: /home/qiadmin/.local/bin/aider: No such file or directory
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1247,20 +1361,34 @@ canonical_ref: ""
 > Right now, do **not** debug Ollama. Ollama is done. The only problem is that the Aider binary has not been installed for `qiadmin`.
 
 ### User
-> ────────────────────────────────────────────────────────────────────────
-> No git repo found, create one to track aider's changes (recommended)? (Y
-> )es/(N)o [Yes]: Y                                                       
-> Added .aider* to .gitignore
-> Git repository created in /srv/qios
-> Update git name with: git config user.name "Your Name"
-> Update git email with: git config user.email "you@example.com"
-> Aider v0.86.2
-> Model: ollama/qwen2.5-coder:7b with whole edit format
-> Git repo: .git with 0 files
-> Repo-map: using 4096.0 tokens, auto refresh
-> 
-> 
-> https://aider.chat/HISTORY.html#release-notes
+> ────────────────────────────────────────────────────────────────────────
+
+> No git repo found, create one to track aider's changes (recommended)? (Y
+
+> )es/(N)o [Yes]: Y                                                       
+
+> Added .aider* to .gitignore
+
+> Git repository created in /srv/qios
+
+> Update git name with: git config user.name "Your Name"
+
+> Update git email with: git config user.email "you@example.com"
+
+> Aider v0.86.2
+
+> Model: ollama/qwen2.5-coder:7b with whole edit format
+
+> Git repo: .git with 0 files
+
+> Repo-map: using 4096.0 tokens, auto refresh
+
+> 
+
+> 
+
+> https://aider.chat/HISTORY.html#release-notes
+
 > Would you like to see what's new in this version? (Y)es/(N)o [Yes]:
 
 ### Assistant
@@ -1346,23 +1474,40 @@ canonical_ref: ""
 > Then paste me what it says.
 
 ### User
-> qiadmin@qiserver:~$ cd /srv/qios
-> qiadmin@qiserver:/srv/qios$ git config user.name "qiallyme"
-> qiadmin@qiserver:/srv/qios$ git config user.email "crice4485@gmail.com"
-> qiadmin@qiserver:/srv/qios$ git status --short
-> ?? .gitignore
-> ?? apps/
-> ?? backups/
-> ?? compose/
-> ?? data/
-> ?? docs/
-> ?? neo4j/
-> ?? open-webui/
-> ?? repos/
-> ?? stacks/
-> ?? tools/
-> ?? wiki-export/
-> ?? wiki-import/
+> qiadmin@qiserver:~$ cd /srv/qios
+
+> qiadmin@qiserver:/srv/qios$ git config user.name "qiallyme"
+
+> qiadmin@qiserver:/srv/qios$ git config user.email "crice4485@gmail.com"
+
+> qiadmin@qiserver:/srv/qios$ git status --short
+
+> ?? .gitignore
+
+> ?? apps/
+
+> ?? backups/
+
+> ?? compose/
+
+> ?? data/
+
+> ?? docs/
+
+> ?? neo4j/
+
+> ?? open-webui/
+
+> ?? repos/
+
+> ?? stacks/
+
+> ?? tools/
+
+> ?? wiki-export/
+
+> ?? wiki-import/
+
 > qiadmin@qiserver:/srv/qios$
 
 ### Assistant
@@ -2677,95 +2822,184 @@ canonical_ref: ""
 > ```
 
 ### User
-> question im in site of supabase right nowk any of these examples you suggest i run, Examples
-> End-to-end examples and starter projects
-> 
-> Colors
-> Create a table with a list of colors and their hex values.
-> 
-> Slack Clone
-> Build a basic slack clone with Row Level Security.
-> 
-> Todo List
-> Build a basic todo list with Row Level Security.
-> 
-> Stripe Subscriptions
-> Starter template for the Next.js Stripe Subscriptions Starter.
-> 
-> User Management Starter
-> Sets up a public Profiles table which you can access with your API.
-> 
-> NextAuth Schema Setup
-> Sets up a the Schema and Tables for the NextAuth Supabase Adapter.
-> 
-> OpenAI Vector Search
-> Template for the Next.js OpenAI Doc Search Starter.
-> 
-> LangChain
-> LangChain is a popular framework for working with AI, Vectors, and embeddings. templates? Templates
-> Reusable SQL snippets for common tasks
-> 
-> Create table
-> Basic table template. Change "table_name" to the name you prefer.
-> 
-> Add view
-> Template to add a view. Make sure to change the table and column names to ones that already exist.
-> 
-> Add column
-> Template to add a column. Make sure to change the name and type.
-> 
-> Add comments
-> Templates to add a comment to either a table or a column.
-> 
-> Show extensions
-> Get a list of extensions in your database and status.
-> 
-> Show version
-> Get your Postgres version.
-> 
-> Show active connections
-> Get the number of active and max connections.
-> 
-> Automatically update timestamps
-> Update a column timestamp on every update.
-> 
-> Increment field value
-> Update a field with incrementing value using a function.
-> 
-> pg_stat_statements report
-> Select from pg_stat_statements and view recent queries
-> 
-> Most frequently invoked
-> Most frequently called queries in your database.
-> 
-> Most time consuming
-> Aggregate time spent on a query type.
-> 
-> Slowest execution time
-> Slowest queries based on max execution time.
-> 
-> Hit rate
-> See your cache and index hit rate.
-> 
-> Replication status report
-> See the status of your replication slots and replication lag.
-> 
-> Install dbdev
-> dbdev is a client for installing Trusted Language Extensions (TLE) into your database.
-> 
-> Large objects
-> List large objects (tables/indexes) in your database.
-> 
-> Limit MFA verification attempts to one in 2 seconds
-> Create an Auth hook that limits the number of failed MFA verification attempts to one in 2 seconds.
-> 
-> Add Auth Hook (Password Verification Attempt)
-> Create an Auth Hook that limits number of failed password verification attempts to one in 10 seconds
-> 
-> Add Auth Hook (Custom Access Token)
-> Create an Auth Hook to add custom claims to your Auth Token
-> 
-> Add Auth Hook (General)
+> question im in site of supabase right nowk any of these examples you suggest i run, Examples
+
+> End-to-end examples and starter projects
+
+> 
+
+> Colors
+
+> Create a table with a list of colors and their hex values.
+
+> 
+
+> Slack Clone
+
+> Build a basic slack clone with Row Level Security.
+
+> 
+
+> Todo List
+
+> Build a basic todo list with Row Level Security.
+
+> 
+
+> Stripe Subscriptions
+
+> Starter template for the Next.js Stripe Subscriptions Starter.
+
+> 
+
+> User Management Starter
+
+> Sets up a public Profiles table which you can access with your API.
+
+> 
+
+> NextAuth Schema Setup
+
+> Sets up a the Schema and Tables for the NextAuth Supabase Adapter.
+
+> 
+
+> OpenAI Vector Search
+
+> Template for the Next.js OpenAI Doc Search Starter.
+
+> 
+
+> LangChain
+
+> LangChain is a popular framework for working with AI, Vectors, and embeddings. templates? Templates
+
+> Reusable SQL snippets for common tasks
+
+> 
+
+> Create table
+
+> Basic table template. Change "table_name" to the name you prefer.
+
+> 
+
+> Add view
+
+> Template to add a view. Make sure to change the table and column names to ones that already exist.
+
+> 
+
+> Add column
+
+> Template to add a column. Make sure to change the name and type.
+
+> 
+
+> Add comments
+
+> Templates to add a comment to either a table or a column.
+
+> 
+
+> Show extensions
+
+> Get a list of extensions in your database and status.
+
+> 
+
+> Show version
+
+> Get your Postgres version.
+
+> 
+
+> Show active connections
+
+> Get the number of active and max connections.
+
+> 
+
+> Automatically update timestamps
+
+> Update a column timestamp on every update.
+
+> 
+
+> Increment field value
+
+> Update a field with incrementing value using a function.
+
+> 
+
+> pg_stat_statements report
+
+> Select from pg_stat_statements and view recent queries
+
+> 
+
+> Most frequently invoked
+
+> Most frequently called queries in your database.
+
+> 
+
+> Most time consuming
+
+> Aggregate time spent on a query type.
+
+> 
+
+> Slowest execution time
+
+> Slowest queries based on max execution time.
+
+> 
+
+> Hit rate
+
+> See your cache and index hit rate.
+
+> 
+
+> Replication status report
+
+> See the status of your replication slots and replication lag.
+
+> 
+
+> Install dbdev
+
+> dbdev is a client for installing Trusted Language Extensions (TLE) into your database.
+
+> 
+
+> Large objects
+
+> List large objects (tables/indexes) in your database.
+
+> 
+
+> Limit MFA verification attempts to one in 2 seconds
+
+> Create an Auth hook that limits the number of failed MFA verification attempts to one in 2 seconds.
+
+> 
+
+> Add Auth Hook (Password Verification Attempt)
+
+> Create an Auth Hook that limits number of failed password verification attempts to one in 10 seconds
+
+> 
+
+> Add Auth Hook (Custom Access Token)
+
+> Create an Auth Hook to add custom claims to your Auth Token
+
+> 
+
+> Add Auth Hook (General)
+
 > Create an Auth Hook
 
 ### Assistant

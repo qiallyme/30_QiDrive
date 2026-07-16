@@ -3,9 +3,9 @@ layout: page
 title: "Court Binder Organization"
 slug: "court_binder_organization"
 created_at: "2026-01-08 12:05:39"
-updated_at: "2026-01-08 12:05:39"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -180,2585 +180,5164 @@ canonical_ref: ""
 > You’re very close. The substance is there. We just need to **de-lawyer it for court reality** and **de-chaos it for you**.
 
 ### User
-> ```markdown
-> . 📂 CASE_FCFCU
-> └── 📂 00_ADMIN/
-> │  └── 📂 00_trackers/
-> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
-> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    ├── 📄 Case_Log.md
-> │    ├── 📄 Financial_Tracker.md
-> │    ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
-> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_str_1.md
-> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strat.md
-> │    ├── 📄 case_conversation_log.txt
-> │    ├── 📄 expenses.csv
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  └── 📂 05_timeline/
-> │    └── 📂 10_2023/
-> │      ├── 📄 index.html
-> │    └── 📂 20_2024/
-> │      ├── 📄 index.html
-> │    └── 📂 30_2025/
-> │      ├── 📄 2025-01-16_Case_Filed.md
-> │      ├── 📄 2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │      ├── 📄 2025-12-10_Motions_Filed.md
-> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 40_2026/
-> │      ├── 📄 index.html
-> │    ├── 📄 Timeline_Canvas.canvas
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  └── 📂 10_overviews/
-> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │    ├── 📄 Procedural_failure_map_one_pager.md
-> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │    ├── 📄 index.html
-> │  └── 📂 20_strategy/
-> │    └── 📂 10_ada_title_ii/
-> │      ├── 📄 index.html
-> │    └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │      ├── 📄 index.html
-> │    └── 📂 30_void_vs_voidable_tr_60b/
-> │      ├── 📄 index.html
-> │    ├── 📄 Strategic_Plan.canvas
-> │    ├── 📄 index.html
-> │  └── 📂 30_drafts-templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      ├── 📄 motion_emergency_stay_of_writ.docx
-> │      ├── 📄 motion_emergency_stay_of_writ.md
-> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
-> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
-> │      ├── 📄 motion_to_vacate_void_judgement.docx
-> │      ├── 📄 motion_to_vacate_void_judgment.md
-> │      └── 📂 motions_templates/
-> │        ├── 📄 _Motions.md
-> │        ├── 📄 index.html
-> │    └── 📂 20_declarations_affidavits/
-> │      ├── 📄 affidavit_not_served.docx
-> │      ├── 📄 affidavit_not_served.md
-> │      └── 📂 affidavits_templates/
-> │        ├── 📄 ADA_Disability_Affidavit.md
-> │        ├── 📄 Character_Affidavit.md
-> │        ├── 📄 Community_Service_Affidavit.md
-> │        ├── 📄 Credibility_Affidavit.md
-> │        ├── 📄 Observations_Affidavit.md
-> │        ├── 📄 _Instructions_for_witnesses.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │      └── 📂 declarations_templates/
-> │        ├── 📄 Gender_Identity_Clarification.md
-> │        ├── 📄 _Declarations.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      ├── 📄 updated_affidavit_language.md
-> │      ├── 📄 verified_affidavit_of_defendant.md
-> │    └── 📂 30_exhibits/
-> │      ├── 📄 exhibit_list.docx
-> │      ├── 📄 exhibit_list.md
-> │      └── 📂 exhibits_templates/
-> │        ├── 📄 _Exhibits_Lists.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 40_others/
-> │      ├── 📄 ada_packet.md
-> │      ├── 📄 attorney_brief.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      └── 📂 outreach_templates/
-> │        ├── 📄 _Advocate_Outreach_Message.md
-> │        ├── 📄 index.html
-> │      ├── 📄 receipt_usps_tracking.md
-> │      ├── 📄 script_call_lawyers.md
-> │    └── 📂 50_proposed_orders/
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      ├── 📄 proposed_order_emergency_stay.md
-> │      ├── 📄 proposed_order_motion_to_vacate.md
-> │      └── 📂 proposed_templates/
-> │        ├── 📄 Proposed_Orders.md
-> │        ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  └── 📂 40_action_center/
-> │    └── 📂 10_decision_tree/
-> │      ├── 📄 index.html
-> │    └── 📂 20_pre_hearing_checklist/
-> │      ├── 📄 index.html
-> │    ├── 📄 Master_Strategy_Canvas.canvas
-> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Contacts.md
-> │  ├── 📄 Talking_Points.md
-> │  ├── 📄 index.html
-> │  ├── 📄 index.md
-> └── 📂 00_READ_ME_FIRST/
-> │  ├── 📄 PRINT_CHECKLIST.md
-> └── 📂 01_COURT_BINDER/
-> │  └── 📂 A_ANCHOR_OVERVIEW/
-> │    └── 📂 A0_00_COVER_INDEX/
-> │      ├── 📄 A0.00.000_SECTION_COVER.md
-> │      ├── 📄 A0.00.010_MASTER_CASE_INDEX.md
-> │      ├── 📄 _README.md
-> │    └── 📂 A0_01_OVERVIEW/
-> │      ├── 📄 A0.01.001_ONE_PAGE_CASE_SUMMARY.md
-> │      ├── 📄 A0.01.002_HEARING_SCOPE_AND_RELIEF.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 B_BASIS_ISSUE_AND_LAW/
-> │    └── 📂 B1_00_COVER/
-> │      ├── 📄 B1.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 B1_01_ISSUE_LAW/
-> │      ├── 📄 B1.01.001_CORE_ISSUE_STATEMENT.md
-> │      ├── 📄 B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
-> │      ├── 📄 B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 C_CLAIMS_AND_MOTIONS/
-> │    └── 📂 C2_00_COVER/
-> │      ├── 📄 C2.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 C2_01_MOTION_VACATE/
-> │      ├── 📄 C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
-> │      ├── 📄 C2.01.002_motion_vacate.pdf
-> │      ├── 📄 C2.01.003_Exhibit_List.pdf
-> │      ├── 📄 C2.01.004_Exhibits_Combined.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 C2_02_EMERGENCY_STAY_QUASH/
-> │      ├── 📄 C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
-> │      ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 C2_03_SUPPLEMENTAL/
-> │      ├── 📄 C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
-> │      ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 C2.03.003_EXHIBIT_H_DECLARATION.pdf
-> │      ├── 📄 C2.03.004_Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 C2.03.005_COMBINED_SOURCE.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 C2_04_PROPOSED_ORDERS/
-> │      ├── 📄 C2.04.001_PROPOSED_ORDER_VACATE.md
-> │      ├── 📄 C2.04.001_order_vacate_proposed.pdf
-> │      ├── 📄 C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
-> │      ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 D_DELIVERY_SERVICE/
-> │    └── 📂 D3_00_COVER/
-> │      ├── 📄 D3.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 D3_01_SUMMONS/
-> │      ├── 📄 D3.01.001_SUMMONS_INCOMPLETE.pdf
-> │    └── 📂 D3_02_SHERIFF_RETURNS/
-> │      ├── 📄 D3.02.001_SHERIFF_RETURN_2025-03-05.pdf
-> │      ├── 📄 D3.02.002_SHERIFF_RETURN_2025-04-15.pdf
-> │    └── 📂 D3_03_SERVICE_ANALYSIS/
-> │      ├── 📄 D3.03.001_SERVICE_DEFECT_ANALYSIS.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 E_EFFECTS_PROCEDURAL_CHAIN/
-> │    └── 📂 E4_00_COVER/
-> │      ├── 📄 E4.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 E4_01_DEFAULT_JUDGMENT/
-> │      ├── 📄 E4.01.001_DEFAULT_JUDGMENT_ENTRY.pdf
-> │    └── 📂 E4_02_PETITION_FOR_WRIT/
-> │      ├── 📄 E4.02.001_PETITION_FOR_WRIT_OF_ASSISTANCE.pdf
-> │    └── 📂 E4_03_WRIT_ISSUED/
-> │      ├── 📄 E4.03.001_WRIT_OF_ASSISTANCE_ISSUED.pdf
-> │    └── 📂 E4_04_REMOVAL_ENFORCEMENT/
-> │      ├── 📄 E4.04.001_REMOVAL_ENFORCEMENT_RECORD.pdf
-> │    └── 📂 E4_05_CHAIN_SUMMARY/
-> │      ├── 📄 E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 F_FACTS_DECLARATIONS/
-> │    └── 📂 F5_00_COVER/
-> │      ├── 📄 F5.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 F5_01_AFFIDAVIT_NOT_SERVED/
-> │      ├── 📄 F5.01.001_AFFIDAVIT_NOT_SERVED.md
-> │      ├── 📄 _README.md
-> │    └── 📂 F5_02_DECLARATION_ONGOING_HARM/
-> │      ├── 📄 F5.02.001_DECLARATION_ONGOING_HARM.md
-> │      ├── 📄 _README.md
-> │    └── 📂 F5_03_CREDIBILITY_DECLARATION/
-> │      ├── 📄 F5.03.001_CREDIBILITY_DECLARATION.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 G_GROUNDS_ADA/
-> │    └── 📂 G6_00_COVER/
-> │      ├── 📄 G6.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 G6_01_ADA_NOTICE/
-> │      ├── 📄 G6.01.001_ADA_NOTICE.pdf
-> │    └── 📂 G6_02_ADA_SUPPORTING/
-> │      ├── 📄 G6.02.001_ADA_SUPPORTING_DOCUMENTATION.pdf
-> │    └── 📂 G6_03_ADA_IMPACT_SUMMARY/
-> │      ├── 📄 G6.03.001_ADA_IMPACT_SUMMARY.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 H_HARD_EXHIBITS/
-> │    └── 📂 H7_00_COVER/
-> │      ├── 📄 H7.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_01_EXHIBITS_A-H/
-> │      ├── 📄 H7.01.0001-0008_EXHIBITS_COMBINED.pdf
-> │      ├── 📄 H7.01.0001_EXHIBIT_A_SHERIFF_RETURN_2025-03-05.pdf
-> │      ├── 📄 H7.01.0002_EXHIBIT_B_SHERIFF_RETURN_2025-04-15.pdf
-> │      ├── 📄 H7.01.0003_EXHIBIT_C_INCOMPLETE_SUMMONS.pdf
-> │      ├── 📄 H7.01.0004_EXHIBIT_D_DEFAULT_JUDGMENT_MOTION.pdf
-> │      ├── 📄 H7.01.0005_EXHIBIT_E_PETITION_FOR_WRIT.pdf
-> │      ├── 📄 H7.01.0006_EXHIBIT_F_AFFIDAVIT.pdf
-> │      ├── 📄 H7.01.0007_EXHIBIT_G1_ADA_NOTICE.pdf
-> │      ├── 📄 H7.01.0008_EXHIBIT_G2_AES_ADA_DOCUMENTS.pdf
-> │      ├── 📄 H7.01.0009_EXHIBIT_H_DECLARATION_OF_BACKGROUND.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_02_EXHIBITS_I_ADA/
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_03_EXHIBITS_J_REMOVAL/
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_04_EXHIBITS_K_FINANCIAL/
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_05_EXHIBITS_L_STATEMENTS/
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_06_EXHIBITS_M_SERVICE/
-> │      ├── 📄 _README.md
-> │    └── 📂 H7_07_EXHIBITS_P_PROPERTY/
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 I_INTERNAL_REFERENCE/
-> │    └── 📂 I8_00_COVER/
-> │      ├── 📄 I8.00.000_SECTION_COVER.md
-> │      ├── 📄 _README.md
-> │    └── 📂 I8_01_FULL_DOCKET/
-> │      ├── 📄 I8_01_000_CASE_SUMMARY.md
-> │      ├── 📄 I8_01_000_FULL_DOCKET.pdf
-> │      ├── 📄 I8_01_001_Complaint.pdf
-> │      ├── 📄 I8_01_002_Appearance.pdf
-> │      ├── 📄 I8_01_003_Request_for_Admissions.pdf
-> │      ├── 📄 I8_01_004_Notice_to_Homeowners.pdf
-> │      ├── 📄 I8_01_005_Appearance_2.pdf
-> │      ├── 📄 I8_01_006_Summons_1.pdf
-> │      ├── 📄 I8_01_007_Summons_2.pdf
-> │      ├── 📄 I8_01_008_Summons_3.pdf
-> │      ├── 📄 I8_01_009_Summons_4.pdf
-> │      ├── 📄 I8_01_010_Summons_5.pdf
-> │      ├── 📄 I8_01_011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 I8_01_012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 I8_01_013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 I8_01_014_Affidavit.pdf
-> │      ├── 📄 I8_01_015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 I8_01_016_Affidavit_Additional.pdf
-> │      ├── 📄 I8_01_017_Order_Denying_Default_Judgment.pdf
-> │      ├── 📄 I8_01_018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 I8_01_019_Amended_Motion_Default_Judgment_1.pdf
-> │      ├── 📄 I8_01_020_Amended_Motion_Default_Judgment_2.pdf
-> │      ├── 📄 I8_01_021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 I8_01_022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 I8_01_023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 I8_01_024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 I8_01_025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 I8_01_026_Exhibit_List_A-G.pdf
-> │      ├── 📄 I8_01_027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 I8_01_028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 I8_01_029_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 I8_01_030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 I8_01_031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 I8_01_032_Proposed_Order_Stay.pdf
-> │      ├── 📄 I8_01_033_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 I8_02_RESEARCH_NOTES/
-> │      ├── 📄 I8.02.001_RESEARCH_AND_NOTES.md
-> │      ├── 📄 _README.md
-> │    └── 📂 I8_99_DO_NOT_PRINT/
-> │      ├── 📄 I8.99.999_INTERNAL_DO_NOT_PRINT.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> └── 📂 02_WAR_ROOM/
-> │  ├── 📄 Exhibit X — Inventory of Jurisdictional, Execut.md
-> │  ├── 📄 INTERNAL VALUATION MEMO.md
-> │  └── 📂 WA_OVERVIEW/
-> │    ├── 📄 WA0.00.000_WAR_ROOM_OVERVIEW.md
-> │    └── 📂 WA0.00.001_TIMELINE/
-> │      └── 📂 30_2025/
-> │        ├── 📄 WA0.00.030__2025-01-16_Case_Filed.md
-> │        ├── 📄 WA0.00.030__2025-03-05_Service_Attempt_1.md
-> │        ├── 📄 WA0.00.030__2025-04-15_Service_Attempt_2.md
-> │        ├── 📄 WA0.00.030__2025-05-13_Motion_for_Default_Judgm.md
-> │        ├── 📄 WA0.00.030__2025-05-21_Order_Denying_Default_Ju.md
-> │        ├── 📄 WA0.00.030__2025-05-23_Amended_Motion_Default_J.md
-> │        ├── 📄 WA0.00.030__2025-05-28_Default_Judgment_Entered.md
-> │        ├── 📄 WA0.00.030__2025-05-30_Praecipe_Sheriff_Sale.md
-> │        ├── 📄 WA0.00.030__2025-07-09_Sheriff_Sale_Notice_Post.md
-> │        ├── 📄 WA0.00.030__2025-08-15_Sheriff_Sale.md
-> │        ├── 📄 WA0.00.030__2025-10-29_Petition_for_Writ_of_Ass.md
-> │        ├── 📄 WA0.00.030__2025-11-06_Writ_of_Assistance_Issue.md
-> │        ├── 📄 WA0.00.030__2025-12-09_Writ_Executed_Removal.md
-> │        ├── 📄 WA0.00.030__2025-12-10_Motions_Filed.md
-> │        ├── 📄 WA0.00.030__2025-12-11_Court_Orders_and_Hearing.md
-> │        ├── 📄 WA0.00.030__2025-12-12_Supplemental_Emergency_M.md
-> │        ├── 📄 WA0.00.030__index.html
-> │        ├── 📄 WA0.00.030__index.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 WA0.00.030__Timeline_Canvas.canvas
-> │      ├── 📄 WA0.00.030__index.md
-> │      ├── 📄 WA0.00.060__Master_Timeline.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 WA0.00.010_ACTIVE_STRATEGIES.md
-> │    ├── 📄 WA0.00.020_PROMOTION_CANDIDATES.md
-> │    └── 📂 WA0_00_COMMAND_MAP/
-> │      ├── 📄 WA0.00.01_COMMAND_MAP.canvas
-> │      ├── 📄 _README.md
-> │    └── 📂 WA0_01_HEARING_PLANNING/
-> │      ├── 📄 WA0.01.001_HEARING_GOALS.md
-> │      ├── 📄 WA0.01.002_TALKING_POINTS.md
-> │      ├── 📄 WA0.01.003_JUDGE_QUESTIONS_PREDICTED.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WB_BASIS/
-> │    └── 📂 WB1_00_LAW_RESEARCH/
-> │      ├── 📄 WB1.00.001_CASE_LAW_RESEARCH.md
-> │      ├── 📄 WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
-> │      ├── 📄 WB1.00.003_JURISDICTION_THEORY.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
-> │      ├── 📄 WB1.01.001_BACKUP_ARGUMENTS.md
-> │      ├── 📄 WB1.01.002_IF_JUDGE_PUSHBACK.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WC_CLAIMS_AND_MOTIONS/
-> │    └── 📂 WC2_00_DRAFT_MOTIONS/
-> │      ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
-> │      ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
-> │      ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
-> │      ├── 📄 WC2.00.010___Motions.md
-> │      ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.docx
-> │      ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
-> │      ├── 📄 WC2.00.010__motion_emergency_supplemental_mot.docx
-> │      ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
-> │      ├── 📄 WC2.00.010__motion_to_vacate_void_judgement.docx
-> │      ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WC2_01_PROPOSED_ORDERS/
-> │      ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
-> │      ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
-> │      ├── 📄 WC2.01.010__Proposed_Orders.md
-> │      ├── 📄 WC2.01.010__index.html
-> │      ├── 📄 WC2.01.010__index.md
-> │      ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
-> │      ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WD_SERVICE/
-> │    └── 📂 WD3_00_SERVICE_TRACKING/
-> │      ├── 📄 WD3.00.001_SERVICE_MATRIX.md
-> │      ├── 📄 WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WD3_01_SERVICE_EVIDENCE/
-> │      ├── 📄 WD3.01.001_SUMMONS_SOURCE.pdf
-> │      ├── 📄 WD3.01.002_SHERIFF_METADATA.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WE_EFFECTS_PROCEDURAL/
-> │    └── 📂 WE4_00_CHAIN_ANALYSIS/
-> │      ├── 📄 WE4.00.001_PROCEDURAL_FAILURE_MAP.md
-> │      ├── 📄 WE4.00.002_BUT_FOR_ANALYSIS.md
-> │      ├── 📄 WE4.00.010__Integrate_Disability_Separate_Appe.m4a
-> │      ├── 📄 WE4.00.010__Procedural_failure_map_one_pager.md
-> │      ├── 📄 WE4.00.010__Void_Judgment_Eviction_Crisis.pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 WE4_01_REMEDIES/
-> │      ├── 📄 WE4.01.001_STAY_PATHS.md
-> │      ├── 📄 WE4.01.002_REVERSAL_PATHS.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WF_DECLARATIONS/
-> │    └── 📂 WF5_00_FACT_DEVELOPMENT/
-> │      ├── 📄 WF5.00.001_FACT_TIMELINE.md
-> │      ├── 📄 WF5.00.002_FACT_GAPS.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WF5_01_DRAFT_DECLARATIONS/
-> │      ├── 📄 WF5.01.001_DRAFT_AFFIDAVIT.md
-> │      ├── 📄 WF5.01.002_DRAFT_DECLARATION.md
-> │      ├── 📄 WF5.01.010__ADA_Disability_Affidavit.md
-> │      ├── 📄 WF5.01.010__Character_Affidavit.md
-> │      ├── 📄 WF5.01.010__Community_Service_Affidavit.md
-> │      ├── 📄 WF5.01.010__Credibility_Affidavit.md
-> │      ├── 📄 WF5.01.010__Gender_Identity_Clarification.md
-> │      ├── 📄 WF5.01.010__Observations_Affidavit.md
-> │      ├── 📄 WF5.01.010___Declarations.md
-> │      ├── 📄 WF5.01.010___Instructions_for_witnesses.md
-> │      ├── 📄 WF5.01.010__affidavit_not_served.docx
-> │      ├── 📄 WF5.01.010__affidavit_not_served.md
-> │      ├── 📄 WF5.01.010__index 1.md
-> │      ├── 📄 WF5.01.010__index.html
-> │      ├── 📄 WF5.01.010__index.md
-> │      ├── 📄 WF5.01.010__updated_affidavit_language.md
-> │      ├── 📄 WF5.01.010__verified_affidavit_of_defendant.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WG_GROUNDS_ADA/
-> │    └── 📂 WG6_00_ADA_STRATEGY/
-> │      ├── 📄 WG6.00.001_ADA_TITLE_II_ANALYSIS.md
-> │      ├── 📄 WG6.00.002_REASONABLE_ACCOMMODATIONS.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
-> │      ├── 📄 WG6.01.001_DOJ_COMPLAINT.md
-> │      ├── 📄 WG6.01.002_ICRC_COMPLAINT.md
-> │      ├── 📄 WG6.01.003_STATUS_TRACKER.md
-> │      ├── 📄 _README.md
-> │    ├── 📄 _README.md
-> │  └── 📂 WH_EVIDENCE/
-> │    ├── 📄 Evidence_Log.md
-> │    └── 📂 WH7_00_RAW_INTAKE/
-> │      └── 📂 10_supporting/
-> │        └── 📂 10_photos_video/
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_002.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_012.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_01b.png
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_10f.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1a8.mp4
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1be.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1f3.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_25f.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_2f0.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_49.heic
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_4e0.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_5be.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_5d9.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_611.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_63f.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_71c.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_78b.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_7a5.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_835.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_8a1.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_8d8.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_942.png
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9b6.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9fb.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9ff.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_a88.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_ca0.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_db9.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_e4c.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_eba.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_ed6.mp4
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f5.heic
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f60.png
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f98.png
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_fa1.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_fdd.jpg
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 index.html
-> │        └── 📂 20_receipts/
-> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │          ├── 📄 WH7.00.020__2025-12-20_EXH-20_receipts_0860d3d.jpg
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 index.html
-> │        └── 📂 30_declarations/
-> │          ├── 📄 WH7.00.020__index.html
-> │        └── 📂 40_affidavits/
-> │          ├── 📄 WH7.00.020__index.html
-> │          └── 📂 ada-disability/
-> │            ├── 📄 WH7.00.020__index.html
-> │          └── 📂 character/
-> │            ├── 📄 WH7.00.020__index.html
-> │          └── 📂 community-service/
-> │            ├── 📄 WH7.00.020__index.html
-> │          └── 📂 credibility/
-> │            ├── 📄 WH7.00.020__index.html
-> │          └── 📂 observations/
-> │            ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 WH7.00.020__index.html
-> │      └── 📂 20_property/
-> │        └── 📂 10_mortgage_history/
-> │          └── 📂 20_payments/
-> │            ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │            ├── 📄 WH7.00.020__2025-12-20_EXH-20_payments_c5131de.png
-> │            ├── 📄 WH7.00.020__index.html
-> │            ├── 📄 index.html
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 index.html
-> │        └── 📂 20_parcel/
-> │          ├── 📄 Parcel_6016506_PRC.pdf
-> │          ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │          ├── 📄 WH7.00.020__Parcel_6016506_PRC.pdf
-> │          ├── 📄 WH7.00.020__Parcel_6016506_ParcelDetailHistory.pdf
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 index.html
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 index.html
-> │      └── 📂 30_declarations/
-> │        ├── 📄 index.html
-> │      └── 📂 30_fcfcu/
-> │        ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │        ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │        ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
-> │        ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │        ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │        ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │        ├── 📄 2024-20-03_Response_to_tax_notice.pdf
-> │        ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │        ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │        ├── 📄 20241204_FCFCU_Statement.pdf
-> │        ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
-> │        ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │        ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │        ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │        ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │        ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Heal.pdf
-> │        ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
-> │        ├── 📄 WH7.00.020__2023-09-20_Notice_Disabilities_Har.pdf
-> │        ├── 📄 WH7.00.020__2024-03-20_FCFCU_Certified_Respons.pdf
-> │        ├── 📄 WH7.00.020__2024-12-09_outgoing_email_bank_acc.pdf
-> │        ├── 📄 WH7.00.020__2024-12-11_outgoing_email_bank_acc.pdf
-> │        ├── 📄 WH7.00.020__2024-20-03_Response_to_tax_notice.pdf
-> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement (1).pdf
-> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement (2).pdf
-> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement.pdf
-> │        ├── 📄 WH7.00.020__2025-12-20_EXH-30_fcfcu_740eacdc_2.jpg
-> │        ├── 📄 WH7.00.020__2025-12-20_EXH-30_fcfcu_ac6eb2ea_2.jpg
-> │        ├── 📄 WH7.00.020__21June-24-4817Shadow_Appraisal.pdf
-> │        ├── 📄 WH7.00.020__FCFCU_v_CR-V_Report_to_Court.pdf
-> │        ├── 📄 WH7.00.020__REPORT_TO_COURT_ON_DEFENDANTS_REQU.pdf
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_affidavits/
-> │        └── 📂 ada-disability/
-> │          ├── 📄 index.html
-> │        └── 📂 character/
-> │          ├── 📄 index.html
-> │        └── 📂 community-service/
-> │          ├── 📄 index.html
-> │        └── 📂 credibility/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 observations/
-> │          ├── 📄 index.html
-> │      └── 📂 50_aes/
-> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │        ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
-> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │        ├── 📄 WH7.00.020__2025-06-08_AES_ADA_Notice.pdf
-> │        ├── 📄 WH7.00.020__2025-06-08_AES_ADA_Request_Financi.pdf
-> │        ├── 📄 WH7.00.020__2025-12-16_AES_Emergency_Notice.md
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 99__archive/
-> │        ├── 📄 WH7.00.020__README_supporting.md
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _README.md
-> │      ├── 📄 Raw_Exhibit_Map.md
-> │      ├── 📄 WH7.00.001_RAW_PHONE_DUMP.md
-> │      ├── 📄 WH7.00.002_RAW_VIDEO_AUDIO.md
-> │      ├── 📄 WH7.00.003_RAW_SCREENSHOTS.md
-> │      ├── 📄 WH7.00.020__Raw_Exhibit_Map.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WH7_01_POTENTIAL_EXHIBITS/
-> │      └── 📂 10_EXHIBIT_SETS/
-> │        ├── 📄 WH7.01.0100___checklist.md
-> │        ├── 📄 WH7.01.0100__index.html
-> │        ├── 📄 _README.md
-> │        └── 📂 _exhibit_A-H_initial/
-> │          ├── 📄 WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
-> │          ├── 📄 WH7.01.0100__Exhibit_H_Declaration.pdf
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_I_ada_communications/
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_J_eviction_removal/
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_K_financial/
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_L_statements/
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_M_court-service/
-> │          ├── 📄 WH7.01.0100__index.html
-> │        └── 📂 exhibits_P_property/
-> │          ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 30_exhibits/
-> │        ├── 📄 WH7.01.0050__exhibit_list.docx
-> │        ├── 📄 WH7.01.0050__exhibit_list.md
-> │        ├── 📄 _README.md
-> │        └── 📂 exhibits_templates/
-> │          ├── 📄 WH7.01.0050___Exhibits_Lists.md
-> │          ├── 📄 _README.md
-> │      ├── 📄 WH7.01.0001_POTENTIAL_EXHIBIT_0001.pdf
-> │      ├── 📄 WH7.01.0002_POTENTIAL_EXHIBIT_0002.pdf
-> │    ├── 📄 _README.md
-> │  └── 📂 WI_INTERNAL/
-> │    └── 📂 00_trackers/
-> │      ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
-> │      ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strat.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.md
-> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
-> │    └── 📂 05_timeline/
-> │      └── 📂 30_2025/
-> │        ├── 📄 2025-01-16_Case_Filed.md
-> │        ├── 📄 2025-03-05_Service_Attempt_1.md
-> │        ├── 📄 2025-04-15_Service_Attempt_2.md
-> │        ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │        ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │        ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │        ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │        ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │        ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │        ├── 📄 2025-08-15_Sheriff_Sale.md
-> │        ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │        ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │        ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │        ├── 📄 2025-12-10_Motions_Filed.md
-> │        ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │        ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │      ├── 📄 Timeline_Canvas.canvas
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 10_overviews/
-> │      ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │      ├── 📄 Procedural_failure_map_one_pager.md
-> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.html
-> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    └── 📂 20_strategy/
-> │      └── 📂 10_ada_title_ii/
-> │        ├── 📄 index.html
-> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │        ├── 📄 index.html
-> │      └── 📂 30_void_vs_voidable_tr_60b/
-> │        ├── 📄 index.html
-> │      ├── 📄 Strategic_Plan.canvas
-> │      ├── 📄 index.html
-> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
-> │    ├── 📄 Case_Log.md
-> │    ├── 📄 Contacts.md
-> │    ├── 📄 Crisis_The_Anatomy_of_Institutional_Failure.pdf
-> │    ├── 📄 Debate.m4a
-> │    ├── 📄 Financial_Tracker.md
-> │    ├── 📄 Foreclosure and Housing Litigation Case Record.csv
-> │    ├── 📄 Foreclosure_Void_Judgment_Institutional_Failur.m4a
-> │    ├── 📄 Foreclosure_Void_Versus_Damages_Due_Process.m4a
-> │    ├── 📄 Forensic_Audit_of_a_Void_Foreclosure.m4a
-> │    ├── 📄 Formal Inventory of Violations and Schedule of .md
-> │    ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
-> │    ├── 📄 LEGAL MEMORANDUM.md
-> │    ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │    ├── 📄 Proposal for Strategic Reports in the Matter of.md
-> │    ├── 📄 Talking_Points.md
-> │    └── 📂 WI8_00_DOCKET_RECORD/
-> │      ├── 📄 WI8.00.001_FULL_DOCKET.pdf
-> │      ├── 📄 WI8.00.002_DOCKET_NOTES.md
-> │      ├── 📄 _README.md
-> │      └── 📂 legacy/
-> │        └── 📂 30_court_record/
-> │          └── 📂 10_docket/
-> │            ├── 📄 WI8.00.001__001_Complaint.pdf
-> │            ├── 📄 WI8.00.001__002_Appearance.pdf
-> │            ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
-> │            ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
-> │            ├── 📄 WI8.00.001__005_Appearance_2.pdf
-> │            ├── 📄 WI8.00.001__006_Summons_1.pdf
-> │            ├── 📄 WI8.00.001__007_Summons_2.pdf
-> │            ├── 📄 WI8.00.001__008_Summons_3.pdf
-> │            ├── 📄 WI8.00.001__009_Summons_4.pdf
-> │            ├── 📄 WI8.00.001__010_Summons_5.pdf
-> │            ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
-> │            ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
-> │            ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
-> │            ├── 📄 WI8.00.001__014_Affidavit.pdf
-> │            ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
-> │            ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
-> │            ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
-> │            ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
-> │            ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
-> │            ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
-> │            ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
-> │            ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
-> │            ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
-> │            ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
-> │            ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
-> │            ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
-> │            ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
-> │            ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
-> │            ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
-> │            ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
-> │            ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
-> │            ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
-> │            ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
-> │            ├── 📄 WI8.00.001___Case_Summary.md
-> │            ├── 📄 WI8.00.001__index.html
-> │            ├── 📄 _README.md
-> │    └── 📂 WI8_01_PUBLIC_ADVOCACY/
-> │      ├── 📄 WI8.01.001_PRESS_STRATEGY.md
-> │      ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
-> │      ├── 📄 WI8.01.003_TIMING_AND_RISK.md
-> │      ├── 📄 _README.md
-> │      └── 📂 al_narrative/
-> │        └── 📂 01_Public_Narrative/
-> │          ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> │          ├── 📄 WI8.01.010__Public_Statement.md
-> │          ├── 📄 WI8.01.010__index.html
-> │          ├── 📄 _README.md
-> │      └── 📂 rrative/
-> │        └── 📂 04_Donations_and_Support/
-> │          └── 📂 Donation_Page_HTML/
-> │            ├── 📄 WI8.01.050__index.html
-> │          └── 📂 Screenshots_Live_Page/
-> │            ├── 📄 WI8.01.050__index.html
-> │          ├── 📄 WI8.01.050__Donations_Context.md
-> │          ├── 📄 WI8.01.050__index.html
-> │          ├── 📄 _README.md
-> │    └── 📂 WI8_02_DAMAGES_AND_SETTLEMENT/
-> │      ├── 📄 WI8.02.001_ECONOMIC_HARM.md
-> │      ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
-> │      ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
-> │      ├── 📄 _README.md
-> │      └── 📂 l_narrative/
-> │        └── 📂 02_Exposure_and_Harm/
-> │          └── 📂 Photos_Conditions/
-> │            ├── 📄 WI8.02.050__index.html
-> │          ├── 📄 WI8.02.050__Cold_Risk_Report.md
-> │          ├── 📄 WI8.02.050__index.html
-> │          └── 📂 Weather_Reports/
-> │            ├── 📄 WI8.02.050__index.html
-> │          ├── 📄 _README.md
-> │      └── 📂 on/
-> │        └── 📂 __legacy/
-> │          └── 📂 00_admin/
-> │            └── 📂 00_trackers/
-> │              ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
-> │              ├── 📄 WI8.02.010__2024-12-09_Eviction_Case_MasterFi.docx
-> │              ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
-> │              ├── 📄 WI8.02.010__2025-12-16_case_summary.md
-> │              ├── 📄 WI8.02.010__Case_Log.md
-> │              ├── 📄 WI8.02.010__Financial_Tracker.md
-> │              ├── 📄 WI8.02.010__QiCase-FCFCU_Financial_Tracker.xlsx
-> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
-> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
-> │              ├── 📄 WI8.02.010__case_conversation_log.txt
-> │              ├── 📄 WI8.02.010__expenses.csv
-> │              ├── 📄 WI8.02.010__index.html
-> │              ├── 📄 WI8.02.010__index.md
-> │              ├── 📄 _README.md
-> │    └── 📂 WI8_99_INTERNAL_ONLY/
-> │      └── 📂 l_narrative/
-> │        └── 📂 03_Internal_Analysis/
-> │          └── 📂 Payout_Strategy/
-> │            ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
-> │            ├── 📄 WI8.99.010__index.html
-> │            ├── 📄 _README.md
-> │          └── 📂 Premonitions/
-> │            ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
-> │            ├── 📄 WI8.99.010__index.html
-> │            ├── 📄 _README.md
-> │          ├── 📄 WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
-> │          ├── 📄 WI8.99.010__index.html
-> │          ├── 📄 _README.md
-> │    ├── 📄 Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
-> │    ├── 📄 _README.md
-> │    ├── 📄 case_conversation_log.txt
-> │    ├── 📄 combinepdf.pdf
-> │    ├── 📄 expenses.csv
-> │    └── 📂 personal_narrative/
-> │      └── 📂 01_Public_Narrative/
-> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │        ├── 📄 Public_Statement.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 02_Exposure_and_Harm/
-> │        ├── 📄 Cold_Risk_Report.md
-> │        └── 📂 Photos_Conditions/
-> │          ├── 📄 index.html
-> │        └── 📂 Weather_Reports/
-> │          ├── 📄 index.html
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 03_Internal_Analysis/
-> │        └── 📂 Payout_Strategy/
-> │          ├── 📄 Long_Term_Payout_Strategy.md
-> │          ├── 📄 _README.md
-> │          ├── 📄 index.html
-> │        └── 📂 Premonitions/
-> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
-> │          ├── 📄 _README.md
-> │          ├── 📄 index.html
-> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 04_Donations_and_Support/
-> │        └── 📂 Donation_Page_HTML/
-> │          ├── 📄 index.html
-> │        ├── 📄 Donations_Context.md
-> │        └── 📂 Screenshots_Live_Page/
-> │          ├── 📄 index.html
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      └── 📂 05_Timeline/
-> │        ├── 📄 Master_Timeline.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │  └── 📂 WZ_PROMOTION/
-> │    ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
-> │    ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
-> │    ├── 📄 WZ9.00.003_PROMOTION_LOG.md
-> │    ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
-> │    └── 📂 WZ9_00_050_FILINGS/
-> │      └── 📂 Supplemental/
-> │        └── 📂 01_drafts/
-> │          ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
-> │          ├── 📄 WZ9.00.050__index.html
-> │        └── 📂 02_exhibits/
-> │          ├── 📄 WZ9.00.050__20_exhibits_combined_source
-> │          ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
-> │          ├── 📄 WZ9.00.050__index.html
-> │        └── 📂 04_filed_receipts/
-> │          ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │          ├── 📄 WZ9.00.050__index.html
-> │        ├── 📄 WZ9.00.050__index.html
-> │      ├── 📄 WZ9.00.050__Motions.md
-> │      ├── 📄 WZ9.00.050__index.html
-> │      ├── 📄 _README.md
-> │      └── 📂 motion_vacate/
-> │        └── 📂 01_drafts/
-> │          ├── 📄 WZ9.00.050__Emergency Motions.docx
-> │          ├── 📄 WZ9.00.050__index.html
-> │        └── 📂 02_exhibits/
-> │          ├── 📄 WZ9.00.050__01_motion_vacate.pdf
-> │          ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
-> │          ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
-> │          ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
-> │          ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
-> │          ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
-> │          ├── 📄 WZ9.00.050__combinepdf.pdf
-> │          ├── 📄 WZ9.00.050__index.html
-> │        └── 📂 03_proposed_order/
-> │          ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
-> │          ├── 📄 WZ9.00.050__index.html
-> │        └── 📂 04_filed_receipts/
-> │          ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │          ├── 📄 WZ9.00.050__index.html
-> │        ├── 📄 WZ9.00.050__.gitkeep
-> │        ├── 📄 WZ9.00.050__index.html
-> │    ├── 📄 _README.md
-> └── 📂 03_TOOLS/
-> │  └── 📂 03_DRAFTS_TEMPLATES/
-> │    └── 📂 Case_FCFCU_Personal_Narrative/
-> │      └── 📂 01_Public_Narrative/
-> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │        ├── 📄 Public_Statement.md
-> │        ├── 📄 index.html
-> │      └── 📂 02_Exposure_and_Harm/
-> │        ├── 📄 Cold_Risk_Report.md
-> │        └── 📂 Photos_Conditions/
-> │          ├── 📄 index.html
-> │        └── 📂 Weather_Reports/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 03_Internal_Analysis/
-> │        └── 📂 Payout_Strategy/
-> │          ├── 📄 Long_Term_Payout_Strategy.md
-> │          ├── 📄 index.html
-> │        └── 📂 Premonitions/
-> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
-> │          ├── 📄 index.html
-> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │        ├── 📄 index.html
-> │      └── 📂 04_Donations_and_Support/
-> │        └── 📂 Donation_Page_HTML/
-> │          ├── 📄 index.html
-> │        ├── 📄 Donations_Context.md
-> │        └── 📂 Screenshots_Live_Page/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 05_Timeline/
-> │        ├── 📄 Master_Timeline.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 DC_CLAIMS_AND_MOTIONS/
-> │      └── 📂 50_proposed_orders/
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │        ├── 📄 proposed_order_emergency_stay.md
-> │        ├── 📄 proposed_order_motion_to_vacate.md
-> │        └── 📂 proposed_templates/
-> │          ├── 📄 Proposed_Orders.md
-> │          ├── 📄 _README.md
-> │          ├── 📄 index.html
-> │      ├── 📄 EMERGENCY_FILING_PACKET.md
-> │      ├── 📄 Proposed_Order_Vacate.docx
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      ├── 📄 motion_emergency_stay_of_writ.docx
-> │      ├── 📄 motion_emergency_stay_of_writ.md
-> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
-> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
-> │      ├── 📄 motion_to_vacate_void_judgement.docx
-> │      ├── 📄 motion_to_vacate_void_judgment.md
-> │      └── 📂 motions_templates/
-> │        ├── 📄 _Motions.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │    └── 📂 DF_FACTS_DECLARATIONS/
-> │      ├── 📄 _README.md
-> │      ├── 📄 affidavit_not_served.docx
-> │      ├── 📄 affidavit_not_served.md
-> │      └── 📂 affidavits_templates/
-> │        ├── 📄 ADA_Disability_Affidavit.md
-> │        ├── 📄 Character_Affidavit.md
-> │        ├── 📄 Community_Service_Affidavit.md
-> │        ├── 📄 Credibility_Affidavit.md
-> │        ├── 📄 Observations_Affidavit.md
-> │        ├── 📄 _Instructions_for_witnesses.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │      └── 📂 declarations_templates/
-> │        ├── 📄 Gender_Identity_Clarification.md
-> │        ├── 📄 _Declarations.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │        ├── 📄 index.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      ├── 📄 updated_affidavit_language.md
-> │      ├── 📄 verified_affidavit_of_defendant.md
-> │    └── 📂 DH_HARD_EXHIBITS/
-> │      ├── 📄 TEMPLATE_EXHIBIT_LABEL.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 exhibit_list.docx
-> │      ├── 📄 exhibit_list.md
-> │      └── 📂 exhibits_templates/
-> │        ├── 📄 _Exhibits_Lists.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 DI_INTERNAL_REFERENCE/
-> │      ├── 📄 TEMPLATE_COURT_DOC.md
-> │      ├── 📄 TEMPLATE_HANDUP_PACKET_NOTE.md
-> │      ├── 📄 TEMPLATE_SECTION_COVER.md
-> │      ├── 📄 TEMPLATE_SECTION_INDEX.md
-> │      ├── 📄 TEMPLATE_WAR_NOTE.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 ada_packet.md
-> │      ├── 📄 attorney_brief.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │      └── 📂 outreach_templates/
-> │        ├── 📄 _Advocate_Outreach_Message.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 receipt_usps_tracking.md
-> │      ├── 📄 script_call_lawyers.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 audit_fcfcu.py
-> │    ├── 📄 create_masters.py
-> │    ├── 📄 fix_court_binder.py
-> └── 📂 10_filings/
-> │  └── 📂 10_2025-12-10_motion_vacate/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 Emergency Motions.docx
-> │      ├── 📄 index.html
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 01_motion_vacate.pdf
-> │      ├── 📄 02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 03_order_vacate_proposed.pdf
-> │      ├── 📄 04_order_stay_writ_proposed.pdf
-> │      ├── 📄 05_Exhibit_List.pdf
-> │      ├── 📄 06_Exhibits_Combined.pdf
-> │      ├── 📄 combinepdf.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 03_proposed_order/
-> │      ├── 📄 Proposed_Order_Vacate.docx
-> │      ├── 📄 index.html
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 20_exhibits_combined_source
-> │      ├── 📄 Exhibit_H_Declaration.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  ├── 📄 Motions.md
-> │  ├── 📄 index.html
-> └── 📂 20_evidence_vault/
-> │  └── 📂 10_EXHIBIT_SETS/
-> │    ├── 📄 _checklist.md
-> │    └── 📂 _exhibit_A-H_initial/
-> │      ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
-> │      ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
-> │      ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
-> │      ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
-> │      ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
-> │      ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
-> │      ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
-> │      ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
-> │      ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
-> │      ├── 📄 Exhibit_H_Declaration.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_I_ada_communications/
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_J_eviction_removal/
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_K_financial/
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_L_statements/
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_M_court-service/
-> │      ├── 📄 index.html
-> │    └── 📂 exhibits_P_property/
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  └── 📂 20_RAW/
-> │    └── 📂 10_supporting/
-> │      └── 📂 10_photos_video/
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │        ├── 📄 index.html
-> │      └── 📂 20_receipts/
-> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │        ├── 📄 index.html
-> │      └── 📂 30_declarations/
-> │        ├── 📄 index.html
-> │      └── 📂 40_affidavits/
-> │        └── 📂 ada-disability/
-> │          ├── 📄 index.html
-> │        └── 📂 character/
-> │          ├── 📄 index.html
-> │        └── 📂 community-service/
-> │          ├── 📄 index.html
-> │        └── 📂 credibility/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 observations/
-> │          ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 20_property/
-> │      └── 📂 10_mortgage_history/
-> │        └── 📂 20_payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 30_fcfcu/
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │      ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
-> │      ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-20-03_Response_to_tax_notice.pdf
-> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │      ├── 📄 20241204_FCFCU_Statement.pdf
-> │      ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
-> │      ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │      ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │      ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │      ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 50_aes/
-> │      ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │      ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
-> │      ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │      ├── 📄 index.html
-> │    └── 📂 99__archive/
-> │      ├── 📄 README_supporting.md
-> │      ├── 📄 index.html
-> │    ├── 📄 Raw_Exhibit_Map.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Evidence_Log.md
-> │  ├── 📄 index.html
-> └── 📂 30_court_record/
-> │  └── 📂 10_docket/
-> │    ├── 📄 001_Complaint.pdf
-> │    ├── 📄 002_Appearance.pdf
-> │    ├── 📄 003_Request_for_Admissions.pdf
-> │    ├── 📄 004_Notice_to_Homeowners.pdf
-> │    ├── 📄 005_Appearance_2.pdf
-> │    ├── 📄 006_Summons_1.pdf
-> │    ├── 📄 007_Summons_2.pdf
-> │    ├── 📄 008_Summons_3.pdf
-> │    ├── 📄 009_Summons_4.pdf
-> │    ├── 📄 010_Summons_5.pdf
-> │    ├── 📄 011_Service_Returned_03-05-2025.pdf
-> │    ├── 📄 012_Service_Returned_04-15-2025.pdf
-> │    ├── 📄 013_Motion_for_Default_Judgment.pdf
-> │    ├── 📄 014_Affidavit.pdf
-> │    ├── 📄 015_Affidavit_Attorney_Fees.pdf
-> │    ├── 📄 016_Affidavit_Additional.pdf
-> │    ├── 📄 017_Order_Denying_Default_Judgment.pdf
-> │    ├── 📄 018_Omitted_Notice_of_Service.pdf
-> │    ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
-> │    ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
-> │    ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
-> │    ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
-> │    ├── 📄 023_Decree_Foreclosure_Returned.pdf
-> │    ├── 📄 024_Petition_Writ_of_Assistance.pdf
-> │    ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
-> │    ├── 📄 026_Exhibit_List_A-G.pdf
-> │    ├── 📄 027_Supplemental_Motion_Access.pdf
-> │    ├── 📄 028_Report_Court_Defendant_Request.pdf
-> │    ├── 📄 029_Emergency_Supplemental_Declaration.pdf
-> │    ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
-> │    ├── 📄 031_Proposed_Order_Vacate.pdf
-> │    ├── 📄 032_Proposed_Order_Stay.pdf
-> │    ├── 📄 033_ADA_Disability_Affidavit.pdf
-> │    ├── 📄 _Case_Summary.md
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 90_OUTPUTS/
-> │  └── 📂 J_EXPORTS/
-> │    └── 📂 01_court_binder/
-> │      └── 📂 fcfcu-49d03-2501-mf-002559/
-> │        └── 📂 a_anchor_overview/
-> │          ├── 📄 _readme.html
-> │          └── 📂 a0_00_cover_index/
-> │            ├── 📄 a0.00.000_section_cover.html
-> │            ├── 📄 a0.00.010_master_case_index.html
-> │          └── 📂 a0_01_overview/
-> │            ├── 📄 a0.01.001_one_page_case_summary.html
-> │            ├── 📄 a0.01.002_hearing_scope_and_relief.html
-> │        └── 📂 b_basis_issue_and_law/
-> │          ├── 📄 _readme.html
-> │          └── 📂 b1_00_cover/
-> │            ├── 📄 b1.00.000_section_cover.html
-> │          └── 📂 b1_01_issue_law/
-> │            ├── 📄 b1.01.001_core_issue_statement.html
-> │            ├── 📄 b1.01.002_trial_rule_4_1_b_standard.html
-> │            ├── 📄 b1.01.003_void_vs_voidable_case_law.html
-> │        └── 📂 c_claims_and_motions/
-> │          ├── 📄 _readme.html
-> │          └── 📂 c2_01_motion_vacate/
-> │            ├── 📄 c2.01.001_motion_to_vacate_void_judgment.html
-> │            ├── 📄 c2.01.002_motion_vacate.html
-> │            ├── 📄 c2.01.002_motion_vacate.pdf
-> │            ├── 📄 c2.01.003_exhibit_list.html
-> │            ├── 📄 c2.01.003_exhibit_list.pdf
-> │            ├── 📄 c2.01.004_exhibits_combined.html
-> │            ├── 📄 c2.01.004_exhibits_combined.pdf
-> │          └── 📂 c2_02_emergency_stay_quash/
-> │            ├── 📄 c2.02.001_emergency_motion_stay_or_quash.html
-> │            ├── 📄 c2.02.002_emergency_motion_stay_or_quash.html
-> │            ├── 📄 c2.02.002_emergency_motion_stay_or_quash.pdf
-> │          └── 📂 c2_03_supplemental/
-> │            ├── 📄 c2.03.001_supplemental_emergency_motion.html
-> │            ├── 📄 c2.03.002_supplemental_emergency_motion.html
-> │            ├── 📄 c2.03.002_supplemental_emergency_motion.pdf
-> │            ├── 📄 c2.03.003_exhibit_h_declaration.html
-> │            ├── 📄 c2.03.003_exhibit_h_declaration.pdf
-> │            ├── 📄 c2.03.004_odyssey_envelope_receipt.html
-> │            ├── 📄 c2.03.004_odyssey_envelope_receipt.pdf
-> │            ├── 📄 c2.03.005_combined_source.html
-> │            ├── 📄 c2.03.005_combined_source.pdf
-> │          └── 📂 c2_04_proposed_orders/
-> │            ├── 📄 c2.04.001_order_vacate_proposed.html
-> │            ├── 📄 c2.04.001_order_vacate_proposed.pdf
-> │            ├── 📄 c2.04.001_proposed_order_vacate.html
-> │            ├── 📄 c2.04.002_order_stay_writ_proposed.html
-> │            ├── 📄 c2.04.002_order_stay_writ_proposed.pdf
-> │            ├── 📄 c2.04.002_proposed_order_stay_writ.html
-> │        └── 📂 d_delivery_service/
-> │          ├── 📄 _readme.html
-> │          └── 📂 d3_00_cover/
-> │            ├── 📄 d3.00.000_section_cover.html
-> │          └── 📂 d3_01_summons/
-> │            ├── 📄 d3.01.001_summons_incomplete.html
-> │            ├── 📄 d3.01.001_summons_incomplete.pdf
-> │          └── 📂 d3_02_sheriff_returns/
-> │            ├── 📄 d3.02.001_sheriff_return_2025-03-05.html
-> │            ├── 📄 d3.02.001_sheriff_return_2025-03-05.pdf
-> │            ├── 📄 d3.02.002_sheriff_return_2025-04-15.html
-> │            ├── 📄 d3.02.002_sheriff_return_2025-04-15.pdf
-> │          └── 📂 d3_03_service_analysis/
-> │            ├── 📄 d3.03.001_service_defect_analysis.html
-> │        └── 📂 e_effects_procedural_chain/
-> │          ├── 📄 _readme.html
-> │          └── 📂 e4_00_cover/
-> │            ├── 📄 e4.00.000_section_cover.html
-> │          └── 📂 e4_01_default_judgment/
-> │            ├── 📄 e4.01.001_default_judgment_entry.html
-> │            ├── 📄 e4.01.001_default_judgment_entry.pdf
-> │          └── 📂 e4_02_petition_for_writ/
-> │            ├── 📄 e4.02.001_petition_for_writ_of_assistance.html
-> │            ├── 📄 e4.02.001_petition_for_writ_of_assistance.pdf
-> │          └── 📂 e4_03_writ_issued/
-> │            ├── 📄 e4.03.001_writ_of_assistance_issued.html
-> │            ├── 📄 e4.03.001_writ_of_assistance_issued.pdf
-> │          └── 📂 e4_04_removal_enforcement/
-> │            ├── 📄 e4.04.001_removal_enforcement_record.html
-> │            ├── 📄 e4.04.001_removal_enforcement_record.pdf
-> │          └── 📂 e4_05_chain_summary/
-> │            ├── 📄 e4.05.001_procedural_chain_summary.html
-> │        └── 📂 f_facts_declarations/
-> │          ├── 📄 _readme.html
-> │          └── 📂 f5_00_cover/
-> │            ├── 📄 f5.00.000_section_cover.html
-> │          └── 📂 f5_01_affidavit_not_served/
-> │            ├── 📄 f5.01.001_affidavit_not_served.html
-> │          └── 📂 f5_02_declaration_ongoing_harm/
-> │            ├── 📄 f5.02.001_declaration_ongoing_harm.html
-> │          └── 📂 f5_03_credibility_declaration/
-> │            ├── 📄 f5.03.001_credibility_declaration.html
-> │        └── 📂 g_grounds_ada/
-> │          ├── 📄 _readme.html
-> │          └── 📂 g6_00_cover/
-> │            ├── 📄 g6.00.000_section_cover.html
-> │          └── 📂 g6_01_ada_notice/
-> │            ├── 📄 g6.01.001_ada_notice.html
-> │            ├── 📄 g6.01.001_ada_notice.pdf
-> │          └── 📂 g6_02_ada_supporting/
-> │            ├── 📄 g6.02.001_ada_supporting_documentation.html
-> │            ├── 📄 g6.02.001_ada_supporting_documentation.pdf
-> │          └── 📂 g6_03_ada_impact_summary/
-> │            ├── 📄 g6.03.001_ada_impact_summary.html
-> │        └── 📂 h_hard_exhibits/
-> │          ├── 📄 _readme.html
-> │          └── 📂 h7_00_cover/
-> │            ├── 📄 h7.00.000_section_cover.html
-> │          └── 📂 h7_01_exhibits_a-h/
-> │            ├── 📄 _readme.html
-> │            ├── 📄 h7.01.0001-0008_exhibits_combined.html
-> │            ├── 📄 h7.01.0001-0008_exhibits_combined.pdf
-> │            ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-0.html
-> │            ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-05.pdf
-> │            ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-1.html
-> │            ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-15.pdf
-> │            ├── 📄 h7.01.0003_exhibit_c_incomplete_summons.html
-> │            ├── 📄 h7.01.0003_exhibit_c_incomplete_summons.pdf
-> │            ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion.html
-> │            ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion.pdf
-> │            ├── 📄 h7.01.0005_exhibit_e_petition_for_writ.html
-> │            ├── 📄 h7.01.0005_exhibit_e_petition_for_writ.pdf
-> │            ├── 📄 h7.01.0006_exhibit_f_affidavit.html
-> │            ├── 📄 h7.01.0006_exhibit_f_affidavit.pdf
-> │            ├── 📄 h7.01.0007_exhibit_g1_ada_notice.html
-> │            ├── 📄 h7.01.0007_exhibit_g1_ada_notice.pdf
-> │            ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents.html
-> │            ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents.pdf
-> │            ├── 📄 h7.01.0009_exhibit_h_declaration_of_backgroun.html
-> │            ├── 📄 h7.01.0009_exhibit_h_declaration_of_background.pdf
-> │          └── 📂 h7_02_exhibits_i_ada/
-> │            ├── 📄 _readme.html
-> │          └── 📂 h7_03_exhibits_j_removal/
-> │            ├── 📄 _readme.html
-> │          └── 📂 h7_04_exhibits_k_financial/
-> │            ├── 📄 _readme.html
-> │          └── 📂 h7_05_exhibits_l_statements/
-> │            ├── 📄 _readme.html
-> │          └── 📂 h7_06_exhibits_m_service/
-> │            ├── 📄 _readme.html
-> │          └── 📂 h7_07_exhibits_p_property/
-> │            ├── 📄 _readme.html
-> │        └── 📂 i_internal_reference/
-> │          ├── 📄 _readme.html
-> │          └── 📂 i8_00_cover/
-> │            ├── 📄 i8.00.000_section_cover.html
-> │          └── 📂 i8_01_full_docket/
-> │            ├── 📄 i8_01_000_case_summary.html
-> │            ├── 📄 i8_01_000_full_docket.html
-> │            ├── 📄 i8_01_000_full_docket.pdf
-> │            ├── 📄 i8_01_001_complaint.html
-> │            ├── 📄 i8_01_001_complaint.pdf
-> │            ├── 📄 i8_01_002_appearance.html
-> │            ├── 📄 i8_01_002_appearance.pdf
-> │            ├── 📄 i8_01_003_request_for_admissions.html
-> │            ├── 📄 i8_01_003_request_for_admissions.pdf
-> │            ├── 📄 i8_01_004_notice_to_homeowners.html
-> │            ├── 📄 i8_01_004_notice_to_homeowners.pdf
-> │            ├── 📄 i8_01_005_appearance_2.html
-> │            ├── 📄 i8_01_005_appearance_2.pdf
-> │            ├── 📄 i8_01_006_summons_1.html
-> │            ├── 📄 i8_01_006_summons_1.pdf
-> │            ├── 📄 i8_01_007_summons_2.html
-> │            ├── 📄 i8_01_007_summons_2.pdf
-> │            ├── 📄 i8_01_008_summons_3.html
-> │            ├── 📄 i8_01_008_summons_3.pdf
-> │            ├── 📄 i8_01_009_summons_4.html
-> │            ├── 📄 i8_01_009_summons_4.pdf
-> │            ├── 📄 i8_01_010_summons_5.html
-> │            ├── 📄 i8_01_010_summons_5.pdf
-> │            ├── 📄 i8_01_011_service_returned_03-05-2025.html
-> │            ├── 📄 i8_01_011_service_returned_03-05-2025.pdf
-> │            ├── 📄 i8_01_012_service_returned_04-15-2025.html
-> │            ├── 📄 i8_01_012_service_returned_04-15-2025.pdf
-> │            ├── 📄 i8_01_013_motion_for_default_judgment.html
-> │            ├── 📄 i8_01_013_motion_for_default_judgment.pdf
-> │            ├── 📄 i8_01_014_affidavit.html
-> │            ├── 📄 i8_01_014_affidavit.pdf
-> │            ├── 📄 i8_01_015_affidavit_attorney_fees.html
-> │            ├── 📄 i8_01_015_affidavit_attorney_fees.pdf
-> │            ├── 📄 i8_01_016_affidavit_additional.html
-> │            ├── 📄 i8_01_016_affidavit_additional.pdf
-> │            ├── 📄 i8_01_017_order_denying_default_judgment.html
-> │            ├── 📄 i8_01_017_order_denying_default_judgment.pdf
-> │            ├── 📄 i8_01_018_omitted_notice_of_service.html
-> │            ├── 📄 i8_01_018_omitted_notice_of_service.pdf
-> │            ├── 📄 i8_01_019_amended_motion_default_judgment_1.html
-> │            ├── 📄 i8_01_019_amended_motion_default_judgment_1.pdf
-> │            ├── 📄 i8_01_020_amended_motion_default_judgment_2.html
-> │            ├── 📄 i8_01_020_amended_motion_default_judgment_2.pdf
-> │            ├── 📄 i8_01_021_praecipe_sheriff_sale_1.html
-> │            ├── 📄 i8_01_021_praecipe_sheriff_sale_1.pdf
-> │            ├── 📄 i8_01_022_praecipe_sheriff_sale_2.html
-> │            ├── 📄 i8_01_022_praecipe_sheriff_sale_2.pdf
-> │            ├── 📄 i8_01_023_decree_foreclosure_returned.html
-> │            ├── 📄 i8_01_023_decree_foreclosure_returned.pdf
-> │            ├── 📄 i8_01_024_petition_writ_of_assistance.html
-> │            ├── 📄 i8_01_024_petition_writ_of_assistance.pdf
-> │            ├── 📄 i8_01_025_motion_vacate_stay_writ.html
-> │            ├── 📄 i8_01_025_motion_vacate_stay_writ.pdf
-> │            ├── 📄 i8_01_026_exhibit_list_a-g.html
-> │            ├── 📄 i8_01_026_exhibit_list_a-g.pdf
-> │            ├── 📄 i8_01_027_supplemental_motion_access.html
-> │            ├── 📄 i8_01_027_supplemental_motion_access.pdf
-> │            ├── 📄 i8_01_028_report_court_defendant_request.html
-> │            ├── 📄 i8_01_028_report_court_defendant_request.pdf
-> │            ├── 📄 i8_01_029_emergency_supplemental_declaration.html
-> │            ├── 📄 i8_01_029_emergency_supplemental_declaration.pdf
-> │            ├── 📄 i8_01_030_report_sheriff_sale_no_excess.html
-> │            ├── 📄 i8_01_030_report_sheriff_sale_no_excess.pdf
-> │            ├── 📄 i8_01_031_proposed_order_vacate.html
-> │            ├── 📄 i8_01_031_proposed_order_vacate.pdf
-> │            ├── 📄 i8_01_032_proposed_order_stay.html
-> │            ├── 📄 i8_01_032_proposed_order_stay.pdf
-> │            ├── 📄 i8_01_033_ada_disability_affidavit.html
-> │            ├── 📄 i8_01_033_ada_disability_affidavit.pdf
-> │          └── 📂 i8_02_research_notes/
-> │            ├── 📄 i8.02.001_research_and_notes.html
-> │          └── 📂 i8_99_do_not_print/
-> │            ├── 📄 i8.99.999_internal_do_not_print.html
-> │        └── 📂 j_exports/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 j9.00.00_section_cover.html
-> │    └── 📂 02_war_room/
-> │      └── 📂 wa_anchor_overview/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 wa0.00.000_war_room_overview.html
-> │        └── 📂 wa0.00.001_timeline/
-> │          └── 📂 30_2025/
-> │            ├── 📄 wa0.00.030__2025-01-16_case_filed.html
-> │            ├── 📄 wa0.00.030__2025-03-05_service_attempt_1.html
-> │            ├── 📄 wa0.00.030__2025-04-15_service_attempt_2.html
-> │            ├── 📄 wa0.00.030__2025-05-13_motion_for_default_jud.html
-> │            ├── 📄 wa0.00.030__2025-05-21_order_denying_default_.html
-> │            ├── 📄 wa0.00.030__2025-05-23_amended_motion_default.html
-> │            ├── 📄 wa0.00.030__2025-05-28_default_judgment_enter.html
-> │            ├── 📄 wa0.00.030__2025-05-30_praecipe_sheriff_sale.html
-> │            ├── 📄 wa0.00.030__2025-07-09_sheriff_sale_notice_po.html
-> │            ├── 📄 wa0.00.030__2025-08-15_sheriff_sale.html
-> │            ├── 📄 wa0.00.030__2025-10-29_petition_for_writ_of_a.html
-> │            ├── 📄 wa0.00.030__2025-11-06_writ_of_assistance_iss.html
-> │            ├── 📄 wa0.00.030__2025-12-09_writ_executed_removal.html
-> │            ├── 📄 wa0.00.030__2025-12-10_motions_filed.html
-> │            ├── 📄 wa0.00.030__2025-12-11_court_orders_and_heari.html
-> │            ├── 📄 wa0.00.030__2025-12-12_supplemental_emergency.html
-> │            ├── 📄 wa0.00.030__index-content.html
-> │            ├── 📄 wa0.00.030__index.html
-> │          ├── 📄 wa0.00.030__index.html
-> │          ├── 📄 wa0.00.030__timeline_canvas.html
-> │          ├── 📄 wa0.00.060__master_timeline.html
-> │        ├── 📄 wa0.00.010_active_strategies.html
-> │        ├── 📄 wa0.00.020_promotion_candidates.html
-> │        └── 📂 wa0_00_command_map/
-> │          ├── 📄 wa0.00.01_command_map.html
-> │        └── 📂 wa0_01_hearing_planning/
-> │          ├── 📄 wa0.01.001_hearing_goals.html
-> │          ├── 📄 wa0.01.002_talking_points.html
-> │          ├── 📄 wa0.01.003_judge_questions_predicted.html
-> │      └── 📂 wb_basis_issue_and_law/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wb1_00_law_research/
-> │          ├── 📄 wb1.00.001_case_law_research.html
-> │          ├── 📄 wb1.00.002_void_vs_voidable_analysis.html
-> │          ├── 📄 wb1.00.003_jurisdiction_theory.html
-> │        └── 📂 wb1_01_alternate_theories/
-> │          ├── 📄 wb1.01.001_backup_arguments.html
-> │          ├── 📄 wb1.01.002_if_judge_pushback.html
-> │      └── 📂 wc_claims_and_motions/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wc2_00_draft_motions/
-> │          ├── 📄 wc2.00.001_draft_motion_vacate.html
-> │          ├── 📄 wc2.00.002_draft_emergency_stay.html
-> │          ├── 📄 wc2.00.003_draft_supplemental.html
-> │          ├── 📄 wc2.00.010___motions.html
-> │          ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
-> │          ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
-> │          ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
-> │          ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
-> │          ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
-> │          ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
-> │        └── 📂 wc2_01_proposed_orders/
-> │          ├── 📄 wc2.01.001_draft_order_vacate.html
-> │          ├── 📄 wc2.01.002_draft_order_stay.html
-> │          ├── 📄 wc2.01.010__index-content.html
-> │          ├── 📄 wc2.01.010__index.html
-> │          ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
-> │          ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
-> │          ├── 📄 wc2.01.010__proposed_orders.html
-> │      └── 📂 wd_delivery_service/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wd3_00_service_tracking/
-> │          ├── 📄 wd3.00.001_service_matrix.html
-> │          ├── 📄 wd3.00.002_service_failure_analysis.html
-> │        └── 📂 wd3_01_service_evidence/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wd3.01.001_summons_source.html
-> │          ├── 📄 wd3.01.001_summons_source.pdf
-> │          ├── 📄 wd3.01.002_sheriff_metadata.html
-> │      └── 📂 we_effects_procedural_chain/
-> │        ├── 📄 _readme.html
-> │        └── 📂 we4_00_chain_analysis/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 we4.00.001_procedural_failure_map.html
-> │          ├── 📄 we4.00.002_but_for_analysis.html
-> │          ├── 📄 we4.00.010__integrate_disability_separate_appe.m4a
-> │          ├── 📄 we4.00.010__void_judgment_eviction_crisis.html
-> │          ├── 📄 we4.00.010__void_judgment_eviction_crisis.pdf
-> │        └── 📂 we4_01_remedies/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 we4.01.001_stay_paths.html
-> │          ├── 📄 we4.01.002_reversal_paths.html
-> │      └── 📂 wf_facts_declarations/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wf5_00_fact_development/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wf5.00.001_fact_timeline.html
-> │          ├── 📄 wf5.00.002_fact_gaps.html
-> │        └── 📂 wf5_01_draft_declarations/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wf5.01.001_draft_affidavit.html
-> │          ├── 📄 wf5.01.002_draft_declaration.html
-> │          ├── 📄 wf5.01.010___declarations.html
-> │          ├── 📄 wf5.01.010___instructions_for_witnesses.html
-> │          ├── 📄 wf5.01.010__ada_disability_affidavit.html
-> │          ├── 📄 wf5.01.010__affidavit_not_served.docx
-> │          ├── 📄 wf5.01.010__affidavit_not_served.html
-> │          ├── 📄 wf5.01.010__character_affidavit.html
-> │          ├── 📄 wf5.01.010__community_service_affidavit.html
-> │          ├── 📄 wf5.01.010__credibility_affidavit.html
-> │          ├── 📄 wf5.01.010__gender_identity_clarification.html
-> │          ├── 📄 wf5.01.010__index-1.html
-> │          ├── 📄 wf5.01.010__index-content.html
-> │          ├── 📄 wf5.01.010__index.html
-> │          ├── 📄 wf5.01.010__observations_affidavit.html
-> │          ├── 📄 wf5.01.010__verified_affidavit_of_defendant.html
-> │      └── 📂 wg_grounds_ada/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wg6_00_ada_strategy/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wg6.00.001_ada_title_ii_analysis.html
-> │          ├── 📄 wg6.00.002_reasonable_accommodations.html
-> │        └── 📂 wg6_01_parallel_enforcement/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wg6.01.001_doj_complaint.html
-> │          ├── 📄 wg6.01.002_icrc_complaint.html
-> │          ├── 📄 wg6.01.003_status_tracker.html
-> │      └── 📂 wh_hard_evidence/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 evidence_log.html
-> │        └── 📂 wh7_00_raw_intake/
-> │          └── 📂 10_photos_video/
-> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
-> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-.html
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 10_supporting/
-> │            └── 📂 10_photos_video/
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_00.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_002.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_01.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_012.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_01b.png
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_10.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_10f.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1a.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1a8.mp4
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1b.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1be.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1f.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1f3.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_25.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_25f.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_2f.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_2f0.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_49.heic
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_4e.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_4e0.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5b.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5be.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5d.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5d9.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_61.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_611.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_63.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_63f.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_71.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_71c.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_78.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_78b.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_7a.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_7a5.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_83.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_835.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8a.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8a1.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8d.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8d8.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_94.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_942.png
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9b.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9b6.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9f.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9fb.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9ff.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video__1.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video__2.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_a8.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_a88.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ca.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ca0.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_db.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_db9.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_e4.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_e4c.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_eb.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_eba.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ed.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ed6.mp4
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f5.heic
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f6.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f60.png
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f9.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f98.png
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fa.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fa1.jpg
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fd.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fdd.jpg
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │            └── 📂 20_receipts/
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-20_receipts_0860d3.html
-> │              ├── 📄 wh7.00.020__2025-12-20_exh-20_receipts_0860d3d.jpg
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │            └── 📂 30_declarations/
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │            └── 📂 40_affidavits/
-> │              └── 📂 ada-disability/
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              └── 📂 character/
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              └── 📂 community-service/
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              └── 📂 credibility/
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              └── 📂 observations/
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │            ├── 📄 wh7.00.020__index-content.html
-> │            ├── 📄 wh7.00.020__index.html
-> │          └── 📂 20_property/
-> │          └── 📂 20_property-1/
-> │            └── 📂 10_mortgage_history/
-> │              └── 📂 20_payments/
-> │                ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-2.html
-> │                ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20.png
-> │                ├── 📄 index-content.html
-> │                ├── 📄 index.html
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            └── 📂 20_parcel/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │              ├── 📄 parcel_6016506_parceldetailhistory.html
-> │              ├── 📄 parcel_6016506_parceldetailhistory.pdf
-> │              ├── 📄 parcel_6016506_prc.html
-> │              ├── 📄 parcel_6016506_prc.pdf
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            └── 📂 10_mortgage_history/
-> │              └── 📂 20_payments/
-> │                ├── 📄 wh7.00.020__2025-12-20_exh-20_payments_c5131d.html
-> │                ├── 📄 wh7.00.020__2025-12-20_exh-20_payments_c5131de.png
-> │                ├── 📄 wh7.00.020__index-content.html
-> │                ├── 📄 wh7.00.020__index.html
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │            └── 📂 20_parcel/
-> │              ├── 📄 wh7.00.020__index-content.html
-> │              ├── 📄 wh7.00.020__index.html
-> │              ├── 📄 wh7.00.020__parcel_6016506_parceldetailhistor.html
-> │              ├── 📄 wh7.00.020__parcel_6016506_parceldetailhistory.pdf
-> │              ├── 📄 wh7.00.020__parcel_6016506_prc.html
-> │              ├── 📄 wh7.00.020__parcel_6016506_prc.pdf
-> │            ├── 📄 wh7.00.020__index-content.html
-> │            ├── 📄 wh7.00.020__index.html
-> │          └── 📂 20_receipts/
-> │            ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-2.html
-> │            ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 30_declarations/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 30_fcfcu/
-> │          └── 📂 30_fcfcu-1/
-> │            ├── 📄 _readme.html
-> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_h_1.html
-> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_hea.html
-> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_heal.pdf
-> │            ├── 📄 wh7.00.020__2023-09-20_notice_disabilities_ha.html
-> │            ├── 📄 wh7.00.020__2023-09-20_notice_disabilities_har.pdf
-> │            ├── 📄 wh7.00.020__2024-03-20_fcfcu_certified_respon.html
-> │            ├── 📄 wh7.00.020__2024-03-20_fcfcu_certified_respons.pdf
-> │            ├── 📄 wh7.00.020__2024-12-09_outgoing_email_bank_ac.html
-> │            ├── 📄 wh7.00.020__2024-12-09_outgoing_email_bank_acc.pdf
-> │            ├── 📄 wh7.00.020__2024-12-11_outgoing_email_bank_ac.html
-> │            ├── 📄 wh7.00.020__2024-12-11_outgoing_email_bank_acc.pdf
-> │            ├── 📄 wh7.00.020__2024-20-03_response_to_tax_notice.html
-> │            ├── 📄 wh7.00.020__2024-20-03_response_to_tax_notice.pdf
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(1).html
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(1).pdf
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(2).html
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(2).pdf
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement.html
-> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement.pdf
-> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_740eacdc_.html
-> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_740eacdc_2.jpg
-> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_ac6eb2ea_.html
-> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_ac6eb2ea_2.jpg
-> │            ├── 📄 wh7.00.020__21june-24-4817shadow_appraisal.html
-> │            ├── 📄 wh7.00.020__21june-24-4817shadow_appraisal.pdf
-> │            ├── 📄 wh7.00.020__fcfcu_v_cr-v_report_to_court.html
-> │            ├── 📄 wh7.00.020__fcfcu_v_cr-v_report_to_court.pdf
-> │            ├── 📄 wh7.00.020__index-content.html
-> │            ├── 📄 wh7.00.020__index.html
-> │            ├── 📄 wh7.00.020__report_to_court_on_defendants_req.html
-> │            ├── 📄 wh7.00.020__report_to_court_on_defendants_requ.pdf
-> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_1.html
-> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_l.html
-> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
-> │            ├── 📄 2023-09-20_notice_disabilities_hardship.html
-> │            ├── 📄 2023-09-20_notice_disabilities_hardship.pdf
-> │            ├── 📄 2024-03-20_fcfcu_certified_response_tax_recor.html
-> │            ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
-> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.html
-> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.html
-> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │            ├── 📄 2024-20-03_response_to_tax_notice.html
-> │            ├── 📄 2024-20-03_response_to_tax_notice.pdf
-> │            ├── 📄 20241204_fcfcu_statement-(1).html
-> │            ├── 📄 20241204_fcfcu_statement-(1).pdf
-> │            ├── 📄 20241204_fcfcu_statement-(2).html
-> │            ├── 📄 20241204_fcfcu_statement-(2).pdf
-> │            ├── 📄 20241204_fcfcu_statement.html
-> │            ├── 📄 20241204_fcfcu_statement.pdf
-> │            ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_e.html
-> │            ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
-> │            ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_e.html
-> │            ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
-> │            ├── 📄 21june-24-4817shadow_appraisal.html
-> │            ├── 📄 21june-24-4817shadow_appraisal.pdf
-> │            ├── 📄 _readme.html
-> │            ├── 📄 fcfcu_v_cr-v_report_to_court.html
-> │            ├── 📄 fcfcu_v_cr-v_report_to_court.pdf
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            ├── 📄 report_to_court_on_defendants_request.html
-> │            ├── 📄 report_to_court_on_defendants_request.pdf
-> │          └── 📂 40_affidavits/
-> │            └── 📂 ada-disability/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            └── 📂 character/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            └── 📂 community-service/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            └── 📂 credibility/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            └── 📂 observations/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │          └── 📂 50_aes/
-> │          └── 📂 50_aes-1/
-> │            ├── 📄 _readme.html
-> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_notice.html
-> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_notice.pdf
-> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_request_financ.html
-> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_request_financi.pdf
-> │            ├── 📄 wh7.00.020__2025-12-16_aes_emergency_notice.html
-> │            ├── 📄 wh7.00.020__index-content.html
-> │            ├── 📄 wh7.00.020__index.html
-> │            ├── 📄 2025-06-08_aes_ada_notice.html
-> │            ├── 📄 2025-06-08_aes_ada_notice.pdf
-> │            ├── 📄 2025-06-08_aes_ada_request_financial_hardship.html
-> │            ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
-> │            ├── 📄 2025-12-16_aes_emergency_notice.html
-> │            ├── 📄 _readme.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 99__archive/
-> │            ├── 📄 _readme.html
-> │            ├── 📄 wh7.00.020__index-content.html
-> │            ├── 📄 wh7.00.020__index.html
-> │            ├── 📄 wh7.00.020__readme_supporting.html
-> │          ├── 📄 _readme-1.html
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wh7.00.001_raw_phone_dump.html
-> │          ├── 📄 wh7.00.002_raw_video_audio.html
-> │          ├── 📄 wh7.00.003_raw_screenshots.html
-> │        └── 📂 wh7_01_potential_exhibits/
-> │          └── 📂 10_exhibit_sets/
-> │            └── 📂 _exhibit_a-h_initial/
-> │              ├── 📄 wh7.01.0100__2025-12-10_mtv_exhibits_combined.html
-> │              ├── 📄 wh7.01.0100__2025-12-10_mtv_exhibits_combined.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_a_20250305_sheriff_retur.html
-> │              ├── 📄 wh7.01.0100__exhibit_a_20250305_sheriff_return.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_b_20250415_sheriff_retur.html
-> │              ├── 📄 wh7.01.0100__exhibit_b_20250415_sheriff_return.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_c_20250116_incomplete_su.html
-> │              ├── 📄 wh7.01.0100__exhibit_c_20250116_incomplete_sum.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_d_20250513_default_judgm.html
-> │              ├── 📄 wh7.01.0100__exhibit_d_20250513_default_judgme.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_e_20251029_petition_for_.html
-> │              ├── 📄 wh7.01.0100__exhibit_e_20251029_petition_for_w.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_f_affidavit_cody_ricevel.html
-> │              ├── 📄 wh7.01.0100__exhibit_f_affidavit_cody_ricevela.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_g1_ada_notice_request.html
-> │              ├── 📄 wh7.01.0100__exhibit_g1_ada_notice_request.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_g2_aes_ada_docs_disconne.html
-> │              ├── 📄 wh7.01.0100__exhibit_g2_aes_ada_docs_disconnec.pdf
-> │              ├── 📄 wh7.01.0100__exhibit_h_declaration.html
-> │              ├── 📄 wh7.01.0100__exhibit_h_declaration.pdf
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            ├── 📄 _readme.html
-> │            └── 📂 exhibits_i_ada_communications/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            └── 📂 exhibits_j_eviction_removal/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            └── 📂 exhibits_k_financial/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            └── 📂 exhibits_l_statements/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            └── 📂 exhibits_m_court-service/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            └── 📂 exhibits_p_property/
-> │              ├── 📄 wh7.01.0100__index-content.html
-> │              ├── 📄 wh7.01.0100__index.html
-> │            ├── 📄 wh7.01.0100___checklist.html
-> │            ├── 📄 wh7.01.0100__index-content.html
-> │            ├── 📄 wh7.01.0100__index.html
-> │          └── 📂 30_exhibits/
-> │            ├── 📄 _readme.html
-> │            └── 📂 exhibits_templates/
-> │              ├── 📄 _readme.html
-> │              ├── 📄 wh7.01.0050___exhibits_lists.html
-> │            ├── 📄 wh7.01.0050__exhibit_list.docx
-> │            ├── 📄 wh7.01.0050__exhibit_list.html
-> │          ├── 📄 wh7.01.0001_potential_exhibit_0001.html
-> │          ├── 📄 wh7.01.0001_potential_exhibit_0001.pdf
-> │          ├── 📄 wh7.01.0002_potential_exhibit_0002.html
-> │          ├── 📄 wh7.01.0002_potential_exhibit_0002.pdf
-> │      └── 📂 wi_internal_reference/
-> │        └── 📂 00_trackers/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 index.html
-> │          ├── 📄 qicase-fcfcu_financial_tracker.xlsx
-> │          ├── 📄 session_summary_2025-12-16_fcfcu_case_dna_str.html
-> │        ├── 📄 03_case_log_entry_2025-12-15.html
-> │        └── 📂 05_timeline/
-> │          └── 📂 30_2025/
-> │            ├── 📄 2025-01-16_case_filed.html
-> │            ├── 📄 2025-03-05_service_attempt_1.html
-> │            ├── 📄 2025-04-15_service_attempt_2.html
-> │            ├── 📄 2025-05-13_motion_for_default_judgment.html
-> │            ├── 📄 2025-05-21_order_denying_default_judgment.html
-> │            ├── 📄 2025-05-23_amended_motion_default_judgment.html
-> │            ├── 📄 2025-05-28_default_judgment_entered.html
-> │            ├── 📄 2025-05-30_praecipe_sheriff_sale.html
-> │            ├── 📄 2025-07-09_sheriff_sale_notice_posted.html
-> │            ├── 📄 2025-08-15_sheriff_sale.html
-> │            ├── 📄 2025-10-29_petition_for_writ_of_assistance.html
-> │            ├── 📄 2025-11-06_writ_of_assistance_issued.html
-> │            ├── 📄 2025-12-09_writ_executed_removal.html
-> │            ├── 📄 2025-12-11_court_orders_and_hearing_scheduled.html
-> │            ├── 📄 2025-12-12_supplemental_emergency_motion.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          ├── 📄 _readme.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │          ├── 📄 timeline_canvas.html
-> │        └── 📂 10_overviews/
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │          ├── 📄 integrate_disability_separate_appeals_get_stay.m4a
-> │          ├── 📄 procedural_failure_map_one_pager.html
-> │          ├── 📄 void_judgment_eviction_crisis.html
-> │          ├── 📄 void_judgment_eviction_crisis.pdf
-> │        ├── 📄 2024-12-09_eviction_case_masterfile.docx
-> │        ├── 📄 2025-12-16_case_log_entry.html
-> │        ├── 📄 2025-12-16_case_summary.html
-> │        └── 📂 20_strategy/
-> │          └── 📂 10_ada_title_ii/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          └── 📂 30_void_vs_voidable_tr_60b/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │          ├── 📄 strategic_plan.html
-> │        ├── 📄 _readme.html
-> │        ├── 📄 case-narrative-wrongful-foreclosure-and-displ.html
-> │        ├── 📄 case_conversation_log.html
-> │        ├── 📄 case_conversation_log.txt
-> │        ├── 📄 combinepdf.html
-> │        ├── 📄 combinepdf.pdf
-> │        ├── 📄 contacts.html
-> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.html
-> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.pdf
-> │        ├── 📄 debate.m4a
-> │        ├── 📄 expenses.csv
-> │        ├── 📄 foreclosure-and-housing-litigation-case-record.csv
-> │        ├── 📄 foreclosure_void_judgment_institutional_failur.m4a
-> │        ├── 📄 foreclosure_void_versus_damages_due_process.m4a
-> │        ├── 📄 forensic_audit_of_a_void_foreclosure.m4a
-> │        ├── 📄 inventory-of-civil-and-fair-housing-rights-vio.csv
-> │        ├── 📄 legal-memorandum.html
-> │        ├── 📄 odyssey_envelope_receipt.html
-> │        ├── 📄 odyssey_envelope_receipt.pdf
-> │        └── 📂 personal_narrative/
-> │          └── 📂 01_public_narrative/
-> │            ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            ├── 📄 public_statement.html
-> │          └── 📂 02_exposure_and_harm/
-> │            ├── 📄 cold_risk_report.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            └── 📂 photos_conditions/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            └── 📂 weather_reports/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │          └── 📂 03_internal_analysis/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            └── 📂 payout_strategy/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │              ├── 📄 long_term_payout_strategy.html
-> │            └── 📂 premonitions/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │              ├── 📄 premonitions_i_knew_before_i_knew.html
-> │            ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
-> │          └── 📂 04_donations_and_support/
-> │            └── 📂 donation_page_html/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │            ├── 📄 donations_context.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            └── 📂 screenshots_live_page/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 index.html
-> │          └── 📂 05_timeline/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            ├── 📄 master_timeline.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │        ├── 📄 proposal-for-strategic-reports-in-the-matter-.html
-> │        ├── 📄 talking_points.html
-> │        └── 📂 wi8_00_docket_record/
-> │          └── 📂 legacy/
-> │            └── 📂 30_court_record/
-> │              └── 📂 10_docket/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.00.001__001_complaint.html
-> │                ├── 📄 wi8.00.001__001_complaint.pdf
-> │                ├── 📄 wi8.00.001__002_appearance.html
-> │                ├── 📄 wi8.00.001__002_appearance.pdf
-> │                ├── 📄 wi8.00.001__003_request_for_admissions.html
-> │                ├── 📄 wi8.00.001__003_request_for_admissions.pdf
-> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.html
-> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.pdf
-> │                ├── 📄 wi8.00.001__005_appearance_2.html
-> │                ├── 📄 wi8.00.001__005_appearance_2.pdf
-> │                ├── 📄 wi8.00.001__006_summons_1.html
-> │                ├── 📄 wi8.00.001__006_summons_1.pdf
-> │                ├── 📄 wi8.00.001__007_summons_2.html
-> │                ├── 📄 wi8.00.001__007_summons_2.pdf
-> │                ├── 📄 wi8.00.001__008_summons_3.html
-> │                ├── 📄 wi8.00.001__008_summons_3.pdf
-> │                ├── 📄 wi8.00.001__009_summons_4.html
-> │                ├── 📄 wi8.00.001__009_summons_4.pdf
-> │                ├── 📄 wi8.00.001__010_summons_5.html
-> │                ├── 📄 wi8.00.001__010_summons_5.pdf
-> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.html
-> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.pdf
-> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.html
-> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.pdf
-> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.html
-> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.pdf
-> │                ├── 📄 wi8.00.001__014_affidavit.html
-> │                ├── 📄 wi8.00.001__014_affidavit.pdf
-> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.html
-> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.pdf
-> │                ├── 📄 wi8.00.001__016_affidavit_additional.html
-> │                ├── 📄 wi8.00.001__016_affidavit_additional.pdf
-> │                ├── 📄 wi8.00.001__017_order_denying_default_judgmen.html
-> │                ├── 📄 wi8.00.001__017_order_denying_default_judgment.pdf
-> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.html
-> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.pdf
-> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgme.html
-> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgmen.pdf
-> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgme.html
-> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgmen.pdf
-> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.html
-> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.pdf
-> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.html
-> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.pdf
-> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.html
-> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.pdf
-> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.html
-> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.pdf
-> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.html
-> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.pdf
-> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.html
-> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.pdf
-> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.html
-> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.pdf
-> │                ├── 📄 wi8.00.001__028_report_court_defendant_reques.html
-> │                ├── 📄 wi8.00.001__028_report_court_defendant_request.pdf
-> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declar.html
-> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declara.pdf
-> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.html
-> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.pdf
-> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.html
-> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.pdf
-> │                ├── 📄 wi8.00.001__032_proposed_order_stay.html
-> │                ├── 📄 wi8.00.001__032_proposed_order_stay.pdf
-> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.html
-> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.pdf
-> │                ├── 📄 wi8.00.001___case_summary.html
-> │                ├── 📄 wi8.00.001__index-content.html
-> │                ├── 📄 wi8.00.001__index.html
-> │          ├── 📄 wi8.00.001_full_docket.html
-> │          ├── 📄 wi8.00.001_full_docket.pdf
-> │          ├── 📄 wi8.00.002_docket_notes.html
-> │        └── 📂 wi8_01_public_advocacy/
-> │          ├── 📄 _readme.html
-> │          └── 📂 al_narrative/
-> │            └── 📂 01_public_narrative/
-> │              ├── 📄 _readme.html
-> │              ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
-> │              ├── 📄 wi8.01.010__index-content.html
-> │              ├── 📄 wi8.01.010__index.html
-> │              ├── 📄 wi8.01.010__public_statement.html
-> │          └── 📂 rrative/
-> │            └── 📂 04_donations_and_support/
-> │              ├── 📄 _readme.html
-> │              └── 📂 donation_page_html/
-> │                ├── 📄 wi8.01.050__index-content.html
-> │                ├── 📄 wi8.01.050__index.html
-> │              └── 📂 screenshots_live_page/
-> │                ├── 📄 wi8.01.050__index-content.html
-> │                ├── 📄 wi8.01.050__index.html
-> │              ├── 📄 wi8.01.050__donations_context.html
-> │              ├── 📄 wi8.01.050__index-content.html
-> │              ├── 📄 wi8.01.050__index.html
-> │          ├── 📄 wi8.01.001_press_strategy.html
-> │          ├── 📄 wi8.01.002_social_media_plan.html
-> │          ├── 📄 wi8.01.003_timing_and_risk.html
-> │        └── 📂 wi8_02_damages_and_settlement/
-> │          ├── 📄 _readme.html
-> │          └── 📂 l_narrative/
-> │            └── 📂 02_exposure_and_harm/
-> │              ├── 📄 _readme.html
-> │              └── 📂 photos_conditions/
-> │                ├── 📄 wi8.02.050__index-content.html
-> │                ├── 📄 wi8.02.050__index.html
-> │              └── 📂 weather_reports/
-> │                ├── 📄 wi8.02.050__index-content.html
-> │                ├── 📄 wi8.02.050__index.html
-> │              ├── 📄 wi8.02.050__cold_risk_report.html
-> │              ├── 📄 wi8.02.050__index-content.html
-> │              ├── 📄 wi8.02.050__index.html
-> │          └── 📂 on/
-> │            └── 📂 __legacy/
-> │              └── 📂 00_admin/
-> │                └── 📂 00_trackers/
-> │                  ├── 📄 _readme.html
-> │                  ├── 📄 wi8.02.010__03_case_log_entry_2025-12-15.html
-> │                  ├── 📄 wi8.02.010__2024-12-09_eviction_case_masterfi.docx
-> │                  ├── 📄 wi8.02.010__2025-12-16_case_log_entry.html
-> │                  ├── 📄 wi8.02.010__2025-12-16_case_summary.html
-> │                  ├── 📄 wi8.02.010__case_conversation_log.html
-> │                  ├── 📄 wi8.02.010__case_conversation_log.txt
-> │                  ├── 📄 wi8.02.010__case_log.html
-> │                  ├── 📄 wi8.02.010__expenses.csv
-> │                  ├── 📄 wi8.02.010__financial_tracker.html
-> │                  ├── 📄 wi8.02.010__index-content.html
-> │                  ├── 📄 wi8.02.010__index.html
-> │                  ├── 📄 wi8.02.010__qicase-fcfcu_financial_tracker.xlsx
-> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfc_1.html
-> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfcu_.html
-> │          ├── 📄 wi8.02.001_economic_harm.html
-> │          ├── 📄 wi8.02.002_non_economic_harm.html
-> │          ├── 📄 wi8.02.003_settlement_scenarios.html
-> │        └── 📂 wi8_99_internal_only/
-> │          └── 📂 l_narrative/
-> │            └── 📂 03_internal_analysis/
-> │              ├── 📄 _readme.html
-> │              └── 📂 payout_strategy/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.99.010__index-content.html
-> │                ├── 📄 wi8.99.010__index.html
-> │                ├── 📄 wi8.99.010__long_term_payout_strategy.html
-> │              └── 📂 premonitions/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.99.010__index-content.html
-> │                ├── 📄 wi8.99.010__index.html
-> │                ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
-> │              ├── 📄 wi8.99.010__index-content.html
-> │              ├── 📄 wi8.99.010__index.html
-> │              ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
-> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_ri.html
-> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_rig.pdf
-> │      └── 📂 wz_promotion_pipeline/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 wz9.00.001_ready_for_binder.html
-> │        ├── 📄 wz9.00.002_rejected_for_court.html
-> │        ├── 📄 wz9.00.003_promotion_log.html
-> │        ├── 📄 wz9.00.010_promotion_checklist.html
-> │        └── 📂 wz9_00_050_filings_intake/
-> │    └── 📂 03_drafts_templates/
-> │      ├── 📄 _readme.html
-> │      └── 📂 dc_claims_and_motions/
-> │        └── 📂 50_proposed_orders/
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │          ├── 📄 proposed_order_emergency_stay.html
-> │          ├── 📄 proposed_order_motion_to_vacate.html
-> │          └── 📂 proposed_templates/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 index.html
-> │            ├── 📄 proposed_orders.html
-> │        ├── 📄 emergency_filing_packet.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 index.html
-> │        ├── 📄 motion_emergency_stay_of_writ.docx
-> │        ├── 📄 motion_emergency_stay_of_writ.html
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.html
-> │        ├── 📄 motion_to_vacate_void_judgement.docx
-> │        ├── 📄 motion_to_vacate_void_judgment.html
-> │        └── 📂 motions_templates/
-> │          ├── 📄 _motions.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │        ├── 📄 proposed_order_vacate.docx
-> │      └── 📂 df_facts_declarations/
-> │        ├── 📄 affidavit_not_served.docx
-> │        ├── 📄 affidavit_not_served.html
-> │        └── 📂 affidavits_templates/
-> │          ├── 📄 _instructions_for_witnesses.html
-> │          ├── 📄 ada_disability_affidavit.html
-> │          ├── 📄 character_affidavit.html
-> │          ├── 📄 community_service_affidavit.html
-> │          ├── 📄 credibility_affidavit.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │          ├── 📄 observations_affidavit.html
-> │        └── 📂 declarations_templates/
-> │          ├── 📄 _declarations.html
-> │          ├── 📄 gender_identity_clarification.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 index.html
-> │        ├── 📄 updated_affidavit_language.html
-> │        ├── 📄 verified_affidavit_of_defendant.html
-> │      └── 📂 dh_hard_exhibits/
-> │        ├── 📄 exhibit_list.docx
-> │        ├── 📄 exhibit_list.html
-> │        └── 📂 exhibits_templates/
-> │          ├── 📄 _exhibits_lists.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 index.html
-> │        ├── 📄 template_exhibit_label.html
-> │      └── 📂 di_internal_reference/
-> │        ├── 📄 ada_packet.html
-> │        ├── 📄 attorney_brief.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 index.html
-> │        └── 📂 outreach_templates/
-> │          ├── 📄 _advocate_outreach_message.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 index.html
-> │        ├── 📄 receipt_usps_tracking.html
-> │        ├── 📄 script_call_lawyers.html
-> │        ├── 📄 template_court_doc.html
-> │        ├── 📄 template_handup_packet_note.html
-> │        ├── 📄 template_section_cover.html
-> │        ├── 📄 template_section_index.html
-> │        ├── 📄 template_war_note.html
-> │    └── 📂 99_archive/
-> │      └── 📂 docs/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 migration_notes.html
-> │      └── 📂 logs/
-> │        ├── 📄 migration_log.csv
-> │      └── 📂 tools/
-> │        ├── 📄 arch.010__add_frontmatter.py
-> │        ├── 📄 arch.010__build_indexes.py
-> │        ├── 📄 arch.010__case_brain_full_pipeline.py
-> │        ├── 📄 arch.010__case_brain_pipeline.py
-> │        ├── 📄 arch.010__check_orphans_and_create_indexes.py
-> │        ├── 📄 arch.010__compress_pdfs.py
-> │        ├── 📄 arch.010__compress_pdfs_inplace.py
-> │        ├── 📄 arch.010__convert_all_txt_to_md.py
-> │        ├── 📄 arch.010__convert_to_markdown.py
-> │        ├── 📄 arch.010__fix_duplicate_frontmatter.py
-> │        ├── 📄 arch.010__index-content.html
-> │        ├── 📄 arch.010__index.html
-> │        ├── 📄 arch.010__link_timeline_events.py
-> │        ├── 📄 arch.010__move_opposing_filings.py
-> │        ├── 📄 arch.010__optimize_pdfs_pikepdf.py
-> │        ├── 📄 arch.010__rename_evidence_files.ps1
-> │        ├── 📄 arch.010__update_brain.ps1
-> │        ├── 📄 arch.010__viewer-content.html
-> │        ├── 📄 arch.010__viewer.html
-> │    ├── 📄 J9.00.00_SECTION_COVER.md
-> │    ├── 📄 J9.01.001_COURT_SET_MASTER.md
-> │    ├── 📄 J9.01.002_PERSONAL_MASTER.md
-> │    ├── 📄 J9.01.003_OPPOSITION_SET_MASTER.md
-> │    ├── 📄 J9.01.004_INTERNAL_RED_MASTER.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 promotion_checklist.html
-> │    └── 📂 site-lib/
-> │      └── 📂 fonts/
-> │        ├── 📄 05b618077343fbbd92b7.ttf
-> │        ├── 📄 085cb93e613ba3d40d2b.woff2
-> │        ├── 📄 293fd13dbca5a3e450ef.woff2
-> │        ├── 📄 2d5198822ab091ce4305.woff2
-> │        ├── 📄 454577c22304619db035.ttf
-> │        ├── 📄 4bb6ac751d1c5478ff3a.woff2
-> │        ├── 📄 52ac8f3034507f1d9e53.ttf
-> │        ├── 📄 535a6cf662596b3bd6a6.woff2
-> │        ├── 📄 70cc7ff27245e82ad414.ttf
-> │        ├── 📄 72505e6a122c6acd5471.woff2
-> │        ├── 📄 94f2f163d4b698242fef.otf
-> │        ├── 📄 b5f0f109bc88052d4000.woff2
-> │        ├── 📄 c8ba52b05a9ef10f4758.woff2
-> │        ├── 📄 cb10ffd7684cd9836a05.woff2
-> │        ├── 📄 cbe0ae49c52c920fd563.woff2
-> │      └── 📂 html/
-> │        ├── 📄 file-tree-content.html
-> │      └── 📂 media/
-> │        ├── 📄 2308ab1944a6bfa5c5b8.svg
-> │        ├── 📄 6155340132a851f6089e.svg
-> │        ├── 📄 favicon.png
-> │      ├── 📄 metadata.json
-> │      ├── 📄 rss.xml
-> │      └── 📂 scripts/
-> │        ├── 📄 graph-render-worker.js
-> │        ├── 📄 graph-wasm.js
-> │        ├── 📄 graph-wasm.wasm
-> │        ├── 📄 webpage.js
-> │      ├── 📄 search-index.json
-> │      └── 📂 styles/
-> │        ├── 📄 global-variable-styles.css
-> │        ├── 📄 main-styles.css
-> │        ├── 📄 obsidian.css
-> └── 📂 99_ARCHIVE/
-> │  └── 📂 docs/
-> │    ├── 📄 MIGRATION_NOTES.md
-> │    ├── 📄 _README.md
-> │  └── 📂 legacy/
-> │    └── 📂 FCFCU_Case_Quartz/
-> │      ├── 📄 CODE_OF_CONDUCT.md
-> │      ├── 📄 Dockerfile
-> │      ├── 📄 LICENSE.txt
-> │      ├── 📄 README.md
-> │      └── 📂 content/
-> │      └── 📂 docs/
-> │        └── 📂 advanced/
-> │          ├── 📄 architecture.md
-> │          ├── 📄 creating components.md
-> │          ├── 📄 index.md
-> │          ├── 📄 making plugins.md
-> │          ├── 📄 paths.md
-> │        ├── 📄 authoring content.md
-> │        ├── 📄 build.md
-> │        ├── 📄 configuration.md
-> │        └── 📂 features/
-> │          ├── 📄 Citations.md
-> │          ├── 📄 Docker Support.md
-> │          ├── 📄 Latex.md
-> │          ├── 📄 Mermaid diagrams.md
-> │          ├── 📄 Obsidian compatibility.md
-> │          ├── 📄 OxHugo compatibility.md
-> │          ├── 📄 RSS Feed.md
-> │          ├── 📄 Roam Research compatibility.md
-> │          ├── 📄 SPA Routing.md
-> │          ├── 📄 backlinks.md
-> │          ├── 📄 breadcrumbs.md
-> │          ├── 📄 callouts.md
-> │          ├── 📄 comments.md
-> │          ├── 📄 darkmode.md
-> │          ├── 📄 explorer.md
-> │          ├── 📄 folder and tag listings.md
-> │          ├── 📄 full-text search.md
-> │          ├── 📄 graph view.md
-> │          ├── 📄 i18n.md
-> │          ├── 📄 index.md
-> │          ├── 📄 popover previews.md
-> │          ├── 📄 private pages.md
-> │          ├── 📄 reader mode.md
-> │          ├── 📄 recent notes.md
-> │          ├── 📄 social images.md
-> │          ├── 📄 syntax highlighting.md
-> │          ├── 📄 table of contents.md
-> │          ├── 📄 upcoming features.md
-> │          ├── 📄 wikilinks.md
-> │        ├── 📄 hosting.md
-> │        └── 📂 images/
-> │          ├── 📄 custom-social-image-preview-dark.png
-> │          ├── 📄 custom-social-image-preview-light.png
-> │          ├── 📄 dns records.png
-> │          ├── 📄 giscus-discussion.png
-> │          ├── 📄 giscus-example.png
-> │          ├── 📄 giscus-repo.png
-> │          ├── 📄 giscus-results.png
-> │          ├── 📄 github-init-repo-options.png
-> │          ├── 📄 github-quick-setup.png
-> │          ├── 📄 quartz transform pipeline.png
-> │          ├── 📄 quartz-layout-desktop.png
-> │          ├── 📄 quartz-layout-mobile.png
-> │          ├── 📄 quartz-layout-tablet.png
-> │          ├── 📄 social-image-preview-dark.png
-> │          ├── 📄 social-image-preview-light.png
-> │        ├── 📄 index.md
-> │        ├── 📄 layout-components.md
-> │        ├── 📄 layout.md
-> │        ├── 📄 migrating from Quartz 3.md
-> │        ├── 📄 philosophy.md
-> │        └── 📂 plugins/
-> │          ├── 📄 AliasRedirects.md
-> │          ├── 📄 Assets.md
-> │          ├── 📄 CNAME.md
-> │          ├── 📄 Citations.md
-> │          ├── 📄 ComponentResources.md
-> │          ├── 📄 ContentIndex.md
-> │          ├── 📄 ContentPage.md
-> │          ├── 📄 CrawlLinks.md
-> │          ├── 📄 CreatedModifiedDate.md
-> │          ├── 📄 CustomOgImages.md
-> │          ├── 📄 Description.md
-> │          ├── 📄 ExplicitPublish.md
-> │          ├── 📄 Favicon.md
-> │          ├── 📄 FolderPage.md
-> │          ├── 📄 Frontmatter.md
-> │          ├── 📄 GitHubFlavoredMarkdown.md
-> │          ├── 📄 HardLineBreaks.md
-> │          ├── 📄 Latex.md
-> │          ├── 📄 NotFoundPage.md
-> │          ├── 📄 ObsidianFlavoredMarkdown.md
-> │          ├── 📄 OxHugoFlavoredMarkdown.md
-> │          ├── 📄 RemoveDrafts.md
-> │          ├── 📄 RoamFlavoredMarkdown.md
-> │          ├── 📄 Static.md
-> │          ├── 📄 SyntaxHighlighting.md
-> │          ├── 📄 TableOfContents.md
-> │          ├── 📄 TagPage.md
-> │          ├── 📄 index.md
-> │        ├── 📄 setting up your GitHub repository.md
-> │        ├── 📄 showcase.md
-> │        └── 📂 tags/
-> │          ├── 📄 component.md
-> │          ├── 📄 plugin.md
-> │        ├── 📄 upgrading.md
-> │      ├── 📄 globals.d.ts
-> │      ├── 📄 index.d.ts
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 quartz.config.ts
-> │      ├── 📄 quartz.layout.ts
-> │      ├── 📄 tsconfig.json
-> │  └── 📂 logs/
-> │    ├── 📄 MIGRATION_LOG.csv
-> │  └── 📂 tools/
-> │    ├── 📄 ARCH.010__add_frontmatter.py
-> │    ├── 📄 ARCH.010__build_indexes.py
-> │    ├── 📄 ARCH.010__case_brain_full_pipeline.py
-> │    ├── 📄 ARCH.010__case_brain_pipeline.py
-> │    ├── 📄 ARCH.010__check_orphans_and_create_indexes.py
-> │    ├── 📄 ARCH.010__compress_pdfs.py
-> │    ├── 📄 ARCH.010__compress_pdfs_inplace.py
-> │    ├── 📄 ARCH.010__convert_all_txt_to_md.py
-> │    ├── 📄 ARCH.010__convert_to_markdown.py
-> │    ├── 📄 ARCH.010__fix_duplicate_frontmatter.py
-> │    ├── 📄 ARCH.010__index.html
-> │    ├── 📄 ARCH.010__link_timeline_events.py
-> │    ├── 📄 ARCH.010__move_opposing_filings.py
-> │    ├── 📄 ARCH.010__optimize_pdfs_pikepdf.py
-> │    ├── 📄 ARCH.010__rename_evidence_files.ps1
-> │    ├── 📄 ARCH.010__update_brain.ps1
-> │    ├── 📄 ARCH.010__viewer.html
-> ├── 📄 AUDIT_REPORT.md
-> ├── 📄 FRONTMATTER_FIX_LOG.csv
-> ├── 📄 FRONTMATTER_FIX_LOG.md
-> ├── 📄 Master_Index.md
-> ├── 📄 PROMOTION_CHECKLIST.md
-> ├── 📄 README.md
-> ├── 📄 _README.md
-> ├── 📄 _redirects
-> ├── 📄 case_tree_review.txt
-> ├── 📄 fix_frontmatter_and_indexes.py
-> ├── 📄 index.html
-> ├── 📄 index.md
-> └── 📂 print/
-> └── 📂 tools/
-> │  ├── 📄 add_frontmatter.py
-> │  ├── 📄 build_indexes.py
-> │  ├── 📄 case_brain_full_pipeline.py
-> │  ├── 📄 case_brain_pipeline.py
-> │  ├── 📄 check_orphans_and_create_indexes.py
-> │  ├── 📄 compress_pdfs.py
-> │  ├── 📄 compress_pdfs_inplace.py
-> │  ├── 📄 convert_all_txt_to_md.py
-> │  ├── 📄 convert_to_markdown.py
-> │  ├── 📄 fix_duplicate_frontmatter.py
-> │  ├── 📄 index.html
-> │  ├── 📄 link_timeline_events.py
-> │  ├── 📄 move_opposing_filings.py
-> │  ├── 📄 optimize_pdfs_pikepdf.py
-> │  ├── 📄 rename_evidence_files.ps1
-> │  ├── 📄 truncate_long_filenames.py
-> │  ├── 📄 update_brain.ps1
-> │  ├── 📄 viewer.html
-> └── 📄 wrangler.toml
+> ```markdown
+
+> . 📂 CASE_FCFCU
+
+> └── 📂 00_ADMIN/
+
+> │  └── 📂 00_trackers/
+
+> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
+
+> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    ├── 📄 Case_Log.md
+
+> │    ├── 📄 Financial_Tracker.md
+
+> │    ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_str_1.md
+
+> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strat.md
+
+> │    ├── 📄 case_conversation_log.txt
+
+> │    ├── 📄 expenses.csv
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 05_timeline/
+
+> │    └── 📂 10_2023/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_2024/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_2025/
+
+> │      ├── 📄 2025-01-16_Case_Filed.md
+
+> │      ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │      ├── 📄 2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_2026/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Timeline_Canvas.canvas
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 10_overviews/
+
+> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │    ├── 📄 Procedural_failure_map_one_pager.md
+
+> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_strategy/
+
+> │    └── 📂 10_ada_title_ii/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_void_vs_voidable_tr_60b/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Strategic_Plan.canvas
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_drafts-templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 motion_emergency_stay_of_writ.docx
+
+> │      ├── 📄 motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
+
+> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │      ├── 📄 motion_to_vacate_void_judgement.docx
+
+> │      ├── 📄 motion_to_vacate_void_judgment.md
+
+> │      └── 📂 motions_templates/
+
+> │        ├── 📄 _Motions.md
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 20_declarations_affidavits/
+
+> │      ├── 📄 affidavit_not_served.docx
+
+> │      ├── 📄 affidavit_not_served.md
+
+> │      └── 📂 affidavits_templates/
+
+> │        ├── 📄 ADA_Disability_Affidavit.md
+
+> │        ├── 📄 Character_Affidavit.md
+
+> │        ├── 📄 Community_Service_Affidavit.md
+
+> │        ├── 📄 Credibility_Affidavit.md
+
+> │        ├── 📄 Observations_Affidavit.md
+
+> │        ├── 📄 _Instructions_for_witnesses.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 declarations_templates/
+
+> │        ├── 📄 Gender_Identity_Clarification.md
+
+> │        ├── 📄 _Declarations.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 updated_affidavit_language.md
+
+> │      ├── 📄 verified_affidavit_of_defendant.md
+
+> │    └── 📂 30_exhibits/
+
+> │      ├── 📄 exhibit_list.docx
+
+> │      ├── 📄 exhibit_list.md
+
+> │      └── 📂 exhibits_templates/
+
+> │        ├── 📄 _Exhibits_Lists.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_others/
+
+> │      ├── 📄 ada_packet.md
+
+> │      ├── 📄 attorney_brief.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      └── 📂 outreach_templates/
+
+> │        ├── 📄 _Advocate_Outreach_Message.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 receipt_usps_tracking.md
+
+> │      ├── 📄 script_call_lawyers.md
+
+> │    └── 📂 50_proposed_orders/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 proposed_order_emergency_stay.md
+
+> │      ├── 📄 proposed_order_motion_to_vacate.md
+
+> │      └── 📂 proposed_templates/
+
+> │        ├── 📄 Proposed_Orders.md
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_action_center/
+
+> │    └── 📂 10_decision_tree/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_pre_hearing_checklist/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Master_Strategy_Canvas.canvas
+
+> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Contacts.md
+
+> │  ├── 📄 Talking_Points.md
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 index.md
+
+> └── 📂 00_READ_ME_FIRST/
+
+> │  ├── 📄 PRINT_CHECKLIST.md
+
+> └── 📂 01_COURT_BINDER/
+
+> │  └── 📂 A_ANCHOR_OVERVIEW/
+
+> │    └── 📂 A0_00_COVER_INDEX/
+
+> │      ├── 📄 A0.00.000_SECTION_COVER.md
+
+> │      ├── 📄 A0.00.010_MASTER_CASE_INDEX.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 A0_01_OVERVIEW/
+
+> │      ├── 📄 A0.01.001_ONE_PAGE_CASE_SUMMARY.md
+
+> │      ├── 📄 A0.01.002_HEARING_SCOPE_AND_RELIEF.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 B_BASIS_ISSUE_AND_LAW/
+
+> │    └── 📂 B1_00_COVER/
+
+> │      ├── 📄 B1.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 B1_01_ISSUE_LAW/
+
+> │      ├── 📄 B1.01.001_CORE_ISSUE_STATEMENT.md
+
+> │      ├── 📄 B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
+
+> │      ├── 📄 B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 C_CLAIMS_AND_MOTIONS/
+
+> │    └── 📂 C2_00_COVER/
+
+> │      ├── 📄 C2.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 C2_01_MOTION_VACATE/
+
+> │      ├── 📄 C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
+
+> │      ├── 📄 C2.01.002_motion_vacate.pdf
+
+> │      ├── 📄 C2.01.003_Exhibit_List.pdf
+
+> │      ├── 📄 C2.01.004_Exhibits_Combined.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 C2_02_EMERGENCY_STAY_QUASH/
+
+> │      ├── 📄 C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
+
+> │      ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 C2_03_SUPPLEMENTAL/
+
+> │      ├── 📄 C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
+
+> │      ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 C2.03.003_EXHIBIT_H_DECLARATION.pdf
+
+> │      ├── 📄 C2.03.004_Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 C2.03.005_COMBINED_SOURCE.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 C2_04_PROPOSED_ORDERS/
+
+> │      ├── 📄 C2.04.001_PROPOSED_ORDER_VACATE.md
+
+> │      ├── 📄 C2.04.001_order_vacate_proposed.pdf
+
+> │      ├── 📄 C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
+
+> │      ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 D_DELIVERY_SERVICE/
+
+> │    └── 📂 D3_00_COVER/
+
+> │      ├── 📄 D3.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 D3_01_SUMMONS/
+
+> │      ├── 📄 D3.01.001_SUMMONS_INCOMPLETE.pdf
+
+> │    └── 📂 D3_02_SHERIFF_RETURNS/
+
+> │      ├── 📄 D3.02.001_SHERIFF_RETURN_2025-03-05.pdf
+
+> │      ├── 📄 D3.02.002_SHERIFF_RETURN_2025-04-15.pdf
+
+> │    └── 📂 D3_03_SERVICE_ANALYSIS/
+
+> │      ├── 📄 D3.03.001_SERVICE_DEFECT_ANALYSIS.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 E_EFFECTS_PROCEDURAL_CHAIN/
+
+> │    └── 📂 E4_00_COVER/
+
+> │      ├── 📄 E4.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 E4_01_DEFAULT_JUDGMENT/
+
+> │      ├── 📄 E4.01.001_DEFAULT_JUDGMENT_ENTRY.pdf
+
+> │    └── 📂 E4_02_PETITION_FOR_WRIT/
+
+> │      ├── 📄 E4.02.001_PETITION_FOR_WRIT_OF_ASSISTANCE.pdf
+
+> │    └── 📂 E4_03_WRIT_ISSUED/
+
+> │      ├── 📄 E4.03.001_WRIT_OF_ASSISTANCE_ISSUED.pdf
+
+> │    └── 📂 E4_04_REMOVAL_ENFORCEMENT/
+
+> │      ├── 📄 E4.04.001_REMOVAL_ENFORCEMENT_RECORD.pdf
+
+> │    └── 📂 E4_05_CHAIN_SUMMARY/
+
+> │      ├── 📄 E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 F_FACTS_DECLARATIONS/
+
+> │    └── 📂 F5_00_COVER/
+
+> │      ├── 📄 F5.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 F5_01_AFFIDAVIT_NOT_SERVED/
+
+> │      ├── 📄 F5.01.001_AFFIDAVIT_NOT_SERVED.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 F5_02_DECLARATION_ONGOING_HARM/
+
+> │      ├── 📄 F5.02.001_DECLARATION_ONGOING_HARM.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 F5_03_CREDIBILITY_DECLARATION/
+
+> │      ├── 📄 F5.03.001_CREDIBILITY_DECLARATION.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 G_GROUNDS_ADA/
+
+> │    └── 📂 G6_00_COVER/
+
+> │      ├── 📄 G6.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 G6_01_ADA_NOTICE/
+
+> │      ├── 📄 G6.01.001_ADA_NOTICE.pdf
+
+> │    └── 📂 G6_02_ADA_SUPPORTING/
+
+> │      ├── 📄 G6.02.001_ADA_SUPPORTING_DOCUMENTATION.pdf
+
+> │    └── 📂 G6_03_ADA_IMPACT_SUMMARY/
+
+> │      ├── 📄 G6.03.001_ADA_IMPACT_SUMMARY.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 H_HARD_EXHIBITS/
+
+> │    └── 📂 H7_00_COVER/
+
+> │      ├── 📄 H7.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_01_EXHIBITS_A-H/
+
+> │      ├── 📄 H7.01.0001-0008_EXHIBITS_COMBINED.pdf
+
+> │      ├── 📄 H7.01.0001_EXHIBIT_A_SHERIFF_RETURN_2025-03-05.pdf
+
+> │      ├── 📄 H7.01.0002_EXHIBIT_B_SHERIFF_RETURN_2025-04-15.pdf
+
+> │      ├── 📄 H7.01.0003_EXHIBIT_C_INCOMPLETE_SUMMONS.pdf
+
+> │      ├── 📄 H7.01.0004_EXHIBIT_D_DEFAULT_JUDGMENT_MOTION.pdf
+
+> │      ├── 📄 H7.01.0005_EXHIBIT_E_PETITION_FOR_WRIT.pdf
+
+> │      ├── 📄 H7.01.0006_EXHIBIT_F_AFFIDAVIT.pdf
+
+> │      ├── 📄 H7.01.0007_EXHIBIT_G1_ADA_NOTICE.pdf
+
+> │      ├── 📄 H7.01.0008_EXHIBIT_G2_AES_ADA_DOCUMENTS.pdf
+
+> │      ├── 📄 H7.01.0009_EXHIBIT_H_DECLARATION_OF_BACKGROUND.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_02_EXHIBITS_I_ADA/
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_03_EXHIBITS_J_REMOVAL/
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_04_EXHIBITS_K_FINANCIAL/
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_05_EXHIBITS_L_STATEMENTS/
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_06_EXHIBITS_M_SERVICE/
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H7_07_EXHIBITS_P_PROPERTY/
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 I_INTERNAL_REFERENCE/
+
+> │    └── 📂 I8_00_COVER/
+
+> │      ├── 📄 I8.00.000_SECTION_COVER.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 I8_01_FULL_DOCKET/
+
+> │      ├── 📄 I8_01_000_CASE_SUMMARY.md
+
+> │      ├── 📄 I8_01_000_FULL_DOCKET.pdf
+
+> │      ├── 📄 I8_01_001_Complaint.pdf
+
+> │      ├── 📄 I8_01_002_Appearance.pdf
+
+> │      ├── 📄 I8_01_003_Request_for_Admissions.pdf
+
+> │      ├── 📄 I8_01_004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 I8_01_005_Appearance_2.pdf
+
+> │      ├── 📄 I8_01_006_Summons_1.pdf
+
+> │      ├── 📄 I8_01_007_Summons_2.pdf
+
+> │      ├── 📄 I8_01_008_Summons_3.pdf
+
+> │      ├── 📄 I8_01_009_Summons_4.pdf
+
+> │      ├── 📄 I8_01_010_Summons_5.pdf
+
+> │      ├── 📄 I8_01_011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 I8_01_012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 I8_01_013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 I8_01_014_Affidavit.pdf
+
+> │      ├── 📄 I8_01_015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 I8_01_016_Affidavit_Additional.pdf
+
+> │      ├── 📄 I8_01_017_Order_Denying_Default_Judgment.pdf
+
+> │      ├── 📄 I8_01_018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 I8_01_019_Amended_Motion_Default_Judgment_1.pdf
+
+> │      ├── 📄 I8_01_020_Amended_Motion_Default_Judgment_2.pdf
+
+> │      ├── 📄 I8_01_021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 I8_01_022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 I8_01_023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 I8_01_024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 I8_01_025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 I8_01_026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 I8_01_027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 I8_01_028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 I8_01_029_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 I8_01_030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 I8_01_031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 I8_01_032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 I8_01_033_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 I8_02_RESEARCH_NOTES/
+
+> │      ├── 📄 I8.02.001_RESEARCH_AND_NOTES.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 I8_99_DO_NOT_PRINT/
+
+> │      ├── 📄 I8.99.999_INTERNAL_DO_NOT_PRINT.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> └── 📂 02_WAR_ROOM/
+
+> │  ├── 📄 Exhibit X — Inventory of Jurisdictional, Execut.md
+
+> │  ├── 📄 INTERNAL VALUATION MEMO.md
+
+> │  └── 📂 WA_OVERVIEW/
+
+> │    ├── 📄 WA0.00.000_WAR_ROOM_OVERVIEW.md
+
+> │    └── 📂 WA0.00.001_TIMELINE/
+
+> │      └── 📂 30_2025/
+
+> │        ├── 📄 WA0.00.030__2025-01-16_Case_Filed.md
+
+> │        ├── 📄 WA0.00.030__2025-03-05_Service_Attempt_1.md
+
+> │        ├── 📄 WA0.00.030__2025-04-15_Service_Attempt_2.md
+
+> │        ├── 📄 WA0.00.030__2025-05-13_Motion_for_Default_Judgm.md
+
+> │        ├── 📄 WA0.00.030__2025-05-21_Order_Denying_Default_Ju.md
+
+> │        ├── 📄 WA0.00.030__2025-05-23_Amended_Motion_Default_J.md
+
+> │        ├── 📄 WA0.00.030__2025-05-28_Default_Judgment_Entered.md
+
+> │        ├── 📄 WA0.00.030__2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │        ├── 📄 WA0.00.030__2025-07-09_Sheriff_Sale_Notice_Post.md
+
+> │        ├── 📄 WA0.00.030__2025-08-15_Sheriff_Sale.md
+
+> │        ├── 📄 WA0.00.030__2025-10-29_Petition_for_Writ_of_Ass.md
+
+> │        ├── 📄 WA0.00.030__2025-11-06_Writ_of_Assistance_Issue.md
+
+> │        ├── 📄 WA0.00.030__2025-12-09_Writ_Executed_Removal.md
+
+> │        ├── 📄 WA0.00.030__2025-12-10_Motions_Filed.md
+
+> │        ├── 📄 WA0.00.030__2025-12-11_Court_Orders_and_Hearing.md
+
+> │        ├── 📄 WA0.00.030__2025-12-12_Supplemental_Emergency_M.md
+
+> │        ├── 📄 WA0.00.030__index.html
+
+> │        ├── 📄 WA0.00.030__index.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 WA0.00.030__Timeline_Canvas.canvas
+
+> │      ├── 📄 WA0.00.030__index.md
+
+> │      ├── 📄 WA0.00.060__Master_Timeline.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 WA0.00.010_ACTIVE_STRATEGIES.md
+
+> │    ├── 📄 WA0.00.020_PROMOTION_CANDIDATES.md
+
+> │    └── 📂 WA0_00_COMMAND_MAP/
+
+> │      ├── 📄 WA0.00.01_COMMAND_MAP.canvas
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WA0_01_HEARING_PLANNING/
+
+> │      ├── 📄 WA0.01.001_HEARING_GOALS.md
+
+> │      ├── 📄 WA0.01.002_TALKING_POINTS.md
+
+> │      ├── 📄 WA0.01.003_JUDGE_QUESTIONS_PREDICTED.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WB_BASIS/
+
+> │    └── 📂 WB1_00_LAW_RESEARCH/
+
+> │      ├── 📄 WB1.00.001_CASE_LAW_RESEARCH.md
+
+> │      ├── 📄 WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> │      ├── 📄 WB1.00.003_JURISDICTION_THEORY.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
+
+> │      ├── 📄 WB1.01.001_BACKUP_ARGUMENTS.md
+
+> │      ├── 📄 WB1.01.002_IF_JUDGE_PUSHBACK.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WC_CLAIMS_AND_MOTIONS/
+
+> │    └── 📂 WC2_00_DRAFT_MOTIONS/
+
+> │      ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
+
+> │      ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
+
+> │      ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
+
+> │      ├── 📄 WC2.00.010___Motions.md
+
+> │      ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.docx
+
+> │      ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 WC2.00.010__motion_emergency_supplemental_mot.docx
+
+> │      ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
+
+> │      ├── 📄 WC2.00.010__motion_to_vacate_void_judgement.docx
+
+> │      ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WC2_01_PROPOSED_ORDERS/
+
+> │      ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
+
+> │      ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
+
+> │      ├── 📄 WC2.01.010__Proposed_Orders.md
+
+> │      ├── 📄 WC2.01.010__index.html
+
+> │      ├── 📄 WC2.01.010__index.md
+
+> │      ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
+
+> │      ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WD_SERVICE/
+
+> │    └── 📂 WD3_00_SERVICE_TRACKING/
+
+> │      ├── 📄 WD3.00.001_SERVICE_MATRIX.md
+
+> │      ├── 📄 WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WD3_01_SERVICE_EVIDENCE/
+
+> │      ├── 📄 WD3.01.001_SUMMONS_SOURCE.pdf
+
+> │      ├── 📄 WD3.01.002_SHERIFF_METADATA.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WE_EFFECTS_PROCEDURAL/
+
+> │    └── 📂 WE4_00_CHAIN_ANALYSIS/
+
+> │      ├── 📄 WE4.00.001_PROCEDURAL_FAILURE_MAP.md
+
+> │      ├── 📄 WE4.00.002_BUT_FOR_ANALYSIS.md
+
+> │      ├── 📄 WE4.00.010__Integrate_Disability_Separate_Appe.m4a
+
+> │      ├── 📄 WE4.00.010__Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 WE4.00.010__Void_Judgment_Eviction_Crisis.pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WE4_01_REMEDIES/
+
+> │      ├── 📄 WE4.01.001_STAY_PATHS.md
+
+> │      ├── 📄 WE4.01.002_REVERSAL_PATHS.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WF_DECLARATIONS/
+
+> │    └── 📂 WF5_00_FACT_DEVELOPMENT/
+
+> │      ├── 📄 WF5.00.001_FACT_TIMELINE.md
+
+> │      ├── 📄 WF5.00.002_FACT_GAPS.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WF5_01_DRAFT_DECLARATIONS/
+
+> │      ├── 📄 WF5.01.001_DRAFT_AFFIDAVIT.md
+
+> │      ├── 📄 WF5.01.002_DRAFT_DECLARATION.md
+
+> │      ├── 📄 WF5.01.010__ADA_Disability_Affidavit.md
+
+> │      ├── 📄 WF5.01.010__Character_Affidavit.md
+
+> │      ├── 📄 WF5.01.010__Community_Service_Affidavit.md
+
+> │      ├── 📄 WF5.01.010__Credibility_Affidavit.md
+
+> │      ├── 📄 WF5.01.010__Gender_Identity_Clarification.md
+
+> │      ├── 📄 WF5.01.010__Observations_Affidavit.md
+
+> │      ├── 📄 WF5.01.010___Declarations.md
+
+> │      ├── 📄 WF5.01.010___Instructions_for_witnesses.md
+
+> │      ├── 📄 WF5.01.010__affidavit_not_served.docx
+
+> │      ├── 📄 WF5.01.010__affidavit_not_served.md
+
+> │      ├── 📄 WF5.01.010__index 1.md
+
+> │      ├── 📄 WF5.01.010__index.html
+
+> │      ├── 📄 WF5.01.010__index.md
+
+> │      ├── 📄 WF5.01.010__updated_affidavit_language.md
+
+> │      ├── 📄 WF5.01.010__verified_affidavit_of_defendant.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WG_GROUNDS_ADA/
+
+> │    └── 📂 WG6_00_ADA_STRATEGY/
+
+> │      ├── 📄 WG6.00.001_ADA_TITLE_II_ANALYSIS.md
+
+> │      ├── 📄 WG6.00.002_REASONABLE_ACCOMMODATIONS.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
+
+> │      ├── 📄 WG6.01.001_DOJ_COMPLAINT.md
+
+> │      ├── 📄 WG6.01.002_ICRC_COMPLAINT.md
+
+> │      ├── 📄 WG6.01.003_STATUS_TRACKER.md
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WH_EVIDENCE/
+
+> │    ├── 📄 Evidence_Log.md
+
+> │    └── 📂 WH7_00_RAW_INTAKE/
+
+> │      └── 📂 10_supporting/
+
+> │        └── 📂 10_photos_video/
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_002.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_012.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_01b.png
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_10f.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1a8.mp4
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1be.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_1f3.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_25f.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_2f0.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_49.heic
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_4e0.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_5be.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_5d9.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_611.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_63f.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_71c.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_78b.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_7a5.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_835.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_8a1.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_8d8.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_942.png
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9b6.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9fb.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_9ff.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_a88.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_ca0.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_db9.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_e4c.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_eba.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_ed6.mp4
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f5.heic
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f60.png
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_f98.png
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_fa1.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-10_photos_video_fdd.jpg
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_receipts/
+
+> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │          ├── 📄 WH7.00.020__2025-12-20_EXH-20_receipts_0860d3d.jpg
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 30_declarations/
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │        └── 📂 40_affidavits/
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          └── 📂 ada-disability/
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │          └── 📂 character/
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │          └── 📂 community-service/
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │          └── 📂 credibility/
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │          └── 📂 observations/
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │      └── 📂 20_property/
+
+> │        └── 📂 10_mortgage_history/
+
+> │          └── 📂 20_payments/
+
+> │            ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │            ├── 📄 WH7.00.020__2025-12-20_EXH-20_payments_c5131de.png
+
+> │            ├── 📄 WH7.00.020__index.html
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_parcel/
+
+> │          ├── 📄 Parcel_6016506_PRC.pdf
+
+> │          ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │          ├── 📄 WH7.00.020__Parcel_6016506_PRC.pdf
+
+> │          ├── 📄 WH7.00.020__Parcel_6016506_ParcelDetailHistory.pdf
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_fcfcu/
+
+> │        ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │        ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │        ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
+
+> │        ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │        ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │        ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │        ├── 📄 2024-20-03_Response_to_tax_notice.pdf
+
+> │        ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │        ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │        ├── 📄 20241204_FCFCU_Statement.pdf
+
+> │        ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
+
+> │        ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │        ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │        ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │        ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │        ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Heal.pdf
+
+> │        ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> │        ├── 📄 WH7.00.020__2023-09-20_Notice_Disabilities_Har.pdf
+
+> │        ├── 📄 WH7.00.020__2024-03-20_FCFCU_Certified_Respons.pdf
+
+> │        ├── 📄 WH7.00.020__2024-12-09_outgoing_email_bank_acc.pdf
+
+> │        ├── 📄 WH7.00.020__2024-12-11_outgoing_email_bank_acc.pdf
+
+> │        ├── 📄 WH7.00.020__2024-20-03_Response_to_tax_notice.pdf
+
+> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement (1).pdf
+
+> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement (2).pdf
+
+> │        ├── 📄 WH7.00.020__20241204_FCFCU_Statement.pdf
+
+> │        ├── 📄 WH7.00.020__2025-12-20_EXH-30_fcfcu_740eacdc_2.jpg
+
+> │        ├── 📄 WH7.00.020__2025-12-20_EXH-30_fcfcu_ac6eb2ea_2.jpg
+
+> │        ├── 📄 WH7.00.020__21June-24-4817Shadow_Appraisal.pdf
+
+> │        ├── 📄 WH7.00.020__FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │        ├── 📄 WH7.00.020__REPORT_TO_COURT_ON_DEFENDANTS_REQU.pdf
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_affidavits/
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 character/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 50_aes/
+
+> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │        ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
+
+> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │        ├── 📄 WH7.00.020__2025-06-08_AES_ADA_Notice.pdf
+
+> │        ├── 📄 WH7.00.020__2025-06-08_AES_ADA_Request_Financi.pdf
+
+> │        ├── 📄 WH7.00.020__2025-12-16_AES_Emergency_Notice.md
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 99__archive/
+
+> │        ├── 📄 WH7.00.020__README_supporting.md
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 Raw_Exhibit_Map.md
+
+> │      ├── 📄 WH7.00.001_RAW_PHONE_DUMP.md
+
+> │      ├── 📄 WH7.00.002_RAW_VIDEO_AUDIO.md
+
+> │      ├── 📄 WH7.00.003_RAW_SCREENSHOTS.md
+
+> │      ├── 📄 WH7.00.020__Raw_Exhibit_Map.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WH7_01_POTENTIAL_EXHIBITS/
+
+> │      └── 📂 10_EXHIBIT_SETS/
+
+> │        ├── 📄 WH7.01.0100___checklist.md
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │        ├── 📄 _README.md
+
+> │        └── 📂 _exhibit_A-H_initial/
+
+> │          ├── 📄 WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
+
+> │          ├── 📄 WH7.01.0100__Exhibit_H_Declaration.pdf
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_I_ada_communications/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_J_eviction_removal/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_K_financial/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_L_statements/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_M_court-service/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │        └── 📂 exhibits_P_property/
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 30_exhibits/
+
+> │        ├── 📄 WH7.01.0050__exhibit_list.docx
+
+> │        ├── 📄 WH7.01.0050__exhibit_list.md
+
+> │        ├── 📄 _README.md
+
+> │        └── 📂 exhibits_templates/
+
+> │          ├── 📄 WH7.01.0050___Exhibits_Lists.md
+
+> │          ├── 📄 _README.md
+
+> │      ├── 📄 WH7.01.0001_POTENTIAL_EXHIBIT_0001.pdf
+
+> │      ├── 📄 WH7.01.0002_POTENTIAL_EXHIBIT_0002.pdf
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 WI_INTERNAL/
+
+> │    └── 📂 00_trackers/
+
+> │      ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │      ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strat.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
+
+> │    └── 📂 05_timeline/
+
+> │      └── 📂 30_2025/
+
+> │        ├── 📄 2025-01-16_Case_Filed.md
+
+> │        ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │        ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │        ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │        ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │        ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │        ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │        ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │        ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │        ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │        ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │        ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │        ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │        ├── 📄 2025-12-10_Motions_Filed.md
+
+> │        ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │        ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 Timeline_Canvas.canvas
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 10_overviews/
+
+> │      ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │      ├── 📄 Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    └── 📂 20_strategy/
+
+> │      └── 📂 10_ada_title_ii/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_void_vs_voidable_tr_60b/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 Strategic_Plan.canvas
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
+
+> │    ├── 📄 Case_Log.md
+
+> │    ├── 📄 Contacts.md
+
+> │    ├── 📄 Crisis_The_Anatomy_of_Institutional_Failure.pdf
+
+> │    ├── 📄 Debate.m4a
+
+> │    ├── 📄 Financial_Tracker.md
+
+> │    ├── 📄 Foreclosure and Housing Litigation Case Record.csv
+
+> │    ├── 📄 Foreclosure_Void_Judgment_Institutional_Failur.m4a
+
+> │    ├── 📄 Foreclosure_Void_Versus_Damages_Due_Process.m4a
+
+> │    ├── 📄 Forensic_Audit_of_a_Void_Foreclosure.m4a
+
+> │    ├── 📄 Formal Inventory of Violations and Schedule of .md
+
+> │    ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
+
+> │    ├── 📄 LEGAL MEMORANDUM.md
+
+> │    ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │    ├── 📄 Proposal for Strategic Reports in the Matter of.md
+
+> │    ├── 📄 Talking_Points.md
+
+> │    └── 📂 WI8_00_DOCKET_RECORD/
+
+> │      ├── 📄 WI8.00.001_FULL_DOCKET.pdf
+
+> │      ├── 📄 WI8.00.002_DOCKET_NOTES.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 legacy/
+
+> │        └── 📂 30_court_record/
+
+> │          └── 📂 10_docket/
+
+> │            ├── 📄 WI8.00.001__001_Complaint.pdf
+
+> │            ├── 📄 WI8.00.001__002_Appearance.pdf
+
+> │            ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
+
+> │            ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
+
+> │            ├── 📄 WI8.00.001__005_Appearance_2.pdf
+
+> │            ├── 📄 WI8.00.001__006_Summons_1.pdf
+
+> │            ├── 📄 WI8.00.001__007_Summons_2.pdf
+
+> │            ├── 📄 WI8.00.001__008_Summons_3.pdf
+
+> │            ├── 📄 WI8.00.001__009_Summons_4.pdf
+
+> │            ├── 📄 WI8.00.001__010_Summons_5.pdf
+
+> │            ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
+
+> │            ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
+
+> │            ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
+
+> │            ├── 📄 WI8.00.001__014_Affidavit.pdf
+
+> │            ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
+
+> │            ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
+
+> │            ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
+
+> │            ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
+
+> │            ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
+
+> │            ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
+
+> │            ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
+
+> │            ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
+
+> │            ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
+
+> │            ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
+
+> │            ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
+
+> │            ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
+
+> │            ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
+
+> │            ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
+
+> │            ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
+
+> │            ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │            ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
+
+> │            ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
+
+> │            ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
+
+> │            ├── 📄 WI8.00.001___Case_Summary.md
+
+> │            ├── 📄 WI8.00.001__index.html
+
+> │            ├── 📄 _README.md
+
+> │    └── 📂 WI8_01_PUBLIC_ADVOCACY/
+
+> │      ├── 📄 WI8.01.001_PRESS_STRATEGY.md
+
+> │      ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
+
+> │      ├── 📄 WI8.01.003_TIMING_AND_RISK.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 al_narrative/
+
+> │        └── 📂 01_Public_Narrative/
+
+> │          ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> │          ├── 📄 WI8.01.010__Public_Statement.md
+
+> │          ├── 📄 WI8.01.010__index.html
+
+> │          ├── 📄 _README.md
+
+> │      └── 📂 rrative/
+
+> │        └── 📂 04_Donations_and_Support/
+
+> │          └── 📂 Donation_Page_HTML/
+
+> │            ├── 📄 WI8.01.050__index.html
+
+> │          └── 📂 Screenshots_Live_Page/
+
+> │            ├── 📄 WI8.01.050__index.html
+
+> │          ├── 📄 WI8.01.050__Donations_Context.md
+
+> │          ├── 📄 WI8.01.050__index.html
+
+> │          ├── 📄 _README.md
+
+> │    └── 📂 WI8_02_DAMAGES_AND_SETTLEMENT/
+
+> │      ├── 📄 WI8.02.001_ECONOMIC_HARM.md
+
+> │      ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
+
+> │      ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 l_narrative/
+
+> │        └── 📂 02_Exposure_and_Harm/
+
+> │          └── 📂 Photos_Conditions/
+
+> │            ├── 📄 WI8.02.050__index.html
+
+> │          ├── 📄 WI8.02.050__Cold_Risk_Report.md
+
+> │          ├── 📄 WI8.02.050__index.html
+
+> │          └── 📂 Weather_Reports/
+
+> │            ├── 📄 WI8.02.050__index.html
+
+> │          ├── 📄 _README.md
+
+> │      └── 📂 on/
+
+> │        └── 📂 __legacy/
+
+> │          └── 📂 00_admin/
+
+> │            └── 📂 00_trackers/
+
+> │              ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
+
+> │              ├── 📄 WI8.02.010__2024-12-09_Eviction_Case_MasterFi.docx
+
+> │              ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
+
+> │              ├── 📄 WI8.02.010__2025-12-16_case_summary.md
+
+> │              ├── 📄 WI8.02.010__Case_Log.md
+
+> │              ├── 📄 WI8.02.010__Financial_Tracker.md
+
+> │              ├── 📄 WI8.02.010__QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
+
+> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
+
+> │              ├── 📄 WI8.02.010__case_conversation_log.txt
+
+> │              ├── 📄 WI8.02.010__expenses.csv
+
+> │              ├── 📄 WI8.02.010__index.html
+
+> │              ├── 📄 WI8.02.010__index.md
+
+> │              ├── 📄 _README.md
+
+> │    └── 📂 WI8_99_INTERNAL_ONLY/
+
+> │      └── 📂 l_narrative/
+
+> │        └── 📂 03_Internal_Analysis/
+
+> │          └── 📂 Payout_Strategy/
+
+> │            ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
+
+> │            ├── 📄 WI8.99.010__index.html
+
+> │            ├── 📄 _README.md
+
+> │          └── 📂 Premonitions/
+
+> │            ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
+
+> │            ├── 📄 WI8.99.010__index.html
+
+> │            ├── 📄 _README.md
+
+> │          ├── 📄 WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
+
+> │          ├── 📄 WI8.99.010__index.html
+
+> │          ├── 📄 _README.md
+
+> │    ├── 📄 Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 case_conversation_log.txt
+
+> │    ├── 📄 combinepdf.pdf
+
+> │    ├── 📄 expenses.csv
+
+> │    └── 📂 personal_narrative/
+
+> │      └── 📂 01_Public_Narrative/
+
+> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │        ├── 📄 Public_Statement.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 02_Exposure_and_Harm/
+
+> │        ├── 📄 Cold_Risk_Report.md
+
+> │        └── 📂 Photos_Conditions/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Weather_Reports/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 03_Internal_Analysis/
+
+> │        └── 📂 Payout_Strategy/
+
+> │          ├── 📄 Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 _README.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Premonitions/
+
+> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
+
+> │          ├── 📄 _README.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 04_Donations_and_Support/
+
+> │        └── 📂 Donation_Page_HTML/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Donations_Context.md
+
+> │        └── 📂 Screenshots_Live_Page/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 05_Timeline/
+
+> │        ├── 📄 Master_Timeline.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │  └── 📂 WZ_PROMOTION/
+
+> │    ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
+
+> │    ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
+
+> │    ├── 📄 WZ9.00.003_PROMOTION_LOG.md
+
+> │    ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
+
+> │    └── 📂 WZ9_00_050_FILINGS/
+
+> │      └── 📂 Supplemental/
+
+> │        └── 📂 01_drafts/
+
+> │          ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        └── 📂 02_exhibits/
+
+> │          ├── 📄 WZ9.00.050__20_exhibits_combined_source
+
+> │          ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        └── 📂 04_filed_receipts/
+
+> │          ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      ├── 📄 WZ9.00.050__Motions.md
+
+> │      ├── 📄 WZ9.00.050__index.html
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 motion_vacate/
+
+> │        └── 📂 01_drafts/
+
+> │          ├── 📄 WZ9.00.050__Emergency Motions.docx
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        └── 📂 02_exhibits/
+
+> │          ├── 📄 WZ9.00.050__01_motion_vacate.pdf
+
+> │          ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
+
+> │          ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
+
+> │          ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
+
+> │          ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
+
+> │          ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
+
+> │          ├── 📄 WZ9.00.050__combinepdf.pdf
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        └── 📂 03_proposed_order/
+
+> │          ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        └── 📂 04_filed_receipts/
+
+> │          ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │        ├── 📄 WZ9.00.050__.gitkeep
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │    ├── 📄 _README.md
+
+> └── 📂 03_TOOLS/
+
+> │  └── 📂 03_DRAFTS_TEMPLATES/
+
+> │    └── 📂 Case_FCFCU_Personal_Narrative/
+
+> │      └── 📂 01_Public_Narrative/
+
+> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │        ├── 📄 Public_Statement.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 02_Exposure_and_Harm/
+
+> │        ├── 📄 Cold_Risk_Report.md
+
+> │        └── 📂 Photos_Conditions/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Weather_Reports/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 03_Internal_Analysis/
+
+> │        └── 📂 Payout_Strategy/
+
+> │          ├── 📄 Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Premonitions/
+
+> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 04_Donations_and_Support/
+
+> │        └── 📂 Donation_Page_HTML/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Donations_Context.md
+
+> │        └── 📂 Screenshots_Live_Page/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 05_Timeline/
+
+> │        ├── 📄 Master_Timeline.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 DC_CLAIMS_AND_MOTIONS/
+
+> │      └── 📂 50_proposed_orders/
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 proposed_order_emergency_stay.md
+
+> │        ├── 📄 proposed_order_motion_to_vacate.md
+
+> │        └── 📂 proposed_templates/
+
+> │          ├── 📄 Proposed_Orders.md
+
+> │          ├── 📄 _README.md
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 EMERGENCY_FILING_PACKET.md
+
+> │      ├── 📄 Proposed_Order_Vacate.docx
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 motion_emergency_stay_of_writ.docx
+
+> │      ├── 📄 motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
+
+> │      ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │      ├── 📄 motion_to_vacate_void_judgement.docx
+
+> │      ├── 📄 motion_to_vacate_void_judgment.md
+
+> │      └── 📂 motions_templates/
+
+> │        ├── 📄 _Motions.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 DF_FACTS_DECLARATIONS/
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 affidavit_not_served.docx
+
+> │      ├── 📄 affidavit_not_served.md
+
+> │      └── 📂 affidavits_templates/
+
+> │        ├── 📄 ADA_Disability_Affidavit.md
+
+> │        ├── 📄 Character_Affidavit.md
+
+> │        ├── 📄 Community_Service_Affidavit.md
+
+> │        ├── 📄 Credibility_Affidavit.md
+
+> │        ├── 📄 Observations_Affidavit.md
+
+> │        ├── 📄 _Instructions_for_witnesses.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 declarations_templates/
+
+> │        ├── 📄 Gender_Identity_Clarification.md
+
+> │        ├── 📄 _Declarations.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 updated_affidavit_language.md
+
+> │      ├── 📄 verified_affidavit_of_defendant.md
+
+> │    └── 📂 DH_HARD_EXHIBITS/
+
+> │      ├── 📄 TEMPLATE_EXHIBIT_LABEL.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 exhibit_list.docx
+
+> │      ├── 📄 exhibit_list.md
+
+> │      └── 📂 exhibits_templates/
+
+> │        ├── 📄 _Exhibits_Lists.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 DI_INTERNAL_REFERENCE/
+
+> │      ├── 📄 TEMPLATE_COURT_DOC.md
+
+> │      ├── 📄 TEMPLATE_HANDUP_PACKET_NOTE.md
+
+> │      ├── 📄 TEMPLATE_SECTION_COVER.md
+
+> │      ├── 📄 TEMPLATE_SECTION_INDEX.md
+
+> │      ├── 📄 TEMPLATE_WAR_NOTE.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 ada_packet.md
+
+> │      ├── 📄 attorney_brief.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │      └── 📂 outreach_templates/
+
+> │        ├── 📄 _Advocate_Outreach_Message.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 receipt_usps_tracking.md
+
+> │      ├── 📄 script_call_lawyers.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 audit_fcfcu.py
+
+> │    ├── 📄 create_masters.py
+
+> │    ├── 📄 fix_court_binder.py
+
+> └── 📂 10_filings/
+
+> │  └── 📂 10_2025-12-10_motion_vacate/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 Emergency Motions.docx
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 01_motion_vacate.pdf
+
+> │      ├── 📄 02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 03_order_vacate_proposed.pdf
+
+> │      ├── 📄 04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 05_Exhibit_List.pdf
+
+> │      ├── 📄 06_Exhibits_Combined.pdf
+
+> │      ├── 📄 combinepdf.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 03_proposed_order/
+
+> │      ├── 📄 Proposed_Order_Vacate.docx
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 20_exhibits_combined_source
+
+> │      ├── 📄 Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Motions.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 20_evidence_vault/
+
+> │  └── 📂 10_EXHIBIT_SETS/
+
+> │    ├── 📄 _checklist.md
+
+> │    └── 📂 _exhibit_A-H_initial/
+
+> │      ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │      ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │      ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │      ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
+
+> │      ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
+
+> │      ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
+
+> │      ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
+
+> │      ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
+
+> │      ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
+
+> │      ├── 📄 Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_I_ada_communications/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_J_eviction_removal/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_K_financial/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_L_statements/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_M_court-service/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 exhibits_P_property/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_RAW/
+
+> │    └── 📂 10_supporting/
+
+> │      └── 📂 10_photos_video/
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_receipts/
+
+> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_affidavits/
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 character/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_property/
+
+> │      └── 📂 10_mortgage_history/
+
+> │        └── 📂 20_payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_fcfcu/
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │      ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
+
+> │      ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-20-03_Response_to_tax_notice.pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement.pdf
+
+> │      ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
+
+> │      ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │      ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │      ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │      ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_aes/
+
+> │      ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │      ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
+
+> │      ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 99__archive/
+
+> │      ├── 📄 README_supporting.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Raw_Exhibit_Map.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Evidence_Log.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 30_court_record/
+
+> │  └── 📂 10_docket/
+
+> │    ├── 📄 001_Complaint.pdf
+
+> │    ├── 📄 002_Appearance.pdf
+
+> │    ├── 📄 003_Request_for_Admissions.pdf
+
+> │    ├── 📄 004_Notice_to_Homeowners.pdf
+
+> │    ├── 📄 005_Appearance_2.pdf
+
+> │    ├── 📄 006_Summons_1.pdf
+
+> │    ├── 📄 007_Summons_2.pdf
+
+> │    ├── 📄 008_Summons_3.pdf
+
+> │    ├── 📄 009_Summons_4.pdf
+
+> │    ├── 📄 010_Summons_5.pdf
+
+> │    ├── 📄 011_Service_Returned_03-05-2025.pdf
+
+> │    ├── 📄 012_Service_Returned_04-15-2025.pdf
+
+> │    ├── 📄 013_Motion_for_Default_Judgment.pdf
+
+> │    ├── 📄 014_Affidavit.pdf
+
+> │    ├── 📄 015_Affidavit_Attorney_Fees.pdf
+
+> │    ├── 📄 016_Affidavit_Additional.pdf
+
+> │    ├── 📄 017_Order_Denying_Default_Judgment.pdf
+
+> │    ├── 📄 018_Omitted_Notice_of_Service.pdf
+
+> │    ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
+
+> │    ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
+
+> │    ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
+
+> │    ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
+
+> │    ├── 📄 023_Decree_Foreclosure_Returned.pdf
+
+> │    ├── 📄 024_Petition_Writ_of_Assistance.pdf
+
+> │    ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
+
+> │    ├── 📄 026_Exhibit_List_A-G.pdf
+
+> │    ├── 📄 027_Supplemental_Motion_Access.pdf
+
+> │    ├── 📄 028_Report_Court_Defendant_Request.pdf
+
+> │    ├── 📄 029_Emergency_Supplemental_Declaration.pdf
+
+> │    ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │    ├── 📄 031_Proposed_Order_Vacate.pdf
+
+> │    ├── 📄 032_Proposed_Order_Stay.pdf
+
+> │    ├── 📄 033_ADA_Disability_Affidavit.pdf
+
+> │    ├── 📄 _Case_Summary.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 90_OUTPUTS/
+
+> │  └── 📂 J_EXPORTS/
+
+> │    └── 📂 01_court_binder/
+
+> │      └── 📂 fcfcu-49d03-2501-mf-002559/
+
+> │        └── 📂 a_anchor_overview/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 a0_00_cover_index/
+
+> │            ├── 📄 a0.00.000_section_cover.html
+
+> │            ├── 📄 a0.00.010_master_case_index.html
+
+> │          └── 📂 a0_01_overview/
+
+> │            ├── 📄 a0.01.001_one_page_case_summary.html
+
+> │            ├── 📄 a0.01.002_hearing_scope_and_relief.html
+
+> │        └── 📂 b_basis_issue_and_law/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 b1_00_cover/
+
+> │            ├── 📄 b1.00.000_section_cover.html
+
+> │          └── 📂 b1_01_issue_law/
+
+> │            ├── 📄 b1.01.001_core_issue_statement.html
+
+> │            ├── 📄 b1.01.002_trial_rule_4_1_b_standard.html
+
+> │            ├── 📄 b1.01.003_void_vs_voidable_case_law.html
+
+> │        └── 📂 c_claims_and_motions/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 c2_01_motion_vacate/
+
+> │            ├── 📄 c2.01.001_motion_to_vacate_void_judgment.html
+
+> │            ├── 📄 c2.01.002_motion_vacate.html
+
+> │            ├── 📄 c2.01.002_motion_vacate.pdf
+
+> │            ├── 📄 c2.01.003_exhibit_list.html
+
+> │            ├── 📄 c2.01.003_exhibit_list.pdf
+
+> │            ├── 📄 c2.01.004_exhibits_combined.html
+
+> │            ├── 📄 c2.01.004_exhibits_combined.pdf
+
+> │          └── 📂 c2_02_emergency_stay_quash/
+
+> │            ├── 📄 c2.02.001_emergency_motion_stay_or_quash.html
+
+> │            ├── 📄 c2.02.002_emergency_motion_stay_or_quash.html
+
+> │            ├── 📄 c2.02.002_emergency_motion_stay_or_quash.pdf
+
+> │          └── 📂 c2_03_supplemental/
+
+> │            ├── 📄 c2.03.001_supplemental_emergency_motion.html
+
+> │            ├── 📄 c2.03.002_supplemental_emergency_motion.html
+
+> │            ├── 📄 c2.03.002_supplemental_emergency_motion.pdf
+
+> │            ├── 📄 c2.03.003_exhibit_h_declaration.html
+
+> │            ├── 📄 c2.03.003_exhibit_h_declaration.pdf
+
+> │            ├── 📄 c2.03.004_odyssey_envelope_receipt.html
+
+> │            ├── 📄 c2.03.004_odyssey_envelope_receipt.pdf
+
+> │            ├── 📄 c2.03.005_combined_source.html
+
+> │            ├── 📄 c2.03.005_combined_source.pdf
+
+> │          └── 📂 c2_04_proposed_orders/
+
+> │            ├── 📄 c2.04.001_order_vacate_proposed.html
+
+> │            ├── 📄 c2.04.001_order_vacate_proposed.pdf
+
+> │            ├── 📄 c2.04.001_proposed_order_vacate.html
+
+> │            ├── 📄 c2.04.002_order_stay_writ_proposed.html
+
+> │            ├── 📄 c2.04.002_order_stay_writ_proposed.pdf
+
+> │            ├── 📄 c2.04.002_proposed_order_stay_writ.html
+
+> │        └── 📂 d_delivery_service/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 d3_00_cover/
+
+> │            ├── 📄 d3.00.000_section_cover.html
+
+> │          └── 📂 d3_01_summons/
+
+> │            ├── 📄 d3.01.001_summons_incomplete.html
+
+> │            ├── 📄 d3.01.001_summons_incomplete.pdf
+
+> │          └── 📂 d3_02_sheriff_returns/
+
+> │            ├── 📄 d3.02.001_sheriff_return_2025-03-05.html
+
+> │            ├── 📄 d3.02.001_sheriff_return_2025-03-05.pdf
+
+> │            ├── 📄 d3.02.002_sheriff_return_2025-04-15.html
+
+> │            ├── 📄 d3.02.002_sheriff_return_2025-04-15.pdf
+
+> │          └── 📂 d3_03_service_analysis/
+
+> │            ├── 📄 d3.03.001_service_defect_analysis.html
+
+> │        └── 📂 e_effects_procedural_chain/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 e4_00_cover/
+
+> │            ├── 📄 e4.00.000_section_cover.html
+
+> │          └── 📂 e4_01_default_judgment/
+
+> │            ├── 📄 e4.01.001_default_judgment_entry.html
+
+> │            ├── 📄 e4.01.001_default_judgment_entry.pdf
+
+> │          └── 📂 e4_02_petition_for_writ/
+
+> │            ├── 📄 e4.02.001_petition_for_writ_of_assistance.html
+
+> │            ├── 📄 e4.02.001_petition_for_writ_of_assistance.pdf
+
+> │          └── 📂 e4_03_writ_issued/
+
+> │            ├── 📄 e4.03.001_writ_of_assistance_issued.html
+
+> │            ├── 📄 e4.03.001_writ_of_assistance_issued.pdf
+
+> │          └── 📂 e4_04_removal_enforcement/
+
+> │            ├── 📄 e4.04.001_removal_enforcement_record.html
+
+> │            ├── 📄 e4.04.001_removal_enforcement_record.pdf
+
+> │          └── 📂 e4_05_chain_summary/
+
+> │            ├── 📄 e4.05.001_procedural_chain_summary.html
+
+> │        └── 📂 f_facts_declarations/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 f5_00_cover/
+
+> │            ├── 📄 f5.00.000_section_cover.html
+
+> │          └── 📂 f5_01_affidavit_not_served/
+
+> │            ├── 📄 f5.01.001_affidavit_not_served.html
+
+> │          └── 📂 f5_02_declaration_ongoing_harm/
+
+> │            ├── 📄 f5.02.001_declaration_ongoing_harm.html
+
+> │          └── 📂 f5_03_credibility_declaration/
+
+> │            ├── 📄 f5.03.001_credibility_declaration.html
+
+> │        └── 📂 g_grounds_ada/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 g6_00_cover/
+
+> │            ├── 📄 g6.00.000_section_cover.html
+
+> │          └── 📂 g6_01_ada_notice/
+
+> │            ├── 📄 g6.01.001_ada_notice.html
+
+> │            ├── 📄 g6.01.001_ada_notice.pdf
+
+> │          └── 📂 g6_02_ada_supporting/
+
+> │            ├── 📄 g6.02.001_ada_supporting_documentation.html
+
+> │            ├── 📄 g6.02.001_ada_supporting_documentation.pdf
+
+> │          └── 📂 g6_03_ada_impact_summary/
+
+> │            ├── 📄 g6.03.001_ada_impact_summary.html
+
+> │        └── 📂 h_hard_exhibits/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 h7_00_cover/
+
+> │            ├── 📄 h7.00.000_section_cover.html
+
+> │          └── 📂 h7_01_exhibits_a-h/
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 h7.01.0001-0008_exhibits_combined.html
+
+> │            ├── 📄 h7.01.0001-0008_exhibits_combined.pdf
+
+> │            ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-0.html
+
+> │            ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-05.pdf
+
+> │            ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-1.html
+
+> │            ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-15.pdf
+
+> │            ├── 📄 h7.01.0003_exhibit_c_incomplete_summons.html
+
+> │            ├── 📄 h7.01.0003_exhibit_c_incomplete_summons.pdf
+
+> │            ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion.html
+
+> │            ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion.pdf
+
+> │            ├── 📄 h7.01.0005_exhibit_e_petition_for_writ.html
+
+> │            ├── 📄 h7.01.0005_exhibit_e_petition_for_writ.pdf
+
+> │            ├── 📄 h7.01.0006_exhibit_f_affidavit.html
+
+> │            ├── 📄 h7.01.0006_exhibit_f_affidavit.pdf
+
+> │            ├── 📄 h7.01.0007_exhibit_g1_ada_notice.html
+
+> │            ├── 📄 h7.01.0007_exhibit_g1_ada_notice.pdf
+
+> │            ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents.html
+
+> │            ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents.pdf
+
+> │            ├── 📄 h7.01.0009_exhibit_h_declaration_of_backgroun.html
+
+> │            ├── 📄 h7.01.0009_exhibit_h_declaration_of_background.pdf
+
+> │          └── 📂 h7_02_exhibits_i_ada/
+
+> │            ├── 📄 _readme.html
+
+> │          └── 📂 h7_03_exhibits_j_removal/
+
+> │            ├── 📄 _readme.html
+
+> │          └── 📂 h7_04_exhibits_k_financial/
+
+> │            ├── 📄 _readme.html
+
+> │          └── 📂 h7_05_exhibits_l_statements/
+
+> │            ├── 📄 _readme.html
+
+> │          └── 📂 h7_06_exhibits_m_service/
+
+> │            ├── 📄 _readme.html
+
+> │          └── 📂 h7_07_exhibits_p_property/
+
+> │            ├── 📄 _readme.html
+
+> │        └── 📂 i_internal_reference/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 i8_00_cover/
+
+> │            ├── 📄 i8.00.000_section_cover.html
+
+> │          └── 📂 i8_01_full_docket/
+
+> │            ├── 📄 i8_01_000_case_summary.html
+
+> │            ├── 📄 i8_01_000_full_docket.html
+
+> │            ├── 📄 i8_01_000_full_docket.pdf
+
+> │            ├── 📄 i8_01_001_complaint.html
+
+> │            ├── 📄 i8_01_001_complaint.pdf
+
+> │            ├── 📄 i8_01_002_appearance.html
+
+> │            ├── 📄 i8_01_002_appearance.pdf
+
+> │            ├── 📄 i8_01_003_request_for_admissions.html
+
+> │            ├── 📄 i8_01_003_request_for_admissions.pdf
+
+> │            ├── 📄 i8_01_004_notice_to_homeowners.html
+
+> │            ├── 📄 i8_01_004_notice_to_homeowners.pdf
+
+> │            ├── 📄 i8_01_005_appearance_2.html
+
+> │            ├── 📄 i8_01_005_appearance_2.pdf
+
+> │            ├── 📄 i8_01_006_summons_1.html
+
+> │            ├── 📄 i8_01_006_summons_1.pdf
+
+> │            ├── 📄 i8_01_007_summons_2.html
+
+> │            ├── 📄 i8_01_007_summons_2.pdf
+
+> │            ├── 📄 i8_01_008_summons_3.html
+
+> │            ├── 📄 i8_01_008_summons_3.pdf
+
+> │            ├── 📄 i8_01_009_summons_4.html
+
+> │            ├── 📄 i8_01_009_summons_4.pdf
+
+> │            ├── 📄 i8_01_010_summons_5.html
+
+> │            ├── 📄 i8_01_010_summons_5.pdf
+
+> │            ├── 📄 i8_01_011_service_returned_03-05-2025.html
+
+> │            ├── 📄 i8_01_011_service_returned_03-05-2025.pdf
+
+> │            ├── 📄 i8_01_012_service_returned_04-15-2025.html
+
+> │            ├── 📄 i8_01_012_service_returned_04-15-2025.pdf
+
+> │            ├── 📄 i8_01_013_motion_for_default_judgment.html
+
+> │            ├── 📄 i8_01_013_motion_for_default_judgment.pdf
+
+> │            ├── 📄 i8_01_014_affidavit.html
+
+> │            ├── 📄 i8_01_014_affidavit.pdf
+
+> │            ├── 📄 i8_01_015_affidavit_attorney_fees.html
+
+> │            ├── 📄 i8_01_015_affidavit_attorney_fees.pdf
+
+> │            ├── 📄 i8_01_016_affidavit_additional.html
+
+> │            ├── 📄 i8_01_016_affidavit_additional.pdf
+
+> │            ├── 📄 i8_01_017_order_denying_default_judgment.html
+
+> │            ├── 📄 i8_01_017_order_denying_default_judgment.pdf
+
+> │            ├── 📄 i8_01_018_omitted_notice_of_service.html
+
+> │            ├── 📄 i8_01_018_omitted_notice_of_service.pdf
+
+> │            ├── 📄 i8_01_019_amended_motion_default_judgment_1.html
+
+> │            ├── 📄 i8_01_019_amended_motion_default_judgment_1.pdf
+
+> │            ├── 📄 i8_01_020_amended_motion_default_judgment_2.html
+
+> │            ├── 📄 i8_01_020_amended_motion_default_judgment_2.pdf
+
+> │            ├── 📄 i8_01_021_praecipe_sheriff_sale_1.html
+
+> │            ├── 📄 i8_01_021_praecipe_sheriff_sale_1.pdf
+
+> │            ├── 📄 i8_01_022_praecipe_sheriff_sale_2.html
+
+> │            ├── 📄 i8_01_022_praecipe_sheriff_sale_2.pdf
+
+> │            ├── 📄 i8_01_023_decree_foreclosure_returned.html
+
+> │            ├── 📄 i8_01_023_decree_foreclosure_returned.pdf
+
+> │            ├── 📄 i8_01_024_petition_writ_of_assistance.html
+
+> │            ├── 📄 i8_01_024_petition_writ_of_assistance.pdf
+
+> │            ├── 📄 i8_01_025_motion_vacate_stay_writ.html
+
+> │            ├── 📄 i8_01_025_motion_vacate_stay_writ.pdf
+
+> │            ├── 📄 i8_01_026_exhibit_list_a-g.html
+
+> │            ├── 📄 i8_01_026_exhibit_list_a-g.pdf
+
+> │            ├── 📄 i8_01_027_supplemental_motion_access.html
+
+> │            ├── 📄 i8_01_027_supplemental_motion_access.pdf
+
+> │            ├── 📄 i8_01_028_report_court_defendant_request.html
+
+> │            ├── 📄 i8_01_028_report_court_defendant_request.pdf
+
+> │            ├── 📄 i8_01_029_emergency_supplemental_declaration.html
+
+> │            ├── 📄 i8_01_029_emergency_supplemental_declaration.pdf
+
+> │            ├── 📄 i8_01_030_report_sheriff_sale_no_excess.html
+
+> │            ├── 📄 i8_01_030_report_sheriff_sale_no_excess.pdf
+
+> │            ├── 📄 i8_01_031_proposed_order_vacate.html
+
+> │            ├── 📄 i8_01_031_proposed_order_vacate.pdf
+
+> │            ├── 📄 i8_01_032_proposed_order_stay.html
+
+> │            ├── 📄 i8_01_032_proposed_order_stay.pdf
+
+> │            ├── 📄 i8_01_033_ada_disability_affidavit.html
+
+> │            ├── 📄 i8_01_033_ada_disability_affidavit.pdf
+
+> │          └── 📂 i8_02_research_notes/
+
+> │            ├── 📄 i8.02.001_research_and_notes.html
+
+> │          └── 📂 i8_99_do_not_print/
+
+> │            ├── 📄 i8.99.999_internal_do_not_print.html
+
+> │        └── 📂 j_exports/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 j9.00.00_section_cover.html
+
+> │    └── 📂 02_war_room/
+
+> │      └── 📂 wa_anchor_overview/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 wa0.00.000_war_room_overview.html
+
+> │        └── 📂 wa0.00.001_timeline/
+
+> │          └── 📂 30_2025/
+
+> │            ├── 📄 wa0.00.030__2025-01-16_case_filed.html
+
+> │            ├── 📄 wa0.00.030__2025-03-05_service_attempt_1.html
+
+> │            ├── 📄 wa0.00.030__2025-04-15_service_attempt_2.html
+
+> │            ├── 📄 wa0.00.030__2025-05-13_motion_for_default_jud.html
+
+> │            ├── 📄 wa0.00.030__2025-05-21_order_denying_default_.html
+
+> │            ├── 📄 wa0.00.030__2025-05-23_amended_motion_default.html
+
+> │            ├── 📄 wa0.00.030__2025-05-28_default_judgment_enter.html
+
+> │            ├── 📄 wa0.00.030__2025-05-30_praecipe_sheriff_sale.html
+
+> │            ├── 📄 wa0.00.030__2025-07-09_sheriff_sale_notice_po.html
+
+> │            ├── 📄 wa0.00.030__2025-08-15_sheriff_sale.html
+
+> │            ├── 📄 wa0.00.030__2025-10-29_petition_for_writ_of_a.html
+
+> │            ├── 📄 wa0.00.030__2025-11-06_writ_of_assistance_iss.html
+
+> │            ├── 📄 wa0.00.030__2025-12-09_writ_executed_removal.html
+
+> │            ├── 📄 wa0.00.030__2025-12-10_motions_filed.html
+
+> │            ├── 📄 wa0.00.030__2025-12-11_court_orders_and_heari.html
+
+> │            ├── 📄 wa0.00.030__2025-12-12_supplemental_emergency.html
+
+> │            ├── 📄 wa0.00.030__index-content.html
+
+> │            ├── 📄 wa0.00.030__index.html
+
+> │          ├── 📄 wa0.00.030__index.html
+
+> │          ├── 📄 wa0.00.030__timeline_canvas.html
+
+> │          ├── 📄 wa0.00.060__master_timeline.html
+
+> │        ├── 📄 wa0.00.010_active_strategies.html
+
+> │        ├── 📄 wa0.00.020_promotion_candidates.html
+
+> │        └── 📂 wa0_00_command_map/
+
+> │          ├── 📄 wa0.00.01_command_map.html
+
+> │        └── 📂 wa0_01_hearing_planning/
+
+> │          ├── 📄 wa0.01.001_hearing_goals.html
+
+> │          ├── 📄 wa0.01.002_talking_points.html
+
+> │          ├── 📄 wa0.01.003_judge_questions_predicted.html
+
+> │      └── 📂 wb_basis_issue_and_law/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wb1_00_law_research/
+
+> │          ├── 📄 wb1.00.001_case_law_research.html
+
+> │          ├── 📄 wb1.00.002_void_vs_voidable_analysis.html
+
+> │          ├── 📄 wb1.00.003_jurisdiction_theory.html
+
+> │        └── 📂 wb1_01_alternate_theories/
+
+> │          ├── 📄 wb1.01.001_backup_arguments.html
+
+> │          ├── 📄 wb1.01.002_if_judge_pushback.html
+
+> │      └── 📂 wc_claims_and_motions/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wc2_00_draft_motions/
+
+> │          ├── 📄 wc2.00.001_draft_motion_vacate.html
+
+> │          ├── 📄 wc2.00.002_draft_emergency_stay.html
+
+> │          ├── 📄 wc2.00.003_draft_supplemental.html
+
+> │          ├── 📄 wc2.00.010___motions.html
+
+> │          ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
+
+> │          ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
+
+> │          ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
+
+> │          ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
+
+> │          ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
+
+> │          ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
+
+> │        └── 📂 wc2_01_proposed_orders/
+
+> │          ├── 📄 wc2.01.001_draft_order_vacate.html
+
+> │          ├── 📄 wc2.01.002_draft_order_stay.html
+
+> │          ├── 📄 wc2.01.010__index-content.html
+
+> │          ├── 📄 wc2.01.010__index.html
+
+> │          ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
+
+> │          ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
+
+> │          ├── 📄 wc2.01.010__proposed_orders.html
+
+> │      └── 📂 wd_delivery_service/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wd3_00_service_tracking/
+
+> │          ├── 📄 wd3.00.001_service_matrix.html
+
+> │          ├── 📄 wd3.00.002_service_failure_analysis.html
+
+> │        └── 📂 wd3_01_service_evidence/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wd3.01.001_summons_source.html
+
+> │          ├── 📄 wd3.01.001_summons_source.pdf
+
+> │          ├── 📄 wd3.01.002_sheriff_metadata.html
+
+> │      └── 📂 we_effects_procedural_chain/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 we4_00_chain_analysis/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 we4.00.001_procedural_failure_map.html
+
+> │          ├── 📄 we4.00.002_but_for_analysis.html
+
+> │          ├── 📄 we4.00.010__integrate_disability_separate_appe.m4a
+
+> │          ├── 📄 we4.00.010__void_judgment_eviction_crisis.html
+
+> │          ├── 📄 we4.00.010__void_judgment_eviction_crisis.pdf
+
+> │        └── 📂 we4_01_remedies/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 we4.01.001_stay_paths.html
+
+> │          ├── 📄 we4.01.002_reversal_paths.html
+
+> │      └── 📂 wf_facts_declarations/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wf5_00_fact_development/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wf5.00.001_fact_timeline.html
+
+> │          ├── 📄 wf5.00.002_fact_gaps.html
+
+> │        └── 📂 wf5_01_draft_declarations/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wf5.01.001_draft_affidavit.html
+
+> │          ├── 📄 wf5.01.002_draft_declaration.html
+
+> │          ├── 📄 wf5.01.010___declarations.html
+
+> │          ├── 📄 wf5.01.010___instructions_for_witnesses.html
+
+> │          ├── 📄 wf5.01.010__ada_disability_affidavit.html
+
+> │          ├── 📄 wf5.01.010__affidavit_not_served.docx
+
+> │          ├── 📄 wf5.01.010__affidavit_not_served.html
+
+> │          ├── 📄 wf5.01.010__character_affidavit.html
+
+> │          ├── 📄 wf5.01.010__community_service_affidavit.html
+
+> │          ├── 📄 wf5.01.010__credibility_affidavit.html
+
+> │          ├── 📄 wf5.01.010__gender_identity_clarification.html
+
+> │          ├── 📄 wf5.01.010__index-1.html
+
+> │          ├── 📄 wf5.01.010__index-content.html
+
+> │          ├── 📄 wf5.01.010__index.html
+
+> │          ├── 📄 wf5.01.010__observations_affidavit.html
+
+> │          ├── 📄 wf5.01.010__verified_affidavit_of_defendant.html
+
+> │      └── 📂 wg_grounds_ada/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wg6_00_ada_strategy/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wg6.00.001_ada_title_ii_analysis.html
+
+> │          ├── 📄 wg6.00.002_reasonable_accommodations.html
+
+> │        └── 📂 wg6_01_parallel_enforcement/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wg6.01.001_doj_complaint.html
+
+> │          ├── 📄 wg6.01.002_icrc_complaint.html
+
+> │          ├── 📄 wg6.01.003_status_tracker.html
+
+> │      └── 📂 wh_hard_evidence/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 evidence_log.html
+
+> │        └── 📂 wh7_00_raw_intake/
+
+> │          └── 📂 10_photos_video/
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-.html
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 10_supporting/
+
+> │            └── 📂 10_photos_video/
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_00.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_002.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_01.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_012.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_01b.png
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_10.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_10f.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1a.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1a8.mp4
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1b.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1be.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1f.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_1f3.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_25.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_25f.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_2f.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_2f0.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_49.heic
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_4e.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_4e0.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5b.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5be.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5d.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_5d9.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_61.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_611.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_63.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_63f.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_71.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_71c.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_78.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_78b.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_7a.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_7a5.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_83.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_835.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8a.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8a1.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8d.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_8d8.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_94.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_942.png
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9b.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9b6.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9f.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9fb.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_9ff.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video__1.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video__2.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_a8.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_a88.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ca.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ca0.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_db.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_db9.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_e4.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_e4c.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_eb.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_eba.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ed.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_ed6.mp4
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f5.heic
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f6.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f60.png
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f9.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_f98.png
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fa.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fa1.jpg
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fd.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-10_photos_video_fdd.jpg
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │            └── 📂 20_receipts/
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-20_receipts_0860d3.html
+
+> │              ├── 📄 wh7.00.020__2025-12-20_exh-20_receipts_0860d3d.jpg
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │            └── 📂 30_declarations/
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │            └── 📂 40_affidavits/
+
+> │              └── 📂 ada-disability/
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              └── 📂 character/
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              └── 📂 community-service/
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              └── 📂 credibility/
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              └── 📂 observations/
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │            ├── 📄 wh7.00.020__index-content.html
+
+> │            ├── 📄 wh7.00.020__index.html
+
+> │          └── 📂 20_property/
+
+> │          └── 📂 20_property-1/
+
+> │            └── 📂 10_mortgage_history/
+
+> │              └── 📂 20_payments/
+
+> │                ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-2.html
+
+> │                ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20.png
+
+> │                ├── 📄 index-content.html
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 20_parcel/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 parcel_6016506_parceldetailhistory.html
+
+> │              ├── 📄 parcel_6016506_parceldetailhistory.pdf
+
+> │              ├── 📄 parcel_6016506_prc.html
+
+> │              ├── 📄 parcel_6016506_prc.pdf
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 10_mortgage_history/
+
+> │              └── 📂 20_payments/
+
+> │                ├── 📄 wh7.00.020__2025-12-20_exh-20_payments_c5131d.html
+
+> │                ├── 📄 wh7.00.020__2025-12-20_exh-20_payments_c5131de.png
+
+> │                ├── 📄 wh7.00.020__index-content.html
+
+> │                ├── 📄 wh7.00.020__index.html
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │            └── 📂 20_parcel/
+
+> │              ├── 📄 wh7.00.020__index-content.html
+
+> │              ├── 📄 wh7.00.020__index.html
+
+> │              ├── 📄 wh7.00.020__parcel_6016506_parceldetailhistor.html
+
+> │              ├── 📄 wh7.00.020__parcel_6016506_parceldetailhistory.pdf
+
+> │              ├── 📄 wh7.00.020__parcel_6016506_prc.html
+
+> │              ├── 📄 wh7.00.020__parcel_6016506_prc.pdf
+
+> │            ├── 📄 wh7.00.020__index-content.html
+
+> │            ├── 📄 wh7.00.020__index.html
+
+> │          └── 📂 20_receipts/
+
+> │            ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-2.html
+
+> │            ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 30_declarations/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 30_fcfcu/
+
+> │          └── 📂 30_fcfcu-1/
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_h_1.html
+
+> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_hea.html
+
+> │            ├── 📄 wh7.00.020__2023-09-20_fcfcu_hardship_and_heal.pdf
+
+> │            ├── 📄 wh7.00.020__2023-09-20_notice_disabilities_ha.html
+
+> │            ├── 📄 wh7.00.020__2023-09-20_notice_disabilities_har.pdf
+
+> │            ├── 📄 wh7.00.020__2024-03-20_fcfcu_certified_respon.html
+
+> │            ├── 📄 wh7.00.020__2024-03-20_fcfcu_certified_respons.pdf
+
+> │            ├── 📄 wh7.00.020__2024-12-09_outgoing_email_bank_ac.html
+
+> │            ├── 📄 wh7.00.020__2024-12-09_outgoing_email_bank_acc.pdf
+
+> │            ├── 📄 wh7.00.020__2024-12-11_outgoing_email_bank_ac.html
+
+> │            ├── 📄 wh7.00.020__2024-12-11_outgoing_email_bank_acc.pdf
+
+> │            ├── 📄 wh7.00.020__2024-20-03_response_to_tax_notice.html
+
+> │            ├── 📄 wh7.00.020__2024-20-03_response_to_tax_notice.pdf
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(1).html
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(1).pdf
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(2).html
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement-(2).pdf
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement.html
+
+> │            ├── 📄 wh7.00.020__20241204_fcfcu_statement.pdf
+
+> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_740eacdc_.html
+
+> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_740eacdc_2.jpg
+
+> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_ac6eb2ea_.html
+
+> │            ├── 📄 wh7.00.020__2025-12-20_exh-30_fcfcu_ac6eb2ea_2.jpg
+
+> │            ├── 📄 wh7.00.020__21june-24-4817shadow_appraisal.html
+
+> │            ├── 📄 wh7.00.020__21june-24-4817shadow_appraisal.pdf
+
+> │            ├── 📄 wh7.00.020__fcfcu_v_cr-v_report_to_court.html
+
+> │            ├── 📄 wh7.00.020__fcfcu_v_cr-v_report_to_court.pdf
+
+> │            ├── 📄 wh7.00.020__index-content.html
+
+> │            ├── 📄 wh7.00.020__index.html
+
+> │            ├── 📄 wh7.00.020__report_to_court_on_defendants_req.html
+
+> │            ├── 📄 wh7.00.020__report_to_court_on_defendants_requ.pdf
+
+> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_1.html
+
+> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_l.html
+
+> │            ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
+
+> │            ├── 📄 2023-09-20_notice_disabilities_hardship.html
+
+> │            ├── 📄 2023-09-20_notice_disabilities_hardship.pdf
+
+> │            ├── 📄 2024-03-20_fcfcu_certified_response_tax_recor.html
+
+> │            ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
+
+> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.html
+
+> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.html
+
+> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │            ├── 📄 2024-20-03_response_to_tax_notice.html
+
+> │            ├── 📄 2024-20-03_response_to_tax_notice.pdf
+
+> │            ├── 📄 20241204_fcfcu_statement-(1).html
+
+> │            ├── 📄 20241204_fcfcu_statement-(1).pdf
+
+> │            ├── 📄 20241204_fcfcu_statement-(2).html
+
+> │            ├── 📄 20241204_fcfcu_statement-(2).pdf
+
+> │            ├── 📄 20241204_fcfcu_statement.html
+
+> │            ├── 📄 20241204_fcfcu_statement.pdf
+
+> │            ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_e.html
+
+> │            ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
+
+> │            ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_e.html
+
+> │            ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
+
+> │            ├── 📄 21june-24-4817shadow_appraisal.html
+
+> │            ├── 📄 21june-24-4817shadow_appraisal.pdf
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 fcfcu_v_cr-v_report_to_court.html
+
+> │            ├── 📄 fcfcu_v_cr-v_report_to_court.pdf
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 report_to_court_on_defendants_request.html
+
+> │            ├── 📄 report_to_court_on_defendants_request.pdf
+
+> │          └── 📂 40_affidavits/
+
+> │            └── 📂 ada-disability/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 character/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 community-service/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 credibility/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 observations/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 50_aes/
+
+> │          └── 📂 50_aes-1/
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_notice.html
+
+> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_notice.pdf
+
+> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_request_financ.html
+
+> │            ├── 📄 wh7.00.020__2025-06-08_aes_ada_request_financi.pdf
+
+> │            ├── 📄 wh7.00.020__2025-12-16_aes_emergency_notice.html
+
+> │            ├── 📄 wh7.00.020__index-content.html
+
+> │            ├── 📄 wh7.00.020__index.html
+
+> │            ├── 📄 2025-06-08_aes_ada_notice.html
+
+> │            ├── 📄 2025-06-08_aes_ada_notice.pdf
+
+> │            ├── 📄 2025-06-08_aes_ada_request_financial_hardship.html
+
+> │            ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
+
+> │            ├── 📄 2025-12-16_aes_emergency_notice.html
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 99__archive/
+
+> │            ├── 📄 _readme.html
+
+> │            ├── 📄 wh7.00.020__index-content.html
+
+> │            ├── 📄 wh7.00.020__index.html
+
+> │            ├── 📄 wh7.00.020__readme_supporting.html
+
+> │          ├── 📄 _readme-1.html
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wh7.00.001_raw_phone_dump.html
+
+> │          ├── 📄 wh7.00.002_raw_video_audio.html
+
+> │          ├── 📄 wh7.00.003_raw_screenshots.html
+
+> │        └── 📂 wh7_01_potential_exhibits/
+
+> │          └── 📂 10_exhibit_sets/
+
+> │            └── 📂 _exhibit_a-h_initial/
+
+> │              ├── 📄 wh7.01.0100__2025-12-10_mtv_exhibits_combined.html
+
+> │              ├── 📄 wh7.01.0100__2025-12-10_mtv_exhibits_combined.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_a_20250305_sheriff_retur.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_a_20250305_sheriff_return.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_b_20250415_sheriff_retur.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_b_20250415_sheriff_return.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_c_20250116_incomplete_su.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_c_20250116_incomplete_sum.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_d_20250513_default_judgm.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_d_20250513_default_judgme.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_e_20251029_petition_for_.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_e_20251029_petition_for_w.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_f_affidavit_cody_ricevel.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_f_affidavit_cody_ricevela.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_g1_ada_notice_request.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_g1_ada_notice_request.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_g2_aes_ada_docs_disconne.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_g2_aes_ada_docs_disconnec.pdf
+
+> │              ├── 📄 wh7.01.0100__exhibit_h_declaration.html
+
+> │              ├── 📄 wh7.01.0100__exhibit_h_declaration.pdf
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            ├── 📄 _readme.html
+
+> │            └── 📂 exhibits_i_ada_communications/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            └── 📂 exhibits_j_eviction_removal/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            └── 📂 exhibits_k_financial/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            └── 📂 exhibits_l_statements/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            └── 📂 exhibits_m_court-service/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            └── 📂 exhibits_p_property/
+
+> │              ├── 📄 wh7.01.0100__index-content.html
+
+> │              ├── 📄 wh7.01.0100__index.html
+
+> │            ├── 📄 wh7.01.0100___checklist.html
+
+> │            ├── 📄 wh7.01.0100__index-content.html
+
+> │            ├── 📄 wh7.01.0100__index.html
+
+> │          └── 📂 30_exhibits/
+
+> │            ├── 📄 _readme.html
+
+> │            └── 📂 exhibits_templates/
+
+> │              ├── 📄 _readme.html
+
+> │              ├── 📄 wh7.01.0050___exhibits_lists.html
+
+> │            ├── 📄 wh7.01.0050__exhibit_list.docx
+
+> │            ├── 📄 wh7.01.0050__exhibit_list.html
+
+> │          ├── 📄 wh7.01.0001_potential_exhibit_0001.html
+
+> │          ├── 📄 wh7.01.0001_potential_exhibit_0001.pdf
+
+> │          ├── 📄 wh7.01.0002_potential_exhibit_0002.html
+
+> │          ├── 📄 wh7.01.0002_potential_exhibit_0002.pdf
+
+> │      └── 📂 wi_internal_reference/
+
+> │        └── 📂 00_trackers/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 qicase-fcfcu_financial_tracker.xlsx
+
+> │          ├── 📄 session_summary_2025-12-16_fcfcu_case_dna_str.html
+
+> │        ├── 📄 03_case_log_entry_2025-12-15.html
+
+> │        └── 📂 05_timeline/
+
+> │          └── 📂 30_2025/
+
+> │            ├── 📄 2025-01-16_case_filed.html
+
+> │            ├── 📄 2025-03-05_service_attempt_1.html
+
+> │            ├── 📄 2025-04-15_service_attempt_2.html
+
+> │            ├── 📄 2025-05-13_motion_for_default_judgment.html
+
+> │            ├── 📄 2025-05-21_order_denying_default_judgment.html
+
+> │            ├── 📄 2025-05-23_amended_motion_default_judgment.html
+
+> │            ├── 📄 2025-05-28_default_judgment_entered.html
+
+> │            ├── 📄 2025-05-30_praecipe_sheriff_sale.html
+
+> │            ├── 📄 2025-07-09_sheriff_sale_notice_posted.html
+
+> │            ├── 📄 2025-08-15_sheriff_sale.html
+
+> │            ├── 📄 2025-10-29_petition_for_writ_of_assistance.html
+
+> │            ├── 📄 2025-11-06_writ_of_assistance_issued.html
+
+> │            ├── 📄 2025-12-09_writ_executed_removal.html
+
+> │            ├── 📄 2025-12-11_court_orders_and_hearing_scheduled.html
+
+> │            ├── 📄 2025-12-12_supplemental_emergency_motion.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 timeline_canvas.html
+
+> │        └── 📂 10_overviews/
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 integrate_disability_separate_appeals_get_stay.m4a
+
+> │          ├── 📄 procedural_failure_map_one_pager.html
+
+> │          ├── 📄 void_judgment_eviction_crisis.html
+
+> │          ├── 📄 void_judgment_eviction_crisis.pdf
+
+> │        ├── 📄 2024-12-09_eviction_case_masterfile.docx
+
+> │        ├── 📄 2025-12-16_case_log_entry.html
+
+> │        ├── 📄 2025-12-16_case_summary.html
+
+> │        └── 📂 20_strategy/
+
+> │          └── 📂 10_ada_title_ii/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 30_void_vs_voidable_tr_60b/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 strategic_plan.html
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 case-narrative-wrongful-foreclosure-and-displ.html
+
+> │        ├── 📄 case_conversation_log.html
+
+> │        ├── 📄 case_conversation_log.txt
+
+> │        ├── 📄 combinepdf.html
+
+> │        ├── 📄 combinepdf.pdf
+
+> │        ├── 📄 contacts.html
+
+> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.html
+
+> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.pdf
+
+> │        ├── 📄 debate.m4a
+
+> │        ├── 📄 expenses.csv
+
+> │        ├── 📄 foreclosure-and-housing-litigation-case-record.csv
+
+> │        ├── 📄 foreclosure_void_judgment_institutional_failur.m4a
+
+> │        ├── 📄 foreclosure_void_versus_damages_due_process.m4a
+
+> │        ├── 📄 forensic_audit_of_a_void_foreclosure.m4a
+
+> │        ├── 📄 inventory-of-civil-and-fair-housing-rights-vio.csv
+
+> │        ├── 📄 legal-memorandum.html
+
+> │        ├── 📄 odyssey_envelope_receipt.html
+
+> │        ├── 📄 odyssey_envelope_receipt.pdf
+
+> │        └── 📂 personal_narrative/
+
+> │          └── 📂 01_public_narrative/
+
+> │            ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 public_statement.html
+
+> │          └── 📂 02_exposure_and_harm/
+
+> │            ├── 📄 cold_risk_report.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 photos_conditions/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 weather_reports/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 03_internal_analysis/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 payout_strategy/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 long_term_payout_strategy.html
+
+> │            └── 📂 premonitions/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 premonitions_i_knew_before_i_knew.html
+
+> │            ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
+
+> │          └── 📂 04_donations_and_support/
+
+> │            └── 📂 donation_page_html/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 donations_context.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 screenshots_live_page/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 05_timeline/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 master_timeline.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 proposal-for-strategic-reports-in-the-matter-.html
+
+> │        ├── 📄 talking_points.html
+
+> │        └── 📂 wi8_00_docket_record/
+
+> │          └── 📂 legacy/
+
+> │            └── 📂 30_court_record/
+
+> │              └── 📂 10_docket/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.00.001__001_complaint.html
+
+> │                ├── 📄 wi8.00.001__001_complaint.pdf
+
+> │                ├── 📄 wi8.00.001__002_appearance.html
+
+> │                ├── 📄 wi8.00.001__002_appearance.pdf
+
+> │                ├── 📄 wi8.00.001__003_request_for_admissions.html
+
+> │                ├── 📄 wi8.00.001__003_request_for_admissions.pdf
+
+> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.html
+
+> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.pdf
+
+> │                ├── 📄 wi8.00.001__005_appearance_2.html
+
+> │                ├── 📄 wi8.00.001__005_appearance_2.pdf
+
+> │                ├── 📄 wi8.00.001__006_summons_1.html
+
+> │                ├── 📄 wi8.00.001__006_summons_1.pdf
+
+> │                ├── 📄 wi8.00.001__007_summons_2.html
+
+> │                ├── 📄 wi8.00.001__007_summons_2.pdf
+
+> │                ├── 📄 wi8.00.001__008_summons_3.html
+
+> │                ├── 📄 wi8.00.001__008_summons_3.pdf
+
+> │                ├── 📄 wi8.00.001__009_summons_4.html
+
+> │                ├── 📄 wi8.00.001__009_summons_4.pdf
+
+> │                ├── 📄 wi8.00.001__010_summons_5.html
+
+> │                ├── 📄 wi8.00.001__010_summons_5.pdf
+
+> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.html
+
+> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.pdf
+
+> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.html
+
+> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.pdf
+
+> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.html
+
+> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.pdf
+
+> │                ├── 📄 wi8.00.001__014_affidavit.html
+
+> │                ├── 📄 wi8.00.001__014_affidavit.pdf
+
+> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.html
+
+> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.pdf
+
+> │                ├── 📄 wi8.00.001__016_affidavit_additional.html
+
+> │                ├── 📄 wi8.00.001__016_affidavit_additional.pdf
+
+> │                ├── 📄 wi8.00.001__017_order_denying_default_judgmen.html
+
+> │                ├── 📄 wi8.00.001__017_order_denying_default_judgment.pdf
+
+> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.html
+
+> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.pdf
+
+> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgme.html
+
+> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgmen.pdf
+
+> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgme.html
+
+> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgmen.pdf
+
+> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.html
+
+> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.pdf
+
+> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.html
+
+> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.pdf
+
+> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.html
+
+> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.pdf
+
+> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.html
+
+> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.pdf
+
+> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.html
+
+> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.pdf
+
+> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.html
+
+> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.pdf
+
+> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.html
+
+> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.pdf
+
+> │                ├── 📄 wi8.00.001__028_report_court_defendant_reques.html
+
+> │                ├── 📄 wi8.00.001__028_report_court_defendant_request.pdf
+
+> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declar.html
+
+> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declara.pdf
+
+> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.html
+
+> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.pdf
+
+> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.html
+
+> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.pdf
+
+> │                ├── 📄 wi8.00.001__032_proposed_order_stay.html
+
+> │                ├── 📄 wi8.00.001__032_proposed_order_stay.pdf
+
+> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.html
+
+> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.pdf
+
+> │                ├── 📄 wi8.00.001___case_summary.html
+
+> │                ├── 📄 wi8.00.001__index-content.html
+
+> │                ├── 📄 wi8.00.001__index.html
+
+> │          ├── 📄 wi8.00.001_full_docket.html
+
+> │          ├── 📄 wi8.00.001_full_docket.pdf
+
+> │          ├── 📄 wi8.00.002_docket_notes.html
+
+> │        └── 📂 wi8_01_public_advocacy/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 al_narrative/
+
+> │            └── 📂 01_public_narrative/
+
+> │              ├── 📄 _readme.html
+
+> │              ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
+
+> │              ├── 📄 wi8.01.010__index-content.html
+
+> │              ├── 📄 wi8.01.010__index.html
+
+> │              ├── 📄 wi8.01.010__public_statement.html
+
+> │          └── 📂 rrative/
+
+> │            └── 📂 04_donations_and_support/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 donation_page_html/
+
+> │                ├── 📄 wi8.01.050__index-content.html
+
+> │                ├── 📄 wi8.01.050__index.html
+
+> │              └── 📂 screenshots_live_page/
+
+> │                ├── 📄 wi8.01.050__index-content.html
+
+> │                ├── 📄 wi8.01.050__index.html
+
+> │              ├── 📄 wi8.01.050__donations_context.html
+
+> │              ├── 📄 wi8.01.050__index-content.html
+
+> │              ├── 📄 wi8.01.050__index.html
+
+> │          ├── 📄 wi8.01.001_press_strategy.html
+
+> │          ├── 📄 wi8.01.002_social_media_plan.html
+
+> │          ├── 📄 wi8.01.003_timing_and_risk.html
+
+> │        └── 📂 wi8_02_damages_and_settlement/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 l_narrative/
+
+> │            └── 📂 02_exposure_and_harm/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 photos_conditions/
+
+> │                ├── 📄 wi8.02.050__index-content.html
+
+> │                ├── 📄 wi8.02.050__index.html
+
+> │              └── 📂 weather_reports/
+
+> │                ├── 📄 wi8.02.050__index-content.html
+
+> │                ├── 📄 wi8.02.050__index.html
+
+> │              ├── 📄 wi8.02.050__cold_risk_report.html
+
+> │              ├── 📄 wi8.02.050__index-content.html
+
+> │              ├── 📄 wi8.02.050__index.html
+
+> │          └── 📂 on/
+
+> │            └── 📂 __legacy/
+
+> │              └── 📂 00_admin/
+
+> │                └── 📂 00_trackers/
+
+> │                  ├── 📄 _readme.html
+
+> │                  ├── 📄 wi8.02.010__03_case_log_entry_2025-12-15.html
+
+> │                  ├── 📄 wi8.02.010__2024-12-09_eviction_case_masterfi.docx
+
+> │                  ├── 📄 wi8.02.010__2025-12-16_case_log_entry.html
+
+> │                  ├── 📄 wi8.02.010__2025-12-16_case_summary.html
+
+> │                  ├── 📄 wi8.02.010__case_conversation_log.html
+
+> │                  ├── 📄 wi8.02.010__case_conversation_log.txt
+
+> │                  ├── 📄 wi8.02.010__case_log.html
+
+> │                  ├── 📄 wi8.02.010__expenses.csv
+
+> │                  ├── 📄 wi8.02.010__financial_tracker.html
+
+> │                  ├── 📄 wi8.02.010__index-content.html
+
+> │                  ├── 📄 wi8.02.010__index.html
+
+> │                  ├── 📄 wi8.02.010__qicase-fcfcu_financial_tracker.xlsx
+
+> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfc_1.html
+
+> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfcu_.html
+
+> │          ├── 📄 wi8.02.001_economic_harm.html
+
+> │          ├── 📄 wi8.02.002_non_economic_harm.html
+
+> │          ├── 📄 wi8.02.003_settlement_scenarios.html
+
+> │        └── 📂 wi8_99_internal_only/
+
+> │          └── 📂 l_narrative/
+
+> │            └── 📂 03_internal_analysis/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 payout_strategy/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.99.010__index-content.html
+
+> │                ├── 📄 wi8.99.010__index.html
+
+> │                ├── 📄 wi8.99.010__long_term_payout_strategy.html
+
+> │              └── 📂 premonitions/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.99.010__index-content.html
+
+> │                ├── 📄 wi8.99.010__index.html
+
+> │                ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
+
+> │              ├── 📄 wi8.99.010__index-content.html
+
+> │              ├── 📄 wi8.99.010__index.html
+
+> │              ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
+
+> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_ri.html
+
+> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_rig.pdf
+
+> │      └── 📂 wz_promotion_pipeline/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 wz9.00.001_ready_for_binder.html
+
+> │        ├── 📄 wz9.00.002_rejected_for_court.html
+
+> │        ├── 📄 wz9.00.003_promotion_log.html
+
+> │        ├── 📄 wz9.00.010_promotion_checklist.html
+
+> │        └── 📂 wz9_00_050_filings_intake/
+
+> │    └── 📂 03_drafts_templates/
+
+> │      ├── 📄 _readme.html
+
+> │      └── 📂 dc_claims_and_motions/
+
+> │        └── 📂 50_proposed_orders/
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 proposed_order_emergency_stay.html
+
+> │          ├── 📄 proposed_order_motion_to_vacate.html
+
+> │          └── 📂 proposed_templates/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 proposed_orders.html
+
+> │        ├── 📄 emergency_filing_packet.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 motion_emergency_stay_of_writ.docx
+
+> │        ├── 📄 motion_emergency_stay_of_writ.html
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.html
+
+> │        ├── 📄 motion_to_vacate_void_judgement.docx
+
+> │        ├── 📄 motion_to_vacate_void_judgment.html
+
+> │        └── 📂 motions_templates/
+
+> │          ├── 📄 _motions.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 proposed_order_vacate.docx
+
+> │      └── 📂 df_facts_declarations/
+
+> │        ├── 📄 affidavit_not_served.docx
+
+> │        ├── 📄 affidavit_not_served.html
+
+> │        └── 📂 affidavits_templates/
+
+> │          ├── 📄 _instructions_for_witnesses.html
+
+> │          ├── 📄 ada_disability_affidavit.html
+
+> │          ├── 📄 character_affidavit.html
+
+> │          ├── 📄 community_service_affidavit.html
+
+> │          ├── 📄 credibility_affidavit.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 observations_affidavit.html
+
+> │        └── 📂 declarations_templates/
+
+> │          ├── 📄 _declarations.html
+
+> │          ├── 📄 gender_identity_clarification.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 updated_affidavit_language.html
+
+> │        ├── 📄 verified_affidavit_of_defendant.html
+
+> │      └── 📂 dh_hard_exhibits/
+
+> │        ├── 📄 exhibit_list.docx
+
+> │        ├── 📄 exhibit_list.html
+
+> │        └── 📂 exhibits_templates/
+
+> │          ├── 📄 _exhibits_lists.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 template_exhibit_label.html
+
+> │      └── 📂 di_internal_reference/
+
+> │        ├── 📄 ada_packet.html
+
+> │        ├── 📄 attorney_brief.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 outreach_templates/
+
+> │          ├── 📄 _advocate_outreach_message.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 receipt_usps_tracking.html
+
+> │        ├── 📄 script_call_lawyers.html
+
+> │        ├── 📄 template_court_doc.html
+
+> │        ├── 📄 template_handup_packet_note.html
+
+> │        ├── 📄 template_section_cover.html
+
+> │        ├── 📄 template_section_index.html
+
+> │        ├── 📄 template_war_note.html
+
+> │    └── 📂 99_archive/
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 migration_notes.html
+
+> │      └── 📂 logs/
+
+> │        ├── 📄 migration_log.csv
+
+> │      └── 📂 tools/
+
+> │        ├── 📄 arch.010__add_frontmatter.py
+
+> │        ├── 📄 arch.010__build_indexes.py
+
+> │        ├── 📄 arch.010__case_brain_full_pipeline.py
+
+> │        ├── 📄 arch.010__case_brain_pipeline.py
+
+> │        ├── 📄 arch.010__check_orphans_and_create_indexes.py
+
+> │        ├── 📄 arch.010__compress_pdfs.py
+
+> │        ├── 📄 arch.010__compress_pdfs_inplace.py
+
+> │        ├── 📄 arch.010__convert_all_txt_to_md.py
+
+> │        ├── 📄 arch.010__convert_to_markdown.py
+
+> │        ├── 📄 arch.010__fix_duplicate_frontmatter.py
+
+> │        ├── 📄 arch.010__index-content.html
+
+> │        ├── 📄 arch.010__index.html
+
+> │        ├── 📄 arch.010__link_timeline_events.py
+
+> │        ├── 📄 arch.010__move_opposing_filings.py
+
+> │        ├── 📄 arch.010__optimize_pdfs_pikepdf.py
+
+> │        ├── 📄 arch.010__rename_evidence_files.ps1
+
+> │        ├── 📄 arch.010__update_brain.ps1
+
+> │        ├── 📄 arch.010__viewer-content.html
+
+> │        ├── 📄 arch.010__viewer.html
+
+> │    ├── 📄 J9.00.00_SECTION_COVER.md
+
+> │    ├── 📄 J9.01.001_COURT_SET_MASTER.md
+
+> │    ├── 📄 J9.01.002_PERSONAL_MASTER.md
+
+> │    ├── 📄 J9.01.003_OPPOSITION_SET_MASTER.md
+
+> │    ├── 📄 J9.01.004_INTERNAL_RED_MASTER.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 promotion_checklist.html
+
+> │    └── 📂 site-lib/
+
+> │      └── 📂 fonts/
+
+> │        ├── 📄 05b618077343fbbd92b7.ttf
+
+> │        ├── 📄 085cb93e613ba3d40d2b.woff2
+
+> │        ├── 📄 293fd13dbca5a3e450ef.woff2
+
+> │        ├── 📄 2d5198822ab091ce4305.woff2
+
+> │        ├── 📄 454577c22304619db035.ttf
+
+> │        ├── 📄 4bb6ac751d1c5478ff3a.woff2
+
+> │        ├── 📄 52ac8f3034507f1d9e53.ttf
+
+> │        ├── 📄 535a6cf662596b3bd6a6.woff2
+
+> │        ├── 📄 70cc7ff27245e82ad414.ttf
+
+> │        ├── 📄 72505e6a122c6acd5471.woff2
+
+> │        ├── 📄 94f2f163d4b698242fef.otf
+
+> │        ├── 📄 b5f0f109bc88052d4000.woff2
+
+> │        ├── 📄 c8ba52b05a9ef10f4758.woff2
+
+> │        ├── 📄 cb10ffd7684cd9836a05.woff2
+
+> │        ├── 📄 cbe0ae49c52c920fd563.woff2
+
+> │      └── 📂 html/
+
+> │        ├── 📄 file-tree-content.html
+
+> │      └── 📂 media/
+
+> │        ├── 📄 2308ab1944a6bfa5c5b8.svg
+
+> │        ├── 📄 6155340132a851f6089e.svg
+
+> │        ├── 📄 favicon.png
+
+> │      ├── 📄 metadata.json
+
+> │      ├── 📄 rss.xml
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 graph-render-worker.js
+
+> │        ├── 📄 graph-wasm.js
+
+> │        ├── 📄 graph-wasm.wasm
+
+> │        ├── 📄 webpage.js
+
+> │      ├── 📄 search-index.json
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 global-variable-styles.css
+
+> │        ├── 📄 main-styles.css
+
+> │        ├── 📄 obsidian.css
+
+> └── 📂 99_ARCHIVE/
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 MIGRATION_NOTES.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 legacy/
+
+> │    └── 📂 FCFCU_Case_Quartz/
+
+> │      ├── 📄 CODE_OF_CONDUCT.md
+
+> │      ├── 📄 Dockerfile
+
+> │      ├── 📄 LICENSE.txt
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 content/
+
+> │      └── 📂 docs/
+
+> │        └── 📂 advanced/
+
+> │          ├── 📄 architecture.md
+
+> │          ├── 📄 creating components.md
+
+> │          ├── 📄 index.md
+
+> │          ├── 📄 making plugins.md
+
+> │          ├── 📄 paths.md
+
+> │        ├── 📄 authoring content.md
+
+> │        ├── 📄 build.md
+
+> │        ├── 📄 configuration.md
+
+> │        └── 📂 features/
+
+> │          ├── 📄 Citations.md
+
+> │          ├── 📄 Docker Support.md
+
+> │          ├── 📄 Latex.md
+
+> │          ├── 📄 Mermaid diagrams.md
+
+> │          ├── 📄 Obsidian compatibility.md
+
+> │          ├── 📄 OxHugo compatibility.md
+
+> │          ├── 📄 RSS Feed.md
+
+> │          ├── 📄 Roam Research compatibility.md
+
+> │          ├── 📄 SPA Routing.md
+
+> │          ├── 📄 backlinks.md
+
+> │          ├── 📄 breadcrumbs.md
+
+> │          ├── 📄 callouts.md
+
+> │          ├── 📄 comments.md
+
+> │          ├── 📄 darkmode.md
+
+> │          ├── 📄 explorer.md
+
+> │          ├── 📄 folder and tag listings.md
+
+> │          ├── 📄 full-text search.md
+
+> │          ├── 📄 graph view.md
+
+> │          ├── 📄 i18n.md
+
+> │          ├── 📄 index.md
+
+> │          ├── 📄 popover previews.md
+
+> │          ├── 📄 private pages.md
+
+> │          ├── 📄 reader mode.md
+
+> │          ├── 📄 recent notes.md
+
+> │          ├── 📄 social images.md
+
+> │          ├── 📄 syntax highlighting.md
+
+> │          ├── 📄 table of contents.md
+
+> │          ├── 📄 upcoming features.md
+
+> │          ├── 📄 wikilinks.md
+
+> │        ├── 📄 hosting.md
+
+> │        └── 📂 images/
+
+> │          ├── 📄 custom-social-image-preview-dark.png
+
+> │          ├── 📄 custom-social-image-preview-light.png
+
+> │          ├── 📄 dns records.png
+
+> │          ├── 📄 giscus-discussion.png
+
+> │          ├── 📄 giscus-example.png
+
+> │          ├── 📄 giscus-repo.png
+
+> │          ├── 📄 giscus-results.png
+
+> │          ├── 📄 github-init-repo-options.png
+
+> │          ├── 📄 github-quick-setup.png
+
+> │          ├── 📄 quartz transform pipeline.png
+
+> │          ├── 📄 quartz-layout-desktop.png
+
+> │          ├── 📄 quartz-layout-mobile.png
+
+> │          ├── 📄 quartz-layout-tablet.png
+
+> │          ├── 📄 social-image-preview-dark.png
+
+> │          ├── 📄 social-image-preview-light.png
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 layout-components.md
+
+> │        ├── 📄 layout.md
+
+> │        ├── 📄 migrating from Quartz 3.md
+
+> │        ├── 📄 philosophy.md
+
+> │        └── 📂 plugins/
+
+> │          ├── 📄 AliasRedirects.md
+
+> │          ├── 📄 Assets.md
+
+> │          ├── 📄 CNAME.md
+
+> │          ├── 📄 Citations.md
+
+> │          ├── 📄 ComponentResources.md
+
+> │          ├── 📄 ContentIndex.md
+
+> │          ├── 📄 ContentPage.md
+
+> │          ├── 📄 CrawlLinks.md
+
+> │          ├── 📄 CreatedModifiedDate.md
+
+> │          ├── 📄 CustomOgImages.md
+
+> │          ├── 📄 Description.md
+
+> │          ├── 📄 ExplicitPublish.md
+
+> │          ├── 📄 Favicon.md
+
+> │          ├── 📄 FolderPage.md
+
+> │          ├── 📄 Frontmatter.md
+
+> │          ├── 📄 GitHubFlavoredMarkdown.md
+
+> │          ├── 📄 HardLineBreaks.md
+
+> │          ├── 📄 Latex.md
+
+> │          ├── 📄 NotFoundPage.md
+
+> │          ├── 📄 ObsidianFlavoredMarkdown.md
+
+> │          ├── 📄 OxHugoFlavoredMarkdown.md
+
+> │          ├── 📄 RemoveDrafts.md
+
+> │          ├── 📄 RoamFlavoredMarkdown.md
+
+> │          ├── 📄 Static.md
+
+> │          ├── 📄 SyntaxHighlighting.md
+
+> │          ├── 📄 TableOfContents.md
+
+> │          ├── 📄 TagPage.md
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 setting up your GitHub repository.md
+
+> │        ├── 📄 showcase.md
+
+> │        └── 📂 tags/
+
+> │          ├── 📄 component.md
+
+> │          ├── 📄 plugin.md
+
+> │        ├── 📄 upgrading.md
+
+> │      ├── 📄 globals.d.ts
+
+> │      ├── 📄 index.d.ts
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 quartz.config.ts
+
+> │      ├── 📄 quartz.layout.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 MIGRATION_LOG.csv
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 ARCH.010__add_frontmatter.py
+
+> │    ├── 📄 ARCH.010__build_indexes.py
+
+> │    ├── 📄 ARCH.010__case_brain_full_pipeline.py
+
+> │    ├── 📄 ARCH.010__case_brain_pipeline.py
+
+> │    ├── 📄 ARCH.010__check_orphans_and_create_indexes.py
+
+> │    ├── 📄 ARCH.010__compress_pdfs.py
+
+> │    ├── 📄 ARCH.010__compress_pdfs_inplace.py
+
+> │    ├── 📄 ARCH.010__convert_all_txt_to_md.py
+
+> │    ├── 📄 ARCH.010__convert_to_markdown.py
+
+> │    ├── 📄 ARCH.010__fix_duplicate_frontmatter.py
+
+> │    ├── 📄 ARCH.010__index.html
+
+> │    ├── 📄 ARCH.010__link_timeline_events.py
+
+> │    ├── 📄 ARCH.010__move_opposing_filings.py
+
+> │    ├── 📄 ARCH.010__optimize_pdfs_pikepdf.py
+
+> │    ├── 📄 ARCH.010__rename_evidence_files.ps1
+
+> │    ├── 📄 ARCH.010__update_brain.ps1
+
+> │    ├── 📄 ARCH.010__viewer.html
+
+> ├── 📄 AUDIT_REPORT.md
+
+> ├── 📄 FRONTMATTER_FIX_LOG.csv
+
+> ├── 📄 FRONTMATTER_FIX_LOG.md
+
+> ├── 📄 Master_Index.md
+
+> ├── 📄 PROMOTION_CHECKLIST.md
+
+> ├── 📄 README.md
+
+> ├── 📄 _README.md
+
+> ├── 📄 _redirects
+
+> ├── 📄 case_tree_review.txt
+
+> ├── 📄 fix_frontmatter_and_indexes.py
+
+> ├── 📄 index.html
+
+> ├── 📄 index.md
+
+> └── 📂 print/
+
+> └── 📂 tools/
+
+> │  ├── 📄 add_frontmatter.py
+
+> │  ├── 📄 build_indexes.py
+
+> │  ├── 📄 case_brain_full_pipeline.py
+
+> │  ├── 📄 case_brain_pipeline.py
+
+> │  ├── 📄 check_orphans_and_create_indexes.py
+
+> │  ├── 📄 compress_pdfs.py
+
+> │  ├── 📄 compress_pdfs_inplace.py
+
+> │  ├── 📄 convert_all_txt_to_md.py
+
+> │  ├── 📄 convert_to_markdown.py
+
+> │  ├── 📄 fix_duplicate_frontmatter.py
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 link_timeline_events.py
+
+> │  ├── 📄 move_opposing_filings.py
+
+> │  ├── 📄 optimize_pdfs_pikepdf.py
+
+> │  ├── 📄 rename_evidence_files.ps1
+
+> │  ├── 📄 truncate_long_filenames.py
+
+> │  ├── 📄 update_brain.ps1
+
+> │  ├── 📄 viewer.html
+
+> └── 📄 wrangler.toml
+
 > ```
 
 ### Assistant
@@ -3255,30 +5834,54 @@ canonical_ref: ""
 > But this is enough to walk in prepared and steady.
 
 ### User
-> give me the cheat sheet lawyer quality in .md to add and i will primp it.  and her eis what gemini said. your case file for the hearing.
-> 
-> Summary of Actions Taken
-> Created 01_COURT_BINDER_PRINT_READY containing:
-> 01_Table_of_Contents.md
-> : Lists the Motion and the 5 Exhibits in order. Note: Created as Markdown text because I could not generate a PDF from scratch without external libraries. Please print this file as a PDF.
-> 02_Motion_To_Vacate_Void_Judgment.pdf
-> : Sourced from the motion file located in your binder.
-> 03_Exhibits.pdf
-> : A single combined PDF containing Exhibits A–E in the exact order requested (Summons, Sheriff Return Mar 5, Sheriff Return Apr 15, Affidavit, ADA Notice).
-> Created 02_OPPOSING_COUNSEL_COPY:
-> An exact duplicate of the Court Binder, ready to hand to opposing counsel.
-> Created 03_CASE_BIBLE_DO_NOT_PRINT:
-> Moved ALL other folders (01_COURT_BINDER, 02_WAR_ROOM, 10_filings, etc.) and files into this archive.
-> This ensures you cannot accidentally navigate to or print the wrong legacy drafts.
-> Created PRINT_CHECKLIST.md:
-> Located in the root directory.
-> Contains the final verification steps and warnings.
-> Next Steps for User
-> Open c:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU.
-> Open PRINT_CHECKLIST.md and follow it exactly.
-> Print the contents of 01_COURT_BINDER_PRINT_READY.
-> Note: For the Table of Contents, open the MD file and "Print to PDF" or print directly.
-> Ignore 03_CASE_BIBLE_DO_NOT_PRINT for the purposes of this hearing.
+> give me the cheat sheet lawyer quality in .md to add and i will primp it.  and her eis what gemini said. your case file for the hearing.
+
+> 
+
+> Summary of Actions Taken
+
+> Created 01_COURT_BINDER_PRINT_READY containing:
+
+> 01_Table_of_Contents.md
+
+> : Lists the Motion and the 5 Exhibits in order. Note: Created as Markdown text because I could not generate a PDF from scratch without external libraries. Please print this file as a PDF.
+
+> 02_Motion_To_Vacate_Void_Judgment.pdf
+
+> : Sourced from the motion file located in your binder.
+
+> 03_Exhibits.pdf
+
+> : A single combined PDF containing Exhibits A–E in the exact order requested (Summons, Sheriff Return Mar 5, Sheriff Return Apr 15, Affidavit, ADA Notice).
+
+> Created 02_OPPOSING_COUNSEL_COPY:
+
+> An exact duplicate of the Court Binder, ready to hand to opposing counsel.
+
+> Created 03_CASE_BIBLE_DO_NOT_PRINT:
+
+> Moved ALL other folders (01_COURT_BINDER, 02_WAR_ROOM, 10_filings, etc.) and files into this archive.
+
+> This ensures you cannot accidentally navigate to or print the wrong legacy drafts.
+
+> Created PRINT_CHECKLIST.md:
+
+> Located in the root directory.
+
+> Contains the final verification steps and warnings.
+
+> Next Steps for User
+
+> Open c:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU.
+
+> Open PRINT_CHECKLIST.md and follow it exactly.
+
+> Print the contents of 01_COURT_BINDER_PRINT_READY.
+
+> Note: For the Table of Contents, open the MD file and "Print to PDF" or print directly.
+
+> Ignore 03_CASE_BIBLE_DO_NOT_PRINT for the purposes of this hearing.
+
 > You are now ready to print.
 
 ### Assistant
@@ -7778,81 +10381,156 @@ canonical_ref: ""
 > If you want, I can also give you a **second prompt** that tells Gemini how to migrate `00_ADMIN/30_hearing_planner` *after* trackers are stable.
 
 ### User
-> ok lets lock down this timeline now here is the toc. ```markdown
-> . 📂 05_timeline
-> └── 📂 10_2023/
-> │  ├── 📄 index.html
-> └── 📂 20_2024/
-> │  ├── 📄 index.html
-> └── 📂 30_2025/
-> │  ├── 📄 2025-01-16_Case_Filed.md
-> │  ├── 📄 2025-03-05_Service_Attempt_1.md
-> │  ├── 📄 2025-04-15_Service_Attempt_2.md
-> │  ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │  ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │  ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │  ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │  ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │  ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │  ├── 📄 2025-08-15_Sheriff_Sale.md
-> │  ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │  ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │  ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │  ├── 📄 2025-12-10_Motions_Filed.md
-> │  ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │  ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │  └── 📂 30_2025/
-> │    ├── 📄 WA0.00.030__2025-01-16_Case_Filed.md
-> │    ├── 📄 WA0.00.030__2025-03-05_Service_Attempt_1.md
-> │    ├── 📄 WA0.00.030__2025-04-15_Service_Attempt_2.md
-> │    ├── 📄 WA0.00.030__2025-05-13_Motion_for_Default_Judgm.md
-> │    ├── 📄 WA0.00.030__2025-05-21_Order_Denying_Default_Ju.md
-> │    ├── 📄 WA0.00.030__2025-05-23_Amended_Motion_Default_J.md
-> │    ├── 📄 WA0.00.030__2025-05-28_Default_Judgment_Entered.md
-> │    ├── 📄 WA0.00.030__2025-05-30_Praecipe_Sheriff_Sale.md
-> │    ├── 📄 WA0.00.030__2025-07-09_Sheriff_Sale_Notice_Post.md
-> │    ├── 📄 WA0.00.030__2025-08-15_Sheriff_Sale.md
-> │    ├── 📄 WA0.00.030__2025-10-29_Petition_for_Writ_of_Ass.md
-> │    ├── 📄 WA0.00.030__2025-11-06_Writ_of_Assistance_Issue.md
-> │    ├── 📄 WA0.00.030__2025-12-09_Writ_Executed_Removal.md
-> │    ├── 📄 WA0.00.030__2025-12-10_Motions_Filed.md
-> │    ├── 📄 WA0.00.030__2025-12-11_Court_Orders_and_Hearing.md
-> │    ├── 📄 WA0.00.030__2025-12-12_Supplemental_Emergency_M.md
-> │    ├── 📄 WA0.00.030__index.html
-> │    ├── 📄 WA0.00.030__index.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> │  ├── 📄 index.md
-> └── 📂 40_2026/
-> │  ├── 📄 index.html
-> ├── 📄 Timeline_Canvas.canvas
-> ├── 📄 WA0.00.030__Timeline_Canvas.canvas
-> └── 📂 wa0.00.001_timeline/
-> │  └── 📂 30_2025/
-> │    ├── 📄 index.html
-> │    ├── 📄 wa0.00.030__2025-01-16_case_filed.html
-> │    ├── 📄 wa0.00.030__2025-03-05_service_attempt_1.html
-> │    ├── 📄 wa0.00.030__2025-04-15_service_attempt_2.html
-> │    ├── 📄 wa0.00.030__2025-05-13_motion_for_default_jud.html
-> │    ├── 📄 wa0.00.030__2025-05-21_order_denying_default_.html
-> │    ├── 📄 wa0.00.030__2025-05-23_amended_motion_default.html
-> │    ├── 📄 wa0.00.030__2025-05-28_default_judgment_enter.html
-> │    ├── 📄 wa0.00.030__2025-05-30_praecipe_sheriff_sale.html
-> │    ├── 📄 wa0.00.030__2025-07-09_sheriff_sale_notice_po.html
-> │    ├── 📄 wa0.00.030__2025-08-15_sheriff_sale.html
-> │    ├── 📄 wa0.00.030__2025-10-29_petition_for_writ_of_a.html
-> │    ├── 📄 wa0.00.030__2025-11-06_writ_of_assistance_iss.html
-> │    ├── 📄 wa0.00.030__2025-12-09_writ_executed_removal.html
-> │    ├── 📄 wa0.00.030__2025-12-10_motions_filed.html
-> │    ├── 📄 wa0.00.030__2025-12-11_court_orders_and_heari.html
-> │    ├── 📄 wa0.00.030__2025-12-12_supplemental_emergency.html
-> │    ├── 📄 wa0.00.030__index-content.html
-> │    ├── 📄 wa0.00.030__index.html
-> │  ├── 📄 index.html
-> │  ├── 📄 wa0.00.030__index.html
-> │  ├── 📄 wa0.00.030__timeline_canvas.html
-> │  └── 📄 wa0.00.060__master_timeline.html
+> ok lets lock down this timeline now here is the toc. ```markdown
+
+> . 📂 05_timeline
+
+> └── 📂 10_2023/
+
+> │  ├── 📄 index.html
+
+> └── 📂 20_2024/
+
+> │  ├── 📄 index.html
+
+> └── 📂 30_2025/
+
+> │  ├── 📄 2025-01-16_Case_Filed.md
+
+> │  ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │  ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │  ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │  ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │  ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │  ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │  ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │  ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │  ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │  ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │  ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │  ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │  ├── 📄 2025-12-10_Motions_Filed.md
+
+> │  ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │  ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │  └── 📂 30_2025/
+
+> │    ├── 📄 WA0.00.030__2025-01-16_Case_Filed.md
+
+> │    ├── 📄 WA0.00.030__2025-03-05_Service_Attempt_1.md
+
+> │    ├── 📄 WA0.00.030__2025-04-15_Service_Attempt_2.md
+
+> │    ├── 📄 WA0.00.030__2025-05-13_Motion_for_Default_Judgm.md
+
+> │    ├── 📄 WA0.00.030__2025-05-21_Order_Denying_Default_Ju.md
+
+> │    ├── 📄 WA0.00.030__2025-05-23_Amended_Motion_Default_J.md
+
+> │    ├── 📄 WA0.00.030__2025-05-28_Default_Judgment_Entered.md
+
+> │    ├── 📄 WA0.00.030__2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │    ├── 📄 WA0.00.030__2025-07-09_Sheriff_Sale_Notice_Post.md
+
+> │    ├── 📄 WA0.00.030__2025-08-15_Sheriff_Sale.md
+
+> │    ├── 📄 WA0.00.030__2025-10-29_Petition_for_Writ_of_Ass.md
+
+> │    ├── 📄 WA0.00.030__2025-11-06_Writ_of_Assistance_Issue.md
+
+> │    ├── 📄 WA0.00.030__2025-12-09_Writ_Executed_Removal.md
+
+> │    ├── 📄 WA0.00.030__2025-12-10_Motions_Filed.md
+
+> │    ├── 📄 WA0.00.030__2025-12-11_Court_Orders_and_Hearing.md
+
+> │    ├── 📄 WA0.00.030__2025-12-12_Supplemental_Emergency_M.md
+
+> │    ├── 📄 WA0.00.030__index.html
+
+> │    ├── 📄 WA0.00.030__index.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 index.md
+
+> └── 📂 40_2026/
+
+> │  ├── 📄 index.html
+
+> ├── 📄 Timeline_Canvas.canvas
+
+> ├── 📄 WA0.00.030__Timeline_Canvas.canvas
+
+> └── 📂 wa0.00.001_timeline/
+
+> │  └── 📂 30_2025/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 wa0.00.030__2025-01-16_case_filed.html
+
+> │    ├── 📄 wa0.00.030__2025-03-05_service_attempt_1.html
+
+> │    ├── 📄 wa0.00.030__2025-04-15_service_attempt_2.html
+
+> │    ├── 📄 wa0.00.030__2025-05-13_motion_for_default_jud.html
+
+> │    ├── 📄 wa0.00.030__2025-05-21_order_denying_default_.html
+
+> │    ├── 📄 wa0.00.030__2025-05-23_amended_motion_default.html
+
+> │    ├── 📄 wa0.00.030__2025-05-28_default_judgment_enter.html
+
+> │    ├── 📄 wa0.00.030__2025-05-30_praecipe_sheriff_sale.html
+
+> │    ├── 📄 wa0.00.030__2025-07-09_sheriff_sale_notice_po.html
+
+> │    ├── 📄 wa0.00.030__2025-08-15_sheriff_sale.html
+
+> │    ├── 📄 wa0.00.030__2025-10-29_petition_for_writ_of_a.html
+
+> │    ├── 📄 wa0.00.030__2025-11-06_writ_of_assistance_iss.html
+
+> │    ├── 📄 wa0.00.030__2025-12-09_writ_executed_removal.html
+
+> │    ├── 📄 wa0.00.030__2025-12-10_motions_filed.html
+
+> │    ├── 📄 wa0.00.030__2025-12-11_court_orders_and_heari.html
+
+> │    ├── 📄 wa0.00.030__2025-12-12_supplemental_emergency.html
+
+> │    ├── 📄 wa0.00.030__index-content.html
+
+> │    ├── 📄 wa0.00.030__index.html
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 wa0.00.030__index.html
+
+> │  ├── 📄 wa0.00.030__timeline_canvas.html
+
+> │  └── 📄 wa0.00.060__master_timeline.html
+
 > ```
 
 ### Assistant
@@ -8119,89 +10797,172 @@ canonical_ref: ""
 > - event note front matter (so scripts can generate them consistently)
 
 ### User
-> ok timeline is good, now lets fix heres the updated admin now, just ignore trackers for now gemini is sitll working. ```markdown
-> . 📂 00_ADMIN
-> └── 📂 00_trackers/
-> │  ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │  ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │  ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │  ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │  ├── 📄 2025-12-21_Case_Summary.md
-> │  └── 📂 90_ADMIN_ARCHIVE/
-> │    └── 📂 legacy_trackers/
-> │  ├── 📄 damages_estimates.csv
-> │  ├── 📄 financial_actuals.csv
-> └── 📂 05_timeline/
-> │  └── 📂 10_2023/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 20_2024/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 30_2025/
-> │    └── 📂 events/
-> │      ├── 📄 2025-01-16_Case_Filed.md
-> │      ├── 📄 2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │      ├── 📄 2025-12-10_Motions_Filed.md
-> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │      ├── 📄 2025-12-21_Case_Summary.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_2026/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  ├── 📄 Timeline_canvas.canvas
-> │  ├── 📄 YYYY-MM-DD_Template.md.md
-> │  ├── 📄 index.md
-> └── 📂 10_overviews/
-> │  └── 📂 deep_dives/
-> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │  └── 📂 infographics/
-> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │  └── 📂 maps/
-> │    ├── 📄 Procedural_failure_map_one_pager.md
-> └── 📂 20_strategy/
-> │  └── 📂 10_ada_title_ii/
-> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │  └── 📂 30_void_vs_voidable_tr_60b/
-> │  └── 📂 90_settlement/
-> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
-> │  ├── 📄 Master_Strategy_Canvas.canvas
-> │  ├── 📄 Strategic_Plan.canvas
-> └── 📂 30_hearing_planner/
-> │  └── 📂 2025-01-09_hearing/
-> │    ├── 📄 HEARING CHEAT SHEET.md
-> │  ├── 📄 _README.md
-> └── 📂 90_ADMIN_ARCHIVE/
-> │  └── 📂 00_trackers_legacy/
-> │    └── 📂 00_DASHBOARD/
-> │    └── 📂 10_LOGS/
-> │      ├── 📄 2025-12-16_case_log_entry.md
-> │      ├── 📄 2025-12-16_case_summary.md
-> │      ├── 📄 Case_Log.md
-> │      ├── 📄 case_conversation_log.txt
-> │    └── 📂 20_FINANCIAL/
-> │      ├── 📄 Financial_Tracker.md
-> │      ├── 📄 QiCase-FCFCU_Financial_Tracker 1.xlsx
-> │      ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
-> │      ├── 📄 expenses.csv
-> │      └── 📂 sources/
-> └── 📄 _TOC_.md
+> ok timeline is good, now lets fix heres the updated admin now, just ignore trackers for now gemini is sitll working. ```markdown
+
+> . 📂 00_ADMIN
+
+> └── 📂 00_trackers/
+
+> │  ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │  ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │  ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │  ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │  ├── 📄 2025-12-21_Case_Summary.md
+
+> │  └── 📂 90_ADMIN_ARCHIVE/
+
+> │    └── 📂 legacy_trackers/
+
+> │  ├── 📄 damages_estimates.csv
+
+> │  ├── 📄 financial_actuals.csv
+
+> └── 📂 05_timeline/
+
+> │  └── 📂 10_2023/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_2024/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_2025/
+
+> │    └── 📂 events/
+
+> │      ├── 📄 2025-01-16_Case_Filed.md
+
+> │      ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │      ├── 📄 2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │      ├── 📄 2025-12-21_Case_Summary.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_2026/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 Timeline_canvas.canvas
+
+> │  ├── 📄 YYYY-MM-DD_Template.md.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 10_overviews/
+
+> │  └── 📂 deep_dives/
+
+> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │  └── 📂 infographics/
+
+> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │  └── 📂 maps/
+
+> │    ├── 📄 Procedural_failure_map_one_pager.md
+
+> └── 📂 20_strategy/
+
+> │  └── 📂 10_ada_title_ii/
+
+> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │  └── 📂 30_void_vs_voidable_tr_60b/
+
+> │  └── 📂 90_settlement/
+
+> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
+
+> │  ├── 📄 Master_Strategy_Canvas.canvas
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> └── 📂 30_hearing_planner/
+
+> │  └── 📂 2025-01-09_hearing/
+
+> │    ├── 📄 HEARING CHEAT SHEET.md
+
+> │  ├── 📄 _README.md
+
+> └── 📂 90_ADMIN_ARCHIVE/
+
+> │  └── 📂 00_trackers_legacy/
+
+> │    └── 📂 00_DASHBOARD/
+
+> │    └── 📂 10_LOGS/
+
+> │      ├── 📄 2025-12-16_case_log_entry.md
+
+> │      ├── 📄 2025-12-16_case_summary.md
+
+> │      ├── 📄 Case_Log.md
+
+> │      ├── 📄 case_conversation_log.txt
+
+> │    └── 📂 20_FINANCIAL/
+
+> │      ├── 📄 Financial_Tracker.md
+
+> │      ├── 📄 QiCase-FCFCU_Financial_Tracker 1.xlsx
+
+> │      ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │      ├── 📄 expenses.csv
+
+> │      └── 📂 sources/
+
+> └── 📄 _TOC_.md
+
 > ```
 
 ### Assistant
@@ -8537,70 +11298,134 @@ canonical_ref: ""
 > You made the right call here. This simplifies everything downstream.
 
 ### User
-> ok how is the new admin looking are we ready to proceed to the phases cat. ```markdown
-> . 📂 00_ADMIN
-> └── 📂 00_trackers/
-> │  ├── 📄 CASE_FCFCU_Violation_Index_Starter_2026-01-10.csv
-> │  ├── 📄 Financial_Tracker.md
-> │  ├── 📄 damages_estimates.csv
-> │  ├── 📄 financial_actuals.csv
-> └── 📂 05_timeline/
-> │  └── 📂 10_2023/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 20_2024/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 30_2025/
-> │    └── 📂 events/
-> │      ├── 📄 2025-01-16_Case_Filed.md
-> │      ├── 📄 2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │      ├── 📄 2025-12-10_Motions_Filed.md
-> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │      ├── 📄 2025-12-21_Case_Summary.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_2026/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  ├── 📄 Timeline_canvas.canvas
-> │  ├── 📄 YYYY-MM-DD_Template.md.md
-> │  ├── 📄 index.md
-> └── 📂 10_overviews/
-> │  └── 📂 critiques/
-> │  └── 📂 debates/
-> │  └── 📂 deep_dives/
-> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │  └── 📂 explainers/
-> │  └── 📂 infographics/
-> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │  └── 📂 maps/
-> │    ├── 📄 Procedural_failure_map_one_pager.md
-> │  └── 📂 reports/
-> └── 📂 90_logs/
-> │  ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │  ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │  ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │  ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │  ├── 📄 2025-12-16_case_log_entry.md
-> │  ├── 📄 2025-12-16_case_summary.md
-> │  ├── 📄 2025-12-21_Case_Summary.md
-> │  └── 📄 Case_Log.md
+> ok how is the new admin looking are we ready to proceed to the phases cat. ```markdown
+
+> . 📂 00_ADMIN
+
+> └── 📂 00_trackers/
+
+> │  ├── 📄 CASE_FCFCU_Violation_Index_Starter_2026-01-10.csv
+
+> │  ├── 📄 Financial_Tracker.md
+
+> │  ├── 📄 damages_estimates.csv
+
+> │  ├── 📄 financial_actuals.csv
+
+> └── 📂 05_timeline/
+
+> │  └── 📂 10_2023/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_2024/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_2025/
+
+> │    └── 📂 events/
+
+> │      ├── 📄 2025-01-16_Case_Filed.md
+
+> │      ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │      ├── 📄 2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │      ├── 📄 2025-12-21_Case_Summary.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_2026/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 Timeline_canvas.canvas
+
+> │  ├── 📄 YYYY-MM-DD_Template.md.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 10_overviews/
+
+> │  └── 📂 critiques/
+
+> │  └── 📂 debates/
+
+> │  └── 📂 deep_dives/
+
+> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │  └── 📂 explainers/
+
+> │  └── 📂 infographics/
+
+> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │  └── 📂 maps/
+
+> │    ├── 📄 Procedural_failure_map_one_pager.md
+
+> │  └── 📂 reports/
+
+> └── 📂 90_logs/
+
+> │  ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │  ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │  ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │  ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │  ├── 📄 2025-12-16_case_log_entry.md
+
+> │  ├── 📄 2025-12-16_case_summary.md
+
+> │  ├── 📄 2025-12-21_Case_Summary.md
+
+> │  └── 📄 Case_Log.md
+
 > ```
 
 ### Assistant
@@ -9612,37 +12437,68 @@ canonical_ref: ""
 > If you want, I can also give you a second prompt that tells Gemini to generate a **facts-only export** (strip commentary sections) into `90_OUTPUTS_EXPORTS/timeline_facts_only/` after the integrity checker passes.
 
 ### User
-> ok before we derail everything, here is a properties and headers report from gemini of files currently in teh sytem and here are the deatils fromt eh violation intelligence, Here is the report on the existing properties and headers found across your content subfolders.
-> 
-> 1. 00_ADMIN (Trackers & Logs)
-> Properties:
-> title (82%)
-> category (82%)
-> date (82%)
-> description (56%)
-> Headers:
-> H1: Commonly Date/Event specific (e.g., # 2025-12-09 - Writ Executed) or # Case Summary.
-> H2: ## Timeline Navigation (Most common), ## Notes, ## Context, ## Legal Significance.
-> 2. 05_VIOLATION_INTELLIGENCE (Structured Intel)
-> Properties: (Highly consistent schema, present in ~83% of files)
-> id, title, phase_lane, status, leverage, next_action, party, deadline, theory_cluster, tags.
-> Headers:
-> H1: # Summary (Dominant), # Elements Checklist, # Disposition, # Legal Basis.
-> H2: ## Primary, ## Secondary / supporting, ## Best forums, ## Recommended deployment, ## Direct harms.
-> 3. 20_EVIDENCE_VAULT_IMMUTABLE
-> Properties:
-> title, category, date, description (similar to Admin).
-> Headers:
-> H1: # Evidence Log, # Raw Exhibit Map.
-> H2: ## High-leverage documents, ## Event evidence, ## Preservation notes.
-> 4. 30_WORKING & 40_PRINT_READY_BINDERS (Binders)
-> Properties:
-> title (97%), type (88%), case_id (65-88%), binder (65-88%), updated (60%).
-> Headers:
-> H1: Document Titles (e.g., # Exhibit List, # TAB B...).
-> H2: ## Notes (Dominant), ## Up (Navigation links), ## Subfolders, ## Section Index.
-> 5. 90_OUTPUTS_EXPORTS
-> Properties: title, type, updated.
+> ok before we derail everything, here is a properties and headers report from gemini of files currently in teh sytem and here are the deatils fromt eh violation intelligence, Here is the report on the existing properties and headers found across your content subfolders.
+
+> 
+
+> 1. 00_ADMIN (Trackers & Logs)
+
+> Properties:
+
+> title (82%)
+
+> category (82%)
+
+> date (82%)
+
+> description (56%)
+
+> Headers:
+
+> H1: Commonly Date/Event specific (e.g., # 2025-12-09 - Writ Executed) or # Case Summary.
+
+> H2: ## Timeline Navigation (Most common), ## Notes, ## Context, ## Legal Significance.
+
+> 2. 05_VIOLATION_INTELLIGENCE (Structured Intel)
+
+> Properties: (Highly consistent schema, present in ~83% of files)
+
+> id, title, phase_lane, status, leverage, next_action, party, deadline, theory_cluster, tags.
+
+> Headers:
+
+> H1: # Summary (Dominant), # Elements Checklist, # Disposition, # Legal Basis.
+
+> H2: ## Primary, ## Secondary / supporting, ## Best forums, ## Recommended deployment, ## Direct harms.
+
+> 3. 20_EVIDENCE_VAULT_IMMUTABLE
+
+> Properties:
+
+> title, category, date, description (similar to Admin).
+
+> Headers:
+
+> H1: # Evidence Log, # Raw Exhibit Map.
+
+> H2: ## High-leverage documents, ## Event evidence, ## Preservation notes.
+
+> 4. 30_WORKING & 40_PRINT_READY_BINDERS (Binders)
+
+> Properties:
+
+> title (97%), type (88%), case_id (65-88%), binder (65-88%), updated (60%).
+
+> Headers:
+
+> H1: Document Titles (e.g., # Exhibit List, # TAB B...).
+
+> H2: ## Notes (Dominant), ## Up (Navigation links), ## Subfolders, ## Section Index.
+
+> 5. 90_OUTPUTS_EXPORTS
+
+> Properties: title, type, updated.
+
 > Headers: H1 corresponds to Master Sets (e.g., # J9.01.001 COURT SET MASTER), H2 is predominantly ## Contents. --- 
 > 
 > best to review all this and have a final front matter and format for all md files or a few standard templates for different purposes of md files.
@@ -14561,448 +17417,890 @@ canonical_ref: ""
 > You’re clean. You’re safe. Don’t over-optimize.
 
 ### User
-> ok here is hour toc now, what should i work on next to get inline. 
-> toc
-> 
-> title
-> content
-> content/00_ADMIN/00_README_SYSTEM.md
-> content/00_ADMIN/00_trackers/20_financial/Financial_Tracker.md
-> content/00_ADMIN/10_overviews/10_maps/Procedural_failure_map_one_pager.md
-> content/00_ADMIN/90_logs/2025-12-09_Writ_Executed_Forced_Removal.md
-> content/00_ADMIN/90_logs/2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> content/00_ADMIN/90_logs/2025-12-15_Strategic_Planning_Session.md
-> content/00_ADMIN/90_logs/2025-12-16_case_log_entry.md
-> content/00_ADMIN/90_logs/2025-12-16_case_summary.md
-> content/00_ADMIN/90_logs/2025-12-16_Post_Removal_Access_Denial.md
-> content/00_ADMIN/90_logs/2025-12-21_Case_Summary.md
-> content/00_ADMIN/90_logs/Case_Log.md
-> content/00_ADMIN/90_logs/2025-12-16_fcfcu_case_dna_strat.md
-> content/00_ADMIN/cleanup_log_2026_01_16.md
-> content/00_ADMIN/Contacts.md
-> content/00_ADMIN/working_Master_Index.md
-> content/00_ADMIN/templates/_templates/10_motions/index.md
-> content/00_ADMIN/templates/_templates/10_motions/motions_templates/_Motions.md
-> content/00_ADMIN/templates/_templates/10_motions/motion_emergency_stay_of_writ.md
-> content/00_ADMIN/templates/_templates/10_motions/motion_emergency_supplemental_motion_ongoing_ha.md
-> content/00_ADMIN/templates/_templates/10_motions/motion_to_vacate_void_judgment.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/ADA_Disability_Affidavit.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Character_Affidavit.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Community_Service_Affidavit.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Credibility_Affidavit.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/index.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Observations_Affidavit.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/_Instructions_for_witnesses.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavit_not_served.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/Gender_Identity_Clarification.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/index.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/_Declarations.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/index.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/updated_affidavit_language.md
-> content/00_ADMIN/templates/_templates/20_declarations_affidavits/verified_affidavit_of_defendant.md
-> content/00_ADMIN/templates/_templates/30_exhibits/exhibits_templates/_Exhibits_Lists.md
-> content/00_ADMIN/templates/_templates/30_exhibits/exhibit_list.md
-> content/00_ADMIN/templates/_templates/40_others/ada_packet.md
-> content/00_ADMIN/templates/_templates/40_others/attorney_brief.md
-> content/00_ADMIN/templates/_templates/40_others/index.md
-> content/00_ADMIN/templates/_templates/40_others/outreach_templates/_Advocate_Outreach_Message.md
-> content/00_ADMIN/templates/_templates/40_others/receipt_usps_tracking.md
-> content/00_ADMIN/templates/_templates/40_others/script_call_lawyers.md
-> content/00_ADMIN/templates/_templates/50_proposed_orders/index.md
-> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_order_emergency_stay.md
-> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_order_motion_to_vacate.md
-> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_templates/Proposed_Orders.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/30_fcfcu/2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/50_aes/2025-12-16_AES_Emergency_Notice.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/Evidence_Log.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/chain_of_custody.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/evidence_log.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/master_evidence_index.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/Raw_Exhibit_Map.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/10_EXHIBIT_SETS/WH7.01.0100___checklist.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/10_EXHIBIT_SETS/_README.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/exhibits_templates/WH7.01.0050___Exhibits_Lists.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/exhibits_templates/_README.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/WH7.01.0050__exhibit_list.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/_README.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/exhibit_list.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/TEMPLATE_EXHIBIT_LABEL.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/_README.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/exhibits_templates/_Exhibits_Lists.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/exhibits_templates/_README.md
-> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/_checklist.md
-> content/10_TIMELINE/10_2023/index.md
-> content/10_TIMELINE/20_2024/index.md
-> content/10_TIMELINE/30_2025/events/2025-03-05_Service_Attempt_1.md
-> content/10_TIMELINE/30_2025/events/2025-01-16_Case_Filed.md
-> content/10_TIMELINE/30_2025/events/2025-04-15_Service_Attempt_2.md
-> content/10_TIMELINE/30_2025/events/2025-05-13_Motion_for_Default_Judgment.md
-> content/10_TIMELINE/30_2025/events/2025-05-21_Order_Denying_Default_Judgment.md
-> content/10_TIMELINE/30_2025/events/2025-05-23_Amended_Motion_Default_Judgment.md
-> content/10_TIMELINE/30_2025/events/2025-05-28_Default_Judgment_Entered.md
-> content/10_TIMELINE/30_2025/events/2025-05-30_Praecipe_Sheriff_Sale.md
-> content/10_TIMELINE/30_2025/events/2025-07-09_Sheriff_Sale_Notice_Posted.md
-> content/10_TIMELINE/30_2025/events/2025-08-15_Sheriff_Sale.md
-> content/10_TIMELINE/30_2025/events/2025-10-29_Petition_for_Writ_of_Assistance.md
-> content/10_TIMELINE/30_2025/events/2025-11-06_Writ_of_Assistance_Issued.md
-> content/10_TIMELINE/30_2025/events/2025-12-09_Writ_Executed_Forced_Removal.md
-> content/10_TIMELINE/30_2025/events/2025-12-10_Motions_Filed.md
-> content/10_TIMELINE/30_2025/events/2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> content/10_TIMELINE/30_2025/events/2025-12-12_Supplemental_Emergency_Motion.md
-> content/10_TIMELINE/30_2025/events/2025-12-16_Post_Removal_Access_Denial.md
-> content/10_TIMELINE/30_2025/events/2025-12-21_Case_Summary.md
-> content/10_TIMELINE/30_2025/index.md
-> content/10_TIMELINE/40_2026/index.md
-> content/10_TIMELINE/YYYY-MM-DD_Template.md.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/ADA_Disability_Affidavit.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/Character_Affidavit.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/Community_Service_Affidavit.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/Credibility_Affidavit.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/index.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/Observations_Affidavit.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/updated_affidavit_language.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/verified_affidavit_of_defendant.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/_Instructions_for_witnesses.md
-> content/10_TIMELINE/draft_facts/affidavits_templates/_README.md
-> content/10_TIMELINE/draft_facts/declarations_templates/AFFIDAVIT OF CODY RICE‑VELASQUEZ.md
-> content/10_TIMELINE/draft_facts/declarations_templates/Gender_Identity_Clarification.md
-> content/10_TIMELINE/draft_facts/declarations_templates/index.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/WF5.00.001_FACT_TIMELINE.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/WF5.00.002_FACT_GAPS.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/_README.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.001_DRAFT_AFFIDAVIT.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.002_DRAFT_DECLARATION.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__ADA_Disability_Affidavit.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__affidavit_not_served.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Character_Affidavit.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Community_Service_Affidavit.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Credibility_Affidavit.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Gender_Identity_Clarification.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__index 1.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__index.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Observations_Affidavit.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__updated_affidavit_language.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__verified_affidavit_of_defendant.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010___Declarations.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010___Instructions_for_witnesses.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/_README.md
-> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/_README.md
-> content/10_TIMELINE/draft_facts/declarations_templates/_Declarations.md
-> content/10_TIMELINE/draft_facts/declarations_templates/_README.md
-> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/WD3.00.001_SERVICE_MATRIX.md
-> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
-> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/_README.md
-> content/10_TIMELINE/draft_facts/delivery_service/01_service_evidence/WD3.01.002_SHERIFF_METADATA.md
-> content/10_TIMELINE/draft_facts/delivery_service/01_service_evidence/_README.md
-> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/legacy/30_court_record/10_docket/WI8.00.001___Case_Summary.md
-> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/legacy/30_court_record/10_docket/_README.md
-> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/WI8.00.002_DOCKET_NOTES.md
-> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/_README.md
-> content/30_VIOLATION_INTELLIGENCE/02_TAG_MAP.md
-> content/30_VIOLATION_INTELLIGENCE/03_THEORY_CLUSTERS.md
-> content/30_VIOLATION_INTELLIGENCE/04_RISK_REGISTER.md
-> content/30_VIOLATION_INTELLIGENCE/V-000_TEMPLATE.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-011_experian-reinvestigation-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-012_equifax-reinvestigation-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-013_transunion-reinvestigation-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-004_past-due-amount-schedule-after-judgment.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-005_failure-to-correct-inaccurate-furnishings.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-006_dual-tradeline-double-counting.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-007_inconsistent-reporting-vs-court-position.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-008_credit-defamation-false-publication.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-009_fdCPA-misrepresentation-of-debt-status.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-010_failure-to-mark-account-foreclosure-closed.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-025_cost-shift-fcfcu-refused-winterize.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-030_service-completed-no-notice-before-writ.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-033_removal-6-7-days-after-deed-recorded.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-036_surplus-funds-declared-resolved.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-037_interest-fees-arbitrarily-inflated.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-038_fcfcu-testimony-winterize-then-leave.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-070_global-demand-letter.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-071_litigation-hold-preservation-letter.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-072_equitable-relief-tradeline-deletion.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-073_damages-credit-score-suppression.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-074_damages-out-of-pocket-costs.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-075_public-accountability-hold.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-080_conversion-negligence-post-removal-damage.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-081_evidence-spoliation-unplugged-cameras.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-076_fha-reasonable-accommodation-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-077_ada-title-iii-entertainment-access-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-078_ada-effective-communication-failure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-083_discriminatory-maintenance-redlining.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-084_predatory-land-contract-reverse-redlining.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-031_sheriff-return-inaccuracies.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-032_no-ada-compliant-notice.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-034_attorney-appeared-without-formal-appearance.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-035_court-relied-on-service-sufficiency.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-050_cfpb-complaint-track.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-051_indiana-ag-complaint-track.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-052_icrc-complaint-track.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-053_doj-civil-rights-complaint-track.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-060_bbb-complaint-reputational-pressure.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-079_void-judgment-procedural-error.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-082_fraud-on-the-court-material-misrepresentation.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-021_post-0815-citizens-energy-charges-billed.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-020_post-0815-aes-electric-charges-billed.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-024_municipal-code-enforcement-after-possession-transfer.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-022_post-0815-hoa-assessments-billed.md
-> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-026_credit-harm-compounded-utility-municipal.md
-> content/30_VIOLATION_INTELLIGENCE/01_MASTER_INDEX.md
-> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.001_CASE_LAW_RESEARCH.md
-> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
-> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.003_JURISDICTION_THEORY.md
-> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/WG6.00.001_ADA_TITLE_II_ANALYSIS.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/WG6.00.002_REASONABLE_ACCOMMODATIONS.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.002_ICRC_COMPLAINT.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.003_STATUS_TRACKER.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.001_DOJ_COMPLAINT.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.001_PROCEDURAL_FAILURE_MAP.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.002_BUT_FOR_ANALYSIS.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.010__Procedural_failure_map_one_pager.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/WE4.01.001_STAY_PATHS.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/WE4.01.002_REVERSAL_PATHS.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/_README.md
-> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/_README.md
-> content/30_VIOLATION_INTELLIGENCE/theories/WB1_01_ALTERNATE_THEORIES/WB1.01.001_BACKUP_ARGUMENTS.md
-> content/30_VIOLATION_INTELLIGENCE/theories/WB1_01_ALTERNATE_THEORIES/WB1.01.002_IF_JUDGE_PUSHBACK.md
-> content/30_VIOLATION_INTELLIGENCE/analysis/INTERNAL VALUATION MEMO.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Payout_Strategy/WI8.99.010__Long_Term_Payout_Strategy.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Payout_Strategy/_README.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Premonitions/WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Premonitions/_README.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
-> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/ada_packet.md
-> content/40_WORKING/internal_only/internal_notes_ref/attorney_brief.md
-> content/40_WORKING/internal_only/internal_notes_ref/outreach_templates/_Advocate_Outreach_Message.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/2025-12-15_they_threw_us_into_the_cold.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/Public_Statement.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/02_Exposure_and_Harm/Cold_Risk_Report.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/02_Exposure_and_Harm/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Payout_Strategy/Long_Term_Payout_Strategy.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Payout_Strategy/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Premonitions/Premonitions_I_Knew_Before_I_Knew.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Premonitions/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/04_Donations_and_Support/Donations_Context.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/04_Donations_and_Support/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/05_Timeline/Master_Timeline.md
-> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/05_Timeline/_README.md
-> content/40_WORKING/internal_only/internal_notes_ref/receipt_usps_tracking.md
-> content/40_WORKING/internal_only/internal_notes_ref/script_call_lawyers.md
-> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_COURT_DOC.md
-> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_HANDUP_PACKET_NOTE.md
-> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_SECTION_COVER.md
-> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_SECTION_INDEX.md
-> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_WAR_NOTE.md
-> content/40_WORKING/narratives/personal_narrative/01_Public_Narrative/2025-12-15_they_threw_us_into_the_cold.md
-> content/40_WORKING/narratives/personal_narrative/01_Public_Narrative/Public_Statement.md
-> content/40_WORKING/narratives/personal_narrative/02_Exposure_and_Harm/Cold_Risk_Report.md
-> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Payout_Strategy/Long_Term_Payout_Strategy.md
-> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Premonitions/Premonitions_I_Knew_Before_I_Knew.md
-> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> content/40_WORKING/narratives/personal_narrative/04_Donations_and_Support/Donations_Context.md
-> content/40_WORKING/narratives/personal_narrative/05_Timeline/Master_Timeline.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/A0.01.001_ONE_PAGE_CASE_SUMMARY.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/A0.01.002_HEARING_SCOPE_AND_RELIEF.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/A0.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/A0.00.010_MASTER_CASE_INDEX.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.001_CORE_ISSUE_STATEMENT.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_00_COVER/B1.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/01A_TAB_01_MOTION.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_00_COVER/C2.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_01_MOTION_VACATE/C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_01_MOTION_VACATE/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_02_EMERGENCY_STAY_QUASH/C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_02_EMERGENCY_STAY_QUASH/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_03_SUPPLEMENTAL/C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_03_SUPPLEMENTAL/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/C2.04.001_PROPOSED_ORDER_VACATE.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_00_COVER/D3.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_03_SERVICE_ANALYSIS/D3.03.001_SERVICE_DEFECT_ANALYSIS.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_03_SERVICE_ANALYSIS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_00_COVER/E4.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_05_CHAIN_SUMMARY/E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_05_CHAIN_SUMMARY/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_00_COVER/F5.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_01_AFFIDAVIT_NOT_SERVED/F5.01.001_AFFIDAVIT_NOT_SERVED.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_01_AFFIDAVIT_NOT_SERVED/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_02_DECLARATION_ONGOING_HARM/F5.02.001_DECLARATION_ONGOING_HARM.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_02_DECLARATION_ONGOING_HARM/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_03_CREDIBILITY_DECLARATION/F5.03.001_CREDIBILITY_DECLARATION.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_03_CREDIBILITY_DECLARATION/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_00_COVER/G6.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_03_ADA_IMPACT_SUMMARY/G6.03.001_ADA_IMPACT_SUMMARY.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_03_ADA_IMPACT_SUMMARY/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/02A_TAB_02_EXHIBITS.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/02B_Exhibits_Index.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_00_COVER/H7.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_01_EXHIBITS_A-H/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_02_EXHIBITS_I_ADA/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_03_EXHIBITS_J_REMOVAL/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_04_EXHIBITS_K_FINANCIAL/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_05_EXHIBITS_L_STATEMENTS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_06_EXHIBITS_M_SERVICE/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_07_EXHIBITS_P_PROPERTY/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_00_COVER/I8.00.000_SECTION_COVER.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_00_COVER/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_01_FULL_DOCKET/I8_01_000_CASE_SUMMARY.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_01_FULL_DOCKET/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_02_RESEARCH_NOTES/I8.02.001_RESEARCH_AND_NOTES.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_02_RESEARCH_NOTES/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_99_DO_NOT_PRINT/I8.99.999_INTERNAL_DO_NOT_PRINT.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_99_DO_NOT_PRINT/_README.md
-> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/_README.md
-> content/60_OUTPUTS_EXPORTS/Exhibit X — Inventory of Jurisdictional, Execut.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/01_Docket/docket_index.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/01_Docket/_Case_Summary.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/03_Service_Process/affidavits_service.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/03_Service_Process/service_defects_analysis.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/05_Sale_and_Possesion/possession_admissions.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/06_Financial_Accounting/interest_fee_irregularities.md
-> content/50_PHASES/01_Foreclosure_Core_Court_Record/06_Financial_Accounting/surplus_definciency_analysis.md
-> content/50_PHASES/02_credit_reporting_FCRA/05_Reputational_Pressure/better_business_bureau/complaint.md
-> content/50_PHASES/06_Public_Accountability/00_README_LOCK.md
-> content/50_PHASES/90_settlement/Settlement_Strategy_and_Contingency_Plan.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/EMERGENCY_FILING_PACKET.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motions_templates/_Motions.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motions_templates/_README.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_emergency_stay_of_writ.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_emergency_supplemental_motion_ongoing_ha.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_to_vacate_void_judgment.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.001_DRAFT_MOTION_VACATE.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.002_DRAFT_EMERGENCY_STAY.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.003_DRAFT_SUPPLEMENTAL.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_emergency_stay_of_writ.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_emergency_supplemental_motio.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_to_vacate_void_judgment.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010___Motions.md
-> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/_README.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_order_emergency_stay.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_order_motion_to_vacate.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_templates/Proposed_Orders.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_templates/_README.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.001_DRAFT_ORDER_VACATE.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.002_DRAFT_ORDER_STAY.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__index.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__Proposed_Orders.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__proposed_order_emergency_stay.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__proposed_order_motion_to_vacate.md
-> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/_README.md
-> content/50_PHASES/draft_plans/80_hearing_planner/2025-01-09_hearing/HEARING CHEAT SHEET.md
-> content/50_PHASES/draft_plans/80_hearing_planner/_COURT_MODE_BUTTONS.md.md
-> content/50_PHASES/draft_plans/80_hearing_planner/_COURT_MODE_PLAYBOOK.md.md
-> content/50_PHASES/draft_plans/80_hearing_planner/_README.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/WI8.01.010__Public_Statement.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/_README.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/rrative/04_Donations_and_Support/WI8.01.050__Donations_Context.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/rrative/04_Donations_and_Support/_README.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.001_PRESS_STRATEGY.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.002_SOCIAL_MEDIA_PLAN.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.003_TIMING_AND_RISK.md
-> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/_README.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/l_narrative/02_Exposure_and_Harm/WI8.02.050__Cold_Risk_Report.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/l_narrative/02_Exposure_and_Harm/_README.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__03_Case_Log_Entry_2025-12-15.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__2025-12-16_case_log_entry.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__2025-12-16_case_summary.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Case_Log.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Financial_Tracker.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__index.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/_README.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.001_ECONOMIC_HARM.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.002_NON_ECONOMIC_HARM.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.003_SETTLEMENT_SCENARIOS.md
-> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/_README.md
-> content/50_PHASES/checklists/PROMOTION_CHECKLIST.md
-> content/50_PHASES/communication/Talking_Points.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.001_READY_FOR_BINDER.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.002_REJECTED_FOR_COURT.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.003_PROMOTION_LOG.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.010_PROMOTION_CHECKLIST.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9_00_050_FILINGS/WZ9.00.050__Motions.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9_00_050_FILINGS/_README.md
-> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/_README.md
-> content/README.md
-> content/_INGEST/03_Case_Log_Entry_2025-12-15.md
-> content/_INGEST/2025-12-16_case_log_entry.md
-> content/_INGEST/2025-12-16_case_summary.md
-> content/_INGEST/30_2025/2025-01-16_Case_Filed.md
-> content/_INGEST/30_2025/2025-03-05_Service_Attempt_1.md
-> content/_INGEST/30_2025/2025-04-15_Service_Attempt_2.md
-> content/_INGEST/30_2025/2025-05-13_Motion_for_Default_Judgment.md
-> content/_INGEST/30_2025/2025-05-21_Order_Denying_Default_Judgment.md
-> content/_INGEST/30_2025/2025-05-23_Amended_Motion_Default_Judgment.md
-> content/_INGEST/30_2025/2025-05-28_Default_Judgment_Entered.md
-> content/_INGEST/30_2025/2025-05-30_Praecipe_Sheriff_Sale.md
-> content/_INGEST/30_2025/2025-07-09_Sheriff_Sale_Notice_Posted.md
-> content/_INGEST/30_2025/2025-08-15_Sheriff_Sale.md
-> content/_INGEST/30_2025/2025-10-29_Petition_for_Writ_of_Assistance.md
-> content/_INGEST/30_2025/2025-11-06_Writ_of_Assistance_Issued.md
-> content/_INGEST/30_2025/2025-12-09_Writ_Executed_Removal.md
-> content/_INGEST/30_2025/2025-12-10_Motions_Filed.md
-> content/_INGEST/30_2025/2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> content/_INGEST/30_2025/2025-12-12_Supplemental_Emergency_Motion.md
-> content/_INGEST/30_2025/index.md
-> content/_INGEST/30_2025/_README.md
-> content/_INGEST/Case Narrative - Wrongful Foreclosure and Displ.md
-> content/_INGEST/Case_Log.md
-> content/_INGEST/Contacts.md
-> content/_INGEST/Financial_Tracker.md
-> content/_INGEST/Formal Inventory of Violations and Schedule of .md
-> content/_INGEST/LEGAL MEMORANDUM.md
-> content/_INGEST/Procedural_failure_map_one_pager.md
-> content/_INGEST/Proposal for Strategic Reports in the Matter of.md
-> content/_INGEST/Talking_Points.md
-> content/_INGEST/working_intake/30_fcfcu/2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> content/_INGEST/working_intake/30_fcfcu/WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
-> content/_INGEST/working_intake/30_fcfcu/_README.md
-> content/_INGEST/working_intake/50_aes/2025-12-16_AES_Emergency_Notice.md
-> content/_INGEST/working_intake/50_aes/WH7.00.020__2025-12-16_AES_Emergency_Notice.md
-> content/_INGEST/working_intake/50_aes/_README.md
-> content/_INGEST/working_intake/99__archive/WH7.00.020__README_supporting.md
-> content/_INGEST/working_intake/99__archive/_README.md
-> content/_INGEST/working_intake/Raw_Exhibit_Map.md
-> content/_INGEST/working_intake/WH7.00.001_RAW_PHONE_DUMP.md
-> content/_INGEST/working_intake/WH7.00.002_RAW_VIDEO_AUDIO.md
-> content/_INGEST/working_intake/WH7.00.003_RAW_SCREENSHOTS.md
-> content/_INGEST/working_intake/WH7.00.020__Raw_Exhibit_Map.md
+> ok here is hour toc now, what should i work on next to get inline. 
+
+> toc
+
+> 
+
+> title
+
+> content
+
+> content/00_ADMIN/00_README_SYSTEM.md
+
+> content/00_ADMIN/00_trackers/20_financial/Financial_Tracker.md
+
+> content/00_ADMIN/10_overviews/10_maps/Procedural_failure_map_one_pager.md
+
+> content/00_ADMIN/90_logs/2025-12-09_Writ_Executed_Forced_Removal.md
+
+> content/00_ADMIN/90_logs/2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> content/00_ADMIN/90_logs/2025-12-15_Strategic_Planning_Session.md
+
+> content/00_ADMIN/90_logs/2025-12-16_case_log_entry.md
+
+> content/00_ADMIN/90_logs/2025-12-16_case_summary.md
+
+> content/00_ADMIN/90_logs/2025-12-16_Post_Removal_Access_Denial.md
+
+> content/00_ADMIN/90_logs/2025-12-21_Case_Summary.md
+
+> content/00_ADMIN/90_logs/Case_Log.md
+
+> content/00_ADMIN/90_logs/2025-12-16_fcfcu_case_dna_strat.md
+
+> content/00_ADMIN/cleanup_log_2026_01_16.md
+
+> content/00_ADMIN/Contacts.md
+
+> content/00_ADMIN/working_Master_Index.md
+
+> content/00_ADMIN/templates/_templates/10_motions/index.md
+
+> content/00_ADMIN/templates/_templates/10_motions/motions_templates/_Motions.md
+
+> content/00_ADMIN/templates/_templates/10_motions/motion_emergency_stay_of_writ.md
+
+> content/00_ADMIN/templates/_templates/10_motions/motion_emergency_supplemental_motion_ongoing_ha.md
+
+> content/00_ADMIN/templates/_templates/10_motions/motion_to_vacate_void_judgment.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/ADA_Disability_Affidavit.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Character_Affidavit.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Community_Service_Affidavit.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Credibility_Affidavit.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/index.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/Observations_Affidavit.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavits_templates/_Instructions_for_witnesses.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/affidavit_not_served.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/Gender_Identity_Clarification.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/index.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/declarations_templates/_Declarations.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/index.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/updated_affidavit_language.md
+
+> content/00_ADMIN/templates/_templates/20_declarations_affidavits/verified_affidavit_of_defendant.md
+
+> content/00_ADMIN/templates/_templates/30_exhibits/exhibits_templates/_Exhibits_Lists.md
+
+> content/00_ADMIN/templates/_templates/30_exhibits/exhibit_list.md
+
+> content/00_ADMIN/templates/_templates/40_others/ada_packet.md
+
+> content/00_ADMIN/templates/_templates/40_others/attorney_brief.md
+
+> content/00_ADMIN/templates/_templates/40_others/index.md
+
+> content/00_ADMIN/templates/_templates/40_others/outreach_templates/_Advocate_Outreach_Message.md
+
+> content/00_ADMIN/templates/_templates/40_others/receipt_usps_tracking.md
+
+> content/00_ADMIN/templates/_templates/40_others/script_call_lawyers.md
+
+> content/00_ADMIN/templates/_templates/50_proposed_orders/index.md
+
+> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_order_emergency_stay.md
+
+> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_order_motion_to_vacate.md
+
+> content/00_ADMIN/templates/_templates/50_proposed_orders/proposed_templates/Proposed_Orders.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/30_fcfcu/2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/50_aes/2025-12-16_AES_Emergency_Notice.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/Evidence_Log.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/chain_of_custody.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/evidence_log.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/master_evidence_index.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/00_evidence_admin/Raw_Exhibit_Map.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/10_EXHIBIT_SETS/WH7.01.0100___checklist.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/10_EXHIBIT_SETS/_README.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/exhibits_templates/WH7.01.0050___Exhibits_Lists.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/exhibits_templates/_README.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/WH7.01.0050__exhibit_list.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/30_exhibits/_README.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/exhibit_list.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/TEMPLATE_EXHIBIT_LABEL.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/DH_HARD_EXHIBITS/_README.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/exhibits_templates/_Exhibits_Lists.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/exhibits_templates/_README.md
+
+> content/20_EVIDENCE_VAULT_IMMUTABLE/potential_exhibits/_exhibit_sets/_checklist.md
+
+> content/10_TIMELINE/10_2023/index.md
+
+> content/10_TIMELINE/20_2024/index.md
+
+> content/10_TIMELINE/30_2025/events/2025-03-05_Service_Attempt_1.md
+
+> content/10_TIMELINE/30_2025/events/2025-01-16_Case_Filed.md
+
+> content/10_TIMELINE/30_2025/events/2025-04-15_Service_Attempt_2.md
+
+> content/10_TIMELINE/30_2025/events/2025-05-13_Motion_for_Default_Judgment.md
+
+> content/10_TIMELINE/30_2025/events/2025-05-21_Order_Denying_Default_Judgment.md
+
+> content/10_TIMELINE/30_2025/events/2025-05-23_Amended_Motion_Default_Judgment.md
+
+> content/10_TIMELINE/30_2025/events/2025-05-28_Default_Judgment_Entered.md
+
+> content/10_TIMELINE/30_2025/events/2025-05-30_Praecipe_Sheriff_Sale.md
+
+> content/10_TIMELINE/30_2025/events/2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> content/10_TIMELINE/30_2025/events/2025-08-15_Sheriff_Sale.md
+
+> content/10_TIMELINE/30_2025/events/2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> content/10_TIMELINE/30_2025/events/2025-11-06_Writ_of_Assistance_Issued.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-09_Writ_Executed_Forced_Removal.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-10_Motions_Filed.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-12_Supplemental_Emergency_Motion.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-16_Post_Removal_Access_Denial.md
+
+> content/10_TIMELINE/30_2025/events/2025-12-21_Case_Summary.md
+
+> content/10_TIMELINE/30_2025/index.md
+
+> content/10_TIMELINE/40_2026/index.md
+
+> content/10_TIMELINE/YYYY-MM-DD_Template.md.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/ADA_Disability_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/Character_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/Community_Service_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/Credibility_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/index.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/Observations_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/updated_affidavit_language.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/verified_affidavit_of_defendant.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/_Instructions_for_witnesses.md
+
+> content/10_TIMELINE/draft_facts/affidavits_templates/_README.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/AFFIDAVIT OF CODY RICE‑VELASQUEZ.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/Gender_Identity_Clarification.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/index.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/WF5.00.001_FACT_TIMELINE.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/WF5.00.002_FACT_GAPS.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_00_FACT_DEVELOPMENT/_README.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.001_DRAFT_AFFIDAVIT.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.002_DRAFT_DECLARATION.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__ADA_Disability_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__affidavit_not_served.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Character_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Community_Service_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Credibility_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Gender_Identity_Clarification.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__index 1.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__index.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__Observations_Affidavit.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__updated_affidavit_language.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010__verified_affidavit_of_defendant.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010___Declarations.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/WF5.01.010___Instructions_for_witnesses.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/WF5_01_DRAFT_DECLARATIONS/_README.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/WF_DECLARATIONS/_README.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/_Declarations.md
+
+> content/10_TIMELINE/draft_facts/declarations_templates/_README.md
+
+> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/WD3.00.001_SERVICE_MATRIX.md
+
+> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
+
+> content/10_TIMELINE/draft_facts/delivery_service/00_service_tracking/_README.md
+
+> content/10_TIMELINE/draft_facts/delivery_service/01_service_evidence/WD3.01.002_SHERIFF_METADATA.md
+
+> content/10_TIMELINE/draft_facts/delivery_service/01_service_evidence/_README.md
+
+> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/legacy/30_court_record/10_docket/WI8.00.001___Case_Summary.md
+
+> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/legacy/30_court_record/10_docket/_README.md
+
+> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/WI8.00.002_DOCKET_NOTES.md
+
+> content/10_TIMELINE/docket_record/WI8_00_DOCKET_RECORD/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/02_TAG_MAP.md
+
+> content/30_VIOLATION_INTELLIGENCE/03_THEORY_CLUSTERS.md
+
+> content/30_VIOLATION_INTELLIGENCE/04_RISK_REGISTER.md
+
+> content/30_VIOLATION_INTELLIGENCE/V-000_TEMPLATE.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-011_experian-reinvestigation-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-012_equifax-reinvestigation-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/CREDIT_BUREAUS/V-013_transunion-reinvestigation-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-004_past-due-amount-schedule-after-judgment.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-005_failure-to-correct-inaccurate-furnishings.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-006_dual-tradeline-double-counting.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-007_inconsistent-reporting-vs-court-position.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-008_credit-defamation-false-publication.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-010_failure-to-mark-account-foreclosure-closed.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-025_cost-shift-fcfcu-refused-winterize.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-030_service-completed-no-notice-before-writ.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-033_removal-6-7-days-after-deed-recorded.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-036_surplus-funds-declared-resolved.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-037_interest-fees-arbitrarily-inflated.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-038_fcfcu-testimony-winterize-then-leave.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-070_global-demand-letter.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-071_litigation-hold-preservation-letter.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-072_equitable-relief-tradeline-deletion.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-073_damages-credit-score-suppression.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-074_damages-out-of-pocket-costs.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-075_public-accountability-hold.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-080_conversion-negligence-post-removal-damage.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/FCFCU/V-081_evidence-spoliation-unplugged-cameras.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-076_fha-reasonable-accommodation-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-077_ada-title-iii-entertainment-access-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-078_ada-effective-communication-failure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-083_discriminatory-maintenance-redlining.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/OTHER_PARTIES/V-084_predatory-land-contract-reverse-redlining.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-031_sheriff-return-inaccuracies.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-032_no-ada-compliant-notice.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-034_attorney-appeared-without-formal-appearance.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-035_court-relied-on-service-sufficiency.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-050_cfpb-complaint-track.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-051_indiana-ag-complaint-track.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-052_icrc-complaint-track.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-053_doj-civil-rights-complaint-track.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-060_bbb-complaint-reputational-pressure.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-079_void-judgment-procedural-error.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/REGULATORS_PROCEDURAL/V-082_fraud-on-the-court-material-misrepresentation.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-021_post-0815-citizens-energy-charges-billed.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-020_post-0815-aes-electric-charges-billed.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-022_post-0815-hoa-assessments-billed.md
+
+> content/30_VIOLATION_INTELLIGENCE/10_violations/UTILITIES_HOA_CITY/V-026_credit-harm-compounded-utility-municipal.md
+
+> content/30_VIOLATION_INTELLIGENCE/01_MASTER_INDEX.md
+
+> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.001_CASE_LAW_RESEARCH.md
+
+> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/WB1.00.003_JURISDICTION_THEORY.md
+
+> content/30_VIOLATION_INTELLIGENCE/legal_research/WB1_00_LAW_RESEARCH/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/WG6.00.001_ADA_TITLE_II_ANALYSIS.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/WG6.00.002_REASONABLE_ACCOMMODATIONS.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_00_ADA_STRATEGY/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.002_ICRC_COMPLAINT.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.003_STATUS_TRACKER.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/WG6_01_PARALLEL_ENFORCEMENT/WG6.01.001_DOJ_COMPLAINT.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/10_ada_strategy/WG_GROUNDS_ADA/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.001_PROCEDURAL_FAILURE_MAP.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.002_BUT_FOR_ANALYSIS.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/WE4.00.010__Procedural_failure_map_one_pager.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_00_CHAIN_ANALYSIS/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/WE4.01.001_STAY_PATHS.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/WE4.01.002_REVERSAL_PATHS.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/WE4_01_REMEDIES/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/strategies/effects_procedural_chain/WE_EFFECTS_PROCEDURAL/_README.md
+
+> content/30_VIOLATION_INTELLIGENCE/theories/WB1_01_ALTERNATE_THEORIES/WB1.01.001_BACKUP_ARGUMENTS.md
+
+> content/30_VIOLATION_INTELLIGENCE/theories/WB1_01_ALTERNATE_THEORIES/WB1.01.002_IF_JUDGE_PUSHBACK.md
+
+> content/30_VIOLATION_INTELLIGENCE/analysis/INTERNAL VALUATION MEMO.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Payout_Strategy/WI8.99.010__Long_Term_Payout_Strategy.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Payout_Strategy/_README.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Premonitions/WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/Premonitions/_README.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
+
+> content/40_WORKING/internal_only/WI8_99_INTERNAL_ONLY/l_narrative/03_Internal_Analysis/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/ada_packet.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/attorney_brief.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/outreach_templates/_Advocate_Outreach_Message.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/2025-12-15_they_threw_us_into_the_cold.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/Public_Statement.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/01_Public_Narrative/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/02_Exposure_and_Harm/Cold_Risk_Report.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/02_Exposure_and_Harm/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Payout_Strategy/Long_Term_Payout_Strategy.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Payout_Strategy/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Premonitions/Premonitions_I_Knew_Before_I_Knew.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Premonitions/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/03_Internal_Analysis/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/04_Donations_and_Support/Donations_Context.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/04_Donations_and_Support/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/05_Timeline/Master_Timeline.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/personal_narrative/05_Timeline/_README.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/receipt_usps_tracking.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/script_call_lawyers.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_COURT_DOC.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_HANDUP_PACKET_NOTE.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_SECTION_COVER.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_SECTION_INDEX.md
+
+> content/40_WORKING/internal_only/internal_notes_ref/TEMPLATE_WAR_NOTE.md
+
+> content/40_WORKING/narratives/personal_narrative/01_Public_Narrative/2025-12-15_they_threw_us_into_the_cold.md
+
+> content/40_WORKING/narratives/personal_narrative/01_Public_Narrative/Public_Statement.md
+
+> content/40_WORKING/narratives/personal_narrative/02_Exposure_and_Harm/Cold_Risk_Report.md
+
+> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Payout_Strategy/Long_Term_Payout_Strategy.md
+
+> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Premonitions/Premonitions_I_Knew_Before_I_Knew.md
+
+> content/40_WORKING/narratives/personal_narrative/03_Internal_Analysis/Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> content/40_WORKING/narratives/personal_narrative/04_Donations_and_Support/Donations_Context.md
+
+> content/40_WORKING/narratives/personal_narrative/05_Timeline/Master_Timeline.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/A0.01.001_ONE_PAGE_CASE_SUMMARY.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/A0.01.002_HEARING_SCOPE_AND_RELIEF.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_01_OVERVIEW/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/A0.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/A0.00.010_MASTER_CASE_INDEX.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/A0_00_COVER_INDEX/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/A_ANCHOR_OVERVIEW/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.001_CORE_ISSUE_STATEMENT.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_01_ISSUE_LAW/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_00_COVER/B1.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/B1_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/B_BASIS_ISSUE_AND_LAW/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/01A_TAB_01_MOTION.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_00_COVER/C2.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_01_MOTION_VACATE/C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_01_MOTION_VACATE/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_02_EMERGENCY_STAY_QUASH/C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_02_EMERGENCY_STAY_QUASH/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_03_SUPPLEMENTAL/C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_03_SUPPLEMENTAL/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/C2.04.001_PROPOSED_ORDER_VACATE.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/C2_04_PROPOSED_ORDERS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/C_CLAIMS_AND_MOTIONS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_00_COVER/D3.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_03_SERVICE_ANALYSIS/D3.03.001_SERVICE_DEFECT_ANALYSIS.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/D3_03_SERVICE_ANALYSIS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/D_DELIVERY_SERVICE/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_00_COVER/E4.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_05_CHAIN_SUMMARY/E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/E4_05_CHAIN_SUMMARY/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/E_EFFECTS_PROCEDURAL_CHAIN/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_00_COVER/F5.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_01_AFFIDAVIT_NOT_SERVED/F5.01.001_AFFIDAVIT_NOT_SERVED.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_01_AFFIDAVIT_NOT_SERVED/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_02_DECLARATION_ONGOING_HARM/F5.02.001_DECLARATION_ONGOING_HARM.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_02_DECLARATION_ONGOING_HARM/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_03_CREDIBILITY_DECLARATION/F5.03.001_CREDIBILITY_DECLARATION.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/F5_03_CREDIBILITY_DECLARATION/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/F_FACTS_DECLARATIONS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_00_COVER/G6.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_03_ADA_IMPACT_SUMMARY/G6.03.001_ADA_IMPACT_SUMMARY.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/G6_03_ADA_IMPACT_SUMMARY/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/G_GROUNDS_ADA/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/02A_TAB_02_EXHIBITS.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/02B_Exhibits_Index.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_00_COVER/H7.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_01_EXHIBITS_A-H/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_02_EXHIBITS_I_ADA/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_03_EXHIBITS_J_REMOVAL/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_04_EXHIBITS_K_FINANCIAL/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_05_EXHIBITS_L_STATEMENTS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_06_EXHIBITS_M_SERVICE/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/H7_07_EXHIBITS_P_PROPERTY/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/H_HARD_EXHIBITS/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_00_COVER/I8.00.000_SECTION_COVER.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_00_COVER/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_01_FULL_DOCKET/I8_01_000_CASE_SUMMARY.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_01_FULL_DOCKET/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_02_RESEARCH_NOTES/I8.02.001_RESEARCH_AND_NOTES.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_02_RESEARCH_NOTES/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_99_DO_NOT_PRINT/I8.99.999_INTERNAL_DO_NOT_PRINT.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/I8_99_DO_NOT_PRINT/_README.md
+
+> content/60_OUTPUTS_EXPORTS/50_PRINT_READY_BINDERS/01_COURT_BINDER_PRINT_READY/I_INTERNAL_REFERENCE/_README.md
+
+> content/60_OUTPUTS_EXPORTS/Exhibit X — Inventory of Jurisdictional, Execut.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/01_Docket/docket_index.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/01_Docket/_Case_Summary.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/03_Service_Process/affidavits_service.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/03_Service_Process/service_defects_analysis.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/05_Sale_and_Possesion/possession_admissions.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/06_Financial_Accounting/interest_fee_irregularities.md
+
+> content/50_PHASES/01_Foreclosure_Core_Court_Record/06_Financial_Accounting/surplus_definciency_analysis.md
+
+> content/50_PHASES/02_credit_reporting_FCRA/05_Reputational_Pressure/better_business_bureau/complaint.md
+
+> content/50_PHASES/06_Public_Accountability/00_README_LOCK.md
+
+> content/50_PHASES/90_settlement/Settlement_Strategy_and_Contingency_Plan.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/EMERGENCY_FILING_PACKET.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motions_templates/_Motions.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motions_templates/_README.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_emergency_stay_of_writ.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_emergency_supplemental_motion_ongoing_ha.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/motion_to_vacate_void_judgment.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.001_DRAFT_MOTION_VACATE.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.002_DRAFT_EMERGENCY_STAY.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.003_DRAFT_SUPPLEMENTAL.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_emergency_stay_of_writ.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_emergency_supplemental_motio.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010__motion_to_vacate_void_judgment.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/WC2.00.010___Motions.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/10_draft_motions/_README.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_order_emergency_stay.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_order_motion_to_vacate.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_templates/Proposed_Orders.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/proposed_templates/_README.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.001_DRAFT_ORDER_VACATE.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.002_DRAFT_ORDER_STAY.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__index.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__Proposed_Orders.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__proposed_order_emergency_stay.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/WC2.01.010__proposed_order_motion_to_vacate.md
+
+> content/50_PHASES/draft_plans/40_claims_motions/20_proposed_orders/_README.md
+
+> content/50_PHASES/draft_plans/80_hearing_planner/2025-01-09_hearing/HEARING CHEAT SHEET.md
+
+> content/50_PHASES/draft_plans/80_hearing_planner/_COURT_MODE_BUTTONS.md.md
+
+> content/50_PHASES/draft_plans/80_hearing_planner/_COURT_MODE_PLAYBOOK.md.md
+
+> content/50_PHASES/draft_plans/80_hearing_planner/_README.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/WI8.01.010__Public_Statement.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/al_narrative/01_Public_Narrative/_README.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/rrative/04_Donations_and_Support/WI8.01.050__Donations_Context.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/rrative/04_Donations_and_Support/_README.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.001_PRESS_STRATEGY.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.002_SOCIAL_MEDIA_PLAN.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/WI8.01.003_TIMING_AND_RISK.md
+
+> content/50_PHASES/draft_plans/WI8_01_PUBLIC_ADVOCACY/_README.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/l_narrative/02_Exposure_and_Harm/WI8.02.050__Cold_Risk_Report.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/l_narrative/02_Exposure_and_Harm/_README.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__03_Case_Log_Entry_2025-12-15.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__2025-12-16_case_log_entry.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__2025-12-16_case_summary.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Case_Log.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Financial_Tracker.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__index.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/on/__legacy/00_admin/00_trackers/_README.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.001_ECONOMIC_HARM.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.002_NON_ECONOMIC_HARM.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/WI8.02.003_SETTLEMENT_SCENARIOS.md
+
+> content/50_PHASES/draft_plans/WI8_02_DAMAGES_AND_SETTLEMENT/_README.md
+
+> content/50_PHASES/checklists/PROMOTION_CHECKLIST.md
+
+> content/50_PHASES/communication/Talking_Points.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.001_READY_FOR_BINDER.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.002_REJECTED_FOR_COURT.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.003_PROMOTION_LOG.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9.00.010_PROMOTION_CHECKLIST.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9_00_050_FILINGS/WZ9.00.050__Motions.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/WZ9_00_050_FILINGS/_README.md
+
+> content/50_PHASES/strategies/promotion_pipeline/_PROMOTION/_README.md
+
+> content/README.md
+
+> content/_INGEST/03_Case_Log_Entry_2025-12-15.md
+
+> content/_INGEST/2025-12-16_case_log_entry.md
+
+> content/_INGEST/2025-12-16_case_summary.md
+
+> content/_INGEST/30_2025/2025-01-16_Case_Filed.md
+
+> content/_INGEST/30_2025/2025-03-05_Service_Attempt_1.md
+
+> content/_INGEST/30_2025/2025-04-15_Service_Attempt_2.md
+
+> content/_INGEST/30_2025/2025-05-13_Motion_for_Default_Judgment.md
+
+> content/_INGEST/30_2025/2025-05-21_Order_Denying_Default_Judgment.md
+
+> content/_INGEST/30_2025/2025-05-23_Amended_Motion_Default_Judgment.md
+
+> content/_INGEST/30_2025/2025-05-28_Default_Judgment_Entered.md
+
+> content/_INGEST/30_2025/2025-05-30_Praecipe_Sheriff_Sale.md
+
+> content/_INGEST/30_2025/2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> content/_INGEST/30_2025/2025-08-15_Sheriff_Sale.md
+
+> content/_INGEST/30_2025/2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> content/_INGEST/30_2025/2025-11-06_Writ_of_Assistance_Issued.md
+
+> content/_INGEST/30_2025/2025-12-09_Writ_Executed_Removal.md
+
+> content/_INGEST/30_2025/2025-12-10_Motions_Filed.md
+
+> content/_INGEST/30_2025/2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> content/_INGEST/30_2025/2025-12-12_Supplemental_Emergency_Motion.md
+
+> content/_INGEST/30_2025/index.md
+
+> content/_INGEST/30_2025/_README.md
+
+> content/_INGEST/Case Narrative - Wrongful Foreclosure and Displ.md
+
+> content/_INGEST/Case_Log.md
+
+> content/_INGEST/Contacts.md
+
+> content/_INGEST/Financial_Tracker.md
+
+> content/_INGEST/Formal Inventory of Violations and Schedule of .md
+
+> content/_INGEST/LEGAL MEMORANDUM.md
+
+> content/_INGEST/Procedural_failure_map_one_pager.md
+
+> content/_INGEST/Proposal for Strategic Reports in the Matter of.md
+
+> content/_INGEST/Talking_Points.md
+
+> content/_INGEST/working_intake/30_fcfcu/2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> content/_INGEST/working_intake/30_fcfcu/WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> content/_INGEST/working_intake/30_fcfcu/_README.md
+
+> content/_INGEST/working_intake/50_aes/2025-12-16_AES_Emergency_Notice.md
+
+> content/_INGEST/working_intake/50_aes/WH7.00.020__2025-12-16_AES_Emergency_Notice.md
+
+> content/_INGEST/working_intake/50_aes/_README.md
+
+> content/_INGEST/working_intake/99__archive/WH7.00.020__README_supporting.md
+
+> content/_INGEST/working_intake/99__archive/_README.md
+
+> content/_INGEST/working_intake/Raw_Exhibit_Map.md
+
+> content/_INGEST/working_intake/WH7.00.001_RAW_PHONE_DUMP.md
+
+> content/_INGEST/working_intake/WH7.00.002_RAW_VIDEO_AUDIO.md
+
+> content/_INGEST/working_intake/WH7.00.003_RAW_SCREENSHOTS.md
+
+> content/_INGEST/working_intake/WH7.00.020__Raw_Exhibit_Map.md
+
 > content/_INGEST/working_intake/_README.md
 
 ### Assistant
@@ -15127,1595 +18425,3184 @@ canonical_ref: ""
 > If you want, paste the *new* top-level folder tree after step 3, and I’ll tell you exactly what’s still out of place and what’s clean.
 
 ### User
-> this is almost clean i think where i have some duplicates or an issue to lock in is the bourt binder print ready, the court binder is the organization of the conocial file system, the bible the one only i see, and then there are binder packets the ones given to the judge or counsel courrated depending onthe venue purpose and strategy, how do we snap ans snear this correctly. ```markdown
-> . 📂 content
-> └── 📂 00_ADMIN/
-> │  ├── 📄 00_README_SYSTEM.md
-> │  └── 📂 00_trackers/
-> │    └── 📂 00_index/
-> │      ├── 📄 working_Master_Index.md
-> │    └── 📂 01_case_logs/
-> │      ├── 📄 Case_Log.md
-> │      ├── 📄 case_conversation_log.txt
-> │    └── 📂 02_financial/
-> │      ├── 📄 Financial_Tracker.md
-> │      ├── 📄 expenses.csv
-> │    └── 📂 10_violations/
-> │      ├── 📄 Violation_Index.csv
-> │    └── 📂 20_financial/
-> │      ├── 📄 Financial_Tracker.md
-> │      ├── 📄 financial_actuals.csv
-> │    └── 📂 30_damages/
-> │      ├── 📄 damages_estimates.csv
-> │  └── 📂 10_overviews/
-> │    └── 📂 10_maps/
-> │      ├── 📄 Procedural_failure_map_one_pager.md
-> │    └── 📂 20_deep_dives/
-> │      ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │    └── 📂 30_critiques/
-> │    └── 📂 40_debates/
-> │    └── 📂 50_explainers/
-> │    └── 📂 60_infographics/
-> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │    └── 📂 70_reports/
-> │  └── 📂 50_integrity_tooling/
-> │    ├── 📄 audit_fcfcu.py
-> │    ├── 📄 create_masters.py
-> │    ├── 📄 fix_court_binder.py
-> │  └── 📂 60_templates/
-> │    └── 📂 _templates/
-> │      └── 📂 10_motions/
-> │        ├── 📄 index.md
-> │        ├── 📄 motion_emergency_stay_of_writ.docx
-> │        ├── 📄 motion_emergency_stay_of_writ.md
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
-> │        ├── 📄 motion_to_vacate_void_judgement.docx
-> │        ├── 📄 motion_to_vacate_void_judgment.md
-> │        └── 📂 motions_templates/
-> │          ├── 📄 _Motions.md
-> │      └── 📂 20_declarations_affidavits/
-> │        ├── 📄 affidavit_not_served.docx
-> │        ├── 📄 affidavit_not_served.md
-> │        └── 📂 affidavits_templates/
-> │          ├── 📄 ADA_Disability_Affidavit.md
-> │          ├── 📄 Character_Affidavit.md
-> │          ├── 📄 Community_Service_Affidavit.md
-> │          ├── 📄 Credibility_Affidavit.md
-> │          ├── 📄 Observations_Affidavit.md
-> │          ├── 📄 _Instructions_for_witnesses.md
-> │          ├── 📄 index.md
-> │        └── 📂 declarations_templates/
-> │          ├── 📄 Gender_Identity_Clarification.md
-> │          ├── 📄 _Declarations.md
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │        ├── 📄 updated_affidavit_language.md
-> │        ├── 📄 verified_affidavit_of_defendant.md
-> │      └── 📂 30_exhibits/
-> │        ├── 📄 exhibit_list.docx
-> │        ├── 📄 exhibit_list.md
-> │        └── 📂 exhibits_templates/
-> │          ├── 📄 _Exhibits_Lists.md
-> │      └── 📂 40_others/
-> │        ├── 📄 ada_packet.md
-> │        ├── 📄 attorney_brief.md
-> │        ├── 📄 index.md
-> │        └── 📂 outreach_templates/
-> │          ├── 📄 _Advocate_Outreach_Message.md
-> │        ├── 📄 receipt_usps_tracking.md
-> │        ├── 📄 script_call_lawyers.md
-> │      └── 📂 50_proposed_orders/
-> │        ├── 📄 index.md
-> │        ├── 📄 proposed_order_emergency_stay.md
-> │        ├── 📄 proposed_order_motion_to_vacate.md
-> │        └── 📂 proposed_templates/
-> │          ├── 📄 Proposed_Orders.md
-> │      └── 📂 dc_claims_and_motions/
-> │        └── 📂 50_proposed_orders/
-> │          ├── 📄 index-content.html
-> │          ├── 📄 proposed_order_emergency_stay.html
-> │          ├── 📄 proposed_order_motion_to_vacate.html
-> │          └── 📂 proposed_templates/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 proposed_orders.html
-> │        ├── 📄 emergency_filing_packet.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 motion_emergency_stay_of_writ.docx
-> │        ├── 📄 motion_emergency_stay_of_writ.html
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.html
-> │        ├── 📄 motion_to_vacate_void_judgement.docx
-> │        ├── 📄 motion_to_vacate_void_judgment.html
-> │        └── 📂 motions_templates/
-> │          ├── 📄 _motions.html
-> │          ├── 📄 index-content.html
-> │        ├── 📄 proposed_order_vacate.docx
-> │      └── 📂 df_facts_declarations/
-> │        ├── 📄 affidavit_not_served.docx
-> │        ├── 📄 affidavit_not_served.html
-> │        └── 📂 affidavits_templates/
-> │          ├── 📄 _instructions_for_witnesses.html
-> │          ├── 📄 ada_disability_affidavit.html
-> │          ├── 📄 character_affidavit.html
-> │          ├── 📄 community_service_affidavit.html
-> │          ├── 📄 credibility_affidavit.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 observations_affidavit.html
-> │        └── 📂 declarations_templates/
-> │          ├── 📄 _declarations.html
-> │          ├── 📄 gender_identity_clarification.html
-> │          ├── 📄 index-content.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 updated_affidavit_language.html
-> │        ├── 📄 verified_affidavit_of_defendant.html
-> │      └── 📂 dh_hard_exhibits/
-> │        ├── 📄 exhibit_list.docx
-> │        ├── 📄 exhibit_list.html
-> │        └── 📂 exhibits_templates/
-> │          ├── 📄 _exhibits_lists.html
-> │          ├── 📄 index-content.html
-> │        ├── 📄 index-content.html
-> │        ├── 📄 template_exhibit_label.html
-> │      └── 📂 di_internal_reference/
-> │        ├── 📄 ada_packet.html
-> │        ├── 📄 attorney_brief.html
-> │        ├── 📄 index-content.html
-> │        └── 📂 outreach_templates/
-> │          ├── 📄 _advocate_outreach_message.html
-> │          ├── 📄 index-content.html
-> │        ├── 📄 receipt_usps_tracking.html
-> │        ├── 📄 script_call_lawyers.html
-> │        ├── 📄 template_court_doc.html
-> │        ├── 📄 template_handup_packet_note.html
-> │        ├── 📄 template_section_cover.html
-> │        ├── 📄 template_section_index.html
-> │        ├── 📄 template_war_note.html
-> │  └── 📂 90_logs/
-> │    ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │    ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │    ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │    ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    ├── 📄 2025-12-16_fcfcu_case_dna_strat.md
-> │    ├── 📄 2025-12-21_Case_Summary.md
-> │    ├── 📄 Case_Log.md
-> │    ├── 📄 cleanup_log_2026_01_16.md
-> │  ├── 📄 Contacts_ingest.md
-> │  ├── 📄 cleanup_log_2026_01_16.md
-> └── 📂 10_TIMELINE/
-> │  └── 📂 10_2023/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 2025/
-> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
-> │    ├── 📄 2025-01-16_Case_Filed.md
-> │    ├── 📄 2025-01-16_case_filed.html
-> │    ├── 📄 2025-03-05_Service_Attempt_1.md
-> │    ├── 📄 2025-03-05_service_attempt_1.html
-> │    ├── 📄 2025-04-15_Service_Attempt_2.md
-> │    ├── 📄 2025-04-15_service_attempt_2.html
-> │    ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │    ├── 📄 2025-05-13_motion_for_default_judgment.html
-> │    ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │    ├── 📄 2025-05-21_order_denying_default_judgment.html
-> │    ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │    ├── 📄 2025-05-23_amended_motion_default_judgment.html
-> │    ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │    ├── 📄 2025-05-28_default_judgment_entered.html
-> │    ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │    ├── 📄 2025-05-30_praecipe_sheriff_sale.html
-> │    ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │    ├── 📄 2025-07-09_sheriff_sale_notice_posted.html
-> │    ├── 📄 2025-08-15_Sheriff_Sale.md
-> │    ├── 📄 2025-08-15_sheriff_sale.html
-> │    ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │    ├── 📄 2025-10-29_petition_for_writ_of_assistance.html
-> │    ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │    ├── 📄 2025-11-06_writ_of_assistance_issued.html
-> │    ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │    ├── 📄 2025-12-09_writ_executed_removal.html
-> │    ├── 📄 2025-12-10_Motions_Filed.md
-> │    ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │    ├── 📄 2025-12-11_court_orders_and_hearing_scheduled.html
-> │    ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │    ├── 📄 2025-12-12_supplemental_emergency_motion.html
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 index-content.html
-> │    ├── 📄 index.md
-> │  └── 📂 20_2024/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  └── 📂 30_2025/
-> │    └── 📂 events/
-> │      ├── 📄 2025-01-16_Case_Filed.md
-> │      ├── 📄 2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │      ├── 📄 2025-12-10_Motions_Filed.md
-> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │      ├── 📄 2025-12-21_Case_Summary.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_2026/
-> │    └── 📂 events/
-> │    ├── 📄 index.md
-> │  ├── 📄 YYYY-MM-DD_Template.md.md
-> │  └── 📂 docket_record/
-> │    └── 📂 WI8_00_DOCKET_RECORD/
-> │      ├── 📄 WI8.00.001_FULL_DOCKET.pdf
-> │      ├── 📄 WI8.00.002_DOCKET_NOTES.md
-> │      ├── 📄 _README.md
-> │      └── 📂 legacy/
-> │        └── 📂 30_court_record/
-> │          └── 📂 10_docket/
-> │            ├── 📄 WI8.00.001__001_Complaint.pdf
-> │            ├── 📄 WI8.00.001__002_Appearance.pdf
-> │            ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
-> │            ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
-> │            ├── 📄 WI8.00.001__005_Appearance_2.pdf
-> │            ├── 📄 WI8.00.001__006_Summons_1.pdf
-> │            ├── 📄 WI8.00.001__007_Summons_2.pdf
-> │            ├── 📄 WI8.00.001__008_Summons_3.pdf
-> │            ├── 📄 WI8.00.001__009_Summons_4.pdf
-> │            ├── 📄 WI8.00.001__010_Summons_5.pdf
-> │            ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
-> │            ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
-> │            ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
-> │            ├── 📄 WI8.00.001__014_Affidavit.pdf
-> │            ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
-> │            ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
-> │            ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
-> │            ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
-> │            ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
-> │            ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
-> │            ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
-> │            ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
-> │            ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
-> │            ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
-> │            ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
-> │            ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
-> │            ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
-> │            ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
-> │            ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
-> │            ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
-> │            ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
-> │            ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
-> │            ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
-> │            ├── 📄 WI8.00.001___Case_Summary.md
-> │            ├── 📄 WI8.00.001__index.html
-> │            ├── 📄 _README.md
-> │  └── 📂 draft_facts/
-> │    └── 📂 affidavits_templates/
-> │      ├── 📄 ADA_Disability_Affidavit.md
-> │      ├── 📄 Character_Affidavit.md
-> │      ├── 📄 Community_Service_Affidavit.md
-> │      ├── 📄 Credibility_Affidavit.md
-> │      ├── 📄 Observations_Affidavit.md
-> │      ├── 📄 _Instructions_for_witnesses.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.md
-> │      ├── 📄 updated_affidavit_language.md
-> │      ├── 📄 verified_affidavit_of_defendant.md
-> │    └── 📂 declarations_templates/
-> │      ├── 📄 AFFIDAVIT OF CODY RICE‑VELASQUEZ.md
-> │      ├── 📄 Gender_Identity_Clarification.md
-> │      └── 📂 WF_DECLARATIONS/
-> │        └── 📂 WF5_00_FACT_DEVELOPMENT/
-> │          ├── 📄 WF5.00.001_FACT_TIMELINE.md
-> │          ├── 📄 WF5.00.002_FACT_GAPS.md
-> │          ├── 📄 _README.md
-> │        └── 📂 WF5_01_DRAFT_DECLARATIONS/
-> │          ├── 📄 WF5.01.001_DRAFT_AFFIDAVIT.md
-> │          ├── 📄 WF5.01.002_DRAFT_DECLARATION.md
-> │          ├── 📄 WF5.01.010__ADA_Disability_Affidavit.md
-> │          ├── 📄 WF5.01.010__Character_Affidavit.md
-> │          ├── 📄 WF5.01.010__Community_Service_Affidavit.md
-> │          ├── 📄 WF5.01.010__Credibility_Affidavit.md
-> │          ├── 📄 WF5.01.010__Gender_Identity_Clarification.md
-> │          ├── 📄 WF5.01.010__Observations_Affidavit.md
-> │          ├── 📄 WF5.01.010___Declarations.md
-> │          ├── 📄 WF5.01.010___Instructions_for_witnesses.md
-> │          ├── 📄 WF5.01.010__affidavit_not_served.docx
-> │          ├── 📄 WF5.01.010__affidavit_not_served.md
-> │          ├── 📄 WF5.01.010__index 1.md
-> │          ├── 📄 WF5.01.010__index.html
-> │          ├── 📄 WF5.01.010__index.md
-> │          ├── 📄 WF5.01.010__updated_affidavit_language.md
-> │          ├── 📄 WF5.01.010__verified_affidavit_of_defendant.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _Declarations.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.md
-> │      └── 📂 wf_facts_declarations/
-> │        ├── 📄 _readme.html
-> │        └── 📂 wf5_00_fact_development/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wf5.00.001_fact_timeline.html
-> │          ├── 📄 wf5.00.002_fact_gaps.html
-> │        └── 📂 wf5_01_draft_declarations/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 wf5.01.001_draft_affidavit.html
-> │          ├── 📄 wf5.01.002_draft_declaration.html
-> │          ├── 📄 wf5.01.010___declarations.html
-> │          ├── 📄 wf5.01.010___instructions_for_witnesses.html
-> │          ├── 📄 wf5.01.010__ada_disability_affidavit.html
-> │          ├── 📄 wf5.01.010__affidavit_not_served.docx
-> │          ├── 📄 wf5.01.010__affidavit_not_served.html
-> │          ├── 📄 wf5.01.010__character_affidavit.html
-> │          ├── 📄 wf5.01.010__community_service_affidavit.html
-> │          ├── 📄 wf5.01.010__credibility_affidavit.html
-> │          ├── 📄 wf5.01.010__gender_identity_clarification.html
-> │          ├── 📄 wf5.01.010__index-1.html
-> │          ├── 📄 wf5.01.010__index-content.html
-> │          ├── 📄 wf5.01.010__index.html
-> │          ├── 📄 wf5.01.010__observations_affidavit.html
-> │          ├── 📄 wf5.01.010__verified_affidavit_of_defendant.html
-> │    └── 📂 delivery_service/
-> │      └── 📂 00_service_tracking/
-> │        ├── 📄 WD3.00.001_SERVICE_MATRIX.md
-> │        ├── 📄 WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 wd3.00.001_service_matrix.html
-> │        ├── 📄 wd3.00.002_service_failure_analysis.html
-> │      └── 📂 01_service_evidence/
-> │        ├── 📄 WD3.01.001_SUMMONS_SOURCE (2).pdf
-> │        ├── 📄 WD3.01.002_SHERIFF_METADATA.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 _readme.html
-> │        ├── 📄 wd3.01.001_summons_source.html
-> │        ├── 📄 wd3.01.001_summons_source.pdf
-> │        ├── 📄 wd3.01.002_sheriff_metadata.html
-> └── 📂 20_EVIDENCE_VAULT_IMMUTABLE/
-> │  └── 📂 00_evidence_admin/
-> │    ├── 📄 Raw_Exhibit_Map.md
-> │    ├── 📄 chain_of_custody.md
-> │    ├── 📄 evidence_log.md
-> │    ├── 📄 master_evidence_index.md
-> │  └── 📂 10_photos_video/
-> │    ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
-> │    ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
-> │    ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
-> │    ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
-> │    ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
-> │    ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
-> │    ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
-> │    ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
-> │    ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
-> │    ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
-> │  └── 📂 20_property/
-> │    └── 📂 10_mortgage_history/
-> │      └── 📂 20_payments/
-> │        ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │        ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
-> │    └── 📂 20_parcel/
-> │      ├── 📄 Parcel_6016506_PRC.pdf
-> │      ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │      ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
-> │      ├── 📄 parcel_6016506_prc (2).pdf
-> │  └── 📂 20_receipts/
-> │    ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
-> │  └── 📂 30_declarations/
-> │  └── 📂 30_fcfcu/
-> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │    ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
-> │    ├── 📄 2023-09-20_notice_disabilities_hardship.pdf
-> │    ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
-> │    ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │    ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │    ├── 📄 2024-20-03_response_to_tax_notice.pdf
-> │    ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │    ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │    ├── 📄 20241204_fcfcu_statement-(1).pdf
-> │    ├── 📄 20241204_fcfcu_statement-(2).pdf
-> │    ├── 📄 20241204_fcfcu_statement.pdf
-> │    ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
-> │    ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
-> │    ├── 📄 21june-24-4817shadow_appraisal.pdf
-> │    ├── 📄 fcfcu_v_cr-v_report_to_court.pdf
-> │    ├── 📄 report_to_court_on_defendants_request.pdf
-> │  └── 📂 40_affidavits/
-> │    └── 📂 ada-disability/
-> │    └── 📂 character/
-> │    └── 📂 community-service/
-> │    └── 📂 credibility/
-> │    └── 📂 observations/
-> │  └── 📂 50_aes/
-> │    ├── 📄 2025-06-08_aes_ada_notice.pdf
-> │    ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
-> │    ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │  └── 📂 60_potential_exhibits/
-> │    └── 📂 a-h_initial/
-> │      ├── 📄 exhibit_a_20250305_sheriff_return.pdf
-> │      ├── 📄 exhibit_b_20250415_sheriff_return.pdf
-> │      ├── 📄 exhibit_c_20250116_incomplete_sum.pdf
-> │      ├── 📄 exhibit_d_20250513_default_judgme.pdf
-> │      ├── 📄 exhibit_e_20251029_petition_for_w.pdf
-> │      ├── 📄 exhibit_f_affidavit_cody_ricevela.pdf
-> │      ├── 📄 exhibit_g1_ada_notice_request.pdf
-> │      ├── 📄 exhibit_g2_aes_ada_docs_disconnec.pdf
-> │      ├── 📄 exhibit_h_declaration.pdf
-> │      ├── 📄 exhibits_combined.pdf
-> │  ├── 📄 Evidence_Log.md
-> │  ├── 📄 Raw_Exhibit_Map.md
-> │  └── 📂 audio_records/
-> │    ├── 📄 Debate.m4a
-> │    ├── 📄 Foreclosure_Void_Judgment_Institutional_Failur.m4a
-> │    ├── 📄 Foreclosure_Void_Versus_Damages_Due_Process.m4a
-> │    ├── 📄 Forensic_Audit_of_a_Void_Foreclosure.m4a
-> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │  └── 📂 documents/
-> │    └── 📂 receipts/
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │    └── 📂 reports_external/
-> │      ├── 📄 Crisis_The_Anatomy_of_Institutional_Failure.pdf
-> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │      ├── 📄 Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
-> │      ├── 📄 uncategorized_bundle.pdf
-> │  └── 📂 potential_exhibits/
-> │    └── 📂 10_EXHIBIT_SETS/
-> │      ├── 📄 WH7.01.0100___checklist.md
-> │      ├── 📄 WH7.01.0100__index.html
-> │      ├── 📄 _README.md
-> │      └── 📂 _exhibit_A-H_initial/
-> │        ├── 📄 WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
-> │        ├── 📄 WH7.01.0100__Exhibit_H_Declaration.pdf
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_I_ada_communications/
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_J_eviction_removal/
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_K_financial/
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_L_statements/
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_M_court-service/
-> │        ├── 📄 WH7.01.0100__index.html
-> │      └── 📂 exhibits_P_property/
-> │        ├── 📄 WH7.01.0100__index.html
-> │    └── 📂 30_exhibits/
-> │      ├── 📄 WH7.01.0050__exhibit_list.docx
-> │      ├── 📄 WH7.01.0050__exhibit_list.md
-> │      ├── 📄 _README.md
-> │      └── 📂 exhibits_templates/
-> │        ├── 📄 WH7.01.0050___Exhibits_Lists.md
-> │        ├── 📄 _README.md
-> │    ├── 📄 WH7.01.0001_POTENTIAL_EXHIBIT_0001.pdf
-> │    ├── 📄 WH7.01.0002_POTENTIAL_EXHIBIT_0002.pdf
-> │    └── 📂 _exhibit_sets/
-> │      └── 📂 DH_HARD_EXHIBITS/
-> │        ├── 📄 TEMPLATE_EXHIBIT_LABEL.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 exhibit_list.docx
-> │        ├── 📄 exhibit_list.md
-> │      ├── 📄 _checklist.md
-> │      └── 📂 _exhibit_A-H_initial/
-> │        ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
-> │        ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
-> │        ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
-> │        ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
-> │        ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
-> │        ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
-> │        ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
-> │        ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
-> │        ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
-> │        ├── 📄 Exhibit_H_Declaration.pdf
-> │      └── 📂 exhibits_I_ada_communications/
-> │      └── 📂 exhibits_J_eviction_removal/
-> │      └── 📂 exhibits_K_financial/
-> │      └── 📂 exhibits_L_statements/
-> │      └── 📂 exhibits_M_court-service/
-> │      └── 📂 exhibits_P_property/
-> │      └── 📂 exhibits_templates/
-> │        ├── 📄 _Exhibits_Lists.md
-> │        ├── 📄 _README.md
-> │  └── 📂 records/
-> │    ├── 📄 Foreclosure and Housing Litigation Case Record.csv
-> │    ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
-> └── 📂 30_VIOLATION_INTELLIGENCE/
-> │  ├── 📄 01_MASTER_INDEX.md
-> │  ├── 📄 02_TAG_MAP.md
-> │  ├── 📄 03_THEORY_CLUSTERS.md
-> │  ├── 📄 04_RISK_REGISTER.md
-> │  └── 📂 10_violations/
-> │    └── 📂 CREDIT_BUREAUS/
-> │      ├── 📄 V-011_experian-reinvestigation-failure.md
-> │      ├── 📄 V-012_equifax-reinvestigation-failure.md
-> │      ├── 📄 V-013_transunion-reinvestigation-failure.md
-> │    └── 📂 FCFCU/
-> │      ├── 📄 V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> │      ├── 📄 V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> │      ├── 📄 V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> │      ├── 📄 V-004_past-due-amount-schedule-after-judgment.md
-> │      ├── 📄 V-005_failure-to-correct-inaccurate-furnishings.md
-> │      ├── 📄 V-006_dual-tradeline-double-counting.md
-> │      ├── 📄 V-007_inconsistent-reporting-vs-court-position.md
-> │      ├── 📄 V-008_credit-defamation-false-publication.md
-> │      ├── 📄 V-009_fdCPA-misrepresentation-of-debt-status.md
-> │      ├── 📄 V-010_failure-to-mark-account-foreclosure-closed.md
-> │      ├── 📄 V-025_cost-shift-fcfcu-refused-winterize.md
-> │      ├── 📄 V-030_service-completed-no-notice-before-writ.md
-> │      ├── 📄 V-033_removal-6-7-days-after-deed-recorded.md
-> │      ├── 📄 V-036_surplus-funds-declared-resolved.md
-> │      ├── 📄 V-037_interest-fees-arbitrarily-inflated.md
-> │      ├── 📄 V-038_fcfcu-testimony-winterize-then-leave.md
-> │      ├── 📄 V-070_global-demand-letter.md
-> │      ├── 📄 V-071_litigation-hold-preservation-letter.md
-> │      ├── 📄 V-072_equitable-relief-tradeline-deletion.md
-> │      ├── 📄 V-073_damages-credit-score-suppression.md
-> │      ├── 📄 V-074_damages-out-of-pocket-costs.md
-> │      ├── 📄 V-075_public-accountability-hold.md
-> │      ├── 📄 V-080_conversion-negligence-post-removal-damage.md
-> │      ├── 📄 V-081_evidence-spoliation-unplugged-cameras.md
-> │    └── 📂 OTHER_PARTIES/
-> │      ├── 📄 V-076_fha-reasonable-accommodation-failure.md
-> │      ├── 📄 V-077_ada-title-iii-entertainment-access-failure.md
-> │      ├── 📄 V-078_ada-effective-communication-failure.md
-> │      ├── 📄 V-083_discriminatory-maintenance-redlining.md
-> │      ├── 📄 V-084_predatory-land-contract-reverse-redlining.md
-> │    └── 📂 REGULATORS_PROCEDURAL/
-> │      ├── 📄 V-031_sheriff-return-inaccuracies.md
-> │      ├── 📄 V-032_no-ada-compliant-notice.md
-> │      ├── 📄 V-034_attorney-appeared-without-formal-appearance.md
-> │      ├── 📄 V-035_court-relied-on-service-sufficiency.md
-> │      ├── 📄 V-050_cfpb-complaint-track.md
-> │      ├── 📄 V-051_indiana-ag-complaint-track.md
-> │      ├── 📄 V-052_icrc-complaint-track.md
-> │      ├── 📄 V-053_doj-civil-rights-complaint-track.md
-> │      ├── 📄 V-060_bbb-complaint-reputational-pressure.md
-> │      ├── 📄 V-079_void-judgment-procedural-error.md
-> │      ├── 📄 V-082_fraud-on-the-court-material-misrepresentation.md
-> │    └── 📂 UTILITIES_HOA_CITY/
-> │      ├── 📄 V-020_post-0815-aes-electric-charges-billed.md
-> │      ├── 📄 V-021_post-0815-citizens-energy-charges-billed.md
-> │      ├── 📄 V-022_post-0815-hoa-assessments-billed.md
-> │      ├── 📄 V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> │      ├── 📄 V-024_municipal-code-enforcement-after-possession-transfer.md
-> │      ├── 📄 V-026_credit-harm-compounded-utility-municipal.md
-> │  ├── 📄 Exhibit X — Inventory of Jurisdictional, Execut.md
-> │  ├── 📄 V-000_TEMPLATE.md
-> │  └── 📂 analysis/
-> │    ├── 📄 Formal Inventory of Violations and Schedule of .md
-> │    ├── 📄 INTERNAL VALUATION MEMO.md
-> │    ├── 📄 Procedural_failure_map_one_pager.md
-> │  └── 📂 legal_research/
-> │    ├── 📄 LEGAL MEMORANDUM.md
-> │    └── 📂 WB1_00_LAW_RESEARCH/
-> │      ├── 📄 WB1.00.001_CASE_LAW_RESEARCH.md
-> │      ├── 📄 WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
-> │      ├── 📄 WB1.00.003_JURISDICTION_THEORY.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 wb1.00.001_case_law_research.html
-> │      ├── 📄 wb1.00.002_void_vs_voidable_analysis.html
-> │      ├── 📄 wb1.00.003_jurisdiction_theory.html
-> │  └── 📂 strategies/
-> │    └── 📂 00_basis/
-> │    └── 📂 10_ada_strategy/
-> │      └── 📂 WG_GROUNDS_ADA/
-> │        └── 📂 WG6_00_ADA_STRATEGY/
-> │          ├── 📄 WG6.00.001_ADA_TITLE_II_ANALYSIS.md
-> │          ├── 📄 WG6.00.002_REASONABLE_ACCOMMODATIONS.md
-> │          ├── 📄 _README.md
-> │        └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
-> │          ├── 📄 WG6.01.001_DOJ_COMPLAINT.md
-> │          ├── 📄 WG6.01.002_ICRC_COMPLAINT.md
-> │          ├── 📄 WG6.01.003_STATUS_TRACKER.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _readme.html
-> │      ├── 📄 wg6.00.001_ada_title_ii_analysis.html
-> │      ├── 📄 wg6.00.002_reasonable_accommodations.html
-> │    ├── 📄 Master_Strategy_Canvas.canvas
-> │    ├── 📄 Proposal for Strategic Reports in the Matter of.md
-> │    └── 📂 _misc_strategy/
-> │      └── 📂 10_ada_title_ii/
-> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │      └── 📂 30_void_vs_voidable_tr_60b/
-> │      ├── 📄 Strategic_Plan.canvas
-> │    └── 📂 effects_procedural_chain/
-> │      └── 📂 WE_EFFECTS_PROCEDURAL/
-> │        └── 📂 WE4_00_CHAIN_ANALYSIS/
-> │          ├── 📄 WE4.00.001_PROCEDURAL_FAILURE_MAP.md
-> │          ├── 📄 WE4.00.002_BUT_FOR_ANALYSIS.md
-> │          ├── 📄 WE4.00.010__Integrate_Disability_Separate_Appe.m4a
-> │          ├── 📄 WE4.00.010__Procedural_failure_map_one_pager.md
-> │          ├── 📄 WE4.00.010__Void_Judgment_Eviction_Crisis.pdf
-> │          ├── 📄 _README.md
-> │        └── 📂 WE4_01_REMEDIES/
-> │          ├── 📄 WE4.01.001_STAY_PATHS.md
-> │          ├── 📄 WE4.01.002_REVERSAL_PATHS.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _readme.html
-> │      └── 📂 we4_00_chain_analysis/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 we4.00.001_procedural_failure_map.html
-> │        ├── 📄 we4.00.002_but_for_analysis.html
-> │        ├── 📄 we4.00.010__integrate_disability_separate_appe.m4a
-> │        ├── 📄 we4.00.010__void_judgment_eviction_crisis.html
-> │        ├── 📄 we4.00.010__void_judgment_eviction_crisis.pdf
-> │      └── 📂 we4_01_remedies/
-> │        ├── 📄 _readme.html
-> │        ├── 📄 we4.01.001_stay_paths.html
-> │        ├── 📄 we4.01.002_reversal_paths.html
-> │  └── 📂 theories/
-> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
-> │      ├── 📄 WB1.01.001_BACKUP_ARGUMENTS.md
-> │      ├── 📄 WB1.01.002_IF_JUDGE_PUSHBACK.md
-> └── 📂 40_WORKING/
-> │  └── 📂 internal_only/
-> │    ├── 📄 Contacts.md
-> │    └── 📂 WI8_99_INTERNAL_ONLY/
-> │      └── 📂 l_narrative/
-> │        └── 📂 03_Internal_Analysis/
-> │          └── 📂 Payout_Strategy/
-> │            ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
-> │            ├── 📄 WI8.99.010__index.html
-> │            ├── 📄 _README.md
-> │          └── 📂 Premonitions/
-> │            ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
-> │            ├── 📄 WI8.99.010__index.html
-> │            ├── 📄 _README.md
-> │          ├── 📄 WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
-> │          ├── 📄 WI8.99.010__index.html
-> │          ├── 📄 _README.md
-> │    └── 📂 internal_notes_ref/
-> │      ├── 📄 TEMPLATE_COURT_DOC.md
-> │      ├── 📄 TEMPLATE_HANDUP_PACKET_NOTE.md
-> │      ├── 📄 TEMPLATE_SECTION_COVER.md
-> │      ├── 📄 TEMPLATE_SECTION_INDEX.md
-> │      ├── 📄 TEMPLATE_WAR_NOTE.md
-> │      ├── 📄 ada_packet.md
-> │      ├── 📄 attorney_brief.md
-> │      ├── 📄 move_legacy.py
-> │      ├── 📄 organize_case.py
-> │      └── 📂 outreach_templates/
-> │        ├── 📄 _Advocate_Outreach_Message.md
-> │      └── 📂 personal_narrative/
-> │        └── 📂 01_Public_Narrative/
-> │          ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │          ├── 📄 Public_Statement.md
-> │          ├── 📄 _README.md
-> │        └── 📂 02_Exposure_and_Harm/
-> │          ├── 📄 Cold_Risk_Report.md
-> │          └── 📂 Photos_Conditions/
-> │          └── 📂 Weather_Reports/
-> │          ├── 📄 _README.md
-> │        └── 📂 03_Internal_Analysis/
-> │          └── 📂 Payout_Strategy/
-> │            ├── 📄 Long_Term_Payout_Strategy.md
-> │            ├── 📄 _README.md
-> │          └── 📂 Premonitions/
-> │            ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
-> │            ├── 📄 _README.md
-> │          ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │          ├── 📄 _README.md
-> │        └── 📂 04_Donations_and_Support/
-> │          └── 📂 Donation_Page_HTML/
-> │          ├── 📄 Donations_Context.md
-> │          └── 📂 Screenshots_Live_Page/
-> │          ├── 📄 _README.md
-> │        └── 📂 05_Timeline/
-> │          ├── 📄 Master_Timeline.md
-> │          ├── 📄 _README.md
-> │      ├── 📄 receipt_usps_tracking.md
-> │      ├── 📄 script_call_lawyers.md
-> │      └── 📂 wi_internal_reference/
-> │        ├── 📄 03_case_log_entry_2025-12-15.html
-> │        └── 📂 05_timeline/
-> │          ├── 📄 _readme.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 timeline_canvas.html
-> │        └── 📂 10_overviews/
-> │          ├── 📄 index-content.html
-> │          ├── 📄 integrate_disability_separate_appeals_get_stay.m4a
-> │          ├── 📄 procedural_failure_map_one_pager.html
-> │          ├── 📄 void_judgment_eviction_crisis.html
-> │          ├── 📄 void_judgment_eviction_crisis.pdf
-> │        ├── 📄 2024-12-09_eviction_case_masterfile.docx
-> │        ├── 📄 2025-12-16_case_log_entry.html
-> │        ├── 📄 2025-12-16_case_summary.html
-> │        └── 📂 20_strategy/
-> │          └── 📂 10_ada_title_ii/
-> │            ├── 📄 index-content.html
-> │          └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │            ├── 📄 index-content.html
-> │          └── 📂 30_void_vs_voidable_tr_60b/
-> │            ├── 📄 index-content.html
-> │          ├── 📄 index-content.html
-> │          ├── 📄 strategic_plan.html
-> │        ├── 📄 _readme.html
-> │        ├── 📄 case-narrative-wrongful-foreclosure-and-displ.html
-> │        ├── 📄 case_conversation_log.html
-> │        ├── 📄 case_conversation_log.txt
-> │        ├── 📄 combinepdf.html
-> │        ├── 📄 combinepdf.pdf
-> │        ├── 📄 contacts.html
-> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.html
-> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.pdf
-> │        ├── 📄 debate.m4a
-> │        ├── 📄 expenses.csv
-> │        ├── 📄 foreclosure-and-housing-litigation-case-record.csv
-> │        ├── 📄 foreclosure_void_judgment_institutional_failur.m4a
-> │        ├── 📄 foreclosure_void_versus_damages_due_process.m4a
-> │        ├── 📄 forensic_audit_of_a_void_foreclosure.m4a
-> │        ├── 📄 inventory-of-civil-and-fair-housing-rights-vio.csv
-> │        ├── 📄 legal-memorandum.html
-> │        ├── 📄 odyssey_envelope_receipt.html
-> │        ├── 📄 odyssey_envelope_receipt.pdf
-> │        └── 📂 personal_narrative/
-> │          └── 📂 01_public_narrative/
-> │            ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
-> │            ├── 📄 index-content.html
-> │            ├── 📄 public_statement.html
-> │          └── 📂 02_exposure_and_harm/
-> │            ├── 📄 cold_risk_report.html
-> │            ├── 📄 index-content.html
-> │            └── 📂 photos_conditions/
-> │              ├── 📄 index-content.html
-> │            └── 📂 weather_reports/
-> │              ├── 📄 index-content.html
-> │          └── 📂 03_internal_analysis/
-> │            ├── 📄 index-content.html
-> │            └── 📂 payout_strategy/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 long_term_payout_strategy.html
-> │            └── 📂 premonitions/
-> │              ├── 📄 index-content.html
-> │              ├── 📄 premonitions_i_knew_before_i_knew.html
-> │            ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
-> │          └── 📂 04_donations_and_support/
-> │            └── 📂 donation_page_html/
-> │              ├── 📄 index-content.html
-> │            ├── 📄 donations_context.html
-> │            ├── 📄 index-content.html
-> │            └── 📂 screenshots_live_page/
-> │              ├── 📄 index-content.html
-> │          └── 📂 05_timeline/
-> │            ├── 📄 index-content.html
-> │            ├── 📄 master_timeline.html
-> │          ├── 📄 index-content.html
-> │        ├── 📄 proposal-for-strategic-reports-in-the-matter-.html
-> │        ├── 📄 talking_points.html
-> │        └── 📂 wi8_00_docket_record/
-> │          └── 📂 legacy/
-> │            └── 📂 30_court_record/
-> │              └── 📂 10_docket/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.00.001__001_complaint.html
-> │                ├── 📄 wi8.00.001__001_complaint.pdf
-> │                ├── 📄 wi8.00.001__002_appearance.html
-> │                ├── 📄 wi8.00.001__002_appearance.pdf
-> │                ├── 📄 wi8.00.001__003_request_for_admissions.html
-> │                ├── 📄 wi8.00.001__003_request_for_admissions.pdf
-> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.html
-> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.pdf
-> │                ├── 📄 wi8.00.001__005_appearance_2.html
-> │                ├── 📄 wi8.00.001__005_appearance_2.pdf
-> │                ├── 📄 wi8.00.001__006_summons_1.html
-> │                ├── 📄 wi8.00.001__006_summons_1.pdf
-> │                ├── 📄 wi8.00.001__007_summons_2.html
-> │                ├── 📄 wi8.00.001__007_summons_2.pdf
-> │                ├── 📄 wi8.00.001__008_summons_3.html
-> │                ├── 📄 wi8.00.001__008_summons_3.pdf
-> │                ├── 📄 wi8.00.001__009_summons_4.html
-> │                ├── 📄 wi8.00.001__009_summons_4.pdf
-> │                ├── 📄 wi8.00.001__010_summons_5.html
-> │                ├── 📄 wi8.00.001__010_summons_5.pdf
-> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.html
-> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.pdf
-> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.html
-> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.pdf
-> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.html
-> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.pdf
-> │                ├── 📄 wi8.00.001__014_affidavit.html
-> │                ├── 📄 wi8.00.001__014_affidavit.pdf
-> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.html
-> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.pdf
-> │                ├── 📄 wi8.00.001__016_affidavit_additional.html
-> │                ├── 📄 wi8.00.001__016_affidavit_additional.pdf
-> │                ├── 📄 wi8.00.001__017_order_denying_default_judgmen.html
-> │                ├── 📄 wi8.00.001__017_order_denying_default_judgment.pdf
-> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.html
-> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.pdf
-> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgme.html
-> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgmen.pdf
-> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgme.html
-> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgmen.pdf
-> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.html
-> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.pdf
-> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.html
-> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.pdf
-> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.html
-> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.pdf
-> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.html
-> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.pdf
-> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.html
-> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.pdf
-> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.html
-> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.pdf
-> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.html
-> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.pdf
-> │                ├── 📄 wi8.00.001__028_report_court_defendant_reques.html
-> │                ├── 📄 wi8.00.001__028_report_court_defendant_request.pdf
-> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declar.html
-> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declara.pdf
-> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.html
-> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.pdf
-> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.html
-> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.pdf
-> │                ├── 📄 wi8.00.001__032_proposed_order_stay.html
-> │                ├── 📄 wi8.00.001__032_proposed_order_stay.pdf
-> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.html
-> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.pdf
-> │                ├── 📄 wi8.00.001___case_summary.html
-> │                ├── 📄 wi8.00.001__index-content.html
-> │                ├── 📄 wi8.00.001__index.html
-> │          ├── 📄 wi8.00.001_full_docket.html
-> │          ├── 📄 wi8.00.001_full_docket.pdf
-> │          ├── 📄 wi8.00.002_docket_notes.html
-> │        └── 📂 wi8_01_public_advocacy/
-> │          ├── 📄 _readme.html
-> │          └── 📂 al_narrative/
-> │            └── 📂 01_public_narrative/
-> │              ├── 📄 _readme.html
-> │              ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
-> │              ├── 📄 wi8.01.010__index-content.html
-> │              ├── 📄 wi8.01.010__index.html
-> │              ├── 📄 wi8.01.010__public_statement.html
-> │          └── 📂 rrative/
-> │            └── 📂 04_donations_and_support/
-> │              ├── 📄 _readme.html
-> │              └── 📂 donation_page_html/
-> │                ├── 📄 wi8.01.050__index-content.html
-> │                ├── 📄 wi8.01.050__index.html
-> │              └── 📂 screenshots_live_page/
-> │                ├── 📄 wi8.01.050__index-content.html
-> │                ├── 📄 wi8.01.050__index.html
-> │              ├── 📄 wi8.01.050__donations_context.html
-> │              ├── 📄 wi8.01.050__index-content.html
-> │              ├── 📄 wi8.01.050__index.html
-> │          ├── 📄 wi8.01.001_press_strategy.html
-> │          ├── 📄 wi8.01.002_social_media_plan.html
-> │          ├── 📄 wi8.01.003_timing_and_risk.html
-> │        └── 📂 wi8_02_damages_and_settlement/
-> │          ├── 📄 _readme.html
-> │          └── 📂 l_narrative/
-> │            └── 📂 02_exposure_and_harm/
-> │              ├── 📄 _readme.html
-> │              └── 📂 photos_conditions/
-> │                ├── 📄 wi8.02.050__index-content.html
-> │                ├── 📄 wi8.02.050__index.html
-> │              └── 📂 weather_reports/
-> │                ├── 📄 wi8.02.050__index-content.html
-> │                ├── 📄 wi8.02.050__index.html
-> │              ├── 📄 wi8.02.050__cold_risk_report.html
-> │              ├── 📄 wi8.02.050__index-content.html
-> │              ├── 📄 wi8.02.050__index.html
-> │          └── 📂 on/
-> │            └── 📂 __legacy/
-> │              └── 📂 00_admin/
-> │                └── 📂 00_trackers/
-> │                  ├── 📄 _readme.html
-> │                  ├── 📄 wi8.02.010__03_case_log_entry_2025-12-15.html
-> │                  ├── 📄 wi8.02.010__2024-12-09_eviction_case_masterfi.docx
-> │                  ├── 📄 wi8.02.010__2025-12-16_case_log_entry.html
-> │                  ├── 📄 wi8.02.010__2025-12-16_case_summary.html
-> │                  ├── 📄 wi8.02.010__case_conversation_log.html
-> │                  ├── 📄 wi8.02.010__case_conversation_log.txt
-> │                  ├── 📄 wi8.02.010__case_log.html
-> │                  ├── 📄 wi8.02.010__expenses.csv
-> │                  ├── 📄 wi8.02.010__financial_tracker.html
-> │                  ├── 📄 wi8.02.010__index-content.html
-> │                  ├── 📄 wi8.02.010__index.html
-> │                  ├── 📄 wi8.02.010__qicase-fcfcu_financial_tracker.xlsx
-> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfc_1.html
-> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfcu_.html
-> │          ├── 📄 wi8.02.001_economic_harm.html
-> │          ├── 📄 wi8.02.002_non_economic_harm.html
-> │          ├── 📄 wi8.02.003_settlement_scenarios.html
-> │        └── 📂 wi8_99_internal_only/
-> │          └── 📂 l_narrative/
-> │            └── 📂 03_internal_analysis/
-> │              ├── 📄 _readme.html
-> │              └── 📂 payout_strategy/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.99.010__index-content.html
-> │                ├── 📄 wi8.99.010__index.html
-> │                ├── 📄 wi8.99.010__long_term_payout_strategy.html
-> │              └── 📂 premonitions/
-> │                ├── 📄 _readme.html
-> │                ├── 📄 wi8.99.010__index-content.html
-> │                ├── 📄 wi8.99.010__index.html
-> │                ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
-> │              ├── 📄 wi8.99.010__index-content.html
-> │              ├── 📄 wi8.99.010__index.html
-> │              ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
-> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_ri.html
-> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_rig.pdf
-> │  └── 📂 narratives/
-> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
-> │    └── 📂 personal_narrative/
-> │      └── 📂 01_Public_Narrative/
-> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │        ├── 📄 Public_Statement.md
-> │      └── 📂 02_Exposure_and_Harm/
-> │        ├── 📄 Cold_Risk_Report.md
-> │        └── 📂 Photos_Conditions/
-> │        └── 📂 Weather_Reports/
-> │      └── 📂 03_Internal_Analysis/
-> │        └── 📂 Payout_Strategy/
-> │          ├── 📄 Long_Term_Payout_Strategy.md
-> │        └── 📂 Premonitions/
-> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
-> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │      └── 📂 04_Donations_and_Support/
-> │        └── 📂 Donation_Page_HTML/
-> │        ├── 📄 Donations_Context.md
-> │        └── 📂 Screenshots_Live_Page/
-> │      └── 📂 05_Timeline/
-> │        ├── 📄 Master_Timeline.md
-> └── 📂 50_PHASES/
-> │  └── 📂 01_Foreclosure_Core_Court_Record/
-> │    └── 📂 01_Docket/
-> │      ├── 📄 Summary - MyCase.html
-> │      ├── 📄 _Case_Summary.md
-> │      └── 📂 docket_files/
-> │        ├── 📄 001_Complaint.pdf
-> │        ├── 📄 002_Appearance.pdf
-> │        ├── 📄 003_Request_for_Admissions.pdf
-> │        ├── 📄 004_Notice_to_Homeowners.pdf
-> │        ├── 📄 005_Appearance_2.pdf
-> │        ├── 📄 006_Summons_1.pdf
-> │        ├── 📄 007_Summons_2.pdf
-> │        ├── 📄 008_Summons_3.pdf
-> │        ├── 📄 009_Summons_4.pdf
-> │        ├── 📄 010_Summons_5.pdf
-> │        ├── 📄 011_Service_Returned_03-05-2025.pdf
-> │        ├── 📄 012_Service_Returned_04-15-2025.pdf
-> │        ├── 📄 013_Motion_for_Default_Judgment.pdf
-> │        ├── 📄 014_Affidavit.pdf
-> │        ├── 📄 015_Affidavit_Attorney_Fees.pdf
-> │        ├── 📄 016_Order_Denying_Motion_for_Default_Judgment.pdf
-> │        ├── 📄 017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
-> │        ├── 📄 018_Omitted_Notice_of_Service.pdf
-> │        ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
-> │        ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
-> │        ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
-> │        ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
-> │        ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
-> │        ├── 📄 023_Decree_Foreclosure_Returned.pdf
-> │        ├── 📄 024_Petition_Writ_of_Assistance.pdf
-> │        ├── 📄 024_Service Returned Served.pdf
-> │        ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
-> │        ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
-> │        ├── 📄 026_Exhibit_List_A-G.pdf
-> │        ├── 📄 027_Supplemental_Motion_Access.pdf
-> │        ├── 📄 028_Report_Court_Defendant_Request.pdf
-> │        ├── 📄 029_Emergency_Supplemental_Declaration.pdf
-> │        ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
-> │        ├── 📄 031_Proposed_Order_Vacate.pdf
-> │        ├── 📄 032_Proposed_Order_Stay.pdf
-> │        ├── 📄 033_ADA_Disability_Affidavit.pdf
-> │        ├── 📄 035_01092026_005.pdf.pdf
-> │        ├── 📄 2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 docket_index.md
-> │    └── 📂 03_Service_Process/
-> │      ├── 📄 affidavits_service.md
-> │      ├── 📄 service_defects_analysis.md
-> │    └── 📂 05_Sale_and_Possesion/
-> │      ├── 📄 possession_admissions.md
-> │    └── 📂 06_Financial_Accounting/
-> │      ├── 📄 interest_fee_irregularities.md
-> │      ├── 📄 surplus_definciency_analysis.md
-> │    └── 📂 10_2025-12-10_motion_vacate/
-> │      └── 📂 01_drafts/
-> │        ├── 📄 Emergency Motions.docx
-> │      └── 📂 02_exhibits/
-> │        ├── 📄 01_motion_vacate.pdf
-> │        ├── 📄 02_emergency_motion_quash_stay.pdf
-> │        ├── 📄 03_order_vacate_proposed.pdf
-> │        ├── 📄 04_order_stay_writ_proposed.pdf
-> │        ├── 📄 05_Exhibit_List.pdf
-> │        ├── 📄 06_Exhibits_Combined.pdf
-> │        ├── 📄 combinepdf.pdf
-> │      └── 📂 03_proposed_order/
-> │        ├── 📄 Proposed_Order_Vacate.docx
-> │      └── 📂 04_filed_receipts/
-> │        ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │      └── 📂 01_drafts/
-> │        ├── 📄 Supplemental_Emergency_Motion.pdf
-> │      └── 📂 02_exhibits/
-> │        ├── 📄 20_exhibits_combined_source
-> │        ├── 📄 Exhibit_H_Declaration.pdf
-> │      └── 📂 04_filed_receipts/
-> │        ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │  └── 📂 02_credit_reporting_FCRA/
-> │    └── 📂 05_Reputational_Pressure/
-> │      └── 📂 better_business_bureau/
-> │        ├── 📄 complaint.md
-> │  └── 📂 06_Public_Accountability/
-> │    ├── 📄 00_README_LOCK.md
-> │  └── 📂 10_ada_title_ii/
-> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │  └── 📂 30_void_vs_voidable_tr_60b/
-> │  └── 📂 90_settlement/
-> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
-> │  ├── 📄 Strategic_Plan.canvas
-> │  └── 📂 checklists/
-> │    ├── 📄 PROMOTION_CHECKLIST.md
-> │  └── 📂 communication/
-> │    ├── 📄 Talking_Points.md
-> │    ├── 📄 Talking_Points_ingest.md
-> │  └── 📂 draft_plans/
-> │    └── 📂 15_parallel_enforcement/
-> │      ├── 📄 _readme.html
-> │      ├── 📄 wg6.01.001_doj_complaint.html
-> │      ├── 📄 wg6.01.002_icrc_complaint.html
-> │      ├── 📄 wg6.01.003_status_tracker.html
-> │    └── 📂 40_claims_motions/
-> │      └── 📂 10_draft_motions/
-> │        ├── 📄 EMERGENCY_FILING_PACKET.md
-> │        ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
-> │        ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
-> │        ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
-> │        ├── 📄 WC2.00.010___Motions.md
-> │        ├── 📄 WC2.00.010__motion_emergency_stay_of_writ (2).docx
-> │        ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
-> │        ├── 📄 WC2.00.010__motion_emergency_supplemental_mot (2).docx
-> │        ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
-> │        ├── 📄 WC2.00.010__motion_to_vacate_void_judgement (2).docx
-> │        ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index (2).html
-> │        ├── 📄 motion_emergency_stay_of_writ.md
-> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
-> │        ├── 📄 motion_to_vacate_void_judgment.md
-> │        └── 📂 motions_templates/
-> │          ├── 📄 _Motions.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 wc2.00.001_draft_motion_vacate.html
-> │        ├── 📄 wc2.00.002_draft_emergency_stay.html
-> │        ├── 📄 wc2.00.003_draft_supplemental.html
-> │        ├── 📄 wc2.00.010___motions.html
-> │        ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
-> │        ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
-> │        ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
-> │        ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
-> │        ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
-> │        ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
-> │      └── 📂 20_proposed_orders/
-> │        ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
-> │        ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
-> │        ├── 📄 WC2.01.010__Proposed_Orders.md
-> │        ├── 📄 WC2.01.010__index (2).html
-> │        ├── 📄 WC2.01.010__index.md
-> │        ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
-> │        ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index (2).html
-> │        ├── 📄 proposed_order_emergency_stay.md
-> │        ├── 📄 proposed_order_motion_to_vacate.md
-> │        └── 📂 proposed_templates/
-> │          ├── 📄 Proposed_Orders.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 wc2.01.001_draft_order_vacate.html
-> │        ├── 📄 wc2.01.002_draft_order_stay.html
-> │        ├── 📄 wc2.01.010__index-content.html
-> │        ├── 📄 wc2.01.010__index.html
-> │        ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
-> │        ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
-> │        ├── 📄 wc2.01.010__proposed_orders.html
-> │    └── 📂 80_hearing_planner/
-> │      └── 📂 2025-01-09_hearing/
-> │        ├── 📄 HEARING CHEAT SHEET.md
-> │      ├── 📄 _COURT_MODE_BUTTONS.md.md
-> │      ├── 📄 _COURT_MODE_PLAYBOOK.md.md
-> │      ├── 📄 _README.md
-> │    └── 📂 WI8_01_PUBLIC_ADVOCACY/
-> │      ├── 📄 WI8.01.001_PRESS_STRATEGY.md
-> │      ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
-> │      ├── 📄 WI8.01.003_TIMING_AND_RISK.md
-> │      ├── 📄 _README.md
-> │      └── 📂 al_narrative/
-> │        └── 📂 01_Public_Narrative/
-> │          ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> │          ├── 📄 WI8.01.010__Public_Statement.md
-> │          ├── 📄 WI8.01.010__index.html
-> │          ├── 📄 _README.md
-> │      └── 📂 rrative/
-> │        └── 📂 04_Donations_and_Support/
-> │          └── 📂 Donation_Page_HTML/
-> │            ├── 📄 WI8.01.050__index.html
-> │          └── 📂 Screenshots_Live_Page/
-> │            ├── 📄 WI8.01.050__index.html
-> │          ├── 📄 WI8.01.050__Donations_Context.md
-> │          ├── 📄 WI8.01.050__index.html
-> │          ├── 📄 _README.md
-> │    └── 📂 WI8_02_DAMAGES_AND_SETTLEMENT/
-> │      ├── 📄 WI8.02.001_ECONOMIC_HARM.md
-> │      ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
-> │      ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
-> │      ├── 📄 _README.md
-> │      └── 📂 l_narrative/
-> │        └── 📂 02_Exposure_and_Harm/
-> │          └── 📂 Photos_Conditions/
-> │            ├── 📄 WI8.02.050__index.html
-> │          ├── 📄 WI8.02.050__Cold_Risk_Report.md
-> │          ├── 📄 WI8.02.050__index.html
-> │          └── 📂 Weather_Reports/
-> │            ├── 📄 WI8.02.050__index.html
-> │          ├── 📄 _README.md
-> │      └── 📂 on/
-> │        └── 📂 __legacy/
-> │          └── 📂 00_admin/
-> │            └── 📂 00_trackers/
-> │              ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
-> │              ├── 📄 WI8.02.010__2024-12-09_Eviction_Case_MasterFi.docx
-> │              ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
-> │              ├── 📄 WI8.02.010__2025-12-16_case_summary.md
-> │              ├── 📄 WI8.02.010__Case_Log.md
-> │              ├── 📄 WI8.02.010__Financial_Tracker.md
-> │              ├── 📄 WI8.02.010__QiCase-FCFCU_Financial_Tracker.xlsx
-> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
-> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
-> │              ├── 📄 WI8.02.010__case_conversation_log.txt
-> │              ├── 📄 WI8.02.010__expenses.csv
-> │              ├── 📄 WI8.02.010__index.html
-> │              ├── 📄 WI8.02.010__index.md
-> │              ├── 📄 _README.md
-> │  └── 📂 strategies/
-> │    └── 📂 promotion_pipeline/
-> │      └── 📂 _PROMOTION/
-> │        ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
-> │        ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
-> │        ├── 📄 WZ9.00.003_PROMOTION_LOG.md
-> │        ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
-> │        └── 📂 WZ9_00_050_FILINGS/
-> │          └── 📂 Supplemental/
-> │            └── 📂 01_drafts/
-> │              ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
-> │              ├── 📄 WZ9.00.050__index.html
-> │            └── 📂 02_exhibits/
-> │              ├── 📄 WZ9.00.050__20_exhibits_combined_source
-> │              ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
-> │              ├── 📄 WZ9.00.050__index.html
-> │            └── 📂 04_filed_receipts/
-> │              ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │              ├── 📄 WZ9.00.050__index.html
-> │            ├── 📄 WZ9.00.050__index.html
-> │          ├── 📄 WZ9.00.050__Motions.md
-> │          ├── 📄 WZ9.00.050__index.html
-> │          ├── 📄 _README.md
-> │          └── 📂 motion_vacate/
-> │            └── 📂 01_drafts/
-> │              ├── 📄 WZ9.00.050__Emergency Motions.docx
-> │              ├── 📄 WZ9.00.050__index.html
-> │            └── 📂 02_exhibits/
-> │              ├── 📄 WZ9.00.050__01_motion_vacate.pdf
-> │              ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
-> │              ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
-> │              ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
-> │              ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
-> │              ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
-> │              ├── 📄 WZ9.00.050__combinepdf.pdf
-> │              ├── 📄 WZ9.00.050__index.html
-> │            └── 📂 03_proposed_order/
-> │              ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
-> │              ├── 📄 WZ9.00.050__index.html
-> │            └── 📂 04_filed_receipts/
-> │              ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │              ├── 📄 WZ9.00.050__index.html
-> │            ├── 📄 WZ9.00.050__.gitkeep
-> │            ├── 📄 WZ9.00.050__index.html
-> │        ├── 📄 _README.md
-> │      ├── 📄 _readme.html
-> │      ├── 📄 wz9.00.001_ready_for_binder.html
-> │      ├── 📄 wz9.00.002_rejected_for_court.html
-> │      ├── 📄 wz9.00.003_promotion_log.html
-> │      ├── 📄 wz9.00.010_promotion_checklist.html
-> │      └── 📂 wz9_00_050_filings_intake/
-> └── 📂 60_OUTPUTS_EXPORTS/
-> │  └── 📂 01_COURT_BINDER_PRINT_READY/
-> │    └── 📂 A_ANCHOR_OVERVIEW/
-> │      └── 📂 A0_00_COVER_INDEX/
-> │        ├── 📄 A0.00.000_SECTION_COVER.md
-> │        ├── 📄 A0.00.010_MASTER_CASE_INDEX.md
-> │        ├── 📄 _README.md
-> │      └── 📂 A0_01_OVERVIEW/
-> │        ├── 📄 A0.01.001_ONE_PAGE_CASE_SUMMARY.md
-> │        ├── 📄 A0.01.002_HEARING_SCOPE_AND_RELIEF.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 B_BASIS_ISSUE_AND_LAW/
-> │      └── 📂 B1_00_COVER/
-> │        ├── 📄 B1.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 B1_01_ISSUE_LAW/
-> │        ├── 📄 B1.01.001_CORE_ISSUE_STATEMENT.md
-> │        ├── 📄 B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
-> │        ├── 📄 B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 C_CLAIMS_AND_MOTIONS/
-> │      ├── 📄 01A_TAB_01_MOTION.md
-> │      ├── 📄 01B_Motion_To_Vacate_Void_Judgment.pdf
-> │      └── 📂 C2_00_COVER/
-> │        ├── 📄 C2.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 C2_01_MOTION_VACATE/
-> │        ├── 📄 C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
-> │        ├── 📄 C2.01.002_motion_vacate.pdf
-> │        ├── 📄 C2.01.003_Exhibit_List.pdf
-> │        ├── 📄 C2.01.004_Exhibits_Combined.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 c2.01.002_motion_vacate (2).pdf
-> │        ├── 📄 c2.01.003_exhibit_list (2).pdf
-> │        ├── 📄 c2.01.004_exhibits_combined (2).pdf
-> │      └── 📂 C2_02_EMERGENCY_STAY_QUASH/
-> │        ├── 📄 C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
-> │        ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 c2.02.002_emergency_motion_stay_or_quash (2).pdf
-> │      └── 📂 C2_03_SUPPLEMENTAL/
-> │        ├── 📄 C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
-> │        ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 C2.03.003_EXHIBIT_H_DECLARATION.pdf
-> │        ├── 📄 C2.03.004_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 C2.03.005_COMBINED_SOURCE.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 c2.03.002_supplemental_emergency_motion (2).pdf
-> │        ├── 📄 c2.03.003_exhibit_h_declaration (2).pdf
-> │        ├── 📄 c2.03.004_odyssey_envelope_receipt (2).pdf
-> │        ├── 📄 c2.03.005_combined_source (2).pdf
-> │      └── 📂 C2_04_PROPOSED_ORDERS/
-> │        ├── 📄 C2.04.001_PROPOSED_ORDER_VACATE.md
-> │        ├── 📄 C2.04.001_order_vacate_proposed.pdf
-> │        ├── 📄 C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
-> │        ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 c2.04.001_order_vacate_proposed (2).pdf
-> │        ├── 📄 c2.04.002_order_stay_writ_proposed (2).pdf
-> │      ├── 📄 _README.md
-> │    └── 📂 D_DELIVERY_SERVICE/
-> │      └── 📂 D3_00_COVER/
-> │        ├── 📄 D3.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 D3_01_SUMMONS/
-> │        ├── 📄 D3.01.001_SUMMONS_INCOMPLETE.pdf
-> │        ├── 📄 d3.01.001_summons_incomplete (2).pdf
-> │      └── 📂 D3_02_SHERIFF_RETURNS/
-> │        ├── 📄 D3.02.001_SHERIFF_RETURN_2025-03-05.pdf
-> │        ├── 📄 D3.02.002_SHERIFF_RETURN_2025-04-15.pdf
-> │        ├── 📄 d3.02.001_sheriff_return_2025-03-05 (2).pdf
-> │        ├── 📄 d3.02.002_sheriff_return_2025-04-15 (2).pdf
-> │      └── 📂 D3_03_SERVICE_ANALYSIS/
-> │        ├── 📄 D3.03.001_SERVICE_DEFECT_ANALYSIS.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 E_EFFECTS_PROCEDURAL_CHAIN/
-> │      └── 📂 E4_00_COVER/
-> │        ├── 📄 E4.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 E4_01_DEFAULT_JUDGMENT/
-> │        ├── 📄 E4.01.001_DEFAULT_JUDGMENT_ENTRY.pdf
-> │        ├── 📄 e4.01.001_default_judgment_entry (2).pdf
-> │      └── 📂 E4_02_PETITION_FOR_WRIT/
-> │        ├── 📄 E4.02.001_PETITION_FOR_WRIT_OF_ASSISTANCE.pdf
-> │        ├── 📄 e4.02.001_petition_for_writ_of_assistance (2).pdf
-> │      └── 📂 E4_03_WRIT_ISSUED/
-> │        ├── 📄 E4.03.001_WRIT_OF_ASSISTANCE_ISSUED.pdf
-> │        ├── 📄 e4.03.001_writ_of_assistance_issued (2).pdf
-> │      └── 📂 E4_04_REMOVAL_ENFORCEMENT/
-> │        ├── 📄 E4.04.001_REMOVAL_ENFORCEMENT_RECORD.pdf
-> │        ├── 📄 e4.04.001_removal_enforcement_record (2).pdf
-> │      └── 📂 E4_05_CHAIN_SUMMARY/
-> │        ├── 📄 E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 F_FACTS_DECLARATIONS/
-> │      └── 📂 F5_00_COVER/
-> │        ├── 📄 F5.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 F5_01_AFFIDAVIT_NOT_SERVED/
-> │        ├── 📄 F5.01.001_AFFIDAVIT_NOT_SERVED.md
-> │        ├── 📄 _README.md
-> │      └── 📂 F5_02_DECLARATION_ONGOING_HARM/
-> │        ├── 📄 F5.02.001_DECLARATION_ONGOING_HARM.md
-> │        ├── 📄 _README.md
-> │      └── 📂 F5_03_CREDIBILITY_DECLARATION/
-> │        ├── 📄 F5.03.001_CREDIBILITY_DECLARATION.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 G_GROUNDS_ADA/
-> │      └── 📂 G6_00_COVER/
-> │        ├── 📄 G6.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 G6_01_ADA_NOTICE/
-> │        ├── 📄 G6.01.001_ADA_NOTICE.pdf
-> │        ├── 📄 g6.01.001_ada_notice (2).pdf
-> │      └── 📂 G6_02_ADA_SUPPORTING/
-> │        ├── 📄 G6.02.001_ADA_SUPPORTING_DOCUMENTATION.pdf
-> │        ├── 📄 g6.02.001_ada_supporting_documentation (2).pdf
-> │      └── 📂 G6_03_ADA_IMPACT_SUMMARY/
-> │        ├── 📄 G6.03.001_ADA_IMPACT_SUMMARY.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 H_HARD_EXHIBITS/
-> │      ├── 📄 02A_TAB_02_EXHIBITS.md
-> │      ├── 📄 02B_Exhibits_Index.md
-> │      ├── 📄 02C_Exhibits.pdf
-> │      └── 📂 H7_00_COVER/
-> │        ├── 📄 H7.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_01_EXHIBITS_A-H/
-> │        ├── 📄 H7.01.0001-0008_EXHIBITS_COMBINED.pdf
-> │        ├── 📄 H7.01.0001_EXHIBIT_A_SHERIFF_RETURN_2025-03-05.pdf
-> │        ├── 📄 H7.01.0002_EXHIBIT_B_SHERIFF_RETURN_2025-04-15.pdf
-> │        ├── 📄 H7.01.0003_EXHIBIT_C_INCOMPLETE_SUMMONS.pdf
-> │        ├── 📄 H7.01.0004_EXHIBIT_D_DEFAULT_JUDGMENT_MOTION.pdf
-> │        ├── 📄 H7.01.0005_EXHIBIT_E_PETITION_FOR_WRIT.pdf
-> │        ├── 📄 H7.01.0006_EXHIBIT_F_AFFIDAVIT.pdf
-> │        ├── 📄 H7.01.0007_EXHIBIT_G1_ADA_NOTICE.pdf
-> │        ├── 📄 H7.01.0008_EXHIBIT_G2_AES_ADA_DOCUMENTS.pdf
-> │        ├── 📄 H7.01.0009_EXHIBIT_H_DECLARATION_OF_BACKGROUND.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 h7.01.0001-0008_exhibits_combined (2).pdf
-> │        ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-05 (2).pdf
-> │        ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-15 (2).pdf
-> │        ├── 📄 h7.01.0003_exhibit_c_incomplete_summons (2).pdf
-> │        ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion (2).pdf
-> │        ├── 📄 h7.01.0005_exhibit_e_petition_for_writ (2).pdf
-> │        ├── 📄 h7.01.0006_exhibit_f_affidavit (2).pdf
-> │        ├── 📄 h7.01.0007_exhibit_g1_ada_notice (2).pdf
-> │        ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents (2).pdf
-> │        ├── 📄 h7.01.0009_exhibit_h_declaration_of_background (2).pdf
-> │      └── 📂 H7_02_EXHIBITS_I_ADA/
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_03_EXHIBITS_J_REMOVAL/
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_04_EXHIBITS_K_FINANCIAL/
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_05_EXHIBITS_L_STATEMENTS/
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_06_EXHIBITS_M_SERVICE/
-> │        ├── 📄 _README.md
-> │      └── 📂 H7_07_EXHIBITS_P_PROPERTY/
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │    └── 📂 I_INTERNAL_REFERENCE/
-> │      └── 📂 I8_00_COVER/
-> │        ├── 📄 I8.00.000_SECTION_COVER.md
-> │        ├── 📄 _README.md
-> │      └── 📂 I8_01_FULL_DOCKET/
-> │        ├── 📄 I8_01_000_CASE_SUMMARY.md
-> │        ├── 📄 I8_01_000_FULL_DOCKET.pdf
-> │        ├── 📄 I8_01_001_Complaint.pdf
-> │        ├── 📄 I8_01_002_Appearance.pdf
-> │        ├── 📄 I8_01_003_Request_for_Admissions.pdf
-> │        ├── 📄 I8_01_004_Notice_to_Homeowners.pdf
-> │        ├── 📄 I8_01_005_Appearance_2.pdf
-> │        ├── 📄 I8_01_006_Summons_1.pdf
-> │        ├── 📄 I8_01_007_Summons_2.pdf
-> │        ├── 📄 I8_01_008_Summons_3.pdf
-> │        ├── 📄 I8_01_009_Summons_4.pdf
-> │        ├── 📄 I8_01_010_Summons_5.pdf
-> │        ├── 📄 I8_01_011_Service_Returned_03-05-2025.pdf
-> │        ├── 📄 I8_01_012_Service_Returned_04-15-2025.pdf
-> │        ├── 📄 I8_01_013_Motion_for_Default_Judgment.pdf
-> │        ├── 📄 I8_01_014_Affidavit.pdf
-> │        ├── 📄 I8_01_015_Affidavit_Attorney_Fees.pdf
-> │        ├── 📄 I8_01_016_Affidavit_Additional.pdf
-> │        ├── 📄 I8_01_017_Order_Denying_Default_Judgment.pdf
-> │        ├── 📄 I8_01_018_Omitted_Notice_of_Service.pdf
-> │        ├── 📄 I8_01_019_Amended_Motion_Default_Judgment_1.pdf
-> │        ├── 📄 I8_01_020_Amended_Motion_Default_Judgment_2.pdf
-> │        ├── 📄 I8_01_021_Praecipe_Sheriff_Sale_1.pdf
-> │        ├── 📄 I8_01_022_Praecipe_Sheriff_Sale_2.pdf
-> │        ├── 📄 I8_01_023_Decree_Foreclosure_Returned.pdf
-> │        ├── 📄 I8_01_024_Petition_Writ_of_Assistance.pdf
-> │        ├── 📄 I8_01_025_Motion_Vacate_Stay_Writ.pdf
-> │        ├── 📄 I8_01_026_Exhibit_List_A-G.pdf
-> │        ├── 📄 I8_01_027_Supplemental_Motion_Access.pdf
-> │        ├── 📄 I8_01_028_Report_Court_Defendant_Request.pdf
-> │        ├── 📄 I8_01_029_Emergency_Supplemental_Declaration.pdf
-> │        ├── 📄 I8_01_030_Report_Sheriff_Sale_No_Excess.pdf
-> │        ├── 📄 I8_01_031_Proposed_Order_Vacate.pdf
-> │        ├── 📄 I8_01_032_Proposed_Order_Stay.pdf
-> │        ├── 📄 I8_01_033_ADA_Disability_Affidavit.pdf
-> │        ├── 📄 _README.md
-> │        ├── 📄 i8_01_000_full_docket (2).pdf
-> │        ├── 📄 i8_01_001_complaint (2).pdf
-> │        ├── 📄 i8_01_002_appearance (2).pdf
-> │        ├── 📄 i8_01_003_request_for_admissions (2).pdf
-> │        ├── 📄 i8_01_004_notice_to_homeowners (2).pdf
-> │        ├── 📄 i8_01_005_appearance_2 (2).pdf
-> │        ├── 📄 i8_01_006_summons_1 (2).pdf
-> │        ├── 📄 i8_01_007_summons_2 (2).pdf
-> │        ├── 📄 i8_01_008_summons_3 (2).pdf
-> │        ├── 📄 i8_01_009_summons_4 (2).pdf
-> │        ├── 📄 i8_01_010_summons_5 (2).pdf
-> │        ├── 📄 i8_01_011_service_returned_03-05-2025 (2).pdf
-> │        ├── 📄 i8_01_012_service_returned_04-15-2025 (2).pdf
-> │        ├── 📄 i8_01_013_motion_for_default_judgment (2).pdf
-> │        ├── 📄 i8_01_014_affidavit (2).pdf
-> │        ├── 📄 i8_01_015_affidavit_attorney_fees (2).pdf
-> │        ├── 📄 i8_01_016_affidavit_additional (2).pdf
-> │        ├── 📄 i8_01_017_order_denying_default_judgment (2).pdf
-> │        ├── 📄 i8_01_018_omitted_notice_of_service (2).pdf
-> │        ├── 📄 i8_01_019_amended_motion_default_judgment_1 (2).pdf
-> │        ├── 📄 i8_01_020_amended_motion_default_judgment_2 (2).pdf
-> │        ├── 📄 i8_01_021_praecipe_sheriff_sale_1 (2).pdf
-> │        ├── 📄 i8_01_022_praecipe_sheriff_sale_2 (2).pdf
-> │        ├── 📄 i8_01_023_decree_foreclosure_returned (2).pdf
-> │        ├── 📄 i8_01_024_petition_writ_of_assistance (2).pdf
-> │        ├── 📄 i8_01_025_motion_vacate_stay_writ (2).pdf
-> │        ├── 📄 i8_01_026_exhibit_list_a-g (2).pdf
-> │        ├── 📄 i8_01_027_supplemental_motion_access (2).pdf
-> │        ├── 📄 i8_01_028_report_court_defendant_request (2).pdf
-> │        ├── 📄 i8_01_029_emergency_supplemental_declaration (2).pdf
-> │        ├── 📄 i8_01_030_report_sheriff_sale_no_excess (2).pdf
-> │        ├── 📄 i8_01_031_proposed_order_vacate (2).pdf
-> │        ├── 📄 i8_01_032_proposed_order_stay (2).pdf
-> │        ├── 📄 i8_01_033_ada_disability_affidavit (2).pdf
-> │      └── 📂 I8_02_RESEARCH_NOTES/
-> │        ├── 📄 I8.02.001_RESEARCH_AND_NOTES.md
-> │        ├── 📄 _README.md
-> │      └── 📂 I8_99_DO_NOT_PRINT/
-> │        ├── 📄 I8.99.999_INTERNAL_DO_NOT_PRINT.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │  └── 📂 10_Covers/
-> │    ├── 📄 00A_Cover.html
-> │    ├── 📄 00A_Cover_Court.html
-> │    ├── 📄 00A_Cover_Opposing.html
-> │    ├── 📄 00B_Spine.html
-> │    ├── 📄 Binder Covers.pdf
-> │  └── 📂 20_PRINT_BINDERS/
-> │    ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │    ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │    ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │    ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> ├── 📄 README.md
-> └── 📂 _INGEST/
-> │  └── 📂 10_supporting/
-> │    └── 📂 10_photos_video/
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │      ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │    └── 📂 20_receipts/
-> │      ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │    └── 📂 30_declarations/
-> │    └── 📂 40_affidavits/
-> │      └── 📂 ada-disability/
-> │      └── 📂 character/
-> │      └── 📂 community-service/
-> │      └── 📂 credibility/
-> │      └── 📂 observations/
-> │  └── 📂 20_property/
-> │    └── 📂 10_mortgage_history/
-> │      └── 📂 20_payments/
-> │        ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │    └── 📂 20_parcel/
-> │      ├── 📄 Parcel_6016506_PRC.pdf
-> │      ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │  └── 📂 30_declarations/
-> │  └── 📂 30_fcfcu/
-> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │    ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
-> │    ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │    ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │    ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │    ├── 📄 2024-20-03_Response_to_tax_notice.pdf
-> │    ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │    ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │    ├── 📄 20241204_FCFCU_Statement.pdf
-> │    ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
-> │    ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │    ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │    ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │    ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │    ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
-> │    ├── 📄 _README.md
-> │  └── 📂 40_affidavits/
-> │    └── 📂 ada-disability/
-> │    └── 📂 character/
-> │    └── 📂 community-service/
-> │    └── 📂 credibility/
-> │    └── 📂 observations/
-> │  └── 📂 50_aes/
-> │    ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │    ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
-> │    ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │    ├── 📄 WH7.00.020__2025-12-16_AES_Emergency_Notice.md
-> │    ├── 📄 _README.md
-> │  └── 📂 99__archive/
-> │    ├── 📄 WH7.00.020__README_supporting.md
-> │    ├── 📄 _README.md
-> │  └── 📂 _raw_evidence/
+> this is almost clean i think where i have some duplicates or an issue to lock in is the bourt binder print ready, the court binder is the organization of the conocial file system, the bible the one only i see, and then there are binder packets the ones given to the judge or counsel courrated depending onthe venue purpose and strategy, how do we snap ans snear this correctly. ```markdown
+
+> . 📂 content
+
+> └── 📂 00_ADMIN/
+
+> │  ├── 📄 00_README_SYSTEM.md
+
+> │  └── 📂 00_trackers/
+
+> │    └── 📂 00_index/
+
+> │      ├── 📄 working_Master_Index.md
+
+> │    └── 📂 01_case_logs/
+
+> │      ├── 📄 Case_Log.md
+
+> │      ├── 📄 case_conversation_log.txt
+
+> │    └── 📂 02_financial/
+
+> │      ├── 📄 Financial_Tracker.md
+
+> │      ├── 📄 expenses.csv
+
+> │    └── 📂 10_violations/
+
+> │      ├── 📄 Violation_Index.csv
+
+> │    └── 📂 20_financial/
+
+> │      ├── 📄 Financial_Tracker.md
+
+> │      ├── 📄 financial_actuals.csv
+
+> │    └── 📂 30_damages/
+
+> │      ├── 📄 damages_estimates.csv
+
+> │  └── 📂 10_overviews/
+
+> │    └── 📂 10_maps/
+
+> │      ├── 📄 Procedural_failure_map_one_pager.md
+
+> │    └── 📂 20_deep_dives/
+
+> │      ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │    └── 📂 30_critiques/
+
+> │    └── 📂 40_debates/
+
+> │    └── 📂 50_explainers/
+
+> │    └── 📂 60_infographics/
+
+> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │    └── 📂 70_reports/
+
+> │  └── 📂 50_integrity_tooling/
+
+> │    ├── 📄 audit_fcfcu.py
+
+> │    ├── 📄 create_masters.py
+
+> │    ├── 📄 fix_court_binder.py
+
+> │  └── 📂 60_templates/
+
+> │    └── 📂 _templates/
+
+> │      └── 📂 10_motions/
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 motion_emergency_stay_of_writ.docx
+
+> │        ├── 📄 motion_emergency_stay_of_writ.md
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │        ├── 📄 motion_to_vacate_void_judgement.docx
+
+> │        ├── 📄 motion_to_vacate_void_judgment.md
+
+> │        └── 📂 motions_templates/
+
+> │          ├── 📄 _Motions.md
+
+> │      └── 📂 20_declarations_affidavits/
+
+> │        ├── 📄 affidavit_not_served.docx
+
+> │        ├── 📄 affidavit_not_served.md
+
+> │        └── 📂 affidavits_templates/
+
+> │          ├── 📄 ADA_Disability_Affidavit.md
+
+> │          ├── 📄 Character_Affidavit.md
+
+> │          ├── 📄 Community_Service_Affidavit.md
+
+> │          ├── 📄 Credibility_Affidavit.md
+
+> │          ├── 📄 Observations_Affidavit.md
+
+> │          ├── 📄 _Instructions_for_witnesses.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 declarations_templates/
+
+> │          ├── 📄 Gender_Identity_Clarification.md
+
+> │          ├── 📄 _Declarations.md
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 updated_affidavit_language.md
+
+> │        ├── 📄 verified_affidavit_of_defendant.md
+
+> │      └── 📂 30_exhibits/
+
+> │        ├── 📄 exhibit_list.docx
+
+> │        ├── 📄 exhibit_list.md
+
+> │        └── 📂 exhibits_templates/
+
+> │          ├── 📄 _Exhibits_Lists.md
+
+> │      └── 📂 40_others/
+
+> │        ├── 📄 ada_packet.md
+
+> │        ├── 📄 attorney_brief.md
+
+> │        ├── 📄 index.md
+
+> │        └── 📂 outreach_templates/
+
+> │          ├── 📄 _Advocate_Outreach_Message.md
+
+> │        ├── 📄 receipt_usps_tracking.md
+
+> │        ├── 📄 script_call_lawyers.md
+
+> │      └── 📂 50_proposed_orders/
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 proposed_order_emergency_stay.md
+
+> │        ├── 📄 proposed_order_motion_to_vacate.md
+
+> │        └── 📂 proposed_templates/
+
+> │          ├── 📄 Proposed_Orders.md
+
+> │      └── 📂 dc_claims_and_motions/
+
+> │        └── 📂 50_proposed_orders/
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 proposed_order_emergency_stay.html
+
+> │          ├── 📄 proposed_order_motion_to_vacate.html
+
+> │          └── 📂 proposed_templates/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 proposed_orders.html
+
+> │        ├── 📄 emergency_filing_packet.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 motion_emergency_stay_of_writ.docx
+
+> │        ├── 📄 motion_emergency_stay_of_writ.html
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.docx
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_.html
+
+> │        ├── 📄 motion_to_vacate_void_judgement.docx
+
+> │        ├── 📄 motion_to_vacate_void_judgment.html
+
+> │        └── 📂 motions_templates/
+
+> │          ├── 📄 _motions.html
+
+> │          ├── 📄 index-content.html
+
+> │        ├── 📄 proposed_order_vacate.docx
+
+> │      └── 📂 df_facts_declarations/
+
+> │        ├── 📄 affidavit_not_served.docx
+
+> │        ├── 📄 affidavit_not_served.html
+
+> │        └── 📂 affidavits_templates/
+
+> │          ├── 📄 _instructions_for_witnesses.html
+
+> │          ├── 📄 ada_disability_affidavit.html
+
+> │          ├── 📄 character_affidavit.html
+
+> │          ├── 📄 community_service_affidavit.html
+
+> │          ├── 📄 credibility_affidavit.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 observations_affidavit.html
+
+> │        └── 📂 declarations_templates/
+
+> │          ├── 📄 _declarations.html
+
+> │          ├── 📄 gender_identity_clarification.html
+
+> │          ├── 📄 index-content.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 updated_affidavit_language.html
+
+> │        ├── 📄 verified_affidavit_of_defendant.html
+
+> │      └── 📂 dh_hard_exhibits/
+
+> │        ├── 📄 exhibit_list.docx
+
+> │        ├── 📄 exhibit_list.html
+
+> │        └── 📂 exhibits_templates/
+
+> │          ├── 📄 _exhibits_lists.html
+
+> │          ├── 📄 index-content.html
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 template_exhibit_label.html
+
+> │      └── 📂 di_internal_reference/
+
+> │        ├── 📄 ada_packet.html
+
+> │        ├── 📄 attorney_brief.html
+
+> │        ├── 📄 index-content.html
+
+> │        └── 📂 outreach_templates/
+
+> │          ├── 📄 _advocate_outreach_message.html
+
+> │          ├── 📄 index-content.html
+
+> │        ├── 📄 receipt_usps_tracking.html
+
+> │        ├── 📄 script_call_lawyers.html
+
+> │        ├── 📄 template_court_doc.html
+
+> │        ├── 📄 template_handup_packet_note.html
+
+> │        ├── 📄 template_section_cover.html
+
+> │        ├── 📄 template_section_index.html
+
+> │        ├── 📄 template_war_note.html
+
+> │  └── 📂 90_logs/
+
+> │    ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │    ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │    ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │    ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    ├── 📄 2025-12-16_fcfcu_case_dna_strat.md
+
+> │    ├── 📄 2025-12-21_Case_Summary.md
+
+> │    ├── 📄 Case_Log.md
+
+> │    ├── 📄 cleanup_log_2026_01_16.md
+
+> │  ├── 📄 Contacts_ingest.md
+
+> │  ├── 📄 cleanup_log_2026_01_16.md
+
+> └── 📂 10_TIMELINE/
+
+> │  └── 📂 10_2023/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 2025/
+
+> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
+
+> │    ├── 📄 2025-01-16_Case_Filed.md
+
+> │    ├── 📄 2025-01-16_case_filed.html
+
+> │    ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │    ├── 📄 2025-03-05_service_attempt_1.html
+
+> │    ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │    ├── 📄 2025-04-15_service_attempt_2.html
+
+> │    ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │    ├── 📄 2025-05-13_motion_for_default_judgment.html
+
+> │    ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │    ├── 📄 2025-05-21_order_denying_default_judgment.html
+
+> │    ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │    ├── 📄 2025-05-23_amended_motion_default_judgment.html
+
+> │    ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │    ├── 📄 2025-05-28_default_judgment_entered.html
+
+> │    ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │    ├── 📄 2025-05-30_praecipe_sheriff_sale.html
+
+> │    ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │    ├── 📄 2025-07-09_sheriff_sale_notice_posted.html
+
+> │    ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │    ├── 📄 2025-08-15_sheriff_sale.html
+
+> │    ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │    ├── 📄 2025-10-29_petition_for_writ_of_assistance.html
+
+> │    ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │    ├── 📄 2025-11-06_writ_of_assistance_issued.html
+
+> │    ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │    ├── 📄 2025-12-09_writ_executed_removal.html
+
+> │    ├── 📄 2025-12-10_Motions_Filed.md
+
+> │    ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │    ├── 📄 2025-12-11_court_orders_and_hearing_scheduled.html
+
+> │    ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │    ├── 📄 2025-12-12_supplemental_emergency_motion.html
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 index-content.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_2024/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_2025/
+
+> │    └── 📂 events/
+
+> │      ├── 📄 2025-01-16_Case_Filed.md
+
+> │      ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │      ├── 📄 2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │      ├── 📄 2025-12-21_Case_Summary.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_2026/
+
+> │    └── 📂 events/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 YYYY-MM-DD_Template.md.md
+
+> │  └── 📂 docket_record/
+
+> │    └── 📂 WI8_00_DOCKET_RECORD/
+
+> │      ├── 📄 WI8.00.001_FULL_DOCKET.pdf
+
+> │      ├── 📄 WI8.00.002_DOCKET_NOTES.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 legacy/
+
+> │        └── 📂 30_court_record/
+
+> │          └── 📂 10_docket/
+
+> │            ├── 📄 WI8.00.001__001_Complaint.pdf
+
+> │            ├── 📄 WI8.00.001__002_Appearance.pdf
+
+> │            ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
+
+> │            ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
+
+> │            ├── 📄 WI8.00.001__005_Appearance_2.pdf
+
+> │            ├── 📄 WI8.00.001__006_Summons_1.pdf
+
+> │            ├── 📄 WI8.00.001__007_Summons_2.pdf
+
+> │            ├── 📄 WI8.00.001__008_Summons_3.pdf
+
+> │            ├── 📄 WI8.00.001__009_Summons_4.pdf
+
+> │            ├── 📄 WI8.00.001__010_Summons_5.pdf
+
+> │            ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
+
+> │            ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
+
+> │            ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
+
+> │            ├── 📄 WI8.00.001__014_Affidavit.pdf
+
+> │            ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
+
+> │            ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
+
+> │            ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
+
+> │            ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
+
+> │            ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
+
+> │            ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
+
+> │            ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
+
+> │            ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
+
+> │            ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
+
+> │            ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
+
+> │            ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
+
+> │            ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
+
+> │            ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
+
+> │            ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
+
+> │            ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
+
+> │            ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │            ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
+
+> │            ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
+
+> │            ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
+
+> │            ├── 📄 WI8.00.001___Case_Summary.md
+
+> │            ├── 📄 WI8.00.001__index.html
+
+> │            ├── 📄 _README.md
+
+> │  └── 📂 draft_facts/
+
+> │    └── 📂 affidavits_templates/
+
+> │      ├── 📄 ADA_Disability_Affidavit.md
+
+> │      ├── 📄 Character_Affidavit.md
+
+> │      ├── 📄 Community_Service_Affidavit.md
+
+> │      ├── 📄 Credibility_Affidavit.md
+
+> │      ├── 📄 Observations_Affidavit.md
+
+> │      ├── 📄 _Instructions_for_witnesses.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 updated_affidavit_language.md
+
+> │      ├── 📄 verified_affidavit_of_defendant.md
+
+> │    └── 📂 declarations_templates/
+
+> │      ├── 📄 AFFIDAVIT OF CODY RICE‑VELASQUEZ.md
+
+> │      ├── 📄 Gender_Identity_Clarification.md
+
+> │      └── 📂 WF_DECLARATIONS/
+
+> │        └── 📂 WF5_00_FACT_DEVELOPMENT/
+
+> │          ├── 📄 WF5.00.001_FACT_TIMELINE.md
+
+> │          ├── 📄 WF5.00.002_FACT_GAPS.md
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 WF5_01_DRAFT_DECLARATIONS/
+
+> │          ├── 📄 WF5.01.001_DRAFT_AFFIDAVIT.md
+
+> │          ├── 📄 WF5.01.002_DRAFT_DECLARATION.md
+
+> │          ├── 📄 WF5.01.010__ADA_Disability_Affidavit.md
+
+> │          ├── 📄 WF5.01.010__Character_Affidavit.md
+
+> │          ├── 📄 WF5.01.010__Community_Service_Affidavit.md
+
+> │          ├── 📄 WF5.01.010__Credibility_Affidavit.md
+
+> │          ├── 📄 WF5.01.010__Gender_Identity_Clarification.md
+
+> │          ├── 📄 WF5.01.010__Observations_Affidavit.md
+
+> │          ├── 📄 WF5.01.010___Declarations.md
+
+> │          ├── 📄 WF5.01.010___Instructions_for_witnesses.md
+
+> │          ├── 📄 WF5.01.010__affidavit_not_served.docx
+
+> │          ├── 📄 WF5.01.010__affidavit_not_served.md
+
+> │          ├── 📄 WF5.01.010__index 1.md
+
+> │          ├── 📄 WF5.01.010__index.html
+
+> │          ├── 📄 WF5.01.010__index.md
+
+> │          ├── 📄 WF5.01.010__updated_affidavit_language.md
+
+> │          ├── 📄 WF5.01.010__verified_affidavit_of_defendant.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _Declarations.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.md
+
+> │      └── 📂 wf_facts_declarations/
+
+> │        ├── 📄 _readme.html
+
+> │        └── 📂 wf5_00_fact_development/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wf5.00.001_fact_timeline.html
+
+> │          ├── 📄 wf5.00.002_fact_gaps.html
+
+> │        └── 📂 wf5_01_draft_declarations/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 wf5.01.001_draft_affidavit.html
+
+> │          ├── 📄 wf5.01.002_draft_declaration.html
+
+> │          ├── 📄 wf5.01.010___declarations.html
+
+> │          ├── 📄 wf5.01.010___instructions_for_witnesses.html
+
+> │          ├── 📄 wf5.01.010__ada_disability_affidavit.html
+
+> │          ├── 📄 wf5.01.010__affidavit_not_served.docx
+
+> │          ├── 📄 wf5.01.010__affidavit_not_served.html
+
+> │          ├── 📄 wf5.01.010__character_affidavit.html
+
+> │          ├── 📄 wf5.01.010__community_service_affidavit.html
+
+> │          ├── 📄 wf5.01.010__credibility_affidavit.html
+
+> │          ├── 📄 wf5.01.010__gender_identity_clarification.html
+
+> │          ├── 📄 wf5.01.010__index-1.html
+
+> │          ├── 📄 wf5.01.010__index-content.html
+
+> │          ├── 📄 wf5.01.010__index.html
+
+> │          ├── 📄 wf5.01.010__observations_affidavit.html
+
+> │          ├── 📄 wf5.01.010__verified_affidavit_of_defendant.html
+
+> │    └── 📂 delivery_service/
+
+> │      └── 📂 00_service_tracking/
+
+> │        ├── 📄 WD3.00.001_SERVICE_MATRIX.md
+
+> │        ├── 📄 WD3.00.002_SERVICE_FAILURE_ANALYSIS.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 wd3.00.001_service_matrix.html
+
+> │        ├── 📄 wd3.00.002_service_failure_analysis.html
+
+> │      └── 📂 01_service_evidence/
+
+> │        ├── 📄 WD3.01.001_SUMMONS_SOURCE (2).pdf
+
+> │        ├── 📄 WD3.01.002_SHERIFF_METADATA.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 wd3.01.001_summons_source.html
+
+> │        ├── 📄 wd3.01.001_summons_source.pdf
+
+> │        ├── 📄 wd3.01.002_sheriff_metadata.html
+
+> └── 📂 20_EVIDENCE_VAULT_IMMUTABLE/
+
+> │  └── 📂 00_evidence_admin/
+
+> │    ├── 📄 Raw_Exhibit_Map.md
+
+> │    ├── 📄 chain_of_custody.md
+
+> │    ├── 📄 evidence_log.md
+
+> │    ├── 📄 master_evidence_index.md
+
+> │  └── 📂 10_photos_video/
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
+
+> │    ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │  └── 📂 20_property/
+
+> │    └── 📂 10_mortgage_history/
+
+> │      └── 📂 20_payments/
+
+> │        ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │        ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
+
+> │    └── 📂 20_parcel/
+
+> │      ├── 📄 Parcel_6016506_PRC.pdf
+
+> │      ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │      ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
+
+> │      ├── 📄 parcel_6016506_prc (2).pdf
+
+> │  └── 📂 20_receipts/
+
+> │    ├── 📄 2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
+
+> │  └── 📂 30_declarations/
+
+> │  └── 📂 30_fcfcu/
+
+> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │    ├── 📄 2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
+
+> │    ├── 📄 2023-09-20_notice_disabilities_hardship.pdf
+
+> │    ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
+
+> │    ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │    ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │    ├── 📄 2024-20-03_response_to_tax_notice.pdf
+
+> │    ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │    ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │    ├── 📄 20241204_fcfcu_statement-(1).pdf
+
+> │    ├── 📄 20241204_fcfcu_statement-(2).pdf
+
+> │    ├── 📄 20241204_fcfcu_statement.pdf
+
+> │    ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
+
+> │    ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
+
+> │    ├── 📄 21june-24-4817shadow_appraisal.pdf
+
+> │    ├── 📄 fcfcu_v_cr-v_report_to_court.pdf
+
+> │    ├── 📄 report_to_court_on_defendants_request.pdf
+
+> │  └── 📂 40_affidavits/
+
+> │    └── 📂 ada-disability/
+
+> │    └── 📂 character/
+
+> │    └── 📂 community-service/
+
+> │    └── 📂 credibility/
+
+> │    └── 📂 observations/
+
+> │  └── 📂 50_aes/
+
+> │    ├── 📄 2025-06-08_aes_ada_notice.pdf
+
+> │    ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
+
+> │    ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │  └── 📂 60_potential_exhibits/
+
+> │    └── 📂 a-h_initial/
+
+> │      ├── 📄 exhibit_a_20250305_sheriff_return.pdf
+
+> │      ├── 📄 exhibit_b_20250415_sheriff_return.pdf
+
+> │      ├── 📄 exhibit_c_20250116_incomplete_sum.pdf
+
+> │      ├── 📄 exhibit_d_20250513_default_judgme.pdf
+
+> │      ├── 📄 exhibit_e_20251029_petition_for_w.pdf
+
+> │      ├── 📄 exhibit_f_affidavit_cody_ricevela.pdf
+
+> │      ├── 📄 exhibit_g1_ada_notice_request.pdf
+
+> │      ├── 📄 exhibit_g2_aes_ada_docs_disconnec.pdf
+
+> │      ├── 📄 exhibit_h_declaration.pdf
+
+> │      ├── 📄 exhibits_combined.pdf
+
+> │  ├── 📄 Evidence_Log.md
+
+> │  ├── 📄 Raw_Exhibit_Map.md
+
+> │  └── 📂 audio_records/
+
+> │    ├── 📄 Debate.m4a
+
+> │    ├── 📄 Foreclosure_Void_Judgment_Institutional_Failur.m4a
+
+> │    ├── 📄 Foreclosure_Void_Versus_Damages_Due_Process.m4a
+
+> │    ├── 📄 Forensic_Audit_of_a_Void_Foreclosure.m4a
+
+> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │  └── 📂 documents/
+
+> │    └── 📂 receipts/
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │    └── 📂 reports_external/
+
+> │      ├── 📄 Crisis_The_Anatomy_of_Institutional_Failure.pdf
+
+> │      ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │      ├── 📄 Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
+
+> │      ├── 📄 uncategorized_bundle.pdf
+
+> │  └── 📂 potential_exhibits/
+
+> │    └── 📂 10_EXHIBIT_SETS/
+
+> │      ├── 📄 WH7.01.0100___checklist.md
+
+> │      ├── 📄 WH7.01.0100__index.html
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 _exhibit_A-H_initial/
+
+> │        ├── 📄 WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
+
+> │        ├── 📄 WH7.01.0100__Exhibit_H_Declaration.pdf
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_I_ada_communications/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_J_eviction_removal/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_K_financial/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_L_statements/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_M_court-service/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │      └── 📂 exhibits_P_property/
+
+> │        ├── 📄 WH7.01.0100__index.html
+
+> │    └── 📂 30_exhibits/
+
+> │      ├── 📄 WH7.01.0050__exhibit_list.docx
+
+> │      ├── 📄 WH7.01.0050__exhibit_list.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 exhibits_templates/
+
+> │        ├── 📄 WH7.01.0050___Exhibits_Lists.md
+
+> │        ├── 📄 _README.md
+
+> │    ├── 📄 WH7.01.0001_POTENTIAL_EXHIBIT_0001.pdf
+
+> │    ├── 📄 WH7.01.0002_POTENTIAL_EXHIBIT_0002.pdf
+
+> │    └── 📂 _exhibit_sets/
+
+> │      └── 📂 DH_HARD_EXHIBITS/
+
+> │        ├── 📄 TEMPLATE_EXHIBIT_LABEL.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 exhibit_list.docx
+
+> │        ├── 📄 exhibit_list.md
+
+> │      ├── 📄 _checklist.md
+
+> │      └── 📂 _exhibit_A-H_initial/
+
+> │        ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │        ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │        ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │        ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
+
+> │        ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
+
+> │        ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
+
+> │        ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
+
+> │        ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
+
+> │        ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
+
+> │        ├── 📄 Exhibit_H_Declaration.pdf
+
+> │      └── 📂 exhibits_I_ada_communications/
+
+> │      └── 📂 exhibits_J_eviction_removal/
+
+> │      └── 📂 exhibits_K_financial/
+
+> │      └── 📂 exhibits_L_statements/
+
+> │      └── 📂 exhibits_M_court-service/
+
+> │      └── 📂 exhibits_P_property/
+
+> │      └── 📂 exhibits_templates/
+
+> │        ├── 📄 _Exhibits_Lists.md
+
+> │        ├── 📄 _README.md
+
+> │  └── 📂 records/
+
+> │    ├── 📄 Foreclosure and Housing Litigation Case Record.csv
+
+> │    ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
+
+> └── 📂 30_VIOLATION_INTELLIGENCE/
+
+> │  ├── 📄 01_MASTER_INDEX.md
+
+> │  ├── 📄 02_TAG_MAP.md
+
+> │  ├── 📄 03_THEORY_CLUSTERS.md
+
+> │  ├── 📄 04_RISK_REGISTER.md
+
+> │  └── 📂 10_violations/
+
+> │    └── 📂 CREDIT_BUREAUS/
+
+> │      ├── 📄 V-011_experian-reinvestigation-failure.md
+
+> │      ├── 📄 V-012_equifax-reinvestigation-failure.md
+
+> │      ├── 📄 V-013_transunion-reinvestigation-failure.md
+
+> │    └── 📂 FCFCU/
+
+> │      ├── 📄 V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> │      ├── 📄 V-004_past-due-amount-schedule-after-judgment.md
+
+> │      ├── 📄 V-005_failure-to-correct-inaccurate-furnishings.md
+
+> │      ├── 📄 V-006_dual-tradeline-double-counting.md
+
+> │      ├── 📄 V-007_inconsistent-reporting-vs-court-position.md
+
+> │      ├── 📄 V-008_credit-defamation-false-publication.md
+
+> │      ├── 📄 V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> │      ├── 📄 V-010_failure-to-mark-account-foreclosure-closed.md
+
+> │      ├── 📄 V-025_cost-shift-fcfcu-refused-winterize.md
+
+> │      ├── 📄 V-030_service-completed-no-notice-before-writ.md
+
+> │      ├── 📄 V-033_removal-6-7-days-after-deed-recorded.md
+
+> │      ├── 📄 V-036_surplus-funds-declared-resolved.md
+
+> │      ├── 📄 V-037_interest-fees-arbitrarily-inflated.md
+
+> │      ├── 📄 V-038_fcfcu-testimony-winterize-then-leave.md
+
+> │      ├── 📄 V-070_global-demand-letter.md
+
+> │      ├── 📄 V-071_litigation-hold-preservation-letter.md
+
+> │      ├── 📄 V-072_equitable-relief-tradeline-deletion.md
+
+> │      ├── 📄 V-073_damages-credit-score-suppression.md
+
+> │      ├── 📄 V-074_damages-out-of-pocket-costs.md
+
+> │      ├── 📄 V-075_public-accountability-hold.md
+
+> │      ├── 📄 V-080_conversion-negligence-post-removal-damage.md
+
+> │      ├── 📄 V-081_evidence-spoliation-unplugged-cameras.md
+
+> │    └── 📂 OTHER_PARTIES/
+
+> │      ├── 📄 V-076_fha-reasonable-accommodation-failure.md
+
+> │      ├── 📄 V-077_ada-title-iii-entertainment-access-failure.md
+
+> │      ├── 📄 V-078_ada-effective-communication-failure.md
+
+> │      ├── 📄 V-083_discriminatory-maintenance-redlining.md
+
+> │      ├── 📄 V-084_predatory-land-contract-reverse-redlining.md
+
+> │    └── 📂 REGULATORS_PROCEDURAL/
+
+> │      ├── 📄 V-031_sheriff-return-inaccuracies.md
+
+> │      ├── 📄 V-032_no-ada-compliant-notice.md
+
+> │      ├── 📄 V-034_attorney-appeared-without-formal-appearance.md
+
+> │      ├── 📄 V-035_court-relied-on-service-sufficiency.md
+
+> │      ├── 📄 V-050_cfpb-complaint-track.md
+
+> │      ├── 📄 V-051_indiana-ag-complaint-track.md
+
+> │      ├── 📄 V-052_icrc-complaint-track.md
+
+> │      ├── 📄 V-053_doj-civil-rights-complaint-track.md
+
+> │      ├── 📄 V-060_bbb-complaint-reputational-pressure.md
+
+> │      ├── 📄 V-079_void-judgment-procedural-error.md
+
+> │      ├── 📄 V-082_fraud-on-the-court-material-misrepresentation.md
+
+> │    └── 📂 UTILITIES_HOA_CITY/
+
+> │      ├── 📄 V-020_post-0815-aes-electric-charges-billed.md
+
+> │      ├── 📄 V-021_post-0815-citizens-energy-charges-billed.md
+
+> │      ├── 📄 V-022_post-0815-hoa-assessments-billed.md
+
+> │      ├── 📄 V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> │      ├── 📄 V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> │      ├── 📄 V-026_credit-harm-compounded-utility-municipal.md
+
+> │  ├── 📄 Exhibit X — Inventory of Jurisdictional, Execut.md
+
+> │  ├── 📄 V-000_TEMPLATE.md
+
+> │  └── 📂 analysis/
+
+> │    ├── 📄 Formal Inventory of Violations and Schedule of .md
+
+> │    ├── 📄 INTERNAL VALUATION MEMO.md
+
+> │    ├── 📄 Procedural_failure_map_one_pager.md
+
+> │  └── 📂 legal_research/
+
+> │    ├── 📄 LEGAL MEMORANDUM.md
+
+> │    └── 📂 WB1_00_LAW_RESEARCH/
+
+> │      ├── 📄 WB1.00.001_CASE_LAW_RESEARCH.md
+
+> │      ├── 📄 WB1.00.002_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> │      ├── 📄 WB1.00.003_JURISDICTION_THEORY.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 wb1.00.001_case_law_research.html
+
+> │      ├── 📄 wb1.00.002_void_vs_voidable_analysis.html
+
+> │      ├── 📄 wb1.00.003_jurisdiction_theory.html
+
+> │  └── 📂 strategies/
+
+> │    └── 📂 00_basis/
+
+> │    └── 📂 10_ada_strategy/
+
+> │      └── 📂 WG_GROUNDS_ADA/
+
+> │        └── 📂 WG6_00_ADA_STRATEGY/
+
+> │          ├── 📄 WG6.00.001_ADA_TITLE_II_ANALYSIS.md
+
+> │          ├── 📄 WG6.00.002_REASONABLE_ACCOMMODATIONS.md
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
+
+> │          ├── 📄 WG6.01.001_DOJ_COMPLAINT.md
+
+> │          ├── 📄 WG6.01.002_ICRC_COMPLAINT.md
+
+> │          ├── 📄 WG6.01.003_STATUS_TRACKER.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _readme.html
+
+> │      ├── 📄 wg6.00.001_ada_title_ii_analysis.html
+
+> │      ├── 📄 wg6.00.002_reasonable_accommodations.html
+
+> │    ├── 📄 Master_Strategy_Canvas.canvas
+
+> │    ├── 📄 Proposal for Strategic Reports in the Matter of.md
+
+> │    └── 📂 _misc_strategy/
+
+> │      └── 📂 10_ada_title_ii/
+
+> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │      └── 📂 30_void_vs_voidable_tr_60b/
+
+> │      ├── 📄 Strategic_Plan.canvas
+
+> │    └── 📂 effects_procedural_chain/
+
+> │      └── 📂 WE_EFFECTS_PROCEDURAL/
+
+> │        └── 📂 WE4_00_CHAIN_ANALYSIS/
+
+> │          ├── 📄 WE4.00.001_PROCEDURAL_FAILURE_MAP.md
+
+> │          ├── 📄 WE4.00.002_BUT_FOR_ANALYSIS.md
+
+> │          ├── 📄 WE4.00.010__Integrate_Disability_Separate_Appe.m4a
+
+> │          ├── 📄 WE4.00.010__Procedural_failure_map_one_pager.md
+
+> │          ├── 📄 WE4.00.010__Void_Judgment_Eviction_Crisis.pdf
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 WE4_01_REMEDIES/
+
+> │          ├── 📄 WE4.01.001_STAY_PATHS.md
+
+> │          ├── 📄 WE4.01.002_REVERSAL_PATHS.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _readme.html
+
+> │      └── 📂 we4_00_chain_analysis/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 we4.00.001_procedural_failure_map.html
+
+> │        ├── 📄 we4.00.002_but_for_analysis.html
+
+> │        ├── 📄 we4.00.010__integrate_disability_separate_appe.m4a
+
+> │        ├── 📄 we4.00.010__void_judgment_eviction_crisis.html
+
+> │        ├── 📄 we4.00.010__void_judgment_eviction_crisis.pdf
+
+> │      └── 📂 we4_01_remedies/
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 we4.01.001_stay_paths.html
+
+> │        ├── 📄 we4.01.002_reversal_paths.html
+
+> │  └── 📂 theories/
+
+> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
+
+> │      ├── 📄 WB1.01.001_BACKUP_ARGUMENTS.md
+
+> │      ├── 📄 WB1.01.002_IF_JUDGE_PUSHBACK.md
+
+> └── 📂 40_WORKING/
+
+> │  └── 📂 internal_only/
+
+> │    ├── 📄 Contacts.md
+
+> │    └── 📂 WI8_99_INTERNAL_ONLY/
+
+> │      └── 📂 l_narrative/
+
+> │        └── 📂 03_Internal_Analysis/
+
+> │          └── 📂 Payout_Strategy/
+
+> │            ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
+
+> │            ├── 📄 WI8.99.010__index.html
+
+> │            ├── 📄 _README.md
+
+> │          └── 📂 Premonitions/
+
+> │            ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
+
+> │            ├── 📄 WI8.99.010__index.html
+
+> │            ├── 📄 _README.md
+
+> │          ├── 📄 WI8.99.010__Session_Summary_2025-12-15_i_knew_b.md
+
+> │          ├── 📄 WI8.99.010__index.html
+
+> │          ├── 📄 _README.md
+
+> │    └── 📂 internal_notes_ref/
+
+> │      ├── 📄 TEMPLATE_COURT_DOC.md
+
+> │      ├── 📄 TEMPLATE_HANDUP_PACKET_NOTE.md
+
+> │      ├── 📄 TEMPLATE_SECTION_COVER.md
+
+> │      ├── 📄 TEMPLATE_SECTION_INDEX.md
+
+> │      ├── 📄 TEMPLATE_WAR_NOTE.md
+
+> │      ├── 📄 ada_packet.md
+
+> │      ├── 📄 attorney_brief.md
+
+> │      ├── 📄 move_legacy.py
+
+> │      ├── 📄 organize_case.py
+
+> │      └── 📂 outreach_templates/
+
+> │        ├── 📄 _Advocate_Outreach_Message.md
+
+> │      └── 📂 personal_narrative/
+
+> │        └── 📂 01_Public_Narrative/
+
+> │          ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │          ├── 📄 Public_Statement.md
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 02_Exposure_and_Harm/
+
+> │          ├── 📄 Cold_Risk_Report.md
+
+> │          └── 📂 Photos_Conditions/
+
+> │          └── 📂 Weather_Reports/
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 03_Internal_Analysis/
+
+> │          └── 📂 Payout_Strategy/
+
+> │            ├── 📄 Long_Term_Payout_Strategy.md
+
+> │            ├── 📄 _README.md
+
+> │          └── 📂 Premonitions/
+
+> │            ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
+
+> │            ├── 📄 _README.md
+
+> │          ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 04_Donations_and_Support/
+
+> │          └── 📂 Donation_Page_HTML/
+
+> │          ├── 📄 Donations_Context.md
+
+> │          └── 📂 Screenshots_Live_Page/
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 05_Timeline/
+
+> │          ├── 📄 Master_Timeline.md
+
+> │          ├── 📄 _README.md
+
+> │      ├── 📄 receipt_usps_tracking.md
+
+> │      ├── 📄 script_call_lawyers.md
+
+> │      └── 📂 wi_internal_reference/
+
+> │        ├── 📄 03_case_log_entry_2025-12-15.html
+
+> │        └── 📂 05_timeline/
+
+> │          ├── 📄 _readme.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 timeline_canvas.html
+
+> │        └── 📂 10_overviews/
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 integrate_disability_separate_appeals_get_stay.m4a
+
+> │          ├── 📄 procedural_failure_map_one_pager.html
+
+> │          ├── 📄 void_judgment_eviction_crisis.html
+
+> │          ├── 📄 void_judgment_eviction_crisis.pdf
+
+> │        ├── 📄 2024-12-09_eviction_case_masterfile.docx
+
+> │        ├── 📄 2025-12-16_case_log_entry.html
+
+> │        ├── 📄 2025-12-16_case_summary.html
+
+> │        └── 📂 20_strategy/
+
+> │          └── 📂 10_ada_title_ii/
+
+> │            ├── 📄 index-content.html
+
+> │          └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │            ├── 📄 index-content.html
+
+> │          └── 📂 30_void_vs_voidable_tr_60b/
+
+> │            ├── 📄 index-content.html
+
+> │          ├── 📄 index-content.html
+
+> │          ├── 📄 strategic_plan.html
+
+> │        ├── 📄 _readme.html
+
+> │        ├── 📄 case-narrative-wrongful-foreclosure-and-displ.html
+
+> │        ├── 📄 case_conversation_log.html
+
+> │        ├── 📄 case_conversation_log.txt
+
+> │        ├── 📄 combinepdf.html
+
+> │        ├── 📄 combinepdf.pdf
+
+> │        ├── 📄 contacts.html
+
+> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.html
+
+> │        ├── 📄 crisis_the_anatomy_of_institutional_failure.pdf
+
+> │        ├── 📄 debate.m4a
+
+> │        ├── 📄 expenses.csv
+
+> │        ├── 📄 foreclosure-and-housing-litigation-case-record.csv
+
+> │        ├── 📄 foreclosure_void_judgment_institutional_failur.m4a
+
+> │        ├── 📄 foreclosure_void_versus_damages_due_process.m4a
+
+> │        ├── 📄 forensic_audit_of_a_void_foreclosure.m4a
+
+> │        ├── 📄 inventory-of-civil-and-fair-housing-rights-vio.csv
+
+> │        ├── 📄 legal-memorandum.html
+
+> │        ├── 📄 odyssey_envelope_receipt.html
+
+> │        ├── 📄 odyssey_envelope_receipt.pdf
+
+> │        └── 📂 personal_narrative/
+
+> │          └── 📂 01_public_narrative/
+
+> │            ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 public_statement.html
+
+> │          └── 📂 02_exposure_and_harm/
+
+> │            ├── 📄 cold_risk_report.html
+
+> │            ├── 📄 index-content.html
+
+> │            └── 📂 photos_conditions/
+
+> │              ├── 📄 index-content.html
+
+> │            └── 📂 weather_reports/
+
+> │              ├── 📄 index-content.html
+
+> │          └── 📂 03_internal_analysis/
+
+> │            ├── 📄 index-content.html
+
+> │            └── 📂 payout_strategy/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 long_term_payout_strategy.html
+
+> │            └── 📂 premonitions/
+
+> │              ├── 📄 index-content.html
+
+> │              ├── 📄 premonitions_i_knew_before_i_knew.html
+
+> │            ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
+
+> │          └── 📂 04_donations_and_support/
+
+> │            └── 📂 donation_page_html/
+
+> │              ├── 📄 index-content.html
+
+> │            ├── 📄 donations_context.html
+
+> │            ├── 📄 index-content.html
+
+> │            └── 📂 screenshots_live_page/
+
+> │              ├── 📄 index-content.html
+
+> │          └── 📂 05_timeline/
+
+> │            ├── 📄 index-content.html
+
+> │            ├── 📄 master_timeline.html
+
+> │          ├── 📄 index-content.html
+
+> │        ├── 📄 proposal-for-strategic-reports-in-the-matter-.html
+
+> │        ├── 📄 talking_points.html
+
+> │        └── 📂 wi8_00_docket_record/
+
+> │          └── 📂 legacy/
+
+> │            └── 📂 30_court_record/
+
+> │              └── 📂 10_docket/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.00.001__001_complaint.html
+
+> │                ├── 📄 wi8.00.001__001_complaint.pdf
+
+> │                ├── 📄 wi8.00.001__002_appearance.html
+
+> │                ├── 📄 wi8.00.001__002_appearance.pdf
+
+> │                ├── 📄 wi8.00.001__003_request_for_admissions.html
+
+> │                ├── 📄 wi8.00.001__003_request_for_admissions.pdf
+
+> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.html
+
+> │                ├── 📄 wi8.00.001__004_notice_to_homeowners.pdf
+
+> │                ├── 📄 wi8.00.001__005_appearance_2.html
+
+> │                ├── 📄 wi8.00.001__005_appearance_2.pdf
+
+> │                ├── 📄 wi8.00.001__006_summons_1.html
+
+> │                ├── 📄 wi8.00.001__006_summons_1.pdf
+
+> │                ├── 📄 wi8.00.001__007_summons_2.html
+
+> │                ├── 📄 wi8.00.001__007_summons_2.pdf
+
+> │                ├── 📄 wi8.00.001__008_summons_3.html
+
+> │                ├── 📄 wi8.00.001__008_summons_3.pdf
+
+> │                ├── 📄 wi8.00.001__009_summons_4.html
+
+> │                ├── 📄 wi8.00.001__009_summons_4.pdf
+
+> │                ├── 📄 wi8.00.001__010_summons_5.html
+
+> │                ├── 📄 wi8.00.001__010_summons_5.pdf
+
+> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.html
+
+> │                ├── 📄 wi8.00.001__011_service_returned_03-05-2025.pdf
+
+> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.html
+
+> │                ├── 📄 wi8.00.001__012_service_returned_04-15-2025.pdf
+
+> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.html
+
+> │                ├── 📄 wi8.00.001__013_motion_for_default_judgment.pdf
+
+> │                ├── 📄 wi8.00.001__014_affidavit.html
+
+> │                ├── 📄 wi8.00.001__014_affidavit.pdf
+
+> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.html
+
+> │                ├── 📄 wi8.00.001__015_affidavit_attorney_fees.pdf
+
+> │                ├── 📄 wi8.00.001__016_affidavit_additional.html
+
+> │                ├── 📄 wi8.00.001__016_affidavit_additional.pdf
+
+> │                ├── 📄 wi8.00.001__017_order_denying_default_judgmen.html
+
+> │                ├── 📄 wi8.00.001__017_order_denying_default_judgment.pdf
+
+> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.html
+
+> │                ├── 📄 wi8.00.001__018_omitted_notice_of_service.pdf
+
+> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgme.html
+
+> │                ├── 📄 wi8.00.001__019_amended_motion_default_judgmen.pdf
+
+> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgme.html
+
+> │                ├── 📄 wi8.00.001__020_amended_motion_default_judgmen.pdf
+
+> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.html
+
+> │                ├── 📄 wi8.00.001__021_praecipe_sheriff_sale_1.pdf
+
+> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.html
+
+> │                ├── 📄 wi8.00.001__022_praecipe_sheriff_sale_2.pdf
+
+> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.html
+
+> │                ├── 📄 wi8.00.001__023_decree_foreclosure_returned.pdf
+
+> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.html
+
+> │                ├── 📄 wi8.00.001__024_petition_writ_of_assistance.pdf
+
+> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.html
+
+> │                ├── 📄 wi8.00.001__025_motion_vacate_stay_writ.pdf
+
+> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.html
+
+> │                ├── 📄 wi8.00.001__026_exhibit_list_a-g.pdf
+
+> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.html
+
+> │                ├── 📄 wi8.00.001__027_supplemental_motion_access.pdf
+
+> │                ├── 📄 wi8.00.001__028_report_court_defendant_reques.html
+
+> │                ├── 📄 wi8.00.001__028_report_court_defendant_request.pdf
+
+> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declar.html
+
+> │                ├── 📄 wi8.00.001__029_emergency_supplemental_declara.pdf
+
+> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.html
+
+> │                ├── 📄 wi8.00.001__030_report_sheriff_sale_no_excess.pdf
+
+> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.html
+
+> │                ├── 📄 wi8.00.001__031_proposed_order_vacate.pdf
+
+> │                ├── 📄 wi8.00.001__032_proposed_order_stay.html
+
+> │                ├── 📄 wi8.00.001__032_proposed_order_stay.pdf
+
+> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.html
+
+> │                ├── 📄 wi8.00.001__033_ada_disability_affidavit.pdf
+
+> │                ├── 📄 wi8.00.001___case_summary.html
+
+> │                ├── 📄 wi8.00.001__index-content.html
+
+> │                ├── 📄 wi8.00.001__index.html
+
+> │          ├── 📄 wi8.00.001_full_docket.html
+
+> │          ├── 📄 wi8.00.001_full_docket.pdf
+
+> │          ├── 📄 wi8.00.002_docket_notes.html
+
+> │        └── 📂 wi8_01_public_advocacy/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 al_narrative/
+
+> │            └── 📂 01_public_narrative/
+
+> │              ├── 📄 _readme.html
+
+> │              ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
+
+> │              ├── 📄 wi8.01.010__index-content.html
+
+> │              ├── 📄 wi8.01.010__index.html
+
+> │              ├── 📄 wi8.01.010__public_statement.html
+
+> │          └── 📂 rrative/
+
+> │            └── 📂 04_donations_and_support/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 donation_page_html/
+
+> │                ├── 📄 wi8.01.050__index-content.html
+
+> │                ├── 📄 wi8.01.050__index.html
+
+> │              └── 📂 screenshots_live_page/
+
+> │                ├── 📄 wi8.01.050__index-content.html
+
+> │                ├── 📄 wi8.01.050__index.html
+
+> │              ├── 📄 wi8.01.050__donations_context.html
+
+> │              ├── 📄 wi8.01.050__index-content.html
+
+> │              ├── 📄 wi8.01.050__index.html
+
+> │          ├── 📄 wi8.01.001_press_strategy.html
+
+> │          ├── 📄 wi8.01.002_social_media_plan.html
+
+> │          ├── 📄 wi8.01.003_timing_and_risk.html
+
+> │        └── 📂 wi8_02_damages_and_settlement/
+
+> │          ├── 📄 _readme.html
+
+> │          └── 📂 l_narrative/
+
+> │            └── 📂 02_exposure_and_harm/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 photos_conditions/
+
+> │                ├── 📄 wi8.02.050__index-content.html
+
+> │                ├── 📄 wi8.02.050__index.html
+
+> │              └── 📂 weather_reports/
+
+> │                ├── 📄 wi8.02.050__index-content.html
+
+> │                ├── 📄 wi8.02.050__index.html
+
+> │              ├── 📄 wi8.02.050__cold_risk_report.html
+
+> │              ├── 📄 wi8.02.050__index-content.html
+
+> │              ├── 📄 wi8.02.050__index.html
+
+> │          └── 📂 on/
+
+> │            └── 📂 __legacy/
+
+> │              └── 📂 00_admin/
+
+> │                └── 📂 00_trackers/
+
+> │                  ├── 📄 _readme.html
+
+> │                  ├── 📄 wi8.02.010__03_case_log_entry_2025-12-15.html
+
+> │                  ├── 📄 wi8.02.010__2024-12-09_eviction_case_masterfi.docx
+
+> │                  ├── 📄 wi8.02.010__2025-12-16_case_log_entry.html
+
+> │                  ├── 📄 wi8.02.010__2025-12-16_case_summary.html
+
+> │                  ├── 📄 wi8.02.010__case_conversation_log.html
+
+> │                  ├── 📄 wi8.02.010__case_conversation_log.txt
+
+> │                  ├── 📄 wi8.02.010__case_log.html
+
+> │                  ├── 📄 wi8.02.010__expenses.csv
+
+> │                  ├── 📄 wi8.02.010__financial_tracker.html
+
+> │                  ├── 📄 wi8.02.010__index-content.html
+
+> │                  ├── 📄 wi8.02.010__index.html
+
+> │                  ├── 📄 wi8.02.010__qicase-fcfcu_financial_tracker.xlsx
+
+> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfc_1.html
+
+> │                  ├── 📄 wi8.02.010__session_summary_2025-12-16_fcfcu_.html
+
+> │          ├── 📄 wi8.02.001_economic_harm.html
+
+> │          ├── 📄 wi8.02.002_non_economic_harm.html
+
+> │          ├── 📄 wi8.02.003_settlement_scenarios.html
+
+> │        └── 📂 wi8_99_internal_only/
+
+> │          └── 📂 l_narrative/
+
+> │            └── 📂 03_internal_analysis/
+
+> │              ├── 📄 _readme.html
+
+> │              └── 📂 payout_strategy/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.99.010__index-content.html
+
+> │                ├── 📄 wi8.99.010__index.html
+
+> │                ├── 📄 wi8.99.010__long_term_payout_strategy.html
+
+> │              └── 📂 premonitions/
+
+> │                ├── 📄 _readme.html
+
+> │                ├── 📄 wi8.99.010__index-content.html
+
+> │                ├── 📄 wi8.99.010__index.html
+
+> │                ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
+
+> │              ├── 📄 wi8.99.010__index-content.html
+
+> │              ├── 📄 wi8.99.010__index.html
+
+> │              ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
+
+> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_ri.html
+
+> │        ├── 📄 wrongful_foreclosure_a_case_study_in_civil_rig.pdf
+
+> │  └── 📂 narratives/
+
+> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
+
+> │    └── 📂 personal_narrative/
+
+> │      └── 📂 01_Public_Narrative/
+
+> │        ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │        ├── 📄 Public_Statement.md
+
+> │      └── 📂 02_Exposure_and_Harm/
+
+> │        ├── 📄 Cold_Risk_Report.md
+
+> │        └── 📂 Photos_Conditions/
+
+> │        └── 📂 Weather_Reports/
+
+> │      └── 📂 03_Internal_Analysis/
+
+> │        └── 📂 Payout_Strategy/
+
+> │          ├── 📄 Long_Term_Payout_Strategy.md
+
+> │        └── 📂 Premonitions/
+
+> │          ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
+
+> │        ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │      └── 📂 04_Donations_and_Support/
+
+> │        └── 📂 Donation_Page_HTML/
+
+> │        ├── 📄 Donations_Context.md
+
+> │        └── 📂 Screenshots_Live_Page/
+
+> │      └── 📂 05_Timeline/
+
+> │        ├── 📄 Master_Timeline.md
+
+> └── 📂 50_PHASES/
+
+> │  └── 📂 01_Foreclosure_Core_Court_Record/
+
+> │    └── 📂 01_Docket/
+
+> │      ├── 📄 Summary - MyCase.html
+
+> │      ├── 📄 _Case_Summary.md
+
+> │      └── 📂 docket_files/
+
+> │        ├── 📄 001_Complaint.pdf
+
+> │        ├── 📄 002_Appearance.pdf
+
+> │        ├── 📄 003_Request_for_Admissions.pdf
+
+> │        ├── 📄 004_Notice_to_Homeowners.pdf
+
+> │        ├── 📄 005_Appearance_2.pdf
+
+> │        ├── 📄 006_Summons_1.pdf
+
+> │        ├── 📄 007_Summons_2.pdf
+
+> │        ├── 📄 008_Summons_3.pdf
+
+> │        ├── 📄 009_Summons_4.pdf
+
+> │        ├── 📄 010_Summons_5.pdf
+
+> │        ├── 📄 011_Service_Returned_03-05-2025.pdf
+
+> │        ├── 📄 012_Service_Returned_04-15-2025.pdf
+
+> │        ├── 📄 013_Motion_for_Default_Judgment.pdf
+
+> │        ├── 📄 014_Affidavit.pdf
+
+> │        ├── 📄 015_Affidavit_Attorney_Fees.pdf
+
+> │        ├── 📄 016_Order_Denying_Motion_for_Default_Judgment.pdf
+
+> │        ├── 📄 017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
+
+> │        ├── 📄 018_Omitted_Notice_of_Service.pdf
+
+> │        ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
+
+> │        ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
+
+> │        ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
+
+> │        ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
+
+> │        ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
+
+> │        ├── 📄 023_Decree_Foreclosure_Returned.pdf
+
+> │        ├── 📄 024_Petition_Writ_of_Assistance.pdf
+
+> │        ├── 📄 024_Service Returned Served.pdf
+
+> │        ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
+
+> │        ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
+
+> │        ├── 📄 026_Exhibit_List_A-G.pdf
+
+> │        ├── 📄 027_Supplemental_Motion_Access.pdf
+
+> │        ├── 📄 028_Report_Court_Defendant_Request.pdf
+
+> │        ├── 📄 029_Emergency_Supplemental_Declaration.pdf
+
+> │        ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │        ├── 📄 031_Proposed_Order_Vacate.pdf
+
+> │        ├── 📄 032_Proposed_Order_Stay.pdf
+
+> │        ├── 📄 033_ADA_Disability_Affidavit.pdf
+
+> │        ├── 📄 035_01092026_005.pdf.pdf
+
+> │        ├── 📄 2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 docket_index.md
+
+> │    └── 📂 03_Service_Process/
+
+> │      ├── 📄 affidavits_service.md
+
+> │      ├── 📄 service_defects_analysis.md
+
+> │    └── 📂 05_Sale_and_Possesion/
+
+> │      ├── 📄 possession_admissions.md
+
+> │    └── 📂 06_Financial_Accounting/
+
+> │      ├── 📄 interest_fee_irregularities.md
+
+> │      ├── 📄 surplus_definciency_analysis.md
+
+> │    └── 📂 10_2025-12-10_motion_vacate/
+
+> │      └── 📂 01_drafts/
+
+> │        ├── 📄 Emergency Motions.docx
+
+> │      └── 📂 02_exhibits/
+
+> │        ├── 📄 01_motion_vacate.pdf
+
+> │        ├── 📄 02_emergency_motion_quash_stay.pdf
+
+> │        ├── 📄 03_order_vacate_proposed.pdf
+
+> │        ├── 📄 04_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 05_Exhibit_List.pdf
+
+> │        ├── 📄 06_Exhibits_Combined.pdf
+
+> │        ├── 📄 combinepdf.pdf
+
+> │      └── 📂 03_proposed_order/
+
+> │        ├── 📄 Proposed_Order_Vacate.docx
+
+> │      └── 📂 04_filed_receipts/
+
+> │        ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │      └── 📂 01_drafts/
+
+> │        ├── 📄 Supplemental_Emergency_Motion.pdf
+
+> │      └── 📂 02_exhibits/
+
+> │        ├── 📄 20_exhibits_combined_source
+
+> │        ├── 📄 Exhibit_H_Declaration.pdf
+
+> │      └── 📂 04_filed_receipts/
+
+> │        ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │  └── 📂 02_credit_reporting_FCRA/
+
+> │    └── 📂 05_Reputational_Pressure/
+
+> │      └── 📂 better_business_bureau/
+
+> │        ├── 📄 complaint.md
+
+> │  └── 📂 06_Public_Accountability/
+
+> │    ├── 📄 00_README_LOCK.md
+
+> │  └── 📂 10_ada_title_ii/
+
+> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │  └── 📂 30_void_vs_voidable_tr_60b/
+
+> │  └── 📂 90_settlement/
+
+> │    ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> │  └── 📂 checklists/
+
+> │    ├── 📄 PROMOTION_CHECKLIST.md
+
+> │  └── 📂 communication/
+
+> │    ├── 📄 Talking_Points.md
+
+> │    ├── 📄 Talking_Points_ingest.md
+
+> │  └── 📂 draft_plans/
+
+> │    └── 📂 15_parallel_enforcement/
+
+> │      ├── 📄 _readme.html
+
+> │      ├── 📄 wg6.01.001_doj_complaint.html
+
+> │      ├── 📄 wg6.01.002_icrc_complaint.html
+
+> │      ├── 📄 wg6.01.003_status_tracker.html
+
+> │    └── 📂 40_claims_motions/
+
+> │      └── 📂 10_draft_motions/
+
+> │        ├── 📄 EMERGENCY_FILING_PACKET.md
+
+> │        ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
+
+> │        ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
+
+> │        ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
+
+> │        ├── 📄 WC2.00.010___Motions.md
+
+> │        ├── 📄 WC2.00.010__motion_emergency_stay_of_writ (2).docx
+
+> │        ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
+
+> │        ├── 📄 WC2.00.010__motion_emergency_supplemental_mot (2).docx
+
+> │        ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
+
+> │        ├── 📄 WC2.00.010__motion_to_vacate_void_judgement (2).docx
+
+> │        ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index (2).html
+
+> │        ├── 📄 motion_emergency_stay_of_writ.md
+
+> │        ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │        ├── 📄 motion_to_vacate_void_judgment.md
+
+> │        └── 📂 motions_templates/
+
+> │          ├── 📄 _Motions.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 wc2.00.001_draft_motion_vacate.html
+
+> │        ├── 📄 wc2.00.002_draft_emergency_stay.html
+
+> │        ├── 📄 wc2.00.003_draft_supplemental.html
+
+> │        ├── 📄 wc2.00.010___motions.html
+
+> │        ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
+
+> │        ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
+
+> │        ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
+
+> │        ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
+
+> │        ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
+
+> │        ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
+
+> │      └── 📂 20_proposed_orders/
+
+> │        ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
+
+> │        ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
+
+> │        ├── 📄 WC2.01.010__Proposed_Orders.md
+
+> │        ├── 📄 WC2.01.010__index (2).html
+
+> │        ├── 📄 WC2.01.010__index.md
+
+> │        ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
+
+> │        ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index (2).html
+
+> │        ├── 📄 proposed_order_emergency_stay.md
+
+> │        ├── 📄 proposed_order_motion_to_vacate.md
+
+> │        └── 📂 proposed_templates/
+
+> │          ├── 📄 Proposed_Orders.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 wc2.01.001_draft_order_vacate.html
+
+> │        ├── 📄 wc2.01.002_draft_order_stay.html
+
+> │        ├── 📄 wc2.01.010__index-content.html
+
+> │        ├── 📄 wc2.01.010__index.html
+
+> │        ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
+
+> │        ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
+
+> │        ├── 📄 wc2.01.010__proposed_orders.html
+
+> │    └── 📂 80_hearing_planner/
+
+> │      └── 📂 2025-01-09_hearing/
+
+> │        ├── 📄 HEARING CHEAT SHEET.md
+
+> │      ├── 📄 _COURT_MODE_BUTTONS.md.md
+
+> │      ├── 📄 _COURT_MODE_PLAYBOOK.md.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 WI8_01_PUBLIC_ADVOCACY/
+
+> │      ├── 📄 WI8.01.001_PRESS_STRATEGY.md
+
+> │      ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
+
+> │      ├── 📄 WI8.01.003_TIMING_AND_RISK.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 al_narrative/
+
+> │        └── 📂 01_Public_Narrative/
+
+> │          ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> │          ├── 📄 WI8.01.010__Public_Statement.md
+
+> │          ├── 📄 WI8.01.010__index.html
+
+> │          ├── 📄 _README.md
+
+> │      └── 📂 rrative/
+
+> │        └── 📂 04_Donations_and_Support/
+
+> │          └── 📂 Donation_Page_HTML/
+
+> │            ├── 📄 WI8.01.050__index.html
+
+> │          └── 📂 Screenshots_Live_Page/
+
+> │            ├── 📄 WI8.01.050__index.html
+
+> │          ├── 📄 WI8.01.050__Donations_Context.md
+
+> │          ├── 📄 WI8.01.050__index.html
+
+> │          ├── 📄 _README.md
+
+> │    └── 📂 WI8_02_DAMAGES_AND_SETTLEMENT/
+
+> │      ├── 📄 WI8.02.001_ECONOMIC_HARM.md
+
+> │      ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
+
+> │      ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 l_narrative/
+
+> │        └── 📂 02_Exposure_and_Harm/
+
+> │          └── 📂 Photos_Conditions/
+
+> │            ├── 📄 WI8.02.050__index.html
+
+> │          ├── 📄 WI8.02.050__Cold_Risk_Report.md
+
+> │          ├── 📄 WI8.02.050__index.html
+
+> │          └── 📂 Weather_Reports/
+
+> │            ├── 📄 WI8.02.050__index.html
+
+> │          ├── 📄 _README.md
+
+> │      └── 📂 on/
+
+> │        └── 📂 __legacy/
+
+> │          └── 📂 00_admin/
+
+> │            └── 📂 00_trackers/
+
+> │              ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
+
+> │              ├── 📄 WI8.02.010__2024-12-09_Eviction_Case_MasterFi.docx
+
+> │              ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
+
+> │              ├── 📄 WI8.02.010__2025-12-16_case_summary.md
+
+> │              ├── 📄 WI8.02.010__Case_Log.md
+
+> │              ├── 📄 WI8.02.010__Financial_Tracker.md
+
+> │              ├── 📄 WI8.02.010__QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu__1.md
+
+> │              ├── 📄 WI8.02.010__Session_Summary_2025-12-16_fcfcu_ca.md
+
+> │              ├── 📄 WI8.02.010__case_conversation_log.txt
+
+> │              ├── 📄 WI8.02.010__expenses.csv
+
+> │              ├── 📄 WI8.02.010__index.html
+
+> │              ├── 📄 WI8.02.010__index.md
+
+> │              ├── 📄 _README.md
+
+> │  └── 📂 strategies/
+
+> │    └── 📂 promotion_pipeline/
+
+> │      └── 📂 _PROMOTION/
+
+> │        ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
+
+> │        ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
+
+> │        ├── 📄 WZ9.00.003_PROMOTION_LOG.md
+
+> │        ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
+
+> │        └── 📂 WZ9_00_050_FILINGS/
+
+> │          └── 📂 Supplemental/
+
+> │            └── 📂 01_drafts/
+
+> │              ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            └── 📂 02_exhibits/
+
+> │              ├── 📄 WZ9.00.050__20_exhibits_combined_source
+
+> │              ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            └── 📂 04_filed_receipts/
+
+> │              ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            ├── 📄 WZ9.00.050__index.html
+
+> │          ├── 📄 WZ9.00.050__Motions.md
+
+> │          ├── 📄 WZ9.00.050__index.html
+
+> │          ├── 📄 _README.md
+
+> │          └── 📂 motion_vacate/
+
+> │            └── 📂 01_drafts/
+
+> │              ├── 📄 WZ9.00.050__Emergency Motions.docx
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            └── 📂 02_exhibits/
+
+> │              ├── 📄 WZ9.00.050__01_motion_vacate.pdf
+
+> │              ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
+
+> │              ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
+
+> │              ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
+
+> │              ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
+
+> │              ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
+
+> │              ├── 📄 WZ9.00.050__combinepdf.pdf
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            └── 📂 03_proposed_order/
+
+> │              ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            └── 📂 04_filed_receipts/
+
+> │              ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │              ├── 📄 WZ9.00.050__index.html
+
+> │            ├── 📄 WZ9.00.050__.gitkeep
+
+> │            ├── 📄 WZ9.00.050__index.html
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _readme.html
+
+> │      ├── 📄 wz9.00.001_ready_for_binder.html
+
+> │      ├── 📄 wz9.00.002_rejected_for_court.html
+
+> │      ├── 📄 wz9.00.003_promotion_log.html
+
+> │      ├── 📄 wz9.00.010_promotion_checklist.html
+
+> │      └── 📂 wz9_00_050_filings_intake/
+
+> └── 📂 60_OUTPUTS_EXPORTS/
+
+> │  └── 📂 01_COURT_BINDER_PRINT_READY/
+
+> │    └── 📂 A_ANCHOR_OVERVIEW/
+
+> │      └── 📂 A0_00_COVER_INDEX/
+
+> │        ├── 📄 A0.00.000_SECTION_COVER.md
+
+> │        ├── 📄 A0.00.010_MASTER_CASE_INDEX.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 A0_01_OVERVIEW/
+
+> │        ├── 📄 A0.01.001_ONE_PAGE_CASE_SUMMARY.md
+
+> │        ├── 📄 A0.01.002_HEARING_SCOPE_AND_RELIEF.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 B_BASIS_ISSUE_AND_LAW/
+
+> │      └── 📂 B1_00_COVER/
+
+> │        ├── 📄 B1.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 B1_01_ISSUE_LAW/
+
+> │        ├── 📄 B1.01.001_CORE_ISSUE_STATEMENT.md
+
+> │        ├── 📄 B1.01.002_TRIAL_RULE_4_1_B_STANDARD.md
+
+> │        ├── 📄 B1.01.003_VOID_VS_VOIDABLE_CASE_LAW.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 C_CLAIMS_AND_MOTIONS/
+
+> │      ├── 📄 01A_TAB_01_MOTION.md
+
+> │      ├── 📄 01B_Motion_To_Vacate_Void_Judgment.pdf
+
+> │      └── 📂 C2_00_COVER/
+
+> │        ├── 📄 C2.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 C2_01_MOTION_VACATE/
+
+> │        ├── 📄 C2.01.001_MOTION_TO_VACATE_VOID_JUDGMENT.md
+
+> │        ├── 📄 C2.01.002_motion_vacate.pdf
+
+> │        ├── 📄 C2.01.003_Exhibit_List.pdf
+
+> │        ├── 📄 C2.01.004_Exhibits_Combined.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 c2.01.002_motion_vacate (2).pdf
+
+> │        ├── 📄 c2.01.003_exhibit_list (2).pdf
+
+> │        ├── 📄 c2.01.004_exhibits_combined (2).pdf
+
+> │      └── 📂 C2_02_EMERGENCY_STAY_QUASH/
+
+> │        ├── 📄 C2.02.001_EMERGENCY_MOTION_STAY_OR_QUASH.md
+
+> │        ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 c2.02.002_emergency_motion_stay_or_quash (2).pdf
+
+> │      └── 📂 C2_03_SUPPLEMENTAL/
+
+> │        ├── 📄 C2.03.001_SUPPLEMENTAL_EMERGENCY_MOTION.md
+
+> │        ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 C2.03.003_EXHIBIT_H_DECLARATION.pdf
+
+> │        ├── 📄 C2.03.004_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 C2.03.005_COMBINED_SOURCE.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 c2.03.002_supplemental_emergency_motion (2).pdf
+
+> │        ├── 📄 c2.03.003_exhibit_h_declaration (2).pdf
+
+> │        ├── 📄 c2.03.004_odyssey_envelope_receipt (2).pdf
+
+> │        ├── 📄 c2.03.005_combined_source (2).pdf
+
+> │      └── 📂 C2_04_PROPOSED_ORDERS/
+
+> │        ├── 📄 C2.04.001_PROPOSED_ORDER_VACATE.md
+
+> │        ├── 📄 C2.04.001_order_vacate_proposed.pdf
+
+> │        ├── 📄 C2.04.002_PROPOSED_ORDER_STAY_WRIT.md
+
+> │        ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 c2.04.001_order_vacate_proposed (2).pdf
+
+> │        ├── 📄 c2.04.002_order_stay_writ_proposed (2).pdf
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 D_DELIVERY_SERVICE/
+
+> │      └── 📂 D3_00_COVER/
+
+> │        ├── 📄 D3.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 D3_01_SUMMONS/
+
+> │        ├── 📄 D3.01.001_SUMMONS_INCOMPLETE.pdf
+
+> │        ├── 📄 d3.01.001_summons_incomplete (2).pdf
+
+> │      └── 📂 D3_02_SHERIFF_RETURNS/
+
+> │        ├── 📄 D3.02.001_SHERIFF_RETURN_2025-03-05.pdf
+
+> │        ├── 📄 D3.02.002_SHERIFF_RETURN_2025-04-15.pdf
+
+> │        ├── 📄 d3.02.001_sheriff_return_2025-03-05 (2).pdf
+
+> │        ├── 📄 d3.02.002_sheriff_return_2025-04-15 (2).pdf
+
+> │      └── 📂 D3_03_SERVICE_ANALYSIS/
+
+> │        ├── 📄 D3.03.001_SERVICE_DEFECT_ANALYSIS.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 E_EFFECTS_PROCEDURAL_CHAIN/
+
+> │      └── 📂 E4_00_COVER/
+
+> │        ├── 📄 E4.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 E4_01_DEFAULT_JUDGMENT/
+
+> │        ├── 📄 E4.01.001_DEFAULT_JUDGMENT_ENTRY.pdf
+
+> │        ├── 📄 e4.01.001_default_judgment_entry (2).pdf
+
+> │      └── 📂 E4_02_PETITION_FOR_WRIT/
+
+> │        ├── 📄 E4.02.001_PETITION_FOR_WRIT_OF_ASSISTANCE.pdf
+
+> │        ├── 📄 e4.02.001_petition_for_writ_of_assistance (2).pdf
+
+> │      └── 📂 E4_03_WRIT_ISSUED/
+
+> │        ├── 📄 E4.03.001_WRIT_OF_ASSISTANCE_ISSUED.pdf
+
+> │        ├── 📄 e4.03.001_writ_of_assistance_issued (2).pdf
+
+> │      └── 📂 E4_04_REMOVAL_ENFORCEMENT/
+
+> │        ├── 📄 E4.04.001_REMOVAL_ENFORCEMENT_RECORD.pdf
+
+> │        ├── 📄 e4.04.001_removal_enforcement_record (2).pdf
+
+> │      └── 📂 E4_05_CHAIN_SUMMARY/
+
+> │        ├── 📄 E4.05.001_PROCEDURAL_CHAIN_SUMMARY.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 F_FACTS_DECLARATIONS/
+
+> │      └── 📂 F5_00_COVER/
+
+> │        ├── 📄 F5.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 F5_01_AFFIDAVIT_NOT_SERVED/
+
+> │        ├── 📄 F5.01.001_AFFIDAVIT_NOT_SERVED.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 F5_02_DECLARATION_ONGOING_HARM/
+
+> │        ├── 📄 F5.02.001_DECLARATION_ONGOING_HARM.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 F5_03_CREDIBILITY_DECLARATION/
+
+> │        ├── 📄 F5.03.001_CREDIBILITY_DECLARATION.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 G_GROUNDS_ADA/
+
+> │      └── 📂 G6_00_COVER/
+
+> │        ├── 📄 G6.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 G6_01_ADA_NOTICE/
+
+> │        ├── 📄 G6.01.001_ADA_NOTICE.pdf
+
+> │        ├── 📄 g6.01.001_ada_notice (2).pdf
+
+> │      └── 📂 G6_02_ADA_SUPPORTING/
+
+> │        ├── 📄 G6.02.001_ADA_SUPPORTING_DOCUMENTATION.pdf
+
+> │        ├── 📄 g6.02.001_ada_supporting_documentation (2).pdf
+
+> │      └── 📂 G6_03_ADA_IMPACT_SUMMARY/
+
+> │        ├── 📄 G6.03.001_ADA_IMPACT_SUMMARY.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 H_HARD_EXHIBITS/
+
+> │      ├── 📄 02A_TAB_02_EXHIBITS.md
+
+> │      ├── 📄 02B_Exhibits_Index.md
+
+> │      ├── 📄 02C_Exhibits.pdf
+
+> │      └── 📂 H7_00_COVER/
+
+> │        ├── 📄 H7.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_01_EXHIBITS_A-H/
+
+> │        ├── 📄 H7.01.0001-0008_EXHIBITS_COMBINED.pdf
+
+> │        ├── 📄 H7.01.0001_EXHIBIT_A_SHERIFF_RETURN_2025-03-05.pdf
+
+> │        ├── 📄 H7.01.0002_EXHIBIT_B_SHERIFF_RETURN_2025-04-15.pdf
+
+> │        ├── 📄 H7.01.0003_EXHIBIT_C_INCOMPLETE_SUMMONS.pdf
+
+> │        ├── 📄 H7.01.0004_EXHIBIT_D_DEFAULT_JUDGMENT_MOTION.pdf
+
+> │        ├── 📄 H7.01.0005_EXHIBIT_E_PETITION_FOR_WRIT.pdf
+
+> │        ├── 📄 H7.01.0006_EXHIBIT_F_AFFIDAVIT.pdf
+
+> │        ├── 📄 H7.01.0007_EXHIBIT_G1_ADA_NOTICE.pdf
+
+> │        ├── 📄 H7.01.0008_EXHIBIT_G2_AES_ADA_DOCUMENTS.pdf
+
+> │        ├── 📄 H7.01.0009_EXHIBIT_H_DECLARATION_OF_BACKGROUND.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 h7.01.0001-0008_exhibits_combined (2).pdf
+
+> │        ├── 📄 h7.01.0001_exhibit_a_sheriff_return_2025-03-05 (2).pdf
+
+> │        ├── 📄 h7.01.0002_exhibit_b_sheriff_return_2025-04-15 (2).pdf
+
+> │        ├── 📄 h7.01.0003_exhibit_c_incomplete_summons (2).pdf
+
+> │        ├── 📄 h7.01.0004_exhibit_d_default_judgment_motion (2).pdf
+
+> │        ├── 📄 h7.01.0005_exhibit_e_petition_for_writ (2).pdf
+
+> │        ├── 📄 h7.01.0006_exhibit_f_affidavit (2).pdf
+
+> │        ├── 📄 h7.01.0007_exhibit_g1_ada_notice (2).pdf
+
+> │        ├── 📄 h7.01.0008_exhibit_g2_aes_ada_documents (2).pdf
+
+> │        ├── 📄 h7.01.0009_exhibit_h_declaration_of_background (2).pdf
+
+> │      └── 📂 H7_02_EXHIBITS_I_ADA/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_03_EXHIBITS_J_REMOVAL/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_04_EXHIBITS_K_FINANCIAL/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_05_EXHIBITS_L_STATEMENTS/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_06_EXHIBITS_M_SERVICE/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 H7_07_EXHIBITS_P_PROPERTY/
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 I_INTERNAL_REFERENCE/
+
+> │      └── 📂 I8_00_COVER/
+
+> │        ├── 📄 I8.00.000_SECTION_COVER.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 I8_01_FULL_DOCKET/
+
+> │        ├── 📄 I8_01_000_CASE_SUMMARY.md
+
+> │        ├── 📄 I8_01_000_FULL_DOCKET.pdf
+
+> │        ├── 📄 I8_01_001_Complaint.pdf
+
+> │        ├── 📄 I8_01_002_Appearance.pdf
+
+> │        ├── 📄 I8_01_003_Request_for_Admissions.pdf
+
+> │        ├── 📄 I8_01_004_Notice_to_Homeowners.pdf
+
+> │        ├── 📄 I8_01_005_Appearance_2.pdf
+
+> │        ├── 📄 I8_01_006_Summons_1.pdf
+
+> │        ├── 📄 I8_01_007_Summons_2.pdf
+
+> │        ├── 📄 I8_01_008_Summons_3.pdf
+
+> │        ├── 📄 I8_01_009_Summons_4.pdf
+
+> │        ├── 📄 I8_01_010_Summons_5.pdf
+
+> │        ├── 📄 I8_01_011_Service_Returned_03-05-2025.pdf
+
+> │        ├── 📄 I8_01_012_Service_Returned_04-15-2025.pdf
+
+> │        ├── 📄 I8_01_013_Motion_for_Default_Judgment.pdf
+
+> │        ├── 📄 I8_01_014_Affidavit.pdf
+
+> │        ├── 📄 I8_01_015_Affidavit_Attorney_Fees.pdf
+
+> │        ├── 📄 I8_01_016_Affidavit_Additional.pdf
+
+> │        ├── 📄 I8_01_017_Order_Denying_Default_Judgment.pdf
+
+> │        ├── 📄 I8_01_018_Omitted_Notice_of_Service.pdf
+
+> │        ├── 📄 I8_01_019_Amended_Motion_Default_Judgment_1.pdf
+
+> │        ├── 📄 I8_01_020_Amended_Motion_Default_Judgment_2.pdf
+
+> │        ├── 📄 I8_01_021_Praecipe_Sheriff_Sale_1.pdf
+
+> │        ├── 📄 I8_01_022_Praecipe_Sheriff_Sale_2.pdf
+
+> │        ├── 📄 I8_01_023_Decree_Foreclosure_Returned.pdf
+
+> │        ├── 📄 I8_01_024_Petition_Writ_of_Assistance.pdf
+
+> │        ├── 📄 I8_01_025_Motion_Vacate_Stay_Writ.pdf
+
+> │        ├── 📄 I8_01_026_Exhibit_List_A-G.pdf
+
+> │        ├── 📄 I8_01_027_Supplemental_Motion_Access.pdf
+
+> │        ├── 📄 I8_01_028_Report_Court_Defendant_Request.pdf
+
+> │        ├── 📄 I8_01_029_Emergency_Supplemental_Declaration.pdf
+
+> │        ├── 📄 I8_01_030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │        ├── 📄 I8_01_031_Proposed_Order_Vacate.pdf
+
+> │        ├── 📄 I8_01_032_Proposed_Order_Stay.pdf
+
+> │        ├── 📄 I8_01_033_ADA_Disability_Affidavit.pdf
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 i8_01_000_full_docket (2).pdf
+
+> │        ├── 📄 i8_01_001_complaint (2).pdf
+
+> │        ├── 📄 i8_01_002_appearance (2).pdf
+
+> │        ├── 📄 i8_01_003_request_for_admissions (2).pdf
+
+> │        ├── 📄 i8_01_004_notice_to_homeowners (2).pdf
+
+> │        ├── 📄 i8_01_005_appearance_2 (2).pdf
+
+> │        ├── 📄 i8_01_006_summons_1 (2).pdf
+
+> │        ├── 📄 i8_01_007_summons_2 (2).pdf
+
+> │        ├── 📄 i8_01_008_summons_3 (2).pdf
+
+> │        ├── 📄 i8_01_009_summons_4 (2).pdf
+
+> │        ├── 📄 i8_01_010_summons_5 (2).pdf
+
+> │        ├── 📄 i8_01_011_service_returned_03-05-2025 (2).pdf
+
+> │        ├── 📄 i8_01_012_service_returned_04-15-2025 (2).pdf
+
+> │        ├── 📄 i8_01_013_motion_for_default_judgment (2).pdf
+
+> │        ├── 📄 i8_01_014_affidavit (2).pdf
+
+> │        ├── 📄 i8_01_015_affidavit_attorney_fees (2).pdf
+
+> │        ├── 📄 i8_01_016_affidavit_additional (2).pdf
+
+> │        ├── 📄 i8_01_017_order_denying_default_judgment (2).pdf
+
+> │        ├── 📄 i8_01_018_omitted_notice_of_service (2).pdf
+
+> │        ├── 📄 i8_01_019_amended_motion_default_judgment_1 (2).pdf
+
+> │        ├── 📄 i8_01_020_amended_motion_default_judgment_2 (2).pdf
+
+> │        ├── 📄 i8_01_021_praecipe_sheriff_sale_1 (2).pdf
+
+> │        ├── 📄 i8_01_022_praecipe_sheriff_sale_2 (2).pdf
+
+> │        ├── 📄 i8_01_023_decree_foreclosure_returned (2).pdf
+
+> │        ├── 📄 i8_01_024_petition_writ_of_assistance (2).pdf
+
+> │        ├── 📄 i8_01_025_motion_vacate_stay_writ (2).pdf
+
+> │        ├── 📄 i8_01_026_exhibit_list_a-g (2).pdf
+
+> │        ├── 📄 i8_01_027_supplemental_motion_access (2).pdf
+
+> │        ├── 📄 i8_01_028_report_court_defendant_request (2).pdf
+
+> │        ├── 📄 i8_01_029_emergency_supplemental_declaration (2).pdf
+
+> │        ├── 📄 i8_01_030_report_sheriff_sale_no_excess (2).pdf
+
+> │        ├── 📄 i8_01_031_proposed_order_vacate (2).pdf
+
+> │        ├── 📄 i8_01_032_proposed_order_stay (2).pdf
+
+> │        ├── 📄 i8_01_033_ada_disability_affidavit (2).pdf
+
+> │      └── 📂 I8_02_RESEARCH_NOTES/
+
+> │        ├── 📄 I8.02.001_RESEARCH_AND_NOTES.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 I8_99_DO_NOT_PRINT/
+
+> │        ├── 📄 I8.99.999_INTERNAL_DO_NOT_PRINT.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │  └── 📂 10_Covers/
+
+> │    ├── 📄 00A_Cover.html
+
+> │    ├── 📄 00A_Cover_Court.html
+
+> │    ├── 📄 00A_Cover_Opposing.html
+
+> │    ├── 📄 00B_Spine.html
+
+> │    ├── 📄 Binder Covers.pdf
+
+> │  └── 📂 20_PRINT_BINDERS/
+
+> │    ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> ├── 📄 README.md
+
+> └── 📂 _INGEST/
+
+> │  └── 📂 10_supporting/
+
+> │    └── 📂 10_photos_video/
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │    └── 📂 20_receipts/
+
+> │      ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │    └── 📂 30_declarations/
+
+> │    └── 📂 40_affidavits/
+
+> │      └── 📂 ada-disability/
+
+> │      └── 📂 character/
+
+> │      └── 📂 community-service/
+
+> │      └── 📂 credibility/
+
+> │      └── 📂 observations/
+
+> │  └── 📂 20_property/
+
+> │    └── 📂 10_mortgage_history/
+
+> │      └── 📂 20_payments/
+
+> │        ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │    └── 📂 20_parcel/
+
+> │      ├── 📄 Parcel_6016506_PRC.pdf
+
+> │      ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │  └── 📂 30_declarations/
+
+> │  └── 📂 30_fcfcu/
+
+> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │    ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │    ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
+
+> │    ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │    ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │    ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │    ├── 📄 2024-20-03_Response_to_tax_notice.pdf
+
+> │    ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │    ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │    ├── 📄 20241204_FCFCU_Statement.pdf
+
+> │    ├── 📄 2025-12-20_EXH-30_fcfcu_740eacdc_2025-12-20_EX.jpg
+
+> │    ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │    ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │    ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │    ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │    ├── 📄 WH7.00.020__2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 40_affidavits/
+
+> │    └── 📂 ada-disability/
+
+> │    └── 📂 character/
+
+> │    └── 📂 community-service/
+
+> │    └── 📂 credibility/
+
+> │    └── 📂 observations/
+
+> │  └── 📂 50_aes/
+
+> │    ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │    ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_.pdf
+
+> │    ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │    ├── 📄 WH7.00.020__2025-12-16_AES_Emergency_Notice.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 99__archive/
+
+> │    ├── 📄 WH7.00.020__README_supporting.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 _raw_evidence/
+
 > ```
 
 ### Assistant
@@ -18880,452 +23767,898 @@ canonical_ref: ""
 > - Or define the **print-group → binder mapping** now that roots are settled
 
 ### User
-> BASICALLY PHASE IS OUR WORKIGN FOLDE,R HELP ME CLEAN IT UP. OR JUST GIVE ME AGEMINI PROPT ```markdown
-> . 📂 D_PHASES
-> └── 📂 00_intake_preservation/
-> │  ├── 📄 00_intake_preservation.md
-> │  ├── 📄 Contacts.md
-> │  ├── 📄 attorney_brief.md
-> │  └── 📂 evidence_staging/
-> │    ├── 📄 evidence_staging.md
-> │    └── 📂 exhibit_candidates/
-> │      └── 📂 02_exposure_and_harm/
-> │        ├── 📄 02_exposure_and_harm.md
-> │        └── 📂 photos_conditions/
-> │          ├── 📄 photos_conditions.md
-> │        └── 📂 weather_reports/
-> │          ├── 📄 weather_reports.md
-> │        ├── 📄 wi8.02.050__cold_risk_report.html
-> │      ├── 📄 exhibit_candidates.md
-> │    └── 📂 potential_exhibits/
-> │      ├── 📄 potential_exhibits.md
-> │  ├── 📄 receipt_usps_tracking.md
-> │  ├── 📄 script_call_lawyers.md
-> └── 📂 01_Foreclosure_Core_Court_Record/
-> │  └── 📂 01_Docket/
-> │    ├── 📄 01_Docket.md
-> │    ├── 📄 Summary - MyCase.html
-> │    ├── 📄 _Case_Summary.md
-> │    └── 📂 docket_files/
-> │      ├── 📄 001_Complaint.pdf
-> │      ├── 📄 002_Appearance.pdf
-> │      ├── 📄 003_Request_for_Admissions.pdf
-> │      ├── 📄 004_Notice_to_Homeowners.pdf
-> │      ├── 📄 005_Appearance_2.pdf
-> │      ├── 📄 006_Summons_1.pdf
-> │      ├── 📄 007_Summons_2.pdf
-> │      ├── 📄 008_Summons_3.pdf
-> │      ├── 📄 009_Summons_4.pdf
-> │      ├── 📄 010_Summons_5.pdf
-> │      ├── 📄 011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 014_Affidavit.pdf
-> │      ├── 📄 015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 016_Order_Denying_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
-> │      ├── 📄 018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
-> │      ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
-> │      ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
-> │      ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 024_Service Returned Served.pdf
-> │      ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
-> │      ├── 📄 026_Exhibit_List_A-G.pdf
-> │      ├── 📄 027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 029_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 032_Proposed_Order_Stay.pdf
-> │      ├── 📄 033_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 035_01092026_005.pdf.pdf
-> │      ├── 📄 2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 docket_files.md
-> │    ├── 📄 docket_index.md
-> │  ├── 📄 01_Foreclosure_Core_Court_Record.md
-> │  └── 📂 03_Service_Process/
-> │    ├── 📄 03_Service_Process.md
-> │    ├── 📄 affidavits_service.md
-> │    ├── 📄 service_defects_analysis.md
-> │  └── 📂 05_Sale_and_Possesion/
-> │    ├── 📄 05_Sale_and_Possesion.md
-> │    ├── 📄 possession_admissions.md
-> │  └── 📂 06_Financial_Accounting/
-> │    ├── 📄 06_Financial_Accounting.md
-> │    ├── 📄 interest_fee_irregularities.md
-> │    ├── 📄 surplus_definciency_analysis.md
-> │  └── 📂 10_2025-12-10_motion_vacate/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 01_drafts.md
-> │      ├── 📄 Emergency Motions.docx
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 01_motion_vacate.pdf
-> │      ├── 📄 02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 02_exhibits.md
-> │      ├── 📄 03_order_vacate_proposed.pdf
-> │      ├── 📄 04_order_stay_writ_proposed.pdf
-> │      ├── 📄 05_Exhibit_List.pdf
-> │      ├── 📄 06_Exhibits_Combined.pdf
-> │      ├── 📄 combinepdf.pdf
-> │    └── 📂 03_proposed_order/
-> │      ├── 📄 03_proposed_order.md
-> │      ├── 📄 Proposed_Order_Vacate.docx
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 04_filed_receipts.md
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │    ├── 📄 10_2025-12-10_motion_vacate.md
-> │  └── 📂 10_draft_motions/
-> │    ├── 📄 10_draft_motions.md
-> │    ├── 📄 EMERGENCY_FILING_PACKET.md
-> │    ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
-> │    ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
-> │    ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
-> │    ├── 📄 WC2.00.010___Motions.md
-> │    ├── 📄 WC2.00.010__motion_emergency_stay_of_writ (2).docx
-> │    ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
-> │    ├── 📄 WC2.00.010__motion_emergency_supplemental_mot (2).docx
-> │    ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
-> │    ├── 📄 WC2.00.010__motion_to_vacate_void_judgement (2).docx
-> │    ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 index (2).html
-> │    ├── 📄 motion_emergency_stay_of_writ.md
-> │    ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
-> │    ├── 📄 motion_to_vacate_void_judgment.md
-> │    └── 📂 motions/
-> │      ├── 📄 01B_Motion_To_Vacate_Void_Judgment.pdf
-> │      ├── 📄 C2.01.002_motion_vacate.pdf
-> │      ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │      ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 motions.md
-> │    ├── 📄 wc2.00.001_draft_motion_vacate.html
-> │    ├── 📄 wc2.00.002_draft_emergency_stay.html
-> │    ├── 📄 wc2.00.003_draft_supplemental.html
-> │    ├── 📄 wc2.00.010___motions.html
-> │    ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
-> │    ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
-> │    ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
-> │    ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
-> │    ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
-> │    ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
-> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 01_drafts.md
-> │      ├── 📄 Supplemental_Emergency_Motion.pdf
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 02_exhibits.md
-> │      ├── 📄 20_exhibits_combined_source
-> │      ├── 📄 Exhibit_H_Declaration.pdf
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 04_filed_receipts.md
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │    ├── 📄 20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │  └── 📂 20_jurisdiction_service_tr_4_1_b 1/
-> │    ├── 📄 20_jurisdiction_service_tr_4_1_b 1.md
-> │    ├── 📄 index-content.html
-> │    ├── 📄 20_jurisdiction_service_tr_4_1_b.md
-> │  └── 📂 20_proposed_orders/
-> │    ├── 📄 20_proposed_orders.md
-> │    ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
-> │    ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
-> │    ├── 📄 WC2.01.010__Proposed_Orders.md
-> │    ├── 📄 WC2.01.010__index (2).html
-> │    ├── 📄 WC2.01.010__index.md
-> │    ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
-> │    ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
-> │    ├── 📄 _README.md
-> │    ├── 📄 index (2).html
-> │    ├── 📄 proposed_order_emergency_stay.md
-> │    ├── 📄 proposed_order_motion_to_vacate.md
-> │    ├── 📄 wc2.01.001_draft_order_vacate.html
-> │    ├── 📄 wc2.01.002_draft_order_stay.html
-> │    ├── 📄 wc2.01.010__index-content.html
-> │    ├── 📄 wc2.01.010__index.html
-> │    ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
-> │    ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
-> │    ├── 📄 wc2.01.010__proposed_orders.html
-> │  └── 📂 30_void_vs_voidable_tr_60b/
-> │  └── 📂 30_void_vs_voidable_tr_60b 1/
-> │    ├── 📄 30_void_vs_voidable_tr_60b 1.md
-> │    ├── 📄 index-content.html
-> │    ├── 📄 30_void_vs_voidable_tr_60b.md
-> │  └── 📂 40_claims_motions/
-> │    ├── 📄 40_claims_motions.md
-> │  └── 📂 WZ9_00_050_FILINGS/
-> │    └── 📂 Supplemental/
-> │      └── 📂 01_drafts/
-> │        ├── 📄 01_drafts.md
-> │        ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 WZ9.00.050__index.html
-> │      └── 📂 02_exhibits/
-> │        ├── 📄 02_exhibits.md
-> │        ├── 📄 WZ9.00.050__20_exhibits_combined_source
-> │        ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
-> │        ├── 📄 WZ9.00.050__index.html
-> │      └── 📂 04_filed_receipts/
-> │        ├── 📄 04_filed_receipts.md
-> │        ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 WZ9.00.050__index.html
-> │      ├── 📄 Supplemental.md
-> │      ├── 📄 WZ9.00.050__index.html
-> │    ├── 📄 WZ9.00.050__Motions.md
-> │    ├── 📄 WZ9.00.050__index.html
-> │    ├── 📄 WZ9_00_050_FILINGS.md
-> │    ├── 📄 _README.md
-> │    └── 📂 motion_vacate/
-> │      └── 📂 01_drafts/
-> │        ├── 📄 01_drafts.md
-> │        ├── 📄 WZ9.00.050__Emergency Motions.docx
-> │        ├── 📄 WZ9.00.050__index.html
-> │      └── 📂 02_exhibits/
-> │        ├── 📄 02_exhibits.md
-> │        ├── 📄 WZ9.00.050__01_motion_vacate.pdf
-> │        ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
-> │        ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
-> │        ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
-> │        ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
-> │        ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
-> │        ├── 📄 WZ9.00.050__combinepdf.pdf
-> │        ├── 📄 WZ9.00.050__index.html
-> │      └── 📂 03_proposed_order/
-> │        ├── 📄 03_proposed_order.md
-> │        ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
-> │        ├── 📄 WZ9.00.050__index.html
-> │      └── 📂 04_filed_receipts/
-> │        ├── 📄 04_filed_receipts.md
-> │        ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 WZ9.00.050__index.html
-> │      ├── 📄 WZ9.00.050__.gitkeep
-> │      ├── 📄 WZ9.00.050__index.html
-> │      ├── 📄 motion_vacate.md
-> │  └── 📂 orders/
-> │    ├── 📄 C2.04.001_order_vacate_proposed.pdf
-> │    ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
-> │    ├── 📄 c2.04.001_order_vacate_proposed (2).pdf
-> │    ├── 📄 c2.04.002_order_stay_writ_proposed (2).pdf
-> │    ├── 📄 orders.md
-> └── 📂 02_credit_reporting_FCRA/
-> │  ├── 📄 02_credit_reporting_FCRA.md
-> │  └── 📂 05_Reputational_Pressure/
-> │    ├── 📄 05_Reputational_Pressure.md
-> │    └── 📂 better_business_bureau/
-> │      ├── 📄 better_business_bureau.md
-> │      ├── 📄 complaint.md
-> └── 📂 03_property_possession_harms/
-> │  ├── 📄 03_property_possession_harms.md
-> └── 📂 04_civil_rights_ADA_FHA/
-> │  ├── 📄 04_civil_rights_ADA_FHA.md
-> │  └── 📂 10_ada_title_ii/
-> │    ├── 📄 10_ada_title_ii.md
-> │  └── 📂 15_parallel_enforcement/
-> │    ├── 📄 15_parallel_enforcement.md
-> │    ├── 📄 _readme.html
-> │    ├── 📄 wg6.01.001_doj_complaint.html
-> │    ├── 📄 wg6.01.002_icrc_complaint.html
-> │    ├── 📄 wg6.01.003_status_tracker.html
-> │  ├── 📄 ada_packet.md
-> └── 📂 05_discovery/
-> │  ├── 📄 05_discovery.md
-> │  └── 📂 promotion_pipeline/
-> │    ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
-> │    ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
-> │    ├── 📄 WZ9.00.003_PROMOTION_LOG.md
-> │    ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
-> │    ├── 📄 promotion_pipeline.md
-> └── 📂 06_damages_and_remedies/
-> │  ├── 📄 06_damages_and_remedies.md
-> │  └── 📂 40_Payout_Strategy/
-> │    ├── 📄 40_Payout_Strategy.md
-> │    ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
-> │    ├── 📄 _README.md
-> │    └── 📂 payout_strategy/
-> │      ├── 📄 _readme.html
-> │      ├── 📄 payout_strategy.md
-> │      ├── 📄 wi8.99.010__index-content.html
-> │      ├── 📄 wi8.99.010__index.html
-> │      ├── 📄 wi8.99.010__long_term_payout_strategy.html
-> │  └── 📂 Photos_Conditions/
-> │    ├── 📄 Photos_Conditions.md
-> │    ├── 📄 WI8.02.050__index.html
-> │  └── 📂 Weather_Reports/
-> │    ├── 📄 WI8.02.050__index.html
-> │    ├── 📄 Weather_Reports.md
-> │  └── 📂 economic/
-> │    ├── 📄 WI8.02.001_ECONOMIC_HARM.md
-> │    ├── 📄 economic.md
-> │  └── 📂 non-economic/
-> │    ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
-> │    └── 📂 cold-exposure/
-> │      ├── 📄 WI8.02.050__Cold_Risk_Report.md
-> │      ├── 📄 cold-exposure.md
-> │    ├── 📄 non-economic.md
-> │  └── 📂 personal_narrative/
-> │    └── 📂 01_Public_Narrative/
-> │      ├── 📄 01_Public_Narrative.md
-> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold (2).md
-> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
-> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │      ├── 📄 Public_Statement (2).md
-> │      ├── 📄 Public_Statement.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index-content.html
-> │      ├── 📄 public_statement.html
-> │    └── 📂 02_Exposure_and_Harm/
-> │      ├── 📄 02_Exposure_and_Harm.md
-> │      ├── 📄 Cold_Risk_Report (2).md
-> │      ├── 📄 Cold_Risk_Report.md
-> │      └── 📂 Photos_Conditions/
-> │        ├── 📄 Photos_Conditions.md
-> │        ├── 📄 index-content.html
-> │      └── 📂 Weather_Reports/
-> │        ├── 📄 Weather_Reports.md
-> │        ├── 📄 index-content.html
-> │      ├── 📄 _README.md
-> │      ├── 📄 cold_risk_report.html
-> │      ├── 📄 index-content.html
-> │    └── 📂 03_Internal_Analysis/
-> │      ├── 📄 03_Internal_Analysis.md
-> │      └── 📂 Payout_Strategy/
-> │        ├── 📄 Long_Term_Payout_Strategy (2).md
-> │        ├── 📄 Long_Term_Payout_Strategy.md
-> │        ├── 📄 Payout_Strategy.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index-content.html
-> │        ├── 📄 long_term_payout_strategy.html
-> │      └── 📂 Premonitions/
-> │        ├── 📄 Premonitions.md
-> │        ├── 📄 Premonitions_I_Knew_Before_I_Knew (2).md
-> │        ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index-content.html
-> │        ├── 📄 premonitions_i_knew_before_i_knew.html
-> │      ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew (2).md
-> │      ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index-content.html
-> │      ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
-> │    └── 📂 04_Donations_and_Support/
-> │      ├── 📄 04_Donations_and_Support.md
-> │      └── 📂 Donation_Page_HTML/
-> │        ├── 📄 Donation_Page_HTML.md
-> │        ├── 📄 index-content.html
-> │      ├── 📄 Donations_Context (2).md
-> │      ├── 📄 Donations_Context.md
-> │      └── 📂 Screenshots_Live_Page/
-> │        ├── 📄 Screenshots_Live_Page.md
-> │        ├── 📄 index-content.html
-> │      ├── 📄 _README.md
-> │      ├── 📄 donations_context.html
-> │      ├── 📄 index-content.html
-> │    └── 📂 05_Timeline/
-> │      ├── 📄 05_Timeline.md
-> │      ├── 📄 Master_Timeline (2).md
-> │      ├── 📄 Master_Timeline.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index-content.html
-> │      ├── 📄 master_timeline.html
-> │    └── 📂 Premonitions/
-> │      ├── 📄 Premonitions.md
-> │      ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
-> │      ├── 📄 WI8.99.010__index.html
-> │      ├── 📄 _README.md
-> │    ├── 📄 index-content.html
-> │    ├── 📄 personal_narrative.md
-> │  └── 📂 settlement/
-> │    ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
-> │    ├── 📄 settlement.md
-> │  └── 📂 thirdparty/
-> │    ├── 📄 thirdparty.md
-> └── 📂 07_public_accountability/
-> │  └── 📂 01_Public_Narrative/
-> │    ├── 📄 01_Public_Narrative.md
-> │    ├── 📄 Talking_Points.md
-> │    ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> │    ├── 📄 WI8.01.010__Public_Statement.md
-> │    ├── 📄 WI8.01.010__index.html
-> │    ├── 📄 _README.md
-> │  └── 📂 04_Donations_and_Support/
-> │    ├── 📄 04_Donations_and_Support.md
-> │    └── 📂 Donation_Page_HTML/
-> │      ├── 📄 Donation_Page_HTML.md
-> │      ├── 📄 WI8.01.050__index.html
-> │    └── 📂 Screenshots_Live_Page/
-> │      ├── 📄 Screenshots_Live_Page.md
-> │      ├── 📄 WI8.01.050__index.html
-> │    ├── 📄 WI8.01.050__Donations_Context.md
-> │    ├── 📄 WI8.01.050__index.html
-> │    ├── 📄 _README.md
-> │  ├── 📄 07_public_accountability.md
-> │  └── 📂 donation_page_html/
-> │    ├── 📄 donation_page_html.md
-> │    ├── 📄 wi8.01.050__index-content.html
-> │  └── 📂 narratives/
-> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
-> │    ├── 📄 narratives.md
-> │    ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
-> │    ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
-> │  └── 📂 press/
-> │    ├── 📄 WI8.01.001_PRESS_STRATEGY.md
-> │    ├── 📄 press.md
-> │  └── 📂 risks/
-> │    ├── 📄 WI8.01.003_TIMING_AND_RISK.md
-> │    ├── 📄 risks.md
-> │  └── 📂 socials/
-> │    ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
-> │    ├── 📄 socials.md
-> │  ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
-> └── 📂 08_settlement_resolution/
-> │  ├── 📄 08_settlement_resolution.md
-> │  ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
-> └── 📂 09_post_judgment_appeal/
-> │  ├── 📄 09_post_judgment_appeal.md
-> ├── 📄 50_PHASES.md
-> ├── 📄 Strategic_Plan.canvas
-> └── 📂 _docket/
-> │  ├── 📄 WI8.00.001__001_Complaint.pdf
-> │  ├── 📄 WI8.00.001__002_Appearance.pdf
-> │  ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
-> │  ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
-> │  ├── 📄 WI8.00.001__005_Appearance_2.pdf
-> │  ├── 📄 WI8.00.001__006_Summons_1.pdf
-> │  ├── 📄 WI8.00.001__007_Summons_2.pdf
-> │  ├── 📄 WI8.00.001__008_Summons_3.pdf
-> │  ├── 📄 WI8.00.001__009_Summons_4.pdf
-> │  ├── 📄 WI8.00.001__010_Summons_5.pdf
-> │  ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
-> │  ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
-> │  ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
-> │  ├── 📄 WI8.00.001__014_Affidavit.pdf
-> │  ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
-> │  ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
-> │  ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
-> │  ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
-> │  ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
-> │  ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
-> │  ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
-> │  ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
-> │  ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
-> │  ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
-> │  ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
-> │  ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
-> │  ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
-> │  ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
-> │  ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
-> │  ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
-> │  ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
-> │  ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
-> │  ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
-> │  ├── 📄 WI8.00.001___Case_Summary.md
-> │  ├── 📄 WI8.00.001__index.html
-> │  ├── 📄 _README.md
-> │  ├── 📄 _docket.md
-> └── 📄 strategic_plan.html
+> BASICALLY PHASE IS OUR WORKIGN FOLDE,R HELP ME CLEAN IT UP. OR JUST GIVE ME AGEMINI PROPT ```markdown
+
+> . 📂 D_PHASES
+
+> └── 📂 00_intake_preservation/
+
+> │  ├── 📄 00_intake_preservation.md
+
+> │  ├── 📄 Contacts.md
+
+> │  ├── 📄 attorney_brief.md
+
+> │  └── 📂 evidence_staging/
+
+> │    ├── 📄 evidence_staging.md
+
+> │    └── 📂 exhibit_candidates/
+
+> │      └── 📂 02_exposure_and_harm/
+
+> │        ├── 📄 02_exposure_and_harm.md
+
+> │        └── 📂 photos_conditions/
+
+> │          ├── 📄 photos_conditions.md
+
+> │        └── 📂 weather_reports/
+
+> │          ├── 📄 weather_reports.md
+
+> │        ├── 📄 wi8.02.050__cold_risk_report.html
+
+> │      ├── 📄 exhibit_candidates.md
+
+> │    └── 📂 potential_exhibits/
+
+> │      ├── 📄 potential_exhibits.md
+
+> │  ├── 📄 receipt_usps_tracking.md
+
+> │  ├── 📄 script_call_lawyers.md
+
+> └── 📂 01_Foreclosure_Core_Court_Record/
+
+> │  └── 📂 01_Docket/
+
+> │    ├── 📄 01_Docket.md
+
+> │    ├── 📄 Summary - MyCase.html
+
+> │    ├── 📄 _Case_Summary.md
+
+> │    └── 📂 docket_files/
+
+> │      ├── 📄 001_Complaint.pdf
+
+> │      ├── 📄 002_Appearance.pdf
+
+> │      ├── 📄 003_Request_for_Admissions.pdf
+
+> │      ├── 📄 004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 005_Appearance_2.pdf
+
+> │      ├── 📄 006_Summons_1.pdf
+
+> │      ├── 📄 007_Summons_2.pdf
+
+> │      ├── 📄 008_Summons_3.pdf
+
+> │      ├── 📄 009_Summons_4.pdf
+
+> │      ├── 📄 010_Summons_5.pdf
+
+> │      ├── 📄 011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 014_Affidavit.pdf
+
+> │      ├── 📄 015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 016_Order_Denying_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
+
+> │      ├── 📄 018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 019_Amended_Motion_Default_Judgment_1.pdf
+
+> │      ├── 📄 020_Amended_Motion_Default_Judgment_2.pdf
+
+> │      ├── 📄 021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
+
+> │      ├── 📄 022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 024_Service Returned Served.pdf
+
+> │      ├── 📄 025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
+
+> │      ├── 📄 026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 029_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 033_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 035_01092026_005.pdf.pdf
+
+> │      ├── 📄 2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 docket_files.md
+
+> │    ├── 📄 docket_index.md
+
+> │  ├── 📄 01_Foreclosure_Core_Court_Record.md
+
+> │  └── 📂 03_Service_Process/
+
+> │    ├── 📄 03_Service_Process.md
+
+> │    ├── 📄 affidavits_service.md
+
+> │    ├── 📄 service_defects_analysis.md
+
+> │  └── 📂 05_Sale_and_Possesion/
+
+> │    ├── 📄 05_Sale_and_Possesion.md
+
+> │    ├── 📄 possession_admissions.md
+
+> │  └── 📂 06_Financial_Accounting/
+
+> │    ├── 📄 06_Financial_Accounting.md
+
+> │    ├── 📄 interest_fee_irregularities.md
+
+> │    ├── 📄 surplus_definciency_analysis.md
+
+> │  └── 📂 10_2025-12-10_motion_vacate/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 01_drafts.md
+
+> │      ├── 📄 Emergency Motions.docx
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 01_motion_vacate.pdf
+
+> │      ├── 📄 02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 02_exhibits.md
+
+> │      ├── 📄 03_order_vacate_proposed.pdf
+
+> │      ├── 📄 04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 05_Exhibit_List.pdf
+
+> │      ├── 📄 06_Exhibits_Combined.pdf
+
+> │      ├── 📄 combinepdf.pdf
+
+> │    └── 📂 03_proposed_order/
+
+> │      ├── 📄 03_proposed_order.md
+
+> │      ├── 📄 Proposed_Order_Vacate.docx
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 04_filed_receipts.md
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │    ├── 📄 10_2025-12-10_motion_vacate.md
+
+> │  └── 📂 10_draft_motions/
+
+> │    ├── 📄 10_draft_motions.md
+
+> │    ├── 📄 EMERGENCY_FILING_PACKET.md
+
+> │    ├── 📄 WC2.00.001_DRAFT_MOTION_VACATE.md
+
+> │    ├── 📄 WC2.00.002_DRAFT_EMERGENCY_STAY.md
+
+> │    ├── 📄 WC2.00.003_DRAFT_SUPPLEMENTAL.md
+
+> │    ├── 📄 WC2.00.010___Motions.md
+
+> │    ├── 📄 WC2.00.010__motion_emergency_stay_of_writ (2).docx
+
+> │    ├── 📄 WC2.00.010__motion_emergency_stay_of_writ.md
+
+> │    ├── 📄 WC2.00.010__motion_emergency_supplemental_mot (2).docx
+
+> │    ├── 📄 WC2.00.010__motion_emergency_supplemental_motio.md
+
+> │    ├── 📄 WC2.00.010__motion_to_vacate_void_judgement (2).docx
+
+> │    ├── 📄 WC2.00.010__motion_to_vacate_void_judgment.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 motion_emergency_stay_of_writ.md
+
+> │    ├── 📄 motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │    ├── 📄 motion_to_vacate_void_judgment.md
+
+> │    └── 📂 motions/
+
+> │      ├── 📄 01B_Motion_To_Vacate_Void_Judgment.pdf
+
+> │      ├── 📄 C2.01.002_motion_vacate.pdf
+
+> │      ├── 📄 C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │      ├── 📄 C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 motions.md
+
+> │    ├── 📄 wc2.00.001_draft_motion_vacate.html
+
+> │    ├── 📄 wc2.00.002_draft_emergency_stay.html
+
+> │    ├── 📄 wc2.00.003_draft_supplemental.html
+
+> │    ├── 📄 wc2.00.010___motions.html
+
+> │    ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.docx
+
+> │    ├── 📄 wc2.00.010__motion_emergency_stay_of_writ.html
+
+> │    ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.docx
+
+> │    ├── 📄 wc2.00.010__motion_emergency_supplemental_mot.html
+
+> │    ├── 📄 wc2.00.010__motion_to_vacate_void_judgement.docx
+
+> │    ├── 📄 wc2.00.010__motion_to_vacate_void_judgment.html
+
+> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 01_drafts.md
+
+> │      ├── 📄 Supplemental_Emergency_Motion.pdf
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 02_exhibits.md
+
+> │      ├── 📄 20_exhibits_combined_source
+
+> │      ├── 📄 Exhibit_H_Declaration.pdf
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 04_filed_receipts.md
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │    ├── 📄 20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │  └── 📂 20_jurisdiction_service_tr_4_1_b 1/
+
+> │    ├── 📄 20_jurisdiction_service_tr_4_1_b 1.md
+
+> │    ├── 📄 index-content.html
+
+> │    ├── 📄 20_jurisdiction_service_tr_4_1_b.md
+
+> │  └── 📂 20_proposed_orders/
+
+> │    ├── 📄 20_proposed_orders.md
+
+> │    ├── 📄 WC2.01.001_DRAFT_ORDER_VACATE.md
+
+> │    ├── 📄 WC2.01.002_DRAFT_ORDER_STAY.md
+
+> │    ├── 📄 WC2.01.010__Proposed_Orders.md
+
+> │    ├── 📄 WC2.01.010__index (2).html
+
+> │    ├── 📄 WC2.01.010__index.md
+
+> │    ├── 📄 WC2.01.010__proposed_order_emergency_stay.md
+
+> │    ├── 📄 WC2.01.010__proposed_order_motion_to_vacate.md
+
+> │    ├── 📄 _README.md
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 proposed_order_emergency_stay.md
+
+> │    ├── 📄 proposed_order_motion_to_vacate.md
+
+> │    ├── 📄 wc2.01.001_draft_order_vacate.html
+
+> │    ├── 📄 wc2.01.002_draft_order_stay.html
+
+> │    ├── 📄 wc2.01.010__index-content.html
+
+> │    ├── 📄 wc2.01.010__index.html
+
+> │    ├── 📄 wc2.01.010__proposed_order_emergency_stay.html
+
+> │    ├── 📄 wc2.01.010__proposed_order_motion_to_vacate.html
+
+> │    ├── 📄 wc2.01.010__proposed_orders.html
+
+> │  └── 📂 30_void_vs_voidable_tr_60b/
+
+> │  └── 📂 30_void_vs_voidable_tr_60b 1/
+
+> │    ├── 📄 30_void_vs_voidable_tr_60b 1.md
+
+> │    ├── 📄 index-content.html
+
+> │    ├── 📄 30_void_vs_voidable_tr_60b.md
+
+> │  └── 📂 40_claims_motions/
+
+> │    ├── 📄 40_claims_motions.md
+
+> │  └── 📂 WZ9_00_050_FILINGS/
+
+> │    └── 📂 Supplemental/
+
+> │      └── 📂 01_drafts/
+
+> │        ├── 📄 01_drafts.md
+
+> │        ├── 📄 WZ9.00.050__Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      └── 📂 02_exhibits/
+
+> │        ├── 📄 02_exhibits.md
+
+> │        ├── 📄 WZ9.00.050__20_exhibits_combined_source
+
+> │        ├── 📄 WZ9.00.050__Exhibit_H_Declaration.pdf
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      └── 📂 04_filed_receipts/
+
+> │        ├── 📄 04_filed_receipts.md
+
+> │        ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      ├── 📄 Supplemental.md
+
+> │      ├── 📄 WZ9.00.050__index.html
+
+> │    ├── 📄 WZ9.00.050__Motions.md
+
+> │    ├── 📄 WZ9.00.050__index.html
+
+> │    ├── 📄 WZ9_00_050_FILINGS.md
+
+> │    ├── 📄 _README.md
+
+> │    └── 📂 motion_vacate/
+
+> │      └── 📂 01_drafts/
+
+> │        ├── 📄 01_drafts.md
+
+> │        ├── 📄 WZ9.00.050__Emergency Motions.docx
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      └── 📂 02_exhibits/
+
+> │        ├── 📄 02_exhibits.md
+
+> │        ├── 📄 WZ9.00.050__01_motion_vacate.pdf
+
+> │        ├── 📄 WZ9.00.050__02_emergency_motion_quash_stay.pdf
+
+> │        ├── 📄 WZ9.00.050__03_order_vacate_proposed.pdf
+
+> │        ├── 📄 WZ9.00.050__04_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 WZ9.00.050__05_Exhibit_List.pdf
+
+> │        ├── 📄 WZ9.00.050__06_Exhibits_Combined.pdf
+
+> │        ├── 📄 WZ9.00.050__combinepdf.pdf
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      └── 📂 03_proposed_order/
+
+> │        ├── 📄 03_proposed_order.md
+
+> │        ├── 📄 WZ9.00.050__Proposed_Order_Vacate.docx
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      └── 📂 04_filed_receipts/
+
+> │        ├── 📄 04_filed_receipts.md
+
+> │        ├── 📄 WZ9.00.050__Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 WZ9.00.050__index.html
+
+> │      ├── 📄 WZ9.00.050__.gitkeep
+
+> │      ├── 📄 WZ9.00.050__index.html
+
+> │      ├── 📄 motion_vacate.md
+
+> │  └── 📂 orders/
+
+> │    ├── 📄 C2.04.001_order_vacate_proposed.pdf
+
+> │    ├── 📄 C2.04.002_order_stay_writ_proposed.pdf
+
+> │    ├── 📄 c2.04.001_order_vacate_proposed (2).pdf
+
+> │    ├── 📄 c2.04.002_order_stay_writ_proposed (2).pdf
+
+> │    ├── 📄 orders.md
+
+> └── 📂 02_credit_reporting_FCRA/
+
+> │  ├── 📄 02_credit_reporting_FCRA.md
+
+> │  └── 📂 05_Reputational_Pressure/
+
+> │    ├── 📄 05_Reputational_Pressure.md
+
+> │    └── 📂 better_business_bureau/
+
+> │      ├── 📄 better_business_bureau.md
+
+> │      ├── 📄 complaint.md
+
+> └── 📂 03_property_possession_harms/
+
+> │  ├── 📄 03_property_possession_harms.md
+
+> └── 📂 04_civil_rights_ADA_FHA/
+
+> │  ├── 📄 04_civil_rights_ADA_FHA.md
+
+> │  └── 📂 10_ada_title_ii/
+
+> │    ├── 📄 10_ada_title_ii.md
+
+> │  └── 📂 15_parallel_enforcement/
+
+> │    ├── 📄 15_parallel_enforcement.md
+
+> │    ├── 📄 _readme.html
+
+> │    ├── 📄 wg6.01.001_doj_complaint.html
+
+> │    ├── 📄 wg6.01.002_icrc_complaint.html
+
+> │    ├── 📄 wg6.01.003_status_tracker.html
+
+> │  ├── 📄 ada_packet.md
+
+> └── 📂 05_discovery/
+
+> │  ├── 📄 05_discovery.md
+
+> │  └── 📂 promotion_pipeline/
+
+> │    ├── 📄 WZ9.00.001_READY_FOR_BINDER.md
+
+> │    ├── 📄 WZ9.00.002_REJECTED_FOR_COURT.md
+
+> │    ├── 📄 WZ9.00.003_PROMOTION_LOG.md
+
+> │    ├── 📄 WZ9.00.010_PROMOTION_CHECKLIST.md
+
+> │    ├── 📄 promotion_pipeline.md
+
+> └── 📂 06_damages_and_remedies/
+
+> │  ├── 📄 06_damages_and_remedies.md
+
+> │  └── 📂 40_Payout_Strategy/
+
+> │    ├── 📄 40_Payout_Strategy.md
+
+> │    ├── 📄 WI8.99.010__Long_Term_Payout_Strategy.md
+
+> │    ├── 📄 _README.md
+
+> │    └── 📂 payout_strategy/
+
+> │      ├── 📄 _readme.html
+
+> │      ├── 📄 payout_strategy.md
+
+> │      ├── 📄 wi8.99.010__index-content.html
+
+> │      ├── 📄 wi8.99.010__index.html
+
+> │      ├── 📄 wi8.99.010__long_term_payout_strategy.html
+
+> │  └── 📂 Photos_Conditions/
+
+> │    ├── 📄 Photos_Conditions.md
+
+> │    ├── 📄 WI8.02.050__index.html
+
+> │  └── 📂 Weather_Reports/
+
+> │    ├── 📄 WI8.02.050__index.html
+
+> │    ├── 📄 Weather_Reports.md
+
+> │  └── 📂 economic/
+
+> │    ├── 📄 WI8.02.001_ECONOMIC_HARM.md
+
+> │    ├── 📄 economic.md
+
+> │  └── 📂 non-economic/
+
+> │    ├── 📄 WI8.02.002_NON_ECONOMIC_HARM.md
+
+> │    └── 📂 cold-exposure/
+
+> │      ├── 📄 WI8.02.050__Cold_Risk_Report.md
+
+> │      ├── 📄 cold-exposure.md
+
+> │    ├── 📄 non-economic.md
+
+> │  └── 📂 personal_narrative/
+
+> │    └── 📂 01_Public_Narrative/
+
+> │      ├── 📄 01_Public_Narrative.md
+
+> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold (2).md
+
+> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.html
+
+> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │      ├── 📄 Public_Statement (2).md
+
+> │      ├── 📄 Public_Statement.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index-content.html
+
+> │      ├── 📄 public_statement.html
+
+> │    └── 📂 02_Exposure_and_Harm/
+
+> │      ├── 📄 02_Exposure_and_Harm.md
+
+> │      ├── 📄 Cold_Risk_Report (2).md
+
+> │      ├── 📄 Cold_Risk_Report.md
+
+> │      └── 📂 Photos_Conditions/
+
+> │        ├── 📄 Photos_Conditions.md
+
+> │        ├── 📄 index-content.html
+
+> │      └── 📂 Weather_Reports/
+
+> │        ├── 📄 Weather_Reports.md
+
+> │        ├── 📄 index-content.html
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 cold_risk_report.html
+
+> │      ├── 📄 index-content.html
+
+> │    └── 📂 03_Internal_Analysis/
+
+> │      ├── 📄 03_Internal_Analysis.md
+
+> │      └── 📂 Payout_Strategy/
+
+> │        ├── 📄 Long_Term_Payout_Strategy (2).md
+
+> │        ├── 📄 Long_Term_Payout_Strategy.md
+
+> │        ├── 📄 Payout_Strategy.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 long_term_payout_strategy.html
+
+> │      └── 📂 Premonitions/
+
+> │        ├── 📄 Premonitions.md
+
+> │        ├── 📄 Premonitions_I_Knew_Before_I_Knew (2).md
+
+> │        ├── 📄 Premonitions_I_Knew_Before_I_Knew.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index-content.html
+
+> │        ├── 📄 premonitions_i_knew_before_i_knew.html
+
+> │      ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew (2).md
+
+> │      ├── 📄 Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index-content.html
+
+> │      ├── 📄 session_summary_2025-12-15_i_knew_before_i_kn.html
+
+> │    └── 📂 04_Donations_and_Support/
+
+> │      ├── 📄 04_Donations_and_Support.md
+
+> │      └── 📂 Donation_Page_HTML/
+
+> │        ├── 📄 Donation_Page_HTML.md
+
+> │        ├── 📄 index-content.html
+
+> │      ├── 📄 Donations_Context (2).md
+
+> │      ├── 📄 Donations_Context.md
+
+> │      └── 📂 Screenshots_Live_Page/
+
+> │        ├── 📄 Screenshots_Live_Page.md
+
+> │        ├── 📄 index-content.html
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 donations_context.html
+
+> │      ├── 📄 index-content.html
+
+> │    └── 📂 05_Timeline/
+
+> │      ├── 📄 05_Timeline.md
+
+> │      ├── 📄 Master_Timeline (2).md
+
+> │      ├── 📄 Master_Timeline.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index-content.html
+
+> │      ├── 📄 master_timeline.html
+
+> │    └── 📂 Premonitions/
+
+> │      ├── 📄 Premonitions.md
+
+> │      ├── 📄 WI8.99.010__Premonitions_I_Knew_Before_I_Knew.md
+
+> │      ├── 📄 WI8.99.010__index.html
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 index-content.html
+
+> │    ├── 📄 personal_narrative.md
+
+> │  └── 📂 settlement/
+
+> │    ├── 📄 WI8.02.003_SETTLEMENT_SCENARIOS.md
+
+> │    ├── 📄 settlement.md
+
+> │  └── 📂 thirdparty/
+
+> │    ├── 📄 thirdparty.md
+
+> └── 📂 07_public_accountability/
+
+> │  └── 📂 01_Public_Narrative/
+
+> │    ├── 📄 01_Public_Narrative.md
+
+> │    ├── 📄 Talking_Points.md
+
+> │    ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> │    ├── 📄 WI8.01.010__Public_Statement.md
+
+> │    ├── 📄 WI8.01.010__index.html
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 04_Donations_and_Support/
+
+> │    ├── 📄 04_Donations_and_Support.md
+
+> │    └── 📂 Donation_Page_HTML/
+
+> │      ├── 📄 Donation_Page_HTML.md
+
+> │      ├── 📄 WI8.01.050__index.html
+
+> │    └── 📂 Screenshots_Live_Page/
+
+> │      ├── 📄 Screenshots_Live_Page.md
+
+> │      ├── 📄 WI8.01.050__index.html
+
+> │    ├── 📄 WI8.01.050__Donations_Context.md
+
+> │    ├── 📄 WI8.01.050__index.html
+
+> │    ├── 📄 _README.md
+
+> │  ├── 📄 07_public_accountability.md
+
+> │  └── 📂 donation_page_html/
+
+> │    ├── 📄 donation_page_html.md
+
+> │    ├── 📄 wi8.01.050__index-content.html
+
+> │  └── 📂 narratives/
+
+> │    ├── 📄 Case Narrative - Wrongful Foreclosure and Displ.md
+
+> │    ├── 📄 narratives.md
+
+> │    ├── 📄 wi8.99.010__premonitions_i_knew_before_i_knew.html
+
+> │    ├── 📄 wi8.99.010__session_summary_2025-12-15_i_knew.html
+
+> │  └── 📂 press/
+
+> │    ├── 📄 WI8.01.001_PRESS_STRATEGY.md
+
+> │    ├── 📄 press.md
+
+> │  └── 📂 risks/
+
+> │    ├── 📄 WI8.01.003_TIMING_AND_RISK.md
+
+> │    ├── 📄 risks.md
+
+> │  └── 📂 socials/
+
+> │    ├── 📄 WI8.01.002_SOCIAL_MEDIA_PLAN.md
+
+> │    ├── 📄 socials.md
+
+> │  ├── 📄 wi8.01.010__2025-12-15_they_threw_us_into_the.html
+
+> └── 📂 08_settlement_resolution/
+
+> │  ├── 📄 08_settlement_resolution.md
+
+> │  ├── 📄 Settlement_Strategy_and_Contingency_Plan.md
+
+> └── 📂 09_post_judgment_appeal/
+
+> │  ├── 📄 09_post_judgment_appeal.md
+
+> ├── 📄 50_PHASES.md
+
+> ├── 📄 Strategic_Plan.canvas
+
+> └── 📂 _docket/
+
+> │  ├── 📄 WI8.00.001__001_Complaint.pdf
+
+> │  ├── 📄 WI8.00.001__002_Appearance.pdf
+
+> │  ├── 📄 WI8.00.001__003_Request_for_Admissions.pdf
+
+> │  ├── 📄 WI8.00.001__004_Notice_to_Homeowners.pdf
+
+> │  ├── 📄 WI8.00.001__005_Appearance_2.pdf
+
+> │  ├── 📄 WI8.00.001__006_Summons_1.pdf
+
+> │  ├── 📄 WI8.00.001__007_Summons_2.pdf
+
+> │  ├── 📄 WI8.00.001__008_Summons_3.pdf
+
+> │  ├── 📄 WI8.00.001__009_Summons_4.pdf
+
+> │  ├── 📄 WI8.00.001__010_Summons_5.pdf
+
+> │  ├── 📄 WI8.00.001__011_Service_Returned_03-05-2025.pdf
+
+> │  ├── 📄 WI8.00.001__012_Service_Returned_04-15-2025.pdf
+
+> │  ├── 📄 WI8.00.001__013_Motion_for_Default_Judgment.pdf
+
+> │  ├── 📄 WI8.00.001__014_Affidavit.pdf
+
+> │  ├── 📄 WI8.00.001__015_Affidavit_Attorney_Fees.pdf
+
+> │  ├── 📄 WI8.00.001__016_Affidavit_Additional.pdf
+
+> │  ├── 📄 WI8.00.001__017_Order_Denying_Default_Judgment.pdf
+
+> │  ├── 📄 WI8.00.001__018_Omitted_Notice_of_Service.pdf
+
+> │  ├── 📄 WI8.00.001__019_Amended_Motion_Default_Judgmen.pdf
+
+> │  ├── 📄 WI8.00.001__020_Amended_Motion_Default_Judgmen.pdf
+
+> │  ├── 📄 WI8.00.001__021_Praecipe_Sheriff_Sale_1.pdf
+
+> │  ├── 📄 WI8.00.001__022_Praecipe_Sheriff_Sale_2.pdf
+
+> │  ├── 📄 WI8.00.001__023_Decree_Foreclosure_Returned.pdf
+
+> │  ├── 📄 WI8.00.001__024_Petition_Writ_of_Assistance.pdf
+
+> │  ├── 📄 WI8.00.001__025_Motion_Vacate_Stay_Writ.pdf
+
+> │  ├── 📄 WI8.00.001__026_Exhibit_List_A-G.pdf
+
+> │  ├── 📄 WI8.00.001__027_Supplemental_Motion_Access.pdf
+
+> │  ├── 📄 WI8.00.001__028_Report_Court_Defendant_Request.pdf
+
+> │  ├── 📄 WI8.00.001__029_Emergency_Supplemental_Declara.pdf
+
+> │  ├── 📄 WI8.00.001__030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │  ├── 📄 WI8.00.001__031_Proposed_Order_Vacate.pdf
+
+> │  ├── 📄 WI8.00.001__032_Proposed_Order_Stay.pdf
+
+> │  ├── 📄 WI8.00.001__033_ADA_Disability_Affidavit.pdf
+
+> │  ├── 📄 WI8.00.001___Case_Summary.md
+
+> │  ├── 📄 WI8.00.001__index.html
+
+> │  ├── 📄 _README.md
+
+> │  ├── 📄 _docket.md
+
+> └── 📄 strategic_plan.html
+
 > ```
 
 ### Assistant
@@ -20838,85 +26171,164 @@ canonical_ref: ""
 > If you don’t answer: safest default is **skip evidence**.
 
 ### User
-> true. and also look at this base i think we have duplicate front matter. views:
->   - type: table
->     name: Table
->   - type: table
->     name: View
->     order:
->       - file.name
->       - file.size
->       - doc_type
->       - id
->       - keywords
->       - last_updated
->       - leverage
->       - next_action
->       - owner
->       - party
->       - phase_lane
->       - print
->       - pulled
->       - project_context
->       - Purpose
->       - related_case_anchor
->       - related_violations
->       - risk
->       - status
->       - tags
->       - tab
->       - theory_cluster
->       - title
->       - toc
->       - type
->       - Use
->       - updated
->     sort:
->       - property: doc_type
->         direction: DESC
->       - property: file.tags
->         direction: ASC
->       - property: title
->         direction: ASC
->       - property: Use
->         direction: ASC
->       - property: damages_type
->         direction: ASC
->       - property: damages_estimate
->         direction: DESC
->       - property: case_id
->         direction: DESC
->       - property: binder
->         direction: DESC
->       - property: confidentiality
->         direction: ASC
->       - property: file.backlinks
->         direction: ASC
->       - property: category
->         direction: DESC
->       - property: file.name
->         direction: ASC
->       - property: file.basename
->         direction: DESC
->       - property: file.ext
->         direction: ASC
->       - property: file.embeds
->         direction: ASC
->     columnSize:
->       file.name: 167
->       file.tags: 100
->       note.category: 68
->       note.confidentiality: 86
->       note.damages_estimate: 80
->       note.Purpose: 259
->       note.related_case_anchor: 94
->       note.related_violations: 72
->       note.tags: 207
->       note.theory_cluster: 140
->       note.title: 202
->       note.toc: 28
->       note.type: 72
->       note.Use: 90
+> true. and also look at this base i think we have duplicate front matter. views:
+
+>   - type: table
+
+>     name: Table
+
+>   - type: table
+
+>     name: View
+
+>     order:
+
+>       - file.name
+
+>       - file.size
+
+>       - doc_type
+
+>       - id
+
+>       - keywords
+
+>       - last_updated
+
+>       - leverage
+
+>       - next_action
+
+>       - owner
+
+>       - party
+
+>       - phase_lane
+
+>       - print
+
+>       - pulled
+
+>       - project_context
+
+>       - Purpose
+
+>       - related_case_anchor
+
+>       - related_violations
+
+>       - risk
+
+>       - status
+
+>       - tags
+
+>       - tab
+
+>       - theory_cluster
+
+>       - title
+
+>       - toc
+
+>       - type
+
+>       - Use
+
+>       - updated
+
+>     sort:
+
+>       - property: doc_type
+
+>         direction: DESC
+
+>       - property: file.tags
+
+>         direction: ASC
+
+>       - property: title
+
+>         direction: ASC
+
+>       - property: Use
+
+>         direction: ASC
+
+>       - property: damages_type
+
+>         direction: ASC
+
+>       - property: damages_estimate
+
+>         direction: DESC
+
+>       - property: case_id
+
+>         direction: DESC
+
+>       - property: binder
+
+>         direction: DESC
+
+>       - property: confidentiality
+
+>         direction: ASC
+
+>       - property: file.backlinks
+
+>         direction: ASC
+
+>       - property: category
+
+>         direction: DESC
+
+>       - property: file.name
+
+>         direction: ASC
+
+>       - property: file.basename
+
+>         direction: DESC
+
+>       - property: file.ext
+
+>         direction: ASC
+
+>       - property: file.embeds
+
+>         direction: ASC
+
+>     columnSize:
+
+>       file.name: 167
+
+>       file.tags: 100
+
+>       note.category: 68
+
+>       note.confidentiality: 86
+
+>       note.damages_estimate: 80
+
+>       note.Purpose: 259
+
+>       note.related_case_anchor: 94
+
+>       note.related_violations: 72
+
+>       note.tags: 207
+
+>       note.theory_cluster: 140
+
+>       note.title: 202
+
+>       note.toc: 28
+
+>       note.type: 72
+
+>       note.Use: 90
+
 >       note.updated: 90
 
 ### Assistant
@@ -21045,35 +26457,64 @@ canonical_ref: ""
 > If you paste one actual example of a note’s top YAML block that you think is duplicated, I’ll tell you in one glance whether it’s true YAML duplication vs “schema drift.”
 
 ### User
-> Temporal Overlap (The worst offender):
-> updated (89 files)
-> last_updated (24 files)
-> date modified (145 files)
-> date (73 files)
-> Recommendation: Standardize to updated.
-> Classification Overlap:
-> doc_type (424 files) — This is our current standard.
-> type (110 files)
-> category (147 files)
-> Recommendation: Standardize to doc_type.
-> Creation Date Overlap:
-> date created (145 files)
-> date_created (1 file)
-> Recommendation: Standardize to created.
-> Case Identity Redundancy:
-> case_id (424 files)
-> id
->  (90 files) — In some files, this refers to the Court Case ID, in others a unique note ID.
-> Plan of Action:
-> I recommend a Metadata Consolidation pass where I:
-> 
-> Merge Split Blocks: Detect files with two --- blocks and merge them into one.
-> Standardize Keys:
-> Rename date modified, last_updated, and date ➔ updated.
-> Rename date created ➔ created.
-> Ensure doc_type is the primary classification key.
-> Clean up 
-> Case_Data.base
+> Temporal Overlap (The worst offender):
+
+> updated (89 files)
+
+> last_updated (24 files)
+
+> date modified (145 files)
+
+> date (73 files)
+
+> Recommendation: Standardize to updated.
+
+> Classification Overlap:
+
+> doc_type (424 files) — This is our current standard.
+
+> type (110 files)
+
+> category (147 files)
+
+> Recommendation: Standardize to doc_type.
+
+> Creation Date Overlap:
+
+> date created (145 files)
+
+> date_created (1 file)
+
+> Recommendation: Standardize to created.
+
+> Case Identity Redundancy:
+
+> case_id (424 files)
+
+> id
+
+>  (90 files) — In some files, this refers to the Court Case ID, in others a unique note ID.
+
+> Plan of Action:
+
+> I recommend a Metadata Consolidation pass where I:
+
+> 
+
+> Merge Split Blocks: Detect files with two --- blocks and merge them into one.
+
+> Standardize Keys:
+
+> Rename date modified, last_updated, and date ➔ updated.
+
+> Rename date created ➔ created.
+
+> Ensure doc_type is the primary classification key.
+
+> Clean up 
+
+> Case_Data.base
+
 > : Update the internal view configuration to match these new keys. here is what gemeni found, let make sure we update our canvas document and replace it with all these change and update. we have done.
 
 ### Assistant
@@ -21147,916 +26588,1828 @@ canonical_ref: ""
 > If you want, paste one representative file that currently has **two YAML blocks**, and I’ll show you the exact merged result format so Gemini (or your script) can replicate it perfectly.
 
 ### User
-> ```markdown
-> . 📂 content
-> └── 📂 A_TIMELINE/
-> │  └── 📂 2023/
-> │    ├── 📄 NT_index.md
-> │    └── 📂 events/
-> │  └── 📂 2024/
-> │    ├── 📄 NT_index.md
-> │    └── 📂 events/
-> │  └── 📂 2025/
-> │    ├── 📄 NT_index.md
-> │    └── 📂 events/
-> │      ├── 📄 MO_2025-05-13_Motion_for_Default_Judgment 1.md
-> │      ├── 📄 MO_2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 MO_2025-05-23_Amended_Motion_Default_Judgment 1.md
-> │      ├── 📄 MO_2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 MO_2025-12-10_Motions_Filed 1.md
-> │      ├── 📄 MO_2025-12-10_Motions_Filed.md
-> │      ├── 📄 MO_2025-12-12_Supplemental_Emergency_Motion 1.md
-> │      ├── 📄 MO_2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 NT_2025-01-16_Case_Filed 1.md
-> │      ├── 📄 NT_2025-01-16_Case_Filed.md
-> │      ├── 📄 NT_2025-03-05_Service_Attempt_1 1.md
-> │      ├── 📄 NT_2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 NT_2025-04-15_Service_Attempt_2 1.md
-> │      ├── 📄 NT_2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 NT_2025-08-15_Sheriff_Sale 1.md
-> │      ├── 📄 NT_2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 NT_2025-11-06_Writ_of_Assistance_Issued 1.md
-> │      ├── 📄 NT_2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 NT_2025-12-09_Writ_Executed_Forced_Removal.md
-> │      ├── 📄 NT_2025-12-09_Writ_Executed_Removal.md
-> │      ├── 📄 NT_2025-12-16_Post_Removal_Access_Denial.md
-> │      ├── 📄 NT_2025-12-21_Case_Summary.md
-> │      ├── 📄 OR_2025-05-21_Order_Denying_Default_Judgment 1.md
-> │      ├── 📄 OR_2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 OR_2025-05-28_Default_Judgment_Entered 1.md
-> │      ├── 📄 OR_2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 OR_2025-12-11_Court_Orders_and_Hearing_Scheduled 1.md
-> │      ├── 📄 OR_2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 PL_2025-05-30_Praecipe_Sheriff_Sale 1.md
-> │      ├── 📄 PL_2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 PL_2025-07-09_Sheriff_Sale_Notice_Posted 1.md
-> │      ├── 📄 PL_2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 PL_2025-10-29_Petition_for_Writ_of_Assistance 1.md
-> │      ├── 📄 PL_2025-10-29_Petition_for_Writ_of_Assistance.md
-> │  └── 📂 2026/
-> │    ├── 📄 NT_index.md
-> │    └── 📂 events/
-> │  ├── 📄 NT_master_timeline.md
-> └── 📂 B_EVIDENCE/
-> │  └── 📂 10_evidence_admin/
-> │    ├── 📄 00_evidence_admin.md
-> │    ├── 📄 EXH_Raw_Exhibit_Map.md
-> │    ├── 📄 Evidence_Log.md
-> │    ├── 📄 chain_of_custody.md
-> │    ├── 📄 master_evidence_index.md
-> │  ├── 📄 20_EVIDENCE.md
-> │  └── 📂 20_court_record/
-> │    ├── 📄 10_court_record.md
-> │    └── 📂 10_docket_files/
-> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
-> │      ├── 📄 024_Service Returned Served.pdf
-> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
-> │      ├── 📄 029_Emergency_Supplemental_Declara.pdf
-> │      ├── 📄 035_01092026_005.pdf.pdf
-> │      ├── 📄 EXH_026_Exhibit_List_A-G.pdf
-> │      ├── 📄 EXH__026_Exhibit_List_A-G.pdf
-> │      ├── 📄 MO_013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO_016_Order_Denying_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO_019_Amended_Motion_Default_Judgment_1.pdf
-> │      ├── 📄 MO_020_Amended_Motion_Default_Judgment_2.pdf
-> │      ├── 📄 MO_025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 MO_027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 MO__013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO__019_Amended_Motion_Default_Judgmen.pdf
-> │      ├── 📄 MO__020_Amended_Motion_Default_Judgmen.pdf
-> │      ├── 📄 MO__025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 MO__027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 OR_023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 OR_031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 OR_032_Proposed_Order_Stay.pdf
-> │      ├── 📄 OR__017_Order_Denying_Default_Judgment.pdf
-> │      ├── 📄 OR__023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 OR__031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 OR__032_Proposed_Order_Stay.pdf
-> │      ├── 📄 PL_001_Complaint.pdf
-> │      ├── 📄 PL_002_Appearance.pdf
-> │      ├── 📄 PL_003_Request_for_Admissions.pdf
-> │      ├── 📄 PL_004_Notice_to_Homeowners.pdf
-> │      ├── 📄 PL_005_Appearance_2.pdf
-> │      ├── 📄 PL_006_Summons_1.pdf
-> │      ├── 📄 PL_007_Summons_2.pdf
-> │      ├── 📄 PL_008_Summons_3.pdf
-> │      ├── 📄 PL_009_Summons_4.pdf
-> │      ├── 📄 PL_010_Summons_5.pdf
-> │      ├── 📄 PL_011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 PL_012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 PL_014_Affidavit.pdf
-> │      ├── 📄 PL_015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
-> │      ├── 📄 PL_018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 PL_021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 PL_022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 PL_024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 PL_028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 PL_029_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 PL_030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 PL_033_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 PL_2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 PL__001_Complaint.pdf
-> │      ├── 📄 PL__002_Appearance.pdf
-> │      ├── 📄 PL__003_Request_for_Admissions.pdf
-> │      ├── 📄 PL__004_Notice_to_Homeowners.pdf
-> │      ├── 📄 PL__005_Appearance_2.pdf
-> │      ├── 📄 PL__006_Summons_1.pdf
-> │      ├── 📄 PL__007_Summons_2.pdf
-> │      ├── 📄 PL__008_Summons_3.pdf
-> │      ├── 📄 PL__009_Summons_4.pdf
-> │      ├── 📄 PL__010_Summons_5.pdf
-> │      ├── 📄 PL__011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 PL__012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 PL__014_Affidavit.pdf
-> │      ├── 📄 PL__015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 PL__016_Affidavit_Additional.pdf
-> │      ├── 📄 PL__018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 PL__021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 PL__022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 PL__024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 PL__028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 PL__030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
-> │  └── 📂 30_primary/
-> │    ├── 📄 10_primary.md
-> │    ├── 📄 20_primary.md
-> │    └── 📂 aes/
-> │      ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
-> │      ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
-> │      ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
-> │      ├── 📄 _README.md
-> │    └── 📂 fcfcu/
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
-> │      ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
-> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │      ├── 📄 20241204_fcfcu_statement-(1).pdf
-> │      ├── 📄 20241204_fcfcu_statement-(2).pdf
-> │      ├── 📄 20241204_fcfcu_statement.pdf
-> │      ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
-> │      ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
-> │      ├── 📄 21june-24-4817shadow_appraisal.pdf
-> │      ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │      ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
-> │      ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
-> │      ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
-> │      ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
-> │      ├── 📄 PL_report_to_court_on_defendants_request.pdf
-> │      ├── 📄 _README.md
-> │  └── 📂 40_supporting/
-> │    ├── 📄 20_supporting.md
-> │    ├── 📄 30_supporting.md
-> │    └── 📂 docs/
-> │      └── 📂 affidavits/
-> │        ├── 📄 PL_affidavits.md
-> │        └── 📂 ada-disability/
-> │        └── 📂 character/
-> │        └── 📂 community-service/
-> │        └── 📂 credibility/
-> │        └── 📂 observations/
-> │      └── 📂 declarations/
-> │        ├── 📄 PL_declarations.md
-> │      └── 📂 receipts/
-> │        ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
-> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │      └── 📂 records/
-> │        ├── 📄 Foreclosure and Housing Litigation Case Record.csv
-> │        ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
-> │    └── 📂 multi-media/
-> │      ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
-> │      ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
-> │    └── 📂 property/
-> │      └── 📂 10_mortgage_history/
-> │        └── 📂 10_payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
-> │          ├── 📄 20_payments.md
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
-> │        ├── 📄 parcel_6016506_prc (2).pdf
-> │  └── 📂 50_quarantine_candidates/
-> │    ├── 📄 90_quarantine_candidates.md
-> └── 📂 C_VIS/
-> │  └── 📂 10_violations/
-> │    └── 📂 CREDIT_BUREAUS/
-> │      ├── 📄 NT_V-011_experian-reinvestigation-failure.md
-> │      ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
-> │      ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
-> │    ├── 📄 EXH_Exhibit X — Inventory of Jurisdictional, Execut.md
-> │    └── 📂 FCFCU/
-> │      ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
-> │      ├── 📄 NT_V-006_dual-tradeline-double-counting.md
-> │      ├── 📄 NT_V-008_credit-defamation-false-publication.md
-> │      ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
-> │      ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
-> │      ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
-> │      ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
-> │      ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
-> │      ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
-> │      ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
-> │      ├── 📄 NT_V-070_global-demand-letter.md
-> │      ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
-> │      ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
-> │      ├── 📄 NT_V-073_damages-credit-score-suppression.md
-> │      ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
-> │      ├── 📄 NT_V-075_public-accountability-hold.md
-> │      ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
-> │      ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
-> │      ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> │      ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> │      ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> │      ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
-> │      ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
-> │      ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
-> │    └── 📂 OTHER_PARTIES/
-> │      ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
-> │      ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
-> │      ├── 📄 NT_V-078_ada-effective-communication-failure.md
-> │      ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
-> │      ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
-> │    └── 📂 REGULATORS_PROCEDURAL/
-> │      ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
-> │      ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
-> │      ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
-> │      ├── 📄 OR_V-079_void-judgment-procedural-error.md
-> │      ├── 📄 PL_V-032_no-ada-compliant-notice.md
-> │      ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
-> │      ├── 📄 PL_V-050_cfpb-complaint-track.md
-> │      ├── 📄 PL_V-051_indiana-ag-complaint-track.md
-> │      ├── 📄 PL_V-052_icrc-complaint-track.md
-> │      ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
-> │      ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
-> │    └── 📂 UTILITIES_HOA_CITY/
-> │      ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
-> │      ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
-> │      ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
-> │      ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> │      ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
-> │      ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
-> │  └── 📂 20_theories/
-> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
-> │      ├── 📄 NT_BACKUP_ARGUMENTS.md
-> │      ├── 📄 NT_IF_JUDGE_PUSHBACK.md
-> │  └── 📂 30_legal_research/
-> │    └── 📂 10_LAW_RESEARCH/
-> │      ├── 📄 NT_CASE_LAW_RESEARCH.md
-> │      ├── 📄 NT_JURISDICTION_THEORY.md
-> │      ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
-> │      ├── 📄 NT_wb1.00.001_case_law_research.html
-> │      ├── 📄 NT_wb1.00.002_void_vs_voidable_analysis.html
-> │      ├── 📄 NT_wb1.00.003_jurisdiction_theory.html
-> │      ├── 📄 _README.md
-> │    ├── 📄 NT_LEGAL MEMORANDUM.md
-> │  └── 📂 40_analysis/
-> │    ├── 📄 NT_Formal Inventory of Violations and Schedule of .md
-> │    ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │    ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │  └── 📂 50_strategies/
-> │    └── 📂 10_basis/
-> │      ├── 📄 NT_00_basis.md
-> │    └── 📂 20_ada_strategy/
-> │      ├── 📄 NT_10_ada_strategy.md
-> │      ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
-> │      ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
-> │      ├── 📄 NT_wg6.00.001_ada_title_ii_analysis.html
-> │      ├── 📄 NT_wg6.00.002_reasonable_accommodations.html
-> │      └── 📂 WG_GROUNDS_ADA/
-> │        └── 📂 WG6_00_ADA_STRATEGY/
-> │        └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
-> │          ├── 📄 NT_STATUS_TRACKER.md
-> │          ├── 📄 PL_DOJ_COMPLAINT.md
-> │          ├── 📄 PL_ICRC_COMPLAINT.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 _readme.html
-> │    ├── 📄 NT_Master_Strategy_Canvas.canvas
-> │    ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
-> │    └── 📂 _misc_strategy/
-> │      └── 📂 10_ada_title_ii/
-> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │      └── 📂 30_void_vs_voidable_tr_60b/
-> │      ├── 📄 Strategic_Plan.canvas
-> │    └── 📂 effects_procedural_chain/
-> │      └── 📂 WE_EFFECTS_PROCEDURAL/
-> │        └── 📂 WE4_00_CHAIN_ANALYSIS/
-> │          ├── 📄 NT_BUT_FOR_ANALYSIS.md
-> │          ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
-> │          ├── 📄 NT__Integrate_Disability_Separate_Appe.m4a
-> │          ├── 📄 NT__Procedural_failure_map_one_pager.md
-> │          ├── 📄 OR__Void_Judgment_Eviction_Crisis.pdf
-> │          ├── 📄 _README.md
-> │        └── 📂 WE4_01_REMEDIES/
-> │          ├── 📄 NT_REVERSAL_PATHS.md
-> │          ├── 📄 NT_STAY_PATHS.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 _readme.html
-> │      └── 📂 we4_00_chain_analysis/
-> │        ├── 📄 NT_we4.00.001_procedural_failure_map.html
-> │        ├── 📄 NT_we4.00.002_but_for_analysis.html
-> │        ├── 📄 NT_we4.00.010__integrate_disability_separate_appe.m4a
-> │        ├── 📄 OR_we4.00.010__void_judgment_eviction_crisis.html
-> │        ├── 📄 OR_we4.00.010__void_judgment_eviction_crisis.pdf
-> │        ├── 📄 _readme.html
-> │      └── 📂 we4_01_remedies/
-> │        ├── 📄 NT_we4.01.001_stay_paths.html
-> │        ├── 📄 NT_we4.01.002_reversal_paths.html
-> │        ├── 📄 _readme.html
-> │  └── 📂 60_data_inventories/
-> │    ├── 📄 20_violations.md
-> │    ├── 📄 NT_10_violations.md
-> │    ├── 📄 NT_Violation_Index.md
-> │    ├── 📄 NT_foreclosure-and-housing-litigation-case-record.csv
-> │    ├── 📄 NT_foreclosure-and-housing-litigation-case-record.csv.bak
-> │    ├── 📄 NT_inventory-of-civil-and-fair-housing-rights-vio.csv
-> │    ├── 📄 NT_inventory-of-civil-and-fair-housing-rights-vio.csv.bak
-> │  ├── 📄 NT_01_MASTER_INDEX.md
-> │  ├── 📄 NT_02_TAG_MAP.md
-> │  ├── 📄 NT_03_THEORY_CLUSTERS.md
-> │  ├── 📄 NT_04_RISK_REGISTER.md
-> │  ├── 📄 NT_30_VIS.md
-> ├── 📄 Case_Data.base
-> └── 📂 D_PHASES/
-> │  └── 📂 100_post_judgment_and_federal/
-> │    └── 📂 10_motions/
-> │      └── 📂 10_claims_motions/
-> │        ├── 📄 40_claims_motions.md
-> │        ├── 📄 MO_40_claims_motions.md
-> │        └── 📂 Supplemental/
-> │          └── 📂 01_drafts/
-> │            ├── 📄 MO__Supplemental_Emergency_Motion.pdf
-> │          └── 📂 02_exhibits/
-> │            ├── 📄 EXH_02_exhibits.md
-> │            ├── 📄 EXH__20_exhibits_combined_source
-> │            ├── 📄 EXH__Exhibit_H_Declaration.pdf
-> │          └── 📂 04_filed_receipts/
-> │            ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
-> │        └── 📂 filings/
-> │          └── 📂 10_2025-12-10_motion_vacate/
-> │            └── 📂 01_drafts/
-> │              ├── 📄 MO_Emergency Motions.docx
-> │            └── 📂 02_exhibits/
-> │              ├── 📄 EXH_02_exhibits.md
-> │              ├── 📄 EXH_05_Exhibit_List.pdf
-> │              ├── 📄 EXH_06_Exhibits_Combined.pdf
-> │              ├── 📄 MO_01_motion_vacate.pdf
-> │              ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │              ├── 📄 NT_combinepdf.pdf
-> │              ├── 📄 OR_03_order_vacate_proposed.pdf
-> │              ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │            └── 📂 03_proposed_order/
-> │              ├── 📄 OR_03_proposed_order.md
-> │              ├── 📄 OR_Proposed_Order_Vacate.docx
-> │            └── 📂 04_filed_receipts/
-> │              ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │            ├── 📄 MO_10_2025-12-10_motion_vacate.md
-> │          └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │            └── 📂 01_drafts/
-> │              ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │            └── 📂 02_exhibits/
-> │              ├── 📄 EXH_02_exhibits.md
-> │              ├── 📄 EXH_20_exhibits_combined_source
-> │              ├── 📄 EXH_Exhibit_H_Declaration.pdf
-> │            └── 📂 04_filed_receipts/
-> │              ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │            ├── 📄 MO_20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │          └── 📂 30_draft_motions/
-> │            ├── 📄 10_draft_motions.md
-> │            ├── 📄 20_draft_motions.md
-> │            ├── 📄 MO_10_draft_motions.md
-> │            ├── 📄 MO_DRAFT_MOTION_VACATE.md
-> │            ├── 📄 MO__Motions.md
-> │            ├── 📄 MO__motion_emergency_stay_of_writ.md
-> │            ├── 📄 MO__motion_emergency_supplemental_motio.md
-> │            ├── 📄 MO__motion_to_vacate_void_judgment.md
-> │            ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │            ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │            ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │            ├── 📄 MO_wc2.00.010__motion_emergency_stay_of_writ.docx
-> │            ├── 📄 MO_wc2.00.010__motion_emergency_supplemental_mot.docx
-> │            ├── 📄 MO_wc2.00.010__motion_to_vacate_void_judgement.docx
-> │            ├── 📄 NT_DRAFT_EMERGENCY_STAY.md
-> │            ├── 📄 NT_DRAFT_SUPPLEMENTAL.md
-> │            ├── 📄 NT_EMERGENCY_FILING_PACKET.md
-> │            ├── 📄 _README.md
-> │            └── 📂 motions/
-> │              ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
-> │              ├── 📄 MO_C2.01.002_motion_vacate.pdf
-> │              ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │              ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
-> │              ├── 📄 MO_motions.md
-> │        └── 📂 motion_vacate/
-> │          └── 📂 01_drafts/
-> │            ├── 📄 MO__Emergency Motions.docx
-> │          └── 📂 02_exhibits/
-> │            ├── 📄 EXH_02_exhibits.md
-> │            ├── 📄 EXH__05_Exhibit_List.pdf
-> │            ├── 📄 EXH__06_Exhibits_Combined.pdf
-> │            ├── 📄 MO__01_motion_vacate.pdf
-> │            ├── 📄 MO__02_emergency_motion_quash_stay.pdf
-> │            ├── 📄 NT__combinepdf.pdf
-> │            ├── 📄 OR__03_order_vacate_proposed.pdf
-> │            ├── 📄 OR__04_order_stay_writ_proposed.pdf
-> │          └── 📂 03_proposed_order/
-> │            ├── 📄 OR_03_proposed_order.md
-> │            ├── 📄 OR__Proposed_Order_Vacate.docx
-> │          └── 📂 04_filed_receipts/
-> │            ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
-> │          ├── 📄 MO_motion_vacate.md
-> │          ├── 📄 NT.gitkeep
-> │      ├── 📄 MO_10_motions.md
-> │      ├── 📄 NT_index.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_orders/
-> │      └── 📂 10_proposed_orders/
-> │        ├── 📄 20_proposed_orders.md
-> │        ├── 📄 MO__proposed_order_motion_to_vacate.md
-> │        ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │        ├── 📄 NT__index.md
-> │        ├── 📄 OR_20_proposed_orders.md
-> │        ├── 📄 OR_DRAFT_ORDER_STAY.md
-> │        ├── 📄 OR_DRAFT_ORDER_VACATE.md
-> │        ├── 📄 OR__Proposed_Orders.md
-> │        ├── 📄 OR__proposed_order_emergency_stay.md
-> │        ├── 📄 OR_proposed_order_emergency_stay.md
-> │        ├── 📄 _README.md
-> │      ├── 📄 NT_index.md
-> │      ├── 📄 OR_20_orders.md
-> │      ├── 📄 _placeholder.md
-> │      └── 📂 orders/
-> │        ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
-> │        ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
-> │        ├── 📄 OR_orders.md
-> │    └── 📂 30_regulatory_complaints/
-> │      ├── 📄 PL_30_regulatory_complaints.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_federal_preservation/
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 OR_90_post_judgment_and_federal.md
-> │    ├── 📄 _README.md
-> │  └── 📂 10_inbox_working/
-> │    ├── 📄 NT_00_inbox_working.md
-> │    ├── 📄 NT_index.md
-> │    └── 📂 _staging/
-> │      └── 📂 _dupes_hold/
-> │        ├── 📄 MO__motion_emergency_stay_of_writ (2).docx
-> │        ├── 📄 MO__motion_emergency_supplemental_mot (2).docx
-> │        ├── 📄 MO__motion_to_vacate_void_judgement (2).docx
-> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold (2).md
-> │        ├── 📄 NT_Donations_Context (2).md
-> │        ├── 📄 NT_Long_Term_Payout_Strategy (2).md
-> │        ├── 📄 NT_Master_Timeline (2).md
-> │        ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew (2).md
-> │        ├── 📄 NT_Public_Statement (2).md
-> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew (2).md
-> │        ├── 📄 NT_index.md
-> │        ├── 📄 OR_c2.04.001_order_vacate_proposed (2).pdf
-> │        ├── 📄 OR_c2.04.002_order_stay_writ_proposed (2).pdf
-> │        ├── 📄 PL_Cold_Risk_Report (2).md
-> │      └── 📂 _html_hold/
-> │        ├── 📄 NT_index.md
-> │    └── 📂 evidence_staging/
-> │      └── 📂 exhibit_candidates/
-> │        └── 📂 10_exposure_and_harm/
-> │          ├── 📄 02_exposure_and_harm.md
-> │          ├── 📄 NT_02_exposure_and_harm.md
-> │          ├── 📄 PL_wi8.02.050__cold_risk_report.html
-> │          └── 📂 photos_conditions/
-> │          └── 📂 weather_reports/
-> │            ├── 📄 PL_weather_reports.md
-> │        ├── 📄 EXH_exhibit_candidates.md
-> │      └── 📂 potential_exhibits/
-> │        ├── 📄 EXH_potential_exhibits.md
-> │  └── 📂 20_pre_foreclosure/
-> │    └── 📂 10_account_history/
-> │      ├── 📄 NT_index.md
-> │      ├── 📄 NT_one_pager_overview.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_hardship_and_ada/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_communications/
-> │      ├── 📄 NT_index.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_payments_and_disputes/
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 NT_10_pre_foreclosure.md
-> │    ├── 📄 _README.md
-> │  └── 📂 30_foreclosure_filing/
-> │    └── 📂 10_complaint/
-> │      ├── 📄 PL_10_complaint.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_summons/
-> │      ├── 📄 PL_20_summons.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_lien_parties/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_docket_snapshots/
-> │      └── 📂 10_docket_map_and_notes/
-> │      ├── 📄 NT_01_Docket.md
-> │      ├── 📄 NT__Case_Summary.md
-> │      ├── 📄 NT_docket_index.md
-> │      ├── 📄 _Case_Summary.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 _docket.md
-> │      ├── 📄 _placeholder.md
-> │      └── 📂 docket_files/
-> │    ├── 📄 NT_20_foreclosure_filing.md
-> │    ├── 📄 _README.md
-> │  └── 📂 40_service_and_notice/
-> │    └── 📂 10_sheriff_returns/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_mailings/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_affidavits_of_service/
-> │      └── 📂 10_jurisdiction_service_tr_4_1_b/
-> │        ├── 📄 20_jurisdiction_service_tr_4_1_b.md
-> │        ├── 📄 NT_20_jurisdiction_service_tr_4_1_b 1.md
-> │        ├── 📄 NT_20_jurisdiction_service_tr_4_1_b.md
-> │      └── 📂 20_service_process/
-> │        ├── 📄 30_service_process.md
-> │      ├── 📄 NT_03_Service_Process.md
-> │      ├── 📄 NT_service_defects_analysis.md
-> │      ├── 📄 PL_30_affidavits_of_service.md
-> │      ├── 📄 PL_affidavits_service.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_defects_and_contradictions/
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 PL_30_service_and_notice.md
-> │    ├── 📄 _README.md
-> │  └── 📂 50_default_and_judgment/
-> │    └── 📂 10_default_motion/
-> │      ├── 📄 MO_10_default_motion.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_default_order/
-> │      ├── 📄 OR_20_default_order.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_judgment_and_decree/
-> │      ├── 📄 OR_30_judgment_and_decree.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_accounting_inputs/
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 OR_40_default_and_judgment.md
-> │    ├── 📄 _README.md
-> │  └── 📂 60_sale_and_title/
-> │    └── 📂 10_sheriff_sale/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_deed/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_recording_gaps/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_possession_claims/
-> │      └── 📂 10_sale_and_possession/
-> │        ├── 📄 30_sale_and_possession.md
-> │        ├── 📄 NT_30_sale_and_possession.md
-> │      └── 📂 30_void_vs_voidable/
-> │        ├── 📄 20_void_vs_voidable.md
-> │        ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
-> │        ├── 📄 NT_30_void_vs_voidable_tr_60b.md
-> │      ├── 📄 NT_05_Sale_and_Possesion.md
-> │      ├── 📄 NT_possession_admissions.md
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 NT_50_sale_and_title.md
-> │    ├── 📄 _README.md
-> │  └── 📂 70_writ_and_execution/
-> │    └── 📂 10_writ_petition/
-> │      ├── 📄 PL_10_writ_petition.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_writ_order/
-> │      ├── 📄 OR_20_writ_order.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_execution_events/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_notice_failures/
-> │      ├── 📄 PL_40_notice_failures.md
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 NT_60_writ_and_execution.md
-> │    ├── 📄 _README.md
-> │  └── 📂 80_post_removal_conduct/
-> │    └── 📂 10_property_interference/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 20_access_denial/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 30_spoliation_risk/
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_third_party_actions/
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 NT_70_post_removal_conduct.md
-> │    ├── 📄 _README.md
-> │  └── 📂 90_damages_and_fallout/
-> │    └── 📂 10_property_possession_harms/
-> │      ├── 📄 03_property_possession_harms.md
-> │      ├── 📄 NT_03_property_possession_harms.md
-> │    └── 📂 20_economic_harm/
-> │      ├── 📄 10_economic_harm.md
-> │      ├── 📄 NT_10_economic_harm.md
-> │      ├── 📄 NT_index.md
-> │    └── 📂 30_financial/
-> │      ├── 📄 20_financial.md
-> │      ├── 📄 NT_10_financial.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 40_health_and_safety/
-> │      ├── 📄 30_health_and_safety.md
-> │      ├── 📄 NT_20_health_and_safety.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 50_non_economic_harm/
-> │      ├── 📄 40_non_economic_harm.md
-> │      ├── 📄 NT_20_non_economic_harm.md
-> │      └── 📂 cold_exposure/
-> │        ├── 📄 NT_index.md
-> │    └── 📂 60_professional_harm/
-> │      ├── 📄 50_professional_harm.md
-> │      ├── 📄 NT_30_professional_harm.md
-> │      ├── 📄 _placeholder.md
-> │    └── 📂 70_remedies_scenarios/
-> │      ├── 📄 60_remedies_scenarios.md
-> │      ├── 📄 NT_30_remedies_scenarios.md
-> │      ├── 📄 NT_index.md
-> │    └── 📂 80_payout_strategy/
-> │      ├── 📄 70_payout_strategy.md
-> │      ├── 📄 NT_40_Payout_Strategy.md
-> │      ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │      ├── 📄 NT_index.md
-> │      ├── 📄 _README.md
-> │      └── 📂 payout_strategy/
-> │    └── 📂 90_third_party_harm/
-> │      ├── 📄 80_third_party_harm.md
-> │      ├── 📄 NT_40_third_party_harm.md
-> │      ├── 📄 _placeholder.md
-> │    ├── 📄 NT_06_damages_and_remedies.md
-> │    ├── 📄 NT_80_damages_and_fallout.md
-> │    ├── 📄 NT_index.md
-> │    └── 📂 Photos_Conditions/
-> │    └── 📂 Weather_Reports/
-> │      ├── 📄 PL_Weather_Reports.md
-> │    ├── 📄 _README.md
-> │    └── 📂 economic/
-> │      ├── 📄 NT_ECONOMIC_HARM.md
-> │    └── 📂 non-economic/
-> │      ├── 📄 NT_NON_ECONOMIC_HARM.md
-> │      └── 📂 cold-exposure/
-> │        ├── 📄 PL__Cold_Risk_Report.md
-> │    └── 📂 personal_narrative/
-> │      └── 📂 10_Public_Narrative/
-> │        ├── 📄 01_Public_Narrative.md
-> │        ├── 📄 NT_01_Public_Narrative.md
-> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
-> │        ├── 📄 NT_Public_Statement.md
-> │        ├── 📄 _README.md
-> │      └── 📂 20_Exposure_and_Harm/
-> │        ├── 📄 02_Exposure_and_Harm.md
-> │        ├── 📄 NT_02_Exposure_and_Harm.md
-> │        ├── 📄 PL_Cold_Risk_Report.md
-> │        └── 📂 Photos_Conditions/
-> │        └── 📂 Weather_Reports/
-> │          ├── 📄 PL_Weather_Reports.md
-> │        ├── 📄 _README.md
-> │      └── 📂 30_Internal_Analysis/
-> │        ├── 📄 03_Internal_Analysis.md
-> │        ├── 📄 NT_03_Internal_Analysis.md
-> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │        └── 📂 Payout_Strategy/
-> │          ├── 📄 NT_Long_Term_Payout_Strategy.md
-> │          ├── 📄 _README.md
-> │        └── 📂 Premonitions/
-> │          ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
-> │          ├── 📄 _README.md
-> │        ├── 📄 _README.md
-> │      └── 📂 40_Donations_and_Support/
-> │        ├── 📄 04_Donations_and_Support.md
-> │        └── 📂 Donation_Page_HTML/
-> │        ├── 📄 NT_04_Donations_and_Support.md
-> │        ├── 📄 NT_Donations_Context.md
-> │        └── 📂 Screenshots_Live_Page/
-> │        ├── 📄 _README.md
-> │      └── 📂 50_Timeline/
-> │        ├── 📄 05_Timeline.md
-> │        ├── 📄 NT_05_Timeline.md
-> │        ├── 📄 NT_Master_Timeline.md
-> │        ├── 📄 _README.md
-> │      └── 📂 Premonitions/
-> │        ├── 📄 NT__Premonitions_I_Knew_Before_I_Knew.md
-> │        ├── 📄 _README.md
-> │    └── 📂 settlement/
-> │      ├── 📄 NT_SETTLEMENT_SCENARIOS.md
-> │    └── 📂 thirdparty/
-> │  ├── 📄 MO_Promotion_Checklist.md
-> │  ├── 📄 Strategic_Plan.canvas
-> └── 📂 E_OUTPUTS/
-> │  └── 📂 10_binders/
-> │    └── 📂 master_case_bible/
-> │      ├── 📄 NT_binder_manifest.md
-> │      └── 📂 _build/
-> │        ├── 📄 NT_full_binder.md
-> │        ├── 📄 NT_full_binder_snapshot.md
-> │        ├── 📄 NT_master_case_bible.html
-> │        ├── 📄 NT_temp_merged.md
-> │      └── 📂 sections/
-> │  └── 📂 20_filings/
-> │  └── 📂 _build_artifacts/
-> │    ├── 📄 MO_wc2.00.001_draft_motion_vacate.html
-> │    ├── 📄 MO_wc2.00.010___motions.html
-> │    ├── 📄 MO_wc2.00.010__motion_emergency_stay_of_writ.html
-> │    ├── 📄 MO_wc2.00.010__motion_emergency_supplemental_mot.html
-> │    ├── 📄 MO_wc2.00.010__motion_to_vacate_void_judgment.html
-> │    ├── 📄 MO_wc2.01.010__proposed_order_motion_to_vacate.html
-> │    ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.html
-> │    ├── 📄 NT_Summary - MyCase.html
-> │    ├── 📄 NT_WI8.01.050__index.html
-> │    ├── 📄 NT_WI8.02.050__index.html
-> │    ├── 📄 NT_WI8.99.010__index_MOVED.html
-> │    ├── 📄 NT_WZ9.00.050__index.html
-> │    ├── 📄 NT_WZ9.00.050__index_MOVED.html
-> │    ├── 📄 NT__index (2).html
-> │    ├── 📄 NT__index.html
-> │    ├── 📄 NT__index_MOVED.html
-> │    ├── 📄 NT_donations_context.html
-> │    ├── 📄 NT_index (2).html
-> │    ├── 📄 NT_index (2)_MOVED.html
-> │    ├── 📄 NT_index-content.html
-> │    ├── 📄 NT_index-content_MOVED.html
-> │    ├── 📄 NT_index.html
-> │    ├── 📄 NT_index_MOVED.html
-> │    ├── 📄 NT_long_term_payout_strategy.html
-> │    ├── 📄 NT_master_timeline.html
-> │    ├── 📄 NT_premonitions_i_knew_before_i_knew.html
-> │    ├── 📄 NT_public_statement.html
-> │    ├── 📄 NT_session_summary_2025-12-15_i_knew_before_i_kn.html
-> │    ├── 📄 NT_strategic_plan.html
-> │    ├── 📄 NT_wc2.00.002_draft_emergency_stay.html
-> │    ├── 📄 NT_wc2.00.003_draft_supplemental.html
-> │    ├── 📄 NT_wc2.01.010__index-content.html
-> │    ├── 📄 NT_wc2.01.010__index.html
-> │    ├── 📄 NT_wg6.01.003_status_tracker.html
-> │    ├── 📄 NT_wi8.01.010__2025-12-15_they_threw_us_into_the.html
-> │    ├── 📄 NT_wi8.01.050__index-content.html
-> │    ├── 📄 NT_wi8.99.010__index-content.html
-> │    ├── 📄 NT_wi8.99.010__index.html
-> │    ├── 📄 NT_wi8.99.010__long_term_payout_strategy.html
-> │    ├── 📄 NT_wi8.99.010__premonitions_i_knew_before_i_knew.html
-> │    ├── 📄 NT_wi8.99.010__session_summary_2025-12-15_i_knew.html
-> │    ├── 📄 OR_wc2.01.001_draft_order_vacate.html
-> │    ├── 📄 OR_wc2.01.002_draft_order_stay.html
-> │    ├── 📄 OR_wc2.01.010__proposed_order_emergency_stay.html
-> │    ├── 📄 OR_wc2.01.010__proposed_orders.html
-> │    ├── 📄 PL_cold_risk_report.html
-> │    ├── 📄 PL_wg6.01.001_doj_complaint.html
-> │    ├── 📄 PL_wg6.01.002_icrc_complaint.html
-> │    ├── 📄 _readme.html
-> │    ├── 📄 _readme_MOVED.html
-> ├── 📄 NT_README.md
-> └── 📂 _ADMIN/
-> │  └── 📂 10_index/
-> │    ├── 📄 NT_00_index.md
-> │    ├── 📄 NT_Contacts.md
-> │  └── 📂 20_case_logs/
-> │    ├── 📄 NT_2025-12-09_Writ_Executed_Forced_Removal.md
-> │    ├── 📄 NT_2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │    ├── 📄 NT_2025-12-15_Strategic_Planning_Session.md
-> │    ├── 📄 NT_2025-12-16_Post_Removal_Access_Denial.md
-> │    ├── 📄 NT_2025-12-16_case_log_entry.md
-> │    ├── 📄 NT_2025-12-16_case_summary.md
-> │    ├── 📄 NT_2025-12-16_fcfcu_case_dna_strat.md
-> │    ├── 📄 NT_2025-12-21_Case_Summary.md
-> │    ├── 📄 NT_2026-01-16_Cleanup_Log.md
-> │    ├── 📄 NT_20_case_logs.md
-> │    ├── 📄 NT_INGEST_2025-12-16_case_log_entry.md
-> │    ├── 📄 NT_Master_Case_Log.md
-> │    ├── 📄 NT_content_manifest_hashes.json
-> │    ├── 📄 NT_ingest_dedupe_manifest.json
-> │    ├── 📄 PL_integrity_scan_report.json
-> │  └── 📂 30_financial/
-> │    ├── 📄 NT_02_financial.md
-> │    ├── 📄 NT_Financial_Tracker.md
-> │  └── 📂 40_overviews/
-> │    └── 📂 10_maps/
-> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │    └── 📂 20_deep_dives/
-> │      ├── 📄 NT_Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │      ├── 📄 NT_foreclosure_void_versus_damages_due_process.m4a
-> │      ├── 📄 NT_forensic_audit_of_a_void_foreclosure.m4a
-> │      ├── 📄 OR_foreclosure_void_judgment_institutional_failur.m4a
-> │    └── 📂 30_critiques/
-> │    └── 📂 40_debates/
-> │      ├── 📄 NT_debate.m4a
-> │    └── 📂 50_explainers/
-> │      ├── 📄 NT_crisis_the_anatomy_of_institutional_failure.pdf
-> │      ├── 📄 NT_wrongful_foreclosure_a_case_study_in_civil_rig.pdf
-> │      ├── 📄 OR_void_judgment_eviction_crisis.pdf
-> │    └── 📂 60_infographics/
-> │      ├── 📄 OR_Void_Judgment_Eviction_Crisis.pdf
-> │    └── 📂 70_reports/
-> │      ├── 📄 NT_Crisis_The_Anatomy_of_Institutional_Failure.pdf
-> │      ├── 📄 NT_Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
-> │      ├── 📄 NT__Session_Summary_2025-12-15_i_knew_b.md
-> │      ├── 📄 NT_case-narrative-wrongful-foreclosure-and-displ.html
-> │      ├── 📄 NT_legal-memorandum.html
-> │      ├── 📄 NT_procedural_failure_map_one_pager.html
-> │      ├── 📄 NT_talking_points.html
-> │      ├── 📄 NT_uncategorized_bundle.pdf
-> │      ├── 📄 OR_Void_Judgment_Eviction_Crisis.pdf
-> │      ├── 📄 PL_70_reports.md
-> │      ├── 📄 PL_proposal-for-strategic-reports-in-the-matter-.html
-> │    ├── 📄 NT_10_overviews.md
-> │  └── 📂 50_protocols/
-> │    ├── 📄 NT_15_protocols.md
-> │    ├── 📄 NT_PROTOCOL_Content_Structure_and_Rules.md
-> │    ├── 📄 NT_PROTOCOL_System_Governance.md
-> │  └── 📂 70_templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 MO_10_motions.md
-> │      ├── 📄 MO_TEMPLATE_motion_emergency_stay_of_writ.md
-> │      ├── 📄 MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
-> │      ├── 📄 MO_TEMPLATE_motion_to_vacate_void_judgment.md
-> │    └── 📂 20_declarations/
-> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
-> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
-> │      ├── 📄 PL_20_declarations.md
-> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Declarations.md
-> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_affidavit_not_served.md
-> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
-> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
-> │    └── 📂 30_exhibits/
-> │      ├── 📄 EXH_30_exhibits.md
-> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
-> │    └── 📂 40_orders/
-> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
-> │      ├── 📄 OR_40_orders.md
-> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
-> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
-> │    └── 📂 50_internal/
-> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
-> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
-> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
-> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
-> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
-> │      ├── 📄 NT_TEMPLATE_Section_Index.md
-> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
-> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
-> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
-> │      ├── 📄 NT_TEMPLATE_War_Note.md
-> │      ├── 📄 NT_TEMPLATE_ada_packet.md
-> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
-> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
-> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
-> │    ├── 📄 NT_40_templates.md
-> │  └── 📂 80_integrity_tooling/
-> │    ├── 📄 NT_50_integrity_tooling.md
-> │    ├── 📄 NT_rename_plan.txt
-> │    ├── 📄 NT_run_renames.ps1
-> │    ├── 📄 PL_conflicts_report.txt
-> │  └── 📂 90_pack_blueprints/
-> │    ├── 📄 NT_60_pack_blueprints.md
-> │    ├── 📄 NT_PACK_AGENCY.yaml
-> │    ├── 📄 NT_PACK_JUDGE.yaml
-> │    ├── 📄 NT_PACK_OPPOSING.yaml
-> │    ├── 📄 NT_PACK_SELF.yaml
-> │    ├── 📄 NT_PROPOSED_OUTPUT_STRUCTURE.md
-> │  ├── 📄 NT_00_ADMIN.md
-> └── 📂 _INGEST/
+> ```markdown
+
+> . 📂 content
+
+> └── 📂 A_TIMELINE/
+
+> │  └── 📂 2023/
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 events/
+
+> │  └── 📂 2024/
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 events/
+
+> │  └── 📂 2025/
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 events/
+
+> │      ├── 📄 MO_2025-05-13_Motion_for_Default_Judgment 1.md
+
+> │      ├── 📄 MO_2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 MO_2025-05-23_Amended_Motion_Default_Judgment 1.md
+
+> │      ├── 📄 MO_2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 MO_2025-12-10_Motions_Filed 1.md
+
+> │      ├── 📄 MO_2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 MO_2025-12-12_Supplemental_Emergency_Motion 1.md
+
+> │      ├── 📄 MO_2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 NT_2025-01-16_Case_Filed 1.md
+
+> │      ├── 📄 NT_2025-01-16_Case_Filed.md
+
+> │      ├── 📄 NT_2025-03-05_Service_Attempt_1 1.md
+
+> │      ├── 📄 NT_2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 NT_2025-04-15_Service_Attempt_2 1.md
+
+> │      ├── 📄 NT_2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 NT_2025-08-15_Sheriff_Sale 1.md
+
+> │      ├── 📄 NT_2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 NT_2025-11-06_Writ_of_Assistance_Issued 1.md
+
+> │      ├── 📄 NT_2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 NT_2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │      ├── 📄 NT_2025-12-09_Writ_Executed_Removal.md
+
+> │      ├── 📄 NT_2025-12-16_Post_Removal_Access_Denial.md
+
+> │      ├── 📄 NT_2025-12-21_Case_Summary.md
+
+> │      ├── 📄 OR_2025-05-21_Order_Denying_Default_Judgment 1.md
+
+> │      ├── 📄 OR_2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 OR_2025-05-28_Default_Judgment_Entered 1.md
+
+> │      ├── 📄 OR_2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 OR_2025-12-11_Court_Orders_and_Hearing_Scheduled 1.md
+
+> │      ├── 📄 OR_2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 PL_2025-05-30_Praecipe_Sheriff_Sale 1.md
+
+> │      ├── 📄 PL_2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 PL_2025-07-09_Sheriff_Sale_Notice_Posted 1.md
+
+> │      ├── 📄 PL_2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 PL_2025-10-29_Petition_for_Writ_of_Assistance 1.md
+
+> │      ├── 📄 PL_2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │  └── 📂 2026/
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 events/
+
+> │  ├── 📄 NT_master_timeline.md
+
+> └── 📂 B_EVIDENCE/
+
+> │  └── 📂 10_evidence_admin/
+
+> │    ├── 📄 00_evidence_admin.md
+
+> │    ├── 📄 EXH_Raw_Exhibit_Map.md
+
+> │    ├── 📄 Evidence_Log.md
+
+> │    ├── 📄 chain_of_custody.md
+
+> │    ├── 📄 master_evidence_index.md
+
+> │  ├── 📄 20_EVIDENCE.md
+
+> │  └── 📂 20_court_record/
+
+> │    ├── 📄 10_court_record.md
+
+> │    └── 📂 10_docket_files/
+
+> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
+
+> │      ├── 📄 024_Service Returned Served.pdf
+
+> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
+
+> │      ├── 📄 029_Emergency_Supplemental_Declara.pdf
+
+> │      ├── 📄 035_01092026_005.pdf.pdf
+
+> │      ├── 📄 EXH_026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 EXH__026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 MO_013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO_016_Order_Denying_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO_019_Amended_Motion_Default_Judgment_1.pdf
+
+> │      ├── 📄 MO_020_Amended_Motion_Default_Judgment_2.pdf
+
+> │      ├── 📄 MO_025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 MO_027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 MO__013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO__019_Amended_Motion_Default_Judgmen.pdf
+
+> │      ├── 📄 MO__020_Amended_Motion_Default_Judgmen.pdf
+
+> │      ├── 📄 MO__025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 MO__027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 OR_023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 OR_031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 OR_032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 OR__017_Order_Denying_Default_Judgment.pdf
+
+> │      ├── 📄 OR__023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 OR__031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 OR__032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 PL_001_Complaint.pdf
+
+> │      ├── 📄 PL_002_Appearance.pdf
+
+> │      ├── 📄 PL_003_Request_for_Admissions.pdf
+
+> │      ├── 📄 PL_004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 PL_005_Appearance_2.pdf
+
+> │      ├── 📄 PL_006_Summons_1.pdf
+
+> │      ├── 📄 PL_007_Summons_2.pdf
+
+> │      ├── 📄 PL_008_Summons_3.pdf
+
+> │      ├── 📄 PL_009_Summons_4.pdf
+
+> │      ├── 📄 PL_010_Summons_5.pdf
+
+> │      ├── 📄 PL_011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 PL_012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 PL_014_Affidavit.pdf
+
+> │      ├── 📄 PL_015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
+
+> │      ├── 📄 PL_018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 PL_021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 PL_022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 PL_024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 PL_028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 PL_029_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 PL_030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 PL_033_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 PL_2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 PL__001_Complaint.pdf
+
+> │      ├── 📄 PL__002_Appearance.pdf
+
+> │      ├── 📄 PL__003_Request_for_Admissions.pdf
+
+> │      ├── 📄 PL__004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 PL__005_Appearance_2.pdf
+
+> │      ├── 📄 PL__006_Summons_1.pdf
+
+> │      ├── 📄 PL__007_Summons_2.pdf
+
+> │      ├── 📄 PL__008_Summons_3.pdf
+
+> │      ├── 📄 PL__009_Summons_4.pdf
+
+> │      ├── 📄 PL__010_Summons_5.pdf
+
+> │      ├── 📄 PL__011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 PL__012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 PL__014_Affidavit.pdf
+
+> │      ├── 📄 PL__015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 PL__016_Affidavit_Additional.pdf
+
+> │      ├── 📄 PL__018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 PL__021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 PL__022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 PL__024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 PL__028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 PL__030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
+
+> │  └── 📂 30_primary/
+
+> │    ├── 📄 10_primary.md
+
+> │    ├── 📄 20_primary.md
+
+> │    └── 📂 aes/
+
+> │      ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
+
+> │      ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
+
+> │      ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
+
+> │      ├── 📄 _README.md
+
+> │    └── 📂 fcfcu/
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> │      ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
+
+> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement-(1).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement-(2).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement.pdf
+
+> │      ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
+
+> │      ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
+
+> │      ├── 📄 21june-24-4817shadow_appraisal.pdf
+
+> │      ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │      ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
+
+> │      ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
+
+> │      ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
+
+> │      ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
+
+> │      ├── 📄 PL_report_to_court_on_defendants_request.pdf
+
+> │      ├── 📄 _README.md
+
+> │  └── 📂 40_supporting/
+
+> │    ├── 📄 20_supporting.md
+
+> │    ├── 📄 30_supporting.md
+
+> │    └── 📂 docs/
+
+> │      └── 📂 affidavits/
+
+> │        ├── 📄 PL_affidavits.md
+
+> │        └── 📂 ada-disability/
+
+> │        └── 📂 character/
+
+> │        └── 📂 community-service/
+
+> │        └── 📂 credibility/
+
+> │        └── 📂 observations/
+
+> │      └── 📂 declarations/
+
+> │        ├── 📄 PL_declarations.md
+
+> │      └── 📂 receipts/
+
+> │        ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
+
+> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │      └── 📂 records/
+
+> │        ├── 📄 Foreclosure and Housing Litigation Case Record.csv
+
+> │        ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
+
+> │    └── 📂 multi-media/
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │    └── 📂 property/
+
+> │      └── 📂 10_mortgage_history/
+
+> │        └── 📂 10_payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
+
+> │          ├── 📄 20_payments.md
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
+
+> │        ├── 📄 parcel_6016506_prc (2).pdf
+
+> │  └── 📂 50_quarantine_candidates/
+
+> │    ├── 📄 90_quarantine_candidates.md
+
+> └── 📂 C_VIS/
+
+> │  └── 📂 10_violations/
+
+> │    └── 📂 CREDIT_BUREAUS/
+
+> │      ├── 📄 NT_V-011_experian-reinvestigation-failure.md
+
+> │      ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
+
+> │      ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
+
+> │    ├── 📄 EXH_Exhibit X — Inventory of Jurisdictional, Execut.md
+
+> │    └── 📂 FCFCU/
+
+> │      ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
+
+> │      ├── 📄 NT_V-006_dual-tradeline-double-counting.md
+
+> │      ├── 📄 NT_V-008_credit-defamation-false-publication.md
+
+> │      ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> │      ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
+
+> │      ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
+
+> │      ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
+
+> │      ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
+
+> │      ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
+
+> │      ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
+
+> │      ├── 📄 NT_V-070_global-demand-letter.md
+
+> │      ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
+
+> │      ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
+
+> │      ├── 📄 NT_V-073_damages-credit-score-suppression.md
+
+> │      ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
+
+> │      ├── 📄 NT_V-075_public-accountability-hold.md
+
+> │      ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
+
+> │      ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
+
+> │      ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> │      ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
+
+> │      ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
+
+> │      ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
+
+> │    └── 📂 OTHER_PARTIES/
+
+> │      ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
+
+> │      ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
+
+> │      ├── 📄 NT_V-078_ada-effective-communication-failure.md
+
+> │      ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
+
+> │      ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
+
+> │    └── 📂 REGULATORS_PROCEDURAL/
+
+> │      ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
+
+> │      ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
+
+> │      ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
+
+> │      ├── 📄 OR_V-079_void-judgment-procedural-error.md
+
+> │      ├── 📄 PL_V-032_no-ada-compliant-notice.md
+
+> │      ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
+
+> │      ├── 📄 PL_V-050_cfpb-complaint-track.md
+
+> │      ├── 📄 PL_V-051_indiana-ag-complaint-track.md
+
+> │      ├── 📄 PL_V-052_icrc-complaint-track.md
+
+> │      ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
+
+> │      ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
+
+> │    └── 📂 UTILITIES_HOA_CITY/
+
+> │      ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
+
+> │      ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
+
+> │      ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
+
+> │      ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> │      ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> │      ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
+
+> │  └── 📂 20_theories/
+
+> │    └── 📂 WB1_01_ALTERNATE_THEORIES/
+
+> │      ├── 📄 NT_BACKUP_ARGUMENTS.md
+
+> │      ├── 📄 NT_IF_JUDGE_PUSHBACK.md
+
+> │  └── 📂 30_legal_research/
+
+> │    └── 📂 10_LAW_RESEARCH/
+
+> │      ├── 📄 NT_CASE_LAW_RESEARCH.md
+
+> │      ├── 📄 NT_JURISDICTION_THEORY.md
+
+> │      ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> │      ├── 📄 NT_wb1.00.001_case_law_research.html
+
+> │      ├── 📄 NT_wb1.00.002_void_vs_voidable_analysis.html
+
+> │      ├── 📄 NT_wb1.00.003_jurisdiction_theory.html
+
+> │      ├── 📄 _README.md
+
+> │    ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │  └── 📂 40_analysis/
+
+> │    ├── 📄 NT_Formal Inventory of Violations and Schedule of .md
+
+> │    ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │    ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │  └── 📂 50_strategies/
+
+> │    └── 📂 10_basis/
+
+> │      ├── 📄 NT_00_basis.md
+
+> │    └── 📂 20_ada_strategy/
+
+> │      ├── 📄 NT_10_ada_strategy.md
+
+> │      ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
+
+> │      ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
+
+> │      ├── 📄 NT_wg6.00.001_ada_title_ii_analysis.html
+
+> │      ├── 📄 NT_wg6.00.002_reasonable_accommodations.html
+
+> │      └── 📂 WG_GROUNDS_ADA/
+
+> │        └── 📂 WG6_00_ADA_STRATEGY/
+
+> │        └── 📂 WG6_01_PARALLEL_ENFORCEMENT/
+
+> │          ├── 📄 NT_STATUS_TRACKER.md
+
+> │          ├── 📄 PL_DOJ_COMPLAINT.md
+
+> │          ├── 📄 PL_ICRC_COMPLAINT.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 _readme.html
+
+> │    ├── 📄 NT_Master_Strategy_Canvas.canvas
+
+> │    ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
+
+> │    └── 📂 _misc_strategy/
+
+> │      └── 📂 10_ada_title_ii/
+
+> │      └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │      └── 📂 30_void_vs_voidable_tr_60b/
+
+> │      ├── 📄 Strategic_Plan.canvas
+
+> │    └── 📂 effects_procedural_chain/
+
+> │      └── 📂 WE_EFFECTS_PROCEDURAL/
+
+> │        └── 📂 WE4_00_CHAIN_ANALYSIS/
+
+> │          ├── 📄 NT_BUT_FOR_ANALYSIS.md
+
+> │          ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
+
+> │          ├── 📄 NT__Integrate_Disability_Separate_Appe.m4a
+
+> │          ├── 📄 NT__Procedural_failure_map_one_pager.md
+
+> │          ├── 📄 OR__Void_Judgment_Eviction_Crisis.pdf
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 WE4_01_REMEDIES/
+
+> │          ├── 📄 NT_REVERSAL_PATHS.md
+
+> │          ├── 📄 NT_STAY_PATHS.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 _readme.html
+
+> │      └── 📂 we4_00_chain_analysis/
+
+> │        ├── 📄 NT_we4.00.001_procedural_failure_map.html
+
+> │        ├── 📄 NT_we4.00.002_but_for_analysis.html
+
+> │        ├── 📄 NT_we4.00.010__integrate_disability_separate_appe.m4a
+
+> │        ├── 📄 OR_we4.00.010__void_judgment_eviction_crisis.html
+
+> │        ├── 📄 OR_we4.00.010__void_judgment_eviction_crisis.pdf
+
+> │        ├── 📄 _readme.html
+
+> │      └── 📂 we4_01_remedies/
+
+> │        ├── 📄 NT_we4.01.001_stay_paths.html
+
+> │        ├── 📄 NT_we4.01.002_reversal_paths.html
+
+> │        ├── 📄 _readme.html
+
+> │  └── 📂 60_data_inventories/
+
+> │    ├── 📄 20_violations.md
+
+> │    ├── 📄 NT_10_violations.md
+
+> │    ├── 📄 NT_Violation_Index.md
+
+> │    ├── 📄 NT_foreclosure-and-housing-litigation-case-record.csv
+
+> │    ├── 📄 NT_foreclosure-and-housing-litigation-case-record.csv.bak
+
+> │    ├── 📄 NT_inventory-of-civil-and-fair-housing-rights-vio.csv
+
+> │    ├── 📄 NT_inventory-of-civil-and-fair-housing-rights-vio.csv.bak
+
+> │  ├── 📄 NT_01_MASTER_INDEX.md
+
+> │  ├── 📄 NT_02_TAG_MAP.md
+
+> │  ├── 📄 NT_03_THEORY_CLUSTERS.md
+
+> │  ├── 📄 NT_04_RISK_REGISTER.md
+
+> │  ├── 📄 NT_30_VIS.md
+
+> ├── 📄 Case_Data.base
+
+> └── 📂 D_PHASES/
+
+> │  └── 📂 100_post_judgment_and_federal/
+
+> │    └── 📂 10_motions/
+
+> │      └── 📂 10_claims_motions/
+
+> │        ├── 📄 40_claims_motions.md
+
+> │        ├── 📄 MO_40_claims_motions.md
+
+> │        └── 📂 Supplemental/
+
+> │          └── 📂 01_drafts/
+
+> │            ├── 📄 MO__Supplemental_Emergency_Motion.pdf
+
+> │          └── 📂 02_exhibits/
+
+> │            ├── 📄 EXH_02_exhibits.md
+
+> │            ├── 📄 EXH__20_exhibits_combined_source
+
+> │            ├── 📄 EXH__Exhibit_H_Declaration.pdf
+
+> │          └── 📂 04_filed_receipts/
+
+> │            ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
+
+> │        └── 📂 filings/
+
+> │          └── 📂 10_2025-12-10_motion_vacate/
+
+> │            └── 📂 01_drafts/
+
+> │              ├── 📄 MO_Emergency Motions.docx
+
+> │            └── 📂 02_exhibits/
+
+> │              ├── 📄 EXH_02_exhibits.md
+
+> │              ├── 📄 EXH_05_Exhibit_List.pdf
+
+> │              ├── 📄 EXH_06_Exhibits_Combined.pdf
+
+> │              ├── 📄 MO_01_motion_vacate.pdf
+
+> │              ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │              ├── 📄 NT_combinepdf.pdf
+
+> │              ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │              ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │            └── 📂 03_proposed_order/
+
+> │              ├── 📄 OR_03_proposed_order.md
+
+> │              ├── 📄 OR_Proposed_Order_Vacate.docx
+
+> │            └── 📂 04_filed_receipts/
+
+> │              ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │            ├── 📄 MO_10_2025-12-10_motion_vacate.md
+
+> │          └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │            └── 📂 01_drafts/
+
+> │              ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │            └── 📂 02_exhibits/
+
+> │              ├── 📄 EXH_02_exhibits.md
+
+> │              ├── 📄 EXH_20_exhibits_combined_source
+
+> │              ├── 📄 EXH_Exhibit_H_Declaration.pdf
+
+> │            └── 📂 04_filed_receipts/
+
+> │              ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │            ├── 📄 MO_20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │          └── 📂 30_draft_motions/
+
+> │            ├── 📄 10_draft_motions.md
+
+> │            ├── 📄 20_draft_motions.md
+
+> │            ├── 📄 MO_10_draft_motions.md
+
+> │            ├── 📄 MO_DRAFT_MOTION_VACATE.md
+
+> │            ├── 📄 MO__Motions.md
+
+> │            ├── 📄 MO__motion_emergency_stay_of_writ.md
+
+> │            ├── 📄 MO__motion_emergency_supplemental_motio.md
+
+> │            ├── 📄 MO__motion_to_vacate_void_judgment.md
+
+> │            ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │            ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │            ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │            ├── 📄 MO_wc2.00.010__motion_emergency_stay_of_writ.docx
+
+> │            ├── 📄 MO_wc2.00.010__motion_emergency_supplemental_mot.docx
+
+> │            ├── 📄 MO_wc2.00.010__motion_to_vacate_void_judgement.docx
+
+> │            ├── 📄 NT_DRAFT_EMERGENCY_STAY.md
+
+> │            ├── 📄 NT_DRAFT_SUPPLEMENTAL.md
+
+> │            ├── 📄 NT_EMERGENCY_FILING_PACKET.md
+
+> │            ├── 📄 _README.md
+
+> │            └── 📂 motions/
+
+> │              ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
+
+> │              ├── 📄 MO_C2.01.002_motion_vacate.pdf
+
+> │              ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │              ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │              ├── 📄 MO_motions.md
+
+> │        └── 📂 motion_vacate/
+
+> │          └── 📂 01_drafts/
+
+> │            ├── 📄 MO__Emergency Motions.docx
+
+> │          └── 📂 02_exhibits/
+
+> │            ├── 📄 EXH_02_exhibits.md
+
+> │            ├── 📄 EXH__05_Exhibit_List.pdf
+
+> │            ├── 📄 EXH__06_Exhibits_Combined.pdf
+
+> │            ├── 📄 MO__01_motion_vacate.pdf
+
+> │            ├── 📄 MO__02_emergency_motion_quash_stay.pdf
+
+> │            ├── 📄 NT__combinepdf.pdf
+
+> │            ├── 📄 OR__03_order_vacate_proposed.pdf
+
+> │            ├── 📄 OR__04_order_stay_writ_proposed.pdf
+
+> │          └── 📂 03_proposed_order/
+
+> │            ├── 📄 OR_03_proposed_order.md
+
+> │            ├── 📄 OR__Proposed_Order_Vacate.docx
+
+> │          └── 📂 04_filed_receipts/
+
+> │            ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
+
+> │          ├── 📄 MO_motion_vacate.md
+
+> │          ├── 📄 NT.gitkeep
+
+> │      ├── 📄 MO_10_motions.md
+
+> │      ├── 📄 NT_index.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_orders/
+
+> │      └── 📂 10_proposed_orders/
+
+> │        ├── 📄 20_proposed_orders.md
+
+> │        ├── 📄 MO__proposed_order_motion_to_vacate.md
+
+> │        ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │        ├── 📄 NT__index.md
+
+> │        ├── 📄 OR_20_proposed_orders.md
+
+> │        ├── 📄 OR_DRAFT_ORDER_STAY.md
+
+> │        ├── 📄 OR_DRAFT_ORDER_VACATE.md
+
+> │        ├── 📄 OR__Proposed_Orders.md
+
+> │        ├── 📄 OR__proposed_order_emergency_stay.md
+
+> │        ├── 📄 OR_proposed_order_emergency_stay.md
+
+> │        ├── 📄 _README.md
+
+> │      ├── 📄 NT_index.md
+
+> │      ├── 📄 OR_20_orders.md
+
+> │      ├── 📄 _placeholder.md
+
+> │      └── 📂 orders/
+
+> │        ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
+
+> │        ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 OR_orders.md
+
+> │    └── 📂 30_regulatory_complaints/
+
+> │      ├── 📄 PL_30_regulatory_complaints.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_federal_preservation/
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 OR_90_post_judgment_and_federal.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 10_inbox_working/
+
+> │    ├── 📄 NT_00_inbox_working.md
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 _staging/
+
+> │      └── 📂 _dupes_hold/
+
+> │        ├── 📄 MO__motion_emergency_stay_of_writ (2).docx
+
+> │        ├── 📄 MO__motion_emergency_supplemental_mot (2).docx
+
+> │        ├── 📄 MO__motion_to_vacate_void_judgement (2).docx
+
+> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold (2).md
+
+> │        ├── 📄 NT_Donations_Context (2).md
+
+> │        ├── 📄 NT_Long_Term_Payout_Strategy (2).md
+
+> │        ├── 📄 NT_Master_Timeline (2).md
+
+> │        ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew (2).md
+
+> │        ├── 📄 NT_Public_Statement (2).md
+
+> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew (2).md
+
+> │        ├── 📄 NT_index.md
+
+> │        ├── 📄 OR_c2.04.001_order_vacate_proposed (2).pdf
+
+> │        ├── 📄 OR_c2.04.002_order_stay_writ_proposed (2).pdf
+
+> │        ├── 📄 PL_Cold_Risk_Report (2).md
+
+> │      └── 📂 _html_hold/
+
+> │        ├── 📄 NT_index.md
+
+> │    └── 📂 evidence_staging/
+
+> │      └── 📂 exhibit_candidates/
+
+> │        └── 📂 10_exposure_and_harm/
+
+> │          ├── 📄 02_exposure_and_harm.md
+
+> │          ├── 📄 NT_02_exposure_and_harm.md
+
+> │          ├── 📄 PL_wi8.02.050__cold_risk_report.html
+
+> │          └── 📂 photos_conditions/
+
+> │          └── 📂 weather_reports/
+
+> │            ├── 📄 PL_weather_reports.md
+
+> │        ├── 📄 EXH_exhibit_candidates.md
+
+> │      └── 📂 potential_exhibits/
+
+> │        ├── 📄 EXH_potential_exhibits.md
+
+> │  └── 📂 20_pre_foreclosure/
+
+> │    └── 📂 10_account_history/
+
+> │      ├── 📄 NT_index.md
+
+> │      ├── 📄 NT_one_pager_overview.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_hardship_and_ada/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_communications/
+
+> │      ├── 📄 NT_index.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_payments_and_disputes/
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 NT_10_pre_foreclosure.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 30_foreclosure_filing/
+
+> │    └── 📂 10_complaint/
+
+> │      ├── 📄 PL_10_complaint.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_summons/
+
+> │      ├── 📄 PL_20_summons.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_lien_parties/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_docket_snapshots/
+
+> │      └── 📂 10_docket_map_and_notes/
+
+> │      ├── 📄 NT_01_Docket.md
+
+> │      ├── 📄 NT__Case_Summary.md
+
+> │      ├── 📄 NT_docket_index.md
+
+> │      ├── 📄 _Case_Summary.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 _docket.md
+
+> │      ├── 📄 _placeholder.md
+
+> │      └── 📂 docket_files/
+
+> │    ├── 📄 NT_20_foreclosure_filing.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 40_service_and_notice/
+
+> │    └── 📂 10_sheriff_returns/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_mailings/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_affidavits_of_service/
+
+> │      └── 📂 10_jurisdiction_service_tr_4_1_b/
+
+> │        ├── 📄 20_jurisdiction_service_tr_4_1_b.md
+
+> │        ├── 📄 NT_20_jurisdiction_service_tr_4_1_b 1.md
+
+> │        ├── 📄 NT_20_jurisdiction_service_tr_4_1_b.md
+
+> │      └── 📂 20_service_process/
+
+> │        ├── 📄 30_service_process.md
+
+> │      ├── 📄 NT_03_Service_Process.md
+
+> │      ├── 📄 NT_service_defects_analysis.md
+
+> │      ├── 📄 PL_30_affidavits_of_service.md
+
+> │      ├── 📄 PL_affidavits_service.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_defects_and_contradictions/
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 PL_30_service_and_notice.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 50_default_and_judgment/
+
+> │    └── 📂 10_default_motion/
+
+> │      ├── 📄 MO_10_default_motion.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_default_order/
+
+> │      ├── 📄 OR_20_default_order.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_judgment_and_decree/
+
+> │      ├── 📄 OR_30_judgment_and_decree.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_accounting_inputs/
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 OR_40_default_and_judgment.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 60_sale_and_title/
+
+> │    └── 📂 10_sheriff_sale/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_deed/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_recording_gaps/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_possession_claims/
+
+> │      └── 📂 10_sale_and_possession/
+
+> │        ├── 📄 30_sale_and_possession.md
+
+> │        ├── 📄 NT_30_sale_and_possession.md
+
+> │      └── 📂 30_void_vs_voidable/
+
+> │        ├── 📄 20_void_vs_voidable.md
+
+> │        ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
+
+> │        ├── 📄 NT_30_void_vs_voidable_tr_60b.md
+
+> │      ├── 📄 NT_05_Sale_and_Possesion.md
+
+> │      ├── 📄 NT_possession_admissions.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 NT_50_sale_and_title.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 70_writ_and_execution/
+
+> │    └── 📂 10_writ_petition/
+
+> │      ├── 📄 PL_10_writ_petition.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_writ_order/
+
+> │      ├── 📄 OR_20_writ_order.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_execution_events/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_notice_failures/
+
+> │      ├── 📄 PL_40_notice_failures.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 NT_60_writ_and_execution.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 80_post_removal_conduct/
+
+> │    └── 📂 10_property_interference/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 20_access_denial/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 30_spoliation_risk/
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_third_party_actions/
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 NT_70_post_removal_conduct.md
+
+> │    ├── 📄 _README.md
+
+> │  └── 📂 90_damages_and_fallout/
+
+> │    └── 📂 10_property_possession_harms/
+
+> │      ├── 📄 03_property_possession_harms.md
+
+> │      ├── 📄 NT_03_property_possession_harms.md
+
+> │    └── 📂 20_economic_harm/
+
+> │      ├── 📄 10_economic_harm.md
+
+> │      ├── 📄 NT_10_economic_harm.md
+
+> │      ├── 📄 NT_index.md
+
+> │    └── 📂 30_financial/
+
+> │      ├── 📄 20_financial.md
+
+> │      ├── 📄 NT_10_financial.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 40_health_and_safety/
+
+> │      ├── 📄 30_health_and_safety.md
+
+> │      ├── 📄 NT_20_health_and_safety.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 50_non_economic_harm/
+
+> │      ├── 📄 40_non_economic_harm.md
+
+> │      ├── 📄 NT_20_non_economic_harm.md
+
+> │      └── 📂 cold_exposure/
+
+> │        ├── 📄 NT_index.md
+
+> │    └── 📂 60_professional_harm/
+
+> │      ├── 📄 50_professional_harm.md
+
+> │      ├── 📄 NT_30_professional_harm.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    └── 📂 70_remedies_scenarios/
+
+> │      ├── 📄 60_remedies_scenarios.md
+
+> │      ├── 📄 NT_30_remedies_scenarios.md
+
+> │      ├── 📄 NT_index.md
+
+> │    └── 📂 80_payout_strategy/
+
+> │      ├── 📄 70_payout_strategy.md
+
+> │      ├── 📄 NT_40_Payout_Strategy.md
+
+> │      ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │      ├── 📄 NT_index.md
+
+> │      ├── 📄 _README.md
+
+> │      └── 📂 payout_strategy/
+
+> │    └── 📂 90_third_party_harm/
+
+> │      ├── 📄 80_third_party_harm.md
+
+> │      ├── 📄 NT_40_third_party_harm.md
+
+> │      ├── 📄 _placeholder.md
+
+> │    ├── 📄 NT_06_damages_and_remedies.md
+
+> │    ├── 📄 NT_80_damages_and_fallout.md
+
+> │    ├── 📄 NT_index.md
+
+> │    └── 📂 Photos_Conditions/
+
+> │    └── 📂 Weather_Reports/
+
+> │      ├── 📄 PL_Weather_Reports.md
+
+> │    ├── 📄 _README.md
+
+> │    └── 📂 economic/
+
+> │      ├── 📄 NT_ECONOMIC_HARM.md
+
+> │    └── 📂 non-economic/
+
+> │      ├── 📄 NT_NON_ECONOMIC_HARM.md
+
+> │      └── 📂 cold-exposure/
+
+> │        ├── 📄 PL__Cold_Risk_Report.md
+
+> │    └── 📂 personal_narrative/
+
+> │      └── 📂 10_Public_Narrative/
+
+> │        ├── 📄 01_Public_Narrative.md
+
+> │        ├── 📄 NT_01_Public_Narrative.md
+
+> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
+
+> │        ├── 📄 NT_Public_Statement.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 20_Exposure_and_Harm/
+
+> │        ├── 📄 02_Exposure_and_Harm.md
+
+> │        ├── 📄 NT_02_Exposure_and_Harm.md
+
+> │        ├── 📄 PL_Cold_Risk_Report.md
+
+> │        └── 📂 Photos_Conditions/
+
+> │        └── 📂 Weather_Reports/
+
+> │          ├── 📄 PL_Weather_Reports.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 30_Internal_Analysis/
+
+> │        ├── 📄 03_Internal_Analysis.md
+
+> │        ├── 📄 NT_03_Internal_Analysis.md
+
+> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │        └── 📂 Payout_Strategy/
+
+> │          ├── 📄 NT_Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 _README.md
+
+> │        └── 📂 Premonitions/
+
+> │          ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
+
+> │          ├── 📄 _README.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 40_Donations_and_Support/
+
+> │        ├── 📄 04_Donations_and_Support.md
+
+> │        └── 📂 Donation_Page_HTML/
+
+> │        ├── 📄 NT_04_Donations_and_Support.md
+
+> │        ├── 📄 NT_Donations_Context.md
+
+> │        └── 📂 Screenshots_Live_Page/
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 50_Timeline/
+
+> │        ├── 📄 05_Timeline.md
+
+> │        ├── 📄 NT_05_Timeline.md
+
+> │        ├── 📄 NT_Master_Timeline.md
+
+> │        ├── 📄 _README.md
+
+> │      └── 📂 Premonitions/
+
+> │        ├── 📄 NT__Premonitions_I_Knew_Before_I_Knew.md
+
+> │        ├── 📄 _README.md
+
+> │    └── 📂 settlement/
+
+> │      ├── 📄 NT_SETTLEMENT_SCENARIOS.md
+
+> │    └── 📂 thirdparty/
+
+> │  ├── 📄 MO_Promotion_Checklist.md
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> └── 📂 E_OUTPUTS/
+
+> │  └── 📂 10_binders/
+
+> │    └── 📂 master_case_bible/
+
+> │      ├── 📄 NT_binder_manifest.md
+
+> │      └── 📂 _build/
+
+> │        ├── 📄 NT_full_binder.md
+
+> │        ├── 📄 NT_full_binder_snapshot.md
+
+> │        ├── 📄 NT_master_case_bible.html
+
+> │        ├── 📄 NT_temp_merged.md
+
+> │      └── 📂 sections/
+
+> │  └── 📂 20_filings/
+
+> │  └── 📂 _build_artifacts/
+
+> │    ├── 📄 MO_wc2.00.001_draft_motion_vacate.html
+
+> │    ├── 📄 MO_wc2.00.010___motions.html
+
+> │    ├── 📄 MO_wc2.00.010__motion_emergency_stay_of_writ.html
+
+> │    ├── 📄 MO_wc2.00.010__motion_emergency_supplemental_mot.html
+
+> │    ├── 📄 MO_wc2.00.010__motion_to_vacate_void_judgment.html
+
+> │    ├── 📄 MO_wc2.01.010__proposed_order_motion_to_vacate.html
+
+> │    ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.html
+
+> │    ├── 📄 NT_Summary - MyCase.html
+
+> │    ├── 📄 NT_WI8.01.050__index.html
+
+> │    ├── 📄 NT_WI8.02.050__index.html
+
+> │    ├── 📄 NT_WI8.99.010__index_MOVED.html
+
+> │    ├── 📄 NT_WZ9.00.050__index.html
+
+> │    ├── 📄 NT_WZ9.00.050__index_MOVED.html
+
+> │    ├── 📄 NT__index (2).html
+
+> │    ├── 📄 NT__index.html
+
+> │    ├── 📄 NT__index_MOVED.html
+
+> │    ├── 📄 NT_donations_context.html
+
+> │    ├── 📄 NT_index (2).html
+
+> │    ├── 📄 NT_index (2)_MOVED.html
+
+> │    ├── 📄 NT_index-content.html
+
+> │    ├── 📄 NT_index-content_MOVED.html
+
+> │    ├── 📄 NT_index.html
+
+> │    ├── 📄 NT_index_MOVED.html
+
+> │    ├── 📄 NT_long_term_payout_strategy.html
+
+> │    ├── 📄 NT_master_timeline.html
+
+> │    ├── 📄 NT_premonitions_i_knew_before_i_knew.html
+
+> │    ├── 📄 NT_public_statement.html
+
+> │    ├── 📄 NT_session_summary_2025-12-15_i_knew_before_i_kn.html
+
+> │    ├── 📄 NT_strategic_plan.html
+
+> │    ├── 📄 NT_wc2.00.002_draft_emergency_stay.html
+
+> │    ├── 📄 NT_wc2.00.003_draft_supplemental.html
+
+> │    ├── 📄 NT_wc2.01.010__index-content.html
+
+> │    ├── 📄 NT_wc2.01.010__index.html
+
+> │    ├── 📄 NT_wg6.01.003_status_tracker.html
+
+> │    ├── 📄 NT_wi8.01.010__2025-12-15_they_threw_us_into_the.html
+
+> │    ├── 📄 NT_wi8.01.050__index-content.html
+
+> │    ├── 📄 NT_wi8.99.010__index-content.html
+
+> │    ├── 📄 NT_wi8.99.010__index.html
+
+> │    ├── 📄 NT_wi8.99.010__long_term_payout_strategy.html
+
+> │    ├── 📄 NT_wi8.99.010__premonitions_i_knew_before_i_knew.html
+
+> │    ├── 📄 NT_wi8.99.010__session_summary_2025-12-15_i_knew.html
+
+> │    ├── 📄 OR_wc2.01.001_draft_order_vacate.html
+
+> │    ├── 📄 OR_wc2.01.002_draft_order_stay.html
+
+> │    ├── 📄 OR_wc2.01.010__proposed_order_emergency_stay.html
+
+> │    ├── 📄 OR_wc2.01.010__proposed_orders.html
+
+> │    ├── 📄 PL_cold_risk_report.html
+
+> │    ├── 📄 PL_wg6.01.001_doj_complaint.html
+
+> │    ├── 📄 PL_wg6.01.002_icrc_complaint.html
+
+> │    ├── 📄 _readme.html
+
+> │    ├── 📄 _readme_MOVED.html
+
+> ├── 📄 NT_README.md
+
+> └── 📂 _ADMIN/
+
+> │  └── 📂 10_index/
+
+> │    ├── 📄 NT_00_index.md
+
+> │    ├── 📄 NT_Contacts.md
+
+> │  └── 📂 20_case_logs/
+
+> │    ├── 📄 NT_2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │    ├── 📄 NT_2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │    ├── 📄 NT_2025-12-15_Strategic_Planning_Session.md
+
+> │    ├── 📄 NT_2025-12-16_Post_Removal_Access_Denial.md
+
+> │    ├── 📄 NT_2025-12-16_case_log_entry.md
+
+> │    ├── 📄 NT_2025-12-16_case_summary.md
+
+> │    ├── 📄 NT_2025-12-16_fcfcu_case_dna_strat.md
+
+> │    ├── 📄 NT_2025-12-21_Case_Summary.md
+
+> │    ├── 📄 NT_2026-01-16_Cleanup_Log.md
+
+> │    ├── 📄 NT_20_case_logs.md
+
+> │    ├── 📄 NT_INGEST_2025-12-16_case_log_entry.md
+
+> │    ├── 📄 NT_Master_Case_Log.md
+
+> │    ├── 📄 NT_content_manifest_hashes.json
+
+> │    ├── 📄 NT_ingest_dedupe_manifest.json
+
+> │    ├── 📄 PL_integrity_scan_report.json
+
+> │  └── 📂 30_financial/
+
+> │    ├── 📄 NT_02_financial.md
+
+> │    ├── 📄 NT_Financial_Tracker.md
+
+> │  └── 📂 40_overviews/
+
+> │    └── 📂 10_maps/
+
+> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │    └── 📂 20_deep_dives/
+
+> │      ├── 📄 NT_Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │      ├── 📄 NT_foreclosure_void_versus_damages_due_process.m4a
+
+> │      ├── 📄 NT_forensic_audit_of_a_void_foreclosure.m4a
+
+> │      ├── 📄 OR_foreclosure_void_judgment_institutional_failur.m4a
+
+> │    └── 📂 30_critiques/
+
+> │    └── 📂 40_debates/
+
+> │      ├── 📄 NT_debate.m4a
+
+> │    └── 📂 50_explainers/
+
+> │      ├── 📄 NT_crisis_the_anatomy_of_institutional_failure.pdf
+
+> │      ├── 📄 NT_wrongful_foreclosure_a_case_study_in_civil_rig.pdf
+
+> │      ├── 📄 OR_void_judgment_eviction_crisis.pdf
+
+> │    └── 📂 60_infographics/
+
+> │      ├── 📄 OR_Void_Judgment_Eviction_Crisis.pdf
+
+> │    └── 📂 70_reports/
+
+> │      ├── 📄 NT_Crisis_The_Anatomy_of_Institutional_Failure.pdf
+
+> │      ├── 📄 NT_Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
+
+> │      ├── 📄 NT__Session_Summary_2025-12-15_i_knew_b.md
+
+> │      ├── 📄 NT_case-narrative-wrongful-foreclosure-and-displ.html
+
+> │      ├── 📄 NT_legal-memorandum.html
+
+> │      ├── 📄 NT_procedural_failure_map_one_pager.html
+
+> │      ├── 📄 NT_talking_points.html
+
+> │      ├── 📄 NT_uncategorized_bundle.pdf
+
+> │      ├── 📄 OR_Void_Judgment_Eviction_Crisis.pdf
+
+> │      ├── 📄 PL_70_reports.md
+
+> │      ├── 📄 PL_proposal-for-strategic-reports-in-the-matter-.html
+
+> │    ├── 📄 NT_10_overviews.md
+
+> │  └── 📂 50_protocols/
+
+> │    ├── 📄 NT_15_protocols.md
+
+> │    ├── 📄 NT_PROTOCOL_Content_Structure_and_Rules.md
+
+> │    ├── 📄 NT_PROTOCOL_System_Governance.md
+
+> │  └── 📂 70_templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 MO_10_motions.md
+
+> │      ├── 📄 MO_TEMPLATE_motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │      ├── 📄 MO_TEMPLATE_motion_to_vacate_void_judgment.md
+
+> │    └── 📂 20_declarations/
+
+> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
+
+> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
+
+> │      ├── 📄 PL_20_declarations.md
+
+> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Declarations.md
+
+> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_affidavit_not_served.md
+
+> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
+
+> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
+
+> │    └── 📂 30_exhibits/
+
+> │      ├── 📄 EXH_30_exhibits.md
+
+> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
+
+> │    └── 📂 40_orders/
+
+> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 OR_40_orders.md
+
+> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
+
+> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
+
+> │    └── 📂 50_internal/
+
+> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
+
+> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
+
+> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
+
+> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Index.md
+
+> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
+
+> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
+
+> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
+
+> │      ├── 📄 NT_TEMPLATE_War_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_ada_packet.md
+
+> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
+
+> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
+
+> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
+
+> │    ├── 📄 NT_40_templates.md
+
+> │  └── 📂 80_integrity_tooling/
+
+> │    ├── 📄 NT_50_integrity_tooling.md
+
+> │    ├── 📄 NT_rename_plan.txt
+
+> │    ├── 📄 NT_run_renames.ps1
+
+> │    ├── 📄 PL_conflicts_report.txt
+
+> │  └── 📂 90_pack_blueprints/
+
+> │    ├── 📄 NT_60_pack_blueprints.md
+
+> │    ├── 📄 NT_PACK_AGENCY.yaml
+
+> │    ├── 📄 NT_PACK_JUDGE.yaml
+
+> │    ├── 📄 NT_PACK_OPPOSING.yaml
+
+> │    ├── 📄 NT_PACK_SELF.yaml
+
+> │    ├── 📄 NT_PROPOSED_OUTPUT_STRUCTURE.md
+
+> │  ├── 📄 NT_00_ADMIN.md
+
+> └── 📂 _INGEST/
+
 > ```

@@ -3,9 +3,9 @@ layout: page
 title: "Video File Organization"
 slug: "video_file_organization"
 created_at: "2025-12-30 02:51:48"
-updated_at: "2025-12-30 02:51:48"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -949,42 +949,78 @@ canonical_ref: ""
 > That usually means permission errors or reparse points. This script already suppresses walk errors reasonably, but if Drive has weird placeholders, the next hardening step is to **skip symlinks/reparse points**. If you hit that, paste the first error line you see and I’ll add the specific guard.
 
 ### User
-> oh and are the fuzzy logic OR statement or AND, becaue it should be OR. " "c:/QiOS_WORKING/My Drive/_working/VIDEO-FINDER/video_folder_index.py"
-> Scan GLOBAL (all roots listed)? (Y/n): n
-> 
-> Available roots:
->   1) C:\
->   2) C:\QiOS_WORKING\My Drive
->   3) D:\
-> 
-> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
-> Selection: 3
-> Do you want to enable filename fuzzy filters? (y/N): y
-> 
-> Filename fuzzy filters available:
->   1) Contains 'T' anywhere
->   2) Contains 'TT' (two or more T's in a row)
->   3) Contains 646 OR '6 4 6' (digits separated by anything)
->   4) Custom 'contains' terms (you type them)
-> Filter: require 'T' anywhere in filename? (y/N): y
-> Filter: require 'TT' (T repeated 2+ times) in filename? (y/N): y
-> Filter: require 646 / 6 4 6 pattern in filename? (y/N): y
-> Add custom 'contains' terms? (y/N): y
-> Enter terms separated by commas (example: court, hallway, cam2): treve
-> 
-> Scanning roots:
->  - D:\
-> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
-> Minimum size: 1,048,576 bytes (1.0 MB)
-> 
-> Traceback (most recent call last):
->   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folder_index.py", line 305, in <module>
->     main()
->     ~~~~^^
->   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folder_index.py", line 248, in main      
->     with open(out_csv, "w", newline="", encoding="utf-8") as f:
->          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> FileNotFoundError: [Errno 2] No such file or directory: 'video_folders_20251230_040158.csv'
+> oh and are the fuzzy logic OR statement or AND, becaue it should be OR. " "c:/QiOS_WORKING/My Drive/_working/VIDEO-FINDER/video_folder_index.py"
+
+> Scan GLOBAL (all roots listed)? (Y/n): n
+
+> 
+
+> Available roots:
+
+>   1) C:\
+
+>   2) C:\QiOS_WORKING\My Drive
+
+>   3) D:\
+
+> 
+
+> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
+
+> Selection: 3
+
+> Do you want to enable filename fuzzy filters? (y/N): y
+
+> 
+
+> Filename fuzzy filters available:
+
+>   1) Contains 'T' anywhere
+
+>   2) Contains 'TT' (two or more T's in a row)
+
+>   3) Contains 646 OR '6 4 6' (digits separated by anything)
+
+>   4) Custom 'contains' terms (you type them)
+
+> Filter: require 'T' anywhere in filename? (y/N): y
+
+> Filter: require 'TT' (T repeated 2+ times) in filename? (y/N): y
+
+> Filter: require 646 / 6 4 6 pattern in filename? (y/N): y
+
+> Add custom 'contains' terms? (y/N): y
+
+> Enter terms separated by commas (example: court, hallway, cam2): treve
+
+> 
+
+> Scanning roots:
+
+>  - D:\
+
+> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
+
+> Minimum size: 1,048,576 bytes (1.0 MB)
+
+> 
+
+> Traceback (most recent call last):
+
+>   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folder_index.py", line 305, in <module>
+
+>     main()
+
+>     ~~~~^^
+
+>   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folder_index.py", line 248, in main      
+
+>     with open(out_csv, "w", newline="", encoding="utf-8") as f:
+
+>          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+> FileNotFoundError: [Errno 2] No such file or directory: 'video_folders_20251230_040158.csv'
+
 > (.venv) PS C:\QiOS_WORKING>
 
 ### Assistant
@@ -1250,7 +1286,8 @@ canonical_ref: ""
 > Send the last 20 lines of output and I’ll tell you exactly which branch you’re in and the precise fix.
 
 ### User
-> you know i can really tell if it even applied my fuzzy logic, out_csv = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.csv")
+> you know i can really tell if it even applied my fuzzy logic, out_csv = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.csv")
+
 > out_html = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.html")  -- and i turned on all the optons plus added treve, and trevesin and chicano.
 
 ### Assistant
@@ -1586,110 +1623,214 @@ canonical_ref: ""
 > You’re doing the right thing by demanding observability instead of “trust me bro” scripts.
 
 ### User
-> look at this output and tell me what shouldnt have been returned and we probably should have it return the path links to teh actual videos too. Generated: 2025-12-30T04:28:50
-> Roots scanned: C:\ | C:\QiOS_WORKING\My Drive | D:\
-> Total files seen: 1,602,596 | Matching videos: 691 | Unique folders: 100
-> Min size: 1,048,576 bytes
-> Count	Total Size (MB)	Folder (click to open)	Top Extensions
-> 126	1265.23	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets\video	.mp4:126
-> 60	99844.85	C:\QiOS_WORKING\My Drive\.private\.converter\trash\3-enhance	.mp4:60
-> 38	39398.24	C:\QiOS_WORKING\My Drive\.private\.converter\2-convert	.mp4:34 .avi:4
-> 32	24943.10	C:\QiOS_WORKING\My Drive\.private\.converter\trash\2-convert	.mkv:24 .mp4:6 .avi:2
-> 28	12222.39	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\2-convert	.mp4:28
-> 28	10879.43	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\demu	.mkv:14 .mp4:14
-> 28	366.27	C:\QiOS_WORKING\My Drive\_public\videos\lumara	.mp4:28
-> 20	9773.19	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Review for OF	.mp4:12 .mov:8
-> 18	36.62	C:\QiOS_WORKING\My Drive\.private\.private\videos-pg\zai	.mkv:18
-> 18	36.62	C:\QiOS_WORKING\My Drive\.private\.private\zai	.mkv:18
-> 16	6319.60	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\crisitan-raduales	.mkv:8 .mp4:8
-> 14	5463.75	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\jonathan-torress-nica	.mkv:10 .mp4:4
-> 14	5439.71	D:\QiOS_BACKUP\apps\_converter\01_projects\demu	.mkv:7 .mp4:7
-> 12	113.75	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\dbl-les than 72 hours	.mp4:12
-> 12	113.75	C:\QiOS_WORKING\My Drive\.private\.trade\luis-palacios\BDL-photos\Photos from 2022\dbl-les than 72 hours	.mp4:12
-> 12	113.75	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Photos from 2022	.mp4:12
-> 10	1111.07	C:\QiOS_WORKING\My Drive\.private\.private\treve\treve-02	.mp4:10
-> 9	35.12	D:\QiOS_SALVAGE\salvage_staging_20251226_194525\qiclients	.mp4:9
-> 8	3159.80	D:\QiOS_BACKUP\apps\_converter\01_projects\crisitan-raduales	.mp4:4 .mkv:4
-> 8	1519.97	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\ace-esteban	.mkv:4 .mp4:4
-> 8	714.26	C:\QiOS_WORKING\My Drive\.private\.converter\trash\2-convert\bdlconvert\BDL-OTHERS	.mp4:8
-> 8	664.12	C:\QiOS_WORKING\My Drive\.private\.private\treve\treve-01	.mp4:8
-> 8	18.13	C:\QiOS_WORKING\My Drive\_public\videos\ZJK	.mp4:8
-> 7	2731.87	D:\QiOS_BACKUP\apps\_converter\01_projects\jonathan-torress-nica	.mkv:5 .mp4:2
-> 4	8979.94	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\catracho-dark-badoo	.mp4:2 .mkv:2
-> 4	4885.84	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\dl-mexican-guy-eats	.mkv:4
-> 4	4199.50	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-throatgoat	.mov:4
-> 4	2398.84	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance	.wmv:2 .mp4:2
-> 4	759.98	D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban	.mp4:2 .mkv:2
-> 4	492.79	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-brain	.mp4:4
-> 4	453.55	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance\bdl-enhance\BDL-SNAPCHAT	.mp4:4
-> 4	453.55	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios	.mp4:4
-> 4	109.59	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance\bdl-enhance	.mp4:4
-> 4	109.59	C:\QiOS_WORKING\My Drive\.private\.trade\luis-palacios\BDL-photos\Photos from 2024	.mp4:4
-> 4	109.59	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Photos from 2024	.mp4:4
-> 4	19.90	C:\Users\codyr\Downloads	.mp4:4
-> 4	9.06	C:\QiOS_v1\realms\qiclients\c.zjk\zai\03_Case_Evidence\Other	.mp4:4
-> 4	8.96	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\brandon-escobar	.mov:4
-> 4	8.96	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\brandon-escobar	.mov:4
-> 3	8.09	C:\Users\codyr\.videoconverter\temp_source\.converter\1-convert\dilshant convert	.mkv:3
-> 3	6.36	C:\QiOS_v1\realms\qiclients\c.zjk\zai\99_Unclassified	.mp4:3
-> 2	6331.44	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\1-combine	.mkv:2
-> 2	4489.97	D:\QiOS_BACKUP\apps\_converter\01_projects\catracho-dark-badoo	.mkv:1 .mp4:1
-> 2	2442.92	D:\QiOS_BACKUP\apps\_converter\01_projects\dl-mexican-guy-eats	.mkv:2
-> 2	721.93	C:\QiOS_WORKING\My Drive\.private\.trade	.mp4:2
-> 2	329.35	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\catracho-joven-needs-uber	.mp4:2
-> 2	206.92	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-cowgirl	.mov:2
-> 2	33.06	C:\QiOS_WORKING\My Drive\.private\.memories\Audio\_Calls	.mp4:2
-> 2	32.61	C:\QiOS_WORKING\My Drive\_working\_QiLabs\QiEmpQNow\30_MEDIA\2.30.20.32_video_raw	.mp4:2
-> 2	12.32	C:\QiOS_WORKING\My Drive\.private\.converter\trash\3-enhance\bdl-enhance\BDL-bttom	.mp4:2
-> 2	12.32	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\BDL-20251010	.mp4:2
-> 2	10.47	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets	.mp4:2
-> 2	10.33	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets\docs\4817-Shadow Pointe\video	.mp4:2
-> 2	7.79	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\brandonescobar251124	.mkv:2
-> 2	7.78	C:\QiOS_WORKING\My Drive\.private\.private\Joel	.mkv:2
-> 2	7.78	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\Joel	.mkv:2
-> 2	5.61	C:\QiOS_WORKING\My Drive\_clients\c.dss\site	.mp4:2
-> 2	4.48	C:\Users\codyr\.videoconverter\temp_source\.converter\2-combine\brandon-escobar	.mov:2
-> 2	4.48	D:\QiOS_BACKUP\apps\_converter\01_projects\brandon-escobar	.mov:2
-> 2	4.19	C:\QiOS_WORKING\My Drive\.private\.private\treve	.media:2
-> 2	4.00	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\dedrick-mesa	.mkv:2
-> 2	3.48	C:\QiOS_WORKING\My Drive\_public\videos	.mp4:2
-> 2	3.42	C:\QiOS_v1\realms\qiclients\c.mpp\site-kb\assets	.mp4:2
-> 2	3.42	C:\QiOS_v1\realms\qiclients\c.mpp\site-kb\kb-site\public\assets	.mp4:2
-> 2	2.75	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\FASTCONVERT	.media:2
-> 1	164.67	D:\QiOS_BACKUP\apps\_converter\01_projects\catracho-joven-needs-uber	.mp4:1
-> 1	60.57	C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiMind\Data_Exports\Images_Media	.mov:1
-> 1	23.03	C:\Users\codyr\vibevoice-studio\VibeVoice\demo\example	.mp4:1
-> 1	16.31	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$RVET48U.2_Life\2.30.20_EmpowerQNow713\30_MEDIA\2.30.20.32_video_raw	.mp4:1
-> 1	16.31	C:\QiOS_v1\projects\_QiLabs\QiEmpQNow\30_MEDIA\2.30.20.32_video_raw	.mp4:1
-> 1	15.92	C:\QiOS_v1\realms\qiclients\c.hee	.mp4:1
-> 1	15.92	D:\QiOS_BACKUP\realms\qiclients\c.hee	.mp4:1
-> 1	12.74	C:\QiOS_v1\realms\qivault\life\20_clinical	.mp4:1
-> 1	6.22	C:\QiOS_v1\projects\FCFCU_Case_Quartz\content\case_fcfcu_v_codyrv\2_evidence\10_supporting\10_photos_video\2025-12-17_Retrieval_Day_Camera_Driveway\10	.mp4:1
-> 1	6.22	C:\Users\codyr\OneDrive\Pictures\combined\2025-12-17_Retrieval_Day_Camera_Driveway\10	.mp4:1
-> 1	5.32	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$R0XV34P	.mp4:1
-> 1	5.17	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$RB35JNQ\imgs\recent	.mp4:1
-> 1	3.91	C:\QiOS_v1\realms\qiclients\c.mpp\assets	.mp4:1
-> 1	2.80	C:\QiOS_v1\realms\qiclients\c.dss\site	.mp4:1
-> 1	2.00	C:\Users\codyr\.videoconverter\temp_source\.converter\1-convert\dedrick-mesa	.mkv:1
-> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk	.mp4:1
-> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\site\docs\assets	.mp4:1
-> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\site\docs\media	.mp4:1
-> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g\docs\assets	.mp4:1
-> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g\docs\media	.mp4:1
-> 1	1.87	D:\QiOS_BACKUP\realms\qiclients\c.zjk	.mp4:1
-> 1	1.73	C:\Windows\ImmersiveControlPanel\SystemSettings\Assets	.mkv:1
-> 1	1.73	C:\Windows\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.1362_none_4507b0b08771951f	.mkv:1
-> 1	1.73	C:\Windows\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.4_none_e8300a7135bca517	.mkv:1
-> 1	1.73	C:\Windows.old\WINDOWS\ImmersiveControlPanel\SystemSettings\Assets	.mkv:1
-> 1	1.73	C:\Windows.old\WINDOWS\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.4_none_e8300a7135bca517	.mkv:1
-> 1	1.55	C:\QiOS_v1\realms\qivault\ideas	.mp4:1
-> 1	1.55	D:\QiOS_BACKUP\realms\qivault\ideas	.mp4:1
-> 1	1.37	D:\QiOS_BACKUP\apps\_converter\01_projects\FASTCONVERT	.media:1
-> 1	1.29	C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\Welcome	.mp4:1
-> 1	1.29	C:\Users\codyr\OneDrive\Documents\bin\build_tools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\Welcome	.mp4:1
-> 1	1.10	C:\QiOS_v1\apps\QiBP\public	.mp4:1
-> 1	1.10	D:\QiOS_BACKUP\apps\QiBP\public	.mp4:1
-> 1	1.01	C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\CopilotWalkthrough	.mp4:1
+> look at this output and tell me what shouldnt have been returned and we probably should have it return the path links to teh actual videos too. Generated: 2025-12-30T04:28:50
+
+> Roots scanned: C:\ | C:\QiOS_WORKING\My Drive | D:\
+
+> Total files seen: 1,602,596 | Matching videos: 691 | Unique folders: 100
+
+> Min size: 1,048,576 bytes
+
+> Count	Total Size (MB)	Folder (click to open)	Top Extensions
+
+> 126	1265.23	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets\video	.mp4:126
+
+> 60	99844.85	C:\QiOS_WORKING\My Drive\.private\.converter\trash\3-enhance	.mp4:60
+
+> 38	39398.24	C:\QiOS_WORKING\My Drive\.private\.converter\2-convert	.mp4:34 .avi:4
+
+> 32	24943.10	C:\QiOS_WORKING\My Drive\.private\.converter\trash\2-convert	.mkv:24 .mp4:6 .avi:2
+
+> 28	12222.39	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\2-convert	.mp4:28
+
+> 28	10879.43	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\demu	.mkv:14 .mp4:14
+
+> 28	366.27	C:\QiOS_WORKING\My Drive\_public\videos\lumara	.mp4:28
+
+> 20	9773.19	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Review for OF	.mp4:12 .mov:8
+
+> 18	36.62	C:\QiOS_WORKING\My Drive\.private\.private\videos-pg\zai	.mkv:18
+
+> 18	36.62	C:\QiOS_WORKING\My Drive\.private\.private\zai	.mkv:18
+
+> 16	6319.60	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\crisitan-raduales	.mkv:8 .mp4:8
+
+> 14	5463.75	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\jonathan-torress-nica	.mkv:10 .mp4:4
+
+> 14	5439.71	D:\QiOS_BACKUP\apps\_converter\01_projects\demu	.mkv:7 .mp4:7
+
+> 12	113.75	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\dbl-les than 72 hours	.mp4:12
+
+> 12	113.75	C:\QiOS_WORKING\My Drive\.private\.trade\luis-palacios\BDL-photos\Photos from 2022\dbl-les than 72 hours	.mp4:12
+
+> 12	113.75	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Photos from 2022	.mp4:12
+
+> 10	1111.07	C:\QiOS_WORKING\My Drive\.private\.private\treve\treve-02	.mp4:10
+
+> 9	35.12	D:\QiOS_SALVAGE\salvage_staging_20251226_194525\qiclients	.mp4:9
+
+> 8	3159.80	D:\QiOS_BACKUP\apps\_converter\01_projects\crisitan-raduales	.mp4:4 .mkv:4
+
+> 8	1519.97	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\ace-esteban	.mkv:4 .mp4:4
+
+> 8	714.26	C:\QiOS_WORKING\My Drive\.private\.converter\trash\2-convert\bdlconvert\BDL-OTHERS	.mp4:8
+
+> 8	664.12	C:\QiOS_WORKING\My Drive\.private\.private\treve\treve-01	.mp4:8
+
+> 8	18.13	C:\QiOS_WORKING\My Drive\_public\videos\ZJK	.mp4:8
+
+> 7	2731.87	D:\QiOS_BACKUP\apps\_converter\01_projects\jonathan-torress-nica	.mkv:5 .mp4:2
+
+> 4	8979.94	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\catracho-dark-badoo	.mp4:2 .mkv:2
+
+> 4	4885.84	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\dl-mexican-guy-eats	.mkv:4
+
+> 4	4199.50	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-throatgoat	.mov:4
+
+> 4	2398.84	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance	.wmv:2 .mp4:2
+
+> 4	759.98	D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban	.mp4:2 .mkv:2
+
+> 4	492.79	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-brain	.mp4:4
+
+> 4	453.55	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance\bdl-enhance\BDL-SNAPCHAT	.mp4:4
+
+> 4	453.55	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios	.mp4:4
+
+> 4	109.59	C:\QiOS_WORKING\My Drive\.private\.converter\3-enhance\bdl-enhance	.mp4:4
+
+> 4	109.59	C:\QiOS_WORKING\My Drive\.private\.trade\luis-palacios\BDL-photos\Photos from 2024	.mp4:4
+
+> 4	109.59	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\Photos from 2024	.mp4:4
+
+> 4	19.90	C:\Users\codyr\Downloads	.mp4:4
+
+> 4	9.06	C:\QiOS_v1\realms\qiclients\c.zjk\zai\03_Case_Evidence\Other	.mp4:4
+
+> 4	8.96	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\brandon-escobar	.mov:4
+
+> 4	8.96	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\brandon-escobar	.mov:4
+
+> 3	8.09	C:\Users\codyr\.videoconverter\temp_source\.converter\1-convert\dilshant convert	.mkv:3
+
+> 3	6.36	C:\QiOS_v1\realms\qiclients\c.zjk\zai\99_Unclassified	.mp4:3
+
+> 2	6331.44	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\1-combine	.mkv:2
+
+> 2	4489.97	D:\QiOS_BACKUP\apps\_converter\01_projects\catracho-dark-badoo	.mkv:1 .mp4:1
+
+> 2	2442.92	D:\QiOS_BACKUP\apps\_converter\01_projects\dl-mexican-guy-eats	.mkv:2
+
+> 2	721.93	C:\QiOS_WORKING\My Drive\.private\.trade	.mp4:2
+
+> 2	329.35	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\catracho-joven-needs-uber	.mp4:2
+
+> 2	206.92	C:\QiOS_WORKING\My Drive\.private\.converter\trash\1-combine\bdl combine\BDL-cowgirl	.mov:2
+
+> 2	33.06	C:\QiOS_WORKING\My Drive\.private\.memories\Audio\_Calls	.mp4:2
+
+> 2	32.61	C:\QiOS_WORKING\My Drive\_working\_QiLabs\QiEmpQNow\30_MEDIA\2.30.20.32_video_raw	.mp4:2
+
+> 2	12.32	C:\QiOS_WORKING\My Drive\.private\.converter\trash\3-enhance\bdl-enhance\BDL-bttom	.mp4:2
+
+> 2	12.32	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\bdl\luis-palacios\BDL-20251010	.mp4:2
+
+> 2	10.47	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets	.mp4:2
+
+> 2	10.33	C:\QiOS_WORKING\My Drive\QiOS_CANONICAL\_assets\docs\4817-Shadow Pointe\video	.mp4:2
+
+> 2	7.79	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\brandonescobar251124	.mkv:2
+
+> 2	7.78	C:\QiOS_WORKING\My Drive\.private\.private\Joel	.mkv:2
+
+> 2	7.78	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\Joel	.mkv:2
+
+> 2	5.61	C:\QiOS_WORKING\My Drive\_clients\c.dss\site	.mp4:2
+
+> 2	4.48	C:\Users\codyr\.videoconverter\temp_source\.converter\2-combine\brandon-escobar	.mov:2
+
+> 2	4.48	D:\QiOS_BACKUP\apps\_converter\01_projects\brandon-escobar	.mov:2
+
+> 2	4.19	C:\QiOS_WORKING\My Drive\.private\.private\treve	.media:2
+
+> 2	4.00	C:\QiOS_WORKING\My Drive\.private\_converter\_sort\dedrick-mesa	.mkv:2
+
+> 2	3.48	C:\QiOS_WORKING\My Drive\_public\videos	.mp4:2
+
+> 2	3.42	C:\QiOS_v1\realms\qiclients\c.mpp\site-kb\assets	.mp4:2
+
+> 2	3.42	C:\QiOS_v1\realms\qiclients\c.mpp\site-kb\kb-site\public\assets	.mp4:2
+
+> 2	2.75	C:\QiOS_WORKING\My Drive\.private\_converter\01_projects\FASTCONVERT	.media:2
+
+> 1	164.67	D:\QiOS_BACKUP\apps\_converter\01_projects\catracho-joven-needs-uber	.mp4:1
+
+> 1	60.57	C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiMind\Data_Exports\Images_Media	.mov:1
+
+> 1	23.03	C:\Users\codyr\vibevoice-studio\VibeVoice\demo\example	.mp4:1
+
+> 1	16.31	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$RVET48U.2_Life\2.30.20_EmpowerQNow713\30_MEDIA\2.30.20.32_video_raw	.mp4:1
+
+> 1	16.31	C:\QiOS_v1\projects\_QiLabs\QiEmpQNow\30_MEDIA\2.30.20.32_video_raw	.mp4:1
+
+> 1	15.92	C:\QiOS_v1\realms\qiclients\c.hee	.mp4:1
+
+> 1	15.92	D:\QiOS_BACKUP\realms\qiclients\c.hee	.mp4:1
+
+> 1	12.74	C:\QiOS_v1\realms\qivault\life\20_clinical	.mp4:1
+
+> 1	6.22	C:\QiOS_v1\projects\FCFCU_Case_Quartz\content\case_fcfcu_v_codyrv\2_evidence\10_supporting\10_photos_video\2025-12-17_Retrieval_Day_Camera_Driveway\10	.mp4:1
+
+> 1	6.22	C:\Users\codyr\OneDrive\Pictures\combined\2025-12-17_Retrieval_Day_Camera_Driveway\10	.mp4:1
+
+> 1	5.32	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$R0XV34P	.mp4:1
+
+> 1	5.17	C:\$Recycle.Bin\S-1-5-21-2681716376-355672234-3748378317-1001\$RB35JNQ\imgs\recent	.mp4:1
+
+> 1	3.91	C:\QiOS_v1\realms\qiclients\c.mpp\assets	.mp4:1
+
+> 1	2.80	C:\QiOS_v1\realms\qiclients\c.dss\site	.mp4:1
+
+> 1	2.00	C:\Users\codyr\.videoconverter\temp_source\.converter\1-convert\dedrick-mesa	.mkv:1
+
+> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk	.mp4:1
+
+> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\site\docs\assets	.mp4:1
+
+> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\site\docs\media	.mp4:1
+
+> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g\docs\assets	.mp4:1
+
+> 1	1.87	C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g\docs\media	.mp4:1
+
+> 1	1.87	D:\QiOS_BACKUP\realms\qiclients\c.zjk	.mp4:1
+
+> 1	1.73	C:\Windows\ImmersiveControlPanel\SystemSettings\Assets	.mkv:1
+
+> 1	1.73	C:\Windows\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.1362_none_4507b0b08771951f	.mkv:1
+
+> 1	1.73	C:\Windows\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.4_none_e8300a7135bca517	.mkv:1
+
+> 1	1.73	C:\Windows.old\WINDOWS\ImmersiveControlPanel\SystemSettings\Assets	.mkv:1
+
+> 1	1.73	C:\Windows.old\WINDOWS\WinSxS\amd64_microsoft-windows-i..ntrolpanel.appxmain_31bf3856ad364e35_10.0.28000.4_none_e8300a7135bca517	.mkv:1
+
+> 1	1.55	C:\QiOS_v1\realms\qivault\ideas	.mp4:1
+
+> 1	1.55	D:\QiOS_BACKUP\realms\qivault\ideas	.mp4:1
+
+> 1	1.37	D:\QiOS_BACKUP\apps\_converter\01_projects\FASTCONVERT	.media:1
+
+> 1	1.29	C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\Welcome	.mp4:1
+
+> 1	1.29	C:\Users\codyr\OneDrive\Documents\bin\build_tools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\Welcome	.mp4:1
+
+> 1	1.10	C:\QiOS_v1\apps\QiBP\public	.mp4:1
+
+> 1	1.10	D:\QiOS_BACKUP\apps\QiBP\public	.mp4:1
+
+> 1	1.01	C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\CopilotWalkthrough	.mp4:1
+
 > 1	1.01	C:\Users\codyr\OneDrive\Documents\bin\build_tools\Common7\IDE\CommonExtensions\Platform\Guide\Content\Images\CopilotWalkthrough	.mp4:1
 
 ### Assistant
@@ -2085,357 +2226,708 @@ canonical_ref: ""
 > - thread-pooled hashing for candidates only
 
 ### User
-> yes i love the restart with the sql, this makes sense why rescan unless we not changes were made. 4 workers, right now it wasnt the gdrive so it should have been slow, here is the current code please make the updates like we discussed and implement optimization where it adds value. import os
-> import sys
-> import json
-> import csv
-> import html
-> import re
-> import urllib.parse
-> from collections import defaultdict
-> from datetime import datetime
-> 
-> # -----------------------------
-> # CONFIG
-> # -----------------------------
-> 
-> SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-> 
-> VIDEO_EXTS = {
->     ".mp4", ".mov", ".avi", ".mkv", ".wmv", ".m4v", ".mpeg", ".mpg", ".media"
-> }
-> 
-> # Keep legit small videos: 1MB minimum
-> MIN_BYTES = 1 * 1024 * 1024  # 1MB
-> 
-> # Exclude by path segments (case-insensitive). Does NOT exclude dot-folders.
-> EXCLUDE_SEGMENTS = {
->     r"\windows\\",
->     r"\program files\\",
->     r"\program files (x86)\\",
->     r"\programdata\\",
->     r"\appdata\\",
->     r"\system volume information\\",
->     r"\$recycle.bin\\",
->     r"\recovery\\",
-> }
-> 
-> # IMPORTANT: no raw strings ending with a single backslash
-> DEFAULT_ROOTS = [
->     "C:\\",                       # optional; script will ask if you want "global"
->     r"C:\QiOS_WORKING\My Drive",  # your Google Drive local folder
->     "D:\\",                       # your USB drive
-> ]
-> 
-> # -----------------------------
-> # HELPERS
-> # -----------------------------
-> 
-> def norm_path_lower(p: str) -> str:
->     p = p.replace("/", "\\").lower()
->     if not p.endswith("\\"):
->         p += "\\"
->     return p
-> 
-> def is_excluded_path(path_lower: str) -> bool:
->     p = norm_path_lower(path_lower)
->     return any(seg in p for seg in EXCLUDE_SEGMENTS)
-> 
-> def file_url_from_path(folder_path: str) -> str:
->     # Windows path -> file:///C:/...
->     p = folder_path.replace("\\", "/")
->     if len(p) >= 2 and p[1] == ":":
->         p = "/" + p
->     return "file://" + urllib.parse.quote(p)
-> 
-> def safe_walk(root: str):
->     for dirpath, dirnames, filenames in os.walk(root, topdown=True):
->         dp_lower = dirpath.lower()
-> 
->         # Skip excluded directories entirely
->         if is_excluded_path(dp_lower):
->             dirnames[:] = []
->             continue
-> 
->         # Prune excluded children
->         kept = []
->         for d in dirnames:
->             child = os.path.join(dirpath, d).lower()
->             if not is_excluded_path(child):
->                 kept.append(d)
->         dirnames[:] = kept
-> 
->         yield dirpath, filenames
-> 
-> def discover_existing_roots(roots):
->     existing = []
->     for r in roots:
->         if r and os.path.exists(r):
->             existing.append(r)
-> 
->     # de-dupe while preserving order
->     seen = set()
->     uniq = []
->     for r in existing:
->         key = os.path.normcase(os.path.abspath(r))
->         if key not in seen:
->             seen.add(key)
->             uniq.append(r)
->     return uniq
-> 
-> def prompt_yes_no(msg: str, default_yes: bool = True) -> bool:
->     default = "Y/n" if default_yes else "y/N"
->     while True:
->         ans = input(f"{msg} ({default}): ").strip().lower()
->         if not ans:
->             return default_yes
->         if ans in ("y", "yes"):
->             return True
->         if ans in ("n", "no"):
->             return False
->         print("Please answer y or n.")
-> 
-> def choose_roots(roots):
->     print("\nAvailable roots:")
->     for i, r in enumerate(roots, start=1):
->         print(f"  {i}) {r}")
-> 
->     print("\nEnter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.")
->     ans = input("Selection: ").strip()
->     if not ans:
->         return roots
-> 
->     idxs = []
->     for part in ans.split(","):
->         part = part.strip()
->         if not part:
->             continue
->         if not part.isdigit():
->             continue
->         idx = int(part)
->         if 1 <= idx <= len(roots):
->             idxs.append(idx - 1)
-> 
->     selected = [roots[i] for i in sorted(set(idxs))]
->     return selected if selected else roots
-> 
-> def build_name_filter():
->     """
->     Prompts user for optional fuzzy filename filters.
->     Returns a function(name:str)->bool
->     """
->     use_filters = prompt_yes_no("Do you want to enable filename fuzzy filters?", default_yes=False)
->     if not use_filters:
->         audit = {"enabled": False, "logic": None}
->         print("\n[filter audit] " + json.dumps(audit))
->         return (lambda _name: True), audit
-> 
->     print("\nFilename fuzzy filters available:")
->     print("  1) Contains 'T' anywhere")
->     print("  2) Contains 'TT' (two or more T's in a row)")
->     print("  3) Contains 646 OR '6 4 6' (digits separated by anything)")
->     print("  4) Custom 'contains' terms (you type them)")
-> 
->     use_contains_T = prompt_yes_no("Filter: require 'T' anywhere in filename?", default_yes=False)
->     use_T_repeat = prompt_yes_no("Filter: require 'TT' (T repeated 2+ times) in filename?", default_yes=False)
->     use_646 = prompt_yes_no("Filter: require 646 / 6 4 6 pattern in filename?", default_yes=False)
-> 
->     custom_terms = []
->     if prompt_yes_no("Add custom 'contains' terms?", default_yes=False):
->         raw = input("Enter terms separated by commas (example: court, hallway, cam2): ").strip()
->         custom_terms = [t.strip() for t in raw.split(",") if t.strip()]
-> 
->     # Compile regexes once
->     re_T_repeat = re.compile(r"T{2,}", re.IGNORECASE)
->     re_646 = re.compile(r"6\D*4\D*6")
-> 
->     def matches(name: str) -> bool:
->         base = os.path.basename(name)
->         b = base.lower()
->         rules = []
->         if use_contains_T:
->             rules.append("t" in b)
->         if use_T_repeat:
->             rules.append(re_T_repeat.search(base) is not None)
->         if use_646:
->             rules.append(re_646.search(base) is not None)
->         if custom_terms:
->             rules.append(any(term.lower() in b for term in custom_terms))
->         return any(rules)
->         # Build an audit object so we can prove what's enabled
->     audit = {
->         "enabled": True,
->         "use_contains_T": use_contains_T,
->         "use_T_repeat": use_T_repeat,
->         "use_646": use_646,
->         "custom_terms": custom_terms,
->         "logic": "OR"
->     }
->     print("\n[filter audit] " + json.dumps(audit, ensure_ascii=False))
-> 
->     return matches, audit
-> 
-> # -----------------------------
-> # MAIN
-> # -----------------------------
-> 
-> def main():
->     roots_all = discover_existing_roots(DEFAULT_ROOTS)
->     if not roots_all:
->         print("No valid roots found. Edit DEFAULT_ROOTS in the script.")
->         sys.exit(1)
-> 
->     # "Global" vs selective
->     # Interpret "global" as scanning ALL available roots (including C:\)
->     scan_global = prompt_yes_no("Scan GLOBAL (all roots listed)?", default_yes=True)
->     roots = roots_all if scan_global else choose_roots(roots_all)
-> 
->     name_filter, filter_audit = build_name_filter()
-> 
-> 
->     print("\nScanning roots:")
->     for r in roots:
->         print(" -", r)
->     print(f"Extensions: {', '.join(sorted(VIDEO_EXTS))}")
->     print(f"Minimum size: {MIN_BYTES:,} bytes ({MIN_BYTES / (1024*1024):.1f} MB)\n")
-> 
->     folder_counts = defaultdict(int)
->     folder_sizes = defaultdict(int)
->     folder_exts = defaultdict(lambda: defaultdict(int))
-> 
->     total_files = 0
->     matched_files = 0
->     skipped_by_name = 0
->     skipped_by_size = 0
->     skipped_by_ext = 0
->     ext_seen = defaultdict(int)
->     rejected_samples = []  # collect a few examples
-> 
->     for root in roots:
->         for dirpath, filenames in safe_walk(root):
->             for fname in filenames:
->                 total_files += 1
->                 ext = os.path.splitext(fname)[1].lower()
->                 ext_seen[ext] += 1
-> 
->                 if ext not in VIDEO_EXTS:
->                     skipped_by_ext += 1
->                     continue
-> 
->                 if not name_filter(fname):
->                     skipped_by_name += 1
->                     if len(rejected_samples) < 25:
->                         rejected_samples.append(os.path.join(dirpath, fname))
->                     continue
-> 
->                 fullpath = os.path.join(dirpath, fname)
->                 try:
->                     size = os.path.getsize(fullpath)
->                 except OSError:
->                     continue
-> 
->                 if size < MIN_BYTES:
->                     skipped_by_size += 1
->                     if len(rejected_samples) < 25:
->                         rejected_samples.append(fullpath + f" (size={size})")
->                     continue
-> 
-> 
->                 matched_files += 1
->                 folder_counts[dirpath] += 1
->                 folder_sizes[dirpath] += size
->                 folder_exts[dirpath][ext] += 1
-> 
->     rows = sorted(
->         folder_counts.keys(),
->         key=lambda p: (folder_counts[p], folder_sizes[p]),
->         reverse=True
->     )
-> 
->     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
->     out_csv = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.csv")
->     out_html = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.html")
-> 
->     # -----------------------------
->     # POST-SCAN DEBUG / AUDIT
->     # -----------------------------
-> 
->     print("\n[scan summary]")
->     print(f"  total_files_seen: {total_files:,}")
->     print(f"  matched_files:    {matched_files:,}")
->     print(f"  skipped_by_name:  {skipped_by_name:,}")
->     print(f"  skipped_by_size:  {skipped_by_size:,}")
->     print(f"  skipped_by_ext:   {skipped_by_ext:,}")
-> 
->     top_exts = sorted(ext_seen.items(), key=lambda kv: kv[1], reverse=True)[:10]
->     print("  top_extensions_seen:", dict(top_exts))
-> 
->     if rejected_samples:
->         print("\n[rejected samples] (first 25)")
->         for s in rejected_samples[:25]:
->             print("  -", s)
->     else:
->         print("\n[rejected samples] none")
-> 
-> 
->     # CSV
->     with open(out_csv, "w", newline="", encoding="utf-8") as f:
->         w = csv.writer(f)
->         w.writerow(["count", "total_bytes", "folder_path", "folder_link", "top_extensions"])
->         for folder in rows:
->             exts_sorted = sorted(folder_exts[folder].items(), key=lambda kv: kv[1], reverse=True)
->             top_exts = " ".join([f"{k}:{v}" for k, v in exts_sorted[:10]])
->             w.writerow([
->                 folder_counts[folder],
->                 folder_sizes[folder],
->                 folder,
->                 file_url_from_path(folder),
->                 top_exts
->             ])
-> 
->     # HTML (clickable folder links)
->     with open(out_html, "w", encoding="utf-8") as f:
->         f.write("<!doctype html><html><head><meta charset='utf-8'>")
->         f.write("<title>Video Folder Index</title>")
->         f.write("<style>")
->         f.write("body{font-family:Segoe UI,Arial,sans-serif;margin:24px}")
->         f.write("table{border-collapse:collapse;width:100%}")
->         f.write("th,td{border-bottom:1px solid #ddd;padding:8px;vertical-align:top}")
->         f.write("th{text-align:left;position:sticky;top:0;background:#f6f6f6}")
->         f.write("tr:hover{background:#fafafa}")
->         f.write(".muted{color:#666;font-size:12px}")
->         f.write("</style></head><body>")
->         f.write("<h1>Video Folder Index</h1>")
->         f.write(f"<div class='muted'>Generated: {html.escape(datetime.now().isoformat(timespec='seconds'))}</div>")
->         f.write(f"<div class='muted'>Roots scanned: {html.escape(' | '.join(roots))}</div>")
->         f.write(f"<div class='muted'>Total files seen: {total_files:,} | Matching videos: {matched_files:,} | Unique folders: {len(rows):,}</div>")
->         f.write(f"<div class='muted'>Min size: {MIN_BYTES:,} bytes</div>")
->         f.write("<hr>")
->         f.write("<table><thead><tr>")
->         f.write("<th>Count</th><th>Total Size (MB)</th><th>Folder (click to open)</th><th>Top Extensions</th>")
->         f.write("</tr></thead><tbody>")
-> 
->         for folder in rows:
->             url = file_url_from_path(folder)
->             size_mb = folder_sizes[folder] / (1024 * 1024)
->             exts_sorted = sorted(folder_exts[folder].items(), key=lambda kv: kv[1], reverse=True)
->             top_exts = " ".join([f"{k}:{v}" for k, v in exts_sorted[:10]])
-> 
->             f.write("<tr>")
->             f.write(f"<td>{folder_counts[folder]}</td>")
->             f.write(f"<td>{size_mb:.2f}</td>")
->             f.write(f"<td><a href='{url}'>{html.escape(folder)}</a></td>")
->             f.write(f"<td>{html.escape(top_exts)}</td>")
->             f.write("</tr>")
-> 
->         f.write("</tbody></table></body></html>")
-> 
->     print("Done.\n")
->     print("CSV :", os.path.abspath(out_csv))
->     print("HTML:", os.path.abspath(out_html))
->     print("\nOpen the HTML file in your browser; click a folder link to open it in File Explorer.")
-> 
-> if __name__ == "__main__":
+> yes i love the restart with the sql, this makes sense why rescan unless we not changes were made. 4 workers, right now it wasnt the gdrive so it should have been slow, here is the current code please make the updates like we discussed and implement optimization where it adds value. import os
+
+> import sys
+
+> import json
+
+> import csv
+
+> import html
+
+> import re
+
+> import urllib.parse
+
+> from collections import defaultdict
+
+> from datetime import datetime
+
+> 
+
+> # -----------------------------
+
+> # CONFIG
+
+> # -----------------------------
+
+> 
+
+> SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+> 
+
+> VIDEO_EXTS = {
+
+>     ".mp4", ".mov", ".avi", ".mkv", ".wmv", ".m4v", ".mpeg", ".mpg", ".media"
+
+> }
+
+> 
+
+> # Keep legit small videos: 1MB minimum
+
+> MIN_BYTES = 1 * 1024 * 1024  # 1MB
+
+> 
+
+> # Exclude by path segments (case-insensitive). Does NOT exclude dot-folders.
+
+> EXCLUDE_SEGMENTS = {
+
+>     r"\windows\\",
+
+>     r"\program files\\",
+
+>     r"\program files (x86)\\",
+
+>     r"\programdata\\",
+
+>     r"\appdata\\",
+
+>     r"\system volume information\\",
+
+>     r"\$recycle.bin\\",
+
+>     r"\recovery\\",
+
+> }
+
+> 
+
+> # IMPORTANT: no raw strings ending with a single backslash
+
+> DEFAULT_ROOTS = [
+
+>     "C:\\",                       # optional; script will ask if you want "global"
+
+>     r"C:\QiOS_WORKING\My Drive",  # your Google Drive local folder
+
+>     "D:\\",                       # your USB drive
+
+> ]
+
+> 
+
+> # -----------------------------
+
+> # HELPERS
+
+> # -----------------------------
+
+> 
+
+> def norm_path_lower(p: str) -> str:
+
+>     p = p.replace("/", "\\").lower()
+
+>     if not p.endswith("\\"):
+
+>         p += "\\"
+
+>     return p
+
+> 
+
+> def is_excluded_path(path_lower: str) -> bool:
+
+>     p = norm_path_lower(path_lower)
+
+>     return any(seg in p for seg in EXCLUDE_SEGMENTS)
+
+> 
+
+> def file_url_from_path(folder_path: str) -> str:
+
+>     # Windows path -> file:///C:/...
+
+>     p = folder_path.replace("\\", "/")
+
+>     if len(p) >= 2 and p[1] == ":":
+
+>         p = "/" + p
+
+>     return "file://" + urllib.parse.quote(p)
+
+> 
+
+> def safe_walk(root: str):
+
+>     for dirpath, dirnames, filenames in os.walk(root, topdown=True):
+
+>         dp_lower = dirpath.lower()
+
+> 
+
+>         # Skip excluded directories entirely
+
+>         if is_excluded_path(dp_lower):
+
+>             dirnames[:] = []
+
+>             continue
+
+> 
+
+>         # Prune excluded children
+
+>         kept = []
+
+>         for d in dirnames:
+
+>             child = os.path.join(dirpath, d).lower()
+
+>             if not is_excluded_path(child):
+
+>                 kept.append(d)
+
+>         dirnames[:] = kept
+
+> 
+
+>         yield dirpath, filenames
+
+> 
+
+> def discover_existing_roots(roots):
+
+>     existing = []
+
+>     for r in roots:
+
+>         if r and os.path.exists(r):
+
+>             existing.append(r)
+
+> 
+
+>     # de-dupe while preserving order
+
+>     seen = set()
+
+>     uniq = []
+
+>     for r in existing:
+
+>         key = os.path.normcase(os.path.abspath(r))
+
+>         if key not in seen:
+
+>             seen.add(key)
+
+>             uniq.append(r)
+
+>     return uniq
+
+> 
+
+> def prompt_yes_no(msg: str, default_yes: bool = True) -> bool:
+
+>     default = "Y/n" if default_yes else "y/N"
+
+>     while True:
+
+>         ans = input(f"{msg} ({default}): ").strip().lower()
+
+>         if not ans:
+
+>             return default_yes
+
+>         if ans in ("y", "yes"):
+
+>             return True
+
+>         if ans in ("n", "no"):
+
+>             return False
+
+>         print("Please answer y or n.")
+
+> 
+
+> def choose_roots(roots):
+
+>     print("\nAvailable roots:")
+
+>     for i, r in enumerate(roots, start=1):
+
+>         print(f"  {i}) {r}")
+
+> 
+
+>     print("\nEnter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.")
+
+>     ans = input("Selection: ").strip()
+
+>     if not ans:
+
+>         return roots
+
+> 
+
+>     idxs = []
+
+>     for part in ans.split(","):
+
+>         part = part.strip()
+
+>         if not part:
+
+>             continue
+
+>         if not part.isdigit():
+
+>             continue
+
+>         idx = int(part)
+
+>         if 1 <= idx <= len(roots):
+
+>             idxs.append(idx - 1)
+
+> 
+
+>     selected = [roots[i] for i in sorted(set(idxs))]
+
+>     return selected if selected else roots
+
+> 
+
+> def build_name_filter():
+
+>     """
+
+>     Prompts user for optional fuzzy filename filters.
+
+>     Returns a function(name:str)->bool
+
+>     """
+
+>     use_filters = prompt_yes_no("Do you want to enable filename fuzzy filters?", default_yes=False)
+
+>     if not use_filters:
+
+>         audit = {"enabled": False, "logic": None}
+
+>         print("\n[filter audit] " + json.dumps(audit))
+
+>         return (lambda _name: True), audit
+
+> 
+
+>     print("\nFilename fuzzy filters available:")
+
+>     print("  1) Contains 'T' anywhere")
+
+>     print("  2) Contains 'TT' (two or more T's in a row)")
+
+>     print("  3) Contains 646 OR '6 4 6' (digits separated by anything)")
+
+>     print("  4) Custom 'contains' terms (you type them)")
+
+> 
+
+>     use_contains_T = prompt_yes_no("Filter: require 'T' anywhere in filename?", default_yes=False)
+
+>     use_T_repeat = prompt_yes_no("Filter: require 'TT' (T repeated 2+ times) in filename?", default_yes=False)
+
+>     use_646 = prompt_yes_no("Filter: require 646 / 6 4 6 pattern in filename?", default_yes=False)
+
+> 
+
+>     custom_terms = []
+
+>     if prompt_yes_no("Add custom 'contains' terms?", default_yes=False):
+
+>         raw = input("Enter terms separated by commas (example: court, hallway, cam2): ").strip()
+
+>         custom_terms = [t.strip() for t in raw.split(",") if t.strip()]
+
+> 
+
+>     # Compile regexes once
+
+>     re_T_repeat = re.compile(r"T{2,}", re.IGNORECASE)
+
+>     re_646 = re.compile(r"6\D*4\D*6")
+
+> 
+
+>     def matches(name: str) -> bool:
+
+>         base = os.path.basename(name)
+
+>         b = base.lower()
+
+>         rules = []
+
+>         if use_contains_T:
+
+>             rules.append("t" in b)
+
+>         if use_T_repeat:
+
+>             rules.append(re_T_repeat.search(base) is not None)
+
+>         if use_646:
+
+>             rules.append(re_646.search(base) is not None)
+
+>         if custom_terms:
+
+>             rules.append(any(term.lower() in b for term in custom_terms))
+
+>         return any(rules)
+
+>         # Build an audit object so we can prove what's enabled
+
+>     audit = {
+
+>         "enabled": True,
+
+>         "use_contains_T": use_contains_T,
+
+>         "use_T_repeat": use_T_repeat,
+
+>         "use_646": use_646,
+
+>         "custom_terms": custom_terms,
+
+>         "logic": "OR"
+
+>     }
+
+>     print("\n[filter audit] " + json.dumps(audit, ensure_ascii=False))
+
+> 
+
+>     return matches, audit
+
+> 
+
+> # -----------------------------
+
+> # MAIN
+
+> # -----------------------------
+
+> 
+
+> def main():
+
+>     roots_all = discover_existing_roots(DEFAULT_ROOTS)
+
+>     if not roots_all:
+
+>         print("No valid roots found. Edit DEFAULT_ROOTS in the script.")
+
+>         sys.exit(1)
+
+> 
+
+>     # "Global" vs selective
+
+>     # Interpret "global" as scanning ALL available roots (including C:\)
+
+>     scan_global = prompt_yes_no("Scan GLOBAL (all roots listed)?", default_yes=True)
+
+>     roots = roots_all if scan_global else choose_roots(roots_all)
+
+> 
+
+>     name_filter, filter_audit = build_name_filter()
+
+> 
+
+> 
+
+>     print("\nScanning roots:")
+
+>     for r in roots:
+
+>         print(" -", r)
+
+>     print(f"Extensions: {', '.join(sorted(VIDEO_EXTS))}")
+
+>     print(f"Minimum size: {MIN_BYTES:,} bytes ({MIN_BYTES / (1024*1024):.1f} MB)\n")
+
+> 
+
+>     folder_counts = defaultdict(int)
+
+>     folder_sizes = defaultdict(int)
+
+>     folder_exts = defaultdict(lambda: defaultdict(int))
+
+> 
+
+>     total_files = 0
+
+>     matched_files = 0
+
+>     skipped_by_name = 0
+
+>     skipped_by_size = 0
+
+>     skipped_by_ext = 0
+
+>     ext_seen = defaultdict(int)
+
+>     rejected_samples = []  # collect a few examples
+
+> 
+
+>     for root in roots:
+
+>         for dirpath, filenames in safe_walk(root):
+
+>             for fname in filenames:
+
+>                 total_files += 1
+
+>                 ext = os.path.splitext(fname)[1].lower()
+
+>                 ext_seen[ext] += 1
+
+> 
+
+>                 if ext not in VIDEO_EXTS:
+
+>                     skipped_by_ext += 1
+
+>                     continue
+
+> 
+
+>                 if not name_filter(fname):
+
+>                     skipped_by_name += 1
+
+>                     if len(rejected_samples) < 25:
+
+>                         rejected_samples.append(os.path.join(dirpath, fname))
+
+>                     continue
+
+> 
+
+>                 fullpath = os.path.join(dirpath, fname)
+
+>                 try:
+
+>                     size = os.path.getsize(fullpath)
+
+>                 except OSError:
+
+>                     continue
+
+> 
+
+>                 if size < MIN_BYTES:
+
+>                     skipped_by_size += 1
+
+>                     if len(rejected_samples) < 25:
+
+>                         rejected_samples.append(fullpath + f" (size={size})")
+
+>                     continue
+
+> 
+
+> 
+
+>                 matched_files += 1
+
+>                 folder_counts[dirpath] += 1
+
+>                 folder_sizes[dirpath] += size
+
+>                 folder_exts[dirpath][ext] += 1
+
+> 
+
+>     rows = sorted(
+
+>         folder_counts.keys(),
+
+>         key=lambda p: (folder_counts[p], folder_sizes[p]),
+
+>         reverse=True
+
+>     )
+
+> 
+
+>     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+>     out_csv = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.csv")
+
+>     out_html = os.path.join(SCRIPT_DIR, f"video_folders_{ts}.html")
+
+> 
+
+>     # -----------------------------
+
+>     # POST-SCAN DEBUG / AUDIT
+
+>     # -----------------------------
+
+> 
+
+>     print("\n[scan summary]")
+
+>     print(f"  total_files_seen: {total_files:,}")
+
+>     print(f"  matched_files:    {matched_files:,}")
+
+>     print(f"  skipped_by_name:  {skipped_by_name:,}")
+
+>     print(f"  skipped_by_size:  {skipped_by_size:,}")
+
+>     print(f"  skipped_by_ext:   {skipped_by_ext:,}")
+
+> 
+
+>     top_exts = sorted(ext_seen.items(), key=lambda kv: kv[1], reverse=True)[:10]
+
+>     print("  top_extensions_seen:", dict(top_exts))
+
+> 
+
+>     if rejected_samples:
+
+>         print("\n[rejected samples] (first 25)")
+
+>         for s in rejected_samples[:25]:
+
+>             print("  -", s)
+
+>     else:
+
+>         print("\n[rejected samples] none")
+
+> 
+
+> 
+
+>     # CSV
+
+>     with open(out_csv, "w", newline="", encoding="utf-8") as f:
+
+>         w = csv.writer(f)
+
+>         w.writerow(["count", "total_bytes", "folder_path", "folder_link", "top_extensions"])
+
+>         for folder in rows:
+
+>             exts_sorted = sorted(folder_exts[folder].items(), key=lambda kv: kv[1], reverse=True)
+
+>             top_exts = " ".join([f"{k}:{v}" for k, v in exts_sorted[:10]])
+
+>             w.writerow([
+
+>                 folder_counts[folder],
+
+>                 folder_sizes[folder],
+
+>                 folder,
+
+>                 file_url_from_path(folder),
+
+>                 top_exts
+
+>             ])
+
+> 
+
+>     # HTML (clickable folder links)
+
+>     with open(out_html, "w", encoding="utf-8") as f:
+
+>         f.write("<!doctype html><html><head><meta charset='utf-8'>")
+
+>         f.write("<title>Video Folder Index</title>")
+
+>         f.write("<style>")
+
+>         f.write("body{font-family:Segoe UI,Arial,sans-serif;margin:24px}")
+
+>         f.write("table{border-collapse:collapse;width:100%}")
+
+>         f.write("th,td{border-bottom:1px solid #ddd;padding:8px;vertical-align:top}")
+
+>         f.write("th{text-align:left;position:sticky;top:0;background:#f6f6f6}")
+
+>         f.write("tr:hover{background:#fafafa}")
+
+>         f.write(".muted{color:#666;font-size:12px}")
+
+>         f.write("</style></head><body>")
+
+>         f.write("<h1>Video Folder Index</h1>")
+
+>         f.write(f"<div class='muted'>Generated: {html.escape(datetime.now().isoformat(timespec='seconds'))}</div>")
+
+>         f.write(f"<div class='muted'>Roots scanned: {html.escape(' | '.join(roots))}</div>")
+
+>         f.write(f"<div class='muted'>Total files seen: {total_files:,} | Matching videos: {matched_files:,} | Unique folders: {len(rows):,}</div>")
+
+>         f.write(f"<div class='muted'>Min size: {MIN_BYTES:,} bytes</div>")
+
+>         f.write("<hr>")
+
+>         f.write("<table><thead><tr>")
+
+>         f.write("<th>Count</th><th>Total Size (MB)</th><th>Folder (click to open)</th><th>Top Extensions</th>")
+
+>         f.write("</tr></thead><tbody>")
+
+> 
+
+>         for folder in rows:
+
+>             url = file_url_from_path(folder)
+
+>             size_mb = folder_sizes[folder] / (1024 * 1024)
+
+>             exts_sorted = sorted(folder_exts[folder].items(), key=lambda kv: kv[1], reverse=True)
+
+>             top_exts = " ".join([f"{k}:{v}" for k, v in exts_sorted[:10]])
+
+> 
+
+>             f.write("<tr>")
+
+>             f.write(f"<td>{folder_counts[folder]}</td>")
+
+>             f.write(f"<td>{size_mb:.2f}</td>")
+
+>             f.write(f"<td><a href='{url}'>{html.escape(folder)}</a></td>")
+
+>             f.write(f"<td>{html.escape(top_exts)}</td>")
+
+>             f.write("</tr>")
+
+> 
+
+>         f.write("</tbody></table></body></html>")
+
+> 
+
+>     print("Done.\n")
+
+>     print("CSV :", os.path.abspath(out_csv))
+
+>     print("HTML:", os.path.abspath(out_html))
+
+>     print("\nOpen the HTML file in your browser; click a folder link to open it in File Explorer.")
+
+> 
+
+> if __name__ == "__main__":
+
 >     main()
 
 ### Assistant
@@ -3485,82 +3977,158 @@ canonical_ref: ""
 > I’ll tell you exactly when dedupe flips from “waste of time” to “high ROI.”
 
 ### User
-> heres waht happened. and it was fast to but i dont know if it worked right. PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER> python video_finder_sqllite.py
-> Scan GLOBAL (all roots listed)? (Y/n): n
-> 
-> Available roots:
->   1) C:\
->   2) C:\QiOS_WORKING\My Drive
->   3) D:\
-> 
-> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
-> Selection: 3
-> Do you want to enable filename fuzzy filters? (y/N): y
-> 
-> Filename fuzzy filters available:
->   1) Contains 'T' anywhere
->   2) Contains 'TT' (two or more T's in a row)
->   3) Contains 646 OR '6 4 6' (digits separated by anything)
->   4) Custom 'contains' terms (you type them)
-> Filter: match 'T' anywhere in filename? (y/N): n
-> Filter: match 'TT' (T repeated 2+ times) in filename? (y/N): y
-> Filter: match 646 / 6 4 6 pattern in filename? (y/N): y
-> Add custom 'contains' terms? (y/N): y
-> Enter terms separated by commas (example: court, hallway, cam2): treve, trevesin, tre
-> 
-> [filter audit] {"enabled": true, "use_contains_T": false, "use_T_repeat": true, "use_646": true, "custom_terms": ["treve", "trevesin", "tre"], "logic": "OR"}
-> 
-> Scanning roots:
->  - D:\
-> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
-> Minimum size: 1,048,576 bytes (1.0 MB)
-> DB: C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_index.sqlite3
-> Checkpoint: prompt every ~10 GB of matched video
-> 
-> 
-> [scan summary]
->   total_files_seen: 16,129
->   matched_files:    1
->   matched_gb:       0.00
->   skipped_by_name:  8,654
->   skipped_by_size:  32
->   skipped_by_ext:   7,442
->   top_extensions_seen: {'.media': 7959, '.md': 2485, '': 925, '.pdf': 684, '.html': 486, '.mp4': 453, '.json': 290, '.csv': 286, '.jpg': 265, '.jpeg': 250}
-> 
-> [rejected samples] (first 25)
->   - D:\QiOS_BACKUP\sites\qially-com-v2.0\images\video-logo.mp4
->   - D:\QiOS_BACKUP\realms\qiclients\c.zjk\zjkintrovideo_3.mp4
->   - D:\QiOS_BACKUP\realms\qiclients\c.hee\Solving_Back_Taxes__Case_Study.mp4
->   - D:\QiOS_BACKUP\realms\qivault\ideas\childhooddream.mp4
->   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (2).mp4
->   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (3).mp4
->   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (4).mp4
->   - D:\QiOS_BACKUP\realms\qivault\ideas\projects.mp4
->   - D:\QiOS_BACKUP\apps\QiBP\public\introvideo.mp4
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_01.mp4
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\fabian.mp4
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_02.mp4
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\julianfb.mp4
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_01.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_02.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-32-28_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-31-48_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-35-28_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-33-08_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-36-01_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-33-40_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-37-25_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-38-07_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-41-37_2m.mkv
->   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-38-41_2m.mkv
-> 
-> Run duplicate detection (hashing) now? (Y/n): n
-> 
-> Reports:
->   Folder CSV : C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folders_20251230_045331.csv
->   Folder HTML: C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folders_20251230_045331.html
-> 
-> Done.
+> heres waht happened. and it was fast to but i dont know if it worked right. PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER> python video_finder_sqllite.py
+
+> Scan GLOBAL (all roots listed)? (Y/n): n
+
+> 
+
+> Available roots:
+
+>   1) C:\
+
+>   2) C:\QiOS_WORKING\My Drive
+
+>   3) D:\
+
+> 
+
+> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
+
+> Selection: 3
+
+> Do you want to enable filename fuzzy filters? (y/N): y
+
+> 
+
+> Filename fuzzy filters available:
+
+>   1) Contains 'T' anywhere
+
+>   2) Contains 'TT' (two or more T's in a row)
+
+>   3) Contains 646 OR '6 4 6' (digits separated by anything)
+
+>   4) Custom 'contains' terms (you type them)
+
+> Filter: match 'T' anywhere in filename? (y/N): n
+
+> Filter: match 'TT' (T repeated 2+ times) in filename? (y/N): y
+
+> Filter: match 646 / 6 4 6 pattern in filename? (y/N): y
+
+> Add custom 'contains' terms? (y/N): y
+
+> Enter terms separated by commas (example: court, hallway, cam2): treve, trevesin, tre
+
+> 
+
+> [filter audit] {"enabled": true, "use_contains_T": false, "use_T_repeat": true, "use_646": true, "custom_terms": ["treve", "trevesin", "tre"], "logic": "OR"}
+
+> 
+
+> Scanning roots:
+
+>  - D:\
+
+> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
+
+> Minimum size: 1,048,576 bytes (1.0 MB)
+
+> DB: C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_index.sqlite3
+
+> Checkpoint: prompt every ~10 GB of matched video
+
+> 
+
+> 
+
+> [scan summary]
+
+>   total_files_seen: 16,129
+
+>   matched_files:    1
+
+>   matched_gb:       0.00
+
+>   skipped_by_name:  8,654
+
+>   skipped_by_size:  32
+
+>   skipped_by_ext:   7,442
+
+>   top_extensions_seen: {'.media': 7959, '.md': 2485, '': 925, '.pdf': 684, '.html': 486, '.mp4': 453, '.json': 290, '.csv': 286, '.jpg': 265, '.jpeg': 250}
+
+> 
+
+> [rejected samples] (first 25)
+
+>   - D:\QiOS_BACKUP\sites\qially-com-v2.0\images\video-logo.mp4
+
+>   - D:\QiOS_BACKUP\realms\qiclients\c.zjk\zjkintrovideo_3.mp4
+
+>   - D:\QiOS_BACKUP\realms\qiclients\c.hee\Solving_Back_Taxes__Case_Study.mp4
+
+>   - D:\QiOS_BACKUP\realms\qivault\ideas\childhooddream.mp4
+
+>   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (2).mp4
+
+>   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (3).mp4
+
+>   - D:\QiOS_BACKUP\realms\qivault\ideas\projects (4).mp4
+
+>   - D:\QiOS_BACKUP\realms\qivault\ideas\projects.mp4
+
+>   - D:\QiOS_BACKUP\apps\QiBP\public\introvideo.mp4
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_01.mp4
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\fabian.mp4
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_02.mp4
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\julianfb.mp4
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_01.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\ace-esteban\ace-esteban_2025-08-20_02.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-32-28_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-31-48_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-35-28_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-33-08_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-36-01_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-33-40_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-37-25_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-38-07_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-41-37_2m.mkv
+
+>   - D:\QiOS_BACKUP\apps\_converter\01_projects\alfredo-suarez\20-38-41_2m.mkv
+
+> 
+
+> Run duplicate detection (hashing) now? (Y/n): n
+
+> 
+
+> Reports:
+
+>   Folder CSV : C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folders_20251230_045331.csv
+
+>   Folder HTML: C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_folders_20251230_045331.html
+
+> 
+
+> Done.
+
 > PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER>
 
 ### Assistant
@@ -3985,40 +4553,74 @@ canonical_ref: ""
 > If you paste the next `[scan summary]` after this change, I’ll tell you whether your noise level is acceptable or if we should tighten (e.g., word-boundaries for short terms like “trev”).
 
 ### User
-> PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER> & C:/Users/codyr/AppData/Local/Python/bin/python.exe "c:/QiOS_WORKING/My Drive/_working/VIDEO-FINDER/video_finder_sqllite.py"
-> Scan GLOBAL (all roots listed)? (Y/n): n
-> 
-> Available roots:
->   1) C:\
->   2) C:\QiOS_WORKING\My Drive
->   3) D:\
-> 
-> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
-> Selection: 3
-> Enable path fuzzy filters (recommended)? (Y/n): y
-> Enter terms (comma-separated). Example: tre, trev, treve, trevesin, miguel, manuel, isai, chicano, thug: trev, treve, trevesin, miguel, manuel, isai, chicano, thug
-> Enable leetspeak normalization (e.g., m1gu3l, tr3v3)? (Y/n): y
-> Enable repeated-letter detection (tttt, hhhh, grrrrr)? (Y/n): Y
-> Enable strict 6-4-6 pattern (6...4...6)? (Y/n): Y
-> Enable loose 6/4/6 presence (6 and 4 and 6 anywhere)? (Y/n): Y
-> 
-> [filter audit] {"enabled": true, "terms": ["trev", "treve", "trevesin", "miguel", "manuel", "isai", "chicano", "thug"], "enable_leetspeak": true, "enable_repeats": true, "enable_646_strict": true, "enable_646_loose": true, "logic": "OR", "scope": "FULL_PATH"}   
-> 
-> Scanning roots:
->  - D:\
-> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
-> Minimum size: 1,048,576 bytes (1.0 MB)
-> DB: c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_index.sqlite3
-> Checkpoint: prompt every ~10 GB of matched video
-> 
-> Traceback (most recent call last):
->   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_finder_sqllite.py", line 787, in <module>
->     main()
->     ~~~~^^
->   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_finder_sqllite.py", line 602, in main
->     if not name_filter(fullpath):
->                        ^^^^^^^^
-> UnboundLocalError: cannot access local variable 'fullpath' where it is not associated with a value
+> PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER> & C:/Users/codyr/AppData/Local/Python/bin/python.exe "c:/QiOS_WORKING/My Drive/_working/VIDEO-FINDER/video_finder_sqllite.py"
+
+> Scan GLOBAL (all roots listed)? (Y/n): n
+
+> 
+
+> Available roots:
+
+>   1) C:\
+
+>   2) C:\QiOS_WORKING\My Drive
+
+>   3) D:\
+
+> 
+
+> Enter comma-separated numbers to scan (example: 2,3). Press Enter for ALL.
+
+> Selection: 3
+
+> Enable path fuzzy filters (recommended)? (Y/n): y
+
+> Enter terms (comma-separated). Example: tre, trev, treve, trevesin, miguel, manuel, isai, chicano, thug: trev, treve, trevesin, miguel, manuel, isai, chicano, thug
+
+> Enable leetspeak normalization (e.g., m1gu3l, tr3v3)? (Y/n): y
+
+> Enable repeated-letter detection (tttt, hhhh, grrrrr)? (Y/n): Y
+
+> Enable strict 6-4-6 pattern (6...4...6)? (Y/n): Y
+
+> Enable loose 6/4/6 presence (6 and 4 and 6 anywhere)? (Y/n): Y
+
+> 
+
+> [filter audit] {"enabled": true, "terms": ["trev", "treve", "trevesin", "miguel", "manuel", "isai", "chicano", "thug"], "enable_leetspeak": true, "enable_repeats": true, "enable_646_strict": true, "enable_646_loose": true, "logic": "OR", "scope": "FULL_PATH"}   
+
+> 
+
+> Scanning roots:
+
+>  - D:\
+
+> Extensions: .avi, .m4v, .media, .mkv, .mov, .mp4, .mpeg, .mpg, .wmv
+
+> Minimum size: 1,048,576 bytes (1.0 MB)
+
+> DB: c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_index.sqlite3
+
+> Checkpoint: prompt every ~10 GB of matched video
+
+> 
+
+> Traceback (most recent call last):
+
+>   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_finder_sqllite.py", line 787, in <module>
+
+>     main()
+
+>     ~~~~^^
+
+>   File "c:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER\video_finder_sqllite.py", line 602, in main
+
+>     if not name_filter(fullpath):
+
+>                        ^^^^^^^^
+
+> UnboundLocalError: cannot access local variable 'fullpath' where it is not associated with a value
+
 > PS C:\QiOS_WORKING\My Drive\_working\VIDEO-FINDER>
 
 ### Assistant

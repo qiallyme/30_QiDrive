@@ -3,9 +3,9 @@ layout: page
 title: "Autorización de Tarjeta de Crédito"
 slug: "autorizacion_de_tarjeta_de_credito"
 created_at: "2023-08-03 00:50:20"
-updated_at: "2023-08-03 00:50:20"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

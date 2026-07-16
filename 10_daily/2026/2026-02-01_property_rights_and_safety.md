@@ -3,9 +3,9 @@ layout: page
 title: "Property rights and safety"
 slug: "property_rights_and_safety"
 created_at: "2026-02-01 20:46:27"
-updated_at: "2026-02-01 20:46:27"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

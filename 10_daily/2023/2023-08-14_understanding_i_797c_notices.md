@@ -3,9 +3,9 @@ layout: page
 title: "Understanding I-797C Notices"
 slug: "understanding_i_797c_notices"
 created_at: "2023-08-14 18:07:07"
-updated_at: "2023-08-14 18:07:07"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Update HTML paths"
 slug: "update_html_paths"
 created_at: "2025-12-16 04:48:11"
-updated_at: "2025-12-16 04:48:11"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -4,15 +4,15 @@ title: Manifestation Capsule Template
 slug: manifestation_capsule_template
 summary: Template for creating clinical manifestation capsules with full folder structure
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:34-04:00"
 context: Template for creating manifestation capsules in clinical track
-tags:
+tags: []
   - template
   - manifestation
   - clinical
   - capsule
   - empowerqnow713
-keywords:
+keywords: []
   - manifestation
   - clinical
   - capsule
@@ -25,14 +25,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.2.2
 category: clinical_manifestation
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c327a370da9e4038a73f89e4d2a6fb55
 canonical_ref: ""
 template_key: master-template
 ---

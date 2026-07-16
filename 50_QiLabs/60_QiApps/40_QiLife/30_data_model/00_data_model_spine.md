@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 00 Data Model Spine
-slug: ""
+slug: 00-data-model-spine
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f1077b0457e742cea84ceea17609aec5
 canonical_ref: ""
 source_type: manual
 template_key: master-template

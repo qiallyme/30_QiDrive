@@ -3,9 +3,9 @@ layout: page
 title: "Legal and ADA Violations"
 slug: "legal_and_ada_violations"
 created_at: "2026-01-10 12:52:51"
-updated_at: "2026-01-10 12:52:51"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

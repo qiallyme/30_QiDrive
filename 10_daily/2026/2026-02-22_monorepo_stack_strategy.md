@@ -3,9 +3,9 @@ layout: page
 title: "Monorepo Stack Strategy"
 slug: "monorepo_stack_strategy"
 created_at: "2026-02-22 16:33:26"
-updated_at: "2026-02-22 16:33:26"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,66 +39,126 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> This is exactly how modern, large-scale web development is done. Moving to a **Monorepo** is the smartest way to achieve this "build once, snap together like Lego bricks" workflow.
-> 
-> By setting up a monorepo, you create a single master repository that holds your shared logic (like the Obsidian parser, UI components, and authentication) as individual "packages." When you want to spin up a new site or app, you just create a new folder and import those packages.
-> 
-> The industry standard for this right now—especially if you are using Astro and deploying to Vercel—is **Turborepo** combined with **pnpm workspaces**.
-> 
-> Here is how you structure this master template so you never have to rebuild your core architecture again.
-> 
-> ---
-> 
-> ### The Monorepo Blueprint
-> 
-> In a workspace monorepo, your code is divided into two main areas: **Apps** (the actual websites or applications) and **Packages** (your reusable modules).
-> 
-> #### 1. `packages/` (Your Reusable Modules)
-> 
-> This is where your core functionality lives. Instead of building these into a specific website, you build them as independent modules.
-> 
-> * **`packages/obsidian-engine`**: You build your Remark/Rehype markdown parsing logic, wikilink resolvers, and content-fetching scripts exactly once here.
-> * **`packages/ui`**: This is your shared component library. If you build a React button, a navigation bar, or an interactive data dashboard, it goes here.
-> * **`packages/config`**: Shared settings like ESLint, Prettier, or Tailwind CSS configurations. Update your brand colors here, and it updates across all your sites.
-> 
-> #### 2. `apps/` (Your Sites and Apps)
-> 
-> These are the actual deployable projects. They are incredibly lightweight because they just import the heavy lifting from your `packages` folder.
-> 
-> * **`apps/main-blog`**: An Astro site that imports `obsidian-engine` to render your public notes and `ui` for its layout.
-> * **`apps/saas-dashboard`**: A different Astro (or Next.js/React) app that imports the `ui` package and an `auth` package, entirely separate from your blog but sharing the same design system.
-> 
-> ---
-> 
-> ### How the Workflow Actually Looks
-> 
-> Once this is set up, your goal of "just adding modules or sites" becomes incredibly simple.
-> 
-> **Scenario A: You want to create a brand new site for a different project.**
-> 
-> 1. You run a command to spin up a blank Astro site inside the `apps/` folder.
-> 2. In that new site's `package.json`, you add `"@my-workspace/obsidian-engine": "*"` and `"@my-workspace/ui": "*"`.
-> 3. You immediately have a fully functioning site that can read your Obsidian vault and has your custom styling, taking about two minutes to set up.
-> 
-> **Scenario B: You want to add a new "module" (like an email newsletter signup).**
-> 
-> 1. You build the newsletter component inside `packages/ui`.
-> 2. You can now drop that component into `apps/main-blog`, `apps/saas-dashboard`, or any future site without copying and pasting the code. If you fix a bug in the newsletter component, it fixes it across all your sites automatically.
-> 
-> ---
-> 
-> ### Summary of Your New Master Template
-> 
-> | Directory | What goes inside | How you use it |
-> | --- | --- | --- |
-> | **`apps/`** | Astro sites, React apps, landing pages. | The final products you deploy to Vercel/Cloudflare. |
-> | **`packages/`** | Obsidian parsers, UI components, auth modules. | The "building blocks" you import into your apps. |
-> | **`Obsidian Vault`** | Your markdown files (via Git submodule). | Pulled into the specific apps that need content. |
-> 
-> ### The Next Step
-> 
-> To make this a reality, we need to initialize your Turborepo.
-> 
+> This is exactly how modern, large-scale web development is done. Moving to a **Monorepo** is the smartest way to achieve this "build once, snap together like Lego bricks" workflow.
+
+> 
+
+> By setting up a monorepo, you create a single master repository that holds your shared logic (like the Obsidian parser, UI components, and authentication) as individual "packages." When you want to spin up a new site or app, you just create a new folder and import those packages.
+
+> 
+
+> The industry standard for this right now—especially if you are using Astro and deploying to Vercel—is **Turborepo** combined with **pnpm workspaces**.
+
+> 
+
+> Here is how you structure this master template so you never have to rebuild your core architecture again.
+
+> 
+
+> ---
+
+> 
+
+> ### The Monorepo Blueprint
+
+> 
+
+> In a workspace monorepo, your code is divided into two main areas: **Apps** (the actual websites or applications) and **Packages** (your reusable modules).
+
+> 
+
+> #### 1. `packages/` (Your Reusable Modules)
+
+> 
+
+> This is where your core functionality lives. Instead of building these into a specific website, you build them as independent modules.
+
+> 
+
+> * **`packages/obsidian-engine`**: You build your Remark/Rehype markdown parsing logic, wikilink resolvers, and content-fetching scripts exactly once here.
+
+> * **`packages/ui`**: This is your shared component library. If you build a React button, a navigation bar, or an interactive data dashboard, it goes here.
+
+> * **`packages/config`**: Shared settings like ESLint, Prettier, or Tailwind CSS configurations. Update your brand colors here, and it updates across all your sites.
+
+> 
+
+> #### 2. `apps/` (Your Sites and Apps)
+
+> 
+
+> These are the actual deployable projects. They are incredibly lightweight because they just import the heavy lifting from your `packages` folder.
+
+> 
+
+> * **`apps/main-blog`**: An Astro site that imports `obsidian-engine` to render your public notes and `ui` for its layout.
+
+> * **`apps/saas-dashboard`**: A different Astro (or Next.js/React) app that imports the `ui` package and an `auth` package, entirely separate from your blog but sharing the same design system.
+
+> 
+
+> ---
+
+> 
+
+> ### How the Workflow Actually Looks
+
+> 
+
+> Once this is set up, your goal of "just adding modules or sites" becomes incredibly simple.
+
+> 
+
+> **Scenario A: You want to create a brand new site for a different project.**
+
+> 
+
+> 1. You run a command to spin up a blank Astro site inside the `apps/` folder.
+
+> 2. In that new site's `package.json`, you add `"@my-workspace/obsidian-engine": "*"` and `"@my-workspace/ui": "*"`.
+
+> 3. You immediately have a fully functioning site that can read your Obsidian vault and has your custom styling, taking about two minutes to set up.
+
+> 
+
+> **Scenario B: You want to add a new "module" (like an email newsletter signup).**
+
+> 
+
+> 1. You build the newsletter component inside `packages/ui`.
+
+> 2. You can now drop that component into `apps/main-blog`, `apps/saas-dashboard`, or any future site without copying and pasting the code. If you fix a bug in the newsletter component, it fixes it across all your sites automatically.
+
+> 
+
+> ---
+
+> 
+
+> ### Summary of Your New Master Template
+
+> 
+
+> | Directory | What goes inside | How you use it |
+
+> | --- | --- | --- |
+
+> | **`apps/`** | Astro sites, React apps, landing pages. | The final products you deploy to Vercel/Cloudflare. |
+
+> | **`packages/`** | Obsidian parsers, UI components, auth modules. | The "building blocks" you import into your apps. |
+
+> | **`Obsidian Vault`** | Your markdown files (via Git submodule). | Pulled into the specific apps that need content. |
+
+> 
+
+> ### The Next Step
+
+> 
+
+> To make this a reality, we need to initialize your Turborepo.
+
+> 
+
 > Would you like me to provide the specific terminal commands to generate this exact `apps/` and `packages/` structure using Turborepo and Astro, or would you like to discuss what should go inside your first shared UI package?
 
 ### Assistant
@@ -472,9 +532,12 @@ canonical_ref: ""
 > If you want, I’ll give you the *next exact files* to add so `packages/obsidian-engine` can ingest markdown + frontmatter and `apps/qially-main` can generate Astro routes from it.
 
 ### User
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> corepack enable
-> Internal Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\pnpx'
-> Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\pnpx'
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> corepack enable
+
+> Internal Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\pnpx'
+
+> Error: EPERM: operation not permitted, open 'C:\Program Files\nodejs\pnpx'
+
 > PS C:\QiLabs\_QiOne_MonoRepo_Astro>
 
 ### Assistant
@@ -571,33 +634,60 @@ canonical_ref: ""
 > We’ll decide the cleanest path based on that.
 
 ### User
-> PS C:\WINDOWS\system32> winget install Volta.Volta
-> Found Volta [Volta.Volta] Version 2.0.2
-> This application is licensed to you by its owner.
-> Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
-> Downloading https://github.com/volta-cli/volta/releases/download/v2.0.2/volta-2.0.2-windows-x86_64.msi
->   ██████████████████████████████  5.32 MB / 5.32 MB
-> Successfully verified installer hash
-> Starting package install...
-> Successfully installed
-> PS C:\WINDOWS\system32> volta install node
-> volta : The term 'volta' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
-> the spelling of the name, or if a path was included, verify that the path is correct and try again.
-> At line:1 char:1
-> + volta install node
-> + ~~~~~
->     + CategoryInfo          : ObjectNotFound: (volta:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\WINDOWS\system32> volta install pnpm
-> volta : The term 'volta' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
-> the spelling of the name, or if a path was included, verify that the path is correct and try again.
-> At line:1 char:1
-> + volta install pnpm
-> + ~~~~~
->     + CategoryInfo          : ObjectNotFound: (volta:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
+> PS C:\WINDOWS\system32> winget install Volta.Volta
+
+> Found Volta [Volta.Volta] Version 2.0.2
+
+> This application is licensed to you by its owner.
+
+> Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+
+> Downloading https://github.com/volta-cli/volta/releases/download/v2.0.2/volta-2.0.2-windows-x86_64.msi
+
+>   ██████████████████████████████  5.32 MB / 5.32 MB
+
+> Successfully verified installer hash
+
+> Starting package install...
+
+> Successfully installed
+
+> PS C:\WINDOWS\system32> volta install node
+
+> volta : The term 'volta' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+
+> the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+> At line:1 char:1
+
+> + volta install node
+
+> + ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (volta:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\WINDOWS\system32> volta install pnpm
+
+> volta : The term 'volta' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+
+> the spelling of the name, or if a path was included, verify that the path is correct and try again.
+
+> At line:1 char:1
+
+> + volta install pnpm
+
+> + ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (volta:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -756,13 +846,20 @@ canonical_ref: ""
 > Just a PATH refresh issue.
 
 ### User
-> note: pnpm is shadowed by another binary of the same name at C:\Program Files\Volta\pnpm.exe. To ensure your commands work as expected, please move C:\Users\Lisa\AppData\Local\Volta\bin to the start of your Path.
->    note: pnpx is shadowed by another binary of the same name at C:\Program Files\nodejs\pnpx.CMD. To ensure your commands work as expected, please move C:\Users\Lisa\AppData\Local\Volta\bin to the start of your Path.
-> success: installed pnpm@10.30.1 with executables: pnpm, pnpx
-> PS C:\WINDOWS\system32> node -v
-> v24.13.1
-> PS C:\WINDOWS\system32> pnpm -v
-> 10.30.1
+> note: pnpm is shadowed by another binary of the same name at C:\Program Files\Volta\pnpm.exe. To ensure your commands work as expected, please move C:\Users\Lisa\AppData\Local\Volta\bin to the start of your Path.
+
+>    note: pnpx is shadowed by another binary of the same name at C:\Program Files\nodejs\pnpx.CMD. To ensure your commands work as expected, please move C:\Users\Lisa\AppData\Local\Volta\bin to the start of your Path.
+
+> success: installed pnpm@10.30.1 with executables: pnpm, pnpx
+
+> PS C:\WINDOWS\system32> node -v
+
+> v24.13.1
+
+> PS C:\WINDOWS\system32> pnpm -v
+
+> 10.30.1
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -850,17 +947,28 @@ canonical_ref: ""
 > If you paste the output of `where pnpm` / `where pnpx`, I’ll tell you if anything is still mis-ordered.
 
 ### User
-> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-> 
-> PS C:\WINDOWS\system32> where node
-> PS C:\WINDOWS\system32> where pnpm
-> PS C:\WINDOWS\system32> where pnpx
-> PS C:\WINDOWS\system32> where node
-> PS C:\WINDOWS\system32> cd C:\QiLabs\_QiOne_MonoRepo_Astro
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm install
->  ERR_PNPM_NO_PKG_MANIFEST  No package.json found in C:\QiLabs\_QiOne_MonoRepo_Astro
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm dev
->  ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND  No package.json (or package.yaml, or package.json5) was found in "C:\QiLabs\_QiOne_MonoRepo_Astro".
+> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+> 
+
+> PS C:\WINDOWS\system32> where node
+
+> PS C:\WINDOWS\system32> where pnpm
+
+> PS C:\WINDOWS\system32> where pnpx
+
+> PS C:\WINDOWS\system32> where node
+
+> PS C:\WINDOWS\system32> cd C:\QiLabs\_QiOne_MonoRepo_Astro
+
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm install
+
+>  ERR_PNPM_NO_PKG_MANIFEST  No package.json found in C:\QiLabs\_QiOne_MonoRepo_Astro
+
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm dev
+
+>  ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND  No package.json (or package.yaml, or package.json5) was found in "C:\QiLabs\_QiOne_MonoRepo_Astro".
+
 > PS C:\QiLabs\_QiOne_MonoRepo_Astro>
 
 ### Assistant
@@ -965,14 +1073,22 @@ canonical_ref: ""
 > Run steps 1–4 and paste any prompts/errors you hit (verbatim).
 
 ### User
-> not this? _MonoRepo_Astro".
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm create astro@latest
-> .../19c8788e0bf-cc0                      |  +23 ++
-> .../19c8788e0bf-cc0                      | Progress: resolved 23, reused 0, downloaded 23, added 23, done
-> 
->  astro   Launch sequence initiated.
-> 
->    dir   Where should we create your new project?
+> not this? _MonoRepo_Astro".
+
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm create astro@latest
+
+> .../19c8788e0bf-cc0                      |  +23 ++
+
+> .../19c8788e0bf-cc0                      | Progress: resolved 23, reused 0, downloaded 23, added 23, done
+
+> 
+
+>  astro   Launch sequence initiated.
+
+> 
+
+>    dir   Where should we create your new project?
+
 >          ./blue-binary
 
 ### Assistant
@@ -1131,17 +1247,28 @@ canonical_ref: ""
 > Stay linear. Don’t add Turbo yet. Get one app running first.
 
 ### User
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> @"
-> >> packages:
-> >>   - "apps/*"
-> >>   - "packages/*"
-> >> "@ | Out-File -Encoding utf8 .\pnpm-workspace.yaml
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm install
-> Volta error: Could not parse project manifest
-> at C:\QiLabs\_QiOne_MonoRepo_Astro\package.json
-> 
-> Please ensure that the file is correctly formatted.
-> Error details written to C:\Users\Lisa\AppData\Local\Volta\log\volta-error-2026-02-22_16_53_21.481.log
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> @"
+
+> >> packages:
+
+> >>   - "apps/*"
+
+> >>   - "packages/*"
+
+> >> "@ | Out-File -Encoding utf8 .\pnpm-workspace.yaml
+
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm install
+
+> Volta error: Could not parse project manifest
+
+> at C:\QiLabs\_QiOne_MonoRepo_Astro\package.json
+
+> 
+
+> Please ensure that the file is correctly formatted.
+
+> Error details written to C:\Users\Lisa\AppData\Local\Volta\log\volta-error-2026-02-22_16_53_21.481.log
+
 > PS C:\QiLabs\_QiOne_MonoRepo_Astro>
 
 ### Assistant
@@ -1206,97 +1333,188 @@ canonical_ref: ""
 > Run steps 2–4. If it still errors, paste the output of `Get-Content .\package.json` and the `node -e ...` error message.
 
 ### User
-> Gemini said
-> This is the ultimate "build once, scale infinitely" architecture. By setting this up, you are creating your own personal framework.
-> 
-> Here is the complete rundown of how the moving parts interact, the exact directory structure you should use (based on current industry best practices), and a step-by-step roadmap to get it built.
-> 
-> 1. The Full Rundown: How It All Works Together
-> Before looking at the folders, it helps to understand what each tool is actually doing:
-> 
-> pnpm Workspaces (The Glue): pnpm is a blazingly fast package manager. The "workspaces" feature is what allows an app in your apps/ folder to securely import a component from your packages/ folder as if it were an external library downloaded from the internet, without actually having to publish it anywhere.
-> 
-> Turborepo (The Brain): Turborepo is a build system that orchestrates everything. If you change a button inside packages/ui, Turborepo knows exactly which apps use that button and only rebuilds those specific apps. It also caches your builds, making your deployment times incredibly fast.
-> 
-> Astro (The Face): The actual frontend framework living inside your apps/ folder. It digests your Markdown and renders the UI.
-> 
-> Git Submodules (The Content): Your Obsidian vault remains its own isolated Git repository. The monorepo just "points" to a specific folder inside that vault to pull in the markdown files during the build process.
-> 
-> 2. The Suggested Directory Tree
-> Here is the exact structure you should aim for. Notice how strictly separated the "deployable apps" are from the "reusable building blocks."
-> 
-> Plaintext
-> my-master-universe/
-> ├── pnpm-workspace.yaml         # Tells pnpm where the apps and packages live
-> ├── turbo.json                  # Tells Turborepo how to cache and build things
-> ├── package.json                # Root dependencies (only things needed for the whole repo)
-> │
-> ├── apps/                       # 🚀 THE DEPLOYABLE SITES & APPS
-> │   ├── main-website/           # Your core Astro site (Blog/Notes)
-> │   │   ├── src/                
-> │   │   ├── astro.config.mjs    
-> │   │   └── package.json        # Imports "@my-repo/ui" and "@my-repo/obsidian"
-> │   │
-> │   └── future-dashboard-app/   # A future React/Svelte/Astro app you might build
-> │
-> ├── packages/                   # 🧱 THE REUSABLE LEGO BRICKS
-> │   ├── obsidian-engine/        # Your custom Markdown parsing logic
-> │   │   ├── index.ts            # Logic to resolve [[wikilinks]] and fetch files
-> │   │   └── package.json        # Named "@my-repo/obsidian"
-> │   │
-> │   ├── ui/                     # Shared UI components (React/Svelte/Astro)
-> │   │   ├── Button.tsx          
-> │   │   ├── Callout.astro
-> │   │   └── package.json        # Named "@my-repo/ui"
-> │   │
-> │   ├── typescript-config/      # Shared tsconfig.json so you don't repeat yourself
-> │   └── eslint-config/          # Shared linting rules
-> │
-> └── content/                    # 📝 THE OBSIDIAN BRIDGE
->     └── my-obsidian-vault/      # This is the Git Submodule pointing to your notes repo
-> 3. The Implementation Roadmap
-> Building this requires a specific order of operations so you don't get tangled in dependencies.
-> 
-> Phase 1: The Monorepo Foundation
-> Install pnpm globally on your machine.
-> 
-> Initialize the monorepo using Turborepo's CLI generator. This will scaffold the root files (turbo.json, pnpm-workspace.yaml) and create blank apps/ and packages/ folders for you.
-> 
-> Clean out the boilerplate starter code Turborepo gives you to prepare a blank slate.
-> 
-> Phase 2: Building the "Bricks" (The Packages)
-> The Configs: Set up the shared typescript-config and eslint-config.
-> 
-> The UI Library: Create the packages/ui folder. Set up Tailwind CSS (if you use it) here so your design system is centralized. Build one simple component (like a generic layout wrapper or a button) just to test the connection.
-> 
-> The Obsidian Engine: Create the packages/obsidian-engine. This is where you will install remark and rehype plugins to handle the Obsidian wikilinks.
-> 
-> Phase 3: The First App
-> Generate a fresh Astro project inside apps/main-website.
-> 
-> Open the package.json of that Astro app and add your local packages to the dependencies list (e.g., "@my-repo/ui": "workspace:*").
-> 
-> Run pnpm install from the root of your project. This wires the app and the packages together.
-> 
-> Import the UI component you made in Phase 2 into the Astro app to prove it works.
-> 
-> Phase 4: The Content Bridge
-> Navigate to the root of your monorepo and run the git submodule add command, pointing to the Git repository where your Obsidian notes live.
-> 
-> In your Astro app (apps/main-website), use Astro's getCollection() or import.meta.glob() functions to point to the content/my-obsidian-vault/Public folder to pull the files in.
-> 
-> Phase 5: Deployment & CI/CD
-> Push the entire monorepo to GitHub.
-> 
-> Connect the repository to Vercel or Cloudflare Pages.
-> 
-> Configure the build settings so the host knows it's a Turborepo. (Vercel owns Turborepo, so this happens automatically if you use them).
-> 
-> Set up a GitHub Action on your Obsidian vault repository: whenever you push a new note, it triggers Vercel to rebuild the monorepo.
-> 
-> The Next Step
-> The hardest part of this process is Phase 1 and getting the package manager to link everything correctly.
-> 
+> Gemini said
+
+> This is the ultimate "build once, scale infinitely" architecture. By setting this up, you are creating your own personal framework.
+
+> 
+
+> Here is the complete rundown of how the moving parts interact, the exact directory structure you should use (based on current industry best practices), and a step-by-step roadmap to get it built.
+
+> 
+
+> 1. The Full Rundown: How It All Works Together
+
+> Before looking at the folders, it helps to understand what each tool is actually doing:
+
+> 
+
+> pnpm Workspaces (The Glue): pnpm is a blazingly fast package manager. The "workspaces" feature is what allows an app in your apps/ folder to securely import a component from your packages/ folder as if it were an external library downloaded from the internet, without actually having to publish it anywhere.
+
+> 
+
+> Turborepo (The Brain): Turborepo is a build system that orchestrates everything. If you change a button inside packages/ui, Turborepo knows exactly which apps use that button and only rebuilds those specific apps. It also caches your builds, making your deployment times incredibly fast.
+
+> 
+
+> Astro (The Face): The actual frontend framework living inside your apps/ folder. It digests your Markdown and renders the UI.
+
+> 
+
+> Git Submodules (The Content): Your Obsidian vault remains its own isolated Git repository. The monorepo just "points" to a specific folder inside that vault to pull in the markdown files during the build process.
+
+> 
+
+> 2. The Suggested Directory Tree
+
+> Here is the exact structure you should aim for. Notice how strictly separated the "deployable apps" are from the "reusable building blocks."
+
+> 
+
+> Plaintext
+
+> my-master-universe/
+
+> ├── pnpm-workspace.yaml         # Tells pnpm where the apps and packages live
+
+> ├── turbo.json                  # Tells Turborepo how to cache and build things
+
+> ├── package.json                # Root dependencies (only things needed for the whole repo)
+
+> │
+
+> ├── apps/                       # 🚀 THE DEPLOYABLE SITES & APPS
+
+> │   ├── main-website/           # Your core Astro site (Blog/Notes)
+
+> │   │   ├── src/                
+
+> │   │   ├── astro.config.mjs    
+
+> │   │   └── package.json        # Imports "@my-repo/ui" and "@my-repo/obsidian"
+
+> │   │
+
+> │   └── future-dashboard-app/   # A future React/Svelte/Astro app you might build
+
+> │
+
+> ├── packages/                   # 🧱 THE REUSABLE LEGO BRICKS
+
+> │   ├── obsidian-engine/        # Your custom Markdown parsing logic
+
+> │   │   ├── index.ts            # Logic to resolve [[wikilinks]] and fetch files
+
+> │   │   └── package.json        # Named "@my-repo/obsidian"
+
+> │   │
+
+> │   ├── ui/                     # Shared UI components (React/Svelte/Astro)
+
+> │   │   ├── Button.tsx          
+
+> │   │   ├── Callout.astro
+
+> │   │   └── package.json        # Named "@my-repo/ui"
+
+> │   │
+
+> │   ├── typescript-config/      # Shared tsconfig.json so you don't repeat yourself
+
+> │   └── eslint-config/          # Shared linting rules
+
+> │
+
+> └── content/                    # 📝 THE OBSIDIAN BRIDGE
+
+>     └── my-obsidian-vault/      # This is the Git Submodule pointing to your notes repo
+
+> 3. The Implementation Roadmap
+
+> Building this requires a specific order of operations so you don't get tangled in dependencies.
+
+> 
+
+> Phase 1: The Monorepo Foundation
+
+> Install pnpm globally on your machine.
+
+> 
+
+> Initialize the monorepo using Turborepo's CLI generator. This will scaffold the root files (turbo.json, pnpm-workspace.yaml) and create blank apps/ and packages/ folders for you.
+
+> 
+
+> Clean out the boilerplate starter code Turborepo gives you to prepare a blank slate.
+
+> 
+
+> Phase 2: Building the "Bricks" (The Packages)
+
+> The Configs: Set up the shared typescript-config and eslint-config.
+
+> 
+
+> The UI Library: Create the packages/ui folder. Set up Tailwind CSS (if you use it) here so your design system is centralized. Build one simple component (like a generic layout wrapper or a button) just to test the connection.
+
+> 
+
+> The Obsidian Engine: Create the packages/obsidian-engine. This is where you will install remark and rehype plugins to handle the Obsidian wikilinks.
+
+> 
+
+> Phase 3: The First App
+
+> Generate a fresh Astro project inside apps/main-website.
+
+> 
+
+> Open the package.json of that Astro app and add your local packages to the dependencies list (e.g., "@my-repo/ui": "workspace:*").
+
+> 
+
+> Run pnpm install from the root of your project. This wires the app and the packages together.
+
+> 
+
+> Import the UI component you made in Phase 2 into the Astro app to prove it works.
+
+> 
+
+> Phase 4: The Content Bridge
+
+> Navigate to the root of your monorepo and run the git submodule add command, pointing to the Git repository where your Obsidian notes live.
+
+> 
+
+> In your Astro app (apps/main-website), use Astro's getCollection() or import.meta.glob() functions to point to the content/my-obsidian-vault/Public folder to pull the files in.
+
+> 
+
+> Phase 5: Deployment & CI/CD
+
+> Push the entire monorepo to GitHub.
+
+> 
+
+> Connect the repository to Vercel or Cloudflare Pages.
+
+> 
+
+> Configure the build settings so the host knows it's a Turborepo. (Vercel owns Turborepo, so this happens automatically if you use them).
+
+> 
+
+> Set up a GitHub Action on your Obsidian vault repository: whenever you push a new note, it triggers Vercel to rebuild the monorepo.
+
+> 
+
+> The Next Step
+
+> The hardest part of this process is Phase 1 and getting the package manager to link everything correctly.
+
+> 
+
 > Would you like me to provide the exact terminal commands to bootstrap Phase 1 (creating the Turborepo and initializing the workspace with pnpm)?
 
 ### Assistant
@@ -1485,24 +1703,42 @@ canonical_ref: ""
 > If I see `blue-binary` instead of `apps\qially-main`, I’ll tell you the exact move/rename commands and we’ll get you back on the rails in one shot.
 
 ### User
-> ```markdown
-> . 📂 _QiOne_MonoRepo_Astro
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> └── 📂 apps/
-> │  └── 📂 qially-main/
-> │    ├── 📄 README.md
-> │    ├── 📄 astro.config.mjs
-> │    ├── 📄 package.json
-> │    └── 📂 public/
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 favicon.svg
-> │    └── 📂 src/
-> │      └── 📂 pages/
-> │        ├── 📄 index.astro
-> │    ├── 📄 tsconfig.json
-> ├── 📄 package.json
-> └── 📄 pnpm-workspace.yaml
+> ```markdown
+
+> . 📂 _QiOne_MonoRepo_Astro
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> └── 📂 apps/
+
+> │  └── 📂 qially-main/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 astro.config.mjs
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 public/
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 favicon.svg
+
+> │    └── 📂 src/
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 index.astro
+
+> │    ├── 📄 tsconfig.json
+
+> ├── 📄 package.json
+
+> └── 📄 pnpm-workspace.yaml
+
 > ```
 
 ### Assistant
@@ -1633,620 +1869,1234 @@ canonical_ref: ""
 > If you hit an error on `pnpm install` or `pnpm dev`, paste the exact error text.
 
 ### User
-> im missing stuff, ```markdown
-> . 📂 _QiOne_MonoRepo_Astro
-> ├── 📄 LICENSE
-> ├── 📄 MIGRATION_PLAN.md
-> ├── 📄 README.md
-> └── 📂 apps/
-> │  └── 📂 internal/
-> │    └── 📂 qially-me/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 biome.json
-> │      ├── 📄 components.json
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 pnpm-lock.yaml
-> │      └── 📂 public/
-> │        ├── 📄 activity.svg
-> │        └── 📂 cards/
-> │          ├── 📄 fresh.png
-> │          ├── 📄 fresh.webp
-> │          ├── 📄 glass.png
-> │          ├── 📄 glass.webp
-> │          ├── 📄 mermaid.svg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 logo.png
-> │        ├── 📄 logo.webp
-> │        ├── 📄 og.webp
-> │        ├── 📄 placeholder.webp
-> │        ├── 📄 robots.txt
-> │        ├── 📄 rss.svg
-> │      └── 📂 scripts/
-> │        ├── 📄 build-pagefind-index.ts
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 creations.json
-> │          └── 📂 images/
-> │            ├── 📄 logo.webp
-> │        └── 📂 components/
-> │          ├── 📄 BaseHead.astro
-> │          ├── 📄 BetaBadge.astro
-> │          ├── 📄 Footer.astro
-> │          ├── 📄 FormattedDate.astro
-> │          ├── 📄 Header.astro
-> │          ├── 📄 HeaderLink.astro
-> │          ├── 📄 OptimizedImage.astro
-> │          ├── 📄 ProductCard.tsx
-> │          ├── 📄 ProductSection.astro
-> │          ├── 📄 ShareButtons.astro
-> │          ├── 📄 TagFilter.astro
-> │          └── 📂 blog/
-> │            ├── 📄 BlogCard.astro
-> │            ├── 📄 BlogsPage.astro
-> │          ├── 📄 copy-button.tsx
-> │          ├── 📄 image-viewer.tsx
-> │          └── 📂 knowledge-card/
-> │            ├── 📄 CardActions.astro
-> │            ├── 📄 CardBack.astro
-> │            ├── 📄 CardContainer.astro
-> │            ├── 📄 CardCover.astro
-> │            ├── 📄 CardFront.astro
-> │            ├── 📄 CardLink.astro
-> │            ├── 📄 CardsPage.astro
-> │            ├── 📄 KnowledgeCard.astro
-> │            ├── 📄 LinksModal.astro
-> │            ├── 📄 StructureDisplay.astro
-> │            ├── 📄 types.ts
-> │          └── 📂 landing-page/
-> │            ├── 📄 HeroSection.astro
-> │            ├── 📄 LatestSection.astro
-> │            ├── 📄 ScrollingTags.astro
-> │          └── 📂 navigation/
-> │            ├── 📄 ContentNavigation.astro
-> │          └── 📂 slide/
-> │            ├── 📄 SlideCard.astro
-> │            ├── 📄 SlidesPage.astro
-> │            ├── 📄 slide-viewer.tsx
-> │          └── 📂 ui/
-> │            ├── 📄 dialog.tsx
-> │            ├── 📄 sonner.tsx
-> │        ├── 📄 consts.ts
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 blogs/
-> │            └── 📂 2025-08/
-> │              ├── 📄 groq-code-cli-internal.md
-> │            └── 📂 2025-09/
-> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │              └── 📂 imgs/
-> │                ├── 📄 slides-01.png
-> │                ├── 📄 slides-02.png
-> │          └── 📂 cards/
-> │            └── 📂 2025-09/
-> │              ├── 📄 how-openai-uses-codex.md
-> │          └── 📂 doodles/
-> │            └── 📂 2025-09/
-> │              ├── 📄 monakit-released.md
-> │            └── 📂 2025-10/
-> │              └── 📂 imgs/
-> │                ├── 📄 doodle-list.png
-> │                ├── 📄 doodle.png
-> │              ├── 📄 mona-update-doodle-and-more.md
-> │          └── 📂 slides/
-> │            └── 📂 2025-09/
-> │              ├── 📄 agents-md-101.md
-> │              └── 📂 imgs/
-> │                ├── 📄 agents-md-ecosystem.png
-> │            └── 📂 2025-12/
-> │              ├── 📄 quadratic-101.md
-> │        ├── 📄 env.ts
-> │        └── 📂 layouts/
-> │          ├── 📄 ContentIndexLayout.astro
-> │          ├── 📄 MainLayout.astro
-> │        └── 📂 lib/
-> │          ├── 📄 navigation.ts
-> │          ├── 📄 pagination.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 pages/
-> │          ├── 📄 404.astro
-> │          └── 📂 blogs/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          └── 📂 cards/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 creations.astro
-> │          └── 📂 doodles/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 index.astro
-> │          ├── 📄 og-enhanced.ts
-> │          ├── 📄 rss.xml.ts
-> │          ├── 📄 search.astro
-> │          └── 📂 slides/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │        └── 📂 schemas/
-> │          ├── 📄 blog.ts
-> │          ├── 📄 card.ts
-> │          ├── 📄 doodle.ts
-> │          ├── 📄 slide.ts
-> │        └── 📂 styles/
-> │          ├── 📄 article.css
-> │          ├── 📄 card.css
-> │          ├── 📄 global.css
-> │          ├── 📄 scrolling-tags.css
-> │        └── 📂 themes/
-> │          ├── 📄 knowledge-card-themes.ts
-> │          ├── 📄 slide-card-themes.ts
-> │        └── 📂 types/
-> │          ├── 📄 product.ts
-> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 worker/
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 wrangler.toml
-> │  └── 📂 private/
-> │    └── 📂 care-portal/
-> │      ├── 📄 index.html
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 app.tsx
-> │        └── 📂 components/
-> │          ├── 📄 layout.tsx
-> │          ├── 📄 require_auth.tsx
-> │        ├── 📄 env.d.ts
-> │        ├── 📄 index.css
-> │        └── 📂 lib/
-> │          ├── 📄 access.ts
-> │          ├── 📄 api.ts
-> │          ├── 📄 money.ts
-> │          ├── 📄 supabase.ts
-> │        ├── 📄 main.tsx
-> │        └── 📂 modules/
-> │          └── 📂 qihome/
-> │            ├── 📄 index.tsx
-> │            └── 📂 pages/
-> │              ├── 📄 chores.tsx
-> │              ├── 📄 dashboard.tsx
-> │              ├── 📄 ledger.tsx
-> │          ├── 📄 registry.ts
-> │        └── 📂 routes/
-> │          ├── 📄 auth.tsx
-> │          ├── 📄 auth_confirm.tsx
-> │          ├── 📄 launcher.tsx
-> │          ├── 📄 module_router.tsx
-> │          ├── 📄 tenant_home.tsx
-> │          ├── 📄 tenant_select.tsx
-> │          ├── 📄 tenant_settings.tsx
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 vite.config.ts
-> │    └── 📂 qivault-docs/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 netlify.toml
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.svg
-> │        ├── 📄 hero-icon.svg
-> │        ├── 📄 sitepins-manifest.json
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 changelogs.svg
-> │          ├── 📄 code-block.svg
-> │          ├── 📄 code-image.png
-> │          ├── 📄 content.svg
-> │          ├── 📄 cta-bg.png
-> │          ├── 📄 darkmode-demo.png
-> │          ├── 📄 doc-bg.png
-> │          ├── 📄 element.svg
-> │          ├── 📄 hero-bg-dark.png
-> │          ├── 📄 hero-bg-light.png
-> │          ├── 📄 hero-star.svg
-> │          ├── 📄 houston.webp
-> │          ├── 📄 layouts.svg
-> │          ├── 📄 lightmode-demo.png
-> │          ├── 📄 logo-dark.svg
-> │          ├── 📄 logo-light.svg
-> │          ├── 📄 overview.png
-> │          ├── 📄 step-1.png
-> │          ├── 📄 step-2.png
-> │          ├── 📄 step-3.png
-> │        └── 📂 components/
-> │          ├── 📄 Accordion.astro
-> │          ├── 📄 AccordionContainer.astro
-> │          ├── 📄 Breadcrumb.astro
-> │          ├── 📄 CTA.astro
-> │          ├── 📄 HeroTabs.astro
-> │          ├── 📄 HeroTabsItem.astro
-> │          ├── 📄 ImageMod.astro
-> │          ├── 📄 LinkButton.astro
-> │          ├── 📄 Section.astro
-> │          ├── 📄 SidebarNav.astro
-> │          ├── 📄 ThemeDemo.astro
-> │          └── 📂 override-components/
-> │            ├── 📄 ContentPanel.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Head.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 Hero.astro
-> │            ├── 📄 MobileMenuToggle.astro
-> │            ├── 📄 MobileTableOfContents.astro
-> │            ├── 📄 PageFrame.astro
-> │            ├── 📄 PageSidebar.astro
-> │            ├── 📄 Pagination.astro
-> │            ├── 📄 Search.astro
-> │            ├── 📄 Sidebar.astro
-> │            ├── 📄 SidebarRestorePoint.astro
-> │            ├── 📄 SidebarSublist.astro
-> │            ├── 📄 SiteTitle.astro
-> │            └── 📂 TableOfContents/
-> │            ├── 📄 TableOfContents.astro
-> │              ├── 📄 TableOfContentsList.astro
-> │              ├── 📄 starlight-toc.ts
-> │            ├── 📄 ThemeSwitch.astro
-> │            ├── 📄 TwoColumnContent.astro
-> │          └── 📂 user-components/
-> │            ├── 📄 Button.astro
-> │            ├── 📄 Grid.astro
-> │            ├── 📄 ListCard.astro
-> │            ├── 📄 NewCard.astro
-> │        └── 📂 config/
-> │          ├── 📄 config.json
-> │          ├── 📄 locals.json
-> │          ├── 📄 menu.en.json
-> │          ├── 📄 menu.fr.json
-> │          ├── 📄 sidebar.json
-> │          ├── 📄 social.json
-> │          ├── 📄 theme.json
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 docs/
-> │            ├── 📄 404.md
-> │            ├── 📄 about.md
-> │            └── 📂 configurations/
-> │              ├── 📄 GitHub.md
-> │              ├── 📄 custom-css-js.md
-> │              ├── 📄 custom-domain.md
-> │            └── 📂 contents/
-> │              └── 📂 components/
-> │                └── 📂 Child Components/
-> │                  └── 📂 More Child/
-> │                    ├── 📄 button.md
-> │                  ├── 📄 new-card.md
-> │                ├── 📄 accordion.md
-> │                ├── 📄 grid.md
-> │                ├── 📄 list-card.md
-> │                ├── 📄 using-components.md
-> │              └── 📂 editing/
-> │                ├── 📄 add-new-doc.md
-> │            └── 📂 fr/
-> │              ├── 📄 about.md
-> │              └── 📂 configurations/
-> │                ├── 📄 custom-css-js.md
-> │                ├── 📄 custom-domain.md
-> │                ├── 📄 github.md
-> │              └── 📂 contents/
-> │                └── 📂 components/
-> │                  └── 📂 Child Components/
-> │                    └── 📂 More Child/
-> │                      ├── 📄 button.md
-> │                    ├── 📄 new-card.md
-> │                  ├── 📄 accordion.md
-> │                  ├── 📄 grid.md
-> │                  ├── 📄 list-card.md
-> │                  ├── 📄 using-components.md
-> │                └── 📂 editing/
-> │                  ├── 📄 add-new-doc.md
-> │              └── 📂 getting-started/
-> │                └── 📂 global-settings/
-> │                  ├── 📄 configuration.md
-> │                └── 📂 introduction/
-> │                  ├── 📄 Quickstart.md
-> │                  ├── 📄 overview.mdx
-> │                ├── 📄 navigation.md
-> │              ├── 📄 index.mdx
-> │              ├── 📄 privacy-policy.md
-> │              └── 📂 reference/
-> │                ├── 📄 configuration.mdx
-> │                ├── 📄 plugin.mdx
-> │              ├── 📄 terms-conditions.md
-> │            └── 📂 getting-started/
-> │              └── 📂 global-settings/
-> │                ├── 📄 configuration.md
-> │              └── 📂 introduction/
-> │                ├── 📄 Quickstart.md
-> │                ├── 📄 overview.mdx
-> │              ├── 📄 navigation.mdx
-> │            └── 📂 guides/
-> │              ├── 📄 example.md
-> │            ├── 📄 index.mdx
-> │            ├── 📄 privacy-policy.md
-> │            └── 📂 reference/
-> │              ├── 📄 configuration.mdx
-> │              ├── 📄 example.md
-> │              ├── 📄 plugin.mdx
-> │            ├── 📄 terms-conditions.md
-> │          └── 📂 i18n/
-> │            ├── 📄 en.json
-> │            ├── 📄 fr.json
-> │          └── 📂 sections/
-> │            ├── 📄 call-to-action.md
-> │            └── 📂 fr/
-> │              ├── 📄 call-to-action.md
-> │        └── 📂 lib/
-> │          └── 📂 utils/
-> │            ├── 📄 languagePerser.ts
-> │            ├── 📄 textConverter.ts
-> │        └── 📂 styles/
-> │          ├── 📄 base.css
-> │          ├── 📄 button.css
-> │          ├── 📄 components.css
-> │          ├── 📄 global.css
-> │          ├── 📄 navigation.css
-> │        └── 📂 tailwind-plugin/
-> │          ├── 📄 tw-bs-grid.js
-> │          ├── 📄 tw-theme.js
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 yarn.lock
-> │    └── 📂 qsjournal-cms/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      └── 📂 backend/
-> │        ├── 📄 LICENSE
-> │        ├── 📄 README.md
-> │        ├── 📄 app.js
-> │        ├── 📄 eslint.config.js
-> │        └── 📂 lib/
-> │          └── 📂 helpers/
-> │            ├── 📄 area-widgets.js
-> │            ├── 📄 color-options.js
-> │            ├── 📄 typography-options.js
-> │          └── 📂 schema-mixins/
-> │            ├── 📄 card-fields.js
-> │            ├── 📄 hero-fields.js
-> │            ├── 📄 link-fields.js
-> │            ├── 📄 slideshow-fields.js
-> │        └── 📂 modules/
-> │          └── 📂 @apostrophecms/
-> │            └── 📂 admin-bar/
-> │              ├── 📄 index.js
-> │            └── 📂 asset/
-> │              ├── 📄 index.js
-> │            └── 📂 attachment/
-> │              ├── 📄 index.js
-> │            └── 📂 express/
-> │              ├── 📄 index.js
-> │            └── 📂 global/
-> │              ├── 📄 index.js
-> │            └── 📂 home-page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 page.html
-> │            └── 📂 i18n/
-> │              ├── 📄 index.js
-> │            └── 📂 image-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 layout-column-widget/
-> │              ├── 📄 index.js
-> │            └── 📂 page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 notFound.html
-> │            └── 📂 rich-text-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 settings/
-> │              ├── 📄 index.js
-> │            └── 📂 user/
-> │              ├── 📄 index.js
-> │            └── 📂 video-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │          └── 📂 accordion-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 article/
-> │          └── 📂 article-page/
-> │            ├── 📄 index.js
-> │            ├── 📄 index.js
-> │          └── 📂 author/
-> │            ├── 📄 index.js
-> │          └── 📂 card-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 default-page/
-> │            ├── 📄 index.js
-> │          └── 📂 hero-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 link-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 slideshow-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          └── 📂 images/
-> │            ├── 📄 logo.png
-> │        └── 📂 scripts/
-> │          ├── 📄 load-starter-content
-> │          ├── 📄 update-starter-content
-> │        └── 📂 views/
-> │          ├── 📄 layout.html
-> │      └── 📂 frontend/
-> │        ├── 📄 Procfile
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        ├── 📄 postcss.config.js
-> │        └── 📂 public/
-> │          ├── 📄 favicon.svg
-> │          └── 📂 fonts/
-> │            └── 📂 fontawesome/
-> │              ├── 📄 fa-brands-400.woff2
-> │              ├── 📄 fa-regular-400.woff2
-> │              ├── 📄 fa-solid-900.woff2
-> │              ├── 📄 fa-v4compatibility.woff2
-> │          └── 📂 images/
-> │            ├── 📄 image-widget-placeholder.jpg
-> │            ├── 📄 missing-icon.svg
-> │          └── 📂 scripts/
-> │            ├── 📄 VideoWidget.js
-> │            ├── 📄 dynamic-navbar-padding.js
-> │        └── 📂 src/
-> │          └── 📂 components/
-> │            ├── 📄 ArticlesFilter.astro
-> │            ├── 📄 Figure.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 ImageLink.astro
-> │            ├── 📄 Pagination.astro
-> │          ├── 📄 env.d.ts
-> │          └── 📂 layouts/
-> │            └── 📂 article-layouts/
-> │              ├── 📄 HeroGrid.astro
-> │              ├── 📄 ListAside.astro
-> │              ├── 📄 ShowFullWidth.astro
-> │              ├── 📄 ShowMagazine.astro
-> │              ├── 📄 ShowMinimal.astro
-> │              ├── 📄 Standard.astro
-> │          └── 📂 lib/
-> │            ├── 📄 attachments.js
-> │            ├── 📄 get-layout-areas.js
-> │            ├── 📄 homepage-defaults.js
-> │            ├── 📄 use-site-config.js
-> │          └── 📂 pages/
-> │            ├── 📄 [...slug].astro
-> │          └── 📂 styles/
-> │            ├── 📄 app.css
-> │            ├── 📄 main.scss
-> │          └── 📂 templates/
-> │            ├── 📄 ArticleIndexPage.astro
-> │            ├── 📄 ArticleShowPage.astro
-> │            ├── 📄 DefaultPage.astro
-> │            ├── 📄 HomePage.astro
-> │            ├── 📄 index.js
-> │          └── 📂 widgets/
-> │            ├── 📄 AccordionWidget.astro
-> │            ├── 📄 CardWidget.astro
-> │            ├── 📄 FileWidget.astro
-> │            ├── 📄 HeroWidget.astro
-> │            ├── 📄 ImageWidget.astro
-> │            ├── 📄 LinkWidget.astro
-> │            ├── 📄 RichTextWidget.astro
-> │            ├── 📄 SlideshowWidget.astro
-> │            ├── 📄 VideoWidget.astro
-> │            ├── 📄 index.js
-> │        ├── 📄 tsconfig.json
-> │      ├── 📄 package.json
-> │  └── 📂 public/
-> │    └── 📂 qially-main/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 src/
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 qsaysit_blog/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 qially-main/
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          ├── 📄 favicon.ico
-> │          ├── 📄 favicon.svg
-> │        └── 📂 src/
-> │          └── 📂 pages/
-> │            ├── 📄 index.astro
-> │        ├── 📄 tsconfig.json
-> │      └── 📂 src/
-> │        └── 📂 content/
-> │          ├── 📄 config.ts
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │  └── 📂 tools/
-> │    └── 📂 playwrite/
-> │      ├── 📄 package.json
-> │      ├── 📄 playwright.config.ts
-> │      └── 📂 tests/
-> │        ├── 📄 example.spec.ts
-> │    └── 📂 qitax-cli/
-> │      ├── 📄 README.md
-> │      └── 📂 qitax_cli/
-> │        ├── 📄 __init__.py
-> │        ├── 📄 __main__.py
-> │        ├── 📄 service.py
-> │        ├── 📄 storage.py
-> │      ├── 📄 requirements.txt
-> └── 📂 content/
-> │  └── 📂 Vault-Public/
-> │    └── 📂 QSaysIt-Blog/
-> │      └── 📂 2026/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │      ├── 📄 index.md
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 supabase/
-> │    ├── 📄 bootstrap_tenant.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 001_init_qione.sql
-> │      ├── 📄 002_qihome_mvp.sql
-> │      ├── 📄 003_qitax_returns.sql
-> │      ├── 📄 003a_qitax_seed.sql
-> │    ├── 📄 package.json
-> │    └── 📂 templates/
-> │      ├── 📄 README.md
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │  └── 📂 ui/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> ├── 📄 pnpm-lock.yaml
-> ├── 📄 pnpm-workspace.yaml
-> └── 📂 scripts/
-> │  └── 📂 sync/
-> │    ├── 📄 sync_dev_gdrive.py
-> └── 📄 turbo.json
+> im missing stuff, ```markdown
+
+> . 📂 _QiOne_MonoRepo_Astro
+
+> ├── 📄 LICENSE
+
+> ├── 📄 MIGRATION_PLAN.md
+
+> ├── 📄 README.md
+
+> └── 📂 apps/
+
+> │  └── 📂 internal/
+
+> │    └── 📂 qially-me/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 biome.json
+
+> │      ├── 📄 components.json
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 pnpm-lock.yaml
+
+> │      └── 📂 public/
+
+> │        ├── 📄 activity.svg
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 fresh.png
+
+> │          ├── 📄 fresh.webp
+
+> │          ├── 📄 glass.png
+
+> │          ├── 📄 glass.webp
+
+> │          ├── 📄 mermaid.svg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 logo.webp
+
+> │        ├── 📄 og.webp
+
+> │        ├── 📄 placeholder.webp
+
+> │        ├── 📄 robots.txt
+
+> │        ├── 📄 rss.svg
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 build-pagefind-index.ts
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 creations.json
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.webp
+
+> │        └── 📂 components/
+
+> │          ├── 📄 BaseHead.astro
+
+> │          ├── 📄 BetaBadge.astro
+
+> │          ├── 📄 Footer.astro
+
+> │          ├── 📄 FormattedDate.astro
+
+> │          ├── 📄 Header.astro
+
+> │          ├── 📄 HeaderLink.astro
+
+> │          ├── 📄 OptimizedImage.astro
+
+> │          ├── 📄 ProductCard.tsx
+
+> │          ├── 📄 ProductSection.astro
+
+> │          ├── 📄 ShareButtons.astro
+
+> │          ├── 📄 TagFilter.astro
+
+> │          └── 📂 blog/
+
+> │            ├── 📄 BlogCard.astro
+
+> │            ├── 📄 BlogsPage.astro
+
+> │          ├── 📄 copy-button.tsx
+
+> │          ├── 📄 image-viewer.tsx
+
+> │          └── 📂 knowledge-card/
+
+> │            ├── 📄 CardActions.astro
+
+> │            ├── 📄 CardBack.astro
+
+> │            ├── 📄 CardContainer.astro
+
+> │            ├── 📄 CardCover.astro
+
+> │            ├── 📄 CardFront.astro
+
+> │            ├── 📄 CardLink.astro
+
+> │            ├── 📄 CardsPage.astro
+
+> │            ├── 📄 KnowledgeCard.astro
+
+> │            ├── 📄 LinksModal.astro
+
+> │            ├── 📄 StructureDisplay.astro
+
+> │            ├── 📄 types.ts
+
+> │          └── 📂 landing-page/
+
+> │            ├── 📄 HeroSection.astro
+
+> │            ├── 📄 LatestSection.astro
+
+> │            ├── 📄 ScrollingTags.astro
+
+> │          └── 📂 navigation/
+
+> │            ├── 📄 ContentNavigation.astro
+
+> │          └── 📂 slide/
+
+> │            ├── 📄 SlideCard.astro
+
+> │            ├── 📄 SlidesPage.astro
+
+> │            ├── 📄 slide-viewer.tsx
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 dialog.tsx
+
+> │            ├── 📄 sonner.tsx
+
+> │        ├── 📄 consts.ts
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 blogs/
+
+> │            └── 📂 2025-08/
+
+> │              ├── 📄 groq-code-cli-internal.md
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 slides-01.png
+
+> │                ├── 📄 slides-02.png
+
+> │          └── 📂 cards/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 how-openai-uses-codex.md
+
+> │          └── 📂 doodles/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 monakit-released.md
+
+> │            └── 📂 2025-10/
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 doodle-list.png
+
+> │                ├── 📄 doodle.png
+
+> │              ├── 📄 mona-update-doodle-and-more.md
+
+> │          └── 📂 slides/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 agents-md-101.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 agents-md-ecosystem.png
+
+> │            └── 📂 2025-12/
+
+> │              ├── 📄 quadratic-101.md
+
+> │        ├── 📄 env.ts
+
+> │        └── 📂 layouts/
+
+> │          ├── 📄 ContentIndexLayout.astro
+
+> │          ├── 📄 MainLayout.astro
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 navigation.ts
+
+> │          ├── 📄 pagination.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 404.astro
+
+> │          └── 📂 blogs/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          └── 📂 cards/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 creations.astro
+
+> │          └── 📂 doodles/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 index.astro
+
+> │          ├── 📄 og-enhanced.ts
+
+> │          ├── 📄 rss.xml.ts
+
+> │          ├── 📄 search.astro
+
+> │          └── 📂 slides/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │        └── 📂 schemas/
+
+> │          ├── 📄 blog.ts
+
+> │          ├── 📄 card.ts
+
+> │          ├── 📄 doodle.ts
+
+> │          ├── 📄 slide.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 article.css
+
+> │          ├── 📄 card.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 scrolling-tags.css
+
+> │        └── 📂 themes/
+
+> │          ├── 📄 knowledge-card-themes.ts
+
+> │          ├── 📄 slide-card-themes.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 product.ts
+
+> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 worker/
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 wrangler.toml
+
+> │  └── 📂 private/
+
+> │    └── 📂 care-portal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 app.tsx
+
+> │        └── 📂 components/
+
+> │          ├── 📄 layout.tsx
+
+> │          ├── 📄 require_auth.tsx
+
+> │        ├── 📄 env.d.ts
+
+> │        ├── 📄 index.css
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 access.ts
+
+> │          ├── 📄 api.ts
+
+> │          ├── 📄 money.ts
+
+> │          ├── 📄 supabase.ts
+
+> │        ├── 📄 main.tsx
+
+> │        └── 📂 modules/
+
+> │          └── 📂 qihome/
+
+> │            ├── 📄 index.tsx
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 chores.tsx
+
+> │              ├── 📄 dashboard.tsx
+
+> │              ├── 📄 ledger.tsx
+
+> │          ├── 📄 registry.ts
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 auth.tsx
+
+> │          ├── 📄 auth_confirm.tsx
+
+> │          ├── 📄 launcher.tsx
+
+> │          ├── 📄 module_router.tsx
+
+> │          ├── 📄 tenant_home.tsx
+
+> │          ├── 📄 tenant_select.tsx
+
+> │          ├── 📄 tenant_settings.tsx
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 vite.config.ts
+
+> │    └── 📂 qivault-docs/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 netlify.toml
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.svg
+
+> │        ├── 📄 hero-icon.svg
+
+> │        ├── 📄 sitepins-manifest.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 changelogs.svg
+
+> │          ├── 📄 code-block.svg
+
+> │          ├── 📄 code-image.png
+
+> │          ├── 📄 content.svg
+
+> │          ├── 📄 cta-bg.png
+
+> │          ├── 📄 darkmode-demo.png
+
+> │          ├── 📄 doc-bg.png
+
+> │          ├── 📄 element.svg
+
+> │          ├── 📄 hero-bg-dark.png
+
+> │          ├── 📄 hero-bg-light.png
+
+> │          ├── 📄 hero-star.svg
+
+> │          ├── 📄 houston.webp
+
+> │          ├── 📄 layouts.svg
+
+> │          ├── 📄 lightmode-demo.png
+
+> │          ├── 📄 logo-dark.svg
+
+> │          ├── 📄 logo-light.svg
+
+> │          ├── 📄 overview.png
+
+> │          ├── 📄 step-1.png
+
+> │          ├── 📄 step-2.png
+
+> │          ├── 📄 step-3.png
+
+> │        └── 📂 components/
+
+> │          ├── 📄 Accordion.astro
+
+> │          ├── 📄 AccordionContainer.astro
+
+> │          ├── 📄 Breadcrumb.astro
+
+> │          ├── 📄 CTA.astro
+
+> │          ├── 📄 HeroTabs.astro
+
+> │          ├── 📄 HeroTabsItem.astro
+
+> │          ├── 📄 ImageMod.astro
+
+> │          ├── 📄 LinkButton.astro
+
+> │          ├── 📄 Section.astro
+
+> │          ├── 📄 SidebarNav.astro
+
+> │          ├── 📄 ThemeDemo.astro
+
+> │          └── 📂 override-components/
+
+> │            ├── 📄 ContentPanel.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Head.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 Hero.astro
+
+> │            ├── 📄 MobileMenuToggle.astro
+
+> │            ├── 📄 MobileTableOfContents.astro
+
+> │            ├── 📄 PageFrame.astro
+
+> │            ├── 📄 PageSidebar.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │            ├── 📄 Search.astro
+
+> │            ├── 📄 Sidebar.astro
+
+> │            ├── 📄 SidebarRestorePoint.astro
+
+> │            ├── 📄 SidebarSublist.astro
+
+> │            ├── 📄 SiteTitle.astro
+
+> │            └── 📂 TableOfContents/
+
+> │            ├── 📄 TableOfContents.astro
+
+> │              ├── 📄 TableOfContentsList.astro
+
+> │              ├── 📄 starlight-toc.ts
+
+> │            ├── 📄 ThemeSwitch.astro
+
+> │            ├── 📄 TwoColumnContent.astro
+
+> │          └── 📂 user-components/
+
+> │            ├── 📄 Button.astro
+
+> │            ├── 📄 Grid.astro
+
+> │            ├── 📄 ListCard.astro
+
+> │            ├── 📄 NewCard.astro
+
+> │        └── 📂 config/
+
+> │          ├── 📄 config.json
+
+> │          ├── 📄 locals.json
+
+> │          ├── 📄 menu.en.json
+
+> │          ├── 📄 menu.fr.json
+
+> │          ├── 📄 sidebar.json
+
+> │          ├── 📄 social.json
+
+> │          ├── 📄 theme.json
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 docs/
+
+> │            ├── 📄 404.md
+
+> │            ├── 📄 about.md
+
+> │            └── 📂 configurations/
+
+> │              ├── 📄 GitHub.md
+
+> │              ├── 📄 custom-css-js.md
+
+> │              ├── 📄 custom-domain.md
+
+> │            └── 📂 contents/
+
+> │              └── 📂 components/
+
+> │                └── 📂 Child Components/
+
+> │                  └── 📂 More Child/
+
+> │                    ├── 📄 button.md
+
+> │                  ├── 📄 new-card.md
+
+> │                ├── 📄 accordion.md
+
+> │                ├── 📄 grid.md
+
+> │                ├── 📄 list-card.md
+
+> │                ├── 📄 using-components.md
+
+> │              └── 📂 editing/
+
+> │                ├── 📄 add-new-doc.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 about.md
+
+> │              └── 📂 configurations/
+
+> │                ├── 📄 custom-css-js.md
+
+> │                ├── 📄 custom-domain.md
+
+> │                ├── 📄 github.md
+
+> │              └── 📂 contents/
+
+> │                └── 📂 components/
+
+> │                  └── 📂 Child Components/
+
+> │                    └── 📂 More Child/
+
+> │                      ├── 📄 button.md
+
+> │                    ├── 📄 new-card.md
+
+> │                  ├── 📄 accordion.md
+
+> │                  ├── 📄 grid.md
+
+> │                  ├── 📄 list-card.md
+
+> │                  ├── 📄 using-components.md
+
+> │                └── 📂 editing/
+
+> │                  ├── 📄 add-new-doc.md
+
+> │              └── 📂 getting-started/
+
+> │                └── 📂 global-settings/
+
+> │                  ├── 📄 configuration.md
+
+> │                └── 📂 introduction/
+
+> │                  ├── 📄 Quickstart.md
+
+> │                  ├── 📄 overview.mdx
+
+> │                ├── 📄 navigation.md
+
+> │              ├── 📄 index.mdx
+
+> │              ├── 📄 privacy-policy.md
+
+> │              └── 📂 reference/
+
+> │                ├── 📄 configuration.mdx
+
+> │                ├── 📄 plugin.mdx
+
+> │              ├── 📄 terms-conditions.md
+
+> │            └── 📂 getting-started/
+
+> │              └── 📂 global-settings/
+
+> │                ├── 📄 configuration.md
+
+> │              └── 📂 introduction/
+
+> │                ├── 📄 Quickstart.md
+
+> │                ├── 📄 overview.mdx
+
+> │              ├── 📄 navigation.mdx
+
+> │            └── 📂 guides/
+
+> │              ├── 📄 example.md
+
+> │            ├── 📄 index.mdx
+
+> │            ├── 📄 privacy-policy.md
+
+> │            └── 📂 reference/
+
+> │              ├── 📄 configuration.mdx
+
+> │              ├── 📄 example.md
+
+> │              ├── 📄 plugin.mdx
+
+> │            ├── 📄 terms-conditions.md
+
+> │          └── 📂 i18n/
+
+> │            ├── 📄 en.json
+
+> │            ├── 📄 fr.json
+
+> │          └── 📂 sections/
+
+> │            ├── 📄 call-to-action.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 call-to-action.md
+
+> │        └── 📂 lib/
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 languagePerser.ts
+
+> │            ├── 📄 textConverter.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 base.css
+
+> │          ├── 📄 button.css
+
+> │          ├── 📄 components.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 navigation.css
+
+> │        └── 📂 tailwind-plugin/
+
+> │          ├── 📄 tw-bs-grid.js
+
+> │          ├── 📄 tw-theme.js
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 yarn.lock
+
+> │    └── 📂 qsjournal-cms/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 backend/
+
+> │        ├── 📄 LICENSE
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 app.js
+
+> │        ├── 📄 eslint.config.js
+
+> │        └── 📂 lib/
+
+> │          └── 📂 helpers/
+
+> │            ├── 📄 area-widgets.js
+
+> │            ├── 📄 color-options.js
+
+> │            ├── 📄 typography-options.js
+
+> │          └── 📂 schema-mixins/
+
+> │            ├── 📄 card-fields.js
+
+> │            ├── 📄 hero-fields.js
+
+> │            ├── 📄 link-fields.js
+
+> │            ├── 📄 slideshow-fields.js
+
+> │        └── 📂 modules/
+
+> │          └── 📂 @apostrophecms/
+
+> │            └── 📂 admin-bar/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 asset/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 attachment/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 express/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 global/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 home-page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 page.html
+
+> │            └── 📂 i18n/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 image-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 layout-column-widget/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 notFound.html
+
+> │            └── 📂 rich-text-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 settings/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 user/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 video-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │          └── 📂 accordion-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 article/
+
+> │          └── 📂 article-page/
+
+> │            ├── 📄 index.js
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 author/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 card-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 default-page/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 hero-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 link-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 slideshow-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.png
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 load-starter-content
+
+> │          ├── 📄 update-starter-content
+
+> │        └── 📂 views/
+
+> │          ├── 📄 layout.html
+
+> │      └── 📂 frontend/
+
+> │        ├── 📄 Procfile
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 postcss.config.js
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.svg
+
+> │          └── 📂 fonts/
+
+> │            └── 📂 fontawesome/
+
+> │              ├── 📄 fa-brands-400.woff2
+
+> │              ├── 📄 fa-regular-400.woff2
+
+> │              ├── 📄 fa-solid-900.woff2
+
+> │              ├── 📄 fa-v4compatibility.woff2
+
+> │          └── 📂 images/
+
+> │            ├── 📄 image-widget-placeholder.jpg
+
+> │            ├── 📄 missing-icon.svg
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 VideoWidget.js
+
+> │            ├── 📄 dynamic-navbar-padding.js
+
+> │        └── 📂 src/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 ArticlesFilter.astro
+
+> │            ├── 📄 Figure.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 ImageLink.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │          ├── 📄 env.d.ts
+
+> │          └── 📂 layouts/
+
+> │            └── 📂 article-layouts/
+
+> │              ├── 📄 HeroGrid.astro
+
+> │              ├── 📄 ListAside.astro
+
+> │              ├── 📄 ShowFullWidth.astro
+
+> │              ├── 📄 ShowMagazine.astro
+
+> │              ├── 📄 ShowMinimal.astro
+
+> │              ├── 📄 Standard.astro
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 attachments.js
+
+> │            ├── 📄 get-layout-areas.js
+
+> │            ├── 📄 homepage-defaults.js
+
+> │            ├── 📄 use-site-config.js
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 [...slug].astro
+
+> │          └── 📂 styles/
+
+> │            ├── 📄 app.css
+
+> │            ├── 📄 main.scss
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 ArticleIndexPage.astro
+
+> │            ├── 📄 ArticleShowPage.astro
+
+> │            ├── 📄 DefaultPage.astro
+
+> │            ├── 📄 HomePage.astro
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 widgets/
+
+> │            ├── 📄 AccordionWidget.astro
+
+> │            ├── 📄 CardWidget.astro
+
+> │            ├── 📄 FileWidget.astro
+
+> │            ├── 📄 HeroWidget.astro
+
+> │            ├── 📄 ImageWidget.astro
+
+> │            ├── 📄 LinkWidget.astro
+
+> │            ├── 📄 RichTextWidget.astro
+
+> │            ├── 📄 SlideshowWidget.astro
+
+> │            ├── 📄 VideoWidget.astro
+
+> │            ├── 📄 index.js
+
+> │        ├── 📄 tsconfig.json
+
+> │      ├── 📄 package.json
+
+> │  └── 📂 public/
+
+> │    └── 📂 qially-main/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 src/
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 qsaysit_blog/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 qially-main/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.ico
+
+> │          ├── 📄 favicon.svg
+
+> │        └── 📂 src/
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 index.astro
+
+> │        ├── 📄 tsconfig.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 content/
+
+> │          ├── 📄 config.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │  └── 📂 tools/
+
+> │    └── 📂 playwrite/
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 playwright.config.ts
+
+> │      └── 📂 tests/
+
+> │        ├── 📄 example.spec.ts
+
+> │    └── 📂 qitax-cli/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 qitax_cli/
+
+> │        ├── 📄 __init__.py
+
+> │        ├── 📄 __main__.py
+
+> │        ├── 📄 service.py
+
+> │        ├── 📄 storage.py
+
+> │      ├── 📄 requirements.txt
+
+> └── 📂 content/
+
+> │  └── 📂 Vault-Public/
+
+> │    └── 📂 QSaysIt-Blog/
+
+> │      └── 📂 2026/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 bootstrap_tenant.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 001_init_qione.sql
+
+> │      ├── 📄 002_qihome_mvp.sql
+
+> │      ├── 📄 003_qitax_returns.sql
+
+> │      ├── 📄 003a_qitax_seed.sql
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> ├── 📄 pnpm-lock.yaml
+
+> ├── 📄 pnpm-workspace.yaml
+
+> └── 📂 scripts/
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> └── 📄 turbo.json
+
 > ```
 
 ### Assistant

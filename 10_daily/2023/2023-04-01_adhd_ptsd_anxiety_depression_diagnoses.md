@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "ADHD, PTSD, anxiety, depression diagnoses"
 slug: "adhd_ptsd_anxiety_depression_diagnoses"
 summary: ""
 status: active
 created_at: "2023-04-01"
-updated_at: "2023-04-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2929eb544dff4b4e9d69a2dfd09036c4
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-04-01
 ---
+
 # ADHD, PTSD, anxiety, depression diagnoses
 
 Category: Health

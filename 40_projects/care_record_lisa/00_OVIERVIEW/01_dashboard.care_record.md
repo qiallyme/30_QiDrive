@@ -3,13 +3,13 @@ layout: page
 title: Care Record Dashboard
 slug: care-record-dashboard
 status: active
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2ebc6677306643369b0b346a7bc7cb76
 canonical_ref: ""
 template_key: master-template
 ---

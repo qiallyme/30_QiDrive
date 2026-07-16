@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 50 Legacy Salvage
-slug: ""
+slug: 50-legacy-salvage
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 083a902e7e15400090df58e2da505441
 canonical_ref: ""
 source_type: manual
 template_key: master-template

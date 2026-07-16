@@ -3,9 +3,9 @@ layout: page
 title: "Evansville and Spirituality"
 slug: "evansville_and_spirituality"
 created_at: "2026-01-12 07:22:22"
-updated_at: "2026-01-12 07:22:22"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

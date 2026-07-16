@@ -3,9 +3,9 @@ layout: page
 title: "Organizing Priorities and Systems"
 slug: "organizing_priorities_and_systems"
 created_at: "2026-05-30 08:43:49"
-updated_at: "2026-05-30 08:43:49"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -536,85 +536,158 @@ canonical_ref: ""
 > ```
 
 ### User
-> its taking too long to enter this stuff and its stressign me out, can we use the api, here are my moms bills, we have not got a gas bill yet, but we got a light bill but its paid by medicare and cape this time so we have a credit balance. and i need to add astound for our internet and phones. moms bills. Monthly Budget					
-> Bills			Due	Amt	totals
-> Affirm			01/29/2002	69.73	
-> Rent			01/03/2026	213.00	
-> Capital One			01/03/2026	25.00	
-> Credit One			01/05/2026	30.00	
-> Hulu			01/05/2026	11.99	
-> Google Storage			01/08/2026	1.99	
-> Direct Auto			01/13/2026	83.97	
-> AT&T			01/13/2026	30.00	
-> Discovery +			01/14/2026	9.99	
-> Astound			01/20/2026	30.00	
-> Amazon Card			01/21/2026	29.00	
-> Credit One 2			01/21/2026	60.00	
-> Amazon Prime			01/29/2025	6.99	
-> Parklawn			01/29/2025	79.00	
-> Salary (Net)			$1,006.00		
-> Excess			$325.34		
-> Total			$680.66		
-> Expenses					$680.66
-> 					
-> 					
-> 			Budget Total		
-> 			Bills		$680.66 
-> 			Left Over		$346.70 
-> 			% Used		68066%
+> its taking too long to enter this stuff and its stressign me out, can we use the api, here are my moms bills, we have not got a gas bill yet, but we got a light bill but its paid by medicare and cape this time so we have a credit balance. and i need to add astound for our internet and phones. moms bills. Monthly Budget					
+
+> Bills			Due	Amt	totals
+
+> Affirm			01/29/2002	69.73	
+
+> Rent			01/03/2026	213.00	
+
+> Capital One			01/03/2026	25.00	
+
+> Credit One			01/05/2026	30.00	
+
+> Hulu			01/05/2026	11.99	
+
+> Google Storage			01/08/2026	1.99	
+
+> Direct Auto			01/13/2026	83.97	
+
+> AT&T			01/13/2026	30.00	
+
+> Discovery +			01/14/2026	9.99	
+
+> Astound			01/20/2026	30.00	
+
+> Amazon Card			01/21/2026	29.00	
+
+> Credit One 2			01/21/2026	60.00	
+
+> Amazon Prime			01/29/2025	6.99	
+
+> Parklawn			01/29/2025	79.00	
+
+> Salary (Net)			$1,006.00		
+
+> Excess			$325.34		
+
+> Total			$680.66		
+
+> Expenses					$680.66
+
+> 					
+
+> 					
+
+> 			Budget Total		
+
+> 			Bills		$680.66 
+
+> 			Left Over		$346.70 
+
+> 			% Used		68066%
+
 > 			% Left Over		34670%
 > 
-> Household Monthly Bill Tracker					
-> 					
-> Total Bills		Split		Split Weekly	
-> $1,350.00		$450		$104	
-> 					
-> Bill Name	Amount	Due Date	Category	Status	Notes
-> Rent	$700.00	1st	Housing	Pending	Confirmed
-> Electric	$160.00	10th	Utilities	Pending	Estimated
-> Water	$80.00	15th	Utilities	Pending	Estimated
-> Internet	$40.00	20th	Utilities	Pending	Estimated
-> Car Insurance	$50.00	5th	Insurance	Pending	Estimated
-> Supplies	$20.00	25th	Household	Pending	Estimated
-> Pet Expenses	$20.00	N/A	Pet	Pending	Estimated
-> Savings	$20.00	N/A	Savings	Pending	Estimated
-> Washer and Dryer	$132.00	$33 due weekly	Laundry	Pending	Confirmed
+> Household Monthly Bill Tracker					
+
+> 					
+
+> Total Bills		Split		Split Weekly	
+
+> $1,350.00		$450		$104	
+
+> 					
+
+> Bill Name	Amount	Due Date	Category	Status	Notes
+
+> Rent	$700.00	1st	Housing	Pending	Confirmed
+
+> Electric	$160.00	10th	Utilities	Pending	Estimated
+
+> Water	$80.00	15th	Utilities	Pending	Estimated
+
+> Internet	$40.00	20th	Utilities	Pending	Estimated
+
+> Car Insurance	$50.00	5th	Insurance	Pending	Estimated
+
+> Supplies	$20.00	25th	Household	Pending	Estimated
+
+> Pet Expenses	$20.00	N/A	Pet	Pending	Estimated
+
+> Savings	$20.00	N/A	Savings	Pending	Estimated
+
+> Washer and Dryer	$132.00	$33 due weekly	Laundry	Pending	Confirmed
+
 > Groceries	$128.00	1st	Grocery	Pending	Estimated
 > 
-> Personal Monthly Bill Tracker					
-> 					
-> Total Bills		Remaining Balance			
-> $173.99		$173.99			
-> 					
-> Bill Name	Amount	Due Date	Category	Status	Notes
-> Eleven Labs	$5.00	27th	Ai	Pending	
-> ChatGPT	$24.00	25th	Ai	Pending	
-> Briget	$52.99	30th	Loans	Pending	
-> CashApp Loans	$45.00	20th	Loans	Pending	
-> Afterpay Loans	$20.00	5th	Loans	Pending	
+> Personal Monthly Bill Tracker					
+
+> 					
+
+> Total Bills		Remaining Balance			
+
+> $173.99		$173.99			
+
+> 					
+
+> Bill Name	Amount	Due Date	Category	Status	Notes
+
+> Eleven Labs	$5.00	27th	Ai	Pending	
+
+> ChatGPT	$24.00	25th	Ai	Pending	
+
+> Briget	$52.99	30th	Loans	Pending	
+
+> CashApp Loans	$45.00	20th	Loans	Pending	
+
+> Afterpay Loans	$20.00	5th	Loans	Pending	
+
 > Tello Phone	$27.00	3rd	Phone	Pending	
 > 
-> 	Personal Debt Tracker											
-> 												
-> 	Total Debt		Total Minimum Payments									
-> 	$5,352.32		$79.00									
-> 												
-> 	Creditor	Account Number	Balance	Minimum Payment	Due Date	Status	Notes					
-> 	REGIONALFN	1120************				Pending						
-> 	CAPITAL ONE	5178************				Pending						
-> 	VERIZON WIRELESS	685621**********				Pending						
-> 	BMO BANK	526947**********				Pending						
-> 	CAPITAL ONE	4003************				Pending						
-> 	AMEX	349992**********				Pending						
-> 	SYNCB/AMAZ	604578**********				Pending						
-> 	CAPITAL ONE	5528************				Pending						
-> 	Citicards Cbna	5189************				Pending						
-> 	GS BANKUSA	110001**********				Pending						
-> 	JPMCB CARD	5213************				Pending						
-> 	JPMCB CARD	4246************				Pending						
-> 	JPMCD CARD	4266************				Pending						
-> 	American Express	52006	$5,352.32			Pending						
-> 	Bank of America	1404				Pending	Credit Control, LLC					
+> 	Personal Debt Tracker											
+
+> 												
+
+> 	Total Debt		Total Minimum Payments									
+
+> 	$5,352.32		$79.00									
+
+> 												
+
+> 	Creditor	Account Number	Balance	Minimum Payment	Due Date	Status	Notes					
+
+> 	REGIONALFN	1120************				Pending						
+
+> 	CAPITAL ONE	5178************				Pending						
+
+> 	VERIZON WIRELESS	685621**********				Pending						
+
+> 	BMO BANK	526947**********				Pending						
+
+> 	CAPITAL ONE	4003************				Pending						
+
+> 	AMEX	349992**********				Pending						
+
+> 	SYNCB/AMAZ	604578**********				Pending						
+
+> 	CAPITAL ONE	5528************				Pending						
+
+> 	Citicards Cbna	5189************				Pending						
+
+> 	GS BANKUSA	110001**********				Pending						
+
+> 	JPMCB CARD	5213************				Pending						
+
+> 	JPMCB CARD	4246************				Pending						
+
+> 	JPMCD CARD	4266************				Pending						
+
+> 	American Express	52006	$5,352.32			Pending						
+
+> 	Bank of America	1404				Pending	Credit Control, LLC					
+
 > 	Self Visa			$79.00		Pending
 
 ### Assistant
@@ -1138,84 +1211,162 @@ canonical_ref: ""
 > One more thing: do **not** paste the Firefly token here. Keep that little gremlin private.
 
 ### User
-> FAILED:  Mom - Capital One
-> ERROR 401 creating Mom - Credit One
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Credit One
-> ERROR 401 creating Mom - Hulu
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Hulu
-> ERROR 401 creating Mom - Google Storage
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Google Storage
-> ERROR 401 creating Mom - Direct Auto
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Direct Auto
-> ERROR 401 creating Mom - AT&T
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - AT&T
-> ERROR 401 creating Mom - Discovery+
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Discovery+
-> ERROR 401 creating Mom - Astound
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Astound
-> ERROR 401 creating Mom - Amazon Card
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Amazon Card
-> ERROR 401 creating Mom - Credit One 2
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Credit One 2
-> ERROR 401 creating Mom - Amazon Prime
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Amazon Prime
-> ERROR 401 creating Mom - Parklawn
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Mom - Parklawn
-> ERROR 401 creating Shared Home - Rent
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Rent
-> ERROR 401 creating Shared Home - Electric
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Electric
-> ERROR 401 creating Shared Home - Water
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Water
-> ERROR 401 creating Shared Home - Astound Internet & Phones
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Astound Internet & Phones
-> ERROR 401 creating Shared Home - Car Insurance
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Car Insurance
-> ERROR 401 creating Shared Home - Supplies
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Supplies
-> ERROR 401 creating Shared Home - Washer and Dryer
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Washer and Dryer
-> ERROR 401 creating Shared Home - Groceries
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Shared Home - Groceries
-> ERROR 401 creating Cody - ElevenLabs
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - ElevenLabs
-> ERROR 401 creating Cody - ChatGPT
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - ChatGPT
-> ERROR 401 creating Cody - Brigit
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - Brigit
-> ERROR 401 creating Cody - Cash App Loans
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - Cash App Loans
-> ERROR 401 creating Cody - Afterpay Loans
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - Afterpay Loans
-> ERROR 401 creating Cody - Tello Phone
-> {"message":"Unauthenticated.","exception":"AuthenticationException"}
-> FAILED:  Cody - Tello Phone
-> 
-> Done. Created: 0. Failed: 28.
+> FAILED:  Mom - Capital One
+
+> ERROR 401 creating Mom - Credit One
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Credit One
+
+> ERROR 401 creating Mom - Hulu
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Hulu
+
+> ERROR 401 creating Mom - Google Storage
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Google Storage
+
+> ERROR 401 creating Mom - Direct Auto
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Direct Auto
+
+> ERROR 401 creating Mom - AT&T
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - AT&T
+
+> ERROR 401 creating Mom - Discovery+
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Discovery+
+
+> ERROR 401 creating Mom - Astound
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Astound
+
+> ERROR 401 creating Mom - Amazon Card
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Amazon Card
+
+> ERROR 401 creating Mom - Credit One 2
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Credit One 2
+
+> ERROR 401 creating Mom - Amazon Prime
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Amazon Prime
+
+> ERROR 401 creating Mom - Parklawn
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Mom - Parklawn
+
+> ERROR 401 creating Shared Home - Rent
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Rent
+
+> ERROR 401 creating Shared Home - Electric
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Electric
+
+> ERROR 401 creating Shared Home - Water
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Water
+
+> ERROR 401 creating Shared Home - Astound Internet & Phones
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Astound Internet & Phones
+
+> ERROR 401 creating Shared Home - Car Insurance
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Car Insurance
+
+> ERROR 401 creating Shared Home - Supplies
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Supplies
+
+> ERROR 401 creating Shared Home - Washer and Dryer
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Washer and Dryer
+
+> ERROR 401 creating Shared Home - Groceries
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Shared Home - Groceries
+
+> ERROR 401 creating Cody - ElevenLabs
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - ElevenLabs
+
+> ERROR 401 creating Cody - ChatGPT
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - ChatGPT
+
+> ERROR 401 creating Cody - Brigit
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - Brigit
+
+> ERROR 401 creating Cody - Cash App Loans
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - Cash App Loans
+
+> ERROR 401 creating Cody - Afterpay Loans
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - Afterpay Loans
+
+> ERROR 401 creating Cody - Tello Phone
+
+> {"message":"Unauthenticated.","exception":"AuthenticationException"}
+
+> FAILED:  Cody - Tello Phone
+
+> 
+
+> Done. Created: 0. Failed: 28.
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -1304,38 +1455,70 @@ canonical_ref: ""
 > You probably used the **wrong token type** or the token didn’t actually make it into the PowerShell environment. Firefly is saying “I don’t know you,” not “your bill data is bad.”
 
 ### User
-> This creates bill records only. It does not create transactions.
-> 
-> CREATED: Mom - Affirm - $69.73
-> CREATED: Mom - Rent - $213.00
-> CREATED: Mom - Capital One - $25.00
-> CREATED: Mom - Credit One - $30.00
-> CREATED: Mom - Hulu - $11.99
-> CREATED: Mom - Google Storage - $1.99
-> CREATED: Mom - Direct Auto - $83.97
-> CREATED: Mom - AT&T - $30.00
-> CREATED: Mom - Discovery+ - $9.99
-> CREATED: Mom - Astound - $30.00
-> CREATED: Mom - Amazon Card - $29.00
-> CREATED: Mom - Credit One 2 - $60.00
-> CREATED: Mom - Amazon Prime - $6.99
-> CREATED: Mom - Parklawn - $79.00
-> CREATED: Shared Home - Rent - $700.00
-> CREATED: Shared Home - Electric - $160.00
-> CREATED: Shared Home - Water - $80.00
-> CREATED: Shared Home - Astound Internet & Phones - $30.00
-> CREATED: Shared Home - Car Insurance - $50.00
-> CREATED: Shared Home - Supplies - $20.00
-> CREATED: Shared Home - Washer and Dryer - $132.00
-> CREATED: Shared Home - Groceries - $128.00
-> CREATED: Cody - ElevenLabs - $5.00
-> CREATED: Cody - ChatGPT - $24.00
-> CREATED: Cody - Brigit - $52.99
-> CREATED: Cody - Cash App Loans - $45.00
-> CREATED: Cody - Afterpay Loans - $20.00
-> CREATED: Cody - Tello Phone - $27.00
-> 
-> Done. Created: 28. Failed: 0.
+> This creates bill records only. It does not create transactions.
+
+> 
+
+> CREATED: Mom - Affirm - $69.73
+
+> CREATED: Mom - Rent - $213.00
+
+> CREATED: Mom - Capital One - $25.00
+
+> CREATED: Mom - Credit One - $30.00
+
+> CREATED: Mom - Hulu - $11.99
+
+> CREATED: Mom - Google Storage - $1.99
+
+> CREATED: Mom - Direct Auto - $83.97
+
+> CREATED: Mom - AT&T - $30.00
+
+> CREATED: Mom - Discovery+ - $9.99
+
+> CREATED: Mom - Astound - $30.00
+
+> CREATED: Mom - Amazon Card - $29.00
+
+> CREATED: Mom - Credit One 2 - $60.00
+
+> CREATED: Mom - Amazon Prime - $6.99
+
+> CREATED: Mom - Parklawn - $79.00
+
+> CREATED: Shared Home - Rent - $700.00
+
+> CREATED: Shared Home - Electric - $160.00
+
+> CREATED: Shared Home - Water - $80.00
+
+> CREATED: Shared Home - Astound Internet & Phones - $30.00
+
+> CREATED: Shared Home - Car Insurance - $50.00
+
+> CREATED: Shared Home - Supplies - $20.00
+
+> CREATED: Shared Home - Washer and Dryer - $132.00
+
+> CREATED: Shared Home - Groceries - $128.00
+
+> CREATED: Cody - ElevenLabs - $5.00
+
+> CREATED: Cody - ChatGPT - $24.00
+
+> CREATED: Cody - Brigit - $52.99
+
+> CREATED: Cody - Cash App Loans - $45.00
+
+> CREATED: Cody - Afterpay Loans - $20.00
+
+> CREATED: Cody - Tello Phone - $27.00
+
+> 
+
+> Done. Created: 28. Failed: 0.
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -1529,22 +1712,38 @@ canonical_ref: ""
 > You already got the win. Put the wrench down before you start “improving” the car while it’s running.
 
 ### User
-> can we import zais transactions to his ledger. Trans ID	Transaction Date	Transaction Description	Debit (+)	Credit (-)	Balance	Bank Fee	Balance After Fees	Transaction Category	Transaction Notes
-> TRANS-3	1-Dec-24	Balance Forward	$5,570.00 	$0.00 	5570	$0.00 	 $ 5,570.00 	Multiple	Honda Accident and backed rent payments 
-> TRANS-9	1-Dec-24	For Food Cody	$0.00 	$10.00 	-10	$0.00 	 $ (10.00)	Rent Payment	
-> TRANS-10	1-Dec-24	Cash Withdrawl	$0.00 	$188.99 	-188.99	($6.76)	 $ (182.23)	Transfer	
-> TRANS-16	1-Dec-24		$98.55 	$0.00 	98.55	$0.00 	 $ 98.55 	Transfer	
-> TRANS-14	3-Dec-24		$50.00 	$58.05 	-8.05	$0.00 	 $ (8.05)	Entertainment-Kriko	
-> TRANS-15	3-Dec-24		$0.00 	$1.45 	-1.45	$0.00 	 $ (1.45)	Transfer	
-> TRANS-11	5-Dec-24		$0.00 	$5.00 	-5	$0.23 	 $ (5.23)	Rent Payment	
-> TRANS-12	5-Dec-24		$0.00 	$82.00 	-82	$2.23 	 $ (84.23)		
-> TRANS-13	5-Dec-24		$0.00 	$50.00 	-50	$1.40 	 $ (51.40)		
-> TRANS-1	7-Dec-24	Kriko Entertainment-Gifts	$0.00 	$16.00 	-16	$0.00 	 $ (16.00)	Entertainment-Kriko	Provided a portion from the orginal Purchase of $50.00 still need to provide the other $34.00
-> TRANS-4	10-Dec-24	Entertainment-Gifts	$138.00 	$0.00 	138	$4.98 	 $ 133.02 	Entertainment-Kriko	60 for one listed 40 for the difference gets a little over 1/2 .68
-> TRANS-5	10-Dec-24	Entertainment-Gifts	$14.00 	$0.00 	14	$0.00 	 $ 14.00 	Entertainment-Kriko	Owed one gram
-> TRANS-6	10-Dec-24	Tesla Charger	$0.00 	$21.00 	-21	$0.00 	 $ (21.00)	Fuel	n/a
-> TRANS-7	10-Dec-24	Tesla Charger	$0.00 	$50.00 	-50	$0.00 	 $ (50.00)	Rent Payment	n/a
-> TRANS-8	10-Dec-24	For Food	$40.00 	$0.00 	40	$0.20 	 $ 39.80 	Entertainment-Kriko	n/a
+> can we import zais transactions to his ledger. Trans ID	Transaction Date	Transaction Description	Debit (+)	Credit (-)	Balance	Bank Fee	Balance After Fees	Transaction Category	Transaction Notes
+
+> TRANS-3	1-Dec-24	Balance Forward	$5,570.00 	$0.00 	5570	$0.00 	 $ 5,570.00 	Multiple	Honda Accident and backed rent payments 
+
+> TRANS-9	1-Dec-24	For Food Cody	$0.00 	$10.00 	-10	$0.00 	 $ (10.00)	Rent Payment	
+
+> TRANS-10	1-Dec-24	Cash Withdrawl	$0.00 	$188.99 	-188.99	($6.76)	 $ (182.23)	Transfer	
+
+> TRANS-16	1-Dec-24		$98.55 	$0.00 	98.55	$0.00 	 $ 98.55 	Transfer	
+
+> TRANS-14	3-Dec-24		$50.00 	$58.05 	-8.05	$0.00 	 $ (8.05)	Entertainment-Kriko	
+
+> TRANS-15	3-Dec-24		$0.00 	$1.45 	-1.45	$0.00 	 $ (1.45)	Transfer	
+
+> TRANS-11	5-Dec-24		$0.00 	$5.00 	-5	$0.23 	 $ (5.23)	Rent Payment	
+
+> TRANS-12	5-Dec-24		$0.00 	$82.00 	-82	$2.23 	 $ (84.23)		
+
+> TRANS-13	5-Dec-24		$0.00 	$50.00 	-50	$1.40 	 $ (51.40)		
+
+> TRANS-1	7-Dec-24	Kriko Entertainment-Gifts	$0.00 	$16.00 	-16	$0.00 	 $ (16.00)	Entertainment-Kriko	Provided a portion from the orginal Purchase of $50.00 still need to provide the other $34.00
+
+> TRANS-4	10-Dec-24	Entertainment-Gifts	$138.00 	$0.00 	138	$4.98 	 $ 133.02 	Entertainment-Kriko	60 for one listed 40 for the difference gets a little over 1/2 .68
+
+> TRANS-5	10-Dec-24	Entertainment-Gifts	$14.00 	$0.00 	14	$0.00 	 $ 14.00 	Entertainment-Kriko	Owed one gram
+
+> TRANS-6	10-Dec-24	Tesla Charger	$0.00 	$21.00 	-21	$0.00 	 $ (21.00)	Fuel	n/a
+
+> TRANS-7	10-Dec-24	Tesla Charger	$0.00 	$50.00 	-50	$0.00 	 $ (50.00)	Rent Payment	n/a
+
+> TRANS-8	10-Dec-24	For Food	$40.00 	$0.00 	40	$0.20 	 $ 39.80 	Entertainment-Kriko	n/a
+
 > 									
 > 
 > Zaitullah Jan Ledger
@@ -2548,23 +2747,40 @@ canonical_ref: ""
 
 ### User
 > ok here is an expense summary i needed for joels case i would like to just reformat it and save it as pdf to remove it from my financial sheets. Gastos Relacionados Con Honduras				"Expected Expenses 2023
-> Gastos Esperados 2023"		
-> Cambio Promedio 2022 (L 24.34)				Cambio Promedio 2023 (L 24.34)		
-> January - December 2022				January - December 2023		
-> 						
-> 	$ Total	L Total			$ Total	L Total
->       Honduras	Dollar	Limpira		      Honduras	Dollar	Limpira
-> Recargos Bancarias	 $ 102.35 	 L 2,491.20 		Recargos Bancarias	 $ 90.00 	 L 2,190.60 
-> Legales	 $ 1,642.42 	 L 39,976.50 		Legales	 $ 5,000.00 	 L 121,700.00 
-> Gastos de Subsistencia (Envios)	 $ 10,441.74 	 L 254,151.95 		Gastos de Subsistencia (Envios)	 $ 12,000.00 	 L 292,080.00 
-> Comidas	 $ 4,605.66 	 L 112,101.76 		Comidas	 $ 6,000.00 	 L 146,040.00 
-> Farmacias	 $ 479.69 	 L 11,675.65 		Farmacias	 $ 800.00 	 L 19,472.00 
-> Viajes	 $ 2,191.97 	 L 53,352.55 		Viajes	 $ 3,800.00 	 L 92,492.00 
->       Total Honduras	$ 19,463.83  	 L 473,749.62 		      Total Honduras	$ 27,690.00  	 L 673,974.60 
-> 						
-> Friday, Dec 23, 2022 02:16:04 PM GMT-8 - Accrual Basis						
-> English: This is a summary of all expenses related to or in Honduras to date there have been approximately $20,000 spent in living, legal and travel costs.				English: If there are no changes in the near future we will again be required to spend up to $30k in honduras during 2023 instead of in the US.		
-> 						
+> Gastos Esperados 2023"		
+
+> Cambio Promedio 2022 (L 24.34)				Cambio Promedio 2023 (L 24.34)		
+
+> January - December 2022				January - December 2023		
+
+> 						
+
+> 	$ Total	L Total			$ Total	L Total
+
+>       Honduras	Dollar	Limpira		      Honduras	Dollar	Limpira
+
+> Recargos Bancarias	 $ 102.35 	 L 2,491.20 		Recargos Bancarias	 $ 90.00 	 L 2,190.60 
+
+> Legales	 $ 1,642.42 	 L 39,976.50 		Legales	 $ 5,000.00 	 L 121,700.00 
+
+> Gastos de Subsistencia (Envios)	 $ 10,441.74 	 L 254,151.95 		Gastos de Subsistencia (Envios)	 $ 12,000.00 	 L 292,080.00 
+
+> Comidas	 $ 4,605.66 	 L 112,101.76 		Comidas	 $ 6,000.00 	 L 146,040.00 
+
+> Farmacias	 $ 479.69 	 L 11,675.65 		Farmacias	 $ 800.00 	 L 19,472.00 
+
+> Viajes	 $ 2,191.97 	 L 53,352.55 		Viajes	 $ 3,800.00 	 L 92,492.00 
+
+>       Total Honduras	$ 19,463.83  	 L 473,749.62 		      Total Honduras	$ 27,690.00  	 L 673,974.60 
+
+> 						
+
+> Friday, Dec 23, 2022 02:16:04 PM GMT-8 - Accrual Basis						
+
+> English: This is a summary of all expenses related to or in Honduras to date there have been approximately $20,000 spent in living, legal and travel costs.				English: If there are no changes in the near future we will again be required to spend up to $30k in honduras during 2023 instead of in the US.		
+
+> 						
+
 > Español: Este es un resumen de todos los gastos relacionados con o en Honduras hasta la fecha se han gastado aproximadamente $20,000 en costos de vida, legales y de viaje.				Español: Si no hay cambios en el futuro cercano, nuevamente se nos requerirá gastar hasta $30k en Honduras durante 2023 en lugar de en los EE. UU.
 
 ### Assistant

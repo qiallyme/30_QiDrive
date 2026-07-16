@@ -3,9 +3,9 @@ layout: page
 title: "Romantic Partner Communication Insights."
 slug: "romantic_partner_communication_insights"
 created_at: "2023-07-26 17:15:09"
-updated_at: "2023-07-26 17:15:09"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

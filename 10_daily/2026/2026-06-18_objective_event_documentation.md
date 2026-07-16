@@ -3,9 +3,9 @@ layout: page
 title: "Objective Event Documentation"
 slug: "objective_event_documentation"
 created_at: "2026-06-18 14:53:45"
-updated_at: "2026-06-18 14:53:45"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -374,185 +374,364 @@ canonical_ref: ""
 > That is clean. That is buildable. That is actually useful.
 
 ### User
-> sjo i opened up cadence ina  brand new folder just to see what it looks like on its own to maybe help me then import inforamtion accordinly. # File Tree: _QsCadence
-> 
-> **Generated:** 6/18/2026, 3:42:56 PM
-> **Root Path:** `c:\QiLabs\_QsCadence`
-> 
-> ```
-> ├── .obsidian
-> │   ├── plugins
-> │   │   ├── 3d-graph-new
-> │   │   │   ├── data.json
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── better-export-pdf
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── cadence-planner
-> │   │   │   ├── data.json
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── copy-document-as-html
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── csv-obsidian
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── hledger
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── notes-merger
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── obsidian-audio-player
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── obsidian-csv-table
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── obsidian-enhancing-export
-> │   │   │   ├── lua
-> │   │   │   │   ├── citefilter.lua
-> │   │   │   │   ├── markdown+hugo.lua
-> │   │   │   │   ├── markdown.lua
-> │   │   │   │   ├── math_block.lua
-> │   │   │   │   ├── newline_to_para.lua
-> │   │   │   │   ├── pdf.lua
-> │   │   │   │   ├── polyfill.lua
-> │   │   │   │   ├── shift_headings.lua
-> │   │   │   │   └── url.lua
-> │   │   │   ├── textemplate
-> │   │   │   │   ├── dissertation.tex
-> │   │   │   │   ├── neurips.sty
-> │   │   │   │   └── neurips.tex
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── obsidian-html-plugin
-> │   │   │   ├── data.json
-> │   │   │   ├── main.js
-> │   │   │   └── manifest.json
-> │   │   ├── obsidian-pandoc
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── smart-relations
-> │   │   │   ├── _corpus_stats.json
-> │   │   │   ├── _document_stats.json
-> │   │   │   ├── _ngram_index.json
-> │   │   │   ├── _relation_graph.json
-> │   │   │   ├── _tag_cooccurrence.json
-> │   │   │   ├── _term_index.json
-> │   │   │   ├── _uuid_index.json
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── tags-routes
-> │   │   │   ├── data.json
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   ├── vault-timeline
-> │   │   │   ├── data.json
-> │   │   │   ├── main.js
-> │   │   │   ├── manifest.json
-> │   │   │   └── styles.css
-> │   │   └── webpage-html-export
-> │   │       ├── data.json
-> │   │       ├── main.js
-> │   │       ├── manifest.json
-> │   │       └── styles.css
-> │   ├── snippets
-> │   ├── themes
-> │   │   ├── Sodalite
-> │   │   │   ├── manifest.json
-> │   │   │   └── theme.css
-> │   │   ├── Things 3
-> │   │   │   ├── manifest.json
-> │   │   │   └── theme.css
-> │   │   ├── Transient
-> │   │   │   ├── manifest.json
-> │   │   │   └── theme.css
-> │   │   ├── deeper work
-> │   │   │   ├── manifest.json
-> │   │   │   └── theme.css
-> │   │   └── obsidian-qially-theme
-> │   │       ├── .github
-> │   │       │   └── workflows
-> │   │       │       └── release-version.yml
-> │   │       ├── .editorconfig
-> │   │       ├── .gitignore
-> │   │       ├── README.md
-> │   │       ├── manifest.json
-> │   │       ├── package.json
-> │   │       ├── theme.css
-> │   │       ├── version-bump.mjs
-> │   │       └── versions.json
-> │   ├── app.json
-> │   ├── appearance.json
-> │   ├── backlink.json
-> │   ├── canvas.json
-> │   ├── community-plugins.json
-> │   ├── core-plugins.json
-> │   ├── graph.json
-> │   ├── types.json
-> │   ├── webviewer.json
-> │   └── workspace.json
-> ├── Cadence
-> │   ├── Activities
-> │   │   ├── Setting Up Cadence.md
-> │   │   └── Test Call.md
-> │   ├── Certifications
-> │   │   └── test.md
-> │   ├── Commissions
-> │   │   └── test.md
-> │   ├── Companies
-> │   │   └── ZZTop Inc..md
-> │   ├── Contacts
-> │   │   ├── Cody.md
-> │   │   └── ZZTop.md
-> │   ├── Leads
-> │   │   └── test.md
-> │   ├── Partners
-> │   │   └── ZZTop Inc..md
-> │   ├── Pipeline
-> │   │   └── Test Deal.md
-> │   ├── Projects
-> │   │   ├── Moms_Care.md
-> │   │   └── Test Project.md
-> │   ├── Registrations
-> │   │   └── Test Registration.md
-> │   ├── Sequences
-> │   │   └── test.md
-> │   └── Templates
-> │       ├── activity.md
-> │       ├── certification.md
-> │       ├── commission.md
-> │       ├── company.md
-> │       ├── contact.md
-> │       ├── daily.md
-> │       ├── deal.md
-> │       ├── lead.md
-> │       ├── partner.md
-> │       ├── project.md
-> │       ├── registration.md
-> │       └── sequence.md
-> └── daily
->     ├── 2026-06-18.md
->     └── 2026-06-19.md
-> ```
-> 
-> ---
+> sjo i opened up cadence ina  brand new folder just to see what it looks like on its own to maybe help me then import inforamtion accordinly. # File Tree: _QsCadence
+
+> 
+
+> **Generated:** 6/18/2026, 3:42:56 PM
+
+> **Root Path:** `c:\QiLabs\_QsCadence`
+
+> 
+
+> ```
+
+> ├── .obsidian
+
+> │   ├── plugins
+
+> │   │   ├── 3d-graph-new
+
+> │   │   │   ├── data.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── better-export-pdf
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── cadence-planner
+
+> │   │   │   ├── data.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── copy-document-as-html
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── csv-obsidian
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── hledger
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── notes-merger
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── obsidian-audio-player
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── obsidian-csv-table
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── obsidian-enhancing-export
+
+> │   │   │   ├── lua
+
+> │   │   │   │   ├── citefilter.lua
+
+> │   │   │   │   ├── markdown+hugo.lua
+
+> │   │   │   │   ├── markdown.lua
+
+> │   │   │   │   ├── math_block.lua
+
+> │   │   │   │   ├── newline_to_para.lua
+
+> │   │   │   │   ├── pdf.lua
+
+> │   │   │   │   ├── polyfill.lua
+
+> │   │   │   │   ├── shift_headings.lua
+
+> │   │   │   │   └── url.lua
+
+> │   │   │   ├── textemplate
+
+> │   │   │   │   ├── dissertation.tex
+
+> │   │   │   │   ├── neurips.sty
+
+> │   │   │   │   └── neurips.tex
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── obsidian-html-plugin
+
+> │   │   │   ├── data.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   └── manifest.json
+
+> │   │   ├── obsidian-pandoc
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── smart-relations
+
+> │   │   │   ├── _corpus_stats.json
+
+> │   │   │   ├── _document_stats.json
+
+> │   │   │   ├── _ngram_index.json
+
+> │   │   │   ├── _relation_graph.json
+
+> │   │   │   ├── _tag_cooccurrence.json
+
+> │   │   │   ├── _term_index.json
+
+> │   │   │   ├── _uuid_index.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── tags-routes
+
+> │   │   │   ├── data.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   ├── vault-timeline
+
+> │   │   │   ├── data.json
+
+> │   │   │   ├── main.js
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── styles.css
+
+> │   │   └── webpage-html-export
+
+> │   │       ├── data.json
+
+> │   │       ├── main.js
+
+> │   │       ├── manifest.json
+
+> │   │       └── styles.css
+
+> │   ├── snippets
+
+> │   ├── themes
+
+> │   │   ├── Sodalite
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── theme.css
+
+> │   │   ├── Things 3
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── theme.css
+
+> │   │   ├── Transient
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── theme.css
+
+> │   │   ├── deeper work
+
+> │   │   │   ├── manifest.json
+
+> │   │   │   └── theme.css
+
+> │   │   └── obsidian-qially-theme
+
+> │   │       ├── .github
+
+> │   │       │   └── workflows
+
+> │   │       │       └── release-version.yml
+
+> │   │       ├── .editorconfig
+
+> │   │       ├── .gitignore
+
+> │   │       ├── README.md
+
+> │   │       ├── manifest.json
+
+> │   │       ├── package.json
+
+> │   │       ├── theme.css
+
+> │   │       ├── version-bump.mjs
+
+> │   │       └── versions.json
+
+> │   ├── app.json
+
+> │   ├── appearance.json
+
+> │   ├── backlink.json
+
+> │   ├── canvas.json
+
+> │   ├── community-plugins.json
+
+> │   ├── core-plugins.json
+
+> │   ├── graph.json
+
+> │   ├── types.json
+
+> │   ├── webviewer.json
+
+> │   └── workspace.json
+
+> ├── Cadence
+
+> │   ├── Activities
+
+> │   │   ├── Setting Up Cadence.md
+
+> │   │   └── Test Call.md
+
+> │   ├── Certifications
+
+> │   │   └── test.md
+
+> │   ├── Commissions
+
+> │   │   └── test.md
+
+> │   ├── Companies
+
+> │   │   └── ZZTop Inc..md
+
+> │   ├── Contacts
+
+> │   │   ├── Cody.md
+
+> │   │   └── ZZTop.md
+
+> │   ├── Leads
+
+> │   │   └── test.md
+
+> │   ├── Partners
+
+> │   │   └── ZZTop Inc..md
+
+> │   ├── Pipeline
+
+> │   │   └── Test Deal.md
+
+> │   ├── Projects
+
+> │   │   ├── Moms_Care.md
+
+> │   │   └── Test Project.md
+
+> │   ├── Registrations
+
+> │   │   └── Test Registration.md
+
+> │   ├── Sequences
+
+> │   │   └── test.md
+
+> │   └── Templates
+
+> │       ├── activity.md
+
+> │       ├── certification.md
+
+> │       ├── commission.md
+
+> │       ├── company.md
+
+> │       ├── contact.md
+
+> │       ├── daily.md
+
+> │       ├── deal.md
+
+> │       ├── lead.md
+
+> │       ├── partner.md
+
+> │       ├── project.md
+
+> │       ├── registration.md
+
+> │       └── sequence.md
+
+> └── daily
+
+>     ├── 2026-06-18.md
+
+>     └── 2026-06-19.md
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension*
 
 ### Assistant

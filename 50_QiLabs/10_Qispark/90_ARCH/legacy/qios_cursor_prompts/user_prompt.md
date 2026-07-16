@@ -3,19 +3,19 @@ layout: page
 title: Cursor User Prompt
 slug: cursor_user_prompt
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:40-04:00"
 sensitivity: internal
 classification: system_darkmatter
 context: QiOS_v1
-aliases:
+aliases: []
   - cursor_task_prompt
   - qios_cursor_user_prompt
-tags:
+tags: []
   - Rules
   - User
   - Prompt
   - qispark
-keywords:
+keywords: []
   - QiOS
   - Governance
   - Cursor
@@ -39,11 +39,11 @@ related: [[project_prompt.md]]
 graph_weight: 400
 orbit: core
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 realm_label: ""
-uid: ""
+uid: 19b79dfa5195400db7f0871d6b1e443b
 canonical_ref: ""
 template_key: master-template
 ---

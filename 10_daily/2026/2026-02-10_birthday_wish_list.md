@@ -3,9 +3,9 @@ layout: page
 title: "Birthday Wish List"
 slug: "birthday_wish_list"
 created_at: "2026-02-10 20:25:52"
-updated_at: "2026-02-10 20:25:52"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -175,22 +175,38 @@ canonical_ref: ""
 > If you want, I can turn this into a cute shareable graphic or a clean webpage-style list. This would actually make a great public link.
 
 ### User
-> i currently have these lists i need to merge some and such. Shopping List
-> Default List
-> Private
-> Court
-> Public
-> Needs
-> Private
-> Office
-> Private
-> Private
-> Private
-> Support Needs
-> Public
-> TuÁngela
-> Shared
-> Wish List
+> i currently have these lists i need to merge some and such. Shopping List
+
+> Default List
+
+> Private
+
+> Court
+
+> Public
+
+> Needs
+
+> Private
+
+> Office
+
+> Private
+
+> Private
+
+> Private
+
+> Support Needs
+
+> Public
+
+> TuÁngela
+
+> Shared
+
+> Wish List
+
 > Priv
 
 ### Assistant
@@ -393,15 +409,24 @@ canonical_ref: ""
 > This is the right separation.
 
 ### User
-> im using amazon and i can add gift card funds. Gift card funds
-> Now your friends and family can contribute to a Gift Card Fund! You’ll receive contributions as an electronic Amazon.com Gift Card that works across Amazon.com. Put the balance towards supplies for your favorite hobby, essentials to transform your kitchen, and more. Best of all, gift givers won’t pay any additional fees.
-> How Gift Card Funds work
-> Not sure where to begin? Find inspiration here:
-> 
-> Pet Fund
-> 
-> Hobby Fund
-> 
+> im using amazon and i can add gift card funds. Gift card funds
+
+> Now your friends and family can contribute to a Gift Card Fund! You’ll receive contributions as an electronic Amazon.com Gift Card that works across Amazon.com. Put the balance towards supplies for your favorite hobby, essentials to transform your kitchen, and more. Best of all, gift givers won’t pay any additional fees.
+
+> How Gift Card Funds work
+
+> Not sure where to begin? Find inspiration here:
+
+> 
+
+> Pet Fund
+
+> 
+
+> Hobby Fund
+
+> 
+
 > Home Upgrade Fund
 
 ### Assistant
@@ -642,52 +667,98 @@ canonical_ref: ""
 > This now feels human, balanced, and easy for people to contribute to.
 
 ### User
-> now the full items to add list in the categories i made. Everyday Clothing
-> 0 items
-> Personal Care
-> 0 items
-> Household Essentials
-> 1 items
-> 
-> 0 contributions
-> Rebuilding My Home Fund
-> $1,00000
-> Edit Item
-> Bathroom
-> 0 items
-> Bedroom
-> 0 items
-> Kitchen basics
-> 0 items
-> Small Appliances
-> 0 items
-> Practical Items
-> 0 items
-> Remote Work
-> 1 items
-> 
-> 0 contributions
-> Remote Work Fund
-> $1,50000
-> Edit Item
-> Travel Setup
-> 0 items
-> Big Help Items (Group Gifts 💝)
-> 1 items
-> 
-> 0 contributions
-> GiGi Fund
-> $75000
-> Edit Item
-> Most Needed Tech
-> 0 items
-> Transportation
-> 0 items
-> Accessibility & Health Needs
-> 1 items
-> 
-> 0 contributions
-> omfort & Accessibility Fund
+> now the full items to add list in the categories i made. Everyday Clothing
+
+> 0 items
+
+> Personal Care
+
+> 0 items
+
+> Household Essentials
+
+> 1 items
+
+> 
+
+> 0 contributions
+
+> Rebuilding My Home Fund
+
+> $1,00000
+
+> Edit Item
+
+> Bathroom
+
+> 0 items
+
+> Bedroom
+
+> 0 items
+
+> Kitchen basics
+
+> 0 items
+
+> Small Appliances
+
+> 0 items
+
+> Practical Items
+
+> 0 items
+
+> Remote Work
+
+> 1 items
+
+> 
+
+> 0 contributions
+
+> Remote Work Fund
+
+> $1,50000
+
+> Edit Item
+
+> Travel Setup
+
+> 0 items
+
+> Big Help Items (Group Gifts 💝)
+
+> 1 items
+
+> 
+
+> 0 contributions
+
+> GiGi Fund
+
+> $75000
+
+> Edit Item
+
+> Most Needed Tech
+
+> 0 items
+
+> Transportation
+
+> 0 items
+
+> Accessibility & Health Needs
+
+> 1 items
+
+> 
+
+> 0 contributions
+
+> omfort & Accessibility Fund
+
 > $50000
 
 ### Assistant

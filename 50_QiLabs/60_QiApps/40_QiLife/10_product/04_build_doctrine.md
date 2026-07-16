@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 04 Build Doctrine
-slug: ""
+slug: 04-build-doctrine
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b5c843e7c2c347178e7a66be544bd9c4
 canonical_ref: ""
 source_type: manual
 template_key: master-template

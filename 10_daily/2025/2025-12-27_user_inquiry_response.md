@@ -3,9 +3,9 @@ layout: page
 title: "User inquiry response"
 slug: "user_inquiry_response"
 created_at: "2025-12-27 16:11:35"
-updated_at: "2025-12-27 16:11:35"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2290,297 +2290,588 @@ canonical_ref: ""
 > You’ve formally closed the loop.
 
 ### User
-> i belive that this now requires a update. # The QiEOS Protocol v2.0
-> 
-> *The governing charter of the QiOne™ ecosystem (Unified Decimal Edition).*
-> 
-> ---
-> 
-> ## PREAMBLE
-> 
-> QiEOS defines the unified structure of **QiOne**, integrating personal, business, and client systems into one modular, traceable framework.
-> 
-> Each entity in QiOne holds a unique **QiDecimal ID** (x.xx.xx format), ensuring order, interoperability, and consistency across all knowledge realms.
-> 
-> QiEOS governs structure, QiCode defines law, and QiKBs embody practice.
-> 
-> ---
-> 
-> ## ARTICLE I — Realm Structure
-> 
-> ```
-> 
-> QiOne/
-> ├── 0_Inbox/                 → Temporary intake area
-> ├── 1_QiEos/                 → Governance Realm (Constitution + Law)
-> │   ├── 1.10_Protocol/
-> │   │   └── QiEOS_Protocol_v2.0.md
-> │   ├── 1.20_QiCode/
-> │   │   ├── 1.21_Title_Foundations/
-> │   │   │   ├── 1.21.1_Principle_of_Awareness.md
-> │   │   │   └── 1.21.2_Principle_of_Presence.md
-> │   │   ├── 1.22_Title_Self_and_Inner_Work/
-> │   │   ├── 1.23_Title_Work_and_Creation/
-> │   │   ├── 1.24_Title_Relations_and_Exchange/
-> │   │   ├── 1.25_Title_Action_and_Automation/
-> │   │   ├── 1.26_Title_Identity_and_Integrity/
-> │   │   ├── 1.27_Title_Mind_and_Will/
-> │   │   ├── 1.28_Title_Cycles_and_Closure/
-> │   │   ├── 1.29_Title_Ethics_and_Evolution/
-> │   │   └── 1.30_Title_Legacy_and_Design/
-> │   ├── 1.30_Templates/
-> │   ├── 1.40_RAG/
-> │   ├── 1.50_Meta/
-> │   └── 1.90_ARCH/
-> │
-> ├── 2_QsKb/                  → Personal Knowledge Base (QiSelf)
-> │   ├── 2.10_START/
-> │   ├── 2.20_ABOUT/
-> │   ├── 2.30_LIFE/
-> │   ├── 2.40_OPS/
-> │   ├── 2.50_DOCS/
-> │   ├── 2.60_MEDIA/
-> │   ├── 2.70_TECH/
-> │   └── 2.90_ARCH/
-> │
-> ├── 3_QiKb/                  → Business Knowledge Base (QiAlly)
-> │   ├── 3.10_START/
-> │   ├── 3.20_ABOUT/
-> │   ├── 3.30_OFFER/
-> │   ├── 3.40_OPS/
-> │   ├── 3.50_DOCS/
-> │   ├── 3.60_MEDIA/
-> │   ├── 3.70_TECH/
-> │   └── 3.90_ARCH/
-> │
-> ├── 4_Clients/               → Client Ecosystems
-> │   ├── 4.10_<slug>/
-> │   │   ├── 4.11_EOS/
-> │   │   ├── 4.12_KB/
-> │   │   └── 4.13_SITE/
-> │   └── 4.90_ARCH/
-> │
-> ├── 5_Apps/                  → Application Layer
-> │   ├── 5.10_dev/
-> │   ├── 5.20_staging/
-> │   ├── 5.30_live/
-> │   └── 5.90_ARCH/
-> │
-> ├── 6_Data/                  → Datasets and Indexes
-> │   ├── 6.10_qi_index/
-> │   ├── 6.20_vector/
-> │   ├── 6.30_datasets/
-> │   └── 6.90_ARCH/
-> │
-> ├── 7_Tools/                 → Scripts and Utilities
-> │   ├── 7.10_python/
-> │   ├── 7.20_node/
-> │   ├── 7.30_shell/
-> │   └── 7.90_ARCH/
-> │
-> ├── 8_Docs/                  → Manuals and Publications
-> │   ├── 8.10_Manuals/
-> │   ├── 8.20_Brand/
-> │   ├── 8.30_Publications/
-> │   └── 8.90_ARCH/
-> │
-> └── 9_ARCH/                  → Global Cold Storage
-> 
-> ```
-> 
-> ---
-> 
-> ## ARTICLE II — QiDecimal System
-> 
-> Each folder or file carries a **QiDecimal ID** that denotes:
-> 
-> - Its **realm** (first digit, 0–9)
-> - Its **subrealm** or **category** (first decimal)
-> - Its **atomic entry** (second decimal)
-> 
-> Example:
-> 
-> `1.21.1` → QiEOS → QiCode → Title 1 → §1 “Principle of Awareness”
-> 
-> The QiDecimal Registry is maintained in `/1_QiEos/1.50_Meta/QiCodex.csv`.
-> 
-> ---
-> 
-> ## ARTICLE III — Hierarchy & Authority
-> 
-> | Layer | Function | Type |
-> | --- | --- | --- |
-> | **QiOne** | Universe (root realm) | Whole ecosystem |
-> | **QiEOS** | Constitution | Governance |
-> | **QiCode** | Law | Statutes & Principles |
-> | **QiKBs** | Practice | SOPs & Workflows |
-> | **Clients** | Application | Implementation |
-> | **Apps / Tools** | Automation | Execution |
-> | **Data / Docs** | Memory | Records & Communication |
-> 
-> ---
-> 
-> ## ARTICLE IV — Versioning & Continuity
-> 
-> - Every update increments by minor version (v2.1, v2.2, etc.)
-> - Deprecated files move to `x.90_ARCH/`
-> - No deletion without archival entry in `/1.50_Meta/INDEX.csv`
-> - The QiCodex must reflect all assigned QiDecimal IDs — no ad-hoc numbering.
-> 
-> ---
-> 
-> ## ARTICLE V — Privacy & Sovereignty
-> 
-> | Realm | Default Privacy | Description |
-> | --- | --- | --- |
-> | `2_QsKb` | Private | Personal thoughts & reflections |
-> | `3_QiKb` | Shared | QiAlly operations & business data |
-> | `4_Clients` | Isolated | One per client; strict data boundaries |
-> | `5_Apps` | Public / Controlled | Deployments, codebases |
-> | `6_Data` | Controlled | Indexes, vectors, exports |
-> | `7_Tools` | Shared | Code utilities |
-> | `8_Docs` | Public | Published content |
-> 
-> ---
-> 
-> ## ARTICLE VI — AI Governance
-> 
-> - All AI agents are indexed in `/1.40_RAG/bots/*.yaml`
-> - Agents inherit scope from their QiDecimal parent realm.
-> - Private materials are excluded unless explicitly authorized.
-> 
-> ---
-> 
-> ## ARTICLE VII — Updates & Ratification
-> 
-> 1. Propose draft under `/1.10_Protocol/Drafts/`
-> 2. Review via Qi-Master or manual audit.
-> 3. Ratify → rename to `QiEOS_Protocol_vX.Y.md`
-> 4. Log update in `/1.50_Meta/QiCodex.csv`
-> 5. Archive prior versions under `/1.10_Protocol/Archive/`
-> 
-> ---
-> 
-> ## ARTICLE VIII — Founding Principles
-> 
-> > Flat over nested.
-> > 
-> > 
-> > Linked over duplicated.
-> > 
-> > Documented over remembered.
-> > 
-> > Modular over massive.
-> > 
-> 
-> QiOne remains a living system: coherent, portable, and recursively self-governing.
-> 
-> ---
-> 
-> **QiEOS Protocol v2.0 — Ratified 2025-11-01**
-> 
-> *Stewarded by QiAlly Systems (C. Rice-Velasquez).*
-> 
-> ```
-> 
-> ---
-> 
-> ## 📘 **QiCodex.csv — Global Decimal Registry**
-> 
-> The QiCodex is maintained as a CSV file at `/1_QiEos/1.50_Meta/QiCodex.csv`. Below is a markdown reference format:
-> 
-> ```markdown
-> ---
-> title: QiCodex Registry
-> version: 2.0
-> maintainer: QiAlly Systems (C. Rice-Velasquez)
-> updated: 2025-11-01
-> ---
-> 
-> # 📘 QiCodex — Unified Decimal Registry
-> _All folders, files, and modules in QiOne share a single QiDecimal namespace._
-> 
-> | ID | Name | Description | Owner | Status |
-> |----|------|--------------|--------|--------|
-> | 0 | Inbox | Temporary workspace for uncategorized input | CRV | active |
-> | 1 | QiEOS | Governance Realm (Constitution + Law) | CRV | active |
-> | 1.10 | Protocol | QiEOS governance & update process | QiEOS | active |
-> | 1.20 | QiCode | Life Code (Statutes of System & Self) | QiEOS | active |
-> | 1.21 | Title I — Foundations | Core principles & structure | QiCode | active |
-> | 1.21.1 | §1 Principle of Awareness | Law of observation & reflection | QiCode | active |
-> | 1.21.2 | §2 Principle of Presence | Law of now & embodiment | QiCode | active |
-> | 1.22 | Title II — Self & Inner Work | Awareness, habits, emotional systems | QiCode | active |
-> | 1.23 | Title III — Work & Creation | Productivity, flow, and manifestation | QiCode | active |
-> | 1.24 | Title IV — Relations & Exchange | Boundaries, reciprocity, and connection | QiCode | active |
-> | 1.25 | Title V — Action & Automation | Execution, energy management, movement | QiCode | active |
-> | 1.26 | Title VI — Identity & Integrity | Authenticity, naming, and alignment | QiCode | active |
-> | 1.27 | Title VII — Mind & Will | Decision-making, thought hygiene | QiCode | active |
-> | 1.28 | Title VIII — Cycles & Closure | Endings, transitions, forgiveness | QiCode | active |
-> | 1.29 | Title IX — Ethics & Evolution | Moral systems, feedback, growth | QiCode | active |
-> | 1.30 | Title X — Legacy & Design | Purpose, continuity, vision | QiCode | active |
-> | 1.30_Templates | Templates | Master templates (App/KB/Client) | QiEOS | active |
-> | 1.40 | RAG | AI bots, embeddings, and automation layer | QiEOS | active |
-> | 1.50 | Meta | Indexes, QiCodex, and registry data | QiEOS | active |
-> | 1.90 | ARCH | Archive of retired QiEOS components | QiEOS | active |
-> | 2 | QiSelf KB | Personal Knowledge Base | CRV | active |
-> | 2.10 | START | Overview, system map | CRV | active |
-> | 2.20 | ABOUT | Story, identity | CRV | active |
-> | 2.30 | LIFE | Habits, goals, and reflections | CRV | active |
-> | 2.40 | OPS | Personal workflows and routines | CRV | active |
-> | 2.50 | DOCS | Personal writings, letters, thoughts | CRV | active |
-> | 2.60 | MEDIA | Visuals, recordings, transcripts | CRV | active |
-> | 2.70 | TECH | Automations, scripts, prompts | CRV | active |
-> | 2.90 | ARCH | Archived personal data | CRV | active |
-> | 3 | QiAlly KB | Business Knowledge Base | QiAlly | active |
-> | 3.10 | START | Mission, purpose, branding | QiAlly | active |
-> | 3.20 | ABOUT | Structure, team, org identity | QiAlly | active |
-> | 3.30 | OFFER | Services, pricing, strategy | QiAlly | active |
-> | 3.40 | OPS | SOPs, process docs | QiAlly | active |
-> | 3.50 | DOCS | Contracts, reports, deliverables | QiAlly | active |
-> | 3.60 | MEDIA | Design, marketing, assets | QiAlly | active |
-> | 3.70 | TECH | APIs, automations, integrations | QiAlly | active |
-> | 3.90 | ARCH | Archived business content | QiAlly | active |
-> | 4 | Clients | Client Ecosystems | QiAlly | active |
-> | 4.10 | <slug> | Individual client container | QiAlly | active |
-> | 4.11 | EOS | Agreements & scope | QiAlly | active |
-> | 4.12 | KB | Client-specific knowledge base | QiAlly | active |
-> | 4.13 | SITE | Client site or PWA | QiAlly | active |
-> | 4.90 | ARCH | Archived client data | QiAlly | active |
-> | 5 | Apps | Application Layer | QiSuite | active |
-> | 5.10 | dev | Development environment | QiSuite | active |
-> | 5.20 | staging | Testing environment | QiSuite | active |
-> | 5.30 | live | Production environment | QiSuite | active |
-> | 5.90 | ARCH | Archived deployments | QiSuite | active |
-> | 6 | Data | Datasets & Indexes | QiSuite | active |
-> | 6.10 | qi_index | Core knowledge index | QiSuite | active |
-> | 6.20 | vector | Embeddings & RAG data | QiSuite | active |
-> | 6.30 | datasets | External datasets | QiSuite | active |
-> | 6.90 | ARCH | Archived data | QiSuite | active |
-> | 7 | Tools | Scripts & Utilities | QiSuite | active |
-> | 7.10 | python | Python utilities | QiSuite | active |
-> | 7.20 | node | Node.js utilities | QiSuite | active |
-> | 7.30 | shell | Shell scripts | QiSuite | active |
-> | 7.90 | ARCH | Archived tools | QiSuite | active |
-> | 8 | Docs | Manuals & Publications | QiAlly | active |
-> | 8.10 | Manuals | Guides, handbooks | QiAlly | active |
-> | 8.20 | Brand | Logos, templates, style | QiAlly | active |
-> | 8.30 | Publications | External reports | QiAlly | active |
-> | 8.90 | ARCH | Archived documents | QiAlly | active |
-> | 9 | ARCH | Global Archive | QiOne | active |
-> 
-> ```
-> 
-> ---
-> 
-> ✅ **What This Achieves**
-> 
-> - Unified numbering from root to law section.
-> - No padding above 9 — visually minimal and calm.
-> - All sub-realms and laws predictable (`x.10`, `x.20`, `x.21.1`, etc.).
-> - One codex to rule all numbering — no improvising IDs ever again.
-> 
-> ---
-> 
+> i belive that this now requires a update. # The QiEOS Protocol v2.0
+
+> 
+
+> *The governing charter of the QiOne™ ecosystem (Unified Decimal Edition).*
+
+> 
+
+> ---
+
+> 
+
+> ## PREAMBLE
+
+> 
+
+> QiEOS defines the unified structure of **QiOne**, integrating personal, business, and client systems into one modular, traceable framework.
+
+> 
+
+> Each entity in QiOne holds a unique **QiDecimal ID** (x.xx.xx format), ensuring order, interoperability, and consistency across all knowledge realms.
+
+> 
+
+> QiEOS governs structure, QiCode defines law, and QiKBs embody practice.
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE I — Realm Structure
+
+> 
+
+> ```
+
+> 
+
+> QiOne/
+
+> ├── 0_Inbox/                 → Temporary intake area
+
+> ├── 1_QiEos/                 → Governance Realm (Constitution + Law)
+
+> │   ├── 1.10_Protocol/
+
+> │   │   └── QiEOS_Protocol_v2.0.md
+
+> │   ├── 1.20_QiCode/
+
+> │   │   ├── 1.21_Title_Foundations/
+
+> │   │   │   ├── 1.21.1_Principle_of_Awareness.md
+
+> │   │   │   └── 1.21.2_Principle_of_Presence.md
+
+> │   │   ├── 1.22_Title_Self_and_Inner_Work/
+
+> │   │   ├── 1.23_Title_Work_and_Creation/
+
+> │   │   ├── 1.24_Title_Relations_and_Exchange/
+
+> │   │   ├── 1.25_Title_Action_and_Automation/
+
+> │   │   ├── 1.26_Title_Identity_and_Integrity/
+
+> │   │   ├── 1.27_Title_Mind_and_Will/
+
+> │   │   ├── 1.28_Title_Cycles_and_Closure/
+
+> │   │   ├── 1.29_Title_Ethics_and_Evolution/
+
+> │   │   └── 1.30_Title_Legacy_and_Design/
+
+> │   ├── 1.30_Templates/
+
+> │   ├── 1.40_RAG/
+
+> │   ├── 1.50_Meta/
+
+> │   └── 1.90_ARCH/
+
+> │
+
+> ├── 2_QsKb/                  → Personal Knowledge Base (QiSelf)
+
+> │   ├── 2.10_START/
+
+> │   ├── 2.20_ABOUT/
+
+> │   ├── 2.30_LIFE/
+
+> │   ├── 2.40_OPS/
+
+> │   ├── 2.50_DOCS/
+
+> │   ├── 2.60_MEDIA/
+
+> │   ├── 2.70_TECH/
+
+> │   └── 2.90_ARCH/
+
+> │
+
+> ├── 3_QiKb/                  → Business Knowledge Base (QiAlly)
+
+> │   ├── 3.10_START/
+
+> │   ├── 3.20_ABOUT/
+
+> │   ├── 3.30_OFFER/
+
+> │   ├── 3.40_OPS/
+
+> │   ├── 3.50_DOCS/
+
+> │   ├── 3.60_MEDIA/
+
+> │   ├── 3.70_TECH/
+
+> │   └── 3.90_ARCH/
+
+> │
+
+> ├── 4_Clients/               → Client Ecosystems
+
+> │   ├── 4.10_<slug>/
+
+> │   │   ├── 4.11_EOS/
+
+> │   │   ├── 4.12_KB/
+
+> │   │   └── 4.13_SITE/
+
+> │   └── 4.90_ARCH/
+
+> │
+
+> ├── 5_Apps/                  → Application Layer
+
+> │   ├── 5.10_dev/
+
+> │   ├── 5.20_staging/
+
+> │   ├── 5.30_live/
+
+> │   └── 5.90_ARCH/
+
+> │
+
+> ├── 6_Data/                  → Datasets and Indexes
+
+> │   ├── 6.10_qi_index/
+
+> │   ├── 6.20_vector/
+
+> │   ├── 6.30_datasets/
+
+> │   └── 6.90_ARCH/
+
+> │
+
+> ├── 7_Tools/                 → Scripts and Utilities
+
+> │   ├── 7.10_python/
+
+> │   ├── 7.20_node/
+
+> │   ├── 7.30_shell/
+
+> │   └── 7.90_ARCH/
+
+> │
+
+> ├── 8_Docs/                  → Manuals and Publications
+
+> │   ├── 8.10_Manuals/
+
+> │   ├── 8.20_Brand/
+
+> │   ├── 8.30_Publications/
+
+> │   └── 8.90_ARCH/
+
+> │
+
+> └── 9_ARCH/                  → Global Cold Storage
+
+> 
+
+> ```
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE II — QiDecimal System
+
+> 
+
+> Each folder or file carries a **QiDecimal ID** that denotes:
+
+> 
+
+> - Its **realm** (first digit, 0–9)
+
+> - Its **subrealm** or **category** (first decimal)
+
+> - Its **atomic entry** (second decimal)
+
+> 
+
+> Example:
+
+> 
+
+> `1.21.1` → QiEOS → QiCode → Title 1 → §1 “Principle of Awareness”
+
+> 
+
+> The QiDecimal Registry is maintained in `/1_QiEos/1.50_Meta/QiCodex.csv`.
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE III — Hierarchy & Authority
+
+> 
+
+> | Layer | Function | Type |
+
+> | --- | --- | --- |
+
+> | **QiOne** | Universe (root realm) | Whole ecosystem |
+
+> | **QiEOS** | Constitution | Governance |
+
+> | **QiCode** | Law | Statutes & Principles |
+
+> | **QiKBs** | Practice | SOPs & Workflows |
+
+> | **Clients** | Application | Implementation |
+
+> | **Apps / Tools** | Automation | Execution |
+
+> | **Data / Docs** | Memory | Records & Communication |
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE IV — Versioning & Continuity
+
+> 
+
+> - Every update increments by minor version (v2.1, v2.2, etc.)
+
+> - Deprecated files move to `x.90_ARCH/`
+
+> - No deletion without archival entry in `/1.50_Meta/INDEX.csv`
+
+> - The QiCodex must reflect all assigned QiDecimal IDs — no ad-hoc numbering.
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE V — Privacy & Sovereignty
+
+> 
+
+> | Realm | Default Privacy | Description |
+
+> | --- | --- | --- |
+
+> | `2_QsKb` | Private | Personal thoughts & reflections |
+
+> | `3_QiKb` | Shared | QiAlly operations & business data |
+
+> | `4_Clients` | Isolated | One per client; strict data boundaries |
+
+> | `5_Apps` | Public / Controlled | Deployments, codebases |
+
+> | `6_Data` | Controlled | Indexes, vectors, exports |
+
+> | `7_Tools` | Shared | Code utilities |
+
+> | `8_Docs` | Public | Published content |
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE VI — AI Governance
+
+> 
+
+> - All AI agents are indexed in `/1.40_RAG/bots/*.yaml`
+
+> - Agents inherit scope from their QiDecimal parent realm.
+
+> - Private materials are excluded unless explicitly authorized.
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE VII — Updates & Ratification
+
+> 
+
+> 1. Propose draft under `/1.10_Protocol/Drafts/`
+
+> 2. Review via Qi-Master or manual audit.
+
+> 3. Ratify → rename to `QiEOS_Protocol_vX.Y.md`
+
+> 4. Log update in `/1.50_Meta/QiCodex.csv`
+
+> 5. Archive prior versions under `/1.10_Protocol/Archive/`
+
+> 
+
+> ---
+
+> 
+
+> ## ARTICLE VIII — Founding Principles
+
+> 
+
+> > Flat over nested.
+
+> > 
+
+> > 
+
+> > Linked over duplicated.
+
+> > 
+
+> > Documented over remembered.
+
+> > 
+
+> > Modular over massive.
+
+> > 
+
+> 
+
+> QiOne remains a living system: coherent, portable, and recursively self-governing.
+
+> 
+
+> ---
+
+> 
+
+> **QiEOS Protocol v2.0 — Ratified 2025-11-01**
+
+> 
+
+> *Stewarded by QiAlly Systems (C. Rice-Velasquez).*
+
+> 
+
+> ```
+
+> 
+
+> ---
+
+> 
+
+> ## 📘 **QiCodex.csv — Global Decimal Registry**
+
+> 
+
+> The QiCodex is maintained as a CSV file at `/1_QiEos/1.50_Meta/QiCodex.csv`. Below is a markdown reference format:
+
+> 
+
+> ```markdown
+
+> ---
+
+> title: QiCodex Registry
+
+> version: 2.0
+
+> maintainer: QiAlly Systems (C. Rice-Velasquez)
+
+> updated: 2025-11-01
+
+> ---
+
+> 
+
+> # 📘 QiCodex — Unified Decimal Registry
+
+> _All folders, files, and modules in QiOne share a single QiDecimal namespace._
+
+> 
+
+> | ID | Name | Description | Owner | Status |
+
+> |----|------|--------------|--------|--------|
+
+> | 0 | Inbox | Temporary workspace for uncategorized input | CRV | active |
+
+> | 1 | QiEOS | Governance Realm (Constitution + Law) | CRV | active |
+
+> | 1.10 | Protocol | QiEOS governance & update process | QiEOS | active |
+
+> | 1.20 | QiCode | Life Code (Statutes of System & Self) | QiEOS | active |
+
+> | 1.21 | Title I — Foundations | Core principles & structure | QiCode | active |
+
+> | 1.21.1 | §1 Principle of Awareness | Law of observation & reflection | QiCode | active |
+
+> | 1.21.2 | §2 Principle of Presence | Law of now & embodiment | QiCode | active |
+
+> | 1.22 | Title II — Self & Inner Work | Awareness, habits, emotional systems | QiCode | active |
+
+> | 1.23 | Title III — Work & Creation | Productivity, flow, and manifestation | QiCode | active |
+
+> | 1.24 | Title IV — Relations & Exchange | Boundaries, reciprocity, and connection | QiCode | active |
+
+> | 1.25 | Title V — Action & Automation | Execution, energy management, movement | QiCode | active |
+
+> | 1.26 | Title VI — Identity & Integrity | Authenticity, naming, and alignment | QiCode | active |
+
+> | 1.27 | Title VII — Mind & Will | Decision-making, thought hygiene | QiCode | active |
+
+> | 1.28 | Title VIII — Cycles & Closure | Endings, transitions, forgiveness | QiCode | active |
+
+> | 1.29 | Title IX — Ethics & Evolution | Moral systems, feedback, growth | QiCode | active |
+
+> | 1.30 | Title X — Legacy & Design | Purpose, continuity, vision | QiCode | active |
+
+> | 1.30_Templates | Templates | Master templates (App/KB/Client) | QiEOS | active |
+
+> | 1.40 | RAG | AI bots, embeddings, and automation layer | QiEOS | active |
+
+> | 1.50 | Meta | Indexes, QiCodex, and registry data | QiEOS | active |
+
+> | 1.90 | ARCH | Archive of retired QiEOS components | QiEOS | active |
+
+> | 2 | QiSelf KB | Personal Knowledge Base | CRV | active |
+
+> | 2.10 | START | Overview, system map | CRV | active |
+
+> | 2.20 | ABOUT | Story, identity | CRV | active |
+
+> | 2.30 | LIFE | Habits, goals, and reflections | CRV | active |
+
+> | 2.40 | OPS | Personal workflows and routines | CRV | active |
+
+> | 2.50 | DOCS | Personal writings, letters, thoughts | CRV | active |
+
+> | 2.60 | MEDIA | Visuals, recordings, transcripts | CRV | active |
+
+> | 2.70 | TECH | Automations, scripts, prompts | CRV | active |
+
+> | 2.90 | ARCH | Archived personal data | CRV | active |
+
+> | 3 | QiAlly KB | Business Knowledge Base | QiAlly | active |
+
+> | 3.10 | START | Mission, purpose, branding | QiAlly | active |
+
+> | 3.20 | ABOUT | Structure, team, org identity | QiAlly | active |
+
+> | 3.30 | OFFER | Services, pricing, strategy | QiAlly | active |
+
+> | 3.40 | OPS | SOPs, process docs | QiAlly | active |
+
+> | 3.50 | DOCS | Contracts, reports, deliverables | QiAlly | active |
+
+> | 3.60 | MEDIA | Design, marketing, assets | QiAlly | active |
+
+> | 3.70 | TECH | APIs, automations, integrations | QiAlly | active |
+
+> | 3.90 | ARCH | Archived business content | QiAlly | active |
+
+> | 4 | Clients | Client Ecosystems | QiAlly | active |
+
+> | 4.10 | <slug> | Individual client container | QiAlly | active |
+
+> | 4.11 | EOS | Agreements & scope | QiAlly | active |
+
+> | 4.12 | KB | Client-specific knowledge base | QiAlly | active |
+
+> | 4.13 | SITE | Client site or PWA | QiAlly | active |
+
+> | 4.90 | ARCH | Archived client data | QiAlly | active |
+
+> | 5 | Apps | Application Layer | QiSuite | active |
+
+> | 5.10 | dev | Development environment | QiSuite | active |
+
+> | 5.20 | staging | Testing environment | QiSuite | active |
+
+> | 5.30 | live | Production environment | QiSuite | active |
+
+> | 5.90 | ARCH | Archived deployments | QiSuite | active |
+
+> | 6 | Data | Datasets & Indexes | QiSuite | active |
+
+> | 6.10 | qi_index | Core knowledge index | QiSuite | active |
+
+> | 6.20 | vector | Embeddings & RAG data | QiSuite | active |
+
+> | 6.30 | datasets | External datasets | QiSuite | active |
+
+> | 6.90 | ARCH | Archived data | QiSuite | active |
+
+> | 7 | Tools | Scripts & Utilities | QiSuite | active |
+
+> | 7.10 | python | Python utilities | QiSuite | active |
+
+> | 7.20 | node | Node.js utilities | QiSuite | active |
+
+> | 7.30 | shell | Shell scripts | QiSuite | active |
+
+> | 7.90 | ARCH | Archived tools | QiSuite | active |
+
+> | 8 | Docs | Manuals & Publications | QiAlly | active |
+
+> | 8.10 | Manuals | Guides, handbooks | QiAlly | active |
+
+> | 8.20 | Brand | Logos, templates, style | QiAlly | active |
+
+> | 8.30 | Publications | External reports | QiAlly | active |
+
+> | 8.90 | ARCH | Archived documents | QiAlly | active |
+
+> | 9 | ARCH | Global Archive | QiOne | active |
+
+> 
+
+> ```
+
+> 
+
+> ---
+
+> 
+
+> ✅ **What This Achieves**
+
+> 
+
+> - Unified numbering from root to law section.
+
+> - No padding above 9 — visually minimal and calm.
+
+> - All sub-realms and laws predictable (`x.10`, `x.20`, `x.21.1`, etc.).
+
+> - One codex to rule all numbering — no improvising IDs ever again.
+
+> 
+
+> ---
+
+> 
+
 > The **QiCodex.csv** file serves as the machine-readable registry for all QiDecimal IDs, ready for `/1.50_Meta/` index automation and future AI lookups.
 
 ### Assistant
@@ -3371,102 +3662,198 @@ canonical_ref: ""
 
 ### User
 > ok but this is the current site and i dont wnat to make it look cheap, just strip some of the noise. lets first update the website landing i almost want to buy a simply easy to spell domain that points to qially.com for the mean time. like something like, mybizpro.now or something<!DOCTYPE html> 
-> <html lang="en" class="scroll-smooth">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>QiAlly | Systems, Ops & AI Support</title>
->     <meta name="description" content="Direct, asynchronous support for systems automation, operations cleanup, and AI integration.">
->     
->     <link rel="preconnect" href="https://fonts.googleapis.com">
->     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
->     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
->     
->     <script src="https://cdn.tailwindcss.com"></script>
->     <script>
->         tailwind.config = {
->             theme: {
->                 extend: {
->                     fontFamily: {
->                         sans: ['Inter', 'sans-serif'],
->                         serif: ['Playfair Display', 'serif'],
->                     },
->                 }
->             }
->         }
->     </script>
-> </head>
-> 
-> <body class="bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
-> 
->     <div class="max-w-2xl mx-auto px-6 py-20 lg:py-32">
->         
->         <header class="mb-16">
->             <div class="font-serif text-2xl font-bold tracking-tight mb-12">
->                 Qi<span class="text-blue-600 font-light italic">Ally</span>
->             </div>
->             
->             <h1 class="text-3xl md:text-4xl font-serif font-semibold leading-tight mb-8">
->                 I help individuals and small businesses with:
->             </h1>
->             <ul class="space-y-4 text-lg text-slate-600 border-l-2 border-blue-600 pl-6">
->                 <li><strong class="text-slate-900">Taxes & Filings:</strong> Strategic planning and compliance.</li>
->                 <li><strong class="text-slate-900">Accounting Cleanup:</strong> Restoring order to financial data.</li>
->                 <li><strong class="text-slate-900">IT & Systems Support:</strong> Automation, AI integration, and workflow optimization.</li>
->                 <li><strong class="text-slate-900">Operations:</strong> HR infrastructure and document preparation.</li>
->             </ul>
->         </header>
-> 
->         <section class="mb-20">
->             <h2 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-8">Engagement Rules</h2>
->             <div class="grid gap-6">
->                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
->                     <h3 class="font-bold mb-1">Asynchronous Communication</h3>
->                     <p class="text-slate-500 text-sm">No unscheduled calls. Requests are handled via portal or email to maintain deep work focus.</p>
->                 </div>
->                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
->                     <h3 class="font-bold mb-1">Fixed Scoping</h3>
->                     <p class="text-slate-500 text-sm">Every project is scoped and priced upfront. No hourly surprises or billing creep.</p>
->                 </div>
->                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
->                     <h3 class="font-bold mb-1">48-Hour Triage</h3>
->                     <p class="text-slate-500 text-sm">All requests are reviewed within two business days. High-priority items are tiered accordingly.</p>
->                 </div>
->             </div>
->         </section>
-> 
->         <section class="mb-20">
->             <button onclick="$zoho.salesiq.chat.start()" class="w-full md:w-auto bg-slate-900 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
->                 Start a request
->             </button>
->             <p class="mt-4 text-xs text-slate-400 italic">Powered by SalesIQ Secure Chat</p>
->         </section>
-> 
->         <section class="pt-12 border-t border-slate-100">
->             <h2 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-6">About</h2>
->             <div class="flex items-start gap-6">
->                 <img src="images/profile.jpg" alt="Cody Rice Velasquez" class="w-16 h-16 rounded-full grayscale object-cover border border-slate-200">
->                 <div class="text-sm text-slate-600 leading-relaxed">
->                     <p class="mb-2"><strong class="text-slate-900">Independent Consultant.</strong> 20+ years of experience in systems strategy and operations. Partner at QuantumHR LLP.</p>
->                     <p>Focused on delivering corporate-grade technical infrastructure with personal, solo-practitioner agility.</p>
->                 </div>
->             </div>
->         </section>
-> 
->         <footer class="mt-32 pt-8 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase tracking-widest text-slate-400">
->             <div>© 2025 QiAlly LLC</div>
->             <div class="flex gap-4">
->                 <a href="/privacy.html" class="hover:text-blue-600">Privacy</a>
->                 <a href="/service-agreement/" class="hover:text-blue-600">Terms</a>
->             </div>
->         </footer>
->     </div>
-> 
->     <div class="fixed inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20"></div>
-> 
->     <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
->     <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqdb087c4840b1b49e07ec03ea0af3a71c14fff19429170b3e4d9f22d7006f343c" defer></script>
-> </body>
+> <html lang="en" class="scroll-smooth">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>QiAlly | Systems, Ops & AI Support</title>
+
+>     <meta name="description" content="Direct, asynchronous support for systems automation, operations cleanup, and AI integration.">
+
+>     
+
+>     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+>     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+>     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+>     
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     <script>
+
+>         tailwind.config = {
+
+>             theme: {
+
+>                 extend: {
+
+>                     fontFamily: {
+
+>                         sans: ['Inter', 'sans-serif'],
+
+>                         serif: ['Playfair Display', 'serif'],
+
+>                     },
+
+>                 }
+
+>             }
+
+>         }
+
+>     </script>
+
+> </head>
+
+> 
+
+> <body class="bg-white text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+> 
+
+>     <div class="max-w-2xl mx-auto px-6 py-20 lg:py-32">
+
+>         
+
+>         <header class="mb-16">
+
+>             <div class="font-serif text-2xl font-bold tracking-tight mb-12">
+
+>                 Qi<span class="text-blue-600 font-light italic">Ally</span>
+
+>             </div>
+
+>             
+
+>             <h1 class="text-3xl md:text-4xl font-serif font-semibold leading-tight mb-8">
+
+>                 I help individuals and small businesses with:
+
+>             </h1>
+
+>             <ul class="space-y-4 text-lg text-slate-600 border-l-2 border-blue-600 pl-6">
+
+>                 <li><strong class="text-slate-900">Taxes & Filings:</strong> Strategic planning and compliance.</li>
+
+>                 <li><strong class="text-slate-900">Accounting Cleanup:</strong> Restoring order to financial data.</li>
+
+>                 <li><strong class="text-slate-900">IT & Systems Support:</strong> Automation, AI integration, and workflow optimization.</li>
+
+>                 <li><strong class="text-slate-900">Operations:</strong> HR infrastructure and document preparation.</li>
+
+>             </ul>
+
+>         </header>
+
+> 
+
+>         <section class="mb-20">
+
+>             <h2 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-8">Engagement Rules</h2>
+
+>             <div class="grid gap-6">
+
+>                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+
+>                     <h3 class="font-bold mb-1">Asynchronous Communication</h3>
+
+>                     <p class="text-slate-500 text-sm">No unscheduled calls. Requests are handled via portal or email to maintain deep work focus.</p>
+
+>                 </div>
+
+>                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+
+>                     <h3 class="font-bold mb-1">Fixed Scoping</h3>
+
+>                     <p class="text-slate-500 text-sm">Every project is scoped and priced upfront. No hourly surprises or billing creep.</p>
+
+>                 </div>
+
+>                 <div class="p-6 bg-slate-50 rounded-xl border border-slate-100">
+
+>                     <h3 class="font-bold mb-1">48-Hour Triage</h3>
+
+>                     <p class="text-slate-500 text-sm">All requests are reviewed within two business days. High-priority items are tiered accordingly.</p>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <section class="mb-20">
+
+>             <button onclick="$zoho.salesiq.chat.start()" class="w-full md:w-auto bg-slate-900 text-white px-10 py-4 rounded-full font-bold hover:bg-blue-600 transition-all shadow-xl shadow-slate-200">
+
+>                 Start a request
+
+>             </button>
+
+>             <p class="mt-4 text-xs text-slate-400 italic">Powered by SalesIQ Secure Chat</p>
+
+>         </section>
+
+> 
+
+>         <section class="pt-12 border-t border-slate-100">
+
+>             <h2 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-6">About</h2>
+
+>             <div class="flex items-start gap-6">
+
+>                 <img src="images/profile.jpg" alt="Cody Rice Velasquez" class="w-16 h-16 rounded-full grayscale object-cover border border-slate-200">
+
+>                 <div class="text-sm text-slate-600 leading-relaxed">
+
+>                     <p class="mb-2"><strong class="text-slate-900">Independent Consultant.</strong> 20+ years of experience in systems strategy and operations. Partner at QuantumHR LLP.</p>
+
+>                     <p>Focused on delivering corporate-grade technical infrastructure with personal, solo-practitioner agility.</p>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <footer class="mt-32 pt-8 border-t border-slate-100 flex justify-between items-center text-[10px] uppercase tracking-widest text-slate-400">
+
+>             <div>© 2025 QiAlly LLC</div>
+
+>             <div class="flex gap-4">
+
+>                 <a href="/privacy.html" class="hover:text-blue-600">Privacy</a>
+
+>                 <a href="/service-agreement/" class="hover:text-blue-600">Terms</a>
+
+>             </div>
+
+>         </footer>
+
+>     </div>
+
+> 
+
+>     <div class="fixed inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20"></div>
+
+> 
+
+>     <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script>
+
+>     <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqdb087c4840b1b49e07ec03ea0af3a71c14fff19429170b3e4d9f22d7006f343c" defer></script>
+
+> </body>
+
 > </html>
 
 ### Assistant
@@ -4243,8 +4630,10 @@ canonical_ref: ""
 > You’re doing this in the right order.
 
 ### User
-> forget the redirect for now, finalize the exact h1, currently its this, and honestly i like the first two lineds, and tried to udpate the 3rd and fourth to make more sense, but what do you recommend. Orchestrating chaos
-> into clarity.
+> forget the redirect for now, finalize the exact h1, currently its this, and honestly i like the first two lineds, and tried to udpate the 3rd and fourth to make more sense, but what do you recommend. Orchestrating chaos
+
+> into clarity.
+
 > One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.
 
 ### Assistant
@@ -4771,469 +5160,932 @@ canonical_ref: ""
 > But yes — **you’ve got something solid now**.
 
 ### User
-> ok do me this favor can we do this in blocks because your taking me from 464 lines to less than half and also my cards are missing alignment is wrong and etc. again here is the current html, we are just surgically tweaking content and removing noise, not stripping my home page naked. <!DOCTYPE html>
-> <html lang="en" class="scroll-smooth">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>QiAlly | Solutions for People & Business</title>
->     <meta name="description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally>
->     <link rel="canonical" href="https://qially.com/">
->     <meta property="og:title" content="QiAlly | Solutions for People & Business">
->     <meta property="og:description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.">
->     <meta property="og:url" content="https://qially.com/">
->     <meta property="og:type" content="website">
->     <meta property="og:site_name" content="QiAlly">
->     <meta name="twitter:card" content="summary_large_image">
->     <meta name="twitter:title" content="QiAlly | Solutions for People & Business">
->     <meta name="twitter:description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.">
->     <link rel="icon" type="image/png" href="/images/favicon.png">
->     <script type="application/ld+json">
->     {
->       "@context": "https://schema.org",
->       "@type": "Organization",
->       "name": "QiAlly",
->       "url": "https://qially.com",
->       "logo": "https://qially.com/images/favicon.png",
->       "description": "One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.",
->       "founder": {
->         "@type": "Person",
->         "name": "Cody Rice Velasquez"
->       },
->       "sameAs": [
->         "https://www.linkedin.com/company/qially/",
->         "https://twitter.com/qiallyme",
->         "https://youtube.com/@qially"
->       ],
->       "contactPoint": {
->         "@type": "ContactPoint",
->         "contactType": "Business Inquiries",
->         "email": "cody@qially.com",
->         "telephone": "+1-317-643-3489",
->         "url": "https://qially.com/#contact"
->       }
->     }
->     </script>
->     
->     <link rel="preconnect" href="https://fonts.googleapis.com">
->     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
->     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
->     
->     <script src="https://cdn.tailwindcss.com"></script>
->     
->     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-> 
->     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-> 
->     <script>
->         tailwind.config = {
->             theme: {
->                 extend: {
->                     fontFamily: {
->                         sans: ['Inter', 'sans-serif'],
->                         serif: ['Playfair Display', 'serif'],
->                     },
->                     colors: {
->                         'brand-bg': '#f8fafc',
->                         'glass-border': 'rgba(255, 255, 255, 0.5)',
->                         'glass-bg': 'rgba(255, 255, 255, 0.7)',
->                     }
->                 }
->             }
->         }
->     </script>
-> 
->     <style>
->         /* Dynamic Background Gradient Animation */
->         .blob-bg {
->             position: fixed;
->             top: 0;
->             left: 0;
->             width: 100vw;
->             height: 100vh;
->             z-index: -1;
->             background: 
->                 radial-gradient(circle at 15% 50%, rgba(219, 234, 254, 0.5), transparent 25%), 
->                 radial-gradient(circle at 85% 30%, rgba(233, 213, 255, 0.5), transparent 25%);
->             filter: blur(40px);
->         }
->         
->         .glass-card {
->             background: rgba(255, 255, 255, 0.65);
->             backdrop-filter: blur(12px);
->             -webkit-backdrop-filter: blur(12px);
->             border: 1px solid rgba(255, 255, 255, 0.5);
->             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
->         }
->     </style>
-> </head>
-> <body class="bg-slate-50 text-slate-800 antialiased relative selection:bg-blue-100 selection:text-blue-900">
-> 
->     <div class="blob-bg"></div>
-> 
->     <nav x-data="{ open: false }" class="fixed w-full z-50 top-0 transition-all duration-300" :class="open ? 'bg-white' : 'bg-white/80 backdrop-blur-md border-b border-white/50'">
->         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
->             <div class="flex justify-between h-20 items-center">
->                 <div class="flex-shrink-0 flex items-center">
->                     <a href="index.html" class="font-serif text-2xl font-bold tracking-tight text-slate-900">
->                         Qi<span class="text-blue-600 font-light italic">Ally</span>
->                     </a>
->                 </div>
-> 
->                 <div class="hidden md:flex space-x-8 items-center">
->                     <a href="/taxes/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Tax & Accounts</a>
->                     <a href="/individual/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Individual Services</a>
->                     <a href="/hr-ops/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">HR & Ops</a>
->                     <a href="/it-ai/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">IT & AI Consulting</a>
->                     <a href="/portfolio/q-showcase-light.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Portfolio</a>
->                     <a href="/showcases/videos.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Videos</a>
->                     <a href="#contact" class="px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-200">Contact</a>
->                 </div>
-> 
->                 <div class="md:hidden flex items-center">
->                     <button @click="open = !open" class="text-slate-600 hover:text-slate-900 focus:outline-none">
->                         <i class="fa-solid fa-bars text-xl"></i>
->                     </button>
->                 </div>
->             </div>
->         </div>
-> 
->         <div x-show="open" class="md:hidden bg-white border-b border-slate-100 absolute w-full" 
->              x-transition:enter="transition ease-out duration-200"
->              x-transition:enter-start="opacity-0 -translate-y-2"
->              x-transition:enter-end="opacity-100 translate-y-0">
->             <div class="px-4 pt-2 pb-6 space-y-1">
->                 <a href="/taxes/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Tax & Accounts</a>
->                 <a href="/individual/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Individual Services</a>
->                 <a href="/hr-ops/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">HR & Ops</a>
->                 <a href="/it-ai/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">IT & AI Consulting</a>
->                 <a href="/portfolio/q-showcase-light.html" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Portfolio</a>
->                 <a href="/showcases/videos.html" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Videos</a>
->             </div>
->         </div>
->     </nav>
-> 
->     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
->         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
->             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-medium text-slate-900 mb-6 leading-tight">
->                 Orchestrating <span class="italic text-slate-400">chaos</span> <br> into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">clarity.</span>
->             </h1>
->             <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500 font-light">
->                 One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.
->             </p>
->             <div class="mt-10 flex justify-center gap-4 flex-wrap">
->                 <a href="#divisions" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300">
->                     Explore Areas of Expertise
->                 </a>
->                 <a href="#client-projects" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300">
->                     View Portfolio
->                 </a>
->             </div>
->         </div>
->     </header>
-> 
->     <section id="divisions" class="py-20 relative">
->         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
->             <div class="text-center mb-16">
->                 <h2 class="text-3xl font-serif text-slate-900">Services</h2>
->                 <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full opacity-50"></div>
->             </div>
-> 
->             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
->                 
->                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
->                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
->                         <i class="fa-solid fa-users text-8xl text-blue-900"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-blue-600">
->                         <i class="fa-solid fa-handshake"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-3">HR & Ops</h3>
->                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Talent acquisition strategies, compliance audits, and culture architecture for growing teams. We move beyond compliance into culture architecture.</p>
->                     <a href="/hr-ops/" class="text-blue-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
->                 </div>
-> 
->                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
->                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
->                         <i class="fa-solid fa-gears text-8xl text-indigo-900"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 text-indigo-600">
->                         <i class="fa-solid fa-chart-line"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-3">Ops & Process</h3>
->                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Streamlining workflows and eliminating bottlenecks to maximize operational efficiency. We move beyond compliance into culture architecture.</p>
->                     <a href="/hr-ops/" class="text-indigo-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
->                 </div>
-> 
->                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
->                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
->                         <i class="fa-solid fa-microchip text-8xl text-violet-900"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center mb-6 text-violet-600">
->                         <i class="fa-solid fa-brain"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-3">IT & AI</h3>
->                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Leveraging automation and artificial intelligence to modernize your tech stack. We move beyond compliance into culture architecture.</p>
->                     <a href="/it-ai/" class="text-violet-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
->                 </div>
-> 
->                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
->                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
->                         <i class="fa-solid fa-file-invoice-dollar text-8xl text-emerald-900"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 text-emerald-600">
->                         <i class="fa-solid fa-calculator"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-3">Tax & Accounts</h3>
->                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Strategic tax planning, bookkeeping, and financial compliance for small businesses. We move beyond compliance into culture architecture.</p>
->                     <a href="/taxes/" class="text-emerald-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
->                 </div>
-> 
->                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
->                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
->                         <i class="fa-solid fa-user-pen text-8xl text-amber-900"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6 text-amber-600">
->                         <i class="fa-solid fa-passport"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-3">Individual</h3>
->                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Document preparation, immigration forms, and personal administrative support. We move beyond compliance into culture architecture.</p>
->                     <a href="/individual/" class="text-amber-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
->                 </div>
-> 
->                 <div id="qisuite" class="group bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-xl transform hover:-translate-y-1 transition duration-300 relative overflow-hidden">
->                      <div class="absolute top-0 right-0 p-4 opacity-10">
->                         <i class="fa-solid fa-compass text-8xl text-white"></i>
->                     </div>
->                     <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/20">
->                         <i class="fa-solid fa-360-degrees text-white"></i>
->                     </div>
->                     <h3 class="text-xl font-serif font-medium mb-2">QiAlly 360</h3>
->                     <p class="text-slate-300 text-xs uppercase tracking-widest mb-3">Comprehensive Business Consulting. We move beyond compliance into culture architecture.</p>
->                     <p class="text-slate-300 text-sm leading-relaxed mb-6">Knowledge base, client portal, website, HR support, workers' comp, tax & accounting—the whole 9 yards. One expert for everything. We move beyond compliance into culture architecture.</p>
->                     <a href="/qisuite/" class="inline-block px-4 py-2 bg-white text-slate-900 text-xs font-bold uppercase tracking-wider rounded hover:bg-blue-50 transition">Learn More</a>
->                 </div>
->             </div>
->         </div>
->     </section>
-> 
->     <section id="portfolio" class="py-20 bg-white border-y border-slate-100">
->         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
->             <div class="flex flex-col md:flex-row items-center gap-12">
->                 <div class="w-full md:w-1/3">
->                     <div class="aspect-[3/4] rounded-xl bg-slate-50 flex items-center justify-center relative overflow-hidden shadow-inner">
->                         <span class="text-slate-300 font-serif italic text-2xl"><img src="images/profile.jpg" alt="Portfolio" class="max-w-full max-h-full object-cover rounded-xl"></span>
->                     </div>
->                 </div>
->                 <div class="w-full md:w-2/3">
->                     <h2 class="text-3xl font-serif text-slate-900 mb-6">Systems Whisperer.</h2>
->                     <p class="text-slate-600 mb-6 leading-relaxed">
->                         From business creation to digital marketing and strategic growth, I operate entirely virtually, I am a Partner at QuantumHR LLP, where we deliver specialized human resources consulting and services with a commitment to compliance and optimized solutions.While the capabilities are corporate-grade, the delivery is personal. I operate as a solo-practitioner, meaning you get direct access, rapid turnaround, and a expert who actually knows your name.
->                     </p>
->                     <div class="grid grid-cols-2 gap-4 mb-8">
->                         <div>
->                             <h4 class="font-bold text-slate-900">Experience</h4>
->                             <p class="text-sm text-slate-500">20+ Years Ops & Strategy. </p>
->                         </div>
->                         <div>
->                             <h4 class="font-bold text-slate-900">Approach</h4>
->                             <p class="text-sm text-slate-500">Innovative & Data-Driven</p>
->                         </div>
->                     </div>
->                     <div class="flex gap-4">
->                         <a href="/portfolio/q-showcase-light.html" class="glass-card px-6 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300 inline-flex items-center gap-2">
->                             View Full Portfolio <i class="fa-solid fa-arrow-right"></i>
->                         </a>
->                         <a href="files/cody_rice_velasquez-fullstack.pdf" class="text-blue-600 font-medium border-b border-blue-600 pb-0.5 hover:text-blue-800 hover:border-blue-800 transition inline-flex items-center gap-2" target="_blank">
->                             Download CV <i class="fa-solid fa-download text-sm"></i>
->                         </a>
->                     </div>
->                 </div>
->             </div>
->         </div>
->     </section>
-> 
->     <section id="client-projects" class="py-20 bg-slate-50">
->         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
->             <div class="text-center mb-16">
->                 <h2 class="text-3xl font-serif text-slate-900 mb-4">Client Projects</h2>
->                 <p class="text-lg text-slate-500 max-w-2xl mx-auto">
->                     Real-world solutions we've delivered for businesses across various industries
->                 </p>
->             </div>
-> 
->             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
->                 <!-- BuiltByRays Project -->
->                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
->                     <div class="mb-4">
->                         <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold mb-3">Financial Operations</span>
->                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">BuiltByRays CFO Operations</h3>
->                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
->                             Complete CFO operations system with automated financial reporting, client management, and document processing.
->                         </p>
->                     </div>
->                     <div class="mb-4">
->                         <p class="text-xs font-semibold text-emerald-700 mb-2">Results:</p>
->                         <p class="text-sm text-slate-600">Streamlined financial processes, reduced reporting time by 70%</p>
->                     </div>
->                     <div class="flex flex-wrap gap-2 mb-4">
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Node.js</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">PostgreSQL</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Automation</span>
->                     </div>
->                 </div>
-> 
->                 <!-- Innovahire Project -->
->                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
->                     <div class="mb-4">
->                         <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold mb-3">HR Technology</span>
->                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">Innovahire HR Platform</h3>
->                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
->                             Comprehensive HR management system with applicant tracking, employee onboarding, and performance management.
->                         </p>
->                     </div>
->                     <div class="mb-4">
->                         <p class="text-xs font-semibold text-blue-700 mb-2">Results:</p>
->                         <p class="text-sm text-slate-600">Improved hiring efficiency, reduced time-to-hire by 50%</p>
->                     </div>
->                     <div class="flex flex-wrap gap-2 mb-4">
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Supabase</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Cloudflare</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">AI Integration</span>
->                     </div>
->                 </div>
-> 
->                 <!-- Rosa Lucas Esteban Project -->
->                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
->                     <div class="mb-4">
->                         <span class="inline-block px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-semibold mb-3">Legal Technology</span>
->                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">Rosa Lucas Esteban Legal Practice</h3>
->                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
->                             Digital transformation for legal practice with case management, client portal, and document automation.
->                         </p>
->                     </div>
->                     <div class="mb-4">
->                         <p class="text-xs font-semibold text-purple-700 mb-2">Results:</p>
->                         <p class="text-sm text-slate-600">Automated document processing, improved case management efficiency</p>
->                     </div>
->                     <div class="flex flex-wrap gap-2 mb-4">
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Node.js</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Document AI</span>
->                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Automation</span>
->                     </div>
->                 </div>
->             </div>
-> 
->             <div class="text-center mt-12">
->                 <a href="/portfolio/q-showcase-light.html" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300 inline-flex items-center gap-2">
->                     View More Case Studies <i class="fa-solid fa-arrow-right"></i>
->                 </a>
->             </div>
->         </div>
->     </section>
-> 
->     <section id="forms" class="py-20 bg-slate-50">
->         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
->             <h2 class="text-2xl font-serif text-slate-900 mb-8">Quick Links & Resources</h2>
->             <div class="flex flex-wrap justify-center gap-4">
->                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
->                     <i class="fa-solid fa-file-arrow-down text-blue-500"></i>
->                     <span class="text-sm font-medium">New Client Intake</span>
->                 </a>
->                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
->                     <i class="fa-solid fa-lock text-blue-500"></i>
->                     <span class="text-sm font-medium">Secure Upload Portal</span>
->                 </a>
->                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
->                     <i class="fa-solid fa-calendar-check text-blue-500"></i>
->                     <span class="text-sm font-medium">Book Consultation</span>
->                 </a>
->             </div>
->         </div>
->     </section>
-> 
->     <section id="contact" class="py-20 bg-white border-y border-slate-100">
->         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
->             <h2 class="text-3xl font-serif text-slate-900 mb-4">Get In Touch</h2>
->             <p class="text-lg text-slate-500 mb-8 max-w-2xl mx-auto">
->                 Ready to transform your business operations? Let's discuss your project and how we can help streamline your workflow.
->             </p>
->             <div class="glass-card p-8 rounded-2xl max-w-3xl mx-auto">
->                 <iframe aria-label='Contact for support' frameborder="0" allow="camera;" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/QiAlly/form/Contactforsupport/formperma/iNgO9OhkVkq3ncq57DZFAeB8-HS-jR0BQZvP9pjvkqs?zf_enablecamera=true'></iframe>
->             </div>
->             <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-slate-600">
->                 <div class="flex items-center gap-2">
->                     <i class="fa-solid fa-envelope text-blue-600"></i>
->                     <a href="mailto:cody@qially.com" class="hover:text-blue-600 transition">cody@qially.com</a>
->                 </div>
->                 <div class="flex items-center gap-2">
->                     <i class="fa-solid fa-phone text-blue-600"></i>
->                     <a href="tel:+13176433489" class="hover:text-blue-600 transition">+1 (317) 643-3489</a>
->                 </div>
->                 <div class="flex items-center gap-2">
->                     <i class="fa-solid fa-clock text-blue-600"></i>
->                     <span>Daily, 12:00 PM - 7:00 PM</span>
->                 </div>
->             </div>
->         </div>
->     </section>
-> 
->     <footer class="bg-white border-t border-slate-200 pt-12 pb-8">
->         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
->             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
->                 <div class="col-span-1 md:col-span-1">
->                     <span class="font-serif text-xl font-bold text-slate-900">QiAlly</span>
->                     <p class="text-xs text-slate-400 mt-2">© 2025 QiAlly LLC.<br>All rights reserved.</p>
->                 </div>
->                 <div>
->                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Legal</h4>
->                     <ul class="space-y-2 text-sm text-slate-500">
->                         <li><a href="/privacy.html" class="hover:text-blue-600">Privacy Policy</a></li>
->                         <li><a href="/service-agreement/" class="hover:text-blue-600">MSA / Terms</a></li>
->                     </ul>
->                 </div>
->                 <div>
->                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Explore</h4>
->                     <ul class="space-y-2 text-sm text-slate-500">
->                         <li><a href="/portfolio/q-showcase-light.html" class="hover:text-blue-600">Portfolio</a></li>
->                         <li><a href="/showcases/videos.html" class="hover:text-blue-600">Videos</a></li>
->                         <li><a href="/hr-ops/" class="hover:text-blue-600">HR & Ops</a></li>
->                         <li><a href="/taxes/" class="hover:text-blue-600">Tax & Accounting</a></li>
->                         <li><a href="/individual/" class="hover:text-blue-600">Individual Services</a></li>
->                         <li><a href="/it-ai/" class="hover:text-blue-600">IT & AI Consulting</a></li>
->                     </ul>
->                 </div>
->                 <div>
->                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Portals</h4>
->                     <ul class="space-y-2 text-sm text-slate-500">
->                         <li><a href="https://portfolio.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">Portfolio</a></li>
->                         <li><a href="https://vault.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">QiVault</a></li>
->                         <li><a href="https://portal.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">Client Portal</a></li>
->                         <li><a href="https://empowerqnow.com" target="_blank" rel="noopener" class="hover:text-blue-600">Empower Q Now</a></li>
->                     </ul>
->                 </div>
->                 <div>
->                      <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Connect</h4>
->                      <div class="flex space-x-4">
->                          <a href="https://www.linkedin.com/company/qially/?viewAsMember=true" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="QiAlly LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
->                          <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="Cody's LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
->                          <a href="https://twitter.com/qiallyme" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="Twitter"><i class="fa-brands fa-twitter text-lg"></i></a>
->                          <a href="https://youtube.com/@qially" target="_blank" rel="noopener" class="text-slate-400 hover:text-red-600" title="YouTube"><i class="fa-brands fa-youtube text-lg"></i></a>
->                          <a href="mailto:cody@qially.com" class="text-slate-400 hover:text-blue-600" title="Email"><i class="fa-solid fa-envelope text-lg"></i></a>
->                      </div>
->                 </div>
->             </div>
->         </div>
->     </footer>
-> 
->     <!-- ElevenLabs ConvAI Widget -->
->     <elevenlabs-convai agent-id="agent_5601kb789hcyfrw928kr2a0ged3z"></elevenlabs-convai>
->     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
->     <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqdb087c4840b1b49e07ec03ea0af3a71c14fff19429170b3e4d9f22d7006f343c" defer></script>
-> </body>
+> ok do me this favor can we do this in blocks because your taking me from 464 lines to less than half and also my cards are missing alignment is wrong and etc. again here is the current html, we are just surgically tweaking content and removing noise, not stripping my home page naked. <!DOCTYPE html>
+
+> <html lang="en" class="scroll-smooth">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>QiAlly | Solutions for People & Business</title>
+
+>     <meta name="description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally>
+
+>     <link rel="canonical" href="https://qially.com/">
+
+>     <meta property="og:title" content="QiAlly | Solutions for People & Business">
+
+>     <meta property="og:description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.">
+
+>     <meta property="og:url" content="https://qially.com/">
+
+>     <meta property="og:type" content="website">
+
+>     <meta property="og:site_name" content="QiAlly">
+
+>     <meta name="twitter:card" content="summary_large_image">
+
+>     <meta name="twitter:title" content="QiAlly | Solutions for People & Business">
+
+>     <meta name="twitter:description" content="One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.">
+
+>     <link rel="icon" type="image/png" href="/images/favicon.png">
+
+>     <script type="application/ld+json">
+
+>     {
+
+>       "@context": "https://schema.org",
+
+>       "@type": "Organization",
+
+>       "name": "QiAlly",
+
+>       "url": "https://qially.com",
+
+>       "logo": "https://qially.com/images/favicon.png",
+
+>       "description": "One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.",
+
+>       "founder": {
+
+>         "@type": "Person",
+
+>         "name": "Cody Rice Velasquez"
+
+>       },
+
+>       "sameAs": [
+
+>         "https://www.linkedin.com/company/qially/",
+
+>         "https://twitter.com/qiallyme",
+
+>         "https://youtube.com/@qially"
+
+>       ],
+
+>       "contactPoint": {
+
+>         "@type": "ContactPoint",
+
+>         "contactType": "Business Inquiries",
+
+>         "email": "cody@qially.com",
+
+>         "telephone": "+1-317-643-3489",
+
+>         "url": "https://qially.com/#contact"
+
+>       }
+
+>     }
+
+>     </script>
+
+>     
+
+>     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+>     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+>     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+>     
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     
+
+>     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+> 
+
+>     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+> 
+
+>     <script>
+
+>         tailwind.config = {
+
+>             theme: {
+
+>                 extend: {
+
+>                     fontFamily: {
+
+>                         sans: ['Inter', 'sans-serif'],
+
+>                         serif: ['Playfair Display', 'serif'],
+
+>                     },
+
+>                     colors: {
+
+>                         'brand-bg': '#f8fafc',
+
+>                         'glass-border': 'rgba(255, 255, 255, 0.5)',
+
+>                         'glass-bg': 'rgba(255, 255, 255, 0.7)',
+
+>                     }
+
+>                 }
+
+>             }
+
+>         }
+
+>     </script>
+
+> 
+
+>     <style>
+
+>         /* Dynamic Background Gradient Animation */
+
+>         .blob-bg {
+
+>             position: fixed;
+
+>             top: 0;
+
+>             left: 0;
+
+>             width: 100vw;
+
+>             height: 100vh;
+
+>             z-index: -1;
+
+>             background: 
+
+>                 radial-gradient(circle at 15% 50%, rgba(219, 234, 254, 0.5), transparent 25%), 
+
+>                 radial-gradient(circle at 85% 30%, rgba(233, 213, 255, 0.5), transparent 25%);
+
+>             filter: blur(40px);
+
+>         }
+
+>         
+
+>         .glass-card {
+
+>             background: rgba(255, 255, 255, 0.65);
+
+>             backdrop-filter: blur(12px);
+
+>             -webkit-backdrop-filter: blur(12px);
+
+>             border: 1px solid rgba(255, 255, 255, 0.5);
+
+>             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+
+>         }
+
+>     </style>
+
+> </head>
+
+> <body class="bg-slate-50 text-slate-800 antialiased relative selection:bg-blue-100 selection:text-blue-900">
+
+> 
+
+>     <div class="blob-bg"></div>
+
+> 
+
+>     <nav x-data="{ open: false }" class="fixed w-full z-50 top-0 transition-all duration-300" :class="open ? 'bg-white' : 'bg-white/80 backdrop-blur-md border-b border-white/50'">
+
+>         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+>             <div class="flex justify-between h-20 items-center">
+
+>                 <div class="flex-shrink-0 flex items-center">
+
+>                     <a href="index.html" class="font-serif text-2xl font-bold tracking-tight text-slate-900">
+
+>                         Qi<span class="text-blue-600 font-light italic">Ally</span>
+
+>                     </a>
+
+>                 </div>
+
+> 
+
+>                 <div class="hidden md:flex space-x-8 items-center">
+
+>                     <a href="/taxes/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Tax & Accounts</a>
+
+>                     <a href="/individual/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Individual Services</a>
+
+>                     <a href="/hr-ops/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">HR & Ops</a>
+
+>                     <a href="/it-ai/" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">IT & AI Consulting</a>
+
+>                     <a href="/portfolio/q-showcase-light.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Portfolio</a>
+
+>                     <a href="/showcases/videos.html" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Videos</a>
+
+>                     <a href="#contact" class="px-5 py-2.5 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-200">Contact</a>
+
+>                 </div>
+
+> 
+
+>                 <div class="md:hidden flex items-center">
+
+>                     <button @click="open = !open" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+
+>                         <i class="fa-solid fa-bars text-xl"></i>
+
+>                     </button>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+> 
+
+>         <div x-show="open" class="md:hidden bg-white border-b border-slate-100 absolute w-full" 
+
+>              x-transition:enter="transition ease-out duration-200"
+
+>              x-transition:enter-start="opacity-0 -translate-y-2"
+
+>              x-transition:enter-end="opacity-100 translate-y-0">
+
+>             <div class="px-4 pt-2 pb-6 space-y-1">
+
+>                 <a href="/taxes/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Tax & Accounts</a>
+
+>                 <a href="/individual/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Individual Services</a>
+
+>                 <a href="/hr-ops/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">HR & Ops</a>
+
+>                 <a href="/it-ai/" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">IT & AI Consulting</a>
+
+>                 <a href="/portfolio/q-showcase-light.html" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Portfolio</a>
+
+>                 <a href="/showcases/videos.html" class="block px-3 py-2 text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600 rounded-md">Videos</a>
+
+>             </div>
+
+>         </div>
+
+>     </nav>
+
+> 
+
+>     <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+
+>         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+>             <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-medium text-slate-900 mb-6 leading-tight">
+
+>                 Orchestrating <span class="italic text-slate-400">chaos</span> <br> into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">clarity.</span>
+
+>             </h1>
+
+>             <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-500 font-light">
+
+>                 One expert. Multiple areas of expertise. From complex HR Disciplines to individual immigration forms, tax returns or introduction to Ai. I empower you or your business for future success.I am you Key Ally.
+
+>             </p>
+
+>             <div class="mt-10 flex justify-center gap-4 flex-wrap">
+
+>                 <a href="#divisions" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300">
+
+>                     Explore Areas of Expertise
+
+>                 </a>
+
+>                 <a href="#client-projects" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300">
+
+>                     View Portfolio
+
+>                 </a>
+
+>             </div>
+
+>         </div>
+
+>     </header>
+
+> 
+
+>     <section id="divisions" class="py-20 relative">
+
+>         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+>             <div class="text-center mb-16">
+
+>                 <h2 class="text-3xl font-serif text-slate-900">Services</h2>
+
+>                 <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full opacity-50"></div>
+
+>             </div>
+
+> 
+
+>             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+>                 
+
+>                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
+
+>                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+
+>                         <i class="fa-solid fa-users text-8xl text-blue-900"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+
+>                         <i class="fa-solid fa-handshake"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-3">HR & Ops</h3>
+
+>                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Talent acquisition strategies, compliance audits, and culture architecture for growing teams. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/hr-ops/" class="text-blue-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
+
+>                 </div>
+
+> 
+
+>                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
+
+>                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+
+>                         <i class="fa-solid fa-gears text-8xl text-indigo-900"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mb-6 text-indigo-600">
+
+>                         <i class="fa-solid fa-chart-line"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-3">Ops & Process</h3>
+
+>                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Streamlining workflows and eliminating bottlenecks to maximize operational efficiency. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/hr-ops/" class="text-indigo-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
+
+>                 </div>
+
+> 
+
+>                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
+
+>                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+
+>                         <i class="fa-solid fa-microchip text-8xl text-violet-900"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-violet-50 rounded-xl flex items-center justify-center mb-6 text-violet-600">
+
+>                         <i class="fa-solid fa-brain"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-3">IT & AI</h3>
+
+>                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Leveraging automation and artificial intelligence to modernize your tech stack. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/it-ai/" class="text-violet-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
+
+>                 </div>
+
+> 
+
+>                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
+
+>                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+
+>                         <i class="fa-solid fa-file-invoice-dollar text-8xl text-emerald-900"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 text-emerald-600">
+
+>                         <i class="fa-solid fa-calculator"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-3">Tax & Accounts</h3>
+
+>                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Strategic tax planning, bookkeeping, and financial compliance for small businesses. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/taxes/" class="text-emerald-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
+
+>                 </div>
+
+> 
+
+>                 <div class="group glass-card p-8 rounded-2xl hover:shadow-xl transition duration-300 cursor-pointer relative overflow-hidden">
+
+>                     <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+
+>                         <i class="fa-solid fa-user-pen text-8xl text-amber-900"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-6 text-amber-600">
+
+>                         <i class="fa-solid fa-passport"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-3">Individual</h3>
+
+>                     <p class="text-slate-500 text-sm leading-relaxed mb-4">Document preparation, immigration forms, and personal administrative support. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/individual/" class="text-amber-600 text-sm font-semibold hover:underline">View Services &rarr;</a>
+
+>                 </div>
+
+> 
+
+>                 <div id="qisuite" class="group bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-xl transform hover:-translate-y-1 transition duration-300 relative overflow-hidden">
+
+>                      <div class="absolute top-0 right-0 p-4 opacity-10">
+
+>                         <i class="fa-solid fa-compass text-8xl text-white"></i>
+
+>                     </div>
+
+>                     <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm border border-white/20">
+
+>                         <i class="fa-solid fa-360-degrees text-white"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-serif font-medium mb-2">QiAlly 360</h3>
+
+>                     <p class="text-slate-300 text-xs uppercase tracking-widest mb-3">Comprehensive Business Consulting. We move beyond compliance into culture architecture.</p>
+
+>                     <p class="text-slate-300 text-sm leading-relaxed mb-6">Knowledge base, client portal, website, HR support, workers' comp, tax & accounting—the whole 9 yards. One expert for everything. We move beyond compliance into culture architecture.</p>
+
+>                     <a href="/qisuite/" class="inline-block px-4 py-2 bg-white text-slate-900 text-xs font-bold uppercase tracking-wider rounded hover:bg-blue-50 transition">Learn More</a>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <section id="portfolio" class="py-20 bg-white border-y border-slate-100">
+
+>         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+>             <div class="flex flex-col md:flex-row items-center gap-12">
+
+>                 <div class="w-full md:w-1/3">
+
+>                     <div class="aspect-[3/4] rounded-xl bg-slate-50 flex items-center justify-center relative overflow-hidden shadow-inner">
+
+>                         <span class="text-slate-300 font-serif italic text-2xl"><img src="images/profile.jpg" alt="Portfolio" class="max-w-full max-h-full object-cover rounded-xl"></span>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="w-full md:w-2/3">
+
+>                     <h2 class="text-3xl font-serif text-slate-900 mb-6">Systems Whisperer.</h2>
+
+>                     <p class="text-slate-600 mb-6 leading-relaxed">
+
+>                         From business creation to digital marketing and strategic growth, I operate entirely virtually, I am a Partner at QuantumHR LLP, where we deliver specialized human resources consulting and services with a commitment to compliance and optimized solutions.While the capabilities are corporate-grade, the delivery is personal. I operate as a solo-practitioner, meaning you get direct access, rapid turnaround, and a expert who actually knows your name.
+
+>                     </p>
+
+>                     <div class="grid grid-cols-2 gap-4 mb-8">
+
+>                         <div>
+
+>                             <h4 class="font-bold text-slate-900">Experience</h4>
+
+>                             <p class="text-sm text-slate-500">20+ Years Ops & Strategy. </p>
+
+>                         </div>
+
+>                         <div>
+
+>                             <h4 class="font-bold text-slate-900">Approach</h4>
+
+>                             <p class="text-sm text-slate-500">Innovative & Data-Driven</p>
+
+>                         </div>
+
+>                     </div>
+
+>                     <div class="flex gap-4">
+
+>                         <a href="/portfolio/q-showcase-light.html" class="glass-card px-6 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300 inline-flex items-center gap-2">
+
+>                             View Full Portfolio <i class="fa-solid fa-arrow-right"></i>
+
+>                         </a>
+
+>                         <a href="files/cody_rice_velasquez-fullstack.pdf" class="text-blue-600 font-medium border-b border-blue-600 pb-0.5 hover:text-blue-800 hover:border-blue-800 transition inline-flex items-center gap-2" target="_blank">
+
+>                             Download CV <i class="fa-solid fa-download text-sm"></i>
+
+>                         </a>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <section id="client-projects" class="py-20 bg-slate-50">
+
+>         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+>             <div class="text-center mb-16">
+
+>                 <h2 class="text-3xl font-serif text-slate-900 mb-4">Client Projects</h2>
+
+>                 <p class="text-lg text-slate-500 max-w-2xl mx-auto">
+
+>                     Real-world solutions we've delivered for businesses across various industries
+
+>                 </p>
+
+>             </div>
+
+> 
+
+>             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+>                 <!-- BuiltByRays Project -->
+
+>                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
+
+>                     <div class="mb-4">
+
+>                         <span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-semibold mb-3">Financial Operations</span>
+
+>                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">BuiltByRays CFO Operations</h3>
+
+>                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
+
+>                             Complete CFO operations system with automated financial reporting, client management, and document processing.
+
+>                         </p>
+
+>                     </div>
+
+>                     <div class="mb-4">
+
+>                         <p class="text-xs font-semibold text-emerald-700 mb-2">Results:</p>
+
+>                         <p class="text-sm text-slate-600">Streamlined financial processes, reduced reporting time by 70%</p>
+
+>                     </div>
+
+>                     <div class="flex flex-wrap gap-2 mb-4">
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Node.js</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">PostgreSQL</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Automation</span>
+
+>                     </div>
+
+>                 </div>
+
+> 
+
+>                 <!-- Innovahire Project -->
+
+>                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
+
+>                     <div class="mb-4">
+
+>                         <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-semibold mb-3">HR Technology</span>
+
+>                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">Innovahire HR Platform</h3>
+
+>                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
+
+>                             Comprehensive HR management system with applicant tracking, employee onboarding, and performance management.
+
+>                         </p>
+
+>                     </div>
+
+>                     <div class="mb-4">
+
+>                         <p class="text-xs font-semibold text-blue-700 mb-2">Results:</p>
+
+>                         <p class="text-sm text-slate-600">Improved hiring efficiency, reduced time-to-hire by 50%</p>
+
+>                     </div>
+
+>                     <div class="flex flex-wrap gap-2 mb-4">
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Supabase</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Cloudflare</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">AI Integration</span>
+
+>                     </div>
+
+>                 </div>
+
+> 
+
+>                 <!-- Rosa Lucas Esteban Project -->
+
+>                 <div class="glass-card p-6 rounded-2xl hover:shadow-xl transition duration-300">
+
+>                     <div class="mb-4">
+
+>                         <span class="inline-block px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-semibold mb-3">Legal Technology</span>
+
+>                         <h3 class="text-xl font-serif font-medium text-slate-900 mb-3">Rosa Lucas Esteban Legal Practice</h3>
+
+>                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
+
+>                             Digital transformation for legal practice with case management, client portal, and document automation.
+
+>                         </p>
+
+>                     </div>
+
+>                     <div class="mb-4">
+
+>                         <p class="text-xs font-semibold text-purple-700 mb-2">Results:</p>
+
+>                         <p class="text-sm text-slate-600">Automated document processing, improved case management efficiency</p>
+
+>                     </div>
+
+>                     <div class="flex flex-wrap gap-2 mb-4">
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">React</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Node.js</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Document AI</span>
+
+>                         <span class="px-2 py-1 bg-slate-100 text-slate-700 rounded text-xs">Automation</span>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+> 
+
+>             <div class="text-center mt-12">
+
+>                 <a href="/portfolio/q-showcase-light.html" class="glass-card px-8 py-3 rounded-full text-slate-900 font-medium hover:bg-white hover:scale-105 transition duration-300 inline-flex items-center gap-2">
+
+>                     View More Case Studies <i class="fa-solid fa-arrow-right"></i>
+
+>                 </a>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <section id="forms" class="py-20 bg-slate-50">
+
+>         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+>             <h2 class="text-2xl font-serif text-slate-900 mb-8">Quick Links & Resources</h2>
+
+>             <div class="flex flex-wrap justify-center gap-4">
+
+>                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
+
+>                     <i class="fa-solid fa-file-arrow-down text-blue-500"></i>
+
+>                     <span class="text-sm font-medium">New Client Intake</span>
+
+>                 </a>
+
+>                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
+
+>                     <i class="fa-solid fa-lock text-blue-500"></i>
+
+>                     <span class="text-sm font-medium">Secure Upload Portal</span>
+
+>                 </a>
+
+>                 <a href="#" class="glass-card px-6 py-4 rounded-lg flex items-center gap-3 hover:bg-white transition text-slate-700">
+
+>                     <i class="fa-solid fa-calendar-check text-blue-500"></i>
+
+>                     <span class="text-sm font-medium">Book Consultation</span>
+
+>                 </a>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <section id="contact" class="py-20 bg-white border-y border-slate-100">
+
+>         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+>             <h2 class="text-3xl font-serif text-slate-900 mb-4">Get In Touch</h2>
+
+>             <p class="text-lg text-slate-500 mb-8 max-w-2xl mx-auto">
+
+>                 Ready to transform your business operations? Let's discuss your project and how we can help streamline your workflow.
+
+>             </p>
+
+>             <div class="glass-card p-8 rounded-2xl max-w-3xl mx-auto">
+
+>                 <iframe aria-label='Contact for support' frameborder="0" allow="camera;" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/QiAlly/form/Contactforsupport/formperma/iNgO9OhkVkq3ncq57DZFAeB8-HS-jR0BQZvP9pjvkqs?zf_enablecamera=true'></iframe>
+
+>             </div>
+
+>             <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-slate-600">
+
+>                 <div class="flex items-center gap-2">
+
+>                     <i class="fa-solid fa-envelope text-blue-600"></i>
+
+>                     <a href="mailto:cody@qially.com" class="hover:text-blue-600 transition">cody@qially.com</a>
+
+>                 </div>
+
+>                 <div class="flex items-center gap-2">
+
+>                     <i class="fa-solid fa-phone text-blue-600"></i>
+
+>                     <a href="tel:+13176433489" class="hover:text-blue-600 transition">+1 (317) 643-3489</a>
+
+>                 </div>
+
+>                 <div class="flex items-center gap-2">
+
+>                     <i class="fa-solid fa-clock text-blue-600"></i>
+
+>                     <span>Daily, 12:00 PM - 7:00 PM</span>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <footer class="bg-white border-t border-slate-200 pt-12 pb-8">
+
+>         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+>             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+
+>                 <div class="col-span-1 md:col-span-1">
+
+>                     <span class="font-serif text-xl font-bold text-slate-900">QiAlly</span>
+
+>                     <p class="text-xs text-slate-400 mt-2">© 2025 QiAlly LLC.<br>All rights reserved.</p>
+
+>                 </div>
+
+>                 <div>
+
+>                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Legal</h4>
+
+>                     <ul class="space-y-2 text-sm text-slate-500">
+
+>                         <li><a href="/privacy.html" class="hover:text-blue-600">Privacy Policy</a></li>
+
+>                         <li><a href="/service-agreement/" class="hover:text-blue-600">MSA / Terms</a></li>
+
+>                     </ul>
+
+>                 </div>
+
+>                 <div>
+
+>                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Explore</h4>
+
+>                     <ul class="space-y-2 text-sm text-slate-500">
+
+>                         <li><a href="/portfolio/q-showcase-light.html" class="hover:text-blue-600">Portfolio</a></li>
+
+>                         <li><a href="/showcases/videos.html" class="hover:text-blue-600">Videos</a></li>
+
+>                         <li><a href="/hr-ops/" class="hover:text-blue-600">HR & Ops</a></li>
+
+>                         <li><a href="/taxes/" class="hover:text-blue-600">Tax & Accounting</a></li>
+
+>                         <li><a href="/individual/" class="hover:text-blue-600">Individual Services</a></li>
+
+>                         <li><a href="/it-ai/" class="hover:text-blue-600">IT & AI Consulting</a></li>
+
+>                     </ul>
+
+>                 </div>
+
+>                 <div>
+
+>                     <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Portals</h4>
+
+>                     <ul class="space-y-2 text-sm text-slate-500">
+
+>                         <li><a href="https://portfolio.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">Portfolio</a></li>
+
+>                         <li><a href="https://vault.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">QiVault</a></li>
+
+>                         <li><a href="https://portal.qially.com" target="_blank" rel="noopener" class="hover:text-blue-600">Client Portal</a></li>
+
+>                         <li><a href="https://empowerqnow.com" target="_blank" rel="noopener" class="hover:text-blue-600">Empower Q Now</a></li>
+
+>                     </ul>
+
+>                 </div>
+
+>                 <div>
+
+>                      <h4 class="font-bold text-xs uppercase text-slate-900 mb-4 tracking-wider">Connect</h4>
+
+>                      <div class="flex space-x-4">
+
+>                          <a href="https://www.linkedin.com/company/qially/?viewAsMember=true" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="QiAlly LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+
+>                          <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="Cody's LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+
+>                          <a href="https://twitter.com/qiallyme" target="_blank" rel="noopener" class="text-slate-400 hover:text-blue-600" title="Twitter"><i class="fa-brands fa-twitter text-lg"></i></a>
+
+>                          <a href="https://youtube.com/@qially" target="_blank" rel="noopener" class="text-slate-400 hover:text-red-600" title="YouTube"><i class="fa-brands fa-youtube text-lg"></i></a>
+
+>                          <a href="mailto:cody@qially.com" class="text-slate-400 hover:text-blue-600" title="Email"><i class="fa-solid fa-envelope text-lg"></i></a>
+
+>                      </div>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+>     </footer>
+
+> 
+
+>     <!-- ElevenLabs ConvAI Widget -->
+
+>     <elevenlabs-convai agent-id="agent_5601kb789hcyfrw928kr2a0ged3z"></elevenlabs-convai>
+
+>     <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+>     <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqdb087c4840b1b49e07ec03ea0af3a71c14fff19429170b3e4d9f22d7006f343c" defer></script>
+
+> </body>
+
 > </html>
 
 ### Assistant
@@ -6927,58 +7779,110 @@ canonical_ref: ""
 > If you paste your updated `#divisions` block after you apply the `service-glyph` and `service-icon` tweaks, I’ll sanity-check the icon consistency (matching colors + no dead icons) in one pass.
 
 ### User
-> double the footer, thi sis the current footer and im pasting the one you gave me. <footer class="site-footer">
->   <div class="container">
->     <div class="footer-content">
->       <div class="footer-brand">
->         <div class="brand">
->           <img src="/img/logo.svg" alt="QiAlly" class="logo">
->           <span class="wordmark">QiAlly</span>
->         </div>
->         <p>Your ally in business, providing expert services in tax, HR, tech, and automation. Empowering businesses through holistic, end-to-end solutions.</p>
->         <div class="cta-row">
->           <a href="https://myhub.qially.com" class="btn primary" target="_blank" rel="noopener">Client Portal</a>
->           <a href="https://portfolio.qially.com/" class="btn outline" target="_blank" rel="noopener">View Portfolio</a>
->         </div>
->       </div>
->       
->       <div class="footer-links">
->         <h3>Quick Links</h3>
->         <ul>
->           <li><a href="/about/">About Us</a></li>
->           <li><a href="/services/">Services</a></li>
->           <li><a href="/contact/">Contact</a></li>
->           <li><a href="https://portfolio.qially.com" target="_blank" rel="noopener">Portfolio</a></li>
->           <li><a href="/memory-vault/">MemoryVault</a></li>
->         </ul>
->       </div>
->       
->       <div class="footer-links">
->         <h3>Resources</h3>
->         <ul>
->           <li><a href="/vault/">Vault (Knowledge Base)</a></li>
->           <li><a href="/portal/myhub/">MyHub Portal</a></li>
->           <li><a href="/support/">Support</a></li>
->           <li><a href="https://empowerqnow.qially.com" target="_blank" rel="noopener">Empower Q Now</a></li>
->           <li><a href="https://vault.qially.com" target="_blank" rel="noopener">QiVault</a></li>
->         </ul>
->       </div>
->       
->       <div class="footer-links">
->         <h3>Legal</h3>
->         <ul>
->           <li><a href="/msa/">MSA</a></li>
->           <li><a href="/terms/">Terms of Service</a></li>
->           <li><a href="/privacy/">Privacy Policy</a></li>
->         </ul>
->       </div>
->     </div>
->     
->     <div class="footer-bottom">
->       <span>© 2025 QiAlly. All rights reserved.</span>
->       <span>• Systems Whisperer Built with ❤️ and ⚡</span>
->     </div>
->   </div>
+> double the footer, thi sis the current footer and im pasting the one you gave me. <footer class="site-footer">
+
+>   <div class="container">
+
+>     <div class="footer-content">
+
+>       <div class="footer-brand">
+
+>         <div class="brand">
+
+>           <img src="/img/logo.svg" alt="QiAlly" class="logo">
+
+>           <span class="wordmark">QiAlly</span>
+
+>         </div>
+
+>         <p>Your ally in business, providing expert services in tax, HR, tech, and automation. Empowering businesses through holistic, end-to-end solutions.</p>
+
+>         <div class="cta-row">
+
+>           <a href="https://myhub.qially.com" class="btn primary" target="_blank" rel="noopener">Client Portal</a>
+
+>           <a href="https://portfolio.qially.com/" class="btn outline" target="_blank" rel="noopener">View Portfolio</a>
+
+>         </div>
+
+>       </div>
+
+>       
+
+>       <div class="footer-links">
+
+>         <h3>Quick Links</h3>
+
+>         <ul>
+
+>           <li><a href="/about/">About Us</a></li>
+
+>           <li><a href="/services/">Services</a></li>
+
+>           <li><a href="/contact/">Contact</a></li>
+
+>           <li><a href="https://portfolio.qially.com" target="_blank" rel="noopener">Portfolio</a></li>
+
+>           <li><a href="/memory-vault/">MemoryVault</a></li>
+
+>         </ul>
+
+>       </div>
+
+>       
+
+>       <div class="footer-links">
+
+>         <h3>Resources</h3>
+
+>         <ul>
+
+>           <li><a href="/vault/">Vault (Knowledge Base)</a></li>
+
+>           <li><a href="/portal/myhub/">MyHub Portal</a></li>
+
+>           <li><a href="/support/">Support</a></li>
+
+>           <li><a href="https://empowerqnow.qially.com" target="_blank" rel="noopener">Empower Q Now</a></li>
+
+>           <li><a href="https://vault.qially.com" target="_blank" rel="noopener">QiVault</a></li>
+
+>         </ul>
+
+>       </div>
+
+>       
+
+>       <div class="footer-links">
+
+>         <h3>Legal</h3>
+
+>         <ul>
+
+>           <li><a href="/msa/">MSA</a></li>
+
+>           <li><a href="/terms/">Terms of Service</a></li>
+
+>           <li><a href="/privacy/">Privacy Policy</a></li>
+
+>         </ul>
+
+>       </div>
+
+>     </div>
+
+>     
+
+>     <div class="footer-bottom">
+
+>       <span>© 2025 QiAlly. All rights reserved.</span>
+
+>       <span>• Systems Whisperer Built with ❤️ and ⚡</span>
+
+>     </div>
+
+>   </div>
+
 > </footer>
 
 ### Assistant

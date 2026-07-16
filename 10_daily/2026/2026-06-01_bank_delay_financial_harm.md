@@ -3,9 +3,9 @@ layout: page
 title: "Bank Delay Financial Harm"
 slug: "bank_delay_financial_harm"
 created_at: "2026-06-01 16:58:29"
-updated_at: "2026-06-01 16:58:29"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

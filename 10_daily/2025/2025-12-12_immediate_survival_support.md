@@ -3,9 +3,9 @@ layout: page
 title: "Immediate survival support"
 slug: "immediate_survival_support"
 created_at: "2025-12-12 07:19:41"
-updated_at: "2025-12-12 07:19:41"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

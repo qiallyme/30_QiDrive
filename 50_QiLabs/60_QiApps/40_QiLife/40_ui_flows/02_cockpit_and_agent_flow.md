@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 02 Cockpit And Agent Flow
-slug: ""
+slug: 02-cockpit-and-agent-flow
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ca9272455f10471a8e0d64c11979a511
 canonical_ref: ""
 source_type: manual
 template_key: master-template

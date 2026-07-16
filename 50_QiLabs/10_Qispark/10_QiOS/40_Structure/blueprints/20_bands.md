@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 20 Bands
-slug: ""
+slug: 20-bands
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0655e29eccdb460c92c5ee6813bce7ad
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,9 +3,9 @@ layout: page
 title: "Credit Reporting Contradictions"
 slug: "credit_reporting_contradictions"
 created_at: "2026-04-03 14:19:06"
-updated_at: "2026-04-03 14:19:06"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,715 +39,1424 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> Redo this documents to produce the final report : FINAL REPORT FOR THE RECORD: SYSTEMIC REPORTING ERRORS AND RE-INSERTION VIOLATIONS
-> I. Executive Summary
-> This report serves as a formal analysis of the continuing credit reporting violations, re-insertion events, and material contradictions in the matter of Financial Center First Credit Union ("FCFCU") vs. Cody Rice-Velasquez (Cause No. 49D03-2501-MF-002559). As of February 2026, FCFCU has re-reported a combined deficiency balance of approximately $89,848 across two mortgage tradelines, despite a prior recorded satisfaction of judgment and explicit representations in open court that no deficiency exists. This conduct constitutes willful noncompliance under the Fair Credit Reporting Act (FCRA) and the Fair Debt Collection Practices Act (FDCPA).
-> II. Current Credit Reporting Status (Update: Feb 11, 2026)
-> Following a period where tradelines were reported as satisfied or temporarily removed during a 2025 system transition, FCFCU has re-inserted the following delinquent reporting data as of February 4, 2026:
-> 
-> Tradeline
-> Account Status
-> Past Due Balance
-> Original Loan
-> Last Payment
-> Loan #1 (First Mortgage)
->  Collection / Charge-off
-> $65,000
-> $196,000
-> Aug 23, 2024
-> Loan #2 (Second Mortgage)
->  Collection / Charge-off
-> $24,848
-> $23,000
-> Aug 13, 2024
-> Total Deficiency
->  N/A
-> $89,848
-> $219,000
-> N/A
-> 
-> III. Core Legal Contradictions
-> The February 2026 reporting creates an irreconcilable conflict between the official court record and the information furnished to consumer reporting agencies (CRAs).
-> 
-> Judicial Admission: During the January 9, 2026 hearing, the Court and FCFCU counsel addressed the status of the foreclosure judgment and stated that the judgment amount was complete and not subject to revision.
-> Waiver of Deficiency: FCFCU represented to the Court that the Sheriff's Sale produced no excess proceeds and that the bid covered the debt, taxes, and costs, stating explicitly that "there is no excess" and no deficiency.
-> Satisfaction of Judgment: A satisfaction of judgment was recorded on or around September 9, 2025, which legally extinguishes the personal liability on the underlying debt.
-> FCRA Impossibility: FCFCU is currently reporting a "Charged Off" status on a debt that was legally satisfied via credit bid at a Sheriff’s Sale in August 2025.
-> Calculated Surplus and Conflicting Bid: The Plaintiff's filed bid at the Sheriff's Sale was $240,464.20, which exceeded the recorded Judgment of $220,863.09, mathematically creating a raw surplus of approximately $19,601.11. This amount contradicts the creditor's subsequent representations of 'no surplus' and their simultaneous reporting of a $90,000 deficiency to consumer reporting agencies.
-> IV. Foundational Litigation Defects
-> The credit reporting violations are compounded by underlying systemic litigation defects that support a claim of willful and reckless conduct:
-> 1. Jurisdiction and Service Defects: The validity of the underlying judgment is disputed based on failures to comply with Trial Rule 4.1 regarding proper service, which, if proven, renders the judgment void. The alleged method of service (quick knock, lack of mail proof) was not reasonably calculated to provide notice, particularly given: (a) the attempt occurring at an extreme hour (e.g., 2:xx AM on 1/16/2025) under severe weather conditions; (b) the Plaintiff's counsel utilized Certified Mail to serve other institutional defendants in the same case (American Express and JP Morgan Chase Bank) but used an unverified method for the individual Defendant; and (c) the Defendant was demonstrably reachable via sustained effort (as shown by a prior, successful law enforcement contact).
-> Post-Judgment Manipulation: The creditor's attempts to revise accounting figures via nunc pro tunc and the significant delay in addressing surplus funds demonstrate post-judgment manipulation and support claims of bad faith.
-> Timeline Contradictions: The creditor's inconsistent actions, including marking the debt 'satisfied' in June 2025, followed by sale in August 2025, and subsequent re-insertion of a $90k deficiency, establish a timeline of inconsistency and reckless reporting behavior.
-> ADA Process Failure: Documented failure to provide reasonable accommodation for disabilities (ADHD and executive dysfunction) during the service and court process impaired the Defendant's due process rights and opportunity to be heard.
-> V. Post-Execution Interference and Procedural Imbalance
-> The Plaintiff's conduct surrounding the writ execution and subsequent court reporting demonstrates a pattern of unnecessary interference and selective engagement.
-> 1. Selective Response and Omission: Plaintiff exhibits a selective response pattern, promptly engaging when it can challenge Defendant's credibility or advance its procedural position, but consistently failing to address multiple filings regarding documented ADA/disability issues, irreparable harm, or procedural violations. This omission results in a materially incomplete and imbalanced record before the Court regarding known facts of disability and hardship.
-> 2. Interfering Retrieval Conditions: During the limited property retrieval window, the conditions were intentionally or recklessly made hostile and intrusive:
-> Security Overreach: An individual presented as security closely shadowed and followed Defendant inside the room, rather than maintaining a safe distance, increasing distress and interfering with the ability to focus and retrieve property efficiently.
-> Intrusive Conduct: The security individual repeatedly interrupted Defendant with the same questions about medication and was observed on video using a cell phone and observing private writing on the wall.
-> Physical Interference: The Plaintiff's representative disabled the garage door opener access and imposed unannounced logistical constraints during the retrieval period.
-> Cooperation Omitted: Plaintiff's reports omit the fact that the Defendant was cooperative and assisted with access and logistical information throughout the writ execution, instead relying on a narrative of non-compliance.
-> 3. Notice and Good Faith Failure: Defendant had previously requested that communications be directed via email, a method which the Court later confirmed was acceptable. Despite the high stakes of the writ execution, Plaintiff failed to provide any email or courtesy notice, instead relying on methods (minimal knock, late-night posting) that were ineffective, particularly given the Defendant's known safety-driven soundproofing and secured living conditions at the time of the alleged service.
-> VI. Analysis of Continuing Violations
-> The reporting pattern identified since June 2025 reflects systemic instability and bad-faith furnishing tactics:
-> 
-> Re-Aging & Re-Insertion: Tradelines were marked satisfied in June 2025, removed, and then re-inserted with higher balances in July 2025 and February 2026 without the mandatory 5-day re-insertion notice required by the FCRA.
-> Inconsistent Accounting: FCFCU has provided payoff figures ranging from $27,000 to $4,400, while their court-filed worksheet for the Sheriff's Sale bid $240,464.20 against a $220,863.09 judgment.
-> Willful Noncompliance: Continued reporting of inaccurate delinquent status after receiving formal direct disputes and CFPB complaints constitutes a reckless disregard for consumer rights.
-> ADA Interactive Process Failure: FCFCU's refusal to accommodate documented disabilities (ADHD and executive dysfunction) by utilizing written email communication directly impaired the Defendant's ability to correct these financial inaccuracies.
-> VII. Documented Consumer Harm & Actual Damages
-> The reporting of a fabricated $90,000 deficiency has resulted in active, documented harm:
-> 
-> Housing Instability: Automated "REJECT" flags in tenant screening software (RealPage/AppFolio) have blocked access to standard residential leases.
-> Out-of-Pocket Expenses: Ongoing reliance on temporary lodging at weekly-rate hotels, costing approximately $300-$350 per week.
-> Environmental Degradation: Property damage and loss of personal effects due to utility transfer delays and restricted access during the winter of 2025-2026.
-> VIII. Strategic Escalation Roadmap
-> To preserve the record for litigation, the following actions are prioritized:
-> 
-> Notice of Continued Violations: A formal pre-suit notice will be served to FCFCU and counsel detailing the contradiction between the Jan 9 "No Deficiency" court statement and the Feb 4 reporting.
-> Regulatory Supplementation: Updated evidence will be submitted to the CFPB and NCUA regarding the $90,000 re-insertion event.
-> Housing Denial Packet: Documentation of 2-3 housing denials and mortgage pre-qualification rejections to solidify the "Actual Damages" claim under 15 U.S.C. § 1681n.
-> IX. Conclusion
-> The record confirms that FCFCU is reporting a legally extinguished debt as collectible. This is not a clerical error, but a systemic failure of internal controls following a merger and subsequent litigation. The creditor's own filings confirm that the judgment is satisfied; therefore, the current reporting is a legal impossibility.
-> 
-> 
-> 
-> Prepared by: Person
-> Date: Date
-> Case Reference: Cause No. 49D03-2501-MF-002559
-> 
-> Evidence Summary & Strategic Narrative: Marion County Account Conveyance Delay
-> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
-> Cause No: 49D03-2501-MF-002559
-> Subject Property: 4817 Shadow Pointe Drive, Indianapolis, IN 46254
-> Exhibit Identification: Post-Sale Ownership Transfer Delay
-> This exhibit documents a material administrative delay between the legal transfer of property ownership and the subsequent notification of account conveyance by the Marion County Treasurer. Despite the Plaintiff (Financial Center First Credit Union) securing the property via Sheriff’s Sale in August 2025, the official county account was not updated to reflect this change until March 24, 2026.
-> 
-> Key Event
-> Verified Date
-> Source / Documentation
-> Sheriff’s Sale
-> August 15, 2025
-> Chronological Case Summary (CCS)
-> Judgment Satisfied
-> September 9, 2025
-> Case Log / Project Memory
-> Deed Recordation
-> December 2, 2025
-> Litigation Strategy Report
-> Writ Execution / Removal
-> December 9, 2025
-> Court Order / Writ
-> Account Conveyance Notice
-> March 24, 2026
-> Marion County Treasurer Correspondence
-> 
-> Strategic Argument: Prejudice via Administrative Lag
-> The 221-day delay (approximately seven months) between the legal sale and the administrative recognition of ownership transfer is not a neutral occurrence. It is a critical component of the Defendant’s theory regarding the misattribution of liability and the weaponization of procedural timelines.
-> 
-> Misalignment of Financial Responsibility: During the seven-month gap, the Plaintiff maintained legal control and title while allowing financial obligations (taxes, utility billing, and property assessments) to remain tied to the Defendant’s name and credit profile.
-> Credit Furnishing Inconsistency: The Plaintiff continued to furnish derogatory credit data reflecting delinquency and active debt long after the judgment was satisfied in September 2025. The fact that the County did not process the transfer until late March 2026 corroborates a pattern of institutional failure to reconcile records in a timely manner.
-> Contradiction of Possession Narrative: In the hearing on January 9, 2026, the Court ordered the Plaintiff responsible for all utilities as of the date of possession (December 9, 2025). The delay in account conveyance further supports the Defendant's claim that the Plaintiff "sat on the account" to the detriment of the Defendant's housing and financial stability.
-> Integrated Motion Language
-> The following paragraph is designed for insertion into future filings or as an oral argument during hearings:"Despite the Sheriff’s Sale occurring on August 15, 2025, and the resulting Judgment being recorded as satisfied in the following month, the Marion County Treasurer did not process or reflect the transfer of the relevant property account until March 24, 2026. This administrative delay of over seven months resulted in financial obligations and legal liabilities being incorrectly attributed to the Defendant long after the loss of ownership and possession. This delay was not merely a clerical oversight; it contributed to ongoing credit reporting inaccuracies and billing inconsistencies that have caused material prejudice to the Defendant's ability to secure alternative housing and financial stability."
-> Proposed Cross-Examination Script
-> Witness Target: Representative for Financial Center First Credit Union or Legal Counsel.
-> 
-> The property at Shadow Pointe Drive was sold at a Sheriff’s Sale on August 15, 2025, correct?
-> At that time, the Plaintiff became the legal owner of the property, correct?
-> The judgment was marked as "satisfied" in the court's chronological case summary by September 2025, correct?
-> Yet, the Marion County Treasurer did not update the property account to reflect this change until March 2026, correct?
-> That constitutes a gap of approximately seven months where the account remained associated with the Defendant, correct?
-> During those seven months, did the Plaintiff take any active steps to notify the County Treasurer of the ownership change to ensure the Defendant was not billed for taxes or fees?
-> During those same seven months, the Plaintiff continued to report this account as "delinquent" or "foreclosed" on the Defendant’s credit reports, correct?
-> So, the Plaintiff enjoyed the benefit of legal ownership while allowing the Defendant to continue bearing the administrative and credit-related burdens of that ownership, correct?
-> 
-> Forensic Litigation Strategy & Status Report
-> Case Summary
-> Case Number: 49D03-2501-MF-002559
-> Court: Marion County Superior Court 3
-> Parties: Financial Center First Credit Union (Plaintiff) v. Cody Rice-Velasquez, American Express National Bank, N.A., JP Morgan Chase Bank, N.A. (Defendants)
-> 
-> I. Case Core: The Narrative of Equity Erasure
-> This is not a standard foreclosure defense. This case centers on Post-Judgment Accounting Manipulation, the Retroactive Erasure of Homeowner Equity, and a Void Judgment Attack. The core narrative is that Financial Center First Credit Union (FCFCU) obtained a judgment—which is reliant on proving defective service under Trial Rule 4.1(B) coupled with a failure of the service to be "reasonably calculated to inform," thereby depriving the court of personal jurisdiction—executed a credit bid that generated a significant surplus, and then attempted to "hide" that surplus through a series of contradictory filings and unsupported fee additions once an audit was demanded.
-> The Structural Reality
-> The Plaintiff initially represented to the Court that "no excess proceeds" existed. However, forensic analysis of the Plaintiff’s own sworn filings revealed a raw surplus of $19,601.11 (the difference between the $240,464.20 credit bid and the $220,863.09 judgment).
-> 
-> When challenged, the Plaintiff’s position shifted through three distinct phases:
-> 
-> Concealment: Claiming no surplus existed.
-> Admission: Acknowledging a surplus of approximately $8,378.42 after inconsistencies were raised.
-> Retroactive Erasure: Filing a nunc pro tunc motion to lower their own bid to $230,562.40—specifically designed to eliminate the equity cushion they had already sworn to in open court.
-> II. Forensic Accounting Discrepancy Matrix
-> The "mechanical" nature of the bank's overcharges is documented across their conflicting affidavits. The following table reconciles the Plaintiff's final claim against the forensic audit of the baseline judgment.
-> 
-> Category
-> Plaintiff Final Claim
-> Audit Verified
-> Discrepancy (Potential Surplus)
-> Principal
-> $220,863.09
-> $220,863.09
-> $0.00
-> Interest
-> $10,725.27
-> $7,384.05
-> ($3,341.22)
-> Taxes
-> $7,681.00
-> $2,951.94
-> ($4,729.06)
-> Legal Fees
-> $4,750.00
-> $3,000.00
-> ($1,750.00)
-> Publication
-> $1,094.35
-> $284.28
-> ($810.07)
-> TOTAL
-> $245,113.71
-> $234,483.36
-> ($10,630.35)
-> 
-> III. Strategic Leverage Matrix
-> Your leverage is built on Risk Asymmetry. The bank is currently exposed to three escalating levels of liability:
-> 
-> Tier 1: Judicial Estoppel (Court Control). The bank represented the $240k bid as accurate to the Court. Under Indiana law, they are arguably estopped from claiming it was an "error" simply because you discovered the math yielded a surplus.
-> Tier 2: FCRA Willful Non-Compliance. The bank is furnishing "Active Delinquency" data on a debt that their own Sheriff's Return identifies as "FULLY SATISFIED". This persistence after formal dispute (expired February 17, 2026) triggers statutory and punitive damages.
-> Tier 3: The "Treble Damage" Conversion Sting. Under Indiana Code § 34-24-3-1, if the bank is proven to have committed a knowing and intentional exertion of unauthorized control over adjudicated surplus funds (not merely an accounting error), they may be liable for triple the actual damages plus attorney fees.
-> The Math: If a $18,000 surplus is withheld with intent, the exposure is $54,000 (3 x $18,000).
-> IV. Current Status: Tactical Inventory
-> ✅ What is Done
-> Audit Anchors: Locked the "Conservative Surplus Position" at $8,378.42 for communication, while preserving the right to the full $19,601.11.
-> Notice of Appeal: Filed to preserve jurisdictional and procedural defects.
-> Formal Demand: Served a "Formal Surplus Demand" with a records preservation notice.
-> Regulatory Foundation: Filed complaints with the CFPB and prepared DOJ/HUD materials.
-> 🛠️ Building & In Progress
-> Accounting Reconciliation Matrix: Mapping every "mechanical" error in the interest and tax seizures.
-> Credit Damage Tracking: Documenting the "housing blockade" caused by the bank reporting inaccurate delinquencies after the sale.
-> Attorney Intake Packet: Finalizing the sanitized "Risk Story" to secure contingency counsel for the FCRA and Civil Rights lanes.
-> VI. Analysis of Recent Developments & Strategic Adjustments
-> The following table identifies critical contradictions and procedural failures observed in the most recent case activity, providing a roadmap for upcoming defensive actions.
-> Contradiction / Error
-> Actionable Step: Defense Strategy
-> I. Judgment Denial (3/31/26): The court denied the Emergency Motion for Preservation and Accounting. This indicates the court may require more specific evidence of the surplus before granting injunctive relief.
-> Risk Check: Analyze the written order to determine if the denial was on procedural grounds or if the court made a preliminary finding regarding the surplus. Obtain the transcript if possible.
-> II. Access Interference (3/25/26): Unauthorized removal/disposal of property occurred during the granted access window, hindering your ability to retrieve belongings.
-> Document Harm: Prepare a detailed affidavit of the lost/discarded items. This creates leverage for a conversion claim and potential spoliation of evidence sanctions.
-> III. Surplus Hearing Posture (3/27/26): The hearing on the Plaintiff's motion to clarify the record/surplus has occurred. The Plaintiff's position in this hearing is now on the record.
-> Leverage: Use the results of the 3/27 hearing to lock in the Plaintiff's admissions regarding any portion of the surplus, even if they dispute the total amount.
-> IV. Credit / Ledger Failure: The bank has failed to correct credit reporting or provide the master ledger after the 2/17/26 dispute deadline.
-> Trigger Treble Exposure: Document this as "willful" under the FCRA. This supports the "knowing and intentional" element required for treble damages under the Indiana Crime Victim's Relief Act.
-> V. NCUA Escalation: As a federally insured credit union, FCFCU is subject to NCUA oversight regarding its accounting and reporting accuracy.
-> Execute Regulatory Pressure: File the formal NCUA complaint. Highlighting the bank's refusal to provide an itemized ledger creates external pressure beyond the courtroom.
-> VI. Financial and Emotional Harm: The ongoing legal burden has caused documented loss of work capacity and severe stress.
-> Quantify Damages: Maintain a log of hours spent on research and legal work, as well as lost income, to substantiate a claim for damages in a potential countersuit.
-> 
-> VI.A. Contradictory Surplus Accounting & Rulings
-> The following events highlight the inconsistent accounting and procedural delays regarding the surplus funds:
-> Denial of Nunc Pro Tunc Entry (Feb 26, 2026): The court denied the Plaintiff's attempt to retroactively lower their bid to eliminate the surplus.
-> Conflicting Sworn Statements (Dec 17, 2025 - Feb 24, 2026): Plaintiff provided contradictory affidavits ranging from "no surplus" to an admission of ~$8,378.42.
-> Remittance Delay (Aug 15, 2025 - Feb 24, 2026): A six-month delay occurred between the generation of surplus and the attempt to reconcile it.
-> Order to Pay Surplus (Mar 02, 2026): The Court formally ordered the Plaintiff to remit surplus funds to the Clerk.
-> 
-> VII. Revised Next Steps & High-Value Moves
-> Secure and Analyze Post-Hearing Orders: Obtain the full text of the 3/31/26 order and the 3/27/26 hearing minutes to define the current legal status.
-> Formalize Property Disposition Harm: File a sworn affidavit regarding the 3/25/26 access interference to establish the basis for a conversion claim.
-> Activate NCUA Pressure: Submit the prepared NCUA complaint to initiate regulatory scrutiny of the bank's accounting practices.
-> Litigate Accounting Failure: Oppose any "record corrections" by the Plaintiff until the full, itemized loan ledger is produced through discovery.
-> 
-> 
-> 
-> Strategic Summary: You have converted a standard foreclosure into a high-leverage risk event for the bank. By focusing on the mechanical impossibility of their accounting, you move the case from "opinion" to "math," where the bank has no defense other than the produced records they currently refuse to show.
-> VIII. Full Chronological Case Summary (CCS)
-> The following is the high-level CCS for Case No. 49D03-2501-MF-002559:
-> Date
-> Event / Filing
-> 01/16/2025
-> Case Filed: Mortgage Foreclosure
-> 08/15/2025
-> Sheriff Sale Conducted; Credit Bid yields surplus
-> 12/17/2025
-> Plaintiff initial affidavit claiming no surplus
-> 02/17/2026
-> FCRA Dispute Deadline; Plaintiff fails to correct credit reporting
-> 02/24/2026
-> Plaintiff Motion to Clarify / Nunc Pro Tunc filed
-> 02/26/2026
-> Order Denying Nunc Pro Tunc Entry
-> 03/02/2026
-> Order to Pay Surplus Funds to Clerk of the Court
-> 03/11/2026
-> Defendant Objection and Motion to Enforce Deposit of Surplus
-> 03/27/2026
-> Hearing on Motion to Clarify Judgment
-> 03/31/2026
-> Order Denying Emergency Motion for Preservation
-> 
-> 
-> 
-> Account name FINANCIAL CNTR FIRST C U Account number 661563L.... Recent balance Not reported Date opened 07/02/2022 Status Foreclosed. PO BOX 26501 INDIANAPOLIS, IN 46226 3175474851 Address identification number 0098348777 Type Mortgage Terms 20 Years On record until Dec 2030 Interest Type Fixed Credit limit or original amount $196000 High balance Not reported Monthly payment Not reported Date of status 01/2026 Responsibility Individual Account history 2026 Feb F Jan F 2025 Dec 180 Nov 180 Oct 180 Sep 180 Aug ND Jul 180 Jun 180 May 180 Apr 180 Mar 180 Feb 180 Jan 180 2024 Dec 180 Nov 180 Oct 150 Sep 120 Aug 90 Jul 60 Jun 60 May 30 Apr 60 Mar 30 Feb OK Jan OK 2023 Dec OK Nov 30 Oct 120 Sep 90 Aug 60 Jul 30 Jun OK May OK Apr OK Mar OK Feb OK Jan OK 2022 Dec OK Nov OK Oct OK Sep OK Aug OK Jul OK Payment history guide Foreclosure as of Feb 2026,Jan 2026 180 days past due as of Dec 2025 to Sep 2025,Jul 2025 to Nov 2024 150 days past due as of Oct 2024 120 days past due as of Sep 2024,Oct 2023 90 days past due as of Aug 2024,Sep 2023 60 days past due as of Jul 2024,Jun 2024,Apr 2024,Aug 2023 30 days past due as of May 2024,Mar 2024,Nov 2023,Jul 2023 Balance history The following data will appear in the following format: Date: account balance / date payment received / scheduled payment amount / actual amount paid Feb 2026: $0 / Aug 22, 2024 / $0 / $0 Dec 2025: $200,478 / Aug 23, 2024 / $1,242 / $0 Nov 2025: $199,735 / Aug 23, 2024 / $1,242 / $0 Oct 2025: $199,016 / Aug 23, 2024 / $1,242 / $0 Sep 2025: $198,273 / Aug 23, 2024 / $1,242 / $0 Jul 2025: $196,812 / Aug 23, 2024 / $1,242 / $0 Jun 2025: $196,069 / Aug 23, 2024 / $1,242 / $0 May 2025: $195,350 / Aug 23, 2024 / $1,242 / $0 Apr 2025: $194,607 / Aug 23, 2024 / $1,242 / $0 Mar 2025: $193,145 / Aug 23, 2024 / $1,242 / $0 Feb 2025: $192,472 / Aug 23, 2024 / $1,242 / $0 Jan 2025: $191,730 / Aug 23, 2024 / $1,242 / $0 Dec 2024: $190,987 / Aug 23, 2024 / $1,242 / $0 Nov 2024: $190,268 / Aug 23, 2024 / $1,242 / $0 Oct 2024: $189,476 / Aug 23, 2024 / $1,242 / $0 Sep 2024: $188,781 / Aug 23, 2024 / $1,242 / $242 Aug 2024: $188,281 / Jul 08, 2024 / $1,242 / $316 Jul 2024: $187,879 / Jun 26, 2024 / $1,242 / $920 Jun 2024: $188,055 / May 23, 2024 / $1,242 / $2,077 May 2024: $189,388 / Apr 16, 2024 / $1,242 / $12 Apr 2024: $188,706 / Mar 27, 2024 / $1,242 / $400 Mar 2024: $188,308 / Feb 21, 2024 / $1,242 / $1,242 The original amount of this account was $196,000 Show less Account name FINANCIAL CNTR FIRST C U Account number 661563L.... Recent balance Not reported Date opened 07/02/2022 Status Foreclosed. PO BOX 26501 INDIANAPOLIS, IN 46226 3175474851 Address identification number 0098348777 Type Mortgage Terms 15 Years On record until Jun 2031 Interest Type Fixed Credit limit or original amount $23000 High balance Not reported Monthly payment Not reported Date of status 01/2026 Responsibility Individual Reinvestigation information This item was updated from our processing of your dispute in Feb 2026. Account history 2026 Feb F Jan F 2025 Dec 180 Nov 180 Oct 180 Sep 180 Aug 180 Jul ND Jun 180 May 180 Apr 180 Mar 180 Feb 180 Jan 180 2024 Dec 150 Nov 120 Oct 90 Sep 60 Aug 30 Jul 60 Jun 30 May ND Apr OK Mar 30 Feb 30 Jan 30 2023 Dec OK Nov OK Oct 30 Sep 60 Aug 30 Jul OK Jun OK May OK Apr OK Mar OK Feb OK Jan OK 2022 Dec OK Nov OK Oct OK Sep OK Aug OK Jul OK Jun OK Payment history guide Foreclosure as of Feb 2026,Jan 2026 180 days past due as of Dec 2025 to Aug 2025,Jun 2025 to Jan 2025 150 days past due as of Dec 2024 120 days past due as of Nov 2024 90 days past due as of Oct 2024 60 days past due as of Sep 2024,Jul 2024,Sep 2023 30 days past due as of Aug 2024,Jun 2024,Mar 2024 to Jan 2024,Oct 2023,Aug 2023 Balance history The following data will appear in the following format: Date: account balance / date payment received / scheduled payment amount / actual amount paid Feb 2026: $0 / Aug 12, 2024 / $0 / $0 Dec 2025: $24,676 / Aug 13, 2024 / $209 / $0 Nov 2025: $24,517 / Aug 13, 2024 / $209 / $0 Oct 2025: $24,363 / Aug 13, 2024 / $209 / $0 Sep 2025: $24,204 / Aug 13, 2024 / $209 / $0 Jul 2025: $23,891 / Aug 13, 2024 / $209 / $0 Jun 2025: $23,733 / Aug 13, 2024 / $209 / $0 May 2025: $23,578 / Aug 13, 2024 / $209 / $0 Apr 2025: $23,420 / Aug 13, 2024 / $209 / $0 Mar 2025: $23,107 / Aug 13, 2024 / $209 / $0 Feb 2025: $22,961 / Aug 13, 2024 / $209 / $0 Jan 2025: $22,802 / Aug 13, 2024 / $209 / $0 Dec 2024: $22,644 / Aug 13, 2024 / $209 / $0 Nov 2024: $22,489 / Aug 13, 2024 / $209 / $0 Oct 2024: $22,281 / Aug 13, 2024 / $209 / $0 Sep 2024: $22,151 / Aug 13, 2024 / $209 / $500 Aug 2024: $22,414 / Apr 22, 2024 / $209 / $0 Jul 2024: $22,251 / Apr 22, 2024 / $209 / $0 Jun 2024: $22,094 / Apr 22, 2024 / $209 / $0 May 2024: $21,932 / Apr 22, 2024 / $209 / $627 Apr 2024: $22,429 / Mar 27, 2024 / $209 / $209 Mar 2024: $22,424 / Feb 22, 2024 / $209 / $209 The original amount of this account was $23,000 Yeah — this is still wrong, and not in a small way.What jumps out immediatelyYou have two FCFCU mortgage tradelines being reported as if they were still actively aging delinquent deep into late 2025, then flipped to foreclosure in January/February 2026.That is a problem because the case record you built shows the sheriff sale was 08/15/2025, and the docket summary reflects the decree as “Fully Satisfied” on that sale, with judgment released after the sale.So the basic contradiction is: - Court-side record: satisfied by sheriff sale in August 2025. - Credit-side reporting: 180 days late in Sep/Oct/Nov/Dec 2025, then foreclosure in Jan/Feb 2026. Those two things do not sit together cleanly.The strongest defects in what you pasted1. Post-sale delinquency aging looks facially wrongFor the first loan, they show: - Sep 2025: 180 - Oct 2025: 180 - Nov 2025: 180 - Dec 2025: 180 - Jan 2026: F - Feb 2026: F For the second loan, same pattern, just with one month variation.That means they were still treating the accounts as ongoing unpaid consumer obligations after the foreclosure sale / satisfaction event. If the debt was legally resolved through judgment satisfaction and sale, continued monthly delinquency progression after that point needs a real reconciliation explanation, not hand-waving. That is exactly the FCRA pressure point your case materials already identify.2. “Date payment received” is frozen in August 2024 for all of 2025–2026That is ugly.For the first loan: - Feb 2026 says balance $0, but still shows payment received Aug 22, 2024 - Dec 2025 through Jan 2025 all keep repeating Aug 23, 2024 For the second loan: - Feb 2026 says balance $0, but still shows payment received Aug 12, 2024 - Dec 2025 through Jan 2025 all keep repeating Aug 13, 2024 That suggests a stale or mechanically rolled-forward reporting structure, not an actually reconciled post-foreclosure tradeline.3. They are reporting a foreclosure date that appears disconnected from the actual case timelineYour pasted tradeline says: - Status: Foreclosed - Date of status: 01/2026 - Payment history guide: foreclosure as of Jan/Feb 2026 But the case record shows: - judgment entered May 2025, - sheriff sale August 15, 2025, - decree returned / satisfaction recorded September 9, 2025. So calling it “foreclosure as of Jan 2026” looks at best misleading, and at worst flat-out inaccurate.4. The balances keep increasing after the sale periodFirst loan: - Jan 2025: $191,730 - Dec 2025: $200,478 Second loan: - Jan 2025: $22,802 - Dec 2025: $24,676 So they kept accreting balance across 2025, even though the court-side record later shows a sale amount large enough to trigger surplus questions and a “fully satisfied” return. That fits your broader accounting-reconciliation attack, including the plaintiff’s bid numbers and surplus discrepancy concerns. What this means strategicallyThis is not just “my credit is ugly.”This is stronger than that. It is:institutional data contradictionThey appear to have: - treated the foreclosure/sale/satisfaction path one way in court, - but continued furnishing a very different story to the bureaus. That is why your FCRA lane matters. Your own case materials already frame the exact issue as post-satisfaction delinquency on extinguished debt and continued furnishing after dispute.Clean framing you can useHere is the core statement:FCFCU reported both mortgage tradelines as continuing 180-day delinquencies through September–December 2025 and as foreclosures in January–February 2026, despite the sheriff sale occurring on August 15, 2025 and the case record reflecting the judgment as fully satisfied thereafter.That is the spine.What you should capture in your evidence table right nowFor each tradeline, create these columns: - Account name - Partial account number - Loan type - Original amount - Status shown - Date of status - Sep 2025 status - Oct 2025 status - Nov 2025 status - Dec 2025 status - Jan 2026 status - Feb 2026 status - Feb 2026 balance - Repeating “date payment received” - Why inaccurate For “Why inaccurate,” use language like: - “Reports 180-day delinquency after sheriff sale date.” - “Reports foreclosure in Jan/Feb 2026 although sale occurred Aug 15, 2025.” - “Uses stale payment-received date from Aug 2024 across 2025/2026 reporting.” - “Fails to reconcile with satisfaction/judgment-release record.” Hard truthThis is strong for credit inaccuracy / reconciliation failure.It is not automatically self-proving of maximum damages by itself. To turn this from “bad reporting” into real leverage, you still need: - the actual dispute timeline, - proof they got notice, - bureau responses, - any denial / deposit increase / housing fallout tied to this, - and a month-by-month comparison against the docket/sale/satisfaction record. That is the conversion step from “weird report” to “willful furnishing.”Bottom lineYour instinct is right.Based on what you pasted, the tradelines still appear materially inaccurate because they keep aging delinquency and then mark foreclosure after the foreclosure sale / satisfaction timeline should have cut off that kind of reporting. That directly supports your FCRA and accounting-reconciliation pressure theory.Next move: turn this into a 2-tradeline contradiction matrix you can use in a dispute packet, CFPB complaint, or settlement exhibit.
-> Date: Date
-> Prepared By: Person
-> Subject: Formal Analysis of Inaccurate Reporting – Financial Center First Credit Union (FCFCU)
-> Executive Summary
-> This document formalizes the factual contradictions between the judicial record in Financial Center First Credit Union v. Cody Rice-Velasquez and the consumer credit data currently being furnished by FCFCU to national credit bureaus. The core discrepancy involves FCFCU continuing to report active, aging monthly delinquencies on debt that was legally satisfied and extinguished via Sheriff Sale on August 15, 2025.
-> Core Reporting Conflicts
-> The judicial record reflects that the foreclosure judgment was "Fully Satisfied" on September 9, 2025, following the Sheriff Sale. However, the furnisher's data contains four primary material defects:
-> 
-> Post-Satisfaction Delinquency Aging: Both tradelines (L1 and L2) report "180 days past due" for September, October, November, and December 2025. It is legally and factually impossible to be delinquent on a debt that no longer exists.
-> Stale Payment Metadata: The "Date payment received" field is frozen in August 2024 for all subsequent reporting cycles in 2025 and 2026, indicating a mechanical failure to reconcile the account status after the legal satisfaction event.
-> Delayed Foreclosure Status: The tradelines list "Status: Foreclosed" and "Date of Status: 01/2026". This reporting creates a false timeline, as the foreclosure event and title transfer were completed in August 2025.
-> Balance Inflation: The reported balances continued to increase through December 2025 (e.g., Tradeline L1 increasing from $191,730 to $200,478) despite the judgment already being satisfied by a bid amount of $240,464.20.
-> Tradeline Reconciliation Matrix
-> Field
-> Judicial Record (Fact)
-> Credit Report (Furnished Data)
-> Accuracy Status
-> Account Status
-> Satisfied / Extinguished (09/09/2025)
-> Active Delinquent / Foreclosure (01/2026)
->  Inaccurate
-> Balance (Post 08/15/25)
-> $0.00 (Due to Surplus/Satisfaction)
-> $200,478 (As of 12/2025)
->  Inaccurate
-> Delinquency (Sep-Dec 2025)
-> No Legal Debt Exists
-> 180 Days Past Due
->  Inaccurate
-> Date of Foreclosure
-> August 15, 2025
-> January 2026
->  Inaccurate
-> 
-> Legal Implications under FCRA
-> Under the Fair Credit Reporting Act (15 U.S.C. § 1681s-2), furnishers are prohibited from reporting information they know or have reasonable cause to believe is inaccurate. The continued reporting of monthly delinquencies on a satisfied judgment constitutes a "willful non-compliance" (15 U.S.C. § 1681n) because the furnisher's internal legal department processed the satisfaction and surplus petitions in the same period they were furnishing contradictory delinquency data.
-> Required Corrective Action
-> To achieve compliance with federal law and accurately reflect the Marion Superior Court record, FCFCU must:
-> 
-> Delete all monthly delinquency entries from September 2025 forward.
-> Correct the "Date of Status" to reflect the actual August 2025 foreclosure date.
-> Reconcile the final balance to $0.00 effective as of the August 15, 2025 sale date.
-> Cease duplicate reporting of the same underlying obligation across multiple tradelines if the data cannot be reconciled.
-> 
-> Authorized Signature:
-> 
-> Person
-> Date
-> 
-> 
-> Operational Strategy & Hearing Readiness Plan
-> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
-> Cause No: 49D03-2501-MF-002559
-> Status: Motion to Vacate Denied; Evidentiary Hearing Set for March 27, 2026
-> I. Executive Posture
-> The court’s denial of the Motion to Vacate does not signal the end of the dispute; it shifts the battlefield to the March 27, 2026, Evidentiary Hearing. The primary objective is to convert the existing "paper discrepancy" into a "record fact" that forces a judicial reconciliation of the bank's inconsistent accounting.
-> II. High-Priority Triage Stack
-> To manage cognitive load and ADHD-related exhaustion during relocation, the following time-locked logistics are prioritized above all other tasks:
-> 
-> March 25, 2026: Property Retrieval & Relocation to Evansville. This window is the final opportunity to secure belongings and document property condition.
-> March 27, 2026: Evidentiary Hearing (Marion Superior Court 3). Focus is solely on the accounting reconciliation and surplus.
-> Ongoing: Documentation of "Displacement Damages" (Hotel receipts, transportation, safety incidents at lodging).
-> III. The Core Pressure Point: The "Satisfaction Gap"
-> The strategic advantage lies in the direct contradiction between the official Sheriff's Return and the bank's continued reporting/enforcement.
-> 
-> Category
-> Record Value
-> Source
-> Judgment Amount
-> $220,863.09
-> Decree of Foreclosure
-> Sheriff's Sale Price
-> $240,464.20
-> Sheriff's Sale Report
-> Return Status
-> FULLY SATISFIED
-> Sheriff's File 08.15.2025.032
-> Calculated Surplus
-> $10,701.51 - $19,601.11
-> Internal Audit/Demand
-> 
-> 
-> The Leverage: If the judgment is recorded as "Fully Satisfied," any continued reporting of delinquency or deficiency is a legal and regulatory impossibility.
-> IV. Three-Front Regulatory Escalation (Pre-Hearing)
-> Filing these now creates institutional pressure on the bank's compliance department prior to the hearing date.
-> 
-> NCUA Complaint: Focus on federal credit union record-keeping failures and the inability to produce a reconciled loan ledger.
-> CFPB Supplement (Case 260207-28634680): Update the existing complaint with evidence of the "Satisfaction of Judgment" vs. continued "180 DPD" credit reporting.
-> Indiana Attorney General: Focus on deceptive consumer practices regarding the $90,000 "re-inserted" deficiency claim that contradicts the "no deficiency" court statement.
-> V. Minimalist Evidence Folder (The "March 27 Kit")
-> To prevent ADHD-related information overwhelm, the hearing preparation is limited to three primary exhibits:
-> 
-> Exhibit 1: The Sheriff's Return (08.15.2025.032). Proves the judgment was receipted as satisfied.
-> Exhibit 2: The "Satisfaction Gap" Table. A simple visual showing the $19,601 surplus created by the $240k bid against the $220k judgment.
-> Exhibit 3: Credit Report Snapshots (Feb 2026). Proves the bank is reporting a $90k deficiency on a "Satisfied" debt.
-> VI. ADHD-Friendly Hearing Defense Strategy
-> The Goal: Do not try to win the entire case. Simply force the bank to "Show the Ledger."
-> 
-> Question 1: "The Sheriff's Return states this judgment was 'Fully Satisfied' on August 15, 2025. Why is your client still reporting a balance?"
-> Question 2: "Can you produce a single itemized servicing ledger today that reconciles the $240,464.20 credit bid to the $220,863.09 judgment?"
-> Question 3: "If the judgment was satisfied, what is the legal basis for the $89,848 deficiency currently being reported to credit bureaus?"
-> VII. Damages & Displacement Tracker
-> All out-of-pocket costs must be categorized for the eventual "Actual Damages" claim under FCRA/FDCPA.
-> 
-> Lodging: Weekly-rate hotel costs ($300–$350/week) since the December 9, 2025, removal.
-> Safety/ADA: Documentation of the incident involving Person (Service Animal Gigi) and the failure to provide reasonable lodging accommodations.
-> Property Loss: Valuation of items discarded during the March 25 retrieval window due to "arbitrary" time limits.
-> 
-> Next Steps:
-> 
-> Finalize NCUA/AG complaint templates for 15-minute submission.
-> Print the "March 27 Kit" (3 Exhibits).
-> Execute relocation to Evansville on Date.
-> 
-> VIII. Consolidated Exposure Matrix (Eight Legal Theories)
-> This section synthesizes the primary litigation claims and statutory violations identified through the current record and evidentiary findings:
-> Theory 1: Procedural Due Process & Service Defects (TR 4.1). The judgment is allegedly void ab initio due to failure of service. The bank utilized verified methods for institutional defendants but chose unverified methods for the individual defendant.
-> Theory 2: ADA Process Failure & Reasonable Accommodation. Documented failure to accommodate known ADHD and executive dysfunction during the service and removal process impaired the Defendant's opportunity to be heard.
-> Theory 3: Abuse of Process (Armed Removal). Transcript records confirm the bank utilized a retired sheriff's deputy, acting as a bank contact on vacation, to facilitate the removal under the guise of needed protection.
-> Theory 4: Conversion & Property Interference. The bank imposed arbitrary time limits and disabled garage access during the limited retrieval window, leading to property loss.
-> Theory 5: Financial Accounting & Surplus (C-05). The $240,464.20 credit bid against a $220,863.09 judgment creates a non-discretionary surplus of approximately $19,601.11.
-> Theory 6: FCRA & Credit Reporting Misconduct. Reporting a $90k deficiency on a debt explicitly marked as "Fully Satisfied" by the Sheriff constitutes a willful violation.
-> Theory 7: Deceptive Consumer Practices (UDAAP). Contradictory statements regarding deficiency to the court versus credit bureaus suggest deceptive regulatory behavior.
-> Theory 8: Spoliation of Evidence. Failure to acknowledge or comply with formal litigation holds regarding body-worn camera and internal communications.
-> 
-> IX. Procedural Response Draft: Correction of Record Regarding Access and Timeline (Response to March 26 Assertion)
-> This document is submitted to address and correct material mischaracterizations of the timeline and access conditions regarding the property, as asserted by opposing counsel.
-> I. The Failure of Clear Possession Transfer (May 2025 - December 2025)
-> Your assertion that I “had ample time to vacate” is not supported by the record, the conditions imposed, or the sequence of events beginning May 28, 2025. To be clear: there was no point at which a reasonable person, under the actual conditions present, would have understood that they were required to abandon possession of their home.
-> The record reflects:
-> The foreclosure judgment was entered May 28, 2025.
-> The Sheriff’s Sale occurred August 15, 2025.
-> The deed was not recorded until December 2, 2025.
-> As late as October 2025, there was no clear, externally verifiable indication that ownership had transferred in a way that would trigger voluntarily vacating the property.
-> No direct notice of transfer, demand for possession, or eviction process was ever communicated.
-> Under those conditions, the premise that I should have voluntarily vacated is not grounded in a clear or reliable ownership determination.
-> II. Denial of Access and Resulting Property Prejudice
-> For approximately four months (August 2025 to December 2025), I was effectively prevented from accessing my property and retrieving my belongings. During that same period, the property was left unsecured or neglected, leading to a compounded harm:
-> The condition of the property deteriorated, including moisture-related issues and mold risk.
-> Personal property remained inside without preservation or coordination.
-> I am now being blamed for not completing retrieval under constraints created by Plaintiff’s own actions.
-> This sequence—restriction followed by deterioration followed by blame—is both prejudicial and inconsistent with any reasonable standard of property handling or possession transition.
-> III. The Fragmented and Prejudicial Retrieval Conditions
-> The characterization of 'time provided' is equally inaccurate. What was actually provided was approximately 5.5 total hours, divided across two occurrences over a span of approximately four months, to recover an entire household while:
-> Displaced and effectively homeless.
-> Without reliable transportation (both vehicles disabled during this period).
-> Managing extreme fatigue from extended travel and mechanical failures.
-> Operating under documented cognitive disability.
-> This was not meaningful access. It was a constrained and fragmented window under duress.
-> IV. Interference and Coordination Failure Onsite
-> The environment during the retrieval period further undermines your assertion:
-> Active Disposal: Property was already being actively discarded into a dump truck upon my arrival.
-> Access Restriction: I was instructed to remain outside and could not enter the garage or structure without risking trespass, creating an impossible condition where my property was being removed and discarded while access was simultaneously limited.
-> Coordination Failure: The retired deputy (bank security) was the primary point of contact and director of my actions, while the uniformed deputy remained silent. Ms. Abbett (Plaintiff’s representative) remained in her vehicle and did not facilitate retrieval.
-> Failed Communication: My email attempt to coordinate was acknowledged only after the access window had passed.
-> This was not an orderly transfer of possession—it was interference and an unmanaged environment.
-> V. Pattern of Record Inconsistencies
-> This issue does not stand alone. Throughout this matter, filings, affidavits, and representations have repeatedly contained material inconsistencies, unsupported assumptions, or reconstructed figures that shift over time, particularly where those assumptions favor Plaintiff’s position. These include, but are not limited to:
-> Inconsistent accounting figures related to the judgment, interest, and surplus.
-> Representations of service and notice that are not supported by complete documentation.
-> Assertions of 'unknown occupants' contradicted by Plaintiff’s own institutional records.
-> Continued inaccurate credit reporting (180 DPD) after the debt was marked 'Fully Satisfied' by the Sheriff's Return.
-> This pattern raises concerns regarding the reliability of Plaintiff’s representations as a whole and warrants closer scrutiny.
-> VI. Conclusion
-> This matter is not about refusal to act. It is about: unclear and delayed ownership transition; absence of notice; extended denial of access; deterioration of property during that denial; restricted and fragmented retrieval conditions; active interference with property access; and a compressed timeline imposed after months of administrative delay. I will be addressing these issues formally and preserving them as part of the record.
-> 
-> FCFCU Executive Escalation & Visibility Framework
-> Strategic Objective
-> The objective of this framework is to pivot from localized case management to broad executive accountability within Financial Center First Credit Union (FCFCU). By creating transparency across the leadership tier, the goal is to resolve ongoing record-integrity issues, servicing friction, and the historical lack of meaningful response to hardship and ADA-related notices.
-> Executive Stakeholder Directory
-> The following personnel have been identified for the escalation chain. Based on the established domain pattern [FirstInitial][LastName]@fcfcu.com, the following contacts are proposed for visibility:
-> 
-> Name
-> Title
-> Accountability Role
-> Email (Projected)
-> Ning Duong
-> Chief Executive Officer
-> Ultimate Accountability
-> NDuong@fcfcu.com
-> Billy Wells
-> Chief Operations Officer
-> Operational Accountability
-> BWells@fcfcu.com
-> Kyle Endres
-> Vice President
-> Management Layer
-> KEndres@fcfcu.com
-> Darius Jamieson
-> Strat. Customer Success Manager
-> Client Experience / Relationship
-> DJamieson@fcfcu.com
-> 
-> Escalation Protocol: "Visible Visibility" Strategy
-> 1. The Power of the CC over BCC
-> Transparency is the primary lever for rapid escalation. Using the Carbon Copy (CC) function ensures that every executive is aware their peers and superiors are also monitoring the communication.
-> 
-> Accountability: CC'ing creates a shared internal problem that cannot be easily dismissed by a single department.
-> Professionalism: Maintaining a transparent recipient list presents a confident and serious litigation posture, as opposed to BCC, which can be interpreted as "sneaky" or "chaotic".
-> 2. Integration with Role-Based Addresses
-> While individual executive contact is the goal, systemic escalation is reinforced by including monitored corporate inboxes. These addresses often trigger automated internal tracking systems.
-> 
-> Executive Office: executiveoffice@fcfcu.com
-> Compliance: compliance@fcfcu.com
-> General Support: info@fcfcu.com or customerservice@fcfcu.com
-> 3. Tone and Content Alignment
-> Communications must maintain a "cold, judicial tone" focused purely on facts.
-> 
-> Primary Issue: Highlight the record-integrity contradictions regarding retrieval windows and the lack of structured retrieval protocols.
-> Disability Context: Explicitly mention how the lack of coordination creates barriers for those with cognitive processing limitations.
-> Historical Friction: Reference the servicing history, including returned online payments and previous hardship outreach.
-> Case Implementation Log
-> Primary Recipient: Person
-> Associated Case File: File
-> Escalation Date: Date
-> Reference Strategy Report: (FCFCU Record Clarification Strategy)
-> 
-> FCFCU Strategic Resolution and Litigation Roadmap
-> Strategic Response to Financial Center First Credit Union v. Rice-Velasquez
-> Cause No. 49D03-2501-MF-002559
-> Operational Plan: The Pressure Stack
-> The court's denial of the Motion to Vacate on March 31, 2026, and the subsequent rescheduling of the hearing to April 17, 2026, creates a critical window for multi-front escalation. The primary objective is to force Financial Center First Credit Union (FCFCU) into a global settlement by leveraging their unstable accounting record and documented procedural misconduct.
-> 1. Court Strategy: The Accounting Anchor
-> The hearing on April 17 is no longer about the foreclosure merits but about accounting reconciliation and surplus disposition.
-> 
-> The Contradiction: The record shows a $220,863.09 judgment vs. a $240,464.20 plaintiff bid. The Sheriff Sale return of June 19, 2025, reflects the judgment as "Fully Satisfied".
-> The Exposure: FCFCU's attempt to file a nunc pro tunc motion on February 24, 2026, to correct a "scrivener's error" in the bid is a judicial admission of unreliable record-keeping.
-> Hearing Objective: Force the production of a contemporaneous itemized ledger. If they cannot reconcile the "satisfaction" status with their current balance claims, their legal position collapses.
-> 2. Regulatory Front: The Multiplier Effect
-> Filing with the NCUA, CFPB, and Attorney General (AG) converts a private litigation into a regulatory risk event for the credit union.
-> 
-> NCUA (Member Governance): Focus on the failure of internal controls regarding the $940 million asset portfolio's accounting integrity.
-> CFPB (Mortgage Servicing/FCRA): Focus on the "Impossible Fact" of reporting a debt as 120+ days delinquent in January 2026 when it was legally satisfied in June 2025.
-> Indiana AG (Consumer Protection): Focus on the deceptive practices of "unknown occupant" designations to sidestep eviction safeguards.
-> 3. Settlement Front: The Rule 408 Letter
-> The Settlement Communication must reach FCFCU’s executive leadership directly to bypass the "clerk-level" response and trigger institutional risk review.
-> Executive Distribution Directory
-> Pursuant to institutional governance records, the following individuals are the verified points of contact for risk, legal, and executive oversight.
-> 
-> Role
-> Name
-> Verified Email
-> Chief Executive Officer
-> Ning Duong
-> nduong@fcfcu.com
-> VP of Enterprise Risk (ERM)
-> Aaron Alsup
-> aalsup@fcfcu.com
-> EVP of Strategic Operations
-> Dusty Simmons
-> dsimmons@fcfcu.com
-> AVP of Compliance
-> Mackenzie Kepley
-> mkepley@fcfcu.com
-> SVP of Internal Audit
-> Joan Kerulis
-> jkerulis@fcfcu.com
-> EVP of Finance (CFO)
-> Ryan Cook
-> rcook@fcfcu.com
-> SVP Lending & Risk
-> Carl Britton
-> cbritton@fcfcu.com
-> 
-> Finalized Rule 408 Settlement Communication
-> FOR SETTLEMENT PURPOSES ONLY – SUBJECT TO INDIANA RULE OF EVIDENCE 408
-> CONFIDENTIAL SETTLEMENT COMMUNICATION
-> 
-> Date: Date
-> Via Email and U.S. Mail
-> 
-> Financial Center First Credit Union
-> 7101 E. 56th Street
-> Indianapolis, Indiana 46226
-> 
-> Michael E. Farrer, Counsel
-> mfarrer@gfwlawyers.com
-> 
-> Re: Financial Center First Credit Union v. Rice-Velasquez
-> Marion County Superior Court | Cause No. 49D03-2501-MF-002559
-> 
-> To Counsel, Executive Leadership, Risk Management, Compliance, Internal Audit, and Authorized Representatives:
-> 
-> This correspondence is a confidential settlement communication made for compromise purposes under Indiana Rule of Evidence 408 and corresponding evidentiary principles. It is sent in a good-faith effort to resolve this matter before further regulatory escalation and expanded damages development.
-> 
-> This communication is broadly disseminated because the identified issues implicate litigation, credit furnishing practices, accounting controls, records preservation, compliance oversight, audit review, and institutional risk management. Should any recipient not be the appropriate office to address any portion of this matter, please immediately route this communication to the pertinent legal, executive, compliance, risk-management, internal-audit, or insurer-facing representative and confirm such routing in writing.
-> Why This Matter Now Requires Executive-Level Resolution
-> This matter is no longer a routine foreclosure file. Following the execution of the writ of assistance on December 9, 2025, a detailed review of the record has identified substantial concerns regarding accounting integrity, contradictory record positions, continued post-dispute furnishing, and privacy invasion.
-> 
-> Most significantly, FCFCU placed a $240,464.20 bid in the record after a judgment of $220,863.09, subsequently treated the matter as fully satisfied, and then attempted to walk back the bid through a "nunc pro tunc" filing characterizing the discrepancy as a "scrivener’s error". This sequence raises substantial concerns regarding internal controls and reconciliation integrity. Furthermore, FCFCU’s credit furnishing remains inconsistent with the record, reporting delinquency on a debt legally extinguished by court judgment.
-> Principal Issues Identified
-> The issues identified include, but are not limited to:
-> 
-> Accounting Inconsistency: Material representations in the court record that are inconsistent with later filings and public sale records.
-> Ledger Refusal: Repeated failure to produce a complete, contemporaneous loan servicing ledger necessary to verify figures asserted in court.
-> Willful FCRA Non-Compliance: Continued adverse credit furnishing despite unresolved record contradictions, indicating a failure in furnisher accuracy obligations.
-> Procedural Shortcuts: Use of "unknown occupant" designations to bypass standard notice and eviction safeguards.
-> Video Evidence of Notice Defect: Evidence showing posting materials were obtained and affixed only after possession was taken, contradicting prior representations of required notice.
-> Privacy and Security Breach: Entry and documentation of the residence interior before the defendant had vacated, including inspection of private papers by security personnel unrelated to safety functions.
-> Spoliation of Evidence: Removal or disabling of security cameras and the resulting loss of video evidence relating to property handling.
-> ADA Accommodation Failure: Refusal to provide accessible written communication (email) despite known disability-related needs, leading to observable acute emotional distress during the removal process.
-> Deed and Utility Mismanagement: Delayed deed recordation (Dec 2, 2025) which materially impaired the ability to manage utilities and evaluate legal remedies.
-> Regulatory Escalation
-> I am preparing or supplementing submissions to the National Credit Union Administration (NCUA), the Consumer Financial Protection Bureau (CFPB), and the Indiana Attorney General. These submissions concern mortgage-servicing irregularities, disability-accommodation failures, and related fair housing and civil-rights issues.
-> Opportunity to Resolve
-> Before these escalations proceed, FCFCU is extended an opportunity to resolve this matter privately. Any resolution must include:
-> 
-> Immediate Credit Deletion: Deletion of the two FCFCU tradelines and all associated adverse mortgage reporting. Correction is insufficient given the contradictory record.
-> Contemporaneous Accounting Production: Production of the complete ledger-level accounting supported by contemporaneous business records.
-> Global Settlement Discussions: Good-faith discussions regarding harms arising from displacement, privacy invasion, property loss, and credit damage.
-> Property and Utility Close-out: Supervised property access and written confirmation of utility hold-harmless treatment.
-> Response Deadline
-> I request written contact from counsel or an authorized representative within ten (10) days of receipt. Absent a timely response, I will proceed with regulatory submissions and other actions necessary to protect my rights.
-> 
-> Regards,
-> 
-> Person
-> Pro Se Defendant
-> 1000 Fulton Pkwy Apt 107
-> Evansville, IN 47710
-> Case Filing Strategy & Record Summary
-> Matter: Financial Center First Credit Union v. Rice-Velasquez Cause No: 49D03-2501-MF-002559 Court: Marion Superior Court 3 Status: Post-Nunc Pro Tunc Denial / Objection to Request for Hearing
-> 1. Executive Summary of March 9 Filings
-> The following documents were submitted to the Indiana E-Filing System (Odyssey) to block the Plaintiff’s attempt to relitigate the Sheriff’s Sale accounting and to enforce the statutory deposit of surplus funds.
-> Lead Filing: Defendant’s Objection to Plaintiff’s Request for Hearing and Motion to Enforce Deposit of Surplus Proceeds. This filing establishes the finality of the credit bid and moves for the deposit of $10,701.51 with the Clerk.
-> Secondary Filing: Defendant’s Motion for Sanctions Pursuant to Indiana Trial Rule 11. This filing quantifies the 55 hours of forensic and legal analysis required to respond to shifting accounting theories, requesting costs of $1,760.00.
-> 2. Chronology of Shifting Accounting Positions
-> The narrative core of the current record identifies a pattern of serial theory substitution by the Plaintiff to avoid the financial consequences of their own binding credit bid.
-> Date
-> Plaintiff Position
-> Document Reference
-> 07/17/2025
-> Executed binding credit bid of $240,464.20.
-> Sheriff’s Sale Bid
-> 12/17/2025
-> Formally asserted a surplus of exactly $0.00.
-> Report of No Excess
-> 01/09/2026
-> Represented in open court that the bid was an "underbid."
-> Hearing Transcript (Ex. L)
-> 02/16/2026
-> Denied surplus existence via counsel email.
-> Counsel Email (Ex. O)
-> 02/20/2026
-> Judicially admitted surplus of $8,378.42.
-> Petition to Pay Surplus (Ex. H)
-> 02/24/2026
-> Claimed "scrivener's error" of $10,000+ to erase surplus.
-> Nunc Pro Tunc Motion (Ex. N)
-> 03/06/2026
-> Requested hearing to advance a new $823.50 theory.
-> Request for Hearing
-> 
-> 3. Evidence Matrix (Exhibit List L–R)
-> The current filing is "Receipt-Ready," utilizing the following exhibits to prove the Plaintiff's inability to reconcile their own servicing ledger.
-> Exhibit ID
-> Description
-> Strategic Purpose
-> EX-H
-> Petition to Pay Surplus
-> Proves judicial admission of surplus funds.
-> EX-J
-> Email Review Calculations
-> Documents the failure to provide a verified ledger.
-> EX-L
-> Transcript Excerpt
-> Confirms Plaintiff’s "no excess" claim was made under oath.
-> EX-O
-> Counsel Email
-> Establishes the "no surplus" stance prior to admission.
-> EX-P
-> Notice of Inaccuracies
-> Documents formal notice of credit reporting errors.
-> EX-Q
-> Annotated Tradeline Excerpt
-> Visually proves balance increases after judgment.
-> EX-R
-> Balance Change Graph
-> Demonstrates reporting instability (Zero-balance reset).
-> 
-> 4. Technical Resolution: System File Preview
-> To resolve the Windows "Mark-of-the-Web" security block preventing file previews for the case exhibits and documents, execute the following command in PowerShell.
-> # Unblock all files in the current directory and subdirectories
-> Get-ChildItem -Recurse | Unblock-File
-> This command strips the zone identifier that Windows applies to downloaded files, which should restore functionality to the Preview Pane in File Explorer immediately.
-> 5. Strategic Invariants for Future Proceedings
-> The following legal pillars protect the current position for either a settlement off-ramp or appellate review:
-> 1. Finality of Credit Bid: A credit bid is not a provisional estimate; it is a binding representation of debt owed at the time of sale.
-> 2. Judicial Estoppel: Plaintiff cannot benefit from a "satisfied judgment" and "no surplus" claim in court, then later attempt to modify those figures once they become unfavorable.
-> 3. Missing Business Records: As a sophisticated financial institution, Plaintiff’s failure to produce a standard loan ledger renders their ad hoc worksheets legally insufficient.
-> 4. Regulatory Exposure: Continued inaccurate reporting (66+ instances after notice) creates significant FCRA and NCUA liability that exceeds the value of the surplus dispute.
-> Rice-Velasquez v. Financial Center First Credit Union
-> Cause No. 49D03-2501-MF-002559 | Marion Superior Court 3
-> Doc ID: MF2559-SURPLUS-RECAP-20260403 | Page 1 of 1
-> 
-> 
-> 
-> Case Status Report: Financial Center First Credit Union v. Rice-Velasquez
-> Cause No. 49D03-2501-MF-002559
-> Court: Marion Superior Court 3
-> Report Date: April 3, 2026
-> Executive Summary
-> This report consolidates the procedural history and current status of the dispute regarding foreclosure surplus funds in the matter of Financial Center First Credit Union (FCFCU) v. Rice-Velasquez. The central conflict involves the Plaintiff's attempt to retroactively modify a recorded credit bid after previously acknowledging the existence of surplus funds. On February 26, 2026, the Court denied the Plaintiff's request to modify the record nunc pro tunc, effectively preserving the original credit bid and the Defendant's claim to surplus proceeds.
-> Procedural Timeline
-> Date
-> Event
-> Description
->  August 15, 2025
-> Sheriff’s Sale
-> Sale conducted with an original recorded credit bid of $240,464.20.
->  December 16, 2025
-> Motion to Account
-> Defendant filed an Emergency Motion to Preserve and Account for Surplus Funds.
->  January 9, 2026
-> Court Hearing
-> Defendant requested a formal audit on the record; Plaintiff counsel argued no excess existed.
->  February 12, 2026
-> Formal Demand
-> Defendant issued a Surplus Accounting Demand Letter via certified mail.
->  February 20, 2026
-> Judicial Admission
-> Plaintiff filed a "Petition to Pay Surplus Funds," agreeing to a surplus of $8,378.42.
->  February 24, 2026
-> Tactical Reversal
-> Plaintiff filed a "Petition Determining No Surplus" and sought nunc pro tunc correction to lower the bid.
->  February 26, 2026
-> Court Ruling
-> Magistrate Hannah denied the Plaintiff's Nunc Pro Tunc petition.
->  February 26, 2026
-> Enforcement Motion
-> Defendant filed a Motion to Enforce the Plaintiff's original Feb 20 admission of surplus.
-> 
-> Analysis of Inconsistent Positions
-> The Plaintiff has maintained three distinct and contradictory positions regarding the accounting of the foreclosure sale proceeds:
-> 
-> Initial Denial (Jan 2026): Counsel represented in open court that the credit bid covered "exactly what was owed" and that "there is no excess".
-> Formal Acknowledgment (Feb 20, 2026): Following repeated demands, the Plaintiff filed a sworn petition agreeing to a calculated surplus of $8,378.42 and requesting leave to deposit it with the Clerk.
-> Attempted Retroactive Modification (Feb 24, 2026): Plaintiff attempted to reduce the recorded bid from $240,464.20 to $230,562.40, characterizing the prior figures as a "scrivener's error" to eliminate the surplus.
-> Current Legal Posture
-> The Nunc Pro Tunc Denial
-> The Magistrate's denial of the nunc pro tunc request is a critical procedural juncture. Under Indiana law, nunc pro tunc entries are intended to correct clerical errors to reflect what actually occurred, not to retroactively alter substantive financial decisions or correct subsequent bad math. By denying this, the Court has signaled that the recorded bid of $240,464.20 remains the legally operative figure.
-> Pending Enforcement
-> The Defendant's pending "Motion to Enforce Plaintiff’s Petition to Pay Surplus Funds" seeks to hold the Plaintiff to its judicial admission of February 20, 2026. Because the Plaintiff's attempt to modify the bid was unsuccessful, the surplus math acknowledged in their February 20 filing remains internally consistent with the current court record.
-> Strategic Outlook
-> Evidentiary Requirements: The Plaintiff has consistently failed to produce a sworn, itemized payoff ledger reconciling interest accruals and post-judgment costs.
-> Regulatory Escalation: The pattern of shifting representations and failure to provide verified accounting has been documented for potential referral to the CFPB and NCUA regarding willful non-compliance with accounting standards.
-> Next Steps: Await the Court's ruling on the Motion to Enforce. If granted, Plaintiff will be required to deposit $8,378.42 into the Clerk of the Court for distribution to the Defendant.
-> Expanded Strategic Lanes (FCRA & Damages)
-> The case now includes high-leverage consumer protection lanes centered on post-sale conduct:
-> Inaccurate Credit Reporting: The lender is allegedly continuing to report the first mortgage with an inaccurate balance of over $201,000 and an incorrect payment history, despite the judgment being satisfied. Lender counsel previously stated the tradelines were corrected to a $0 balance and 'Foreclosure Completed' status. This creates substantial FCRA exposure, especially if no deficiency judgment exists.
-> Documented Harm: The inaccurate reporting is causing active actual damages, including housing instability (automated tenant screening 'REJECT' flags) and ongoing out-of-pocket costs from temporary, weekly-rate hotel stays (approx. $300-$350 per week).
-> Attorney Focus: Securing federal consumer counsel is prioritized to aggressively pursue the FCRA claims, which feature statutory damages and fee shifting.
-> Updated Next Steps for Surplus
-> Procedural Plan: Await confirmation of the $8,378.42 deposit. Upon deposit, the Defendant will monitor the docket and, if no superior lien claims are filed within a reasonable window (~7–14 days), file a Motion to Disburse Surplus Funds to force distribution.
-> 
-> 
-> 
-> Report Prepared By:
-> Person
+> Redo this documents to produce the final report : FINAL REPORT FOR THE RECORD: SYSTEMIC REPORTING ERRORS AND RE-INSERTION VIOLATIONS
+
+> I. Executive Summary
+
+> This report serves as a formal analysis of the continuing credit reporting violations, re-insertion events, and material contradictions in the matter of Financial Center First Credit Union ("FCFCU") vs. Cody Rice-Velasquez (Cause No. 49D03-2501-MF-002559). As of February 2026, FCFCU has re-reported a combined deficiency balance of approximately $89,848 across two mortgage tradelines, despite a prior recorded satisfaction of judgment and explicit representations in open court that no deficiency exists. This conduct constitutes willful noncompliance under the Fair Credit Reporting Act (FCRA) and the Fair Debt Collection Practices Act (FDCPA).
+
+> II. Current Credit Reporting Status (Update: Feb 11, 2026)
+
+> Following a period where tradelines were reported as satisfied or temporarily removed during a 2025 system transition, FCFCU has re-inserted the following delinquent reporting data as of February 4, 2026:
+
+> 
+
+> Tradeline
+
+> Account Status
+
+> Past Due Balance
+
+> Original Loan
+
+> Last Payment
+
+> Loan #1 (First Mortgage)
+
+>  Collection / Charge-off
+
+> $65,000
+
+> $196,000
+
+> Aug 23, 2024
+
+> Loan #2 (Second Mortgage)
+
+>  Collection / Charge-off
+
+> $24,848
+
+> $23,000
+
+> Aug 13, 2024
+
+> Total Deficiency
+
+>  N/A
+
+> $89,848
+
+> $219,000
+
+> N/A
+
+> 
+
+> III. Core Legal Contradictions
+
+> The February 2026 reporting creates an irreconcilable conflict between the official court record and the information furnished to consumer reporting agencies (CRAs).
+
+> 
+
+> Judicial Admission: During the January 9, 2026 hearing, the Court and FCFCU counsel addressed the status of the foreclosure judgment and stated that the judgment amount was complete and not subject to revision.
+
+> Waiver of Deficiency: FCFCU represented to the Court that the Sheriff's Sale produced no excess proceeds and that the bid covered the debt, taxes, and costs, stating explicitly that "there is no excess" and no deficiency.
+
+> Satisfaction of Judgment: A satisfaction of judgment was recorded on or around September 9, 2025, which legally extinguishes the personal liability on the underlying debt.
+
+> FCRA Impossibility: FCFCU is currently reporting a "Charged Off" status on a debt that was legally satisfied via credit bid at a Sheriff’s Sale in August 2025.
+
+> Calculated Surplus and Conflicting Bid: The Plaintiff's filed bid at the Sheriff's Sale was $240,464.20, which exceeded the recorded Judgment of $220,863.09, mathematically creating a raw surplus of approximately $19,601.11. This amount contradicts the creditor's subsequent representations of 'no surplus' and their simultaneous reporting of a $90,000 deficiency to consumer reporting agencies.
+
+> IV. Foundational Litigation Defects
+
+> The credit reporting violations are compounded by underlying systemic litigation defects that support a claim of willful and reckless conduct:
+
+> 1. Jurisdiction and Service Defects: The validity of the underlying judgment is disputed based on failures to comply with Trial Rule 4.1 regarding proper service, which, if proven, renders the judgment void. The alleged method of service (quick knock, lack of mail proof) was not reasonably calculated to provide notice, particularly given: (a) the attempt occurring at an extreme hour (e.g., 2:xx AM on 1/16/2025) under severe weather conditions; (b) the Plaintiff's counsel utilized Certified Mail to serve other institutional defendants in the same case (American Express and JP Morgan Chase Bank) but used an unverified method for the individual Defendant; and (c) the Defendant was demonstrably reachable via sustained effort (as shown by a prior, successful law enforcement contact).
+
+> Post-Judgment Manipulation: The creditor's attempts to revise accounting figures via nunc pro tunc and the significant delay in addressing surplus funds demonstrate post-judgment manipulation and support claims of bad faith.
+
+> Timeline Contradictions: The creditor's inconsistent actions, including marking the debt 'satisfied' in June 2025, followed by sale in August 2025, and subsequent re-insertion of a $90k deficiency, establish a timeline of inconsistency and reckless reporting behavior.
+
+> ADA Process Failure: Documented failure to provide reasonable accommodation for disabilities (ADHD and executive dysfunction) during the service and court process impaired the Defendant's due process rights and opportunity to be heard.
+
+> V. Post-Execution Interference and Procedural Imbalance
+
+> The Plaintiff's conduct surrounding the writ execution and subsequent court reporting demonstrates a pattern of unnecessary interference and selective engagement.
+
+> 1. Selective Response and Omission: Plaintiff exhibits a selective response pattern, promptly engaging when it can challenge Defendant's credibility or advance its procedural position, but consistently failing to address multiple filings regarding documented ADA/disability issues, irreparable harm, or procedural violations. This omission results in a materially incomplete and imbalanced record before the Court regarding known facts of disability and hardship.
+
+> 2. Interfering Retrieval Conditions: During the limited property retrieval window, the conditions were intentionally or recklessly made hostile and intrusive:
+
+> Security Overreach: An individual presented as security closely shadowed and followed Defendant inside the room, rather than maintaining a safe distance, increasing distress and interfering with the ability to focus and retrieve property efficiently.
+
+> Intrusive Conduct: The security individual repeatedly interrupted Defendant with the same questions about medication and was observed on video using a cell phone and observing private writing on the wall.
+
+> Physical Interference: The Plaintiff's representative disabled the garage door opener access and imposed unannounced logistical constraints during the retrieval period.
+
+> Cooperation Omitted: Plaintiff's reports omit the fact that the Defendant was cooperative and assisted with access and logistical information throughout the writ execution, instead relying on a narrative of non-compliance.
+
+> 3. Notice and Good Faith Failure: Defendant had previously requested that communications be directed via email, a method which the Court later confirmed was acceptable. Despite the high stakes of the writ execution, Plaintiff failed to provide any email or courtesy notice, instead relying on methods (minimal knock, late-night posting) that were ineffective, particularly given the Defendant's known safety-driven soundproofing and secured living conditions at the time of the alleged service.
+
+> VI. Analysis of Continuing Violations
+
+> The reporting pattern identified since June 2025 reflects systemic instability and bad-faith furnishing tactics:
+
+> 
+
+> Re-Aging & Re-Insertion: Tradelines were marked satisfied in June 2025, removed, and then re-inserted with higher balances in July 2025 and February 2026 without the mandatory 5-day re-insertion notice required by the FCRA.
+
+> Inconsistent Accounting: FCFCU has provided payoff figures ranging from $27,000 to $4,400, while their court-filed worksheet for the Sheriff's Sale bid $240,464.20 against a $220,863.09 judgment.
+
+> Willful Noncompliance: Continued reporting of inaccurate delinquent status after receiving formal direct disputes and CFPB complaints constitutes a reckless disregard for consumer rights.
+
+> ADA Interactive Process Failure: FCFCU's refusal to accommodate documented disabilities (ADHD and executive dysfunction) by utilizing written email communication directly impaired the Defendant's ability to correct these financial inaccuracies.
+
+> VII. Documented Consumer Harm & Actual Damages
+
+> The reporting of a fabricated $90,000 deficiency has resulted in active, documented harm:
+
+> 
+
+> Housing Instability: Automated "REJECT" flags in tenant screening software (RealPage/AppFolio) have blocked access to standard residential leases.
+
+> Out-of-Pocket Expenses: Ongoing reliance on temporary lodging at weekly-rate hotels, costing approximately $300-$350 per week.
+
+> Environmental Degradation: Property damage and loss of personal effects due to utility transfer delays and restricted access during the winter of 2025-2026.
+
+> VIII. Strategic Escalation Roadmap
+
+> To preserve the record for litigation, the following actions are prioritized:
+
+> 
+
+> Notice of Continued Violations: A formal pre-suit notice will be served to FCFCU and counsel detailing the contradiction between the Jan 9 "No Deficiency" court statement and the Feb 4 reporting.
+
+> Regulatory Supplementation: Updated evidence will be submitted to the CFPB and NCUA regarding the $90,000 re-insertion event.
+
+> Housing Denial Packet: Documentation of 2-3 housing denials and mortgage pre-qualification rejections to solidify the "Actual Damages" claim under 15 U.S.C. § 1681n.
+
+> IX. Conclusion
+
+> The record confirms that FCFCU is reporting a legally extinguished debt as collectible. This is not a clerical error, but a systemic failure of internal controls following a merger and subsequent litigation. The creditor's own filings confirm that the judgment is satisfied; therefore, the current reporting is a legal impossibility.
+
+> 
+
+> 
+
+> 
+
+> Prepared by: Person
+
+> Date: Date
+
+> Case Reference: Cause No. 49D03-2501-MF-002559
+
+> 
+
+> Evidence Summary & Strategic Narrative: Marion County Account Conveyance Delay
+
+> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
+
+> Cause No: 49D03-2501-MF-002559
+
+> Subject Property: 4817 Shadow Pointe Drive, Indianapolis, IN 46254
+
+> Exhibit Identification: Post-Sale Ownership Transfer Delay
+
+> This exhibit documents a material administrative delay between the legal transfer of property ownership and the subsequent notification of account conveyance by the Marion County Treasurer. Despite the Plaintiff (Financial Center First Credit Union) securing the property via Sheriff’s Sale in August 2025, the official county account was not updated to reflect this change until March 24, 2026.
+
+> 
+
+> Key Event
+
+> Verified Date
+
+> Source / Documentation
+
+> Sheriff’s Sale
+
+> August 15, 2025
+
+> Chronological Case Summary (CCS)
+
+> Judgment Satisfied
+
+> September 9, 2025
+
+> Case Log / Project Memory
+
+> Deed Recordation
+
+> December 2, 2025
+
+> Litigation Strategy Report
+
+> Writ Execution / Removal
+
+> December 9, 2025
+
+> Court Order / Writ
+
+> Account Conveyance Notice
+
+> March 24, 2026
+
+> Marion County Treasurer Correspondence
+
+> 
+
+> Strategic Argument: Prejudice via Administrative Lag
+
+> The 221-day delay (approximately seven months) between the legal sale and the administrative recognition of ownership transfer is not a neutral occurrence. It is a critical component of the Defendant’s theory regarding the misattribution of liability and the weaponization of procedural timelines.
+
+> 
+
+> Misalignment of Financial Responsibility: During the seven-month gap, the Plaintiff maintained legal control and title while allowing financial obligations (taxes, utility billing, and property assessments) to remain tied to the Defendant’s name and credit profile.
+
+> Credit Furnishing Inconsistency: The Plaintiff continued to furnish derogatory credit data reflecting delinquency and active debt long after the judgment was satisfied in September 2025. The fact that the County did not process the transfer until late March 2026 corroborates a pattern of institutional failure to reconcile records in a timely manner.
+
+> Contradiction of Possession Narrative: In the hearing on January 9, 2026, the Court ordered the Plaintiff responsible for all utilities as of the date of possession (December 9, 2025). The delay in account conveyance further supports the Defendant's claim that the Plaintiff "sat on the account" to the detriment of the Defendant's housing and financial stability.
+
+> Integrated Motion Language
+
+> The following paragraph is designed for insertion into future filings or as an oral argument during hearings:"Despite the Sheriff’s Sale occurring on August 15, 2025, and the resulting Judgment being recorded as satisfied in the following month, the Marion County Treasurer did not process or reflect the transfer of the relevant property account until March 24, 2026. This administrative delay of over seven months resulted in financial obligations and legal liabilities being incorrectly attributed to the Defendant long after the loss of ownership and possession. This delay was not merely a clerical oversight; it contributed to ongoing credit reporting inaccuracies and billing inconsistencies that have caused material prejudice to the Defendant's ability to secure alternative housing and financial stability."
+
+> Proposed Cross-Examination Script
+
+> Witness Target: Representative for Financial Center First Credit Union or Legal Counsel.
+
+> 
+
+> The property at Shadow Pointe Drive was sold at a Sheriff’s Sale on August 15, 2025, correct?
+
+> At that time, the Plaintiff became the legal owner of the property, correct?
+
+> The judgment was marked as "satisfied" in the court's chronological case summary by September 2025, correct?
+
+> Yet, the Marion County Treasurer did not update the property account to reflect this change until March 2026, correct?
+
+> That constitutes a gap of approximately seven months where the account remained associated with the Defendant, correct?
+
+> During those seven months, did the Plaintiff take any active steps to notify the County Treasurer of the ownership change to ensure the Defendant was not billed for taxes or fees?
+
+> During those same seven months, the Plaintiff continued to report this account as "delinquent" or "foreclosed" on the Defendant’s credit reports, correct?
+
+> So, the Plaintiff enjoyed the benefit of legal ownership while allowing the Defendant to continue bearing the administrative and credit-related burdens of that ownership, correct?
+
+> 
+
+> Forensic Litigation Strategy & Status Report
+
+> Case Summary
+
+> Case Number: 49D03-2501-MF-002559
+
+> Court: Marion County Superior Court 3
+
+> Parties: Financial Center First Credit Union (Plaintiff) v. Cody Rice-Velasquez, American Express National Bank, N.A., JP Morgan Chase Bank, N.A. (Defendants)
+
+> 
+
+> I. Case Core: The Narrative of Equity Erasure
+
+> This is not a standard foreclosure defense. This case centers on Post-Judgment Accounting Manipulation, the Retroactive Erasure of Homeowner Equity, and a Void Judgment Attack. The core narrative is that Financial Center First Credit Union (FCFCU) obtained a judgment—which is reliant on proving defective service under Trial Rule 4.1(B) coupled with a failure of the service to be "reasonably calculated to inform," thereby depriving the court of personal jurisdiction—executed a credit bid that generated a significant surplus, and then attempted to "hide" that surplus through a series of contradictory filings and unsupported fee additions once an audit was demanded.
+
+> The Structural Reality
+
+> The Plaintiff initially represented to the Court that "no excess proceeds" existed. However, forensic analysis of the Plaintiff’s own sworn filings revealed a raw surplus of $19,601.11 (the difference between the $240,464.20 credit bid and the $220,863.09 judgment).
+
+> 
+
+> When challenged, the Plaintiff’s position shifted through three distinct phases:
+
+> 
+
+> Concealment: Claiming no surplus existed.
+
+> Admission: Acknowledging a surplus of approximately $8,378.42 after inconsistencies were raised.
+
+> Retroactive Erasure: Filing a nunc pro tunc motion to lower their own bid to $230,562.40—specifically designed to eliminate the equity cushion they had already sworn to in open court.
+
+> II. Forensic Accounting Discrepancy Matrix
+
+> The "mechanical" nature of the bank's overcharges is documented across their conflicting affidavits. The following table reconciles the Plaintiff's final claim against the forensic audit of the baseline judgment.
+
+> 
+
+> Category
+
+> Plaintiff Final Claim
+
+> Audit Verified
+
+> Discrepancy (Potential Surplus)
+
+> Principal
+
+> $220,863.09
+
+> $220,863.09
+
+> $0.00
+
+> Interest
+
+> $10,725.27
+
+> $7,384.05
+
+> ($3,341.22)
+
+> Taxes
+
+> $7,681.00
+
+> $2,951.94
+
+> ($4,729.06)
+
+> Legal Fees
+
+> $4,750.00
+
+> $3,000.00
+
+> ($1,750.00)
+
+> Publication
+
+> $1,094.35
+
+> $284.28
+
+> ($810.07)
+
+> TOTAL
+
+> $245,113.71
+
+> $234,483.36
+
+> ($10,630.35)
+
+> 
+
+> III. Strategic Leverage Matrix
+
+> Your leverage is built on Risk Asymmetry. The bank is currently exposed to three escalating levels of liability:
+
+> 
+
+> Tier 1: Judicial Estoppel (Court Control). The bank represented the $240k bid as accurate to the Court. Under Indiana law, they are arguably estopped from claiming it was an "error" simply because you discovered the math yielded a surplus.
+
+> Tier 2: FCRA Willful Non-Compliance. The bank is furnishing "Active Delinquency" data on a debt that their own Sheriff's Return identifies as "FULLY SATISFIED". This persistence after formal dispute (expired February 17, 2026) triggers statutory and punitive damages.
+
+> Tier 3: The "Treble Damage" Conversion Sting. Under Indiana Code § 34-24-3-1, if the bank is proven to have committed a knowing and intentional exertion of unauthorized control over adjudicated surplus funds (not merely an accounting error), they may be liable for triple the actual damages plus attorney fees.
+
+> The Math: If a $18,000 surplus is withheld with intent, the exposure is $54,000 (3 x $18,000).
+
+> IV. Current Status: Tactical Inventory
+
+> ✅ What is Done
+
+> Audit Anchors: Locked the "Conservative Surplus Position" at $8,378.42 for communication, while preserving the right to the full $19,601.11.
+
+> Notice of Appeal: Filed to preserve jurisdictional and procedural defects.
+
+> Formal Demand: Served a "Formal Surplus Demand" with a records preservation notice.
+
+> Regulatory Foundation: Filed complaints with the CFPB and prepared DOJ/HUD materials.
+
+> 🛠️ Building & In Progress
+
+> Accounting Reconciliation Matrix: Mapping every "mechanical" error in the interest and tax seizures.
+
+> Credit Damage Tracking: Documenting the "housing blockade" caused by the bank reporting inaccurate delinquencies after the sale.
+
+> Attorney Intake Packet: Finalizing the sanitized "Risk Story" to secure contingency counsel for the FCRA and Civil Rights lanes.
+
+> VI. Analysis of Recent Developments & Strategic Adjustments
+
+> The following table identifies critical contradictions and procedural failures observed in the most recent case activity, providing a roadmap for upcoming defensive actions.
+
+> Contradiction / Error
+
+> Actionable Step: Defense Strategy
+
+> I. Judgment Denial (3/31/26): The court denied the Emergency Motion for Preservation and Accounting. This indicates the court may require more specific evidence of the surplus before granting injunctive relief.
+
+> Risk Check: Analyze the written order to determine if the denial was on procedural grounds or if the court made a preliminary finding regarding the surplus. Obtain the transcript if possible.
+
+> II. Access Interference (3/25/26): Unauthorized removal/disposal of property occurred during the granted access window, hindering your ability to retrieve belongings.
+
+> Document Harm: Prepare a detailed affidavit of the lost/discarded items. This creates leverage for a conversion claim and potential spoliation of evidence sanctions.
+
+> III. Surplus Hearing Posture (3/27/26): The hearing on the Plaintiff's motion to clarify the record/surplus has occurred. The Plaintiff's position in this hearing is now on the record.
+
+> Leverage: Use the results of the 3/27 hearing to lock in the Plaintiff's admissions regarding any portion of the surplus, even if they dispute the total amount.
+
+> IV. Credit / Ledger Failure: The bank has failed to correct credit reporting or provide the master ledger after the 2/17/26 dispute deadline.
+
+> Trigger Treble Exposure: Document this as "willful" under the FCRA. This supports the "knowing and intentional" element required for treble damages under the Indiana Crime Victim's Relief Act.
+
+> V. NCUA Escalation: As a federally insured credit union, FCFCU is subject to NCUA oversight regarding its accounting and reporting accuracy.
+
+> Execute Regulatory Pressure: File the formal NCUA complaint. Highlighting the bank's refusal to provide an itemized ledger creates external pressure beyond the courtroom.
+
+> VI. Financial and Emotional Harm: The ongoing legal burden has caused documented loss of work capacity and severe stress.
+
+> Quantify Damages: Maintain a log of hours spent on research and legal work, as well as lost income, to substantiate a claim for damages in a potential countersuit.
+
+> 
+
+> VI.A. Contradictory Surplus Accounting & Rulings
+
+> The following events highlight the inconsistent accounting and procedural delays regarding the surplus funds:
+
+> Denial of Nunc Pro Tunc Entry (Feb 26, 2026): The court denied the Plaintiff's attempt to retroactively lower their bid to eliminate the surplus.
+
+> Conflicting Sworn Statements (Dec 17, 2025 - Feb 24, 2026): Plaintiff provided contradictory affidavits ranging from "no surplus" to an admission of ~$8,378.42.
+
+> Remittance Delay (Aug 15, 2025 - Feb 24, 2026): A six-month delay occurred between the generation of surplus and the attempt to reconcile it.
+
+> Order to Pay Surplus (Mar 02, 2026): The Court formally ordered the Plaintiff to remit surplus funds to the Clerk.
+
+> 
+
+> VII. Revised Next Steps & High-Value Moves
+
+> Secure and Analyze Post-Hearing Orders: Obtain the full text of the 3/31/26 order and the 3/27/26 hearing minutes to define the current legal status.
+
+> Formalize Property Disposition Harm: File a sworn affidavit regarding the 3/25/26 access interference to establish the basis for a conversion claim.
+
+> Activate NCUA Pressure: Submit the prepared NCUA complaint to initiate regulatory scrutiny of the bank's accounting practices.
+
+> Litigate Accounting Failure: Oppose any "record corrections" by the Plaintiff until the full, itemized loan ledger is produced through discovery.
+
+> 
+
+> 
+
+> 
+
+> Strategic Summary: You have converted a standard foreclosure into a high-leverage risk event for the bank. By focusing on the mechanical impossibility of their accounting, you move the case from "opinion" to "math," where the bank has no defense other than the produced records they currently refuse to show.
+
+> VIII. Full Chronological Case Summary (CCS)
+
+> The following is the high-level CCS for Case No. 49D03-2501-MF-002559:
+
+> Date
+
+> Event / Filing
+
+> 01/16/2025
+
+> Case Filed: Mortgage Foreclosure
+
+> 08/15/2025
+
+> Sheriff Sale Conducted; Credit Bid yields surplus
+
+> 12/17/2025
+
+> Plaintiff initial affidavit claiming no surplus
+
+> 02/17/2026
+
+> FCRA Dispute Deadline; Plaintiff fails to correct credit reporting
+
+> 02/24/2026
+
+> Plaintiff Motion to Clarify / Nunc Pro Tunc filed
+
+> 02/26/2026
+
+> Order Denying Nunc Pro Tunc Entry
+
+> 03/02/2026
+
+> Order to Pay Surplus Funds to Clerk of the Court
+
+> 03/11/2026
+
+> Defendant Objection and Motion to Enforce Deposit of Surplus
+
+> 03/27/2026
+
+> Hearing on Motion to Clarify Judgment
+
+> 03/31/2026
+
+> Order Denying Emergency Motion for Preservation
+
+> 
+
+> 
+
+> 
+
+> Account name FINANCIAL CNTR FIRST C U Account number 661563L.... Recent balance Not reported Date opened 07/02/2022 Status Foreclosed. PO BOX 26501 INDIANAPOLIS, IN 46226 3175474851 Address identification number 0098348777 Type Mortgage Terms 20 Years On record until Dec 2030 Interest Type Fixed Credit limit or original amount $196000 High balance Not reported Monthly payment Not reported Date of status 01/2026 Responsibility Individual Account history 2026 Feb F Jan F 2025 Dec 180 Nov 180 Oct 180 Sep 180 Aug ND Jul 180 Jun 180 May 180 Apr 180 Mar 180 Feb 180 Jan 180 2024 Dec 180 Nov 180 Oct 150 Sep 120 Aug 90 Jul 60 Jun 60 May 30 Apr 60 Mar 30 Feb OK Jan OK 2023 Dec OK Nov 30 Oct 120 Sep 90 Aug 60 Jul 30 Jun OK May OK Apr OK Mar OK Feb OK Jan OK 2022 Dec OK Nov OK Oct OK Sep OK Aug OK Jul OK Payment history guide Foreclosure as of Feb 2026,Jan 2026 180 days past due as of Dec 2025 to Sep 2025,Jul 2025 to Nov 2024 150 days past due as of Oct 2024 120 days past due as of Sep 2024,Oct 2023 90 days past due as of Aug 2024,Sep 2023 60 days past due as of Jul 2024,Jun 2024,Apr 2024,Aug 2023 30 days past due as of May 2024,Mar 2024,Nov 2023,Jul 2023 Balance history The following data will appear in the following format: Date: account balance / date payment received / scheduled payment amount / actual amount paid Feb 2026: $0 / Aug 22, 2024 / $0 / $0 Dec 2025: $200,478 / Aug 23, 2024 / $1,242 / $0 Nov 2025: $199,735 / Aug 23, 2024 / $1,242 / $0 Oct 2025: $199,016 / Aug 23, 2024 / $1,242 / $0 Sep 2025: $198,273 / Aug 23, 2024 / $1,242 / $0 Jul 2025: $196,812 / Aug 23, 2024 / $1,242 / $0 Jun 2025: $196,069 / Aug 23, 2024 / $1,242 / $0 May 2025: $195,350 / Aug 23, 2024 / $1,242 / $0 Apr 2025: $194,607 / Aug 23, 2024 / $1,242 / $0 Mar 2025: $193,145 / Aug 23, 2024 / $1,242 / $0 Feb 2025: $192,472 / Aug 23, 2024 / $1,242 / $0 Jan 2025: $191,730 / Aug 23, 2024 / $1,242 / $0 Dec 2024: $190,987 / Aug 23, 2024 / $1,242 / $0 Nov 2024: $190,268 / Aug 23, 2024 / $1,242 / $0 Oct 2024: $189,476 / Aug 23, 2024 / $1,242 / $0 Sep 2024: $188,781 / Aug 23, 2024 / $1,242 / $242 Aug 2024: $188,281 / Jul 08, 2024 / $1,242 / $316 Jul 2024: $187,879 / Jun 26, 2024 / $1,242 / $920 Jun 2024: $188,055 / May 23, 2024 / $1,242 / $2,077 May 2024: $189,388 / Apr 16, 2024 / $1,242 / $12 Apr 2024: $188,706 / Mar 27, 2024 / $1,242 / $400 Mar 2024: $188,308 / Feb 21, 2024 / $1,242 / $1,242 The original amount of this account was $196,000 Show less Account name FINANCIAL CNTR FIRST C U Account number 661563L.... Recent balance Not reported Date opened 07/02/2022 Status Foreclosed. PO BOX 26501 INDIANAPOLIS, IN 46226 3175474851 Address identification number 0098348777 Type Mortgage Terms 15 Years On record until Jun 2031 Interest Type Fixed Credit limit or original amount $23000 High balance Not reported Monthly payment Not reported Date of status 01/2026 Responsibility Individual Reinvestigation information This item was updated from our processing of your dispute in Feb 2026. Account history 2026 Feb F Jan F 2025 Dec 180 Nov 180 Oct 180 Sep 180 Aug 180 Jul ND Jun 180 May 180 Apr 180 Mar 180 Feb 180 Jan 180 2024 Dec 150 Nov 120 Oct 90 Sep 60 Aug 30 Jul 60 Jun 30 May ND Apr OK Mar 30 Feb 30 Jan 30 2023 Dec OK Nov OK Oct 30 Sep 60 Aug 30 Jul OK Jun OK May OK Apr OK Mar OK Feb OK Jan OK 2022 Dec OK Nov OK Oct OK Sep OK Aug OK Jul OK Jun OK Payment history guide Foreclosure as of Feb 2026,Jan 2026 180 days past due as of Dec 2025 to Aug 2025,Jun 2025 to Jan 2025 150 days past due as of Dec 2024 120 days past due as of Nov 2024 90 days past due as of Oct 2024 60 days past due as of Sep 2024,Jul 2024,Sep 2023 30 days past due as of Aug 2024,Jun 2024,Mar 2024 to Jan 2024,Oct 2023,Aug 2023 Balance history The following data will appear in the following format: Date: account balance / date payment received / scheduled payment amount / actual amount paid Feb 2026: $0 / Aug 12, 2024 / $0 / $0 Dec 2025: $24,676 / Aug 13, 2024 / $209 / $0 Nov 2025: $24,517 / Aug 13, 2024 / $209 / $0 Oct 2025: $24,363 / Aug 13, 2024 / $209 / $0 Sep 2025: $24,204 / Aug 13, 2024 / $209 / $0 Jul 2025: $23,891 / Aug 13, 2024 / $209 / $0 Jun 2025: $23,733 / Aug 13, 2024 / $209 / $0 May 2025: $23,578 / Aug 13, 2024 / $209 / $0 Apr 2025: $23,420 / Aug 13, 2024 / $209 / $0 Mar 2025: $23,107 / Aug 13, 2024 / $209 / $0 Feb 2025: $22,961 / Aug 13, 2024 / $209 / $0 Jan 2025: $22,802 / Aug 13, 2024 / $209 / $0 Dec 2024: $22,644 / Aug 13, 2024 / $209 / $0 Nov 2024: $22,489 / Aug 13, 2024 / $209 / $0 Oct 2024: $22,281 / Aug 13, 2024 / $209 / $0 Sep 2024: $22,151 / Aug 13, 2024 / $209 / $500 Aug 2024: $22,414 / Apr 22, 2024 / $209 / $0 Jul 2024: $22,251 / Apr 22, 2024 / $209 / $0 Jun 2024: $22,094 / Apr 22, 2024 / $209 / $0 May 2024: $21,932 / Apr 22, 2024 / $209 / $627 Apr 2024: $22,429 / Mar 27, 2024 / $209 / $209 Mar 2024: $22,424 / Feb 22, 2024 / $209 / $209 The original amount of this account was $23,000 Yeah — this is still wrong, and not in a small way.What jumps out immediatelyYou have two FCFCU mortgage tradelines being reported as if they were still actively aging delinquent deep into late 2025, then flipped to foreclosure in January/February 2026.That is a problem because the case record you built shows the sheriff sale was 08/15/2025, and the docket summary reflects the decree as “Fully Satisfied” on that sale, with judgment released after the sale.So the basic contradiction is: - Court-side record: satisfied by sheriff sale in August 2025. - Credit-side reporting: 180 days late in Sep/Oct/Nov/Dec 2025, then foreclosure in Jan/Feb 2026. Those two things do not sit together cleanly.The strongest defects in what you pasted1. Post-sale delinquency aging looks facially wrongFor the first loan, they show: - Sep 2025: 180 - Oct 2025: 180 - Nov 2025: 180 - Dec 2025: 180 - Jan 2026: F - Feb 2026: F For the second loan, same pattern, just with one month variation.That means they were still treating the accounts as ongoing unpaid consumer obligations after the foreclosure sale / satisfaction event. If the debt was legally resolved through judgment satisfaction and sale, continued monthly delinquency progression after that point needs a real reconciliation explanation, not hand-waving. That is exactly the FCRA pressure point your case materials already identify.2. “Date payment received” is frozen in August 2024 for all of 2025–2026That is ugly.For the first loan: - Feb 2026 says balance $0, but still shows payment received Aug 22, 2024 - Dec 2025 through Jan 2025 all keep repeating Aug 23, 2024 For the second loan: - Feb 2026 says balance $0, but still shows payment received Aug 12, 2024 - Dec 2025 through Jan 2025 all keep repeating Aug 13, 2024 That suggests a stale or mechanically rolled-forward reporting structure, not an actually reconciled post-foreclosure tradeline.3. They are reporting a foreclosure date that appears disconnected from the actual case timelineYour pasted tradeline says: - Status: Foreclosed - Date of status: 01/2026 - Payment history guide: foreclosure as of Jan/Feb 2026 But the case record shows: - judgment entered May 2025, - sheriff sale August 15, 2025, - decree returned / satisfaction recorded September 9, 2025. So calling it “foreclosure as of Jan 2026” looks at best misleading, and at worst flat-out inaccurate.4. The balances keep increasing after the sale periodFirst loan: - Jan 2025: $191,730 - Dec 2025: $200,478 Second loan: - Jan 2025: $22,802 - Dec 2025: $24,676 So they kept accreting balance across 2025, even though the court-side record later shows a sale amount large enough to trigger surplus questions and a “fully satisfied” return. That fits your broader accounting-reconciliation attack, including the plaintiff’s bid numbers and surplus discrepancy concerns. What this means strategicallyThis is not just “my credit is ugly.”This is stronger than that. It is:institutional data contradictionThey appear to have: - treated the foreclosure/sale/satisfaction path one way in court, - but continued furnishing a very different story to the bureaus. That is why your FCRA lane matters. Your own case materials already frame the exact issue as post-satisfaction delinquency on extinguished debt and continued furnishing after dispute.Clean framing you can useHere is the core statement:FCFCU reported both mortgage tradelines as continuing 180-day delinquencies through September–December 2025 and as foreclosures in January–February 2026, despite the sheriff sale occurring on August 15, 2025 and the case record reflecting the judgment as fully satisfied thereafter.That is the spine.What you should capture in your evidence table right nowFor each tradeline, create these columns: - Account name - Partial account number - Loan type - Original amount - Status shown - Date of status - Sep 2025 status - Oct 2025 status - Nov 2025 status - Dec 2025 status - Jan 2026 status - Feb 2026 status - Feb 2026 balance - Repeating “date payment received” - Why inaccurate For “Why inaccurate,” use language like: - “Reports 180-day delinquency after sheriff sale date.” - “Reports foreclosure in Jan/Feb 2026 although sale occurred Aug 15, 2025.” - “Uses stale payment-received date from Aug 2024 across 2025/2026 reporting.” - “Fails to reconcile with satisfaction/judgment-release record.” Hard truthThis is strong for credit inaccuracy / reconciliation failure.It is not automatically self-proving of maximum damages by itself. To turn this from “bad reporting” into real leverage, you still need: - the actual dispute timeline, - proof they got notice, - bureau responses, - any denial / deposit increase / housing fallout tied to this, - and a month-by-month comparison against the docket/sale/satisfaction record. That is the conversion step from “weird report” to “willful furnishing.”Bottom lineYour instinct is right.Based on what you pasted, the tradelines still appear materially inaccurate because they keep aging delinquency and then mark foreclosure after the foreclosure sale / satisfaction timeline should have cut off that kind of reporting. That directly supports your FCRA and accounting-reconciliation pressure theory.Next move: turn this into a 2-tradeline contradiction matrix you can use in a dispute packet, CFPB complaint, or settlement exhibit.
+
+> Date: Date
+
+> Prepared By: Person
+
+> Subject: Formal Analysis of Inaccurate Reporting – Financial Center First Credit Union (FCFCU)
+
+> Executive Summary
+
+> This document formalizes the factual contradictions between the judicial record in Financial Center First Credit Union v. Cody Rice-Velasquez and the consumer credit data currently being furnished by FCFCU to national credit bureaus. The core discrepancy involves FCFCU continuing to report active, aging monthly delinquencies on debt that was legally satisfied and extinguished via Sheriff Sale on August 15, 2025.
+
+> Core Reporting Conflicts
+
+> The judicial record reflects that the foreclosure judgment was "Fully Satisfied" on September 9, 2025, following the Sheriff Sale. However, the furnisher's data contains four primary material defects:
+
+> 
+
+> Post-Satisfaction Delinquency Aging: Both tradelines (L1 and L2) report "180 days past due" for September, October, November, and December 2025. It is legally and factually impossible to be delinquent on a debt that no longer exists.
+
+> Stale Payment Metadata: The "Date payment received" field is frozen in August 2024 for all subsequent reporting cycles in 2025 and 2026, indicating a mechanical failure to reconcile the account status after the legal satisfaction event.
+
+> Delayed Foreclosure Status: The tradelines list "Status: Foreclosed" and "Date of Status: 01/2026". This reporting creates a false timeline, as the foreclosure event and title transfer were completed in August 2025.
+
+> Balance Inflation: The reported balances continued to increase through December 2025 (e.g., Tradeline L1 increasing from $191,730 to $200,478) despite the judgment already being satisfied by a bid amount of $240,464.20.
+
+> Tradeline Reconciliation Matrix
+
+> Field
+
+> Judicial Record (Fact)
+
+> Credit Report (Furnished Data)
+
+> Accuracy Status
+
+> Account Status
+
+> Satisfied / Extinguished (09/09/2025)
+
+> Active Delinquent / Foreclosure (01/2026)
+
+>  Inaccurate
+
+> Balance (Post 08/15/25)
+
+> $0.00 (Due to Surplus/Satisfaction)
+
+> $200,478 (As of 12/2025)
+
+>  Inaccurate
+
+> Delinquency (Sep-Dec 2025)
+
+> No Legal Debt Exists
+
+> 180 Days Past Due
+
+>  Inaccurate
+
+> Date of Foreclosure
+
+> August 15, 2025
+
+> January 2026
+
+>  Inaccurate
+
+> 
+
+> Legal Implications under FCRA
+
+> Under the Fair Credit Reporting Act (15 U.S.C. § 1681s-2), furnishers are prohibited from reporting information they know or have reasonable cause to believe is inaccurate. The continued reporting of monthly delinquencies on a satisfied judgment constitutes a "willful non-compliance" (15 U.S.C. § 1681n) because the furnisher's internal legal department processed the satisfaction and surplus petitions in the same period they were furnishing contradictory delinquency data.
+
+> Required Corrective Action
+
+> To achieve compliance with federal law and accurately reflect the Marion Superior Court record, FCFCU must:
+
+> 
+
+> Delete all monthly delinquency entries from September 2025 forward.
+
+> Correct the "Date of Status" to reflect the actual August 2025 foreclosure date.
+
+> Reconcile the final balance to $0.00 effective as of the August 15, 2025 sale date.
+
+> Cease duplicate reporting of the same underlying obligation across multiple tradelines if the data cannot be reconciled.
+
+> 
+
+> Authorized Signature:
+
+> 
+
+> Person
+
+> Date
+
+> 
+
+> 
+
+> Operational Strategy & Hearing Readiness Plan
+
+> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
+
+> Cause No: 49D03-2501-MF-002559
+
+> Status: Motion to Vacate Denied; Evidentiary Hearing Set for March 27, 2026
+
+> I. Executive Posture
+
+> The court’s denial of the Motion to Vacate does not signal the end of the dispute; it shifts the battlefield to the March 27, 2026, Evidentiary Hearing. The primary objective is to convert the existing "paper discrepancy" into a "record fact" that forces a judicial reconciliation of the bank's inconsistent accounting.
+
+> II. High-Priority Triage Stack
+
+> To manage cognitive load and ADHD-related exhaustion during relocation, the following time-locked logistics are prioritized above all other tasks:
+
+> 
+
+> March 25, 2026: Property Retrieval & Relocation to Evansville. This window is the final opportunity to secure belongings and document property condition.
+
+> March 27, 2026: Evidentiary Hearing (Marion Superior Court 3). Focus is solely on the accounting reconciliation and surplus.
+
+> Ongoing: Documentation of "Displacement Damages" (Hotel receipts, transportation, safety incidents at lodging).
+
+> III. The Core Pressure Point: The "Satisfaction Gap"
+
+> The strategic advantage lies in the direct contradiction between the official Sheriff's Return and the bank's continued reporting/enforcement.
+
+> 
+
+> Category
+
+> Record Value
+
+> Source
+
+> Judgment Amount
+
+> $220,863.09
+
+> Decree of Foreclosure
+
+> Sheriff's Sale Price
+
+> $240,464.20
+
+> Sheriff's Sale Report
+
+> Return Status
+
+> FULLY SATISFIED
+
+> Sheriff's File 08.15.2025.032
+
+> Calculated Surplus
+
+> $10,701.51 - $19,601.11
+
+> Internal Audit/Demand
+
+> 
+
+> 
+
+> The Leverage: If the judgment is recorded as "Fully Satisfied," any continued reporting of delinquency or deficiency is a legal and regulatory impossibility.
+
+> IV. Three-Front Regulatory Escalation (Pre-Hearing)
+
+> Filing these now creates institutional pressure on the bank's compliance department prior to the hearing date.
+
+> 
+
+> NCUA Complaint: Focus on federal credit union record-keeping failures and the inability to produce a reconciled loan ledger.
+
+> CFPB Supplement (Case 260207-28634680): Update the existing complaint with evidence of the "Satisfaction of Judgment" vs. continued "180 DPD" credit reporting.
+
+> Indiana Attorney General: Focus on deceptive consumer practices regarding the $90,000 "re-inserted" deficiency claim that contradicts the "no deficiency" court statement.
+
+> V. Minimalist Evidence Folder (The "March 27 Kit")
+
+> To prevent ADHD-related information overwhelm, the hearing preparation is limited to three primary exhibits:
+
+> 
+
+> Exhibit 1: The Sheriff's Return (08.15.2025.032). Proves the judgment was receipted as satisfied.
+
+> Exhibit 2: The "Satisfaction Gap" Table. A simple visual showing the $19,601 surplus created by the $240k bid against the $220k judgment.
+
+> Exhibit 3: Credit Report Snapshots (Feb 2026). Proves the bank is reporting a $90k deficiency on a "Satisfied" debt.
+
+> VI. ADHD-Friendly Hearing Defense Strategy
+
+> The Goal: Do not try to win the entire case. Simply force the bank to "Show the Ledger."
+
+> 
+
+> Question 1: "The Sheriff's Return states this judgment was 'Fully Satisfied' on August 15, 2025. Why is your client still reporting a balance?"
+
+> Question 2: "Can you produce a single itemized servicing ledger today that reconciles the $240,464.20 credit bid to the $220,863.09 judgment?"
+
+> Question 3: "If the judgment was satisfied, what is the legal basis for the $89,848 deficiency currently being reported to credit bureaus?"
+
+> VII. Damages & Displacement Tracker
+
+> All out-of-pocket costs must be categorized for the eventual "Actual Damages" claim under FCRA/FDCPA.
+
+> 
+
+> Lodging: Weekly-rate hotel costs ($300–$350/week) since the December 9, 2025, removal.
+
+> Safety/ADA: Documentation of the incident involving Person (Service Animal Gigi) and the failure to provide reasonable lodging accommodations.
+
+> Property Loss: Valuation of items discarded during the March 25 retrieval window due to "arbitrary" time limits.
+
+> 
+
+> Next Steps:
+
+> 
+
+> Finalize NCUA/AG complaint templates for 15-minute submission.
+
+> Print the "March 27 Kit" (3 Exhibits).
+
+> Execute relocation to Evansville on Date.
+
+> 
+
+> VIII. Consolidated Exposure Matrix (Eight Legal Theories)
+
+> This section synthesizes the primary litigation claims and statutory violations identified through the current record and evidentiary findings:
+
+> Theory 1: Procedural Due Process & Service Defects (TR 4.1). The judgment is allegedly void ab initio due to failure of service. The bank utilized verified methods for institutional defendants but chose unverified methods for the individual defendant.
+
+> Theory 2: ADA Process Failure & Reasonable Accommodation. Documented failure to accommodate known ADHD and executive dysfunction during the service and removal process impaired the Defendant's opportunity to be heard.
+
+> Theory 3: Abuse of Process (Armed Removal). Transcript records confirm the bank utilized a retired sheriff's deputy, acting as a bank contact on vacation, to facilitate the removal under the guise of needed protection.
+
+> Theory 4: Conversion & Property Interference. The bank imposed arbitrary time limits and disabled garage access during the limited retrieval window, leading to property loss.
+
+> Theory 5: Financial Accounting & Surplus (C-05). The $240,464.20 credit bid against a $220,863.09 judgment creates a non-discretionary surplus of approximately $19,601.11.
+
+> Theory 6: FCRA & Credit Reporting Misconduct. Reporting a $90k deficiency on a debt explicitly marked as "Fully Satisfied" by the Sheriff constitutes a willful violation.
+
+> Theory 7: Deceptive Consumer Practices (UDAAP). Contradictory statements regarding deficiency to the court versus credit bureaus suggest deceptive regulatory behavior.
+
+> Theory 8: Spoliation of Evidence. Failure to acknowledge or comply with formal litigation holds regarding body-worn camera and internal communications.
+
+> 
+
+> IX. Procedural Response Draft: Correction of Record Regarding Access and Timeline (Response to March 26 Assertion)
+
+> This document is submitted to address and correct material mischaracterizations of the timeline and access conditions regarding the property, as asserted by opposing counsel.
+
+> I. The Failure of Clear Possession Transfer (May 2025 - December 2025)
+
+> Your assertion that I “had ample time to vacate” is not supported by the record, the conditions imposed, or the sequence of events beginning May 28, 2025. To be clear: there was no point at which a reasonable person, under the actual conditions present, would have understood that they were required to abandon possession of their home.
+
+> The record reflects:
+
+> The foreclosure judgment was entered May 28, 2025.
+
+> The Sheriff’s Sale occurred August 15, 2025.
+
+> The deed was not recorded until December 2, 2025.
+
+> As late as October 2025, there was no clear, externally verifiable indication that ownership had transferred in a way that would trigger voluntarily vacating the property.
+
+> No direct notice of transfer, demand for possession, or eviction process was ever communicated.
+
+> Under those conditions, the premise that I should have voluntarily vacated is not grounded in a clear or reliable ownership determination.
+
+> II. Denial of Access and Resulting Property Prejudice
+
+> For approximately four months (August 2025 to December 2025), I was effectively prevented from accessing my property and retrieving my belongings. During that same period, the property was left unsecured or neglected, leading to a compounded harm:
+
+> The condition of the property deteriorated, including moisture-related issues and mold risk.
+
+> Personal property remained inside without preservation or coordination.
+
+> I am now being blamed for not completing retrieval under constraints created by Plaintiff’s own actions.
+
+> This sequence—restriction followed by deterioration followed by blame—is both prejudicial and inconsistent with any reasonable standard of property handling or possession transition.
+
+> III. The Fragmented and Prejudicial Retrieval Conditions
+
+> The characterization of 'time provided' is equally inaccurate. What was actually provided was approximately 5.5 total hours, divided across two occurrences over a span of approximately four months, to recover an entire household while:
+
+> Displaced and effectively homeless.
+
+> Without reliable transportation (both vehicles disabled during this period).
+
+> Managing extreme fatigue from extended travel and mechanical failures.
+
+> Operating under documented cognitive disability.
+
+> This was not meaningful access. It was a constrained and fragmented window under duress.
+
+> IV. Interference and Coordination Failure Onsite
+
+> The environment during the retrieval period further undermines your assertion:
+
+> Active Disposal: Property was already being actively discarded into a dump truck upon my arrival.
+
+> Access Restriction: I was instructed to remain outside and could not enter the garage or structure without risking trespass, creating an impossible condition where my property was being removed and discarded while access was simultaneously limited.
+
+> Coordination Failure: The retired deputy (bank security) was the primary point of contact and director of my actions, while the uniformed deputy remained silent. Ms. Abbett (Plaintiff’s representative) remained in her vehicle and did not facilitate retrieval.
+
+> Failed Communication: My email attempt to coordinate was acknowledged only after the access window had passed.
+
+> This was not an orderly transfer of possession—it was interference and an unmanaged environment.
+
+> V. Pattern of Record Inconsistencies
+
+> This issue does not stand alone. Throughout this matter, filings, affidavits, and representations have repeatedly contained material inconsistencies, unsupported assumptions, or reconstructed figures that shift over time, particularly where those assumptions favor Plaintiff’s position. These include, but are not limited to:
+
+> Inconsistent accounting figures related to the judgment, interest, and surplus.
+
+> Representations of service and notice that are not supported by complete documentation.
+
+> Assertions of 'unknown occupants' contradicted by Plaintiff’s own institutional records.
+
+> Continued inaccurate credit reporting (180 DPD) after the debt was marked 'Fully Satisfied' by the Sheriff's Return.
+
+> This pattern raises concerns regarding the reliability of Plaintiff’s representations as a whole and warrants closer scrutiny.
+
+> VI. Conclusion
+
+> This matter is not about refusal to act. It is about: unclear and delayed ownership transition; absence of notice; extended denial of access; deterioration of property during that denial; restricted and fragmented retrieval conditions; active interference with property access; and a compressed timeline imposed after months of administrative delay. I will be addressing these issues formally and preserving them as part of the record.
+
+> 
+
+> FCFCU Executive Escalation & Visibility Framework
+
+> Strategic Objective
+
+> The objective of this framework is to pivot from localized case management to broad executive accountability within Financial Center First Credit Union (FCFCU). By creating transparency across the leadership tier, the goal is to resolve ongoing record-integrity issues, servicing friction, and the historical lack of meaningful response to hardship and ADA-related notices.
+
+> Executive Stakeholder Directory
+
+> The following personnel have been identified for the escalation chain. Based on the established domain pattern [FirstInitial][LastName]@fcfcu.com, the following contacts are proposed for visibility:
+
+> 
+
+> Name
+
+> Title
+
+> Accountability Role
+
+> Email (Projected)
+
+> Ning Duong
+
+> Chief Executive Officer
+
+> Ultimate Accountability
+
+> NDuong@fcfcu.com
+
+> Billy Wells
+
+> Chief Operations Officer
+
+> Operational Accountability
+
+> BWells@fcfcu.com
+
+> Kyle Endres
+
+> Vice President
+
+> Management Layer
+
+> KEndres@fcfcu.com
+
+> Darius Jamieson
+
+> Strat. Customer Success Manager
+
+> Client Experience / Relationship
+
+> DJamieson@fcfcu.com
+
+> 
+
+> Escalation Protocol: "Visible Visibility" Strategy
+
+> 1. The Power of the CC over BCC
+
+> Transparency is the primary lever for rapid escalation. Using the Carbon Copy (CC) function ensures that every executive is aware their peers and superiors are also monitoring the communication.
+
+> 
+
+> Accountability: CC'ing creates a shared internal problem that cannot be easily dismissed by a single department.
+
+> Professionalism: Maintaining a transparent recipient list presents a confident and serious litigation posture, as opposed to BCC, which can be interpreted as "sneaky" or "chaotic".
+
+> 2. Integration with Role-Based Addresses
+
+> While individual executive contact is the goal, systemic escalation is reinforced by including monitored corporate inboxes. These addresses often trigger automated internal tracking systems.
+
+> 
+
+> Executive Office: executiveoffice@fcfcu.com
+
+> Compliance: compliance@fcfcu.com
+
+> General Support: info@fcfcu.com or customerservice@fcfcu.com
+
+> 3. Tone and Content Alignment
+
+> Communications must maintain a "cold, judicial tone" focused purely on facts.
+
+> 
+
+> Primary Issue: Highlight the record-integrity contradictions regarding retrieval windows and the lack of structured retrieval protocols.
+
+> Disability Context: Explicitly mention how the lack of coordination creates barriers for those with cognitive processing limitations.
+
+> Historical Friction: Reference the servicing history, including returned online payments and previous hardship outreach.
+
+> Case Implementation Log
+
+> Primary Recipient: Person
+
+> Associated Case File: File
+
+> Escalation Date: Date
+
+> Reference Strategy Report: (FCFCU Record Clarification Strategy)
+
+> 
+
+> FCFCU Strategic Resolution and Litigation Roadmap
+
+> Strategic Response to Financial Center First Credit Union v. Rice-Velasquez
+
+> Cause No. 49D03-2501-MF-002559
+
+> Operational Plan: The Pressure Stack
+
+> The court's denial of the Motion to Vacate on March 31, 2026, and the subsequent rescheduling of the hearing to April 17, 2026, creates a critical window for multi-front escalation. The primary objective is to force Financial Center First Credit Union (FCFCU) into a global settlement by leveraging their unstable accounting record and documented procedural misconduct.
+
+> 1. Court Strategy: The Accounting Anchor
+
+> The hearing on April 17 is no longer about the foreclosure merits but about accounting reconciliation and surplus disposition.
+
+> 
+
+> The Contradiction: The record shows a $220,863.09 judgment vs. a $240,464.20 plaintiff bid. The Sheriff Sale return of June 19, 2025, reflects the judgment as "Fully Satisfied".
+
+> The Exposure: FCFCU's attempt to file a nunc pro tunc motion on February 24, 2026, to correct a "scrivener's error" in the bid is a judicial admission of unreliable record-keeping.
+
+> Hearing Objective: Force the production of a contemporaneous itemized ledger. If they cannot reconcile the "satisfaction" status with their current balance claims, their legal position collapses.
+
+> 2. Regulatory Front: The Multiplier Effect
+
+> Filing with the NCUA, CFPB, and Attorney General (AG) converts a private litigation into a regulatory risk event for the credit union.
+
+> 
+
+> NCUA (Member Governance): Focus on the failure of internal controls regarding the $940 million asset portfolio's accounting integrity.
+
+> CFPB (Mortgage Servicing/FCRA): Focus on the "Impossible Fact" of reporting a debt as 120+ days delinquent in January 2026 when it was legally satisfied in June 2025.
+
+> Indiana AG (Consumer Protection): Focus on the deceptive practices of "unknown occupant" designations to sidestep eviction safeguards.
+
+> 3. Settlement Front: The Rule 408 Letter
+
+> The Settlement Communication must reach FCFCU’s executive leadership directly to bypass the "clerk-level" response and trigger institutional risk review.
+
+> Executive Distribution Directory
+
+> Pursuant to institutional governance records, the following individuals are the verified points of contact for risk, legal, and executive oversight.
+
+> 
+
+> Role
+
+> Name
+
+> Verified Email
+
+> Chief Executive Officer
+
+> Ning Duong
+
+> nduong@fcfcu.com
+
+> VP of Enterprise Risk (ERM)
+
+> Aaron Alsup
+
+> aalsup@fcfcu.com
+
+> EVP of Strategic Operations
+
+> Dusty Simmons
+
+> dsimmons@fcfcu.com
+
+> AVP of Compliance
+
+> Mackenzie Kepley
+
+> mkepley@fcfcu.com
+
+> SVP of Internal Audit
+
+> Joan Kerulis
+
+> jkerulis@fcfcu.com
+
+> EVP of Finance (CFO)
+
+> Ryan Cook
+
+> rcook@fcfcu.com
+
+> SVP Lending & Risk
+
+> Carl Britton
+
+> cbritton@fcfcu.com
+
+> 
+
+> Finalized Rule 408 Settlement Communication
+
+> FOR SETTLEMENT PURPOSES ONLY – SUBJECT TO INDIANA RULE OF EVIDENCE 408
+
+> CONFIDENTIAL SETTLEMENT COMMUNICATION
+
+> 
+
+> Date: Date
+
+> Via Email and U.S. Mail
+
+> 
+
+> Financial Center First Credit Union
+
+> 7101 E. 56th Street
+
+> Indianapolis, Indiana 46226
+
+> 
+
+> Michael E. Farrer, Counsel
+
+> mfarrer@gfwlawyers.com
+
+> 
+
+> Re: Financial Center First Credit Union v. Rice-Velasquez
+
+> Marion County Superior Court | Cause No. 49D03-2501-MF-002559
+
+> 
+
+> To Counsel, Executive Leadership, Risk Management, Compliance, Internal Audit, and Authorized Representatives:
+
+> 
+
+> This correspondence is a confidential settlement communication made for compromise purposes under Indiana Rule of Evidence 408 and corresponding evidentiary principles. It is sent in a good-faith effort to resolve this matter before further regulatory escalation and expanded damages development.
+
+> 
+
+> This communication is broadly disseminated because the identified issues implicate litigation, credit furnishing practices, accounting controls, records preservation, compliance oversight, audit review, and institutional risk management. Should any recipient not be the appropriate office to address any portion of this matter, please immediately route this communication to the pertinent legal, executive, compliance, risk-management, internal-audit, or insurer-facing representative and confirm such routing in writing.
+
+> Why This Matter Now Requires Executive-Level Resolution
+
+> This matter is no longer a routine foreclosure file. Following the execution of the writ of assistance on December 9, 2025, a detailed review of the record has identified substantial concerns regarding accounting integrity, contradictory record positions, continued post-dispute furnishing, and privacy invasion.
+
+> 
+
+> Most significantly, FCFCU placed a $240,464.20 bid in the record after a judgment of $220,863.09, subsequently treated the matter as fully satisfied, and then attempted to walk back the bid through a "nunc pro tunc" filing characterizing the discrepancy as a "scrivener’s error". This sequence raises substantial concerns regarding internal controls and reconciliation integrity. Furthermore, FCFCU’s credit furnishing remains inconsistent with the record, reporting delinquency on a debt legally extinguished by court judgment.
+
+> Principal Issues Identified
+
+> The issues identified include, but are not limited to:
+
+> 
+
+> Accounting Inconsistency: Material representations in the court record that are inconsistent with later filings and public sale records.
+
+> Ledger Refusal: Repeated failure to produce a complete, contemporaneous loan servicing ledger necessary to verify figures asserted in court.
+
+> Willful FCRA Non-Compliance: Continued adverse credit furnishing despite unresolved record contradictions, indicating a failure in furnisher accuracy obligations.
+
+> Procedural Shortcuts: Use of "unknown occupant" designations to bypass standard notice and eviction safeguards.
+
+> Video Evidence of Notice Defect: Evidence showing posting materials were obtained and affixed only after possession was taken, contradicting prior representations of required notice.
+
+> Privacy and Security Breach: Entry and documentation of the residence interior before the defendant had vacated, including inspection of private papers by security personnel unrelated to safety functions.
+
+> Spoliation of Evidence: Removal or disabling of security cameras and the resulting loss of video evidence relating to property handling.
+
+> ADA Accommodation Failure: Refusal to provide accessible written communication (email) despite known disability-related needs, leading to observable acute emotional distress during the removal process.
+
+> Deed and Utility Mismanagement: Delayed deed recordation (Dec 2, 2025) which materially impaired the ability to manage utilities and evaluate legal remedies.
+
+> Regulatory Escalation
+
+> I am preparing or supplementing submissions to the National Credit Union Administration (NCUA), the Consumer Financial Protection Bureau (CFPB), and the Indiana Attorney General. These submissions concern mortgage-servicing irregularities, disability-accommodation failures, and related fair housing and civil-rights issues.
+
+> Opportunity to Resolve
+
+> Before these escalations proceed, FCFCU is extended an opportunity to resolve this matter privately. Any resolution must include:
+
+> 
+
+> Immediate Credit Deletion: Deletion of the two FCFCU tradelines and all associated adverse mortgage reporting. Correction is insufficient given the contradictory record.
+
+> Contemporaneous Accounting Production: Production of the complete ledger-level accounting supported by contemporaneous business records.
+
+> Global Settlement Discussions: Good-faith discussions regarding harms arising from displacement, privacy invasion, property loss, and credit damage.
+
+> Property and Utility Close-out: Supervised property access and written confirmation of utility hold-harmless treatment.
+
+> Response Deadline
+
+> I request written contact from counsel or an authorized representative within ten (10) days of receipt. Absent a timely response, I will proceed with regulatory submissions and other actions necessary to protect my rights.
+
+> 
+
+> Regards,
+
+> 
+
+> Person
+
+> Pro Se Defendant
+
+> 1000 Fulton Pkwy Apt 107
+
+> Evansville, IN 47710
+
+> Case Filing Strategy & Record Summary
+
+> Matter: Financial Center First Credit Union v. Rice-Velasquez Cause No: 49D03-2501-MF-002559 Court: Marion Superior Court 3 Status: Post-Nunc Pro Tunc Denial / Objection to Request for Hearing
+
+> 1. Executive Summary of March 9 Filings
+
+> The following documents were submitted to the Indiana E-Filing System (Odyssey) to block the Plaintiff’s attempt to relitigate the Sheriff’s Sale accounting and to enforce the statutory deposit of surplus funds.
+
+> Lead Filing: Defendant’s Objection to Plaintiff’s Request for Hearing and Motion to Enforce Deposit of Surplus Proceeds. This filing establishes the finality of the credit bid and moves for the deposit of $10,701.51 with the Clerk.
+
+> Secondary Filing: Defendant’s Motion for Sanctions Pursuant to Indiana Trial Rule 11. This filing quantifies the 55 hours of forensic and legal analysis required to respond to shifting accounting theories, requesting costs of $1,760.00.
+
+> 2. Chronology of Shifting Accounting Positions
+
+> The narrative core of the current record identifies a pattern of serial theory substitution by the Plaintiff to avoid the financial consequences of their own binding credit bid.
+
+> Date
+
+> Plaintiff Position
+
+> Document Reference
+
+> 07/17/2025
+
+> Executed binding credit bid of $240,464.20.
+
+> Sheriff’s Sale Bid
+
+> 12/17/2025
+
+> Formally asserted a surplus of exactly $0.00.
+
+> Report of No Excess
+
+> 01/09/2026
+
+> Represented in open court that the bid was an "underbid."
+
+> Hearing Transcript (Ex. L)
+
+> 02/16/2026
+
+> Denied surplus existence via counsel email.
+
+> Counsel Email (Ex. O)
+
+> 02/20/2026
+
+> Judicially admitted surplus of $8,378.42.
+
+> Petition to Pay Surplus (Ex. H)
+
+> 02/24/2026
+
+> Claimed "scrivener's error" of $10,000+ to erase surplus.
+
+> Nunc Pro Tunc Motion (Ex. N)
+
+> 03/06/2026
+
+> Requested hearing to advance a new $823.50 theory.
+
+> Request for Hearing
+
+> 
+
+> 3. Evidence Matrix (Exhibit List L–R)
+
+> The current filing is "Receipt-Ready," utilizing the following exhibits to prove the Plaintiff's inability to reconcile their own servicing ledger.
+
+> Exhibit ID
+
+> Description
+
+> Strategic Purpose
+
+> EX-H
+
+> Petition to Pay Surplus
+
+> Proves judicial admission of surplus funds.
+
+> EX-J
+
+> Email Review Calculations
+
+> Documents the failure to provide a verified ledger.
+
+> EX-L
+
+> Transcript Excerpt
+
+> Confirms Plaintiff’s "no excess" claim was made under oath.
+
+> EX-O
+
+> Counsel Email
+
+> Establishes the "no surplus" stance prior to admission.
+
+> EX-P
+
+> Notice of Inaccuracies
+
+> Documents formal notice of credit reporting errors.
+
+> EX-Q
+
+> Annotated Tradeline Excerpt
+
+> Visually proves balance increases after judgment.
+
+> EX-R
+
+> Balance Change Graph
+
+> Demonstrates reporting instability (Zero-balance reset).
+
+> 
+
+> 4. Technical Resolution: System File Preview
+
+> To resolve the Windows "Mark-of-the-Web" security block preventing file previews for the case exhibits and documents, execute the following command in PowerShell.
+
+> # Unblock all files in the current directory and subdirectories
+
+> Get-ChildItem -Recurse | Unblock-File
+
+> This command strips the zone identifier that Windows applies to downloaded files, which should restore functionality to the Preview Pane in File Explorer immediately.
+
+> 5. Strategic Invariants for Future Proceedings
+
+> The following legal pillars protect the current position for either a settlement off-ramp or appellate review:
+
+> 1. Finality of Credit Bid: A credit bid is not a provisional estimate; it is a binding representation of debt owed at the time of sale.
+
+> 2. Judicial Estoppel: Plaintiff cannot benefit from a "satisfied judgment" and "no surplus" claim in court, then later attempt to modify those figures once they become unfavorable.
+
+> 3. Missing Business Records: As a sophisticated financial institution, Plaintiff’s failure to produce a standard loan ledger renders their ad hoc worksheets legally insufficient.
+
+> 4. Regulatory Exposure: Continued inaccurate reporting (66+ instances after notice) creates significant FCRA and NCUA liability that exceeds the value of the surplus dispute.
+
+> Rice-Velasquez v. Financial Center First Credit Union
+
+> Cause No. 49D03-2501-MF-002559 | Marion Superior Court 3
+
+> Doc ID: MF2559-SURPLUS-RECAP-20260403 | Page 1 of 1
+
+> 
+
+> 
+
+> 
+
+> Case Status Report: Financial Center First Credit Union v. Rice-Velasquez
+
+> Cause No. 49D03-2501-MF-002559
+
+> Court: Marion Superior Court 3
+
+> Report Date: April 3, 2026
+
+> Executive Summary
+
+> This report consolidates the procedural history and current status of the dispute regarding foreclosure surplus funds in the matter of Financial Center First Credit Union (FCFCU) v. Rice-Velasquez. The central conflict involves the Plaintiff's attempt to retroactively modify a recorded credit bid after previously acknowledging the existence of surplus funds. On February 26, 2026, the Court denied the Plaintiff's request to modify the record nunc pro tunc, effectively preserving the original credit bid and the Defendant's claim to surplus proceeds.
+
+> Procedural Timeline
+
+> Date
+
+> Event
+
+> Description
+
+>  August 15, 2025
+
+> Sheriff’s Sale
+
+> Sale conducted with an original recorded credit bid of $240,464.20.
+
+>  December 16, 2025
+
+> Motion to Account
+
+> Defendant filed an Emergency Motion to Preserve and Account for Surplus Funds.
+
+>  January 9, 2026
+
+> Court Hearing
+
+> Defendant requested a formal audit on the record; Plaintiff counsel argued no excess existed.
+
+>  February 12, 2026
+
+> Formal Demand
+
+> Defendant issued a Surplus Accounting Demand Letter via certified mail.
+
+>  February 20, 2026
+
+> Judicial Admission
+
+> Plaintiff filed a "Petition to Pay Surplus Funds," agreeing to a surplus of $8,378.42.
+
+>  February 24, 2026
+
+> Tactical Reversal
+
+> Plaintiff filed a "Petition Determining No Surplus" and sought nunc pro tunc correction to lower the bid.
+
+>  February 26, 2026
+
+> Court Ruling
+
+> Magistrate Hannah denied the Plaintiff's Nunc Pro Tunc petition.
+
+>  February 26, 2026
+
+> Enforcement Motion
+
+> Defendant filed a Motion to Enforce the Plaintiff's original Feb 20 admission of surplus.
+
+> 
+
+> Analysis of Inconsistent Positions
+
+> The Plaintiff has maintained three distinct and contradictory positions regarding the accounting of the foreclosure sale proceeds:
+
+> 
+
+> Initial Denial (Jan 2026): Counsel represented in open court that the credit bid covered "exactly what was owed" and that "there is no excess".
+
+> Formal Acknowledgment (Feb 20, 2026): Following repeated demands, the Plaintiff filed a sworn petition agreeing to a calculated surplus of $8,378.42 and requesting leave to deposit it with the Clerk.
+
+> Attempted Retroactive Modification (Feb 24, 2026): Plaintiff attempted to reduce the recorded bid from $240,464.20 to $230,562.40, characterizing the prior figures as a "scrivener's error" to eliminate the surplus.
+
+> Current Legal Posture
+
+> The Nunc Pro Tunc Denial
+
+> The Magistrate's denial of the nunc pro tunc request is a critical procedural juncture. Under Indiana law, nunc pro tunc entries are intended to correct clerical errors to reflect what actually occurred, not to retroactively alter substantive financial decisions or correct subsequent bad math. By denying this, the Court has signaled that the recorded bid of $240,464.20 remains the legally operative figure.
+
+> Pending Enforcement
+
+> The Defendant's pending "Motion to Enforce Plaintiff’s Petition to Pay Surplus Funds" seeks to hold the Plaintiff to its judicial admission of February 20, 2026. Because the Plaintiff's attempt to modify the bid was unsuccessful, the surplus math acknowledged in their February 20 filing remains internally consistent with the current court record.
+
+> Strategic Outlook
+
+> Evidentiary Requirements: The Plaintiff has consistently failed to produce a sworn, itemized payoff ledger reconciling interest accruals and post-judgment costs.
+
+> Regulatory Escalation: The pattern of shifting representations and failure to provide verified accounting has been documented for potential referral to the CFPB and NCUA regarding willful non-compliance with accounting standards.
+
+> Next Steps: Await the Court's ruling on the Motion to Enforce. If granted, Plaintiff will be required to deposit $8,378.42 into the Clerk of the Court for distribution to the Defendant.
+
+> Expanded Strategic Lanes (FCRA & Damages)
+
+> The case now includes high-leverage consumer protection lanes centered on post-sale conduct:
+
+> Inaccurate Credit Reporting: The lender is allegedly continuing to report the first mortgage with an inaccurate balance of over $201,000 and an incorrect payment history, despite the judgment being satisfied. Lender counsel previously stated the tradelines were corrected to a $0 balance and 'Foreclosure Completed' status. This creates substantial FCRA exposure, especially if no deficiency judgment exists.
+
+> Documented Harm: The inaccurate reporting is causing active actual damages, including housing instability (automated tenant screening 'REJECT' flags) and ongoing out-of-pocket costs from temporary, weekly-rate hotel stays (approx. $300-$350 per week).
+
+> Attorney Focus: Securing federal consumer counsel is prioritized to aggressively pursue the FCRA claims, which feature statutory damages and fee shifting.
+
+> Updated Next Steps for Surplus
+
+> Procedural Plan: Await confirmation of the $8,378.42 deposit. Upon deposit, the Defendant will monitor the docket and, if no superior lien claims are filed within a reasonable window (~7–14 days), file a Motion to Disburse Surplus Funds to force distribution.
+
+> 
+
+> 
+
+> 
+
+> Report Prepared By:
+
+> Person
+
 > Expert Engine / Procedural Analyst
 
 ### Assistant
@@ -2311,137 +3020,268 @@ canonical_ref: ""
 > I can next turn this into a **clean e-filing version with tighter spacing, caption lines, and page-ready formatting** or a **DOCX/PDF artifact**.
 
 ### User
-> no lets work on the surgical strike responding to their response they sent about the time i had to get my stuff. STATE OF INDIANA
-> 
-> COUNTY OF MARION
-> )                           THE MARION SUPERIOR COURT 3
-> )   SS: 
-> )                            CAUSE NO: 49D03-2501-MF-002559
-> 
-> 
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Plaintiff
-> v.
-> 
-> CODY RICE-VELASQUEZ
-> Defendant
-> )
-> )
-> )
-> )
-> )
-> )
-> 
-> DEFENDANT’S STATEMENT FOR RECORD CLARIFICATION (Record Integrity Declaration)
-> STATE OF INDIANA
-> COUNTY OF MARION
-> IN THE MARION SUPERIOR COURT 3
-> CAUSE NO. 49D03-2501-MF-002559
-> 
-> FINANCIAL CENTER FIRST CREDIT UNION,
-> Plaintiff,
-> v.
-> CODY RICE-VELASQUEZ,
-> Defendant.
-> 
-> Defendant, Person, proceeding pro se, respectfully submits this Statement for Record Clarification. This submission is intended to address and correct material inconsistencies, omissions, and internal contradictions within Plaintiff’s representations. The objective of this filing is to ensure that the court’s record reflects a verifiable and coherent sequence of events, as the existing record, as presently constructed, fails to accurately characterize the conditions of notice, enforcement, and property handling.
-> I. PRE-LITIGATION RELATIONSHIP AND IDENTIFICATION
-> Defendant maintained an established financial relationship with Plaintiff prior to and during these proceedings.
-> Plaintiff possessed Defendant’s identifying information, detailed account records, and direct, established communication channels (including email).
-> Plaintiff issued Defendant a physical debit card shortly before his removal from the property, confirming their ongoing knowledge of his identity and location.
-> Defendant also interacted with Plaintiff in a professional capacity through his employer.
-> Accordingly, the narrative framing of Defendant as an "unknown party" or "unknown occupant" is contradicted by Plaintiff’s own institutional records.
-> II. ADA COMPLIANCE AND INTERACTIVE PROCESS FAILURES
-> In September 2023, Defendant formally notified Plaintiff of his disabilities—including ADHD, anxiety, and executive dysfunction—and requested specific communication accommodations.
-> Plaintiff did not engage in the federally required ADA interactive process.
-> Plaintiff ignored requests for written/email communication, instead engaging in a pattern of repetitive, high-frequency phone contact (often multiple times per day).
-> Plaintiff provided materially inconsistent financial figures to Defendant; one representation demanded over $27,000 for reinstatement, whereas subsequent internal records suggested a cure amount closer to $4,400.
-> These failures directly impeded Defendant’s ability to act upon reliable information or participate meaningfully in the process.
-> III. THE FICTION OF THE "MAY 2025" TIMELINE
-> Plaintiff asserts that Defendant "had time since May" to respond. This relies on a procedural fiction rather than functional awareness.
-> While a default judgment was entered on May 28, 2025, Plaintiff did not record the Sheriff’s Deed until December 2, 2025.
-> Defendant was forcibly removed on December 9, 2025.
-> The "actionable window" between the recording of the deed and physical dispossession was approximately seven days, not six months.
-> Furthermore, Plaintiff did not transfer utility accounts into its name until after the January 9, 2026 hearing, yet argued to the court that it was already bearing those costs.
-> IV. EXECUTION IRREGULARITIES AND PROPERTY DISPOSAL
-> During the December 9, 2025 removal, recorded audio and video reflect that participants (including security personnel) lacked verified knowledge of the procedural facts, relying instead on Plaintiff’s assumptions.
-> A private, non-law-enforcement individual appeared to exercise operational control over the removal.
-> Plaintiff’s representative stated on the record on January 9, 2026, that property in the home was "untouched."
-> However, observed events and recorded evidence show a dump truck being utilized for active disposal, moving property off-site in a manner that rendered notice and retrieval functionally impossible.
-> Plaintiff’s representatives unplugged security cameras and appliances, leading to the spoilage of food and the growth of mold.
-> By neglecting to stabilize the property’s utilities in sub-freezing weather until after the January 9 hearing, Plaintiff allowed for foreseeable property damage, including burst pipes.
-> V. FINANCIAL AND PROCEDURAL INSTABILITY
-> Plaintiff’s financial representations have been systemically unstable:
-> Plaintiff initially filed a "Report of No Excess Proceeds" on December 17, 2025.
-> Plaintiff later acknowledged a surplus of $8,378.42 on February 20, 2026.
-> Plaintiff attempted to retroactively reduce its bid via a nunc pro tunc petition on February 24, 2026, which the Court denied.
-> Plaintiff has still not complied with the Court's order to deposit the acknowledged surplus funds.
-> At the January 9, 2026 hearing, Plaintiff’s counsel was disorganized, clarifying material facts with the client in real-time and missing basic procedural filings such as a formal appearance.
-> VI. ONGOING CREDIT REPORTING ERRORS
-> Despite the judgment being recorded as "Satisfied" on September 9, 2025, Plaintiff has continued to furnish inaccurate delinquency data to credit bureaus.
-> These inaccuracies persist as of the date of this filing, obstructing Defendant’s ability to secure stable housing and recover from the displacement.
-> VII. CONCLUSION
-> This matter is not characterized by a single misunderstanding, but by a systemic breakdown in record integrity and procedural fairness. The pattern of Plaintiff's conduct involves actions preceding documentation, after-the-fact corrections, and contradictory positions regarding service and occupancy.
-> 
-> The assertion that Defendant "had time since May" is fundamentally misleading when measured against the lack of notice, the absence of ADA accommodation, and the reality of a seven-day enforcement window. Either Plaintiff’s representations are being made without regard for their accuracy, or Plaintiff’s internal record-keeping is so deficient that its statements cannot be relied upon by this Court. In either case, independent verification of Plaintiff's claims is required to ensure a just outcome.
-> 
-> I declare under penalty of perjury that the foregoing is true and correct.
-> 
-> DATED: Date
-> 
-> SIGNED: Person
-> Cody Rice-Velasquez
-> Defendant, Pro Se
-> 
-> VERIFIED DECLARATION OF DEFENDANT IN SUPPORT OF RECORD CLARIFICATION REGARDING MARCH 25, 2026 PROPERTY RETRIEVAL
-> I, Cody Rice-Velasquez, declare under penalty of perjury as follows:
-> Identity and Purpose
-> I am the Defendant in this matter and have personal knowledge of the facts set forth herein.
-> This declaration is submitted for the limited purpose of clarifying factual implications arising from Plaintiff’s March 26, 2026 response concerning the March 25, 2026 property retrieval.
-> Communicated Retrieval Window
-> I was informed that I would be permitted to retrieve my personal belongings on March 25, 2026, between 9:00 a.m. and 11:00 a.m.
-> No written or verbal communication indicated that access would extend beyond that stated time period.
-> I was not advised, either expressly or implicitly, that retrieval would remain available after 11:00 a.m. under any circumstances.
-> This defined the full scope of my understanding of the time and conditions under which retrieval was permitted.
-> Conditions Observed Onsite
-> I arrived at the property prior to 11:00 a.m., within the communicated retrieval window.
-> Upon arrival, multiple individuals were present at the property.
-> No individual identified themselves as a coordinator, supervisor, or designated point of contact for retrieval.
-> I was not provided with any inventory, listing, or accounting of my belongings.
-> I received no instruction or guidance regarding: what property remained within the residence; what items were in the process of being removed; or how retrieval was to be conducted in a structured or orderly manner.
-> Property was actively being moved and loaded without any coordinated pause, inspection opportunity, or mechanism for verification.
-> The positioning of the truck and ongoing loading activity limited visibility into what property remained available for retrieval.
-> This limitation directly affected my ability to identify and retrieve items within the stated window.
-> Absence of Structured Retrieval Process
-> At no time was a structured or organized retrieval process established or communicated.
-> I was not provided with a walkthrough, staging or sorting guidance, or identification of any individual responsible for coordinating access or retrieval.
-> I had no reasonable basis to assume that any person present was authorized to provide such coordination.
-> Plaintiff’s representative remained in a vehicle and did not present herself as an active coordinator or provide instruction.
-> I attempted to communicate through the channel previously directed by Plaintiff’s counsel.
-> I did not receive any response that clarified procedure, access, or coordination during the stated retrieval window.
-> Given my cognitive disability, the lack of clear instructions, and the active disposal, I was not able to safely process the scene or improvise contact with unidentified persons or a representative in a closed vehicle, consistent with the need for accommodation previously put before the Court.
-> Timeline and Representation Inconsistencies
-> These statements, taken together, are internally inconsistent and do not reflect the conditions as observed.
-> Plaintiff’s March 26, 2026 response states that: the retrieval window concluded at 11:00 a.m.; an FCFCU representative remained onsite until approximately 1:00 p.m. and returned again later; and property removal activities continued after 11:00 a.m.
-> These statements indicate that the property remained actively accessible and subject to ongoing handling after the stated cutoff time.
-> I was not informed that continued onsite presence or post-11:00 a.m. activity constituted an extension of my ability to retrieve my belongings.
-> No communication indicated that the 11:00 a.m. cutoff was flexible, conditional, or subject to modification.
-> Plaintiff’s response also alternates between asserting that I did not appear and suggesting that I may have arrived after 11:00 a.m., which is inconsistent with my actual presence within the stated window.
-> The assertion of a hard 11:00 a.m. cutoff is arbitrary. Plaintiff’s own response states that cleanup and Plaintiff representative presence continued for hours beyond that time, and that large item loading occurred after 11:00 a.m., without ever communicating to me that access or retrieval remained possible after the stated cutoff.
-> Plaintiff has previously treated security as a material reason for limiting access; however, Plaintiff’s own response identifies continued FCFCU presence for hours without explaining why a short, coordinated, supervised retrieval could not have been provided during that same timeframe.
-> Observations Regarding Property and Removal
-> I did not observe large items of furniture staged in a manner that would have made them available for retrieval during the window.
-> Items described as being moved after 11:00 a.m. were not visible or accessible to me during the stated retrieval period.
-> As a result, I did not have a meaningful opportunity to identify or retrieve those items.
-> Clarification of Understanding
-> My actions and decisions were based solely on the explicitly communicated retrieval window of 9:00 a.m. to 11:00 a.m.
-> Plaintiff’s current characterization relies on assumptions regarding access, coordination, and opportunity that were not communicated to me at the time of the event.
-> The conditions present did not provide a structured or meaningful opportunity to retrieve property within the stated window.
-> This declaration is submitted to ensure that the record accurately reflects: the scope of what was actually communicated; the conditions that were actually present onsite; and the absence of any structured, extended, or coordinated retrieval process.
-> The record should reflect actual conditions as they occurred, rather than assumptions or interpretations formed after the fact.
-> I declare under penalty of perjury that the foregoing is true and correct.
-> Date: _________________________
-> Signature: ______________________________
+> no lets work on the surgical strike responding to their response they sent about the time i had to get my stuff. STATE OF INDIANA
+
+> 
+
+> COUNTY OF MARION
+
+> )                           THE MARION SUPERIOR COURT 3
+
+> )   SS: 
+
+> )                            CAUSE NO: 49D03-2501-MF-002559
+
+> 
+
+> 
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Plaintiff
+
+> v.
+
+> 
+
+> CODY RICE-VELASQUEZ
+
+> Defendant
+
+> )
+
+> )
+
+> )
+
+> )
+
+> )
+
+> )
+
+> 
+
+> DEFENDANT’S STATEMENT FOR RECORD CLARIFICATION (Record Integrity Declaration)
+
+> STATE OF INDIANA
+
+> COUNTY OF MARION
+
+> IN THE MARION SUPERIOR COURT 3
+
+> CAUSE NO. 49D03-2501-MF-002559
+
+> 
+
+> FINANCIAL CENTER FIRST CREDIT UNION,
+
+> Plaintiff,
+
+> v.
+
+> CODY RICE-VELASQUEZ,
+
+> Defendant.
+
+> 
+
+> Defendant, Person, proceeding pro se, respectfully submits this Statement for Record Clarification. This submission is intended to address and correct material inconsistencies, omissions, and internal contradictions within Plaintiff’s representations. The objective of this filing is to ensure that the court’s record reflects a verifiable and coherent sequence of events, as the existing record, as presently constructed, fails to accurately characterize the conditions of notice, enforcement, and property handling.
+
+> I. PRE-LITIGATION RELATIONSHIP AND IDENTIFICATION
+
+> Defendant maintained an established financial relationship with Plaintiff prior to and during these proceedings.
+
+> Plaintiff possessed Defendant’s identifying information, detailed account records, and direct, established communication channels (including email).
+
+> Plaintiff issued Defendant a physical debit card shortly before his removal from the property, confirming their ongoing knowledge of his identity and location.
+
+> Defendant also interacted with Plaintiff in a professional capacity through his employer.
+
+> Accordingly, the narrative framing of Defendant as an "unknown party" or "unknown occupant" is contradicted by Plaintiff’s own institutional records.
+
+> II. ADA COMPLIANCE AND INTERACTIVE PROCESS FAILURES
+
+> In September 2023, Defendant formally notified Plaintiff of his disabilities—including ADHD, anxiety, and executive dysfunction—and requested specific communication accommodations.
+
+> Plaintiff did not engage in the federally required ADA interactive process.
+
+> Plaintiff ignored requests for written/email communication, instead engaging in a pattern of repetitive, high-frequency phone contact (often multiple times per day).
+
+> Plaintiff provided materially inconsistent financial figures to Defendant; one representation demanded over $27,000 for reinstatement, whereas subsequent internal records suggested a cure amount closer to $4,400.
+
+> These failures directly impeded Defendant’s ability to act upon reliable information or participate meaningfully in the process.
+
+> III. THE FICTION OF THE "MAY 2025" TIMELINE
+
+> Plaintiff asserts that Defendant "had time since May" to respond. This relies on a procedural fiction rather than functional awareness.
+
+> While a default judgment was entered on May 28, 2025, Plaintiff did not record the Sheriff’s Deed until December 2, 2025.
+
+> Defendant was forcibly removed on December 9, 2025.
+
+> The "actionable window" between the recording of the deed and physical dispossession was approximately seven days, not six months.
+
+> Furthermore, Plaintiff did not transfer utility accounts into its name until after the January 9, 2026 hearing, yet argued to the court that it was already bearing those costs.
+
+> IV. EXECUTION IRREGULARITIES AND PROPERTY DISPOSAL
+
+> During the December 9, 2025 removal, recorded audio and video reflect that participants (including security personnel) lacked verified knowledge of the procedural facts, relying instead on Plaintiff’s assumptions.
+
+> A private, non-law-enforcement individual appeared to exercise operational control over the removal.
+
+> Plaintiff’s representative stated on the record on January 9, 2026, that property in the home was "untouched."
+
+> However, observed events and recorded evidence show a dump truck being utilized for active disposal, moving property off-site in a manner that rendered notice and retrieval functionally impossible.
+
+> Plaintiff’s representatives unplugged security cameras and appliances, leading to the spoilage of food and the growth of mold.
+
+> By neglecting to stabilize the property’s utilities in sub-freezing weather until after the January 9 hearing, Plaintiff allowed for foreseeable property damage, including burst pipes.
+
+> V. FINANCIAL AND PROCEDURAL INSTABILITY
+
+> Plaintiff’s financial representations have been systemically unstable:
+
+> Plaintiff initially filed a "Report of No Excess Proceeds" on December 17, 2025.
+
+> Plaintiff later acknowledged a surplus of $8,378.42 on February 20, 2026.
+
+> Plaintiff attempted to retroactively reduce its bid via a nunc pro tunc petition on February 24, 2026, which the Court denied.
+
+> Plaintiff has still not complied with the Court's order to deposit the acknowledged surplus funds.
+
+> At the January 9, 2026 hearing, Plaintiff’s counsel was disorganized, clarifying material facts with the client in real-time and missing basic procedural filings such as a formal appearance.
+
+> VI. ONGOING CREDIT REPORTING ERRORS
+
+> Despite the judgment being recorded as "Satisfied" on September 9, 2025, Plaintiff has continued to furnish inaccurate delinquency data to credit bureaus.
+
+> These inaccuracies persist as of the date of this filing, obstructing Defendant’s ability to secure stable housing and recover from the displacement.
+
+> VII. CONCLUSION
+
+> This matter is not characterized by a single misunderstanding, but by a systemic breakdown in record integrity and procedural fairness. The pattern of Plaintiff's conduct involves actions preceding documentation, after-the-fact corrections, and contradictory positions regarding service and occupancy.
+
+> 
+
+> The assertion that Defendant "had time since May" is fundamentally misleading when measured against the lack of notice, the absence of ADA accommodation, and the reality of a seven-day enforcement window. Either Plaintiff’s representations are being made without regard for their accuracy, or Plaintiff’s internal record-keeping is so deficient that its statements cannot be relied upon by this Court. In either case, independent verification of Plaintiff's claims is required to ensure a just outcome.
+
+> 
+
+> I declare under penalty of perjury that the foregoing is true and correct.
+
+> 
+
+> DATED: Date
+
+> 
+
+> SIGNED: Person
+
+> Cody Rice-Velasquez
+
+> Defendant, Pro Se
+
+> 
+
+> VERIFIED DECLARATION OF DEFENDANT IN SUPPORT OF RECORD CLARIFICATION REGARDING MARCH 25, 2026 PROPERTY RETRIEVAL
+
+> I, Cody Rice-Velasquez, declare under penalty of perjury as follows:
+
+> Identity and Purpose
+
+> I am the Defendant in this matter and have personal knowledge of the facts set forth herein.
+
+> This declaration is submitted for the limited purpose of clarifying factual implications arising from Plaintiff’s March 26, 2026 response concerning the March 25, 2026 property retrieval.
+
+> Communicated Retrieval Window
+
+> I was informed that I would be permitted to retrieve my personal belongings on March 25, 2026, between 9:00 a.m. and 11:00 a.m.
+
+> No written or verbal communication indicated that access would extend beyond that stated time period.
+
+> I was not advised, either expressly or implicitly, that retrieval would remain available after 11:00 a.m. under any circumstances.
+
+> This defined the full scope of my understanding of the time and conditions under which retrieval was permitted.
+
+> Conditions Observed Onsite
+
+> I arrived at the property prior to 11:00 a.m., within the communicated retrieval window.
+
+> Upon arrival, multiple individuals were present at the property.
+
+> No individual identified themselves as a coordinator, supervisor, or designated point of contact for retrieval.
+
+> I was not provided with any inventory, listing, or accounting of my belongings.
+
+> I received no instruction or guidance regarding: what property remained within the residence; what items were in the process of being removed; or how retrieval was to be conducted in a structured or orderly manner.
+
+> Property was actively being moved and loaded without any coordinated pause, inspection opportunity, or mechanism for verification.
+
+> The positioning of the truck and ongoing loading activity limited visibility into what property remained available for retrieval.
+
+> This limitation directly affected my ability to identify and retrieve items within the stated window.
+
+> Absence of Structured Retrieval Process
+
+> At no time was a structured or organized retrieval process established or communicated.
+
+> I was not provided with a walkthrough, staging or sorting guidance, or identification of any individual responsible for coordinating access or retrieval.
+
+> I had no reasonable basis to assume that any person present was authorized to provide such coordination.
+
+> Plaintiff’s representative remained in a vehicle and did not present herself as an active coordinator or provide instruction.
+
+> I attempted to communicate through the channel previously directed by Plaintiff’s counsel.
+
+> I did not receive any response that clarified procedure, access, or coordination during the stated retrieval window.
+
+> Given my cognitive disability, the lack of clear instructions, and the active disposal, I was not able to safely process the scene or improvise contact with unidentified persons or a representative in a closed vehicle, consistent with the need for accommodation previously put before the Court.
+
+> Timeline and Representation Inconsistencies
+
+> These statements, taken together, are internally inconsistent and do not reflect the conditions as observed.
+
+> Plaintiff’s March 26, 2026 response states that: the retrieval window concluded at 11:00 a.m.; an FCFCU representative remained onsite until approximately 1:00 p.m. and returned again later; and property removal activities continued after 11:00 a.m.
+
+> These statements indicate that the property remained actively accessible and subject to ongoing handling after the stated cutoff time.
+
+> I was not informed that continued onsite presence or post-11:00 a.m. activity constituted an extension of my ability to retrieve my belongings.
+
+> No communication indicated that the 11:00 a.m. cutoff was flexible, conditional, or subject to modification.
+
+> Plaintiff’s response also alternates between asserting that I did not appear and suggesting that I may have arrived after 11:00 a.m., which is inconsistent with my actual presence within the stated window.
+
+> The assertion of a hard 11:00 a.m. cutoff is arbitrary. Plaintiff’s own response states that cleanup and Plaintiff representative presence continued for hours beyond that time, and that large item loading occurred after 11:00 a.m., without ever communicating to me that access or retrieval remained possible after the stated cutoff.
+
+> Plaintiff has previously treated security as a material reason for limiting access; however, Plaintiff’s own response identifies continued FCFCU presence for hours without explaining why a short, coordinated, supervised retrieval could not have been provided during that same timeframe.
+
+> Observations Regarding Property and Removal
+
+> I did not observe large items of furniture staged in a manner that would have made them available for retrieval during the window.
+
+> Items described as being moved after 11:00 a.m. were not visible or accessible to me during the stated retrieval period.
+
+> As a result, I did not have a meaningful opportunity to identify or retrieve those items.
+
+> Clarification of Understanding
+
+> My actions and decisions were based solely on the explicitly communicated retrieval window of 9:00 a.m. to 11:00 a.m.
+
+> Plaintiff’s current characterization relies on assumptions regarding access, coordination, and opportunity that were not communicated to me at the time of the event.
+
+> The conditions present did not provide a structured or meaningful opportunity to retrieve property within the stated window.
+
+> This declaration is submitted to ensure that the record accurately reflects: the scope of what was actually communicated; the conditions that were actually present onsite; and the absence of any structured, extended, or coordinated retrieval process.
+
+> The record should reflect actual conditions as they occurred, rather than assumptions or interpretations formed after the fact.
+
+> I declare under penalty of perjury that the foregoing is true and correct.
+
+> Date: _________________________
+
+> Signature: ______________________________
+
 > Cody Rice-Velasquez
 
 ### Assistant
@@ -4346,73 +5186,140 @@ canonical_ref: ""
 > Next move is to paste me whatever they file or send.
 
 ### User
-> nothing yet, for now lets review some documents i have, you want to give this an update. Legal Representation Strategy and Attorney Resource Directory
-> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
-> Cause No: 49D03-2501-MF-002559
-> Subject Property: 4817 Shadow Pointe Drive, Indianapolis, IN 46254
-> Executive Strategy Overview
-> The objective of this directory and strategy guide is to secure legal representation for a multi-front litigation effort. This case is not a standard foreclosure; it is a hybrid matter involving threshold service defects, ADA accommodation failures, and post-sale consumer rights violations. Strategic priority is given to firms with a history of litigating against Financial Center First Credit Union (FCFCU) or those specializing in civil rights and consumer protection.
-> Tiered Attorney Directory
-> Priority / Lane
-> Firm / Organization
-> Contact Information
-> Strategic Alignment
->  Tier 1: Consumer Specialist
-> Indiana Consumer Law Group (Robert E. Duff)
-> 800-817-0461 (Fishers/Statewide)
-> Strongest lead; has publicly sued FCFCU and Michael Farrer previously.
->  Tier 1: Disability Rights
-> Indiana Disability Rights (IDR)
-> 317-722-5555 / 800-622-4845
-> Primary support for ADA/accommodation angle and housing discrimination framing.
->  Tier 2: Civil Rights
-> John H. Haskin & Associates
-> 317-426-6995 (Indianapolis)
-> Expertise in constitutional law and disability rights/civil rights violations.
->  Tier 2: Civil Rights
-> Benkie & Crawford
-> 317-632-4448 (Indianapolis)
-> Private civil rights litigation focusing on constitutional injury.
->  Tier 3: Appellate
-> Hume Smith Geddes Green & Simmons
-> 317-632-4402 (Indianapolis)
-> State and federal appellate specialists for judgment vacatur/post-judgment appeals.
->  Tier 3: Appellate
-> Cohen & Malad LLP
-> 317-636-6481 (Indianapolis)
-> Complex civil litigation and constitutional appellate work.
-> 
-> Targeted Intake Pitch: Robert E. Duff / Indiana Consumer Law Group
-> Use the following field-specific information for the "Contact Us" form to maximize the probability of a formal review.
-> 
-> Nature of Legal Matter
-> Consumer protection / foreclosure servicing / credit reporting / disability accommodation.
-> 
-> Name of Adverse Parties
-> Financial Center First Credit Union; Michael E. Farrer / Graham, Farrer & Wilson; Felix O’Neill Rippy / Welch & Company; Marion County Sheriff’s Office; Marion Superior Court 3.
-> 
-> Describe Your Legal Issue
-> I am seeking counsel regarding a foreclosure-related consumer rights matter involving Financial Center First Credit Union (FCFCU). My case includes evidence of pre-foreclosure disability/hardship notice provided to FCFCU via certified mail, disputed service/jurisdiction in the foreclosure action (Cause No. 49D03-2501-MF-002559), and substantial post-sale accounting inconsistencies. Additionally, there is continued adverse credit reporting following satisfaction of the judgment and a writ removal (December 9, 2025) carried out without meaningful advance notice or accommodation. I am aware your firm has previously litigated against FCFCU and counsel Michael E. Farrer. I am seeking a review of potential consumer-law, FCRA, and debt-servicing claims.
-> Intake Protocols and Screening
-> Communication Do’s and Don’ts
-> Do: Provide a concise chronology and organize files by issue bucket (Service, ADA, Accounting, Credit).
-> Do: Emphasize that FCFCU had documented knowledge of disabilities prior to foreclosure escalation.
-> Don't: Include internal valuation estimates or confidential documents in unencrypted web forms.
-> Don't: Lead with "general rights violations"; focus on specific statutory triggers (FCRA, ADA, Trial Rule 4.1).
-> The Three-Question Screen
-> When speaking with an intake specialist or attorney, ask:
-> 
-> Do you handle cases involving the intersection of foreclosure and consumer credit/FCRA servicing issues?.
-> Are you willing to review service/jurisdiction defects and post-judgment conduct rather than simple loan modification?.
-> If you cannot handle the full matter, are you able to represent me on a limited-scope basis or provide a specific referral for ADA/Civil Rights litigation?.
-> Case-Specific Leverage Points for Counsel
-> Threshold Defect: Improper "Left and Mailed" service while knowing the defendant had a hearing impairment.
-> Accounting Instability: FCFCU's "scrivener's error" admission and attempt to retroactively reduce a credit bid by nearly $10,000.
-> Notice Failure: The writ of assistance was executed on December 9, 2025, without meaningful advance notice or time to gather belongings.
-> 
-> 
-> 
-> Submitted by: Person
+> nothing yet, for now lets review some documents i have, you want to give this an update. Legal Representation Strategy and Attorney Resource Directory
+
+> Matter: Financial Center First Credit Union v. Cody Rice-Velasquez
+
+> Cause No: 49D03-2501-MF-002559
+
+> Subject Property: 4817 Shadow Pointe Drive, Indianapolis, IN 46254
+
+> Executive Strategy Overview
+
+> The objective of this directory and strategy guide is to secure legal representation for a multi-front litigation effort. This case is not a standard foreclosure; it is a hybrid matter involving threshold service defects, ADA accommodation failures, and post-sale consumer rights violations. Strategic priority is given to firms with a history of litigating against Financial Center First Credit Union (FCFCU) or those specializing in civil rights and consumer protection.
+
+> Tiered Attorney Directory
+
+> Priority / Lane
+
+> Firm / Organization
+
+> Contact Information
+
+> Strategic Alignment
+
+>  Tier 1: Consumer Specialist
+
+> Indiana Consumer Law Group (Robert E. Duff)
+
+> 800-817-0461 (Fishers/Statewide)
+
+> Strongest lead; has publicly sued FCFCU and Michael Farrer previously.
+
+>  Tier 1: Disability Rights
+
+> Indiana Disability Rights (IDR)
+
+> 317-722-5555 / 800-622-4845
+
+> Primary support for ADA/accommodation angle and housing discrimination framing.
+
+>  Tier 2: Civil Rights
+
+> John H. Haskin & Associates
+
+> 317-426-6995 (Indianapolis)
+
+> Expertise in constitutional law and disability rights/civil rights violations.
+
+>  Tier 2: Civil Rights
+
+> Benkie & Crawford
+
+> 317-632-4448 (Indianapolis)
+
+> Private civil rights litigation focusing on constitutional injury.
+
+>  Tier 3: Appellate
+
+> Hume Smith Geddes Green & Simmons
+
+> 317-632-4402 (Indianapolis)
+
+> State and federal appellate specialists for judgment vacatur/post-judgment appeals.
+
+>  Tier 3: Appellate
+
+> Cohen & Malad LLP
+
+> 317-636-6481 (Indianapolis)
+
+> Complex civil litigation and constitutional appellate work.
+
+> 
+
+> Targeted Intake Pitch: Robert E. Duff / Indiana Consumer Law Group
+
+> Use the following field-specific information for the "Contact Us" form to maximize the probability of a formal review.
+
+> 
+
+> Nature of Legal Matter
+
+> Consumer protection / foreclosure servicing / credit reporting / disability accommodation.
+
+> 
+
+> Name of Adverse Parties
+
+> Financial Center First Credit Union; Michael E. Farrer / Graham, Farrer & Wilson; Felix O’Neill Rippy / Welch & Company; Marion County Sheriff’s Office; Marion Superior Court 3.
+
+> 
+
+> Describe Your Legal Issue
+
+> I am seeking counsel regarding a foreclosure-related consumer rights matter involving Financial Center First Credit Union (FCFCU). My case includes evidence of pre-foreclosure disability/hardship notice provided to FCFCU via certified mail, disputed service/jurisdiction in the foreclosure action (Cause No. 49D03-2501-MF-002559), and substantial post-sale accounting inconsistencies. Additionally, there is continued adverse credit reporting following satisfaction of the judgment and a writ removal (December 9, 2025) carried out without meaningful advance notice or accommodation. I am aware your firm has previously litigated against FCFCU and counsel Michael E. Farrer. I am seeking a review of potential consumer-law, FCRA, and debt-servicing claims.
+
+> Intake Protocols and Screening
+
+> Communication Do’s and Don’ts
+
+> Do: Provide a concise chronology and organize files by issue bucket (Service, ADA, Accounting, Credit).
+
+> Do: Emphasize that FCFCU had documented knowledge of disabilities prior to foreclosure escalation.
+
+> Don't: Include internal valuation estimates or confidential documents in unencrypted web forms.
+
+> Don't: Lead with "general rights violations"; focus on specific statutory triggers (FCRA, ADA, Trial Rule 4.1).
+
+> The Three-Question Screen
+
+> When speaking with an intake specialist or attorney, ask:
+
+> 
+
+> Do you handle cases involving the intersection of foreclosure and consumer credit/FCRA servicing issues?.
+
+> Are you willing to review service/jurisdiction defects and post-judgment conduct rather than simple loan modification?.
+
+> If you cannot handle the full matter, are you able to represent me on a limited-scope basis or provide a specific referral for ADA/Civil Rights litigation?.
+
+> Case-Specific Leverage Points for Counsel
+
+> Threshold Defect: Improper "Left and Mailed" service while knowing the defendant had a hearing impairment.
+
+> Accounting Instability: FCFCU's "scrivener's error" admission and attempt to retroactively reduce a credit bid by nearly $10,000.
+
+> Notice Failure: The writ of assistance was executed on December 9, 2025, without meaningful advance notice or time to gather belongings.
+
+> 
+
+> 
+
+> 
+
+> Submitted by: Person
+
 > Date: Date
 
 ### Assistant

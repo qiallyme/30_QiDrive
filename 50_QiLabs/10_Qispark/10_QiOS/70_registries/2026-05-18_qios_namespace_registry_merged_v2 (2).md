@@ -23,10 +23,10 @@ scope:
   - manifests
   - automation routing
 layout: page
-slug: ""
+slug: qios-namespace-registry
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 tags: []
 keywords: []
@@ -35,7 +35,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 60fd38c64fa740ed8bc2ae2bd9b7f8d4
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 01 Qibits
-slug: ""
+slug: 01-qibits
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3c3c87d84a4548d7802f95b98002462c
 canonical_ref: ""
 source_type: manual
 template_key: master-template

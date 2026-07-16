@@ -3,9 +3,9 @@ layout: page
 title: "Antidote narrative style"
 slug: "antidote_narrative_style"
 created_at: "2025-12-06 16:52:44"
-updated_at: "2025-12-06 16:52:44"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

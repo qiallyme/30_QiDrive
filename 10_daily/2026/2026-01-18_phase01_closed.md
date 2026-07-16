@@ -3,9 +3,9 @@ layout: page
 title: "Phase01-CLOSED"
 slug: "phase01_closed"
 created_at: "2026-01-18 10:59:08"
-updated_at: "2026-01-18 10:59:08"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -511,293 +511,580 @@ canonical_ref: ""
 > Say which one.
 
 ### User
-> those are not the phases, here you got. ```markdown
-> . 📂 D_PHASES
-> └── 📂 00_working/
-> │  └── 📂 00_inbox_working/
-> │    ├── 📄 _00_inbox_working.md
-> │    ├── 📄 index.html
-> │  └── 📂 00_personal_narrative/
-> │    └── 📂 10_Public_Narrative/
-> │      ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
-> │      ├── 📄 _10_Public_Narrative.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_Internal_Analysis/
-> │      └── 📂 Premonitions/
-> │        ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
-> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │        ├── 📄 _Premonitions.md
-> │        ├── 📄 _README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_Internal_Analysis.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_Donations_and_Support/
-> │      └── 📂 Donation_Page_HTML/
-> │        ├── 📄 _Donation_Page_HTML.md
-> │        ├── 📄 index.html
-> │      ├── 📄 NT_Donations_Context.md
-> │      └── 📂 Screenshots_Live_Page/
-> │        ├── 📄 _Screenshots_Live_Page.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_Donations_and_Support.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _00_personal_narrative.md
-> │    ├── 📄 _personal_narrative.md
-> │    ├── 📄 index.html
-> │  └── 📂 80_damages_and_fallout/
-> │    └── 📂 10_property_possession_harms/
-> │      ├── 📄 _10_property_possession_harms.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_economic_harm/
-> │      ├── 📄 _20_economic_harm.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_financial/
-> │      ├── 📄 _30_financial.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_health_and_safety/
-> │      └── 📂 20_companion_animal_risk/
-> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │        ├── 📄 _20_companion_animal_risk.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_health_and_safety.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_non_economic_harm/
-> │      ├── 📄 PL_Cold_Risk_Report.md
-> │      ├── 📄 _50_non_economic_harm.md
-> │      └── 📂 cold_exposure/
-> │        ├── 📄 PL__Cold_Risk_Report.md
-> │        ├── 📄 _cold_exposure.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 60_professional_harm/
-> │      ├── 📄 _60_professional_harm.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_remedies_scenarios/
-> │      ├── 📄 _70_remedies_scenarios.md
-> │      ├── 📄 index.html
-> │    └── 📂 80_payout_strategy/
-> │      ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │      ├── 📄 _80_payout_strategy.md
-> │      ├── 📄 index.html
-> │    └── 📂 90_third_party_harm/
-> │      ├── 📄 _90_third_party_harm.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _80_damages_and_fallout.md
-> │    ├── 📄 index.html
-> │  ├── 📄 App_Flow.canvas
-> │  ├── 📄 Phase_Logic_Matrix.canvas
-> │  ├── 📄 _00_working.md
-> │  ├── 📄 index.html
-> └── 📂 01_court_record/
-> │  └── 📂 10_pre_foreclosure/
-> │    └── 📂 10_account_history/
-> │      ├── 📄 _10_account_history.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_hardship_and_ada/
-> │      ├── 📄 _20_hardship_and_ada.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_communications/
-> │      ├── 📄 _30_communications.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_payments_and_disputes/
-> │      ├── 📄 _40_payments_and_disputes.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_pre_foreclosure.md
-> │    ├── 📄 _20_pre_foreclosure.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_foreclosure_filing/
-> │    └── 📂 10_complaint/
-> │      ├── 📄 _10_complaint.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_summons/
-> │      ├── 📄 _20_summons.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_lien_parties/
-> │      ├── 📄 _30_lien_parties.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_docket_snapshots/
-> │      ├── 📄 NT__Case_Summary.md
-> │      ├── 📄 _40_docket_snapshots.md
-> │      ├── 📄 _Case_Summary.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_foreclosure_filing.md
-> │    ├── 📄 _30_foreclosure_filing.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_service_and_notice/
-> │    └── 📂 10_sheriff_returns/
-> │      ├── 📄 _10_sheriff_returns.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_mailings/
-> │      ├── 📄 _20_mailings.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_affidavits_of_service/
-> │      └── 📂 10_jurisdiction_service_tr_4_1_b/
-> │        ├── 📄 _10_jurisdiction_service_tr_4_1_b.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_service_process/
-> │        ├── 📄 _20_service_process.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_affidavits_of_service.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_defects_and_contradictions/
-> │      ├── 📄 _40_defects_and_contradictions.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _30_service_and_notice.md
-> │    ├── 📄 _40_service_and_notice.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_default_and_judgment/
-> │    └── 📂 10_default_motion/
-> │      ├── 📄 _10_default_motion.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_default_order/
-> │      ├── 📄 _20_default_order.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_judgment_and_decree/
-> │      ├── 📄 _30_judgment_and_decree.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_accounting_inputs/
-> │      ├── 📄 _40_accounting_inputs.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _40_default_and_judgment.md
-> │    ├── 📄 _50_default_and_judgment.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_sale_and_title/
-> │    └── 📂 10_sheriff_sale/
-> │      ├── 📄 _10_sheriff_sale.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_deed/
-> │      ├── 📄 _20_deed.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_recording_gaps/
-> │      ├── 📄 _30_recording_gaps.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_possession_claims/
-> │      └── 📂 10_sale_and_possession/
-> │        ├── 📄 _10_sale_and_possession.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_void_vs_voidable/
-> │        ├── 📄 20_void_vs_voidable.md
-> │        ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
-> │        ├── 📄 NT_30_void_vs_voidable_tr_60b.md
-> │        ├── 📄 _30_void_vs_voidable.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_possession_claims.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _50_sale_and_title.md
-> │    ├── 📄 _60_sale_and_title.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_writ_and_execution/
-> │    └── 📂 10_writ_petition/
-> │      ├── 📄 _10_writ_petition.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_writ_order/
-> │      ├── 📄 _20_writ_order.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_execution_events/
-> │      ├── 📄 _30_execution_events.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_notice_failures/
-> │      ├── 📄 _40_notice_failures.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _60_writ_and_execution.md
-> │    ├── 📄 _70_writ_and_execution.md
-> │    ├── 📄 index.html
-> │  └── 📂 70_post_removal_conduct/
-> │    └── 📂 10_property_interference/
-> │      ├── 📄 _10_property_interference.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_access_denial/
-> │      ├── 📄 _20_access_denial.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_spoliation_risk/
-> │      ├── 📄 _30_spoliation_risk.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_third_party_actions/
-> │      ├── 📄 _40_third_party_actions.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _70_post_removal_conduct.md
-> │    ├── 📄 _80_post_removal_conduct.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _01_court_record.md
-> │  ├── 📄 index.html
-> └── 📂 02_credit_fcra/
-> │  └── 📂 10_credit_reports/
-> │    ├── 📄 _10_credit_reports.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_furnisher_disputes/
-> │    ├── 📄 _20_furnisher_disputes.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_bureau_disputes/
-> │    ├── 📄 _30_bureau_disputes.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_verified_responses/
-> │    ├── 📄 _40_verified_responses.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_damages/
-> │    ├── 📄 _50_damages.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _02_credit_fcra.md
-> │  ├── 📄 index.html
-> └── 📂 03_regulators/
-> │  └── 📂 10_CFPB/
-> │    ├── 📄 _10_CFPB.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_AG_Indiana/
-> │    ├── 📄 _20_AG_Indiana.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_NCUA/
-> │    ├── 📄 _30_NCUA.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_regulatory_complaints/
-> │    ├── 📄 _30_regulatory_complaints.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_DOJ_Civil_Rights/
-> │    ├── 📄 _40_DOJ_Civil_Rights.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_federal_preservation/
-> │    ├── 📄 _40_federal_preservation.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_ICRC/
-> │    ├── 📄 _50_ICRC.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _03_regulators.md
-> │  ├── 📄 index.html
-> └── 📂 04_litigation_settlement/
-> │  └── 📂 10_strategy_and_research/
-> │    ├── 📄 _10_strategy_and_research.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_demand_letters/
-> │    ├── 📄 _20_demand_letters.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_opposing_counsel/
-> │    ├── 📄 _30_opposing_counsel.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_draft_pleadings/
-> │    ├── 📄 _40_draft_pleadings.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _04_litigation_settlement.md
-> │  ├── 📄 index.html
-> └── 📂 05_nuclear/
-> │  └── 📂 10_press_kits/
-> │    ├── 📄 _10_press_kits.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_public_record_dumps/
-> │    ├── 📄 _20_public_record_dumps.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_legislative_outreach/
-> │    ├── 📄 _30_legislative_outreach.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_social_media/
-> │    ├── 📄 _40_social_media.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _05_nuclear.md
-> │  ├── 📄 index.html
-> └── 📂 06_reserved/
-> │  ├── 📄 _06_reserved.md
-> │  ├── 📄 index.html
-> ├── 📄 Strategic_Plan.canvas
-> ├── 📄 _D_PHASES.md
-> └── 📄 index.html
+> those are not the phases, here you got. ```markdown
+
+> . 📂 D_PHASES
+
+> └── 📂 00_working/
+
+> │  └── 📂 00_inbox_working/
+
+> │    ├── 📄 _00_inbox_working.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 00_personal_narrative/
+
+> │    └── 📂 10_Public_Narrative/
+
+> │      ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
+
+> │      ├── 📄 _10_Public_Narrative.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_Internal_Analysis/
+
+> │      └── 📂 Premonitions/
+
+> │        ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
+
+> │        ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │        ├── 📄 _Premonitions.md
+
+> │        ├── 📄 _README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_Internal_Analysis.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_Donations_and_Support/
+
+> │      └── 📂 Donation_Page_HTML/
+
+> │        ├── 📄 _Donation_Page_HTML.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 NT_Donations_Context.md
+
+> │      └── 📂 Screenshots_Live_Page/
+
+> │        ├── 📄 _Screenshots_Live_Page.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_Donations_and_Support.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _00_personal_narrative.md
+
+> │    ├── 📄 _personal_narrative.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 80_damages_and_fallout/
+
+> │    └── 📂 10_property_possession_harms/
+
+> │      ├── 📄 _10_property_possession_harms.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_economic_harm/
+
+> │      ├── 📄 _20_economic_harm.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_financial/
+
+> │      ├── 📄 _30_financial.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_health_and_safety/
+
+> │      └── 📂 20_companion_animal_risk/
+
+> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │        ├── 📄 _20_companion_animal_risk.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_health_and_safety.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_non_economic_harm/
+
+> │      ├── 📄 PL_Cold_Risk_Report.md
+
+> │      ├── 📄 _50_non_economic_harm.md
+
+> │      └── 📂 cold_exposure/
+
+> │        ├── 📄 PL__Cold_Risk_Report.md
+
+> │        ├── 📄 _cold_exposure.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_professional_harm/
+
+> │      ├── 📄 _60_professional_harm.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_remedies_scenarios/
+
+> │      ├── 📄 _70_remedies_scenarios.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 80_payout_strategy/
+
+> │      ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │      ├── 📄 _80_payout_strategy.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 90_third_party_harm/
+
+> │      ├── 📄 _90_third_party_harm.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _80_damages_and_fallout.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 App_Flow.canvas
+
+> │  ├── 📄 Phase_Logic_Matrix.canvas
+
+> │  ├── 📄 _00_working.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 01_court_record/
+
+> │  └── 📂 10_pre_foreclosure/
+
+> │    └── 📂 10_account_history/
+
+> │      ├── 📄 _10_account_history.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_hardship_and_ada/
+
+> │      ├── 📄 _20_hardship_and_ada.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_communications/
+
+> │      ├── 📄 _30_communications.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_payments_and_disputes/
+
+> │      ├── 📄 _40_payments_and_disputes.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_pre_foreclosure.md
+
+> │    ├── 📄 _20_pre_foreclosure.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_foreclosure_filing/
+
+> │    └── 📂 10_complaint/
+
+> │      ├── 📄 _10_complaint.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_summons/
+
+> │      ├── 📄 _20_summons.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_lien_parties/
+
+> │      ├── 📄 _30_lien_parties.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_docket_snapshots/
+
+> │      ├── 📄 NT__Case_Summary.md
+
+> │      ├── 📄 _40_docket_snapshots.md
+
+> │      ├── 📄 _Case_Summary.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_foreclosure_filing.md
+
+> │    ├── 📄 _30_foreclosure_filing.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_service_and_notice/
+
+> │    └── 📂 10_sheriff_returns/
+
+> │      ├── 📄 _10_sheriff_returns.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_mailings/
+
+> │      ├── 📄 _20_mailings.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_affidavits_of_service/
+
+> │      └── 📂 10_jurisdiction_service_tr_4_1_b/
+
+> │        ├── 📄 _10_jurisdiction_service_tr_4_1_b.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_service_process/
+
+> │        ├── 📄 _20_service_process.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_affidavits_of_service.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_defects_and_contradictions/
+
+> │      ├── 📄 _40_defects_and_contradictions.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _30_service_and_notice.md
+
+> │    ├── 📄 _40_service_and_notice.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_default_and_judgment/
+
+> │    └── 📂 10_default_motion/
+
+> │      ├── 📄 _10_default_motion.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_default_order/
+
+> │      ├── 📄 _20_default_order.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_judgment_and_decree/
+
+> │      ├── 📄 _30_judgment_and_decree.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_accounting_inputs/
+
+> │      ├── 📄 _40_accounting_inputs.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _40_default_and_judgment.md
+
+> │    ├── 📄 _50_default_and_judgment.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_sale_and_title/
+
+> │    └── 📂 10_sheriff_sale/
+
+> │      ├── 📄 _10_sheriff_sale.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_deed/
+
+> │      ├── 📄 _20_deed.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_recording_gaps/
+
+> │      ├── 📄 _30_recording_gaps.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_possession_claims/
+
+> │      └── 📂 10_sale_and_possession/
+
+> │        ├── 📄 _10_sale_and_possession.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_void_vs_voidable/
+
+> │        ├── 📄 20_void_vs_voidable.md
+
+> │        ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
+
+> │        ├── 📄 NT_30_void_vs_voidable_tr_60b.md
+
+> │        ├── 📄 _30_void_vs_voidable.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_possession_claims.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _50_sale_and_title.md
+
+> │    ├── 📄 _60_sale_and_title.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_writ_and_execution/
+
+> │    └── 📂 10_writ_petition/
+
+> │      ├── 📄 _10_writ_petition.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_writ_order/
+
+> │      ├── 📄 _20_writ_order.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_execution_events/
+
+> │      ├── 📄 _30_execution_events.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_notice_failures/
+
+> │      ├── 📄 _40_notice_failures.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _60_writ_and_execution.md
+
+> │    ├── 📄 _70_writ_and_execution.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 70_post_removal_conduct/
+
+> │    └── 📂 10_property_interference/
+
+> │      ├── 📄 _10_property_interference.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_access_denial/
+
+> │      ├── 📄 _20_access_denial.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_spoliation_risk/
+
+> │      ├── 📄 _30_spoliation_risk.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_third_party_actions/
+
+> │      ├── 📄 _40_third_party_actions.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _70_post_removal_conduct.md
+
+> │    ├── 📄 _80_post_removal_conduct.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _01_court_record.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 02_credit_fcra/
+
+> │  └── 📂 10_credit_reports/
+
+> │    ├── 📄 _10_credit_reports.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_furnisher_disputes/
+
+> │    ├── 📄 _20_furnisher_disputes.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_bureau_disputes/
+
+> │    ├── 📄 _30_bureau_disputes.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_verified_responses/
+
+> │    ├── 📄 _40_verified_responses.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_damages/
+
+> │    ├── 📄 _50_damages.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _02_credit_fcra.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 03_regulators/
+
+> │  └── 📂 10_CFPB/
+
+> │    ├── 📄 _10_CFPB.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_AG_Indiana/
+
+> │    ├── 📄 _20_AG_Indiana.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_NCUA/
+
+> │    ├── 📄 _30_NCUA.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_regulatory_complaints/
+
+> │    ├── 📄 _30_regulatory_complaints.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_DOJ_Civil_Rights/
+
+> │    ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_federal_preservation/
+
+> │    ├── 📄 _40_federal_preservation.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_ICRC/
+
+> │    ├── 📄 _50_ICRC.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _03_regulators.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 04_litigation_settlement/
+
+> │  └── 📂 10_strategy_and_research/
+
+> │    ├── 📄 _10_strategy_and_research.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_demand_letters/
+
+> │    ├── 📄 _20_demand_letters.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_opposing_counsel/
+
+> │    ├── 📄 _30_opposing_counsel.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_draft_pleadings/
+
+> │    ├── 📄 _40_draft_pleadings.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _04_litigation_settlement.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 05_nuclear/
+
+> │  └── 📂 10_press_kits/
+
+> │    ├── 📄 _10_press_kits.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_public_record_dumps/
+
+> │    ├── 📄 _20_public_record_dumps.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_legislative_outreach/
+
+> │    ├── 📄 _30_legislative_outreach.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_social_media/
+
+> │    ├── 📄 _40_social_media.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _05_nuclear.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 06_reserved/
+
+> │  ├── 📄 _06_reserved.md
+
+> │  ├── 📄 index.html
+
+> ├── 📄 Strategic_Plan.canvas
+
+> ├── 📄 _D_PHASES.md
+
+> └── 📄 index.html
+
 > ```
 
 ### Assistant
@@ -1804,271 +2091,536 @@ canonical_ref: ""
 > Say the word.
 
 ### User
-> review this agains tthe inventory and rerun it. ---
-> title: Violations Inventory Master
-> ---
-> 
-> # Violations Inventory Master
-> 
-> *Auto-generated view of `violations_inventory_master.csv`*
-> 
-> | violation_id | violation_date | violation_date_end | actor | actor_role | violation_category | violation_type | legal_authority | description | procedural_context | evidence_ids | harm_category | impact_summary | status | confidence_level | notes |
-> | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-> | V-FCFCU-2026-0001 | 2026-01-02 |  |  |  | Statutory | General |  | Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations |  |  |  |  | Alleged | Medium | LEGACY_ID:V-001 |
-> | V-FCFCU-2025-0001 |  |  | Experian |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | Experian reinvestigation failure / inadequate investigation (if occurs) |  |  |  | Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md |
-> | V-FCFCU-2025-0002 |  |  | Equifax |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | Equifax reinvestigation failure / inadequate investigation (if occurs) |  |  |  | Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md |
-> | V-FCFCU-2025-0003 |  |  | TransUnion |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | TransUnion reinvestigation failure / inadequate investigation (if occurs) |  |  |  | TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md |
-> | V-FCFCU-2025-0004 |  |  | FCFCU |  | Statutory | THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE | FCRA | Failure to correct inaccurate furnishings after notice (1681s-2(b)) |  |  |  | FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness. | Alleged | Medium | LEGACY_ID:V-005; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md |
-> | V-FCFCU-2025-0005 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Dual tradeline double-counting of same collateral/debt causing compounded credit harm |  |  |  | The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages. | Alleged | Medium | LEGACY_ID:V-006; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md |
-> | V-FCFCU-2025-0006 |  |  | FCFCU |  | Tort | THEORY_CREDIT_DEFAMATION | Tort | Credit defamation: false publication of delinquency after legal status changed |  |  |  | False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims. | Alleged | Medium | LEGACY_ID:V-007; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md |
-> | V-FCFCU-2025-0007 |  |  | FCFCU/Attorney |  | Statutory | THEORY_DEBT_STATUS_MISREPRESENTATION | FDCPA | FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved) |  |  |  | Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved. | Alleged | Medium | LEGACY_ID:V-008; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md |
-> | V-FCFCU-2025-0008 |  |  | FCFCU |  | Statutory | THEORY_FCRA_ACCURACY | FCRA | Failure to mark account 'foreclosure' / 'closed' accurately after sale |  |  |  | Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles. | Alleged | Medium | LEGACY_ID:V-009; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md |
-> | V-FCFCU-2025-0009 |  |  | FCFCU |  | Tort | THEORY_POST_SALE_COST_SHIFT | Tort | Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties |  |  |  | FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly. | Alleged | Medium | LEGACY_ID:V-010; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md |
-> | V-FCFCU-2025-0010 |  |  | FCFCU |  | Statutory | THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE | Due_Process | Removal occurred 6–7 days after deed recorded/assessor update (compressed window) |  |  |  | The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice. | Alleged | Medium | LEGACY_ID:V-011; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md |
-> | V-FCFCU-2025-0011 |  |  | Court/FCFCU |  | Procedural | THEORY_ACCOUNTING_IRREGULARITIES | Procedure/Accounting | Surplus funds declared resolved despite dispute on accuracy/fees |  |  |  | Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities. | Alleged | Medium | LEGACY_ID:V-012; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md |
-> | V-FCFCU-2025-0012 |  |  | FCFCU |  | Statutory | THEORY_ACCOUNTING_IRREGULARITIES | Accounting | Interest/fees arbitrarily inflated (dispute) impacting accounting and harm |  |  |  | Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages. | Alleged | Medium | LEGACY_ID:V-013; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md |
-> | V-FCFCU-2025-0013 |  |  | FCFCU |  | Tort | THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH | Tort | FCFCU testimony: winterize then leave until spring (arbitrary urgency for removal) |  |  |  | FCFCU testimony that the property should be winterized then left until spring may indicate arbitrary urgency used to justify removal. | Alleged | Medium | LEGACY_ID:V-014; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-038_fcfcu-testimony-winterize-then-leave.md |
-> | V-FCFCU-2025-0014 |  |  | FCFCU |  | Statutory | THEORY_GLOBAL_RESOLUTION | Litigation | Global demand letter: deletion + monetary settlement + account purges |  |  |  | Prepare a global demand seeking tradeline deletion, monetary settlement, and account purges as a resolution posture. | Alleged | Medium | LEGACY_ID:V-015; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-070_global-demand-letter.md |
-> | V-FCFCU-2025-0015 |  |  | FCFCU |  | Statutory | THEORY_PRESERVATION | Litigation | Litigation hold/preservation letter to FCFCU for credit reporting and internal records |  |  |  | Send and document a litigation hold/preservation request to FCFCU for credit reporting files and internal communications. | Alleged | Medium | LEGACY_ID:V-016; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-071_litigation-hold-preservation-letter.md |
-> | V-FCFCU-2025-0018 |  |  | FCFCU |  | Statutory | THEORY_DAMAGES_FINANCIAL | Damages | Damages: out-of-pocket costs from displacement and post-sale bills |  |  |  | Collect and document out-of-pocket costs following displacement and post-sale billing for damages mapping. | Alleged | Medium | LEGACY_ID:V-019; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-074_damages-out-of-pocket-costs.md |
-> | V-FCFCU-2025-0019 |  |  | FCFCU |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Public | Public accountability hold: prepare fact-checked summary and timeline (not published yet) |  |  |  | Prepare and fact-check an internal public summary and timeline for accountability; do not publish yet. | Alleged | Medium | LEGACY_ID:V-020; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-075_public-accountability-hold.md |
-> | V-FCFCU-2025-0020 |  |  | FCFCU / Sheriff personnel |  | Tort | THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH | Tort | Conversion / Negligence: Property damage and personal property loss after removal |  |  |  | Alleged property damage (burst pipes, spoiled food, unplugged appliances) and conversion of personal property following forcible removal. | Alleged | Medium | LEGACY_ID:V-021; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-080_conversion-negligence-post-removal-damage.md |
-> | V-FCFCU-2025-0022 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | FCFCU continues reporting first mortgage as active delinquent installment loan post-judgment/sale |  |  |  | FCFCU continues reporting the first mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness. | Alleged | Medium | LEGACY_ID:V-023; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md |
-> | V-FCFCU-2025-0023 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | FCFCU continues reporting second mortgage as active delinquent installment loan post-judgment/sale |  |  |  | FCFCU continues reporting the second mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness. | Alleged | Medium | LEGACY_ID:V-024; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md |
-> | V-FCFCU-2025-0024 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Monthly delinquencies reported after foreclosure judgment (no lawful monthly obligation) |  |  |  | Monthly delinquencies continue to be reported after a foreclosure judgment where no lawful monthly obligation exists, potentially inflating arrears and harming credit. | Alleged | Medium | LEGACY_ID:V-025; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md |
-> | V-FCFCU-2025-0025 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Past-due amount and payment schedule reported after judgment despite merger/extinguishment |  |  |  | A past-due amount and payment schedule are reported after judgment despite merger or extinguishment of the underlying obligation, suggesting inaccurate reporting. | Alleged | Medium | LEGACY_ID:V-026; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-004_past-due-amount-schedule-after-judgment.md |
-> | V-FCFCU-2025-0026 |  |  | FCFCU |  | Statutory | THEORY_CONTRADICTION_AND_MISREPRESENTATION | FCRA | Inconsistent reporting vs court position (ownership/possession vs ongoing borrower obligation) |  |  |  | FCFCU's reporting conflicts with positions taken in court about ownership or possession, creating a contradiction useful for disputes and complaints. | Alleged | Medium | LEGACY_ID:V-027; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-007_inconsistent-reporting-vs-court-position.md |
-> | V-FCFCU-2025-0027 |  |  | FCFCU/Sheriff |  | Statutory | THEORY_LACK_OF_NOTICE_AND_JURISDICTION | Due_Process | Service allegedly completed but Defendant received no notice before writ executed |  |  |  | Allegations that service was completed but no actual notice reached the Defendant before writ execution can undermine jurisdiction and due process. | Alleged | Medium | LEGACY_ID:V-028; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-030_service-completed-no-notice-before-writ.md |
-> | V-FCFCU-2025-0028 |  |  | Various housing providers |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Fair Housing Act | Fair Housing Act: Reasonable accommodation failure (group homes / emotional support animals) |  |  |  | Alleged and documented failures to provide reasonable accommodations (including denial of group homes or emotional support animals) under the Fair Housing Act. | Alleged | Medium | LEGACY_ID:V-029; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-076_fha-reasonable-accommodation-failure.md |
-> | V-FCFCU-2025-0029 |  |  | Various public accommodation operators |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | ADA Title III: Entertainment / public accommodation accessibility failures (closed captioning, audio description) |  |  |  | Instances where public accommodations failed to provide required accessibility features (e.g., closed captioning, audio description), impacting disabled patrons. | Alleged | Medium | LEGACY_ID:V-030; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-077_ada-title-iii-entertainment-access-failure.md |
-> | V-FCFCU-2025-0030 |  |  | Various institutions |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | ADA: Effective communication failures (failure to train staff / provide interpreters) |  |  |  | Failures to provide effective communication (e.g., sign language interpreters, auxiliary aids) and to train staff, harming people with communication disabilities. | Alleged | Medium | LEGACY_ID:V-031; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-078_ada-effective-communication-failure.md |
-> | V-FCFCU-2025-0031 |  |  | Major servicers / asset managers |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Fair Housing Act | Discriminatory maintenance / redlining of REO properties |  |  |  | Allegations that servicers and asset managers systematically under-maintained REO properties in majority-Black and Latino neighborhoods compared to white neighborhoods, amounting to discriminatory practices. | Alleged | Medium | LEGACY_ID:V-032; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-083_discriminatory-maintenance-redlining.md |
-> | V-FCFCU-2025-0032 |  |  | Harbour Portfolio VII, CWAM II, Harbour Portfolio VI |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Consumer Protection / FHA | Predatory land contract / reverse redlining in rent-to-own schemes |  |  |  | Claims that certain sellers marketed predatory land contracts primarily in minority neighborhoods with inflated prices and onerous terms, amounting to discriminatory lending and consumer harm. | Alleged | Medium | LEGACY_ID:V-033; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-084_predatory-land-contract-reverse-redlining.md |
-> | V-FCFCU-2025-0033 |  |  | Sheriff |  | Statutory | THEORY_FALSE_RETURN_OR_DEFECTIVE_SERVICE | Due_Process | Sheriff return inaccuracies (claimed posting/mailing not done) - factual dispute |  |  |  | Sheriff return records claim posting/mailing that may not have occurred, creating a factual dispute over proper service. | Alleged | Medium | LEGACY_ID:V-034; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-031_sheriff-return-inaccuracies.md |
-> | V-FCFCU-2025-0034 |  |  | Court |  | Statutory | THEORY_INADEQUATE_FACTFINDING | Due_Process | Court relied on service sufficiency without addressing conflicting facts |  |  |  | The court accepted service sufficiency without reconciling conflicting facts, raising issues about the adequacy of factfinding. | Alleged | Medium | LEGACY_ID:V-035; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-035_court-relied-on-service-sufficiency.md |
-> | V-FCFCU-2025-0035 |  |  | FCFCU |  | Procedural | THEORY_INADEQUATE_FACTFINDING | Procedure | Fraud on the court / material misrepresentation in writ petition |  |  |  | Allegations that a writ petition contained false or materially misleading statements (e.g., "Unknown Occupants"), resulting in issuance without proper notice. | Alleged | Medium | LEGACY_ID:V-036; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-082_fraud-on-the-court-material-misrepresentation.md |
-> | V-FCFCU-2025-0036 |  |  | Marion Superior Court / FCFCU |  | Procedural | THEORY_LACK_OF_NOTICE_AND_JURISDICTION | Procedure | Procedural error: Void judgment due to defective service / lack of jurisdiction |  |  |  | Judgment appears void because service of process did not comply with Indiana Trial Rule 4.1(B), depriving the court of personal jurisdiction. | Alleged | Medium | LEGACY_ID:V-037; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\OR_V-079_void-judgment-procedural-error.md |
-> | V-FCFCU-2025-0037 |  |  | Court/FCFCU |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | No ADA-compliant notice/accommodation despite disability communication needs |  |  |  | The court or FCFCU failed to provide ADA-compliant notice or accommodations, disadvantaging parties with disabilities. | Alleged | Medium | LEGACY_ID:V-038; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-032_no-ada-compliant-notice.md |
-> | V-FCFCU-2025-0038 |  |  | Plaintiff counsel |  | Procedural | THEORY_PROCEDURAL_IRREGULARITY | Procedure | Attorney appeared without formal appearance filed at hearing |  |  |  | An attorney appeared at a hearing without a formal appearance on file, which may be a procedural irregularity. | Alleged | Medium | LEGACY_ID:V-039; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-034_attorney-appeared-without-formal-appearance.md |
-> | V-FCFCU-2025-0039 |  |  | CFPB |  | Statutory | THEORY_REGULATORY_PRESSURE | Regulatory | CFPB complaint track for credit misreporting + cost shift |  |  |  | Prepare and submit a CFPB complaint documenting credit misreporting and cost-shifting harms. | Alleged | Medium | LEGACY_ID:V-040; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-050_cfpb-complaint-track.md |
-> | V-FCFCU-2025-0040 |  |  | Indiana AG |  | Statutory | THEORY_REGULATORY_PRESSURE | Regulatory | Indiana AG complaint track (pattern/practice, consumer harm) |  |  |  | Consider filing an Indiana AG complaint to highlight pattern or practice and consumer harm. | Alleged | Medium | LEGACY_ID:V-041; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-051_indiana-ag-complaint-track.md |
-> | V-FCFCU-2025-0045 |  |  | Citizens Energy |  | Statutory | THEORY_POST_SALE_COST_SHIFT | Utility | Post-08/15 Citizens Energy charges billed to Defendant despite FCFCU ownership/possession |  |  |  | Citizens Energy billed charges to the Defendant after FCFCU owned/possessed the property, indicating potential improper billing. | Alleged | Medium | LEGACY_ID:V-046; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-021_post-0815-citizens-energy-charges-billed.md |
-> | V-FCFCU-2025-0046 |  |  | Shadow Pointe HOA |  | Tort | THEORY_POST_SALE_COST_SHIFT | Tort | Post-08/15 HOA assessments/fines billed to Defendant despite FCFCU ownership/possession |  |  |  | HOA assessments or fines were billed to the Defendant after FCFCU had ownership or possession, indicating improper ledger entries. | Alleged | Medium | LEGACY_ID:V-047; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-022_post-0815-hoa-assessments-billed.md |
-> | V-FCFCU-2025-0047 |  |  | City of Indianapolis |  | Statutory | THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL | Municipal | City grass-cut ticket assessed against Defendant after loss of access/authority |  |  |  | A city grass-cut ticket was assessed after the Defendant lost access/authority, suggesting wrongful enforcement. | Alleged | Medium | LEGACY_ID:V-048; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md |
-> | V-FCFCU-2025-0048 |  |  | City of Indianapolis |  | Statutory | THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL | Municipal | Municipal code enforcement actions after possession transfer (if any) |  |  |  | Municipal code enforcement actions occurred after possession transferred, potentially misplaced responsibility. | Alleged | Medium | LEGACY_ID:V-049; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-024_municipal-code-enforcement-after-possession-transfer.md |
-> | V-FCFCU-2025-0049 |  |  | Multiple |  | Statutory | THEORY_COMPOUNDING_HARM | Consumer_Protection | Credit reporting harm compounded by utility/municipal delinquency risk (collections) |  |  |  | Utility and municipal delinquencies compound credit reporting harm when collections reflect on consumer reports. | Alleged | Medium | LEGACY_ID:V-050; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-026_credit-harm-compounded-utility-municipal.md |
-> | V-FCFCU-0000-0001 | Not in source |  | Overlook Mutual Homes, Inc. |  | Statutory | Fair Housing Act breach (reasonable accommodation failure) | Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq. | emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009). |  | E-FCFCU-EXH-0000-0001 |  | Legal dispute over the exclusion of emotional support animals from housing. | Alleged | Medium | LEGACY_ID:V-051 |
-> | V-FCFCU-1985-0001 | 1985 |  | Public accommodations/Federal agencies |  | Procedural | Procedural | Section 504 of the Rehabilitation Act; ADA  36.204 | These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design. |  | E-FCFCU-EXH-1985-0001 |  | Failure to rectify harms from actions that discriminate by effect/design. | Alleged | Medium | LEGACY_ID:V-052 |
-> | V-FCFCU-2020-0001 | August 10, 2020 |  | Moline Builders, Inc. |  | Statutory | Fair Housing Act breach (Accessibility Requirements) | 42 U.S.C. § 3604(f)(3)(C) | the court agreed, finding that the failure to provide “unimpeded access” to the front door to persons who use wheelchairs... is “precisely the discrimination the FHAA forbids.” |  | E-FCFCU-EXH-2020-0001 |  | Failure to provide wheelchair-accessible front door and walkway to covered units. | Alleged | Medium | LEGACY_ID:V-058 |
-> | V-FCFCU-2000-0001 | November 9, 2000 |  | City of Dallas |  | Statutory | Fair Housing Act breach (Reasonable Accommodation Denial) | 42 U.S.C. § 3604(f)(3)(B) | The United States argued that the City violated the Fair Housing Act by improperly denying a reasonable accommodation when it refused to grant the plaintiff a variance to the City's 1000 foot spacing requirement |  | E-FCFCU-EXH-2000-0001 |  | Refusal to grant spacing and occupancy variances for group homes for persons with disabilities. | Alleged | Medium | LEGACY_ID:V-060 |
-> | V-FCFCU-2009-0002 | 2009 to 2013 |  | Hudson City Savings Bank, F.S.B. |  | Statutory | Fair Housing Act breach (Pattern or Practice of Redlining) | Fair Housing Act; Equal Credit Opportunity Act | Hudson City Savings Bank (Hudson City) failed to provide its home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis as it provided those services to predominantly white neighborhoods, a practice commonly known as 'redlining,'" |  | E-FCFCU-EXH-2009-0002 |  | Failure to provide home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis. | Alleged | Medium | LEGACY_ID:V-061 |
-> | V-FCFCU-2010-0002 | April 20, 2010 |  | Barnason (Owner/Manager) |  | Statutory | Fair Housing Act breach (Sexual Harassment) | 42 U.S.C. § 3604 | the managers and owner of three residential apartment buildings in Manhattan engaged in a pattern or practice of sexual harassment of female tenants in violation of Fair Housing Act. |  | E-FCFCU-EXH-2010-0002 |  | Severe sexual harassment of female tenants by a manager who was a Level 3 sex offender. | Alleged | Medium | LEGACY_ID:V-064 |
-> | V-FCFCU-2025-0050 | May 28, 2025 |  | Financial Center First Credit Union / Marion Superior Court 3 |  | Procedural | Procedural | Indiana Trial Rule 4.1(B); Procedural Due Process | Service of process was not completed in accordance with Indiana Trial Rule 4.1(B); The Court therefore did not acquire personal jurisdiction over Defendant; A judgment entered without personal jurisdiction is VOID ab initio and must be vacated. |  | E-FCFCU-EXH-2025-0001 |  | Default Judgment and Decree of Foreclosure entered without jurisdiction. | Alleged | Medium | LEGACY_ID:V-072 |
-> | V-FCFCU-0000-0002 | Not in source |  | State Government / Judiciary |  | Procedural | Procedural | U.S. Constitution Amendment XIV,  1 | An elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections. |  | E-FCFCU-EXH-0000-0002 |  | Unjustified deprivation of life, liberty, or property. | Alleged | Medium | LEGACY_ID:V-073 |
-> | V-FCFCU-2009-0003 | 2009 (Caperton); 2016 (Williams) |  | State Courts / Judiciary |  | Procedural | Procedural | U.S. Constitution Amendment XIV (Due Process Clause) | The neutrality requirement helps to guarantee that life, liberty, or property will not be taken on the basis of an erroneous or distorted conception of the facts or the law. . . . there is a serious risk of actual biasbased on objective and reasonable perceptionswhen a person with a personal stake in a particular case had a significant and disproportionate influence in placing the judge on the case. |  | E-FCFCU-EXH-2009-0003 |  | Risk of actual bias in judicial decision-making. | Alleged | Medium | LEGACY_ID:V-074 |
-> | V-FCFCU-0000-0003 | Not in source |  | State Government / Legislatures |  | Procedural | Due Process Violation (Standard of Proof) | U.S. Constitution Amendment XIV; Clear and Convincing Evidence Standard | because the interest of parents in retaining custody of their children is fundamental, the state may not terminate parental rights through reliance on a standard of preponderance of the evidencethe proof necessary to award money damages in an ordinary civil action but must prove that the parents are unfit by clear and convincing evidence. |  | E-FCFCU-EXH-0000-0003 |  | Erroneous deprivation of fundamental interests (e.g., parental rights). | Alleged | Medium | LEGACY_ID:V-075 |
-> | V-FCFCU-0000-0004 | Not in source |  | State Legislatures |  | Constitutional | Unconstitutional Presumption (Vesting of Title) | U.S. Constitution Amendment XIV (Property Rights) | for suits to recover real and personal property, when the right of action has been barred by a statute of limitations and title as well as real ownership have become vested in the defendant, any later act removing or repealing the bar would be void as attempting an arbitrary transfer of title. |  | E-FCFCU-EXH-0000-0004 |  | Arbitrary transfer of title after statute of limitations has run. | Alleged | Medium | LEGACY_ID:V-077 |
-> | V-FCFCU-2011-0005 | July 2011 - October 2015 |  | Federal National Mortgage Association (Fannie Mae) |  | Statutory | Fair Housing Act breach (Intentional Discrimination / Disparate Impact) | Fair Housing Act (42 U.S.C. §§ 3601, 3604, 3605, 3617) | Fannie Mae and its agents have failed to conduct routine exterior maintenance and marketing of REO properties in communities of color, thereby leaving those REO properties in a state of neglect, while satisfactorily conducting routine exterior maintenance and marketing of its REO properties in predominantly white neighborhoods. |  | E-FCFCU-EXH-2011-0005 |  | Neglected REO properties in communities of color; decreased home values; health risks (high blood pressure); social isolation; anxiety; perpetuation of racial segregation. | Alleged | Medium | LEGACY_ID:V-078 |
-> | V-FCFCU-2012-0001 | August 27, 2012 |  | Fannie Mae / Asset Management Specialists, Inc. |  | Statutory | Failure to provide equal maintenance services (REO Dwellings) | 42 U.S.C. § 3604(b) | On August 27, 2012, Plaintiffs visited Defendant’s REO property located at 1142 Kalamazoo Avenue, Grand Rapids, MI 49507... This property had 10 maintenance deficiencies: trash, overgrown grass, overgrown shrubbery, missing screens, unsecured doors, broken and boarded windows, a damaged fence, a dilapidated garage, damaged siding, and exposed or tampered-with utilities. |  | E-FCFCU-EXH-2012-0001 |  | Property neglect: trash, overgrown grass/shrubbery, unsecured doors, broken/boarded windows, damaged fence/siding. | Alleged | Medium | LEGACY_ID:V-079 |
-> | V-FCFCU-2000-0002 | 2000 |  | Trial Court (Indiana) |  | Procedural | Procedural | Indiana Evidence Rule 702; Procedural Due Process | The trial court’s failure to rule on the admissibility of the evidence requires us to remand to the trial court for such proceedings as may be necessary to determine whether the statements of the purported experts meet the requirements of Evid.R. 702. |  | E-FCFCU-EXH-2000-0002 |  | Failure to address evidentiary admissibility leading to remand; unresolved questions of fact on safer alternative design. | Alleged | Medium | LEGACY_ID:V-082 |
-> | V-FCFCU-2025-0051 | December 9, 2025 |  | Marion Superior Court / Financial Center First Credit Union |  | Procedural | Procedural | IN Code § 32-30-10.5-10; Due Process Clause | Cody was removed from the residence at 4817 Shadow Pointe Dr. on December 9, 2025, through enforcement of a Writ of Assistance whose validity is currently under challenge. |  | E-FCFCU-EXH-2025-0002 |  | Removal from residence; homelessness; risk to safety and mental health; inability to access essential belongings. | Alleged | Medium | LEGACY_ID:V-084 |
-> | V-FCFCU-2025-0052 | December 2025 - January 2026 |  | Plaintiff (Financial Center First Credit Union) / Court |  | ADA | ADA | Americans with Disabilities Act (ADA) | ADA requires reasonable modifications ensuring equal access. ... Forced displacement has caused acute destabilization including inability to sleep, panic episodes, cognitive shutdown, and impaired functioning. |  | E-FCFCU-EXH-2025-0003 |  | Acute destabilization; trauma-related panic episodes; impaired cognitive functioning. | Alleged | Medium | LEGACY_ID:V-085 |
-> | V-FCFCU-0000-0005 | Not in source |  | Urban Search Management |  | Statutory | Discriminatory Advertising | 42 U.S.C. § 3604(c) | district court refused to instruct jury on punitive damages despite evidence that established that luxury apartment complex used exclusively white human models in its advertising |  | E-FCFCU-EXH-0000-0005 |  | Messaging of exclusion to nonwhite home seekers. | Alleged | Medium | LEGACY_ID:V-089 |
-> | V-FCFCU-2015-0002 | Early 2015 to August 2015 |  | Town of Cromwell (Mayor and Town Manager) |  | ADA | ADA | 42 U.S.C. §§ 3604(c), 3604(f), 3617; 42 U.S.C. § 12132 | In early 2015, Gilead Community Services, Inc.... purchased a house in Cromwell... to be used as a group home for men with disabilities... Cromwell’s mayor and other high-ranking officials joined the opposition and undertook a series of actions designed to discourage the group home... Gilead closed the group home in August 2015 |  | E-FCFCU-EXH-2015-0002 |  | Closure of a group home for men with disabilities, emotional and financial harm to Gilead Community Services, and leakage of sensitive health information. | Alleged | Medium | LEGACY_ID:V-090 |
-> | V-FCFCU-1975-0001 | 1975 |  | City of Newport, Rhode Island |  | Statutory | Civil Rights | 42 U.S.C. § 1983; First and Fourteenth Amendments | After Newport cancelled the contract due to a dispute over some of the hired musicians, Fact Concerts brought a § 1983 action against the city... alleging violations of the plaintiff’s rights to due process and free expression under the First Amendment. |  | E-FCFCU-EXH-1975-0001 |  | Cancellation of a contract for a music festival based on content/musicians, violating free expression and due process. | Alleged | Medium | LEGACY_ID:V-092 |
-> | V-FCFCU-2020-0002 | 2020-2021 |  | Town of Wolcott |  | Statutory | Fair Housing Act breach (Reasonable Accommodation Failure) | 42 U.S.C. § 3604(f)(3)(B) | setting forth consent decree calling for town, inter alia, to make payments of $350,000 in damages to group home... for failing to make FHA-mandated reasonable accommodation |  | E-FCFCU-EXH-2020-0002 |  | Denial of reasonable accommodation for a group home. | Alleged | Medium | LEGACY_ID:V-093 |
-> | V-FCFCU-2025-0053 | 2025-12-10 |  | Federal Courts (interpreting Rule 13(a)) |  | Procedural | Procedural | Fed. R. Civ. P. 13(a) | Every federal court that has addressed the issue has held that Rule 13(a)... bars a defendant who defaults... from later filing a transactionally related claim in a subsequent suit. This Article argues that the federal courts’ interpretation of Rule 13(a) is fundamentally wrong. |  | E-FCFCU-EXH-2025-0004 |  | Depriving defaulting defendants of potentially meritorious transactionally related claims in subsequent suits. | Alleged | Medium | LEGACY_ID:V-094 |
-> | V-FCFCU-0000-0006 | 1980s |  | City of Yonkers, New York |  | Statutory | Fair Housing Act breach (Exclusionary Zoning) | 42 U.S.C. § 3601 et seq. | Yonkers’s elected leaders had illegally maintained residential segregation by restricting affordable housing projects to minority areas |  | E-FCFCU-EXH-0000-0006 |  | Illegal maintenance of residential segregation. | Alleged | Medium | LEGACY_ID:V-095 |
-> | V-FCFCU-0000-0007 | Not in source |  | U.S. Airways, Inc. |  | ADA | ADA | Americans with Disabilities Act (ADA) - Reasonable Accommodation | As a reasonable accommodation under the ADA, Barnett asked U.S. Airways to make an exception to the seniority system so that he could retain his mailroom job. U.S. Airways denied his request and Barnett lost his job when he was bumped by an employee with more seniority. |  | E-FCFCU-EXH-0000-0007 |  | Loss of employment after being 'bumped' by more senior employee. | Alleged | Medium | LEGACY_ID:V-097 |
-> | V-FCFCU-0000-0008 | Not in source |  | New York Medicaid Program |  | Procedural | Procedural | ADA Integration Mandate / Rehabilitation Act / Due Process | The plaintiffs did not receive written notice of the changes in coverage and learned of the changes when they attempted to fulfill their prescriptions. ... cutting funding for medically necessary orthopedic footwear and compression stockings violated Olmstead’s integration mandate and put plaintiffs at a substantial risk of requiring institutionalized care. |  | E-FCFCU-EXH-0000-0008 |  | Loss of mobility funding without written notice; substantial risk of institutionalization. | Alleged | Medium | LEGACY_ID:V-098 |
-> | V-FCFCU-1993-0001 | June 9, 1993 |  | Indiana General Assembly / Melroe Company |  | Procedural | Procedural | Article I, Section 12 of the Indiana Constitution (Right to Remedy) | James McIntosh was injured in an accident involving a Clark Bobcat skid steer loader manufactured by Melroe. ... Melroe responded with a motion for summary judgment based on the ten-year statute of repose ... providing that 'a product liability action must be commenced ... within ten (10) years after the delivery of the product to the initial user or consumer.' |  | E-FCFCU-EXH-1993-0001 |  | Loss of legal remedy for injury caused by alleged product defect. | Alleged | Medium | LEGACY_ID:V-100 |
-> | V-FCFCU-0000-0009 | Not in source |  | Pennsylvania Dept. of Corrections |  | ADA | ADA | Title II of the ADA | Ronald Yeskey was sentenced to 18 to 36 months ... recommended that he participate in a Motivational Boot Camp ... The State refused Yeskey’s admission into the Boot Camp due to his history of hypertension. Yeskey filed suit under the ADA. |  | E-FCFCU-EXH-0000-0009 |  | Refusal of admission to Boot Camp (affecting parole eligibility) due to hypertension. | Alleged | Medium | LEGACY_ID:V-101 |
-> | V-FCFCU-0000-0010 | Not in source |  | St. Helena Hospital |  | ADA | ADA | ADA Title III / Rehabilitation Act | A Deaf plaintiff did not have standing to seek injunctive relief against a hospital, that failed to provide effective communication to plaintiff, who arrived in emergency room because of husband's fatal cardiac arrest. |  | E-FCFCU-EXH-0000-0010 |  | Denial of effective communication during a medical emergency (husband's cardiac arrest). | Alleged | Medium | LEGACY_ID:V-102 |
-> | V-FCFCU-0000-0011 | Not in source |  | City and County of Denver (Law Enforcement) |  | Statutory | Section 504 Breach / Failure to Provide Interpreter | Section 504 of the Rehabilitation Act of 1973 | Plaintiff Sarah Burke was Deaf mother ... police showed up to enforce the warrant. Ms. Burke asked for a sign language interpreter. ... the police refused and asked her 8-year-old child to interpret. They then arrested Ms. Burke ... One of the things she was trying to communicate was that she needed medication for diabetes |  | E-FCFCU-EXH-0000-0011 |  | Arrested without communication; forced to use 8-year-old child to interpret; unable to communicate medical need (diabetes). | Alleged | Medium | LEGACY_ID:V-103 |
-> | V-FCFCU-2012-0002 | October 2012 - June 2018 |  | Bank of America / Safeguard Properties Management, LLC |  | Statutory | Fair Housing Act breach (Race, National Origin); Discriminatory maintenance | Federal Fair Housing Act | The lawsuit alleges Defendants intentionally failed to provide routine exterior maintenance and marketing at Bank of America-owned homes in working- and middle-class African American and Latino neighborhoods in 37 metropolitan areas, while they consistently maintained similar bank-owned homes in comparable white neighborhoods. |  | E-FCFCU-EXH-2012-0002 |  | Intentional failure to provide routine exterior maintenance and marketing at bank-owned homes in African American and Latino neighborhoods compared to white neighborhoods. | Alleged | Medium | LEGACY_ID:V-106 |
-> | V-FCFCU-2024-0001 | September 2024 |  | Barrington Group |  | Statutory | Fair Housing Act breach (Race); Arbitrary criminal history policies | Federal Fair Housing Act | alleging discrimination due to race and color which alleged discriminatory practices against Black renters through arbitrary criminal history policies. |  | E-FCFCU-EXH-2024-0001 |  | Discriminatory practices against Black renters through arbitrary criminal history policies. | Alleged | Medium | LEGACY_ID:V-107 |
-> | V-FCFCU-2021-0001 | March 2021 |  | CityWide Home Loans / Pierce Appraisal / Freedom Mortgage |  | Statutory | Fair Housing Act breach (Race, Color); Appraisal Bias | Federal Fair Housing Act | Ms. Duffy and the FHCCI allege in the HUD complaints that the Respondents have violated fair housing laws by allowing race and color to impact their appraisals and/or lending practices. |  | E-FCFCU-EXH-2021-0001 |  | Black homeowner received significantly lower home appraisal until Black identifiers were removed and a white friend stood in. | Alleged | Medium | LEGACY_ID:V-112 |
-> | V-FCFCU-2021-0002 | March 2021 |  | Coolspring Estates / LaPorte Lake Properties |  | Statutory | Fair Housing Act breach (Familial status) | Federal Fair Housing Act | alleging violations of fair housing and other laws against families with children. |  | E-FCFCU-EXH-2021-0002 |  | Discrimination against families with children. | Alleged | Medium | LEGACY_ID:V-113 |
-> | V-FCFCU-2016-0005 | February 2016 |  | Grandville Cooperative / Kirkpatrick Management Co. Inc. |  | Statutory | Fair Housing Act breach (Disability, Familial status) | Federal Fair Housing Act | The complaint alleges that the defendants refused to rent to a family that included a person with disabilities stating that ‘…it will be a liability to offer the person with a disability a unit that is not accommodating to everyone in the household.’ |  | E-FCFCU-EXH-2016-0005 |  | Refusal to rent to a family with a disabled member; claimed liability for non-accommodating units. | Alleged | Medium | LEGACY_ID:V-115 |
-> | V-FCFCU-2020-0003 | August 2020 |  | Henry Long (Landlord) |  | Statutory | Fair Housing Act breach (Gender); Sexual Harassment | Federal Fair Housing Act | As part of the consent decree, Mr. Long will pay $45,900 in monetary relief to resolve the lawsuit which alleged he sexually harassed a female tenant. |  | E-FCFCU-EXH-2020-0003 |  | Landlord solicited sex from female tenant after she lost her job and could not afford rent. | Alleged | Medium | LEGACY_ID:V-116 |
-> | V-FCFCU-2021-0003 | October 2021 |  | Old National Bank |  | Statutory | Fair Housing Act breach (Race); Redlining | Federal Fair Housing Act | The FHCCI also alleges that Old National deliberately seeks to limit its residential lending business to predominantly White areas and customers and has removed branches in Black neighborhoods and sited branches in White neighborhoods – conduct which constitutes redlining. |  | E-FCFCU-EXH-2021-0003 |  | Structured business to avoid providing mortgage credit to Black residents; removed branches in Black neighborhoods. | Alleged | Medium | LEGACY_ID:V-117 |
-> | V-FCFCU-2018-0003 | January 2018 |  | Marquette Management & Marquette Companies |  | Statutory | Fair Housing Act breach (Familial status); Occupancy policies | Federal Fair Housing Act | alleging that Marquette Management Inc. discriminates on the basis of familial status in properties it manages in Illinois and Indiana by enforcing unduly restrictive occupancy policies. |  | E-FCFCU-EXH-2018-0003 |  | Enforcement of unduly restrictive occupancy policies against families with children. | Alleged | Medium | LEGACY_ID:V-118 |
-> | V-FCFCU-2019-0001 | April 2019 - April 2020 |  | Twin Creeks Homeowners Association / Kirkpatrick Property Management / Vicki New |  | Statutory | Fair Housing Act breach (Race, National Origin); Hostile Housing Environment | Federal Fair Housing Act | alleged a pattern and practice of harassing, taunting, and threatening African American and Latino residents, guests, and contractors and creating a racially hostile environment... Vicki New... engaged in a campaign of harassment based on race and national origin for more than two years. |  | E-FCFCU-EXH-2019-0001 |  | Campaign of harassment, taunting, and death threats against African American and Latino residents; failure of HOA to stop conduct. | Alleged | Medium | LEGACY_ID:V-119 |
-> | V-FCFCU-2010-0003 | 2010 - 2011 |  | Dearborn Superior Court No. 1 / Dearborn Circuit Court / State of Indiana |  | ADA | ADA | Americans with Disabilities Act (ADA); Section 504 of the Rehabilitation Act | Mr. Prakel repeatedly requested that Indiana’s Dearborn Superior Court No. 1 and Dearborn Circuit Court provide sign language interpreter services so that he could understand the proceedings. On each occasion, the Defendants refused to provide an interpreter or any other auxiliary aids or services. |  | E-FCFCU-EXH-2010-0003 |  | Deaf individual denied sign language interpreter services needed to understand court proceedings for his mother. | Alleged | Medium | LEGACY_ID:V-120 |
-> | V-FCFCU-1977-0002 | 1977 - 1983 |  | Elkhart County, Indiana / Indiana State Legislature |  | Procedural | Procedural | Due Process Clause of the Fourteenth Amendment | The manner of notice provided to appellant did not meet the requirements of the Due Process Clause of the Fourteenth Amendment... constructive notice by publication must be supplemented by notice mailed to the mortgagee's last known available address. |  | E-FCFCU-EXH-1977-0002 |  | Mortgagee (Mennonite Board of Missions) lost property interest in tax sale without receiving actual notice, only constructive notice (publication). | Alleged | Medium | LEGACY_ID:V-121 |
-> | V-FCFCU-2025-0054 | March 5, 2025 and April 15, 2025 |  | Marion County Sheriff / Financial Center First Credit Union (FCFCU) |  | Procedural | Due Process Failure / Defective Service | Indiana Trial Rule 4.1(B); 14th Amendment Due Process (Mennonite standard) | The Sheriff’s Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B). |  | E-FCFCU-EXH-2025-0005 |  | Loss of personal jurisdiction; wrongful entry of default judgment leading to subsequent displacement. | Alleged | Medium | LEGACY_ID:V-122 |
-> | V-FCFCU-2025-0055 | June 8, 2025 (and ongoing through December 2025) |  | AES Indiana / Financial Center First Credit Union / Marion County Sheriff |  | ADA | ADA | 42 U.S.C. § 12181 (ADA Title III); ADA Title II | No ADA inquiry or accommodation was provided by the Court, Plaintiff, or Sheriff before attempting service or executing the writ. Sheriff deputies did not modify service attempts to account for disability-related auditory and processing delays. |  | E-FCFCU-EXH-2025-0006 |  | Inability to effectively communicate or respond to service attempts and billing; severe emotional distress and physical risk during removal. | Alleged | Medium | LEGACY_ID:V-123 |
-> | V-FCFCU-2025-0056 | December 9, 2025 |  | Marion County Sheriff |  | Procedural | Procedural | Procedural Due Process; IC § 32-30-10.5-8 | No advance notice of a vacate date or removal date was provided to me. No notice was posted on the door or mailbox... I was not served with the writ prior to enforcement. |  | E-FCFCU-EXH-2025-0007 |  | Forcible removal in freezing temperatures without time to gather essential belongings; humanitarian harm to Afghan ally. | Alleged | Medium | LEGACY_ID:V-124 |
-> | V-FCFCU-2025-0057 | August 2025 - December 2025 |  | Financial Center First Credit Union / Clerk of Marion County |  | Statutory | Potential IC § 32-30-10-14 Violation (Surplus Mismanagement) | IN Code § 32-30-10-14 | Confirmed surplus discrepancy between the $220,863.09 judgment and $240,464.20 sheriff sale satisfaction, triggering IC § 32-30-10-14 protections. |  | E-FCFCU-EXH-2025-0008 |  | Discrepancy between judgment amount and sheriff sale satisfaction without documented surplus accounting to the defendant. | Alleged | Medium | LEGACY_ID:V-125 |
-> | V-FCFCU-2025-0058 | December 2025 (Post-removal) |  | Financial Center First Credit Union / Sheriff Personnel |  | Tort | Conversion / Negligence | Tort law (Negligence/Conversion); 14th Amendment (Right to Property) | Pipes in the laundry room appear to have burst due to freezing temperatures... Refrigerator had been unplugged, resulting in food spoilage and visible mold contamination. |  | E-FCFCU-EXH-2025-0009 |  | Burst pipes, mold growth, destruction of personal property (mini-fridge), and spoilage of food. | Alleged | Medium | LEGACY_ID:V-126 |
-> | V-FCFCU-2025-0059 | December 21, 2025 (Discovery) |  | Financial Center First Credit Union |  | Statutory | Spoliation of Evidence | Procedural Due Process; Evidence Preservation duties | Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled. |  | E-FCFCU-EXH-2025-0010 |  | Disabling of interior security cameras during a contested period of retrieval. | Alleged | Medium | LEGACY_ID:V-127 |
-> | V-FCFCU-2025-0060 | March 5, 2025 and April 15, 2025 |  | Financial Center First Credit Union (FCFCU) / Marion County Sheriff's Office |  | Procedural | Procedural | Indiana Trial Rule 4.1(B); Indiana Trial Rule 4.15(F) | The Sheriff's Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B). |  | E-FCFCU-EXH-2025-0011 |  | Lack of personal jurisdiction; Court never acquired jurisdiction to enter judgment. | Alleged | Medium | LEGACY_ID:V-128 |
-> | V-FCFCU-2025-0061 | January 2025 – May 28, 2025 |  | Financial Center First Credit Union (FCFCU) |  | Procedural | Due Process Failure / Notice Deficiency | U.S. Const. amend. XIV; Constitutional due process | Defendant never received the summons, complaint, notice of foreclosure, or any written directive informing him of required dates or obligations. Nothing was ever handed to him or placed in a location reasonably calculated to notify him. |  | E-FCFCU-EXH-2025-0012 |  | Deprivation of protected rights without meaningful opportunity to be heard; Default judgment entered without defendant's knowledge. | Alleged | Medium | LEGACY_ID:V-129 |
-> | V-FCFCU-2025-0062 | Pre-foreclosure through removal (2025) |  | Financial Center First Credit Union (FCFCU) |  | ADA | ADA | Americans with Disabilities Act (ADA); 42 U.S.C.  3601 et seq. | FCFCU refused to accommodate these requests and insisted on phone-based communication, despite: Email being a standard and widely accepted method of business communication; My documented disability-related limitations with phone communication. |  | E-FCFCU-EXH-2025-0013 |  | Impaired ability to access the courts; material interference with ability to process legal directives. | Alleged | Medium | LEGACY_ID:V-130 |
-> | V-FCFCU-2025-0063 | May 28, 2025 (Judgment) – December 9, 2025 (Removal) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Foreclosure | Fair Housing Act (42 U.S.C.  3604); IC 22-9.5 | FCFCU obtained a default judgment against me on May 28, 2025, without my knowledge or participation, and without providing reasonable accommodations for my disability-related needs. |  | E-FCFCU-EXH-2025-0014 |  | Forced displacement in freezing weather; destruction of income base; loss of stable housing. | Alleged | Medium | LEGACY_ID:V-131 |
-> | V-FCFCU-2025-0064 | December 9, 2025 |  | Marion County Sheriff's Office / FCFCU |  | Procedural | Procedural | Indiana Code  32-30-10.5-8; Procedural Due Process | Sheriff executed a forcible removal WITHOUT an eviction case. No summons, no hearing, no eviction order. Sheriff posted no 48-hour notice before removal. |  | E-FCFCU-EXH-2025-0015 |  | Unlawful dispossession; emergency displacement; health and safety risks. | Alleged | Medium | LEGACY_ID:V-132 |
-> | V-FCFCU-2025-0065 | November 2025 (Writ Petition) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Fraud on the Court / Material Misrepresentation | Procedural Due Process; TR 60(B) | Petition falsely alleged “Unknown Occupants”... Petition falsely alleged refusal to vacate... Defendant never received writ petition. Writ issued without notice. |  | E-FCFCU-EXH-2025-0016 |  | Issuance of Writ of Assistance without proper legal foundation. | Alleged | Medium | LEGACY_ID:V-133 |
-> | V-FCFCU-2025-0066 | December 21, 2025 (Discovery Date) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Conversion / Property Interference | Negligence; Conversion; Procedural Due Process | I discovered that a bedroom mini-fridge had been unplugged, resulting in mold contamination and total loss of the appliance... refrigerator had been unplugged, resulting in food spoilage... pipes in the laundry room had burst due to freezing temperatures. |  | E-FCFCU-EXH-2025-0017 |  | Loss of personal property; food spoilage; mold contamination; burst pipes. | Alleged | Medium | LEGACY_ID:V-134 |
-> | V-FCFCU-2025-0067 | December 21, 2025 |  | Financial Center First Credit Union (FCFCU) Agents |  | Statutory | Evidence Spoliation | Procedural Due Process; Access to Justice | I discovered that all interior security cameras had been unplugged and rendered nonfunctional... The unplugging of security cameras constitutes interference with potential evidence and spoliation. |  | E-FCFCU-EXH-2025-0018 |  | Material impairment of ability to document removal conduct. | Alleged | Medium | LEGACY_ID:V-135 |
-> | V-FCFCU-2025-0068 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No personal service on Defendant | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #1 |
-> | V-FCFCU-2025-0069 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No service on a person age 16 or older | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #2 |
-> | V-FCFCU-2025-0070 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Copy service allegedly attempted | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #3 |
-> | V-FCFCU-2025-0071 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Mandatory first-class mailing never completed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #4 |
-> | V-FCFCU-2025-0072 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No USPS receipt, tracking, or certificate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #5 |
-> | V-FCFCU-2025-0073 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No Clerk’s certificate of mailing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #6 |
-> | V-FCFCU-2025-0074 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Sheriff’s returns fail to document mailing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #7 |
-> | V-FCFCU-2025-0075 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Returns are facially incomplete | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #8 |
-> | V-FCFCU-2025-0076 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Returns internally inconsistent | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #9 |
-> | V-FCFCU-2025-0077 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Location of “copy left” not specified | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #10 |
-> | V-FCFCU-2025-0078 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No evidence documents were left in a reasonable location | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #11 |
-> | V-FCFCU-2025-0079 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Service not reasonably calculated to provide notice | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #12 |
-> | V-FCFCU-2025-0080 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Defendant present at residence approximately 99% of the time | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #13 |
-> | V-FCFCU-2025-0081 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No contemporaneous corroboration of service | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #14 |
-> | V-FCFCU-2025-0082 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Known auditory processing limitations ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #15 |
-> | V-FCFCU-2025-0083 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Known executive-function disability ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #16 |
-> | V-FCFCU-2025-0084 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Heightened notice requirements disregarded | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #17 |
-> | V-FCFCU-2025-0085 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Trial Rule 4.1(B) not satisfied | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #18 |
-> | V-FCFCU-2025-0086 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Trial Rule 4.15(F) cure unavailable | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #19 |
-> | V-FCFCU-2025-0087 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Court never acquired personal jurisdiction | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #20 |
-> | V-FCFCU-2025-0088 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Plaintiff falsely stated 30 days elapsed for all defendants | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #21 |
-> | V-FCFCU-2025-0089 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Statement objectively false as to lien defendants | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #22 |
-> | V-FCFCU-2025-0090 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Default sought prematurely | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #23 |
-> | V-FCFCU-2025-0091 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Material misrepresentation to the court | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #24 |
-> | V-FCFCU-2025-0092 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Prior default denial disregarded | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #25 |
-> | V-FCFCU-2025-0093 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | No new service effectuated after denial | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #26 |
-> | V-FCFCU-2025-0094 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Defects not cured before re-filing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #27 |
-> | V-FCFCU-2025-0095 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Court relied on inaccurate procedural record | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #28 |
-> | V-FCFCU-2025-0096 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Default entered without jurisdiction | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #29 |
-> | V-FCFCU-2025-0097 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Writ sought from void judgment | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #30 |
-> | V-FCFCU-2025-0098 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Petition falsely alleged “Unknown Occupants” | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #31 |
-> | V-FCFCU-2025-0099 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Plaintiff knew Defendant occupied property | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #32 |
-> | V-FCFCU-2025-0100 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Petition falsely alleged refusal to vacate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #33 |
-> | V-FCFCU-2025-0101 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No demand for possession served | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #34 |
-> | V-FCFCU-2025-0102 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No eviction action filed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #35 |
-> | V-FCFCU-2025-0103 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No tenant-style notice provided | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #36 |
-> | V-FCFCU-2025-0104 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Certificate of Service falsely executed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #37 |
-> | V-FCFCU-2025-0105 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No proof of service of writ petition | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #38 |
-> | V-FCFCU-2025-0106 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Defendant never received writ petition | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #39 |
-> | V-FCFCU-2025-0107 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Writ issued without notice | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #40 |
-> | V-FCFCU-2025-0108 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Property absent from official sheriff foreclosure postings | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #41 |
-> | V-FCFCU-2025-0109 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | No evidence of required multi-week newspaper publication | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #42 |
-> | V-FCFCU-2025-0110 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Public notice requirements unmet | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #43 |
-> | V-FCFCU-2025-0111 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Defendant unable to locate property on official sheriff sources | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #44 |
-> | V-FCFCU-2025-0112 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Sale not transparently discoverable | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #45 |
-> | V-FCFCU-2025-0113 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Opportunity to monitor or contest sale denied | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #46 |
-> | V-FCFCU-2025-0114 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Sheriff’s deed allegedly executed August 19 | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #47 |
-> | V-FCFCU-2025-0115 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Deed not recorded with assessor until December 3 | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #48 |
-> | V-FCFCU-2025-0116 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Gap between execution and public recordation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #49 |
-> | V-FCFCU-2025-0117 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Plaintiff asserted ownership before recordation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #50 |
-> | V-FCFCU-2025-0118 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Authority to dispossess unclear at time of removal | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #51 |
-> | V-FCFCU-2025-0119 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Lawful possessory rights unresolved at execution | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #52 |
-> | V-FCFCU-2025-0120 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Defendant is a qualified individual with disabilities | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #53 |
-> | V-FCFCU-2025-0121 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed to Plaintiff on multiple occasions | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #54 |
-> | V-FCFCU-2025-0122 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed prior to foreclosure escalation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #55 |
-> | V-FCFCU-2025-0123 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed prior to removal | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #56 |
-> | V-FCFCU-2025-0124 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Reasonable accommodation requested (written communication) | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #57 |
-> | V-FCFCU-2025-0125 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Plaintiff refused accommodation as “policy” | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #58 |
-> | V-FCFCU-2025-0126 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | No interactive ADA process conducted | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #59 |
-> | V-FCFCU-2025-0127 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Manager confirmed inability to accommodate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #60 |
-> | V-FCFCU-2025-0128 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability used to pressure payment | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #61 |
-> | V-FCFCU-2025-0129 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Heightened notice obligations ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #62 |
-> | V-FCFCU-2025-0130 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal executed despite Defendant denying notice | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #63 |
-> | V-FCFCU-2025-0131 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Officers relied on assumptions rather than verification | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #64 |
-> | V-FCFCU-2025-0132 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal proceeded without service confirmation | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #65 |
-> | V-FCFCU-2025-0133 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No discretionary pause despite obvious confusion | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #66 |
-> | V-FCFCU-2025-0134 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Agent admitted lack of foreclosure experience | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #67 |
-> | V-FCFCU-2025-0135 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No supervisory review conducted | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #68 |
-> | V-FCFCU-2025-0136 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No 48-hour execution notice provided | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #69 |
-> | V-FCFCU-2025-0137 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No demand for possession prior to removal | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #70 |
-> | V-FCFCU-2025-0138 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No eviction judgment existed | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #71 |
-> | V-FCFCU-2025-0139 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal executed as self-help eviction by proxy | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #72 |
-> | V-FCFCU-2025-0140 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Prior sheriff visit failed to disclose writ | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #73 |
-> | V-FCFCU-2025-0141 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Prior IMPD visit failed to disclose writ | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #74 |
-> | V-FCFCU-2025-0142 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | After emergency filing, Plaintiff told court Defendant had been informed | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #75 |
-> | V-FCFCU-2025-0143 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Statement was false | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #76 |
-> | V-FCFCU-2025-0144 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Defendant learned of claim only via court email | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #77 |
-> | V-FCFCU-2025-0145 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Continued misrepresentation during emergency posture | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #78 |
-> | V-FCFCU-2025-0146 |  |  | FCFCU |  | Tort | General |  | Unauthorized entry after removal | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #79 |
-> | V-FCFCU-2025-0147 |  |  | FCFCU |  | Tort | General |  | Residence “swept” without notice | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #80 |
-> | V-FCFCU-2025-0148 |  |  | FCFCU |  | Tort | General |  | No inventory of personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #81 |
-> | V-FCFCU-2025-0149 |  |  | FCFCU |  | Tort | General |  | Property handled without consent | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #82 |
-> | V-FCFCU-2025-0150 |  |  | FCFCU |  | Tort | General |  | Property moved from original locations | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #83 |
-> | V-FCFCU-2025-0151 |  |  | FCFCU |  | Tort | General |  | Property dropped or disturbed | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #84 |
-> | V-FCFCU-2025-0152 |  |  | FCFCU |  | Tort | General |  | Videotaping of personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #85 |
-> | V-FCFCU-2025-0153 |  |  | FCFCU |  | Tort | General |  | FaceTime/video call with unknown third party | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #86 |
-> | V-FCFCU-2025-0154 |  |  | FCFCU |  | Tort | General |  | No consent to recording | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #87 |
-> | V-FCFCU-2025-0155 |  |  | FCFCU |  | Tort | General |  | Recording of sensitive personal effects | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #88 |
-> | V-FCFCU-2025-0156 |  |  | FCFCU |  | Tort | General |  | Garage door disengaged | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #89 |
-> | V-FCFCU-2025-0157 |  |  | FCFCU |  | Tort | General |  | Garage door locked and restricted | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #90 |
-> | V-FCFCU-2025-0158 |  |  | FCFCU |  | Tort | General |  | False statements regarding garage door power | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #91 |
-> | V-FCFCU-2025-0159 |  |  | FCFCU |  | Tort | General |  | Garage door was Defendant’s personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #92 |
-> | V-FCFCU-2025-0160 |  |  | FCFCU |  | Tort | General |  | Retrieval access intentionally impeded | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #93 |
-> | V-FCFCU-2025-0161 |  |  | FCFCU |  | Tort | General |  | Increased difficulty of retrieval created | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #94 |
-> | V-FCFCU-2025-0162 |  |  | FCFCU |  | Tort | General |  | No neutral witness during sweep | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #95 |
-> | V-FCFCU-2025-0163 |  |  | FCFCU |  | Tort | General |  | No chain-of-custody protection | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #96 |
-> | V-FCFCU-2025-0164 |  |  | FCFCU |  | Tort | General |  | Risk of evidence spoliation created | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #97 |
-> | V-FCFCU-2025-0165 |  |  | FCFCU |  | Tort | Property Damage |  | Spoilage of refrigerated food | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #98 |
-> | V-FCFCU-2025-0166 |  |  | FCFCU |  | Tort | Property Damage |  | Freezer spoilage | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #99 |
-> | V-FCFCU-2025-0167 |  |  | FCFCU |  | Tort | Property Damage |  | Mold growth from vacancy | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #100 |
-> | V-FCFCU-2025-0168 |  |  | FCFCU |  | Tort | Property Damage |  | Burst pipes / laundry room damage | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #101 |
-> | V-FCFCU-2025-0169 |  |  | FCFCU |  | Tort | Property Damage |  | Failure to winterize property | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #102 |
-> | V-FCFCU-2025-0170 |  |  | FCFCU |  | Tort | Property Damage |  | Failure to mitigate while excluding Defendant | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #103 |
-> | V-FCFCU-2025-0171 |  |  | FCFCU |  | Tort | Property Damage |  | Damage occurred during unlawful possession | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #104 |
-> | V-FCFCU-2025-0172 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost wages due to displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #105 |
-> | V-FCFCU-2025-0173 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost consulting income | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #106 |
-> | V-FCFCU-2025-0174 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost professional opportunities | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #107 |
-> | V-FCFCU-2025-0175 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Missed client notices due to homelessness | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #108 |
-> | V-FCFCU-2025-0176 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Mail disruption caused by displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #109 |
-> | V-FCFCU-2025-0177 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Re-work required for already-paid clients | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #110 |
-> | V-FCFCU-2025-0178 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Harm to clients’ ability to file and work | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #111 |
-> | V-FCFCU-2025-0179 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | PTIN renewal missed due to crisis | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #112 |
-> | V-FCFCU-2025-0180 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Increased barriers to re-establishing practice | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #113 |
-> | V-FCFCU-2025-0181 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Impaired ability to work during tax season | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #114 |
-> | V-FCFCU-2025-0182 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Emergency housing costs | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #115 |
-> | V-FCFCU-2025-0183 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Transportation and survival expenses | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #116 |
-> | V-FCFCU-2025-0184 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Utility bills charged during Plaintiff’s claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #117 |
-> | V-FCFCU-2025-0185 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Water bill issued despite claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #118 |
-> | V-FCFCU-2025-0186 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Electric service left in Defendant’s name | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #119 |
-> | V-FCFCU-2025-0187 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Utility shutoff harm | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #120 |
-> | V-FCFCU-2025-0188 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Property taxes demanded during Plaintiff’s claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #121 |
-> | V-FCFCU-2025-0189 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | $10,000 accounting discrepancy in sale proceeds | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #122 |
-> | V-FCFCU-2025-0190 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Retroactive interest doubling | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #123 |
-> | V-FCFCU-2025-0191 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Attorney fees re-added post hoc | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #124 |
-> | V-FCFCU-2025-0192 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Accounting manipulation to eliminate surplus | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #125 |
-> | V-FCFCU-2025-0193 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Misrepresentation of payoff amount ($22k vs ~$4k) | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #126 |
-> | V-FCFCU-2025-0194 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | False payoff demand deterred cure attempt | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #127 |
-> | V-FCFCU-2025-0195 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Severe emotional distress | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #128 |
-> | V-FCFCU-2025-0196 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Re-traumatization | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #129 |
-> | V-FCFCU-2025-0197 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Sleep deprivation | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #130 |
-> | V-FCFCU-2025-0198 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Cognitive exhaustion | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #131 |
-> | V-FCFCU-2025-0199 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Loss of sense of safety | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #132 |
-> | V-FCFCU-2025-0200 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Exposure to freezing conditions | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #133 |
-> | V-FCFCU-2025-0201 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Health deterioration risk | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #134 |
-> | V-FCFCU-2025-0202 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Coercive sexual demand in exchange for money | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #135 |
-> | V-FCFCU-2025-0203 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Occurred while homeless and freezing | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #136 |
-> | V-FCFCU-2025-0204 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Directly caused by unlawful displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #137 |
-> | V-FCFCU-2025-0205 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Foreseeable vulnerability created by Defendants’ actions | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #138 |
-> | V-FCFCU-2025-0206 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Displacement of roommate | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #139 |
-> | V-FCFCU-2025-0207 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Harm to dependent ally relying on Defendant’s support | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #140 |
-> | V-FCFCU-2025-0208 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Interruption of legal and caregiving assistance to ally | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #141 |
-> | V-FCFCU-2025-0209 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Harm to ally’s legal stability | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #142 |
-> | V-FCFCU-2025-0210 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Emotional distress to Defendant’s mother | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #143 |
-> | V-FCFCU-2025-0211 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Burden placed on family and helpers | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #144 |
-> | V-FCFCU-2025-0212 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Winter conditions known | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #145 |
-> | V-FCFCU-2025-0213 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Disability known or reasonably discoverable | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #146 |
-> | V-FCFCU-2025-0214 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Homelessness foreseeable outcome | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #147 |
-> | V-FCFCU-2025-0215 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Client harm foreseeable during tax season | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #148 |
-> | V-FCFCU-2025-0216 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Proceeded despite obvious risk | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #149 |
-> | V-FCFCU-2025-0217 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Continued escalation despite mounting harm | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #150 |
-> | V-FCFCU-2025-0218 |  |  | FCFCU |  | Constitutional | General |  | State actors deprived Defendant of real property | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #151 |
-> | V-FCFCU-2025-0219 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without jurisdiction | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #152 |
-> | V-FCFCU-2025-0220 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without notice | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #153 |
-> | V-FCFCU-2025-0221 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without opportunity to be heard | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #154 |
-> | V-FCFCU-2025-0222 |  |  | FCFCU |  | Constitutional | General |  | Sheriff executed removal despite unresolved service defects | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #155 |
-> | V-FCFCU-2025-0223 |  |  | FCFCU |  | Constitutional | General |  | State actors relied on assumptions rather than verified process | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #156 |
-> | V-FCFCU-2025-0224 |  |  | FCFCU |  | Constitutional | General |  | Disparate impact on disabled Defendant | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #157 |
-> | V-FCFCU-2025-0225 |  |  | FCFCU |  | Constitutional | General |  | Failure to provide reasonable modification | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #158 |
-> | V-FCFCU-2025-0226 |  |  | FCFCU |  | Constitutional | General |  | Failure to engage in ADA interactive process | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #159 |
+> review this agains tthe inventory and rerun it. ---
+
+> title: Violations Inventory Master
+
+> ---
+
+> 
+
+> # Violations Inventory Master
+
+> 
+
+> *Auto-generated view of `violations_inventory_master.csv`*
+
+> 
+
+> | violation_id | violation_date | violation_date_end | actor | actor_role | violation_category | violation_type | legal_authority | description | procedural_context | evidence_ids | harm_category | impact_summary | status | confidence_level | notes |
+
+> | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+> | V-FCFCU-2026-0001 | 2026-01-02 |  |  |  | Statutory | General |  | Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations |  |  |  |  | Alleged | Medium | LEGACY_ID:V-001 |
+
+> | V-FCFCU-2025-0001 |  |  | Experian |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | Experian reinvestigation failure / inadequate investigation (if occurs) |  |  |  | Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md |
+
+> | V-FCFCU-2025-0002 |  |  | Equifax |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | Equifax reinvestigation failure / inadequate investigation (if occurs) |  |  |  | Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md |
+
+> | V-FCFCU-2025-0003 |  |  | TransUnion |  | Statutory | THEORY_CRA_REINVESTIGATION_FAILURE | FCRA | TransUnion reinvestigation failure / inadequate investigation (if occurs) |  |  |  | TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties. | Alleged | Medium | LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md |
+
+> | V-FCFCU-2025-0004 |  |  | FCFCU |  | Statutory | THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE | FCRA | Failure to correct inaccurate furnishings after notice (1681s-2(b)) |  |  |  | FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness. | Alleged | Medium | LEGACY_ID:V-005; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md |
+
+> | V-FCFCU-2025-0005 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Dual tradeline double-counting of same collateral/debt causing compounded credit harm |  |  |  | The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages. | Alleged | Medium | LEGACY_ID:V-006; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md |
+
+> | V-FCFCU-2025-0006 |  |  | FCFCU |  | Tort | THEORY_CREDIT_DEFAMATION | Tort | Credit defamation: false publication of delinquency after legal status changed |  |  |  | False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims. | Alleged | Medium | LEGACY_ID:V-007; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md |
+
+> | V-FCFCU-2025-0007 |  |  | FCFCU/Attorney |  | Statutory | THEORY_DEBT_STATUS_MISREPRESENTATION | FDCPA | FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved) |  |  |  | Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved. | Alleged | Medium | LEGACY_ID:V-008; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md |
+
+> | V-FCFCU-2025-0008 |  |  | FCFCU |  | Statutory | THEORY_FCRA_ACCURACY | FCRA | Failure to mark account 'foreclosure' / 'closed' accurately after sale |  |  |  | Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles. | Alleged | Medium | LEGACY_ID:V-009; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md |
+
+> | V-FCFCU-2025-0009 |  |  | FCFCU |  | Tort | THEORY_POST_SALE_COST_SHIFT | Tort | Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties |  |  |  | FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly. | Alleged | Medium | LEGACY_ID:V-010; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md |
+
+> | V-FCFCU-2025-0010 |  |  | FCFCU |  | Statutory | THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE | Due_Process | Removal occurred 6–7 days after deed recorded/assessor update (compressed window) |  |  |  | The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice. | Alleged | Medium | LEGACY_ID:V-011; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md |
+
+> | V-FCFCU-2025-0011 |  |  | Court/FCFCU |  | Procedural | THEORY_ACCOUNTING_IRREGULARITIES | Procedure/Accounting | Surplus funds declared resolved despite dispute on accuracy/fees |  |  |  | Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities. | Alleged | Medium | LEGACY_ID:V-012; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md |
+
+> | V-FCFCU-2025-0012 |  |  | FCFCU |  | Statutory | THEORY_ACCOUNTING_IRREGULARITIES | Accounting | Interest/fees arbitrarily inflated (dispute) impacting accounting and harm |  |  |  | Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages. | Alleged | Medium | LEGACY_ID:V-013; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md |
+
+> | V-FCFCU-2025-0013 |  |  | FCFCU |  | Tort | THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH | Tort | FCFCU testimony: winterize then leave until spring (arbitrary urgency for removal) |  |  |  | FCFCU testimony that the property should be winterized then left until spring may indicate arbitrary urgency used to justify removal. | Alleged | Medium | LEGACY_ID:V-014; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-038_fcfcu-testimony-winterize-then-leave.md |
+
+> | V-FCFCU-2025-0014 |  |  | FCFCU |  | Statutory | THEORY_GLOBAL_RESOLUTION | Litigation | Global demand letter: deletion + monetary settlement + account purges |  |  |  | Prepare a global demand seeking tradeline deletion, monetary settlement, and account purges as a resolution posture. | Alleged | Medium | LEGACY_ID:V-015; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-070_global-demand-letter.md |
+
+> | V-FCFCU-2025-0015 |  |  | FCFCU |  | Statutory | THEORY_PRESERVATION | Litigation | Litigation hold/preservation letter to FCFCU for credit reporting and internal records |  |  |  | Send and document a litigation hold/preservation request to FCFCU for credit reporting files and internal communications. | Alleged | Medium | LEGACY_ID:V-016; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-071_litigation-hold-preservation-letter.md |
+
+> | V-FCFCU-2025-0018 |  |  | FCFCU |  | Statutory | THEORY_DAMAGES_FINANCIAL | Damages | Damages: out-of-pocket costs from displacement and post-sale bills |  |  |  | Collect and document out-of-pocket costs following displacement and post-sale billing for damages mapping. | Alleged | Medium | LEGACY_ID:V-019; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-074_damages-out-of-pocket-costs.md |
+
+> | V-FCFCU-2025-0019 |  |  | FCFCU |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Public | Public accountability hold: prepare fact-checked summary and timeline (not published yet) |  |  |  | Prepare and fact-check an internal public summary and timeline for accountability; do not publish yet. | Alleged | Medium | LEGACY_ID:V-020; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-075_public-accountability-hold.md |
+
+> | V-FCFCU-2025-0020 |  |  | FCFCU / Sheriff personnel |  | Tort | THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH | Tort | Conversion / Negligence: Property damage and personal property loss after removal |  |  |  | Alleged property damage (burst pipes, spoiled food, unplugged appliances) and conversion of personal property following forcible removal. | Alleged | Medium | LEGACY_ID:V-021; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-080_conversion-negligence-post-removal-damage.md |
+
+> | V-FCFCU-2025-0022 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | FCFCU continues reporting first mortgage as active delinquent installment loan post-judgment/sale |  |  |  | FCFCU continues reporting the first mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness. | Alleged | Medium | LEGACY_ID:V-023; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md |
+
+> | V-FCFCU-2025-0023 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | FCFCU continues reporting second mortgage as active delinquent installment loan post-judgment/sale |  |  |  | FCFCU continues reporting the second mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness. | Alleged | Medium | LEGACY_ID:V-024; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md |
+
+> | V-FCFCU-2025-0024 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Monthly delinquencies reported after foreclosure judgment (no lawful monthly obligation) |  |  |  | Monthly delinquencies continue to be reported after a foreclosure judgment where no lawful monthly obligation exists, potentially inflating arrears and harming credit. | Alleged | Medium | LEGACY_ID:V-025; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md |
+
+> | V-FCFCU-2025-0025 |  |  | FCFCU |  | Statutory | THEORY_FCRA_SYSTEMIC_MISREPORTING | FCRA | Past-due amount and payment schedule reported after judgment despite merger/extinguishment |  |  |  | A past-due amount and payment schedule are reported after judgment despite merger or extinguishment of the underlying obligation, suggesting inaccurate reporting. | Alleged | Medium | LEGACY_ID:V-026; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-004_past-due-amount-schedule-after-judgment.md |
+
+> | V-FCFCU-2025-0026 |  |  | FCFCU |  | Statutory | THEORY_CONTRADICTION_AND_MISREPRESENTATION | FCRA | Inconsistent reporting vs court position (ownership/possession vs ongoing borrower obligation) |  |  |  | FCFCU's reporting conflicts with positions taken in court about ownership or possession, creating a contradiction useful for disputes and complaints. | Alleged | Medium | LEGACY_ID:V-027; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-007_inconsistent-reporting-vs-court-position.md |
+
+> | V-FCFCU-2025-0027 |  |  | FCFCU/Sheriff |  | Statutory | THEORY_LACK_OF_NOTICE_AND_JURISDICTION | Due_Process | Service allegedly completed but Defendant received no notice before writ executed |  |  |  | Allegations that service was completed but no actual notice reached the Defendant before writ execution can undermine jurisdiction and due process. | Alleged | Medium | LEGACY_ID:V-028; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-030_service-completed-no-notice-before-writ.md |
+
+> | V-FCFCU-2025-0028 |  |  | Various housing providers |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Fair Housing Act | Fair Housing Act: Reasonable accommodation failure (group homes / emotional support animals) |  |  |  | Alleged and documented failures to provide reasonable accommodations (including denial of group homes or emotional support animals) under the Fair Housing Act. | Alleged | Medium | LEGACY_ID:V-029; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-076_fha-reasonable-accommodation-failure.md |
+
+> | V-FCFCU-2025-0029 |  |  | Various public accommodation operators |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | ADA Title III: Entertainment / public accommodation accessibility failures (closed captioning, audio description) |  |  |  | Instances where public accommodations failed to provide required accessibility features (e.g., closed captioning, audio description), impacting disabled patrons. | Alleged | Medium | LEGACY_ID:V-030; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-077_ada-title-iii-entertainment-access-failure.md |
+
+> | V-FCFCU-2025-0030 |  |  | Various institutions |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | ADA: Effective communication failures (failure to train staff / provide interpreters) |  |  |  | Failures to provide effective communication (e.g., sign language interpreters, auxiliary aids) and to train staff, harming people with communication disabilities. | Alleged | Medium | LEGACY_ID:V-031; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-078_ada-effective-communication-failure.md |
+
+> | V-FCFCU-2025-0031 |  |  | Major servicers / asset managers |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Fair Housing Act | Discriminatory maintenance / redlining of REO properties |  |  |  | Allegations that servicers and asset managers systematically under-maintained REO properties in majority-Black and Latino neighborhoods compared to white neighborhoods, amounting to discriminatory practices. | Alleged | Medium | LEGACY_ID:V-032; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-083_discriminatory-maintenance-redlining.md |
+
+> | V-FCFCU-2025-0032 |  |  | Harbour Portfolio VII, CWAM II, Harbour Portfolio VI |  | Statutory | THEORY_PUBLIC_ACCOUNTABILITY | Consumer Protection / FHA | Predatory land contract / reverse redlining in rent-to-own schemes |  |  |  | Claims that certain sellers marketed predatory land contracts primarily in minority neighborhoods with inflated prices and onerous terms, amounting to discriminatory lending and consumer harm. | Alleged | Medium | LEGACY_ID:V-033; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-084_predatory-land-contract-reverse-redlining.md |
+
+> | V-FCFCU-2025-0033 |  |  | Sheriff |  | Statutory | THEORY_FALSE_RETURN_OR_DEFECTIVE_SERVICE | Due_Process | Sheriff return inaccuracies (claimed posting/mailing not done) - factual dispute |  |  |  | Sheriff return records claim posting/mailing that may not have occurred, creating a factual dispute over proper service. | Alleged | Medium | LEGACY_ID:V-034; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-031_sheriff-return-inaccuracies.md |
+
+> | V-FCFCU-2025-0034 |  |  | Court |  | Statutory | THEORY_INADEQUATE_FACTFINDING | Due_Process | Court relied on service sufficiency without addressing conflicting facts |  |  |  | The court accepted service sufficiency without reconciling conflicting facts, raising issues about the adequacy of factfinding. | Alleged | Medium | LEGACY_ID:V-035; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-035_court-relied-on-service-sufficiency.md |
+
+> | V-FCFCU-2025-0035 |  |  | FCFCU |  | Procedural | THEORY_INADEQUATE_FACTFINDING | Procedure | Fraud on the court / material misrepresentation in writ petition |  |  |  | Allegations that a writ petition contained false or materially misleading statements (e.g., "Unknown Occupants"), resulting in issuance without proper notice. | Alleged | Medium | LEGACY_ID:V-036; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-082_fraud-on-the-court-material-misrepresentation.md |
+
+> | V-FCFCU-2025-0036 |  |  | Marion Superior Court / FCFCU |  | Procedural | THEORY_LACK_OF_NOTICE_AND_JURISDICTION | Procedure | Procedural error: Void judgment due to defective service / lack of jurisdiction |  |  |  | Judgment appears void because service of process did not comply with Indiana Trial Rule 4.1(B), depriving the court of personal jurisdiction. | Alleged | Medium | LEGACY_ID:V-037; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\OR_V-079_void-judgment-procedural-error.md |
+
+> | V-FCFCU-2025-0037 |  |  | Court/FCFCU |  | ADA | THEORY_ADA_PROCEDURAL_EXCLUSION | ADA | No ADA-compliant notice/accommodation despite disability communication needs |  |  |  | The court or FCFCU failed to provide ADA-compliant notice or accommodations, disadvantaging parties with disabilities. | Alleged | Medium | LEGACY_ID:V-038; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-032_no-ada-compliant-notice.md |
+
+> | V-FCFCU-2025-0038 |  |  | Plaintiff counsel |  | Procedural | THEORY_PROCEDURAL_IRREGULARITY | Procedure | Attorney appeared without formal appearance filed at hearing |  |  |  | An attorney appeared at a hearing without a formal appearance on file, which may be a procedural irregularity. | Alleged | Medium | LEGACY_ID:V-039; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-034_attorney-appeared-without-formal-appearance.md |
+
+> | V-FCFCU-2025-0039 |  |  | CFPB |  | Statutory | THEORY_REGULATORY_PRESSURE | Regulatory | CFPB complaint track for credit misreporting + cost shift |  |  |  | Prepare and submit a CFPB complaint documenting credit misreporting and cost-shifting harms. | Alleged | Medium | LEGACY_ID:V-040; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-050_cfpb-complaint-track.md |
+
+> | V-FCFCU-2025-0040 |  |  | Indiana AG |  | Statutory | THEORY_REGULATORY_PRESSURE | Regulatory | Indiana AG complaint track (pattern/practice, consumer harm) |  |  |  | Consider filing an Indiana AG complaint to highlight pattern or practice and consumer harm. | Alleged | Medium | LEGACY_ID:V-041; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-051_indiana-ag-complaint-track.md |
+
+> | V-FCFCU-2025-0045 |  |  | Citizens Energy |  | Statutory | THEORY_POST_SALE_COST_SHIFT | Utility | Post-08/15 Citizens Energy charges billed to Defendant despite FCFCU ownership/possession |  |  |  | Citizens Energy billed charges to the Defendant after FCFCU owned/possessed the property, indicating potential improper billing. | Alleged | Medium | LEGACY_ID:V-046; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-021_post-0815-citizens-energy-charges-billed.md |
+
+> | V-FCFCU-2025-0046 |  |  | Shadow Pointe HOA |  | Tort | THEORY_POST_SALE_COST_SHIFT | Tort | Post-08/15 HOA assessments/fines billed to Defendant despite FCFCU ownership/possession |  |  |  | HOA assessments or fines were billed to the Defendant after FCFCU had ownership or possession, indicating improper ledger entries. | Alleged | Medium | LEGACY_ID:V-047; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-022_post-0815-hoa-assessments-billed.md |
+
+> | V-FCFCU-2025-0047 |  |  | City of Indianapolis |  | Statutory | THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL | Municipal | City grass-cut ticket assessed against Defendant after loss of access/authority |  |  |  | A city grass-cut ticket was assessed after the Defendant lost access/authority, suggesting wrongful enforcement. | Alleged | Medium | LEGACY_ID:V-048; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md |
+
+> | V-FCFCU-2025-0048 |  |  | City of Indianapolis |  | Statutory | THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL | Municipal | Municipal code enforcement actions after possession transfer (if any) |  |  |  | Municipal code enforcement actions occurred after possession transferred, potentially misplaced responsibility. | Alleged | Medium | LEGACY_ID:V-049; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-024_municipal-code-enforcement-after-possession-transfer.md |
+
+> | V-FCFCU-2025-0049 |  |  | Multiple |  | Statutory | THEORY_COMPOUNDING_HARM | Consumer_Protection | Credit reporting harm compounded by utility/municipal delinquency risk (collections) |  |  |  | Utility and municipal delinquencies compound credit reporting harm when collections reflect on consumer reports. | Alleged | Medium | LEGACY_ID:V-050; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-026_credit-harm-compounded-utility-municipal.md |
+
+> | V-FCFCU-0000-0001 | Not in source |  | Overlook Mutual Homes, Inc. |  | Statutory | Fair Housing Act breach (reasonable accommodation failure) | Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq. | emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009). |  | E-FCFCU-EXH-0000-0001 |  | Legal dispute over the exclusion of emotional support animals from housing. | Alleged | Medium | LEGACY_ID:V-051 |
+
+> | V-FCFCU-1985-0001 | 1985 |  | Public accommodations/Federal agencies |  | Procedural | Procedural | Section 504 of the Rehabilitation Act; ADA  36.204 | These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design. |  | E-FCFCU-EXH-1985-0001 |  | Failure to rectify harms from actions that discriminate by effect/design. | Alleged | Medium | LEGACY_ID:V-052 |
+
+> | V-FCFCU-2020-0001 | August 10, 2020 |  | Moline Builders, Inc. |  | Statutory | Fair Housing Act breach (Accessibility Requirements) | 42 U.S.C. § 3604(f)(3)(C) | the court agreed, finding that the failure to provide “unimpeded access” to the front door to persons who use wheelchairs... is “precisely the discrimination the FHAA forbids.” |  | E-FCFCU-EXH-2020-0001 |  | Failure to provide wheelchair-accessible front door and walkway to covered units. | Alleged | Medium | LEGACY_ID:V-058 |
+
+> | V-FCFCU-2000-0001 | November 9, 2000 |  | City of Dallas |  | Statutory | Fair Housing Act breach (Reasonable Accommodation Denial) | 42 U.S.C. § 3604(f)(3)(B) | The United States argued that the City violated the Fair Housing Act by improperly denying a reasonable accommodation when it refused to grant the plaintiff a variance to the City's 1000 foot spacing requirement |  | E-FCFCU-EXH-2000-0001 |  | Refusal to grant spacing and occupancy variances for group homes for persons with disabilities. | Alleged | Medium | LEGACY_ID:V-060 |
+
+> | V-FCFCU-2009-0002 | 2009 to 2013 |  | Hudson City Savings Bank, F.S.B. |  | Statutory | Fair Housing Act breach (Pattern or Practice of Redlining) | Fair Housing Act; Equal Credit Opportunity Act | Hudson City Savings Bank (Hudson City) failed to provide its home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis as it provided those services to predominantly white neighborhoods, a practice commonly known as 'redlining,'" |  | E-FCFCU-EXH-2009-0002 |  | Failure to provide home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis. | Alleged | Medium | LEGACY_ID:V-061 |
+
+> | V-FCFCU-2010-0002 | April 20, 2010 |  | Barnason (Owner/Manager) |  | Statutory | Fair Housing Act breach (Sexual Harassment) | 42 U.S.C. § 3604 | the managers and owner of three residential apartment buildings in Manhattan engaged in a pattern or practice of sexual harassment of female tenants in violation of Fair Housing Act. |  | E-FCFCU-EXH-2010-0002 |  | Severe sexual harassment of female tenants by a manager who was a Level 3 sex offender. | Alleged | Medium | LEGACY_ID:V-064 |
+
+> | V-FCFCU-2025-0050 | May 28, 2025 |  | Financial Center First Credit Union / Marion Superior Court 3 |  | Procedural | Procedural | Indiana Trial Rule 4.1(B); Procedural Due Process | Service of process was not completed in accordance with Indiana Trial Rule 4.1(B); The Court therefore did not acquire personal jurisdiction over Defendant; A judgment entered without personal jurisdiction is VOID ab initio and must be vacated. |  | E-FCFCU-EXH-2025-0001 |  | Default Judgment and Decree of Foreclosure entered without jurisdiction. | Alleged | Medium | LEGACY_ID:V-072 |
+
+> | V-FCFCU-0000-0002 | Not in source |  | State Government / Judiciary |  | Procedural | Procedural | U.S. Constitution Amendment XIV,  1 | An elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections. |  | E-FCFCU-EXH-0000-0002 |  | Unjustified deprivation of life, liberty, or property. | Alleged | Medium | LEGACY_ID:V-073 |
+
+> | V-FCFCU-2009-0003 | 2009 (Caperton); 2016 (Williams) |  | State Courts / Judiciary |  | Procedural | Procedural | U.S. Constitution Amendment XIV (Due Process Clause) | The neutrality requirement helps to guarantee that life, liberty, or property will not be taken on the basis of an erroneous or distorted conception of the facts or the law. . . . there is a serious risk of actual biasbased on objective and reasonable perceptionswhen a person with a personal stake in a particular case had a significant and disproportionate influence in placing the judge on the case. |  | E-FCFCU-EXH-2009-0003 |  | Risk of actual bias in judicial decision-making. | Alleged | Medium | LEGACY_ID:V-074 |
+
+> | V-FCFCU-0000-0003 | Not in source |  | State Government / Legislatures |  | Procedural | Due Process Violation (Standard of Proof) | U.S. Constitution Amendment XIV; Clear and Convincing Evidence Standard | because the interest of parents in retaining custody of their children is fundamental, the state may not terminate parental rights through reliance on a standard of preponderance of the evidencethe proof necessary to award money damages in an ordinary civil action but must prove that the parents are unfit by clear and convincing evidence. |  | E-FCFCU-EXH-0000-0003 |  | Erroneous deprivation of fundamental interests (e.g., parental rights). | Alleged | Medium | LEGACY_ID:V-075 |
+
+> | V-FCFCU-0000-0004 | Not in source |  | State Legislatures |  | Constitutional | Unconstitutional Presumption (Vesting of Title) | U.S. Constitution Amendment XIV (Property Rights) | for suits to recover real and personal property, when the right of action has been barred by a statute of limitations and title as well as real ownership have become vested in the defendant, any later act removing or repealing the bar would be void as attempting an arbitrary transfer of title. |  | E-FCFCU-EXH-0000-0004 |  | Arbitrary transfer of title after statute of limitations has run. | Alleged | Medium | LEGACY_ID:V-077 |
+
+> | V-FCFCU-2011-0005 | July 2011 - October 2015 |  | Federal National Mortgage Association (Fannie Mae) |  | Statutory | Fair Housing Act breach (Intentional Discrimination / Disparate Impact) | Fair Housing Act (42 U.S.C. §§ 3601, 3604, 3605, 3617) | Fannie Mae and its agents have failed to conduct routine exterior maintenance and marketing of REO properties in communities of color, thereby leaving those REO properties in a state of neglect, while satisfactorily conducting routine exterior maintenance and marketing of its REO properties in predominantly white neighborhoods. |  | E-FCFCU-EXH-2011-0005 |  | Neglected REO properties in communities of color; decreased home values; health risks (high blood pressure); social isolation; anxiety; perpetuation of racial segregation. | Alleged | Medium | LEGACY_ID:V-078 |
+
+> | V-FCFCU-2012-0001 | August 27, 2012 |  | Fannie Mae / Asset Management Specialists, Inc. |  | Statutory | Failure to provide equal maintenance services (REO Dwellings) | 42 U.S.C. § 3604(b) | On August 27, 2012, Plaintiffs visited Defendant’s REO property located at 1142 Kalamazoo Avenue, Grand Rapids, MI 49507... This property had 10 maintenance deficiencies: trash, overgrown grass, overgrown shrubbery, missing screens, unsecured doors, broken and boarded windows, a damaged fence, a dilapidated garage, damaged siding, and exposed or tampered-with utilities. |  | E-FCFCU-EXH-2012-0001 |  | Property neglect: trash, overgrown grass/shrubbery, unsecured doors, broken/boarded windows, damaged fence/siding. | Alleged | Medium | LEGACY_ID:V-079 |
+
+> | V-FCFCU-2000-0002 | 2000 |  | Trial Court (Indiana) |  | Procedural | Procedural | Indiana Evidence Rule 702; Procedural Due Process | The trial court’s failure to rule on the admissibility of the evidence requires us to remand to the trial court for such proceedings as may be necessary to determine whether the statements of the purported experts meet the requirements of Evid.R. 702. |  | E-FCFCU-EXH-2000-0002 |  | Failure to address evidentiary admissibility leading to remand; unresolved questions of fact on safer alternative design. | Alleged | Medium | LEGACY_ID:V-082 |
+
+> | V-FCFCU-2025-0051 | December 9, 2025 |  | Marion Superior Court / Financial Center First Credit Union |  | Procedural | Procedural | IN Code § 32-30-10.5-10; Due Process Clause | Cody was removed from the residence at 4817 Shadow Pointe Dr. on December 9, 2025, through enforcement of a Writ of Assistance whose validity is currently under challenge. |  | E-FCFCU-EXH-2025-0002 |  | Removal from residence; homelessness; risk to safety and mental health; inability to access essential belongings. | Alleged | Medium | LEGACY_ID:V-084 |
+
+> | V-FCFCU-2025-0052 | December 2025 - January 2026 |  | Plaintiff (Financial Center First Credit Union) / Court |  | ADA | ADA | Americans with Disabilities Act (ADA) | ADA requires reasonable modifications ensuring equal access. ... Forced displacement has caused acute destabilization including inability to sleep, panic episodes, cognitive shutdown, and impaired functioning. |  | E-FCFCU-EXH-2025-0003 |  | Acute destabilization; trauma-related panic episodes; impaired cognitive functioning. | Alleged | Medium | LEGACY_ID:V-085 |
+
+> | V-FCFCU-0000-0005 | Not in source |  | Urban Search Management |  | Statutory | Discriminatory Advertising | 42 U.S.C. § 3604(c) | district court refused to instruct jury on punitive damages despite evidence that established that luxury apartment complex used exclusively white human models in its advertising |  | E-FCFCU-EXH-0000-0005 |  | Messaging of exclusion to nonwhite home seekers. | Alleged | Medium | LEGACY_ID:V-089 |
+
+> | V-FCFCU-2015-0002 | Early 2015 to August 2015 |  | Town of Cromwell (Mayor and Town Manager) |  | ADA | ADA | 42 U.S.C. §§ 3604(c), 3604(f), 3617; 42 U.S.C. § 12132 | In early 2015, Gilead Community Services, Inc.... purchased a house in Cromwell... to be used as a group home for men with disabilities... Cromwell’s mayor and other high-ranking officials joined the opposition and undertook a series of actions designed to discourage the group home... Gilead closed the group home in August 2015 |  | E-FCFCU-EXH-2015-0002 |  | Closure of a group home for men with disabilities, emotional and financial harm to Gilead Community Services, and leakage of sensitive health information. | Alleged | Medium | LEGACY_ID:V-090 |
+
+> | V-FCFCU-1975-0001 | 1975 |  | City of Newport, Rhode Island |  | Statutory | Civil Rights | 42 U.S.C. § 1983; First and Fourteenth Amendments | After Newport cancelled the contract due to a dispute over some of the hired musicians, Fact Concerts brought a § 1983 action against the city... alleging violations of the plaintiff’s rights to due process and free expression under the First Amendment. |  | E-FCFCU-EXH-1975-0001 |  | Cancellation of a contract for a music festival based on content/musicians, violating free expression and due process. | Alleged | Medium | LEGACY_ID:V-092 |
+
+> | V-FCFCU-2020-0002 | 2020-2021 |  | Town of Wolcott |  | Statutory | Fair Housing Act breach (Reasonable Accommodation Failure) | 42 U.S.C. § 3604(f)(3)(B) | setting forth consent decree calling for town, inter alia, to make payments of $350,000 in damages to group home... for failing to make FHA-mandated reasonable accommodation |  | E-FCFCU-EXH-2020-0002 |  | Denial of reasonable accommodation for a group home. | Alleged | Medium | LEGACY_ID:V-093 |
+
+> | V-FCFCU-2025-0053 | 2025-12-10 |  | Federal Courts (interpreting Rule 13(a)) |  | Procedural | Procedural | Fed. R. Civ. P. 13(a) | Every federal court that has addressed the issue has held that Rule 13(a)... bars a defendant who defaults... from later filing a transactionally related claim in a subsequent suit. This Article argues that the federal courts’ interpretation of Rule 13(a) is fundamentally wrong. |  | E-FCFCU-EXH-2025-0004 |  | Depriving defaulting defendants of potentially meritorious transactionally related claims in subsequent suits. | Alleged | Medium | LEGACY_ID:V-094 |
+
+> | V-FCFCU-0000-0006 | 1980s |  | City of Yonkers, New York |  | Statutory | Fair Housing Act breach (Exclusionary Zoning) | 42 U.S.C. § 3601 et seq. | Yonkers’s elected leaders had illegally maintained residential segregation by restricting affordable housing projects to minority areas |  | E-FCFCU-EXH-0000-0006 |  | Illegal maintenance of residential segregation. | Alleged | Medium | LEGACY_ID:V-095 |
+
+> | V-FCFCU-0000-0007 | Not in source |  | U.S. Airways, Inc. |  | ADA | ADA | Americans with Disabilities Act (ADA) - Reasonable Accommodation | As a reasonable accommodation under the ADA, Barnett asked U.S. Airways to make an exception to the seniority system so that he could retain his mailroom job. U.S. Airways denied his request and Barnett lost his job when he was bumped by an employee with more seniority. |  | E-FCFCU-EXH-0000-0007 |  | Loss of employment after being 'bumped' by more senior employee. | Alleged | Medium | LEGACY_ID:V-097 |
+
+> | V-FCFCU-0000-0008 | Not in source |  | New York Medicaid Program |  | Procedural | Procedural | ADA Integration Mandate / Rehabilitation Act / Due Process | The plaintiffs did not receive written notice of the changes in coverage and learned of the changes when they attempted to fulfill their prescriptions. ... cutting funding for medically necessary orthopedic footwear and compression stockings violated Olmstead’s integration mandate and put plaintiffs at a substantial risk of requiring institutionalized care. |  | E-FCFCU-EXH-0000-0008 |  | Loss of mobility funding without written notice; substantial risk of institutionalization. | Alleged | Medium | LEGACY_ID:V-098 |
+
+> | V-FCFCU-1993-0001 | June 9, 1993 |  | Indiana General Assembly / Melroe Company |  | Procedural | Procedural | Article I, Section 12 of the Indiana Constitution (Right to Remedy) | James McIntosh was injured in an accident involving a Clark Bobcat skid steer loader manufactured by Melroe. ... Melroe responded with a motion for summary judgment based on the ten-year statute of repose ... providing that 'a product liability action must be commenced ... within ten (10) years after the delivery of the product to the initial user or consumer.' |  | E-FCFCU-EXH-1993-0001 |  | Loss of legal remedy for injury caused by alleged product defect. | Alleged | Medium | LEGACY_ID:V-100 |
+
+> | V-FCFCU-0000-0009 | Not in source |  | Pennsylvania Dept. of Corrections |  | ADA | ADA | Title II of the ADA | Ronald Yeskey was sentenced to 18 to 36 months ... recommended that he participate in a Motivational Boot Camp ... The State refused Yeskey’s admission into the Boot Camp due to his history of hypertension. Yeskey filed suit under the ADA. |  | E-FCFCU-EXH-0000-0009 |  | Refusal of admission to Boot Camp (affecting parole eligibility) due to hypertension. | Alleged | Medium | LEGACY_ID:V-101 |
+
+> | V-FCFCU-0000-0010 | Not in source |  | St. Helena Hospital |  | ADA | ADA | ADA Title III / Rehabilitation Act | A Deaf plaintiff did not have standing to seek injunctive relief against a hospital, that failed to provide effective communication to plaintiff, who arrived in emergency room because of husband's fatal cardiac arrest. |  | E-FCFCU-EXH-0000-0010 |  | Denial of effective communication during a medical emergency (husband's cardiac arrest). | Alleged | Medium | LEGACY_ID:V-102 |
+
+> | V-FCFCU-0000-0011 | Not in source |  | City and County of Denver (Law Enforcement) |  | Statutory | Section 504 Breach / Failure to Provide Interpreter | Section 504 of the Rehabilitation Act of 1973 | Plaintiff Sarah Burke was Deaf mother ... police showed up to enforce the warrant. Ms. Burke asked for a sign language interpreter. ... the police refused and asked her 8-year-old child to interpret. They then arrested Ms. Burke ... One of the things she was trying to communicate was that she needed medication for diabetes |  | E-FCFCU-EXH-0000-0011 |  | Arrested without communication; forced to use 8-year-old child to interpret; unable to communicate medical need (diabetes). | Alleged | Medium | LEGACY_ID:V-103 |
+
+> | V-FCFCU-2012-0002 | October 2012 - June 2018 |  | Bank of America / Safeguard Properties Management, LLC |  | Statutory | Fair Housing Act breach (Race, National Origin); Discriminatory maintenance | Federal Fair Housing Act | The lawsuit alleges Defendants intentionally failed to provide routine exterior maintenance and marketing at Bank of America-owned homes in working- and middle-class African American and Latino neighborhoods in 37 metropolitan areas, while they consistently maintained similar bank-owned homes in comparable white neighborhoods. |  | E-FCFCU-EXH-2012-0002 |  | Intentional failure to provide routine exterior maintenance and marketing at bank-owned homes in African American and Latino neighborhoods compared to white neighborhoods. | Alleged | Medium | LEGACY_ID:V-106 |
+
+> | V-FCFCU-2024-0001 | September 2024 |  | Barrington Group |  | Statutory | Fair Housing Act breach (Race); Arbitrary criminal history policies | Federal Fair Housing Act | alleging discrimination due to race and color which alleged discriminatory practices against Black renters through arbitrary criminal history policies. |  | E-FCFCU-EXH-2024-0001 |  | Discriminatory practices against Black renters through arbitrary criminal history policies. | Alleged | Medium | LEGACY_ID:V-107 |
+
+> | V-FCFCU-2021-0001 | March 2021 |  | CityWide Home Loans / Pierce Appraisal / Freedom Mortgage |  | Statutory | Fair Housing Act breach (Race, Color); Appraisal Bias | Federal Fair Housing Act | Ms. Duffy and the FHCCI allege in the HUD complaints that the Respondents have violated fair housing laws by allowing race and color to impact their appraisals and/or lending practices. |  | E-FCFCU-EXH-2021-0001 |  | Black homeowner received significantly lower home appraisal until Black identifiers were removed and a white friend stood in. | Alleged | Medium | LEGACY_ID:V-112 |
+
+> | V-FCFCU-2021-0002 | March 2021 |  | Coolspring Estates / LaPorte Lake Properties |  | Statutory | Fair Housing Act breach (Familial status) | Federal Fair Housing Act | alleging violations of fair housing and other laws against families with children. |  | E-FCFCU-EXH-2021-0002 |  | Discrimination against families with children. | Alleged | Medium | LEGACY_ID:V-113 |
+
+> | V-FCFCU-2016-0005 | February 2016 |  | Grandville Cooperative / Kirkpatrick Management Co. Inc. |  | Statutory | Fair Housing Act breach (Disability, Familial status) | Federal Fair Housing Act | The complaint alleges that the defendants refused to rent to a family that included a person with disabilities stating that ‘…it will be a liability to offer the person with a disability a unit that is not accommodating to everyone in the household.’ |  | E-FCFCU-EXH-2016-0005 |  | Refusal to rent to a family with a disabled member; claimed liability for non-accommodating units. | Alleged | Medium | LEGACY_ID:V-115 |
+
+> | V-FCFCU-2020-0003 | August 2020 |  | Henry Long (Landlord) |  | Statutory | Fair Housing Act breach (Gender); Sexual Harassment | Federal Fair Housing Act | As part of the consent decree, Mr. Long will pay $45,900 in monetary relief to resolve the lawsuit which alleged he sexually harassed a female tenant. |  | E-FCFCU-EXH-2020-0003 |  | Landlord solicited sex from female tenant after she lost her job and could not afford rent. | Alleged | Medium | LEGACY_ID:V-116 |
+
+> | V-FCFCU-2021-0003 | October 2021 |  | Old National Bank |  | Statutory | Fair Housing Act breach (Race); Redlining | Federal Fair Housing Act | The FHCCI also alleges that Old National deliberately seeks to limit its residential lending business to predominantly White areas and customers and has removed branches in Black neighborhoods and sited branches in White neighborhoods – conduct which constitutes redlining. |  | E-FCFCU-EXH-2021-0003 |  | Structured business to avoid providing mortgage credit to Black residents; removed branches in Black neighborhoods. | Alleged | Medium | LEGACY_ID:V-117 |
+
+> | V-FCFCU-2018-0003 | January 2018 |  | Marquette Management & Marquette Companies |  | Statutory | Fair Housing Act breach (Familial status); Occupancy policies | Federal Fair Housing Act | alleging that Marquette Management Inc. discriminates on the basis of familial status in properties it manages in Illinois and Indiana by enforcing unduly restrictive occupancy policies. |  | E-FCFCU-EXH-2018-0003 |  | Enforcement of unduly restrictive occupancy policies against families with children. | Alleged | Medium | LEGACY_ID:V-118 |
+
+> | V-FCFCU-2019-0001 | April 2019 - April 2020 |  | Twin Creeks Homeowners Association / Kirkpatrick Property Management / Vicki New |  | Statutory | Fair Housing Act breach (Race, National Origin); Hostile Housing Environment | Federal Fair Housing Act | alleged a pattern and practice of harassing, taunting, and threatening African American and Latino residents, guests, and contractors and creating a racially hostile environment... Vicki New... engaged in a campaign of harassment based on race and national origin for more than two years. |  | E-FCFCU-EXH-2019-0001 |  | Campaign of harassment, taunting, and death threats against African American and Latino residents; failure of HOA to stop conduct. | Alleged | Medium | LEGACY_ID:V-119 |
+
+> | V-FCFCU-2010-0003 | 2010 - 2011 |  | Dearborn Superior Court No. 1 / Dearborn Circuit Court / State of Indiana |  | ADA | ADA | Americans with Disabilities Act (ADA); Section 504 of the Rehabilitation Act | Mr. Prakel repeatedly requested that Indiana’s Dearborn Superior Court No. 1 and Dearborn Circuit Court provide sign language interpreter services so that he could understand the proceedings. On each occasion, the Defendants refused to provide an interpreter or any other auxiliary aids or services. |  | E-FCFCU-EXH-2010-0003 |  | Deaf individual denied sign language interpreter services needed to understand court proceedings for his mother. | Alleged | Medium | LEGACY_ID:V-120 |
+
+> | V-FCFCU-1977-0002 | 1977 - 1983 |  | Elkhart County, Indiana / Indiana State Legislature |  | Procedural | Procedural | Due Process Clause of the Fourteenth Amendment | The manner of notice provided to appellant did not meet the requirements of the Due Process Clause of the Fourteenth Amendment... constructive notice by publication must be supplemented by notice mailed to the mortgagee's last known available address. |  | E-FCFCU-EXH-1977-0002 |  | Mortgagee (Mennonite Board of Missions) lost property interest in tax sale without receiving actual notice, only constructive notice (publication). | Alleged | Medium | LEGACY_ID:V-121 |
+
+> | V-FCFCU-2025-0054 | March 5, 2025 and April 15, 2025 |  | Marion County Sheriff / Financial Center First Credit Union (FCFCU) |  | Procedural | Due Process Failure / Defective Service | Indiana Trial Rule 4.1(B); 14th Amendment Due Process (Mennonite standard) | The Sheriff’s Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B). |  | E-FCFCU-EXH-2025-0005 |  | Loss of personal jurisdiction; wrongful entry of default judgment leading to subsequent displacement. | Alleged | Medium | LEGACY_ID:V-122 |
+
+> | V-FCFCU-2025-0055 | June 8, 2025 (and ongoing through December 2025) |  | AES Indiana / Financial Center First Credit Union / Marion County Sheriff |  | ADA | ADA | 42 U.S.C. § 12181 (ADA Title III); ADA Title II | No ADA inquiry or accommodation was provided by the Court, Plaintiff, or Sheriff before attempting service or executing the writ. Sheriff deputies did not modify service attempts to account for disability-related auditory and processing delays. |  | E-FCFCU-EXH-2025-0006 |  | Inability to effectively communicate or respond to service attempts and billing; severe emotional distress and physical risk during removal. | Alleged | Medium | LEGACY_ID:V-123 |
+
+> | V-FCFCU-2025-0056 | December 9, 2025 |  | Marion County Sheriff |  | Procedural | Procedural | Procedural Due Process; IC § 32-30-10.5-8 | No advance notice of a vacate date or removal date was provided to me. No notice was posted on the door or mailbox... I was not served with the writ prior to enforcement. |  | E-FCFCU-EXH-2025-0007 |  | Forcible removal in freezing temperatures without time to gather essential belongings; humanitarian harm to Afghan ally. | Alleged | Medium | LEGACY_ID:V-124 |
+
+> | V-FCFCU-2025-0057 | August 2025 - December 2025 |  | Financial Center First Credit Union / Clerk of Marion County |  | Statutory | Potential IC § 32-30-10-14 Violation (Surplus Mismanagement) | IN Code § 32-30-10-14 | Confirmed surplus discrepancy between the $220,863.09 judgment and $240,464.20 sheriff sale satisfaction, triggering IC § 32-30-10-14 protections. |  | E-FCFCU-EXH-2025-0008 |  | Discrepancy between judgment amount and sheriff sale satisfaction without documented surplus accounting to the defendant. | Alleged | Medium | LEGACY_ID:V-125 |
+
+> | V-FCFCU-2025-0058 | December 2025 (Post-removal) |  | Financial Center First Credit Union / Sheriff Personnel |  | Tort | Conversion / Negligence | Tort law (Negligence/Conversion); 14th Amendment (Right to Property) | Pipes in the laundry room appear to have burst due to freezing temperatures... Refrigerator had been unplugged, resulting in food spoilage and visible mold contamination. |  | E-FCFCU-EXH-2025-0009 |  | Burst pipes, mold growth, destruction of personal property (mini-fridge), and spoilage of food. | Alleged | Medium | LEGACY_ID:V-126 |
+
+> | V-FCFCU-2025-0059 | December 21, 2025 (Discovery) |  | Financial Center First Credit Union |  | Statutory | Spoliation of Evidence | Procedural Due Process; Evidence Preservation duties | Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled. |  | E-FCFCU-EXH-2025-0010 |  | Disabling of interior security cameras during a contested period of retrieval. | Alleged | Medium | LEGACY_ID:V-127 |
+
+> | V-FCFCU-2025-0060 | March 5, 2025 and April 15, 2025 |  | Financial Center First Credit Union (FCFCU) / Marion County Sheriff's Office |  | Procedural | Procedural | Indiana Trial Rule 4.1(B); Indiana Trial Rule 4.15(F) | The Sheriff's Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B). |  | E-FCFCU-EXH-2025-0011 |  | Lack of personal jurisdiction; Court never acquired jurisdiction to enter judgment. | Alleged | Medium | LEGACY_ID:V-128 |
+
+> | V-FCFCU-2025-0061 | January 2025 – May 28, 2025 |  | Financial Center First Credit Union (FCFCU) |  | Procedural | Due Process Failure / Notice Deficiency | U.S. Const. amend. XIV; Constitutional due process | Defendant never received the summons, complaint, notice of foreclosure, or any written directive informing him of required dates or obligations. Nothing was ever handed to him or placed in a location reasonably calculated to notify him. |  | E-FCFCU-EXH-2025-0012 |  | Deprivation of protected rights without meaningful opportunity to be heard; Default judgment entered without defendant's knowledge. | Alleged | Medium | LEGACY_ID:V-129 |
+
+> | V-FCFCU-2025-0062 | Pre-foreclosure through removal (2025) |  | Financial Center First Credit Union (FCFCU) |  | ADA | ADA | Americans with Disabilities Act (ADA); 42 U.S.C.  3601 et seq. | FCFCU refused to accommodate these requests and insisted on phone-based communication, despite: Email being a standard and widely accepted method of business communication; My documented disability-related limitations with phone communication. |  | E-FCFCU-EXH-2025-0013 |  | Impaired ability to access the courts; material interference with ability to process legal directives. | Alleged | Medium | LEGACY_ID:V-130 |
+
+> | V-FCFCU-2025-0063 | May 28, 2025 (Judgment) – December 9, 2025 (Removal) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Foreclosure | Fair Housing Act (42 U.S.C.  3604); IC 22-9.5 | FCFCU obtained a default judgment against me on May 28, 2025, without my knowledge or participation, and without providing reasonable accommodations for my disability-related needs. |  | E-FCFCU-EXH-2025-0014 |  | Forced displacement in freezing weather; destruction of income base; loss of stable housing. | Alleged | Medium | LEGACY_ID:V-131 |
+
+> | V-FCFCU-2025-0064 | December 9, 2025 |  | Marion County Sheriff's Office / FCFCU |  | Procedural | Procedural | Indiana Code  32-30-10.5-8; Procedural Due Process | Sheriff executed a forcible removal WITHOUT an eviction case. No summons, no hearing, no eviction order. Sheriff posted no 48-hour notice before removal. |  | E-FCFCU-EXH-2025-0015 |  | Unlawful dispossession; emergency displacement; health and safety risks. | Alleged | Medium | LEGACY_ID:V-132 |
+
+> | V-FCFCU-2025-0065 | November 2025 (Writ Petition) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Fraud on the Court / Material Misrepresentation | Procedural Due Process; TR 60(B) | Petition falsely alleged “Unknown Occupants”... Petition falsely alleged refusal to vacate... Defendant never received writ petition. Writ issued without notice. |  | E-FCFCU-EXH-2025-0016 |  | Issuance of Writ of Assistance without proper legal foundation. | Alleged | Medium | LEGACY_ID:V-133 |
+
+> | V-FCFCU-2025-0066 | December 21, 2025 (Discovery Date) |  | Financial Center First Credit Union (FCFCU) |  | Statutory | Conversion / Property Interference | Negligence; Conversion; Procedural Due Process | I discovered that a bedroom mini-fridge had been unplugged, resulting in mold contamination and total loss of the appliance... refrigerator had been unplugged, resulting in food spoilage... pipes in the laundry room had burst due to freezing temperatures. |  | E-FCFCU-EXH-2025-0017 |  | Loss of personal property; food spoilage; mold contamination; burst pipes. | Alleged | Medium | LEGACY_ID:V-134 |
+
+> | V-FCFCU-2025-0067 | December 21, 2025 |  | Financial Center First Credit Union (FCFCU) Agents |  | Statutory | Evidence Spoliation | Procedural Due Process; Access to Justice | I discovered that all interior security cameras had been unplugged and rendered nonfunctional... The unplugging of security cameras constitutes interference with potential evidence and spoliation. |  | E-FCFCU-EXH-2025-0018 |  | Material impairment of ability to document removal conduct. | Alleged | Medium | LEGACY_ID:V-135 |
+
+> | V-FCFCU-2025-0068 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No personal service on Defendant | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #1 |
+
+> | V-FCFCU-2025-0069 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No service on a person age 16 or older | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #2 |
+
+> | V-FCFCU-2025-0070 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Copy service allegedly attempted | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #3 |
+
+> | V-FCFCU-2025-0071 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Mandatory first-class mailing never completed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #4 |
+
+> | V-FCFCU-2025-0072 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No USPS receipt, tracking, or certificate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #5 |
+
+> | V-FCFCU-2025-0073 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No Clerk’s certificate of mailing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #6 |
+
+> | V-FCFCU-2025-0074 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Sheriff’s returns fail to document mailing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #7 |
+
+> | V-FCFCU-2025-0075 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Returns are facially incomplete | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #8 |
+
+> | V-FCFCU-2025-0076 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Returns internally inconsistent | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #9 |
+
+> | V-FCFCU-2025-0077 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Location of “copy left” not specified | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #10 |
+
+> | V-FCFCU-2025-0078 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No evidence documents were left in a reasonable location | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #11 |
+
+> | V-FCFCU-2025-0079 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Service not reasonably calculated to provide notice | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #12 |
+
+> | V-FCFCU-2025-0080 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Defendant present at residence approximately 99% of the time | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #13 |
+
+> | V-FCFCU-2025-0081 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | No contemporaneous corroboration of service | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #14 |
+
+> | V-FCFCU-2025-0082 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Known auditory processing limitations ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #15 |
+
+> | V-FCFCU-2025-0083 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Known executive-function disability ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #16 |
+
+> | V-FCFCU-2025-0084 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Heightened notice requirements disregarded | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #17 |
+
+> | V-FCFCU-2025-0085 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Trial Rule 4.1(B) not satisfied | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #18 |
+
+> | V-FCFCU-2025-0086 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Trial Rule 4.15(F) cure unavailable | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #19 |
+
+> | V-FCFCU-2025-0087 |  |  | FCFCU |  | Procedural | Service & Jurisdiction Failures |  | Court never acquired personal jurisdiction | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Service & Jurisdiction Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #20 |
+
+> | V-FCFCU-2025-0088 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Plaintiff falsely stated 30 days elapsed for all defendants | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #21 |
+
+> | V-FCFCU-2025-0089 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Statement objectively false as to lien defendants | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #22 |
+
+> | V-FCFCU-2025-0090 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Default sought prematurely | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #23 |
+
+> | V-FCFCU-2025-0091 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Material misrepresentation to the court | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #24 |
+
+> | V-FCFCU-2025-0092 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Prior default denial disregarded | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #25 |
+
+> | V-FCFCU-2025-0093 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | No new service effectuated after denial | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #26 |
+
+> | V-FCFCU-2025-0094 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Defects not cured before re-filing | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #27 |
+
+> | V-FCFCU-2025-0095 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Court relied on inaccurate procedural record | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #28 |
+
+> | V-FCFCU-2025-0096 |  |  | FCFCU |  | Procedural | Default Judgment Misrepresentations |  | Default entered without jurisdiction | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Default Judgment Misrepresentations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #29 |
+
+> | V-FCFCU-2025-0097 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Writ sought from void judgment | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #30 |
+
+> | V-FCFCU-2025-0098 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Petition falsely alleged “Unknown Occupants” | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #31 |
+
+> | V-FCFCU-2025-0099 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Plaintiff knew Defendant occupied property | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #32 |
+
+> | V-FCFCU-2025-0100 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Petition falsely alleged refusal to vacate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #33 |
+
+> | V-FCFCU-2025-0101 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No demand for possession served | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #34 |
+
+> | V-FCFCU-2025-0102 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No eviction action filed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #35 |
+
+> | V-FCFCU-2025-0103 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No tenant-style notice provided | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #36 |
+
+> | V-FCFCU-2025-0104 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Certificate of Service falsely executed | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #37 |
+
+> | V-FCFCU-2025-0105 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | No proof of service of writ petition | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #38 |
+
+> | V-FCFCU-2025-0106 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Defendant never received writ petition | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #39 |
+
+> | V-FCFCU-2025-0107 |  |  | FCFCU |  | Procedural | Writ of Assistance & Notice Failures |  | Writ issued without notice | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Writ of Assistance & Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #40 |
+
+> | V-FCFCU-2025-0108 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Property absent from official sheriff foreclosure postings | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #41 |
+
+> | V-FCFCU-2025-0109 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | No evidence of required multi-week newspaper publication | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #42 |
+
+> | V-FCFCU-2025-0110 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Public notice requirements unmet | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #43 |
+
+> | V-FCFCU-2025-0111 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Defendant unable to locate property on official sheriff sources | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #44 |
+
+> | V-FCFCU-2025-0112 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Sale not transparently discoverable | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #45 |
+
+> | V-FCFCU-2025-0113 |  |  | SHERIFF |  | Procedural | Sheriff Sale & Statutory Notice Failures |  | Opportunity to monitor or contest sale denied | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Sheriff Sale & Statutory Notice Failures |  |  |  | Alleged | Medium | Imported from Exhibit X Item #46 |
+
+> | V-FCFCU-2025-0114 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Sheriff’s deed allegedly executed August 19 | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #47 |
+
+> | V-FCFCU-2025-0115 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Deed not recorded with assessor until December 3 | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #48 |
+
+> | V-FCFCU-2025-0116 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Gap between execution and public recordation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #49 |
+
+> | V-FCFCU-2025-0117 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Plaintiff asserted ownership before recordation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #50 |
+
+> | V-FCFCU-2025-0118 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Authority to dispossess unclear at time of removal | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #51 |
+
+> | V-FCFCU-2025-0119 |  |  | FCFCU |  | Procedural | Chain of Title & Authority Defects |  | Lawful possessory rights unresolved at execution | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - Chain of Title & Authority Defects |  |  |  | Alleged | Medium | Imported from Exhibit X Item #52 |
+
+> | V-FCFCU-2025-0120 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Defendant is a qualified individual with disabilities | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #53 |
+
+> | V-FCFCU-2025-0121 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed to Plaintiff on multiple occasions | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #54 |
+
+> | V-FCFCU-2025-0122 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed prior to foreclosure escalation | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #55 |
+
+> | V-FCFCU-2025-0123 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability disclosed prior to removal | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #56 |
+
+> | V-FCFCU-2025-0124 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Reasonable accommodation requested (written communication) | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #57 |
+
+> | V-FCFCU-2025-0125 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Plaintiff refused accommodation as “policy” | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #58 |
+
+> | V-FCFCU-2025-0126 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | No interactive ADA process conducted | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #59 |
+
+> | V-FCFCU-2025-0127 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Manager confirmed inability to accommodate | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #60 |
+
+> | V-FCFCU-2025-0128 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Disability used to pressure payment | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #61 |
+
+> | V-FCFCU-2025-0129 |  |  | FCFCU |  | ADA | ADA & Disability-Based Procedural Violations |  | Heightened notice obligations ignored | JURISDICTIONAL & PROCEDURAL VIOLATIONS (VOID JUDGMENT) - ADA & Disability-Based Procedural Violations |  |  |  | Alleged | Medium | Imported from Exhibit X Item #62 |
+
+> | V-FCFCU-2025-0130 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal executed despite Defendant denying notice | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #63 |
+
+> | V-FCFCU-2025-0131 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Officers relied on assumptions rather than verification | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #64 |
+
+> | V-FCFCU-2025-0132 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal proceeded without service confirmation | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #65 |
+
+> | V-FCFCU-2025-0133 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No discretionary pause despite obvious confusion | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #66 |
+
+> | V-FCFCU-2025-0134 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Agent admitted lack of foreclosure experience | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #67 |
+
+> | V-FCFCU-2025-0135 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No supervisory review conducted | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #68 |
+
+> | V-FCFCU-2025-0136 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No 48-hour execution notice provided | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #69 |
+
+> | V-FCFCU-2025-0137 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No demand for possession prior to removal | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #70 |
+
+> | V-FCFCU-2025-0138 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | No eviction judgment existed | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #71 |
+
+> | V-FCFCU-2025-0139 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Removal executed as self-help eviction by proxy | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #72 |
+
+> | V-FCFCU-2025-0140 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Prior sheriff visit failed to disclose writ | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #73 |
+
+> | V-FCFCU-2025-0141 |  |  | SHERIFF |  | Procedural | Removal Conduct |  | Prior IMPD visit failed to disclose writ | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Removal Conduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #74 |
+
+> | V-FCFCU-2025-0142 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | After emergency filing, Plaintiff told court Defendant had been informed | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #75 |
+
+> | V-FCFCU-2025-0143 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Statement was false | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #76 |
+
+> | V-FCFCU-2025-0144 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Defendant learned of claim only via court email | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #77 |
+
+> | V-FCFCU-2025-0145 |  |  | FCFCU |  | Procedural | Post-Filing Misconduct |  | Continued misrepresentation during emergency posture | EXECUTION MISCONDUCT & ILLEGAL EVICTION - Post-Filing Misconduct |  |  |  | Alleged | Medium | Imported from Exhibit X Item #78 |
+
+> | V-FCFCU-2025-0146 |  |  | FCFCU |  | Tort | General |  | Unauthorized entry after removal | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #79 |
+
+> | V-FCFCU-2025-0147 |  |  | FCFCU |  | Tort | General |  | Residence “swept” without notice | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #80 |
+
+> | V-FCFCU-2025-0148 |  |  | FCFCU |  | Tort | General |  | No inventory of personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #81 |
+
+> | V-FCFCU-2025-0149 |  |  | FCFCU |  | Tort | General |  | Property handled without consent | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #82 |
+
+> | V-FCFCU-2025-0150 |  |  | FCFCU |  | Tort | General |  | Property moved from original locations | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #83 |
+
+> | V-FCFCU-2025-0151 |  |  | FCFCU |  | Tort | General |  | Property dropped or disturbed | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #84 |
+
+> | V-FCFCU-2025-0152 |  |  | FCFCU |  | Tort | General |  | Videotaping of personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #85 |
+
+> | V-FCFCU-2025-0153 |  |  | FCFCU |  | Tort | General |  | FaceTime/video call with unknown third party | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #86 |
+
+> | V-FCFCU-2025-0154 |  |  | FCFCU |  | Tort | General |  | No consent to recording | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #87 |
+
+> | V-FCFCU-2025-0155 |  |  | FCFCU |  | Tort | General |  | Recording of sensitive personal effects | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #88 |
+
+> | V-FCFCU-2025-0156 |  |  | FCFCU |  | Tort | General |  | Garage door disengaged | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #89 |
+
+> | V-FCFCU-2025-0157 |  |  | FCFCU |  | Tort | General |  | Garage door locked and restricted | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #90 |
+
+> | V-FCFCU-2025-0158 |  |  | FCFCU |  | Tort | General |  | False statements regarding garage door power | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #91 |
+
+> | V-FCFCU-2025-0159 |  |  | FCFCU |  | Tort | General |  | Garage door was Defendant’s personal property | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #92 |
+
+> | V-FCFCU-2025-0160 |  |  | FCFCU |  | Tort | General |  | Retrieval access intentionally impeded | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #93 |
+
+> | V-FCFCU-2025-0161 |  |  | FCFCU |  | Tort | General |  | Increased difficulty of retrieval created | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #94 |
+
+> | V-FCFCU-2025-0162 |  |  | FCFCU |  | Tort | General |  | No neutral witness during sweep | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #95 |
+
+> | V-FCFCU-2025-0163 |  |  | FCFCU |  | Tort | General |  | No chain-of-custody protection | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #96 |
+
+> | V-FCFCU-2025-0164 |  |  | FCFCU |  | Tort | General |  | Risk of evidence spoliation created | PROPERTY INTERFERENCE & SPOLIATION RISK - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #97 |
+
+> | V-FCFCU-2025-0165 |  |  | FCFCU |  | Tort | Property Damage |  | Spoilage of refrigerated food | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #98 |
+
+> | V-FCFCU-2025-0166 |  |  | FCFCU |  | Tort | Property Damage |  | Freezer spoilage | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #99 |
+
+> | V-FCFCU-2025-0167 |  |  | FCFCU |  | Tort | Property Damage |  | Mold growth from vacancy | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #100 |
+
+> | V-FCFCU-2025-0168 |  |  | FCFCU |  | Tort | Property Damage |  | Burst pipes / laundry room damage | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #101 |
+
+> | V-FCFCU-2025-0169 |  |  | FCFCU |  | Tort | Property Damage |  | Failure to winterize property | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #102 |
+
+> | V-FCFCU-2025-0170 |  |  | FCFCU |  | Tort | Property Damage |  | Failure to mitigate while excluding Defendant | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #103 |
+
+> | V-FCFCU-2025-0171 |  |  | FCFCU |  | Tort | Property Damage |  | Damage occurred during unlawful possession | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Property Damage |  |  |  | Alleged | Medium | Imported from Exhibit X Item #104 |
+
+> | V-FCFCU-2025-0172 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost wages due to displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #105 |
+
+> | V-FCFCU-2025-0173 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost consulting income | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #106 |
+
+> | V-FCFCU-2025-0174 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Lost professional opportunities | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #107 |
+
+> | V-FCFCU-2025-0175 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Missed client notices due to homelessness | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #108 |
+
+> | V-FCFCU-2025-0176 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Mail disruption caused by displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #109 |
+
+> | V-FCFCU-2025-0177 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Re-work required for already-paid clients | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #110 |
+
+> | V-FCFCU-2025-0178 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Harm to clients’ ability to file and work | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #111 |
+
+> | V-FCFCU-2025-0179 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | PTIN renewal missed due to crisis | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #112 |
+
+> | V-FCFCU-2025-0180 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Increased barriers to re-establishing practice | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #113 |
+
+> | V-FCFCU-2025-0181 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Impaired ability to work during tax season | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #114 |
+
+> | V-FCFCU-2025-0182 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Emergency housing costs | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #115 |
+
+> | V-FCFCU-2025-0183 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Transportation and survival expenses | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #116 |
+
+> | V-FCFCU-2025-0184 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Utility bills charged during Plaintiff’s claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #117 |
+
+> | V-FCFCU-2025-0185 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Water bill issued despite claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #118 |
+
+> | V-FCFCU-2025-0186 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Electric service left in Defendant’s name | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #119 |
+
+> | V-FCFCU-2025-0187 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Utility shutoff harm | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #120 |
+
+> | V-FCFCU-2025-0188 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Property taxes demanded during Plaintiff’s claimed ownership | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #121 |
+
+> | V-FCFCU-2025-0189 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | $10,000 accounting discrepancy in sale proceeds | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #122 |
+
+> | V-FCFCU-2025-0190 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Retroactive interest doubling | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #123 |
+
+> | V-FCFCU-2025-0191 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Attorney fees re-added post hoc | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #124 |
+
+> | V-FCFCU-2025-0192 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Accounting manipulation to eliminate surplus | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #125 |
+
+> | V-FCFCU-2025-0193 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | Misrepresentation of payoff amount ($22k vs ~$4k) | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #126 |
+
+> | V-FCFCU-2025-0194 |  |  | FCFCU |  | Tort | Financial & Economic Harm |  | False payoff demand deterred cure attempt | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Financial & Economic Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #127 |
+
+> | V-FCFCU-2025-0195 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Severe emotional distress | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #128 |
+
+> | V-FCFCU-2025-0196 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Re-traumatization | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #129 |
+
+> | V-FCFCU-2025-0197 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Sleep deprivation | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #130 |
+
+> | V-FCFCU-2025-0198 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Cognitive exhaustion | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #131 |
+
+> | V-FCFCU-2025-0199 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Loss of sense of safety | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #132 |
+
+> | V-FCFCU-2025-0200 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Exposure to freezing conditions | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #133 |
+
+> | V-FCFCU-2025-0201 |  |  | FCFCU |  | Tort | Personal, Psychological & Safety Harm |  | Health deterioration risk | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Personal, Psychological & Safety Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #134 |
+
+> | V-FCFCU-2025-0202 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Coercive sexual demand in exchange for money | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #135 |
+
+> | V-FCFCU-2025-0203 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Occurred while homeless and freezing | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #136 |
+
+> | V-FCFCU-2025-0204 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Directly caused by unlawful displacement | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #137 |
+
+> | V-FCFCU-2025-0205 |  |  | FCFCU |  | Tort | Sexual Coercion Under Duress |  | Foreseeable vulnerability created by Defendants’ actions | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Sexual Coercion Under Duress |  |  |  | Alleged | Medium | Imported from Exhibit X Item #138 |
+
+> | V-FCFCU-2025-0206 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Displacement of roommate | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #139 |
+
+> | V-FCFCU-2025-0207 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Harm to dependent ally relying on Defendant’s support | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #140 |
+
+> | V-FCFCU-2025-0208 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Interruption of legal and caregiving assistance to ally | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #141 |
+
+> | V-FCFCU-2025-0209 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Harm to ally’s legal stability | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #142 |
+
+> | V-FCFCU-2025-0210 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Emotional distress to Defendant’s mother | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #143 |
+
+> | V-FCFCU-2025-0211 |  |  | FCFCU |  | Tort | Third-Party & Collateral Harm |  | Burden placed on family and helpers | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Third-Party & Collateral Harm |  |  |  | Alleged | Medium | Imported from Exhibit X Item #144 |
+
+> | V-FCFCU-2025-0212 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Winter conditions known | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #145 |
+
+> | V-FCFCU-2025-0213 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Disability known or reasonably discoverable | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #146 |
+
+> | V-FCFCU-2025-0214 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Homelessness foreseeable outcome | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #147 |
+
+> | V-FCFCU-2025-0215 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Client harm foreseeable during tax season | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #148 |
+
+> | V-FCFCU-2025-0216 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Proceeded despite obvious risk | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #149 |
+
+> | V-FCFCU-2025-0217 |  |  | FCFCU |  | Tort | Foreseeability & Recklessness |  | Continued escalation despite mounting harm | DAMAGES, IRREPARABLE HARM & FORESEEABILITY - Foreseeability & Recklessness |  |  |  | Alleged | Medium | Imported from Exhibit X Item #150 |
+
+> | V-FCFCU-2025-0218 |  |  | FCFCU |  | Constitutional | General |  | State actors deprived Defendant of real property | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #151 |
+
+> | V-FCFCU-2025-0219 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without jurisdiction | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #152 |
+
+> | V-FCFCU-2025-0220 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without notice | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #153 |
+
+> | V-FCFCU-2025-0221 |  |  | FCFCU |  | Constitutional | General |  | Deprivation occurred without opportunity to be heard | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #154 |
+
+> | V-FCFCU-2025-0222 |  |  | FCFCU |  | Constitutional | General |  | Sheriff executed removal despite unresolved service defects | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #155 |
+
+> | V-FCFCU-2025-0223 |  |  | FCFCU |  | Constitutional | General |  | State actors relied on assumptions rather than verified process | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #156 |
+
+> | V-FCFCU-2025-0224 |  |  | FCFCU |  | Constitutional | General |  | Disparate impact on disabled Defendant | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #157 |
+
+> | V-FCFCU-2025-0225 |  |  | FCFCU |  | Constitutional | General |  | Failure to provide reasonable modification | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #158 |
+
+> | V-FCFCU-2025-0226 |  |  | FCFCU |  | Constitutional | General |  | Failure to engage in ADA interactive process | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #159 |
+
 > | V-FCFCU-2025-0227 |  |  | FCFCU |  | Constitutional | General |  | Illegal eviction effectuated through state authority | FEDERAL CONSTITUTIONAL & CIVIL RIGHTS VIOLATIONS (PRESERVED) - General |  |  |  | Alleged | Medium | Imported from Exhibit X Item #160 |
 
 ### Assistant
@@ -3373,1106 +3925,2206 @@ canonical_ref: ""
 > Tell me which.
 
 ### User
-> both please and double check the content folders and make sure we are good to start printing my binder. ```markdown
-> . 📂 content
-> ├── 📄 000_MASTER_INDEX.md
-> └── 📂 0_ADMIN/
-> │  └── 📂 10_checklists/
-> │    ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │    ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │    ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │    ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │    ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │    ├── 📄 _10_checklists.md
-> │    ├── 📄 index.html
-> │  └── 📂 10_index/
-> │    ├── 📄 NT_Contacts.md
-> │    ├── 📄 _10_index.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_case_logs/
-> │    └── 📂 10_Primary_Log/
-> │      ├── 📄 NT_Master_Case_Log.md
-> │      ├── 📄 _10_Primary_Log.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_case_logs.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_financial/
-> │    ├── 📄 NT_Financial_Tracker.md
-> │    ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │    ├── 📄 _30_financial.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_overviews/
-> │    └── 📂 10_Listen/
-> │      ├── 📄 _10_Listen.md
-> │      ├── 📄 critiques__NT_Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │      ├── 📄 critiques__OR_foreclosure_void_judgment_institutional_failur.m4a
-> │      ├── 📄 debates__NT_debate.m4a
-> │      ├── 📄 debates__NT_foreclosure_void_versus_damages_due_process.m4a
-> │      ├── 📄 deep_dives__NT_forensic_audit_of_a_void_foreclosure.m4a
-> │      ├── 📄 deep_dives__NT_integrate_disability_separate_appe.m4a
-> │      ├── 📄 index.html
-> │    └── 📂 20_Read/
-> │      ├── 📄 _20_Read.md
-> │      ├── 📄 explainers__NT_crisis_the_anatomy_of_institutional_failure.pdf
-> │      ├── 📄 explainers__NT_wrongful_foreclosure_a_case_study_in_civil_rig.pdf
-> │      ├── 📄 explainers__OR_void_judgment_eviction_crisis.pdf
-> │      ├── 📄 index.html
-> │      ├── 📄 maps__NT_Procedural_failure_map_one_pager.md
-> │      ├── 📄 reports__NT_Crisis_The_Anatomy_of_Institutional_Failure.pdf
-> │      ├── 📄 reports__NT_Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
-> │      ├── 📄 reports__NT__Session_Summary_2025-12-15_i_knew_b.md
-> │      ├── 📄 reports__NT_case-narrative-wrongful-foreclosure-and-displ.html
-> │      ├── 📄 reports__NT_legal-memorandum.html
-> │      ├── 📄 reports__NT_procedural_failure_map_one_pager.html
-> │      ├── 📄 reports__NT_talking_points.html
-> │      ├── 📄 reports__NT_uncategorized_bundle.pdf
-> │      ├── 📄 reports__OR_Void_Judgment_Eviction_Crisis.pdf
-> │      ├── 📄 reports__PL_proposal-for-strategic-reports-in-the-matter-.html
-> │    ├── 📄 _40_overviews.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_summaries/
-> │    ├── 📄 Emergency_Motion_Preserve_Surplus_Funds.md
-> │    ├── 📄 Hearing_Handout_Accounting_Summary.md
-> │    ├── 📄 NT_Case_Overview_One_Pager_Family.md
-> │    ├── 📄 NT_Case_Strategy_Decision_Tree.md
-> │    ├── 📄 NT_Family_Summary_One_Pager.md
-> │    ├── 📄 NT_Urgent_Delay_Notification.md
-> │    ├── 📄 _40_summaries.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_protocols/
-> │    ├── 📄 NT_PROTOCOL_Canonical_Case_Knowledge_Base.md
-> │    ├── 📄 NT_PROTOCOL_Low_Power_Cognitive_Management.md
-> │    ├── 📄 _50_protocols.md
-> │    ├── 📄 index.html
-> │  └── 📂 70_templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 MO_TEMPLATE_emergency_stay_of_writ.md
-> │      ├── 📄 MO_TEMPLATE_vacate_void_judgment.md
-> │      ├── 📄 _10_motions.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_declarations/
-> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
-> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
-> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Declarations.md
-> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
-> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
-> │      ├── 📄 _20_declarations.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_exhibits/
-> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
-> │      ├── 📄 _30_exhibits.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_orders/
-> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
-> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
-> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
-> │      ├── 📄 _40_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_internal/
-> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
-> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
-> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
-> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
-> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
-> │      ├── 📄 NT_TEMPLATE_Section_Index.md
-> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
-> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
-> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
-> │      ├── 📄 NT_TEMPLATE_War_Note.md
-> │      ├── 📄 NT_TEMPLATE_ada_packet.md
-> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
-> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
-> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
-> │      ├── 📄 _50_internal.md
-> │      ├── 📄 index.html
-> │    ├── 📄 NT_TPL_QiNote_Insight_Capture.md
-> │    ├── 📄 _70_templates.md
-> │    ├── 📄 index.html
-> │  └── 📂 80_integrity_tooling/
-> │    ├── 📄 _80_integrity_tooling.md
-> │    ├── 📄 index.html
-> │  └── 📂 90_pack_blueprints/
-> │    ├── 📄 NT_PACK_AGENCY.yaml
-> │    ├── 📄 NT_PACK_JUDGE.yaml
-> │    ├── 📄 NT_PACK_OPPOSING.yaml
-> │    ├── 📄 NT_PACK_SELF.yaml
-> │    ├── 📄 _90_pack_blueprints.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PROTOCOL_Gemini.md
-> │  ├── 📄 _0_ADMIN.md
-> │  ├── 📄 index.html
-> └── 📂 A_TIMELINE/
-> │  └── 📂 2023/
-> │    ├── 📄 _2023.md
-> │    └── 📂 events/
-> │      ├── 📄 _events.md
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  └── 📂 2024/
-> │    ├── 📄 _2024.md
-> │    └── 📂 events/
-> │      ├── 📄 _events.md
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  └── 📂 2025/
-> │    ├── 📄 _2025.md
-> │    └── 📂 events/
-> │      ├── 📄 2025-01-16_Case_Filed.md
-> │      ├── 📄 2025-03-05_Service_Attempt_1.md
-> │      ├── 📄 2025-04-15_Service_Attempt_2.md
-> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │      ├── 📄 2025-08-15_Sheriff_Sale.md
-> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │      ├── 📄 2025-12-10_Motions_Filed.md
-> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │      ├── 📄 2025-12-21_Case_Summary.md
-> │      ├── 📄 2025-12-21_Gigi_Escape_During_Displacement.md
-> │      ├── 📄 2025-12-21_Post_Removal_Harms_and_Damages.md
-> │      ├── 📄 _events.md
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  └── 📂 2026/
-> │    ├── 📄 _2026.md
-> │    └── 📂 events/
-> │      ├── 📄 2026-01-07_EasyTax_Demand_Sent.md
-> │      ├── 📄 2026-01-09__PL_2026-01-09_Appearance_Plaintiff.md
-> │      ├── 📄 2026-01-18_Housing_Fallout_Otis.md
-> │      ├── 📄 2026-01-18_Relocation_to_Evansville.md
-> │      ├── 📄 2026-01-18_Zai_Asylum_Case_Closure.md
-> │      ├── 📄 _events.md
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 index.md
-> │  ├── 📄 _A_TIMELINE.md
-> │  ├── 📄 index.html
-> └── 📂 B_EVIDENCE/
-> │  └── 📂 10_evidence_admin/
-> │    ├── 📄 10_chain_of_custody.md
-> │    ├── 📄 20_Evidence_Log.md
-> │    ├── 📄 Access_Denial_Record.md
-> │    ├── 📄 EXH_Raw_Exhibit_Map.md
-> │    ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │    ├── 📄 NT_Harm_Log_2025-12-21_Hotel_Deposit.md
-> │    ├── 📄 NT_Harm_Log_2026-01-18_Otis_Fallout.md
-> │    ├── 📄 NT_Utility_Exploitation_Log.md
-> │    ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 Utility_Dispute_Letter.md
-> │    ├── 📄 _10_evidence_admin.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_court_record/
-> │    └── 📂 10_docket_files/
-> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
-> │      ├── 📄 024_Service Returned Served.pdf
-> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
-> │      ├── 📄 029_Emergency_Supplemental_Declara.pdf
-> │      ├── 📄 035_01092026_005.pdf.pdf
-> │      ├── 📄 EXH_026_Exhibit_List_A-G.pdf
-> │      ├── 📄 EXH__026_Exhibit_List_A-G.pdf
-> │      ├── 📄 MO_013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO_016_Order_Denying_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO_019_Amended_Motion_Default_Judgment_1.pdf
-> │      ├── 📄 MO_020_Amended_Motion_Default_Judgment_2.pdf
-> │      ├── 📄 MO_025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 MO_027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 MO__013_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 MO__019_Amended_Motion_Default_Judgmen.pdf
-> │      ├── 📄 MO__020_Amended_Motion_Default_Judgmen.pdf
-> │      ├── 📄 MO__025_Motion_Vacate_Stay_Writ.pdf
-> │      ├── 📄 MO__027_Supplemental_Motion_Access.pdf
-> │      ├── 📄 OR_023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 OR_031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 OR_032_Proposed_Order_Stay.pdf
-> │      ├── 📄 OR__017_Order_Denying_Default_Judgment.pdf
-> │      ├── 📄 OR__023_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 OR__031_Proposed_Order_Vacate.pdf
-> │      ├── 📄 OR__032_Proposed_Order_Stay.pdf
-> │      ├── 📄 PL_001_Complaint.pdf
-> │      ├── 📄 PL_002_Appearance.pdf
-> │      ├── 📄 PL_003_Request_for_Admissions.pdf
-> │      ├── 📄 PL_004_Notice_to_Homeowners.pdf
-> │      ├── 📄 PL_005_Appearance_2.pdf
-> │      ├── 📄 PL_006_Summons_1.pdf
-> │      ├── 📄 PL_007_Summons_2.pdf
-> │      ├── 📄 PL_008_Summons_3.pdf
-> │      ├── 📄 PL_009_Summons_4.pdf
-> │      ├── 📄 PL_010_Summons_5.pdf
-> │      ├── 📄 PL_011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 PL_012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 PL_014_Affidavit.pdf
-> │      ├── 📄 PL_015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
-> │      ├── 📄 PL_018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 PL_021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 PL_022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 PL_024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 PL_028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 PL_029_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 PL_030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 PL_033_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 PL_2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 PL__001_Complaint.pdf
-> │      ├── 📄 PL__002_Appearance.pdf
-> │      ├── 📄 PL__003_Request_for_Admissions.pdf
-> │      ├── 📄 PL__004_Notice_to_Homeowners.pdf
-> │      ├── 📄 PL__005_Appearance_2.pdf
-> │      ├── 📄 PL__006_Summons_1.pdf
-> │      ├── 📄 PL__007_Summons_2.pdf
-> │      ├── 📄 PL__008_Summons_3.pdf
-> │      ├── 📄 PL__009_Summons_4.pdf
-> │      ├── 📄 PL__010_Summons_5.pdf
-> │      ├── 📄 PL__011_Service_Returned_03-05-2025.pdf
-> │      ├── 📄 PL__012_Service_Returned_04-15-2025.pdf
-> │      ├── 📄 PL__014_Affidavit.pdf
-> │      ├── 📄 PL__015_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 PL__016_Affidavit_Additional.pdf
-> │      ├── 📄 PL__018_Omitted_Notice_of_Service.pdf
-> │      ├── 📄 PL__021_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 PL__022_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 PL__024_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 PL__028_Report_Court_Defendant_Request.pdf
-> │      ├── 📄 PL__030_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 _10_docket_files.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_court_record.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_primary/
-> │    └── 📂 10_fcfcu/
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
-> │      ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
-> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │      ├── 📄 20241204_fcfcu_statement-(1).pdf
-> │      ├── 📄 20241204_fcfcu_statement-(2).pdf
-> │      ├── 📄 20241204_fcfcu_statement.pdf
-> │      ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
-> │      ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
-> │      ├── 📄 21june-24-4817shadow_appraisal.pdf
-> │      ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │      ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
-> │      ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
-> │      ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
-> │      ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
-> │      ├── 📄 PL_report_to_court_on_defendants_request.pdf
-> │      ├── 📄 _10_fcfcu.md
-> │      ├── 📄 _README.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_aes/
-> │      ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
-> │      ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
-> │      ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
-> │      ├── 📄 _20_aes.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _30_primary.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_supporting/
-> │    ├── 📄 40_supporting.md
-> │    ├── 📄 _40_supporting.md
-> │    └── 📂 docs/
-> │      ├── 📄 _docs.md
-> │      └── 📂 affidavits/
-> │        ├── 📄 PL_affidavits.md
-> │        ├── 📄 _affidavits.md
-> │        └── 📂 ada-disability/
-> │          ├── 📄 _ada-disability.md
-> │          ├── 📄 index.html
-> │        └── 📂 character/
-> │          ├── 📄 _character.md
-> │          ├── 📄 index.html
-> │        └── 📂 community-service/
-> │          ├── 📄 _community-service.md
-> │          ├── 📄 index.html
-> │        └── 📂 credibility/
-> │          ├── 📄 _credibility.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 observations/
-> │          ├── 📄 _observations.md
-> │          ├── 📄 index.html
-> │      └── 📂 declarations/
-> │        ├── 📄 PL_declarations.md
-> │        ├── 📄 _declarations.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 receipts/
-> │        ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
-> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 _receipts.md
-> │        ├── 📄 index.html
-> │      └── 📂 records/
-> │        ├── 📄 Foreclosure and Housing Litigation Case Record.csv
-> │        ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
-> │        ├── 📄 _records.md
-> │        ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    └── 📂 multi-media/
-> │      ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
-> │      ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
-> │      ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
-> │      ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
-> │      └── 📂 Photos_Conditions/
-> │        ├── 📄 _Photos_Conditions.md
-> │        ├── 📄 index.html
-> │      └── 📂 Weather_Reports/
-> │        ├── 📄 PL_Weather_Reports.md
-> │        ├── 📄 _Weather_Reports.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _multi-media.md
-> │      ├── 📄 index.html
-> │    └── 📂 property/
-> │      └── 📂 10_mortgage_history/
-> │        └── 📂 10_payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
-> │          ├── 📄 20_payments.md
-> │          ├── 📄 _10_payments.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _10_mortgage_history.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 _20_parcel.md
-> │        ├── 📄 index.html
-> │        ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
-> │        ├── 📄 parcel_6016506_prc (2).pdf
-> │      ├── 📄 _property.md
-> │      ├── 📄 index.html
-> │  └── 📂 50_quarantine_candidates/
-> │    ├── 📄 50_quarantine_candidates.md
-> │    ├── 📄 _50_quarantine_candidates.md
-> │    ├── 📄 index.html
-> │  ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │  ├── 📄 _B_EVIDENCE.md
-> │  ├── 📄 index.html
-> └── 📂 C_VIS/
-> │  └── 📂 10_violations/
-> │    └── 📂 COUNSEL/
-> │      ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0038_procedure.md
-> │      ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
-> │      ├── 📄 _COUNSEL.md
-> │      ├── 📄 index.html
-> │    └── 📂 COURT/
-> │      ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
-> │      ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
-> │      ├── 📄 NT_V-FCFCU-0000-0002_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2000-0002_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2009-0003_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2010-0003_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0034_due-process.md
-> │      ├── 📄 NT_V-FCFCU-2025-0050_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2025-0051_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2025-0052_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0053_procedural.md
-> │      ├── 📄 OR_V-079_void-judgment-procedural-error.md
-> │      ├── 📄 PL_V-032_no-ada-compliant-notice.md
-> │      ├── 📄 _COURT.md
-> │      ├── 📄 index.html
-> │    └── 📂 CREDIT_BUREAUS/
-> │      ├── 📄 NT_V-011_experian-reinvestigation-failure.md
-> │      ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
-> │      ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
-> │      ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
-> │      ├── 📄 NT_V-073_damages-credit-score-suppression.md
-> │      ├── 📄 NT_V-FCFCU-2025-0001_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0002_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0003_fcra.md
-> │      ├── 📄 _CREDIT_BUREAUS.md
-> │      ├── 📄 index.html
-> │    └── 📂 FCFCU/
-> │      ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
-> │      ├── 📄 NT_V-006_dual-tradeline-double-counting.md
-> │      ├── 📄 NT_V-008_credit-defamation-false-publication.md
-> │      ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
-> │      ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
-> │      ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
-> │      ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
-> │      ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
-> │      ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
-> │      ├── 📄 NT_V-078_ada-effective-communication-failure.md
-> │      ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
-> │      ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
-> │      ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
-> │      ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
-> │      ├── 📄 NT_V-FCFCU-2025-0004_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0005_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0006_tort.md
-> │      ├── 📄 NT_V-FCFCU-2025-0007_fdcpa.md
-> │      ├── 📄 NT_V-FCFCU-2025-0008_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0009_tort.md
-> │      ├── 📄 NT_V-FCFCU-2025-0010_due-process.md
-> │      ├── 📄 NT_V-FCFCU-2025-0011_procedure-accounting.md
-> │      ├── 📄 NT_V-FCFCU-2025-0012_accounting.md
-> │      ├── 📄 NT_V-FCFCU-2025-0013_tort.md
-> │      ├── 📄 NT_V-FCFCU-2025-0014_litigation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0015_litigation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0016_litigation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0017_damages.md
-> │      ├── 📄 NT_V-FCFCU-2025-0018_damages.md
-> │      ├── 📄 NT_V-FCFCU-2025-0019_public.md
-> │      ├── 📄 NT_V-FCFCU-2025-0020_tort.md
-> │      ├── 📄 NT_V-FCFCU-2025-0021_procedure---evidence.md
-> │      ├── 📄 NT_V-FCFCU-2025-0022_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0023_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0024_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0025_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0026_fcra.md
-> │      ├── 📄 NT_V-FCFCU-2025-0027_due-process.md
-> │      ├── 📄 NT_V-FCFCU-2025-0035_procedure.md
-> │      ├── 📄 NT_V-FCFCU-2025-0036_procedure.md
-> │      ├── 📄 NT_V-FCFCU-2025-0037_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0054_due-process-failure---defective-service.md
-> │      ├── 📄 NT_V-FCFCU-2025-0060_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2025-0061_due-process-failure---notice-deficiency.md
-> │      ├── 📄 NT_V-FCFCU-2025-0062_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0063_foreclosure.md
-> │      ├── 📄 NT_V-FCFCU-2025-0064_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2025-0065_fraud-on-the-court---material-misrepresentation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0066_conversion---property-interference.md
-> │      ├── 📄 NT_V-FCFCU-2025-0067_evidence-spoliation.md
-> │      ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> │      ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> │      ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> │      ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
-> │      ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
-> │      ├── 📄 _FCFCU.md
-> │      ├── 📄 index.html
-> │    └── 📂 OTHER_PARTIES/
-> │      ├── 📄 NT_V-070_global-demand-letter.md
-> │      ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
-> │      ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
-> │      ├── 📄 NT_V-075_public-accountability-hold.md
-> │      ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
-> │      ├── 📄 NT_V-090_secondary-displacement-cascade-of-harm.md
-> │      ├── 📄 NT_V-110_easytax-theft-conversion.md
-> │      ├── 📄 NT_V-111_zai-asylum-case-closure.md
-> │      ├── 📄 NT_V-112_forced-relocation-evansville.md
-> │      ├── 📄 NT_V-113_otis-predatory-housing-harassment.md
-> │      ├── 📄 NT_V-FCFCU-0000-0001_fair-housing-act-breach--reasonable-accommodation-.md
-> │      ├── 📄 NT_V-FCFCU-0000-0003_due-process-violation--standard-of-proof-.md
-> │      ├── 📄 NT_V-FCFCU-0000-0004_unconstitutional-presumption--vesting-of-title-.md
-> │      ├── 📄 NT_V-FCFCU-0000-0007_ada.md
-> │      ├── 📄 NT_V-FCFCU-0000-0008_procedural.md
-> │      ├── 📄 NT_V-FCFCU-0000-0009_ada.md
-> │      ├── 📄 NT_V-FCFCU-0000-0010_ada.md
-> │      ├── 📄 NT_V-FCFCU-1972-0001_procedural.md
-> │      ├── 📄 NT_V-FCFCU-1977-0001_due-process-failure---notice-error.md
-> │      ├── 📄 NT_V-FCFCU-1977-0002_procedural.md
-> │      ├── 📄 NT_V-FCFCU-1993-0001_procedural.md
-> │      ├── 📄 NT_V-FCFCU-1996-0001_fair-housing-act-breach--race-discrimination-.md
-> │      ├── 📄 NT_V-FCFCU-1999-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-1999-0002_fair-housing-act-breach--disability-accessibility-.md
-> │      ├── 📄 NT_V-FCFCU-2003-0001_fair-housing-act-breach--familial-status-discrimin.md
-> │      ├── 📄 NT_V-FCFCU-2004-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-2005-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-2008-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-2009-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-2009-0004_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2010-0001_ada.md
-> │      ├── 📄 NT_V-FCFCU-2011-0001_fair-housing-act-breach--intentional-discriminatio.md
-> │      ├── 📄 NT_V-FCFCU-2011-0002_fair-housing-act-breach--terms-and-conditions-of-s.md
-> │      ├── 📄 NT_V-FCFCU-2011-0003_fair-housing-act-breach--residential-real-estate-r.md
-> │      ├── 📄 NT_V-FCFCU-2011-0004_fair-housing-act-breach--perpetuating-segregation-.md
-> │      ├── 📄 NT_V-FCFCU-2012-0003_fair-housing-act-breach--disability---design-and-c.md
-> │      ├── 📄 NT_V-FCFCU-2013-0001_fair-housing-act-breach--race-and-color-discrimina.md
-> │      ├── 📄 NT_V-FCFCU-2013-0002_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2013-0003_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2014-0001_discriminatory-treatment-in-property-maintenance.md
-> │      ├── 📄 NT_V-FCFCU-2014-0002_fair-housing-act-breach--disability---restrictive-.md
-> │      ├── 📄 NT_V-FCFCU-2015-0001_fair-housing-act-breach--design-and-construction-.md
-> │      ├── 📄 NT_V-FCFCU-2015-0003_fair-housing-act-breach--discriminatory-statements.md
-> │      ├── 📄 NT_V-FCFCU-2015-0004_fair-housing-act-breach--race--national-origin---d.md
-> │      ├── 📄 NT_V-FCFCU-2016-0001_fair-housing-act-breach--retaliation-.md
-> │      ├── 📄 NT_V-FCFCU-2016-0002_fair-housing-act-breach--familial-status-.md
-> │      ├── 📄 NT_V-FCFCU-2016-0003_fair-housing-act-breach--race--gender--disability-.md
-> │      ├── 📄 NT_V-FCFCU-2016-0004_fair-housing-act-breach--disability---failure-to-r.md
-> │      ├── 📄 NT_V-FCFCU-2017-0001_predatory-land-contract---housing-discrimination--.md
-> │      ├── 📄 NT_V-FCFCU-2018-0001_breach-of-warranty-of-habitability.md
-> │      ├── 📄 NT_V-FCFCU-2018-0002_fair-housing-act-breach--race--color--national-ori.md
-> │      ├── 📄 NT_V-FCFCU-2020-0001_fair-housing-act-breach--accessibility-requirement.md
-> │      ├── 📄 NT_V-FCFCU-2020-0002_fair-housing-act-breach--reasonable-accommodation-.md
-> │      ├── 📄 NT_V-FCFCU-2020-0003_fair-housing-act-breach--gender---sexual-harassmen.md
-> │      ├── 📄 NT_V-FCFCU-2021-0002_fair-housing-act-breach--familial-status-.md
-> │      ├── 📄 NT_V-FCFCU-2021-0003_fair-housing-act-breach--race---redlining.md
-> │      ├── 📄 NT_V-FCFCU-2024-0001_fair-housing-act-breach--race---arbitrary-criminal.md
-> │      ├── 📄 NT_V-FCFCU-2025-0028_fair-housing-act.md
-> │      ├── 📄 NT_V-FCFCU-2025-0029_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0030_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0032_consumer-protection---fha.md
-> │      ├── 📄 NT_V-FCFCU-2025-0043_reputation.md
-> │      ├── 📄 NT_V-FCFCU-2025-0049_consumer-protection.md
-> │      ├── 📄 NT_V-FCFCU-2025-0057_potential-ic---32-30-10-14-violation--surplus-mism.md
-> │      ├── 📄 NT_V-FCFCU-2025-0059_spoliation-of-evidence.md
-> │      ├── 📄 NT_V-FCFCU-2026-0001_general.md
-> │      ├── 📄 _OTHER_PARTIES.md
-> │      ├── 📄 index.html
-> │    └── 📂 REGULATORS/
-> │      ├── 📄 NT_V-FCFCU-0000-0005_discriminatory-advertising.md
-> │      ├── 📄 NT_V-FCFCU-1985-0001_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2010-0002_fair-housing-act-breach--sexual-harassment-.md
-> │      ├── 📄 NT_V-FCFCU-2011-0005_fair-housing-act-breach--intentional-discriminatio.md
-> │      ├── 📄 NT_V-FCFCU-2012-0001_failure-to-provide-equal-maintenance-services--reo.md
-> │      ├── 📄 NT_V-FCFCU-2012-0002_fair-housing-act-breach--race--national-origin---d.md
-> │      ├── 📄 NT_V-FCFCU-2015-0002_ada.md
-> │      ├── 📄 NT_V-FCFCU-2016-0005_fair-housing-act-breach--disability--familial-stat.md
-> │      ├── 📄 NT_V-FCFCU-2018-0003_fair-housing-act-breach--familial-status---occupan.md
-> │      ├── 📄 NT_V-FCFCU-2019-0001_fair-housing-act-breach--race--national-origin---h.md
-> │      ├── 📄 NT_V-FCFCU-2025-0031_fair-housing-act.md
-> │      ├── 📄 NT_V-FCFCU-2025-0039_regulatory.md
-> │      ├── 📄 NT_V-FCFCU-2025-0040_regulatory.md
-> │      ├── 📄 NT_V-FCFCU-2025-0041_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0042_ada.md
-> │      ├── 📄 PL_V-050_cfpb-complaint-track.md
-> │      ├── 📄 PL_V-051_indiana-ag-complaint-track.md
-> │      ├── 📄 PL_V-052_icrc-complaint-track.md
-> │      ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
-> │      ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
-> │      ├── 📄 _REGULATORS.md
-> │      ├── 📄 index.html
-> │    └── 📂 SHERIFF/
-> │      ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
-> │      ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
-> │      ├── 📄 NT_V-FCFCU-2025-0033_due-process.md
-> │      ├── 📄 NT_V-FCFCU-2025-0055_ada.md
-> │      ├── 📄 NT_V-FCFCU-2025-0056_procedural.md
-> │      ├── 📄 NT_V-FCFCU-2025-0058_conversion---negligence.md
-> │      ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
-> │      ├── 📄 _SHERIFF.md
-> │      ├── 📄 index.html
-> │    └── 📂 UTILITIES_MUNICIPAL/
-> │      ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
-> │      ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
-> │      ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
-> │      ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> │      ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
-> │      ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
-> │      ├── 📄 NT_V-095_theft-of-services-utility-exploitation.md
-> │      ├── 📄 NT_V-FCFCU-0000-0006_fair-housing-act-breach--exclusionary-zoning-.md
-> │      ├── 📄 NT_V-FCFCU-0000-0011_section-504-breach---failure-to-provide-interprete.md
-> │      ├── 📄 NT_V-FCFCU-1975-0001_civil-rights.md
-> │      ├── 📄 NT_V-FCFCU-2000-0001_fair-housing-act-breach--reasonable-accommodation-.md
-> │      ├── 📄 NT_V-FCFCU-2009-0002_fair-housing-act-breach--pattern-or-practice-of-re.md
-> │      ├── 📄 NT_V-FCFCU-2021-0001_fair-housing-act-breach--race--color---appraisal-b.md
-> │      ├── 📄 NT_V-FCFCU-2025-0044_utility.md
-> │      ├── 📄 NT_V-FCFCU-2025-0045_utility.md
-> │      ├── 📄 NT_V-FCFCU-2025-0046_tort.md
-> │      ├── 📄 NT_V-FCFCU-2025-0047_municipal.md
-> │      ├── 📄 NT_V-FCFCU-2025-0048_municipal.md
-> │      ├── 📄 _UTILITIES_MUNICIPAL.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_violations.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_theories/
-> │    ├── 📄 NT_BACKUP_ARGUMENTS.md
-> │    ├── 📄 NT_IF_JUDGE_PUSHBACK.md
-> │    ├── 📄 _20_theories.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_legal_research/
-> │    ├── 📄 NT_CASE_LAW_RESEARCH.md
-> │    ├── 📄 NT_JURISDICTION_THEORY.md
-> │    ├── 📄 NT_LEGAL MEMORANDUM.md
-> │    ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
-> │    ├── 📄 _30_legal_research.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_analysis/
-> │    ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │    ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │    ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │    ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │    ├── 📄 NT_Violation_Remedy_Inventory.md
-> │    ├── 📄 _40_analysis.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_strategies/
-> │    ├── 📄 NT_00_basis.md
-> │    ├── 📄 NT_10_ada_strategy.md
-> │    ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
-> │    ├── 📄 NT_BUT_FOR_ANALYSIS.md
-> │    ├── 📄 NT_Master_Strategy_Canvas.canvas
-> │    ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
-> │    ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
-> │    ├── 📄 NT_REVERSAL_PATHS.md
-> │    ├── 📄 NT_STATUS_TRACKER.md
-> │    ├── 📄 NT_STAY_PATHS.md
-> │    ├── 📄 NT_System_Workflow.canvas
-> │    ├── 📄 PL_DOJ_COMPLAINT.md
-> │    ├── 📄 PL_ICRC_COMPLAINT.md
-> │    ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
-> │    ├── 📄 Strategic_Plan.canvas
-> │    ├── 📄 _50_strategies.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_data_inventories/
-> │    ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
-> │    ├── 📄 NT_Case_Docket_Checklist.csv
-> │    ├── 📄 NT_Case_Docket_Checklist.md
-> │    ├── 📄 NT_Damage_Accounting_Ledger.md
-> │    ├── 📄 _60_data_inventories.md
-> │    ├── 📄 evidence_index_master.csv
-> │    ├── 📄 evidence_index_master.md
-> │    ├── 📄 financial_transactions_damages.csv
-> │    ├── 📄 financial_transactions_damages.md
-> │    ├── 📄 index.html
-> │    ├── 📄 legal_authority_library.csv
-> │    ├── 📄 legal_authority_library.md
-> │    ├── 📄 tasks_strategy.csv
-> │    ├── 📄 tasks_strategy.md
-> │    ├── 📄 violations_inventory_master.csv
-> │    ├── 📄 violations_inventory_master.md
-> │  ├── 📄 NT_01_MASTER_INDEX.md
-> │  ├── 📄 _C_VIS.md
-> │  ├── 📄 index.html
-> │  ├── 📄 vis.yaml
-> └── 📂 D_PHASES/
-> │  └── 📂 00_working/
-> │    └── 📂 00_inbox_working/
-> │      ├── 📄 _00_inbox_working.md
-> │      ├── 📄 index.html
-> │    └── 📂 00_personal_narrative/
-> │      └── 📂 10_Public_Narrative/
-> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
-> │        ├── 📄 _10_Public_Narrative.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_Internal_Analysis/
-> │        └── 📂 Premonitions/
-> │          ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
-> │          ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
-> │          ├── 📄 _Premonitions.md
-> │          ├── 📄 _README.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _30_Internal_Analysis.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_Donations_and_Support/
-> │        └── 📂 Donation_Page_HTML/
-> │          ├── 📄 _Donation_Page_HTML.md
-> │          ├── 📄 index.html
-> │        ├── 📄 NT_Donations_Context.md
-> │        └── 📂 Screenshots_Live_Page/
-> │          ├── 📄 _Screenshots_Live_Page.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _40_Donations_and_Support.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _00_personal_narrative.md
-> │      ├── 📄 _personal_narrative.md
-> │      ├── 📄 index.html
-> │    └── 📂 80_damages_and_fallout/
-> │      └── 📂 10_property_possession_harms/
-> │        ├── 📄 _10_property_possession_harms.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_economic_harm/
-> │        ├── 📄 _20_economic_harm.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_financial/
-> │        ├── 📄 _30_financial.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_health_and_safety/
-> │        └── 📂 20_companion_animal_risk/
-> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │          ├── 📄 _20_companion_animal_risk.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _40_health_and_safety.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_non_economic_harm/
-> │        ├── 📄 PL_Cold_Risk_Report.md
-> │        ├── 📄 _50_non_economic_harm.md
-> │        └── 📂 cold_exposure/
-> │          ├── 📄 PL__Cold_Risk_Report.md
-> │          ├── 📄 _cold_exposure.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 60_professional_harm/
-> │        ├── 📄 _60_professional_harm.md
-> │        ├── 📄 index.html
-> │      └── 📂 70_remedies_scenarios/
-> │        ├── 📄 _70_remedies_scenarios.md
-> │        ├── 📄 index.html
-> │      └── 📂 80_payout_strategy/
-> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │        ├── 📄 _80_payout_strategy.md
-> │        ├── 📄 index.html
-> │      └── 📂 90_third_party_harm/
-> │        ├── 📄 _90_third_party_harm.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _80_damages_and_fallout.md
-> │      ├── 📄 index.html
-> │    ├── 📄 App_Flow.canvas
-> │    ├── 📄 PHASE_00_Working_and_Narrative.md
-> │    ├── 📄 Phase_Logic_Matrix.canvas
-> │    ├── 📄 _00_working.md
-> │    ├── 📄 index.html
-> │  └── 📂 01_court_record/
-> │    └── 📂 10_pre_foreclosure/
-> │      └── 📂 10_account_history/
-> │        ├── 📄 _10_account_history.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_hardship_and_ada/
-> │        ├── 📄 _20_hardship_and_ada.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_communications/
-> │        ├── 📄 _30_communications.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_payments_and_disputes/
-> │        ├── 📄 _40_payments_and_disputes.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _10_pre_foreclosure.md
-> │      ├── 📄 _20_pre_foreclosure.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_foreclosure_filing/
-> │      └── 📂 10_complaint/
-> │        ├── 📄 _10_complaint.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_summons/
-> │        ├── 📄 _20_summons.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_lien_parties/
-> │        ├── 📄 _30_lien_parties.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_docket_snapshots/
-> │        ├── 📄 NT__Case_Summary.md
-> │        ├── 📄 _40_docket_snapshots.md
-> │        ├── 📄 _Case_Summary.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _20_foreclosure_filing.md
-> │      ├── 📄 _30_foreclosure_filing.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_service_and_notice/
-> │      └── 📂 10_sheriff_returns/
-> │        ├── 📄 _10_sheriff_returns.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_mailings/
-> │        ├── 📄 _20_mailings.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_affidavits_of_service/
-> │        └── 📂 10_jurisdiction_service_tr_4_1_b/
-> │          ├── 📄 _10_jurisdiction_service_tr_4_1_b.md
-> │          ├── 📄 index.html
-> │        └── 📂 20_service_process/
-> │          ├── 📄 _20_service_process.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _30_affidavits_of_service.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_defects_and_contradictions/
-> │        ├── 📄 _40_defects_and_contradictions.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_service_and_notice.md
-> │      ├── 📄 _40_service_and_notice.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_default_and_judgment/
-> │      └── 📂 10_default_motion/
-> │        ├── 📄 _10_default_motion.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_default_order/
-> │        ├── 📄 _20_default_order.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_judgment_and_decree/
-> │        ├── 📄 _30_judgment_and_decree.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_accounting_inputs/
-> │        ├── 📄 _40_accounting_inputs.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_default_and_judgment.md
-> │      ├── 📄 _50_default_and_judgment.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_sale_and_title/
-> │      └── 📂 10_sheriff_sale/
-> │        ├── 📄 _10_sheriff_sale.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_deed/
-> │        ├── 📄 _20_deed.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_recording_gaps/
-> │        ├── 📄 _30_recording_gaps.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_possession_claims/
-> │        └── 📂 10_sale_and_possession/
-> │          ├── 📄 _10_sale_and_possession.md
-> │          ├── 📄 index.html
-> │        └── 📂 30_void_vs_voidable/
-> │          ├── 📄 20_void_vs_voidable.md
-> │          ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
-> │          ├── 📄 NT_30_void_vs_voidable_tr_60b.md
-> │          ├── 📄 _30_void_vs_voidable.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _40_possession_claims.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _50_sale_and_title.md
-> │      ├── 📄 _60_sale_and_title.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_writ_and_execution/
-> │      └── 📂 10_writ_petition/
-> │        ├── 📄 _10_writ_petition.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_writ_order/
-> │        ├── 📄 _20_writ_order.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_execution_events/
-> │        ├── 📄 _30_execution_events.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_notice_failures/
-> │        ├── 📄 _40_notice_failures.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _60_writ_and_execution.md
-> │      ├── 📄 _70_writ_and_execution.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_post_removal_conduct/
-> │      └── 📂 10_property_interference/
-> │        ├── 📄 _10_property_interference.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_access_denial/
-> │        ├── 📄 _20_access_denial.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_spoliation_risk/
-> │        ├── 📄 _30_spoliation_risk.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_third_party_actions/
-> │        ├── 📄 _40_third_party_actions.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _70_post_removal_conduct.md
-> │      ├── 📄 _80_post_removal_conduct.md
-> │      ├── 📄 index.html
-> │    ├── 📄 NT_Record_Preservation_Issue_Matrix.md
-> │    ├── 📄 PHASE_01_Court_Record.md
-> │    ├── 📄 _01_court_record.md
-> │    ├── 📄 index.html
-> │  └── 📂 02_credit_fcra/
-> │    └── 📂 10_credit_reports/
-> │      ├── 📄 _10_credit_reports.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_furnisher_disputes/
-> │      ├── 📄 _20_furnisher_disputes.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_bureau_disputes/
-> │      ├── 📄 _30_bureau_disputes.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_verified_responses/
-> │      ├── 📄 _40_verified_responses.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_damages/
-> │      ├── 📄 _50_damages.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_02_Credit_FCRA.md
-> │    ├── 📄 _02_credit_fcra.md
-> │    ├── 📄 index.html
-> │  └── 📂 03_regulators/
-> │    └── 📂 10_CFPB/
-> │      ├── 📄 _10_CFPB.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_AG_Indiana/
-> │      ├── 📄 _20_AG_Indiana.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_NCUA/
-> │      ├── 📄 _30_NCUA.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_regulatory_complaints/
-> │      ├── 📄 _30_regulatory_complaints.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_DOJ_Civil_Rights/
-> │      ├── 📄 _40_DOJ_Civil_Rights.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_federal_preservation/
-> │      ├── 📄 _40_federal_preservation.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_ICRC/
-> │      ├── 📄 _50_ICRC.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_03_Regulators.md
-> │    ├── 📄 _03_regulators.md
-> │    ├── 📄 index.html
-> │  └── 📂 04_litigation_settlement/
-> │    └── 📂 10_strategy_and_research/
-> │      ├── 📄 _10_strategy_and_research.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_demand_letters/
-> │      ├── 📄 _20_demand_letters.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_opposing_counsel/
-> │      ├── 📄 _30_opposing_counsel.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_draft_pleadings/
-> │      ├── 📄 _40_draft_pleadings.md
-> │      ├── 📄 index.html
-> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │    ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │    ├── 📄 NT_Quarantined_Claims_Hold.md
-> │    ├── 📄 NT_Refined_Settlement_Exposure_Matrix.md
-> │    ├── 📄 NT_Settlement_Exposure_Spine.md
-> │    ├── 📄 PHASE_04_Litigation_and_Settlement.md
-> │    ├── 📄 _04_litigation_settlement.md
-> │    ├── 📄 index.html
-> │  └── 📂 05_nuclear/
-> │    └── 📂 10_press_kits/
-> │      ├── 📄 _10_press_kits.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_public_record_dumps/
-> │      ├── 📄 _20_public_record_dumps.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_legislative_outreach/
-> │      ├── 📄 _30_legislative_outreach.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_social_media/
-> │      ├── 📄 _40_social_media.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_05_Nuclear.md
-> │    ├── 📄 _05_nuclear.md
-> │    ├── 📄 index.html
-> │  └── 📂 06_reserved/
-> │    ├── 📄 _06_reserved.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Strategic_Plan.canvas
-> │  ├── 📄 _D_PHASES.md
-> │  ├── 📄 _PHASE_PAGE_TEMPLATE.md
-> │  ├── 📄 index.html
-> └── 📂 E_OUTPUTS/
-> │  └── 📂 00_binders/
-> │    ├── 📄 _00_binders.md
-> │    ├── 📄 index.html
-> │    └── 📂 master_case_bible/
-> │      └── 📂 _build/
-> │        ├── 📄 NT_master_case_bible.html
-> │        ├── 📄 __build.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _master_case_bible.md
-> │      ├── 📄 binder_manifest.md
-> │      ├── 📄 index.html
-> │      └── 📂 sections/
-> │        ├── 📄 _sections.md
-> │        ├── 📄 index.html
-> │  └── 📂 10_filings/
-> │    └── 📂 10_motions/
-> │      └── 📂 03_proposed_order/
-> │        ├── 📄 _03_proposed_order.md
-> │        ├── 📄 index.html
-> │      └── 📂 10_2025-12-10_motion_vacate/
-> │        └── 📂 01_drafts/
-> │          ├── 📄 MO_Emergency Motions.docx
-> │          ├── 📄 _01_drafts.md
-> │          ├── 📄 index.html
-> │        └── 📂 04_filed_receipts/
-> │          ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │          ├── 📄 _04_filed_receipts.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _10_2025-12-10_motion_vacate.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │        └── 📂 01_drafts/
-> │          ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │          ├── 📄 _01_drafts.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_draft_motions/
-> │        ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │        ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │        ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │        ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │        ├── 📄 _30_draft_motions.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _10_motions.md
-> │      ├── 📄 index.html
-> │      └── 📂 motions/
-> │        ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
-> │        ├── 📄 MO_C2.01.002_motion_vacate.pdf
-> │        ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │        ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 _motions.md
-> │        ├── 📄 index.html
-> │    └── 📂 20_exhibits/
-> │      ├── 📄 EXH_05_Exhibit_List.pdf
-> │      ├── 📄 EXH_06_Exhibits_Combined.pdf
-> │      ├── 📄 EXH_Exhibit_H_Declaration.pdf
-> │      ├── 📄 MO_01_motion_vacate.pdf
-> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 NT_combinepdf.pdf
-> │      ├── 📄 OR_03_order_vacate_proposed.pdf
-> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │      ├── 📄 _02_exhibits.md
-> │      ├── 📄 _20_exhibits.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_Filed_Envelopes/
-> │      ├── 📄 _30_Filed_Envelopes.md
-> │      ├── 📄 index.html
-> │    ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
-> │    ├── 📄 _10_filings.md
-> │    ├── 📄 _20_filings.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_orders/
-> │    └── 📂 10_proposed/
-> │      ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
-> │      ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
-> │      ├── 📄 OR__proposed_order_emergency_stay.md
-> │      ├── 📄 _10_proposed.md
-> │      ├── 📄 _10_proposed_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_orders/
-> │      ├── 📄 _20_orders.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_orders.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _E_OUTPUTS.md
-> │  ├── 📄 index.html
-> │  └── 📂 vis/
-> │    ├── 📄 _vis.md
-> │    ├── 📄 index.html
-> │    ├── 📄 timeline_viewer.html
-> ├── 📄 README.md
-> ├── 📄 _content.md
-> ├── 📄 index.html
-> └── 📄 index.md
+> both please and double check the content folders and make sure we are good to start printing my binder. ```markdown
+
+> . 📂 content
+
+> ├── 📄 000_MASTER_INDEX.md
+
+> └── 📂 0_ADMIN/
+
+> │  └── 📂 10_checklists/
+
+> │    ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │    ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │    ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │    ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │    ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │    ├── 📄 _10_checklists.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 10_index/
+
+> │    ├── 📄 NT_Contacts.md
+
+> │    ├── 📄 _10_index.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_case_logs/
+
+> │    └── 📂 10_Primary_Log/
+
+> │      ├── 📄 NT_Master_Case_Log.md
+
+> │      ├── 📄 _10_Primary_Log.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_case_logs.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_financial/
+
+> │    ├── 📄 NT_Financial_Tracker.md
+
+> │    ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │    ├── 📄 _30_financial.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_overviews/
+
+> │    └── 📂 10_Listen/
+
+> │      ├── 📄 _10_Listen.md
+
+> │      ├── 📄 critiques__NT_Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │      ├── 📄 critiques__OR_foreclosure_void_judgment_institutional_failur.m4a
+
+> │      ├── 📄 debates__NT_debate.m4a
+
+> │      ├── 📄 debates__NT_foreclosure_void_versus_damages_due_process.m4a
+
+> │      ├── 📄 deep_dives__NT_forensic_audit_of_a_void_foreclosure.m4a
+
+> │      ├── 📄 deep_dives__NT_integrate_disability_separate_appe.m4a
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_Read/
+
+> │      ├── 📄 _20_Read.md
+
+> │      ├── 📄 explainers__NT_crisis_the_anatomy_of_institutional_failure.pdf
+
+> │      ├── 📄 explainers__NT_wrongful_foreclosure_a_case_study_in_civil_rig.pdf
+
+> │      ├── 📄 explainers__OR_void_judgment_eviction_crisis.pdf
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 maps__NT_Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 reports__NT_Crisis_The_Anatomy_of_Institutional_Failure.pdf
+
+> │      ├── 📄 reports__NT_Wrongful_Foreclosure_A_Case_Study_in_Civil_Rig.pdf
+
+> │      ├── 📄 reports__NT__Session_Summary_2025-12-15_i_knew_b.md
+
+> │      ├── 📄 reports__NT_case-narrative-wrongful-foreclosure-and-displ.html
+
+> │      ├── 📄 reports__NT_legal-memorandum.html
+
+> │      ├── 📄 reports__NT_procedural_failure_map_one_pager.html
+
+> │      ├── 📄 reports__NT_talking_points.html
+
+> │      ├── 📄 reports__NT_uncategorized_bundle.pdf
+
+> │      ├── 📄 reports__OR_Void_Judgment_Eviction_Crisis.pdf
+
+> │      ├── 📄 reports__PL_proposal-for-strategic-reports-in-the-matter-.html
+
+> │    ├── 📄 _40_overviews.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_summaries/
+
+> │    ├── 📄 Emergency_Motion_Preserve_Surplus_Funds.md
+
+> │    ├── 📄 Hearing_Handout_Accounting_Summary.md
+
+> │    ├── 📄 NT_Case_Overview_One_Pager_Family.md
+
+> │    ├── 📄 NT_Case_Strategy_Decision_Tree.md
+
+> │    ├── 📄 NT_Family_Summary_One_Pager.md
+
+> │    ├── 📄 NT_Urgent_Delay_Notification.md
+
+> │    ├── 📄 _40_summaries.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_protocols/
+
+> │    ├── 📄 NT_PROTOCOL_Canonical_Case_Knowledge_Base.md
+
+> │    ├── 📄 NT_PROTOCOL_Low_Power_Cognitive_Management.md
+
+> │    ├── 📄 _50_protocols.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 70_templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 MO_TEMPLATE_emergency_stay_of_writ.md
+
+> │      ├── 📄 MO_TEMPLATE_vacate_void_judgment.md
+
+> │      ├── 📄 _10_motions.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_declarations/
+
+> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
+
+> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
+
+> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Declarations.md
+
+> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
+
+> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
+
+> │      ├── 📄 _20_declarations.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_exhibits/
+
+> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
+
+> │      ├── 📄 _30_exhibits.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_orders/
+
+> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
+
+> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
+
+> │      ├── 📄 _40_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_internal/
+
+> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
+
+> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
+
+> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
+
+> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Index.md
+
+> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
+
+> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
+
+> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
+
+> │      ├── 📄 NT_TEMPLATE_War_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_ada_packet.md
+
+> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
+
+> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
+
+> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
+
+> │      ├── 📄 _50_internal.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 NT_TPL_QiNote_Insight_Capture.md
+
+> │    ├── 📄 _70_templates.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 80_integrity_tooling/
+
+> │    ├── 📄 _80_integrity_tooling.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 90_pack_blueprints/
+
+> │    ├── 📄 NT_PACK_AGENCY.yaml
+
+> │    ├── 📄 NT_PACK_JUDGE.yaml
+
+> │    ├── 📄 NT_PACK_OPPOSING.yaml
+
+> │    ├── 📄 NT_PACK_SELF.yaml
+
+> │    ├── 📄 _90_pack_blueprints.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PROTOCOL_Gemini.md
+
+> │  ├── 📄 _0_ADMIN.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 A_TIMELINE/
+
+> │  └── 📂 2023/
+
+> │    ├── 📄 _2023.md
+
+> │    └── 📂 events/
+
+> │      ├── 📄 _events.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 2024/
+
+> │    ├── 📄 _2024.md
+
+> │    └── 📂 events/
+
+> │      ├── 📄 _events.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 2025/
+
+> │    ├── 📄 _2025.md
+
+> │    └── 📂 events/
+
+> │      ├── 📄 2025-01-16_Case_Filed.md
+
+> │      ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │      ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │      ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │      ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │      ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │      ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │      ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │      ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │      ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │      ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │      ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │      ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │      ├── 📄 2025-12-10_Motions_Filed.md
+
+> │      ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │      ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │      ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │      ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │      ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │      ├── 📄 2025-12-21_Case_Summary.md
+
+> │      ├── 📄 2025-12-21_Gigi_Escape_During_Displacement.md
+
+> │      ├── 📄 2025-12-21_Post_Removal_Harms_and_Damages.md
+
+> │      ├── 📄 _events.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 2026/
+
+> │    ├── 📄 _2026.md
+
+> │    └── 📂 events/
+
+> │      ├── 📄 2026-01-07_EasyTax_Demand_Sent.md
+
+> │      ├── 📄 2026-01-09__PL_2026-01-09_Appearance_Plaintiff.md
+
+> │      ├── 📄 2026-01-18_Housing_Fallout_Otis.md
+
+> │      ├── 📄 2026-01-18_Relocation_to_Evansville.md
+
+> │      ├── 📄 2026-01-18_Zai_Asylum_Case_Closure.md
+
+> │      ├── 📄 _events.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 _A_TIMELINE.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 B_EVIDENCE/
+
+> │  └── 📂 10_evidence_admin/
+
+> │    ├── 📄 10_chain_of_custody.md
+
+> │    ├── 📄 20_Evidence_Log.md
+
+> │    ├── 📄 Access_Denial_Record.md
+
+> │    ├── 📄 EXH_Raw_Exhibit_Map.md
+
+> │    ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │    ├── 📄 NT_Harm_Log_2025-12-21_Hotel_Deposit.md
+
+> │    ├── 📄 NT_Harm_Log_2026-01-18_Otis_Fallout.md
+
+> │    ├── 📄 NT_Utility_Exploitation_Log.md
+
+> │    ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 Utility_Dispute_Letter.md
+
+> │    ├── 📄 _10_evidence_admin.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_court_record/
+
+> │    └── 📂 10_docket_files/
+
+> │      ├── 📄 022_Plaintif_bid_2025_07_17_10_14_40.pdf.pdf
+
+> │      ├── 📄 024_Service Returned Served.pdf
+
+> │      ├── 📄 026_2025_10_29_13_47_03.pdf.pdf
+
+> │      ├── 📄 029_Emergency_Supplemental_Declara.pdf
+
+> │      ├── 📄 035_01092026_005.pdf.pdf
+
+> │      ├── 📄 EXH_026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 EXH__026_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 MO_013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO_016_Order_Denying_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO_019_Amended_Motion_Default_Judgment_1.pdf
+
+> │      ├── 📄 MO_020_Amended_Motion_Default_Judgment_2.pdf
+
+> │      ├── 📄 MO_025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 MO_027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 MO__013_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 MO__019_Amended_Motion_Default_Judgmen.pdf
+
+> │      ├── 📄 MO__020_Amended_Motion_Default_Judgmen.pdf
+
+> │      ├── 📄 MO__025_Motion_Vacate_Stay_Writ.pdf
+
+> │      ├── 📄 MO__027_Supplemental_Motion_Access.pdf
+
+> │      ├── 📄 OR_023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 OR_031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 OR_032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 OR__017_Order_Denying_Default_Judgment.pdf
+
+> │      ├── 📄 OR__023_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 OR__031_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 OR__032_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 PL_001_Complaint.pdf
+
+> │      ├── 📄 PL_002_Appearance.pdf
+
+> │      ├── 📄 PL_003_Request_for_Admissions.pdf
+
+> │      ├── 📄 PL_004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 PL_005_Appearance_2.pdf
+
+> │      ├── 📄 PL_006_Summons_1.pdf
+
+> │      ├── 📄 PL_007_Summons_2.pdf
+
+> │      ├── 📄 PL_008_Summons_3.pdf
+
+> │      ├── 📄 PL_009_Summons_4.pdf
+
+> │      ├── 📄 PL_010_Summons_5.pdf
+
+> │      ├── 📄 PL_011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 PL_012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 PL_014_Affidavit.pdf
+
+> │      ├── 📄 PL_015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
+
+> │      ├── 📄 PL_018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 PL_021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 PL_022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 PL_024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 PL_028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 PL_029_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 PL_030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 PL_033_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 PL_2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 PL__001_Complaint.pdf
+
+> │      ├── 📄 PL__002_Appearance.pdf
+
+> │      ├── 📄 PL__003_Request_for_Admissions.pdf
+
+> │      ├── 📄 PL__004_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 PL__005_Appearance_2.pdf
+
+> │      ├── 📄 PL__006_Summons_1.pdf
+
+> │      ├── 📄 PL__007_Summons_2.pdf
+
+> │      ├── 📄 PL__008_Summons_3.pdf
+
+> │      ├── 📄 PL__009_Summons_4.pdf
+
+> │      ├── 📄 PL__010_Summons_5.pdf
+
+> │      ├── 📄 PL__011_Service_Returned_03-05-2025.pdf
+
+> │      ├── 📄 PL__012_Service_Returned_04-15-2025.pdf
+
+> │      ├── 📄 PL__014_Affidavit.pdf
+
+> │      ├── 📄 PL__015_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 PL__016_Affidavit_Additional.pdf
+
+> │      ├── 📄 PL__018_Omitted_Notice_of_Service.pdf
+
+> │      ├── 📄 PL__021_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 PL__022_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 PL__024_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 PL__028_Report_Court_Defendant_Request.pdf
+
+> │      ├── 📄 PL__030_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 _10_docket_files.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_court_record.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_primary/
+
+> │    └── 📂 10_fcfcu/
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> │      ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
+
+> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement-(1).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement-(2).pdf
+
+> │      ├── 📄 20241204_fcfcu_statement.pdf
+
+> │      ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
+
+> │      ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
+
+> │      ├── 📄 21june-24-4817shadow_appraisal.pdf
+
+> │      ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │      ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
+
+> │      ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
+
+> │      ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
+
+> │      ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
+
+> │      ├── 📄 PL_report_to_court_on_defendants_request.pdf
+
+> │      ├── 📄 _10_fcfcu.md
+
+> │      ├── 📄 _README.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_aes/
+
+> │      ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
+
+> │      ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
+
+> │      ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
+
+> │      ├── 📄 _20_aes.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _30_primary.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_supporting/
+
+> │    ├── 📄 40_supporting.md
+
+> │    ├── 📄 _40_supporting.md
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 _docs.md
+
+> │      └── 📂 affidavits/
+
+> │        ├── 📄 PL_affidavits.md
+
+> │        ├── 📄 _affidavits.md
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 _ada-disability.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 character/
+
+> │          ├── 📄 _character.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 _community-service.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 _credibility.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 _observations.md
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 declarations/
+
+> │        ├── 📄 PL_declarations.md
+
+> │        ├── 📄 _declarations.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 receipts/
+
+> │        ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
+
+> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 _receipts.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 records/
+
+> │        ├── 📄 Foreclosure and Housing Litigation Case Record.csv
+
+> │        ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
+
+> │        ├── 📄 _records.md
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 multi-media/
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
+
+> │      ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │      └── 📂 Photos_Conditions/
+
+> │        ├── 📄 _Photos_Conditions.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 Weather_Reports/
+
+> │        ├── 📄 PL_Weather_Reports.md
+
+> │        ├── 📄 _Weather_Reports.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _multi-media.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 property/
+
+> │      └── 📂 10_mortgage_history/
+
+> │        └── 📂 10_payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 2025-12-20_exh-20_payments_c5131deb_2025-12-20 (2).png
+
+> │          ├── 📄 20_payments.md
+
+> │          ├── 📄 _10_payments.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _10_mortgage_history.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 _20_parcel.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 parcel_6016506_parceldetailhistory (2).pdf
+
+> │        ├── 📄 parcel_6016506_prc (2).pdf
+
+> │      ├── 📄 _property.md
+
+> │      ├── 📄 index.html
+
+> │  └── 📂 50_quarantine_candidates/
+
+> │    ├── 📄 50_quarantine_candidates.md
+
+> │    ├── 📄 _50_quarantine_candidates.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │  ├── 📄 _B_EVIDENCE.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 C_VIS/
+
+> │  └── 📂 10_violations/
+
+> │    └── 📂 COUNSEL/
+
+> │      ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0038_procedure.md
+
+> │      ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
+
+> │      ├── 📄 _COUNSEL.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 COURT/
+
+> │      ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
+
+> │      ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0002_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2000-0002_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2009-0003_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2010-0003_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0034_due-process.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0050_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0051_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0052_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0053_procedural.md
+
+> │      ├── 📄 OR_V-079_void-judgment-procedural-error.md
+
+> │      ├── 📄 PL_V-032_no-ada-compliant-notice.md
+
+> │      ├── 📄 _COURT.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 CREDIT_BUREAUS/
+
+> │      ├── 📄 NT_V-011_experian-reinvestigation-failure.md
+
+> │      ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
+
+> │      ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
+
+> │      ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
+
+> │      ├── 📄 NT_V-073_damages-credit-score-suppression.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0001_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0002_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0003_fcra.md
+
+> │      ├── 📄 _CREDIT_BUREAUS.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 FCFCU/
+
+> │      ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
+
+> │      ├── 📄 NT_V-006_dual-tradeline-double-counting.md
+
+> │      ├── 📄 NT_V-008_credit-defamation-false-publication.md
+
+> │      ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> │      ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
+
+> │      ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
+
+> │      ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
+
+> │      ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
+
+> │      ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
+
+> │      ├── 📄 NT_V-078_ada-effective-communication-failure.md
+
+> │      ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
+
+> │      ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
+
+> │      ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
+
+> │      ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0004_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0005_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0006_tort.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0007_fdcpa.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0008_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0009_tort.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0010_due-process.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0011_procedure-accounting.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0012_accounting.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0013_tort.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0014_litigation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0015_litigation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0016_litigation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0017_damages.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0018_damages.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0019_public.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0020_tort.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0021_procedure---evidence.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0022_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0023_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0024_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0025_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0026_fcra.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0027_due-process.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0035_procedure.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0036_procedure.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0037_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0054_due-process-failure---defective-service.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0060_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0061_due-process-failure---notice-deficiency.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0062_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0063_foreclosure.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0064_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0065_fraud-on-the-court---material-misrepresentation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0066_conversion---property-interference.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0067_evidence-spoliation.md
+
+> │      ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> │      ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> │      ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
+
+> │      ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
+
+> │      ├── 📄 _FCFCU.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 OTHER_PARTIES/
+
+> │      ├── 📄 NT_V-070_global-demand-letter.md
+
+> │      ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
+
+> │      ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
+
+> │      ├── 📄 NT_V-075_public-accountability-hold.md
+
+> │      ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
+
+> │      ├── 📄 NT_V-090_secondary-displacement-cascade-of-harm.md
+
+> │      ├── 📄 NT_V-110_easytax-theft-conversion.md
+
+> │      ├── 📄 NT_V-111_zai-asylum-case-closure.md
+
+> │      ├── 📄 NT_V-112_forced-relocation-evansville.md
+
+> │      ├── 📄 NT_V-113_otis-predatory-housing-harassment.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0001_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0003_due-process-violation--standard-of-proof-.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0004_unconstitutional-presumption--vesting-of-title-.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0007_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0008_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0009_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0010_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-1972-0001_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-1977-0001_due-process-failure---notice-error.md
+
+> │      ├── 📄 NT_V-FCFCU-1977-0002_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-1993-0001_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-1996-0001_fair-housing-act-breach--race-discrimination-.md
+
+> │      ├── 📄 NT_V-FCFCU-1999-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-1999-0002_fair-housing-act-breach--disability-accessibility-.md
+
+> │      ├── 📄 NT_V-FCFCU-2003-0001_fair-housing-act-breach--familial-status-discrimin.md
+
+> │      ├── 📄 NT_V-FCFCU-2004-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2005-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2008-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2009-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2009-0004_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2010-0001_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2011-0001_fair-housing-act-breach--intentional-discriminatio.md
+
+> │      ├── 📄 NT_V-FCFCU-2011-0002_fair-housing-act-breach--terms-and-conditions-of-s.md
+
+> │      ├── 📄 NT_V-FCFCU-2011-0003_fair-housing-act-breach--residential-real-estate-r.md
+
+> │      ├── 📄 NT_V-FCFCU-2011-0004_fair-housing-act-breach--perpetuating-segregation-.md
+
+> │      ├── 📄 NT_V-FCFCU-2012-0003_fair-housing-act-breach--disability---design-and-c.md
+
+> │      ├── 📄 NT_V-FCFCU-2013-0001_fair-housing-act-breach--race-and-color-discrimina.md
+
+> │      ├── 📄 NT_V-FCFCU-2013-0002_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2013-0003_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2014-0001_discriminatory-treatment-in-property-maintenance.md
+
+> │      ├── 📄 NT_V-FCFCU-2014-0002_fair-housing-act-breach--disability---restrictive-.md
+
+> │      ├── 📄 NT_V-FCFCU-2015-0001_fair-housing-act-breach--design-and-construction-.md
+
+> │      ├── 📄 NT_V-FCFCU-2015-0003_fair-housing-act-breach--discriminatory-statements.md
+
+> │      ├── 📄 NT_V-FCFCU-2015-0004_fair-housing-act-breach--race--national-origin---d.md
+
+> │      ├── 📄 NT_V-FCFCU-2016-0001_fair-housing-act-breach--retaliation-.md
+
+> │      ├── 📄 NT_V-FCFCU-2016-0002_fair-housing-act-breach--familial-status-.md
+
+> │      ├── 📄 NT_V-FCFCU-2016-0003_fair-housing-act-breach--race--gender--disability-.md
+
+> │      ├── 📄 NT_V-FCFCU-2016-0004_fair-housing-act-breach--disability---failure-to-r.md
+
+> │      ├── 📄 NT_V-FCFCU-2017-0001_predatory-land-contract---housing-discrimination--.md
+
+> │      ├── 📄 NT_V-FCFCU-2018-0001_breach-of-warranty-of-habitability.md
+
+> │      ├── 📄 NT_V-FCFCU-2018-0002_fair-housing-act-breach--race--color--national-ori.md
+
+> │      ├── 📄 NT_V-FCFCU-2020-0001_fair-housing-act-breach--accessibility-requirement.md
+
+> │      ├── 📄 NT_V-FCFCU-2020-0002_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │      ├── 📄 NT_V-FCFCU-2020-0003_fair-housing-act-breach--gender---sexual-harassmen.md
+
+> │      ├── 📄 NT_V-FCFCU-2021-0002_fair-housing-act-breach--familial-status-.md
+
+> │      ├── 📄 NT_V-FCFCU-2021-0003_fair-housing-act-breach--race---redlining.md
+
+> │      ├── 📄 NT_V-FCFCU-2024-0001_fair-housing-act-breach--race---arbitrary-criminal.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0028_fair-housing-act.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0029_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0030_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0032_consumer-protection---fha.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0043_reputation.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0049_consumer-protection.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0057_potential-ic---32-30-10-14-violation--surplus-mism.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0059_spoliation-of-evidence.md
+
+> │      ├── 📄 NT_V-FCFCU-2026-0001_general.md
+
+> │      ├── 📄 _OTHER_PARTIES.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 REGULATORS/
+
+> │      ├── 📄 NT_V-FCFCU-0000-0005_discriminatory-advertising.md
+
+> │      ├── 📄 NT_V-FCFCU-1985-0001_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2010-0002_fair-housing-act-breach--sexual-harassment-.md
+
+> │      ├── 📄 NT_V-FCFCU-2011-0005_fair-housing-act-breach--intentional-discriminatio.md
+
+> │      ├── 📄 NT_V-FCFCU-2012-0001_failure-to-provide-equal-maintenance-services--reo.md
+
+> │      ├── 📄 NT_V-FCFCU-2012-0002_fair-housing-act-breach--race--national-origin---d.md
+
+> │      ├── 📄 NT_V-FCFCU-2015-0002_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2016-0005_fair-housing-act-breach--disability--familial-stat.md
+
+> │      ├── 📄 NT_V-FCFCU-2018-0003_fair-housing-act-breach--familial-status---occupan.md
+
+> │      ├── 📄 NT_V-FCFCU-2019-0001_fair-housing-act-breach--race--national-origin---h.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0031_fair-housing-act.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0039_regulatory.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0040_regulatory.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0041_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0042_ada.md
+
+> │      ├── 📄 PL_V-050_cfpb-complaint-track.md
+
+> │      ├── 📄 PL_V-051_indiana-ag-complaint-track.md
+
+> │      ├── 📄 PL_V-052_icrc-complaint-track.md
+
+> │      ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
+
+> │      ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
+
+> │      ├── 📄 _REGULATORS.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 SHERIFF/
+
+> │      ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
+
+> │      ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0033_due-process.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0055_ada.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0056_procedural.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0058_conversion---negligence.md
+
+> │      ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
+
+> │      ├── 📄 _SHERIFF.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 UTILITIES_MUNICIPAL/
+
+> │      ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
+
+> │      ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
+
+> │      ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
+
+> │      ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> │      ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> │      ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
+
+> │      ├── 📄 NT_V-095_theft-of-services-utility-exploitation.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0006_fair-housing-act-breach--exclusionary-zoning-.md
+
+> │      ├── 📄 NT_V-FCFCU-0000-0011_section-504-breach---failure-to-provide-interprete.md
+
+> │      ├── 📄 NT_V-FCFCU-1975-0001_civil-rights.md
+
+> │      ├── 📄 NT_V-FCFCU-2000-0001_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │      ├── 📄 NT_V-FCFCU-2009-0002_fair-housing-act-breach--pattern-or-practice-of-re.md
+
+> │      ├── 📄 NT_V-FCFCU-2021-0001_fair-housing-act-breach--race--color---appraisal-b.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0044_utility.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0045_utility.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0046_tort.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0047_municipal.md
+
+> │      ├── 📄 NT_V-FCFCU-2025-0048_municipal.md
+
+> │      ├── 📄 _UTILITIES_MUNICIPAL.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_violations.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_theories/
+
+> │    ├── 📄 NT_BACKUP_ARGUMENTS.md
+
+> │    ├── 📄 NT_IF_JUDGE_PUSHBACK.md
+
+> │    ├── 📄 _20_theories.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_legal_research/
+
+> │    ├── 📄 NT_CASE_LAW_RESEARCH.md
+
+> │    ├── 📄 NT_JURISDICTION_THEORY.md
+
+> │    ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │    ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> │    ├── 📄 _30_legal_research.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_analysis/
+
+> │    ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │    ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │    ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │    ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │    ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │    ├── 📄 _40_analysis.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_strategies/
+
+> │    ├── 📄 NT_00_basis.md
+
+> │    ├── 📄 NT_10_ada_strategy.md
+
+> │    ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
+
+> │    ├── 📄 NT_BUT_FOR_ANALYSIS.md
+
+> │    ├── 📄 NT_Master_Strategy_Canvas.canvas
+
+> │    ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
+
+> │    ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
+
+> │    ├── 📄 NT_REVERSAL_PATHS.md
+
+> │    ├── 📄 NT_STATUS_TRACKER.md
+
+> │    ├── 📄 NT_STAY_PATHS.md
+
+> │    ├── 📄 NT_System_Workflow.canvas
+
+> │    ├── 📄 PL_DOJ_COMPLAINT.md
+
+> │    ├── 📄 PL_ICRC_COMPLAINT.md
+
+> │    ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
+
+> │    ├── 📄 Strategic_Plan.canvas
+
+> │    ├── 📄 _50_strategies.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_data_inventories/
+
+> │    ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
+
+> │    ├── 📄 NT_Case_Docket_Checklist.csv
+
+> │    ├── 📄 NT_Case_Docket_Checklist.md
+
+> │    ├── 📄 NT_Damage_Accounting_Ledger.md
+
+> │    ├── 📄 _60_data_inventories.md
+
+> │    ├── 📄 evidence_index_master.csv
+
+> │    ├── 📄 evidence_index_master.md
+
+> │    ├── 📄 financial_transactions_damages.csv
+
+> │    ├── 📄 financial_transactions_damages.md
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 legal_authority_library.csv
+
+> │    ├── 📄 legal_authority_library.md
+
+> │    ├── 📄 tasks_strategy.csv
+
+> │    ├── 📄 tasks_strategy.md
+
+> │    ├── 📄 violations_inventory_master.csv
+
+> │    ├── 📄 violations_inventory_master.md
+
+> │  ├── 📄 NT_01_MASTER_INDEX.md
+
+> │  ├── 📄 _C_VIS.md
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 vis.yaml
+
+> └── 📂 D_PHASES/
+
+> │  └── 📂 00_working/
+
+> │    └── 📂 00_inbox_working/
+
+> │      ├── 📄 _00_inbox_working.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 00_personal_narrative/
+
+> │      └── 📂 10_Public_Narrative/
+
+> │        ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
+
+> │        ├── 📄 _10_Public_Narrative.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_Internal_Analysis/
+
+> │        └── 📂 Premonitions/
+
+> │          ├── 📄 NT_Premonitions_I_Knew_Before_I_Knew.md
+
+> │          ├── 📄 NT_Session_Summary_2025-12-15_i_knew_before_i_knew.md
+
+> │          ├── 📄 _Premonitions.md
+
+> │          ├── 📄 _README.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _30_Internal_Analysis.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_Donations_and_Support/
+
+> │        └── 📂 Donation_Page_HTML/
+
+> │          ├── 📄 _Donation_Page_HTML.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 NT_Donations_Context.md
+
+> │        └── 📂 Screenshots_Live_Page/
+
+> │          ├── 📄 _Screenshots_Live_Page.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _40_Donations_and_Support.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _00_personal_narrative.md
+
+> │      ├── 📄 _personal_narrative.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 80_damages_and_fallout/
+
+> │      └── 📂 10_property_possession_harms/
+
+> │        ├── 📄 _10_property_possession_harms.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_economic_harm/
+
+> │        ├── 📄 _20_economic_harm.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_financial/
+
+> │        ├── 📄 _30_financial.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_health_and_safety/
+
+> │        └── 📂 20_companion_animal_risk/
+
+> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │          ├── 📄 _20_companion_animal_risk.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _40_health_and_safety.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_non_economic_harm/
+
+> │        ├── 📄 PL_Cold_Risk_Report.md
+
+> │        ├── 📄 _50_non_economic_harm.md
+
+> │        └── 📂 cold_exposure/
+
+> │          ├── 📄 PL__Cold_Risk_Report.md
+
+> │          ├── 📄 _cold_exposure.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 60_professional_harm/
+
+> │        ├── 📄 _60_professional_harm.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 70_remedies_scenarios/
+
+> │        ├── 📄 _70_remedies_scenarios.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 80_payout_strategy/
+
+> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │        ├── 📄 _80_payout_strategy.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 90_third_party_harm/
+
+> │        ├── 📄 _90_third_party_harm.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _80_damages_and_fallout.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 App_Flow.canvas
+
+> │    ├── 📄 PHASE_00_Working_and_Narrative.md
+
+> │    ├── 📄 Phase_Logic_Matrix.canvas
+
+> │    ├── 📄 _00_working.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 01_court_record/
+
+> │    └── 📂 10_pre_foreclosure/
+
+> │      └── 📂 10_account_history/
+
+> │        ├── 📄 _10_account_history.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_hardship_and_ada/
+
+> │        ├── 📄 _20_hardship_and_ada.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_communications/
+
+> │        ├── 📄 _30_communications.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_payments_and_disputes/
+
+> │        ├── 📄 _40_payments_and_disputes.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _10_pre_foreclosure.md
+
+> │      ├── 📄 _20_pre_foreclosure.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_foreclosure_filing/
+
+> │      └── 📂 10_complaint/
+
+> │        ├── 📄 _10_complaint.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_summons/
+
+> │        ├── 📄 _20_summons.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_lien_parties/
+
+> │        ├── 📄 _30_lien_parties.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_docket_snapshots/
+
+> │        ├── 📄 NT__Case_Summary.md
+
+> │        ├── 📄 _40_docket_snapshots.md
+
+> │        ├── 📄 _Case_Summary.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _20_foreclosure_filing.md
+
+> │      ├── 📄 _30_foreclosure_filing.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_service_and_notice/
+
+> │      └── 📂 10_sheriff_returns/
+
+> │        ├── 📄 _10_sheriff_returns.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_mailings/
+
+> │        ├── 📄 _20_mailings.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_affidavits_of_service/
+
+> │        └── 📂 10_jurisdiction_service_tr_4_1_b/
+
+> │          ├── 📄 _10_jurisdiction_service_tr_4_1_b.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_service_process/
+
+> │          ├── 📄 _20_service_process.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _30_affidavits_of_service.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_defects_and_contradictions/
+
+> │        ├── 📄 _40_defects_and_contradictions.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_service_and_notice.md
+
+> │      ├── 📄 _40_service_and_notice.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_default_and_judgment/
+
+> │      └── 📂 10_default_motion/
+
+> │        ├── 📄 _10_default_motion.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_default_order/
+
+> │        ├── 📄 _20_default_order.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_judgment_and_decree/
+
+> │        ├── 📄 _30_judgment_and_decree.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_accounting_inputs/
+
+> │        ├── 📄 _40_accounting_inputs.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_default_and_judgment.md
+
+> │      ├── 📄 _50_default_and_judgment.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_sale_and_title/
+
+> │      └── 📂 10_sheriff_sale/
+
+> │        ├── 📄 _10_sheriff_sale.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_deed/
+
+> │        ├── 📄 _20_deed.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_recording_gaps/
+
+> │        ├── 📄 _30_recording_gaps.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_possession_claims/
+
+> │        └── 📂 10_sale_and_possession/
+
+> │          ├── 📄 _10_sale_and_possession.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 30_void_vs_voidable/
+
+> │          ├── 📄 20_void_vs_voidable.md
+
+> │          ├── 📄 NT_30_void_vs_voidable_tr_60b 1.md
+
+> │          ├── 📄 NT_30_void_vs_voidable_tr_60b.md
+
+> │          ├── 📄 _30_void_vs_voidable.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _40_possession_claims.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _50_sale_and_title.md
+
+> │      ├── 📄 _60_sale_and_title.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_writ_and_execution/
+
+> │      └── 📂 10_writ_petition/
+
+> │        ├── 📄 _10_writ_petition.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_writ_order/
+
+> │        ├── 📄 _20_writ_order.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_execution_events/
+
+> │        ├── 📄 _30_execution_events.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_notice_failures/
+
+> │        ├── 📄 _40_notice_failures.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _60_writ_and_execution.md
+
+> │      ├── 📄 _70_writ_and_execution.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_post_removal_conduct/
+
+> │      └── 📂 10_property_interference/
+
+> │        ├── 📄 _10_property_interference.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_access_denial/
+
+> │        ├── 📄 _20_access_denial.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_spoliation_risk/
+
+> │        ├── 📄 _30_spoliation_risk.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_third_party_actions/
+
+> │        ├── 📄 _40_third_party_actions.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _70_post_removal_conduct.md
+
+> │      ├── 📄 _80_post_removal_conduct.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 NT_Record_Preservation_Issue_Matrix.md
+
+> │    ├── 📄 PHASE_01_Court_Record.md
+
+> │    ├── 📄 _01_court_record.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 02_credit_fcra/
+
+> │    └── 📂 10_credit_reports/
+
+> │      ├── 📄 _10_credit_reports.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_furnisher_disputes/
+
+> │      ├── 📄 _20_furnisher_disputes.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_bureau_disputes/
+
+> │      ├── 📄 _30_bureau_disputes.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_verified_responses/
+
+> │      ├── 📄 _40_verified_responses.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_damages/
+
+> │      ├── 📄 _50_damages.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_02_Credit_FCRA.md
+
+> │    ├── 📄 _02_credit_fcra.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 03_regulators/
+
+> │    └── 📂 10_CFPB/
+
+> │      ├── 📄 _10_CFPB.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_AG_Indiana/
+
+> │      ├── 📄 _20_AG_Indiana.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_NCUA/
+
+> │      ├── 📄 _30_NCUA.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_regulatory_complaints/
+
+> │      ├── 📄 _30_regulatory_complaints.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_DOJ_Civil_Rights/
+
+> │      ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_federal_preservation/
+
+> │      ├── 📄 _40_federal_preservation.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_ICRC/
+
+> │      ├── 📄 _50_ICRC.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_03_Regulators.md
+
+> │    ├── 📄 _03_regulators.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 04_litigation_settlement/
+
+> │    └── 📂 10_strategy_and_research/
+
+> │      ├── 📄 _10_strategy_and_research.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_demand_letters/
+
+> │      ├── 📄 _20_demand_letters.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_opposing_counsel/
+
+> │      ├── 📄 _30_opposing_counsel.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_draft_pleadings/
+
+> │      ├── 📄 _40_draft_pleadings.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │    ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │    ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │    ├── 📄 NT_Refined_Settlement_Exposure_Matrix.md
+
+> │    ├── 📄 NT_Settlement_Exposure_Spine.md
+
+> │    ├── 📄 PHASE_04_Litigation_and_Settlement.md
+
+> │    ├── 📄 _04_litigation_settlement.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 05_nuclear/
+
+> │    └── 📂 10_press_kits/
+
+> │      ├── 📄 _10_press_kits.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_public_record_dumps/
+
+> │      ├── 📄 _20_public_record_dumps.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_legislative_outreach/
+
+> │      ├── 📄 _30_legislative_outreach.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_social_media/
+
+> │      ├── 📄 _40_social_media.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_05_Nuclear.md
+
+> │    ├── 📄 _05_nuclear.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 06_reserved/
+
+> │    ├── 📄 _06_reserved.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> │  ├── 📄 _D_PHASES.md
+
+> │  ├── 📄 _PHASE_PAGE_TEMPLATE.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 E_OUTPUTS/
+
+> │  └── 📂 00_binders/
+
+> │    ├── 📄 _00_binders.md
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 master_case_bible/
+
+> │      └── 📂 _build/
+
+> │        ├── 📄 NT_master_case_bible.html
+
+> │        ├── 📄 __build.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _master_case_bible.md
+
+> │      ├── 📄 binder_manifest.md
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 sections/
+
+> │        ├── 📄 _sections.md
+
+> │        ├── 📄 index.html
+
+> │  └── 📂 10_filings/
+
+> │    └── 📂 10_motions/
+
+> │      └── 📂 03_proposed_order/
+
+> │        ├── 📄 _03_proposed_order.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 10_2025-12-10_motion_vacate/
+
+> │        └── 📂 01_drafts/
+
+> │          ├── 📄 MO_Emergency Motions.docx
+
+> │          ├── 📄 _01_drafts.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 04_filed_receipts/
+
+> │          ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │          ├── 📄 _04_filed_receipts.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _10_2025-12-10_motion_vacate.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │        └── 📂 01_drafts/
+
+> │          ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │          ├── 📄 _01_drafts.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_draft_motions/
+
+> │        ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │        ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │        ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │        ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │        ├── 📄 _30_draft_motions.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _10_motions.md
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 motions/
+
+> │        ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
+
+> │        ├── 📄 MO_C2.01.002_motion_vacate.pdf
+
+> │        ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │        ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 _motions.md
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 20_exhibits/
+
+> │      ├── 📄 EXH_05_Exhibit_List.pdf
+
+> │      ├── 📄 EXH_06_Exhibits_Combined.pdf
+
+> │      ├── 📄 EXH_Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 MO_01_motion_vacate.pdf
+
+> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 NT_combinepdf.pdf
+
+> │      ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 _02_exhibits.md
+
+> │      ├── 📄 _20_exhibits.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_Filed_Envelopes/
+
+> │      ├── 📄 _30_Filed_Envelopes.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 NT__Odyssey_Envelope_Receipt.pdf
+
+> │    ├── 📄 _10_filings.md
+
+> │    ├── 📄 _20_filings.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_orders/
+
+> │    └── 📂 10_proposed/
+
+> │      ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
+
+> │      ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 OR__proposed_order_emergency_stay.md
+
+> │      ├── 📄 _10_proposed.md
+
+> │      ├── 📄 _10_proposed_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 _20_orders.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_orders.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _E_OUTPUTS.md
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 vis/
+
+> │    ├── 📄 _vis.md
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 timeline_viewer.html
+
+> ├── 📄 README.md
+
+> ├── 📄 _content.md
+
+> ├── 📄 index.html
+
+> └── 📄 index.md
+
 > ```
 
 ### Assistant
@@ -4869,94 +6521,182 @@ canonical_ref: ""
 > Just say which.
 
 ### User
-> CASE VAULT INVENTORY REPORT
-> SECTION 1 — STRUCTURAL OVERVIEW The vault is organized into a highly disciplined, modular "Case Operating System" (QiNoteOS) structure. The hierarchy splits clearly between Timeline (Facts), Evidence (Raw Proof), Visuals/Inventories (Analysis), and Phases (Strategy).
-> 
-> Scalability: Excellent. The use of numbered folders (10_, 20_) allows for localized expansion without breaking the global spine.
-> Logic: The separation of B_EVIDENCE (Raw items) from C_VIS (Harm/Violation Inventories) is a critical strength, preventing the "muddying" of objective fact with subjective legal theory.
-> Structural Risk: Minimal. The only potential friction point is E_OUTPUTS, which retains some legacy "draft/filed" structures that duplicate the clean B_EVIDENCE docket.
-> SECTION 2 — CONTENT INVENTORY (BY TOP-LEVEL FOLDER)
-> 
-> 📂 0_ADMIN
-> 
-> Purpose: Systems, protocols, and templates.
-> Contents: Checklists (10_), Case Logs (20_), Financial Trackers (30_), and Master Templates (70_).
-> Strengths: 70_templates is fully populated with motion/affidavit standards. MASTER_GRAPH_MAP provides total observability.
-> Issues: None. Clean/Operational.
-> 📂 A_TIMELINE
-> 
-> Purpose: Chronological fact backbone.
-> Contents: Daily event files sorted by year (2023, 2024, 2025, 2026).
-> Strengths: High resolution in late 2025/early 2026 (crisis period). Linked to evidence.
-> Issues: None.
-> 📂 B_EVIDENCE
-> 
-> Purpose: The "Truth" repository.
-> Contents:
-> 20_court_record: The clean, sanitized Docket (renamed 001–038). (PRIMARY EVIDENCE)
-> 30_primary: Bank/Utility records (FCFCU, AES).
-> 40_supporting: Affidavits, Photos, Receipts, Weather Reports.
-> 50_quarantine: Holding pen for duplicates.
-> Strengths: 10_docket_files is now perfectly chronological and clean.
-> Issues: 50_quarantine holds duplicates that should eventually be archived/deleted to save space.
-> 📂 C_VIS (Violations Inventory System)
-> 
-> Purpose: Legal analysis and violation mapping.
-> Contents:
-> 10_violations: Detailed folders by actor (FCFCU, COUNSEL, COURT, CREDIT_BUREAUS).
-> 60_data_inventories: CSV/Matrix views of the harm.
-> Strengths: "Molecule-level" breakdown of liability (e.g., NT_V-078_ada...). Highly defensible.
-> Issues: None. This is pure VIOLATIONS / LEGAL THEORY.
-> 📂 D_PHASES
-> 
-> Purpose: Active working context and narrative construction.
-> Contents:
-> 00_working/80_damages: The new Damages Master Index and harm ledgers.
-> 01_court_record: Phase-specific analysis of the foreclosure timeline.
-> 04_litigation_settlement: OUTPUTS like NT_Attorney_Intake_Packet and NT_Demand_Ready_Exposure.
-> Strengths: 80_damages index links narrative directly to evidence.
-> Issues: None.
-> 📂 E_OUTPUTS
-> 
-> Purpose: Final production artifacts (Binders, Filings).
-> Contents:
-> 00_binders: The HTML/PDF build of the Case Bible.
-> 10_filings: Legacy "Filed Envelopes" and "Draft Motions."
-> Issues: 10_filings/20_exhibits contains stale PDFs (EXH_05..., MO_01...) that effectively duplicate the clean docket in B_EVIDENCE. Risk of confusion.
-> SECTION 3 — EVIDENCE READINESS ASSESSMENT
-> 
-> COURT-READY:
-> B_EVIDENCE/20_court_record/10_docket_files (100% Ready).
-> Key Affidavits in B_EVIDENCE/40_supporting/docs/affidavits.
-> NEEDS CONSOLIDATION:
-> E_OUTPUTS/10_filings should be treated as "Historical Archives" only. Do not pull exhibits from here; pull from B_EVIDENCE.
-> DO NOT FILE YET:
-> C_VIS internal memos (Work Product).
-> D_PHASES/04_litigation_settlement strategy memos.
-> SECTION 4 — HARM & DAMAGES COVERAGE
-> 
-> Well-Supported:
-> Professional Loss: Linked to Evansville relocation + Tax Season timing.
-> Housing Instability: Documented by hotel receipts and "Condition" photos.
-> Property Spoliation: Supported by "Removal Day" logs and video narration.
-> Theory-Heavy (Requires Expert/External Validation):
-> FCRA Credit Score Math: We have the violations (NT_V-FCFCU...), but exact "score suppression" amounts often require an expert if litigated to trial (sufficient for settlement demand).
-> SECTION 5 — RISK & CLEANUP FLAGS
-> 
-> 🔴 HIGH RISK: E_OUTPUTS/10_filings contains files like MO_01_motion_vacate.pdf which "looks" like the official record but is likely a draft or a duplicate. RULE: ALWAYS cite B_EVIDENCE/20_court_record/10_docket_files/027_... as the source of truth.
-> 🟡 MEDIUM RISK: 50_quarantine_candidates is doing its job, but ensure you don't accidentally re-import those files.
-> SECTION 6 — BINDER READINESS SCORECARD
-> 
-> Internal Master Binder: 5/5 (Structure is complete, Index is active).
-> Attorney Intake Packet: 5/5 (Executive Summary + Exposure Matrix generated).
-> Court Filing (Motion to Vacate): 5/5 (Already filed; clean record exists).
-> Regulatory Submission: 3/5 (Narrative exists, but specific agency complaint forms (HUD/CFPB) are not yet populated in E_OUTPUTS).
-> SECTION 7 — ACTIONABLE RECOMMENDATIONS
-> 
-> [IMMEDIATE] Print the Attorney Intake Packet (D_PHASES/04_litigation/.../NT_Attorney_Intake_Packet_Executive.md) and the Exposure Summary.
-> [IMMEDIATE] Print the "Clean Docket" index (or the folder listing of B_EVIDENCE/20_court_record/10_docket_files) to show counsel you have a gripped record.
-> [HOUSEKEEPING] Ignore E_OUTPUTS/10_filings for active drafting. Use it only to check what was physically mailed in the past.
-> [NEXT PHASE] Populate E_OUTPUTS/30_regulator_packets using data from the C_VIS actor folders if escalation is required.
+> CASE VAULT INVENTORY REPORT
+
+> SECTION 1 — STRUCTURAL OVERVIEW The vault is organized into a highly disciplined, modular "Case Operating System" (QiNoteOS) structure. The hierarchy splits clearly between Timeline (Facts), Evidence (Raw Proof), Visuals/Inventories (Analysis), and Phases (Strategy).
+
+> 
+
+> Scalability: Excellent. The use of numbered folders (10_, 20_) allows for localized expansion without breaking the global spine.
+
+> Logic: The separation of B_EVIDENCE (Raw items) from C_VIS (Harm/Violation Inventories) is a critical strength, preventing the "muddying" of objective fact with subjective legal theory.
+
+> Structural Risk: Minimal. The only potential friction point is E_OUTPUTS, which retains some legacy "draft/filed" structures that duplicate the clean B_EVIDENCE docket.
+
+> SECTION 2 — CONTENT INVENTORY (BY TOP-LEVEL FOLDER)
+
+> 
+
+> 📂 0_ADMIN
+
+> 
+
+> Purpose: Systems, protocols, and templates.
+
+> Contents: Checklists (10_), Case Logs (20_), Financial Trackers (30_), and Master Templates (70_).
+
+> Strengths: 70_templates is fully populated with motion/affidavit standards. MASTER_GRAPH_MAP provides total observability.
+
+> Issues: None. Clean/Operational.
+
+> 📂 A_TIMELINE
+
+> 
+
+> Purpose: Chronological fact backbone.
+
+> Contents: Daily event files sorted by year (2023, 2024, 2025, 2026).
+
+> Strengths: High resolution in late 2025/early 2026 (crisis period). Linked to evidence.
+
+> Issues: None.
+
+> 📂 B_EVIDENCE
+
+> 
+
+> Purpose: The "Truth" repository.
+
+> Contents:
+
+> 20_court_record: The clean, sanitized Docket (renamed 001–038). (PRIMARY EVIDENCE)
+
+> 30_primary: Bank/Utility records (FCFCU, AES).
+
+> 40_supporting: Affidavits, Photos, Receipts, Weather Reports.
+
+> 50_quarantine: Holding pen for duplicates.
+
+> Strengths: 10_docket_files is now perfectly chronological and clean.
+
+> Issues: 50_quarantine holds duplicates that should eventually be archived/deleted to save space.
+
+> 📂 C_VIS (Violations Inventory System)
+
+> 
+
+> Purpose: Legal analysis and violation mapping.
+
+> Contents:
+
+> 10_violations: Detailed folders by actor (FCFCU, COUNSEL, COURT, CREDIT_BUREAUS).
+
+> 60_data_inventories: CSV/Matrix views of the harm.
+
+> Strengths: "Molecule-level" breakdown of liability (e.g., NT_V-078_ada...). Highly defensible.
+
+> Issues: None. This is pure VIOLATIONS / LEGAL THEORY.
+
+> 📂 D_PHASES
+
+> 
+
+> Purpose: Active working context and narrative construction.
+
+> Contents:
+
+> 00_working/80_damages: The new Damages Master Index and harm ledgers.
+
+> 01_court_record: Phase-specific analysis of the foreclosure timeline.
+
+> 04_litigation_settlement: OUTPUTS like NT_Attorney_Intake_Packet and NT_Demand_Ready_Exposure.
+
+> Strengths: 80_damages index links narrative directly to evidence.
+
+> Issues: None.
+
+> 📂 E_OUTPUTS
+
+> 
+
+> Purpose: Final production artifacts (Binders, Filings).
+
+> Contents:
+
+> 00_binders: The HTML/PDF build of the Case Bible.
+
+> 10_filings: Legacy "Filed Envelopes" and "Draft Motions."
+
+> Issues: 10_filings/20_exhibits contains stale PDFs (EXH_05..., MO_01...) that effectively duplicate the clean docket in B_EVIDENCE. Risk of confusion.
+
+> SECTION 3 — EVIDENCE READINESS ASSESSMENT
+
+> 
+
+> COURT-READY:
+
+> B_EVIDENCE/20_court_record/10_docket_files (100% Ready).
+
+> Key Affidavits in B_EVIDENCE/40_supporting/docs/affidavits.
+
+> NEEDS CONSOLIDATION:
+
+> E_OUTPUTS/10_filings should be treated as "Historical Archives" only. Do not pull exhibits from here; pull from B_EVIDENCE.
+
+> DO NOT FILE YET:
+
+> C_VIS internal memos (Work Product).
+
+> D_PHASES/04_litigation_settlement strategy memos.
+
+> SECTION 4 — HARM & DAMAGES COVERAGE
+
+> 
+
+> Well-Supported:
+
+> Professional Loss: Linked to Evansville relocation + Tax Season timing.
+
+> Housing Instability: Documented by hotel receipts and "Condition" photos.
+
+> Property Spoliation: Supported by "Removal Day" logs and video narration.
+
+> Theory-Heavy (Requires Expert/External Validation):
+
+> FCRA Credit Score Math: We have the violations (NT_V-FCFCU...), but exact "score suppression" amounts often require an expert if litigated to trial (sufficient for settlement demand).
+
+> SECTION 5 — RISK & CLEANUP FLAGS
+
+> 
+
+> 🔴 HIGH RISK: E_OUTPUTS/10_filings contains files like MO_01_motion_vacate.pdf which "looks" like the official record but is likely a draft or a duplicate. RULE: ALWAYS cite B_EVIDENCE/20_court_record/10_docket_files/027_... as the source of truth.
+
+> 🟡 MEDIUM RISK: 50_quarantine_candidates is doing its job, but ensure you don't accidentally re-import those files.
+
+> SECTION 6 — BINDER READINESS SCORECARD
+
+> 
+
+> Internal Master Binder: 5/5 (Structure is complete, Index is active).
+
+> Attorney Intake Packet: 5/5 (Executive Summary + Exposure Matrix generated).
+
+> Court Filing (Motion to Vacate): 5/5 (Already filed; clean record exists).
+
+> Regulatory Submission: 3/5 (Narrative exists, but specific agency complaint forms (HUD/CFPB) are not yet populated in E_OUTPUTS).
+
+> SECTION 7 — ACTIONABLE RECOMMENDATIONS
+
+> 
+
+> [IMMEDIATE] Print the Attorney Intake Packet (D_PHASES/04_litigation/.../NT_Attorney_Intake_Packet_Executive.md) and the Exposure Summary.
+
+> [IMMEDIATE] Print the "Clean Docket" index (or the folder listing of B_EVIDENCE/20_court_record/10_docket_files) to show counsel you have a gripped record.
+
+> [HOUSEKEEPING] Ignore E_OUTPUTS/10_filings for active drafting. Use it only to check what was physically mailed in the past.
+
+> [NEXT PHASE] Populate E_OUTPUTS/30_regulator_packets using data from the C_VIS actor folders if escalation is required.
+
 > ok give me all the seed files or u
 
 ### Assistant
@@ -5327,164 +7067,322 @@ canonical_ref: ""
 > If you tell me which of the three you want, I’ll give you the exact table schemas + primary keys + upsert rules to prevent duplicates.
 
 ### User
-> so we are on the same page here are the sql from supabase. -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE public.documents (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   task_id uuid,
->   title text NOT NULL,
->   file_path text,
->   file_type text,
->   size_bytes bigint,
->   metadata jsonb DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   storage_bucket text NOT NULL,
->   storage_path text NOT NULL,
->   workstream text,
->   CONSTRAINT documents_pkey PRIMARY KEY (id),
->   CONSTRAINT documents_task_id_fkey FOREIGN KEY (task_id) REFERENCES public.tasks(id),
->   CONSTRAINT documents_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.drafts (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   template_id uuid,
->   title text,
->   content_data jsonb DEFAULT '{}'::jsonb,
->   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'ready'::text, 'filed'::text])),
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   workstream text,
->   CONSTRAINT drafts_pkey PRIMARY KEY (id),
->   CONSTRAINT drafts_template_id_fkey FOREIGN KEY (template_id) REFERENCES public.templates(id),
->   CONSTRAINT drafts_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.envelope_packets (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   envelope_id uuid,
->   packet_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT envelope_packets_pkey PRIMARY KEY (id),
->   CONSTRAINT envelope_packets_envelope_id_fkey FOREIGN KEY (envelope_id) REFERENCES public.envelopes(id),
->   CONSTRAINT envelope_packets_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
-> );
-> CREATE TABLE public.envelopes (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   recipient_email text,
->   recipient_name text,
->   status text DEFAULT 'prepared'::text CHECK (status = ANY (ARRAY['draft'::text, 'submitted'::text, 'accepted'::text, 'rejected'::text])),
->   sent_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   court_system text,
->   confirmation_number text,
->   rejection_reason text,
->   notes text,
->   CONSTRAINT envelopes_pkey PRIMARY KEY (id),
->   CONSTRAINT envelopes_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.packet_exports (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   packet_id uuid,
->   export_url text,
->   format text DEFAULT 'pdf'::text CHECK (format = ANY (ARRAY['pdf'::text, 'zip'::text])),
->   status text DEFAULT 'processing'::text CHECK (status = ANY (ARRAY['processing'::text, 'ready'::text, 'failed'::text])),
->   completed_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   storage_bucket text,
->   storage_path text,
->   export_type text CHECK (export_type = ANY (ARRAY['judge_copy'::text, 'opposing_counsel'::text, 'service'::text, 'internal'::text])),
->   CONSTRAINT packet_exports_pkey PRIMARY KEY (id),
->   CONSTRAINT packet_exports_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
-> );
-> CREATE TABLE public.packet_items (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   packet_id uuid,
->   document_id uuid,
->   draft_id uuid,
->   sort_order integer DEFAULT 0,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT packet_items_pkey PRIMARY KEY (id),
->   CONSTRAINT packet_items_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id),
->   CONSTRAINT packet_items_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id),
->   CONSTRAINT packet_items_draft_id_fkey FOREIGN KEY (draft_id) REFERENCES public.drafts(id)
-> );
-> CREATE TABLE public.packets (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   name text NOT NULL,
->   description text,
->   status text DEFAULT 'open'::text CHECK (status = ANY (ARRAY['building'::text, 'ready'::text, 'submitted'::text, 'sent'::text])),
->   version integer DEFAULT 1,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   packet_type text NOT NULL CHECK (packet_type = ANY (ARRAY['efile'::text, 'judge_copy'::text, 'service'::text, 'dispute'::text, 'regulator'::text, 'internal'::text])),
->   CONSTRAINT packets_pkey PRIMARY KEY (id),
->   CONSTRAINT packets_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.phase_state (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL UNIQUE,
->   current_phase_id text NOT NULL,
->   settlement_phase_id text NOT NULL DEFAULT '05'::text,
->   allow_settlement_jump boolean NOT NULL DEFAULT true,
->   last_non_settlement_phase_id text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT phase_state_pkey PRIMARY KEY (id),
->   CONSTRAINT phase_state_current_phase_id_fkey FOREIGN KEY (current_phase_id) REFERENCES public.phases(id),
->   CONSTRAINT phase_state_settlement_phase_id_fkey FOREIGN KEY (settlement_phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.phases (
->   id text NOT NULL CHECK (id = ANY (ARRAY['00'::text, '01'::text, '02'::text, '03'::text, '04'::text, '05'::text, '06'::text])),
->   name text NOT NULL,
->   description text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT phases_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.tasks (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   phase_id text NOT NULL,
->   title text NOT NULL,
->   description text,
->   status text DEFAULT 'todo'::text CHECK (status = ANY (ARRAY['todo'::text, 'doing'::text, 'waiting'::text, 'done'::text])),
->   due_date timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   priority text CHECK (priority = ANY (ARRAY['P0'::text, 'P1'::text, 'P2'::text, 'P3'::text])),
->   workstream text,
->   CONSTRAINT tasks_pkey PRIMARY KEY (id),
->   CONSTRAINT tasks_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.templates (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   name text NOT NULL,
->   content text,
->   category text,
->   is_active boolean DEFAULT true,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   workstream text,
->   CONSTRAINT templates_pkey PRIMARY KEY (id),
->   CONSTRAINT templates_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+> so we are on the same page here are the sql from supabase. -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE public.documents (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   task_id uuid,
+
+>   title text NOT NULL,
+
+>   file_path text,
+
+>   file_type text,
+
+>   size_bytes bigint,
+
+>   metadata jsonb DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   storage_bucket text NOT NULL,
+
+>   storage_path text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT documents_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT documents_task_id_fkey FOREIGN KEY (task_id) REFERENCES public.tasks(id),
+
+>   CONSTRAINT documents_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.drafts (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   template_id uuid,
+
+>   title text,
+
+>   content_data jsonb DEFAULT '{}'::jsonb,
+
+>   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'ready'::text, 'filed'::text])),
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT drafts_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT drafts_template_id_fkey FOREIGN KEY (template_id) REFERENCES public.templates(id),
+
+>   CONSTRAINT drafts_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.envelope_packets (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   envelope_id uuid,
+
+>   packet_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT envelope_packets_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT envelope_packets_envelope_id_fkey FOREIGN KEY (envelope_id) REFERENCES public.envelopes(id),
+
+>   CONSTRAINT envelope_packets_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
+
+> );
+
+> CREATE TABLE public.envelopes (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   recipient_email text,
+
+>   recipient_name text,
+
+>   status text DEFAULT 'prepared'::text CHECK (status = ANY (ARRAY['draft'::text, 'submitted'::text, 'accepted'::text, 'rejected'::text])),
+
+>   sent_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   court_system text,
+
+>   confirmation_number text,
+
+>   rejection_reason text,
+
+>   notes text,
+
+>   CONSTRAINT envelopes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT envelopes_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.packet_exports (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   packet_id uuid,
+
+>   export_url text,
+
+>   format text DEFAULT 'pdf'::text CHECK (format = ANY (ARRAY['pdf'::text, 'zip'::text])),
+
+>   status text DEFAULT 'processing'::text CHECK (status = ANY (ARRAY['processing'::text, 'ready'::text, 'failed'::text])),
+
+>   completed_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   storage_bucket text,
+
+>   storage_path text,
+
+>   export_type text CHECK (export_type = ANY (ARRAY['judge_copy'::text, 'opposing_counsel'::text, 'service'::text, 'internal'::text])),
+
+>   CONSTRAINT packet_exports_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packet_exports_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
+
+> );
+
+> CREATE TABLE public.packet_items (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   packet_id uuid,
+
+>   document_id uuid,
+
+>   draft_id uuid,
+
+>   sort_order integer DEFAULT 0,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT packet_items_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packet_items_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id),
+
+>   CONSTRAINT packet_items_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id),
+
+>   CONSTRAINT packet_items_draft_id_fkey FOREIGN KEY (draft_id) REFERENCES public.drafts(id)
+
+> );
+
+> CREATE TABLE public.packets (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   status text DEFAULT 'open'::text CHECK (status = ANY (ARRAY['building'::text, 'ready'::text, 'submitted'::text, 'sent'::text])),
+
+>   version integer DEFAULT 1,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   packet_type text NOT NULL CHECK (packet_type = ANY (ARRAY['efile'::text, 'judge_copy'::text, 'service'::text, 'dispute'::text, 'regulator'::text, 'internal'::text])),
+
+>   CONSTRAINT packets_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packets_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.phase_state (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL UNIQUE,
+
+>   current_phase_id text NOT NULL,
+
+>   settlement_phase_id text NOT NULL DEFAULT '05'::text,
+
+>   allow_settlement_jump boolean NOT NULL DEFAULT true,
+
+>   last_non_settlement_phase_id text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT phase_state_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT phase_state_current_phase_id_fkey FOREIGN KEY (current_phase_id) REFERENCES public.phases(id),
+
+>   CONSTRAINT phase_state_settlement_phase_id_fkey FOREIGN KEY (settlement_phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.phases (
+
+>   id text NOT NULL CHECK (id = ANY (ARRAY['00'::text, '01'::text, '02'::text, '03'::text, '04'::text, '05'::text, '06'::text])),
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT phases_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.tasks (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   phase_id text NOT NULL,
+
+>   title text NOT NULL,
+
+>   description text,
+
+>   status text DEFAULT 'todo'::text CHECK (status = ANY (ARRAY['todo'::text, 'doing'::text, 'waiting'::text, 'done'::text])),
+
+>   due_date timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   priority text CHECK (priority = ANY (ARRAY['P0'::text, 'P1'::text, 'P2'::text, 'P3'::text])),
+
+>   workstream text,
+
+>   CONSTRAINT tasks_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT tasks_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.templates (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   name text NOT NULL,
+
+>   content text,
+
+>   category text,
+
+>   is_active boolean DEFAULT true,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT templates_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT templates_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
 > );
 
 ### Assistant
@@ -5741,270 +7639,534 @@ canonical_ref: ""
 > - schema violations (NOT NULL issues)
 
 ### User
-> then we need to make all those table. ```markdown
-> . 📂 C_VIS
-> └── 📂 10_violations/
-> │  └── 📂 COUNSEL/
-> │    ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0038_procedure.md
-> │    ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
-> │    ├── 📄 _COUNSEL.md
-> │  └── 📂 COURT/
-> │    ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
-> │    ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
-> │    ├── 📄 NT_V-FCFCU-0000-0002_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2000-0002_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2009-0003_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2010-0003_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0034_due-process.md
-> │    ├── 📄 NT_V-FCFCU-2025-0050_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2025-0051_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2025-0052_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0053_procedural.md
-> │    ├── 📄 OR_V-079_void-judgment-procedural-error.md
-> │    ├── 📄 PL_V-032_no-ada-compliant-notice.md
-> │    ├── 📄 _COURT.md
-> │  └── 📂 CREDIT_BUREAUS/
-> │    ├── 📄 NT_V-011_experian-reinvestigation-failure.md
-> │    ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
-> │    ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
-> │    ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
-> │    ├── 📄 NT_V-073_damages-credit-score-suppression.md
-> │    ├── 📄 NT_V-FCFCU-2025-0001_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0002_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0003_fcra.md
-> │    ├── 📄 _CREDIT_BUREAUS.md
-> │  └── 📂 FCFCU/
-> │    ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
-> │    ├── 📄 NT_V-006_dual-tradeline-double-counting.md
-> │    ├── 📄 NT_V-008_credit-defamation-false-publication.md
-> │    ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
-> │    ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
-> │    ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
-> │    ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
-> │    ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
-> │    ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
-> │    ├── 📄 NT_V-078_ada-effective-communication-failure.md
-> │    ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
-> │    ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
-> │    ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
-> │    ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
-> │    ├── 📄 NT_V-FCFCU-2025-0004_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0005_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0006_tort.md
-> │    ├── 📄 NT_V-FCFCU-2025-0007_fdcpa.md
-> │    ├── 📄 NT_V-FCFCU-2025-0008_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0009_tort.md
-> │    ├── 📄 NT_V-FCFCU-2025-0010_due-process.md
-> │    ├── 📄 NT_V-FCFCU-2025-0011_procedure-accounting.md
-> │    ├── 📄 NT_V-FCFCU-2025-0012_accounting.md
-> │    ├── 📄 NT_V-FCFCU-2025-0013_tort.md
-> │    ├── 📄 NT_V-FCFCU-2025-0014_litigation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0015_litigation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0016_litigation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0017_damages.md
-> │    ├── 📄 NT_V-FCFCU-2025-0018_damages.md
-> │    ├── 📄 NT_V-FCFCU-2025-0019_public.md
-> │    ├── 📄 NT_V-FCFCU-2025-0020_tort.md
-> │    ├── 📄 NT_V-FCFCU-2025-0021_procedure---evidence.md
-> │    ├── 📄 NT_V-FCFCU-2025-0022_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0023_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0024_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0025_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0026_fcra.md
-> │    ├── 📄 NT_V-FCFCU-2025-0027_due-process.md
-> │    ├── 📄 NT_V-FCFCU-2025-0035_procedure.md
-> │    ├── 📄 NT_V-FCFCU-2025-0036_procedure.md
-> │    ├── 📄 NT_V-FCFCU-2025-0037_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0054_due-process-failure---defective-service.md
-> │    ├── 📄 NT_V-FCFCU-2025-0060_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2025-0061_due-process-failure---notice-deficiency.md
-> │    ├── 📄 NT_V-FCFCU-2025-0062_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0063_foreclosure.md
-> │    ├── 📄 NT_V-FCFCU-2025-0064_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2025-0065_fraud-on-the-court---material-misrepresentation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0066_conversion---property-interference.md
-> │    ├── 📄 NT_V-FCFCU-2025-0067_evidence-spoliation.md
-> │    ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> │    ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> │    ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> │    ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
-> │    ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
-> │    ├── 📄 _FCFCU.md
-> │  └── 📂 OTHER_PARTIES/
-> │    ├── 📄 NT_V-070_global-demand-letter.md
-> │    ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
-> │    ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
-> │    ├── 📄 NT_V-075_public-accountability-hold.md
-> │    ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
-> │    ├── 📄 NT_V-090_secondary-displacement-cascade-of-harm.md
-> │    ├── 📄 NT_V-110_easytax-theft-conversion.md
-> │    ├── 📄 NT_V-111_zai-asylum-case-closure.md
-> │    ├── 📄 NT_V-112_forced-relocation-evansville.md
-> │    ├── 📄 NT_V-113_otis-predatory-housing-harassment.md
-> │    ├── 📄 NT_V-FCFCU-0000-0001_fair-housing-act-breach--reasonable-accommodation-.md
-> │    ├── 📄 NT_V-FCFCU-0000-0003_due-process-violation--standard-of-proof-.md
-> │    ├── 📄 NT_V-FCFCU-0000-0004_unconstitutional-presumption--vesting-of-title-.md
-> │    ├── 📄 NT_V-FCFCU-0000-0007_ada.md
-> │    ├── 📄 NT_V-FCFCU-0000-0008_procedural.md
-> │    ├── 📄 NT_V-FCFCU-0000-0009_ada.md
-> │    ├── 📄 NT_V-FCFCU-0000-0010_ada.md
-> │    ├── 📄 NT_V-FCFCU-1972-0001_procedural.md
-> │    ├── 📄 NT_V-FCFCU-1977-0001_due-process-failure---notice-error.md
-> │    ├── 📄 NT_V-FCFCU-1977-0002_procedural.md
-> │    ├── 📄 NT_V-FCFCU-1993-0001_procedural.md
-> │    ├── 📄 NT_V-FCFCU-1996-0001_fair-housing-act-breach--race-discrimination-.md
-> │    ├── 📄 NT_V-FCFCU-1999-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-1999-0002_fair-housing-act-breach--disability-accessibility-.md
-> │    ├── 📄 NT_V-FCFCU-2003-0001_fair-housing-act-breach--familial-status-discrimin.md
-> │    ├── 📄 NT_V-FCFCU-2004-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-2005-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-2008-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-2009-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-2009-0004_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2010-0001_ada.md
-> │    ├── 📄 NT_V-FCFCU-2011-0001_fair-housing-act-breach--intentional-discriminatio.md
-> │    ├── 📄 NT_V-FCFCU-2011-0002_fair-housing-act-breach--terms-and-conditions-of-s.md
-> │    ├── 📄 NT_V-FCFCU-2011-0003_fair-housing-act-breach--residential-real-estate-r.md
-> │    ├── 📄 NT_V-FCFCU-2011-0004_fair-housing-act-breach--perpetuating-segregation-.md
-> │    ├── 📄 NT_V-FCFCU-2012-0003_fair-housing-act-breach--disability---design-and-c.md
-> │    ├── 📄 NT_V-FCFCU-2013-0001_fair-housing-act-breach--race-and-color-discrimina.md
-> │    ├── 📄 NT_V-FCFCU-2013-0002_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2013-0003_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2014-0001_discriminatory-treatment-in-property-maintenance.md
-> │    ├── 📄 NT_V-FCFCU-2014-0002_fair-housing-act-breach--disability---restrictive-.md
-> │    ├── 📄 NT_V-FCFCU-2015-0001_fair-housing-act-breach--design-and-construction-.md
-> │    ├── 📄 NT_V-FCFCU-2015-0003_fair-housing-act-breach--discriminatory-statements.md
-> │    ├── 📄 NT_V-FCFCU-2015-0004_fair-housing-act-breach--race--national-origin---d.md
-> │    ├── 📄 NT_V-FCFCU-2016-0001_fair-housing-act-breach--retaliation-.md
-> │    ├── 📄 NT_V-FCFCU-2016-0002_fair-housing-act-breach--familial-status-.md
-> │    ├── 📄 NT_V-FCFCU-2016-0003_fair-housing-act-breach--race--gender--disability-.md
-> │    ├── 📄 NT_V-FCFCU-2016-0004_fair-housing-act-breach--disability---failure-to-r.md
-> │    ├── 📄 NT_V-FCFCU-2017-0001_predatory-land-contract---housing-discrimination--.md
-> │    ├── 📄 NT_V-FCFCU-2018-0001_breach-of-warranty-of-habitability.md
-> │    ├── 📄 NT_V-FCFCU-2018-0002_fair-housing-act-breach--race--color--national-ori.md
-> │    ├── 📄 NT_V-FCFCU-2020-0001_fair-housing-act-breach--accessibility-requirement.md
-> │    ├── 📄 NT_V-FCFCU-2020-0002_fair-housing-act-breach--reasonable-accommodation-.md
-> │    ├── 📄 NT_V-FCFCU-2020-0003_fair-housing-act-breach--gender---sexual-harassmen.md
-> │    ├── 📄 NT_V-FCFCU-2021-0002_fair-housing-act-breach--familial-status-.md
-> │    ├── 📄 NT_V-FCFCU-2021-0003_fair-housing-act-breach--race---redlining.md
-> │    ├── 📄 NT_V-FCFCU-2024-0001_fair-housing-act-breach--race---arbitrary-criminal.md
-> │    ├── 📄 NT_V-FCFCU-2025-0028_fair-housing-act.md
-> │    ├── 📄 NT_V-FCFCU-2025-0029_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0030_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0032_consumer-protection---fha.md
-> │    ├── 📄 NT_V-FCFCU-2025-0043_reputation.md
-> │    ├── 📄 NT_V-FCFCU-2025-0049_consumer-protection.md
-> │    ├── 📄 NT_V-FCFCU-2025-0057_potential-ic---32-30-10-14-violation--surplus-mism.md
-> │    ├── 📄 NT_V-FCFCU-2025-0059_spoliation-of-evidence.md
-> │    ├── 📄 NT_V-FCFCU-2026-0001_general.md
-> │    ├── 📄 _OTHER_PARTIES.md
-> │  └── 📂 REGULATORS/
-> │    ├── 📄 NT_V-FCFCU-0000-0005_discriminatory-advertising.md
-> │    ├── 📄 NT_V-FCFCU-1985-0001_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2010-0002_fair-housing-act-breach--sexual-harassment-.md
-> │    ├── 📄 NT_V-FCFCU-2011-0005_fair-housing-act-breach--intentional-discriminatio.md
-> │    ├── 📄 NT_V-FCFCU-2012-0001_failure-to-provide-equal-maintenance-services--reo.md
-> │    ├── 📄 NT_V-FCFCU-2012-0002_fair-housing-act-breach--race--national-origin---d.md
-> │    ├── 📄 NT_V-FCFCU-2015-0002_ada.md
-> │    ├── 📄 NT_V-FCFCU-2016-0005_fair-housing-act-breach--disability--familial-stat.md
-> │    ├── 📄 NT_V-FCFCU-2018-0003_fair-housing-act-breach--familial-status---occupan.md
-> │    ├── 📄 NT_V-FCFCU-2019-0001_fair-housing-act-breach--race--national-origin---h.md
-> │    ├── 📄 NT_V-FCFCU-2025-0031_fair-housing-act.md
-> │    ├── 📄 NT_V-FCFCU-2025-0039_regulatory.md
-> │    ├── 📄 NT_V-FCFCU-2025-0040_regulatory.md
-> │    ├── 📄 NT_V-FCFCU-2025-0041_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0042_ada.md
-> │    ├── 📄 PL_V-050_cfpb-complaint-track.md
-> │    ├── 📄 PL_V-051_indiana-ag-complaint-track.md
-> │    ├── 📄 PL_V-052_icrc-complaint-track.md
-> │    ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
-> │    ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
-> │    ├── 📄 _REGULATORS.md
-> │  └── 📂 SHERIFF/
-> │    ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
-> │    ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
-> │    ├── 📄 NT_V-FCFCU-2025-0033_due-process.md
-> │    ├── 📄 NT_V-FCFCU-2025-0055_ada.md
-> │    ├── 📄 NT_V-FCFCU-2025-0056_procedural.md
-> │    ├── 📄 NT_V-FCFCU-2025-0058_conversion---negligence.md
-> │    ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
-> │    ├── 📄 _SHERIFF.md
-> │  └── 📂 UTILITIES_MUNICIPAL/
-> │    ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
-> │    ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
-> │    ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
-> │    ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> │    ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
-> │    ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
-> │    ├── 📄 NT_V-095_theft-of-services-utility-exploitation.md
-> │    ├── 📄 NT_V-FCFCU-0000-0006_fair-housing-act-breach--exclusionary-zoning-.md
-> │    ├── 📄 NT_V-FCFCU-0000-0011_section-504-breach---failure-to-provide-interprete.md
-> │    ├── 📄 NT_V-FCFCU-1975-0001_civil-rights.md
-> │    ├── 📄 NT_V-FCFCU-2000-0001_fair-housing-act-breach--reasonable-accommodation-.md
-> │    ├── 📄 NT_V-FCFCU-2009-0002_fair-housing-act-breach--pattern-or-practice-of-re.md
-> │    ├── 📄 NT_V-FCFCU-2021-0001_fair-housing-act-breach--race--color---appraisal-b.md
-> │    ├── 📄 NT_V-FCFCU-2025-0044_utility.md
-> │    ├── 📄 NT_V-FCFCU-2025-0045_utility.md
-> │    ├── 📄 NT_V-FCFCU-2025-0046_tort.md
-> │    ├── 📄 NT_V-FCFCU-2025-0047_municipal.md
-> │    ├── 📄 NT_V-FCFCU-2025-0048_municipal.md
-> │    ├── 📄 _UTILITIES_MUNICIPAL.md
-> │  ├── 📄 _10_violations.md
-> └── 📂 20_theories/
-> │  ├── 📄 NT_BACKUP_ARGUMENTS.md
-> │  ├── 📄 NT_IF_JUDGE_PUSHBACK.md
-> │  ├── 📄 _20_theories.md
-> └── 📂 30_legal_research/
-> │  ├── 📄 NT_CASE_LAW_RESEARCH.md
-> │  ├── 📄 NT_JURISDICTION_THEORY.md
-> │  ├── 📄 NT_LEGAL MEMORANDUM.md
-> │  ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
-> │  ├── 📄 _30_legal_research.md
-> └── 📂 40_analysis/
-> │  ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │  ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │  ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │  ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │  ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │  ├── 📄 NT_Violation_Remedy_Inventory.md
-> │  ├── 📄 _40_analysis.md
-> └── 📂 50_strategies/
-> │  ├── 📄 NT_00_basis.md
-> │  ├── 📄 NT_10_ada_strategy.md
-> │  ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
-> │  ├── 📄 NT_BUT_FOR_ANALYSIS.md
-> │  ├── 📄 NT_Master_Strategy_Canvas.canvas
-> │  ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
-> │  ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
-> │  ├── 📄 NT_REVERSAL_PATHS.md
-> │  ├── 📄 NT_STATUS_TRACKER.md
-> │  ├── 📄 NT_STAY_PATHS.md
-> │  ├── 📄 NT_System_Workflow.canvas
-> │  ├── 📄 PL_DOJ_COMPLAINT.md
-> │  ├── 📄 PL_ICRC_COMPLAINT.md
-> │  ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
-> │  ├── 📄 Strategic_Plan.canvas
-> │  ├── 📄 _50_strategies.md
-> └── 📂 60_data_inventories/
-> │  ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
-> │  ├── 📄 NT_Case_Docket_Checklist.csv
-> │  ├── 📄 NT_Case_Docket_Checklist.md
-> │  ├── 📄 NT_Damage_Accounting_Ledger.md
-> │  ├── 📄 _60_data_inventories.md
-> │  ├── 📄 evidence_index_master.csv
-> │  ├── 📄 evidence_index_master.md
-> │  ├── 📄 financial_transactions_damages.csv
-> │  ├── 📄 financial_transactions_damages.md
-> │  ├── 📄 legal_authority_library.csv
-> │  ├── 📄 legal_authority_library.md
-> │  ├── 📄 tasks_strategy.csv
-> │  ├── 📄 tasks_strategy.md
-> │  ├── 📄 violations_inventory_master.csv
-> │  ├── 📄 violations_inventory_master.md
-> ├── 📄 NT_01_MASTER_INDEX.md
-> ├── 📄 _C_VIS.md
-> └── 📄 vis.yaml
+> then we need to make all those table. ```markdown
+
+> . 📂 C_VIS
+
+> └── 📂 10_violations/
+
+> │  └── 📂 COUNSEL/
+
+> │    ├── 📄 NT_V-082_fraud-on-the-court-material-misrepresentation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0038_procedure.md
+
+> │    ├── 📄 PL_V-034_attorney-appeared-without-formal-appearance.md
+
+> │    ├── 📄 _COUNSEL.md
+
+> │  └── 📂 COURT/
+
+> │    ├── 📄 NT_V-035_court-relied-on-service-sufficiency.md
+
+> │    ├── 📄 NT_V-036_surplus-funds-declared-resolved.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0002_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2000-0002_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2009-0003_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2010-0003_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0034_due-process.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0050_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0051_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0052_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0053_procedural.md
+
+> │    ├── 📄 OR_V-079_void-judgment-procedural-error.md
+
+> │    ├── 📄 PL_V-032_no-ada-compliant-notice.md
+
+> │    ├── 📄 _COURT.md
+
+> │  └── 📂 CREDIT_BUREAUS/
+
+> │    ├── 📄 NT_V-011_experian-reinvestigation-failure.md
+
+> │    ├── 📄 NT_V-012_equifax-reinvestigation-failure.md
+
+> │    ├── 📄 NT_V-013_transunion-reinvestigation-failure.md
+
+> │    ├── 📄 NT_V-072_equitable-relief-tradeline-deletion.md
+
+> │    ├── 📄 NT_V-073_damages-credit-score-suppression.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0001_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0002_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0003_fcra.md
+
+> │    ├── 📄 _CREDIT_BUREAUS.md
+
+> │  └── 📂 FCFCU/
+
+> │    ├── 📄 NT_V-005_failure-to-correct-inaccurate-furnishings.md
+
+> │    ├── 📄 NT_V-006_dual-tradeline-double-counting.md
+
+> │    ├── 📄 NT_V-008_credit-defamation-false-publication.md
+
+> │    ├── 📄 NT_V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> │    ├── 📄 NT_V-010_failure-to-mark-account-foreclosure-closed.md
+
+> │    ├── 📄 NT_V-025_cost-shift-fcfcu-refused-winterize.md
+
+> │    ├── 📄 NT_V-037_interest-fees-arbitrarily-inflated.md
+
+> │    ├── 📄 NT_V-038_fcfcu-testimony-winterize-then-leave.md
+
+> │    ├── 📄 NT_V-076_fha-reasonable-accommodation-failure.md
+
+> │    ├── 📄 NT_V-078_ada-effective-communication-failure.md
+
+> │    ├── 📄 NT_V-080_conversion-negligence-post-removal-damage.md
+
+> │    ├── 📄 NT_V-081_evidence-spoliation-unplugged-cameras.md
+
+> │    ├── 📄 NT_V-083_discriminatory-maintenance-redlining.md
+
+> │    ├── 📄 NT_V-084_predatory-land-contract-reverse-redlining.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0004_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0005_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0006_tort.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0007_fdcpa.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0008_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0009_tort.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0010_due-process.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0011_procedure-accounting.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0012_accounting.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0013_tort.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0014_litigation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0015_litigation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0016_litigation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0017_damages.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0018_damages.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0019_public.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0020_tort.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0021_procedure---evidence.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0022_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0023_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0024_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0025_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0026_fcra.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0027_due-process.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0035_procedure.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0036_procedure.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0037_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0054_due-process-failure---defective-service.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0060_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0061_due-process-failure---notice-deficiency.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0062_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0063_foreclosure.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0064_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0065_fraud-on-the-court---material-misrepresentation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0066_conversion---property-interference.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0067_evidence-spoliation.md
+
+> │    ├── 📄 OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> │    ├── 📄 OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> │    ├── 📄 OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> │    ├── 📄 OR_V-004_past-due-amount-schedule-after-judgment.md
+
+> │    ├── 📄 PL_V-007_inconsistent-reporting-vs-court-position.md
+
+> │    ├── 📄 _FCFCU.md
+
+> │  └── 📂 OTHER_PARTIES/
+
+> │    ├── 📄 NT_V-070_global-demand-letter.md
+
+> │    ├── 📄 NT_V-071_litigation-hold-preservation-letter.md
+
+> │    ├── 📄 NT_V-074_damages-out-of-pocket-costs.md
+
+> │    ├── 📄 NT_V-075_public-accountability-hold.md
+
+> │    ├── 📄 NT_V-077_ada-title-iii-entertainment-access-failure.md
+
+> │    ├── 📄 NT_V-090_secondary-displacement-cascade-of-harm.md
+
+> │    ├── 📄 NT_V-110_easytax-theft-conversion.md
+
+> │    ├── 📄 NT_V-111_zai-asylum-case-closure.md
+
+> │    ├── 📄 NT_V-112_forced-relocation-evansville.md
+
+> │    ├── 📄 NT_V-113_otis-predatory-housing-harassment.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0001_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0003_due-process-violation--standard-of-proof-.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0004_unconstitutional-presumption--vesting-of-title-.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0007_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0008_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0009_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0010_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-1972-0001_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-1977-0001_due-process-failure---notice-error.md
+
+> │    ├── 📄 NT_V-FCFCU-1977-0002_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-1993-0001_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-1996-0001_fair-housing-act-breach--race-discrimination-.md
+
+> │    ├── 📄 NT_V-FCFCU-1999-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-1999-0002_fair-housing-act-breach--disability-accessibility-.md
+
+> │    ├── 📄 NT_V-FCFCU-2003-0001_fair-housing-act-breach--familial-status-discrimin.md
+
+> │    ├── 📄 NT_V-FCFCU-2004-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2005-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2008-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2009-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2009-0004_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2010-0001_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2011-0001_fair-housing-act-breach--intentional-discriminatio.md
+
+> │    ├── 📄 NT_V-FCFCU-2011-0002_fair-housing-act-breach--terms-and-conditions-of-s.md
+
+> │    ├── 📄 NT_V-FCFCU-2011-0003_fair-housing-act-breach--residential-real-estate-r.md
+
+> │    ├── 📄 NT_V-FCFCU-2011-0004_fair-housing-act-breach--perpetuating-segregation-.md
+
+> │    ├── 📄 NT_V-FCFCU-2012-0003_fair-housing-act-breach--disability---design-and-c.md
+
+> │    ├── 📄 NT_V-FCFCU-2013-0001_fair-housing-act-breach--race-and-color-discrimina.md
+
+> │    ├── 📄 NT_V-FCFCU-2013-0002_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2013-0003_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2014-0001_discriminatory-treatment-in-property-maintenance.md
+
+> │    ├── 📄 NT_V-FCFCU-2014-0002_fair-housing-act-breach--disability---restrictive-.md
+
+> │    ├── 📄 NT_V-FCFCU-2015-0001_fair-housing-act-breach--design-and-construction-.md
+
+> │    ├── 📄 NT_V-FCFCU-2015-0003_fair-housing-act-breach--discriminatory-statements.md
+
+> │    ├── 📄 NT_V-FCFCU-2015-0004_fair-housing-act-breach--race--national-origin---d.md
+
+> │    ├── 📄 NT_V-FCFCU-2016-0001_fair-housing-act-breach--retaliation-.md
+
+> │    ├── 📄 NT_V-FCFCU-2016-0002_fair-housing-act-breach--familial-status-.md
+
+> │    ├── 📄 NT_V-FCFCU-2016-0003_fair-housing-act-breach--race--gender--disability-.md
+
+> │    ├── 📄 NT_V-FCFCU-2016-0004_fair-housing-act-breach--disability---failure-to-r.md
+
+> │    ├── 📄 NT_V-FCFCU-2017-0001_predatory-land-contract---housing-discrimination--.md
+
+> │    ├── 📄 NT_V-FCFCU-2018-0001_breach-of-warranty-of-habitability.md
+
+> │    ├── 📄 NT_V-FCFCU-2018-0002_fair-housing-act-breach--race--color--national-ori.md
+
+> │    ├── 📄 NT_V-FCFCU-2020-0001_fair-housing-act-breach--accessibility-requirement.md
+
+> │    ├── 📄 NT_V-FCFCU-2020-0002_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │    ├── 📄 NT_V-FCFCU-2020-0003_fair-housing-act-breach--gender---sexual-harassmen.md
+
+> │    ├── 📄 NT_V-FCFCU-2021-0002_fair-housing-act-breach--familial-status-.md
+
+> │    ├── 📄 NT_V-FCFCU-2021-0003_fair-housing-act-breach--race---redlining.md
+
+> │    ├── 📄 NT_V-FCFCU-2024-0001_fair-housing-act-breach--race---arbitrary-criminal.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0028_fair-housing-act.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0029_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0030_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0032_consumer-protection---fha.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0043_reputation.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0049_consumer-protection.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0057_potential-ic---32-30-10-14-violation--surplus-mism.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0059_spoliation-of-evidence.md
+
+> │    ├── 📄 NT_V-FCFCU-2026-0001_general.md
+
+> │    ├── 📄 _OTHER_PARTIES.md
+
+> │  └── 📂 REGULATORS/
+
+> │    ├── 📄 NT_V-FCFCU-0000-0005_discriminatory-advertising.md
+
+> │    ├── 📄 NT_V-FCFCU-1985-0001_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2010-0002_fair-housing-act-breach--sexual-harassment-.md
+
+> │    ├── 📄 NT_V-FCFCU-2011-0005_fair-housing-act-breach--intentional-discriminatio.md
+
+> │    ├── 📄 NT_V-FCFCU-2012-0001_failure-to-provide-equal-maintenance-services--reo.md
+
+> │    ├── 📄 NT_V-FCFCU-2012-0002_fair-housing-act-breach--race--national-origin---d.md
+
+> │    ├── 📄 NT_V-FCFCU-2015-0002_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2016-0005_fair-housing-act-breach--disability--familial-stat.md
+
+> │    ├── 📄 NT_V-FCFCU-2018-0003_fair-housing-act-breach--familial-status---occupan.md
+
+> │    ├── 📄 NT_V-FCFCU-2019-0001_fair-housing-act-breach--race--national-origin---h.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0031_fair-housing-act.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0039_regulatory.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0040_regulatory.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0041_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0042_ada.md
+
+> │    ├── 📄 PL_V-050_cfpb-complaint-track.md
+
+> │    ├── 📄 PL_V-051_indiana-ag-complaint-track.md
+
+> │    ├── 📄 PL_V-052_icrc-complaint-track.md
+
+> │    ├── 📄 PL_V-053_doj-civil-rights-complaint-track.md
+
+> │    ├── 📄 PL_V-060_bbb-complaint-reputational-pressure.md
+
+> │    ├── 📄 _REGULATORS.md
+
+> │  └── 📂 SHERIFF/
+
+> │    ├── 📄 NT_V-031_sheriff-return-inaccuracies.md
+
+> │    ├── 📄 NT_V-033_removal-6-7-days-after-deed-recorded.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0033_due-process.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0055_ada.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0056_procedural.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0058_conversion---negligence.md
+
+> │    ├── 📄 PL_V-030_service-completed-no-notice-before-writ.md
+
+> │    ├── 📄 _SHERIFF.md
+
+> │  └── 📂 UTILITIES_MUNICIPAL/
+
+> │    ├── 📄 NT_V-020_post-0815-aes-electric-charges-billed.md
+
+> │    ├── 📄 NT_V-021_post-0815-citizens-energy-charges-billed.md
+
+> │    ├── 📄 NT_V-022_post-0815-hoa-assessments-billed.md
+
+> │    ├── 📄 NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> │    ├── 📄 NT_V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> │    ├── 📄 NT_V-026_credit-harm-compounded-utility-municipal.md
+
+> │    ├── 📄 NT_V-095_theft-of-services-utility-exploitation.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0006_fair-housing-act-breach--exclusionary-zoning-.md
+
+> │    ├── 📄 NT_V-FCFCU-0000-0011_section-504-breach---failure-to-provide-interprete.md
+
+> │    ├── 📄 NT_V-FCFCU-1975-0001_civil-rights.md
+
+> │    ├── 📄 NT_V-FCFCU-2000-0001_fair-housing-act-breach--reasonable-accommodation-.md
+
+> │    ├── 📄 NT_V-FCFCU-2009-0002_fair-housing-act-breach--pattern-or-practice-of-re.md
+
+> │    ├── 📄 NT_V-FCFCU-2021-0001_fair-housing-act-breach--race--color---appraisal-b.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0044_utility.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0045_utility.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0046_tort.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0047_municipal.md
+
+> │    ├── 📄 NT_V-FCFCU-2025-0048_municipal.md
+
+> │    ├── 📄 _UTILITIES_MUNICIPAL.md
+
+> │  ├── 📄 _10_violations.md
+
+> └── 📂 20_theories/
+
+> │  ├── 📄 NT_BACKUP_ARGUMENTS.md
+
+> │  ├── 📄 NT_IF_JUDGE_PUSHBACK.md
+
+> │  ├── 📄 _20_theories.md
+
+> └── 📂 30_legal_research/
+
+> │  ├── 📄 NT_CASE_LAW_RESEARCH.md
+
+> │  ├── 📄 NT_JURISDICTION_THEORY.md
+
+> │  ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │  ├── 📄 NT_VOID_VS_VOIDABLE_ANALYSIS.md
+
+> │  ├── 📄 _30_legal_research.md
+
+> └── 📂 40_analysis/
+
+> │  ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │  ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │  ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │  ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │  ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │  ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │  ├── 📄 _40_analysis.md
+
+> └── 📂 50_strategies/
+
+> │  ├── 📄 NT_00_basis.md
+
+> │  ├── 📄 NT_10_ada_strategy.md
+
+> │  ├── 📄 NT_ADA_TITLE_II_ANALYSIS.md
+
+> │  ├── 📄 NT_BUT_FOR_ANALYSIS.md
+
+> │  ├── 📄 NT_Master_Strategy_Canvas.canvas
+
+> │  ├── 📄 NT_PROCEDURAL_FAILURE_MAP.md
+
+> │  ├── 📄 NT_REASONABLE_ACCOMMODATIONS.md
+
+> │  ├── 📄 NT_REVERSAL_PATHS.md
+
+> │  ├── 📄 NT_STATUS_TRACKER.md
+
+> │  ├── 📄 NT_STAY_PATHS.md
+
+> │  ├── 📄 NT_System_Workflow.canvas
+
+> │  ├── 📄 PL_DOJ_COMPLAINT.md
+
+> │  ├── 📄 PL_ICRC_COMPLAINT.md
+
+> │  ├── 📄 PL_Proposal for Strategic Reports in the Matter of.md
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> │  ├── 📄 _50_strategies.md
+
+> └── 📂 60_data_inventories/
+
+> │  ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
+
+> │  ├── 📄 NT_Case_Docket_Checklist.csv
+
+> │  ├── 📄 NT_Case_Docket_Checklist.md
+
+> │  ├── 📄 NT_Damage_Accounting_Ledger.md
+
+> │  ├── 📄 _60_data_inventories.md
+
+> │  ├── 📄 evidence_index_master.csv
+
+> │  ├── 📄 evidence_index_master.md
+
+> │  ├── 📄 financial_transactions_damages.csv
+
+> │  ├── 📄 financial_transactions_damages.md
+
+> │  ├── 📄 legal_authority_library.csv
+
+> │  ├── 📄 legal_authority_library.md
+
+> │  ├── 📄 tasks_strategy.csv
+
+> │  ├── 📄 tasks_strategy.md
+
+> │  ├── 📄 violations_inventory_master.csv
+
+> │  ├── 📄 violations_inventory_master.md
+
+> ├── 📄 NT_01_MASTER_INDEX.md
+
+> ├── 📄 _C_VIS.md
+
+> └── 📄 vis.yaml
+
 > ```
 
 ### Assistant
@@ -6385,322 +8547,638 @@ canonical_ref: ""
 > If you want, paste the actual `violations_inventory_master.csv` header row and I’ll align column-for-column to this schema (so your import is painless).
 
 ### User
-> -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE public.actors (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   code text NOT NULL,
->   name text NOT NULL,
->   actor_type text NOT NULL CHECK (actor_type = ANY (ARRAY['institution'::text, 'agency'::text, 'person'::text, 'court'::text, 'vendor'::text, 'unknown'::text])),
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT actors_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.credit_events (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   event_month date NOT NULL,
->   bureau text DEFAULT 'unknown'::text CHECK (bureau = ANY (ARRAY['experian'::text, 'equifax'::text, 'transunion'::text, 'unknown'::text])),
->   score integer,
->   tradeline text,
->   status text,
->   dispute_status text DEFAULT 'none'::text CHECK (dispute_status = ANY (ARRAY['none'::text, 'sent'::text, 'received'::text, 'verified'::text, 'deleted'::text, 'pending'::text])),
->   opportunity_lost text,
->   estimated_cost numeric,
->   notes text,
->   supporting_document_id uuid,
->   phase_id text NOT NULL,
->   workstream text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT credit_events_pkey PRIMARY KEY (id),
->   CONSTRAINT credit_events_supporting_document_id_fkey FOREIGN KEY (supporting_document_id) REFERENCES public.documents(id),
->   CONSTRAINT credit_events_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.damage_entries (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   harm_id uuid,
->   phase_id text NOT NULL,
->   workstream text,
->   entry_date date NOT NULL,
->   category text NOT NULL CHECK (category = ANY (ARRAY['lodging'::text, 'transport'::text, 'storage'::text, 'food'::text, 'medical'::text, 'legal'::text, 'replacement'::text, 'lost_income'::text, 'credit_cost'::text, 'other'::text])),
->   description text NOT NULL,
->   amount numeric NOT NULL DEFAULT 0,
->   currency text NOT NULL DEFAULT 'USD'::text,
->   document_id uuid,
->   vendor text,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT damage_entries_pkey PRIMARY KEY (id),
->   CONSTRAINT damage_entries_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id),
->   CONSTRAINT damage_entries_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id),
->   CONSTRAINT damage_entries_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.documents (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   task_id uuid,
->   title text NOT NULL,
->   file_path text,
->   file_type text,
->   size_bytes bigint,
->   metadata jsonb DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   storage_bucket text NOT NULL,
->   storage_path text NOT NULL,
->   workstream text,
->   CONSTRAINT documents_pkey PRIMARY KEY (id),
->   CONSTRAINT documents_task_id_fkey FOREIGN KEY (task_id) REFERENCES public.tasks(id),
->   CONSTRAINT documents_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.drafts (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   template_id uuid,
->   title text,
->   content_data jsonb DEFAULT '{}'::jsonb,
->   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'ready'::text, 'filed'::text])),
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   workstream text,
->   CONSTRAINT drafts_pkey PRIMARY KEY (id),
->   CONSTRAINT drafts_template_id_fkey FOREIGN KEY (template_id) REFERENCES public.templates(id),
->   CONSTRAINT drafts_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.envelope_packets (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   envelope_id uuid,
->   packet_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT envelope_packets_pkey PRIMARY KEY (id),
->   CONSTRAINT envelope_packets_envelope_id_fkey FOREIGN KEY (envelope_id) REFERENCES public.envelopes(id),
->   CONSTRAINT envelope_packets_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
-> );
-> CREATE TABLE public.envelopes (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   recipient_email text,
->   recipient_name text,
->   status text DEFAULT 'prepared'::text CHECK (status = ANY (ARRAY['draft'::text, 'submitted'::text, 'accepted'::text, 'rejected'::text])),
->   sent_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   court_system text,
->   confirmation_number text,
->   rejection_reason text,
->   notes text,
->   CONSTRAINT envelopes_pkey PRIMARY KEY (id),
->   CONSTRAINT envelopes_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.harm_evidence (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   harm_id uuid NOT NULL,
->   document_id uuid NOT NULL,
->   relevance_note text,
->   sort_order integer DEFAULT 0,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT harm_evidence_pkey PRIMARY KEY (id),
->   CONSTRAINT harm_evidence_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id),
->   CONSTRAINT harm_evidence_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.harm_violations (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   harm_id uuid NOT NULL,
->   violation_id uuid NOT NULL,
->   causation_note text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT harm_violations_pkey PRIMARY KEY (id),
->   CONSTRAINT harm_violations_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
->   CONSTRAINT harm_violations_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id)
-> );
-> CREATE TABLE public.harms (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   harm_code text,
->   title text NOT NULL,
->   narrative text,
->   harm_category text NOT NULL CHECK (harm_category = ANY (ARRAY['housing'::text, 'economic'::text, 'financial'::text, 'health_safety'::text, 'non_economic'::text, 'professional'::text, 'property'::text, 'credit'::text, 'third_party'::text])),
->   harmed_party text NOT NULL CHECK (harmed_party = ANY (ARRAY['self'::text, 'family'::text, 'partner'::text, 'ally'::text, 'roommate'::text, 'animal'::text, 'other'::text])),
->   phase_id text NOT NULL,
->   workstream text,
->   start_date date,
->   end_date date,
->   is_ongoing boolean DEFAULT false,
->   estimated_value numeric,
->   source_document_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT harms_pkey PRIMARY KEY (id),
->   CONSTRAINT harms_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id),
->   CONSTRAINT harms_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.legal_authorities (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   citation text NOT NULL,
->   authority_type text CHECK (authority_type = ANY (ARRAY['case'::text, 'statute'::text, 'rule'::text, 'regulation'::text, 'guidance'::text, 'article'::text, 'other'::text])),
->   jurisdiction text,
->   topic_tags ARRAY,
->   summary text,
->   source_document_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT legal_authorities_pkey PRIMARY KEY (id),
->   CONSTRAINT legal_authorities_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.packet_exports (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   packet_id uuid,
->   export_url text,
->   format text DEFAULT 'pdf'::text CHECK (format = ANY (ARRAY['pdf'::text, 'zip'::text])),
->   status text DEFAULT 'processing'::text CHECK (status = ANY (ARRAY['processing'::text, 'ready'::text, 'failed'::text])),
->   completed_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   storage_bucket text,
->   storage_path text,
->   export_type text CHECK (export_type = ANY (ARRAY['judge_copy'::text, 'opposing_counsel'::text, 'service'::text, 'internal'::text])),
->   CONSTRAINT packet_exports_pkey PRIMARY KEY (id),
->   CONSTRAINT packet_exports_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
-> );
-> CREATE TABLE public.packet_items (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   packet_id uuid,
->   document_id uuid,
->   draft_id uuid,
->   sort_order integer DEFAULT 0,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT packet_items_pkey PRIMARY KEY (id),
->   CONSTRAINT packet_items_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id),
->   CONSTRAINT packet_items_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id),
->   CONSTRAINT packet_items_draft_id_fkey FOREIGN KEY (draft_id) REFERENCES public.drafts(id)
-> );
-> CREATE TABLE public.packets (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   name text NOT NULL,
->   description text,
->   status text DEFAULT 'open'::text CHECK (status = ANY (ARRAY['building'::text, 'ready'::text, 'submitted'::text, 'sent'::text])),
->   version integer DEFAULT 1,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   packet_type text NOT NULL CHECK (packet_type = ANY (ARRAY['efile'::text, 'judge_copy'::text, 'service'::text, 'dispute'::text, 'regulator'::text, 'internal'::text])),
->   CONSTRAINT packets_pkey PRIMARY KEY (id),
->   CONSTRAINT packets_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.phase_state (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL UNIQUE,
->   current_phase_id text NOT NULL,
->   settlement_phase_id text NOT NULL DEFAULT '05'::text,
->   allow_settlement_jump boolean NOT NULL DEFAULT true,
->   last_non_settlement_phase_id text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT phase_state_pkey PRIMARY KEY (id),
->   CONSTRAINT phase_state_current_phase_id_fkey FOREIGN KEY (current_phase_id) REFERENCES public.phases(id),
->   CONSTRAINT phase_state_settlement_phase_id_fkey FOREIGN KEY (settlement_phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.phases (
->   id text NOT NULL CHECK (id = ANY (ARRAY['00'::text, '01'::text, '02'::text, '03'::text, '04'::text, '05'::text, '06'::text])),
->   name text NOT NULL,
->   description text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT phases_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.tasks (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   phase_id text NOT NULL,
->   title text NOT NULL,
->   description text,
->   status text DEFAULT 'todo'::text CHECK (status = ANY (ARRAY['todo'::text, 'doing'::text, 'waiting'::text, 'done'::text])),
->   due_date timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   priority text CHECK (priority = ANY (ARRAY['P0'::text, 'P1'::text, 'P2'::text, 'P3'::text])),
->   workstream text,
->   CONSTRAINT tasks_pkey PRIMARY KEY (id),
->   CONSTRAINT tasks_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.templates (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   name text NOT NULL,
->   content text,
->   category text,
->   is_active boolean DEFAULT true,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   phase_id text NOT NULL,
->   workstream text,
->   CONSTRAINT templates_pkey PRIMARY KEY (id),
->   CONSTRAINT templates_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
-> );
-> CREATE TABLE public.violation_authorities (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   violation_id uuid NOT NULL,
->   authority_id uuid NOT NULL,
->   relevance_note text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT violation_authorities_pkey PRIMARY KEY (id),
->   CONSTRAINT violation_authorities_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
->   CONSTRAINT violation_authorities_authority_id_fkey FOREIGN KEY (authority_id) REFERENCES public.legal_authorities(id)
-> );
-> CREATE TABLE public.violation_evidence (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   violation_id uuid NOT NULL,
->   document_id uuid NOT NULL,
->   relevance_note text,
->   sort_order integer DEFAULT 0,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT violation_evidence_pkey PRIMARY KEY (id),
->   CONSTRAINT violation_evidence_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
->   CONSTRAINT violation_evidence_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.violations (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid NOT NULL DEFAULT auth.uid(),
->   violation_code text NOT NULL,
->   title text NOT NULL,
->   summary text,
->   actor_id uuid,
->   phase_id text NOT NULL,
->   workstream text,
->   violation_type text CHECK (violation_type = ANY (ARRAY['procedure'::text, 'due_process'::text, 'ada'::text, 'fha'::text, 'fcra'::text, 'fdcpa'::text, 'tort'::text, 'accounting'::text, 'evidence'::text, 'credit'::text, 'reputation'::text, 'other'::text])),
->   severity text DEFAULT 'medium'::text CHECK (severity = ANY (ARRAY['low'::text, 'medium'::text, 'high'::text, 'critical'::text])),
->   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'confirmed'::text, 'disputed'::text, 'archived'::text])),
->   event_date date,
->   date_range_start date,
->   date_range_end date,
->   jurisdiction text,
->   source_document_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT violations_pkey PRIMARY KEY (id),
->   CONSTRAINT violations_actor_id_fkey FOREIGN KEY (actor_id) REFERENCES public.actors(id),
->   CONSTRAINT violations_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id),
->   CONSTRAINT violations_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id)
+> -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE public.actors (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   code text NOT NULL,
+
+>   name text NOT NULL,
+
+>   actor_type text NOT NULL CHECK (actor_type = ANY (ARRAY['institution'::text, 'agency'::text, 'person'::text, 'court'::text, 'vendor'::text, 'unknown'::text])),
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT actors_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.credit_events (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   event_month date NOT NULL,
+
+>   bureau text DEFAULT 'unknown'::text CHECK (bureau = ANY (ARRAY['experian'::text, 'equifax'::text, 'transunion'::text, 'unknown'::text])),
+
+>   score integer,
+
+>   tradeline text,
+
+>   status text,
+
+>   dispute_status text DEFAULT 'none'::text CHECK (dispute_status = ANY (ARRAY['none'::text, 'sent'::text, 'received'::text, 'verified'::text, 'deleted'::text, 'pending'::text])),
+
+>   opportunity_lost text,
+
+>   estimated_cost numeric,
+
+>   notes text,
+
+>   supporting_document_id uuid,
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT credit_events_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT credit_events_supporting_document_id_fkey FOREIGN KEY (supporting_document_id) REFERENCES public.documents(id),
+
+>   CONSTRAINT credit_events_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.damage_entries (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   harm_id uuid,
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   entry_date date NOT NULL,
+
+>   category text NOT NULL CHECK (category = ANY (ARRAY['lodging'::text, 'transport'::text, 'storage'::text, 'food'::text, 'medical'::text, 'legal'::text, 'replacement'::text, 'lost_income'::text, 'credit_cost'::text, 'other'::text])),
+
+>   description text NOT NULL,
+
+>   amount numeric NOT NULL DEFAULT 0,
+
+>   currency text NOT NULL DEFAULT 'USD'::text,
+
+>   document_id uuid,
+
+>   vendor text,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT damage_entries_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT damage_entries_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id),
+
+>   CONSTRAINT damage_entries_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id),
+
+>   CONSTRAINT damage_entries_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.documents (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   task_id uuid,
+
+>   title text NOT NULL,
+
+>   file_path text,
+
+>   file_type text,
+
+>   size_bytes bigint,
+
+>   metadata jsonb DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   storage_bucket text NOT NULL,
+
+>   storage_path text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT documents_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT documents_task_id_fkey FOREIGN KEY (task_id) REFERENCES public.tasks(id),
+
+>   CONSTRAINT documents_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.drafts (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   template_id uuid,
+
+>   title text,
+
+>   content_data jsonb DEFAULT '{}'::jsonb,
+
+>   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'ready'::text, 'filed'::text])),
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT drafts_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT drafts_template_id_fkey FOREIGN KEY (template_id) REFERENCES public.templates(id),
+
+>   CONSTRAINT drafts_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.envelope_packets (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   envelope_id uuid,
+
+>   packet_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT envelope_packets_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT envelope_packets_envelope_id_fkey FOREIGN KEY (envelope_id) REFERENCES public.envelopes(id),
+
+>   CONSTRAINT envelope_packets_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
+
+> );
+
+> CREATE TABLE public.envelopes (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   recipient_email text,
+
+>   recipient_name text,
+
+>   status text DEFAULT 'prepared'::text CHECK (status = ANY (ARRAY['draft'::text, 'submitted'::text, 'accepted'::text, 'rejected'::text])),
+
+>   sent_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   court_system text,
+
+>   confirmation_number text,
+
+>   rejection_reason text,
+
+>   notes text,
+
+>   CONSTRAINT envelopes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT envelopes_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.harm_evidence (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   harm_id uuid NOT NULL,
+
+>   document_id uuid NOT NULL,
+
+>   relevance_note text,
+
+>   sort_order integer DEFAULT 0,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT harm_evidence_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT harm_evidence_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id),
+
+>   CONSTRAINT harm_evidence_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.harm_violations (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   harm_id uuid NOT NULL,
+
+>   violation_id uuid NOT NULL,
+
+>   causation_note text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT harm_violations_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT harm_violations_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
+
+>   CONSTRAINT harm_violations_harm_id_fkey FOREIGN KEY (harm_id) REFERENCES public.harms(id)
+
+> );
+
+> CREATE TABLE public.harms (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   harm_code text,
+
+>   title text NOT NULL,
+
+>   narrative text,
+
+>   harm_category text NOT NULL CHECK (harm_category = ANY (ARRAY['housing'::text, 'economic'::text, 'financial'::text, 'health_safety'::text, 'non_economic'::text, 'professional'::text, 'property'::text, 'credit'::text, 'third_party'::text])),
+
+>   harmed_party text NOT NULL CHECK (harmed_party = ANY (ARRAY['self'::text, 'family'::text, 'partner'::text, 'ally'::text, 'roommate'::text, 'animal'::text, 'other'::text])),
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   start_date date,
+
+>   end_date date,
+
+>   is_ongoing boolean DEFAULT false,
+
+>   estimated_value numeric,
+
+>   source_document_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT harms_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT harms_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id),
+
+>   CONSTRAINT harms_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.legal_authorities (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   citation text NOT NULL,
+
+>   authority_type text CHECK (authority_type = ANY (ARRAY['case'::text, 'statute'::text, 'rule'::text, 'regulation'::text, 'guidance'::text, 'article'::text, 'other'::text])),
+
+>   jurisdiction text,
+
+>   topic_tags ARRAY,
+
+>   summary text,
+
+>   source_document_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT legal_authorities_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT legal_authorities_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.packet_exports (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   packet_id uuid,
+
+>   export_url text,
+
+>   format text DEFAULT 'pdf'::text CHECK (format = ANY (ARRAY['pdf'::text, 'zip'::text])),
+
+>   status text DEFAULT 'processing'::text CHECK (status = ANY (ARRAY['processing'::text, 'ready'::text, 'failed'::text])),
+
+>   completed_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   storage_bucket text,
+
+>   storage_path text,
+
+>   export_type text CHECK (export_type = ANY (ARRAY['judge_copy'::text, 'opposing_counsel'::text, 'service'::text, 'internal'::text])),
+
+>   CONSTRAINT packet_exports_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packet_exports_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id)
+
+> );
+
+> CREATE TABLE public.packet_items (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   packet_id uuid,
+
+>   document_id uuid,
+
+>   draft_id uuid,
+
+>   sort_order integer DEFAULT 0,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT packet_items_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packet_items_packet_id_fkey FOREIGN KEY (packet_id) REFERENCES public.packets(id),
+
+>   CONSTRAINT packet_items_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id),
+
+>   CONSTRAINT packet_items_draft_id_fkey FOREIGN KEY (draft_id) REFERENCES public.drafts(id)
+
+> );
+
+> CREATE TABLE public.packets (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   status text DEFAULT 'open'::text CHECK (status = ANY (ARRAY['building'::text, 'ready'::text, 'submitted'::text, 'sent'::text])),
+
+>   version integer DEFAULT 1,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   packet_type text NOT NULL CHECK (packet_type = ANY (ARRAY['efile'::text, 'judge_copy'::text, 'service'::text, 'dispute'::text, 'regulator'::text, 'internal'::text])),
+
+>   CONSTRAINT packets_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT packets_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.phase_state (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL UNIQUE,
+
+>   current_phase_id text NOT NULL,
+
+>   settlement_phase_id text NOT NULL DEFAULT '05'::text,
+
+>   allow_settlement_jump boolean NOT NULL DEFAULT true,
+
+>   last_non_settlement_phase_id text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT phase_state_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT phase_state_current_phase_id_fkey FOREIGN KEY (current_phase_id) REFERENCES public.phases(id),
+
+>   CONSTRAINT phase_state_settlement_phase_id_fkey FOREIGN KEY (settlement_phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.phases (
+
+>   id text NOT NULL CHECK (id = ANY (ARRAY['00'::text, '01'::text, '02'::text, '03'::text, '04'::text, '05'::text, '06'::text])),
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT phases_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.tasks (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   phase_id text NOT NULL,
+
+>   title text NOT NULL,
+
+>   description text,
+
+>   status text DEFAULT 'todo'::text CHECK (status = ANY (ARRAY['todo'::text, 'doing'::text, 'waiting'::text, 'done'::text])),
+
+>   due_date timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   priority text CHECK (priority = ANY (ARRAY['P0'::text, 'P1'::text, 'P2'::text, 'P3'::text])),
+
+>   workstream text,
+
+>   CONSTRAINT tasks_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT tasks_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.templates (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   name text NOT NULL,
+
+>   content text,
+
+>   category text,
+
+>   is_active boolean DEFAULT true,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   CONSTRAINT templates_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT templates_phase_fk FOREIGN KEY (phase_id) REFERENCES public.phases(id)
+
+> );
+
+> CREATE TABLE public.violation_authorities (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   violation_id uuid NOT NULL,
+
+>   authority_id uuid NOT NULL,
+
+>   relevance_note text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT violation_authorities_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT violation_authorities_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
+
+>   CONSTRAINT violation_authorities_authority_id_fkey FOREIGN KEY (authority_id) REFERENCES public.legal_authorities(id)
+
+> );
+
+> CREATE TABLE public.violation_evidence (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   violation_id uuid NOT NULL,
+
+>   document_id uuid NOT NULL,
+
+>   relevance_note text,
+
+>   sort_order integer DEFAULT 0,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT violation_evidence_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT violation_evidence_violation_id_fkey FOREIGN KEY (violation_id) REFERENCES public.violations(id),
+
+>   CONSTRAINT violation_evidence_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.violations (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid NOT NULL DEFAULT auth.uid(),
+
+>   violation_code text NOT NULL,
+
+>   title text NOT NULL,
+
+>   summary text,
+
+>   actor_id uuid,
+
+>   phase_id text NOT NULL,
+
+>   workstream text,
+
+>   violation_type text CHECK (violation_type = ANY (ARRAY['procedure'::text, 'due_process'::text, 'ada'::text, 'fha'::text, 'fcra'::text, 'fdcpa'::text, 'tort'::text, 'accounting'::text, 'evidence'::text, 'credit'::text, 'reputation'::text, 'other'::text])),
+
+>   severity text DEFAULT 'medium'::text CHECK (severity = ANY (ARRAY['low'::text, 'medium'::text, 'high'::text, 'critical'::text])),
+
+>   status text DEFAULT 'draft'::text CHECK (status = ANY (ARRAY['draft'::text, 'confirmed'::text, 'disputed'::text, 'archived'::text])),
+
+>   event_date date,
+
+>   date_range_start date,
+
+>   date_range_end date,
+
+>   jurisdiction text,
+
+>   source_document_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT violations_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT violations_actor_id_fkey FOREIGN KEY (actor_id) REFERENCES public.actors(id),
+
+>   CONSTRAINT violations_phase_id_fkey FOREIGN KEY (phase_id) REFERENCES public.phases(id),
+
+>   CONSTRAINT violations_source_document_id_fkey FOREIGN KEY (source_document_id) REFERENCES public.documents(id)
+
 > );
 
 ### Assistant
@@ -7129,48 +9607,88 @@ canonical_ref: ""
 > If you paste the exact import payload (the INSERT or CSV rows), I’ll point out any other values that will still break the checks.
 
 ### User
-> Update column actor_type from actors
-> General
-> Name
-> actor_type
-> Recommended to use lowercase and use an underscore to separate words e.g. column_name
-> Description
-> Optional
-> Data Type
-> Create enum types
-> About data types
-> Type
-> 
-> text
-> Define as Array
-> Allow column to be defined as variable-length multidimensional arrays
-> 
-> Default Value
-> NULL
-> 
-> Can either be a literal or an expression. When using an expression wrap your expression in brackets, e.g. (gen_random_uuid())
-> Foreign Keys
-> 
-> Add foreign key
-> Constraints
-> 
-> Is Primary Key
-> A primary key indicates that a column or group of columns can be used as a unique identifier for rows in the table
-> 
-> Allow Nullable
-> Allow the column to assume a NULL value if no value is provided
-> 
-> Is Unique
-> Enforce values in the column to be unique across rows
-> CHECK Constraint
-> Optional
+> Update column actor_type from actors
+
+> General
+
+> Name
+
+> actor_type
+
+> Recommended to use lowercase and use an underscore to separate words e.g. column_name
+
+> Description
+
+> Optional
+
+> Data Type
+
+> Create enum types
+
+> About data types
+
+> Type
+
+> 
+
+> text
+
+> Define as Array
+
+> Allow column to be defined as variable-length multidimensional arrays
+
+> 
+
+> Default Value
+
+> NULL
+
+> 
+
+> Can either be a literal or an expression. When using an expression wrap your expression in brackets, e.g. (gen_random_uuid())
+
+> Foreign Keys
+
+> 
+
+> Add foreign key
+
+> Constraints
+
+> 
+
+> Is Primary Key
+
+> A primary key indicates that a column or group of columns can be used as a unique identifier for rows in the table
+
+> 
+
+> Allow Nullable
+
+> Allow the column to assume a NULL value if no value is provided
+
+> 
+
+> Is Unique
+
+> Enforce values in the column to be unique across rows
+
+> CHECK Constraint
+
+> Optional
+
 > actor_type = ANY (ARRAY['institution'::text, 'agency'::text, 'person'::text, 'court'::text, 'vendor'::text, 'government'::text, 'unknown'::text])
 > 
-> [
->   {
->     "conname": "actors_actor_type_check",
->     "definition": "CHECK ((actor_type = ANY (ARRAY['institution'::text, 'agency'::text, 'person'::text, 'court'::text, 'vendor'::text, 'government'::text, 'unknown'::text])))"
->   }
+> [
+
+>   {
+
+>     "conname": "actors_actor_type_check",
+
+>     "definition": "CHECK ((actor_type = ANY (ARRAY['institution'::text, 'agency'::text, 'person'::text, 'court'::text, 'vendor'::text, 'government'::text, 'unknown'::text])))"
+
+>   }
+
 > ]
 
 ### Assistant
@@ -7276,310 +9794,614 @@ canonical_ref: ""
 > But for this issue: **it’s resolved**.
 
 ### User
-> can you help me build the envelopes table here is one envelope. Envelope Details - Case # 49D03-2501-MF-002559
-> close
-> Envelope
-> Envelope ID
-> 37268798
-> Submitted date
-> 12/10/2025 6:52 PM
-> Submitted by
-> CODY RICE-VELASQUEZ
-> Username
-> crice4485@gmail.com
-> Case Information
-> Court Location
-> Marion Superior Court 3
-> Case Type
-> MF - Mortgage Foreclosure
-> Case Category
-> Civil
-> Judge
-> Miller, Gary L
-> Parties
-> Party Type
-> Party Name
-> Lead Attorney
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> Defendant
-> American Express National Bank, N.A.
-> Defendant
-> Cody Rice-Velasquez
-> Plaintiff
-> Financial Center First Credit Union
-> Scott Andrew Kainrath,Felix O'Neill Rippy,Michael E. Farrer
-> Filings
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> eFile Only
-> Proposed Order Vacate Void Judgment
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 03_order_vacate_proposed.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> eFile Only
-> Proposed Temporary Order Stay Writ of Assistance
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 04_order_stay_writ_proposed.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> eFile Only
-> Emergency Motion to Stay Writ of Assistance and Protect Property
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 02_emergency_motion_quash_stay.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> eFile Only
-> Exhibit List Exhibits AG
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 05_Exhibit_List.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> eFile Only
-> Exhibits AG (Combined)
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 06_Exhibits_Combined.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> eFile and Serve
-> Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)
-> 
-> Submitted Date
-> 12/10/2025 6:52 PM
-> Status
-> Accepted
-> Review Date
-> 12/11/2025 8:33 AM
-> Comments
-> Courtesy Copy Email
-> Type
-> Type
-> Lead Document
-> Document name
-> Document name
-> 01_motion_vacate.pdf
-> Description
-> Description
-> Security
-> Security
-> Public document
-> Service Contacts
-> Party Type
-> Party Name
-> Service Contacts
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> person
-> 0
-> Defendant
-> American Express National Bank, N.A.
-> person
-> 0
-> Defendant
-> Cody Rice-Velasquez
-> person
-> 0
-> Plaintiff
-> Financial Center First Credit Union
-> person
-> 1
-> 
-> Service Contact
-> Michael E. Farrer
-> Service method
-> EServe
-> Email
-> mfarrer@gfwlawyers.com
-> Status
-> Served: 12/10/2025 6:53 PM
-> Other Service Contacts
-> person
-> 0
-> Fees
-> Payment account
-> card
-> Party responsible for envelope fees
-> Order ID
-> Transaction Response
-> Transaction Amount
-> $0.00
-> Transaction ID
-> 55160855
-> Total
-> $0.00
-> Grand Total
-> $0.00, here are the others:  ubmitted: Dec 22, 2025 2:51:09 AM
-> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Case # 49D03-2501-MF-002559
-> Envelope #37416037
-> Submitted By
-> CODY RICE-VELASQUEZ
-> Judge
-> Miller, Gary L
-> Filing Status
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Accepted
-> NF - Notice Filed	eFile Only	Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.		
-> Submitted: Dec 16, 2025 1:47:16 AM
-> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Case # 49D03-2501-MF-002559
-> Envelope #37331774
-> Submitted By
-> CODY RICE-VELASQUEZ
-> Judge
-> Miller, Gary L
-> Filing Status
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Accepted
-> M - Motion Filed	eFile and Serve	Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds		
-> Submitted: Dec 16, 2025 1:41:57 AM
-> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Case # 49D03-2501-MF-002559
-> Envelope #37331726
-> Submitted By
-> CODY RICE-VELASQUEZ
-> Judge
-> Miller, Gary L
-> Filing Status
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Accepted
-> DECF - Declaration Filed	eFile and Serve	Emergency Supplemental Declaration of Cody Rice-Velasquez (Continuing Irreparable Harm, ADA Necessity, Non-Waiver)		
-> Submitted: Dec 11, 2025 7:00:59 PM
-> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Case # 49D03-2501-MF-002559
-> Envelope #37288599
-> Submitted By
-> CODY RICE-VELASQUEZ
-> Judge
-> Miller, Gary L
-> Filing Status
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Accepted
-> ADMPE - Proposed Exhibit	eFile and Serve	Exhibit H Declaration of Cody Rice-Velazquez in Support of Supplemental Emergency Motion		
-> Accepted
-> M - Motion Filed	eFile and Serve	Supplemental Emergency Motion for Temporary Access or Temporary Limited Re-Entry Pending January 9 Hearing		
-> Submitted: Dec 10, 2025 6:52:42 PM
-> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Case # 49D03-2501-MF-002559
-> Envelope #37268798
-> Submitted By
-> CODY RICE-VELASQUEZ
-> Judge
-> Miller, Gary L
-> Filing Status
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Accepted
-> ADMPROP - Proposed Order Filed	eFile Only	Proposed Order Vacate Void Judgment		
-> Accepted
-> ADMPROP - Proposed Order Filed	eFile Only	Proposed Temporary Order Stay Writ of Assistance		
-> Accepted
-> ADMPE - Proposed Exhibit	eFile Only	Exhibits AG (Combined)		
-> Accepted
-> ADMWEL - Witness and/or Exhibit List Filed	eFile Only	Exhibit List Exhibits AG		
-> Accepted
-> MQ - Motion to Quash Filed	eFile Only	Emergency Motion to Stay Writ of Assistance and Protect Property		
-> Accepted
-> MSAJ - Motion to Set Aside/Vacate Judgment Filed	eFile and Serve	Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)		
-> Rows per page:
-> 10
+> can you help me build the envelopes table here is one envelope. Envelope Details - Case # 49D03-2501-MF-002559
+
+> close
+
+> Envelope
+
+> Envelope ID
+
+> 37268798
+
+> Submitted date
+
+> 12/10/2025 6:52 PM
+
+> Submitted by
+
+> CODY RICE-VELASQUEZ
+
+> Username
+
+> crice4485@gmail.com
+
+> Case Information
+
+> Court Location
+
+> Marion Superior Court 3
+
+> Case Type
+
+> MF - Mortgage Foreclosure
+
+> Case Category
+
+> Civil
+
+> Judge
+
+> Miller, Gary L
+
+> Parties
+
+> Party Type
+
+> Party Name
+
+> Lead Attorney
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> Scott Andrew Kainrath,Felix O'Neill Rippy,Michael E. Farrer
+
+> Filings
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> eFile Only
+
+> Proposed Order Vacate Void Judgment
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 03_order_vacate_proposed.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> eFile Only
+
+> Proposed Temporary Order Stay Writ of Assistance
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 04_order_stay_writ_proposed.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> eFile Only
+
+> Emergency Motion to Stay Writ of Assistance and Protect Property
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 02_emergency_motion_quash_stay.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> eFile Only
+
+> Exhibit List Exhibits AG
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 05_Exhibit_List.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> eFile Only
+
+> Exhibits AG (Combined)
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 06_Exhibits_Combined.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> eFile and Serve
+
+> Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)
+
+> 
+
+> Submitted Date
+
+> 12/10/2025 6:52 PM
+
+> Status
+
+> Accepted
+
+> Review Date
+
+> 12/11/2025 8:33 AM
+
+> Comments
+
+> Courtesy Copy Email
+
+> Type
+
+> Type
+
+> Lead Document
+
+> Document name
+
+> Document name
+
+> 01_motion_vacate.pdf
+
+> Description
+
+> Description
+
+> Security
+
+> Security
+
+> Public document
+
+> Service Contacts
+
+> Party Type
+
+> Party Name
+
+> Service Contacts
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> person
+
+> 0
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> person
+
+> 1
+
+> 
+
+> Service Contact
+
+> Michael E. Farrer
+
+> Service method
+
+> EServe
+
+> Email
+
+> mfarrer@gfwlawyers.com
+
+> Status
+
+> Served: 12/10/2025 6:53 PM
+
+> Other Service Contacts
+
+> person
+
+> 0
+
+> Fees
+
+> Payment account
+
+> card
+
+> Party responsible for envelope fees
+
+> Order ID
+
+> Transaction Response
+
+> Transaction Amount
+
+> $0.00
+
+> Transaction ID
+
+> 55160855
+
+> Total
+
+> $0.00
+
+> Grand Total
+
+> $0.00, here are the others:  ubmitted: Dec 22, 2025 2:51:09 AM
+
+> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Case # 49D03-2501-MF-002559
+
+> Envelope #37416037
+
+> Submitted By
+
+> CODY RICE-VELASQUEZ
+
+> Judge
+
+> Miller, Gary L
+
+> Filing Status
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Accepted
+
+> NF - Notice Filed	eFile Only	Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.		
+
+> Submitted: Dec 16, 2025 1:47:16 AM
+
+> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Case # 49D03-2501-MF-002559
+
+> Envelope #37331774
+
+> Submitted By
+
+> CODY RICE-VELASQUEZ
+
+> Judge
+
+> Miller, Gary L
+
+> Filing Status
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Accepted
+
+> M - Motion Filed	eFile and Serve	Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds		
+
+> Submitted: Dec 16, 2025 1:41:57 AM
+
+> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Case # 49D03-2501-MF-002559
+
+> Envelope #37331726
+
+> Submitted By
+
+> CODY RICE-VELASQUEZ
+
+> Judge
+
+> Miller, Gary L
+
+> Filing Status
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Accepted
+
+> DECF - Declaration Filed	eFile and Serve	Emergency Supplemental Declaration of Cody Rice-Velasquez (Continuing Irreparable Harm, ADA Necessity, Non-Waiver)		
+
+> Submitted: Dec 11, 2025 7:00:59 PM
+
+> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Case # 49D03-2501-MF-002559
+
+> Envelope #37288599
+
+> Submitted By
+
+> CODY RICE-VELASQUEZ
+
+> Judge
+
+> Miller, Gary L
+
+> Filing Status
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Accepted
+
+> ADMPE - Proposed Exhibit	eFile and Serve	Exhibit H Declaration of Cody Rice-Velazquez in Support of Supplemental Emergency Motion		
+
+> Accepted
+
+> M - Motion Filed	eFile and Serve	Supplemental Emergency Motion for Temporary Access or Temporary Limited Re-Entry Pending January 9 Hearing		
+
+> Submitted: Dec 10, 2025 6:52:42 PM
+
+> Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Case # 49D03-2501-MF-002559
+
+> Envelope #37268798
+
+> Submitted By
+
+> CODY RICE-VELASQUEZ
+
+> Judge
+
+> Miller, Gary L
+
+> Filing Status
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Accepted
+
+> ADMPROP - Proposed Order Filed	eFile Only	Proposed Order Vacate Void Judgment		
+
+> Accepted
+
+> ADMPROP - Proposed Order Filed	eFile Only	Proposed Temporary Order Stay Writ of Assistance		
+
+> Accepted
+
+> ADMPE - Proposed Exhibit	eFile Only	Exhibits AG (Combined)		
+
+> Accepted
+
+> ADMWEL - Witness and/or Exhibit List Filed	eFile Only	Exhibit List Exhibits AG		
+
+> Accepted
+
+> MQ - Motion to Quash Filed	eFile Only	Emergency Motion to Stay Writ of Assistance and Protect Property		
+
+> Accepted
+
+> MSAJ - Motion to Set Aside/Vacate Judgment Filed	eFile and Serve	Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)		
+
+> Rows per page:
+
+> 10
+
 > 1-5 of 5
 
 ### Assistant
@@ -7897,9 +10719,12 @@ canonical_ref: ""
 > Pick one and I’ll standardize it across all envelopes going forward.
 
 ### User
-> Error: Failed to run sql query: ERROR: 42601: syntax error at or near "not" LINE 2: add constraint if not exists envelopes_user_envelope_number_unique ^ Error: Failed to run sql query: ERROR: 42601: syntax error at or near "not" LINE 2: add constraint if not exists envelopes_user_envelope_number_unique ^Issues found in spreadsheet
-> This CSV cannot be imported into your table due to incompatible headers.
-> 
+> Error: Failed to run sql query: ERROR: 42601: syntax error at or near "not" LINE 2: add constraint if not exists envelopes_user_envelope_number_unique ^ Error: Failed to run sql query: ERROR: 42601: syntax error at or near "not" LINE 2: add constraint if not exists envelopes_user_envelope_number_unique ^Issues found in spreadsheet
+
+> This CSV cannot be imported into your table due to incompatible headers.
+
+> 
+
 > The columns "37268798", "49D03-2501-MF-002559", "Marion Superior Court 3", "Miller, Gary L", "CODY RICE-VELASQUEZ", "crice4485@gmail.com", "accepted", "accepted_1", "2025-12-10 18:52:42", "2025-12-11 08:33:00", "01", "IN_eFile", "55160855", "{"case_type":"MF - Mortgage Foreclosure","case_category":"Civil","filings":[{"code":"ADMPROP","type":"eFile Only","desc":"Proposed Order Vacate Void Judgment","lead_doc":"03_order_vacate_proposed.pdf"},{"code":"ADMPROP","type":"eFile Only"_1,"desc":"Proposed Temporary Order Stay Writ of Assistance","lead_doc":"04_order_stay_writ_proposed.pdf"},{"code":"MQ","type":"eFile Only"_2,"desc":"Emergency Motion to Stay Writ of Assistance and Protect Property","lead_doc":"02_emergency_motion_quash_stay.pdf"},{"code":"ADMWEL","type":"eFile Only"_3,"desc":"Exhibit List Exhibits AG","lead_doc":"05_Exhibit_List.pdf"},{"code":"ADMPE","type":"eFile Only"_4,"desc":"Exhibits AG (Combined)","lead_doc":"06_Exhibits_Combined.pdf"},{"code":"MSAJ","type":"eFile and Serve","desc":"Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)","lead_doc":"01_motion_vacate.pdf"}],"service_contact":{"name":"Michael E. Farrer","method":"EServe","email":"mfarrer@gfwlawyers.com","served_at":"2025-12-10 18:53:00"},"fees_total":0.00}" are not present in your table
 
 ### Assistant
@@ -8051,91 +10876,176 @@ canonical_ref: ""
 > If you paste your `\d public.envelopes` (or the column list output), I’ll tailor the CSV to your exact live schema so the importer stops complaining.
 
 ### User
-> Failed to import data: Failed to run sql query: ERROR: 23502: null value in column "user_id" of relation "envelopes" violates not-null constraint DETAIL: Failing row contains (9674f529-4347-429d-b1c6-0d8bc8d431f2, null, null, null, accepted, 2025-12-10 18:52:42+00, 2026-01-18 18:56:54.993166+00, 2026-01-18 18:56:54.993166+00, 01, IN_eFile, 55160855, null, null, 37268798, 49D03-2501-MF-002559, Marion Superior Court 3, Miller, Gary L, CODY RICE-VELASQUEZ, crice4485@gmail.com, 2025-12-11 08:33:00+00, accepted).[
->   {
->     "column_name": "id",
->     "data_type": "uuid"
->   },
->   {
->     "column_name": "user_id",
->     "data_type": "uuid"
->   },
->   {
->     "column_name": "recipient_email",
->     "data_type": "text"
->   },
->   {
->     "column_name": "recipient_name",
->     "data_type": "text"
->   },
->   {
->     "column_name": "status",
->     "data_type": "text"
->   },
->   {
->     "column_name": "sent_at",
->     "data_type": "timestamp with time zone"
->   },
->   {
->     "column_name": "created_at",
->     "data_type": "timestamp with time zone"
->   },
->   {
->     "column_name": "updated_at",
->     "data_type": "timestamp with time zone"
->   },
->   {
->     "column_name": "phase_id",
->     "data_type": "text"
->   },
->   {
->     "column_name": "court_system",
->     "data_type": "text"
->   },
->   {
->     "column_name": "confirmation_number",
->     "data_type": "text"
->   },
->   {
->     "column_name": "rejection_reason",
->     "data_type": "text"
->   },
->   {
->     "column_name": "notes",
->     "data_type": "text"
->   },
->   {
->     "column_name": "envelope_number",
->     "data_type": "text"
->   },
->   {
->     "column_name": "case_number",
->     "data_type": "text"
->   },
->   {
->     "column_name": "court_location",
->     "data_type": "text"
->   },
->   {
->     "column_name": "judge_name",
->     "data_type": "text"
->   },
->   {
->     "column_name": "submitted_by",
->     "data_type": "text"
->   },
->   {
->     "column_name": "submitted_username",
->     "data_type": "text"
->   },
->   {
->     "column_name": "review_at",
->     "data_type": "timestamp with time zone"
->   },
->   {
->     "column_name": "filing_status",
->     "data_type": "text"
->   }
+> Failed to import data: Failed to run sql query: ERROR: 23502: null value in column "user_id" of relation "envelopes" violates not-null constraint DETAIL: Failing row contains (9674f529-4347-429d-b1c6-0d8bc8d431f2, null, null, null, accepted, 2025-12-10 18:52:42+00, 2026-01-18 18:56:54.993166+00, 2026-01-18 18:56:54.993166+00, 01, IN_eFile, 55160855, null, null, 37268798, 49D03-2501-MF-002559, Marion Superior Court 3, Miller, Gary L, CODY RICE-VELASQUEZ, crice4485@gmail.com, 2025-12-11 08:33:00+00, accepted).[
+
+>   {
+
+>     "column_name": "id",
+
+>     "data_type": "uuid"
+
+>   },
+
+>   {
+
+>     "column_name": "user_id",
+
+>     "data_type": "uuid"
+
+>   },
+
+>   {
+
+>     "column_name": "recipient_email",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "recipient_name",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "status",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "sent_at",
+
+>     "data_type": "timestamp with time zone"
+
+>   },
+
+>   {
+
+>     "column_name": "created_at",
+
+>     "data_type": "timestamp with time zone"
+
+>   },
+
+>   {
+
+>     "column_name": "updated_at",
+
+>     "data_type": "timestamp with time zone"
+
+>   },
+
+>   {
+
+>     "column_name": "phase_id",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "court_system",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "confirmation_number",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "rejection_reason",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "notes",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "envelope_number",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "case_number",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "court_location",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "judge_name",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "submitted_by",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "submitted_username",
+
+>     "data_type": "text"
+
+>   },
+
+>   {
+
+>     "column_name": "review_at",
+
+>     "data_type": "timestamp with time zone"
+
+>   },
+
+>   {
+
+>     "column_name": "filing_status",
+
+>     "data_type": "text"
+
+>   }
+
 > ]
 
 ### Assistant
@@ -8384,55 +11294,104 @@ canonical_ref: ""
 > No guesswork, no more CSV failures.
 
 ### User
-> Connect to your project
-> Get the connection strings and environment variables for your app.
-> 
-> Connection String
-> App Frameworks
-> Mobile Frameworks
-> ORMs
-> MCP
-> Options
-> Read-only
-> 
-> 
-> Feature Groups
-> 
-> 
-> docs
-> database
-> debugging
-> functions
-> storage
-> Server URL
-> https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage
-> 
-> Client
-> 
-> openai logoCodex
-> Configure your MCP client to connect with your Supabase project
-> 
-> Installation
-> Add the Supabase MCP server to Codex:
-> 
-> codex mcp add supabase --url https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage
-> 
-> Alternatively, add this configuration to ~/.codex/config.toml:
-> [mcp_servers.supabase]
-> url = "https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage"
-> 
-> After adding the server, enable remote MCP client support by adding this to your ~/.codex/config.toml:
-> 
-> [features]
-> rmcp_client = true
-> 
-> Then authenticate:
-> 
-> codex mcp login supabase
-> 
-> Finally, run /mcp inside Codex to verify authentication.
-> 
-> Need help?
+> Connect to your project
+
+> Get the connection strings and environment variables for your app.
+
+> 
+
+> Connection String
+
+> App Frameworks
+
+> Mobile Frameworks
+
+> ORMs
+
+> MCP
+
+> Options
+
+> Read-only
+
+> 
+
+> 
+
+> Feature Groups
+
+> 
+
+> 
+
+> docs
+
+> database
+
+> debugging
+
+> functions
+
+> storage
+
+> Server URL
+
+> https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage
+
+> 
+
+> Client
+
+> 
+
+> openai logoCodex
+
+> Configure your MCP client to connect with your Supabase project
+
+> 
+
+> Installation
+
+> Add the Supabase MCP server to Codex:
+
+> 
+
+> codex mcp add supabase --url https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage
+
+> 
+
+> Alternatively, add this configuration to ~/.codex/config.toml:
+
+> [mcp_servers.supabase]
+
+> url = "https://mcp.supabase.com/mcp?project_ref=igaveicxkdqmjfxyakwb&features=docs%2Cdatabase%2Cdebugging%2Cfunctions%2Cstorage"
+
+> 
+
+> After adding the server, enable remote MCP client support by adding this to your ~/.codex/config.toml:
+
+> 
+
+> [features]
+
+> rmcp_client = true
+
+> 
+
+> Then authenticate:
+
+> 
+
+> codex mcp login supabase
+
+> 
+
+> Finally, run /mcp inside Codex to verify authentication.
+
+> 
+
+> Need help?
+
 > View Codex docs
 
 ### Assistant
@@ -9199,33 +12158,60 @@ canonical_ref: ""
 > If you paste what credit reports you have (dates + which bureau), I’ll draft the **Aug–Feb timeline skeleton** in the same print-ready format and include placeholders for “evidence link / document id / storage_path.”
 
 ### User
-> Processing triggers for hicolor-icon-theme (0.17-2) ...
-> codyr@qione:~$ node -v
-> v18.19.1
-> codyr@qione:~$ npm -v
-> 9.2.0
-> codyr@qione:~$ npm i -g @openai/codex@latest
-> npm ERR! code EACCES
-> npm ERR! syscall mkdir
-> npm ERR! path /usr/local/lib/node_modules
-> npm ERR! errno -13
-> npm ERR! Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
-> npm ERR!  [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'] {
-> npm ERR!   errno: -13,
-> npm ERR!   code: 'EACCES',
-> npm ERR!   syscall: 'mkdir',
-> npm ERR!   path: '/usr/local/lib/node_modules'
-> npm ERR! }
-> npm ERR!
-> npm ERR! The operation was rejected by your operating system.
-> npm ERR! It is likely you do not have the permissions to access this file as the current user
-> npm ERR!
-> npm ERR! If you believe this might be a permissions issue, please double-check the
-> npm ERR! permissions of the file and its containing directories, or try running
-> npm ERR! the command again as root/Administrator.
-> 
-> npm ERR! A complete log of this run can be found in:
-> npm ERR!     /home/codyr/.npm/_logs/2026-01-18T21_34_34_208Z-debug-0.log
+> Processing triggers for hicolor-icon-theme (0.17-2) ...
+
+> codyr@qione:~$ node -v
+
+> v18.19.1
+
+> codyr@qione:~$ npm -v
+
+> 9.2.0
+
+> codyr@qione:~$ npm i -g @openai/codex@latest
+
+> npm ERR! code EACCES
+
+> npm ERR! syscall mkdir
+
+> npm ERR! path /usr/local/lib/node_modules
+
+> npm ERR! errno -13
+
+> npm ERR! Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'
+
+> npm ERR!  [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules'] {
+
+> npm ERR!   errno: -13,
+
+> npm ERR!   code: 'EACCES',
+
+> npm ERR!   syscall: 'mkdir',
+
+> npm ERR!   path: '/usr/local/lib/node_modules'
+
+> npm ERR! }
+
+> npm ERR!
+
+> npm ERR! The operation was rejected by your operating system.
+
+> npm ERR! It is likely you do not have the permissions to access this file as the current user
+
+> npm ERR!
+
+> npm ERR! If you believe this might be a permissions issue, please double-check the
+
+> npm ERR! permissions of the file and its containing directories, or try running
+
+> npm ERR! the command again as root/Administrator.
+
+> 
+
+> npm ERR! A complete log of this run can be found in:
+
+> npm ERR!     /home/codyr/.npm/_logs/2026-01-18T21_34_34_208Z-debug-0.log
+
 > codyr@qione:~$
 
 ### Assistant

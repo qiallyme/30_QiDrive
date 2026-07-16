@@ -5,13 +5,13 @@ slug: adr-0007-unified-front-matter-and-progressive-doc-topology ... ...
 summary: Adopts one universal front matter schema with layout-based meaning, canonical field ordering, and a second-layer documentation topology so blueprint sections read progressively instead of as flat page buckets. ... ...
 status: publish
 created_at: "2026-04-01"
-updated_at: "2026-04-01"
+updated_at: "2026-07-16T06:49:38-04:00"
 author: Cody / AI ... ...
 owner: Cody ... ...
 sensitivity: internal ... ...
 classification: business_internal ... ...
 context: The blueprint has grown large enough that flat section folders are creating navigation friction. Prior front matter attempts also produced overlapping taxonomies, retired ontology fields, and drift between human-readable metadata and canonical system truth. ... ...
-tags:
+tags: []
   - governance
   - front-matter
   - documentation
@@ -19,7 +19,7 @@ tags:
   - topology
   - qispark
   - decisions
-keywords:
+keywords: []
   - front matter
   - layout
   - templates
@@ -31,7 +31,7 @@ source_type: manual ... ...
 adr_id: ADR-0007 ... ...
 aliases: []
 realm_label: ""
-uid: ""
+uid: a898d15fb0d6419b9301e616bf27e381
 canonical_ref: ""
 template_key: master-template
 ---

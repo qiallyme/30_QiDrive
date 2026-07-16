@@ -3,9 +3,9 @@ layout: page
 title: "QiOS Namespace Usage"
 slug: "qios_namespace_usage"
 created_at: "2026-05-18 22:41:08"
-updated_at: "2026-05-18 22:41:08"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,96 +39,186 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> can we still use this. QiOS Namespace Standard: System Blueprint
-> Final Version — Routing-First Architecture
-> QiOS utilizes a chart-of-accounts style namespace router. It is engineered for object-based thinking, chronological artifact naming, and shallow mental maps. This system prioritizes routing over identity; the namespace code dictates where an object belongs, while the QiDecimal defines exactly what it is.
-> 1. Locked Syntax & Naming
-> Component
-> Syntax
-> Example
-> Structural Node
-> ####AAA
-> 0300LGL (Legal)
-> Section Node (Folder)
-> ####AAA_Label
-> 0330LGL_Impact
-> Decimal Bucket
-> ####AAA.###
-> 0330LGL.010 (Observation)
-> Artifact (File)
-> ####AAA.###_YYYY-MM-DD_Title
-> 0330LGL.011_2026-04-04_summary.md
-> 
-> 2. Decimal Routing Rules
-> The three-digit decimal structure is intentional to allow for soft grouping without additional folder depth.
-> .000: Node default, base container, or branch index.
-> .010, .020, .030, .040, .050: Grouping buckets (Trailing zeros indicate a container).
-> .011–.019: Artifacts or children belonging to the .010 bucket.
-> .021–.029: Artifacts or children belonging to the .020 bucket.
-> 3. Top-Level Band Manifest
-> 0000 — System & Global (ROOT)
-> 0000ROOT: Master Repo Control
-> 0010ROOT_System / 0020ROOT_Registry / 0030ROOT_Indexes
-> 0040ROOT_Inbox / 0050ROOT_Staging / 0060ROOT_Exports
-> 0100 — Knowledge Base (KBS)
-> 0110KBS_Start_Here / 0120KBS_Ops / 0130KBS_Systems
-> 0140KBS_Standards / 0150KBS_References / 0160KBS_Templates
-> 0200 — Vault & Records (VLT)
-> 0210VLT_People / 0220VLT_Entities / 0230VLT_Places
-> 0240VLT_Assets / 0250VLT_Documents / 0260VLT_Media
-> 0300 — Legal (LGL)
-> 0310LGL_Case / 0320LGL_Evidence / 0330LGL_Impact
-> 0340LGL_Procedure / 0370LGL_Filings / 0380LGL_Orders
-> 0400 — Finance (FIN)
-> 0410FIN_Accounts / 0420FIN_Bills / 0430FIN_Income
-> 0440FIN_Expenses / 0450FIN_Tax / 0470FIN_Reports
-> 0500 — Operations (OPS)
-> 0510OPS_Dashboard / 0520OPS_Tasks / 0530OPS_Projects
-> 0540OPS_Schedules / 0560OPS_Logistics / 0570OPS_Reviews
-> 0600 — Systems / Dev (SYS)
-> 0610SYS_Architecture / 0630SYS_Automations / 0640SYS_Schemas
-> 0650SYS_Scripts / 0660SYS_Integrations / 0670SYS_Deployments
-> 0700 — Human & Household (HUM)
-> 0710HUM_Household / 0720HUM_Relationships / 0740HUM_Care
-> 0750HUM_Communication / 0760HUM_Routines / 0770HUM_Conflict
-> 0800 — Health & Regulation (HLT)
-> 0810HLT_Logs / 0820HLT_Symptoms / 0850HLT_Medical
-> 0860HLT_Mental_State / 0870HLT_Recovery
-> 0900 — Media & Publishing (MED)
-> 0910MED_Writing / 0920MED_Audio / 0930MED_Video
-> 0950MED_Brands / 0970MED_Publishing
-> 1000 — Clients / CRM (CLT)
-> 1010CLT_Leads / 1020CLT_Active / 1030CLT_Engagements
-> 1040CLT_Deliverables / 1050CLT_Portal / 1060CLT_Billing
-> 1100 — Templates (TPL)
-> 1110TPL_Documents / 1120TPL_Emails / 1130TPL_Forms
-> 1140TPL_Checklists / 1160TPL_Prompts
-> 1200 — Reference / Library (REF)
-> 1210REF_Laws / 1220REF_Cases / 1230REF_Standards
-> 1240REF_Notes
-> 4. ADHD-Safe Constraints
-> To prevent "system rot," the following structural limits are strictly enforced:
-> 
-> Max Structural Depth: Three levels from root. Any further specificity must be handled via decimal buckets or file naming.
-> Decimal-First Expansion: Do not solve ambiguity by adding folders. Use decimal groups first.
-> Functional Organization: Organize by what the object does or where it goes, not its theme or mood.
-> 5. Rollup Logic & Capacity
-> Everything in the system rolls up numerically for easy automation and mental scanning:
-> 0330LGL.011 → 0330LGL.010 → 0330LGL → 0300LGL
-> 
-> Total Address Space:
-> The system supports 10,000 structural trunks (0000–9999), each containing 1,000 decimal slots (.000–.999), providing 10,000,000 immediate namespace routes before accounting for dates or unique IDs.
-> Reserved
-> 1300–1999: Future domains
-> 2000–4999: Expansion
-> 5000–7999: Clients / Tenants
-> 8000–8999: Lab / Sandbox
-> 9000–9999: Archive / Legacy
-> 6. Signature & Approval
-> Person
-> System Architect
-> 
-> Date
+> can we still use this. QiOS Namespace Standard: System Blueprint
+
+> Final Version — Routing-First Architecture
+
+> QiOS utilizes a chart-of-accounts style namespace router. It is engineered for object-based thinking, chronological artifact naming, and shallow mental maps. This system prioritizes routing over identity; the namespace code dictates where an object belongs, while the QiDecimal defines exactly what it is.
+
+> 1. Locked Syntax & Naming
+
+> Component
+
+> Syntax
+
+> Example
+
+> Structural Node
+
+> ####AAA
+
+> 0300LGL (Legal)
+
+> Section Node (Folder)
+
+> ####AAA_Label
+
+> 0330LGL_Impact
+
+> Decimal Bucket
+
+> ####AAA.###
+
+> 0330LGL.010 (Observation)
+
+> Artifact (File)
+
+> ####AAA.###_YYYY-MM-DD_Title
+
+> 0330LGL.011_2026-04-04_summary.md
+
+> 
+
+> 2. Decimal Routing Rules
+
+> The three-digit decimal structure is intentional to allow for soft grouping without additional folder depth.
+
+> .000: Node default, base container, or branch index.
+
+> .010, .020, .030, .040, .050: Grouping buckets (Trailing zeros indicate a container).
+
+> .011–.019: Artifacts or children belonging to the .010 bucket.
+
+> .021–.029: Artifacts or children belonging to the .020 bucket.
+
+> 3. Top-Level Band Manifest
+
+> 0000 — System & Global (ROOT)
+
+> 0000ROOT: Master Repo Control
+
+> 0010ROOT_System / 0020ROOT_Registry / 0030ROOT_Indexes
+
+> 0040ROOT_Inbox / 0050ROOT_Staging / 0060ROOT_Exports
+
+> 0100 — Knowledge Base (KBS)
+
+> 0110KBS_Start_Here / 0120KBS_Ops / 0130KBS_Systems
+
+> 0140KBS_Standards / 0150KBS_References / 0160KBS_Templates
+
+> 0200 — Vault & Records (VLT)
+
+> 0210VLT_People / 0220VLT_Entities / 0230VLT_Places
+
+> 0240VLT_Assets / 0250VLT_Documents / 0260VLT_Media
+
+> 0300 — Legal (LGL)
+
+> 0310LGL_Case / 0320LGL_Evidence / 0330LGL_Impact
+
+> 0340LGL_Procedure / 0370LGL_Filings / 0380LGL_Orders
+
+> 0400 — Finance (FIN)
+
+> 0410FIN_Accounts / 0420FIN_Bills / 0430FIN_Income
+
+> 0440FIN_Expenses / 0450FIN_Tax / 0470FIN_Reports
+
+> 0500 — Operations (OPS)
+
+> 0510OPS_Dashboard / 0520OPS_Tasks / 0530OPS_Projects
+
+> 0540OPS_Schedules / 0560OPS_Logistics / 0570OPS_Reviews
+
+> 0600 — Systems / Dev (SYS)
+
+> 0610SYS_Architecture / 0630SYS_Automations / 0640SYS_Schemas
+
+> 0650SYS_Scripts / 0660SYS_Integrations / 0670SYS_Deployments
+
+> 0700 — Human & Household (HUM)
+
+> 0710HUM_Household / 0720HUM_Relationships / 0740HUM_Care
+
+> 0750HUM_Communication / 0760HUM_Routines / 0770HUM_Conflict
+
+> 0800 — Health & Regulation (HLT)
+
+> 0810HLT_Logs / 0820HLT_Symptoms / 0850HLT_Medical
+
+> 0860HLT_Mental_State / 0870HLT_Recovery
+
+> 0900 — Media & Publishing (MED)
+
+> 0910MED_Writing / 0920MED_Audio / 0930MED_Video
+
+> 0950MED_Brands / 0970MED_Publishing
+
+> 1000 — Clients / CRM (CLT)
+
+> 1010CLT_Leads / 1020CLT_Active / 1030CLT_Engagements
+
+> 1040CLT_Deliverables / 1050CLT_Portal / 1060CLT_Billing
+
+> 1100 — Templates (TPL)
+
+> 1110TPL_Documents / 1120TPL_Emails / 1130TPL_Forms
+
+> 1140TPL_Checklists / 1160TPL_Prompts
+
+> 1200 — Reference / Library (REF)
+
+> 1210REF_Laws / 1220REF_Cases / 1230REF_Standards
+
+> 1240REF_Notes
+
+> 4. ADHD-Safe Constraints
+
+> To prevent "system rot," the following structural limits are strictly enforced:
+
+> 
+
+> Max Structural Depth: Three levels from root. Any further specificity must be handled via decimal buckets or file naming.
+
+> Decimal-First Expansion: Do not solve ambiguity by adding folders. Use decimal groups first.
+
+> Functional Organization: Organize by what the object does or where it goes, not its theme or mood.
+
+> 5. Rollup Logic & Capacity
+
+> Everything in the system rolls up numerically for easy automation and mental scanning:
+
+> 0330LGL.011 → 0330LGL.010 → 0330LGL → 0300LGL
+
+> 
+
+> Total Address Space:
+
+> The system supports 10,000 structural trunks (0000–9999), each containing 1,000 decimal slots (.000–.999), providing 10,000,000 immediate namespace routes before accounting for dates or unique IDs.
+
+> Reserved
+
+> 1300–1999: Future domains
+
+> 2000–4999: Expansion
+
+> 5000–7999: Clients / Tenants
+
+> 8000–8999: Lab / Sandbox
+
+> 9000–9999: Archive / Legacy
+
+> 6. Signature & Approval
+
+> Person
+
+> System Architect
+
+> 
+
+> Date
+
 > Deployment Date
 
 ### Assistant

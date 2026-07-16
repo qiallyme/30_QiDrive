@@ -11,12 +11,12 @@ qi_decimal: 0.00.00-INTAKE
 qid: qa5081600ed74
 status: publish
 system: qios
-keywords:
+keywords: []
 - intake
 layout: page
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-02-24T10:26:41-05:00"
+updated_at: "2026-07-16T06:49:35-04:00"
 author: ""
 owner: ""
 tags: []
@@ -25,7 +25,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 45e134454bbd404cb35efba566b564dd
 canonical_ref: ""
 source_type: manual
 template_key: master-template

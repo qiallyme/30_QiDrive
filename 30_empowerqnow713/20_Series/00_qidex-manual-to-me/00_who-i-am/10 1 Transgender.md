@@ -3,8 +3,8 @@ layout: page
 title: 10 1 Transgender
 slug: 10_1_transgender
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 realm: QiVault
@@ -17,7 +17,7 @@ qi_decimal: 0.00.00-UNKNOWN
 qid: qc909b10d6371
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 37a64bd8160646faa4c41987f8a3e5d6
 canonical_ref: ""
 template_key: master-template
 ---

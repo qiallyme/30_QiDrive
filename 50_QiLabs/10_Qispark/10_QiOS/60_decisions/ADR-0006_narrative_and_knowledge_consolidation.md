@@ -4,8 +4,8 @@ title: ADR-0006: Narrative and Knowledge Layer Consolidation
 slug: adr-0006-narrative-and-knowledge-layer-consolidation
 status: publish
 created_at: "2026-03-30"
-updated_at: "2026-03-30"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ef656cd27678454fbe3e7753f5a62d3b
 canonical_ref: ""
 template_key: master-template
 ---

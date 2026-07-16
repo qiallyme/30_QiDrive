@@ -3,9 +3,9 @@ layout: page
 title: "Text Message Help"
 slug: "text_message_help"
 created_at: "2026-01-20 10:22:45"
-updated_at: "2026-01-20 10:22:45"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Foreclosure proceedings begin"
 slug: "foreclosure_proceedings_begin"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5ed5fbea42b44faabb043007175201e8
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Foreclosure proceedings begin
 
 Category: Challenge

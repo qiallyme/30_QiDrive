@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 09 Evidence Inventory And Attachment Map
-slug: ""
+slug: 09-evidence-inventory-and-attachment-map
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d73ebb462fad4ed68bc46f88b68e27cb
 canonical_ref: ""
 source_type: manual
 template_key: master-template

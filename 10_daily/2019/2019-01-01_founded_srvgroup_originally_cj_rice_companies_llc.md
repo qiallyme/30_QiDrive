@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Founded SRVGroup (originally CJ Rice & Companies LLC)"
 slug: "founded_srvgroup_originally_cj_rice_companies_llc"
 summary: ""
 status: active
 created_at: "2019-01-01"
-updated_at: "2019-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3fcae68094dd4dbdbd72f8e7ec47cd82
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2019-01-01
 ---
+
 # Founded SRVGroup (originally CJ Rice & Companies LLC)
 
 Category: Career

@@ -3,9 +3,9 @@ layout: page
 title: "Local database with AI"
 slug: "local_database_with_ai"
 created_at: "2025-09-10 08:40:35"
-updated_at: "2025-09-10 08:40:35"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -726,11 +726,16 @@ canonical_ref: ""
 > No Docker, no excuses. Run the three commands (venv, `indexer.py`, `uvicorn`). When you’re ready to *see* relationships, we wire in Neo4j Desktop + Bloom and auto-generate your first graph so your brain can drag, pin, and zoom to glory.
 
 ### User
-> PS V:\qi-search> python .\indexer.py
-> Traceback (most recent call last):
->   File "V:\qi-search\indexer.py", line 1, in <module>
->     import os, hashlib, pathlib, chardet, time, json
-> ModuleNotFoundError: No module named 'chardet'
+> PS V:\qi-search> python .\indexer.py
+
+> Traceback (most recent call last):
+
+>   File "V:\qi-search\indexer.py", line 1, in <module>
+
+>     import os, hashlib, pathlib, chardet, time, json
+
+> ModuleNotFoundError: No module named 'chardet'
+
 > PS V:\qi-search>  
 > 
 > yes to this. If you want, I’ll spit out a relationship extractor that scans your repo and seeds a first-pass graph (folders → files → headings → links) so Bloom shows a coherent map right away.
@@ -1481,960 +1486,1914 @@ canonical_ref: ""
 > Keep stacking: drop a few real notes with YAML front matter into `qisource`, reindex, and watch the Orbit map come alive. Next, we can add a tiny web UI with a left filter (tags/orbits), middle search results, right “neighbors” panel—the ADHD tri-pane.
 
 ### User
-> +---------+
-> +---------+
-> | n       |
-> +---------+
-> | (:Node) |
-> +---------+
-> +-----------+
-> | n         |
-> +-----------+
-> | (:Vertex) |
-> +-----------+
-> +-----------+
-> | n         |
-> +-----------+
-> | (:Vertex) |
-> +-----------+
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\qisource\tools\tests\client\output_tabular\query_per_line.txt
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\qisource\tools\tests\client\output_tabular\quote.txt
-> TYPE: .txt
-> ================================================================================
-> 
-> 
-> +-----------------------------------------+
-> | n                                       |
-> +-----------------------------------------+
-> | (:Ciceron {quote: "o tempora o mores"}) |
-> +-----------------------------------------+
-> +------------------------------------------+
-> | n                                        |
-> +------------------------------------------+
-> | (:Ciceron {quote: "o tempora o mores!"}) |
-> +------------------------------------------+
-> +---------------------------------------------+
-> | n                                           |
-> +---------------------------------------------+
-> | (:Ciceron {quote: "o tempora \'o mores\'"}) |
-> +---------------------------------------------+
-> +---------------------------------------------+
-> | n                                           |
-> +---------------------------------------------+
-> | (:Ciceron {quote: "o tempora \"o mores\""}) |
-> +---------------------------------------------+
-> +---------------------------------------------+
-> | n                                           |
-> +---------------------------------------------+
-> | (:Ciceron {quote: "o tempora \"o mores\""}) |
-> +---------------------------------------------+
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\qisource\tools\tests\client\output_tabular\quote.txt
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\qisource\tools\tests\client\output_tabular\unfinished_query.txt
-> TYPE: .txt
-> ================================================================================
-> 
-> 
-> +---------------------------------------+
-> | n                                     |
-> +---------------------------------------+
-> | (:Ovid {quote: "Exitus Acta Probat"}) |
-> +---------------------------------------+
-> +---------------------------------------+
-> | n                                     |
-> +---------------------------------------+
-> | (:Ovid {quote: "Exitus Acta Probat"}) |
-> +---------------------------------------+
-> +---------------------------------------+
-> | n                                     |
-> +---------------------------------------+
-> | (:Ovid {quote: "Exitus Acta Probat"}) |
-> +---------------------------------------+
-> +------------------------------+
-> | n                            |
-> +------------------------------+
-> | (:Bible {quote: "Fiat Lux"}) |
-> +------------------------------+
-> +---------------------------------------+
-> | n                                     |
-> +---------------------------------------+
-> | (:Plinius {quote: "In vino veritas"}) |
-> +---------------------------------------+
-> +---------------------------------------+
-> | n                                     |
-> +---------------------------------------+
-> | (:Plinius {quote: "In vino veritas"}) |
-> +---------------------------------------+
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\qisource\tools\tests\client\output_tabular\unfinished_query.txt
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\package.json
-> TYPE: .json
-> ================================================================================
-> 
-> 
-> {
->   "dependencies": {
->     "vectra": "^0.11.1"
->   }
-> }
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\package.json
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\qivectra_api.py
-> TYPE: .py
-> ================================================================================
-> 
-> 
-> from fastapi import FastAPI, Query
-> from fastapi.middleware.cors import CORSMiddleware
-> import asyncio, os, json
-> from typing import List
-> from dotenv import load_dotenv
-> 
-> load_dotenv()
-> DEFAULT_INDEXES = [
->     os.getenv("QIVECTRA_INDEX", "./qivectra_index"),
->     "./qivectra_index_law",
->     "./qivectra_index_finance",
-> ]
-> 
-> # reuse your existing search and pretty utilities
-> # if you saved them in qivectra_query.py, import them:
-> from qivectra_query import search as search_single, pretty, search_all
-> 
-> app = FastAPI(title="QiVectra API", version="0.1.0")
-> 
-> app.add_middleware(
->     CORSMiddleware,
->     allow_origins=["*"],  # lock this down later if you want
->     allow_credentials=True,
->     allow_methods=["*"],
->     allow_headers=["*"],
-> )
-> 
-> @app.get("/health")
-> def health():
->     return {"ok": True}
-> 
-> @app.get("/search")
-> def do_search(
->     q: str = Query(..., min_length=2),
->     k: int = Query(6, ge=1, le=50),
->     multi: int = Query(0),
->     indexes: str = Query("")
-> ):
->     """
->     q: query text
->     k: top_k
->     multi: 1 to query multiple indexes
->     indexes: comma-separated list of index folder paths
->     """
->     if not q.strip():
->         return []
-> 
->     async def run_single(idx_path: str):
->         # temporarily override env for the single search to point at a specific index path
->         os.environ["QIVECTRA_INDEX"] = idx_path
->         return await search_single(q, metadata_filter=None, top_k=k)
-> 
->     if multi:
->         ix_list = [p for p in (indexes.split(",") if indexes else DEFAULT_INDEXES) if p.strip()]
->         results = []
->         for ix in ix_list:
->             try:
->                 part = asyncio.run(run_single(ix))
->                 results.extend(part)
->             except Exception as e:
->                 # swallow bad index path, return what we can
->                 continue
->         # sort and compress to k
->         results = sorted(results, key=lambda r: r["score"], reverse=True)[:k]
->         return pretty(results)
->     else:
->         results = asyncio.run(search_all(q, top_k=k, index_path=indexes))
->         return pretty(results)
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\qivectra_api.py
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\qivectra_indexer.py
-> TYPE: .py
-> ================================================================================
-> 
-> 
-> import os, sys, time, hashlib, asyncio, json
-> from pathlib import Path
-> from dotenv import load_dotenv
-> from watchdog.observers import Observer
-> from watchdog.events import FileSystemEventHandler
-> from tenacity import retry, wait_exponential, stop_after_attempt
-> 
-> # vectra via Node.js
-> import subprocess
-> 
-> # parsers
-> from bs4 import BeautifulSoup
-> from docx import Document
-> from pypdf import PdfReader
-> 
-> # embeddings
-> import tiktoken
-> from openai import OpenAI
-> 
-> load_dotenv()
-> OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-> EMBED_MODEL    = os.getenv("EMBED_MODEL", "text-embedding-3-small")
-> INDEX_PATH     = Path(os.getenv("QIVECTRA_INDEX", "./qivectra_index"))
-> WATCH_DIRS     = [Path(p) for p in os.getenv("WATCH_DIRS", "").split(";") if p.strip()]
-> FILE_GLOB      = os.getenv("FILE_GLOB", "**/*.{pdf,txt,md,docx,html,htm}")
-> CHUNK_TOKENS   = int(os.getenv("CHUNK_TOKENS", "700"))
-> CHUNK_OVERLAP  = int(os.getenv("CHUNK_OVERLAP", "100"))
-> 
-> client = OpenAI(api_key=OPENAI_API_KEY)
-> 
-> # Init Vectra local index
-> async def init_index():
->     cmd = ["node", "vectra_search.js", "init", str(INDEX_PATH)]
->     try:
->         subprocess.run(cmd, check=True, capture_output=True, text=True)
->     except subprocess.CalledProcessError as e:
->         print(f"Failed to initialize index: {e}")
->         print(f"Error output: {e.stderr}")
->         raise
-> 
-> enc = tiktoken.get_encoding("cl100k_base")
-> 
-> def read_text(path: Path) -> str:
->     suffix = path.suffix.lower()
->     if suffix in (".txt", ".md"):
->         return path.read_text(errors="ignore")
->     if suffix == ".pdf":
->         try:
->             reader = PdfReader(str(path))
->             return "\n".join(page.extract_text() or "" for page in reader.pages)
->         except Exception as e:
->             print(f"Failed to read PDF {path}: {e}")
->             return ""
->     if suffix == ".docx":
->         doc = Document(str(path))
->         return "\n".join(p.text for p in doc.paragraphs)
->     if suffix in (".html", ".htm"):
->         html = path.read_text(errors="ignore")
->         soup = BeautifulSoup(html, "lxml")
->         return soup.get_text(separator="\n")
->     return ""  # skip unknowns quietly
-> 
-> def chunk_text(text: str, max_tokens=CHUNK_TOKENS, overlap=CHUNK_OVERLAP):
->     toks = enc.encode(text)
->     start = 0
->     while start < len(toks):
->         end = min(start + max_tokens, len(toks))
->         yield enc.decode(toks[start:end])
->         if end == len(toks): break
->         start = end - overlap
-> 
-> def sha1(s: str) -> str:
->     return hashlib.sha1(s.encode("utf-8")).hexdigest()
-> 
-> @retry(wait=wait_exponential(min=1, max=30), stop=stop_after_attempt(5))
-> def embed(texts):
->     # batch embed; OpenAI SDK auto-chunks requests
->     resp = client.embeddings.create(model=EMBED_MODEL, input=texts)
->     return [d.embedding for d in resp.data]
-> 
-> async def upsert_file(path: Path):
->     try:
->         text = read_text(path)
->         if not text.strip():
->             return
->         chunks = list(chunk_text(text))
->         vectors = embed(chunks)
->         # One metadata doc per chunk for better recall
->         for i, (chunk, vector) in enumerate(zip(chunks, vectors)):
->             metadata = {
->                 "source_path": str(path),
->                 "chunk_id": i,
->                 "file_name": path.name,
->                 "ext": path.suffix.lower(),
->                 "size": path.stat().st_size,
->                 "mtime": int(path.stat().st_mtime),
->                 "doc_hash": sha1(str(path.resolve())),
->                 "preview": chunk[:400],
->             }
->             # Vectra expects {"vector": [...], "metadata": {...}}
->             item = {"vector": vector, "metadata": metadata}
->             import tempfile
->             with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
->                 json.dump(item, f)
->                 temp_file = f.name
-> 
->             try:
->                 cmd = ["node", "vectra_search.js", "insert", str(INDEX_PATH), temp_file]
->                 subprocess.run(cmd, check=True, capture_output=True, text=True)
->             except subprocess.CalledProcessError as e:
->                 print(f"Failed to insert item: {e}")
->                 print(f"Error output: {e.stderr}")
->                 raise
->             finally:
->                 import os
->                 os.unlink(temp_file)
->         print(f"Indexed: {path} ({len(chunks)} chunks)")
->     except Exception as e:
->         print(f"[WARN] failed {path}: {e}")
-> 
-> def prime_scan():
->     files = []
->     SKIP = {"$RECYCLE.BIN", "System Volume Information"}
->     for root in WATCH_DIRS:
->         for p in root.glob(FILE_GLOB):
->             try:
->                 # skip if any parent dir is in SKIP
->                 if any(part in SKIP for part in Path(p).parts):
->                     continue
->                 if Path(p).is_file():
->                     files.append(Path(p))
->             except Exception:
->                 continue
->     return sorted(set(files))
-> 
-> class Handler(FileSystemEventHandler):
->     def on_created(self, event):
->         if not event.is_directory:
->             p = Path(event.src_path)
->             if p.match(FILE_GLOB.replace("**/", "")):
->                 asyncio.run(upsert_file(p))
->     def on_modified(self, event):
->         if not event.is_directory:
->             p = Path(event.src_path)
->             if p.match(FILE_GLOB.replace("**/", "")):
->                 asyncio.run(upsert_file(p))
-> 
-> async def main():
->     # Initialize index
->     await init_index()
-> 
->     # Set default watch directory if none specified
->     watch_dirs = WATCH_DIRS.copy()
->     if not watch_dirs:
->         watch_dirs.append(Path("."))
->         print(f"No WATCH_DIRS specified, using current directory: {Path('.').resolve()}")
-> 
->     # initial load
->     files = []
->     SKIP = {"$RECYCLE.BIN", "System Volume Information"}
->     for root in watch_dirs:
->         for p in root.glob(FILE_GLOB):
->             try:
->                 # skip if any parent dir is in SKIP
->                 if any(part in SKIP for part in Path(p).parts):
->                     continue
->                 if Path(p).is_file():
->                     files.append(Path(p))
->             except Exception:
->                 continue
-> 
->     files = sorted(set(files))
->     print(f"Found {len(files)} files to index")
->     for p in files:
->         await upsert_file(p)
-> 
->     # watch
->     observer = Observer()
->     for d in watch_dirs:
->         observer.schedule(Handler(), str(d), recursive=True)
->     observer.start()
->     print("Watching for changes... Ctrl+C to stop.")
->     try:
->         while True: time.sleep(1)
->     except KeyboardInterrupt:
->         observer.stop()
->     observer.join()
-> 
-> if __name__ == "__main__":
->     if not OPENAI_API_KEY:
->         print("Set OPENAI_API_KEY in .env"); sys.exit(1)
->     asyncio.run(main())
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\qivectra_indexer.py
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\qivectra_min_ui.html
-> TYPE: .html
-> ================================================================================
-> 
-> 
-> html
-> <!doctype html>
-> <html>
-> <head>
-> <meta charset="utf-8"/>
-> <title>QiVectra – Minimal</title>
-> <style>
-> body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:24px}
-> #hits{margin-top:16px;display:grid;gap:12px}
-> .card{border:1px solid #ddd;border-radius:12px;padding:12px}
-> .score{font-family:monospace;background:#f3f3f3;padding:2px 6px;border-radius:8px;margin-right:6px}
-> .path{color:#666;font-size:12px}
-> .btn{padding:10px 14px;border-radius:10px;border:1px solid #222;background:#fff;cursor:pointer}
-> .btn:active{transform:translateY(1px)}
-> input{height:40px;width:520px;padding:0 10px;border-radius:10px;border:1px solid #ccc}
-> .small{font-size:12px;color:#666}
-> </style>
-> </head>
-> <body>
-> <h1>QiVectra</h1>
-> <div>
->   <input id="q" placeholder="Search your V: knowledge..." />
->   <button class="btn" onclick="go()">Search</button>
->   <button class="btn" onclick="copyCtx()">Copy context</button>
-> </div>
-> <p class="small">API: <code id="api">http://localhost:8765</code> • TopK: <input id="k" value="6" size="2"/></p>
-> <div id="hits"></div>
-> 
-> <script>
-> const apiBase = document.getElementById('api').textContent;
-> let last = [];
-> async function go(){
->   const q = document.getElementById('q').value.trim();
->   const k = document.getElementById('k').value;
->   if(!q){alert('Type a query');return;}
->   const url = `${apiBase}/search?q=${encodeURIComponent(q)}&k=${k}`;
->   const res = await fetch(url);
->   if(!res.ok){alert('API error '+res.status);return;}
->   const data = await res.json();
->   last = data;
->   const hits = document.getElementById('hits'); hits.innerHTML='';
->   if(!data.length){hits.innerHTML='<div class="card">No hits.</div>'; return;}
->   data.forEach(h=>{
->     const d = document.createElement('div'); d.className='card';
->     d.innerHTML = `<div><span class="score">${h.score.toFixed(4)}</span><span class="path">${h.file} #${h.chunk}</span></div><div>${(h.preview||'').replace(/</g,'&lt;')}</div>`;
->     hits.appendChild(d);
->   });
-> }
-> async function copyCtx(){
->   const txt = last.map(h=>`[${h.file}#${h.chunk}] ${h.preview}`).join('\\n\\n');
->   if(!txt){alert('Search first.');return;}
->   await navigator.clipboard.writeText(txt);
->   alert('Copied.');
-> }
-> </script>
-> </body>
-> </html>
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\qivectra_min_ui.html
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\qivectra_query.py
-> TYPE: .py
-> ================================================================================
-> 
-> 
-> import os, asyncio
-> from pathlib import Path
-> from dotenv import load_dotenv
-> from openai import OpenAI
-> import subprocess
-> import json
-> 
-> load_dotenv()
-> client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-> INDEX_PATH = os.getenv("QIVECTRA_INDEX", "./qivectra_index")
-> EMBED_MODEL = os.getenv("EMBED_MODEL", "text-embedding-3-small")
-> TOP_K = int(os.getenv("TOP_K", "6"))
-> INDEXES = ["./qivectra_index_law", "./qivectra_index_finance"]
-> async def search_all(query):
->     results = []
->     for idx_path in INDEXES:
->         res = await search(query, top_k=6, index_path=idx_path)
->         results.extend(res)
->     return sorted(results, key=lambda r: r["score"], reverse=True)[:6]
-> 
-> 
-> async def embed(query: str):
->     resp = client.embeddings.create(model=EMBED_MODEL, input=query)
->     return resp.data[0].embedding
-> 
-> async def search(query: str, metadata_filter=None, top_k=TOP_K, index_path=INDEX_PATH):
->     qvec = await embed(query)
->     # Use Node.js vectra via subprocess with temp files
->     import tempfile
->     import os
-> 
->     # Create temp file for query
->     with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
->         json.dump(qvec, f)
->         query_file = f.name
-> 
->     # Create temp file for filter if needed
->     filter_file = None
->     if metadata_filter:
->         with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
->             json.dump(metadata_filter, f)
->             filter_file = f.name
-> 
->     try:
->         cmd = ["node", "vectra_search.js", "search", str(index_path), query_file, str(top_k)]
->         if filter_file:
->             cmd.append(filter_file)
-> 
->         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
->         return json.loads(result.stdout)
->     except subprocess.CalledProcessError as e:
->         print(f"Search failed: {e}")
->         print(f"Error output: {e.stderr}")
->         return []
->     except json.JSONDecodeError as e:
->         print(f"Failed to parse search results: {e}")
->         return []
->     finally:
->         os.unlink(query_file)
->         if filter_file:
->             os.unlink(filter_file)
-> 
-> def pretty(results):
->     out = []
->     for r in results:
->         m = r["item"]["metadata"]
->         out.append({
->             "score": round(r["score"], 4),
->             "file": m.get("source_path"),
->             "chunk": m.get("chunk_id"),
->             "preview": m.get("preview", "")[:240].replace("\n"," ")
->         })
->     return out
-> 
-> if __name__ == "__main__":
->     import json, sys
->     q = " ".join(sys.argv[1:]) or "contract termination clause late fees"
->     res = asyncio.run(search(q, metadata_filter={"ext": {"$in": [".pdf", ".docx", ".txt"]}}))
->     print(json.dumps(pretty(res), indent=2))
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\qivectra_query.py
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\test_document.txt
-> TYPE: .txt
-> ================================================================================
-> 
-> 
-> This is a test document for the QIVectra indexer.
-> 
-> It contains information about:
-> - Contract termination clauses
-> - Late fees and penalties
-> - Legal requirements for document processing
-> - Vector database indexing
-> 
-> This document should be indexed and searchable through the vectra system.
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\test_document.txt
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> FILE: V:\vectordb\vectra_search.js
-> TYPE: .js
-> ================================================================================
-> 
-> 
-> const { LocalIndex } = require('vectra');
-> const fs = require('fs');
-> 
-> async function search(indexPath, queryFile, topK, filterFile) {
->     try {
->         const query = JSON.parse(fs.readFileSync(queryFile, 'utf8'));
->         const filter = filterFile ? JSON.parse(fs.readFileSync(filterFile, 'utf8')) : {};
->         const index = new LocalIndex(indexPath);
->         const results = await index.queryItems(query, topK, filter);
->         console.log(JSON.stringify(results));
->     } catch (error) {
->         console.error(JSON.stringify({error: error.message}));
->         process.exit(1);
->     }
-> }
-> 
-> async function insert(indexPath, itemFile) {
->     try {
->         const item = JSON.parse(fs.readFileSync(itemFile, 'utf8'));
->         const index = new LocalIndex(indexPath);
->         await index.insertItem(item);
->         console.log("Item inserted successfully");
->     } catch (error) {
->         console.error(JSON.stringify({error: error.message}));
->         process.exit(1);
->     }
-> }
-> 
-> async function init(indexPath) {
->     try {
->         const index = new LocalIndex(indexPath);
->         if (!index.isIndexCreated()) {
->             index.createIndex();
->         }
->         console.log("Index initialized successfully");
->     } catch (error) {
->         console.error(JSON.stringify({error: error.message}));
->         process.exit(1);
->     }
-> }
-> 
-> const command = process.argv[2];
-> const indexPath = process.argv[3];
-> 
-> if (command === 'search') {
->     const queryFile = process.argv[4];
->     const topK = parseInt(process.argv[5]);
->     const filterFile = process.argv[6];
->     search(indexPath, queryFile, topK, filterFile);
-> } else if (command === 'insert') {
->     const itemFile = process.argv[4];
->     insert(indexPath, itemFile);
-> } else if (command === 'init') {
->     init(indexPath);
-> } else {
->     console.error("Unknown command. Use: search, insert, or init");
->     process.exit(1);
-> }
-> 
-> 
-> 
-> ================================================================================
-> END OF FILE: V:\vectordb\vectra_search.js
-> ================================================================================
-> 
-> 
-> 
-> ================================================================================
-> EXTRACTION COMPLETE
-> Total files processed: 2083
-> Output saved to: V:\code_extraction_2025-09-10_10-23-48.txt
-> ================================================================================
-> 
-> 
-> Code extraction completed successfully!
-> Output saved to: V:\code_extraction_2025-09-10_10-23-48.txt
-> (.venv) PS V:\> cd V:\qi-search
-> (.venv) PS V:\qi-search> .\.venv\Scripts\Activate.ps1
-> (.venv) PS V:\qi-search> pip install --upgrade pip
-> Requirement already satisfied: pip in v:\qi-search\.venv\lib\site-packages (25.2)
-> (.venv) PS V:\qi-search> pip install chromadb sentence-transformers fastapi uvicorn pydantic[dotenv] python-magic-bin pypdf
->  markdown chardet pyyaml
-> Requirement already satisfied: chromadb in v:\qi-search\.venv\lib\site-packages (1.0.20)
-> Requirement already satisfied: sentence-transformers in v:\qi-search\.venv\lib\site-packages (5.1.0)
-> Requirement already satisfied: fastapi in v:\qi-search\.venv\lib\site-packages (0.116.1)
-> Requirement already satisfied: uvicorn in v:\qi-search\.venv\lib\site-packages (0.35.0)
-> Requirement already satisfied: python-magic-bin in v:\qi-search\.venv\lib\site-packages (0.4.14)
-> Requirement already satisfied: pypdf in v:\qi-search\.venv\lib\site-packages (6.0.0)
-> Requirement already satisfied: markdown in v:\qi-search\.venv\lib\site-packages (3.9)
-> Requirement already satisfied: chardet in v:\qi-search\.venv\lib\site-packages (5.2.0)
-> Requirement already satisfied: pyyaml in v:\qi-search\.venv\lib\site-packages (6.0.2)
-> Requirement already satisfied: pydantic[dotenv] in v:\qi-search\.venv\lib\site-packages (2.11.7)
-> Requirement already satisfied: build>=1.0.3 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.3.0)
-> Requirement already satisfied: pybase64>=1.4.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.4.2)
-> Requirement already satisfied: numpy>=1.22.5 in v:\qi-search\.venv\lib\site-packages (from chromadb) (2.3.3)
-> Requirement already satisfied: posthog<6.0.0,>=2.4.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (5.4.0)
-> Requirement already satisfied: typing-extensions>=4.5.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.15.0)   
-> Requirement already satisfied: onnxruntime>=1.14.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.22.1)        
-> Requirement already satisfied: opentelemetry-api>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)
-> Requirement already satisfied: opentelemetry-exporter-otlp-proto-grpc>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)
-> Requirement already satisfied: opentelemetry-sdk>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)   
-> Requirement already satisfied: tokenizers>=0.13.2 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.22.0)
-> Requirement already satisfied: pypika>=0.48.9 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.48.9)
-> Requirement already satisfied: tqdm>=4.65.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.67.1)
-> Requirement already satisfied: overrides>=7.3.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (7.7.0)
-> Requirement already satisfied: importlib-resources in v:\qi-search\.venv\lib\site-packages (from chromadb) (6.5.2)
-> Requirement already satisfied: grpcio>=1.58.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.74.0)
-> Requirement already satisfied: bcrypt>=4.0.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.3.0)
-> Requirement already satisfied: typer>=0.9.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.17.4)
-> Requirement already satisfied: kubernetes>=28.1.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (33.1.0)
-> Requirement already satisfied: tenacity>=8.2.3 in v:\qi-search\.venv\lib\site-packages (from chromadb) (9.1.2)
-> Requirement already satisfied: mmh3>=4.0.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (5.2.0)
-> Requirement already satisfied: orjson>=3.9.12 in v:\qi-search\.venv\lib\site-packages (from chromadb) (3.11.3)
-> Requirement already satisfied: httpx>=0.27.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.28.1)
-> Requirement already satisfied: rich>=10.11.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (14.1.0)
-> Requirement already satisfied: jsonschema>=4.19.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.25.1)
-> Requirement already satisfied: requests<3.0,>=2.7 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.32.5)
-> Requirement already satisfied: six>=1.5 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (1.17.0)
-> Requirement already satisfied: python-dateutil>=2.2 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.9.0.post0)
-> Requirement already satisfied: backoff>=1.10.0 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.2.1)
-> Requirement already satisfied: distro>=1.5.0 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (1.9.0)
-> Requirement already satisfied: charset_normalizer<4,>=2 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (3.4.3)
-> Requirement already satisfied: idna<4,>=2.5 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (3.10)
-> Requirement already satisfied: urllib3<3,>=1.21.1 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (2.5.0)
-> Requirement already satisfied: certifi>=2017.4.17 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (2025.8.3)
-> Requirement already satisfied: transformers<5.0.0,>=4.41.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (4.56.1)
-> Requirement already satisfied: torch>=1.11.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (2.8.0)
-> Requirement already satisfied: scikit-learn in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (1.7.2)
-> Requirement already satisfied: scipy in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (1.16.1)
-> Requirement already satisfied: huggingface-hub>=0.20.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (0.34.4)
-> Requirement already satisfied: Pillow in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (11.3.0)        
-> Requirement already satisfied: filelock in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (3.19.1)
-> Requirement already satisfied: packaging>=20.0 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (25.0)
-> Requirement already satisfied: regex!=2019.12.17 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (2025.9.1)
-> Requirement already satisfied: safetensors>=0.4.3 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (0.6.2)
-> Requirement already satisfied: fsspec>=2023.5.0 in v:\qi-search\.venv\lib\site-packages (from huggingface-hub>=0.20.0->sentence-transformers) (2025.9.0)
-> Requirement already satisfied: starlette<0.48.0,>=0.40.0 in v:\qi-search\.venv\lib\site-packages (from fastapi) (0.47.3)
-> Requirement already satisfied: annotated-types>=0.6.0 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (0.7.0)
-> Requirement already satisfied: pydantic-core==2.33.2 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (2.33.2)
-> Requirement already satisfied: typing-inspection>=0.4.0 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (0.4.1)
-> Requirement already satisfied: anyio<5,>=3.6.2 in v:\qi-search\.venv\lib\site-packages (from starlette<0.48.0,>=0.40.0->fastapi) (4.10.0)
-> Requirement already satisfied: sniffio>=1.1 in v:\qi-search\.venv\lib\site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi) (1.3.1)
-> Requirement already satisfied: click>=7.0 in v:\qi-search\.venv\lib\site-packages (from uvicorn) (8.2.1)
-> Requirement already satisfied: h11>=0.8 in v:\qi-search\.venv\lib\site-packages (from uvicorn) (0.16.0)
-> WARNING: pydantic 2.11.7 does not provide the extra 'dotenv'
-> Requirement already satisfied: pyproject_hooks in v:\qi-search\.venv\lib\site-packages (from build>=1.0.3->chromadb) (1.2.0)
-> Requirement already satisfied: colorama in v:\qi-search\.venv\lib\site-packages (from build>=1.0.3->chromadb) (0.4.6)
-> Requirement already satisfied: httpcore==1.* in v:\qi-search\.venv\lib\site-packages (from httpx>=0.27.0->chromadb) (1.0.9)
-> Requirement already satisfied: attrs>=22.2.0 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (25.3.0)
-> Requirement already satisfied: jsonschema-specifications>=2023.03.6 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (2025.9.1)
-> Requirement already satisfied: referencing>=0.28.4 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (0.36.2)
-> Requirement already satisfied: rpds-py>=0.7.1 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (0.27.1)
-> Requirement already satisfied: google-auth>=1.0.1 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (2.40.3)
-> Requirement already satisfied: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (1.8.0)
-> Requirement already satisfied: requests-oauthlib in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (2.0.0)
-> Requirement already satisfied: oauthlib>=3.2.2 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (3.3.1)
-> Requirement already satisfied: durationpy>=0.7 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (0.10)
-> Requirement already satisfied: cachetools<6.0,>=2.0.0 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (5.5.2)
-> Requirement already satisfied: pyasn1-modules>=0.2.1 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (0.4.2)
-> Requirement already satisfied: rsa<5,>=3.1.4 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (4.9.1)
-> Requirement already satisfied: pyasn1>=0.1.3 in v:\qi-search\.venv\lib\site-packages (from rsa<5,>=3.1.4->google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (0.6.1)
-> Requirement already satisfied: coloredlogs in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (15.0.1)
-> Requirement already satisfied: flatbuffers in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (25.2.10)
-> Requirement already satisfied: protobuf in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (6.32.0)
-> Requirement already satisfied: sympy in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (1.14.0)
-> Requirement already satisfied: importlib-metadata<8.8.0,>=6.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-api>=1.2.0->chromadb) (8.7.0)
-> Requirement already satisfied: zipp>=3.20 in v:\qi-search\.venv\lib\site-packages (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api>=1.2.0->chromadb) (3.23.0)
-> Requirement already satisfied: googleapis-common-protos~=1.57 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.70.0)
-> Requirement already satisfied: opentelemetry-exporter-otlp-proto-common==1.36.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.36.0)
-> Requirement already satisfied: opentelemetry-proto==1.36.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.36.0)
-> Requirement already satisfied: opentelemetry-semantic-conventions==0.57b0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-sdk>=1.2.0->chromadb) (0.57b0)
-> Requirement already satisfied: markdown-it-py>=2.2.0 in v:\qi-search\.venv\lib\site-packages (from rich>=10.11.0->chromadb) (4.0.0)
-> Requirement already satisfied: pygments<3.0.0,>=2.13.0 in v:\qi-search\.venv\lib\site-packages (from rich>=10.11.0->chromadb) (2.19.2)
-> Requirement already satisfied: mdurl~=0.1 in v:\qi-search\.venv\lib\site-packages (from markdown-it-py>=2.2.0->rich>=10.11.0->chromadb) (0.1.2)
-> Requirement already satisfied: networkx in v:\qi-search\.venv\lib\site-packages (from torch>=1.11.0->sentence-transformers) (3.5)
-> Requirement already satisfied: jinja2 in v:\qi-search\.venv\lib\site-packages (from torch>=1.11.0->sentence-transformers) (3.1.6)
-> Requirement already satisfied: mpmath<1.4,>=1.1.0 in v:\qi-search\.venv\lib\site-packages (from sympy->onnxruntime>=1.14.1->chromadb) (1.3.0)
-> Requirement already satisfied: shellingham>=1.3.0 in v:\qi-search\.venv\lib\site-packages (from typer>=0.9.0->chromadb) (1.5.4)
-> Requirement already satisfied: httptools>=0.6.3 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (0.6.4)
-> Requirement already satisfied: python-dotenv>=0.13 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (1.1.1)
-> Requirement already satisfied: watchfiles>=0.13 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (1.1.0)
-> Requirement already satisfied: websockets>=10.4 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (15.0.1)
-> Requirement already satisfied: humanfriendly>=9.1 in v:\qi-search\.venv\lib\site-packages (from coloredlogs->onnxruntime>=1.14.1->chromadb) (10.0)
-> Requirement already satisfied: pyreadline3 in v:\qi-search\.venv\lib\site-packages (from humanfriendly>=9.1->coloredlogs->onnxruntime>=1.14.1->chromadb) (3.5.4)
-> Requirement already satisfied: MarkupSafe>=2.0 in v:\qi-search\.venv\lib\site-packages (from jinja2->torch>=1.11.0->sentence-transformers) (3.0.2)
-> Requirement already satisfied: joblib>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from scikit-learn->sentence-transformers) (1.5.2)
-> Requirement already satisfied: threadpoolctl>=3.1.0 in v:\qi-search\.venv\lib\site-packages (from scikit-learn->sentence-transformers) (3.6.0)
-> (.venv) PS V:\qi-search> mkdir -p V:\qisource\notes
-> mkdir : An item with the specified name V:\qisource\notes already exists.
-> At line:1 char:1
-> + mkdir -p V:\qisource\notes
-> + ~~~~~~~~~~~~~~~~~~~~~~~~~~
->     + CategoryInfo          : ResourceExists: (V:\qisource\notes:String) [New-Item], IOException
->     + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
-> 
-> (.venv) PS V:\qi-search> python .\indexer.py
-> [i] Source: V:\qisource
-> Traceback (most recent call last):
->   File "V:\qi-search\indexer.py", line 143, in <module>
->     col.add(
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 80, in add
->     add_request = self._validate_and_prepare_add_request(
->                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 95, in wrapper
->     return func(self, *args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 219, in _validate_and_prepare_add_request
->     validate_insert_record_set(record_set=add_records)
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 314, in validate_insert_record_set
->     validate_metadatas(record_set["metadatas"])
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 791, in validate_metadatas
->     validate_metadata(metadata)
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 757, in validate_metadata
->     raise ValueError(
-> ValueError: Expected metadata value to be a str, int, float, bool, or None, got [] which is a list in add.
-> (.venv) PS V:\qi-search> python .\indexer.py
-> [i] Source: V:\qisource
-> C:\Users\codyr\.cache\chroma\onnx_models\all-MiniLM-L6-v2\onnx.tar.gz: 100%|████████| 79.3M/79.3M [00:15<00:00, 5.33MiB/s]
-> Traceback (most recent call last):
->   File "V:\qi-search\indexer.py", line 143, in <module>
->     col.add(
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 80, in add
->     add_request = self._validate_and_prepare_add_request(
->                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 95, in wrapper
->     return func(self, *args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 225, in _validate_and_prepare_add_request
->     add_embeddings = self._embed_record_set(record_set=add_records)
->                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 551, in _embed_record_set      
->     return self._embed(input=record_set[field])  # type: ignore[literal-required]
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 565, in _embed
->     return config_ef(input=input)
->            ^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 554, in __call__
->     result = call(self, input)
->              ^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\__init__.py", line 116, in __call__        
->     return ONNXMiniLM_L6_V2()(input)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 554, in __call__
->     result = call(self, input)
->              ^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\onnx_mini_lm_l6_v2.py", line 273, in __call__
->     embeddings = self._forward(input)
->                  ^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\onnx_mini_lm_l6_v2.py", line 182, in _forward
->     model_output = self.model.run(None, onnx_input)
->                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 273, in run       
->     return self._sess.run(output_names, input_feed, run_options)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> KeyboardInterrupt
-> (.venv) PS V:\qi-search> python indexer.py
-> [i] Source: V:\qisource
-> Traceback (most recent call last):
->   File "V:\qi-search\indexer.py", line 87, in <module>
->     model = SentenceTransformer(EMBED_MODEL)
->             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 318, in __init__
->     and self._get_model_type(
->         ^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 2448, in _get_model_type  
->     config_sentence_transformers_json_path = load_file_path(
->                                              ^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\util\file_io.py", line 96, in load_file_path
->     return hf_hub_download(
->            ^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
->     return fn(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1010, in hf_hub_download
->     return _hf_hub_download_to_cache_dir(
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1073, in _hf_hub_download_to_cache_dir
->     (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(    
->                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1546, in _get_metadata_or_catch_error 
->     metadata = get_hf_file_metadata(
->                ^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
->     return fn(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1463, in get_hf_file_metadata
->     r = _request_wrapper(
->         ^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 305, in _request_wrapper
->     return _request_wrapper(method=method, url=next_url, follow_relative_redirects=True, **params)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 286, in _request_wrapper
->     response = _request_wrapper(
->                ^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
->     response = http_backoff(method=method, url=url, **params, retry_on_exceptions=(), retry_on_status_codes=(429,))        
->                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 310, in http_backoff
->     response = session.request(method=method, url=url, **kwargs)
->                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
->     resp = self.send(prep, **send_kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
->     r = adapter.send(request, **kwargs)
->         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
->     return super().send(request, *args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
->     resp = conn.urlopen(
->            ^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
->     response = self._make_request(
->                ^^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
->     response = conn.getresponse()
->                ^^^^^^^^^^^^^^^^^^
->   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
->     httplib_response = super().getresponse()
->                        ^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1395, in getresponse
->     response.begin()
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
->     version, status, reason = self._read_status()
->                               ^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
->     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
->                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
->     return self._sock.recv_into(b)
->            ^^^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1314, in recv_into
->     return self.read(nbytes, buffer)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1166, in read
->     return self._sslobj.read(len, buffer)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> +---------+
+
+> +---------+
+
+> | n       |
+
+> +---------+
+
+> | (:Node) |
+
+> +---------+
+
+> +-----------+
+
+> | n         |
+
+> +-----------+
+
+> | (:Vertex) |
+
+> +-----------+
+
+> +-----------+
+
+> | n         |
+
+> +-----------+
+
+> | (:Vertex) |
+
+> +-----------+
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\qisource\tools\tests\client\output_tabular\query_per_line.txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\qisource\tools\tests\client\output_tabular\quote.txt
+
+> TYPE: .txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> +-----------------------------------------+
+
+> | n                                       |
+
+> +-----------------------------------------+
+
+> | (:Ciceron {quote: "o tempora o mores"}) |
+
+> +-----------------------------------------+
+
+> +------------------------------------------+
+
+> | n                                        |
+
+> +------------------------------------------+
+
+> | (:Ciceron {quote: "o tempora o mores!"}) |
+
+> +------------------------------------------+
+
+> +---------------------------------------------+
+
+> | n                                           |
+
+> +---------------------------------------------+
+
+> | (:Ciceron {quote: "o tempora \'o mores\'"}) |
+
+> +---------------------------------------------+
+
+> +---------------------------------------------+
+
+> | n                                           |
+
+> +---------------------------------------------+
+
+> | (:Ciceron {quote: "o tempora \"o mores\""}) |
+
+> +---------------------------------------------+
+
+> +---------------------------------------------+
+
+> | n                                           |
+
+> +---------------------------------------------+
+
+> | (:Ciceron {quote: "o tempora \"o mores\""}) |
+
+> +---------------------------------------------+
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\qisource\tools\tests\client\output_tabular\quote.txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\qisource\tools\tests\client\output_tabular\unfinished_query.txt
+
+> TYPE: .txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> +---------------------------------------+
+
+> | n                                     |
+
+> +---------------------------------------+
+
+> | (:Ovid {quote: "Exitus Acta Probat"}) |
+
+> +---------------------------------------+
+
+> +---------------------------------------+
+
+> | n                                     |
+
+> +---------------------------------------+
+
+> | (:Ovid {quote: "Exitus Acta Probat"}) |
+
+> +---------------------------------------+
+
+> +---------------------------------------+
+
+> | n                                     |
+
+> +---------------------------------------+
+
+> | (:Ovid {quote: "Exitus Acta Probat"}) |
+
+> +---------------------------------------+
+
+> +------------------------------+
+
+> | n                            |
+
+> +------------------------------+
+
+> | (:Bible {quote: "Fiat Lux"}) |
+
+> +------------------------------+
+
+> +---------------------------------------+
+
+> | n                                     |
+
+> +---------------------------------------+
+
+> | (:Plinius {quote: "In vino veritas"}) |
+
+> +---------------------------------------+
+
+> +---------------------------------------+
+
+> | n                                     |
+
+> +---------------------------------------+
+
+> | (:Plinius {quote: "In vino veritas"}) |
+
+> +---------------------------------------+
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\qisource\tools\tests\client\output_tabular\unfinished_query.txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\package.json
+
+> TYPE: .json
+
+> ================================================================================
+
+> 
+
+> 
+
+> {
+
+>   "dependencies": {
+
+>     "vectra": "^0.11.1"
+
+>   }
+
+> }
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\package.json
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\qivectra_api.py
+
+> TYPE: .py
+
+> ================================================================================
+
+> 
+
+> 
+
+> from fastapi import FastAPI, Query
+
+> from fastapi.middleware.cors import CORSMiddleware
+
+> import asyncio, os, json
+
+> from typing import List
+
+> from dotenv import load_dotenv
+
+> 
+
+> load_dotenv()
+
+> DEFAULT_INDEXES = [
+
+>     os.getenv("QIVECTRA_INDEX", "./qivectra_index"),
+
+>     "./qivectra_index_law",
+
+>     "./qivectra_index_finance",
+
+> ]
+
+> 
+
+> # reuse your existing search and pretty utilities
+
+> # if you saved them in qivectra_query.py, import them:
+
+> from qivectra_query import search as search_single, pretty, search_all
+
+> 
+
+> app = FastAPI(title="QiVectra API", version="0.1.0")
+
+> 
+
+> app.add_middleware(
+
+>     CORSMiddleware,
+
+>     allow_origins=["*"],  # lock this down later if you want
+
+>     allow_credentials=True,
+
+>     allow_methods=["*"],
+
+>     allow_headers=["*"],
+
+> )
+
+> 
+
+> @app.get("/health")
+
+> def health():
+
+>     return {"ok": True}
+
+> 
+
+> @app.get("/search")
+
+> def do_search(
+
+>     q: str = Query(..., min_length=2),
+
+>     k: int = Query(6, ge=1, le=50),
+
+>     multi: int = Query(0),
+
+>     indexes: str = Query("")
+
+> ):
+
+>     """
+
+>     q: query text
+
+>     k: top_k
+
+>     multi: 1 to query multiple indexes
+
+>     indexes: comma-separated list of index folder paths
+
+>     """
+
+>     if not q.strip():
+
+>         return []
+
+> 
+
+>     async def run_single(idx_path: str):
+
+>         # temporarily override env for the single search to point at a specific index path
+
+>         os.environ["QIVECTRA_INDEX"] = idx_path
+
+>         return await search_single(q, metadata_filter=None, top_k=k)
+
+> 
+
+>     if multi:
+
+>         ix_list = [p for p in (indexes.split(",") if indexes else DEFAULT_INDEXES) if p.strip()]
+
+>         results = []
+
+>         for ix in ix_list:
+
+>             try:
+
+>                 part = asyncio.run(run_single(ix))
+
+>                 results.extend(part)
+
+>             except Exception as e:
+
+>                 # swallow bad index path, return what we can
+
+>                 continue
+
+>         # sort and compress to k
+
+>         results = sorted(results, key=lambda r: r["score"], reverse=True)[:k]
+
+>         return pretty(results)
+
+>     else:
+
+>         results = asyncio.run(search_all(q, top_k=k, index_path=indexes))
+
+>         return pretty(results)
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\qivectra_api.py
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\qivectra_indexer.py
+
+> TYPE: .py
+
+> ================================================================================
+
+> 
+
+> 
+
+> import os, sys, time, hashlib, asyncio, json
+
+> from pathlib import Path
+
+> from dotenv import load_dotenv
+
+> from watchdog.observers import Observer
+
+> from watchdog.events import FileSystemEventHandler
+
+> from tenacity import retry, wait_exponential, stop_after_attempt
+
+> 
+
+> # vectra via Node.js
+
+> import subprocess
+
+> 
+
+> # parsers
+
+> from bs4 import BeautifulSoup
+
+> from docx import Document
+
+> from pypdf import PdfReader
+
+> 
+
+> # embeddings
+
+> import tiktoken
+
+> from openai import OpenAI
+
+> 
+
+> load_dotenv()
+
+> OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+> EMBED_MODEL    = os.getenv("EMBED_MODEL", "text-embedding-3-small")
+
+> INDEX_PATH     = Path(os.getenv("QIVECTRA_INDEX", "./qivectra_index"))
+
+> WATCH_DIRS     = [Path(p) for p in os.getenv("WATCH_DIRS", "").split(";") if p.strip()]
+
+> FILE_GLOB      = os.getenv("FILE_GLOB", "**/*.{pdf,txt,md,docx,html,htm}")
+
+> CHUNK_TOKENS   = int(os.getenv("CHUNK_TOKENS", "700"))
+
+> CHUNK_OVERLAP  = int(os.getenv("CHUNK_OVERLAP", "100"))
+
+> 
+
+> client = OpenAI(api_key=OPENAI_API_KEY)
+
+> 
+
+> # Init Vectra local index
+
+> async def init_index():
+
+>     cmd = ["node", "vectra_search.js", "init", str(INDEX_PATH)]
+
+>     try:
+
+>         subprocess.run(cmd, check=True, capture_output=True, text=True)
+
+>     except subprocess.CalledProcessError as e:
+
+>         print(f"Failed to initialize index: {e}")
+
+>         print(f"Error output: {e.stderr}")
+
+>         raise
+
+> 
+
+> enc = tiktoken.get_encoding("cl100k_base")
+
+> 
+
+> def read_text(path: Path) -> str:
+
+>     suffix = path.suffix.lower()
+
+>     if suffix in (".txt", ".md"):
+
+>         return path.read_text(errors="ignore")
+
+>     if suffix == ".pdf":
+
+>         try:
+
+>             reader = PdfReader(str(path))
+
+>             return "\n".join(page.extract_text() or "" for page in reader.pages)
+
+>         except Exception as e:
+
+>             print(f"Failed to read PDF {path}: {e}")
+
+>             return ""
+
+>     if suffix == ".docx":
+
+>         doc = Document(str(path))
+
+>         return "\n".join(p.text for p in doc.paragraphs)
+
+>     if suffix in (".html", ".htm"):
+
+>         html = path.read_text(errors="ignore")
+
+>         soup = BeautifulSoup(html, "lxml")
+
+>         return soup.get_text(separator="\n")
+
+>     return ""  # skip unknowns quietly
+
+> 
+
+> def chunk_text(text: str, max_tokens=CHUNK_TOKENS, overlap=CHUNK_OVERLAP):
+
+>     toks = enc.encode(text)
+
+>     start = 0
+
+>     while start < len(toks):
+
+>         end = min(start + max_tokens, len(toks))
+
+>         yield enc.decode(toks[start:end])
+
+>         if end == len(toks): break
+
+>         start = end - overlap
+
+> 
+
+> def sha1(s: str) -> str:
+
+>     return hashlib.sha1(s.encode("utf-8")).hexdigest()
+
+> 
+
+> @retry(wait=wait_exponential(min=1, max=30), stop=stop_after_attempt(5))
+
+> def embed(texts):
+
+>     # batch embed; OpenAI SDK auto-chunks requests
+
+>     resp = client.embeddings.create(model=EMBED_MODEL, input=texts)
+
+>     return [d.embedding for d in resp.data]
+
+> 
+
+> async def upsert_file(path: Path):
+
+>     try:
+
+>         text = read_text(path)
+
+>         if not text.strip():
+
+>             return
+
+>         chunks = list(chunk_text(text))
+
+>         vectors = embed(chunks)
+
+>         # One metadata doc per chunk for better recall
+
+>         for i, (chunk, vector) in enumerate(zip(chunks, vectors)):
+
+>             metadata = {
+
+>                 "source_path": str(path),
+
+>                 "chunk_id": i,
+
+>                 "file_name": path.name,
+
+>                 "ext": path.suffix.lower(),
+
+>                 "size": path.stat().st_size,
+
+>                 "mtime": int(path.stat().st_mtime),
+
+>                 "doc_hash": sha1(str(path.resolve())),
+
+>                 "preview": chunk[:400],
+
+>             }
+
+>             # Vectra expects {"vector": [...], "metadata": {...}}
+
+>             item = {"vector": vector, "metadata": metadata}
+
+>             import tempfile
+
+>             with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+
+>                 json.dump(item, f)
+
+>                 temp_file = f.name
+
+> 
+
+>             try:
+
+>                 cmd = ["node", "vectra_search.js", "insert", str(INDEX_PATH), temp_file]
+
+>                 subprocess.run(cmd, check=True, capture_output=True, text=True)
+
+>             except subprocess.CalledProcessError as e:
+
+>                 print(f"Failed to insert item: {e}")
+
+>                 print(f"Error output: {e.stderr}")
+
+>                 raise
+
+>             finally:
+
+>                 import os
+
+>                 os.unlink(temp_file)
+
+>         print(f"Indexed: {path} ({len(chunks)} chunks)")
+
+>     except Exception as e:
+
+>         print(f"[WARN] failed {path}: {e}")
+
+> 
+
+> def prime_scan():
+
+>     files = []
+
+>     SKIP = {"$RECYCLE.BIN", "System Volume Information"}
+
+>     for root in WATCH_DIRS:
+
+>         for p in root.glob(FILE_GLOB):
+
+>             try:
+
+>                 # skip if any parent dir is in SKIP
+
+>                 if any(part in SKIP for part in Path(p).parts):
+
+>                     continue
+
+>                 if Path(p).is_file():
+
+>                     files.append(Path(p))
+
+>             except Exception:
+
+>                 continue
+
+>     return sorted(set(files))
+
+> 
+
+> class Handler(FileSystemEventHandler):
+
+>     def on_created(self, event):
+
+>         if not event.is_directory:
+
+>             p = Path(event.src_path)
+
+>             if p.match(FILE_GLOB.replace("**/", "")):
+
+>                 asyncio.run(upsert_file(p))
+
+>     def on_modified(self, event):
+
+>         if not event.is_directory:
+
+>             p = Path(event.src_path)
+
+>             if p.match(FILE_GLOB.replace("**/", "")):
+
+>                 asyncio.run(upsert_file(p))
+
+> 
+
+> async def main():
+
+>     # Initialize index
+
+>     await init_index()
+
+> 
+
+>     # Set default watch directory if none specified
+
+>     watch_dirs = WATCH_DIRS.copy()
+
+>     if not watch_dirs:
+
+>         watch_dirs.append(Path("."))
+
+>         print(f"No WATCH_DIRS specified, using current directory: {Path('.').resolve()}")
+
+> 
+
+>     # initial load
+
+>     files = []
+
+>     SKIP = {"$RECYCLE.BIN", "System Volume Information"}
+
+>     for root in watch_dirs:
+
+>         for p in root.glob(FILE_GLOB):
+
+>             try:
+
+>                 # skip if any parent dir is in SKIP
+
+>                 if any(part in SKIP for part in Path(p).parts):
+
+>                     continue
+
+>                 if Path(p).is_file():
+
+>                     files.append(Path(p))
+
+>             except Exception:
+
+>                 continue
+
+> 
+
+>     files = sorted(set(files))
+
+>     print(f"Found {len(files)} files to index")
+
+>     for p in files:
+
+>         await upsert_file(p)
+
+> 
+
+>     # watch
+
+>     observer = Observer()
+
+>     for d in watch_dirs:
+
+>         observer.schedule(Handler(), str(d), recursive=True)
+
+>     observer.start()
+
+>     print("Watching for changes... Ctrl+C to stop.")
+
+>     try:
+
+>         while True: time.sleep(1)
+
+>     except KeyboardInterrupt:
+
+>         observer.stop()
+
+>     observer.join()
+
+> 
+
+> if __name__ == "__main__":
+
+>     if not OPENAI_API_KEY:
+
+>         print("Set OPENAI_API_KEY in .env"); sys.exit(1)
+
+>     asyncio.run(main())
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\qivectra_indexer.py
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\qivectra_min_ui.html
+
+> TYPE: .html
+
+> ================================================================================
+
+> 
+
+> 
+
+> html
+
+> <!doctype html>
+
+> <html>
+
+> <head>
+
+> <meta charset="utf-8"/>
+
+> <title>QiVectra – Minimal</title>
+
+> <style>
+
+> body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:24px}
+
+> #hits{margin-top:16px;display:grid;gap:12px}
+
+> .card{border:1px solid #ddd;border-radius:12px;padding:12px}
+
+> .score{font-family:monospace;background:#f3f3f3;padding:2px 6px;border-radius:8px;margin-right:6px}
+
+> .path{color:#666;font-size:12px}
+
+> .btn{padding:10px 14px;border-radius:10px;border:1px solid #222;background:#fff;cursor:pointer}
+
+> .btn:active{transform:translateY(1px)}
+
+> input{height:40px;width:520px;padding:0 10px;border-radius:10px;border:1px solid #ccc}
+
+> .small{font-size:12px;color:#666}
+
+> </style>
+
+> </head>
+
+> <body>
+
+> <h1>QiVectra</h1>
+
+> <div>
+
+>   <input id="q" placeholder="Search your V: knowledge..." />
+
+>   <button class="btn" onclick="go()">Search</button>
+
+>   <button class="btn" onclick="copyCtx()">Copy context</button>
+
+> </div>
+
+> <p class="small">API: <code id="api">http://localhost:8765</code> • TopK: <input id="k" value="6" size="2"/></p>
+
+> <div id="hits"></div>
+
+> 
+
+> <script>
+
+> const apiBase = document.getElementById('api').textContent;
+
+> let last = [];
+
+> async function go(){
+
+>   const q = document.getElementById('q').value.trim();
+
+>   const k = document.getElementById('k').value;
+
+>   if(!q){alert('Type a query');return;}
+
+>   const url = `${apiBase}/search?q=${encodeURIComponent(q)}&k=${k}`;
+
+>   const res = await fetch(url);
+
+>   if(!res.ok){alert('API error '+res.status);return;}
+
+>   const data = await res.json();
+
+>   last = data;
+
+>   const hits = document.getElementById('hits'); hits.innerHTML='';
+
+>   if(!data.length){hits.innerHTML='<div class="card">No hits.</div>'; return;}
+
+>   data.forEach(h=>{
+
+>     const d = document.createElement('div'); d.className='card';
+
+>     d.innerHTML = `<div><span class="score">${h.score.toFixed(4)}</span><span class="path">${h.file} #${h.chunk}</span></div><div>${(h.preview||'').replace(/</g,'&lt;')}</div>`;
+
+>     hits.appendChild(d);
+
+>   });
+
+> }
+
+> async function copyCtx(){
+
+>   const txt = last.map(h=>`[${h.file}#${h.chunk}] ${h.preview}`).join('\\n\\n');
+
+>   if(!txt){alert('Search first.');return;}
+
+>   await navigator.clipboard.writeText(txt);
+
+>   alert('Copied.');
+
+> }
+
+> </script>
+
+> </body>
+
+> </html>
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\qivectra_min_ui.html
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\qivectra_query.py
+
+> TYPE: .py
+
+> ================================================================================
+
+> 
+
+> 
+
+> import os, asyncio
+
+> from pathlib import Path
+
+> from dotenv import load_dotenv
+
+> from openai import OpenAI
+
+> import subprocess
+
+> import json
+
+> 
+
+> load_dotenv()
+
+> client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+> INDEX_PATH = os.getenv("QIVECTRA_INDEX", "./qivectra_index")
+
+> EMBED_MODEL = os.getenv("EMBED_MODEL", "text-embedding-3-small")
+
+> TOP_K = int(os.getenv("TOP_K", "6"))
+
+> INDEXES = ["./qivectra_index_law", "./qivectra_index_finance"]
+
+> async def search_all(query):
+
+>     results = []
+
+>     for idx_path in INDEXES:
+
+>         res = await search(query, top_k=6, index_path=idx_path)
+
+>         results.extend(res)
+
+>     return sorted(results, key=lambda r: r["score"], reverse=True)[:6]
+
+> 
+
+> 
+
+> async def embed(query: str):
+
+>     resp = client.embeddings.create(model=EMBED_MODEL, input=query)
+
+>     return resp.data[0].embedding
+
+> 
+
+> async def search(query: str, metadata_filter=None, top_k=TOP_K, index_path=INDEX_PATH):
+
+>     qvec = await embed(query)
+
+>     # Use Node.js vectra via subprocess with temp files
+
+>     import tempfile
+
+>     import os
+
+> 
+
+>     # Create temp file for query
+
+>     with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+
+>         json.dump(qvec, f)
+
+>         query_file = f.name
+
+> 
+
+>     # Create temp file for filter if needed
+
+>     filter_file = None
+
+>     if metadata_filter:
+
+>         with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+
+>             json.dump(metadata_filter, f)
+
+>             filter_file = f.name
+
+> 
+
+>     try:
+
+>         cmd = ["node", "vectra_search.js", "search", str(index_path), query_file, str(top_k)]
+
+>         if filter_file:
+
+>             cmd.append(filter_file)
+
+> 
+
+>         result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+
+>         return json.loads(result.stdout)
+
+>     except subprocess.CalledProcessError as e:
+
+>         print(f"Search failed: {e}")
+
+>         print(f"Error output: {e.stderr}")
+
+>         return []
+
+>     except json.JSONDecodeError as e:
+
+>         print(f"Failed to parse search results: {e}")
+
+>         return []
+
+>     finally:
+
+>         os.unlink(query_file)
+
+>         if filter_file:
+
+>             os.unlink(filter_file)
+
+> 
+
+> def pretty(results):
+
+>     out = []
+
+>     for r in results:
+
+>         m = r["item"]["metadata"]
+
+>         out.append({
+
+>             "score": round(r["score"], 4),
+
+>             "file": m.get("source_path"),
+
+>             "chunk": m.get("chunk_id"),
+
+>             "preview": m.get("preview", "")[:240].replace("\n"," ")
+
+>         })
+
+>     return out
+
+> 
+
+> if __name__ == "__main__":
+
+>     import json, sys
+
+>     q = " ".join(sys.argv[1:]) or "contract termination clause late fees"
+
+>     res = asyncio.run(search(q, metadata_filter={"ext": {"$in": [".pdf", ".docx", ".txt"]}}))
+
+>     print(json.dumps(pretty(res), indent=2))
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\qivectra_query.py
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\test_document.txt
+
+> TYPE: .txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> This is a test document for the QIVectra indexer.
+
+> 
+
+> It contains information about:
+
+> - Contract termination clauses
+
+> - Late fees and penalties
+
+> - Legal requirements for document processing
+
+> - Vector database indexing
+
+> 
+
+> This document should be indexed and searchable through the vectra system.
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\test_document.txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> FILE: V:\vectordb\vectra_search.js
+
+> TYPE: .js
+
+> ================================================================================
+
+> 
+
+> 
+
+> const { LocalIndex } = require('vectra');
+
+> const fs = require('fs');
+
+> 
+
+> async function search(indexPath, queryFile, topK, filterFile) {
+
+>     try {
+
+>         const query = JSON.parse(fs.readFileSync(queryFile, 'utf8'));
+
+>         const filter = filterFile ? JSON.parse(fs.readFileSync(filterFile, 'utf8')) : {};
+
+>         const index = new LocalIndex(indexPath);
+
+>         const results = await index.queryItems(query, topK, filter);
+
+>         console.log(JSON.stringify(results));
+
+>     } catch (error) {
+
+>         console.error(JSON.stringify({error: error.message}));
+
+>         process.exit(1);
+
+>     }
+
+> }
+
+> 
+
+> async function insert(indexPath, itemFile) {
+
+>     try {
+
+>         const item = JSON.parse(fs.readFileSync(itemFile, 'utf8'));
+
+>         const index = new LocalIndex(indexPath);
+
+>         await index.insertItem(item);
+
+>         console.log("Item inserted successfully");
+
+>     } catch (error) {
+
+>         console.error(JSON.stringify({error: error.message}));
+
+>         process.exit(1);
+
+>     }
+
+> }
+
+> 
+
+> async function init(indexPath) {
+
+>     try {
+
+>         const index = new LocalIndex(indexPath);
+
+>         if (!index.isIndexCreated()) {
+
+>             index.createIndex();
+
+>         }
+
+>         console.log("Index initialized successfully");
+
+>     } catch (error) {
+
+>         console.error(JSON.stringify({error: error.message}));
+
+>         process.exit(1);
+
+>     }
+
+> }
+
+> 
+
+> const command = process.argv[2];
+
+> const indexPath = process.argv[3];
+
+> 
+
+> if (command === 'search') {
+
+>     const queryFile = process.argv[4];
+
+>     const topK = parseInt(process.argv[5]);
+
+>     const filterFile = process.argv[6];
+
+>     search(indexPath, queryFile, topK, filterFile);
+
+> } else if (command === 'insert') {
+
+>     const itemFile = process.argv[4];
+
+>     insert(indexPath, itemFile);
+
+> } else if (command === 'init') {
+
+>     init(indexPath);
+
+> } else {
+
+>     console.error("Unknown command. Use: search, insert, or init");
+
+>     process.exit(1);
+
+> }
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> END OF FILE: V:\vectordb\vectra_search.js
+
+> ================================================================================
+
+> 
+
+> 
+
+> 
+
+> ================================================================================
+
+> EXTRACTION COMPLETE
+
+> Total files processed: 2083
+
+> Output saved to: V:\code_extraction_2025-09-10_10-23-48.txt
+
+> ================================================================================
+
+> 
+
+> 
+
+> Code extraction completed successfully!
+
+> Output saved to: V:\code_extraction_2025-09-10_10-23-48.txt
+
+> (.venv) PS V:\> cd V:\qi-search
+
+> (.venv) PS V:\qi-search> .\.venv\Scripts\Activate.ps1
+
+> (.venv) PS V:\qi-search> pip install --upgrade pip
+
+> Requirement already satisfied: pip in v:\qi-search\.venv\lib\site-packages (25.2)
+
+> (.venv) PS V:\qi-search> pip install chromadb sentence-transformers fastapi uvicorn pydantic[dotenv] python-magic-bin pypdf
+
+>  markdown chardet pyyaml
+
+> Requirement already satisfied: chromadb in v:\qi-search\.venv\lib\site-packages (1.0.20)
+
+> Requirement already satisfied: sentence-transformers in v:\qi-search\.venv\lib\site-packages (5.1.0)
+
+> Requirement already satisfied: fastapi in v:\qi-search\.venv\lib\site-packages (0.116.1)
+
+> Requirement already satisfied: uvicorn in v:\qi-search\.venv\lib\site-packages (0.35.0)
+
+> Requirement already satisfied: python-magic-bin in v:\qi-search\.venv\lib\site-packages (0.4.14)
+
+> Requirement already satisfied: pypdf in v:\qi-search\.venv\lib\site-packages (6.0.0)
+
+> Requirement already satisfied: markdown in v:\qi-search\.venv\lib\site-packages (3.9)
+
+> Requirement already satisfied: chardet in v:\qi-search\.venv\lib\site-packages (5.2.0)
+
+> Requirement already satisfied: pyyaml in v:\qi-search\.venv\lib\site-packages (6.0.2)
+
+> Requirement already satisfied: pydantic[dotenv] in v:\qi-search\.venv\lib\site-packages (2.11.7)
+
+> Requirement already satisfied: build>=1.0.3 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.3.0)
+
+> Requirement already satisfied: pybase64>=1.4.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.4.2)
+
+> Requirement already satisfied: numpy>=1.22.5 in v:\qi-search\.venv\lib\site-packages (from chromadb) (2.3.3)
+
+> Requirement already satisfied: posthog<6.0.0,>=2.4.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (5.4.0)
+
+> Requirement already satisfied: typing-extensions>=4.5.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.15.0)   
+
+> Requirement already satisfied: onnxruntime>=1.14.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.22.1)        
+
+> Requirement already satisfied: opentelemetry-api>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)
+
+> Requirement already satisfied: opentelemetry-exporter-otlp-proto-grpc>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)
+
+> Requirement already satisfied: opentelemetry-sdk>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.36.0)   
+
+> Requirement already satisfied: tokenizers>=0.13.2 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.22.0)
+
+> Requirement already satisfied: pypika>=0.48.9 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.48.9)
+
+> Requirement already satisfied: tqdm>=4.65.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.67.1)
+
+> Requirement already satisfied: overrides>=7.3.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (7.7.0)
+
+> Requirement already satisfied: importlib-resources in v:\qi-search\.venv\lib\site-packages (from chromadb) (6.5.2)
+
+> Requirement already satisfied: grpcio>=1.58.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (1.74.0)
+
+> Requirement already satisfied: bcrypt>=4.0.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.3.0)
+
+> Requirement already satisfied: typer>=0.9.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.17.4)
+
+> Requirement already satisfied: kubernetes>=28.1.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (33.1.0)
+
+> Requirement already satisfied: tenacity>=8.2.3 in v:\qi-search\.venv\lib\site-packages (from chromadb) (9.1.2)
+
+> Requirement already satisfied: mmh3>=4.0.1 in v:\qi-search\.venv\lib\site-packages (from chromadb) (5.2.0)
+
+> Requirement already satisfied: orjson>=3.9.12 in v:\qi-search\.venv\lib\site-packages (from chromadb) (3.11.3)
+
+> Requirement already satisfied: httpx>=0.27.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (0.28.1)
+
+> Requirement already satisfied: rich>=10.11.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (14.1.0)
+
+> Requirement already satisfied: jsonschema>=4.19.0 in v:\qi-search\.venv\lib\site-packages (from chromadb) (4.25.1)
+
+> Requirement already satisfied: requests<3.0,>=2.7 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.32.5)
+
+> Requirement already satisfied: six>=1.5 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (1.17.0)
+
+> Requirement already satisfied: python-dateutil>=2.2 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.9.0.post0)
+
+> Requirement already satisfied: backoff>=1.10.0 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (2.2.1)
+
+> Requirement already satisfied: distro>=1.5.0 in v:\qi-search\.venv\lib\site-packages (from posthog<6.0.0,>=2.4.0->chromadb) (1.9.0)
+
+> Requirement already satisfied: charset_normalizer<4,>=2 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (3.4.3)
+
+> Requirement already satisfied: idna<4,>=2.5 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (3.10)
+
+> Requirement already satisfied: urllib3<3,>=1.21.1 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (2.5.0)
+
+> Requirement already satisfied: certifi>=2017.4.17 in v:\qi-search\.venv\lib\site-packages (from requests<3.0,>=2.7->posthog<6.0.0,>=2.4.0->chromadb) (2025.8.3)
+
+> Requirement already satisfied: transformers<5.0.0,>=4.41.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (4.56.1)
+
+> Requirement already satisfied: torch>=1.11.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (2.8.0)
+
+> Requirement already satisfied: scikit-learn in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (1.7.2)
+
+> Requirement already satisfied: scipy in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (1.16.1)
+
+> Requirement already satisfied: huggingface-hub>=0.20.0 in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (0.34.4)
+
+> Requirement already satisfied: Pillow in v:\qi-search\.venv\lib\site-packages (from sentence-transformers) (11.3.0)        
+
+> Requirement already satisfied: filelock in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (3.19.1)
+
+> Requirement already satisfied: packaging>=20.0 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (25.0)
+
+> Requirement already satisfied: regex!=2019.12.17 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (2025.9.1)
+
+> Requirement already satisfied: safetensors>=0.4.3 in v:\qi-search\.venv\lib\site-packages (from transformers<5.0.0,>=4.41.0->sentence-transformers) (0.6.2)
+
+> Requirement already satisfied: fsspec>=2023.5.0 in v:\qi-search\.venv\lib\site-packages (from huggingface-hub>=0.20.0->sentence-transformers) (2025.9.0)
+
+> Requirement already satisfied: starlette<0.48.0,>=0.40.0 in v:\qi-search\.venv\lib\site-packages (from fastapi) (0.47.3)
+
+> Requirement already satisfied: annotated-types>=0.6.0 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (0.7.0)
+
+> Requirement already satisfied: pydantic-core==2.33.2 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (2.33.2)
+
+> Requirement already satisfied: typing-inspection>=0.4.0 in v:\qi-search\.venv\lib\site-packages (from pydantic[dotenv]) (0.4.1)
+
+> Requirement already satisfied: anyio<5,>=3.6.2 in v:\qi-search\.venv\lib\site-packages (from starlette<0.48.0,>=0.40.0->fastapi) (4.10.0)
+
+> Requirement already satisfied: sniffio>=1.1 in v:\qi-search\.venv\lib\site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi) (1.3.1)
+
+> Requirement already satisfied: click>=7.0 in v:\qi-search\.venv\lib\site-packages (from uvicorn) (8.2.1)
+
+> Requirement already satisfied: h11>=0.8 in v:\qi-search\.venv\lib\site-packages (from uvicorn) (0.16.0)
+
+> WARNING: pydantic 2.11.7 does not provide the extra 'dotenv'
+
+> Requirement already satisfied: pyproject_hooks in v:\qi-search\.venv\lib\site-packages (from build>=1.0.3->chromadb) (1.2.0)
+
+> Requirement already satisfied: colorama in v:\qi-search\.venv\lib\site-packages (from build>=1.0.3->chromadb) (0.4.6)
+
+> Requirement already satisfied: httpcore==1.* in v:\qi-search\.venv\lib\site-packages (from httpx>=0.27.0->chromadb) (1.0.9)
+
+> Requirement already satisfied: attrs>=22.2.0 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (25.3.0)
+
+> Requirement already satisfied: jsonschema-specifications>=2023.03.6 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (2025.9.1)
+
+> Requirement already satisfied: referencing>=0.28.4 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (0.36.2)
+
+> Requirement already satisfied: rpds-py>=0.7.1 in v:\qi-search\.venv\lib\site-packages (from jsonschema>=4.19.0->chromadb) (0.27.1)
+
+> Requirement already satisfied: google-auth>=1.0.1 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (2.40.3)
+
+> Requirement already satisfied: websocket-client!=0.40.0,!=0.41.*,!=0.42.*,>=0.32.0 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (1.8.0)
+
+> Requirement already satisfied: requests-oauthlib in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (2.0.0)
+
+> Requirement already satisfied: oauthlib>=3.2.2 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (3.3.1)
+
+> Requirement already satisfied: durationpy>=0.7 in v:\qi-search\.venv\lib\site-packages (from kubernetes>=28.1.0->chromadb) (0.10)
+
+> Requirement already satisfied: cachetools<6.0,>=2.0.0 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (5.5.2)
+
+> Requirement already satisfied: pyasn1-modules>=0.2.1 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (0.4.2)
+
+> Requirement already satisfied: rsa<5,>=3.1.4 in v:\qi-search\.venv\lib\site-packages (from google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (4.9.1)
+
+> Requirement already satisfied: pyasn1>=0.1.3 in v:\qi-search\.venv\lib\site-packages (from rsa<5,>=3.1.4->google-auth>=1.0.1->kubernetes>=28.1.0->chromadb) (0.6.1)
+
+> Requirement already satisfied: coloredlogs in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (15.0.1)
+
+> Requirement already satisfied: flatbuffers in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (25.2.10)
+
+> Requirement already satisfied: protobuf in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (6.32.0)
+
+> Requirement already satisfied: sympy in v:\qi-search\.venv\lib\site-packages (from onnxruntime>=1.14.1->chromadb) (1.14.0)
+
+> Requirement already satisfied: importlib-metadata<8.8.0,>=6.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-api>=1.2.0->chromadb) (8.7.0)
+
+> Requirement already satisfied: zipp>=3.20 in v:\qi-search\.venv\lib\site-packages (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api>=1.2.0->chromadb) (3.23.0)
+
+> Requirement already satisfied: googleapis-common-protos~=1.57 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.70.0)
+
+> Requirement already satisfied: opentelemetry-exporter-otlp-proto-common==1.36.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.36.0)
+
+> Requirement already satisfied: opentelemetry-proto==1.36.0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-exporter-otlp-proto-grpc>=1.2.0->chromadb) (1.36.0)
+
+> Requirement already satisfied: opentelemetry-semantic-conventions==0.57b0 in v:\qi-search\.venv\lib\site-packages (from opentelemetry-sdk>=1.2.0->chromadb) (0.57b0)
+
+> Requirement already satisfied: markdown-it-py>=2.2.0 in v:\qi-search\.venv\lib\site-packages (from rich>=10.11.0->chromadb) (4.0.0)
+
+> Requirement already satisfied: pygments<3.0.0,>=2.13.0 in v:\qi-search\.venv\lib\site-packages (from rich>=10.11.0->chromadb) (2.19.2)
+
+> Requirement already satisfied: mdurl~=0.1 in v:\qi-search\.venv\lib\site-packages (from markdown-it-py>=2.2.0->rich>=10.11.0->chromadb) (0.1.2)
+
+> Requirement already satisfied: networkx in v:\qi-search\.venv\lib\site-packages (from torch>=1.11.0->sentence-transformers) (3.5)
+
+> Requirement already satisfied: jinja2 in v:\qi-search\.venv\lib\site-packages (from torch>=1.11.0->sentence-transformers) (3.1.6)
+
+> Requirement already satisfied: mpmath<1.4,>=1.1.0 in v:\qi-search\.venv\lib\site-packages (from sympy->onnxruntime>=1.14.1->chromadb) (1.3.0)
+
+> Requirement already satisfied: shellingham>=1.3.0 in v:\qi-search\.venv\lib\site-packages (from typer>=0.9.0->chromadb) (1.5.4)
+
+> Requirement already satisfied: httptools>=0.6.3 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (0.6.4)
+
+> Requirement already satisfied: python-dotenv>=0.13 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (1.1.1)
+
+> Requirement already satisfied: watchfiles>=0.13 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (1.1.0)
+
+> Requirement already satisfied: websockets>=10.4 in v:\qi-search\.venv\lib\site-packages (from uvicorn[standard]>=0.18.3->chromadb) (15.0.1)
+
+> Requirement already satisfied: humanfriendly>=9.1 in v:\qi-search\.venv\lib\site-packages (from coloredlogs->onnxruntime>=1.14.1->chromadb) (10.0)
+
+> Requirement already satisfied: pyreadline3 in v:\qi-search\.venv\lib\site-packages (from humanfriendly>=9.1->coloredlogs->onnxruntime>=1.14.1->chromadb) (3.5.4)
+
+> Requirement already satisfied: MarkupSafe>=2.0 in v:\qi-search\.venv\lib\site-packages (from jinja2->torch>=1.11.0->sentence-transformers) (3.0.2)
+
+> Requirement already satisfied: joblib>=1.2.0 in v:\qi-search\.venv\lib\site-packages (from scikit-learn->sentence-transformers) (1.5.2)
+
+> Requirement already satisfied: threadpoolctl>=3.1.0 in v:\qi-search\.venv\lib\site-packages (from scikit-learn->sentence-transformers) (3.6.0)
+
+> (.venv) PS V:\qi-search> mkdir -p V:\qisource\notes
+
+> mkdir : An item with the specified name V:\qisource\notes already exists.
+
+> At line:1 char:1
+
+> + mkdir -p V:\qisource\notes
+
+> + ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>     + CategoryInfo          : ResourceExists: (V:\qisource\notes:String) [New-Item], IOException
+
+>     + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+> 
+
+> (.venv) PS V:\qi-search> python .\indexer.py
+
+> [i] Source: V:\qisource
+
+> Traceback (most recent call last):
+
+>   File "V:\qi-search\indexer.py", line 143, in <module>
+
+>     col.add(
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 80, in add
+
+>     add_request = self._validate_and_prepare_add_request(
+
+>                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 95, in wrapper
+
+>     return func(self, *args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 219, in _validate_and_prepare_add_request
+
+>     validate_insert_record_set(record_set=add_records)
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 314, in validate_insert_record_set
+
+>     validate_metadatas(record_set["metadatas"])
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 791, in validate_metadatas
+
+>     validate_metadata(metadata)
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 757, in validate_metadata
+
+>     raise ValueError(
+
+> ValueError: Expected metadata value to be a str, int, float, bool, or None, got [] which is a list in add.
+
+> (.venv) PS V:\qi-search> python .\indexer.py
+
+> [i] Source: V:\qisource
+
+> C:\Users\codyr\.cache\chroma\onnx_models\all-MiniLM-L6-v2\onnx.tar.gz: 100%|████████| 79.3M/79.3M [00:15<00:00, 5.33MiB/s]
+
+> Traceback (most recent call last):
+
+>   File "V:\qi-search\indexer.py", line 143, in <module>
+
+>     col.add(
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\Collection.py", line 80, in add
+
+>     add_request = self._validate_and_prepare_add_request(
+
+>                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 95, in wrapper
+
+>     return func(self, *args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 225, in _validate_and_prepare_add_request
+
+>     add_embeddings = self._embed_record_set(record_set=add_records)
+
+>                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 551, in _embed_record_set      
+
+>     return self._embed(input=record_set[field])  # type: ignore[literal-required]
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\models\CollectionCommon.py", line 565, in _embed
+
+>     return config_ef(input=input)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 554, in __call__
+
+>     result = call(self, input)
+
+>              ^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\__init__.py", line 116, in __call__        
+
+>     return ONNXMiniLM_L6_V2()(input)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\api\types.py", line 554, in __call__
+
+>     result = call(self, input)
+
+>              ^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\onnx_mini_lm_l6_v2.py", line 273, in __call__
+
+>     embeddings = self._forward(input)
+
+>                  ^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\chromadb\utils\embedding_functions\onnx_mini_lm_l6_v2.py", line 182, in _forward
+
+>     model_output = self.model.run(None, onnx_input)
+
+>                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\onnxruntime\capi\onnxruntime_inference_collection.py", line 273, in run       
+
+>     return self._sess.run(output_names, input_feed, run_options)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+> KeyboardInterrupt
+
+> (.venv) PS V:\qi-search> python indexer.py
+
+> [i] Source: V:\qisource
+
+> Traceback (most recent call last):
+
+>   File "V:\qi-search\indexer.py", line 87, in <module>
+
+>     model = SentenceTransformer(EMBED_MODEL)
+
+>             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 318, in __init__
+
+>     and self._get_model_type(
+
+>         ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 2448, in _get_model_type  
+
+>     config_sentence_transformers_json_path = load_file_path(
+
+>                                              ^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\sentence_transformers\util\file_io.py", line 96, in load_file_path
+
+>     return hf_hub_download(
+
+>            ^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+
+>     return fn(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1010, in hf_hub_download
+
+>     return _hf_hub_download_to_cache_dir(
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1073, in _hf_hub_download_to_cache_dir
+
+>     (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(    
+
+>                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1546, in _get_metadata_or_catch_error 
+
+>     metadata = get_hf_file_metadata(
+
+>                ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+
+>     return fn(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1463, in get_hf_file_metadata
+
+>     r = _request_wrapper(
+
+>         ^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 305, in _request_wrapper
+
+>     return _request_wrapper(method=method, url=next_url, follow_relative_redirects=True, **params)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 286, in _request_wrapper
+
+>     response = _request_wrapper(
+
+>                ^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 309, in _request_wrapper
+
+>     response = http_backoff(method=method, url=url, **params, retry_on_exceptions=(), retry_on_status_codes=(429,))        
+
+>                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 310, in http_backoff
+
+>     response = session.request(method=method, url=url, **kwargs)
+
+>                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+
+>     resp = self.send(prep, **send_kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+
+>     r = adapter.send(request, **kwargs)
+
+>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
+
+>     return super().send(request, *args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+
+>     resp = conn.urlopen(
+
+>            ^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+
+>     response = self._make_request(
+
+>                ^^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+
+>     response = conn.getresponse()
+
+>                ^^^^^^^^^^^^^^^^^^
+
+>   File "V:\qi-search\.venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+
+>     httplib_response = super().getresponse()
+
+>                        ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1395, in getresponse
+
+>     response.begin()
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
+
+>     version, status, reason = self._read_status()
+
+>                               ^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
+
+>     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+
+>                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+
+>     return self._sock.recv_into(b)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1314, in recv_into
+
+>     return self.read(nbytes, buffer)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1166, in read
+
+>     return self._sslobj.read(len, buffer)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 > KeyboardInterrupt
 
 ### Assistant

@@ -1,3 +1,26 @@
+---
+layout: page
+title: 04 Application Tracker
+slug: 04-application-tracker
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: cb45451061d643eeb2edc97a96066269
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # Zaitullah — Application and interview tracker
 
 Statuses: `Ready`, `Applied`, `Phone Screen`, `Interview`, `Background Check`, `Offer`, `Rejected`, `Closed`.

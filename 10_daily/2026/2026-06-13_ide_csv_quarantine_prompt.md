@@ -3,9 +3,9 @@ layout: page
 title: "IDE CSV Quarantine Prompt"
 slug: "ide_csv_quarantine_prompt"
 created_at: "2026-06-13 10:33:22"
-updated_at: "2026-06-13 10:33:22"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -371,2143 +371,4280 @@ canonical_ref: ""
 > Preserve first. Classify second. Modify third. Delete never.
 
 ### User
-> also i feel like this file tree needs to be flattened and merged, can you help me do that. {
->   "name": "_QiOS_DNA",
->   "path": "c:\\QiLabs\\_QiOS_DNA",
->   "type": "directory",
->   "children": [
->     {
->       "name": "00_QiEOS",
->       "type": "folder",
->       "children": [
->         {
->           "name": "10_governance",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_principles",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_rules",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_standards",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "content_metadata_profile.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "metadata_rules.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "naming_rules.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "pdf_standards.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "repo_rules.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_policies",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "agents",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "agent_governance_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "architecture",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "active_runtime_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "placement_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "registry_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "root_navigation_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "development",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "bootstrap_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "contribution_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "merge_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "operations",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "legacy_quarantine_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "lifecycle_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qinexus_freeze_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "security",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "security_data_access_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_decisions",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ADR-0000_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0001_QiOS_DNA_As_Master_Doctrine_Repo.mdx",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0001_blueprint_scope.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0002_single_domain_rule.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0003_band_model.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0004_single_account_modular_mode.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0005_fleet_orchestration.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0008_qilabs_root.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0010_qios_namespace_as_routing_metadata_layer.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_registry",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "namespace_registry",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-18_qios_namespace_registry_merged_v2.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "schemas",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "band_registry.schema.json",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "100_metadata.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10_infrastructure_layout.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "110_front_matter.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "120_storage.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "130_placement_rules.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "140_exports.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "150_qievidence.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "160_vectorization_pipeline.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20_bands.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "30_domains.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "40_subdomains.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "60_directory_tree.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "70_object_model.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "80_objects.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "90_schema.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "band_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "band_registry_v2.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "deprecation_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "domain_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "folder_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "infrastructure_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "realms_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "sensitivity_classification.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "subdomain_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "workspace_realms.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "20_structure",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_identity.md",
->               "type": "file"
->             },
->             {
->               "name": "20_system_model.md",
->               "type": "file"
->             },
->             {
->               "name": "30_component_map.md",
->               "type": "file"
->             },
->             {
->               "name": "40_service_boundaries.md",
->               "type": "file"
->             },
->             {
->               "name": "50_data_flow.md",
->               "type": "file"
->             },
->             {
->               "name": "60_device_model.md",
->               "type": "file"
->             },
->             {
->               "name": "70_runtime_zones.md",
->               "type": "file"
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "30_service_map",
->           "type": "folder",
->           "children": [
->             {
->               "name": "100_integrations",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "external_integrations.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10_infrastructure",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "cockpit",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "cockpit_command_menu.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "cloudflare.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "docker_compose.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "gethomepage.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portainer.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tailscale.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "uptime_kuma.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "110_qiserver",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Service_Map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "runtime.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "runtime_profile.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "120_applications",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "CareLite",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "qinote",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "qinote_salvage_extract.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "admin.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "carelite.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "firefly.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portal.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "roadmap.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "130_GINA",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_ai_compute",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "aider.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "neo4j.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ollama.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "open_webui.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qdrant.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_capture",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "paperless",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "nocodb.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "obsidian_qidocs.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "wikijs.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_productivity",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "activitywatch.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "n8n.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiledger.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "solidtime.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_apis",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portal_api.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_workers",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "system_workers.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "70_pipelines",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_pipelines.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "80_tools",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "operator_tools.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "90_interfaces",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "public_interfaces.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "40_operations",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_cases",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_qiserver",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "QiAccess_Server_Runbook.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_dev_history",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-16_dev_session_directory_markmind_mapper.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-17_open_loop_reset_paperless_ingestion_runbook.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_dev_testing",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "momscare",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-17_momcare_app_qa_checklist.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "qiaccessstart",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-17_qiaccess_start_qa_checklist.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "Access_And_Exposure_Rules.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "50_knowledge",
->           "type": "folder",
->           "children": [
->             {
->               "name": "90_superseded_sources",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2025-11-18_qicodex_protocol_batch_overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "QiAccess_Start_Blueprint.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "README.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qi_os_home_blueprint.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tech_stack_markmind.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_glossary.md",
->               "type": "file"
->             },
->             {
->               "name": "30_migration_notes.md",
->               "type": "file"
->             },
->             {
->               "name": "40_legacy_csv_migration_plan.md",
->               "type": "file"
->             },
->             {
->               "name": "50_legacy_salvage.md",
->               "type": "file"
->             },
->             {
->               "name": "60_qiaccess_start_legacy_quarantine.md",
->               "type": "file"
->             },
->             {
->               "name": "70_repo_sync_status_20260516.md",
->               "type": "file"
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "60_assets",
->           "type": "folder",
->           "children": [
->             {
->               "name": "diagrams",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-17_supabase_markmind.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "blueprint_map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "diagrams.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markmind-data.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markmind.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "images",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_QiOS_Master_Document.jpg",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "templates",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-16_dev_session_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "README.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "adr_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "appendix_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "artifact_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "note_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "operational_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "page_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "registry_reference_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "section_index_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "standard_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "templates.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "assets.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "90_receipts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_logs",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_audits",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_backups",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_health_checks",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_generated_reports",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "current_project_state.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.csv",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_generated_indexes",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "70_maintenance",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_audit",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-24_qiaccess_homepage_conversion_report.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-24_qiaccess_homepage_local_validation_report.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-24_qilinks_admin_and_visual_map_plan.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiaccess_map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiaccess_map.mmd",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10_changelog.md",
->               "type": "file"
->             },
->             {
->               "name": "Current_Project_State.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "doctrine",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_Core_Doctrine.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "exports",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_DNA_Chronicle.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "reconciliation",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026-06-09_codex_reconciliation_brief.md",
->               "type": "file"
->             },
->             {
->               "name": "2026-06-09_initial_reconciliation.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "system_map",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_Master_Map.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "QiAccess_Start_Blueprint.md",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "_QiEOS.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "file-index.json",
->           "type": "file"
->         },
->         {
->           "name": "rebuild.bat",
->           "type": "file"
->         },
->         {
->           "name": "vizvibe.mmd",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "10_QiAccess",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_10_QiAccess.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "20_QiSystem",
->       "type": "folder",
->       "children": [
->         {
->           "name": "50_Generated_Reports",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026-06-08_qilife_governance_audit.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "50_modules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "calendar",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "capture",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "documents",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "inbox",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "ingestion",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "knowledge",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "money",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "people",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "qibits",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "review",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "spaces",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "storage",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "threads",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "timeline",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "60_ai_layer",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_ai_layer_blueprint.md",
->               "type": "file"
->             },
->             {
->               "name": "01_ai_service_contracts.md",
->               "type": "file"
->             },
->             {
->               "name": "02_ai_review_workflow.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "70_deployment",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_local_dev.md",
->               "type": "file"
->             },
->             {
->               "name": "01_future_docker.md",
->               "type": "file"
->             },
->             {
->               "name": "02_future_qiserver.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "80_prompts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_codex_build_prompt_v1.md",
->               "type": "file"
->             },
->             {
->               "name": "01_codex_review_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "02_will_be_done_research_prompt.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "manifests",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_DNA_File_Manifest.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "rules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Source_of_Truth_Rules.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "schemas",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiLife_Data_Spine.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_20_QiSystem.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "30_QiServer",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_30_QiServer.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         },
->         {
->           "name": "qiserver_runbook.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "40_QiCapture",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_40_QiCapture.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "50_QiNexus",
->       "type": "folder",
->       "children": [
->         {
->           "name": "My_Drive_Model",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_50_QiNexus.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_QiApp_QiLife",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_60_QiApp_QiLife.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_QiApps",
->       "type": "folder",
->       "children": [
->         {
->           "name": "QiJourney",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "QiLife",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "qiaccess_start",
->           "type": "folder",
->           "children": [
->             {
->               "name": "overview.md",
->               "type": "file"
->             },
->             {
->               "name": "wiki_publish_plan.md",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "70_QiConnect",
->       "type": "folder",
->       "children": [
->         {
->           "name": "06_workflows",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Automation_Backlog.md",
->               "type": "file"
->             },
->             {
->               "name": "Core_Workflows.md",
->               "type": "file"
->             },
->             {
->               "name": "QiIngest_Pipeline.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_70_QiConnect.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "PART XI - Manual to Me",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
->           "type": "folder",
->           "children": [
->             {
->               "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
->           "type": "file"
->         },
->         {
->           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
->           "type": "file"
->         },
->         {
->           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
->           "type": "file"
->         },
->         {
->           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
->           "type": "file"
->         },
->         {
->           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
->           "type": "file"
->         },
->         {
->           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
->           "type": "file"
->         },
->         {
->           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
->           "type": "file"
->         },
->         {
->           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
->           "type": "file"
->         },
->         {
->           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
->           "type": "file"
->         },
->         {
->           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
->           "type": "file"
->         },
->         {
->           "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
->           "type": "file"
->         },
->         {
->           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
->           "type": "file"
->         },
->         {
->           "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
->           "type": "file"
->         },
->         {
->           "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
->           "type": "file"
->         },
->         {
->           "name": "Compass-Icon.png",
->           "type": "file"
->         },
->         {
->           "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
->           "type": "file"
->         },
->         {
->           "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "Reconciliation",
->       "type": "folder",
->       "children": [
->         {
->           "name": "2026-06-10_blueprint_readiness_and_decision_gate.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_database_blueprint_gap_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_documentation_status_map.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_non_destructive_reconciliation_plan.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_qidna_implementation_reconciliation.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_qilife_schema_source_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_site_coverage_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_ui_blueprint_gap_report.md",
->           "type": "file"
->         },
->         {
->           "name": "_Reconciliation.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "Schema",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_Schema.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "decisions",
->       "type": "folder",
->       "children": [
->         {
->           "name": "0001_personal_lifedesk_model.md",
->           "type": "file"
->         },
->         {
->           "name": "0002_qibit_as_atomic_unit.md",
->           "type": "file"
->         },
->         {
->           "name": "0003_timeline_as_spine.md",
->           "type": "file"
->         },
->         {
->           "name": "0004_context_dock_over_wiki.md",
->           "type": "file"
->         },
->         {
->           "name": "0005_repo_docs_indexed_in_app.md",
->           "type": "file"
->         },
->         {
->           "name": "0006_clean_core_with_legacy_bridge.md",
->           "type": "file"
->         },
->         {
->           "name": "0007_app_managed_storage_and_sync.md",
->           "type": "file"
->         },
->         {
->           "name": "0008_managed_document_vault_dup_allergic.md",
->           "type": "file"
->         },
->         {
->           "name": "0009_agent_first_copilot_cockpit.md",
->           "type": "file"
->         },
->         {
->           "name": "0010_spaces_for_scoped_shared_access.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0011_homepage_powered_qiaccess.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0012_data_strategy.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0013_folder_documentation_model.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0014_topology_constraints.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0015_build_strategy.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0016_ai_auditor_role.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0017_canonical_vocabulary_and_v1_direction.md",
->           "type": "file"
->         },
->         {
->           "name": "_Decisions.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "site",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_site.md",
->           "type": "file"
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         },
->         {
->           "name": "script.js",
->           "type": "file"
->         },
->         {
->           "name": "style.css",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": ".gitignore",
->       "type": "file"
->     },
->     {
->       "name": "CNAME",
->       "type": "file"
->     },
->     {
->       "name": "Current_Project_State.md",
->       "type": "file"
->     },
->     {
->       "name": "Folder_Canvas.canvas",
->       "type": "file"
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "_01_QiDNA.md",
->       "type": "file"
->     },
->     {
->       "name": "_Architecture.md",
->       "type": "file"
->     },
->     {
->       "name": "build.js",
->       "type": "file"
->     },
->     {
->       "name": "code_extractor.py",
->       "type": "file"
->     },
->     {
->       "name": "codex.md",
->       "type": "file"
->     },
->     {
->       "name": "docs.json",
->       "type": "file"
->     },
->     {
->       "name": "fix_folder_names.sh",
->       "type": "file"
->     },
->     {
->       "name": "index.md",
->       "type": "file"
->     },
->     {
->       "name": "package-lock.json",
->       "type": "file"
->     },
->     {
->       "name": "package.json",
->       "type": "file"
->     },
->     {
->       "name": "qilinks_bookmark_admin_plan.md",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-13T15:43:35.846Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> also i feel like this file tree needs to be flattened and merged, can you help me do that. {
+
+>   "name": "_QiOS_DNA",
+
+>   "path": "c:\\QiLabs\\_QiOS_DNA",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "00_QiEOS",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "10_governance",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_principles",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_rules",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_standards",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "content_metadata_profile.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "metadata_rules.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "naming_rules.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "pdf_standards.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "repo_rules.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_policies",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "agents",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "agent_governance_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "architecture",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "active_runtime_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "placement_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "registry_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "root_navigation_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "development",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "bootstrap_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "contribution_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "merge_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "operations",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "legacy_quarantine_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "lifecycle_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qinexus_freeze_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "security",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "security_data_access_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_decisions",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ADR-0000_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0001_QiOS_DNA_As_Master_Doctrine_Repo.mdx",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0001_blueprint_scope.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0002_single_domain_rule.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0003_band_model.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0004_single_account_modular_mode.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0005_fleet_orchestration.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0008_qilabs_root.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0010_qios_namespace_as_routing_metadata_layer.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_registry",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "namespace_registry",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-18_qios_namespace_registry_merged_v2.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "schemas",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "band_registry.schema.json",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "100_metadata.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10_infrastructure_layout.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "110_front_matter.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "120_storage.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "130_placement_rules.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "140_exports.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "150_qievidence.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "160_vectorization_pipeline.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20_bands.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "30_domains.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "40_subdomains.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "60_directory_tree.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "70_object_model.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "80_objects.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "90_schema.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "band_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "band_registry_v2.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "deprecation_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "domain_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "folder_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "infrastructure_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "realms_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "sensitivity_classification.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "subdomain_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "workspace_realms.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "20_structure",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_identity.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20_system_model.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "30_component_map.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "40_service_boundaries.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "50_data_flow.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "60_device_model.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "70_runtime_zones.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "30_service_map",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "100_integrations",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "external_integrations.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10_infrastructure",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "cockpit",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "cockpit_command_menu.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "cloudflare.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "docker_compose.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "gethomepage.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portainer.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tailscale.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "uptime_kuma.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "110_qiserver",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Service_Map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "runtime.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "runtime_profile.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "120_applications",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "CareLite",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "qinote",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "qinote_salvage_extract.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "admin.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "carelite.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "firefly.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portal.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "roadmap.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "130_GINA",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_ai_compute",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "aider.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "neo4j.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ollama.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "open_webui.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qdrant.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_capture",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "paperless",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "nocodb.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "obsidian_qidocs.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "wikijs.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_productivity",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "activitywatch.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "n8n.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiledger.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "solidtime.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_apis",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portal_api.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_workers",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "system_workers.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "70_pipelines",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_pipelines.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "80_tools",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "operator_tools.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "90_interfaces",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "public_interfaces.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "40_operations",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_cases",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_qiserver",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "QiAccess_Server_Runbook.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_dev_history",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-16_dev_session_directory_markmind_mapper.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-17_open_loop_reset_paperless_ingestion_runbook.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_dev_testing",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "momscare",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-17_momcare_app_qa_checklist.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccessstart",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-17_qiaccess_start_qa_checklist.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "Access_And_Exposure_Rules.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "50_knowledge",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "90_superseded_sources",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2025-11-18_qicodex_protocol_batch_overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "QiAccess_Start_Blueprint.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "README.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qi_os_home_blueprint.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tech_stack_markmind.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_glossary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "30_migration_notes.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "40_legacy_csv_migration_plan.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "50_legacy_salvage.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "60_qiaccess_start_legacy_quarantine.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "70_repo_sync_status_20260516.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "60_assets",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "diagrams",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-17_supabase_markmind.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "blueprint_map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "diagrams.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markmind-data.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markmind.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "images",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_QiOS_Master_Document.jpg",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "templates",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-16_dev_session_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "README.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "adr_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "appendix_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "artifact_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "note_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "operational_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "page_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "registry_reference_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "section_index_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "standard_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "templates.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "assets.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "90_receipts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_logs",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_audits",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_backups",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_health_checks",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_generated_reports",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "current_project_state.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.csv",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_generated_indexes",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "70_maintenance",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_audit",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-24_qiaccess_homepage_conversion_report.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-24_qiaccess_homepage_local_validation_report.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-24_qilinks_admin_and_visual_map_plan.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccess_map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccess_map.mmd",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10_changelog.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Current_Project_State.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "doctrine",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_Core_Doctrine.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "exports",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_DNA_Chronicle.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "reconciliation",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026-06-09_codex_reconciliation_brief.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "2026-06-09_initial_reconciliation.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "system_map",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_Master_Map.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "QiAccess_Start_Blueprint.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_QiEOS.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "file-index.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "rebuild.bat",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "vizvibe.mmd",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "10_QiAccess",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_10_QiAccess.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "20_QiSystem",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "50_Generated_Reports",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026-06-08_qilife_governance_audit.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "50_modules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "calendar",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "capture",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "documents",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "inbox",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "ingestion",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "knowledge",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "money",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "people",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "qibits",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "review",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "spaces",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "storage",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "threads",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "timeline",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "60_ai_layer",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_ai_layer_blueprint.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_ai_service_contracts.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_ai_review_workflow.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "70_deployment",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_local_dev.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_future_docker.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_future_qiserver.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "80_prompts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_codex_build_prompt_v1.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_codex_review_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_will_be_done_research_prompt.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "manifests",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_DNA_File_Manifest.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "rules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Source_of_Truth_Rules.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "schemas",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiLife_Data_Spine.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_20_QiSystem.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "30_QiServer",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_30_QiServer.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qiserver_runbook.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "40_QiCapture",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_40_QiCapture.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "50_QiNexus",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "My_Drive_Model",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_50_QiNexus.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_QiApp_QiLife",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_60_QiApp_QiLife.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_QiApps",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "QiJourney",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "QiLife",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "qiaccess_start",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "overview.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "wiki_publish_plan.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "70_QiConnect",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "06_workflows",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Automation_Backlog.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Core_Workflows.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiIngest_Pipeline.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_70_QiConnect.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "PART XI - Manual to Me",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Compass-Icon.png",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "Reconciliation",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "2026-06-10_blueprint_readiness_and_decision_gate.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_database_blueprint_gap_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_documentation_status_map.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_non_destructive_reconciliation_plan.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_qidna_implementation_reconciliation.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_qilife_schema_source_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_site_coverage_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_ui_blueprint_gap_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_Reconciliation.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "Schema",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_Schema.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "decisions",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "0001_personal_lifedesk_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0002_qibit_as_atomic_unit.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0003_timeline_as_spine.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0004_context_dock_over_wiki.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0005_repo_docs_indexed_in_app.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0006_clean_core_with_legacy_bridge.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0007_app_managed_storage_and_sync.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0008_managed_document_vault_dup_allergic.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0009_agent_first_copilot_cockpit.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0010_spaces_for_scoped_shared_access.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0011_homepage_powered_qiaccess.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0012_data_strategy.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0013_folder_documentation_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0014_topology_constraints.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0015_build_strategy.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0016_ai_auditor_role.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0017_canonical_vocabulary_and_v1_direction.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_Decisions.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "site",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_site.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "script.js",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "style.css",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": ".gitignore",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "CNAME",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "Current_Project_State.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "Folder_Canvas.canvas",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_01_QiDNA.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_Architecture.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "build.js",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "code_extractor.py",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "codex.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "docs.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "fix_folder_names.sh",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "index.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "package-lock.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "package.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "qilinks_bookmark_admin_plan.md",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-13T15:43:35.846Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -3179,2143 +5316,4280 @@ canonical_ref: ""
 > The key principle: **flatten by responsibility, not by impatience.**
 
 ### User
-> if you look at the whole file tree, im sure some of the items inside qieos acutally belong in there domain folders instead. {
->   "name": "_QiOS_DNA",
->   "path": "c:\\QiLabs\\_QiOS_DNA",
->   "type": "directory",
->   "children": [
->     {
->       "name": "00_QiEOS",
->       "type": "folder",
->       "children": [
->         {
->           "name": "10_governance",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_principles",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_rules",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_standards",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "content_metadata_profile.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "metadata_rules.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "naming_rules.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "pdf_standards.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "repo_rules.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_policies",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "agents",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "agent_governance_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "architecture",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "active_runtime_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "placement_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "registry_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "root_navigation_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "development",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "bootstrap_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "contribution_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "merge_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "operations",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "legacy_quarantine_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "lifecycle_policy.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qinexus_freeze_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "security",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "security_data_access_policy.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_decisions",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ADR-0000_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0001_QiOS_DNA_As_Master_Doctrine_Repo.mdx",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0001_blueprint_scope.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0002_single_domain_rule.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0003_band_model.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0004_single_account_modular_mode.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0005_fleet_orchestration.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0008_qilabs_root.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ADR-0010_qios_namespace_as_routing_metadata_layer.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_registry",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "namespace_registry",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-18_qios_namespace_registry_merged_v2.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "schemas",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "band_registry.schema.json",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "100_metadata.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10_infrastructure_layout.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "110_front_matter.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "120_storage.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "130_placement_rules.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "140_exports.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "150_qievidence.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "160_vectorization_pipeline.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20_bands.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "30_domains.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "40_subdomains.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "60_directory_tree.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "70_object_model.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "80_objects.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "90_schema.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "band_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "band_registry_v2.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "deprecation_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "domain_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "folder_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "infrastructure_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "realms_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "sensitivity_classification.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "subdomain_registry.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "workspace_realms.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "20_structure",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_identity.md",
->               "type": "file"
->             },
->             {
->               "name": "20_system_model.md",
->               "type": "file"
->             },
->             {
->               "name": "30_component_map.md",
->               "type": "file"
->             },
->             {
->               "name": "40_service_boundaries.md",
->               "type": "file"
->             },
->             {
->               "name": "50_data_flow.md",
->               "type": "file"
->             },
->             {
->               "name": "60_device_model.md",
->               "type": "file"
->             },
->             {
->               "name": "70_runtime_zones.md",
->               "type": "file"
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "30_service_map",
->           "type": "folder",
->           "children": [
->             {
->               "name": "100_integrations",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "external_integrations.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10_infrastructure",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "cockpit",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     },
->                     {
->                       "name": "cockpit_command_menu.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "cloudflare.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "docker_compose.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "gethomepage.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portainer.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tailscale.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "uptime_kuma.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "110_qiserver",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Service_Map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "runtime.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "runtime_profile.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "120_applications",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "CareLite",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "qinote",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "qinote_salvage_extract.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "admin.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "carelite.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "firefly.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portal.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "roadmap.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "130_GINA",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_ai_compute",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "aider.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "neo4j.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ollama.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "open_webui.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qdrant.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_capture",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "paperless",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "_index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "nocodb.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "obsidian_qidocs.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "wikijs.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_productivity",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "activitywatch.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "n8n.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiledger.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "solidtime.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_apis",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "portal_api.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_workers",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "system_workers.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "70_pipelines",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_pipelines.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "80_tools",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "operator_tools.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "90_interfaces",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "public_interfaces.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "40_operations",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_cases",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_qiserver",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "QiAccess_Server_Runbook.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_dev_history",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-16_dev_session_directory_markmind_mapper.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-17_open_loop_reset_paperless_ingestion_runbook.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_dev_testing",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "momscare",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-17_momcare_app_qa_checklist.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "qiaccessstart",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-05-17_qiaccess_start_qa_checklist.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "Access_And_Exposure_Rules.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "50_knowledge",
->           "type": "folder",
->           "children": [
->             {
->               "name": "90_superseded_sources",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2025-11-18_qicodex_protocol_batch_overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "QiAccess_Start_Blueprint.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "README.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qi_os_home_blueprint.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tech_stack_markmind.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_glossary.md",
->               "type": "file"
->             },
->             {
->               "name": "30_migration_notes.md",
->               "type": "file"
->             },
->             {
->               "name": "40_legacy_csv_migration_plan.md",
->               "type": "file"
->             },
->             {
->               "name": "50_legacy_salvage.md",
->               "type": "file"
->             },
->             {
->               "name": "60_qiaccess_start_legacy_quarantine.md",
->               "type": "file"
->             },
->             {
->               "name": "70_repo_sync_status_20260516.md",
->               "type": "file"
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "60_assets",
->           "type": "folder",
->           "children": [
->             {
->               "name": "diagrams",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-17_supabase_markmind.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "blueprint_map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "diagrams.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markmind-data.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markmind.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "images",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_QiOS_Master_Document.jpg",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "templates",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-16_dev_session_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "README.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "adr_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "appendix_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "artifact_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "note_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "operational_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "page_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "registry_reference_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "section_index_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "standard_template.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "templates.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "assets.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "90_receipts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10_logs",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "20_audits",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "30_backups",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "40_health_checks",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "50_generated_reports",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "current_project_state.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.csv",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qilabs_structure_check.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "60_generated_indexes",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "70_maintenance",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_audit",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-05-24_qiaccess_homepage_conversion_report.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-24_qiaccess_homepage_local_validation_report.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "2026-05-24_qilinks_admin_and_visual_map_plan.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiaccess_map.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qiaccess_map.mmd",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10_changelog.md",
->               "type": "file"
->             },
->             {
->               "name": "Current_Project_State.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "doctrine",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_Core_Doctrine.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "exports",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_DNA_Chronicle.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "reconciliation",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026-06-09_codex_reconciliation_brief.md",
->               "type": "file"
->             },
->             {
->               "name": "2026-06-09_initial_reconciliation.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "system_map",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_Master_Map.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "QiAccess_Start_Blueprint.md",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "_QiEOS.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "file-index.json",
->           "type": "file"
->         },
->         {
->           "name": "rebuild.bat",
->           "type": "file"
->         },
->         {
->           "name": "vizvibe.mmd",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "10_QiAccess",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_10_QiAccess.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "20_QiSystem",
->       "type": "folder",
->       "children": [
->         {
->           "name": "50_Generated_Reports",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026-06-08_qilife_governance_audit.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "50_modules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "calendar",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "capture",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "documents",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "inbox",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "ingestion",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "knowledge",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "money",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "people",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "qibits",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "review",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "spaces",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "storage",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "threads",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "timeline",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "ai_behaviors.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "context_dock.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data_dependencies.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "overview.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "ui_flow.md",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "60_ai_layer",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_ai_layer_blueprint.md",
->               "type": "file"
->             },
->             {
->               "name": "01_ai_service_contracts.md",
->               "type": "file"
->             },
->             {
->               "name": "02_ai_review_workflow.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "70_deployment",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_local_dev.md",
->               "type": "file"
->             },
->             {
->               "name": "01_future_docker.md",
->               "type": "file"
->             },
->             {
->               "name": "02_future_qiserver.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "80_prompts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00_codex_build_prompt_v1.md",
->               "type": "file"
->             },
->             {
->               "name": "01_codex_review_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "02_will_be_done_research_prompt.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "manifests",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiOS_DNA_File_Manifest.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "rules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Source_of_Truth_Rules.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "schemas",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiLife_Data_Spine.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_20_QiSystem.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "30_QiServer",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_30_QiServer.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         },
->         {
->           "name": "qiserver_runbook.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "40_QiCapture",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_40_QiCapture.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "50_QiNexus",
->       "type": "folder",
->       "children": [
->         {
->           "name": "My_Drive_Model",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_50_QiNexus.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_QiApp_QiLife",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_60_QiApp_QiLife.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_QiApps",
->       "type": "folder",
->       "children": [
->         {
->           "name": "QiJourney",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "QiLife",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.mdx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "qiaccess_start",
->           "type": "folder",
->           "children": [
->             {
->               "name": "overview.md",
->               "type": "file"
->             },
->             {
->               "name": "wiki_publish_plan.md",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "70_QiConnect",
->       "type": "folder",
->       "children": [
->         {
->           "name": "06_workflows",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Automation_Backlog.md",
->               "type": "file"
->             },
->             {
->               "name": "Core_Workflows.md",
->               "type": "file"
->             },
->             {
->               "name": "QiIngest_Pipeline.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_70_QiConnect.md",
->           "type": "file"
->         },
->         {
->           "name": "index.mdx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "PART XI - Manual to Me",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
->           "type": "folder",
->           "children": [
->             {
->               "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
->           "type": "folder",
->           "children": [
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
->           "type": "folder",
->           "children": [
->             {
->               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
->           "type": "file"
->         },
->         {
->           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
->           "type": "file"
->         },
->         {
->           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
->           "type": "file"
->         },
->         {
->           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
->           "type": "file"
->         },
->         {
->           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
->           "type": "file"
->         },
->         {
->           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
->           "type": "file"
->         },
->         {
->           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
->           "type": "file"
->         },
->         {
->           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
->           "type": "file"
->         },
->         {
->           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
->           "type": "file"
->         },
->         {
->           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
->           "type": "file"
->         },
->         {
->           "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
->           "type": "file"
->         },
->         {
->           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
->           "type": "file"
->         },
->         {
->           "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
->           "type": "file"
->         },
->         {
->           "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
->           "type": "file"
->         },
->         {
->           "name": "Compass-Icon.png",
->           "type": "file"
->         },
->         {
->           "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
->           "type": "file"
->         },
->         {
->           "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "Reconciliation",
->       "type": "folder",
->       "children": [
->         {
->           "name": "2026-06-10_blueprint_readiness_and_decision_gate.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_database_blueprint_gap_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_documentation_status_map.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_non_destructive_reconciliation_plan.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_qidna_implementation_reconciliation.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_qilife_schema_source_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_site_coverage_report.md",
->           "type": "file"
->         },
->         {
->           "name": "2026-06-10_ui_blueprint_gap_report.md",
->           "type": "file"
->         },
->         {
->           "name": "_Reconciliation.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "Schema",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_Schema.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "decisions",
->       "type": "folder",
->       "children": [
->         {
->           "name": "0001_personal_lifedesk_model.md",
->           "type": "file"
->         },
->         {
->           "name": "0002_qibit_as_atomic_unit.md",
->           "type": "file"
->         },
->         {
->           "name": "0003_timeline_as_spine.md",
->           "type": "file"
->         },
->         {
->           "name": "0004_context_dock_over_wiki.md",
->           "type": "file"
->         },
->         {
->           "name": "0005_repo_docs_indexed_in_app.md",
->           "type": "file"
->         },
->         {
->           "name": "0006_clean_core_with_legacy_bridge.md",
->           "type": "file"
->         },
->         {
->           "name": "0007_app_managed_storage_and_sync.md",
->           "type": "file"
->         },
->         {
->           "name": "0008_managed_document_vault_dup_allergic.md",
->           "type": "file"
->         },
->         {
->           "name": "0009_agent_first_copilot_cockpit.md",
->           "type": "file"
->         },
->         {
->           "name": "0010_spaces_for_scoped_shared_access.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0011_homepage_powered_qiaccess.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0012_data_strategy.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0013_folder_documentation_model.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0014_topology_constraints.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0015_build_strategy.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0016_ai_auditor_role.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0017_canonical_vocabulary_and_v1_direction.md",
->           "type": "file"
->         },
->         {
->           "name": "_Decisions.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "site",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_site.md",
->           "type": "file"
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         },
->         {
->           "name": "script.js",
->           "type": "file"
->         },
->         {
->           "name": "style.css",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": ".gitignore",
->       "type": "file"
->     },
->     {
->       "name": "CNAME",
->       "type": "file"
->     },
->     {
->       "name": "Current_Project_State.md",
->       "type": "file"
->     },
->     {
->       "name": "Folder_Canvas.canvas",
->       "type": "file"
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "_01_QiDNA.md",
->       "type": "file"
->     },
->     {
->       "name": "_Architecture.md",
->       "type": "file"
->     },
->     {
->       "name": "build.js",
->       "type": "file"
->     },
->     {
->       "name": "code_extractor.py",
->       "type": "file"
->     },
->     {
->       "name": "codex.md",
->       "type": "file"
->     },
->     {
->       "name": "docs.json",
->       "type": "file"
->     },
->     {
->       "name": "fix_folder_names.sh",
->       "type": "file"
->     },
->     {
->       "name": "index.md",
->       "type": "file"
->     },
->     {
->       "name": "package-lock.json",
->       "type": "file"
->     },
->     {
->       "name": "package.json",
->       "type": "file"
->     },
->     {
->       "name": "qilinks_bookmark_admin_plan.md",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-13T15:45:34.446Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> if you look at the whole file tree, im sure some of the items inside qieos acutally belong in there domain folders instead. {
+
+>   "name": "_QiOS_DNA",
+
+>   "path": "c:\\QiLabs\\_QiOS_DNA",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "00_QiEOS",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "10_governance",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_principles",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_rules",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_standards",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "content_metadata_profile.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "metadata_rules.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "naming_rules.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "pdf_standards.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "repo_rules.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_policies",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "agents",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "agent_governance_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "architecture",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "active_runtime_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "placement_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "registry_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "root_navigation_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "development",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "bootstrap_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "contribution_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "merge_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "operations",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "legacy_quarantine_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "lifecycle_policy.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qinexus_freeze_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "security",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "security_data_access_policy.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_decisions",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ADR-0000_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0001_QiOS_DNA_As_Master_Doctrine_Repo.mdx",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0001_blueprint_scope.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0002_single_domain_rule.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0003_band_model.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0004_single_account_modular_mode.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0005_fleet_orchestration.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0008_qilabs_root.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ADR-0010_qios_namespace_as_routing_metadata_layer.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_registry",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "namespace_registry",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-18_qios_namespace_registry_merged_v2.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "schemas",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "band_registry.schema.json",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "100_metadata.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10_infrastructure_layout.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "110_front_matter.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "120_storage.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "130_placement_rules.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "140_exports.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "150_qievidence.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "160_vectorization_pipeline.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20_bands.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "30_domains.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "40_subdomains.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "60_directory_tree.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "70_object_model.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "80_objects.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "90_schema.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "band_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "band_registry_v2.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "deprecation_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "domain_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "folder_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "infrastructure_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "realms_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "sensitivity_classification.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "subdomain_registry.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "workspace_realms.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "20_structure",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_identity.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20_system_model.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "30_component_map.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "40_service_boundaries.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "50_data_flow.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "60_device_model.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "70_runtime_zones.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "30_service_map",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "100_integrations",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "external_integrations.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10_infrastructure",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "cockpit",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "cockpit_command_menu.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "cloudflare.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "docker_compose.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "gethomepage.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portainer.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tailscale.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "uptime_kuma.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "110_qiserver",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Service_Map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "runtime.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "runtime_profile.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "120_applications",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "CareLite",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "qinote",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "qinote_salvage_extract.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "admin.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "carelite.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "firefly.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portal.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "roadmap.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "130_GINA",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_ai_compute",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "aider.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "neo4j.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ollama.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "open_webui.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qdrant.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_capture",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "paperless",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "_index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "nocodb.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "obsidian_qidocs.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "wikijs.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_productivity",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "activitywatch.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "n8n.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiledger.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "solidtime.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_apis",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "portal_api.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_workers",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "system_workers.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "70_pipelines",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_pipelines.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "80_tools",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "operator_tools.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "90_interfaces",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "public_interfaces.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "40_operations",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_cases",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_qiserver",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "QiAccess_Server_Runbook.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_dev_history",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-16_dev_session_directory_markmind_mapper.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-17_open_loop_reset_paperless_ingestion_runbook.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_dev_testing",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "momscare",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-17_momcare_app_qa_checklist.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccessstart",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-05-17_qiaccess_start_qa_checklist.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "Access_And_Exposure_Rules.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "50_knowledge",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "90_superseded_sources",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2025-11-18_qicodex_protocol_batch_overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "QiAccess_Start_Blueprint.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "README.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qi_os_home_blueprint.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tech_stack_markmind.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_glossary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "30_migration_notes.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "40_legacy_csv_migration_plan.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "50_legacy_salvage.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "60_qiaccess_start_legacy_quarantine.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "70_repo_sync_status_20260516.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "60_assets",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "diagrams",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-17_supabase_markmind.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "blueprint_map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "diagrams.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markmind-data.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markmind.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "images",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_QiOS_Master_Document.jpg",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "templates",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-16_dev_session_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "README.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "adr_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "appendix_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "artifact_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "note_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "operational_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "page_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "registry_reference_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "section_index_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "standard_template.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "templates.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "assets.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "90_receipts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10_logs",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "20_audits",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "30_backups",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "40_health_checks",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "50_generated_reports",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "current_project_state.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.csv",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qilabs_structure_check.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "60_generated_indexes",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "70_maintenance",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_audit",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-05-24_qiaccess_homepage_conversion_report.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-24_qiaccess_homepage_local_validation_report.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "2026-05-24_qilinks_admin_and_visual_map_plan.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccess_map.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qiaccess_map.mmd",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10_changelog.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Current_Project_State.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "doctrine",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_Core_Doctrine.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "exports",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_DNA_Chronicle.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "reconciliation",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026-06-09_codex_reconciliation_brief.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "2026-06-09_initial_reconciliation.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "system_map",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_Master_Map.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "QiAccess_Start_Blueprint.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_QiEOS.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "file-index.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "rebuild.bat",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "vizvibe.mmd",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "10_QiAccess",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_10_QiAccess.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "20_QiSystem",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "50_Generated_Reports",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026-06-08_qilife_governance_audit.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "50_modules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "calendar",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "capture",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "documents",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "inbox",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "ingestion",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "knowledge",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "money",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "people",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "qibits",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "review",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "spaces",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "storage",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "threads",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "timeline",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "ai_behaviors.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "context_dock.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data_dependencies.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "overview.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "ui_flow.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "60_ai_layer",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_ai_layer_blueprint.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_ai_service_contracts.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_ai_review_workflow.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "70_deployment",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_local_dev.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_future_docker.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_future_qiserver.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "80_prompts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00_codex_build_prompt_v1.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01_codex_review_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_will_be_done_research_prompt.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "manifests",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiOS_DNA_File_Manifest.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "rules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Source_of_Truth_Rules.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "schemas",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiLife_Data_Spine.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_20_QiSystem.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "30_QiServer",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_30_QiServer.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qiserver_runbook.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "40_QiCapture",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_40_QiCapture.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "50_QiNexus",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "My_Drive_Model",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_50_QiNexus.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_QiApp_QiLife",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_60_QiApp_QiLife.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_QiApps",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "QiJourney",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "QiLife",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.mdx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "qiaccess_start",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "overview.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "wiki_publish_plan.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "70_QiConnect",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "06_workflows",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Automation_Backlog.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Core_Workflows.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiIngest_Pipeline.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_70_QiConnect.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.mdx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "PART XI - Manual to Me",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Compass-Icon.png",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "Reconciliation",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "2026-06-10_blueprint_readiness_and_decision_gate.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_database_blueprint_gap_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_documentation_status_map.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_non_destructive_reconciliation_plan.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_qidna_implementation_reconciliation.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_qilife_schema_source_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_site_coverage_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "2026-06-10_ui_blueprint_gap_report.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_Reconciliation.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "Schema",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_Schema.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "decisions",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "0001_personal_lifedesk_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0002_qibit_as_atomic_unit.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0003_timeline_as_spine.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0004_context_dock_over_wiki.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0005_repo_docs_indexed_in_app.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0006_clean_core_with_legacy_bridge.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0007_app_managed_storage_and_sync.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0008_managed_document_vault_dup_allergic.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0009_agent_first_copilot_cockpit.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "0010_spaces_for_scoped_shared_access.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0011_homepage_powered_qiaccess.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0012_data_strategy.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0013_folder_documentation_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0014_topology_constraints.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0015_build_strategy.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0016_ai_auditor_role.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0017_canonical_vocabulary_and_v1_direction.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_Decisions.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "site",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_site.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "script.js",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "style.css",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": ".gitignore",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "CNAME",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "Current_Project_State.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "Folder_Canvas.canvas",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_01_QiDNA.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_Architecture.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "build.js",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "code_extractor.py",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "codex.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "docs.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "fix_folder_names.sh",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "index.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "package-lock.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "package.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "qilinks_bookmark_admin_plan.md",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-13T15:45:34.446Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant

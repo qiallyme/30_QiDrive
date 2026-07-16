@@ -3,9 +3,9 @@ layout: page
 title: "Exempt Code 11 Explanation"
 slug: "exempt_code_11_explanation"
 created_at: "2026-06-20 08:54:58"
-updated_at: "2026-06-20 08:54:58"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -1,11 +1,11 @@
 ---
 layout: registry ...
 title: "Registry: "
-slug: ""
+slug: registry
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 sensitivity: internal ...
@@ -19,7 +19,7 @@ references: []
 target_system:
 target_scope: ""
 canonical_ref: ""
-uid: ""
+uid: a65e965022f845409613aeb13d869a50
 template_key: registry_reference_template ...
 source_type: manual ...
 adr_id: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Translate to Spanish"
 slug: "translate_to_spanish"
 created_at: "2025-08-20 20:32:50"
-updated_at: "2025-08-20 20:32:50"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

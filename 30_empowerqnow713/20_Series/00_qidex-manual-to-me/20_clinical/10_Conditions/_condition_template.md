@@ -4,14 +4,14 @@ title: Condition Template
 slug: condition_template
 summary: Template for describing clinical conditions with diagnostic criteria and impacts
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical conditions in clinical track
-tags:
+tags: []
   - template
   - condition
   - clinical
   - empowerqnow713
-keywords:
+keywords: []
   - condition
   - clinical
   - diagnosis
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.3.0
 category: condition
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b291c809eaee40a48c537f55a8aef8e8
 canonical_ref: ""
 template_key: master-template
 ---

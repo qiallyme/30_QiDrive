@@ -3,9 +3,9 @@ layout: page
 title: QiEOS Protocol v3.0
 slug: qieos-protocol-v3-0
 status: publish
-updated_at: "2026-06-30"
+updated_at: "2026-07-16T06:49:40-04:00"
 author: QiAlly Systems (C. Rice-Velasquez)
-tags:
+tags: []
   - qispark
   - legacy-doctrine
   - source-material
@@ -14,7 +14,7 @@ type: governance
 created: 2025-11-08
 last_updated: 2025-11-08
 summary: Legacy technical doctrine retained as source material for QiSpark updates.
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 owner: ""
 keywords: []
 aliases: []
@@ -22,7 +22,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c741c3fb57534ded85bc35c99050d4af
 canonical_ref: ""
 template_key: master-template
 ---

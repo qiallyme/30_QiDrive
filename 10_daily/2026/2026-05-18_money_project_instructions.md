@@ -3,9 +3,9 @@ layout: page
 title: "Money Project Instructions"
 slug: "money_project_instructions"
 created_at: "2026-05-18 11:30:03"
-updated_at: "2026-05-18 11:30:03"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -411,282 +411,558 @@ canonical_ref: ""
 > Your mission is to help me build a financial operating system that creates visibility, stability, leverage, and peace.
 
 ### User
-> merge whats relevant. Good instinct. What you’re describing is basically a **personal accounting ingestion engine + canonical ledger + reporting layer**. If you don’t structure it right now, you’ll keep redoing work forever.
-> 
-> I’m going to give you a clean system you can actually build and not regret.
-> 
-> ---
-> 
-> # 🔧 Core Model (Don’t Skip This)
-> 
-> You need **3 layers** — not one table.
-> 
-> ### 1. **Raw Imports (Immutable)**
-> 
-> Store files EXACTLY as they came in.
-> 
-> **Table: `raw_imports`**
-> 
-> * id (uuid)
-> * source_name (Chase, CashApp, etc.)
-> * account_id (fk)
-> * file_name
-> * file_hash (critical → prevents duplicate imports)
-> * imported_at
-> * raw_data (json or file ref)
-> 
-> 👉 Rule: NEVER EDIT THIS. Ever.
-> 
-> ---
-> 
-> ### 2. **Normalized Transactions (Your Canonical Ledger)**
-> 
-> **Table: `transactions`**
-> 
-> * id (uuid)
-> * account_id
-> * transaction_date
-> * posted_date
-> * description
-> * amount (signed, + income / - expense)
-> * currency
-> * merchant
-> * category (nullable)
-> * external_id (from bank if available)
-> * hash (dedupe key)
-> * created_at
-> 
-> 👉 This is your **single source of truth ledger**
-> 
-> ---
-> 
-> ### 3. **Accounts Registry**
-> 
-> **Table: `accounts`**
-> 
-> * id
-> * name
-> * institution
-> * type (checking, credit, loan)
-> * last_import_at
-> * last_import_hash
-> * is_active
-> 
-> ---
-> 
-> ### 4. **Column Mapping Profiles (This solves your biggest pain)**
-> 
-> **Table: `column_mappings`**
-> 
-> * id
-> * source_name (Chase CSV, PayPal export, etc.)
-> * date_column
-> * amount_column
-> * description_column
-> * debit_column (optional)
-> * credit_column (optional)
-> * account_column (optional)
-> * notes
-> 
-> 👉 You define this ONCE per format. Never again.
-> 
-> ---
-> 
-> # 🔁 Import Pipeline (This is the engine)
-> 
-> Every time you import:
-> 
-> ### Step 1: Detect Source
-> 
-> * Based on file name OR headers
-> * Match to `column_mappings`
-> 
-> ---
-> 
-> ### Step 2: Normalize Columns
-> 
-> Convert:
-> 
-> * “Transaction Date” → `transaction_date`
-> * “Amount” OR (debit/credit split) → `amount`
-> * etc.
-> 
-> ---
-> 
-> ### Step 3: Generate Deduplication Hash
-> 
-> Use:
-> 
-> ```
-> hash = sha256(
->   account_id +
->   transaction_date +
->   amount +
->   description
-> )
-> ```
-> 
-> 👉 This is what stops duplicates permanently.
-> 
-> ---
-> 
-> ### Step 4: Insert Only New Transactions
-> 
-> * If hash exists → skip
-> * Else → insert
-> 
-> ---
-> 
-> ### Step 5: Update Account
-> 
-> * `last_import_at`
-> * `last_import_hash`
-> 
-> ---
-> 
-> # 📊 Reporting Layer (What you actually care about)
-> 
-> Once normalized, you can pull anything:
-> 
-> ### Examples:
-> 
-> * Monthly spend
-> * Category breakdown
-> * Cash flow
-> * Net worth (if loans included)
-> * Account balances over time
-> 
-> ---
-> 
-> # 🧠 Critical Design Decisions (Where people mess up)
-> 
-> ### 1. **Signed Amounts Only**
-> 
-> DO NOT store debit/credit separately in final table.
-> 
-> * Expense = negative
-> * Income = positive
-> 
-> This simplifies EVERYTHING.
-> 
-> ---
-> 
-> ### 2. **Never Trust Bank Consistency**
-> 
-> Banks will:
-> 
-> * Change column names
-> * Flip debit/credit
-> * Change formats randomly
-> 
-> Your mapping layer protects you.
-> 
-> ---
-> 
-> ### 3. **Don’t Rely on external_id**
-> 
-> Many banks don’t provide stable IDs.
-> 
-> 👉 Your hash is the real key.
-> 
-> ---
-> 
-> ### 4. **Keep Raw + Normalized Separate**
-> 
-> If you merge them → you lose auditability.
-> 
-> ---
-> 
-> # ⚙️ Minimal Tech Stack (fits your ecosystem)
-> 
-> You already use this stuff, so don’t overcomplicate it:
-> 
-> ### Option A (Recommended for you)
-> 
-> * **Postgres (Supabase or Railway)**
-> * Python ingestion scripts
-> * Store raw files in:
-> 
->   * Google Drive OR local QiNote
-> 
-> ---
-> 
-> ### Option B (Offline-first)
-> 
-> * SQLite (for local)
-> * Sync later to Postgres
-> 
-> ---
-> 
-> # 🧩 File → Ledger Workflow (Your Daily Reality)
-> 
-> 1. Download statement
-> 2. Drop into `/imports/{account}/`
-> 3. Run script:
-> 
->    ```
->    python import_transactions.py
->    ```
-> 4. Done. No rework.
-> 
-> ---
-> 
-> # 🧪 Example Mapping (Real World)
-> 
-> ### Chase CSV:
-> 
-> ```
-> Posting Date → transaction_date
-> Description → description
-> Amount → amount
-> ```
-> 
-> ### PayPal:
-> 
-> ```
-> Date → transaction_date
-> Name → merchant
-> Net → amount
-> ```
-> 
-> ### Credit Card (split columns):
-> 
-> ```
-> Debit → amount (-)
-> Credit → amount (+)
-> ```
-> 
-> ---
-> 
-> # 🚀 What You Actually Want Long-Term
-> 
-> Once this is in place, you can:
-> 
-> * Export to Markdown → QiNote
-> * Feed into AI → “analyze my spending”
-> * Auto-generate reports
-> * Build dashboards
-> * Detect anomalies
-> 
-> ---
-> 
-> # ⚠️ Where You’re About to Screw This Up (so don’t)
-> 
-> * Overengineering categories early → wait
-> * Trying to auto-categorize everything immediately → phase 2
-> * Not implementing dedupe → you WILL regret it
-> * Mixing raw + processed → audit nightmare
-> 
-> ---
-> 
-> # 🧭 Next Step (Do This, Not 10 Things)
-> 
-> If you want momentum:
-> 
-> **Step 1:** I’ll design the exact Postgres schema SQL
-> **Step 2:** Then a Python importer script (auto-mapping + dedupe)
-> **Step 3:** Then a simple report query pack
-> 
+> merge whats relevant. Good instinct. What you’re describing is basically a **personal accounting ingestion engine + canonical ledger + reporting layer**. If you don’t structure it right now, you’ll keep redoing work forever.
+
+> 
+
+> I’m going to give you a clean system you can actually build and not regret.
+
+> 
+
+> ---
+
+> 
+
+> # 🔧 Core Model (Don’t Skip This)
+
+> 
+
+> You need **3 layers** — not one table.
+
+> 
+
+> ### 1. **Raw Imports (Immutable)**
+
+> 
+
+> Store files EXACTLY as they came in.
+
+> 
+
+> **Table: `raw_imports`**
+
+> 
+
+> * id (uuid)
+
+> * source_name (Chase, CashApp, etc.)
+
+> * account_id (fk)
+
+> * file_name
+
+> * file_hash (critical → prevents duplicate imports)
+
+> * imported_at
+
+> * raw_data (json or file ref)
+
+> 
+
+> 👉 Rule: NEVER EDIT THIS. Ever.
+
+> 
+
+> ---
+
+> 
+
+> ### 2. **Normalized Transactions (Your Canonical Ledger)**
+
+> 
+
+> **Table: `transactions`**
+
+> 
+
+> * id (uuid)
+
+> * account_id
+
+> * transaction_date
+
+> * posted_date
+
+> * description
+
+> * amount (signed, + income / - expense)
+
+> * currency
+
+> * merchant
+
+> * category (nullable)
+
+> * external_id (from bank if available)
+
+> * hash (dedupe key)
+
+> * created_at
+
+> 
+
+> 👉 This is your **single source of truth ledger**
+
+> 
+
+> ---
+
+> 
+
+> ### 3. **Accounts Registry**
+
+> 
+
+> **Table: `accounts`**
+
+> 
+
+> * id
+
+> * name
+
+> * institution
+
+> * type (checking, credit, loan)
+
+> * last_import_at
+
+> * last_import_hash
+
+> * is_active
+
+> 
+
+> ---
+
+> 
+
+> ### 4. **Column Mapping Profiles (This solves your biggest pain)**
+
+> 
+
+> **Table: `column_mappings`**
+
+> 
+
+> * id
+
+> * source_name (Chase CSV, PayPal export, etc.)
+
+> * date_column
+
+> * amount_column
+
+> * description_column
+
+> * debit_column (optional)
+
+> * credit_column (optional)
+
+> * account_column (optional)
+
+> * notes
+
+> 
+
+> 👉 You define this ONCE per format. Never again.
+
+> 
+
+> ---
+
+> 
+
+> # 🔁 Import Pipeline (This is the engine)
+
+> 
+
+> Every time you import:
+
+> 
+
+> ### Step 1: Detect Source
+
+> 
+
+> * Based on file name OR headers
+
+> * Match to `column_mappings`
+
+> 
+
+> ---
+
+> 
+
+> ### Step 2: Normalize Columns
+
+> 
+
+> Convert:
+
+> 
+
+> * “Transaction Date” → `transaction_date`
+
+> * “Amount” OR (debit/credit split) → `amount`
+
+> * etc.
+
+> 
+
+> ---
+
+> 
+
+> ### Step 3: Generate Deduplication Hash
+
+> 
+
+> Use:
+
+> 
+
+> ```
+
+> hash = sha256(
+
+>   account_id +
+
+>   transaction_date +
+
+>   amount +
+
+>   description
+
+> )
+
+> ```
+
+> 
+
+> 👉 This is what stops duplicates permanently.
+
+> 
+
+> ---
+
+> 
+
+> ### Step 4: Insert Only New Transactions
+
+> 
+
+> * If hash exists → skip
+
+> * Else → insert
+
+> 
+
+> ---
+
+> 
+
+> ### Step 5: Update Account
+
+> 
+
+> * `last_import_at`
+
+> * `last_import_hash`
+
+> 
+
+> ---
+
+> 
+
+> # 📊 Reporting Layer (What you actually care about)
+
+> 
+
+> Once normalized, you can pull anything:
+
+> 
+
+> ### Examples:
+
+> 
+
+> * Monthly spend
+
+> * Category breakdown
+
+> * Cash flow
+
+> * Net worth (if loans included)
+
+> * Account balances over time
+
+> 
+
+> ---
+
+> 
+
+> # 🧠 Critical Design Decisions (Where people mess up)
+
+> 
+
+> ### 1. **Signed Amounts Only**
+
+> 
+
+> DO NOT store debit/credit separately in final table.
+
+> 
+
+> * Expense = negative
+
+> * Income = positive
+
+> 
+
+> This simplifies EVERYTHING.
+
+> 
+
+> ---
+
+> 
+
+> ### 2. **Never Trust Bank Consistency**
+
+> 
+
+> Banks will:
+
+> 
+
+> * Change column names
+
+> * Flip debit/credit
+
+> * Change formats randomly
+
+> 
+
+> Your mapping layer protects you.
+
+> 
+
+> ---
+
+> 
+
+> ### 3. **Don’t Rely on external_id**
+
+> 
+
+> Many banks don’t provide stable IDs.
+
+> 
+
+> 👉 Your hash is the real key.
+
+> 
+
+> ---
+
+> 
+
+> ### 4. **Keep Raw + Normalized Separate**
+
+> 
+
+> If you merge them → you lose auditability.
+
+> 
+
+> ---
+
+> 
+
+> # ⚙️ Minimal Tech Stack (fits your ecosystem)
+
+> 
+
+> You already use this stuff, so don’t overcomplicate it:
+
+> 
+
+> ### Option A (Recommended for you)
+
+> 
+
+> * **Postgres (Supabase or Railway)**
+
+> * Python ingestion scripts
+
+> * Store raw files in:
+
+> 
+
+>   * Google Drive OR local QiNote
+
+> 
+
+> ---
+
+> 
+
+> ### Option B (Offline-first)
+
+> 
+
+> * SQLite (for local)
+
+> * Sync later to Postgres
+
+> 
+
+> ---
+
+> 
+
+> # 🧩 File → Ledger Workflow (Your Daily Reality)
+
+> 
+
+> 1. Download statement
+
+> 2. Drop into `/imports/{account}/`
+
+> 3. Run script:
+
+> 
+
+>    ```
+
+>    python import_transactions.py
+
+>    ```
+
+> 4. Done. No rework.
+
+> 
+
+> ---
+
+> 
+
+> # 🧪 Example Mapping (Real World)
+
+> 
+
+> ### Chase CSV:
+
+> 
+
+> ```
+
+> Posting Date → transaction_date
+
+> Description → description
+
+> Amount → amount
+
+> ```
+
+> 
+
+> ### PayPal:
+
+> 
+
+> ```
+
+> Date → transaction_date
+
+> Name → merchant
+
+> Net → amount
+
+> ```
+
+> 
+
+> ### Credit Card (split columns):
+
+> 
+
+> ```
+
+> Debit → amount (-)
+
+> Credit → amount (+)
+
+> ```
+
+> 
+
+> ---
+
+> 
+
+> # 🚀 What You Actually Want Long-Term
+
+> 
+
+> Once this is in place, you can:
+
+> 
+
+> * Export to Markdown → QiNote
+
+> * Feed into AI → “analyze my spending”
+
+> * Auto-generate reports
+
+> * Build dashboards
+
+> * Detect anomalies
+
+> 
+
+> ---
+
+> 
+
+> # ⚠️ Where You’re About to Screw This Up (so don’t)
+
+> 
+
+> * Overengineering categories early → wait
+
+> * Trying to auto-categorize everything immediately → phase 2
+
+> * Not implementing dedupe → you WILL regret it
+
+> * Mixing raw + processed → audit nightmare
+
+> 
+
+> ---
+
+> 
+
+> # 🧭 Next Step (Do This, Not 10 Things)
+
+> 
+
+> If you want momentum:
+
+> 
+
+> **Step 1:** I’ll design the exact Postgres schema SQL
+
+> **Step 2:** Then a Python importer script (auto-mapping + dedupe)
+
+> **Step 3:** Then a simple report query pack
+
+> 
+
 > Say the word and I’ll build all three clean and ready to run.
 
 ### Assistant

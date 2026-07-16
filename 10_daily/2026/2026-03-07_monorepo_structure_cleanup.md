@@ -3,9 +3,9 @@ layout: page
 title: "Monorepo Structure Cleanup"
 slug: "monorepo_structure_cleanup"
 created_at: "2026-03-07 20:41:09"
-updated_at: "2026-03-07 20:41:09"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -219,1552 +219,3098 @@ canonical_ref: ""
 > If you want, next I can also show you the **clean Astro monorepo layout** that will prevent this repo from turning into chaos again. It’ll make your life about **80% easier**.
 
 ### User
-> look at my tree then tell me again. ```markdown
-> . 📂 _QiOne_MonoRepo_v2
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> ├── 📄 _QiOne_MonoRepo_Astro.code-workspace
-> └── 📂 apps/
-> │  └── 📂 api-core/
-> │    ├── 📄  - Copy.keep
-> │  └── 📂 gina-ai-chat/
-> │    └── 📂 GINA_launcher/
-> │      ├── 📄 index.html
-> │      └── 📂 src/
-> │        └── 📂 components/
-> │          ├── 📄 FileBrowser.jsx
-> │          ├── 📄 index.html
-> │        ├── 📄 config.js
-> │        ├── 📄 index.html
-> │    └── 📂 apps/
-> │      └── 📂 QiDocs/
-> │        ├── 📄 index.html
-> │      └── 📂 gina_core/
-> │        └── 📂 __pycache__/
-> │          ├── 📄 __init__.cpython-314.pyc
-> │          ├── 📄 utils.cpython-314.pyc
-> │        ├── 📄 db.py
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        └── 📂 services/
-> │          ├── 📄 capture.py
-> │          ├── 📄 index.html
-> │        ├── 📄 utils.py
-> │      ├── 📄 index.html
-> │      └── 📂 launcher/
-> │        ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          ├── 📄 index.html
-> │        └── 📂 src/
-> │          ├── 📄 App.css
-> │          ├── 📄 App.jsx
-> │          └── 📂 components/
-> │            ├── 📄 FileBrowser.css
-> │            ├── 📄 Tooltip.css
-> │            ├── 📄 Tooltip.jsx
-> │            ├── 📄 index.html
-> │          ├── 📄 index.css
-> │          ├── 📄 index.html
-> │          ├── 📄 main.jsx
-> │          ├── 📄 theme.js
-> │    └── 📂 data/
-> │      └── 📂 compiled/
-> │        ├── 📄 index.html
-> │        ├── 📄 qios_constitution_v1.json
-> │      ├── 📄 index.html
-> │      └── 📂 migrations/
-> │        ├── 📄 001_ingestion_queue.sql
-> │        ├── 📄 002_semantic_profile_file_level.sql
-> │        ├── 📄 index.html
-> │      └── 📂 outputs/
-> │        ├── 📄 index.html
-> │      ├── 📄 qios_01_tables_and_registries.canvas
-> │      ├── 📄 qios_03_directory_tree.canvas
-> │      └── 📂 schemas/
-> │        ├── 📄 index.html
-> │      └── 📂 seeds/
-> │        ├── 📄 index.html
-> │        ├── 📄 supabase_seed_qid.sql
-> │        ├── 📄 supabase_seed_realms.sql
-> │        ├── 📄 supabase_seed_rules.sql
-> │      └── 📂 sheets/
-> │        ├── 📄 front_matter_schema_v1.csv
-> │        ├── 📄 fs_ignore_v1.csv
-> │        ├── 📄 index.html
-> │        ├── 📄 qios_rules_v1_1.csv
-> │    └── 📂 docs/
-> │      ├── 📄 INTEGRATION_COMPLETE.md
-> │      ├── 📄 QiAlly Call Ecosystem & Gina Voice Architecture.md
-> │      ├── 📄 gina_n8n_workflows.md
-> │      ├── 📄 index.html
-> │      ├── 📄 integration_summary.md
-> │      ├── 📄 launcher_ui_mindmap.md
-> │      ├── 📄 markdownlint_analysis_genesis.md
-> │      ├── 📄 markdownlint_analysis_remaining.md
-> │      ├── 📄 markdownlint_final_analysis.md
-> │      ├── 📄 markdownlint_quick_reference.md
-> │      ├── 📄 markdownlint_review_summary.md
-> │      ├── 📄 markdownlint_summary.md
-> │      └── 📂 notes/
-> │        ├── 📄 discussion26-07-01.md
-> │        ├── 📄 index.html
-> │      └── 📂 prompts/
-> │        ├── 📄 cockpit_gui_prompt.md
-> │        ├── 📄 index.html
-> │      ├── 📄 ui_contracts_v1.md
-> │    ├── 📄 env.example
-> │    └── 📂 gina_core/
-> │      ├── 📄 index.html
-> │      ├── 📄 main.py
-> │      ├── 📄 requirements.txt
-> │    ├── 📄 index.html
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    └── 📂 public/
-> │      ├── 📄 index.html
-> │    ├── 📄 qios_00_genesis.canvas
-> │    ├── 📄 qios_runtime_mindmap.canvas
-> │    └── 📂 rules/
-> │      ├── 📄 _readme.md
-> │      ├── 📄 folder_registry.yaml
-> │      ├── 📄 index.html
-> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │      ├── 📄 qios_05_Cursor_and_naming.canvas
-> │      └── 📂 qios_cursor_prompts/
-> │        ├── 📄 index.html
-> │        ├── 📄 install_ingestion_worker.md
-> │        ├── 📄 project_prompt.md.md
-> │        ├── 📄 qicompiler_add_prompt.md
-> │        ├── 📄 qicompiler_orchestrator_prompt.md
-> │        ├── 📄 qimatrix_csv_prompt.md
-> │        ├── 📄 qimatrix_sql_prompt.md
-> │        ├── 📄 qimatrix_yaml_prompt.md
-> │        ├── 📄 step3_tree_compiler_prompt.md
-> │        ├── 📄 user_prompt.md.md
-> │      ├── 📄 realms_registry.yaml
-> │    └── 📂 src/
-> │      ├── 📄 App.css
-> │      ├── 📄 App.jsx
-> │      └── 📂 components/
-> │        ├── 📄 FileBrowser.css
-> │        ├── 📄 Tooltip.css
-> │        ├── 📄 Tooltip.jsx
-> │        ├── 📄 index.html
-> │      ├── 📄 index.css
-> │      ├── 📄 index.html
-> │      ├── 📄 main.jsx
-> │      ├── 📄 theme.js
-> │    └── 📂 templates/
-> │      └── 📂 docs/
-> │        ├── 📄 index.html
-> │        ├── 📄 readme_template.md.md
-> │      ├── 📄 index.html
-> │    └── 📂 tests/
-> │      ├── 📄 index.html
-> │      ├── 📄 verify_parsing.py
-> │    └── 📂 tools/
-> │      ├── 📄 README_SCANNER.md
-> │      ├── 📄 index.html
-> │      ├── 📄 run_migrations.py
-> │    └── 📂 workers/
-> │      ├── 📄 _readme.md
-> │      └── 📂 _shared/
-> │        ├── 📄 index.html
-> │      └── 📂 embedder/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_embedder.ts
-> │      ├── 📄 index.html
-> │      └── 📂 ingestion/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_ingestion.ts
-> │      └── 📂 linter/
-> │        ├── 📄 index.html
-> │        ├── 📄 readme_generator.py
-> │      └── 📂 metadata_naming/
-> │        ├── 📄 index.html
-> │      └── 📂 orchestrator/
-> │        ├── 📄 OrchestratorState.ts
-> │        ├── 📄 index.html
-> │        └── 📂 migrations/
-> │          ├── 📄 0001_do.mjs
-> │          ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        ├── 📄 qios_06_workers_orchestrator.canvas
-> │        ├── 📄 worker_orchestrator.ts
-> │      └── 📂 self_heal/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_self_heal.ts
-> │      └── 📂 semantic_router/
-> │        ├── 📄 index.html
-> │  └── 📂 qially-com/
-> │    ├── 📄 404.html
-> │    ├── 📄 README (2).md
-> │    ├── 📄 README.md
-> │    └── 📂 _qsaysit_legacy/
-> │    ├── 📄 _redirects
-> │    └── 📂 assets/
-> │      └── 📂 css/
-> │      └── 📂 files/
-> │        ├── 📄 balance-sheet-template.xlsx
-> │        └── 📂 forms/
-> │          └── 📂 uscis/
-> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
-> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
-> │        ├── 📄 income-statement-template.xlsx
-> │        ├── 📄 payroll-calendar-2026.pdf
-> │        ├── 📄 tax-prep-checklist.pdf
-> │      └── 📂 imgs/
-> │        ├── 📄 allegaracasa.jpg
-> │        ├── 📄 astrotext.png
-> │        └── 📂 business_tools/
-> │          ├── 📄 balance_sheet.svg
-> │          ├── 📄 calendar.svg
-> │          ├── 📄 capital.svg
-> │          ├── 📄 checklist.svg
-> │          ├── 📄 funding.svg
-> │          ├── 📄 income.svg
-> │          ├── 📄 inventory.svg
-> │          ├── 📄 invoice.svg
-> │          ├── 📄 payroll.svg
-> │          ├── 📄 sku.svg
-> │        ├── 📄 llegaracasa.jpg
-> │        ├── 📄 logo.png
-> │        ├── 📄 profile.jpg
-> │      └── 📂 js/
-> │        ├── 📄 i18n.js
-> │      └── 📂 vids/
-> │    ├── 📄 astro.config.mjs
-> │    └── 📂 cody/
-> │      ├── 📄 index.html
-> │    ├── 📄 contact.json
-> │    ├── 📄 footer.html
-> │    └── 📂 functions/
-> │      ├── 📄 [[path]].js
-> │    ├── 📄 header.html
-> │    ├── 📄 humans.txt
-> │    ├── 📄 index.html
-> │    └── 📂 kb/
-> │      └── 📂 accounting-cleanup/
-> │        ├── 📄 index.html
-> │      └── 📂 getting-started/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 irs-notices/
-> │        ├── 📄 index.html
-> │      └── 📂 tax-resolution/
-> │        ├── 📄 index.html
-> │    ├── 📄 main.js
-> │    ├── 📄 manifest.webmanifest
-> │    └── 📂 modules/
-> │      └── 📂 hr-ops/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 it-ai/
-> │        ├── 📄 index.html
-> │      └── 📂 qisuite/
-> │        ├── 📄 index.html
-> │      └── 📂 taxes/
-> │        ├── 📄 index.html
-> │        └── 📂 tax-prep-2025/
-> │          ├── 📄 FormsQRCode.png
-> │          ├── 📄 bookingQRCode.png
-> │          └── 📂 email-templates/
-> │            ├── 📄 email-01-simple-w2.html
-> │            ├── 📄 email-02-self-employed.html
-> │            ├── 📄 email-03-complex.html
-> │            ├── 📄 email-04-itin.html
-> │            ├── 📄 email-05-business.html
-> │            ├── 📄 email-06-confirmation-docs.html
-> │            ├── 📄 email-generic-next-steps.html
-> │            ├── 📄 email-intake-received.html
-> │          └── 📂 forms/
-> │            ├── 📄 business.html
-> │            ├── 📄 complex.html
-> │            ├── 📄 head-of-household.html
-> │            ├── 📄 itin.html
-> │            ├── 📄 self-employed.html
-> │            ├── 📄 simple-w2.html
-> │          ├── 📄 index.html
-> │          └── 📂 next-steps/
-> │            ├── 📄 business.html
-> │            ├── 📄 complex.html
-> │            ├── 📄 head-of-household.html
-> │            ├── 📄 index.html
-> │            ├── 📄 itin.html
-> │            ├── 📄 self-employed.html
-> │            ├── 📄 simple-w2.html
-> │          ├── 📄 prompts.md
-> │          ├── 📄 qr-code.html
-> │          ├── 📄 tax-prep-2025-booking.html
-> │          ├── 📄 tax-prep-2025-intake.html
-> │          ├── 📄 taxprepqially.jpg
-> │        └── 📂 year-end-process/
-> │          ├── 📄 index.html
-> │    ├── 📄 orchestrate_clarity.py
-> │    ├── 📄 package.json
-> │    └── 📂 pages/
-> │      └── 📂 budgets/
-> │        ├── 📄 index.html
-> │      └── 📂 business_tools/
-> │        ├── 📄 index.html
-> │      └── 📂 chat/
-> │        ├── 📄 index.html
-> │        ├── 📄 sales-iq-landing-page-qr-code.png
-> │      └── 📂 compliance/
-> │        ├── 📄 data-inventory.html
-> │        ├── 📄 incident-response.html
-> │        ├── 📄 index.html
-> │        └── 📂 internal/
-> │          └── 📂 provider-agreements/
-> │            ├── 📄 index.html
-> │          └── 📂 training-logs/
-> │            ├── 📄 index.html
-> │        ├── 📄 risk-assessment.html
-> │        └── 📂 service_animal_gigi/
-> │          ├── 📄 Gigi_Certification_Statement.html
-> │          ├── 📄 Gigi_Documentation_Pack.md
-> │          ├── 📄 Gigi_Documentation_Pack_Print.html
-> │          ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │          ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
-> │          ├── 📄 Notice_Service_Animal_Status.html
-> │          └── 📂 assets/
-> │            ├── 📄 gigi_service_dog_hero.png
-> │          ├── 📄 index.html
-> │        ├── 📄 wisp-core.html
-> │      └── 📂 ecard/
-> │        ├── 📄 cody.vcf
-> │        ├── 📄 index.html
-> │      └── 📂 letters/
-> │        └── 📂 client.wiletvaldo_calderon-ramirez/
-> │          ├── 📄 index.html
-> │          ├── 📄 infographic.png
-> │          ├── 📄 review_audio.m4a
-> │        └── 📂 engagement/
-> │          ├── 📄 SignForm_URL_QR.png
-> │          ├── 📄 engagement_standard.html
-> │          ├── 📄 index.html
-> │        └── 📂 evansville_inn/
-> │          ├── 📄 Notice_Room_Conditions.html
-> │      └── 📂 msa/
-> │        ├── 📄 index.html
-> │      └── 📂 portfolio/
-> │        ├── 📄 index.html
-> │      └── 📂 privacy/
-> │        ├── 📄 index.html
-> │      └── 📂 referral/
-> │        └── 📂 cashapp/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 quickbooks/
-> │          ├── 📄 index.html
-> │        └── 📂 zoho/
-> │          ├── 📄 index.html
-> │      └── 📂 resources/
-> │        ├── 📄 index.html
-> │      └── 📂 review/
-> │        ├── 📄 index.html
-> │      └── 📂 services/
-> │        ├── 📄 index.html
-> │      └── 📂 showcases/
-> │        └── 📂 20000-swing/
-> │          ├── 📄 index.html
-> │        ├── 📄 videos.html
-> │      └── 📂 terms/
-> │        ├── 📄 index.html
-> │    └── 📂 public/
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 favicon.svg
-> │    └── 📂 qially-com-v2.0/
-> │      └── 📂 QiAlly-com/
-> │        ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 postcss.config.js
-> │        └── 📂 public/
-> │        └── 📂 src/
-> │      ├── 📄 README.md
-> │      └── 📂 accounting/
-> │      └── 📂 assets/
-> │        └── 📂 css/
-> │        └── 📂 js/
-> │        └── 📂 public/
-> │      └── 📂 blog/
-> │      ├── 📄 contact.json
-> │      └── 📂 files/
-> │        ├── 📄 cody_rice_velasquez-fullstack.pdf
-> │        └── 📂 forms/
-> │        └── 📂 resume/
-> │      ├── 📄 footer.html
-> │      └── 📂 forms/
-> │      └── 📂 hr-ops/
-> │        ├── 📄 index.html
-> │      ├── 📄 humans.txt
-> │      └── 📂 images/
-> │        ├── 📄 cover.jpg
-> │        ├── 📄 profile.jpg
-> │        ├── 📄 video-logo.mp4
-> │      └── 📂 individual/
-> │        ├── 📄 index.html
-> │      └── 📂 it-ai/
-> │      └── 📂 legal/
-> │      └── 📂 portfolio/
-> │        ├── 📄 q-showcase-light.html
-> │      ├── 📄 privacy.html
-> │      └── 📂 qisuite/
-> │      └── 📂 review/
-> │        ├── 📄 qrcode_www.google.com.png
-> │      └── 📂 service-agreement/
-> │      └── 📂 showcases/
-> │        └── 📂 20000-swing/
-> │        ├── 📄 videos.html
-> │      ├── 📄 sitemap.xml
-> │      └── 📂 taxes/
-> │        ├── 📄 index.html
-> │        └── 📂 itin/
-> │    ├── 📄 robots.txt
-> │    ├── 📄 service-worker.js
-> │    ├── 📄 sitemap.xml
-> │    └── 📂 sites_QiAlly.com_cashapp_bonus/
-> │      ├── 📄 Cash_App_$15_Bonus_Five_Simple_Steps.m4a
-> │      ├── 📄 bonus_cody_en.mp3
-> │      ├── 📄 bonus_cody_es.mp3
-> │      ├── 📄 bonus_explainer_nlm_en.mp3
-> │      ├── 📄 bonus_explainer_nlm_es.mp3
-> │      ├── 📄 bonus_steps_es.png
-> │      ├── 📄 index.html
-> │      ├── 📄 infographic.png
-> │      ├── 📄 unnamed.png
-> │    └── 📂 sites_QiAlly.com_flows/
-> │      ├── 📄 README.md
-> │      └── 📂 assets/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 logo.svg
-> │        ├── 📄 styles.css
-> │      ├── 📄 index.html
-> │      ├── 📄 privacy.html
-> │      ├── 📄 terms.html
-> │    └── 📂 sites_QiAlly.com_helpcody/
-> │      ├── 📄 README.md
-> │      ├── 📄 data.csv
-> │      ├── 📄 index.html
-> │    └── 📂 sites_QiAlly.com_tax99/
-> │      ├── 📄 README.md
-> │      ├── 📄 index.html
-> │      └── 📂 steps/
-> │        ├── 📄 index.html
-> │      └── 📂 templates/
-> │        ├── 📄 email-template-client.html
-> │        ├── 📄 email-template-internal.html
-> │        ├── 📄 index.html
-> │      ├── 📄 worker.js
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 sites_Qially.com_kb/
-> │    └── 📂 src/
-> │      └── 📂 pages/
-> │        ├── 📄 index.astro
-> │    ├── 📄 tsconfig.json
-> │    ├── 📄 vizvibe.mmd
-> │  └── 📂 qione-portal/
-> │    └── 📂 _dirtfree_legacy/
-> │      ├── 📄 ACCOUNT_LINKING.md
-> │      ├── 📄 BLUEPRINT.md
-> │      ├── 📄 DIRT_FREE_PROMPTS.md
-> │      ├── 📄 LAUNCH_CHECKLIST.md
-> │      ├── 📄 LICENSE
-> │      ├── 📄 QiOS_Local_Only.code-workspace
-> │      ├── 📄 README.md
-> │      ├── 📄 REALTIME_SYNC.md
-> │      ├── 📄 convert_blueprint.py
-> │      └── 📂 dirt-free-portal/
-> │        ├── 📄 BUNDLE-OPTIMIZATION-SUMMARY.md
-> │        ├── 📄 DEPLOYMENT.md
-> │        ├── 📄 ERROR-TRACKING.md
-> │        ├── 📄 LOGGING.md
-> │        ├── 📄 OPTIMIZATION-SUMMARY.md
-> │        ├── 📄 PERFORMANCE-MONITORING.md
-> │        ├── 📄 PERFORMANCE-OPTIMIZATION.md
-> │        ├── 📄 RATE-LIMITING.md
-> │        ├── 📄 README.md
-> │        ├── 📄 SECURITY-HEADERS.md
-> │        └── 📂 __tests__/
-> │          ├── 📄 sample.test.tsx
-> │        ├── 📄 components.json
-> │        └── 📂 docs/
-> │          ├── 📄 API.md
-> │          ├── 📄 DATABASE_OPTIMIZATION.md
-> │          ├── 📄 LAUNCH_PROCEDURES.md
-> │          ├── 📄 PERFORMANCE.md
-> │          ├── 📄 PRE-LAUNCH-CHECKLIST.md
-> │          ├── 📄 USER_GUIDE.md
-> │        └── 📂 e2e/
-> │          ├── 📄 appointments.spec.ts
-> │          └── 📂 fixtures/
-> │            ├── 📄 auth.ts
-> │          ├── 📄 login.spec.ts
-> │        ├── 📄 eslint.config.mjs
-> │        ├── 📄 instrumentation.ts
-> │        ├── 📄 jest.config.js
-> │        ├── 📄 jest.setup.js
-> │        ├── 📄 middleware.ts
-> │        ├── 📄 next.config.ts
-> │        ├── 📄 next.config.ts.bak
-> │        ├── 📄 next.config.ts.bak2
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        ├── 📄 playwright.config.ts
-> │        ├── 📄 postcss.config.mjs
-> │        └── 📂 public/
-> │        └── 📂 scripts/
-> │          ├── 📄 create-test-customer.mjs
-> │          ├── 📄 monitor-production.mjs
-> │          ├── 📄 performance-audit.mjs
-> │          ├── 📄 pre-launch-check.mjs
-> │        ├── 📄 sentry.client.config.ts
-> │        ├── 📄 sentry.edge.config.ts
-> │        ├── 📄 sentry.server.config.ts
-> │        └── 📂 src/
-> │          └── 📂 __tests__/
-> │            └── 📂 api/
-> │              └── 📂 payments/
-> │                ├── 📄 create-intent.test.ts
-> │                ├── 📄 webhooks.test.ts
-> │            └── 📂 components/
-> │              └── 📂 dashboard/
-> │                ├── 📄 sidebar.test.tsx
-> │            └── 📂 fixtures/
-> │              ├── 📄 invoices.ts
-> │              ├── 📄 payments.ts
-> │            └── 📂 helpers/
-> │              ├── 📄 stripe-mocks.ts
-> │              ├── 📄 supabase-mocks.ts
-> │            └── 📂 lib/
-> │              ├── 📄 utils.test.ts
-> │          └── 📂 app/
-> │            └── 📂 (auth)/
-> │              └── 📂 login/
-> │            └── 📂 (dashboard)/
-> │              └── 📂 dashboard/
-> │                └── 📂 account/
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 payment-methods/
-> │                    ├── 📄 page.tsx
-> │                    ├── 📄 page.tsx.bak
-> │                └── 📂 appointments/
-> │                  └── 📂 [id]/
-> │                    ├── 📄 page.tsx.bak2
-> │                    └── 📂 reschedule/
-> │                      ├── 📄 layout.tsx
-> │                      ├── 📄 page.tsx
-> │                  └── 📂 new/
-> │                    └── 📂 confirm/
-> │                      ├── 📄 page.tsx
-> │                    └── 📂 datetime/
-> │                    ├── 📄 page.tsx
-> │                  ├── 📄 page.tsx
-> │                └── 📂 documents/
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 warranties/
-> │                └── 📂 help/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 invoices/
-> │                  └── 📂 [id]/
-> │                    └── 📂 pay/
-> │                      ├── 📄 page.tsx.bak
-> │                    └── 📂 success/
-> │                      ├── 📄 page.tsx
-> │                  ├── 📄 page.tsx
-> │                └── 📂 messages/
-> │                  └── 📂 [id]/
-> │                    ├── 📄 page.tsx.bak
-> │                    ├── 📄 page.tsx.bak2
-> │                  └── 📂 new/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 notifications/
-> │                  ├── 📄 page.tsx
-> │                ├── 📄 page.tsx
-> │                └── 📂 rewards/
-> │                  └── 📂 history/
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 referrals/
-> │                    ├── 📄 page.tsx
-> │              ├── 📄 error.tsx
-> │              ├── 📄 layout.tsx
-> │            └── 📂 api/
-> │              └── 📂 analytics/
-> │                └── 📂 portal-stats/
-> │                  ├── 📄 route.ts
-> │                └── 📂 track-session/
-> │                  ├── 📄 route.ts
-> │              └── 📂 appointments/
-> │                └── 📂 [id]/
-> │                  └── 📂 cancel/
-> │                    ├── 📄 route.ts
-> │              └── 📂 cache/
-> │                └── 📂 clear/
-> │                  ├── 📄 route.ts
-> │                └── 📂 stats/
-> │                  ├── 📄 route.ts
-> │              └── 📂 health/
-> │                ├── 📄 route.ts
-> │              └── 📂 invoices/
-> │                └── 📂 [id]/
-> │                  └── 📂 pdf/
-> │                    ├── 📄 route.ts
-> │              └── 📂 notifications/
-> │                └── 📂 send-email/
-> │                  ├── 📄 route.ts
-> │                  ├── 📄 route.ts.bak
-> │              └── 📂 payments/
-> │                └── 📂 confirm/
-> │                  ├── 📄 route.ts
-> │                  ├── 📄 route.ts.bak
-> │                └── 📂 create-intent/
-> │                  ├── 📄 route.ts
-> │                └── 📂 export/
-> │                  ├── 📄 route.ts
-> │                └── 📂 methods/
-> │                  └── 📂 [id]/
-> │                    ├── 📄 route.ts
-> │                  ├── 📄 route.ts
-> │                └── 📂 setup-intent/
-> │                  ├── 📄 route.ts
-> │              └── 📂 rewards/
-> │                └── 📂 [id]/
-> │                  └── 📂 redeem/
-> │                    ├── 📄 route.ts
-> │              └── 📂 webhooks/
-> │                └── 📂 stripe/
-> │                  ├── 📄 route.ts
-> │            ├── 📄 error.tsx
-> │            ├── 📄 global-error.tsx
-> │            ├── 📄 globals.css
-> │            ├── 📄 layout.tsx
-> │            ├── 📄 not-found.tsx
-> │          └── 📂 components/
-> │            └── 📂 analytics/
-> │              ├── 📄 payment-success-tracker.tsx
-> │              ├── 📄 performance-monitor.tsx
-> │              ├── 📄 session-tracker.tsx
-> │            └── 📂 dashboard/
-> │              ├── 📄 header.tsx
-> │              ├── 📄 mobile-nav.tsx
-> │              ├── 📄 quick-actions-card.tsx
-> │              ├── 📄 recent-activity-section.tsx
-> │              ├── 📄 sidebar.tsx
-> │            └── 📂 documents/
-> │              ├── 📄 photo-gallery.tsx
-> │            ├── 📄 error-boundary.tsx
-> │            └── 📂 errors/
-> │              ├── 📄 customer-not-found.tsx
-> │            └── 📂 help/
-> │              ├── 📄 print-button.tsx
-> │            └── 📂 invoices/
-> │              ├── 📄 DownloadButton.tsx
-> │            └── 📂 messages/
-> │              ├── 📄 AttachmentCard.tsx
-> │              ├── 📄 MessageList.tsx
-> │              ├── 📄 MessageThread.tsx
-> │              ├── 📄 NewMessageDialog.tsx
-> │            └── 📂 notifications/
-> │              ├── 📄 NotificationBell.tsx
-> │              ├── 📄 NotificationCenter.tsx
-> │              ├── 📄 notification-provider.tsx
-> │            └── 📂 payments/
-> │              ├── 📄 AddCardDialog.tsx
-> │              ├── 📄 payment-form.tsx
-> │            └── 📂 rewards/
-> │              ├── 📄 redeem-button.tsx
-> │            └── 📂 ui/
-> │              ├── 📄 alert-dialog.tsx
-> │              ├── 📄 alert.tsx
-> │              ├── 📄 avatar.tsx
-> │              ├── 📄 button.tsx
-> │              ├── 📄 calendar.tsx
-> │              ├── 📄 checkbox.tsx
-> │              ├── 📄 dialog.tsx
-> │              ├── 📄 dropdown-menu.tsx
-> │              ├── 📄 file-upload.tsx
-> │              ├── 📄 label.tsx
-> │              ├── 📄 optimized-image.tsx
-> │              ├── 📄 popover.tsx
-> │              ├── 📄 scroll-area.tsx
-> │              ├── 📄 select.tsx
-> │              ├── 📄 separator.tsx
-> │              ├── 📄 sheet.tsx
-> │              ├── 📄 skeleton.tsx
-> │              ├── 📄 sonner.tsx
-> │              ├── 📄 switch.tsx
-> │              ├── 📄 tabs.tsx
-> │              ├── 📄 tooltip.tsx
-> │          └── 📂 hooks/
-> │            ├── 📄 useUnreadMessages.ts
-> │          └── 📂 lib/
-> │            └── 📂 analytics/
-> │            ├── 📄 analytics.ts
-> │              ├── 📄 session-tracking.ts
-> │            ├── 📄 audit.ts
-> │            ├── 📄 db-cache.ts
-> │            └── 📂 email/
-> │              ├── 📄 send.ts
-> │              ├── 📄 templates.ts
-> │            ├── 📄 env.ts
-> │            ├── 📄 logger.ts
-> │            ├── 📄 monitoring.ts
-> │            ├── 📄 notifications.ts
-> │            ├── 📄 pdf-generator-lazy.ts
-> │            ├── 📄 pdf-generator.ts
-> │            ├── 📄 rate-limit.ts
-> │            ├── 📄 sentry-utils.ts
-> │            ├── 📄 storage.ts
-> │            └── 📂 stripe/
-> │              ├── 📄 client.ts
-> │              ├── 📄 server.ts
-> │            └── 📂 supabase/
-> │              ├── 📄 client.ts
-> │              ├── 📄 middleware.ts
-> │              ├── 📄 realtime-helper.ts
-> │              ├── 📄 server.ts
-> │          └── 📂 types/
-> │        └── 📂 supabase/
-> │          ├── 📄 01-create-portal-tables.sql
-> │          ├── 📄 02-apply-rls-policies.sql
-> │          ├── 📄 03-create-storage-buckets.sql
-> │          ├── 📄 03-create-test-customer.sql
-> │          ├── 📄 04-add-file-attachments-support.sql
-> │          ├── 📄 05-add-missing-message-columns.sql
-> │          ├── 📄 06-add-reply-attachments-support.sql
-> │          ├── 📄 07-add-attachment-analytics.sql
-> │          ├── 📄 08-create-notifications-table.sql
-> │          ├── 📄 09-add-portal-analytics.sql
-> │          ├── 📄 10-add-performance-indexes.sql
-> │          ├── 📄 11-create-audit-logs-table.sql
-> │          ├── 📄 README.md
-> │          ├── 📄 policies.sql
-> │        ├── 📄 tailwind.config.ts
-> │        ├── 📄 tsconfig.json
-> │        ├── 📄 vercel.json
-> │      ├── 📄 middleware.ts
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        └── 📂 app/
-> │          └── 📂 (auth)/
-> │            ├── 📄 layout.tsx
-> │            └── 📂 login/
-> │              ├── 📄 page.tsx
-> │          └── 📂 (dashboard)/
-> │            └── 📂 dashboard/
-> │              └── 📂 account/
-> │                ├── 📄 layout.tsx
-> │                ├── 📄 page.tsx
-> │                └── 📂 payment-methods/
-> │                  ├── 📄 layout.tsx
-> │                  ├── 📄 page.tsx
-> │              └── 📂 appointments/
-> │                └── 📂 [id]/
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 reschedule/
-> │                    ├── 📄 page.tsx
-> │                └── 📂 new/
-> │                  └── 📂 confirm/
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 datetime/
-> │                    ├── 📄 page.tsx
-> │                  ├── 📄 layout.tsx
-> │              └── 📂 documents/
-> │                ├── 📄 page.tsx
-> │                └── 📂 warranties/
-> │                  ├── 📄 page.tsx
-> │              ├── 📄 example-realtime-usage.tsx
-> │              └── 📂 history/
-> │                ├── 📄 page.tsx
-> │              └── 📂 invoices/
-> │                └── 📂 [id]/
-> │                  └── 📂 pay/
-> │                    ├── 📄 layout.tsx
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 success/
-> │                    ├── 📄 page.tsx
-> │                ├── 📄 page.tsx
-> │              ├── 📄 loading.tsx
-> │              └── 📂 messages/
-> │                └── 📂 [id]/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 new/
-> │                  ├── 📄 layout.tsx
-> │                  ├── 📄 page.tsx
-> │                ├── 📄 page.tsx
-> │              ├── 📄 page.tsx
-> │              └── 📂 rewards/
-> │                └── 📂 history/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 referrals/
-> │                  ├── 📄 layout.tsx
-> │            ├── 📄 error.tsx
-> │            ├── 📄 layout.tsx
-> │          └── 📂 api/
-> │            └── 📂 appointments/
-> │              └── 📂 [id]/
-> │                └── 📂 cancel/
-> │                  ├── 📄 route.ts
-> │            └── 📂 auth/
-> │              └── 📂 link-account/
-> │                ├── 📄 route.ts
-> │              └── 📂 sso/
-> │                ├── 📄 route.ts
-> │                └── 📂 verify/
-> │                  ├── 📄 route.ts
-> │            └── 📂 payments/
-> │              └── 📂 confirm/
-> │                ├── 📄 route.ts
-> │              └── 📂 create-intent/
-> │                ├── 📄 route.ts
-> │              └── 📂 export/
-> │                ├── 📄 route.ts
-> │              └── 📂 methods/
-> │                └── 📂 [id]/
-> │                  ├── 📄 route.ts
-> │                ├── 📄 route.ts
-> │            └── 📂 rewards/
-> │              └── 📂 [id]/
-> │                └── 📂 redeem/
-> │                  ├── 📄 route.ts
-> │            └── 📂 webhooks/
-> │              └── 📂 stripe/
-> │                ├── 📄 route.ts
-> │          ├── 📄 page.tsx
-> │        └── 📂 components/
-> │          └── 📂 analytics/
-> │            ├── 📄 payment-success-tracker.tsx
-> │          └── 📂 dashboard/
-> │            ├── 📄 AccountLinkingBanner.tsx
-> │            ├── 📄 header.tsx
-> │            ├── 📄 sidebar.tsx
-> │          └── 📂 documents/
-> │            ├── 📄 photo-gallery.tsx
-> │            ├── 📄 service-timeline.tsx
-> │          └── 📂 messages/
-> │            ├── 📄 reply-form.tsx
-> │          └── 📂 notifications/
-> │            ├── 📄 notification-provider.tsx
-> │          └── 📂 payments/
-> │          └── 📂 realtime/
-> │            ├── 📄 ConnectionStatus.tsx
-> │          └── 📂 rewards/
-> │            ├── 📄 redeem-button.tsx
-> │          └── 📂 ui/
-> │            ├── 📄 badge.tsx
-> │            ├── 📄 card.tsx
-> │            ├── 📄 input.tsx
-> │            ├── 📄 progress.tsx
-> │            ├── 📄 textarea.tsx
-> │        └── 📂 hooks/
-> │          ├── 📄 useRealtime.ts
-> │        └── 📂 lib/
-> │          ├── 📄 analytics.ts
-> │          └── 📂 auth/
-> │            ├── 📄 signup.ts
-> │            ├── 📄 sso-token.ts
-> │          └── 📂 email/
-> │            ├── 📄 send.ts
-> │            ├── 📄 templates.ts
-> │          ├── 📄 env.ts
-> │          ├── 📄 rate-limit.ts
-> │          └── 📂 realtime/
-> │            ├── 📄 sync.ts
-> │          └── 📂 stripe/
-> │            ├── 📄 client.ts
-> │            ├── 📄 server.ts
-> │          └── 📂 supabase/
-> │            ├── 📄 client.ts
-> │            ├── 📄 middleware.ts
-> │            ├── 📄 server.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 types/
-> │          ├── 📄 database.types.ts
-> │          ├── 📄 index.ts
-> │      └── 📂 supabase/
-> │        ├── 📄 policies.sql
-> │      ├── 📄 tailwind.config.ts
-> │      ├── 📄 vercel.json
-> │    └── 📂 app/
-> │      └── 📂 (portal)/
-> │        ├── 📄 layout.tsx
-> │        └── 📂 objects/
-> │          └── 📂 [objectKey]/
-> │            └── 📂 contract/
-> │              ├── 📄 page.tsx
-> │            └── 📂 csv/
-> │              └── 📂 [formKey]/
-> │                ├── 📄 page.tsx
-> │            └── 📂 forms/
-> │              └── 📂 [formKey]/
-> │                ├── 📄 page.tsx
-> │            ├── 📄 page.tsx
-> │        ├── 📄 page.tsx
-> │        └── 📂 qichronicle/
-> │          ├── 📄 page.tsx
-> │      └── 📂 api/
-> │        └── 📂 qichronicle/
-> │          └── 📂 moments/
-> │            └── 📂 [id]/
-> │              ├── 📄 route.ts
-> │            ├── 📄 route.ts
-> │      ├── 📄 layout.tsx
-> │    ├── 📄 next-env.d.ts
-> │    ├── 📄 next.config.mjs
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      └── 📂 qione/
-> │        └── 📂 contracts/
-> │          ├── 📄 deriveContract.ts
-> │        └── 📂 csv/
-> │          ├── 📄 csvParse.ts
-> │          ├── 📄 csvValidate.ts
-> │        └── 📂 objects/
-> │          ├── 📄 appointment.ts
-> │          ├── 📄 case.ts
-> │          ├── 📄 chore.ts
-> │          ├── 📄 contact.ts
-> │          ├── 📄 expense.ts
-> │          ├── 📄 index.ts
-> │          ├── 📄 medication.ts
-> │          ├── 📄 patient.ts
-> │          ├── 📄 types.ts
-> │      └── 📂 ui/
-> │        └── 📂 components/
-> │          ├── 📄 DataTable.tsx
-> │          ├── 📄 FieldRenderer.tsx
-> │          ├── 📄 FormRenderer.tsx
-> │          ├── 📄 Sidebar.tsx
-> │          ├── 📄 Topbar.tsx
-> │        └── 📂 styles/
-> │          ├── 📄 globals.css
-> │    ├── 📄 tsc_errors.txt
-> │    ├── 📄 tsc_errors_utf8.txt
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 qivault-web/
-> │    ├── 📄 README.md
-> │    ├── 📄 contract.md
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 App.tsx
-> │      └── 📂 pages/
-> │        ├── 📄 DocumentDetailPage.tsx
-> │        ├── 📄 InboxPage.tsx
-> │        ├── 📄 SearchPage.tsx
-> │        ├── 📄 SettingsPage.tsx
-> │        ├── 📄 TagsPage.tsx
-> │      └── 📂 services/
-> │        ├── 📄 storage.ts
-> │      └── 📂 types/
-> │        ├── 📄 index.ts
-> │    ├── 📄 vite.config.ts
-> └── 📂 content/
-> │  ├── 📄 README.md
-> └── 📂 experiments/
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 assets/
-> │    ├── 📄 introvideo.mp4
-> │    ├── 📄 package.json
-> │    └── 📂 public/
-> │      ├── 📄 introvideo.mp4
-> │    └── 📂 src/
-> │      └── 📂 brand/
-> │      └── 📂 icons/
-> │        ├── 📄 home-40.svg
-> │      ├── 📄 index.ts
-> │  └── 📂 auth/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 config/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │      ├── 📄 repoRules.ts
-> │      ├── 📄 rulesRegistry.ts
-> │  └── 📂 database/
-> │    └── 📂 migrations/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 contentFrontMatter.ts
-> │      ├── 📄 database.types.ts
-> │      ├── 📄 index.ts
-> │  └── 📂 email/
-> │    └── 📂 partials/
-> │      ├── 📄 footer.html
-> │      ├── 📄 header.html
-> │    ├── 📄 render.ts
-> │    └── 📂 supabase-auth/
-> │      ├── 📄 README.md
-> │      ├── 📄 change_email.html
-> │      ├── 📄 confirmation.html
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │      ├── 📄 reauthentication.html
-> │      ├── 📄 recovery.html
-> │    └── 📂 templates/
-> │      └── 📂 billing/
-> │        ├── 📄 invoice.html
-> │      └── 📂 general/
-> │        ├── 📄 welcome.html
-> │      └── 📂 projects/
-> │        ├── 📄 update.html
-> │      └── 📂 tax/
-> │        ├── 📄 return-accepted.html
-> │  └── 📂 obsidian-engine/
-> │  └── 📂 schemas/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 contentFrontMatter.ts
-> │      ├── 📄 database.types.ts
-> │      ├── 📄 index.ts
-> │  └── 📂 sdk/
-> │  └── 📂 supabase/
-> │    ├── 📄 bootstrap_tenant.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 00001_core_saas_setup.sql
-> │      ├── 📄 00002_vault_and_queues.sql
-> │      ├── 📄 00003_app_schemas.sql
-> │      ├── 📄 00004_content_index.sql
-> │      ├── 📄 00005_cms_schema.sql
-> │      ├── 📄 00006_qivault_docs.sql
-> │      ├── 📄 00007_qione_platform.sql
-> │      ├── 📄 00008_qihome_app.sql
-> │      ├── 📄 00009_qichronicle.sql
-> │      ├── 📄 001_init_qione.sql
-> │      ├── 📄 002_qihome_mvp.sql
-> │      ├── 📄 003_qitax_returns.sql
-> │      ├── 📄 003a_qitax_seed.sql
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 ui/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 utils/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> ├── 📄 pnpm-workspace.yaml
-> └── 📂 python_core/
-> │  └── 📂 agents/
-> │  └── 📂 document-processors/
-> │    ├── 📄 WEB_INTERFACE.md
-> │    ├── 📄 __init__.py
-> │    ├── 📄 cli.py
-> │    ├── 📄 config.py
-> │    ├── 📄 exceptions.py
-> │    ├── 📄 extractor.py
-> │    ├── 📄 index.html
-> │    └── 📂 pipeline/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 index.html
-> │      ├── 📄 layout_detector.py
-> │      ├── 📄 model_downloader.py
-> │      ├── 📄 nanonets_processor.py
-> │      ├── 📄 neural_document_processor.py
-> │      ├── 📄 ocr_service.py
-> │    └── 📂 processors/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 base.py
-> │      ├── 📄 cloud_processor.py
-> │      ├── 📄 docx_processor.py
-> │      ├── 📄 excel_processor.py
-> │      ├── 📄 gpu_processor.py
-> │      ├── 📄 html_processor.py
-> │      ├── 📄 image_processor.py
-> │      ├── 📄 index.html
-> │      ├── 📄 pdf_processor.py
-> │      ├── 📄 pptx_processor.py
-> │      ├── 📄 txt_processor.py
-> │      ├── 📄 url_processor.py
-> │    ├── 📄 result.py
-> │    └── 📂 services/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 auth_service.py
-> │      ├── 📄 index.html
-> │      ├── 📄 ollama_service.py
-> │    └── 📂 static/
-> │      ├── 📄 index.html
-> │      ├── 📄 logo_clean.png
-> │      ├── 📄 script.js
-> │      ├── 📄 styles.css
-> │    └── 📂 templates/
-> │      ├── 📄 index.html
-> │    └── 📂 utils/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 gpu_utils.py
-> │      ├── 📄 index.html
-> │    ├── 📄 web_app.py
-> │  └── 📂 gina-ai/
-> │    ├── 📄 index.html
-> │    ├── 📄 main.py
-> │    ├── 📄 requirements.txt
-> │  ├── 📄 requirements.txt
-> ├── 📄 repo.rules.json
-> ├── 📄 requirements.txt
-> └── 📂 scripts/
-> │  ├── 📄 README.md
-> │  ├── 📄 README_add_frontmatter.md
-> │  ├── 📄 README_generate_indexes.md
-> │  ├── 📄 README_organize_vault.md
-> │  ├── 📄 SCANNER_AGENT_README.md
-> │  ├── 📄 _tools.md
-> │  ├── 📄 copy-assets.mjs
-> │  └── 📂 database/
-> │  └── 📂 exe/
-> │    ├── 📄 dotenv.exe
-> │    ├── 📄 f2py.exe
-> │    ├── 📄 fastapi.exe
-> │    ├── 📄 google-oauthlib-tool.exe
-> │    ├── 📄 normalizer.exe
-> │    ├── 📄 numpy-config.exe
-> │    ├── 📄 pip.exe
-> │    ├── 📄 pyrsa-decrypt.exe
-> │    ├── 📄 pyrsa-encrypt.exe
-> │    ├── 📄 pyrsa-keygen.exe
-> │    ├── 📄 pyrsa-priv2pub.exe
-> │    ├── 📄 pyrsa-sign.exe
-> │    ├── 📄 pyrsa-verify.exe
-> │    ├── 📄 uvicorn.exe
-> │  └── 📂 git_pusher/
-> │    ├── 📄 README.md
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │  └── 📂 hotkeys/
-> │    ├── 📄 git-autopush.ahk
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 local/
-> │    └── 📂 file_ops/
-> │      └── 📂 unzip_goblin/
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 navigator-3d.html
-> │  └── 📂 node/
-> │    ├── 📄 build-timeline-713.js
-> │    ├── 📄 build-timeline.js
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  └── 📂 poppler-25.12.0/
-> │    └── 📂 Library/
-> │      └── 📂 bin/
-> │      └── 📂 include/
-> │      └── 📂 lib/
-> │      └── 📂 share/
-> │    └── 📂 share/
-> │      └── 📂 poppler/
-> │  └── 📂 python/
-> │    ├── 📄 README_DEV_ERROR_MEMORY.md
-> │    ├── 📄 _7.10_python.md
-> │    └── 📂 agents/
-> │      ├── 📄 qios_agent.py
-> │    └── 📂 audit/
-> │      ├── 📄 check-md.py
-> │      ├── 📄 fix-spaces.py
-> │      ├── 📄 linter.py
-> │      ├── 📄 linterrunner.py
-> │    ├── 📄 build_file_registry.py
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 code_extractor.py
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │    └── 📂 convert/
-> │      ├── 📄 enhance-mkv.PY
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 unzip_downloads.py
-> │    └── 📂 core/
-> │      ├── 📄 add_frontmatter.py
-> │      ├── 📄 generate_indexes.py
-> │      ├── 📄 organize_vault_structure.py
-> │    └── 📂 create/
-> │      ├── 📄 attach-mirrors.py
-> │      ├── 📄 cloudflare-create-md.py
-> │      ├── 📄 create-canvas-directory.py
-> │      ├── 📄 create-canvas.py
-> │    └── 📂 csv-to-md/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 _Convert_csv_to_md.md
-> │      ├── 📄 _csv-to-md.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 csv_to_md.py
-> │      └── 📂 data/
-> │      ├── 📄 mapping.json
-> │      └── 📂 mapping_examples/
-> │      └── 📂 output/
-> │      └── 📂 tests/
-> │    └── 📂 debug/
-> │      ├── 📄 debug-maps.py
-> │    ├── 📄 detect_stubs.py
-> │    └── 📂 directory_tools/
-> │      ├── 📄 directory_mapper.py
-> │      ├── 📄 flatten_directory.py
-> │    ├── 📄 fast_move_notion_md_twins.py
-> │    ├── 📄 fast_move_tiny_id_md.py
-> │    ├── 📄 final_structure.py
-> │    ├── 📄 find_duplicates.py
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 generate_kb_from_json.py
-> │    ├── 📄 get_file_error_context.py
-> │    └── 📂 housekeeping/
-> │      ├── 📄 housekeeper_runner.py
-> │      ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 immigration_structure_example.py
-> │    ├── 📄 log_error_to_supabase.py
-> │    ├── 📄 mark_error_resolved.py
-> │    ├── 📄 master_experiment_consolidation.py
-> │    └── 📂 media_processing/
-> │      ├── 📄 merge_mkvs.py
-> │    ├── 📄 merge_app_docs.py
-> │    ├── 📄 merge_experiment_twins.py
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │    ├── 📄 move_md_by_body_content.py
-> │    ├── 📄 move_notion_md_twins_from_registry.py
-> │    ├── 📄 move_notions_export_md_from_registry.py
-> │    ├── 📄 move_safetodelete_media_to_assets.py
-> │    ├── 📄 move_trash_dupes_from_registry.py
-> │    ├── 📄 move_trash_image_name_matches_from_registry.py
-> │    ├── 📄 move_trash_junk_from_registry.py
-> │    ├── 📄 move_trash_nonimportant_exts_from_registry.py
-> │    └── 📂 obsidian_tools/
-> │      ├── 📄 generate_obsidian_canvas_interactive.py
-> │    └── 📂 other_tools/
-> │      ├── 📄 examine_db.py
-> │      ├── 📄 merge_media_tree.py
-> │    └── 📂 qi_codex_tool/
-> │      ├── 📄 README.md
-> │      ├── 📄 qi_codex_tool.py
-> │      ├── 📄 usage.md
-> │    ├── 📄 qicompiler.py
-> │    └── 📂 qieos_tools/
-> │      ├── 📄 README_migrate_frontmatter.md
-> │      ├── 📄 qd_autoname.py
-> │      ├── 📄 qi_migrate.py
-> │    ├── 📄 qios_dedup_tool.py
-> │    ├── 📄 queue_loader.py
-> │    └── 📂 review/
-> │      ├── 📄 compare-csv-md.py
-> │      ├── 📄 compare-drive.py
-> │      ├── 📄 search-csv.py
-> │      ├── 📄 sort-files.py
-> │    ├── 📄 run_system_test.ps1
-> │    ├── 📄 safe_collect_intake_and_trash.py
-> │    ├── 📄 simple_structure.py
-> │    ├── 📄 slugs_mapping.json.py
-> │    ├── 📄 slugs_mapping.py
-> │    ├── 📄 slugs_mapping.yaml.py
-> │    ├── 📄 smart_target_directories.py
-> │    ├── 📄 spawn_client_os.py
-> │    ├── 📄 spawn_mypunchpro.py
-> │    ├── 📄 stub_list.txt
-> │    ├── 📄 stub_results.txt
-> │    ├── 📄 summarize_qios_files.py
-> │    ├── 📄 summarize_trash_from_registry.py
-> │    ├── 📄 sync_errors_to_markdown.py
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 tree_compiler.py
-> │    ├── 📄 ultra_clean_folders.py
-> │  ├── 📄 qios_tools.json
-> │  └── 📂 qitax-cli/
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 scripts/
-> │    ├── 📄 build-timeline.js
-> │    ├── 📄 build.ps1
-> │    ├── 📄 convert_to_csv.js
-> │    ├── 📄 extract-code-report.js
-> │    ├── 📄 timeline-loader.js
-> │  └── 📂 shell/
-> │    ├── 📄 README.md
-> │    ├── 📄 README_LAUNCHERS.md
-> │    ├── 📄 RUN_COMPLETE_INBOX_ORGANIZATION.bat
-> │    ├── 📄 RUN_OBSIDIAN_ATTACHMENT_MIRRORS.bat
-> │    ├── 📄 _7.30_shell.md
-> │    ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 _move_duplicate_files.ps1
-> │    ├── 📄 _move_issitax_files.ps1
-> │    ├── 📄 activate
-> │    ├── 📄 activate.bat
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 comprehensive_cleanup.ps1
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 convert_to_csv.ps1
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 find_duplicates.ps1
-> │    ├── 📄 finish_flattening.ps1
-> │    ├── 📄 flatten_and_organize.ps1
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> │    ├── 📄 housekeeping.ps1
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 merge_media_tree.bat
-> │    ├── 📄 move_large_files.ps1
-> │    ├── 📄 newnode.bat
-> │    ├── 📄 qios_dev_start.ps1
-> │    ├── 📄 qios_start_all.ps1
-> │    ├── 📄 qios_start_quick.ps1
-> │    ├── 📄 run-qiindex.bat
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │    ├── 📄 run_housekeeper.bat
-> │    ├── 📄 run_housekeeper_dry-run.bat
-> │    ├── 📄 run_qios.ps1
-> │    ├── 📄 scanner_scheduler.ps1
-> │    ├── 📄 setup.ps1
-> │    ├── 📄 start_gina_and_launcher.ps1
-> │    ├── 📄 start_launcher.ps1
-> │    ├── 📄 start_qios.ps1
-> │    ├── 📄 start_qios_full.ps1
-> │    ├── 📄 start_qios_local.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │    ├── 📄 validate_cloud.ps1
-> │    ├── 📄 validate_local.ps1
-> │  ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 sync/
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │  ├── 📄 sync_gdrive.ps1
-> │  └── 📂 tools/
-> │    ├── 📄 enforce_fm.py
-> │    ├── 📄 fm_config.json
-> │    ├── 📄 unblock_all.bat
-> │  ├── 📄 tools_manifest.json
-> │  ├── 📄 windows_task_scheduler.xml
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 supabase/
-> │  ├── 📄 config.toml
-> │  └── 📂 functions/
-> │    └── 📂 qivault-ingest/
-> │      ├── 📄 index.ts
-> │  └── 📂 migrations/
-> │    ├── 📄 00001_core_saas_setup.sql
-> │    ├── 📄 00002_vault_and_queues.sql
-> │    ├── 📄 00003_app_schemas.sql
-> │    ├── 📄 00004_content_index.sql
-> │    ├── 📄 00005_cms_schema.sql
-> │    ├── 📄 00006_qivault_docs.sql
-> │    ├── 📄 00007_qione_platform.sql
-> │    ├── 📄 00008_qihome_app.sql
-> │    ├── 📄 00009_qichronicle.sql
-> │    ├── 📄 00100_qichronicle_moments.sql
-> │    ├── 📄 001_init_qione.sql
-> │    ├── 📄 002_qihome_mvp.sql
-> │    ├── 📄 003_qitax_returns.sql
-> │    ├── 📄 003a_qitax_seed.sql
-> │  └── 📂 snippets/
-> ├── 📄 target_architecture.txt
-> ├── 📄 turbo.json
-> ├── 📄 vizvibe.mmd
-> └── 📂 workers/
-> │  ├── 📄 _readme.md
-> │  └── 📂 _shared/
-> │    ├── 📄 constitution.ts
-> │    ├── 📄 heartbeat.ts
-> │    ├── 📄 ignore.ts
-> │  └── 📂 cloud/
-> │    └── 📂 embedder/
-> │      ├── 📄 EMBEDDER_IMPROVEMENTS.md
-> │      ├── 📄 EMBEDDER_SIMPLIFICATION.md
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 worker_embedder.ts
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 ingestion/
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 worker_ingestion.ts
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 memory/
-> │      ├── 📄 README_API.md
-> │      ├── 📄 README_DEV.md
-> │      ├── 📄 README_SECRETS.md
-> │      ├── 📄 VERIFY_SETUP.md
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │      ├── 📄 sync-secrets.sh
-> │      └── 📂 tests/
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 metadata_naming/
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 worker_metadata_naming.ts
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 orchestrator/
-> │      ├── 📄 OrchestratorState.ts
-> │      └── 📂 migrations/
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 qios_06_workers_orchestrator.canvas
-> │      ├── 📄 worker_orchestrator.ts
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 self_heal/
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 worker_self_heal.ts
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 semantic_router/
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 worker_semantic_router.ts
-> │      ├── 📄 wrangler.toml
-> │  └── 📂 data/
-> │    └── 📂 vector/
-> │      ├── 📄 qios_local.db
-> │  ├── 📄 dns_map.yml
-> │  └── 📂 embedder/
-> │    ├── 📄 EMBEDDER_IMPROVEMENTS.md
-> │    ├── 📄 EMBEDDER_SIMPLIFICATION.md
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_embedder.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 ingestion-queue/
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_ingestion.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 local_core/
-> │    ├── 📄 QUICK_START.md
-> │    ├── 📄 README.md
-> │    ├── 📄 README_WORKER.md
-> │    ├── 📄 SETUP.md
-> │    ├── 📄 TESTING_ROADMAP.md
-> │    ├── 📄 api_dev_history.py
-> │    ├── 📄 api_gina.py
-> │    ├── 📄 api_ingest.py
-> │    ├── 📄 api_query.py
-> │    ├── 📄 check_status.py
-> │    ├── 📄 check_workers.py
-> │    └── 📂 crawler/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 vault_crawler.py
-> │    ├── 📄 db.py
-> │    ├── 📄 dev_error_helpers.py
-> │    ├── 📄 frontmatter_utils.py
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 gina_chat_contract.md
-> │    ├── 📄 gina_chat_contract.ts
-> │    ├── 📄 gina_personality_prompt.md
-> │    ├── 📄 gina_prompt.py
-> │    └── 📂 integrations/
-> │      ├── 📄 INTEGRATION_LAYER_SUMMARY.md
-> │      ├── 📄 README.md
-> │      ├── 📄 __init__.py
-> │      ├── 📄 base.py
-> │      └── 📂 calendar/
-> │      └── 📂 email/
-> │      └── 📂 tts/
-> │      └── 📂 twilio/
-> │      └── 📂 zoho/
-> │    ├── 📄 job_processor.py
-> │    ├── 📄 jobs.py
-> │    ├── 📄 memory.py
-> │    └── 📂 migrations/
-> │      ├── 📄 001_init.sql
-> │      ├── 📄 002_conversation_tables.sql
-> │      ├── 📄 003_filesystem_index.sql
-> │      ├── 📄 004_integration_tokens.sql
-> │      ├── 📄 005_worker_status_unique.sql
-> │      ├── 📄 006_add_worker_id.sql
-> │      ├── 📄 007_file_registry.sql
-> │      ├── 📄 008_jobs.sql
-> │      ├── 📄 009_notes.sql
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_local_core.py
-> │    ├── 📄 quick_start.ps1
-> │    ├── 📄 rag.py
-> │    ├── 📄 requirements.txt
-> │    └── 📂 scripts/
-> │      ├── 📄 README.md
-> │      ├── 📄 check-auth.ps1
-> │      ├── 📄 check-secrets.ps1
-> │      ├── 📄 deploy-all.ps1
-> │      ├── 📄 deploy-critical.ps1
-> │      ├── 📄 set-critical-secrets.ps1
-> │      ├── 📄 set-secrets-from-env.ps1
-> │      ├── 📄 sync-secrets.ps1
-> │      ├── 📄 test-rag-system.ps1
-> │      ├── 📄 test-with-curl.ps1
-> │      ├── 📄 verify-and-test.ps1
-> │    ├── 📄 start_worker.ps1
-> │    ├── 📄 test_debug_ingest.ps1
-> │    ├── 📄 test_ingest.py
-> │    ├── 📄 test_queue_admin.ps1
-> │    └── 📂 tests/
-> │      ├── 📄 README.md
-> │      ├── 📄 run_tests.sh
-> │      ├── 📄 test_db_sanity.sql
-> │      ├── 📄 test_manual_failures.md
-> │      ├── 📄 test_sanity_checks.py
-> │    ├── 📄 text_extractor.py
-> │    └── 📂 tools/
-> │    ├── 📄 tools.py
-> │      ├── 📄 append_to_vault_note.py
-> │      ├── 📄 calendar_create_event.py
-> │      ├── 📄 calendar_get_upcoming.py
-> │      ├── 📄 check_worker_status.py
-> │      ├── 📄 create_vault_note.py
-> │      ├── 📄 crm_create_contact.py
-> │      ├── 📄 crm_create_task.py
-> │      ├── 📄 crm_list_recent_contacts.py
-> │      ├── 📄 crm_search_person.py
-> │      ├── 📄 list_realm_files.py
-> │      ├── 📄 mail_get_recent.py
-> │      ├── 📄 mail_send.py
-> │      ├── 📄 run_agent_command.py
-> │      ├── 📄 search_processed_documents.py
-> │      ├── 📄 sms_send.py
-> │      ├── 📄 start_agent_service.py
-> │      ├── 📄 start_worker.py
-> │      ├── 📄 web_get.py
-> │      ├── 📄 web_search.py
-> │    ├── 📄 tools_manifest.yaml
-> │    ├── 📄 worker.py
-> │  └── 📂 metadata-naming/
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_metadata_naming.ts
-> │    ├── 📄 wrangler.toml
-> │  ├── 📄 package-lock.json
-> │  ├── 📄 package.json
-> │  └── 📂 semantic-router/
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_semantic_router.ts
-> │    └── 📄 wrangler.toml
+> look at my tree then tell me again. ```markdown
+
+> . 📂 _QiOne_MonoRepo_v2
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> ├── 📄 _QiOne_MonoRepo_Astro.code-workspace
+
+> └── 📂 apps/
+
+> │  └── 📂 api-core/
+
+> │    ├── 📄  - Copy.keep
+
+> │  └── 📂 gina-ai-chat/
+
+> │    └── 📂 GINA_launcher/
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 src/
+
+> │        └── 📂 components/
+
+> │          ├── 📄 FileBrowser.jsx
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 config.js
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 apps/
+
+> │      └── 📂 QiDocs/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 gina_core/
+
+> │        └── 📂 __pycache__/
+
+> │          ├── 📄 __init__.cpython-314.pyc
+
+> │          ├── 📄 utils.cpython-314.pyc
+
+> │        ├── 📄 db.py
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        └── 📂 services/
+
+> │          ├── 📄 capture.py
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 utils.py
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 launcher/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 src/
+
+> │          ├── 📄 App.css
+
+> │          ├── 📄 App.jsx
+
+> │          └── 📂 components/
+
+> │            ├── 📄 FileBrowser.css
+
+> │            ├── 📄 Tooltip.css
+
+> │            ├── 📄 Tooltip.jsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.css
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 main.jsx
+
+> │          ├── 📄 theme.js
+
+> │    └── 📂 data/
+
+> │      └── 📂 compiled/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qios_constitution_v1.json
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 migrations/
+
+> │        ├── 📄 001_ingestion_queue.sql
+
+> │        ├── 📄 002_semantic_profile_file_level.sql
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 outputs/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 qios_01_tables_and_registries.canvas
+
+> │      ├── 📄 qios_03_directory_tree.canvas
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 seeds/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 supabase_seed_qid.sql
+
+> │        ├── 📄 supabase_seed_realms.sql
+
+> │        ├── 📄 supabase_seed_rules.sql
+
+> │      └── 📂 sheets/
+
+> │        ├── 📄 front_matter_schema_v1.csv
+
+> │        ├── 📄 fs_ignore_v1.csv
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qios_rules_v1_1.csv
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 INTEGRATION_COMPLETE.md
+
+> │      ├── 📄 QiAlly Call Ecosystem & Gina Voice Architecture.md
+
+> │      ├── 📄 gina_n8n_workflows.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 integration_summary.md
+
+> │      ├── 📄 launcher_ui_mindmap.md
+
+> │      ├── 📄 markdownlint_analysis_genesis.md
+
+> │      ├── 📄 markdownlint_analysis_remaining.md
+
+> │      ├── 📄 markdownlint_final_analysis.md
+
+> │      ├── 📄 markdownlint_quick_reference.md
+
+> │      ├── 📄 markdownlint_review_summary.md
+
+> │      ├── 📄 markdownlint_summary.md
+
+> │      └── 📂 notes/
+
+> │        ├── 📄 discussion26-07-01.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 prompts/
+
+> │        ├── 📄 cockpit_gui_prompt.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 ui_contracts_v1.md
+
+> │    ├── 📄 env.example
+
+> │    └── 📂 gina_core/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 main.py
+
+> │      ├── 📄 requirements.txt
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 public/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 qios_00_genesis.canvas
+
+> │    ├── 📄 qios_runtime_mindmap.canvas
+
+> │    └── 📂 rules/
+
+> │      ├── 📄 _readme.md
+
+> │      ├── 📄 folder_registry.yaml
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │      ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │      └── 📂 qios_cursor_prompts/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 install_ingestion_worker.md
+
+> │        ├── 📄 project_prompt.md.md
+
+> │        ├── 📄 qicompiler_add_prompt.md
+
+> │        ├── 📄 qicompiler_orchestrator_prompt.md
+
+> │        ├── 📄 qimatrix_csv_prompt.md
+
+> │        ├── 📄 qimatrix_sql_prompt.md
+
+> │        ├── 📄 qimatrix_yaml_prompt.md
+
+> │        ├── 📄 step3_tree_compiler_prompt.md
+
+> │        ├── 📄 user_prompt.md.md
+
+> │      ├── 📄 realms_registry.yaml
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.css
+
+> │      ├── 📄 App.jsx
+
+> │      └── 📂 components/
+
+> │        ├── 📄 FileBrowser.css
+
+> │        ├── 📄 Tooltip.css
+
+> │        ├── 📄 Tooltip.jsx
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.css
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 main.jsx
+
+> │      ├── 📄 theme.js
+
+> │    └── 📂 templates/
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 readme_template.md.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 tests/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 verify_parsing.py
+
+> │    └── 📂 tools/
+
+> │      ├── 📄 README_SCANNER.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 run_migrations.py
+
+> │    └── 📂 workers/
+
+> │      ├── 📄 _readme.md
+
+> │      └── 📂 _shared/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 embedder/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_embedder.ts
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 ingestion/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_ingestion.ts
+
+> │      └── 📂 linter/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 readme_generator.py
+
+> │      └── 📂 metadata_naming/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 orchestrator/
+
+> │        ├── 📄 OrchestratorState.ts
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 migrations/
+
+> │          ├── 📄 0001_do.mjs
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │        ├── 📄 worker_orchestrator.ts
+
+> │      └── 📂 self_heal/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_self_heal.ts
+
+> │      └── 📂 semantic_router/
+
+> │        ├── 📄 index.html
+
+> │  └── 📂 qially-com/
+
+> │    ├── 📄 404.html
+
+> │    ├── 📄 README (2).md
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 _qsaysit_legacy/
+
+> │    ├── 📄 _redirects
+
+> │    └── 📂 assets/
+
+> │      └── 📂 css/
+
+> │      └── 📂 files/
+
+> │        ├── 📄 balance-sheet-template.xlsx
+
+> │        └── 📂 forms/
+
+> │          └── 📂 uscis/
+
+> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
+
+> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
+
+> │        ├── 📄 income-statement-template.xlsx
+
+> │        ├── 📄 payroll-calendar-2026.pdf
+
+> │        ├── 📄 tax-prep-checklist.pdf
+
+> │      └── 📂 imgs/
+
+> │        ├── 📄 allegaracasa.jpg
+
+> │        ├── 📄 astrotext.png
+
+> │        └── 📂 business_tools/
+
+> │          ├── 📄 balance_sheet.svg
+
+> │          ├── 📄 calendar.svg
+
+> │          ├── 📄 capital.svg
+
+> │          ├── 📄 checklist.svg
+
+> │          ├── 📄 funding.svg
+
+> │          ├── 📄 income.svg
+
+> │          ├── 📄 inventory.svg
+
+> │          ├── 📄 invoice.svg
+
+> │          ├── 📄 payroll.svg
+
+> │          ├── 📄 sku.svg
+
+> │        ├── 📄 llegaracasa.jpg
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 profile.jpg
+
+> │      └── 📂 js/
+
+> │        ├── 📄 i18n.js
+
+> │      └── 📂 vids/
+
+> │    ├── 📄 astro.config.mjs
+
+> │    └── 📂 cody/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 contact.json
+
+> │    ├── 📄 footer.html
+
+> │    └── 📂 functions/
+
+> │      ├── 📄 [[path]].js
+
+> │    ├── 📄 header.html
+
+> │    ├── 📄 humans.txt
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 kb/
+
+> │      └── 📂 accounting-cleanup/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 getting-started/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 irs-notices/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 tax-resolution/
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 main.js
+
+> │    ├── 📄 manifest.webmanifest
+
+> │    └── 📂 modules/
+
+> │      └── 📂 hr-ops/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 it-ai/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 qisuite/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 taxes/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 tax-prep-2025/
+
+> │          ├── 📄 FormsQRCode.png
+
+> │          ├── 📄 bookingQRCode.png
+
+> │          └── 📂 email-templates/
+
+> │            ├── 📄 email-01-simple-w2.html
+
+> │            ├── 📄 email-02-self-employed.html
+
+> │            ├── 📄 email-03-complex.html
+
+> │            ├── 📄 email-04-itin.html
+
+> │            ├── 📄 email-05-business.html
+
+> │            ├── 📄 email-06-confirmation-docs.html
+
+> │            ├── 📄 email-generic-next-steps.html
+
+> │            ├── 📄 email-intake-received.html
+
+> │          └── 📂 forms/
+
+> │            ├── 📄 business.html
+
+> │            ├── 📄 complex.html
+
+> │            ├── 📄 head-of-household.html
+
+> │            ├── 📄 itin.html
+
+> │            ├── 📄 self-employed.html
+
+> │            ├── 📄 simple-w2.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 next-steps/
+
+> │            ├── 📄 business.html
+
+> │            ├── 📄 complex.html
+
+> │            ├── 📄 head-of-household.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 itin.html
+
+> │            ├── 📄 self-employed.html
+
+> │            ├── 📄 simple-w2.html
+
+> │          ├── 📄 prompts.md
+
+> │          ├── 📄 qr-code.html
+
+> │          ├── 📄 tax-prep-2025-booking.html
+
+> │          ├── 📄 tax-prep-2025-intake.html
+
+> │          ├── 📄 taxprepqially.jpg
+
+> │        └── 📂 year-end-process/
+
+> │          ├── 📄 index.html
+
+> │    ├── 📄 orchestrate_clarity.py
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 pages/
+
+> │      └── 📂 budgets/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 business_tools/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 chat/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 sales-iq-landing-page-qr-code.png
+
+> │      └── 📂 compliance/
+
+> │        ├── 📄 data-inventory.html
+
+> │        ├── 📄 incident-response.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 internal/
+
+> │          └── 📂 provider-agreements/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 training-logs/
+
+> │            ├── 📄 index.html
+
+> │        ├── 📄 risk-assessment.html
+
+> │        └── 📂 service_animal_gigi/
+
+> │          ├── 📄 Gigi_Certification_Statement.html
+
+> │          ├── 📄 Gigi_Documentation_Pack.md
+
+> │          ├── 📄 Gigi_Documentation_Pack_Print.html
+
+> │          ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │          ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
+
+> │          ├── 📄 Notice_Service_Animal_Status.html
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 gigi_service_dog_hero.png
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 wisp-core.html
+
+> │      └── 📂 ecard/
+
+> │        ├── 📄 cody.vcf
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 letters/
+
+> │        └── 📂 client.wiletvaldo_calderon-ramirez/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 infographic.png
+
+> │          ├── 📄 review_audio.m4a
+
+> │        └── 📂 engagement/
+
+> │          ├── 📄 SignForm_URL_QR.png
+
+> │          ├── 📄 engagement_standard.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 evansville_inn/
+
+> │          ├── 📄 Notice_Room_Conditions.html
+
+> │      └── 📂 msa/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 portfolio/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 privacy/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 referral/
+
+> │        └── 📂 cashapp/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 quickbooks/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 zoho/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 resources/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 review/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 services/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 showcases/
+
+> │        └── 📂 20000-swing/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 videos.html
+
+> │      └── 📂 terms/
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 public/
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 favicon.svg
+
+> │    └── 📂 qially-com-v2.0/
+
+> │      └── 📂 QiAlly-com/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 postcss.config.js
+
+> │        └── 📂 public/
+
+> │        └── 📂 src/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 accounting/
+
+> │      └── 📂 assets/
+
+> │        └── 📂 css/
+
+> │        └── 📂 js/
+
+> │        └── 📂 public/
+
+> │      └── 📂 blog/
+
+> │      ├── 📄 contact.json
+
+> │      └── 📂 files/
+
+> │        ├── 📄 cody_rice_velasquez-fullstack.pdf
+
+> │        └── 📂 forms/
+
+> │        └── 📂 resume/
+
+> │      ├── 📄 footer.html
+
+> │      └── 📂 forms/
+
+> │      └── 📂 hr-ops/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 humans.txt
+
+> │      └── 📂 images/
+
+> │        ├── 📄 cover.jpg
+
+> │        ├── 📄 profile.jpg
+
+> │        ├── 📄 video-logo.mp4
+
+> │      └── 📂 individual/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 it-ai/
+
+> │      └── 📂 legal/
+
+> │      └── 📂 portfolio/
+
+> │        ├── 📄 q-showcase-light.html
+
+> │      ├── 📄 privacy.html
+
+> │      └── 📂 qisuite/
+
+> │      └── 📂 review/
+
+> │        ├── 📄 qrcode_www.google.com.png
+
+> │      └── 📂 service-agreement/
+
+> │      └── 📂 showcases/
+
+> │        └── 📂 20000-swing/
+
+> │        ├── 📄 videos.html
+
+> │      ├── 📄 sitemap.xml
+
+> │      └── 📂 taxes/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 itin/
+
+> │    ├── 📄 robots.txt
+
+> │    ├── 📄 service-worker.js
+
+> │    ├── 📄 sitemap.xml
+
+> │    └── 📂 sites_QiAlly.com_cashapp_bonus/
+
+> │      ├── 📄 Cash_App_$15_Bonus_Five_Simple_Steps.m4a
+
+> │      ├── 📄 bonus_cody_en.mp3
+
+> │      ├── 📄 bonus_cody_es.mp3
+
+> │      ├── 📄 bonus_explainer_nlm_en.mp3
+
+> │      ├── 📄 bonus_explainer_nlm_es.mp3
+
+> │      ├── 📄 bonus_steps_es.png
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 infographic.png
+
+> │      ├── 📄 unnamed.png
+
+> │    └── 📂 sites_QiAlly.com_flows/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 logo.svg
+
+> │        ├── 📄 styles.css
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 privacy.html
+
+> │      ├── 📄 terms.html
+
+> │    └── 📂 sites_QiAlly.com_helpcody/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 data.csv
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 sites_QiAlly.com_tax99/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 steps/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 templates/
+
+> │        ├── 📄 email-template-client.html
+
+> │        ├── 📄 email-template-internal.html
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 worker.js
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 sites_Qially.com_kb/
+
+> │    └── 📂 src/
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 index.astro
+
+> │    ├── 📄 tsconfig.json
+
+> │    ├── 📄 vizvibe.mmd
+
+> │  └── 📂 qione-portal/
+
+> │    └── 📂 _dirtfree_legacy/
+
+> │      ├── 📄 ACCOUNT_LINKING.md
+
+> │      ├── 📄 BLUEPRINT.md
+
+> │      ├── 📄 DIRT_FREE_PROMPTS.md
+
+> │      ├── 📄 LAUNCH_CHECKLIST.md
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 QiOS_Local_Only.code-workspace
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 REALTIME_SYNC.md
+
+> │      ├── 📄 convert_blueprint.py
+
+> │      └── 📂 dirt-free-portal/
+
+> │        ├── 📄 BUNDLE-OPTIMIZATION-SUMMARY.md
+
+> │        ├── 📄 DEPLOYMENT.md
+
+> │        ├── 📄 ERROR-TRACKING.md
+
+> │        ├── 📄 LOGGING.md
+
+> │        ├── 📄 OPTIMIZATION-SUMMARY.md
+
+> │        ├── 📄 PERFORMANCE-MONITORING.md
+
+> │        ├── 📄 PERFORMANCE-OPTIMIZATION.md
+
+> │        ├── 📄 RATE-LIMITING.md
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 SECURITY-HEADERS.md
+
+> │        └── 📂 __tests__/
+
+> │          ├── 📄 sample.test.tsx
+
+> │        ├── 📄 components.json
+
+> │        └── 📂 docs/
+
+> │          ├── 📄 API.md
+
+> │          ├── 📄 DATABASE_OPTIMIZATION.md
+
+> │          ├── 📄 LAUNCH_PROCEDURES.md
+
+> │          ├── 📄 PERFORMANCE.md
+
+> │          ├── 📄 PRE-LAUNCH-CHECKLIST.md
+
+> │          ├── 📄 USER_GUIDE.md
+
+> │        └── 📂 e2e/
+
+> │          ├── 📄 appointments.spec.ts
+
+> │          └── 📂 fixtures/
+
+> │            ├── 📄 auth.ts
+
+> │          ├── 📄 login.spec.ts
+
+> │        ├── 📄 eslint.config.mjs
+
+> │        ├── 📄 instrumentation.ts
+
+> │        ├── 📄 jest.config.js
+
+> │        ├── 📄 jest.setup.js
+
+> │        ├── 📄 middleware.ts
+
+> │        ├── 📄 next.config.ts
+
+> │        ├── 📄 next.config.ts.bak
+
+> │        ├── 📄 next.config.ts.bak2
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 playwright.config.ts
+
+> │        ├── 📄 postcss.config.mjs
+
+> │        └── 📂 public/
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 create-test-customer.mjs
+
+> │          ├── 📄 monitor-production.mjs
+
+> │          ├── 📄 performance-audit.mjs
+
+> │          ├── 📄 pre-launch-check.mjs
+
+> │        ├── 📄 sentry.client.config.ts
+
+> │        ├── 📄 sentry.edge.config.ts
+
+> │        ├── 📄 sentry.server.config.ts
+
+> │        └── 📂 src/
+
+> │          └── 📂 __tests__/
+
+> │            └── 📂 api/
+
+> │              └── 📂 payments/
+
+> │                ├── 📄 create-intent.test.ts
+
+> │                ├── 📄 webhooks.test.ts
+
+> │            └── 📂 components/
+
+> │              └── 📂 dashboard/
+
+> │                ├── 📄 sidebar.test.tsx
+
+> │            └── 📂 fixtures/
+
+> │              ├── 📄 invoices.ts
+
+> │              ├── 📄 payments.ts
+
+> │            └── 📂 helpers/
+
+> │              ├── 📄 stripe-mocks.ts
+
+> │              ├── 📄 supabase-mocks.ts
+
+> │            └── 📂 lib/
+
+> │              ├── 📄 utils.test.ts
+
+> │          └── 📂 app/
+
+> │            └── 📂 (auth)/
+
+> │              └── 📂 login/
+
+> │            └── 📂 (dashboard)/
+
+> │              └── 📂 dashboard/
+
+> │                └── 📂 account/
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 payment-methods/
+
+> │                    ├── 📄 page.tsx
+
+> │                    ├── 📄 page.tsx.bak
+
+> │                └── 📂 appointments/
+
+> │                  └── 📂 [id]/
+
+> │                    ├── 📄 page.tsx.bak2
+
+> │                    └── 📂 reschedule/
+
+> │                      ├── 📄 layout.tsx
+
+> │                      ├── 📄 page.tsx
+
+> │                  └── 📂 new/
+
+> │                    └── 📂 confirm/
+
+> │                      ├── 📄 page.tsx
+
+> │                    └── 📂 datetime/
+
+> │                    ├── 📄 page.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 documents/
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 warranties/
+
+> │                └── 📂 help/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 invoices/
+
+> │                  └── 📂 [id]/
+
+> │                    └── 📂 pay/
+
+> │                      ├── 📄 page.tsx.bak
+
+> │                    └── 📂 success/
+
+> │                      ├── 📄 page.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 messages/
+
+> │                  └── 📂 [id]/
+
+> │                    ├── 📄 page.tsx.bak
+
+> │                    ├── 📄 page.tsx.bak2
+
+> │                  └── 📂 new/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 notifications/
+
+> │                  ├── 📄 page.tsx
+
+> │                ├── 📄 page.tsx
+
+> │                └── 📂 rewards/
+
+> │                  └── 📂 history/
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 referrals/
+
+> │                    ├── 📄 page.tsx
+
+> │              ├── 📄 error.tsx
+
+> │              ├── 📄 layout.tsx
+
+> │            └── 📂 api/
+
+> │              └── 📂 analytics/
+
+> │                └── 📂 portal-stats/
+
+> │                  ├── 📄 route.ts
+
+> │                └── 📂 track-session/
+
+> │                  ├── 📄 route.ts
+
+> │              └── 📂 appointments/
+
+> │                └── 📂 [id]/
+
+> │                  └── 📂 cancel/
+
+> │                    ├── 📄 route.ts
+
+> │              └── 📂 cache/
+
+> │                └── 📂 clear/
+
+> │                  ├── 📄 route.ts
+
+> │                └── 📂 stats/
+
+> │                  ├── 📄 route.ts
+
+> │              └── 📂 health/
+
+> │                ├── 📄 route.ts
+
+> │              └── 📂 invoices/
+
+> │                └── 📂 [id]/
+
+> │                  └── 📂 pdf/
+
+> │                    ├── 📄 route.ts
+
+> │              └── 📂 notifications/
+
+> │                └── 📂 send-email/
+
+> │                  ├── 📄 route.ts
+
+> │                  ├── 📄 route.ts.bak
+
+> │              └── 📂 payments/
+
+> │                └── 📂 confirm/
+
+> │                  ├── 📄 route.ts
+
+> │                  ├── 📄 route.ts.bak
+
+> │                └── 📂 create-intent/
+
+> │                  ├── 📄 route.ts
+
+> │                └── 📂 export/
+
+> │                  ├── 📄 route.ts
+
+> │                └── 📂 methods/
+
+> │                  └── 📂 [id]/
+
+> │                    ├── 📄 route.ts
+
+> │                  ├── 📄 route.ts
+
+> │                └── 📂 setup-intent/
+
+> │                  ├── 📄 route.ts
+
+> │              └── 📂 rewards/
+
+> │                └── 📂 [id]/
+
+> │                  └── 📂 redeem/
+
+> │                    ├── 📄 route.ts
+
+> │              └── 📂 webhooks/
+
+> │                └── 📂 stripe/
+
+> │                  ├── 📄 route.ts
+
+> │            ├── 📄 error.tsx
+
+> │            ├── 📄 global-error.tsx
+
+> │            ├── 📄 globals.css
+
+> │            ├── 📄 layout.tsx
+
+> │            ├── 📄 not-found.tsx
+
+> │          └── 📂 components/
+
+> │            └── 📂 analytics/
+
+> │              ├── 📄 payment-success-tracker.tsx
+
+> │              ├── 📄 performance-monitor.tsx
+
+> │              ├── 📄 session-tracker.tsx
+
+> │            └── 📂 dashboard/
+
+> │              ├── 📄 header.tsx
+
+> │              ├── 📄 mobile-nav.tsx
+
+> │              ├── 📄 quick-actions-card.tsx
+
+> │              ├── 📄 recent-activity-section.tsx
+
+> │              ├── 📄 sidebar.tsx
+
+> │            └── 📂 documents/
+
+> │              ├── 📄 photo-gallery.tsx
+
+> │            ├── 📄 error-boundary.tsx
+
+> │            └── 📂 errors/
+
+> │              ├── 📄 customer-not-found.tsx
+
+> │            └── 📂 help/
+
+> │              ├── 📄 print-button.tsx
+
+> │            └── 📂 invoices/
+
+> │              ├── 📄 DownloadButton.tsx
+
+> │            └── 📂 messages/
+
+> │              ├── 📄 AttachmentCard.tsx
+
+> │              ├── 📄 MessageList.tsx
+
+> │              ├── 📄 MessageThread.tsx
+
+> │              ├── 📄 NewMessageDialog.tsx
+
+> │            └── 📂 notifications/
+
+> │              ├── 📄 NotificationBell.tsx
+
+> │              ├── 📄 NotificationCenter.tsx
+
+> │              ├── 📄 notification-provider.tsx
+
+> │            └── 📂 payments/
+
+> │              ├── 📄 AddCardDialog.tsx
+
+> │              ├── 📄 payment-form.tsx
+
+> │            └── 📂 rewards/
+
+> │              ├── 📄 redeem-button.tsx
+
+> │            └── 📂 ui/
+
+> │              ├── 📄 alert-dialog.tsx
+
+> │              ├── 📄 alert.tsx
+
+> │              ├── 📄 avatar.tsx
+
+> │              ├── 📄 button.tsx
+
+> │              ├── 📄 calendar.tsx
+
+> │              ├── 📄 checkbox.tsx
+
+> │              ├── 📄 dialog.tsx
+
+> │              ├── 📄 dropdown-menu.tsx
+
+> │              ├── 📄 file-upload.tsx
+
+> │              ├── 📄 label.tsx
+
+> │              ├── 📄 optimized-image.tsx
+
+> │              ├── 📄 popover.tsx
+
+> │              ├── 📄 scroll-area.tsx
+
+> │              ├── 📄 select.tsx
+
+> │              ├── 📄 separator.tsx
+
+> │              ├── 📄 sheet.tsx
+
+> │              ├── 📄 skeleton.tsx
+
+> │              ├── 📄 sonner.tsx
+
+> │              ├── 📄 switch.tsx
+
+> │              ├── 📄 tabs.tsx
+
+> │              ├── 📄 tooltip.tsx
+
+> │          └── 📂 hooks/
+
+> │            ├── 📄 useUnreadMessages.ts
+
+> │          └── 📂 lib/
+
+> │            └── 📂 analytics/
+
+> │            ├── 📄 analytics.ts
+
+> │              ├── 📄 session-tracking.ts
+
+> │            ├── 📄 audit.ts
+
+> │            ├── 📄 db-cache.ts
+
+> │            └── 📂 email/
+
+> │              ├── 📄 send.ts
+
+> │              ├── 📄 templates.ts
+
+> │            ├── 📄 env.ts
+
+> │            ├── 📄 logger.ts
+
+> │            ├── 📄 monitoring.ts
+
+> │            ├── 📄 notifications.ts
+
+> │            ├── 📄 pdf-generator-lazy.ts
+
+> │            ├── 📄 pdf-generator.ts
+
+> │            ├── 📄 rate-limit.ts
+
+> │            ├── 📄 sentry-utils.ts
+
+> │            ├── 📄 storage.ts
+
+> │            └── 📂 stripe/
+
+> │              ├── 📄 client.ts
+
+> │              ├── 📄 server.ts
+
+> │            └── 📂 supabase/
+
+> │              ├── 📄 client.ts
+
+> │              ├── 📄 middleware.ts
+
+> │              ├── 📄 realtime-helper.ts
+
+> │              ├── 📄 server.ts
+
+> │          └── 📂 types/
+
+> │        └── 📂 supabase/
+
+> │          ├── 📄 01-create-portal-tables.sql
+
+> │          ├── 📄 02-apply-rls-policies.sql
+
+> │          ├── 📄 03-create-storage-buckets.sql
+
+> │          ├── 📄 03-create-test-customer.sql
+
+> │          ├── 📄 04-add-file-attachments-support.sql
+
+> │          ├── 📄 05-add-missing-message-columns.sql
+
+> │          ├── 📄 06-add-reply-attachments-support.sql
+
+> │          ├── 📄 07-add-attachment-analytics.sql
+
+> │          ├── 📄 08-create-notifications-table.sql
+
+> │          ├── 📄 09-add-portal-analytics.sql
+
+> │          ├── 📄 10-add-performance-indexes.sql
+
+> │          ├── 📄 11-create-audit-logs-table.sql
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 policies.sql
+
+> │        ├── 📄 tailwind.config.ts
+
+> │        ├── 📄 tsconfig.json
+
+> │        ├── 📄 vercel.json
+
+> │      ├── 📄 middleware.ts
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 app/
+
+> │          └── 📂 (auth)/
+
+> │            ├── 📄 layout.tsx
+
+> │            └── 📂 login/
+
+> │              ├── 📄 page.tsx
+
+> │          └── 📂 (dashboard)/
+
+> │            └── 📂 dashboard/
+
+> │              └── 📂 account/
+
+> │                ├── 📄 layout.tsx
+
+> │                ├── 📄 page.tsx
+
+> │                └── 📂 payment-methods/
+
+> │                  ├── 📄 layout.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │              └── 📂 appointments/
+
+> │                └── 📂 [id]/
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 reschedule/
+
+> │                    ├── 📄 page.tsx
+
+> │                └── 📂 new/
+
+> │                  └── 📂 confirm/
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 datetime/
+
+> │                    ├── 📄 page.tsx
+
+> │                  ├── 📄 layout.tsx
+
+> │              └── 📂 documents/
+
+> │                ├── 📄 page.tsx
+
+> │                └── 📂 warranties/
+
+> │                  ├── 📄 page.tsx
+
+> │              ├── 📄 example-realtime-usage.tsx
+
+> │              └── 📂 history/
+
+> │                ├── 📄 page.tsx
+
+> │              └── 📂 invoices/
+
+> │                └── 📂 [id]/
+
+> │                  └── 📂 pay/
+
+> │                    ├── 📄 layout.tsx
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 success/
+
+> │                    ├── 📄 page.tsx
+
+> │                ├── 📄 page.tsx
+
+> │              ├── 📄 loading.tsx
+
+> │              └── 📂 messages/
+
+> │                └── 📂 [id]/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 new/
+
+> │                  ├── 📄 layout.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │                ├── 📄 page.tsx
+
+> │              ├── 📄 page.tsx
+
+> │              └── 📂 rewards/
+
+> │                └── 📂 history/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 referrals/
+
+> │                  ├── 📄 layout.tsx
+
+> │            ├── 📄 error.tsx
+
+> │            ├── 📄 layout.tsx
+
+> │          └── 📂 api/
+
+> │            └── 📂 appointments/
+
+> │              └── 📂 [id]/
+
+> │                └── 📂 cancel/
+
+> │                  ├── 📄 route.ts
+
+> │            └── 📂 auth/
+
+> │              └── 📂 link-account/
+
+> │                ├── 📄 route.ts
+
+> │              └── 📂 sso/
+
+> │                ├── 📄 route.ts
+
+> │                └── 📂 verify/
+
+> │                  ├── 📄 route.ts
+
+> │            └── 📂 payments/
+
+> │              └── 📂 confirm/
+
+> │                ├── 📄 route.ts
+
+> │              └── 📂 create-intent/
+
+> │                ├── 📄 route.ts
+
+> │              └── 📂 export/
+
+> │                ├── 📄 route.ts
+
+> │              └── 📂 methods/
+
+> │                └── 📂 [id]/
+
+> │                  ├── 📄 route.ts
+
+> │                ├── 📄 route.ts
+
+> │            └── 📂 rewards/
+
+> │              └── 📂 [id]/
+
+> │                └── 📂 redeem/
+
+> │                  ├── 📄 route.ts
+
+> │            └── 📂 webhooks/
+
+> │              └── 📂 stripe/
+
+> │                ├── 📄 route.ts
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 components/
+
+> │          └── 📂 analytics/
+
+> │            ├── 📄 payment-success-tracker.tsx
+
+> │          └── 📂 dashboard/
+
+> │            ├── 📄 AccountLinkingBanner.tsx
+
+> │            ├── 📄 header.tsx
+
+> │            ├── 📄 sidebar.tsx
+
+> │          └── 📂 documents/
+
+> │            ├── 📄 photo-gallery.tsx
+
+> │            ├── 📄 service-timeline.tsx
+
+> │          └── 📂 messages/
+
+> │            ├── 📄 reply-form.tsx
+
+> │          └── 📂 notifications/
+
+> │            ├── 📄 notification-provider.tsx
+
+> │          └── 📂 payments/
+
+> │          └── 📂 realtime/
+
+> │            ├── 📄 ConnectionStatus.tsx
+
+> │          └── 📂 rewards/
+
+> │            ├── 📄 redeem-button.tsx
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 badge.tsx
+
+> │            ├── 📄 card.tsx
+
+> │            ├── 📄 input.tsx
+
+> │            ├── 📄 progress.tsx
+
+> │            ├── 📄 textarea.tsx
+
+> │        └── 📂 hooks/
+
+> │          ├── 📄 useRealtime.ts
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 analytics.ts
+
+> │          └── 📂 auth/
+
+> │            ├── 📄 signup.ts
+
+> │            ├── 📄 sso-token.ts
+
+> │          └── 📂 email/
+
+> │            ├── 📄 send.ts
+
+> │            ├── 📄 templates.ts
+
+> │          ├── 📄 env.ts
+
+> │          ├── 📄 rate-limit.ts
+
+> │          └── 📂 realtime/
+
+> │            ├── 📄 sync.ts
+
+> │          └── 📂 stripe/
+
+> │            ├── 📄 client.ts
+
+> │            ├── 📄 server.ts
+
+> │          └── 📂 supabase/
+
+> │            ├── 📄 client.ts
+
+> │            ├── 📄 middleware.ts
+
+> │            ├── 📄 server.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 database.types.ts
+
+> │          ├── 📄 index.ts
+
+> │      └── 📂 supabase/
+
+> │        ├── 📄 policies.sql
+
+> │      ├── 📄 tailwind.config.ts
+
+> │      ├── 📄 vercel.json
+
+> │    └── 📂 app/
+
+> │      └── 📂 (portal)/
+
+> │        ├── 📄 layout.tsx
+
+> │        └── 📂 objects/
+
+> │          └── 📂 [objectKey]/
+
+> │            └── 📂 contract/
+
+> │              ├── 📄 page.tsx
+
+> │            └── 📂 csv/
+
+> │              └── 📂 [formKey]/
+
+> │                ├── 📄 page.tsx
+
+> │            └── 📂 forms/
+
+> │              └── 📂 [formKey]/
+
+> │                ├── 📄 page.tsx
+
+> │            ├── 📄 page.tsx
+
+> │        ├── 📄 page.tsx
+
+> │        └── 📂 qichronicle/
+
+> │          ├── 📄 page.tsx
+
+> │      └── 📂 api/
+
+> │        └── 📂 qichronicle/
+
+> │          └── 📂 moments/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 route.ts
+
+> │            ├── 📄 route.ts
+
+> │      ├── 📄 layout.tsx
+
+> │    ├── 📄 next-env.d.ts
+
+> │    ├── 📄 next.config.mjs
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      └── 📂 qione/
+
+> │        └── 📂 contracts/
+
+> │          ├── 📄 deriveContract.ts
+
+> │        └── 📂 csv/
+
+> │          ├── 📄 csvParse.ts
+
+> │          ├── 📄 csvValidate.ts
+
+> │        └── 📂 objects/
+
+> │          ├── 📄 appointment.ts
+
+> │          ├── 📄 case.ts
+
+> │          ├── 📄 chore.ts
+
+> │          ├── 📄 contact.ts
+
+> │          ├── 📄 expense.ts
+
+> │          ├── 📄 index.ts
+
+> │          ├── 📄 medication.ts
+
+> │          ├── 📄 patient.ts
+
+> │          ├── 📄 types.ts
+
+> │      └── 📂 ui/
+
+> │        └── 📂 components/
+
+> │          ├── 📄 DataTable.tsx
+
+> │          ├── 📄 FieldRenderer.tsx
+
+> │          ├── 📄 FormRenderer.tsx
+
+> │          ├── 📄 Sidebar.tsx
+
+> │          ├── 📄 Topbar.tsx
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 globals.css
+
+> │    ├── 📄 tsc_errors.txt
+
+> │    ├── 📄 tsc_errors_utf8.txt
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 qivault-web/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 contract.md
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.tsx
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 DocumentDetailPage.tsx
+
+> │        ├── 📄 InboxPage.tsx
+
+> │        ├── 📄 SearchPage.tsx
+
+> │        ├── 📄 SettingsPage.tsx
+
+> │        ├── 📄 TagsPage.tsx
+
+> │      └── 📂 services/
+
+> │        ├── 📄 storage.ts
+
+> │      └── 📂 types/
+
+> │        ├── 📄 index.ts
+
+> │    ├── 📄 vite.config.ts
+
+> └── 📂 content/
+
+> │  ├── 📄 README.md
+
+> └── 📂 experiments/
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 assets/
+
+> │    ├── 📄 introvideo.mp4
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 public/
+
+> │      ├── 📄 introvideo.mp4
+
+> │    └── 📂 src/
+
+> │      └── 📂 brand/
+
+> │      └── 📂 icons/
+
+> │        ├── 📄 home-40.svg
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 config/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │      ├── 📄 repoRules.ts
+
+> │      ├── 📄 rulesRegistry.ts
+
+> │  └── 📂 database/
+
+> │    └── 📂 migrations/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 contentFrontMatter.ts
+
+> │      ├── 📄 database.types.ts
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 email/
+
+> │    └── 📂 partials/
+
+> │      ├── 📄 footer.html
+
+> │      ├── 📄 header.html
+
+> │    ├── 📄 render.ts
+
+> │    └── 📂 supabase-auth/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 change_email.html
+
+> │      ├── 📄 confirmation.html
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │      ├── 📄 reauthentication.html
+
+> │      ├── 📄 recovery.html
+
+> │    └── 📂 templates/
+
+> │      └── 📂 billing/
+
+> │        ├── 📄 invoice.html
+
+> │      └── 📂 general/
+
+> │        ├── 📄 welcome.html
+
+> │      └── 📂 projects/
+
+> │        ├── 📄 update.html
+
+> │      └── 📂 tax/
+
+> │        ├── 📄 return-accepted.html
+
+> │  └── 📂 obsidian-engine/
+
+> │  └── 📂 schemas/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 contentFrontMatter.ts
+
+> │      ├── 📄 database.types.ts
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 sdk/
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 bootstrap_tenant.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 00001_core_saas_setup.sql
+
+> │      ├── 📄 00002_vault_and_queues.sql
+
+> │      ├── 📄 00003_app_schemas.sql
+
+> │      ├── 📄 00004_content_index.sql
+
+> │      ├── 📄 00005_cms_schema.sql
+
+> │      ├── 📄 00006_qivault_docs.sql
+
+> │      ├── 📄 00007_qione_platform.sql
+
+> │      ├── 📄 00008_qihome_app.sql
+
+> │      ├── 📄 00009_qichronicle.sql
+
+> │      ├── 📄 001_init_qione.sql
+
+> │      ├── 📄 002_qihome_mvp.sql
+
+> │      ├── 📄 003_qitax_returns.sql
+
+> │      ├── 📄 003a_qitax_seed.sql
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 utils/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> ├── 📄 pnpm-workspace.yaml
+
+> └── 📂 python_core/
+
+> │  └── 📂 agents/
+
+> │  └── 📂 document-processors/
+
+> │    ├── 📄 WEB_INTERFACE.md
+
+> │    ├── 📄 __init__.py
+
+> │    ├── 📄 cli.py
+
+> │    ├── 📄 config.py
+
+> │    ├── 📄 exceptions.py
+
+> │    ├── 📄 extractor.py
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 pipeline/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 layout_detector.py
+
+> │      ├── 📄 model_downloader.py
+
+> │      ├── 📄 nanonets_processor.py
+
+> │      ├── 📄 neural_document_processor.py
+
+> │      ├── 📄 ocr_service.py
+
+> │    └── 📂 processors/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 base.py
+
+> │      ├── 📄 cloud_processor.py
+
+> │      ├── 📄 docx_processor.py
+
+> │      ├── 📄 excel_processor.py
+
+> │      ├── 📄 gpu_processor.py
+
+> │      ├── 📄 html_processor.py
+
+> │      ├── 📄 image_processor.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 pdf_processor.py
+
+> │      ├── 📄 pptx_processor.py
+
+> │      ├── 📄 txt_processor.py
+
+> │      ├── 📄 url_processor.py
+
+> │    ├── 📄 result.py
+
+> │    └── 📂 services/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 auth_service.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 ollama_service.py
+
+> │    └── 📂 static/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 logo_clean.png
+
+> │      ├── 📄 script.js
+
+> │      ├── 📄 styles.css
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 utils/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 gpu_utils.py
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 web_app.py
+
+> │  └── 📂 gina-ai/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 main.py
+
+> │    ├── 📄 requirements.txt
+
+> │  ├── 📄 requirements.txt
+
+> ├── 📄 repo.rules.json
+
+> ├── 📄 requirements.txt
+
+> └── 📂 scripts/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 README_add_frontmatter.md
+
+> │  ├── 📄 README_generate_indexes.md
+
+> │  ├── 📄 README_organize_vault.md
+
+> │  ├── 📄 SCANNER_AGENT_README.md
+
+> │  ├── 📄 _tools.md
+
+> │  ├── 📄 copy-assets.mjs
+
+> │  └── 📂 database/
+
+> │  └── 📂 exe/
+
+> │    ├── 📄 dotenv.exe
+
+> │    ├── 📄 f2py.exe
+
+> │    ├── 📄 fastapi.exe
+
+> │    ├── 📄 google-oauthlib-tool.exe
+
+> │    ├── 📄 normalizer.exe
+
+> │    ├── 📄 numpy-config.exe
+
+> │    ├── 📄 pip.exe
+
+> │    ├── 📄 pyrsa-decrypt.exe
+
+> │    ├── 📄 pyrsa-encrypt.exe
+
+> │    ├── 📄 pyrsa-keygen.exe
+
+> │    ├── 📄 pyrsa-priv2pub.exe
+
+> │    ├── 📄 pyrsa-sign.exe
+
+> │    ├── 📄 pyrsa-verify.exe
+
+> │    ├── 📄 uvicorn.exe
+
+> │  └── 📂 git_pusher/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │  └── 📂 hotkeys/
+
+> │    ├── 📄 git-autopush.ahk
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 local/
+
+> │    └── 📂 file_ops/
+
+> │      └── 📂 unzip_goblin/
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 navigator-3d.html
+
+> │  └── 📂 node/
+
+> │    ├── 📄 build-timeline-713.js
+
+> │    ├── 📄 build-timeline.js
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  └── 📂 poppler-25.12.0/
+
+> │    └── 📂 Library/
+
+> │      └── 📂 bin/
+
+> │      └── 📂 include/
+
+> │      └── 📂 lib/
+
+> │      └── 📂 share/
+
+> │    └── 📂 share/
+
+> │      └── 📂 poppler/
+
+> │  └── 📂 python/
+
+> │    ├── 📄 README_DEV_ERROR_MEMORY.md
+
+> │    ├── 📄 _7.10_python.md
+
+> │    └── 📂 agents/
+
+> │      ├── 📄 qios_agent.py
+
+> │    └── 📂 audit/
+
+> │      ├── 📄 check-md.py
+
+> │      ├── 📄 fix-spaces.py
+
+> │      ├── 📄 linter.py
+
+> │      ├── 📄 linterrunner.py
+
+> │    ├── 📄 build_file_registry.py
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 code_extractor.py
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │    └── 📂 convert/
+
+> │      ├── 📄 enhance-mkv.PY
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 unzip_downloads.py
+
+> │    └── 📂 core/
+
+> │      ├── 📄 add_frontmatter.py
+
+> │      ├── 📄 generate_indexes.py
+
+> │      ├── 📄 organize_vault_structure.py
+
+> │    └── 📂 create/
+
+> │      ├── 📄 attach-mirrors.py
+
+> │      ├── 📄 cloudflare-create-md.py
+
+> │      ├── 📄 create-canvas-directory.py
+
+> │      ├── 📄 create-canvas.py
+
+> │    └── 📂 csv-to-md/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 _Convert_csv_to_md.md
+
+> │      ├── 📄 _csv-to-md.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 csv_to_md.py
+
+> │      └── 📂 data/
+
+> │      ├── 📄 mapping.json
+
+> │      └── 📂 mapping_examples/
+
+> │      └── 📂 output/
+
+> │      └── 📂 tests/
+
+> │    └── 📂 debug/
+
+> │      ├── 📄 debug-maps.py
+
+> │    ├── 📄 detect_stubs.py
+
+> │    └── 📂 directory_tools/
+
+> │      ├── 📄 directory_mapper.py
+
+> │      ├── 📄 flatten_directory.py
+
+> │    ├── 📄 fast_move_notion_md_twins.py
+
+> │    ├── 📄 fast_move_tiny_id_md.py
+
+> │    ├── 📄 final_structure.py
+
+> │    ├── 📄 find_duplicates.py
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 generate_kb_from_json.py
+
+> │    ├── 📄 get_file_error_context.py
+
+> │    └── 📂 housekeeping/
+
+> │      ├── 📄 housekeeper_runner.py
+
+> │      ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │    ├── 📄 mark_error_resolved.py
+
+> │    ├── 📄 master_experiment_consolidation.py
+
+> │    └── 📂 media_processing/
+
+> │      ├── 📄 merge_mkvs.py
+
+> │    ├── 📄 merge_app_docs.py
+
+> │    ├── 📄 merge_experiment_twins.py
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │    ├── 📄 move_md_by_body_content.py
+
+> │    ├── 📄 move_notion_md_twins_from_registry.py
+
+> │    ├── 📄 move_notions_export_md_from_registry.py
+
+> │    ├── 📄 move_safetodelete_media_to_assets.py
+
+> │    ├── 📄 move_trash_dupes_from_registry.py
+
+> │    ├── 📄 move_trash_image_name_matches_from_registry.py
+
+> │    ├── 📄 move_trash_junk_from_registry.py
+
+> │    ├── 📄 move_trash_nonimportant_exts_from_registry.py
+
+> │    └── 📂 obsidian_tools/
+
+> │      ├── 📄 generate_obsidian_canvas_interactive.py
+
+> │    └── 📂 other_tools/
+
+> │      ├── 📄 examine_db.py
+
+> │      ├── 📄 merge_media_tree.py
+
+> │    └── 📂 qi_codex_tool/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 qi_codex_tool.py
+
+> │      ├── 📄 usage.md
+
+> │    ├── 📄 qicompiler.py
+
+> │    └── 📂 qieos_tools/
+
+> │      ├── 📄 README_migrate_frontmatter.md
+
+> │      ├── 📄 qd_autoname.py
+
+> │      ├── 📄 qi_migrate.py
+
+> │    ├── 📄 qios_dedup_tool.py
+
+> │    ├── 📄 queue_loader.py
+
+> │    └── 📂 review/
+
+> │      ├── 📄 compare-csv-md.py
+
+> │      ├── 📄 compare-drive.py
+
+> │      ├── 📄 search-csv.py
+
+> │      ├── 📄 sort-files.py
+
+> │    ├── 📄 run_system_test.ps1
+
+> │    ├── 📄 safe_collect_intake_and_trash.py
+
+> │    ├── 📄 simple_structure.py
+
+> │    ├── 📄 slugs_mapping.json.py
+
+> │    ├── 📄 slugs_mapping.py
+
+> │    ├── 📄 slugs_mapping.yaml.py
+
+> │    ├── 📄 smart_target_directories.py
+
+> │    ├── 📄 spawn_client_os.py
+
+> │    ├── 📄 spawn_mypunchpro.py
+
+> │    ├── 📄 stub_list.txt
+
+> │    ├── 📄 stub_results.txt
+
+> │    ├── 📄 summarize_qios_files.py
+
+> │    ├── 📄 summarize_trash_from_registry.py
+
+> │    ├── 📄 sync_errors_to_markdown.py
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 tree_compiler.py
+
+> │    ├── 📄 ultra_clean_folders.py
+
+> │  ├── 📄 qios_tools.json
+
+> │  └── 📂 qitax-cli/
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 build-timeline.js
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 convert_to_csv.js
+
+> │    ├── 📄 extract-code-report.js
+
+> │    ├── 📄 timeline-loader.js
+
+> │  └── 📂 shell/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 README_LAUNCHERS.md
+
+> │    ├── 📄 RUN_COMPLETE_INBOX_ORGANIZATION.bat
+
+> │    ├── 📄 RUN_OBSIDIAN_ATTACHMENT_MIRRORS.bat
+
+> │    ├── 📄 _7.30_shell.md
+
+> │    ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 _move_duplicate_files.ps1
+
+> │    ├── 📄 _move_issitax_files.ps1
+
+> │    ├── 📄 activate
+
+> │    ├── 📄 activate.bat
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 comprehensive_cleanup.ps1
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 convert_to_csv.ps1
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 find_duplicates.ps1
+
+> │    ├── 📄 finish_flattening.ps1
+
+> │    ├── 📄 flatten_and_organize.ps1
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> │    ├── 📄 housekeeping.ps1
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │    ├── 📄 move_large_files.ps1
+
+> │    ├── 📄 newnode.bat
+
+> │    ├── 📄 qios_dev_start.ps1
+
+> │    ├── 📄 qios_start_all.ps1
+
+> │    ├── 📄 qios_start_quick.ps1
+
+> │    ├── 📄 run-qiindex.bat
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │    ├── 📄 run_housekeeper.bat
+
+> │    ├── 📄 run_housekeeper_dry-run.bat
+
+> │    ├── 📄 run_qios.ps1
+
+> │    ├── 📄 scanner_scheduler.ps1
+
+> │    ├── 📄 setup.ps1
+
+> │    ├── 📄 start_gina_and_launcher.ps1
+
+> │    ├── 📄 start_launcher.ps1
+
+> │    ├── 📄 start_qios.ps1
+
+> │    ├── 📄 start_qios_full.ps1
+
+> │    ├── 📄 start_qios_local.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │    ├── 📄 validate_cloud.ps1
+
+> │    ├── 📄 validate_local.ps1
+
+> │  ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │  ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 enforce_fm.py
+
+> │    ├── 📄 fm_config.json
+
+> │    ├── 📄 unblock_all.bat
+
+> │  ├── 📄 tools_manifest.json
+
+> │  ├── 📄 windows_task_scheduler.xml
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 supabase/
+
+> │  ├── 📄 config.toml
+
+> │  └── 📂 functions/
+
+> │    └── 📂 qivault-ingest/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 migrations/
+
+> │    ├── 📄 00001_core_saas_setup.sql
+
+> │    ├── 📄 00002_vault_and_queues.sql
+
+> │    ├── 📄 00003_app_schemas.sql
+
+> │    ├── 📄 00004_content_index.sql
+
+> │    ├── 📄 00005_cms_schema.sql
+
+> │    ├── 📄 00006_qivault_docs.sql
+
+> │    ├── 📄 00007_qione_platform.sql
+
+> │    ├── 📄 00008_qihome_app.sql
+
+> │    ├── 📄 00009_qichronicle.sql
+
+> │    ├── 📄 00100_qichronicle_moments.sql
+
+> │    ├── 📄 001_init_qione.sql
+
+> │    ├── 📄 002_qihome_mvp.sql
+
+> │    ├── 📄 003_qitax_returns.sql
+
+> │    ├── 📄 003a_qitax_seed.sql
+
+> │  └── 📂 snippets/
+
+> ├── 📄 target_architecture.txt
+
+> ├── 📄 turbo.json
+
+> ├── 📄 vizvibe.mmd
+
+> └── 📂 workers/
+
+> │  ├── 📄 _readme.md
+
+> │  └── 📂 _shared/
+
+> │    ├── 📄 constitution.ts
+
+> │    ├── 📄 heartbeat.ts
+
+> │    ├── 📄 ignore.ts
+
+> │  └── 📂 cloud/
+
+> │    └── 📂 embedder/
+
+> │      ├── 📄 EMBEDDER_IMPROVEMENTS.md
+
+> │      ├── 📄 EMBEDDER_SIMPLIFICATION.md
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 worker_embedder.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 ingestion/
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 worker_ingestion.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 memory/
+
+> │      ├── 📄 README_API.md
+
+> │      ├── 📄 README_DEV.md
+
+> │      ├── 📄 README_SECRETS.md
+
+> │      ├── 📄 VERIFY_SETUP.md
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │      ├── 📄 sync-secrets.sh
+
+> │      └── 📂 tests/
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 metadata_naming/
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 worker_metadata_naming.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 orchestrator/
+
+> │      ├── 📄 OrchestratorState.ts
+
+> │      └── 📂 migrations/
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │      ├── 📄 worker_orchestrator.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 self_heal/
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 worker_self_heal.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 semantic_router/
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 worker_semantic_router.ts
+
+> │      ├── 📄 wrangler.toml
+
+> │  └── 📂 data/
+
+> │    └── 📂 vector/
+
+> │      ├── 📄 qios_local.db
+
+> │  ├── 📄 dns_map.yml
+
+> │  └── 📂 embedder/
+
+> │    ├── 📄 EMBEDDER_IMPROVEMENTS.md
+
+> │    ├── 📄 EMBEDDER_SIMPLIFICATION.md
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_embedder.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 ingestion-queue/
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_ingestion.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 local_core/
+
+> │    ├── 📄 QUICK_START.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 README_WORKER.md
+
+> │    ├── 📄 SETUP.md
+
+> │    ├── 📄 TESTING_ROADMAP.md
+
+> │    ├── 📄 api_dev_history.py
+
+> │    ├── 📄 api_gina.py
+
+> │    ├── 📄 api_ingest.py
+
+> │    ├── 📄 api_query.py
+
+> │    ├── 📄 check_status.py
+
+> │    ├── 📄 check_workers.py
+
+> │    └── 📂 crawler/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 vault_crawler.py
+
+> │    ├── 📄 db.py
+
+> │    ├── 📄 dev_error_helpers.py
+
+> │    ├── 📄 frontmatter_utils.py
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 gina_chat_contract.md
+
+> │    ├── 📄 gina_chat_contract.ts
+
+> │    ├── 📄 gina_personality_prompt.md
+
+> │    ├── 📄 gina_prompt.py
+
+> │    └── 📂 integrations/
+
+> │      ├── 📄 INTEGRATION_LAYER_SUMMARY.md
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 base.py
+
+> │      └── 📂 calendar/
+
+> │      └── 📂 email/
+
+> │      └── 📂 tts/
+
+> │      └── 📂 twilio/
+
+> │      └── 📂 zoho/
+
+> │    ├── 📄 job_processor.py
+
+> │    ├── 📄 jobs.py
+
+> │    ├── 📄 memory.py
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 001_init.sql
+
+> │      ├── 📄 002_conversation_tables.sql
+
+> │      ├── 📄 003_filesystem_index.sql
+
+> │      ├── 📄 004_integration_tokens.sql
+
+> │      ├── 📄 005_worker_status_unique.sql
+
+> │      ├── 📄 006_add_worker_id.sql
+
+> │      ├── 📄 007_file_registry.sql
+
+> │      ├── 📄 008_jobs.sql
+
+> │      ├── 📄 009_notes.sql
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_local_core.py
+
+> │    ├── 📄 quick_start.ps1
+
+> │    ├── 📄 rag.py
+
+> │    ├── 📄 requirements.txt
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 check-auth.ps1
+
+> │      ├── 📄 check-secrets.ps1
+
+> │      ├── 📄 deploy-all.ps1
+
+> │      ├── 📄 deploy-critical.ps1
+
+> │      ├── 📄 set-critical-secrets.ps1
+
+> │      ├── 📄 set-secrets-from-env.ps1
+
+> │      ├── 📄 sync-secrets.ps1
+
+> │      ├── 📄 test-rag-system.ps1
+
+> │      ├── 📄 test-with-curl.ps1
+
+> │      ├── 📄 verify-and-test.ps1
+
+> │    ├── 📄 start_worker.ps1
+
+> │    ├── 📄 test_debug_ingest.ps1
+
+> │    ├── 📄 test_ingest.py
+
+> │    ├── 📄 test_queue_admin.ps1
+
+> │    └── 📂 tests/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 run_tests.sh
+
+> │      ├── 📄 test_db_sanity.sql
+
+> │      ├── 📄 test_manual_failures.md
+
+> │      ├── 📄 test_sanity_checks.py
+
+> │    ├── 📄 text_extractor.py
+
+> │    └── 📂 tools/
+
+> │    ├── 📄 tools.py
+
+> │      ├── 📄 append_to_vault_note.py
+
+> │      ├── 📄 calendar_create_event.py
+
+> │      ├── 📄 calendar_get_upcoming.py
+
+> │      ├── 📄 check_worker_status.py
+
+> │      ├── 📄 create_vault_note.py
+
+> │      ├── 📄 crm_create_contact.py
+
+> │      ├── 📄 crm_create_task.py
+
+> │      ├── 📄 crm_list_recent_contacts.py
+
+> │      ├── 📄 crm_search_person.py
+
+> │      ├── 📄 list_realm_files.py
+
+> │      ├── 📄 mail_get_recent.py
+
+> │      ├── 📄 mail_send.py
+
+> │      ├── 📄 run_agent_command.py
+
+> │      ├── 📄 search_processed_documents.py
+
+> │      ├── 📄 sms_send.py
+
+> │      ├── 📄 start_agent_service.py
+
+> │      ├── 📄 start_worker.py
+
+> │      ├── 📄 web_get.py
+
+> │      ├── 📄 web_search.py
+
+> │    ├── 📄 tools_manifest.yaml
+
+> │    ├── 📄 worker.py
+
+> │  └── 📂 metadata-naming/
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_metadata_naming.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  ├── 📄 package-lock.json
+
+> │  ├── 📄 package.json
+
+> │  └── 📂 semantic-router/
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_semantic_router.ts
+
+> │    └── 📄 wrangler.toml
+
 > ```
 
 ### Assistant
@@ -4819,55 +6365,104 @@ canonical_ref: ""
 > Send me the one-line purpose of each of the 7 and I’ll tell you which are real, which are duplicate, and which are just emotional support repos.
 
 ### User
-> heres the readme for the qinode experiement. 🧬 QiNode: Master Specification v1.1
-> Powered by the Qiondria Protocol
-> The Local-First, Cellular Self-Healing Autonomous Knowledge Organism.
-> 
-> 🧬 Phase 1: Expansion Status
-> The Nucleus (QiNode_Genesis_Root): Your root authority is alive.
-> The DNA (data.json): Contains the immutable UUID and lineage.
-> The Proteins (index.md): Explains the mission of retention and creation.
-> The Stem Cells (src/main.rs): Awaiting the instruction set for the Qiondria Engine.
-> 🔬 Dev Note: Genesis Verification
-> NOTE: To verify the Visual Membrane, open QiNode_Genesis_Root/bin/logo.svg in a browser. In this phase, we ensure the SVG Morphogenesis is locked. (The bin folder and logo.svg have been successfully synthesized).
-> 
-> 🛠️ Phase 2: The Tissue (Ingestion Engine)
-> We now transition from Creation to Metabolism. Our goal is to build the "Sight" of the organism—teaching it to ingest a PDF and distill it into a new QiNode.
-> 
-> Step 1: The Genetic Configuration (Cargo.toml)
-> We have added the "Proteins" (libraries) to handle high-fidelity extraction and image processing:
-> 
-> [dependencies]
-> # The Sight: For PDF rendering and image compression
-> pdfium-render = "0.8" 
-> image = { version = "0.24", features = ["webp"] }
-> Step 2: The First Metabolic Function (src/main.rs)
-> We will start by coding the PDF-to-Image pipeline. This function will take a file, render each page at 150 DPI, and save it as an optimized WebP in a new node's bin/ folder.
-> 
-> 층 2: The Nervous System (The Local Ledger)
-> To manage 100,000+ nodes, the organism requires a high-speed coordination layer that mirrors the state of the drive.
-> 
-> The Master Ledger (SQLite + FTS5)
-> The Map: A local, lightning-fast index that mirrors the DNA of all discovered QiNodes.
-> The Observer: A background service (Chokidar/Notify) that watches for "Mutations" (file moves or renames in the OS).
-> The Pulse: Real-time updating of the Ledger when a user moves a folder externally.
-> 층 3: The Organism (The Desktop Application)
-> The QiNode Desktop App is the macro-interface for the human to interact with the colony of nodes.
-> 
-> Core Systems
-> The Lens (UI): A block-based Markdown editor that renders the index.md and "hydrates" the bin/ assets.
-> The Immune System (Reconstruction Engine): The "Disaster Recovery" tool. It ignores folder paths, reads internal DNA, and rebuilds the entire KB structure from a "shattered" state.
-> The Synapse (Search): Hybrid search combining Keyword (SQLite) and Semantic (Vector) logic.
-> The Portal (Light Viewer): A zero-dependency, Wasm-based web tool that can open and search a single QiNode folder anywhere.
-> 층 4: The Evolution (History & Lineage)
-> QiNode records its own evolution to ensure data is never truly lost.
-> 
-> Mitosis (Branching): New nodes carry the parent_id of their source, preserving the tree of knowledge.
-> The Ledger Log: An append-only record of changes, allowing the "Immune System" to restore the organism to a specific timestamp.
-> 🛡 The Developer Manifesto
-> Sovereignty: A node must be able to leave the app and remain functional.
-> Resilience: The system must be able to rebuild itself from the files alone.
-> Purity: No cloud dependencies. No proprietary formats. Local-First forever.
+> heres the readme for the qinode experiement. 🧬 QiNode: Master Specification v1.1
+
+> Powered by the Qiondria Protocol
+
+> The Local-First, Cellular Self-Healing Autonomous Knowledge Organism.
+
+> 
+
+> 🧬 Phase 1: Expansion Status
+
+> The Nucleus (QiNode_Genesis_Root): Your root authority is alive.
+
+> The DNA (data.json): Contains the immutable UUID and lineage.
+
+> The Proteins (index.md): Explains the mission of retention and creation.
+
+> The Stem Cells (src/main.rs): Awaiting the instruction set for the Qiondria Engine.
+
+> 🔬 Dev Note: Genesis Verification
+
+> NOTE: To verify the Visual Membrane, open QiNode_Genesis_Root/bin/logo.svg in a browser. In this phase, we ensure the SVG Morphogenesis is locked. (The bin folder and logo.svg have been successfully synthesized).
+
+> 
+
+> 🛠️ Phase 2: The Tissue (Ingestion Engine)
+
+> We now transition from Creation to Metabolism. Our goal is to build the "Sight" of the organism—teaching it to ingest a PDF and distill it into a new QiNode.
+
+> 
+
+> Step 1: The Genetic Configuration (Cargo.toml)
+
+> We have added the "Proteins" (libraries) to handle high-fidelity extraction and image processing:
+
+> 
+
+> [dependencies]
+
+> # The Sight: For PDF rendering and image compression
+
+> pdfium-render = "0.8" 
+
+> image = { version = "0.24", features = ["webp"] }
+
+> Step 2: The First Metabolic Function (src/main.rs)
+
+> We will start by coding the PDF-to-Image pipeline. This function will take a file, render each page at 150 DPI, and save it as an optimized WebP in a new node's bin/ folder.
+
+> 
+
+> 층 2: The Nervous System (The Local Ledger)
+
+> To manage 100,000+ nodes, the organism requires a high-speed coordination layer that mirrors the state of the drive.
+
+> 
+
+> The Master Ledger (SQLite + FTS5)
+
+> The Map: A local, lightning-fast index that mirrors the DNA of all discovered QiNodes.
+
+> The Observer: A background service (Chokidar/Notify) that watches for "Mutations" (file moves or renames in the OS).
+
+> The Pulse: Real-time updating of the Ledger when a user moves a folder externally.
+
+> 층 3: The Organism (The Desktop Application)
+
+> The QiNode Desktop App is the macro-interface for the human to interact with the colony of nodes.
+
+> 
+
+> Core Systems
+
+> The Lens (UI): A block-based Markdown editor that renders the index.md and "hydrates" the bin/ assets.
+
+> The Immune System (Reconstruction Engine): The "Disaster Recovery" tool. It ignores folder paths, reads internal DNA, and rebuilds the entire KB structure from a "shattered" state.
+
+> The Synapse (Search): Hybrid search combining Keyword (SQLite) and Semantic (Vector) logic.
+
+> The Portal (Light Viewer): A zero-dependency, Wasm-based web tool that can open and search a single QiNode folder anywhere.
+
+> 층 4: The Evolution (History & Lineage)
+
+> QiNode records its own evolution to ensure data is never truly lost.
+
+> 
+
+> Mitosis (Branching): New nodes carry the parent_id of their source, preserving the tree of knowledge.
+
+> The Ledger Log: An append-only record of changes, allowing the "Immune System" to restore the organism to a specific timestamp.
+
+> 🛡 The Developer Manifesto
+
+> Sovereignty: A node must be able to leave the app and remain functional.
+
+> Resilience: The system must be able to rebuild itself from the files alone.
+
+> Purity: No cloud dependencies. No proprietary formats. Local-First forever.
+
 > © 2024 QiNode Project - Powered by Qiondria
 
 ### Assistant
@@ -8570,252 +10165,498 @@ canonical_ref: ""
 > which AI agents can parse automatically to navigate the repo.
 
 ### User
-> lets cleaan up this workers folder first ```markdown
-> . 📂 workers
-> └── 📂 Tools_Launcher/
-> │  └── 📂 api/
-> │    ├── 📄 index.html
-> │  └── 📂 components/
-> │    └── 📂 chat/
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    └── 📂 views/
-> │      ├── 📄 index.html
-> │  ├── 📄 index.html
-> │  └── 📂 tools/
-> │    ├── 📄 index.html
-> ├── 📄 _readme.md
-> └── 📂 _shared/
-> │  ├── 📄 constitution.ts
-> │  ├── 📄 heartbeat.ts
-> │  ├── 📄 ignore.ts
-> │  ├── 📄 index.html
-> └── 📂 ai/
-> │  ├── 📄 resourceGraphWorker.ts
-> └── 📂 cases/
-> │  └── 📂 src/
-> │    ├── 📄 index.ts
-> │  ├── 📄 wrangler.toml
-> └── 📂 cloud/
-> │  └── 📂 embedder/
-> │    ├── 📄 EMBEDDER_IMPROVEMENTS.md
-> │    ├── 📄 EMBEDDER_SIMPLIFICATION.md
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_embedder.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 ingestion/
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_ingestion.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 memory/
-> │    ├── 📄 README_API.md
-> │    ├── 📄 README_DEV.md
-> │    ├── 📄 README_SECRETS.md
-> │    ├── 📄 VERIFY_SETUP.md
-> │    ├── 📄 package.json
-> │    ├── 📄 sync-secrets.sh
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 metadata_naming/
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_metadata_naming.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 orchestrator/
-> │    ├── 📄 OrchestratorState.ts
-> │    ├── 📄 package.json
-> │    ├── 📄 qios_06_workers_orchestrator.canvas
-> │    ├── 📄 worker_orchestrator.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 self_heal/
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_self_heal.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 semantic_router/
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_semantic_router.ts
-> │    ├── 📄 wrangler.toml
-> └── 📂 data/
-> │  └── 📂 vector/
-> │    ├── 📄 qios_local.db
-> ├── 📄 dns_map.yml
-> └── 📂 embedder/
-> │  ├── 📄 EMBEDDER_IMPROVEMENTS.md
-> │  ├── 📄 EMBEDDER_SIMPLIFICATION.md
-> │  ├── 📄 index.html
-> │  ├── 📄 package.json
-> │  ├── 📄 worker_embedder.ts
-> │  ├── 📄 wrangler.toml
-> └── 📂 gina/
-> │  ├── 📄 _readme.md
-> │  └── 📂 _shared/
-> │    ├── 📄 index.html
-> │  └── 📂 embedder/
-> │    ├── 📄 index.html
-> │    ├── 📄 worker_embedder.ts
-> │  └── 📂 gina_processor/
-> │    ├── 📄 _readme.md
-> │    └── 📂 _shared/
-> │      ├── 📄 index.html
-> │    └── 📂 embedder/
-> │      ├── 📄 index.html
-> │      ├── 📄 worker_embedder.ts
-> │    ├── 📄 index.html
-> │    └── 📂 ingestion/
-> │      ├── 📄 index.html
-> │      ├── 📄 worker_ingestion.ts
-> │    └── 📂 linter/
-> │      ├── 📄 index.html
-> │      ├── 📄 readme_generator.py
-> │    └── 📂 metadata_naming/
-> │      ├── 📄 index.html
-> │    └── 📂 orchestrator/
-> │      ├── 📄 OrchestratorState.ts
-> │      ├── 📄 index.html
-> │      ├── 📄 package.json
-> │      ├── 📄 qios_06_workers_orchestrator.canvas
-> │      ├── 📄 worker_orchestrator.ts
-> │    └── 📂 self_heal/
-> │      ├── 📄 index.html
-> │      ├── 📄 worker_self_heal.ts
-> │    └── 📂 semantic_router/
-> │      ├── 📄 index.html
-> │  ├── 📄 index.html
-> │  └── 📂 ingestion/
-> │    ├── 📄 index.html
-> │    ├── 📄 worker_ingestion.ts
-> │  └── 📂 linter/
-> │    ├── 📄 index.html
-> │    ├── 📄 readme_generator.py
-> │  └── 📂 metadata_naming/
-> │    ├── 📄 index.html
-> │  └── 📂 orchestrator/
-> │    ├── 📄 OrchestratorState.ts
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    ├── 📄 qios_06_workers_orchestrator.canvas
-> │    ├── 📄 worker_orchestrator.ts
-> │  └── 📂 self_heal/
-> │    ├── 📄 index.html
-> │    ├── 📄 worker_self_heal.ts
-> │  └── 📂 semantic_router/
-> │    ├── 📄 index.html
-> ├── 📄 index.html
-> └── 📂 ingestion/
-> │  ├── 📄 index.html
-> │  ├── 📄 package.json
-> │  ├── 📄 worker_ingestion.ts
-> │  ├── 📄 wrangler.toml
-> └── 📂 lina/
-> │  ├── 📄 index.html
-> │  ├── 📄 resourceGraphWorker.ts
-> └── 📂 local_core/
-> │  ├── 📄 QUICK_START.md
-> │  ├── 📄 README.md
-> │  ├── 📄 README_WORKER.md
-> │  ├── 📄 SETUP.md
-> │  ├── 📄 TESTING_ROADMAP.md
-> │  ├── 📄 api_dev_history.py
-> │  ├── 📄 api_gina.py
-> │  ├── 📄 api_ingest.py
-> │  ├── 📄 api_query.py
-> │  ├── 📄 check_status.py
-> │  ├── 📄 check_workers.py
-> │  └── 📂 crawler/
-> │    ├── 📄 __init__.py
-> │    ├── 📄 vault_crawler.py
-> │  ├── 📄 db.py
-> │  ├── 📄 dev_error_helpers.py
-> │  ├── 📄 frontmatter_utils.py
-> │  ├── 📄 fs_scan_config.yaml
-> │  ├── 📄 fs_scanner.py
-> │  ├── 📄 gina_chat_contract.md
-> │  ├── 📄 gina_chat_contract.ts
-> │  ├── 📄 gina_personality_prompt.md
-> │  ├── 📄 gina_prompt.py
-> │  └── 📂 integrations/
-> │    ├── 📄 INTEGRATION_LAYER_SUMMARY.md
-> │    ├── 📄 README.md
-> │    ├── 📄 __init__.py
-> │    ├── 📄 base.py
-> │  ├── 📄 job_processor.py
-> │  ├── 📄 jobs.py
-> │  ├── 📄 memory.py
-> │  └── 📂 migrations/
-> │    ├── 📄 001_init.sql
-> │    ├── 📄 002_conversation_tables.sql
-> │    ├── 📄 003_filesystem_index.sql
-> │    ├── 📄 004_integration_tokens.sql
-> │    ├── 📄 005_worker_status_unique.sql
-> │    ├── 📄 006_add_worker_id.sql
-> │    ├── 📄 007_file_registry.sql
-> │    ├── 📄 008_jobs.sql
-> │    ├── 📄 009_notes.sql
-> │  ├── 📄 models.py
-> │  ├── 📄 qios_local_core.py
-> │  ├── 📄 quick_start.ps1
-> │  ├── 📄 rag.py
-> │  ├── 📄 requirements.txt
-> │  └── 📂 scripts/
-> │    ├── 📄 README.md
-> │    ├── 📄 check-auth.ps1
-> │    ├── 📄 check-secrets.ps1
-> │    ├── 📄 deploy-all.ps1
-> │    ├── 📄 deploy-critical.ps1
-> │    ├── 📄 set-critical-secrets.ps1
-> │    ├── 📄 set-secrets-from-env.ps1
-> │    ├── 📄 sync-secrets.ps1
-> │    ├── 📄 test-rag-system.ps1
-> │    ├── 📄 test-with-curl.ps1
-> │    ├── 📄 verify-and-test.ps1
-> │  ├── 📄 start_worker.ps1
-> │  ├── 📄 test_debug_ingest.ps1
-> │  ├── 📄 test_ingest.py
-> │  ├── 📄 test_queue_admin.ps1
-> │  └── 📂 tests/
-> │    ├── 📄 README.md
-> │    ├── 📄 run_tests.sh
-> │    ├── 📄 test_db_sanity.sql
-> │    ├── 📄 test_manual_failures.md
-> │    ├── 📄 test_sanity_checks.py
-> │  ├── 📄 text_extractor.py
-> │  └── 📂 tools/
-> │  ├── 📄 tools.py
-> │    ├── 📄 append_to_vault_note.py
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │    ├── 📄 check_worker_status.py
-> │    ├── 📄 create_vault_note.py
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │    ├── 📄 list_realm_files.py
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │    ├── 📄 run_agent_command.py
-> │    ├── 📄 search_processed_documents.py
-> │    ├── 📄 sms_send.py
-> │    ├── 📄 start_agent_service.py
-> │    ├── 📄 start_worker.py
-> │    ├── 📄 web_get.py
-> │    ├── 📄 web_search.py
-> │  ├── 📄 tools_manifest.yaml
-> │  ├── 📄 worker.py
-> └── 📂 metadata_naming/
-> │  ├── 📄 index.html
-> │  └── 📂 metadata-naming/
-> │    ├── 📄 package.json
-> │    ├── 📄 worker_metadata_naming.ts
-> │    ├── 📄 wrangler.toml
-> └── 📂 orchestrator/
-> │  ├── 📄 index.html
-> ├── 📄 package (2).json
-> ├── 📄 package.json
-> └── 📂 self_heal/
-> │  ├── 📄 index.html
-> └── 📂 semantic-router/
-> │  ├── 📄 package.json
-> │  ├── 📄 worker_semantic_router.ts
-> │  └── 📄 wrangler.toml
+> lets cleaan up this workers folder first ```markdown
+
+> . 📂 workers
+
+> └── 📂 Tools_Launcher/
+
+> │  └── 📂 api/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 components/
+
+> │    └── 📂 chat/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 views/
+
+> │      ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 index.html
+
+> ├── 📄 _readme.md
+
+> └── 📂 _shared/
+
+> │  ├── 📄 constitution.ts
+
+> │  ├── 📄 heartbeat.ts
+
+> │  ├── 📄 ignore.ts
+
+> │  ├── 📄 index.html
+
+> └── 📂 ai/
+
+> │  ├── 📄 resourceGraphWorker.ts
+
+> └── 📂 cases/
+
+> │  └── 📂 src/
+
+> │    ├── 📄 index.ts
+
+> │  ├── 📄 wrangler.toml
+
+> └── 📂 cloud/
+
+> │  └── 📂 embedder/
+
+> │    ├── 📄 EMBEDDER_IMPROVEMENTS.md
+
+> │    ├── 📄 EMBEDDER_SIMPLIFICATION.md
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_embedder.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 ingestion/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_ingestion.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 README_API.md
+
+> │    ├── 📄 README_DEV.md
+
+> │    ├── 📄 README_SECRETS.md
+
+> │    ├── 📄 VERIFY_SETUP.md
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 sync-secrets.sh
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 metadata_naming/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_metadata_naming.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 orchestrator/
+
+> │    ├── 📄 OrchestratorState.ts
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │    ├── 📄 worker_orchestrator.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 self_heal/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_self_heal.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 semantic_router/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_semantic_router.ts
+
+> │    ├── 📄 wrangler.toml
+
+> └── 📂 data/
+
+> │  └── 📂 vector/
+
+> │    ├── 📄 qios_local.db
+
+> ├── 📄 dns_map.yml
+
+> └── 📂 embedder/
+
+> │  ├── 📄 EMBEDDER_IMPROVEMENTS.md
+
+> │  ├── 📄 EMBEDDER_SIMPLIFICATION.md
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 package.json
+
+> │  ├── 📄 worker_embedder.ts
+
+> │  ├── 📄 wrangler.toml
+
+> └── 📂 gina/
+
+> │  ├── 📄 _readme.md
+
+> │  └── 📂 _shared/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 embedder/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 worker_embedder.ts
+
+> │  └── 📂 gina_processor/
+
+> │    ├── 📄 _readme.md
+
+> │    └── 📂 _shared/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 embedder/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 worker_embedder.ts
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 ingestion/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 worker_ingestion.ts
+
+> │    └── 📂 linter/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 readme_generator.py
+
+> │    └── 📂 metadata_naming/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 orchestrator/
+
+> │      ├── 📄 OrchestratorState.ts
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │      ├── 📄 worker_orchestrator.ts
+
+> │    └── 📂 self_heal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 worker_self_heal.ts
+
+> │    └── 📂 semantic_router/
+
+> │      ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 ingestion/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 worker_ingestion.ts
+
+> │  └── 📂 linter/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 readme_generator.py
+
+> │  └── 📂 metadata_naming/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 orchestrator/
+
+> │    ├── 📄 OrchestratorState.ts
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │    ├── 📄 worker_orchestrator.ts
+
+> │  └── 📂 self_heal/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 worker_self_heal.ts
+
+> │  └── 📂 semantic_router/
+
+> │    ├── 📄 index.html
+
+> ├── 📄 index.html
+
+> └── 📂 ingestion/
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 package.json
+
+> │  ├── 📄 worker_ingestion.ts
+
+> │  ├── 📄 wrangler.toml
+
+> └── 📂 lina/
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 resourceGraphWorker.ts
+
+> └── 📂 local_core/
+
+> │  ├── 📄 QUICK_START.md
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 README_WORKER.md
+
+> │  ├── 📄 SETUP.md
+
+> │  ├── 📄 TESTING_ROADMAP.md
+
+> │  ├── 📄 api_dev_history.py
+
+> │  ├── 📄 api_gina.py
+
+> │  ├── 📄 api_ingest.py
+
+> │  ├── 📄 api_query.py
+
+> │  ├── 📄 check_status.py
+
+> │  ├── 📄 check_workers.py
+
+> │  └── 📂 crawler/
+
+> │    ├── 📄 __init__.py
+
+> │    ├── 📄 vault_crawler.py
+
+> │  ├── 📄 db.py
+
+> │  ├── 📄 dev_error_helpers.py
+
+> │  ├── 📄 frontmatter_utils.py
+
+> │  ├── 📄 fs_scan_config.yaml
+
+> │  ├── 📄 fs_scanner.py
+
+> │  ├── 📄 gina_chat_contract.md
+
+> │  ├── 📄 gina_chat_contract.ts
+
+> │  ├── 📄 gina_personality_prompt.md
+
+> │  ├── 📄 gina_prompt.py
+
+> │  └── 📂 integrations/
+
+> │    ├── 📄 INTEGRATION_LAYER_SUMMARY.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 __init__.py
+
+> │    ├── 📄 base.py
+
+> │  ├── 📄 job_processor.py
+
+> │  ├── 📄 jobs.py
+
+> │  ├── 📄 memory.py
+
+> │  └── 📂 migrations/
+
+> │    ├── 📄 001_init.sql
+
+> │    ├── 📄 002_conversation_tables.sql
+
+> │    ├── 📄 003_filesystem_index.sql
+
+> │    ├── 📄 004_integration_tokens.sql
+
+> │    ├── 📄 005_worker_status_unique.sql
+
+> │    ├── 📄 006_add_worker_id.sql
+
+> │    ├── 📄 007_file_registry.sql
+
+> │    ├── 📄 008_jobs.sql
+
+> │    ├── 📄 009_notes.sql
+
+> │  ├── 📄 models.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  ├── 📄 quick_start.ps1
+
+> │  ├── 📄 rag.py
+
+> │  ├── 📄 requirements.txt
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 check-auth.ps1
+
+> │    ├── 📄 check-secrets.ps1
+
+> │    ├── 📄 deploy-all.ps1
+
+> │    ├── 📄 deploy-critical.ps1
+
+> │    ├── 📄 set-critical-secrets.ps1
+
+> │    ├── 📄 set-secrets-from-env.ps1
+
+> │    ├── 📄 sync-secrets.ps1
+
+> │    ├── 📄 test-rag-system.ps1
+
+> │    ├── 📄 test-with-curl.ps1
+
+> │    ├── 📄 verify-and-test.ps1
+
+> │  ├── 📄 start_worker.ps1
+
+> │  ├── 📄 test_debug_ingest.ps1
+
+> │  ├── 📄 test_ingest.py
+
+> │  ├── 📄 test_queue_admin.ps1
+
+> │  └── 📂 tests/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 run_tests.sh
+
+> │    ├── 📄 test_db_sanity.sql
+
+> │    ├── 📄 test_manual_failures.md
+
+> │    ├── 📄 test_sanity_checks.py
+
+> │  ├── 📄 text_extractor.py
+
+> │  └── 📂 tools/
+
+> │  ├── 📄 tools.py
+
+> │    ├── 📄 append_to_vault_note.py
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │    ├── 📄 check_worker_status.py
+
+> │    ├── 📄 create_vault_note.py
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │    ├── 📄 list_realm_files.py
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │    ├── 📄 run_agent_command.py
+
+> │    ├── 📄 search_processed_documents.py
+
+> │    ├── 📄 sms_send.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │    ├── 📄 start_worker.py
+
+> │    ├── 📄 web_get.py
+
+> │    ├── 📄 web_search.py
+
+> │  ├── 📄 tools_manifest.yaml
+
+> │  ├── 📄 worker.py
+
+> └── 📂 metadata_naming/
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 metadata-naming/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 worker_metadata_naming.ts
+
+> │    ├── 📄 wrangler.toml
+
+> └── 📂 orchestrator/
+
+> │  ├── 📄 index.html
+
+> ├── 📄 package (2).json
+
+> ├── 📄 package.json
+
+> └── 📂 self_heal/
+
+> │  ├── 📄 index.html
+
+> └── 📂 semantic-router/
+
+> │  ├── 📄 package.json
+
+> │  ├── 📄 worker_semantic_router.ts
+
+> │  └── 📄 wrangler.toml
+
 > ```
 
 ### Assistant
@@ -9174,103 +11015,200 @@ canonical_ref: ""
 > If you want, I’ll do the same cleanup pass next for `python_core/`.
 
 ### User
-> d2026-03-10T23:02:18.126573Z	Cloning repository...
-> 2026-03-10T23:02:28.281724Z	From https://github.com/qiallyme/_QiOne_MonoRepo_v2
-> 2026-03-10T23:02:28.282382Z	 * branch            fce4b590fab5d1315dd94914940188d6e48c0ec3 -> FETCH_HEAD
-> 2026-03-10T23:02:28.282462Z	
-> 2026-03-10T23:02:31.114418Z	HEAD is now at fce4b59 merge repos
-> 2026-03-10T23:02:31.114855Z	
-> 2026-03-10T23:02:31.160999Z	
-> 2026-03-10T23:02:31.161563Z	Using v2 root directory strategy
-> 2026-03-10T23:02:31.175599Z	Success: Finished cloning repository files
-> 2026-03-10T23:02:33.25189Z	Checking for configuration in a Wrangler configuration file (BETA)
-> 2026-03-10T23:02:33.252342Z	
-> 2026-03-10T23:02:34.347549Z	No Wrangler configuration file found. Continuing.
-> 2026-03-10T23:02:34.562998Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
-> 2026-03-10T23:02:34.563342Z	Installing project dependencies: npm install --progress=false
-> 2026-03-10T23:02:58.990714Z	
-> 2026-03-10T23:02:58.991083Z	added 350 packages, and audited 351 packages in 24s
-> 2026-03-10T23:02:58.991247Z	
-> 2026-03-10T23:02:58.991381Z	143 packages are looking for funding
-> 2026-03-10T23:02:58.991453Z	  run `npm fund` for details
-> 2026-03-10T23:02:58.991778Z	
-> 2026-03-10T23:02:58.99224Z	found 0 vulnerabilities
-> 2026-03-10T23:02:59.073957Z	Executing user command: npm run build
-> 2026-03-10T23:02:59.908111Z	
-> 2026-03-10T23:02:59.908406Z	> qione@1.0.0 build
-> 2026-03-10T23:02:59.908487Z	> next build
-> 2026-03-10T23:02:59.908537Z	
-> 2026-03-10T23:03:00.616884Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
-> 2026-03-10T23:03:00.622449Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
-> 2026-03-10T23:03:00.622622Z	This information is used to shape Next.js' roadmap and prioritize features.
-> 2026-03-10T23:03:00.622717Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-> 2026-03-10T23:03:00.622779Z	https://nextjs.org/telemetry
-> 2026-03-10T23:03:00.622846Z	
-> 2026-03-10T23:03:00.63915Z	▲ Next.js 16.1.6 (Turbopack)
-> 2026-03-10T23:03:00.639493Z	
-> 2026-03-10T23:03:00.752934Z	  Creating an optimized production build ...
-> 2026-03-10T23:03:06.877871Z	
-> 2026-03-10T23:03:06.878196Z	> Build error occurred
-> 2026-03-10T23:03:06.880696Z	Error: Turbopack build failed with 4 errors:
-> 2026-03-10T23:03:06.881179Z	./src/app/(portal)
-> 2026-03-10T23:03:06.881382Z	You cannot have two parallel pages that resolve to the same path. Please check /(app) and /(portal).
-> 2026-03-10T23:03:06.88148Z	
-> 2026-03-10T23:03:06.881594Z	./src/ui/styles/globals.css
-> 2026-03-10T23:03:06.881684Z	Error evaluating Node.js code
-> 2026-03-10T23:03:06.881733Z	Error: Cannot find module '@tailwindcss/postcss'
-> 2026-03-10T23:03:06.882094Z	Require stack:
-> 2026-03-10T23:03:06.882173Z	- /opt/buildhome/repo/apps/qione/.next/build/chunks/[root-of-the-server]__51225daf._.js
-> 2026-03-10T23:03:06.882247Z	- /opt/buildhome/repo/apps/qione/.next/build/chunks/[turbopack]_runtime.js
-> 2026-03-10T23:03:06.882326Z	- /opt/buildhome/repo/apps/qione/.next/build/postcss.js
-> 2026-03-10T23:03:06.882542Z	    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
-> 2026-03-10T23:03:06.882616Z	    [at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)]
-> 2026-03-10T23:03:06.882664Z	    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)]
-> 2026-03-10T23:03:06.882701Z	    [at Function._load (node:internal/modules/cjs/loader:1211:37)]
-> 2026-03-10T23:03:06.882786Z	    [at TracingChannel.traceSync (node:diagnostics_channel:322:14)]
-> 2026-03-10T23:03:06.882892Z	    [at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)]
-> 2026-03-10T23:03:06.882926Z	    [at Module.require (node:internal/modules/cjs/loader:1487:12)]
-> 2026-03-10T23:03:06.882957Z	    [at require (node:internal/modules/helpers:135:16)]
-> 2026-03-10T23:03:06.883001Z	    at turbopack:///[turbopack-node]/transforms/postcss.ts:49:25 [/opt/buildhome/repo/apps/qione/.next/build/chunks/[root-of-the-server]__51225daf._.js:133:33]
-> 2026-03-10T23:03:06.883061Z	    [at <anonymous>]
-> 2026-03-10T23:03:06.883125Z	
-> 2026-03-10T23:03:06.883519Z	Import trace:
-> 2026-03-10T23:03:06.883607Z	  Client Component Browser:
-> 2026-03-10T23:03:06.883649Z	    ./src/ui/styles/globals.css [Client Component Browser]
-> 2026-03-10T23:03:06.883695Z	    ./src/app/layout.tsx [Server Component]
-> 2026-03-10T23:03:06.883724Z	
-> 2026-03-10T23:03:06.88375Z	
-> 2026-03-10T23:03:06.883808Z	./src/app/api/qichronicle/moments/[id]/route.ts:1:1
-> 2026-03-10T23:03:06.883844Z	Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
-> 2026-03-10T23:03:06.883882Z	[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createRouteHandlerClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m
-> 2026-03-10T23:03:06.884162Z	 [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
-> 2026-03-10T23:03:06.884271Z	 [90m 2 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m[33m;[39m
-> 2026-03-10T23:03:06.884334Z	 [90m 3 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
-> 2026-03-10T23:03:06.884388Z	 [90m 4 |[39m[0m
-> 2026-03-10T23:03:06.884436Z	
-> 2026-03-10T23:03:06.884491Z	
-> 2026-03-10T23:03:06.884557Z	
-> 2026-03-10T23:03:06.88462Z	https://nextjs.org/docs/messages/module-not-found
-> 2026-03-10T23:03:06.884714Z	
-> 2026-03-10T23:03:06.884753Z	
-> 2026-03-10T23:03:06.884788Z	./src/app/api/qichronicle/moments/route.ts:1:1
-> 2026-03-10T23:03:06.884822Z	Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
-> 2026-03-10T23:03:06.884851Z	[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createRouteHandlerClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m
-> 2026-03-10T23:03:06.884882Z	 [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
-> 2026-03-10T23:03:06.884946Z	 [90m 2 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m[33m;[39m
-> 2026-03-10T23:03:06.884985Z	 [90m 3 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
-> 2026-03-10T23:03:06.885016Z	 [90m 4 |[39m[0m
-> 2026-03-10T23:03:06.885096Z	
-> 2026-03-10T23:03:06.885161Z	
-> 2026-03-10T23:03:06.885198Z	
-> 2026-03-10T23:03:06.885243Z	https://nextjs.org/docs/messages/module-not-found
-> 2026-03-10T23:03:06.885277Z	
-> 2026-03-10T23:03:06.885306Z	
-> 2026-03-10T23:03:06.885334Z	    at <unknown> (./src/app/api/qichronicle/moments/[id]/route.ts:1:1)
-> 2026-03-10T23:03:06.885367Z	    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
-> 2026-03-10T23:03:06.885418Z	    at <unknown> (./src/app/api/qichronicle/moments/route.ts:1:1)
-> 2026-03-10T23:03:06.885452Z	    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
-> 2026-03-10T23:03:07.026802Z	Failed: Error while executing user command. Exited with error code: 1
-> 2026-03-10T23:03:07.034289Z	Failed: build command exited with code: 1
+> d2026-03-10T23:02:18.126573Z	Cloning repository...
+
+> 2026-03-10T23:02:28.281724Z	From https://github.com/qiallyme/_QiOne_MonoRepo_v2
+
+> 2026-03-10T23:02:28.282382Z	 * branch            fce4b590fab5d1315dd94914940188d6e48c0ec3 -> FETCH_HEAD
+
+> 2026-03-10T23:02:28.282462Z	
+
+> 2026-03-10T23:02:31.114418Z	HEAD is now at fce4b59 merge repos
+
+> 2026-03-10T23:02:31.114855Z	
+
+> 2026-03-10T23:02:31.160999Z	
+
+> 2026-03-10T23:02:31.161563Z	Using v2 root directory strategy
+
+> 2026-03-10T23:02:31.175599Z	Success: Finished cloning repository files
+
+> 2026-03-10T23:02:33.25189Z	Checking for configuration in a Wrangler configuration file (BETA)
+
+> 2026-03-10T23:02:33.252342Z	
+
+> 2026-03-10T23:02:34.347549Z	No Wrangler configuration file found. Continuing.
+
+> 2026-03-10T23:02:34.562998Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+
+> 2026-03-10T23:02:34.563342Z	Installing project dependencies: npm install --progress=false
+
+> 2026-03-10T23:02:58.990714Z	
+
+> 2026-03-10T23:02:58.991083Z	added 350 packages, and audited 351 packages in 24s
+
+> 2026-03-10T23:02:58.991247Z	
+
+> 2026-03-10T23:02:58.991381Z	143 packages are looking for funding
+
+> 2026-03-10T23:02:58.991453Z	  run `npm fund` for details
+
+> 2026-03-10T23:02:58.991778Z	
+
+> 2026-03-10T23:02:58.99224Z	found 0 vulnerabilities
+
+> 2026-03-10T23:02:59.073957Z	Executing user command: npm run build
+
+> 2026-03-10T23:02:59.908111Z	
+
+> 2026-03-10T23:02:59.908406Z	> qione@1.0.0 build
+
+> 2026-03-10T23:02:59.908487Z	> next build
+
+> 2026-03-10T23:02:59.908537Z	
+
+> 2026-03-10T23:03:00.616884Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+
+> 2026-03-10T23:03:00.622449Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+
+> 2026-03-10T23:03:00.622622Z	This information is used to shape Next.js' roadmap and prioritize features.
+
+> 2026-03-10T23:03:00.622717Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+
+> 2026-03-10T23:03:00.622779Z	https://nextjs.org/telemetry
+
+> 2026-03-10T23:03:00.622846Z	
+
+> 2026-03-10T23:03:00.63915Z	▲ Next.js 16.1.6 (Turbopack)
+
+> 2026-03-10T23:03:00.639493Z	
+
+> 2026-03-10T23:03:00.752934Z	  Creating an optimized production build ...
+
+> 2026-03-10T23:03:06.877871Z	
+
+> 2026-03-10T23:03:06.878196Z	> Build error occurred
+
+> 2026-03-10T23:03:06.880696Z	Error: Turbopack build failed with 4 errors:
+
+> 2026-03-10T23:03:06.881179Z	./src/app/(portal)
+
+> 2026-03-10T23:03:06.881382Z	You cannot have two parallel pages that resolve to the same path. Please check /(app) and /(portal).
+
+> 2026-03-10T23:03:06.88148Z	
+
+> 2026-03-10T23:03:06.881594Z	./src/ui/styles/globals.css
+
+> 2026-03-10T23:03:06.881684Z	Error evaluating Node.js code
+
+> 2026-03-10T23:03:06.881733Z	Error: Cannot find module '@tailwindcss/postcss'
+
+> 2026-03-10T23:03:06.882094Z	Require stack:
+
+> 2026-03-10T23:03:06.882173Z	- /opt/buildhome/repo/apps/qione/.next/build/chunks/[root-of-the-server]__51225daf._.js
+
+> 2026-03-10T23:03:06.882247Z	- /opt/buildhome/repo/apps/qione/.next/build/chunks/[turbopack]_runtime.js
+
+> 2026-03-10T23:03:06.882326Z	- /opt/buildhome/repo/apps/qione/.next/build/postcss.js
+
+> 2026-03-10T23:03:06.882542Z	    [at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)]
+
+> 2026-03-10T23:03:06.882616Z	    [at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)]
+
+> 2026-03-10T23:03:06.882664Z	    [at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)]
+
+> 2026-03-10T23:03:06.882701Z	    [at Function._load (node:internal/modules/cjs/loader:1211:37)]
+
+> 2026-03-10T23:03:06.882786Z	    [at TracingChannel.traceSync (node:diagnostics_channel:322:14)]
+
+> 2026-03-10T23:03:06.882892Z	    [at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)]
+
+> 2026-03-10T23:03:06.882926Z	    [at Module.require (node:internal/modules/cjs/loader:1487:12)]
+
+> 2026-03-10T23:03:06.882957Z	    [at require (node:internal/modules/helpers:135:16)]
+
+> 2026-03-10T23:03:06.883001Z	    at turbopack:///[turbopack-node]/transforms/postcss.ts:49:25 [/opt/buildhome/repo/apps/qione/.next/build/chunks/[root-of-the-server]__51225daf._.js:133:33]
+
+> 2026-03-10T23:03:06.883061Z	    [at <anonymous>]
+
+> 2026-03-10T23:03:06.883125Z	
+
+> 2026-03-10T23:03:06.883519Z	Import trace:
+
+> 2026-03-10T23:03:06.883607Z	  Client Component Browser:
+
+> 2026-03-10T23:03:06.883649Z	    ./src/ui/styles/globals.css [Client Component Browser]
+
+> 2026-03-10T23:03:06.883695Z	    ./src/app/layout.tsx [Server Component]
+
+> 2026-03-10T23:03:06.883724Z	
+
+> 2026-03-10T23:03:06.88375Z	
+
+> 2026-03-10T23:03:06.883808Z	./src/app/api/qichronicle/moments/[id]/route.ts:1:1
+
+> 2026-03-10T23:03:06.883844Z	Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+
+> 2026-03-10T23:03:06.883882Z	[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createRouteHandlerClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.884162Z	 [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+
+> 2026-03-10T23:03:06.884271Z	 [90m 2 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.884334Z	 [90m 3 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.884388Z	 [90m 4 |[39m[0m
+
+> 2026-03-10T23:03:06.884436Z	
+
+> 2026-03-10T23:03:06.884491Z	
+
+> 2026-03-10T23:03:06.884557Z	
+
+> 2026-03-10T23:03:06.88462Z	https://nextjs.org/docs/messages/module-not-found
+
+> 2026-03-10T23:03:06.884714Z	
+
+> 2026-03-10T23:03:06.884753Z	
+
+> 2026-03-10T23:03:06.884788Z	./src/app/api/qichronicle/moments/route.ts:1:1
+
+> 2026-03-10T23:03:06.884822Z	Module not found: Can't resolve '@supabase/auth-helpers-nextjs'
+
+> 2026-03-10T23:03:06.884851Z	[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { createRouteHandlerClient } [36mfrom[39m [32m'@supabase/auth-helpers-nextjs'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.884882Z	 [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+
+> 2026-03-10T23:03:06.884946Z	 [90m 2 |[39m [36mimport[39m { cookies } [36mfrom[39m [32m'next/headers'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.884985Z	 [90m 3 |[39m [36mimport[39m { [33mNextResponse[39m } [36mfrom[39m [32m'next/server'[39m[33m;[39m
+
+> 2026-03-10T23:03:06.885016Z	 [90m 4 |[39m[0m
+
+> 2026-03-10T23:03:06.885096Z	
+
+> 2026-03-10T23:03:06.885161Z	
+
+> 2026-03-10T23:03:06.885198Z	
+
+> 2026-03-10T23:03:06.885243Z	https://nextjs.org/docs/messages/module-not-found
+
+> 2026-03-10T23:03:06.885277Z	
+
+> 2026-03-10T23:03:06.885306Z	
+
+> 2026-03-10T23:03:06.885334Z	    at <unknown> (./src/app/api/qichronicle/moments/[id]/route.ts:1:1)
+
+> 2026-03-10T23:03:06.885367Z	    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+
+> 2026-03-10T23:03:06.885418Z	    at <unknown> (./src/app/api/qichronicle/moments/route.ts:1:1)
+
+> 2026-03-10T23:03:06.885452Z	    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+
+> 2026-03-10T23:03:07.026802Z	Failed: Error while executing user command. Exited with error code: 1
+
+> 2026-03-10T23:03:07.034289Z	Failed: build command exited with code: 1
+
 > 2026-03-10T23:03:08.133282Z	Failed: error occurred while running build command
 
 ### Assistant

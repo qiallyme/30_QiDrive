@@ -3,7 +3,7 @@ layout: page
 title: "Taliban Threats Begin"
 slug: "taliban_threats_begin"
 created_at: "2021-01-01"
-updated_at: "2021-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 74ebf29659f246668c1a33fc77c122f3
 canonical_ref: ""
 ---
 

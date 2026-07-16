@@ -3,9 +3,9 @@ layout: page
 title: "Email Refinement Request"
 slug: "email_refinement_request"
 created_at: "2025-12-27 08:00:30"
-updated_at: "2025-12-27 08:00:30"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -71,64 +71,122 @@ canonical_ref: ""
 > Cody
 
 ### User
-> update this email, i have gathered all the doucments, after doing many of the trianing module 3-5 times i finally have all the certificates, ## Table of Contents
-> 
-> ---
-> 
-> ### Care Academy - Done ✅
-> 
-> ![image.png](attachment:ca6d1df6-0644-4766-9c62-c4dbd056143f:image.png)
-> 
-> ![image.png](attachment:b58020a9-c26b-47d1-b2b5-d1538633106b:image.png)
-> 
-> ![image.png](attachment:32fc9bb8-6b0c-4278-946b-43f51759cd86:image.png)
-> 
-> ![image.png](attachment:05cc7e5d-af94-40f7-b332-96cb059a8885:image.png)
-> 
-> ![image.png](attachment:f9050d48-20b9-4dc7-8ee9-6f725f9b6a68:image.png)
-> 
-> ![image.png](attachment:abd0d0b4-ae6f-456c-9521-84760f5f22da:image.png)
-> 
-> ### CPR Certificate - Done ✅
-> 
-> [6926672_16548395.pdf](attachment:07831a95-972b-41ff-85e7-59c487d76542:6926672_16548395.pdf)
-> 
-> [6926672_16548395_c.pdf](attachment:67dff2f7-c2d3-44db-a290-2092ff36de77:6926672_16548395_c.pdf)
-> 
-> ### TB Non-Reaction Photos - Clear ✅
-> 
-> ![IMG_2200.jpeg](attachment:f6db7961-2e31-48be-a71f-58bbe370f248:IMG_2200.jpeg)
-> 
-> ![IMG_2201.jpeg](attachment:565f4ce3-e8f4-46a2-94a3-ce4389d95fad:IMG_2201.jpeg)
-> 
-> ![IMG_2203.jpeg](attachment:90bf7c6e-3694-4160-8ba3-8cc199a2fa5c:IMG_2203.jpeg)
-> 
-> ### Vehicle Insurnace - Active ✅
-> 
-> [id-card.pdf](attachment:84a5bb59-3846-45bd-89fb-16cc6794ea24:id-card.pdf)
-> 
-> ### Resume - Attached ✅
-> 
-> [cody_rice_velasquez-fullstack.pdf](attachment:68ddb8e4-a2eb-433f-a308-e4012ac243d4:cody_rice_velasquez-fullstack.pdf)
-> 
-> ### Valid Drivers License - ✅
-> 
-> ![IMG_0200.jpeg](attachment:c8d65315-32de-47ea-96df-d65a0935b5e2:IMG_0200.jpeg)
-> 
-> ![IMG_3662.jpeg](attachment:c7d6c683-1e8a-42d2-bf46-605ebb9a8c79:IMG_3662.jpeg)
-> 
-> ### Direct Deposit Authorization - Attached ✅
-> 
-> [attachment:a658b197-b055-4771-9507-49d23dc44945:direct-deposit-form-CASHAPP.pdf](attachment:a658b197-b055-4771-9507-49d23dc44945:direct-deposit-form-CASHAPP.pdf)
-> 
-> ### Onboarding Signed - Done  ✅
-> 
-> [Cody_Rice-Velasquez_Orientation_and_Onboardin signed pages Copy.pdf](attachment:dfb8868e-6b00-4242-bb7f-d3f9c7f76f97:Cody_Rice-Velasquez_Orientation_and_Onboardin_signed_pages_Copy.pdf)
-> 
-> https://qially.com/cody
-> 
-> ![qrcode_qially.com.png](attachment:6fec3959-ee2c-46ac-95c5-bb87d2630945:qrcode_qially.com.png)
-> 
+> update this email, i have gathered all the doucments, after doing many of the trianing module 3-5 times i finally have all the certificates, ## Table of Contents
+
+> 
+
+> ---
+
+> 
+
+> ### Care Academy - Done ✅
+
+> 
+
+> ![image.png](attachment:ca6d1df6-0644-4766-9c62-c4dbd056143f:image.png)
+
+> 
+
+> ![image.png](attachment:b58020a9-c26b-47d1-b2b5-d1538633106b:image.png)
+
+> 
+
+> ![image.png](attachment:32fc9bb8-6b0c-4278-946b-43f51759cd86:image.png)
+
+> 
+
+> ![image.png](attachment:05cc7e5d-af94-40f7-b332-96cb059a8885:image.png)
+
+> 
+
+> ![image.png](attachment:f9050d48-20b9-4dc7-8ee9-6f725f9b6a68:image.png)
+
+> 
+
+> ![image.png](attachment:abd0d0b4-ae6f-456c-9521-84760f5f22da:image.png)
+
+> 
+
+> ### CPR Certificate - Done ✅
+
+> 
+
+> [6926672_16548395.pdf](attachment:07831a95-972b-41ff-85e7-59c487d76542:6926672_16548395.pdf)
+
+> 
+
+> [6926672_16548395_c.pdf](attachment:67dff2f7-c2d3-44db-a290-2092ff36de77:6926672_16548395_c.pdf)
+
+> 
+
+> ### TB Non-Reaction Photos - Clear ✅
+
+> 
+
+> ![IMG_2200.jpeg](attachment:f6db7961-2e31-48be-a71f-58bbe370f248:IMG_2200.jpeg)
+
+> 
+
+> ![IMG_2201.jpeg](attachment:565f4ce3-e8f4-46a2-94a3-ce4389d95fad:IMG_2201.jpeg)
+
+> 
+
+> ![IMG_2203.jpeg](attachment:90bf7c6e-3694-4160-8ba3-8cc199a2fa5c:IMG_2203.jpeg)
+
+> 
+
+> ### Vehicle Insurnace - Active ✅
+
+> 
+
+> [id-card.pdf](attachment:84a5bb59-3846-45bd-89fb-16cc6794ea24:id-card.pdf)
+
+> 
+
+> ### Resume - Attached ✅
+
+> 
+
+> [cody_rice_velasquez-fullstack.pdf](attachment:68ddb8e4-a2eb-433f-a308-e4012ac243d4:cody_rice_velasquez-fullstack.pdf)
+
+> 
+
+> ### Valid Drivers License - ✅
+
+> 
+
+> ![IMG_0200.jpeg](attachment:c8d65315-32de-47ea-96df-d65a0935b5e2:IMG_0200.jpeg)
+
+> 
+
+> ![IMG_3662.jpeg](attachment:c7d6c683-1e8a-42d2-bf46-605ebb9a8c79:IMG_3662.jpeg)
+
+> 
+
+> ### Direct Deposit Authorization - Attached ✅
+
+> 
+
+> [attachment:a658b197-b055-4771-9507-49d23dc44945:direct-deposit-form-CASHAPP.pdf](attachment:a658b197-b055-4771-9507-49d23dc44945:direct-deposit-form-CASHAPP.pdf)
+
+> 
+
+> ### Onboarding Signed - Done  ✅
+
+> 
+
+> [Cody_Rice-Velasquez_Orientation_and_Onboardin signed pages Copy.pdf](attachment:dfb8868e-6b00-4242-bb7f-d3f9c7f76f97:Cody_Rice-Velasquez_Orientation_and_Onboardin_signed_pages_Copy.pdf)
+
+> 
+
+> https://qially.com/cody
+
+> 
+
+> ![qrcode_qially.com.png](attachment:6fec3959-ee2c-46ac-95c5-bb87d2630945:qrcode_qially.com.png)
+
+> 
+
 > ---, i also want her to know my situation, i came to evansvill ein an emergency housing crisis, my home was illegally stolen from me and (you fill this in) the night before needing to come back to show my arm i was moving again in the cold with a dog and packed car, i was so exaughsted fromt he last few weeks of homelessness and brutality, so i apologize and dont want to squander this opportunity but i want to provide context, also i am ready to work and regardless of my status i have to take care of my mother so of course i have been already taking care of my mom including things that needed to be done by the assigned care taker, the work is being done, now lets get it on the books so both confort keepers and I get paid for it and stop wasting time, in a very nice professional way and advise them that day of orientaitoin i handed her my documetns she scanned them, and i have emailed everything else, Im not sure why all these delays are happenings. again im happy to help in the office if there a systemic issues going on and maybe with my experience i can help them and make the process more efficient and enjoyable and less stessful for everyone.
 
 ### Assistant

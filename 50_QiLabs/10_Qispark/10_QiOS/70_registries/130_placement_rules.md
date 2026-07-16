@@ -3,12 +3,12 @@ layout: page
 title: Placement Rules
 slug: placement-rules
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 08cc5ff77a5c418b9f2246434aecc5c4
 canonical_ref: ""
 template_key: master-template
 ---

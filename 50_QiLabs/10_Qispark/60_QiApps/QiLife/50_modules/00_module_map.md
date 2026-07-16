@@ -3,12 +3,12 @@ layout: page
 title: QiLife Module Map
 slug: qilife-module-map
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9decbf425d3f45b08b4733fab3f28b60
 canonical_ref: ""
 template_key: master-template
 ---

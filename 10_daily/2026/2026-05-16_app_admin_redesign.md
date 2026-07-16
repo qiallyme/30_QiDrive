@@ -3,9 +3,9 @@ layout: page
 title: "App Admin Redesign"
 slug: "app_admin_redesign"
 created_at: "2026-05-16 19:52:09"
-updated_at: "2026-05-16 19:52:09"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,14 +39,22 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> this app is pissing me off right now, i have no way to easily see or update the oxygen tank inventory and other items and the admin view is just for events i dont like how it did it. first and formost i need to digram this app out, with all the tables we have im not fully grasping what all we have now, this is what i started saying to codex, › for this app my main issues is there is not central menu that houses navigation
->   for the app and thus i cannot identify or easily update what needs done in this
->   app. So first what I would like do to do and create a separate admin view, we
->   already started working on that but lets completely split it with its own
->   sidebard, menue ect. Here is the way the view  must function. For each section of
->   the app, like Medications, Oxygen Tank Inventory, Treatment Plans etc, there
->   should be a table (already in supabase), a form that allows additions to the
->   table and editing of the table entries, and a report to view the entries, simple
+> this app is pissing me off right now, i have no way to easily see or update the oxygen tank inventory and other items and the admin view is just for events i dont like how it did it. first and formost i need to digram this app out, with all the tables we have im not fully grasping what all we have now, this is what i started saying to codex, › for this app my main issues is there is not central menu that houses navigation
+
+>   for the app and thus i cannot identify or easily update what needs done in this
+
+>   app. So first what I would like do to do and create a separate admin view, we
+
+>   already started working on that but lets completely split it with its own
+
+>   sidebard, menue ect. Here is the way the view  must function. For each section of
+
+>   the app, like Medications, Oxygen Tank Inventory, Treatment Plans etc, there
+
+>   should be a table (already in supabase), a form that allows additions to the
+
+>   table and editing of the table entries, and a report to view the entries, simple
+
 >   yet powerful,  but we need to group the tables by their purpose i hink, like oxygen has like 4 tables i think one is the actualy table of tank or the inventory, one is the ones in use and their status and one is the tank types and details for quick creation so all those table a really just one group.
 
 ### Assistant

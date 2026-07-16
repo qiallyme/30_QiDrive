@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Abusive roommate situation"
 slug: "abusive_roommate_situation"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 17350d4ac1cb4e099339bcbb9f287ab2
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Abusive roommate situation
 
 Category: Challenge

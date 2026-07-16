@@ -3,12 +3,12 @@ layout: section
 title: 10 Product
 slug: 10-product
 status: active
-updated_at: 2026-06-29
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e46b444ecd81428da38a6c629c62fdfc
 canonical_ref: ""
 template_key: master-template
 ---

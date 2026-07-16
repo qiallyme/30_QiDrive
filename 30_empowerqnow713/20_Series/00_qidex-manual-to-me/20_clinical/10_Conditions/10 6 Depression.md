@@ -3,10 +3,10 @@ layout: page
 title: 10 6 Depression
 slug: 10_6_depression
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - intake
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: q057745c8e205
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8ef8d2c1b57a4309aaae7c9d3e959594
 canonical_ref: ""
 template_key: master-template
 ---

@@ -7,20 +7,20 @@ qi_decimal: 0.00.10-RUL
 qid:
 type: rule
 node: file
-keywords:
+keywords: []
   - QiOS
   - Governance
   - Cursor
   - Automation
   - Rule Enforcement
-tags:
+tags: []
   - Rules
   - Automation
   - Governance
 context: QiOS_v1
 created: 2025-11-23
 updated:
-aliases:
+aliases: []
   - cursor_project_rules
   - qios_cursor_project_prompt
 version: 1.0.0
@@ -36,16 +36,16 @@ references:
 graph_weight: 500
 orbit: core
 entangled:
-summary:
+summary: ""
 sensitivity: internal
 classification: system_darkmatter
 layout: page
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 realm_label: ""
-uid: ""
+uid: 8a3ab7dda1404724adb9e684544e44f4
 canonical_ref: ""
 source_type: manual
 template_key: master-template

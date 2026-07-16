@@ -3,13 +3,13 @@ layout: artifact
 title: C:\QiLabs Structure Cleanup & DNA Alignment Plan (June 2026)
 slug: c-qilabs-structure-cleanup-dna-alignment-plan-june-2026
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:41-04:00"
+tags: []
   - qispark
 source_type: manual
 artifact_kind: report
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: be05e621ec484003bcc8d5dac7e92f0d
 canonical_ref: ""
 template_key: master-template
 ---

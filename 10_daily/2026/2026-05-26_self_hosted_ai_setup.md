@@ -3,9 +3,9 @@ layout: page
 title: "Self-hosted AI Setup"
 slug: "self_hosted_ai_setup"
 created_at: "2026-05-26 19:42:47"
-updated_at: "2026-05-26 19:42:47"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -803,57 +803,108 @@ canonical_ref: ""
 > Then I’ll give you the **exact next commands** with no guesswork.
 
 ### User
-> Windows PowerShell
-> Copyright (C) Microsoft Corporation. All rights reserved.
-> 
-> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-> 
-> PS C:\WINDOWS\system32> ssh qiadmin@qiserver
-> PS C:\WINDOWS\system32> ssh qiadmin@qiserver-1
-> The authenticity of host 'qiserver-1 (100.121.111.106)' can't be established.
-> ED25519 key fingerprint is SHA256:1d76etUaR1k4cPwyLs5BlHfdWUE781/WyWxR0G3eZ6g.
-> This host key is known by the following other names/addresses:
->     C:\Users\codyr/.ssh/known_hosts:7: 192.168.0.78
->     C:\Users\codyr/.ssh/known_hosts:10: 100.121.111.106
-> Are you sure you want to continue connecting (yes/no/[fingerprint])? YES
-> Warning: Permanently added 'qiserver-1' (ED25519) to the list of known hosts.
-> Enter passphrase for key 'C:\Users\codyr/.ssh/id_ed25519':
-> Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-29-generic x86_64)
-> 
->  * Documentation:  https://help.ubuntu.com
->  * Management:     https://landscape.canonical.com
->  * Support:        https://ubuntu.com/pro
-> 
-> Expanded Security Maintenance for Applications is not enabled.
-> 
-> 28 updates can be applied immediately.
-> To see these additional updates run: apt list --upgradable
-> 
-> 13 additional security updates can be applied with ESM Apps.
-> Learn more about enabling ESM Apps service at https://ubuntu.com/esm
-> 
-> Web console: https://qiserver:9090/ or https://192.168.4.22:9090/
-> 
-> Last login: Tue May 26 17:23:04 2026 from ::ffff:100.115.240.56
-> 
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ hostname; whoami; pwd
-> qiserver
-> qiadmin
-> /home/qiadmin
-> qiadmin@qiserver:~$ "echo '=== HOST ==='; hostname; echo '=== USER ==='; whoami; echo '=== OS ==='; lsb_release -a 2>/dev/null || cat /etc/os-release; echo '=== TAILSCALE ==='; tailscale status 2>/dev/null | head -20; echo '=== TAILSCALE IP ==='; tailscale ip -4 2>/dev/null; echo '=== OLLAMA BIN ==='; command -v ollama || true; echo '=== OLLAMA VERSION ==='; ollama --version 2>/dev/null || true; echo '=== OLLAMA SERVICE ==='; systemctl is-active ollama 2>/dev/null || true; systemctl is-enabled ollama 2>/dev/null || true; echo '=== OLLAMA ENV OVERRIDES ==='; systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true; echo '=== OLLAMA LISTEN PORTS ==='; ss -ltnp | grep -E '11434|ollama' || true; echo '=== OLLAMA API LOCAL ==='; curl -s http://127.0.0.1:11434/api/tags | head -c 1000 || true; echo; echo '=== MODELS ==='; ollama list 2>/dev/null || true; echo '=== AIDER ==='; command -v aider || true; aider --version 2>/dev/null || true; echo '=== AIDER WRAPPERS ==='; find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50"
-> -bash: echo '=== HOST ==='; hostname; echo '=== USER ==='; whoami; echo '=== OS ==='; lsb_release -a 2>/dev/null || cat /etc/os-release; echo '=== TAILSCALE ==='; tailscale status 2>/dev/null | head -20; echo '=== TAILSCALE IP ==='; tailscale ip -4 2>/dev/null; echo '=== OLLAMA BIN ==='; command -v ollama || true; echo '=== OLLAMA VERSION ==='; ollama --version 2>/dev/null || true; echo '=== OLLAMA SERVICE ==='; systemctl is-active ollama 2>/dev/null || true; systemctl is-enabled ollama 2>/dev/null || true; echo '=== OLLAMA ENV OVERRIDES ==='; systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true; echo '=== OLLAMA LISTEN PORTS ==='; ss -ltnp | grep -E '11434|ollama' || true; echo '=== OLLAMA API LOCAL ==='; curl -s http://127.0.0.1:11434/api/tags | head -c 1000 || true; echo; echo '=== MODELS ==='; ollama list 2>/dev/null || true; echo '=== AIDER ==='; command -v aider || true; aider --version 2>/dev/null || true; echo '=== AIDER WRAPPERS ==='; find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50: No such file or directory
-> qiadmin@qiserver:~$ $OllamaHost = "http://PASTE_QISERVER_TAILSCALE_IP_HERE:11434"
-> Invoke-RestMethod "$OllamaHost/api/tags"
-> =: command not found
-> Invoke-RestMethod: command not found
-> qiadmin@qiserver:~$ $OllamaHost = "http://100.101.102.103:11434"
-> Invoke-RestMethod "$OllamaHost/api/tags"
-> =: command not found
-> Invoke-RestMethod: command not found
+> Windows PowerShell
+
+> Copyright (C) Microsoft Corporation. All rights reserved.
+
+> 
+
+> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+> 
+
+> PS C:\WINDOWS\system32> ssh qiadmin@qiserver
+
+> PS C:\WINDOWS\system32> ssh qiadmin@qiserver-1
+
+> The authenticity of host 'qiserver-1 (100.121.111.106)' can't be established.
+
+> ED25519 key fingerprint is SHA256:1d76etUaR1k4cPwyLs5BlHfdWUE781/WyWxR0G3eZ6g.
+
+> This host key is known by the following other names/addresses:
+
+>     C:\Users\codyr/.ssh/known_hosts:7: 192.168.0.78
+
+>     C:\Users\codyr/.ssh/known_hosts:10: 100.121.111.106
+
+> Are you sure you want to continue connecting (yes/no/[fingerprint])? YES
+
+> Warning: Permanently added 'qiserver-1' (ED25519) to the list of known hosts.
+
+> Enter passphrase for key 'C:\Users\codyr/.ssh/id_ed25519':
+
+> Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-29-generic x86_64)
+
+> 
+
+>  * Documentation:  https://help.ubuntu.com
+
+>  * Management:     https://landscape.canonical.com
+
+>  * Support:        https://ubuntu.com/pro
+
+> 
+
+> Expanded Security Maintenance for Applications is not enabled.
+
+> 
+
+> 28 updates can be applied immediately.
+
+> To see these additional updates run: apt list --upgradable
+
+> 
+
+> 13 additional security updates can be applied with ESM Apps.
+
+> Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+> 
+
+> Web console: https://qiserver:9090/ or https://192.168.4.22:9090/
+
+> 
+
+> Last login: Tue May 26 17:23:04 2026 from ::ffff:100.115.240.56
+
+> 
+
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ hostname; whoami; pwd
+
+> qiserver
+
+> qiadmin
+
+> /home/qiadmin
+
+> qiadmin@qiserver:~$ "echo '=== HOST ==='; hostname; echo '=== USER ==='; whoami; echo '=== OS ==='; lsb_release -a 2>/dev/null || cat /etc/os-release; echo '=== TAILSCALE ==='; tailscale status 2>/dev/null | head -20; echo '=== TAILSCALE IP ==='; tailscale ip -4 2>/dev/null; echo '=== OLLAMA BIN ==='; command -v ollama || true; echo '=== OLLAMA VERSION ==='; ollama --version 2>/dev/null || true; echo '=== OLLAMA SERVICE ==='; systemctl is-active ollama 2>/dev/null || true; systemctl is-enabled ollama 2>/dev/null || true; echo '=== OLLAMA ENV OVERRIDES ==='; systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true; echo '=== OLLAMA LISTEN PORTS ==='; ss -ltnp | grep -E '11434|ollama' || true; echo '=== OLLAMA API LOCAL ==='; curl -s http://127.0.0.1:11434/api/tags | head -c 1000 || true; echo; echo '=== MODELS ==='; ollama list 2>/dev/null || true; echo '=== AIDER ==='; command -v aider || true; aider --version 2>/dev/null || true; echo '=== AIDER WRAPPERS ==='; find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50"
+
+> -bash: echo '=== HOST ==='; hostname; echo '=== USER ==='; whoami; echo '=== OS ==='; lsb_release -a 2>/dev/null || cat /etc/os-release; echo '=== TAILSCALE ==='; tailscale status 2>/dev/null | head -20; echo '=== TAILSCALE IP ==='; tailscale ip -4 2>/dev/null; echo '=== OLLAMA BIN ==='; command -v ollama || true; echo '=== OLLAMA VERSION ==='; ollama --version 2>/dev/null || true; echo '=== OLLAMA SERVICE ==='; systemctl is-active ollama 2>/dev/null || true; systemctl is-enabled ollama 2>/dev/null || true; echo '=== OLLAMA ENV OVERRIDES ==='; systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true; echo '=== OLLAMA LISTEN PORTS ==='; ss -ltnp | grep -E '11434|ollama' || true; echo '=== OLLAMA API LOCAL ==='; curl -s http://127.0.0.1:11434/api/tags | head -c 1000 || true; echo; echo '=== MODELS ==='; ollama list 2>/dev/null || true; echo '=== AIDER ==='; command -v aider || true; aider --version 2>/dev/null || true; echo '=== AIDER WRAPPERS ==='; find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50: No such file or directory
+
+> qiadmin@qiserver:~$ $OllamaHost = "http://PASTE_QISERVER_TAILSCALE_IP_HERE:11434"
+
+> Invoke-RestMethod "$OllamaHost/api/tags"
+
+> =: command not found
+
+> Invoke-RestMethod: command not found
+
+> qiadmin@qiserver:~$ $OllamaHost = "http://100.101.102.103:11434"
+
+> Invoke-RestMethod "$OllamaHost/api/tags"
+
+> =: command not found
+
+> Invoke-RestMethod: command not found
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -970,125 +1021,244 @@ canonical_ref: ""
 > For now: **only run the Linux audit block above.** Then paste the output.
 
 ### User
-> qiadmin@qiserver:~$ $OllamaHost = "http://PASTE_QISERVER_TAILSCALE_IP_HERE:11434"
-> Invoke-RestMethod "$OllamaHost/api/tags"
-> =: command not found
-> Invoke-RestMethod: command not found
-> qiadmin@qiserver:~$ $OllamaHost = "http://100.101.102.103:11434"
-> Invoke-RestMethod "$OllamaHost/api/tags"
-> =: command not found
-> Invoke-RestMethod: command not found
-> qiadmin@qiserver:~$ echo '=== HOST ==='
-> hostname
-> 
-> echo '=== USER ==='
-> whoami
-> 
-> echo '=== OS ==='
-> lsb_release -a 2>/dev/null || cat /etc/os-release
-> 
-> echo '=== TAILSCALE ==='
-> tailscale status 2>/dev/null | head -20
-> 
-> echo '=== TAILSCALE IP ==='
-> tailscale ip -4 2>/dev/null
-> 
-> echo '=== OLLAMA BIN ==='
-> command -v ollama || true
-> 
-> echo '=== OLLAMA VERSION ==='
-> ollama --version 2>/dev/null || true
-> 
-> echo '=== OLLAMA SERVICE ==='
-> systemctl is-active ollama 2>/dev/null || true
-> systemctl is-enabled ollama 2>/dev/null || true
-> 
-> echo '=== OLLAMA ENV OVERRIDES ==='
-> systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true
-> 
-> echo '=== OLLAMA LISTEN PORTS ==='
-> find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50
-> === HOST ===
-> qiserver
-> === USER ===
-> qiadmin
-> === OS ===
-> Distributor ID: Ubuntu
-> Description:    Ubuntu 24.04.4 LTS
-> Release:        24.04
-> Codename:       noble
-> === TAILSCALE ===
-> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                                    
-> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 1d ago            
-> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 47d ago           
-> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                                    
-> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.4.31:41641, tx 982941652 rx 80071700
-> === TAILSCALE IP ===
-> 100.121.111.106
-> === OLLAMA BIN ===
-> /usr/local/bin/ollama
-> === OLLAMA VERSION ===
-> ollama version is 0.23.2
-> === OLLAMA SERVICE ===
-> active
-> enabled
-> === OLLAMA ENV OVERRIDES ===
-> # /etc/systemd/system/ollama.service
-> [Unit]
-> Description=Ollama Service
-> After=network-online.target
-> 
-> [Service]
-> ExecStart=/usr/local/bin/ollama serve
-> User=ollama
-> Group=ollama
-> Restart=always
-> RestartSec=3
-> Environment="PATH=/home/qiadmin/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-> 
-> [Install]
-> WantedBy=default.target
-> 
-> # /etc/systemd/system/ollama.service.d/override.conf
-> [Service]
-> Environment="OLLAMA_HOST=127.0.0.1:11434"
-> Environment="OLLAMA_NO_CLOUD=1"
-> === OLLAMA LISTEN PORTS ===
-> LISTEN 0      4096               100.121.111.106:11434      0.0.0.0:*
-> LISTEN 0      4096                     127.0.0.1:11434      0.0.0.0:*
-> LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:11434         [::]:*
-> === OLLAMA API LOCAL ===
-> {"models":[{"name":"qwen2.5-coder:3b","model":"qwen2.5-coder:3b","modified_at":"2026-05-12T01:56:09.283131995-05:00","size":1929912626,"digest":"f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"3.1B","quantization_level":"Q4_K_M"}},{"name":"qwen2.5-coder:7b","model":"qwen2.5-coder:7b","modified_at":"2026-05-12T01:07:32.352011529-05:00","size":4683087561,"digest":"dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"7.6B","quantization_level":"Q4_K_M"}},{"name":"llama3.2:latest","model":"llama3.2:latest","modified_at":"2026-05-12T01:06:26.014474367-05:00","size":2019393189,"digest":"a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72","details":{"parent_model":"","format":"gguf","family":"llama","families":["llama"],"parameter_size":"3.2B","quant
-> === MODELS ===
-> NAME                       ID              SIZE      MODIFIED
-> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    2 weeks ago
-> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    2 weeks ago
-> llama3.2:latest            a80c4f17acd5    2.0 GB    2 weeks ago
-> nomic-embed-text:latest    0a109f422b47    274 MB    2 weeks ago
-> embeddinggemma:latest      85462619ee72    621 MB    5 weeks ago
-> === AIDER ===
-> === AIDER WRAPPERS ===
-> /srv/qios/repos/_QiAccess_Start/.aider.chat.history.md
-> /srv/qios/repos/_QiAccess_Start/.aider.input.history
-> /srv/qios/repos/_QiAccess_Start/.aider.tags.cache.v4
-> /srv/qios/tools/aider
-> /srv/qios/tools/aider/.venv/bin/aider
-> /srv/qios/.aider.chat.history.md
-> /srv/qios/stacks/paperless/.aider.chat.history.md
-> /home/qiadmin/.aider
-> qiadmin@qiserver:~$Connection to qiserver-1 closed.
-> PS C:\WINDOWS\system32> ssh qiadmin@qiserver-1 "tailscale ip -4"
-> Enter passphrase for key 'C:\Users\codyr/.ssh/id_ed25519':
-> 100.121.111.106
-> PS C:\WINDOWS\system32> $OllamaHost = "http://100.121.111.106:11434"
-> PS C:\WINDOWS\system32> Invoke-RestMethod "$OllamaHost/api/tags"
-> Invoke-RestMethod : 404 page not found
-> At line:1 char:1
-> + Invoke-RestMethod "$OllamaHost/api/tags"
-> + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->     + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc
->    eption
->     + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+> qiadmin@qiserver:~$ $OllamaHost = "http://PASTE_QISERVER_TAILSCALE_IP_HERE:11434"
+
+> Invoke-RestMethod "$OllamaHost/api/tags"
+
+> =: command not found
+
+> Invoke-RestMethod: command not found
+
+> qiadmin@qiserver:~$ $OllamaHost = "http://100.101.102.103:11434"
+
+> Invoke-RestMethod "$OllamaHost/api/tags"
+
+> =: command not found
+
+> Invoke-RestMethod: command not found
+
+> qiadmin@qiserver:~$ echo '=== HOST ==='
+
+> hostname
+
+> 
+
+> echo '=== USER ==='
+
+> whoami
+
+> 
+
+> echo '=== OS ==='
+
+> lsb_release -a 2>/dev/null || cat /etc/os-release
+
+> 
+
+> echo '=== TAILSCALE ==='
+
+> tailscale status 2>/dev/null | head -20
+
+> 
+
+> echo '=== TAILSCALE IP ==='
+
+> tailscale ip -4 2>/dev/null
+
+> 
+
+> echo '=== OLLAMA BIN ==='
+
+> command -v ollama || true
+
+> 
+
+> echo '=== OLLAMA VERSION ==='
+
+> ollama --version 2>/dev/null || true
+
+> 
+
+> echo '=== OLLAMA SERVICE ==='
+
+> systemctl is-active ollama 2>/dev/null || true
+
+> systemctl is-enabled ollama 2>/dev/null || true
+
+> 
+
+> echo '=== OLLAMA ENV OVERRIDES ==='
+
+> systemctl cat ollama 2>/dev/null | sed -n '1,160p' || true
+
+> 
+
+> echo '=== OLLAMA LISTEN PORTS ==='
+
+> find /srv/qios /home/qiadmin -maxdepth 5 -iname '*aider*' 2>/dev/null | head -50
+
+> === HOST ===
+
+> qiserver
+
+> === USER ===
+
+> qiadmin
+
+> === OS ===
+
+> Distributor ID: Ubuntu
+
+> Description:    Ubuntu 24.04.4 LTS
+
+> Release:        24.04
+
+> Codename:       noble
+
+> === TAILSCALE ===
+
+> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                                    
+
+> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 1d ago            
+
+> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 47d ago           
+
+> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                                    
+
+> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.4.31:41641, tx 982941652 rx 80071700
+
+> === TAILSCALE IP ===
+
+> 100.121.111.106
+
+> === OLLAMA BIN ===
+
+> /usr/local/bin/ollama
+
+> === OLLAMA VERSION ===
+
+> ollama version is 0.23.2
+
+> === OLLAMA SERVICE ===
+
+> active
+
+> enabled
+
+> === OLLAMA ENV OVERRIDES ===
+
+> # /etc/systemd/system/ollama.service
+
+> [Unit]
+
+> Description=Ollama Service
+
+> After=network-online.target
+
+> 
+
+> [Service]
+
+> ExecStart=/usr/local/bin/ollama serve
+
+> User=ollama
+
+> Group=ollama
+
+> Restart=always
+
+> RestartSec=3
+
+> Environment="PATH=/home/qiadmin/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+> 
+
+> [Install]
+
+> WantedBy=default.target
+
+> 
+
+> # /etc/systemd/system/ollama.service.d/override.conf
+
+> [Service]
+
+> Environment="OLLAMA_HOST=127.0.0.1:11434"
+
+> Environment="OLLAMA_NO_CLOUD=1"
+
+> === OLLAMA LISTEN PORTS ===
+
+> LISTEN 0      4096               100.121.111.106:11434      0.0.0.0:*
+
+> LISTEN 0      4096                     127.0.0.1:11434      0.0.0.0:*
+
+> LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:11434         [::]:*
+
+> === OLLAMA API LOCAL ===
+
+> {"models":[{"name":"qwen2.5-coder:3b","model":"qwen2.5-coder:3b","modified_at":"2026-05-12T01:56:09.283131995-05:00","size":1929912626,"digest":"f72c60cabf6237b07f6e632b2c48d533cef25eda2efbd34bed21c5e9c01e6225","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"3.1B","quantization_level":"Q4_K_M"}},{"name":"qwen2.5-coder:7b","model":"qwen2.5-coder:7b","modified_at":"2026-05-12T01:07:32.352011529-05:00","size":4683087561,"digest":"dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364","details":{"parent_model":"","format":"gguf","family":"qwen2","families":["qwen2"],"parameter_size":"7.6B","quantization_level":"Q4_K_M"}},{"name":"llama3.2:latest","model":"llama3.2:latest","modified_at":"2026-05-12T01:06:26.014474367-05:00","size":2019393189,"digest":"a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72","details":{"parent_model":"","format":"gguf","family":"llama","families":["llama"],"parameter_size":"3.2B","quant
+
+> === MODELS ===
+
+> NAME                       ID              SIZE      MODIFIED
+
+> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    2 weeks ago
+
+> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    2 weeks ago
+
+> llama3.2:latest            a80c4f17acd5    2.0 GB    2 weeks ago
+
+> nomic-embed-text:latest    0a109f422b47    274 MB    2 weeks ago
+
+> embeddinggemma:latest      85462619ee72    621 MB    5 weeks ago
+
+> === AIDER ===
+
+> === AIDER WRAPPERS ===
+
+> /srv/qios/repos/_QiAccess_Start/.aider.chat.history.md
+
+> /srv/qios/repos/_QiAccess_Start/.aider.input.history
+
+> /srv/qios/repos/_QiAccess_Start/.aider.tags.cache.v4
+
+> /srv/qios/tools/aider
+
+> /srv/qios/tools/aider/.venv/bin/aider
+
+> /srv/qios/.aider.chat.history.md
+
+> /srv/qios/stacks/paperless/.aider.chat.history.md
+
+> /home/qiadmin/.aider
+
+> qiadmin@qiserver:~$Connection to qiserver-1 closed.
+
+> PS C:\WINDOWS\system32> ssh qiadmin@qiserver-1 "tailscale ip -4"
+
+> Enter passphrase for key 'C:\Users\codyr/.ssh/id_ed25519':
+
+> 100.121.111.106
+
+> PS C:\WINDOWS\system32> $OllamaHost = "http://100.121.111.106:11434"
+
+> PS C:\WINDOWS\system32> Invoke-RestMethod "$OllamaHost/api/tags"
+
+> Invoke-RestMethod : 404 page not found
+
+> At line:1 char:1
+
+> + Invoke-RestMethod "$OllamaHost/api/tags"
+
+> + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>     + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-RestMethod], WebExc
+
+>    eption
+
+>     + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -1330,35 +1500,64 @@ canonical_ref: ""
 > That’s the move. No server edits. No public exposure. No IDE credits. qiserver becomes the brain; your main PC does the file work.
 
 ### User
-> models
-> ------
-> {@{name=qwen2.5-coder:3b; model=qwen2.5-coder:3b; modified_at=2026-05-12T01:56:09.283131995-05:00; size=1929912626; ...
-> 
-> 
-> PS C:\WINDOWS\system32>PS C:\WINDOWS\system32> $body = @{
-> >>   model = "qwen2.5-coder:7b"
-> >>   prompt = "Say READY in one word."
-> >>   stream = $false
-> >> } | ConvertTo-Json
-> PS C:\WINDOWS\system32>
-> PS C:\WINDOWS\system32> Invoke-RestMethod "http://127.0.0.1:11434/api/generate" -Method Post -ContentType "application/json" -Body $body
-> 
-> 
-> model                : qwen2.5-coder:7b
-> created_at           : 2026-05-27T00:52:47.478908354Z
-> response             : READY
-> done                 : True
-> done_reason          : stop
-> context              : {151644, 8948, 198, 2610...}
-> total_duration       : 10858613698
-> load_duration        : 6319070529
-> prompt_eval_count    : 35
-> prompt_eval_duration : 3513528341
-> eval_count           : 2
-> eval_duration        : 935128619
-> 
-> 
-> 
+> models
+
+> ------
+
+> {@{name=qwen2.5-coder:3b; model=qwen2.5-coder:3b; modified_at=2026-05-12T01:56:09.283131995-05:00; size=1929912626; ...
+
+> 
+
+> 
+
+> PS C:\WINDOWS\system32>PS C:\WINDOWS\system32> $body = @{
+
+> >>   model = "qwen2.5-coder:7b"
+
+> >>   prompt = "Say READY in one word."
+
+> >>   stream = $false
+
+> >> } | ConvertTo-Json
+
+> PS C:\WINDOWS\system32>
+
+> PS C:\WINDOWS\system32> Invoke-RestMethod "http://127.0.0.1:11434/api/generate" -Method Post -ContentType "application/json" -Body $body
+
+> 
+
+> 
+
+> model                : qwen2.5-coder:7b
+
+> created_at           : 2026-05-27T00:52:47.478908354Z
+
+> response             : READY
+
+> done                 : True
+
+> done_reason          : stop
+
+> context              : {151644, 8948, 198, 2610...}
+
+> total_duration       : 10858613698
+
+> load_duration        : 6319070529
+
+> prompt_eval_count    : 35
+
+> prompt_eval_duration : 3513528341
+
+> eval_count           : 2
+
+> eval_duration        : 935128619
+
+> 
+
+> 
+
+> 
+
 > PS C:\WINDOWS\system32> --- also just build a python script to do all this installing and setting up and error handling please.
 
 ### Assistant
@@ -1620,17 +1819,28 @@ canonical_ref: ""
 > ```
 
 ### User
-> & "$env:USERPROFILE\QiTools\aider-qiserver.ps1"
-> 
-> Inside Aider, type:
-> 
-> Change test.py so it has a main function and prints "qiserver aider is working". Keep it simple.
-> 
-> ========================================================================
-> Done
-> ========================================================================
-> Your qiserver-backed local Aider setup is ready or one PATH refresh away.
-> If Aider is not recognized, close PowerShell and reopen it.
+> & "$env:USERPROFILE\QiTools\aider-qiserver.ps1"
+
+> 
+
+> Inside Aider, type:
+
+> 
+
+> Change test.py so it has a main function and prints "qiserver aider is working". Keep it simple.
+
+> 
+
+> ========================================================================
+
+> Done
+
+> ========================================================================
+
+> Your qiserver-backed local Aider setup is ready or one PATH refresh away.
+
+> If Aider is not recognized, close PowerShell and reopen it.
+
 > PS C:\users\codyr\downloads>
 
 ### Assistant
@@ -1690,27 +1900,48 @@ canonical_ref: ""
 > ```
 
 ### User
-> PS C:\users\codyr\downloads> cd "C:\QiLabs\aider_test"
-> PS C:\QiLabs\aider_test>
-> PS C:\QiLabs\aider_test> git init
-> Reinitialized existing Git repository in C:/QiLabs/aider_test/.git/
-> PS C:\QiLabs\aider_test>
-> PS C:\QiLabs\aider_test> @'
-> >> print("hello")
-> >> '@ | Out-File ".\test.py" -Encoding utf8
-> PS C:\QiLabs\aider_test>
-> PS C:\QiLabs\aider_test> & "$env:USERPROFILE\QiTools\aider-qiserver.ps1"
-> Using qiserver Ollama through SSH tunnel...
-> Ollama API: http://127.0.0.1:11434
-> Model: qwen2.5-coder:7b
-> ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-> You can skip this check with --no-gitignore
-> Add .aider* to .gitignore (recommended)? (Y)es/(N)o [Yes]: n
-> Aider v0.86.2
-> Model: ollama/qwen2.5-coder:7b with whole edit format
-> Git repo: .git with 1 files
-> Repo-map: using 4096 tokens, auto refresh
-> ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+> PS C:\users\codyr\downloads> cd "C:\QiLabs\aider_test"
+
+> PS C:\QiLabs\aider_test>
+
+> PS C:\QiLabs\aider_test> git init
+
+> Reinitialized existing Git repository in C:/QiLabs/aider_test/.git/
+
+> PS C:\QiLabs\aider_test>
+
+> PS C:\QiLabs\aider_test> @'
+
+> >> print("hello")
+
+> >> '@ | Out-File ".\test.py" -Encoding utf8
+
+> PS C:\QiLabs\aider_test>
+
+> PS C:\QiLabs\aider_test> & "$env:USERPROFILE\QiTools\aider-qiserver.ps1"
+
+> Using qiserver Ollama through SSH tunnel...
+
+> Ollama API: http://127.0.0.1:11434
+
+> Model: qwen2.5-coder:7b
+
+> ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+> You can skip this check with --no-gitignore
+
+> Add .aider* to .gitignore (recommended)? (Y)es/(N)o [Yes]: n
+
+> Aider v0.86.2
+
+> Model: ollama/qwen2.5-coder:7b with whole edit format
+
+> Git repo: .git with 1 files
+
+> Repo-map: using 4096 tokens, auto refresh
+
+> ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
 > >
 
 ### Assistant

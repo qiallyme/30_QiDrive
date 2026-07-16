@@ -1,13 +1,13 @@
 ---
 title: 'ADR-[XXXX]: [Short, descriptive title]'
-status:
+status: active
   publish
 
-created_at: ''
-updated_at: ''
-author: ''
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
 
-source_type:
+source_type: manual
   manual ...
 
 supersedes: ''
@@ -20,7 +20,7 @@ document_type:
 
 context_domain: ''
 layout: page
-slug: ""
+slug: adr-xxxx-short-descriptive-title
 summary: ""
 owner: ""
 tags: []
@@ -30,7 +30,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8d1c6193b8e1447ea1ab3f5e788e2e8c
 canonical_ref: ""
 template_key: master-template
 ---

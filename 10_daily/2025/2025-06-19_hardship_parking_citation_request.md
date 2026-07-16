@@ -3,9 +3,9 @@ layout: page
 title: "Hardship Parking Citation Request"
 slug: "hardship_parking_citation_request"
 created_at: "2025-06-19 21:17:00"
-updated_at: "2025-06-19 21:17:00"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,47 +39,88 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> improve on this. **Request for Hardship Consideration: Parking Citation Judgments**
-> 
-> ParkIndy LLC
-> PO Box 2251
-> Indianapolis, IN 46206-2251
-> 
-> \[Date]
-> 
-> To Whom It May Concern,
-> 
-> I am writing to formally request relief and reconsideration regarding several unresolved parking citations issued under my name, including Citation #006860563, #006783377, and #006799589. These citations have escalated to civil judgments, with the total amount now exceeding \$500. I am seeking any available hardship accommodations, alternative payment options, or administrative relief based on the extraordinary and verifiable circumstances I am currently facing.
-> 
-> **Background and Financial Distress**
-> 
-> I am currently under extreme financial duress and am an active participant in a Chapter 13 bankruptcy proceeding. I have no savings, no support network, and no financial safety net. I am hours away from losing access to basic utilities, including electricity and water. There are multiple days each week that I go without food. I am isolated, with no one to rely on, and there is nothing in my immediate future suggesting recovery is possible without compassionate intervention.
-> 
-> **Medical Hardship and Functional Limitations**
-> 
-> I also suffer from numerous diagnosed medical and psychological conditions, including chronic anxiety, post-traumatic stress disorder (PTSD), depression, sleep disorders, and severe physical fatigue. These conditions deeply impact my ability to function on a daily basis. There are many days I cannot get out of bed or make it to the front door. Basic administrative tasks, like managing mail, phone calls, or attending court hearings, are often beyond my ability due to both my health and the overwhelming nature of my situation.
-> 
-> **Business Context of Citations**
-> 
-> The cited violations occurred while I was fulfilling duties directly related to my former business, ISSITax, where I was the only operational partner. I used my personal vehicle to meet with clients, transport documents and equipment, and handle business responsibilities that were left solely on my shoulders after my partners ceased participation. After being locked out of systems and physically barred from company assets, I was left without income, yet still burdened by the debts and consequences incurred during those operations. These citations are one such consequence, and they reflect an attempt to keep the business running under impossible circumstances.
-> 
-> **Relief Requested**
-> 
-> Given these realities, I respectfully request that the City consider the following actions:
-> 
-> * Reducing or waiving the outstanding judgment amounts either in full or in part
-> * Temporarily placing my account on hold while I proceed through bankruptcy
-> * Providing a formal hardship application, structured payment plan, or other relief documentation that I can submit to the court or your office
-> 
-> I understand the importance of upholding city ordinances, but I am asking for discretion and compassion in light of my unique circumstances. These tickets, while minor in origin, now represent a significant financial burden that compounds an already overwhelming crisis.
-> 
-> Your consideration could offer a crucial step toward restoring basic dignity and hope in my life.
-> 
-> Sincerely,
-> Cody Rice-Velasquez
-> 4817 Shadow Pointe Drive
-> Indianapolis, IN 46254
-> 317-205-4383
+> improve on this. **Request for Hardship Consideration: Parking Citation Judgments**
+
+> 
+
+> ParkIndy LLC
+
+> PO Box 2251
+
+> Indianapolis, IN 46206-2251
+
+> 
+
+> \[Date]
+
+> 
+
+> To Whom It May Concern,
+
+> 
+
+> I am writing to formally request relief and reconsideration regarding several unresolved parking citations issued under my name, including Citation #006860563, #006783377, and #006799589. These citations have escalated to civil judgments, with the total amount now exceeding \$500. I am seeking any available hardship accommodations, alternative payment options, or administrative relief based on the extraordinary and verifiable circumstances I am currently facing.
+
+> 
+
+> **Background and Financial Distress**
+
+> 
+
+> I am currently under extreme financial duress and am an active participant in a Chapter 13 bankruptcy proceeding. I have no savings, no support network, and no financial safety net. I am hours away from losing access to basic utilities, including electricity and water. There are multiple days each week that I go without food. I am isolated, with no one to rely on, and there is nothing in my immediate future suggesting recovery is possible without compassionate intervention.
+
+> 
+
+> **Medical Hardship and Functional Limitations**
+
+> 
+
+> I also suffer from numerous diagnosed medical and psychological conditions, including chronic anxiety, post-traumatic stress disorder (PTSD), depression, sleep disorders, and severe physical fatigue. These conditions deeply impact my ability to function on a daily basis. There are many days I cannot get out of bed or make it to the front door. Basic administrative tasks, like managing mail, phone calls, or attending court hearings, are often beyond my ability due to both my health and the overwhelming nature of my situation.
+
+> 
+
+> **Business Context of Citations**
+
+> 
+
+> The cited violations occurred while I was fulfilling duties directly related to my former business, ISSITax, where I was the only operational partner. I used my personal vehicle to meet with clients, transport documents and equipment, and handle business responsibilities that were left solely on my shoulders after my partners ceased participation. After being locked out of systems and physically barred from company assets, I was left without income, yet still burdened by the debts and consequences incurred during those operations. These citations are one such consequence, and they reflect an attempt to keep the business running under impossible circumstances.
+
+> 
+
+> **Relief Requested**
+
+> 
+
+> Given these realities, I respectfully request that the City consider the following actions:
+
+> 
+
+> * Reducing or waiving the outstanding judgment amounts either in full or in part
+
+> * Temporarily placing my account on hold while I proceed through bankruptcy
+
+> * Providing a formal hardship application, structured payment plan, or other relief documentation that I can submit to the court or your office
+
+> 
+
+> I understand the importance of upholding city ordinances, but I am asking for discretion and compassion in light of my unique circumstances. These tickets, while minor in origin, now represent a significant financial burden that compounds an already overwhelming crisis.
+
+> 
+
+> Your consideration could offer a crucial step toward restoring basic dignity and hope in my life.
+
+> 
+
+> Sincerely,
+
+> Cody Rice-Velasquez
+
+> 4817 Shadow Pointe Drive
+
+> Indianapolis, IN 46254
+
+> 317-205-4383
+
 > [crice4485@gmail.com](mailto:crice4485@gmail.com)
 
 ### Assistant

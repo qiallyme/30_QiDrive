@@ -3,9 +3,9 @@ layout: page
 title: "Motion to Vacate Judgment"
 slug: "motion_to_vacate_judgment"
 created_at: "2026-04-04 20:31:16"
-updated_at: "2026-04-04 20:31:16"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3495,84 +3495,162 @@ canonical_ref: ""
 > If you want, I’ll give you a **redline-style final defect list** for the current uploaded `.txt` in filing order so you can fix it fast.
 
 ### User
-> Weaponizing math errors to stop foreclosure
-> Apr 8, 2026, 8:34 AM
-> Weaponizing math errors to stop foreclosure
-> Play
-> 
-> 
-> 00:00
-> 03:35
-> Mute
-> 
-> Settings
-> (0:00) Today, we are diving into a critique of a pro se motion to vacate a default foreclosure (0:07) judgment, arguing the plaintiff bypassed ADA notice requirements. (0:13) Yeah, and getting right into it, the most immediate way to strengthen this motion is to restructure (0:18) the opening argument to weaponize the plaintiff's own admitted financial miscalculations. (0:24) Right, because currently the draft kicks off with like a really nuanced legal theory merging (0:29) Title II ADA compliance with the Milane notice standard.
-> (0:33) Exactly. (0:34) And while it is this fascinating constitutional argument, you know, asking the judge to accept (0:39) a novel interpretation of trial rule 4.1 right out of the gate is, well, it's a massive uphill (0:46) battle. (0:46) Oh, for sure.
-> (0:48) Do you think leading with that complex ADA argument actually alienates a judge who might (0:53) just prefer a simple black and white procedural error? (0:56) I mean, that is exactly the dynamic you have to keep in mind here. (1:00) The weakness is relying initially on that nuanced theory because a judge might hesitate (1:04) to set a new ADA precedent. (1:06) But a $10,000 math error is an objective, undeniable flaw.
-> (1:10) Precisely. (1:11) So the suggestion is to start with the plaintiff's February 2026 nunc protunk admission of (1:16) the $10,000 interest miscalculation instead. (1:20) That makes a lot of practical sense.
-> (1:22) How would they actually implement that shift? (1:24) Well, a concrete way to do this is to open section 4 by dropping in the comparative audit (1:29) chart immediately. (1:31) Show them the foundational math is flawed from page 1. (1:34) Oh, nice. (1:35) Yeah.
-> (1:36) And then from there, you can easily transition into how this numerical instability mirrors (1:41) their procedural recklessness overall. (1:43) Speaking of procedural recklessness, the plaintiff's sudden shift to naming unknown (1:49) occupants exposes a calculated procedural shortcut rather than just an administrative (1:54) oversight. (1:56) Yes, that is such a brilliant observation.
-> (1:58) But the major weakness right now is that this point gets completely buried midway through (2:04) the timeline facts. (2:05) Yeah, it's stuck under the property disposal section, right? (2:09) Exactly, which severely dilutes its impact. (2:12) So the suggestion here is to extract this pivot and really frame it as the central (2:18) narrative hinge of the entire motion.
-> (2:20) It's almost like a magician's sleight of hand. (2:23) The plaintiff just made the known defendant disappear on paper simply to bypass the heavy (2:29) burden of an individualized eviction notice. (2:31) That is a great analogy.
-> (2:33) You need to visually force the judge to see this magic trick on the page. (2:37) So how do we make that pop visually? (2:39) You explicitly contrast the initial January 2025 complaint naming Cody Rice-Valesquez (2:45) against the December 2025 RIT petition targeting unknown occupants. (2:50) Just put them side by side.
-> (2:51) Yeah, put that contrast front and center under its own dedicated, bolded subheading. (2:56) Right, so by physically separating that shift on the page, it stops being just another footnote (3:02) in a dense timeline. (3:03) Exactly.
-> (3:04) It becomes the smoking gun of willful evasion. (3:07) You pull the trick out of the footnotes and put a glaring spotlight right on their (3:10) strategy to avoid giving proper notice. (3:12) So to quickly recap this critique, you really want to prioritize the admitted numerical (3:18) error to establish the plaintiff's unreliability right away.
-> (3:22) Right, and then elevate that unknown occupant's pivot to clearly expose their willful procedural (3:26) evasion. (3:27) Restructuring these elements will definitely maximize the motion's impact on the court. (3:32) Please submit your revised work back in again for more feedback.  Isolating jurisdictional defects in foreclosure motions
-> Apr 8, 2026, 9:11 AM
-> Isolating jurisdictional defects in foreclosure motions
-> Play
-> 
-> 
-> 00:00
-> 11:25
-> Mute
-> 
-> Settings
-> (0:00) When an engineer looks at a collapsing building, they don't catalog the cracked windows, they check the foundation. (0:07) Today's critique focuses on a submitted draft of a pro se defendant's renewed motion to vacate a default foreclosure judgment. (0:15) Consolidating disparate legal arguments and post-judgment harms into a single motion risks diluting the core jurisdictional challenge.
-> (0:24) Yeah, that is exactly the weakness here. The current draft of this renewed motion (0:28) operates as basically a kitchen sink filing. Right.
-> (0:32) It blends a very strict procedural defect, which is the lack of the follow-up mailing required by Indiana trial rule (0:38) 4.1b with these highly distinct totally separate issues. Like the plaintiff's (0:44) $10,000 nunc protunc interest miscalculation. Exactly.
-> (0:49) It throws that in there along with the arbitrary 9am to 11am window (0:53) they gave for property retrieval and even the tragic closure of a cohabitants federal asylum case. (0:59) Wow. Yeah, I mean by layering all those post-judgment damages and accounting disputes over what is really a threshold (1:08) jurisdictional question, the motion just loses its sharp procedural focus.
-> It risks totally overwhelming the court. (1:15) It does. It absolutely does.
-> I like to think about this visually, you know? (1:20) Framing the jurisdictional argument as a scalpel and the post-judgment damages as a hammer. (1:26) So if you're presenting the judge with a hammer, doesn't that make it so much harder for them to see the precision of the scalpel? (1:32) Especially since the strategy map in the source notes (1:35) explicitly advised holding back those broader grievances for separate filings. Completely.
-> (1:41) You're asking a judge to perform a highly precise technical operation, (1:45) voiding a judgment entirely based on a mailing defect. (1:49) But then you're handing them this massive hammer of messy factual disputes. Right, and judges are busy.
-> Exactly. (1:55) So my suggestion here is to disentangle the threshold jurisdictional arguments from the post-judgment damages and accounting disputes. (2:03) You've got to break them into carefully sequenced standalone filings.
-> (2:07) Okay, so let's get into some concrete examples of how to do that. What goes where? (2:11) Well, first you file the trial rule 4.1B mailing failure and the ADA notice requirements (2:17) purely as the Rule 60B6 motion to vacate. Just those two things? Just those.
-> (2:23) That single document should do absolutely nothing but argue that the court never presents personal jurisdiction, right? (2:29) Making the judgment void from day one. You isolate the scalpel. Okay, that makes sense.
-> (2:34) But what about that accounting issue? The source material mentions the plaintiff admitting to a massive miscalculation. (2:40) Right, the almost $10,000 shift. You have to reserve that $9,901 interest reduction admission for a separate (2:49) targeted objection to the accounting and surplus.
-> Why keep it separate if it makes the plaintiff look so bad? Because it's fundamentally an accounting dispute. (2:58) If you put it in the motion to vacate, the judge starts looking at the math instead of the missing mail. (3:03) Ah, I see.
-> You don't want them conflating the two. Exactly. (3:08) And then for the property destruction and the asylum issues, you move those into a separate damages or sanctions motion.
-> (3:15) Or, you know, maybe a federal ADA complaint. Just getting them out of this specific filing. Right.
-> (3:21) Ensuring that the state judge is only tasked with ruling on that narrow procedural service defect first. (3:27) That sequencing makes a lot of sense. (3:30) But moving on to the actual writing, relying on highly charged emotional phrasing (3:35) can undermine the objective force of the documented factual evidence.
-> (3:40) This is a huge weakness in the current draft. It utilizes adjectives and framing that heavily editorialize the opponent's intent. (3:48) Yeah, I saw phrases like catastrophic, irreparable, and ongoing harm.
-> (3:54) Yep, and sloppy bad faith litigation tactics and calling their financial calculus corrupt. (4:00) To be fair, though, I mean, the frustration driving those words is entirely justified by the facts. (4:07) If a bank alters its math by 10 grand after the fact, a normal person calls that corrupt.
-> (4:12) Oh, from a human perspective, it is 100% justified. But from a judicial psychology standpoint, it's a trap. (4:20) While the frustration is justified, this emotionally charged rhetoric can trigger a judge's defensive mechanisms.
-> (4:27) Let's dig into that for a second. If a judge reads the word corrupt, (4:31) do they instinctively raise their guard and demand a higher burden of proof? They absolutely do. (4:36) Whereas like a cold, undeniable timeline just forces them to see the error without feeling like they're taking sides in a moral dispute.
-> (4:44) That is exactly the dynamic. (4:46) When you throw around words like corrupt, you provide opposing counsel a massive opening to dismiss the filing as just, (4:52) you know, hyperbolic venting. Right.
-> The opposing counsel gets to stand up and defend their character (4:57) instead of their flawed service. Exactly. They get to say, your honor, we made an administrative oversight.
-> We aren't corrupt. (5:05) You've let them change the subject. (5:07) So the suggestion here is to adopt a colder, surgically objective judicial tone (5:12) that allows the timeline and the opponent's own admissions to generate the outrage naturally.
-> Show. Don't tell. Precisely.
-> (5:21) Let's look at some concrete examples of how to fix this in the text. (5:24) Yeah, how do we take the heat out of the service defect argument? (5:29) Well, instead of writing, the plaintiff entirely failed to execute this jurisdictional prerequisite, which sounds like a personal attack. Right.
-> (5:36) You state simply, the sheriff's returns dated March 5 and April 15, 2025 (5:42) contain no record of the mailing required by trial rule 4.1b. (5:46) Oh, that's much better. Opposing counsel can argue all day against an accusation of failure, (5:51) but they can't argue with a blank space on a physical record. (5:55) Exactly.
-> Now, let's apply that to the accounting dispute. (5:59) Rather than calling the credit bid sloppy, bad faith litigation tactics, you describe it objectively. (6:04) How would you phrase that? You'd write, (6:07) plaintiff's February 24, nunk pro-tunk petition sought to retroactively reduce the credit bid by nearly 10,000 dollars, (6:15) explicitly acknowledging the original sworn figure presented to the court was inaccurate.
-> Oh, wow. (6:20) That's actually devastating. You aren't calling them liars.
-> (6:23) You're just pointing out that they formally admitted under oath that their previous sworn statement was wrong. (6:29) Right. It traps them in their own filings without you ever having to raise your voice.
-> I love that. (6:34) What about the pre-litigation outreach? Same principle. (6:38) Replace subjective terms like institutional non-engagement with a direct reference to the evidence.
-> Frame it like, (6:45) plaintiff received the December 4, 2024 hardship letter, but proceeded with the January 16, (6:53) 2025 filing without documented response. The proximity of those dates does all the (6:59) heavy lifting for you. Exactly.
-> It trusts the judge to recognize the bad behavior. (7:05) Okay, so we've cleaned up the structure and the tone, but there's a big legal argument here (7:10) we need to refine. The application of the ADA within the motion lacks a tight, (7:15) explicit bridge to the constitutional standard for due process.
-> (7:19) This is probably the most complex weakness in the draft. The current text argues that the (7:24) ADA was violated during the service process and the property retrieval. (7:29) Right.
-> But it somewhat isolates the ADA claim as a standalone statutory grievance. It does not (7:35) sufficiently tie the plaintiff's knowledge of the cognitive disabilities, the ADHD, the PTSD, (7:42) the executive dysfunction directly to the Moulain constitutional standard. (7:46) Moulain being the Supreme Court standard for valid service, right? The requirement for notice (7:51) reasonably calculated under all the circumstances to apprise interested parties.
-> (7:56) Exactly. But wait, if they don't explicitly tie those together, what's the risk? Is it that the (8:01) court views the ADA claim as a separate administrative issue outside their immediate purview? (8:06) Yes, completely. A state court judge looking at a foreclosure docket might just say, (8:12) look, an ADA violation is a serious federal issue, but that's a matter for a different court.
-> (8:18) My job today is just to see if a summons was dropped off. (8:21) Oh, I see. So how do we trap the court into seeing the disability not as a request for (8:27) special treatment, but as the exact reason the chosen service method was legally and constitutionally (8:33) void? The suggestion is to weave the ADA obligations directly into the constitutional (8:39) due process framework.
-> You use the opponent's actual knowledge of the disability to prove (8:44) exactly why their copy left service failed the fundamental constitutional test. (8:50) Copy left meaning they just taped the summons to the door or left it with someone at the house? (8:54) Right. Okay.
-> So give me a concrete example of how to explicitly argue this. (8:59) You would explicitly argue that because plaintiff had actual knowledge of the (9:02) auditory and executive dysfunction impairments via the 2023 and December 2024 certified hardship (9:09) letters, relying on standard copy left service without the required mailing was constitutionally (9:14) inadequate. If you know someone is out of the country, slipping a note under their door isn't (9:19) reasonably calculated.
-> If you know they have severe executive dysfunction in a regular doorknock (9:25) is objectively unreasonable. That's a brilliant pivot. How should they actually write that (9:30) sentence in the motion? Frame the argument to state due process requires notice tailored (9:35) to the known circumstances of the defendant.
-> Plaintiff's possession of the December 2024 (9:40) medical documentation meant they knew irregular doorknocking would fail rendering their service (9:46) method not reasonably calculated to provide notice. That binds the empirical fact of the (9:51) disability directly to the legal failure of the procedure. It does.
-> And to cap it off, (9:56) use the opponent's failure to utilize alternative requested communication methods as evidence of (10:02) jurisdictional failure rather than just an ADA violation. What does that mean practically? (10:08) It means if the hardship letter requested communication via email as an accommodation (10:13) and the bank ignored that and just sent a sheriff to knock on the door, (10:16) that proves they weren't making a genuine attempt to provide notice under the Mulani standard. (10:21) So the failure to accommodate becomes the actual proof that their service wasn't (10:25) reasonably calculated.
-> Exactly. It elevates it from a civil rights complaint to a fatal (10:30) jurisdictional flaw. Well, to summarize, this highly thoroughly researched motion can really (10:35) maximize its impact by implementing three key adjustments.
-> Right. First, separate the arguments. (10:41) Keep the motion to vacate laser focused on the jurisdictional trial rule 4.1 B defect (10:46) while reserving those accounting errors and property damages for separate sequenced filings.
-> (10:52) Keep the quarantine zone intact. Exactly. Second, cool the rhetorical temperature by (10:58) replacing emotionally charged labels with cold objective factual timelines that just let the (11:03) opponent's errors speak for themselves.
-> So don't tell. Yep. And finally, tightly bind the ADA (11:10) disability knowledge directly to the constitutional standard for due process, (11:14) proving why the service method was legally void under the circumstances.
-> It's all there in the (11:19) research. It just needs this specific framing. Please submit your revised drafts back to us.
+> Weaponizing math errors to stop foreclosure
+
+> Apr 8, 2026, 8:34 AM
+
+> Weaponizing math errors to stop foreclosure
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 03:35
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) Today, we are diving into a critique of a pro se motion to vacate a default foreclosure (0:07) judgment, arguing the plaintiff bypassed ADA notice requirements. (0:13) Yeah, and getting right into it, the most immediate way to strengthen this motion is to restructure (0:18) the opening argument to weaponize the plaintiff's own admitted financial miscalculations. (0:24) Right, because currently the draft kicks off with like a really nuanced legal theory merging (0:29) Title II ADA compliance with the Milane notice standard.
+
+> (0:33) Exactly. (0:34) And while it is this fascinating constitutional argument, you know, asking the judge to accept (0:39) a novel interpretation of trial rule 4.1 right out of the gate is, well, it's a massive uphill (0:46) battle. (0:46) Oh, for sure.
+
+> (0:48) Do you think leading with that complex ADA argument actually alienates a judge who might (0:53) just prefer a simple black and white procedural error? (0:56) I mean, that is exactly the dynamic you have to keep in mind here. (1:00) The weakness is relying initially on that nuanced theory because a judge might hesitate (1:04) to set a new ADA precedent. (1:06) But a $10,000 math error is an objective, undeniable flaw.
+
+> (1:10) Precisely. (1:11) So the suggestion is to start with the plaintiff's February 2026 nunc protunk admission of (1:16) the $10,000 interest miscalculation instead. (1:20) That makes a lot of practical sense.
+
+> (1:22) How would they actually implement that shift? (1:24) Well, a concrete way to do this is to open section 4 by dropping in the comparative audit (1:29) chart immediately. (1:31) Show them the foundational math is flawed from page 1. (1:34) Oh, nice. (1:35) Yeah.
+
+> (1:36) And then from there, you can easily transition into how this numerical instability mirrors (1:41) their procedural recklessness overall. (1:43) Speaking of procedural recklessness, the plaintiff's sudden shift to naming unknown (1:49) occupants exposes a calculated procedural shortcut rather than just an administrative (1:54) oversight. (1:56) Yes, that is such a brilliant observation.
+
+> (1:58) But the major weakness right now is that this point gets completely buried midway through (2:04) the timeline facts. (2:05) Yeah, it's stuck under the property disposal section, right? (2:09) Exactly, which severely dilutes its impact. (2:12) So the suggestion here is to extract this pivot and really frame it as the central (2:18) narrative hinge of the entire motion.
+
+> (2:20) It's almost like a magician's sleight of hand. (2:23) The plaintiff just made the known defendant disappear on paper simply to bypass the heavy (2:29) burden of an individualized eviction notice. (2:31) That is a great analogy.
+
+> (2:33) You need to visually force the judge to see this magic trick on the page. (2:37) So how do we make that pop visually? (2:39) You explicitly contrast the initial January 2025 complaint naming Cody Rice-Valesquez (2:45) against the December 2025 RIT petition targeting unknown occupants. (2:50) Just put them side by side.
+
+> (2:51) Yeah, put that contrast front and center under its own dedicated, bolded subheading. (2:56) Right, so by physically separating that shift on the page, it stops being just another footnote (3:02) in a dense timeline. (3:03) Exactly.
+
+> (3:04) It becomes the smoking gun of willful evasion. (3:07) You pull the trick out of the footnotes and put a glaring spotlight right on their (3:10) strategy to avoid giving proper notice. (3:12) So to quickly recap this critique, you really want to prioritize the admitted numerical (3:18) error to establish the plaintiff's unreliability right away.
+
+> (3:22) Right, and then elevate that unknown occupant's pivot to clearly expose their willful procedural (3:26) evasion. (3:27) Restructuring these elements will definitely maximize the motion's impact on the court. (3:32) Please submit your revised work back in again for more feedback.  Isolating jurisdictional defects in foreclosure motions
+
+> Apr 8, 2026, 9:11 AM
+
+> Isolating jurisdictional defects in foreclosure motions
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 11:25
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) When an engineer looks at a collapsing building, they don't catalog the cracked windows, they check the foundation. (0:07) Today's critique focuses on a submitted draft of a pro se defendant's renewed motion to vacate a default foreclosure judgment. (0:15) Consolidating disparate legal arguments and post-judgment harms into a single motion risks diluting the core jurisdictional challenge.
+
+> (0:24) Yeah, that is exactly the weakness here. The current draft of this renewed motion (0:28) operates as basically a kitchen sink filing. Right.
+
+> (0:32) It blends a very strict procedural defect, which is the lack of the follow-up mailing required by Indiana trial rule (0:38) 4.1b with these highly distinct totally separate issues. Like the plaintiff's (0:44) $10,000 nunc protunc interest miscalculation. Exactly.
+
+> (0:49) It throws that in there along with the arbitrary 9am to 11am window (0:53) they gave for property retrieval and even the tragic closure of a cohabitants federal asylum case. (0:59) Wow. Yeah, I mean by layering all those post-judgment damages and accounting disputes over what is really a threshold (1:08) jurisdictional question, the motion just loses its sharp procedural focus.
+
+> It risks totally overwhelming the court. (1:15) It does. It absolutely does.
+
+> I like to think about this visually, you know? (1:20) Framing the jurisdictional argument as a scalpel and the post-judgment damages as a hammer. (1:26) So if you're presenting the judge with a hammer, doesn't that make it so much harder for them to see the precision of the scalpel? (1:32) Especially since the strategy map in the source notes (1:35) explicitly advised holding back those broader grievances for separate filings. Completely.
+
+> (1:41) You're asking a judge to perform a highly precise technical operation, (1:45) voiding a judgment entirely based on a mailing defect. (1:49) But then you're handing them this massive hammer of messy factual disputes. Right, and judges are busy.
+
+> Exactly. (1:55) So my suggestion here is to disentangle the threshold jurisdictional arguments from the post-judgment damages and accounting disputes. (2:03) You've got to break them into carefully sequenced standalone filings.
+
+> (2:07) Okay, so let's get into some concrete examples of how to do that. What goes where? (2:11) Well, first you file the trial rule 4.1B mailing failure and the ADA notice requirements (2:17) purely as the Rule 60B6 motion to vacate. Just those two things? Just those.
+
+> (2:23) That single document should do absolutely nothing but argue that the court never presents personal jurisdiction, right? (2:29) Making the judgment void from day one. You isolate the scalpel. Okay, that makes sense.
+
+> (2:34) But what about that accounting issue? The source material mentions the plaintiff admitting to a massive miscalculation. (2:40) Right, the almost $10,000 shift. You have to reserve that $9,901 interest reduction admission for a separate (2:49) targeted objection to the accounting and surplus.
+
+> Why keep it separate if it makes the plaintiff look so bad? Because it's fundamentally an accounting dispute. (2:58) If you put it in the motion to vacate, the judge starts looking at the math instead of the missing mail. (3:03) Ah, I see.
+
+> You don't want them conflating the two. Exactly. (3:08) And then for the property destruction and the asylum issues, you move those into a separate damages or sanctions motion.
+
+> (3:15) Or, you know, maybe a federal ADA complaint. Just getting them out of this specific filing. Right.
+
+> (3:21) Ensuring that the state judge is only tasked with ruling on that narrow procedural service defect first. (3:27) That sequencing makes a lot of sense. (3:30) But moving on to the actual writing, relying on highly charged emotional phrasing (3:35) can undermine the objective force of the documented factual evidence.
+
+> (3:40) This is a huge weakness in the current draft. It utilizes adjectives and framing that heavily editorialize the opponent's intent. (3:48) Yeah, I saw phrases like catastrophic, irreparable, and ongoing harm.
+
+> (3:54) Yep, and sloppy bad faith litigation tactics and calling their financial calculus corrupt. (4:00) To be fair, though, I mean, the frustration driving those words is entirely justified by the facts. (4:07) If a bank alters its math by 10 grand after the fact, a normal person calls that corrupt.
+
+> (4:12) Oh, from a human perspective, it is 100% justified. But from a judicial psychology standpoint, it's a trap. (4:20) While the frustration is justified, this emotionally charged rhetoric can trigger a judge's defensive mechanisms.
+
+> (4:27) Let's dig into that for a second. If a judge reads the word corrupt, (4:31) do they instinctively raise their guard and demand a higher burden of proof? They absolutely do. (4:36) Whereas like a cold, undeniable timeline just forces them to see the error without feeling like they're taking sides in a moral dispute.
+
+> (4:44) That is exactly the dynamic. (4:46) When you throw around words like corrupt, you provide opposing counsel a massive opening to dismiss the filing as just, (4:52) you know, hyperbolic venting. Right.
+
+> The opposing counsel gets to stand up and defend their character (4:57) instead of their flawed service. Exactly. They get to say, your honor, we made an administrative oversight.
+
+> We aren't corrupt. (5:05) You've let them change the subject. (5:07) So the suggestion here is to adopt a colder, surgically objective judicial tone (5:12) that allows the timeline and the opponent's own admissions to generate the outrage naturally.
+
+> Show. Don't tell. Precisely.
+
+> (5:21) Let's look at some concrete examples of how to fix this in the text. (5:24) Yeah, how do we take the heat out of the service defect argument? (5:29) Well, instead of writing, the plaintiff entirely failed to execute this jurisdictional prerequisite, which sounds like a personal attack. Right.
+
+> (5:36) You state simply, the sheriff's returns dated March 5 and April 15, 2025 (5:42) contain no record of the mailing required by trial rule 4.1b. (5:46) Oh, that's much better. Opposing counsel can argue all day against an accusation of failure, (5:51) but they can't argue with a blank space on a physical record. (5:55) Exactly.
+
+> Now, let's apply that to the accounting dispute. (5:59) Rather than calling the credit bid sloppy, bad faith litigation tactics, you describe it objectively. (6:04) How would you phrase that? You'd write, (6:07) plaintiff's February 24, nunk pro-tunk petition sought to retroactively reduce the credit bid by nearly 10,000 dollars, (6:15) explicitly acknowledging the original sworn figure presented to the court was inaccurate.
+
+> Oh, wow. (6:20) That's actually devastating. You aren't calling them liars.
+
+> (6:23) You're just pointing out that they formally admitted under oath that their previous sworn statement was wrong. (6:29) Right. It traps them in their own filings without you ever having to raise your voice.
+
+> I love that. (6:34) What about the pre-litigation outreach? Same principle. (6:38) Replace subjective terms like institutional non-engagement with a direct reference to the evidence.
+
+> Frame it like, (6:45) plaintiff received the December 4, 2024 hardship letter, but proceeded with the January 16, (6:53) 2025 filing without documented response. The proximity of those dates does all the (6:59) heavy lifting for you. Exactly.
+
+> It trusts the judge to recognize the bad behavior. (7:05) Okay, so we've cleaned up the structure and the tone, but there's a big legal argument here (7:10) we need to refine. The application of the ADA within the motion lacks a tight, (7:15) explicit bridge to the constitutional standard for due process.
+
+> (7:19) This is probably the most complex weakness in the draft. The current text argues that the (7:24) ADA was violated during the service process and the property retrieval. (7:29) Right.
+
+> But it somewhat isolates the ADA claim as a standalone statutory grievance. It does not (7:35) sufficiently tie the plaintiff's knowledge of the cognitive disabilities, the ADHD, the PTSD, (7:42) the executive dysfunction directly to the Moulain constitutional standard. (7:46) Moulain being the Supreme Court standard for valid service, right? The requirement for notice (7:51) reasonably calculated under all the circumstances to apprise interested parties.
+
+> (7:56) Exactly. But wait, if they don't explicitly tie those together, what's the risk? Is it that the (8:01) court views the ADA claim as a separate administrative issue outside their immediate purview? (8:06) Yes, completely. A state court judge looking at a foreclosure docket might just say, (8:12) look, an ADA violation is a serious federal issue, but that's a matter for a different court.
+
+> (8:18) My job today is just to see if a summons was dropped off. (8:21) Oh, I see. So how do we trap the court into seeing the disability not as a request for (8:27) special treatment, but as the exact reason the chosen service method was legally and constitutionally (8:33) void? The suggestion is to weave the ADA obligations directly into the constitutional (8:39) due process framework.
+
+> You use the opponent's actual knowledge of the disability to prove (8:44) exactly why their copy left service failed the fundamental constitutional test. (8:50) Copy left meaning they just taped the summons to the door or left it with someone at the house? (8:54) Right. Okay.
+
+> So give me a concrete example of how to explicitly argue this. (8:59) You would explicitly argue that because plaintiff had actual knowledge of the (9:02) auditory and executive dysfunction impairments via the 2023 and December 2024 certified hardship (9:09) letters, relying on standard copy left service without the required mailing was constitutionally (9:14) inadequate. If you know someone is out of the country, slipping a note under their door isn't (9:19) reasonably calculated.
+
+> If you know they have severe executive dysfunction in a regular doorknock (9:25) is objectively unreasonable. That's a brilliant pivot. How should they actually write that (9:30) sentence in the motion? Frame the argument to state due process requires notice tailored (9:35) to the known circumstances of the defendant.
+
+> Plaintiff's possession of the December 2024 (9:40) medical documentation meant they knew irregular doorknocking would fail rendering their service (9:46) method not reasonably calculated to provide notice. That binds the empirical fact of the (9:51) disability directly to the legal failure of the procedure. It does.
+
+> And to cap it off, (9:56) use the opponent's failure to utilize alternative requested communication methods as evidence of (10:02) jurisdictional failure rather than just an ADA violation. What does that mean practically? (10:08) It means if the hardship letter requested communication via email as an accommodation (10:13) and the bank ignored that and just sent a sheriff to knock on the door, (10:16) that proves they weren't making a genuine attempt to provide notice under the Mulani standard. (10:21) So the failure to accommodate becomes the actual proof that their service wasn't (10:25) reasonably calculated.
+
+> Exactly. It elevates it from a civil rights complaint to a fatal (10:30) jurisdictional flaw. Well, to summarize, this highly thoroughly researched motion can really (10:35) maximize its impact by implementing three key adjustments.
+
+> Right. First, separate the arguments. (10:41) Keep the motion to vacate laser focused on the jurisdictional trial rule 4.1 B defect (10:46) while reserving those accounting errors and property damages for separate sequenced filings.
+
+> (10:52) Keep the quarantine zone intact. Exactly. Second, cool the rhetorical temperature by (10:58) replacing emotionally charged labels with cold objective factual timelines that just let the (11:03) opponent's errors speak for themselves.
+
+> So don't tell. Yep. And finally, tightly bind the ADA (11:10) disability knowledge directly to the constitutional standard for due process, (11:14) proving why the service method was legally void under the circumstances.
+
+> It's all there in the (11:19) research. It just needs this specific framing. Please submit your revised drafts back to us.
+
 > (11:23) We would love to see how this material evolves.
 
 ### Assistant
@@ -3799,155 +3877,304 @@ canonical_ref: ""
 > The motion now opens more like a weapon and less like a seminar.
 
 ### User
-> double check those citations makes ure theya re no hallecinations, and read my other notes and advise. 
-> Title: Statutes
-> 
-> Note: Confirm
-> 
-> Time: 01:21 - 01:21
-> 
-> Title: Rules
-> 
-> Note: confirm cites
-> 
-> Time: 01:21 - 01:22
-> 
-> Title: property
-> 
-> Note: Should i provide a inventory and estimated value.
-> 
-> Time: 02:16 - 02:17
-> 
-> Title: 10,000
-> 
-> Note: put the exact amount
-> 
-> Time: 02:44 - 02:44
-> 
-> Title: Defendant
-> 
-> Note: what law supports this statement.
-> 
-> Time: 04:23 - 04:24
-> 
-> Title: ultimately
-> 
-> Note: what does case law state here.
-> 
-> Time: 04:49 - 04:49
-> 
-> Title: Although
-> 
-> Note: any historical cases here.
-> 
-> Time: 05:21 - 05:22
-> 
-> Title: fair
-> 
-> Note: fair or unconstitutional when considering all the facts of the case.
-> 
-> Time: 06:16 - 06:16
-> 
-> Title: Plaintiff
-> 
-> Note: shouldnt we show the full history like the clerk receipt in june, and the removal of the debt from my credit in june then it placed back or is that later.
-> 
-> Time: 06:43 - 06:44
-> 
-> Title: D
-> 
-> Note: should we not highlight that on top of this the hardship i was facing making my disability way worse and
-> 
-> Time: 09:26 - 09:26
-> 
-> Title: d
-> 
-> Note: this is not exactly right, it was multiple meails and calls in 2023, a letter dec 2023 and 2 certified notices in 2024.
-> 
-> Time: 11:09 - 11:10
-> 
-> Title: In
-> 
-> Note: should we high light that they still were sending me a debit card and other newsletters but couldnt send something saying hey you got to go by dec. 9th.
-> 
-> Time: 13:07 - 13:07
-> 
-> Title: Defendant
-> 
-> Note: so we say this 99% they may say i should have got it. but becasue of my trauma i didnt even go to the rest of the house for many days or even weeks. and the first time they dropped it I would have been at my issitax office (i have documetnation) i would not ahve gotten home until almost midnight or later it could have been removed or blow away.
-> 
-> Time: 15:30 - 15:31
-> 
-> Title: The
-> 
-> Note: here should we include that the one off duty officer was saying well we dont know we were told, etc, and that she said she doesnt really know, what she is doing etc, and that later they are heard talkign about there disorganized schedules and did this when it was convenient.
-> 
-> Time: 18:27 - 18:27
-> 
-> Title: Defendant
-> 
-> Note: we need to add david another friend.
-> 
-> Time: 20:13 - 20:13
-> 
-> Title: followed
-> 
-> Note: I dont know if i want to include this.
-> 
-> Time: 21:58 - 21:58
-> 
-> Title: Upon
-> 
-> Note: that was what i discovered on the first retrieval. but remember the dump truck was alsmot full already and the started throwign stuff int he back ao fthe truck as soon as a pulled up and ms abbot went to her car.
-> 
-> Time: 27:25 - 27:25
-> 
-> Title: Defendant
-> 
-> Note: doesnt this show that they worksheet should have had about 250000 instead of 241000
-> 
-> Time: 28:44 - 28:44
-> 
-> Title: interest
-> 
-> Note: i searched the publication site, i found other forclosure publication but not mine, nowhere i searched, and also that even as late as december there was no udpate to the resutl of the sale of the sherrif sales.
-> 
-> Time: 29:47 - 29:48
-> 
-> Title: Property
-> 
-> Note: shouldn't this be mroe robust to highlithg the crazy timeline in black and white.
-> 
-> Time: 32:37 - 32:39
-> 
-> Title: Trial
-> 
-> Note: review law
-> 
-> Time: 35:16 - 35:16
-> 
-> Title: The
-> 
-> Note: and also 30 days had not passed for all defendents,.
-> 
-> Time: 36:20 - 36:20
-> 
-> Title: Defendant
-> 
-> Note: shoudl we include pictures of the accidents we have had from having to travel back and forth to get mail and be there for the case etc. all the costs of hotels could of used for housing and the fact that becuase of all these errors my score is still supressed and i can get housing still months later.
-> 
-> Time: 53:12 - 53:13
-> 
-> Title: required
-> 
-> Note: I have put in hundreds of hours already.
-> 
-> Time: 54:43 - 54:43
-> 
-> Title: defending
-> 
-> Note: we have evidence of spoliation and privacy concerns, and how they were alerady in the hosue before handover and the off duty officer following me around and acting as the state when he was doign private work for the bank and also where is our argument about the security shuraids. and were do we also remind them of the fact that the plaintiff has not complied with a standing order, tried to miselead me about the activity of the case while filing more motions, ignored a settlement 403 (maybe if we want to share taht), and video taping private rooms, ect.
-> 
+> double check those citations makes ure theya re no hallecinations, and read my other notes and advise. 
+
+> Title: Statutes
+
+> 
+
+> Note: Confirm
+
+> 
+
+> Time: 01:21 - 01:21
+
+> 
+
+> Title: Rules
+
+> 
+
+> Note: confirm cites
+
+> 
+
+> Time: 01:21 - 01:22
+
+> 
+
+> Title: property
+
+> 
+
+> Note: Should i provide a inventory and estimated value.
+
+> 
+
+> Time: 02:16 - 02:17
+
+> 
+
+> Title: 10,000
+
+> 
+
+> Note: put the exact amount
+
+> 
+
+> Time: 02:44 - 02:44
+
+> 
+
+> Title: Defendant
+
+> 
+
+> Note: what law supports this statement.
+
+> 
+
+> Time: 04:23 - 04:24
+
+> 
+
+> Title: ultimately
+
+> 
+
+> Note: what does case law state here.
+
+> 
+
+> Time: 04:49 - 04:49
+
+> 
+
+> Title: Although
+
+> 
+
+> Note: any historical cases here.
+
+> 
+
+> Time: 05:21 - 05:22
+
+> 
+
+> Title: fair
+
+> 
+
+> Note: fair or unconstitutional when considering all the facts of the case.
+
+> 
+
+> Time: 06:16 - 06:16
+
+> 
+
+> Title: Plaintiff
+
+> 
+
+> Note: shouldnt we show the full history like the clerk receipt in june, and the removal of the debt from my credit in june then it placed back or is that later.
+
+> 
+
+> Time: 06:43 - 06:44
+
+> 
+
+> Title: D
+
+> 
+
+> Note: should we not highlight that on top of this the hardship i was facing making my disability way worse and
+
+> 
+
+> Time: 09:26 - 09:26
+
+> 
+
+> Title: d
+
+> 
+
+> Note: this is not exactly right, it was multiple meails and calls in 2023, a letter dec 2023 and 2 certified notices in 2024.
+
+> 
+
+> Time: 11:09 - 11:10
+
+> 
+
+> Title: In
+
+> 
+
+> Note: should we high light that they still were sending me a debit card and other newsletters but couldnt send something saying hey you got to go by dec. 9th.
+
+> 
+
+> Time: 13:07 - 13:07
+
+> 
+
+> Title: Defendant
+
+> 
+
+> Note: so we say this 99% they may say i should have got it. but becasue of my trauma i didnt even go to the rest of the house for many days or even weeks. and the first time they dropped it I would have been at my issitax office (i have documetnation) i would not ahve gotten home until almost midnight or later it could have been removed or blow away.
+
+> 
+
+> Time: 15:30 - 15:31
+
+> 
+
+> Title: The
+
+> 
+
+> Note: here should we include that the one off duty officer was saying well we dont know we were told, etc, and that she said she doesnt really know, what she is doing etc, and that later they are heard talkign about there disorganized schedules and did this when it was convenient.
+
+> 
+
+> Time: 18:27 - 18:27
+
+> 
+
+> Title: Defendant
+
+> 
+
+> Note: we need to add david another friend.
+
+> 
+
+> Time: 20:13 - 20:13
+
+> 
+
+> Title: followed
+
+> 
+
+> Note: I dont know if i want to include this.
+
+> 
+
+> Time: 21:58 - 21:58
+
+> 
+
+> Title: Upon
+
+> 
+
+> Note: that was what i discovered on the first retrieval. but remember the dump truck was alsmot full already and the started throwign stuff int he back ao fthe truck as soon as a pulled up and ms abbot went to her car.
+
+> 
+
+> Time: 27:25 - 27:25
+
+> 
+
+> Title: Defendant
+
+> 
+
+> Note: doesnt this show that they worksheet should have had about 250000 instead of 241000
+
+> 
+
+> Time: 28:44 - 28:44
+
+> 
+
+> Title: interest
+
+> 
+
+> Note: i searched the publication site, i found other forclosure publication but not mine, nowhere i searched, and also that even as late as december there was no udpate to the resutl of the sale of the sherrif sales.
+
+> 
+
+> Time: 29:47 - 29:48
+
+> 
+
+> Title: Property
+
+> 
+
+> Note: shouldn't this be mroe robust to highlithg the crazy timeline in black and white.
+
+> 
+
+> Time: 32:37 - 32:39
+
+> 
+
+> Title: Trial
+
+> 
+
+> Note: review law
+
+> 
+
+> Time: 35:16 - 35:16
+
+> 
+
+> Title: The
+
+> 
+
+> Note: and also 30 days had not passed for all defendents,.
+
+> 
+
+> Time: 36:20 - 36:20
+
+> 
+
+> Title: Defendant
+
+> 
+
+> Note: shoudl we include pictures of the accidents we have had from having to travel back and forth to get mail and be there for the case etc. all the costs of hotels could of used for housing and the fact that becuase of all these errors my score is still supressed and i can get housing still months later.
+
+> 
+
+> Time: 53:12 - 53:13
+
+> 
+
+> Title: required
+
+> 
+
+> Note: I have put in hundreds of hours already.
+
+> 
+
+> Time: 54:43 - 54:43
+
+> 
+
+> Title: defending
+
+> 
+
+> Note: we have evidence of spoliation and privacy concerns, and how they were alerady in the hosue before handover and the off duty officer following me around and acting as the state when he was doign private work for the bank and also where is our argument about the security shuraids. and were do we also remind them of the fact that the plaintiff has not complied with a standing order, tried to miselead me about the activity of the case while filing more motions, ignored a settlement 403 (maybe if we want to share taht), and video taping private rooms, ect.
+
+> 
+
 > Time: 56:51 - 56:52
 
 ### Assistant
@@ -4315,62 +4542,118 @@ canonical_ref: ""
 > That chart will hit harder than three more paragraphs.
 
 ### User
-> did we already review this critique. Isolating jurisdictional defects in foreclosure motions
-> Apr 8, 2026, 9:11 AM
-> Isolating jurisdictional defects in foreclosure motions
-> Play
-> 
-> 
-> 00:00
-> 11:25
-> Mute
-> 
-> Settings
-> (0:00) When an engineer looks at a collapsing building, they don't catalog the cracked windows, they check the foundation. (0:07) Today's critique focuses on a submitted draft of a pro se defendant's renewed motion to vacate a default foreclosure judgment. (0:15) Consolidating disparate legal arguments and post-judgment harms into a single motion risks diluting the core jurisdictional challenge.
-> (0:24) Yeah, that is exactly the weakness here. The current draft of this renewed motion (0:28) operates as basically a kitchen sink filing. Right.
-> (0:32) It blends a very strict procedural defect, which is the lack of the follow-up mailing required by Indiana trial rule (0:38) 4.1b with these highly distinct totally separate issues. Like the plaintiff's (0:44) $10,000 nunc protunc interest miscalculation. Exactly.
-> (0:49) It throws that in there along with the arbitrary 9am to 11am window (0:53) they gave for property retrieval and even the tragic closure of a cohabitants federal asylum case. (0:59) Wow. Yeah, I mean by layering all those post-judgment damages and accounting disputes over what is really a threshold (1:08) jurisdictional question, the motion just loses its sharp procedural focus.
-> It risks totally overwhelming the court. (1:15) It does. It absolutely does.
-> I like to think about this visually, you know? (1:20) Framing the jurisdictional argument as a scalpel and the post-judgment damages as a hammer. (1:26) So if you're presenting the judge with a hammer, doesn't that make it so much harder for them to see the precision of the scalpel? (1:32) Especially since the strategy map in the source notes (1:35) explicitly advised holding back those broader grievances for separate filings. Completely.
-> (1:41) You're asking a judge to perform a highly precise technical operation, (1:45) voiding a judgment entirely based on a mailing defect. (1:49) But then you're handing them this massive hammer of messy factual disputes. Right, and judges are busy.
-> Exactly. (1:55) So my suggestion here is to disentangle the threshold jurisdictional arguments from the post-judgment damages and accounting disputes. (2:03) You've got to break them into carefully sequenced standalone filings.
-> (2:07) Okay, so let's get into some concrete examples of how to do that. What goes where? (2:11) Well, first you file the trial rule 4.1B mailing failure and the ADA notice requirements (2:17) purely as the Rule 60B6 motion to vacate. Just those two things? Just those.
-> (2:23) That single document should do absolutely nothing but argue that the court never presents personal jurisdiction, right? (2:29) Making the judgment void from day one. You isolate the scalpel. Okay, that makes sense.
-> (2:34) But what about that accounting issue? The source material mentions the plaintiff admitting to a massive miscalculation. (2:40) Right, the almost $10,000 shift. You have to reserve that $9,901 interest reduction admission for a separate (2:49) targeted objection to the accounting and surplus.
-> Why keep it separate if it makes the plaintiff look so bad? Because it's fundamentally an accounting dispute. (2:58) If you put it in the motion to vacate, the judge starts looking at the math instead of the missing mail. (3:03) Ah, I see.
-> You don't want them conflating the two. Exactly. (3:08) And then for the property destruction and the asylum issues, you move those into a separate damages or sanctions motion.
-> (3:15) Or, you know, maybe a federal ADA complaint. Just getting them out of this specific filing. Right.
-> (3:21) Ensuring that the state judge is only tasked with ruling on that narrow procedural service defect first. (3:27) That sequencing makes a lot of sense. (3:30) But moving on to the actual writing, relying on highly charged emotional phrasing (3:35) can undermine the objective force of the documented factual evidence.
-> (3:40) This is a huge weakness in the current draft. It utilizes adjectives and framing that heavily editorialize the opponent's intent. (3:48) Yeah, I saw phrases like catastrophic, irreparable, and ongoing harm.
-> (3:54) Yep, and sloppy bad faith litigation tactics and calling their financial calculus corrupt. (4:00) To be fair, though, I mean, the frustration driving those words is entirely justified by the facts. (4:07) If a bank alters its math by 10 grand after the fact, a normal person calls that corrupt.
-> (4:12) Oh, from a human perspective, it is 100% justified. But from a judicial psychology standpoint, it's a trap. (4:20) While the frustration is justified, this emotionally charged rhetoric can trigger a judge's defensive mechanisms.
-> (4:27) Let's dig into that for a second. If a judge reads the word corrupt, (4:31) do they instinctively raise their guard and demand a higher burden of proof? They absolutely do. (4:36) Whereas like a cold, undeniable timeline just forces them to see the error without feeling like they're taking sides in a moral dispute.
-> (4:44) That is exactly the dynamic. (4:46) When you throw around words like corrupt, you provide opposing counsel a massive opening to dismiss the filing as just, (4:52) you know, hyperbolic venting. Right.
-> The opposing counsel gets to stand up and defend their character (4:57) instead of their flawed service. Exactly. They get to say, your honor, we made an administrative oversight.
-> We aren't corrupt. (5:05) You've let them change the subject. (5:07) So the suggestion here is to adopt a colder, surgically objective judicial tone (5:12) that allows the timeline and the opponent's own admissions to generate the outrage naturally.
-> Show. Don't tell. Precisely.
-> (5:21) Let's look at some concrete examples of how to fix this in the text. (5:24) Yeah, how do we take the heat out of the service defect argument? (5:29) Well, instead of writing, the plaintiff entirely failed to execute this jurisdictional prerequisite, which sounds like a personal attack. Right.
-> (5:36) You state simply, the sheriff's returns dated March 5 and April 15, 2025 (5:42) contain no record of the mailing required by trial rule 4.1b. (5:46) Oh, that's much better. Opposing counsel can argue all day against an accusation of failure, (5:51) but they can't argue with a blank space on a physical record. (5:55) Exactly.
-> Now, let's apply that to the accounting dispute. (5:59) Rather than calling the credit bid sloppy, bad faith litigation tactics, you describe it objectively. (6:04) How would you phrase that? You'd write, (6:07) plaintiff's February 24, nunk pro-tunk petition sought to retroactively reduce the credit bid by nearly 10,000 dollars, (6:15) explicitly acknowledging the original sworn figure presented to the court was inaccurate.
-> Oh, wow. (6:20) That's actually devastating. You aren't calling them liars.
-> (6:23) You're just pointing out that they formally admitted under oath that their previous sworn statement was wrong. (6:29) Right. It traps them in their own filings without you ever having to raise your voice.
-> I love that. (6:34) What about the pre-litigation outreach? Same principle. (6:38) Replace subjective terms like institutional non-engagement with a direct reference to the evidence.
-> Frame it like, (6:45) plaintiff received the December 4, 2024 hardship letter, but proceeded with the January 16, (6:53) 2025 filing without documented response. The proximity of those dates does all the (6:59) heavy lifting for you. Exactly.
-> It trusts the judge to recognize the bad behavior. (7:05) Okay, so we've cleaned up the structure and the tone, but there's a big legal argument here (7:10) we need to refine. The application of the ADA within the motion lacks a tight, (7:15) explicit bridge to the constitutional standard for due process.
-> (7:19) This is probably the most complex weakness in the draft. The current text argues that the (7:24) ADA was violated during the service process and the property retrieval. (7:29) Right.
-> But it somewhat isolates the ADA claim as a standalone statutory grievance. It does not (7:35) sufficiently tie the plaintiff's knowledge of the cognitive disabilities, the ADHD, the PTSD, (7:42) the executive dysfunction directly to the Moulain constitutional standard. (7:46) Moulain being the Supreme Court standard for valid service, right? The requirement for notice (7:51) reasonably calculated under all the circumstances to apprise interested parties.
-> (7:56) Exactly. But wait, if they don't explicitly tie those together, what's the risk? Is it that the (8:01) court views the ADA claim as a separate administrative issue outside their immediate purview? (8:06) Yes, completely. A state court judge looking at a foreclosure docket might just say, (8:12) look, an ADA violation is a serious federal issue, but that's a matter for a different court.
-> (8:18) My job today is just to see if a summons was dropped off. (8:21) Oh, I see. So how do we trap the court into seeing the disability not as a request for (8:27) special treatment, but as the exact reason the chosen service method was legally and constitutionally (8:33) void? The suggestion is to weave the ADA obligations directly into the constitutional (8:39) due process framework.
-> You use the opponent's actual knowledge of the disability to prove (8:44) exactly why their copy left service failed the fundamental constitutional test. (8:50) Copy left meaning they just taped the summons to the door or left it with someone at the house? (8:54) Right. Okay.
-> So give me a concrete example of how to explicitly argue this. (8:59) You would explicitly argue that because plaintiff had actual knowledge of the (9:02) auditory and executive dysfunction impairments via the 2023 and December 2024 certified hardship (9:09) letters, relying on standard copy left service without the required mailing was constitutionally (9:14) inadequate. If you know someone is out of the country, slipping a note under their door isn't (9:19) reasonably calculated.
-> If you know they have severe executive dysfunction in a regular doorknock (9:25) is objectively unreasonable. That's a brilliant pivot. How should they actually write that (9:30) sentence in the motion? Frame the argument to state due process requires notice tailored (9:35) to the known circumstances of the defendant.
-> Plaintiff's possession of the December 2024 (9:40) medical documentation meant they knew irregular doorknocking would fail rendering their service (9:46) method not reasonably calculated to provide notice. That binds the empirical fact of the (9:51) disability directly to the legal failure of the procedure. It does.
-> And to cap it off, (9:56) use the opponent's failure to utilize alternative requested communication methods as evidence of (10:02) jurisdictional failure rather than just an ADA violation. What does that mean practically? (10:08) It means if the hardship letter requested communication via email as an accommodation (10:13) and the bank ignored that and just sent a sheriff to knock on the door, (10:16) that proves they weren't making a genuine attempt to provide notice under the Mulani standard. (10:21) So the failure to accommodate becomes the actual proof that their service wasn't (10:25) reasonably calculated.
-> Exactly. It elevates it from a civil rights complaint to a fatal (10:30) jurisdictional flaw. Well, to summarize, this highly thoroughly researched motion can really (10:35) maximize its impact by implementing three key adjustments.
-> Right. First, separate the arguments. (10:41) Keep the motion to vacate laser focused on the jurisdictional trial rule 4.1 B defect (10:46) while reserving those accounting errors and property damages for separate sequenced filings.
-> (10:52) Keep the quarantine zone intact. Exactly. Second, cool the rhetorical temperature by (10:58) replacing emotionally charged labels with cold objective factual timelines that just let the (11:03) opponent's errors speak for themselves.
-> So don't tell. Yep. And finally, tightly bind the ADA (11:10) disability knowledge directly to the constitutional standard for due process, (11:14) proving why the service method was legally void under the circumstances.
-> It's all there in the (11:19) research. It just needs this specific framing. Please submit your revised drafts back to us.
+> did we already review this critique. Isolating jurisdictional defects in foreclosure motions
+
+> Apr 8, 2026, 9:11 AM
+
+> Isolating jurisdictional defects in foreclosure motions
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 11:25
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) When an engineer looks at a collapsing building, they don't catalog the cracked windows, they check the foundation. (0:07) Today's critique focuses on a submitted draft of a pro se defendant's renewed motion to vacate a default foreclosure judgment. (0:15) Consolidating disparate legal arguments and post-judgment harms into a single motion risks diluting the core jurisdictional challenge.
+
+> (0:24) Yeah, that is exactly the weakness here. The current draft of this renewed motion (0:28) operates as basically a kitchen sink filing. Right.
+
+> (0:32) It blends a very strict procedural defect, which is the lack of the follow-up mailing required by Indiana trial rule (0:38) 4.1b with these highly distinct totally separate issues. Like the plaintiff's (0:44) $10,000 nunc protunc interest miscalculation. Exactly.
+
+> (0:49) It throws that in there along with the arbitrary 9am to 11am window (0:53) they gave for property retrieval and even the tragic closure of a cohabitants federal asylum case. (0:59) Wow. Yeah, I mean by layering all those post-judgment damages and accounting disputes over what is really a threshold (1:08) jurisdictional question, the motion just loses its sharp procedural focus.
+
+> It risks totally overwhelming the court. (1:15) It does. It absolutely does.
+
+> I like to think about this visually, you know? (1:20) Framing the jurisdictional argument as a scalpel and the post-judgment damages as a hammer. (1:26) So if you're presenting the judge with a hammer, doesn't that make it so much harder for them to see the precision of the scalpel? (1:32) Especially since the strategy map in the source notes (1:35) explicitly advised holding back those broader grievances for separate filings. Completely.
+
+> (1:41) You're asking a judge to perform a highly precise technical operation, (1:45) voiding a judgment entirely based on a mailing defect. (1:49) But then you're handing them this massive hammer of messy factual disputes. Right, and judges are busy.
+
+> Exactly. (1:55) So my suggestion here is to disentangle the threshold jurisdictional arguments from the post-judgment damages and accounting disputes. (2:03) You've got to break them into carefully sequenced standalone filings.
+
+> (2:07) Okay, so let's get into some concrete examples of how to do that. What goes where? (2:11) Well, first you file the trial rule 4.1B mailing failure and the ADA notice requirements (2:17) purely as the Rule 60B6 motion to vacate. Just those two things? Just those.
+
+> (2:23) That single document should do absolutely nothing but argue that the court never presents personal jurisdiction, right? (2:29) Making the judgment void from day one. You isolate the scalpel. Okay, that makes sense.
+
+> (2:34) But what about that accounting issue? The source material mentions the plaintiff admitting to a massive miscalculation. (2:40) Right, the almost $10,000 shift. You have to reserve that $9,901 interest reduction admission for a separate (2:49) targeted objection to the accounting and surplus.
+
+> Why keep it separate if it makes the plaintiff look so bad? Because it's fundamentally an accounting dispute. (2:58) If you put it in the motion to vacate, the judge starts looking at the math instead of the missing mail. (3:03) Ah, I see.
+
+> You don't want them conflating the two. Exactly. (3:08) And then for the property destruction and the asylum issues, you move those into a separate damages or sanctions motion.
+
+> (3:15) Or, you know, maybe a federal ADA complaint. Just getting them out of this specific filing. Right.
+
+> (3:21) Ensuring that the state judge is only tasked with ruling on that narrow procedural service defect first. (3:27) That sequencing makes a lot of sense. (3:30) But moving on to the actual writing, relying on highly charged emotional phrasing (3:35) can undermine the objective force of the documented factual evidence.
+
+> (3:40) This is a huge weakness in the current draft. It utilizes adjectives and framing that heavily editorialize the opponent's intent. (3:48) Yeah, I saw phrases like catastrophic, irreparable, and ongoing harm.
+
+> (3:54) Yep, and sloppy bad faith litigation tactics and calling their financial calculus corrupt. (4:00) To be fair, though, I mean, the frustration driving those words is entirely justified by the facts. (4:07) If a bank alters its math by 10 grand after the fact, a normal person calls that corrupt.
+
+> (4:12) Oh, from a human perspective, it is 100% justified. But from a judicial psychology standpoint, it's a trap. (4:20) While the frustration is justified, this emotionally charged rhetoric can trigger a judge's defensive mechanisms.
+
+> (4:27) Let's dig into that for a second. If a judge reads the word corrupt, (4:31) do they instinctively raise their guard and demand a higher burden of proof? They absolutely do. (4:36) Whereas like a cold, undeniable timeline just forces them to see the error without feeling like they're taking sides in a moral dispute.
+
+> (4:44) That is exactly the dynamic. (4:46) When you throw around words like corrupt, you provide opposing counsel a massive opening to dismiss the filing as just, (4:52) you know, hyperbolic venting. Right.
+
+> The opposing counsel gets to stand up and defend their character (4:57) instead of their flawed service. Exactly. They get to say, your honor, we made an administrative oversight.
+
+> We aren't corrupt. (5:05) You've let them change the subject. (5:07) So the suggestion here is to adopt a colder, surgically objective judicial tone (5:12) that allows the timeline and the opponent's own admissions to generate the outrage naturally.
+
+> Show. Don't tell. Precisely.
+
+> (5:21) Let's look at some concrete examples of how to fix this in the text. (5:24) Yeah, how do we take the heat out of the service defect argument? (5:29) Well, instead of writing, the plaintiff entirely failed to execute this jurisdictional prerequisite, which sounds like a personal attack. Right.
+
+> (5:36) You state simply, the sheriff's returns dated March 5 and April 15, 2025 (5:42) contain no record of the mailing required by trial rule 4.1b. (5:46) Oh, that's much better. Opposing counsel can argue all day against an accusation of failure, (5:51) but they can't argue with a blank space on a physical record. (5:55) Exactly.
+
+> Now, let's apply that to the accounting dispute. (5:59) Rather than calling the credit bid sloppy, bad faith litigation tactics, you describe it objectively. (6:04) How would you phrase that? You'd write, (6:07) plaintiff's February 24, nunk pro-tunk petition sought to retroactively reduce the credit bid by nearly 10,000 dollars, (6:15) explicitly acknowledging the original sworn figure presented to the court was inaccurate.
+
+> Oh, wow. (6:20) That's actually devastating. You aren't calling them liars.
+
+> (6:23) You're just pointing out that they formally admitted under oath that their previous sworn statement was wrong. (6:29) Right. It traps them in their own filings without you ever having to raise your voice.
+
+> I love that. (6:34) What about the pre-litigation outreach? Same principle. (6:38) Replace subjective terms like institutional non-engagement with a direct reference to the evidence.
+
+> Frame it like, (6:45) plaintiff received the December 4, 2024 hardship letter, but proceeded with the January 16, (6:53) 2025 filing without documented response. The proximity of those dates does all the (6:59) heavy lifting for you. Exactly.
+
+> It trusts the judge to recognize the bad behavior. (7:05) Okay, so we've cleaned up the structure and the tone, but there's a big legal argument here (7:10) we need to refine. The application of the ADA within the motion lacks a tight, (7:15) explicit bridge to the constitutional standard for due process.
+
+> (7:19) This is probably the most complex weakness in the draft. The current text argues that the (7:24) ADA was violated during the service process and the property retrieval. (7:29) Right.
+
+> But it somewhat isolates the ADA claim as a standalone statutory grievance. It does not (7:35) sufficiently tie the plaintiff's knowledge of the cognitive disabilities, the ADHD, the PTSD, (7:42) the executive dysfunction directly to the Moulain constitutional standard. (7:46) Moulain being the Supreme Court standard for valid service, right? The requirement for notice (7:51) reasonably calculated under all the circumstances to apprise interested parties.
+
+> (7:56) Exactly. But wait, if they don't explicitly tie those together, what's the risk? Is it that the (8:01) court views the ADA claim as a separate administrative issue outside their immediate purview? (8:06) Yes, completely. A state court judge looking at a foreclosure docket might just say, (8:12) look, an ADA violation is a serious federal issue, but that's a matter for a different court.
+
+> (8:18) My job today is just to see if a summons was dropped off. (8:21) Oh, I see. So how do we trap the court into seeing the disability not as a request for (8:27) special treatment, but as the exact reason the chosen service method was legally and constitutionally (8:33) void? The suggestion is to weave the ADA obligations directly into the constitutional (8:39) due process framework.
+
+> You use the opponent's actual knowledge of the disability to prove (8:44) exactly why their copy left service failed the fundamental constitutional test. (8:50) Copy left meaning they just taped the summons to the door or left it with someone at the house? (8:54) Right. Okay.
+
+> So give me a concrete example of how to explicitly argue this. (8:59) You would explicitly argue that because plaintiff had actual knowledge of the (9:02) auditory and executive dysfunction impairments via the 2023 and December 2024 certified hardship (9:09) letters, relying on standard copy left service without the required mailing was constitutionally (9:14) inadequate. If you know someone is out of the country, slipping a note under their door isn't (9:19) reasonably calculated.
+
+> If you know they have severe executive dysfunction in a regular doorknock (9:25) is objectively unreasonable. That's a brilliant pivot. How should they actually write that (9:30) sentence in the motion? Frame the argument to state due process requires notice tailored (9:35) to the known circumstances of the defendant.
+
+> Plaintiff's possession of the December 2024 (9:40) medical documentation meant they knew irregular doorknocking would fail rendering their service (9:46) method not reasonably calculated to provide notice. That binds the empirical fact of the (9:51) disability directly to the legal failure of the procedure. It does.
+
+> And to cap it off, (9:56) use the opponent's failure to utilize alternative requested communication methods as evidence of (10:02) jurisdictional failure rather than just an ADA violation. What does that mean practically? (10:08) It means if the hardship letter requested communication via email as an accommodation (10:13) and the bank ignored that and just sent a sheriff to knock on the door, (10:16) that proves they weren't making a genuine attempt to provide notice under the Mulani standard. (10:21) So the failure to accommodate becomes the actual proof that their service wasn't (10:25) reasonably calculated.
+
+> Exactly. It elevates it from a civil rights complaint to a fatal (10:30) jurisdictional flaw. Well, to summarize, this highly thoroughly researched motion can really (10:35) maximize its impact by implementing three key adjustments.
+
+> Right. First, separate the arguments. (10:41) Keep the motion to vacate laser focused on the jurisdictional trial rule 4.1 B defect (10:46) while reserving those accounting errors and property damages for separate sequenced filings.
+
+> (10:52) Keep the quarantine zone intact. Exactly. Second, cool the rhetorical temperature by (10:58) replacing emotionally charged labels with cold objective factual timelines that just let the (11:03) opponent's errors speak for themselves.
+
+> So don't tell. Yep. And finally, tightly bind the ADA (11:10) disability knowledge directly to the constitutional standard for due process, (11:14) proving why the service method was legally void under the circumstances.
+
+> It's all there in the (11:19) research. It just needs this specific framing. Please submit your revised drafts back to us.
+
 > (11:23) We would love to see how this material evolves.
 
 ### Assistant
@@ -4660,321 +4943,636 @@ canonical_ref: ""
 > - “read page 14–17 for accounting edits.”
 
 ### User
-> here is the preliminary transcription from the video fiels. # Combined Transcripts Report - 2025-12-09 Removal Day
-> 
-> Generated on: Combined_Transcripts_Report.md
-> 
-> ## 2025-12-09_C02_VIDEO_D0250.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> *[Empty Transcript]*
-> 
-> ## 2025-12-09_C02_VIDEO_D0251.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> Hey, ho-ho, who is that?
-> It's a lot.
-> ```
-> 
-> ## 2025-12-09_C02_VIDEO_D0252.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> God bless you.
-> ```
-> 
-> ## 2025-12-09_C02_VIDEO_D0253.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> missing anything. Are you expanding? Are you finding on this location?
-> ```
-> 
-> ## 2025-12-09_C02_VIDEO_D0286.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> Thank you.
-> ```
-> 
-> ## EX-V-09-63_2025-12-09_0000_01.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> Hey, ho-ho, who is that?
-> It's a lot.
-> ```
-> 
-> ## EX-V-09-64_2025-12-09_0000_02.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> I'm out of here.
-> ```
-> 
-> ## EX-V-09-65_2025-12-09_0000_03.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> missing anything. Are you expanding? Are you finding on this location?
-> ```
-> 
-> ## EX-V-09-74_2025-12-09_0000_12.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> *[Empty Transcript]*
-> 
-> ## EX-V-09-75_2025-12-09_0000_13.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> *[Empty Transcript]*
-> 
-> ## EX-V-09-82_2025-12-09_0000_20.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> No!
-> ```
-> 
-> ## EX-V-09-85_2025-12-09_0000_23.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> *[Empty Transcript]*
-> 
-> ## EX-V-09-86_2025-12-09_0000_24.txt
-> **Timestamp:** 2025-12-09 00:00
-> 
-> ```
-> Thank you.
-> ```
-> 
-> ## EX-V-09-143_2025-12-09_0945.txt
-> **Timestamp:** 2025-12-09 09:45
-> 
-> ```
-> they might be moving out.
-> ```
-> 
-> ## EX-V-09-01_2025-12-09_0948.txt
-> **Timestamp:** 2025-12-09 09:48
-> 
-> ```
-> Yeah, nothing. No compost. Don't do that.
-> ```
-> 
-> ## EX-V-09-145_2025-12-09_0950.txt
-> **Timestamp:** 2025-12-09 09:50
-> 
-> ```
-> ...or anything like that?
-> I don't have an attorney, I don't have money, I don't have a job, I don't have anything.
-> Okay, I don't know what's going on, but that's why we're here, okay?
-> And we're going to do this, okay?
-> So, uh...
-> I'm going to have you grab some stuff, so I can...
-> Well, that's... Can we step inside?
-> It's not a can. We're about to...
-> Once we're here, we take possession of this property.
-> Right, right.
-> It's courteous.
-> I understand, yeah.
-> I'm going to allow you guys to get some...
-> Yeah, I'll let you in. I just want to grab my stuff and, you know...
-> We just want you to understand that this property is in our possession, okay?
-> We're not telling you anything.
-> Nobody told us anything.
-> You can move the warning.
-> It's not going to be ready.
-> We're going to be nice to you, okay?
-> We're not here.
-> Is this your van right here?
-> Is this your friend?
-> Okay, is your friend up and away?
-> ```
-> 
-> ## EX-V-09-06_2025-12-09_0953.txt
-> **Timestamp:** 2025-12-09 09:53
-> 
-> ```
-> Here we go.
-> ```
-> 
-> ## EX-V-09-07_2025-12-09_0954.txt
-> **Timestamp:** 2025-12-09 09:54
-> 
-> ```
-> Give me the information on how to retrieve your stuff after you've gotten any medicines or anything like that.
-> ```
-> 
-> ## EX-V-09-08_2025-12-09_0955.txt
-> **Timestamp:** 2025-12-09 09:55
-> 
-> ```
-> It doesn't get to this point, Cody, without...
-> What's this right here?
-> Who is this?
-> I don't think he's a patient.
-> I'm going to give you this one first.
-> Okay.
-> Take your time.
-> ```
-> 
-> ## EX-V-09-09_2025-12-09_0956.txt
-> **Timestamp:** 2025-12-09 09:56
-> 
-> ```
-> your stuff, that doesn't give you the information.
-> Okay.
-> ```
-> 
-> ## EX-V-09-10_2025-12-09_0957.txt
-> **Timestamp:** 2025-12-09 09:57
-> 
-> ```
-> Hey, I can't think right now obviously.
-> That's alright.
-> So...
-> Hey, three!
-> Who's out?
-> Come on, tell me who's out.
-> I'm gonna work you right through.
-> That's it.
-> I've got the computer on me.
-> ```
-> 
-> ## EX-V-09-148_2025-12-09_0957.txt
-> **Timestamp:** 2025-12-09 09:57
-> 
-> ```
-> Good to go.
-> ```
-> 
-> ## EX-V-09-11_2025-12-09_0958.txt
-> **Timestamp:** 2025-12-09 09:58
-> 
-> ```
-> That's good.
-> ```
-> 
-> ## EX-V-09-12_2025-12-09_0959.txt
-> **Timestamp:** 2025-12-09 09:59
-> 
-> ```
-> And he asked his partner, he didn't know anything about this, but why would you tell them about what's going on?
-> Someone that I can work with, I would tell them to call me or something before I, you know,
-> before I would have understood this or something.
-> And I would bring a couple of good people, and we all would bring, like, the market-oriented message or something,
-> and we would bring, and we'd talk to the next person, and we would tell you, like,
-> what product is this right here that they have with us?
-> And I was like, well, I haven't seen anything.
-> Well, this was filed back in November 6th, and this is over a month old.
-> It was shared by the Subdivision of Communication.
-> And so I said, well, it's a problem.
-> ```
-> 
-> ## EX-V-09-28_2025-12-09_1015.txt
-> **Timestamp:** 2025-12-09 10:15
-> 
-> ```
-> any things that we've got transferred to it or what.
-> ```
-> 
-> ## EX-V-09-29_2025-12-09_1016.txt
-> **Timestamp:** 2025-12-09 10:16
-> 
-> ```
-> I was ready that day, ready.
-> And nobody came, you know what's going on?
-> Thank you.
-> ```
-> 
-> ## EX-V-09-30_2025-12-09_1017.txt
-> **Timestamp:** 2025-12-09 10:17
-> 
-> ```
-> about 10 minutes.
-> ```
-> 
-> ## EX-V-09-31_2025-12-09_1018.txt
-> **Timestamp:** 2025-12-09 10:18
-> 
-> ```
-> God bless you.
-> ```
-> 
-> ## EX-V-09-32_2025-12-09_1019.txt
-> **Timestamp:** 2025-12-09 10:19
-> 
-> ```
-> This one is dirty?
-> It's not very clean.
-> It's not.
-> It's just a little bit of grease.
-> Yeah, just a little bit of oil.
-> ```
-> 
-> ## EX-V-09-44_2025-12-09_1031.txt
-> **Timestamp:** 2025-12-09 10:31
-> 
-> ```
-> Well, he has so much shit to do.
-> At least he's got the heat and stuff on right now.
-> ...
-> ...
-> ...
-> ...
-> ...
-> and all this stuff.
-> ```
-> 
-> ## EX-V-09-45_2025-12-09_1032.txt
-> **Timestamp:** 2025-12-09 10:32
-> 
-> ```
-> ...
-> ...
-> ...
-> ...
-> ...
-> ...
-> ...
-> ...in the podcast, right?
-> ...in the webinar.
-> ```
-> 
-> ## EX-V-09-179_2025-12-09_1209.txt
-> **Timestamp:** 2025-12-09 12:09
-> 
-> ```
-> Two roommates and you ain't made it. No payment. And you saved me.
-> Oh, I know, but you know what I meant. You know what I meant.
-> He's had roommates. That's the thing.
-> I'm trying to get his money together.
-> ```
-> 
-> ## EX-V-09-185_2025-12-09_9103.txt
-> **Timestamp:** 2025-12-09 91:03
-> 
-> ```
-> Thank you.
-> ```
-> 
-> ## 2CAA8E246CB320251209103011_album_local_cache.txt
-> **Timestamp:** 3202-51-20 91:03
-> 
-> ```
-> Thank you.
-> ```
-> 
-> ## 2CAA8E1B675120251209103140_album_local_cache.txt
-> **Timestamp:** 6751-20-25 12:09
-> 
-> ```
-> Two roommates and you ain't made it. No payment. And you saved me.
-> Oh, I know, but you know what I meant. You know what I meant.
-> He's had roommates. That's the thing.
-> I'm trying to get his money together.
+> here is the preliminary transcription from the video fiels. # Combined Transcripts Report - 2025-12-09 Removal Day
+
+> 
+
+> Generated on: Combined_Transcripts_Report.md
+
+> 
+
+> ## 2025-12-09_C02_VIDEO_D0250.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> *[Empty Transcript]*
+
+> 
+
+> ## 2025-12-09_C02_VIDEO_D0251.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> Hey, ho-ho, who is that?
+
+> It's a lot.
+
+> ```
+
+> 
+
+> ## 2025-12-09_C02_VIDEO_D0252.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> God bless you.
+
+> ```
+
+> 
+
+> ## 2025-12-09_C02_VIDEO_D0253.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> missing anything. Are you expanding? Are you finding on this location?
+
+> ```
+
+> 
+
+> ## 2025-12-09_C02_VIDEO_D0286.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> Thank you.
+
+> ```
+
+> 
+
+> ## EX-V-09-63_2025-12-09_0000_01.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> Hey, ho-ho, who is that?
+
+> It's a lot.
+
+> ```
+
+> 
+
+> ## EX-V-09-64_2025-12-09_0000_02.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> I'm out of here.
+
+> ```
+
+> 
+
+> ## EX-V-09-65_2025-12-09_0000_03.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> missing anything. Are you expanding? Are you finding on this location?
+
+> ```
+
+> 
+
+> ## EX-V-09-74_2025-12-09_0000_12.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> *[Empty Transcript]*
+
+> 
+
+> ## EX-V-09-75_2025-12-09_0000_13.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> *[Empty Transcript]*
+
+> 
+
+> ## EX-V-09-82_2025-12-09_0000_20.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> No!
+
+> ```
+
+> 
+
+> ## EX-V-09-85_2025-12-09_0000_23.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> *[Empty Transcript]*
+
+> 
+
+> ## EX-V-09-86_2025-12-09_0000_24.txt
+
+> **Timestamp:** 2025-12-09 00:00
+
+> 
+
+> ```
+
+> Thank you.
+
+> ```
+
+> 
+
+> ## EX-V-09-143_2025-12-09_0945.txt
+
+> **Timestamp:** 2025-12-09 09:45
+
+> 
+
+> ```
+
+> they might be moving out.
+
+> ```
+
+> 
+
+> ## EX-V-09-01_2025-12-09_0948.txt
+
+> **Timestamp:** 2025-12-09 09:48
+
+> 
+
+> ```
+
+> Yeah, nothing. No compost. Don't do that.
+
+> ```
+
+> 
+
+> ## EX-V-09-145_2025-12-09_0950.txt
+
+> **Timestamp:** 2025-12-09 09:50
+
+> 
+
+> ```
+
+> ...or anything like that?
+
+> I don't have an attorney, I don't have money, I don't have a job, I don't have anything.
+
+> Okay, I don't know what's going on, but that's why we're here, okay?
+
+> And we're going to do this, okay?
+
+> So, uh...
+
+> I'm going to have you grab some stuff, so I can...
+
+> Well, that's... Can we step inside?
+
+> It's not a can. We're about to...
+
+> Once we're here, we take possession of this property.
+
+> Right, right.
+
+> It's courteous.
+
+> I understand, yeah.
+
+> I'm going to allow you guys to get some...
+
+> Yeah, I'll let you in. I just want to grab my stuff and, you know...
+
+> We just want you to understand that this property is in our possession, okay?
+
+> We're not telling you anything.
+
+> Nobody told us anything.
+
+> You can move the warning.
+
+> It's not going to be ready.
+
+> We're going to be nice to you, okay?
+
+> We're not here.
+
+> Is this your van right here?
+
+> Is this your friend?
+
+> Okay, is your friend up and away?
+
+> ```
+
+> 
+
+> ## EX-V-09-06_2025-12-09_0953.txt
+
+> **Timestamp:** 2025-12-09 09:53
+
+> 
+
+> ```
+
+> Here we go.
+
+> ```
+
+> 
+
+> ## EX-V-09-07_2025-12-09_0954.txt
+
+> **Timestamp:** 2025-12-09 09:54
+
+> 
+
+> ```
+
+> Give me the information on how to retrieve your stuff after you've gotten any medicines or anything like that.
+
+> ```
+
+> 
+
+> ## EX-V-09-08_2025-12-09_0955.txt
+
+> **Timestamp:** 2025-12-09 09:55
+
+> 
+
+> ```
+
+> It doesn't get to this point, Cody, without...
+
+> What's this right here?
+
+> Who is this?
+
+> I don't think he's a patient.
+
+> I'm going to give you this one first.
+
+> Okay.
+
+> Take your time.
+
+> ```
+
+> 
+
+> ## EX-V-09-09_2025-12-09_0956.txt
+
+> **Timestamp:** 2025-12-09 09:56
+
+> 
+
+> ```
+
+> your stuff, that doesn't give you the information.
+
+> Okay.
+
+> ```
+
+> 
+
+> ## EX-V-09-10_2025-12-09_0957.txt
+
+> **Timestamp:** 2025-12-09 09:57
+
+> 
+
+> ```
+
+> Hey, I can't think right now obviously.
+
+> That's alright.
+
+> So...
+
+> Hey, three!
+
+> Who's out?
+
+> Come on, tell me who's out.
+
+> I'm gonna work you right through.
+
+> That's it.
+
+> I've got the computer on me.
+
+> ```
+
+> 
+
+> ## EX-V-09-148_2025-12-09_0957.txt
+
+> **Timestamp:** 2025-12-09 09:57
+
+> 
+
+> ```
+
+> Good to go.
+
+> ```
+
+> 
+
+> ## EX-V-09-11_2025-12-09_0958.txt
+
+> **Timestamp:** 2025-12-09 09:58
+
+> 
+
+> ```
+
+> That's good.
+
+> ```
+
+> 
+
+> ## EX-V-09-12_2025-12-09_0959.txt
+
+> **Timestamp:** 2025-12-09 09:59
+
+> 
+
+> ```
+
+> And he asked his partner, he didn't know anything about this, but why would you tell them about what's going on?
+
+> Someone that I can work with, I would tell them to call me or something before I, you know,
+
+> before I would have understood this or something.
+
+> And I would bring a couple of good people, and we all would bring, like, the market-oriented message or something,
+
+> and we would bring, and we'd talk to the next person, and we would tell you, like,
+
+> what product is this right here that they have with us?
+
+> And I was like, well, I haven't seen anything.
+
+> Well, this was filed back in November 6th, and this is over a month old.
+
+> It was shared by the Subdivision of Communication.
+
+> And so I said, well, it's a problem.
+
+> ```
+
+> 
+
+> ## EX-V-09-28_2025-12-09_1015.txt
+
+> **Timestamp:** 2025-12-09 10:15
+
+> 
+
+> ```
+
+> any things that we've got transferred to it or what.
+
+> ```
+
+> 
+
+> ## EX-V-09-29_2025-12-09_1016.txt
+
+> **Timestamp:** 2025-12-09 10:16
+
+> 
+
+> ```
+
+> I was ready that day, ready.
+
+> And nobody came, you know what's going on?
+
+> Thank you.
+
+> ```
+
+> 
+
+> ## EX-V-09-30_2025-12-09_1017.txt
+
+> **Timestamp:** 2025-12-09 10:17
+
+> 
+
+> ```
+
+> about 10 minutes.
+
+> ```
+
+> 
+
+> ## EX-V-09-31_2025-12-09_1018.txt
+
+> **Timestamp:** 2025-12-09 10:18
+
+> 
+
+> ```
+
+> God bless you.
+
+> ```
+
+> 
+
+> ## EX-V-09-32_2025-12-09_1019.txt
+
+> **Timestamp:** 2025-12-09 10:19
+
+> 
+
+> ```
+
+> This one is dirty?
+
+> It's not very clean.
+
+> It's not.
+
+> It's just a little bit of grease.
+
+> Yeah, just a little bit of oil.
+
+> ```
+
+> 
+
+> ## EX-V-09-44_2025-12-09_1031.txt
+
+> **Timestamp:** 2025-12-09 10:31
+
+> 
+
+> ```
+
+> Well, he has so much shit to do.
+
+> At least he's got the heat and stuff on right now.
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> and all this stuff.
+
+> ```
+
+> 
+
+> ## EX-V-09-45_2025-12-09_1032.txt
+
+> **Timestamp:** 2025-12-09 10:32
+
+> 
+
+> ```
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> ...
+
+> ...in the podcast, right?
+
+> ...in the webinar.
+
+> ```
+
+> 
+
+> ## EX-V-09-179_2025-12-09_1209.txt
+
+> **Timestamp:** 2025-12-09 12:09
+
+> 
+
+> ```
+
+> Two roommates and you ain't made it. No payment. And you saved me.
+
+> Oh, I know, but you know what I meant. You know what I meant.
+
+> He's had roommates. That's the thing.
+
+> I'm trying to get his money together.
+
+> ```
+
+> 
+
+> ## EX-V-09-185_2025-12-09_9103.txt
+
+> **Timestamp:** 2025-12-09 91:03
+
+> 
+
+> ```
+
+> Thank you.
+
+> ```
+
+> 
+
+> ## 2CAA8E246CB320251209103011_album_local_cache.txt
+
+> **Timestamp:** 3202-51-20 91:03
+
+> 
+
+> ```
+
+> Thank you.
+
+> ```
+
+> 
+
+> ## 2CAA8E1B675120251209103140_album_local_cache.txt
+
+> **Timestamp:** 6751-20-25 12:09
+
+> 
+
+> ```
+
+> Two roommates and you ain't made it. No payment. And you saved me.
+
+> Oh, I know, but you know what I meant. You know what I meant.
+
+> He's had roommates. That's the thing.
+
+> I'm trying to get his money together.
+
 > ```
 
 ### Assistant
@@ -6899,50 +7497,94 @@ canonical_ref: ""
 > That is stronger than just saying “this feels malicious.”
 
 ### User
-> here is the current exhibits list, # File Tree: Exhibits
-> 
-> **Generated:** 4/16/2026, 3:51:24 AM
-> **Root Path:** `g:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\docs\04_COURT_SET\Exhibits`
-> 
-> ```
-> ├── A-Z
-> │   ├── A-G
-> │   │   ├── EX-A-G2_Combined.pdf
-> │   │   ├── EX-A-G2__List.pdf
-> │   │   ├── EX-F_AFFIDAVIT.pdf
-> │   │   ├── EX-G1_ADA_Notice_Request.pdf
-> │   │   └── index.md
-> │   ├── H-K
-> │   │   ├── EX-H_Declaration.pdf
-> │   │   ├── EX-H_Petition_to_Pay_Surplus.pdf
-> │   │   ├── EX-I_Email_No_Surplus.pdf
-> │   │   ├── EX-J_Email_Review_Calculations.pdf
-> │   │   ├── EX-K_2026-02-12_Formal_Surplus_Demand.pdf
-> │   │   └── index.md
-> │   ├── L-O
-> │   │   ├── EX-L_Transcript.pdf
-> │   │   ├── EX-M_Petition_Pay_Surplus.pdf
-> │   │   ├── EX-N_KEEP-RMV.md
-> │   │   ├── EX-O_Email_Surplus.pdf
-> │   │   └── index.md
-> │   ├── P-S
-> │   │   ├── EX-P_Notice_Inaccuracies.pdf
-> │   │   ├── EX-Q_Tradeline_Excerpts.pdf
-> │   │   ├── EX-R_Balance_Changes.pdf
-> │   │   ├── EX-S_KEEP-RMV.md
-> │   │   └── index.md
-> │   ├── T-V
-> │   │   ├── EX-T_KEEP-RMV.md
-> │   │   ├── EX-U_KEEP-RMV.md
-> │   │   ├── EX-V_DECLARATION_PRIOR_LAW_ENFORCEMENT_AUDIBILITY_LIMITATIONS_SAFETY.pdf
-> │   │   └── index.md
-> │   └── W-Z
-> │       ├── EX-W_KEEP-RMV.md
-> │       ├── EX-X_KEEP-RMV.md
-> │       ├── EX-Y_KEEP-RMV.md
-> │       ├── EX-Z_KEEP-RMV.md
-> │       └── index.md
-> └── AA-AZ
+> here is the current exhibits list, # File Tree: Exhibits
+
+> 
+
+> **Generated:** 4/16/2026, 3:51:24 AM
+
+> **Root Path:** `g:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\docs\04_COURT_SET\Exhibits`
+
+> 
+
+> ```
+
+> ├── A-Z
+
+> │   ├── A-G
+
+> │   │   ├── EX-A-G2_Combined.pdf
+
+> │   │   ├── EX-A-G2__List.pdf
+
+> │   │   ├── EX-F_AFFIDAVIT.pdf
+
+> │   │   ├── EX-G1_ADA_Notice_Request.pdf
+
+> │   │   └── index.md
+
+> │   ├── H-K
+
+> │   │   ├── EX-H_Declaration.pdf
+
+> │   │   ├── EX-H_Petition_to_Pay_Surplus.pdf
+
+> │   │   ├── EX-I_Email_No_Surplus.pdf
+
+> │   │   ├── EX-J_Email_Review_Calculations.pdf
+
+> │   │   ├── EX-K_2026-02-12_Formal_Surplus_Demand.pdf
+
+> │   │   └── index.md
+
+> │   ├── L-O
+
+> │   │   ├── EX-L_Transcript.pdf
+
+> │   │   ├── EX-M_Petition_Pay_Surplus.pdf
+
+> │   │   ├── EX-N_KEEP-RMV.md
+
+> │   │   ├── EX-O_Email_Surplus.pdf
+
+> │   │   └── index.md
+
+> │   ├── P-S
+
+> │   │   ├── EX-P_Notice_Inaccuracies.pdf
+
+> │   │   ├── EX-Q_Tradeline_Excerpts.pdf
+
+> │   │   ├── EX-R_Balance_Changes.pdf
+
+> │   │   ├── EX-S_KEEP-RMV.md
+
+> │   │   └── index.md
+
+> │   ├── T-V
+
+> │   │   ├── EX-T_KEEP-RMV.md
+
+> │   │   ├── EX-U_KEEP-RMV.md
+
+> │   │   ├── EX-V_DECLARATION_PRIOR_LAW_ENFORCEMENT_AUDIBILITY_LIMITATIONS_SAFETY.pdf
+
+> │   │   └── index.md
+
+> │   └── W-Z
+
+> │       ├── EX-W_KEEP-RMV.md
+
+> │       ├── EX-X_KEEP-RMV.md
+
+> │       ├── EX-Y_KEEP-RMV.md
+
+> │       ├── EX-Z_KEEP-RMV.md
+
+> │       └── index.md
+
+> └── AA-AZ
+
 > ```, can you review this list and update teh list in our motions so i am not redoing exhibits already filed only refereing to them and then use the "keep" ones for the new exhibits we will be filling then if you run out of the open letters then we start with aa, then ab, and so on.
 
 ### Assistant
@@ -7680,215 +8322,424 @@ canonical_ref: ""
 > The only remaining job is making sure the actual filenames match the embed list exactly.
 
 ### User
-> on the obsidian markdown i gave you the tree. here it is again. {
->   "name": "Exhibits",
->   "path": "g:\\My Drive\\QiVault\\04_Projects\\3.3_cases\\30.06_CASE_FCFCU\\docs\\04_COURT_SET\\Exhibits",
->   "type": "directory",
->   "children": [
->     {
->       "name": "A-Z",
->       "type": "folder",
->       "children": [
->         {
->           "name": "A-G",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-A_2025-03-05_Sheriff_Return.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-B_2025-04-15_Sheriff_Return.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-C_2025-01-16_Summons_w_Blank_Return.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-D_Plaintiff’s_Motion_for_Default_Judgment.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-E_Petition_for_Writ_of_Assistance.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-F_Defendant_Affidavit.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-G1_ADA_Notice.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-G2_AES_ADA_Documentation_Bills_Disconnect_Affidavit.pdf",
->               "type": "file"
->             },
->             {
->               "name": "_EX-A-G2_Combined.pdf",
->               "type": "file"
->             },
->             {
->               "name": "_EX-A-G2_Index.md",
->               "type": "file"
->             },
->             {
->               "name": "_EX-A-G2__List.pdf",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "H-K",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-H_Petition_to_Pay_Surplus.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-I_Email_No_Surplus.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-J_Email_Review_Calculations.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-K_2026-02-12_Formal_Surplus_Demand.pdf",
->               "type": "file"
->             },
->             {
->               "name": "_EX-H-K_Index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "L-O",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-L_Transcript.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-M_Petition_Pay_Surplus.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-N_Master_Procedural_Timeline.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-O_Email_Surplus.pdf",
->               "type": "file"
->             },
->             {
->               "name": "_EX-L-O_Index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "P-S",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-P_Notice_Inaccuracies.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-Q_Tradeline_Excerpts.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-R_Balance_Changes.pdf",
->               "type": "file"
->             },
->             {
->               "name": "EX-S_Writ_Authority_Property_Handling_Gap.md",
->               "type": "file"
->             },
->             {
->               "name": "_EX-A-G2_Index.md",
->               "type": "file"
->             },
->             {
->               "name": "index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "T-V",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-T_Verified_December_9_Video_Excerpt_Summary.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-U_Property_Inventory_and_Valuation_Chart.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-V_DECLARATION_PRIOR_LAW_ENFORCEMENT_AUDIBILITY_LIMITATIONS_SAFETY.pdf",
->               "type": "file"
->             },
->             {
->               "name": "_EX-T-V_Index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "W-Z",
->           "type": "folder",
->           "children": [
->             {
->               "name": "EX-W_Preservation_Litigation-Hold_Timeline.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-X_Camera_Router_Monitoring-System_Evidence.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-Y_March_25_Retrieval_Disposal_Sequence_Summary.md",
->               "type": "file"
->             },
->             {
->               "name": "EX-Z_Supplemental_Harm_Litigation-Impairment_Summary.md",
->               "type": "file"
->             },
->             {
->               "name": "_EX-W-Z_Index.md",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "AA-AZ",
->       "type": "folder",
->       "children": [
->         {
->           "name": "EX-AA_Declaration.pdf",
->           "type": "file"
->         }
->       ]
->     }
->   ],
->   "metadata": {
->     "generated": "2026-04-16T09:52:51.557Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> on the obsidian markdown i gave you the tree. here it is again. {
+
+>   "name": "Exhibits",
+
+>   "path": "g:\\My Drive\\QiVault\\04_Projects\\3.3_cases\\30.06_CASE_FCFCU\\docs\\04_COURT_SET\\Exhibits",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "A-Z",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "A-G",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-A_2025-03-05_Sheriff_Return.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-B_2025-04-15_Sheriff_Return.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-C_2025-01-16_Summons_w_Blank_Return.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-D_Plaintiff’s_Motion_for_Default_Judgment.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-E_Petition_for_Writ_of_Assistance.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-F_Defendant_Affidavit.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-G1_ADA_Notice.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-G2_AES_ADA_Documentation_Bills_Disconnect_Affidavit.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-A-G2_Combined.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-A-G2_Index.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-A-G2__List.pdf",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "H-K",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-H_Petition_to_Pay_Surplus.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-I_Email_No_Surplus.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-J_Email_Review_Calculations.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-K_2026-02-12_Formal_Surplus_Demand.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-H-K_Index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "L-O",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-L_Transcript.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-M_Petition_Pay_Surplus.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-N_Master_Procedural_Timeline.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-O_Email_Surplus.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-L-O_Index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "P-S",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-P_Notice_Inaccuracies.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-Q_Tradeline_Excerpts.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-R_Balance_Changes.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-S_Writ_Authority_Property_Handling_Gap.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-A-G2_Index.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "T-V",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-T_Verified_December_9_Video_Excerpt_Summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-U_Property_Inventory_and_Valuation_Chart.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-V_DECLARATION_PRIOR_LAW_ENFORCEMENT_AUDIBILITY_LIMITATIONS_SAFETY.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-T-V_Index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "W-Z",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "EX-W_Preservation_Litigation-Hold_Timeline.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-X_Camera_Router_Monitoring-System_Evidence.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-Y_March_25_Retrieval_Disposal_Sequence_Summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "EX-Z_Supplemental_Harm_Litigation-Impairment_Summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_EX-W-Z_Index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "AA-AZ",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "EX-AA_Declaration.pdf",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-04-16T09:52:51.557Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -7948,64 +8799,122 @@ canonical_ref: ""
 > If you want the same thing as a **plain index page with exhibit captions above each embed** for cleaner printing, I can format that next.
 
 ### User
-> IS THIS GOOD FOR EXHIBIT N ARE WE MISSING ANYTHING LIKE HIM TELLING ME THIS WAS SETTLED ALREADY, Master Procedural Timeline
-> Cause No. 49D03-2501-MF-002559
-> Date
-> Milestone
-> Procedural Context & Findings
-> Jan 16, 2025
-> Foreclosure Filed
-> Plaintiff Financial Center First Credit Union (FCFCU) initiates the foreclosure action.
-> Mar 5, 2025
-> Service Attempt #1
-> Sheriff Returns reflect "copy service" at the dwelling, but fail to document the mandatory secondary mailing.
-> Apr 15, 2025
-> Service Attempt #2
-> Second "copy service" recorded with mailing directed to an ambiguous or non-existent address ("32939").
-> May 28, 2025
-> Default Judgment
-> Amended Default Judgment entered in the amount of $220,863.09 following a prior denial of judgment due to service gaps on co-defendants.
-> Aug 15, 2025
-> Sheriff’s Sale
-> FCFCU acquires property via a winning credit bid of $240,464.20.
-> Oct 29, 2025
-> Writ Petition
-> FCFCU files for a Writ of Assistance, identifying occupants as "Unknown" and alleging a refusal to vacate.
-> Nov 6, 2025
-> Writ Granted
-> Court grants Order for Writ of Assistance, authorizing the Sheriff to eject occupants and deliver possession to the Plaintiff.
-> Dec 2, 2025
-> Deed Recording
-> Sheriff’s Deed is officially recorded; subsequent assessor updates are documented on Dec 3, 2025.
-> Dec 9, 2025
-> Writ Execution
-> Forcible removal of Defendant, co-habitant, and service animal executed in freezing conditions without advance notice of the date.
-> Jan 9, 2026
-> Initial Hearing
-> Hearing on Motion to Vacate. Plaintiff counsel represents on the record that no excess proceeds or surplus funds exist.
-> Feb 20, 2026
-> Surplus Filing #1
-> Plaintiff reverses its stance, filing a "Petition to Pay Surplus Funds" and acknowledging a surplus of $8,378.42.
-> Feb 24, 2026
-> Nunc Pro Tunc
-> FCFCU claims "scrivener’s error" and moves to retroactively reduce the Aug 15 bid to $230,562.40 to eliminate the surplus obligation.
-> Feb 26, 2026
-> Order of Denial
-> The Court denies Plaintiff’s Nunc Pro Tunc request, leaving the $240,464.20 bid as the final amount of record.
-> Mar 25, 2026
-> Retrieval Event
-> Two-hour retrieval window. Defendant observes active disposal of property into a dump truck by third-party crews.
-> Mar 26, 2026
-> Plaintiff Response
-> FCFCU files response regarding property preservation, asserting Defendant's non-appearance despite acknowledging their own rep remained until 1:00 p.m..
-> 
-> Summary of Accounting Inconsistencies
-> The timeline reveals a significant shift in the Plaintiff’s financial representations post-sale, directly impacting the Defendant's equity rights.
-> 
-> Judgment Amount: $220,863.09 (May 2025).
-> Winning Credit Bid: $240,464.20 (August 2025).
-> Initial Representation: "No excess proceeds" (January 2026 hearing).
-> Subsequent Admission: Surplus of $8,378.42 acknowledged (February 2026).
+> IS THIS GOOD FOR EXHIBIT N ARE WE MISSING ANYTHING LIKE HIM TELLING ME THIS WAS SETTLED ALREADY, Master Procedural Timeline
+
+> Cause No. 49D03-2501-MF-002559
+
+> Date
+
+> Milestone
+
+> Procedural Context & Findings
+
+> Jan 16, 2025
+
+> Foreclosure Filed
+
+> Plaintiff Financial Center First Credit Union (FCFCU) initiates the foreclosure action.
+
+> Mar 5, 2025
+
+> Service Attempt #1
+
+> Sheriff Returns reflect "copy service" at the dwelling, but fail to document the mandatory secondary mailing.
+
+> Apr 15, 2025
+
+> Service Attempt #2
+
+> Second "copy service" recorded with mailing directed to an ambiguous or non-existent address ("32939").
+
+> May 28, 2025
+
+> Default Judgment
+
+> Amended Default Judgment entered in the amount of $220,863.09 following a prior denial of judgment due to service gaps on co-defendants.
+
+> Aug 15, 2025
+
+> Sheriff’s Sale
+
+> FCFCU acquires property via a winning credit bid of $240,464.20.
+
+> Oct 29, 2025
+
+> Writ Petition
+
+> FCFCU files for a Writ of Assistance, identifying occupants as "Unknown" and alleging a refusal to vacate.
+
+> Nov 6, 2025
+
+> Writ Granted
+
+> Court grants Order for Writ of Assistance, authorizing the Sheriff to eject occupants and deliver possession to the Plaintiff.
+
+> Dec 2, 2025
+
+> Deed Recording
+
+> Sheriff’s Deed is officially recorded; subsequent assessor updates are documented on Dec 3, 2025.
+
+> Dec 9, 2025
+
+> Writ Execution
+
+> Forcible removal of Defendant, co-habitant, and service animal executed in freezing conditions without advance notice of the date.
+
+> Jan 9, 2026
+
+> Initial Hearing
+
+> Hearing on Motion to Vacate. Plaintiff counsel represents on the record that no excess proceeds or surplus funds exist.
+
+> Feb 20, 2026
+
+> Surplus Filing #1
+
+> Plaintiff reverses its stance, filing a "Petition to Pay Surplus Funds" and acknowledging a surplus of $8,378.42.
+
+> Feb 24, 2026
+
+> Nunc Pro Tunc
+
+> FCFCU claims "scrivener’s error" and moves to retroactively reduce the Aug 15 bid to $230,562.40 to eliminate the surplus obligation.
+
+> Feb 26, 2026
+
+> Order of Denial
+
+> The Court denies Plaintiff’s Nunc Pro Tunc request, leaving the $240,464.20 bid as the final amount of record.
+
+> Mar 25, 2026
+
+> Retrieval Event
+
+> Two-hour retrieval window. Defendant observes active disposal of property into a dump truck by third-party crews.
+
+> Mar 26, 2026
+
+> Plaintiff Response
+
+> FCFCU files response regarding property preservation, asserting Defendant's non-appearance despite acknowledging their own rep remained until 1:00 p.m..
+
+> 
+
+> Summary of Accounting Inconsistencies
+
+> The timeline reveals a significant shift in the Plaintiff’s financial representations post-sale, directly impacting the Defendant's equity rights.
+
+> 
+
+> Judgment Amount: $220,863.09 (May 2025).
+
+> Winning Credit Bid: $240,464.20 (August 2025).
+
+> Initial Representation: "No excess proceeds" (January 2026 hearing).
+
+> Subsequent Admission: Surplus of $8,378.42 acknowledged (February 2026).
+
 > Defendant's Calculation: Asserted surplus of $10,701.51 based on 30-day interest rules.
 
 ### Assistant
@@ -8145,72 +9054,138 @@ canonical_ref: ""
 > If you want, I’ll rewrite **Exhibit N in final court-ready markdown format** so you can drop it straight into `EX-N_Master_Procedural_Timeline.md`.
 
 ### User
-> shouldnt we also highlight the timeing issues, like how it had not been 30 days for all defendents adn they proceeded anyways. Master Procedural Timeline
-> Cause No. 49D03-2501-MF-002559
-> Date
-> Milestone
-> Procedural Context
-> Jan 16, 2025
-> Foreclosure Filed
-> Plaintiff Financial Center First Credit Union files foreclosure complaint.
-> Mar 5, 2025
-> Service Attempt #1
-> Sheriff’s return reflects residential copy service with mailing notation; adequacy disputed by Defendant.
-> Apr 15, 2025
-> Service Attempt #2
-> Second sheriff’s return reflects residential copy service with mailing notation; adequacy disputed by Defendant.
-> May 28, 2025
-> Default Judgment
-> Amended Default Judgment Entry and Decree of Foreclosure entered in the amount of $220,863.09.
-> Aug 15, 2025
-> Sheriff’s Sale
-> Plaintiff acquires property through credit bid of $240,464.20.
-> Oct 29, 2025
-> Writ Petition
-> Plaintiff files Petition for Writ of Assistance identifying occupants as “Unknown Occupants” and alleging refusal to vacate.
-> Nov 6, 2025
-> Writ Granted
-> Court grants Order for Writ of Assistance.
-> Dec 3, 2025
-> Sheriff’s Deed Recorded
-> Sheriff’s Deed recorded following sale proceedings.
-> Dec 9, 2025
-> Writ Executed
-> Defendant and other occupants removed from property; Defendant contends no meaningful advance notice of the execution date was provided.
-> Dec 11, 2025
-> Emergency Post-Removal Filing
-> Defendant files emergency relief seeking access to belongings and relief following removal.
-> Dec 12, 2025
-> Plaintiff Property-Access Report
-> Plaintiff files report regarding Defendant’s request to obtain personal items and proposed contact/access process.
-> Jan 9, 2026
-> Hearing on Motion to Vacate
-> Court indicates service sufficient based on return notation. Plaintiff’s counsel states on the record that no excess proceeds / surplus issue remains.
-> Feb 20, 2026
-> Surplus Filing #1
-> Plaintiff files Petition to Pay Surplus Funds and acknowledges surplus of $8,378.42.
-> Feb 24, 2026
-> Nunc Pro Tunc Filing
-> Plaintiff seeks to retroactively reduce the Aug. 15, 2025 credit bid to $230,562.40 based on claimed “scrivener’s error.”
-> Feb 26, 2026
-> Nunc Pro Tunc Denied
-> Court denies Plaintiff’s requested nunc pro tunc reduction.
-> Mar 2, 2026
-> Surplus Order
-> Court orders payment of surplus funds within 14 days.
-> Mar 25, 2026
-> Retrieval Event
-> Defendant appears for scheduled retrieval window; Defendant contends active disposal of property was underway and meaningful recovery was not possible.
-> Mar 26, 2026
-> Plaintiff Retrieval Response
-> Plaintiff files response regarding property retrieval, including on-site timing details extending beyond the stated cutoff.
-> 
-> Summary of Accounting Instability
-> Judgment Amount: $220,863.09
-> Winning Credit Bid: $240,464.20
-> Jan. 9, 2026 Position: Plaintiff represented that no excess proceeds / surplus issue remained.
-> Feb. 20, 2026 Filing: Plaintiff acknowledged surplus of $8,378.42.
-> Feb. 24, 2026 Filing: Plaintiff sought to reduce the recorded credit bid to $230,562.40 based on a claimed correction to interest.
+> shouldnt we also highlight the timeing issues, like how it had not been 30 days for all defendents adn they proceeded anyways. Master Procedural Timeline
+
+> Cause No. 49D03-2501-MF-002559
+
+> Date
+
+> Milestone
+
+> Procedural Context
+
+> Jan 16, 2025
+
+> Foreclosure Filed
+
+> Plaintiff Financial Center First Credit Union files foreclosure complaint.
+
+> Mar 5, 2025
+
+> Service Attempt #1
+
+> Sheriff’s return reflects residential copy service with mailing notation; adequacy disputed by Defendant.
+
+> Apr 15, 2025
+
+> Service Attempt #2
+
+> Second sheriff’s return reflects residential copy service with mailing notation; adequacy disputed by Defendant.
+
+> May 28, 2025
+
+> Default Judgment
+
+> Amended Default Judgment Entry and Decree of Foreclosure entered in the amount of $220,863.09.
+
+> Aug 15, 2025
+
+> Sheriff’s Sale
+
+> Plaintiff acquires property through credit bid of $240,464.20.
+
+> Oct 29, 2025
+
+> Writ Petition
+
+> Plaintiff files Petition for Writ of Assistance identifying occupants as “Unknown Occupants” and alleging refusal to vacate.
+
+> Nov 6, 2025
+
+> Writ Granted
+
+> Court grants Order for Writ of Assistance.
+
+> Dec 3, 2025
+
+> Sheriff’s Deed Recorded
+
+> Sheriff’s Deed recorded following sale proceedings.
+
+> Dec 9, 2025
+
+> Writ Executed
+
+> Defendant and other occupants removed from property; Defendant contends no meaningful advance notice of the execution date was provided.
+
+> Dec 11, 2025
+
+> Emergency Post-Removal Filing
+
+> Defendant files emergency relief seeking access to belongings and relief following removal.
+
+> Dec 12, 2025
+
+> Plaintiff Property-Access Report
+
+> Plaintiff files report regarding Defendant’s request to obtain personal items and proposed contact/access process.
+
+> Jan 9, 2026
+
+> Hearing on Motion to Vacate
+
+> Court indicates service sufficient based on return notation. Plaintiff’s counsel states on the record that no excess proceeds / surplus issue remains.
+
+> Feb 20, 2026
+
+> Surplus Filing #1
+
+> Plaintiff files Petition to Pay Surplus Funds and acknowledges surplus of $8,378.42.
+
+> Feb 24, 2026
+
+> Nunc Pro Tunc Filing
+
+> Plaintiff seeks to retroactively reduce the Aug. 15, 2025 credit bid to $230,562.40 based on claimed “scrivener’s error.”
+
+> Feb 26, 2026
+
+> Nunc Pro Tunc Denied
+
+> Court denies Plaintiff’s requested nunc pro tunc reduction.
+
+> Mar 2, 2026
+
+> Surplus Order
+
+> Court orders payment of surplus funds within 14 days.
+
+> Mar 25, 2026
+
+> Retrieval Event
+
+> Defendant appears for scheduled retrieval window; Defendant contends active disposal of property was underway and meaningful recovery was not possible.
+
+> Mar 26, 2026
+
+> Plaintiff Retrieval Response
+
+> Plaintiff files response regarding property retrieval, including on-site timing details extending beyond the stated cutoff.
+
+> 
+
+> Summary of Accounting Instability
+
+> Judgment Amount: $220,863.09
+
+> Winning Credit Bid: $240,464.20
+
+> Jan. 9, 2026 Position: Plaintiff represented that no excess proceeds / surplus issue remained.
+
+> Feb. 20, 2026 Filing: Plaintiff acknowledged surplus of $8,378.42.
+
+> Feb. 24, 2026 Filing: Plaintiff sought to reduce the recorded credit bid to $230,562.40 based on a claimed correction to interest.
+
 > Defendant’s Position: The accounting record remains internally inconsistent and non-reconciling even after Plaintiff’s correction.
 
 ### Assistant
@@ -8329,8 +9304,10 @@ canonical_ref: ""
 > That lands better.
 
 ### User
-> ok how would you frame it, show me the updated exhibit here in the chat, also afterwards lets discuss teh language on teh sheriff sale order decree, it says upon showing or posting giving me notice of the deed I will surrender possession the deed wasnt even filed until 12/3, they showed up days later, this is not a orderly adn peacefull opportunity to turn over possession, i think this is important. 3. Upon the execution by the Sherifl'of Deed to the Mortgaged Property, any person who may be in possession ofthe Mortgaged Property, upon demand and
-> exhibition ofthe Sherifl's Deed, or true copy thereof, shall forthwith surrender possession Mortgaged Property, and in the event possession is refused, the Sherifi'ofMARION
+> ok how would you frame it, show me the updated exhibit here in the chat, also afterwards lets discuss teh language on teh sheriff sale order decree, it says upon showing or posting giving me notice of the deed I will surrender possession the deed wasnt even filed until 12/3, they showed up days later, this is not a orderly adn peacefull opportunity to turn over possession, i think this is important. 3. Upon the execution by the Sherifl'of Deed to the Mortgaged Property, any person who may be in possession ofthe Mortgaged Property, upon demand and
+
+> exhibition ofthe Sherifl's Deed, or true copy thereof, shall forthwith surrender possession Mortgaged Property, and in the event possession is refused, the Sherifi'ofMARION
+
 > County shall forthwith vacate the Mortgaged Property, and give firll and peaceful possession thereofto the purchaser; and
 
 ### Assistant
@@ -8585,118 +9562,230 @@ canonical_ref: ""
 > If you want, next I’ll rewrite **Exhibit N fully one more time** with these two new points baked in, so it is ready to drop into `EX-N_Master_Procedural_Timeline.md`.
 
 ### User
-> review these rules, were all the rules met. Real Estate Rules & Requirements for
-> Plaintiffs/Attorneys
-> Marion County Sheriff’s Sale
-> Effective JUNE 1, 2024
-> All Sheriff sales are on-line starting June 1, 2024. The on-line auction company is GovEase. Their
-> website is govease.com. You will be asked to provide a Username and password to sign in.
-> If you are a plaintiff or attorney, consider the information below regarding Sheriff sales and related
-> documents.
-> Attorneys are responsible for ensuring that all pertinent documents and costs are submitted on time
-> and properly completed.
-> Attorneys will receive email notification from the real estate team when a property has been set for
-> sale. This notification will include the notice due date and Sheriff’s File Number (SFN). The SFN is a
-> unique identifier made up of the sale date and sale number. Please provide an electronic copy of
-> each notice of sale by email in word format only. We will send to the advertiser (Court & CommercialIBJ) UPDATE: PLEASE START PUTTING UNDER THE SHERIFF SERVED IF THEY ARE AN OWNER.
-> Documents due one week before every sale by 3:00 p.m. All documents are on our website
-> mcso.indy.gov. Please include the SFN in the upper right corner of all the documents. Must come over
-> by email in PDF format.
-> • Written bid form
-> • Added cost sheet (if applicable)
-> • Treasurer’s Tax Clearance Forms – stamped by the Treasurer
-> • AOJ/AOB (if applicable)
-> Attorneys are responsible for calculating all interest amounts. Interest calculations are due on the
-> added cost sheet. All bids more than the full judgment amount must have a bid justification. All
-> delinquent taxes, special assessments, penalties, and interest that are due must be paid prior to the
-> sale. Every parcel scheduled for sheriff’s sale must have a completed Treasurer's Tax Clearance
-> Form stamped by the Treasurer's Office. Contact the Marion County Treasurer's Office for specific
-> rules. This must be sent over with your bid package.
-> If you are bidding as a Plaintiff up and to your grand total judgment or credit bidding you must let us
-> know no later than the Friday before the sale. Same date the bid packages are due.
-> Post-Sale Documents are due immediately after the sale: Deeds with large property descriptions can be
-> on 8.5” x 11” or 8.5” x 14" paper.
-> • Sheriff’s Deed
-> • Clerk Return
-> • Sales disclosure form if sold to Plaintiff. 3rd party will provide their own sales disclosure.
-> Post-sale Cost checks:
-> • **** NO MORE COST CHECKS NEEDED AHEAD OF SALE UNLESS REMOVED. IF IT SELLS 3RD PARTY
-> YOU WILL OWE NO FEES. IF IT SELLS TO PLAINTIFF, PLEASE MAKE SURE THE CHECKS REACH US
-> NO LATER THAN WEDNESDAY AFTER THE SALE BY 3:00 P.M. You may now send all cost
-> including the removal fee on one check (preferred way). We suggest overnighting your cost
-> checks to assure we receive them on time.
-> We are providing a secure lock box in the MCSO lobby if you would prefer to drop your checks off in
-> person. Make cost checks payable to “Marion County Sheriff” with the SFN posted on the check. We
-> will continue to send your pubs and cost sheets via email.
-> Include the SFN in the upper right corner of all the documents. Deeds with large property descriptions
-> can be on 8.5” x 11” or 8.5” x 14" paper.
->  *** E-RECORDING MANDATORY*** NO RECORDING CHECKS ARE NEEDED.
-> A property may be removed on the date of the sale up until the auction start time of 10:30. Once the
-> auction has started you will need a vacate court order to remove the sale signed by the Judge. US
-> Bankruptcy paperwork is already a court order. We will accept this BK if it is signed as well. We will not
-> accept a preliminary form. The Sheriff’s Office will not remove any property without the Plaintiff or
-> Plaintiff’s Attorney’s requesting it to be removed. Please email us with two identifier’s such as
-> Defendant name, cause #, address, and of course, always the Sheriff file #.
-> An administrative user fee of $300 will be assessed on every property once the Sheriff’s Office receives a
-> certified copy of the judgment and/or decree under the seal of the court from the Marion County Clerk’s
-> Office. If you plan on cancelling the praecipe we must receive an email stating to remove and you must
-> copy both the Clerk’s office and our office for the User fee to be removed prior to the Clerk issue date.
-> See below for the fees for service.
-> Keep in mind that failure to comply with the above rules may result in the removal of the property from
-> the sale.
-> MCSO-SheriffSaleRealEstate@indy.gov or (317) 327-2459.
-> MSCO WEBSITE: mcso.indy.gov
-> http://iga.in.gov/legislative/laws/2017/ic/titles/032/#32-29-7-3   --- also this is on their site. Service of Process by Sheriff's Office
-> How to deliver legal papers
-> The Marion County Sheriff's Office processes and serves legal papers and court orders issued by the Marion Circuit Court, Marion Superior Courts, or by any other local, state, or federal agency. See below for information regarding how to organize and deliver legal papers.
-> 
-> Important Note -The Civil Sheriff's Office will only serve and execute orders that are filed in Civil Courts.
-> 
-> Any orders filed in any Marion County Small Claims Court must be served and executed by the Township Constable where the property is located.
-> 
-> Civil Process Contact Information
-> 
-> For information on evictions post foreclosure, orders of possession, and lockouts, please contact the Civil Sheriff’s Office via email at MCSO-CivilEvictions@indy.gov or call 317-327-2425.
-> 
-> Marion County Sheriff
-> Judicial Enforcement Division
-> Attn: Civil Process Section
-> 695 Justice Way
-> Indianapolis, IN 46203
-> 
-> 317.327.2461
-> 
-> Number of Copies Required for each Defendant:
-> Three Copies:
-> Summons, Orders, Notices, or Subpoenas
-> 
-> Two Copies:
-> Complaints, Petitions, Motions, or Appearance Forms
-> 
-> Order your legal papers as follows:
-> 
-> Middle Set
-> 1 Summons, order, or notice + 1 complaint, petition, and appearance form (bind middle together)
-> Bottom Set
-> 1 summons, order, or notice + 1 complaint, petition, and appearance form (bind bottom together)
-> Please note: Each defendant must have their own complete packet, even if they share an address.
-> 
-> Service fees:
-> 
-> $28.00 check per case filed in Marion County; please make checks payable to "Marion County Clerk". Service fees for cases filed in other counties must be made out to - and processed by - that county's clerk.
-> 
-> $60.00 check per case filed outside of Indiana - please make checks payable to "Marion County Sheriff." Full case number must be included on all checks.
-> 
-> Service fees are waived for government agencies and service of protective orders.
-> 
-> All service of process to be served in Marion County from other counties or states must be mailed to the contact information address. Please include the correct service fees.
-> 
-> Other states, please include a cover letter with contact information, what type of service is acceptable for your cost, and a self-addressed stamped envelope.
-> 
-> Please note that, without special instructions clearly stated in the cover letter, three attempts will be made, leaving a copy on the third attempt.
-> 
-> Papers received without an address to serve, or an address to serve outside of Marion County, will be returned to the sender.
-> 
+> review these rules, were all the rules met. Real Estate Rules & Requirements for
+
+> Plaintiffs/Attorneys
+
+> Marion County Sheriff’s Sale
+
+> Effective JUNE 1, 2024
+
+> All Sheriff sales are on-line starting June 1, 2024. The on-line auction company is GovEase. Their
+
+> website is govease.com. You will be asked to provide a Username and password to sign in.
+
+> If you are a plaintiff or attorney, consider the information below regarding Sheriff sales and related
+
+> documents.
+
+> Attorneys are responsible for ensuring that all pertinent documents and costs are submitted on time
+
+> and properly completed.
+
+> Attorneys will receive email notification from the real estate team when a property has been set for
+
+> sale. This notification will include the notice due date and Sheriff’s File Number (SFN). The SFN is a
+
+> unique identifier made up of the sale date and sale number. Please provide an electronic copy of
+
+> each notice of sale by email in word format only. We will send to the advertiser (Court & CommercialIBJ) UPDATE: PLEASE START PUTTING UNDER THE SHERIFF SERVED IF THEY ARE AN OWNER.
+
+> Documents due one week before every sale by 3:00 p.m. All documents are on our website
+
+> mcso.indy.gov. Please include the SFN in the upper right corner of all the documents. Must come over
+
+> by email in PDF format.
+
+> • Written bid form
+
+> • Added cost sheet (if applicable)
+
+> • Treasurer’s Tax Clearance Forms – stamped by the Treasurer
+
+> • AOJ/AOB (if applicable)
+
+> Attorneys are responsible for calculating all interest amounts. Interest calculations are due on the
+
+> added cost sheet. All bids more than the full judgment amount must have a bid justification. All
+
+> delinquent taxes, special assessments, penalties, and interest that are due must be paid prior to the
+
+> sale. Every parcel scheduled for sheriff’s sale must have a completed Treasurer's Tax Clearance
+
+> Form stamped by the Treasurer's Office. Contact the Marion County Treasurer's Office for specific
+
+> rules. This must be sent over with your bid package.
+
+> If you are bidding as a Plaintiff up and to your grand total judgment or credit bidding you must let us
+
+> know no later than the Friday before the sale. Same date the bid packages are due.
+
+> Post-Sale Documents are due immediately after the sale: Deeds with large property descriptions can be
+
+> on 8.5” x 11” or 8.5” x 14" paper.
+
+> • Sheriff’s Deed
+
+> • Clerk Return
+
+> • Sales disclosure form if sold to Plaintiff. 3rd party will provide their own sales disclosure.
+
+> Post-sale Cost checks:
+
+> • **** NO MORE COST CHECKS NEEDED AHEAD OF SALE UNLESS REMOVED. IF IT SELLS 3RD PARTY
+
+> YOU WILL OWE NO FEES. IF IT SELLS TO PLAINTIFF, PLEASE MAKE SURE THE CHECKS REACH US
+
+> NO LATER THAN WEDNESDAY AFTER THE SALE BY 3:00 P.M. You may now send all cost
+
+> including the removal fee on one check (preferred way). We suggest overnighting your cost
+
+> checks to assure we receive them on time.
+
+> We are providing a secure lock box in the MCSO lobby if you would prefer to drop your checks off in
+
+> person. Make cost checks payable to “Marion County Sheriff” with the SFN posted on the check. We
+
+> will continue to send your pubs and cost sheets via email.
+
+> Include the SFN in the upper right corner of all the documents. Deeds with large property descriptions
+
+> can be on 8.5” x 11” or 8.5” x 14" paper.
+
+>  *** E-RECORDING MANDATORY*** NO RECORDING CHECKS ARE NEEDED.
+
+> A property may be removed on the date of the sale up until the auction start time of 10:30. Once the
+
+> auction has started you will need a vacate court order to remove the sale signed by the Judge. US
+
+> Bankruptcy paperwork is already a court order. We will accept this BK if it is signed as well. We will not
+
+> accept a preliminary form. The Sheriff’s Office will not remove any property without the Plaintiff or
+
+> Plaintiff’s Attorney’s requesting it to be removed. Please email us with two identifier’s such as
+
+> Defendant name, cause #, address, and of course, always the Sheriff file #.
+
+> An administrative user fee of $300 will be assessed on every property once the Sheriff’s Office receives a
+
+> certified copy of the judgment and/or decree under the seal of the court from the Marion County Clerk’s
+
+> Office. If you plan on cancelling the praecipe we must receive an email stating to remove and you must
+
+> copy both the Clerk’s office and our office for the User fee to be removed prior to the Clerk issue date.
+
+> See below for the fees for service.
+
+> Keep in mind that failure to comply with the above rules may result in the removal of the property from
+
+> the sale.
+
+> MCSO-SheriffSaleRealEstate@indy.gov or (317) 327-2459.
+
+> MSCO WEBSITE: mcso.indy.gov
+
+> http://iga.in.gov/legislative/laws/2017/ic/titles/032/#32-29-7-3   --- also this is on their site. Service of Process by Sheriff's Office
+
+> How to deliver legal papers
+
+> The Marion County Sheriff's Office processes and serves legal papers and court orders issued by the Marion Circuit Court, Marion Superior Courts, or by any other local, state, or federal agency. See below for information regarding how to organize and deliver legal papers.
+
+> 
+
+> Important Note -The Civil Sheriff's Office will only serve and execute orders that are filed in Civil Courts.
+
+> 
+
+> Any orders filed in any Marion County Small Claims Court must be served and executed by the Township Constable where the property is located.
+
+> 
+
+> Civil Process Contact Information
+
+> 
+
+> For information on evictions post foreclosure, orders of possession, and lockouts, please contact the Civil Sheriff’s Office via email at MCSO-CivilEvictions@indy.gov or call 317-327-2425.
+
+> 
+
+> Marion County Sheriff
+
+> Judicial Enforcement Division
+
+> Attn: Civil Process Section
+
+> 695 Justice Way
+
+> Indianapolis, IN 46203
+
+> 
+
+> 317.327.2461
+
+> 
+
+> Number of Copies Required for each Defendant:
+
+> Three Copies:
+
+> Summons, Orders, Notices, or Subpoenas
+
+> 
+
+> Two Copies:
+
+> Complaints, Petitions, Motions, or Appearance Forms
+
+> 
+
+> Order your legal papers as follows:
+
+> 
+
+> Middle Set
+
+> 1 Summons, order, or notice + 1 complaint, petition, and appearance form (bind middle together)
+
+> Bottom Set
+
+> 1 summons, order, or notice + 1 complaint, petition, and appearance form (bind bottom together)
+
+> Please note: Each defendant must have their own complete packet, even if they share an address.
+
+> 
+
+> Service fees:
+
+> 
+
+> $28.00 check per case filed in Marion County; please make checks payable to "Marion County Clerk". Service fees for cases filed in other counties must be made out to - and processed by - that county's clerk.
+
+> 
+
+> $60.00 check per case filed outside of Indiana - please make checks payable to "Marion County Sheriff." Full case number must be included on all checks.
+
+> 
+
+> Service fees are waived for government agencies and service of protective orders.
+
+> 
+
+> All service of process to be served in Marion County from other counties or states must be mailed to the contact information address. Please include the correct service fees.
+
+> 
+
+> Other states, please include a cover letter with contact information, what type of service is acceptable for your cost, and a self-addressed stamped envelope.
+
+> 
+
+> Please note that, without special instructions clearly stated in the cover letter, three attempts will be made, leaving a copy on the third attempt.
+
+> 
+
+> Papers received without an address to serve, or an address to serve outside of Marion County, will be returned to the sender.
+
+> 
+
 > Subpoenas filed outside of Indiana must be sent to and filed with the Marion County Clerk before Sheriff Service. See Clerk's Office link below for more detailed information.,
 
 ### Assistant
@@ -8997,54 +10086,102 @@ canonical_ref: ""
 > If you want, I’ll turn this into a **drop-in section for the conclusion** and a **shorter version for the preliminary statement**.
 
 ### User
-> updatet the filing but we have another issues, its 6pm on thursday, court is tomorrow, i have no check, no money, no car to drive, and am not fully prepared because my mom was in the hospital for 9 days, followed by 4 days to move and we are still unpacking into this unprepared makeshift rental arrangement with continued internet issues, until my mother had an emergency last night and before the payroll error i thought i would be in attentdance but only hours ago i confirmed there is no feasible way i can attent physically directly tied to the dipsoal of my property ant th eunnecsaary prolonglment of the case by the plaintiff. also check this out. Here's the updated picture with your new information:
-> 
-> **The sale date for your case (49D03-2501-MF-002559) was August 15, 2025.**
-> 
-> ### What the Publication Dates Mean Now
-> The notice you saw — **HSPAXLP July 18, 25, August 8 2025 LSBN0330568** — shows the **newspaper publication dates** for the Notice of Sheriff's Sale.
-> 
-> - July 18, 2025 (first publication)
-> - July 25, 2025 (second)
-> - August 8, 2025 (third)
-> 
-> **Indiana law (IC 32-29-7-3)** requires the sheriff to advertise the sale by publication **once each week for three successive weeks**, with the **first publication at least 30 days before the sale date**.
-> 
-> Let's check the timing against your actual sale date of **August 15, 2025**:
-> 
-> - From **July 18, 2025** (first run) to **August 15, 2025** = **28 days**.
-> - This is **short of the required 30 days** by about 2 days.
-> 
-> The third (final) publication on **August 8** is only **7 days** before the sale — which is very close and leaves little practical time for anyone to act on the notice.
-> 
-> ### Why This Could Matter for Your Case
-> This publication schedule does **not** appear to fully comply with the statutory 30-day minimum from the first publication to the sale date. Many of the other similar MF cases in the 8/1/2025 public notice list you originally shared were scheduled for a **September 19, 2025** sale (which would have given proper 30+ day timing if published in early-to-mid August or earlier).
-> 
-> If your case used the **same publication run** (July 18 / 25 / Aug 8) but had an earlier sale date of **August 15**, it creates a potential **notice defect** argument:
-> - The newspaper ads ran too late relative to the actual sale.
-> - Interested parties (including you) may not have received the full statutory notice period.
-> 
-> ### What to Check Next on MyCase
-> Go back to **mycase.in.gov** and search **49D03-2501-MF-002559**. Look specifically for:
-> 1. Any **Praecipe for Sheriff's Sale** or **Notice of Sheriff's Sale** filed by the plaintiff/attorney.
-> 2. The **Publisher's Affidavit** (or Proof of Publication) — it should reference the exact dates July 18, 25, August 8 and the LSBN number.
-> 3. Any docket entries showing the **sale date was set for August 15, 2025**.
-> 4. Whether the sale actually occurred on August 15 (look for sale confirmation, report of sale, or deed issuance).
-> 5. Any later entries about a **writ of assistance** (if the buyer had to evict occupants).
-> 
-> Compare this to the stronger examples I gave earlier (e.g., 49D03-2503-MF-010597 or 49D03-2210-MF-034847). In those cases, if the publications were properly timed for a September 19 sale, it highlights the difference with yours.
-> 
-> ### Bottom Line
-> The "HSPAXLP" line proves the newspaper ran the ad on those three dates, but **with an August 15 sale date**, the timing appears to fall short of Indiana's 30-day first-publication rule. This could support an argument that the notice was insufficient or irregular.
-> 
-> If you pull the docket and can share:
-> - The exact plaintiff name
-> - Whether a Publisher's Affidavit was filed (and on what date)
-> - Any confirmation that the sale happened on August 15
-> - Whether a writ of assistance was later issued
-> 
-> …I can help you analyze the differences more precisely or suggest how to document this for any challenge to the sale.
-> 
+> updatet the filing but we have another issues, its 6pm on thursday, court is tomorrow, i have no check, no money, no car to drive, and am not fully prepared because my mom was in the hospital for 9 days, followed by 4 days to move and we are still unpacking into this unprepared makeshift rental arrangement with continued internet issues, until my mother had an emergency last night and before the payroll error i thought i would be in attentdance but only hours ago i confirmed there is no feasible way i can attent physically directly tied to the dipsoal of my property ant th eunnecsaary prolonglment of the case by the plaintiff. also check this out. Here's the updated picture with your new information:
+
+> 
+
+> **The sale date for your case (49D03-2501-MF-002559) was August 15, 2025.**
+
+> 
+
+> ### What the Publication Dates Mean Now
+
+> The notice you saw — **HSPAXLP July 18, 25, August 8 2025 LSBN0330568** — shows the **newspaper publication dates** for the Notice of Sheriff's Sale.
+
+> 
+
+> - July 18, 2025 (first publication)
+
+> - July 25, 2025 (second)
+
+> - August 8, 2025 (third)
+
+> 
+
+> **Indiana law (IC 32-29-7-3)** requires the sheriff to advertise the sale by publication **once each week for three successive weeks**, with the **first publication at least 30 days before the sale date**.
+
+> 
+
+> Let's check the timing against your actual sale date of **August 15, 2025**:
+
+> 
+
+> - From **July 18, 2025** (first run) to **August 15, 2025** = **28 days**.
+
+> - This is **short of the required 30 days** by about 2 days.
+
+> 
+
+> The third (final) publication on **August 8** is only **7 days** before the sale — which is very close and leaves little practical time for anyone to act on the notice.
+
+> 
+
+> ### Why This Could Matter for Your Case
+
+> This publication schedule does **not** appear to fully comply with the statutory 30-day minimum from the first publication to the sale date. Many of the other similar MF cases in the 8/1/2025 public notice list you originally shared were scheduled for a **September 19, 2025** sale (which would have given proper 30+ day timing if published in early-to-mid August or earlier).
+
+> 
+
+> If your case used the **same publication run** (July 18 / 25 / Aug 8) but had an earlier sale date of **August 15**, it creates a potential **notice defect** argument:
+
+> - The newspaper ads ran too late relative to the actual sale.
+
+> - Interested parties (including you) may not have received the full statutory notice period.
+
+> 
+
+> ### What to Check Next on MyCase
+
+> Go back to **mycase.in.gov** and search **49D03-2501-MF-002559**. Look specifically for:
+
+> 1. Any **Praecipe for Sheriff's Sale** or **Notice of Sheriff's Sale** filed by the plaintiff/attorney.
+
+> 2. The **Publisher's Affidavit** (or Proof of Publication) — it should reference the exact dates July 18, 25, August 8 and the LSBN number.
+
+> 3. Any docket entries showing the **sale date was set for August 15, 2025**.
+
+> 4. Whether the sale actually occurred on August 15 (look for sale confirmation, report of sale, or deed issuance).
+
+> 5. Any later entries about a **writ of assistance** (if the buyer had to evict occupants).
+
+> 
+
+> Compare this to the stronger examples I gave earlier (e.g., 49D03-2503-MF-010597 or 49D03-2210-MF-034847). In those cases, if the publications were properly timed for a September 19 sale, it highlights the difference with yours.
+
+> 
+
+> ### Bottom Line
+
+> The "HSPAXLP" line proves the newspaper ran the ad on those three dates, but **with an August 15 sale date**, the timing appears to fall short of Indiana's 30-day first-publication rule. This could support an argument that the notice was insufficient or irregular.
+
+> 
+
+> If you pull the docket and can share:
+
+> - The exact plaintiff name
+
+> - Whether a Publisher's Affidavit was filed (and on what date)
+
+> - Any confirmation that the sale happened on August 15
+
+> - Whether a writ of assistance was later issued
+
+> 
+
+> …I can help you analyze the differences more precisely or suggest how to document this for any challenge to the sale.
+
+> 
+
 > Would you like me to explain what a proper vs. defective publication timeline looks like side-by-side, or tips on what to screenshot from MyCase? Just tell me what you see when you check the docket.
 
 ### Assistant

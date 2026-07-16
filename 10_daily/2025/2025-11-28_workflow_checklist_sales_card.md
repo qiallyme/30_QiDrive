@@ -3,9 +3,9 @@ layout: page
 title: "Workflow checklist sales card"
 slug: "workflow_checklist_sales_card"
 created_at: "2025-11-28 14:55:48"
-updated_at: "2025-11-28 14:55:48"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -184,43 +184,80 @@ canonical_ref: ""
 > If you want, I can turn this into a polished **client-facing one-pager**, **CRM workflow**, or **automated form** for your portal.
 
 ### User
-> do you think you are able to figure out the calculation or am i doing too much. 
-> Get Another Quote   Print this Quote
-> Estimate Your Plate Costs
-> Friday, November 28, 2025 4:00:04 PM     
-> 
-> Title Fees
-> 
-> Description	Amount
-> Title - Vehicle	$15.00
-> Total Title Fee	$15.00  
-> 
-> Registration Fees
-> 
-> Description	Amount
-> Passenger Motor Vehicle Registration	$21.35
-> Transportation Infrastructure Improvement	$15.00
-> Total Registration Fee	$36.35  
-> 
-> Excise Fees
-> 
-> Description	Year	Amount
-> Vehicle Excise Tax	2025	$76.00
-> County Vehicle Excise Tax	2025	$15.18
-> Vehicle Excise Tax	2026	$304.00
-> County Vehicle Excise Tax	2026	$60.70
-> Total Excise Fee	$455.88  
-> 
-> Total Estimate Amount	$507.23      
-> 
-> 
-> In addition to the total quote amount, electric vehicles will be charged $230.00, and hybrid vehicles will be charged $77.00. Vehicles required to pay Motor Carrier fuel tax are exempt from these fees.
-> 
-> Some plate designs are subject to additional fees
-> Documentation Information
-> Various supporting documentation may be required at the time of Title. Customer is also required to present the Proof of Insurance at the time of Registration.
-> 
-> Disclaimer
+> do you think you are able to figure out the calculation or am i doing too much. 
+
+> Get Another Quote   Print this Quote
+
+> Estimate Your Plate Costs
+
+> Friday, November 28, 2025 4:00:04 PM     
+
+> 
+
+> Title Fees
+
+> 
+
+> Description	Amount
+
+> Title - Vehicle	$15.00
+
+> Total Title Fee	$15.00  
+
+> 
+
+> Registration Fees
+
+> 
+
+> Description	Amount
+
+> Passenger Motor Vehicle Registration	$21.35
+
+> Transportation Infrastructure Improvement	$15.00
+
+> Total Registration Fee	$36.35  
+
+> 
+
+> Excise Fees
+
+> 
+
+> Description	Year	Amount
+
+> Vehicle Excise Tax	2025	$76.00
+
+> County Vehicle Excise Tax	2025	$15.18
+
+> Vehicle Excise Tax	2026	$304.00
+
+> County Vehicle Excise Tax	2026	$60.70
+
+> Total Excise Fee	$455.88  
+
+> 
+
+> Total Estimate Amount	$507.23      
+
+> 
+
+> 
+
+> In addition to the total quote amount, electric vehicles will be charged $230.00, and hybrid vehicles will be charged $77.00. Vehicles required to pay Motor Carrier fuel tax are exempt from these fees.
+
+> 
+
+> Some plate designs are subject to additional fees
+
+> Documentation Information
+
+> Various supporting documentation may be required at the time of Title. Customer is also required to present the Proof of Insurance at the time of Registration.
+
+> 
+
+> Disclaimer
+
 > The BMV is pleased to provide this estimate based on the information that you entered into QuickQuote. The actual cost of your registration, plates and/or title ma
 
 ### Assistant

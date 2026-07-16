@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0009: Backup Server Control Plane & Internet Access Layer
 slug: adr-0009-backup-server-control-plane-internet-access-layer
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5c5c5e97c40f4a739ebeeaefba73e674
 canonical_ref: ""
 template_key: master-template
 ---

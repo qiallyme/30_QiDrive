@@ -3,9 +3,9 @@ layout: page
 title: "Dad's Silence and Response"
 slug: "dads_silence_and_response"
 created_at: "2026-06-08 19:04:36"
-updated_at: "2026-06-08 19:04:36"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

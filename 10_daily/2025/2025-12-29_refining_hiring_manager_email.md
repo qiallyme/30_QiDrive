@@ -3,9 +3,9 @@ layout: page
 title: "Refining Hiring Manager Email"
 slug: "refining_hiring_manager_email"
 created_at: "2025-12-29 06:15:09"
-updated_at: "2025-12-29 06:15:09"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

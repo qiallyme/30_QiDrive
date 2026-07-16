@@ -3,9 +3,9 @@ layout: page
 title: "Coin value perceptions"
 slug: "coin_value_perceptions"
 created_at: "2025-12-07 08:58:21"
-updated_at: "2025-12-07 08:58:21"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -967,68 +967,130 @@ canonical_ref: ""
 > Just point and I’ll spin it.
 
 ### User
-> {'asset_pointer': 'sediment://file_00000000a2e071fdbc66b43327a634d3', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 1911996, 'width': 1200}{'asset_pointer': 'sediment://file_00000000a19471fd8a50f5bf6021f379', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 3664003, 'width': 1600}{'asset_pointer': 'sediment://file_000000000f6471fd8557ef664bfe33ff', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 268309, 'width': 375}{'asset_pointer': 'sediment://file_0000000038f871fd827e5f0d221b0ecf', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 175751, 'width': 500}{'asset_pointer': 'sediment://file_00000000c10471fd99f22be977a0ff7e', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 2491393, 'width': 1200}{'asset_pointer': 'sediment://file_000000005a6c71fda0e40cf2da105a56', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 183754, 'width': 500}{'asset_pointer': 'sediment://file_00000000569c71fd8cc183350952d334', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 142937, 'width': 500}{'asset_pointer': 'sediment://file_00000000694071fdbe9f920fb79396f9', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 2466143, 'width': 1200}heres some context. 
-> Oct 8, 2025
-> Profile Image
-> Coin has no luster like original luster basically the coin has been defected by someone dipping it into some type of oil or grease Shine for coins. You can tell by the side view that you took of the coin and how shiny it is also the edges of the lettering look very very smooth not rough whatsoever you can tell the coin has been dipped. Basically we can just say it's been cleaned
-> 1:16 AM
-> Oct 7, 2025
-> What does that mean? I’m new to this and just going off the info I Can find as I learn would you mind sharing more details?
-> 6:17 AM
-> Oct 4, 2025
-> Profile Image
-> Definitely looks dipped.. cleaned and worn the hell out   ----  You ended this listing on Sun, Dec 7 at 1:53 AM by indicating this item is no longer available. Relist
-> Sell a similar item
-> Listing info
-> Duration:	
-> Good Till Canceled
-> Start time:	
-> Nov 14, 2024 01:22:24 AM PST
-> 
-> Share
-> 1929 1C RD Lincoln Cent Missing Right Ear Error And Others Super Rare Find!
-> 
-> codyr.me
-> (33)
-> 96.2% positiveSeller's other itemsSeller's other itemsContact seller
-> 
-> US $147.00
-> or Best Offer
-> Condition:
-> --not specified
-> Shipping:
-> US $4.46 USPS Ground Advantage®. See detailsfor shipping
-> Located in: Indianapolis, Indiana, United States
-> Delivery:
-> Estimated between Wed, Dec 10 and Sat, Dec 13 to 46254
-> Returns:
-> Seller does not accept returns. See details- for more information about returns
-> Payments:You ended this listing on Sun, Dec 7 at 1:53 AM by indicating this item is no longer available. Relist
-> Sell a similar item
-> Listing info
-> Duration:	
-> Good Till Canceled
-> Start time:	
-> Nov 14, 2024 01:22:24 AM PST
-> 
-> Share
-> 1929 1C RD Lincoln Cent Missing Right Ear Error And Others Super Rare Find!
-> 
-> codyr.me
-> (33)
-> 96.2% positiveSeller's other itemsSeller's other itemsContact seller
-> 
-> US $147.00
-> or Best Offer
-> Condition:
-> --not specified
-> Shipping:
-> US $4.46 USPS Ground Advantage®. See detailsfor shipping
-> Located in: Indianapolis, Indiana, United States
-> Delivery:
-> Estimated between Wed, Dec 10 and Sat, Dec 13 to 46254
-> Returns:
-> Seller does not accept returns. See details- for more information about returns
+> {'asset_pointer': 'sediment://file_00000000a2e071fdbc66b43327a634d3', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 1911996, 'width': 1200}{'asset_pointer': 'sediment://file_00000000a19471fd8a50f5bf6021f379', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 3664003, 'width': 1600}{'asset_pointer': 'sediment://file_000000000f6471fd8557ef664bfe33ff', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 268309, 'width': 375}{'asset_pointer': 'sediment://file_0000000038f871fd827e5f0d221b0ecf', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 175751, 'width': 500}{'asset_pointer': 'sediment://file_00000000c10471fd99f22be977a0ff7e', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 2491393, 'width': 1200}{'asset_pointer': 'sediment://file_000000005a6c71fda0e40cf2da105a56', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 183754, 'width': 500}{'asset_pointer': 'sediment://file_00000000569c71fd8cc183350952d334', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 500, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 142937, 'width': 500}{'asset_pointer': 'sediment://file_00000000694071fdbe9f920fb79396f9', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1600, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 2466143, 'width': 1200}heres some context. 
+
+> Oct 8, 2025
+
+> Profile Image
+
+> Coin has no luster like original luster basically the coin has been defected by someone dipping it into some type of oil or grease Shine for coins. You can tell by the side view that you took of the coin and how shiny it is also the edges of the lettering look very very smooth not rough whatsoever you can tell the coin has been dipped. Basically we can just say it's been cleaned
+
+> 1:16 AM
+
+> Oct 7, 2025
+
+> What does that mean? I’m new to this and just going off the info I Can find as I learn would you mind sharing more details?
+
+> 6:17 AM
+
+> Oct 4, 2025
+
+> Profile Image
+
+> Definitely looks dipped.. cleaned and worn the hell out   ----  You ended this listing on Sun, Dec 7 at 1:53 AM by indicating this item is no longer available. Relist
+
+> Sell a similar item
+
+> Listing info
+
+> Duration:	
+
+> Good Till Canceled
+
+> Start time:	
+
+> Nov 14, 2024 01:22:24 AM PST
+
+> 
+
+> Share
+
+> 1929 1C RD Lincoln Cent Missing Right Ear Error And Others Super Rare Find!
+
+> 
+
+> codyr.me
+
+> (33)
+
+> 96.2% positiveSeller's other itemsSeller's other itemsContact seller
+
+> 
+
+> US $147.00
+
+> or Best Offer
+
+> Condition:
+
+> --not specified
+
+> Shipping:
+
+> US $4.46 USPS Ground Advantage®. See detailsfor shipping
+
+> Located in: Indianapolis, Indiana, United States
+
+> Delivery:
+
+> Estimated between Wed, Dec 10 and Sat, Dec 13 to 46254
+
+> Returns:
+
+> Seller does not accept returns. See details- for more information about returns
+
+> Payments:You ended this listing on Sun, Dec 7 at 1:53 AM by indicating this item is no longer available. Relist
+
+> Sell a similar item
+
+> Listing info
+
+> Duration:	
+
+> Good Till Canceled
+
+> Start time:	
+
+> Nov 14, 2024 01:22:24 AM PST
+
+> 
+
+> Share
+
+> 1929 1C RD Lincoln Cent Missing Right Ear Error And Others Super Rare Find!
+
+> 
+
+> codyr.me
+
+> (33)
+
+> 96.2% positiveSeller's other itemsSeller's other itemsContact seller
+
+> 
+
+> US $147.00
+
+> or Best Offer
+
+> Condition:
+
+> --not specified
+
+> Shipping:
+
+> US $4.46 USPS Ground Advantage®. See detailsfor shipping
+
+> Located in: Indianapolis, Indiana, United States
+
+> Delivery:
+
+> Estimated between Wed, Dec 10 and Sat, Dec 13 to 46254
+
+> Returns:
+
+> Seller does not accept returns. See details- for more information about returns
+
 > Payments:
 
 ### Assistant
@@ -1619,8 +1681,10 @@ canonical_ref: ""
 > If you want a more sarcastic or shorter version, I can tighten it up — but THIS one is the truly accurate, airtight truth you asked for.
 
 ### User
-> so here is what i actually sound like, and double check me. Hey, thanks for the feedback it actually got me reading up on luster, and I realized luster's has a few definitions that get confused. There’s mint luster, which comes from the microscopic lines created when the coin was struck as I imagine you understand well. That type of luster can get damaged easily if someone uses abrasive or harsh chemical cleaning, which is why collectors warn against it. This makes sense to me. But luster in general just means the way the surface reflects light naturally. The ANA says cleaning isn’t automatically a problem. It only becomes one if the method removes the mint striations or the "Mint-Luster". If this is preserved, then the "Mint-Luster" or "Luster" in this context, is still intact. Now, This coin wasn’t cleaned or dipped by anyone. And actually, when I was growing up, coins in my house used to fall between the agitator in those old washing machines; sit there for months. When one finally pulled them out, they looked exactly like this. Naturally polished from tumbling in water and friction of the movements for who knows how long NOT chemically altered. That’s environmental wear, not collector cleaning.
-> 
+> so here is what i actually sound like, and double check me. Hey, thanks for the feedback it actually got me reading up on luster, and I realized luster's has a few definitions that get confused. There’s mint luster, which comes from the microscopic lines created when the coin was struck as I imagine you understand well. That type of luster can get damaged easily if someone uses abrasive or harsh chemical cleaning, which is why collectors warn against it. This makes sense to me. But luster in general just means the way the surface reflects light naturally. The ANA says cleaning isn’t automatically a problem. It only becomes one if the method removes the mint striations or the "Mint-Luster". If this is preserved, then the "Mint-Luster" or "Luster" in this context, is still intact. Now, This coin wasn’t cleaned or dipped by anyone. And actually, when I was growing up, coins in my house used to fall between the agitator in those old washing machines; sit there for months. When one finally pulled them out, they looked exactly like this. Naturally polished from tumbling in water and friction of the movements for who knows how long NOT chemically altered. That’s environmental wear, not collector cleaning.
+
+> 
+
 > So what you’re calling ‘no luster’ is actually environmental luster, not "Mint-Luster" a separate concept and the shine you’re seeing is literally the plastic sleeve + my microscope lighting + exposure settings. I did that on purpose so buyers can see details from multiple angles and my attempt to enhance details to make them easier to see on a screen for transparency. I know now I actually underpriced the coin tremendously. Also value is what one is willing to pay. Out of 8 billion people, a 1929 penny is ‘worth more than 1 cent to many people I am sure. I’d pay $100s or $1000s for it personally if I had the disposable income, because it’s cool, almost 100 years old and literally could have been my grandmas lunch money when she was 9 years old. So thank you your comment actually helped me realize I was undervaluing the coin.
 
 ### Assistant

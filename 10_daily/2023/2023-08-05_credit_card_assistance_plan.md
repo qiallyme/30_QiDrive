@@ -3,9 +3,9 @@ layout: page
 title: "Credit Card Assistance Plan"
 slug: "credit_card_assistance_plan"
 created_at: "2023-08-05 19:23:13"
-updated_at: "2023-08-05 19:23:13"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

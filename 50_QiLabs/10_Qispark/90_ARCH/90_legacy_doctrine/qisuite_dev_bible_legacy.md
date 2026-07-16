@@ -3,9 +3,9 @@ layout: page
 title: QiSuite Dev Bible
 slug: qisuite-dev-bible
 status: legacy-reference
-updated_at: "2026-06-30"
+updated_at: "2026-07-16T06:49:40-04:00"
 owner: CRV
-tags:
+tags: []
   - qispark
   - legacy-doctrine
   - source-material
@@ -14,7 +14,7 @@ realm: 2_QsKb
 privacy: private
 qi_decimal: 2.99.00-01.SYS
 summary: Legacy technical doctrine retained as source material for QiSpark updates.
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -22,7 +22,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3e83f059bdbe4efa910d68550a4f4a32
 canonical_ref: ""
 template_key: master-template
 ---

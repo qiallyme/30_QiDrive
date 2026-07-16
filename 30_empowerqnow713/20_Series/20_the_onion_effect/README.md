@@ -1,3 +1,26 @@
+---
+layout: page
+title: Readme
+slug: readme
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: e4169cb07439420cb481612201f2fcc6
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # The Onion Effect
 
 A personal essay series exploring how small, persistent frictions compound over time to create measurable effects on our lives, relationships, and sense of belonging.

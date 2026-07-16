@@ -3,9 +3,9 @@ layout: page
 title: "Missing Documents Checklist"
 slug: "missing_documents_checklist"
 created_at: "2026-04-08 06:10:00"
-updated_at: "2026-04-08 06:10:00"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -99,14 +99,22 @@ canonical_ref: ""
 > That is where the leverage jumps.
 
 ### User
-> this introduction statement needs to be updated. I. PRELIMINARY STATEMENT
-> COMES NOW Defendant, Cody Rice-Velasquez (“Defendant” or “Movant”), appearing pro se, and respectfully moves this Court under Indiana Trial Rule 60(B) to vacate the Amended Default Judgment Entry and Decree of Foreclosure entered on May 28, 2025. Defendant further asks the Court to quash the Writ of Assistance issued on November 6, 2025, and executed on December 9, 2025; stay or set aside derivative enforcement measures to the extent they depend on the default judgment; preserve any remaining personal property; and require any future property-access process to proceed through structured and documented procedures.
-> This motion is built on four connected questions that, taken together, show why the judgment and its enforcement cannot be trusted in their current form.
-> First: What foreclosure? Defendant contends the case was flawed from the beginning because personal jurisdiction was never properly established through legally sufficient service, the Court did not receive the full factual context necessary to evaluate the adequacy of notice, and the accounting used to support judgment was unstable from the outset.
-> Second: What do you mean I had to leave on December 9, 2025? Even if Plaintiff eventually obtained some right to possession of the real estate, a separate question remains whether Defendant received legally and practically meaningful notice of the actual enforcement date, particularly where the deed was not recorded until December 2, 2025 and the Writ of Assistance was executed seven days later.
-> Third: That was still Defendant’s personal property. Even assuming Plaintiff was entitled to possession of the house, Defendant contends Plaintiff has never identified clear authority for the method used to control access to, restrict retrieval of, and allegedly dispose of Defendant’s personal property through a compressed, monitored, and unstructured process lacking an inventory, storage protocol, or coherent retrieval procedure.
-> Fourth: The numbers do not hold together. Plaintiff later admitted a material interest-calculation error, but Defendant contends the accounting problems are broader than that single correction. According to Defendant, the complaint amount, contemporaneous statements, bid figures, payoff-related numbers, and later corrected figures still do not reconcile mathematically under Plaintiff’s own framework.
-> At bottom, this case should not have proceeded to default on so thin a notice record, on so unstable an accounting record, and into so severe an enforcement posture. Defendant does not accuse the Sheriff of dishonesty. Defendant’s position is narrower but more consequential: the formal paperwork and shorthand notations in this case do not reliably establish that the process was legally sufficient, constitutionally fair, or factually trustworthy.
+> this introduction statement needs to be updated. I. PRELIMINARY STATEMENT
+
+> COMES NOW Defendant, Cody Rice-Velasquez (“Defendant” or “Movant”), appearing pro se, and respectfully moves this Court under Indiana Trial Rule 60(B) to vacate the Amended Default Judgment Entry and Decree of Foreclosure entered on May 28, 2025. Defendant further asks the Court to quash the Writ of Assistance issued on November 6, 2025, and executed on December 9, 2025; stay or set aside derivative enforcement measures to the extent they depend on the default judgment; preserve any remaining personal property; and require any future property-access process to proceed through structured and documented procedures.
+
+> This motion is built on four connected questions that, taken together, show why the judgment and its enforcement cannot be trusted in their current form.
+
+> First: What foreclosure? Defendant contends the case was flawed from the beginning because personal jurisdiction was never properly established through legally sufficient service, the Court did not receive the full factual context necessary to evaluate the adequacy of notice, and the accounting used to support judgment was unstable from the outset.
+
+> Second: What do you mean I had to leave on December 9, 2025? Even if Plaintiff eventually obtained some right to possession of the real estate, a separate question remains whether Defendant received legally and practically meaningful notice of the actual enforcement date, particularly where the deed was not recorded until December 2, 2025 and the Writ of Assistance was executed seven days later.
+
+> Third: That was still Defendant’s personal property. Even assuming Plaintiff was entitled to possession of the house, Defendant contends Plaintiff has never identified clear authority for the method used to control access to, restrict retrieval of, and allegedly dispose of Defendant’s personal property through a compressed, monitored, and unstructured process lacking an inventory, storage protocol, or coherent retrieval procedure.
+
+> Fourth: The numbers do not hold together. Plaintiff later admitted a material interest-calculation error, but Defendant contends the accounting problems are broader than that single correction. According to Defendant, the complaint amount, contemporaneous statements, bid figures, payoff-related numbers, and later corrected figures still do not reconcile mathematically under Plaintiff’s own framework.
+
+> At bottom, this case should not have proceeded to default on so thin a notice record, on so unstable an accounting record, and into so severe an enforcement posture. Defendant does not accuse the Sheriff of dishonesty. Defendant’s position is narrower but more consequential: the formal paperwork and shorthand notations in this case do not reliably establish that the process was legally sufficient, constitutionally fair, or factually trustworthy.
+
 > For those reasons, Defendant asks the Court to vacate the default judgment, quash the writ, preserve the status quo as to any remaining property, and restore the matter to a posture in which notice, possession, personal-property handling, and accounting can be tested on the merits rather than assumed by default.
 
 ### Assistant
@@ -142,8 +150,10 @@ canonical_ref: ""
 > One thing to consider strategically: if this motion is primarily a **void judgment / lack of jurisdiction** motion, this intro may still be doing too much too early. The strongest version usually leads with **service/jurisdiction first**, then treats property handling and accounting as either prejudice, derivative enforcement defects, or independent equitable grounds. If you want, I’d split this into a sharper “jurisdiction-first” version and a broader “global defects” version so you can choose the right posture.
 
 ### User
-> does this seem to light. II. PROCEDURAL POSTURE
-> Plaintiff filed this foreclosure action in January 2025. After disputed residential service attempts in March and April 2025, Plaintiff obtained an Amended Default Judgment Entry and Decree of Foreclosure on May 28, 2025. A Sheriff’s Sale followed on August 15, 2025. The Sheriff’s Deed was recorded on December 2, 2025, and the Writ of Assistance was executed on December 9, 2025.
+> does this seem to light. II. PROCEDURAL POSTURE
+
+> Plaintiff filed this foreclosure action in January 2025. After disputed residential service attempts in March and April 2025, Plaintiff obtained an Amended Default Judgment Entry and Decree of Foreclosure on May 28, 2025. A Sheriff’s Sale followed on August 15, 2025. The Sheriff’s Deed was recorded on December 2, 2025, and the Writ of Assistance was executed on December 9, 2025.
+
 > Defendant has previously challenged the validity of the judgment and the process that led to enforcement. This motion is presented as a clarified and integrated request for relief under Trial Rule 60(B), bringing together the service issue, the constitutional adequacy of notice, the disability-related access issues Plaintiff allegedly knew about before suit, the later property and displacement harms, and Plaintiff’s subsequent admission that its financial calculations were materially inaccurate. Defendant submits that these issues, considered together and in sequence, justify vacatur of the judgment or, at minimum, relief from default and prompt stabilization of the matter.
 
 ### Assistant

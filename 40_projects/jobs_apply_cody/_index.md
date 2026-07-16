@@ -2,8 +2,28 @@
 title: Cody Job Search Command Center
 type: project
 status: active
-updated_at: 2026-07-16
+updated_at: "2026-07-16T06:49:37-04:00"
 tags: [jobs, applications, career]
+layout: page
+slug: cody-job-search-command-center
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 64a353191fac4a7081d02ae517c2645a
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+project: ""
+priority: ""
+next_action: ""
+due_date: ""
 ---
 
 # Cody Job Search Command Center

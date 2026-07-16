@@ -3,9 +3,9 @@ layout: page
 title: "Clarion regroup plan"
 slug: "clarion_regroup_plan"
 created_at: "2026-06-19 09:34:21"
-updated_at: "2026-06-19 09:34:21"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

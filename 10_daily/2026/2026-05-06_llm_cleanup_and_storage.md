@@ -3,9 +3,9 @@ layout: page
 title: "LLM Cleanup and Storage"
 slug: "llm_cleanup_and_storage"
 created_at: "2026-05-06 23:13:42"
-updated_at: "2026-05-06 23:13:42"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -554,14 +554,22 @@ canonical_ref: ""
 > If it already downloaded some pieces, Ollama should reuse them and continue instead of starting from scratch. It is not wasted.
 
 ### User
-> C:\Users\codyr>ollama list
-> NAME                       ID              SIZE      MODIFIED
-> llama3:latest              365c0bd3c000    4.7 GB    4 weeks ago
-> llama2:latest              78e26419b446    3.8 GB    6 weeks ago
-> nomic-embed-text:latest    0a109f422b47    274 MB    8 weeks ago
-> llama3.1:latest            46e0c10c039e    4.9 GB    3 months ago
-> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
-> 
+> C:\Users\codyr>ollama list
+
+> NAME                       ID              SIZE      MODIFIED
+
+> llama3:latest              365c0bd3c000    4.7 GB    4 weeks ago
+
+> llama2:latest              78e26419b446    3.8 GB    6 weeks ago
+
+> nomic-embed-text:latest    0a109f422b47    274 MB    8 weeks ago
+
+> llama3.1:latest            46e0c10c039e    4.9 GB    3 months ago
+
+> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
+
+> 
+
 > C:\Users\codyr>
 
 ### Assistant

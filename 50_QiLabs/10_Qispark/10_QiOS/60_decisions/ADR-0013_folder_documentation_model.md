@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0013: Folder Documentation Model
 slug: adr-0013-folder-documentation-model
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 1a3f5dfebdfc4350a2609d9ef1a7fdf6
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Blog Site Building Options"
 slug: "blog_site_building_options"
 created_at: "2026-02-15 08:01:08"
-updated_at: "2026-02-15 08:01:08"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

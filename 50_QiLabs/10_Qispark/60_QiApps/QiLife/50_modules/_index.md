@@ -3,13 +3,13 @@ layout: section
 title: 50 Modules
 slug: 50-modules
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - moc
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9e6cbb5c40b54c778fe7c95fbacbb9ca
 canonical_ref: ""
 template_key: master-template
 ---

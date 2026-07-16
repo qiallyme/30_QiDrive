@@ -8,9 +8,9 @@ visibility: public
 publish_target: site
 publish_url: ""
 created_at: 2026-07-02T01:47:00-05:00
-updated_at: 2026-07-02T01:47:00-05:00
+updated_at: "2026-07-16T06:49:35-04:00"
 author: Cody J. Rice-Velasquez
-owner:
+owner: ""
   - Cody
 nav_title: The Burden of the Signal
 nav_group: EmpowerQNow
@@ -36,7 +36,7 @@ hero_prompt: "QSaysIt visual style: divine everyday grunge, semi-dark low-light 
 sensitivity: public
 classification: personal_public
 realm_label: QiSaysIt
-tags:
+tags: []
   - survival
   - testimony
   - boundaries
@@ -45,14 +45,14 @@ tags:
   - faith
   - invisible-labor
   - family-systems
-keywords:
+keywords: []
   - survival testimony
   - invisible care labor
   - false blame
   - family scapegoating
   - boundaries
   - spiritual resilience
-aliases:
+aliases: []
   - Burden of the Signal
   - Testimony of Survival
 context: Showcase post for QiSaysIt / EmpowerQNow. Public-facing essay derived from personal testimony and boundary work.

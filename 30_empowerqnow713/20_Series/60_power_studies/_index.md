@@ -8,7 +8,7 @@ visibility: internal
 publish_target: none
 publish_url: /60 Power Studies
 created_at: "2026-07-08 03:55:46"
-updated_at: "2026-07-08 03:55:46"
+updated_at: "2026-07-16T06:49:35-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "60 Power Studies"
@@ -18,16 +18,16 @@ nav_hidden: false
 is_index: true
 parent_ref: ""
 sensitivity: internal
-classification:
+classification: business_internal
   - blog-post
-realm_label:
+realm_label: ""
   - empowerqnow
-tags:
+tags: []
   - EmpowerQNow
 keywords: []
 aliases: []
 context: ""
-uid: ""
+uid: 08069d30b4ac4218bf331c23a3cfd331
 canonical_ref: ""
 source_type: manual
 template_key: master-template

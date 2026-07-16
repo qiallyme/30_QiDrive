@@ -3,9 +3,9 @@ layout: page
 title: "Marketplace Description Help"
 slug: "marketplace_description_help"
 created_at: "2026-04-20 13:47:24"
-updated_at: "2026-04-20 13:47:24"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

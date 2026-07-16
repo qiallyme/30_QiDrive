@@ -3,9 +3,9 @@ layout: page
 title: "Document Management Workflow"
 slug: "document_management_workflow"
 created_at: "2026-01-04 06:19:47"
-updated_at: "2026-01-04 06:19:47"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1772,59 +1772,112 @@ canonical_ref: ""
 > Say which one and we’ll generate it in `.md` as well.
 
 ### User
-> here is the message from gemini. I have completed the setup for Paperless-ngx and the QiNote export bridge. Since I cannot directly access your Docker daemon from this environment, I have prepared the configuration files locally so you can bring them up with a single command.
-> 
-> Phase 1: Run Paperless-ngx Locally
-> I have created a local-deploy folder with the recommended PostgreSQL stack and your requested defaults (America/Chicago, OCR enabled, etc.).
-> 
-> 1. Bring up the stack Open your terminal (PowerShell or Bash) and run:
-> 
-> powershell
-> cd local-deploy
-> docker compose up -d
-> 2. Create your Admin Account Once the containers are running, create your superuser:
-> 
-> powershell
-> docker exec -it local-deploy-webserver-1 python3 manage.py createsuperuser
-> 3. Access & Usage
-> 
-> URL: http://localhost:8000
-> Consume Folder: Drop files into ./local-deploy/consume/ to start OCR processing.
-> Data Persistence: Your documents and database are stored in Docker volumes managed by the stack.
-> Verification Checklist:
-> 
->  Log in at localhost:8000.
->  Drop a PDF into local-deploy/consume/.
->  Verify the document appears in the UI and is searchable via OCR text.
-> Phase 2: QiNote Export Bridge
-> I have created a standalone Python script in the qinote-bridge/ folder that monitors for documents tagged Ready_for_QiNote and exports them to a QiNote vault structure.
-> 
-> 1. Setup & Configuration In the qinote-bridge folder:
-> 
-> API Token: Go to My Profile in Paperless-ngx and generate an API Token.
-> .env.bridge: Paste your token into PAPERLESS_TOKEN.
-> 2. Install Script Dependencies
-> 
-> bash
-> pip install requests python-dotenv
-> 3. Run Export
-> 
-> bash
-> python qinote-bridge/export_bridge.py
-> Bridge Features:
-> 
-> Idempotent: Won't redownload or duplicate files already in the vault.
-> Structure: Saves to qinote_vault/documents/{YYYY}/{YYYY-MM-DD}__title__paperless-{id}.pdf.
-> Sidecar: Generates a .md file with YAML front matter including title, date, correspondent, and OCR text.
-> Files Created/Modified
-> Path	Description
-> local-deploy/docker-compose.yml	Paperless-ngx + Postgres + Redis stack.
-> local-deploy/docker-compose.env	Configured with your requested Timezone and OCR defaults.
-> qinote-bridge/export_bridge.py	The Python bridge script.
-> qinote-bridge/.env.bridge	Configuration for the bridge (URL, Token, Tag).
-> qinote-bridge/BRIDGE_README.md	Detailed bridge usage instructions.
-> Good
-> Bad
+> here is the message from gemini. I have completed the setup for Paperless-ngx and the QiNote export bridge. Since I cannot directly access your Docker daemon from this environment, I have prepared the configuration files locally so you can bring them up with a single command.
+
+> 
+
+> Phase 1: Run Paperless-ngx Locally
+
+> I have created a local-deploy folder with the recommended PostgreSQL stack and your requested defaults (America/Chicago, OCR enabled, etc.).
+
+> 
+
+> 1. Bring up the stack Open your terminal (PowerShell or Bash) and run:
+
+> 
+
+> powershell
+
+> cd local-deploy
+
+> docker compose up -d
+
+> 2. Create your Admin Account Once the containers are running, create your superuser:
+
+> 
+
+> powershell
+
+> docker exec -it local-deploy-webserver-1 python3 manage.py createsuperuser
+
+> 3. Access & Usage
+
+> 
+
+> URL: http://localhost:8000
+
+> Consume Folder: Drop files into ./local-deploy/consume/ to start OCR processing.
+
+> Data Persistence: Your documents and database are stored in Docker volumes managed by the stack.
+
+> Verification Checklist:
+
+> 
+
+>  Log in at localhost:8000.
+
+>  Drop a PDF into local-deploy/consume/.
+
+>  Verify the document appears in the UI and is searchable via OCR text.
+
+> Phase 2: QiNote Export Bridge
+
+> I have created a standalone Python script in the qinote-bridge/ folder that monitors for documents tagged Ready_for_QiNote and exports them to a QiNote vault structure.
+
+> 
+
+> 1. Setup & Configuration In the qinote-bridge folder:
+
+> 
+
+> API Token: Go to My Profile in Paperless-ngx and generate an API Token.
+
+> .env.bridge: Paste your token into PAPERLESS_TOKEN.
+
+> 2. Install Script Dependencies
+
+> 
+
+> bash
+
+> pip install requests python-dotenv
+
+> 3. Run Export
+
+> 
+
+> bash
+
+> python qinote-bridge/export_bridge.py
+
+> Bridge Features:
+
+> 
+
+> Idempotent: Won't redownload or duplicate files already in the vault.
+
+> Structure: Saves to qinote_vault/documents/{YYYY}/{YYYY-MM-DD}__title__paperless-{id}.pdf.
+
+> Sidecar: Generates a .md file with YAML front matter including title, date, correspondent, and OCR text.
+
+> Files Created/Modified
+
+> Path	Description
+
+> local-deploy/docker-compose.yml	Paperless-ngx + Postgres + Redis stack.
+
+> local-deploy/docker-compose.env	Configured with your requested Timezone and OCR defaults.
+
+> qinote-bridge/export_bridge.py	The Python bridge script.
+
+> qinote-bridge/.env.bridge	Configuration for the bridge (URL, Token, Tag).
+
+> qinote-bridge/BRIDGE_README.md	Detailed bridge usage instructions.
+
+> Good
+
+> Bad
+
 > Good response , what from here to i give gemini about what we have set.
 
 ### Assistant
@@ -2004,24 +2057,42 @@ canonical_ref: ""
 > If you want, paste Gemini’s **next response** and I’ll do a **line-by-line validation** before you touch anything.
 
 ### User
-> what should my settings be there. Application Configuration 
-> General Settings
-> OCR Settings
-> Barcode Settings
-> Output Type 
-> Language 
-> Pages 
-> Mode 
-> Skip Archive File 
-> Image DPI 
-> Clean 
-> Deskew 
-> Enable  
-> Rotate Pages 
-> Enable  
-> Rotate Pages Threshold 
-> Max Image Pixels 
-> Color Conversion Strategy 
+> what should my settings be there. Application Configuration 
+
+> General Settings
+
+> OCR Settings
+
+> Barcode Settings
+
+> Output Type 
+
+> Language 
+
+> Pages 
+
+> Mode 
+
+> Skip Archive File 
+
+> Image DPI 
+
+> Clean 
+
+> Deskew 
+
+> Enable  
+
+> Rotate Pages 
+
+> Enable  
+
+> Rotate Pages Threshold 
+
+> Max Image Pixels 
+
+> Color Conversion Strategy 
+
 > OCR Arguments
 
 ### Assistant
@@ -2217,1222 +2288,2438 @@ canonical_ref: ""
 > Say which one.
 
 ### User
-> Skip to content
-> Paperless-ngx
-> Configuration
-> 
-> 
-> 
-> logoPaperless-ngx
->  paperless-ngx/paperless-ngx
-> v2.20.3
-> 35.3k
-> 2.2k
-> Home
-> Setup
-> Basic Usage
-> Configuration
-> Table of contents
-> Required services
-> Redis Broker
-> Database
-> Optional Services
-> Tika
-> Email Parsing
-> Paths and folders
-> Logging
-> Hosting & Security
-> Authentication & SSO
-> OCR settings
-> Software tweaks
-> Document Consumption
-> Polling
-> iNotify
-> Workflow webhooks
-> Incoming Mail
-> Email OAuth
-> Encrypted Emails
-> Barcodes
-> Audit Trail
-> Collate Double-Sided Documents
-> Trash
-> Binaries
-> Docker-specific options
-> Frontend Settings
-> Email sending
-> Administration
-> Advanced Topics
-> REST API
-> Development
-> FAQs
-> Troubleshooting
-> Changelog
-> Configuration
-> Paperless provides a wide range of customizations. Depending on how you run paperless, these settings have to be defined in different places.
-> 
-> Certain configuration options may be set via the UI. This currently includes common OCR related settings and some frontend settings. If set, these will take preference over the settings via environment variables. If not set, the environment setting or applicable default will be utilized instead.
-> 
-> If you run paperless on docker, paperless.conf is not used. Rather, configure paperless by copying necessary options to docker-compose.env.
-> 
-> If you are running paperless on anything else, paperless will search for the configuration file in these locations and use the first one it finds:
-> 
-> The environment variable PAPERLESS_CONFIGURATION_PATH
-> /path/to/paperless/paperless.conf
-> /etc/paperless.conf
-> /usr/local/etc/paperless.conf
-> Required services
-> Redis Broker
-> PAPERLESS_REDIS=<url>
-> This is required for processing scheduled tasks such as email fetching, index optimization and for training the automatic document matcher.
-> 
-> If your Redis server needs login credentials PAPERLESS_REDIS = redis://<username>:<password>@<host>:<port>
-> With the requirepass option PAPERLESS_REDIS = redis://:<password>@<host>:<port>
-> To include the redis database index PAPERLESS_REDIS = redis://<username>:<password>@<host>:<port>/<DBIndex>
-> More information on securing your Redis Instance.
-> 
-> Defaults to redis://localhost:6379.
-> 
-> PAPERLESS_REDIS_PREFIX=<prefix>
-> Prefix to be used in Redis for keys and channels. Useful for sharing one Redis server among multiple Paperless instances.
-> 
-> Defaults to no prefix.
-> 
-> Database
-> By default, Paperless uses SQLite with a database stored at data/db.sqlite3. To switch to PostgreSQL or MariaDB, set PAPERLESS_DBHOST and optionally configure other database-related environment variables.
-> 
-> PAPERLESS_DBHOST=<hostname>
-> If unset, Paperless uses SQLite by default.
-> 
-> Set PAPERLESS_DBHOST to switch to PostgreSQL or MariaDB instead.
-> 
-> PAPERLESS_DBENGINE=<engine_name>
-> Optional. Specifies the database engine to use when connecting to a remote database. Available options are postgresql and mariadb.
-> 
-> Defaults to postgresql if PAPERLESS_DBHOST is set.
-> 
-> Warning
-> 
-> Using MariaDB comes with some caveats. See MySQL Caveats.
-> 
-> PAPERLESS_DBPORT=<port>
-> Port to use when connecting to PostgreSQL or MariaDB.
-> 
-> Default is 5432 for PostgreSQL and 3306 for MariaDB.
-> 
-> PAPERLESS_DBNAME=<name>
-> Name of the database to connect to when using PostgreSQL or MariaDB.
-> 
-> Defaults to "paperless".
-> 
-> PAPERLESS_DBUSER=<name>
-> Username for authenticating with the PostgreSQL or MariaDB database.
-> 
-> Defaults to "paperless".
-> 
-> PAPERLESS_DBPASS=<password>
-> Password for the PostgreSQL or MariaDB database user.
-> 
-> Defaults to "paperless".
-> 
-> PAPERLESS_DBSSLMODE=<mode>
-> SSL mode to use when connecting to PostgreSQL or MariaDB.
-> 
-> See the official documentation about sslmode for PostgreSQL.
-> 
-> See the official documentation about sslmode for MySQL and MariaDB.
-> 
-> Note: SSL mode values differ between PostgreSQL and MariaDB.
-> 
-> Default is prefer for PostgreSQL and PREFERRED for MariaDB.
-> 
-> PAPERLESS_DBSSLROOTCERT=<ca-path>
-> Path to the SSL root certificate used to verify the database server.
-> 
-> See the official documentation about sslmode for PostgreSQL. Changes the location of root.crt.
-> 
-> See the official documentation about sslmode for MySQL and MariaDB.
-> 
-> Defaults to unset, using the standard location in the home directory.
-> 
-> PAPERLESS_DBSSLCERT=<client-cert-path>
-> Path to the client SSL certificate used when connecting securely.
-> 
-> See the official documentation about sslmode for PostgreSQL.
-> 
-> See the official documentation about sslmode for MySQL and MariaDB.
-> 
-> Changes the location of postgresql.crt.
-> 
-> Defaults to unset, using the standard location in the home directory.
-> 
-> PAPERLESS_DBSSLKEY=<client-cert-key>
-> Path to the client SSL private key used when connecting securely.
-> 
-> See the official documentation about sslmode for PostgreSQL.
-> 
-> See the official documentation about sslmode for MySQL and MariaDB.
-> 
-> Changes the location of postgresql.key.
-> 
-> Defaults to unset, using the standard location in the home directory.
-> 
-> PAPERLESS_DB_TIMEOUT=<int>
-> Sets how long a database connection should wait before timing out.
-> 
-> For SQLite, this sets how long to wait if the database is locked. For PostgreSQL or MariaDB, this sets the connection timeout.
-> 
-> Defaults to unset, which uses Django’s built-in defaults.
-> 
-> PAPERLESS_DB_POOLSIZE=<int>
-> Defines the maximum number of database connections to keep in the pool.
-> 
-> Only applies to PostgreSQL. This setting is ignored for other database engines.
-> 
-> The value must be greater than or equal to 1 to be used. Defaults to unset, which disables connection pooling.
-> 
-> Note
-> 
-> A pool of 8-10 connections per worker is typically sufficient. If you encounter error messages such as couldn't get a connection or database connection timeouts, you probably need to increase the pool size.
-> 
-> Warning
-> 
-> Make sure your PostgreSQL max_connections setting is large enough to handle the connection pools: (NB_PAPERLESS_WORKERS + NB_CELERY_WORKERS) × POOL_SIZE + SAFETY_MARGIN. For example, with 4 Paperless workers and 2 Celery workers, and a pool size of 8:`(4 + 2) × 8 + 10 = 58, so max_connections = 60 (or even more) is appropriate.
-> 
-> This assumes only Paperless-ngx connects to your PostgreSQL instance. If you have other applications, you should increase max_connections accordingly.
-> 
-> PAPERLESS_DB_READ_CACHE_ENABLED=<bool>
-> Caches the database read query results into Redis. This can significantly improve application response times by caching database queries, at the cost of slightly increased memory usage.
-> 
-> Defaults to false.
-> 
-> Danger
-> 
-> Do not modify the database outside the application while it is running. This includes actions such as restoring a backup, upgrading the database, or performing manual inserts. All external modifications must be done only when the application is stopped. After making any such changes, you must invalidate the DB read cache using the invalidate_cachalot management command.
-> 
-> PAPERLESS_READ_CACHE_TTL=<int>
-> Specifies how long (in seconds) read data should be cached.
-> 
-> Allowed values are between 1 (one second) and 31536000 (one year). Defaults to 3600 (one hour).
-> 
-> Warning
-> 
-> A high TTL increases memory usage over time. Memory may be used until end of TTL, even if the cache is invalidated with the invalidate_cachalot command.
-> 
-> In case of an out-of-memory (OOM) situation, Redis may stop accepting new data — including cache entries, scheduled tasks, and documents to consume. If your system has limited RAM, consider configuring a dedicated Redis instance for the read cache, with a memory limit and the eviction policy set to allkeys-lru. For more details, refer to the Redis eviction policy documentation, and see the PAPERLESS_READ_CACHE_REDIS_URL setting to specify a separate Redis broker.
-> 
-> PAPERLESS_READ_CACHE_REDIS_URL=<url>
-> Defines the Redis instance used for the read cache.
-> 
-> Defaults to None.
-> 
-> Note
-> 
-> If this value is not set, the same Redis instance used for scheduled tasks will be used for caching as well.
-> 
-> Optional Services
-> Tika
-> Paperless can make use of Tika and Gotenberg for parsing and converting "Office" documents (such as ".doc", ".xlsx" and ".odt"). Tika and Gotenberg are also needed to allow parsing of E-Mails (.eml).
-> 
-> If you wish to use this, you must provide a Tika server and a Gotenberg server, configure their endpoints, and enable the feature.
-> 
-> PAPERLESS_TIKA_ENABLED=<bool>
-> Enable (or disable) the Tika parser.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_TIKA_ENDPOINT=<url>
-> Set the endpoint URL where Paperless can reach your Tika server.
-> 
-> Defaults to "http://localhost:9998".
-> 
-> PAPERLESS_TIKA_GOTENBERG_ENDPOINT=<url>
-> Set the endpoint URL where Paperless can reach your Gotenberg server.
-> 
-> Defaults to "http://localhost:3000".
-> 
-> If you run paperless on docker, you can add those services to the Docker Compose file (see the provided docker-compose.sqlite-tika.yml file for reference).
-> 
-> Add all three configuration parameters to your configuration. If using Docker, this may be the environment key of the webserver or a docker-compose.env file. Bare metal installations may have a .conf file containing the configuration parameters. Be sure to use the correct format and watch out for indentation if editing the YAML file.
-> 
-> Email Parsing
-> PAPERLESS_EMAIL_PARSE_DEFAULT_LAYOUT=<int>
-> The default layout to use for emails that are consumed as documents. Must be one of the integer choices below. Note that mail rules can specify this setting, thus this fallback is used for the default selection and for .eml files consumed by other means.
-> 
-> 1 = Text, then HTML
-> 2 = HTML, then text
-> 3 = HTML only
-> 4 = Text only
-> Paths and folders
-> PAPERLESS_CONSUMPTION_DIR=<path>
-> This is where your documents should go to be consumed. Make sure that it exists and that the user running the paperless service can read/write its contents before you start Paperless.
-> 
-> Don't change this when using docker, as it only changes the path within the container. Change the local consumption directory in the docker-compose.yml file instead.
-> 
-> Defaults to "../consume/", relative to the "src" directory.
-> 
-> PAPERLESS_DATA_DIR=<path>
-> This is where paperless stores all its data (search index, SQLite database, classification model, etc).
-> 
-> Defaults to "../data/", relative to the "src" directory.
-> 
-> PAPERLESS_EMPTY_TRASH_DIR=<path>
-> When documents are deleted (e.g. after emptying the trash) the original files will be moved here instead of being removed from the filesystem. Only the original version is kept.
-> 
-> This must be writeable by the user running paperless. When running inside docker, ensure that this path is within a permanent volume (such as "../media/trash") so it won't get lost on upgrades.
-> 
-> Note that the directory must exist prior to using this setting.
-> 
-> Defaults to empty (i.e. really delete files).
-> 
-> This setting was previously named PAPERLESS_TRASH_DIR.
-> 
-> PAPERLESS_MEDIA_ROOT=<path>
-> This is where your documents and thumbnails are stored.
-> 
-> You can set this and PAPERLESS_DATA_DIR to the same folder to have paperless store all its data within the same volume.
-> 
-> Defaults to "../media/", relative to the "src" directory.
-> 
-> PAPERLESS_STATICDIR=<path>
-> Override the default STATIC_ROOT here. This is where all static files created using "collectstatic" manager command are stored.
-> 
-> Unless you're doing something fancy, there is no need to override this. If this is changed, you may need to run collectstatic again.
-> 
-> Defaults to "../static/", relative to the "src" directory.
-> 
-> PAPERLESS_FILENAME_FORMAT=<format>
-> Changes the filenames paperless uses to store documents in the media directory. See File name handling for details.
-> 
-> Default is none, which disables this feature.
-> 
-> PAPERLESS_FILENAME_FORMAT_REMOVE_NONE=<bool>
-> Tells paperless to replace placeholders in PAPERLESS_FILENAME_FORMAT that would resolve to 'none' to be omitted from the resulting filename. This also holds true for directory names. See File name handling for details.
-> 
-> Defaults to false which disables this feature.
-> 
-> PAPERLESS_LOGGING_DIR=<path>
-> This is where paperless will store log files.
-> 
-> Defaults to PAPERLESS_DATA_DIR/log/.
-> 
-> PAPERLESS_NLTK_DIR=<path>
-> This is where paperless will search for the data required for NLTK processing, if you are using it. If you are using the Docker image, this should not be changed, as the data is included in the image already.
-> Previously, the location defaulted to PAPERLESS_DATA_DIR/nltk. Unless you are using this in a bare metal install or other setup, this folder is no longer needed and can be removed manually.
-> 
-> Defaults to /usr/share/nltk_data
-> 
-> PAPERLESS_MODEL_FILE=<path>
-> This is where paperless will store the classification model.
-> 
-> Defaults to PAPERLESS_DATA_DIR/classification_model.pickle.
-> 
-> Logging
-> PAPERLESS_LOGROTATE_MAX_SIZE=<num>
-> Maximum file size for log files before they are rotated, in bytes.
-> 
-> Defaults to 1 MiB.
-> 
-> PAPERLESS_LOGROTATE_MAX_BACKUPS=<num>
-> Number of rotated log files to keep.
-> 
-> Defaults to 20.
-> 
-> Hosting & Security
-> PAPERLESS_SECRET_KEY=<key>
-> Paperless uses this to make session tokens. If you expose paperless on the internet, you need to change this, since the default secret is well known.
-> 
-> Use any sequence of characters. The more, the better. You don't need to remember this. Just face-roll your keyboard.
-> 
-> Default is listed in the file src/paperless/settings.py.
-> 
-> PAPERLESS_URL=<url>
-> This setting can be used to set the three options below (ALLOWED_HOSTS, CORS_ALLOWED_HOSTS and CSRF_TRUSTED_ORIGINS). If the other options are set the values will be combined with this one. Do not include a trailing slash. E.g. https://paperless.domain.com
-> 
-> Defaults to empty string, leaving the other settings unaffected.
-> 
-> Note
-> 
-> This value cannot contain a path (e.g. domain.com/path), even if you are installing paperless-ngx at a subpath.
-> 
-> PAPERLESS_CSRF_TRUSTED_ORIGINS=<comma-separated-list>
-> A list of trusted origins for unsafe requests (e.g. POST). As of Django 4.0 this is required to access the Django admin via the web. See the Django project documentation on the settings
-> 
-> Can also be set using PAPERLESS_URL (see above).
-> 
-> Defaults to empty string, which does not add any origins to the trusted list.
-> 
-> PAPERLESS_ALLOWED_HOSTS=<comma-separated-list>
-> If you're planning on putting Paperless on the open internet, then you really should set this value to the domain name you're using. Failing to do so leaves you open to HTTP host header attacks. You can read more about this in the Django project's documentation
-> 
-> Just remember that this is a comma-separated list, so "example.com" is fine, as is "example.com,www.example.com", but NOT " example.com" or "example.com,"
-> 
-> Can also be set using PAPERLESS_URL (see above).
-> 
-> "localhost" is always allowed for docker healthcheck
-> 
-> Defaults to "*", which is all hosts.
-> 
-> PAPERLESS_CORS_ALLOWED_HOSTS=<comma-separated-list>
-> You need to add your servers to the list of allowed hosts that can do CORS calls. Set this to your public domain name.
-> 
-> Can also be set using PAPERLESS_URL (see above).
-> 
-> Defaults to "http://localhost:8000".
-> 
-> PAPERLESS_TRUSTED_PROXIES=<comma-separated-list>
-> This may be needed to prevent IP address spoofing if you are using e.g. fail2ban with log entries for failed authorization attempts. Value should be IP address(es).
-> 
-> Defaults to empty string.
-> 
-> PAPERLESS_FORCE_SCRIPT_NAME=<path>
-> To host paperless under a subpath url like example.com/paperless you set this value to /paperless. No trailing slash!
-> 
-> Defaults to none, which hosts paperless at "/".
-> 
-> PAPERLESS_STATIC_URL=<path>
-> Override the STATIC_URL here. Unless you're hosting Paperless off a specific path like /paperless/, you probably don't need to change this. If you do change it, be sure to include the trailing slash.
-> 
-> Defaults to "/static/".
-> 
-> Note
-> 
-> When hosting paperless behind a reverse proxy like Traefik or Nginx at a subpath e.g. example.com/paperlessngx you will also need to set PAPERLESS_FORCE_SCRIPT_NAME (see above).
-> 
-> PAPERLESS_AUTO_LOGIN_USERNAME=<username>
-> Specify a username here so that paperless will automatically perform login with the selected user.
-> 
-> Danger
-> 
-> Do not use this when exposing paperless on the internet. There are no checks in place that would prevent you from doing this.
-> 
-> Defaults to none, which disables this feature.
-> 
-> PAPERLESS_ADMIN_USER=<username>
-> If this environment variable is specified, Paperless automatically creates a superuser with the provided username at start. This is useful in cases where you can not run the createsuperuser command separately, such as Kubernetes or AWS ECS.
-> 
-> Requires PAPERLESS_ADMIN_PASSWORD be set.
-> 
-> Note
-> 
-> This will not change an existing [super]user's password, nor will it recreate a user that already exists. You can leave this throughout the lifecycle of the containers.
-> 
-> PAPERLESS_ADMIN_MAIL=<email>
-> (Optional) Specify superuser email address. Only used when PAPERLESS_ADMIN_USER is set.
-> 
-> Defaults to root@localhost.
-> 
-> PAPERLESS_ADMIN_PASSWORD=<password>
-> Only used when PAPERLESS_ADMIN_USER is set. This will be the password of the automatically created superuser.
-> PAPERLESS_COOKIE_PREFIX=<str>
-> Specify a prefix that is added to the cookies used by paperless to identify the currently logged in user. This is useful for when you're running two instances of paperless on the same host.
-> 
-> After changing this, you will have to login again.
-> 
-> Defaults to "", which does not alter the cookie names.
-> 
-> PAPERLESS_ENABLE_HTTP_REMOTE_USER=<bool>
-> Allows authentication via HTTP_REMOTE_USER which is used by some SSO applications.
-> 
-> Warning
-> 
-> This will allow authentication by simply adding a Remote-User: <username> header to a request. Use with care! You especially must ensure that any such header is not passed from external requests to your reverse-proxy to paperless (that would effectively bypass all authentication).
-> 
-> If you're exposing paperless to the internet directly (i.e. without a reverse proxy), do not use this.
-> 
-> Also see the warning in the official documentation.
-> 
-> Defaults to "false" which disables this feature.
-> 
-> PAPERLESS_ENABLE_HTTP_REMOTE_USER_API=<bool>
-> Allows authentication via HTTP_REMOTE_USER directly against the API
-> 
-> Warning
-> 
-> See the warning above about securing your installation when using remote user header authentication. This setting is separate from PAPERLESS_ENABLE_HTTP_REMOTE_USER to avoid introducing a security vulnerability to existing reverse proxy setups. As above, ensure that your reverse proxy does not simply pass the Remote-User header from the internet to paperless.
-> 
-> Defaults to "false" which disables this feature.
-> 
-> PAPERLESS_HTTP_REMOTE_USER_HEADER_NAME=<str>
-> If "PAPERLESS_ENABLE_HTTP_REMOTE_USER" or PAPERLESS_ENABLE_HTTP_REMOTE_USER_API are enabled, this property allows to customize the name of the HTTP header from which the authenticated username is extracted. Values are in terms of HttpRequest.META. Thus, the configured value must start with HTTP* followed by the normalized actual header name.
-> 
-> Defaults to "HTTP_REMOTE_USER".
-> 
-> PAPERLESS_LOGOUT_REDIRECT_URL=<str>
-> URL to redirect the user to after a logout. This can be used together with PAPERLESS_ENABLE_HTTP_REMOTE_USER and SSO to redirect the user back to the SSO application's logout page to complete the logout process.
-> 
-> Defaults to None, which disables this feature.
-> 
-> PAPERLESS_USE_X_FORWARD_HOST=<bool>
-> Configures the Django setting USE_X_FORWARDED_HOST which may be needed for hosting behind a proxy.
-> 
-> Defaults to False
-> 
-> PAPERLESS_USE_X_FORWARD_PORT=<bool>
-> Configures the Django setting USE_X_FORWARDED_PORT which may be needed for hosting behind a proxy.
-> 
-> Defaults to False
-> 
-> PAPERLESS_PROXY_SSL_HEADER=<json-list>
-> Configures the Django setting SECURE_PROXY_SSL_HEADER which may be needed for hosting behind a proxy. The two values in the list will form the tuple of HTTP header/value expected by Django, eg '["HTTP_X_FORWARDED_PROTO", "https"]'.
-> 
-> Defaults to None
-> 
-> Warning
-> 
-> Settings this value has security implications. Read the Django documentation and be sure you understand its usage before setting it.
-> 
-> PAPERLESS_EMAIL_CERTIFICATE_LOCATION=<path>
-> Configures an additional SSL certificate file containing a certificate or certificate chain which should be trusted for validating SSL connections against mail providers. This is for use with self-signed certificates against local IMAP servers.
-> 
-> Defaults to None.
-> 
-> Warning
-> 
-> Settings this value has security implications for the security of your email. Understand what it does and be sure you need to before setting.
-> 
-> Authentication & SSO
-> PAPERLESS_ACCOUNT_ALLOW_SIGNUPS=<bool>
-> Allow users to signup for a new Paperless-ngx account.
-> 
-> Defaults to False
-> 
-> PAPERLESS_ACCOUNT_DEFAULT_GROUPS=<comma-separated-list>
-> A list of group names that users will be added to when they sign up for a new account. Groups listed here must already exist.
-> 
-> Defaults to None
-> 
-> PAPERLESS_SOCIALACCOUNT_PROVIDERS=<json>
-> This variable is used to setup login and signup via social account providers which are compatible with django-allauth. See the corresponding django-allauth documentation for a list of provider configurations. You will also need to include the relevant Django 'application' inside the PAPERLESS_APPS setting to activate that specific authentication provider (e.g. allauth.socialaccount.providers.openid_connect for the OIDC Connect provider).
-> 
-> Defaults to None, which does not enable any third party authentication systems.
-> 
-> PAPERLESS_SOCIAL_AUTO_SIGNUP=<bool>
-> Attempt to signup the user using retrieved email, username etc from the third party authentication system. See the corresponding django-allauth documentation
-> 
-> Defaults to False
-> 
-> PAPERLESS_SOCIALACCOUNT_ALLOW_SIGNUPS=<bool>
-> Allow users to signup for a new Paperless-ngx account using any setup third party authentication systems.
-> 
-> Defaults to True
-> 
-> PAPERLESS_SOCIAL_ACCOUNT_SYNC_GROUPS=<bool>
-> Sync groups from the third party authentication system (e.g. OIDC) to Paperless-ngx. When enabled, users will be added or removed from groups based on their group membership in the third party authentication system. Groups must already exist in Paperless-ngx and have the same name as in the third party authentication system. Groups are updated upon logging in via the third party authentication system, see the corresponding django-allauth documentation.
-> In order to pass groups from the authentication system you will need to update your PAPERLESS_SOCIALACCOUNT_PROVIDERS setting by adding a top-level "SCOPES" setting which includes "groups", e.g.:
-> 
-> {"openid_connect":{"SCOPE": ["openid","profile","email","groups"]...
-> Defaults to False
-> 
-> PAPERLESS_SOCIAL_ACCOUNT_DEFAULT_GROUPS=<comma-separated-list>
-> A list of group names that users who signup via social accounts will be added to upon signup. Groups listed here must already exist. If both the PAPERLESS_ACCOUNT_DEFAULT_GROUPS setting and this setting are used, the user will be added to both sets of groups.
-> 
-> Defaults to None
-> 
-> PAPERLESS_ACCOUNT_DEFAULT_HTTP_PROTOCOL=<string>
-> The protocol used when generating URLs, e.g. login callback URLs. See the corresponding django-allauth documentation
-> 
-> Defaults to 'https'
-> 
-> PAPERLESS_ACCOUNT_EMAIL_VERIFICATION=<string>
-> Determines whether email addresses are verified during signup (as performed by Django allauth). See the relevant paperless settings and the allauth docs
-> 
-> Defaults to 'optional'
-> 
-> Note
-> 
-> If you do not have a working email server set up this will be set to 'none'.
-> 
-> PAPERLESS_ACCOUNT_EMAIL_UNKNOWN_ACCOUNTS=<bool>
-> See the relevant django-allauth documentation
-> 
-> Defaults to True (from allauth)
-> 
-> PAPERLESS_DISABLE_REGULAR_LOGIN=<bool>
-> Disables the regular frontend username / password login, i.e. once you have setup SSO. Note that this setting does not disable the Django admin login nor logging in with local credentials via the API. To prevent access to the Django admin, consider blocking /admin/ in your web server or reverse proxy configuration.
-> 
-> You can optionally also automatically redirect users to the SSO login with PAPERLESS_REDIRECT_LOGIN_TO_SSO
-> 
-> Defaults to False
-> 
-> PAPERLESS_REDIRECT_LOGIN_TO_SSO=<bool>
-> When this setting is enabled users will automatically be redirected (using javascript) to the first SSO provider login. You may still want to disable the frontend login form for clarity.
-> 
-> Defaults to False
-> 
-> PAPERLESS_ACCOUNT_SESSION_REMEMBER=<bool>
-> If false, sessions will expire at browser close, if true will use PAPERLESS_SESSION_COOKIE_AGE for expiration. See the corresponding django-allauth documentation
-> 
-> Defaults to True
-> 
-> PAPERLESS_SESSION_COOKIE_AGE=<int>
-> Login session cookie expiration. Applies if PAPERLESS_ACCOUNT_SESSION_REMEMBER is enabled. See the corresponding django documentation
-> 
-> Defaults to 1209600 (2 weeks)
-> 
-> OCR settings
-> Paperless uses OCRmyPDF for performing OCR on documents and images. Paperless uses sensible defaults for most settings, but all of them can be configured to your needs.
-> 
-> PAPERLESS_OCR_LANGUAGE=<lang>
-> Customize the language that paperless will attempt to use when parsing documents.
-> 
-> It should be a 3-letter code, see the list of languages Tesseract supports.
-> 
-> Set this to the language most of your documents are written in.
-> 
-> This can be a combination of multiple languages such as deu+eng, in which case Tesseract will use whatever language matches best. Keep in mind that Tesseract uses much more CPU time with multiple languages enabled.
-> 
-> If you are including languages that are not installed by default, you will need to also set PAPERLESS_OCR_LANGUAGES for docker deployments or install the tesseract language packages manually for bare metal installations.
-> 
-> Defaults to "eng".
-> 
-> Note
-> 
-> If your language contains a '-' such as chi-sim, you must use chi_sim.
-> 
-> PAPERLESS_OCR_MODE=<mode>
-> Tell paperless when and how to perform ocr on your documents. Three modes are available:
-> 
-> skip: Paperless skips all pages and will perform ocr only on pages where no text is present. This is the safest option.
-> 
-> redo: Paperless will OCR all pages of your documents and attempt to replace any existing text layers with new text. This will be useful for documents from scanners that already performed OCR with insufficient results. It will also perform OCR on purely digital documents.
-> 
-> This option may fail on some documents that have features that cannot be removed, such as forms. In this case, the text from the document is used instead.
-> 
-> force: Paperless rasterizes your documents, converting any text into images and puts the OCRed text on top. This works for all documents, however, the resulting document may be significantly larger and text won't appear as sharp when zoomed in.
-> 
-> The default is skip, which only performs OCR when necessary and always creates archived documents.
-> 
-> Read more about this in the OCRmyPDF documentation.
-> 
-> PAPERLESS_OCR_SKIP_ARCHIVE_FILE=<mode>
-> Specify when you would like paperless to skip creating an archived version of your documents. This is useful if you don't want to have two almost-identical versions of your documents in the media folder.
-> 
-> never: Never skip creating an archived version.
-> with_text: Skip creating an archived version for documents that already have embedded text.
-> always: Always skip creating an archived version.
-> The default is never.
-> 
-> PAPERLESS_OCR_CLEAN=<mode>
-> Tells paperless to use unpaper to clean any input document before sending it to tesseract. This uses more resources, but generally results in better OCR results. The following modes are available:
-> 
-> clean: Apply unpaper.
-> clean-final: Apply unpaper, and use the cleaned images to build the output file instead of the original images.
-> none: Do not apply unpaper.
-> Defaults to clean.
-> 
-> Note
-> 
-> clean-final is incompatible with ocr mode redo. When both clean-final and the ocr mode redo is configured, clean is used instead.
-> 
-> PAPERLESS_OCR_DESKEW=<bool>
-> Tells paperless to correct skewing (slight rotation of input images mainly due to improper scanning)
-> 
-> Defaults to true, which enables this feature.
-> 
-> Note
-> 
-> Deskewing is incompatible with ocr mode redo. Deskewing will get disabled automatically if redo is used as the ocr mode.
-> 
-> PAPERLESS_OCR_ROTATE_PAGES=<bool>
-> Tells paperless to correct page rotation (90°, 180° and 270° rotation).
-> 
-> If you notice that paperless is not rotating incorrectly rotated pages (or vice versa), try adjusting the threshold up or down (see below).
-> 
-> Defaults to true, which enables this feature.
-> 
-> PAPERLESS_OCR_ROTATE_PAGES_THRESHOLD=<num>
-> Adjust the threshold for automatic page rotation by PAPERLESS_OCR_ROTATE_PAGES. This is an arbitrary value reported by tesseract. "15" is a very conservative value, whereas "2" is a very aggressive option and will often result in correctly rotated pages being rotated as well.
-> 
-> Defaults to "12".
-> 
-> PAPERLESS_OCR_OUTPUT_TYPE=<type>
-> Specify the the type of PDF documents that paperless should produce.
-> 
-> pdf: Modify the PDF document as little as possible.
-> pdfa: Convert PDF documents into PDF/A-2b documents, which is a subset of the entire PDF specification and meant for storing documents long term.
-> pdfa-1, pdfa-2, pdfa-3 to specify the exact version of PDF/A you wish to use.
-> If not specified, pdfa is used. Remember that paperless also keeps the original input file as well as the archived version.
-> 
-> PAPERLESS_OCR_PAGES=<num>
-> Tells paperless to use only the specified amount of pages for OCR. Documents with less than the specified amount of pages get OCR'ed completely.
-> 
-> Specifying 1 here will only use the first page.
-> 
-> The value must be greater than or equal to 1 to be used.
-> 
-> When combined with PAPERLESS_OCR_MODE=redo or PAPERLESS_OCR_MODE=force, paperless will not modify any text it finds on excluded pages and copy it verbatim.
-> 
-> Defaults to unset, which disables this feature and always uses all pages.
-> 
-> PAPERLESS_OCR_IMAGE_DPI=<num>
-> Paperless will OCR any images you put into the system and convert them into PDF documents. This is useful if your scanner produces images. In order to do so, paperless needs to know the DPI of the image. Most images from scanners will have this information embedded and paperless will detect and use that information. In case this fails, it uses this value as a fallback.
-> 
-> Set this to the DPI your scanner produces images at.
-> 
-> Defaults to unset, which will automatically calculate image DPI so that the produced PDF documents are A4 sized.
-> 
-> PAPERLESS_OCR_MAX_IMAGE_PIXELS=<num>
-> Paperless will raise a warning when OCRing images which are over this limit and will not OCR images which are more than twice this limit. Note this does not prevent the document from being consumed, but could result in missing text content.
-> 
-> If unset, will default to the value determined by Pillow.
-> 
-> Setting this value to 0 will entirely disable the limit. See the below warning.
-> 
-> Note
-> 
-> Increasing this limit could cause Paperless to consume additional resources when consuming a file. Be sure you have sufficient system resources.
-> 
-> Warning
-> 
-> The limit is intended to prevent malicious files from consuming system resources and causing crashes and other errors. Only change this value if you are certain your documents are not malicious and you need the text which was not OCRed
-> 
-> PAPERLESS_OCR_COLOR_CONVERSION_STRATEGY=<RGB>
-> Controls the Ghostscript color conversion strategy when creating the archive file. This setting will only be utilized if the output is a version of PDF/A.
-> 
-> Valid options are CMYK, Gray, LeaveColorUnchanged, RGB or UseDeviceIndependentColor.
-> 
-> You can find more on the settings here in the Ghostscript documentation.
-> 
-> Warning
-> 
-> Utilizing some of the options may result in errors when creating archive files from PDFs.
-> 
-> PAPERLESS_OCR_USER_ARGS=<json>
-> OCRmyPDF offers many more options. Use this parameter to specify any additional arguments you wish to pass to OCRmyPDF. Since Paperless uses the API of OCRmyPDF, you have to specify these in a format that can be passed to the API. See the API reference of OCRmyPDF for valid parameters. All command line options are supported, but they use underscores instead of dashes.
-> 
-> Warning
-> 
-> Paperless has been tested to work with the OCR options provided above. There are many options that are incompatible with each other, so specifying invalid options may prevent paperless from consuming any documents. Use with caution!
-> 
-> Specify arguments as a JSON dictionary. Keep note of lower case booleans and double quoted parameter names and strings. Examples:
-> 
-> {"deskew": true, "optimize": 3, "unpaper_args": "--pre-rotate 90"}
-> Software tweaks
-> PAPERLESS_TASK_WORKERS=<num>
-> Paperless does multiple things in the background: Maintain the search index, maintain the automatic matching algorithm, check emails, consume documents, etc. This variable specifies how many things it will do in parallel.
-> 
-> Defaults to 1
-> 
-> PAPERLESS_THREADS_PER_WORKER=<num>
-> Furthermore, paperless uses multiple threads when consuming documents to speed up OCR. This variable specifies how many pages paperless will process in parallel on a single document.
-> 
-> Warning
-> 
-> Ensure that the product
-> 
-> PAPERLESS_TASK_WORKERS * PAPERLESS_THREADS_PER_WORKER
-> 
-> does not exceed your CPU core count or else paperless will be extremely slow. If you want paperless to process many documents in parallel, choose a high worker count. If you want paperless to process very large documents faster, use a higher thread per worker count.
-> 
-> If unset, paperless uses max(floor(cpu_count / PAPERLESS_TASK_WORKERS), 1) threads per worker. The idea behind this is that as long as there are enough cores, the total number of threads should less than or equal to the total number of (logical) CPU cores.
-> 
-> PAPERLESS_WORKER_TIMEOUT=<num>
-> Machines with few cores or weak ones might not be able to finish OCR on large documents within the default 1800 seconds. So extending this timeout may prove to be useful on weak hardware setups.
-> PAPERLESS_TIME_ZONE=<timezone>
-> Set the time zone here. See more details on why and how to set it in the Django project documentation for details on how to set it.
-> 
-> Defaults to UTC.
-> 
-> PAPERLESS_ENABLE_NLTK=<bool>
-> Enables or disables the advanced natural language processing used during automatic classification. If disabled, paperless will still perform some basic text pre-processing before matching.
-> See also PAPERLESS_NLTK_DIR.
-> 
-> Defaults to true, enabling the feature.
-> 
-> PAPERLESS_DATE_PARSER_LANGUAGES=<lang>
-> Specifies which language Paperless should use when parsing dates from documents.
-> 
-> This should be a language code supported by the dateparser library,
-> for example: "en", or a combination such as "en+de".
-> Locales are also supported (e.g., "en-AU").
-> Multiple languages can be combined using "+", for example: "en+de" or "en-AU+de".
-> For valid values, refer to the list of supported languages and locales in the [dateparser documentation](https://dateparser.readthedocs.io/en/latest/supported_locales.html).
-> 
-> Set this to match the languages in which most of your documents are written.
-> If not set, Paperless will attempt to infer the language(s) from the OCR configuration (`PAPERLESS_OCR_LANGUAGE`).
-> Note
-> 
-> This format differs from the PAPERLESS_OCR_LANGUAGE setting, which uses ISO 639-2 codes (3 letters, e.g., "eng+deu" for Tesseract OCR).
-> 
-> PAPERLESS_EMAIL_TASK_CRON=<cron expression>
-> Configures the scheduled email fetching frequency. The value should be a valid crontab(5) expression describing when to run.
-> If set to the string "disable", no emails will be fetched automatically.
-> 
-> Defaults to */10 * * * * or every ten minutes.
-> 
-> PAPERLESS_TRAIN_TASK_CRON=<cron expression>
-> Configures the scheduled automatic classifier training frequency. The value should be a valid crontab(5) expression describing when to run.
-> If set to the string "disable", the classifier will not be trained automatically.
-> 
-> Defaults to 5 */1 * * * or every hour at 5 minutes past the hour.
-> 
-> PAPERLESS_INDEX_TASK_CRON=<cron expression>
-> Configures the scheduled search index update frequency. The value should be a valid crontab(5) expression describing when to run.
-> If set to the string "disable", the search index will not be automatically updated.
-> 
-> Defaults to 0 0 * * * or daily at midnight.
-> 
-> PAPERLESS_SANITY_TASK_CRON=<cron expression>
-> Configures the scheduled sanity checker frequency. The value should be a valid crontab(5) expression describing when to run.
-> If set to the string "disable", the sanity checker will not run automatically.
-> 
-> Defaults to 30 0 * * sun or Sunday at 30 minutes past midnight.
-> 
-> PAPERLESS_WORKFLOW_SCHEDULED_TASK_CRON=<cron expression>
-> Configures the scheduled workflow check frequency. The value should be a valid crontab(5) expression describing when to run.
-> If set to the string "disable", scheduled workflows will not run.
-> 
-> Defaults to 5 */1 * * * or every hour at 5 minutes past the hour.
-> 
-> PAPERLESS_ENABLE_COMPRESSION=<bool>
-> Enables compression of the responses from the webserver.
-> Defaults to true, enabling compression.
-> 
-> Note
-> 
-> If you are using a proxy such as nginx, it is likely more efficient to enable compression in your proxy configuration rather than the webserver
-> 
-> PAPERLESS_CONVERT_MEMORY_LIMIT=<num>
-> On smaller systems, or even in the case of Very Large Documents, the consumer may explode, complaining about how it's "unable to extend pixel cache". In such cases, try setting this to a reasonably low value, like 32. The default is to use whatever is necessary to do everything without writing to disk, and units are in megabytes.
-> 
-> For more information on how to use this value, you should search the web for "MAGICK_MEMORY_LIMIT".
-> 
-> Defaults to 0, which disables the limit.
-> 
-> PAPERLESS_CONVERT_TMPDIR=<path>
-> Similar to the memory limit, if you've got a small system and your OS mounts /tmp as tmpfs, you should set this to a path that's on a physical disk, like /home/your_user/tmp or something. ImageMagick will use this as scratch space when crunching through very large documents.
-> 
-> For more information on how to use this value, you should search the web for "MAGICK_TMPDIR".
-> 
-> Default is none, which disables the temporary directory.
-> 
-> PAPERLESS_APPS=<string>
-> A comma-separated list of Django apps to be included in Django's INSTALLED_APPS. This setting should be used with caution!
-> 
-> Defaults to None, which does not add any additional apps.
-> 
-> PAPERLESS_MAX_IMAGE_PIXELS=<number>
-> Configures the maximum size of an image PIL will allow to load without warning or error.
-> If unset, will default to the value determined by Pillow.
-> 
-> Defaults to None, which does change the limit
-> 
-> Warning
-> 
-> This limit is designed to prevent denial of service from malicious files. It should only be raised or disabled in certain circumstances and with great care.
-> 
-> Document Consumption
-> PAPERLESS_CONSUMER_DISABLE
-> If set (to anything), this completely disables the directory-based consumer in docker. If you don't plan to consume documents via the consumption directory, you can disable the consumer to save resources.
-> PAPERLESS_CONSUMER_DELETE_DUPLICATES=<bool>
-> When the consumer detects a duplicate document, it will not touch the original document. This default behavior can be changed here.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_RECURSIVE=<bool>
-> Enable recursive watching of the consumption directory. Paperless will then pickup files from files in subdirectories within your consumption directory as well.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_SUBDIRS_AS_TAGS=<bool>
-> Set the names of subdirectories as tags for consumed files. E.g. <CONSUMPTION_DIR>/foo/bar/file.pdf will add the tags "foo" and "bar" to the consumed file. Paperless will create any tags that don't exist yet.
-> 
-> This is useful for sorting documents with certain tags such as car or todo prior to consumption. These folders won't be deleted.
-> 
-> PAPERLESS_CONSUMER_RECURSIVE must be enabled for this to work.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_IGNORE_PATTERNS=<json>
-> By default, paperless ignores certain files and folders in the consumption directory, such as system files created by the Mac OS or hidden folders some tools use to store data.
-> 
-> This can be adjusted by configuring a custom json array with patterns to exclude.
-> 
-> For example, .DS_STORE/* will ignore any files found in a folder named .DS_STORE, including .DS_STORE/bar.pdf and foo/.DS_STORE/bar.pdf
-> 
-> A pattern like ._* will ignore anything starting with ._, including: ._foo.pdf and ._bar/foo.pdf
-> 
-> Defaults to [".DS_Store", ".DS_STORE", "._*", ".stfolder/*", ".stversions/*", ".localized/*", "desktop.ini", "@eaDir/*", "Thumbs.db"].
-> 
-> PAPERLESS_CONSUMER_BARCODE_SCANNER=<string>
-> Sets the barcode scanner used for barcode functionality.
-> 
-> Currently, "PYZBAR" (the default) or "ZXING" might be selected. If you have problems that your Barcodes/QR-Codes are not detected (especially with bad scan quality and/or small codes), try the other one.
-> 
-> PAPERLESS_PRE_CONSUME_SCRIPT=<filename>
-> After some initial validation, Paperless can trigger an arbitrary script if you like before beginning consumption. This script will be provided data for it to work with via the environment.
-> 
-> For more information, take a look at pre-consumption script.
-> 
-> The default is blank, which means nothing will be executed.
-> 
-> PAPERLESS_POST_CONSUME_SCRIPT=<filename>
-> After a document is consumed, Paperless can trigger an arbitrary script if you like. This script will be provided data for it to work with via the environment.
-> 
-> For more information, take a look at Post-consumption script.
-> 
-> The default is blank, which means nothing will be executed.
-> 
-> PAPERLESS_FILENAME_DATE_ORDER=<format>
-> Paperless will check the document text for document date information. Use this setting to enable checking the document filename for date information. The date order can be set to any option as specified in https://dateparser.readthedocs.io/en/latest/settings.html#date-order. The filename will be checked first, and if nothing is found, the document text will be checked as normal.
-> 
-> A date in a filename must have some separators (., ,, -, /, etc) for it to be parsed.
-> 
-> Defaults to none, which disables this feature.
-> 
-> PAPERLESS_NUMBER_OF_SUGGESTED_DATES=<num>
-> Paperless searches an entire document for dates. The first date found will be used as the initial value for the created date. When this variable is greater than 0 (or left to its default value), paperless will also suggest other dates found in the document, up to a maximum of this setting. Note that duplicates will be removed, which can result in fewer dates displayed in the frontend than this setting value.
-> 
-> The task to find all dates can be time-consuming and increases with a higher (maximum) number of suggested dates and slower hardware.
-> 
-> Defaults to 3. Set to 0 to disable this feature.
-> 
-> PAPERLESS_THUMBNAIL_FONT_NAME=<filename>
-> Paperless creates thumbnails for plain text files by rendering the content of the file on an image and uses a predefined font for that. This font can be changed here.
-> 
-> Note that this won't have any effect on already generated thumbnails.
-> 
-> Defaults to /usr/share/fonts/liberation/LiberationSerif-Regular.ttf.
-> 
-> PAPERLESS_IGNORE_DATES=<string>
-> Paperless parses a document's creation date from filename and file content. You may specify a comma separated list of dates that should be ignored during this process. This is useful for special dates (like date of birth) that appear in documents regularly but are very unlikely to be the document's creation date.
-> 
-> The date is parsed using the order specified in PAPERLESS_DATE_ORDER
-> 
-> Defaults to an empty string to not ignore any dates.
-> 
-> PAPERLESS_DATE_ORDER=<format>
-> Paperless will try to determine the document creation date from its contents. Specify the date format Paperless should expect to see within your documents.
-> 
-> This option defaults to DMY which translates to day first, month second, and year last order. Characters D, M, or Y can be shuffled to meet the required order.
-> 
-> PAPERLESS_ENABLE_GPG_DECRYPTOR=<bool>
-> Enable or disable the GPG decryptor for encrypted emails. See GPG Decryptor for more information.
-> 
-> Defaults to false.
-> 
-> Polling
-> PAPERLESS_CONSUMER_POLLING=<num>
-> If paperless won't find documents added to your consume folder, it might not be able to automatically detect filesystem changes. In that case, specify a polling interval in seconds here, which will then cause paperless to periodically check your consumption directory for changes. This will also disable listening for file system changes with inotify.
-> 
-> Defaults to 0, which disables polling and uses filesystem notifications.
-> 
-> PAPERLESS_CONSUMER_POLLING_RETRY_COUNT=<num>
-> If consumer polling is enabled, sets the maximum number of times paperless will check for a file to remain unmodified. If a file's modification time and size are identical for two consecutive checks, it will be consumed.
-> 
-> Defaults to 5.
-> 
-> PAPERLESS_CONSUMER_POLLING_DELAY=<num>
-> If consumer polling is enabled, sets the delay in seconds between each check (above) paperless will do while waiting for a file to remain unmodified.
-> 
-> Defaults to 5.
-> 
-> iNotify
-> PAPERLESS_CONSUMER_INOTIFY_DELAY=<num>
-> Sets the time in seconds the consumer will wait for additional events from inotify before the consumer will consider a file ready and begin consumption. Certain scanners or network setups may generate multiple events for a single file, leading to multiple consumers working on the same file. Configure this to prevent that.
-> 
-> Defaults to 0.5 seconds.
-> 
-> Workflow webhooks
-> PAPERLESS_WEBHOOKS_ALLOWED_SCHEMES=<str>
-> A comma-separated list of allowed schemes for webhooks. This setting controls which URL schemes are permitted for webhook URLs.
-> 
-> Defaults to http,https.
-> 
-> PAPERLESS_WEBHOOKS_ALLOWED_PORTS=<str>
-> A comma-separated list of allowed ports for webhooks. This setting controls which ports are permitted for webhook URLs. For example, if you set this to 80,443, webhooks will only be sent to URLs that use these ports.
-> 
-> Defaults to empty list, which allows all ports.
-> 
-> PAPERLESS_WEBHOOKS_ALLOW_INTERNAL_REQUESTS=<bool>
-> If set to false, webhooks cannot be sent to internal URLs (e.g., localhost).
-> 
-> Defaults to true, which allows internal requests.
-> 
-> Incoming Mail
-> Email OAuth
-> PAPERLESS_OAUTH_CALLBACK_BASE_URL=<str>
-> The base URL for the OAuth callback. This is used to construct the full URL for the OAuth callback. This should be the URL that the Paperless instance is accessible at. If not set, defaults to the PAPERLESS_URL setting. At least one of these settings must be set to enable OAuth Email setup.
-> 
-> Defaults to none (thus will use PAPERLESS_URL).
-> 
-> Note
-> 
-> This setting only applies to OAuth Email setup (not to the SSO setup).
-> 
-> PAPERLESS_GMAIL_OAUTH_CLIENT_ID=<str>
-> The OAuth client ID for Gmail. This is required for Gmail OAuth Email setup. See OAuth Email Setup for more information.
-> 
-> Defaults to none.
-> 
-> PAPERLESS_GMAIL_OAUTH_CLIENT_SECRET=<str>
-> The OAuth client secret for Gmail. This is required for Gmail OAuth Email setup. See OAuth Email Setup for more information.
-> 
-> Defaults to none.
-> 
-> PAPERLESS_OUTLOOK_OAUTH_CLIENT_ID=<str>
-> The OAuth client ID for Outlook. This is required for Outlook OAuth Email setup. See OAuth Email Setup for more information.
-> 
-> Defaults to none.
-> 
-> PAPERLESS_OUTLOOK_OAUTH_CLIENT_SECRET=<str>
-> The OAuth client secret for Outlook. This is required for Outlook OAuth Email setup. See OAuth Email Setup for more information.
-> 
-> Defaults to none.
-> 
-> Encrypted Emails
-> PAPERLESS_EMAIL_GNUPG_HOME=<str>
-> Optional, sets the GNUPG_HOME path to use with GPG decryptor for encrypted emails. See GPG Decryptor for more information. If not set, defaults to the default GNUPG_HOME path.
-> 
-> Defaults to .
-> 
-> Barcodes
-> PAPERLESS_CONSUMER_ENABLE_BARCODES=<bool>
-> Enables the scanning and page separation based on detected barcodes. This allows for scanning and adding multiple documents per uploaded file, which are separated by one or multiple barcode pages.
-> 
-> For ease of use, it is suggested to use a standardized separation page, e.g. here.
-> 
-> If no barcodes are detected in the uploaded file, no page separation will happen.
-> 
-> The original document will be removed and the separated pages will be saved as pdf.
-> 
-> See additional information in the advanced usage documentation
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_BARCODE_TIFF_SUPPORT=<bool>
-> Whether TIFF image files should be scanned for barcodes. This will automatically convert any TIFF image(s) to pdfs for later processing. This only has an effect, if PAPERLESS_CONSUMER_ENABLE_BARCODES has been enabled.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_BARCODE_STRING=<string>
-> Defines the string to be detected as a separator barcode. If paperless is used with the PATCH-T separator pages, users shouldn't change this.
-> 
-> Defaults to "PATCHT"
-> 
-> PAPERLESS_CONSUMER_BARCODE_RETAIN_SPLIT_PAGES=<bool>
-> If set to true, all pages that are split by a barcode (such as PATCHT) will be kept.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_ENABLE_ASN_BARCODE=<bool>
-> Enables the detection of barcodes in the scanned document and setting the ASN (archive serial number) if a properly formatted barcode is detected.
-> 
-> The barcode must consist of a (configurable) prefix and the ASN to be set, for instance ASN00123. The content after the prefix is cleaned of non-numeric characters.
-> 
-> This option is compatible with barcode page separation, since pages will be split up before reading the ASN.
-> 
-> If no ASN barcodes are detected in the uploaded file, no ASN will be set. If a barcode with an existing ASN is detected, the document will not be consumed and an error logged.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_ASN_BARCODE_PREFIX=<string>
-> Defines the prefix that is used to identify a barcode as an ASN barcode.
-> 
-> Defaults to "ASN"
-> 
-> PAPERLESS_CONSUMER_BARCODE_UPSCALE=<float>
-> Defines the upscale factor used in barcode detection. Improves the detection of small barcodes, i.e. with a value of 1.5 by upscaling the document before the detection process. Upscaling will only take place if value is bigger than 1.0. Otherwise upscaling will not be performed to save resources. Try using in combination with PAPERLESS_CONSUMER_BARCODE_DPI set to a value higher than default.
-> 
-> Defaults to 0.0
-> 
-> PAPERLESS_CONSUMER_BARCODE_DPI=<int>
-> During barcode detection every page from a PDF document needs to be converted to an image. A dpi value can be specified in the conversion process. Default is 300. If the detection of small barcodes fails a bigger dpi value i.e. 600 can fix the issue. Try using in combination with PAPERLESS_CONSUMER_BARCODE_UPSCALE bigger than 1.0.
-> 
-> Defaults to "300"
-> 
-> PAPERLESS_CONSUMER_BARCODE_MAX_PAGES=<int>
-> Because barcode detection is a computationally-intensive operation, this setting limits the detection of barcodes to a number of first pages. If your scanner has a limit for the number of pages that can be scanned it would be sensible to set this as the limit here.
-> 
-> Defaults to "0", allowing all pages to be checked for barcodes.
-> 
-> PAPERLESS_CONSUMER_ENABLE_TAG_BARCODE=<bool>
-> Enables the detection of barcodes in the scanned document and assigns or creates tags if a properly formatted barcode is detected.
-> 
-> The barcode must match one of the (configurable) regular expressions. If the barcode text contains ',' (comma), it is split into multiple barcodes which are individually processed for tagging.
-> 
-> Matching is case insensitive.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_TAG_BARCODE_MAPPING=<json dict>
-> Defines a dictionary of filter regex and substitute expressions.
-> 
-> Syntax: {"<regex>": "<substitute>" [,...]]}
-> 
-> A barcode is considered for tagging if the barcode text matches at least one of the provided pattern.
-> 
-> If a match is found, the rule is applied. This allows very versatile reformatting and mapping of barcode pattern to tag values.
-> 
-> If a tag is not found it will be created.
-> 
-> Defaults to:
-> 
-> {"TAG:(.*)": "\\g<1>"} which defines - a regex TAG:(.*) which includes barcodes beginning with TAG: followed by any text that gets stored into match group #1 and - a substitute \\g<1> that replaces the original barcode text by the content in match group #1. Consequently, the tag is the barcode text without its TAG: prefix.
-> 
-> More examples:
-> 
-> {"ASN12.*": "JOHN", "ASN13.*": "SMITH"} for example maps - ASN12nnnn barcodes to the tag JOHN and - ASN13nnnn barcodes to the tag SMITH.
-> 
-> {"T-J": "JOHN", "T-S": "SMITH", "T-D": "DOE"} directly maps - T-J barcodes to the tag JOHN, - T-S barcodes to the tag SMITH and - T-D barcodes to the tag DOE.
-> 
-> Please refer to the Python regex documentation for more information.
-> 
-> Audit Trail
-> PAPERLESS_AUDIT_LOG_ENABLED=<bool>
-> Enables the audit trail for documents, document types, correspondents, and tags.
-> 
-> Defaults to true.
-> 
-> Collate Double-Sided Documents
-> PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED=<bool>
-> Enables automatic collation of two single-sided scans into a double-sided document.
-> 
-> This is useful if you have an automatic document feeder that only supports single-sided scans, but you need to scan a double-sided document. If your ADF supports double-sided scans natively, you do not need this feature.
-> 
-> PAPERLESS_CONSUMER_RECURSIVE must be enabled for this to work.
-> 
-> For more information, read the corresponding section in the advanced documentation.
-> 
-> Defaults to false.
-> 
-> PAPERLESS_CONSUMER_COLLATE_DOUBLE_SIDED_SUBDIR_NAME=<str>
-> The name of the subdirectory that the collate feature expects documents to arrive.
-> 
-> This only has an effect if PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED has been enabled. Note that Paperless will not automatically create the directory.
-> 
-> Defaults to "double-sided".
-> 
-> PAPERLESS_CONSUMER_COLLATE_DOUBLE_SIDED_TIFF_SUPPORT=<bool>
-> Whether TIFF image files should be supported when collating documents. This will automatically convert any TIFF image(s) to pdfs for later processing. This only has an effect if PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED has been enabled.
-> 
-> Defaults to false.
-> 
-> Trash
-> PAPERLESS_EMPTY_TRASH_DELAY=<num>
-> Sets how long in days documents remain in the 'trash' before they are permanently deleted.
-> 
-> Defaults to 30 days, minimum of 1 day.
-> 
-> PAPERLESS_EMPTY_TRASH_TASK_CRON=<cron expression>
-> Configures the schedule to empty the trash of expired deleted documents.
-> 
-> Defaults to 0 1 * * *, once per day.
-> 
-> Binaries
-> There are a few external software packages that Paperless expects to find on your system when it starts up. Unless you've done something creative with their installation, you probably won't need to edit any of these. However, if you've installed these programs somewhere where simply typing the name of the program doesn't automatically execute it (ie. the program isn't in your $PATH), then you'll need to specify the literal path for that program.
-> 
-> PAPERLESS_CONVERT_BINARY=<path>
-> Defaults to "convert".
-> PAPERLESS_GS_BINARY=<path>
-> Defaults to "gs".
-> Docker-specific options
-> These options don't have any effect in paperless.conf. These options adjust the behavior of the docker container. Configure these in docker-compose.env.
-> 
-> PAPERLESS_WEBSERVER_WORKERS=<num>
-> The number of worker processes the webserver should spawn. More worker processes usually result in the front end to load data much quicker. However, each worker process also loads the entire application into memory separately, so increasing this value will increase RAM usage.
-> 
-> Defaults to 1.
-> 
-> Note
-> 
-> This option may also be set with GRANIAN_WORKERS and this option may be removed in the future
-> 
-> PAPERLESS_BIND_ADDR=<ip address>
-> The IP address the webserver will listen on inside the container. There are special setups where you may need to configure this value to restrict the Ip address or interface the webserver listens on.
-> 
-> Defaults to ::, meaning all interfaces, including IPv6.
-> 
-> Note
-> 
-> This option may also be set with GRANIAN_HOST and this option may be removed in the future
-> 
-> PAPERLESS_PORT=<port>
-> The port number the webserver will listen on inside the container. There are special setups where you may need this to avoid collisions with other services (like using podman with multiple containers in one pod).
-> 
-> Don't change this when using Docker. To change the port the webserver is reachable outside of the container, instead refer to the "ports" key in docker-compose.yml.
-> 
-> Defaults to 8000.
-> 
-> Note
-> 
-> This option may also be set with GRANIAN_PORT and this option may be removed in the future
-> 
-> USERMAP_UID=<uid>
-> The ID of the paperless user in the container. Set this to your actual user ID on the host system, which you can get by executing
-> 
-> id -u
-> Paperless will change ownership on its folders to this user, so you need to get this right in order to be able to write to the consumption directory.
-> 
-> Defaults to 1000.
-> 
-> USERMAP_GID=<gid>
-> The ID of the paperless Group in the container. Set this to your actual group ID on the host system, which you can get by executing
-> 
-> id -g
-> Paperless will change ownership on its folders to this group, so you need to get this right in order to be able to write to the consumption directory.
-> 
-> Defaults to 1000.
-> 
-> PAPERLESS_OCR_LANGUAGES=<list>
-> Additional OCR languages to install. By default, paperless comes with English, German, Italian, Spanish and French. If your language is not in this list, install additional languages with this configuration option. You will need to find the right LangCodes but note that tesseract-ocr-* package names do not always correspond with the language codes e.g. "chi_tra" should be specified as "chi-tra".
-> 
-> PAPERLESS_OCR_LANGUAGES=tur ces chi-tra
-> Make sure it's a space-separated list when using several values.
-> 
-> To actually use these languages, also set the default OCR language of paperless:
-> 
-> PAPERLESS_OCR_LANGUAGE=tur
-> Defaults to none, which does not install any additional languages.
-> 
-> Warning
-> 
-> This option must not be used in rootless containers.
-> 
-> PAPERLESS_ENABLE_FLOWER=<defined>
-> If this environment variable is defined, the Celery monitoring tool Flower will be started by the container.
-> 
-> You can read more about this in the advanced documentation.
-> 
-> PAPERLESS_SUPERVISORD_WORKING_DIR=<defined>
-> Warning
-> 
-> This option is deprecated and has no effect.  For read only file system support,
-> see [S6_READ_ONLY_ROOT](https://github.com/just-containers/s6-overlay#customizing-s6-overlay-behaviour)
-> from s6-overlay.
-> Frontend Settings
-> PAPERLESS_APP_TITLE=<str>
-> If set, overrides the default name "Paperless-ngx"
-> PAPERLESS_APP_LOGO=<path>
-> Path to an image file in the /media/logo directory, must include 'logo', e.g. /logo/Atari_logo.svg
-> Note
-> 
-> The logo file will be viewable by anyone with access to the Paperless instance login page, so consider your choice of logo carefully and removing exif data from images before uploading.
-> 
-> PAPERLESS_ENABLE_UPDATE_CHECK=<bool>
-> Note
-> 
-> This setting was deprecated in favor of a frontend setting after v1.9.2. A one-time migration is performed for users who have this setting set. This setting is always ignored if the corresponding frontend setting has been set.
-> 
-> Email sending
-> Setting an SMTP server for the backend will allow you to use the Email workflow action, send documents from the UI as well as reset your password. All of these options come from their similarly-named Django settings
-> 
-> PAPERLESS_EMAIL_HOST=<str>
-> Defaults to 'localhost'.
-> PAPERLESS_EMAIL_PORT=<int>
-> Defaults to port 25.
-> PAPERLESS_EMAIL_HOST_USER=<str>
-> Defaults to ''.
-> PAPERLESS_EMAIL_FROM=<str>
-> Defaults to PAPERLESS_EMAIL_HOST_USER if not set.
-> PAPERLESS_EMAIL_HOST_PASSWORD=<str>
-> Defaults to ''.
-> PAPERLESS_EMAIL_USE_TLS=<bool>
-> Defaults to false.
-> PAPERLESS_EMAIL_USE_SSL=<bool>
-> Defaults to false.
->  Back to top
-> Copyright © 2016 - 2023 Daniel Quinn, Jonas Winkler, and the Paperless-ngx team
+> Skip to content
+
+> Paperless-ngx
+
+> Configuration
+
+> 
+
+> 
+
+> 
+
+> logoPaperless-ngx
+
+>  paperless-ngx/paperless-ngx
+
+> v2.20.3
+
+> 35.3k
+
+> 2.2k
+
+> Home
+
+> Setup
+
+> Basic Usage
+
+> Configuration
+
+> Table of contents
+
+> Required services
+
+> Redis Broker
+
+> Database
+
+> Optional Services
+
+> Tika
+
+> Email Parsing
+
+> Paths and folders
+
+> Logging
+
+> Hosting & Security
+
+> Authentication & SSO
+
+> OCR settings
+
+> Software tweaks
+
+> Document Consumption
+
+> Polling
+
+> iNotify
+
+> Workflow webhooks
+
+> Incoming Mail
+
+> Email OAuth
+
+> Encrypted Emails
+
+> Barcodes
+
+> Audit Trail
+
+> Collate Double-Sided Documents
+
+> Trash
+
+> Binaries
+
+> Docker-specific options
+
+> Frontend Settings
+
+> Email sending
+
+> Administration
+
+> Advanced Topics
+
+> REST API
+
+> Development
+
+> FAQs
+
+> Troubleshooting
+
+> Changelog
+
+> Configuration
+
+> Paperless provides a wide range of customizations. Depending on how you run paperless, these settings have to be defined in different places.
+
+> 
+
+> Certain configuration options may be set via the UI. This currently includes common OCR related settings and some frontend settings. If set, these will take preference over the settings via environment variables. If not set, the environment setting or applicable default will be utilized instead.
+
+> 
+
+> If you run paperless on docker, paperless.conf is not used. Rather, configure paperless by copying necessary options to docker-compose.env.
+
+> 
+
+> If you are running paperless on anything else, paperless will search for the configuration file in these locations and use the first one it finds:
+
+> 
+
+> The environment variable PAPERLESS_CONFIGURATION_PATH
+
+> /path/to/paperless/paperless.conf
+
+> /etc/paperless.conf
+
+> /usr/local/etc/paperless.conf
+
+> Required services
+
+> Redis Broker
+
+> PAPERLESS_REDIS=<url>
+
+> This is required for processing scheduled tasks such as email fetching, index optimization and for training the automatic document matcher.
+
+> 
+
+> If your Redis server needs login credentials PAPERLESS_REDIS = redis://<username>:<password>@<host>:<port>
+
+> With the requirepass option PAPERLESS_REDIS = redis://:<password>@<host>:<port>
+
+> To include the redis database index PAPERLESS_REDIS = redis://<username>:<password>@<host>:<port>/<DBIndex>
+
+> More information on securing your Redis Instance.
+
+> 
+
+> Defaults to redis://localhost:6379.
+
+> 
+
+> PAPERLESS_REDIS_PREFIX=<prefix>
+
+> Prefix to be used in Redis for keys and channels. Useful for sharing one Redis server among multiple Paperless instances.
+
+> 
+
+> Defaults to no prefix.
+
+> 
+
+> Database
+
+> By default, Paperless uses SQLite with a database stored at data/db.sqlite3. To switch to PostgreSQL or MariaDB, set PAPERLESS_DBHOST and optionally configure other database-related environment variables.
+
+> 
+
+> PAPERLESS_DBHOST=<hostname>
+
+> If unset, Paperless uses SQLite by default.
+
+> 
+
+> Set PAPERLESS_DBHOST to switch to PostgreSQL or MariaDB instead.
+
+> 
+
+> PAPERLESS_DBENGINE=<engine_name>
+
+> Optional. Specifies the database engine to use when connecting to a remote database. Available options are postgresql and mariadb.
+
+> 
+
+> Defaults to postgresql if PAPERLESS_DBHOST is set.
+
+> 
+
+> Warning
+
+> 
+
+> Using MariaDB comes with some caveats. See MySQL Caveats.
+
+> 
+
+> PAPERLESS_DBPORT=<port>
+
+> Port to use when connecting to PostgreSQL or MariaDB.
+
+> 
+
+> Default is 5432 for PostgreSQL and 3306 for MariaDB.
+
+> 
+
+> PAPERLESS_DBNAME=<name>
+
+> Name of the database to connect to when using PostgreSQL or MariaDB.
+
+> 
+
+> Defaults to "paperless".
+
+> 
+
+> PAPERLESS_DBUSER=<name>
+
+> Username for authenticating with the PostgreSQL or MariaDB database.
+
+> 
+
+> Defaults to "paperless".
+
+> 
+
+> PAPERLESS_DBPASS=<password>
+
+> Password for the PostgreSQL or MariaDB database user.
+
+> 
+
+> Defaults to "paperless".
+
+> 
+
+> PAPERLESS_DBSSLMODE=<mode>
+
+> SSL mode to use when connecting to PostgreSQL or MariaDB.
+
+> 
+
+> See the official documentation about sslmode for PostgreSQL.
+
+> 
+
+> See the official documentation about sslmode for MySQL and MariaDB.
+
+> 
+
+> Note: SSL mode values differ between PostgreSQL and MariaDB.
+
+> 
+
+> Default is prefer for PostgreSQL and PREFERRED for MariaDB.
+
+> 
+
+> PAPERLESS_DBSSLROOTCERT=<ca-path>
+
+> Path to the SSL root certificate used to verify the database server.
+
+> 
+
+> See the official documentation about sslmode for PostgreSQL. Changes the location of root.crt.
+
+> 
+
+> See the official documentation about sslmode for MySQL and MariaDB.
+
+> 
+
+> Defaults to unset, using the standard location in the home directory.
+
+> 
+
+> PAPERLESS_DBSSLCERT=<client-cert-path>
+
+> Path to the client SSL certificate used when connecting securely.
+
+> 
+
+> See the official documentation about sslmode for PostgreSQL.
+
+> 
+
+> See the official documentation about sslmode for MySQL and MariaDB.
+
+> 
+
+> Changes the location of postgresql.crt.
+
+> 
+
+> Defaults to unset, using the standard location in the home directory.
+
+> 
+
+> PAPERLESS_DBSSLKEY=<client-cert-key>
+
+> Path to the client SSL private key used when connecting securely.
+
+> 
+
+> See the official documentation about sslmode for PostgreSQL.
+
+> 
+
+> See the official documentation about sslmode for MySQL and MariaDB.
+
+> 
+
+> Changes the location of postgresql.key.
+
+> 
+
+> Defaults to unset, using the standard location in the home directory.
+
+> 
+
+> PAPERLESS_DB_TIMEOUT=<int>
+
+> Sets how long a database connection should wait before timing out.
+
+> 
+
+> For SQLite, this sets how long to wait if the database is locked. For PostgreSQL or MariaDB, this sets the connection timeout.
+
+> 
+
+> Defaults to unset, which uses Django’s built-in defaults.
+
+> 
+
+> PAPERLESS_DB_POOLSIZE=<int>
+
+> Defines the maximum number of database connections to keep in the pool.
+
+> 
+
+> Only applies to PostgreSQL. This setting is ignored for other database engines.
+
+> 
+
+> The value must be greater than or equal to 1 to be used. Defaults to unset, which disables connection pooling.
+
+> 
+
+> Note
+
+> 
+
+> A pool of 8-10 connections per worker is typically sufficient. If you encounter error messages such as couldn't get a connection or database connection timeouts, you probably need to increase the pool size.
+
+> 
+
+> Warning
+
+> 
+
+> Make sure your PostgreSQL max_connections setting is large enough to handle the connection pools: (NB_PAPERLESS_WORKERS + NB_CELERY_WORKERS) × POOL_SIZE + SAFETY_MARGIN. For example, with 4 Paperless workers and 2 Celery workers, and a pool size of 8:`(4 + 2) × 8 + 10 = 58, so max_connections = 60 (or even more) is appropriate.
+
+> 
+
+> This assumes only Paperless-ngx connects to your PostgreSQL instance. If you have other applications, you should increase max_connections accordingly.
+
+> 
+
+> PAPERLESS_DB_READ_CACHE_ENABLED=<bool>
+
+> Caches the database read query results into Redis. This can significantly improve application response times by caching database queries, at the cost of slightly increased memory usage.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> Danger
+
+> 
+
+> Do not modify the database outside the application while it is running. This includes actions such as restoring a backup, upgrading the database, or performing manual inserts. All external modifications must be done only when the application is stopped. After making any such changes, you must invalidate the DB read cache using the invalidate_cachalot management command.
+
+> 
+
+> PAPERLESS_READ_CACHE_TTL=<int>
+
+> Specifies how long (in seconds) read data should be cached.
+
+> 
+
+> Allowed values are between 1 (one second) and 31536000 (one year). Defaults to 3600 (one hour).
+
+> 
+
+> Warning
+
+> 
+
+> A high TTL increases memory usage over time. Memory may be used until end of TTL, even if the cache is invalidated with the invalidate_cachalot command.
+
+> 
+
+> In case of an out-of-memory (OOM) situation, Redis may stop accepting new data — including cache entries, scheduled tasks, and documents to consume. If your system has limited RAM, consider configuring a dedicated Redis instance for the read cache, with a memory limit and the eviction policy set to allkeys-lru. For more details, refer to the Redis eviction policy documentation, and see the PAPERLESS_READ_CACHE_REDIS_URL setting to specify a separate Redis broker.
+
+> 
+
+> PAPERLESS_READ_CACHE_REDIS_URL=<url>
+
+> Defines the Redis instance used for the read cache.
+
+> 
+
+> Defaults to None.
+
+> 
+
+> Note
+
+> 
+
+> If this value is not set, the same Redis instance used for scheduled tasks will be used for caching as well.
+
+> 
+
+> Optional Services
+
+> Tika
+
+> Paperless can make use of Tika and Gotenberg for parsing and converting "Office" documents (such as ".doc", ".xlsx" and ".odt"). Tika and Gotenberg are also needed to allow parsing of E-Mails (.eml).
+
+> 
+
+> If you wish to use this, you must provide a Tika server and a Gotenberg server, configure their endpoints, and enable the feature.
+
+> 
+
+> PAPERLESS_TIKA_ENABLED=<bool>
+
+> Enable (or disable) the Tika parser.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_TIKA_ENDPOINT=<url>
+
+> Set the endpoint URL where Paperless can reach your Tika server.
+
+> 
+
+> Defaults to "http://localhost:9998".
+
+> 
+
+> PAPERLESS_TIKA_GOTENBERG_ENDPOINT=<url>
+
+> Set the endpoint URL where Paperless can reach your Gotenberg server.
+
+> 
+
+> Defaults to "http://localhost:3000".
+
+> 
+
+> If you run paperless on docker, you can add those services to the Docker Compose file (see the provided docker-compose.sqlite-tika.yml file for reference).
+
+> 
+
+> Add all three configuration parameters to your configuration. If using Docker, this may be the environment key of the webserver or a docker-compose.env file. Bare metal installations may have a .conf file containing the configuration parameters. Be sure to use the correct format and watch out for indentation if editing the YAML file.
+
+> 
+
+> Email Parsing
+
+> PAPERLESS_EMAIL_PARSE_DEFAULT_LAYOUT=<int>
+
+> The default layout to use for emails that are consumed as documents. Must be one of the integer choices below. Note that mail rules can specify this setting, thus this fallback is used for the default selection and for .eml files consumed by other means.
+
+> 
+
+> 1 = Text, then HTML
+
+> 2 = HTML, then text
+
+> 3 = HTML only
+
+> 4 = Text only
+
+> Paths and folders
+
+> PAPERLESS_CONSUMPTION_DIR=<path>
+
+> This is where your documents should go to be consumed. Make sure that it exists and that the user running the paperless service can read/write its contents before you start Paperless.
+
+> 
+
+> Don't change this when using docker, as it only changes the path within the container. Change the local consumption directory in the docker-compose.yml file instead.
+
+> 
+
+> Defaults to "../consume/", relative to the "src" directory.
+
+> 
+
+> PAPERLESS_DATA_DIR=<path>
+
+> This is where paperless stores all its data (search index, SQLite database, classification model, etc).
+
+> 
+
+> Defaults to "../data/", relative to the "src" directory.
+
+> 
+
+> PAPERLESS_EMPTY_TRASH_DIR=<path>
+
+> When documents are deleted (e.g. after emptying the trash) the original files will be moved here instead of being removed from the filesystem. Only the original version is kept.
+
+> 
+
+> This must be writeable by the user running paperless. When running inside docker, ensure that this path is within a permanent volume (such as "../media/trash") so it won't get lost on upgrades.
+
+> 
+
+> Note that the directory must exist prior to using this setting.
+
+> 
+
+> Defaults to empty (i.e. really delete files).
+
+> 
+
+> This setting was previously named PAPERLESS_TRASH_DIR.
+
+> 
+
+> PAPERLESS_MEDIA_ROOT=<path>
+
+> This is where your documents and thumbnails are stored.
+
+> 
+
+> You can set this and PAPERLESS_DATA_DIR to the same folder to have paperless store all its data within the same volume.
+
+> 
+
+> Defaults to "../media/", relative to the "src" directory.
+
+> 
+
+> PAPERLESS_STATICDIR=<path>
+
+> Override the default STATIC_ROOT here. This is where all static files created using "collectstatic" manager command are stored.
+
+> 
+
+> Unless you're doing something fancy, there is no need to override this. If this is changed, you may need to run collectstatic again.
+
+> 
+
+> Defaults to "../static/", relative to the "src" directory.
+
+> 
+
+> PAPERLESS_FILENAME_FORMAT=<format>
+
+> Changes the filenames paperless uses to store documents in the media directory. See File name handling for details.
+
+> 
+
+> Default is none, which disables this feature.
+
+> 
+
+> PAPERLESS_FILENAME_FORMAT_REMOVE_NONE=<bool>
+
+> Tells paperless to replace placeholders in PAPERLESS_FILENAME_FORMAT that would resolve to 'none' to be omitted from the resulting filename. This also holds true for directory names. See File name handling for details.
+
+> 
+
+> Defaults to false which disables this feature.
+
+> 
+
+> PAPERLESS_LOGGING_DIR=<path>
+
+> This is where paperless will store log files.
+
+> 
+
+> Defaults to PAPERLESS_DATA_DIR/log/.
+
+> 
+
+> PAPERLESS_NLTK_DIR=<path>
+
+> This is where paperless will search for the data required for NLTK processing, if you are using it. If you are using the Docker image, this should not be changed, as the data is included in the image already.
+
+> Previously, the location defaulted to PAPERLESS_DATA_DIR/nltk. Unless you are using this in a bare metal install or other setup, this folder is no longer needed and can be removed manually.
+
+> 
+
+> Defaults to /usr/share/nltk_data
+
+> 
+
+> PAPERLESS_MODEL_FILE=<path>
+
+> This is where paperless will store the classification model.
+
+> 
+
+> Defaults to PAPERLESS_DATA_DIR/classification_model.pickle.
+
+> 
+
+> Logging
+
+> PAPERLESS_LOGROTATE_MAX_SIZE=<num>
+
+> Maximum file size for log files before they are rotated, in bytes.
+
+> 
+
+> Defaults to 1 MiB.
+
+> 
+
+> PAPERLESS_LOGROTATE_MAX_BACKUPS=<num>
+
+> Number of rotated log files to keep.
+
+> 
+
+> Defaults to 20.
+
+> 
+
+> Hosting & Security
+
+> PAPERLESS_SECRET_KEY=<key>
+
+> Paperless uses this to make session tokens. If you expose paperless on the internet, you need to change this, since the default secret is well known.
+
+> 
+
+> Use any sequence of characters. The more, the better. You don't need to remember this. Just face-roll your keyboard.
+
+> 
+
+> Default is listed in the file src/paperless/settings.py.
+
+> 
+
+> PAPERLESS_URL=<url>
+
+> This setting can be used to set the three options below (ALLOWED_HOSTS, CORS_ALLOWED_HOSTS and CSRF_TRUSTED_ORIGINS). If the other options are set the values will be combined with this one. Do not include a trailing slash. E.g. https://paperless.domain.com
+
+> 
+
+> Defaults to empty string, leaving the other settings unaffected.
+
+> 
+
+> Note
+
+> 
+
+> This value cannot contain a path (e.g. domain.com/path), even if you are installing paperless-ngx at a subpath.
+
+> 
+
+> PAPERLESS_CSRF_TRUSTED_ORIGINS=<comma-separated-list>
+
+> A list of trusted origins for unsafe requests (e.g. POST). As of Django 4.0 this is required to access the Django admin via the web. See the Django project documentation on the settings
+
+> 
+
+> Can also be set using PAPERLESS_URL (see above).
+
+> 
+
+> Defaults to empty string, which does not add any origins to the trusted list.
+
+> 
+
+> PAPERLESS_ALLOWED_HOSTS=<comma-separated-list>
+
+> If you're planning on putting Paperless on the open internet, then you really should set this value to the domain name you're using. Failing to do so leaves you open to HTTP host header attacks. You can read more about this in the Django project's documentation
+
+> 
+
+> Just remember that this is a comma-separated list, so "example.com" is fine, as is "example.com,www.example.com", but NOT " example.com" or "example.com,"
+
+> 
+
+> Can also be set using PAPERLESS_URL (see above).
+
+> 
+
+> "localhost" is always allowed for docker healthcheck
+
+> 
+
+> Defaults to "*", which is all hosts.
+
+> 
+
+> PAPERLESS_CORS_ALLOWED_HOSTS=<comma-separated-list>
+
+> You need to add your servers to the list of allowed hosts that can do CORS calls. Set this to your public domain name.
+
+> 
+
+> Can also be set using PAPERLESS_URL (see above).
+
+> 
+
+> Defaults to "http://localhost:8000".
+
+> 
+
+> PAPERLESS_TRUSTED_PROXIES=<comma-separated-list>
+
+> This may be needed to prevent IP address spoofing if you are using e.g. fail2ban with log entries for failed authorization attempts. Value should be IP address(es).
+
+> 
+
+> Defaults to empty string.
+
+> 
+
+> PAPERLESS_FORCE_SCRIPT_NAME=<path>
+
+> To host paperless under a subpath url like example.com/paperless you set this value to /paperless. No trailing slash!
+
+> 
+
+> Defaults to none, which hosts paperless at "/".
+
+> 
+
+> PAPERLESS_STATIC_URL=<path>
+
+> Override the STATIC_URL here. Unless you're hosting Paperless off a specific path like /paperless/, you probably don't need to change this. If you do change it, be sure to include the trailing slash.
+
+> 
+
+> Defaults to "/static/".
+
+> 
+
+> Note
+
+> 
+
+> When hosting paperless behind a reverse proxy like Traefik or Nginx at a subpath e.g. example.com/paperlessngx you will also need to set PAPERLESS_FORCE_SCRIPT_NAME (see above).
+
+> 
+
+> PAPERLESS_AUTO_LOGIN_USERNAME=<username>
+
+> Specify a username here so that paperless will automatically perform login with the selected user.
+
+> 
+
+> Danger
+
+> 
+
+> Do not use this when exposing paperless on the internet. There are no checks in place that would prevent you from doing this.
+
+> 
+
+> Defaults to none, which disables this feature.
+
+> 
+
+> PAPERLESS_ADMIN_USER=<username>
+
+> If this environment variable is specified, Paperless automatically creates a superuser with the provided username at start. This is useful in cases where you can not run the createsuperuser command separately, such as Kubernetes or AWS ECS.
+
+> 
+
+> Requires PAPERLESS_ADMIN_PASSWORD be set.
+
+> 
+
+> Note
+
+> 
+
+> This will not change an existing [super]user's password, nor will it recreate a user that already exists. You can leave this throughout the lifecycle of the containers.
+
+> 
+
+> PAPERLESS_ADMIN_MAIL=<email>
+
+> (Optional) Specify superuser email address. Only used when PAPERLESS_ADMIN_USER is set.
+
+> 
+
+> Defaults to root@localhost.
+
+> 
+
+> PAPERLESS_ADMIN_PASSWORD=<password>
+
+> Only used when PAPERLESS_ADMIN_USER is set. This will be the password of the automatically created superuser.
+
+> PAPERLESS_COOKIE_PREFIX=<str>
+
+> Specify a prefix that is added to the cookies used by paperless to identify the currently logged in user. This is useful for when you're running two instances of paperless on the same host.
+
+> 
+
+> After changing this, you will have to login again.
+
+> 
+
+> Defaults to "", which does not alter the cookie names.
+
+> 
+
+> PAPERLESS_ENABLE_HTTP_REMOTE_USER=<bool>
+
+> Allows authentication via HTTP_REMOTE_USER which is used by some SSO applications.
+
+> 
+
+> Warning
+
+> 
+
+> This will allow authentication by simply adding a Remote-User: <username> header to a request. Use with care! You especially must ensure that any such header is not passed from external requests to your reverse-proxy to paperless (that would effectively bypass all authentication).
+
+> 
+
+> If you're exposing paperless to the internet directly (i.e. without a reverse proxy), do not use this.
+
+> 
+
+> Also see the warning in the official documentation.
+
+> 
+
+> Defaults to "false" which disables this feature.
+
+> 
+
+> PAPERLESS_ENABLE_HTTP_REMOTE_USER_API=<bool>
+
+> Allows authentication via HTTP_REMOTE_USER directly against the API
+
+> 
+
+> Warning
+
+> 
+
+> See the warning above about securing your installation when using remote user header authentication. This setting is separate from PAPERLESS_ENABLE_HTTP_REMOTE_USER to avoid introducing a security vulnerability to existing reverse proxy setups. As above, ensure that your reverse proxy does not simply pass the Remote-User header from the internet to paperless.
+
+> 
+
+> Defaults to "false" which disables this feature.
+
+> 
+
+> PAPERLESS_HTTP_REMOTE_USER_HEADER_NAME=<str>
+
+> If "PAPERLESS_ENABLE_HTTP_REMOTE_USER" or PAPERLESS_ENABLE_HTTP_REMOTE_USER_API are enabled, this property allows to customize the name of the HTTP header from which the authenticated username is extracted. Values are in terms of HttpRequest.META. Thus, the configured value must start with HTTP* followed by the normalized actual header name.
+
+> 
+
+> Defaults to "HTTP_REMOTE_USER".
+
+> 
+
+> PAPERLESS_LOGOUT_REDIRECT_URL=<str>
+
+> URL to redirect the user to after a logout. This can be used together with PAPERLESS_ENABLE_HTTP_REMOTE_USER and SSO to redirect the user back to the SSO application's logout page to complete the logout process.
+
+> 
+
+> Defaults to None, which disables this feature.
+
+> 
+
+> PAPERLESS_USE_X_FORWARD_HOST=<bool>
+
+> Configures the Django setting USE_X_FORWARDED_HOST which may be needed for hosting behind a proxy.
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_USE_X_FORWARD_PORT=<bool>
+
+> Configures the Django setting USE_X_FORWARDED_PORT which may be needed for hosting behind a proxy.
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_PROXY_SSL_HEADER=<json-list>
+
+> Configures the Django setting SECURE_PROXY_SSL_HEADER which may be needed for hosting behind a proxy. The two values in the list will form the tuple of HTTP header/value expected by Django, eg '["HTTP_X_FORWARDED_PROTO", "https"]'.
+
+> 
+
+> Defaults to None
+
+> 
+
+> Warning
+
+> 
+
+> Settings this value has security implications. Read the Django documentation and be sure you understand its usage before setting it.
+
+> 
+
+> PAPERLESS_EMAIL_CERTIFICATE_LOCATION=<path>
+
+> Configures an additional SSL certificate file containing a certificate or certificate chain which should be trusted for validating SSL connections against mail providers. This is for use with self-signed certificates against local IMAP servers.
+
+> 
+
+> Defaults to None.
+
+> 
+
+> Warning
+
+> 
+
+> Settings this value has security implications for the security of your email. Understand what it does and be sure you need to before setting.
+
+> 
+
+> Authentication & SSO
+
+> PAPERLESS_ACCOUNT_ALLOW_SIGNUPS=<bool>
+
+> Allow users to signup for a new Paperless-ngx account.
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_ACCOUNT_DEFAULT_GROUPS=<comma-separated-list>
+
+> A list of group names that users will be added to when they sign up for a new account. Groups listed here must already exist.
+
+> 
+
+> Defaults to None
+
+> 
+
+> PAPERLESS_SOCIALACCOUNT_PROVIDERS=<json>
+
+> This variable is used to setup login and signup via social account providers which are compatible with django-allauth. See the corresponding django-allauth documentation for a list of provider configurations. You will also need to include the relevant Django 'application' inside the PAPERLESS_APPS setting to activate that specific authentication provider (e.g. allauth.socialaccount.providers.openid_connect for the OIDC Connect provider).
+
+> 
+
+> Defaults to None, which does not enable any third party authentication systems.
+
+> 
+
+> PAPERLESS_SOCIAL_AUTO_SIGNUP=<bool>
+
+> Attempt to signup the user using retrieved email, username etc from the third party authentication system. See the corresponding django-allauth documentation
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_SOCIALACCOUNT_ALLOW_SIGNUPS=<bool>
+
+> Allow users to signup for a new Paperless-ngx account using any setup third party authentication systems.
+
+> 
+
+> Defaults to True
+
+> 
+
+> PAPERLESS_SOCIAL_ACCOUNT_SYNC_GROUPS=<bool>
+
+> Sync groups from the third party authentication system (e.g. OIDC) to Paperless-ngx. When enabled, users will be added or removed from groups based on their group membership in the third party authentication system. Groups must already exist in Paperless-ngx and have the same name as in the third party authentication system. Groups are updated upon logging in via the third party authentication system, see the corresponding django-allauth documentation.
+
+> In order to pass groups from the authentication system you will need to update your PAPERLESS_SOCIALACCOUNT_PROVIDERS setting by adding a top-level "SCOPES" setting which includes "groups", e.g.:
+
+> 
+
+> {"openid_connect":{"SCOPE": ["openid","profile","email","groups"]...
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_SOCIAL_ACCOUNT_DEFAULT_GROUPS=<comma-separated-list>
+
+> A list of group names that users who signup via social accounts will be added to upon signup. Groups listed here must already exist. If both the PAPERLESS_ACCOUNT_DEFAULT_GROUPS setting and this setting are used, the user will be added to both sets of groups.
+
+> 
+
+> Defaults to None
+
+> 
+
+> PAPERLESS_ACCOUNT_DEFAULT_HTTP_PROTOCOL=<string>
+
+> The protocol used when generating URLs, e.g. login callback URLs. See the corresponding django-allauth documentation
+
+> 
+
+> Defaults to 'https'
+
+> 
+
+> PAPERLESS_ACCOUNT_EMAIL_VERIFICATION=<string>
+
+> Determines whether email addresses are verified during signup (as performed by Django allauth). See the relevant paperless settings and the allauth docs
+
+> 
+
+> Defaults to 'optional'
+
+> 
+
+> Note
+
+> 
+
+> If you do not have a working email server set up this will be set to 'none'.
+
+> 
+
+> PAPERLESS_ACCOUNT_EMAIL_UNKNOWN_ACCOUNTS=<bool>
+
+> See the relevant django-allauth documentation
+
+> 
+
+> Defaults to True (from allauth)
+
+> 
+
+> PAPERLESS_DISABLE_REGULAR_LOGIN=<bool>
+
+> Disables the regular frontend username / password login, i.e. once you have setup SSO. Note that this setting does not disable the Django admin login nor logging in with local credentials via the API. To prevent access to the Django admin, consider blocking /admin/ in your web server or reverse proxy configuration.
+
+> 
+
+> You can optionally also automatically redirect users to the SSO login with PAPERLESS_REDIRECT_LOGIN_TO_SSO
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_REDIRECT_LOGIN_TO_SSO=<bool>
+
+> When this setting is enabled users will automatically be redirected (using javascript) to the first SSO provider login. You may still want to disable the frontend login form for clarity.
+
+> 
+
+> Defaults to False
+
+> 
+
+> PAPERLESS_ACCOUNT_SESSION_REMEMBER=<bool>
+
+> If false, sessions will expire at browser close, if true will use PAPERLESS_SESSION_COOKIE_AGE for expiration. See the corresponding django-allauth documentation
+
+> 
+
+> Defaults to True
+
+> 
+
+> PAPERLESS_SESSION_COOKIE_AGE=<int>
+
+> Login session cookie expiration. Applies if PAPERLESS_ACCOUNT_SESSION_REMEMBER is enabled. See the corresponding django documentation
+
+> 
+
+> Defaults to 1209600 (2 weeks)
+
+> 
+
+> OCR settings
+
+> Paperless uses OCRmyPDF for performing OCR on documents and images. Paperless uses sensible defaults for most settings, but all of them can be configured to your needs.
+
+> 
+
+> PAPERLESS_OCR_LANGUAGE=<lang>
+
+> Customize the language that paperless will attempt to use when parsing documents.
+
+> 
+
+> It should be a 3-letter code, see the list of languages Tesseract supports.
+
+> 
+
+> Set this to the language most of your documents are written in.
+
+> 
+
+> This can be a combination of multiple languages such as deu+eng, in which case Tesseract will use whatever language matches best. Keep in mind that Tesseract uses much more CPU time with multiple languages enabled.
+
+> 
+
+> If you are including languages that are not installed by default, you will need to also set PAPERLESS_OCR_LANGUAGES for docker deployments or install the tesseract language packages manually for bare metal installations.
+
+> 
+
+> Defaults to "eng".
+
+> 
+
+> Note
+
+> 
+
+> If your language contains a '-' such as chi-sim, you must use chi_sim.
+
+> 
+
+> PAPERLESS_OCR_MODE=<mode>
+
+> Tell paperless when and how to perform ocr on your documents. Three modes are available:
+
+> 
+
+> skip: Paperless skips all pages and will perform ocr only on pages where no text is present. This is the safest option.
+
+> 
+
+> redo: Paperless will OCR all pages of your documents and attempt to replace any existing text layers with new text. This will be useful for documents from scanners that already performed OCR with insufficient results. It will also perform OCR on purely digital documents.
+
+> 
+
+> This option may fail on some documents that have features that cannot be removed, such as forms. In this case, the text from the document is used instead.
+
+> 
+
+> force: Paperless rasterizes your documents, converting any text into images and puts the OCRed text on top. This works for all documents, however, the resulting document may be significantly larger and text won't appear as sharp when zoomed in.
+
+> 
+
+> The default is skip, which only performs OCR when necessary and always creates archived documents.
+
+> 
+
+> Read more about this in the OCRmyPDF documentation.
+
+> 
+
+> PAPERLESS_OCR_SKIP_ARCHIVE_FILE=<mode>
+
+> Specify when you would like paperless to skip creating an archived version of your documents. This is useful if you don't want to have two almost-identical versions of your documents in the media folder.
+
+> 
+
+> never: Never skip creating an archived version.
+
+> with_text: Skip creating an archived version for documents that already have embedded text.
+
+> always: Always skip creating an archived version.
+
+> The default is never.
+
+> 
+
+> PAPERLESS_OCR_CLEAN=<mode>
+
+> Tells paperless to use unpaper to clean any input document before sending it to tesseract. This uses more resources, but generally results in better OCR results. The following modes are available:
+
+> 
+
+> clean: Apply unpaper.
+
+> clean-final: Apply unpaper, and use the cleaned images to build the output file instead of the original images.
+
+> none: Do not apply unpaper.
+
+> Defaults to clean.
+
+> 
+
+> Note
+
+> 
+
+> clean-final is incompatible with ocr mode redo. When both clean-final and the ocr mode redo is configured, clean is used instead.
+
+> 
+
+> PAPERLESS_OCR_DESKEW=<bool>
+
+> Tells paperless to correct skewing (slight rotation of input images mainly due to improper scanning)
+
+> 
+
+> Defaults to true, which enables this feature.
+
+> 
+
+> Note
+
+> 
+
+> Deskewing is incompatible with ocr mode redo. Deskewing will get disabled automatically if redo is used as the ocr mode.
+
+> 
+
+> PAPERLESS_OCR_ROTATE_PAGES=<bool>
+
+> Tells paperless to correct page rotation (90°, 180° and 270° rotation).
+
+> 
+
+> If you notice that paperless is not rotating incorrectly rotated pages (or vice versa), try adjusting the threshold up or down (see below).
+
+> 
+
+> Defaults to true, which enables this feature.
+
+> 
+
+> PAPERLESS_OCR_ROTATE_PAGES_THRESHOLD=<num>
+
+> Adjust the threshold for automatic page rotation by PAPERLESS_OCR_ROTATE_PAGES. This is an arbitrary value reported by tesseract. "15" is a very conservative value, whereas "2" is a very aggressive option and will often result in correctly rotated pages being rotated as well.
+
+> 
+
+> Defaults to "12".
+
+> 
+
+> PAPERLESS_OCR_OUTPUT_TYPE=<type>
+
+> Specify the the type of PDF documents that paperless should produce.
+
+> 
+
+> pdf: Modify the PDF document as little as possible.
+
+> pdfa: Convert PDF documents into PDF/A-2b documents, which is a subset of the entire PDF specification and meant for storing documents long term.
+
+> pdfa-1, pdfa-2, pdfa-3 to specify the exact version of PDF/A you wish to use.
+
+> If not specified, pdfa is used. Remember that paperless also keeps the original input file as well as the archived version.
+
+> 
+
+> PAPERLESS_OCR_PAGES=<num>
+
+> Tells paperless to use only the specified amount of pages for OCR. Documents with less than the specified amount of pages get OCR'ed completely.
+
+> 
+
+> Specifying 1 here will only use the first page.
+
+> 
+
+> The value must be greater than or equal to 1 to be used.
+
+> 
+
+> When combined with PAPERLESS_OCR_MODE=redo or PAPERLESS_OCR_MODE=force, paperless will not modify any text it finds on excluded pages and copy it verbatim.
+
+> 
+
+> Defaults to unset, which disables this feature and always uses all pages.
+
+> 
+
+> PAPERLESS_OCR_IMAGE_DPI=<num>
+
+> Paperless will OCR any images you put into the system and convert them into PDF documents. This is useful if your scanner produces images. In order to do so, paperless needs to know the DPI of the image. Most images from scanners will have this information embedded and paperless will detect and use that information. In case this fails, it uses this value as a fallback.
+
+> 
+
+> Set this to the DPI your scanner produces images at.
+
+> 
+
+> Defaults to unset, which will automatically calculate image DPI so that the produced PDF documents are A4 sized.
+
+> 
+
+> PAPERLESS_OCR_MAX_IMAGE_PIXELS=<num>
+
+> Paperless will raise a warning when OCRing images which are over this limit and will not OCR images which are more than twice this limit. Note this does not prevent the document from being consumed, but could result in missing text content.
+
+> 
+
+> If unset, will default to the value determined by Pillow.
+
+> 
+
+> Setting this value to 0 will entirely disable the limit. See the below warning.
+
+> 
+
+> Note
+
+> 
+
+> Increasing this limit could cause Paperless to consume additional resources when consuming a file. Be sure you have sufficient system resources.
+
+> 
+
+> Warning
+
+> 
+
+> The limit is intended to prevent malicious files from consuming system resources and causing crashes and other errors. Only change this value if you are certain your documents are not malicious and you need the text which was not OCRed
+
+> 
+
+> PAPERLESS_OCR_COLOR_CONVERSION_STRATEGY=<RGB>
+
+> Controls the Ghostscript color conversion strategy when creating the archive file. This setting will only be utilized if the output is a version of PDF/A.
+
+> 
+
+> Valid options are CMYK, Gray, LeaveColorUnchanged, RGB or UseDeviceIndependentColor.
+
+> 
+
+> You can find more on the settings here in the Ghostscript documentation.
+
+> 
+
+> Warning
+
+> 
+
+> Utilizing some of the options may result in errors when creating archive files from PDFs.
+
+> 
+
+> PAPERLESS_OCR_USER_ARGS=<json>
+
+> OCRmyPDF offers many more options. Use this parameter to specify any additional arguments you wish to pass to OCRmyPDF. Since Paperless uses the API of OCRmyPDF, you have to specify these in a format that can be passed to the API. See the API reference of OCRmyPDF for valid parameters. All command line options are supported, but they use underscores instead of dashes.
+
+> 
+
+> Warning
+
+> 
+
+> Paperless has been tested to work with the OCR options provided above. There are many options that are incompatible with each other, so specifying invalid options may prevent paperless from consuming any documents. Use with caution!
+
+> 
+
+> Specify arguments as a JSON dictionary. Keep note of lower case booleans and double quoted parameter names and strings. Examples:
+
+> 
+
+> {"deskew": true, "optimize": 3, "unpaper_args": "--pre-rotate 90"}
+
+> Software tweaks
+
+> PAPERLESS_TASK_WORKERS=<num>
+
+> Paperless does multiple things in the background: Maintain the search index, maintain the automatic matching algorithm, check emails, consume documents, etc. This variable specifies how many things it will do in parallel.
+
+> 
+
+> Defaults to 1
+
+> 
+
+> PAPERLESS_THREADS_PER_WORKER=<num>
+
+> Furthermore, paperless uses multiple threads when consuming documents to speed up OCR. This variable specifies how many pages paperless will process in parallel on a single document.
+
+> 
+
+> Warning
+
+> 
+
+> Ensure that the product
+
+> 
+
+> PAPERLESS_TASK_WORKERS * PAPERLESS_THREADS_PER_WORKER
+
+> 
+
+> does not exceed your CPU core count or else paperless will be extremely slow. If you want paperless to process many documents in parallel, choose a high worker count. If you want paperless to process very large documents faster, use a higher thread per worker count.
+
+> 
+
+> If unset, paperless uses max(floor(cpu_count / PAPERLESS_TASK_WORKERS), 1) threads per worker. The idea behind this is that as long as there are enough cores, the total number of threads should less than or equal to the total number of (logical) CPU cores.
+
+> 
+
+> PAPERLESS_WORKER_TIMEOUT=<num>
+
+> Machines with few cores or weak ones might not be able to finish OCR on large documents within the default 1800 seconds. So extending this timeout may prove to be useful on weak hardware setups.
+
+> PAPERLESS_TIME_ZONE=<timezone>
+
+> Set the time zone here. See more details on why and how to set it in the Django project documentation for details on how to set it.
+
+> 
+
+> Defaults to UTC.
+
+> 
+
+> PAPERLESS_ENABLE_NLTK=<bool>
+
+> Enables or disables the advanced natural language processing used during automatic classification. If disabled, paperless will still perform some basic text pre-processing before matching.
+
+> See also PAPERLESS_NLTK_DIR.
+
+> 
+
+> Defaults to true, enabling the feature.
+
+> 
+
+> PAPERLESS_DATE_PARSER_LANGUAGES=<lang>
+
+> Specifies which language Paperless should use when parsing dates from documents.
+
+> 
+
+> This should be a language code supported by the dateparser library,
+
+> for example: "en", or a combination such as "en+de".
+
+> Locales are also supported (e.g., "en-AU").
+
+> Multiple languages can be combined using "+", for example: "en+de" or "en-AU+de".
+
+> For valid values, refer to the list of supported languages and locales in the [dateparser documentation](https://dateparser.readthedocs.io/en/latest/supported_locales.html).
+
+> 
+
+> Set this to match the languages in which most of your documents are written.
+
+> If not set, Paperless will attempt to infer the language(s) from the OCR configuration (`PAPERLESS_OCR_LANGUAGE`).
+
+> Note
+
+> 
+
+> This format differs from the PAPERLESS_OCR_LANGUAGE setting, which uses ISO 639-2 codes (3 letters, e.g., "eng+deu" for Tesseract OCR).
+
+> 
+
+> PAPERLESS_EMAIL_TASK_CRON=<cron expression>
+
+> Configures the scheduled email fetching frequency. The value should be a valid crontab(5) expression describing when to run.
+
+> If set to the string "disable", no emails will be fetched automatically.
+
+> 
+
+> Defaults to */10 * * * * or every ten minutes.
+
+> 
+
+> PAPERLESS_TRAIN_TASK_CRON=<cron expression>
+
+> Configures the scheduled automatic classifier training frequency. The value should be a valid crontab(5) expression describing when to run.
+
+> If set to the string "disable", the classifier will not be trained automatically.
+
+> 
+
+> Defaults to 5 */1 * * * or every hour at 5 minutes past the hour.
+
+> 
+
+> PAPERLESS_INDEX_TASK_CRON=<cron expression>
+
+> Configures the scheduled search index update frequency. The value should be a valid crontab(5) expression describing when to run.
+
+> If set to the string "disable", the search index will not be automatically updated.
+
+> 
+
+> Defaults to 0 0 * * * or daily at midnight.
+
+> 
+
+> PAPERLESS_SANITY_TASK_CRON=<cron expression>
+
+> Configures the scheduled sanity checker frequency. The value should be a valid crontab(5) expression describing when to run.
+
+> If set to the string "disable", the sanity checker will not run automatically.
+
+> 
+
+> Defaults to 30 0 * * sun or Sunday at 30 minutes past midnight.
+
+> 
+
+> PAPERLESS_WORKFLOW_SCHEDULED_TASK_CRON=<cron expression>
+
+> Configures the scheduled workflow check frequency. The value should be a valid crontab(5) expression describing when to run.
+
+> If set to the string "disable", scheduled workflows will not run.
+
+> 
+
+> Defaults to 5 */1 * * * or every hour at 5 minutes past the hour.
+
+> 
+
+> PAPERLESS_ENABLE_COMPRESSION=<bool>
+
+> Enables compression of the responses from the webserver.
+
+> Defaults to true, enabling compression.
+
+> 
+
+> Note
+
+> 
+
+> If you are using a proxy such as nginx, it is likely more efficient to enable compression in your proxy configuration rather than the webserver
+
+> 
+
+> PAPERLESS_CONVERT_MEMORY_LIMIT=<num>
+
+> On smaller systems, or even in the case of Very Large Documents, the consumer may explode, complaining about how it's "unable to extend pixel cache". In such cases, try setting this to a reasonably low value, like 32. The default is to use whatever is necessary to do everything without writing to disk, and units are in megabytes.
+
+> 
+
+> For more information on how to use this value, you should search the web for "MAGICK_MEMORY_LIMIT".
+
+> 
+
+> Defaults to 0, which disables the limit.
+
+> 
+
+> PAPERLESS_CONVERT_TMPDIR=<path>
+
+> Similar to the memory limit, if you've got a small system and your OS mounts /tmp as tmpfs, you should set this to a path that's on a physical disk, like /home/your_user/tmp or something. ImageMagick will use this as scratch space when crunching through very large documents.
+
+> 
+
+> For more information on how to use this value, you should search the web for "MAGICK_TMPDIR".
+
+> 
+
+> Default is none, which disables the temporary directory.
+
+> 
+
+> PAPERLESS_APPS=<string>
+
+> A comma-separated list of Django apps to be included in Django's INSTALLED_APPS. This setting should be used with caution!
+
+> 
+
+> Defaults to None, which does not add any additional apps.
+
+> 
+
+> PAPERLESS_MAX_IMAGE_PIXELS=<number>
+
+> Configures the maximum size of an image PIL will allow to load without warning or error.
+
+> If unset, will default to the value determined by Pillow.
+
+> 
+
+> Defaults to None, which does change the limit
+
+> 
+
+> Warning
+
+> 
+
+> This limit is designed to prevent denial of service from malicious files. It should only be raised or disabled in certain circumstances and with great care.
+
+> 
+
+> Document Consumption
+
+> PAPERLESS_CONSUMER_DISABLE
+
+> If set (to anything), this completely disables the directory-based consumer in docker. If you don't plan to consume documents via the consumption directory, you can disable the consumer to save resources.
+
+> PAPERLESS_CONSUMER_DELETE_DUPLICATES=<bool>
+
+> When the consumer detects a duplicate document, it will not touch the original document. This default behavior can be changed here.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_RECURSIVE=<bool>
+
+> Enable recursive watching of the consumption directory. Paperless will then pickup files from files in subdirectories within your consumption directory as well.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_SUBDIRS_AS_TAGS=<bool>
+
+> Set the names of subdirectories as tags for consumed files. E.g. <CONSUMPTION_DIR>/foo/bar/file.pdf will add the tags "foo" and "bar" to the consumed file. Paperless will create any tags that don't exist yet.
+
+> 
+
+> This is useful for sorting documents with certain tags such as car or todo prior to consumption. These folders won't be deleted.
+
+> 
+
+> PAPERLESS_CONSUMER_RECURSIVE must be enabled for this to work.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_IGNORE_PATTERNS=<json>
+
+> By default, paperless ignores certain files and folders in the consumption directory, such as system files created by the Mac OS or hidden folders some tools use to store data.
+
+> 
+
+> This can be adjusted by configuring a custom json array with patterns to exclude.
+
+> 
+
+> For example, .DS_STORE/* will ignore any files found in a folder named .DS_STORE, including .DS_STORE/bar.pdf and foo/.DS_STORE/bar.pdf
+
+> 
+
+> A pattern like ._* will ignore anything starting with ._, including: ._foo.pdf and ._bar/foo.pdf
+
+> 
+
+> Defaults to [".DS_Store", ".DS_STORE", "._*", ".stfolder/*", ".stversions/*", ".localized/*", "desktop.ini", "@eaDir/*", "Thumbs.db"].
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_SCANNER=<string>
+
+> Sets the barcode scanner used for barcode functionality.
+
+> 
+
+> Currently, "PYZBAR" (the default) or "ZXING" might be selected. If you have problems that your Barcodes/QR-Codes are not detected (especially with bad scan quality and/or small codes), try the other one.
+
+> 
+
+> PAPERLESS_PRE_CONSUME_SCRIPT=<filename>
+
+> After some initial validation, Paperless can trigger an arbitrary script if you like before beginning consumption. This script will be provided data for it to work with via the environment.
+
+> 
+
+> For more information, take a look at pre-consumption script.
+
+> 
+
+> The default is blank, which means nothing will be executed.
+
+> 
+
+> PAPERLESS_POST_CONSUME_SCRIPT=<filename>
+
+> After a document is consumed, Paperless can trigger an arbitrary script if you like. This script will be provided data for it to work with via the environment.
+
+> 
+
+> For more information, take a look at Post-consumption script.
+
+> 
+
+> The default is blank, which means nothing will be executed.
+
+> 
+
+> PAPERLESS_FILENAME_DATE_ORDER=<format>
+
+> Paperless will check the document text for document date information. Use this setting to enable checking the document filename for date information. The date order can be set to any option as specified in https://dateparser.readthedocs.io/en/latest/settings.html#date-order. The filename will be checked first, and if nothing is found, the document text will be checked as normal.
+
+> 
+
+> A date in a filename must have some separators (., ,, -, /, etc) for it to be parsed.
+
+> 
+
+> Defaults to none, which disables this feature.
+
+> 
+
+> PAPERLESS_NUMBER_OF_SUGGESTED_DATES=<num>
+
+> Paperless searches an entire document for dates. The first date found will be used as the initial value for the created date. When this variable is greater than 0 (or left to its default value), paperless will also suggest other dates found in the document, up to a maximum of this setting. Note that duplicates will be removed, which can result in fewer dates displayed in the frontend than this setting value.
+
+> 
+
+> The task to find all dates can be time-consuming and increases with a higher (maximum) number of suggested dates and slower hardware.
+
+> 
+
+> Defaults to 3. Set to 0 to disable this feature.
+
+> 
+
+> PAPERLESS_THUMBNAIL_FONT_NAME=<filename>
+
+> Paperless creates thumbnails for plain text files by rendering the content of the file on an image and uses a predefined font for that. This font can be changed here.
+
+> 
+
+> Note that this won't have any effect on already generated thumbnails.
+
+> 
+
+> Defaults to /usr/share/fonts/liberation/LiberationSerif-Regular.ttf.
+
+> 
+
+> PAPERLESS_IGNORE_DATES=<string>
+
+> Paperless parses a document's creation date from filename and file content. You may specify a comma separated list of dates that should be ignored during this process. This is useful for special dates (like date of birth) that appear in documents regularly but are very unlikely to be the document's creation date.
+
+> 
+
+> The date is parsed using the order specified in PAPERLESS_DATE_ORDER
+
+> 
+
+> Defaults to an empty string to not ignore any dates.
+
+> 
+
+> PAPERLESS_DATE_ORDER=<format>
+
+> Paperless will try to determine the document creation date from its contents. Specify the date format Paperless should expect to see within your documents.
+
+> 
+
+> This option defaults to DMY which translates to day first, month second, and year last order. Characters D, M, or Y can be shuffled to meet the required order.
+
+> 
+
+> PAPERLESS_ENABLE_GPG_DECRYPTOR=<bool>
+
+> Enable or disable the GPG decryptor for encrypted emails. See GPG Decryptor for more information.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> Polling
+
+> PAPERLESS_CONSUMER_POLLING=<num>
+
+> If paperless won't find documents added to your consume folder, it might not be able to automatically detect filesystem changes. In that case, specify a polling interval in seconds here, which will then cause paperless to periodically check your consumption directory for changes. This will also disable listening for file system changes with inotify.
+
+> 
+
+> Defaults to 0, which disables polling and uses filesystem notifications.
+
+> 
+
+> PAPERLESS_CONSUMER_POLLING_RETRY_COUNT=<num>
+
+> If consumer polling is enabled, sets the maximum number of times paperless will check for a file to remain unmodified. If a file's modification time and size are identical for two consecutive checks, it will be consumed.
+
+> 
+
+> Defaults to 5.
+
+> 
+
+> PAPERLESS_CONSUMER_POLLING_DELAY=<num>
+
+> If consumer polling is enabled, sets the delay in seconds between each check (above) paperless will do while waiting for a file to remain unmodified.
+
+> 
+
+> Defaults to 5.
+
+> 
+
+> iNotify
+
+> PAPERLESS_CONSUMER_INOTIFY_DELAY=<num>
+
+> Sets the time in seconds the consumer will wait for additional events from inotify before the consumer will consider a file ready and begin consumption. Certain scanners or network setups may generate multiple events for a single file, leading to multiple consumers working on the same file. Configure this to prevent that.
+
+> 
+
+> Defaults to 0.5 seconds.
+
+> 
+
+> Workflow webhooks
+
+> PAPERLESS_WEBHOOKS_ALLOWED_SCHEMES=<str>
+
+> A comma-separated list of allowed schemes for webhooks. This setting controls which URL schemes are permitted for webhook URLs.
+
+> 
+
+> Defaults to http,https.
+
+> 
+
+> PAPERLESS_WEBHOOKS_ALLOWED_PORTS=<str>
+
+> A comma-separated list of allowed ports for webhooks. This setting controls which ports are permitted for webhook URLs. For example, if you set this to 80,443, webhooks will only be sent to URLs that use these ports.
+
+> 
+
+> Defaults to empty list, which allows all ports.
+
+> 
+
+> PAPERLESS_WEBHOOKS_ALLOW_INTERNAL_REQUESTS=<bool>
+
+> If set to false, webhooks cannot be sent to internal URLs (e.g., localhost).
+
+> 
+
+> Defaults to true, which allows internal requests.
+
+> 
+
+> Incoming Mail
+
+> Email OAuth
+
+> PAPERLESS_OAUTH_CALLBACK_BASE_URL=<str>
+
+> The base URL for the OAuth callback. This is used to construct the full URL for the OAuth callback. This should be the URL that the Paperless instance is accessible at. If not set, defaults to the PAPERLESS_URL setting. At least one of these settings must be set to enable OAuth Email setup.
+
+> 
+
+> Defaults to none (thus will use PAPERLESS_URL).
+
+> 
+
+> Note
+
+> 
+
+> This setting only applies to OAuth Email setup (not to the SSO setup).
+
+> 
+
+> PAPERLESS_GMAIL_OAUTH_CLIENT_ID=<str>
+
+> The OAuth client ID for Gmail. This is required for Gmail OAuth Email setup. See OAuth Email Setup for more information.
+
+> 
+
+> Defaults to none.
+
+> 
+
+> PAPERLESS_GMAIL_OAUTH_CLIENT_SECRET=<str>
+
+> The OAuth client secret for Gmail. This is required for Gmail OAuth Email setup. See OAuth Email Setup for more information.
+
+> 
+
+> Defaults to none.
+
+> 
+
+> PAPERLESS_OUTLOOK_OAUTH_CLIENT_ID=<str>
+
+> The OAuth client ID for Outlook. This is required for Outlook OAuth Email setup. See OAuth Email Setup for more information.
+
+> 
+
+> Defaults to none.
+
+> 
+
+> PAPERLESS_OUTLOOK_OAUTH_CLIENT_SECRET=<str>
+
+> The OAuth client secret for Outlook. This is required for Outlook OAuth Email setup. See OAuth Email Setup for more information.
+
+> 
+
+> Defaults to none.
+
+> 
+
+> Encrypted Emails
+
+> PAPERLESS_EMAIL_GNUPG_HOME=<str>
+
+> Optional, sets the GNUPG_HOME path to use with GPG decryptor for encrypted emails. See GPG Decryptor for more information. If not set, defaults to the default GNUPG_HOME path.
+
+> 
+
+> Defaults to .
+
+> 
+
+> Barcodes
+
+> PAPERLESS_CONSUMER_ENABLE_BARCODES=<bool>
+
+> Enables the scanning and page separation based on detected barcodes. This allows for scanning and adding multiple documents per uploaded file, which are separated by one or multiple barcode pages.
+
+> 
+
+> For ease of use, it is suggested to use a standardized separation page, e.g. here.
+
+> 
+
+> If no barcodes are detected in the uploaded file, no page separation will happen.
+
+> 
+
+> The original document will be removed and the separated pages will be saved as pdf.
+
+> 
+
+> See additional information in the advanced usage documentation
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_TIFF_SUPPORT=<bool>
+
+> Whether TIFF image files should be scanned for barcodes. This will automatically convert any TIFF image(s) to pdfs for later processing. This only has an effect, if PAPERLESS_CONSUMER_ENABLE_BARCODES has been enabled.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_STRING=<string>
+
+> Defines the string to be detected as a separator barcode. If paperless is used with the PATCH-T separator pages, users shouldn't change this.
+
+> 
+
+> Defaults to "PATCHT"
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_RETAIN_SPLIT_PAGES=<bool>
+
+> If set to true, all pages that are split by a barcode (such as PATCHT) will be kept.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_ENABLE_ASN_BARCODE=<bool>
+
+> Enables the detection of barcodes in the scanned document and setting the ASN (archive serial number) if a properly formatted barcode is detected.
+
+> 
+
+> The barcode must consist of a (configurable) prefix and the ASN to be set, for instance ASN00123. The content after the prefix is cleaned of non-numeric characters.
+
+> 
+
+> This option is compatible with barcode page separation, since pages will be split up before reading the ASN.
+
+> 
+
+> If no ASN barcodes are detected in the uploaded file, no ASN will be set. If a barcode with an existing ASN is detected, the document will not be consumed and an error logged.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_ASN_BARCODE_PREFIX=<string>
+
+> Defines the prefix that is used to identify a barcode as an ASN barcode.
+
+> 
+
+> Defaults to "ASN"
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_UPSCALE=<float>
+
+> Defines the upscale factor used in barcode detection. Improves the detection of small barcodes, i.e. with a value of 1.5 by upscaling the document before the detection process. Upscaling will only take place if value is bigger than 1.0. Otherwise upscaling will not be performed to save resources. Try using in combination with PAPERLESS_CONSUMER_BARCODE_DPI set to a value higher than default.
+
+> 
+
+> Defaults to 0.0
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_DPI=<int>
+
+> During barcode detection every page from a PDF document needs to be converted to an image. A dpi value can be specified in the conversion process. Default is 300. If the detection of small barcodes fails a bigger dpi value i.e. 600 can fix the issue. Try using in combination with PAPERLESS_CONSUMER_BARCODE_UPSCALE bigger than 1.0.
+
+> 
+
+> Defaults to "300"
+
+> 
+
+> PAPERLESS_CONSUMER_BARCODE_MAX_PAGES=<int>
+
+> Because barcode detection is a computationally-intensive operation, this setting limits the detection of barcodes to a number of first pages. If your scanner has a limit for the number of pages that can be scanned it would be sensible to set this as the limit here.
+
+> 
+
+> Defaults to "0", allowing all pages to be checked for barcodes.
+
+> 
+
+> PAPERLESS_CONSUMER_ENABLE_TAG_BARCODE=<bool>
+
+> Enables the detection of barcodes in the scanned document and assigns or creates tags if a properly formatted barcode is detected.
+
+> 
+
+> The barcode must match one of the (configurable) regular expressions. If the barcode text contains ',' (comma), it is split into multiple barcodes which are individually processed for tagging.
+
+> 
+
+> Matching is case insensitive.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_TAG_BARCODE_MAPPING=<json dict>
+
+> Defines a dictionary of filter regex and substitute expressions.
+
+> 
+
+> Syntax: {"<regex>": "<substitute>" [,...]]}
+
+> 
+
+> A barcode is considered for tagging if the barcode text matches at least one of the provided pattern.
+
+> 
+
+> If a match is found, the rule is applied. This allows very versatile reformatting and mapping of barcode pattern to tag values.
+
+> 
+
+> If a tag is not found it will be created.
+
+> 
+
+> Defaults to:
+
+> 
+
+> {"TAG:(.*)": "\\g<1>"} which defines - a regex TAG:(.*) which includes barcodes beginning with TAG: followed by any text that gets stored into match group #1 and - a substitute \\g<1> that replaces the original barcode text by the content in match group #1. Consequently, the tag is the barcode text without its TAG: prefix.
+
+> 
+
+> More examples:
+
+> 
+
+> {"ASN12.*": "JOHN", "ASN13.*": "SMITH"} for example maps - ASN12nnnn barcodes to the tag JOHN and - ASN13nnnn barcodes to the tag SMITH.
+
+> 
+
+> {"T-J": "JOHN", "T-S": "SMITH", "T-D": "DOE"} directly maps - T-J barcodes to the tag JOHN, - T-S barcodes to the tag SMITH and - T-D barcodes to the tag DOE.
+
+> 
+
+> Please refer to the Python regex documentation for more information.
+
+> 
+
+> Audit Trail
+
+> PAPERLESS_AUDIT_LOG_ENABLED=<bool>
+
+> Enables the audit trail for documents, document types, correspondents, and tags.
+
+> 
+
+> Defaults to true.
+
+> 
+
+> Collate Double-Sided Documents
+
+> PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED=<bool>
+
+> Enables automatic collation of two single-sided scans into a double-sided document.
+
+> 
+
+> This is useful if you have an automatic document feeder that only supports single-sided scans, but you need to scan a double-sided document. If your ADF supports double-sided scans natively, you do not need this feature.
+
+> 
+
+> PAPERLESS_CONSUMER_RECURSIVE must be enabled for this to work.
+
+> 
+
+> For more information, read the corresponding section in the advanced documentation.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> PAPERLESS_CONSUMER_COLLATE_DOUBLE_SIDED_SUBDIR_NAME=<str>
+
+> The name of the subdirectory that the collate feature expects documents to arrive.
+
+> 
+
+> This only has an effect if PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED has been enabled. Note that Paperless will not automatically create the directory.
+
+> 
+
+> Defaults to "double-sided".
+
+> 
+
+> PAPERLESS_CONSUMER_COLLATE_DOUBLE_SIDED_TIFF_SUPPORT=<bool>
+
+> Whether TIFF image files should be supported when collating documents. This will automatically convert any TIFF image(s) to pdfs for later processing. This only has an effect if PAPERLESS_CONSUMER_ENABLE_COLLATE_DOUBLE_SIDED has been enabled.
+
+> 
+
+> Defaults to false.
+
+> 
+
+> Trash
+
+> PAPERLESS_EMPTY_TRASH_DELAY=<num>
+
+> Sets how long in days documents remain in the 'trash' before they are permanently deleted.
+
+> 
+
+> Defaults to 30 days, minimum of 1 day.
+
+> 
+
+> PAPERLESS_EMPTY_TRASH_TASK_CRON=<cron expression>
+
+> Configures the schedule to empty the trash of expired deleted documents.
+
+> 
+
+> Defaults to 0 1 * * *, once per day.
+
+> 
+
+> Binaries
+
+> There are a few external software packages that Paperless expects to find on your system when it starts up. Unless you've done something creative with their installation, you probably won't need to edit any of these. However, if you've installed these programs somewhere where simply typing the name of the program doesn't automatically execute it (ie. the program isn't in your $PATH), then you'll need to specify the literal path for that program.
+
+> 
+
+> PAPERLESS_CONVERT_BINARY=<path>
+
+> Defaults to "convert".
+
+> PAPERLESS_GS_BINARY=<path>
+
+> Defaults to "gs".
+
+> Docker-specific options
+
+> These options don't have any effect in paperless.conf. These options adjust the behavior of the docker container. Configure these in docker-compose.env.
+
+> 
+
+> PAPERLESS_WEBSERVER_WORKERS=<num>
+
+> The number of worker processes the webserver should spawn. More worker processes usually result in the front end to load data much quicker. However, each worker process also loads the entire application into memory separately, so increasing this value will increase RAM usage.
+
+> 
+
+> Defaults to 1.
+
+> 
+
+> Note
+
+> 
+
+> This option may also be set with GRANIAN_WORKERS and this option may be removed in the future
+
+> 
+
+> PAPERLESS_BIND_ADDR=<ip address>
+
+> The IP address the webserver will listen on inside the container. There are special setups where you may need to configure this value to restrict the Ip address or interface the webserver listens on.
+
+> 
+
+> Defaults to ::, meaning all interfaces, including IPv6.
+
+> 
+
+> Note
+
+> 
+
+> This option may also be set with GRANIAN_HOST and this option may be removed in the future
+
+> 
+
+> PAPERLESS_PORT=<port>
+
+> The port number the webserver will listen on inside the container. There are special setups where you may need this to avoid collisions with other services (like using podman with multiple containers in one pod).
+
+> 
+
+> Don't change this when using Docker. To change the port the webserver is reachable outside of the container, instead refer to the "ports" key in docker-compose.yml.
+
+> 
+
+> Defaults to 8000.
+
+> 
+
+> Note
+
+> 
+
+> This option may also be set with GRANIAN_PORT and this option may be removed in the future
+
+> 
+
+> USERMAP_UID=<uid>
+
+> The ID of the paperless user in the container. Set this to your actual user ID on the host system, which you can get by executing
+
+> 
+
+> id -u
+
+> Paperless will change ownership on its folders to this user, so you need to get this right in order to be able to write to the consumption directory.
+
+> 
+
+> Defaults to 1000.
+
+> 
+
+> USERMAP_GID=<gid>
+
+> The ID of the paperless Group in the container. Set this to your actual group ID on the host system, which you can get by executing
+
+> 
+
+> id -g
+
+> Paperless will change ownership on its folders to this group, so you need to get this right in order to be able to write to the consumption directory.
+
+> 
+
+> Defaults to 1000.
+
+> 
+
+> PAPERLESS_OCR_LANGUAGES=<list>
+
+> Additional OCR languages to install. By default, paperless comes with English, German, Italian, Spanish and French. If your language is not in this list, install additional languages with this configuration option. You will need to find the right LangCodes but note that tesseract-ocr-* package names do not always correspond with the language codes e.g. "chi_tra" should be specified as "chi-tra".
+
+> 
+
+> PAPERLESS_OCR_LANGUAGES=tur ces chi-tra
+
+> Make sure it's a space-separated list when using several values.
+
+> 
+
+> To actually use these languages, also set the default OCR language of paperless:
+
+> 
+
+> PAPERLESS_OCR_LANGUAGE=tur
+
+> Defaults to none, which does not install any additional languages.
+
+> 
+
+> Warning
+
+> 
+
+> This option must not be used in rootless containers.
+
+> 
+
+> PAPERLESS_ENABLE_FLOWER=<defined>
+
+> If this environment variable is defined, the Celery monitoring tool Flower will be started by the container.
+
+> 
+
+> You can read more about this in the advanced documentation.
+
+> 
+
+> PAPERLESS_SUPERVISORD_WORKING_DIR=<defined>
+
+> Warning
+
+> 
+
+> This option is deprecated and has no effect.  For read only file system support,
+
+> see [S6_READ_ONLY_ROOT](https://github.com/just-containers/s6-overlay#customizing-s6-overlay-behaviour)
+
+> from s6-overlay.
+
+> Frontend Settings
+
+> PAPERLESS_APP_TITLE=<str>
+
+> If set, overrides the default name "Paperless-ngx"
+
+> PAPERLESS_APP_LOGO=<path>
+
+> Path to an image file in the /media/logo directory, must include 'logo', e.g. /logo/Atari_logo.svg
+
+> Note
+
+> 
+
+> The logo file will be viewable by anyone with access to the Paperless instance login page, so consider your choice of logo carefully and removing exif data from images before uploading.
+
+> 
+
+> PAPERLESS_ENABLE_UPDATE_CHECK=<bool>
+
+> Note
+
+> 
+
+> This setting was deprecated in favor of a frontend setting after v1.9.2. A one-time migration is performed for users who have this setting set. This setting is always ignored if the corresponding frontend setting has been set.
+
+> 
+
+> Email sending
+
+> Setting an SMTP server for the backend will allow you to use the Email workflow action, send documents from the UI as well as reset your password. All of these options come from their similarly-named Django settings
+
+> 
+
+> PAPERLESS_EMAIL_HOST=<str>
+
+> Defaults to 'localhost'.
+
+> PAPERLESS_EMAIL_PORT=<int>
+
+> Defaults to port 25.
+
+> PAPERLESS_EMAIL_HOST_USER=<str>
+
+> Defaults to ''.
+
+> PAPERLESS_EMAIL_FROM=<str>
+
+> Defaults to PAPERLESS_EMAIL_HOST_USER if not set.
+
+> PAPERLESS_EMAIL_HOST_PASSWORD=<str>
+
+> Defaults to ''.
+
+> PAPERLESS_EMAIL_USE_TLS=<bool>
+
+> Defaults to false.
+
+> PAPERLESS_EMAIL_USE_SSL=<bool>
+
+> Defaults to false.
+
+>  Back to top
+
+> Copyright © 2016 - 2023 Daniel Quinn, Jonas Winkler, and the Paperless-ngx team
+
 > Made with Material for MkDocs
 
 ### Assistant
@@ -3790,23 +5077,40 @@ canonical_ref: ""
 > If you don’t answer, choose **per document** — it aligns with ASN uniqueness and court evidence handling.
 
 ### User
-> Enable Barcodes 
-> Enable
-> Enable TIFF Support 
-> Enable  
-> Barcode String 
-> false
-> Retain Split Pages 
-> Enable  
-> Enable ASN 
-> Enable
-> ASN Prefix 
-> ASN
-> Upscale 
-> DPI 
-> Max Pages 
-> Enable Tag Detection 
-> Enable  
+> Enable Barcodes 
+
+> Enable
+
+> Enable TIFF Support 
+
+> Enable  
+
+> Barcode String 
+
+> false
+
+> Retain Split Pages 
+
+> Enable  
+
+> Enable ASN 
+
+> Enable
+
+> ASN Prefix 
+
+> ASN
+
+> Upscale 
+
+> DPI 
+
+> Max Pages 
+
+> Enable Tag Detection 
+
+> Enable  
+
 > Tag Mapping 
 > 
 > -- to answer your questions you know our QIDs are only qid000000_0 so the id wouls just be ASN000000 or asn00000000
@@ -4228,20 +5532,34 @@ canonical_ref: ""
 > Tell me which one and we’ll lock it.
 
 ### User
-> ok no wi am in mail and need to add my mail clients, from my domains, since i am loosing zoho mail and dont ahve my domains connected to nothing else yet, i will need to forward all incoming somehow just fyi, dont know if that matters here. here are the settign in paperless. Mail Settings 
-> Mail accounts
-> Name
-> Server
-> Username
-> Actions
-> No mail accounts defined.
-> Mail rules
-> Name
-> Sort Order
-> Account
-> Status
-> Processed Mail
-> Actions
+> ok no wi am in mail and need to add my mail clients, from my domains, since i am loosing zoho mail and dont ahve my domains connected to nothing else yet, i will need to forward all incoming somehow just fyi, dont know if that matters here. here are the settign in paperless. Mail Settings 
+
+> Mail accounts
+
+> Name
+
+> Server
+
+> Username
+
+> Actions
+
+> No mail accounts defined.
+
+> Mail rules
+
+> Name
+
+> Sort Order
+
+> Account
+
+> Status
+
+> Processed Mail
+
+> Actions
+
 > No mail rules defined.
 
 ### Assistant
@@ -4931,50 +6249,94 @@ canonical_ref: ""
 > Say which one.
 
 ### User
-> Edit mail rule
-> ID: 1
-> 
-> Name
-> Intake
-> Account
-> Intake Gmail
-> Order
-> 1
-> Enabled
-> Paperless will only process mails that match all of the criteria specified below.
-> 
-> Folder
-> intake
-> Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server.
-> Maximum age (days)
-> 30
-> Filter from
-> Filter to
-> Filter subject
-> Filter body
-> Consumption scope
-> Process message as .eml and attachments separately
-> See docs for .eml processing requirements
-> Attachment type
-> Only process attachments
-> PDF layout
-> System default
-> Include only files matching
-> Optional. Wildcards e.g. *.pdf or *invoice* allowed. Can be comma-separated list. Case insensitive.
-> Exclude files matching
-> Optional. Wildcards e.g. *.pdf or *invoice* allowed. Can be comma-separated list. Case insensitive.
-> Action
-> Tag the mail with specified tag, don't process tagged mails
-> Only performed if the mail is processed.
-> Action parameter
-> This field may not be blank.
-> Assign title from
-> Use subject as title
-> Assign owner from rule
-> 
-> Tags
-> Assign document type
-> Assign correspondent from
+> Edit mail rule
+
+> ID: 1
+
+> 
+
+> Name
+
+> Intake
+
+> Account
+
+> Intake Gmail
+
+> Order
+
+> 1
+
+> Enabled
+
+> Paperless will only process mails that match all of the criteria specified below.
+
+> 
+
+> Folder
+
+> intake
+
+> Subfolders must be separated by a delimiter, often a dot ('.') or slash ('/'), but it varies by mail server.
+
+> Maximum age (days)
+
+> 30
+
+> Filter from
+
+> Filter to
+
+> Filter subject
+
+> Filter body
+
+> Consumption scope
+
+> Process message as .eml and attachments separately
+
+> See docs for .eml processing requirements
+
+> Attachment type
+
+> Only process attachments
+
+> PDF layout
+
+> System default
+
+> Include only files matching
+
+> Optional. Wildcards e.g. *.pdf or *invoice* allowed. Can be comma-separated list. Case insensitive.
+
+> Exclude files matching
+
+> Optional. Wildcards e.g. *.pdf or *invoice* allowed. Can be comma-separated list. Case insensitive.
+
+> Action
+
+> Tag the mail with specified tag, don't process tagged mails
+
+> Only performed if the mail is processed.
+
+> Action parameter
+
+> This field may not be blank.
+
+> Assign title from
+
+> Use subject as title
+
+> Assign owner from rule
+
+> 
+
+> Tags
+
+> Assign document type
+
+> Assign correspondent from
+
 > Use mail address
 
 ### Assistant
@@ -5749,14 +7111,22 @@ canonical_ref: ""
 > Tell me the number.
 
 ### User
-> ok so what storage paths should we create. these ae the optoins. Create new storage path
-> 
-> Name
-> Path
-> See the documentation.
-> Preview
-> Matching algorithm
-> Auto: Learn matching automatically
+> ok so what storage paths should we create. these ae the optoins. Create new storage path
+
+> 
+
+> Name
+
+> Path
+
+> See the documentation.
+
+> Preview
+
+> Matching algorithm
+
+> Auto: Learn matching automatically
+
 > Edit Permissions
 
 ### Assistant
@@ -5897,677 +7267,1348 @@ canonical_ref: ""
 > Tell me when the storage path is created and defaulted, and I’ll give you the **exact final rule configs** next.
 
 ### User
-> doble cgeck Skip to content
-> Paperless-ngx
-> Advanced Topics
-> 
-> 
-> Search
-> 
->  paperless-ngx/paperless-ngx
-> v2.20.3
-> 35.3k
-> 2.2k
-> logoPaperless-ngx
-> Home
-> Setup
-> Basic Usage
-> Configuration
-> Administration
-> Advanced Topics
-> Table of contents
-> Matching tags, correspondents, document types, and storage paths
-> Automatic matching
-> Hooking into the consumption process
-> Pre-consumption script
-> Post-consumption script
-> Docker
-> File name handling
-> Placeholders
-> Empty placeholders
-> Storage paths
-> Filename Templates
-> Custom Jinja2 Filters
-> Custom Field Access
-> Syntax
-> Parameters
-> Returns
-> Examples
-> Datetime Formatting
-> Syntax
-> Parameters
-> Returns
-> Examples
-> Date Localization
-> Syntax
-> Parameters
-> Returns
-> Examples
-> Format Presets
-> Additional Variables
-> Examples
-> Automatic recovery of invalid PDFs
-> Celery Monitoring
-> Custom Container Initialization
-> MySQL Caveats
-> Case Sensitivity
-> Missing timezones
-> Barcodes
-> Document Splitting
-> Archive Serial Number Assignment
-> Tag Assignment
-> Automatic collation of double-sided documents
-> Summary
-> Usage example
-> Things that could go wrong
-> Interaction with "subdirs as tags"
-> Interaction with document splitting
-> SSO and third party authentication with Paperless-ngx
-> Remote User authentication
-> OpenID Connect and social authentication
-> Disabling Regular Login
-> Decryption of encrypted emails before consumption
-> Requirements
-> Setup
-> Troubleshooting
-> REST API
-> Development
-> FAQs
-> Troubleshooting
-> Changelog
-> Advanced Topics
-> Paperless offers a couple of features that automate certain tasks and make your life easier.
-> 
-> Matching tags, correspondents, document types, and storage paths
-> Paperless will compare the matching algorithms defined by every tag, correspondent, document type, and storage path in your database to see if they apply to the text in a document. In other words, if you define a tag called Home Utility that had a match property of bc hydro and a matching_algorithm of Exact, Paperless will automatically tag your newly-consumed document with your Home Utility tag so long as the text bc hydro appears in the body of the document somewhere.
-> 
-> The matching logic is quite powerful. It supports searching the text of your document with different algorithms, and as such, some experimentation may be necessary to get things right.
-> 
-> In order to have a tag, correspondent, document type, or storage path assigned automatically to newly consumed documents, assign a match and matching algorithm using the web interface. These settings define when to assign tags, correspondents, document types, and storage paths to documents.
-> 
-> The following algorithms are available:
-> 
-> None: No matching will be performed.
-> Any: Looks for any occurrence of any word provided in match in the PDF. If you define the match as Bank1 Bank2, it will match documents containing either of these terms.
-> All: Requires that every word provided appears in the PDF, albeit not in the order provided.
-> Exact: Matches only if the match appears exactly as provided (i.e. preserve ordering) in the PDF.
-> Regular expression: Parses the match as a regular expression and tries to find a match within the document.
-> Fuzzy match: Uses a partial matching based on locating the tag text inside the document, using a partial ratio
-> Auto: Tries to automatically match new documents. This does not require you to set a match. See the notes below.
-> When using the any or all matching algorithms, you can search for terms that consist of multiple words by enclosing them in double quotes. For example, defining a match text of "Bank of America" BofA using the any algorithm, will match documents that contain either "Bank of America" or "BofA", but will not match documents containing "Bank of South America".
-> 
-> Then just save your tag, correspondent, document type, or storage path and run another document through the consumer. Once complete, you should see the newly-created document, automatically tagged with the appropriate data.
-> 
-> Automatic matching
-> Paperless-ngx comes with a new matching algorithm called Auto. This matching algorithm tries to assign tags, correspondents, document types, and storage paths to your documents based on how you have already assigned these on existing documents. It uses a neural network under the hood.
-> 
-> If, for example, all your bank statements of your account 123 at the Bank of America are tagged with the tag "bofa123" and the matching algorithm of this tag is set to Auto, this neural network will examine your documents and automatically learn when to assign this tag.
-> 
-> Paperless tries to hide much of the involved complexity with this approach. However, there are a couple caveats you need to keep in mind when using this feature:
-> 
-> Changes to your documents are not immediately reflected by the matching algorithm. The neural network needs to be trained on your documents after changes. Paperless periodically (default: once each hour) checks for changes and does this automatically for you.
-> The Auto matching algorithm only takes documents into account which are NOT placed in your inbox (i.e. have any inbox tags assigned to them). This ensures that the neural network only learns from documents which you have correctly tagged before.
-> The matching algorithm can only work if there is a correlation between the tag, correspondent, document type, or storage path and the document itself. Your bank statements usually contain your bank account number and the name of the bank, so this works reasonably well, However, tags such as "TODO" cannot be automatically assigned.
-> The matching algorithm needs a reasonable number of documents to identify when to assign tags, correspondents, storage paths, and types. If one out of a thousand documents has the correspondent "Very obscure web shop I bought something five years ago", it will probably not assign this correspondent automatically if you buy something from them again. The more documents, the better.
-> Paperless also needs a reasonable amount of negative examples to decide when not to assign a certain tag, correspondent, document type, or storage path. This will usually be the case as you start filling up paperless with documents. Example: If all your documents are either from "Webshop" or "Bank", paperless will assign one of these correspondents to ANY new document, if both are set to automatic matching.
-> Hooking into the consumption process
-> Sometimes you may want to do something arbitrary whenever a document is consumed. Rather than try to predict what you may want to do, Paperless lets you execute scripts of your own choosing just before or after a document is consumed using a couple of simple hooks.
-> 
-> Just write a script, put it somewhere that Paperless can read & execute, and then put the path to that script in paperless.conf or docker-compose.env with the variable name of either PAPERLESS_PRE_CONSUME_SCRIPT or PAPERLESS_POST_CONSUME_SCRIPT.
-> 
-> Info
-> 
-> These scripts are executed in a blocking process, which means that if a script takes a long time to run, it can significantly slow down your document consumption flow. If you want things to run asynchronously, you'll have to fork the process in your script and exit.
-> 
-> Pre-consumption script
-> Executed after the consumer sees a new document in the consumption folder, but before any processing of the document is performed. This script can access the following relevant environment variables set:
-> 
-> Environment Variable	Description
-> DOCUMENT_SOURCE_PATH	Original path of the consumed document
-> DOCUMENT_WORKING_PATH	Path to a copy of the original that consumption will work on
-> TASK_ID	UUID of the task used to process the new document (if any)
-> Note
-> 
-> Pre-consume scripts which modify the document should only change the DOCUMENT_WORKING_PATH file or a second consume task may be triggered, leading to failures as two tasks work on the same document path
-> 
-> Warning
-> 
-> If your script modifies DOCUMENT_WORKING_PATH in a non-deterministic way, this may allow duplicate documents to be stored
-> 
-> A simple but common example for this would be creating a simple script like this:
-> 
-> /usr/local/bin/ocr-pdf
-> 
-> #!/usr/bin/env bash
-> pdf2pdfocr.py -i ${DOCUMENT_WORKING_PATH}
-> /etc/paperless.conf
-> 
-> ...
-> PAPERLESS_PRE_CONSUME_SCRIPT="/usr/local/bin/ocr-pdf"
-> ...
-> This will pass the path to the document about to be consumed to /usr/local/bin/ocr-pdf, which will in turn call pdf2pdfocr.py on your document, which will then overwrite the file with an OCR'd version of the file and exit. At which point, the consumption process will begin with the newly modified file.
-> 
-> The script's stdout and stderr will be logged line by line to the webserver log, along with the exit code of the script.
-> 
-> Post-consumption script
-> Executed after the consumer has successfully processed a document and has moved it into paperless. It receives the following environment variables:
-> 
-> Environment Variable	Description
-> DOCUMENT_ID	Database primary key of the document
-> DOCUMENT_FILE_NAME	Formatted filename, not including paths
-> DOCUMENT_TYPE	The document type (if any)
-> DOCUMENT_CREATED	Date & time when document created
-> DOCUMENT_MODIFIED	Date & time when document was last modified
-> DOCUMENT_ADDED	Date & time when document was added
-> DOCUMENT_SOURCE_PATH	Path to the original document file
-> DOCUMENT_ARCHIVE_PATH	Path to the generate archive file (if any)
-> DOCUMENT_THUMBNAIL_PATH	Path to the generated thumbnail
-> DOCUMENT_DOWNLOAD_URL	URL for document download
-> DOCUMENT_THUMBNAIL_URL	URL for the document thumbnail
-> DOCUMENT_OWNER	Username of the document owner (if any)
-> DOCUMENT_CORRESPONDENT	Assigned correspondent (if any)
-> DOCUMENT_TAGS	Comma separated list of tags applied (if any)
-> DOCUMENT_ORIGINAL_FILENAME	Filename of original document
-> TASK_ID	Task UUID used to import the document (if any)
-> The script can be in any language, A simple shell script example:
-> 
-> post-consumption-example
-> #!/usr/bin/env bash
-> 
-> echo "
-> 
-> A document with an id of ${DOCUMENT_ID} was just consumed.  I know the
-> following additional information about it:
-> 
-> * Generated File Name: ${DOCUMENT_FILE_NAME}
-> * Document type: ${DOCUMENT_TYPE}
-> * Archive Path: ${DOCUMENT_ARCHIVE_PATH}
-> * Source Path: ${DOCUMENT_SOURCE_PATH}
-> * Created: ${DOCUMENT_CREATED}
-> * Added: ${DOCUMENT_ADDED}
-> * Modified: ${DOCUMENT_MODIFIED}
-> * Thumbnail Path: ${DOCUMENT_THUMBNAIL_PATH}
-> * Download URL: ${DOCUMENT_DOWNLOAD_URL}
-> * Thumbnail URL: ${DOCUMENT_THUMBNAIL_URL}
-> * Owner Name: ${DOCUMENT_OWNER}
-> * Correspondent: ${DOCUMENT_CORRESPONDENT}
-> * Tags: ${DOCUMENT_TAGS}
-> 
-> It was consumed with the passphrase ${PASSPHRASE}
-> 
-> "
-> Note
-> 
-> The post consumption script cannot cancel the consumption process.
-> 
-> Warning
-> 
-> The post consumption script should not modify the document files directly.
-> 
-> The script's stdout and stderr will be logged line by line to the webserver log, along with the exit code of the script.
-> 
-> Docker
-> To hook into the consumption process when using Docker, you will need to pass the scripts into the container via a host mount in your docker-compose.yml.
-> 
-> Assuming you have /home/paperless-ngx/scripts/post-consumption-example.sh as a script which you'd like to run.
-> 
-> You can pass that script into the consumer container via a host mount:
-> 
-> ...
-> webserver:
->   ...
->   volumes:
->     ...
->     - /home/paperless-ngx/scripts:/path/in/container/scripts/ 
->   environment: 
->     ...
->     PAPERLESS_POST_CONSUME_SCRIPT: /path/in/container/scripts/post-consumption-example.sh 
-> ...
-> Troubleshooting:
-> 
-> Monitor the Docker Compose log cd ~/paperless-ngx; docker compose logs -f
-> Check your script's permission e.g. in case of permission error sudo chmod 755 post-consumption-example.sh
-> Pipe your scripts's output to a log file e.g. echo "${DOCUMENT_ID}" | tee --append /usr/src/paperless/scripts/post-consumption-example.log
-> File name handling
-> By default, paperless stores your documents in the media directory and renames them using the identifier which it has assigned to each document. You will end up getting files like 0000123.pdf in your media directory. This isn't necessarily a bad thing, because you normally don't have to access these files manually. However, if you wish to name your files differently, you can do that by adjusting the PAPERLESS_FILENAME_FORMAT configuration option or using storage paths (see below). Paperless adds the correct file extension e.g. .pdf, .jpg automatically.
-> 
-> This variable allows you to configure the filename (folders are allowed) using placeholders. For example, configuring this to
-> 
-> PAPERLESS_FILENAME_FORMAT={{ created_year }}/{{ correspondent }}/{{ title }}
-> will create a directory structure as follows:
-> 
-> 2019/
->   My bank/
->     Statement January.pdf
->     Statement February.pdf
-> 2020/
->   My bank/
->     Statement January.pdf
->     Letter.pdf
->     Letter_01.pdf
->   Shoe store/
->     My new shoes.pdf
-> Warning
-> 
-> Do not manually move your files in the media folder. Paperless remembers the last filename a document was stored as. If you do rename a file, paperless will report your files as missing and won't be able to find them.
-> 
-> Tip
-> 
-> Paperless checks the filename of a document whenever it is saved. Changing (or deleting) a storage path will automatically be reflected in the file system. However, when changing PAPERLESS_FILENAME_FORMAT you will need to manually run the document renamer to move any existing documents.
-> 
-> Placeholders
-> Paperless provides the following variables for use within filenames:
-> 
-> {{ asn }}: The archive serial number of the document, or "none".
-> {{ correspondent }}: The name of the correspondent, or "none".
-> {{ document_type }}: The name of the document type, or "none".
-> {{ tag_list }}: A comma separated list of all tags assigned to the document.
-> {{ title }}: The title of the document.
-> {{ created }}: The full date (ISO 8601 format, e.g. 2024-03-14) the document was created.
-> {{ created_year }}: Year created only, formatted as the year with century.
-> {{ created_year_short }}: Year created only, formatted as the year without century, zero padded.
-> {{ created_month }}: Month created only (number 01-12).
-> {{ created_month_name }}: Month created name, as per locale
-> {{ created_month_name_short }}: Month created abbreviated name, as per locale
-> {{ created_day }}: Day created only (number 01-31).
-> {{ added }}: The full date (ISO format) the document was added to paperless.
-> {{ added_year }}: Year added only.
-> {{ added_year_short }}: Year added only, formatted as the year without century, zero padded.
-> {{ added_month }}: Month added only (number 01-12).
-> {{ added_month_name }}: Month added name, as per locale
-> {{ added_month_name_short }}: Month added abbreviated name, as per locale
-> {{ added_day }}: Day added only (number 01-31).
-> {{ owner_username }}: Username of document owner, if any, or "none"
-> {{ original_name }}: Document original filename, minus the extension, if any, or "none"
-> {{ doc_pk }}: The paperless identifier (primary key) for the document.
-> Warning
-> 
-> When using file name placeholders, in particular when using {tag_list}, you may run into the limits of your operating system's maximum path lengths. In that case, files will retain the previous path instead and the issue logged.
-> 
-> Tip
-> 
-> These variables are all simple strings, but the format can be a full template. See Filename Templates for even more advanced formatting.
-> 
-> Paperless will try to conserve the information from your database as much as possible. However, some characters that you can use in document titles and correspondent names (such as : \ / and a couple more) are not allowed in filenames and will be replaced with dashes.
-> 
-> If paperless detects that two documents share the same filename, paperless will automatically append _01, _02, etc to the filename. This happens if all the placeholders in a filename evaluate to the same value.
-> 
-> If there are any errors in the placeholders included in PAPERLESS_FILENAME_FORMAT, paperless will fall back to using the default naming scheme instead.
-> 
-> Caution
-> 
-> As of now, you could potentially tell paperless to store your files anywhere outside the media directory by setting
-> 
-> PAPERLESS_FILENAME_FORMAT=../../my/custom/location/{title}
-> However, keep in mind that inside docker, if files get stored outside of the predefined volumes, they will be lost after a restart.
-> 
-> Empty placeholders
-> You can affect how empty placeholders are treated by changing the PAPERLESS_FILENAME_FORMAT_REMOVE_NONE setting.
-> 
-> Enabling this results in all empty placeholders resolving to "" instead of "none" as stated above. Spaces before empty placeholders are removed as well, empty directories are omitted.
-> 
-> Storage paths
-> When a single storage layout is not sufficient for your use case, storage paths allow for more complex structure to set precisely where each document is stored in the file system.
-> 
-> Each storage path is a PAPERLESS_FILENAME_FORMAT and follows the rules described above
-> Each document is assigned a storage path using the matching algorithms described above, but can be overwritten at any time
-> For example, you could define the following two storage paths:
-> 
-> Normal communications are put into a folder structure sorted by year/correspondent
-> Communications with insurance companies are stored in a flat structure with longer file names, but containing the full date of the correspondence.
-> By Year = {{ created_year }}/{{ correspondent }}/{{ title }}
-> Insurances = Insurances/{{ correspondent }}/{{ created_year }}-{{ created_month }}-{{ created_day }} {{ title }}
-> If you then map these storage paths to the documents, you might get the following result. For simplicity, By Year defines the same structure as in the previous example above.
-> 
-> 2019/                                   # By Year
->    My bank/
->      Statement January.pdf
->      Statement February.pdf
-> 
-> Insurances/                             # Insurances
->    Healthcare 123/
->      2022-01-01 Statement January.pdf
->      2022-02-02 Letter.pdf
->      2022-02-03 Letter.pdf
->    Dental 456/
->      2021-12-01 New Conditions.pdf
-> Tip
-> 
-> Defining a storage path is optional. If no storage path is defined for a document, the global PAPERLESS_FILENAME_FORMAT is applied.
-> 
-> Filename Templates
-> The filename formatting uses Jinja templates to build the filename. This allows for complex logic to be included in the format, including logical structures and filters to manipulate the variables provided. The template is provided as a string, potentially multiline, and rendered into a single line.
-> 
-> In addition, the entire Document instance is available to be utilized in a more advanced way, as well as some variables which only make sense to be accessed with more complex logic.
-> 
-> Custom Jinja2 Filters
-> Custom Field Access
-> The get_cf_value filter retrieves a value from custom field data with optional default fallback.
-> 
-> Syntax
-> {{ custom_fields | get_cf_value('field_name') }}
-> {{ custom_fields | get_cf_value('field_name', 'default_value') }}
-> Parameters
-> custom_fields: This must be the provided custom field data
-> name (str): Name of the custom field to retrieve
-> default (str, optional): Default value to return if field is not found or has no value
-> Returns
-> str | None: The field value, default value, or None if neither exists
-> Examples
-> <!-- Basic usage -->
-> {{ custom_fields | get_cf_value('department') }}
-> 
-> <!-- With default value -->
-> {{ custom_fields | get_cf_value('phone', 'Not provided') }}
-> Datetime Formatting
-> The datetime filter formats a datetime string or datetime object using Python's strftime formatting.
-> 
-> Syntax
-> {{ datetime_value | datetime('%Y-%m-%d %H:%M:%S') }}
-> Parameters
-> value (str | datetime): Date/time value to format (strings will be parsed automatically)
-> format (str): Python strftime format string
-> Returns
-> str: Formatted datetime string
-> Examples
-> <!-- Format datetime object -->
-> {{ created | datetime('%B %d, %Y at %I:%M %p') }}
-> <!-- Output: "January 15, 2024 at 02:30 PM" -->
-> 
-> <!-- Custom formatting -->
-> {{ custom_fields | get_cf_value('Date Field') | datetime('%A, %B %d, %Y') }}
-> <!-- Output: "Monday, January 15, 2024" -->
-> See the strftime format code documentation for the possible codes and their meanings.
-> 
-> Date Localization
-> The localize_date filter formats a date or datetime object into a localized string using Babel internationalization. This takes into account the provided locale for translation. Since this must be used on a date or datetime object, you must access the field directly, i.e. document.created. An ISO string can also be provided to control the output format.
-> 
-> Syntax
-> {{ date_value | localize_date('medium', 'en_US') }}
-> {{ datetime_value | localize_date('short', 'fr_FR') }}
-> Parameters
-> value (date | datetime | str): Date, datetime object or ISO string to format (datetime should be timezone-aware)
-> format (str): Format type - either a Babel preset ('short', 'medium', 'long', 'full') or custom pattern
-> locale (str): Locale code for localization (e.g., 'en_US', 'fr_FR', 'de_DE')
-> Returns
-> str: Localized, formatted date string
-> Examples
-> <!-- Preset formats -->
-> {{ document.created | localize_date('short', 'en_US') }}
-> <!-- Output: "1/15/24" -->
-> 
-> {{ document.created | localize_date('medium', 'en_US') }}
-> <!-- Output: "Jan 15, 2024" -->
-> 
-> {{ document.created | localize_date('long', 'en_US') }}
-> <!-- Output: "January 15, 2024" -->
-> 
-> {{ document.created | localize_date('full', 'en_US') }}
-> <!-- Output: "Monday, January 15, 2024" -->
-> 
-> <!-- Different locales -->
-> {{ document.created | localize_date('medium', 'fr_FR') }}
-> <!-- Output: "15 janv. 2024" -->
-> 
-> {{ document.created | localize_date('medium', 'de_DE') }}
-> <!-- Output: "15.01.2024" -->
-> 
-> <!-- Custom patterns -->
-> {{ document.created | localize_date('dd/MM/yyyy', 'en_GB') }}
-> <!-- Output: "15/01/2024" -->
-> See the supported format codes for more options.
-> 
-> Format Presets
-> short: Abbreviated format (e.g., "1/15/24")
-> medium: Medium-length format (e.g., "Jan 15, 2024")
-> long: Long format with full month name (e.g., "January 15, 2024")
-> full: Full format including day of week (e.g., "Monday, January 15, 2024")
-> Additional Variables
-> {{ tag_name_list }}: A list of tag names applied to the document, ordered by the tag name. Note this is a list, not a single string
-> {{ custom_fields }}: A mapping of custom field names to their type and value. A user can access the mapping by field name or check if a field is applied by checking its existence in the variable.
-> Tip
-> 
-> To access a custom field which has a space in the name, use the get_cf_value filter. See the examples below. This helps get fields by name and handle a default value if the named field is not attached to a Document.
-> 
-> Examples
-> This example will construct a path based on the archive serial number range:
-> 
-> somepath/
-> {% if document.archive_serial_number >= 0 and document.archive_serial_number <= 200 %}
->   asn-000-200/{{title}}
-> {% elif document.archive_serial_number >= 201 and document.archive_serial_number <= 400 %}
->   asn-201-400
->   {% if document.archive_serial_number >= 201 and document.archive_serial_number < 300 %}
->     /asn-2xx
->   {% elif document.archive_serial_number >= 300 and document.archive_serial_number < 400 %}
->     /asn-3xx
->   {% endif %}
-> {% endif %}
-> /{{ title }}
-> For a document with an ASN of 205, it would result in somepath/asn-201-400/asn-2xx/Title.pdf, but a document with an ASN of 355 would be placed in somepath/asn-201-400/asn-3xx/Title.pdf.
-> 
-> {% if document.mime_type == "application/pdf" %}
->   pdfs
-> {% elif document.mime_type == "image/png" %}
->   pngs
-> {% else %}
->   others
-> {% endif %}
-> /{{ title }}
-> For a PDF document, it would result in pdfs/Title.pdf, but for a PNG document, the path would be pngs/Title.png.
-> 
-> To use custom fields:
-> 
-> {% if "Invoice" in custom_fields %}
->   invoices/{{ custom_fields.Invoice.value }}
-> {% else %}
->   not-invoices/{{ title }}
-> {% endif %}
-> If the document has a custom field named "Invoice" with a value of 123, it would be filed into the invoices/123.pdf, but a document without the custom field would be filed to not-invoices/Title.pdf
-> 
-> If the custom field is named "Invoice Number", you would access the value of it via the get_cf_value filter due to quirks of the Django Template Language:
-> 
-> "invoices/{{ custom_fields|get_cf_value('Invoice Number') }}"
-> You can also use a custom datetime filter to format dates:
-> 
-> invoices/
-> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%Y') }}/
-> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%m') }}/
-> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%d') }}/
-> Invoice_{{ custom_fields|get_cf_value("Select Field") }}_{{ custom_fields|get_cf_value("Date Field","2024-01-01")|replace("-", "") }}.pdf
-> This will create a path like invoices/2022/01/01/Invoice_OptionTwo_20220101.pdf if the custom field "Date Field" is set to January 1, 2022 and "Select Field" is set to OptionTwo.
-> 
-> You can also use a custom slugify filter to slufigy text:
-> 
-> {{ title | slugify }}
-> Automatic recovery of invalid PDFs
-> Paperless will attempt to "clean" certain invalid PDFs with qpdf before processing if, for example, the mime_type detection is incorrect. This can happen if the PDF is not properly formatted or contains errors.
-> 
-> Celery Monitoring
-> The monitoring tool Flower can be used to view more detailed information about the health of the celery workers used for asynchronous tasks. This includes details on currently running, queued and completed tasks, timing and more. Flower can also be used with Prometheus, as it exports metrics. For details on its capabilities, refer to the Flower documentation.
-> 
-> Flower can be enabled with the setting PAPERLESS_ENABLE_FLOWER. To configure Flower further, create a flowerconfig.py and place it into the src/paperless directory. For a Docker installation, you can use volumes to accomplish this:
-> 
-> services:
->     # ...
->     webserver:
->         environment:
->             - PAPERLESS_ENABLE_FLOWER
->         ports:
->             - 5555:5555 
->         # ...
->         volumes:
->             - /path/to/my/flowerconfig.py:/usr/src/paperless/src/paperless/flowerconfig.py:ro 
-> Custom Container Initialization
-> The Docker image includes the ability to run custom user scripts during startup. This could be utilized for installing additional tools or Python packages, for example. Scripts are expected to be shell scripts.
-> 
-> To utilize this, mount a folder containing your scripts to the custom initialization directory, /custom-cont-init.d and place scripts you wish to run inside. For security, the folder must be owned by root and should have permissions of a=rx. Additionally, scripts must only be writable by root.
-> 
-> Your scripts will be run directly before the webserver completes startup. Scripts will be run by the root user. If you would like to switch users, the utility gosu is available and preferred over sudo.
-> 
-> This is an advanced functionality with which you could break functionality or lose data. If you experience issues, please disable any custom scripts and try again before reporting an issue.
-> 
-> For example, using Docker Compose:
-> 
-> services:
->     # ...
->     webserver:
->         # ...
->         volumes:
->             - /path/to/my/scripts:/custom-cont-init.d:ro 
-> MySQL Caveats
-> Case Sensitivity
-> The database interface does not provide a method to configure a MySQL database to be case-sensitive. A case-insensitive database prevents a user from creating a tag Name and NAME as they are considered the same.
-> 
-> However, there is a downside to turning on case sensitivity, as it also makes searches case-sensitive, so for example a document with the title Invoice won't be found when searching for invoice.
-> 
-> Per Django documentation, making a database case-sensitive requires manual intervention. To enable case sensitive tables, you can execute the following command against each table:
-> 
-> ALTER TABLE <table_name> CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
-> 
-> You can also set the default for new tables (this does NOT affect existing tables) with:
-> 
-> ALTER DATABASE <db_name> CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
-> 
-> Warning
-> 
-> Using mariadb version 10.4+ is recommended. Using the utf8mb3 character set on an older system may fix issues that can arise while setting up Paperless-ngx but utf8mb3 can cause issues with consumption (where utf8mb4 does not).
-> 
-> For more information on this topic, you can refer to this Django issue.
-> 
-> Missing timezones
-> MySQL as well as MariaDB do not have any timezone information by default (though some docker images such as the official MariaDB image take care of this for you) which will cause unexpected behavior with date-based queries.
-> 
-> To fix this, execute one of the following commands:
-> 
-> MySQL: mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql -p
-> 
-> MariaDB: mariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql -p
-> 
-> Barcodes
-> Paperless is able to utilize barcodes for automatically performing some tasks.
-> 
-> At this time, the library utilized for detection of barcodes supports the following types:
-> 
-> AN-13/UPC-A
-> UPC-E
-> EAN-8
-> Code 128
-> Code 93
-> Code 39
-> Codabar
-> Interleaved 2 of 5
-> QR Code
-> SQ Code
-> You may check for updates on the zbar library homepage. For usage in Paperless, the type of barcode does not matter, only the contents of it.
-> 
-> For how to enable barcode usage, see the configuration. The two settings may be enabled independently, but do have interactions as explained below.
-> 
-> Document Splitting
-> When enabled, Paperless will look for a barcode with the configured value and create a new document starting from the next page. The page with the barcode on it will not be retained. It is expected to be a page existing only for triggering the split.
-> 
-> Archive Serial Number Assignment
-> When enabled, the value of the barcode (as an integer) will be used to set the document's archive serial number, allowing quick reference back to the original, paper document.
-> 
-> If document splitting via barcode is also enabled, documents will be split when an ASN barcode is located. However, differing from the splitting, the page with the barcode will be retained. This allows application of a barcode to any page, including one which holds data to keep in the document.
-> 
-> Tag Assignment
-> When enabled, Paperless will parse barcodes and attempt to interpret and assign tags.
-> 
-> See the relevant settings PAPERLESS_CONSUMER_ENABLE_TAG_BARCODE and PAPERLESS_CONSUMER_TAG_BARCODE_MAPPING for more information.
-> 
-> Automatic collation of double-sided documents
-> Note
-> 
-> If your scanner supports double-sided scanning natively, you do not need this feature.
-> 
-> This feature is turned off by default, see configuration on how to turn it on.
-> 
-> Summary
-> If you have a scanner with an automatic document feeder (ADF) that only scans a single side, this feature makes scanning double-sided documents much more convenient by automatically collating two separate scans into one document, reordering the pages as necessary.
-> 
-> Usage example
-> Suppose you have a double-sided document with 6 pages (3 sheets of paper). First, put the stack into your ADF as normal, ensuring that page 1 is scanned first. Your ADF will now scan pages 1, 3, and 5. Then you (or your scanner, if it supports it) upload the scan into the correct sub-directory of the consume folder (double-sided by default; keep in mind that Paperless will not automatically create the directory for you.) Paperless will then process the scan and move it into an internal staging area.
-> 
-> The next step is to turn your stack upside down (without reordering the sheets of paper), and scan it once again, your ADF will now scan pages 6, 4, and 2, in that order. Once this scan is copied into the sub-directory, Paperless will collate the previous scan with the new one, reversing the order of the pages on the second, "even numbered" scan. The resulting document will have the pages 1-6 in the correct order, and this new file will then be processed as normal.
-> 
-> Tip
-> 
-> When scanning the even numbered pages, you can omit the last empty pages, if there are any. For example, if page 6 is empty, you only need to scan pages 2 and 4. Do not omit empty pages in the middle of the document.
-> 
-> Things that could go wrong
-> Paperless will notice when the first, "odd numbered" scan has less pages than the second scan (this can happen when e.g. the ADF skipped a few pages in the first pass). In that case, Paperless will remove the staging copy as well as the scan, and give you an error message asking you to restart the process from scratch, by scanning the odd pages again, followed by the even pages.
-> 
-> It's important that the scan files get consumed in the correct order, and one at a time. You therefore need to make sure that Paperless is running while you upload the files into the directory; and if you're using polling, make sure that CONSUMER_POLLING is set to a value lower than it takes for the second scan to appear, like 5-10 or even lower.
-> 
-> Another thing that might happen is that you start a double sided scan, but then forget to upload the second file. To avoid collating the wrong documents if you then come back a day later to scan a new double-sided document, Paperless will only keep an "odd numbered pages" file for up to 30 minutes. If more time passes, it will consider the next incoming scan a completely new "odd numbered pages" one. The old staging file will get discarded.
-> 
-> Interaction with "subdirs as tags"
-> The collation feature can be used together with the subdirs as tags feature (but this is not a requirement). Just create a correctly named double-sided subdir in the hierarchy and upload your scans there. For example, both double-sided/foo/bar as well as foo/bar/double-sided will cause the collated document to be treated as if it were uploaded into foo/bar and receive both foo and bar tags, but not double-sided.
-> 
-> Interaction with document splitting
-> You can use the document splitting feature, but if you use a normal single-sided split marker page, the split document(s) will have an empty page at the front (or whatever else was on the backside of the split marker page.) You can work around that by having a split marker page that has the split barcode on both sides. This way, the extra page will get automatically removed.
-> 
-> SSO and third party authentication with Paperless-ngx
-> Paperless-ngx has a built-in authentication system from Django but you can easily integrate an external authentication solution using one of the following methods:
-> 
-> Remote User authentication
-> This is a simple option that uses remote user authentication made available by certain SSO applications. See the relevant configuration options for more information: PAPERLESS_ENABLE_HTTP_REMOTE_USER, PAPERLESS_HTTP_REMOTE_USER_HEADER_NAME and PAPERLESS_LOGOUT_REDIRECT_URL
-> 
-> OpenID Connect and social authentication
-> Version 2.5.0 of Paperless-ngx added support for integrating other authentication systems via the django-allauth package. Once set up, users can either log in or (optionally) sign up using any third party systems you integrate. See the relevant configuration settings and django-allauth docs for more information.
-> 
-> To associate an existing Paperless-ngx account with a social account, first login with your regular credentials and then choose "My Profile" from the user dropdown in the app and you will see options to connect social account(s). If enabled, signup options will be available on the login page.
-> 
-> As an example, to set up login via Github, the following environment variables would need to be set:
-> 
-> PAPERLESS_APPS="allauth.socialaccount.providers.github"
-> PAPERLESS_SOCIALACCOUNT_PROVIDERS='{"github": {"APPS": [{"provider_id": "github","name": "Github","client_id": "<CLIENT_ID>","secret": "<CLIENT_SECRET>"}]}}'
-> Or, to use OpenID Connect ("OIDC"), via Keycloak in this example:
-> 
-> PAPERLESS_APPS="allauth.socialaccount.providers.openid_connect"
-> PAPERLESS_SOCIALACCOUNT_PROVIDERS='
-> {"openid_connect": {"APPS": [{"provider_id": "keycloak","name": "Keycloak","client_id": "paperless","secret": "<CLIENT_SECRET>","settings": { "server_url": "https://<KEYCLOAK_SERVER>/realms/<REALM>/.well-known/openid-configuration"}}]}}'
-> More details about configuration option for various providers can be found in the allauth documentation.
-> 
-> Disabling Regular Login
-> Once external auth is set up, 'regular' login can be disabled with the PAPERLESS_DISABLE_REGULAR_LOGIN setting and / or users can be automatically redirected with the PAPERLESS_REDIRECT_LOGIN_TO_SSO setting.
-> 
-> Decryption of encrypted emails before consumption
-> Paperless-ngx can be configured to decrypt gpg encrypted emails before consumption.
-> 
-> Requirements
-> You need a recent version of gpg-agent >= 2.1.1 installed on your host. Your host needs to be setup for decrypting your emails via gpg-agent, see this tutorial for instance. Test your setup and make sure that you can encrypt and decrypt files using your key
-> 
-> gpg --encrypt --armor -r person@email.com name_of_file
-> gpg --decrypt name_of_file.asc
-> Setup
-> First, enable the PAPERLESS_ENABLE_GPG_DECRYPTOR environment variable.
-> 
-> Then determine your local gpg-agent socket by invoking
-> 
-> gpgconf --list-dir agent-socket
-> on your host. A possible output is ~/.gnupg/S.gpg-agent. Also find the location of your public keyring.
-> 
-> If using docker, you'll need to add the following volume mounts to your docker-compose.yml file:
-> 
-> webserver:
->     volumes:
->         - /home/user/.gnupg/pubring.gpg:/usr/src/paperless/.gnupg/pubring.gpg
->         - <path to gpg-agent socket>:/usr/src/paperless/.gnupg/S.gpg-agent
-> For a 'bare-metal' installation no further configuration is necessary. If you want to use a separate GNUPG_HOME, you can do so by configuring the PAPERLESS_EMAIL_GNUPG_HOME environment variable.
-> 
-> Troubleshooting
-> Make sure, that gpg-agent is running on your host machine
-> Make sure, that encryption and decryption works from inside the container using the gpg commands from above.
-> Check that all files in /usr/src/paperless/.gnupg have correct permissions
-> paperless@9da1865df327:~/.gnupg$ ls -al
-> drwx------ 1 paperless paperless   4096 Aug 18 17:52 .
-> drwxr-xr-x 1 paperless paperless   4096 Aug 18 17:52 ..
-> srw------- 1 paperless paperless      0 Aug 18 17:22 S.gpg-agent
-> -rw------- 1 paperless paperless 147940 Jul 24 10:23 pubring.gpg
->  Back to top
-> Copyright © 2016 - 2023 Daniel Quinn, Jonas Winkler, and the Paperless-ngx team
+> doble cgeck Skip to content
+
+> Paperless-ngx
+
+> Advanced Topics
+
+> 
+
+> 
+
+> Search
+
+> 
+
+>  paperless-ngx/paperless-ngx
+
+> v2.20.3
+
+> 35.3k
+
+> 2.2k
+
+> logoPaperless-ngx
+
+> Home
+
+> Setup
+
+> Basic Usage
+
+> Configuration
+
+> Administration
+
+> Advanced Topics
+
+> Table of contents
+
+> Matching tags, correspondents, document types, and storage paths
+
+> Automatic matching
+
+> Hooking into the consumption process
+
+> Pre-consumption script
+
+> Post-consumption script
+
+> Docker
+
+> File name handling
+
+> Placeholders
+
+> Empty placeholders
+
+> Storage paths
+
+> Filename Templates
+
+> Custom Jinja2 Filters
+
+> Custom Field Access
+
+> Syntax
+
+> Parameters
+
+> Returns
+
+> Examples
+
+> Datetime Formatting
+
+> Syntax
+
+> Parameters
+
+> Returns
+
+> Examples
+
+> Date Localization
+
+> Syntax
+
+> Parameters
+
+> Returns
+
+> Examples
+
+> Format Presets
+
+> Additional Variables
+
+> Examples
+
+> Automatic recovery of invalid PDFs
+
+> Celery Monitoring
+
+> Custom Container Initialization
+
+> MySQL Caveats
+
+> Case Sensitivity
+
+> Missing timezones
+
+> Barcodes
+
+> Document Splitting
+
+> Archive Serial Number Assignment
+
+> Tag Assignment
+
+> Automatic collation of double-sided documents
+
+> Summary
+
+> Usage example
+
+> Things that could go wrong
+
+> Interaction with "subdirs as tags"
+
+> Interaction with document splitting
+
+> SSO and third party authentication with Paperless-ngx
+
+> Remote User authentication
+
+> OpenID Connect and social authentication
+
+> Disabling Regular Login
+
+> Decryption of encrypted emails before consumption
+
+> Requirements
+
+> Setup
+
+> Troubleshooting
+
+> REST API
+
+> Development
+
+> FAQs
+
+> Troubleshooting
+
+> Changelog
+
+> Advanced Topics
+
+> Paperless offers a couple of features that automate certain tasks and make your life easier.
+
+> 
+
+> Matching tags, correspondents, document types, and storage paths
+
+> Paperless will compare the matching algorithms defined by every tag, correspondent, document type, and storage path in your database to see if they apply to the text in a document. In other words, if you define a tag called Home Utility that had a match property of bc hydro and a matching_algorithm of Exact, Paperless will automatically tag your newly-consumed document with your Home Utility tag so long as the text bc hydro appears in the body of the document somewhere.
+
+> 
+
+> The matching logic is quite powerful. It supports searching the text of your document with different algorithms, and as such, some experimentation may be necessary to get things right.
+
+> 
+
+> In order to have a tag, correspondent, document type, or storage path assigned automatically to newly consumed documents, assign a match and matching algorithm using the web interface. These settings define when to assign tags, correspondents, document types, and storage paths to documents.
+
+> 
+
+> The following algorithms are available:
+
+> 
+
+> None: No matching will be performed.
+
+> Any: Looks for any occurrence of any word provided in match in the PDF. If you define the match as Bank1 Bank2, it will match documents containing either of these terms.
+
+> All: Requires that every word provided appears in the PDF, albeit not in the order provided.
+
+> Exact: Matches only if the match appears exactly as provided (i.e. preserve ordering) in the PDF.
+
+> Regular expression: Parses the match as a regular expression and tries to find a match within the document.
+
+> Fuzzy match: Uses a partial matching based on locating the tag text inside the document, using a partial ratio
+
+> Auto: Tries to automatically match new documents. This does not require you to set a match. See the notes below.
+
+> When using the any or all matching algorithms, you can search for terms that consist of multiple words by enclosing them in double quotes. For example, defining a match text of "Bank of America" BofA using the any algorithm, will match documents that contain either "Bank of America" or "BofA", but will not match documents containing "Bank of South America".
+
+> 
+
+> Then just save your tag, correspondent, document type, or storage path and run another document through the consumer. Once complete, you should see the newly-created document, automatically tagged with the appropriate data.
+
+> 
+
+> Automatic matching
+
+> Paperless-ngx comes with a new matching algorithm called Auto. This matching algorithm tries to assign tags, correspondents, document types, and storage paths to your documents based on how you have already assigned these on existing documents. It uses a neural network under the hood.
+
+> 
+
+> If, for example, all your bank statements of your account 123 at the Bank of America are tagged with the tag "bofa123" and the matching algorithm of this tag is set to Auto, this neural network will examine your documents and automatically learn when to assign this tag.
+
+> 
+
+> Paperless tries to hide much of the involved complexity with this approach. However, there are a couple caveats you need to keep in mind when using this feature:
+
+> 
+
+> Changes to your documents are not immediately reflected by the matching algorithm. The neural network needs to be trained on your documents after changes. Paperless periodically (default: once each hour) checks for changes and does this automatically for you.
+
+> The Auto matching algorithm only takes documents into account which are NOT placed in your inbox (i.e. have any inbox tags assigned to them). This ensures that the neural network only learns from documents which you have correctly tagged before.
+
+> The matching algorithm can only work if there is a correlation between the tag, correspondent, document type, or storage path and the document itself. Your bank statements usually contain your bank account number and the name of the bank, so this works reasonably well, However, tags such as "TODO" cannot be automatically assigned.
+
+> The matching algorithm needs a reasonable number of documents to identify when to assign tags, correspondents, storage paths, and types. If one out of a thousand documents has the correspondent "Very obscure web shop I bought something five years ago", it will probably not assign this correspondent automatically if you buy something from them again. The more documents, the better.
+
+> Paperless also needs a reasonable amount of negative examples to decide when not to assign a certain tag, correspondent, document type, or storage path. This will usually be the case as you start filling up paperless with documents. Example: If all your documents are either from "Webshop" or "Bank", paperless will assign one of these correspondents to ANY new document, if both are set to automatic matching.
+
+> Hooking into the consumption process
+
+> Sometimes you may want to do something arbitrary whenever a document is consumed. Rather than try to predict what you may want to do, Paperless lets you execute scripts of your own choosing just before or after a document is consumed using a couple of simple hooks.
+
+> 
+
+> Just write a script, put it somewhere that Paperless can read & execute, and then put the path to that script in paperless.conf or docker-compose.env with the variable name of either PAPERLESS_PRE_CONSUME_SCRIPT or PAPERLESS_POST_CONSUME_SCRIPT.
+
+> 
+
+> Info
+
+> 
+
+> These scripts are executed in a blocking process, which means that if a script takes a long time to run, it can significantly slow down your document consumption flow. If you want things to run asynchronously, you'll have to fork the process in your script and exit.
+
+> 
+
+> Pre-consumption script
+
+> Executed after the consumer sees a new document in the consumption folder, but before any processing of the document is performed. This script can access the following relevant environment variables set:
+
+> 
+
+> Environment Variable	Description
+
+> DOCUMENT_SOURCE_PATH	Original path of the consumed document
+
+> DOCUMENT_WORKING_PATH	Path to a copy of the original that consumption will work on
+
+> TASK_ID	UUID of the task used to process the new document (if any)
+
+> Note
+
+> 
+
+> Pre-consume scripts which modify the document should only change the DOCUMENT_WORKING_PATH file or a second consume task may be triggered, leading to failures as two tasks work on the same document path
+
+> 
+
+> Warning
+
+> 
+
+> If your script modifies DOCUMENT_WORKING_PATH in a non-deterministic way, this may allow duplicate documents to be stored
+
+> 
+
+> A simple but common example for this would be creating a simple script like this:
+
+> 
+
+> /usr/local/bin/ocr-pdf
+
+> 
+
+> #!/usr/bin/env bash
+
+> pdf2pdfocr.py -i ${DOCUMENT_WORKING_PATH}
+
+> /etc/paperless.conf
+
+> 
+
+> ...
+
+> PAPERLESS_PRE_CONSUME_SCRIPT="/usr/local/bin/ocr-pdf"
+
+> ...
+
+> This will pass the path to the document about to be consumed to /usr/local/bin/ocr-pdf, which will in turn call pdf2pdfocr.py on your document, which will then overwrite the file with an OCR'd version of the file and exit. At which point, the consumption process will begin with the newly modified file.
+
+> 
+
+> The script's stdout and stderr will be logged line by line to the webserver log, along with the exit code of the script.
+
+> 
+
+> Post-consumption script
+
+> Executed after the consumer has successfully processed a document and has moved it into paperless. It receives the following environment variables:
+
+> 
+
+> Environment Variable	Description
+
+> DOCUMENT_ID	Database primary key of the document
+
+> DOCUMENT_FILE_NAME	Formatted filename, not including paths
+
+> DOCUMENT_TYPE	The document type (if any)
+
+> DOCUMENT_CREATED	Date & time when document created
+
+> DOCUMENT_MODIFIED	Date & time when document was last modified
+
+> DOCUMENT_ADDED	Date & time when document was added
+
+> DOCUMENT_SOURCE_PATH	Path to the original document file
+
+> DOCUMENT_ARCHIVE_PATH	Path to the generate archive file (if any)
+
+> DOCUMENT_THUMBNAIL_PATH	Path to the generated thumbnail
+
+> DOCUMENT_DOWNLOAD_URL	URL for document download
+
+> DOCUMENT_THUMBNAIL_URL	URL for the document thumbnail
+
+> DOCUMENT_OWNER	Username of the document owner (if any)
+
+> DOCUMENT_CORRESPONDENT	Assigned correspondent (if any)
+
+> DOCUMENT_TAGS	Comma separated list of tags applied (if any)
+
+> DOCUMENT_ORIGINAL_FILENAME	Filename of original document
+
+> TASK_ID	Task UUID used to import the document (if any)
+
+> The script can be in any language, A simple shell script example:
+
+> 
+
+> post-consumption-example
+
+> #!/usr/bin/env bash
+
+> 
+
+> echo "
+
+> 
+
+> A document with an id of ${DOCUMENT_ID} was just consumed.  I know the
+
+> following additional information about it:
+
+> 
+
+> * Generated File Name: ${DOCUMENT_FILE_NAME}
+
+> * Document type: ${DOCUMENT_TYPE}
+
+> * Archive Path: ${DOCUMENT_ARCHIVE_PATH}
+
+> * Source Path: ${DOCUMENT_SOURCE_PATH}
+
+> * Created: ${DOCUMENT_CREATED}
+
+> * Added: ${DOCUMENT_ADDED}
+
+> * Modified: ${DOCUMENT_MODIFIED}
+
+> * Thumbnail Path: ${DOCUMENT_THUMBNAIL_PATH}
+
+> * Download URL: ${DOCUMENT_DOWNLOAD_URL}
+
+> * Thumbnail URL: ${DOCUMENT_THUMBNAIL_URL}
+
+> * Owner Name: ${DOCUMENT_OWNER}
+
+> * Correspondent: ${DOCUMENT_CORRESPONDENT}
+
+> * Tags: ${DOCUMENT_TAGS}
+
+> 
+
+> It was consumed with the passphrase ${PASSPHRASE}
+
+> 
+
+> "
+
+> Note
+
+> 
+
+> The post consumption script cannot cancel the consumption process.
+
+> 
+
+> Warning
+
+> 
+
+> The post consumption script should not modify the document files directly.
+
+> 
+
+> The script's stdout and stderr will be logged line by line to the webserver log, along with the exit code of the script.
+
+> 
+
+> Docker
+
+> To hook into the consumption process when using Docker, you will need to pass the scripts into the container via a host mount in your docker-compose.yml.
+
+> 
+
+> Assuming you have /home/paperless-ngx/scripts/post-consumption-example.sh as a script which you'd like to run.
+
+> 
+
+> You can pass that script into the consumer container via a host mount:
+
+> 
+
+> ...
+
+> webserver:
+
+>   ...
+
+>   volumes:
+
+>     ...
+
+>     - /home/paperless-ngx/scripts:/path/in/container/scripts/ 
+
+>   environment: 
+
+>     ...
+
+>     PAPERLESS_POST_CONSUME_SCRIPT: /path/in/container/scripts/post-consumption-example.sh 
+
+> ...
+
+> Troubleshooting:
+
+> 
+
+> Monitor the Docker Compose log cd ~/paperless-ngx; docker compose logs -f
+
+> Check your script's permission e.g. in case of permission error sudo chmod 755 post-consumption-example.sh
+
+> Pipe your scripts's output to a log file e.g. echo "${DOCUMENT_ID}" | tee --append /usr/src/paperless/scripts/post-consumption-example.log
+
+> File name handling
+
+> By default, paperless stores your documents in the media directory and renames them using the identifier which it has assigned to each document. You will end up getting files like 0000123.pdf in your media directory. This isn't necessarily a bad thing, because you normally don't have to access these files manually. However, if you wish to name your files differently, you can do that by adjusting the PAPERLESS_FILENAME_FORMAT configuration option or using storage paths (see below). Paperless adds the correct file extension e.g. .pdf, .jpg automatically.
+
+> 
+
+> This variable allows you to configure the filename (folders are allowed) using placeholders. For example, configuring this to
+
+> 
+
+> PAPERLESS_FILENAME_FORMAT={{ created_year }}/{{ correspondent }}/{{ title }}
+
+> will create a directory structure as follows:
+
+> 
+
+> 2019/
+
+>   My bank/
+
+>     Statement January.pdf
+
+>     Statement February.pdf
+
+> 2020/
+
+>   My bank/
+
+>     Statement January.pdf
+
+>     Letter.pdf
+
+>     Letter_01.pdf
+
+>   Shoe store/
+
+>     My new shoes.pdf
+
+> Warning
+
+> 
+
+> Do not manually move your files in the media folder. Paperless remembers the last filename a document was stored as. If you do rename a file, paperless will report your files as missing and won't be able to find them.
+
+> 
+
+> Tip
+
+> 
+
+> Paperless checks the filename of a document whenever it is saved. Changing (or deleting) a storage path will automatically be reflected in the file system. However, when changing PAPERLESS_FILENAME_FORMAT you will need to manually run the document renamer to move any existing documents.
+
+> 
+
+> Placeholders
+
+> Paperless provides the following variables for use within filenames:
+
+> 
+
+> {{ asn }}: The archive serial number of the document, or "none".
+
+> {{ correspondent }}: The name of the correspondent, or "none".
+
+> {{ document_type }}: The name of the document type, or "none".
+
+> {{ tag_list }}: A comma separated list of all tags assigned to the document.
+
+> {{ title }}: The title of the document.
+
+> {{ created }}: The full date (ISO 8601 format, e.g. 2024-03-14) the document was created.
+
+> {{ created_year }}: Year created only, formatted as the year with century.
+
+> {{ created_year_short }}: Year created only, formatted as the year without century, zero padded.
+
+> {{ created_month }}: Month created only (number 01-12).
+
+> {{ created_month_name }}: Month created name, as per locale
+
+> {{ created_month_name_short }}: Month created abbreviated name, as per locale
+
+> {{ created_day }}: Day created only (number 01-31).
+
+> {{ added }}: The full date (ISO format) the document was added to paperless.
+
+> {{ added_year }}: Year added only.
+
+> {{ added_year_short }}: Year added only, formatted as the year without century, zero padded.
+
+> {{ added_month }}: Month added only (number 01-12).
+
+> {{ added_month_name }}: Month added name, as per locale
+
+> {{ added_month_name_short }}: Month added abbreviated name, as per locale
+
+> {{ added_day }}: Day added only (number 01-31).
+
+> {{ owner_username }}: Username of document owner, if any, or "none"
+
+> {{ original_name }}: Document original filename, minus the extension, if any, or "none"
+
+> {{ doc_pk }}: The paperless identifier (primary key) for the document.
+
+> Warning
+
+> 
+
+> When using file name placeholders, in particular when using {tag_list}, you may run into the limits of your operating system's maximum path lengths. In that case, files will retain the previous path instead and the issue logged.
+
+> 
+
+> Tip
+
+> 
+
+> These variables are all simple strings, but the format can be a full template. See Filename Templates for even more advanced formatting.
+
+> 
+
+> Paperless will try to conserve the information from your database as much as possible. However, some characters that you can use in document titles and correspondent names (such as : \ / and a couple more) are not allowed in filenames and will be replaced with dashes.
+
+> 
+
+> If paperless detects that two documents share the same filename, paperless will automatically append _01, _02, etc to the filename. This happens if all the placeholders in a filename evaluate to the same value.
+
+> 
+
+> If there are any errors in the placeholders included in PAPERLESS_FILENAME_FORMAT, paperless will fall back to using the default naming scheme instead.
+
+> 
+
+> Caution
+
+> 
+
+> As of now, you could potentially tell paperless to store your files anywhere outside the media directory by setting
+
+> 
+
+> PAPERLESS_FILENAME_FORMAT=../../my/custom/location/{title}
+
+> However, keep in mind that inside docker, if files get stored outside of the predefined volumes, they will be lost after a restart.
+
+> 
+
+> Empty placeholders
+
+> You can affect how empty placeholders are treated by changing the PAPERLESS_FILENAME_FORMAT_REMOVE_NONE setting.
+
+> 
+
+> Enabling this results in all empty placeholders resolving to "" instead of "none" as stated above. Spaces before empty placeholders are removed as well, empty directories are omitted.
+
+> 
+
+> Storage paths
+
+> When a single storage layout is not sufficient for your use case, storage paths allow for more complex structure to set precisely where each document is stored in the file system.
+
+> 
+
+> Each storage path is a PAPERLESS_FILENAME_FORMAT and follows the rules described above
+
+> Each document is assigned a storage path using the matching algorithms described above, but can be overwritten at any time
+
+> For example, you could define the following two storage paths:
+
+> 
+
+> Normal communications are put into a folder structure sorted by year/correspondent
+
+> Communications with insurance companies are stored in a flat structure with longer file names, but containing the full date of the correspondence.
+
+> By Year = {{ created_year }}/{{ correspondent }}/{{ title }}
+
+> Insurances = Insurances/{{ correspondent }}/{{ created_year }}-{{ created_month }}-{{ created_day }} {{ title }}
+
+> If you then map these storage paths to the documents, you might get the following result. For simplicity, By Year defines the same structure as in the previous example above.
+
+> 
+
+> 2019/                                   # By Year
+
+>    My bank/
+
+>      Statement January.pdf
+
+>      Statement February.pdf
+
+> 
+
+> Insurances/                             # Insurances
+
+>    Healthcare 123/
+
+>      2022-01-01 Statement January.pdf
+
+>      2022-02-02 Letter.pdf
+
+>      2022-02-03 Letter.pdf
+
+>    Dental 456/
+
+>      2021-12-01 New Conditions.pdf
+
+> Tip
+
+> 
+
+> Defining a storage path is optional. If no storage path is defined for a document, the global PAPERLESS_FILENAME_FORMAT is applied.
+
+> 
+
+> Filename Templates
+
+> The filename formatting uses Jinja templates to build the filename. This allows for complex logic to be included in the format, including logical structures and filters to manipulate the variables provided. The template is provided as a string, potentially multiline, and rendered into a single line.
+
+> 
+
+> In addition, the entire Document instance is available to be utilized in a more advanced way, as well as some variables which only make sense to be accessed with more complex logic.
+
+> 
+
+> Custom Jinja2 Filters
+
+> Custom Field Access
+
+> The get_cf_value filter retrieves a value from custom field data with optional default fallback.
+
+> 
+
+> Syntax
+
+> {{ custom_fields | get_cf_value('field_name') }}
+
+> {{ custom_fields | get_cf_value('field_name', 'default_value') }}
+
+> Parameters
+
+> custom_fields: This must be the provided custom field data
+
+> name (str): Name of the custom field to retrieve
+
+> default (str, optional): Default value to return if field is not found or has no value
+
+> Returns
+
+> str | None: The field value, default value, or None if neither exists
+
+> Examples
+
+> <!-- Basic usage -->
+
+> {{ custom_fields | get_cf_value('department') }}
+
+> 
+
+> <!-- With default value -->
+
+> {{ custom_fields | get_cf_value('phone', 'Not provided') }}
+
+> Datetime Formatting
+
+> The datetime filter formats a datetime string or datetime object using Python's strftime formatting.
+
+> 
+
+> Syntax
+
+> {{ datetime_value | datetime('%Y-%m-%d %H:%M:%S') }}
+
+> Parameters
+
+> value (str | datetime): Date/time value to format (strings will be parsed automatically)
+
+> format (str): Python strftime format string
+
+> Returns
+
+> str: Formatted datetime string
+
+> Examples
+
+> <!-- Format datetime object -->
+
+> {{ created | datetime('%B %d, %Y at %I:%M %p') }}
+
+> <!-- Output: "January 15, 2024 at 02:30 PM" -->
+
+> 
+
+> <!-- Custom formatting -->
+
+> {{ custom_fields | get_cf_value('Date Field') | datetime('%A, %B %d, %Y') }}
+
+> <!-- Output: "Monday, January 15, 2024" -->
+
+> See the strftime format code documentation for the possible codes and their meanings.
+
+> 
+
+> Date Localization
+
+> The localize_date filter formats a date or datetime object into a localized string using Babel internationalization. This takes into account the provided locale for translation. Since this must be used on a date or datetime object, you must access the field directly, i.e. document.created. An ISO string can also be provided to control the output format.
+
+> 
+
+> Syntax
+
+> {{ date_value | localize_date('medium', 'en_US') }}
+
+> {{ datetime_value | localize_date('short', 'fr_FR') }}
+
+> Parameters
+
+> value (date | datetime | str): Date, datetime object or ISO string to format (datetime should be timezone-aware)
+
+> format (str): Format type - either a Babel preset ('short', 'medium', 'long', 'full') or custom pattern
+
+> locale (str): Locale code for localization (e.g., 'en_US', 'fr_FR', 'de_DE')
+
+> Returns
+
+> str: Localized, formatted date string
+
+> Examples
+
+> <!-- Preset formats -->
+
+> {{ document.created | localize_date('short', 'en_US') }}
+
+> <!-- Output: "1/15/24" -->
+
+> 
+
+> {{ document.created | localize_date('medium', 'en_US') }}
+
+> <!-- Output: "Jan 15, 2024" -->
+
+> 
+
+> {{ document.created | localize_date('long', 'en_US') }}
+
+> <!-- Output: "January 15, 2024" -->
+
+> 
+
+> {{ document.created | localize_date('full', 'en_US') }}
+
+> <!-- Output: "Monday, January 15, 2024" -->
+
+> 
+
+> <!-- Different locales -->
+
+> {{ document.created | localize_date('medium', 'fr_FR') }}
+
+> <!-- Output: "15 janv. 2024" -->
+
+> 
+
+> {{ document.created | localize_date('medium', 'de_DE') }}
+
+> <!-- Output: "15.01.2024" -->
+
+> 
+
+> <!-- Custom patterns -->
+
+> {{ document.created | localize_date('dd/MM/yyyy', 'en_GB') }}
+
+> <!-- Output: "15/01/2024" -->
+
+> See the supported format codes for more options.
+
+> 
+
+> Format Presets
+
+> short: Abbreviated format (e.g., "1/15/24")
+
+> medium: Medium-length format (e.g., "Jan 15, 2024")
+
+> long: Long format with full month name (e.g., "January 15, 2024")
+
+> full: Full format including day of week (e.g., "Monday, January 15, 2024")
+
+> Additional Variables
+
+> {{ tag_name_list }}: A list of tag names applied to the document, ordered by the tag name. Note this is a list, not a single string
+
+> {{ custom_fields }}: A mapping of custom field names to their type and value. A user can access the mapping by field name or check if a field is applied by checking its existence in the variable.
+
+> Tip
+
+> 
+
+> To access a custom field which has a space in the name, use the get_cf_value filter. See the examples below. This helps get fields by name and handle a default value if the named field is not attached to a Document.
+
+> 
+
+> Examples
+
+> This example will construct a path based on the archive serial number range:
+
+> 
+
+> somepath/
+
+> {% if document.archive_serial_number >= 0 and document.archive_serial_number <= 200 %}
+
+>   asn-000-200/{{title}}
+
+> {% elif document.archive_serial_number >= 201 and document.archive_serial_number <= 400 %}
+
+>   asn-201-400
+
+>   {% if document.archive_serial_number >= 201 and document.archive_serial_number < 300 %}
+
+>     /asn-2xx
+
+>   {% elif document.archive_serial_number >= 300 and document.archive_serial_number < 400 %}
+
+>     /asn-3xx
+
+>   {% endif %}
+
+> {% endif %}
+
+> /{{ title }}
+
+> For a document with an ASN of 205, it would result in somepath/asn-201-400/asn-2xx/Title.pdf, but a document with an ASN of 355 would be placed in somepath/asn-201-400/asn-3xx/Title.pdf.
+
+> 
+
+> {% if document.mime_type == "application/pdf" %}
+
+>   pdfs
+
+> {% elif document.mime_type == "image/png" %}
+
+>   pngs
+
+> {% else %}
+
+>   others
+
+> {% endif %}
+
+> /{{ title }}
+
+> For a PDF document, it would result in pdfs/Title.pdf, but for a PNG document, the path would be pngs/Title.png.
+
+> 
+
+> To use custom fields:
+
+> 
+
+> {% if "Invoice" in custom_fields %}
+
+>   invoices/{{ custom_fields.Invoice.value }}
+
+> {% else %}
+
+>   not-invoices/{{ title }}
+
+> {% endif %}
+
+> If the document has a custom field named "Invoice" with a value of 123, it would be filed into the invoices/123.pdf, but a document without the custom field would be filed to not-invoices/Title.pdf
+
+> 
+
+> If the custom field is named "Invoice Number", you would access the value of it via the get_cf_value filter due to quirks of the Django Template Language:
+
+> 
+
+> "invoices/{{ custom_fields|get_cf_value('Invoice Number') }}"
+
+> You can also use a custom datetime filter to format dates:
+
+> 
+
+> invoices/
+
+> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%Y') }}/
+
+> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%m') }}/
+
+> {{ custom_fields|get_cf_value("Date Field","2024-01-01")|datetime('%d') }}/
+
+> Invoice_{{ custom_fields|get_cf_value("Select Field") }}_{{ custom_fields|get_cf_value("Date Field","2024-01-01")|replace("-", "") }}.pdf
+
+> This will create a path like invoices/2022/01/01/Invoice_OptionTwo_20220101.pdf if the custom field "Date Field" is set to January 1, 2022 and "Select Field" is set to OptionTwo.
+
+> 
+
+> You can also use a custom slugify filter to slufigy text:
+
+> 
+
+> {{ title | slugify }}
+
+> Automatic recovery of invalid PDFs
+
+> Paperless will attempt to "clean" certain invalid PDFs with qpdf before processing if, for example, the mime_type detection is incorrect. This can happen if the PDF is not properly formatted or contains errors.
+
+> 
+
+> Celery Monitoring
+
+> The monitoring tool Flower can be used to view more detailed information about the health of the celery workers used for asynchronous tasks. This includes details on currently running, queued and completed tasks, timing and more. Flower can also be used with Prometheus, as it exports metrics. For details on its capabilities, refer to the Flower documentation.
+
+> 
+
+> Flower can be enabled with the setting PAPERLESS_ENABLE_FLOWER. To configure Flower further, create a flowerconfig.py and place it into the src/paperless directory. For a Docker installation, you can use volumes to accomplish this:
+
+> 
+
+> services:
+
+>     # ...
+
+>     webserver:
+
+>         environment:
+
+>             - PAPERLESS_ENABLE_FLOWER
+
+>         ports:
+
+>             - 5555:5555 
+
+>         # ...
+
+>         volumes:
+
+>             - /path/to/my/flowerconfig.py:/usr/src/paperless/src/paperless/flowerconfig.py:ro 
+
+> Custom Container Initialization
+
+> The Docker image includes the ability to run custom user scripts during startup. This could be utilized for installing additional tools or Python packages, for example. Scripts are expected to be shell scripts.
+
+> 
+
+> To utilize this, mount a folder containing your scripts to the custom initialization directory, /custom-cont-init.d and place scripts you wish to run inside. For security, the folder must be owned by root and should have permissions of a=rx. Additionally, scripts must only be writable by root.
+
+> 
+
+> Your scripts will be run directly before the webserver completes startup. Scripts will be run by the root user. If you would like to switch users, the utility gosu is available and preferred over sudo.
+
+> 
+
+> This is an advanced functionality with which you could break functionality or lose data. If you experience issues, please disable any custom scripts and try again before reporting an issue.
+
+> 
+
+> For example, using Docker Compose:
+
+> 
+
+> services:
+
+>     # ...
+
+>     webserver:
+
+>         # ...
+
+>         volumes:
+
+>             - /path/to/my/scripts:/custom-cont-init.d:ro 
+
+> MySQL Caveats
+
+> Case Sensitivity
+
+> The database interface does not provide a method to configure a MySQL database to be case-sensitive. A case-insensitive database prevents a user from creating a tag Name and NAME as they are considered the same.
+
+> 
+
+> However, there is a downside to turning on case sensitivity, as it also makes searches case-sensitive, so for example a document with the title Invoice won't be found when searching for invoice.
+
+> 
+
+> Per Django documentation, making a database case-sensitive requires manual intervention. To enable case sensitive tables, you can execute the following command against each table:
+
+> 
+
+> ALTER TABLE <table_name> CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+
+> 
+
+> You can also set the default for new tables (this does NOT affect existing tables) with:
+
+> 
+
+> ALTER DATABASE <db_name> CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+
+> 
+
+> Warning
+
+> 
+
+> Using mariadb version 10.4+ is recommended. Using the utf8mb3 character set on an older system may fix issues that can arise while setting up Paperless-ngx but utf8mb3 can cause issues with consumption (where utf8mb4 does not).
+
+> 
+
+> For more information on this topic, you can refer to this Django issue.
+
+> 
+
+> Missing timezones
+
+> MySQL as well as MariaDB do not have any timezone information by default (though some docker images such as the official MariaDB image take care of this for you) which will cause unexpected behavior with date-based queries.
+
+> 
+
+> To fix this, execute one of the following commands:
+
+> 
+
+> MySQL: mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql -p
+
+> 
+
+> MariaDB: mariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql -p
+
+> 
+
+> Barcodes
+
+> Paperless is able to utilize barcodes for automatically performing some tasks.
+
+> 
+
+> At this time, the library utilized for detection of barcodes supports the following types:
+
+> 
+
+> AN-13/UPC-A
+
+> UPC-E
+
+> EAN-8
+
+> Code 128
+
+> Code 93
+
+> Code 39
+
+> Codabar
+
+> Interleaved 2 of 5
+
+> QR Code
+
+> SQ Code
+
+> You may check for updates on the zbar library homepage. For usage in Paperless, the type of barcode does not matter, only the contents of it.
+
+> 
+
+> For how to enable barcode usage, see the configuration. The two settings may be enabled independently, but do have interactions as explained below.
+
+> 
+
+> Document Splitting
+
+> When enabled, Paperless will look for a barcode with the configured value and create a new document starting from the next page. The page with the barcode on it will not be retained. It is expected to be a page existing only for triggering the split.
+
+> 
+
+> Archive Serial Number Assignment
+
+> When enabled, the value of the barcode (as an integer) will be used to set the document's archive serial number, allowing quick reference back to the original, paper document.
+
+> 
+
+> If document splitting via barcode is also enabled, documents will be split when an ASN barcode is located. However, differing from the splitting, the page with the barcode will be retained. This allows application of a barcode to any page, including one which holds data to keep in the document.
+
+> 
+
+> Tag Assignment
+
+> When enabled, Paperless will parse barcodes and attempt to interpret and assign tags.
+
+> 
+
+> See the relevant settings PAPERLESS_CONSUMER_ENABLE_TAG_BARCODE and PAPERLESS_CONSUMER_TAG_BARCODE_MAPPING for more information.
+
+> 
+
+> Automatic collation of double-sided documents
+
+> Note
+
+> 
+
+> If your scanner supports double-sided scanning natively, you do not need this feature.
+
+> 
+
+> This feature is turned off by default, see configuration on how to turn it on.
+
+> 
+
+> Summary
+
+> If you have a scanner with an automatic document feeder (ADF) that only scans a single side, this feature makes scanning double-sided documents much more convenient by automatically collating two separate scans into one document, reordering the pages as necessary.
+
+> 
+
+> Usage example
+
+> Suppose you have a double-sided document with 6 pages (3 sheets of paper). First, put the stack into your ADF as normal, ensuring that page 1 is scanned first. Your ADF will now scan pages 1, 3, and 5. Then you (or your scanner, if it supports it) upload the scan into the correct sub-directory of the consume folder (double-sided by default; keep in mind that Paperless will not automatically create the directory for you.) Paperless will then process the scan and move it into an internal staging area.
+
+> 
+
+> The next step is to turn your stack upside down (without reordering the sheets of paper), and scan it once again, your ADF will now scan pages 6, 4, and 2, in that order. Once this scan is copied into the sub-directory, Paperless will collate the previous scan with the new one, reversing the order of the pages on the second, "even numbered" scan. The resulting document will have the pages 1-6 in the correct order, and this new file will then be processed as normal.
+
+> 
+
+> Tip
+
+> 
+
+> When scanning the even numbered pages, you can omit the last empty pages, if there are any. For example, if page 6 is empty, you only need to scan pages 2 and 4. Do not omit empty pages in the middle of the document.
+
+> 
+
+> Things that could go wrong
+
+> Paperless will notice when the first, "odd numbered" scan has less pages than the second scan (this can happen when e.g. the ADF skipped a few pages in the first pass). In that case, Paperless will remove the staging copy as well as the scan, and give you an error message asking you to restart the process from scratch, by scanning the odd pages again, followed by the even pages.
+
+> 
+
+> It's important that the scan files get consumed in the correct order, and one at a time. You therefore need to make sure that Paperless is running while you upload the files into the directory; and if you're using polling, make sure that CONSUMER_POLLING is set to a value lower than it takes for the second scan to appear, like 5-10 or even lower.
+
+> 
+
+> Another thing that might happen is that you start a double sided scan, but then forget to upload the second file. To avoid collating the wrong documents if you then come back a day later to scan a new double-sided document, Paperless will only keep an "odd numbered pages" file for up to 30 minutes. If more time passes, it will consider the next incoming scan a completely new "odd numbered pages" one. The old staging file will get discarded.
+
+> 
+
+> Interaction with "subdirs as tags"
+
+> The collation feature can be used together with the subdirs as tags feature (but this is not a requirement). Just create a correctly named double-sided subdir in the hierarchy and upload your scans there. For example, both double-sided/foo/bar as well as foo/bar/double-sided will cause the collated document to be treated as if it were uploaded into foo/bar and receive both foo and bar tags, but not double-sided.
+
+> 
+
+> Interaction with document splitting
+
+> You can use the document splitting feature, but if you use a normal single-sided split marker page, the split document(s) will have an empty page at the front (or whatever else was on the backside of the split marker page.) You can work around that by having a split marker page that has the split barcode on both sides. This way, the extra page will get automatically removed.
+
+> 
+
+> SSO and third party authentication with Paperless-ngx
+
+> Paperless-ngx has a built-in authentication system from Django but you can easily integrate an external authentication solution using one of the following methods:
+
+> 
+
+> Remote User authentication
+
+> This is a simple option that uses remote user authentication made available by certain SSO applications. See the relevant configuration options for more information: PAPERLESS_ENABLE_HTTP_REMOTE_USER, PAPERLESS_HTTP_REMOTE_USER_HEADER_NAME and PAPERLESS_LOGOUT_REDIRECT_URL
+
+> 
+
+> OpenID Connect and social authentication
+
+> Version 2.5.0 of Paperless-ngx added support for integrating other authentication systems via the django-allauth package. Once set up, users can either log in or (optionally) sign up using any third party systems you integrate. See the relevant configuration settings and django-allauth docs for more information.
+
+> 
+
+> To associate an existing Paperless-ngx account with a social account, first login with your regular credentials and then choose "My Profile" from the user dropdown in the app and you will see options to connect social account(s). If enabled, signup options will be available on the login page.
+
+> 
+
+> As an example, to set up login via Github, the following environment variables would need to be set:
+
+> 
+
+> PAPERLESS_APPS="allauth.socialaccount.providers.github"
+
+> PAPERLESS_SOCIALACCOUNT_PROVIDERS='{"github": {"APPS": [{"provider_id": "github","name": "Github","client_id": "<CLIENT_ID>","secret": "<CLIENT_SECRET>"}]}}'
+
+> Or, to use OpenID Connect ("OIDC"), via Keycloak in this example:
+
+> 
+
+> PAPERLESS_APPS="allauth.socialaccount.providers.openid_connect"
+
+> PAPERLESS_SOCIALACCOUNT_PROVIDERS='
+
+> {"openid_connect": {"APPS": [{"provider_id": "keycloak","name": "Keycloak","client_id": "paperless","secret": "<CLIENT_SECRET>","settings": { "server_url": "https://<KEYCLOAK_SERVER>/realms/<REALM>/.well-known/openid-configuration"}}]}}'
+
+> More details about configuration option for various providers can be found in the allauth documentation.
+
+> 
+
+> Disabling Regular Login
+
+> Once external auth is set up, 'regular' login can be disabled with the PAPERLESS_DISABLE_REGULAR_LOGIN setting and / or users can be automatically redirected with the PAPERLESS_REDIRECT_LOGIN_TO_SSO setting.
+
+> 
+
+> Decryption of encrypted emails before consumption
+
+> Paperless-ngx can be configured to decrypt gpg encrypted emails before consumption.
+
+> 
+
+> Requirements
+
+> You need a recent version of gpg-agent >= 2.1.1 installed on your host. Your host needs to be setup for decrypting your emails via gpg-agent, see this tutorial for instance. Test your setup and make sure that you can encrypt and decrypt files using your key
+
+> 
+
+> gpg --encrypt --armor -r person@email.com name_of_file
+
+> gpg --decrypt name_of_file.asc
+
+> Setup
+
+> First, enable the PAPERLESS_ENABLE_GPG_DECRYPTOR environment variable.
+
+> 
+
+> Then determine your local gpg-agent socket by invoking
+
+> 
+
+> gpgconf --list-dir agent-socket
+
+> on your host. A possible output is ~/.gnupg/S.gpg-agent. Also find the location of your public keyring.
+
+> 
+
+> If using docker, you'll need to add the following volume mounts to your docker-compose.yml file:
+
+> 
+
+> webserver:
+
+>     volumes:
+
+>         - /home/user/.gnupg/pubring.gpg:/usr/src/paperless/.gnupg/pubring.gpg
+
+>         - <path to gpg-agent socket>:/usr/src/paperless/.gnupg/S.gpg-agent
+
+> For a 'bare-metal' installation no further configuration is necessary. If you want to use a separate GNUPG_HOME, you can do so by configuring the PAPERLESS_EMAIL_GNUPG_HOME environment variable.
+
+> 
+
+> Troubleshooting
+
+> Make sure, that gpg-agent is running on your host machine
+
+> Make sure, that encryption and decryption works from inside the container using the gpg commands from above.
+
+> Check that all files in /usr/src/paperless/.gnupg have correct permissions
+
+> paperless@9da1865df327:~/.gnupg$ ls -al
+
+> drwx------ 1 paperless paperless   4096 Aug 18 17:52 .
+
+> drwxr-xr-x 1 paperless paperless   4096 Aug 18 17:52 ..
+
+> srw------- 1 paperless paperless      0 Aug 18 17:22 S.gpg-agent
+
+> -rw------- 1 paperless paperless 147940 Jul 24 10:23 pubring.gpg
+
+>  Back to top
+
+> Copyright © 2016 - 2023 Daniel Quinn, Jonas Winkler, and the Paperless-ngx team
+
 > Made with Material for MkDocs
 
 ### Assistant
@@ -7055,40 +9096,74 @@ canonical_ref: ""
 > Then tell me **which email address you’re connecting in Paperless** (one mailbox vs multiple), and I’ll give you the exact Paperless mail rules (filters + actions) for FCFCU/AES/JOEL/ZJK so it routes cleanly on day one.
 
 ### User
-> here are the workflow options, lets set the default flow. Trigger Workflow On:
-> 
-> 1. Document Added
-> Trigger type
-> Document Added
-> Trigger for documents that match all filters specified below.
-> 
-> Filter filename
-> Apply to documents that match this filename. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive.
-> Content matching algorithm
-> None: Disable matching
-> Advanced Filters
-> Has all of these tags
-> Actions
-> Apply Actions:
-> 
-> 
-> 1. Assignment
-> Action type
-> Assignment
-> Assign title
-> Can include some placeholders, see documentation.
-> Assign tags
-> Assign document type
-> Assign correspondent
-> Assign storage path
-> Assign custom fields
-> Assign owner
-> Assign view permissions
-> Users:
-> Groups:
-> Assign edit permissions
-> Users:
-> Groups:
+> here are the workflow options, lets set the default flow. Trigger Workflow On:
+
+> 
+
+> 1. Document Added
+
+> Trigger type
+
+> Document Added
+
+> Trigger for documents that match all filters specified below.
+
+> 
+
+> Filter filename
+
+> Apply to documents that match this filename. Wildcards such as *.pdf or *invoice* are allowed. Case insensitive.
+
+> Content matching algorithm
+
+> None: Disable matching
+
+> Advanced Filters
+
+> Has all of these tags
+
+> Actions
+
+> Apply Actions:
+
+> 
+
+> 
+
+> 1. Assignment
+
+> Action type
+
+> Assignment
+
+> Assign title
+
+> Can include some placeholders, see documentation.
+
+> Assign tags
+
+> Assign document type
+
+> Assign correspondent
+
+> Assign storage path
+
+> Assign custom fields
+
+> Assign owner
+
+> Assign view permissions
+
+> Users:
+
+> Groups:
+
+> Assign edit permissions
+
+> Users:
+
+> Groups:
+
 > Edit permissions also grant viewing permissions
 
 ### Assistant
@@ -7429,1030 +9504,2054 @@ canonical_ref: ""
 > Once I know which branch we’re on, I’ll give you the exact fix in one step.
 
 ### User
-> QiPaperless-ngx
-> by Paperless-ngx
-> Search
-> 1
->  Dashboard
->  Documents
-> Manage
->  Correspondents
->  Tags
->  Document Types
->  Storage Paths
->  Custom Fields
->  Saved Views
->  Workflows
->  Mail
->  Trash
-> Administration
->  Settings
->  Configuration
->  Users & Groups
->  File Tasks
->  Logs
->  Documentation
-> QiPaperless-ngx v2.20.3
-> Logs 
-> Show
-> 5000
-> lines
-> Auto refresh
-> paperless.log
-> mail.log
-> celery.log
-> [2026-01-04 08:21:45,409] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
-> 
-> [2026-01-04 08:21:45,761] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
-> 
-> [2026-01-04 08:21:45,762] [INFO] [_granian.workers] Started worker-1
-> 
-> [2026-01-04 08:21:45,762] [INFO] [_granian.workers] Started worker-1 runtime-1
-> 
-> [2026-01-04 08:36:27,918] [INFO] [_granian.workers] Stopping worker-1
-> 
-> [2026-01-04 08:36:27,918] [INFO] [_granian.workers] Stopping worker-1 runtime-1
-> 
-> [2026-01-04 14:36:55,372] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
-> 
-> [2026-01-04 14:36:55,670] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
-> 
-> [2026-01-04 14:36:55,686] [INFO] [_granian.workers] Started worker-1
-> 
-> [2026-01-04 14:36:55,686] [INFO] [_granian.workers] Started worker-1 runtime-1
-> 
-> [2026-01-04 14:37:43,491] [DEBUG] [paperless.auth] Creating initial superuser ``
-> 
-> [2026-01-04 14:39:27,474] [INFO] [paperless.auth] Login failed for user `crice4485@gmail.com` from private IP `172.18.0.1`.
-> 
-> [2026-01-04 14:39:35,381] [INFO] [paperless.auth] Login failed for user `crice4485` from private IP `172.18.0.1`.
-> 
-> [2026-01-04 14:39:50,399] [INFO] [paperless.auth] Login failed for user `cody` from private IP `172.18.0.1`.
-> 
-> [2026-01-04 14:40:14,992] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 14:40:15,011] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 14:40:15,012] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 14:40:15,016] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 14:40:15,016] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 14:40:15,026] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 14:40:15,027] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 14:40:15,027] [INFO] [paperless.consumer] Consuming www.expedia.com-egti-RAB-QMV-UIX4.pdf
-> 
-> [2026-01-04 14:40:15,032] [DEBUG] [paperless.consumer] Detected mime type: application/pdf
-> 
-> [2026-01-04 14:40:15,040] [DEBUG] [paperless.consumer] Parser: RasterisedDocumentParser
-> 
-> [2026-01-04 14:40:15,046] [DEBUG] [paperless.consumer] Parsing www.expedia.com-egti-RAB-QMV-UIX4.pdf...
-> 
-> [2026-01-04 14:40:15,077] [INFO] [paperless.parsing.tesseract] pdftotext exited 0
-> 
-> [2026-01-04 14:40:15,460] [DEBUG] [paperless.parsing.tesseract] Calling OCRmyPDF with args: {'input_file': PosixPath('/tmp/paperless/paperless-ngxzcqf75jg/www.expedia.com-egti-RAB-QMV-UIX4.pdf'), 'output_file': PosixPath('/tmp/paperless/paperless-ko4zho3e/archive.pdf'), 'use_threads': True, 'jobs': 4, 'language': 'eng', 'output_type': 'pdfa', 'progress_bar': False, 'color_conversion_strategy': 'RGB', 'skip_text': True, 'clean': True, 'deskew': True, 'rotate_pages': True, 'rotate_pages_threshold': 12.0, 'sidecar': PosixPath('/tmp/paperless/paperless-ko4zho3e/sidecar.txt')}
-> 
-> [2026-01-04 14:40:15,732] [WARNING] [ocrmypdf._pipeline] This PDF is marked as a Tagged PDF. This often indicates that the PDF was generated from an office document and does not need OCR. PDF pages processed by OCRmyPDF may not be tagged correctly.
-> 
-> [2026-01-04 14:40:15,732] [INFO] [ocrmypdf._pipelines.ocr] Start processing 2 pages concurrently
-> 
-> [2026-01-04 14:40:15,734] [INFO] [ocrmypdf._pipeline] skipping all processing on this page
-> 
-> [2026-01-04 14:40:15,734] [INFO] [ocrmypdf._pipeline] skipping all processing on this page
-> 
-> [2026-01-04 14:40:15,743] [INFO] [ocrmypdf._pipelines.ocr] Postprocessing...
-> 
-> [2026-01-04 14:40:16,015] [INFO] [ocrmypdf._pipeline] Image optimization ratio: 1.30 savings: 23.2%
-> 
-> [2026-01-04 14:40:16,015] [INFO] [ocrmypdf._pipeline] Total file size ratio: 2.02 savings: 50.5%
-> 
-> [2026-01-04 14:40:16,018] [INFO] [ocrmypdf._pipelines._common] Output file is a PDF/A-2b (as expected)
-> 
-> [2026-01-04 14:40:16,029] [DEBUG] [paperless.parsing.tesseract] Incomplete sidecar file: discarding.
-> 
-> [2026-01-04 14:40:16,089] [INFO] [paperless.parsing.tesseract] pdftotext exited 0
-> 
-> [2026-01-04 14:40:16,090] [DEBUG] [paperless.consumer] Generating thumbnail for www.expedia.com-egti-RAB-QMV-UIX4.pdf...
-> 
-> [2026-01-04 14:40:16,096] [DEBUG] [paperless.parsing] Execute: convert -density 300 -scale 500x5000> -alpha remove -strip -auto-orient -define pdf:use-cropbox=true /tmp/paperless/paperless-ko4zho3e/archive.pdf[0] /tmp/paperless/paperless-ko4zho3e/convert.webp
-> 
-> [2026-01-04 14:40:17,854] [INFO] [paperless.parsing] convert exited 0
-> 
-> [2026-01-04 14:40:17,938] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
-> 
-> [2026-01-04 14:40:17,944] [DEBUG] [paperless.consumer] Saving record to database
-> 
-> [2026-01-04 14:40:17,944] [DEBUG] [paperless.consumer] Creation date from st_mtime: 2026-01-04 14:40:14+00:00
-> 
-> [2026-01-04 14:40:18,072] [DEBUG] [paperless.index] Index updated for document 1.
-> 
-> [2026-01-04 14:40:18,110] [DEBUG] [paperless.consumer] Deleting original file /tmp/paperless/tmpyyka_9vt/www.expedia.com-egti-RAB-QMV-UIX4.pdf
-> 
-> [2026-01-04 14:40:18,111] [DEBUG] [paperless.consumer] Deleting working copy /tmp/paperless/paperless-ngxzcqf75jg/www.expedia.com-egti-RAB-QMV-UIX4.pdf
-> 
-> [2026-01-04 14:40:18,120] [DEBUG] [paperless.parsing.tesseract] Deleting directory /tmp/paperless/paperless-ko4zho3e
-> 
-> [2026-01-04 14:40:18,120] [INFO] [paperless.consumer] Document 2026-01-04 www.expedia.com-egti-RAB-QMV-UIX4 consumption finished
-> 
-> [2026-01-04 14:40:18,128] [INFO] [paperless.tasks] ConsumeTaskPlugin completed with: Success. New document id 1 created
-> 
-> [2026-01-04 15:05:00,074] [INFO] [paperless.tasks] No automatic matching items, not training
-> 
-> [2026-01-04 15:51:19,004] [INFO] [_granian.workers] Stopping worker-1 runtime-1
-> 
-> [2026-01-04 15:51:19,004] [INFO] [_granian.workers] Stopping worker-1
-> 
-> [2026-01-04 15:51:41,410] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
-> 
-> [2026-01-04 15:51:42,126] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
-> 
-> [2026-01-04 15:51:42,128] [INFO] [_granian.workers] Started worker-1
-> 
-> [2026-01-04 15:51:42,128] [INFO] [_granian.workers] Started worker-1 runtime-1
-> 
-> [2026-01-04 16:05:00,098] [INFO] [paperless.tasks] No automatic matching items, not training
-> 
-> [2026-01-04 16:52:53,267] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
-> 
-> [2026-01-04 16:52:55,682] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
-> 
-> [2026-01-04 16:52:55,718] [INFO] [_granian.workers] Started worker-1
-> 
-> [2026-01-04 16:52:55,718] [INFO] [_granian.workers] Started worker-1 runtime-1
-> 
-> [2026-01-04 17:05:00,098] [INFO] [paperless.tasks] No automatic matching items, not training
-> 
-> [2026-01-04 17:27:21,918] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 17:27:21,936] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 17:27:21,936] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 17:27:21,940] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 17:27:21,940] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 17:27:21,956] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 17:27:21,957] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 17:27:21,957] [INFO] [paperless.consumer] Consuming Qially has granted you access to their Gmail account.eml
-> 
-> [2026-01-04 17:27:21,962] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
-> 
-> [2026-01-04 17:27:21,968] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:21,969] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Qially has granted you access to their Gmail account.eml: Unsupported mime type message/rfc822
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
-> 
->     msg = plugin.run()
-> 
->           ^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
-> 
->     self._fail(
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
-> 
->     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
-> 
-> documents.consumer.ConsumerError: Qially has granted you access to their Gmail account.eml: Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:22,570] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 17:27:22,588] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 17:27:22,589] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 17:27:22,592] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 17:27:22,592] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 17:27:22,602] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 17:27:22,603] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 17:27:22,604] [INFO] [paperless.consumer] Consuming Google Cloud Organization is now available for your domain.eml
-> 
-> [2026-01-04 17:27:22,608] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
-> 
-> [2026-01-04 17:27:22,615] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:22,615] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Google Cloud Organization is now available for your domain.eml: Unsupported mime type message/rfc822
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
-> 
->     msg = plugin.run()
-> 
->           ^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
-> 
->     self._fail(
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
-> 
->     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
-> 
-> documents.consumer.ConsumerError: Google Cloud Organization is now available for your domain.eml: Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:23,204] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 17:27:23,224] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 17:27:23,225] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 17:27:23,228] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 17:27:23,228] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 17:27:23,239] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 17:27:23,239] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 17:27:23,239] [INFO] [paperless.consumer] Consuming Security alert.eml
-> 
-> [2026-01-04 17:27:23,244] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
-> 
-> [2026-01-04 17:27:23,250] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:23,251] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
-> 
->     msg = plugin.run()
-> 
->           ^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
-> 
->     self._fail(
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
-> 
->     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
-> 
-> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:23,835] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 17:27:23,863] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 17:27:23,863] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 17:27:23,867] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 17:27:23,867] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 17:27:23,878] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 17:27:23,878] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 17:27:23,878] [INFO] [paperless.consumer] Consuming Security alert.eml
-> 
-> [2026-01-04 17:27:23,890] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
-> 
-> [2026-01-04 17:27:23,896] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:23,897] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
-> 
->     msg = plugin.run()
-> 
->           ^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
-> 
->     self._fail(
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
-> 
->     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
-> 
-> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:24,496] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
-> 
-> [2026-01-04 17:27:24,518] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
-> 
-> [2026-01-04 17:27:24,522] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
-> 
-> [2026-01-04 17:27:24,529] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
-> 
-> [2026-01-04 17:27:24,530] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
-> 
-> [2026-01-04 17:27:24,546] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
-> 
-> [2026-01-04 17:27:24,546] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
-> 
-> [2026-01-04 17:27:24,546] [INFO] [paperless.consumer] Consuming Security alert.eml
-> 
-> [2026-01-04 17:27:24,552] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
-> 
-> [2026-01-04 17:27:24,558] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:27:24,560] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
-> 
->     msg = plugin.run()
-> 
->           ^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
-> 
->     self._fail(
-> 
->   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
-> 
->     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
-> 
-> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
-> 
-> [2026-01-04 17:58:42,796] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
-> 
-> [2026-01-04 18:00:07,275] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
-> 
-> [2026-01-04 18:01:26,950] [DEBUG] [paperless.index] Index updated for document 1.
-> 
-> [2026-01-04 18:01:49,795] [DEBUG] [paperless.index] Index updated for document 1.
-> 
-> [2026-01-04 18:03:10,020] [DEBUG] [paperless.index] Index updated for document 1.
-> 
-> [2026-01-04 18:04:20,591] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
-> 
-> [2026-01-04 18:05:00,065] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
-> 
-> [2026-01-04 18:05:00,070] [DEBUG] [paperless.classifier] Gathering data from database...
-> 
-> [2026-01-04 18:05:00,091] [DEBUG] [paperless.classifier] 1 documents, 5 tag(s), 1 correspondent(s), 1 document type(s). 0 storage path(s)
-> 
-> [2026-01-04 18:05:03,743] [DEBUG] [paperless.classifier] Vectorizing data...
-> 
-> [2026-01-04 18:05:05,218] [DEBUG] [paperless.classifier] Training tags classifier...
-> 
-> [2026-01-04 18:05:05,241] [DEBUG] [paperless.classifier] Training correspondent classifier...
-> 
-> [2026-01-04 18:05:05,257] [DEBUG] [paperless.classifier] Training document type classifier...
-> 
-> [2026-01-04 18:05:05,282] [DEBUG] [paperless.classifier] There are no storage paths. Not training storage path classifier.
-> 
-> [2026-01-04 18:05:05,285] [INFO] [paperless.tasks] Saving updated classifier model to /usr/src/paperless/data/classification_model.pickle...
-> 
-> Drop files to begin upload_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 17:36:36,848] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 17:36:36,849] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 17:36:37,153] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 17:36:37,153] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 17:36:37,707] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 17:36:37,711] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 17:36:37,893] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 17:36:38,062] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 17:40:00,068] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 17:40:00,069] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 17:40:00,363] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 17:40:00,363] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 17:40:01,377] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 17:40:01,380] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 17:40:01,615] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 17:40:01,848] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 17:40:01,850] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 17:50:00,074] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 17:50:00,075] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 17:50:00,376] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 17:50:00,377] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 17:50:00,959] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 17:50:00,962] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 17:50:01,109] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 17:50:01,257] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 17:50:01,259] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 17:50:01,259] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 17:50:01,259] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:00:00,064] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:00:00,065] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:00:00,333] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:00:00,333] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:00:00,914] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:00:00,917] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:00:01,078] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:00:01,248] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:10:00,058] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:10:00,059] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:10:00,373] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:10:00,373] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:10:01,474] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:10:01,476] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:10:01,660] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:10:01,847] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:10:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:10:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:10:01,849] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:14:38,530] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:14:38,531] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:14:39,216] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:14:39,216] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:14:39,855] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:14:39,858] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:14:40,047] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:14:40,212] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:14:40,214] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:15:42,378] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:15:42,378] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:15:42,642] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:15:42,642] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:15:43,879] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:15:43,882] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:15:44,060] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:15:44,315] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:15:44,317] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:16:57,879] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:16:57,880] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:16:58,155] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:16:58,155] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:16:58,721] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:16:58,726] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:16:58,881] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:16:59,032] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:16:59,034] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
-> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> [2026-01-04 18:17:17,683] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
-> 
-> [2026-01-04 18:17:17,684] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
-> 
-> [2026-01-04 18:17:17,904] [DEBUG] [paperless_mail] GMAIL Label Support: True
-> 
-> [2026-01-04 18:17:17,904] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
-> 
-> [2026-01-04 18:17:18,373] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
-> 
-> [2026-01-04 18:17:18,376] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
-> 
-> [2026-01-04 18:17:18,520] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
-> 
-> [2026-01-04 18:17:18,664] [INFO] [paperless_mail] Located folder: INBOX
-> 
-> [2026-01-04 18:17:18,664] [INFO] [paperless_mail] Located folder: Intake
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Important
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
-> 
-> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
-> 
-> [2026-01-04 18:17:18,666] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
-> 
-> [2026-01-04 18:17:18,666] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
-> 
->     M.folder.set(folder)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
-> 
->     check_command_status(result, MailboxFolderSelectError)
-> 
->   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
-> 
->     raise exception(command_result=command_result, expected=expected)
-> 
-> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
-> 
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> 
-> Traceback (most recent call last):
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
-> 
->     total_processed_files += self._handle_mail_rule(
-> 
->                              ^^^^^^^^^^^^^^^^^^^^^^^
-> 
->   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
-> 
->     raise MailError(
-> 
+> QiPaperless-ngx
+
+> by Paperless-ngx
+
+> Search
+
+> 1
+
+>  Dashboard
+
+>  Documents
+
+> Manage
+
+>  Correspondents
+
+>  Tags
+
+>  Document Types
+
+>  Storage Paths
+
+>  Custom Fields
+
+>  Saved Views
+
+>  Workflows
+
+>  Mail
+
+>  Trash
+
+> Administration
+
+>  Settings
+
+>  Configuration
+
+>  Users & Groups
+
+>  File Tasks
+
+>  Logs
+
+>  Documentation
+
+> QiPaperless-ngx v2.20.3
+
+> Logs 
+
+> Show
+
+> 5000
+
+> lines
+
+> Auto refresh
+
+> paperless.log
+
+> mail.log
+
+> celery.log
+
+> [2026-01-04 08:21:45,409] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
+
+> 
+
+> [2026-01-04 08:21:45,761] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
+
+> 
+
+> [2026-01-04 08:21:45,762] [INFO] [_granian.workers] Started worker-1
+
+> 
+
+> [2026-01-04 08:21:45,762] [INFO] [_granian.workers] Started worker-1 runtime-1
+
+> 
+
+> [2026-01-04 08:36:27,918] [INFO] [_granian.workers] Stopping worker-1
+
+> 
+
+> [2026-01-04 08:36:27,918] [INFO] [_granian.workers] Stopping worker-1 runtime-1
+
+> 
+
+> [2026-01-04 14:36:55,372] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
+
+> 
+
+> [2026-01-04 14:36:55,670] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
+
+> 
+
+> [2026-01-04 14:36:55,686] [INFO] [_granian.workers] Started worker-1
+
+> 
+
+> [2026-01-04 14:36:55,686] [INFO] [_granian.workers] Started worker-1 runtime-1
+
+> 
+
+> [2026-01-04 14:37:43,491] [DEBUG] [paperless.auth] Creating initial superuser ``
+
+> 
+
+> [2026-01-04 14:39:27,474] [INFO] [paperless.auth] Login failed for user `crice4485@gmail.com` from private IP `172.18.0.1`.
+
+> 
+
+> [2026-01-04 14:39:35,381] [INFO] [paperless.auth] Login failed for user `crice4485` from private IP `172.18.0.1`.
+
+> 
+
+> [2026-01-04 14:39:50,399] [INFO] [paperless.auth] Login failed for user `cody` from private IP `172.18.0.1`.
+
+> 
+
+> [2026-01-04 14:40:14,992] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 14:40:15,011] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 14:40:15,012] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 14:40:15,016] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 14:40:15,016] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 14:40:15,026] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 14:40:15,027] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 14:40:15,027] [INFO] [paperless.consumer] Consuming www.expedia.com-egti-RAB-QMV-UIX4.pdf
+
+> 
+
+> [2026-01-04 14:40:15,032] [DEBUG] [paperless.consumer] Detected mime type: application/pdf
+
+> 
+
+> [2026-01-04 14:40:15,040] [DEBUG] [paperless.consumer] Parser: RasterisedDocumentParser
+
+> 
+
+> [2026-01-04 14:40:15,046] [DEBUG] [paperless.consumer] Parsing www.expedia.com-egti-RAB-QMV-UIX4.pdf...
+
+> 
+
+> [2026-01-04 14:40:15,077] [INFO] [paperless.parsing.tesseract] pdftotext exited 0
+
+> 
+
+> [2026-01-04 14:40:15,460] [DEBUG] [paperless.parsing.tesseract] Calling OCRmyPDF with args: {'input_file': PosixPath('/tmp/paperless/paperless-ngxzcqf75jg/www.expedia.com-egti-RAB-QMV-UIX4.pdf'), 'output_file': PosixPath('/tmp/paperless/paperless-ko4zho3e/archive.pdf'), 'use_threads': True, 'jobs': 4, 'language': 'eng', 'output_type': 'pdfa', 'progress_bar': False, 'color_conversion_strategy': 'RGB', 'skip_text': True, 'clean': True, 'deskew': True, 'rotate_pages': True, 'rotate_pages_threshold': 12.0, 'sidecar': PosixPath('/tmp/paperless/paperless-ko4zho3e/sidecar.txt')}
+
+> 
+
+> [2026-01-04 14:40:15,732] [WARNING] [ocrmypdf._pipeline] This PDF is marked as a Tagged PDF. This often indicates that the PDF was generated from an office document and does not need OCR. PDF pages processed by OCRmyPDF may not be tagged correctly.
+
+> 
+
+> [2026-01-04 14:40:15,732] [INFO] [ocrmypdf._pipelines.ocr] Start processing 2 pages concurrently
+
+> 
+
+> [2026-01-04 14:40:15,734] [INFO] [ocrmypdf._pipeline] skipping all processing on this page
+
+> 
+
+> [2026-01-04 14:40:15,734] [INFO] [ocrmypdf._pipeline] skipping all processing on this page
+
+> 
+
+> [2026-01-04 14:40:15,743] [INFO] [ocrmypdf._pipelines.ocr] Postprocessing...
+
+> 
+
+> [2026-01-04 14:40:16,015] [INFO] [ocrmypdf._pipeline] Image optimization ratio: 1.30 savings: 23.2%
+
+> 
+
+> [2026-01-04 14:40:16,015] [INFO] [ocrmypdf._pipeline] Total file size ratio: 2.02 savings: 50.5%
+
+> 
+
+> [2026-01-04 14:40:16,018] [INFO] [ocrmypdf._pipelines._common] Output file is a PDF/A-2b (as expected)
+
+> 
+
+> [2026-01-04 14:40:16,029] [DEBUG] [paperless.parsing.tesseract] Incomplete sidecar file: discarding.
+
+> 
+
+> [2026-01-04 14:40:16,089] [INFO] [paperless.parsing.tesseract] pdftotext exited 0
+
+> 
+
+> [2026-01-04 14:40:16,090] [DEBUG] [paperless.consumer] Generating thumbnail for www.expedia.com-egti-RAB-QMV-UIX4.pdf...
+
+> 
+
+> [2026-01-04 14:40:16,096] [DEBUG] [paperless.parsing] Execute: convert -density 300 -scale 500x5000> -alpha remove -strip -auto-orient -define pdf:use-cropbox=true /tmp/paperless/paperless-ko4zho3e/archive.pdf[0] /tmp/paperless/paperless-ko4zho3e/convert.webp
+
+> 
+
+> [2026-01-04 14:40:17,854] [INFO] [paperless.parsing] convert exited 0
+
+> 
+
+> [2026-01-04 14:40:17,938] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
+
+> 
+
+> [2026-01-04 14:40:17,944] [DEBUG] [paperless.consumer] Saving record to database
+
+> 
+
+> [2026-01-04 14:40:17,944] [DEBUG] [paperless.consumer] Creation date from st_mtime: 2026-01-04 14:40:14+00:00
+
+> 
+
+> [2026-01-04 14:40:18,072] [DEBUG] [paperless.index] Index updated for document 1.
+
+> 
+
+> [2026-01-04 14:40:18,110] [DEBUG] [paperless.consumer] Deleting original file /tmp/paperless/tmpyyka_9vt/www.expedia.com-egti-RAB-QMV-UIX4.pdf
+
+> 
+
+> [2026-01-04 14:40:18,111] [DEBUG] [paperless.consumer] Deleting working copy /tmp/paperless/paperless-ngxzcqf75jg/www.expedia.com-egti-RAB-QMV-UIX4.pdf
+
+> 
+
+> [2026-01-04 14:40:18,120] [DEBUG] [paperless.parsing.tesseract] Deleting directory /tmp/paperless/paperless-ko4zho3e
+
+> 
+
+> [2026-01-04 14:40:18,120] [INFO] [paperless.consumer] Document 2026-01-04 www.expedia.com-egti-RAB-QMV-UIX4 consumption finished
+
+> 
+
+> [2026-01-04 14:40:18,128] [INFO] [paperless.tasks] ConsumeTaskPlugin completed with: Success. New document id 1 created
+
+> 
+
+> [2026-01-04 15:05:00,074] [INFO] [paperless.tasks] No automatic matching items, not training
+
+> 
+
+> [2026-01-04 15:51:19,004] [INFO] [_granian.workers] Stopping worker-1 runtime-1
+
+> 
+
+> [2026-01-04 15:51:19,004] [INFO] [_granian.workers] Stopping worker-1
+
+> 
+
+> [2026-01-04 15:51:41,410] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
+
+> 
+
+> [2026-01-04 15:51:42,126] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
+
+> 
+
+> [2026-01-04 15:51:42,128] [INFO] [_granian.workers] Started worker-1
+
+> 
+
+> [2026-01-04 15:51:42,128] [INFO] [_granian.workers] Started worker-1 runtime-1
+
+> 
+
+> [2026-01-04 16:05:00,098] [INFO] [paperless.tasks] No automatic matching items, not training
+
+> 
+
+> [2026-01-04 16:52:53,267] [INFO] [paperless.management.consumer] Using inotify to watch directory for changes: /usr/src/paperless/consume
+
+> 
+
+> [2026-01-04 16:52:55,682] [INFO] [paperless.asgi] [init] Paperless-ngx version: v2.20.3
+
+> 
+
+> [2026-01-04 16:52:55,718] [INFO] [_granian.workers] Started worker-1
+
+> 
+
+> [2026-01-04 16:52:55,718] [INFO] [_granian.workers] Started worker-1 runtime-1
+
+> 
+
+> [2026-01-04 17:05:00,098] [INFO] [paperless.tasks] No automatic matching items, not training
+
+> 
+
+> [2026-01-04 17:27:21,918] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 17:27:21,936] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 17:27:21,936] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 17:27:21,940] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 17:27:21,940] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 17:27:21,956] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 17:27:21,957] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 17:27:21,957] [INFO] [paperless.consumer] Consuming Qially has granted you access to their Gmail account.eml
+
+> 
+
+> [2026-01-04 17:27:21,962] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
+
+> 
+
+> [2026-01-04 17:27:21,968] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:21,969] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Qially has granted you access to their Gmail account.eml: Unsupported mime type message/rfc822
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
+
+> 
+
+>     msg = plugin.run()
+
+> 
+
+>           ^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
+
+> 
+
+>     self._fail(
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
+
+> 
+
+>     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
+
+> 
+
+> documents.consumer.ConsumerError: Qially has granted you access to their Gmail account.eml: Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:22,570] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 17:27:22,588] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 17:27:22,589] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 17:27:22,592] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 17:27:22,592] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 17:27:22,602] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 17:27:22,603] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 17:27:22,604] [INFO] [paperless.consumer] Consuming Google Cloud Organization is now available for your domain.eml
+
+> 
+
+> [2026-01-04 17:27:22,608] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
+
+> 
+
+> [2026-01-04 17:27:22,615] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:22,615] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Google Cloud Organization is now available for your domain.eml: Unsupported mime type message/rfc822
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
+
+> 
+
+>     msg = plugin.run()
+
+> 
+
+>           ^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
+
+> 
+
+>     self._fail(
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
+
+> 
+
+>     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
+
+> 
+
+> documents.consumer.ConsumerError: Google Cloud Organization is now available for your domain.eml: Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,204] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 17:27:23,224] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 17:27:23,225] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 17:27:23,228] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 17:27:23,228] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 17:27:23,239] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 17:27:23,239] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 17:27:23,239] [INFO] [paperless.consumer] Consuming Security alert.eml
+
+> 
+
+> [2026-01-04 17:27:23,244] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,250] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,251] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
+
+> 
+
+>     msg = plugin.run()
+
+> 
+
+>           ^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
+
+> 
+
+>     self._fail(
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
+
+> 
+
+>     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
+
+> 
+
+> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,835] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 17:27:23,863] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 17:27:23,863] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 17:27:23,867] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 17:27:23,867] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 17:27:23,878] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 17:27:23,878] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 17:27:23,878] [INFO] [paperless.consumer] Consuming Security alert.eml
+
+> 
+
+> [2026-01-04 17:27:23,890] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,896] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:23,897] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
+
+> 
+
+>     msg = plugin.run()
+
+> 
+
+>           ^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
+
+> 
+
+>     self._fail(
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
+
+> 
+
+>     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
+
+> 
+
+> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:24,496] [DEBUG] [paperless.tasks] Executing plugin ConsumerPreflightPlugin
+
+> 
+
+> [2026-01-04 17:27:24,518] [INFO] [paperless.tasks] ConsumerPreflightPlugin completed with no message
+
+> 
+
+> [2026-01-04 17:27:24,522] [DEBUG] [paperless.tasks] Skipping plugin CollatePlugin
+
+> 
+
+> [2026-01-04 17:27:24,529] [DEBUG] [paperless.tasks] Skipping plugin BarcodePlugin
+
+> 
+
+> [2026-01-04 17:27:24,530] [DEBUG] [paperless.tasks] Executing plugin WorkflowTriggerPlugin
+
+> 
+
+> [2026-01-04 17:27:24,546] [INFO] [paperless.tasks] WorkflowTriggerPlugin completed with:
+
+> 
+
+> [2026-01-04 17:27:24,546] [DEBUG] [paperless.tasks] Executing plugin ConsumeTaskPlugin
+
+> 
+
+> [2026-01-04 17:27:24,546] [INFO] [paperless.consumer] Consuming Security alert.eml
+
+> 
+
+> [2026-01-04 17:27:24,552] [DEBUG] [paperless.consumer] Detected mime type: message/rfc822
+
+> 
+
+> [2026-01-04 17:27:24,558] [ERROR] [paperless.consumer] Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:27:24,560] [ERROR] [paperless.tasks] ConsumeTaskPlugin failed: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/documents/tasks.py", line 183, in consume_file
+
+> 
+
+>     msg = plugin.run()
+
+> 
+
+>           ^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 345, in run
+
+> 
+
+>     self._fail(
+
+> 
+
+>   File "/usr/src/paperless/src/documents/consumer.py", line 148, in _fail
+
+> 
+
+>     raise ConsumerError(f"{self.filename}: {log_message or message}") from exception
+
+> 
+
+> documents.consumer.ConsumerError: Security alert.eml: Unsupported mime type message/rfc822
+
+> 
+
+> [2026-01-04 17:58:42,796] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
+
+> 
+
+> [2026-01-04 18:00:07,275] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
+
+> 
+
+> [2026-01-04 18:01:26,950] [DEBUG] [paperless.index] Index updated for document 1.
+
+> 
+
+> [2026-01-04 18:01:49,795] [DEBUG] [paperless.index] Index updated for document 1.
+
+> 
+
+> [2026-01-04 18:03:10,020] [DEBUG] [paperless.index] Index updated for document 1.
+
+> 
+
+> [2026-01-04 18:04:20,591] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
+
+> 
+
+> [2026-01-04 18:05:00,065] [DEBUG] [paperless.classifier] Document classification model does not exist (yet), not performing automatic matching.
+
+> 
+
+> [2026-01-04 18:05:00,070] [DEBUG] [paperless.classifier] Gathering data from database...
+
+> 
+
+> [2026-01-04 18:05:00,091] [DEBUG] [paperless.classifier] 1 documents, 5 tag(s), 1 correspondent(s), 1 document type(s). 0 storage path(s)
+
+> 
+
+> [2026-01-04 18:05:03,743] [DEBUG] [paperless.classifier] Vectorizing data...
+
+> 
+
+> [2026-01-04 18:05:05,218] [DEBUG] [paperless.classifier] Training tags classifier...
+
+> 
+
+> [2026-01-04 18:05:05,241] [DEBUG] [paperless.classifier] Training correspondent classifier...
+
+> 
+
+> [2026-01-04 18:05:05,257] [DEBUG] [paperless.classifier] Training document type classifier...
+
+> 
+
+> [2026-01-04 18:05:05,282] [DEBUG] [paperless.classifier] There are no storage paths. Not training storage path classifier.
+
+> 
+
+> [2026-01-04 18:05:05,285] [INFO] [paperless.tasks] Saving updated classifier model to /usr/src/paperless/data/classification_model.pickle...
+
+> 
+
+> Drop files to begin upload_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 17:36:36,848] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 17:36:36,849] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 17:36:37,153] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 17:36:37,153] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 17:36:37,707] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 17:36:37,711] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 17:36:37,893] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 17:36:38,060] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 17:36:38,061] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 17:36:38,062] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 17:40:00,068] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 17:40:00,069] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 17:40:00,363] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 17:40:00,363] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 17:40:01,377] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 17:40:01,380] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 17:40:01,615] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 17:40:01,848] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 17:40:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 17:40:01,850] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 17:40:01,850] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 17:50:00,074] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 17:50:00,075] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 17:50:00,376] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 17:50:00,377] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 17:50:00,959] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 17:50:00,962] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 17:50:01,109] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 17:50:01,257] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 17:50:01,258] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 17:50:01,259] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 17:50:01,259] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 17:50:01,259] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:00:00,064] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:00:00,065] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:00:00,333] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:00:00,333] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:00:00,914] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:00:00,917] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:00:01,078] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:00:01,246] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:00:01,247] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:00:01,248] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:10:00,058] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:10:00,059] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:10:00,373] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:10:00,373] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:10:01,474] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:10:01,476] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:10:01,660] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:10:01,847] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:10:01,848] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:10:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:10:01,849] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:10:01,849] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:14:38,530] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:14:38,531] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:14:39,216] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:14:39,216] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:14:39,855] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:14:39,858] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:14:40,047] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:14:40,212] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:14:40,213] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:14:40,214] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:14:40,214] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:15:42,378] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:15:42,378] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:15:42,642] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:15:42,642] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:15:43,879] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:15:43,882] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:15:44,060] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:15:44,315] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:15:44,316] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:15:44,317] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:15:44,317] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:16:57,879] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:16:57,880] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:16:58,155] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:16:58,155] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:16:58,721] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:16:58,726] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:16:58,881] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:16:59,032] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:16:59,033] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:16:59,034] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:16:59,034] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
+> paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> [2026-01-04 18:17:17,683] [DEBUG] [paperless_mail] Skipping mail preprocessor MailMessageDecryptor
+
+> 
+
+> [2026-01-04 18:17:17,684] [DEBUG] [paperless_mail] Processing mail account Intake Gmail
+
+> 
+
+> [2026-01-04 18:17:17,904] [DEBUG] [paperless_mail] GMAIL Label Support: True
+
+> 
+
+> [2026-01-04 18:17:17,904] [DEBUG] [paperless_mail] AUTH=PLAIN Support: True
+
+> 
+
+> [2026-01-04 18:17:18,373] [DEBUG] [paperless_mail] Account Intake Gmail: Processing 1 rule(s)
+
+> 
+
+> [2026-01-04 18:17:18,376] [DEBUG] [paperless_mail] Rule Intake Gmail.Intake: Selecting folder intake
+
+> 
+
+> [2026-01-04 18:17:18,520] [ERROR] [paperless_mail] Unable to access folder intake, attempting folder listing
+
+> 
+
+> [2026-01-04 18:17:18,664] [INFO] [paperless_mail] Located folder: INBOX
+
+> 
+
+> [2026-01-04 18:17:18,664] [INFO] [paperless_mail] Located folder: Intake
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/All Mail
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Drafts
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Important
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Sent Mail
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Spam
+
+> 
+
+> [2026-01-04 18:17:18,665] [INFO] [paperless_mail] Located folder: [Gmail]/Starred
+
+> 
+
+> [2026-01-04 18:17:18,666] [INFO] [paperless_mail] Located folder: [Gmail]/Trash
+
+> 
+
+> [2026-01-04 18:17:18,666] [ERROR] [paperless_mail] Rule Intake Gmail.Intake: Error while processing rule: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 611, in _handle_mail_rule
+
+> 
+
+>     M.folder.set(folder)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/folder.py", line 43, in set
+
+> 
+
+>     check_command_status(result, MailboxFolderSelectError)
+
+> 
+
+>   File "/usr/local/lib/python3.12/site-packages/imap_tools/utils.py", line 48, in check_command_status
+
+> 
+
+>     raise exception(command_result=command_result, expected=expected)
+
+> 
+
+> imap_tools.errors.MailboxFolderSelectError: Response status "OK" expected, but "NO" received. Data: [b'[NONEXISTENT] Unknown Mailbox: intake (now in authenticated state) (Failure)']
+
+> 
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> 
+
+> Traceback (most recent call last):
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 573, in handle_mail_account
+
+> 
+
+>     total_processed_files += self._handle_mail_rule(
+
+> 
+
+>                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+> 
+
+>   File "/usr/src/paperless/src/paperless_mail/mail.py", line 625, in _handle_mail_rule
+
+> 
+
+>     raise MailError(
+
+> 
+
 > paperless_mail.mail.MailError: Rule Intake Gmail.Intake: Folder intake does not exist in account Intake Gmail
 
 ### Assistant

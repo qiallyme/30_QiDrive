@@ -3,7 +3,7 @@ layout: page
 title: "Fall of Kabul"
 slug: "fall_of_kabul"
 created_at: "2021-08-15"
-updated_at: "2021-08-15"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c39fd68fc45b422da775ac65cd8e8586
 canonical_ref: ""
 ---
 

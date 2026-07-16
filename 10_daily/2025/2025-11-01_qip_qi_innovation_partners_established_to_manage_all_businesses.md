@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "QIP (Qi Innovation Partners) established to manage all businesses"
 slug: "qip_qi_innovation_partners_established_to_manage_all_businesses"
 summary: ""
 status: active
 created_at: "2025-11-01"
-updated_at: "2025-11-01"
+updated_at: "2026-07-16T06:49:28-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3ce484276e2c4a139b82a47886d56c0f
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2025-11-01
 ---
+
 # QIP (Qi Innovation Partners) established to manage all businesses
 
 Category: Career

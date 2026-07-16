@@ -4,7 +4,7 @@ title: Open Loop Reset and Paperless Ingestion Runbook
 category: operations
 project_context: QiAccess / QiNexus / Paperless-NGX / MomCare / QiNote
 status: publish
-tags:
+tags: []
   - open-loops
   - paperless-ngx
   - ingestion
@@ -12,10 +12,10 @@ tags:
   - qiaccess
   - runbook
 layout: page
-slug: ""
+slug: open-loop-reset-and-paperless-ingestion-runbook
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 145564ef3f064f9c8c170cef541cb340
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,7 +3,7 @@ layout: page
 title: "Ex Parte Order for Protection Issued"
 slug: "ex_parte_order_for_protection_issued"
 created_at: "2024-11-18"
-updated_at: "2024-11-18"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["legal"]
 category: "legal"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 021f51427247445397e6783c253b506d
 canonical_ref: ""
 ---
 

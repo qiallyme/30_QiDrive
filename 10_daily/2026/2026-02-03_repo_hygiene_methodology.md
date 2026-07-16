@@ -3,9 +3,9 @@ layout: page
 title: "Repo Hygiene Methodology"
 slug: "repo_hygiene_methodology"
 created_at: "2026-02-03 05:57:12"
-updated_at: "2026-02-03 05:57:12"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1836,699 +1836,1392 @@ canonical_ref: ""
 > Once Case Management is shaped, everything else snaps into place.
 
 ### User
-> see our current directory and let me know what you think should be the final final final, lol ```markdown
-> . 📂 content
-> └── 📂 00_CASE_MANAGEMENT/
-> │  └── 📂 10_Case_Master/
-> │    ├── 📄 01_CASE_BIBLE.md
-> │    ├── 📄 02_TIMELINE.md
-> │    ├── 📄 02_TIMELINE.mw
-> │    ├── 📄 03_VIOLATIONS.md
-> │    ├── 📄 04_STRATEGY.canvas
-> │    ├── 📄 05_VALUATION.md
-> │    ├── 📄 06_MASTER_TASKLIST.md
-> │    ├── 📄 09_DECISION_MATRIX.canvas
-> │    ├── 📄 STRATEGY_MEMO_Judicial_Inconsistency_and_Eviction.md
-> │    ├── 📄 STRATEGY_MEMO_Value_Gap_and_Spoliation.md
-> │  └── 📂 20_evidence/
-> │    └── 📂 10_Docket/
-> │      ├── 📄 001_2025-01-16_Complaint.pdf
-> │      ├── 📄 002_2025-01-16_Appearance.pdf
-> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
-> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
-> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
-> │      ├── 📄 006_2025-01-16_Summons_1.pdf
-> │      ├── 📄 007_2025-01-16_Summons_2.pdf
-> │      ├── 📄 008_2025-01-16_Summons_3.pdf
-> │      ├── 📄 009_2025-01-16_Summons_4.pdf
-> │      ├── 📄 010_2025-01-16_Summons_5.pdf
-> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
-> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
-> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 014_2025-05-13_Affidavit.pdf
-> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
-> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
-> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
-> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
-> │      ├── 📄 020_2025-05-23_Order_Default_Judgment.pdf
-> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
-> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
-> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
-> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
-> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
-> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
-> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
-> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
-> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
-> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
-> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
-> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
-> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
-> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
-> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
-> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
-> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
-> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
-> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
-> │      ├── 📄 2025_05_13_14_52_56.pdf.pdf
-> │      ├── 📄 2025_05_13_14_53_36.pdf.pdf
-> │      ├── 📄 2025_05_13_14_54_31.pdf.pdf
-> │      ├── 📄 _10_Docket.md
-> │    └── 📂 20_Actors/
-> │      └── 📂 10_fcfcu/
-> │        └── 📂 Appraisal/
-> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │          ├── 📄 _Appraisal.md
-> │        └── 📂 Emails/
-> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │          ├── 📄 _Emails.md
-> │        └── 📂 Letters/
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
-> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │          ├── 📄 _Letters.md
-> │        └── 📂 Payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 _Payments.md
-> │        └── 📂 Reports/
-> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │          ├── 📄 _Reports.md
-> │        └── 📂 Site_Content/
-> │          ├── 📄 About Financial Center - Financial Center.mhtml
-> │          ├── 📄 Careers & Culture - Financial Center.pdf
-> │          ├── 📄 Credit Union vs. Bank - Financial Center.mhtml
-> │          ├── 📄 Financial Center Announces CEO Retirement and Appointment of Interim Leadership - Financial Center.mhtml
-> │          ├── 📄 Financial Center Celebrates Laura Mirabal’s Selection to the 2025 Indiana Latino Leadership Circle - Financial Center.mhtml
-> │          ├── 📄 Financial Center Completes Merger with Indianapolis Post Office Credit Union - Financial Center.mhtml
-> │          ├── 📄 Financial Center Expands to Hancock County with $1.5M McCordsville Branch - Financial Center.mhtml
-> │          ├── 📄 Financial Center First Credit Union Selects Ning Duong as New CEO - Financial Center.mhtml
-> │          ├── 📄 Financial Center First Credit Union and Indianapolis Post Office Credit Union Announce Plans to Merge - Financial Center.mhtml
-> │          ├── 📄 Financial Center Leads the Way in AI-Powered Translations with New Traduality Partnership - Financial Center.mhtml
-> │          ├── 📄 Financial Center Recognized with 2025 MeridianLink Arc Award for Impactful Use of Technology in Financial Services - Financial Center.mhtml
-> │          ├── 📄 Financial Center and Indianapolis Post Office Credit Union to Merge May 1 - Financial Center.mhtml
-> │          ├── 📄 Financial_Center_-_Home_Equity_Line_of_Credit.pdf
-> │          ├── 📄 Financial_Center_-_Home_Equity_Loan.pdf
-> │          ├── 📄 Home Equity Loans & Lines of Credit - Financial Center.mhtml
-> │          ├── 📄 Mortgage_-_Common_Mistakes.pdf
-> │          ├── 📄 Mortgage_-_Refinancing.pdf
-> │          ├── 📄 Mortgages - Financial Center.mhtml
-> │          ├── 📄 News Releases - Financial Center.mhtml
-> │          ├── 📄 News Releases - Financial Center.pdf
-> │          ├── 📄 Open Positions - Financial Center.pdf
-> │          ├── 📄 Privacy Policy - Financial Center.mhtml
-> │        ├── 📄 _10_fcfcu.md
-> │      └── 📂 20_aes/
-> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │        ├── 📄 _20_aes.md
-> │      └── 📂 30_Sherrif/
-> │      └── 📂 40_Others/
-> │        ├── 📄 Manager_Response_Acknowledge_Form-1769543600128.pdf
-> │      ├── 📄 _20_actors.md
-> │    └── 📂 30_Supporting/
-> │      └── 📂 10_photos_video/
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │        ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │        ├── 📄 _10_photos_video.md
-> │      └── 📂 20_parcel/
-> │        ├── 📄 DLGF_ Tax Bill Search.pdf
-> │        ├── 📄 Marion County, IN, Estimated 2025 Taxes 6016506.pdf
-> │        ├── 📄 MyTitle.pdf
-> │        ├── 📄 Parcel_6016506_PRC 1.pdf
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory 1.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 _20_parcel.md
-> │        ├── 📄 f588fab6-f89f-41c3-bfce-05ad0d108a06.pdf
-> │        ├── 📄 indy_pvdnet_document (1).pdf
-> │        ├── 📄 indy_pvdnet_document.pdf
-> │      └── 📂 30_declarations/
-> │        ├── 📄 _30_declarations.md
-> │      └── 📂 40_affidavits/
-> │        ├── 📄 _40_affidavits.md
-> │        └── 📂 ada-disability/
-> │          ├── 📄 _ada-disability.md
-> │        └── 📂 character/
-> │          ├── 📄 _character.md
-> │        └── 📂 community-service/
-> │          ├── 📄 _community-service.md
-> │        └── 📂 credibility/
-> │          ├── 📄 _credibility.md
-> │        └── 📂 observations/
-> │          ├── 📄 _observations.md
-> │      └── 📂 50_records/
-> │        └── 📂 bankruptcy/
-> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │      └── 📂 60_credit/
-> │        ├── 📄 Chase Credit Journey - Credit report.pdf
-> │        ├── 📄 Chase Credit Journey.pdf
-> │        ├── 📄 Credit Report.pdf
-> │      └── 📂 70_Financial/
-> │        ├── 📄 50100846854.pdf
-> │        ├── 📄 50100879809.pdf
-> │        ├── 📄 50100883027.pdf
-> │        ├── 📄 50100916138.pdf
-> │        ├── 📄 Invoice.pdf
-> │        ├── 📄 Invoice2.pdf
-> │        ├── 📄 Invoice3.pdf
-> │        ├── 📄 Invoice4.pdf
-> │      ├── 📄 _30_supporting.md
-> │    └── 📂 40_Exposure_and_Harm/
-> │      ├── 📄 EXPOSURE_CONSEQUENTIAL_CONSOLIDATED.md
-> │      ├── 📄 EXPOSURE_ECONOMIC_CONSOLIDATED.md
-> │      ├── 📄 EXPOSURE_MISC_STRATEGY_CONSOLIDATED.md
-> │      ├── 📄 EXPOSURE_NON_ECONOMIC_CONSOLIDATED.md
-> │      ├── 📄 _40_Exposure_and_Harm.md
-> │      └── 📂 _archive/
-> │        └── 📂 20_economic_harm/
-> │          └── 📂 10_property_possession_harms/
-> │            ├── 📄 _10_property_possession_harms.md
-> │          └── 📂 30_financial/
-> │            ├── 📄 NT_Financial_Tracker.md
-> │            ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │            ├── 📄 _30_financial.md
-> │          └── 📂 60_professional_harm/
-> │            ├── 📄 _60_professional_harm.md
-> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │          ├── 📄 NT_Quarantined_Claims_Hold.md
-> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │          ├── 📄 _20_economic_harm.md
-> │        └── 📂 50_non_economic_harm/
-> │          └── 📂 40_health_and_safety/
-> │            └── 📂 20_companion_animal_risk/
-> │              ├── 📄 _20_companion_animal_risk.md
-> │            ├── 📄 _40_health_and_safety.md
-> │          └── 📂 Photos_Conditions/
-> │            ├── 📄 _Photos_Conditions.md
-> │          └── 📂 Weather_Reports/
-> │            ├── 📄 Cold_Risk_Report.md
-> │            ├── 📄 _Weather_Reports.md
-> │          ├── 📄 _50_non_economic_harm.md
-> │          └── 📂 cold_exposure/
-> │            ├── 📄 PL__Cold_Risk_Report.md
-> │            ├── 📄 _cold_exposure.md
-> │        └── 📂 60_Consequential_Damages/
-> │          └── 📂 Hotel_Mitigation/
-> │            └── 📂 10_Service_Animal_Notice/
-> │              ├── 📄 Gigi_Documentation_Pack.md
-> │              ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │              ├── 📄 _10_Service_Animal_Notice.md
-> │            └── 📂 20_Habitability/
-> │              ├── 📄 Demand_Notice_and_Ledger.md
-> │              ├── 📄 Room_Conditions_Factual_Log.md
-> │              ├── 📄 _20_Habitability.md
-> │            ├── 📄 MITIGATION_LOG_Temporary_Housing.md
-> │            ├── 📄 README_Temporary_Housing_Mitigation.md
-> │            ├── 📄 _Hotel_Mitigation.md
-> │          ├── 📄 _60_Consequential_Damages.md
-> │        └── 📂 70_remedies_scenarios/
-> │          ├── 📄 _70_remedies_scenarios.md
-> │        └── 📂 80_payout_strategy/
-> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │          ├── 📄 _80_payout_strategy.md
-> │        └── 📂 90_third_party_harm/
-> │          ├── 📄 _90_third_party_harm.md
-> │    └── 📂 60_Service_and_delivery/
-> │      └── 📂 Email_Transmittals/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Email_Transmittals.md
-> │      ├── 📄 Service_Log.md
-> │      └── 📂 USPS_Certified/
-> │        ├── 📄 README.md
-> │        ├── 📄 _USPS_Certified.md
-> │      ├── 📄 _60_service_and_delivery.md
-> │    ├── 📄 _20_evidence.md
-> │  └── 📂 30_Trackers/
-> │    ├── 📄 MASTER_LEDGER.csv
-> │    ├── 📄 _30_Trackers.md
-> │    ├── 📄 audit_report.txt
-> │    ├── 📄 authority.csv
-> │    ├── 📄 docket.csv
-> │    ├── 📄 financial.csv
-> │    ├── 📄 notionseed.csv
-> │    ├── 📄 repo_index.csv
-> │    ├── 📄 strategy.csv
-> │    ├── 📄 tasks.csv
-> │    ├── 📄 violations.csv
-> │  └── 📂 99_Templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 _10_motions.md
-> │      ├── 📄 _emergency_stay_of_writ.md
-> │      ├── 📄 _vacate_void_judgment.md
-> │    └── 📂 20_affidavits/
-> │      ├── 📄 TPL_Affidavit_ADA_Disability.md
-> │      ├── 📄 TPL_Affidavit_Character.md
-> │      ├── 📄 TPL_Affidavit_Community_Service.md
-> │      ├── 📄 TPL_Affidavit_Credibility.md
-> │      ├── 📄 TPL_Affidavit_Language_Updates.md
-> │      ├── 📄 TPL_Affidavit_Observations.md
-> │      ├── 📄 TPL_Affidavit_Verified_Defendant.md
-> │      ├── 📄 TPL_Declaration_Gender_Identity_Clarification.md
-> │      ├── 📄 _20_affidavits.md
-> │      ├── 📄 _GUIDE_Witness_Instructions.md
-> │    └── 📂 40_exhibits/
-> │      ├── 📄 _40_exhibits.md
-> │      ├── 📄 _Exhibits_Lists.md
-> │    └── 📂 50_orders/
-> │      ├── 📄 _50_orders.md
-> │      ├── 📄 _Proposed_Order.md
-> │      ├── 📄 _proposed_order_emergency_stay.md
-> │      ├── 📄 _proposed_order_motion_to_vacate.md
-> │    └── 📂 60_packets/
-> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
-> │      ├── 📄 TPL_ADA_Packet.md
-> │      ├── 📄 TPL_Handup_Packet_Note.md
-> │      ├── 📄 _60_packets.md
-> │    └── 📂 70_outreach/
-> │      ├── 📄 TPL_Advocate_Outreach.md
-> │      ├── 📄 TPL_Attorney_Brief.md
-> │      ├── 📄 _70_outreach.md
-> │    └── 📂 80_binders/
-> │      ├── 📄 TPL_Binder_Section_Cover.md
-> │      ├── 📄 TPL_Binder_Section_Index.md
-> │      ├── 📄 _80_binders.md
-> │    └── 📂 90_internal/
-> │      ├── 📄 _Court_Doc.md
-> │      ├── 📄 _settlement_letter_draft.md
-> │    ├── 📄 GEMINI_PROMPT_Phase_Alignment.md
-> │  ├── 📄 MASTER_PHASE_00_NOTION_IMPORT.csv
-> │  ├── 📄 PHASE_00_Case_Management.md
-> └── 📂 01_PHASE_FORECLOSURE.CLOSED/
-> │  └── 📂 10_proposed/
-> │    ├── 📄 _10_proposed.md
-> │  └── 📂 30_motions/
-> │    ├── 📄 MO_01_motion_vacate.pdf
-> │    ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │    ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │    ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │    ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │    ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │    ├── 📄 _30_motions.md
-> │  └── 📂 40_orders/
-> │    ├── 📄 OR_03_order_vacate_proposed.pdf
-> │    ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │    ├── 📄 _40_orders.md
-> │  └── 📂 70_hearings/
-> │    └── 📂 2026-01-09_void_judgment_hearing/
-> │      └── 📂 2025-01-09_hearing/
-> │        ├── 📄 COURT_MODE_BUTTONS.md
-> │        ├── 📄 HEARING_Cheat_Sheet.md
-> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
-> │        ├── 📄 _Hearing_Packet_2026-01-09.md
-> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> │      ├── 📄 _Hearing_Void_Judgment_2026-01-09.md
-> │  └── 📂 90_Filed_Envelopes/
-> │    └── 📂 10_2025-12-10_motion_vacate/
-> │      ├── 📄 ENV_37288599_Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 ENV_Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 _10_2025-12-10_motion_vacate.md
-> │      ├── 📄 combinepdf.pdf
-> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │      ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │    ├── 📄 _90_Filed_Envelopes.md
-> │  ├── 📄 MASTER_PHASE_01_NOTION_IMPORT.csv
-> └── 📂 02_PHASE_PRESERVATION/
-> │  └── 📂 10_overview/
-> │    ├── 📄 Master_Exhibit_Index.md
-> │    ├── 📄 Notion_Project_Management_Sync.md
-> │    ├── 📄 PHASE_02_Overview_Master.md
-> │  └── 📂 20_ledgers/
-> │    ├── 📄 _20_ledgers.md
-> │    ├── 📄 harms.csv
-> │    ├── 📄 spoliation_risk_ledger.md
-> │  └── 📂 30_output/
-> │    └── 📂 10_letters/
-> │      ├── 📄 2026-02-01_Signed_Notice_of_Preservation_of_Evidence_and_Litigation_Hold.pdf
-> │      ├── 📄 2026-02-03_Second_Notice_Cover_Letter.html
-> │      ├── 📄 Litigation_Hold_FollowUp.html
-> │      ├── 📄 _10_letters.md
-> │    └── 📂 20_Emails/
-> │      ├── 📄 Gmail - TIME-SENSITIVE NOTICE _ Service by Email Confirmed on Record-2.pdf
-> │      ├── 📄 Gmail - TIME-SENSITIVE NOTICE _ Service by Email Confirmed on Record.pdf
-> │      ├── 📄 _20_Emails.md
-> │    └── 📂 30_Packet/
-> │      ├── 📄 2026-02-03_Invoice_Certified_Mail_Evidence_Preservation_FCFCU_LetterStream.pdf
-> │      ├── 📄 2026-02-03_Invoice_First_Class_Mail_Evidence_Preservation_FCFCU_LetterStream.pdf
-> │      ├── 📄 2026-02-03_Notice_of_Evidence_Preservation_and_Litigation_Hold_FCFCU_FINAL-First_Class.pdf
-> │      ├── 📄 2026-02-03_Notice_of_Evidence_Preservation_and_Litigation_Hold_FCFCU_FINAL.pdf
-> │      ├── 📄 2026-02-03_Payment_Receipt_LetterStream_Evidence_Preservation_FCFCU.pdf
-> │      ├── 📄 _30_Packet.md
-> │    ├── 📄 _30_output.md
-> │  └── 📂 40_Responses/
-> │    ├── 📄 2026-02-01_Automatic_Reply_Email_Receipt_Marion_County_Sheriff_Evidence_Preservation.pdf
-> │    ├── 📄 _40_Responses.md
-> │  ├── 📄 MASTER_PHASE_02_NOTION_IMPORT.csv
-> │  ├── 📄 PHASE_02_Preservation.md
-> └── 📂 03_PHASE_CREDIT_FCRA/
-> │  └── 📂 00_send_queue/
-> │    ├── 📄 Execution_Checklist.md
-> │    ├── 📄 MASTER_EXECUTION_CHECKLIST.md
-> │    ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
-> │    ├── 📄 _00_send_queue.md
-> │  └── 📂 10_credit_reports/
-> │    └── 📂 Equifax/
-> │      ├── 📄 1990-05-18_FORMAL DISPUTE OF INACCURATE REPORTING Copy.pdf
-> │      ├── 📄 Call Customer Care.pdf
-> │      ├── 📄 Equifax_dispute_letter.html
-> │      ├── 📄 README.md
-> │      ├── 📄 _Equifax.md
-> │      ├── 📄 identity_verification_bank_statement_old-national.jpg
-> │      ├── 📄 identity_verification_drivers_license.jpeg
-> │    └── 📂 Experian/
-> │      ├── 📄 Experian - Access your credit report--2.pdf
-> │      ├── 📄 Experian - Access your credit report-CH13.pdf
-> │      ├── 📄 Experian - Access your credit report.pdf
-> │      ├── 📄 Experian - Dispute Cart.pdf
-> │      ├── 📄 Experian - Dispute Cart2.pdf
-> │      ├── 📄 README.md
-> │      ├── 📄 _Experian.md
-> │    ├── 📄 FCFCU_Late_Reporting_Evidence_2026.txt
-> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
-> │    └── 📂 Other/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Other.md
-> │    └── 📂 TransUnion/
-> │      ├── 📄 Gmail - Dispute Received, Investigation in Process.pdf
-> │      ├── 📄 README.md
-> │      ├── 📄 _TransUnion.md
-> │    ├── 📄 _10_credit_reports.md
-> │  └── 📂 20_furnisher_disputes/
-> │    ├── 📄 13312462_invoice.pdf
-> │    ├── 📄 13312462_tmp (1).pdf
-> │    ├── 📄 13312462_tmp.pdf
-> │    ├── 📄 13312465_invoice.pdf
-> │    ├── 📄 13312465_tmp.pdf
-> │    ├── 📄 2026-02-03_BASIS OF DISPUTE (NON-CURABLE DEFECTS).pdf
-> │    ├── 📄 2026-02-03_FCFCU_Furnisher_Deletion_Demand_FINAL.html
-> │    ├── 📄 CFPB_Complaint_Draft.md
-> │    ├── 📄 _20_furnisher_disputes.md
-> │  └── 📂 30_bureau_disputes/
-> │    ├── 📄 2026-02-02_Equifax_Dispute_Letter.html
-> │    ├── 📄 2026-02-02_Experian_Dispute_Letter.html
-> │    ├── 📄 2026-02-02_TransUnion_Dispute_Letter.html
-> │    ├── 📄 Consumer_Statement_Landlords.md
-> │    ├── 📄 Equifax_Dispute_Letter.md
-> │    ├── 📄 Experian_Dispute_Letter.md
-> │    ├── 📄 TransUnion_Dispute_Letter.md
-> │    ├── 📄 _30_bureau_disputes.md
-> │    ├── 📄 equifax.html
-> │    ├── 📄 experian.html
-> │    ├── 📄 transunion.html
-> │  └── 📂 35_Court_Records/
-> │    ├── 📄 4-018222 - Circuit and Superior Courts of Marion County, Indiana.mhtml
-> │    ├── 📄 Estimate_4-018222.pdf
-> │    ├── 📄 MarionCountyAudioRequestAuthorization_20260203_49D03-2501-MF-002559.pdf
-> │    ├── 📄 Your order has been submitted successfully.pdf
-> │    ├── 📄 request for recording.pdf
-> │  └── 📂 40_utilities/
-> │    ├── 📄 2026-02-03_AES_Utility_Dispute.html
-> │    ├── 📄 2026-02-03_Citizens_Utility_Dispute.html
-> │    ├── 📄 2026-02-03_Code_Enforcement_Dispute.html
-> │    └── 📂 AES/
-> │      ├── 📄 AESIndiana (1).pdf
-> │      ├── 📄 AESIndiana.pdf
-> │      ├── 📄 Utility Dispute (AES Indiana) - Cody Rice-Velasquez.pdf
-> │      ├── 📄 Utility Dispute (Citizens Water) - Cody Rice-Velasquez.pdf
-> │      ├── 📄 Utility Dispute (Code Enforcement) - Cody Rice-Velasquez.pdf
-> │      ├── 📄 activity.txt
-> │    ├── 📄 _40_utilities.md
-> │  └── 📂 50_output/
-> │    └── 📂 30_affidavits/
-> │      ├── 📄 exhibit_b_harm_addendum 1.html
-> │      ├── 📄 exhibit_b_harm_addendum.html
-> │      ├── 📄 exhibit_c_affidavit_emergency 1.html
-> │      ├── 📄 exhibit_c_affidavit_emergency.html
-> │      ├── 📄 index.html
-> │    └── 📂 40_packets/
-> │      ├── 📄 13312381_invoice.pdf
-> │      ├── 📄 13312381_tmp.pdf
-> │      ├── 📄 DL_REDACTED.jpg
-> │      ├── 📄 PROOF_OF_ADDRESS.pdf
-> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
-> │      ├── 📄 _40_packets.md
-> │      ├── 📄 identity_verification_letter_mission-lane-cc.pdf
-> │    └── 📂 50_verified_responses/
-> │      ├── 📄 _40_verified_responses.md
-> │    ├── 📄 CFPB_Escalation_Packet_DRAFT.md
-> │    ├── 📄 Credit_Dispute_Master_Packet_Index.html
-> │    ├── 📄 Equifax_Violation_Excerpt.md
-> │    ├── 📄 Experian_Violation_Excerpt.md
-> │    ├── 📄 Landlord_Explanation_Letter.html
-> │    ├── 📄 Landlord_Statement.html
-> │    ├── 📄 MANIFEST_PHASE_03_SENDS.md
-> │    ├── 📄 TransUnion_Violation_Excerpt.md
-> │    ├── 📄 _50_output.md
-> │  └── 📂 70_damages/
-> │    ├── 📄 Consumer_Statement_Short.txt
-> │    ├── 📄 Core_Credit_Tables.md
-> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
-> │    ├── 📄 Housing_Emergency_Affidavit.html
-> │    ├── 📄 Landlord_Clarification_Statement.html
-> │    ├── 📄 Sanctions_Readiness_Memo.md
-> │    ├── 📄 _50_damages.md
-> │    ├── 📄 _70_damages.md
-> │    ├── 📄 draft_housing_affidavit.md
-> │  ├── 📄 MASTER_PHASE_03_NOTION_IMPORT.csv
-> │  ├── 📄 PHASE_03_Credit_FCRA.md
-> └── 📂 04_PHASE_REGULATORS/
-> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
-> │  └── 📂 10_Industry/
-> │    └── 📂 BBB/
-> │      ├── 📄 BBB_Complaint_Narrative.md
-> │      ├── 📄 BBB_Violation_Excerpt.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 _BBB.md
-> │    ├── 📄 _10_Industry.md
-> │  └── 📂 20_Local/
-> │    └── 📂 35_Sheriff_Oversight/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │      ├── 📄 Sheriff_Violation_Excerpt.md
-> │      ├── 📄 _35_Sheriff_Oversight.md
-> │    ├── 📄 AES_Utility_Violation_Excerpt.md
-> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
-> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │    ├── 📄 _20_Local.md
-> │  └── 📂 30_State/
-> │    └── 📂 20_AG_Indiana/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_AG_Violation_Excerpt.md
-> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │      ├── 📄 _20_AG_Indiana.md
-> │    └── 📂 25_IN_DFI/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_DFI_Violation_Excerpt.md
-> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │      ├── 📄 _25_IN_DFI.md
-> │    └── 📂 55_IN_Civil_Rights/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 ICRC_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │      ├── 📄 _55_IN_Civil_Rights.md
-> │    ├── 📄 _30_State.md
-> │  └── 📂 40_Federal/
-> │    └── 📂 20_CFPB/
-> │      ├── 📄 CFPB_Complaint_Narrative.md
-> │      ├── 📄 CFPB_Violation_Excerpt.md
-> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 _20_CFPB.md
-> │    └── 📂 30_NCUA/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │      ├── 📄 NCUA_Complaint_Narrative.md
-> │      ├── 📄 NCUA_Violation_Excerpt.md
-> │      ├── 📄 _30_NCUA.md
-> │      └── 📂 _archive/
-> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
-> │        ├── 📄 __archive.md
-> │    └── 📂 40_DOJ_Civil_Rights/
-> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │      ├── 📄 DOJ_Violation_Excerpt.md
-> │      ├── 📄 _40_DOJ_Civil_Rights.md
-> │    └── 📂 50_HUD_FHEO/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │      ├── 📄 _50_HUD_FHEO.md
-> │      └── 📂 _archive/
-> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
-> │        ├── 📄 __archive.md
-> │    ├── 📄 _40_Federal.md
-> │  └── 📂 50_Other/
-> │    └── 📂 60_CMS_Caretaker_Impact/
-> │      ├── 📄 CMS_Informational_Complaint.md
-> │      ├── 📄 _60_CMS_Caretaker_Impact.md
-> │    ├── 📄 _50_Other.md
-> │  └── 📂 50_regulators/
-> │    ├── 📄 cms_ssa_caretaker.html
-> │    ├── 📄 dfi_servicing_complaint.html
-> │    ├── 📄 doj_supplemental.html
-> │    ├── 📄 fcc_harassment.html
-> │    ├── 📄 hud_fheo_narrative.html
-> │    ├── 📄 icrc_civil_rights.html
-> │    ├── 📄 index.html
-> │    ├── 📄 master_strategic_timeline.html
-> │    ├── 📄 master_violation_inventory.html
-> │    ├── 📄 ncua_complaint.html
-> │    ├── 📄 sheriff_internal_affairs.html
-> │    ├── 📄 va_informational.html
-> │  └── 📂 99_Reserve_Informational/
-> │    └── 📂 45_FCC_Telecom/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 FCC_Harassment_Complaint.md
-> │      ├── 📄 FCC_Violation_Excerpt.md
-> │      ├── 📄 _45_FCC_Telecom.md
-> │    └── 📂 65_SSA_OIG/
-> │      ├── 📄 SSA_OIG_Informational_Filing.md
-> │      ├── 📄 _65_SSA_OIG.md
-> │    └── 📂 70_VA_Informational/
-> │      ├── 📄 VA_Informational_Filing.md
-> │      ├── 📄 _70_VA_Informational.md
-> │    ├── 📄 _99_Reserve_Informational.md
-> │  ├── 📄 MANIFEST_Reserve_Informational_Filings.md
-> │  ├── 📄 MASTER_PHASE_04_NOTION_IMPORT.csv
-> │  ├── 📄 PHASE_04_Regulators.md
-> │  ├── 📄 Violation_to_Regulator_Mapping.md
-> │  ├── 📄 _04_REGULATORS.md
-> └── 📂 05_PHASE_LITIGATION/
-> │  └── 📂 00_Intake/
-> │    ├── 📄 Litigation_Decision_Tree.md
-> │    ├── 📄 Master_Timeline_Strategy_Summary.md
-> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │    ├── 📄 NT_Attorney_Intake_Summary.md
-> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │    ├── 📄 _00_Intake.md
-> │    └── 📂 _archive/
-> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │      ├── 📄 NT_LEGAL MEMORANDUM.md
-> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │      ├── 📄 NT_Violation_Remedy_Inventory.md
-> │      ├── 📄 __archive.md
-> │  └── 📂 30_demand_letters/
-> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 _30_demand_letters.md
-> │  └── 📂 40_opposing_counsel/
-> │    ├── 📄 _40_opposing_counsel.md
-> │  └── 📂 50_draft_pleadings/
-> │    ├── 📄 _50_draft_pleadings.md
-> │  └── 📂 60_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 _10_filings.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 _20_orders.md
-> │    └── 📂 30_packets/
-> │      ├── 📄 _30_packets.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 _40_motions.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 _50_letters.md
-> │    ├── 📄 _60_output.md
-> │  └── 📂 70_hearings/
-> │    ├── 📄 _70_hearings.md
-> │  ├── 📄 MASTER_PHASE_05_NOTION_IMPORT.csv
-> │  ├── 📄 PHASE_05_Litigation.md
-> └── 📂 06_PHASE_MEDIA_INQUIRIES/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 2025-12-15_displacement_cold_exposure.md
-> │  └── 📂 20_social_media/
-> │  └── 📂 30_legislative_outreach/
-> │  └── 📂 40_public_record_dumps/
-> │  └── 📂 50_press_kits/
-> │  └── 📂 60_news_media/
-> │  ├── 📄 MASTER_PHASE_06_NOTION_IMPORT.csv
-> └── 📂 scripts/
-> │  ├── 📄 apply_rename_map.py
-> │  ├── 📄 audit_ledger.py
-> │  ├── 📄 consolidate_master_data.py
-> │  ├── 📄 export_ledger_to_csv.py
-> │  ├── 📄 generate_views.py
-> │  ├── 📄 integrity_check.py
-> │  └── 📂 maintenance/
-> │    ├── 📄 generate_binder_pdf.py
-> │  ├── 📄 merge_ledger.py
-> │  └── 📂 ops/
-> │    ├── 📄 build_binder.py
-> │    ├── 📄 render_special_files.py
-> │    ├── 📄 update_timeline_violations.py
-> │  └── 📄 seed_master_ledger.py
+> see our current directory and let me know what you think should be the final final final, lol ```markdown
+
+> . 📂 content
+
+> └── 📂 00_CASE_MANAGEMENT/
+
+> │  └── 📂 10_Case_Master/
+
+> │    ├── 📄 01_CASE_BIBLE.md
+
+> │    ├── 📄 02_TIMELINE.md
+
+> │    ├── 📄 02_TIMELINE.mw
+
+> │    ├── 📄 03_VIOLATIONS.md
+
+> │    ├── 📄 04_STRATEGY.canvas
+
+> │    ├── 📄 05_VALUATION.md
+
+> │    ├── 📄 06_MASTER_TASKLIST.md
+
+> │    ├── 📄 09_DECISION_MATRIX.canvas
+
+> │    ├── 📄 STRATEGY_MEMO_Judicial_Inconsistency_and_Eviction.md
+
+> │    ├── 📄 STRATEGY_MEMO_Value_Gap_and_Spoliation.md
+
+> │  └── 📂 20_evidence/
+
+> │    └── 📂 10_Docket/
+
+> │      ├── 📄 001_2025-01-16_Complaint.pdf
+
+> │      ├── 📄 002_2025-01-16_Appearance.pdf
+
+> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
+
+> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
+
+> │      ├── 📄 006_2025-01-16_Summons_1.pdf
+
+> │      ├── 📄 007_2025-01-16_Summons_2.pdf
+
+> │      ├── 📄 008_2025-01-16_Summons_3.pdf
+
+> │      ├── 📄 009_2025-01-16_Summons_4.pdf
+
+> │      ├── 📄 010_2025-01-16_Summons_5.pdf
+
+> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
+
+> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
+
+> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 014_2025-05-13_Affidavit.pdf
+
+> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
+
+> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
+
+> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
+
+> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
+
+> │      ├── 📄 020_2025-05-23_Order_Default_Judgment.pdf
+
+> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
+
+> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
+
+> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
+
+> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
+
+> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
+
+> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
+
+> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
+
+> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
+
+> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
+
+> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
+
+> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
+
+> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
+
+> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
+
+> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
+
+> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
+
+> │      ├── 📄 2025_05_13_14_52_56.pdf.pdf
+
+> │      ├── 📄 2025_05_13_14_53_36.pdf.pdf
+
+> │      ├── 📄 2025_05_13_14_54_31.pdf.pdf
+
+> │      ├── 📄 _10_Docket.md
+
+> │    └── 📂 20_Actors/
+
+> │      └── 📂 10_fcfcu/
+
+> │        └── 📂 Appraisal/
+
+> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │          ├── 📄 _Appraisal.md
+
+> │        └── 📂 Emails/
+
+> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │          ├── 📄 _Emails.md
+
+> │        └── 📂 Letters/
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
+
+> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │          ├── 📄 _Letters.md
+
+> │        └── 📂 Payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 _Payments.md
+
+> │        └── 📂 Reports/
+
+> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │          ├── 📄 _Reports.md
+
+> │        └── 📂 Site_Content/
+
+> │          ├── 📄 About Financial Center - Financial Center.mhtml
+
+> │          ├── 📄 Careers & Culture - Financial Center.pdf
+
+> │          ├── 📄 Credit Union vs. Bank - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Announces CEO Retirement and Appointment of Interim Leadership - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Celebrates Laura Mirabal’s Selection to the 2025 Indiana Latino Leadership Circle - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Completes Merger with Indianapolis Post Office Credit Union - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Expands to Hancock County with $1.5M McCordsville Branch - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center First Credit Union Selects Ning Duong as New CEO - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center First Credit Union and Indianapolis Post Office Credit Union Announce Plans to Merge - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Leads the Way in AI-Powered Translations with New Traduality Partnership - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center Recognized with 2025 MeridianLink Arc Award for Impactful Use of Technology in Financial Services - Financial Center.mhtml
+
+> │          ├── 📄 Financial Center and Indianapolis Post Office Credit Union to Merge May 1 - Financial Center.mhtml
+
+> │          ├── 📄 Financial_Center_-_Home_Equity_Line_of_Credit.pdf
+
+> │          ├── 📄 Financial_Center_-_Home_Equity_Loan.pdf
+
+> │          ├── 📄 Home Equity Loans & Lines of Credit - Financial Center.mhtml
+
+> │          ├── 📄 Mortgage_-_Common_Mistakes.pdf
+
+> │          ├── 📄 Mortgage_-_Refinancing.pdf
+
+> │          ├── 📄 Mortgages - Financial Center.mhtml
+
+> │          ├── 📄 News Releases - Financial Center.mhtml
+
+> │          ├── 📄 News Releases - Financial Center.pdf
+
+> │          ├── 📄 Open Positions - Financial Center.pdf
+
+> │          ├── 📄 Privacy Policy - Financial Center.mhtml
+
+> │        ├── 📄 _10_fcfcu.md
+
+> │      └── 📂 20_aes/
+
+> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │        ├── 📄 _20_aes.md
+
+> │      └── 📂 30_Sherrif/
+
+> │      └── 📂 40_Others/
+
+> │        ├── 📄 Manager_Response_Acknowledge_Form-1769543600128.pdf
+
+> │      ├── 📄 _20_actors.md
+
+> │    └── 📂 30_Supporting/
+
+> │      └── 📂 10_photos_video/
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │        ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │        ├── 📄 _10_photos_video.md
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 DLGF_ Tax Bill Search.pdf
+
+> │        ├── 📄 Marion County, IN, Estimated 2025 Taxes 6016506.pdf
+
+> │        ├── 📄 MyTitle.pdf
+
+> │        ├── 📄 Parcel_6016506_PRC 1.pdf
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory 1.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 _20_parcel.md
+
+> │        ├── 📄 f588fab6-f89f-41c3-bfce-05ad0d108a06.pdf
+
+> │        ├── 📄 indy_pvdnet_document (1).pdf
+
+> │        ├── 📄 indy_pvdnet_document.pdf
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 _30_declarations.md
+
+> │      └── 📂 40_affidavits/
+
+> │        ├── 📄 _40_affidavits.md
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 _ada-disability.md
+
+> │        └── 📂 character/
+
+> │          ├── 📄 _character.md
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 _community-service.md
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 _credibility.md
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 _observations.md
+
+> │      └── 📂 50_records/
+
+> │        └── 📂 bankruptcy/
+
+> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │      └── 📂 60_credit/
+
+> │        ├── 📄 Chase Credit Journey - Credit report.pdf
+
+> │        ├── 📄 Chase Credit Journey.pdf
+
+> │        ├── 📄 Credit Report.pdf
+
+> │      └── 📂 70_Financial/
+
+> │        ├── 📄 50100846854.pdf
+
+> │        ├── 📄 50100879809.pdf
+
+> │        ├── 📄 50100883027.pdf
+
+> │        ├── 📄 50100916138.pdf
+
+> │        ├── 📄 Invoice.pdf
+
+> │        ├── 📄 Invoice2.pdf
+
+> │        ├── 📄 Invoice3.pdf
+
+> │        ├── 📄 Invoice4.pdf
+
+> │      ├── 📄 _30_supporting.md
+
+> │    └── 📂 40_Exposure_and_Harm/
+
+> │      ├── 📄 EXPOSURE_CONSEQUENTIAL_CONSOLIDATED.md
+
+> │      ├── 📄 EXPOSURE_ECONOMIC_CONSOLIDATED.md
+
+> │      ├── 📄 EXPOSURE_MISC_STRATEGY_CONSOLIDATED.md
+
+> │      ├── 📄 EXPOSURE_NON_ECONOMIC_CONSOLIDATED.md
+
+> │      ├── 📄 _40_Exposure_and_Harm.md
+
+> │      └── 📂 _archive/
+
+> │        └── 📂 20_economic_harm/
+
+> │          └── 📂 10_property_possession_harms/
+
+> │            ├── 📄 _10_property_possession_harms.md
+
+> │          └── 📂 30_financial/
+
+> │            ├── 📄 NT_Financial_Tracker.md
+
+> │            ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │            ├── 📄 _30_financial.md
+
+> │          └── 📂 60_professional_harm/
+
+> │            ├── 📄 _60_professional_harm.md
+
+> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │          ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │          ├── 📄 _20_economic_harm.md
+
+> │        └── 📂 50_non_economic_harm/
+
+> │          └── 📂 40_health_and_safety/
+
+> │            └── 📂 20_companion_animal_risk/
+
+> │              ├── 📄 _20_companion_animal_risk.md
+
+> │            ├── 📄 _40_health_and_safety.md
+
+> │          └── 📂 Photos_Conditions/
+
+> │            ├── 📄 _Photos_Conditions.md
+
+> │          └── 📂 Weather_Reports/
+
+> │            ├── 📄 Cold_Risk_Report.md
+
+> │            ├── 📄 _Weather_Reports.md
+
+> │          ├── 📄 _50_non_economic_harm.md
+
+> │          └── 📂 cold_exposure/
+
+> │            ├── 📄 PL__Cold_Risk_Report.md
+
+> │            ├── 📄 _cold_exposure.md
+
+> │        └── 📂 60_Consequential_Damages/
+
+> │          └── 📂 Hotel_Mitigation/
+
+> │            └── 📂 10_Service_Animal_Notice/
+
+> │              ├── 📄 Gigi_Documentation_Pack.md
+
+> │              ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │              ├── 📄 _10_Service_Animal_Notice.md
+
+> │            └── 📂 20_Habitability/
+
+> │              ├── 📄 Demand_Notice_and_Ledger.md
+
+> │              ├── 📄 Room_Conditions_Factual_Log.md
+
+> │              ├── 📄 _20_Habitability.md
+
+> │            ├── 📄 MITIGATION_LOG_Temporary_Housing.md
+
+> │            ├── 📄 README_Temporary_Housing_Mitigation.md
+
+> │            ├── 📄 _Hotel_Mitigation.md
+
+> │          ├── 📄 _60_Consequential_Damages.md
+
+> │        └── 📂 70_remedies_scenarios/
+
+> │          ├── 📄 _70_remedies_scenarios.md
+
+> │        └── 📂 80_payout_strategy/
+
+> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 _80_payout_strategy.md
+
+> │        └── 📂 90_third_party_harm/
+
+> │          ├── 📄 _90_third_party_harm.md
+
+> │    └── 📂 60_Service_and_delivery/
+
+> │      └── 📂 Email_Transmittals/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Email_Transmittals.md
+
+> │      ├── 📄 Service_Log.md
+
+> │      └── 📂 USPS_Certified/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _USPS_Certified.md
+
+> │      ├── 📄 _60_service_and_delivery.md
+
+> │    ├── 📄 _20_evidence.md
+
+> │  └── 📂 30_Trackers/
+
+> │    ├── 📄 MASTER_LEDGER.csv
+
+> │    ├── 📄 _30_Trackers.md
+
+> │    ├── 📄 audit_report.txt
+
+> │    ├── 📄 authority.csv
+
+> │    ├── 📄 docket.csv
+
+> │    ├── 📄 financial.csv
+
+> │    ├── 📄 notionseed.csv
+
+> │    ├── 📄 repo_index.csv
+
+> │    ├── 📄 strategy.csv
+
+> │    ├── 📄 tasks.csv
+
+> │    ├── 📄 violations.csv
+
+> │  └── 📂 99_Templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 _10_motions.md
+
+> │      ├── 📄 _emergency_stay_of_writ.md
+
+> │      ├── 📄 _vacate_void_judgment.md
+
+> │    └── 📂 20_affidavits/
+
+> │      ├── 📄 TPL_Affidavit_ADA_Disability.md
+
+> │      ├── 📄 TPL_Affidavit_Character.md
+
+> │      ├── 📄 TPL_Affidavit_Community_Service.md
+
+> │      ├── 📄 TPL_Affidavit_Credibility.md
+
+> │      ├── 📄 TPL_Affidavit_Language_Updates.md
+
+> │      ├── 📄 TPL_Affidavit_Observations.md
+
+> │      ├── 📄 TPL_Affidavit_Verified_Defendant.md
+
+> │      ├── 📄 TPL_Declaration_Gender_Identity_Clarification.md
+
+> │      ├── 📄 _20_affidavits.md
+
+> │      ├── 📄 _GUIDE_Witness_Instructions.md
+
+> │    └── 📂 40_exhibits/
+
+> │      ├── 📄 _40_exhibits.md
+
+> │      ├── 📄 _Exhibits_Lists.md
+
+> │    └── 📂 50_orders/
+
+> │      ├── 📄 _50_orders.md
+
+> │      ├── 📄 _Proposed_Order.md
+
+> │      ├── 📄 _proposed_order_emergency_stay.md
+
+> │      ├── 📄 _proposed_order_motion_to_vacate.md
+
+> │    └── 📂 60_packets/
+
+> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
+
+> │      ├── 📄 TPL_ADA_Packet.md
+
+> │      ├── 📄 TPL_Handup_Packet_Note.md
+
+> │      ├── 📄 _60_packets.md
+
+> │    └── 📂 70_outreach/
+
+> │      ├── 📄 TPL_Advocate_Outreach.md
+
+> │      ├── 📄 TPL_Attorney_Brief.md
+
+> │      ├── 📄 _70_outreach.md
+
+> │    └── 📂 80_binders/
+
+> │      ├── 📄 TPL_Binder_Section_Cover.md
+
+> │      ├── 📄 TPL_Binder_Section_Index.md
+
+> │      ├── 📄 _80_binders.md
+
+> │    └── 📂 90_internal/
+
+> │      ├── 📄 _Court_Doc.md
+
+> │      ├── 📄 _settlement_letter_draft.md
+
+> │    ├── 📄 GEMINI_PROMPT_Phase_Alignment.md
+
+> │  ├── 📄 MASTER_PHASE_00_NOTION_IMPORT.csv
+
+> │  ├── 📄 PHASE_00_Case_Management.md
+
+> └── 📂 01_PHASE_FORECLOSURE.CLOSED/
+
+> │  └── 📂 10_proposed/
+
+> │    ├── 📄 _10_proposed.md
+
+> │  └── 📂 30_motions/
+
+> │    ├── 📄 MO_01_motion_vacate.pdf
+
+> │    ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │    ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │    ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │    ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │    ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │    ├── 📄 _30_motions.md
+
+> │  └── 📂 40_orders/
+
+> │    ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │    ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │    ├── 📄 _40_orders.md
+
+> │  └── 📂 70_hearings/
+
+> │    └── 📂 2026-01-09_void_judgment_hearing/
+
+> │      └── 📂 2025-01-09_hearing/
+
+> │        ├── 📄 COURT_MODE_BUTTONS.md
+
+> │        ├── 📄 HEARING_Cheat_Sheet.md
+
+> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
+
+> │        ├── 📄 _Hearing_Packet_2026-01-09.md
+
+> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> │      ├── 📄 _Hearing_Void_Judgment_2026-01-09.md
+
+> │  └── 📂 90_Filed_Envelopes/
+
+> │    └── 📂 10_2025-12-10_motion_vacate/
+
+> │      ├── 📄 ENV_37288599_Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 ENV_Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 _10_2025-12-10_motion_vacate.md
+
+> │      ├── 📄 combinepdf.pdf
+
+> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │      ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │    ├── 📄 _90_Filed_Envelopes.md
+
+> │  ├── 📄 MASTER_PHASE_01_NOTION_IMPORT.csv
+
+> └── 📂 02_PHASE_PRESERVATION/
+
+> │  └── 📂 10_overview/
+
+> │    ├── 📄 Master_Exhibit_Index.md
+
+> │    ├── 📄 Notion_Project_Management_Sync.md
+
+> │    ├── 📄 PHASE_02_Overview_Master.md
+
+> │  └── 📂 20_ledgers/
+
+> │    ├── 📄 _20_ledgers.md
+
+> │    ├── 📄 harms.csv
+
+> │    ├── 📄 spoliation_risk_ledger.md
+
+> │  └── 📂 30_output/
+
+> │    └── 📂 10_letters/
+
+> │      ├── 📄 2026-02-01_Signed_Notice_of_Preservation_of_Evidence_and_Litigation_Hold.pdf
+
+> │      ├── 📄 2026-02-03_Second_Notice_Cover_Letter.html
+
+> │      ├── 📄 Litigation_Hold_FollowUp.html
+
+> │      ├── 📄 _10_letters.md
+
+> │    └── 📂 20_Emails/
+
+> │      ├── 📄 Gmail - TIME-SENSITIVE NOTICE _ Service by Email Confirmed on Record-2.pdf
+
+> │      ├── 📄 Gmail - TIME-SENSITIVE NOTICE _ Service by Email Confirmed on Record.pdf
+
+> │      ├── 📄 _20_Emails.md
+
+> │    └── 📂 30_Packet/
+
+> │      ├── 📄 2026-02-03_Invoice_Certified_Mail_Evidence_Preservation_FCFCU_LetterStream.pdf
+
+> │      ├── 📄 2026-02-03_Invoice_First_Class_Mail_Evidence_Preservation_FCFCU_LetterStream.pdf
+
+> │      ├── 📄 2026-02-03_Notice_of_Evidence_Preservation_and_Litigation_Hold_FCFCU_FINAL-First_Class.pdf
+
+> │      ├── 📄 2026-02-03_Notice_of_Evidence_Preservation_and_Litigation_Hold_FCFCU_FINAL.pdf
+
+> │      ├── 📄 2026-02-03_Payment_Receipt_LetterStream_Evidence_Preservation_FCFCU.pdf
+
+> │      ├── 📄 _30_Packet.md
+
+> │    ├── 📄 _30_output.md
+
+> │  └── 📂 40_Responses/
+
+> │    ├── 📄 2026-02-01_Automatic_Reply_Email_Receipt_Marion_County_Sheriff_Evidence_Preservation.pdf
+
+> │    ├── 📄 _40_Responses.md
+
+> │  ├── 📄 MASTER_PHASE_02_NOTION_IMPORT.csv
+
+> │  ├── 📄 PHASE_02_Preservation.md
+
+> └── 📂 03_PHASE_CREDIT_FCRA/
+
+> │  └── 📂 00_send_queue/
+
+> │    ├── 📄 Execution_Checklist.md
+
+> │    ├── 📄 MASTER_EXECUTION_CHECKLIST.md
+
+> │    ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
+
+> │    ├── 📄 _00_send_queue.md
+
+> │  └── 📂 10_credit_reports/
+
+> │    └── 📂 Equifax/
+
+> │      ├── 📄 1990-05-18_FORMAL DISPUTE OF INACCURATE REPORTING Copy.pdf
+
+> │      ├── 📄 Call Customer Care.pdf
+
+> │      ├── 📄 Equifax_dispute_letter.html
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Equifax.md
+
+> │      ├── 📄 identity_verification_bank_statement_old-national.jpg
+
+> │      ├── 📄 identity_verification_drivers_license.jpeg
+
+> │    └── 📂 Experian/
+
+> │      ├── 📄 Experian - Access your credit report--2.pdf
+
+> │      ├── 📄 Experian - Access your credit report-CH13.pdf
+
+> │      ├── 📄 Experian - Access your credit report.pdf
+
+> │      ├── 📄 Experian - Dispute Cart.pdf
+
+> │      ├── 📄 Experian - Dispute Cart2.pdf
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Experian.md
+
+> │    ├── 📄 FCFCU_Late_Reporting_Evidence_2026.txt
+
+> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
+
+> │    └── 📂 Other/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Other.md
+
+> │    └── 📂 TransUnion/
+
+> │      ├── 📄 Gmail - Dispute Received, Investigation in Process.pdf
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _TransUnion.md
+
+> │    ├── 📄 _10_credit_reports.md
+
+> │  └── 📂 20_furnisher_disputes/
+
+> │    ├── 📄 13312462_invoice.pdf
+
+> │    ├── 📄 13312462_tmp (1).pdf
+
+> │    ├── 📄 13312462_tmp.pdf
+
+> │    ├── 📄 13312465_invoice.pdf
+
+> │    ├── 📄 13312465_tmp.pdf
+
+> │    ├── 📄 2026-02-03_BASIS OF DISPUTE (NON-CURABLE DEFECTS).pdf
+
+> │    ├── 📄 2026-02-03_FCFCU_Furnisher_Deletion_Demand_FINAL.html
+
+> │    ├── 📄 CFPB_Complaint_Draft.md
+
+> │    ├── 📄 _20_furnisher_disputes.md
+
+> │  └── 📂 30_bureau_disputes/
+
+> │    ├── 📄 2026-02-02_Equifax_Dispute_Letter.html
+
+> │    ├── 📄 2026-02-02_Experian_Dispute_Letter.html
+
+> │    ├── 📄 2026-02-02_TransUnion_Dispute_Letter.html
+
+> │    ├── 📄 Consumer_Statement_Landlords.md
+
+> │    ├── 📄 Equifax_Dispute_Letter.md
+
+> │    ├── 📄 Experian_Dispute_Letter.md
+
+> │    ├── 📄 TransUnion_Dispute_Letter.md
+
+> │    ├── 📄 _30_bureau_disputes.md
+
+> │    ├── 📄 equifax.html
+
+> │    ├── 📄 experian.html
+
+> │    ├── 📄 transunion.html
+
+> │  └── 📂 35_Court_Records/
+
+> │    ├── 📄 4-018222 - Circuit and Superior Courts of Marion County, Indiana.mhtml
+
+> │    ├── 📄 Estimate_4-018222.pdf
+
+> │    ├── 📄 MarionCountyAudioRequestAuthorization_20260203_49D03-2501-MF-002559.pdf
+
+> │    ├── 📄 Your order has been submitted successfully.pdf
+
+> │    ├── 📄 request for recording.pdf
+
+> │  └── 📂 40_utilities/
+
+> │    ├── 📄 2026-02-03_AES_Utility_Dispute.html
+
+> │    ├── 📄 2026-02-03_Citizens_Utility_Dispute.html
+
+> │    ├── 📄 2026-02-03_Code_Enforcement_Dispute.html
+
+> │    └── 📂 AES/
+
+> │      ├── 📄 AESIndiana (1).pdf
+
+> │      ├── 📄 AESIndiana.pdf
+
+> │      ├── 📄 Utility Dispute (AES Indiana) - Cody Rice-Velasquez.pdf
+
+> │      ├── 📄 Utility Dispute (Citizens Water) - Cody Rice-Velasquez.pdf
+
+> │      ├── 📄 Utility Dispute (Code Enforcement) - Cody Rice-Velasquez.pdf
+
+> │      ├── 📄 activity.txt
+
+> │    ├── 📄 _40_utilities.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 30_affidavits/
+
+> │      ├── 📄 exhibit_b_harm_addendum 1.html
+
+> │      ├── 📄 exhibit_b_harm_addendum.html
+
+> │      ├── 📄 exhibit_c_affidavit_emergency 1.html
+
+> │      ├── 📄 exhibit_c_affidavit_emergency.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_packets/
+
+> │      ├── 📄 13312381_invoice.pdf
+
+> │      ├── 📄 13312381_tmp.pdf
+
+> │      ├── 📄 DL_REDACTED.jpg
+
+> │      ├── 📄 PROOF_OF_ADDRESS.pdf
+
+> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
+
+> │      ├── 📄 _40_packets.md
+
+> │      ├── 📄 identity_verification_letter_mission-lane-cc.pdf
+
+> │    └── 📂 50_verified_responses/
+
+> │      ├── 📄 _40_verified_responses.md
+
+> │    ├── 📄 CFPB_Escalation_Packet_DRAFT.md
+
+> │    ├── 📄 Credit_Dispute_Master_Packet_Index.html
+
+> │    ├── 📄 Equifax_Violation_Excerpt.md
+
+> │    ├── 📄 Experian_Violation_Excerpt.md
+
+> │    ├── 📄 Landlord_Explanation_Letter.html
+
+> │    ├── 📄 Landlord_Statement.html
+
+> │    ├── 📄 MANIFEST_PHASE_03_SENDS.md
+
+> │    ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │    ├── 📄 _50_output.md
+
+> │  └── 📂 70_damages/
+
+> │    ├── 📄 Consumer_Statement_Short.txt
+
+> │    ├── 📄 Core_Credit_Tables.md
+
+> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
+
+> │    ├── 📄 Housing_Emergency_Affidavit.html
+
+> │    ├── 📄 Landlord_Clarification_Statement.html
+
+> │    ├── 📄 Sanctions_Readiness_Memo.md
+
+> │    ├── 📄 _50_damages.md
+
+> │    ├── 📄 _70_damages.md
+
+> │    ├── 📄 draft_housing_affidavit.md
+
+> │  ├── 📄 MASTER_PHASE_03_NOTION_IMPORT.csv
+
+> │  ├── 📄 PHASE_03_Credit_FCRA.md
+
+> └── 📂 04_PHASE_REGULATORS/
+
+> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
+
+> │  └── 📂 10_Industry/
+
+> │    └── 📂 BBB/
+
+> │      ├── 📄 BBB_Complaint_Narrative.md
+
+> │      ├── 📄 BBB_Violation_Excerpt.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 _BBB.md
+
+> │    ├── 📄 _10_Industry.md
+
+> │  └── 📂 20_Local/
+
+> │    └── 📂 35_Sheriff_Oversight/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │      ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │      ├── 📄 _35_Sheriff_Oversight.md
+
+> │    ├── 📄 AES_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │    ├── 📄 _20_Local.md
+
+> │  └── 📂 30_State/
+
+> │    └── 📂 20_AG_Indiana/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │      ├── 📄 _20_AG_Indiana.md
+
+> │    └── 📂 25_IN_DFI/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │      ├── 📄 _25_IN_DFI.md
+
+> │    └── 📂 55_IN_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 ICRC_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │      ├── 📄 _55_IN_Civil_Rights.md
+
+> │    ├── 📄 _30_State.md
+
+> │  └── 📂 40_Federal/
+
+> │    └── 📂 20_CFPB/
+
+> │      ├── 📄 CFPB_Complaint_Narrative.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 _20_CFPB.md
+
+> │    └── 📂 30_NCUA/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │      ├── 📄 NCUA_Complaint_Narrative.md
+
+> │      ├── 📄 NCUA_Violation_Excerpt.md
+
+> │      ├── 📄 _30_NCUA.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
+
+> │        ├── 📄 __archive.md
+
+> │    └── 📂 40_DOJ_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │      ├── 📄 DOJ_Violation_Excerpt.md
+
+> │      ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │    └── 📂 50_HUD_FHEO/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │      ├── 📄 _50_HUD_FHEO.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
+
+> │        ├── 📄 __archive.md
+
+> │    ├── 📄 _40_Federal.md
+
+> │  └── 📂 50_Other/
+
+> │    └── 📂 60_CMS_Caretaker_Impact/
+
+> │      ├── 📄 CMS_Informational_Complaint.md
+
+> │      ├── 📄 _60_CMS_Caretaker_Impact.md
+
+> │    ├── 📄 _50_Other.md
+
+> │  └── 📂 50_regulators/
+
+> │    ├── 📄 cms_ssa_caretaker.html
+
+> │    ├── 📄 dfi_servicing_complaint.html
+
+> │    ├── 📄 doj_supplemental.html
+
+> │    ├── 📄 fcc_harassment.html
+
+> │    ├── 📄 hud_fheo_narrative.html
+
+> │    ├── 📄 icrc_civil_rights.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 master_strategic_timeline.html
+
+> │    ├── 📄 master_violation_inventory.html
+
+> │    ├── 📄 ncua_complaint.html
+
+> │    ├── 📄 sheriff_internal_affairs.html
+
+> │    ├── 📄 va_informational.html
+
+> │  └── 📂 99_Reserve_Informational/
+
+> │    └── 📂 45_FCC_Telecom/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 FCC_Harassment_Complaint.md
+
+> │      ├── 📄 FCC_Violation_Excerpt.md
+
+> │      ├── 📄 _45_FCC_Telecom.md
+
+> │    └── 📂 65_SSA_OIG/
+
+> │      ├── 📄 SSA_OIG_Informational_Filing.md
+
+> │      ├── 📄 _65_SSA_OIG.md
+
+> │    └── 📂 70_VA_Informational/
+
+> │      ├── 📄 VA_Informational_Filing.md
+
+> │      ├── 📄 _70_VA_Informational.md
+
+> │    ├── 📄 _99_Reserve_Informational.md
+
+> │  ├── 📄 MANIFEST_Reserve_Informational_Filings.md
+
+> │  ├── 📄 MASTER_PHASE_04_NOTION_IMPORT.csv
+
+> │  ├── 📄 PHASE_04_Regulators.md
+
+> │  ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │  ├── 📄 _04_REGULATORS.md
+
+> └── 📂 05_PHASE_LITIGATION/
+
+> │  └── 📂 00_Intake/
+
+> │    ├── 📄 Litigation_Decision_Tree.md
+
+> │    ├── 📄 Master_Timeline_Strategy_Summary.md
+
+> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │    ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │    ├── 📄 _00_Intake.md
+
+> │    └── 📂 _archive/
+
+> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │      ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │      ├── 📄 __archive.md
+
+> │  └── 📂 30_demand_letters/
+
+> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 _30_demand_letters.md
+
+> │  └── 📂 40_opposing_counsel/
+
+> │    ├── 📄 _40_opposing_counsel.md
+
+> │  └── 📂 50_draft_pleadings/
+
+> │    ├── 📄 _50_draft_pleadings.md
+
+> │  └── 📂 60_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 _10_filings.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 _20_orders.md
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 _30_packets.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 _40_motions.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 _50_letters.md
+
+> │    ├── 📄 _60_output.md
+
+> │  └── 📂 70_hearings/
+
+> │    ├── 📄 _70_hearings.md
+
+> │  ├── 📄 MASTER_PHASE_05_NOTION_IMPORT.csv
+
+> │  ├── 📄 PHASE_05_Litigation.md
+
+> └── 📂 06_PHASE_MEDIA_INQUIRIES/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 2025-12-15_displacement_cold_exposure.md
+
+> │  └── 📂 20_social_media/
+
+> │  └── 📂 30_legislative_outreach/
+
+> │  └── 📂 40_public_record_dumps/
+
+> │  └── 📂 50_press_kits/
+
+> │  └── 📂 60_news_media/
+
+> │  ├── 📄 MASTER_PHASE_06_NOTION_IMPORT.csv
+
+> └── 📂 scripts/
+
+> │  ├── 📄 apply_rename_map.py
+
+> │  ├── 📄 audit_ledger.py
+
+> │  ├── 📄 consolidate_master_data.py
+
+> │  ├── 📄 export_ledger_to_csv.py
+
+> │  ├── 📄 generate_views.py
+
+> │  ├── 📄 integrity_check.py
+
+> │  └── 📂 maintenance/
+
+> │    ├── 📄 generate_binder_pdf.py
+
+> │  ├── 📄 merge_ledger.py
+
+> │  └── 📂 ops/
+
+> │    ├── 📄 build_binder.py
+
+> │    ├── 📄 render_special_files.py
+
+> │    ├── 📄 update_timeline_violations.py
+
+> │  └── 📄 seed_master_ledger.py
+
 > ```
 
 ### Assistant

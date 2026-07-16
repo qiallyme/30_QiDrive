@@ -3,9 +3,9 @@ layout: page
 title: "Expanded CSV example"
 slug: "expanded_csv_example"
 created_at: "2025-11-15 09:06:00"
-updated_at: "2025-11-15 09:06:00"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,70 +39,134 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> put this into csv. Based on the sources provided, below is a chronological summary of the available monthly energy usage (Daily kWh and estimated Total kWh) and the corresponding bill amounts charged, spanning from late 2022 through August 2025.
-> 
-> The data presented reflects the *Total Services Billed* (the calculated monthly cost for usage, charges, and taxes) and the *Amount Due* (the required payment for that bill cycle, which often includes past balances, fees, or budget amounts).
-> 
-> ### Energy Usage and Bill Summary (November 2022 – August 2025)
-> 
-> The service is under the RH (Residential-Electric Heat/1 Family) rate. Note that historical energy usage data is often presented as *Average Daily kWh*, from which the *Total Estimated kWh* is derived based on the number of billing days.
-> 
-> | Billing Date (End of Period) | Period (Days) | Avg. Daily kWh | Total Estimated kWh (Usage) | Total Services Billed (New Charges) | Amount Due (Required Payment) | Context / Fees |
-> | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-> | **10/27/2022** | 29 | **54.6** | 1,583 | $258.63 | **$271.00** (Budget) | Budget Billing in effect |
-> | **11/28/2022** | 31 | **70.9** | 2,198 | $286.97 | **$316.00** (New Budget) | Budget payment changed to $316.00 |
-> | **12/28/2022** | 30 | **81.4** | 2,442 | $384.61 | **$316.00** (Budget) | |
-> | **01/27/2023** | 30 | **121.7** | 3,651 | $364.47 | **$316.00** (Budget) | |
-> | **02/24/2023** | 28 | **126.4** | 3,539 | $413.30 | **$316.00** (Budget) | Included -$0.17 fuel adjustment credit |
-> | **03/28/2023** | 32 | **76.7** | 2,454 | $413.88 | **$316.00** (Budget) | |
-> | **04/26/2023** | 30 | **61.8** | 1,854 | $327.42 | **$621.59** (Settle-up) | Budget plan settlement amount. New budget $348.00 next bill. |
-> | **05/26/2023** | 30 | **53.0** | 1,590 | $332.57 | **$348.00** (Budget) | |
-> | **06/28/2023** | 33 | **64.6** | 2,132 | $327.35 | **$716.00** | Includes Returned Payment and $20.00 charge |
-> | **07/27/2023** | 29 | **85.9** | 2,491 | $296.83 | **$759.75** | Budget Plan canceled; includes Returned Payment and $20.00 charge. |
-> | **08/29/2023** | 33 | **80.8** | 2,666 | $319.12 | **$657.87** | Includes Returned Payment and $20.00 charge. |
-> | **09/27/2023** | 29 | **76.8** | 2,227 | $331.91 | **$951.91** | Includes Non-Pay Disconnect ($22.00) and Reconnect Charge ($64.00). |
-> | **10/25/2023** | 28 | **64.0** | 1,792 | $250.55 | **$602.46** | Non-payment disconnections suspended due to system upgrade. |
-> | **11/30/2023** | 34 | **64.1** | 2,180 | $365.24 | **$330.00** | New account number assigned due to system upgrade. |
-> | **12/29/2023** | 29 | **92.6** | 2,685 | $352.94 | **$330.00** | |
-> | **01/31/2024** | 33 | **87.7** | 2,894 | $592.35 | **$660.00** | Budget amount increased. |
-> | **03/05/2024** | 37 | **108.2** | 4,003 | $414.87 | **$990.00** | Billing issues noted by AES; late fees waived, no disconnections. |
-> | **03/28/2024** | 28 | **103.2** | 2,890 | $336.18 | **$1,024.60** | System upgrade issues ongoing. |
-> | **04/30/2024** | 31 | **82.0** | 2,542 | $269.65 | **$1,354.60** | |
-> | **05/31/2024** | 32 | **83.5** | 2,672 | $297.87 | **$1,684.60** | IURC approved rate adjustment effective mid-May. |
-> | **06/28/2024** | 28 | **91.2** | 2,554 | $374.19 | **$2,014.60** | |
-> | **07/29/2024** | 29 | **92.8** | 2,691 | $345.90 | **$2,344.60** | |
-> | **08/28/2024** | 32 | **88.6** | 2,835 | $382.19 | **$2,674.60** | Limited customer systems operations noted Aug 29-Sep 4. |
-> | **09/30/2024** | 31 | **79.7** | 2,471 | $364.19 | **$3,004.60** | Remote disconnections begin November 2024. |
-> | **10/31/2024** | 33 | **84.9** | 2,802 | $288.16 | **$3,758.33** (Settle-up) | Budget plan settlement amount. New budget $365.00. |
-> | **11/27/2024** | 27 | **104.9** | 2,832 | $258.70 | **$4,017.03** | |
-> | **12/31/2024** | 32 | **110.0** | 3,520 | $630.08 | **$4,647.11** | |
-> | **01/31/2025** | 33 | **171.7** | 5,666 | $776.38 | **$5,441.37** | Includes Late Payment Charge ($17.88). |
-> | **03/03/2025** | 29 | **132.7** | 3,848 | $613.88 | **$6,077.23** | Includes Late Payment Charge ($21.98). |
-> | **03/31/2025** | 28 | **105.7** | 2,960 | $436.86 | **$6,531.51** | Includes Late Payment Charge ($17.42). Disconnect notice dated 04/21/2025. |
-> | **04/30/2025** | 32 | **74.1** | 2,371 | $400.20 | **$1,445.20** | Payment extension granted, total amount of extension was $6,270.00. |
-> | **05/30/2025** | 30 | **92.0** | 2,760 | $368.68 | **$7,050.31** | **Extension Cancelled** ($5,225.00 added back); includes Late Payment Charge ($11.43). |
-> | **06/30/2025** | 29 | **103.3** | 2,996 | $417.90 | **$7,478.76** | Includes Late Payment Charge ($10.55). Immediate Disconnect Notice issued. |
-> | **07/31/2025** | 33 | **94.2** | 3,109 | $571.69 | **$7,184.23** | **Includes Returned Payment ($1,570.00) and $20.00 charge**. Late fee ($11.93). |
-> | **08/29/2025** | 29 | **95.4** | 2,767 | $376.94 | **$7,577.41** | Includes Late Payment Charge ($16.24). |
-> 
-> *(Note: The record for 09/30/2024 is duplicated in the source documents as 251021.pdf, but the chronological flow continues through 08/29/2025.)*
-> 
-> ### Summary of Usage and Billing Discrepancies
-> 
-> The billing records show that the total account balance drastically escalated from mid-2023 onward, especially during 2024–2025, due to factors beyond actual consumption.
-> 
-> 1.  **Usage vs. Penalties:** A billing audit summarized that only **approximately 30–40%** of the claimed balance was attributed to real energy consumption. The bulk of the debt was driven by penalties and system actions.
-> 2.  **Debt Inflation:** The increase in the total amount due was largely caused by:
->     *   An extension created in April 2025 being **canceled in May 2025, which re-added approximately $5,225** to the balance.
->     *   An ACH payment being reversed, leading to a **swing of +$1,590** on the balance, plus a $20 fee.
->     *   Compounding late fees applied monthly.
-> 3.  **Normalized Usage:** After efficiency measures were implemented (LEDs, lowered water-heater temp, excluding the roommate’s Tesla charging), the calculated **baseline usage** was estimated at approximately **1,650 kWh/month**, corresponding to a cost of roughly **$280/month** (usage-only).
-> 4.  **2025 YTD Usage Cost:** The total usage-only cost for 2025 (Year-to-Date) was estimated at **≈ $4,600–$4,700**.
-> 
-> To put the usage spike in context, the **January 2025 bill period** reported the highest average daily usage (**171.7 kWh/day**) resulting in over 5,666 kWh used, coinciding with severe cold (Avg Low 19°, Avg High 33°). By contrast, the projected baseline usage post-efficiency measures (1,650 kWh/mo) aligns with roughly 55 kWh/day, significantly lower than the historical usage noted on the bills.
-> 
-> ***
-> 
+> put this into csv. Based on the sources provided, below is a chronological summary of the available monthly energy usage (Daily kWh and estimated Total kWh) and the corresponding bill amounts charged, spanning from late 2022 through August 2025.
+
+> 
+
+> The data presented reflects the *Total Services Billed* (the calculated monthly cost for usage, charges, and taxes) and the *Amount Due* (the required payment for that bill cycle, which often includes past balances, fees, or budget amounts).
+
+> 
+
+> ### Energy Usage and Bill Summary (November 2022 – August 2025)
+
+> 
+
+> The service is under the RH (Residential-Electric Heat/1 Family) rate. Note that historical energy usage data is often presented as *Average Daily kWh*, from which the *Total Estimated kWh* is derived based on the number of billing days.
+
+> 
+
+> | Billing Date (End of Period) | Period (Days) | Avg. Daily kWh | Total Estimated kWh (Usage) | Total Services Billed (New Charges) | Amount Due (Required Payment) | Context / Fees |
+
+> | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
+> | **10/27/2022** | 29 | **54.6** | 1,583 | $258.63 | **$271.00** (Budget) | Budget Billing in effect |
+
+> | **11/28/2022** | 31 | **70.9** | 2,198 | $286.97 | **$316.00** (New Budget) | Budget payment changed to $316.00 |
+
+> | **12/28/2022** | 30 | **81.4** | 2,442 | $384.61 | **$316.00** (Budget) | |
+
+> | **01/27/2023** | 30 | **121.7** | 3,651 | $364.47 | **$316.00** (Budget) | |
+
+> | **02/24/2023** | 28 | **126.4** | 3,539 | $413.30 | **$316.00** (Budget) | Included -$0.17 fuel adjustment credit |
+
+> | **03/28/2023** | 32 | **76.7** | 2,454 | $413.88 | **$316.00** (Budget) | |
+
+> | **04/26/2023** | 30 | **61.8** | 1,854 | $327.42 | **$621.59** (Settle-up) | Budget plan settlement amount. New budget $348.00 next bill. |
+
+> | **05/26/2023** | 30 | **53.0** | 1,590 | $332.57 | **$348.00** (Budget) | |
+
+> | **06/28/2023** | 33 | **64.6** | 2,132 | $327.35 | **$716.00** | Includes Returned Payment and $20.00 charge |
+
+> | **07/27/2023** | 29 | **85.9** | 2,491 | $296.83 | **$759.75** | Budget Plan canceled; includes Returned Payment and $20.00 charge. |
+
+> | **08/29/2023** | 33 | **80.8** | 2,666 | $319.12 | **$657.87** | Includes Returned Payment and $20.00 charge. |
+
+> | **09/27/2023** | 29 | **76.8** | 2,227 | $331.91 | **$951.91** | Includes Non-Pay Disconnect ($22.00) and Reconnect Charge ($64.00). |
+
+> | **10/25/2023** | 28 | **64.0** | 1,792 | $250.55 | **$602.46** | Non-payment disconnections suspended due to system upgrade. |
+
+> | **11/30/2023** | 34 | **64.1** | 2,180 | $365.24 | **$330.00** | New account number assigned due to system upgrade. |
+
+> | **12/29/2023** | 29 | **92.6** | 2,685 | $352.94 | **$330.00** | |
+
+> | **01/31/2024** | 33 | **87.7** | 2,894 | $592.35 | **$660.00** | Budget amount increased. |
+
+> | **03/05/2024** | 37 | **108.2** | 4,003 | $414.87 | **$990.00** | Billing issues noted by AES; late fees waived, no disconnections. |
+
+> | **03/28/2024** | 28 | **103.2** | 2,890 | $336.18 | **$1,024.60** | System upgrade issues ongoing. |
+
+> | **04/30/2024** | 31 | **82.0** | 2,542 | $269.65 | **$1,354.60** | |
+
+> | **05/31/2024** | 32 | **83.5** | 2,672 | $297.87 | **$1,684.60** | IURC approved rate adjustment effective mid-May. |
+
+> | **06/28/2024** | 28 | **91.2** | 2,554 | $374.19 | **$2,014.60** | |
+
+> | **07/29/2024** | 29 | **92.8** | 2,691 | $345.90 | **$2,344.60** | |
+
+> | **08/28/2024** | 32 | **88.6** | 2,835 | $382.19 | **$2,674.60** | Limited customer systems operations noted Aug 29-Sep 4. |
+
+> | **09/30/2024** | 31 | **79.7** | 2,471 | $364.19 | **$3,004.60** | Remote disconnections begin November 2024. |
+
+> | **10/31/2024** | 33 | **84.9** | 2,802 | $288.16 | **$3,758.33** (Settle-up) | Budget plan settlement amount. New budget $365.00. |
+
+> | **11/27/2024** | 27 | **104.9** | 2,832 | $258.70 | **$4,017.03** | |
+
+> | **12/31/2024** | 32 | **110.0** | 3,520 | $630.08 | **$4,647.11** | |
+
+> | **01/31/2025** | 33 | **171.7** | 5,666 | $776.38 | **$5,441.37** | Includes Late Payment Charge ($17.88). |
+
+> | **03/03/2025** | 29 | **132.7** | 3,848 | $613.88 | **$6,077.23** | Includes Late Payment Charge ($21.98). |
+
+> | **03/31/2025** | 28 | **105.7** | 2,960 | $436.86 | **$6,531.51** | Includes Late Payment Charge ($17.42). Disconnect notice dated 04/21/2025. |
+
+> | **04/30/2025** | 32 | **74.1** | 2,371 | $400.20 | **$1,445.20** | Payment extension granted, total amount of extension was $6,270.00. |
+
+> | **05/30/2025** | 30 | **92.0** | 2,760 | $368.68 | **$7,050.31** | **Extension Cancelled** ($5,225.00 added back); includes Late Payment Charge ($11.43). |
+
+> | **06/30/2025** | 29 | **103.3** | 2,996 | $417.90 | **$7,478.76** | Includes Late Payment Charge ($10.55). Immediate Disconnect Notice issued. |
+
+> | **07/31/2025** | 33 | **94.2** | 3,109 | $571.69 | **$7,184.23** | **Includes Returned Payment ($1,570.00) and $20.00 charge**. Late fee ($11.93). |
+
+> | **08/29/2025** | 29 | **95.4** | 2,767 | $376.94 | **$7,577.41** | Includes Late Payment Charge ($16.24). |
+
+> 
+
+> *(Note: The record for 09/30/2024 is duplicated in the source documents as 251021.pdf, but the chronological flow continues through 08/29/2025.)*
+
+> 
+
+> ### Summary of Usage and Billing Discrepancies
+
+> 
+
+> The billing records show that the total account balance drastically escalated from mid-2023 onward, especially during 2024–2025, due to factors beyond actual consumption.
+
+> 
+
+> 1.  **Usage vs. Penalties:** A billing audit summarized that only **approximately 30–40%** of the claimed balance was attributed to real energy consumption. The bulk of the debt was driven by penalties and system actions.
+
+> 2.  **Debt Inflation:** The increase in the total amount due was largely caused by:
+
+>     *   An extension created in April 2025 being **canceled in May 2025, which re-added approximately $5,225** to the balance.
+
+>     *   An ACH payment being reversed, leading to a **swing of +$1,590** on the balance, plus a $20 fee.
+
+>     *   Compounding late fees applied monthly.
+
+> 3.  **Normalized Usage:** After efficiency measures were implemented (LEDs, lowered water-heater temp, excluding the roommate’s Tesla charging), the calculated **baseline usage** was estimated at approximately **1,650 kWh/month**, corresponding to a cost of roughly **$280/month** (usage-only).
+
+> 4.  **2025 YTD Usage Cost:** The total usage-only cost for 2025 (Year-to-Date) was estimated at **≈ $4,600–$4,700**.
+
+> 
+
+> To put the usage spike in context, the **January 2025 bill period** reported the highest average daily usage (**171.7 kWh/day**) resulting in over 5,666 kWh used, coinciding with severe cold (Avg Low 19°, Avg High 33°). By contrast, the projected baseline usage post-efficiency measures (1,650 kWh/mo) aligns with roughly 55 kWh/day, significantly lower than the historical usage noted on the bills.
+
+> 
+
+> ***
+
+> 
+
 > *Analogy:* Think of your energy bill like filling a bucket (your energy consumption). While you put some water in every day (your usage, totaling ~$4.7k for 2025 YTD), someone kept adding extra large scoops labeled "Canceled Payment Extension" (+$5.2k) and "Returned Payment Penalty" (+$1.6k), causing the bucket to overflow dramatically and leading to the massive amounts due reported on the later 2025 bills ($7,577.41 in September 2025), regardless of how much water you actually used..
 
 ### Assistant

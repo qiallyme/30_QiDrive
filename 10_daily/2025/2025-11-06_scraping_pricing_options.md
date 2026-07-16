@@ -3,9 +3,9 @@ layout: page
 title: "Scraping pricing options"
 slug: "scraping_pricing_options"
 created_at: "2025-11-06 18:31:51"
-updated_at: "2025-11-06 18:31:51"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -228,179 +228,352 @@ canonical_ref: ""
 > Would you like me to write that into a **clean 2-paragraph quote or invoice line** you can send (QiAlly Document Services style — polished but simple)?
 
 ### User
-> heres the finaly summary or proposal, pleaseupdaet the foducment with pricign there is a fee for the initial research and the rest due if he accepts. Excellent — here’s the **fully merged master document** that combines both your detailed **work summary** and the polished **client proposal** into one complete deliverable, ready for your QiAlly Document Services folder or to hand off directly to the client.
-> 
-> It balances the technical walkthrough, research value, and pricing justification — perfect for an invoice attachment or client-facing proposal.
-> 
-> ---
-> 
-> # 🧾 **QiAlly Document Services — MIBOR Member Directory Capture & Automation**
-> 
-> **Client:** [Client Name]
-> **Prepared by:** QiAlly Document Services
-> **Consultant:** Cody Rice-Velasquez
-> **Date:** November 2025
-> 
-> ---
-> 
-> ## **1. Project Goal**
-> 
-> Extract approximately **8,000 member listings** (≈571–572 pages) from the **MIBOR Member Directory** with minimal manual effort, producing durable artifacts (HTML/text/screenshots) per page for later parsing and structured analysis.
-> 
-> Deliver a clean, automatable process that preserves login sessions, mitigates timeouts, and yields exportable CSV/JSON datasets for business intelligence and CRM ingestion.
-> 
-> ---
-> 
-> ## **2. Work Performed (Chronological Summary)**
-> 
-> ### **Step 1 — Site Access & Analysis**
-> 
-> * Logged into `member.mibor.com` and confirmed listings appear in a **card-based directory** with server-side pagination.
-> * Verified the directory is powered by **DotNetNuke (DNN)** and **Telerik RadListView**, which enforces page-size limits (20 results per page).
-> 
-> ### **Step 2 — Manual Capture**
-> 
-> * Initial phase: Manual full-page screenshots from **Pages 1 – 30**.
-> * Each page was accessed via **Next** navigation and captured top-to-bottom.
-> * Session state was lost at Page 31, confirming that sessions time out or recycle after extended pagination.
-> 
-> ### **Step 3 — Deliverables Clarified**
-> 
-> * Defined target formats: **Full-page screenshots** or **HTML/text per page** for direct parsing.
-> * Created interim index `mibor_progress_up_to_page30.md` to track completed sections.
-> 
-> ### **Step 4 — Technical Limitations Identified**
-> 
-> * No direct page-jump functionality.
-> * Session resets occur after prolonged browsing.
-> * Manual process would require ~570 “Next” clicks; feasible but inefficient.
-> 
-> ---
-> 
-> ## **3. Automation & Engineering Plan**
-> 
-> ### **Phase 1 — Understanding the Site**
-> 
-> * Determined `contactid` parameters follow **non-sequential GUID patterns**, preventing simple URL enumeration.
-> * Confirmed server-driven pagination and authentication layers block client-side manipulation.
-> 
-> ### **Phase 2 — Page-Size Adjustment Attempts**
-> 
-> ```js
-> $find('dnn_ctr635_Find_ctl00_lstRecords').set_pageSize(100)
-> __doPostBack('dnn$ctr635$Find$ctl00$lstRecords','PageSize$100')
-> ```
-> 
-> * These calls were rejected by the server, confirming enforced limits.
-> 
-> ### **Phase 3 — Automation Strategy**
-> 
-> * Implement controlled **pagination automation** rather than bulk fetch.
-> * Requirements:
-> 
->   * Preserve live login session.
->   * Save each page’s **HTML/text/screenshot**.
->   * Navigate via “Next” with realistic delay patterns.
->   * Include pause/resume and error-recovery logic.
-> 
-> ### **Phase 4 — Script Development**
-> 
-> | Version | Key Features                                                                       |
-> | ------- | ---------------------------------------------------------------------------------- |
-> | **v1**  | Basic scraper – Chromium session, sequential save (`members_page_###.html/.png`).  |
-> | **v2**  | Added resumable checkpoints, pause/resume hotkeys (`p/r/q`).                       |
-> | **v3**  | Introduced randomized human-like delays, scrolling jitter, optional headless mode. |
-> | **v4**  | Added authentication recovery and persistent `.pw-profile` for session reuse.      |
-> | **v5**  | Final stable build: minimized window, keep-alive pings, strong cookie persistence. |
-> 
-> ### **Phase 5 — Runtime Optimization**
-> 
-> * Average: **16 seconds per page** → ~2–3 hours for full dataset.
-> * Stability confirmed through ~30 consecutive pages before timeout.
-> 
-> ### **Phase 6 — Output & Artifacts**
-> 
-> | Output                             | Description                                                  |
-> | ---------------------------------- | ------------------------------------------------------------ |
-> | `scrape_mibor_cdp.js`              | Final Node.js automation script.                             |
-> | `mibor_members_full.json` / `.csv` | Structured dataset (Name, Office, Email, Phone, Contact ID). |
-> | `mibor_pages/`                     | Per-page HTML/text or screenshot captures.                   |
-> | `checkpoint.json`                  | Resume state tracking.                                       |
-> | `.pw-profile/`                     | Persistent authentication profile.                           |
-> 
-> ---
-> 
-> ## **4. Research & Testing (Non-Billable)**
-> 
-> Significant exploratory work was performed to identify a reliable, secure method for data capture while preserving the client’s authenticated session.
-> These hours are documented for transparency but **not billed**.
-> 
-> | Category                      | Description                                                                    | Hours | Billable |
-> | ----------------------------- | ------------------------------------------------------------------------------ | ----- | -------- |
-> | Bot / Agent Testing           | Evaluated autonomous agents, Notion API logging, and local browser automation. | 1.5 h | ❌        |
-> | Framework Comparison          | Compared Selenium vs Playwright vs Puppeteer.                                  | 1 h   | ❌        |
-> | Session Experiments           | Tested cookie/session persistence and port-based CDP connections.              | 0.5 h | ❌        |
-> | Timeout & Pagination Research | Determined session life and site response behavior.                            | 0.5 h | ❌        |
-> 
-> **Total Non-Billable Research:** 3.5 hours
-> 
-> ---
-> 
-> ## **5. Billable Work & Deliverables**
-> 
-> | Description                                   | Rate   | Hours |       Amount |
-> | --------------------------------------------- | ------ | ----- | -----------: |
-> | Automation Build & Verification               | $40/hr | 5 h   |         $200 |
-> | Packaging & Deliverables (CSV + JSON exports) | flat   | —     |          $50 |
-> | **Total Project Cost**                        |        |       | **$250 USD** |
-> 
-> > *Flat pricing includes setup, testing, supervision, and packaging of up to ~8,000 records.*
-> 
-> ---
-> 
-> ## **6. Technical Notes**
-> 
-> * Directory size estimated from 14 records/page × ~571 pages.
-> * Connection or SSO resets occur near Page 30; partial automation loops recommended.
-> * Script allows safe resumption and rerun capability using `checkpoint.json`.
-> * Designed for lawful internal use and archival only (no redistribution of directory data).
-> 
-> ---
-> 
-> ## **7. Next Steps**
-> 
-> 1. **Client Selection:** Choose preferred output mode:
-> 
->    * (A) Full-page **PNG screenshots** — ideal for OCR and visual archiving.
->    * (B) **HTML/Text** dumps — for clean data parsing and faster CSV generation.
-> 2. Proceed with export for Pages 1–30 → complete run through Page 571.
-> 3. Generate final **CSV/JSON package + Notion-ready table.**
-> 4. Optionally deploy parser or host automation on a cloud VM for unattended runs.
-> 
-> ---
-> 
-> ## **8. Acceptance**
-> 
-> |                      |                             |
-> | -------------------- | --------------------------- |
-> | **Client Signature** | ___________________________ |
-> | **Date**             | ___________________________ |
-> 
-> ---
-> 
-> ## **9. Summary Reflection**
-> 
-> This project combined manual capture, browser-based session management, and full automation design.
-> Despite site limitations, QiAlly successfully engineered a robust scraping solution capable of capturing data at human speed with automated reliability.
-> Non-billable research laid the foundation for a sustainable workflow that the client can reuse or extend independently.
-> 
-> ---
-> 
-> Would you like me to export this as a **.docx proposal (with QiAlly branding and signature area)** and a **.pdf** version ready to send? I can include both in a single ZIP with filenames like:
-> 
-> ```
-> QiAlly_MIBOR_Automation_Proposal.docx
-> QiAlly_MIBOR_Automation_Proposal.pdf
+> heres the finaly summary or proposal, pleaseupdaet the foducment with pricign there is a fee for the initial research and the rest due if he accepts. Excellent — here’s the **fully merged master document** that combines both your detailed **work summary** and the polished **client proposal** into one complete deliverable, ready for your QiAlly Document Services folder or to hand off directly to the client.
+
+> 
+
+> It balances the technical walkthrough, research value, and pricing justification — perfect for an invoice attachment or client-facing proposal.
+
+> 
+
+> ---
+
+> 
+
+> # 🧾 **QiAlly Document Services — MIBOR Member Directory Capture & Automation**
+
+> 
+
+> **Client:** [Client Name]
+
+> **Prepared by:** QiAlly Document Services
+
+> **Consultant:** Cody Rice-Velasquez
+
+> **Date:** November 2025
+
+> 
+
+> ---
+
+> 
+
+> ## **1. Project Goal**
+
+> 
+
+> Extract approximately **8,000 member listings** (≈571–572 pages) from the **MIBOR Member Directory** with minimal manual effort, producing durable artifacts (HTML/text/screenshots) per page for later parsing and structured analysis.
+
+> 
+
+> Deliver a clean, automatable process that preserves login sessions, mitigates timeouts, and yields exportable CSV/JSON datasets for business intelligence and CRM ingestion.
+
+> 
+
+> ---
+
+> 
+
+> ## **2. Work Performed (Chronological Summary)**
+
+> 
+
+> ### **Step 1 — Site Access & Analysis**
+
+> 
+
+> * Logged into `member.mibor.com` and confirmed listings appear in a **card-based directory** with server-side pagination.
+
+> * Verified the directory is powered by **DotNetNuke (DNN)** and **Telerik RadListView**, which enforces page-size limits (20 results per page).
+
+> 
+
+> ### **Step 2 — Manual Capture**
+
+> 
+
+> * Initial phase: Manual full-page screenshots from **Pages 1 – 30**.
+
+> * Each page was accessed via **Next** navigation and captured top-to-bottom.
+
+> * Session state was lost at Page 31, confirming that sessions time out or recycle after extended pagination.
+
+> 
+
+> ### **Step 3 — Deliverables Clarified**
+
+> 
+
+> * Defined target formats: **Full-page screenshots** or **HTML/text per page** for direct parsing.
+
+> * Created interim index `mibor_progress_up_to_page30.md` to track completed sections.
+
+> 
+
+> ### **Step 4 — Technical Limitations Identified**
+
+> 
+
+> * No direct page-jump functionality.
+
+> * Session resets occur after prolonged browsing.
+
+> * Manual process would require ~570 “Next” clicks; feasible but inefficient.
+
+> 
+
+> ---
+
+> 
+
+> ## **3. Automation & Engineering Plan**
+
+> 
+
+> ### **Phase 1 — Understanding the Site**
+
+> 
+
+> * Determined `contactid` parameters follow **non-sequential GUID patterns**, preventing simple URL enumeration.
+
+> * Confirmed server-driven pagination and authentication layers block client-side manipulation.
+
+> 
+
+> ### **Phase 2 — Page-Size Adjustment Attempts**
+
+> 
+
+> ```js
+
+> $find('dnn_ctr635_Find_ctl00_lstRecords').set_pageSize(100)
+
+> __doPostBack('dnn$ctr635$Find$ctl00$lstRecords','PageSize$100')
+
+> ```
+
+> 
+
+> * These calls were rejected by the server, confirming enforced limits.
+
+> 
+
+> ### **Phase 3 — Automation Strategy**
+
+> 
+
+> * Implement controlled **pagination automation** rather than bulk fetch.
+
+> * Requirements:
+
+> 
+
+>   * Preserve live login session.
+
+>   * Save each page’s **HTML/text/screenshot**.
+
+>   * Navigate via “Next” with realistic delay patterns.
+
+>   * Include pause/resume and error-recovery logic.
+
+> 
+
+> ### **Phase 4 — Script Development**
+
+> 
+
+> | Version | Key Features                                                                       |
+
+> | ------- | ---------------------------------------------------------------------------------- |
+
+> | **v1**  | Basic scraper – Chromium session, sequential save (`members_page_###.html/.png`).  |
+
+> | **v2**  | Added resumable checkpoints, pause/resume hotkeys (`p/r/q`).                       |
+
+> | **v3**  | Introduced randomized human-like delays, scrolling jitter, optional headless mode. |
+
+> | **v4**  | Added authentication recovery and persistent `.pw-profile` for session reuse.      |
+
+> | **v5**  | Final stable build: minimized window, keep-alive pings, strong cookie persistence. |
+
+> 
+
+> ### **Phase 5 — Runtime Optimization**
+
+> 
+
+> * Average: **16 seconds per page** → ~2–3 hours for full dataset.
+
+> * Stability confirmed through ~30 consecutive pages before timeout.
+
+> 
+
+> ### **Phase 6 — Output & Artifacts**
+
+> 
+
+> | Output                             | Description                                                  |
+
+> | ---------------------------------- | ------------------------------------------------------------ |
+
+> | `scrape_mibor_cdp.js`              | Final Node.js automation script.                             |
+
+> | `mibor_members_full.json` / `.csv` | Structured dataset (Name, Office, Email, Phone, Contact ID). |
+
+> | `mibor_pages/`                     | Per-page HTML/text or screenshot captures.                   |
+
+> | `checkpoint.json`                  | Resume state tracking.                                       |
+
+> | `.pw-profile/`                     | Persistent authentication profile.                           |
+
+> 
+
+> ---
+
+> 
+
+> ## **4. Research & Testing (Non-Billable)**
+
+> 
+
+> Significant exploratory work was performed to identify a reliable, secure method for data capture while preserving the client’s authenticated session.
+
+> These hours are documented for transparency but **not billed**.
+
+> 
+
+> | Category                      | Description                                                                    | Hours | Billable |
+
+> | ----------------------------- | ------------------------------------------------------------------------------ | ----- | -------- |
+
+> | Bot / Agent Testing           | Evaluated autonomous agents, Notion API logging, and local browser automation. | 1.5 h | ❌        |
+
+> | Framework Comparison          | Compared Selenium vs Playwright vs Puppeteer.                                  | 1 h   | ❌        |
+
+> | Session Experiments           | Tested cookie/session persistence and port-based CDP connections.              | 0.5 h | ❌        |
+
+> | Timeout & Pagination Research | Determined session life and site response behavior.                            | 0.5 h | ❌        |
+
+> 
+
+> **Total Non-Billable Research:** 3.5 hours
+
+> 
+
+> ---
+
+> 
+
+> ## **5. Billable Work & Deliverables**
+
+> 
+
+> | Description                                   | Rate   | Hours |       Amount |
+
+> | --------------------------------------------- | ------ | ----- | -----------: |
+
+> | Automation Build & Verification               | $40/hr | 5 h   |         $200 |
+
+> | Packaging & Deliverables (CSV + JSON exports) | flat   | —     |          $50 |
+
+> | **Total Project Cost**                        |        |       | **$250 USD** |
+
+> 
+
+> > *Flat pricing includes setup, testing, supervision, and packaging of up to ~8,000 records.*
+
+> 
+
+> ---
+
+> 
+
+> ## **6. Technical Notes**
+
+> 
+
+> * Directory size estimated from 14 records/page × ~571 pages.
+
+> * Connection or SSO resets occur near Page 30; partial automation loops recommended.
+
+> * Script allows safe resumption and rerun capability using `checkpoint.json`.
+
+> * Designed for lawful internal use and archival only (no redistribution of directory data).
+
+> 
+
+> ---
+
+> 
+
+> ## **7. Next Steps**
+
+> 
+
+> 1. **Client Selection:** Choose preferred output mode:
+
+> 
+
+>    * (A) Full-page **PNG screenshots** — ideal for OCR and visual archiving.
+
+>    * (B) **HTML/Text** dumps — for clean data parsing and faster CSV generation.
+
+> 2. Proceed with export for Pages 1–30 → complete run through Page 571.
+
+> 3. Generate final **CSV/JSON package + Notion-ready table.**
+
+> 4. Optionally deploy parser or host automation on a cloud VM for unattended runs.
+
+> 
+
+> ---
+
+> 
+
+> ## **8. Acceptance**
+
+> 
+
+> |                      |                             |
+
+> | -------------------- | --------------------------- |
+
+> | **Client Signature** | ___________________________ |
+
+> | **Date**             | ___________________________ |
+
+> 
+
+> ---
+
+> 
+
+> ## **9. Summary Reflection**
+
+> 
+
+> This project combined manual capture, browser-based session management, and full automation design.
+
+> Despite site limitations, QiAlly successfully engineered a robust scraping solution capable of capturing data at human speed with automated reliability.
+
+> Non-billable research laid the foundation for a sustainable workflow that the client can reuse or extend independently.
+
+> 
+
+> ---
+
+> 
+
+> Would you like me to export this as a **.docx proposal (with QiAlly branding and signature area)** and a **.pdf** version ready to send? I can include both in a single ZIP with filenames like:
+
+> 
+
+> ```
+
+> QiAlly_MIBOR_Automation_Proposal.docx
+
+> QiAlly_MIBOR_Automation_Proposal.pdf
+
 > ```
 
 ### Assistant

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 04 Knowledge Links
-slug: ""
+slug: 04-knowledge-links
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 6043a07d6ba04fa1913539529e05df34
 canonical_ref: ""
 source_type: manual
 template_key: master-template

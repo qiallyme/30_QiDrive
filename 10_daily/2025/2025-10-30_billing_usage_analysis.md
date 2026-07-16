@@ -3,9 +3,9 @@ layout: page
 title: "Billing usage analysis"
 slug: "billing_usage_analysis"
 created_at: "2025-10-30 17:49:37"
-updated_at: "2025-10-30 17:49:37"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -115,64 +115,122 @@ canonical_ref: ""
 > Would you like me to generate a **CSV or Excel table** for this with subtotals and late-fee projections for the next quarter (Nov–Jan 2026)?
 
 ### User
-> also here is the 18mo account activity summary. Account Activity
-> 18 Month Account Activity for Account Number 200000289481
-> 
-> Date	Description	Amount
-> 10/29/2025	Incoming payment	($8,857.21)
-> 10/21/2025	Cash Security Deposit	$942.00
-> 9/29/2025	Bill	$7,915.21
-> 9/29/2025	Consumption billing receivable	$327.02
-> 9/29/2025	LPC from invoicing	$10.78
-> 8/28/2025	Bill	$7,577.41
-> 8/28/2025	Consumption billing receivable	$376.94
-> 8/28/2025	LPC from invoicing	$16.24
-> 7/30/2025	Bill	$7,184.23
-> 7/30/2025	Consumption billing receivable	$571.69
-> 7/30/2025	LPC from invoicing	$11.93
-> 7/8/2025	Return charge	$20.00
-> 7/8/2025	Returned Payment	$1,570.00
-> 6/30/2025	Incoming Payment	($1,570.00)
-> 6/30/2025	Incoming payment	($898.15)
-> 6/27/2025	Bill	$7,478.76
-> 6/27/2025	Consumption billing receivable	$417.90
-> 6/27/2025	LPC from invoicing	$10.55
-> 5/29/2025	Bill	$7,050.31
-> 5/29/2025	Consumption billing receivable	$368.68
-> 5/29/2025	LPC from invoicing	$11.43
-> 4/29/2025	Bill	$1,445.20
-> 4/29/2025	Consumption billing receivable	$400.20
-> 4/21/2025	Incoming payment	($250.00)
-> 4/4/2025	Incoming payment	($11.51)
-> 3/28/2025	Bill	$6,531.51
-> 3/28/2025	Consumption billing receivable	$436.86
-> 3/28/2025	LPC from invoicing	$17.42
-> 2/28/2025	Bill	$6,077.23
-> 2/28/2025	Consumption billing receivable	$613.88
-> 2/28/2025	LPC from invoicing	$21.98
-> 1/30/2025	Bill	$5,441.37
-> 1/30/2025	Consumption billing receivable	$776.38
-> 1/30/2025	LPC from invoicing	$17.88
-> 12/30/2024	Bill	$4,647.11
-> 12/30/2024	Consumption billing receivable	$630.08
-> 11/26/2024	Bill	$4,017.03
-> 11/26/2024	Consumption billing receivable	$258.70
-> 10/30/2024	Bill	$3,758.33
-> 9/27/2024	Bill	$3,004.60
-> 9/27/2024	Consumption billing receivable	$330.00
-> 8/27/2024	Bill	$2,674.60
-> 8/27/2024	Consumption billing receivable	$330.00
-> 7/26/2024	Bill	$2,344.60
-> 7/26/2024	Consumption billing receivable	$330.00
-> 6/27/2024	Bill	$2,014.60
-> 6/27/2024	Consumption billing receivable	$330.00
-> 5/30/2024	Bill	$1,684.60
-> 5/30/2024	Consumption billing receivable	$330.00
-> 4/29/2024	Bill	$1,354.60
-> 3/27/2024	Bill	$1,024.60
-> 3/4/2024	Bill	$990.00
-> 1/30/2024	Bill	$660.00
-> 12/28/2023	Bill	$330.00
+> also here is the 18mo account activity summary. Account Activity
+
+> 18 Month Account Activity for Account Number 200000289481
+
+> 
+
+> Date	Description	Amount
+
+> 10/29/2025	Incoming payment	($8,857.21)
+
+> 10/21/2025	Cash Security Deposit	$942.00
+
+> 9/29/2025	Bill	$7,915.21
+
+> 9/29/2025	Consumption billing receivable	$327.02
+
+> 9/29/2025	LPC from invoicing	$10.78
+
+> 8/28/2025	Bill	$7,577.41
+
+> 8/28/2025	Consumption billing receivable	$376.94
+
+> 8/28/2025	LPC from invoicing	$16.24
+
+> 7/30/2025	Bill	$7,184.23
+
+> 7/30/2025	Consumption billing receivable	$571.69
+
+> 7/30/2025	LPC from invoicing	$11.93
+
+> 7/8/2025	Return charge	$20.00
+
+> 7/8/2025	Returned Payment	$1,570.00
+
+> 6/30/2025	Incoming Payment	($1,570.00)
+
+> 6/30/2025	Incoming payment	($898.15)
+
+> 6/27/2025	Bill	$7,478.76
+
+> 6/27/2025	Consumption billing receivable	$417.90
+
+> 6/27/2025	LPC from invoicing	$10.55
+
+> 5/29/2025	Bill	$7,050.31
+
+> 5/29/2025	Consumption billing receivable	$368.68
+
+> 5/29/2025	LPC from invoicing	$11.43
+
+> 4/29/2025	Bill	$1,445.20
+
+> 4/29/2025	Consumption billing receivable	$400.20
+
+> 4/21/2025	Incoming payment	($250.00)
+
+> 4/4/2025	Incoming payment	($11.51)
+
+> 3/28/2025	Bill	$6,531.51
+
+> 3/28/2025	Consumption billing receivable	$436.86
+
+> 3/28/2025	LPC from invoicing	$17.42
+
+> 2/28/2025	Bill	$6,077.23
+
+> 2/28/2025	Consumption billing receivable	$613.88
+
+> 2/28/2025	LPC from invoicing	$21.98
+
+> 1/30/2025	Bill	$5,441.37
+
+> 1/30/2025	Consumption billing receivable	$776.38
+
+> 1/30/2025	LPC from invoicing	$17.88
+
+> 12/30/2024	Bill	$4,647.11
+
+> 12/30/2024	Consumption billing receivable	$630.08
+
+> 11/26/2024	Bill	$4,017.03
+
+> 11/26/2024	Consumption billing receivable	$258.70
+
+> 10/30/2024	Bill	$3,758.33
+
+> 9/27/2024	Bill	$3,004.60
+
+> 9/27/2024	Consumption billing receivable	$330.00
+
+> 8/27/2024	Bill	$2,674.60
+
+> 8/27/2024	Consumption billing receivable	$330.00
+
+> 7/26/2024	Bill	$2,344.60
+
+> 7/26/2024	Consumption billing receivable	$330.00
+
+> 6/27/2024	Bill	$2,014.60
+
+> 6/27/2024	Consumption billing receivable	$330.00
+
+> 5/30/2024	Bill	$1,684.60
+
+> 5/30/2024	Consumption billing receivable	$330.00
+
+> 4/29/2024	Bill	$1,354.60
+
+> 3/27/2024	Bill	$1,024.60
+
+> 3/4/2024	Bill	$990.00
+
+> 1/30/2024	Bill	$660.00
+
+> 12/28/2023	Bill	$330.00
+
 > 11/29/2023	Bill	$330.00
 
 ### Assistant
@@ -726,43 +784,80 @@ canonical_ref: ""
 > If AES had honored your ADA payment plan and simply billed for energy, you would have been nearly caught up months ago.
 
 ### User
-> what you think about this plan. Mo	Period	Pay Date	Amount	Est Usage	Amt to Arrears	Est Bal		Usage Bal:	$7,535.21																
-> 1	10/31/2025	11/04/2025	$335	$330	$5	$7,530.21																			
-> 2	11/30/2025	12/05/2025	$364	$330	$34	$7,496.21		Balance	8857.21																
-> 3	12/31/2025	01/05/2026	$374	$330	$44	$7,452.21		Deposits	$942.00																
-> 4	1/31/2026	02/05/2026	$384	$330	$54	$7,398.21		Fees	$380.00																
-> 5	2/28/2026	03/05/2026	$394	$330	$64	$7,334.21		Usage:	$6,213.21																
-> 6	3/31/2026	04/05/2026	$404	$330	$74	$7,260.21																			
-> 7	4/30/2026	05/05/2026	$414	$330	$84	$7,176.21																			
-> 8	5/31/2026	06/05/2026	$424	$330	$94	$7,082.21																			
-> 9	6/30/2026	07/05/2026	$434	$330	$104	$6,978.21																			
-> 10	7/31/2026	08/05/2026	$444	$330	$114	$6,864.21																			
-> 11	8/31/2026	09/05/2026	$454	$330	$124	$6,740.21																			
-> 12	9/30/2026	10/05/2026	$464	$330	$134	$6,606.21																			
-> 13	10/31/2026	11/05/2026	$474	$330	$144	$6,462.21																			
-> 14	11/30/2026	12/05/2026	$484	$330	$154	$6,308.21																			
-> 15	12/31/2026	01/05/2027	$494	$330	$164	$6,144.21																			
-> 16	1/31/2027	02/05/2027	$504	$330	$174	$5,970.21																			
-> 17	2/28/2027	03/05/2027	$514	$330	$184	$5,786.21																			
-> 18	3/31/2027	04/05/2027	$524	$330	$194	$5,592.21																			
-> 19	4/30/2027	05/05/2027	$534	$330	$204	$5,388.21																			
-> 20	5/31/2027	06/05/2027	$544	$330	$214	$5,174.21																			
-> 21	6/30/2027	07/05/2027	$554	$330	$224	$4,950.21																			
-> 22	7/31/2027	08/05/2027	$564	$330	$234	$4,716.21																			
-> 23	8/31/2027	09/05/2027	$574	$330	$244	$4,472.21																			
-> 24	9/30/2027	10/05/2027	$584	$330	$254	$4,218.21																			
-> 25	10/31/2027	11/05/2027	$594	$330	$264	$3,954.21																			
-> 26	11/30/2027	12/05/2027	$604	$330	$274	$3,680.21																			
-> 27	12/31/2027	01/05/2028	$614	$330	$284	$3,396.21																			
-> 28	1/31/2028	02/05/2028	$624	$330	$294	$3,102.21																			
-> 29	2/29/2028	03/05/2028	$634	$330	$304	$2,798.21																			
-> 30	3/31/2028	04/05/2028	$644	$330	$314	$2,484.21																			
-> 31	4/30/2028	05/05/2028	$654	$330	$324	$2,160.21																			
-> 32	5/31/2028	06/05/2028	$664	$330	$334	$1,826.21																			
-> 33	6/30/2028	07/05/2028	$674	$330	$344	$1,482.21																			
-> 34	7/31/2028	08/05/2028	$684	$330	$354	$1,128.21																			
-> 35	8/31/2028	09/05/2028	$694	$330	$364	$764.21																			
-> 36	9/30/2028	10/05/2028	$704	$330	$374	$390.21																			
+> what you think about this plan. Mo	Period	Pay Date	Amount	Est Usage	Amt to Arrears	Est Bal		Usage Bal:	$7,535.21																
+
+> 1	10/31/2025	11/04/2025	$335	$330	$5	$7,530.21																			
+
+> 2	11/30/2025	12/05/2025	$364	$330	$34	$7,496.21		Balance	8857.21																
+
+> 3	12/31/2025	01/05/2026	$374	$330	$44	$7,452.21		Deposits	$942.00																
+
+> 4	1/31/2026	02/05/2026	$384	$330	$54	$7,398.21		Fees	$380.00																
+
+> 5	2/28/2026	03/05/2026	$394	$330	$64	$7,334.21		Usage:	$6,213.21																
+
+> 6	3/31/2026	04/05/2026	$404	$330	$74	$7,260.21																			
+
+> 7	4/30/2026	05/05/2026	$414	$330	$84	$7,176.21																			
+
+> 8	5/31/2026	06/05/2026	$424	$330	$94	$7,082.21																			
+
+> 9	6/30/2026	07/05/2026	$434	$330	$104	$6,978.21																			
+
+> 10	7/31/2026	08/05/2026	$444	$330	$114	$6,864.21																			
+
+> 11	8/31/2026	09/05/2026	$454	$330	$124	$6,740.21																			
+
+> 12	9/30/2026	10/05/2026	$464	$330	$134	$6,606.21																			
+
+> 13	10/31/2026	11/05/2026	$474	$330	$144	$6,462.21																			
+
+> 14	11/30/2026	12/05/2026	$484	$330	$154	$6,308.21																			
+
+> 15	12/31/2026	01/05/2027	$494	$330	$164	$6,144.21																			
+
+> 16	1/31/2027	02/05/2027	$504	$330	$174	$5,970.21																			
+
+> 17	2/28/2027	03/05/2027	$514	$330	$184	$5,786.21																			
+
+> 18	3/31/2027	04/05/2027	$524	$330	$194	$5,592.21																			
+
+> 19	4/30/2027	05/05/2027	$534	$330	$204	$5,388.21																			
+
+> 20	5/31/2027	06/05/2027	$544	$330	$214	$5,174.21																			
+
+> 21	6/30/2027	07/05/2027	$554	$330	$224	$4,950.21																			
+
+> 22	7/31/2027	08/05/2027	$564	$330	$234	$4,716.21																			
+
+> 23	8/31/2027	09/05/2027	$574	$330	$244	$4,472.21																			
+
+> 24	9/30/2027	10/05/2027	$584	$330	$254	$4,218.21																			
+
+> 25	10/31/2027	11/05/2027	$594	$330	$264	$3,954.21																			
+
+> 26	11/30/2027	12/05/2027	$604	$330	$274	$3,680.21																			
+
+> 27	12/31/2027	01/05/2028	$614	$330	$284	$3,396.21																			
+
+> 28	1/31/2028	02/05/2028	$624	$330	$294	$3,102.21																			
+
+> 29	2/29/2028	03/05/2028	$634	$330	$304	$2,798.21																			
+
+> 30	3/31/2028	04/05/2028	$644	$330	$314	$2,484.21																			
+
+> 31	4/30/2028	05/05/2028	$654	$330	$324	$2,160.21																			
+
+> 32	5/31/2028	06/05/2028	$664	$330	$334	$1,826.21																			
+
+> 33	6/30/2028	07/05/2028	$674	$330	$344	$1,482.21																			
+
+> 34	7/31/2028	08/05/2028	$684	$330	$354	$1,128.21																			
+
+> 35	8/31/2028	09/05/2028	$694	$330	$364	$764.21																			
+
+> 36	9/30/2028	10/05/2028	$704	$330	$374	$390.21																			
+
 > 37	10/30/2028	11/05/2028	$714	$330	$384	$6.21
 
 ### Assistant
@@ -1109,43 +1204,80 @@ canonical_ref: ""
 > This shows AES and regulators that you’ve demonstrably reduced consumption and that your requested payment level is rooted in actual, verifiable efficiency improvements — not guesswork.
 
 ### User
-> i need help coming up with payment amounts that follow my seasonilty of my tasx work. Mo	Period	Pay Date	Amount	Est Usage	Amt to Arrears	Est Bal	Busy Seas
-> 1	10/31/2025	11/05/2025	$330	$280	$50	$7,485.21	FALSE
-> 2	11/30/2025	12/05/2025	$400	$280	$120	$7,365.21	FALSE
-> 3	12/31/2025	01/05/2026	$500	$280	$220	$7,145.21	FALSE
-> 4	1/31/2026	02/05/2026	$600	$280	$320	$6,825.21	FALSE
-> 5	2/28/2026	03/05/2026	$700	$280	$420	$6,405.21	TRUE
-> 6	3/31/2026	04/05/2026	$600	$280	$320	$6,085.21	TRUE
-> 7	4/30/2026	05/05/2026	$500	$280	$220	$5,865.21	TRUE
-> 8	5/31/2026	06/05/2026	$400	$280	$120	$5,745.21	TRUE
-> 9	6/30/2026	07/05/2026	$350	$280	$70	$5,675.21	TRUE
-> 10	7/31/2026	08/05/2026	$330	$280	$50	$5,625.21	TRUE
-> 11	8/31/2026	09/05/2026	$330	$280	$50	$5,575.21	FALSE
-> 12	9/30/2026	10/05/2026	$330	$280	$50	$5,525.21	FALSE
-> 13	10/31/2026	11/05/2026	$400	$280	$120	$5,405.21	FALSE
-> 14	11/30/2026	12/05/2026	$500	$280	$220	$5,185.21	FALSE
-> 15	12/31/2026	01/05/2027	$600	$280	$320	$4,865.21	FALSE
-> 16	1/31/2027	02/05/2027	$700	$280	$420	$4,445.21	FALSE
-> 17	2/28/2027	03/05/2027	$600	$280	$320	$4,125.21	TRUE
-> 18	3/31/2027	04/05/2027	$500	$280	$220	$3,905.21	TRUE
-> 19	4/30/2027	05/05/2027	$400	$280	$120	$3,785.21	TRUE
-> 20	5/31/2027	06/05/2027	$350	$280	$70	$3,715.21	TRUE
-> 21	6/30/2027	07/05/2027	$330	$280	$50	$3,665.21	TRUE
-> 22	7/31/2027	08/05/2027	$330	$280	$50	$3,615.21	TRUE
-> 23	8/31/2027	09/05/2027	$330	$280	$50	$3,565.21	FALSE
-> 24	9/30/2027	10/05/2027	$400	$280	$120	$3,445.21	FALSE
-> 25	10/31/2027	11/05/2027	$500	$280	$220	$3,225.21	FALSE
-> 26	11/30/2027	12/05/2027	$600	$280	$320	$2,905.21	FALSE
-> 27	12/31/2027	01/05/2028	$700	$280	$420	$2,485.21	FALSE
-> 28	1/31/2028	02/05/2028	$600	$280	$320	$2,165.21	FALSE
-> 29	2/29/2028	03/05/2028	$500	$280	$220	$1,945.21	TRUE
-> 30	3/31/2028	04/05/2028	$400	$280	$120	$1,825.21	TRUE
-> 31	4/30/2028	05/05/2028	$350	$280	$70	$1,755.21	TRUE
-> 32	5/31/2028	06/05/2028	$330	$280	$50	$1,705.21	TRUE
-> 33	6/30/2028	07/05/2028	$330	$280	$50	$1,655.21	TRUE
-> 34	7/31/2028	08/05/2028	$320	$280	$40	$1,615.21	TRUE
-> 35	8/31/2028	09/05/2028	$320	$280	$40	$1,575.21	FALSE
-> 36	9/30/2028	10/05/2028	$320	$280	$40	$1,535.21	FALSE
+> i need help coming up with payment amounts that follow my seasonilty of my tasx work. Mo	Period	Pay Date	Amount	Est Usage	Amt to Arrears	Est Bal	Busy Seas
+
+> 1	10/31/2025	11/05/2025	$330	$280	$50	$7,485.21	FALSE
+
+> 2	11/30/2025	12/05/2025	$400	$280	$120	$7,365.21	FALSE
+
+> 3	12/31/2025	01/05/2026	$500	$280	$220	$7,145.21	FALSE
+
+> 4	1/31/2026	02/05/2026	$600	$280	$320	$6,825.21	FALSE
+
+> 5	2/28/2026	03/05/2026	$700	$280	$420	$6,405.21	TRUE
+
+> 6	3/31/2026	04/05/2026	$600	$280	$320	$6,085.21	TRUE
+
+> 7	4/30/2026	05/05/2026	$500	$280	$220	$5,865.21	TRUE
+
+> 8	5/31/2026	06/05/2026	$400	$280	$120	$5,745.21	TRUE
+
+> 9	6/30/2026	07/05/2026	$350	$280	$70	$5,675.21	TRUE
+
+> 10	7/31/2026	08/05/2026	$330	$280	$50	$5,625.21	TRUE
+
+> 11	8/31/2026	09/05/2026	$330	$280	$50	$5,575.21	FALSE
+
+> 12	9/30/2026	10/05/2026	$330	$280	$50	$5,525.21	FALSE
+
+> 13	10/31/2026	11/05/2026	$400	$280	$120	$5,405.21	FALSE
+
+> 14	11/30/2026	12/05/2026	$500	$280	$220	$5,185.21	FALSE
+
+> 15	12/31/2026	01/05/2027	$600	$280	$320	$4,865.21	FALSE
+
+> 16	1/31/2027	02/05/2027	$700	$280	$420	$4,445.21	FALSE
+
+> 17	2/28/2027	03/05/2027	$600	$280	$320	$4,125.21	TRUE
+
+> 18	3/31/2027	04/05/2027	$500	$280	$220	$3,905.21	TRUE
+
+> 19	4/30/2027	05/05/2027	$400	$280	$120	$3,785.21	TRUE
+
+> 20	5/31/2027	06/05/2027	$350	$280	$70	$3,715.21	TRUE
+
+> 21	6/30/2027	07/05/2027	$330	$280	$50	$3,665.21	TRUE
+
+> 22	7/31/2027	08/05/2027	$330	$280	$50	$3,615.21	TRUE
+
+> 23	8/31/2027	09/05/2027	$330	$280	$50	$3,565.21	FALSE
+
+> 24	9/30/2027	10/05/2027	$400	$280	$120	$3,445.21	FALSE
+
+> 25	10/31/2027	11/05/2027	$500	$280	$220	$3,225.21	FALSE
+
+> 26	11/30/2027	12/05/2027	$600	$280	$320	$2,905.21	FALSE
+
+> 27	12/31/2027	01/05/2028	$700	$280	$420	$2,485.21	FALSE
+
+> 28	1/31/2028	02/05/2028	$600	$280	$320	$2,165.21	FALSE
+
+> 29	2/29/2028	03/05/2028	$500	$280	$220	$1,945.21	TRUE
+
+> 30	3/31/2028	04/05/2028	$400	$280	$120	$1,825.21	TRUE
+
+> 31	4/30/2028	05/05/2028	$350	$280	$70	$1,755.21	TRUE
+
+> 32	5/31/2028	06/05/2028	$330	$280	$50	$1,705.21	TRUE
+
+> 33	6/30/2028	07/05/2028	$330	$280	$50	$1,655.21	TRUE
+
+> 34	7/31/2028	08/05/2028	$320	$280	$40	$1,615.21	TRUE
+
+> 35	8/31/2028	09/05/2028	$320	$280	$40	$1,575.21	FALSE
+
+> 36	9/30/2028	10/05/2028	$320	$280	$40	$1,535.21	FALSE
+
 > 37	10/30/2028	11/05/2028	$550	$280	$270	$1,265.21	FALSE
 
 ### Assistant
@@ -1196,43 +1328,80 @@ canonical_ref: ""
 > Would you like me to turn this into a **ready-to-send PDF proposal** (with table + short cover note to the ADA Manager)? That version tends to get taken more seriously.
 
 ### User
-> heres my final schedule. Mo	Period	Pay Date	Amt	Est Usage	Amt to Arrears	Est Bal	Busy Seas
-> 1	10/31/2025	11/05/2025	$300	$280	$20	$7,515	FALSE
-> 2	11/30/2025	12/05/2025	$300	$280	$20	$7,495	FALSE
-> 3	12/31/2025	01/05/2026	$300	$280	$20	$7,475	FALSE
-> 4	1/31/2026	02/05/2026	$300	$280	$20	$7,455	FALSE
-> 5	2/28/2026	03/05/2026	$400	$280	$120	$7,335	TRUE
-> 6	3/31/2026	04/05/2026	$400	$280	$120	$7,215	TRUE
-> 7	4/30/2026	05/05/2026	$500	$280	$220	$6,995	TRUE
-> 8	5/31/2026	06/05/2026	$500	$280	$220	$6,775	TRUE
-> 9	6/30/2026	07/05/2026	$400	$280	$120	$6,655	TRUE
-> 10	7/31/2026	08/05/2026	$400	$280	$120	$6,535	TRUE
-> 11	8/31/2026	09/05/2026	$400	$280	$120	$6,415	FALSE
-> 12	9/30/2026	10/05/2026	$400	$280	$120	$6,295	FALSE
-> 13	10/31/2026	11/05/2026	$400	$280	$120	$6,175	FALSE
-> 14	11/30/2026	12/05/2026	$400	$280	$120	$6,055	FALSE
-> 15	12/31/2026	01/05/2027	$400	$280	$120	$5,935	FALSE
-> 16	1/31/2027	02/05/2027	$400	$280	$120	$5,815	FALSE
-> 17	2/28/2027	03/05/2027	$500	$280	$220	$5,595	TRUE
-> 18	3/31/2027	04/05/2027	$500	$280	$220	$5,375	TRUE
-> 19	4/30/2027	05/05/2027	$600	$280	$320	$5,055	TRUE
-> 20	5/31/2027	06/05/2027	$600	$280	$320	$4,735	TRUE
-> 21	6/30/2027	07/05/2027	$600	$280	$320	$4,415	TRUE
-> 22	7/31/2027	08/05/2027	$600	$280	$320	$4,095	TRUE
-> 23	8/31/2027	09/05/2027	$500	$280	$220	$3,875	FALSE
-> 24	9/30/2027	10/05/2027	$500	$280	$220	$3,655	FALSE
-> 25	10/31/2027	11/05/2027	$500	$280	$220	$3,435	FALSE
-> 26	11/30/2027	12/05/2027	$500	$280	$220	$3,215	FALSE
-> 27	12/31/2027	01/05/2028	$500	$280	$220	$2,995	FALSE
-> 28	1/31/2028	02/05/2028	$500	$280	$220	$2,775	FALSE
-> 29	2/29/2028	03/05/2028	$600	$280	$320	$2,455	TRUE
-> 30	3/31/2028	04/05/2028	$600	$280	$320	$2,135	TRUE
-> 31	4/30/2028	05/05/2028	$600	$280	$320	$1,815	TRUE
-> 32	5/31/2028	06/05/2028	$600	$280	$320	$1,495	TRUE
-> 33	6/30/2028	07/05/2028	$600	$280	$320	$1,175	TRUE
-> 34	7/31/2028	08/05/2028	$600	$280	$320	$855	TRUE
-> 35	8/31/2028	09/05/2028	$600	$280	$320	$535	FALSE
-> 36	9/30/2028	10/05/2028	$595	$280	$315	$220	FALSE
+> heres my final schedule. Mo	Period	Pay Date	Amt	Est Usage	Amt to Arrears	Est Bal	Busy Seas
+
+> 1	10/31/2025	11/05/2025	$300	$280	$20	$7,515	FALSE
+
+> 2	11/30/2025	12/05/2025	$300	$280	$20	$7,495	FALSE
+
+> 3	12/31/2025	01/05/2026	$300	$280	$20	$7,475	FALSE
+
+> 4	1/31/2026	02/05/2026	$300	$280	$20	$7,455	FALSE
+
+> 5	2/28/2026	03/05/2026	$400	$280	$120	$7,335	TRUE
+
+> 6	3/31/2026	04/05/2026	$400	$280	$120	$7,215	TRUE
+
+> 7	4/30/2026	05/05/2026	$500	$280	$220	$6,995	TRUE
+
+> 8	5/31/2026	06/05/2026	$500	$280	$220	$6,775	TRUE
+
+> 9	6/30/2026	07/05/2026	$400	$280	$120	$6,655	TRUE
+
+> 10	7/31/2026	08/05/2026	$400	$280	$120	$6,535	TRUE
+
+> 11	8/31/2026	09/05/2026	$400	$280	$120	$6,415	FALSE
+
+> 12	9/30/2026	10/05/2026	$400	$280	$120	$6,295	FALSE
+
+> 13	10/31/2026	11/05/2026	$400	$280	$120	$6,175	FALSE
+
+> 14	11/30/2026	12/05/2026	$400	$280	$120	$6,055	FALSE
+
+> 15	12/31/2026	01/05/2027	$400	$280	$120	$5,935	FALSE
+
+> 16	1/31/2027	02/05/2027	$400	$280	$120	$5,815	FALSE
+
+> 17	2/28/2027	03/05/2027	$500	$280	$220	$5,595	TRUE
+
+> 18	3/31/2027	04/05/2027	$500	$280	$220	$5,375	TRUE
+
+> 19	4/30/2027	05/05/2027	$600	$280	$320	$5,055	TRUE
+
+> 20	5/31/2027	06/05/2027	$600	$280	$320	$4,735	TRUE
+
+> 21	6/30/2027	07/05/2027	$600	$280	$320	$4,415	TRUE
+
+> 22	7/31/2027	08/05/2027	$600	$280	$320	$4,095	TRUE
+
+> 23	8/31/2027	09/05/2027	$500	$280	$220	$3,875	FALSE
+
+> 24	9/30/2027	10/05/2027	$500	$280	$220	$3,655	FALSE
+
+> 25	10/31/2027	11/05/2027	$500	$280	$220	$3,435	FALSE
+
+> 26	11/30/2027	12/05/2027	$500	$280	$220	$3,215	FALSE
+
+> 27	12/31/2027	01/05/2028	$500	$280	$220	$2,995	FALSE
+
+> 28	1/31/2028	02/05/2028	$500	$280	$220	$2,775	FALSE
+
+> 29	2/29/2028	03/05/2028	$600	$280	$320	$2,455	TRUE
+
+> 30	3/31/2028	04/05/2028	$600	$280	$320	$2,135	TRUE
+
+> 31	4/30/2028	05/05/2028	$600	$280	$320	$1,815	TRUE
+
+> 32	5/31/2028	06/05/2028	$600	$280	$320	$1,495	TRUE
+
+> 33	6/30/2028	07/05/2028	$600	$280	$320	$1,175	TRUE
+
+> 34	7/31/2028	08/05/2028	$600	$280	$320	$855	TRUE
+
+> 35	8/31/2028	09/05/2028	$600	$280	$320	$535	FALSE
+
+> 36	9/30/2028	10/05/2028	$595	$280	$315	$220	FALSE
+
 > 			$17,395	$10,080	$7,315		, give me my updated game plan, step by step and the files to send go ahead and give it all to me in obsidian markdown packet directory and all ready to drop in obsidian and i will export ect, cretae placeholder so all is linked correctlya nd master index file for this project.
 
 ### Assistant
@@ -1703,23 +1872,40 @@ canonical_ref: ""
 > Would you like me to create those three next and bundle them?
 
 ### User
-> Success icon
-> Your payment was successful
-> Your payment of $251.95 has been processed.
-> A payment receipt has been emailed to crice4485@gmail.com and texted to 3172054383.
-> Successful Payments
-> Payee
-> Account Number
-> Status
-> Confirmation #
-> Amount
-> AES Indiana
-> 200000289481
-> ✓ PAID
-> 030614
-> $251.95
-> Payment Details
-> Total Payment
+> Success icon
+
+> Your payment was successful
+
+> Your payment of $251.95 has been processed.
+
+> A payment receipt has been emailed to crice4485@gmail.com and texted to 3172054383.
+
+> Successful Payments
+
+> Payee
+
+> Account Number
+
+> Status
+
+> Confirmation #
+
+> Amount
+
+> AES Indiana
+
+> 200000289481
+
+> ✓ PAID
+
+> 030614
+
+> $251.95
+
+> Payment Details
+
+> Total Payment
+
 > $251.95
 
 ### Assistant
@@ -2660,35 +2846,64 @@ canonical_ref: ""
 > Would you prefer the **interactive call flow** version or the **voice script file** first?
 
 ### User
-> i sent them a contact form and have not received any response. look at this i found on the web. The timeline for the AES Indiana billing issues includes a system "upgrade" in November 2023 that caused problems, with issues persisting for months, and the company began resuming normal billing-related actions like disconnections and late fees in early 2025 after a pause. While many problems were resolved, the timeline for addressing all past issues was extensive. 
-> Timeline of AES Indiana billing issues
-> November 2023: The billing system "upgrade" is implemented, leading to issues for up to 60,000 customers.
-> Late 2023 - Early 2025: The problems, including incorrect bills and unauthorized charges, continued to be a problem for customers.
-> June 2024: The Citizens Action Coalition notes that the issues were ongoing.
-> September 13, 2024: AES Indiana paused shutoffs and late fees due to the billing problems.
-> March 18, 2025: AES Indiana restarted electricity shut-offs after the pause.
-> June 3, 2025: AES Indiana filed for a new rate review with the Indiana Utility Regulatory Commission (IURC), citing ongoing issues.
-> October 16, 2025: The Citizens Action Coalition stated that prolonged billing issues continued.
-> Early 2026 and 2027: The rate review is scheduled to be implemented in two phases, with Phase 1 in early 2026 and Phase 2 in January 2027. 
-> What to do if you still have issues
-> Contact AES Indiana directly to report billing problems.
-> You can contact the company by phone or online at any time, 24/7.
-> You may also be able to enroll in AES Indiana's Budget Billing program to help manage monthly energy costs.  When reporting a billing issue to AES Indiana, the initial customer service response time for an email is up to three business days. However, resolving complex billing errors, especially following a major system upgrade in late 2023, has been a prolonged process, often requiring individual attention. 
-> Initial Steps and Timelines
-> Contact AES Indiana Immediately: The company has a dedicated line for billing issues related to their system upgrade: 317-261-2085. For general customer service, call 317-261-8222.
-> Immediate Responses: For urgent issues like collections or outages, calling is recommended as emails can take up to three business days for a response.
-> Payment/Credit Processing: Payments made online or via KUBRA EZ-PAY® post immediately. However, refunds for overcharges have been reported to take a week and a half, and sometimes up to 10 days for the credit to appear on a bank statement.
-> Payment Extensions: Requests for payment extensions should be made at least two business days before your bill's due date or scheduled disconnect date. 
-> Resolution Timeline for Complex Issues
-> The timeline for a full resolution varies greatly depending on the complexity of the issue:
-> Individual Attention: Complex billing errors lack a "one-size-fits-all" solution and require individual attention and tailored support from the AES team.
-> Historical Context: Due to widespread billing problems starting in late 2023, some issues persisted for nearly a year or more. Customers have reported spending many hours on hold and receiving conflicting information, with resolution only coming after escalating the issue to external bodies.
-> Regulatory Backstop: Under Indiana regulations, billing errors (including incorrect rates) can be adjusted for a period of one year from the known date of the error, or the known date of error, whichever is shorter. 
-> Escalation
-> If you are unable to resolve the billing issue directly with AES Indiana in a timely manner, it is recommended to file a complaint with the Indiana Utility Regulatory Commission (IURC): 
-> IURC Phone: Call the IURC Consumer Affairs Division at 1-800-851-4268 or 317-232-2712 to receive an invitation code to file a formal complaint.
-> IURC Online Portal: Once you have an invitation code, you can file a complaint via the IURC Online Services Portal. 
-> Filing a complaint with the IURC or the Better Business Bureau has been cited by some customers as an effective way to prompt adequate action from AES Indiana. 
+> i sent them a contact form and have not received any response. look at this i found on the web. The timeline for the AES Indiana billing issues includes a system "upgrade" in November 2023 that caused problems, with issues persisting for months, and the company began resuming normal billing-related actions like disconnections and late fees in early 2025 after a pause. While many problems were resolved, the timeline for addressing all past issues was extensive. 
+
+> Timeline of AES Indiana billing issues
+
+> November 2023: The billing system "upgrade" is implemented, leading to issues for up to 60,000 customers.
+
+> Late 2023 - Early 2025: The problems, including incorrect bills and unauthorized charges, continued to be a problem for customers.
+
+> June 2024: The Citizens Action Coalition notes that the issues were ongoing.
+
+> September 13, 2024: AES Indiana paused shutoffs and late fees due to the billing problems.
+
+> March 18, 2025: AES Indiana restarted electricity shut-offs after the pause.
+
+> June 3, 2025: AES Indiana filed for a new rate review with the Indiana Utility Regulatory Commission (IURC), citing ongoing issues.
+
+> October 16, 2025: The Citizens Action Coalition stated that prolonged billing issues continued.
+
+> Early 2026 and 2027: The rate review is scheduled to be implemented in two phases, with Phase 1 in early 2026 and Phase 2 in January 2027. 
+
+> What to do if you still have issues
+
+> Contact AES Indiana directly to report billing problems.
+
+> You can contact the company by phone or online at any time, 24/7.
+
+> You may also be able to enroll in AES Indiana's Budget Billing program to help manage monthly energy costs.  When reporting a billing issue to AES Indiana, the initial customer service response time for an email is up to three business days. However, resolving complex billing errors, especially following a major system upgrade in late 2023, has been a prolonged process, often requiring individual attention. 
+
+> Initial Steps and Timelines
+
+> Contact AES Indiana Immediately: The company has a dedicated line for billing issues related to their system upgrade: 317-261-2085. For general customer service, call 317-261-8222.
+
+> Immediate Responses: For urgent issues like collections or outages, calling is recommended as emails can take up to three business days for a response.
+
+> Payment/Credit Processing: Payments made online or via KUBRA EZ-PAY® post immediately. However, refunds for overcharges have been reported to take a week and a half, and sometimes up to 10 days for the credit to appear on a bank statement.
+
+> Payment Extensions: Requests for payment extensions should be made at least two business days before your bill's due date or scheduled disconnect date. 
+
+> Resolution Timeline for Complex Issues
+
+> The timeline for a full resolution varies greatly depending on the complexity of the issue:
+
+> Individual Attention: Complex billing errors lack a "one-size-fits-all" solution and require individual attention and tailored support from the AES team.
+
+> Historical Context: Due to widespread billing problems starting in late 2023, some issues persisted for nearly a year or more. Customers have reported spending many hours on hold and receiving conflicting information, with resolution only coming after escalating the issue to external bodies.
+
+> Regulatory Backstop: Under Indiana regulations, billing errors (including incorrect rates) can be adjusted for a period of one year from the known date of the error, or the known date of error, whichever is shorter. 
+
+> Escalation
+
+> If you are unable to resolve the billing issue directly with AES Indiana in a timely manner, it is recommended to file a complaint with the Indiana Utility Regulatory Commission (IURC): 
+
+> IURC Phone: Call the IURC Consumer Affairs Division at 1-800-851-4268 or 317-232-2712 to receive an invitation code to file a formal complaint.
+
+> IURC Online Portal: Once you have an invitation code, you can file a complaint via the IURC Online Services Portal. 
+
+> Filing a complaint with the IURC or the Better Business Bureau has been cited by some customers as an effective way to prompt adequate action from AES Indiana. 
+
 > AI can make mistakes, so double-check responses
 
 ### Assistant
@@ -2953,32 +3168,57 @@ canonical_ref: ""
 > - and add a **1-page PDF summary** version for quick reading in the printed set.
 
 ### User
-> AES 2025 Rate Case
-> AES Indiana's rate case is pending before the IURC in Cause No. 46258. The utility initially requested a $192.9 Million rate increase.
-> 
-> The OUCC's analysis shows that a $21.2 Million reduction to current base rates is warranted, based on the case’s evidence and applicable law. OUCC testimony is posted below and summarized in our Sept. 10, 2025 news release.
-> 
-> AES Indiana, industrial customers, Walmart, and the City of Indianapolis filed a settlement agreement with the IURC on Oct. 15, 2025.
-> 
-> The OUCC and the Citizens Action Coalition of Indiana are not parties to the settlement.
-> Additional OUCC testimony in response to the settlement is due on Dec. 12, 2025.
-> A settlement hearing is scheduled to start on Jan. 28, 2026.
+> AES 2025 Rate Case
+
+> AES Indiana's rate case is pending before the IURC in Cause No. 46258. The utility initially requested a $192.9 Million rate increase.
+
+> 
+
+> The OUCC's analysis shows that a $21.2 Million reduction to current base rates is warranted, based on the case’s evidence and applicable law. OUCC testimony is posted below and summarized in our Sept. 10, 2025 news release.
+
+> 
+
+> AES Indiana, industrial customers, Walmart, and the City of Indianapolis filed a settlement agreement with the IURC on Oct. 15, 2025.
+
+> 
+
+> The OUCC and the Citizens Action Coalition of Indiana are not parties to the settlement.
+
+> Additional OUCC testimony in response to the settlement is due on Dec. 12, 2025.
+
+> A settlement hearing is scheduled to start on Jan. 28, 2026.
+
 > Any agreement before the IURC can be approved, denied, or modified. The settling parties have the burden of proof to show that an agreement is in the public interest.  ---- can you put the data of the usage in a sheet.  
-> The deadline for a final IURC order is June 24, 2026.
-> 
-> All publicly filed documents in the case are available on the IURC website.
-> 
-> AES Indiana's current base rates received Commission approval in April 2024.
-> 
-> Public Comments
-> The OUCC issued a August 11, 2025 media release to invite public comments. The IURC held 4 public field hearings in August. An OUCC motion for additional field hearings on the pending settlement has been denied.
-> 
-> Written comments the OUCC has received are linked above. Additional written comments on the pending settlement agreement are invited.
-> 
-> Utility Testimony (Initial Request)
-> OUCC Testimony (Recommendations)
-> This page will be updated based on case developments.
-> 
+> The deadline for a final IURC order is June 24, 2026.
+
+> 
+
+> All publicly filed documents in the case are available on the IURC website.
+
+> 
+
+> AES Indiana's current base rates received Commission approval in April 2024.
+
+> 
+
+> Public Comments
+
+> The OUCC issued a August 11, 2025 media release to invite public comments. The IURC held 4 public field hearings in August. An OUCC motion for additional field hearings on the pending settlement has been denied.
+
+> 
+
+> Written comments the OUCC has received are linked above. Additional written comments on the pending settlement agreement are invited.
+
+> 
+
+> Utility Testimony (Initial Request)
+
+> OUCC Testimony (Recommendations)
+
+> This page will be updated based on case developments.
+
+> 
+
 > 10-31-2025
 
 ### Assistant

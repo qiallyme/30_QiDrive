@@ -5,9 +5,27 @@ created: 2025-08-06
 type: extract
 orbit: 
 system: 
-tags:
+tags: []
   - extract
   - qinote
+layout: page
+slug: empowerqnow713-the-living-code
+summary: ""
+status: active
+created_at: "2026-07-05T20:07:38-04:00"
+updated_at: "2026-07-16T06:49:35-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 3da14d10b46d4c4cb5ce956b48656e45
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # 🔱 EmpowerQNow713 The Living Code

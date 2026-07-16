@@ -3,9 +3,9 @@ layout: page
 title: "Blog Posting Strategy"
 slug: "blog_posting_strategy"
 created_at: "2026-03-24 18:09:59"
-updated_at: "2026-03-24 18:09:59"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1975,22 +1975,38 @@ canonical_ref: ""
 > - make sure it won’t break your pages later
 
 ### User
-> 2026-03-24T23:33:08.115944Z	Cloning repository...
-> 2026-03-24T23:33:09.126361Z	From https://github.com/qiallyme/qsaysit-web
-> 2026-03-24T23:33:09.126814Z	 * branch            6e53482c972e4cadd7356dbb5cf504a353dea2fa -> FETCH_HEAD
-> 2026-03-24T23:33:09.126911Z	
-> 2026-03-24T23:33:09.146593Z	HEAD is now at 6e53482 init
-> 2026-03-24T23:33:09.146898Z	
-> 2026-03-24T23:33:09.194701Z	
-> 2026-03-24T23:33:09.195199Z	Using v2 root directory strategy
-> 2026-03-24T23:33:09.209643Z	Success: Finished cloning repository files
-> 2026-03-24T23:33:12.065301Z	Checking for configuration in a Wrangler configuration file (BETA)
-> 2026-03-24T23:33:12.065866Z	
-> 2026-03-24T23:33:13.187284Z	No Wrangler configuration file found. Continuing.
-> 2026-03-24T23:33:13.187592Z	No build command specified. Skipping build step.
-> 2026-03-24T23:33:13.188385Z	Note: No functions dir at /functions found. Skipping.
-> 2026-03-24T23:33:13.188513Z	Validating asset output directory
-> 2026-03-24T23:33:13.188591Z	Error: Output directory "site" not found.
+> 2026-03-24T23:33:08.115944Z	Cloning repository...
+
+> 2026-03-24T23:33:09.126361Z	From https://github.com/qiallyme/qsaysit-web
+
+> 2026-03-24T23:33:09.126814Z	 * branch            6e53482c972e4cadd7356dbb5cf504a353dea2fa -> FETCH_HEAD
+
+> 2026-03-24T23:33:09.126911Z	
+
+> 2026-03-24T23:33:09.146593Z	HEAD is now at 6e53482 init
+
+> 2026-03-24T23:33:09.146898Z	
+
+> 2026-03-24T23:33:09.194701Z	
+
+> 2026-03-24T23:33:09.195199Z	Using v2 root directory strategy
+
+> 2026-03-24T23:33:09.209643Z	Success: Finished cloning repository files
+
+> 2026-03-24T23:33:12.065301Z	Checking for configuration in a Wrangler configuration file (BETA)
+
+> 2026-03-24T23:33:12.065866Z	
+
+> 2026-03-24T23:33:13.187284Z	No Wrangler configuration file found. Continuing.
+
+> 2026-03-24T23:33:13.187592Z	No build command specified. Skipping build step.
+
+> 2026-03-24T23:33:13.188385Z	Note: No functions dir at /functions found. Skipping.
+
+> 2026-03-24T23:33:13.188513Z	Validating asset output directory
+
+> 2026-03-24T23:33:13.188591Z	Error: Output directory "site" not found.
+
 > 2026-03-24T23:33:14.50432Z	Failed: build output directory not found
 
 ### Assistant
@@ -2199,55 +2215,104 @@ canonical_ref: ""
 > Paste your repo tree and I’ll tell you exactly what needs moving.
 
 ### User
-> ```markdown
-> . 📂 qsaysit-blog
-> ├── 📄 README.md
-> └── 📂 assets/
-> │  └── 📂 css/
-> │    ├── 📄 styles.css
-> │  └── 📂 icons/
-> │  └── 📂 img/
-> │    └── 📂 og/
-> │    └── 📂 posts/
-> │    └── 📂 series/
-> │  └── 📂 js/
-> │    ├── 📄 search.js
-> │    ├── 📄 site.js
-> ├── 📄 build.py
-> └── 📂 content/
-> │  └── 📂 data/
-> │    ├── 📄 featured.yaml
-> │    ├── 📄 nav.yaml
-> │    ├── 📄 site.yaml
-> │  └── 📂 pages/
-> │    ├── 📄 about.md
-> │    ├── 📄 contact.md
-> │  └── 📂 posts/
-> │    ├── 📄 2026-03-24_first_post.md
-> │  └── 📂 series/
-> │    ├── 📄 mirror-series.md
-> │    ├── 📄 notebooklm-deep-dives.md
-> │    ├── 📄 the-onion-effect.md
-> └── 📂 public/
-> │  ├── 📄 favicon.ico
-> │  ├── 📄 robots.txt
-> │  ├── 📄 social-preview.png
-> ├── 📄 requirements.txt
-> └── 📂 site/
-> └── 📂 templates/
-> │  ├── 📄 archive.html
-> │  ├── 📄 base.html
-> │  └── 📂 components/
-> │    ├── 📄 footer.html
-> │    ├── 📄 header.html
-> │    ├── 📄 infographic-block.html
-> │    ├── 📄 notebooklm-block.html
-> │    ├── 📄 post-card.html
-> │    ├── 📄 youtube-embed.html
-> │  ├── 📄 index.html
-> │  ├── 📄 page.html
-> │  ├── 📄 post.html
-> │  └── 📄 series.html
+> ```markdown
+
+> . 📂 qsaysit-blog
+
+> ├── 📄 README.md
+
+> └── 📂 assets/
+
+> │  └── 📂 css/
+
+> │    ├── 📄 styles.css
+
+> │  └── 📂 icons/
+
+> │  └── 📂 img/
+
+> │    └── 📂 og/
+
+> │    └── 📂 posts/
+
+> │    └── 📂 series/
+
+> │  └── 📂 js/
+
+> │    ├── 📄 search.js
+
+> │    ├── 📄 site.js
+
+> ├── 📄 build.py
+
+> └── 📂 content/
+
+> │  └── 📂 data/
+
+> │    ├── 📄 featured.yaml
+
+> │    ├── 📄 nav.yaml
+
+> │    ├── 📄 site.yaml
+
+> │  └── 📂 pages/
+
+> │    ├── 📄 about.md
+
+> │    ├── 📄 contact.md
+
+> │  └── 📂 posts/
+
+> │    ├── 📄 2026-03-24_first_post.md
+
+> │  └── 📂 series/
+
+> │    ├── 📄 mirror-series.md
+
+> │    ├── 📄 notebooklm-deep-dives.md
+
+> │    ├── 📄 the-onion-effect.md
+
+> └── 📂 public/
+
+> │  ├── 📄 favicon.ico
+
+> │  ├── 📄 robots.txt
+
+> │  ├── 📄 social-preview.png
+
+> ├── 📄 requirements.txt
+
+> └── 📂 site/
+
+> └── 📂 templates/
+
+> │  ├── 📄 archive.html
+
+> │  ├── 📄 base.html
+
+> │  └── 📂 components/
+
+> │    ├── 📄 footer.html
+
+> │    ├── 📄 header.html
+
+> │    ├── 📄 infographic-block.html
+
+> │    ├── 📄 notebooklm-block.html
+
+> │    ├── 📄 post-card.html
+
+> │    ├── 📄 youtube-embed.html
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 page.html
+
+> │  ├── 📄 post.html
+
+> │  └── 📄 series.html
+
 > ```
 
 ### Assistant
@@ -2431,12 +2496,18 @@ canonical_ref: ""
 > - writes `site/series/<slug>/index.html`
 
 ### User
-> what is git smoking, On branch main
-> Your branch is up to date with 'origin/main'.
-> 
-> nothing to commit, working tree clean
-> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-blog> git add /site               
-> fatal: /site: '/site' is outside repository at 'C:/QiLabs/_QiOne_MonoRepo_v2/apps/qsaysit-blog'
+> what is git smoking, On branch main
+
+> Your branch is up to date with 'origin/main'.
+
+> 
+
+> nothing to commit, working tree clean
+
+> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-blog> git add /site               
+
+> fatal: /site: '/site' is outside repository at 'C:/QiLabs/_QiOne_MonoRepo_v2/apps/qsaysit-blog'
+
 > PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-blog>
 
 ### Assistant
@@ -3410,119 +3481,231 @@ canonical_ref: ""
 > Then run the build and look at the generated output. If it still looks wrong, paste one generated `site/.../index.html` and I’ll tell you exactly where the mismatch is.
 
 ### User
-> here is the directory give me a prompt for the ide to make sure all the index pages have the corect classes and such so for their pages. PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> pip install -r requirements.txt
-> Defaulting to user installation because normal site-packages is not writeable
-> Requirement already satisfied: markdown in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 1)) (3.10)
-> Requirement already satisfied: pyyaml in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 2)) (6.0.3)
-> Requirement already satisfied: jinja2 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 3)) (3.1.6)
-> Requirement already satisfied: MarkupSafe>=2.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from jinja2->-r requirements.txt (line 3)) (3.0.3)
-> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> python build.py
-> Wrote: site\index.html
-> Wrote: site\about\index.html
-> Wrote: site\contact\index.html
-> Wrote: site\posts\first-post\index.html
-> Traceback (most recent call last):
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 255, in <module>
->     render_site()
->     ~~~~~~~~~~~^^
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 219, in render_site
->     series_index_body = series_index_template.render(
->         title="Series",
->     ...<4 lines>...
->         nav=nav_data.get("nav", []),
->     )
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 1295, in render
->     self.environment.handle_exception()
->     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 942, in handle_exception
->     raise rewrite_traceback_stack(source=source)
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\templates\archive.html", line 4, in top-level template code
->     <h1>{{ series.title }}</h1>
->     ^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 490, in getattr
->     return getattr(obj, attribute)
-> jinja2.exceptions.UndefinedError: 'series' is undefined
-> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> pip install -r requirements.txt```markdown
-> . 📂 qsaysit-web
-> ├── 📄 README.md
-> └── 📂 assets/
-> │  └── 📂 css/
-> │    ├── 📄 styles.css
-> │  └── 📂 icons/
-> │  └── 📂 img/
-> │    └── 📂 og/
-> │    └── 📂 posts/
-> │    └── 📂 series/
-> │  └── 📂 js/
-> │    ├── 📄 search.js
-> │    ├── 📄 site.js
-> ├── 📄 build.py
-> └── 📂 content/
-> │  └── 📂 data/
-> │    ├── 📄 featured.yaml
-> │    ├── 📄 nav.yaml
-> │    ├── 📄 site.yaml
-> │  └── 📂 pages/
-> │    ├── 📄 about.md
-> │    ├── 📄 contact.md
-> │  └── 📂 posts/
-> │    ├── 📄 2026-03-24_first_post.md
-> │  └── 📂 series/
-> │    ├── 📄 mirror-series.md
-> │    ├── 📄 notebooklm-deep-dives.md
-> │    ├── 📄 the-onion-effect.md
-> └── 📂 public/
-> │  ├── 📄 favicon.ico
-> │  ├── 📄 robots.txt
-> │  ├── 📄 social-preview.png
-> ├── 📄 requirements.txt
-> └── 📂 site/
-> └── 📂 templates/
-> │  ├── 📄 archive.html
-> │  ├── 📄 base.html
-> │  └── 📂 components/
-> │    ├── 📄 footer.html
-> │    ├── 📄 header.html
-> │    ├── 📄 infographic-block.html
-> │    ├── 📄 notebooklm-block.html
-> │    ├── 📄 post-card.html
-> │    ├── 📄 youtube-embed.html
-> │  ├── 📄 index.html
-> │  ├── 📄 page.html
-> │  ├── 📄 post.html
-> │  └── 📄 series.html
+> here is the directory give me a prompt for the ide to make sure all the index pages have the corect classes and such so for their pages. PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> pip install -r requirements.txt
+
+> Defaulting to user installation because normal site-packages is not writeable
+
+> Requirement already satisfied: markdown in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 1)) (3.10)
+
+> Requirement already satisfied: pyyaml in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 2)) (6.0.3)
+
+> Requirement already satisfied: jinja2 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 3)) (3.1.6)
+
+> Requirement already satisfied: MarkupSafe>=2.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from jinja2->-r requirements.txt (line 3)) (3.0.3)
+
+> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> python build.py
+
+> Wrote: site\index.html
+
+> Wrote: site\about\index.html
+
+> Wrote: site\contact\index.html
+
+> Wrote: site\posts\first-post\index.html
+
+> Traceback (most recent call last):
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 255, in <module>
+
+>     render_site()
+
+>     ~~~~~~~~~~~^^
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 219, in render_site
+
+>     series_index_body = series_index_template.render(
+
+>         title="Series",
+
+>     ...<4 lines>...
+
+>         nav=nav_data.get("nav", []),
+
+>     )
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 1295, in render
+
+>     self.environment.handle_exception()
+
+>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 942, in handle_exception
+
+>     raise rewrite_traceback_stack(source=source)
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\templates\archive.html", line 4, in top-level template code
+
+>     <h1>{{ series.title }}</h1>
+
+>     ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 490, in getattr
+
+>     return getattr(obj, attribute)
+
+> jinja2.exceptions.UndefinedError: 'series' is undefined
+
+> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> pip install -r requirements.txt```markdown
+
+> . 📂 qsaysit-web
+
+> ├── 📄 README.md
+
+> └── 📂 assets/
+
+> │  └── 📂 css/
+
+> │    ├── 📄 styles.css
+
+> │  └── 📂 icons/
+
+> │  └── 📂 img/
+
+> │    └── 📂 og/
+
+> │    └── 📂 posts/
+
+> │    └── 📂 series/
+
+> │  └── 📂 js/
+
+> │    ├── 📄 search.js
+
+> │    ├── 📄 site.js
+
+> ├── 📄 build.py
+
+> └── 📂 content/
+
+> │  └── 📂 data/
+
+> │    ├── 📄 featured.yaml
+
+> │    ├── 📄 nav.yaml
+
+> │    ├── 📄 site.yaml
+
+> │  └── 📂 pages/
+
+> │    ├── 📄 about.md
+
+> │    ├── 📄 contact.md
+
+> │  └── 📂 posts/
+
+> │    ├── 📄 2026-03-24_first_post.md
+
+> │  └── 📂 series/
+
+> │    ├── 📄 mirror-series.md
+
+> │    ├── 📄 notebooklm-deep-dives.md
+
+> │    ├── 📄 the-onion-effect.md
+
+> └── 📂 public/
+
+> │  ├── 📄 favicon.ico
+
+> │  ├── 📄 robots.txt
+
+> │  ├── 📄 social-preview.png
+
+> ├── 📄 requirements.txt
+
+> └── 📂 site/
+
+> └── 📂 templates/
+
+> │  ├── 📄 archive.html
+
+> │  ├── 📄 base.html
+
+> │  └── 📂 components/
+
+> │    ├── 📄 footer.html
+
+> │    ├── 📄 header.html
+
+> │    ├── 📄 infographic-block.html
+
+> │    ├── 📄 notebooklm-block.html
+
+> │    ├── 📄 post-card.html
+
+> │    ├── 📄 youtube-embed.html
+
+> │  ├── 📄 index.html
+
+> │  ├── 📄 page.html
+
+> │  ├── 📄 post.html
+
+> │  └── 📄 series.html
+
 > ``` 
-> Defaulting to user installation because normal site-packages is not writeable
-> Requirement already satisfied: markdown in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 1)) (3.10)
-> Requirement already satisfied: pyyaml in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 2)) (6.0.3)
-> Requirement already satisfied: jinja2 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 3)) (3.1.6)
-> Requirement already satisfied: MarkupSafe>=2.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from jinja2->-r requirements.txt (line 3)) (3.0.3)
-> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> python build.py
-> Wrote: site\index.html
-> Wrote: site\about\index.html
-> Wrote: site\contact\index.html
-> Wrote: site\posts\first-post\index.html
-> Traceback (most recent call last):
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 255, in <module>
->     render_site()
->     ~~~~~~~~~~~^^
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 219, in render_site
->     series_index_body = series_index_template.render(
->         title="Series",
->     ...<4 lines>...
->         nav=nav_data.get("nav", []),
->     )
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 1295, in render
->     self.environment.handle_exception()
->     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 942, in handle_exception
->     raise rewrite_traceback_stack(source=source)
->   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\templates\archive.html", line 4, in top-level template code
->     <h1>{{ series.title }}</h1>
->     ^^^^^^^^^^^^^^^^^^^^^
->   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 490, in getattr
->     return getattr(obj, attribute)
-> jinja2.exceptions.UndefinedError: 'series' is undefined
+> Defaulting to user installation because normal site-packages is not writeable
+
+> Requirement already satisfied: markdown in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 1)) (3.10)
+
+> Requirement already satisfied: pyyaml in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 2)) (6.0.3)
+
+> Requirement already satisfied: jinja2 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from -r requirements.txt (line 3)) (3.1.6)
+
+> Requirement already satisfied: MarkupSafe>=2.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from jinja2->-r requirements.txt (line 3)) (3.0.3)
+
+> PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web> python build.py
+
+> Wrote: site\index.html
+
+> Wrote: site\about\index.html
+
+> Wrote: site\contact\index.html
+
+> Wrote: site\posts\first-post\index.html
+
+> Traceback (most recent call last):
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 255, in <module>
+
+>     render_site()
+
+>     ~~~~~~~~~~~^^
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\build.py", line 219, in render_site
+
+>     series_index_body = series_index_template.render(
+
+>         title="Series",
+
+>     ...<4 lines>...
+
+>         nav=nav_data.get("nav", []),
+
+>     )
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 1295, in render
+
+>     self.environment.handle_exception()
+
+>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 942, in handle_exception
+
+>     raise rewrite_traceback_stack(source=source)
+
+>   File "C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web\templates\archive.html", line 4, in top-level template code
+
+>     <h1>{{ series.title }}</h1>
+
+>     ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\jinja2\environment.py", line 490, in getattr
+
+>     return getattr(obj, attribute)
+
+> jinja2.exceptions.UndefinedError: 'series' is undefined
+
 > PS C:\QiLabs\_QiOne_MonoRepo_v2\apps\qsaysit-web>
 
 ### Assistant

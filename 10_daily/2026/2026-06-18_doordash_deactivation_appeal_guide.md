@@ -3,9 +3,9 @@ layout: page
 title: "DoorDash Deactivation Appeal Guide"
 slug: "doordash_deactivation_appeal_guide"
 created_at: "2026-06-18 23:30:04"
-updated_at: "2026-06-18 23:30:04"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

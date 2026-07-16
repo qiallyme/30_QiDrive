@@ -3,9 +3,9 @@ layout: page
 title: "Paperless OCR Settings"
 slug: "paperless_ocr_settings"
 created_at: "2026-05-18 22:05:22"
-updated_at: "2026-05-18 22:05:22"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,20 +39,34 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> anything i should update here in paperless. Output Type
-> Language
-> Pages
-> Mode
-> Skip Archive File
-> Image DPI
-> Clean
-> Deskew
-> Enable  
-> Rotate Pages
-> Enable  
-> Rotate Pages Threshold
-> Max Image Pixels
-> Color Conversion Strategy
+> anything i should update here in paperless. Output Type
+
+> Language
+
+> Pages
+
+> Mode
+
+> Skip Archive File
+
+> Image DPI
+
+> Clean
+
+> Deskew
+
+> Enable  
+
+> Rotate Pages
+
+> Enable  
+
+> Rotate Pages Threshold
+
+> Max Image Pixels
+
+> Color Conversion Strategy
+
 > OCR Arguments
 
 ### Assistant
@@ -106,21 +120,36 @@ canonical_ref: ""
 > For your current pipeline: **don’t optimize OCR yet**. Get intake, tags, correspondents, storage paths, and export/sync behavior working first. OCR tuning is phase two.
 
 ### User
-> Enable Barcodes
-> Enable  
-> Enable TIFF Support
-> Enable  
-> Barcode String
-> Retain Split Pages
-> Enable  
-> Enable ASN
-> Enable  
-> ASN Prefix
-> Upscale
-> DPI
-> Max Pages
-> Enable Tag Detection
-> Enable  
+> Enable Barcodes
+
+> Enable  
+
+> Enable TIFF Support
+
+> Enable  
+
+> Barcode String
+
+> Retain Split Pages
+
+> Enable  
+
+> Enable ASN
+
+> Enable  
+
+> ASN Prefix
+
+> Upscale
+
+> DPI
+
+> Max Pages
+
+> Enable Tag Detection
+
+> Enable  
+
 > Tag Mapping
 
 ### Assistant
@@ -178,99 +207,192 @@ canonical_ref: ""
 > Do **not** enable barcode splitting casually. That setting is powerful, but it’s also how Paperless starts slicing documents like it’s had too much coffee.
 
 ### User
-> in order what to udpate here. Paperless-ngx
-> Welcome, qiadmin. View site / Change password / Log out Toggle theme (current theme: auto)
-> Paperless-ngx administration
-> Accounts
-> Model name	Add link	Change or view list link
-> Email addresses	
-> Add
-> Change
-> Audit log
-> Model name	Add link	Change or view list link
-> Log entries		
-> View
-> Auth Token
-> Model name	Add link	Change or view list link
-> Tokens	
-> Add
-> Change
-> Authentication and Authorization
-> Model name	Add link	Change or view list link
-> Groups	
-> Add
-> Change
-> Users	
-> Add
-> Change
-> Celery Results
-> Model name	Add link	Change or view list link
-> Group results	
-> Add
-> Change
-> Task results	
-> Add
-> Change
-> Documents
-> Model name	Add link	Change or view list link
-> Correspondents	
-> Add
-> Change
-> Custom field instances	
-> Add
-> Change
-> Custom fields	
-> Add
-> Change
-> Document types	
-> Add
-> Change
-> Documents		
-> Change
-> Notes	
-> Add
-> Change
-> Paperless tasks	
-> Add
-> Change
-> Saved views	
-> Add
-> Change
-> Share links	
-> Add
-> Change
-> Storage paths	
-> Add
-> Change
-> Tags	
-> Add
-> Change
-> MFA
-> Model name	Add link	Change or view list link
-> Authenticators	
-> Add
-> Change
-> Paperless mail
-> Model name	Add link	Change or view list link
-> Mail accounts	
-> Add
-> Change
-> Mail rules	
-> Add
-> Change
-> Processed mails	
-> Add
-> Change
-> Social Accounts
-> Model name	Add link	Change or view list link
-> Social accounts	
-> Add
-> Change
-> Social application tokens	
-> Add
-> Change
-> Social applications	
-> Add
+> in order what to udpate here. Paperless-ngx
+
+> Welcome, qiadmin. View site / Change password / Log out Toggle theme (current theme: auto)
+
+> Paperless-ngx administration
+
+> Accounts
+
+> Model name	Add link	Change or view list link
+
+> Email addresses	
+
+> Add
+
+> Change
+
+> Audit log
+
+> Model name	Add link	Change or view list link
+
+> Log entries		
+
+> View
+
+> Auth Token
+
+> Model name	Add link	Change or view list link
+
+> Tokens	
+
+> Add
+
+> Change
+
+> Authentication and Authorization
+
+> Model name	Add link	Change or view list link
+
+> Groups	
+
+> Add
+
+> Change
+
+> Users	
+
+> Add
+
+> Change
+
+> Celery Results
+
+> Model name	Add link	Change or view list link
+
+> Group results	
+
+> Add
+
+> Change
+
+> Task results	
+
+> Add
+
+> Change
+
+> Documents
+
+> Model name	Add link	Change or view list link
+
+> Correspondents	
+
+> Add
+
+> Change
+
+> Custom field instances	
+
+> Add
+
+> Change
+
+> Custom fields	
+
+> Add
+
+> Change
+
+> Document types	
+
+> Add
+
+> Change
+
+> Documents		
+
+> Change
+
+> Notes	
+
+> Add
+
+> Change
+
+> Paperless tasks	
+
+> Add
+
+> Change
+
+> Saved views	
+
+> Add
+
+> Change
+
+> Share links	
+
+> Add
+
+> Change
+
+> Storage paths	
+
+> Add
+
+> Change
+
+> Tags	
+
+> Add
+
+> Change
+
+> MFA
+
+> Model name	Add link	Change or view list link
+
+> Authenticators	
+
+> Add
+
+> Change
+
+> Paperless mail
+
+> Model name	Add link	Change or view list link
+
+> Mail accounts	
+
+> Add
+
+> Change
+
+> Mail rules	
+
+> Add
+
+> Change
+
+> Processed mails	
+
+> Add
+
+> Change
+
+> Social Accounts
+
+> Model name	Add link	Change or view list link
+
+> Social accounts	
+
+> Add
+
+> Change
+
+> Social application tokens	
+
+> Add
+
+> Change
+
+> Social applications	
+
+> Add
+
 > Change
 
 ### Assistant

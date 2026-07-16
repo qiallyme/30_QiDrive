@@ -13,7 +13,7 @@ related:
   - 10_functional/00_manual_to_me/manual_to_me.md
   - 90_locked/00_my_eyes_only/intake_sensitive_material_review.md
   - 99_system/00_navigation/navigation_map.md
-tags:
+tags: []
   - migration
   - intake
   - report
@@ -33,6 +33,23 @@ source:
   - _intake/11-Manual to Me Cody’s Guide to Understanding & Co 219f84a0440280379e8ac1ed0d9a83c2.md
   - _intake/PART XI - Manual to Me Cody’s Guide to Understandi 203f84a044028013b57ecce49990408d.md
   - _intake/Thank You for Taking This Journey 219f84a0440281a19cdecd1bd31e8e6b.md
+layout: page
+slug: intake-migration-report
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 0fc9bfe9ce6c462c80a2e7d721cf43fa
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Intake Migration Report

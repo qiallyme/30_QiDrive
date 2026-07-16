@@ -3,9 +3,9 @@ layout: page
 title: "Ozempic Effects and Risks"
 slug: "ozempic_effects_and_risks"
 created_at: "2026-06-15 07:43:28"
-updated_at: "2026-06-15 07:43:28"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

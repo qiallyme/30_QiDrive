@@ -3,9 +3,9 @@ layout: page
 title: "ITIN Application Cheat Sheet"
 slug: "itin_application_cheat_sheet"
 created_at: "2023-08-06 16:33:52"
-updated_at: "2023-08-06 16:33:52"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

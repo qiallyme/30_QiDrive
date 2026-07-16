@@ -3,9 +3,9 @@ layout: page
 title: "Email draft improvement"
 slug: "email_draft_improvement"
 created_at: "2025-09-24 19:33:19"
-updated_at: "2025-09-24 19:33:19"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,60 +39,114 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> can you help me put together a better email for the lcient. Hi Blanca,
-> 
-> Quick update on your return and the home office correction.
-> 
-> What you’re getting
-> 
-> We’re applying the Actual Expenses method at 26.7% business use
-> This percentage covers a portion of these household costs:
-> Mortgage interest (Need to confirm if you paid this)
-> Property taxes (Need to confirm if you paid this)
-> Homeowners insurance (Need to confirm if you paid this)
-> Utilities (electric, gas, water)
-> Internet service (Need to confirm if you paid this)
-> Home repairs and maintenance (Need to confirm if you paid this.)
-> Why this method
-> 
-> It reflects the real costs of running your business from home
-> We have measurements and documentation supporting the 26.7% figure
-> It balances tax benefit with audit readiness
-> What we need from you to finalize
-> 
-> Photos of the dedicated office area
-> Utility bills for the year
-> Any repair or maintenance invoices
-> Quick confirmation that the garage area was regularly used for business storage
-> What happens next
-> 
-> Once we receive the items above, we’ll finalize the numbers and complete the tax correction filing
-> We’ll send you a clean PDF summary for your records
-> Thank you,
-> 
-> Cody
-> 
-> QiEos
-> 
-> If you want, I can:
-> 
-> Add a “Blanca’s Deductions at a Glance” callout at the very top as a bold checklist
-> Insert page breaks before “Client Summary,” “Options,” and “Supporting Documentation” for a clean PDF
-> Drop this email template onto the page as a synced block so it stays versioned with the summary
-> Here’s your first step: tell me if you want the page-breaks added and confirm the tax year to show in the PDF header.
-> 
-> 
-> 
-> 
-> QiAlly Mascot	
-> Cody Rice-Velasquez
-> Founder
-> 
-> QiAlly.com
-> 
-> cody@qially.com
-> 
-> Client Portal
+> can you help me put together a better email for the lcient. Hi Blanca,
+
+> 
+
+> Quick update on your return and the home office correction.
+
+> 
+
+> What you’re getting
+
+> 
+
+> We’re applying the Actual Expenses method at 26.7% business use
+
+> This percentage covers a portion of these household costs:
+
+> Mortgage interest (Need to confirm if you paid this)
+
+> Property taxes (Need to confirm if you paid this)
+
+> Homeowners insurance (Need to confirm if you paid this)
+
+> Utilities (electric, gas, water)
+
+> Internet service (Need to confirm if you paid this)
+
+> Home repairs and maintenance (Need to confirm if you paid this.)
+
+> Why this method
+
+> 
+
+> It reflects the real costs of running your business from home
+
+> We have measurements and documentation supporting the 26.7% figure
+
+> It balances tax benefit with audit readiness
+
+> What we need from you to finalize
+
+> 
+
+> Photos of the dedicated office area
+
+> Utility bills for the year
+
+> Any repair or maintenance invoices
+
+> Quick confirmation that the garage area was regularly used for business storage
+
+> What happens next
+
+> 
+
+> Once we receive the items above, we’ll finalize the numbers and complete the tax correction filing
+
+> We’ll send you a clean PDF summary for your records
+
+> Thank you,
+
+> 
+
+> Cody
+
+> 
+
+> QiEos
+
+> 
+
+> If you want, I can:
+
+> 
+
+> Add a “Blanca’s Deductions at a Glance” callout at the very top as a bold checklist
+
+> Insert page breaks before “Client Summary,” “Options,” and “Supporting Documentation” for a clean PDF
+
+> Drop this email template onto the page as a synced block so it stays versioned with the summary
+
+> Here’s your first step: tell me if you want the page-breaks added and confirm the tax year to show in the PDF header.
+
+> 
+
+> 
+
+> 
+
+> 
+
+> QiAlly Mascot	
+
+> Cody Rice-Velasquez
+
+> Founder
+
+> 
+
+> QiAlly.com
+
+> 
+
+> cody@qially.com
+
+> 
+
+> Client Portal
+
 > This email and any attachments are strictly confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this email in error, please notify the sender immediately by return email and delete this message and all copies and attachments. Any unauthorized review, use, dissemination, distribution, or copying of this communication is strictly prohibited and may be unlawful.   - have more for you to incorrporarte.
 
 ### Assistant

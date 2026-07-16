@@ -3,9 +3,9 @@ layout: page
 title: "Q-Decimal System Example"
 slug: "q_decimal_system_example"
 created_at: "2026-02-06 17:21:55"
-updated_at: "2026-02-06 17:21:55"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,123 +39,240 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> show me what a q decimal system could looke lik 00-09
-> Site administration
-> 00
-> Index
-> 00.00
-> Index
-> 01
-> About
-> 01.01
-> About us
-> 01.02
-> Licence
-> 01.03
-> Policies
-> 01.04
-> Version
-> 10-19
-> Concepts
-> 11
-> Core concepts
-> 11.01
-> Introduction
-> 11.02
-> Areas and categories
-> 11.03
-> IDs
-> 11.04
-> Philosophy
-> 11.05
-> The JDex
-> 11.06
-> Saving files
-> 11.07
-> Keeping notes
-> 11.08
-> The Librarian
-> 12
-> Advanced concepts
-> 12.01
-> Managing email
-> 12.02
-> Other JDex methods
-> 12.03
-> The standard zeros
-> 12.04
-> Working at the command line
-> 12.05
-> AC.ID notation
-> 13
-> System expansion
-> 13.01
-> Introduction
-> 13.11
-> Multiple systems
-> 13.12
-> Guidelines
-> 13.21
-> Expand an area
-> 13.31
-> Extend the end
-> 13.32
-> Guidelines
-> 14
-> Build and learn
-> 14.01
-> Build your own system
-> 14.02
-> JD University
-> 14.03
-> The Workshop
-> 14.04
-> Task and Project Management
-> 15
-> Patterns and templates
-> 15.01
-> Introduction
-> 15.02
-> Creative pattern
-> 15.03
-> Life Admin System
-> 15.04
-> Small Business System
-> 20-29
-> Communication
-> 21
-> Send and receive
-> 21.01
-> Contact me
-> 21.02
-> Mailing list
-> 21.03
-> RSS feed
-> 21.04
-> Comms plan
-> 22
-> Blog
-> 22.01
-> Latest posts
-> 22.02
-> All posts
-> 23
-> Forums and chat
-> 23.01
-> The forum
-> 23.02
-> Discord
-> 30-39
-> The library
-> 31
-> Apps and utilities
-> 31.01
-> For the system
-> 31.02
-> Other useful tools
-> 32
-> Education
-> 32.01
+> show me what a q decimal system could looke lik 00-09
+
+> Site administration
+
+> 00
+
+> Index
+
+> 00.00
+
+> Index
+
+> 01
+
+> About
+
+> 01.01
+
+> About us
+
+> 01.02
+
+> Licence
+
+> 01.03
+
+> Policies
+
+> 01.04
+
+> Version
+
+> 10-19
+
+> Concepts
+
+> 11
+
+> Core concepts
+
+> 11.01
+
+> Introduction
+
+> 11.02
+
+> Areas and categories
+
+> 11.03
+
+> IDs
+
+> 11.04
+
+> Philosophy
+
+> 11.05
+
+> The JDex
+
+> 11.06
+
+> Saving files
+
+> 11.07
+
+> Keeping notes
+
+> 11.08
+
+> The Librarian
+
+> 12
+
+> Advanced concepts
+
+> 12.01
+
+> Managing email
+
+> 12.02
+
+> Other JDex methods
+
+> 12.03
+
+> The standard zeros
+
+> 12.04
+
+> Working at the command line
+
+> 12.05
+
+> AC.ID notation
+
+> 13
+
+> System expansion
+
+> 13.01
+
+> Introduction
+
+> 13.11
+
+> Multiple systems
+
+> 13.12
+
+> Guidelines
+
+> 13.21
+
+> Expand an area
+
+> 13.31
+
+> Extend the end
+
+> 13.32
+
+> Guidelines
+
+> 14
+
+> Build and learn
+
+> 14.01
+
+> Build your own system
+
+> 14.02
+
+> JD University
+
+> 14.03
+
+> The Workshop
+
+> 14.04
+
+> Task and Project Management
+
+> 15
+
+> Patterns and templates
+
+> 15.01
+
+> Introduction
+
+> 15.02
+
+> Creative pattern
+
+> 15.03
+
+> Life Admin System
+
+> 15.04
+
+> Small Business System
+
+> 20-29
+
+> Communication
+
+> 21
+
+> Send and receive
+
+> 21.01
+
+> Contact me
+
+> 21.02
+
+> Mailing list
+
+> 21.03
+
+> RSS feed
+
+> 21.04
+
+> Comms plan
+
+> 22
+
+> Blog
+
+> 22.01
+
+> Latest posts
+
+> 22.02
+
+> All posts
+
+> 23
+
+> Forums and chat
+
+> 23.01
+
+> The forum
+
+> 23.02
+
+> Discord
+
+> 30-39
+
+> The library
+
+> 31
+
+> Apps and utilities
+
+> 31.01
+
+> For the system
+
+> 31.02
+
+> Other useful tools
+
+> 32
+
+> Education
+
+> 32.01
+
 > Be better at computer
 
 ### Assistant

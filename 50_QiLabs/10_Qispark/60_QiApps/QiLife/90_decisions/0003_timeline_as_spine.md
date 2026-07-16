@@ -3,13 +3,13 @@ layout: adr
 title: ADR 0003: Timeline as the Spine
 slug: adr-0003-timeline-as-the-spine
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c09ca7b1c44e4c9a9d2bd10ae216c766
 canonical_ref: ""
 template_key: master-template
 ---

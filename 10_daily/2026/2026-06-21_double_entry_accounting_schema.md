@@ -3,9 +3,9 @@ layout: page
 title: "Double Entry Accounting Schema"
 slug: "double_entry_accounting_schema"
 created_at: "2026-06-21 03:56:37"
-updated_at: "2026-06-21 03:56:37"
+updated_at: "2026-07-16T06:49:34-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

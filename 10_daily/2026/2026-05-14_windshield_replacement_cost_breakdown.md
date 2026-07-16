@@ -3,9 +3,9 @@ layout: page
 title: "Windshield Replacement Cost Breakdown"
 slug: "windshield_replacement_cost_breakdown"
 created_at: "2026-05-14 13:21:45"
-updated_at: "2026-05-14 13:21:45"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

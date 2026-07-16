@@ -3,12 +3,12 @@ layout: page
 title: Money: UI Flow
 slug: money-ui-flow
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 16632e799d9f498ba4e96eba09142dc1
 canonical_ref: ""
 template_key: master-template
 ---

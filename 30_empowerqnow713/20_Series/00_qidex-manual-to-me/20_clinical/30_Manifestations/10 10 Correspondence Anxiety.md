@@ -3,8 +3,8 @@ layout: page
 title: 10 10 Correspondence Anxiety
 slug: 10_10_correspondence_anxiety
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 realm: QiVault
@@ -17,7 +17,7 @@ qi_decimal: 0.00.00-UNKNOWN
 qid: qd541193963fc
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 59a289c10658475a8cbd7f02e20236c6
 canonical_ref: ""
 template_key: master-template
 ---

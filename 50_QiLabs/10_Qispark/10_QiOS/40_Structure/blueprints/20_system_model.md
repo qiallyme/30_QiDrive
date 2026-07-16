@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 20 System Model
-slug: ""
+slug: 20-system-model
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f30538ec24c548ac8d3a60ba138f452c
 canonical_ref: ""
 source_type: manual
 template_key: master-template

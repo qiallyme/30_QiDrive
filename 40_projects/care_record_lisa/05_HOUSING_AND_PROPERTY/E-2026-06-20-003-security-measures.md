@@ -3,14 +3,14 @@ layout: page
 title: Event: Security measures after access concerns
 slug: security-measures-after-access-concerns
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - housing-property
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: cd482eb37fb54cc6a0758543f2275b46
 canonical_ref: ""
 template_key: master-template
 ---

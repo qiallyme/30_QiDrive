@@ -3,9 +3,9 @@ layout: page
 title: "QiDocs - Doc Management Solution"
 slug: "qidocs_doc_management_solution"
 created_at: "2026-03-06 06:56:34"
-updated_at: "2026-03-06 06:56:34"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3707,267 +3707,526 @@ canonical_ref: ""
 > Next move: I can draft `docs/architecture.md`, `docs/setup.md`, and `docs/workflow.md` in the same style so you can paste them straight into the repo.
 
 ### User
-> from the ide, I have successfully initialized the QiArchive repository as an infrastructure-first module. I've followed your recommended repository shape and established the core contracts and documentation to provide the system with its "authoritative spine."
-> 
-> 🏗️ Repository Initialized: c:\QiLabs\QiArchive
-> I have completed the following structure and files:
-> 
-> 1. Core Infrastructure & Configuration
-> README.md: The primary entry point defining QiArchive's mission and identity.
-> .gitignore: Configured to ignore temporary data while preserving the mandatory folder structure.
-> .env.example: A template for environment variables (paths, prefixes, and API keys).
-> docker-compose.yml: Infrastructure for Paperless-ngx, Redis, and Postgres.
-> Makefile: Simplified commands for common operations (make up, make ingest, make backup).
-> 2. Authoritative Contracts (contracts/)
-> The repository is now governed by 9 core contracts:
-> 
-> classification.md: Defines the repo as infra/automation.
-> folder_contract.md: Rules for ingestion and storage.
-> naming_contract.md: The QDOC-YYYY-NNNNNN identity rules.
-> metadata_contract.md: Minimum required fields for document records.
-> ingest_contract.md: The required processing sequence.
-> manifest_contract.md: Portable tracking requirements.
-> duplicate_contract.md: SHA-256 based deduplication rules.
-> review_contract.md: Criteria for manual intervention.
-> operations_contract.md: Expectations for background reliability.
-> 3. Documentation (docs/)
-> architecture.md: Visualizes the pipeline flow from Capture to Knowledge Layer.
-> workflow.md: Steps for daily ingestion and the "Review Cycle."
-> setup.md: Guide for local installation and environment configuration.
-> 4. Data & Logic Skeletons
-> data/: Created all mandatory subdirectories (00_INBOX, 10_REVIEW, etc.) with .gitkeep files.
-> config/: Seed files for tags, document types, and correspondents.
-> schemas/: JSON schema for the manifest and a reference document record.
-> scripts/: Initial Python skeletons for ingestion and metadata seeding.
-> 5. Developer Environment (dev/)
-> Created the dev/ folder with its own README.md and subfolders for notes, decisions, prompts, scratch, and ide_state.
-> TIP
-> 
+> from the ide, I have successfully initialized the QiArchive repository as an infrastructure-first module. I've followed your recommended repository shape and established the core contracts and documentation to provide the system with its "authoritative spine."
+
+> 
+
+> 🏗️ Repository Initialized: c:\QiLabs\QiArchive
+
+> I have completed the following structure and files:
+
+> 
+
+> 1. Core Infrastructure & Configuration
+
+> README.md: The primary entry point defining QiArchive's mission and identity.
+
+> .gitignore: Configured to ignore temporary data while preserving the mandatory folder structure.
+
+> .env.example: A template for environment variables (paths, prefixes, and API keys).
+
+> docker-compose.yml: Infrastructure for Paperless-ngx, Redis, and Postgres.
+
+> Makefile: Simplified commands for common operations (make up, make ingest, make backup).
+
+> 2. Authoritative Contracts (contracts/)
+
+> The repository is now governed by 9 core contracts:
+
+> 
+
+> classification.md: Defines the repo as infra/automation.
+
+> folder_contract.md: Rules for ingestion and storage.
+
+> naming_contract.md: The QDOC-YYYY-NNNNNN identity rules.
+
+> metadata_contract.md: Minimum required fields for document records.
+
+> ingest_contract.md: The required processing sequence.
+
+> manifest_contract.md: Portable tracking requirements.
+
+> duplicate_contract.md: SHA-256 based deduplication rules.
+
+> review_contract.md: Criteria for manual intervention.
+
+> operations_contract.md: Expectations for background reliability.
+
+> 3. Documentation (docs/)
+
+> architecture.md: Visualizes the pipeline flow from Capture to Knowledge Layer.
+
+> workflow.md: Steps for daily ingestion and the "Review Cycle."
+
+> setup.md: Guide for local installation and environment configuration.
+
+> 4. Data & Logic Skeletons
+
+> data/: Created all mandatory subdirectories (00_INBOX, 10_REVIEW, etc.) with .gitkeep files.
+
+> config/: Seed files for tags, document types, and correspondents.
+
+> schemas/: JSON schema for the manifest and a reference document record.
+
+> scripts/: Initial Python skeletons for ingestion and metadata seeding.
+
+> 5. Developer Environment (dev/)
+
+> Created the dev/ folder with its own README.md and subfolders for notes, decisions, prompts, scratch, and ide_state.
+
+> TIP
+
+> 
+
 > Next Recommended Step: You can now begin implementing the refined logic in scripts/ingest/main.py. This script should handle the transition of files from data/00_INBOX/ into the final archive by following the ingest_contract.md.
 > 
-> {
->   "name": "QiArchive",
->   "path": "c:\\QiLabs\\QiArchive",
->   "type": "directory",
->   "children": [
->     {
->       "name": "config",
->       "type": "folder",
->       "children": [
->         {
->           "name": "correspondents_seed.yaml",
->           "type": "file"
->         },
->         {
->           "name": "document_types_seed.yaml",
->           "type": "file"
->         },
->         {
->           "name": "paperless.env",
->           "type": "file"
->         },
->         {
->           "name": "tags_seed.yaml",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "contracts",
->       "type": "folder",
->       "children": [
->         {
->           "name": "classification.md",
->           "type": "file"
->         },
->         {
->           "name": "duplicate_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "folder_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "ingest_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "manifest_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "metadata_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "naming_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "operations_contract.md",
->           "type": "file"
->         },
->         {
->           "name": "review_contract.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "data",
->       "type": "folder",
->       "children": [
->         {
->           "name": "90_MANIFESTS",
->           "type": "folder"
->         }
->       ]
->     },
->     {
->       "name": "dev",
->       "type": "folder",
->       "children": [
->         {
->           "name": "decisions",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "ide_state",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "notes",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "prompts",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "docs",
->       "type": "folder",
->       "children": [
->         {
->           "name": "architecture.md",
->           "type": "file"
->         },
->         {
->           "name": "setup.md",
->           "type": "file"
->         },
->         {
->           "name": "workflow.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "schemas",
->       "type": "folder",
->       "children": [
->         {
->           "name": "document_manifest.schema.json",
->           "type": "file"
->         },
->         {
->           "name": "document_record.example.json",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "scripts",
->       "type": "folder",
->       "children": [
->         {
->           "name": "ingest",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.py",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "ops",
->           "type": "folder",
->           "children": [
->             {
->               "name": "seed_metadata.py",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "utils",
->           "type": "folder"
->         }
->       ]
->     },
->     {
->       "name": ".env.example",
->       "type": "file"
->     },
->     {
->       "name": ".gitignore",
->       "type": "file"
->     },
->     {
->       "name": "LICENSE",
->       "type": "file"
->     },
->     {
->       "name": "Makefile",
->       "type": "file"
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "docker-compose.yml",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-03-06T13:37:37.274Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> {
+
+>   "name": "QiArchive",
+
+>   "path": "c:\\QiLabs\\QiArchive",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "config",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "correspondents_seed.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "document_types_seed.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "paperless.env",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "tags_seed.yaml",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "contracts",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "classification.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "duplicate_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "folder_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ingest_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "manifest_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "metadata_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "naming_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "operations_contract.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "review_contract.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "data",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "90_MANIFESTS",
+
+>           "type": "folder"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "dev",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "decisions",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "ide_state",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "notes",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "prompts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "docs",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "architecture.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "setup.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "workflow.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "schemas",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "document_manifest.schema.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "document_record.example.json",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "scripts",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "ingest",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.py",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "ops",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "seed_metadata.py",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "utils",
+
+>           "type": "folder"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": ".env.example",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": ".gitignore",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "LICENSE",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "Makefile",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "docker-compose.yml",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-03-06T13:37:37.274Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -4293,122 +4552,238 @@ canonical_ref: ""
 > Then we write `main.py` clean instead of letting it become a dump truck.
 
 ### User
-> The structural reinforcement is complete. We have moved from "concept soup" to a hardened filesystem contract. The repository now has a stable foundation to support the ingestion logic.
-> 
-> 🏗️ Structural Gaps Closed
-> Full data/ Tree: All operational folders are now present and visible, including the new data/01_STAGED/ bridge.
-> Authoritative Manifests: Created the initial artifacts in data/90_MANIFESTS/ with the required CSV headers. These are now the "finish lines" for the ingestion logic.
-> Modular Utility Layer: Scaffolding the logic in scripts/utils/ ensures 
-> 
-> main.py
->  remains a clean orchestrator.
-> Model A Locked: Updated 
-> 
-> docs/architecture.md
-> , 
-> 
-> docs/workflow.md
-> , and 
-> 
-> contracts/folder_contract.md
->  to solidify the "Identity First" (Model A) decision.
-> 📂 New Repository Landscape
-> Initialized Utilities (scripts/utils/)
-> File	Responsibility
-> 
-> hash_utils.py
-> SHA-256 fingerprinting.
-> 
-> id_utils.py
-> Sequential QDOC ID generation.
-> 
-> slug_utils.py
-> Filename normalization and cleaning.
-> 
-> file_utils.py
-> Safely moving/renaming/checking files.
-> 
-> manifest_utils.py
-> Concurrent read/write to CSV and JSONL.
-> Authoritative Manifests (data/90_MANIFESTS/)
-> 
-> document_manifest.csv
->  (Headers: doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at)
-> 
-> dedupe_report.csv
->  (Headers: timestamp,sha256,original_filename,duplicate_of_id,status)
-> 
-> rename_map.csv
->  (Headers: doc_id,original_filename,current_filename,timestamp)
-> 
-> document_manifest.jsonl
-> 🚀 Ready for Ingestion Logic
-> The stage is set. 
-> 
-> scripts/ingest/main.py
->  can now be written by importing these utilities and following the sequence defined in the Ingest Contract.
-> 
-> Would you like me to proceed with implementing the v1 logic in 
-> 
-> scripts/ingest/main.py
->  now?The structural reinforcement is complete. We have moved from "concept soup" to a hardened filesystem contract. The repository now has a stable foundation to support the ingestion logic.
-> 
-> 🏗️ Structural Gaps Closed
-> Full data/ Tree: All operational folders are now present and visible, including the new data/01_STAGED/ bridge.
-> Authoritative Manifests: Created the initial artifacts in data/90_MANIFESTS/ with the required CSV headers. These are now the "finish lines" for the ingestion logic.
-> Modular Utility Layer: Scaffolding the logic in scripts/utils/ ensures 
-> 
-> main.py
->  remains a clean orchestrator.
-> Model A Locked: Updated 
-> 
-> docs/architecture.md
-> , 
-> 
-> docs/workflow.md
-> , and 
-> 
-> contracts/folder_contract.md
->  to solidify the "Identity First" (Model A) decision.
-> 📂 New Repository Landscape
-> Initialized Utilities (scripts/utils/)
-> File	Responsibility
-> 
-> hash_utils.py
-> SHA-256 fingerprinting.
-> 
-> id_utils.py
-> Sequential QDOC ID generation.
-> 
-> slug_utils.py
-> Filename normalization and cleaning.
-> 
-> file_utils.py
-> Safely moving/renaming/checking files.
-> 
-> manifest_utils.py
-> Concurrent read/write to CSV and JSONL.
-> Authoritative Manifests (data/90_MANIFESTS/)
-> 
-> document_manifest.csv
->  (Headers: doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at)
-> 
-> dedupe_report.csv
->  (Headers: timestamp,sha256,original_filename,duplicate_of_id,status)
-> 
-> rename_map.csv
->  (Headers: doc_id,original_filename,current_filename,timestamp)
-> 
-> document_manifest.jsonl
-> 🚀 Ready for Ingestion Logic
-> The stage is set. 
-> 
-> scripts/ingest/main.py
->  can now be written by importing these utilities and following the sequence defined in the Ingest Contract.
-> 
-> Would you like me to proceed with implementing the v1 logic in 
-> 
-> scripts/ingest/main.py
+> The structural reinforcement is complete. We have moved from "concept soup" to a hardened filesystem contract. The repository now has a stable foundation to support the ingestion logic.
+
+> 
+
+> 🏗️ Structural Gaps Closed
+
+> Full data/ Tree: All operational folders are now present and visible, including the new data/01_STAGED/ bridge.
+
+> Authoritative Manifests: Created the initial artifacts in data/90_MANIFESTS/ with the required CSV headers. These are now the "finish lines" for the ingestion logic.
+
+> Modular Utility Layer: Scaffolding the logic in scripts/utils/ ensures 
+
+> 
+
+> main.py
+
+>  remains a clean orchestrator.
+
+> Model A Locked: Updated 
+
+> 
+
+> docs/architecture.md
+
+> , 
+
+> 
+
+> docs/workflow.md
+
+> , and 
+
+> 
+
+> contracts/folder_contract.md
+
+>  to solidify the "Identity First" (Model A) decision.
+
+> 📂 New Repository Landscape
+
+> Initialized Utilities (scripts/utils/)
+
+> File	Responsibility
+
+> 
+
+> hash_utils.py
+
+> SHA-256 fingerprinting.
+
+> 
+
+> id_utils.py
+
+> Sequential QDOC ID generation.
+
+> 
+
+> slug_utils.py
+
+> Filename normalization and cleaning.
+
+> 
+
+> file_utils.py
+
+> Safely moving/renaming/checking files.
+
+> 
+
+> manifest_utils.py
+
+> Concurrent read/write to CSV and JSONL.
+
+> Authoritative Manifests (data/90_MANIFESTS/)
+
+> 
+
+> document_manifest.csv
+
+>  (Headers: doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at)
+
+> 
+
+> dedupe_report.csv
+
+>  (Headers: timestamp,sha256,original_filename,duplicate_of_id,status)
+
+> 
+
+> rename_map.csv
+
+>  (Headers: doc_id,original_filename,current_filename,timestamp)
+
+> 
+
+> document_manifest.jsonl
+
+> 🚀 Ready for Ingestion Logic
+
+> The stage is set. 
+
+> 
+
+> scripts/ingest/main.py
+
+>  can now be written by importing these utilities and following the sequence defined in the Ingest Contract.
+
+> 
+
+> Would you like me to proceed with implementing the v1 logic in 
+
+> 
+
+> scripts/ingest/main.py
+
+>  now?The structural reinforcement is complete. We have moved from "concept soup" to a hardened filesystem contract. The repository now has a stable foundation to support the ingestion logic.
+
+> 
+
+> 🏗️ Structural Gaps Closed
+
+> Full data/ Tree: All operational folders are now present and visible, including the new data/01_STAGED/ bridge.
+
+> Authoritative Manifests: Created the initial artifacts in data/90_MANIFESTS/ with the required CSV headers. These are now the "finish lines" for the ingestion logic.
+
+> Modular Utility Layer: Scaffolding the logic in scripts/utils/ ensures 
+
+> 
+
+> main.py
+
+>  remains a clean orchestrator.
+
+> Model A Locked: Updated 
+
+> 
+
+> docs/architecture.md
+
+> , 
+
+> 
+
+> docs/workflow.md
+
+> , and 
+
+> 
+
+> contracts/folder_contract.md
+
+>  to solidify the "Identity First" (Model A) decision.
+
+> 📂 New Repository Landscape
+
+> Initialized Utilities (scripts/utils/)
+
+> File	Responsibility
+
+> 
+
+> hash_utils.py
+
+> SHA-256 fingerprinting.
+
+> 
+
+> id_utils.py
+
+> Sequential QDOC ID generation.
+
+> 
+
+> slug_utils.py
+
+> Filename normalization and cleaning.
+
+> 
+
+> file_utils.py
+
+> Safely moving/renaming/checking files.
+
+> 
+
+> manifest_utils.py
+
+> Concurrent read/write to CSV and JSONL.
+
+> Authoritative Manifests (data/90_MANIFESTS/)
+
+> 
+
+> document_manifest.csv
+
+>  (Headers: doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at)
+
+> 
+
+> dedupe_report.csv
+
+>  (Headers: timestamp,sha256,original_filename,duplicate_of_id,status)
+
+> 
+
+> rename_map.csv
+
+>  (Headers: doc_id,original_filename,current_filename,timestamp)
+
+> 
+
+> document_manifest.jsonl
+
+> 🚀 Ready for Ingestion Logic
+
+> The stage is set. 
+
+> 
+
+> scripts/ingest/main.py
+
+>  can now be written by importing these utilities and following the sequence defined in the Ingest Contract.
+
+> 
+
+> Would you like me to proceed with implementing the v1 logic in 
+
+> 
+
+> scripts/ingest/main.py
+
 >  now?
 
 ### Assistant
@@ -4599,41 +4974,76 @@ canonical_ref: ""
 > After it generates the code, paste me `main.py` and the utility files if you want me to do the reality check before you run it.
 
 ### User
-> 📂 Structural Checklist
-> [x] 
-> 
-> main.py
-> : Thin orchestrator, no clever OCR/API logic.
-> [x] 
-> 
-> hash_utils.py
-> : Clean SHA-256 logic.
-> [x] 
-> 
-> id_utils.py
-> : Manifest-aware sequential ID generation.
-> [x] 
-> 
-> slug_utils.py
-> : Normalizes filenames into lowercase-underscore slugs.
-> [x] 
-> 
-> file_utils.py
-> : Handles extension checking and collision-resistant 
-> 
-> safe_move
-> .
-> [x] 
-> 
-> manifest_utils.py
-> : Manages the dual-format (CSV/JSONL) append.
-> 🧪 Ready for the 4-File Reality Check
-> You mentioned a test with 4 files:
-> 
-> Normal PDF -> Should become QDOC-2026-000001__...__undated.pdf in 01_STAGED.
-> Second PDF -> Should become QDOC-2026-000002... in 01_STAGED.
-> Duplicate of File 1 -> Should land in 20_QUARANTINE.
-> Unsupported Type -> Should be skipped in 00_INBOX.
+> 📂 Structural Checklist
+
+> [x] 
+
+> 
+
+> main.py
+
+> : Thin orchestrator, no clever OCR/API logic.
+
+> [x] 
+
+> 
+
+> hash_utils.py
+
+> : Clean SHA-256 logic.
+
+> [x] 
+
+> 
+
+> id_utils.py
+
+> : Manifest-aware sequential ID generation.
+
+> [x] 
+
+> 
+
+> slug_utils.py
+
+> : Normalizes filenames into lowercase-underscore slugs.
+
+> [x] 
+
+> 
+
+> file_utils.py
+
+> : Handles extension checking and collision-resistant 
+
+> 
+
+> safe_move
+
+> .
+
+> [x] 
+
+> 
+
+> manifest_utils.py
+
+> : Manages the dual-format (CSV/JSONL) append.
+
+> 🧪 Ready for the 4-File Reality Check
+
+> You mentioned a test with 4 files:
+
+> 
+
+> Normal PDF -> Should become QDOC-2026-000001__...__undated.pdf in 01_STAGED.
+
+> Second PDF -> Should become QDOC-2026-000002... in 01_STAGED.
+
+> Duplicate of File 1 -> Should land in 20_QUARANTINE.
+
+> Unsupported Type -> Should be skipped in 00_INBOX.
+
 > I have not run this yet. Would you like me to prepare these dummy files and execute the script for you?
 
 ### Assistant
@@ -5046,63 +5456,120 @@ canonical_ref: ""
 > When you run the test, paste the output and folder contents and I’ll sanity-check the pipeline with you.
 
 ### User
-> Checked command status
-> The 4-file reality check is complete. The system behaved exactly as designed, correctly identifying the duplicates, ignoring the unsupported file, and assigning sequential identities to the new PDFs.
-> 
-> 🧪 Reality Check Results
-> 1. Ingestion Console Summary
-> text
-> --- QiArchive v1 Ingestion Start [2026-03-06 07:54:00] ---
-> PROCESSED: alpha.pdf -> QDOC-2026-000001__alpha__undated.pdf
-> DUPLICATE FOUND: alpha_copy.pdf matches QDOC-2026-000001
-> PROCESSED: bravo.pdf -> QDOC-2026-000002__bravo__undated.pdf
-> Skipping unsupported file: ignore_me.txt
-> --- Run Summary ---
-> Processed (Staged): 2
-> Duplicates Quarantined: 1
-> Skipped unsupported: 1
-> Errors encountered: 0
-> -------------------
-> 2. Filesystem State
-> Location	Contents
-> data/01_STAGED/	QDOC-2026-000001__alpha__undated.pdf, QDOC-2026-000002__bravo__undated.pdf
-> data/20_QUARANTINE/	alpha_copy.pdf
-> data/00_INBOX/	ignore_me.txt (skipped and preserved)
-> 3. Manifest Verification (
-> 
-> document_manifest.csv
-> )
-> The manifest correctly added 2 new canonical records (and 0 for the duplicate).
-> 
-> csv
-> doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at
-> QDOC-2026-000001,aeced4ec...,alpha.pdf,QDOC-2026-000001__alpha__undated.pdf,undated,alpha,alpha,manual_drop,processed,,2026-03-06T07:54:00.620424,2026-03-06T07:54:00.620424
-> QDOC-2026-000002,f925ef24...,bravo.pdf,QDOC-2026-000002__bravo__undated.pdf,undated,bravo,bravo,manual_drop,processed,,2026-03-06T07:54:00.637118,2026-03-06T07:54:00.637118
-> 4. Dedupe Report (
-> 
-> dedupe_report.csv
-> )
-> The duplicate alpha_copy.pdf was correctly logged without receiving a new ID.
-> 
-> csv
-> timestamp,sha256,original_filename,duplicate_of_id,status
-> 2026-03-06T07:54:00.620424,aeced4ec...,alpha_copy.pdf,QDOC-2026-000001,duplicate
-> 5. Rename Map (
-> 
-> rename_map.csv
-> )
-> The Audit trail for the renames matches the manifest.
-> 
-> csv
-> doc_id,original_filename,current_filename,timestamp
-> QDOC-2026-000001,alpha.pdf,QDOC-2026-000001__alpha__undated.pdf,2026-03-06T07:54:00.620424
-> QDOC-2026-000002,bravo.pdf,QDOC-2026-000002__bravo__undated.pdf,2026-03-06T07:54:00.637118
-> ✅ Manual Verification Checkpoints
-> [x] Duplicate did not get a new QDOC: alpha_copy.pdf correctly mapped to QDOC-2026-000001.
-> [x] Manifest row count: Increased by 2 (alpha and bravo).
-> [x] JSONL Sync: JSONL contains exactly 2 lines matching the CSV records.
-> [x] Unsupported file isolation: ignore_me.txt remained in 00_INBOX.
-> [x] Naming Pattern: Strict adherence to {doc_id}__{slug}__undated.pdf.
+> Checked command status
+
+> The 4-file reality check is complete. The system behaved exactly as designed, correctly identifying the duplicates, ignoring the unsupported file, and assigning sequential identities to the new PDFs.
+
+> 
+
+> 🧪 Reality Check Results
+
+> 1. Ingestion Console Summary
+
+> text
+
+> --- QiArchive v1 Ingestion Start [2026-03-06 07:54:00] ---
+
+> PROCESSED: alpha.pdf -> QDOC-2026-000001__alpha__undated.pdf
+
+> DUPLICATE FOUND: alpha_copy.pdf matches QDOC-2026-000001
+
+> PROCESSED: bravo.pdf -> QDOC-2026-000002__bravo__undated.pdf
+
+> Skipping unsupported file: ignore_me.txt
+
+> --- Run Summary ---
+
+> Processed (Staged): 2
+
+> Duplicates Quarantined: 1
+
+> Skipped unsupported: 1
+
+> Errors encountered: 0
+
+> -------------------
+
+> 2. Filesystem State
+
+> Location	Contents
+
+> data/01_STAGED/	QDOC-2026-000001__alpha__undated.pdf, QDOC-2026-000002__bravo__undated.pdf
+
+> data/20_QUARANTINE/	alpha_copy.pdf
+
+> data/00_INBOX/	ignore_me.txt (skipped and preserved)
+
+> 3. Manifest Verification (
+
+> 
+
+> document_manifest.csv
+
+> )
+
+> The manifest correctly added 2 new canonical records (and 0 for the duplicate).
+
+> 
+
+> csv
+
+> doc_id,sha256,original_filename,current_filename,doc_date,title,slug,source,status,duplicate_of,created_at,updated_at
+
+> QDOC-2026-000001,aeced4ec...,alpha.pdf,QDOC-2026-000001__alpha__undated.pdf,undated,alpha,alpha,manual_drop,processed,,2026-03-06T07:54:00.620424,2026-03-06T07:54:00.620424
+
+> QDOC-2026-000002,f925ef24...,bravo.pdf,QDOC-2026-000002__bravo__undated.pdf,undated,bravo,bravo,manual_drop,processed,,2026-03-06T07:54:00.637118,2026-03-06T07:54:00.637118
+
+> 4. Dedupe Report (
+
+> 
+
+> dedupe_report.csv
+
+> )
+
+> The duplicate alpha_copy.pdf was correctly logged without receiving a new ID.
+
+> 
+
+> csv
+
+> timestamp,sha256,original_filename,duplicate_of_id,status
+
+> 2026-03-06T07:54:00.620424,aeced4ec...,alpha_copy.pdf,QDOC-2026-000001,duplicate
+
+> 5. Rename Map (
+
+> 
+
+> rename_map.csv
+
+> )
+
+> The Audit trail for the renames matches the manifest.
+
+> 
+
+> csv
+
+> doc_id,original_filename,current_filename,timestamp
+
+> QDOC-2026-000001,alpha.pdf,QDOC-2026-000001__alpha__undated.pdf,2026-03-06T07:54:00.620424
+
+> QDOC-2026-000002,bravo.pdf,QDOC-2026-000002__bravo__undated.pdf,2026-03-06T07:54:00.637118
+
+> ✅ Manual Verification Checkpoints
+
+> [x] Duplicate did not get a new QDOC: alpha_copy.pdf correctly mapped to QDOC-2026-000001.
+
+> [x] Manifest row count: Increased by 2 (alpha and bravo).
+
+> [x] JSONL Sync: JSONL contains exactly 2 lines matching the CSV records.
+
+> [x] Unsupported file isolation: ignore_me.txt remained in 00_INBOX.
+
+> [x] Naming Pattern: Strict adherence to {doc_id}__{slug}__undated.pdf.
+
 > Architecture is now real. The identity-first pipeline is fully functional for v1.
 
 ### Assistant
@@ -5361,142 +5828,278 @@ canonical_ref: ""
 > Next move: I’d have the IDE draft `contracts/handoff_contract.md` and `scripts/ops/handoff_to_paperless.py` before you open Railway at all.
 
 ### User
-> Analyzed
-> c:\QiLabs\QiArchive
-> Edited
-> +37
-> -0
-> Edited
-> +36
-> -0
-> Edited
-> +26
-> -0
-> Edited
-> +67
-> -0
-> Edited
-> +25
-> -0
-> Edited
-> +7
-> -4
-> Ran background command
-> …\QiArchive > git add . ; git commit -m "feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging"
-> [main 5550596] feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging
->  57 files changed, 1680 insertions(+), 139 deletions(-)
->  create mode 100644 .env.example
->  create mode 100644 Makefile
->  create mode 100644 config/correspondents_seed.yaml
->  create mode 100644 config/document_types_seed.yaml
->  create mode 100644 config/paperless.env
->  create mode 100644 config/tags_seed.yaml
->  create mode 100644 contracts/classification.md
->  create mode 100644 contracts/duplicate_contract.md
->  create mode 100644 contracts/folder_contract.md
->  create mode 100644 contracts/handoff_contract.md
->  create mode 100644 contracts/ingest_contract.md
->  create mode 100644 contracts/manifest_contract.md
->  create mode 100644 contracts/metadata_contract.md
->  create mode 100644 contracts/naming_contract.md
->  create mode 100644 contracts/operations_contract.md
->  create mode 100644 contracts/review_contract.md
->  create mode 100644 data/00_INBOX/.gitkeep
->  create mode 100644 data/01_STAGED/.gitkeep
->  create mode 100644 data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
->  create mode 100644 data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
->  create mode 100644 data/10_REVIEW/.gitkeep
->  create mode 100644 data/20_QUARANTINE/.gitkeep
->  create mode 100644 data/30_EXPORTS/.gitkeep
->  create mode 100644 data/90_MANIFESTS/.gitkeep
->  create mode 100644 data/90_MANIFESTS/dedupe_report.csv
->  create mode 100644 data/90_MANIFESTS/document_manifest.csv
->  create mode 100644 data/90_MANIFESTS/document_manifest.jsonl
->  create mode 100644 data/90_MANIFESTS/rename_map.csv
->  create mode 100644 dev/README.md
->  create mode 100644 dev/decisions/.gitkeep
->  create mode 100644 dev/decisions/0001-identity-first-pipeline.md
->  create mode 100644 dev/decisions/2026-03-06_v1_ingest_reality_check.md
->  create mode 100644 dev/ide_state/.gitkeep
->  create mode 100644 dev/ide_state/reality_check_v1.log
->  create mode 100644 dev/notes/.gitkeep
->  create mode 100644 dev/notes/implementation_v1.md
->  create mode 100644 dev/prompts/.gitkeep
->  create mode 100644 dev/prompts/ingest_v2_ideas.md
->  create mode 100644 dev/scratch/.gitkeep
->  create mode 100644 docker-compose.yml
->  create mode 100644 docs/architecture.md
->  create mode 100644 docs/paperless_integration.md
->  create mode 100644 docs/setup.md
->  create mode 100644 docs/workflow.md
->  create mode 100644 schemas/document_manifest.schema.json
->  create mode 100644 schemas/document_record.example.json
->  create mode 100644 scripts/ingest/main.py
->  create mode 100644 scripts/ops/handoff_to_paperless.py
->  create mode 100644 scripts/ops/queue_report.py
->  create mode 100644 scripts/ops/seed_metadata.py
->  create mode 100644 scripts/utils/file_utils.py
->  create mode 100644 scripts/utils/hash_utils.py
->  create mode 100644 scripts/utils/id_utils.py
->  create mode 100644 scripts/utils/manifest_utils.py
->  create mode 100644 scripts/utils/slug_utils.py
-> Exit code 0
-> Ran command
-> …\QiArchive > python scripts/ops/queue_report.py
-> --- QiArchive Pipeline Report [2026-03-06 08:08:23] ---
-> Inbox       : 1 files
-> Staged      : 2 files
-> Quarantined : 1 files
-> Review      : 0 files
-> --------------------------------
-> Exit code 0
-> The v1 Milestone is now officially locked into the repository, and Phase 2 is in motion. We have graduated from a conceptual design to a verified, identity-first ingestion pipeline.
-> 
-> 🏛️ Milestone 1: v1 Ingest Locked
-> [x] ADR Documented: 
-> 
-> dev/decisions/2026-03-06_v1_ingest_reality_check.md
->  preserves the test results and scope boundaries for future reference.
-> [x] First Milestone Commit: Executed git commit with the message:
-> feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging
-> 
-> 🚀 Phase 2 Initialized: Paperless Handoff
-> I have laid the groundwork for the QiArchive → Paperless link:
-> 
-> Handoff Contract: 
-> 
-> contracts/handoff_contract.md
->  establishes that QiArchive is the naming authority and Paperless is the indexing engine.
-> Handoff Script: 
-> 
-> scripts/ops/handoff_to_paperless.py
->  is ready to copy files from 01_STAGED to the consumer directory with idempotency tracking.
-> Integration Guide: 
-> 
-> docs/paperless_integration.md
->  explains the local Docker/volume-mount workflow.
-> Operational Visibility: 
-> 
-> scripts/ops/queue_report.py
->  provides an instant snapshot of your pipeline health.
-> 📊 Pipeline Status Snapshot
-> Running 
-> 
-> scripts/ops/queue_report.py
->  currently shows:
-> 
-> text
-> --- QiArchive Pipeline Report [2026-03-06 08:08:23] ---
-> Inbox       : 1 files (ignore_me.txt)
-> Staged      : 2 files (alpha, bravo)
-> Quarantined : 1 files (alpha_copy)
-> Review      : 0 files
-> --------------------------------
-> ✅ Ready to Test Phase 2
-> You can now start your local Paperless-ngx instance (via make up or docker-compose up -d) and run: python scripts/ops/handoff_to_paperless.py
-> 
-> This will bridge the gap and start the OCR/Search process for your staged files.
-> 
+> Analyzed
+
+> c:\QiLabs\QiArchive
+
+> Edited
+
+> +37
+
+> -0
+
+> Edited
+
+> +36
+
+> -0
+
+> Edited
+
+> +26
+
+> -0
+
+> Edited
+
+> +67
+
+> -0
+
+> Edited
+
+> +25
+
+> -0
+
+> Edited
+
+> +7
+
+> -4
+
+> Ran background command
+
+> …\QiArchive > git add . ; git commit -m "feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging"
+
+> [main 5550596] feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging
+
+>  57 files changed, 1680 insertions(+), 139 deletions(-)
+
+>  create mode 100644 .env.example
+
+>  create mode 100644 Makefile
+
+>  create mode 100644 config/correspondents_seed.yaml
+
+>  create mode 100644 config/document_types_seed.yaml
+
+>  create mode 100644 config/paperless.env
+
+>  create mode 100644 config/tags_seed.yaml
+
+>  create mode 100644 contracts/classification.md
+
+>  create mode 100644 contracts/duplicate_contract.md
+
+>  create mode 100644 contracts/folder_contract.md
+
+>  create mode 100644 contracts/handoff_contract.md
+
+>  create mode 100644 contracts/ingest_contract.md
+
+>  create mode 100644 contracts/manifest_contract.md
+
+>  create mode 100644 contracts/metadata_contract.md
+
+>  create mode 100644 contracts/naming_contract.md
+
+>  create mode 100644 contracts/operations_contract.md
+
+>  create mode 100644 contracts/review_contract.md
+
+>  create mode 100644 data/00_INBOX/.gitkeep
+
+>  create mode 100644 data/01_STAGED/.gitkeep
+
+>  create mode 100644 data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
+
+>  create mode 100644 data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
+
+>  create mode 100644 data/10_REVIEW/.gitkeep
+
+>  create mode 100644 data/20_QUARANTINE/.gitkeep
+
+>  create mode 100644 data/30_EXPORTS/.gitkeep
+
+>  create mode 100644 data/90_MANIFESTS/.gitkeep
+
+>  create mode 100644 data/90_MANIFESTS/dedupe_report.csv
+
+>  create mode 100644 data/90_MANIFESTS/document_manifest.csv
+
+>  create mode 100644 data/90_MANIFESTS/document_manifest.jsonl
+
+>  create mode 100644 data/90_MANIFESTS/rename_map.csv
+
+>  create mode 100644 dev/README.md
+
+>  create mode 100644 dev/decisions/.gitkeep
+
+>  create mode 100644 dev/decisions/0001-identity-first-pipeline.md
+
+>  create mode 100644 dev/decisions/2026-03-06_v1_ingest_reality_check.md
+
+>  create mode 100644 dev/ide_state/.gitkeep
+
+>  create mode 100644 dev/ide_state/reality_check_v1.log
+
+>  create mode 100644 dev/notes/.gitkeep
+
+>  create mode 100644 dev/notes/implementation_v1.md
+
+>  create mode 100644 dev/prompts/.gitkeep
+
+>  create mode 100644 dev/prompts/ingest_v2_ideas.md
+
+>  create mode 100644 dev/scratch/.gitkeep
+
+>  create mode 100644 docker-compose.yml
+
+>  create mode 100644 docs/architecture.md
+
+>  create mode 100644 docs/paperless_integration.md
+
+>  create mode 100644 docs/setup.md
+
+>  create mode 100644 docs/workflow.md
+
+>  create mode 100644 schemas/document_manifest.schema.json
+
+>  create mode 100644 schemas/document_record.example.json
+
+>  create mode 100644 scripts/ingest/main.py
+
+>  create mode 100644 scripts/ops/handoff_to_paperless.py
+
+>  create mode 100644 scripts/ops/queue_report.py
+
+>  create mode 100644 scripts/ops/seed_metadata.py
+
+>  create mode 100644 scripts/utils/file_utils.py
+
+>  create mode 100644 scripts/utils/hash_utils.py
+
+>  create mode 100644 scripts/utils/id_utils.py
+
+>  create mode 100644 scripts/utils/manifest_utils.py
+
+>  create mode 100644 scripts/utils/slug_utils.py
+
+> Exit code 0
+
+> Ran command
+
+> …\QiArchive > python scripts/ops/queue_report.py
+
+> --- QiArchive Pipeline Report [2026-03-06 08:08:23] ---
+
+> Inbox       : 1 files
+
+> Staged      : 2 files
+
+> Quarantined : 1 files
+
+> Review      : 0 files
+
+> --------------------------------
+
+> Exit code 0
+
+> The v1 Milestone is now officially locked into the repository, and Phase 2 is in motion. We have graduated from a conceptual design to a verified, identity-first ingestion pipeline.
+
+> 
+
+> 🏛️ Milestone 1: v1 Ingest Locked
+
+> [x] ADR Documented: 
+
+> 
+
+> dev/decisions/2026-03-06_v1_ingest_reality_check.md
+
+>  preserves the test results and scope boundaries for future reference.
+
+> [x] First Milestone Commit: Executed git commit with the message:
+
+> feat(qiarchive): implement v1 identity-first ingest pipeline with manifest, dedupe, and staging
+
+> 
+
+> 🚀 Phase 2 Initialized: Paperless Handoff
+
+> I have laid the groundwork for the QiArchive → Paperless link:
+
+> 
+
+> Handoff Contract: 
+
+> 
+
+> contracts/handoff_contract.md
+
+>  establishes that QiArchive is the naming authority and Paperless is the indexing engine.
+
+> Handoff Script: 
+
+> 
+
+> scripts/ops/handoff_to_paperless.py
+
+>  is ready to copy files from 01_STAGED to the consumer directory with idempotency tracking.
+
+> Integration Guide: 
+
+> 
+
+> docs/paperless_integration.md
+
+>  explains the local Docker/volume-mount workflow.
+
+> Operational Visibility: 
+
+> 
+
+> scripts/ops/queue_report.py
+
+>  provides an instant snapshot of your pipeline health.
+
+> 📊 Pipeline Status Snapshot
+
+> Running 
+
+> 
+
+> scripts/ops/queue_report.py
+
+>  currently shows:
+
+> 
+
+> text
+
+> --- QiArchive Pipeline Report [2026-03-06 08:08:23] ---
+
+> Inbox       : 1 files (ignore_me.txt)
+
+> Staged      : 2 files (alpha, bravo)
+
+> Quarantined : 1 files (alpha_copy)
+
+> Review      : 0 files
+
+> --------------------------------
+
+> ✅ Ready to Test Phase 2
+
+> You can now start your local Paperless-ngx instance (via make up or docker-compose up -d) and run: python scripts/ops/handoff_to_paperless.py
+
+> 
+
+> This will bridge the gap and start the OCR/Search process for your staged files.
+
+> 
+
 > Everything is officially "Real." What would you like to tackle next?
 
 ### Assistant
@@ -5655,335 +6258,663 @@ canonical_ref: ""
 > Clean `.gitignore` and untrack runtime artifacts first. Then do the local Docker/Paperless handoff test.
 
 ### User
-> ```markdown
-> . 📂 QiArchive
-> ├── 📄 LICENSE
-> ├── 📄 Makefile
-> ├── 📄 README.md
-> └── 📂 config/
-> │  ├── 📄 correspondents_seed.yaml
-> │  ├── 📄 document_types_seed.yaml
-> │  ├── 📄 paperless.env
-> │  ├── 📄 tags_seed.yaml
-> └── 📂 contracts/
-> │  ├── 📄 classification.md
-> │  ├── 📄 duplicate_contract.md
-> │  ├── 📄 folder_contract.md
-> │  ├── 📄 handoff_contract.md
-> │  ├── 📄 ingest_contract.md
-> │  ├── 📄 manifest_contract.md
-> │  ├── 📄 metadata_contract.md
-> │  ├── 📄 naming_contract.md
-> │  ├── 📄 operations_contract.md
-> │  ├── 📄 review_contract.md
-> └── 📂 data/
-> │  └── 📂 00_INBOX/
-> │  └── 📂 01_STAGED/
-> │  └── 📂 10_REVIEW/
-> │  └── 📂 20_QUARANTINE/
-> │  └── 📂 30_EXPORTS/
-> │  └── 📂 90_MANIFESTS/
-> │  └── 📂 paperless/
-> │    └── 📂 consume/
-> │      ├── 📄 QDOC-2026-000001__alpha__undated.pdf
-> │      ├── 📄 QDOC-2026-000002__bravo__undated.pdf
-> │    └── 📂 data/
-> │    └── 📂 media/
-> └── 📂 dev/
-> │  ├── 📄 README.md
-> │  └── 📂 decisions/
-> │    ├── 📄 0001-identity-first-pipeline.md
-> │    ├── 📄 2026-03-06_v1_ingest_reality_check.md
-> │  └── 📂 ide_state/
-> │    ├── 📄 reality_check_v1.log
-> │  └── 📂 notes/
-> │    ├── 📄 implementation_v1.md
-> │  └── 📂 prompts/
-> │    ├── 📄 ingest_v2_ideas.md
-> │  └── 📂 scratch/
-> ├── 📄 docker-compose.yml
-> └── 📂 docs/
-> │  ├── 📄 architecture.md
-> │  ├── 📄 paperless_integration.md
-> │  ├── 📄 setup.md
-> │  ├── 📄 workflow.md
-> └── 📂 schemas/
-> │  ├── 📄 document_manifest.schema.json
-> │  ├── 📄 document_record.example.json
-> └── 📂 scripts/
-> │  └── 📂 ingest/
-> │    ├── 📄 main.py
-> │  └── 📂 ops/
-> │    ├── 📄 handoff_to_paperless.py
-> │    ├── 📄 queue_report.py
-> │    ├── 📄 seed_metadata.py
-> │  └── 📂 utils/
-> │    └── 📂 __pycache__/
-> │    ├── 📄 file_utils.py
-> │    ├── 📄 hash_utils.py
-> │    ├── 📄 id_utils.py
-> │    ├── 📄 manifest_utils.py
-> │    └── 📄 slug_utils.py
+> ```markdown
+
+> . 📂 QiArchive
+
+> ├── 📄 LICENSE
+
+> ├── 📄 Makefile
+
+> ├── 📄 README.md
+
+> └── 📂 config/
+
+> │  ├── 📄 correspondents_seed.yaml
+
+> │  ├── 📄 document_types_seed.yaml
+
+> │  ├── 📄 paperless.env
+
+> │  ├── 📄 tags_seed.yaml
+
+> └── 📂 contracts/
+
+> │  ├── 📄 classification.md
+
+> │  ├── 📄 duplicate_contract.md
+
+> │  ├── 📄 folder_contract.md
+
+> │  ├── 📄 handoff_contract.md
+
+> │  ├── 📄 ingest_contract.md
+
+> │  ├── 📄 manifest_contract.md
+
+> │  ├── 📄 metadata_contract.md
+
+> │  ├── 📄 naming_contract.md
+
+> │  ├── 📄 operations_contract.md
+
+> │  ├── 📄 review_contract.md
+
+> └── 📂 data/
+
+> │  └── 📂 00_INBOX/
+
+> │  └── 📂 01_STAGED/
+
+> │  └── 📂 10_REVIEW/
+
+> │  └── 📂 20_QUARANTINE/
+
+> │  └── 📂 30_EXPORTS/
+
+> │  └── 📂 90_MANIFESTS/
+
+> │  └── 📂 paperless/
+
+> │    └── 📂 consume/
+
+> │      ├── 📄 QDOC-2026-000001__alpha__undated.pdf
+
+> │      ├── 📄 QDOC-2026-000002__bravo__undated.pdf
+
+> │    └── 📂 data/
+
+> │    └── 📂 media/
+
+> └── 📂 dev/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 decisions/
+
+> │    ├── 📄 0001-identity-first-pipeline.md
+
+> │    ├── 📄 2026-03-06_v1_ingest_reality_check.md
+
+> │  └── 📂 ide_state/
+
+> │    ├── 📄 reality_check_v1.log
+
+> │  └── 📂 notes/
+
+> │    ├── 📄 implementation_v1.md
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 ingest_v2_ideas.md
+
+> │  └── 📂 scratch/
+
+> ├── 📄 docker-compose.yml
+
+> └── 📂 docs/
+
+> │  ├── 📄 architecture.md
+
+> │  ├── 📄 paperless_integration.md
+
+> │  ├── 📄 setup.md
+
+> │  ├── 📄 workflow.md
+
+> └── 📂 schemas/
+
+> │  ├── 📄 document_manifest.schema.json
+
+> │  ├── 📄 document_record.example.json
+
+> └── 📂 scripts/
+
+> │  └── 📂 ingest/
+
+> │    ├── 📄 main.py
+
+> │  └── 📂 ops/
+
+> │    ├── 📄 handoff_to_paperless.py
+
+> │    ├── 📄 queue_report.py
+
+> │    ├── 📄 seed_metadata.py
+
+> │  └── 📂 utils/
+
+> │    └── 📂 __pycache__/
+
+> │    ├── 📄 file_utils.py
+
+> │    ├── 📄 hash_utils.py
+
+> │    ├── 📄 id_utils.py
+
+> │    ├── 📄 manifest_utils.py
+
+> │    └── 📄 slug_utils.py
+
 > ```
-> 
-> Analyzed
-> 
-> 
-> Edited
-> +10
-> -6
-> Ran background command
-> …\QiArchive > git ls-files data/01_STAGED data/90_MANIFESTS
-> data/01_STAGED/.gitkeep
-> data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
-> data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
-> data/90_MANIFESTS/.gitkeep
-> data/90_MANIFESTS/dedupe_report.csv
-> data/90_MANIFESTS/document_manifest.csv
-> data/90_MANIFESTS/document_manifest.jsonl
-> data/90_MANIFESTS/rename_map.csv
-> Exit code 0
-> Checked command status
-> 
-> 
-> Ran background command
-> …\QiArchive > git ls-files data/20_QUARANTINE data/00_INBOX data/10_REVIEW data/30_EXPORTS
-> data/00_INBOX/.gitkeep
-> data/10_REVIEW/.gitkeep
-> data/20_QUARANTINE/.gitkeep
-> data/30_EXPORTS/.gitkeep
-> Exit code 0
-> Checked command status
-> Ran background command
-> …\QiArchive > git status
-> On branch main
-> Your branch is ahead of 'origin/main' by 1 commit.
->   (use "git push" to publish your local commits)
-> 
-> Changes not staged for commit:
->   (use "git add <file>..." to update what will be committed)
->   (use "git restore <file>..." to discard changes in working directory)
-> 	modified:   .gitignore
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")
-> Exit code 0
-> Checked command status
-> 
-> 
-> Ran background command
-> …\QiArchive > ls data/20_QUARANTINE; ls data/00_INBOX; ls data/01_STAGED; ls data/90_MANIFESTS
-> 
-> 
->     Directory: C:\QiLabs\QiArchive\data\20_QUARANTINE
-> 
-> 
-> Mode                 LastWriteTime         Length Name                                                                 
-> ----                 -------------         ------ ----                                                                 
-> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
-> -a----          3/6/2026   7:53 AM             26 alpha_copy.pdf                                                       
-> 
-> 
->     Directory: C:\QiLabs\QiArchive\data\00_INBOX
-> 
-> 
-> Mode                 LastWriteTime         Length Name                                                                 
-> ----                 -------------         ------ ----                                                                 
-> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
-> -a----          3/6/2026   7:53 AM             27 ignore_me.txt                                                        
-> 
-> 
->     Directory: C:\QiLabs\QiArchive\data\01_STAGED
-> 
-> 
-> Mode                 LastWriteTime         Length Name                                                                 
-> ----                 -------------         ------ ----                                                                 
-> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
-> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000001__alpha__undated.pdf                                 
-> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000002__bravo__undated.pdf                                 
-> 
-> 
->     Directory: C:\QiLabs\QiArchive\data\90_MANIFESTS
-> 
-> 
-> Mode                 LastWriteTime         Length Name                                                                 
-> ----                 -------------         ------ ----                                                                 
-> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
-> -a----          3/6/2026   7:54 AM            197 dedupe_report.csv                                                    
-> -a----          3/6/2026   7:54 AM            576 document_manifest.csv                                                
-> -a----          3/6/2026   7:54 AM            836 document_manifest.jsonl                                              
-> -a----          3/6/2026   7:54 AM            240 rename_map.csv                                                       
-> 
-> 
-> Exit code 0
-> Checked command status
-> 
-> 
-> Ran background command
-> …\QiArchive > Get-ChildItem -Path "data/00_INBOX", "data/01_STAGED", "data/20_QUARANTINE", "data/30_EXPORTS", "data/90_MANIFESTS" -File -Recurse | Select-Object FullName
-> 
-> FullName                                                               
-> --------                                                               
-> C:\QiLabs\QiArchive\data\00_INBOX\.gitkeep                             
-> C:\QiLabs\QiArchive\data\00_INBOX\ignore_me.txt                        
-> C:\QiLabs\QiArchive\data\01_STAGED\.gitkeep                            
-> C:\QiLabs\QiArchive\data\01_STAGED\QDOC-2026-000001__alpha__undated.pdf
-> C:\QiLabs\QiArchive\data\01_STAGED\QDOC-2026-000002__bravo__undated.pdf
-> C:\QiLabs\QiArchive\data\20_QUARANTINE\.gitkeep                        
-> C:\QiLabs\QiArchive\data\20_QUARANTINE\alpha_copy.pdf                  
-> C:\QiLabs\QiArchive\data\30_EXPORTS\.gitkeep                           
-> C:\QiLabs\QiArchive\data\90_MANIFESTS\.gitkeep                         
-> C:\QiLabs\QiArchive\data\90_MANIFESTS\dedupe_report.csv                
-> C:\QiLabs\QiArchive\data\90_MANIFESTS\document_manifest.csv            
-> C:\QiLabs\QiArchive\data\90_MANIFESTS\document_manifest.jsonl          
-> C:\QiLabs\QiArchive\data\90_MANIFESTS\rename_map.csv                   
-> 
-> 
-> Exit code 0
-> Checked command status
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> Ran background command
-> …\QiArchive > git rm --cached data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf;
-> git rm --cached data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf;
-> git rm --cached data/90_MANIFESTS/dedupe_report.csv;
-> git rm --cached data/90_MANIFESTS/document_manifest.csv;
-> git rm --cached data/90_MANIFESTS/document_manifest.jsonl;
-> git rm --cached data/90_MANIFESTS/rename_map.csv;
-> git add .gitignore;
-> git commit -m "chore(qiarchive): ignore runtime data and live manifests from version control";
-> rm 'data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf'
-> rm 'data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf'
-> rm 'data/90_MANIFESTS/dedupe_report.csv'
-> rm 'data/90_MANIFESTS/document_manifest.csv'
-> rm 'data/90_MANIFESTS/document_manifest.jsonl'
-> rm 'data/90_MANIFESTS/rename_map.csv'
-> [main aace18b] chore(qiarchive): ignore runtime data and live manifests from version control
->  7 files changed, 10 insertions(+), 18 deletions(-)
->  delete mode 100644 data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
->  delete mode 100644 data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
->  delete mode 100644 data/90_MANIFESTS/dedupe_report.csv
->  delete mode 100644 data/90_MANIFESTS/document_manifest.csv
->  delete mode 100644 data/90_MANIFESTS/document_manifest.jsonl
->  delete mode 100644 data/90_MANIFESTS/rename_map.csv
-> Exit code 0
-> Checked command status
-> 
-> 
-> 
-> 
-> Edited
-> +1
-> -1
-> Ran background command
-> …\QiArchive > New-Item -ItemType Directory -Path "data/paperless/consume", "data/paperless/data", "data/paperless/media" -Force | Out-Null;
-> Exit code 0
-> Checked command status
-> Ran command
-> …\QiArchive > docker-compose up -d
-> time="2026-03-06T08:56:03-06:00" level=warning msg="C:\\QiLabs\\QiArchive\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
-> env file C:\QiLabs\QiArchive\.env not found: CreateFile C:\QiLabs\QiArchive\.env: The system cannot find the file specified.
-> Exit code 1
-> Ran background command
-> …\QiArchive > cp .env.example .env
-> Exit code 0
-> Checked command status
-> Edited
-> +0
-> -1
-> Ran command
-> …\QiArchive > docker-compose up -d
-> unable to get image 'ghcr.io/paperless-ngx/paperless-ngx:latest': error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/ghcr.io/paperless-ngx/paperless-ngx:latest/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
-> Exit code 1
-> 
-> 
-> Ran background command
-> …\QiArchive > docker version
-> Client:
->  Version:           29.2.1
->  API version:       1.53
->  Go version:        go1.25.6
->  Git commit:        a5c7197
->  Built:             Mon Feb  2 17:20:16 2026
->  OS/Arch:           windows/amd64
->  Context:           desktop-linux
-> failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
-> Exit code 1
-> Checked command status
-> 
-> 
-> Ran command
-> …\QiArchive > python scripts/ops/handoff_to_paperless.py
-> --- QiArchive Paperless Handoff Start [2026-03-06 08:56:35] ---
-> Handoff: QDOC-2026-000001__alpha__undated.pdf -> data/paperless/consume
-> Handoff: QDOC-2026-000002__bravo__undated.pdf -> data/paperless/consume
-> Summary: 2 files handed off to Paperless.
-> --------------------------------
-> 
-> Exit code 0
-> Ran background command
-> …\QiArchive > ls data/paperless/consume
-> 
-> 
->     Directory: C:\QiLabs\QiArchive\data\paperless\consume
-> 
-> 
-> Mode                 LastWriteTime         Length Name                                                                 
-> ----                 -------------         ------ ----                                                                 
-> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000001__alpha__undated.pdf                                 
-> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000002__bravo__undated.pdf                                 
-> 
-> 
-> Exit code 0
-> Checked command status
-> The v1 Milestone is now officially "hygienic" and Phase 2A (Handoff) has been successfully verified locally.
-> 
-> 🧹 Repo Hygiene & Milestone Locking
-> I have updated the repository rules to ensure it remains a clean blueprint/contract repo rather than a storage for private runtime data:
-> 
-> [x] 
-> 
-> .gitignore
->  Updated: Now ignores all runtime artifacts in data/ while preserving the folder structure via .gitkeep.
-> [x] Manifests Untracked: Live 
-> 
-> .csv
->  and 
-> 
-> .jsonl
->  manifests are now ignored by Git. They remain on your local system but won't be versioned.
-> [x] Clean Cache: Successfully untracked the test PDFs and manifests from the Git index.
-> [x] Milestone Commit:
-> chore(qiarchive): ignore runtime data and live manifests from version control
-> 
-> 🚀 Phase 2A: Handoff Verification (SUCCESS)
-> I have performed a local smoke test of the handoff mechanism:
-> 
-> Handoff Execution: Ran python scripts/ops/handoff_to_paperless.py.
-> Idempotency & Integrity: The script correctly identified the 2 staged files (alpha and bravo) and safely copied them to the bridge folder.
-> Result:
-> Source: data/01_STAGED/ (Canonical Identity Preserved)
-> Target: data/paperless/consume/ (Feeder Path Ready)
-> Identity: Filenames remain strict: QDOC-2026-000001__alpha__undated.pdf.
-> Verified File Bridge:
-> text
-> C:\QiLabs\QiArchive\data\paperless\consume\
-> ├── QDOC-2026-000001__alpha__undated.pdf
-> └── QDOC-2026-000002__bravo__undated.pdf
-> ⚠️ Phase 2B: Local Docker Status
-> I attempted to bring up the Paperless-ngx stack using docker-compose up -d, but it failed because the Docker Desktop daemon is not currently running on your system.
-> 
-> IMPORTANT
-> 
-> To complete the end-to-end test (Phase 2B), please start Docker Desktop on your machine. Once it's running, you can execute make up to launch the OCR/Search engine.
-> 
-> Once Docker is up, Paperless will automatically ingest and index the files currently sitting in data/paperless/consume/.
-> 
+> 
+
+> Analyzed
+
+> 
+
+> 
+
+> Edited
+
+> +10
+
+> -6
+
+> Ran background command
+
+> …\QiArchive > git ls-files data/01_STAGED data/90_MANIFESTS
+
+> data/01_STAGED/.gitkeep
+
+> data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
+
+> data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
+
+> data/90_MANIFESTS/.gitkeep
+
+> data/90_MANIFESTS/dedupe_report.csv
+
+> data/90_MANIFESTS/document_manifest.csv
+
+> data/90_MANIFESTS/document_manifest.jsonl
+
+> data/90_MANIFESTS/rename_map.csv
+
+> Exit code 0
+
+> Checked command status
+
+> 
+
+> 
+
+> Ran background command
+
+> …\QiArchive > git ls-files data/20_QUARANTINE data/00_INBOX data/10_REVIEW data/30_EXPORTS
+
+> data/00_INBOX/.gitkeep
+
+> data/10_REVIEW/.gitkeep
+
+> data/20_QUARANTINE/.gitkeep
+
+> data/30_EXPORTS/.gitkeep
+
+> Exit code 0
+
+> Checked command status
+
+> Ran background command
+
+> …\QiArchive > git status
+
+> On branch main
+
+> Your branch is ahead of 'origin/main' by 1 commit.
+
+>   (use "git push" to publish your local commits)
+
+> 
+
+> Changes not staged for commit:
+
+>   (use "git add <file>..." to update what will be committed)
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+> 	modified:   .gitignore
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+> Exit code 0
+
+> Checked command status
+
+> 
+
+> 
+
+> Ran background command
+
+> …\QiArchive > ls data/20_QUARANTINE; ls data/00_INBOX; ls data/01_STAGED; ls data/90_MANIFESTS
+
+> 
+
+> 
+
+>     Directory: C:\QiLabs\QiArchive\data\20_QUARANTINE
+
+> 
+
+> 
+
+> Mode                 LastWriteTime         Length Name                                                                 
+
+> ----                 -------------         ------ ----                                                                 
+
+> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
+
+> -a----          3/6/2026   7:53 AM             26 alpha_copy.pdf                                                       
+
+> 
+
+> 
+
+>     Directory: C:\QiLabs\QiArchive\data\00_INBOX
+
+> 
+
+> 
+
+> Mode                 LastWriteTime         Length Name                                                                 
+
+> ----                 -------------         ------ ----                                                                 
+
+> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
+
+> -a----          3/6/2026   7:53 AM             27 ignore_me.txt                                                        
+
+> 
+
+> 
+
+>     Directory: C:\QiLabs\QiArchive\data\01_STAGED
+
+> 
+
+> 
+
+> Mode                 LastWriteTime         Length Name                                                                 
+
+> ----                 -------------         ------ ----                                                                 
+
+> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
+
+> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000001__alpha__undated.pdf                                 
+
+> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000002__bravo__undated.pdf                                 
+
+> 
+
+> 
+
+>     Directory: C:\QiLabs\QiArchive\data\90_MANIFESTS
+
+> 
+
+> 
+
+> Mode                 LastWriteTime         Length Name                                                                 
+
+> ----                 -------------         ------ ----                                                                 
+
+> -a----          3/6/2026   7:43 AM              0 .gitkeep                                                             
+
+> -a----          3/6/2026   7:54 AM            197 dedupe_report.csv                                                    
+
+> -a----          3/6/2026   7:54 AM            576 document_manifest.csv                                                
+
+> -a----          3/6/2026   7:54 AM            836 document_manifest.jsonl                                              
+
+> -a----          3/6/2026   7:54 AM            240 rename_map.csv                                                       
+
+> 
+
+> 
+
+> Exit code 0
+
+> Checked command status
+
+> 
+
+> 
+
+> Ran background command
+
+> …\QiArchive > Get-ChildItem -Path "data/00_INBOX", "data/01_STAGED", "data/20_QUARANTINE", "data/30_EXPORTS", "data/90_MANIFESTS" -File -Recurse | Select-Object FullName
+
+> 
+
+> FullName                                                               
+
+> --------                                                               
+
+> C:\QiLabs\QiArchive\data\00_INBOX\.gitkeep                             
+
+> C:\QiLabs\QiArchive\data\00_INBOX\ignore_me.txt                        
+
+> C:\QiLabs\QiArchive\data\01_STAGED\.gitkeep                            
+
+> C:\QiLabs\QiArchive\data\01_STAGED\QDOC-2026-000001__alpha__undated.pdf
+
+> C:\QiLabs\QiArchive\data\01_STAGED\QDOC-2026-000002__bravo__undated.pdf
+
+> C:\QiLabs\QiArchive\data\20_QUARANTINE\.gitkeep                        
+
+> C:\QiLabs\QiArchive\data\20_QUARANTINE\alpha_copy.pdf                  
+
+> C:\QiLabs\QiArchive\data\30_EXPORTS\.gitkeep                           
+
+> C:\QiLabs\QiArchive\data\90_MANIFESTS\.gitkeep                         
+
+> C:\QiLabs\QiArchive\data\90_MANIFESTS\dedupe_report.csv                
+
+> C:\QiLabs\QiArchive\data\90_MANIFESTS\document_manifest.csv            
+
+> C:\QiLabs\QiArchive\data\90_MANIFESTS\document_manifest.jsonl          
+
+> C:\QiLabs\QiArchive\data\90_MANIFESTS\rename_map.csv                   
+
+> 
+
+> 
+
+> Exit code 0
+
+> Checked command status
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> Ran background command
+
+> …\QiArchive > git rm --cached data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf;
+
+> git rm --cached data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf;
+
+> git rm --cached data/90_MANIFESTS/dedupe_report.csv;
+
+> git rm --cached data/90_MANIFESTS/document_manifest.csv;
+
+> git rm --cached data/90_MANIFESTS/document_manifest.jsonl;
+
+> git rm --cached data/90_MANIFESTS/rename_map.csv;
+
+> git add .gitignore;
+
+> git commit -m "chore(qiarchive): ignore runtime data and live manifests from version control";
+
+> rm 'data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf'
+
+> rm 'data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf'
+
+> rm 'data/90_MANIFESTS/dedupe_report.csv'
+
+> rm 'data/90_MANIFESTS/document_manifest.csv'
+
+> rm 'data/90_MANIFESTS/document_manifest.jsonl'
+
+> rm 'data/90_MANIFESTS/rename_map.csv'
+
+> [main aace18b] chore(qiarchive): ignore runtime data and live manifests from version control
+
+>  7 files changed, 10 insertions(+), 18 deletions(-)
+
+>  delete mode 100644 data/01_STAGED/QDOC-2026-000001__alpha__undated.pdf
+
+>  delete mode 100644 data/01_STAGED/QDOC-2026-000002__bravo__undated.pdf
+
+>  delete mode 100644 data/90_MANIFESTS/dedupe_report.csv
+
+>  delete mode 100644 data/90_MANIFESTS/document_manifest.csv
+
+>  delete mode 100644 data/90_MANIFESTS/document_manifest.jsonl
+
+>  delete mode 100644 data/90_MANIFESTS/rename_map.csv
+
+> Exit code 0
+
+> Checked command status
+
+> 
+
+> 
+
+> 
+
+> 
+
+> Edited
+
+> +1
+
+> -1
+
+> Ran background command
+
+> …\QiArchive > New-Item -ItemType Directory -Path "data/paperless/consume", "data/paperless/data", "data/paperless/media" -Force | Out-Null;
+
+> Exit code 0
+
+> Checked command status
+
+> Ran command
+
+> …\QiArchive > docker-compose up -d
+
+> time="2026-03-06T08:56:03-06:00" level=warning msg="C:\\QiLabs\\QiArchive\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+
+> env file C:\QiLabs\QiArchive\.env not found: CreateFile C:\QiLabs\QiArchive\.env: The system cannot find the file specified.
+
+> Exit code 1
+
+> Ran background command
+
+> …\QiArchive > cp .env.example .env
+
+> Exit code 0
+
+> Checked command status
+
+> Edited
+
+> +0
+
+> -1
+
+> Ran command
+
+> …\QiArchive > docker-compose up -d
+
+> unable to get image 'ghcr.io/paperless-ngx/paperless-ngx:latest': error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/images/ghcr.io/paperless-ngx/paperless-ngx:latest/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+
+> Exit code 1
+
+> 
+
+> 
+
+> Ran background command
+
+> …\QiArchive > docker version
+
+> Client:
+
+>  Version:           29.2.1
+
+>  API version:       1.53
+
+>  Go version:        go1.25.6
+
+>  Git commit:        a5c7197
+
+>  Built:             Mon Feb  2 17:20:16 2026
+
+>  OS/Arch:           windows/amd64
+
+>  Context:           desktop-linux
+
+> failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+
+> Exit code 1
+
+> Checked command status
+
+> 
+
+> 
+
+> Ran command
+
+> …\QiArchive > python scripts/ops/handoff_to_paperless.py
+
+> --- QiArchive Paperless Handoff Start [2026-03-06 08:56:35] ---
+
+> Handoff: QDOC-2026-000001__alpha__undated.pdf -> data/paperless/consume
+
+> Handoff: QDOC-2026-000002__bravo__undated.pdf -> data/paperless/consume
+
+> Summary: 2 files handed off to Paperless.
+
+> --------------------------------
+
+> 
+
+> Exit code 0
+
+> Ran background command
+
+> …\QiArchive > ls data/paperless/consume
+
+> 
+
+> 
+
+>     Directory: C:\QiLabs\QiArchive\data\paperless\consume
+
+> 
+
+> 
+
+> Mode                 LastWriteTime         Length Name                                                                 
+
+> ----                 -------------         ------ ----                                                                 
+
+> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000001__alpha__undated.pdf                                 
+
+> -a----          3/6/2026   7:53 AM             26 QDOC-2026-000002__bravo__undated.pdf                                 
+
+> 
+
+> 
+
+> Exit code 0
+
+> Checked command status
+
+> The v1 Milestone is now officially "hygienic" and Phase 2A (Handoff) has been successfully verified locally.
+
+> 
+
+> 🧹 Repo Hygiene & Milestone Locking
+
+> I have updated the repository rules to ensure it remains a clean blueprint/contract repo rather than a storage for private runtime data:
+
+> 
+
+> [x] 
+
+> 
+
+> .gitignore
+
+>  Updated: Now ignores all runtime artifacts in data/ while preserving the folder structure via .gitkeep.
+
+> [x] Manifests Untracked: Live 
+
+> 
+
+> .csv
+
+>  and 
+
+> 
+
+> .jsonl
+
+>  manifests are now ignored by Git. They remain on your local system but won't be versioned.
+
+> [x] Clean Cache: Successfully untracked the test PDFs and manifests from the Git index.
+
+> [x] Milestone Commit:
+
+> chore(qiarchive): ignore runtime data and live manifests from version control
+
+> 
+
+> 🚀 Phase 2A: Handoff Verification (SUCCESS)
+
+> I have performed a local smoke test of the handoff mechanism:
+
+> 
+
+> Handoff Execution: Ran python scripts/ops/handoff_to_paperless.py.
+
+> Idempotency & Integrity: The script correctly identified the 2 staged files (alpha and bravo) and safely copied them to the bridge folder.
+
+> Result:
+
+> Source: data/01_STAGED/ (Canonical Identity Preserved)
+
+> Target: data/paperless/consume/ (Feeder Path Ready)
+
+> Identity: Filenames remain strict: QDOC-2026-000001__alpha__undated.pdf.
+
+> Verified File Bridge:
+
+> text
+
+> C:\QiLabs\QiArchive\data\paperless\consume\
+
+> ├── QDOC-2026-000001__alpha__undated.pdf
+
+> └── QDOC-2026-000002__bravo__undated.pdf
+
+> ⚠️ Phase 2B: Local Docker Status
+
+> I attempted to bring up the Paperless-ngx stack using docker-compose up -d, but it failed because the Docker Desktop daemon is not currently running on your system.
+
+> 
+
+> IMPORTANT
+
+> 
+
+> To complete the end-to-end test (Phase 2B), please start Docker Desktop on your machine. Once it's running, you can execute make up to launch the OCR/Search engine.
+
+> 
+
+> Once Docker is up, Paperless will automatically ingest and index the files currently sitting in data/paperless/consume/.
+
+> 
+
 > Should I wait for you to start Docker, or would you like to move on to refining the Status Model in the manifest?
 
 ### Assistant
@@ -6326,44 +7257,82 @@ canonical_ref: ""
 > and I’ll confirm the stack looks correct.
 
 ### User
-> Microsoft Windows [Version 10.0.26200.7840]
-> (c) Microsoft Corporation. All rights reserved.
-> 
-> C:\Users\Lisa>docker version
-> Client:
->  Version:           29.2.1
->  API version:       1.53
->  Go version:        go1.25.6
->  Git commit:        a5c7197
->  Built:             Mon Feb  2 17:20:16 2026
->  OS/Arch:           windows/amd64
->  Context:           desktop-linux
-> 
-> Server: Docker Desktop 4.62.0 (219486)
->  Engine:
->   Version:          29.2.1
->   API version:      1.53 (minimum version 1.44)
->   Go version:       go1.25.6
->   Git commit:       6bc6209
->   Built:            Mon Feb  2 17:17:24 2026
->   OS/Arch:          linux/amd64
->   Experimental:     false
->  containerd:
->   Version:          v2.2.1
->   GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
->  runc:
->   Version:          1.3.4
->   GitCommit:        v1.3.4-0-gd6d73eb8
->  docker-init:
->   Version:          0.19.0
->   GitCommit:        de40ad0
-> 
-> C:\Users\Lisa>docker-compose up -d
-> no configuration file provided: not found
-> 
-> C:\Users\Lisa>docker compose up -d
-> no configuration file provided: not found
-> 
+> Microsoft Windows [Version 10.0.26200.7840]
+
+> (c) Microsoft Corporation. All rights reserved.
+
+> 
+
+> C:\Users\Lisa>docker version
+
+> Client:
+
+>  Version:           29.2.1
+
+>  API version:       1.53
+
+>  Go version:        go1.25.6
+
+>  Git commit:        a5c7197
+
+>  Built:             Mon Feb  2 17:20:16 2026
+
+>  OS/Arch:           windows/amd64
+
+>  Context:           desktop-linux
+
+> 
+
+> Server: Docker Desktop 4.62.0 (219486)
+
+>  Engine:
+
+>   Version:          29.2.1
+
+>   API version:      1.53 (minimum version 1.44)
+
+>   Go version:       go1.25.6
+
+>   Git commit:       6bc6209
+
+>   Built:            Mon Feb  2 17:17:24 2026
+
+>   OS/Arch:          linux/amd64
+
+>   Experimental:     false
+
+>  containerd:
+
+>   Version:          v2.2.1
+
+>   GitCommit:        dea7da592f5d1d2b7755e3a161be07f43fad8f75
+
+>  runc:
+
+>   Version:          1.3.4
+
+>   GitCommit:        v1.3.4-0-gd6d73eb8
+
+>  docker-init:
+
+>   Version:          0.19.0
+
+>   GitCommit:        de40ad0
+
+> 
+
+> C:\Users\Lisa>docker-compose up -d
+
+> no configuration file provided: not found
+
+> 
+
+> C:\Users\Lisa>docker compose up -d
+
+> no configuration file provided: not found
+
+> 
+
 > C:\Users\Lisa> but shoulndt we have this on rail way?
 
 ### Assistant
@@ -7536,117 +8505,228 @@ canonical_ref: ""
 > and I’ll walk you through the final wiring so QiArchive can start feeding documents into it.
 
 ### User
-> paperless-ngx
-> Deployments
-> Backups
-> Variables
-> Metrics
-> Settings
-> Filter settings
-> Filter Settings...
-> 
-> /
-> Source
-> Source Image
-> paperlessngx/paperless-ngx:dev
-> 
-> 
-> Configure auto updates
-> 
-> 
-> Disconnect
-> Networking
-> Public Networking
-> Access to this service publicly through HTTP or TCP
-> 
-> Generate Domain
-> 
-> Custom Domain
-> 
-> TCP Proxy
-> Private Networking
-> Communicate with this service from within the Railway network.
-> paperless-ngx.railway.internal
-> IPv4 & IPv6
-> 
-> 
-> Ready to talk privately ·
-> You can also simply call me
-> paperless-ngx
-> .
-> 
-> DNS
-> paperless-ngx
-> .railway.internal
-> 
-> Endpoint name available!
-> 
-> 
-> Cancel
-> 
-> Update
-> Scale
-> Regions & Replicas
-> Deploy replicas per region for horizontal scaling.
-> US East (Virginia, USA)
-> 
-> Replicas
-> 1
-> Replica
-> Replicas are not available for attached volumes.
-> 
-> Learn More↗
-> Replica Limits
-> Allocate a maximum vCPU and Memory for each replica.
-> CPU: 8 vCPU
-> 
-> Plan limit: 8 vCPU
-> 
-> Memory: 8 GB
-> 
-> Plan limit: 8 GB
-> 
-> Upgrade for higher limits
-> Build
-> Metal Build Environment
-> Metal
-> 
-> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
-> 
-> 
-> Deploy
-> Custom Start Command
-> Command that will be run to start new deployments. Docs↗
-> 
-> Start Command
-> Add pre-deploy step (Docs↗)
-> Teardown
-> Configure old deployment termination when a new one is started. Docs↗
-> 
-> Cron Schedule
-> Run the service according to the specified cron schedule.
-> 
-> Add Schedule
-> Healthcheck Path
-> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
-> 
-> Healthcheck Path
-> Serverless
-> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
-> 
-> Restart Policy
-> Configure what to do when the process exits. Docs↗
-> On Failure
-> 
-> Restart the container if it exits with a non-zero exit code.
-> 
-> 
-> Number of times to try and restart the service if it stopped due to an error.
-> Max restart retries
-> 10
-> Delete Service
-> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
-> 
+> paperless-ngx
+
+> Deployments
+
+> Backups
+
+> Variables
+
+> Metrics
+
+> Settings
+
+> Filter settings
+
+> Filter Settings...
+
+> 
+
+> /
+
+> Source
+
+> Source Image
+
+> paperlessngx/paperless-ngx:dev
+
+> 
+
+> 
+
+> Configure auto updates
+
+> 
+
+> 
+
+> Disconnect
+
+> Networking
+
+> Public Networking
+
+> Access to this service publicly through HTTP or TCP
+
+> 
+
+> Generate Domain
+
+> 
+
+> Custom Domain
+
+> 
+
+> TCP Proxy
+
+> Private Networking
+
+> Communicate with this service from within the Railway network.
+
+> paperless-ngx.railway.internal
+
+> IPv4 & IPv6
+
+> 
+
+> 
+
+> Ready to talk privately ·
+
+> You can also simply call me
+
+> paperless-ngx
+
+> .
+
+> 
+
+> DNS
+
+> paperless-ngx
+
+> .railway.internal
+
+> 
+
+> Endpoint name available!
+
+> 
+
+> 
+
+> Cancel
+
+> 
+
+> Update
+
+> Scale
+
+> Regions & Replicas
+
+> Deploy replicas per region for horizontal scaling.
+
+> US East (Virginia, USA)
+
+> 
+
+> Replicas
+
+> 1
+
+> Replica
+
+> Replicas are not available for attached volumes.
+
+> 
+
+> Learn More↗
+
+> Replica Limits
+
+> Allocate a maximum vCPU and Memory for each replica.
+
+> CPU: 8 vCPU
+
+> 
+
+> Plan limit: 8 vCPU
+
+> 
+
+> Memory: 8 GB
+
+> 
+
+> Plan limit: 8 GB
+
+> 
+
+> Upgrade for higher limits
+
+> Build
+
+> Metal Build Environment
+
+> Metal
+
+> 
+
+> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
+
+> 
+
+> 
+
+> Deploy
+
+> Custom Start Command
+
+> Command that will be run to start new deployments. Docs↗
+
+> 
+
+> Start Command
+
+> Add pre-deploy step (Docs↗)
+
+> Teardown
+
+> Configure old deployment termination when a new one is started. Docs↗
+
+> 
+
+> Cron Schedule
+
+> Run the service according to the specified cron schedule.
+
+> 
+
+> Add Schedule
+
+> Healthcheck Path
+
+> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
+
+> 
+
+> Healthcheck Path
+
+> Serverless
+
+> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
+
+> 
+
+> Restart Policy
+
+> Configure what to do when the process exits. Docs↗
+
+> On Failure
+
+> 
+
+> Restart the container if it exits with a non-zero exit code.
+
+> 
+
+> 
+
+> Number of times to try and restart the service if it stopped due to an error.
+
+> Max restart retries
+
+> 10
+
+> Delete Service
+
+> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
+
+> 
+
 > Delete service
 
 ### Assistant
@@ -7957,16 +9037,26 @@ canonical_ref: ""
 > Once Paperless boots, we’ll do the **QiArchive → Paperless API upload bridge** so your pipeline actually feeds the system automatically.
 
 ### User
-> Application failed to respond
-> This error appears to be caused by the application.
-> 
-> If this is your project, check out your deploy logs to see what went wrong. Refer to our docs on Fixing Common Errors for help, or reach out over our Help Station.
-> 
-> If you are a visitor, please contact the application owner or try again later.
-> 
-> Request ID:
-> uAMFnyKbSY-bU9dwaP71AA
-> 
+> Application failed to respond
+
+> This error appears to be caused by the application.
+
+> 
+
+> If this is your project, check out your deploy logs to see what went wrong. Refer to our docs on Fixing Common Errors for help, or reach out over our Help Station.
+
+> 
+
+> If you are a visitor, please contact the application owner or try again later.
+
+> 
+
+> Request ID:
+
+> uAMFnyKbSY-bU9dwaP71AA
+
+> 
+
 > Go to Railway
 
 ### Assistant
@@ -8484,94 +9574,182 @@ canonical_ref: ""
 > Open the public Railway URL first. If you see the Paperless login page, the deployment phase is finished. Then the only remaining task is creating the first admin user.
 
 ### User
-> i tried to create an admin and got and error, Request URL
-> https://paperless-ngx-production-feda.up.railway.app/accounts/signup/?next=%2F
-> Request Method
-> POST
-> Status Code
-> 403 Forbidden
-> Remote Address
-> 66.33.22.4:443
-> Referrer Policy
-> same-origin
-> content-encoding
-> zstd
-> content-language
-> en-us
-> content-length
-> 554
-> content-type
-> text/html; charset=utf-8
-> cross-origin-opener-policy
-> same-origin
-> date
-> Fri, 06 Mar 2026 16:39:00 GMT
-> referrer-policy
-> same-origin
-> server
-> railway-edge
-> vary
-> Accept-Language, origin, Cookie, Accept-Encoding
-> x-content-type-options
-> nosniff
-> x-frame-options
-> SAMEORIGIN
-> x-railway-edge
-> railway/us-east4-eqdc4a
-> x-railway-request-id
-> oWE_T_eSRmaoipQ3g4a9AQ
-> :authority
-> paperless-ngx-production-feda.up.railway.app
-> :method
-> POST
-> :path
-> /accounts/signup/?next=%2F
-> :scheme
-> https
-> accept
-> text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-> accept-encoding
-> gzip, deflate, br, zstd
-> accept-language
-> en-US,en;q=0.9
-> cache-control
-> max-age=0
-> content-length
-> 180
-> content-type
-> application/x-www-form-urlencoded
-> cookie
-> csrftoken=Dvl5mhSRek8jFqtV6v72vatRne1hxrHn
-> origin
-> https://paperless-ngx-production-feda.up.railway.app
-> priority
-> u=0, i
-> referer
-> https://paperless-ngx-production-feda.up.railway.app/accounts/signup/?next=%2F
-> sec-ch-ua
-> "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
-> sec-ch-ua-mobile
-> ?0
-> sec-ch-ua-platform
-> "Windows"
-> sec-fetch-dest
-> document
-> sec-fetch-mode
-> navigate
-> sec-fetch-site
-> same-origin
-> sec-fetch-user
-> ?1
-> upgrade-insecure-requests
-> 1
-> user-agent
-> Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
-> ﻿
-> ﻿
-> 
-> Press ctrl i to turn on code suggestions. Press ctrl x to disable code suggestions.
-> ctrl
-> i
+> i tried to create an admin and got and error, Request URL
+
+> https://paperless-ngx-production-feda.up.railway.app/accounts/signup/?next=%2F
+
+> Request Method
+
+> POST
+
+> Status Code
+
+> 403 Forbidden
+
+> Remote Address
+
+> 66.33.22.4:443
+
+> Referrer Policy
+
+> same-origin
+
+> content-encoding
+
+> zstd
+
+> content-language
+
+> en-us
+
+> content-length
+
+> 554
+
+> content-type
+
+> text/html; charset=utf-8
+
+> cross-origin-opener-policy
+
+> same-origin
+
+> date
+
+> Fri, 06 Mar 2026 16:39:00 GMT
+
+> referrer-policy
+
+> same-origin
+
+> server
+
+> railway-edge
+
+> vary
+
+> Accept-Language, origin, Cookie, Accept-Encoding
+
+> x-content-type-options
+
+> nosniff
+
+> x-frame-options
+
+> SAMEORIGIN
+
+> x-railway-edge
+
+> railway/us-east4-eqdc4a
+
+> x-railway-request-id
+
+> oWE_T_eSRmaoipQ3g4a9AQ
+
+> :authority
+
+> paperless-ngx-production-feda.up.railway.app
+
+> :method
+
+> POST
+
+> :path
+
+> /accounts/signup/?next=%2F
+
+> :scheme
+
+> https
+
+> accept
+
+> text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+
+> accept-encoding
+
+> gzip, deflate, br, zstd
+
+> accept-language
+
+> en-US,en;q=0.9
+
+> cache-control
+
+> max-age=0
+
+> content-length
+
+> 180
+
+> content-type
+
+> application/x-www-form-urlencoded
+
+> cookie
+
+> csrftoken=Dvl5mhSRek8jFqtV6v72vatRne1hxrHn
+
+> origin
+
+> https://paperless-ngx-production-feda.up.railway.app
+
+> priority
+
+> u=0, i
+
+> referer
+
+> https://paperless-ngx-production-feda.up.railway.app/accounts/signup/?next=%2F
+
+> sec-ch-ua
+
+> "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+
+> sec-ch-ua-mobile
+
+> ?0
+
+> sec-ch-ua-platform
+
+> "Windows"
+
+> sec-fetch-dest
+
+> document
+
+> sec-fetch-mode
+
+> navigate
+
+> sec-fetch-site
+
+> same-origin
+
+> sec-fetch-user
+
+> ?1
+
+> upgrade-insecure-requests
+
+> 1
+
+> user-agent
+
+> Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+
+> ﻿
+
+> ﻿
+
+> 
+
+> Press ctrl i to turn on code suggestions. Press ctrl x to disable code suggestions.
+
+> ctrl
+
+> i
+
 >  to turn on code suggestions. Don't show again
 
 ### Assistant
@@ -11050,183 +12228,360 @@ canonical_ref: ""
 > 4. Paste me the IDE summary or the generated file tree, and I’ll tell you exactly what to click next in Railway.
 
 ### User
-> ok are you awere that railway has thousands of template, the have ai agenticc automation, vectors, databases, automation ect, in theory the output in paperless could be vectorized in the same project in railway? also the bot can be spun up in railway, the only thing we need is our qiarchive orchestrator really to tie it all in my light admin dashboard and search (search is also available in railway) so why are we building so much when there are these templlate. 
-> Railway
-> Dashboard
-> 
-> 
-> Deploy an app in minutes
-> What would you like to deploy today?
-> rag
-> Popular
-> Verified
-> Featured
-> 
-> All templates (2435)
-> 
-> View Template
-> 
-> WordPress
-> A content management system (CMS) written in PHP
-> Jack
-> 6.5K
-> Deploy
-> View Template
-> 
-> Supabase
-> Supabase without Functions and Logflare
-> Six
-> 796
-> Deploy
-> View Template
-> 
-> Grafana Stack
-> One-click observability with Loki, Prometheus, Tempo, and Grafana
-> Tinybox Software
-> 268
-> Deploy
-> View Template
-> 
-> Chatwoot
-> A customer communication platform
-> Brody
-> 4.6K
-> Deploy
-> View Template
-> 
-> ChromaDB
-> The AI-native embedding database
-> ISDev
-> 499
-> Deploy
-> View Template
-> 
-> Valkey
-> An open source, Redis compatible, in-memory data store
-> Brody
-> 59
-> Deploy
-> View Template
-> 
-> N8N (w/ workers)
-> A powerful workflow automation tool for technical people
-> Jack
-> 96K
-> Deploy
-> View Template
-> 
-> Umami
-> An open source, privacy-focused alternative to Google Analytics
-> Brody
-> 3.6K
-> Deploy
-> Explore all templates
-> 
-> Sort
-> 
-> Sort by popularity
-> Templates
-> 
-> All
-> 
-> Verified
-> 
-> Category
-> 
-> AI/ML
-> 
-> Analytics
-> 
-> Authentication
-> 
-> Automation
-> 
-> Blogs
-> 
-> Bots
-> 
-> CMS
-> 
-> Observability
-> 
-> Other
-> 
-> Starters
-> 
-> Storage
-> 
-> Queues
-> 
-> View Template
-> 
-> AI Agentic Automation Stack (n8n)
-> All-in-One AI Automation Stack: workflows, agents, vector DB, web scraping
-> Protemplate
-> 24
-> Deploy
-> View Template
-> 
-> Portkey AI - Gateway
-> A Blazing Fast AI Gateway. Route to 100+ LLMs with 1 fast & friendly API.
-> YAV.AI
-> 58
-> Deploy
-> View Template
-> 
-> RSSBox
-> Smarter RSS management, more efficient information access
-> versun
-> 223
-> Deploy
-> View Template
-> 
-> Hermes Agent by Nous Research
-> Template for Hermes Agent from Nous Research
-> lovexbytes
-> 8
-> Deploy
-> View Template
-> 
-> Agentfield Control Plane
-> Kubernetes-style orchestration for multi-agent AI systems with IAM
-> Agentfield
-> 8
-> Deploy
-> View Template
-> 
-> TrendRadar — Automated News Monitoring & Daily Intelligence
-> Automated news crawling, daily summaries, RSS tracking, and web reports.
-> Xav
-> 8
-> Deploy
-> View Template
-> 
-> Llama in Cloud
-> [Mar '26] Host Meta's Llama models privately, using Ollama + OpenWebUI.
-> Heimdall
-> 16
-> Deploy
-> View Template
-> 
-> Bolt DIY
-> [Updated Mar '26] Deploy and Host Bolt DIY with Railway
-> shinyduo
-> 20
-> Deploy
-> View Template
-> 
-> LibreChat - Lite
-> lite version LibreChat without RAG
-> chin
-> 28
-> Deploy
-> View Template
-> 
-> neo4j
-> Creates a Neo4j graph database + volume (upd 5/9/25 works with Metal now!).
-> Tim Bright
-> 110
-> Deploy
+> ok are you awere that railway has thousands of template, the have ai agenticc automation, vectors, databases, automation ect, in theory the output in paperless could be vectorized in the same project in railway? also the bot can be spun up in railway, the only thing we need is our qiarchive orchestrator really to tie it all in my light admin dashboard and search (search is also available in railway) so why are we building so much when there are these templlate. 
+
+> Railway
+
+> Dashboard
+
+> 
+
+> 
+
+> Deploy an app in minutes
+
+> What would you like to deploy today?
+
+> rag
+
+> Popular
+
+> Verified
+
+> Featured
+
+> 
+
+> All templates (2435)
+
+> 
+
+> View Template
+
+> 
+
+> WordPress
+
+> A content management system (CMS) written in PHP
+
+> Jack
+
+> 6.5K
+
+> Deploy
+
+> View Template
+
+> 
+
+> Supabase
+
+> Supabase without Functions and Logflare
+
+> Six
+
+> 796
+
+> Deploy
+
+> View Template
+
+> 
+
+> Grafana Stack
+
+> One-click observability with Loki, Prometheus, Tempo, and Grafana
+
+> Tinybox Software
+
+> 268
+
+> Deploy
+
+> View Template
+
+> 
+
+> Chatwoot
+
+> A customer communication platform
+
+> Brody
+
+> 4.6K
+
+> Deploy
+
+> View Template
+
+> 
+
+> ChromaDB
+
+> The AI-native embedding database
+
+> ISDev
+
+> 499
+
+> Deploy
+
+> View Template
+
+> 
+
+> Valkey
+
+> An open source, Redis compatible, in-memory data store
+
+> Brody
+
+> 59
+
+> Deploy
+
+> View Template
+
+> 
+
+> N8N (w/ workers)
+
+> A powerful workflow automation tool for technical people
+
+> Jack
+
+> 96K
+
+> Deploy
+
+> View Template
+
+> 
+
+> Umami
+
+> An open source, privacy-focused alternative to Google Analytics
+
+> Brody
+
+> 3.6K
+
+> Deploy
+
+> Explore all templates
+
+> 
+
+> Sort
+
+> 
+
+> Sort by popularity
+
+> Templates
+
+> 
+
+> All
+
+> 
+
+> Verified
+
+> 
+
+> Category
+
+> 
+
+> AI/ML
+
+> 
+
+> Analytics
+
+> 
+
+> Authentication
+
+> 
+
+> Automation
+
+> 
+
+> Blogs
+
+> 
+
+> Bots
+
+> 
+
+> CMS
+
+> 
+
+> Observability
+
+> 
+
+> Other
+
+> 
+
+> Starters
+
+> 
+
+> Storage
+
+> 
+
+> Queues
+
+> 
+
+> View Template
+
+> 
+
+> AI Agentic Automation Stack (n8n)
+
+> All-in-One AI Automation Stack: workflows, agents, vector DB, web scraping
+
+> Protemplate
+
+> 24
+
+> Deploy
+
+> View Template
+
+> 
+
+> Portkey AI - Gateway
+
+> A Blazing Fast AI Gateway. Route to 100+ LLMs with 1 fast & friendly API.
+
+> YAV.AI
+
+> 58
+
+> Deploy
+
+> View Template
+
+> 
+
+> RSSBox
+
+> Smarter RSS management, more efficient information access
+
+> versun
+
+> 223
+
+> Deploy
+
+> View Template
+
+> 
+
+> Hermes Agent by Nous Research
+
+> Template for Hermes Agent from Nous Research
+
+> lovexbytes
+
+> 8
+
+> Deploy
+
+> View Template
+
+> 
+
+> Agentfield Control Plane
+
+> Kubernetes-style orchestration for multi-agent AI systems with IAM
+
+> Agentfield
+
+> 8
+
+> Deploy
+
+> View Template
+
+> 
+
+> TrendRadar — Automated News Monitoring & Daily Intelligence
+
+> Automated news crawling, daily summaries, RSS tracking, and web reports.
+
+> Xav
+
+> 8
+
+> Deploy
+
+> View Template
+
+> 
+
+> Llama in Cloud
+
+> [Mar '26] Host Meta's Llama models privately, using Ollama + OpenWebUI.
+
+> Heimdall
+
+> 16
+
+> Deploy
+
+> View Template
+
+> 
+
+> Bolt DIY
+
+> [Updated Mar '26] Deploy and Host Bolt DIY with Railway
+
+> shinyduo
+
+> 20
+
+> Deploy
+
+> View Template
+
+> 
+
+> LibreChat - Lite
+
+> lite version LibreChat without RAG
+
+> chin
+
+> 28
+
+> Deploy
+
+> View Template
+
+> 
+
+> neo4j
+
+> Creates a Neo4j graph database + volume (upd 5/9/25 works with Metal now!).
+
+> Tim Bright
+
+> 110
+
+> Deploy
+
 > Railway Marketplace
 
 ### Assistant
@@ -11708,27 +13063,48 @@ canonical_ref: ""
 > That’s how you keep momentum and avoid architecture theater.
 
 ### User
-> if you recall, i made this and it was working we just never connected it  to anything. I say we do that now, QID CLI Portable (Embedded Python)
-> What this is
-> A portable, unzip-and-run bundle for QID issuance + Markdown stamping (plus an optional minimal desktop UI).
-> 
-> One-time setup (to make it fully portable)
-> Download the official Windows embeddable Python ZIP for Python 3.11.x (64-bit).
-> Extract it into this folder as: python/
-> You should end up with: python/python.exe
-> After that, you can zip this entire folder and move it anywhere.
-> 
-> Run
-> Double-click: desktop/qid_launcher.bat
-> UI Mode
-> Double-click: desktop/qid_ui.bat or run: desktop/qid_launcher.bat ui
-> Storage files (do not delete)
-> app/_qid_state.json
-> app/_qid_registry.json
-> Logs & redundancy
-> Logs: app/_logs/
-> Rolling backups: app/_backups/rolling/
-> Daily snapshots: app/_backups/daily/YYYY-MM-DD/
+> if you recall, i made this and it was working we just never connected it  to anything. I say we do that now, QID CLI Portable (Embedded Python)
+
+> What this is
+
+> A portable, unzip-and-run bundle for QID issuance + Markdown stamping (plus an optional minimal desktop UI).
+
+> 
+
+> One-time setup (to make it fully portable)
+
+> Download the official Windows embeddable Python ZIP for Python 3.11.x (64-bit).
+
+> Extract it into this folder as: python/
+
+> You should end up with: python/python.exe
+
+> After that, you can zip this entire folder and move it anywhere.
+
+> 
+
+> Run
+
+> Double-click: desktop/qid_launcher.bat
+
+> UI Mode
+
+> Double-click: desktop/qid_ui.bat or run: desktop/qid_launcher.bat ui
+
+> Storage files (do not delete)
+
+> app/_qid_state.json
+
+> app/_qid_registry.json
+
+> Logs & redundancy
+
+> Logs: app/_logs/
+
+> Rolling backups: app/_backups/rolling/
+
+> Daily snapshots: app/_backups/daily/YYYY-MM-DD/
+
 > Write-ahead log: app/_wal/qid_wal.jsonl
 
 ### Assistant

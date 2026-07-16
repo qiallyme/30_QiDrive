@@ -3,9 +3,9 @@ layout: page
 title: "Legal Implications of Property Outside"
 slug: "legal_implications_of_property_outside"
 created_at: "2026-04-30 05:16:39"
-updated_at: "2026-04-30 05:16:39"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,12 +3,12 @@ layout: page
 title: Codex Prompt — Will Be Done Research Pass
 slug: codex-prompt-will-be-done-research-pass
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e2e8d15a826045c3bf712ed16fba57ee
 canonical_ref: ""
 template_key: master-template
 ---

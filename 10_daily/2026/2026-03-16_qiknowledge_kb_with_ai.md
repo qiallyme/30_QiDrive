@@ -3,9 +3,9 @@ layout: page
 title: "QiKnowledge- KB with AI"
 slug: "qiknowledge_kb_with_ai"
 created_at: "2026-03-16 09:28:27"
-updated_at: "2026-03-16 09:28:27"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

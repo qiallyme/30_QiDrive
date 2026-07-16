@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0002 Qibit As Atomic Unit
-slug: ""
+slug: 0002-qibit-as-atomic-unit
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 72792b5b1d5e4b94a387c5e942ef4d72
 canonical_ref: ""
 source_type: manual
 template_key: master-template

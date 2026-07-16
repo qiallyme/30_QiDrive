@@ -3,10 +3,10 @@ layout: page
 title: Pattern: Self-Victimizing Narcissistic Coercion Cycle
 slug: pattern_self_victimizing_narcissistic_cycling
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - narcissistic abuse cycle
   - coercive control
   - repeated violations
@@ -19,7 +19,7 @@ qi_decimal: 1.10.77
 severity: high
 project_context: lived_experience
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: a9a2b342847e4a2d90936ff340f84296
 canonical_ref: ""
 template_key: master-template
 ---

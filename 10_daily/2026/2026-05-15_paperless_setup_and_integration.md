@@ -3,9 +3,9 @@ layout: page
 title: "Paperless Setup and Integration"
 slug: "paperless_setup_and_integration"
 created_at: "2026-05-15 07:19:31"
-updated_at: "2026-05-15 07:19:31"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -482,45 +482,84 @@ canonical_ref: ""
 > The biggest mistake would be trying to build the vector/graph layer before verifying Paperless OCR + metadata are stable. That’s how you get a fancy broken pipeline. Paperless first, pipe second.
 
 ### User
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/data/paperless/{consume,export,media,data,scripts,sync}
-> [sudo] password for qiadmin: 
-> Sorry, try again.
-> [sudo] password for qiadmin: 
-> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/data/paperless/{consume,export,media,data,scripts,sync}
-> qiadmin@qiserver:~$ sudo chown -R qiadmin:qiadmin /srv/qios/data/paperless
-> qiadmin@qiserver:~$ sudo chmod -R 775 /srv/qios/data/paperless
-> qiadmin@qiserver:~$ sudo docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
-> 
-> 
-> 
-> sudo docker inspect paperless --format '{{json .Mounts}}' | jq
-> 
-> 
-> 
-> sudo docker logs --tail=100 paperlessNAMES                        IMAGE                                        STATUS                          PORTS
-> paperless                    ghcr.io/paperless-ngx/paperless-ngx:latest   Up 2 days (healthy)             127.0.0.1:8010->8000/tcp
-> qitranscribe-whisper-webui   jhj0517/whisper-webui:latest                 Restarting (1) 19 seconds ago   
-> solidtime                    solidtime/solidtime:latest                   Up 3 days (healthy)             80/tcp, 443/tcp, 2019/tcp, 443/udp, 127.0.0.1:8095->8000/tcp
-> solidtime-db                 postgres:16                                  Up 3 days (healthy)             5432/tcp
-> qdrant                       qdrant/qdrant:latest                         Up 3 days                       127.0.0.1:6333-6334->6333-6334/tcp
-> uptime-kuma                  louislam/uptime-kuma:2                       Up 3 days (healthy)             127.0.0.1:3005->3001/tcp
-> n8n                          docker.n8n.io/n8nio/n8n:latest               Up 3 days                       127.0.0.1:5678->5678/tcp
-> portainer                    portainer/portainer-ce:sts                   Up 4 days                       8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
-> wikijs                       requarks/wiki:2                              Up 4 days                       3443/tcp, 127.0.0.1:3002->3000/tcp
-> wikijs-db                    postgres:15-alpine                           Up 4 days                       5432/tcp
-> homepage                     ghcr.io/gethomepage/homepage:latest          Up 3 days (healthy)             127.0.0.1:3001->3000/tcp
-> paperless-postgres           postgres:16                                  Up 4 days                       5432/tcp
-> paperless-redis              redis:7                                      Up 4 days                       6379/tcp
-> nocodb                       nocodb/nocodb:latest                         Up 5 days                       127.0.0.1:8088->8080/tcp
-> nocodb-db                    postgres:16                                  Up 5 days (healthy)             5432/tcp
-> nocodb-redis                 redis:7-alpine                               Up 5 days                       6379/tcp
-> cloudflared                  cloudflare/cloudflared:latest                Up 5 days                       
-> open-webui                   ghcr.io/open-webui/open-webui:main           Up 5 days (healthy)             127.0.0.1:3000->8080/tcp
-> neo4j                        neo4j:latest                                 Up 5 days                       127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/data/paperless/{consume,export,media,data,scripts,sync}
+
+> [sudo] password for qiadmin: 
+
+> Sorry, try again.
+
+> [sudo] password for qiadmin: 
+
+> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/data/paperless/{consume,export,media,data,scripts,sync}
+
+> qiadmin@qiserver:~$ sudo chown -R qiadmin:qiadmin /srv/qios/data/paperless
+
+> qiadmin@qiserver:~$ sudo chmod -R 775 /srv/qios/data/paperless
+
+> qiadmin@qiserver:~$ sudo docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
+
+> 
+
+> 
+
+> 
+
+> sudo docker inspect paperless --format '{{json .Mounts}}' | jq
+
+> 
+
+> 
+
+> 
+
+> sudo docker logs --tail=100 paperlessNAMES                        IMAGE                                        STATUS                          PORTS
+
+> paperless                    ghcr.io/paperless-ngx/paperless-ngx:latest   Up 2 days (healthy)             127.0.0.1:8010->8000/tcp
+
+> qitranscribe-whisper-webui   jhj0517/whisper-webui:latest                 Restarting (1) 19 seconds ago   
+
+> solidtime                    solidtime/solidtime:latest                   Up 3 days (healthy)             80/tcp, 443/tcp, 2019/tcp, 443/udp, 127.0.0.1:8095->8000/tcp
+
+> solidtime-db                 postgres:16                                  Up 3 days (healthy)             5432/tcp
+
+> qdrant                       qdrant/qdrant:latest                         Up 3 days                       127.0.0.1:6333-6334->6333-6334/tcp
+
+> uptime-kuma                  louislam/uptime-kuma:2                       Up 3 days (healthy)             127.0.0.1:3005->3001/tcp
+
+> n8n                          docker.n8n.io/n8nio/n8n:latest               Up 3 days                       127.0.0.1:5678->5678/tcp
+
+> portainer                    portainer/portainer-ce:sts                   Up 4 days                       8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
+
+> wikijs                       requarks/wiki:2                              Up 4 days                       3443/tcp, 127.0.0.1:3002->3000/tcp
+
+> wikijs-db                    postgres:15-alpine                           Up 4 days                       5432/tcp
+
+> homepage                     ghcr.io/gethomepage/homepage:latest          Up 3 days (healthy)             127.0.0.1:3001->3000/tcp
+
+> paperless-postgres           postgres:16                                  Up 4 days                       5432/tcp
+
+> paperless-redis              redis:7                                      Up 4 days                       6379/tcp
+
+> nocodb                       nocodb/nocodb:latest                         Up 5 days                       127.0.0.1:8088->8080/tcp
+
+> nocodb-db                    postgres:16                                  Up 5 days (healthy)             5432/tcp
+
+> nocodb-redis                 redis:7-alpine                               Up 5 days                       6379/tcp
+
+> cloudflared                  cloudflare/cloudflared:latest                Up 5 days                       
+
+> open-webui                   ghcr.io/open-webui/open-webui:main           Up 5 days (healthy)             127.0.0.1:3000->8080/tcp
+
+> neo4j                        neo4j:latest                                 Up 5 days                       127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -639,144 +678,281 @@ canonical_ref: ""
 > Right now your next move is the `docker inspect` mount output. That tells us whether we’re wired or just making pretty folders in the void.
 
 ### User
-> qiadmin@qiserver:~$ sudo docker inspect paperless --format '{{json .Mounts}}' | jq
-> [
->   {
->     "Type": "bind",
->     "Source": "/srv/qios/data/paperless/consume",
->     "Destination": "/usr/src/paperless/consume",
->     "Mode": "rw",
->     "RW": true,
->     "Propagation": "rprivate"
->   },
->   {
->     "Type": "bind",
->     "Source": "/srv/qios/data/paperless/data",
->     "Destination": "/usr/src/paperless/data",
->     "Mode": "rw",
->     "RW": true,
->     "Propagation": "rprivate"
->   },
->   {
->     "Type": "bind",
->     "Source": "/srv/qios/data/paperless/export",
->     "Destination": "/usr/src/paperless/export",
->     "Mode": "rw",
->     "RW": true,
->     "Propagation": "rprivate"
->   },
->   {
->     "Type": "bind",
->     "Source": "/srv/qios/data/paperless/media",
->     "Destination": "/usr/src/paperless/media",
->     "Mode": "rw",
->     "RW": true,
->     "Propagation": "rprivate"
->   }
-> ]
+> qiadmin@qiserver:~$ sudo docker inspect paperless --format '{{json .Mounts}}' | jq
+
+> [
+
+>   {
+
+>     "Type": "bind",
+
+>     "Source": "/srv/qios/data/paperless/consume",
+
+>     "Destination": "/usr/src/paperless/consume",
+
+>     "Mode": "rw",
+
+>     "RW": true,
+
+>     "Propagation": "rprivate"
+
+>   },
+
+>   {
+
+>     "Type": "bind",
+
+>     "Source": "/srv/qios/data/paperless/data",
+
+>     "Destination": "/usr/src/paperless/data",
+
+>     "Mode": "rw",
+
+>     "RW": true,
+
+>     "Propagation": "rprivate"
+
+>   },
+
+>   {
+
+>     "Type": "bind",
+
+>     "Source": "/srv/qios/data/paperless/export",
+
+>     "Destination": "/usr/src/paperless/export",
+
+>     "Mode": "rw",
+
+>     "RW": true,
+
+>     "Propagation": "rprivate"
+
+>   },
+
+>   {
+
+>     "Type": "bind",
+
+>     "Source": "/srv/qios/data/paperless/media",
+
+>     "Destination": "/usr/src/paperless/media",
+
+>     "Mode": "rw",
+
+>     "RW": true,
+
+>     "Propagation": "rprivate"
+
+>   }
+
+> ]
+
 > qiadmin@qiserver:~$ ?
-> ]
-> qiadmin@qiserver:~$ sudo docker logs --tail=100 paperless
->     raise last_ex.with_traceback(None)
-> psycopg.OperationalError: connection failed: connection to server at "172.23.0.2", port 5432 failed: FATAL:  could not open file "base/16384/2601": Permission denied
-> 
-> The above exception was the direct cause of the following exception:
-> 
-> Traceback (most recent call last):
->   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 489, in thread_handler
->     raise exc_info[1]
->   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 42, in inner
->     response = await get_response(request)
->                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 489, in thread_handler
->     raise exc_info[1]
->   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 284, in _get_response_async
->     response = await sync_to_async(
->                ^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 439, in __call__
->     ret = await asyncio.shield(exec_coro)
->           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/asgiref/current_thread_executor.py", line 40, in run
->     result = self.fn(*self.args, **self.kwargs)
->              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 493, in thread_handler
->     return func(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
->     self.content = self.rendered_content
->                    ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
->     return template.render(context, self._request)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
->     return self.template.render(context)
->            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 169, in render
->     with context.bind_template(self):
->          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
->     return next(self.gen)
->            ^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/template/context.py", line 259, in bind_template
->     context = processor(self.request)
->               ^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/src/paperless/src/documents/context_processors.py", line 9, in settings
->     general_config = GeneralConfig()
->                      ^^^^^^^^^^^^^^^
->   File "<string>", line 3, in __init__
->   File "/usr/src/paperless/src/paperless/config.py", line 168, in __post_init__
->     app_config = self._get_config_instance()
->                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/src/paperless/src/paperless/config.py", line 17, in _get_config_instance
->     app_config = ApplicationConfiguration.objects.all().first()
->                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1104, in first
->     for obj in queryset[:1]:
->                ~~~~~~~~^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
->     self._fetch_all()
->   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
->     self._result_cache = list(self._iterable_class(self))
->                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
->     results = compiler.execute_sql(
->               ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
->     cursor = self.connection.cursor()
->              ^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
->     return func(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
->     return self._cursor()
->            ^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
->     self.ensure_connection()
->   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
->     return func(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
->     with self.wrap_database_errors:
->          ^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
->     raise dj_exc_value.with_traceback(traceback) from exc_value
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
->     self.connect()
->   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
->     return func(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
->     self.connection = self.get_new_connection(conn_params)
->                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
->     return func(*args, **kwargs)
->            ^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
->     connection = self.Database.connect(**conn_params)
->                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
->   File "/usr/local/lib/python3.12/site-packages/psycopg/connection.py", line 120, in connect
->     raise last_ex.with_traceback(None)
-> django.db.utils.OperationalError: connection failed: connection to server at "172.23.0.2", port 5432 failed: FATAL:  could not open file "base/16384/2601": Permission denied
+> ]
+
+> qiadmin@qiserver:~$ sudo docker logs --tail=100 paperless
+
+>     raise last_ex.with_traceback(None)
+
+> psycopg.OperationalError: connection failed: connection to server at "172.23.0.2", port 5432 failed: FATAL:  could not open file "base/16384/2601": Permission denied
+
+> 
+
+> The above exception was the direct cause of the following exception:
+
+> 
+
+> Traceback (most recent call last):
+
+>   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 489, in thread_handler
+
+>     raise exc_info[1]
+
+>   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 42, in inner
+
+>     response = await get_response(request)
+
+>                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 489, in thread_handler
+
+>     raise exc_info[1]
+
+>   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 284, in _get_response_async
+
+>     response = await sync_to_async(
+
+>                ^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 439, in __call__
+
+>     ret = await asyncio.shield(exec_coro)
+
+>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/asgiref/current_thread_executor.py", line 40, in run
+
+>     result = self.fn(*self.args, **self.kwargs)
+
+>              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/asgiref/sync.py", line 493, in thread_handler
+
+>     return func(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+
+>     self.content = self.rendered_content
+
+>                    ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+
+>     return template.render(context, self._request)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+
+>     return self.template.render(context)
+
+>            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 169, in render
+
+>     with context.bind_template(self):
+
+>          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
+
+>     return next(self.gen)
+
+>            ^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/template/context.py", line 259, in bind_template
+
+>     context = processor(self.request)
+
+>               ^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/src/paperless/src/documents/context_processors.py", line 9, in settings
+
+>     general_config = GeneralConfig()
+
+>                      ^^^^^^^^^^^^^^^
+
+>   File "<string>", line 3, in __init__
+
+>   File "/usr/src/paperless/src/paperless/config.py", line 168, in __post_init__
+
+>     app_config = self._get_config_instance()
+
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/src/paperless/src/paperless/config.py", line 17, in _get_config_instance
+
+>     app_config = ApplicationConfiguration.objects.all().first()
+
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1104, in first
+
+>     for obj in queryset[:1]:
+
+>                ~~~~~~~~^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 384, in __iter__
+
+>     self._fetch_all()
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+
+>     self._result_cache = list(self._iterable_class(self))
+
+>                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+
+>     results = compiler.execute_sql(
+
+>               ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+
+>     cursor = self.connection.cursor()
+
+>              ^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+
+>     return func(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+
+>     return self._cursor()
+
+>            ^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+
+>     self.ensure_connection()
+
+>   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+
+>     return func(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+
+>     with self.wrap_database_errors:
+
+>          ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+
+>     raise dj_exc_value.with_traceback(traceback) from exc_value
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+
+>     self.connect()
+
+>   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+
+>     return func(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+
+>     self.connection = self.get_new_connection(conn_params)
+
+>                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+
+>     return func(*args, **kwargs)
+
+>            ^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+
+>     connection = self.Database.connect(**conn_params)
+
+>                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+>   File "/usr/local/lib/python3.12/site-packages/psycopg/connection.py", line 120, in connect
+
+>     raise last_ex.with_traceback(None)
+
+> django.db.utils.OperationalError: connection failed: connection to server at "172.23.0.2", port 5432 failed: FATAL:  could not open file "base/16384/2601": Permission denied
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -939,19 +1115,32 @@ canonical_ref: ""
 > Paperless still fits exactly where we mapped it in QiAccess Start: part of the qiserver self-hosted service layer, feeding the broader knowledge/data system without becoming the whole system of record. fileciteturn0file0
 
 ### User
-> qiadmin@qiserver:~$ sudo docker inspect paperless-postgres --format '{{json .Mounts}}' | jq
-> [
->   {
->     "Type": "bind",
->     "Source": "/srv/qios/data/paperless/postgres",
->     "Destination": "/var/lib/postgresql/data",
->     "Mode": "rw",
->     "RW": true,
->     "Propagation": "rprivate"
->   }
-> ]
-> qiadmin@qiserver:~$ qiadmin@qiserver:~$ sudo docker exec paperless-postgres id
-> uid=0(root) gid=0(root) groups=0(root)
+> qiadmin@qiserver:~$ sudo docker inspect paperless-postgres --format '{{json .Mounts}}' | jq
+
+> [
+
+>   {
+
+>     "Type": "bind",
+
+>     "Source": "/srv/qios/data/paperless/postgres",
+
+>     "Destination": "/var/lib/postgresql/data",
+
+>     "Mode": "rw",
+
+>     "RW": true,
+
+>     "Propagation": "rprivate"
+
+>   }
+
+> ]
+
+> qiadmin@qiserver:~$ qiadmin@qiserver:~$ sudo docker exec paperless-postgres id
+
+> uid=0(root) gid=0(root) groups=0(root)
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1031,22 +1220,38 @@ canonical_ref: ""
 > If the file disappears from `consume` and shows up in Paperless, we’re back on track.
 
 ### User
-> ok you are giving me command to fix stuff before i give you the output of the commands for verifying. ]
-> qiadmin@qiserver:~$ sudo docker exec paperless-postgres id
-> uid=0(root) gid=0(root) groups=0(root)
-> qiadmin@qiserver:~$ sudo docker exec paperless-postgres bash -lc 'ps aux | head -20'
-> USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-> postgres       1  0.0  0.3 216740 28048 ?        Ss   12:23   0:00 postgres
-> postgres      28  0.0  0.1 216872  8428 ?        Ss   12:23   0:00 postgres: checkpointer 
-> postgres      29  0.0  0.0 216896  7056 ?        Ss   12:23   0:00 postgres: background writer 
-> postgres      31  0.0  0.1 216740  9964 ?        Ss   12:23   0:00 postgres: walwriter 
-> postgres      32  0.0  0.1 218336  8756 ?        Ss   12:23   0:00 postgres: autovacuum launcher 
-> postgres      33  0.0  0.1 218324  7916 ?        Ss   12:23   0:00 postgres: logical replication launcher 
-> root          47 50.0  0.0   7084  3628 ?        Ss   12:26   0:00 bash -lc ps aux | head -20
-> root          55  0.0  0.0   9392  4220 ?        R    12:26   0:00 ps aux
-> root          56  0.0  0.0   5588  2044 ?        S    12:26   0:00 head -20
-> qiadmin@qiserver:~$ sudo docker exec paperless-postgres bash -lc 'id postgres || true'
-> uid=999(postgres) gid=999(postgres) groups=999(postgres),101(ssl-cert)
+> ok you are giving me command to fix stuff before i give you the output of the commands for verifying. ]
+
+> qiadmin@qiserver:~$ sudo docker exec paperless-postgres id
+
+> uid=0(root) gid=0(root) groups=0(root)
+
+> qiadmin@qiserver:~$ sudo docker exec paperless-postgres bash -lc 'ps aux | head -20'
+
+> USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+
+> postgres       1  0.0  0.3 216740 28048 ?        Ss   12:23   0:00 postgres
+
+> postgres      28  0.0  0.1 216872  8428 ?        Ss   12:23   0:00 postgres: checkpointer 
+
+> postgres      29  0.0  0.0 216896  7056 ?        Ss   12:23   0:00 postgres: background writer 
+
+> postgres      31  0.0  0.1 216740  9964 ?        Ss   12:23   0:00 postgres: walwriter 
+
+> postgres      32  0.0  0.1 218336  8756 ?        Ss   12:23   0:00 postgres: autovacuum launcher 
+
+> postgres      33  0.0  0.1 218324  7916 ?        Ss   12:23   0:00 postgres: logical replication launcher 
+
+> root          47 50.0  0.0   7084  3628 ?        Ss   12:26   0:00 bash -lc ps aux | head -20
+
+> root          55  0.0  0.0   9392  4220 ?        R    12:26   0:00 ps aux
+
+> root          56  0.0  0.0   5588  2044 ?        S    12:26   0:00 head -20
+
+> qiadmin@qiserver:~$ sudo docker exec paperless-postgres bash -lc 'id postgres || true'
+
+> uid=999(postgres) gid=999(postgres) groups=999(postgres),101(ssl-cert)
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1197,16 +1402,26 @@ canonical_ref: ""
 > Run the `ps -a`, `start`, and fresh `logs` commands. That tells us which branch we’re on.
 
 ### User
-> [INFO] Shutting down granian
-> 
-> worker: Warm shutdown (MainProcess)
-> qiadmin@qiserver:~$ curl -I http://127.0.0.1:8010
-> curl: (7) Failed to connect to 127.0.0.1 port 8010 after 0 ms: Couldn't connect to server
-> qiadmin@qiserver:~$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
-> NAMES                        STATUS                          PORTS
-> paperless                    Exited (0) About a minute ago   
-> paperless-postgres           Up 4 minutes                    5432/tcp
-> paperless-redis              Up 4 days                       6379/tcp
+> [INFO] Shutting down granian
+
+> 
+
+> worker: Warm shutdown (MainProcess)
+
+> qiadmin@qiserver:~$ curl -I http://127.0.0.1:8010
+
+> curl: (7) Failed to connect to 127.0.0.1 port 8010 after 0 ms: Couldn't connect to server
+
+> qiadmin@qiserver:~$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
+
+> NAMES                        STATUS                          PORTS
+
+> paperless                    Exited (0) About a minute ago   
+
+> paperless-postgres           Up 4 minutes                    5432/tcp
+
+> paperless-redis              Up 4 days                       6379/tcp
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1282,28 +1497,50 @@ canonical_ref: ""
 > Right now, the database appears recovered, but the Paperless app is simply not staying alive. The clean exit is the clue. The prior logs show the database permission issue and then a warm shutdown, while curl shows the web server is no longer listening. fileciteturn1file0
 
 ### User
-> qiadmin@qiserver:~$ curl -I http://127.0.0.1:8010
-> curl: (7) Failed to connect to 127.0.0.1 port 8010 after 0 ms: Couldn't connect to server
-> qiadmin@qiserver:~$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
-> NAMES                        STATUS                          PORTS
-> paperless                    Exited (0) About a minute ago   
-> paperless-postgres           Up 4 minutes                    5432/tcp
-> paperless-redis              Up 4 days                       6379/tcp
-> qiadmin@qiserver:~$ sudo docker inspect paperless --format 'Image={{.Config.Image}}'
-> 
-> sudo docker inspect paperless --format 'Entrypoint={{json .Config.Entrypoint}}'
-> 
-> sudo docker inspect paperless --format 'Cmd={{json .Config.Cmd}}'
-> 
-> sudo docker inspect paperless --format 'RestartPolicy={{json .HostConfig.RestartPolicy}}'Image=ghcr.io/paperless-ngx/paperless-ngx:latest
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ sudo docker start paperless
-> 
-> sleep 8
-> 
-> sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
-> 
-> sudo docker logs --tail=160 paperlesspaperless
+> qiadmin@qiserver:~$ curl -I http://127.0.0.1:8010
+
+> curl: (7) Failed to connect to 127.0.0.1 port 8010 after 0 ms: Couldn't connect to server
+
+> qiadmin@qiserver:~$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
+
+> NAMES                        STATUS                          PORTS
+
+> paperless                    Exited (0) About a minute ago   
+
+> paperless-postgres           Up 4 minutes                    5432/tcp
+
+> paperless-redis              Up 4 days                       6379/tcp
+
+> qiadmin@qiserver:~$ sudo docker inspect paperless --format 'Image={{.Config.Image}}'
+
+> 
+
+> sudo docker inspect paperless --format 'Entrypoint={{json .Config.Entrypoint}}'
+
+> 
+
+> sudo docker inspect paperless --format 'Cmd={{json .Config.Cmd}}'
+
+> 
+
+> sudo docker inspect paperless --format 'RestartPolicy={{json .HostConfig.RestartPolicy}}'Image=ghcr.io/paperless-ngx/paperless-ngx:latest
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ sudo docker start paperless
+
+> 
+
+> sleep 8
+
+> 
+
+> sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -E 'paperless|NAMES'
+
+> 
+
+> sudo docker logs --tail=160 paperlesspaperless
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -2036,101 +2273,196 @@ canonical_ref: ""
 > Then I’ll give you the exact cleanup/create commands for Paperless so we can seed the taxonomy cleanly.
 
 ### User
-> Welcome, qiadmin. View site / Change password / Log out Toggle theme (current theme: auto)
-> Paperless-ngx administration
-> Accounts
-> Model name	Add link	Change or view list link
-> Email addresses	
-> Add
-> Change
-> Audit log
-> Model name	Add link	Change or view list link
-> Log entries		
-> View
-> Auth Token
-> Model name	Add link	Change or view list link
-> Tokens	
-> Add
-> Change
-> Authentication and Authorization
-> Model name	Add link	Change or view list link
-> Groups	
-> Add
-> Change
-> Users	
-> Add
-> Change
-> Celery Results
-> Model name	Add link	Change or view list link
-> Group results	
-> Add
-> Change
-> Task results	
-> Add
-> Change
-> Documents
-> Model name	Add link	Change or view list link
-> Correspondents	
-> Add
-> Change
-> Custom field instances	
-> Add
-> Change
-> Custom fields	
-> Add
-> Change
-> Document types	
-> Add
-> Change
-> Documents		
-> Change
-> Notes	
-> Add
-> Change
-> Paperless tasks	
-> Add
-> Change
-> Saved views	
-> Add
-> Change
-> Share links	
-> Add
-> Change
-> Storage paths	
-> Add
-> Change
-> Tags	
-> Add
-> Change
-> MFA
-> Model name	Add link	Change or view list link
-> Authenticators	
-> Add
-> Change
-> Paperless mail
-> Model name	Add link	Change or view list link
-> Mail accounts	
-> Add
-> Change
-> Mail rules	
-> Add
-> Change
-> Processed mails	
-> Add
-> Change
-> Social Accounts
-> Model name	Add link	Change or view list link
-> Social accounts	
-> Add
-> Change
-> Social application tokens	
-> Add
-> Change
-> Social applications	
-> Add
-> Change
-> Recent actions
-> My actions
+> Welcome, qiadmin. View site / Change password / Log out Toggle theme (current theme: auto)
+
+> Paperless-ngx administration
+
+> Accounts
+
+> Model name	Add link	Change or view list link
+
+> Email addresses	
+
+> Add
+
+> Change
+
+> Audit log
+
+> Model name	Add link	Change or view list link
+
+> Log entries		
+
+> View
+
+> Auth Token
+
+> Model name	Add link	Change or view list link
+
+> Tokens	
+
+> Add
+
+> Change
+
+> Authentication and Authorization
+
+> Model name	Add link	Change or view list link
+
+> Groups	
+
+> Add
+
+> Change
+
+> Users	
+
+> Add
+
+> Change
+
+> Celery Results
+
+> Model name	Add link	Change or view list link
+
+> Group results	
+
+> Add
+
+> Change
+
+> Task results	
+
+> Add
+
+> Change
+
+> Documents
+
+> Model name	Add link	Change or view list link
+
+> Correspondents	
+
+> Add
+
+> Change
+
+> Custom field instances	
+
+> Add
+
+> Change
+
+> Custom fields	
+
+> Add
+
+> Change
+
+> Document types	
+
+> Add
+
+> Change
+
+> Documents		
+
+> Change
+
+> Notes	
+
+> Add
+
+> Change
+
+> Paperless tasks	
+
+> Add
+
+> Change
+
+> Saved views	
+
+> Add
+
+> Change
+
+> Share links	
+
+> Add
+
+> Change
+
+> Storage paths	
+
+> Add
+
+> Change
+
+> Tags	
+
+> Add
+
+> Change
+
+> MFA
+
+> Model name	Add link	Change or view list link
+
+> Authenticators	
+
+> Add
+
+> Change
+
+> Paperless mail
+
+> Model name	Add link	Change or view list link
+
+> Mail accounts	
+
+> Add
+
+> Change
+
+> Mail rules	
+
+> Add
+
+> Change
+
+> Processed mails	
+
+> Add
+
+> Change
+
+> Social Accounts
+
+> Model name	Add link	Change or view list link
+
+> Social accounts	
+
+> Add
+
+> Change
+
+> Social application tokens	
+
+> Add
+
+> Change
+
+> Social applications	
+
+> Add
+
+> Change
+
+> Recent actions
+
+> My actions
+
 > None available
 
 ### Assistant
@@ -5176,19 +5508,32 @@ canonical_ref: ""
 > That gives you speed without making a medical-records confetti cannon.
 
 ### User
-> This created/upserted taxonomy + conservative matching rules.
-> Next: ingest 10-25 mixed test documents, inspect bad matches, tighten rules.
-> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/intake/paperless/{00_pending_review,10_mom_medical_records,20_mom_care_docs,30_finance,40_legal,50_tech,90_holding_unsupported}
-> 
-> sudo mkdir -p /srv/qios/data/paperless/consume/{00_pending_review,10_mom_medical_records,20_mom_care_docs,30_finance,40_legal,50_tech}
-> 
-> sudo chown -R qiadmin:qiadmin /srv/qios/intake/paperless
-> 
-> sudo chown -R qiadmin:qiadmin /srv/qios/data/paperless/consume
-> 
-> sudo chmod -R 775 /srv/qios/intake/paperless /srv/qios/data/paperless/consumeqiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ sudo docker inspect paperless --format '{{range .Config.Env}}{{println .}}{{end}}' | sort | grep PAPERLESS_CONSUMER
-> PAPERLESS_CONSUMER_POLLING=30
+> This created/upserted taxonomy + conservative matching rules.
+
+> Next: ingest 10-25 mixed test documents, inspect bad matches, tighten rules.
+
+> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/intake/paperless/{00_pending_review,10_mom_medical_records,20_mom_care_docs,30_finance,40_legal,50_tech,90_holding_unsupported}
+
+> 
+
+> sudo mkdir -p /srv/qios/data/paperless/consume/{00_pending_review,10_mom_medical_records,20_mom_care_docs,30_finance,40_legal,50_tech}
+
+> 
+
+> sudo chown -R qiadmin:qiadmin /srv/qios/intake/paperless
+
+> 
+
+> sudo chown -R qiadmin:qiadmin /srv/qios/data/paperless/consume
+
+> 
+
+> sudo chmod -R 775 /srv/qios/intake/paperless /srv/qios/data/paperless/consumeqiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ sudo docker inspect paperless --format '{{range .Config.Env}}{{println .}}{{end}}' | sort | grep PAPERLESS_CONSUMER
+
+> PAPERLESS_CONSUMER_POLLING=30
+
 > qiadmin@qiserver:~$
 
 ### Assistant

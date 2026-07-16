@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0010 Spaces For Scoped Shared Access
-slug: ""
+slug: 0010-spaces-for-scoped-shared-access
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: be8d82f60af6457c830bd7a0bf868caa
 canonical_ref: ""
 source_type: manual
 template_key: master-template

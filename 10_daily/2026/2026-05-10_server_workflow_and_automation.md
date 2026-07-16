@@ -3,9 +3,9 @@ layout: page
 title: "Server Workflow and Automation"
 slug: "server_workflow_and_automation"
 created_at: "2026-05-10 09:56:40"
-updated_at: "2026-05-10 09:56:40"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1326,72 +1326,138 @@ canonical_ref: ""
 > That’s the actual unlock.
 
 ### User
-> Inventory
-> 
->   Compose files found under /srv/qios/stacks:
-> 
->   - /srv/qios/stacks/nocodb/docker-compose.yml
->   - /srv/qios/stacks/_qiaccess_start/docker-compose.yml
->   - /srv/qios/stacks/cloudflared/docker-compose.yml
->   - /srv/qios/stacks/paperless/docker-compose.yml
->   - /srv/qios/stacks/wikijs/docker-compose.yml
->   - /srv/qios/stacks/portainer/docker-compose.yml
-> 
->   Data under /srv/qios/data appears to be only Paperless:
-> 
->   - /srv/qios/data/paperless/{data,trash,postgres,export,media,redis,consume}
-> 
->   Running services found:
-> 
->   - Paperless stack: paperless, paperless-postgres, paperless-redis
->   - NocoDB stack: nocodb, nocodb-db, nocodb-redis
->   - Cloudflared tunnel: cloudflared
->   - Wiki.js stack: wikijs, wikijs-db
->   - QiAccess Start/Homepage: homepage
->   - Portainer: portainer
->   - Outside /srv/qios/stacks: Open WebUI and Neo4j from /srv/qios/compose/docker-compose.yml
->   - Legacy/out-of-place Paperless project from /home/qiadmin/docker-compose.yml: qiadmin-paperless-*; webserver is restarting
->   - Stray containers: friendly_elion restarting from hello-world, keen_darwin exited Cloudflared container
-> 
->   Bound Ports
-> 
->   Localhost-only Docker bindings:
-> 
->   - 127.0.0.1:8010 -> paperless:8000
->   - 127.0.0.1:8088 -> nocodb:8080
->   - 127.0.0.1:3000 -> open-webui:8080
->   - 127.0.0.1:7474 -> neo4j:7474
->   - 127.0.0.1:7687 -> neo4j:7687
-> 
->   Broad/public Docker bindings:
-> 
->   - 0.0.0.0:3001 and [::]:3001 -> Homepage
->   - 0.0.0.0:3002 and [::]:3002 -> Wiki.js
->   - 0.0.0.0:9443 and [::]:9443 -> Portainer
-> 
->   Host listeners of note:
-> 
->   - *:9090 -> Cockpit
->   - *:11434 -> Ollama
->   - 0.0.0.0:22 / [::]:22 -> SSH
->   - Tailscale also listens on the Tailscale IP for 443, 8443, 9446, and ephemeral ports.
-> 
->   Exposure Concerns
-> 
->   The biggest issues against the QiAccess Start rules:
-> 
->   - Portainer is bound broadly on 9443; this is an admin service and should not be public.
->   - Cockpit is listening broadly on 9090; also admin service, should be private/protected.
->   - Ollama is listening broadly on 11434; should not be public.
->   - Wiki.js is bound broadly on 3002; not necessarily forbidden, but it is publicly reachable unless firewall/Tailscale restricts it.
->   - Homepage is bound broadly on 3001 and mounts /var/run/docker.sock:ro; even read-only socket access should be treated carefully if exposed.
->   - Legacy /home/qiadmin/docker-compose.yml defines Paperless as "8000:8000" broadly. The web container is currently restarting, so it is not bound right now, but if it
->     starts successfully it would expose Paperless publicly.
->   - Cloudflared has its tunnel token directly in the compose file. I did not repeat it, but that should be treated as a secret hygiene problem.
->   - Several services use named Docker volumes or /srv/qios/* paths instead of persistent app data under /srv/qios/data, notably NocoDB, Wiki.js, Portainer, Open WebUI, and
->     Neo4j.
-> 
->   Databases and Redis containers are not host-published, which is good. Current /srv/qios/stacks/paperless and NocoDB app ports are localhost-only, which matches the
+> Inventory
+
+> 
+
+>   Compose files found under /srv/qios/stacks:
+
+> 
+
+>   - /srv/qios/stacks/nocodb/docker-compose.yml
+
+>   - /srv/qios/stacks/_qiaccess_start/docker-compose.yml
+
+>   - /srv/qios/stacks/cloudflared/docker-compose.yml
+
+>   - /srv/qios/stacks/paperless/docker-compose.yml
+
+>   - /srv/qios/stacks/wikijs/docker-compose.yml
+
+>   - /srv/qios/stacks/portainer/docker-compose.yml
+
+> 
+
+>   Data under /srv/qios/data appears to be only Paperless:
+
+> 
+
+>   - /srv/qios/data/paperless/{data,trash,postgres,export,media,redis,consume}
+
+> 
+
+>   Running services found:
+
+> 
+
+>   - Paperless stack: paperless, paperless-postgres, paperless-redis
+
+>   - NocoDB stack: nocodb, nocodb-db, nocodb-redis
+
+>   - Cloudflared tunnel: cloudflared
+
+>   - Wiki.js stack: wikijs, wikijs-db
+
+>   - QiAccess Start/Homepage: homepage
+
+>   - Portainer: portainer
+
+>   - Outside /srv/qios/stacks: Open WebUI and Neo4j from /srv/qios/compose/docker-compose.yml
+
+>   - Legacy/out-of-place Paperless project from /home/qiadmin/docker-compose.yml: qiadmin-paperless-*; webserver is restarting
+
+>   - Stray containers: friendly_elion restarting from hello-world, keen_darwin exited Cloudflared container
+
+> 
+
+>   Bound Ports
+
+> 
+
+>   Localhost-only Docker bindings:
+
+> 
+
+>   - 127.0.0.1:8010 -> paperless:8000
+
+>   - 127.0.0.1:8088 -> nocodb:8080
+
+>   - 127.0.0.1:3000 -> open-webui:8080
+
+>   - 127.0.0.1:7474 -> neo4j:7474
+
+>   - 127.0.0.1:7687 -> neo4j:7687
+
+> 
+
+>   Broad/public Docker bindings:
+
+> 
+
+>   - 0.0.0.0:3001 and [::]:3001 -> Homepage
+
+>   - 0.0.0.0:3002 and [::]:3002 -> Wiki.js
+
+>   - 0.0.0.0:9443 and [::]:9443 -> Portainer
+
+> 
+
+>   Host listeners of note:
+
+> 
+
+>   - *:9090 -> Cockpit
+
+>   - *:11434 -> Ollama
+
+>   - 0.0.0.0:22 / [::]:22 -> SSH
+
+>   - Tailscale also listens on the Tailscale IP for 443, 8443, 9446, and ephemeral ports.
+
+> 
+
+>   Exposure Concerns
+
+> 
+
+>   The biggest issues against the QiAccess Start rules:
+
+> 
+
+>   - Portainer is bound broadly on 9443; this is an admin service and should not be public.
+
+>   - Cockpit is listening broadly on 9090; also admin service, should be private/protected.
+
+>   - Ollama is listening broadly on 11434; should not be public.
+
+>   - Wiki.js is bound broadly on 3002; not necessarily forbidden, but it is publicly reachable unless firewall/Tailscale restricts it.
+
+>   - Homepage is bound broadly on 3001 and mounts /var/run/docker.sock:ro; even read-only socket access should be treated carefully if exposed.
+
+>   - Legacy /home/qiadmin/docker-compose.yml defines Paperless as "8000:8000" broadly. The web container is currently restarting, so it is not bound right now, but if it
+
+>     starts successfully it would expose Paperless publicly.
+
+>   - Cloudflared has its tunnel token directly in the compose file. I did not repeat it, but that should be treated as a secret hygiene problem.
+
+>   - Several services use named Docker volumes or /srv/qios/* paths instead of persistent app data under /srv/qios/data, notably NocoDB, Wiki.js, Portainer, Open WebUI, and
+
+>     Neo4j.
+
+> 
+
+>   Databases and Redis containers are not host-published, which is good. Current /srv/qios/stacks/paperless and NocoDB app ports are localhost-only, which matches the
+
 >   private/protected intent.
 
 ### Assistant
@@ -2410,68 +2476,124 @@ canonical_ref: ""
 > Don’t nuke the PC copy yet. That’s the backup until the server proves it can carry the job.
 
 ### User
-> {'asset_pointer': 'sediment://file_00000000921871f594537b188cb1725b', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 256, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 28420, 'width': 889}Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-> 
-> PS C:\WINDOWS\system32> ollama list
-> NAME                       ID              SIZE      MODIFIED
-> nomic-embed-text:latest    0a109f422b47    274 MB    2 months ago
-> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
+> {'asset_pointer': 'sediment://file_00000000921871f594537b188cb1725b', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 256, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 28420, 'width': 889}Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+> 
+
+> PS C:\WINDOWS\system32> ollama list
+
+> NAME                       ID              SIZE      MODIFIED
+
+> nomic-embed-text:latest    0a109f422b47    274 MB    2 months ago
+
+> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
+
 > PS C:\WINDOWS\system32>
 > 
-> 
-> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-> 
-> PS C:\WINDOWS\system32> ollama list
-> NAME                       ID              SIZE      MODIFIED
-> nomic-embed-text:latest    0a109f422b47    274 MB    2 months ago
-> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
-> PS C:\WINDOWS\system32> explorer "$env:USERPROFILE\.ollama\models"
-> PS C:\WINDOWS\system32> scp -r "$env:USERPROFILE\.ollama\models\*" qiadmin@qiserver:/tmp/ollama-models/
-> ssh: connect to host 192.168.0.78 port 22: Connection timed out
-> C:\WINDOWS\System32\OpenSSH\scp.exe: Connection closed
+> 
+
+> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+> 
+
+> PS C:\WINDOWS\system32> ollama list
+
+> NAME                       ID              SIZE      MODIFIED
+
+> nomic-embed-text:latest    0a109f422b47    274 MB    2 months ago
+
+> llama3.2:latest            a80c4f17acd5    2.0 GB    5 months ago
+
+> PS C:\WINDOWS\system32> explorer "$env:USERPROFILE\.ollama\models"
+
+> PS C:\WINDOWS\system32> scp -r "$env:USERPROFILE\.ollama\models\*" qiadmin@qiserver:/tmp/ollama-models/
+
+> ssh: connect to host 192.168.0.78 port 22: Connection timed out
+
+> C:\WINDOWS\System32\OpenSSH\scp.exe: Connection closed
+
 > PS C:\WINDOWS\system32>
 > 
 > but either way it looks like ollama on my pc only has these little models the big one i downloaded was the one from anythinglm it was like 20gb. i have plenty of gb on my server like 300 available so just give me the commands to get ollama and the ones we need installed for now and we can schedule it to download bigger and better later 
 > 
-> this below seperatly was the codex output. Here is the exposure check output:
-> 
->   === DOCKER PORTS ===
->   NAMES                PORTS
->   portainer            8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
->   wikijs               3443/tcp, 127.0.0.1:3002->3000/tcp
->   wikijs-db            5432/tcp
->   nocodb-db            5432/tcp
->   nocodb-redis         6379/tcp
->   cloudflared
->   open-webui           127.0.0.1:3000->8080/tcp
->   neo4j                127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
-> 
->   === LISTENING PORTS ===
->   tcp   LISTEN 0      4096                     127.0.0.1:3000       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:3001       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:3002       0.0.0.0:*
->   tcp   LISTEN 0      4096                       0.0.0.0:22         0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:7474       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:7687       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:8088       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:8010       0.0.0.0:*
->   tcp   LISTEN 0      4096                     127.0.0.1:9443       0.0.0.0:*
->   tcp   LISTEN 0      4096               100.121.111.106:443        0.0.0.0:*
->   tcp   LISTEN 0      4096                          [::]:22            [::]:*
->   tcp   LISTEN 0      4096                             *:9090             *:*
->   tcp   LISTEN 0      4096                             *:11434            *:*
->   tcp   LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:443           [::]:*
-> 
->   === TAILSCALE SERVE ===
->   https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
->   |-- / proxy http://127.0.0.1:3001
-> 
->   https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
->   |-- / proxy http://127.0.0.1:8088
-> 
->   https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
->   |-- / proxy http://127.0.0.1:3000
-> 
+> this below seperatly was the codex output. Here is the exposure check output:
+
+> 
+
+>   === DOCKER PORTS ===
+
+>   NAMES                PORTS
+
+>   portainer            8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
+
+>   wikijs               3443/tcp, 127.0.0.1:3002->3000/tcp
+
+>   wikijs-db            5432/tcp
+
+>   nocodb-db            5432/tcp
+
+>   nocodb-redis         6379/tcp
+
+>   cloudflared
+
+>   open-webui           127.0.0.1:3000->8080/tcp
+
+>   neo4j                127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> 
+
+>   === LISTENING PORTS ===
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:3000       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:3001       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:3002       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                       0.0.0.0:22         0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:7474       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:7687       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:8088       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:8010       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                     127.0.0.1:9443       0.0.0.0:*
+
+>   tcp   LISTEN 0      4096               100.121.111.106:443        0.0.0.0:*
+
+>   tcp   LISTEN 0      4096                          [::]:22            [::]:*
+
+>   tcp   LISTEN 0      4096                             *:9090             *:*
+
+>   tcp   LISTEN 0      4096                             *:11434            *:*
+
+>   tcp   LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:443           [::]:*
+
+> 
+
+>   === TAILSCALE SERVE ===
+
+>   https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+>   |-- / proxy http://127.0.0.1:3001
+
+> 
+
+>   https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
+
+>   |-- / proxy http://127.0.0.1:8088
+
+> 
+
+>   https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
+
+>   |-- / proxy http://127.0.0.1:3000
+
+> 
+
 >   Main flags before moving on: Cockpit is listening on *:9090, and Ollama is listening on *:11434. Docker app ports are mostly localhost-only, and Tailscale Serve exposes Homepage, NocoDB, and Open WebUI to the tailnet only.
 
 ### Assistant
@@ -2942,49 +3064,92 @@ canonical_ref: ""
 > You were right to stop before making nested git mess.
 
 ### User
-> 10 repositories
-> 
-> 
-> qiallyme/sites_QiAlly.com
-> HTML
-> 0
-> 0
-> qiallyme/momscare
-> TypeScript
-> 0
-> 0
-> qiallyme/_QiAccess_Start
-> Qi Home Page Enter Here
-> JavaScript
-> 0
-> 0
-> qiallyme/D.mejias-martinez-2025-temp
-> HTML
-> 0
-> 0
-> qiallyme/QiLabs
-> HTML
-> 0
-> 0
-> qiallyme/statement-generator
-> JavaScript
-> 0
-> 0
-> qiallyme/qihome-test
-> JavaScript
-> 0
-> 0
-> qiallyme/client_monorepo_builtbyrays
-> HTML
-> 0
-> 0
-> qiallyme/qiaccess-bookmarks-api
-> TypeScript
-> 0
-> 0
-> qiallyme/docs
-> Minlify docs site repo
-> 0
+> 10 repositories
+
+> 
+
+> 
+
+> qiallyme/sites_QiAlly.com
+
+> HTML
+
+> 0
+
+> 0
+
+> qiallyme/momscare
+
+> TypeScript
+
+> 0
+
+> 0
+
+> qiallyme/_QiAccess_Start
+
+> Qi Home Page Enter Here
+
+> JavaScript
+
+> 0
+
+> 0
+
+> qiallyme/D.mejias-martinez-2025-temp
+
+> HTML
+
+> 0
+
+> 0
+
+> qiallyme/QiLabs
+
+> HTML
+
+> 0
+
+> 0
+
+> qiallyme/statement-generator
+
+> JavaScript
+
+> 0
+
+> 0
+
+> qiallyme/qihome-test
+
+> JavaScript
+
+> 0
+
+> 0
+
+> qiallyme/client_monorepo_builtbyrays
+
+> HTML
+
+> 0
+
+> 0
+
+> qiallyme/qiaccess-bookmarks-api
+
+> TypeScript
+
+> 0
+
+> 0
+
+> qiallyme/docs
+
+> Minlify docs site repo
+
+> 0
+
 > 0
 
 ### Assistant
@@ -3181,23 +3346,38 @@ canonical_ref: ""
 > Only the `.pub` one goes to GitHub.
 
 ### User
-> qiadmin@qiserver:/$ ssh-keygen -t ed25519 -C "crice4485@gmail.com" -f ~/.ssh/id_ed25519_github
-> Generating public/private ed25519 key pair.
-> Enter passphrase (empty for no passphrase): 
-> Enter same passphrase again: 
-> Your identification has been saved in /home/qiadmin/.ssh/id_ed25519_github
-> Your public key has been saved in /home/qiadmin/.ssh/id_ed25519_github.pub
-> The key fingerprint is:
-> 
-> qiadmin@qiserver:/$ ^C
-> qiadmin@qiserver:/$ qiadmin@qiserver:/$ cat ~/.ssh/id_ed25519_github.pub
->  crice4485@gmail.com
+> qiadmin@qiserver:/$ ssh-keygen -t ed25519 -C "crice4485@gmail.com" -f ~/.ssh/id_ed25519_github
+
+> Generating public/private ed25519 key pair.
+
+> Enter passphrase (empty for no passphrase): 
+
+> Enter same passphrase again: 
+
+> Your identification has been saved in /home/qiadmin/.ssh/id_ed25519_github
+
+> Your public key has been saved in /home/qiadmin/.ssh/id_ed25519_github.pub
+
+> The key fingerprint is:
+
+> 
+
+> qiadmin@qiserver:/$ ^C
+
+> qiadmin@qiserver:/$ qiadmin@qiserver:/$ cat ~/.ssh/id_ed25519_github.pub
+
+>  crice4485@gmail.com
+
 > qiadmin@qiserver:/$ 
 > 
-> qiadmin@qiserver:/$ ssh -T git@github.com
-> The authenticity of host 'github.com (140.82.114.3)' can't be established.
-> ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
-> This key is not known by any other names.
+> qiadmin@qiserver:/$ ssh -T git@github.com
+
+> The authenticity of host 'github.com (140.82.114.3)' can't be established.
+
+> ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+
+> This key is not known by any other names.
+
 > Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 ### Assistant
@@ -3894,18 +4074,30 @@ canonical_ref: ""
 > The 7B model is not useless, but on this server it is **not your interactive daily driver**. It’s more like “overnight intern with asthma.” Use 3B for now.
 
 ### User
-> why is it asking about openrouter. > 
-> > EOF
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ sudo chmod +x /usr/local/bin/aider-fast
-> qiadmin@qiserver:/$ cd /srv/qios/repos/_QiAccess_Start
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ aider-fast README.md package.json
-> ───────────────────────────────────────────────────────────────────────────────────────────────────────
-> No LLM model was specified and no API keys were provided.
-> OpenRouter provides free and paid access to many LLMs.
+> why is it asking about openrouter. > 
+
+> > EOF
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ sudo chmod +x /usr/local/bin/aider-fast
+
+> qiadmin@qiserver:/$ cd /srv/qios/repos/_QiAccess_Start
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ aider-fast README.md package.json
+
+> ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+> No LLM model was specified and no API keys were provided.
+
+> OpenRouter provides free and paid access to many LLMs.
+
 > Login to OpenRouter or create a free account? (Y)es/(N)o [Yes]:
 
 ### Assistant
@@ -3986,59 +4178,112 @@ canonical_ref: ""
 > That will show exactly what command is being executed. My bet: the script got saved wrong, likely with the model line missing or broken.
 
 ### User
-> .py", line 746, in _run_async
->     result = await f
->              ^^^^^^^
-> KeyboardInterrupt
-> 
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ cat -n /usr/local/bin/aider-fast
->      1
->      2  #!/usr/bin/env bash
->      3
->      4  source /srv/qios/tools/aider/.venv/bin/activate
->      5
->      6  export OLLAMA_API_BASE="${OLLAMA_API_BASE:-http://127.0.0.1:11434}"
->      7
->      8  exec aider \
->      9
->     10    --model ollama/qwen2.5-coder:3b \
->     11
->     12    --no-auto-commits \
->     13
->     14    --show-diffs \
->     15
->     16    "$@"
->     17
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ sudo tee /usr/local/bin/aider-fast >/dev/null <<'EOF'
-> > 
-> > #!/usr/bin/env bash
-> > 
-> > source /srv/qios/tools/aider/.venv/bin/activate
-> > 
-> > export OLLAMA_API_BASE="${OLLAMA_API_BASE:-http://127.0.0.1:11434}"
-> > 
-> > exec aider \
-> > 
-> >   --model ollama/qwen2.5-coder:3b \
-> > 
-> >   --no-auto-commits \
-> > 
-> >   --show-diffs \
-> > 
-> >   "$@"
-> > 
-> > EOF
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ sudo chmod +x /usr/local/bin/aider-fast
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ ollama list | grep qwen2.5-coder
-> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    2 minutes ago     
-> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    50 minutes ago    
-> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ aider-fast --version
-> ───────────────────────────────────────────────────────────────────────────────────────────────────────
-> No LLM model was specified and no API keys were provided.
-> OpenRouter provides free and paid access to many LLMs.
+> .py", line 746, in _run_async
+
+>     result = await f
+
+>              ^^^^^^^
+
+> KeyboardInterrupt
+
+> 
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ cat -n /usr/local/bin/aider-fast
+
+>      1
+
+>      2  #!/usr/bin/env bash
+
+>      3
+
+>      4  source /srv/qios/tools/aider/.venv/bin/activate
+
+>      5
+
+>      6  export OLLAMA_API_BASE="${OLLAMA_API_BASE:-http://127.0.0.1:11434}"
+
+>      7
+
+>      8  exec aider \
+
+>      9
+
+>     10    --model ollama/qwen2.5-coder:3b \
+
+>     11
+
+>     12    --no-auto-commits \
+
+>     13
+
+>     14    --show-diffs \
+
+>     15
+
+>     16    "$@"
+
+>     17
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ sudo tee /usr/local/bin/aider-fast >/dev/null <<'EOF'
+
+> > 
+
+> > #!/usr/bin/env bash
+
+> > 
+
+> > source /srv/qios/tools/aider/.venv/bin/activate
+
+> > 
+
+> > export OLLAMA_API_BASE="${OLLAMA_API_BASE:-http://127.0.0.1:11434}"
+
+> > 
+
+> > exec aider \
+
+> > 
+
+> >   --model ollama/qwen2.5-coder:3b \
+
+> > 
+
+> >   --no-auto-commits \
+
+> > 
+
+> >   --show-diffs \
+
+> > 
+
+> >   "$@"
+
+> > 
+
+> > EOF
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ 
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ sudo chmod +x /usr/local/bin/aider-fast
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ ollama list | grep qwen2.5-coder
+
+> qwen2.5-coder:3b           f72c60cabf62    1.9 GB    2 minutes ago     
+
+> qwen2.5-coder:7b           dae161e27b0e    4.7 GB    50 minutes ago    
+
+> qiadmin@qiserver:/srv/qios/repos/_QiAccess_Start$ aider-fast --version
+
+> ───────────────────────────────────────────────────────────────────────────────────────────────────────
+
+> No LLM model was specified and no API keys were provided.
+
+> OpenRouter provides free and paid access to many LLMs.
+
 > Login to OpenRouter or create a free account? (Y)es/(N)o [Yes]:
 
 ### Assistant
@@ -6306,74 +6551,142 @@ canonical_ref: ""
 > Do **not** let the IDE “modernize” the tech stack from `tech_stack_markmind.md`. That file still thinks MkDocs/Supabase/pgvector are active stack assumptions. Right now they are **possible future tools**, not current doctrine. That distinction matters.
 
 ### User
-> before i send that here is the response, you can now update this prompt fo rwhat i need to send. Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint" -Recurse -Filter "README.md" | Select-Object FullName`
-> Ran command: `$base = "c:\QiLabs\_QiAccess_Start\docs\10_blueprint"
-> $targetDir = "$base\70_appendices\07_legacy_mkdocs"
-> 
-> New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
-> 
-> $moves = @()
-> 
-> if (Test-Path "$base\mkdocs.yml") {
->     Move-Item "$base\mkdocs.yml" "$targetDir\"
->     $moves += "Moved $base\mkdocs.yml -> $targetDir\mkdocs.yml"
-> }
-> 
-> if (Test-Path "$base\stylesheets") {
->     Move-Item "$base\stylesheets" "$targetDir\"
->     $moves += "Moved $base\stylesheets -> $targetDir\stylesheets"
-> }
-> 
-> if (Test-Path "$base\overrides") {
->     Move-Item "$base\overrides" "$targetDir\"
->     $moves += "Moved $base\overrides -> $targetDir\overrides"
-> }
-> 
-> $obsidianBlueprint = "$base\.obsidian"
-> $obsidianDocs = "c:\QiLabs\_QiAccess_Start\docs\.obsidian"
-> 
-> if ((Test-Path $obsidianBlueprint) -and -not (Test-Path $obsidianDocs)) {
->     Move-Item $obsidianBlueprint $obsidianDocs
->     $moves += "Moved $obsidianBlueprint -> $obsidianDocs"
-> }
-> 
-> # Revert README.md back to _index.md in the numbered folders since the user wants to keep _index.md
-> $folders = Get-ChildItem -Path $base -Directory | Where-Object { $_.Name -match "^\d\d_" }
-> foreach ($folder in $folders) {
->     $readme = Join-Path $folder.FullName "README.md"
->     if (Test-Path $readme) {
->         Rename-Item $readme "_index.md" -Force
->         $moves += "Reverted $readme -> _index.md"
->     }
-> }
-> 
-> $moves -join "`n"
-> `
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint" -Force`
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint\70_appendices\07_legacy_mkdocs" -Force`
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
-> Ran command: `cmd.exe /c dir "C:\QiLabs\_QiAccess_Start\docs\10_blueprint\mkdocs.yml"`
-> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Directory | Where-Object { $_.Name -match "^(overrides|stylesheets)$" } | Select-Object FullName`
-> 
-> I have executed the requested filesystem cleanup. Here is the report of all moves performed:
-> 
-> 1. **`docs\10_blueprint\.obsidian`** ➔ **`docs\.obsidian`**
->    - Successfully moved the Obsidian vault configuration up to the `docs` root.
-> 
-> 2. **`README.md` files** ➔ **`_index.md`**
->    - Successfully reverted the `README.md` files inside the 6 numbered blueprint folders back to `_index.md` to keep them Obsidian/Wiki.js-oriented:
->      - `10_governance\_index.md`
->      - `20_architecture\_index.md`
->      - `30_data\_index.md`
->      - `40_compute\_index.md`
->      - `50_applications\_index.md`
->      - `60_operations\_index.md`
-> 
-> 3. **Legacy MkDocs Files (`mkdocs.yml`, `stylesheets`, `overrides`)**:
->    - I checked for these files in `docs\10_blueprint\`, but they **were not found** (it appears you may have already manually moved them to `local/` or `local/docs/` during your earlier cleanup step). Since they weren't in the source path, no action was taken on them. 
-> 
+> before i send that here is the response, you can now update this prompt fo rwhat i need to send. Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint" -Recurse -Filter "README.md" | Select-Object FullName`
+
+> Ran command: `$base = "c:\QiLabs\_QiAccess_Start\docs\10_blueprint"
+
+> $targetDir = "$base\70_appendices\07_legacy_mkdocs"
+
+> 
+
+> New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
+
+> 
+
+> $moves = @()
+
+> 
+
+> if (Test-Path "$base\mkdocs.yml") {
+
+>     Move-Item "$base\mkdocs.yml" "$targetDir\"
+
+>     $moves += "Moved $base\mkdocs.yml -> $targetDir\mkdocs.yml"
+
+> }
+
+> 
+
+> if (Test-Path "$base\stylesheets") {
+
+>     Move-Item "$base\stylesheets" "$targetDir\"
+
+>     $moves += "Moved $base\stylesheets -> $targetDir\stylesheets"
+
+> }
+
+> 
+
+> if (Test-Path "$base\overrides") {
+
+>     Move-Item "$base\overrides" "$targetDir\"
+
+>     $moves += "Moved $base\overrides -> $targetDir\overrides"
+
+> }
+
+> 
+
+> $obsidianBlueprint = "$base\.obsidian"
+
+> $obsidianDocs = "c:\QiLabs\_QiAccess_Start\docs\.obsidian"
+
+> 
+
+> if ((Test-Path $obsidianBlueprint) -and -not (Test-Path $obsidianDocs)) {
+
+>     Move-Item $obsidianBlueprint $obsidianDocs
+
+>     $moves += "Moved $obsidianBlueprint -> $obsidianDocs"
+
+> }
+
+> 
+
+> # Revert README.md back to _index.md in the numbered folders since the user wants to keep _index.md
+
+> $folders = Get-ChildItem -Path $base -Directory | Where-Object { $_.Name -match "^\d\d_" }
+
+> foreach ($folder in $folders) {
+
+>     $readme = Join-Path $folder.FullName "README.md"
+
+>     if (Test-Path $readme) {
+
+>         Rename-Item $readme "_index.md" -Force
+
+>         $moves += "Reverted $readme -> _index.md"
+
+>     }
+
+> }
+
+> 
+
+> $moves -join "`n"
+
+> `
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint" -Force`
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start\docs\10_blueprint\70_appendices\07_legacy_mkdocs" -Force`
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Filter "mkdocs.yml" | Select-Object FullName`
+
+> Ran command: `cmd.exe /c dir "C:\QiLabs\_QiAccess_Start\docs\10_blueprint\mkdocs.yml"`
+
+> Ran command: `Get-ChildItem -Path "c:\QiLabs\_QiAccess_Start" -Recurse -Directory | Where-Object { $_.Name -match "^(overrides|stylesheets)$" } | Select-Object FullName`
+
+> 
+
+> I have executed the requested filesystem cleanup. Here is the report of all moves performed:
+
+> 
+
+> 1. **`docs\10_blueprint\.obsidian`** ➔ **`docs\.obsidian`**
+
+>    - Successfully moved the Obsidian vault configuration up to the `docs` root.
+
+> 
+
+> 2. **`README.md` files** ➔ **`_index.md`**
+
+>    - Successfully reverted the `README.md` files inside the 6 numbered blueprint folders back to `_index.md` to keep them Obsidian/Wiki.js-oriented:
+
+>      - `10_governance\_index.md`
+
+>      - `20_architecture\_index.md`
+
+>      - `30_data\_index.md`
+
+>      - `40_compute\_index.md`
+
+>      - `50_applications\_index.md`
+
+>      - `60_operations\_index.md`
+
+> 
+
+> 3. **Legacy MkDocs Files (`mkdocs.yml`, `stylesheets`, `overrides`)**:
+
+>    - I checked for these files in `docs\10_blueprint\`, but they **were not found** (it appears you may have already manually moved them to `local/` or `local/docs/` during your earlier cleanup step). Since they weren't in the source path, no action was taken on them. 
+
+> 
+
 > No document content or app code was modified during this pass.
 
 ### Assistant
@@ -7227,8 +7540,10 @@ canonical_ref: ""
 > Current status: consolidation worked. Now create the active front-door index so the cleaned blueprint does not become a filing cabinet with no handle.
 
 ### User
-> PS C:\QiLabs\_QiAccess_Start> python .\audit_docs_alignment.py
-> C:\Python314\python.exe: can't open file 'C:\\QiLabs\\_QiAccess_Start\\audit_docs_alignment.py': [Errno 2] No such file or directory
+> PS C:\QiLabs\_QiAccess_Start> python .\audit_docs_alignment.py
+
+> C:\Python314\python.exe: can't open file 'C:\\QiLabs\\_QiAccess_Start\\audit_docs_alignment.py': [Errno 2] No such file or directory
+
 > PS C:\QiLabs\_QiAccess_Start>
 
 ### Assistant
@@ -8562,12 +8877,18 @@ canonical_ref: ""
 > Clean path: **script first, proven tool second, QiAccess integration third.**
 
 ### User
-> also it looks like you forgot about our tool requirement and also that needs to be added to the blueprint, we do folder name is the tool name, the inside is init py, tool py, manifest yaml, and readme.md  example: ```markdown
-> . 📂 cashapp_to_sample_bankstatement
-> ├── 📄 README.md
-> ├── 📄 __init__.py
-> ├── 📄 cashapp_to_sample_bankstatement.py
-> └── 📄 manifest.yaml
+> also it looks like you forgot about our tool requirement and also that needs to be added to the blueprint, we do folder name is the tool name, the inside is init py, tool py, manifest yaml, and readme.md  example: ```markdown
+
+> . 📂 cashapp_to_sample_bankstatement
+
+> ├── 📄 README.md
+
+> ├── 📄 __init__.py
+
+> ├── 📄 cashapp_to_sample_bankstatement.py
+
+> └── 📄 manifest.yaml
+
 > ```
 
 ### Assistant
@@ -8745,101 +9066,196 @@ canonical_ref: ""
 > One more tweak for the blueprint: we should stop calling this “QiOne Desktop Tools” in new docs unless referencing legacy. The active name should be something like **QiLabs toolbox** or **QiAccess local toolbox**. The uploaded README still says “QiOne Desktop Tools module,” so that is a legacy naming issue to clean later, not copy forward blindly.
 
 ### User
-> heres codex response from earlier, incoporate this tool build with the next prompt. • Validation
-> 
->   Commands run:
-> 
->   - rg -n "\\127\.0\.0\.1|\\/srv\\/qios|\\\.|\\:"
->     docs\10_blueprint\20_architecture\06_service_boundaries.md
->     docs\10_blueprint\30_data\13_storage.md
->     docs\10_blueprint\30_data\16_structure.md
->     docs\10_blueprint\40_compute\05_runtime.md
->     docs\10_blueprint\40_compute\06_qiserver_runtime_profile.md
->     docs\10_blueprint\40_compute\07_tech_stack.md
->     docs\10_blueprint\50_applications\03_tools.md
->   - python -c "import yaml; ... repo_rules.yaml ..."
->   - python -c "import yaml; ... infrastructure_registry.yaml ..."
->   - python .\tools\audit_docs_alignment.py
-> 
->   YAML status:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/10_blueprint/standards/
->     repo_rules.yaml loads as valid YAML.
->   - RR-011 through RR-017 are present and machine-readable as normal rule
->     objects with id, name, and description.
->   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/10_blueprint/registry/
->     infrastructure_registry.yaml loads as valid YAML.
->   - The infra.qiserver addition fits the existing node_classes schema. No schema
->     change was needed.
->   - tools\audit_docs_alignment.py was not edited.
-> 
->   Files Changed
-> 
->   Changed:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/30_data/16_structure.md:17
->   - /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:178
-> 
->   Exact fixes made:
-> 
->   - In /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/30_data/16_structure.md:17, fixed a control-character-
->     corrupted table entry from \x000_inbox to 00_inbox.
->   - In /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:178, replaced a
->     broken arrow sequence with plain ASCII ->.
->   - In /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:221, fixed
->     malformed escaped paths:
->       - \/srv\/qios/... -> backticked /srv/qios/...
->   - In /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:227, fixed
->     malformed escaped localhost ports:
->       - \127.0.0.1:... -> backticked 127.0.0.1:...
-> 
->   Malformed escaping:
-> 
->   - Found and fixed in 40_compute/06_qiserver_runtime_profile.md.
->   - Not found in the other listed Markdown files after rescan.
-> 
->   Audit
-> 
->   Newest report reviewed:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/30_audits/
->     docs_alignment_audit_20260512_035449.md
-> 
->   New audit summary numbers:
-> 
->   - Files scanned: 111
->   - Likely stale: 28
->   - Mixed review: 32
->   - Current/aligned: 6
->   - Reference/audit: 8
->   - Neutral/unknown: 37
->   - Total findings: 1754
-> 
->   Remaining top 10 active review files:
-> 
->   - 10_blueprint/adr/ADR-0004_single_account_modular_mode.md
->   - 10_blueprint/70_appendices/04_legacy_csv_migration_plan.md
->   - 10_blueprint/30_data/10_schema.md
->   - 10_blueprint/registry/domain_registry.yaml
->   - 10_blueprint/30_data/08_objects.md
->   - 10_blueprint/30_data/05_namespace_registry.md
->   - 10_blueprint/30_data/02_bands.md
->   - 10_blueprint/30_data/03_domains.md
->   - 10_blueprint/30_data/09_placement_rules.md
->   - 10_blueprint/40_compute/01_apis.md
-> 
->   Recommended next pass:
-> 
->   - Stay surgical and target the highest-signal active doctrine files first:
->     30_data/10_schema.md, registry/domain_registry.yaml, 30_data/08_objects.md,
->     30_data/05_namespace_registry.md, and 40_compute/01_apis.md. These are
->     better next candidates than broad ADR or appendix cleanup if the goal is
+> heres codex response from earlier, incoporate this tool build with the next prompt. • Validation
+
+> 
+
+>   Commands run:
+
+> 
+
+>   - rg -n "\\127\.0\.0\.1|\\/srv\\/qios|\\\.|\\:"
+
+>     docs\10_blueprint\20_architecture\06_service_boundaries.md
+
+>     docs\10_blueprint\30_data\13_storage.md
+
+>     docs\10_blueprint\30_data\16_structure.md
+
+>     docs\10_blueprint\40_compute\05_runtime.md
+
+>     docs\10_blueprint\40_compute\06_qiserver_runtime_profile.md
+
+>     docs\10_blueprint\40_compute\07_tech_stack.md
+
+>     docs\10_blueprint\50_applications\03_tools.md
+
+>   - python -c "import yaml; ... repo_rules.yaml ..."
+
+>   - python -c "import yaml; ... infrastructure_registry.yaml ..."
+
+>   - python .\tools\audit_docs_alignment.py
+
+> 
+
+>   YAML status:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/10_blueprint/standards/
+
+>     repo_rules.yaml loads as valid YAML.
+
+>   - RR-011 through RR-017 are present and machine-readable as normal rule
+
+>     objects with id, name, and description.
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/10_blueprint/registry/
+
+>     infrastructure_registry.yaml loads as valid YAML.
+
+>   - The infra.qiserver addition fits the existing node_classes schema. No schema
+
+>     change was needed.
+
+>   - tools\audit_docs_alignment.py was not edited.
+
+> 
+
+>   Files Changed
+
+> 
+
+>   Changed:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/30_data/16_structure.md:17
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:178
+
+> 
+
+>   Exact fixes made:
+
+> 
+
+>   - In /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/30_data/16_structure.md:17, fixed a control-character-
+
+>     corrupted table entry from \x000_inbox to 00_inbox.
+
+>   - In /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:178, replaced a
+
+>     broken arrow sequence with plain ASCII ->.
+
+>   - In /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:221, fixed
+
+>     malformed escaped paths:
+
+>       - \/srv\/qios/... -> backticked /srv/qios/...
+
+>   - In /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/40_compute/06_qiserver_runtime_profile.md:227, fixed
+
+>     malformed escaped localhost ports:
+
+>       - \127.0.0.1:... -> backticked 127.0.0.1:...
+
+> 
+
+>   Malformed escaping:
+
+> 
+
+>   - Found and fixed in 40_compute/06_qiserver_runtime_profile.md.
+
+>   - Not found in the other listed Markdown files after rescan.
+
+> 
+
+>   Audit
+
+> 
+
+>   Newest report reviewed:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/docs/30_audits/
+
+>     docs_alignment_audit_20260512_035449.md
+
+> 
+
+>   New audit summary numbers:
+
+> 
+
+>   - Files scanned: 111
+
+>   - Likely stale: 28
+
+>   - Mixed review: 32
+
+>   - Current/aligned: 6
+
+>   - Reference/audit: 8
+
+>   - Neutral/unknown: 37
+
+>   - Total findings: 1754
+
+> 
+
+>   Remaining top 10 active review files:
+
+> 
+
+>   - 10_blueprint/adr/ADR-0004_single_account_modular_mode.md
+
+>   - 10_blueprint/70_appendices/04_legacy_csv_migration_plan.md
+
+>   - 10_blueprint/30_data/10_schema.md
+
+>   - 10_blueprint/registry/domain_registry.yaml
+
+>   - 10_blueprint/30_data/08_objects.md
+
+>   - 10_blueprint/30_data/05_namespace_registry.md
+
+>   - 10_blueprint/30_data/02_bands.md
+
+>   - 10_blueprint/30_data/03_domains.md
+
+>   - 10_blueprint/30_data/09_placement_rules.md
+
+>   - 10_blueprint/40_compute/01_apis.md
+
+> 
+
+>   Recommended next pass:
+
+> 
+
+>   - Stay surgical and target the highest-signal active doctrine files first:
+
+>     30_data/10_schema.md, registry/domain_registry.yaml, 30_data/08_objects.md,
+
+>     30_data/05_namespace_registry.md, and 40_compute/01_apis.md. These are
+
+>     better next candidates than broad ADR or appendix cleanup if the goal is
+
 >     active doctrine alignment.
 
 ### Assistant
@@ -9289,350 +9705,690 @@ canonical_ref: ""
 > Bottom line: use a named config profile, commit the stable pieces, ignore the noisy pieces, and don’t let Obsidian become another mystery settings blob.
 
 ### User
-> this gitignore is missing a bunch. node_modules/
-> **/node_modules/
-> .wrangler/
-> .dev.vars
-> dist/
-> .DS_Store
-> .npm-cache/
-> .runtime/
-> *.tsbuildinfo
-> vite.config.js
-> vite.config.d.ts
-> tailwind.config.js
-> tailwind.config.d.ts
-> 
-> # Obsidian volatile workspace/cache files
-> docs/.obsidian-qidocs/workspace.json
-> docs/.obsidian-qidocs/workspace-mobile.json
-> docs/.obsidian-qidocs/cache/
+> this gitignore is missing a bunch. node_modules/
+
+> **/node_modules/
+
+> .wrangler/
+
+> .dev.vars
+
+> dist/
+
+> .DS_Store
+
+> .npm-cache/
+
+> .runtime/
+
+> *.tsbuildinfo
+
+> vite.config.js
+
+> vite.config.d.ts
+
+> tailwind.config.js
+
+> tailwind.config.d.ts
+
+> 
+
+> # Obsidian volatile workspace/cache files
+
+> docs/.obsidian-qidocs/workspace.json
+
+> docs/.obsidian-qidocs/workspace-mobile.json
+
+> docs/.obsidian-qidocs/cache/
+
 > docs/.obsidian-qidocs/workspace*/
 > 
-> codex said this: • Files created:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
->     doc_markmind_exporter/README.md
->   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
->     doc_markmind_exporter/__init__.py
->   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
->     doc_markmind_exporter/
->     doc_markmind_exporter.py
->   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
->     doc_markmind_exporter/manifest.yaml
-> 
->   Docs updated:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/50_applications/03_tools.md
->   - /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/standards/repo_rules.yaml
-> 
->   Validation commands run:
-> 
->   - python - with a stdlib-only YAML subset
->     validator against
->     docs\10_blueprint\standards\repo_rules.yaml
->     and tools\doc_markmind_exporter\manifest.yaml
->   - python .
->     \tools\doc_markmind_exporter\doc_markmind_exp
->     orter.py .\docs\10_blueprint --out .
->     \docs\10_blueprint\assets\diagrams\blueprint_
->     map.md --force
->   - Test-Path
->     docs\10_blueprint\assets\diagrams\blueprint_m
->     ap.md
->   - python .\tools\audit_docs_alignment.py
-> 
->   YAML status:
-> 
->   - docs\10_blueprint\standards\repo_rules.yaml:
->     validated successfully; RR-018 present.
->   - tools\doc_markmind_exporter\manifest.yaml:
->     validated successfully; manifest id is
->     toolbox.doc_markmind_exporter.
-> 
->   MarkMind export command run:
-> 
->   - python .
->     \tools\doc_markmind_exporter\doc_markmind_exp
->     orter.py .\docs\10_blueprint --out .
->     \docs\10_blueprint\assets\diagrams\blueprint_
->     map.md --force
-> 
->   Output file created:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/
->     docs/10_blueprint/assets/diagrams/
->     blueprint_map.md
-> 
->   New audit summary numbers:
-> 
->   - Files scanned: 114
->   - Likely stale files: 28
->   - Mixed review files: 32
->   - Current/aligned files: 6
->   - Reference/audit files: 9
->   - Neutral/unknown files: 39
->   - Total findings: 2299
-> 
->   Any errors:
-> 
->   - No task-blocking errors.
->   - ConvertFrom-Yaml is not available in this
+> codex said this: • Files created:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
+
+>     doc_markmind_exporter/README.md
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
+
+>     doc_markmind_exporter/__init__.py
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
+
+>     doc_markmind_exporter/
+
+>     doc_markmind_exporter.py
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/tools/
+
+>     doc_markmind_exporter/manifest.yaml
+
+> 
+
+>   Docs updated:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/50_applications/03_tools.md
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/standards/repo_rules.yaml
+
+> 
+
+>   Validation commands run:
+
+> 
+
+>   - python - with a stdlib-only YAML subset
+
+>     validator against
+
+>     docs\10_blueprint\standards\repo_rules.yaml
+
+>     and tools\doc_markmind_exporter\manifest.yaml
+
+>   - python .
+
+>     \tools\doc_markmind_exporter\doc_markmind_exp
+
+>     orter.py .\docs\10_blueprint --out .
+
+>     \docs\10_blueprint\assets\diagrams\blueprint_
+
+>     map.md --force
+
+>   - Test-Path
+
+>     docs\10_blueprint\assets\diagrams\blueprint_m
+
+>     ap.md
+
+>   - python .\tools\audit_docs_alignment.py
+
+> 
+
+>   YAML status:
+
+> 
+
+>   - docs\10_blueprint\standards\repo_rules.yaml:
+
+>     validated successfully; RR-018 present.
+
+>   - tools\doc_markmind_exporter\manifest.yaml:
+
+>     validated successfully; manifest id is
+
+>     toolbox.doc_markmind_exporter.
+
+> 
+
+>   MarkMind export command run:
+
+> 
+
+>   - python .
+
+>     \tools\doc_markmind_exporter\doc_markmind_exp
+
+>     orter.py .\docs\10_blueprint --out .
+
+>     \docs\10_blueprint\assets\diagrams\blueprint_
+
+>     map.md --force
+
+> 
+
+>   Output file created:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/
+
+>     docs/10_blueprint/assets/diagrams/
+
+>     blueprint_map.md
+
+> 
+
+>   New audit summary numbers:
+
+> 
+
+>   - Files scanned: 114
+
+>   - Likely stale files: 28
+
+>   - Mixed review files: 32
+
+>   - Current/aligned files: 6
+
+>   - Reference/audit files: 9
+
+>   - Neutral/unknown files: 39
+
+>   - Total findings: 2299
+
+> 
+
+>   Any errors:
+
+> 
+
+>   - No task-blocking errors.
+
+>   - ConvertFrom-Yaml is not available in this
+
 > 
 > 
-> heres the main repos gitignore. # Logs
-> logs
-> *.log
-> npm-debug.log*
-> yarn-debug.log*
-> yarn-error.log*
-> lerna-debug.log*
-> 
-> # Diagnostic reports (https://nodejs.org/api/report.html)
-> report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-> 
-> # Runtime data
-> pids
-> *.pid
-> *.seed
-> *.pid.lock
-> 
-> # Directory for instrumented libs generated by jscoverage/JSCover
-> lib-cov
-> 
-> # Coverage directory used by tools like istanbul
-> coverage
-> *.lcov
-> 
-> # nyc test coverage
-> .nyc_output
-> 
-> # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-> .grunt
-> 
-> # Bower dependency directory (https://bower.io/)
-> bower_components
-> 
-> # node-waf configuration
-> .lock-wscript
-> 
-> # Compiled binary addons (https://nodejs.org/api/addons.html)
-> build/Release
-> 
-> # Dependency directories
-> node_modules/
-> jspm_packages/
-> 
-> # Snowpack dependency directory (https://snowpack.dev/)
-> web_modules/
-> 
-> # TypeScript cache
-> *.tsbuildinfo
-> 
-> # Optional npm cache directory
-> .npm
-> 
-> # Optional eslint cache
-> .eslintcache
-> 
-> # Optional stylelint cache
-> .stylelintcache
-> 
-> # Optional REPL history
-> .node_repl_history
-> 
-> # Output of 'npm pack'
-> *.tgz
-> 
-> # Yarn Integrity file
-> .yarn-integrity
-> 
-> # dotenv environment variable files
-> .env
-> .env.*
-> !.env.example
-> 
-> # parcel-bundler cache (https://parceljs.org/)
-> .cache
-> .parcel-cache
-> 
-> # Next.js build output
-> .next
-> out
-> 
-> # Nuxt.js build / generate output
-> .nuxt
-> dist
-> 
-> # Gatsby files
-> .cache/
-> # Comment in the public line in if your project uses Gatsby and not Next.js
-> # https://nextjs.org/blog/next-9-1#public-directory-support
-> # public
-> 
-> # vuepress build output
-> .vuepress/dist
-> 
-> # vuepress v2.x temp and cache directory
-> .temp
-> .cache
-> 
-> # Sveltekit cache directory
-> .svelte-kit/
-> 
-> # vitepress build output
-> **/.vitepress/dist
-> 
-> # vitepress cache directory
-> **/.vitepress/cache
-> 
-> # Docusaurus cache and generated files
-> .docusaurus
-> 
-> # Serverless directories
-> .serverless/
-> 
-> # FuseBox cache
-> .fusebox/
-> 
-> # DynamoDB Local files
-> .dynamodb/
-> 
-> # Firebase cache directory
-> .firebase/
-> 
-> # TernJS port file
-> .tern-port
-> 
-> # Stores VSCode versions used for testing VSCode extensions
-> .vscode-test
-> 
-> # yarn v3
-> .pnp.*
-> .yarn/*
-> !.yarn/patches
-> !.yarn/plugins
-> !.yarn/releases
-> !.yarn/sdks
-> !.yarn/versions
-> 
-> # Vite logs files
-> vite.config.js.timestamp-*
-> vite.config.ts.timestamp-*
-> 
-> # Python
-> __pycache__/
-> *.py[cod]
-> *$py.class
-> *.so
-> .Python
-> **/build/
-> develop-eggs/
-> **/dist/
-> downloads/
-> eggs/
-> .eggs/
-> # lib/  <-- Removed to avoid ignoring src/lib
-> # lib64/ <-- Removed to avoid ignoring src/lib64
-> parts/
-> sdist/
-> var/
-> wheels/
-> share/python-wheels/
-> *.egg-info/
-> .installed.cfg
-> *.egg
-> MANIFEST
-> 
-> 
-> # Environments
-> .env
-> .venv
-> env/
-> venv/
-> rag_env/
-> ENV/
-> env.bak/
-> venv.bak/
-> 
-> # Testing
-> .pytest_cache/
-> .tox/
-> .nox/
-> .coverage
-> .cache
-> nosetests.xml
-> coverage.xml
-> *.cover
-> .hypothesis/
-> 
-> # Jupyter Notebooks
-> .ipynb_checkpoints
-> 
-> # VS Code / IDEs
-> .vscode/
-> !.vscode/settings.json
-> !.vscode/tasks.json
-> !.vscode/launch.json
-> !.vscode/extensions.json
-> .idea/
-> 
-> # Windows
-> Thumbs.db
-> Desktop.ini
-> $*
-> *~
-> 
-> # macOS
-> .DS_Store
-> .AppleDouble
-> .LSOverride
-> Icon?
-> 
-> # Monorepo / Nested patterns
-> **/node_modules/
-> **/__pycache__/
-> **/build/
-> **/dist/
-> **/.next/
-> **/out/
-> **/.nuxt/
-> **/.svelte-kit/
-> **/.docusaurus/
-> **/.serverless/
-> **/.fusebox/
-> **/.dynamodb/
-> **/.firebase/
-> **/.serverless/
-> **/.cache/
-> **/*.exe
-> **/*.bin
-> **/*.pyd
-> **/*.spec
-> **/*.log
-> 
-> 
-> # Content and Experiments
-> /content/*
-> !/content/README.md
-> /experiments/*
-> !/experiments/README.md
-> /_App_Experiments/*/content/*
-> /_App_Experiments/*/experiments/*
-> 
-> #local Storage
-> **/*.db
-> **/*.sqlite
-> **/*.sqlite3
-> **/*.vec
-> *.index
-> *.bin
-> python_core/core_tools.zip
-> 
-> apps/MomsCare/
-> 
+> heres the main repos gitignore. # Logs
+
+> logs
+
+> *.log
+
+> npm-debug.log*
+
+> yarn-debug.log*
+
+> yarn-error.log*
+
+> lerna-debug.log*
+
+> 
+
+> # Diagnostic reports (https://nodejs.org/api/report.html)
+
+> report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+> 
+
+> # Runtime data
+
+> pids
+
+> *.pid
+
+> *.seed
+
+> *.pid.lock
+
+> 
+
+> # Directory for instrumented libs generated by jscoverage/JSCover
+
+> lib-cov
+
+> 
+
+> # Coverage directory used by tools like istanbul
+
+> coverage
+
+> *.lcov
+
+> 
+
+> # nyc test coverage
+
+> .nyc_output
+
+> 
+
+> # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+
+> .grunt
+
+> 
+
+> # Bower dependency directory (https://bower.io/)
+
+> bower_components
+
+> 
+
+> # node-waf configuration
+
+> .lock-wscript
+
+> 
+
+> # Compiled binary addons (https://nodejs.org/api/addons.html)
+
+> build/Release
+
+> 
+
+> # Dependency directories
+
+> node_modules/
+
+> jspm_packages/
+
+> 
+
+> # Snowpack dependency directory (https://snowpack.dev/)
+
+> web_modules/
+
+> 
+
+> # TypeScript cache
+
+> *.tsbuildinfo
+
+> 
+
+> # Optional npm cache directory
+
+> .npm
+
+> 
+
+> # Optional eslint cache
+
+> .eslintcache
+
+> 
+
+> # Optional stylelint cache
+
+> .stylelintcache
+
+> 
+
+> # Optional REPL history
+
+> .node_repl_history
+
+> 
+
+> # Output of 'npm pack'
+
+> *.tgz
+
+> 
+
+> # Yarn Integrity file
+
+> .yarn-integrity
+
+> 
+
+> # dotenv environment variable files
+
+> .env
+
+> .env.*
+
+> !.env.example
+
+> 
+
+> # parcel-bundler cache (https://parceljs.org/)
+
+> .cache
+
+> .parcel-cache
+
+> 
+
+> # Next.js build output
+
+> .next
+
+> out
+
+> 
+
+> # Nuxt.js build / generate output
+
+> .nuxt
+
+> dist
+
+> 
+
+> # Gatsby files
+
+> .cache/
+
+> # Comment in the public line in if your project uses Gatsby and not Next.js
+
+> # https://nextjs.org/blog/next-9-1#public-directory-support
+
+> # public
+
+> 
+
+> # vuepress build output
+
+> .vuepress/dist
+
+> 
+
+> # vuepress v2.x temp and cache directory
+
+> .temp
+
+> .cache
+
+> 
+
+> # Sveltekit cache directory
+
+> .svelte-kit/
+
+> 
+
+> # vitepress build output
+
+> **/.vitepress/dist
+
+> 
+
+> # vitepress cache directory
+
+> **/.vitepress/cache
+
+> 
+
+> # Docusaurus cache and generated files
+
+> .docusaurus
+
+> 
+
+> # Serverless directories
+
+> .serverless/
+
+> 
+
+> # FuseBox cache
+
+> .fusebox/
+
+> 
+
+> # DynamoDB Local files
+
+> .dynamodb/
+
+> 
+
+> # Firebase cache directory
+
+> .firebase/
+
+> 
+
+> # TernJS port file
+
+> .tern-port
+
+> 
+
+> # Stores VSCode versions used for testing VSCode extensions
+
+> .vscode-test
+
+> 
+
+> # yarn v3
+
+> .pnp.*
+
+> .yarn/*
+
+> !.yarn/patches
+
+> !.yarn/plugins
+
+> !.yarn/releases
+
+> !.yarn/sdks
+
+> !.yarn/versions
+
+> 
+
+> # Vite logs files
+
+> vite.config.js.timestamp-*
+
+> vite.config.ts.timestamp-*
+
+> 
+
+> # Python
+
+> __pycache__/
+
+> *.py[cod]
+
+> *$py.class
+
+> *.so
+
+> .Python
+
+> **/build/
+
+> develop-eggs/
+
+> **/dist/
+
+> downloads/
+
+> eggs/
+
+> .eggs/
+
+> # lib/  <-- Removed to avoid ignoring src/lib
+
+> # lib64/ <-- Removed to avoid ignoring src/lib64
+
+> parts/
+
+> sdist/
+
+> var/
+
+> wheels/
+
+> share/python-wheels/
+
+> *.egg-info/
+
+> .installed.cfg
+
+> *.egg
+
+> MANIFEST
+
+> 
+
+> 
+
+> # Environments
+
+> .env
+
+> .venv
+
+> env/
+
+> venv/
+
+> rag_env/
+
+> ENV/
+
+> env.bak/
+
+> venv.bak/
+
+> 
+
+> # Testing
+
+> .pytest_cache/
+
+> .tox/
+
+> .nox/
+
+> .coverage
+
+> .cache
+
+> nosetests.xml
+
+> coverage.xml
+
+> *.cover
+
+> .hypothesis/
+
+> 
+
+> # Jupyter Notebooks
+
+> .ipynb_checkpoints
+
+> 
+
+> # VS Code / IDEs
+
+> .vscode/
+
+> !.vscode/settings.json
+
+> !.vscode/tasks.json
+
+> !.vscode/launch.json
+
+> !.vscode/extensions.json
+
+> .idea/
+
+> 
+
+> # Windows
+
+> Thumbs.db
+
+> Desktop.ini
+
+> $*
+
+> *~
+
+> 
+
+> # macOS
+
+> .DS_Store
+
+> .AppleDouble
+
+> .LSOverride
+
+> Icon?
+
+> 
+
+> # Monorepo / Nested patterns
+
+> **/node_modules/
+
+> **/__pycache__/
+
+> **/build/
+
+> **/dist/
+
+> **/.next/
+
+> **/out/
+
+> **/.nuxt/
+
+> **/.svelte-kit/
+
+> **/.docusaurus/
+
+> **/.serverless/
+
+> **/.fusebox/
+
+> **/.dynamodb/
+
+> **/.firebase/
+
+> **/.serverless/
+
+> **/.cache/
+
+> **/*.exe
+
+> **/*.bin
+
+> **/*.pyd
+
+> **/*.spec
+
+> **/*.log
+
+> 
+
+> 
+
+> # Content and Experiments
+
+> /content/*
+
+> !/content/README.md
+
+> /experiments/*
+
+> !/experiments/README.md
+
+> /_App_Experiments/*/content/*
+
+> /_App_Experiments/*/experiments/*
+
+> 
+
+> #local Storage
+
+> **/*.db
+
+> **/*.sqlite
+
+> **/*.sqlite3
+
+> **/*.vec
+
+> *.index
+
+> *.bin
+
+> python_core/core_tools.zip
+
+> 
+
+> apps/MomsCare/
+
+> 
+
 > python_local/core_tools.zip
 
 ### Assistant
@@ -10346,56 +11102,105 @@ canonical_ref: ""
 > Do **not** start importing documents yet. We’re one metadata setup away from either “beautiful document brain” or “digital junk drawer with OCR.”
 
 ### User
-> iadmin@qiserver:/$ echo "=== DOCKER STATUS ==="
-> === DOCKER STATUS ===
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ sudo docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-> [sudo] password for qiadmin: 
-> Sorry, try again.
-> [sudo] password for qiadmin: 
-> NAMES                STATUS                  PORTS
-> portainer            Up 27 hours             8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
-> wikijs               Up 27 hours             3443/tcp, 127.0.0.1:3002->3000/tcp
-> wikijs-db            Up 27 hours             5432/tcp
-> homepage             Up 37 hours (healthy)   127.0.0.1:3001->3000/tcp
-> paperless            Up 42 hours (healthy)   127.0.0.1:8010->8000/tcp
-> paperless-postgres   Up 42 hours             5432/tcp
-> paperless-redis      Up 42 hours             6379/tcp
-> nocodb               Up 46 hours             127.0.0.1:8088->8080/tcp
-> nocodb-db            Up 46 hours (healthy)   5432/tcp
-> nocodb-redis         Up 46 hours             6379/tcp
-> cloudflared          Up 2 days               
-> open-webui           Up 2 days (healthy)     127.0.0.1:3000->8080/tcp
-> neo4j                Up 2 days               127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+> iadmin@qiserver:/$ echo "=== DOCKER STATUS ==="
+
+> === DOCKER STATUS ===
+
 > qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/srv/qios/stacks/paperless$ sudo docker compose ps
-> 
-> 
-> 
-> echo
-> 
-> echo "=== PAPERLESS LOGS LAST 80 ==="
-> 
-> sudo docker compose logs --tail=80
-> 
-> 
-> 
-> echo
-> 
-> echo "=== PAPERLESS CONSUME DIR ==="
-> 
-> ls -lah /srv/qios/data/paperless/consume
-> 
-> 
-> 
-> echo
-> 
-> echo "=== PAPERLESS MEDIA DIR ==="
-> 
-> ls -lah /srv/qios/data/paperless/media | headNAME                 IMAGE                                        COMMAND                  SERVICE               CREATED        STATUS                  PORTS
-> paperless            ghcr.io/paperless-ngx/paperless-ngx:latest   "/init"                  paperless-webserver   42 hours ago   Up 42 hours (healthy)   127.0.0.1:8010->8000/tcp
-> paperless-postgres   postgres:16                                  "docker-entrypoint.s…"   paperless-db          42 hours ago   Up 42 hours             5432/tcp
-> paperless-redis      redis:7                                      "docker-entrypoint.s…"   paperless-broker      42 hours ago   Up 42 hours             6379/tcp
+
+> qiadmin@qiserver:/$ sudo docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+> [sudo] password for qiadmin: 
+
+> Sorry, try again.
+
+> [sudo] password for qiadmin: 
+
+> NAMES                STATUS                  PORTS
+
+> portainer            Up 27 hours             8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
+
+> wikijs               Up 27 hours             3443/tcp, 127.0.0.1:3002->3000/tcp
+
+> wikijs-db            Up 27 hours             5432/tcp
+
+> homepage             Up 37 hours (healthy)   127.0.0.1:3001->3000/tcp
+
+> paperless            Up 42 hours (healthy)   127.0.0.1:8010->8000/tcp
+
+> paperless-postgres   Up 42 hours             5432/tcp
+
+> paperless-redis      Up 42 hours             6379/tcp
+
+> nocodb               Up 46 hours             127.0.0.1:8088->8080/tcp
+
+> nocodb-db            Up 46 hours (healthy)   5432/tcp
+
+> nocodb-redis         Up 46 hours             6379/tcp
+
+> cloudflared          Up 2 days               
+
+> open-webui           Up 2 days (healthy)     127.0.0.1:3000->8080/tcp
+
+> neo4j                Up 2 days               127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> qiadmin@qiserver:/$ 
+> qiadmin@qiserver:/srv/qios/stacks/paperless$ sudo docker compose ps
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== PAPERLESS LOGS LAST 80 ==="
+
+> 
+
+> sudo docker compose logs --tail=80
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== PAPERLESS CONSUME DIR ==="
+
+> 
+
+> ls -lah /srv/qios/data/paperless/consume
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== PAPERLESS MEDIA DIR ==="
+
+> 
+
+> ls -lah /srv/qios/data/paperless/media | headNAME                 IMAGE                                        COMMAND                  SERVICE               CREATED        STATUS                  PORTS
+
+> paperless            ghcr.io/paperless-ngx/paperless-ngx:latest   "/init"                  paperless-webserver   42 hours ago   Up 42 hours (healthy)   127.0.0.1:8010->8000/tcp
+
+> paperless-postgres   postgres:16                                  "docker-entrypoint.s…"   paperless-db          42 hours ago   Up 42 hours             5432/tcp
+
+> paperless-redis      redis:7                                      "docker-entrypoint.s…"   paperless-broker      42 hours ago   Up 42 hours             6379/tcp
+
 > qiadmin@qiserver:/srv/qios/stacks/paperless$ ... ok wait we need to makesure all the links are updated/added to my access.qially.com page, otherwise we are recreating what got us here and not in a good way. lol
 
 ### Assistant
@@ -10775,85 +11580,164 @@ canonical_ref: ""
 > Everything else is “ooh shiny server toy” until those are working.
 
 ### User
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo sed -n '1,220p' config/services.yaml 2>/dev/null || true
-> 
-> 
-> 
-> echo
-> 
-> echo "=== bookmarks.yaml ==="
-> 
-> sudo sed -n '1,220p' config/bookmarks.yaml 2>/dev/null || true
-> 
-> 
-> 
-> echo
-> 
-> echo "=== widgets.yaml ==="
-> 
-> sudo sed -n '1,220p' config/widgets.yaml 2>/dev/null || true
-> 
-> 
-> 
-> echo
-> 
-> echo "=== settings.yaml ==="
-> 
-> sudo sed -n '1,220p' config/settings.yaml 2>/dev/null || true---
-> # QiAccess Service Definitions
-> - Core Services:
->     - AI Chat:
->         icon: si-openai
->         href: https://qiserver-1.cerberus-sirius.ts.net:9446
->         description: QiBrain — Digital Twin
-> 
->     - Host Admin:
->         icon: si-linux
->         href: https://100.121.111.106:9090
->         description: Cockpit (Cerberus Node)
-> 
->     - Docker Admin:
->         icon: si-portainer
->         href: https://100.121.111.106:9443
->         description: Portainer Container Mgmt
-> 
-> - Work & Intake:
->     - Mail Intake:
->         icon: si-read-the-docs
->         href: https://100.121.111.106:8000
->         description: Document Warehouse (Paperless)
-> 
->     - Qi Queue:
->         icon: si-n8n
->         href: https://100.121.111.106:8001
->         description: Automation Control Plane
-> 
->     - Runbook:
->         icon: si-gitbook
->         href: https://qiserver-1.cerberus-sirius.ts.net:9446
->         description: System Re-entry Point
-> 
-> - External Control:
->     - Cloudflare:
->         icon: si-cloudflare
->         href: https://dash.cloudflare.com/
->         description: DNS, Tunnels, Edge Security
-> 
->     - GitHub:
->         icon: si-github
->         href: https://github.com/
->         description: QiOS Repositories
-> 
-> - Databases:
->     - Supabase:
->         icon: si-supabase
->         href: https://supabase.com/dashboard
->         description: Backend Database & Auth
-> 
->     - NocoDB:
->         icon: si-nocodb
->         href: https://qiserver-1.cerberus-sirius.ts.net:8443
->         description: Structured data admin UI for QiNexus and qiserver records
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo sed -n '1,220p' config/services.yaml 2>/dev/null || true
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== bookmarks.yaml ==="
+
+> 
+
+> sudo sed -n '1,220p' config/bookmarks.yaml 2>/dev/null || true
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== widgets.yaml ==="
+
+> 
+
+> sudo sed -n '1,220p' config/widgets.yaml 2>/dev/null || true
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== settings.yaml ==="
+
+> 
+
+> sudo sed -n '1,220p' config/settings.yaml 2>/dev/null || true---
+
+> # QiAccess Service Definitions
+
+> - Core Services:
+
+>     - AI Chat:
+
+>         icon: si-openai
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9446
+
+>         description: QiBrain — Digital Twin
+
+> 
+
+>     - Host Admin:
+
+>         icon: si-linux
+
+>         href: https://100.121.111.106:9090
+
+>         description: Cockpit (Cerberus Node)
+
+> 
+
+>     - Docker Admin:
+
+>         icon: si-portainer
+
+>         href: https://100.121.111.106:9443
+
+>         description: Portainer Container Mgmt
+
+> 
+
+> - Work & Intake:
+
+>     - Mail Intake:
+
+>         icon: si-read-the-docs
+
+>         href: https://100.121.111.106:8000
+
+>         description: Document Warehouse (Paperless)
+
+> 
+
+>     - Qi Queue:
+
+>         icon: si-n8n
+
+>         href: https://100.121.111.106:8001
+
+>         description: Automation Control Plane
+
+> 
+
+>     - Runbook:
+
+>         icon: si-gitbook
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9446
+
+>         description: System Re-entry Point
+
+> 
+
+> - External Control:
+
+>     - Cloudflare:
+
+>         icon: si-cloudflare
+
+>         href: https://dash.cloudflare.com/
+
+>         description: DNS, Tunnels, Edge Security
+
+> 
+
+>     - GitHub:
+
+>         icon: si-github
+
+>         href: https://github.com/
+
+>         description: QiOS Repositories
+
+> 
+
+> - Databases:
+
+>     - Supabase:
+
+>         icon: si-supabase
+
+>         href: https://supabase.com/dashboard
+
+>         description: Backend Database & Auth
+
+> 
+
+>     - NocoDB:
+
+>         icon: si-nocodb
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:8443
+
+>         description: Structured data admin UI for QiNexus and qiserver records
+
 > qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$
 
 ### Assistant
@@ -11047,19 +11931,32 @@ canonical_ref: ""
 > And for the record: **ActivityWatch belongs on your main PC**, not just the server. Solidtime tracks official time entries; ActivityWatch tracks what you actually did. Together, they become the truth machine.
 
 ### User
-> qiadmin@qiserver:/$ sudo tailscale serve status
-> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
-> |-- / proxy http://127.0.0.1:3001
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
-> |-- / proxy http://127.0.0.1:8088
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
-> |-- / proxy http://127.0.0.1:3000
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
-> |-- / proxy http://127.0.0.1:8010
-> 
+> qiadmin@qiserver:/$ sudo tailscale serve status
+
+> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3001
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8088
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3000
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8010
+
+> 
+
 > qiadmin@qiserver:/$ 
 > 
 > wiki js is not working i belive its tunneled through cloudflare but its on the server though, and familyos is technically family wall so the link is wrong. I didnt see potrainer and my creds earlier were wrong.
@@ -11342,185 +12239,364 @@ canonical_ref: ""
 > ```
 
 ### User
-> p.write_text(text.replace(old, new))
-> 
->     print("FamilyWall link updated.")
-> 
-> PY
-> 
-> 
-> 
-> sudo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo sed -n '1,220p' config/services.yaml
-> 
-> ---
-> 
-> # QiAccess Service Definitions
-> 
-> # QiAccess is the front door.
-> 
-> # qiserver services stay private/protected.
-> 
-> # Tailnet links are preferred for internal tools.
-> 
-> # Public links must be Cloudflare/Access protected.
-> 
-> 
-> 
-> - Front Door:
-> 
->     - QiAccess Home:
-> 
->         icon: si-homeassistant
-> 
->         href: https://access.qially.com
-> 
->         description: Main operational front door
-> 
-> 
-> 
->     - Wiki.js:
-> 
->         icon: si-wikidotjs
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:9448
-> 
->         description: Readable knowledge base
-> 
-> 
-> 
->     - NocoDB:
-> 
->         icon: si-nocodb
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:8443
-> 
->         description: Structured service registry and tables
-> 
-> 
-> 
-> - Work & Intake:
-> 
->     - Paperless:
-> 
->         icon: si-readthedocs
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:9447
-> 
->         description: Document intake, OCR, metadata, archive
-> 
-> 
-> 
->     - FamilyWall:
-> 
->         icon: si-homeassistant
-> 
->         href: https://www.familywall.com/
-> 
->         description: External household coordination app
-> 
-> 
-> 
->     - Qi Queue / n8n:
-> 
->         icon: si-n8n
-> 
->         href: "#"
-> 
->         description: Pending install — automation switchboard
-> 
-> 
-> 
->     - Solidtime:
-> 
->         icon: si-clockify
-> 
->         href: "#"
-> 
->         description: Pending install — project/time ledger
-> 
-> 
-> 
->     - ActivityWatch:
-> 
->         icon: si-activitypub
-> 
->         href: "#"
-> 
->         description: Install on main PC — automatic activity tracker
-> 
-> 
-> 
-> - AI & Knowledge:
-> 
->     - Open WebUI:
-> 
->         icon: si-openai
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:9446
-> 
->         description: Local AI chat surface
-> 
-> 
-> 
->     - Ollama API:
-> 
->         icon: si-ollama
-> 
->         href: http://100.121.111.106:11434
-> 
->         description: Local model API — private only
-> 
-> 
-> 
->     - Neo4j Browser:
-> 
->         icon: si-neo4j
-> 
->         href: http://100.121.111.106:7474
-> 
->         description: Graph database browser
-> 
-> 
-> 
-> - Admin & Control:
-> 
->     - Cockpit:
-> 
->         icon: si-linux
-> 
->         href: https://100.121.111.106:9090
-> 
->         description: qiserver host admin console
-> 
-> 
-> 
->     - Portainer:
-> 
->         icon: si-portainer
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:9449
-> 
->         description: Docker/container admin
-> 
-> 
-> 
->     - Cloudflare:
-> 
->         icon: si-cloudflare
-> 
->         href: https://dash.cloudflare.com/
-> 
->         description: DNS, tunnels, edge security
-> 
-> 
-> 
->     - GitHub:
-> 
->         icon: si-github
-> 
->         href: https://github.com/qiallyme
-> 
+> p.write_text(text.replace(old, new))
+
+> 
+
+>     print("FamilyWall link updated.")
+
+> 
+
+> PY
+
+> 
+
+> 
+
+> 
+
+> sudo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo sed -n '1,220p' config/services.yaml
+
+> 
+
+> ---
+
+> 
+
+> # QiAccess Service Definitions
+
+> 
+
+> # QiAccess is the front door.
+
+> 
+
+> # qiserver services stay private/protected.
+
+> 
+
+> # Tailnet links are preferred for internal tools.
+
+> 
+
+> # Public links must be Cloudflare/Access protected.
+
+> 
+
+> 
+
+> 
+
+> - Front Door:
+
+> 
+
+>     - QiAccess Home:
+
+> 
+
+>         icon: si-homeassistant
+
+> 
+
+>         href: https://access.qially.com
+
+> 
+
+>         description: Main operational front door
+
+> 
+
+> 
+
+> 
+
+>     - Wiki.js:
+
+> 
+
+>         icon: si-wikidotjs
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9448
+
+> 
+
+>         description: Readable knowledge base
+
+> 
+
+> 
+
+> 
+
+>     - NocoDB:
+
+> 
+
+>         icon: si-nocodb
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:8443
+
+> 
+
+>         description: Structured service registry and tables
+
+> 
+
+> 
+
+> 
+
+> - Work & Intake:
+
+> 
+
+>     - Paperless:
+
+> 
+
+>         icon: si-readthedocs
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9447
+
+> 
+
+>         description: Document intake, OCR, metadata, archive
+
+> 
+
+> 
+
+> 
+
+>     - FamilyWall:
+
+> 
+
+>         icon: si-homeassistant
+
+> 
+
+>         href: https://www.familywall.com/
+
+> 
+
+>         description: External household coordination app
+
+> 
+
+> 
+
+> 
+
+>     - Qi Queue / n8n:
+
+> 
+
+>         icon: si-n8n
+
+> 
+
+>         href: "#"
+
+> 
+
+>         description: Pending install — automation switchboard
+
+> 
+
+> 
+
+> 
+
+>     - Solidtime:
+
+> 
+
+>         icon: si-clockify
+
+> 
+
+>         href: "#"
+
+> 
+
+>         description: Pending install — project/time ledger
+
+> 
+
+> 
+
+> 
+
+>     - ActivityWatch:
+
+> 
+
+>         icon: si-activitypub
+
+> 
+
+>         href: "#"
+
+> 
+
+>         description: Install on main PC — automatic activity tracker
+
+> 
+
+> 
+
+> 
+
+> - AI & Knowledge:
+
+> 
+
+>     - Open WebUI:
+
+> 
+
+>         icon: si-openai
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9446
+
+> 
+
+>         description: Local AI chat surface
+
+> 
+
+> 
+
+> 
+
+>     - Ollama API:
+
+> 
+
+>         icon: si-ollama
+
+> 
+
+>         href: http://100.121.111.106:11434
+
+> 
+
+>         description: Local model API — private only
+
+> 
+
+> 
+
+> 
+
+>     - Neo4j Browser:
+
+> 
+
+>         icon: si-neo4j
+
+> 
+
+>         href: http://100.121.111.106:7474
+
+> 
+
+>         description: Graph database browser
+
+> 
+
+> 
+
+> 
+
+> - Admin & Control:
+
+> 
+
+>     - Cockpit:
+
+> 
+
+>         icon: si-linux
+
+> 
+
+>         href: https://100.121.111.106:9090
+
+> 
+
+>         description: qiserver host admin console
+
+> 
+
+> 
+
+> 
+
+>     - Portainer:
+
+> 
+
+>         icon: si-portainer
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9449
+
+> 
+
+>         description: Docker/container admin
+
+> 
+
+> 
+
+> 
+
+>     - Cloudflare:
+
+> 
+
+>         icon: si-cloudflare
+
+> 
+
+>         href: https://dash.cloudflare.com/
+
+> 
+
+>         description: DNS, tunnels, edge security
+
+> 
+
+> 
+
+> 
+
+>     - GitHub:
+
+> 
+
+>         icon: si-github
+
+> 
+
+>         href: https://github.com/qiallyme
+
+> 
+
 >         description: QiAccess and QiLabs repositories
 
 ### Assistant
@@ -11573,25 +12649,44 @@ canonical_ref: ""
 > Tiny YAML goblin note: the extra blank lines are ugly but not fatal. Later we can normalize the file. For now, fix the links and verify the front door works.
 
 ### User
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo tailscale serve status
-> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
-> |-- / proxy http://127.0.0.1:3000
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
-> |-- / proxy http://127.0.0.1:8010
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9448 (tailnet only)
-> |-- / proxy http://127.0.0.1:3002
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9449 (tailnet only)
-> |-- / proxy https://127.0.0.1:9443
-> 
-> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
-> |-- / proxy http://127.0.0.1:3001
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
-> |-- / proxy http://127.0.0.1:8088
-> 
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo tailscale serve status
+
+> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3000
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8010
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9448 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3002
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9449 (tailnet only)
+
+> |-- / proxy https://127.0.0.1:9443
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3001
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8088
+
+> 
+
 > qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$
 
 ### Assistant
@@ -12275,52 +13370,98 @@ canonical_ref: ""
 > ActivityWatch goes on your **main PC**, not primarily the server. Solidtime is your official time ledger; ActivityWatch is the “what actually happened” recorder.
 
 ### User
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ cd ..
-> qiadmin@qiserver:/srv/qios/stacks$ cd ..
-> qiadmin@qiserver:/srv/qios$ cd ..
-> qiadmin@qiserver:/srv$ cd ..
-> qiadmin@qiserver:/$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -Ei 'n8n|solidtime|qdrant|uptime|activity|watch|kuma' || true
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo
-> 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo "=== STACKS ==="
-> === STACKS ===
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ find /srv/qios/stacks -maxdepth 2 -type f \( -name "docker-compose.yml" -o -name "compose.yml" \) | sort
-> /srv/qios/stacks/cloudflared/docker-compose.yml
-> /srv/qios/stacks/nocodb/docker-compose.yml
-> /srv/qios/stacks/paperless/docker-compose.yml
-> /srv/qios/stacks/portainer/docker-compose.yml
-> /srv/qios/stacks/_qiaccess_start/docker-compose.yml
-> /srv/qios/stacks/wikijs/docker-compose.yml
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo
-> 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo "=== DISK ==="
-> === DISK ===
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ df -h /
-> Filesystem      Size  Used Avail Use% Mounted on
-> /dev/nvme0n1p2  468G   55G  389G  13% /
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo
-> 
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ echo "=== MEMORY ==="
-> === MEMORY ===
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ free -h
->                total        used        free      shared  buff/cache   available
-> Mem:           7.5Gi       2.1Gi       2.9Gi        26Mi       3.0Gi       5.4Gi
-> Swap:           11Gi       1.8Gi        10Gi
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ cd ..
+
+> qiadmin@qiserver:/srv/qios/stacks$ cd ..
+
+> qiadmin@qiserver:/srv/qios$ cd ..
+
+> qiadmin@qiserver:/srv$ cd ..
+
+> qiadmin@qiserver:/$ sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -Ei 'n8n|solidtime|qdrant|uptime|activity|watch|kuma' || true
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo
+
+> 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo "=== STACKS ==="
+
+> === STACKS ===
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ find /srv/qios/stacks -maxdepth 2 -type f \( -name "docker-compose.yml" -o -name "compose.yml" \) | sort
+
+> /srv/qios/stacks/cloudflared/docker-compose.yml
+
+> /srv/qios/stacks/nocodb/docker-compose.yml
+
+> /srv/qios/stacks/paperless/docker-compose.yml
+
+> /srv/qios/stacks/portainer/docker-compose.yml
+
+> /srv/qios/stacks/_qiaccess_start/docker-compose.yml
+
+> /srv/qios/stacks/wikijs/docker-compose.yml
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo
+
+> 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo "=== DISK ==="
+
+> === DISK ===
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ df -h /
+
+> Filesystem      Size  Used Avail Use% Mounted on
+
+> /dev/nvme0n1p2  468G   55G  389G  13% /
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo
+
+> 
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ echo "=== MEMORY ==="
+
+> === MEMORY ===
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ free -h
+
+>                total        used        free      shared  buff/cache   available
+
+> Mem:           7.5Gi       2.1Gi       2.9Gi        26Mi       3.0Gi       5.4Gi
+
+> Swap:           11Gi       1.8Gi        10Gi
+
 > qiadmin@qiserver:/$
 
 ### Assistant
@@ -12876,141 +14017,273 @@ canonical_ref: ""
 > Run these stacks first. Paste any errors.
 
 ### User
-> fyi, 
-> • Files changed:
-> 
->   - /abs/path/C:/QiLabs/_QiAccess_Start/src/features/01_server/ServerPage.tsx
->   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/serviceLinks.ts
->   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts
->   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/knowledgeLinks.ts
-> 
->   Stale URLs fixed:
-> 
->   - Wiki.js server registry URL: http://100.121.111.106:3002 -> https://qiserver-1.cerberus-sirius.ts.net:9448
->   - Wiki.js knowledge link: http://100.121.111.106:3002 -> https://qiserver-1.cerberus-sirius.ts.net:9448
->   - Paperless URL: https://100.121.111.106:8000 -> https://qiserver-1.cerberus-sirius.ts.net:9447
->   - Portainer URL: https://100.121.111.106:9443 -> https://qiserver-1.cerberus-sirius.ts.net:9449
->   - Added FamilyWall launch target: https://www.familywall.com/home.php
->   - Wiki.js now keeps the internal route as healthy and notes https://wiki.qially.com as degraded / needing Cloudfl
->     are tunnel repair.
-> 
->   Cards are now clickable:
-> 
->   - Yes. On /server, launchable cards are direct <a> links that open in a new tab.
->   - The card itself is now the primary action.
-> 
->   Detail panel:
-> 
->   - Removed from /server.
->   - Replaced with grouped launch cards and one small footer pointer to /system/server for deeper notes.
-> 
->   Build result:
-> 
->   - npm run build failed in this environment before bundling with the known Vite/esbuild spawn EPERM issue from
->     vite.config.js.
->   - npx tsc -p tsconfig.app.json --noEmit passed.
->   - npx tsc -p tsconfig.node.json --noEmit passed.
-> 
->   Anything skipped and why:
-> 
->   - I did not add a nested secondary notes/KB link on each clickable card. That would reintroduce competing click
->     targets on the launch surface.
->   - The pending Neo4j card stays non-launchable because there is still no verified URL. I kept it visible in
->     Pending / Not Installed rather than faking a launch path.
-> 
-> ─ Worked for 6m 32s ───────────────────────────────────────────────────────────────────qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/stacks/n8n
-> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/data/n8n
-> qiadmin@qiserver:/$ sudo chown -R qiadmin:qiadmin /srv/qios/stacks/n8n /srv/qios/data/n8n
-> qiadmin@qiserver:/$ cd /srv/qios/stacks/n8n
-> qiadmin@qiserver:/srv/qios/stacks/n8n$ cat > docker-compose.yml <<'EOF'
-> > 
-> > services:
-> > 
-> >   n8n:
-> > 
-> >     image: docker.n8n.io/n8nio/n8n:latest
-> > 
-> >     container_name: n8n
-> > 
-> >     restart: unless-stopped
-> > 
-> >     ports:
-> > 
-> >       - "127.0.0.1:5678:5678"
-> > 
-> >     environment:
-> > 
-> >       - TZ=America/Indiana/Indianapolis
-> > 
-> >       - N8N_HOST=qiserver-1.cerberus-sirius.ts.net
-> > 
-> >       - N8N_PORT=5678
-> > 
-> >       - N8N_PROTOCOL=https
-> > 
-> >       - WEBHOOK_URL=https://qiserver-1.cerberus-sirius.ts.net:9450/
-> > 
-> >       - N8N_EDITOR_BASE_URL=https://qiserver-1.cerberus-sirius.ts.net:9450/
-> > 
-> >       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
-> > 
-> >       - N8N_RUNNERS_ENABLED=true
-> > 
-> >     volumes:
-> > 
-> >       - /srv/qios/data/n8n:/home/node/.n8n
-> > 
-> > EOF
-> qiadmin@qiserver:/srv/qios/stacks/n8n$ sudo docker compose up -d
-> 
-> sudo docker compose ps
-> 
-> [+] up 15/15compose logs --tail=80
->  ✔ Image docker.n8n.io/n8nio/n8n:latest Pulled                                                    34.7s
->  ✔ Network n8n_default                  Created                                                    0.0s
->  ✔ Container n8n                        Started                                                    0.5s
-> qiadmin@qiserver:/srv/qios/stacks/n8n$ sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
-> 
-> sudo tailscale serve statusAvailable within your tailnet:
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9450/
-> |-- proxy http://127.0.0.1:5678
-> 
-> Serve started and running in the background.
-> To disable the proxy, run: tailscale serve --https=9450 off
-> qiadmin@qiserver:/srv/qios/stacks/n8n$ cd /srv/qios/stacks/_qiaccess_start
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo cp config/services.yaml "backups/services_$(date +%Y%m%d_%H%M%S).yaml"
-> 
-> 
-> 
-> sudo sed -i 's|href: "#"|href: https://qiserver-1.cerberus-sirius.ts.net:9450|1' config/services.yaml
-> 
-> 
-> 
-> sudo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+> fyi, 
+
+> • Files changed:
+
+> 
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/src/features/01_server/ServerPage.tsx
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/serviceLinks.ts
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts
+
+>   - /abs/path/C:/QiLabs/_QiAccess_Start/src/data/knowledgeLinks.ts
+
+> 
+
+>   Stale URLs fixed:
+
+> 
+
+>   - Wiki.js server registry URL: http://100.121.111.106:3002 -> https://qiserver-1.cerberus-sirius.ts.net:9448
+
+>   - Wiki.js knowledge link: http://100.121.111.106:3002 -> https://qiserver-1.cerberus-sirius.ts.net:9448
+
+>   - Paperless URL: https://100.121.111.106:8000 -> https://qiserver-1.cerberus-sirius.ts.net:9447
+
+>   - Portainer URL: https://100.121.111.106:9443 -> https://qiserver-1.cerberus-sirius.ts.net:9449
+
+>   - Added FamilyWall launch target: https://www.familywall.com/home.php
+
+>   - Wiki.js now keeps the internal route as healthy and notes https://wiki.qially.com as degraded / needing Cloudfl
+
+>     are tunnel repair.
+
+> 
+
+>   Cards are now clickable:
+
+> 
+
+>   - Yes. On /server, launchable cards are direct <a> links that open in a new tab.
+
+>   - The card itself is now the primary action.
+
+> 
+
+>   Detail panel:
+
+> 
+
+>   - Removed from /server.
+
+>   - Replaced with grouped launch cards and one small footer pointer to /system/server for deeper notes.
+
+> 
+
+>   Build result:
+
+> 
+
+>   - npm run build failed in this environment before bundling with the known Vite/esbuild spawn EPERM issue from
+
+>     vite.config.js.
+
+>   - npx tsc -p tsconfig.app.json --noEmit passed.
+
+>   - npx tsc -p tsconfig.node.json --noEmit passed.
+
+> 
+
+>   Anything skipped and why:
+
+> 
+
+>   - I did not add a nested secondary notes/KB link on each clickable card. That would reintroduce competing click
+
+>     targets on the launch surface.
+
+>   - The pending Neo4j card stays non-launchable because there is still no verified URL. I kept it visible in
+
+>     Pending / Not Installed rather than faking a launch path.
+
+> 
+
+> ─ Worked for 6m 32s ───────────────────────────────────────────────────────────────────qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/stacks/n8n
+
+> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/data/n8n
+
+> qiadmin@qiserver:/$ sudo chown -R qiadmin:qiadmin /srv/qios/stacks/n8n /srv/qios/data/n8n
+
+> qiadmin@qiserver:/$ cd /srv/qios/stacks/n8n
+
+> qiadmin@qiserver:/srv/qios/stacks/n8n$ cat > docker-compose.yml <<'EOF'
+
+> > 
+
+> > services:
+
+> > 
+
+> >   n8n:
+
+> > 
+
+> >     image: docker.n8n.io/n8nio/n8n:latest
+
+> > 
+
+> >     container_name: n8n
+
+> > 
+
+> >     restart: unless-stopped
+
+> > 
+
+> >     ports:
+
+> > 
+
+> >       - "127.0.0.1:5678:5678"
+
+> > 
+
+> >     environment:
+
+> > 
+
+> >       - TZ=America/Indiana/Indianapolis
+
+> > 
+
+> >       - N8N_HOST=qiserver-1.cerberus-sirius.ts.net
+
+> > 
+
+> >       - N8N_PORT=5678
+
+> > 
+
+> >       - N8N_PROTOCOL=https
+
+> > 
+
+> >       - WEBHOOK_URL=https://qiserver-1.cerberus-sirius.ts.net:9450/
+
+> > 
+
+> >       - N8N_EDITOR_BASE_URL=https://qiserver-1.cerberus-sirius.ts.net:9450/
+
+> > 
+
+> >       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+
+> > 
+
+> >       - N8N_RUNNERS_ENABLED=true
+
+> > 
+
+> >     volumes:
+
+> > 
+
+> >       - /srv/qios/data/n8n:/home/node/.n8n
+
+> > 
+
+> > EOF
+
+> qiadmin@qiserver:/srv/qios/stacks/n8n$ sudo docker compose up -d
+
+> 
+
+> sudo docker compose ps
+
+> 
+
+> [+] up 15/15compose logs --tail=80
+
+>  ✔ Image docker.n8n.io/n8nio/n8n:latest Pulled                                                    34.7s
+
+>  ✔ Network n8n_default                  Created                                                    0.0s
+
+>  ✔ Container n8n                        Started                                                    0.5s
+
+> qiadmin@qiserver:/srv/qios/stacks/n8n$ sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
+
+> 
+
+> sudo tailscale serve statusAvailable within your tailnet:
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9450/
+
+> |-- proxy http://127.0.0.1:5678
+
+> 
+
+> Serve started and running in the background.
+
+> To disable the proxy, run: tailscale serve --https=9450 off
+
+> qiadmin@qiserver:/srv/qios/stacks/n8n$ cd /srv/qios/stacks/_qiaccess_start
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo cp config/services.yaml "backups/services_$(date +%Y%m%d_%H%M%S).yaml"
+
+> 
+
+> 
+
+> 
+
+> sudo sed -i 's|href: "#"|href: https://qiserver-1.cerberus-sirius.ts.net:9450|1' config/services.yaml
+
+> 
+
+> 
+
+> 
+
+> sudo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
 > qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ ───────────────────────────── 
-> 
-> 
+> 
+
+> 
+
 > › Ru
 > 
-> Edited audit_docs_alignment.py
-> Viewed audit_docs_alignment.py:34-47
-> Ran command: `git add .`
-> Ran command: `git commit -m "corrections"`
-> Ran command: `git push origin main --force`
-> Created 05_obsidian_qidocs.md
-> 
-> I have successfully created the requested documentation draft!
-> 
-> **File created**: `docs\10_blueprint\50_applications\05_obsidian_qidocs.md`
-> 
-> **Summary of content**:
-> - Formalizes `/docs` as the definitive Obsidian vault root and prohibits nested `.obsidian` folders.
-> - Establishes `.obsidian-qidocs` as the intended configuration folder.
-> - Sets the rule that stable configuration is versioned, while volatile churn (`workspace.json`, caches, plugin data) is strictly ignored via Git.
+> Edited audit_docs_alignment.py
+
+> Viewed audit_docs_alignment.py:34-47
+
+> Ran command: `git add .`
+
+> Ran command: `git commit -m "corrections"`
+
+> Ran command: `git push origin main --force`
+
+> Created 05_obsidian_qidocs.md
+
+> 
+
+> I have successfully created the requested documentation draft!
+
+> 
+
+> **File created**: `docs\10_blueprint\50_applications\05_obsidian_qidocs.md`
+
+> 
+
+> **Summary of content**:
+
+> - Formalizes `/docs` as the definitive Obsidian vault root and prohibits nested `.obsidian` folders.
+
+> - Establishes `.obsidian-qidocs` as the intended configuration folder.
+
+> - Sets the rule that stable configuration is versioned, while volatile churn (`workspace.json`, caches, plugin data) is strictly ignored via Git.
+
 > - Clarifies the boundaries: Obsidian is for local editing/navigation, Wiki.js is the readable knowledge base, raw Markdown/YAML remains the absolute source of truth, and MarkMind is explicitly classified as a generated visual layer rather than a truth source.
 
 ### Assistant
@@ -13264,115 +14537,224 @@ canonical_ref: ""
 > Do the Tailscale restore first. That’s the fire. Then Homepage config. Then we install Solidtime next.
 
 ### User
-> icon: si-clockify
-> 
->         href: "#"
-> 
->         description: Pending install — project/time ledger
-> 
-> 
-> 
->     - ActivityWatch:
-> 
->         icon: si-activitypub
-> 
->         href: "#"
-> 
->         description: Install on main PC — automatic activity tracker
-> 
-> 
-> 
-> - Admin & Control:
-> 
->     - Cockpit:
-> 
->         icon: si-linux
-> 
->         href: https://100.121.111.106:9090
-> 
->         description: qiserver host admin console
-> 
-> 
-> 
->     - Portainer:
-> 
->         icon: si-portainer
-> 
->         href: https://qiserver-1.cerberus-sirius.ts.net:9449
-> 
->         description: Docker/container admin
-> 
-> 
-> 
->     - Cloudflare:
-> 
->         icon: si-cloudflare
-> 
->         href: https://dash.cloudflare.com/
-> 
->         description: DNS, tunnels, edge security
-> 
-> 
-> 
->     - GitHub:
-> 
->         icon: si-github
-> 
->         href: https://github.com/qiallyme
-> 
->         description: QiAccess and QiLabs repositories
-> 
-> EOF
-> 
-> 
-> 
-> sudo docker compose restart homepage
-> 
-> sudo docker compose logs --tail=40 homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
-> qiadmin@qiserver:/srv/qios/stacks$ cd ..
-> qiadmin@qiserver:/srv/qios$ cd ..
-> qiadmin@qiserver:/srv$ cd ..
-> qiadmin@qiserver:/$ sudo tailscale serve --bg http://127.0.0.1:3001
-> 
-> 
-> 
-> sudo tailscale serve --bg --https=8443 http://127.0.0.1:8088
-> 
-> sudo tailscale serve --bg --https=9446 http://127.0.0.1:3000
-> 
-> sudo tailscale serve --bg --https=9447 http://127.0.0.1:8010
-> 
-> sudo tailscale serve --bg --https=9448 http://127.0.0.1:3002
-> 
-> sudo tailscale serve --bg --https=9449 https://127.0.0.1:9443
-> 
-> sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
-> 
-> sudo tailscale serve --bg --https=9451 http://127.0.0.1:3005
-> 
-> sudo tailscale serve --bg --https=9452 http://127.0.0.1:6333
-> 
-> 
-> 
-> sudo tailscale serve statusAvailable within your tailnet:
-> 
-> https://qiserver-1.cerberus-sirius.ts.net/
-> |-- proxy http://127.0.0.1:3001
-> 
-> Serve started and running in the background.
-> To disable the proxy, run: tailscale serve --https=443 off
-> qiadmin@qiserver:/$ 
-> qiadmin@qiserver:/$ sudo tailscale serve status
-> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
-> |-- / proxy http://127.0.0.1:3001
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
-> |-- / proxy http://127.0.0.1:5678
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
-> |-- / proxy http://127.0.0.1:3005
-> 
+> icon: si-clockify
+
+> 
+
+>         href: "#"
+
+> 
+
+>         description: Pending install — project/time ledger
+
+> 
+
+> 
+
+> 
+
+>     - ActivityWatch:
+
+> 
+
+>         icon: si-activitypub
+
+> 
+
+>         href: "#"
+
+> 
+
+>         description: Install on main PC — automatic activity tracker
+
+> 
+
+> 
+
+> 
+
+> - Admin & Control:
+
+> 
+
+>     - Cockpit:
+
+> 
+
+>         icon: si-linux
+
+> 
+
+>         href: https://100.121.111.106:9090
+
+> 
+
+>         description: qiserver host admin console
+
+> 
+
+> 
+
+> 
+
+>     - Portainer:
+
+> 
+
+>         icon: si-portainer
+
+> 
+
+>         href: https://qiserver-1.cerberus-sirius.ts.net:9449
+
+> 
+
+>         description: Docker/container admin
+
+> 
+
+> 
+
+> 
+
+>     - Cloudflare:
+
+> 
+
+>         icon: si-cloudflare
+
+> 
+
+>         href: https://dash.cloudflare.com/
+
+> 
+
+>         description: DNS, tunnels, edge security
+
+> 
+
+> 
+
+> 
+
+>     - GitHub:
+
+> 
+
+>         icon: si-github
+
+> 
+
+>         href: https://github.com/qiallyme
+
+> 
+
+>         description: QiAccess and QiLabs repositories
+
+> 
+
+> EOF
+
+> 
+
+> 
+
+> 
+
+> sudo docker compose restart homepage
+
+> 
+
+> sudo docker compose logs --tail=40 homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
+
+> qiadmin@qiserver:/srv/qios/stacks$ cd ..
+
+> qiadmin@qiserver:/srv/qios$ cd ..
+
+> qiadmin@qiserver:/srv$ cd ..
+
+> qiadmin@qiserver:/$ sudo tailscale serve --bg http://127.0.0.1:3001
+
+> 
+
+> 
+
+> 
+
+> sudo tailscale serve --bg --https=8443 http://127.0.0.1:8088
+
+> 
+
+> sudo tailscale serve --bg --https=9446 http://127.0.0.1:3000
+
+> 
+
+> sudo tailscale serve --bg --https=9447 http://127.0.0.1:8010
+
+> 
+
+> sudo tailscale serve --bg --https=9448 http://127.0.0.1:3002
+
+> 
+
+> sudo tailscale serve --bg --https=9449 https://127.0.0.1:9443
+
+> 
+
+> sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
+
+> 
+
+> sudo tailscale serve --bg --https=9451 http://127.0.0.1:3005
+
+> 
+
+> sudo tailscale serve --bg --https=9452 http://127.0.0.1:6333
+
+> 
+
+> 
+
+> 
+
+> sudo tailscale serve statusAvailable within your tailnet:
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net/
+
+> |-- proxy http://127.0.0.1:3001
+
+> 
+
+> Serve started and running in the background.
+
+> To disable the proxy, run: tailscale serve --https=443 off
+
+> qiadmin@qiserver:/$ 
+
+> qiadmin@qiserver:/$ sudo tailscale serve status
+
+> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3001
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:5678
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3005
+
+> 
+
 > qiadmin@qiserver:/$
 
 ### Assistant
@@ -13714,113 +15096,220 @@ canonical_ref: ""
 > If one thing fails, paste only that section. Don’t paste the whole apocalypse unless everything is on fire.
 
 ### User
-> echo "=== EXPECTED STACKS ==="
-> 
-> find /srv/qios/stacks -maxdepth 2 -type f \( -name "docker-compose.yml" -o -name "compose.yml" \) | sortNAMES                STATUS                    PORTS
-> qdrant               Up 7 minutes              127.0.0.1:6333-6334->6333-6334/tcp
-> uptime-kuma          Up 8 minutes (healthy)    127.0.0.1:3005->3001/tcp
-> n8n                  Up 12 minutes             127.0.0.1:5678->5678/tcp
-> portainer            Up 28 hours               8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
-> wikijs               Up 28 hours               3443/tcp, 127.0.0.1:3002->3000/tcp
-> wikijs-db            Up 28 hours               5432/tcp
-> homepage             Up 28 minutes (healthy)   127.0.0.1:3001->3000/tcp
-> paperless            Up 43 hours (healthy)     127.0.0.1:8010->8000/tcp
-> paperless-postgres   Up 43 hours               5432/tcp
-> paperless-redis      Up 43 hours               6379/tcp
-> nocodb               Up 47 hours               127.0.0.1:8088->8080/tcp
-> nocodb-db            Up 47 hours (healthy)     5432/tcp
-> nocodb-redis         Up 47 hours               6379/tcp
-> cloudflared          Up 2 days                 
-> open-webui           Up 2 days (healthy)       127.0.0.1:3000->8080/tcp
-> neo4j                Up 2 days                 127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "=== LOCAL HEALTH CHECKS ==="
-> === LOCAL HEALTH CHECKS ===
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Homepage:" && curl -I http://127.0.0.1:3001 | head -n 1
-> Homepage:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0 40458    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Open WebUI:" && curl -I http://127.0.0.1:3000 | head -n 1
-> Open WebUI:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0  7480    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Wiki.js:" && curl -I http://127.0.0.1:3002 | head -n 1
-> Wiki.js:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0 11332    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Paperless:" && curl -I http://127.0.0.1:8010 | head -n 1
-> Paperless:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 302 Found
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "NocoDB:" && curl -I http://127.0.0.1:8088 | head -n 1
-> NocoDB:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0 18916    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "n8n:" && curl -I http://127.0.0.1:5678 | head -n 1
-> n8n:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0 18207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Uptime Kuma:" && curl -I http://127.0.0.1:3005 | head -n 1
-> Uptime Kuma:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0    37    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 302 Found
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Qdrant:" && curl -s http://127.0.0.1:6333 | head -n 1
-> Qdrant:
-> {"title":"qdrant - vector search engine","version":"1.18.0","commit":"db3fca327851e360c521065649e0f65a57fe7d3c"}qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Neo4j:" && curl -I http://127.0.0.1:7474 | head -n 1
-> Neo4j:
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0   253    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> HTTP/1.1 200 OK
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  t|Portainer|FamilyWall|Solidtime|ActivityWatch" -n config/services.yaml
-> 22:        href: https://access.qially.com
-> 28:    - Wiki.js:
-> 32:        href: https://qiserver-1.cerberus-sirius.ts.net:9448
-> 38:    - NocoDB:
-> 42:        href: https://qiserver-1.cerberus-sirius.ts.net:8443
-> 50:    - Paperless:
-> 54:        href: https://qiserver-1.cerberus-sirius.ts.net:9447
-> 60:    - FamilyWall:
-> 64:        href: https://www.familywall.com/home.phphome.php
-> 70:    - Qi Queue / n8n:
-> 72:        icon: si-n8n
-> 74:        href: "#"
-> 80:    - Solidtime:
-> 84:        href: "#"
-> 90:    - ActivityWatch:
-> 94:        href: "#"
-> 106:        href: https://qiserver-1.cerberus-sirius.ts.net:9446
-> 116:        href: http://100.121.111.106:11434
-> 126:        href: http://100.121.111.106:7474
-> 138:        href: https://100.121.111.106:9090
-> 144:    - Portainer:
-> 148:        href: https://qiserver-1.cerberus-sirius.ts.net:9449
-> 158:        href: https://dash.cloudflare.com/
-> 168:        href: https://github.com/qiallyme
+> echo "=== EXPECTED STACKS ==="
+
+> 
+
+> find /srv/qios/stacks -maxdepth 2 -type f \( -name "docker-compose.yml" -o -name "compose.yml" \) | sortNAMES                STATUS                    PORTS
+
+> qdrant               Up 7 minutes              127.0.0.1:6333-6334->6333-6334/tcp
+
+> uptime-kuma          Up 8 minutes (healthy)    127.0.0.1:3005->3001/tcp
+
+> n8n                  Up 12 minutes             127.0.0.1:5678->5678/tcp
+
+> portainer            Up 28 hours               8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
+
+> wikijs               Up 28 hours               3443/tcp, 127.0.0.1:3002->3000/tcp
+
+> wikijs-db            Up 28 hours               5432/tcp
+
+> homepage             Up 28 minutes (healthy)   127.0.0.1:3001->3000/tcp
+
+> paperless            Up 43 hours (healthy)     127.0.0.1:8010->8000/tcp
+
+> paperless-postgres   Up 43 hours               5432/tcp
+
+> paperless-redis      Up 43 hours               6379/tcp
+
+> nocodb               Up 47 hours               127.0.0.1:8088->8080/tcp
+
+> nocodb-db            Up 47 hours (healthy)     5432/tcp
+
+> nocodb-redis         Up 47 hours               6379/tcp
+
+> cloudflared          Up 2 days                 
+
+> open-webui           Up 2 days (healthy)       127.0.0.1:3000->8080/tcp
+
+> neo4j                Up 2 days                 127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "=== LOCAL HEALTH CHECKS ==="
+
+> === LOCAL HEALTH CHECKS ===
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Homepage:" && curl -I http://127.0.0.1:3001 | head -n 1
+
+> Homepage:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0 40458    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Open WebUI:" && curl -I http://127.0.0.1:3000 | head -n 1
+
+> Open WebUI:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0  7480    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Wiki.js:" && curl -I http://127.0.0.1:3002 | head -n 1
+
+> Wiki.js:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0 11332    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Paperless:" && curl -I http://127.0.0.1:8010 | head -n 1
+
+> Paperless:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 302 Found
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "NocoDB:" && curl -I http://127.0.0.1:8088 | head -n 1
+
+> NocoDB:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0 18916    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "n8n:" && curl -I http://127.0.0.1:5678 | head -n 1
+
+> n8n:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0 18207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Uptime Kuma:" && curl -I http://127.0.0.1:3005 | head -n 1
+
+> Uptime Kuma:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0    37    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 302 Found
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Qdrant:" && curl -s http://127.0.0.1:6333 | head -n 1
+
+> Qdrant:
+
+> {"title":"qdrant - vector search engine","version":"1.18.0","commit":"db3fca327851e360c521065649e0f65a57fe7d3c"}qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ echo "Neo4j:" && curl -I http://127.0.0.1:7474 | head -n 1
+
+> Neo4j:
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0   253    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> HTTP/1.1 200 OK
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  t|Portainer|FamilyWall|Solidtime|ActivityWatch" -n config/services.yaml
+
+> 22:        href: https://access.qially.com
+
+> 28:    - Wiki.js:
+
+> 32:        href: https://qiserver-1.cerberus-sirius.ts.net:9448
+
+> 38:    - NocoDB:
+
+> 42:        href: https://qiserver-1.cerberus-sirius.ts.net:8443
+
+> 50:    - Paperless:
+
+> 54:        href: https://qiserver-1.cerberus-sirius.ts.net:9447
+
+> 60:    - FamilyWall:
+
+> 64:        href: https://www.familywall.com/home.phphome.php
+
+> 70:    - Qi Queue / n8n:
+
+> 72:        icon: si-n8n
+
+> 74:        href: "#"
+
+> 80:    - Solidtime:
+
+> 84:        href: "#"
+
+> 90:    - ActivityWatch:
+
+> 94:        href: "#"
+
+> 106:        href: https://qiserver-1.cerberus-sirius.ts.net:9446
+
+> 116:        href: http://100.121.111.106:11434
+
+> 126:        href: http://100.121.111.106:7474
+
+> 138:        href: https://100.121.111.106:9090
+
+> 144:    - Portainer:
+
+> 148:        href: https://qiserver-1.cerberus-sirius.ts.net:9449
+
+> 158:        href: https://dash.cloudflare.com/
+
+> 168:        href: https://github.com/qiallyme
+
 > qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$
 
 ### Assistant
@@ -13960,74 +15449,142 @@ canonical_ref: ""
 > Then next install is **Solidtime**. ActivityWatch goes on the main PC after that.
 
 ### User
-> udo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ grep -E "FamilyWall|n8n|href:" -n config/services.yaml
-> 22:        href: https://access.qially.com
-> 32:        href: https://qiserver-1.cerberus-sirius.ts.net:9448
-> 42:        href: https://qiserver-1.cerberus-sirius.ts.net:8443
-> 54:        href: https://qiserver-1.cerberus-sirius.ts.net:9447
-> 60:    - FamilyWall:
-> 64:        href: https://www.familywall.com/home.phphome.php
-> 70:    - Qi Queue / n8n:
-> 72:        icon: si-n8n
-> 74:        href: "#"
-> 84:        href: "#"
-> 94:        href: "#"
-> 106:        href: https://qiserver-1.cerberus-sirius.ts.net:9446
-> 116:        href: http://100.121.111.106:11434
-> 126:        href: http://100.121.111.106:7474
-> 138:        href: https://100.121.111.106:9090
-> 148:        href: https://qiserver-1.cerberus-sirius.ts.net:9449
-> 158:        href: https://dash.cloudflare.com/
-> 168:        href: https://github.com/qiallyme
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo tailscale serve status
-> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
-> |-- / proxy http://127.0.0.1:3001
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
-> |-- / proxy http://127.0.0.1:8088
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
-> |-- / proxy http://127.0.0.1:5678
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
-> |-- / proxy http://127.0.0.1:3005
-> 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
-> |-- / proxy http://127.0.0.1:3005
-> 
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
-> qiadmin@qiserver:/srv/qios/stacks$ cd ..
-> qiadmin@qiserver:/srv/qios$ cd ..
-> qiadmin@qiserver:/srv$ cd ..
-> qiadmin@qiserver:/$ sudo tailscale serve --bg --https=8443 http://127.0.0.1:8088
-> 
-> sudo tailscale serve --bg --https=9446 http://127.0.0.1:3000
-> 
-> sudo tailscale serve --bg --https=9447 http://127.0.0.1:8010
-> 
-> sudo tailscale serve --bg --https=9448 http://127.0.0.1:3002
-> 
-> sudo tailscale serve --bg --https=9449 https://127.0.0.1:9443
-> 
-> sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
-> 
-> sudo tailscale serve --bg --https=9451 http://127.0.0.1:3005
-> 
-> sudo tailscale serve --bg --https=9452 http://127.0.0.1:6333
-> 
-> sudo tailscale serve --bg http://127.0.0.1:3001
-> 
-> 
-> 
-> sudo tailscale serve statusAvailable within your tailnet:
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:8443/
-> |-- proxy http://127.0.0.1:8088
-> 
-> Serve started and running in the background.
-> To disable the proxy, run: tailscale serve --https=8443 off
-> qiadmin@qiserver:/$ 
+> udo docker compose restart homepageqiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ grep -E "FamilyWall|n8n|href:" -n config/services.yaml
+
+> 22:        href: https://access.qially.com
+
+> 32:        href: https://qiserver-1.cerberus-sirius.ts.net:9448
+
+> 42:        href: https://qiserver-1.cerberus-sirius.ts.net:8443
+
+> 54:        href: https://qiserver-1.cerberus-sirius.ts.net:9447
+
+> 60:    - FamilyWall:
+
+> 64:        href: https://www.familywall.com/home.phphome.php
+
+> 70:    - Qi Queue / n8n:
+
+> 72:        icon: si-n8n
+
+> 74:        href: "#"
+
+> 84:        href: "#"
+
+> 94:        href: "#"
+
+> 106:        href: https://qiserver-1.cerberus-sirius.ts.net:9446
+
+> 116:        href: http://100.121.111.106:11434
+
+> 126:        href: http://100.121.111.106:7474
+
+> 138:        href: https://100.121.111.106:9090
+
+> 148:        href: https://qiserver-1.cerberus-sirius.ts.net:9449
+
+> 158:        href: https://dash.cloudflare.com/
+
+> 168:        href: https://github.com/qiallyme
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ sudo tailscale serve status
+
+> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3001
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8088
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:5678
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3005
+
+> 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$  https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3005
+
+> 
+
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
+
+> qiadmin@qiserver:/srv/qios/stacks$ cd ..
+
+> qiadmin@qiserver:/srv/qios$ cd ..
+
+> qiadmin@qiserver:/srv$ cd ..
+
+> qiadmin@qiserver:/$ sudo tailscale serve --bg --https=8443 http://127.0.0.1:8088
+
+> 
+
+> sudo tailscale serve --bg --https=9446 http://127.0.0.1:3000
+
+> 
+
+> sudo tailscale serve --bg --https=9447 http://127.0.0.1:8010
+
+> 
+
+> sudo tailscale serve --bg --https=9448 http://127.0.0.1:3002
+
+> 
+
+> sudo tailscale serve --bg --https=9449 https://127.0.0.1:9443
+
+> 
+
+> sudo tailscale serve --bg --https=9450 http://127.0.0.1:5678
+
+> 
+
+> sudo tailscale serve --bg --https=9451 http://127.0.0.1:3005
+
+> 
+
+> sudo tailscale serve --bg --https=9452 http://127.0.0.1:6333
+
+> 
+
+> sudo tailscale serve --bg http://127.0.0.1:3001
+
+> 
+
+> 
+
+> 
+
+> sudo tailscale serve statusAvailable within your tailnet:
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:8443/
+
+> |-- proxy http://127.0.0.1:8088
+
+> 
+
+> Serve started and running in the background.
+
+> To disable the proxy, run: tailscale serve --https=8443 off
+
+> qiadmin@qiserver:/$ 
+
 > qiadmin@qiserver:/$
 
 ### Assistant
@@ -14319,162 +15876,318 @@ canonical_ref: ""
 > Solidtime may need app-specific init/migrations depending on its current image behavior. We’ll read the logs and do only what they demand, not cargo-cult random Laravel commands like gremlins with keyboards.
 
 ### User
-> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
-> qiadmin@qiserver:/srv/qios/stacks$ cd ..
-> qiadmin@qiserver:/srv/qios$ cd ..
-> qiadmin@qiserver:/srv$ cd ..
-> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/stacks/solidtime
-> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/data/solidtime/{postgres,storage}
-> qiadmin@qiserver:/$ sudo chown -R qiadmin:qiadmin /srv/qios/stacks/solidtime /srv/qios/data/solidtime
-> qiadmin@qiserver:/$ cd /srv/qios/stacks/solidtime
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ APP_KEY="base64:$(openssl rand -base64 32)"
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ DB_PASSWORD="$(openssl rand -hex 24)"
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cat > .env <<EOF
-> > 
-> > APP_NAME=Solidtime
-> > 
-> > APP_ENV=production
-> > 
-> > APP_DEBUG=false
-> > 
-> > APP_URL=https://qiserver-1.cerberus-sirius.ts.net:9453
-> > 
-> > APP_FORCE_HTTPS=true
-> > 
-> > APP_KEY=$APP_KEY
-> > 
-> > APP_ENABLE_REGISTRATION=true
-> > 
-> > 
-> > 
-> > TZ=America/Indiana/Indianapolis
-> > 
-> > APP_TIMEZONE=America/Indiana/Indianapolis
-> > 
-> > 
-> > 
-> > DB_CONNECTION=pgsql
-> > 
-> > DB_HOST=solidtime-db
-> > 
-> > DB_PORT=5432
-> > 
-> > DB_DATABASE=solidtime
-> > 
-> > DB_USERNAME=solidtime
-> > 
-> > DB_PASSWORD=$DB_PASSWORD
-> > 
-> > 
-> > 
-> > QUEUE_CONNECTION=database
-> > 
-> > CACHE_STORE=file
-> > 
-> > SESSION_DRIVER=file
-> > 
-> > MAIL_MAILER=log
-> > 
-> > EOF
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ chmod 600 .env
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cat > docker-compose.yml <<'EOF'
-> > 
-> > services:
-> > 
-> >   solidtime-db:
-> > 
-> >     image: postgres:16
-> > 
-> >     container_name: solidtime-db
-> > 
-> >     restart: unless-stopped
-> > 
-> >     environment:
-> > 
-> >       POSTGRES_DB: solidtime
-> > 
-> >       POSTGRES_USER: solidtime
-> > 
-> >       POSTGRES_PASSWORD: ${DB_PASSWORD}
-> > 
-> >     volumes:
-> > 
-> >       - /srv/qios/data/solidtime/postgres:/var/lib/postgresql/data
-> > 
-> >     healthcheck:
-> > 
-> >       test: ["CMD-SHELL", "pg_isready -U solidtime -d solidtime"]
-> > 
-> >       interval: 10s
-> > 
-> >       timeout: 5s
-> > 
-> >       retries: 10
-> > 
-> > 
-> > 
-> >   solidtime:
-> > 
-> >     image: solidtime/solidtime:latest
-> > 
-> >     container_name: solidtime
-> > 
-> >     restart: unless-stopped
-> > 
-> >     depends_on:
-> > 
-> >       solidtime-db:
-> > 
-> >         condition: service_healthy
-> > 
-> >     ports:
-> > 
-> >       - "127.0.0.1:8095:8000"
-> > 
-> >     env_file:
-> > 
-> >       - .env
-> > 
-> >     volumes:
-> > 
-> >       - /srv/qios/data/solidtime/storage:/var/www/html/storage
-> > 
-> > EOF
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose up -d
-> 
-> sudo docker compose ps
-> 
-> [+] up 41/41compose logs --tail=80
->  ✔ Image solidtime/solidtime:latest Pulled                                                        18.3s
->  ✔ Network solidtime_default        Created                                                        0.0s
->  ✔ Container solidtime-db           Healthy                                                       11.0s
->  ✔ Container solidtime              Started                                                       10.8s
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo tailscale serve --bg --https=9453 http://127.0.0.1:8095
-> 
-> sudo tailscale serve statusAvailable within your tailnet:
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9453/
-> |-- proxy http://127.0.0.1:8095
-> 
-> Serve started and running in the background.
-> To disable the proxy, run: tailscale serve --https=9453 off
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (7) Failed to connect to 127.0.0.1 port 8095 after 1 ms: Couldn't connect to server
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (7) Failed to connect to 127.0.0.1 port 8095 after 0 ms: Couldn't connect to server
+> qiadmin@qiserver:/srv/qios/stacks/_qiaccess_start$ cd ..
+
+> qiadmin@qiserver:/srv/qios/stacks$ cd ..
+
+> qiadmin@qiserver:/srv/qios$ cd ..
+
+> qiadmin@qiserver:/srv$ cd ..
+
+> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/stacks/solidtime
+
+> qiadmin@qiserver:/$ sudo mkdir -p /srv/qios/data/solidtime/{postgres,storage}
+
+> qiadmin@qiserver:/$ sudo chown -R qiadmin:qiadmin /srv/qios/stacks/solidtime /srv/qios/data/solidtime
+
+> qiadmin@qiserver:/$ cd /srv/qios/stacks/solidtime
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ APP_KEY="base64:$(openssl rand -base64 32)"
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ DB_PASSWORD="$(openssl rand -hex 24)"
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cat > .env <<EOF
+
+> > 
+
+> > APP_NAME=Solidtime
+
+> > 
+
+> > APP_ENV=production
+
+> > 
+
+> > APP_DEBUG=false
+
+> > 
+
+> > APP_URL=https://qiserver-1.cerberus-sirius.ts.net:9453
+
+> > 
+
+> > APP_FORCE_HTTPS=true
+
+> > 
+
+> > APP_KEY=$APP_KEY
+
+> > 
+
+> > APP_ENABLE_REGISTRATION=true
+
+> > 
+
+> > 
+
+> > 
+
+> > TZ=America/Indiana/Indianapolis
+
+> > 
+
+> > APP_TIMEZONE=America/Indiana/Indianapolis
+
+> > 
+
+> > 
+
+> > 
+
+> > DB_CONNECTION=pgsql
+
+> > 
+
+> > DB_HOST=solidtime-db
+
+> > 
+
+> > DB_PORT=5432
+
+> > 
+
+> > DB_DATABASE=solidtime
+
+> > 
+
+> > DB_USERNAME=solidtime
+
+> > 
+
+> > DB_PASSWORD=$DB_PASSWORD
+
+> > 
+
+> > 
+
+> > 
+
+> > QUEUE_CONNECTION=database
+
+> > 
+
+> > CACHE_STORE=file
+
+> > 
+
+> > SESSION_DRIVER=file
+
+> > 
+
+> > MAIL_MAILER=log
+
+> > 
+
+> > EOF
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ chmod 600 .env
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cat > docker-compose.yml <<'EOF'
+
+> > 
+
+> > services:
+
+> > 
+
+> >   solidtime-db:
+
+> > 
+
+> >     image: postgres:16
+
+> > 
+
+> >     container_name: solidtime-db
+
+> > 
+
+> >     restart: unless-stopped
+
+> > 
+
+> >     environment:
+
+> > 
+
+> >       POSTGRES_DB: solidtime
+
+> > 
+
+> >       POSTGRES_USER: solidtime
+
+> > 
+
+> >       POSTGRES_PASSWORD: ${DB_PASSWORD}
+
+> > 
+
+> >     volumes:
+
+> > 
+
+> >       - /srv/qios/data/solidtime/postgres:/var/lib/postgresql/data
+
+> > 
+
+> >     healthcheck:
+
+> > 
+
+> >       test: ["CMD-SHELL", "pg_isready -U solidtime -d solidtime"]
+
+> > 
+
+> >       interval: 10s
+
+> > 
+
+> >       timeout: 5s
+
+> > 
+
+> >       retries: 10
+
+> > 
+
+> > 
+
+> > 
+
+> >   solidtime:
+
+> > 
+
+> >     image: solidtime/solidtime:latest
+
+> > 
+
+> >     container_name: solidtime
+
+> > 
+
+> >     restart: unless-stopped
+
+> > 
+
+> >     depends_on:
+
+> > 
+
+> >       solidtime-db:
+
+> > 
+
+> >         condition: service_healthy
+
+> > 
+
+> >     ports:
+
+> > 
+
+> >       - "127.0.0.1:8095:8000"
+
+> > 
+
+> >     env_file:
+
+> > 
+
+> >       - .env
+
+> > 
+
+> >     volumes:
+
+> > 
+
+> >       - /srv/qios/data/solidtime/storage:/var/www/html/storage
+
+> > 
+
+> > EOF
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose up -d
+
+> 
+
+> sudo docker compose ps
+
+> 
+
+> [+] up 41/41compose logs --tail=80
+
+>  ✔ Image solidtime/solidtime:latest Pulled                                                        18.3s
+
+>  ✔ Network solidtime_default        Created                                                        0.0s
+
+>  ✔ Container solidtime-db           Healthy                                                       11.0s
+
+>  ✔ Container solidtime              Started                                                       10.8s
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo tailscale serve --bg --https=9453 http://127.0.0.1:8095
+
+> 
+
+> sudo tailscale serve statusAvailable within your tailnet:
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9453/
+
+> |-- proxy http://127.0.0.1:8095
+
+> 
+
+> Serve started and running in the background.
+
+> To disable the proxy, run: tailscale serve --https=9453 off
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> curl: (7) Failed to connect to 127.0.0.1 port 8095 after 1 ms: Couldn't connect to server
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> curl: (7) Failed to connect to 127.0.0.1 port 8095 after 0 ms: Couldn't connect to server
+
 > qiadmin@qiserver:/srv/qios/stacks/solidtime$
 
 ### Assistant
@@ -14544,37 +16257,68 @@ canonical_ref: ""
 > No panic. This is exactly why I said Solidtime is the fussy goblin one. n8n/Uptime/Qdrant went clean; Solidtime wants attention.
 
 ### User
-> min@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ echo "=== COMPOSE PS ==="
-> === COMPOSE PS ===
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose ps
-> 
-> 
-> 
-> echo
-> 
-> echo "=== DOCKER PS SOLIDTIME ==="
-> 
-> sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -Ei 'solidtime'
-> 
-> 
-> 
-> echo
-> 
-> echo "=== SOLIDTIME LOGS ==="
-> 
-> sudo docker compose logs --tail=160 solidtime
-> 
-> 
-> 
-> echo
-> 
-> echo "=== DB LOGS ==="
-> 
-> sudo docker compose logs --tail=80 solidtime-dbNAME           IMAGE                        COMMAND                  SERVICE        CREATED              STATUS                          PORTS
-> solidtime      solidtime/solidtime:latest   "start-container"        solidtime      About a minute ago   Restarting (1) 35 seconds ago   
-> solidtime-db   postgres:16                  "docker-entrypoint.s…"   solidtime-db   About a minute ago   Up About a minute (healthy)     5432/tcp
+> min@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ echo "=== COMPOSE PS ==="
+
+> === COMPOSE PS ===
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose ps
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== DOCKER PS SOLIDTIME ==="
+
+> 
+
+> sudo docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}" | grep -Ei 'solidtime'
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== SOLIDTIME LOGS ==="
+
+> 
+
+> sudo docker compose logs --tail=160 solidtime
+
+> 
+
+> 
+
+> 
+
+> echo
+
+> 
+
+> echo "=== DB LOGS ==="
+
+> 
+
+> sudo docker compose logs --tail=80 solidtime-dbNAME           IMAGE                        COMMAND                  SERVICE        CREATED              STATUS                          PORTS
+
+> solidtime      solidtime/solidtime:latest   "start-container"        solidtime      About a minute ago   Restarting (1) 35 seconds ago   
+
+> solidtime-db   postgres:16                  "docker-entrypoint.s…"   solidtime-db   About a minute ago   Up About a minute (healthy)     5432/tcp
+
 > qiadmin@qiserver:/srv/qios/stacks/solidtime$
 
 ### Assistant
@@ -14624,103 +16368,200 @@ canonical_ref: ""
 > Don’t edit the compose yet. The container is crashing, so changing ports will not help until we know why it dies.
 
 ### User
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cd /srv/qios/stacks/solidtime
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose logs --tail=200 solidtime
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> solidtime  | Container mode: http
-> solidtime  | 
-> solidtime  | In Compiler.php line 75:
-> solidtime  |                                       
-> solidtime  |   Please provide a valid cache path.  
-> solidtime  |                                       
-> solidtime  | 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$  qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker inspect solidtime --format='Status={{.State.Status}} Restarting={{.State.Restarting}} ExitCode={{.State.ExitCode}} Error={{.State.Error}}'
-> Status=restarting Restarting=true ExitCode=1 Error=
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker inspect solidtime --format='ExposedPorts={{json .Config.ExposedPorts}} Ports={{json .NetworkSettings.Ports}}'
-> ExposedPorts={"2019/tcp":{},"443/tcp":{},"443/udp":{},"80/tcp":{},"8000/tcp":{}} Ports={}
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ cd /srv/qios/stacks/solidtime
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker compose logs --tail=200 solidtime
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> solidtime  | Container mode: http
+
+> solidtime  | 
+
+> solidtime  | In Compiler.php line 75:
+
+> solidtime  |                                       
+
+> solidtime  |   Please provide a valid cache path.  
+
+> solidtime  |                                       
+
+> solidtime  | 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$  qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker inspect solidtime --format='Status={{.State.Status}} Restarting={{.State.Restarting}} ExitCode={{.State.ExitCode}} Error={{.State.Error}}'
+
+> Status=restarting Restarting=true ExitCode=1 Error=
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo docker inspect solidtime --format='ExposedPorts={{json .Config.ExposedPorts}} Ports={{json .NetworkSettings.Ports}}'
+
+> ExposedPorts={"2019/tcp":{},"443/tcp":{},"443/udp":{},"80/tcp":{},"8000/tcp":{}} Ports={}
+
 > qiadmin@qiserver:/srv/qios/stacks/solidtime$
 
 ### Assistant
@@ -14797,36 +16638,66 @@ canonical_ref: ""
 > But do the storage fix first. The app is currently crashing before port mapping matters.
 
 ### User
-> solidtime  | 
-> solidtime  | 
-> solidtime  |    INFO  Caching framework bootstrap, configuration, and metadata.  
-> solidtime  | 
-> solidtime  |   config ....................................................... 115.49ms DONE
-> solidtime  |   events ......................................................... 1.10ms DONE
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (56) Recv failure: Connection reset by peer
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$  solidtime  |   config ....................................................... 115.49ms DONE
-> solidtime  |   events ......................................................... 1.10ms DONE
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (56) Recv failure: Connection reset by peer
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo chmod -R 777 /srv/qios/data/solidtime/storage
-> 
-> sudo docker compose restart solidtime
-> 
-> sleep 10
-> 
-> sudo docker compose ps
-> 
-> sudo docker compose logs --tail=80 solidtime
-> 
-> curl -I http://127.0.0.1:8095 | head -n 1qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
-> qiadmin@qiserver:/srv/qios/stacks/solidtime$ ^C
+> solidtime  | 
+
+> solidtime  | 
+
+> solidtime  |    INFO  Caching framework bootstrap, configuration, and metadata.  
+
+> solidtime  | 
+
+> solidtime  |   config ....................................................... 115.49ms DONE
+
+> solidtime  |   events ......................................................... 1.10ms DONE
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> curl: (56) Recv failure: Connection reset by peer
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$  solidtime  |   config ....................................................... 115.49ms DONE
+
+> solidtime  |   events ......................................................... 1.10ms DONE
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ curl -I http://127.0.0.1:8095 | head -n 1
+
+>   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+>                                  Dload  Upload   Total   Spent    Left  Speed
+
+>   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+> curl: (56) Recv failure: Connection reset by peer
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ sudo chmod -R 777 /srv/qios/data/solidtime/storage
+
+> 
+
+> sudo docker compose restart solidtime
+
+> 
+
+> sleep 10
+
+> 
+
+> sudo docker compose ps
+
+> 
+
+> sudo docker compose logs --tail=80 solidtime
+
+> 
+
+> curl -I http://127.0.0.1:8095 | head -n 1qiadmin@qiserver:/srv/qios/stacks/solidtime$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/solidtime$ ^C
+
 > qiadmin@qiserver:/srv/qios/stacks/solidtime$
 
 ### Assistant

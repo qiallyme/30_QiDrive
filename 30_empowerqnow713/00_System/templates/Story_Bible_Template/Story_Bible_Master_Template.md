@@ -1,5 +1,5 @@
 ---
-title:
+title: Story Bible Master Template
 content_project:
 content_project_type: series
 status: active
@@ -7,8 +7,25 @@ umbrella: EmpowerQNow
 platform: QSaysIt
 created:
 updated:
-tags:
+tags: []
   - story-bible
+layout: page
+slug: story-bible-master-template
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 826bd39685a74ccfb84adb9210cf1d0a
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Story Bible

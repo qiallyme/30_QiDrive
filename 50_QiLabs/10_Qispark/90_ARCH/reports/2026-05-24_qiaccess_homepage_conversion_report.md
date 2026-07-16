@@ -3,13 +3,13 @@ layout: artifact
 title: QiAccess Homepage Conversion Report
 slug: qiaccess-homepage-conversion-report
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:41-04:00"
+tags: []
   - qispark
 source_type: manual
 artifact_kind: report
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0432cbd244854913b31112f56467f30b
 canonical_ref: ""
 template_key: master-template
 ---

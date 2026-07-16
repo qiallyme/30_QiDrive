@@ -3,9 +3,9 @@ layout: page
 title: "Notion project management system"
 slug: "notion_project_management_system"
 created_at: "2025-08-27 03:51:33"
-updated_at: "2025-08-27 03:51:33"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -18,7 +18,7 @@ status: publish
 owner: QiLabs
 created_by: ChatGPT
 source: chat_session
-tags:
+tags: []
   - toolbox
   - sys
   - qione
@@ -35,10 +35,10 @@ related_tools:
   - QiOne Desktop Tools
 layout: page
 title: Dev Session Directory Markmind Mapper
-slug: ""
+slug: dev-session-directory-markmind-mapper
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -46,7 +46,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8f83a00709fd4a42a41f1bd60dcc5294
 canonical_ref: ""
 source_type: manual
 template_key: master-template

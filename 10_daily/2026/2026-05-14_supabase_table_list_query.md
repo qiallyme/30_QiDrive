@@ -3,9 +3,9 @@ layout: page
 title: "Supabase table list query"
 slug: "supabase_table_list_query"
 created_at: "2026-05-14 20:16:12"
-updated_at: "2026-05-14 20:16:12"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -127,512 +127,1018 @@ canonical_ref: ""
 > Best move for Mom’s Care App: run the **primary-key version** first, then run the CLI schema dump if you want Codex to safely compare your Google Sheets / care sheets against the actual Supabase structure.
 
 ### User
-> actually here is is i think. -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE care.attachments (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   encounter_id uuid,
->   file_name text,
->   file_type text,
->   storage_path text,
->   attachment_kind text,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   uploaded_at timestamp with time zone NOT NULL DEFAULT now(),
->   discharge_document_id uuid,
->   care_plan_id uuid,
->   CONSTRAINT attachments_pkey PRIMARY KEY (id),
->   CONSTRAINT attachments_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id),
->   CONSTRAINT attachments_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
->   CONSTRAINT attachments_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT attachments_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
-> );
-> CREATE TABLE care.care_daily_notes (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   household_id uuid,
->   caregiver_id uuid,
->   note_date date NOT NULL,
->   caregiver_name text,
->   sleep_last_night text CHECK (sleep_last_night = ANY (ARRAY['good'::text, 'fair'::text, 'poor'::text])),
->   overall_day text CHECK (overall_day = ANY (ARRAY['better'::text, 'same'::text, 'worse'::text])),
->   o2_range text,
->   heart_rate text,
->   blood_pressure text,
->   temperature text,
->   breathing_quality text CHECK (breathing_quality = ANY (ARRAY['easy'::text, 'moderate'::text, 'hard'::text])),
->   symptoms ARRAY NOT NULL DEFAULT '{}'::text[],
->   last_morphine_time text,
->   last_norco_time text,
->   nebulizers_completed boolean,
->   prednisone_taken boolean,
->   blood_sugar_checked boolean,
->   medication_notes text,
->   transfer_status text CHECK (transfer_status = ANY (ARRAY['easy'::text, 'moderate'::text, 'difficult'::text])),
->   bathroom_status text CHECK (bathroom_status = ANY (ARRAY['normal'::text, 'trouble'::text, 'assistance_needed'::text])),
->   walking_standing text CHECK (walking_standing = ANY (ARRAY['better'::text, 'same'::text, 'worse'::text])),
->   mental_state ARRAY NOT NULL DEFAULT '{}'::text[],
->   key_notes_events text,
->   red_flags ARRAY NOT NULL DEFAULT '{}'::text[],
->   urgent_followup boolean NOT NULL DEFAULT false,
->   is_printed boolean NOT NULL DEFAULT false,
->   printed_at timestamp with time zone,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   deleted_at timestamp with time zone,
->   CONSTRAINT care_daily_notes_pkey PRIMARY KEY (id),
->   CONSTRAINT care_daily_notes_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.care_plan_items (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   care_plan_id uuid NOT NULL,
->   patient_id uuid NOT NULL,
->   category text,
->   item_text text NOT NULL,
->   frequency text,
->   status text,
->   target_metric text,
->   target_value numeric,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT care_plan_items_pkey PRIMARY KEY (id),
->   CONSTRAINT care_plan_items_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
->   CONSTRAINT care_plan_items_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.care_plans (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   title text NOT NULL,
->   status text,
->   start_date date,
->   end_date date,
->   created_by text,
->   source_type text,
->   summary text,
->   precautions text,
->   escalation_rules text,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT care_plans_pkey PRIMARY KEY (id),
->   CONSTRAINT care_plans_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.conditions (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   category text,
->   summary text,
->   risks text,
->   actions text,
->   status text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   condition_name text,
->   medical_code text,
->   code_system text,
->   watch_fors text,
->   interaction_summary text,
->   compounding_risks text,
->   CONSTRAINT conditions_pkey PRIMARY KEY (id),
->   CONSTRAINT conditions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.device_profiles (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   device_type text NOT NULL,
->   manufacturer text,
->   model text,
->   serial_number text,
->   active boolean NOT NULL DEFAULT true,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT device_profiles_pkey PRIMARY KEY (id),
->   CONSTRAINT device_profiles_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.device_readings (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   device_profile_id uuid NOT NULL,
->   reading_type text,
->   reading_name text NOT NULL,
->   reading_value numeric,
->   reading_unit text,
->   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT device_readings_pkey PRIMARY KEY (id),
->   CONSTRAINT device_readings_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT device_readings_device_profile_id_fkey FOREIGN KEY (device_profile_id) REFERENCES care.device_profiles(id)
-> );
-> CREATE TABLE care.discharge_actions (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   discharge_document_id uuid NOT NULL,
->   action_type text,
->   action_text text NOT NULL,
->   due_date date,
->   status text,
->   completed_at timestamp with time zone,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT discharge_actions_pkey PRIMARY KEY (id),
->   CONSTRAINT discharge_actions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT discharge_actions_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id)
-> );
-> CREATE TABLE care.discharge_documents (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   encounter_id uuid,
->   document_title text,
->   discharge_date date,
->   facility text,
->   provider_name text,
->   summary text,
->   medication_changes_text text,
->   follow_up_text text,
->   warning_signs_text text,
->   raw_text text,
->   status text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT discharge_documents_pkey PRIMARY KEY (id),
->   CONSTRAINT discharge_documents_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT discharge_documents_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
-> );
-> CREATE TABLE care.encounters (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   encounter_type text,
->   provider_name text,
->   facility text,
->   status text,
->   occurred_at timestamp with time zone,
->   summary text,
->   med_changes text,
->   follow_up_needed text,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT encounters_pkey PRIMARY KEY (id),
->   CONSTRAINT encounters_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.interactions (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   med1 text,
->   med2 text,
->   severity text,
->   description text,
->   recommendation text,
->   source_notes text,
->   metadata_json jsonb DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT interactions_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE care.kb_sections (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   title text NOT NULL,
->   category text,
->   section_key text,
->   summary text,
->   content text NOT NULL,
->   content_format text NOT NULL DEFAULT 'markdown'::text,
->   source_type text,
->   source_path text,
->   source_title text,
->   tags ARRAY NOT NULL DEFAULT '{}'::text[],
->   ai_retrievable boolean NOT NULL DEFAULT true,
->   review_status text NOT NULL DEFAULT 'active'::text,
->   sort_order integer NOT NULL DEFAULT 0,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT kb_sections_pkey PRIMARY KEY (id),
->   CONSTRAINT kb_sections_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.medication_events (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   medication_id uuid,
->   encounter_id uuid,
->   action text NOT NULL,
->   dose_taken text,
->   quantity_change numeric,
->   reason text,
->   notes text,
->   source_type text,
->   occurred_at timestamp with time zone NOT NULL DEFAULT now(),
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   discharge_document_id uuid,
->   CONSTRAINT medication_events_pkey PRIMARY KEY (id),
->   CONSTRAINT medication_events_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id),
->   CONSTRAINT medication_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT medication_events_medication_id_fkey FOREIGN KEY (medication_id) REFERENCES care.medications(id),
->   CONSTRAINT medication_events_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
-> );
-> CREATE TABLE care.medications (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   medication_name text NOT NULL,
->   strength text,
->   form text,
->   prescriber text,
->   dosage_instructions text,
->   frequency text,
->   quantity_prescribed numeric,
->   quantity_remaining numeric,
->   active boolean NOT NULL DEFAULT true,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   expiration_date date,
->   refills_allowed integer,
->   prescribed_date date,
->   prescription_notes text,
->   medication_image_url text,
->   barcode text,
->   strength_value numeric,
->   strength_unit text,
->   route text,
->   unit_type text,
->   low_supply_threshold numeric,
->   pharmacy_source text,
->   cost numeric,
->   medication_status text NOT NULL DEFAULT 'active'::text CHECK (medication_status = ANY (ARRAY['active'::text, 'on_hold'::text, 'inactive'::text])),
->   hold_reason text,
->   hold_started_at timestamp with time zone,
->   hold_requested_by text,
->   hold_notes text,
->   clinician_review_needed boolean NOT NULL DEFAULT false,
->   review_reason text,
->   CONSTRAINT medications_pkey PRIMARY KEY (id),
->   CONSTRAINT medications_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.milestones (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   name text NOT NULL,
->   metric text,
->   value numeric,
->   baseline_value numeric,
->   target_value numeric,
->   unit text,
->   notes text,
->   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   care_plan_id uuid,
->   CONSTRAINT milestones_pkey PRIMARY KEY (id),
->   CONSTRAINT milestones_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
->   CONSTRAINT milestones_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.observations (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   encounter_id uuid,
->   category text,
->   subtype text,
->   severity integer,
->   body_area text,
->   notes text,
->   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   care_plan_id uuid,
->   CONSTRAINT observations_pkey PRIMARY KEY (id),
->   CONSTRAINT observations_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
->   CONSTRAINT observations_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT observations_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
-> );
-> CREATE TABLE care.oxygen_tanks (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   tank_label text,
->   tank_type text,
->   capacity_liters numeric,
->   current_status text,
->   last_pressure_psi numeric,
->   last_checked_at timestamp with time zone,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT oxygen_tanks_pkey PRIMARY KEY (id),
->   CONSTRAINT oxygen_tanks_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.oxygen_usage_sessions (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   oxygen_tank_id uuid NOT NULL,
->   started_at timestamp with time zone,
->   ended_at timestamp with time zone,
->   flow_rate_lpm numeric,
->   starting_pressure_psi numeric,
->   ending_pressure_psi numeric,
->   estimated_empty_at timestamp with time zone,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT oxygen_usage_sessions_pkey PRIMARY KEY (id),
->   CONSTRAINT oxygen_usage_sessions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT oxygen_usage_sessions_oxygen_tank_id_fkey FOREIGN KEY (oxygen_tank_id) REFERENCES care.oxygen_tanks(id)
-> );
-> CREATE TABLE care.patients (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   full_name text,
->   dob date,
->   baseline_notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT patients_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE care.regimen_events (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   regimen_id uuid NOT NULL,
->   status text NOT NULL,
->   performed_at timestamp with time zone NOT NULL DEFAULT now(),
->   notes text,
->   source_type text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   CONSTRAINT regimen_events_pkey PRIMARY KEY (id),
->   CONSTRAINT regimen_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT regimen_events_regimen_id_fkey FOREIGN KEY (regimen_id) REFERENCES care.regimens(id)
-> );
-> CREATE TABLE care.regimens (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   regimen_type text NOT NULL,
->   title text NOT NULL,
->   linked_medication_id uuid,
->   instructions text,
->   with_food boolean,
->   food_instruction_text text,
->   is_prn boolean NOT NULL DEFAULT false,
->   min_interval_minutes integer,
->   schedule_type text NOT NULL,
->   schedule_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   active boolean NOT NULL DEFAULT true,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT regimens_pkey PRIMARY KEY (id),
->   CONSTRAINT regimens_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT regimens_linked_medication_id_fkey FOREIGN KEY (linked_medication_id) REFERENCES care.medications(id)
-> );
-> CREATE TABLE care.supply_events (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   supply_item_id uuid NOT NULL,
->   event_type text NOT NULL,
->   quantity_change numeric NOT NULL,
->   occurred_at timestamp with time zone NOT NULL DEFAULT now(),
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT supply_events_pkey PRIMARY KEY (id),
->   CONSTRAINT supply_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT supply_events_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
-> );
-> CREATE TABLE care.supply_inventory (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   supply_item_id uuid NOT NULL,
->   quantity_on_hand numeric NOT NULL DEFAULT 0,
->   quantity_reserved numeric NOT NULL DEFAULT 0,
->   last_counted_at timestamp with time zone,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT supply_inventory_pkey PRIMARY KEY (id),
->   CONSTRAINT supply_inventory_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT supply_inventory_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
-> );
-> CREATE TABLE care.supply_items (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   name text NOT NULL,
->   category text,
->   unit text,
->   reorder_threshold numeric,
->   target_stock_level numeric,
->   notes text,
->   active boolean NOT NULL DEFAULT true,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   location text,
->   status text,
->   cost numeric,
->   CONSTRAINT supply_items_pkey PRIMARY KEY (id),
->   CONSTRAINT supply_items_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.supply_order_items (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   order_id uuid NOT NULL,
->   supply_item_id uuid NOT NULL,
->   quantity_ordered numeric NOT NULL DEFAULT 0,
->   quantity_received numeric NOT NULL DEFAULT 0,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT supply_order_items_pkey PRIMARY KEY (id),
->   CONSTRAINT supply_order_items_order_id_fkey FOREIGN KEY (order_id) REFERENCES care.supply_orders(id),
->   CONSTRAINT supply_order_items_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
-> );
-> CREATE TABLE care.supply_orders (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   vendor_contact_id uuid,
->   status text,
->   ordered_at timestamp with time zone,
->   expected_at timestamp with time zone,
->   received_at timestamp with time zone,
->   notes text,
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT supply_orders_pkey PRIMARY KEY (id),
->   CONSTRAINT supply_orders_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
-> );
-> CREATE TABLE care.vitals (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   patient_id uuid NOT NULL,
->   encounter_id uuid,
->   systolic integer,
->   diastolic integer,
->   pulse integer,
->   oxygen integer,
->   temp numeric,
->   context text,
->   notes text,
->   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
->   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
->   glucose numeric,
->   ketones numeric,
->   weight numeric,
->   respiratory_rate integer,
->   CONSTRAINT vitals_pkey PRIMARY KEY (id),
->   CONSTRAINT vitals_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
->   CONSTRAINT vitals_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+> actually here is is i think. -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE care.attachments (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   encounter_id uuid,
+
+>   file_name text,
+
+>   file_type text,
+
+>   storage_path text,
+
+>   attachment_kind text,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   uploaded_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   discharge_document_id uuid,
+
+>   care_plan_id uuid,
+
+>   CONSTRAINT attachments_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT attachments_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id),
+
+>   CONSTRAINT attachments_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
+
+>   CONSTRAINT attachments_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT attachments_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+
+> );
+
+> CREATE TABLE care.care_daily_notes (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   household_id uuid,
+
+>   caregiver_id uuid,
+
+>   note_date date NOT NULL,
+
+>   caregiver_name text,
+
+>   sleep_last_night text CHECK (sleep_last_night = ANY (ARRAY['good'::text, 'fair'::text, 'poor'::text])),
+
+>   overall_day text CHECK (overall_day = ANY (ARRAY['better'::text, 'same'::text, 'worse'::text])),
+
+>   o2_range text,
+
+>   heart_rate text,
+
+>   blood_pressure text,
+
+>   temperature text,
+
+>   breathing_quality text CHECK (breathing_quality = ANY (ARRAY['easy'::text, 'moderate'::text, 'hard'::text])),
+
+>   symptoms ARRAY NOT NULL DEFAULT '{}'::text[],
+
+>   last_morphine_time text,
+
+>   last_norco_time text,
+
+>   nebulizers_completed boolean,
+
+>   prednisone_taken boolean,
+
+>   blood_sugar_checked boolean,
+
+>   medication_notes text,
+
+>   transfer_status text CHECK (transfer_status = ANY (ARRAY['easy'::text, 'moderate'::text, 'difficult'::text])),
+
+>   bathroom_status text CHECK (bathroom_status = ANY (ARRAY['normal'::text, 'trouble'::text, 'assistance_needed'::text])),
+
+>   walking_standing text CHECK (walking_standing = ANY (ARRAY['better'::text, 'same'::text, 'worse'::text])),
+
+>   mental_state ARRAY NOT NULL DEFAULT '{}'::text[],
+
+>   key_notes_events text,
+
+>   red_flags ARRAY NOT NULL DEFAULT '{}'::text[],
+
+>   urgent_followup boolean NOT NULL DEFAULT false,
+
+>   is_printed boolean NOT NULL DEFAULT false,
+
+>   printed_at timestamp with time zone,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   deleted_at timestamp with time zone,
+
+>   CONSTRAINT care_daily_notes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT care_daily_notes_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.care_plan_items (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   care_plan_id uuid NOT NULL,
+
+>   patient_id uuid NOT NULL,
+
+>   category text,
+
+>   item_text text NOT NULL,
+
+>   frequency text,
+
+>   status text,
+
+>   target_metric text,
+
+>   target_value numeric,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT care_plan_items_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT care_plan_items_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
+
+>   CONSTRAINT care_plan_items_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.care_plans (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   title text NOT NULL,
+
+>   status text,
+
+>   start_date date,
+
+>   end_date date,
+
+>   created_by text,
+
+>   source_type text,
+
+>   summary text,
+
+>   precautions text,
+
+>   escalation_rules text,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT care_plans_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT care_plans_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.conditions (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   category text,
+
+>   summary text,
+
+>   risks text,
+
+>   actions text,
+
+>   status text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   condition_name text,
+
+>   medical_code text,
+
+>   code_system text,
+
+>   watch_fors text,
+
+>   interaction_summary text,
+
+>   compounding_risks text,
+
+>   CONSTRAINT conditions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT conditions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.device_profiles (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   device_type text NOT NULL,
+
+>   manufacturer text,
+
+>   model text,
+
+>   serial_number text,
+
+>   active boolean NOT NULL DEFAULT true,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT device_profiles_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT device_profiles_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.device_readings (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   device_profile_id uuid NOT NULL,
+
+>   reading_type text,
+
+>   reading_name text NOT NULL,
+
+>   reading_value numeric,
+
+>   reading_unit text,
+
+>   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT device_readings_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT device_readings_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT device_readings_device_profile_id_fkey FOREIGN KEY (device_profile_id) REFERENCES care.device_profiles(id)
+
+> );
+
+> CREATE TABLE care.discharge_actions (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   discharge_document_id uuid NOT NULL,
+
+>   action_type text,
+
+>   action_text text NOT NULL,
+
+>   due_date date,
+
+>   status text,
+
+>   completed_at timestamp with time zone,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT discharge_actions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT discharge_actions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT discharge_actions_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id)
+
+> );
+
+> CREATE TABLE care.discharge_documents (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   encounter_id uuid,
+
+>   document_title text,
+
+>   discharge_date date,
+
+>   facility text,
+
+>   provider_name text,
+
+>   summary text,
+
+>   medication_changes_text text,
+
+>   follow_up_text text,
+
+>   warning_signs_text text,
+
+>   raw_text text,
+
+>   status text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT discharge_documents_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT discharge_documents_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT discharge_documents_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+
+> );
+
+> CREATE TABLE care.encounters (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   encounter_type text,
+
+>   provider_name text,
+
+>   facility text,
+
+>   status text,
+
+>   occurred_at timestamp with time zone,
+
+>   summary text,
+
+>   med_changes text,
+
+>   follow_up_needed text,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT encounters_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT encounters_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.interactions (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   med1 text,
+
+>   med2 text,
+
+>   severity text,
+
+>   description text,
+
+>   recommendation text,
+
+>   source_notes text,
+
+>   metadata_json jsonb DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT interactions_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE care.kb_sections (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   title text NOT NULL,
+
+>   category text,
+
+>   section_key text,
+
+>   summary text,
+
+>   content text NOT NULL,
+
+>   content_format text NOT NULL DEFAULT 'markdown'::text,
+
+>   source_type text,
+
+>   source_path text,
+
+>   source_title text,
+
+>   tags ARRAY NOT NULL DEFAULT '{}'::text[],
+
+>   ai_retrievable boolean NOT NULL DEFAULT true,
+
+>   review_status text NOT NULL DEFAULT 'active'::text,
+
+>   sort_order integer NOT NULL DEFAULT 0,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT kb_sections_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT kb_sections_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.medication_events (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   medication_id uuid,
+
+>   encounter_id uuid,
+
+>   action text NOT NULL,
+
+>   dose_taken text,
+
+>   quantity_change numeric,
+
+>   reason text,
+
+>   notes text,
+
+>   source_type text,
+
+>   occurred_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   discharge_document_id uuid,
+
+>   CONSTRAINT medication_events_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT medication_events_discharge_document_id_fkey FOREIGN KEY (discharge_document_id) REFERENCES care.discharge_documents(id),
+
+>   CONSTRAINT medication_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT medication_events_medication_id_fkey FOREIGN KEY (medication_id) REFERENCES care.medications(id),
+
+>   CONSTRAINT medication_events_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+
+> );
+
+> CREATE TABLE care.medications (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   medication_name text NOT NULL,
+
+>   strength text,
+
+>   form text,
+
+>   prescriber text,
+
+>   dosage_instructions text,
+
+>   frequency text,
+
+>   quantity_prescribed numeric,
+
+>   quantity_remaining numeric,
+
+>   active boolean NOT NULL DEFAULT true,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   expiration_date date,
+
+>   refills_allowed integer,
+
+>   prescribed_date date,
+
+>   prescription_notes text,
+
+>   medication_image_url text,
+
+>   barcode text,
+
+>   strength_value numeric,
+
+>   strength_unit text,
+
+>   route text,
+
+>   unit_type text,
+
+>   low_supply_threshold numeric,
+
+>   pharmacy_source text,
+
+>   cost numeric,
+
+>   medication_status text NOT NULL DEFAULT 'active'::text CHECK (medication_status = ANY (ARRAY['active'::text, 'on_hold'::text, 'inactive'::text])),
+
+>   hold_reason text,
+
+>   hold_started_at timestamp with time zone,
+
+>   hold_requested_by text,
+
+>   hold_notes text,
+
+>   clinician_review_needed boolean NOT NULL DEFAULT false,
+
+>   review_reason text,
+
+>   CONSTRAINT medications_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT medications_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.milestones (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   name text NOT NULL,
+
+>   metric text,
+
+>   value numeric,
+
+>   baseline_value numeric,
+
+>   target_value numeric,
+
+>   unit text,
+
+>   notes text,
+
+>   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   care_plan_id uuid,
+
+>   CONSTRAINT milestones_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT milestones_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
+
+>   CONSTRAINT milestones_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.observations (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   encounter_id uuid,
+
+>   category text,
+
+>   subtype text,
+
+>   severity integer,
+
+>   body_area text,
+
+>   notes text,
+
+>   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   care_plan_id uuid,
+
+>   CONSTRAINT observations_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT observations_care_plan_id_fkey FOREIGN KEY (care_plan_id) REFERENCES care.care_plans(id),
+
+>   CONSTRAINT observations_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT observations_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+
+> );
+
+> CREATE TABLE care.oxygen_tanks (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   tank_label text,
+
+>   tank_type text,
+
+>   capacity_liters numeric,
+
+>   current_status text,
+
+>   last_pressure_psi numeric,
+
+>   last_checked_at timestamp with time zone,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT oxygen_tanks_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT oxygen_tanks_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.oxygen_usage_sessions (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   oxygen_tank_id uuid NOT NULL,
+
+>   started_at timestamp with time zone,
+
+>   ended_at timestamp with time zone,
+
+>   flow_rate_lpm numeric,
+
+>   starting_pressure_psi numeric,
+
+>   ending_pressure_psi numeric,
+
+>   estimated_empty_at timestamp with time zone,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT oxygen_usage_sessions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT oxygen_usage_sessions_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT oxygen_usage_sessions_oxygen_tank_id_fkey FOREIGN KEY (oxygen_tank_id) REFERENCES care.oxygen_tanks(id)
+
+> );
+
+> CREATE TABLE care.patients (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   full_name text,
+
+>   dob date,
+
+>   baseline_notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT patients_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE care.regimen_events (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   regimen_id uuid NOT NULL,
+
+>   status text NOT NULL,
+
+>   performed_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   notes text,
+
+>   source_type text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT regimen_events_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT regimen_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT regimen_events_regimen_id_fkey FOREIGN KEY (regimen_id) REFERENCES care.regimens(id)
+
+> );
+
+> CREATE TABLE care.regimens (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   regimen_type text NOT NULL,
+
+>   title text NOT NULL,
+
+>   linked_medication_id uuid,
+
+>   instructions text,
+
+>   with_food boolean,
+
+>   food_instruction_text text,
+
+>   is_prn boolean NOT NULL DEFAULT false,
+
+>   min_interval_minutes integer,
+
+>   schedule_type text NOT NULL,
+
+>   schedule_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   active boolean NOT NULL DEFAULT true,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT regimens_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT regimens_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT regimens_linked_medication_id_fkey FOREIGN KEY (linked_medication_id) REFERENCES care.medications(id)
+
+> );
+
+> CREATE TABLE care.supply_events (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   supply_item_id uuid NOT NULL,
+
+>   event_type text NOT NULL,
+
+>   quantity_change numeric NOT NULL,
+
+>   occurred_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT supply_events_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT supply_events_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT supply_events_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
+
+> );
+
+> CREATE TABLE care.supply_inventory (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   supply_item_id uuid NOT NULL,
+
+>   quantity_on_hand numeric NOT NULL DEFAULT 0,
+
+>   quantity_reserved numeric NOT NULL DEFAULT 0,
+
+>   last_counted_at timestamp with time zone,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT supply_inventory_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT supply_inventory_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT supply_inventory_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
+
+> );
+
+> CREATE TABLE care.supply_items (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   name text NOT NULL,
+
+>   category text,
+
+>   unit text,
+
+>   reorder_threshold numeric,
+
+>   target_stock_level numeric,
+
+>   notes text,
+
+>   active boolean NOT NULL DEFAULT true,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   location text,
+
+>   status text,
+
+>   cost numeric,
+
+>   CONSTRAINT supply_items_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT supply_items_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.supply_order_items (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   order_id uuid NOT NULL,
+
+>   supply_item_id uuid NOT NULL,
+
+>   quantity_ordered numeric NOT NULL DEFAULT 0,
+
+>   quantity_received numeric NOT NULL DEFAULT 0,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT supply_order_items_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT supply_order_items_order_id_fkey FOREIGN KEY (order_id) REFERENCES care.supply_orders(id),
+
+>   CONSTRAINT supply_order_items_supply_item_id_fkey FOREIGN KEY (supply_item_id) REFERENCES care.supply_items(id)
+
+> );
+
+> CREATE TABLE care.supply_orders (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   vendor_contact_id uuid,
+
+>   status text,
+
+>   ordered_at timestamp with time zone,
+
+>   expected_at timestamp with time zone,
+
+>   received_at timestamp with time zone,
+
+>   notes text,
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT supply_orders_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT supply_orders_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id)
+
+> );
+
+> CREATE TABLE care.vitals (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   patient_id uuid NOT NULL,
+
+>   encounter_id uuid,
+
+>   systolic integer,
+
+>   diastolic integer,
+
+>   pulse integer,
+
+>   oxygen integer,
+
+>   temp numeric,
+
+>   context text,
+
+>   notes text,
+
+>   recorded_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   metadata_json jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   glucose numeric,
+
+>   ketones numeric,
+
+>   weight numeric,
+
+>   respiratory_rate integer,
+
+>   CONSTRAINT vitals_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT vitals_patient_id_fkey FOREIGN KEY (patient_id) REFERENCES care.patients(id),
+
+>   CONSTRAINT vitals_encounter_id_fkey FOREIGN KEY (encounter_id) REFERENCES care.encounters(id)
+
 > );
 
 ### Assistant

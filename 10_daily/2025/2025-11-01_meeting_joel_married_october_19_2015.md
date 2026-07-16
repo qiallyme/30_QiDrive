@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Meeting Joel - married October 19, 2015"
 slug: "meeting_joel_married_october_19_2015"
 summary: ""
 status: active
 created_at: "2025-11-01"
-updated_at: "2025-11-01"
+updated_at: "2026-07-16T06:49:28-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2248ef2891464e81a3c14ac076b73a49
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2025-11-01
 ---
+
 # Meeting Joel - married October 19, 2015
 
 Category: Relationship

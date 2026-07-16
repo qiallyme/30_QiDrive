@@ -3,9 +3,9 @@ layout: page
 title: "Document Submission Strategy"
 slug: "document_submission_strategy"
 created_at: "2026-02-09 08:50:07"
-updated_at: "2026-02-09 08:50:07"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2680,165 +2680,324 @@ canonical_ref: ""
 
 ### User
 > hearing transcript...
-> 9:28:27 AM	All right. Good morning. My name is Magistrate Hannah. We are here today on cause four nine D 0 3 2 5 0 1 MF 0 0 2 5 5 9. Plaintiff Financial Center, first Credit Union versus defendant American Express, JP Morgan Chase and Cody Rice qui. To begin, I'd like the parties to please state and spell their names, beginning with counsel for plaintiff
-> 9:28:55 AM	Judge. My name is Scott Kain Wrath. S-C-O-T-T-K-A-I-N-R-A-T-H. Although I'm not a party and I represent Financial Center First Credit Union, and I have Susan Abbott from Financial Center here with me.
-> 9:29:16 AM	My name is Susan Abbott, S-U-S-A-N-A-B-B-E-T-T. And I'm with Financial Center First Credit Union.
-> 9:29:24 AM	Pardon?
-> 9:29:25 AM	I'm with Financial Center First Credit Union.
-> 9:29:29 AM	My name is,
-> 9:29:30 AM	Sorry. Okay, so that's everybody for plaintiff, correct? Yeah. Alright, sir.
-> 9:29:35 AM	Cody Rice Velazquez. C-O-D-Y-R-I-C-E hyphen V-E-L-A-S-Q-U-E-Z.
-> 9:29:45 AM	Now we are here today on defendant Cody Rice Velasquez has filed from the court's perspective. I see a motion to set aside the judgment and then it looked like there was also a motion for release of excess proceeds. That's correct. So those are the two motions and as the moving party you go first you bear the burden of proof. A court always is guided by trial Rule 60 when ruling on a motion to set aside a judgment. I see that a default judgment was granted it looks like on it was 5 28 25 and so you may begin.
-> 9:30:35 AM	Okay, your Honor, in my motion I stated that the service was deficient because there was not adequate method to ensure I receive it and I didn't receive anything and that would leave it void under trial rule four one B. And because it void, I mean it would have to be void, which makes everything else after that legal. I have the summons here that has the receipt that's not completely filled out and some of the information. Isn't that correct? Could I?
-> 9:31:09 AM	What was the date of the return of service? Do you know?
-> 9:31:13 AM	The return to service one was on March 15th. I'm double checking real quick.
-> 9:31:24 AM	I see one dated three five and one dated four 15.
-> 9:31:28 AM	That's correction, your Honor. Okay. Yes, but neither of those were received. Can I give this to the pardon clerk? I brought courtesy.
-> 9:31:40 AM	Are you offering this as an exhibit? Yeah. All right. If you could show it to counsel first and then offer it to the court and tell the court what it is.
-> 9:31:52 AM	So this is just a summary of today it has the organized exhibits and the motions.
-> 9:31:59 AM	Oh, these are all of your proposed exhibits
-> 9:32:01 AM	For this motion to set aside for your
-> 9:32:04 AM	Judgment. Okay.
-> 9:32:07 AM	So everything should already be on the record already. It's just organization for.
-> 9:32:12 AM	So these are things that have already been okay. Alright, thank you. So if you could tell the court why you believe the service was deficient?
-> 9:32:37 AM	Because since it was, apparently it says it was dropped off according to the summons receipt, but there was no attached certified receipt of certified mailing. And also they appeared to be incomplete and one of 'em was very early morning, which is not reasonable for me to hear. And due to my a d accommodations I don't necessarily hear sounds that well. So it would need more time for me to even notice that someone had been at the home. So there was no way for me to know that that was there.
-> 9:33:18 AM	So you're saying go ahead. Say again. Why is it deficient?
-> 9:33:24 AM	Because apparently according to the some in receipt it was just dropped off somewhere. Doesn't say out of service. Yeah, it doesn't say exactly where or if it was posted and I never received it and no one else ever noticed anything. So I never had an opportunity to properly respond.
-> 9:33:43 AM	All right.
-> 9:33:46 AM	And does that conclude your argument on the motion to set aside or is there more you'd like to say?
-> 9:33:53 AM	Since there was the service was not adequate under the A DA, that would rule the default judgment. But wait al issue. So that's it.
-> 9:34:06 AM	Alright, Mr. Now, Mr. Ken ra, what is your role here today? Are you representing the
-> 9:34:15 AM	Financial center first? Okay.
-> 9:34:17 AM	Yeah.
-> 9:34:18 AM	And they are plaintiff, so would you like to respond?
-> 9:34:21 AM	Well, my response is
-> 9:34:23 AM	That the trial rule was followed, a copy was left at the residence as well as mailed. It doesn't have to be certified mailed. So as a copy was put in the mail after it was left in the residence. And that happened both on the fifth and on the 15th. So service was filed, therefore it's held service.
-> 9:34:51 AM	Okay,
-> 9:34:53 AM	Well I am looking at both returns of service and it looks like on, and I don't know why we have two of them, but I do see a return to sir or defendant. Where did you live
-> 9:35:18 AM	At the location where they stated it was left,
-> 9:35:20 AM	The 40 17 Shadow Point Drive? That's correct, your Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy attested that they left a copy and mailed a copy and then I see it again on, let's go back here on April 15th that again they left a copy and mailed a copy, a different deputy and under trial rule four, that is adequate service.
-> 9:36:02 AM	Understood, your Honor. But I would argue that because my A requests accommodations were completely ignored, it wasn't sufficient, it wasn't sufficiently calculated, ensure I received it, they could have very easily did a certification as well like they did with the other defendants. And it would,
-> 9:36:19 AM	I'm sorry, what do you think they should have done? In addition
-> 9:36:23 AM	Had also certified like they did the other two, American Express and Chase. That way it would ensure that I would receive some type of notice even if it was just receipt mail available to pick up. But I never received, I never saw anything else, even though they say that.
-> 9:36:39 AM	And I don't see any on file, any request for a different type of service.
-> 9:36:51 AM	No, I communicated.
-> 9:36:52 AM	So the court, and I'm looking since the beginning of the case, so the court does find that there was good service under trial rule four and denies your motion to set aside the judgment.
-> 9:37:33 AM	Okay, understood. Thank you.
-> 9:37:57 AM	No, that's not the only motion that we're hearing today though. There's also a motion for release of excess proceeds. And so I'm going to go through the case and the court finds that the property was sold. It says here on the 8 15 25 Sheriff's Sale notice was posted on the property. Mr. Ra, do you have anything to say as to this?
-> 9:38:34 AM	We're talking about the report of Are we into the excess?
-> 9:38:40 AM	Yes, we are. Okay.
-> 9:38:42 AM	Yeah, our office filed a report of the sheriff's sale and report of no excess proceeds. Finance center was the primary, I guess, lien holder on this house. So they bid exactly what was owed, no more the amount debt, there's no reason to bid more. So it covered what was outstanding as well as outback taxes, some of the attorney fees and the administrative costs. In fact, there's more attorney fees that aren't even included in this. So actually at this point it's probably an underbid if anything. But there is no excess. And I think what was filed on December 17th kind of breaks it down and it includes, and there's also a copy of the taxes that were paid as part of that as well.
-> 9:39:40 AM	Well, the notice I see filed on, was it 12 17 25 shows $240,464 and 20 cents paid on the judgment. Looks like publication fee, sheriff fee, sheriff user fee, and zero was paid to the clerk.
-> 9:40:07 AM	Your Honor, I would argue that there needs to be an audit done on that. I've reviewed the numbers and I think that doesn't need be looked at because they don't calculate to the same amounts, even based on their own. So I believe that the amount is incorrect that they're recording.
-> 9:40:24 AM	And do you have anything to support that?
-> 9:40:29 AM	I apologize, your Honor. Not with me at the moment.
-> 9:40:31 AM	Pardon?
-> 9:40:31 AM	Not with me at the moment, your Honor. I just become aware of the fact that we were going to discuss that other motion last night when I was reviewing the docket. And unfortunately due to some other issues, I wasn't able to fully prepare for it.
-> 9:40:45 AM	Well, I mean all of the documents, I mean, are of record. And so when I look at the record,
-> 9:40:59 AM	Let's see,
-> 9:41:08 AM	Your Honor, if I may, I actually went back through the statements for the last couple of
-> 9:41:14 AM	Years. When you say statements,
-> 9:41:15 AM	The bank statements for the mortgage amounts and the interest and the notifications that later I found from the bank and the amounts don't match what the final calculation was. I was using their own documentation to confirm the numbers. And that's why I believe there needs to be an actual first accounting done on it to confirm the information.
-> 9:41:36 AM	And how would that impact?
-> 9:41:39 AM	It could be a very large difference, I believe significant above $9,000.
-> 9:41:48 AM	And because the court goes off the judgment and the judgment, the amount requested is there, are you asking that a personal judgment go against the defendant? I didn't see one.
-> 9:42:16 AM	No, it's
-> 9:42:17 AM	It's all in rem.
-> 9:42:19 AM	It's in rem, yeah. Going after him for a
-> 9:42:21 AM	Deficiency. Right.
-> 9:42:23 AM	It's in rem. And Judge, I would also like to add that I, besides these numbers, we believe being accurate, there were two judgment liens also on the property that did not get paid off, that would get paid off before Cody would get paid off. There was two JP Morgan judgments that were probably next in line. I don't think there was a second mortgage was there. Okay. So
-> 9:42:51 AM	Yes, there is a first and the second
-> 9:42:53 AM	Correct, but with Finance Center. But with
-> 9:42:55 AM	Financial
-> 9:42:56 AM	Center. Okay. Yes. So in the order of the sale finance center did exactly what it was owed
-> 9:43:03 AM	On their two mortgages.
-> 9:43:05 AM	On their two mortgages. Plus again, the taxes they paid and interest and all that, which effectively cut off the next in line, which would've been those two judgment liens from JP who would get paid if there was any access. And after they were paid, then there might be some money left over if there wasn't access to Cody. But as we stated, we believe there was no access to begin with and there's not. And again, there's no, it's an in rem, so there's no pursuit against Cody for any kind of deficiency or anything like that.
-> 9:43:45 AM	Alright.
-> 9:43:46 AM	Now there was a request to obtain personal possessions. Was that resolved
-> 9:43:53 AM	Your Honor, as allotted one day, approximately four hours to do so while I was also trying to deal with homelessness and freezing weather. So it was very difficult to coordinate an actual moving truck or assistance. I packed as much stuff in the car that day as I could repacked at a park, but I still have a lot of property there that I do not want. I do want to retrieve or receive compensation for the loss.
-> 9:44:26 AM	Any response?
-> 9:44:27 AM	Judge? The sheriff sale was held in August. A writ to remove did not occur until sometime later. There were plenty of time to remove items from the house. And then there was a three hour, three or four hour period set, I think for Cody to come and remove his or their items. And it's my understanding that they arrived late, an hour late. The sheriffs were ready to leave at that point, finance Center had a representative there, waited for an hour until they were ready to leave and then Cody showed up. So still had two or three hours to remove what was in there. So we believe there was ample time to get these items removed. Now finance center is sitting on a house, an empty house in the middle of winter, having to pay utility fees to keep the pipes from freezing, et cetera. They just want to get this place sold. So we don't want any more delay setting up additional times to come and get whatever's in that house.
-> 9:45:37 AM	Your Honor, they have not changed the electric or water and into their name yet. I'm still getting billed for it. I'm still getting contacted for that. Also, the taxes paid, they paid the following periods taxes and are counting that against my taxes, which that would be theirs if they were the legal owners at the time. So they're, they're putting that on my ledger. Should not be
-> 9:46:03 AM	Judge my fault on the utilities. Ms. Abbot just indicated it just gets switched over today.
-> 9:46:10 AM	Well, it will get switched over. We didn't do anything until this hearing today to see the outcome for electric or utilities.
-> 9:46:17 AM	And since they've been switched over, does that mean you current, I mean has everything we will
-> 9:46:25 AM	Take over? We will put the utilities in our name, anything that was prior to today's date that is on the previous person?
-> 9:46:36 AM	Well, I
-> 9:46:37 AM	Can let them know that
-> 9:46:38 AM	It seems like from the court's perspective that you would be responsible for anything from your date of possession.
-> 9:46:46 AM	I can do that. I can let them know the date that we recorded the deed and take possession of the utilities from that date going forward.
-> 9:46:56 AM	Okay.
-> 9:47:07 AM	And Your Honor, can I have
-> 9:47:09 AM	Your Nope. Nope, not yet. I'm writing apologize,
-> 9:47:11 AM	Sorry.
-> 9:47:23 AM	All right. So what I have thus far, I have the court's ruled on the motion to set aside the judgment due to lack of service and the court denies that motion. Secondly, the court finds that there are no excess funds and as part of that ruling, it denies defendant's request for an audit as to, and the audit would be the mortgage, is that what you're asking? The audit
-> 9:47:54 AM	Of? It'd be of what was calculated in the total judgment according to their documents.
-> 9:48:00 AM	So that's the mortgage calculation of amount sewed by defendant you
-> 9:48:07 AM	And it also includes their attorney fees and other charges, but I believe the totals are incorrect.
-> 9:48:17 AM	All right. And third, we have plaintiffs request or defendant's request rather, that plaintiff bear responsibility for utilities from the date of possession and the court grants that request. And the last request I have is plaintiff's request to obtain additional personal possessions. And I've heard plaintiff's response, I'm sorry, defendant's request that you obtain gather additional personal possessions left at the property. Correct. And I've heard plaintiff's response that they did set up a time and
-> 9:49:07 AM	I would like to add something to that.
-> 9:49:10 AM	You'd like to respond? Go ahead.
-> 9:49:11 AM	Yes. So whenever they had attained ownership of the property, again, I have no idea. I was given 30 minutes to leave the first day and no time to plan.
-> 9:49:25 AM	Well the court shows that the sheriff posted notice at the property D Notice of Sheriff's sale posted on 7 9 25 and it looks like the sheriff's sale wasn't until 8 15 25. So that's a month.
-> 9:49:45 AM	But even then, your Honor, there would still be required to provide some type of eviction notice or process there too for me to understand when the timeframe was for me to have been left the home. That didn't happen. Also, there's other procedures the sheriff needed to take if I'm not mistaken, to inform me of the writ that's going to take place. I did not find out about the writ until literally the morning of, and I was given 30 minutes to vacate immediately with my pet and freezing cold with barely anything. So it was very difficult to plan. Every day was a struggle just to find a place to stay
-> 9:50:23 AM	And
-> 9:50:24 AM	Removal.
-> 9:50:25 AM	You received notice in July of the 8 15 25 Sheriff's Sale and then they didn't file for the writ until the end of October. So that's much more time than people generally received.
-> 9:50:40 AM	Yes, your Honor. But I didn't necessarily understand what those things meant and I didn't even know about 'em until later. It wasn't until this writ happened that I was forced to focus a little bit of energy. I do have completely into this to find out exactly what did happen. I was at a loss and I was confused. I was even in discussions with real estate agents that even they didn't see the change in ownership and they thought it was still my home as recent as I believe, I want to say September and October.
-> 9:51:10 AM	So what I hear now though, the remaining motion is for additional time to obtain personal possessions. Yes ma'am. Are they still at the property or have they been disposed of or stored?
-> 9:51:23 AM	We have not touched anything in the house.
-> 9:51:28 AM	And you've been given one opportunity, what are you asking for?
-> 9:51:34 AM	Just for at least one more day just to get the last remaining days.
-> 9:51:37 AM	You mean one more hour?
-> 9:51:39 AM	Four hours would be helpful, honestly.
-> 9:51:41 AM	Well, they've already done, I mean the court can, if you still have possession, if nothing's been touched, then the court would, if you provide the court with a proposed order, we'd provide a one hour interval and we need to settle on the date and time right now. Okay.
-> 9:52:02 AM	I'm available tomorrow. Today
-> 9:52:06 AM	We have police sheriff's deputy that go to the house with me and I don't have access to that. He's out of town right now. So I wouldn't be able
-> 9:52:19 AM	To, I'm sorry, say that one more
-> 9:52:20 AM	Time. We have a sheriff's deputy and a retired sheriff's deputy that accompany me to the home for protection or I don't know the plaintiff. So we take a sheriff's deputy, we have to make time and arrangements for him to go as well as myself because that's an hour out of my office that I have to schedule. So at this time I wouldn't be able to give you a date that I would be able to do that.
-> 9:52:48 AM	Because you don't know when they'll return.
-> 9:52:50 AM	I don't. They're on vacation in Florida for the next two months. He's
-> 9:52:54 AM	Retired. Oh, for two months. He's
-> 9:52:55 AM	Retired. So he's our contact,
-> 9:53:00 AM	Your Honor, may for what she just stated about needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. So F-C-F-C-U does know me.
-> 9:53:14 AM	Who are you talking about?
-> 9:53:16 AM	The bank. So we actually use them as a vendor, the company I work for. So they are aware of who I am and also I have no criminal record. There's no, there's no need for protection. Well
-> 9:53:25 AM	The court,
-> 9:53:26 AM	I just want to grab some things.
-> 9:53:30 AM	This is, the court's not aware of what possessions are left. Are you going to put them, are you going, what do you do with them? I mean, I think the order permits that you dispose or store them. That
-> 9:53:46 AM	Is correct. We normally have someone come in and just basically take everything and put it in a dumpster and clean out the property.
-> 9:53:56 AM	And do you plan to schedule that?
-> 9:53:58 AM	Not we haven't scheduled it yet. We would probably do that in the spring.
-> 9:54:04 AM	Oh, well, Mr. Kenry, do you have any thoughts here?
-> 9:54:10 AM	Well, unless, and I don't know what the, Marion, this is properties in Marion County, whether the Marion Marion County Sheriff would show up or whether they charged to do that. They do.
-> 9:54:22 AM	They do. They do If the court provides them with the root of assistance. Well,
-> 9:54:26 AM	We were charged the second time when we were waiting for Cody to show up in the three hours, we had to pay those two officers to join me with letting him back in the property.
-> 9:54:40 AM	Alright, well then the court's going to deny the request. However, I mean if you are going to schedule as to the disposition of the materials left in the home, the court could provide in the order that you provide notice of the date that you're going to be disposing of everything. And I assume you'll have someone there do that. And if you provide notice to the defendant, then he could show up as well. Is that agreeable?
-> 9:55:20 AM	Yes, your honor.
-> 9:55:22 AM	Alright. Now do you have an address for purposes of notice or an email?
-> 9:55:27 AM	Yes ma'am. My email is perfectly fine. It's C
-> 9:55:30 AM	Wait a minute, wait a minute. How far in advance do you schedule that?
-> 9:55:50 AM	We don't even have a company right now that we could hire. It's been several years since we've had a foreclosed property. So we do not currently have a company that we use to clean out properties. Normally if we take in a property during the winter seasons, all we do is go in and winterize it until the spring when we can go in and do a clean out and hire a real estate agent to place it for sale.
-> 9:56:28 AM	Well the court will do a hearing journal entry from today's hearing and also an order since I've made some rulings and I have the plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior to disposition of house and personal possessions of date and time. And really all the court needs to order is that you provide him with notice. You don't have to assist and I don't have to order that the defendant be permitted to appear because there's no stay away order or anything like that.
-> 9:57:18 AM	And this could just be an email to Cody or are you wanting a notice filed on the docket?
-> 9:57:28 AM	I prefer it to be on the docket just to keep everything organized.
-> 9:57:35 AM	So notice with court, so then you're not providing notice to the defendant. You're filing notice with the court?
-> 9:57:47 AM	Yeah, well we, yes, your honor. But we would need an address where to serve Cody unless he's just going to constantly check the docket.
-> 9:57:59 AM	Our notice is sent out.
-> 9:58:01 AM	If we have an email address, it'll go to his email.
-> 9:58:04 AM	Okay. Alright,
-> 9:58:05 AM	That's fine your Honor.
-> 9:58:07 AM	Alright, So then I show I have five rulings from today. We're going to review those. We've got a motion to set aside denied court finds good service, two court finds, no excess funds. Court denies defendants motion to request for audit of mortgage calculation and amounts owed by defendant. Three. Defendant requests additional time to obtain personal possessions left on property court denies that request the court grants defendants request that plaintiff be, this is number four, that plaintiff be responsible for utilities from the date of possession and five plaintiff ordered to file notice with court file 10 days prior to disposition of house and personal possessions. Actually, it's just disposition of personal possessions because you're not disposing of the house anything further from either party?
-> 9:59:21 AM	No, your Honor. Only one thing, your Honor.
-> 9:59:22 AM	Okay. I'll send this out as we'll. Do it as a hearing journal entry and send it out to the parties as a notice. You said you had a remaining item? Yes. And it is
-> 9:59:33 AM	The taxes for the second period, those are being calculated towards the total judgment, which would've been there.
-> 9:59:41 AM	The judgment is complete. Oh, there are no more changes to the judgment, which would, okay. Alright. All right then if we have, and I'm sure Mr. Raith, have you filed in appearance?
-> 10:00:02 AM	We need one from, I was going to tell you, we need you to file one. We don't have the one on four. Okay.
-> 10:00:06 AM	Then after you file it, if you do that today, you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out
-> 10:00:17 AM	4, 4 85. We got it. Thank you.
-> 10:00:21 AM	And that's on the parties tab, I believe, isn't it?
-> 10:00:25 AM	No, I don't know if it's on my case. I actually don't know if they have access to it on my case or not. I don't know if it appears on there or not.
-> 10:00:31 AM	Do you want to, that concludes today's hearing. We can go off.
+> 9:28:27 AM	All right. Good morning. My name is Magistrate Hannah. We are here today on cause four nine D 0 3 2 5 0 1 MF 0 0 2 5 5 9. Plaintiff Financial Center, first Credit Union versus defendant American Express, JP Morgan Chase and Cody Rice qui. To begin, I'd like the parties to please state and spell their names, beginning with counsel for plaintiff
+
+> 9:28:55 AM	Judge. My name is Scott Kain Wrath. S-C-O-T-T-K-A-I-N-R-A-T-H. Although I'm not a party and I represent Financial Center First Credit Union, and I have Susan Abbott from Financial Center here with me.
+
+> 9:29:16 AM	My name is Susan Abbott, S-U-S-A-N-A-B-B-E-T-T. And I'm with Financial Center First Credit Union.
+
+> 9:29:24 AM	Pardon?
+
+> 9:29:25 AM	I'm with Financial Center First Credit Union.
+
+> 9:29:29 AM	My name is,
+
+> 9:29:30 AM	Sorry. Okay, so that's everybody for plaintiff, correct? Yeah. Alright, sir.
+
+> 9:29:35 AM	Cody Rice Velazquez. C-O-D-Y-R-I-C-E hyphen V-E-L-A-S-Q-U-E-Z.
+
+> 9:29:45 AM	Now we are here today on defendant Cody Rice Velasquez has filed from the court's perspective. I see a motion to set aside the judgment and then it looked like there was also a motion for release of excess proceeds. That's correct. So those are the two motions and as the moving party you go first you bear the burden of proof. A court always is guided by trial Rule 60 when ruling on a motion to set aside a judgment. I see that a default judgment was granted it looks like on it was 5 28 25 and so you may begin.
+
+> 9:30:35 AM	Okay, your Honor, in my motion I stated that the service was deficient because there was not adequate method to ensure I receive it and I didn't receive anything and that would leave it void under trial rule four one B. And because it void, I mean it would have to be void, which makes everything else after that legal. I have the summons here that has the receipt that's not completely filled out and some of the information. Isn't that correct? Could I?
+
+> 9:31:09 AM	What was the date of the return of service? Do you know?
+
+> 9:31:13 AM	The return to service one was on March 15th. I'm double checking real quick.
+
+> 9:31:24 AM	I see one dated three five and one dated four 15.
+
+> 9:31:28 AM	That's correction, your Honor. Okay. Yes, but neither of those were received. Can I give this to the pardon clerk? I brought courtesy.
+
+> 9:31:40 AM	Are you offering this as an exhibit? Yeah. All right. If you could show it to counsel first and then offer it to the court and tell the court what it is.
+
+> 9:31:52 AM	So this is just a summary of today it has the organized exhibits and the motions.
+
+> 9:31:59 AM	Oh, these are all of your proposed exhibits
+
+> 9:32:01 AM	For this motion to set aside for your
+
+> 9:32:04 AM	Judgment. Okay.
+
+> 9:32:07 AM	So everything should already be on the record already. It's just organization for.
+
+> 9:32:12 AM	So these are things that have already been okay. Alright, thank you. So if you could tell the court why you believe the service was deficient?
+
+> 9:32:37 AM	Because since it was, apparently it says it was dropped off according to the summons receipt, but there was no attached certified receipt of certified mailing. And also they appeared to be incomplete and one of 'em was very early morning, which is not reasonable for me to hear. And due to my a d accommodations I don't necessarily hear sounds that well. So it would need more time for me to even notice that someone had been at the home. So there was no way for me to know that that was there.
+
+> 9:33:18 AM	So you're saying go ahead. Say again. Why is it deficient?
+
+> 9:33:24 AM	Because apparently according to the some in receipt it was just dropped off somewhere. Doesn't say out of service. Yeah, it doesn't say exactly where or if it was posted and I never received it and no one else ever noticed anything. So I never had an opportunity to properly respond.
+
+> 9:33:43 AM	All right.
+
+> 9:33:46 AM	And does that conclude your argument on the motion to set aside or is there more you'd like to say?
+
+> 9:33:53 AM	Since there was the service was not adequate under the A DA, that would rule the default judgment. But wait al issue. So that's it.
+
+> 9:34:06 AM	Alright, Mr. Now, Mr. Ken ra, what is your role here today? Are you representing the
+
+> 9:34:15 AM	Financial center first? Okay.
+
+> 9:34:17 AM	Yeah.
+
+> 9:34:18 AM	And they are plaintiff, so would you like to respond?
+
+> 9:34:21 AM	Well, my response is
+
+> 9:34:23 AM	That the trial rule was followed, a copy was left at the residence as well as mailed. It doesn't have to be certified mailed. So as a copy was put in the mail after it was left in the residence. And that happened both on the fifth and on the 15th. So service was filed, therefore it's held service.
+
+> 9:34:51 AM	Okay,
+
+> 9:34:53 AM	Well I am looking at both returns of service and it looks like on, and I don't know why we have two of them, but I do see a return to sir or defendant. Where did you live
+
+> 9:35:18 AM	At the location where they stated it was left,
+
+> 9:35:20 AM	The 40 17 Shadow Point Drive? That's correct, your Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy attested that they left a copy and mailed a copy and then I see it again on, let's go back here on April 15th that again they left a copy and mailed a copy, a different deputy and under trial rule four, that is adequate service.
+
+> 9:36:02 AM	Understood, your Honor. But I would argue that because my A requests accommodations were completely ignored, it wasn't sufficient, it wasn't sufficiently calculated, ensure I received it, they could have very easily did a certification as well like they did with the other defendants. And it would,
+
+> 9:36:19 AM	I'm sorry, what do you think they should have done? In addition
+
+> 9:36:23 AM	Had also certified like they did the other two, American Express and Chase. That way it would ensure that I would receive some type of notice even if it was just receipt mail available to pick up. But I never received, I never saw anything else, even though they say that.
+
+> 9:36:39 AM	And I don't see any on file, any request for a different type of service.
+
+> 9:36:51 AM	No, I communicated.
+
+> 9:36:52 AM	So the court, and I'm looking since the beginning of the case, so the court does find that there was good service under trial rule four and denies your motion to set aside the judgment.
+
+> 9:37:33 AM	Okay, understood. Thank you.
+
+> 9:37:57 AM	No, that's not the only motion that we're hearing today though. There's also a motion for release of excess proceeds. And so I'm going to go through the case and the court finds that the property was sold. It says here on the 8 15 25 Sheriff's Sale notice was posted on the property. Mr. Ra, do you have anything to say as to this?
+
+> 9:38:34 AM	We're talking about the report of Are we into the excess?
+
+> 9:38:40 AM	Yes, we are. Okay.
+
+> 9:38:42 AM	Yeah, our office filed a report of the sheriff's sale and report of no excess proceeds. Finance center was the primary, I guess, lien holder on this house. So they bid exactly what was owed, no more the amount debt, there's no reason to bid more. So it covered what was outstanding as well as outback taxes, some of the attorney fees and the administrative costs. In fact, there's more attorney fees that aren't even included in this. So actually at this point it's probably an underbid if anything. But there is no excess. And I think what was filed on December 17th kind of breaks it down and it includes, and there's also a copy of the taxes that were paid as part of that as well.
+
+> 9:39:40 AM	Well, the notice I see filed on, was it 12 17 25 shows $240,464 and 20 cents paid on the judgment. Looks like publication fee, sheriff fee, sheriff user fee, and zero was paid to the clerk.
+
+> 9:40:07 AM	Your Honor, I would argue that there needs to be an audit done on that. I've reviewed the numbers and I think that doesn't need be looked at because they don't calculate to the same amounts, even based on their own. So I believe that the amount is incorrect that they're recording.
+
+> 9:40:24 AM	And do you have anything to support that?
+
+> 9:40:29 AM	I apologize, your Honor. Not with me at the moment.
+
+> 9:40:31 AM	Pardon?
+
+> 9:40:31 AM	Not with me at the moment, your Honor. I just become aware of the fact that we were going to discuss that other motion last night when I was reviewing the docket. And unfortunately due to some other issues, I wasn't able to fully prepare for it.
+
+> 9:40:45 AM	Well, I mean all of the documents, I mean, are of record. And so when I look at the record,
+
+> 9:40:59 AM	Let's see,
+
+> 9:41:08 AM	Your Honor, if I may, I actually went back through the statements for the last couple of
+
+> 9:41:14 AM	Years. When you say statements,
+
+> 9:41:15 AM	The bank statements for the mortgage amounts and the interest and the notifications that later I found from the bank and the amounts don't match what the final calculation was. I was using their own documentation to confirm the numbers. And that's why I believe there needs to be an actual first accounting done on it to confirm the information.
+
+> 9:41:36 AM	And how would that impact?
+
+> 9:41:39 AM	It could be a very large difference, I believe significant above $9,000.
+
+> 9:41:48 AM	And because the court goes off the judgment and the judgment, the amount requested is there, are you asking that a personal judgment go against the defendant? I didn't see one.
+
+> 9:42:16 AM	No, it's
+
+> 9:42:17 AM	It's all in rem.
+
+> 9:42:19 AM	It's in rem, yeah. Going after him for a
+
+> 9:42:21 AM	Deficiency. Right.
+
+> 9:42:23 AM	It's in rem. And Judge, I would also like to add that I, besides these numbers, we believe being accurate, there were two judgment liens also on the property that did not get paid off, that would get paid off before Cody would get paid off. There was two JP Morgan judgments that were probably next in line. I don't think there was a second mortgage was there. Okay. So
+
+> 9:42:51 AM	Yes, there is a first and the second
+
+> 9:42:53 AM	Correct, but with Finance Center. But with
+
+> 9:42:55 AM	Financial
+
+> 9:42:56 AM	Center. Okay. Yes. So in the order of the sale finance center did exactly what it was owed
+
+> 9:43:03 AM	On their two mortgages.
+
+> 9:43:05 AM	On their two mortgages. Plus again, the taxes they paid and interest and all that, which effectively cut off the next in line, which would've been those two judgment liens from JP who would get paid if there was any access. And after they were paid, then there might be some money left over if there wasn't access to Cody. But as we stated, we believe there was no access to begin with and there's not. And again, there's no, it's an in rem, so there's no pursuit against Cody for any kind of deficiency or anything like that.
+
+> 9:43:45 AM	Alright.
+
+> 9:43:46 AM	Now there was a request to obtain personal possessions. Was that resolved
+
+> 9:43:53 AM	Your Honor, as allotted one day, approximately four hours to do so while I was also trying to deal with homelessness and freezing weather. So it was very difficult to coordinate an actual moving truck or assistance. I packed as much stuff in the car that day as I could repacked at a park, but I still have a lot of property there that I do not want. I do want to retrieve or receive compensation for the loss.
+
+> 9:44:26 AM	Any response?
+
+> 9:44:27 AM	Judge? The sheriff sale was held in August. A writ to remove did not occur until sometime later. There were plenty of time to remove items from the house. And then there was a three hour, three or four hour period set, I think for Cody to come and remove his or their items. And it's my understanding that they arrived late, an hour late. The sheriffs were ready to leave at that point, finance Center had a representative there, waited for an hour until they were ready to leave and then Cody showed up. So still had two or three hours to remove what was in there. So we believe there was ample time to get these items removed. Now finance center is sitting on a house, an empty house in the middle of winter, having to pay utility fees to keep the pipes from freezing, et cetera. They just want to get this place sold. So we don't want any more delay setting up additional times to come and get whatever's in that house.
+
+> 9:45:37 AM	Your Honor, they have not changed the electric or water and into their name yet. I'm still getting billed for it. I'm still getting contacted for that. Also, the taxes paid, they paid the following periods taxes and are counting that against my taxes, which that would be theirs if they were the legal owners at the time. So they're, they're putting that on my ledger. Should not be
+
+> 9:46:03 AM	Judge my fault on the utilities. Ms. Abbot just indicated it just gets switched over today.
+
+> 9:46:10 AM	Well, it will get switched over. We didn't do anything until this hearing today to see the outcome for electric or utilities.
+
+> 9:46:17 AM	And since they've been switched over, does that mean you current, I mean has everything we will
+
+> 9:46:25 AM	Take over? We will put the utilities in our name, anything that was prior to today's date that is on the previous person?
+
+> 9:46:36 AM	Well, I
+
+> 9:46:37 AM	Can let them know that
+
+> 9:46:38 AM	It seems like from the court's perspective that you would be responsible for anything from your date of possession.
+
+> 9:46:46 AM	I can do that. I can let them know the date that we recorded the deed and take possession of the utilities from that date going forward.
+
+> 9:46:56 AM	Okay.
+
+> 9:47:07 AM	And Your Honor, can I have
+
+> 9:47:09 AM	Your Nope. Nope, not yet. I'm writing apologize,
+
+> 9:47:11 AM	Sorry.
+
+> 9:47:23 AM	All right. So what I have thus far, I have the court's ruled on the motion to set aside the judgment due to lack of service and the court denies that motion. Secondly, the court finds that there are no excess funds and as part of that ruling, it denies defendant's request for an audit as to, and the audit would be the mortgage, is that what you're asking? The audit
+
+> 9:47:54 AM	Of? It'd be of what was calculated in the total judgment according to their documents.
+
+> 9:48:00 AM	So that's the mortgage calculation of amount sewed by defendant you
+
+> 9:48:07 AM	And it also includes their attorney fees and other charges, but I believe the totals are incorrect.
+
+> 9:48:17 AM	All right. And third, we have plaintiffs request or defendant's request rather, that plaintiff bear responsibility for utilities from the date of possession and the court grants that request. And the last request I have is plaintiff's request to obtain additional personal possessions. And I've heard plaintiff's response, I'm sorry, defendant's request that you obtain gather additional personal possessions left at the property. Correct. And I've heard plaintiff's response that they did set up a time and
+
+> 9:49:07 AM	I would like to add something to that.
+
+> 9:49:10 AM	You'd like to respond? Go ahead.
+
+> 9:49:11 AM	Yes. So whenever they had attained ownership of the property, again, I have no idea. I was given 30 minutes to leave the first day and no time to plan.
+
+> 9:49:25 AM	Well the court shows that the sheriff posted notice at the property D Notice of Sheriff's sale posted on 7 9 25 and it looks like the sheriff's sale wasn't until 8 15 25. So that's a month.
+
+> 9:49:45 AM	But even then, your Honor, there would still be required to provide some type of eviction notice or process there too for me to understand when the timeframe was for me to have been left the home. That didn't happen. Also, there's other procedures the sheriff needed to take if I'm not mistaken, to inform me of the writ that's going to take place. I did not find out about the writ until literally the morning of, and I was given 30 minutes to vacate immediately with my pet and freezing cold with barely anything. So it was very difficult to plan. Every day was a struggle just to find a place to stay
+
+> 9:50:23 AM	And
+
+> 9:50:24 AM	Removal.
+
+> 9:50:25 AM	You received notice in July of the 8 15 25 Sheriff's Sale and then they didn't file for the writ until the end of October. So that's much more time than people generally received.
+
+> 9:50:40 AM	Yes, your Honor. But I didn't necessarily understand what those things meant and I didn't even know about 'em until later. It wasn't until this writ happened that I was forced to focus a little bit of energy. I do have completely into this to find out exactly what did happen. I was at a loss and I was confused. I was even in discussions with real estate agents that even they didn't see the change in ownership and they thought it was still my home as recent as I believe, I want to say September and October.
+
+> 9:51:10 AM	So what I hear now though, the remaining motion is for additional time to obtain personal possessions. Yes ma'am. Are they still at the property or have they been disposed of or stored?
+
+> 9:51:23 AM	We have not touched anything in the house.
+
+> 9:51:28 AM	And you've been given one opportunity, what are you asking for?
+
+> 9:51:34 AM	Just for at least one more day just to get the last remaining days.
+
+> 9:51:37 AM	You mean one more hour?
+
+> 9:51:39 AM	Four hours would be helpful, honestly.
+
+> 9:51:41 AM	Well, they've already done, I mean the court can, if you still have possession, if nothing's been touched, then the court would, if you provide the court with a proposed order, we'd provide a one hour interval and we need to settle on the date and time right now. Okay.
+
+> 9:52:02 AM	I'm available tomorrow. Today
+
+> 9:52:06 AM	We have police sheriff's deputy that go to the house with me and I don't have access to that. He's out of town right now. So I wouldn't be able
+
+> 9:52:19 AM	To, I'm sorry, say that one more
+
+> 9:52:20 AM	Time. We have a sheriff's deputy and a retired sheriff's deputy that accompany me to the home for protection or I don't know the plaintiff. So we take a sheriff's deputy, we have to make time and arrangements for him to go as well as myself because that's an hour out of my office that I have to schedule. So at this time I wouldn't be able to give you a date that I would be able to do that.
+
+> 9:52:48 AM	Because you don't know when they'll return.
+
+> 9:52:50 AM	I don't. They're on vacation in Florida for the next two months. He's
+
+> 9:52:54 AM	Retired. Oh, for two months. He's
+
+> 9:52:55 AM	Retired. So he's our contact,
+
+> 9:53:00 AM	Your Honor, may for what she just stated about needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. So F-C-F-C-U does know me.
+
+> 9:53:14 AM	Who are you talking about?
+
+> 9:53:16 AM	The bank. So we actually use them as a vendor, the company I work for. So they are aware of who I am and also I have no criminal record. There's no, there's no need for protection. Well
+
+> 9:53:25 AM	The court,
+
+> 9:53:26 AM	I just want to grab some things.
+
+> 9:53:30 AM	This is, the court's not aware of what possessions are left. Are you going to put them, are you going, what do you do with them? I mean, I think the order permits that you dispose or store them. That
+
+> 9:53:46 AM	Is correct. We normally have someone come in and just basically take everything and put it in a dumpster and clean out the property.
+
+> 9:53:56 AM	And do you plan to schedule that?
+
+> 9:53:58 AM	Not we haven't scheduled it yet. We would probably do that in the spring.
+
+> 9:54:04 AM	Oh, well, Mr. Kenry, do you have any thoughts here?
+
+> 9:54:10 AM	Well, unless, and I don't know what the, Marion, this is properties in Marion County, whether the Marion Marion County Sheriff would show up or whether they charged to do that. They do.
+
+> 9:54:22 AM	They do. They do If the court provides them with the root of assistance. Well,
+
+> 9:54:26 AM	We were charged the second time when we were waiting for Cody to show up in the three hours, we had to pay those two officers to join me with letting him back in the property.
+
+> 9:54:40 AM	Alright, well then the court's going to deny the request. However, I mean if you are going to schedule as to the disposition of the materials left in the home, the court could provide in the order that you provide notice of the date that you're going to be disposing of everything. And I assume you'll have someone there do that. And if you provide notice to the defendant, then he could show up as well. Is that agreeable?
+
+> 9:55:20 AM	Yes, your honor.
+
+> 9:55:22 AM	Alright. Now do you have an address for purposes of notice or an email?
+
+> 9:55:27 AM	Yes ma'am. My email is perfectly fine. It's C
+
+> 9:55:30 AM	Wait a minute, wait a minute. How far in advance do you schedule that?
+
+> 9:55:50 AM	We don't even have a company right now that we could hire. It's been several years since we've had a foreclosed property. So we do not currently have a company that we use to clean out properties. Normally if we take in a property during the winter seasons, all we do is go in and winterize it until the spring when we can go in and do a clean out and hire a real estate agent to place it for sale.
+
+> 9:56:28 AM	Well the court will do a hearing journal entry from today's hearing and also an order since I've made some rulings and I have the plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior to disposition of house and personal possessions of date and time. And really all the court needs to order is that you provide him with notice. You don't have to assist and I don't have to order that the defendant be permitted to appear because there's no stay away order or anything like that.
+
+> 9:57:18 AM	And this could just be an email to Cody or are you wanting a notice filed on the docket?
+
+> 9:57:28 AM	I prefer it to be on the docket just to keep everything organized.
+
+> 9:57:35 AM	So notice with court, so then you're not providing notice to the defendant. You're filing notice with the court?
+
+> 9:57:47 AM	Yeah, well we, yes, your honor. But we would need an address where to serve Cody unless he's just going to constantly check the docket.
+
+> 9:57:59 AM	Our notice is sent out.
+
+> 9:58:01 AM	If we have an email address, it'll go to his email.
+
+> 9:58:04 AM	Okay. Alright,
+
+> 9:58:05 AM	That's fine your Honor.
+
+> 9:58:07 AM	Alright, So then I show I have five rulings from today. We're going to review those. We've got a motion to set aside denied court finds good service, two court finds, no excess funds. Court denies defendants motion to request for audit of mortgage calculation and amounts owed by defendant. Three. Defendant requests additional time to obtain personal possessions left on property court denies that request the court grants defendants request that plaintiff be, this is number four, that plaintiff be responsible for utilities from the date of possession and five plaintiff ordered to file notice with court file 10 days prior to disposition of house and personal possessions. Actually, it's just disposition of personal possessions because you're not disposing of the house anything further from either party?
+
+> 9:59:21 AM	No, your Honor. Only one thing, your Honor.
+
+> 9:59:22 AM	Okay. I'll send this out as we'll. Do it as a hearing journal entry and send it out to the parties as a notice. You said you had a remaining item? Yes. And it is
+
+> 9:59:33 AM	The taxes for the second period, those are being calculated towards the total judgment, which would've been there.
+
+> 9:59:41 AM	The judgment is complete. Oh, there are no more changes to the judgment, which would, okay. Alright. All right then if we have, and I'm sure Mr. Raith, have you filed in appearance?
+
+> 10:00:02 AM	We need one from, I was going to tell you, we need you to file one. We don't have the one on four. Okay.
+
+> 10:00:06 AM	Then after you file it, if you do that today, you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out
+
+> 10:00:17 AM	4, 4 85. We got it. Thank you.
+
+> 10:00:21 AM	And that's on the parties tab, I believe, isn't it?
+
+> 10:00:25 AM	No, I don't know if it's on my case. I actually don't know if they have access to it on my case or not. I don't know if it appears on there or not.
+
+> 10:00:31 AM	Do you want to, that concludes today's hearing. We can go off.
+
 > 10:01:01 AM	The court did receive a bench copy of proposed exhibits from the defendant. However, these have all been previously filed in the case and were used for purposes of argument, so the court did not admit or exclude any exhibits today. Thank you. That concludes.
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "COPD feedback and advice"
 slug: "copd_feedback_and_advice"
 created_at: "2026-04-03 10:47:56"
-updated_at: "2026-04-03 10:47:56"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

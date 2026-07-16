@@ -3,19 +3,19 @@ layout: page
 title: Cursor Project Prompt
 slug: cursor_project_prompt
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:40-04:00"
 sensitivity: internal
 classification: system_darkmatter
 context: QiOS_v1
-aliases:
+aliases: []
   - cursor_project_rules
   - qios_cursor_project_prompt
-tags:
+tags: []
   - Rules
   - Automation
   - Governance
   - qispark
-keywords:
+keywords: []
   - QiOS
   - Governance
   - Cursor
@@ -35,11 +35,11 @@ sort: 10
 graph_weight: 500
 orbit: core
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 realm_label: ""
-uid: ""
+uid: 159341421afe421d9fdc7bdda366984b
 canonical_ref: ""
 template_key: master-template
 ---

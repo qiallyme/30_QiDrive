@@ -3,9 +3,9 @@ layout: page
 title: "Ipratropium Bromide Nasal Spray"
 slug: "ipratropium_bromide_nasal_spray"
 created_at: "2026-04-11 11:15:36"
-updated_at: "2026-04-11 11:15:36"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

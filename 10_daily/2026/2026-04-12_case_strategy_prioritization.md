@@ -3,9 +3,9 @@ layout: page
 title: "Case strategy prioritization"
 slug: "case_strategy_prioritization"
 created_at: "2026-04-12 07:09:13"
-updated_at: "2026-04-12 07:09:13"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

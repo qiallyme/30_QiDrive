@@ -3,8 +3,8 @@ layout: page
 title: 0276 – Psychological Evidence 1
 slug: 0276_psychological_evidence_1
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 realm: QiVault
@@ -17,7 +17,7 @@ qi_decimal: 0.00.00-UNKNOWN
 qid: q828ae4067fbe
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-01T19:28:40-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8a1a484054194c4397190c6fadd681f8
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Legal Filing Assessment"
 slug: "legal_filing_assessment"
 created_at: "2026-03-28 04:30:47"
-updated_at: "2026-03-28 04:30:47"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -365,131 +365,256 @@ canonical_ref: ""
 > Just tell me which lane.
 
 ### User
-> Good. That’s the right shape now.
-> 
-> You’ve locked the **constitutional layer**, not the implementation cosplay version of it. That matters.
-> 
-> # What is actually done
-> 
-> These are now the core laws you needed in place first:
-> 
-> * **Governance**: naming, path, and access discipline
-> * **Architecture**: canonical container hierarchy and ingestion doctrine
-> * **Data**: canonical record invariants and migration-first schema governance
-> 
-> That gives you enough spine to judge future additions without re-litigating the basics every five minutes.
-> 
-> # What should happen next
-> 
-> Do **Agent Governance** before **Domain Taxonomy reconciliation**.
-> 
-> Why:
-> 
-> * agent rules affect how future patches get proposed and reviewed
-> * taxonomy is easier to reconcile once the behavioral rules for agents are fixed
-> * otherwise you risk the same drift problem coming back under a different label
-> 
-> # Recommended order
-> 
-> ## 1. Agent Governance
-> 
-> This packet should stay narrow. Do **not** let it become a giant AI manifesto.
-> 
-> Promote only the rules that answer:
-> 
-> * what agents must validate before acting
-> * when they must stop
-> * what they are forbidden to invent
-> * how they escalate ambiguity or conflict
-> 
-> ### Include now
-> 
-> * pre-action validation
-> * doctrine-before-code priority
-> * migration-first enforcement
-> * out-of-bounds / hard-stop behavior
-> * no implicit schema/domain invention
-> * source acknowledgment if patching from reconciled docs
-> 
-> ### Do not overstuff yet
-> 
-> * detailed failure handling trees
-> * provider-specific IDE behavior
-> * long philosophical language about AI systems
-> * anything that reads like marketing for “agentic architecture”
-> 
-> That stuff can come later if needed.
-> 
-> ---
-> 
-> ## 2. Domain Taxonomy Reconciliation
-> 
-> This should be a **mapping exercise**, not a rewrite.
-> 
-> The rule here is simple:
-> 
-> * **existing official domain map wins**
-> * append missing codes only if they are truly needed
-> * reject alternate vocab unless it adds real structural value
-> * do not create synonym hell
-> 
-> What you need is a table like:
-> 
-> | Reconciled Code | Existing Official Domain | Action              |
-> | --------------- | ------------------------ | ------------------- |
-> | CORE            | existing equivalent?     | keep / map / reject |
-> | ARC             | QiArchive?               | map                 |
-> | FIN             | QiFinance?               | map                 |
-> | COM             | ?                        | justify or reject   |
-> 
-> If a reconciled code does not cleanly map, it needs one of three labels:
-> 
-> * **adopt**
-> * **alias only**
-> * **reject**
-> 
-> No mush.
-> 
-> # The trap to avoid now
-> 
-> Do **not** let the next packets start sneaking implementation detail back in.
-> 
-> You already corrected that once. Keep doing it.
-> 
-> A good test:
-> 
-> * If it affects doctrine, ownership, invariants, escalation, or boundaries → blueprint
-> * If it affects libraries, framework calls, exact table DDL, or tool config → not blueprint law
-> 
-> # My recommendation for the next packet format
-> 
-> For **Agent Governance**, ask for it in this shape:
-> 
-> ## Proposal structure
-> 
-> * **Purpose**
-> * **Must**
-> * **Must Not**
-> * **Escalation Trigger**
-> * **Open Questions**
-> 
-> And require every proposed rule to be tagged as one of:
-> 
-> * **constitutional**
-> * **standard**
-> * **implementation**
-> * **reject**
-> 
-> That will keep the review clean and stop category leakage.
-> 
-> # Bottom line
-> 
-> You’re at the right pivot point.
-> 
-> Next move:
-> **Agent Governance first, but tightly scoped.**
-> Then do **Domain Taxonomy reconciliation as a strict mapping table, not a prose rewrite.**
-> 
+> Good. That’s the right shape now.
+
+> 
+
+> You’ve locked the **constitutional layer**, not the implementation cosplay version of it. That matters.
+
+> 
+
+> # What is actually done
+
+> 
+
+> These are now the core laws you needed in place first:
+
+> 
+
+> * **Governance**: naming, path, and access discipline
+
+> * **Architecture**: canonical container hierarchy and ingestion doctrine
+
+> * **Data**: canonical record invariants and migration-first schema governance
+
+> 
+
+> That gives you enough spine to judge future additions without re-litigating the basics every five minutes.
+
+> 
+
+> # What should happen next
+
+> 
+
+> Do **Agent Governance** before **Domain Taxonomy reconciliation**.
+
+> 
+
+> Why:
+
+> 
+
+> * agent rules affect how future patches get proposed and reviewed
+
+> * taxonomy is easier to reconcile once the behavioral rules for agents are fixed
+
+> * otherwise you risk the same drift problem coming back under a different label
+
+> 
+
+> # Recommended order
+
+> 
+
+> ## 1. Agent Governance
+
+> 
+
+> This packet should stay narrow. Do **not** let it become a giant AI manifesto.
+
+> 
+
+> Promote only the rules that answer:
+
+> 
+
+> * what agents must validate before acting
+
+> * when they must stop
+
+> * what they are forbidden to invent
+
+> * how they escalate ambiguity or conflict
+
+> 
+
+> ### Include now
+
+> 
+
+> * pre-action validation
+
+> * doctrine-before-code priority
+
+> * migration-first enforcement
+
+> * out-of-bounds / hard-stop behavior
+
+> * no implicit schema/domain invention
+
+> * source acknowledgment if patching from reconciled docs
+
+> 
+
+> ### Do not overstuff yet
+
+> 
+
+> * detailed failure handling trees
+
+> * provider-specific IDE behavior
+
+> * long philosophical language about AI systems
+
+> * anything that reads like marketing for “agentic architecture”
+
+> 
+
+> That stuff can come later if needed.
+
+> 
+
+> ---
+
+> 
+
+> ## 2. Domain Taxonomy Reconciliation
+
+> 
+
+> This should be a **mapping exercise**, not a rewrite.
+
+> 
+
+> The rule here is simple:
+
+> 
+
+> * **existing official domain map wins**
+
+> * append missing codes only if they are truly needed
+
+> * reject alternate vocab unless it adds real structural value
+
+> * do not create synonym hell
+
+> 
+
+> What you need is a table like:
+
+> 
+
+> | Reconciled Code | Existing Official Domain | Action              |
+
+> | --------------- | ------------------------ | ------------------- |
+
+> | CORE            | existing equivalent?     | keep / map / reject |
+
+> | ARC             | QiArchive?               | map                 |
+
+> | FIN             | QiFinance?               | map                 |
+
+> | COM             | ?                        | justify or reject   |
+
+> 
+
+> If a reconciled code does not cleanly map, it needs one of three labels:
+
+> 
+
+> * **adopt**
+
+> * **alias only**
+
+> * **reject**
+
+> 
+
+> No mush.
+
+> 
+
+> # The trap to avoid now
+
+> 
+
+> Do **not** let the next packets start sneaking implementation detail back in.
+
+> 
+
+> You already corrected that once. Keep doing it.
+
+> 
+
+> A good test:
+
+> 
+
+> * If it affects doctrine, ownership, invariants, escalation, or boundaries → blueprint
+
+> * If it affects libraries, framework calls, exact table DDL, or tool config → not blueprint law
+
+> 
+
+> # My recommendation for the next packet format
+
+> 
+
+> For **Agent Governance**, ask for it in this shape:
+
+> 
+
+> ## Proposal structure
+
+> 
+
+> * **Purpose**
+
+> * **Must**
+
+> * **Must Not**
+
+> * **Escalation Trigger**
+
+> * **Open Questions**
+
+> 
+
+> And require every proposed rule to be tagged as one of:
+
+> 
+
+> * **constitutional**
+
+> * **standard**
+
+> * **implementation**
+
+> * **reject**
+
+> 
+
+> That will keep the review clean and stop category leakage.
+
+> 
+
+> # Bottom line
+
+> 
+
+> You’re at the right pivot point.
+
+> 
+
+> Next move:
+
+> **Agent Governance first, but tightly scoped.**
+
+> Then do **Domain Taxonomy reconciliation as a strict mapping table, not a prose rewrite.**
+
+> 
+
 > Send me the agent packet and I’ll cut it down to law instead of fluff.
 
 ### Assistant

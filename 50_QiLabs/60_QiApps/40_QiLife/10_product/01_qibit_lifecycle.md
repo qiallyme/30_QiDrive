@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 01 Qibit Lifecycle
-slug: ""
+slug: 01-qibit-lifecycle
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 06f55c7000e24fa7b966f1bfa0bc4c8a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

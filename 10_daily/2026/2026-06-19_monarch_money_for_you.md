@@ -3,9 +3,9 @@ layout: page
 title: "Monarch Money for You"
 slug: "monarch_money_for_you"
 created_at: "2026-06-19 17:15:49"
-updated_at: "2026-06-19 17:15:49"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

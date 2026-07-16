@@ -3,13 +3,13 @@ layout: section
 title: Standards
 slug: standards
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - moc
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: fd2e635a925b43a89ffd17f6e82244bd
 canonical_ref: ""
 template_key: master-template
 ---

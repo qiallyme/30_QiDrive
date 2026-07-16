@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0005: Hosted Fleet Orchestration with Enrolled Edge Nodes
 slug: adr-0005-hosted-fleet-orchestration-with-enrolled-edge-nodes
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3caf46594abe44c8acf69f500740a0a3
 canonical_ref: ""
 template_key: master-template
 ---

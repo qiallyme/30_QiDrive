@@ -3,9 +3,9 @@ layout: page
 title: "Server Tasks and Cleanup"
 slug: "server_tasks_and_cleanup"
 created_at: "2026-05-26 16:54:55"
-updated_at: "2026-05-26 16:54:55"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1299,18 +1299,30 @@ canonical_ref: ""
 > That gives us speed without letting three little goblins edit the same wall from different sides.
 
 ### User
-> heres the docs folder structure just to give you a reminder on the current folder setup, qiarchive is on gdrive {
->   "name": "docs",
->   "path": "c:\\QiLabs\\_QiAccess_Start\\docs",
->   "type": "directory",
->   "children": [],
->   "metadata": {
->     "generated": "2026-05-26T22:24:33.821Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> heres the docs folder structure just to give you a reminder on the current folder setup, qiarchive is on gdrive {
+
+>   "name": "docs",
+
+>   "path": "c:\\QiLabs\\_QiAccess_Start\\docs",
+
+>   "type": "directory",
+
+>   "children": [],
+
+>   "metadata": {
+
+>     "generated": "2026-05-26T22:24:33.821Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -3508,74 +3520,142 @@ canonical_ref: ""
 > **Nobody touches live stack config until we review the merged config.**
 
 ### User
-> • Updated locally only. No deploy, no qiserver changes, no claim that live Homepage is
->   updated.
-> 
->   Files changed:
-> 
->   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/services.yaml
->   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/bookmarks.yaml
->   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/settings.yaml
->   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/widgets.yaml
->   - /C:/QiLabs/_QiAccess_Start/docs/50_qiserver/qiserver_runbook.md
->   - /C:/QiLabs/_QiAccess_Start/docs/60_qiapps/qiaccess_start/overview.md
->   - /C:/QiLabs/_QiAccess_Start/docs/40_qisystem/50_generated_reports/
->     current_project_state.md
-> 
->   What changed in config:
-> 
->   - Replaced placeholder service URLs with repo-supported private routes for:
->       - Open WebUI 9446
->       - Paperless 9447
->       - Wiki.js 9448
->       - Portainer 9449
->       - n8n 9450
->       - Uptime Kuma 9451
->       - Qdrant 9452
->       - NocoDB 8443
->       - Cockpit 100.121.111.106:9090
->   - Added the private Homepage launcher root https://qiserver-1.cerberus-sirius.ts.net/.
->   - Replaced bookmark placeholders for Family Wall, Documentation / QiCore, and Recovery
->     notes.
->   - Removed placeholder href values for unconfirmed entries instead of faking them:
->       - Firefly III
->       - SolidTime
->       - Finance portals
->       - Care/admin links
->   - Added explicit comments in all four config files that repo edits are not live until
->     Server Codex pulls and syncs them into /srv/qios/stacks/_qiaccess_start/config/.
-> 
->   Validation:
-> 
->   - All four YAML files parsed successfully.
-> 
->   Remaining unknowns:
-> 
->   - Confirmed private URL for Firefly III
->   - Confirmed private URL for SolidTime
->   - Whether Neo4j should stay visible in Homepage while repo notes still mark 7474
->     offline
->   - Whether recovery/doc links should stay GitHub-backed or later move to stable Wiki.js
->     targets
-> 
->   Server pull/sync required:
-> 
->   - Yes.
->   - Required later step is server-side pull plus sync into:
->       - /srv/qios/stacks/_qiaccess_start/config/services.yaml
->       - /srv/qios/stacks/_qiaccess_start/config/bookmarks.yaml
->       - /srv/qios/stacks/_qiaccess_start/config/settings.yaml
->       - /srv/qios/stacks/_qiaccess_start/config/widgets.yaml
-> 
->   Current local git note:
-> 
->   - The four qiaccess/config/*.yaml files are tracked modifications.
->   - The three updated docs are in local untracked docs paths that already existed in
->     your worktree, so they are not committed or pushed by this pass.
-> 
-> ─ Worked for 4m 10s ────────────────────────────────────────────────────────────────────
-> 
-> 
+> • Updated locally only. No deploy, no qiserver changes, no claim that live Homepage is
+
+>   updated.
+
+> 
+
+>   Files changed:
+
+> 
+
+>   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/services.yaml
+
+>   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/bookmarks.yaml
+
+>   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/settings.yaml
+
+>   - /C:/QiLabs/_QiAccess_Start/qiaccess/config/widgets.yaml
+
+>   - /C:/QiLabs/_QiAccess_Start/docs/50_qiserver/qiserver_runbook.md
+
+>   - /C:/QiLabs/_QiAccess_Start/docs/60_qiapps/qiaccess_start/overview.md
+
+>   - /C:/QiLabs/_QiAccess_Start/docs/40_qisystem/50_generated_reports/
+
+>     current_project_state.md
+
+> 
+
+>   What changed in config:
+
+> 
+
+>   - Replaced placeholder service URLs with repo-supported private routes for:
+
+>       - Open WebUI 9446
+
+>       - Paperless 9447
+
+>       - Wiki.js 9448
+
+>       - Portainer 9449
+
+>       - n8n 9450
+
+>       - Uptime Kuma 9451
+
+>       - Qdrant 9452
+
+>       - NocoDB 8443
+
+>       - Cockpit 100.121.111.106:9090
+
+>   - Added the private Homepage launcher root https://qiserver-1.cerberus-sirius.ts.net/.
+
+>   - Replaced bookmark placeholders for Family Wall, Documentation / QiCore, and Recovery
+
+>     notes.
+
+>   - Removed placeholder href values for unconfirmed entries instead of faking them:
+
+>       - Firefly III
+
+>       - SolidTime
+
+>       - Finance portals
+
+>       - Care/admin links
+
+>   - Added explicit comments in all four config files that repo edits are not live until
+
+>     Server Codex pulls and syncs them into /srv/qios/stacks/_qiaccess_start/config/.
+
+> 
+
+>   Validation:
+
+> 
+
+>   - All four YAML files parsed successfully.
+
+> 
+
+>   Remaining unknowns:
+
+> 
+
+>   - Confirmed private URL for Firefly III
+
+>   - Confirmed private URL for SolidTime
+
+>   - Whether Neo4j should stay visible in Homepage while repo notes still mark 7474
+
+>     offline
+
+>   - Whether recovery/doc links should stay GitHub-backed or later move to stable Wiki.js
+
+>     targets
+
+> 
+
+>   Server pull/sync required:
+
+> 
+
+>   - Yes.
+
+>   - Required later step is server-side pull plus sync into:
+
+>       - /srv/qios/stacks/_qiaccess_start/config/services.yaml
+
+>       - /srv/qios/stacks/_qiaccess_start/config/bookmarks.yaml
+
+>       - /srv/qios/stacks/_qiaccess_start/config/settings.yaml
+
+>       - /srv/qios/stacks/_qiaccess_start/config/widgets.yaml
+
+> 
+
+>   Current local git note:
+
+> 
+
+>   - The four qiaccess/config/*.yaml files are tracked modifications.
+
+>   - The three updated docs are in local untracked docs paths that already existed in
+
+>     your worktree, so they are not committed or pushed by this pass.
+
+> 
+
+> ─ Worked for 4m 10s ────────────────────────────────────────────────────────────────────
+
+> 
+
+> 
+
 > › Implement {feature}
 
 ### Assistant

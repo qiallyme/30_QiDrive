@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 00 Codex Build Prompt V1
-slug: ""
+slug: 00-codex-build-prompt-v1
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8b8128457b564084b1d69fdbda60a81e
 canonical_ref: ""
 source_type: manual
 template_key: master-template

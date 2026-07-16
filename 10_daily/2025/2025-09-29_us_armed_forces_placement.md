@@ -3,9 +3,9 @@ layout: page
 title: "US Armed Forces Placement"
 slug: "us_armed_forces_placement"
 created_at: "2025-09-29 21:53:24"
-updated_at: "2025-09-29 21:53:24"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

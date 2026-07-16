@@ -3,9 +3,9 @@ layout: page
 title: "Monthly Finance Task List"
 slug: "monthly_finance_task_list"
 created_at: "2023-08-03 17:36:49"
-updated_at: "2023-08-03 17:36:49"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,7 +3,7 @@ layout: page
 title: "Cascading Consequences of Disconnection"
 slug: "cascading_consequences_of_disconnection"
 created_at: "2025-07-09"
-updated_at: "2025-07-09"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 300db979e3204d7a8f76ca3cf2c42c09
 canonical_ref: ""
 ---
 

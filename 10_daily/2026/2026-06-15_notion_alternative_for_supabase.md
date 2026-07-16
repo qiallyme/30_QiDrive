@@ -3,9 +3,9 @@ layout: page
 title: "Notion Alternative for Supabase"
 slug: "notion_alternative_for_supabase"
 created_at: "2026-06-15 08:29:15"
-updated_at: "2026-06-15 08:29:15"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

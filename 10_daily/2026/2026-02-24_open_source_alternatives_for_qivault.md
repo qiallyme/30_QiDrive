@@ -3,9 +3,9 @@ layout: page
 title: "Open-source alternatives for QiVault"
 slug: "open_source_alternatives_for_qivault"
 created_at: "2026-02-24 03:03:11"
-updated_at: "2026-02-24 03:03:11"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -699,395 +699,784 @@ canonical_ref: ""
 > And I’ll tell you in 2 minutes what’s worth stealing and what’s trash.
 
 ### User
-> you see anything in the docs you would like to read to see how we can do our own QiDocSpell {
->   "name": "docs",
->   "path": "c:\\QiLabs\\docspell-master\\website\\docs",
->   "type": "directory",
->   "children": [
->     {
->       "name": "addons",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "basics.md",
->           "type": "file"
->         },
->         {
->           "name": "control.md",
->           "type": "file"
->         },
->         {
->           "name": "using.md",
->           "type": "file"
->         },
->         {
->           "name": "writing.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "api",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "intro.md",
->           "type": "file"
->         },
->         {
->           "name": "upload.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "configure",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "admin-endpoint.md",
->           "type": "file"
->         },
->         {
->           "name": "authentication.md",
->           "type": "file"
->         },
->         {
->           "name": "baseurl.md",
->           "type": "file"
->         },
->         {
->           "name": "bind.md",
->           "type": "file"
->         },
->         {
->           "name": "custom-mapping.md",
->           "type": "file"
->         },
->         {
->           "name": "database.md",
->           "type": "file"
->         },
->         {
->           "name": "defaults.md",
->           "type": "file"
->         },
->         {
->           "name": "file-backends.md",
->           "type": "file"
->         },
->         {
->           "name": "file-processing.md",
->           "type": "file"
->         },
->         {
->           "name": "fulltext-search.md",
->           "type": "file"
->         },
->         {
->           "name": "main.md",
->           "type": "file"
->         },
->         {
->           "name": "registration.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "dev",
->       "type": "folder",
->       "children": [
->         {
->           "name": "adr",
->           "type": "folder",
->           "children": [
->             {
->               "name": "0000_use_markdown_architectural_decision_records.md",
->               "type": "file"
->             },
->             {
->               "name": "0001_components.md",
->               "type": "file"
->             },
->             {
->               "name": "0002_component_interaction.md",
->               "type": "file"
->             },
->             {
->               "name": "0003_encryption.md",
->               "type": "file"
->             },
->             {
->               "name": "0004_iso8601vsEpoch.md",
->               "type": "file"
->             },
->             {
->               "name": "0005_job-executor.md",
->               "type": "file"
->             },
->             {
->               "name": "0006_more-file-types.md",
->               "type": "file"
->             },
->             {
->               "name": "0007_convert_html_files.md",
->               "type": "file"
->             },
->             {
->               "name": "0008_convert_plain_text.md",
->               "type": "file"
->             },
->             {
->               "name": "0009_convert_office_docs.md",
->               "type": "file"
->             },
->             {
->               "name": "0010_convert_image_files.md",
->               "type": "file"
->             },
->             {
->               "name": "0011_extract_text.md",
->               "type": "file"
->             },
->             {
->               "name": "0012_periodic_tasks.md",
->               "type": "file"
->             },
->             {
->               "name": "0013_archive_files.md",
->               "type": "file"
->             },
->             {
->               "name": "0014_fulltext_search_engine.md",
->               "type": "file"
->             },
->             {
->               "name": "0015_convert_pdf_files.md",
->               "type": "file"
->             },
->             {
->               "name": "0016_custom_fields.md",
->               "type": "file"
->             },
->             {
->               "name": "_index.md",
->               "type": "file"
->             },
->             {
->               "name": "process-files.png",
->               "type": "file"
->             },
->             {
->               "name": "process-files.puml",
->               "type": "file"
->             },
->             {
->               "name": "template.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "add-language.md",
->           "type": "file"
->         },
->         {
->           "name": "building.md",
->           "type": "file"
->         },
->         {
->           "name": "development.md",
->           "type": "file"
->         },
->         {
->           "name": "documentation.md",
->           "type": "file"
->         },
->         {
->           "name": "translation.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "feed",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "jsonminiquery",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "query",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "tools",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "android.md",
->           "type": "file"
->         },
->         {
->           "name": "cli.md",
->           "type": "file"
->         },
->         {
->           "name": "ds4e.md",
->           "type": "file"
->         },
->         {
->           "name": "paperless-import.md",
->           "type": "file"
->         },
->         {
->           "name": "smtpgateway.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "webapp",
->       "type": "folder",
->       "children": [
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "autotagging.md",
->           "type": "file"
->         },
->         {
->           "name": "bookmarks.md",
->           "type": "file"
->         },
->         {
->           "name": "curate.md",
->           "type": "file"
->         },
->         {
->           "name": "customfields.md",
->           "type": "file"
->         },
->         {
->           "name": "dashboards.md",
->           "type": "file"
->         },
->         {
->           "name": "download-all.md",
->           "type": "file"
->         },
->         {
->           "name": "emailsettings.md",
->           "type": "file"
->         },
->         {
->           "name": "finding.md",
->           "type": "file"
->         },
->         {
->           "name": "itemcard-customize.md",
->           "type": "file"
->         },
->         {
->           "name": "mailitem.md",
->           "type": "file"
->         },
->         {
->           "name": "merge.md",
->           "type": "file"
->         },
->         {
->           "name": "metadata.md",
->           "type": "file"
->         },
->         {
->           "name": "multiedit.md",
->           "type": "file"
->         },
->         {
->           "name": "notification.md",
->           "type": "file"
->         },
->         {
->           "name": "notifydueitems.md",
->           "type": "file"
->         },
->         {
->           "name": "processing.md",
->           "type": "file"
->         },
->         {
->           "name": "scanmailbox.md",
->           "type": "file"
->         },
->         {
->           "name": "share.md",
->           "type": "file"
->         },
->         {
->           "name": "totp.md",
->           "type": "file"
->         },
->         {
->           "name": "uploading.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "_index.md",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-02-24T09:41:12.441Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> you see anything in the docs you would like to read to see how we can do our own QiDocSpell {
+
+>   "name": "docs",
+
+>   "path": "c:\\QiLabs\\docspell-master\\website\\docs",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "addons",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "basics.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "control.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "using.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "writing.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "api",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "intro.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "upload.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "configure",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "admin-endpoint.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "authentication.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "baseurl.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "bind.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "custom-mapping.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "database.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "defaults.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "file-backends.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "file-processing.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "fulltext-search.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "main.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "registration.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "dev",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "adr",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "0000_use_markdown_architectural_decision_records.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0001_components.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0002_component_interaction.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0003_encryption.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0004_iso8601vsEpoch.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0005_job-executor.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0006_more-file-types.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0007_convert_html_files.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0008_convert_plain_text.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0009_convert_office_docs.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0010_convert_image_files.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0011_extract_text.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0012_periodic_tasks.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0013_archive_files.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0014_fulltext_search_engine.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0015_convert_pdf_files.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "0016_custom_fields.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "process-files.png",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "process-files.puml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "template.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "add-language.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "building.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "development.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "documentation.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "translation.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "feed",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "jsonminiquery",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "query",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "tools",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "android.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "cli.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ds4e.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "paperless-import.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "smtpgateway.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "webapp",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "autotagging.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "bookmarks.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "curate.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "customfields.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "dashboards.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "download-all.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "emailsettings.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "finding.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "itemcard-customize.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "mailitem.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "merge.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "metadata.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "multiedit.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "notification.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "notifydueitems.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "processing.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "scanmailbox.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "share.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "totp.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "uploading.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "_index.md",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-02-24T09:41:12.441Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -1294,2090 +1683,4174 @@ canonical_ref: ""
 > ```
 
 ### User
-> in mmodules i see some postgres, in there anything else we might find usefull. # File Tree: modules
-> 
-> **Generated:** 2/24/2026, 3:46:14 AM
-> **Root Path:** `c:\QiLabs\docspell-master\modules`
-> 
-> ```
-> ├── addonlib
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── addons
-> │       │               ├── runner
-> │       │               │   ├── CollectOut.scala
-> │       │               │   ├── DockerBuilder.scala
-> │       │               │   ├── DockerRunner.scala
-> │       │               │   ├── NSpawnBuilder.scala
-> │       │               │   ├── NixFlakeRunner.scala
-> │       │               │   ├── RunnerUtil.scala
-> │       │               │   └── TrivialRunner.scala
-> │       │               ├── AddonArchive.scala
-> │       │               ├── AddonExecutionResult.scala
-> │       │               ├── AddonExecutor.scala
-> │       │               ├── AddonExecutorConfig.scala
-> │       │               ├── AddonLoggerExtension.scala
-> │       │               ├── AddonMeta.scala
-> │       │               ├── AddonRef.scala
-> │       │               ├── AddonResult.scala
-> │       │               ├── AddonRunner.scala
-> │       │               ├── AddonTriggerType.scala
-> │       │               ├── Context.scala
-> │       │               ├── InputEnv.scala
-> │       │               ├── Middleware.scala
-> │       │               ├── RunnerType.scala
-> │       │               └── package.scala
-> │       └── test
-> │           ├── resources
-> │           │   ├── docspell-addon-single-file.zip
-> │           │   ├── docspell-dummy-addon-master.zip
-> │           │   └── minimal-addon.zip
-> │           └── scala
-> │               └── docspell
-> │                   └── addons
-> │                       ├── AddonArchiveTest.scala
-> │                       ├── AddonExecutorTest.scala
-> │                       ├── AddonGenerator.scala
-> │                       ├── AddonMetaTest.scala
-> │                       ├── AddonOutputTest.scala
-> │                       ├── AddonRunnerTest.scala
-> │                       └── Fixtures.scala
-> ├── analysis
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── analysis
-> │       │               ├── classifier
-> │       │               │   ├── ClassifierModel.scala
-> │       │               │   ├── StanfordTextClassifier.scala
-> │       │               │   ├── TextClassifier.scala
-> │       │               │   └── TextClassifierConfig.scala
-> │       │               ├── contact
-> │       │               │   ├── Contact.scala
-> │       │               │   ├── Domain.scala
-> │       │               │   └── Tld.scala
-> │       │               ├── date
-> │       │               │   ├── DateFind.scala
-> │       │               │   └── MonthName.scala
-> │       │               ├── nlp
-> │       │               │   ├── Annotator.scala
-> │       │               │   ├── BasicCRFAnnotator.scala
-> │       │               │   ├── LabelConverter.scala
-> │       │               │   ├── PipelineCache.scala
-> │       │               │   ├── Properties.scala
-> │       │               │   ├── StanfordNerAnnotator.scala
-> │       │               │   └── StanfordNerSettings.scala
-> │       │               ├── split
-> │       │               │   ├── TextSplitter.scala
-> │       │               │   └── Word.scala
-> │       │               ├── NlpSettings.scala
-> │       │               ├── TextAnalyser.scala
-> │       │               └── TextAnalysisConfig.scala
-> │       └── test
-> │           ├── resources
-> │           │   └── test.ser.gz
-> │           └── scala
-> │               └── docspell
-> │                   └── analysis
-> │                       ├── classifier
-> │                       │   └── StanfordTextClassifierSuite.scala
-> │                       ├── contact
-> │                       │   └── ContactAnnotateSpec.scala
-> │                       ├── date
-> │                       │   └── DateFindTest.scala
-> │                       ├── nlp
-> │                       │   ├── BaseCRFAnnotatorSuite.scala
-> │                       │   └── StanfordNerAnnotatorSuite.scala
-> │                       ├── split
-> │                       │   └── TestSplitterSpec.scala
-> │                       └── Env.scala
-> ├── backend
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── backend
-> │       │               ├── auth
-> │       │               │   ├── AuthToken.scala
-> │       │               │   ├── Login.scala
-> │       │               │   ├── RememberToken.scala
-> │       │               │   ├── ShareToken.scala
-> │       │               │   └── TokenUtil.scala
-> │       │               ├── codec
-> │       │               │   └── ItemQueryCodec.scala
-> │       │               ├── fulltext
-> │       │               │   └── CreateIndex.scala
-> │       │               ├── item
-> │       │               │   └── Merge.scala
-> │       │               ├── joex
-> │       │               │   ├── AddonEnvConfig.scala
-> │       │               │   ├── AddonOps.scala
-> │       │               │   ├── AddonPostProcess.scala
-> │       │               │   ├── AddonPrepare.scala
-> │       │               │   ├── FindJobOwnerAccount.scala
-> │       │               │   └── LoggerExtension.scala
-> │       │               ├── msg
-> │       │               │   └── Topics.scala
-> │       │               ├── ops
-> │       │               │   ├── search
-> │       │               │   │   ├── OSearch.scala
-> │       │               │   │   └── QueryParseResult.scala
-> │       │               │   ├── AddonRunConfigError.scala
-> │       │               │   ├── AddonRunConfigValidate.scala
-> │       │               │   ├── AddonValidate.scala
-> │       │               │   ├── AddonValidationError.scala
-> │       │               │   ├── OAddons.scala
-> │       │               │   ├── OAttachment.scala
-> │       │               │   ├── OClientSettings.scala
-> │       │               │   ├── OCollective.scala
-> │       │               │   ├── OCustomFields.scala
-> │       │               │   ├── ODownloadAll.scala
-> │       │               │   ├── OEquipment.scala
-> │       │               │   ├── OFileRepository.scala
-> │       │               │   ├── OFolder.scala
-> │       │               │   ├── OFulltext.scala
-> │       │               │   ├── OItem.scala
-> │       │               │   ├── OItemLink.scala
-> │       │               │   ├── OItemSearch.scala
-> │       │               │   ├── OJob.scala
-> │       │               │   ├── OJoex.scala
-> │       │               │   ├── OMail.scala
-> │       │               │   ├── ONode.scala
-> │       │               │   ├── ONotification.scala
-> │       │               │   ├── OOrganization.scala
-> │       │               │   ├── OQueryBookmarks.scala
-> │       │               │   ├── OShare.scala
-> │       │               │   ├── OSource.scala
-> │       │               │   ├── OTag.scala
-> │       │               │   ├── OTotp.scala
-> │       │               │   ├── OUpload.scala
-> │       │               │   ├── OUserTask.scala
-> │       │               │   └── WildcardString.scala
-> │       │               ├── signup
-> │       │               │   ├── Config.scala
-> │       │               │   ├── ExternalAccount.scala
-> │       │               │   ├── NewInviteResult.scala
-> │       │               │   ├── OSignup.scala
-> │       │               │   ├── RegisterData.scala
-> │       │               │   └── SignupResult.scala
-> │       │               ├── task
-> │       │               │   └── DownloadZipArgs.scala
-> │       │               ├── AttachedEvent.scala
-> │       │               ├── BackendApp.scala
-> │       │               ├── BackendCommands.scala
-> │       │               ├── Common.scala
-> │       │               ├── Config.scala
-> │       │               ├── JobFactory.scala
-> │       │               ├── MailAddressCodec.scala
-> │       │               └── PasswordCrypt.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── backend
-> │                       └── auth
-> │                           └── AuthTokenTest.scala
-> ├── common
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── common
-> │       │               ├── bc
-> │       │               │   ├── AttachmentAction.scala
-> │       │               │   ├── BackendCommand.scala
-> │       │               │   ├── BackendCommandRunner.scala
-> │       │               │   └── ItemAction.scala
-> │       │               ├── exec
-> │       │               │   ├── Args.scala
-> │       │               │   ├── Env.scala
-> │       │               │   ├── ExternalCommand.scala
-> │       │               │   ├── SysCmd.scala
-> │       │               │   └── SysExec.scala
-> │       │               ├── syntax
-> │       │               │   ├── EitherSyntax.scala
-> │       │               │   ├── FileSyntax.scala
-> │       │               │   ├── StreamSyntax.scala
-> │       │               │   ├── StringSyntax.scala
-> │       │               │   └── package.scala
-> │       │               ├── util
-> │       │               │   ├── Directory.scala
-> │       │               │   ├── File.scala
-> │       │               │   ├── Random.scala
-> │       │               │   ├── ResourceUse.scala
-> │       │               │   ├── SignUtil.scala
-> │       │               │   ├── Zip.scala
-> │       │               │   └── ZipImpl.scala
-> │       │               ├── AccountId.scala
-> │       │               ├── AccountInfo.scala
-> │       │               ├── AccountSource.scala
-> │       │               ├── AllPreviewsArgs.scala
-> │       │               ├── Banner.scala
-> │       │               ├── BaseJsonCodecs.scala
-> │       │               ├── Binary.scala
-> │       │               ├── ByteSize.scala
-> │       │               ├── CollectiveId.scala
-> │       │               ├── CollectiveState.scala
-> │       │               ├── ContactKind.scala
-> │       │               ├── ConvertAllPdfArgs.scala
-> │       │               ├── CustomFieldType.scala
-> │       │               ├── DataType.scala
-> │       │               ├── Direction.scala
-> │       │               ├── DocspellSystem.scala
-> │       │               ├── DownloadAllType.scala
-> │       │               ├── DownloadState.scala
-> │       │               ├── Duration.scala
-> │       │               ├── EmptyTrashArgs.scala
-> │       │               ├── EnvMode.scala
-> │       │               ├── EquipmentUse.scala
-> │       │               ├── FileCategory.scala
-> │       │               ├── FileCopyTaskArgs.scala
-> │       │               ├── FileIntegrityCheckArgs.scala
-> │       │               ├── FileKey.scala
-> │       │               ├── FileKeyPart.scala
-> │       │               ├── FileName.scala
-> │       │               ├── FileStoreConfig.scala
-> │       │               ├── FileStoreType.scala
-> │       │               ├── Glob.scala
-> │       │               ├── Hash.scala
-> │       │               ├── IdRef.scala
-> │       │               ├── Ident.scala
-> │       │               ├── ItemAddonTaskArgs.scala
-> │       │               ├── ItemQueryString.scala
-> │       │               ├── ItemState.scala
-> │       │               ├── JobState.scala
-> │       │               ├── JvmInfo.scala
-> │       │               ├── Language.scala
-> │       │               ├── LearnClassifierArgs.scala
-> │       │               ├── LenientUri.scala
-> │       │               ├── ListType.scala
-> │       │               ├── LogLevel.scala
-> │       │               ├── MailSendConfig.scala
-> │       │               ├── MakePageCountArgs.scala
-> │       │               ├── MakePreviewArgs.scala
-> │       │               ├── MetaProposal.scala
-> │       │               ├── MetaProposalList.scala
-> │       │               ├── MetaProposalType.scala
-> │       │               ├── MimeType.scala
-> │       │               ├── MimeTypeHint.scala
-> │       │               ├── NerDateLabel.scala
-> │       │               ├── NerLabel.scala
-> │       │               ├── NerLabelSpan.scala
-> │       │               ├── NerTag.scala
-> │       │               ├── NlpMode.scala
-> │       │               ├── NodeType.scala
-> │       │               ├── OrgUse.scala
-> │       │               ├── Password.scala
-> │       │               ├── PersonRef.scala
-> │       │               ├── PersonUse.scala
-> │       │               ├── Pools.scala
-> │       │               ├── Priority.scala
-> │       │               ├── ProcessItemArgs.scala
-> │       │               ├── ReIndexTaskArgs.scala
-> │       │               ├── ReProcessItemArgs.scala
-> │       │               ├── ScanMailboxArgs.scala
-> │       │               ├── ScheduledAddonTaskArgs.scala
-> │       │               ├── SearchMode.scala
-> │       │               ├── TaskArguments.scala
-> │       │               ├── ThreadFactories.scala
-> │       │               ├── Timestamp.scala
-> │       │               ├── UrlMatcher.scala
-> │       │               ├── UrlReader.scala
-> │       │               └── UserState.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── common
-> │                       ├── bc
-> │                       │   └── BackendCommandTest.scala
-> │                       ├── exec
-> │                       │   └── ExternalCommandTest.scala
-> │                       ├── util
-> │                       │   ├── DirectoryTest.scala
-> │                       │   └── SignUtilTest.scala
-> │                       ├── FileNameTest.scala
-> │                       ├── GlobTest.scala
-> │                       ├── LenientUriTest.scala
-> │                       ├── MetaProposalListTest.scala
-> │                       ├── MimeTypeTest.scala
-> │                       ├── NerLabelSpanTest.scala
-> │                       └── UrlMatcherTest.scala
-> ├── config
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── config
-> │       │               ├── ConfigFactory.scala
-> │       │               ├── EnvConfig.scala
-> │       │               ├── FtsType.scala
-> │       │               ├── Implicits.scala
-> │       │               ├── PgFtsConfig.scala
-> │       │               └── Validation.scala
-> │       └── test
-> │           ├── resources
-> │           │   └── reference.conf
-> │           └── scala
-> │               └── docspell
-> │                   └── config
-> │                       ├── EnvConfigTest.scala
-> │                       └── ValidationTest.scala
-> ├── convert
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── convert
-> │       │               ├── extern
-> │       │               │   ├── ExternConv.scala
-> │       │               │   ├── OcrMyPdf.scala
-> │       │               │   ├── OcrMyPdfConfig.scala
-> │       │               │   ├── Tesseract.scala
-> │       │               │   ├── TesseractConfig.scala
-> │       │               │   ├── Unoconv.scala
-> │       │               │   ├── UnoconvConfig.scala
-> │       │               │   ├── Weasyprint.scala
-> │       │               │   ├── WeasyprintConfig.scala
-> │       │               │   ├── WkHtmlPdf.scala
-> │       │               │   └── WkHtmlPdfConfig.scala
-> │       │               ├── flexmark
-> │       │               │   ├── Markdown.scala
-> │       │               │   └── MarkdownConfig.scala
-> │       │               ├── Conversion.scala
-> │       │               ├── ConversionResult.scala
-> │       │               ├── ConvertConfig.scala
-> │       │               ├── RemovePdfEncryption.scala
-> │       │               └── SanitizeHtml.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── convert
-> │                       ├── extern
-> │                       │   └── ExternConvTest.scala
-> │                       ├── ConversionTest.scala
-> │                       ├── FileChecks.scala
-> │                       └── RemovePdfEncryptionTest.scala
-> ├── extract
-> │   └── src
-> │       ├── main
-> │       │   ├── java
-> │       │   │   └── org
-> │       │   │       └── apache
-> │       │   │           └── tika
-> │       │   │               ├── exception
-> │       │   │               │   └── WriteLimitReachedException.java
-> │       │   │               ├── parser
-> │       │   │               │   ├── odf
-> │       │   │               │   │   ├── FlatOpenDocumentMacroHandler.java
-> │       │   │               │   │   ├── NSNormalizerContentHandler.java
-> │       │   │               │   │   ├── OpenDocumentBodyHandler.java
-> │       │   │               │   │   ├── OpenDocumentContentParser.java
-> │       │   │               │   │   ├── OpenDocumentMacroHandler.java
-> │       │   │               │   │   ├── OpenDocumentManifestHandler.java
-> │       │   │               │   │   ├── OpenDocumentMetaParser.java
-> │       │   │               │   │   └── OpenDocumentParser.java
-> │       │   │               │   └── xml
-> │       │   │               │       ├── AbstractMetadataHandler.java
-> │       │   │               │       ├── AttributeDependantMetadataHandler.java
-> │       │   │               │       ├── AttributeMetadataHandler.java
-> │       │   │               │       ├── DcXMLParser.java
-> │       │   │               │       ├── ElementMetadataHandler.java
-> │       │   │               │       ├── FictionBookParser.java
-> │       │   │               │       ├── MetadataHandler.java
-> │       │   │               │       ├── TextAndAttributeXMLParser.java
-> │       │   │               │       └── XMLParser.java
-> │       │   │               └── utils
-> │       │   │                   └── StringUtils.java
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── extract
-> │       │               ├── internal
-> │       │               │   └── Text.scala
-> │       │               ├── ocr
-> │       │               │   ├── Ocr.scala
-> │       │               │   ├── OcrConfig.scala
-> │       │               │   ├── OcrType.scala
-> │       │               │   └── TextExtract.scala
-> │       │               ├── odf
-> │       │               │   ├── OdfExtract.scala
-> │       │               │   └── OdfType.scala
-> │       │               ├── pdfbox
-> │       │               │   ├── PdfLoader.scala
-> │       │               │   ├── PdfMetaData.scala
-> │       │               │   ├── PdfboxExtract.scala
-> │       │               │   ├── PdfboxPreview.scala
-> │       │               │   └── PreviewConfig.scala
-> │       │               ├── poi
-> │       │               │   ├── PoiExtract.scala
-> │       │               │   └── PoiType.scala
-> │       │               ├── rtf
-> │       │               │   └── RtfExtract.scala
-> │       │               ├── ExtractConfig.scala
-> │       │               ├── ExtractResult.scala
-> │       │               ├── Extraction.scala
-> │       │               ├── PdfConfig.scala
-> │       │               └── PdfExtract.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── extract
-> │                       ├── ocr
-> │                       │   └── TextExtractionSuite.scala
-> │                       ├── odf
-> │                       │   └── OdfExtractTest.scala
-> │                       ├── pdfbox
-> │                       │   ├── PdfMetaDataTest.scala
-> │                       │   ├── PdfboxExtractTest.scala
-> │                       │   └── PdfboxPreviewTest.scala
-> │                       ├── poi
-> │                       │   └── PoiExtractTest.scala
-> │                       └── rtf
-> │                           └── RtfExtractTest.scala
-> ├── files
-> │   └── src
-> │       ├── main
-> │       │   ├── java
-> │       │   │   └── org
-> │       │   │       └── apache
-> │       │   │           └── tika
-> │       │   │               └── parser
-> │       │   │                   └── txt
-> │       │   │                       ├── IOUtils.java
-> │       │   │                       └── Icu4jEncodingDetector.java
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── files
-> │       │               ├── Dimension.scala
-> │       │               ├── FileSupport.scala
-> │       │               ├── ImageSize.scala
-> │       │               └── TikaMimetype.scala
-> │       └── test
-> │           ├── resources
-> │           │   ├── bombs
-> │           │   │   ├── 20K-gray.jpeg
-> │           │   │   ├── 20K-gray.png
-> │           │   │   ├── 20K-rgb.jpeg
-> │           │   │   └── 20K-rgb.png
-> │           │   ├── camera
-> │           │   │   ├── letter-en.jpg
-> │           │   │   ├── letter-en.png
-> │           │   │   └── letter-en.tiff
-> │           │   ├── examples
-> │           │   │   ├── letter-ita.txt
-> │           │   │   ├── sample.doc
-> │           │   │   ├── sample.docx
-> │           │   │   ├── sample.ods
-> │           │   │   ├── sample.odt
-> │           │   │   ├── sample.rtf
-> │           │   │   ├── sample.xls
-> │           │   │   └── sample.xlsx
-> │           │   ├── scanner
-> │           │   │   ├── jfif.jpg
-> │           │   │   ├── pdf13.pdf
-> │           │   │   └── pdfa14.pdf
-> │           │   ├── secured
-> │           │   │   ├── encrypted-test123.pdf
-> │           │   │   └── protected-test123.pdf
-> │           │   ├── keywords.pdf
-> │           │   ├── large-file.pdf
-> │           │   ├── letter-de.html
-> │           │   ├── letter-de.md
-> │           │   ├── letter-de.pdf
-> │           │   ├── letter-de.txt
-> │           │   ├── letter-en.pdf
-> │           │   ├── letter-en.txt
-> │           │   ├── letters.zip
-> │           │   ├── zip-dirs-one.zip
-> │           │   └── zip-dirs.zip
-> │           └── scala
-> │               └── docspell
-> │                   └── files
-> │                       ├── ExampleFilesSupport.scala
-> │                       ├── ImageSizeTest.scala
-> │                       ├── Playing.scala
-> │                       ├── TestFiles.scala
-> │                       ├── TikaMimetypeTest.scala
-> │                       └── ZipTest.scala
-> ├── fts-client
-> │   └── src
-> │       └── main
-> │           └── scala
-> │               └── docspell
-> │                   └── ftsclient
-> │                       ├── FtsClient.scala
-> │                       ├── FtsMigration.scala
-> │                       ├── FtsQuery.scala
-> │                       ├── FtsResult.scala
-> │                       └── TextData.scala
-> ├── fts-psql
-> │   └── src
-> │       ├── main
-> │       │   ├── resources
-> │       │   │   └── db
-> │       │   │       └── psqlfts
-> │       │   │           ├── V2.0.0__initial_schema.sql
-> │       │   │           └── V2.1.0__collective_id.sql
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── ftspsql
-> │       │               ├── DbMigration.scala
-> │       │               ├── DoobieMeta.scala
-> │       │               ├── FtsRecord.scala
-> │       │               ├── FtsRepository.scala
-> │       │               ├── PgQueryParser.scala
-> │       │               ├── PsqlConfig.scala
-> │       │               ├── PsqlFtsClient.scala
-> │       │               ├── RankNormalization.scala
-> │       │               ├── SearchResult.scala
-> │       │               └── SearchSummary.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── ftspsql
-> │                       ├── MigrationTest.scala
-> │                       ├── PgFixtures.scala
-> │                       └── PsqlFtsClientTest.scala
-> ├── fts-solr
-> │   └── src
-> │       └── main
-> │           └── scala
-> │               └── docspell
-> │                   └── ftssolr
-> │                       ├── DocIdResult.scala
-> │                       ├── Field.scala
-> │                       ├── JsonCodec.scala
-> │                       ├── QueryData.scala
-> │                       ├── SetFields.scala
-> │                       ├── SetFolder.scala
-> │                       ├── SolrConfig.scala
-> │                       ├── SolrFtsClient.scala
-> │                       ├── SolrMigration.scala
-> │                       ├── SolrQuery.scala
-> │                       ├── SolrSetup.scala
-> │                       ├── SolrUpdate.scala
-> │                       └── VersionDoc.scala
-> ├── joex
-> │   └── src
-> │       ├── main
-> │       │   ├── resources
-> │       │   │   └── reference.conf
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── joex
-> │       │               ├── addon
-> │       │               │   ├── AddonTaskExtension.scala
-> │       │               │   ├── GenericItemAddonTask.scala
-> │       │               │   ├── ItemAddonTask.scala
-> │       │               │   ├── Result.scala
-> │       │               │   └── ScheduledAddonTask.scala
-> │       │               ├── analysis
-> │       │               │   ├── NerFile.scala
-> │       │               │   └── RegexNerFile.scala
-> │       │               ├── download
-> │       │               │   ├── DownloadZipTask.scala
-> │       │               │   └── Result.scala
-> │       │               ├── emptytrash
-> │       │               │   ├── EmptyTrashTask.scala
-> │       │               │   └── Result.scala
-> │       │               ├── extract
-> │       │               │   └── JsoupSanitizer.scala
-> │       │               ├── filecopy
-> │       │               │   ├── FileCopyTask.scala
-> │       │               │   └── FileIntegrityCheckTask.scala
-> │       │               ├── fts
-> │       │               │   ├── FtsContext.scala
-> │       │               │   ├── FtsWork.scala
-> │       │               │   ├── Migration.scala
-> │       │               │   ├── MigrationTask.scala
-> │       │               │   ├── ReIndexTask.scala
-> │       │               │   └── package.scala
-> │       │               ├── hk
-> │       │               │   ├── CheckNodesTask.scala
-> │       │               │   ├── CleanupDownloadsTask.scala
-> │       │               │   ├── CleanupInvitesTask.scala
-> │       │               │   ├── CleanupJobsTask.scala
-> │       │               │   ├── CleanupRememberMeTask.scala
-> │       │               │   ├── CleanupResult.scala
-> │       │               │   ├── HouseKeepingConfig.scala
-> │       │               │   ├── HouseKeepingTask.scala
-> │       │               │   └── IntegrityCheckTask.scala
-> │       │               ├── learn
-> │       │               │   ├── ClassifierName.scala
-> │       │               │   ├── Classify.scala
-> │       │               │   ├── LearnClassifierTask.scala
-> │       │               │   ├── LearnItemEntities.scala
-> │       │               │   ├── LearnTags.scala
-> │       │               │   ├── SelectItems.scala
-> │       │               │   └── StoreClassifierModel.scala
-> │       │               ├── mail
-> │       │               │   ├── EmilHeader.scala
-> │       │               │   └── ReadMail.scala
-> │       │               ├── multiupload
-> │       │               │   ├── MultiUploadArchiveTask.scala
-> │       │               │   └── Result.scala
-> │       │               ├── notify
-> │       │               │   ├── PeriodicDueItemsTask.scala
-> │       │               │   ├── PeriodicQueryTask.scala
-> │       │               │   ├── TaskOperations.scala
-> │       │               │   └── YamuscaConverter.scala
-> │       │               ├── pagecount
-> │       │               │   ├── AllPageCountTask.scala
-> │       │               │   └── MakePageCountTask.scala
-> │       │               ├── pdfconv
-> │       │               │   ├── ConvertAllPdfTask.scala
-> │       │               │   └── PdfConvTask.scala
-> │       │               ├── preview
-> │       │               │   ├── AllPreviewsTask.scala
-> │       │               │   └── MakePreviewTask.scala
-> │       │               ├── process
-> │       │               │   ├── AttachmentPageCount.scala
-> │       │               │   ├── AttachmentPreview.scala
-> │       │               │   ├── ConvertPdf.scala
-> │       │               │   ├── CreateItem.scala
-> │       │               │   ├── CrossCheckProposals.scala
-> │       │               │   ├── DuplicateCheck.scala
-> │       │               │   ├── EvalProposals.scala
-> │       │               │   ├── ExtractArchive.scala
-> │       │               │   ├── FindProposal.scala
-> │       │               │   ├── ItemData.scala
-> │       │               │   ├── ItemHandler.scala
-> │       │               │   ├── LinkProposal.scala
-> │       │               │   ├── ProcessItem.scala
-> │       │               │   ├── ReProcessItem.scala
-> │       │               │   ├── RemoveEmptyItem.scala
-> │       │               │   ├── RunAddons.scala
-> │       │               │   ├── SaveProposals.scala
-> │       │               │   ├── SetGivenData.scala
-> │       │               │   ├── TextAnalysis.scala
-> │       │               │   └── TextExtraction.scala
-> │       │               ├── routes
-> │       │               │   ├── InfoRoutes.scala
-> │       │               │   ├── InternalHeader.scala
-> │       │               │   └── JoexRoutes.scala
-> │       │               ├── scanmailbox
-> │       │               │   └── ScanMailboxTask.scala
-> │       │               ├── updatecheck
-> │       │               │   ├── MakeMail.scala
-> │       │               │   ├── ThisVersion.scala
-> │       │               │   ├── UpdateCheck.scala
-> │       │               │   ├── UpdateCheckConfig.scala
-> │       │               │   └── UpdateCheckTask.scala
-> │       │               ├── Config.scala
-> │       │               ├── ConfigFile.scala
-> │       │               ├── JoexApp.scala
-> │       │               ├── JoexAppImpl.scala
-> │       │               ├── JoexServer.scala
-> │       │               ├── JoexTasks.scala
-> │       │               └── Main.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── joex
-> │                       ├── analysis
-> │                       │   └── NerFileTest.scala
-> │                       ├── extract
-> │                       │   └── JsoupSanitizerTest.scala
-> │                       └── updatecheck
-> │                           └── UpdateCheckTest.scala
-> ├── joexapi
-> │   └── src
-> │       └── main
-> │           ├── resources
-> │           │   └── joex-openapi.yml
-> │           └── scala
-> │               └── docspell
-> │                   └── joexapi
-> │                       └── client
-> │                           └── JoexClient.scala
-> ├── jsonminiq
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── jsonminiq
-> │       │               ├── Format.scala
-> │       │               ├── JsonMiniQuery.scala
-> │       │               └── Parser.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── jsonminiq
-> │                       ├── Fixtures.scala
-> │                       ├── FormatTest.scala
-> │                       ├── JsonMiniQueryTest.scala
-> │                       └── ParserTest.scala
-> ├── logging
-> │   ├── api
-> │   │   └── src
-> │   │       ├── main
-> │   │       │   └── scala
-> │   │       │       └── docspell
-> │   │       │           └── logging
-> │   │       │               ├── AndThenLogger.scala
-> │   │       │               ├── CapturedLogger.scala
-> │   │       │               ├── LazyMap.scala
-> │   │       │               ├── Level.scala
-> │   │       │               ├── LogConfig.scala
-> │   │       │               ├── LogEvent.scala
-> │   │       │               ├── Logger.scala
-> │   │       │               └── LoggerExtension.scala
-> │   │       └── test
-> │   │           └── scala
-> │   │               └── docspell
-> │   │                   └── logging
-> │   │                       ├── CapturedLoggerTest.scala
-> │   │                       ├── LazyMapTest.scala
-> │   │                       └── TestLogger.scala
-> │   └── scribe
-> │       └── src
-> │           ├── main
-> │           │   └── scala
-> │           │       └── docspell
-> │           │           └── logging
-> │           │               ├── impl
-> │           │               │   ├── JsonWriter.scala
-> │           │               │   ├── LogfmtWriter.scala
-> │           │               │   ├── Record.scala
-> │           │               │   ├── ScribeConfigure.scala
-> │           │               │   └── ScribeWrapper.scala
-> │           │               └── package.scala
-> │           └── test
-> │               └── scala
-> │                   └── docspell
-> │                       └── logging
-> │                           └── TestLoggingConfig.scala
-> ├── notification
-> │   ├── api
-> │   │   └── src
-> │   │       └── main
-> │   │           └── scala
-> │   │               └── docspell
-> │   │                   └── notification
-> │   │                       └── api
-> │   │                           ├── Channel.scala
-> │   │                           ├── ChannelRef.scala
-> │   │                           ├── ChannelType.scala
-> │   │                           ├── Event.scala
-> │   │                           ├── EventContext.scala
-> │   │                           ├── EventExchange.scala
-> │   │                           ├── EventMessage.scala
-> │   │                           ├── EventReader.scala
-> │   │                           ├── EventSink.scala
-> │   │                           ├── NotificationBackend.scala
-> │   │                           ├── NotificationChannel.scala
-> │   │                           ├── NotificationModule.scala
-> │   │                           ├── PeriodicDueItemsArgs.scala
-> │   │                           └── PeriodicQueryArgs.scala
-> │   └── impl
-> │       └── src
-> │           ├── main
-> │           │   └── scala
-> │           │       └── docspell
-> │           │           └── notification
-> │           │               └── impl
-> │           │                   ├── context
-> │           │                   │   ├── BasicData.scala
-> │           │                   │   ├── DeleteFieldValueCtx.scala
-> │           │                   │   ├── ItemSelectionCtx.scala
-> │           │                   │   ├── JobDoneCtx.scala
-> │           │                   │   ├── JobSubmittedCtx.scala
-> │           │                   │   ├── SetFieldValueCtx.scala
-> │           │                   │   ├── Syntax.scala
-> │           │                   │   └── TagsChangedCtx.scala
-> │           │                   ├── AbstractEventContext.scala
-> │           │                   ├── DbEventContext.scala
-> │           │                   ├── EmailBackend.scala
-> │           │                   ├── EventContextSyntax.scala
-> │           │                   ├── EventNotify.scala
-> │           │                   ├── ExampleEventContext.scala
-> │           │                   ├── GotifyBackend.scala
-> │           │                   ├── HttpPostBackend.scala
-> │           │                   ├── HttpSend.scala
-> │           │                   ├── Markdown.scala
-> │           │                   ├── MatrixBackend.scala
-> │           │                   ├── NotificationBackendImpl.scala
-> │           │                   └── NotificationModuleImpl.scala
-> │           └── test
-> │               └── scala
-> │                   └── docspell
-> │                       └── notification
-> │                           └── impl
-> │                               └── context
-> │                                   └── TagsChangedCtxTest.scala
-> ├── oidc
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── oidc
-> │       │               ├── AccessToken.scala
-> │       │               ├── CodeFlow.scala
-> │       │               ├── CodeFlowConfig.scala
-> │       │               ├── CodeFlowRoutes.scala
-> │       │               ├── Jwt.scala
-> │       │               ├── OnUserInfo.scala
-> │       │               ├── ProviderConfig.scala
-> │       │               ├── SignatureAlgo.scala
-> │       │               ├── StateParam.scala
-> │       │               └── UserInfoDecoder.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── oidc
-> │                       └── StateParamTest.scala
-> ├── pubsub
-> │   ├── api
-> │   │   └── src
-> │   │       └── main
-> │   │           └── scala
-> │   │               └── docspell
-> │   │                   └── pubsub
-> │   │                       └── api
-> │   │                           ├── Message.scala
-> │   │                           ├── MessageHead.scala
-> │   │                           ├── PubSub.scala
-> │   │                           ├── PubSubT.scala
-> │   │                           ├── Topic.scala
-> │   │                           └── TypedTopic.scala
-> │   └── naive
-> │       └── src
-> │           ├── main
-> │           │   └── scala
-> │           │       └── docspell
-> │           │           └── pubsub
-> │           │               └── naive
-> │           │                   ├── NaivePubSub.scala
-> │           │                   └── PubSubConfig.scala
-> │           └── test
-> │               └── scala
-> │                   └── docspell
-> │                       └── pubsub
-> │                           └── naive
-> │                               ├── Fixtures.scala
-> │                               ├── HttpClientOps.scala
-> │                               ├── NaivePubSubTest.scala
-> │                               └── Topics.scala
-> ├── query
-> │   ├── js
-> │   │   └── src
-> │   │       └── main
-> │   │           └── scala
-> │   │               └── docspell
-> │   │                   └── query
-> │   │                       └── js
-> │   │                           └── JSItemQueryParser.scala
-> │   └── shared
-> │       └── src
-> │           ├── main
-> │           │   └── scala
-> │           │       └── docspell
-> │           │           └── query
-> │           │               ├── internal
-> │           │               │   ├── AttrParser.scala
-> │           │               │   ├── BasicParser.scala
-> │           │               │   ├── Constants.scala
-> │           │               │   ├── DateParser.scala
-> │           │               │   ├── ExprParser.scala
-> │           │               │   ├── ExprString.scala
-> │           │               │   ├── ExprUtil.scala
-> │           │               │   ├── MacroParser.scala
-> │           │               │   ├── OperatorParser.scala
-> │           │               │   ├── SimpleExprParser.scala
-> │           │               │   └── StringUtil.scala
-> │           │               ├── Date.scala
-> │           │               ├── FulltextExtract.scala
-> │           │               ├── ItemQuery.scala
-> │           │               ├── ItemQueryDsl.scala
-> │           │               ├── ItemQueryParser.scala
-> │           │               └── ParseFailure.scala
-> │           └── test
-> │               └── scala
-> │                   └── docspell
-> │                       └── query
-> │                           ├── internal
-> │                           │   ├── AttrParserTest.scala
-> │                           │   ├── BasicParserTest.scala
-> │                           │   ├── DateParserTest.scala
-> │                           │   ├── ExprParserTest.scala
-> │                           │   ├── ExprStringTest.scala
-> │                           │   ├── ItemQueryParserTest.scala
-> │                           │   ├── MacroParserTest.scala
-> │                           │   ├── OperatorParserTest.scala
-> │                           │   ├── SimpleExprParserTest.scala
-> │                           │   └── ValueHelper.scala
-> │                           ├── FulltextExtractTest.scala
-> │                           └── ItemQueryGen.scala
-> ├── restapi
-> │   └── src
-> │       └── main
-> │           ├── resources
-> │           │   └── docspell-openapi.yml
-> │           └── scala
-> │               └── docspell
-> │                   └── restapi
-> │                       ├── codec
-> │                       │   ├── ChannelEihterCodec.scala
-> │                       │   └── ItemQueryJson.scala
-> │                       └── model
-> │                           └── NotificationChannel.scala
-> ├── restserver
-> │   └── src
-> │       ├── main
-> │       │   ├── resources
-> │       │   │   ├── docspell
-> │       │   │   │   └── restserver
-> │       │   │   │       └── no-preview.svg
-> │       │   │   └── reference.conf
-> │       │   ├── scala
-> │       │   │   └── docspell
-> │       │   │       └── restserver
-> │       │   │           ├── auth
-> │       │   │           │   ├── CookieData.scala
-> │       │   │           │   ├── OpenId.scala
-> │       │   │           │   ├── RememberCookieData.scala
-> │       │   │           │   └── ShareCookieData.scala
-> │       │   │           ├── conv
-> │       │   │           │   ├── AddonValidationSupport.scala
-> │       │   │           │   ├── Conversions.scala
-> │       │   │           │   ├── MultiIdSupport.scala
-> │       │   │           │   └── NonEmptyListSupport.scala
-> │       │   │           ├── http4s
-> │       │   │           │   ├── BinaryUtil.scala
-> │       │   │           │   ├── ClientRequestInfo.scala
-> │       │   │           │   ├── ContentDisposition.scala
-> │       │   │           │   ├── EnvMiddleware.scala
-> │       │   │           │   ├── InternalHeader.scala
-> │       │   │           │   ├── NoCacheMiddleware.scala
-> │       │   │           │   ├── QueryParam.scala
-> │       │   │           │   ├── ResponseGenerator.scala
-> │       │   │           │   ├── Responses.scala
-> │       │   │           │   └── ThrowableResponseMapper.scala
-> │       │   │           ├── routes
-> │       │   │           │   ├── AddonArchiveRoutes.scala
-> │       │   │           │   ├── AddonRoutes.scala
-> │       │   │           │   ├── AddonRunConfigRoutes.scala
-> │       │   │           │   ├── AddonRunRoutes.scala
-> │       │   │           │   ├── AdminAuth.scala
-> │       │   │           │   ├── AttachmentMultiRoutes.scala
-> │       │   │           │   ├── AttachmentRoutes.scala
-> │       │   │           │   ├── Authenticate.scala
-> │       │   │           │   ├── BookmarkRoutes.scala
-> │       │   │           │   ├── CalEventCheckRoutes.scala
-> │       │   │           │   ├── CheckFileRoutes.scala
-> │       │   │           │   ├── ClientSettingsRoutes.scala
-> │       │   │           │   ├── CollectiveRoutes.scala
-> │       │   │           │   ├── CustomFieldRoutes.scala
-> │       │   │           │   ├── DownloadAllRoutes.scala
-> │       │   │           │   ├── EquipmentRoutes.scala
-> │       │   │           │   ├── FileRepositoryRoutes.scala
-> │       │   │           │   ├── FolderRoutes.scala
-> │       │   │           │   ├── FullTextIndexRoutes.scala
-> │       │   │           │   ├── InfoRoutes.scala
-> │       │   │           │   ├── IntegrationEndpointRoutes.scala
-> │       │   │           │   ├── ItemLinkRoutes.scala
-> │       │   │           │   ├── ItemMultiRoutes.scala
-> │       │   │           │   ├── ItemRoutes.scala
-> │       │   │           │   ├── ItemSearchPart.scala
-> │       │   │           │   ├── JobQueueRoutes.scala
-> │       │   │           │   ├── LoginRoutes.scala
-> │       │   │           │   ├── MailSendRoutes.scala
-> │       │   │           │   ├── MailSettingsRoutes.scala
-> │       │   │           │   ├── NotificationRoutes.scala
-> │       │   │           │   ├── NotifyDueItemsRoutes.scala
-> │       │   │           │   ├── OrganizationRoutes.scala
-> │       │   │           │   ├── PeriodicQueryRoutes.scala
-> │       │   │           │   ├── PersonRoutes.scala
-> │       │   │           │   ├── RegisterRoutes.scala
-> │       │   │           │   ├── ScanMailboxRoutes.scala
-> │       │   │           │   ├── SentMailRoutes.scala
-> │       │   │           │   ├── ShareAttachmentRoutes.scala
-> │       │   │           │   ├── ShareAuth.scala
-> │       │   │           │   ├── ShareItemRoutes.scala
-> │       │   │           │   ├── ShareRoutes.scala
-> │       │   │           │   ├── ShareSearchRoutes.scala
-> │       │   │           │   ├── SourceRoutes.scala
-> │       │   │           │   ├── TagRoutes.scala
-> │       │   │           │   ├── TotpRoutes.scala
-> │       │   │           │   ├── UploadRoutes.scala
-> │       │   │           │   └── UserRoutes.scala
-> │       │   │           ├── webapp
-> │       │   │           │   ├── Flags.scala
-> │       │   │           │   ├── TemplateRoutes.scala
-> │       │   │           │   ├── Templates.scala
-> │       │   │           │   └── WebjarRoutes.scala
-> │       │   │           ├── ws
-> │       │   │           │   ├── Background.scala
-> │       │   │           │   ├── InputMessage.scala
-> │       │   │           │   ├── OutputEvent.scala
-> │       │   │           │   ├── OutputEventEncoder.scala
-> │       │   │           │   └── WebSocketRoutes.scala
-> │       │   │           ├── Config.scala
-> │       │   │           ├── ConfigFile.scala
-> │       │   │           ├── Main.scala
-> │       │   │           ├── RestApp.scala
-> │       │   │           ├── RestAppImpl.scala
-> │       │   │           ├── RestServer.scala
-> │       │   │           └── Subscriptions.scala
-> │       │   └── templates
-> │       │       ├── doc.html
-> │       │       ├── index.html
-> │       │       └── sw.js
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── restserver
-> │                       └── http4s
-> │                           └── ContentDispositionTest.scala
-> ├── scheduler
-> │   ├── api
-> │   │   └── src
-> │   │       ├── main
-> │   │       │   └── scala
-> │   │       │       └── docspell
-> │   │       │           └── scheduler
-> │   │       │               ├── msg
-> │   │       │               │   ├── CancelJob.scala
-> │   │       │               │   ├── JobDone.scala
-> │   │       │               │   ├── JobSubmitted.scala
-> │   │       │               │   ├── JobsNotify.scala
-> │   │       │               │   └── PeriodicTaskNotify.scala
-> │   │       │               ├── usertask
-> │   │       │               │   ├── UserTask.scala
-> │   │       │               │   ├── UserTaskScope.scala
-> │   │       │               │   └── UserTaskStore.scala
-> │   │       │               ├── Context.scala
-> │   │       │               ├── CountingScheme.scala
-> │   │       │               ├── FindJobOwner.scala
-> │   │       │               ├── Job.scala
-> │   │       │               ├── JobStore.scala
-> │   │       │               ├── JobStoreModule.scala
-> │   │       │               ├── JobTask.scala
-> │   │       │               ├── JobTaskRegistry.scala
-> │   │       │               ├── JobTaskResult.scala
-> │   │       │               ├── JobTaskResultEncoder.scala
-> │   │       │               ├── PeriodicScheduler.scala
-> │   │       │               ├── PeriodicSchedulerConfig.scala
-> │   │       │               ├── PermanentError.scala
-> │   │       │               ├── Scheduler.scala
-> │   │       │               ├── SchedulerConfig.scala
-> │   │       │               ├── SchedulerModule.scala
-> │   │       │               └── Task.scala
-> │   │       └── test
-> │   │           └── scala
-> │   │               └── docspell
-> │   │                   └── scheduler
-> │   │                       └── CountingSchemeSpec.scala
-> │   └── impl
-> │       └── src
-> │           ├── main
-> │           │   └── scala
-> │           │       └── docspell
-> │           │           └── scheduler
-> │           │               └── impl
-> │           │                   ├── ContextImpl.scala
-> │           │                   ├── JobQueue.scala
-> │           │                   ├── JobStoreImpl.scala
-> │           │                   ├── JobStoreModuleBuilder.scala
-> │           │                   ├── JobStorePublish.scala
-> │           │                   ├── LogEvent.scala
-> │           │                   ├── LogSink.scala
-> │           │                   ├── Marked.scala
-> │           │                   ├── PeriodicSchedulerBuilder.scala
-> │           │                   ├── PeriodicSchedulerImpl.scala
-> │           │                   ├── PeriodicTaskStore.scala
-> │           │                   ├── QJob.scala
-> │           │                   ├── QUserTask.scala
-> │           │                   ├── QueueLogger.scala
-> │           │                   ├── SchedulerBuilder.scala
-> │           │                   ├── SchedulerImpl.scala
-> │           │                   ├── SchedulerModuleBuilder.scala
-> │           │                   └── UserTaskStoreImpl.scala
-> │           └── test
-> │               └── scala
-> │                   └── docspell
-> │                       └── scheduler
-> │                           └── impl
-> │                               └── QJobTest.scala
-> ├── store
-> │   └── src
-> │       ├── main
-> │       │   ├── resources
-> │       │   │   └── db
-> │       │   │       ├── fixups
-> │       │   │       │   ├── h2
-> │       │   │       │   │   └── V1.33.0__fix_reorganize_files.sql
-> │       │   │       │   ├── mariadb
-> │       │   │       │   │   └── V1.33.0__fix_reorganize_files.sql
-> │       │   │       │   └── postgresql
-> │       │   │       │       └── V1.33.0__fix_reorganize_files.sql
-> │       │   │       └── migration
-> │       │   │           ├── h2
-> │       │   │           │   ├── V1.0.0__initial_database.sql
-> │       │   │           │   ├── V1.1.0__useremail.sql
-> │       │   │           │   ├── V1.10.0__attachment_preview.sql
-> │       │   │           │   ├── V1.11.0__pdf_pages.sql
-> │       │   │           │   ├── V1.12.0__upload_data.sql
-> │       │   │           │   ├── V1.13.0__custom_fields.sql
-> │       │   │           │   ├── V1.14.0__person_org.sql
-> │       │   │           │   ├── V1.15.0__rememberme.sql
-> │       │   │           │   ├── V1.16.0__add_imap_oauth.sql
-> │       │   │           │   ├── V1.17.0__meta_language.sql
-> │       │   │           │   ├── V1.18.0__classifier_model.sql
-> │       │   │           │   ├── V1.19.0__add_classify_meta.sql
-> │       │   │           │   ├── V1.19.1__remove_enabled.sql
-> │       │   │           │   ├── V1.2.0__origin_source.sql
-> │       │   │           │   ├── V1.20.0__personuse.sql
-> │       │   │           │   ├── V1.20.1__equipment_description.sql
-> │       │   │           │   ├── V1.20.2__org_shortname.sql
-> │       │   │           │   ├── V1.20.3__node_seen.sql
-> │       │   │           │   ├── V1.20.4__source_lang.sql
-> │       │   │           │   ├── V1.21.0__cast_function.sql
-> │       │   │           │   ├── V1.21.1__equip_org_use.sql
-> │       │   │           │   ├── V1.22.0__add_task_name.sql
-> │       │   │           │   ├── V1.23.0__clientsettings.sql
-> │       │   │           │   ├── V1.24.0__drop_fts_migration.sql
-> │       │   │           │   ├── V1.25.0__add_empty_trash.sql
-> │       │   │           │   ├── V1.25.1__fix_periodic_submitter_value.sql
-> │       │   │           │   ├── V1.25.2__add_trash_min_age.sql
-> │       │   │           │   ├── V1.25.3__delete_corrupt_trash_task.sql
-> │       │   │           │   ├── V1.25.4__add_source_attachonly.sql
-> │       │   │           │   ├── V1.26.0__missing_indexes.sql
-> │       │   │           │   ├── V1.26.1__totp.sql
-> │       │   │           │   ├── V1.26.2__openid.sql
-> │       │   │           │   ├── V1.26.3__filestore.sql
-> │       │   │           │   ├── V1.27.0__collective_passwords.sql
-> │       │   │           │   ├── V1.27.1__item_share.sql
-> │       │   │           │   ├── V1.28.0__pubsub.sql
-> │       │   │           │   ├── V1.28.1__intern_settings.sql
-> │       │   │           │   ├── V1.29.0__reset_classifier_file.sql
-> │       │   │           │   ├── V1.29.1__notification.sql
-> │       │   │           │   ├── V1.3.0__periodic_job.sql
-> │       │   │           │   ├── V1.30.0__clientsettings_collective.sql
-> │       │   │           │   ├── V1.31.0__query_bookmark.sql
-> │       │   │           │   ├── V1.31.1__gotify_prio.sql
-> │       │   │           │   ├── V1.32.0__notification_channel_name.sql
-> │       │   │           │   ├── V1.32.1__notification_hook_multi_channel.sql
-> │       │   │           │   ├── V1.33.0__reorganize_file_ids.sql
-> │       │   │           │   ├── V1.34.0__item_relation.sql
-> │       │   │           │   ├── V1.35.0__download_query.sql
-> │       │   │           │   ├── V1.35.1__password_length.sql
-> │       │   │           │   ├── V1.36.0__addons.sql
-> │       │   │           │   ├── V1.38.0__more_indexes.sql
-> │       │   │           │   ├── V1.38.1__remove_unused_column.sql
-> │       │   │           │   ├── V1.38.2__rememberme.sql
-> │       │   │           │   ├── V1.39.0__collective_id.sql
-> │       │   │           │   ├── V1.39.1__file_meta_migration.sql
-> │       │   │           │   ├── V1.39.3__rename_value.sql
-> │       │   │           │   ├── V1.4.0__attachment_archive.sql
-> │       │   │           │   ├── V1.5.0__userimap.sql
-> │       │   │           │   ├── V1.6.0__integration_enabled.sql
-> │       │   │           │   ├── V1.7.0__fts-migration.sql
-> │       │   │           │   ├── V1.8.0__folders.sql
-> │       │   │           │   ├── V1.9.0__updated_column.sql
-> │       │   │           │   ├── V1.9.1__classifier.sql
-> │       │   │           │   ├── V1.9.3__joblog_counter.sql
-> │       │   │           │   └── V1.9.4__unique_equipments.sql
-> │       │   │           ├── mariadb
-> │       │   │           │   ├── V1.0.0__initial_database.sql
-> │       │   │           │   ├── V1.1.0__useremail.sql
-> │       │   │           │   ├── V1.10.0__attachment_preview.sql
-> │       │   │           │   ├── V1.11.0__pdf_pages.sql
-> │       │   │           │   ├── V1.12.0__upload_data.sql
-> │       │   │           │   ├── V1.13.0__custom_fields.sql
-> │       │   │           │   ├── V1.14.0__person_org.sql
-> │       │   │           │   ├── V1.15.0__rememberme.sql
-> │       │   │           │   ├── V1.16.0__add_imap_oauth.sql
-> │       │   │           │   ├── V1.17.0__meta_language.sql
-> │       │   │           │   ├── V1.18.0__classifier_model.sql
-> │       │   │           │   ├── V1.19.0__add_classify_meta.sql
-> │       │   │           │   ├── V1.19.1__remove_enabled.sql
-> │       │   │           │   ├── V1.2.0__origin_source.sql
-> │       │   │           │   ├── V1.20.0__personuse.sql
-> │       │   │           │   ├── V1.20.1__equipment_description.sql
-> │       │   │           │   ├── V1.20.2__org_shortname.sql
-> │       │   │           │   ├── V1.20.3__node_seen.sql
-> │       │   │           │   ├── V1.20.4__source_lang.sql
-> │       │   │           │   ├── V1.21.0__cast_function.sql
-> │       │   │           │   ├── V1.21.1__equip_org_use.sql
-> │       │   │           │   ├── V1.22.0__add_task_name.sql
-> │       │   │           │   ├── V1.23.0__clientsettings.sql
-> │       │   │           │   ├── V1.24.0__drop_fts_migration.sql
-> │       │   │           │   ├── V1.25.0__add_empty_trash.sql
-> │       │   │           │   ├── V1.25.1__fix_periodic_submitter_value.sql
-> │       │   │           │   ├── V1.25.2__add_trash_min_age.sql
-> │       │   │           │   ├── V1.25.3__delete_corrupt_trash_task.sql
-> │       │   │           │   ├── V1.25.4__add_source_attachonly.sql
-> │       │   │           │   ├── V1.26.0__missing_indexes.sql
-> │       │   │           │   ├── V1.26.1__totp.sql
-> │       │   │           │   ├── V1.26.2__openid.sql
-> │       │   │           │   ├── V1.26.3__filestore.sql
-> │       │   │           │   ├── V1.27.0__collective_passwords.sql
-> │       │   │           │   ├── V1.27.1__item_share.sql
-> │       │   │           │   ├── V1.28.0__pubsub.sql
-> │       │   │           │   ├── V1.28.1__intern_settings.sql
-> │       │   │           │   ├── V1.29.0__reset_classifier_file.sql
-> │       │   │           │   ├── V1.29.1__notification.sql
-> │       │   │           │   ├── V1.3.0__periodic_job.sql
-> │       │   │           │   ├── V1.30.0__clientsettings_collective.sql
-> │       │   │           │   ├── V1.31.0__query_bookmark.sql
-> │       │   │           │   ├── V1.31.1__gotify_prio.sql
-> │       │   │           │   ├── V1.32.0__notification_channel_name.sql
-> │       │   │           │   ├── V1.32.1__notification_hook_multi_channel.sql
-> │       │   │           │   ├── V1.33.0__reorganize_file_ids.sql
-> │       │   │           │   ├── V1.34.0__item_relation.sql
-> │       │   │           │   ├── V1.35.0__download_query.sql
-> │       │   │           │   ├── V1.35.1__password_length.sql
-> │       │   │           │   ├── V1.36.0__addons.sql
-> │       │   │           │   ├── V1.38.0__more_indexes.sql
-> │       │   │           │   ├── V1.38.1__remove_unused_column.sql
-> │       │   │           │   ├── V1.38.2__rememberme.sql
-> │       │   │           │   ├── V1.39.0__collective_id.sql
-> │       │   │           │   ├── V1.39.1__file_meta_migration.sql
-> │       │   │           │   ├── V1.39.3__rename_value.sql
-> │       │   │           │   ├── V1.4.0__attachment_archive.sql
-> │       │   │           │   ├── V1.5.0__userimap.sql
-> │       │   │           │   ├── V1.6.0__integration_enabled.sql
-> │       │   │           │   ├── V1.6.1__fix_timestamp_columns.sql
-> │       │   │           │   ├── V1.7.0__fts-migration.sql
-> │       │   │           │   ├── V1.7.1__fix_item_date.sql
-> │       │   │           │   ├── V1.8.0__folders.sql
-> │       │   │           │   ├── V1.9.0__updated_column.sql
-> │       │   │           │   ├── V1.9.1__classifier.sql
-> │       │   │           │   ├── V1.9.2__fix_text_length.sql
-> │       │   │           │   ├── V1.9.3__joblog_counter.sql
-> │       │   │           │   └── V1.9.4__unique_equipments.sql
-> │       │   │           └── postgresql
-> │       │   │               ├── V1.0.0__initial_database.sql
-> │       │   │               ├── V1.1.0__useremail.sql
-> │       │   │               ├── V1.10.0__attachment_preview.sql
-> │       │   │               ├── V1.11.0__pdf_pages.sql
-> │       │   │               ├── V1.12.0__upload_data.sql
-> │       │   │               ├── V1.13.0__custom_fields.sql
-> │       │   │               ├── V1.14.0__person_org.sql
-> │       │   │               ├── V1.15.0__rememberme.sql
-> │       │   │               ├── V1.16.0__add_imap_oauth.sql
-> │       │   │               ├── V1.17.0__meta_language.sql
-> │       │   │               ├── V1.18.0__classifier_model.sql
-> │       │   │               ├── V1.19.0__add_classify_meta.sql
-> │       │   │               ├── V1.19.1__remove_enabled.sql
-> │       │   │               ├── V1.2.0__origin_source.sql
-> │       │   │               ├── V1.20.0__personuse.sql
-> │       │   │               ├── V1.20.1__equipment_description.sql
-> │       │   │               ├── V1.20.2__org_shortname.sql
-> │       │   │               ├── V1.20.3__node_seen.sql
-> │       │   │               ├── V1.20.4__source_lang.sql
-> │       │   │               ├── V1.21.0__cast_function.sql
-> │       │   │               ├── V1.21.1__equip_org_use.sql
-> │       │   │               ├── V1.22.0__add_task_name.sql
-> │       │   │               ├── V1.23.0__clientsettings.sql
-> │       │   │               ├── V1.24.0__drop_fts_migration.sql
-> │       │   │               ├── V1.25.0__add_empty_trash.sql
-> │       │   │               ├── V1.25.1__fix_periodic_submitter_value.sql
-> │       │   │               ├── V1.25.2__add_trash_min_age.sql
-> │       │   │               ├── V1.25.3__delete_corrupt_trash_task.sql
-> │       │   │               ├── V1.25.4__add_source_attachonly.sql
-> │       │   │               ├── V1.26.0__missing_indexes.sql
-> │       │   │               ├── V1.26.1__totp.sql
-> │       │   │               ├── V1.26.2__openid.sql
-> │       │   │               ├── V1.26.3__filestore.sql
-> │       │   │               ├── V1.27.0__collective_passwords.sql
-> │       │   │               ├── V1.27.1__item_share.sql
-> │       │   │               ├── V1.28.0__pubsub.sql
-> │       │   │               ├── V1.28.1__intern_settings.sql
-> │       │   │               ├── V1.29.0__reset_classifier_file.sql
-> │       │   │               ├── V1.29.1__notification.sql
-> │       │   │               ├── V1.3.0__periodic_job.sql
-> │       │   │               ├── V1.30.0__clientsettings_collective.sql
-> │       │   │               ├── V1.31.0__query_bookmark.sql
-> │       │   │               ├── V1.31.1__gotify_prio.sql
-> │       │   │               ├── V1.32.0__notification_channel_name.sql
-> │       │   │               ├── V1.32.1__notification_hook_multi_channel.sql
-> │       │   │               ├── V1.33.0__reorganize_file_ids.sql
-> │       │   │               ├── V1.34.0__item_relation.sql
-> │       │   │               ├── V1.35.0__download_query.sql
-> │       │   │               ├── V1.35.1__password_length.sql
-> │       │   │               ├── V1.36.0__addons.sql
-> │       │   │               ├── V1.38.0__more_indexes.sql
-> │       │   │               ├── V1.38.1__remove_unused_column.sql
-> │       │   │               ├── V1.38.2__rememberme.sql
-> │       │   │               ├── V1.39.0__collective_id.sql
-> │       │   │               ├── V1.39.1__file_meta_migration.sql
-> │       │   │               ├── V1.39.3__rename_value.sql
-> │       │   │               ├── V1.4.0__attachment_archive.sql
-> │       │   │               ├── V1.5.0__userimap.sql
-> │       │   │               ├── V1.6.0__integration_enabled.sql
-> │       │   │               ├── V1.7.0__fts-migration.sql
-> │       │   │               ├── V1.8.0__folders.sql
-> │       │   │               ├── V1.9.0__updated_column.sql
-> │       │   │               ├── V1.9.1__classifier.sql
-> │       │   │               ├── V1.9.3__joblog_counter.sql
-> │       │   │               └── V1.9.4__unique_equipments.sql
-> │       │   └── scala
-> │       │       ├── db
-> │       │       │   └── migration
-> │       │       │       ├── common
-> │       │       │       │   ├── JsonCodecs.scala
-> │       │       │       │   ├── MigrateCollectiveIdTaskArgs.scala
-> │       │       │       │   ├── MigrateDueItemTasks.scala
-> │       │       │       │   ├── MigrateNotifyTasks.scala
-> │       │       │       │   └── TransactorSupport.scala
-> │       │       │       ├── data
-> │       │       │       │   ├── AllPreviewsArgs.scala
-> │       │       │       │   ├── ConvertAllPdfArgs.scala
-> │       │       │       │   ├── DownloadZipArgs.scala
-> │       │       │       │   ├── EmptyTrashArgs.scala
-> │       │       │       │   ├── FileIntegrityCheckArgs.scala
-> │       │       │       │   ├── ItemAddonTaskArgs.scala
-> │       │       │       │   ├── LearnClassifierArgs.scala
-> │       │       │       │   ├── NotifyDueItemsArgs.scala
-> │       │       │       │   ├── PeriodicDueItemsArgs.scala
-> │       │       │       │   ├── PeriodicDueItemsArgsOld.scala
-> │       │       │       │   ├── PeriodicQueryArgs.scala
-> │       │       │       │   ├── PeriodicQueryArgsOld.scala
-> │       │       │       │   ├── ProcessItemArgs.scala
-> │       │       │       │   ├── ReIndexTaskArgs.scala
-> │       │       │       │   ├── ScanMailboxArgs.scala
-> │       │       │       │   ├── ScheduledAddonTaskArgs.scala
-> │       │       │       │   └── package.scala
-> │       │       │       ├── h2
-> │       │       │       │   ├── V1_29_2__MigrateNotifyTask.scala
-> │       │       │       │   ├── V1_32_2__MigrateChannels.scala
-> │       │       │       │   └── V1_39_2__MigrateTasks.scala
-> │       │       │       ├── mariadb
-> │       │       │       │   ├── V1_29_2__MigrateNotifyTask.scala
-> │       │       │       │   ├── V1_32_2__MigrateChannels.scala
-> │       │       │       │   └── V1_39_2__MigrateTasks.scala
-> │       │       │       └── postgresql
-> │       │       │           ├── V1_29_2__MigrateNotifyTask.scala
-> │       │       │           ├── V1_32_2__MigrateChannels.scala
-> │       │       │           └── V1_39_2__MigrateTasks.scala
-> │       │       └── docspell
-> │       │           └── store
-> │       │               ├── file
-> │       │               │   ├── AttributeStore.scala
-> │       │               │   ├── BinnyUtils.scala
-> │       │               │   ├── FileMetadata.scala
-> │       │               │   ├── FileRepository.scala
-> │       │               │   ├── FileRepositoryConfig.scala
-> │       │               │   ├── FileRepositoryImpl.scala
-> │       │               │   └── FileUrlReader.scala
-> │       │               ├── fts
-> │       │               │   ├── ContextEntry.scala
-> │       │               │   ├── RFtsResult.scala
-> │       │               │   └── TempFtsOps.scala
-> │       │               ├── impl
-> │       │               │   ├── h2
-> │       │               │   │   └── CastNumericFun.scala
-> │       │               │   ├── DoobieLogging.scala
-> │       │               │   ├── DoobieMeta.scala
-> │       │               │   └── StoreImpl.scala
-> │       │               ├── migrate
-> │       │               │   └── FlywayMigrate.scala
-> │       │               ├── qb
-> │       │               │   ├── generator
-> │       │               │   │   ├── ItemQueryGenerator.scala
-> │       │               │   │   └── Tables.scala
-> │       │               │   ├── impl
-> │       │               │   │   ├── CommonBuilder.scala
-> │       │               │   │   ├── ConditionBuilder.scala
-> │       │               │   │   ├── DBFunctionBuilder.scala
-> │       │               │   │   ├── FromExprBuilder.scala
-> │       │               │   │   ├── SelectBuilder.scala
-> │       │               │   │   └── SelectExprBuilder.scala
-> │       │               │   ├── Batch.scala
-> │       │               │   ├── Column.scala
-> │       │               │   ├── Condition.scala
-> │       │               │   ├── CteBind.scala
-> │       │               │   ├── DBFunction.scala
-> │       │               │   ├── DML.scala
-> │       │               │   ├── DSL.scala
-> │       │               │   ├── FromExpr.scala
-> │       │               │   ├── GroupBy.scala
-> │       │               │   ├── Operator.scala
-> │       │               │   ├── OrderBy.scala
-> │       │               │   ├── Select.scala
-> │       │               │   ├── SelectExpr.scala
-> │       │               │   ├── Setter.scala
-> │       │               │   └── TableDef.scala
-> │       │               ├── queries
-> │       │               │   ├── AttachedFile.scala
-> │       │               │   ├── AttachmentLight.scala
-> │       │               │   ├── CategoryCount.scala
-> │       │               │   ├── ChannelMap.scala
-> │       │               │   ├── CustomValue.scala
-> │       │               │   ├── FieldStats.scala
-> │       │               │   ├── FolderCount.scala
-> │       │               │   ├── FtsSupport.scala
-> │       │               │   ├── IdRefCount.scala
-> │       │               │   ├── ItemData.scala
-> │       │               │   ├── ItemFieldValue.scala
-> │       │               │   ├── ItemFileMeta.scala
-> │       │               │   ├── ListItem.scala
-> │       │               │   ├── ListItemWithTags.scala
-> │       │               │   ├── QAttachment.scala
-> │       │               │   ├── QCollective.scala
-> │       │               │   ├── QCustomField.scala
-> │       │               │   ├── QFolder.scala
-> │       │               │   ├── QItem.scala
-> │       │               │   ├── QJobQueue.scala
-> │       │               │   ├── QLogin.scala
-> │       │               │   ├── QMails.scala
-> │       │               │   ├── QMoveAttachment.scala
-> │       │               │   ├── QNotification.scala
-> │       │               │   ├── QOrganization.scala
-> │       │               │   ├── QPeriodicTask.scala
-> │       │               │   ├── QUser.scala
-> │       │               │   ├── Query.scala
-> │       │               │   ├── QueryWildcard.scala
-> │       │               │   ├── SearchSummary.scala
-> │       │               │   ├── SelectedItem.scala
-> │       │               │   ├── TagCount.scala
-> │       │               │   └── TextAndTag.scala
-> │       │               ├── records
-> │       │               │   ├── AddonRunConfigData.scala
-> │       │               │   ├── AddonRunConfigResolved.scala
-> │       │               │   ├── RAddonArchive.scala
-> │       │               │   ├── RAddonRunConfig.scala
-> │       │               │   ├── RAddonRunConfigAddon.scala
-> │       │               │   ├── RAddonRunConfigTrigger.scala
-> │       │               │   ├── RAttachment.scala
-> │       │               │   ├── RAttachmentArchive.scala
-> │       │               │   ├── RAttachmentMeta.scala
-> │       │               │   ├── RAttachmentPreview.scala
-> │       │               │   ├── RAttachmentSource.scala
-> │       │               │   ├── RClassifierModel.scala
-> │       │               │   ├── RClassifierSetting.scala
-> │       │               │   ├── RClientSettingsCollective.scala
-> │       │               │   ├── RClientSettingsUser.scala
-> │       │               │   ├── RCollective.scala
-> │       │               │   ├── RCollectivePassword.scala
-> │       │               │   ├── RContact.scala
-> │       │               │   ├── RCustomField.scala
-> │       │               │   ├── RCustomFieldValue.scala
-> │       │               │   ├── RDownloadQuery.scala
-> │       │               │   ├── REmptyTrashSetting.scala
-> │       │               │   ├── REquipment.scala
-> │       │               │   ├── RFileMeta.scala
-> │       │               │   ├── RFolder.scala
-> │       │               │   ├── RFolderMember.scala
-> │       │               │   ├── RInternalSetting.scala
-> │       │               │   ├── RInvitation.scala
-> │       │               │   ├── RItem.scala
-> │       │               │   ├── RItemLink.scala
-> │       │               │   ├── RItemProposal.scala
-> │       │               │   ├── RJob.scala
-> │       │               │   ├── RJobGroupUse.scala
-> │       │               │   ├── RJobLog.scala
-> │       │               │   ├── RNode.scala
-> │       │               │   ├── RNotificationChannel.scala
-> │       │               │   ├── RNotificationChannelGotify.scala
-> │       │               │   ├── RNotificationChannelHttp.scala
-> │       │               │   ├── RNotificationChannelMail.scala
-> │       │               │   ├── RNotificationChannelMatrix.scala
-> │       │               │   ├── RNotificationHook.scala
-> │       │               │   ├── RNotificationHookChannel.scala
-> │       │               │   ├── RNotificationHookEvent.scala
-> │       │               │   ├── ROrganization.scala
-> │       │               │   ├── RPeriodicTask.scala
-> │       │               │   ├── RPerson.scala
-> │       │               │   ├── RPubSub.scala
-> │       │               │   ├── RQueryBookmark.scala
-> │       │               │   ├── RRememberMe.scala
-> │       │               │   ├── RSentMail.scala
-> │       │               │   ├── RSentMailItem.scala
-> │       │               │   ├── RShare.scala
-> │       │               │   ├── RSource.scala
-> │       │               │   ├── RTag.scala
-> │       │               │   ├── RTagItem.scala
-> │       │               │   ├── RTagSource.scala
-> │       │               │   ├── RTotp.scala
-> │       │               │   ├── RUser.scala
-> │       │               │   ├── RUserEmail.scala
-> │       │               │   ├── RUserImap.scala
-> │       │               │   ├── SourceData.scala
-> │       │               │   └── TagItemName.scala
-> │       │               ├── syntax
-> │       │               │   └── MimeTypes.scala
-> │       │               ├── AddResult.scala
-> │       │               ├── Db.scala
-> │       │               ├── JdbcConfig.scala
-> │       │               ├── SchemaMigrateConfig.scala
-> │       │               ├── Store.scala
-> │       │               └── UpdateResult.scala
-> │       └── test
-> │           ├── resources
-> │           │   └── docspell-0.24.0-dump-h2-1.24.0-2021-07-13-2307.sql
-> │           └── scala
-> │               └── docspell
-> │                   └── store
-> │                       ├── fts
-> │                       │   └── TempFtsOpsTest.scala
-> │                       ├── generator
-> │                       │   └── ItemQueryGeneratorTest.scala
-> │                       ├── migrate
-> │                       │   └── MigrateTest.scala
-> │                       ├── qb
-> │                       │   ├── impl
-> │                       │   │   ├── ConditionBuilderTest.scala
-> │                       │   │   ├── DSLTest.scala
-> │                       │   │   └── SelectBuilderTest.scala
-> │                       │   ├── model
-> │                       │   │   ├── CourseRecord.scala
-> │                       │   │   └── PersonRecord.scala
-> │                       │   └── QueryBuilderTest.scala
-> │                       ├── queries
-> │                       │   └── QueryWildcardTest.scala
-> │                       ├── DatabaseTest.scala
-> │                       ├── Docker.scala
-> │                       └── StoreFixture.scala
-> ├── totp
-> │   └── src
-> │       ├── main
-> │       │   └── scala
-> │       │       └── docspell
-> │       │           └── totp
-> │       │               ├── Key.scala
-> │       │               ├── Mac.scala
-> │       │               ├── OnetimePassword.scala
-> │       │               ├── PassLength.scala
-> │       │               ├── Settings.scala
-> │       │               └── Totp.scala
-> │       └── test
-> │           └── scala
-> │               └── docspell
-> │                   └── totp
-> │                       ├── KeyTest.scala
-> │                       └── TotpTest.scala
-> └── webapp
->     ├── src
->     │   └── main
->     │       ├── elm
->     │       │   ├── App
->     │       │   │   ├── Data.elm
->     │       │   │   ├── Update.elm
->     │       │   │   └── View2.elm
->     │       │   ├── Comp
->     │       │   │   ├── ItemDetail
->     │       │   │   │   ├── AddFilesForm.elm
->     │       │   │   │   ├── ConfirmModalView.elm
->     │       │   │   │   ├── EditForm.elm
->     │       │   │   │   ├── FieldTabState.elm
->     │       │   │   │   ├── FormChange.elm
->     │       │   │   │   ├── ItemInfoHeader.elm
->     │       │   │   │   ├── Model.elm
->     │       │   │   │   ├── MultiEditMenu.elm
->     │       │   │   │   ├── Notes.elm
->     │       │   │   │   ├── RunAddonForm.elm
->     │       │   │   │   ├── ShowQrCode.elm
->     │       │   │   │   ├── SingleAttachment.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── AddonArchiveForm.elm
->     │       │   │   ├── AddonArchiveManage.elm
->     │       │   │   ├── AddonArchiveTable.elm
->     │       │   │   ├── AddonRunConfigForm.elm
->     │       │   │   ├── AddonRunConfigManage.elm
->     │       │   │   ├── AddonRunConfigTable.elm
->     │       │   │   ├── AddressForm.elm
->     │       │   │   ├── AttachmentMeta.elm
->     │       │   │   ├── Basic.elm
->     │       │   │   ├── BasicSizeField.elm
->     │       │   │   ├── BookmarkChooser.elm
->     │       │   │   ├── BookmarkDropdown.elm
->     │       │   │   ├── BookmarkManage.elm
->     │       │   │   ├── BookmarkQueryForm.elm
->     │       │   │   ├── BookmarkQueryManage.elm
->     │       │   │   ├── BookmarkTable.elm
->     │       │   │   ├── BoxEdit.elm
->     │       │   │   ├── BoxMessageEdit.elm
->     │       │   │   ├── BoxQueryEdit.elm
->     │       │   │   ├── BoxQueryView.elm
->     │       │   │   ├── BoxSearchQueryInput.elm
->     │       │   │   ├── BoxStatsEdit.elm
->     │       │   │   ├── BoxStatsView.elm
->     │       │   │   ├── BoxUploadEdit.elm
->     │       │   │   ├── BoxUploadView.elm
->     │       │   │   ├── BoxView.elm
->     │       │   │   ├── CalEventInput.elm
->     │       │   │   ├── ChangePasswordForm.elm
->     │       │   │   ├── ChannelForm.elm
->     │       │   │   ├── ChannelMenu.elm
->     │       │   │   ├── ChannelRefInput.elm
->     │       │   │   ├── ClassifierSettingsForm.elm
->     │       │   │   ├── CollectiveSettingsForm.elm
->     │       │   │   ├── ColorTagger.elm
->     │       │   │   ├── ConfirmModal.elm
->     │       │   │   ├── ContactField.elm
->     │       │   │   ├── CustomFieldForm.elm
->     │       │   │   ├── CustomFieldInput.elm
->     │       │   │   ├── CustomFieldManage.elm
->     │       │   │   ├── CustomFieldMultiInput.elm
->     │       │   │   ├── CustomFieldTable.elm
->     │       │   │   ├── DashboardEdit.elm
->     │       │   │   ├── DashboardManage.elm
->     │       │   │   ├── DashboardView.elm
->     │       │   │   ├── DatePicker.elm
->     │       │   │   ├── DetailEdit.elm
->     │       │   │   ├── DownloadAll.elm
->     │       │   │   ├── Dropdown.elm
->     │       │   │   ├── Dropzone.elm
->     │       │   │   ├── DueItemsTaskForm.elm
->     │       │   │   ├── DueItemsTaskList.elm
->     │       │   │   ├── DueItemsTaskManage.elm
->     │       │   │   ├── EmailInput.elm
->     │       │   │   ├── EmailSettingsForm.elm
->     │       │   │   ├── EmailSettingsManage.elm
->     │       │   │   ├── EmailSettingsTable.elm
->     │       │   │   ├── EmptyTrashForm.elm
->     │       │   │   ├── EquipmentForm.elm
->     │       │   │   ├── EquipmentManage.elm
->     │       │   │   ├── EquipmentTable.elm
->     │       │   │   ├── EventSample.elm
->     │       │   │   ├── ExpandCollapse.elm
->     │       │   │   ├── FieldListSelect.elm
->     │       │   │   ├── FixedDropdown.elm
->     │       │   │   ├── FolderDetail.elm
->     │       │   │   ├── FolderManage.elm
->     │       │   │   ├── FolderSelect.elm
->     │       │   │   ├── FolderTable.elm
->     │       │   │   ├── ImapSettingsForm.elm
->     │       │   │   ├── ImapSettingsManage.elm
->     │       │   │   ├── ImapSettingsTable.elm
->     │       │   │   ├── IntField.elm
->     │       │   │   ├── ItemCard.elm
->     │       │   │   ├── ItemCardList.elm
->     │       │   │   ├── ItemColumnDropdown.elm
->     │       │   │   ├── ItemColumnView.elm
->     │       │   │   ├── ItemDetail.elm
->     │       │   │   ├── ItemLinkForm.elm
->     │       │   │   ├── ItemMail.elm
->     │       │   │   ├── ItemMerge.elm
->     │       │   │   ├── ItemSearchInput.elm
->     │       │   │   ├── KeyInput.elm
->     │       │   │   ├── LinkTarget.elm
->     │       │   │   ├── MarkdownInput.elm
->     │       │   │   ├── MenuBar.elm
->     │       │   │   ├── NotificationChannelManage.elm
->     │       │   │   ├── NotificationChannelTable.elm
->     │       │   │   ├── NotificationGotifyForm.elm
->     │       │   │   ├── NotificationHookForm.elm
->     │       │   │   ├── NotificationHookManage.elm
->     │       │   │   ├── NotificationHookTable.elm
->     │       │   │   ├── NotificationHttpForm.elm
->     │       │   │   ├── NotificationMailForm.elm
->     │       │   │   ├── NotificationMatrixForm.elm
->     │       │   │   ├── NotificationTest.elm
->     │       │   │   ├── OrgForm.elm
->     │       │   │   ├── OrgManage.elm
->     │       │   │   ├── OrgTable.elm
->     │       │   │   ├── OtpSetup.elm
->     │       │   │   ├── PasswordInput.elm
->     │       │   │   ├── PeriodicQueryTaskForm.elm
->     │       │   │   ├── PeriodicQueryTaskList.elm
->     │       │   │   ├── PeriodicQueryTaskManage.elm
->     │       │   │   ├── PersonForm.elm
->     │       │   │   ├── PersonManage.elm
->     │       │   │   ├── PersonTable.elm
->     │       │   │   ├── PowerSearchInput.elm
->     │       │   │   ├── Progress.elm
->     │       │   │   ├── PublishItems.elm
->     │       │   │   ├── ScanMailboxForm.elm
->     │       │   │   ├── ScanMailboxList.elm
->     │       │   │   ├── ScanMailboxManage.elm
->     │       │   │   ├── SearchMenu.elm
->     │       │   │   ├── SearchStatsView.elm
->     │       │   │   ├── SentMails.elm
->     │       │   │   ├── ShareForm.elm
->     │       │   │   ├── ShareMail.elm
->     │       │   │   ├── ShareManage.elm
->     │       │   │   ├── SharePasswordForm.elm
->     │       │   │   ├── ShareTable.elm
->     │       │   │   ├── ShareView.elm
->     │       │   │   ├── SimpleTextInput.elm
->     │       │   │   ├── SourceForm.elm
->     │       │   │   ├── SourceManage.elm
->     │       │   │   ├── SourceTable.elm
->     │       │   │   ├── StringListInput.elm
->     │       │   │   ├── Tabs.elm
->     │       │   │   ├── TagDropdown.elm
->     │       │   │   ├── TagForm.elm
->     │       │   │   ├── TagManage.elm
->     │       │   │   ├── TagSelect.elm
->     │       │   │   ├── TagTable.elm
->     │       │   │   ├── UiSettingsForm.elm
->     │       │   │   ├── UiSettingsManage.elm
->     │       │   │   ├── UiSettingsMigrate.elm
->     │       │   │   ├── UploadForm.elm
->     │       │   │   ├── UrlCopy.elm
->     │       │   │   ├── UserForm.elm
->     │       │   │   ├── UserManage.elm
->     │       │   │   ├── UserTable.elm
->     │       │   │   └── YesNoDimmer.elm
->     │       │   ├── Data
->     │       │   │   ├── AccountScope.elm
->     │       │   │   ├── AddonTrigger.elm
->     │       │   │   ├── AppEvent.elm
->     │       │   │   ├── BasicSize.elm
->     │       │   │   ├── Bookmarks.elm
->     │       │   │   ├── Box.elm
->     │       │   │   ├── BoxContent.elm
->     │       │   │   ├── CalEvent.elm
->     │       │   │   ├── ChannelRef.elm
->     │       │   │   ├── ChannelType.elm
->     │       │   │   ├── Color.elm
->     │       │   │   ├── ContactType.elm
->     │       │   │   ├── CustomFieldChange.elm
->     │       │   │   ├── CustomFieldOrder.elm
->     │       │   │   ├── CustomFieldType.elm
->     │       │   │   ├── Dashboard.elm
->     │       │   │   ├── Dashboards.elm
->     │       │   │   ├── Direction.elm
->     │       │   │   ├── DownloadAllState.elm
->     │       │   │   ├── DownloadFileType.elm
->     │       │   │   ├── DropdownStyle.elm
->     │       │   │   ├── Environment.elm
->     │       │   │   ├── EquipmentOrder.elm
->     │       │   │   ├── EquipmentUse.elm
->     │       │   │   ├── EventType.elm
->     │       │   │   ├── Fields.elm
->     │       │   │   ├── Flags.elm
->     │       │   │   ├── FolderOrder.elm
->     │       │   │   ├── Icons.elm
->     │       │   │   ├── ItemArrange.elm
->     │       │   │   ├── ItemColumn.elm
->     │       │   │   ├── ItemIds.elm
->     │       │   │   ├── ItemNav.elm
->     │       │   │   ├── ItemQuery.elm
->     │       │   │   ├── ItemSelection.elm
->     │       │   │   ├── ItemTemplate.elm
->     │       │   │   ├── Items.elm
->     │       │   │   ├── Language.elm
->     │       │   │   ├── ListType.elm
->     │       │   │   ├── Money.elm
->     │       │   │   ├── NotificationChannel.elm
->     │       │   │   ├── OrgUse.elm
->     │       │   │   ├── OrganizationOrder.elm
->     │       │   │   ├── Pdf.elm
->     │       │   │   ├── PersonOrder.elm
->     │       │   │   ├── PersonUse.elm
->     │       │   │   ├── Priority.elm
->     │       │   │   ├── QueryParseResult.elm
->     │       │   │   ├── SSLType.elm
->     │       │   │   ├── SearchMode.elm
->     │       │   │   ├── ServerEvent.elm
->     │       │   │   ├── SourceState.elm
->     │       │   │   ├── TagOrder.elm
->     │       │   │   ├── TimeZone.elm
->     │       │   │   ├── UiSettings.elm
->     │       │   │   ├── UiTheme.elm
->     │       │   │   ├── UserState.elm
->     │       │   │   └── Validated.elm
->     │       │   ├── Messages
->     │       │   │   ├── Comp
->     │       │   │   │   ├── ItemDetail
->     │       │   │   │   │   ├── AddFilesForm.elm
->     │       │   │   │   │   ├── ConfirmModal.elm
->     │       │   │   │   │   ├── EditForm.elm
->     │       │   │   │   │   ├── ItemInfoHeader.elm
->     │       │   │   │   │   ├── MultiEditMenu.elm
->     │       │   │   │   │   ├── Notes.elm
->     │       │   │   │   │   ├── RunAddonForm.elm
->     │       │   │   │   │   └── SingleAttachment.elm
->     │       │   │   │   ├── AddonArchiveForm.elm
->     │       │   │   │   ├── AddonArchiveManage.elm
->     │       │   │   │   ├── AddonArchiveTable.elm
->     │       │   │   │   ├── AddonRunConfigForm.elm
->     │       │   │   │   ├── AddonRunConfigManage.elm
->     │       │   │   │   ├── AddonRunConfigTable.elm
->     │       │   │   │   ├── AddressForm.elm
->     │       │   │   │   ├── AttachmentMeta.elm
->     │       │   │   │   ├── BookmarkChooser.elm
->     │       │   │   │   ├── BookmarkDropdown.elm
->     │       │   │   │   ├── BookmarkManage.elm
->     │       │   │   │   ├── BookmarkQueryForm.elm
->     │       │   │   │   ├── BookmarkQueryManage.elm
->     │       │   │   │   ├── BookmarkTable.elm
->     │       │   │   │   ├── BoxEdit.elm
->     │       │   │   │   ├── BoxMessageEdit.elm
->     │       │   │   │   ├── BoxQueryEdit.elm
->     │       │   │   │   ├── BoxQueryView.elm
->     │       │   │   │   ├── BoxSearchQueryInput.elm
->     │       │   │   │   ├── BoxStatsEdit.elm
->     │       │   │   │   ├── BoxStatsView.elm
->     │       │   │   │   ├── BoxUploadEdit.elm
->     │       │   │   │   ├── BoxUploadView.elm
->     │       │   │   │   ├── BoxView.elm
->     │       │   │   │   ├── CalEventInput.elm
->     │       │   │   │   ├── ChangePasswordForm.elm
->     │       │   │   │   ├── ChannelForm.elm
->     │       │   │   │   ├── ChannelRefInput.elm
->     │       │   │   │   ├── ClassifierSettingsForm.elm
->     │       │   │   │   ├── CollectiveSettingsForm.elm
->     │       │   │   │   ├── CustomFieldForm.elm
->     │       │   │   │   ├── CustomFieldInput.elm
->     │       │   │   │   ├── CustomFieldManage.elm
->     │       │   │   │   ├── CustomFieldMultiInput.elm
->     │       │   │   │   ├── CustomFieldTable.elm
->     │       │   │   │   ├── DashboardEdit.elm
->     │       │   │   │   ├── DashboardManage.elm
->     │       │   │   │   ├── DashboardView.elm
->     │       │   │   │   ├── DetailEdit.elm
->     │       │   │   │   ├── DownloadAll.elm
->     │       │   │   │   ├── Dropzone.elm
->     │       │   │   │   ├── DueItemsTaskForm.elm
->     │       │   │   │   ├── DueItemsTaskList.elm
->     │       │   │   │   ├── DueItemsTaskManage.elm
->     │       │   │   │   ├── EmailSettingsForm.elm
->     │       │   │   │   ├── EmailSettingsManage.elm
->     │       │   │   │   ├── EmailSettingsTable.elm
->     │       │   │   │   ├── EmptyTrashForm.elm
->     │       │   │   │   ├── EquipmentForm.elm
->     │       │   │   │   ├── EquipmentManage.elm
->     │       │   │   │   ├── EquipmentTable.elm
->     │       │   │   │   ├── EventSample.elm
->     │       │   │   │   ├── ExpandCollapse.elm
->     │       │   │   │   ├── FolderDetail.elm
->     │       │   │   │   ├── FolderManage.elm
->     │       │   │   │   ├── FolderSelect.elm
->     │       │   │   │   ├── FolderTable.elm
->     │       │   │   │   ├── HttpError.elm
->     │       │   │   │   ├── ImapSettingsForm.elm
->     │       │   │   │   ├── ImapSettingsManage.elm
->     │       │   │   │   ├── ImapSettingsTable.elm
->     │       │   │   │   ├── ItemCard.elm
->     │       │   │   │   ├── ItemCardList.elm
->     │       │   │   │   ├── ItemColumnDropdown.elm
->     │       │   │   │   ├── ItemDetail.elm
->     │       │   │   │   ├── ItemLinkForm.elm
->     │       │   │   │   ├── ItemMail.elm
->     │       │   │   │   ├── ItemMerge.elm
->     │       │   │   │   ├── ItemSearchInput.elm
->     │       │   │   │   ├── NotificationChannelManage.elm
->     │       │   │   │   ├── NotificationChannelTable.elm
->     │       │   │   │   ├── NotificationGotifyForm.elm
->     │       │   │   │   ├── NotificationHookForm.elm
->     │       │   │   │   ├── NotificationHookManage.elm
->     │       │   │   │   ├── NotificationHookTable.elm
->     │       │   │   │   ├── NotificationHttpForm.elm
->     │       │   │   │   ├── NotificationMailForm.elm
->     │       │   │   │   ├── NotificationMatrixForm.elm
->     │       │   │   │   ├── OrgForm.elm
->     │       │   │   │   ├── OrgManage.elm
->     │       │   │   │   ├── OrgTable.elm
->     │       │   │   │   ├── OtpSetup.elm
->     │       │   │   │   ├── PeriodicQueryTaskForm.elm
->     │       │   │   │   ├── PeriodicQueryTaskList.elm
->     │       │   │   │   ├── PeriodicQueryTaskManage.elm
->     │       │   │   │   ├── PersonForm.elm
->     │       │   │   │   ├── PersonManage.elm
->     │       │   │   │   ├── PersonTable.elm
->     │       │   │   │   ├── PublishItems.elm
->     │       │   │   │   ├── ScanMailboxForm.elm
->     │       │   │   │   ├── ScanMailboxManage.elm
->     │       │   │   │   ├── ScanMailboxTable.elm
->     │       │   │   │   ├── SearchMenu.elm
->     │       │   │   │   ├── SearchStatsView.elm
->     │       │   │   │   ├── SentMails.elm
->     │       │   │   │   ├── ShareForm.elm
->     │       │   │   │   ├── ShareMail.elm
->     │       │   │   │   ├── ShareManage.elm
->     │       │   │   │   ├── SharePasswordForm.elm
->     │       │   │   │   ├── ShareTable.elm
->     │       │   │   │   ├── ShareView.elm
->     │       │   │   │   ├── SourceForm.elm
->     │       │   │   │   ├── SourceManage.elm
->     │       │   │   │   ├── SourceTable.elm
->     │       │   │   │   ├── TagDropdown.elm
->     │       │   │   │   ├── TagForm.elm
->     │       │   │   │   ├── TagManage.elm
->     │       │   │   │   ├── TagSelect.elm
->     │       │   │   │   ├── TagTable.elm
->     │       │   │   │   ├── UiSettingsForm.elm
->     │       │   │   │   ├── UiSettingsManage.elm
->     │       │   │   │   ├── UploadForm.elm
->     │       │   │   │   ├── UserForm.elm
->     │       │   │   │   ├── UserManage.elm
->     │       │   │   │   └── UserTable.elm
->     │       │   │   ├── Data
->     │       │   │   │   ├── AccountScope.elm
->     │       │   │   │   ├── BoxContent.elm
->     │       │   │   │   ├── ChannelType.elm
->     │       │   │   │   ├── Color.elm
->     │       │   │   │   ├── ContactType.elm
->     │       │   │   │   ├── CustomFieldType.elm
->     │       │   │   │   ├── Direction.elm
->     │       │   │   │   ├── DownloadFileType.elm
->     │       │   │   │   ├── EquipmentUse.elm
->     │       │   │   │   ├── EventType.elm
->     │       │   │   │   ├── Fields.elm
->     │       │   │   │   ├── ItemColumn.elm
->     │       │   │   │   ├── Language.elm
->     │       │   │   │   ├── OrgUse.elm
->     │       │   │   │   ├── PdfMode.elm
->     │       │   │   │   ├── PersonUse.elm
->     │       │   │   │   └── SSLType.elm
->     │       │   │   ├── Page
->     │       │   │   │   ├── CollectiveSettings.elm
->     │       │   │   │   ├── Dashboard.elm
->     │       │   │   │   ├── DefaultDashboard.elm
->     │       │   │   │   ├── ItemDetail.elm
->     │       │   │   │   ├── Login.elm
->     │       │   │   │   ├── ManageData.elm
->     │       │   │   │   ├── NewInvite.elm
->     │       │   │   │   ├── Queue.elm
->     │       │   │   │   ├── Register.elm
->     │       │   │   │   ├── Search.elm
->     │       │   │   │   ├── SearchSideMenu.elm
->     │       │   │   │   ├── Share.elm
->     │       │   │   │   ├── ShareDetail.elm
->     │       │   │   │   ├── Upload.elm
->     │       │   │   │   └── UserSettings.elm
->     │       │   │   ├── App.elm
->     │       │   │   ├── Basics.elm
->     │       │   │   ├── DateFormat.elm
->     │       │   │   └── UiLanguage.elm
->     │       │   ├── Page
->     │       │   │   ├── CollectiveSettings
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Dashboard
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── DefaultDashboard.elm
->     │       │   │   │   ├── SideMenu.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View.elm
->     │       │   │   ├── ItemDetail
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Login
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── ManageData
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── NewInvite
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Queue
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Register
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Search
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── SideMenu.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   ├── Share
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── LoadMore.elm
->     │       │   │   │   ├── Menubar.elm
->     │       │   │   │   ├── Results.elm
->     │       │   │   │   ├── Sidebar.elm
->     │       │   │   │   ├── TopContent.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View.elm
->     │       │   │   ├── ShareDetail
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View.elm
->     │       │   │   ├── Upload
->     │       │   │   │   ├── Data.elm
->     │       │   │   │   ├── Update.elm
->     │       │   │   │   └── View2.elm
->     │       │   │   └── UserSettings
->     │       │   │       ├── Data.elm
->     │       │   │       ├── Update.elm
->     │       │   │       └── View2.elm
->     │       │   ├── Util
->     │       │   │   ├── Address.elm
->     │       │   │   ├── Contact.elm
->     │       │   │   ├── CustomField.elm
->     │       │   │   ├── Duration.elm
->     │       │   │   ├── File.elm
->     │       │   │   ├── Folder.elm
->     │       │   │   ├── Html.elm
->     │       │   │   ├── Http.elm
->     │       │   │   ├── Item.elm
->     │       │   │   ├── ItemDragDrop.elm
->     │       │   │   ├── List.elm
->     │       │   │   ├── Maybe.elm
->     │       │   │   ├── Person.elm
->     │       │   │   ├── Result.elm
->     │       │   │   ├── Size.elm
->     │       │   │   ├── String.elm
->     │       │   │   ├── Tag.elm
->     │       │   │   └── Update.elm
->     │       │   ├── Api.elm
->     │       │   ├── Main.elm
->     │       │   ├── Messages.elm
->     │       │   ├── Page.elm
->     │       │   ├── Ports.elm
->     │       │   └── Styles.elm
->     │       ├── styles
->     │       │   ├── custom-components.css
->     │       │   ├── custom-utilities.css
->     │       │   ├── index.css
->     │       │   └── keep.txt
->     │       └── webjar
->     │           ├── favicon
->     │           │   ├── android-icon-144x144.png
->     │           │   ├── android-icon-192x192.png
->     │           │   ├── android-icon-36x36.png
->     │           │   ├── android-icon-48x48.png
->     │           │   ├── android-icon-512x512.png
->     │           │   ├── android-icon-72x72.png
->     │           │   ├── android-icon-96x96.png
->     │           │   ├── apple-icon-114x114.png
->     │           │   ├── apple-icon-120x120.png
->     │           │   ├── apple-icon-144x144.png
->     │           │   ├── apple-icon-152x152.png
->     │           │   ├── apple-icon-180x180.png
->     │           │   ├── apple-icon-57x57.png
->     │           │   ├── apple-icon-60x60.png
->     │           │   ├── apple-icon-72x72.png
->     │           │   ├── apple-icon-76x76.png
->     │           │   ├── apple-icon-precomposed.png
->     │           │   ├── apple-icon.png
->     │           │   ├── browserconfig.xml
->     │           │   ├── favicon-16x16.png
->     │           │   ├── favicon-32x32.png
->     │           │   ├── favicon-96x96.png
->     │           │   ├── favicon.ico
->     │           │   ├── manifest.json
->     │           │   ├── ms-icon-144x144.png
->     │           │   ├── ms-icon-150x150.png
->     │           │   ├── ms-icon-310x310.png
->     │           │   └── ms-icon-70x70.png
->     │           ├── img
->     │           │   ├── logo-400.png
->     │           │   ├── logo-96.png
->     │           │   ├── logo-mc-400.png
->     │           │   ├── logo-mc-96.png
->     │           │   ├── logo-only-mc.svg
->     │           │   └── logo-only.svg
->     │           ├── docspell.css
->     │           └── docspell.js
->     ├── elm-analyse.json
->     ├── elm-package.json
->     ├── elm.json
->     ├── package-lock.json
->     ├── package.json
->     ├── postcss.config.js
->     └── tailwind.config.js
-> ```
-> 
-> ---
+> in mmodules i see some postgres, in there anything else we might find usefull. # File Tree: modules
+
+> 
+
+> **Generated:** 2/24/2026, 3:46:14 AM
+
+> **Root Path:** `c:\QiLabs\docspell-master\modules`
+
+> 
+
+> ```
+
+> ├── addonlib
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── addons
+
+> │       │               ├── runner
+
+> │       │               │   ├── CollectOut.scala
+
+> │       │               │   ├── DockerBuilder.scala
+
+> │       │               │   ├── DockerRunner.scala
+
+> │       │               │   ├── NSpawnBuilder.scala
+
+> │       │               │   ├── NixFlakeRunner.scala
+
+> │       │               │   ├── RunnerUtil.scala
+
+> │       │               │   └── TrivialRunner.scala
+
+> │       │               ├── AddonArchive.scala
+
+> │       │               ├── AddonExecutionResult.scala
+
+> │       │               ├── AddonExecutor.scala
+
+> │       │               ├── AddonExecutorConfig.scala
+
+> │       │               ├── AddonLoggerExtension.scala
+
+> │       │               ├── AddonMeta.scala
+
+> │       │               ├── AddonRef.scala
+
+> │       │               ├── AddonResult.scala
+
+> │       │               ├── AddonRunner.scala
+
+> │       │               ├── AddonTriggerType.scala
+
+> │       │               ├── Context.scala
+
+> │       │               ├── InputEnv.scala
+
+> │       │               ├── Middleware.scala
+
+> │       │               ├── RunnerType.scala
+
+> │       │               └── package.scala
+
+> │       └── test
+
+> │           ├── resources
+
+> │           │   ├── docspell-addon-single-file.zip
+
+> │           │   ├── docspell-dummy-addon-master.zip
+
+> │           │   └── minimal-addon.zip
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── addons
+
+> │                       ├── AddonArchiveTest.scala
+
+> │                       ├── AddonExecutorTest.scala
+
+> │                       ├── AddonGenerator.scala
+
+> │                       ├── AddonMetaTest.scala
+
+> │                       ├── AddonOutputTest.scala
+
+> │                       ├── AddonRunnerTest.scala
+
+> │                       └── Fixtures.scala
+
+> ├── analysis
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── analysis
+
+> │       │               ├── classifier
+
+> │       │               │   ├── ClassifierModel.scala
+
+> │       │               │   ├── StanfordTextClassifier.scala
+
+> │       │               │   ├── TextClassifier.scala
+
+> │       │               │   └── TextClassifierConfig.scala
+
+> │       │               ├── contact
+
+> │       │               │   ├── Contact.scala
+
+> │       │               │   ├── Domain.scala
+
+> │       │               │   └── Tld.scala
+
+> │       │               ├── date
+
+> │       │               │   ├── DateFind.scala
+
+> │       │               │   └── MonthName.scala
+
+> │       │               ├── nlp
+
+> │       │               │   ├── Annotator.scala
+
+> │       │               │   ├── BasicCRFAnnotator.scala
+
+> │       │               │   ├── LabelConverter.scala
+
+> │       │               │   ├── PipelineCache.scala
+
+> │       │               │   ├── Properties.scala
+
+> │       │               │   ├── StanfordNerAnnotator.scala
+
+> │       │               │   └── StanfordNerSettings.scala
+
+> │       │               ├── split
+
+> │       │               │   ├── TextSplitter.scala
+
+> │       │               │   └── Word.scala
+
+> │       │               ├── NlpSettings.scala
+
+> │       │               ├── TextAnalyser.scala
+
+> │       │               └── TextAnalysisConfig.scala
+
+> │       └── test
+
+> │           ├── resources
+
+> │           │   └── test.ser.gz
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── analysis
+
+> │                       ├── classifier
+
+> │                       │   └── StanfordTextClassifierSuite.scala
+
+> │                       ├── contact
+
+> │                       │   └── ContactAnnotateSpec.scala
+
+> │                       ├── date
+
+> │                       │   └── DateFindTest.scala
+
+> │                       ├── nlp
+
+> │                       │   ├── BaseCRFAnnotatorSuite.scala
+
+> │                       │   └── StanfordNerAnnotatorSuite.scala
+
+> │                       ├── split
+
+> │                       │   └── TestSplitterSpec.scala
+
+> │                       └── Env.scala
+
+> ├── backend
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── backend
+
+> │       │               ├── auth
+
+> │       │               │   ├── AuthToken.scala
+
+> │       │               │   ├── Login.scala
+
+> │       │               │   ├── RememberToken.scala
+
+> │       │               │   ├── ShareToken.scala
+
+> │       │               │   └── TokenUtil.scala
+
+> │       │               ├── codec
+
+> │       │               │   └── ItemQueryCodec.scala
+
+> │       │               ├── fulltext
+
+> │       │               │   └── CreateIndex.scala
+
+> │       │               ├── item
+
+> │       │               │   └── Merge.scala
+
+> │       │               ├── joex
+
+> │       │               │   ├── AddonEnvConfig.scala
+
+> │       │               │   ├── AddonOps.scala
+
+> │       │               │   ├── AddonPostProcess.scala
+
+> │       │               │   ├── AddonPrepare.scala
+
+> │       │               │   ├── FindJobOwnerAccount.scala
+
+> │       │               │   └── LoggerExtension.scala
+
+> │       │               ├── msg
+
+> │       │               │   └── Topics.scala
+
+> │       │               ├── ops
+
+> │       │               │   ├── search
+
+> │       │               │   │   ├── OSearch.scala
+
+> │       │               │   │   └── QueryParseResult.scala
+
+> │       │               │   ├── AddonRunConfigError.scala
+
+> │       │               │   ├── AddonRunConfigValidate.scala
+
+> │       │               │   ├── AddonValidate.scala
+
+> │       │               │   ├── AddonValidationError.scala
+
+> │       │               │   ├── OAddons.scala
+
+> │       │               │   ├── OAttachment.scala
+
+> │       │               │   ├── OClientSettings.scala
+
+> │       │               │   ├── OCollective.scala
+
+> │       │               │   ├── OCustomFields.scala
+
+> │       │               │   ├── ODownloadAll.scala
+
+> │       │               │   ├── OEquipment.scala
+
+> │       │               │   ├── OFileRepository.scala
+
+> │       │               │   ├── OFolder.scala
+
+> │       │               │   ├── OFulltext.scala
+
+> │       │               │   ├── OItem.scala
+
+> │       │               │   ├── OItemLink.scala
+
+> │       │               │   ├── OItemSearch.scala
+
+> │       │               │   ├── OJob.scala
+
+> │       │               │   ├── OJoex.scala
+
+> │       │               │   ├── OMail.scala
+
+> │       │               │   ├── ONode.scala
+
+> │       │               │   ├── ONotification.scala
+
+> │       │               │   ├── OOrganization.scala
+
+> │       │               │   ├── OQueryBookmarks.scala
+
+> │       │               │   ├── OShare.scala
+
+> │       │               │   ├── OSource.scala
+
+> │       │               │   ├── OTag.scala
+
+> │       │               │   ├── OTotp.scala
+
+> │       │               │   ├── OUpload.scala
+
+> │       │               │   ├── OUserTask.scala
+
+> │       │               │   └── WildcardString.scala
+
+> │       │               ├── signup
+
+> │       │               │   ├── Config.scala
+
+> │       │               │   ├── ExternalAccount.scala
+
+> │       │               │   ├── NewInviteResult.scala
+
+> │       │               │   ├── OSignup.scala
+
+> │       │               │   ├── RegisterData.scala
+
+> │       │               │   └── SignupResult.scala
+
+> │       │               ├── task
+
+> │       │               │   └── DownloadZipArgs.scala
+
+> │       │               ├── AttachedEvent.scala
+
+> │       │               ├── BackendApp.scala
+
+> │       │               ├── BackendCommands.scala
+
+> │       │               ├── Common.scala
+
+> │       │               ├── Config.scala
+
+> │       │               ├── JobFactory.scala
+
+> │       │               ├── MailAddressCodec.scala
+
+> │       │               └── PasswordCrypt.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── backend
+
+> │                       └── auth
+
+> │                           └── AuthTokenTest.scala
+
+> ├── common
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── common
+
+> │       │               ├── bc
+
+> │       │               │   ├── AttachmentAction.scala
+
+> │       │               │   ├── BackendCommand.scala
+
+> │       │               │   ├── BackendCommandRunner.scala
+
+> │       │               │   └── ItemAction.scala
+
+> │       │               ├── exec
+
+> │       │               │   ├── Args.scala
+
+> │       │               │   ├── Env.scala
+
+> │       │               │   ├── ExternalCommand.scala
+
+> │       │               │   ├── SysCmd.scala
+
+> │       │               │   └── SysExec.scala
+
+> │       │               ├── syntax
+
+> │       │               │   ├── EitherSyntax.scala
+
+> │       │               │   ├── FileSyntax.scala
+
+> │       │               │   ├── StreamSyntax.scala
+
+> │       │               │   ├── StringSyntax.scala
+
+> │       │               │   └── package.scala
+
+> │       │               ├── util
+
+> │       │               │   ├── Directory.scala
+
+> │       │               │   ├── File.scala
+
+> │       │               │   ├── Random.scala
+
+> │       │               │   ├── ResourceUse.scala
+
+> │       │               │   ├── SignUtil.scala
+
+> │       │               │   ├── Zip.scala
+
+> │       │               │   └── ZipImpl.scala
+
+> │       │               ├── AccountId.scala
+
+> │       │               ├── AccountInfo.scala
+
+> │       │               ├── AccountSource.scala
+
+> │       │               ├── AllPreviewsArgs.scala
+
+> │       │               ├── Banner.scala
+
+> │       │               ├── BaseJsonCodecs.scala
+
+> │       │               ├── Binary.scala
+
+> │       │               ├── ByteSize.scala
+
+> │       │               ├── CollectiveId.scala
+
+> │       │               ├── CollectiveState.scala
+
+> │       │               ├── ContactKind.scala
+
+> │       │               ├── ConvertAllPdfArgs.scala
+
+> │       │               ├── CustomFieldType.scala
+
+> │       │               ├── DataType.scala
+
+> │       │               ├── Direction.scala
+
+> │       │               ├── DocspellSystem.scala
+
+> │       │               ├── DownloadAllType.scala
+
+> │       │               ├── DownloadState.scala
+
+> │       │               ├── Duration.scala
+
+> │       │               ├── EmptyTrashArgs.scala
+
+> │       │               ├── EnvMode.scala
+
+> │       │               ├── EquipmentUse.scala
+
+> │       │               ├── FileCategory.scala
+
+> │       │               ├── FileCopyTaskArgs.scala
+
+> │       │               ├── FileIntegrityCheckArgs.scala
+
+> │       │               ├── FileKey.scala
+
+> │       │               ├── FileKeyPart.scala
+
+> │       │               ├── FileName.scala
+
+> │       │               ├── FileStoreConfig.scala
+
+> │       │               ├── FileStoreType.scala
+
+> │       │               ├── Glob.scala
+
+> │       │               ├── Hash.scala
+
+> │       │               ├── IdRef.scala
+
+> │       │               ├── Ident.scala
+
+> │       │               ├── ItemAddonTaskArgs.scala
+
+> │       │               ├── ItemQueryString.scala
+
+> │       │               ├── ItemState.scala
+
+> │       │               ├── JobState.scala
+
+> │       │               ├── JvmInfo.scala
+
+> │       │               ├── Language.scala
+
+> │       │               ├── LearnClassifierArgs.scala
+
+> │       │               ├── LenientUri.scala
+
+> │       │               ├── ListType.scala
+
+> │       │               ├── LogLevel.scala
+
+> │       │               ├── MailSendConfig.scala
+
+> │       │               ├── MakePageCountArgs.scala
+
+> │       │               ├── MakePreviewArgs.scala
+
+> │       │               ├── MetaProposal.scala
+
+> │       │               ├── MetaProposalList.scala
+
+> │       │               ├── MetaProposalType.scala
+
+> │       │               ├── MimeType.scala
+
+> │       │               ├── MimeTypeHint.scala
+
+> │       │               ├── NerDateLabel.scala
+
+> │       │               ├── NerLabel.scala
+
+> │       │               ├── NerLabelSpan.scala
+
+> │       │               ├── NerTag.scala
+
+> │       │               ├── NlpMode.scala
+
+> │       │               ├── NodeType.scala
+
+> │       │               ├── OrgUse.scala
+
+> │       │               ├── Password.scala
+
+> │       │               ├── PersonRef.scala
+
+> │       │               ├── PersonUse.scala
+
+> │       │               ├── Pools.scala
+
+> │       │               ├── Priority.scala
+
+> │       │               ├── ProcessItemArgs.scala
+
+> │       │               ├── ReIndexTaskArgs.scala
+
+> │       │               ├── ReProcessItemArgs.scala
+
+> │       │               ├── ScanMailboxArgs.scala
+
+> │       │               ├── ScheduledAddonTaskArgs.scala
+
+> │       │               ├── SearchMode.scala
+
+> │       │               ├── TaskArguments.scala
+
+> │       │               ├── ThreadFactories.scala
+
+> │       │               ├── Timestamp.scala
+
+> │       │               ├── UrlMatcher.scala
+
+> │       │               ├── UrlReader.scala
+
+> │       │               └── UserState.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── common
+
+> │                       ├── bc
+
+> │                       │   └── BackendCommandTest.scala
+
+> │                       ├── exec
+
+> │                       │   └── ExternalCommandTest.scala
+
+> │                       ├── util
+
+> │                       │   ├── DirectoryTest.scala
+
+> │                       │   └── SignUtilTest.scala
+
+> │                       ├── FileNameTest.scala
+
+> │                       ├── GlobTest.scala
+
+> │                       ├── LenientUriTest.scala
+
+> │                       ├── MetaProposalListTest.scala
+
+> │                       ├── MimeTypeTest.scala
+
+> │                       ├── NerLabelSpanTest.scala
+
+> │                       └── UrlMatcherTest.scala
+
+> ├── config
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── config
+
+> │       │               ├── ConfigFactory.scala
+
+> │       │               ├── EnvConfig.scala
+
+> │       │               ├── FtsType.scala
+
+> │       │               ├── Implicits.scala
+
+> │       │               ├── PgFtsConfig.scala
+
+> │       │               └── Validation.scala
+
+> │       └── test
+
+> │           ├── resources
+
+> │           │   └── reference.conf
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── config
+
+> │                       ├── EnvConfigTest.scala
+
+> │                       └── ValidationTest.scala
+
+> ├── convert
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── convert
+
+> │       │               ├── extern
+
+> │       │               │   ├── ExternConv.scala
+
+> │       │               │   ├── OcrMyPdf.scala
+
+> │       │               │   ├── OcrMyPdfConfig.scala
+
+> │       │               │   ├── Tesseract.scala
+
+> │       │               │   ├── TesseractConfig.scala
+
+> │       │               │   ├── Unoconv.scala
+
+> │       │               │   ├── UnoconvConfig.scala
+
+> │       │               │   ├── Weasyprint.scala
+
+> │       │               │   ├── WeasyprintConfig.scala
+
+> │       │               │   ├── WkHtmlPdf.scala
+
+> │       │               │   └── WkHtmlPdfConfig.scala
+
+> │       │               ├── flexmark
+
+> │       │               │   ├── Markdown.scala
+
+> │       │               │   └── MarkdownConfig.scala
+
+> │       │               ├── Conversion.scala
+
+> │       │               ├── ConversionResult.scala
+
+> │       │               ├── ConvertConfig.scala
+
+> │       │               ├── RemovePdfEncryption.scala
+
+> │       │               └── SanitizeHtml.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── convert
+
+> │                       ├── extern
+
+> │                       │   └── ExternConvTest.scala
+
+> │                       ├── ConversionTest.scala
+
+> │                       ├── FileChecks.scala
+
+> │                       └── RemovePdfEncryptionTest.scala
+
+> ├── extract
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── java
+
+> │       │   │   └── org
+
+> │       │   │       └── apache
+
+> │       │   │           └── tika
+
+> │       │   │               ├── exception
+
+> │       │   │               │   └── WriteLimitReachedException.java
+
+> │       │   │               ├── parser
+
+> │       │   │               │   ├── odf
+
+> │       │   │               │   │   ├── FlatOpenDocumentMacroHandler.java
+
+> │       │   │               │   │   ├── NSNormalizerContentHandler.java
+
+> │       │   │               │   │   ├── OpenDocumentBodyHandler.java
+
+> │       │   │               │   │   ├── OpenDocumentContentParser.java
+
+> │       │   │               │   │   ├── OpenDocumentMacroHandler.java
+
+> │       │   │               │   │   ├── OpenDocumentManifestHandler.java
+
+> │       │   │               │   │   ├── OpenDocumentMetaParser.java
+
+> │       │   │               │   │   └── OpenDocumentParser.java
+
+> │       │   │               │   └── xml
+
+> │       │   │               │       ├── AbstractMetadataHandler.java
+
+> │       │   │               │       ├── AttributeDependantMetadataHandler.java
+
+> │       │   │               │       ├── AttributeMetadataHandler.java
+
+> │       │   │               │       ├── DcXMLParser.java
+
+> │       │   │               │       ├── ElementMetadataHandler.java
+
+> │       │   │               │       ├── FictionBookParser.java
+
+> │       │   │               │       ├── MetadataHandler.java
+
+> │       │   │               │       ├── TextAndAttributeXMLParser.java
+
+> │       │   │               │       └── XMLParser.java
+
+> │       │   │               └── utils
+
+> │       │   │                   └── StringUtils.java
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── extract
+
+> │       │               ├── internal
+
+> │       │               │   └── Text.scala
+
+> │       │               ├── ocr
+
+> │       │               │   ├── Ocr.scala
+
+> │       │               │   ├── OcrConfig.scala
+
+> │       │               │   ├── OcrType.scala
+
+> │       │               │   └── TextExtract.scala
+
+> │       │               ├── odf
+
+> │       │               │   ├── OdfExtract.scala
+
+> │       │               │   └── OdfType.scala
+
+> │       │               ├── pdfbox
+
+> │       │               │   ├── PdfLoader.scala
+
+> │       │               │   ├── PdfMetaData.scala
+
+> │       │               │   ├── PdfboxExtract.scala
+
+> │       │               │   ├── PdfboxPreview.scala
+
+> │       │               │   └── PreviewConfig.scala
+
+> │       │               ├── poi
+
+> │       │               │   ├── PoiExtract.scala
+
+> │       │               │   └── PoiType.scala
+
+> │       │               ├── rtf
+
+> │       │               │   └── RtfExtract.scala
+
+> │       │               ├── ExtractConfig.scala
+
+> │       │               ├── ExtractResult.scala
+
+> │       │               ├── Extraction.scala
+
+> │       │               ├── PdfConfig.scala
+
+> │       │               └── PdfExtract.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── extract
+
+> │                       ├── ocr
+
+> │                       │   └── TextExtractionSuite.scala
+
+> │                       ├── odf
+
+> │                       │   └── OdfExtractTest.scala
+
+> │                       ├── pdfbox
+
+> │                       │   ├── PdfMetaDataTest.scala
+
+> │                       │   ├── PdfboxExtractTest.scala
+
+> │                       │   └── PdfboxPreviewTest.scala
+
+> │                       ├── poi
+
+> │                       │   └── PoiExtractTest.scala
+
+> │                       └── rtf
+
+> │                           └── RtfExtractTest.scala
+
+> ├── files
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── java
+
+> │       │   │   └── org
+
+> │       │   │       └── apache
+
+> │       │   │           └── tika
+
+> │       │   │               └── parser
+
+> │       │   │                   └── txt
+
+> │       │   │                       ├── IOUtils.java
+
+> │       │   │                       └── Icu4jEncodingDetector.java
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── files
+
+> │       │               ├── Dimension.scala
+
+> │       │               ├── FileSupport.scala
+
+> │       │               ├── ImageSize.scala
+
+> │       │               └── TikaMimetype.scala
+
+> │       └── test
+
+> │           ├── resources
+
+> │           │   ├── bombs
+
+> │           │   │   ├── 20K-gray.jpeg
+
+> │           │   │   ├── 20K-gray.png
+
+> │           │   │   ├── 20K-rgb.jpeg
+
+> │           │   │   └── 20K-rgb.png
+
+> │           │   ├── camera
+
+> │           │   │   ├── letter-en.jpg
+
+> │           │   │   ├── letter-en.png
+
+> │           │   │   └── letter-en.tiff
+
+> │           │   ├── examples
+
+> │           │   │   ├── letter-ita.txt
+
+> │           │   │   ├── sample.doc
+
+> │           │   │   ├── sample.docx
+
+> │           │   │   ├── sample.ods
+
+> │           │   │   ├── sample.odt
+
+> │           │   │   ├── sample.rtf
+
+> │           │   │   ├── sample.xls
+
+> │           │   │   └── sample.xlsx
+
+> │           │   ├── scanner
+
+> │           │   │   ├── jfif.jpg
+
+> │           │   │   ├── pdf13.pdf
+
+> │           │   │   └── pdfa14.pdf
+
+> │           │   ├── secured
+
+> │           │   │   ├── encrypted-test123.pdf
+
+> │           │   │   └── protected-test123.pdf
+
+> │           │   ├── keywords.pdf
+
+> │           │   ├── large-file.pdf
+
+> │           │   ├── letter-de.html
+
+> │           │   ├── letter-de.md
+
+> │           │   ├── letter-de.pdf
+
+> │           │   ├── letter-de.txt
+
+> │           │   ├── letter-en.pdf
+
+> │           │   ├── letter-en.txt
+
+> │           │   ├── letters.zip
+
+> │           │   ├── zip-dirs-one.zip
+
+> │           │   └── zip-dirs.zip
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── files
+
+> │                       ├── ExampleFilesSupport.scala
+
+> │                       ├── ImageSizeTest.scala
+
+> │                       ├── Playing.scala
+
+> │                       ├── TestFiles.scala
+
+> │                       ├── TikaMimetypeTest.scala
+
+> │                       └── ZipTest.scala
+
+> ├── fts-client
+
+> │   └── src
+
+> │       └── main
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── ftsclient
+
+> │                       ├── FtsClient.scala
+
+> │                       ├── FtsMigration.scala
+
+> │                       ├── FtsQuery.scala
+
+> │                       ├── FtsResult.scala
+
+> │                       └── TextData.scala
+
+> ├── fts-psql
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── resources
+
+> │       │   │   └── db
+
+> │       │   │       └── psqlfts
+
+> │       │   │           ├── V2.0.0__initial_schema.sql
+
+> │       │   │           └── V2.1.0__collective_id.sql
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── ftspsql
+
+> │       │               ├── DbMigration.scala
+
+> │       │               ├── DoobieMeta.scala
+
+> │       │               ├── FtsRecord.scala
+
+> │       │               ├── FtsRepository.scala
+
+> │       │               ├── PgQueryParser.scala
+
+> │       │               ├── PsqlConfig.scala
+
+> │       │               ├── PsqlFtsClient.scala
+
+> │       │               ├── RankNormalization.scala
+
+> │       │               ├── SearchResult.scala
+
+> │       │               └── SearchSummary.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── ftspsql
+
+> │                       ├── MigrationTest.scala
+
+> │                       ├── PgFixtures.scala
+
+> │                       └── PsqlFtsClientTest.scala
+
+> ├── fts-solr
+
+> │   └── src
+
+> │       └── main
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── ftssolr
+
+> │                       ├── DocIdResult.scala
+
+> │                       ├── Field.scala
+
+> │                       ├── JsonCodec.scala
+
+> │                       ├── QueryData.scala
+
+> │                       ├── SetFields.scala
+
+> │                       ├── SetFolder.scala
+
+> │                       ├── SolrConfig.scala
+
+> │                       ├── SolrFtsClient.scala
+
+> │                       ├── SolrMigration.scala
+
+> │                       ├── SolrQuery.scala
+
+> │                       ├── SolrSetup.scala
+
+> │                       ├── SolrUpdate.scala
+
+> │                       └── VersionDoc.scala
+
+> ├── joex
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── resources
+
+> │       │   │   └── reference.conf
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── joex
+
+> │       │               ├── addon
+
+> │       │               │   ├── AddonTaskExtension.scala
+
+> │       │               │   ├── GenericItemAddonTask.scala
+
+> │       │               │   ├── ItemAddonTask.scala
+
+> │       │               │   ├── Result.scala
+
+> │       │               │   └── ScheduledAddonTask.scala
+
+> │       │               ├── analysis
+
+> │       │               │   ├── NerFile.scala
+
+> │       │               │   └── RegexNerFile.scala
+
+> │       │               ├── download
+
+> │       │               │   ├── DownloadZipTask.scala
+
+> │       │               │   └── Result.scala
+
+> │       │               ├── emptytrash
+
+> │       │               │   ├── EmptyTrashTask.scala
+
+> │       │               │   └── Result.scala
+
+> │       │               ├── extract
+
+> │       │               │   └── JsoupSanitizer.scala
+
+> │       │               ├── filecopy
+
+> │       │               │   ├── FileCopyTask.scala
+
+> │       │               │   └── FileIntegrityCheckTask.scala
+
+> │       │               ├── fts
+
+> │       │               │   ├── FtsContext.scala
+
+> │       │               │   ├── FtsWork.scala
+
+> │       │               │   ├── Migration.scala
+
+> │       │               │   ├── MigrationTask.scala
+
+> │       │               │   ├── ReIndexTask.scala
+
+> │       │               │   └── package.scala
+
+> │       │               ├── hk
+
+> │       │               │   ├── CheckNodesTask.scala
+
+> │       │               │   ├── CleanupDownloadsTask.scala
+
+> │       │               │   ├── CleanupInvitesTask.scala
+
+> │       │               │   ├── CleanupJobsTask.scala
+
+> │       │               │   ├── CleanupRememberMeTask.scala
+
+> │       │               │   ├── CleanupResult.scala
+
+> │       │               │   ├── HouseKeepingConfig.scala
+
+> │       │               │   ├── HouseKeepingTask.scala
+
+> │       │               │   └── IntegrityCheckTask.scala
+
+> │       │               ├── learn
+
+> │       │               │   ├── ClassifierName.scala
+
+> │       │               │   ├── Classify.scala
+
+> │       │               │   ├── LearnClassifierTask.scala
+
+> │       │               │   ├── LearnItemEntities.scala
+
+> │       │               │   ├── LearnTags.scala
+
+> │       │               │   ├── SelectItems.scala
+
+> │       │               │   └── StoreClassifierModel.scala
+
+> │       │               ├── mail
+
+> │       │               │   ├── EmilHeader.scala
+
+> │       │               │   └── ReadMail.scala
+
+> │       │               ├── multiupload
+
+> │       │               │   ├── MultiUploadArchiveTask.scala
+
+> │       │               │   └── Result.scala
+
+> │       │               ├── notify
+
+> │       │               │   ├── PeriodicDueItemsTask.scala
+
+> │       │               │   ├── PeriodicQueryTask.scala
+
+> │       │               │   ├── TaskOperations.scala
+
+> │       │               │   └── YamuscaConverter.scala
+
+> │       │               ├── pagecount
+
+> │       │               │   ├── AllPageCountTask.scala
+
+> │       │               │   └── MakePageCountTask.scala
+
+> │       │               ├── pdfconv
+
+> │       │               │   ├── ConvertAllPdfTask.scala
+
+> │       │               │   └── PdfConvTask.scala
+
+> │       │               ├── preview
+
+> │       │               │   ├── AllPreviewsTask.scala
+
+> │       │               │   └── MakePreviewTask.scala
+
+> │       │               ├── process
+
+> │       │               │   ├── AttachmentPageCount.scala
+
+> │       │               │   ├── AttachmentPreview.scala
+
+> │       │               │   ├── ConvertPdf.scala
+
+> │       │               │   ├── CreateItem.scala
+
+> │       │               │   ├── CrossCheckProposals.scala
+
+> │       │               │   ├── DuplicateCheck.scala
+
+> │       │               │   ├── EvalProposals.scala
+
+> │       │               │   ├── ExtractArchive.scala
+
+> │       │               │   ├── FindProposal.scala
+
+> │       │               │   ├── ItemData.scala
+
+> │       │               │   ├── ItemHandler.scala
+
+> │       │               │   ├── LinkProposal.scala
+
+> │       │               │   ├── ProcessItem.scala
+
+> │       │               │   ├── ReProcessItem.scala
+
+> │       │               │   ├── RemoveEmptyItem.scala
+
+> │       │               │   ├── RunAddons.scala
+
+> │       │               │   ├── SaveProposals.scala
+
+> │       │               │   ├── SetGivenData.scala
+
+> │       │               │   ├── TextAnalysis.scala
+
+> │       │               │   └── TextExtraction.scala
+
+> │       │               ├── routes
+
+> │       │               │   ├── InfoRoutes.scala
+
+> │       │               │   ├── InternalHeader.scala
+
+> │       │               │   └── JoexRoutes.scala
+
+> │       │               ├── scanmailbox
+
+> │       │               │   └── ScanMailboxTask.scala
+
+> │       │               ├── updatecheck
+
+> │       │               │   ├── MakeMail.scala
+
+> │       │               │   ├── ThisVersion.scala
+
+> │       │               │   ├── UpdateCheck.scala
+
+> │       │               │   ├── UpdateCheckConfig.scala
+
+> │       │               │   └── UpdateCheckTask.scala
+
+> │       │               ├── Config.scala
+
+> │       │               ├── ConfigFile.scala
+
+> │       │               ├── JoexApp.scala
+
+> │       │               ├── JoexAppImpl.scala
+
+> │       │               ├── JoexServer.scala
+
+> │       │               ├── JoexTasks.scala
+
+> │       │               └── Main.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── joex
+
+> │                       ├── analysis
+
+> │                       │   └── NerFileTest.scala
+
+> │                       ├── extract
+
+> │                       │   └── JsoupSanitizerTest.scala
+
+> │                       └── updatecheck
+
+> │                           └── UpdateCheckTest.scala
+
+> ├── joexapi
+
+> │   └── src
+
+> │       └── main
+
+> │           ├── resources
+
+> │           │   └── joex-openapi.yml
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── joexapi
+
+> │                       └── client
+
+> │                           └── JoexClient.scala
+
+> ├── jsonminiq
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── jsonminiq
+
+> │       │               ├── Format.scala
+
+> │       │               ├── JsonMiniQuery.scala
+
+> │       │               └── Parser.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── jsonminiq
+
+> │                       ├── Fixtures.scala
+
+> │                       ├── FormatTest.scala
+
+> │                       ├── JsonMiniQueryTest.scala
+
+> │                       └── ParserTest.scala
+
+> ├── logging
+
+> │   ├── api
+
+> │   │   └── src
+
+> │   │       ├── main
+
+> │   │       │   └── scala
+
+> │   │       │       └── docspell
+
+> │   │       │           └── logging
+
+> │   │       │               ├── AndThenLogger.scala
+
+> │   │       │               ├── CapturedLogger.scala
+
+> │   │       │               ├── LazyMap.scala
+
+> │   │       │               ├── Level.scala
+
+> │   │       │               ├── LogConfig.scala
+
+> │   │       │               ├── LogEvent.scala
+
+> │   │       │               ├── Logger.scala
+
+> │   │       │               └── LoggerExtension.scala
+
+> │   │       └── test
+
+> │   │           └── scala
+
+> │   │               └── docspell
+
+> │   │                   └── logging
+
+> │   │                       ├── CapturedLoggerTest.scala
+
+> │   │                       ├── LazyMapTest.scala
+
+> │   │                       └── TestLogger.scala
+
+> │   └── scribe
+
+> │       └── src
+
+> │           ├── main
+
+> │           │   └── scala
+
+> │           │       └── docspell
+
+> │           │           └── logging
+
+> │           │               ├── impl
+
+> │           │               │   ├── JsonWriter.scala
+
+> │           │               │   ├── LogfmtWriter.scala
+
+> │           │               │   ├── Record.scala
+
+> │           │               │   ├── ScribeConfigure.scala
+
+> │           │               │   └── ScribeWrapper.scala
+
+> │           │               └── package.scala
+
+> │           └── test
+
+> │               └── scala
+
+> │                   └── docspell
+
+> │                       └── logging
+
+> │                           └── TestLoggingConfig.scala
+
+> ├── notification
+
+> │   ├── api
+
+> │   │   └── src
+
+> │   │       └── main
+
+> │   │           └── scala
+
+> │   │               └── docspell
+
+> │   │                   └── notification
+
+> │   │                       └── api
+
+> │   │                           ├── Channel.scala
+
+> │   │                           ├── ChannelRef.scala
+
+> │   │                           ├── ChannelType.scala
+
+> │   │                           ├── Event.scala
+
+> │   │                           ├── EventContext.scala
+
+> │   │                           ├── EventExchange.scala
+
+> │   │                           ├── EventMessage.scala
+
+> │   │                           ├── EventReader.scala
+
+> │   │                           ├── EventSink.scala
+
+> │   │                           ├── NotificationBackend.scala
+
+> │   │                           ├── NotificationChannel.scala
+
+> │   │                           ├── NotificationModule.scala
+
+> │   │                           ├── PeriodicDueItemsArgs.scala
+
+> │   │                           └── PeriodicQueryArgs.scala
+
+> │   └── impl
+
+> │       └── src
+
+> │           ├── main
+
+> │           │   └── scala
+
+> │           │       └── docspell
+
+> │           │           └── notification
+
+> │           │               └── impl
+
+> │           │                   ├── context
+
+> │           │                   │   ├── BasicData.scala
+
+> │           │                   │   ├── DeleteFieldValueCtx.scala
+
+> │           │                   │   ├── ItemSelectionCtx.scala
+
+> │           │                   │   ├── JobDoneCtx.scala
+
+> │           │                   │   ├── JobSubmittedCtx.scala
+
+> │           │                   │   ├── SetFieldValueCtx.scala
+
+> │           │                   │   ├── Syntax.scala
+
+> │           │                   │   └── TagsChangedCtx.scala
+
+> │           │                   ├── AbstractEventContext.scala
+
+> │           │                   ├── DbEventContext.scala
+
+> │           │                   ├── EmailBackend.scala
+
+> │           │                   ├── EventContextSyntax.scala
+
+> │           │                   ├── EventNotify.scala
+
+> │           │                   ├── ExampleEventContext.scala
+
+> │           │                   ├── GotifyBackend.scala
+
+> │           │                   ├── HttpPostBackend.scala
+
+> │           │                   ├── HttpSend.scala
+
+> │           │                   ├── Markdown.scala
+
+> │           │                   ├── MatrixBackend.scala
+
+> │           │                   ├── NotificationBackendImpl.scala
+
+> │           │                   └── NotificationModuleImpl.scala
+
+> │           └── test
+
+> │               └── scala
+
+> │                   └── docspell
+
+> │                       └── notification
+
+> │                           └── impl
+
+> │                               └── context
+
+> │                                   └── TagsChangedCtxTest.scala
+
+> ├── oidc
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── oidc
+
+> │       │               ├── AccessToken.scala
+
+> │       │               ├── CodeFlow.scala
+
+> │       │               ├── CodeFlowConfig.scala
+
+> │       │               ├── CodeFlowRoutes.scala
+
+> │       │               ├── Jwt.scala
+
+> │       │               ├── OnUserInfo.scala
+
+> │       │               ├── ProviderConfig.scala
+
+> │       │               ├── SignatureAlgo.scala
+
+> │       │               ├── StateParam.scala
+
+> │       │               └── UserInfoDecoder.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── oidc
+
+> │                       └── StateParamTest.scala
+
+> ├── pubsub
+
+> │   ├── api
+
+> │   │   └── src
+
+> │   │       └── main
+
+> │   │           └── scala
+
+> │   │               └── docspell
+
+> │   │                   └── pubsub
+
+> │   │                       └── api
+
+> │   │                           ├── Message.scala
+
+> │   │                           ├── MessageHead.scala
+
+> │   │                           ├── PubSub.scala
+
+> │   │                           ├── PubSubT.scala
+
+> │   │                           ├── Topic.scala
+
+> │   │                           └── TypedTopic.scala
+
+> │   └── naive
+
+> │       └── src
+
+> │           ├── main
+
+> │           │   └── scala
+
+> │           │       └── docspell
+
+> │           │           └── pubsub
+
+> │           │               └── naive
+
+> │           │                   ├── NaivePubSub.scala
+
+> │           │                   └── PubSubConfig.scala
+
+> │           └── test
+
+> │               └── scala
+
+> │                   └── docspell
+
+> │                       └── pubsub
+
+> │                           └── naive
+
+> │                               ├── Fixtures.scala
+
+> │                               ├── HttpClientOps.scala
+
+> │                               ├── NaivePubSubTest.scala
+
+> │                               └── Topics.scala
+
+> ├── query
+
+> │   ├── js
+
+> │   │   └── src
+
+> │   │       └── main
+
+> │   │           └── scala
+
+> │   │               └── docspell
+
+> │   │                   └── query
+
+> │   │                       └── js
+
+> │   │                           └── JSItemQueryParser.scala
+
+> │   └── shared
+
+> │       └── src
+
+> │           ├── main
+
+> │           │   └── scala
+
+> │           │       └── docspell
+
+> │           │           └── query
+
+> │           │               ├── internal
+
+> │           │               │   ├── AttrParser.scala
+
+> │           │               │   ├── BasicParser.scala
+
+> │           │               │   ├── Constants.scala
+
+> │           │               │   ├── DateParser.scala
+
+> │           │               │   ├── ExprParser.scala
+
+> │           │               │   ├── ExprString.scala
+
+> │           │               │   ├── ExprUtil.scala
+
+> │           │               │   ├── MacroParser.scala
+
+> │           │               │   ├── OperatorParser.scala
+
+> │           │               │   ├── SimpleExprParser.scala
+
+> │           │               │   └── StringUtil.scala
+
+> │           │               ├── Date.scala
+
+> │           │               ├── FulltextExtract.scala
+
+> │           │               ├── ItemQuery.scala
+
+> │           │               ├── ItemQueryDsl.scala
+
+> │           │               ├── ItemQueryParser.scala
+
+> │           │               └── ParseFailure.scala
+
+> │           └── test
+
+> │               └── scala
+
+> │                   └── docspell
+
+> │                       └── query
+
+> │                           ├── internal
+
+> │                           │   ├── AttrParserTest.scala
+
+> │                           │   ├── BasicParserTest.scala
+
+> │                           │   ├── DateParserTest.scala
+
+> │                           │   ├── ExprParserTest.scala
+
+> │                           │   ├── ExprStringTest.scala
+
+> │                           │   ├── ItemQueryParserTest.scala
+
+> │                           │   ├── MacroParserTest.scala
+
+> │                           │   ├── OperatorParserTest.scala
+
+> │                           │   ├── SimpleExprParserTest.scala
+
+> │                           │   └── ValueHelper.scala
+
+> │                           ├── FulltextExtractTest.scala
+
+> │                           └── ItemQueryGen.scala
+
+> ├── restapi
+
+> │   └── src
+
+> │       └── main
+
+> │           ├── resources
+
+> │           │   └── docspell-openapi.yml
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── restapi
+
+> │                       ├── codec
+
+> │                       │   ├── ChannelEihterCodec.scala
+
+> │                       │   └── ItemQueryJson.scala
+
+> │                       └── model
+
+> │                           └── NotificationChannel.scala
+
+> ├── restserver
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── resources
+
+> │       │   │   ├── docspell
+
+> │       │   │   │   └── restserver
+
+> │       │   │   │       └── no-preview.svg
+
+> │       │   │   └── reference.conf
+
+> │       │   ├── scala
+
+> │       │   │   └── docspell
+
+> │       │   │       └── restserver
+
+> │       │   │           ├── auth
+
+> │       │   │           │   ├── CookieData.scala
+
+> │       │   │           │   ├── OpenId.scala
+
+> │       │   │           │   ├── RememberCookieData.scala
+
+> │       │   │           │   └── ShareCookieData.scala
+
+> │       │   │           ├── conv
+
+> │       │   │           │   ├── AddonValidationSupport.scala
+
+> │       │   │           │   ├── Conversions.scala
+
+> │       │   │           │   ├── MultiIdSupport.scala
+
+> │       │   │           │   └── NonEmptyListSupport.scala
+
+> │       │   │           ├── http4s
+
+> │       │   │           │   ├── BinaryUtil.scala
+
+> │       │   │           │   ├── ClientRequestInfo.scala
+
+> │       │   │           │   ├── ContentDisposition.scala
+
+> │       │   │           │   ├── EnvMiddleware.scala
+
+> │       │   │           │   ├── InternalHeader.scala
+
+> │       │   │           │   ├── NoCacheMiddleware.scala
+
+> │       │   │           │   ├── QueryParam.scala
+
+> │       │   │           │   ├── ResponseGenerator.scala
+
+> │       │   │           │   ├── Responses.scala
+
+> │       │   │           │   └── ThrowableResponseMapper.scala
+
+> │       │   │           ├── routes
+
+> │       │   │           │   ├── AddonArchiveRoutes.scala
+
+> │       │   │           │   ├── AddonRoutes.scala
+
+> │       │   │           │   ├── AddonRunConfigRoutes.scala
+
+> │       │   │           │   ├── AddonRunRoutes.scala
+
+> │       │   │           │   ├── AdminAuth.scala
+
+> │       │   │           │   ├── AttachmentMultiRoutes.scala
+
+> │       │   │           │   ├── AttachmentRoutes.scala
+
+> │       │   │           │   ├── Authenticate.scala
+
+> │       │   │           │   ├── BookmarkRoutes.scala
+
+> │       │   │           │   ├── CalEventCheckRoutes.scala
+
+> │       │   │           │   ├── CheckFileRoutes.scala
+
+> │       │   │           │   ├── ClientSettingsRoutes.scala
+
+> │       │   │           │   ├── CollectiveRoutes.scala
+
+> │       │   │           │   ├── CustomFieldRoutes.scala
+
+> │       │   │           │   ├── DownloadAllRoutes.scala
+
+> │       │   │           │   ├── EquipmentRoutes.scala
+
+> │       │   │           │   ├── FileRepositoryRoutes.scala
+
+> │       │   │           │   ├── FolderRoutes.scala
+
+> │       │   │           │   ├── FullTextIndexRoutes.scala
+
+> │       │   │           │   ├── InfoRoutes.scala
+
+> │       │   │           │   ├── IntegrationEndpointRoutes.scala
+
+> │       │   │           │   ├── ItemLinkRoutes.scala
+
+> │       │   │           │   ├── ItemMultiRoutes.scala
+
+> │       │   │           │   ├── ItemRoutes.scala
+
+> │       │   │           │   ├── ItemSearchPart.scala
+
+> │       │   │           │   ├── JobQueueRoutes.scala
+
+> │       │   │           │   ├── LoginRoutes.scala
+
+> │       │   │           │   ├── MailSendRoutes.scala
+
+> │       │   │           │   ├── MailSettingsRoutes.scala
+
+> │       │   │           │   ├── NotificationRoutes.scala
+
+> │       │   │           │   ├── NotifyDueItemsRoutes.scala
+
+> │       │   │           │   ├── OrganizationRoutes.scala
+
+> │       │   │           │   ├── PeriodicQueryRoutes.scala
+
+> │       │   │           │   ├── PersonRoutes.scala
+
+> │       │   │           │   ├── RegisterRoutes.scala
+
+> │       │   │           │   ├── ScanMailboxRoutes.scala
+
+> │       │   │           │   ├── SentMailRoutes.scala
+
+> │       │   │           │   ├── ShareAttachmentRoutes.scala
+
+> │       │   │           │   ├── ShareAuth.scala
+
+> │       │   │           │   ├── ShareItemRoutes.scala
+
+> │       │   │           │   ├── ShareRoutes.scala
+
+> │       │   │           │   ├── ShareSearchRoutes.scala
+
+> │       │   │           │   ├── SourceRoutes.scala
+
+> │       │   │           │   ├── TagRoutes.scala
+
+> │       │   │           │   ├── TotpRoutes.scala
+
+> │       │   │           │   ├── UploadRoutes.scala
+
+> │       │   │           │   └── UserRoutes.scala
+
+> │       │   │           ├── webapp
+
+> │       │   │           │   ├── Flags.scala
+
+> │       │   │           │   ├── TemplateRoutes.scala
+
+> │       │   │           │   ├── Templates.scala
+
+> │       │   │           │   └── WebjarRoutes.scala
+
+> │       │   │           ├── ws
+
+> │       │   │           │   ├── Background.scala
+
+> │       │   │           │   ├── InputMessage.scala
+
+> │       │   │           │   ├── OutputEvent.scala
+
+> │       │   │           │   ├── OutputEventEncoder.scala
+
+> │       │   │           │   └── WebSocketRoutes.scala
+
+> │       │   │           ├── Config.scala
+
+> │       │   │           ├── ConfigFile.scala
+
+> │       │   │           ├── Main.scala
+
+> │       │   │           ├── RestApp.scala
+
+> │       │   │           ├── RestAppImpl.scala
+
+> │       │   │           ├── RestServer.scala
+
+> │       │   │           └── Subscriptions.scala
+
+> │       │   └── templates
+
+> │       │       ├── doc.html
+
+> │       │       ├── index.html
+
+> │       │       └── sw.js
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── restserver
+
+> │                       └── http4s
+
+> │                           └── ContentDispositionTest.scala
+
+> ├── scheduler
+
+> │   ├── api
+
+> │   │   └── src
+
+> │   │       ├── main
+
+> │   │       │   └── scala
+
+> │   │       │       └── docspell
+
+> │   │       │           └── scheduler
+
+> │   │       │               ├── msg
+
+> │   │       │               │   ├── CancelJob.scala
+
+> │   │       │               │   ├── JobDone.scala
+
+> │   │       │               │   ├── JobSubmitted.scala
+
+> │   │       │               │   ├── JobsNotify.scala
+
+> │   │       │               │   └── PeriodicTaskNotify.scala
+
+> │   │       │               ├── usertask
+
+> │   │       │               │   ├── UserTask.scala
+
+> │   │       │               │   ├── UserTaskScope.scala
+
+> │   │       │               │   └── UserTaskStore.scala
+
+> │   │       │               ├── Context.scala
+
+> │   │       │               ├── CountingScheme.scala
+
+> │   │       │               ├── FindJobOwner.scala
+
+> │   │       │               ├── Job.scala
+
+> │   │       │               ├── JobStore.scala
+
+> │   │       │               ├── JobStoreModule.scala
+
+> │   │       │               ├── JobTask.scala
+
+> │   │       │               ├── JobTaskRegistry.scala
+
+> │   │       │               ├── JobTaskResult.scala
+
+> │   │       │               ├── JobTaskResultEncoder.scala
+
+> │   │       │               ├── PeriodicScheduler.scala
+
+> │   │       │               ├── PeriodicSchedulerConfig.scala
+
+> │   │       │               ├── PermanentError.scala
+
+> │   │       │               ├── Scheduler.scala
+
+> │   │       │               ├── SchedulerConfig.scala
+
+> │   │       │               ├── SchedulerModule.scala
+
+> │   │       │               └── Task.scala
+
+> │   │       └── test
+
+> │   │           └── scala
+
+> │   │               └── docspell
+
+> │   │                   └── scheduler
+
+> │   │                       └── CountingSchemeSpec.scala
+
+> │   └── impl
+
+> │       └── src
+
+> │           ├── main
+
+> │           │   └── scala
+
+> │           │       └── docspell
+
+> │           │           └── scheduler
+
+> │           │               └── impl
+
+> │           │                   ├── ContextImpl.scala
+
+> │           │                   ├── JobQueue.scala
+
+> │           │                   ├── JobStoreImpl.scala
+
+> │           │                   ├── JobStoreModuleBuilder.scala
+
+> │           │                   ├── JobStorePublish.scala
+
+> │           │                   ├── LogEvent.scala
+
+> │           │                   ├── LogSink.scala
+
+> │           │                   ├── Marked.scala
+
+> │           │                   ├── PeriodicSchedulerBuilder.scala
+
+> │           │                   ├── PeriodicSchedulerImpl.scala
+
+> │           │                   ├── PeriodicTaskStore.scala
+
+> │           │                   ├── QJob.scala
+
+> │           │                   ├── QUserTask.scala
+
+> │           │                   ├── QueueLogger.scala
+
+> │           │                   ├── SchedulerBuilder.scala
+
+> │           │                   ├── SchedulerImpl.scala
+
+> │           │                   ├── SchedulerModuleBuilder.scala
+
+> │           │                   └── UserTaskStoreImpl.scala
+
+> │           └── test
+
+> │               └── scala
+
+> │                   └── docspell
+
+> │                       └── scheduler
+
+> │                           └── impl
+
+> │                               └── QJobTest.scala
+
+> ├── store
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   ├── resources
+
+> │       │   │   └── db
+
+> │       │   │       ├── fixups
+
+> │       │   │       │   ├── h2
+
+> │       │   │       │   │   └── V1.33.0__fix_reorganize_files.sql
+
+> │       │   │       │   ├── mariadb
+
+> │       │   │       │   │   └── V1.33.0__fix_reorganize_files.sql
+
+> │       │   │       │   └── postgresql
+
+> │       │   │       │       └── V1.33.0__fix_reorganize_files.sql
+
+> │       │   │       └── migration
+
+> │       │   │           ├── h2
+
+> │       │   │           │   ├── V1.0.0__initial_database.sql
+
+> │       │   │           │   ├── V1.1.0__useremail.sql
+
+> │       │   │           │   ├── V1.10.0__attachment_preview.sql
+
+> │       │   │           │   ├── V1.11.0__pdf_pages.sql
+
+> │       │   │           │   ├── V1.12.0__upload_data.sql
+
+> │       │   │           │   ├── V1.13.0__custom_fields.sql
+
+> │       │   │           │   ├── V1.14.0__person_org.sql
+
+> │       │   │           │   ├── V1.15.0__rememberme.sql
+
+> │       │   │           │   ├── V1.16.0__add_imap_oauth.sql
+
+> │       │   │           │   ├── V1.17.0__meta_language.sql
+
+> │       │   │           │   ├── V1.18.0__classifier_model.sql
+
+> │       │   │           │   ├── V1.19.0__add_classify_meta.sql
+
+> │       │   │           │   ├── V1.19.1__remove_enabled.sql
+
+> │       │   │           │   ├── V1.2.0__origin_source.sql
+
+> │       │   │           │   ├── V1.20.0__personuse.sql
+
+> │       │   │           │   ├── V1.20.1__equipment_description.sql
+
+> │       │   │           │   ├── V1.20.2__org_shortname.sql
+
+> │       │   │           │   ├── V1.20.3__node_seen.sql
+
+> │       │   │           │   ├── V1.20.4__source_lang.sql
+
+> │       │   │           │   ├── V1.21.0__cast_function.sql
+
+> │       │   │           │   ├── V1.21.1__equip_org_use.sql
+
+> │       │   │           │   ├── V1.22.0__add_task_name.sql
+
+> │       │   │           │   ├── V1.23.0__clientsettings.sql
+
+> │       │   │           │   ├── V1.24.0__drop_fts_migration.sql
+
+> │       │   │           │   ├── V1.25.0__add_empty_trash.sql
+
+> │       │   │           │   ├── V1.25.1__fix_periodic_submitter_value.sql
+
+> │       │   │           │   ├── V1.25.2__add_trash_min_age.sql
+
+> │       │   │           │   ├── V1.25.3__delete_corrupt_trash_task.sql
+
+> │       │   │           │   ├── V1.25.4__add_source_attachonly.sql
+
+> │       │   │           │   ├── V1.26.0__missing_indexes.sql
+
+> │       │   │           │   ├── V1.26.1__totp.sql
+
+> │       │   │           │   ├── V1.26.2__openid.sql
+
+> │       │   │           │   ├── V1.26.3__filestore.sql
+
+> │       │   │           │   ├── V1.27.0__collective_passwords.sql
+
+> │       │   │           │   ├── V1.27.1__item_share.sql
+
+> │       │   │           │   ├── V1.28.0__pubsub.sql
+
+> │       │   │           │   ├── V1.28.1__intern_settings.sql
+
+> │       │   │           │   ├── V1.29.0__reset_classifier_file.sql
+
+> │       │   │           │   ├── V1.29.1__notification.sql
+
+> │       │   │           │   ├── V1.3.0__periodic_job.sql
+
+> │       │   │           │   ├── V1.30.0__clientsettings_collective.sql
+
+> │       │   │           │   ├── V1.31.0__query_bookmark.sql
+
+> │       │   │           │   ├── V1.31.1__gotify_prio.sql
+
+> │       │   │           │   ├── V1.32.0__notification_channel_name.sql
+
+> │       │   │           │   ├── V1.32.1__notification_hook_multi_channel.sql
+
+> │       │   │           │   ├── V1.33.0__reorganize_file_ids.sql
+
+> │       │   │           │   ├── V1.34.0__item_relation.sql
+
+> │       │   │           │   ├── V1.35.0__download_query.sql
+
+> │       │   │           │   ├── V1.35.1__password_length.sql
+
+> │       │   │           │   ├── V1.36.0__addons.sql
+
+> │       │   │           │   ├── V1.38.0__more_indexes.sql
+
+> │       │   │           │   ├── V1.38.1__remove_unused_column.sql
+
+> │       │   │           │   ├── V1.38.2__rememberme.sql
+
+> │       │   │           │   ├── V1.39.0__collective_id.sql
+
+> │       │   │           │   ├── V1.39.1__file_meta_migration.sql
+
+> │       │   │           │   ├── V1.39.3__rename_value.sql
+
+> │       │   │           │   ├── V1.4.0__attachment_archive.sql
+
+> │       │   │           │   ├── V1.5.0__userimap.sql
+
+> │       │   │           │   ├── V1.6.0__integration_enabled.sql
+
+> │       │   │           │   ├── V1.7.0__fts-migration.sql
+
+> │       │   │           │   ├── V1.8.0__folders.sql
+
+> │       │   │           │   ├── V1.9.0__updated_column.sql
+
+> │       │   │           │   ├── V1.9.1__classifier.sql
+
+> │       │   │           │   ├── V1.9.3__joblog_counter.sql
+
+> │       │   │           │   └── V1.9.4__unique_equipments.sql
+
+> │       │   │           ├── mariadb
+
+> │       │   │           │   ├── V1.0.0__initial_database.sql
+
+> │       │   │           │   ├── V1.1.0__useremail.sql
+
+> │       │   │           │   ├── V1.10.0__attachment_preview.sql
+
+> │       │   │           │   ├── V1.11.0__pdf_pages.sql
+
+> │       │   │           │   ├── V1.12.0__upload_data.sql
+
+> │       │   │           │   ├── V1.13.0__custom_fields.sql
+
+> │       │   │           │   ├── V1.14.0__person_org.sql
+
+> │       │   │           │   ├── V1.15.0__rememberme.sql
+
+> │       │   │           │   ├── V1.16.0__add_imap_oauth.sql
+
+> │       │   │           │   ├── V1.17.0__meta_language.sql
+
+> │       │   │           │   ├── V1.18.0__classifier_model.sql
+
+> │       │   │           │   ├── V1.19.0__add_classify_meta.sql
+
+> │       │   │           │   ├── V1.19.1__remove_enabled.sql
+
+> │       │   │           │   ├── V1.2.0__origin_source.sql
+
+> │       │   │           │   ├── V1.20.0__personuse.sql
+
+> │       │   │           │   ├── V1.20.1__equipment_description.sql
+
+> │       │   │           │   ├── V1.20.2__org_shortname.sql
+
+> │       │   │           │   ├── V1.20.3__node_seen.sql
+
+> │       │   │           │   ├── V1.20.4__source_lang.sql
+
+> │       │   │           │   ├── V1.21.0__cast_function.sql
+
+> │       │   │           │   ├── V1.21.1__equip_org_use.sql
+
+> │       │   │           │   ├── V1.22.0__add_task_name.sql
+
+> │       │   │           │   ├── V1.23.0__clientsettings.sql
+
+> │       │   │           │   ├── V1.24.0__drop_fts_migration.sql
+
+> │       │   │           │   ├── V1.25.0__add_empty_trash.sql
+
+> │       │   │           │   ├── V1.25.1__fix_periodic_submitter_value.sql
+
+> │       │   │           │   ├── V1.25.2__add_trash_min_age.sql
+
+> │       │   │           │   ├── V1.25.3__delete_corrupt_trash_task.sql
+
+> │       │   │           │   ├── V1.25.4__add_source_attachonly.sql
+
+> │       │   │           │   ├── V1.26.0__missing_indexes.sql
+
+> │       │   │           │   ├── V1.26.1__totp.sql
+
+> │       │   │           │   ├── V1.26.2__openid.sql
+
+> │       │   │           │   ├── V1.26.3__filestore.sql
+
+> │       │   │           │   ├── V1.27.0__collective_passwords.sql
+
+> │       │   │           │   ├── V1.27.1__item_share.sql
+
+> │       │   │           │   ├── V1.28.0__pubsub.sql
+
+> │       │   │           │   ├── V1.28.1__intern_settings.sql
+
+> │       │   │           │   ├── V1.29.0__reset_classifier_file.sql
+
+> │       │   │           │   ├── V1.29.1__notification.sql
+
+> │       │   │           │   ├── V1.3.0__periodic_job.sql
+
+> │       │   │           │   ├── V1.30.0__clientsettings_collective.sql
+
+> │       │   │           │   ├── V1.31.0__query_bookmark.sql
+
+> │       │   │           │   ├── V1.31.1__gotify_prio.sql
+
+> │       │   │           │   ├── V1.32.0__notification_channel_name.sql
+
+> │       │   │           │   ├── V1.32.1__notification_hook_multi_channel.sql
+
+> │       │   │           │   ├── V1.33.0__reorganize_file_ids.sql
+
+> │       │   │           │   ├── V1.34.0__item_relation.sql
+
+> │       │   │           │   ├── V1.35.0__download_query.sql
+
+> │       │   │           │   ├── V1.35.1__password_length.sql
+
+> │       │   │           │   ├── V1.36.0__addons.sql
+
+> │       │   │           │   ├── V1.38.0__more_indexes.sql
+
+> │       │   │           │   ├── V1.38.1__remove_unused_column.sql
+
+> │       │   │           │   ├── V1.38.2__rememberme.sql
+
+> │       │   │           │   ├── V1.39.0__collective_id.sql
+
+> │       │   │           │   ├── V1.39.1__file_meta_migration.sql
+
+> │       │   │           │   ├── V1.39.3__rename_value.sql
+
+> │       │   │           │   ├── V1.4.0__attachment_archive.sql
+
+> │       │   │           │   ├── V1.5.0__userimap.sql
+
+> │       │   │           │   ├── V1.6.0__integration_enabled.sql
+
+> │       │   │           │   ├── V1.6.1__fix_timestamp_columns.sql
+
+> │       │   │           │   ├── V1.7.0__fts-migration.sql
+
+> │       │   │           │   ├── V1.7.1__fix_item_date.sql
+
+> │       │   │           │   ├── V1.8.0__folders.sql
+
+> │       │   │           │   ├── V1.9.0__updated_column.sql
+
+> │       │   │           │   ├── V1.9.1__classifier.sql
+
+> │       │   │           │   ├── V1.9.2__fix_text_length.sql
+
+> │       │   │           │   ├── V1.9.3__joblog_counter.sql
+
+> │       │   │           │   └── V1.9.4__unique_equipments.sql
+
+> │       │   │           └── postgresql
+
+> │       │   │               ├── V1.0.0__initial_database.sql
+
+> │       │   │               ├── V1.1.0__useremail.sql
+
+> │       │   │               ├── V1.10.0__attachment_preview.sql
+
+> │       │   │               ├── V1.11.0__pdf_pages.sql
+
+> │       │   │               ├── V1.12.0__upload_data.sql
+
+> │       │   │               ├── V1.13.0__custom_fields.sql
+
+> │       │   │               ├── V1.14.0__person_org.sql
+
+> │       │   │               ├── V1.15.0__rememberme.sql
+
+> │       │   │               ├── V1.16.0__add_imap_oauth.sql
+
+> │       │   │               ├── V1.17.0__meta_language.sql
+
+> │       │   │               ├── V1.18.0__classifier_model.sql
+
+> │       │   │               ├── V1.19.0__add_classify_meta.sql
+
+> │       │   │               ├── V1.19.1__remove_enabled.sql
+
+> │       │   │               ├── V1.2.0__origin_source.sql
+
+> │       │   │               ├── V1.20.0__personuse.sql
+
+> │       │   │               ├── V1.20.1__equipment_description.sql
+
+> │       │   │               ├── V1.20.2__org_shortname.sql
+
+> │       │   │               ├── V1.20.3__node_seen.sql
+
+> │       │   │               ├── V1.20.4__source_lang.sql
+
+> │       │   │               ├── V1.21.0__cast_function.sql
+
+> │       │   │               ├── V1.21.1__equip_org_use.sql
+
+> │       │   │               ├── V1.22.0__add_task_name.sql
+
+> │       │   │               ├── V1.23.0__clientsettings.sql
+
+> │       │   │               ├── V1.24.0__drop_fts_migration.sql
+
+> │       │   │               ├── V1.25.0__add_empty_trash.sql
+
+> │       │   │               ├── V1.25.1__fix_periodic_submitter_value.sql
+
+> │       │   │               ├── V1.25.2__add_trash_min_age.sql
+
+> │       │   │               ├── V1.25.3__delete_corrupt_trash_task.sql
+
+> │       │   │               ├── V1.25.4__add_source_attachonly.sql
+
+> │       │   │               ├── V1.26.0__missing_indexes.sql
+
+> │       │   │               ├── V1.26.1__totp.sql
+
+> │       │   │               ├── V1.26.2__openid.sql
+
+> │       │   │               ├── V1.26.3__filestore.sql
+
+> │       │   │               ├── V1.27.0__collective_passwords.sql
+
+> │       │   │               ├── V1.27.1__item_share.sql
+
+> │       │   │               ├── V1.28.0__pubsub.sql
+
+> │       │   │               ├── V1.28.1__intern_settings.sql
+
+> │       │   │               ├── V1.29.0__reset_classifier_file.sql
+
+> │       │   │               ├── V1.29.1__notification.sql
+
+> │       │   │               ├── V1.3.0__periodic_job.sql
+
+> │       │   │               ├── V1.30.0__clientsettings_collective.sql
+
+> │       │   │               ├── V1.31.0__query_bookmark.sql
+
+> │       │   │               ├── V1.31.1__gotify_prio.sql
+
+> │       │   │               ├── V1.32.0__notification_channel_name.sql
+
+> │       │   │               ├── V1.32.1__notification_hook_multi_channel.sql
+
+> │       │   │               ├── V1.33.0__reorganize_file_ids.sql
+
+> │       │   │               ├── V1.34.0__item_relation.sql
+
+> │       │   │               ├── V1.35.0__download_query.sql
+
+> │       │   │               ├── V1.35.1__password_length.sql
+
+> │       │   │               ├── V1.36.0__addons.sql
+
+> │       │   │               ├── V1.38.0__more_indexes.sql
+
+> │       │   │               ├── V1.38.1__remove_unused_column.sql
+
+> │       │   │               ├── V1.38.2__rememberme.sql
+
+> │       │   │               ├── V1.39.0__collective_id.sql
+
+> │       │   │               ├── V1.39.1__file_meta_migration.sql
+
+> │       │   │               ├── V1.39.3__rename_value.sql
+
+> │       │   │               ├── V1.4.0__attachment_archive.sql
+
+> │       │   │               ├── V1.5.0__userimap.sql
+
+> │       │   │               ├── V1.6.0__integration_enabled.sql
+
+> │       │   │               ├── V1.7.0__fts-migration.sql
+
+> │       │   │               ├── V1.8.0__folders.sql
+
+> │       │   │               ├── V1.9.0__updated_column.sql
+
+> │       │   │               ├── V1.9.1__classifier.sql
+
+> │       │   │               ├── V1.9.3__joblog_counter.sql
+
+> │       │   │               └── V1.9.4__unique_equipments.sql
+
+> │       │   └── scala
+
+> │       │       ├── db
+
+> │       │       │   └── migration
+
+> │       │       │       ├── common
+
+> │       │       │       │   ├── JsonCodecs.scala
+
+> │       │       │       │   ├── MigrateCollectiveIdTaskArgs.scala
+
+> │       │       │       │   ├── MigrateDueItemTasks.scala
+
+> │       │       │       │   ├── MigrateNotifyTasks.scala
+
+> │       │       │       │   └── TransactorSupport.scala
+
+> │       │       │       ├── data
+
+> │       │       │       │   ├── AllPreviewsArgs.scala
+
+> │       │       │       │   ├── ConvertAllPdfArgs.scala
+
+> │       │       │       │   ├── DownloadZipArgs.scala
+
+> │       │       │       │   ├── EmptyTrashArgs.scala
+
+> │       │       │       │   ├── FileIntegrityCheckArgs.scala
+
+> │       │       │       │   ├── ItemAddonTaskArgs.scala
+
+> │       │       │       │   ├── LearnClassifierArgs.scala
+
+> │       │       │       │   ├── NotifyDueItemsArgs.scala
+
+> │       │       │       │   ├── PeriodicDueItemsArgs.scala
+
+> │       │       │       │   ├── PeriodicDueItemsArgsOld.scala
+
+> │       │       │       │   ├── PeriodicQueryArgs.scala
+
+> │       │       │       │   ├── PeriodicQueryArgsOld.scala
+
+> │       │       │       │   ├── ProcessItemArgs.scala
+
+> │       │       │       │   ├── ReIndexTaskArgs.scala
+
+> │       │       │       │   ├── ScanMailboxArgs.scala
+
+> │       │       │       │   ├── ScheduledAddonTaskArgs.scala
+
+> │       │       │       │   └── package.scala
+
+> │       │       │       ├── h2
+
+> │       │       │       │   ├── V1_29_2__MigrateNotifyTask.scala
+
+> │       │       │       │   ├── V1_32_2__MigrateChannels.scala
+
+> │       │       │       │   └── V1_39_2__MigrateTasks.scala
+
+> │       │       │       ├── mariadb
+
+> │       │       │       │   ├── V1_29_2__MigrateNotifyTask.scala
+
+> │       │       │       │   ├── V1_32_2__MigrateChannels.scala
+
+> │       │       │       │   └── V1_39_2__MigrateTasks.scala
+
+> │       │       │       └── postgresql
+
+> │       │       │           ├── V1_29_2__MigrateNotifyTask.scala
+
+> │       │       │           ├── V1_32_2__MigrateChannels.scala
+
+> │       │       │           └── V1_39_2__MigrateTasks.scala
+
+> │       │       └── docspell
+
+> │       │           └── store
+
+> │       │               ├── file
+
+> │       │               │   ├── AttributeStore.scala
+
+> │       │               │   ├── BinnyUtils.scala
+
+> │       │               │   ├── FileMetadata.scala
+
+> │       │               │   ├── FileRepository.scala
+
+> │       │               │   ├── FileRepositoryConfig.scala
+
+> │       │               │   ├── FileRepositoryImpl.scala
+
+> │       │               │   └── FileUrlReader.scala
+
+> │       │               ├── fts
+
+> │       │               │   ├── ContextEntry.scala
+
+> │       │               │   ├── RFtsResult.scala
+
+> │       │               │   └── TempFtsOps.scala
+
+> │       │               ├── impl
+
+> │       │               │   ├── h2
+
+> │       │               │   │   └── CastNumericFun.scala
+
+> │       │               │   ├── DoobieLogging.scala
+
+> │       │               │   ├── DoobieMeta.scala
+
+> │       │               │   └── StoreImpl.scala
+
+> │       │               ├── migrate
+
+> │       │               │   └── FlywayMigrate.scala
+
+> │       │               ├── qb
+
+> │       │               │   ├── generator
+
+> │       │               │   │   ├── ItemQueryGenerator.scala
+
+> │       │               │   │   └── Tables.scala
+
+> │       │               │   ├── impl
+
+> │       │               │   │   ├── CommonBuilder.scala
+
+> │       │               │   │   ├── ConditionBuilder.scala
+
+> │       │               │   │   ├── DBFunctionBuilder.scala
+
+> │       │               │   │   ├── FromExprBuilder.scala
+
+> │       │               │   │   ├── SelectBuilder.scala
+
+> │       │               │   │   └── SelectExprBuilder.scala
+
+> │       │               │   ├── Batch.scala
+
+> │       │               │   ├── Column.scala
+
+> │       │               │   ├── Condition.scala
+
+> │       │               │   ├── CteBind.scala
+
+> │       │               │   ├── DBFunction.scala
+
+> │       │               │   ├── DML.scala
+
+> │       │               │   ├── DSL.scala
+
+> │       │               │   ├── FromExpr.scala
+
+> │       │               │   ├── GroupBy.scala
+
+> │       │               │   ├── Operator.scala
+
+> │       │               │   ├── OrderBy.scala
+
+> │       │               │   ├── Select.scala
+
+> │       │               │   ├── SelectExpr.scala
+
+> │       │               │   ├── Setter.scala
+
+> │       │               │   └── TableDef.scala
+
+> │       │               ├── queries
+
+> │       │               │   ├── AttachedFile.scala
+
+> │       │               │   ├── AttachmentLight.scala
+
+> │       │               │   ├── CategoryCount.scala
+
+> │       │               │   ├── ChannelMap.scala
+
+> │       │               │   ├── CustomValue.scala
+
+> │       │               │   ├── FieldStats.scala
+
+> │       │               │   ├── FolderCount.scala
+
+> │       │               │   ├── FtsSupport.scala
+
+> │       │               │   ├── IdRefCount.scala
+
+> │       │               │   ├── ItemData.scala
+
+> │       │               │   ├── ItemFieldValue.scala
+
+> │       │               │   ├── ItemFileMeta.scala
+
+> │       │               │   ├── ListItem.scala
+
+> │       │               │   ├── ListItemWithTags.scala
+
+> │       │               │   ├── QAttachment.scala
+
+> │       │               │   ├── QCollective.scala
+
+> │       │               │   ├── QCustomField.scala
+
+> │       │               │   ├── QFolder.scala
+
+> │       │               │   ├── QItem.scala
+
+> │       │               │   ├── QJobQueue.scala
+
+> │       │               │   ├── QLogin.scala
+
+> │       │               │   ├── QMails.scala
+
+> │       │               │   ├── QMoveAttachment.scala
+
+> │       │               │   ├── QNotification.scala
+
+> │       │               │   ├── QOrganization.scala
+
+> │       │               │   ├── QPeriodicTask.scala
+
+> │       │               │   ├── QUser.scala
+
+> │       │               │   ├── Query.scala
+
+> │       │               │   ├── QueryWildcard.scala
+
+> │       │               │   ├── SearchSummary.scala
+
+> │       │               │   ├── SelectedItem.scala
+
+> │       │               │   ├── TagCount.scala
+
+> │       │               │   └── TextAndTag.scala
+
+> │       │               ├── records
+
+> │       │               │   ├── AddonRunConfigData.scala
+
+> │       │               │   ├── AddonRunConfigResolved.scala
+
+> │       │               │   ├── RAddonArchive.scala
+
+> │       │               │   ├── RAddonRunConfig.scala
+
+> │       │               │   ├── RAddonRunConfigAddon.scala
+
+> │       │               │   ├── RAddonRunConfigTrigger.scala
+
+> │       │               │   ├── RAttachment.scala
+
+> │       │               │   ├── RAttachmentArchive.scala
+
+> │       │               │   ├── RAttachmentMeta.scala
+
+> │       │               │   ├── RAttachmentPreview.scala
+
+> │       │               │   ├── RAttachmentSource.scala
+
+> │       │               │   ├── RClassifierModel.scala
+
+> │       │               │   ├── RClassifierSetting.scala
+
+> │       │               │   ├── RClientSettingsCollective.scala
+
+> │       │               │   ├── RClientSettingsUser.scala
+
+> │       │               │   ├── RCollective.scala
+
+> │       │               │   ├── RCollectivePassword.scala
+
+> │       │               │   ├── RContact.scala
+
+> │       │               │   ├── RCustomField.scala
+
+> │       │               │   ├── RCustomFieldValue.scala
+
+> │       │               │   ├── RDownloadQuery.scala
+
+> │       │               │   ├── REmptyTrashSetting.scala
+
+> │       │               │   ├── REquipment.scala
+
+> │       │               │   ├── RFileMeta.scala
+
+> │       │               │   ├── RFolder.scala
+
+> │       │               │   ├── RFolderMember.scala
+
+> │       │               │   ├── RInternalSetting.scala
+
+> │       │               │   ├── RInvitation.scala
+
+> │       │               │   ├── RItem.scala
+
+> │       │               │   ├── RItemLink.scala
+
+> │       │               │   ├── RItemProposal.scala
+
+> │       │               │   ├── RJob.scala
+
+> │       │               │   ├── RJobGroupUse.scala
+
+> │       │               │   ├── RJobLog.scala
+
+> │       │               │   ├── RNode.scala
+
+> │       │               │   ├── RNotificationChannel.scala
+
+> │       │               │   ├── RNotificationChannelGotify.scala
+
+> │       │               │   ├── RNotificationChannelHttp.scala
+
+> │       │               │   ├── RNotificationChannelMail.scala
+
+> │       │               │   ├── RNotificationChannelMatrix.scala
+
+> │       │               │   ├── RNotificationHook.scala
+
+> │       │               │   ├── RNotificationHookChannel.scala
+
+> │       │               │   ├── RNotificationHookEvent.scala
+
+> │       │               │   ├── ROrganization.scala
+
+> │       │               │   ├── RPeriodicTask.scala
+
+> │       │               │   ├── RPerson.scala
+
+> │       │               │   ├── RPubSub.scala
+
+> │       │               │   ├── RQueryBookmark.scala
+
+> │       │               │   ├── RRememberMe.scala
+
+> │       │               │   ├── RSentMail.scala
+
+> │       │               │   ├── RSentMailItem.scala
+
+> │       │               │   ├── RShare.scala
+
+> │       │               │   ├── RSource.scala
+
+> │       │               │   ├── RTag.scala
+
+> │       │               │   ├── RTagItem.scala
+
+> │       │               │   ├── RTagSource.scala
+
+> │       │               │   ├── RTotp.scala
+
+> │       │               │   ├── RUser.scala
+
+> │       │               │   ├── RUserEmail.scala
+
+> │       │               │   ├── RUserImap.scala
+
+> │       │               │   ├── SourceData.scala
+
+> │       │               │   └── TagItemName.scala
+
+> │       │               ├── syntax
+
+> │       │               │   └── MimeTypes.scala
+
+> │       │               ├── AddResult.scala
+
+> │       │               ├── Db.scala
+
+> │       │               ├── JdbcConfig.scala
+
+> │       │               ├── SchemaMigrateConfig.scala
+
+> │       │               ├── Store.scala
+
+> │       │               └── UpdateResult.scala
+
+> │       └── test
+
+> │           ├── resources
+
+> │           │   └── docspell-0.24.0-dump-h2-1.24.0-2021-07-13-2307.sql
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── store
+
+> │                       ├── fts
+
+> │                       │   └── TempFtsOpsTest.scala
+
+> │                       ├── generator
+
+> │                       │   └── ItemQueryGeneratorTest.scala
+
+> │                       ├── migrate
+
+> │                       │   └── MigrateTest.scala
+
+> │                       ├── qb
+
+> │                       │   ├── impl
+
+> │                       │   │   ├── ConditionBuilderTest.scala
+
+> │                       │   │   ├── DSLTest.scala
+
+> │                       │   │   └── SelectBuilderTest.scala
+
+> │                       │   ├── model
+
+> │                       │   │   ├── CourseRecord.scala
+
+> │                       │   │   └── PersonRecord.scala
+
+> │                       │   └── QueryBuilderTest.scala
+
+> │                       ├── queries
+
+> │                       │   └── QueryWildcardTest.scala
+
+> │                       ├── DatabaseTest.scala
+
+> │                       ├── Docker.scala
+
+> │                       └── StoreFixture.scala
+
+> ├── totp
+
+> │   └── src
+
+> │       ├── main
+
+> │       │   └── scala
+
+> │       │       └── docspell
+
+> │       │           └── totp
+
+> │       │               ├── Key.scala
+
+> │       │               ├── Mac.scala
+
+> │       │               ├── OnetimePassword.scala
+
+> │       │               ├── PassLength.scala
+
+> │       │               ├── Settings.scala
+
+> │       │               └── Totp.scala
+
+> │       └── test
+
+> │           └── scala
+
+> │               └── docspell
+
+> │                   └── totp
+
+> │                       ├── KeyTest.scala
+
+> │                       └── TotpTest.scala
+
+> └── webapp
+
+>     ├── src
+
+>     │   └── main
+
+>     │       ├── elm
+
+>     │       │   ├── App
+
+>     │       │   │   ├── Data.elm
+
+>     │       │   │   ├── Update.elm
+
+>     │       │   │   └── View2.elm
+
+>     │       │   ├── Comp
+
+>     │       │   │   ├── ItemDetail
+
+>     │       │   │   │   ├── AddFilesForm.elm
+
+>     │       │   │   │   ├── ConfirmModalView.elm
+
+>     │       │   │   │   ├── EditForm.elm
+
+>     │       │   │   │   ├── FieldTabState.elm
+
+>     │       │   │   │   ├── FormChange.elm
+
+>     │       │   │   │   ├── ItemInfoHeader.elm
+
+>     │       │   │   │   ├── Model.elm
+
+>     │       │   │   │   ├── MultiEditMenu.elm
+
+>     │       │   │   │   ├── Notes.elm
+
+>     │       │   │   │   ├── RunAddonForm.elm
+
+>     │       │   │   │   ├── ShowQrCode.elm
+
+>     │       │   │   │   ├── SingleAttachment.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── AddonArchiveForm.elm
+
+>     │       │   │   ├── AddonArchiveManage.elm
+
+>     │       │   │   ├── AddonArchiveTable.elm
+
+>     │       │   │   ├── AddonRunConfigForm.elm
+
+>     │       │   │   ├── AddonRunConfigManage.elm
+
+>     │       │   │   ├── AddonRunConfigTable.elm
+
+>     │       │   │   ├── AddressForm.elm
+
+>     │       │   │   ├── AttachmentMeta.elm
+
+>     │       │   │   ├── Basic.elm
+
+>     │       │   │   ├── BasicSizeField.elm
+
+>     │       │   │   ├── BookmarkChooser.elm
+
+>     │       │   │   ├── BookmarkDropdown.elm
+
+>     │       │   │   ├── BookmarkManage.elm
+
+>     │       │   │   ├── BookmarkQueryForm.elm
+
+>     │       │   │   ├── BookmarkQueryManage.elm
+
+>     │       │   │   ├── BookmarkTable.elm
+
+>     │       │   │   ├── BoxEdit.elm
+
+>     │       │   │   ├── BoxMessageEdit.elm
+
+>     │       │   │   ├── BoxQueryEdit.elm
+
+>     │       │   │   ├── BoxQueryView.elm
+
+>     │       │   │   ├── BoxSearchQueryInput.elm
+
+>     │       │   │   ├── BoxStatsEdit.elm
+
+>     │       │   │   ├── BoxStatsView.elm
+
+>     │       │   │   ├── BoxUploadEdit.elm
+
+>     │       │   │   ├── BoxUploadView.elm
+
+>     │       │   │   ├── BoxView.elm
+
+>     │       │   │   ├── CalEventInput.elm
+
+>     │       │   │   ├── ChangePasswordForm.elm
+
+>     │       │   │   ├── ChannelForm.elm
+
+>     │       │   │   ├── ChannelMenu.elm
+
+>     │       │   │   ├── ChannelRefInput.elm
+
+>     │       │   │   ├── ClassifierSettingsForm.elm
+
+>     │       │   │   ├── CollectiveSettingsForm.elm
+
+>     │       │   │   ├── ColorTagger.elm
+
+>     │       │   │   ├── ConfirmModal.elm
+
+>     │       │   │   ├── ContactField.elm
+
+>     │       │   │   ├── CustomFieldForm.elm
+
+>     │       │   │   ├── CustomFieldInput.elm
+
+>     │       │   │   ├── CustomFieldManage.elm
+
+>     │       │   │   ├── CustomFieldMultiInput.elm
+
+>     │       │   │   ├── CustomFieldTable.elm
+
+>     │       │   │   ├── DashboardEdit.elm
+
+>     │       │   │   ├── DashboardManage.elm
+
+>     │       │   │   ├── DashboardView.elm
+
+>     │       │   │   ├── DatePicker.elm
+
+>     │       │   │   ├── DetailEdit.elm
+
+>     │       │   │   ├── DownloadAll.elm
+
+>     │       │   │   ├── Dropdown.elm
+
+>     │       │   │   ├── Dropzone.elm
+
+>     │       │   │   ├── DueItemsTaskForm.elm
+
+>     │       │   │   ├── DueItemsTaskList.elm
+
+>     │       │   │   ├── DueItemsTaskManage.elm
+
+>     │       │   │   ├── EmailInput.elm
+
+>     │       │   │   ├── EmailSettingsForm.elm
+
+>     │       │   │   ├── EmailSettingsManage.elm
+
+>     │       │   │   ├── EmailSettingsTable.elm
+
+>     │       │   │   ├── EmptyTrashForm.elm
+
+>     │       │   │   ├── EquipmentForm.elm
+
+>     │       │   │   ├── EquipmentManage.elm
+
+>     │       │   │   ├── EquipmentTable.elm
+
+>     │       │   │   ├── EventSample.elm
+
+>     │       │   │   ├── ExpandCollapse.elm
+
+>     │       │   │   ├── FieldListSelect.elm
+
+>     │       │   │   ├── FixedDropdown.elm
+
+>     │       │   │   ├── FolderDetail.elm
+
+>     │       │   │   ├── FolderManage.elm
+
+>     │       │   │   ├── FolderSelect.elm
+
+>     │       │   │   ├── FolderTable.elm
+
+>     │       │   │   ├── ImapSettingsForm.elm
+
+>     │       │   │   ├── ImapSettingsManage.elm
+
+>     │       │   │   ├── ImapSettingsTable.elm
+
+>     │       │   │   ├── IntField.elm
+
+>     │       │   │   ├── ItemCard.elm
+
+>     │       │   │   ├── ItemCardList.elm
+
+>     │       │   │   ├── ItemColumnDropdown.elm
+
+>     │       │   │   ├── ItemColumnView.elm
+
+>     │       │   │   ├── ItemDetail.elm
+
+>     │       │   │   ├── ItemLinkForm.elm
+
+>     │       │   │   ├── ItemMail.elm
+
+>     │       │   │   ├── ItemMerge.elm
+
+>     │       │   │   ├── ItemSearchInput.elm
+
+>     │       │   │   ├── KeyInput.elm
+
+>     │       │   │   ├── LinkTarget.elm
+
+>     │       │   │   ├── MarkdownInput.elm
+
+>     │       │   │   ├── MenuBar.elm
+
+>     │       │   │   ├── NotificationChannelManage.elm
+
+>     │       │   │   ├── NotificationChannelTable.elm
+
+>     │       │   │   ├── NotificationGotifyForm.elm
+
+>     │       │   │   ├── NotificationHookForm.elm
+
+>     │       │   │   ├── NotificationHookManage.elm
+
+>     │       │   │   ├── NotificationHookTable.elm
+
+>     │       │   │   ├── NotificationHttpForm.elm
+
+>     │       │   │   ├── NotificationMailForm.elm
+
+>     │       │   │   ├── NotificationMatrixForm.elm
+
+>     │       │   │   ├── NotificationTest.elm
+
+>     │       │   │   ├── OrgForm.elm
+
+>     │       │   │   ├── OrgManage.elm
+
+>     │       │   │   ├── OrgTable.elm
+
+>     │       │   │   ├── OtpSetup.elm
+
+>     │       │   │   ├── PasswordInput.elm
+
+>     │       │   │   ├── PeriodicQueryTaskForm.elm
+
+>     │       │   │   ├── PeriodicQueryTaskList.elm
+
+>     │       │   │   ├── PeriodicQueryTaskManage.elm
+
+>     │       │   │   ├── PersonForm.elm
+
+>     │       │   │   ├── PersonManage.elm
+
+>     │       │   │   ├── PersonTable.elm
+
+>     │       │   │   ├── PowerSearchInput.elm
+
+>     │       │   │   ├── Progress.elm
+
+>     │       │   │   ├── PublishItems.elm
+
+>     │       │   │   ├── ScanMailboxForm.elm
+
+>     │       │   │   ├── ScanMailboxList.elm
+
+>     │       │   │   ├── ScanMailboxManage.elm
+
+>     │       │   │   ├── SearchMenu.elm
+
+>     │       │   │   ├── SearchStatsView.elm
+
+>     │       │   │   ├── SentMails.elm
+
+>     │       │   │   ├── ShareForm.elm
+
+>     │       │   │   ├── ShareMail.elm
+
+>     │       │   │   ├── ShareManage.elm
+
+>     │       │   │   ├── SharePasswordForm.elm
+
+>     │       │   │   ├── ShareTable.elm
+
+>     │       │   │   ├── ShareView.elm
+
+>     │       │   │   ├── SimpleTextInput.elm
+
+>     │       │   │   ├── SourceForm.elm
+
+>     │       │   │   ├── SourceManage.elm
+
+>     │       │   │   ├── SourceTable.elm
+
+>     │       │   │   ├── StringListInput.elm
+
+>     │       │   │   ├── Tabs.elm
+
+>     │       │   │   ├── TagDropdown.elm
+
+>     │       │   │   ├── TagForm.elm
+
+>     │       │   │   ├── TagManage.elm
+
+>     │       │   │   ├── TagSelect.elm
+
+>     │       │   │   ├── TagTable.elm
+
+>     │       │   │   ├── UiSettingsForm.elm
+
+>     │       │   │   ├── UiSettingsManage.elm
+
+>     │       │   │   ├── UiSettingsMigrate.elm
+
+>     │       │   │   ├── UploadForm.elm
+
+>     │       │   │   ├── UrlCopy.elm
+
+>     │       │   │   ├── UserForm.elm
+
+>     │       │   │   ├── UserManage.elm
+
+>     │       │   │   ├── UserTable.elm
+
+>     │       │   │   └── YesNoDimmer.elm
+
+>     │       │   ├── Data
+
+>     │       │   │   ├── AccountScope.elm
+
+>     │       │   │   ├── AddonTrigger.elm
+
+>     │       │   │   ├── AppEvent.elm
+
+>     │       │   │   ├── BasicSize.elm
+
+>     │       │   │   ├── Bookmarks.elm
+
+>     │       │   │   ├── Box.elm
+
+>     │       │   │   ├── BoxContent.elm
+
+>     │       │   │   ├── CalEvent.elm
+
+>     │       │   │   ├── ChannelRef.elm
+
+>     │       │   │   ├── ChannelType.elm
+
+>     │       │   │   ├── Color.elm
+
+>     │       │   │   ├── ContactType.elm
+
+>     │       │   │   ├── CustomFieldChange.elm
+
+>     │       │   │   ├── CustomFieldOrder.elm
+
+>     │       │   │   ├── CustomFieldType.elm
+
+>     │       │   │   ├── Dashboard.elm
+
+>     │       │   │   ├── Dashboards.elm
+
+>     │       │   │   ├── Direction.elm
+
+>     │       │   │   ├── DownloadAllState.elm
+
+>     │       │   │   ├── DownloadFileType.elm
+
+>     │       │   │   ├── DropdownStyle.elm
+
+>     │       │   │   ├── Environment.elm
+
+>     │       │   │   ├── EquipmentOrder.elm
+
+>     │       │   │   ├── EquipmentUse.elm
+
+>     │       │   │   ├── EventType.elm
+
+>     │       │   │   ├── Fields.elm
+
+>     │       │   │   ├── Flags.elm
+
+>     │       │   │   ├── FolderOrder.elm
+
+>     │       │   │   ├── Icons.elm
+
+>     │       │   │   ├── ItemArrange.elm
+
+>     │       │   │   ├── ItemColumn.elm
+
+>     │       │   │   ├── ItemIds.elm
+
+>     │       │   │   ├── ItemNav.elm
+
+>     │       │   │   ├── ItemQuery.elm
+
+>     │       │   │   ├── ItemSelection.elm
+
+>     │       │   │   ├── ItemTemplate.elm
+
+>     │       │   │   ├── Items.elm
+
+>     │       │   │   ├── Language.elm
+
+>     │       │   │   ├── ListType.elm
+
+>     │       │   │   ├── Money.elm
+
+>     │       │   │   ├── NotificationChannel.elm
+
+>     │       │   │   ├── OrgUse.elm
+
+>     │       │   │   ├── OrganizationOrder.elm
+
+>     │       │   │   ├── Pdf.elm
+
+>     │       │   │   ├── PersonOrder.elm
+
+>     │       │   │   ├── PersonUse.elm
+
+>     │       │   │   ├── Priority.elm
+
+>     │       │   │   ├── QueryParseResult.elm
+
+>     │       │   │   ├── SSLType.elm
+
+>     │       │   │   ├── SearchMode.elm
+
+>     │       │   │   ├── ServerEvent.elm
+
+>     │       │   │   ├── SourceState.elm
+
+>     │       │   │   ├── TagOrder.elm
+
+>     │       │   │   ├── TimeZone.elm
+
+>     │       │   │   ├── UiSettings.elm
+
+>     │       │   │   ├── UiTheme.elm
+
+>     │       │   │   ├── UserState.elm
+
+>     │       │   │   └── Validated.elm
+
+>     │       │   ├── Messages
+
+>     │       │   │   ├── Comp
+
+>     │       │   │   │   ├── ItemDetail
+
+>     │       │   │   │   │   ├── AddFilesForm.elm
+
+>     │       │   │   │   │   ├── ConfirmModal.elm
+
+>     │       │   │   │   │   ├── EditForm.elm
+
+>     │       │   │   │   │   ├── ItemInfoHeader.elm
+
+>     │       │   │   │   │   ├── MultiEditMenu.elm
+
+>     │       │   │   │   │   ├── Notes.elm
+
+>     │       │   │   │   │   ├── RunAddonForm.elm
+
+>     │       │   │   │   │   └── SingleAttachment.elm
+
+>     │       │   │   │   ├── AddonArchiveForm.elm
+
+>     │       │   │   │   ├── AddonArchiveManage.elm
+
+>     │       │   │   │   ├── AddonArchiveTable.elm
+
+>     │       │   │   │   ├── AddonRunConfigForm.elm
+
+>     │       │   │   │   ├── AddonRunConfigManage.elm
+
+>     │       │   │   │   ├── AddonRunConfigTable.elm
+
+>     │       │   │   │   ├── AddressForm.elm
+
+>     │       │   │   │   ├── AttachmentMeta.elm
+
+>     │       │   │   │   ├── BookmarkChooser.elm
+
+>     │       │   │   │   ├── BookmarkDropdown.elm
+
+>     │       │   │   │   ├── BookmarkManage.elm
+
+>     │       │   │   │   ├── BookmarkQueryForm.elm
+
+>     │       │   │   │   ├── BookmarkQueryManage.elm
+
+>     │       │   │   │   ├── BookmarkTable.elm
+
+>     │       │   │   │   ├── BoxEdit.elm
+
+>     │       │   │   │   ├── BoxMessageEdit.elm
+
+>     │       │   │   │   ├── BoxQueryEdit.elm
+
+>     │       │   │   │   ├── BoxQueryView.elm
+
+>     │       │   │   │   ├── BoxSearchQueryInput.elm
+
+>     │       │   │   │   ├── BoxStatsEdit.elm
+
+>     │       │   │   │   ├── BoxStatsView.elm
+
+>     │       │   │   │   ├── BoxUploadEdit.elm
+
+>     │       │   │   │   ├── BoxUploadView.elm
+
+>     │       │   │   │   ├── BoxView.elm
+
+>     │       │   │   │   ├── CalEventInput.elm
+
+>     │       │   │   │   ├── ChangePasswordForm.elm
+
+>     │       │   │   │   ├── ChannelForm.elm
+
+>     │       │   │   │   ├── ChannelRefInput.elm
+
+>     │       │   │   │   ├── ClassifierSettingsForm.elm
+
+>     │       │   │   │   ├── CollectiveSettingsForm.elm
+
+>     │       │   │   │   ├── CustomFieldForm.elm
+
+>     │       │   │   │   ├── CustomFieldInput.elm
+
+>     │       │   │   │   ├── CustomFieldManage.elm
+
+>     │       │   │   │   ├── CustomFieldMultiInput.elm
+
+>     │       │   │   │   ├── CustomFieldTable.elm
+
+>     │       │   │   │   ├── DashboardEdit.elm
+
+>     │       │   │   │   ├── DashboardManage.elm
+
+>     │       │   │   │   ├── DashboardView.elm
+
+>     │       │   │   │   ├── DetailEdit.elm
+
+>     │       │   │   │   ├── DownloadAll.elm
+
+>     │       │   │   │   ├── Dropzone.elm
+
+>     │       │   │   │   ├── DueItemsTaskForm.elm
+
+>     │       │   │   │   ├── DueItemsTaskList.elm
+
+>     │       │   │   │   ├── DueItemsTaskManage.elm
+
+>     │       │   │   │   ├── EmailSettingsForm.elm
+
+>     │       │   │   │   ├── EmailSettingsManage.elm
+
+>     │       │   │   │   ├── EmailSettingsTable.elm
+
+>     │       │   │   │   ├── EmptyTrashForm.elm
+
+>     │       │   │   │   ├── EquipmentForm.elm
+
+>     │       │   │   │   ├── EquipmentManage.elm
+
+>     │       │   │   │   ├── EquipmentTable.elm
+
+>     │       │   │   │   ├── EventSample.elm
+
+>     │       │   │   │   ├── ExpandCollapse.elm
+
+>     │       │   │   │   ├── FolderDetail.elm
+
+>     │       │   │   │   ├── FolderManage.elm
+
+>     │       │   │   │   ├── FolderSelect.elm
+
+>     │       │   │   │   ├── FolderTable.elm
+
+>     │       │   │   │   ├── HttpError.elm
+
+>     │       │   │   │   ├── ImapSettingsForm.elm
+
+>     │       │   │   │   ├── ImapSettingsManage.elm
+
+>     │       │   │   │   ├── ImapSettingsTable.elm
+
+>     │       │   │   │   ├── ItemCard.elm
+
+>     │       │   │   │   ├── ItemCardList.elm
+
+>     │       │   │   │   ├── ItemColumnDropdown.elm
+
+>     │       │   │   │   ├── ItemDetail.elm
+
+>     │       │   │   │   ├── ItemLinkForm.elm
+
+>     │       │   │   │   ├── ItemMail.elm
+
+>     │       │   │   │   ├── ItemMerge.elm
+
+>     │       │   │   │   ├── ItemSearchInput.elm
+
+>     │       │   │   │   ├── NotificationChannelManage.elm
+
+>     │       │   │   │   ├── NotificationChannelTable.elm
+
+>     │       │   │   │   ├── NotificationGotifyForm.elm
+
+>     │       │   │   │   ├── NotificationHookForm.elm
+
+>     │       │   │   │   ├── NotificationHookManage.elm
+
+>     │       │   │   │   ├── NotificationHookTable.elm
+
+>     │       │   │   │   ├── NotificationHttpForm.elm
+
+>     │       │   │   │   ├── NotificationMailForm.elm
+
+>     │       │   │   │   ├── NotificationMatrixForm.elm
+
+>     │       │   │   │   ├── OrgForm.elm
+
+>     │       │   │   │   ├── OrgManage.elm
+
+>     │       │   │   │   ├── OrgTable.elm
+
+>     │       │   │   │   ├── OtpSetup.elm
+
+>     │       │   │   │   ├── PeriodicQueryTaskForm.elm
+
+>     │       │   │   │   ├── PeriodicQueryTaskList.elm
+
+>     │       │   │   │   ├── PeriodicQueryTaskManage.elm
+
+>     │       │   │   │   ├── PersonForm.elm
+
+>     │       │   │   │   ├── PersonManage.elm
+
+>     │       │   │   │   ├── PersonTable.elm
+
+>     │       │   │   │   ├── PublishItems.elm
+
+>     │       │   │   │   ├── ScanMailboxForm.elm
+
+>     │       │   │   │   ├── ScanMailboxManage.elm
+
+>     │       │   │   │   ├── ScanMailboxTable.elm
+
+>     │       │   │   │   ├── SearchMenu.elm
+
+>     │       │   │   │   ├── SearchStatsView.elm
+
+>     │       │   │   │   ├── SentMails.elm
+
+>     │       │   │   │   ├── ShareForm.elm
+
+>     │       │   │   │   ├── ShareMail.elm
+
+>     │       │   │   │   ├── ShareManage.elm
+
+>     │       │   │   │   ├── SharePasswordForm.elm
+
+>     │       │   │   │   ├── ShareTable.elm
+
+>     │       │   │   │   ├── ShareView.elm
+
+>     │       │   │   │   ├── SourceForm.elm
+
+>     │       │   │   │   ├── SourceManage.elm
+
+>     │       │   │   │   ├── SourceTable.elm
+
+>     │       │   │   │   ├── TagDropdown.elm
+
+>     │       │   │   │   ├── TagForm.elm
+
+>     │       │   │   │   ├── TagManage.elm
+
+>     │       │   │   │   ├── TagSelect.elm
+
+>     │       │   │   │   ├── TagTable.elm
+
+>     │       │   │   │   ├── UiSettingsForm.elm
+
+>     │       │   │   │   ├── UiSettingsManage.elm
+
+>     │       │   │   │   ├── UploadForm.elm
+
+>     │       │   │   │   ├── UserForm.elm
+
+>     │       │   │   │   ├── UserManage.elm
+
+>     │       │   │   │   └── UserTable.elm
+
+>     │       │   │   ├── Data
+
+>     │       │   │   │   ├── AccountScope.elm
+
+>     │       │   │   │   ├── BoxContent.elm
+
+>     │       │   │   │   ├── ChannelType.elm
+
+>     │       │   │   │   ├── Color.elm
+
+>     │       │   │   │   ├── ContactType.elm
+
+>     │       │   │   │   ├── CustomFieldType.elm
+
+>     │       │   │   │   ├── Direction.elm
+
+>     │       │   │   │   ├── DownloadFileType.elm
+
+>     │       │   │   │   ├── EquipmentUse.elm
+
+>     │       │   │   │   ├── EventType.elm
+
+>     │       │   │   │   ├── Fields.elm
+
+>     │       │   │   │   ├── ItemColumn.elm
+
+>     │       │   │   │   ├── Language.elm
+
+>     │       │   │   │   ├── OrgUse.elm
+
+>     │       │   │   │   ├── PdfMode.elm
+
+>     │       │   │   │   ├── PersonUse.elm
+
+>     │       │   │   │   └── SSLType.elm
+
+>     │       │   │   ├── Page
+
+>     │       │   │   │   ├── CollectiveSettings.elm
+
+>     │       │   │   │   ├── Dashboard.elm
+
+>     │       │   │   │   ├── DefaultDashboard.elm
+
+>     │       │   │   │   ├── ItemDetail.elm
+
+>     │       │   │   │   ├── Login.elm
+
+>     │       │   │   │   ├── ManageData.elm
+
+>     │       │   │   │   ├── NewInvite.elm
+
+>     │       │   │   │   ├── Queue.elm
+
+>     │       │   │   │   ├── Register.elm
+
+>     │       │   │   │   ├── Search.elm
+
+>     │       │   │   │   ├── SearchSideMenu.elm
+
+>     │       │   │   │   ├── Share.elm
+
+>     │       │   │   │   ├── ShareDetail.elm
+
+>     │       │   │   │   ├── Upload.elm
+
+>     │       │   │   │   └── UserSettings.elm
+
+>     │       │   │   ├── App.elm
+
+>     │       │   │   ├── Basics.elm
+
+>     │       │   │   ├── DateFormat.elm
+
+>     │       │   │   └── UiLanguage.elm
+
+>     │       │   ├── Page
+
+>     │       │   │   ├── CollectiveSettings
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Dashboard
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── DefaultDashboard.elm
+
+>     │       │   │   │   ├── SideMenu.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View.elm
+
+>     │       │   │   ├── ItemDetail
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Login
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── ManageData
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── NewInvite
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Queue
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Register
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Search
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── SideMenu.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   ├── Share
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── LoadMore.elm
+
+>     │       │   │   │   ├── Menubar.elm
+
+>     │       │   │   │   ├── Results.elm
+
+>     │       │   │   │   ├── Sidebar.elm
+
+>     │       │   │   │   ├── TopContent.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View.elm
+
+>     │       │   │   ├── ShareDetail
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View.elm
+
+>     │       │   │   ├── Upload
+
+>     │       │   │   │   ├── Data.elm
+
+>     │       │   │   │   ├── Update.elm
+
+>     │       │   │   │   └── View2.elm
+
+>     │       │   │   └── UserSettings
+
+>     │       │   │       ├── Data.elm
+
+>     │       │   │       ├── Update.elm
+
+>     │       │   │       └── View2.elm
+
+>     │       │   ├── Util
+
+>     │       │   │   ├── Address.elm
+
+>     │       │   │   ├── Contact.elm
+
+>     │       │   │   ├── CustomField.elm
+
+>     │       │   │   ├── Duration.elm
+
+>     │       │   │   ├── File.elm
+
+>     │       │   │   ├── Folder.elm
+
+>     │       │   │   ├── Html.elm
+
+>     │       │   │   ├── Http.elm
+
+>     │       │   │   ├── Item.elm
+
+>     │       │   │   ├── ItemDragDrop.elm
+
+>     │       │   │   ├── List.elm
+
+>     │       │   │   ├── Maybe.elm
+
+>     │       │   │   ├── Person.elm
+
+>     │       │   │   ├── Result.elm
+
+>     │       │   │   ├── Size.elm
+
+>     │       │   │   ├── String.elm
+
+>     │       │   │   ├── Tag.elm
+
+>     │       │   │   └── Update.elm
+
+>     │       │   ├── Api.elm
+
+>     │       │   ├── Main.elm
+
+>     │       │   ├── Messages.elm
+
+>     │       │   ├── Page.elm
+
+>     │       │   ├── Ports.elm
+
+>     │       │   └── Styles.elm
+
+>     │       ├── styles
+
+>     │       │   ├── custom-components.css
+
+>     │       │   ├── custom-utilities.css
+
+>     │       │   ├── index.css
+
+>     │       │   └── keep.txt
+
+>     │       └── webjar
+
+>     │           ├── favicon
+
+>     │           │   ├── android-icon-144x144.png
+
+>     │           │   ├── android-icon-192x192.png
+
+>     │           │   ├── android-icon-36x36.png
+
+>     │           │   ├── android-icon-48x48.png
+
+>     │           │   ├── android-icon-512x512.png
+
+>     │           │   ├── android-icon-72x72.png
+
+>     │           │   ├── android-icon-96x96.png
+
+>     │           │   ├── apple-icon-114x114.png
+
+>     │           │   ├── apple-icon-120x120.png
+
+>     │           │   ├── apple-icon-144x144.png
+
+>     │           │   ├── apple-icon-152x152.png
+
+>     │           │   ├── apple-icon-180x180.png
+
+>     │           │   ├── apple-icon-57x57.png
+
+>     │           │   ├── apple-icon-60x60.png
+
+>     │           │   ├── apple-icon-72x72.png
+
+>     │           │   ├── apple-icon-76x76.png
+
+>     │           │   ├── apple-icon-precomposed.png
+
+>     │           │   ├── apple-icon.png
+
+>     │           │   ├── browserconfig.xml
+
+>     │           │   ├── favicon-16x16.png
+
+>     │           │   ├── favicon-32x32.png
+
+>     │           │   ├── favicon-96x96.png
+
+>     │           │   ├── favicon.ico
+
+>     │           │   ├── manifest.json
+
+>     │           │   ├── ms-icon-144x144.png
+
+>     │           │   ├── ms-icon-150x150.png
+
+>     │           │   ├── ms-icon-310x310.png
+
+>     │           │   └── ms-icon-70x70.png
+
+>     │           ├── img
+
+>     │           │   ├── logo-400.png
+
+>     │           │   ├── logo-96.png
+
+>     │           │   ├── logo-mc-400.png
+
+>     │           │   ├── logo-mc-96.png
+
+>     │           │   ├── logo-only-mc.svg
+
+>     │           │   └── logo-only.svg
+
+>     │           ├── docspell.css
+
+>     │           └── docspell.js
+
+>     ├── elm-analyse.json
+
+>     ├── elm-package.json
+
+>     ├── elm.json
+
+>     ├── package-lock.json
+
+>     ├── package.json
+
+>     ├── postcss.config.js
+
+>     └── tailwind.config.js
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension*
 
 ### Assistant
@@ -3943,61 +6416,116 @@ canonical_ref: ""
 > If you want, paste what you called the record in your earlier “moments” schema (you said you disliked “event”). I’ll give you a naming set that fits your tone and doesn’t collide with calendar semantics.
 
 ### User
-> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm dev
-> 
-> > qione@ dev C:\QiLabs\_QiOne_MonoRepo_Astro
-> > turbo run dev
-> 
-> • turbo 2.8.10
->  WARNING  stale pid file at "C:\\Users\\Lisa\\AppData\\Local\\Temp\\turbod\\4a6dbcc52e0013bb\\turbod.pid"
->   × Found `pipeline` field instead of `tasks`.
->     ╭─[turbo.json:3:17]
->   2 │         "$schema": "https://turbo.build/schema.json",
->   3 │ ╭─▶     "pipeline": {
->   4 │ │           "build": {
->   5 │ │               "dependsOn": [
->   6 │ │                   "^build"
->   7 │ │               ],
->   8 │ │               "outputs": [
->   9 │ │                   "dist/**",
->  10 │ │                   ".astro/**"
->  11 │ │               ]
->  12 │ │           },
->  13 │ │           "dev": {
->  14 │ │               "cache": false,
->  15 │ │               "persistent": true
->  16 │ │           },
->  17 │ │           "clean": {
->  18 │ │               "cache": false
->  19 │ │           },
->  20 │ │           "index": {
->  21 │ │               "cache": false
->  22 │ │           },
->  23 │ │           "rules": {
->  24 │ │               "cache": false
->  25 │ │           },
->  26 │ │           "pdf": {
->  27 │ │               "cache": false
->  28 │ │           },
->  29 │ │           "inbox:audit": {
->  30 │ │               "cache": false
->  31 │ │           },
->  32 │ │           "inbox:fix": {
->  33 │ │               "cache": false
->  34 │ │           },
->  35 │ │           "inbox:pdf": {
->  36 │ │               "cache": false
->  37 │ │           },
->  38 │ │           "inbox:normalize": {
->  39 │ │               "cache": false
->  40 │ │           }
->  41 │ ├─▶     }
->     · ╰──── Rename `pipeline` field to `tasks`
->  42 │     }
->     ╰────
->   help: Changed in 2.0: `pipeline` has been renamed to `tasks`.
-> 
->  ELIFECYCLE  Command failed with exit code 1.
+> PS C:\QiLabs\_QiOne_MonoRepo_Astro> pnpm dev
+
+> 
+
+> > qione@ dev C:\QiLabs\_QiOne_MonoRepo_Astro
+
+> > turbo run dev
+
+> 
+
+> • turbo 2.8.10
+
+>  WARNING  stale pid file at "C:\\Users\\Lisa\\AppData\\Local\\Temp\\turbod\\4a6dbcc52e0013bb\\turbod.pid"
+
+>   × Found `pipeline` field instead of `tasks`.
+
+>     ╭─[turbo.json:3:17]
+
+>   2 │         "$schema": "https://turbo.build/schema.json",
+
+>   3 │ ╭─▶     "pipeline": {
+
+>   4 │ │           "build": {
+
+>   5 │ │               "dependsOn": [
+
+>   6 │ │                   "^build"
+
+>   7 │ │               ],
+
+>   8 │ │               "outputs": [
+
+>   9 │ │                   "dist/**",
+
+>  10 │ │                   ".astro/**"
+
+>  11 │ │               ]
+
+>  12 │ │           },
+
+>  13 │ │           "dev": {
+
+>  14 │ │               "cache": false,
+
+>  15 │ │               "persistent": true
+
+>  16 │ │           },
+
+>  17 │ │           "clean": {
+
+>  18 │ │               "cache": false
+
+>  19 │ │           },
+
+>  20 │ │           "index": {
+
+>  21 │ │               "cache": false
+
+>  22 │ │           },
+
+>  23 │ │           "rules": {
+
+>  24 │ │               "cache": false
+
+>  25 │ │           },
+
+>  26 │ │           "pdf": {
+
+>  27 │ │               "cache": false
+
+>  28 │ │           },
+
+>  29 │ │           "inbox:audit": {
+
+>  30 │ │               "cache": false
+
+>  31 │ │           },
+
+>  32 │ │           "inbox:fix": {
+
+>  33 │ │               "cache": false
+
+>  34 │ │           },
+
+>  35 │ │           "inbox:pdf": {
+
+>  36 │ │               "cache": false
+
+>  37 │ │           },
+
+>  38 │ │           "inbox:normalize": {
+
+>  39 │ │               "cache": false
+
+>  40 │ │           }
+
+>  41 │ ├─▶     }
+
+>     · ╰──── Rename `pipeline` field to `tasks`
+
+>  42 │     }
+
+>     ╰────
+
+>   help: Changed in 2.0: `pipeline` has been renamed to `tasks`.
+
+> 
+
+>  ELIFECYCLE  Command failed with exit code 1.
+
 > PS C:\QiLabs\_QiOne_MonoRepo_Astro>
 
 ### Assistant
@@ -4063,47 +6591,88 @@ canonical_ref: ""
 > If you paste your current `turbo.json` contents, I’ll return the corrected full file exactly as it should be.
 
 ### User
-> {
->     "$schema": "https://turbo.build/schema.json",
->     "tasks": {
->         "build": {
->             "dependsOn": [
->                 "^build"
->             ],
->             "outputs": [
->                 "dist/**",
->                 ".astro/**"
->             ]
->         },
->         "dev": {
->             "cache": false,
->             "persistent": true
->         },
->         "clean": {
->             "cache": false
->         },
->         "index": {
->             "cache": false
->         },
->         "rules": {
->             "cache": false
->         },
->         "pdf": {
->             "cache": false
->         },
->         "inbox:audit": {
->             "cache": false
->         },
->         "inbox:fix": {
->             "cache": false
->         },
->         "inbox:pdf": {
->             "cache": false
->         },
->         "inbox:normalize": {
->             "cache": false
->         }
->     }
+> {
+
+>     "$schema": "https://turbo.build/schema.json",
+
+>     "tasks": {
+
+>         "build": {
+
+>             "dependsOn": [
+
+>                 "^build"
+
+>             ],
+
+>             "outputs": [
+
+>                 "dist/**",
+
+>                 ".astro/**"
+
+>             ]
+
+>         },
+
+>         "dev": {
+
+>             "cache": false,
+
+>             "persistent": true
+
+>         },
+
+>         "clean": {
+
+>             "cache": false
+
+>         },
+
+>         "index": {
+
+>             "cache": false
+
+>         },
+
+>         "rules": {
+
+>             "cache": false
+
+>         },
+
+>         "pdf": {
+
+>             "cache": false
+
+>         },
+
+>         "inbox:audit": {
+
+>             "cache": false
+
+>         },
+
+>         "inbox:fix": {
+
+>             "cache": false
+
+>         },
+
+>         "inbox:pdf": {
+
+>             "cache": false
+
+>         },
+
+>         "inbox:normalize": {
+
+>             "cache": false
+
+>         }
+
+>     }
+
 > }
 
 ### Assistant

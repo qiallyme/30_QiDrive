@@ -4,14 +4,14 @@ title: The Burden of the Signal - A Testimony of Survival
 slug: the-burden-of-the-signal
 summary: EmpowerQNow, Q Manual to Me, posts, books, and related clinical/reflection material.
 status: publish
-updated_at: 2026-06-28
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - moc
   - empowerqnow713
 source_type: manual
 created_at: 2026-07-02T01:52:00
 author: Cody J. Rice-Velasquez
-owner:
+owner: ""
   - Cody
 keywords: []
 aliases: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2d4d974572114ae9b72310e3d0c1a484
 canonical_ref: ""
 template_key: master-template
 ---

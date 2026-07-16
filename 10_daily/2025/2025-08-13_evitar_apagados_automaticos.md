@@ -3,9 +3,9 @@ layout: page
 title: "Evitar apagados automáticos"
 slug: "evitar_apagados_automaticos"
 created_at: "2025-08-13 09:29:01"
-updated_at: "2025-08-13 09:29:01"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -517,15 +517,24 @@ canonical_ref: ""
 > Nope. Reset. Nada de “se apaga solo.” Primero enciende el motor, luego domamos el Swarm. And just like that, handled.
 
 ### User
-> Client:
->  Version:           28.3.0
->  API version:       1.51
->  Go version:        go1.24.4
->  Git commit:        38b7060
->  Built:             Tue Jun 24 15:44:57 2025
->  OS/Arch:           windows/amd64
->  Context:           desktop-linux
-> error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/version": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+> Client:
+
+>  Version:           28.3.0
+
+>  API version:       1.51
+
+>  Go version:        go1.24.4
+
+>  Git commit:        38b7060
+
+>  Built:             Tue Jun 24 15:44:57 2025
+
+>  OS/Arch:           windows/amd64
+
+>  Context:           desktop-linux
+
+> error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/version": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+
 > PS C:\WINDOWS\system32>
 
 ### Assistant
@@ -655,16 +664,26 @@ canonical_ref: ""
 > Listo: empujas trabajos desde MAIN, los containers worker jalan del queue y el SERVER mastica sin que tengas que meterte a su escritorio. Focus, boo. Eso era configuración, no brujería. Done. Dusted. Next bag.
 
 ### User
-> PS C:\WINDOWS\system32> docker version
-> Client:
->  Version:           28.3.0
->  API version:       1.51
->  Go version:        go1.24.4
->  Git commit:        38b7060
->  Built:             Tue Jun 24 15:44:57 2025
->  OS/Arch:           windows/amd64
->  Context:           desktop-linux
-> request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/version, check if the server supports the requested API version
+> PS C:\WINDOWS\system32> docker version
+
+> Client:
+
+>  Version:           28.3.0
+
+>  API version:       1.51
+
+>  Go version:        go1.24.4
+
+>  Git commit:        38b7060
+
+>  Built:             Tue Jun 24 15:44:57 2025
+
+>  OS/Arch:           windows/amd64
+
+>  Context:           desktop-linux
+
+> request returned 500 Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.51/version, check if the server supports the requested API version
+
 > PS C:\WINDOWS\system32>  -- in english please.
 
 ### Assistant

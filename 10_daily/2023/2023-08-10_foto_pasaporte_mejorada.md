@@ -3,9 +3,9 @@ layout: page
 title: "Foto Pasaporte Mejorada"
 slug: "foto_pasaporte_mejorada"
 created_at: "2023-08-10 16:12:26"
-updated_at: "2023-08-10 16:12:26"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

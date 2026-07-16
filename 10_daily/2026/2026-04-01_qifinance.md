@@ -3,9 +3,9 @@ layout: page
 title: "QiFinance"
 slug: "qifinance"
 created_at: "2026-04-01 15:14:55"
-updated_at: "2026-04-01 15:14:55"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -469,125 +469,244 @@ canonical_ref: ""
 > I can map the exact **“Cody-safe” setup path** next: local Docker + folder layout + backup plan + future Supabase hook points.
 
 ### User
-> ok, this is settled now give me the complete entry or entries into my master blueprint for this addtiont o my stack, also the blueprint is getting big we need to start a another level down (subfolders), ```markdown
-> . 📂 _qios_master_blueprint
-> └── 📂 00_genesis/
-> └── 📂 01_governance/
-> │  ├── 📄 agent_rules.md
-> │  ├── 📄 decisions.md
-> │  ├── 📄 index.md
-> │  ├── 📄 policies.md
-> │  ├── 📄 principles.md
-> │  ├── 📄 registry.md
-> │  ├── 📄 standards.md
-> └── 📂 02_architecture/
-> │  ├── 📄 component_map.md
-> │  ├── 📄 data_flow.md
-> │  ├── 📄 device_model.md
-> │  ├── 📄 identity.md
-> │  ├── 📄 index.md
-> │  ├── 📄 runtime_zones.md
-> │  ├── 📄 service_boundaries.md
-> │  ├── 📄 system_model.md
-> └── 📂 03_structure/
-> │  ├── 📄 bands.md
-> │  ├── 📄 directory_tree.md
-> │  ├── 📄 domains.md
-> │  ├── 📄 index.md
-> │  ├── 📄 namespace_registry.md
-> │  ├── 📄 object_model.md
-> │  ├── 📄 placement_rules.md
-> │  ├── 📄 subdomains.md
-> └── 📂 04_data/
-> │  ├── 📄 exports.md
-> │  ├── 📄 index.md
-> │  ├── 📄 metadata.md
-> │  ├── 📄 objects.md
-> │  ├── 📄 qievidence.md
-> │  ├── 📄 schema.md
-> │  ├── 📄 storage.md
-> └── 📂 05_compute/
-> │  ├── 📄 apis.md
-> │  ├── 📄 index.md
-> │  ├── 📄 integrations.md
-> │  ├── 📄 pipelines.md
-> │  ├── 📄 runtime.md
-> │  ├── 📄 tech_stack.md
-> │  ├── 📄 workers.md
-> └── 📂 06_applications/
-> │  ├── 📄 admin.md
-> │  ├── 📄 index.md
-> │  ├── 📄 interfaces.md
-> │  ├── 📄 portal.md
-> │  ├── 📄 tools.md
-> │  ├── 📄 web.md
-> └── 📂 07_operations/
-> │  ├── 📄 cases.md
-> │  ├── 📄 clients.md
-> │  ├── 📄 finance.md
-> │  ├── 📄 index.md
-> │  ├── 📄 products.md
-> │  ├── 📄 templates.md
-> └── 📂 adr/
-> │  ├── 📄 ADR-0000_template.md
-> │  ├── 📄 ADR-0001-blueprint-scope.md
-> │  ├── 📄 ADR-0001_blueprint_scope.md
-> │  ├── 📄 ADR-0002-single-domain-rule.md
-> │  ├── 📄 ADR-0002_single_domain_rule.md
-> │  ├── 📄 ADR-0003-band-model.md
-> │  ├── 📄 ADR-0003_band_model.md
-> │  ├── 📄 ADR-0004-qilabs-root.md
-> │  ├── 📄 ADR-0004_qilabs_root.md
-> │  ├── 📄 ADR-0005-hosted-fleet-orchestration.md
-> │  ├── 📄 ADR-0005_fleet_orchestration.md
-> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
-> │  ├── 📄 update-adr.md
-> └── 📂 appendices/
-> │  ├── 📄 changelog.md
-> │  ├── 📄 glossary.md
-> │  ├── 📄 legacy_csv_inventory.json
-> │  ├── 📄 legacy_csv_migration_plan.md
-> │  ├── 📄 legacy_salvage.md
-> │  ├── 📄 migration_notes.md
-> └── 📂 assets/
-> │  ├── 📄 _QiOS_Master_Document.jpg
-> │  └── 📂 diagrams/
-> │  └── 📂 tables/
-> ├── 📄 index.md
-> ├── 📄 main.py
-> ├── 📄 markmind.html
-> ├── 📄 mkdocs.yml
-> └── 📂 overrides/
-> │  ├── 📄 home.html
-> └── 📂 registry/
-> │  ├── 📄 band_registry.yaml
-> │  ├── 📄 deprecation_registry.yaml
-> │  ├── 📄 domain_registry.yaml
-> │  ├── 📄 folder_registry.yaml
-> │  ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │  ├── 📄 qios_05_Cursor_and_naming.canvas
-> │  ├── 📄 realms_registry.yaml
-> │  ├── 📄 sensitivity_classification.yaml
-> │  ├── 📄 subdomain_registry.yaml
-> │  ├── 📄 workspace_realms.yaml
-> └── 📂 schemas/
-> │  ├── 📄 band_registry.schema.json
-> │  ├── 📄 qievidence.sql
-> └── 📂 scripts/
-> │  ├── 📄 enforce_structure.py
-> └── 📂 standards/
-> │  ├── 📄 content_metadata_profile.yaml
-> │  ├── 📄 metadata_rules.yaml
-> │  ├── 📄 naming_rules.yaml
-> │  ├── 📄 pdf_standards.yaml
-> │  ├── 📄 repo_rules.yaml
-> │  ├── 📄 strict-compliance.md
-> └── 📂 stylesheets/
-> │  ├── 📄 extra.css
-> └── 📂 templates/
-> │  ├── 📄 README.md
-> │  ├── 📄 artifact_template.md
-> │  └── 📄 note_template.md
+> ok, this is settled now give me the complete entry or entries into my master blueprint for this addtiont o my stack, also the blueprint is getting big we need to start a another level down (subfolders), ```markdown
+
+> . 📂 _qios_master_blueprint
+
+> └── 📂 00_genesis/
+
+> └── 📂 01_governance/
+
+> │  ├── 📄 agent_rules.md
+
+> │  ├── 📄 decisions.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 policies.md
+
+> │  ├── 📄 principles.md
+
+> │  ├── 📄 registry.md
+
+> │  ├── 📄 standards.md
+
+> └── 📂 02_architecture/
+
+> │  ├── 📄 component_map.md
+
+> │  ├── 📄 data_flow.md
+
+> │  ├── 📄 device_model.md
+
+> │  ├── 📄 identity.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 runtime_zones.md
+
+> │  ├── 📄 service_boundaries.md
+
+> │  ├── 📄 system_model.md
+
+> └── 📂 03_structure/
+
+> │  ├── 📄 bands.md
+
+> │  ├── 📄 directory_tree.md
+
+> │  ├── 📄 domains.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 namespace_registry.md
+
+> │  ├── 📄 object_model.md
+
+> │  ├── 📄 placement_rules.md
+
+> │  ├── 📄 subdomains.md
+
+> └── 📂 04_data/
+
+> │  ├── 📄 exports.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 metadata.md
+
+> │  ├── 📄 objects.md
+
+> │  ├── 📄 qievidence.md
+
+> │  ├── 📄 schema.md
+
+> │  ├── 📄 storage.md
+
+> └── 📂 05_compute/
+
+> │  ├── 📄 apis.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 integrations.md
+
+> │  ├── 📄 pipelines.md
+
+> │  ├── 📄 runtime.md
+
+> │  ├── 📄 tech_stack.md
+
+> │  ├── 📄 workers.md
+
+> └── 📂 06_applications/
+
+> │  ├── 📄 admin.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 interfaces.md
+
+> │  ├── 📄 portal.md
+
+> │  ├── 📄 tools.md
+
+> │  ├── 📄 web.md
+
+> └── 📂 07_operations/
+
+> │  ├── 📄 cases.md
+
+> │  ├── 📄 clients.md
+
+> │  ├── 📄 finance.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 products.md
+
+> │  ├── 📄 templates.md
+
+> └── 📂 adr/
+
+> │  ├── 📄 ADR-0000_template.md
+
+> │  ├── 📄 ADR-0001-blueprint-scope.md
+
+> │  ├── 📄 ADR-0001_blueprint_scope.md
+
+> │  ├── 📄 ADR-0002-single-domain-rule.md
+
+> │  ├── 📄 ADR-0002_single_domain_rule.md
+
+> │  ├── 📄 ADR-0003-band-model.md
+
+> │  ├── 📄 ADR-0003_band_model.md
+
+> │  ├── 📄 ADR-0004-qilabs-root.md
+
+> │  ├── 📄 ADR-0004_qilabs_root.md
+
+> │  ├── 📄 ADR-0005-hosted-fleet-orchestration.md
+
+> │  ├── 📄 ADR-0005_fleet_orchestration.md
+
+> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
+
+> │  ├── 📄 update-adr.md
+
+> └── 📂 appendices/
+
+> │  ├── 📄 changelog.md
+
+> │  ├── 📄 glossary.md
+
+> │  ├── 📄 legacy_csv_inventory.json
+
+> │  ├── 📄 legacy_csv_migration_plan.md
+
+> │  ├── 📄 legacy_salvage.md
+
+> │  ├── 📄 migration_notes.md
+
+> └── 📂 assets/
+
+> │  ├── 📄 _QiOS_Master_Document.jpg
+
+> │  └── 📂 diagrams/
+
+> │  └── 📂 tables/
+
+> ├── 📄 index.md
+
+> ├── 📄 main.py
+
+> ├── 📄 markmind.html
+
+> ├── 📄 mkdocs.yml
+
+> └── 📂 overrides/
+
+> │  ├── 📄 home.html
+
+> └── 📂 registry/
+
+> │  ├── 📄 band_registry.yaml
+
+> │  ├── 📄 deprecation_registry.yaml
+
+> │  ├── 📄 domain_registry.yaml
+
+> │  ├── 📄 folder_registry.yaml
+
+> │  ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │  ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │  ├── 📄 realms_registry.yaml
+
+> │  ├── 📄 sensitivity_classification.yaml
+
+> │  ├── 📄 subdomain_registry.yaml
+
+> │  ├── 📄 workspace_realms.yaml
+
+> └── 📂 schemas/
+
+> │  ├── 📄 band_registry.schema.json
+
+> │  ├── 📄 qievidence.sql
+
+> └── 📂 scripts/
+
+> │  ├── 📄 enforce_structure.py
+
+> └── 📂 standards/
+
+> │  ├── 📄 content_metadata_profile.yaml
+
+> │  ├── 📄 metadata_rules.yaml
+
+> │  ├── 📄 naming_rules.yaml
+
+> │  ├── 📄 pdf_standards.yaml
+
+> │  ├── 📄 repo_rules.yaml
+
+> │  ├── 📄 strict-compliance.md
+
+> └── 📂 stylesheets/
+
+> │  ├── 📄 extra.css
+
+> └── 📂 templates/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 artifact_template.md
+
+> │  └── 📄 note_template.md
+
 > ```
 
 ### Assistant

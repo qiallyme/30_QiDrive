@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0011: Homepage-Powered QiAccess
 slug: adr-0011-homepage-powered-qiaccess
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 632eed70c5ae41ac9ce7ef83097da1f6
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Client package structure guidance"
 slug: "client_package_structure_guidance"
 created_at: "2025-09-11 01:42:49"
-updated_at: "2025-09-11 01:42:49"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

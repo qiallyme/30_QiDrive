@@ -3,13 +3,13 @@ layout: page
 title: Ledger - Caregiver Pay Gap
 slug: ledger-caregiver-pay-gap
 status: publish
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: fdf3175cd9304eca8823b357413d17f6
 canonical_ref: ""
 template_key: master-template
 ---

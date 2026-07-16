@@ -3,9 +3,9 @@ layout: page
 title: "Dupixent Injection and Transfer"
 slug: "dupixent_injection_and_transfer"
 created_at: "2026-04-17 12:42:31"
-updated_at: "2026-04-17 12:42:31"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Schedule and Ride Goals"
 slug: "schedule_and_ride_goals"
 created_at: "2025-12-29 21:11:24"
-updated_at: "2025-12-29 21:11:24"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2880,20 +2880,34 @@ canonical_ref: ""
 > I need it so you set `CORS_ALLOW_ORIGINS` correctly on the Worker. Without that, your browser requests will fail.
 
 ### User
-> (index):64 cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
-> (anonymous) @ (index):64
-> app.js:74 Fetch failure: TypeError: Failed to fetch
->     at fetchData (app.js:68:13)
->     at init (app.js:31:11)
->     at app.js:136:1
-> fetchData @ app.js:74
-> app.js:74 Fetch failure: TypeError: Failed to fetch
->     at fetchData (app.js:67:13)
->     at document.getElementById.onclick (app.js:26:94)
-> fetchData @ app.js:74
-> app.js:74 Fetch failure: TypeError: Failed to fetch
->     at fetchData (app.js:67:13)
->     at document.getElementById.onclick (app.js:25:96)
+> (index):64 cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
+
+> (anonymous) @ (index):64
+
+> app.js:74 Fetch failure: TypeError: Failed to fetch
+
+>     at fetchData (app.js:68:13)
+
+>     at init (app.js:31:11)
+
+>     at app.js:136:1
+
+> fetchData @ app.js:74
+
+> app.js:74 Fetch failure: TypeError: Failed to fetch
+
+>     at fetchData (app.js:67:13)
+
+>     at document.getElementById.onclick (app.js:26:94)
+
+> fetchData @ app.js:74
+
+> app.js:74 Fetch failure: TypeError: Failed to fetch
+
+>     at fetchData (app.js:67:13)
+
+>     at document.getElementById.onclick (app.js:25:96)
+
 > fetchData @ app.js:74
 
 ### Assistant
@@ -3186,114 +3200,221 @@ canonical_ref: ""
 > If you paste your current `index.js` back here, I’ll return a corrected `index.js` (CORS + status passthrough + minor validation) that matches your existing API shape exactly so you don’t have to refactor anything.
 
 ### User
-> thats too many things, give me the full udpated code i need for index.js, and wrangler.toml here they are. /**
->  * Rideshare Battle Boards - Worker API
->  * * Handles secure communication between the PWA and Supabase REST API.
->  * Implements data clamping, validation, and CORS.
->  */
-> 
-> export default {
->   async fetch(request, env) {
->     const url = new URL(request.url);
->     const method = request.method;
-> 
->     const corsHeaders = {
->       "Access-Control-Allow-Origin": env.CORS_ALLOW_ORIGINS || "*",
->       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
->       "Access-Control-Allow-Headers": "Content-Type, Authorization",
->     };
-> 
->     // Handle CORS Preflight
->     if (method === "OPTIONS") {
->       const body = await res.text();
-> 
->       return new Response(null, { headers: corsHeaders });
->     }
-> 
->     const sbUrl = env.SUPABASE_URL;
->     const sbKey = env.SUPABASE_SERVICE_ROLE_KEY;
-> 
->     try {
->       // Endpoint: GET /api/drives?driver=Cody&start=YYYY-MM-DD&end=YYYY-MM-DD
->       if (url.pathname === "/api/drives" && method === "GET") {
->         const driver = url.searchParams.get("driver");
->         const start = url.searchParams.get("start");
->         const end = url.searchParams.get("end");
-> 
->         if (!driver || !start || !end) {
->           return new Response(JSON.stringify({ error: "Missing parameters" }), { status: 400, headers: corsHeaders });
->         }
-> 
->         const res = await fetch(
->           `${sbUrl}/rest/v1/drives_daily?driver=eq.${driver}&drive_date=gte.${start}&drive_date=lte.${end}&order=drive_date.asc`,
->           { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` } }
->         );
->         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
->       }
-> 
->       // Endpoint: POST /api/drives (Upsert)
->       if (url.pathname === "/api/drives" && method === "POST") {
->         const body = await request.json();
-> 
->         // Validation & Clamping (Snap & Steer: prevent negatives)
->         const cleanData = {
->           ...body,
->           online_hours: Math.max(0, Number(body.online_hours) || 0),
->           driving_hours: Math.max(0, Number(body.driving_hours) || 0),
->           rides_completed: Math.max(0, Number(body.rides_completed) || 0),
->           earnings: Math.max(0, Number(body.earnings) || 0),
->           gas_cost: Math.max(0, Number(body.gas_cost) || 0)
->         };
-> 
->         const res = await fetch(
->           `${sbUrl}/rest/v1/drives_daily?on_conflict=drive_date,driver`,
->           {
->             method: "POST",
->             headers: {
->               apikey: sbKey,
->               Authorization: `Bearer ${sbKey}`,
->               "Content-Type": "application/json",
->               "Prefer": "resolution=merge-duplicates,return=representation"
->             },
->             body: JSON.stringify(cleanData)
->           }
->         );
->         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
->       }
-> 
->       // Endpoint: GET /api/challenges?driver=Cody
->       if (url.pathname === "/api/challenges" && method === "GET") {
->         const driver = url.searchParams.get("driver");
->         const res = await fetch(`${sbUrl}/rest/v1/challenges?driver=eq.${driver}`, {
->           headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` }
->         });
->         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
->       }
-> 
->       // Endpoint: GET /api/tier?driver=Cody&date=YYYY-MM-DD
->       if (url.pathname === "/api/tier" && method === "GET") {
->         const driver = url.searchParams.get("driver");
->         const date = url.searchParams.get("date");
-> 
->         const res = await fetch(
->           `${sbUrl}/rest/v1/tier_periods?driver=eq.${driver}&period_start=lte.${date}&period_end=gte.${date}`,
->           { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` } }
->         );
->         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
->       }
-> 
->       return new Response(JSON.stringify({ error: "Endpoint not found" }), { status: 404, headers: corsHeaders });
->     } catch (err) {
->       return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: corsHeaders });
->     }
->   }
-> }; name = "rideshare-battle-api"
+> thats too many things, give me the full udpated code i need for index.js, and wrangler.toml here they are. /**
+
+>  * Rideshare Battle Boards - Worker API
+
+>  * * Handles secure communication between the PWA and Supabase REST API.
+
+>  * Implements data clamping, validation, and CORS.
+
+>  */
+
+> 
+
+> export default {
+
+>   async fetch(request, env) {
+
+>     const url = new URL(request.url);
+
+>     const method = request.method;
+
+> 
+
+>     const corsHeaders = {
+
+>       "Access-Control-Allow-Origin": env.CORS_ALLOW_ORIGINS || "*",
+
+>       "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+
+>       "Access-Control-Allow-Headers": "Content-Type, Authorization",
+
+>     };
+
+> 
+
+>     // Handle CORS Preflight
+
+>     if (method === "OPTIONS") {
+
+>       const body = await res.text();
+
+> 
+
+>       return new Response(null, { headers: corsHeaders });
+
+>     }
+
+> 
+
+>     const sbUrl = env.SUPABASE_URL;
+
+>     const sbKey = env.SUPABASE_SERVICE_ROLE_KEY;
+
+> 
+
+>     try {
+
+>       // Endpoint: GET /api/drives?driver=Cody&start=YYYY-MM-DD&end=YYYY-MM-DD
+
+>       if (url.pathname === "/api/drives" && method === "GET") {
+
+>         const driver = url.searchParams.get("driver");
+
+>         const start = url.searchParams.get("start");
+
+>         const end = url.searchParams.get("end");
+
+> 
+
+>         if (!driver || !start || !end) {
+
+>           return new Response(JSON.stringify({ error: "Missing parameters" }), { status: 400, headers: corsHeaders });
+
+>         }
+
+> 
+
+>         const res = await fetch(
+
+>           `${sbUrl}/rest/v1/drives_daily?driver=eq.${driver}&drive_date=gte.${start}&drive_date=lte.${end}&order=drive_date.asc`,
+
+>           { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` } }
+
+>         );
+
+>         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
+
+>       }
+
+> 
+
+>       // Endpoint: POST /api/drives (Upsert)
+
+>       if (url.pathname === "/api/drives" && method === "POST") {
+
+>         const body = await request.json();
+
+> 
+
+>         // Validation & Clamping (Snap & Steer: prevent negatives)
+
+>         const cleanData = {
+
+>           ...body,
+
+>           online_hours: Math.max(0, Number(body.online_hours) || 0),
+
+>           driving_hours: Math.max(0, Number(body.driving_hours) || 0),
+
+>           rides_completed: Math.max(0, Number(body.rides_completed) || 0),
+
+>           earnings: Math.max(0, Number(body.earnings) || 0),
+
+>           gas_cost: Math.max(0, Number(body.gas_cost) || 0)
+
+>         };
+
+> 
+
+>         const res = await fetch(
+
+>           `${sbUrl}/rest/v1/drives_daily?on_conflict=drive_date,driver`,
+
+>           {
+
+>             method: "POST",
+
+>             headers: {
+
+>               apikey: sbKey,
+
+>               Authorization: `Bearer ${sbKey}`,
+
+>               "Content-Type": "application/json",
+
+>               "Prefer": "resolution=merge-duplicates,return=representation"
+
+>             },
+
+>             body: JSON.stringify(cleanData)
+
+>           }
+
+>         );
+
+>         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
+
+>       }
+
+> 
+
+>       // Endpoint: GET /api/challenges?driver=Cody
+
+>       if (url.pathname === "/api/challenges" && method === "GET") {
+
+>         const driver = url.searchParams.get("driver");
+
+>         const res = await fetch(`${sbUrl}/rest/v1/challenges?driver=eq.${driver}`, {
+
+>           headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` }
+
+>         });
+
+>         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
+
+>       }
+
+> 
+
+>       // Endpoint: GET /api/tier?driver=Cody&date=YYYY-MM-DD
+
+>       if (url.pathname === "/api/tier" && method === "GET") {
+
+>         const driver = url.searchParams.get("driver");
+
+>         const date = url.searchParams.get("date");
+
+> 
+
+>         const res = await fetch(
+
+>           `${sbUrl}/rest/v1/tier_periods?driver=eq.${driver}&period_start=lte.${date}&period_end=gte.${date}`,
+
+>           { headers: { apikey: sbKey, Authorization: `Bearer ${sbKey}` } }
+
+>         );
+
+>         return new Response(await res.text(), { headers: { ...corsHeaders, "Content-Type": "application/json" } });
+
+>       }
+
+> 
+
+>       return new Response(JSON.stringify({ error: "Endpoint not found" }), { status: 404, headers: corsHeaders });
+
+>     } catch (err) {
+
+>       return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: corsHeaders });
+
+>     }
+
+>   }
+
+> }; name = "rideshare-battle-api"
+
 > main = "src/index.js"  -- and also when i tried to put the cors allow orgins it said there was already one and we have to pick another name or something.  
-> compatibility_date = "2024-01-01"
-> 
-> [vars]
-> SUPABASE_URL = "https://vpwegwzronwnxvdturvy.supabase.co"
-> # Only allow your specific domain to talk to this API
+> compatibility_date = "2024-01-01"
+
+> 
+
+> [vars]
+
+> SUPABASE_URL = "https://vpwegwzronwnxvdturvy.supabase.co"
+
+> # Only allow your specific domain to talk to this API
+
 > CORS_ALLOW_ORIGINS = "lyft.qially.com, https://rideshare-battle-boards.pages.dev/, rideshare-battle-api.qilife.workers.dev"
 
 ### Assistant
@@ -3613,22 +3734,38 @@ canonical_ref: ""
 > If you paste your current `web/app.js` header (first ~25 lines), I’ll tell you the single-line change needed so it matches your app’s existing fetch calls without you hunting for it.
 
 ### User
-> PS C:\QiOS_Local_Only\qidrives\Rideshare-Battle-Boards\worker> npx wrangler secret delete CORS_ALLOW_ORIGINS
-> 
->  ⛅️ wrangler 4.45.4 (update available 4.54.0)
-> ─────────────────────────────────────────────
-> √ Are you sure you want to permanently delete the secret CORS_ALLOW_ORIGINS on the Worker rideshare-battle-api? ... yes
-> 🌀 Deleting the secret CORS_ALLOW_ORIGINS on the Worker rideshare-battle-api
-> 
-> X [ERROR] A request to the Cloudflare API (/accounts/6c0d95a612e676663f8c1461a6c88bad/workers/scripts/rideshare-battle-api/secrets/CORS_ALLOW_ORIGINS) failed.
-> 
->   Binding 'CORS_ALLOW_ORIGINS' not found. Please use a different name and try again. [code: 10056]
-> 
->   If you think this is a bug, please open an issue at:
->   https://github.com/cloudflare/workers-sdk/issues/new/choose
-> 
-> 
-> 🪵  Logs were written to "C:\Users\codyr\AppData\Roaming\xdg.config\.wrangler\logs\wrangler-2025-12-30_14-37-32_8852.log"
+> PS C:\QiOS_Local_Only\qidrives\Rideshare-Battle-Boards\worker> npx wrangler secret delete CORS_ALLOW_ORIGINS
+
+> 
+
+>  ⛅️ wrangler 4.45.4 (update available 4.54.0)
+
+> ─────────────────────────────────────────────
+
+> √ Are you sure you want to permanently delete the secret CORS_ALLOW_ORIGINS on the Worker rideshare-battle-api? ... yes
+
+> 🌀 Deleting the secret CORS_ALLOW_ORIGINS on the Worker rideshare-battle-api
+
+> 
+
+> X [ERROR] A request to the Cloudflare API (/accounts/6c0d95a612e676663f8c1461a6c88bad/workers/scripts/rideshare-battle-api/secrets/CORS_ALLOW_ORIGINS) failed.
+
+> 
+
+>   Binding 'CORS_ALLOW_ORIGINS' not found. Please use a different name and try again. [code: 10056]
+
+> 
+
+>   If you think this is a bug, please open an issue at:
+
+>   https://github.com/cloudflare/workers-sdk/issues/new/choose
+
+> 
+
+> 
+
+> 🪵  Logs were written to "C:\Users\codyr\AppData\Roaming\xdg.config\.wrangler\logs\wrangler-2025-12-30_14-37-32_8852.log"
+
 > PS C:\QiOS_Local_Only\qidrives\Rideshare-Battle-Boards\worker>   -- also i can add the vars for the worker in the cloudflare pages if needed or add stuff to the vars in workers, this is just an internal app anyways.
 
 ### Assistant
@@ -3712,14 +3849,22 @@ canonical_ref: ""
 > Some of the files you uploaded earlier have expired on my side, so I can’t open them right now. If you want me to patch your **exact** current `app.js` or confirm the Worker route logic against your repo, re-upload the current `web/app.js` (and `worker/src/index.js` if you didn’t already replace it).
 
 ### User
-> Please check back later
-> Error 1027
->  This website has been temporarily rate limited
-> 
-> You cannot access this site because the owner has reached their plan limits. Check back later once traffic has gone down.
-> 
-> If you are owner of this website, prevent this from happening again by upgrading your plan on the Cloudflare Workers dashboard.
-> 
+> Please check back later
+
+> Error 1027
+
+>  This website has been temporarily rate limited
+
+> 
+
+> You cannot access this site because the owner has reached their plan limits. Check back later once traffic has gone down.
+
+> 
+
+> If you are owner of this website, prevent this from happening again by upgrading your plan on the Cloudflare Workers dashboard.
+
+> 
+
 > Learn more about this issue →
 
 ### Assistant
@@ -3806,21 +3951,36 @@ canonical_ref: ""
 > Then I’ll return a version that makes **one call per load**, caches aggressively, and won’t trigger rate limiting again.
 
 ### User
-> damn how did i hit those numbers so fast. Requests
-> 1.07M
-> 
-> 0.82%
-> Bandwidth
-> 13.17 GB
-> 
-> 0.67%
-> Visits
-> 1.06M
-> 
-> 0.73%
-> Page views
-> 1.07M
-> 
+> damn how did i hit those numbers so fast. Requests
+
+> 1.07M
+
+> 
+
+> 0.82%
+
+> Bandwidth
+
+> 13.17 GB
+
+> 
+
+> 0.67%
+
+> Visits
+
+> 1.06M
+
+> 
+
+> 0.73%
+
+> Page views
+
+> 1.07M
+
+> 
+
 > 0.73%
 
 ### Assistant
@@ -4052,206 +4212,406 @@ canonical_ref: ""
 > If you answer those, I’ll give you the exact CSV for a 7-day blank grid for both drivers (14 rows) that you can import in one shot.
 
 ### User
-> -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE public.challenges (
->   id integer NOT NULL DEFAULT nextval('challenges_id_seq'::regclass),
->   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
->   start_date date NOT NULL,
->   end_date date NOT NULL,
->   required_rides integer NOT NULL,
->   label text NOT NULL,
->   CONSTRAINT challenges_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.drives_daily (
->   id bigint NOT NULL DEFAULT nextval('drives_daily_id_seq'::regclass),
->   drive_date date NOT NULL,
->   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
->   online_hours numeric DEFAULT 0,
->   driving_hours numeric DEFAULT 0,
->   rides_completed integer DEFAULT 0,
->   rides_rejected integer DEFAULT 0,
->   earnings numeric DEFAULT 0,
->   tips numeric DEFAULT 0,
->   gas_cost numeric DEFAULT 0,
->   other_costs numeric DEFAULT 0,
->   rating_stars numeric DEFAULT 5,
->   safety_issue boolean DEFAULT false,
->   challenge_progress text,
->   tier_points integer DEFAULT 0,
->   perk_value numeric DEFAULT 0,
->   hours_in_last_24 numeric DEFAULT 0,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   vehicle_status text DEFAULT 'green'::text CHECK (vehicle_status = ANY (ARRAY['green'::text, 'yellow'::text, 'red'::text])),
->   CONSTRAINT drives_daily_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.tier_periods (
->   id integer NOT NULL DEFAULT nextval('tier_periods_id_seq'::regclass),
->   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
->   period_start date NOT NULL,
->   period_end date NOT NULL,
->   points_total integer DEFAULT 0,
->   perk_value numeric DEFAULT 0,
->   CONSTRAINT tier_periods_pkey PRIMARY KEY (id)
-> );  <!DOCTYPE html>
-> <html lang="en">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
->     <title>Rideshare Battle Boards</title>
->     <link rel="manifest" href="manifest.json">
->     <script src="https://cdn.tailwindcss.com"></script>
->     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
->     <style>
->         .no-scrollbar::-webkit-scrollbar { display: none; }
->         .status-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
->         .bg-status-green { background-color: #22c55e; box-shadow: 0 0 8px #22c55e; }
->         .bg-status-yellow { background-color: #eab308; box-shadow: 0 0 8px #eab308; }
->         .bg-status-red { background-color: #ef4444; box-shadow: 0 0 8px #ef4444; }
->     </style>
-> </head>
-> <body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
-> 
->     <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200 px-4 py-3 flex justify-between items-center">
->         <div class="flex items-center gap-2">
->             <h1 class="text-xl font-black tracking-tighter text-blue-600">BATTLE BOARDS</h1>
->             <div id="navVehicleStatus" class="status-dot bg-status-green"></div>
->         </div>
->         <select id="appMode" class="text-xs font-bold bg-slate-100 border-none rounded-full px-3 py-1 outline-none">
->             <option value="zai">View: Zai (Read)</option>
->             <option value="cody">View: Cody (Edit)</option>
->         </select>
->     </nav>
-> 
->     <main class="max-w-md mx-auto p-4 space-y-6">
->         
->         <!-- Entry Form (Cody Only) -->
->         <section id="entrySection" class="hidden bg-white p-5 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
->             <h2 class="text-lg font-bold mb-4">Daily Check-in</h2>
->             <form id="logForm" class="grid grid-cols-2 gap-3">
->                 <div class="col-span-2 flex gap-2">
->                     <input type="date" name="drive_date" id="formDate" required class="flex-1 p-3 bg-slate-50 rounded-xl border-none text-sm font-medium">
->                     <select name="vehicle_status" class="bg-slate-50 rounded-xl px-3 border-none text-lg">
->                         <option value="green">🟢 Ready</option>
->                         <option value="yellow">🟡 Warning</option>
->                         <option value="red">🔴 Urgent</option>
->                     </select>
->                 </div>
->                 
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Driving Hrs</label>
->                     <input type="number" step="0.1" name="driving_hours" placeholder="0.0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Rating (Stars)</label>
->                     <input type="number" step="0.01" name="rating_stars" placeholder="5.0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Completed</label>
->                     <input type="number" name="rides_completed" placeholder="0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Rejected</label>
->                     <input type="number" name="rides_rejected" placeholder="0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Earnings $</label>
->                     <input type="number" step="0.01" name="earnings" placeholder="0.00" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 <div>
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Gas Cost $</label>
->                     <input type="number" step="0.01" name="gas_cost" placeholder="0.00" class="w-full p-3 bg-slate-50 rounded-xl border-none">
->                 </div>
->                 
->                 <div class="col-span-2">
->                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Maintenance/Safety Notes</label>
->                     <textarea name="notes" placeholder="e.g. Needs tire air, clean interior..." class="w-full p-3 bg-slate-50 rounded-xl border-none text-sm h-20"></textarea>
->                 </div>
-> 
->                 <button type="submit" class="col-span-2 bg-blue-600 text-white font-bold py-4 rounded-2xl mt-2 shadow-lg shadow-blue-200 active:scale-95 transition-transform">
->                     UPDATE BOARD
->                 </button>
->             </form>
->         </section>
-> 
->         <!-- Driver Toggle -->
->         <div class="flex p-1 bg-slate-200 rounded-2xl font-bold text-sm">
->             <button id="tabCody" class="flex-1 py-2 rounded-xl transition-all bg-white shadow-sm">CODY</button>
->             <button id="tabZai" class="flex-1 py-2 rounded-xl transition-all text-slate-500">ZAI</button>
->         </div>
-> 
->         <!-- Challenges Section -->
->         <div id="challengeContainer" class="space-y-3">
->             <!-- Active Challenges will be injected here -->
->         </div>
-> 
->         <!-- Summary Statistics -->
->         <div class="grid grid-cols-2 gap-4">
->             <div class="col-span-2 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
->                 <div class="flex justify-between items-start">
->                     <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Today's Net Profit</span>
->                     <span id="displayRating" class="text-xs font-bold text-blue-500">⭐ 5.0</span>
->                 </div>
->                 <div class="flex items-baseline gap-2">
->                     <h2 id="statTodayNet" class="text-4xl font-black text-slate-900">$0.00</h2>
->                     <span id="statTodayEfficiency" class="text-green-600 font-bold text-sm">$0/hr</span>
->                 </div>
->                 <p id="displayNotes" class="text-[11px] text-slate-500 mt-3 italic"></p>
->             </div>
->             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
->                 <span class="text-[10px] font-bold text-slate-400 uppercase">Week Net</span>
->                 <h3 id="statWeekNet" class="text-xl font-black">$0</h3>
->             </div>
->             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
->                 <span class="text-[10px] font-bold text-slate-400 uppercase">Month Net</span>
->                 <h3 id="statMonthNet" class="text-xl font-black">$0</h3>
->             </div>
->         </div>
-> 
->         <!-- Tier Progress -->
->         <section id="tierCard" class="bg-slate-900 text-white p-6 rounded-3xl shadow-xl overflow-hidden relative">
->             <div class="relative z-10">
->                 <div class="flex justify-between items-start">
->                     <div>
->                         <p class="text-[10px] font-bold opacity-50 uppercase tracking-widest">Active Tier</p>
->                         <h2 id="tierName" class="text-3xl font-black italic tracking-tighter">SILVER</h2>
->                     </div>
->                     <div class="text-right">
->                         <p class="text-[10px] font-bold opacity-50 uppercase">Perk Value</p>
->                         <h2 id="tierPerk" class="text-xl font-bold">$0.00</h2>
->                     </div>
->                 </div>
->                 <div class="mt-8">
->                     <div class="flex justify-between text-[10px] font-black mb-2 opacity-80">
->                         <span id="tierPoints">0 POINTS</span>
->                         <span id="tierNext">NEXT: 500</span>
->                     </div>
->                     <div class="h-3 bg-white/10 rounded-full overflow-hidden">
->                         <div id="tierProgress" class="h-full bg-blue-500 transition-all duration-1000" style="width: 0%"></div>
->                     </div>
->                 </div>
->             </div>
->             <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
->         </section>
-> 
->         <!-- Charts -->
->         <section class="space-y-4 pb-10">
->             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
->                 <h4 class="text-[10px] font-black text-slate-400 uppercase mb-4 tracking-widest">Last 7 Days: Rides</h4>
->                 <canvas id="chartWeekRides"></canvas>
->             </div>
->             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
->                 <h4 class="text-[10px] font-black text-slate-400 uppercase mb-4 tracking-widest">Monthly Fuel Costs</h4>
->                 <canvas id="chartMonthGas"></canvas>
->             </div>
->         </section>
-> 
->     </main>
-> 
->     <script src="app.js"></script>
-> </body>
+> -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE public.challenges (
+
+>   id integer NOT NULL DEFAULT nextval('challenges_id_seq'::regclass),
+
+>   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
+
+>   start_date date NOT NULL,
+
+>   end_date date NOT NULL,
+
+>   required_rides integer NOT NULL,
+
+>   label text NOT NULL,
+
+>   CONSTRAINT challenges_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.drives_daily (
+
+>   id bigint NOT NULL DEFAULT nextval('drives_daily_id_seq'::regclass),
+
+>   drive_date date NOT NULL,
+
+>   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
+
+>   online_hours numeric DEFAULT 0,
+
+>   driving_hours numeric DEFAULT 0,
+
+>   rides_completed integer DEFAULT 0,
+
+>   rides_rejected integer DEFAULT 0,
+
+>   earnings numeric DEFAULT 0,
+
+>   tips numeric DEFAULT 0,
+
+>   gas_cost numeric DEFAULT 0,
+
+>   other_costs numeric DEFAULT 0,
+
+>   rating_stars numeric DEFAULT 5,
+
+>   safety_issue boolean DEFAULT false,
+
+>   challenge_progress text,
+
+>   tier_points integer DEFAULT 0,
+
+>   perk_value numeric DEFAULT 0,
+
+>   hours_in_last_24 numeric DEFAULT 0,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   vehicle_status text DEFAULT 'green'::text CHECK (vehicle_status = ANY (ARRAY['green'::text, 'yellow'::text, 'red'::text])),
+
+>   CONSTRAINT drives_daily_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.tier_periods (
+
+>   id integer NOT NULL DEFAULT nextval('tier_periods_id_seq'::regclass),
+
+>   driver text NOT NULL CHECK (driver = ANY (ARRAY['Zai'::text, 'Cody'::text])),
+
+>   period_start date NOT NULL,
+
+>   period_end date NOT NULL,
+
+>   points_total integer DEFAULT 0,
+
+>   perk_value numeric DEFAULT 0,
+
+>   CONSTRAINT tier_periods_pkey PRIMARY KEY (id)
+
+> );  <!DOCTYPE html>
+
+> <html lang="en">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+>     <title>Rideshare Battle Boards</title>
+
+>     <link rel="manifest" href="manifest.json">
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+>     <style>
+
+>         .no-scrollbar::-webkit-scrollbar { display: none; }
+
+>         .status-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+>         .bg-status-green { background-color: #22c55e; box-shadow: 0 0 8px #22c55e; }
+
+>         .bg-status-yellow { background-color: #eab308; box-shadow: 0 0 8px #eab308; }
+
+>         .bg-status-red { background-color: #ef4444; box-shadow: 0 0 8px #ef4444; }
+
+>     </style>
+
+> </head>
+
+> <body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
+
+> 
+
+>     <nav class="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200 px-4 py-3 flex justify-between items-center">
+
+>         <div class="flex items-center gap-2">
+
+>             <h1 class="text-xl font-black tracking-tighter text-blue-600">BATTLE BOARDS</h1>
+
+>             <div id="navVehicleStatus" class="status-dot bg-status-green"></div>
+
+>         </div>
+
+>         <select id="appMode" class="text-xs font-bold bg-slate-100 border-none rounded-full px-3 py-1 outline-none">
+
+>             <option value="zai">View: Zai (Read)</option>
+
+>             <option value="cody">View: Cody (Edit)</option>
+
+>         </select>
+
+>     </nav>
+
+> 
+
+>     <main class="max-w-md mx-auto p-4 space-y-6">
+
+>         
+
+>         <!-- Entry Form (Cody Only) -->
+
+>         <section id="entrySection" class="hidden bg-white p-5 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
+
+>             <h2 class="text-lg font-bold mb-4">Daily Check-in</h2>
+
+>             <form id="logForm" class="grid grid-cols-2 gap-3">
+
+>                 <div class="col-span-2 flex gap-2">
+
+>                     <input type="date" name="drive_date" id="formDate" required class="flex-1 p-3 bg-slate-50 rounded-xl border-none text-sm font-medium">
+
+>                     <select name="vehicle_status" class="bg-slate-50 rounded-xl px-3 border-none text-lg">
+
+>                         <option value="green">🟢 Ready</option>
+
+>                         <option value="yellow">🟡 Warning</option>
+
+>                         <option value="red">🔴 Urgent</option>
+
+>                     </select>
+
+>                 </div>
+
+>                 
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Driving Hrs</label>
+
+>                     <input type="number" step="0.1" name="driving_hours" placeholder="0.0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Rating (Stars)</label>
+
+>                     <input type="number" step="0.01" name="rating_stars" placeholder="5.0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Completed</label>
+
+>                     <input type="number" name="rides_completed" placeholder="0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Rejected</label>
+
+>                     <input type="number" name="rides_rejected" placeholder="0" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Earnings $</label>
+
+>                     <input type="number" step="0.01" name="earnings" placeholder="0.00" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 <div>
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Gas Cost $</label>
+
+>                     <input type="number" step="0.01" name="gas_cost" placeholder="0.00" class="w-full p-3 bg-slate-50 rounded-xl border-none">
+
+>                 </div>
+
+>                 
+
+>                 <div class="col-span-2">
+
+>                     <label class="text-[10px] font-bold text-slate-400 uppercase ml-2">Maintenance/Safety Notes</label>
+
+>                     <textarea name="notes" placeholder="e.g. Needs tire air, clean interior..." class="w-full p-3 bg-slate-50 rounded-xl border-none text-sm h-20"></textarea>
+
+>                 </div>
+
+> 
+
+>                 <button type="submit" class="col-span-2 bg-blue-600 text-white font-bold py-4 rounded-2xl mt-2 shadow-lg shadow-blue-200 active:scale-95 transition-transform">
+
+>                     UPDATE BOARD
+
+>                 </button>
+
+>             </form>
+
+>         </section>
+
+> 
+
+>         <!-- Driver Toggle -->
+
+>         <div class="flex p-1 bg-slate-200 rounded-2xl font-bold text-sm">
+
+>             <button id="tabCody" class="flex-1 py-2 rounded-xl transition-all bg-white shadow-sm">CODY</button>
+
+>             <button id="tabZai" class="flex-1 py-2 rounded-xl transition-all text-slate-500">ZAI</button>
+
+>         </div>
+
+> 
+
+>         <!-- Challenges Section -->
+
+>         <div id="challengeContainer" class="space-y-3">
+
+>             <!-- Active Challenges will be injected here -->
+
+>         </div>
+
+> 
+
+>         <!-- Summary Statistics -->
+
+>         <div class="grid grid-cols-2 gap-4">
+
+>             <div class="col-span-2 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+
+>                 <div class="flex justify-between items-start">
+
+>                     <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Today's Net Profit</span>
+
+>                     <span id="displayRating" class="text-xs font-bold text-blue-500">⭐ 5.0</span>
+
+>                 </div>
+
+>                 <div class="flex items-baseline gap-2">
+
+>                     <h2 id="statTodayNet" class="text-4xl font-black text-slate-900">$0.00</h2>
+
+>                     <span id="statTodayEfficiency" class="text-green-600 font-bold text-sm">$0/hr</span>
+
+>                 </div>
+
+>                 <p id="displayNotes" class="text-[11px] text-slate-500 mt-3 italic"></p>
+
+>             </div>
+
+>             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
+
+>                 <span class="text-[10px] font-bold text-slate-400 uppercase">Week Net</span>
+
+>                 <h3 id="statWeekNet" class="text-xl font-black">$0</h3>
+
+>             </div>
+
+>             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
+
+>                 <span class="text-[10px] font-bold text-slate-400 uppercase">Month Net</span>
+
+>                 <h3 id="statMonthNet" class="text-xl font-black">$0</h3>
+
+>             </div>
+
+>         </div>
+
+> 
+
+>         <!-- Tier Progress -->
+
+>         <section id="tierCard" class="bg-slate-900 text-white p-6 rounded-3xl shadow-xl overflow-hidden relative">
+
+>             <div class="relative z-10">
+
+>                 <div class="flex justify-between items-start">
+
+>                     <div>
+
+>                         <p class="text-[10px] font-bold opacity-50 uppercase tracking-widest">Active Tier</p>
+
+>                         <h2 id="tierName" class="text-3xl font-black italic tracking-tighter">SILVER</h2>
+
+>                     </div>
+
+>                     <div class="text-right">
+
+>                         <p class="text-[10px] font-bold opacity-50 uppercase">Perk Value</p>
+
+>                         <h2 id="tierPerk" class="text-xl font-bold">$0.00</h2>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="mt-8">
+
+>                     <div class="flex justify-between text-[10px] font-black mb-2 opacity-80">
+
+>                         <span id="tierPoints">0 POINTS</span>
+
+>                         <span id="tierNext">NEXT: 500</span>
+
+>                     </div>
+
+>                     <div class="h-3 bg-white/10 rounded-full overflow-hidden">
+
+>                         <div id="tierProgress" class="h-full bg-blue-500 transition-all duration-1000" style="width: 0%"></div>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>             <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+>         </section>
+
+> 
+
+>         <!-- Charts -->
+
+>         <section class="space-y-4 pb-10">
+
+>             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
+
+>                 <h4 class="text-[10px] font-black text-slate-400 uppercase mb-4 tracking-widest">Last 7 Days: Rides</h4>
+
+>                 <canvas id="chartWeekRides"></canvas>
+
+>             </div>
+
+>             <div class="bg-white p-4 rounded-3xl border border-slate-100 shadow-sm">
+
+>                 <h4 class="text-[10px] font-black text-slate-400 uppercase mb-4 tracking-widest">Monthly Fuel Costs</h4>
+
+>                 <canvas id="chartMonthGas"></canvas>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>     </main>
+
+> 
+
+>     <script src="app.js"></script>
+
+> </body>
+
 > </html>  -- yes so for the app.js, well i dont need to enter via the browser ill do manually in supabase so f that worker just need the entries to showup and calcualted from supabase.
 
 ### Assistant
@@ -4458,203 +4818,400 @@ canonical_ref: ""
 > - never writes anything from browser
 
 ### User
-> Error running SQL query
-> Failed to run sql query: ERROR:  42601: syntax error at or near "document"
-> LINE 1: document.addEventListener("DOMContentLoaded", () => { -- oh here is the app.js again give me the fully updated script. // IMPORTANT: Replace this with your actual Worker URL from `npx wrangler deploy`
-> const API = "https://rideshare-battle-api.qilife.workers.dev/api";
-> 
-> let state = {
->     mode: localStorage.getItem("mode") || "zai",
->     viewing: "Cody",
->     data: [],
->     challenges: [],
->     tier: null
-> };
-> 
-> let charts = {};
-> 
-> async function init() {
->     document.getElementById("appMode").value = state.mode;
->     document.getElementById("formDate").valueAsDate = new Date();
->     
->     bindEvents();
->     renderMode();
->     await fetchData();
-> }
-> 
-> function bindEvents() {
->     document.getElementById("appMode").onchange = (e) => {
->         state.mode = e.target.value;
->         localStorage.setItem("mode", state.mode);
->         renderMode();
->     };
-> 
->     document.getElementById("tabCody").onclick = () => { state.viewing = "Cody"; switchTab(); };
->     document.getElementById("tabZai").onclick = () => { state.viewing = "Zai"; switchTab(); };
-> 
->     document.getElementById("logForm").onsubmit = handleFormSubmit;
-> }
-> 
-> async function handleFormSubmit(e) {
->     e.preventDefault();
->     const btn = e.target.querySelector("button");
->     const fd = new FormData(e.target);
->     const payload = Object.fromEntries(fd.entries());
->     payload.driver = state.viewing;
-> 
->     btn.disabled = true;
->     btn.textContent = "SYNCING...";
-> 
->     try {
->         const res = await fetch(`${API}/drives`, {
->             method: "POST",
->             headers: { "Content-Type": "application/json" },
->             body: JSON.stringify(payload)
->         });
->         if (!res.ok) throw new Error("Sync failed");
->         await fetchData();
->         btn.textContent = "SYNCED ✅";
->         setTimeout(() => { btn.disabled = false; btn.textContent = "UPDATE BOARD"; }, 2000);
->     } catch (err) {
->         console.error(err);
->         btn.textContent = "RETRY ❌";
->         btn.disabled = false;
->     }
-> }
-> 
-> async function fetchData() {
->     const now = new Date();
->     const startMonth = new Date(now.getFullYear(), now.getMonth(), 1).toISOString().split('T')[0];
->     const endStr = now.toISOString().split('T')[0];
-> 
->     try {
->         const [drives, tier, challenges] = await Promise.all([
->             fetch(`${API}/drives?driver=${state.viewing}&start=${startMonth}&end=${endStr}`).then(r => r.json()),
->             fetch(`${API}/tier?driver=${state.viewing}&date=${endStr}`).then(r => r.json()),
->             fetch(`${API}/challenges?driver=${state.viewing}`).then(r => r.json())
->         ]);
-> 
->         state.data = Array.isArray(drives) ? drives : [];
->         state.tier = tier[0] || null;
->         state.challenges = Array.isArray(challenges) ? challenges : [];
->         
->         render();
->     } catch (e) {
->         console.error("Fetch failure:", e);
->         // If you see "TypeError: Failed to fetch", check CORS or Worker URL
->     }
-> }
-> 
-> function render() {
->     const today = new Date().toISOString().split('T')[0];
->     const todayData = state.data.find(d => d.drive_date === today) || {};
->     
->     // Status & Notes
->     const navStatus = document.getElementById("navVehicleStatus");
->     navStatus.className = `status-dot bg-status-${todayData.vehicle_status || 'green'}`;
->     document.getElementById("displayNotes").textContent = todayData.notes || "";
->     document.getElementById("displayRating").textContent = `⭐ ${todayData.rating_stars || '5.0'}`;
-> 
->     // Summary Metrics
->     const getNet = (d) => (Number(d.earnings || 0) + Number(d.tips || 0)) - Number(d.gas_cost || 0);
->     const tNet = getNet(todayData);
->     document.getElementById("statTodayNet").textContent = `$${tNet.toFixed(2)}`;
->     
->     const eff = tNet / (Number(todayData.driving_hours) || 1);
->     document.getElementById("statTodayEfficiency").textContent = `$${eff.toFixed(2)}/hr`;
-> 
->     const weekStart = new Date(); weekStart.setDate(weekStart.getDate() - 7);
->     const weekNet = state.data.filter(d => new Date(d.drive_date) >= weekStart).reduce((a, b) => a + getNet(b), 0);
->     const monthNet = state.data.reduce((a, b) => a + getNet(b), 0);
->     
->     document.getElementById("statWeekNet").textContent = `$${Math.round(weekNet)}`;
->     document.getElementById("statMonthNet").textContent = `$${Math.round(monthNet)}`;
-> 
->     // Challenges (Multi-Stacking Logic)
->     renderChallenges();
-> 
->     // Tiers
->     const pts = state.tier?.points_total || 0;
->     let name = "SILVER", next = 500;
->     if (pts >= 2000) { name = "PLATINUM"; next = 5000; }
->     else if (pts >= 1000) { name = "GOLD"; next = 2000; }
->     else if (pts >= 500) { name = "SILVER"; next = 1000; }
-> 
->     document.getElementById("tierName").textContent = name;
->     document.getElementById("tierPoints").textContent = `${pts} PTS`;
->     document.getElementById("tierNext").textContent = `NEXT: ${next}`;
->     document.getElementById("tierProgress").style.width = `${Math.min(100, (pts/next)*100)}%`;
->     document.getElementById("tierPerk").textContent = `$${(state.tier?.perk_value || 0).toFixed(2)}`;
-> 
->     updateCharts();
-> }
-> 
-> function renderChallenges() {
->     const container = document.getElementById("challengeContainer");
->     container.innerHTML = "";
-> 
->     state.challenges.forEach(chal => {
->         // Find all rides that fall within this specific challenge's window
->         const ridesInWindow = state.data
->             .filter(d => d.drive_date >= chal.start_date && d.drive_date <= chal.end_date)
->             .reduce((sum, d) => sum + (Number(d.rides_completed) || 0), 0);
->         
->         const perc = Math.min(100, Math.round((ridesInWindow / chal.required_rides) * 100));
->         
->         const html = `
->             <div class="bg-blue-50 border border-blue-100 p-4 rounded-3xl">
->                 <div class="flex justify-between items-center mb-2">
->                     <span class="text-[10px] font-black text-blue-500 uppercase tracking-widest">${chal.label}</span>
->                     <span class="text-[10px] font-bold text-blue-800">${ridesInWindow} / ${chal.required_rides}</span>
->                 </div>
->                 <div class="h-2 bg-blue-200 rounded-full overflow-hidden">
->                     <div class="h-full bg-blue-600 transition-all duration-700" style="width: ${perc}%"></div>
->                 </div>
->             </div>
->         `;
->         container.insertAdjacentHTML('beforeend', html);
->     });
-> }
-> 
-> function updateCharts() {
->     if (charts.week) charts.week.destroy();
->     if (charts.month) charts.month.destroy();
-> 
->     const last7 = state.data.slice(-7);
->     charts.week = new Chart(document.getElementById("chartWeekRides"), {
->         type: 'bar',
->         data: {
->             labels: last7.map(d => d.drive_date.split('-').slice(1).join('/')),
->             datasets: [{ data: last7.map(d => d.rides_completed), backgroundColor: '#3b82f6', borderRadius: 4 }]
->         },
->         options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
->     });
-> 
->     charts.month = new Chart(document.getElementById("chartMonthGas"), {
->         type: 'line',
->         data: {
->             labels: state.data.map(d => d.drive_date.split('-')[2]),
->             datasets: [{ data: state.data.map(d => d.gas_cost), borderColor: '#f59e0b', tension: 0.3, fill: true, backgroundColor: 'rgba(245,158,11,0.05)' }]
->         },
->         options: { plugins: { legend: { display: false } } }
->     });
-> }
-> 
-> function renderMode() {
->     const entry = document.getElementById("entrySection");
->     state.mode === "cody" ? entry.classList.remove("hidden") : entry.classList.add("hidden");
-> }
-> 
-> function switchTab() {
->     const c = document.getElementById("tabCody");
->     const z = document.getElementById("tabZai");
->     const active = "flex-1 py-2 rounded-xl transition-all bg-white shadow-sm";
->     const inactive = "flex-1 py-2 rounded-xl transition-all text-slate-500";
->     c.className = state.viewing === "Cody" ? active : inactive;
->     z.className = state.viewing === "Zai" ? active : inactive;
->     fetchData();
-> }
-> 
+> Error running SQL query
+
+> Failed to run sql query: ERROR:  42601: syntax error at or near "document"
+
+> LINE 1: document.addEventListener("DOMContentLoaded", () => { -- oh here is the app.js again give me the fully updated script. // IMPORTANT: Replace this with your actual Worker URL from `npx wrangler deploy`
+
+> const API = "https://rideshare-battle-api.qilife.workers.dev/api";
+
+> 
+
+> let state = {
+
+>     mode: localStorage.getItem("mode") || "zai",
+
+>     viewing: "Cody",
+
+>     data: [],
+
+>     challenges: [],
+
+>     tier: null
+
+> };
+
+> 
+
+> let charts = {};
+
+> 
+
+> async function init() {
+
+>     document.getElementById("appMode").value = state.mode;
+
+>     document.getElementById("formDate").valueAsDate = new Date();
+
+>     
+
+>     bindEvents();
+
+>     renderMode();
+
+>     await fetchData();
+
+> }
+
+> 
+
+> function bindEvents() {
+
+>     document.getElementById("appMode").onchange = (e) => {
+
+>         state.mode = e.target.value;
+
+>         localStorage.setItem("mode", state.mode);
+
+>         renderMode();
+
+>     };
+
+> 
+
+>     document.getElementById("tabCody").onclick = () => { state.viewing = "Cody"; switchTab(); };
+
+>     document.getElementById("tabZai").onclick = () => { state.viewing = "Zai"; switchTab(); };
+
+> 
+
+>     document.getElementById("logForm").onsubmit = handleFormSubmit;
+
+> }
+
+> 
+
+> async function handleFormSubmit(e) {
+
+>     e.preventDefault();
+
+>     const btn = e.target.querySelector("button");
+
+>     const fd = new FormData(e.target);
+
+>     const payload = Object.fromEntries(fd.entries());
+
+>     payload.driver = state.viewing;
+
+> 
+
+>     btn.disabled = true;
+
+>     btn.textContent = "SYNCING...";
+
+> 
+
+>     try {
+
+>         const res = await fetch(`${API}/drives`, {
+
+>             method: "POST",
+
+>             headers: { "Content-Type": "application/json" },
+
+>             body: JSON.stringify(payload)
+
+>         });
+
+>         if (!res.ok) throw new Error("Sync failed");
+
+>         await fetchData();
+
+>         btn.textContent = "SYNCED ✅";
+
+>         setTimeout(() => { btn.disabled = false; btn.textContent = "UPDATE BOARD"; }, 2000);
+
+>     } catch (err) {
+
+>         console.error(err);
+
+>         btn.textContent = "RETRY ❌";
+
+>         btn.disabled = false;
+
+>     }
+
+> }
+
+> 
+
+> async function fetchData() {
+
+>     const now = new Date();
+
+>     const startMonth = new Date(now.getFullYear(), now.getMonth(), 1).toISOString().split('T')[0];
+
+>     const endStr = now.toISOString().split('T')[0];
+
+> 
+
+>     try {
+
+>         const [drives, tier, challenges] = await Promise.all([
+
+>             fetch(`${API}/drives?driver=${state.viewing}&start=${startMonth}&end=${endStr}`).then(r => r.json()),
+
+>             fetch(`${API}/tier?driver=${state.viewing}&date=${endStr}`).then(r => r.json()),
+
+>             fetch(`${API}/challenges?driver=${state.viewing}`).then(r => r.json())
+
+>         ]);
+
+> 
+
+>         state.data = Array.isArray(drives) ? drives : [];
+
+>         state.tier = tier[0] || null;
+
+>         state.challenges = Array.isArray(challenges) ? challenges : [];
+
+>         
+
+>         render();
+
+>     } catch (e) {
+
+>         console.error("Fetch failure:", e);
+
+>         // If you see "TypeError: Failed to fetch", check CORS or Worker URL
+
+>     }
+
+> }
+
+> 
+
+> function render() {
+
+>     const today = new Date().toISOString().split('T')[0];
+
+>     const todayData = state.data.find(d => d.drive_date === today) || {};
+
+>     
+
+>     // Status & Notes
+
+>     const navStatus = document.getElementById("navVehicleStatus");
+
+>     navStatus.className = `status-dot bg-status-${todayData.vehicle_status || 'green'}`;
+
+>     document.getElementById("displayNotes").textContent = todayData.notes || "";
+
+>     document.getElementById("displayRating").textContent = `⭐ ${todayData.rating_stars || '5.0'}`;
+
+> 
+
+>     // Summary Metrics
+
+>     const getNet = (d) => (Number(d.earnings || 0) + Number(d.tips || 0)) - Number(d.gas_cost || 0);
+
+>     const tNet = getNet(todayData);
+
+>     document.getElementById("statTodayNet").textContent = `$${tNet.toFixed(2)}`;
+
+>     
+
+>     const eff = tNet / (Number(todayData.driving_hours) || 1);
+
+>     document.getElementById("statTodayEfficiency").textContent = `$${eff.toFixed(2)}/hr`;
+
+> 
+
+>     const weekStart = new Date(); weekStart.setDate(weekStart.getDate() - 7);
+
+>     const weekNet = state.data.filter(d => new Date(d.drive_date) >= weekStart).reduce((a, b) => a + getNet(b), 0);
+
+>     const monthNet = state.data.reduce((a, b) => a + getNet(b), 0);
+
+>     
+
+>     document.getElementById("statWeekNet").textContent = `$${Math.round(weekNet)}`;
+
+>     document.getElementById("statMonthNet").textContent = `$${Math.round(monthNet)}`;
+
+> 
+
+>     // Challenges (Multi-Stacking Logic)
+
+>     renderChallenges();
+
+> 
+
+>     // Tiers
+
+>     const pts = state.tier?.points_total || 0;
+
+>     let name = "SILVER", next = 500;
+
+>     if (pts >= 2000) { name = "PLATINUM"; next = 5000; }
+
+>     else if (pts >= 1000) { name = "GOLD"; next = 2000; }
+
+>     else if (pts >= 500) { name = "SILVER"; next = 1000; }
+
+> 
+
+>     document.getElementById("tierName").textContent = name;
+
+>     document.getElementById("tierPoints").textContent = `${pts} PTS`;
+
+>     document.getElementById("tierNext").textContent = `NEXT: ${next}`;
+
+>     document.getElementById("tierProgress").style.width = `${Math.min(100, (pts/next)*100)}%`;
+
+>     document.getElementById("tierPerk").textContent = `$${(state.tier?.perk_value || 0).toFixed(2)}`;
+
+> 
+
+>     updateCharts();
+
+> }
+
+> 
+
+> function renderChallenges() {
+
+>     const container = document.getElementById("challengeContainer");
+
+>     container.innerHTML = "";
+
+> 
+
+>     state.challenges.forEach(chal => {
+
+>         // Find all rides that fall within this specific challenge's window
+
+>         const ridesInWindow = state.data
+
+>             .filter(d => d.drive_date >= chal.start_date && d.drive_date <= chal.end_date)
+
+>             .reduce((sum, d) => sum + (Number(d.rides_completed) || 0), 0);
+
+>         
+
+>         const perc = Math.min(100, Math.round((ridesInWindow / chal.required_rides) * 100));
+
+>         
+
+>         const html = `
+
+>             <div class="bg-blue-50 border border-blue-100 p-4 rounded-3xl">
+
+>                 <div class="flex justify-between items-center mb-2">
+
+>                     <span class="text-[10px] font-black text-blue-500 uppercase tracking-widest">${chal.label}</span>
+
+>                     <span class="text-[10px] font-bold text-blue-800">${ridesInWindow} / ${chal.required_rides}</span>
+
+>                 </div>
+
+>                 <div class="h-2 bg-blue-200 rounded-full overflow-hidden">
+
+>                     <div class="h-full bg-blue-600 transition-all duration-700" style="width: ${perc}%"></div>
+
+>                 </div>
+
+>             </div>
+
+>         `;
+
+>         container.insertAdjacentHTML('beforeend', html);
+
+>     });
+
+> }
+
+> 
+
+> function updateCharts() {
+
+>     if (charts.week) charts.week.destroy();
+
+>     if (charts.month) charts.month.destroy();
+
+> 
+
+>     const last7 = state.data.slice(-7);
+
+>     charts.week = new Chart(document.getElementById("chartWeekRides"), {
+
+>         type: 'bar',
+
+>         data: {
+
+>             labels: last7.map(d => d.drive_date.split('-').slice(1).join('/')),
+
+>             datasets: [{ data: last7.map(d => d.rides_completed), backgroundColor: '#3b82f6', borderRadius: 4 }]
+
+>         },
+
+>         options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+
+>     });
+
+> 
+
+>     charts.month = new Chart(document.getElementById("chartMonthGas"), {
+
+>         type: 'line',
+
+>         data: {
+
+>             labels: state.data.map(d => d.drive_date.split('-')[2]),
+
+>             datasets: [{ data: state.data.map(d => d.gas_cost), borderColor: '#f59e0b', tension: 0.3, fill: true, backgroundColor: 'rgba(245,158,11,0.05)' }]
+
+>         },
+
+>         options: { plugins: { legend: { display: false } } }
+
+>     });
+
+> }
+
+> 
+
+> function renderMode() {
+
+>     const entry = document.getElementById("entrySection");
+
+>     state.mode === "cody" ? entry.classList.remove("hidden") : entry.classList.add("hidden");
+
+> }
+
+> 
+
+> function switchTab() {
+
+>     const c = document.getElementById("tabCody");
+
+>     const z = document.getElementById("tabZai");
+
+>     const active = "flex-1 py-2 rounded-xl transition-all bg-white shadow-sm";
+
+>     const inactive = "flex-1 py-2 rounded-xl transition-all text-slate-500";
+
+>     c.className = state.viewing === "Cody" ? active : inactive;
+
+>     z.className = state.viewing === "Zai" ? active : inactive;
+
+>     fetchData();
+
+> }
+
+> 
+
 > init(); 
 >         ^
 

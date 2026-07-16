@@ -3,9 +3,9 @@ layout: page
 title: "Minimum salary calculation"
 slug: "minimum_salary_calculation"
 created_at: "2025-12-06 21:32:07"
-updated_at: "2025-12-06 21:32:07"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "QiEvidence - Legal Docs Organization"
 slug: "qievidence_legal_docs_organization"
 created_at: "2026-03-12 02:20:17"
-updated_at: "2026-03-12 02:20:17"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1354,426 +1354,846 @@ canonical_ref: ""
 > from the same objects you’re creating right now.
 
 ### User
-> how would you recommend i enter the docket, as event, and the documents in teh event listed as related object filings, Case Summary
-> Financial Center First Credit Union v. Cody Rice-Velasquez, American Express National Bank, N.A., JP Morgan Chase Bank, N.A.
-> Case Number	49D03-2501-MF-002559
-> Court	Marion Superior Court 3
-> Type	MF - Mortgage Foreclosure
-> Filed	01/16/2025
-> Status	05/28/2025 , Decided
-> Parties to the Case
-> Hide all party details
-> Defendant	Rice-Velasquez, Cody
-> Address3137 Melbourne Road Drive S,
-> Indianapolis, IN 46228
-> AttorneyPro Se
-> Defendant	American Express National Bank, N.A.
-> Address115 W. Towne Ridge Parkway
-> Sandy, UT 84070
-> Defendant	JP Morgan Chase Bank, N.A.
-> Address1111 Polaris Parkway
-> Columbus, OH 43240
-> Plaintiff	Financial Center First Credit Union
-> Address7101 E. 56th Street
-> Indianapolis, IN 46226
-> AttorneyMichael E. Farrer
-> #678449, Lead, Retained
-> Attorney address 1601 South Anderson Street
-> P.O. Box 494
-> Elwood, IN 46036
-> Attorney phone 765-552-9878(W)
-> AttorneyScott Andrew Kainrath
-> #2606949, Retained
-> Attorney address 1601 S. Anderson Street
-> P.O. Box 494
-> Elwood, IN 46036
-> Attorney phone 765-687-1000(W)
-> AttorneyFelix O'Neill Rippy
-> #1751918, Retained
-> Attorney address Welch & Company LLC
-> 117 E Charles St, Ste 201
-> PO Box 428
-> Muncie, IN 47308
-> Attorney phone 765-282-9501(W)
-> Chronological Case Summary
-> 01/16/2025	
-> Case Opened as a New Filing
-> 01/16/2025	
-> Complaint/Equivalent Pleading Filed
-> Complaint on Notes and to Foreclose Mortgages
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Appearance Filed
-> Appearance
-> For Party:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Request for Admissions
-> Request for Admissions
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Notice Filed
-> Notice to Homeowners, Contract Buyers, and Renters
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Appearance Filed
-> Appearance
-> For Party:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Subpoena/Summons Filed
-> Summons
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Subpoena/Summons Filed
-> Summons
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Subpoena/Summons Filed
-> Summons
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Subpoena/Summons Filed
-> Summons
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 01/16/2025	
-> Subpoena/Summons Filed
-> Summons
-> Filed By:Financial Center First Credit Union
-> File Stamp:01/16/2025
-> 03/03/2025	
-> Service Issued
-> SUMM
-> Serve To:Rice-Velasquez, Cody
-> 03/05/2025	
-> Service Returned Served
-> C1 COPY LEFT AND MAILED @ 4817 SHADOW PT. DR.46254 -20354
-> Party Served:Rice-Velasquez, Cody
-> 04/09/2025	
-> Service Issued
-> SUMM
-> Serve To:Rice-Velasquez, Cody
-> 04/15/2025	
-> Service Returned Served
-> C1- COPY LEFT AND MAILED TO ADDRESS PROVIDED- 32939
-> Party Served:Rice-Velasquez, Cody
-> 05/13/2025	
-> Motion for Default Judgment Filed
-> Motion for Default Judgment Entry and Decree of Foreclosure
-> Filed By:Financial Center First Credit Union
-> File Stamp:05/13/2025
-> 05/13/2025	
-> Affidavit Filed
-> Affidavit
-> Filed By:Financial Center First Credit Union
-> File Date:05/13/2025
-> 05/13/2025	
-> Affidavit in Support of Attorney fees
-> Affidavit in Support of Attorney Fees
-> Filed By:Financial Center First Credit Union
-> File Date:05/13/2025
-> 05/21/2025	
-> Order Denying Motion for Default Judgment
-> Default Judgment Entry and Decree of Foreclosure is denied. No return of service on American Express or JP Morgan Chase.
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:05/21/2025
-> 05/21/2025	
-> Notice Filed
-> Omitted Notice of Service
-> Filed By:Financial Center First Credit Union
-> File Stamp:05/21/2025
-> 05/22/2025	
-> Automated Paper Notice Issued to Parties
-> Order Denying Motion for Default Judgment ---- 5/21/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 05/22/2025	
-> Automated ENotice Issued to Parties
-> Order Denying Motion for Default Judgment ---- 5/21/2025 : Felix O'Neill Rippy;Michael E. Farrer
-> 05/23/2025	
-> Motion Filed
-> Request to Enter Amended Default Judgment and Decree of Foreclosure
-> Filed By:Financial Center First Credit Union
-> File Stamp:05/23/2025
-> 05/28/2025	
-> Order Granting Motion for Default Judgment
-> Amended Default Judgment Entry and Decree of Foreclosure.
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:05/28/2025
-> 05/28/2025	
-> Default Judgment entered
-> Judicial Officer:Hannah, Therese A - MAG
-> Comment: 
-> (Default Judgment and Decree of Foreclosure; address commonly known as 4817 Shadow Pointe Drive, Indianapolis, Indiana 46254; total amount of $220,863.09)
-> 05/29/2025	
-> Automated ENotice Issued to Parties
-> Order Granting Motion for Default Judgment ---- 5/28/2025 : Felix O'Neill Rippy;Michael E. Farrer
-> 05/29/2025	
-> Automated Paper Notice Issued to Parties
-> Order Granting Motion for Default Judgment ---- 5/28/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 05/30/2025	
-> Praecipe for Order of Sale
-> Praecipe for Sheriff's Sale
-> Filed By:Financial Center First Credit Union
-> File Stamp:05/29/2025
-> 06/13/2025	
-> Decree of Foreclosure Sent to Sheriff for Sale
-> Issued to Sheriff for the 8/15/25 Sheriff Sale
-> 07/09/2025	
-> Service Returned Served
-> NOTICE OF SHERIFF SALE POSTED AT 4817 SHADOW POINTE DR 46254 - 32939
-> Party Served:Rice-Velasquez, Cody
-> 07/17/2025	
-> Notice Filed
-> Plaintiff's Bid
-> Filed By:Financial Center First Credit Union
-> File Stamp:07/17/2025
-> 09/09/2025	
-> Decree of Foreclosure Returned
-> Fully Satisfied on 08/15/25 Sheriff Sale, Total Paid $240,464.20, Sale #032
-> File Stamp:09/09/2025
-> 09/09/2025	
-> Clerk Releases Judgment
-> By Sheriff Sale
-> 10/29/2025	
-> Petition Filed
-> Petition for Entry of Writ of Assistance
-> Filed By:Financial Center First Credit Union
-> File Stamp:10/29/2025
-> 10/29/2025	
-> Document Filed
-> Writ of Assistance
-> Filed By:Financial Center First Credit Union
-> File Stamp:10/29/2025
-> 11/06/2025	
-> Order for Writ
-> Order for writ of assistance.
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:11/06/2025
-> 11/07/2025	
-> Automated Paper Notice Issued to Parties
-> Order for Writ ---- 11/6/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 11/07/2025	
-> Automated ENotice Issued to Parties
-> Order for Writ ---- 11/6/2025 : Felix O'Neill Rippy;Michael E. Farrer
-> 12/11/2025	
-> Motion to Set Aside/Vacate Judgment Filed
-> Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/10/2025
-> 12/11/2025	
-> Motion to Quash Filed
-> Emergency Motion to Stay Writ of Assistance and Protect Property
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/10/2025
-> 12/11/2025	
-> Witness and/or Exhibit List Filed
-> Exhibit List Exhibits AG
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/10/2025
-> 12/11/2025	
-> Hearing Scheduling Activity
-> Hearing on Motion to Set Aside/Vacate Judgment scheduled for 01/09/2026 at 9:30 AM.
-> 12/11/2025	
-> Order Denying
-> Order Denying Motion Staying Writ of Assistance
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:12/11/2025
-> 12/11/2025	
-> Order for Hearing
-> Order Setting Defendant's Motion to Set Aside Judgment for Hearing
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:12/11/2025
-> 12/12/2025	
-> Automated Paper Notice Issued to Parties
-> Hearing Scheduling Activity ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order Denying ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order for Hearing ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 12/12/2025	
-> Automated ENotice Issued to Parties
-> Hearing Scheduling Activity ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer Order Denying ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer Order for Hearing ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer
-> 12/12/2025	
-> Motion Filed
-> Supplemental Emergency Motion for Temporary Access or Temporary Limited Re-Entry Pending January 9 Hearing
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/11/2025
-> 12/12/2025	
-> Notice Filed
-> Report to Court on Defendant's Request to Obtain Personal Item
-> Filed By:Financial Center First Credit Union
-> File Stamp:12/12/2025
-> 12/16/2025	
-> Declaration Filed
-> Emergency Supplemental Declaration of Cody Rice-Velasquez (Continuing Irreparable Harm, ADA Necessity, Non-Waiver)
-> Filed by:Rice-Velasquez, Cody
-> File Stamp:12/16/2025
-> 12/16/2025	
-> Motion Filed
-> Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/16/2025
-> 12/17/2025	
-> Notice Issued
-> Motion for Surplus Funds will be heard at the 1/9/26 Hearing
-> 12/17/2025	
-> Notice Filed
-> Report to Sheriff's Sale and Report of No Excess Proceeds
-> Filed By:Financial Center First Credit Union
-> File Stamp:12/17/2025
-> 12/18/2025	
-> Automated ENotice Issued to Parties
-> Notice Issued ---- 12/17/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer
-> 12/18/2025	
-> Automated Paper Notice Issued to Parties
-> Notice Issued ---- 12/17/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 12/22/2025	
-> Notice Filed
-> Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:12/22/2025
-> 01/09/2026	
-> Hearing on Motion to Set Aside/Vacate Judgment
-> Session:01/09/2026 9:30 AM, Judicial Officer: Hannah, Therese A - MAG
-> Comment:in person
-> Result:Commenced and concluded
-> 01/09/2026	
-> Hearing Journal Entry
-> Hearing on Motion to Set Aside and Motion to Release Funds conducted in room C0934; Plaintiff appears via counsel Scott Kainrath; Defendant Cody Rice- Velasquez appears without counsel; Argument heard; The Court to issue an Order
-> Judicial Officer:Hannah, Therese A - MAG
-> 01/09/2026	
-> Appearance Filed
-> APPEARANCE FORM CIVIL LITIGATION
-> For Party:Financial Center First Credit Union
-> File Stamp:01/09/2026
-> 01/21/2026	
-> Order Issued
-> Order from January 9, 2026 Hearing on Motion to Set Aside Judgment
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:01/20/2026
-> 01/22/2026	
-> Automated Paper Notice Issued to Parties
-> Order Issued ---- 1/21/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 01/22/2026	
-> Automated ENotice Issued to Parties
-> Order Issued ---- 1/21/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
-> 02/09/2026	
-> Notice Filed
-> Notice of Appeal
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:02/09/2026
-> 02/20/2026	
-> Petition Filed
-> Petition to Pay Surplus Funds to the Clerk of the Court
-> Filed By:Financial Center First Credit Union
-> File Stamp:02/20/2026
-> 02/24/2026	
-> Petition Filed
-> Petition for Disposition of Surplus and Motion for Nunc Pro Tunc
-> Filed By:Financial Center First Credit Union
-> File Stamp:02/24/2026
-> 02/26/2026	
-> Order Denying
-> Order Denying Petition for Nunc Pro Tunc
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:02/26/2026
-> 02/27/2026	
-> Automated Paper Notice Issued to Parties
-> Order Denying ---- 2/26/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 02/27/2026	
-> Automated ENotice Issued to Parties
-> Order Denying ---- 2/26/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
-> 02/27/2026	
-> Objection Filed
-> Motion ??? Defendant???s Consolidated Objection to Plaintiff???s Requested Modification of Credit Bid and Request for Evidentiary Hearing
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:02/26/2026
-> 02/27/2026	
-> Motion Filed
-> Defendants Motion to Enforce Plaintiff???s Petition to Pay Surplus Funds
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:02/26/2026
-> 03/02/2026	
-> Order Granting
-> Order to Pay Surplus Funds to the Clerk of the Court
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:03/02/2026
-> 03/03/2026	
-> Automated Paper Notice Issued to Parties
-> Order Granting ---- 3/2/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 03/03/2026	
-> Automated ENotice Issued to Parties
-> Order Granting ---- 3/2/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
-> 03/04/2026	
-> Order Denying
-> Order Moot
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:03/03/2026
-> 03/05/2026	
-> Automated Paper Notice Issued to Parties
-> Order Denying ---- 3/4/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 03/05/2026	
-> Automated ENotice Issued to Parties
-> Order Denying ---- 3/4/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
-> 03/06/2026	
-> Motion for Hearing Filed
-> Request for Hearing
-> Filed By:Financial Center First Credit Union
-> File Stamp:03/06/2026
-> 03/06/2026	
-> Notice Filed
-> Notice of Disposition of Property
-> Filed By:Financial Center First Credit Union
-> File Stamp:03/06/2026
-> 03/11/2026	
-> Hearing Scheduling Activity
-> Hearing scheduled for 03/27/2026 at 11:00 AM.
-> 03/11/2026	
-> Order for Hearing
-> Notice of Hearing on Motion to Clarify Judgment
-> Judicial Officer:Hannah, Therese A - MAG
-> Order Signed:03/11/2026
-> 03/11/2026	
-> Motion to Impose Sanctions Filed
-> Defendant???s Motion for Sanctions Pursuant to Indiana Trial Rule 11
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:03/09/2026
-> 03/11/2026	
-> Objection Filed
-> Defendant Motion to Deny Hearing and Enforce Deposit of Surplus
-> Filed By:Rice-Velasquez, Cody
-> File Stamp:03/11/2026
-> 03/12/2026	
-> Automated Paper Notice Issued to Parties
-> Hearing Scheduling Activity ---- 3/11/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order for Hearing ---- 3/11/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
-> 03/12/2026	
-> Automated ENotice Issued to Parties
-> Hearing Scheduling Activity ---- 3/11/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath Order for Hearing ---- 3/11/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
-> 03/27/2026	
-> Hearing
-> Session:03/27/2026 11:00 AM, Judicial Officer: Hannah, Therese A - MAG
-> Comment:in person; on Motion to Clarify Record
-> Financial Information
-> Financial Balances reflected are current representations of transactions processed by the Clerk’s Office. Please note that any balance due does not reflect interest that has accrued – if applicable – since the last payment. For questions/concerns regarding balances shown, please contact the Clerk’s Office.
-> Financial Center First Credit Union
-> Plaintiff
-> Balance Due (as of 03/12/2026)
-> 0.00
-> Charge Summary
-> Description	Amount	Credit	Payment
-> Court Costs and Filing Fees	185.00	0.00	185.00
-> Transaction Summary
-> Date	Description	Amount
-> 01/16/2025	Transaction Assessment	185.00
-> 01/16/2025	Electronic Payment	(185.00)
-> This is not the official court record. Official records of court proceedings may only be obtained directly from the court maintaining a particular record.
->  
-> Subscribe to content by RSS or Email
-> Follow us on Twitter
-> Indiana Courts YouTube Channel
-> Get our shared photos on Flickr
+> how would you recommend i enter the docket, as event, and the documents in teh event listed as related object filings, Case Summary
+
+> Financial Center First Credit Union v. Cody Rice-Velasquez, American Express National Bank, N.A., JP Morgan Chase Bank, N.A.
+
+> Case Number	49D03-2501-MF-002559
+
+> Court	Marion Superior Court 3
+
+> Type	MF - Mortgage Foreclosure
+
+> Filed	01/16/2025
+
+> Status	05/28/2025 , Decided
+
+> Parties to the Case
+
+> Hide all party details
+
+> Defendant	Rice-Velasquez, Cody
+
+> Address3137 Melbourne Road Drive S,
+
+> Indianapolis, IN 46228
+
+> AttorneyPro Se
+
+> Defendant	American Express National Bank, N.A.
+
+> Address115 W. Towne Ridge Parkway
+
+> Sandy, UT 84070
+
+> Defendant	JP Morgan Chase Bank, N.A.
+
+> Address1111 Polaris Parkway
+
+> Columbus, OH 43240
+
+> Plaintiff	Financial Center First Credit Union
+
+> Address7101 E. 56th Street
+
+> Indianapolis, IN 46226
+
+> AttorneyMichael E. Farrer
+
+> #678449, Lead, Retained
+
+> Attorney address 1601 South Anderson Street
+
+> P.O. Box 494
+
+> Elwood, IN 46036
+
+> Attorney phone 765-552-9878(W)
+
+> AttorneyScott Andrew Kainrath
+
+> #2606949, Retained
+
+> Attorney address 1601 S. Anderson Street
+
+> P.O. Box 494
+
+> Elwood, IN 46036
+
+> Attorney phone 765-687-1000(W)
+
+> AttorneyFelix O'Neill Rippy
+
+> #1751918, Retained
+
+> Attorney address Welch & Company LLC
+
+> 117 E Charles St, Ste 201
+
+> PO Box 428
+
+> Muncie, IN 47308
+
+> Attorney phone 765-282-9501(W)
+
+> Chronological Case Summary
+
+> 01/16/2025	
+
+> Case Opened as a New Filing
+
+> 01/16/2025	
+
+> Complaint/Equivalent Pleading Filed
+
+> Complaint on Notes and to Foreclose Mortgages
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Appearance Filed
+
+> Appearance
+
+> For Party:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Request for Admissions
+
+> Request for Admissions
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Notice Filed
+
+> Notice to Homeowners, Contract Buyers, and Renters
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Appearance Filed
+
+> Appearance
+
+> For Party:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Subpoena/Summons Filed
+
+> Summons
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Subpoena/Summons Filed
+
+> Summons
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Subpoena/Summons Filed
+
+> Summons
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Subpoena/Summons Filed
+
+> Summons
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 01/16/2025	
+
+> Subpoena/Summons Filed
+
+> Summons
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:01/16/2025
+
+> 03/03/2025	
+
+> Service Issued
+
+> SUMM
+
+> Serve To:Rice-Velasquez, Cody
+
+> 03/05/2025	
+
+> Service Returned Served
+
+> C1 COPY LEFT AND MAILED @ 4817 SHADOW PT. DR.46254 -20354
+
+> Party Served:Rice-Velasquez, Cody
+
+> 04/09/2025	
+
+> Service Issued
+
+> SUMM
+
+> Serve To:Rice-Velasquez, Cody
+
+> 04/15/2025	
+
+> Service Returned Served
+
+> C1- COPY LEFT AND MAILED TO ADDRESS PROVIDED- 32939
+
+> Party Served:Rice-Velasquez, Cody
+
+> 05/13/2025	
+
+> Motion for Default Judgment Filed
+
+> Motion for Default Judgment Entry and Decree of Foreclosure
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:05/13/2025
+
+> 05/13/2025	
+
+> Affidavit Filed
+
+> Affidavit
+
+> Filed By:Financial Center First Credit Union
+
+> File Date:05/13/2025
+
+> 05/13/2025	
+
+> Affidavit in Support of Attorney fees
+
+> Affidavit in Support of Attorney Fees
+
+> Filed By:Financial Center First Credit Union
+
+> File Date:05/13/2025
+
+> 05/21/2025	
+
+> Order Denying Motion for Default Judgment
+
+> Default Judgment Entry and Decree of Foreclosure is denied. No return of service on American Express or JP Morgan Chase.
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:05/21/2025
+
+> 05/21/2025	
+
+> Notice Filed
+
+> Omitted Notice of Service
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:05/21/2025
+
+> 05/22/2025	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Denying Motion for Default Judgment ---- 5/21/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 05/22/2025	
+
+> Automated ENotice Issued to Parties
+
+> Order Denying Motion for Default Judgment ---- 5/21/2025 : Felix O'Neill Rippy;Michael E. Farrer
+
+> 05/23/2025	
+
+> Motion Filed
+
+> Request to Enter Amended Default Judgment and Decree of Foreclosure
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:05/23/2025
+
+> 05/28/2025	
+
+> Order Granting Motion for Default Judgment
+
+> Amended Default Judgment Entry and Decree of Foreclosure.
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:05/28/2025
+
+> 05/28/2025	
+
+> Default Judgment entered
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Comment: 
+
+> (Default Judgment and Decree of Foreclosure; address commonly known as 4817 Shadow Pointe Drive, Indianapolis, Indiana 46254; total amount of $220,863.09)
+
+> 05/29/2025	
+
+> Automated ENotice Issued to Parties
+
+> Order Granting Motion for Default Judgment ---- 5/28/2025 : Felix O'Neill Rippy;Michael E. Farrer
+
+> 05/29/2025	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Granting Motion for Default Judgment ---- 5/28/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 05/30/2025	
+
+> Praecipe for Order of Sale
+
+> Praecipe for Sheriff's Sale
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:05/29/2025
+
+> 06/13/2025	
+
+> Decree of Foreclosure Sent to Sheriff for Sale
+
+> Issued to Sheriff for the 8/15/25 Sheriff Sale
+
+> 07/09/2025	
+
+> Service Returned Served
+
+> NOTICE OF SHERIFF SALE POSTED AT 4817 SHADOW POINTE DR 46254 - 32939
+
+> Party Served:Rice-Velasquez, Cody
+
+> 07/17/2025	
+
+> Notice Filed
+
+> Plaintiff's Bid
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:07/17/2025
+
+> 09/09/2025	
+
+> Decree of Foreclosure Returned
+
+> Fully Satisfied on 08/15/25 Sheriff Sale, Total Paid $240,464.20, Sale #032
+
+> File Stamp:09/09/2025
+
+> 09/09/2025	
+
+> Clerk Releases Judgment
+
+> By Sheriff Sale
+
+> 10/29/2025	
+
+> Petition Filed
+
+> Petition for Entry of Writ of Assistance
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:10/29/2025
+
+> 10/29/2025	
+
+> Document Filed
+
+> Writ of Assistance
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:10/29/2025
+
+> 11/06/2025	
+
+> Order for Writ
+
+> Order for writ of assistance.
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:11/06/2025
+
+> 11/07/2025	
+
+> Automated Paper Notice Issued to Parties
+
+> Order for Writ ---- 11/6/2025 : Cody Rice-Velasquez;American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 11/07/2025	
+
+> Automated ENotice Issued to Parties
+
+> Order for Writ ---- 11/6/2025 : Felix O'Neill Rippy;Michael E. Farrer
+
+> 12/11/2025	
+
+> Motion to Set Aside/Vacate Judgment Filed
+
+> Motion to Vacate Void Judgment under TR 60(B)(6) and 60(B)(1)
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/10/2025
+
+> 12/11/2025	
+
+> Motion to Quash Filed
+
+> Emergency Motion to Stay Writ of Assistance and Protect Property
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/10/2025
+
+> 12/11/2025	
+
+> Witness and/or Exhibit List Filed
+
+> Exhibit List Exhibits AG
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/10/2025
+
+> 12/11/2025	
+
+> Hearing Scheduling Activity
+
+> Hearing on Motion to Set Aside/Vacate Judgment scheduled for 01/09/2026 at 9:30 AM.
+
+> 12/11/2025	
+
+> Order Denying
+
+> Order Denying Motion Staying Writ of Assistance
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:12/11/2025
+
+> 12/11/2025	
+
+> Order for Hearing
+
+> Order Setting Defendant's Motion to Set Aside Judgment for Hearing
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:12/11/2025
+
+> 12/12/2025	
+
+> Automated Paper Notice Issued to Parties
+
+> Hearing Scheduling Activity ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order Denying ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order for Hearing ---- 12/11/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 12/12/2025	
+
+> Automated ENotice Issued to Parties
+
+> Hearing Scheduling Activity ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer Order Denying ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer Order for Hearing ---- 12/11/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer
+
+> 12/12/2025	
+
+> Motion Filed
+
+> Supplemental Emergency Motion for Temporary Access or Temporary Limited Re-Entry Pending January 9 Hearing
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/11/2025
+
+> 12/12/2025	
+
+> Notice Filed
+
+> Report to Court on Defendant's Request to Obtain Personal Item
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:12/12/2025
+
+> 12/16/2025	
+
+> Declaration Filed
+
+> Emergency Supplemental Declaration of Cody Rice-Velasquez (Continuing Irreparable Harm, ADA Necessity, Non-Waiver)
+
+> Filed by:Rice-Velasquez, Cody
+
+> File Stamp:12/16/2025
+
+> 12/16/2025	
+
+> Motion Filed
+
+> Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/16/2025
+
+> 12/17/2025	
+
+> Notice Issued
+
+> Motion for Surplus Funds will be heard at the 1/9/26 Hearing
+
+> 12/17/2025	
+
+> Notice Filed
+
+> Report to Sheriff's Sale and Report of No Excess Proceeds
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:12/17/2025
+
+> 12/18/2025	
+
+> Automated ENotice Issued to Parties
+
+> Notice Issued ---- 12/17/2025 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer
+
+> 12/18/2025	
+
+> Automated Paper Notice Issued to Parties
+
+> Notice Issued ---- 12/17/2025 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 12/22/2025	
+
+> Notice Filed
+
+> Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:12/22/2025
+
+> 01/09/2026	
+
+> Hearing on Motion to Set Aside/Vacate Judgment
+
+> Session:01/09/2026 9:30 AM, Judicial Officer: Hannah, Therese A - MAG
+
+> Comment:in person
+
+> Result:Commenced and concluded
+
+> 01/09/2026	
+
+> Hearing Journal Entry
+
+> Hearing on Motion to Set Aside and Motion to Release Funds conducted in room C0934; Plaintiff appears via counsel Scott Kainrath; Defendant Cody Rice- Velasquez appears without counsel; Argument heard; The Court to issue an Order
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> 01/09/2026	
+
+> Appearance Filed
+
+> APPEARANCE FORM CIVIL LITIGATION
+
+> For Party:Financial Center First Credit Union
+
+> File Stamp:01/09/2026
+
+> 01/21/2026	
+
+> Order Issued
+
+> Order from January 9, 2026 Hearing on Motion to Set Aside Judgment
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:01/20/2026
+
+> 01/22/2026	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Issued ---- 1/21/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 01/22/2026	
+
+> Automated ENotice Issued to Parties
+
+> Order Issued ---- 1/21/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
+
+> 02/09/2026	
+
+> Notice Filed
+
+> Notice of Appeal
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:02/09/2026
+
+> 02/20/2026	
+
+> Petition Filed
+
+> Petition to Pay Surplus Funds to the Clerk of the Court
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:02/20/2026
+
+> 02/24/2026	
+
+> Petition Filed
+
+> Petition for Disposition of Surplus and Motion for Nunc Pro Tunc
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:02/24/2026
+
+> 02/26/2026	
+
+> Order Denying
+
+> Order Denying Petition for Nunc Pro Tunc
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:02/26/2026
+
+> 02/27/2026	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Denying ---- 2/26/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 02/27/2026	
+
+> Automated ENotice Issued to Parties
+
+> Order Denying ---- 2/26/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
+
+> 02/27/2026	
+
+> Objection Filed
+
+> Motion ??? Defendant???s Consolidated Objection to Plaintiff???s Requested Modification of Credit Bid and Request for Evidentiary Hearing
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:02/26/2026
+
+> 02/27/2026	
+
+> Motion Filed
+
+> Defendants Motion to Enforce Plaintiff???s Petition to Pay Surplus Funds
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:02/26/2026
+
+> 03/02/2026	
+
+> Order Granting
+
+> Order to Pay Surplus Funds to the Clerk of the Court
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:03/02/2026
+
+> 03/03/2026	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Granting ---- 3/2/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 03/03/2026	
+
+> Automated ENotice Issued to Parties
+
+> Order Granting ---- 3/2/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
+
+> 03/04/2026	
+
+> Order Denying
+
+> Order Moot
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:03/03/2026
+
+> 03/05/2026	
+
+> Automated Paper Notice Issued to Parties
+
+> Order Denying ---- 3/4/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 03/05/2026	
+
+> Automated ENotice Issued to Parties
+
+> Order Denying ---- 3/4/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
+
+> 03/06/2026	
+
+> Motion for Hearing Filed
+
+> Request for Hearing
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:03/06/2026
+
+> 03/06/2026	
+
+> Notice Filed
+
+> Notice of Disposition of Property
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:03/06/2026
+
+> 03/11/2026	
+
+> Hearing Scheduling Activity
+
+> Hearing scheduled for 03/27/2026 at 11:00 AM.
+
+> 03/11/2026	
+
+> Order for Hearing
+
+> Notice of Hearing on Motion to Clarify Judgment
+
+> Judicial Officer:Hannah, Therese A - MAG
+
+> Order Signed:03/11/2026
+
+> 03/11/2026	
+
+> Motion to Impose Sanctions Filed
+
+> Defendant???s Motion for Sanctions Pursuant to Indiana Trial Rule 11
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:03/09/2026
+
+> 03/11/2026	
+
+> Objection Filed
+
+> Defendant Motion to Deny Hearing and Enforce Deposit of Surplus
+
+> Filed By:Rice-Velasquez, Cody
+
+> File Stamp:03/11/2026
+
+> 03/12/2026	
+
+> Automated Paper Notice Issued to Parties
+
+> Hearing Scheduling Activity ---- 3/11/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A. Order for Hearing ---- 3/11/2026 : American Express National Bank, N.A.;JP Morgan Chase Bank, N.A.
+
+> 03/12/2026	
+
+> Automated ENotice Issued to Parties
+
+> Hearing Scheduling Activity ---- 3/11/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath Order for Hearing ---- 3/11/2026 : Cody Rice-Velasquez;Felix O'Neill Rippy;Michael E. Farrer;Scott Andrew Kainrath
+
+> 03/27/2026	
+
+> Hearing
+
+> Session:03/27/2026 11:00 AM, Judicial Officer: Hannah, Therese A - MAG
+
+> Comment:in person; on Motion to Clarify Record
+
+> Financial Information
+
+> Financial Balances reflected are current representations of transactions processed by the Clerk’s Office. Please note that any balance due does not reflect interest that has accrued – if applicable – since the last payment. For questions/concerns regarding balances shown, please contact the Clerk’s Office.
+
+> Financial Center First Credit Union
+
+> Plaintiff
+
+> Balance Due (as of 03/12/2026)
+
+> 0.00
+
+> Charge Summary
+
+> Description	Amount	Credit	Payment
+
+> Court Costs and Filing Fees	185.00	0.00	185.00
+
+> Transaction Summary
+
+> Date	Description	Amount
+
+> 01/16/2025	Transaction Assessment	185.00
+
+> 01/16/2025	Electronic Payment	(185.00)
+
+> This is not the official court record. Official records of court proceedings may only be obtained directly from the court maintaining a particular record.
+
+>  
+
+> Subscribe to content by RSS or Email
+
+> Follow us on Twitter
+
+> Indiana Courts YouTube Channel
+
+> Get our shared photos on Flickr
+
 > Terms of Use
 
 ### Assistant

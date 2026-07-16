@@ -3,9 +3,9 @@ layout: page
 title: "Case DNA Report"
 slug: "case_dna_report"
 created_at: "2026-01-19 12:53:50"
-updated_at: "2026-01-19 12:53:50"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1642,823 +1642,1640 @@ canonical_ref: ""
 > Say the word if you want one of those.
 
 ### User
-> how did you give me the wrong phasses. here is the tree again. ```markdown
-> . 📂 content
-> └── 📂 PHASE_01_COURT_RECORD/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 index.md
-> │  └── 📂 20_record/
-> │    └── 📂 evidence/
-> │      └── 📂 10_evidence_admin/
-> │        ├── 📄 index.md
-> │      └── 📂 20_court_record/
-> │        └── 📂 10_docket_files/
-> │          ├── 📄 001_2025-01-16_Complaint.pdf
-> │          ├── 📄 002_2025-01-16_Appearance.pdf
-> │          ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
-> │          ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
-> │          ├── 📄 005_2025-01-16_Appearance_2.pdf
-> │          ├── 📄 006_2025-01-16_Summons_1.pdf
-> │          ├── 📄 007_2025-01-16_Summons_2.pdf
-> │          ├── 📄 008_2025-01-16_Summons_3.pdf
-> │          ├── 📄 009_2025-01-16_Summons_4.pdf
-> │          ├── 📄 010_2025-01-16_Summons_5.pdf
-> │          ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
-> │          ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
-> │          ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
-> │          ├── 📄 014_2025-05-13_Affidavit.pdf
-> │          ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
-> │          ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
-> │          ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
-> │          ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
-> │          ├── 📄 018_2025-05-23_Motion_Amended_Default_2.pdf
-> │          ├── 📄 020_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
-> │          ├── 📄 020_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
-> │          ├── 📄 021_2025-07-09_Service_Returned_Served_Sheriff.pdf
-> │          ├── 📄 022_2025-07-17_Notice_Plaintiffs_Bid.pdf
-> │          ├── 📄 023_2025-09-09_Decree_Foreclosure_Returned.pdf
-> │          ├── 📄 024_2025-10-29_Petition_Writ_of_Assistance.pdf
-> │          ├── 📄 025_2025-10-29_Writ_of_Assistance_Document.pdf
-> │          ├── 📄 027_2025-12-11_Motion_Vacate_Judgment.pdf
-> │          ├── 📄 029_2025-12-11_Exhibit_List_A-G.pdf
-> │          ├── 📄 031_Proposed_Order_Vacate.pdf
-> │          ├── 📄 032_2025-12-12_Supplemental_Emergency_Motion.pdf
-> │          ├── 📄 032_Proposed_Order_Stay.pdf
-> │          ├── 📄 033_2025-12-12_Report_to_Court.pdf
-> │          ├── 📄 034_2025-12-16_Emergency_Supplemental_Declaration.pdf
-> │          ├── 📄 036_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
-> │          ├── 📄 037_2025-12-22_ADA_Disability_Affidavit.pdf
-> │          ├── 📄 038_2026-01-09_Appearance_Plaintiff.pdf
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 30_primary/
-> │        └── 📂 10_fcfcu/
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
-> │          ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
-> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
-> │          ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
-> │          ├── 📄 21june-24-4817shadow_appraisal.pdf
-> │          ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
-> │          ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
-> │          ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
-> │          ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
-> │          ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
-> │          ├── 📄 PL_report_to_court_on_defendants_request.pdf
-> │          ├── 📄 index.md
-> │        └── 📂 20_aes/
-> │          ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
-> │          ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
-> │          ├── 📄 index.md
-> │        └── 📂 30_Notices_Logs/
-> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │          ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │          ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 40_supporting/
-> │        └── 📂 10_docs/
-> │          └── 📂 10_affidavits/
-> │            └── 📂 ada-disability/
-> │              ├── 📄 index.md
-> │            └── 📂 character/
-> │              ├── 📄 index.md
-> │            └── 📂 community-service/
-> │              ├── 📄 index.md
-> │            └── 📂 credibility/
-> │              ├── 📄 index.md
-> │            ├── 📄 index.md
-> │            └── 📂 observations/
-> │              ├── 📄 index.md
-> │          └── 📂 20_declarations/
-> │            ├── 📄 index.md
-> │          └── 📂 30_property/
-> │            └── 📂 10_mortgage_history/
-> │              ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │              ├── 📄 index.md
-> │            └── 📂 20_parcel/
-> │              ├── 📄 Parcel_6016506_PRC.pdf
-> │              ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │              ├── 📄 index.md
-> │            ├── 📄 index.md
-> │          └── 📂 40_receipts/
-> │            ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
-> │            ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │            ├── 📄 index.md
-> │          └── 📂 50_records/
-> │            ├── 📄 Foreclosure and Housing Litigation Case Record.csv
-> │            ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
-> │            ├── 📄 index.md
-> │          ├── 📄 index.md
-> │        └── 📂 20_multi-media/
-> │          └── 📂 Photos_Conditions/
-> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
-> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
-> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
-> │            ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │            ├── 📄 index.md
-> │          └── 📂 Videos/
-> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
-> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
-> │            ├── 📄 index.md
-> │          └── 📂 Weather_Reports/
-> │            ├── 📄 index.md
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 50_quarantine_candidates/
-> │        ├── 📄 OR__031_Proposed_Order_Vacate.pdf
-> │        ├── 📄 OR__032_Proposed_Order_Stay.pdf
-> │        ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
-> │        ├── 📄 PL__016_Affidavit_Additional.pdf
-> │        ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │    └── 📂 timeline/
-> │      └── 📂 2025/
-> │        ├── 📄 2025-01-16_Case_Filed.md
-> │        ├── 📄 2025-03-05_Service_Attempt_1.md
-> │        ├── 📄 2025-04-15_Service_Attempt_2.md
-> │        ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
-> │        ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
-> │        ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
-> │        ├── 📄 2025-05-28_Default_Judgment_Entered.md
-> │        ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
-> │        ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
-> │        ├── 📄 2025-08-15_Sheriff_Sale.md
-> │        ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
-> │        ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
-> │        ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
-> │        ├── 📄 2025-12-09_Writ_Executed_Removal.md
-> │        ├── 📄 2025-12-10_Motions_Filed.md
-> │        ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
-> │        ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
-> │        ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
-> │        ├── 📄 2025-12-15_Strategic_Planning_Session.md
-> │        ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
-> │        ├── 📄 2025-12-21_Case_Summary.md
-> │        ├── 📄 2025-12-21_Gigi_Escape_During_Displacement.md
-> │        ├── 📄 2025-12-21_Post_Removal_Harms_and_Damages.md
-> │        ├── 📄 index.md
-> │      └── 📂 2026/
-> │        ├── 📄 2026-01-09_Appearance_Plaintiff.md
-> │        ├── 📄 2026-01-18_Housing_Fallout_Otis.md
-> │        ├── 📄 2026-01-18_Zai_Asylum_Case_Closure.md
-> │        ├── 📄 2026-12-31_Relocation_to_Evansville.md
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │  └── 📂 30_analysis/
-> │    ├── 📄 analysis_notes.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_work/
-> │    └── 📂 10_pre_foreclosure/
-> │      └── 📂 10_account_history/
-> │        ├── 📄 index.md
-> │      └── 📂 20_hardship_and_ada/
-> │        ├── 📄 index.md
-> │      └── 📂 30_communications/
-> │        ├── 📄 index.md
-> │      └── 📂 40_payments_and_disputes/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 20_foreclosure_filing/
-> │      └── 📂 10_complaint/
-> │        ├── 📄 index.md
-> │      └── 📂 20_summons/
-> │        ├── 📄 index.md
-> │      └── 📂 30_lien_parties/
-> │        ├── 📄 index.md
-> │      └── 📂 40_docket_snapshots/
-> │        ├── 📄 NT__Case_Summary.md
-> │        ├── 📄 _Case_Summary.md
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 30_service_and_notice/
-> │      └── 📂 10_sheriff_returns/
-> │        ├── 📄 index.md
-> │      └── 📂 20_mailings/
-> │        ├── 📄 index.md
-> │      └── 📂 30_affidavits_of_service/
-> │        └── 📂 10_jurisdiction_service_tr_4_1_b/
-> │          ├── 📄 index.md
-> │        └── 📂 20_service_process/
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 40_defects_and_contradictions/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 40_default_and_judgment/
-> │      └── 📂 10_default_motion/
-> │        ├── 📄 index.md
-> │      └── 📂 20_default_order/
-> │        ├── 📄 index.md
-> │      └── 📂 30_judgment_and_decree/
-> │        ├── 📄 index.md
-> │      └── 📂 40_accounting_inputs/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 50_sale_and_title/
-> │      └── 📂 10_sheriff_sale/
-> │        ├── 📄 index.md
-> │      └── 📂 20_deed/
-> │        ├── 📄 index.md
-> │      └── 📂 30_recording_gaps/
-> │        ├── 📄 index.md
-> │      └── 📂 40_possession_claims/
-> │        └── 📂 10_sale_and_possession/
-> │          ├── 📄 index.md
-> │        └── 📂 30_void_vs_voidable/
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 60_writ_and_execution/
-> │      └── 📂 10_writ_petition/
-> │        ├── 📄 index.md
-> │      └── 📂 20_writ_order/
-> │        ├── 📄 index.md
-> │      └── 📂 30_execution_events/
-> │        ├── 📄 index.md
-> │      └── 📂 40_notice_failures/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 70_post_removal_conduct/
-> │      └── 📂 10_property_interference/
-> │        ├── 📄 index.md
-> │      └── 📂 20_access_denial/
-> │        ├── 📄 index.md
-> │      └── 📂 30_spoliation_risk/
-> │        ├── 📄 index.md
-> │      └── 📂 40_third_party_actions/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    ├── 📄 NT_Record_Preservation_Issue_Matrix.md
-> │    ├── 📄 PHASE_00_Working_and_Narrative.md
-> │    ├── 📄 PHASE_01_Court_Record.md
-> │    ├── 📄 index.md
-> │  └── 📂 50_output/
-> │    └── 📂 10_filings/
-> │      └── 📂 10_proposed/
-> │        ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
-> │        ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
-> │        ├── 📄 index.md
-> │      └── 📂 20_exhibits/
-> │        ├── 📄 EXH_05_Exhibit_List.pdf
-> │        ├── 📄 EXH_06_Exhibits_Combined.pdf
-> │        ├── 📄 EXH_30_Exhibit_Sets.md
-> │        ├── 📄 EXH_Exhibit_H_Declaration.pdf
-> │        └── 📂 _A-H_initial/
-> │          ├── 📄 EXH_2025-12-10_MTV_Exhibits_Combined.pdf
-> │          ├── 📄 EXH_Exhibit_A_20250305_Sheriff_Return (2).pdf
-> │          ├── 📄 EXH_Exhibit_B_20250415_Sheriff_Return (2).pdf
-> │          ├── 📄 EXH_Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
-> │          ├── 📄 EXH_Exhibit_G1_ADA_Notice_Request (2).pdf
-> │          ├── 📄 EXH_Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
-> │          ├── 📄 EXH_Exhibit_H_Declaration (2).pdf
-> │          ├── 📄 EXH_WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
-> │          ├── 📄 EXH_WH7.01.0100__Exhibit_H_Declaration.pdf
-> │          ├── 📄 EXH_exhibit_a_20250305_sheriff_return.pdf
-> │          ├── 📄 EXH_exhibit_b_20250415_sheriff_return.pdf
-> │          ├── 📄 EXH_exhibit_c_20250116_incomplete_sum.pdf
-> │          ├── 📄 EXH_exhibit_d_20250513_default_judgme.pdf
-> │          ├── 📄 EXH_exhibit_f_affidavit_cody_ricevela.pdf
-> │          ├── 📄 EXH_exhibit_g1_ada_notice_request.pdf
-> │          ├── 📄 EXH_exhibit_g2_aes_ada_docs_disconnec.pdf
-> │          ├── 📄 EXH_exhibit_h_declaration.pdf
-> │          ├── 📄 EXH_exhibits_combined.pdf
-> │          ├── 📄 MO_Exhibit_D_20250513_Default_Judgment_Motion.pdf
-> │          ├── 📄 PL_Exhibit_C_20250116_Incomplete_Summons.pdf
-> │          ├── 📄 PL_Exhibit_E_20251029_Petition_for_Writ.pdf
-> │          ├── 📄 PL_WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
-> │          ├── 📄 PL_exhibit_e_20251029_petition_for_w.pdf
-> │          ├── 📄 WH7.01.0100__index.html
-> │          ├── 📄 index.md
-> │        └── 📂 _I_ada_communications/
-> │          ├── 📄 index.md
-> │        └── 📂 _J_eviction_removal/
-> │          ├── 📄 index.md
-> │        └── 📂 _K_financial/
-> │          ├── 📄 index.md
-> │        └── 📂 _L_statements/
-> │          ├── 📄 index.md
-> │        └── 📂 _M_court-service/
-> │          ├── 📄 index.md
-> │        └── 📂 _P_property/
-> │          ├── 📄 index.md
-> │        ├── 📄 combinepdf.pdf
-> │        ├── 📄 index.md
-> │      └── 📂 30_motions/
-> │        └── 📂 10_draft_motions/
-> │          ├── 📄 MO_01_motion_vacate.pdf
-> │          ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │          ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │          ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │          ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │          ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 40_orders/
-> │        ├── 📄 OR_03_order_vacate_proposed.pdf
-> │        ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │        ├── 📄 index.md
-> │      └── 📂 50_regulators/
-> │        └── 📂 10_INAG/
-> │          ├── 📄 index.md
-> │        └── 📂 20_housing/
-> │          ├── 📄 index.md
-> │        └── 📂 30_doj/
-> │          ├── 📄 index.md
-> │        └── 📂 40_incrc/
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 90_Filed_Envelopes/
-> │        └── 📂 10_2025-12-10_motion_vacate/
-> │          └── 📂 01_drafts/
-> │            ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
-> │            ├── 📄 MO_C2.01.002_motion_vacate.pdf
-> │            ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
-> │            ├── 📄 index.md
-> │          └── 📂 04_filed_receipts/
-> │            ├── 📄 NT_37268798_Odyssey_Envelope_Receipt.pdf
-> │            ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
-> │            ├── 📄 NT_combinepdf.pdf
-> │            ├── 📄 index.md
-> │          ├── 📄 NT_odyssey_envelope_receipt.pdf
-> │          ├── 📄 index.md
-> │        └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │          ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
-> │          ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 index.md
-> │    └── 📂 30_packets/
-> │      ├── 📄 index.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 index.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  └── 📂 90_archive/
-> │    ├── 📄 index.md
-> │  ├── 📄 Key dates.md
-> │  ├── 📄 index.md
-> │  ├── 📄 motions filed.md
-> │  ├── 📄 questions for the court.md
-> │  ├── 📄 reports__NT_uncategorized_bundle.pdf
-> └── 📂 PHASE_02_CREDIT_FCRA/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 index.md
-> │  └── 📂 20_record/
-> │    ├── 📄 index.md
-> │  └── 📂 30_analysis/
-> │    ├── 📄 analysis_notes.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_work/
-> │    └── 📂 10_credit_reports/
-> │      ├── 📄 index.md
-> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Deliverables_Index.md
-> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Overview.md
-> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Print_Checklist.md
-> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Tasklist.md
-> │    └── 📂 20_furnisher_disputes/
-> │      ├── 📄 CFPB_Complaint_Draft.md
-> │      ├── 📄 FCFCU_Direct_Dispute_Letter.md
-> │      ├── 📄 index.md
-> │    └── 📂 30_bureau_disputes/
-> │      ├── 📄 Equifax_Dispute_Letter.md
-> │      ├── 📄 Experian_Dispute_Letter.md
-> │      ├── 📄 TransUnion_Dispute_Letter.md
-> │      ├── 📄 index.md
-> │    └── 📂 40_verified_responses/
-> │      ├── 📄 index.md
-> │    └── 📂 50_damages/
-> │      ├── 📄 Core_Credit_Tables.md
-> │      ├── 📄 index.md
-> │    ├── 📄 PHASE_02_Credit_FCRA.md
-> │    ├── 📄 Utility_Dispute_Letter.md
-> │    ├── 📄 index.md
-> │  └── 📂 50_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 index.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 index.md
-> │    └── 📂 30_packets/
-> │      ├── 📄 index.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 index.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  └── 📂 90_archive/
-> │    ├── 📄 index.md
-> │  ├── 📄 index.md
-> └── 📂 PHASE_03_REGULATORS/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 index.md
-> │  └── 📂 20_record/
-> │    ├── 📄 index.md
-> │  └── 📂 30_analysis/
-> │    ├── 📄 analysis_notes.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_work/
-> │    └── 📂 10_CFPB/
-> │      ├── 📄 index.md
-> │    └── 📂 20_AG_Indiana/
-> │      ├── 📄 index.md
-> │    └── 📂 30_NCUA/
-> │      ├── 📄 index.md
-> │    └── 📂 30_regulatory_complaints/
-> │      ├── 📄 index.md
-> │    └── 📂 40_DOJ_Civil_Rights/
-> │      ├── 📄 index.md
-> │    └── 📂 40_federal_preservation/
-> │      ├── 📄 index.md
-> │    └── 📂 50_ICRC/
-> │      ├── 📄 index.md
-> │    ├── 📄 PHASE_03_Regulators.md
-> │    ├── 📄 index.md
-> │  └── 📂 50_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 index.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 index.md
-> │    └── 📂 30_packets/
-> │      ├── 📄 index.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 index.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  └── 📂 90_archive/
-> │    ├── 📄 index.md
-> │  ├── 📄 index.md
-> └── 📂 PHASE_04_LITIGATION/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 index.md
-> │  └── 📂 20_record/
-> │    ├── 📄 index.md
-> │  └── 📂 30_analysis/
-> │    ├── 📄 analysis_notes.md
-> │    └── 📂 damages/
-> │      └── 📂 20_damages_and_fallout/
-> │        └── 📂 10_property_possession_harms/
-> │          ├── 📄 index.md
-> │        └── 📂 20_economic_harm/
-> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │          ├── 📄 NT_Quarantined_Claims_Hold.md
-> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │          ├── 📄 index.md
-> │        └── 📂 30_financial/
-> │          ├── 📄 index.md
-> │        └── 📂 40_health_and_safety/
-> │          └── 📂 20_companion_animal_risk/
-> │            ├── 📄 index.md
-> │          ├── 📄 index.md
-> │        └── 📂 50_non_economic_harm/
-> │          ├── 📄 PL_Cold_Risk_Report.md
-> │          └── 📂 cold_exposure/
-> │            ├── 📄 PL__Cold_Risk_Report.md
-> │            ├── 📄 index.md
-> │          ├── 📄 index.md
-> │        └── 📂 60_professional_harm/
-> │          ├── 📄 index.md
-> │        └── 📂 70_remedies_scenarios/
-> │          ├── 📄 index.md
-> │        └── 📂 80_payout_strategy/
-> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │          ├── 📄 index.md
-> │        └── 📂 90_third_party_harm/
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      ├── 📄 NT_Financial_Tracker.md
-> │      ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │      ├── 📄 index.md
-> │    └── 📂 general/
-> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │      ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │      ├── 📄 NT_LEGAL MEMORANDUM.md
-> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │      ├── 📄 NT_Violation_Remedy_Inventory.md
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │    └── 📂 trackers/
-> │      └── 📂 10_VIOLATIONS/
-> │        ├── 📄 index.md
-> │      └── 📂 20_FINANCIALS/
-> │        ├── 📄 index.md
-> │      ├── 📄 NT_01_MASTER_INDEX.md
-> │      ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
-> │      ├── 📄 NT_Case_Docket_Checklist.csv
-> │      ├── 📄 NT_Contacts.md
-> │      ├── 📄 NT_Damage_Accounting_Ledger.md
-> │      ├── 📄 NT_Master_Case_Log.md
-> │      ├── 📄 NT_Utility_Exploitation_Log.md
-> │      ├── 📄 VIO_AES_UTILITY_2026-01-15-20.md
-> │      ├── 📄 VIO_BBB_STATUTOR_2025-01-01-43.md
-> │      ├── 📄 VIO_CFPB_STATUTOR_2025-01-01-39.md
-> │      ├── 📄 VIO_CITIZENS_UTILITY_2026-01-15-21.md
-> │      ├── 📄 VIO_CITYOFIN_MUNICIPAL_2026-01-15-23.md
-> │      ├── 📄 VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md
-> │      ├── 📄 VIO_COURT_STATUTOR_2025-01-01-34.md
-> │      ├── 📄 VIO_DOJ_ADA_2025-01-01-42.md
-> │      ├── 📄 VIO_EQUIFAX_STATUTOR_2025-01-01-02.md
-> │      ├── 📄 VIO_EXPERIAN_STATUTOR_2025-01-01-01.md
-> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-37.md
-> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-52.md
-> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-55.md
-> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-62.md
-> │      ├── 📄 VIO_FCFCU_GENERAL_2025-01-01-12.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-11.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-21.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-35.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-36.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-50.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-51.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-54.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-60.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-61.md
-> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-64.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-01.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-04.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-05.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-07.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-08.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-10.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-12.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-14.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-15.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-16.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-17.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-18.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-19.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-22.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-23.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-24.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-25.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-26.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-27.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-57.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-59.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-63.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-65.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-66.md
-> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-67.md
-> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-06.md
-> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-09.md
-> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-13.md
-> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-20.md
-> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-58.md
-> │      ├── 📄 VIO_FCFCU_TORT_2026-01-18-95.md
-> │      ├── 📄 VIO_HOA_TORT_2026-01-15-22.md
-> │      ├── 📄 VIO_INDIANAA_STATUTOR_2025-01-01-40.md
-> │      ├── 📄 VIO_INDIANAG_PROCEDURAL_2025-01-01-01.md
-> │      ├── 📄 VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md
-> │      ├── 📄 VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md
-> │      ├── 📄 VIO_SHERIFF_STATUTOR_2025-01-01-33.md
-> │      ├── 📄 VIO_TRANSUNION_STATUTOR_2025-01-01-03.md
-> │      ├── 📄 VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md
-> │      ├── 📄 VIO_UNKNOWN_GENERAL_2026-01-18-00.md
-> │      ├── 📄 evidence_index_master.csv
-> │      ├── 📄 financial_transactions_damages.csv
-> │      ├── 📄 index.md
-> │      ├── 📄 legal_authority_library.csv
-> │      ├── 📄 tasks_strategy.csv
-> │      ├── 📄 tasks_strategy.md
-> │      ├── 📄 violations_inventory_master.csv
-> │      ├── 📄 violations_inventory_master.md
-> │  └── 📂 40_work/
-> │    └── 📂 00_Intake/
-> │      ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │      ├── 📄 NT_Attorney_Intake_Summary.md
-> │      ├── 📄 index.md
-> │    └── 📂 10_strategy_and_research/
-> │      ├── 📄 NT_Refined_Settlement_Exposure_Matrix.md
-> │      ├── 📄 NT_Settlement_Exposure_Spine.md
-> │      ├── 📄 NT_Settlement_Logic_Memo_Internal.md
-> │      ├── 📄 index.md
-> │    └── 📂 20_demand_letters/
-> │      ├── 📄 NT_Demand_Ready_Exposure_Summary.md
-> │      ├── 📄 Notice_of_Evidence_Preservation.md
-> │      ├── 📄 index.md
-> │    └── 📂 30_opposing_counsel/
-> │      ├── 📄 index.md
-> │    └── 📂 40_draft_pleadings/
-> │      ├── 📄 index.md
-> │    ├── 📄 PHASE_04_Litigation_and_Settlement.md
-> │    └── 📂 hearings/
-> │      └── 📂 2025-01-09_hearing/
-> │        ├── 📄 COURT_MODE_BUTTONS.md.md
-> │        ├── 📄 HEARING CHEAT SHEET.md
-> │        ├── 📄 _COURT_MODE_PLAYBOOK.md.md
-> │        ├── 📄 index.md
-> │      └── 📂 50_Hearing_Packets/
-> │        └── 📂 2025-01-09_Hearing_Void_Judgement/
-> │          ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │          ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │          ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │          ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> │          ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  └── 📂 50_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 index.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 index.md
-> │    └── 📂 30_packets/
-> │      └── 📂 00_Covers/
-> │        ├── 📄 00A_Cover.html
-> │        ├── 📄 00A_Cover_Court.html
-> │        ├── 📄 00A_Cover_Opposing.html
-> │        ├── 📄 00B_Spine.html
-> │        ├── 📄 Binder Covers.pdf
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 index.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  └── 📂 90_archive/
-> │    ├── 📄 index.md
-> │  ├── 📄 index.md
-> └── 📂 PHASE_05_PUBLIC_PRESSURE/
-> │  └── 📂 10_inbox/
-> │    ├── 📄 index.md
-> │  └── 📂 20_record/
-> │    ├── 📄 index.md
-> │  └── 📂 30_analysis/
-> │    ├── 📄 analysis_notes.md
-> │    ├── 📄 index.md
-> │  └── 📂 40_work/
-> │    └── 📂 10_press_kits/
-> │      ├── 📄 index.md
-> │    └── 📂 20_Published/
-> │      └── 📂 10_social_media/
-> │        ├── 📄 index.md
-> │      └── 📂 20_new_media/
-> │        ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 20_public_record_dumps/
-> │      ├── 📄 index.md
-> │    └── 📂 30_legislative_outreach/
-> │      ├── 📄 index.md
-> │    └── 📂 40_social_media/
-> │      ├── 📄 index.md
-> │    ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
-> │    ├── 📄 PHASE_05_Nuclear.md
-> │    ├── 📄 index.md
-> │  └── 📂 50_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 index.md
-> │    └── 📂 20_orders/
-> │      ├── 📄 index.md
-> │    └── 📂 30_packets/
-> │      ├── 📄 index.md
-> │    └── 📂 40_motions/
-> │      ├── 📄 index.md
-> │    └── 📂 50_letters/
-> │      ├── 📄 index.md
-> │    ├── 📄 README.md
-> │    ├── 📄 index.md
-> │  └── 📂 90_archive/
-> │    ├── 📄 index.md
-> │  ├── 📄 index.md
-> └── 📂 _cockpit/
-> │  └── 📂 00_Inbox/
-> │  └── 📂 10_Overview/
-> │    └── 📂 10_Listen/
-> │      ├── 📄 01_forensic_audit.m4a
-> │      ├── 📄 02_void_versus_damages.m4a
-> │      ├── 📄 03_critiques_Institutional_failure.m4a
-> │      ├── 📄 04_debate.m4a
-> │      ├── 📄 05_critiques_Separate_Appeals.m4a
-> │    └── 📂 20_Read/
-> │      ├── 📄 eviction_crisis.pdf
-> │      ├── 📄 index.md
-> │      ├── 📄 institutional_failure.pdf
-> │      ├── 📄 legal_master_file.md
-> │      ├── 📄 personal_impact_and_support.md
-> │      ├── 📄 strategic_action_plan.md
-> │      ├── 📄 wrongful_foreclosure.pdf
-> │    ├── 📄 index.md
-> │  └── 📂 20_Strategy/
-> │    ├── 📄 ATTORNEY INTAKE PACKET.md
-> │    ├── 📄 Case_DNA.md
-> │    └── 📂 Credit/
-> │      ├── 📄 credit strategy.md
-> │    ├── 📄 Master_Strategy.canvas
-> │    ├── 📄 ONE-PAGE STRATEGY MAP.md
-> │    ├── 📄 RULE 408 SETTLEMENT LETTER.md
-> │    └── 📂 Settlement/
-> │      ├── 📄 Settlement Targets.md
-> │      ├── 📄 success matrics.md
-> │  └── 📂 30_Templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 MO_TEMPLATE_emergency_stay_of_writ.md
-> │      ├── 📄 MO_TEMPLATE_vacate_void_judgment.md
-> │      ├── 📄 index.md
-> │    └── 📂 20_declarations/
-> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
-> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
-> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_Declarations.md
-> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
-> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
-> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
-> │      ├── 📄 index.md
-> │    └── 📂 30_exhibits/
-> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
-> │      ├── 📄 index.md
-> │    └── 📂 40_orders/
-> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
-> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
-> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
-> │      ├── 📄 index.md
-> │    └── 📂 50_internal/
-> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
-> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
-> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
-> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
-> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
-> │      ├── 📄 NT_TEMPLATE_Section_Index.md
-> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
-> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
-> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
-> │      ├── 📄 NT_TEMPLATE_War_Note.md
-> │      ├── 📄 NT_TEMPLATE_ada_packet.md
-> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
-> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
-> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
-> │      ├── 📄 NT_TPL_QiNote_Insight_Capture.md
-> │      ├── 📄 index.md
-> │    └── 📂 90_pack_blueprints/
-> │      ├── 📄 NT_PACK_AGENCY.yaml
-> │      ├── 📄 NT_PACK_JUDGE.yaml
-> │      ├── 📄 NT_PACK_OPPOSING.yaml
-> │      ├── 📄 NT_PACK_SELF.yaml
-> │      ├── 📄 index.md
-> │    ├── 📄 index.md
-> │  ├── 📄 NEXT.md
-> │  ├── 📄 Phase_Logic_Matrix.canvas
-> │  ├── 📄 Strategic_Plan.canvas
-> │  ├── 📄 index.md
-> │  ├── 📄 vis.yaml
-> ├── 📄 clean_and_update_indexes.py
-> ├── 📄 index.md
-> ├── 📄 rename_phase_folders.py
-> └── 📄 update_indexes.py
+> how did you give me the wrong phasses. here is the tree again. ```markdown
+
+> . 📂 content
+
+> └── 📂 PHASE_01_COURT_RECORD/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_record/
+
+> │    └── 📂 evidence/
+
+> │      └── 📂 10_evidence_admin/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_court_record/
+
+> │        └── 📂 10_docket_files/
+
+> │          ├── 📄 001_2025-01-16_Complaint.pdf
+
+> │          ├── 📄 002_2025-01-16_Appearance.pdf
+
+> │          ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
+
+> │          ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
+
+> │          ├── 📄 005_2025-01-16_Appearance_2.pdf
+
+> │          ├── 📄 006_2025-01-16_Summons_1.pdf
+
+> │          ├── 📄 007_2025-01-16_Summons_2.pdf
+
+> │          ├── 📄 008_2025-01-16_Summons_3.pdf
+
+> │          ├── 📄 009_2025-01-16_Summons_4.pdf
+
+> │          ├── 📄 010_2025-01-16_Summons_5.pdf
+
+> │          ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
+
+> │          ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
+
+> │          ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
+
+> │          ├── 📄 014_2025-05-13_Affidavit.pdf
+
+> │          ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
+
+> │          ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
+
+> │          ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
+
+> │          ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
+
+> │          ├── 📄 018_2025-05-23_Motion_Amended_Default_2.pdf
+
+> │          ├── 📄 020_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
+
+> │          ├── 📄 020_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
+
+> │          ├── 📄 021_2025-07-09_Service_Returned_Served_Sheriff.pdf
+
+> │          ├── 📄 022_2025-07-17_Notice_Plaintiffs_Bid.pdf
+
+> │          ├── 📄 023_2025-09-09_Decree_Foreclosure_Returned.pdf
+
+> │          ├── 📄 024_2025-10-29_Petition_Writ_of_Assistance.pdf
+
+> │          ├── 📄 025_2025-10-29_Writ_of_Assistance_Document.pdf
+
+> │          ├── 📄 027_2025-12-11_Motion_Vacate_Judgment.pdf
+
+> │          ├── 📄 029_2025-12-11_Exhibit_List_A-G.pdf
+
+> │          ├── 📄 031_Proposed_Order_Vacate.pdf
+
+> │          ├── 📄 032_2025-12-12_Supplemental_Emergency_Motion.pdf
+
+> │          ├── 📄 032_Proposed_Order_Stay.pdf
+
+> │          ├── 📄 033_2025-12-12_Report_to_Court.pdf
+
+> │          ├── 📄 034_2025-12-16_Emergency_Supplemental_Declaration.pdf
+
+> │          ├── 📄 036_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
+
+> │          ├── 📄 037_2025-12-22_ADA_Disability_Affidavit.pdf
+
+> │          ├── 📄 038_2026-01-09_Appearance_Plaintiff.pdf
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_primary/
+
+> │        └── 📂 10_fcfcu/
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Healt.md
+
+> │          ├── 📄 2024-03-20_fcfcu_certified_response_tax_record.pdf
+
+> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 2025-12-20_exh-30_fcfcu_740eacdc_2025-12-20_ex.jpg
+
+> │          ├── 📄 2025-12-20_exh-30_fcfcu_ac6eb2ea_2025-12-20_ex.jpg
+
+> │          ├── 📄 21june-24-4817shadow_appraisal.pdf
+
+> │          ├── 📄 PL_2023-09-20_FCFCU_Hardship_and_Health_Notice_Let.md
+
+> │          ├── 📄 PL_2023-09-20_fcfcu_hardship_and_health_notice_le.pdf
+
+> │          ├── 📄 PL_2023-09-20_notice_disabilities_hardship.pdf
+
+> │          ├── 📄 PL_2024-20-03_response_to_tax_notice.pdf
+
+> │          ├── 📄 PL_fcfcu_v_cr-v_report_to_court.pdf
+
+> │          ├── 📄 PL_report_to_court_on_defendants_request.pdf
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_aes/
+
+> │          ├── 📄 2025-06-08_aes_ada_request_financial_hardship_.pdf
+
+> │          ├── 📄 PL_2025-06-08_aes_ada_notice.pdf
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 30_Notices_Logs/
+
+> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │          ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │          ├── 📄 PL_2025-12-16_AES_Emergency_Notice.md
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_supporting/
+
+> │        └── 📂 10_docs/
+
+> │          └── 📂 10_affidavits/
+
+> │            └── 📂 ada-disability/
+
+> │              ├── 📄 index.md
+
+> │            └── 📂 character/
+
+> │              ├── 📄 index.md
+
+> │            └── 📂 community-service/
+
+> │              ├── 📄 index.md
+
+> │            └── 📂 credibility/
+
+> │              ├── 📄 index.md
+
+> │            ├── 📄 index.md
+
+> │            └── 📂 observations/
+
+> │              ├── 📄 index.md
+
+> │          └── 📂 20_declarations/
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 30_property/
+
+> │            └── 📂 10_mortgage_history/
+
+> │              ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │              ├── 📄 index.md
+
+> │            └── 📂 20_parcel/
+
+> │              ├── 📄 Parcel_6016506_PRC.pdf
+
+> │              ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │              ├── 📄 index.md
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 40_receipts/
+
+> │            ├── 📄 NT_2025-12-20_exh-20_receipts_0860d3df_2025-12-20.jpg
+
+> │            ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 50_records/
+
+> │            ├── 📄 Foreclosure and Housing Litigation Case Record.csv
+
+> │            ├── 📄 Inventory of Civil and Fair Housing Rights Vio.csv
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_multi-media/
+
+> │          └── 📂 Photos_Conditions/
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_00241326_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_012aa06e_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_01b3e905_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_10f4975d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1beefb11_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_25fb1992_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_2f0952db_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_49c74ec6_2025-.heic
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_4e01fa01_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5be451ba_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_5d95cae5_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_61129253_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_63fb7b02_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_7a544ef7_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8350e7be_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8a163413_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_8d885a5c_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_942cfd7f_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9b611100_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_9ff5022d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_a8832e17_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ca02d006_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_db9b10b5_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_e4cb3622_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f510498b_2025-.heic
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f60d8098_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_f98b089a_2025-1.png
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fa1703bf_2025-1.jpg
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │            ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 Videos/
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_1a80b987_2025-1.mp4
+
+> │            ├── 📄 2025-12-20_exh-10_photos_video_ed6dc885_2025-1.mp4
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 Weather_Reports/
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 50_quarantine_candidates/
+
+> │        ├── 📄 OR__031_Proposed_Order_Vacate.pdf
+
+> │        ├── 📄 OR__032_Proposed_Order_Stay.pdf
+
+> │        ├── 📄 PL_017_OMITTED NOTICE OF SERVICE TO DEFENDANT.pdf
+
+> │        ├── 📄 PL__016_Affidavit_Additional.pdf
+
+> │        ├── 📄 PL__033_ADA_Disability_Affidavit.pdf
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │    └── 📂 timeline/
+
+> │      └── 📂 2025/
+
+> │        ├── 📄 2025-01-16_Case_Filed.md
+
+> │        ├── 📄 2025-03-05_Service_Attempt_1.md
+
+> │        ├── 📄 2025-04-15_Service_Attempt_2.md
+
+> │        ├── 📄 2025-05-13_Motion_for_Default_Judgment.md
+
+> │        ├── 📄 2025-05-21_Order_Denying_Default_Judgment.md
+
+> │        ├── 📄 2025-05-23_Amended_Motion_Default_Judgment.md
+
+> │        ├── 📄 2025-05-28_Default_Judgment_Entered.md
+
+> │        ├── 📄 2025-05-30_Praecipe_Sheriff_Sale.md
+
+> │        ├── 📄 2025-07-09_Sheriff_Sale_Notice_Posted.md
+
+> │        ├── 📄 2025-08-15_Sheriff_Sale.md
+
+> │        ├── 📄 2025-10-29_Petition_for_Writ_of_Assistance.md
+
+> │        ├── 📄 2025-11-06_Writ_of_Assistance_Issued.md
+
+> │        ├── 📄 2025-12-09_Writ_Executed_Forced_Removal.md
+
+> │        ├── 📄 2025-12-09_Writ_Executed_Removal.md
+
+> │        ├── 📄 2025-12-10_Motions_Filed.md
+
+> │        ├── 📄 2025-12-11_Court_Orders_and_Hearing_Scheduled.md
+
+> │        ├── 📄 2025-12-12_Supplemental_Emergency_Motion.md
+
+> │        ├── 📄 2025-12-15_Case_DNA_Strategy_Checkpoint.md
+
+> │        ├── 📄 2025-12-15_Strategic_Planning_Session.md
+
+> │        ├── 📄 2025-12-16_Post_Removal_Access_Denial.md
+
+> │        ├── 📄 2025-12-21_Case_Summary.md
+
+> │        ├── 📄 2025-12-21_Gigi_Escape_During_Displacement.md
+
+> │        ├── 📄 2025-12-21_Post_Removal_Harms_and_Damages.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 2026/
+
+> │        ├── 📄 2026-01-09_Appearance_Plaintiff.md
+
+> │        ├── 📄 2026-01-18_Housing_Fallout_Otis.md
+
+> │        ├── 📄 2026-01-18_Zai_Asylum_Case_Closure.md
+
+> │        ├── 📄 2026-12-31_Relocation_to_Evansville.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │  └── 📂 30_analysis/
+
+> │    ├── 📄 analysis_notes.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_work/
+
+> │    └── 📂 10_pre_foreclosure/
+
+> │      └── 📂 10_account_history/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_hardship_and_ada/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_communications/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_payments_and_disputes/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_foreclosure_filing/
+
+> │      └── 📂 10_complaint/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_summons/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_lien_parties/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_docket_snapshots/
+
+> │        ├── 📄 NT__Case_Summary.md
+
+> │        ├── 📄 _Case_Summary.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_service_and_notice/
+
+> │      └── 📂 10_sheriff_returns/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_mailings/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_affidavits_of_service/
+
+> │        └── 📂 10_jurisdiction_service_tr_4_1_b/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_service_process/
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_defects_and_contradictions/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_default_and_judgment/
+
+> │      └── 📂 10_default_motion/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_default_order/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_judgment_and_decree/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_accounting_inputs/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_sale_and_title/
+
+> │      └── 📂 10_sheriff_sale/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_deed/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_recording_gaps/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_possession_claims/
+
+> │        └── 📂 10_sale_and_possession/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 30_void_vs_voidable/
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 60_writ_and_execution/
+
+> │      └── 📂 10_writ_petition/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_writ_order/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_execution_events/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_notice_failures/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 70_post_removal_conduct/
+
+> │      └── 📂 10_property_interference/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_access_denial/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_spoliation_risk/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_third_party_actions/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 NT_Record_Preservation_Issue_Matrix.md
+
+> │    ├── 📄 PHASE_00_Working_and_Narrative.md
+
+> │    ├── 📄 PHASE_01_Court_Record.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 10_filings/
+
+> │      └── 📂 10_proposed/
+
+> │        ├── 📄 OR_C2.04.001_order_vacate_proposed.pdf
+
+> │        ├── 📄 OR_C2.04.002_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_exhibits/
+
+> │        ├── 📄 EXH_05_Exhibit_List.pdf
+
+> │        ├── 📄 EXH_06_Exhibits_Combined.pdf
+
+> │        ├── 📄 EXH_30_Exhibit_Sets.md
+
+> │        ├── 📄 EXH_Exhibit_H_Declaration.pdf
+
+> │        └── 📂 _A-H_initial/
+
+> │          ├── 📄 EXH_2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │          ├── 📄 EXH_Exhibit_A_20250305_Sheriff_Return (2).pdf
+
+> │          ├── 📄 EXH_Exhibit_B_20250415_Sheriff_Return (2).pdf
+
+> │          ├── 📄 EXH_Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
+
+> │          ├── 📄 EXH_Exhibit_G1_ADA_Notice_Request (2).pdf
+
+> │          ├── 📄 EXH_Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
+
+> │          ├── 📄 EXH_Exhibit_H_Declaration (2).pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_C_20250116_Incomplete_Sum.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_D_20250513_Default_Judgme.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_F_Affidavit_Cody_RiceVela.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_G1_ADA_Notice_Request.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_G2_AES_ADA_Docs_Disconnec.pdf
+
+> │          ├── 📄 EXH_WH7.01.0100__Exhibit_H_Declaration.pdf
+
+> │          ├── 📄 EXH_exhibit_a_20250305_sheriff_return.pdf
+
+> │          ├── 📄 EXH_exhibit_b_20250415_sheriff_return.pdf
+
+> │          ├── 📄 EXH_exhibit_c_20250116_incomplete_sum.pdf
+
+> │          ├── 📄 EXH_exhibit_d_20250513_default_judgme.pdf
+
+> │          ├── 📄 EXH_exhibit_f_affidavit_cody_ricevela.pdf
+
+> │          ├── 📄 EXH_exhibit_g1_ada_notice_request.pdf
+
+> │          ├── 📄 EXH_exhibit_g2_aes_ada_docs_disconnec.pdf
+
+> │          ├── 📄 EXH_exhibit_h_declaration.pdf
+
+> │          ├── 📄 EXH_exhibits_combined.pdf
+
+> │          ├── 📄 MO_Exhibit_D_20250513_Default_Judgment_Motion.pdf
+
+> │          ├── 📄 PL_Exhibit_C_20250116_Incomplete_Summons.pdf
+
+> │          ├── 📄 PL_Exhibit_E_20251029_Petition_for_Writ.pdf
+
+> │          ├── 📄 PL_WH7.01.0100__Exhibit_E_20251029_Petition_for_W.pdf
+
+> │          ├── 📄 PL_exhibit_e_20251029_petition_for_w.pdf
+
+> │          ├── 📄 WH7.01.0100__index.html
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _I_ada_communications/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _J_eviction_removal/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _K_financial/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _L_statements/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _M_court-service/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 _P_property/
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 combinepdf.pdf
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 30_motions/
+
+> │        └── 📂 10_draft_motions/
+
+> │          ├── 📄 MO_01_motion_vacate.pdf
+
+> │          ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │          ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │          ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │          ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │          ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 40_orders/
+
+> │        ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │        ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 50_regulators/
+
+> │        └── 📂 10_INAG/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_housing/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 30_doj/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 40_incrc/
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 90_Filed_Envelopes/
+
+> │        └── 📂 10_2025-12-10_motion_vacate/
+
+> │          └── 📂 01_drafts/
+
+> │            ├── 📄 MO_01B_Motion_To_Vacate_Void_Judgment.pdf
+
+> │            ├── 📄 MO_C2.01.002_motion_vacate.pdf
+
+> │            ├── 📄 MO_C2.02.002_Emergency_Motion_Stay_OR_Quash.pdf
+
+> │            ├── 📄 index.md
+
+> │          └── 📂 04_filed_receipts/
+
+> │            ├── 📄 NT_37268798_Odyssey_Envelope_Receipt.pdf
+
+> │            ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
+
+> │            ├── 📄 NT_combinepdf.pdf
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 NT_odyssey_envelope_receipt.pdf
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │          ├── 📄 MO_C2.03.002_Supplemental_Emergency_Motion.pdf
+
+> │          ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 90_archive/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 Key dates.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 motions filed.md
+
+> │  ├── 📄 questions for the court.md
+
+> │  ├── 📄 reports__NT_uncategorized_bundle.pdf
+
+> └── 📂 PHASE_02_CREDIT_FCRA/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_record/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_analysis/
+
+> │    ├── 📄 analysis_notes.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_work/
+
+> │    └── 📂 10_credit_reports/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Deliverables_Index.md
+
+> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Overview.md
+
+> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Print_Checklist.md
+
+> │    ├── 📄 2026-01-18_Phase_02_Credit_FCRA_Tasklist.md
+
+> │    └── 📂 20_furnisher_disputes/
+
+> │      ├── 📄 CFPB_Complaint_Draft.md
+
+> │      ├── 📄 FCFCU_Direct_Dispute_Letter.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_bureau_disputes/
+
+> │      ├── 📄 Equifax_Dispute_Letter.md
+
+> │      ├── 📄 Experian_Dispute_Letter.md
+
+> │      ├── 📄 TransUnion_Dispute_Letter.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_verified_responses/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_damages/
+
+> │      ├── 📄 Core_Credit_Tables.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 PHASE_02_Credit_FCRA.md
+
+> │    ├── 📄 Utility_Dispute_Letter.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 90_archive/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 PHASE_03_REGULATORS/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_record/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_analysis/
+
+> │    ├── 📄 analysis_notes.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_work/
+
+> │    └── 📂 10_CFPB/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_AG_Indiana/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_NCUA/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_regulatory_complaints/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_DOJ_Civil_Rights/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_federal_preservation/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_ICRC/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 PHASE_03_Regulators.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 90_archive/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 PHASE_04_LITIGATION/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_record/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_analysis/
+
+> │    ├── 📄 analysis_notes.md
+
+> │    └── 📂 damages/
+
+> │      └── 📂 20_damages_and_fallout/
+
+> │        └── 📂 10_property_possession_harms/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 20_economic_harm/
+
+> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │          ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 30_financial/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 40_health_and_safety/
+
+> │          └── 📂 20_companion_animal_risk/
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 50_non_economic_harm/
+
+> │          ├── 📄 PL_Cold_Risk_Report.md
+
+> │          └── 📂 cold_exposure/
+
+> │            ├── 📄 PL__Cold_Risk_Report.md
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 60_professional_harm/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 70_remedies_scenarios/
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 80_payout_strategy/
+
+> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 index.md
+
+> │        └── 📂 90_third_party_harm/
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 NT_Financial_Tracker.md
+
+> │      ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 general/
+
+> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │      ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │      ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │    └── 📂 trackers/
+
+> │      └── 📂 10_VIOLATIONS/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_FINANCIALS/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 NT_01_MASTER_INDEX.md
+
+> │      ├── 📄 NT_Accounting_Reconciliation_Matrix_One_Pager.md
+
+> │      ├── 📄 NT_Case_Docket_Checklist.csv
+
+> │      ├── 📄 NT_Contacts.md
+
+> │      ├── 📄 NT_Damage_Accounting_Ledger.md
+
+> │      ├── 📄 NT_Master_Case_Log.md
+
+> │      ├── 📄 NT_Utility_Exploitation_Log.md
+
+> │      ├── 📄 VIO_AES_UTILITY_2026-01-15-20.md
+
+> │      ├── 📄 VIO_BBB_STATUTOR_2025-01-01-43.md
+
+> │      ├── 📄 VIO_CFPB_STATUTOR_2025-01-01-39.md
+
+> │      ├── 📄 VIO_CITIZENS_UTILITY_2026-01-15-21.md
+
+> │      ├── 📄 VIO_CITYOFIN_MUNICIPAL_2026-01-15-23.md
+
+> │      ├── 📄 VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md
+
+> │      ├── 📄 VIO_COURT_STATUTOR_2025-01-01-34.md
+
+> │      ├── 📄 VIO_DOJ_ADA_2025-01-01-42.md
+
+> │      ├── 📄 VIO_EQUIFAX_STATUTOR_2025-01-01-02.md
+
+> │      ├── 📄 VIO_EXPERIAN_STATUTOR_2025-01-01-01.md
+
+> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-37.md
+
+> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-52.md
+
+> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-55.md
+
+> │      ├── 📄 VIO_FCFCU_ADA_2025-01-01-62.md
+
+> │      ├── 📄 VIO_FCFCU_GENERAL_2025-01-01-12.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-11.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-21.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-35.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-36.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-50.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-51.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-54.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-60.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-61.md
+
+> │      ├── 📄 VIO_FCFCU_PROCEDURAL_2025-01-01-64.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-01.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-04.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-05.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-07.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-08.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-10.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-12.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-14.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-15.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-16.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-17.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-18.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-19.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-22.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-23.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-24.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-25.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-26.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-27.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-57.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-59.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-63.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-65.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-66.md
+
+> │      ├── 📄 VIO_FCFCU_STATUTOR_2025-01-01-67.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-06.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-09.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-13.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-20.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2025-01-01-58.md
+
+> │      ├── 📄 VIO_FCFCU_TORT_2026-01-18-95.md
+
+> │      ├── 📄 VIO_HOA_TORT_2026-01-15-22.md
+
+> │      ├── 📄 VIO_INDIANAA_STATUTOR_2025-01-01-40.md
+
+> │      ├── 📄 VIO_INDIANAG_PROCEDURAL_2025-01-01-01.md
+
+> │      ├── 📄 VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md
+
+> │      ├── 📄 VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md
+
+> │      ├── 📄 VIO_SHERIFF_STATUTOR_2025-01-01-33.md
+
+> │      ├── 📄 VIO_TRANSUNION_STATUTOR_2025-01-01-03.md
+
+> │      ├── 📄 VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md
+
+> │      ├── 📄 VIO_UNKNOWN_GENERAL_2026-01-18-00.md
+
+> │      ├── 📄 evidence_index_master.csv
+
+> │      ├── 📄 financial_transactions_damages.csv
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 legal_authority_library.csv
+
+> │      ├── 📄 tasks_strategy.csv
+
+> │      ├── 📄 tasks_strategy.md
+
+> │      ├── 📄 violations_inventory_master.csv
+
+> │      ├── 📄 violations_inventory_master.md
+
+> │  └── 📂 40_work/
+
+> │    └── 📂 00_Intake/
+
+> │      ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │      ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 10_strategy_and_research/
+
+> │      ├── 📄 NT_Refined_Settlement_Exposure_Matrix.md
+
+> │      ├── 📄 NT_Settlement_Exposure_Spine.md
+
+> │      ├── 📄 NT_Settlement_Logic_Memo_Internal.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_demand_letters/
+
+> │      ├── 📄 NT_Demand_Ready_Exposure_Summary.md
+
+> │      ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_opposing_counsel/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_draft_pleadings/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 PHASE_04_Litigation_and_Settlement.md
+
+> │    └── 📂 hearings/
+
+> │      └── 📂 2025-01-09_hearing/
+
+> │        ├── 📄 COURT_MODE_BUTTONS.md.md
+
+> │        ├── 📄 HEARING CHEAT SHEET.md
+
+> │        ├── 📄 _COURT_MODE_PLAYBOOK.md.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 50_Hearing_Packets/
+
+> │        └── 📂 2025-01-09_Hearing_Void_Judgement/
+
+> │          ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │          ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │          ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │          ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_packets/
+
+> │      └── 📂 00_Covers/
+
+> │        ├── 📄 00A_Cover.html
+
+> │        ├── 📄 00A_Cover_Court.html
+
+> │        ├── 📄 00A_Cover_Opposing.html
+
+> │        ├── 📄 00B_Spine.html
+
+> │        ├── 📄 Binder Covers.pdf
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 90_archive/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 PHASE_05_PUBLIC_PRESSURE/
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_record/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 30_analysis/
+
+> │    ├── 📄 analysis_notes.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 40_work/
+
+> │    └── 📂 10_press_kits/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_Published/
+
+> │      └── 📂 10_social_media/
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 20_new_media/
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_public_record_dumps/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_legislative_outreach/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_social_media/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 NT_2025-12-15_they_threw_us_into_the_cold.md
+
+> │    ├── 📄 PHASE_05_Nuclear.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 50_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 90_archive/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 index.md
+
+> └── 📂 _cockpit/
+
+> │  └── 📂 00_Inbox/
+
+> │  └── 📂 10_Overview/
+
+> │    └── 📂 10_Listen/
+
+> │      ├── 📄 01_forensic_audit.m4a
+
+> │      ├── 📄 02_void_versus_damages.m4a
+
+> │      ├── 📄 03_critiques_Institutional_failure.m4a
+
+> │      ├── 📄 04_debate.m4a
+
+> │      ├── 📄 05_critiques_Separate_Appeals.m4a
+
+> │    └── 📂 20_Read/
+
+> │      ├── 📄 eviction_crisis.pdf
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 institutional_failure.pdf
+
+> │      ├── 📄 legal_master_file.md
+
+> │      ├── 📄 personal_impact_and_support.md
+
+> │      ├── 📄 strategic_action_plan.md
+
+> │      ├── 📄 wrongful_foreclosure.pdf
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 20_Strategy/
+
+> │    ├── 📄 ATTORNEY INTAKE PACKET.md
+
+> │    ├── 📄 Case_DNA.md
+
+> │    └── 📂 Credit/
+
+> │      ├── 📄 credit strategy.md
+
+> │    ├── 📄 Master_Strategy.canvas
+
+> │    ├── 📄 ONE-PAGE STRATEGY MAP.md
+
+> │    ├── 📄 RULE 408 SETTLEMENT LETTER.md
+
+> │    └── 📂 Settlement/
+
+> │      ├── 📄 Settlement Targets.md
+
+> │      ├── 📄 success matrics.md
+
+> │  └── 📂 30_Templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 MO_TEMPLATE_emergency_stay_of_writ.md
+
+> │      ├── 📄 MO_TEMPLATE_vacate_void_judgment.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 20_declarations/
+
+> │      ├── 📄 NT_GUIDE_Witness_Instructions.md
+
+> │      ├── 📄 NT_TEMPLATE_Gender_Identity_Clarification.md
+
+> │      ├── 📄 PL_TEMPLATE_ADA_Disability_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Character_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Community_Service_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Credibility_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_Declarations.md
+
+> │      ├── 📄 PL_TEMPLATE_Observations_Affidavit.md
+
+> │      ├── 📄 PL_TEMPLATE_updated_affidavit_language.md
+
+> │      ├── 📄 PL_TEMPLATE_verified_affidavit_of_defendant.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 30_exhibits/
+
+> │      ├── 📄 EXH_TEMPLATE_Exhibit_List.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 40_orders/
+
+> │      ├── 📄 MO_TEMPLATE_proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 OR_TEMPLATE_Proposed_Order.md
+
+> │      ├── 📄 OR_TEMPLATE_proposed_order_emergency_stay.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 50_internal/
+
+> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
+
+> │      ├── 📄 NT_TEMPLATE_Court_Doc.md
+
+> │      ├── 📄 NT_TEMPLATE_Fact_Timeline.md
+
+> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Index.md
+
+> │      ├── 📄 NT_TEMPLATE_Service_Matrix.md
+
+> │      ├── 📄 NT_TEMPLATE_Timeline_Event.md
+
+> │      ├── 📄 NT_TEMPLATE_Violation_Entry.md
+
+> │      ├── 📄 NT_TEMPLATE_War_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_ada_packet.md
+
+> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
+
+> │      ├── 📄 NT_TEMPLATE_receipt_usps_tracking.md
+
+> │      ├── 📄 NT_TEMPLATE_script_call_lawyers.md
+
+> │      ├── 📄 NT_TPL_QiNote_Insight_Capture.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 90_pack_blueprints/
+
+> │      ├── 📄 NT_PACK_AGENCY.yaml
+
+> │      ├── 📄 NT_PACK_JUDGE.yaml
+
+> │      ├── 📄 NT_PACK_OPPOSING.yaml
+
+> │      ├── 📄 NT_PACK_SELF.yaml
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 NEXT.md
+
+> │  ├── 📄 Phase_Logic_Matrix.canvas
+
+> │  ├── 📄 Strategic_Plan.canvas
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 vis.yaml
+
+> ├── 📄 clean_and_update_indexes.py
+
+> ├── 📄 index.md
+
+> ├── 📄 rename_phase_folders.py
+
+> └── 📄 update_indexes.py
+
 > ```
 
 ### Assistant
@@ -2674,864 +3491,1722 @@ canonical_ref: ""
 > - [2026-01-19_rule_408_settlement_letter_draft.md](sandbox:/mnt/data/2026-01-19_rule_408_settlement_letter_draft.md)
 
 ### User
-> heres teh most recent update. ## V. COMPREHENSIVE FILE SUMMARIES
-> 
-> *   **[CONTENT_EXPORT_DUMP.md](CONTENT_EXPORT_DUMP.md)**: 📗 CORE CONTENT EXPORT DUMP
-> *   **[README_BINDER.md](README_BINDER.md)**: Build Binder Script Usage
-> *   **[build_binder.py](build_binder.py)**: import os
-> *   **[envelopes_data.txt](envelopes_data.txt)**: No description available.
-> *   **[extract_placeholders.py](extract_placeholders.py)**: import os
-> *   **[file_inventory_final.csv](file_inventory_final.csv)**: ﻿"FullFilePath","FileType","Title","First1000Chars","DateCreated","LastModified","SizeKB","Hash"
-> *   **[generate_file_summaries.py](generate_file_summaries.py)**: import os
-> 
-> ### 📂 content
-> 
-> *   **[000_MASTER_INDEX.md](content\000_MASTER_INDEX.md)**: Master Index of All Folders
-> *   **[_TOC_.md](content\_TOC_.md)**: toc: true
-> *   **[_content.md](content\_content.md)**: Index of content
-> 
-> ### 📂 content\.infio_json_db
-> 
-> 
-> ### 📂 content\.infio_json_db\chats
-> 
-> 
-> ### 📂 content\.infio_json_db\commands
-> 
-> 
-> ### 📂 content\.infio_json_db\convert_data
-> 
-> 
-> ### 📂 content\.infio_json_db\custom_modes
-> 
-> 
-> ### 📂 content\.infio_json_db\workspaces
-> 
-> 
-> ### 📂 content\00_COCKPIT
-> 
-> *   **[00_COCKPIT.md](content\00_COCKPIT\00_COCKPIT.md)**: No description available.
-> *   **[_00_COCKPIT.md](content\00_COCKPIT\_00_COCKPIT.md)**: Index of 00_COCKPIT
-> *   **[_TOC_.md](content\00_COCKPIT\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\00_COCKPIT\01_Case_Master
-> 
-> *   **[00_CASE_SNAPSHOT_ONE_PAGER.md](content\00_COCKPIT\01_Case_Master\00_CASE_SNAPSHOT_ONE_PAGER.md)**: title: CASE SNAPSHOT & POSTURE ONE-PAGER
-> *   **[01_CASE_MASTER.md](content\00_COCKPIT\01_Case_Master\01_CASE_MASTER.md)**: title: "📖 MASTER CASE BIBLE: Analysis, Blueprint & Strategy"
-> *   **[03_VIOLATIONS.md](content\00_COCKPIT\01_Case_Master\03_VIOLATIONS.md)**: date: 2026-01-25
-> *   **[05_VALUATION.md](content\00_COCKPIT\01_Case_Master\05_VALUATION.md)**: date: 2026-01-25
-> *   **[06_CHECKLIST.md](content\00_COCKPIT\01_Case_Master\06_CHECKLIST.md)**: title: "🚀 MASTER CASE CHECKLIST: Phases, Filings & Evidence Inventory"
-> *   **[07_PRINT_PLAN.md](content\00_COCKPIT\01_Case_Master\07_PRINT_PLAN.md)**: title: PRINT PLAN
-> *   **[_01_Case_Master.md](content\00_COCKPIT\01_Case_Master\_01_Case_Master.md)**: Index of 01_Case_Master
-> 
-> ### 📂 content\00_COCKPIT\01_Case_Master\Strategy_Files
-> 
-> *   **[NT_Refined_Settlement_Exposure_Matrix.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Refined_Settlement_Exposure_Matrix.md)**: title: Settlement Exposure Matrix (Stress-Tested Model)
-> *   **[NT_Settlement_Exposure_Spine.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Settlement_Exposure_Spine.md)**: title: Settlement & Exposure Spine (Final - Re-Balanced)
-> *   **[NT_Settlement_Logic_Memo_Internal.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Settlement_Logic_Memo_Internal.md)**: title: "Internal Memo: Settlement Logic and Valuation Rationale"
-> *   **[_Strategy_Files.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\_Strategy_Files.md)**: Index of Strategy_Files
-> 
-> ### 📂 content\00_COCKPIT\01_Case_Master\Trackers
-> 
-> *   **[NT_01_MASTER_INDEX.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_01_MASTER_INDEX.md)**: case_slug: CASE_FCFCU
-> *   **[NT_Accounting_Reconciliation_Matrix_One_Pager.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Accounting_Reconciliation_Matrix_One_Pager.md)**: title: "EXHIBIT: FINANCIAL RECONCILIATION MATRIX"
-> *   **[NT_Case_Docket_Checklist.csv](content\00_COCKPIT\01_Case_Master\Trackers\NT_Case_Docket_Checklist.csv)**: Date,Entry_Type,Document_Title,Filed_By,Party_Affected,Key_Details,Potential_Irregularity,Related_La...
-> *   **[NT_Contacts.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Contacts.md)**: title: Contacts (Fill-in)
-> *   **[NT_Damage_Accounting_Ledger.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Damage_Accounting_Ledger.md)**: tags: [46]
-> *   **[NT_Master_Case_Log.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Master_Case_Log.md)**: title: Case Log - FCFCU v. Cody Rice-Velasquez
-> *   **[NT_Utility_Exploitation_Log.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Utility_Exploitation_Log.md)**: tags: [utilities, water_damage, theft_of_service, bad_faith, infrastructure, property_decay]
-> *   **[VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md)**: actor: CITYOFIN
-> *   **[VIO_COURT_STATUTOR_2025-01-01-34.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_COURT_STATUTOR_2025-01-01-34.md)**: actor: COURT
-> *   **[VIO_FCFCU_ADA_2025-01-01-37.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-37.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_ADA_2025-01-01-52.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-52.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_ADA_2025-01-01-55.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-55.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_ADA_2025-01-01-62.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-62.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_GENERAL_2025-01-01-12.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_GENERAL_2025-01-01-12.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-11.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-11.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-21.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-21.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-35.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-35.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-36.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-36.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-50.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-50.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-51.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-51.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-54.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-54.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-60.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-60.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-61.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-61.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-64.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-64.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-01.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-01.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-04.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-04.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-05.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-05.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-07.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-07.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-08.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-08.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-10.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-10.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-12.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-12.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-14.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-14.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-15.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-15.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-16.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-16.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-17.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-17.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-18.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-18.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-19.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-19.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-22.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-22.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-23.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-23.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-24.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-24.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-25.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-25.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-26.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-26.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-27.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-27.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-57.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-57.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-59.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-59.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-63.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-63.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-65.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-65.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-66.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-66.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_STATUTOR_2025-01-01-67.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-67.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2025-01-01-06.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-06.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2025-01-01-09.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-09.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2025-01-01-13.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-13.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2025-01-01-20.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-20.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2025-01-01-58.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-58.md)**: actor: FCFCU
-> *   **[VIO_FCFCU_TORT_2026-01-18-95.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2026-01-18-95.md)**: actor: FCFCU
-> *   **[VIO_HOA_TORT_2026-01-15-22.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_HOA_TORT_2026-01-15-22.md)**: actor: HOA
-> *   **[VIO_INDIANAA_STATUTOR_2025-01-01-40.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_INDIANAA_STATUTOR_2025-01-01-40.md)**: actor: INDIANAA
-> *   **[VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md)**: actor: PLAINTIF
-> *   **[VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md)**: actor: SHERIFF
-> *   **[VIO_SHERIFF_STATUTOR_2025-01-01-33.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_SHERIFF_STATUTOR_2025-01-01-33.md)**: actor: SHERIFF
-> *   **[VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md)**: actor: UNKNOWN
-> *   **[VIO_UNKNOWN_GENERAL_2026-01-18-00.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_UNKNOWN_GENERAL_2026-01-18-00.md)**: actor: UNKNOWN
-> *   **[_Trackers.md](content\00_COCKPIT\01_Case_Master\Trackers\_Trackers.md)**: Index of Trackers
-> *   **[evidence_index_master.csv](content\00_COCKPIT\01_Case_Master\Trackers\evidence_index_master.csv)**: evidence_id,evidence_type,date,label,source_path,notes
-> *   **[financial_transactions_damages.csv](content\00_COCKPIT\01_Case_Master\Trackers\financial_transactions_damages.csv)**: transaction_id,transaction_date,amount,currency,transaction_category,transaction_type,description,re...
-> *   **[legal_authority_library.csv](content\00_COCKPIT\01_Case_Master\Trackers\legal_authority_library.csv)**: violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,le...
-> *   **[tasks_strategy.csv](content\00_COCKPIT\01_Case_Master\Trackers\tasks_strategy.csv)**: task_id,created_date,source_violation_id,task_type,description,status,notes
-> *   **[tasks_strategy.md](content\00_COCKPIT\01_Case_Master\Trackers\tasks_strategy.md)**: title: Tasks Strategy
-> *   **[violations_inventory_master.csv](content\00_COCKPIT\01_Case_Master\Trackers\violations_inventory_master.csv)**: violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,le...
-> *   **[violations_inventory_master.md](content\00_COCKPIT\01_Case_Master\Trackers\violations_inventory_master.md)**: title: Violations Inventory Master
-> 
-> ### 📂 content\00_COCKPIT\10_Overview
-> 
-> *   **[09_Premonitions_I_Knew_Before_I_Knew.md](content\00_COCKPIT\10_Overview\09_Premonitions_I_Knew_Before_I_Knew.md)**: title: Premonitions (Pattern Recognition Log)
-> *   **[_10_Overview.md](content\00_COCKPIT\10_Overview\_10_Overview.md)**: Index of 10_Overview
-> 
-> ### 📂 content\00_COCKPIT\20_evidence
-> 
-> *   **[_20_evidence.md](content\00_COCKPIT\20_evidence\_20_evidence.md)**: Index of 20_evidence
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\10_Docket
-> 
-> *   **[_10_Docket.md](content\00_COCKPIT\20_evidence\10_Docket\_10_Docket.md)**: Index of 10_Docket
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors
-> 
-> *   **[_20_actors.md](content\00_COCKPIT\20_evidence\20_actors\_20_actors.md)**: Index of 20_actors
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu
-> 
-> *   **[_10_fcfcu.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\_10_fcfcu.md)**: Index of 10_fcfcu
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Appraisal
-> 
-> *   **[_Appraisal.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Appraisal\_Appraisal.md)**: Index of Appraisal
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Emails
-> 
-> *   **[_Emails.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Emails\_Emails.md)**: Index of Emails
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters
-> 
-> *   **[2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md)**: title: FCFCU Hardship and Health Notice Letter Delivery
-> *   **[Formal_Retrieval_Protocol_ADA.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\Formal_Retrieval_Protocol_ADA.md)**: title: FORMAL PROTOCOL FOR PROPERTY RETRIEVAL (ADA COMPLIANT)
-> *   **[_Letters.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\_Letters.md)**: Index of Letters
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Payments
-> 
-> *   **[_Payments.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Payments\_Payments.md)**: Index of Payments
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Reports
-> 
-> *   **[_Reports.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Reports\_Reports.md)**: Index of Reports
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Statements
-> 
-> *   **[_Statements.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Statements\_Statements.md)**: Index of Statements
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\20_actors\20_aes
-> 
-> *   **[2025-12-16_AES_Emergency_Notice.md](content\00_COCKPIT\20_evidence\20_actors\20_aes\2025-12-16_AES_Emergency_Notice.md)**: title: AES Emergency Notice Email (Ready-to-Send)
-> *   **[_20_aes.md](content\00_COCKPIT\20_evidence\20_actors\20_aes\_20_aes.md)**: Index of 20_aes
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting
-> 
-> *   **[_30_supporting.md](content\00_COCKPIT\20_evidence\30_supporting\_30_supporting.md)**: Index of 30_supporting
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\10_photos_video
-> 
-> *   **[_10_photos_video.md](content\00_COCKPIT\20_evidence\30_supporting\10_photos_video\_10_photos_video.md)**: Index of 10_photos_video
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media
-> 
-> *   **[_20_multi-media.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\_20_multi-media.md)**: Index of 20_multi-media
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Photos
-> 
-> *   **[_Photos.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Photos\_Photos.md)**: Index of Photos
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos
-> 
-> *   **[_Videos.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\_Videos.md)**: Index of Videos
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\12092025-mayberemovalday
-> 
-> *   **[_12092025-mayberemovalday.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\12092025-mayberemovalday\_12092025-mayberemovalday.md)**: Index of 12092025-mayberemovalday
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_parcel
-> 
-> *   **[_20_parcel.md](content\00_COCKPIT\20_evidence\30_supporting\20_parcel\_20_parcel.md)**: Index of 20_parcel
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\30_declarations
-> 
-> *   **[_30_declarations.md](content\00_COCKPIT\20_evidence\30_supporting\30_declarations\_30_declarations.md)**: Index of 30_declarations
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits
-> 
-> *   **[_40_affidavits.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\_40_affidavits.md)**: Index of 40_affidavits
-> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\ada-disability
-> 
-> *   **[_ada-disability.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\ada-disability\_ada-disability.md)**: Index of ada-disability
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\character
-> 
-> *   **[_character.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\character\_character.md)**: Index of character
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\community-service
-> 
-> *   **[_community-service.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\community-service\_community-service.md)**: Index of community-service
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\credibility
-> 
-> *   **[_credibility.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\credibility\_credibility.md)**: Index of credibility
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\observations
-> 
-> *   **[_observations.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\observations\_observations.md)**: Index of observations
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\50_records
-> 
-> *   **[NT_Video_Narration_Log_Removal_Day.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\NT_Video_Narration_Log_Removal_Day.md)**: tags: [33, 16, 18, 19, 20, 46, evidence_narration, property_tampering, bad_faith, ms_abbott, privacy...
-> *   **[_50_records.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\_50_records.md)**: Index of 50_records
-> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm
-> 
-> *   **[_40_Exposure_and_Harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\_40_Exposure_and_Harm.md)**: Index of 40_Exposure_and_Harm
-> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\_TOC_.md)**: title: EXPOSURE AND HARM TOC
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\10_property_possession_harms
-> 
-> *   **[_10_property_possession_harms.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\10_property_possession_harms\_10_property_possession_harms.md)**: Index of 10_property_possession_harms
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm
-> 
-> *   **[Declaration_Secondary_Displacement_Otis.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Declaration_Secondary_Displacement_Otis.md)**: title: DECLARATION OF CODY RICE-VELASQUEZ REGARDING SECONDARY DISPLACEMENT AND HOUSING INSTABILITY
-> *   **[Emergency_Supplemental_Declaration_Consolidated.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Emergency_Supplemental_Declaration_Consolidated.md)**: title: EMERGENCY SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ
-> *   **[NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md)**: title: Summary
-> *   **[NT_Forced_Relocation_Market_Loss_Memo.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Forced_Relocation_Market_Loss_Memo.md)**: title: "Memorandum: Forced Relocation & Market Loss Analysis"
-> *   **[NT_Post_Removal_Artifact_Checklist.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Post_Removal_Artifact_Checklist.md)**: title: CASE ARTIFACT EXHAUSTIVE CHECKLIST
-> *   **[NT_Quarantined_Claims_Hold.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Quarantined_Claims_Hold.md)**: title: Quarantined Claims Hold (High-Risk/Speculative)
-> *   **[Supplemental_Declaration_Accounting_Surplus.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Supplemental_Declaration_Accounting_Surplus.md)**: title: SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ
-> *   **[Supplemental_Declaration_Cody_DRAFT.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Supplemental_Declaration_Cody_DRAFT.md)**: title: SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ IN SUPPORT OF EMERGENCY MOTIONS
-> *   **[_20_economic_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\_20_economic_harm.md)**: Index of 20_economic_harm
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial
-> 
-> *   **[NT_Financial_Tracker.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\NT_Financial_Tracker.md)**: title: Financial Tracker - FCFCU Case
-> *   **[NT_Payment_Portal_and_Check_History.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\NT_Payment_Portal_and_Check_History.md)**: title: Payment Portal and Check Handling History
-> *   **[_30_financial.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\_30_financial.md)**: Index of 30_financial
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety
-> 
-> *   **[_40_health_and_safety.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\_40_health_and_safety.md)**: Index of 40_health_and_safety
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\20_companion_animal_risk
-> 
-> *   **[_20_companion_animal_risk.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\20_companion_animal_risk\_20_companion_animal_risk.md)**: Index of 20_companion_animal_risk
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm
-> 
-> *   **[_50_non_economic_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\_50_non_economic_harm.md)**: Index of 50_non_economic_harm
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure
-> 
-> *   **[PL__Cold_Risk_Report.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure\PL__Cold_Risk_Report.md)**: title: Cold Exposure Risk Summary
-> *   **[_cold_exposure.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure\_cold_exposure.md)**: Index of cold_exposure
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\60_professional_harm
-> 
-> *   **[_60_professional_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\60_professional_harm\_60_professional_harm.md)**: Index of 60_professional_harm
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\70_remedies_scenarios
-> 
-> *   **[_70_remedies_scenarios.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\70_remedies_scenarios\_70_remedies_scenarios.md)**: Index of 70_remedies_scenarios
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy
-> 
-> *   **[NT__Long_Term_Payout_Strategy.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy\NT__Long_Term_Payout_Strategy.md)**: title: Long-Term Payout Strategy – Internal Summary
-> *   **[_80_payout_strategy.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy\_80_payout_strategy.md)**: Index of 80_payout_strategy
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\90_third_party_harm
-> 
-> *   **[_90_third_party_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\90_third_party_harm\_90_third_party_harm.md)**: Index of 90_third_party_harm
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Photos_Conditions
-> 
-> *   **[_Photos_Conditions.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Photos_Conditions\_Photos_Conditions.md)**: Index of Photos_Conditions
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports
-> 
-> *   **[Cold_Risk_Report.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports\Cold_Risk_Report.md)**: title: Cold Exposure Risk Summary
-> *   **[_Weather_Reports.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports\_Weather_Reports.md)**: Index of Weather_Reports
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery
-> 
-> *   **[Service_Log.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Service_Log.md)**: title: MASTER SERVICE LOG
-> *   **[_60_service_and_delivery.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\_60_service_and_delivery.md)**: Index of 60_service_and_delivery
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals
-> 
-> *   **[README.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals\README.md)**: title: Email Transmittals
-> *   **[_Email_Transmittals.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals\_Email_Transmittals.md)**: Index of Email_Transmittals
-> 
-> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified
-> 
-> *   **[README.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified\README.md)**: title: USPS Certified Mail
-> *   **[_USPS_Certified.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified\_USPS_Certified.md)**: Index of USPS_Certified
-> 
-> ### 📂 content\00_COCKPIT\99_Templates
-> 
-> *   **[_99_Templates.md](content\00_COCKPIT\99_Templates\_99_Templates.md)**: Index of 99_Templates
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\10_motions
-> 
-> *   **[_10_motions.md](content\00_COCKPIT\99_Templates\10_motions\_10_motions.md)**: Index of 10_motions
-> *   **[_emergency_stay_of_writ.md](content\00_COCKPIT\99_Templates\10_motions\_emergency_stay_of_writ.md)**: title: _emergency_stay_of_writ
-> *   **[_vacate_void_judgment.md](content\00_COCKPIT\99_Templates\10_motions\_vacate_void_judgment.md)**: title: _vacate_void_judgment
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\20_affidavits
-> 
-> *   **[_20_affidavits.md](content\00_COCKPIT\99_Templates\20_affidavits\_20_affidavits.md)**: Index of 20_affidavits
-> *   **[_GUIDE_Witness_Instructions.md](content\00_COCKPIT\99_Templates\20_affidavits\_GUIDE_Witness_Instructions.md)**: title: "**Instruction List for Your Witnesses**"
-> *   **[__ADA_Disability_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__ADA_Disability_Affidavit.md)**: title: "**ADA / DISABILITY AFFIDAVIT**"
-> *   **[__Character_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Character_Affidavit.md)**: title: "**AFFIDAVIT OF CHARACTER**"
-> *   **[__Community_Service_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Community_Service_Affidavit.md)**: title: "**AFFIDAVIT OF COMMUNITY SERVICE**"
-> *   **[__Credibility_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Credibility_Affidavit.md)**: title: "**AFFIDAVIT OF CREDIBILITY**"
-> *   **[__Gender_Identity_Clarification.md](content\00_COCKPIT\99_Templates\20_affidavits\__Gender_Identity_Clarification.md)**: title: Gender Identity Clarification for Court Proceedings
-> *   **[__Observations_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Observations_Affidavit.md)**: title: "**AFFIDAVIT OF OBSERVATIONS**"
-> *   **[__updated_affidavit_language.md](content\00_COCKPIT\99_Templates\20_affidavits\__updated_affidavit_language.md)**: title: __updated_affidavit_language
-> *   **[__verified_affidavit_of_defendant.md](content\00_COCKPIT\99_Templates\20_affidavits\__verified_affidavit_of_defendant.md)**: title: __verified_affidavit_of_defendant
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\40_exhibits
-> 
-> *   **[_40_exhibits.md](content\00_COCKPIT\99_Templates\40_exhibits\_40_exhibits.md)**: Index of 40_exhibits
-> *   **[_Exhibits_Lists.md](content\00_COCKPIT\99_Templates\40_exhibits\_Exhibits_Lists.md)**: title: "**IN THE MARION SUPERIOR COURT 3**"
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\50_orders
-> 
-> *   **[_50_orders.md](content\00_COCKPIT\99_Templates\50_orders\_50_orders.md)**: Index of 50_orders
-> *   **[_Proposed_Order.md](content\00_COCKPIT\99_Templates\50_orders\_Proposed_Order.md)**: title: _Proposed_Order
-> *   **[_proposed_order_emergency_stay.md](content\00_COCKPIT\99_Templates\50_orders\_proposed_order_emergency_stay.md)**: title: _proposed_order_emergency_stay
-> *   **[_proposed_order_motion_to_vacate.md](content\00_COCKPIT\99_Templates\50_orders\_proposed_order_motion_to_vacate.md)**: title: _proposed_order_motion_to_vacate
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\60_packets
-> 
-> *   **[2026-01-19_attorney_intake_packet_executive.md](content\00_COCKPIT\99_Templates\60_packets\2026-01-19_attorney_intake_packet_executive.md)**: date: 2026-01-19
-> *   **[NT_TEMPLATE_Handup_Packet_Note.md](content\00_COCKPIT\99_Templates\60_packets\NT_TEMPLATE_Handup_Packet_Note.md)**: title: HAND-UP PACKET — {{PACKET_NAME}}
-> *   **[NT_TEMPLATE_ada_packet.md](content\00_COCKPIT\99_Templates\60_packets\NT_TEMPLATE_ada_packet.md)**: title: NT_TEMPLATE_ada_packet
-> *   **[_60_packets.md](content\00_COCKPIT\99_Templates\60_packets\_60_packets.md)**: Index of 60_packets
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\70_outreach
-> 
-> *   **[NT_TEMPLATE_Advocate_Outreach.md](content\00_COCKPIT\99_Templates\70_outreach\NT_TEMPLATE_Advocate_Outreach.md)**: title: Advocate Outreach Message and Bullet-Point Overview
-> *   **[NT_TEMPLATE_attorney_brief.md](content\00_COCKPIT\99_Templates\70_outreach\NT_TEMPLATE_attorney_brief.md)**: title: Attorney Intake – Emergency Relief & Settlement (One Page)
-> *   **[WI8.01.010__2025-12-15_they_threw_us_into_the_c.md](content\00_COCKPIT\99_Templates\70_outreach\WI8.01.010__2025-12-15_they_threw_us_into_the_c.md)**: title: They Threw Us Into the Cold
-> *   **[_70_outreach.md](content\00_COCKPIT\99_Templates\70_outreach\_70_outreach.md)**: Index of 70_outreach
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\80_binders
-> 
-> *   **[NT_TEMPLATE_Section_Cover.md](content\00_COCKPIT\99_Templates\80_binders\NT_TEMPLATE_Section_Cover.md)**: title: "{{CODE}} — {{TAB}} (Section Cover)"
-> *   **[NT_TEMPLATE_Section_Index.md](content\00_COCKPIT\99_Templates\80_binders\NT_TEMPLATE_Section_Index.md)**: title: "{{CODE}} — {{TAB}} (Index)"
-> *   **[_80_binders.md](content\00_COCKPIT\99_Templates\80_binders\_80_binders.md)**: Index of 80_binders
-> 
-> ### 📂 content\00_COCKPIT\99_Templates\90_internal
-> 
-> *   **[_90_internal.md](content\00_COCKPIT\99_Templates\90_internal\_90_internal.md)**: Index of 90_internal
-> *   **[_Court_Doc.md](content\00_COCKPIT\99_Templates\90_internal\_Court_Doc.md)**: title: "{{CODE}} — {{TITLE}}"
-> *   **[_TOC_.md](content\00_COCKPIT\99_Templates\90_internal\_TOC_.md)**: toc: true
-> *   **[_Timeline_Event.md](content\00_COCKPIT\99_Templates\90_internal\_Timeline_Event.md)**: case_slug: CASE_FCFCU
-> *   **[_Violation_Entry.md](content\00_COCKPIT\99_Templates\90_internal\_Violation_Entry.md)**: id: V-000
-> *   **[_script_call_lawyers.md](content\00_COCKPIT\99_Templates\90_internal\_script_call_lawyers.md)**: title: _script_call_lawyers
-> *   **[_settlement_letter_draft.md](content\00_COCKPIT\99_Templates\90_internal\_settlement_letter_draft.md)**: date: 2026-01-19
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE
-> 
-> *   **[01_phase_foreclosure.md](content\01_PHASE_FORECLOSURE\01_phase_foreclosure.md)**: type: phase
-> *   **[_01_PHASE_FORECLOSURE.md](content\01_PHASE_FORECLOSURE\_01_PHASE_FORECLOSURE.md)**: Index of 01_PHASE_FORECLOSURE
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output
-> 
-> *   **[_01_phase_output.md](content\01_PHASE_FORECLOSURE\01_phase_output\_01_phase_output.md)**: Index of 01_phase_output
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\10_proposed
-> 
-> *   **[_10_proposed.md](content\01_PHASE_FORECLOSURE\01_phase_output\10_proposed\_10_proposed.md)**: Index of 10_proposed
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment
-> 
-> *   **[_2025-01-09_hearing_void_judgment.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\_2025-01-09_hearing_void_judgment.md)**: Index of 2025-01-09_hearing_void_judgment
-> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing
-> 
-> *   **[COURT_MODE_BUTTONS.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\COURT_MODE_BUTTONS.md)**: title: 🟦 COURT MODE — TAP A BUTTON
-> *   **[HEARING CHEAT SHEET.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\HEARING CHEAT SHEET.md)**: title: HEARING CHEAT SHEET
-> *   **[_2025-01-09_hearing.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\_2025-01-09_hearing.md)**: Index of 2025-01-09_hearing
-> *   **[_COURT_MODE_PLAYBOOK.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\_COURT_MODE_PLAYBOOK.md)**: title: COURT MODE — Button Bot (No Audio)
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits
-> 
-> *   **[_20_exhibits.md](content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_20_exhibits.md)**: Index of 20_exhibits
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_A-H_initial
-> 
-> *   **[__A-H_initial.md](content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_A-H_initial\__A-H_initial.md)**: Index of _A-H_initial
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\30_motions
-> 
-> *   **[MO_motion_emergency_stay_of_writ.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_emergency_stay_of_writ.md)**: title: MO_motion_emergency_stay_of_writ
-> *   **[MO_motion_emergency_supplemental_motion_ongoing_ha.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_emergency_supplemental_motion_ongoing_ha.md)**: title: Motion Emergency Supplemental Motion Ongoing Harm
-> *   **[MO_motion_to_vacate_void_judgment.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_to_vacate_void_judgment.md)**: title: MO_motion_to_vacate_void_judgment
-> *   **[MO_proposed_order_motion_to_vacate.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_proposed_order_motion_to_vacate.md)**: title: MO_proposed_order_motion_to_vacate
-> *   **[_30_motions.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\_30_motions.md)**: Index of 30_motions
-> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\40_orders
-> 
-> *   **[_40_orders.md](content\01_PHASE_FORECLOSURE\01_phase_output\40_orders\_40_orders.md)**: Index of 40_orders
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes
-> 
-> *   **[_90_Filed_Envelopes.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\_90_Filed_Envelopes.md)**: Index of 90_Filed_Envelopes
-> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\10_2025-12-10_motion_vacate
-> 
-> *   **[_10_2025-12-10_motion_vacate.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\10_2025-12-10_motion_vacate\_10_2025-12-10_motion_vacate.md)**: Index of 10_2025-12-10_motion_vacate
-> 
-> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\20_2025-12-11_Supplemental_Emergency_Motion_Access
-> 
-> *   **[_20_2025-12-11_Supplemental_Emergency_Motion_Access.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\20_2025-12-11_Supplemental_Emergency_Motion_Access\_20_2025-12-11_Supplemental_Emergency_Motion_Access.md)**: Index of 20_2025-12-11_Supplemental_Emergency_Motion_Access
-> 
-> ### 📂 content\02_PHASE_PRESERVATION
-> 
-> *   **[Phase_02_Overview.md](content\02_PHASE_PRESERVATION\Phase_02_Overview.md)**: title: "PHASE 01.5 OVERVIEW: EVIDENCE PRESERVATION"
-> *   **[_02_PHASE_PRESERVATION.md](content\02_PHASE_PRESERVATION\_02_PHASE_PRESERVATION.md)**: Index of 02_PHASE_PRESERVATION
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\10_scope_definitions
-> 
-> *   **[Evidence_Categories_and_Sources.md](content\02_PHASE_PRESERVATION\10_scope_definitions\Evidence_Categories_and_Sources.md)**: title: EVIDENCE CATEGORIES AND SOURCES
-> *   **[Utility_and_Ownership_Record_Scope.md](content\02_PHASE_PRESERVATION\10_scope_definitions\Utility_and_Ownership_Record_Scope.md)**: title: UTILITY AND OWNERSHIP RECORD SCOPE
-> *   **[_10_scope_definitions.md](content\02_PHASE_PRESERVATION\10_scope_definitions\_10_scope_definitions.md)**: Index of 10_scope_definitions
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\20_spoliation_risk
-> 
-> *   **[Adverse_Inference_Triggers.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Adverse_Inference_Triggers.md)**: title: ADVERSE INFERENCE TRIGGERS
-> *   **[Housing_Harm_Ledger.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Housing_Harm_Ledger.md)**: title: HOUSING HARM LEDGER (FCRA ACTUAL DAMAGES LOG)
-> *   **[Spoliation_Legal_Framework.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Spoliation_Legal_Framework.md)**: title: SPOLIATION LEGAL FRAMEWORK
-> *   **[Spoliation_Risk_Register.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Spoliation_Risk_Register.md)**: title: SPOLIATION RISK REGISTER
-> *   **[_20_spoliation_risk.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\_20_spoliation_risk.md)**: Index of 20_spoliation_risk
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\30_preservation_notices
-> 
-> *   **[Notice_of_Evidence_Preservation.md](content\02_PHASE_PRESERVATION\30_preservation_notices\Notice_of_Evidence_Preservation.md)**: title: NOTICE OF EVIDENCE PRESERVATION (LITIGATION HOLD)
-> *   **[PHASE_01_5_Evidence_Preservation.md](content\02_PHASE_PRESERVATION\30_preservation_notices\PHASE_01_5_Evidence_Preservation.md)**: title: PHASE 01.5 — EVIDENCE PRESERVATION & SPOLIATION
-> *   **[Service_Log.md](content\02_PHASE_PRESERVATION\30_preservation_notices\Service_Log.md)**: title: SERVICE LOG - EVIDENCE PRESERVATION NOTICES
-> *   **[_30_preservation_notices.md](content\02_PHASE_PRESERVATION\30_preservation_notices\_30_preservation_notices.md)**: Index of 30_preservation_notices
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\40_output
-> 
-> *   **[_40_output.md](content\02_PHASE_PRESERVATION\40_output\_40_output.md)**: Index of 40_output
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\40_output\10_letters
-> 
-> *   **[Evidence_Preservation_Cover_Letter.md](content\02_PHASE_PRESERVATION\40_output\10_letters\Evidence_Preservation_Cover_Letter.md)**: title: FORMAL NOTICE OF EVIDENCE PRESERVATION AND MANDATORY LITIGATION HOLD
-> *   **[_10_letters.md](content\02_PHASE_PRESERVATION\40_output\10_letters\_10_letters.md)**: Index of 10_letters
-> 
-> ### 📂 content\02_PHASE_PRESERVATION\40_output\20_packets
-> 
-> *   **[Evidence_Preservation_Packet_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Evidence_Preservation_Packet_Index.md)**: title: EVIDENCE PRESERVATION PACKET INDEX
-> *   **[Harm_Matrix_and_Timeline_Summary.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Harm_Matrix_and_Timeline_Summary.md)**: title: "MASTER TIMELINE & HARM MATRIX: FCFCU v. CODY RV"
-> *   **[MASTER_DISPATCH_CHECKLIST.md](content\02_PHASE_PRESERVATION\40_output\20_packets\MASTER_DISPATCH_CHECKLIST.md)**: title: 'MASTER PRINT & DISPATCH CHECKLIST: THE "ENFORCEMENT PACKET"'
-> *   **[MASTER_OPERATIONAL_INDEX.md](content\02_PHASE_PRESERVATION\40_output\20_packets\MASTER_OPERATIONAL_INDEX.md)**: title: "MASTER PACKET INDEX: EXECUTION & DISPATCH (2026-01-27)"
-> *   **[Master_Exhibit_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Master_Exhibit_Index.md)**: title: "MASTER EXHIBIT INDEX: CREDIT RECOVERY & REGULATORY PRESSURE"
-> *   **[Phase_01_5_Execution_Checklist.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Phase_01_5_Execution_Checklist.md)**: title: Phase 01.5 Execution Checklist
-> *   **[Phase_01_5_Preservation_Packet_Cover_Sheet.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Phase_01_5_Preservation_Packet_Cover_Sheet.md)**: title: Phase 01.5 Preservation Packet – Cover Sheet
-> *   **[Service_Packet_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Service_Packet_Index.md)**: title: "DISPATCH PACKET: EVIDENCE PRESERVATION (JAN 27 2026)"
-> *   **[_20_packets.md](content\02_PHASE_PRESERVATION\40_output\20_packets\_20_packets.md)**: Index of 20_packets
-> 
-> ### 📂 content\03_CREDIT_FCRA
-> 
-> *   **[Equifax_Violation_Excerpt.md](content\03_CREDIT_FCRA\Equifax_Violation_Excerpt.md)**: actor: EQUIFAX
-> *   **[Experian_Violation_Excerpt.md](content\03_CREDIT_FCRA\Experian_Violation_Excerpt.md)**: actor: EXPERIAN
-> *   **[PHASE_02_Credit_FCRA.md](content\03_CREDIT_FCRA\PHASE_02_Credit_FCRA.md)**: type: phase
-> *   **[TransUnion_Violation_Excerpt.md](content\03_CREDIT_FCRA\TransUnion_Violation_Excerpt.md)**: actor: TRANSUNION
-> *   **[_03_CREDIT_FCRA.md](content\03_CREDIT_FCRA\_03_CREDIT_FCRA.md)**: Index of 03_CREDIT_FCRA
-> *   **[_TOC_.md](content\03_CREDIT_FCRA\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\03_CREDIT_FCRA\10_credit_reports
-> 
-> *   **[MANIFEST_Credit_Bureau_Dispute_Packet.md](content\03_CREDIT_FCRA\10_credit_reports\MANIFEST_Credit_Bureau_Dispute_Packet.md)**: title: "PACKET MANIFEST: CREDIT BUREAU DISPUTE (EXPERIAN/EQUIFAX/TRANSUNION)"
-> *   **[_10_credit_reports.md](content\03_CREDIT_FCRA\10_credit_reports\_10_credit_reports.md)**: Index of 10_credit_reports
-> *   **[_TOC_.md](content\03_CREDIT_FCRA\10_credit_reports\_TOC_.md)**: title: CREDIT REPORT INTAKE TOC
-> 
-> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Equifax
-> 
-> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Equifax\README.md)**: title: Equifax Reports Repository
-> *   **[_Equifax.md](content\03_CREDIT_FCRA\10_credit_reports\Equifax\_Equifax.md)**: Index of Equifax
-> 
-> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Experian
-> 
-> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Experian\README.md)**: title: Start of Experian Reports
-> *   **[_Experian.md](content\03_CREDIT_FCRA\10_credit_reports\Experian\_Experian.md)**: Index of Experian
-> 
-> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Other
-> 
-> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Other\README.md)**: title: Other Reports
-> *   **[_Other.md](content\03_CREDIT_FCRA\10_credit_reports\Other\_Other.md)**: Index of Other
-> 
-> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\TransUnion
-> 
-> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\TransUnion\README.md)**: title: Start of TransUnion Reports
-> *   **[_TransUnion.md](content\03_CREDIT_FCRA\10_credit_reports\TransUnion\_TransUnion.md)**: Index of TransUnion
-> 
-> ### 📂 content\03_CREDIT_FCRA\20_furnisher_disputes
-> 
-> *   **[CFPB_Complaint_Draft.md](content\03_CREDIT_FCRA\20_furnisher_disputes\CFPB_Complaint_Draft.md)**: date: 2026-01-27
-> *   **[FCFCU_Direct_Dispute_Letter.md](content\03_CREDIT_FCRA\20_furnisher_disputes\FCFCU_Direct_Dispute_Letter.md)**: date: 2026-01-27
-> *   **[Notice_of_Disputed_Liability_Other_Creditors.md](content\03_CREDIT_FCRA\20_furnisher_disputes\Notice_of_Disputed_Liability_Other_Creditors.md)**: date: 2026-01-27
-> *   **[Utility_Dispute_Letter.md](content\03_CREDIT_FCRA\20_furnisher_disputes\Utility_Dispute_Letter.md)**: title: Formal Utility Liability Dispute Notice
-> *   **[_20_furnisher_disputes.md](content\03_CREDIT_FCRA\20_furnisher_disputes\_20_furnisher_disputes.md)**: Index of 20_furnisher_disputes
-> *   **[_TOC_.md](content\03_CREDIT_FCRA\20_furnisher_disputes\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\03_CREDIT_FCRA\30_bureau_disputes
-> 
-> *   **[Consumer_Statement_Landlords.md](content\03_CREDIT_FCRA\30_bureau_disputes\Consumer_Statement_Landlords.md)**: title: PROPOSED CONSUMER STATEMENT (FOR CREDIT BUREAUS)
-> *   **[Equifax_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\Equifax_Dispute_Letter.md)**: date: 2026-01-27
-> *   **[Experian_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\Experian_Dispute_Letter.md)**: date: 2026-01-27
-> *   **[TransUnion_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\TransUnion_Dispute_Letter.md)**: date: 2026-01-27
-> *   **[_30_bureau_disputes.md](content\03_CREDIT_FCRA\30_bureau_disputes\_30_bureau_disputes.md)**: Index of 30_bureau_disputes
-> *   **[_TOC_.md](content\03_CREDIT_FCRA\30_bureau_disputes\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\03_CREDIT_FCRA\40_verified_responses
-> 
-> *   **[_40_verified_responses.md](content\03_CREDIT_FCRA\40_verified_responses\_40_verified_responses.md)**: Index of 40_verified_responses
-> 
-> ### 📂 content\03_CREDIT_FCRA\50_damages
-> 
-> *   **[Core_Credit_Tables.md](content\03_CREDIT_FCRA\50_damages\Core_Credit_Tables.md)**: date: 2026-01-18
-> *   **[Emergency_Credit_Harm_Addendum.md](content\03_CREDIT_FCRA\50_damages\Emergency_Credit_Harm_Addendum.md)**: title: EMERGENCY CREDIT HARM ADDENDUM (HOUSING IMPACT STATEMENT)
-> *   **[Housing_Emergency_Affidavit.md](content\03_CREDIT_FCRA\50_damages\Housing_Emergency_Affidavit.md)**: title: VERIFIED AFFIDAVIT OF HOUSING EMERGENCY AND IRREPARABLE HARM
-> *   **[_50_damages.md](content\03_CREDIT_FCRA\50_damages\_50_damages.md)**: Index of 50_damages
-> *   **[_TOC_.md](content\03_CREDIT_FCRA\50_damages\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\03_CREDIT_FCRA\50_output
-> 
-> *   **[_50_output.md](content\03_CREDIT_FCRA\50_output\_50_output.md)**: Index of 50_output
-> 
-> ### 📂 content\04_REGULATORS
-> 
-> *   **[00_COMPLAINT_PACKET_CHECKLIST.md](content\04_REGULATORS\00_COMPLAINT_PACKET_CHECKLIST.md)**: tags: [s]
-> *   **[MANIFEST_Informational_Filings_Packet.md](content\04_REGULATORS\MANIFEST_Informational_Filings_Packet.md)**: title: "PACKET MANIFEST: INFORMATIONAL FILINGS (CMS / SSA / VA)"
-> *   **[PHASE_04_Regulators.md](content\04_REGULATORS\PHASE_04_Regulators.md)**: type: phase
-> *   **[Violation_to_Regulator_Mapping.md](content\04_REGULATORS\Violation_to_Regulator_Mapping.md)**: title: VIOLATION-TO-REGULATOR MAPPING TABLE
-> *   **[_04_REGULATORS.md](content\04_REGULATORS\_04_REGULATORS.md)**: Index of 04_REGULATORS
-> *   **[_TOC_.md](content\04_REGULATORS\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\04_REGULATORS\10_Industry
-> 
-> *   **[_10_Industry.md](content\04_REGULATORS\10_Industry\_10_Industry.md)**: Index of 10_Industry
-> 
-> ### 📂 content\04_REGULATORS\10_Industry\BBB
-> 
-> *   **[BBB_Complaint_Narrative.md](content\04_REGULATORS\10_Industry\BBB\BBB_Complaint_Narrative.md)**: title: BBB COMPLAINT NARRATIVE
-> *   **[BBB_Violation_Excerpt.md](content\04_REGULATORS\10_Industry\BBB\BBB_Violation_Excerpt.md)**: actor: BBB
-> *   **[Cover_Letter.md](content\04_REGULATORS\10_Industry\BBB\Cover_Letter.md)**: title: COVER LETTER - Better Business Bureau (BBB)
-> *   **[Exhibit_Manifest.md](content\04_REGULATORS\10_Industry\BBB\Exhibit_Manifest.md)**: title: EXHIBIT MANIFEST - BBB Complaint Packet
-> *   **[_BBB.md](content\04_REGULATORS\10_Industry\BBB\_BBB.md)**: Index of BBB
-> 
-> ### 📂 content\04_REGULATORS\20_Local
-> 
-> *   **[AES_Utility_Violation_Excerpt.md](content\04_REGULATORS\20_Local\AES_Utility_Violation_Excerpt.md)**: actor: AES
-> *   **[Citizens_Utility_Violation_Excerpt.md](content\04_REGULATORS\20_Local\Citizens_Utility_Violation_Excerpt.md)**: actor: CITIZENS
-> *   **[City_of_Indy_Violation_Excerpt.md](content\04_REGULATORS\20_Local\City_of_Indy_Violation_Excerpt.md)**: actor: CITYOFIN
-> *   **[_20_Local.md](content\04_REGULATORS\20_Local\_20_Local.md)**: Index of 20_Local
-> 
-> ### 📂 content\04_REGULATORS\20_Local\35_Sheriff_Oversight
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Cover_Letter.md)**: date: 2026-01-27
-> *   **[MANIFEST_Sheriff_Oversight_Packet.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\MANIFEST_Sheriff_Oversight_Packet.md)**: title: "PACKET MANIFEST: SHERIFF PROFESSIONAL STANDARDS COMPLAINT"
-> *   **[Marion_County_Sheriff_Oversight_Violation_Excerpt.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Marion_County_Sheriff_Oversight_Violation_Excerpt.md)**: title: Matrix Excerpt – Marion County Sheriff Oversight
-> *   **[Sheriff_Internal_Affairs_Complaint.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Sheriff_Internal_Affairs_Complaint.md)**: date: 2026-01-27
-> *   **[Sheriff_Violation_Excerpt.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Sheriff_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: Sheriff"
-> *   **[_35_Sheriff_Oversight.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\_35_Sheriff_Oversight.md)**: Index of 35_Sheriff_Oversight
-> 
-> ### 📂 content\04_REGULATORS\30_State
-> 
-> *   **[_30_State.md](content\04_REGULATORS\30_State\_30_State.md)**: Index of 30_State
-> 
-> ### 📂 content\04_REGULATORS\30_State\20_AG_Indiana
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\20_AG_Indiana\Cover_Letter.md)**: title: COVER LETTER - Indiana Attorney General
-> *   **[IN_AG_Violation_Excerpt.md](content\04_REGULATORS\30_State\20_AG_Indiana\IN_AG_Violation_Excerpt.md)**: actor: INDIANAG
-> *   **[Indiana_AG_Complaint_Narrative.md](content\04_REGULATORS\30_State\20_AG_Indiana\Indiana_AG_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[MANIFEST_IN_AG_Complaint_Packet.md](content\04_REGULATORS\30_State\20_AG_Indiana\MANIFEST_IN_AG_Complaint_Packet.md)**: title: MANIFEST - Indiana AG Complaint Packet
-> *   **[_20_AG_Indiana.md](content\04_REGULATORS\30_State\20_AG_Indiana\_20_AG_Indiana.md)**: Index of 20_AG_Indiana
-> 
-> ### 📂 content\04_REGULATORS\30_State\25_IN_DFI
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\25_IN_DFI\Cover_Letter.md)**: date: 2026-01-27
-> *   **[IN_DFI_Violation_Excerpt.md](content\04_REGULATORS\30_State\25_IN_DFI\IN_DFI_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: IN_DFI"
-> *   **[Indiana_DFI_Complaint_Narrative.md](content\04_REGULATORS\30_State\25_IN_DFI\Indiana_DFI_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md](content\04_REGULATORS\30_State\25_IN_DFI\Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md)**: title: Matrix Excerpt – Indiana Department of Financial Institutions (DFI)
-> *   **[MANIFEST_Indiana_DFI_Packet.md](content\04_REGULATORS\30_State\25_IN_DFI\MANIFEST_Indiana_DFI_Packet.md)**: title: "PACKET MANIFEST: INDIANA DFI REGULATORY COMPLAINT"
-> *   **[_25_IN_DFI.md](content\04_REGULATORS\30_State\25_IN_DFI\_25_IN_DFI.md)**: Index of 25_IN_DFI
-> 
-> ### 📂 content\04_REGULATORS\30_State\55_IN_Civil_Rights
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Cover_Letter.md)**: date: 2026-01-27
-> *   **[ICRC_Violation_Excerpt.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\ICRC_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: ICRC"
-> *   **[Indiana_Civil_Rights_Commission_Violation_Excerpt.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Indiana_Civil_Rights_Commission_Violation_Excerpt.md)**: title: Matrix Excerpt – Indiana Civil Rights Commission
-> *   **[Indiana_Civil_Rights_Complaint_Narrative.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Indiana_Civil_Rights_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[MANIFEST_ICRC_Complaint_Packet.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\MANIFEST_ICRC_Complaint_Packet.md)**: title: "PACKET MANIFEST: INDIANA CIVIL RIGHTS COMMISSION (ICRC)"
-> *   **[_55_IN_Civil_Rights.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\_55_IN_Civil_Rights.md)**: Index of 55_IN_Civil_Rights
-> 
-> ### 📂 content\04_REGULATORS\40_Federal
-> 
-> *   **[_40_Federal.md](content\04_REGULATORS\40_Federal\_40_Federal.md)**: Index of 40_Federal
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\20_CFPB
-> 
-> *   **[CFPB_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[CFPB_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Violation_Excerpt.md)**: title: Matrix Excerpt – CFPB
-> *   **[CFPB_Violation_Excerpt_Master.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Violation_Excerpt_Master.md)**: actor: CFPB
-> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\20_CFPB\Cover_Letter.md)**: date: 2026-01-27
-> *   **[_20_CFPB.md](content\04_REGULATORS\40_Federal\20_CFPB\_20_CFPB.md)**: Index of 20_CFPB
-> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\20_CFPB\_TOC_.md)**: title: PACKET TOC
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\30_NCUA
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\30_NCUA\Cover_Letter.md)**: title: COVER LETTER - NCUA Complaint
-> *   **[Exhibit_Manifest.md](content\04_REGULATORS\40_Federal\30_NCUA\Exhibit_Manifest.md)**: title: EXHIBIT MANIFEST - NCUA Complaint Packet
-> *   **[MANIFEST_NCUA_Complaint_Packet.md](content\04_REGULATORS\40_Federal\30_NCUA\MANIFEST_NCUA_Complaint_Packet.md)**: title: "PACKET MANIFEST: NCUA REGULATORY COMPLAINT"
-> *   **[NCUA_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\30_NCUA\NCUA_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[NCUA_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\30_NCUA\NCUA_Violation_Excerpt.md)**: actor: FCFCU
-> *   **[_30_NCUA.md](content\04_REGULATORS\40_Federal\30_NCUA\_30_NCUA.md)**: Index of 30_NCUA
-> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\30_NCUA\_TOC_.md)**: title: NCUA PACKET TOC
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\30_NCUA\_archive
-> 
-> *   **[NCUA_Complaint_Narrative_draft_old.md](content\04_REGULATORS\40_Federal\30_NCUA\_archive\NCUA_Complaint_Narrative_draft_old.md)**: date: 2026-01-27
-> *   **[__archive.md](content\04_REGULATORS\40_Federal\30_NCUA\_archive\__archive.md)**: Index of _archive
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights
-> 
-> *   **[Cover_Letter_DOJ_Supplemental.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\Cover_Letter_DOJ_Supplemental.md)**: date: 2026-01-27
-> *   **[DOJ_Civil_Rights_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Civil_Rights_Violation_Excerpt.md)**: title: Matrix Excerpt – DOJ Civil Rights
-> *   **[DOJ_Civil_Rights_Violation_Excerpt_Master.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Civil_Rights_Violation_Excerpt_Master.md)**: actor: DOJ
-> *   **[DOJ_Supplemental_Continuing_Harm.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Supplemental_Continuing_Harm.md)**: date: 2026-01-27
-> *   **[DOJ_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: DOJ"
-> *   **[_40_DOJ_Civil_Rights.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\_40_DOJ_Civil_Rights.md)**: Index of 40_DOJ_Civil_Rights
-> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\_TOC_.md)**: title: DOJ CIVIL RIGHTS PACKET TOC
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\45_FCC_Telecom
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\Cover_Letter.md)**: date: 2026-01-27
-> *   **[FCC_Harassment_Complaint.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\FCC_Harassment_Complaint.md)**: date: 2026-01-27
-> *   **[FCC_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\FCC_Violation_Excerpt.md)**: title: Matrix Excerpt – FCC
-> *   **[_45_FCC_Telecom.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\_45_FCC_Telecom.md)**: Index of 45_FCC_Telecom
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\50_HUD_FHEO
-> 
-> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\Cover_Letter.md)**: date: 2026-01-27
-> *   **[HUD_FHEO_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\HUD_FHEO_Complaint_Narrative.md)**: date: 2026-01-27
-> *   **[HUD_FHEO_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\HUD_FHEO_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: HUD_FHEO"
-> *   **[MANIFEST_HUD_FHEO_Complaint_Packet.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\MANIFEST_HUD_FHEO_Complaint_Packet.md)**: title: "PACKET MANIFEST: HUD / FHEO DISCRIMINATION COMPLAINT"
-> *   **[_50_HUD_FHEO.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_50_HUD_FHEO.md)**: Index of 50_HUD_FHEO
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive
-> 
-> *   **[HUD_Violation_Excerpt_OLD.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive\HUD_Violation_Excerpt_OLD.md)**: title: Matrix Excerpt – HUD – Fair Housing / FHEO
-> *   **[__archive.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive\__archive.md)**: Index of _archive
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\65_SSA_OIG
-> 
-> *   **[SSA_OIG_Informational_Filing.md](content\04_REGULATORS\40_Federal\65_SSA_OIG\SSA_OIG_Informational_Filing.md)**: date: 2026-01-27
-> *   **[_65_SSA_OIG.md](content\04_REGULATORS\40_Federal\65_SSA_OIG\_65_SSA_OIG.md)**: Index of 65_SSA_OIG
-> 
-> ### 📂 content\04_REGULATORS\40_Federal\70_VA_Informational
-> 
-> *   **[VA_Informational_Filing.md](content\04_REGULATORS\40_Federal\70_VA_Informational\VA_Informational_Filing.md)**: date: 2026-01-27
-> *   **[_70_VA_Informational.md](content\04_REGULATORS\40_Federal\70_VA_Informational\_70_VA_Informational.md)**: Index of 70_VA_Informational
-> 
-> ### 📂 content\04_REGULATORS\50_Other
-> 
-> *   **[_50_Other.md](content\04_REGULATORS\50_Other\_50_Other.md)**: Index of 50_Other
-> 
-> ### 📂 content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact
-> 
-> *   **[CMS_Informational_Complaint.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\CMS_Informational_Complaint.md)**: date: 2026-01-27
-> *   **[_60_CMS_Caretaker_Impact.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\_60_CMS_Caretaker_Impact.md)**: Index of 60_CMS_Caretaker_Impact
-> *   **[_TOC_.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\_TOC_.md)**: title: CMS / CARETAKER IMPACT PACKET TOC
-> 
-> ### 📂 content\05_LITIGATION
-> 
-> *   **[PHASE_04_Litigation_and_Settlement.md](content\05_LITIGATION\PHASE_04_Litigation_and_Settlement.md)**: type: phase
-> *   **[_05_LITIGATION.md](content\05_LITIGATION\_05_LITIGATION.md)**: Index of 05_LITIGATION
-> *   **[_TOC_.md](content\05_LITIGATION\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\05_LITIGATION\00_Intake
-> 
-> *   **[Litigation_Decision_Tree.md](content\05_LITIGATION\00_Intake\Litigation_Decision_Tree.md)**: title: "DECISION TREE: FCFCU SETTLEMENT & ENFORCEMENT"
-> *   **[Master_Timeline_Strategy_Summary.md](content\05_LITIGATION\00_Intake\Master_Timeline_Strategy_Summary.md)**: title: "PHASE 0: PRE-LITIGATION & TELECOM HARASSMENT (2023 - JAN 2024)"
-> *   **[NT_Attorney_Intake_Packet_Executive.md](content\05_LITIGATION\00_Intake\NT_Attorney_Intake_Packet_Executive.md)**: title: Attorney Intake Packet (Executive Summary)
-> *   **[NT_Attorney_Intake_Summary.md](content\05_LITIGATION\00_Intake\NT_Attorney_Intake_Summary.md)**: title: "Attorney Intake Summary: FCFCU Violation of Rights"
-> *   **[NT_Damages_Matrix_Ab_Initio.md](content\05_LITIGATION\00_Intake\NT_Damages_Matrix_Ab_Initio.md)**: title: "FCFCU / MARION COUNTY SHERIFF: DAMAGES & HARM MATRIX (AB INITIO → PRESENT)"
-> *   **[NT_Forensic_Accounting_Audit_Summary.md](content\05_LITIGATION\00_Intake\NT_Forensic_Accounting_Audit_Summary.md)**: title: "FORENSIC AUDIT: Mortgage Accounting & Sale Discrepancies"
-> *   **[NT_INTERNAL VALUATION MEMO.md](content\05_LITIGATION\00_Intake\NT_INTERNAL VALUATION MEMO.md)**: case_slug: CASE_FCFCU
-> *   **[NT_LEGAL MEMORANDUM.md](content\05_LITIGATION\00_Intake\NT_LEGAL MEMORANDUM.md)**: title: NT_LEGAL MEMORANDUM
-> *   **[NT_Monetary_Exposure_Estimate.md](content\05_LITIGATION\00_Intake\NT_Monetary_Exposure_Estimate.md)**: title: MONETARY EXPOSURE & DAMAGES ESTIMATE
-> *   **[NT_Procedural_failure_map_one_pager.md](content\05_LITIGATION\00_Intake\NT_Procedural_failure_map_one_pager.md)**: title: Procedural Failure Map (One-Pager)
-> *   **[NT_Violation_Remedy_Inventory.md](content\05_LITIGATION\00_Intake\NT_Violation_Remedy_Inventory.md)**: title: NT_Violation_Remedy_Inventory
-> *   **[_00_Intake.md](content\05_LITIGATION\00_Intake\_00_Intake.md)**: Index of 00_Intake
-> 
-> ### 📂 content\05_LITIGATION\30_demand_letters
-> 
-> *   **[NT_Demand_Ready_Exposure_Summary.md](content\05_LITIGATION\30_demand_letters\NT_Demand_Ready_Exposure_Summary.md)**: title: "Settlement Demand Support: Exposure Summary"
-> *   **[Notice_of_Evidence_Preservation.md](content\05_LITIGATION\30_demand_letters\Notice_of_Evidence_Preservation.md)**: title: NOTICE OF EVIDENCE PRESERVATION / SPOLIATION WARNING
-> *   **[_30_demand_letters.md](content\05_LITIGATION\30_demand_letters\_30_demand_letters.md)**: Index of 30_demand_letters
-> 
-> ### 📂 content\05_LITIGATION\40_opposing_counsel
-> 
-> *   **[_40_opposing_counsel.md](content\05_LITIGATION\40_opposing_counsel\_40_opposing_counsel.md)**: Index of 40_opposing_counsel
-> 
-> ### 📂 content\05_LITIGATION\50_draft_pleadings
-> 
-> *   **[_50_draft_pleadings.md](content\05_LITIGATION\50_draft_pleadings\_50_draft_pleadings.md)**: Index of 50_draft_pleadings
-> 
-> ### 📂 content\05_LITIGATION\60_output
-> 
-> *   **[_60_output.md](content\05_LITIGATION\60_output\_60_output.md)**: Index of 60_output
-> 
-> ### 📂 content\05_LITIGATION\60_output\10_filings
-> 
-> *   **[_10_filings.md](content\05_LITIGATION\60_output\10_filings\_10_filings.md)**: Index of 10_filings
-> 
-> ### 📂 content\05_LITIGATION\60_output\20_orders
-> 
-> *   **[_20_orders.md](content\05_LITIGATION\60_output\20_orders\_20_orders.md)**: Index of 20_orders
-> 
-> ### 📂 content\05_LITIGATION\60_output\30_packets
-> 
-> *   **[_30_packets.md](content\05_LITIGATION\60_output\30_packets\_30_packets.md)**: Index of 30_packets
-> 
-> ### 📂 content\05_LITIGATION\60_output\40_motions
-> 
-> *   **[_40_motions.md](content\05_LITIGATION\60_output\40_motions\_40_motions.md)**: Index of 40_motions
-> 
-> ### 📂 content\05_LITIGATION\60_output\50_letters
-> 
-> *   **[_50_letters.md](content\05_LITIGATION\60_output\50_letters\_50_letters.md)**: Index of 50_letters
-> 
-> ### 📂 content\05_LITIGATION\70_hearings
-> 
-> *   **[_70_hearings.md](content\05_LITIGATION\70_hearings\_70_hearings.md)**: Index of 70_hearings
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE
-> 
-> *   **[06_PUBLIC_PRESSURE.md](content\06_PUBLIC_PRESSURE\06_PUBLIC_PRESSURE.md)**: title: 06_PUBLIC_PRESSURE
-> *   **[PHASE_05_Nuclear.md](content\06_PUBLIC_PRESSURE\PHASE_05_Nuclear.md)**: type: phase
-> *   **[_06_PUBLIC_PRESSURE.md](content\06_PUBLIC_PRESSURE\_06_PUBLIC_PRESSURE.md)**: Index of 06_PUBLIC_PRESSURE
-> *   **[_TOC_.md](content\06_PUBLIC_PRESSURE\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\10_inbox
-> 
-> *   **[_10_inbox.md](content\06_PUBLIC_PRESSURE\10_inbox\_10_inbox.md)**: Index of 10_inbox
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\20_social_media
-> 
-> *   **[2025-12-15_they_threw_us_into_the_cold.md](content\06_PUBLIC_PRESSURE\20_social_media\2025-12-15_they_threw_us_into_the_cold.md)**: title: They Threw Us Into the Cold
-> *   **[_20_social_media.md](content\06_PUBLIC_PRESSURE\20_social_media\_20_social_media.md)**: Index of 20_social_media
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\30_legislative_outreach
-> 
-> *   **[_30_legislative_outreach.md](content\06_PUBLIC_PRESSURE\30_legislative_outreach\_30_legislative_outreach.md)**: Index of 30_legislative_outreach
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\40_public_record_dumps
-> 
-> *   **[_40_public_record_dumps.md](content\06_PUBLIC_PRESSURE\40_public_record_dumps\_40_public_record_dumps.md)**: Index of 40_public_record_dumps
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\50_press_kits
-> 
-> *   **[_50_press_kits.md](content\06_PUBLIC_PRESSURE\50_press_kits\_50_press_kits.md)**: Index of 50_press_kits
-> 
-> ### 📂 content\06_PUBLIC_PRESSURE\60_news_media
-> 
-> *   **[_60_news_media.md](content\06_PUBLIC_PRESSURE\60_news_media\_60_news_media.md)**: Index of 60_news_media
-> 
-> ### 📂 content\07_HOTEL_DISPUTE
-> 
-> *   **[07_HOTEL_DISPUTE.md](content\07_HOTEL_DISPUTE\07_HOTEL_DISPUTE.md)**: title: 07_HOTEL_DISPUTE
-> *   **[_07_HOTEL_DISPUTE.md](content\07_HOTEL_DISPUTE\_07_HOTEL_DISPUTE.md)**: Index of 07_HOTEL_DISPUTE
-> *   **[_TOC_.md](content\07_HOTEL_DISPUTE\_TOC_.md)**: toc: true
-> 
-> ### 📂 content\07_HOTEL_DISPUTE\10_Service_Animal_Notice
-> 
-> *   **[Gigi_Documentation_Pack.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\Gigi_Documentation_Pack.md)**: title: "📂 GIGI: SUPPLEMENTAL DOCUMENTATION PACK"
-> *   **[Gigi_Service_Dog_Training_Manual.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\Gigi_Service_Dog_Training_Manual.md)**: title: "📘 GIGI: CERTIFIED SERVICE DOG TRAINING MANUAL"
-> *   **[_10_Service_Animal_Notice.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\_10_Service_Animal_Notice.md)**: Index of 10_Service_Animal_Notice
-> 
-> ### 📂 content\07_HOTEL_DISPUTE\20_Habitability
-> 
-> *   **[Demand_Notice_and_Ledger.md](content\07_HOTEL_DISPUTE\20_Habitability\Demand_Notice_and_Ledger.md)**: title: 1. Notice of Habitability & Maintenance Issues
-> *   **[Narrative_Room_Conditions.md](content\07_HOTEL_DISPUTE\20_Habitability\Narrative_Room_Conditions.md)**: title: "OCCUPANT'S STATEMENT: ROOM CONDITIONS & MAINTENANCE LOG (ROOM 155)"
-> *   **[_20_Habitability.md](content\07_HOTEL_DISPUTE\20_Habitability\_20_Habitability.md)**: Index of 20_Habitability
-> 
-> ### 📂 content\_infio_prompts
-> 
-> *   **[__infio_prompts.md](content\_infio_prompts\__infio_prompts.md)**: Index of _infio_prompts
-> 
-> ### 📂 scripts
-> 
-> *   **[binder_builder.py](scripts\binder_builder.py)**: import os
-> 
-> ### 📂 scripts\maintenance
-> 
-> *   **[ensure_path_length.py](scripts\maintenance\ensure_path_length.py)**: import os
-> *   **[generate_content_dump.py](scripts\maintenance\generate_content_dump.py)**: #!/usr/bin/env python3
-> *   **[generate_folder_indexes.py](scripts\maintenance\generate_folder_indexes.py)**: import os
-> 
-> ### 📂 scripts\ops
-> 
-> *   **[build_indexes.py](scripts\ops\build_indexes.py)**: #!/usr/bin/env python3
-> *   **[case_master.py](scripts\ops\case_master.py)**: import os
-> *   **[clean_and_enrich_timeline.py](scripts\ops\clean_and_enrich_timeline.py)**: import os
-> *   **[enrich_timeline.py](scripts\ops\enrich_timeline.py)**: import os
-> *   **[generate_envelope_seeds.py](scripts\ops\generate_envelope_seeds.py)**: import json
-> *   **[generate_obsidian_tree.py](scripts\ops\generate_obsidian_tree.py)**: import os
-> *   **[generate_supabase_seed.py](scripts\ops\generate_supabase_seed.py)**: import csv
-> *   **[generate_supabase_seed_csvs.py](scripts\ops\generate_supabase_seed_csvs.py)**: import csv
-> *   **[ingest_evidence.py](scripts\ops\ingest_evidence.py)**: import os
-> *   **[parse_envelopes.py](scripts\ops\parse_envelopes.py)**: import json
-> *   **[pull_from_paperless.py](scripts\ops\pull_from_paperless.py)**: import urllib.request
-> 
-> ### 📂 scripts\vis
-> 
+> heres teh most recent update. ## V. COMPREHENSIVE FILE SUMMARIES
+
+> 
+
+> *   **[CONTENT_EXPORT_DUMP.md](CONTENT_EXPORT_DUMP.md)**: 📗 CORE CONTENT EXPORT DUMP
+
+> *   **[README_BINDER.md](README_BINDER.md)**: Build Binder Script Usage
+
+> *   **[build_binder.py](build_binder.py)**: import os
+
+> *   **[envelopes_data.txt](envelopes_data.txt)**: No description available.
+
+> *   **[extract_placeholders.py](extract_placeholders.py)**: import os
+
+> *   **[file_inventory_final.csv](file_inventory_final.csv)**: ﻿"FullFilePath","FileType","Title","First1000Chars","DateCreated","LastModified","SizeKB","Hash"
+
+> *   **[generate_file_summaries.py](generate_file_summaries.py)**: import os
+
+> 
+
+> ### 📂 content
+
+> 
+
+> *   **[000_MASTER_INDEX.md](content\000_MASTER_INDEX.md)**: Master Index of All Folders
+
+> *   **[_TOC_.md](content\_TOC_.md)**: toc: true
+
+> *   **[_content.md](content\_content.md)**: Index of content
+
+> 
+
+> ### 📂 content\.infio_json_db
+
+> 
+
+> 
+
+> ### 📂 content\.infio_json_db\chats
+
+> 
+
+> 
+
+> ### 📂 content\.infio_json_db\commands
+
+> 
+
+> 
+
+> ### 📂 content\.infio_json_db\convert_data
+
+> 
+
+> 
+
+> ### 📂 content\.infio_json_db\custom_modes
+
+> 
+
+> 
+
+> ### 📂 content\.infio_json_db\workspaces
+
+> 
+
+> 
+
+> ### 📂 content\00_COCKPIT
+
+> 
+
+> *   **[00_COCKPIT.md](content\00_COCKPIT\00_COCKPIT.md)**: No description available.
+
+> *   **[_00_COCKPIT.md](content\00_COCKPIT\_00_COCKPIT.md)**: Index of 00_COCKPIT
+
+> *   **[_TOC_.md](content\00_COCKPIT\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\00_COCKPIT\01_Case_Master
+
+> 
+
+> *   **[00_CASE_SNAPSHOT_ONE_PAGER.md](content\00_COCKPIT\01_Case_Master\00_CASE_SNAPSHOT_ONE_PAGER.md)**: title: CASE SNAPSHOT & POSTURE ONE-PAGER
+
+> *   **[01_CASE_MASTER.md](content\00_COCKPIT\01_Case_Master\01_CASE_MASTER.md)**: title: "📖 MASTER CASE BIBLE: Analysis, Blueprint & Strategy"
+
+> *   **[03_VIOLATIONS.md](content\00_COCKPIT\01_Case_Master\03_VIOLATIONS.md)**: date: 2026-01-25
+
+> *   **[05_VALUATION.md](content\00_COCKPIT\01_Case_Master\05_VALUATION.md)**: date: 2026-01-25
+
+> *   **[06_CHECKLIST.md](content\00_COCKPIT\01_Case_Master\06_CHECKLIST.md)**: title: "🚀 MASTER CASE CHECKLIST: Phases, Filings & Evidence Inventory"
+
+> *   **[07_PRINT_PLAN.md](content\00_COCKPIT\01_Case_Master\07_PRINT_PLAN.md)**: title: PRINT PLAN
+
+> *   **[_01_Case_Master.md](content\00_COCKPIT\01_Case_Master\_01_Case_Master.md)**: Index of 01_Case_Master
+
+> 
+
+> ### 📂 content\00_COCKPIT\01_Case_Master\Strategy_Files
+
+> 
+
+> *   **[NT_Refined_Settlement_Exposure_Matrix.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Refined_Settlement_Exposure_Matrix.md)**: title: Settlement Exposure Matrix (Stress-Tested Model)
+
+> *   **[NT_Settlement_Exposure_Spine.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Settlement_Exposure_Spine.md)**: title: Settlement & Exposure Spine (Final - Re-Balanced)
+
+> *   **[NT_Settlement_Logic_Memo_Internal.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\NT_Settlement_Logic_Memo_Internal.md)**: title: "Internal Memo: Settlement Logic and Valuation Rationale"
+
+> *   **[_Strategy_Files.md](content\00_COCKPIT\01_Case_Master\Strategy_Files\_Strategy_Files.md)**: Index of Strategy_Files
+
+> 
+
+> ### 📂 content\00_COCKPIT\01_Case_Master\Trackers
+
+> 
+
+> *   **[NT_01_MASTER_INDEX.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_01_MASTER_INDEX.md)**: case_slug: CASE_FCFCU
+
+> *   **[NT_Accounting_Reconciliation_Matrix_One_Pager.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Accounting_Reconciliation_Matrix_One_Pager.md)**: title: "EXHIBIT: FINANCIAL RECONCILIATION MATRIX"
+
+> *   **[NT_Case_Docket_Checklist.csv](content\00_COCKPIT\01_Case_Master\Trackers\NT_Case_Docket_Checklist.csv)**: Date,Entry_Type,Document_Title,Filed_By,Party_Affected,Key_Details,Potential_Irregularity,Related_La...
+
+> *   **[NT_Contacts.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Contacts.md)**: title: Contacts (Fill-in)
+
+> *   **[NT_Damage_Accounting_Ledger.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Damage_Accounting_Ledger.md)**: tags: [46]
+
+> *   **[NT_Master_Case_Log.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Master_Case_Log.md)**: title: Case Log - FCFCU v. Cody Rice-Velasquez
+
+> *   **[NT_Utility_Exploitation_Log.md](content\00_COCKPIT\01_Case_Master\Trackers\NT_Utility_Exploitation_Log.md)**: tags: [utilities, water_damage, theft_of_service, bad_faith, infrastructure, property_decay]
+
+> *   **[VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_CITYOFIN_MUNICIPAL_2026-01-15-24.md)**: actor: CITYOFIN
+
+> *   **[VIO_COURT_STATUTOR_2025-01-01-34.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_COURT_STATUTOR_2025-01-01-34.md)**: actor: COURT
+
+> *   **[VIO_FCFCU_ADA_2025-01-01-37.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-37.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_ADA_2025-01-01-52.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-52.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_ADA_2025-01-01-55.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-55.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_ADA_2025-01-01-62.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_ADA_2025-01-01-62.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_GENERAL_2025-01-01-12.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_GENERAL_2025-01-01-12.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-11.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-11.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-21.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-21.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-35.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-35.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-36.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-36.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-50.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-50.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-51.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-51.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-54.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-54.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-60.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-60.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-61.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-61.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_PROCEDURAL_2025-01-01-64.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_PROCEDURAL_2025-01-01-64.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-01.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-01.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-04.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-04.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-05.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-05.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-07.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-07.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-08.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-08.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-10.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-10.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-12.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-12.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-14.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-14.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-15.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-15.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-16.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-16.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-17.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-17.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-18.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-18.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-19.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-19.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-22.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-22.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-23.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-23.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-24.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-24.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-25.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-25.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-26.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-26.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-27.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-27.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-57.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-57.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-59.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-59.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-63.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-63.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-65.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-65.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-66.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-66.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_STATUTOR_2025-01-01-67.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_STATUTOR_2025-01-01-67.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2025-01-01-06.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-06.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2025-01-01-09.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-09.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2025-01-01-13.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-13.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2025-01-01-20.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-20.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2025-01-01-58.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2025-01-01-58.md)**: actor: FCFCU
+
+> *   **[VIO_FCFCU_TORT_2026-01-18-95.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_FCFCU_TORT_2026-01-18-95.md)**: actor: FCFCU
+
+> *   **[VIO_HOA_TORT_2026-01-15-22.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_HOA_TORT_2026-01-15-22.md)**: actor: HOA
+
+> *   **[VIO_INDIANAA_STATUTOR_2025-01-01-40.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_INDIANAA_STATUTOR_2025-01-01-40.md)**: actor: INDIANAA
+
+> *   **[VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_PLAINTIF_PROCEDURAL_2026-01-15-34.md)**: actor: PLAINTIF
+
+> *   **[VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_SHERIFF_PROCEDURAL_2025-01-01-56.md)**: actor: SHERIFF
+
+> *   **[VIO_SHERIFF_STATUTOR_2025-01-01-33.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_SHERIFF_STATUTOR_2025-01-01-33.md)**: actor: SHERIFF
+
+> *   **[VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_UNKNOWN_CIVIL_CA_2025-01-01-00.md)**: actor: UNKNOWN
+
+> *   **[VIO_UNKNOWN_GENERAL_2026-01-18-00.md](content\00_COCKPIT\01_Case_Master\Trackers\VIO_UNKNOWN_GENERAL_2026-01-18-00.md)**: actor: UNKNOWN
+
+> *   **[_Trackers.md](content\00_COCKPIT\01_Case_Master\Trackers\_Trackers.md)**: Index of Trackers
+
+> *   **[evidence_index_master.csv](content\00_COCKPIT\01_Case_Master\Trackers\evidence_index_master.csv)**: evidence_id,evidence_type,date,label,source_path,notes
+
+> *   **[financial_transactions_damages.csv](content\00_COCKPIT\01_Case_Master\Trackers\financial_transactions_damages.csv)**: transaction_id,transaction_date,amount,currency,transaction_category,transaction_type,description,re...
+
+> *   **[legal_authority_library.csv](content\00_COCKPIT\01_Case_Master\Trackers\legal_authority_library.csv)**: violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,le...
+
+> *   **[tasks_strategy.csv](content\00_COCKPIT\01_Case_Master\Trackers\tasks_strategy.csv)**: task_id,created_date,source_violation_id,task_type,description,status,notes
+
+> *   **[tasks_strategy.md](content\00_COCKPIT\01_Case_Master\Trackers\tasks_strategy.md)**: title: Tasks Strategy
+
+> *   **[violations_inventory_master.csv](content\00_COCKPIT\01_Case_Master\Trackers\violations_inventory_master.csv)**: violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,le...
+
+> *   **[violations_inventory_master.md](content\00_COCKPIT\01_Case_Master\Trackers\violations_inventory_master.md)**: title: Violations Inventory Master
+
+> 
+
+> ### 📂 content\00_COCKPIT\10_Overview
+
+> 
+
+> *   **[09_Premonitions_I_Knew_Before_I_Knew.md](content\00_COCKPIT\10_Overview\09_Premonitions_I_Knew_Before_I_Knew.md)**: title: Premonitions (Pattern Recognition Log)
+
+> *   **[_10_Overview.md](content\00_COCKPIT\10_Overview\_10_Overview.md)**: Index of 10_Overview
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence
+
+> 
+
+> *   **[_20_evidence.md](content\00_COCKPIT\20_evidence\_20_evidence.md)**: Index of 20_evidence
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\10_Docket
+
+> 
+
+> *   **[_10_Docket.md](content\00_COCKPIT\20_evidence\10_Docket\_10_Docket.md)**: Index of 10_Docket
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors
+
+> 
+
+> *   **[_20_actors.md](content\00_COCKPIT\20_evidence\20_actors\_20_actors.md)**: Index of 20_actors
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu
+
+> 
+
+> *   **[_10_fcfcu.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\_10_fcfcu.md)**: Index of 10_fcfcu
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Appraisal
+
+> 
+
+> *   **[_Appraisal.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Appraisal\_Appraisal.md)**: Index of Appraisal
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Emails
+
+> 
+
+> *   **[_Emails.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Emails\_Emails.md)**: Index of Emails
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters
+
+> 
+
+> *   **[2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md)**: title: FCFCU Hardship and Health Notice Letter Delivery
+
+> *   **[Formal_Retrieval_Protocol_ADA.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\Formal_Retrieval_Protocol_ADA.md)**: title: FORMAL PROTOCOL FOR PROPERTY RETRIEVAL (ADA COMPLIANT)
+
+> *   **[_Letters.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Letters\_Letters.md)**: Index of Letters
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Payments
+
+> 
+
+> *   **[_Payments.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Payments\_Payments.md)**: Index of Payments
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Reports
+
+> 
+
+> *   **[_Reports.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Reports\_Reports.md)**: Index of Reports
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Statements
+
+> 
+
+> *   **[_Statements.md](content\00_COCKPIT\20_evidence\20_actors\10_fcfcu\Statements\_Statements.md)**: Index of Statements
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\20_actors\20_aes
+
+> 
+
+> *   **[2025-12-16_AES_Emergency_Notice.md](content\00_COCKPIT\20_evidence\20_actors\20_aes\2025-12-16_AES_Emergency_Notice.md)**: title: AES Emergency Notice Email (Ready-to-Send)
+
+> *   **[_20_aes.md](content\00_COCKPIT\20_evidence\20_actors\20_aes\_20_aes.md)**: Index of 20_aes
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting
+
+> 
+
+> *   **[_30_supporting.md](content\00_COCKPIT\20_evidence\30_supporting\_30_supporting.md)**: Index of 30_supporting
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\10_photos_video
+
+> 
+
+> *   **[_10_photos_video.md](content\00_COCKPIT\20_evidence\30_supporting\10_photos_video\_10_photos_video.md)**: Index of 10_photos_video
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media
+
+> 
+
+> *   **[_20_multi-media.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\_20_multi-media.md)**: Index of 20_multi-media
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Photos
+
+> 
+
+> *   **[_Photos.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Photos\_Photos.md)**: Index of Photos
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos
+
+> 
+
+> *   **[_Videos.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\_Videos.md)**: Index of Videos
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\12092025-mayberemovalday
+
+> 
+
+> *   **[_12092025-mayberemovalday.md](content\00_COCKPIT\20_evidence\30_supporting\20_multi-media\Videos\12092025-mayberemovalday\_12092025-mayberemovalday.md)**: Index of 12092025-mayberemovalday
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\20_parcel
+
+> 
+
+> *   **[_20_parcel.md](content\00_COCKPIT\20_evidence\30_supporting\20_parcel\_20_parcel.md)**: Index of 20_parcel
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\30_declarations
+
+> 
+
+> *   **[_30_declarations.md](content\00_COCKPIT\20_evidence\30_supporting\30_declarations\_30_declarations.md)**: Index of 30_declarations
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits
+
+> 
+
+> *   **[_40_affidavits.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\_40_affidavits.md)**: Index of 40_affidavits
+
+> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\ada-disability
+
+> 
+
+> *   **[_ada-disability.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\ada-disability\_ada-disability.md)**: Index of ada-disability
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\character
+
+> 
+
+> *   **[_character.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\character\_character.md)**: Index of character
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\community-service
+
+> 
+
+> *   **[_community-service.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\community-service\_community-service.md)**: Index of community-service
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\credibility
+
+> 
+
+> *   **[_credibility.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\credibility\_credibility.md)**: Index of credibility
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\observations
+
+> 
+
+> *   **[_observations.md](content\00_COCKPIT\20_evidence\30_supporting\40_affidavits\observations\_observations.md)**: Index of observations
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\30_supporting\50_records
+
+> 
+
+> *   **[NT_Video_Narration_Log_Removal_Day.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\NT_Video_Narration_Log_Removal_Day.md)**: tags: [33, 16, 18, 19, 20, 46, evidence_narration, property_tampering, bad_faith, ms_abbott, privacy...
+
+> *   **[_50_records.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\_50_records.md)**: Index of 50_records
+
+> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\30_supporting\50_records\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm
+
+> 
+
+> *   **[_40_Exposure_and_Harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\_40_Exposure_and_Harm.md)**: Index of 40_Exposure_and_Harm
+
+> *   **[_TOC_.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\_TOC_.md)**: title: EXPOSURE AND HARM TOC
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\10_property_possession_harms
+
+> 
+
+> *   **[_10_property_possession_harms.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\10_property_possession_harms\_10_property_possession_harms.md)**: Index of 10_property_possession_harms
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm
+
+> 
+
+> *   **[Declaration_Secondary_Displacement_Otis.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Declaration_Secondary_Displacement_Otis.md)**: title: DECLARATION OF CODY RICE-VELASQUEZ REGARDING SECONDARY DISPLACEMENT AND HOUSING INSTABILITY
+
+> *   **[Emergency_Supplemental_Declaration_Consolidated.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Emergency_Supplemental_Declaration_Consolidated.md)**: title: EMERGENCY SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ
+
+> *   **[NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md)**: title: Summary
+
+> *   **[NT_Forced_Relocation_Market_Loss_Memo.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Forced_Relocation_Market_Loss_Memo.md)**: title: "Memorandum: Forced Relocation & Market Loss Analysis"
+
+> *   **[NT_Post_Removal_Artifact_Checklist.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Post_Removal_Artifact_Checklist.md)**: title: CASE ARTIFACT EXHAUSTIVE CHECKLIST
+
+> *   **[NT_Quarantined_Claims_Hold.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\NT_Quarantined_Claims_Hold.md)**: title: Quarantined Claims Hold (High-Risk/Speculative)
+
+> *   **[Supplemental_Declaration_Accounting_Surplus.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Supplemental_Declaration_Accounting_Surplus.md)**: title: SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ
+
+> *   **[Supplemental_Declaration_Cody_DRAFT.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\Supplemental_Declaration_Cody_DRAFT.md)**: title: SUPPLEMENTAL DECLARATION OF CODY RICE-VELASQUEZ IN SUPPORT OF EMERGENCY MOTIONS
+
+> *   **[_20_economic_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\20_economic_harm\_20_economic_harm.md)**: Index of 20_economic_harm
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial
+
+> 
+
+> *   **[NT_Financial_Tracker.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\NT_Financial_Tracker.md)**: title: Financial Tracker - FCFCU Case
+
+> *   **[NT_Payment_Portal_and_Check_History.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\NT_Payment_Portal_and_Check_History.md)**: title: Payment Portal and Check Handling History
+
+> *   **[_30_financial.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\30_financial\_30_financial.md)**: Index of 30_financial
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety
+
+> 
+
+> *   **[_40_health_and_safety.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\_40_health_and_safety.md)**: Index of 40_health_and_safety
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\20_companion_animal_risk
+
+> 
+
+> *   **[_20_companion_animal_risk.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\40_health_and_safety\20_companion_animal_risk\_20_companion_animal_risk.md)**: Index of 20_companion_animal_risk
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm
+
+> 
+
+> *   **[_50_non_economic_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\_50_non_economic_harm.md)**: Index of 50_non_economic_harm
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure
+
+> 
+
+> *   **[PL__Cold_Risk_Report.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure\PL__Cold_Risk_Report.md)**: title: Cold Exposure Risk Summary
+
+> *   **[_cold_exposure.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\50_non_economic_harm\cold_exposure\_cold_exposure.md)**: Index of cold_exposure
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\60_professional_harm
+
+> 
+
+> *   **[_60_professional_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\60_professional_harm\_60_professional_harm.md)**: Index of 60_professional_harm
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\70_remedies_scenarios
+
+> 
+
+> *   **[_70_remedies_scenarios.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\70_remedies_scenarios\_70_remedies_scenarios.md)**: Index of 70_remedies_scenarios
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy
+
+> 
+
+> *   **[NT__Long_Term_Payout_Strategy.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy\NT__Long_Term_Payout_Strategy.md)**: title: Long-Term Payout Strategy – Internal Summary
+
+> *   **[_80_payout_strategy.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\80_payout_strategy\_80_payout_strategy.md)**: Index of 80_payout_strategy
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\90_third_party_harm
+
+> 
+
+> *   **[_90_third_party_harm.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\90_third_party_harm\_90_third_party_harm.md)**: Index of 90_third_party_harm
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Photos_Conditions
+
+> 
+
+> *   **[_Photos_Conditions.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Photos_Conditions\_Photos_Conditions.md)**: Index of Photos_Conditions
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports
+
+> 
+
+> *   **[Cold_Risk_Report.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports\Cold_Risk_Report.md)**: title: Cold Exposure Risk Summary
+
+> *   **[_Weather_Reports.md](content\00_COCKPIT\20_evidence\40_Exposure_and_Harm\Weather_Reports\_Weather_Reports.md)**: Index of Weather_Reports
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery
+
+> 
+
+> *   **[Service_Log.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Service_Log.md)**: title: MASTER SERVICE LOG
+
+> *   **[_60_service_and_delivery.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\_60_service_and_delivery.md)**: Index of 60_service_and_delivery
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals
+
+> 
+
+> *   **[README.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals\README.md)**: title: Email Transmittals
+
+> *   **[_Email_Transmittals.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\Email_Transmittals\_Email_Transmittals.md)**: Index of Email_Transmittals
+
+> 
+
+> ### 📂 content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified
+
+> 
+
+> *   **[README.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified\README.md)**: title: USPS Certified Mail
+
+> *   **[_USPS_Certified.md](content\00_COCKPIT\20_evidence\60_service_and_delivery\USPS_Certified\_USPS_Certified.md)**: Index of USPS_Certified
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates
+
+> 
+
+> *   **[_99_Templates.md](content\00_COCKPIT\99_Templates\_99_Templates.md)**: Index of 99_Templates
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\10_motions
+
+> 
+
+> *   **[_10_motions.md](content\00_COCKPIT\99_Templates\10_motions\_10_motions.md)**: Index of 10_motions
+
+> *   **[_emergency_stay_of_writ.md](content\00_COCKPIT\99_Templates\10_motions\_emergency_stay_of_writ.md)**: title: _emergency_stay_of_writ
+
+> *   **[_vacate_void_judgment.md](content\00_COCKPIT\99_Templates\10_motions\_vacate_void_judgment.md)**: title: _vacate_void_judgment
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\20_affidavits
+
+> 
+
+> *   **[_20_affidavits.md](content\00_COCKPIT\99_Templates\20_affidavits\_20_affidavits.md)**: Index of 20_affidavits
+
+> *   **[_GUIDE_Witness_Instructions.md](content\00_COCKPIT\99_Templates\20_affidavits\_GUIDE_Witness_Instructions.md)**: title: "**Instruction List for Your Witnesses**"
+
+> *   **[__ADA_Disability_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__ADA_Disability_Affidavit.md)**: title: "**ADA / DISABILITY AFFIDAVIT**"
+
+> *   **[__Character_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Character_Affidavit.md)**: title: "**AFFIDAVIT OF CHARACTER**"
+
+> *   **[__Community_Service_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Community_Service_Affidavit.md)**: title: "**AFFIDAVIT OF COMMUNITY SERVICE**"
+
+> *   **[__Credibility_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Credibility_Affidavit.md)**: title: "**AFFIDAVIT OF CREDIBILITY**"
+
+> *   **[__Gender_Identity_Clarification.md](content\00_COCKPIT\99_Templates\20_affidavits\__Gender_Identity_Clarification.md)**: title: Gender Identity Clarification for Court Proceedings
+
+> *   **[__Observations_Affidavit.md](content\00_COCKPIT\99_Templates\20_affidavits\__Observations_Affidavit.md)**: title: "**AFFIDAVIT OF OBSERVATIONS**"
+
+> *   **[__updated_affidavit_language.md](content\00_COCKPIT\99_Templates\20_affidavits\__updated_affidavit_language.md)**: title: __updated_affidavit_language
+
+> *   **[__verified_affidavit_of_defendant.md](content\00_COCKPIT\99_Templates\20_affidavits\__verified_affidavit_of_defendant.md)**: title: __verified_affidavit_of_defendant
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\40_exhibits
+
+> 
+
+> *   **[_40_exhibits.md](content\00_COCKPIT\99_Templates\40_exhibits\_40_exhibits.md)**: Index of 40_exhibits
+
+> *   **[_Exhibits_Lists.md](content\00_COCKPIT\99_Templates\40_exhibits\_Exhibits_Lists.md)**: title: "**IN THE MARION SUPERIOR COURT 3**"
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\50_orders
+
+> 
+
+> *   **[_50_orders.md](content\00_COCKPIT\99_Templates\50_orders\_50_orders.md)**: Index of 50_orders
+
+> *   **[_Proposed_Order.md](content\00_COCKPIT\99_Templates\50_orders\_Proposed_Order.md)**: title: _Proposed_Order
+
+> *   **[_proposed_order_emergency_stay.md](content\00_COCKPIT\99_Templates\50_orders\_proposed_order_emergency_stay.md)**: title: _proposed_order_emergency_stay
+
+> *   **[_proposed_order_motion_to_vacate.md](content\00_COCKPIT\99_Templates\50_orders\_proposed_order_motion_to_vacate.md)**: title: _proposed_order_motion_to_vacate
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\60_packets
+
+> 
+
+> *   **[2026-01-19_attorney_intake_packet_executive.md](content\00_COCKPIT\99_Templates\60_packets\2026-01-19_attorney_intake_packet_executive.md)**: date: 2026-01-19
+
+> *   **[NT_TEMPLATE_Handup_Packet_Note.md](content\00_COCKPIT\99_Templates\60_packets\NT_TEMPLATE_Handup_Packet_Note.md)**: title: HAND-UP PACKET — {{PACKET_NAME}}
+
+> *   **[NT_TEMPLATE_ada_packet.md](content\00_COCKPIT\99_Templates\60_packets\NT_TEMPLATE_ada_packet.md)**: title: NT_TEMPLATE_ada_packet
+
+> *   **[_60_packets.md](content\00_COCKPIT\99_Templates\60_packets\_60_packets.md)**: Index of 60_packets
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\70_outreach
+
+> 
+
+> *   **[NT_TEMPLATE_Advocate_Outreach.md](content\00_COCKPIT\99_Templates\70_outreach\NT_TEMPLATE_Advocate_Outreach.md)**: title: Advocate Outreach Message and Bullet-Point Overview
+
+> *   **[NT_TEMPLATE_attorney_brief.md](content\00_COCKPIT\99_Templates\70_outreach\NT_TEMPLATE_attorney_brief.md)**: title: Attorney Intake – Emergency Relief & Settlement (One Page)
+
+> *   **[WI8.01.010__2025-12-15_they_threw_us_into_the_c.md](content\00_COCKPIT\99_Templates\70_outreach\WI8.01.010__2025-12-15_they_threw_us_into_the_c.md)**: title: They Threw Us Into the Cold
+
+> *   **[_70_outreach.md](content\00_COCKPIT\99_Templates\70_outreach\_70_outreach.md)**: Index of 70_outreach
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\80_binders
+
+> 
+
+> *   **[NT_TEMPLATE_Section_Cover.md](content\00_COCKPIT\99_Templates\80_binders\NT_TEMPLATE_Section_Cover.md)**: title: "{{CODE}} — {{TAB}} (Section Cover)"
+
+> *   **[NT_TEMPLATE_Section_Index.md](content\00_COCKPIT\99_Templates\80_binders\NT_TEMPLATE_Section_Index.md)**: title: "{{CODE}} — {{TAB}} (Index)"
+
+> *   **[_80_binders.md](content\00_COCKPIT\99_Templates\80_binders\_80_binders.md)**: Index of 80_binders
+
+> 
+
+> ### 📂 content\00_COCKPIT\99_Templates\90_internal
+
+> 
+
+> *   **[_90_internal.md](content\00_COCKPIT\99_Templates\90_internal\_90_internal.md)**: Index of 90_internal
+
+> *   **[_Court_Doc.md](content\00_COCKPIT\99_Templates\90_internal\_Court_Doc.md)**: title: "{{CODE}} — {{TITLE}}"
+
+> *   **[_TOC_.md](content\00_COCKPIT\99_Templates\90_internal\_TOC_.md)**: toc: true
+
+> *   **[_Timeline_Event.md](content\00_COCKPIT\99_Templates\90_internal\_Timeline_Event.md)**: case_slug: CASE_FCFCU
+
+> *   **[_Violation_Entry.md](content\00_COCKPIT\99_Templates\90_internal\_Violation_Entry.md)**: id: V-000
+
+> *   **[_script_call_lawyers.md](content\00_COCKPIT\99_Templates\90_internal\_script_call_lawyers.md)**: title: _script_call_lawyers
+
+> *   **[_settlement_letter_draft.md](content\00_COCKPIT\99_Templates\90_internal\_settlement_letter_draft.md)**: date: 2026-01-19
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE
+
+> 
+
+> *   **[01_phase_foreclosure.md](content\01_PHASE_FORECLOSURE\01_phase_foreclosure.md)**: type: phase
+
+> *   **[_01_PHASE_FORECLOSURE.md](content\01_PHASE_FORECLOSURE\_01_PHASE_FORECLOSURE.md)**: Index of 01_PHASE_FORECLOSURE
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output
+
+> 
+
+> *   **[_01_phase_output.md](content\01_PHASE_FORECLOSURE\01_phase_output\_01_phase_output.md)**: Index of 01_phase_output
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\10_proposed
+
+> 
+
+> *   **[_10_proposed.md](content\01_PHASE_FORECLOSURE\01_phase_output\10_proposed\_10_proposed.md)**: Index of 10_proposed
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment
+
+> 
+
+> *   **[_2025-01-09_hearing_void_judgment.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\_2025-01-09_hearing_void_judgment.md)**: Index of 2025-01-09_hearing_void_judgment
+
+> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing
+
+> 
+
+> *   **[COURT_MODE_BUTTONS.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\COURT_MODE_BUTTONS.md)**: title: 🟦 COURT MODE — TAP A BUTTON
+
+> *   **[HEARING CHEAT SHEET.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\HEARING CHEAT SHEET.md)**: title: HEARING CHEAT SHEET
+
+> *   **[_2025-01-09_hearing.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\_2025-01-09_hearing.md)**: Index of 2025-01-09_hearing
+
+> *   **[_COURT_MODE_PLAYBOOK.md](content\01_PHASE_FORECLOSURE\01_phase_output\2025-01-09_hearing_void_judgment\2025-01-09_hearing\_COURT_MODE_PLAYBOOK.md)**: title: COURT MODE — Button Bot (No Audio)
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits
+
+> 
+
+> *   **[_20_exhibits.md](content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_20_exhibits.md)**: Index of 20_exhibits
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_A-H_initial
+
+> 
+
+> *   **[__A-H_initial.md](content\01_PHASE_FORECLOSURE\01_phase_output\20_exhibits\_A-H_initial\__A-H_initial.md)**: Index of _A-H_initial
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\30_motions
+
+> 
+
+> *   **[MO_motion_emergency_stay_of_writ.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_emergency_stay_of_writ.md)**: title: MO_motion_emergency_stay_of_writ
+
+> *   **[MO_motion_emergency_supplemental_motion_ongoing_ha.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_emergency_supplemental_motion_ongoing_ha.md)**: title: Motion Emergency Supplemental Motion Ongoing Harm
+
+> *   **[MO_motion_to_vacate_void_judgment.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_motion_to_vacate_void_judgment.md)**: title: MO_motion_to_vacate_void_judgment
+
+> *   **[MO_proposed_order_motion_to_vacate.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\MO_proposed_order_motion_to_vacate.md)**: title: MO_proposed_order_motion_to_vacate
+
+> *   **[_30_motions.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\_30_motions.md)**: Index of 30_motions
+
+> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\30_motions\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\40_orders
+
+> 
+
+> *   **[_40_orders.md](content\01_PHASE_FORECLOSURE\01_phase_output\40_orders\_40_orders.md)**: Index of 40_orders
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes
+
+> 
+
+> *   **[_90_Filed_Envelopes.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\_90_Filed_Envelopes.md)**: Index of 90_Filed_Envelopes
+
+> *   **[_TOC_.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\10_2025-12-10_motion_vacate
+
+> 
+
+> *   **[_10_2025-12-10_motion_vacate.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\10_2025-12-10_motion_vacate\_10_2025-12-10_motion_vacate.md)**: Index of 10_2025-12-10_motion_vacate
+
+> 
+
+> ### 📂 content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\20_2025-12-11_Supplemental_Emergency_Motion_Access
+
+> 
+
+> *   **[_20_2025-12-11_Supplemental_Emergency_Motion_Access.md](content\01_PHASE_FORECLOSURE\01_phase_output\90_Filed_Envelopes\20_2025-12-11_Supplemental_Emergency_Motion_Access\_20_2025-12-11_Supplemental_Emergency_Motion_Access.md)**: Index of 20_2025-12-11_Supplemental_Emergency_Motion_Access
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION
+
+> 
+
+> *   **[Phase_02_Overview.md](content\02_PHASE_PRESERVATION\Phase_02_Overview.md)**: title: "PHASE 01.5 OVERVIEW: EVIDENCE PRESERVATION"
+
+> *   **[_02_PHASE_PRESERVATION.md](content\02_PHASE_PRESERVATION\_02_PHASE_PRESERVATION.md)**: Index of 02_PHASE_PRESERVATION
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\10_scope_definitions
+
+> 
+
+> *   **[Evidence_Categories_and_Sources.md](content\02_PHASE_PRESERVATION\10_scope_definitions\Evidence_Categories_and_Sources.md)**: title: EVIDENCE CATEGORIES AND SOURCES
+
+> *   **[Utility_and_Ownership_Record_Scope.md](content\02_PHASE_PRESERVATION\10_scope_definitions\Utility_and_Ownership_Record_Scope.md)**: title: UTILITY AND OWNERSHIP RECORD SCOPE
+
+> *   **[_10_scope_definitions.md](content\02_PHASE_PRESERVATION\10_scope_definitions\_10_scope_definitions.md)**: Index of 10_scope_definitions
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\20_spoliation_risk
+
+> 
+
+> *   **[Adverse_Inference_Triggers.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Adverse_Inference_Triggers.md)**: title: ADVERSE INFERENCE TRIGGERS
+
+> *   **[Housing_Harm_Ledger.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Housing_Harm_Ledger.md)**: title: HOUSING HARM LEDGER (FCRA ACTUAL DAMAGES LOG)
+
+> *   **[Spoliation_Legal_Framework.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Spoliation_Legal_Framework.md)**: title: SPOLIATION LEGAL FRAMEWORK
+
+> *   **[Spoliation_Risk_Register.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\Spoliation_Risk_Register.md)**: title: SPOLIATION RISK REGISTER
+
+> *   **[_20_spoliation_risk.md](content\02_PHASE_PRESERVATION\20_spoliation_risk\_20_spoliation_risk.md)**: Index of 20_spoliation_risk
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\30_preservation_notices
+
+> 
+
+> *   **[Notice_of_Evidence_Preservation.md](content\02_PHASE_PRESERVATION\30_preservation_notices\Notice_of_Evidence_Preservation.md)**: title: NOTICE OF EVIDENCE PRESERVATION (LITIGATION HOLD)
+
+> *   **[PHASE_01_5_Evidence_Preservation.md](content\02_PHASE_PRESERVATION\30_preservation_notices\PHASE_01_5_Evidence_Preservation.md)**: title: PHASE 01.5 — EVIDENCE PRESERVATION & SPOLIATION
+
+> *   **[Service_Log.md](content\02_PHASE_PRESERVATION\30_preservation_notices\Service_Log.md)**: title: SERVICE LOG - EVIDENCE PRESERVATION NOTICES
+
+> *   **[_30_preservation_notices.md](content\02_PHASE_PRESERVATION\30_preservation_notices\_30_preservation_notices.md)**: Index of 30_preservation_notices
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\40_output
+
+> 
+
+> *   **[_40_output.md](content\02_PHASE_PRESERVATION\40_output\_40_output.md)**: Index of 40_output
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\40_output\10_letters
+
+> 
+
+> *   **[Evidence_Preservation_Cover_Letter.md](content\02_PHASE_PRESERVATION\40_output\10_letters\Evidence_Preservation_Cover_Letter.md)**: title: FORMAL NOTICE OF EVIDENCE PRESERVATION AND MANDATORY LITIGATION HOLD
+
+> *   **[_10_letters.md](content\02_PHASE_PRESERVATION\40_output\10_letters\_10_letters.md)**: Index of 10_letters
+
+> 
+
+> ### 📂 content\02_PHASE_PRESERVATION\40_output\20_packets
+
+> 
+
+> *   **[Evidence_Preservation_Packet_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Evidence_Preservation_Packet_Index.md)**: title: EVIDENCE PRESERVATION PACKET INDEX
+
+> *   **[Harm_Matrix_and_Timeline_Summary.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Harm_Matrix_and_Timeline_Summary.md)**: title: "MASTER TIMELINE & HARM MATRIX: FCFCU v. CODY RV"
+
+> *   **[MASTER_DISPATCH_CHECKLIST.md](content\02_PHASE_PRESERVATION\40_output\20_packets\MASTER_DISPATCH_CHECKLIST.md)**: title: 'MASTER PRINT & DISPATCH CHECKLIST: THE "ENFORCEMENT PACKET"'
+
+> *   **[MASTER_OPERATIONAL_INDEX.md](content\02_PHASE_PRESERVATION\40_output\20_packets\MASTER_OPERATIONAL_INDEX.md)**: title: "MASTER PACKET INDEX: EXECUTION & DISPATCH (2026-01-27)"
+
+> *   **[Master_Exhibit_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Master_Exhibit_Index.md)**: title: "MASTER EXHIBIT INDEX: CREDIT RECOVERY & REGULATORY PRESSURE"
+
+> *   **[Phase_01_5_Execution_Checklist.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Phase_01_5_Execution_Checklist.md)**: title: Phase 01.5 Execution Checklist
+
+> *   **[Phase_01_5_Preservation_Packet_Cover_Sheet.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Phase_01_5_Preservation_Packet_Cover_Sheet.md)**: title: Phase 01.5 Preservation Packet – Cover Sheet
+
+> *   **[Service_Packet_Index.md](content\02_PHASE_PRESERVATION\40_output\20_packets\Service_Packet_Index.md)**: title: "DISPATCH PACKET: EVIDENCE PRESERVATION (JAN 27 2026)"
+
+> *   **[_20_packets.md](content\02_PHASE_PRESERVATION\40_output\20_packets\_20_packets.md)**: Index of 20_packets
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA
+
+> 
+
+> *   **[Equifax_Violation_Excerpt.md](content\03_CREDIT_FCRA\Equifax_Violation_Excerpt.md)**: actor: EQUIFAX
+
+> *   **[Experian_Violation_Excerpt.md](content\03_CREDIT_FCRA\Experian_Violation_Excerpt.md)**: actor: EXPERIAN
+
+> *   **[PHASE_02_Credit_FCRA.md](content\03_CREDIT_FCRA\PHASE_02_Credit_FCRA.md)**: type: phase
+
+> *   **[TransUnion_Violation_Excerpt.md](content\03_CREDIT_FCRA\TransUnion_Violation_Excerpt.md)**: actor: TRANSUNION
+
+> *   **[_03_CREDIT_FCRA.md](content\03_CREDIT_FCRA\_03_CREDIT_FCRA.md)**: Index of 03_CREDIT_FCRA
+
+> *   **[_TOC_.md](content\03_CREDIT_FCRA\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\10_credit_reports
+
+> 
+
+> *   **[MANIFEST_Credit_Bureau_Dispute_Packet.md](content\03_CREDIT_FCRA\10_credit_reports\MANIFEST_Credit_Bureau_Dispute_Packet.md)**: title: "PACKET MANIFEST: CREDIT BUREAU DISPUTE (EXPERIAN/EQUIFAX/TRANSUNION)"
+
+> *   **[_10_credit_reports.md](content\03_CREDIT_FCRA\10_credit_reports\_10_credit_reports.md)**: Index of 10_credit_reports
+
+> *   **[_TOC_.md](content\03_CREDIT_FCRA\10_credit_reports\_TOC_.md)**: title: CREDIT REPORT INTAKE TOC
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Equifax
+
+> 
+
+> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Equifax\README.md)**: title: Equifax Reports Repository
+
+> *   **[_Equifax.md](content\03_CREDIT_FCRA\10_credit_reports\Equifax\_Equifax.md)**: Index of Equifax
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Experian
+
+> 
+
+> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Experian\README.md)**: title: Start of Experian Reports
+
+> *   **[_Experian.md](content\03_CREDIT_FCRA\10_credit_reports\Experian\_Experian.md)**: Index of Experian
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\Other
+
+> 
+
+> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\Other\README.md)**: title: Other Reports
+
+> *   **[_Other.md](content\03_CREDIT_FCRA\10_credit_reports\Other\_Other.md)**: Index of Other
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\10_credit_reports\TransUnion
+
+> 
+
+> *   **[README.md](content\03_CREDIT_FCRA\10_credit_reports\TransUnion\README.md)**: title: Start of TransUnion Reports
+
+> *   **[_TransUnion.md](content\03_CREDIT_FCRA\10_credit_reports\TransUnion\_TransUnion.md)**: Index of TransUnion
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\20_furnisher_disputes
+
+> 
+
+> *   **[CFPB_Complaint_Draft.md](content\03_CREDIT_FCRA\20_furnisher_disputes\CFPB_Complaint_Draft.md)**: date: 2026-01-27
+
+> *   **[FCFCU_Direct_Dispute_Letter.md](content\03_CREDIT_FCRA\20_furnisher_disputes\FCFCU_Direct_Dispute_Letter.md)**: date: 2026-01-27
+
+> *   **[Notice_of_Disputed_Liability_Other_Creditors.md](content\03_CREDIT_FCRA\20_furnisher_disputes\Notice_of_Disputed_Liability_Other_Creditors.md)**: date: 2026-01-27
+
+> *   **[Utility_Dispute_Letter.md](content\03_CREDIT_FCRA\20_furnisher_disputes\Utility_Dispute_Letter.md)**: title: Formal Utility Liability Dispute Notice
+
+> *   **[_20_furnisher_disputes.md](content\03_CREDIT_FCRA\20_furnisher_disputes\_20_furnisher_disputes.md)**: Index of 20_furnisher_disputes
+
+> *   **[_TOC_.md](content\03_CREDIT_FCRA\20_furnisher_disputes\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\30_bureau_disputes
+
+> 
+
+> *   **[Consumer_Statement_Landlords.md](content\03_CREDIT_FCRA\30_bureau_disputes\Consumer_Statement_Landlords.md)**: title: PROPOSED CONSUMER STATEMENT (FOR CREDIT BUREAUS)
+
+> *   **[Equifax_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\Equifax_Dispute_Letter.md)**: date: 2026-01-27
+
+> *   **[Experian_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\Experian_Dispute_Letter.md)**: date: 2026-01-27
+
+> *   **[TransUnion_Dispute_Letter.md](content\03_CREDIT_FCRA\30_bureau_disputes\TransUnion_Dispute_Letter.md)**: date: 2026-01-27
+
+> *   **[_30_bureau_disputes.md](content\03_CREDIT_FCRA\30_bureau_disputes\_30_bureau_disputes.md)**: Index of 30_bureau_disputes
+
+> *   **[_TOC_.md](content\03_CREDIT_FCRA\30_bureau_disputes\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\40_verified_responses
+
+> 
+
+> *   **[_40_verified_responses.md](content\03_CREDIT_FCRA\40_verified_responses\_40_verified_responses.md)**: Index of 40_verified_responses
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\50_damages
+
+> 
+
+> *   **[Core_Credit_Tables.md](content\03_CREDIT_FCRA\50_damages\Core_Credit_Tables.md)**: date: 2026-01-18
+
+> *   **[Emergency_Credit_Harm_Addendum.md](content\03_CREDIT_FCRA\50_damages\Emergency_Credit_Harm_Addendum.md)**: title: EMERGENCY CREDIT HARM ADDENDUM (HOUSING IMPACT STATEMENT)
+
+> *   **[Housing_Emergency_Affidavit.md](content\03_CREDIT_FCRA\50_damages\Housing_Emergency_Affidavit.md)**: title: VERIFIED AFFIDAVIT OF HOUSING EMERGENCY AND IRREPARABLE HARM
+
+> *   **[_50_damages.md](content\03_CREDIT_FCRA\50_damages\_50_damages.md)**: Index of 50_damages
+
+> *   **[_TOC_.md](content\03_CREDIT_FCRA\50_damages\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\03_CREDIT_FCRA\50_output
+
+> 
+
+> *   **[_50_output.md](content\03_CREDIT_FCRA\50_output\_50_output.md)**: Index of 50_output
+
+> 
+
+> ### 📂 content\04_REGULATORS
+
+> 
+
+> *   **[00_COMPLAINT_PACKET_CHECKLIST.md](content\04_REGULATORS\00_COMPLAINT_PACKET_CHECKLIST.md)**: tags: [s]
+
+> *   **[MANIFEST_Informational_Filings_Packet.md](content\04_REGULATORS\MANIFEST_Informational_Filings_Packet.md)**: title: "PACKET MANIFEST: INFORMATIONAL FILINGS (CMS / SSA / VA)"
+
+> *   **[PHASE_04_Regulators.md](content\04_REGULATORS\PHASE_04_Regulators.md)**: type: phase
+
+> *   **[Violation_to_Regulator_Mapping.md](content\04_REGULATORS\Violation_to_Regulator_Mapping.md)**: title: VIOLATION-TO-REGULATOR MAPPING TABLE
+
+> *   **[_04_REGULATORS.md](content\04_REGULATORS\_04_REGULATORS.md)**: Index of 04_REGULATORS
+
+> *   **[_TOC_.md](content\04_REGULATORS\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\04_REGULATORS\10_Industry
+
+> 
+
+> *   **[_10_Industry.md](content\04_REGULATORS\10_Industry\_10_Industry.md)**: Index of 10_Industry
+
+> 
+
+> ### 📂 content\04_REGULATORS\10_Industry\BBB
+
+> 
+
+> *   **[BBB_Complaint_Narrative.md](content\04_REGULATORS\10_Industry\BBB\BBB_Complaint_Narrative.md)**: title: BBB COMPLAINT NARRATIVE
+
+> *   **[BBB_Violation_Excerpt.md](content\04_REGULATORS\10_Industry\BBB\BBB_Violation_Excerpt.md)**: actor: BBB
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\10_Industry\BBB\Cover_Letter.md)**: title: COVER LETTER - Better Business Bureau (BBB)
+
+> *   **[Exhibit_Manifest.md](content\04_REGULATORS\10_Industry\BBB\Exhibit_Manifest.md)**: title: EXHIBIT MANIFEST - BBB Complaint Packet
+
+> *   **[_BBB.md](content\04_REGULATORS\10_Industry\BBB\_BBB.md)**: Index of BBB
+
+> 
+
+> ### 📂 content\04_REGULATORS\20_Local
+
+> 
+
+> *   **[AES_Utility_Violation_Excerpt.md](content\04_REGULATORS\20_Local\AES_Utility_Violation_Excerpt.md)**: actor: AES
+
+> *   **[Citizens_Utility_Violation_Excerpt.md](content\04_REGULATORS\20_Local\Citizens_Utility_Violation_Excerpt.md)**: actor: CITIZENS
+
+> *   **[City_of_Indy_Violation_Excerpt.md](content\04_REGULATORS\20_Local\City_of_Indy_Violation_Excerpt.md)**: actor: CITYOFIN
+
+> *   **[_20_Local.md](content\04_REGULATORS\20_Local\_20_Local.md)**: Index of 20_Local
+
+> 
+
+> ### 📂 content\04_REGULATORS\20_Local\35_Sheriff_Oversight
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[MANIFEST_Sheriff_Oversight_Packet.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\MANIFEST_Sheriff_Oversight_Packet.md)**: title: "PACKET MANIFEST: SHERIFF PROFESSIONAL STANDARDS COMPLAINT"
+
+> *   **[Marion_County_Sheriff_Oversight_Violation_Excerpt.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Marion_County_Sheriff_Oversight_Violation_Excerpt.md)**: title: Matrix Excerpt – Marion County Sheriff Oversight
+
+> *   **[Sheriff_Internal_Affairs_Complaint.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Sheriff_Internal_Affairs_Complaint.md)**: date: 2026-01-27
+
+> *   **[Sheriff_Violation_Excerpt.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\Sheriff_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: Sheriff"
+
+> *   **[_35_Sheriff_Oversight.md](content\04_REGULATORS\20_Local\35_Sheriff_Oversight\_35_Sheriff_Oversight.md)**: Index of 35_Sheriff_Oversight
+
+> 
+
+> ### 📂 content\04_REGULATORS\30_State
+
+> 
+
+> *   **[_30_State.md](content\04_REGULATORS\30_State\_30_State.md)**: Index of 30_State
+
+> 
+
+> ### 📂 content\04_REGULATORS\30_State\20_AG_Indiana
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\20_AG_Indiana\Cover_Letter.md)**: title: COVER LETTER - Indiana Attorney General
+
+> *   **[IN_AG_Violation_Excerpt.md](content\04_REGULATORS\30_State\20_AG_Indiana\IN_AG_Violation_Excerpt.md)**: actor: INDIANAG
+
+> *   **[Indiana_AG_Complaint_Narrative.md](content\04_REGULATORS\30_State\20_AG_Indiana\Indiana_AG_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[MANIFEST_IN_AG_Complaint_Packet.md](content\04_REGULATORS\30_State\20_AG_Indiana\MANIFEST_IN_AG_Complaint_Packet.md)**: title: MANIFEST - Indiana AG Complaint Packet
+
+> *   **[_20_AG_Indiana.md](content\04_REGULATORS\30_State\20_AG_Indiana\_20_AG_Indiana.md)**: Index of 20_AG_Indiana
+
+> 
+
+> ### 📂 content\04_REGULATORS\30_State\25_IN_DFI
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\25_IN_DFI\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[IN_DFI_Violation_Excerpt.md](content\04_REGULATORS\30_State\25_IN_DFI\IN_DFI_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: IN_DFI"
+
+> *   **[Indiana_DFI_Complaint_Narrative.md](content\04_REGULATORS\30_State\25_IN_DFI\Indiana_DFI_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md](content\04_REGULATORS\30_State\25_IN_DFI\Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md)**: title: Matrix Excerpt – Indiana Department of Financial Institutions (DFI)
+
+> *   **[MANIFEST_Indiana_DFI_Packet.md](content\04_REGULATORS\30_State\25_IN_DFI\MANIFEST_Indiana_DFI_Packet.md)**: title: "PACKET MANIFEST: INDIANA DFI REGULATORY COMPLAINT"
+
+> *   **[_25_IN_DFI.md](content\04_REGULATORS\30_State\25_IN_DFI\_25_IN_DFI.md)**: Index of 25_IN_DFI
+
+> 
+
+> ### 📂 content\04_REGULATORS\30_State\55_IN_Civil_Rights
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[ICRC_Violation_Excerpt.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\ICRC_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: ICRC"
+
+> *   **[Indiana_Civil_Rights_Commission_Violation_Excerpt.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Indiana_Civil_Rights_Commission_Violation_Excerpt.md)**: title: Matrix Excerpt – Indiana Civil Rights Commission
+
+> *   **[Indiana_Civil_Rights_Complaint_Narrative.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\Indiana_Civil_Rights_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[MANIFEST_ICRC_Complaint_Packet.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\MANIFEST_ICRC_Complaint_Packet.md)**: title: "PACKET MANIFEST: INDIANA CIVIL RIGHTS COMMISSION (ICRC)"
+
+> *   **[_55_IN_Civil_Rights.md](content\04_REGULATORS\30_State\55_IN_Civil_Rights\_55_IN_Civil_Rights.md)**: Index of 55_IN_Civil_Rights
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal
+
+> 
+
+> *   **[_40_Federal.md](content\04_REGULATORS\40_Federal\_40_Federal.md)**: Index of 40_Federal
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\20_CFPB
+
+> 
+
+> *   **[CFPB_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[CFPB_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Violation_Excerpt.md)**: title: Matrix Excerpt – CFPB
+
+> *   **[CFPB_Violation_Excerpt_Master.md](content\04_REGULATORS\40_Federal\20_CFPB\CFPB_Violation_Excerpt_Master.md)**: actor: CFPB
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\20_CFPB\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[_20_CFPB.md](content\04_REGULATORS\40_Federal\20_CFPB\_20_CFPB.md)**: Index of 20_CFPB
+
+> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\20_CFPB\_TOC_.md)**: title: PACKET TOC
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\30_NCUA
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\30_NCUA\Cover_Letter.md)**: title: COVER LETTER - NCUA Complaint
+
+> *   **[Exhibit_Manifest.md](content\04_REGULATORS\40_Federal\30_NCUA\Exhibit_Manifest.md)**: title: EXHIBIT MANIFEST - NCUA Complaint Packet
+
+> *   **[MANIFEST_NCUA_Complaint_Packet.md](content\04_REGULATORS\40_Federal\30_NCUA\MANIFEST_NCUA_Complaint_Packet.md)**: title: "PACKET MANIFEST: NCUA REGULATORY COMPLAINT"
+
+> *   **[NCUA_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\30_NCUA\NCUA_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[NCUA_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\30_NCUA\NCUA_Violation_Excerpt.md)**: actor: FCFCU
+
+> *   **[_30_NCUA.md](content\04_REGULATORS\40_Federal\30_NCUA\_30_NCUA.md)**: Index of 30_NCUA
+
+> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\30_NCUA\_TOC_.md)**: title: NCUA PACKET TOC
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\30_NCUA\_archive
+
+> 
+
+> *   **[NCUA_Complaint_Narrative_draft_old.md](content\04_REGULATORS\40_Federal\30_NCUA\_archive\NCUA_Complaint_Narrative_draft_old.md)**: date: 2026-01-27
+
+> *   **[__archive.md](content\04_REGULATORS\40_Federal\30_NCUA\_archive\__archive.md)**: Index of _archive
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights
+
+> 
+
+> *   **[Cover_Letter_DOJ_Supplemental.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\Cover_Letter_DOJ_Supplemental.md)**: date: 2026-01-27
+
+> *   **[DOJ_Civil_Rights_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Civil_Rights_Violation_Excerpt.md)**: title: Matrix Excerpt – DOJ Civil Rights
+
+> *   **[DOJ_Civil_Rights_Violation_Excerpt_Master.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Civil_Rights_Violation_Excerpt_Master.md)**: actor: DOJ
+
+> *   **[DOJ_Supplemental_Continuing_Harm.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Supplemental_Continuing_Harm.md)**: date: 2026-01-27
+
+> *   **[DOJ_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\DOJ_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: DOJ"
+
+> *   **[_40_DOJ_Civil_Rights.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\_40_DOJ_Civil_Rights.md)**: Index of 40_DOJ_Civil_Rights
+
+> *   **[_TOC_.md](content\04_REGULATORS\40_Federal\40_DOJ_Civil_Rights\_TOC_.md)**: title: DOJ CIVIL RIGHTS PACKET TOC
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\45_FCC_Telecom
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[FCC_Harassment_Complaint.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\FCC_Harassment_Complaint.md)**: date: 2026-01-27
+
+> *   **[FCC_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\FCC_Violation_Excerpt.md)**: title: Matrix Excerpt – FCC
+
+> *   **[_45_FCC_Telecom.md](content\04_REGULATORS\40_Federal\45_FCC_Telecom\_45_FCC_Telecom.md)**: Index of 45_FCC_Telecom
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\50_HUD_FHEO
+
+> 
+
+> *   **[Cover_Letter.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\Cover_Letter.md)**: date: 2026-01-27
+
+> *   **[HUD_FHEO_Complaint_Narrative.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\HUD_FHEO_Complaint_Narrative.md)**: date: 2026-01-27
+
+> *   **[HUD_FHEO_Violation_Excerpt.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\HUD_FHEO_Violation_Excerpt.md)**: title: "VIOLATION EXCERPT: HUD_FHEO"
+
+> *   **[MANIFEST_HUD_FHEO_Complaint_Packet.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\MANIFEST_HUD_FHEO_Complaint_Packet.md)**: title: "PACKET MANIFEST: HUD / FHEO DISCRIMINATION COMPLAINT"
+
+> *   **[_50_HUD_FHEO.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_50_HUD_FHEO.md)**: Index of 50_HUD_FHEO
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive
+
+> 
+
+> *   **[HUD_Violation_Excerpt_OLD.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive\HUD_Violation_Excerpt_OLD.md)**: title: Matrix Excerpt – HUD – Fair Housing / FHEO
+
+> *   **[__archive.md](content\04_REGULATORS\40_Federal\50_HUD_FHEO\_archive\__archive.md)**: Index of _archive
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\65_SSA_OIG
+
+> 
+
+> *   **[SSA_OIG_Informational_Filing.md](content\04_REGULATORS\40_Federal\65_SSA_OIG\SSA_OIG_Informational_Filing.md)**: date: 2026-01-27
+
+> *   **[_65_SSA_OIG.md](content\04_REGULATORS\40_Federal\65_SSA_OIG\_65_SSA_OIG.md)**: Index of 65_SSA_OIG
+
+> 
+
+> ### 📂 content\04_REGULATORS\40_Federal\70_VA_Informational
+
+> 
+
+> *   **[VA_Informational_Filing.md](content\04_REGULATORS\40_Federal\70_VA_Informational\VA_Informational_Filing.md)**: date: 2026-01-27
+
+> *   **[_70_VA_Informational.md](content\04_REGULATORS\40_Federal\70_VA_Informational\_70_VA_Informational.md)**: Index of 70_VA_Informational
+
+> 
+
+> ### 📂 content\04_REGULATORS\50_Other
+
+> 
+
+> *   **[_50_Other.md](content\04_REGULATORS\50_Other\_50_Other.md)**: Index of 50_Other
+
+> 
+
+> ### 📂 content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact
+
+> 
+
+> *   **[CMS_Informational_Complaint.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\CMS_Informational_Complaint.md)**: date: 2026-01-27
+
+> *   **[_60_CMS_Caretaker_Impact.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\_60_CMS_Caretaker_Impact.md)**: Index of 60_CMS_Caretaker_Impact
+
+> *   **[_TOC_.md](content\04_REGULATORS\50_Other\60_CMS_Caretaker_Impact\_TOC_.md)**: title: CMS / CARETAKER IMPACT PACKET TOC
+
+> 
+
+> ### 📂 content\05_LITIGATION
+
+> 
+
+> *   **[PHASE_04_Litigation_and_Settlement.md](content\05_LITIGATION\PHASE_04_Litigation_and_Settlement.md)**: type: phase
+
+> *   **[_05_LITIGATION.md](content\05_LITIGATION\_05_LITIGATION.md)**: Index of 05_LITIGATION
+
+> *   **[_TOC_.md](content\05_LITIGATION\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\05_LITIGATION\00_Intake
+
+> 
+
+> *   **[Litigation_Decision_Tree.md](content\05_LITIGATION\00_Intake\Litigation_Decision_Tree.md)**: title: "DECISION TREE: FCFCU SETTLEMENT & ENFORCEMENT"
+
+> *   **[Master_Timeline_Strategy_Summary.md](content\05_LITIGATION\00_Intake\Master_Timeline_Strategy_Summary.md)**: title: "PHASE 0: PRE-LITIGATION & TELECOM HARASSMENT (2023 - JAN 2024)"
+
+> *   **[NT_Attorney_Intake_Packet_Executive.md](content\05_LITIGATION\00_Intake\NT_Attorney_Intake_Packet_Executive.md)**: title: Attorney Intake Packet (Executive Summary)
+
+> *   **[NT_Attorney_Intake_Summary.md](content\05_LITIGATION\00_Intake\NT_Attorney_Intake_Summary.md)**: title: "Attorney Intake Summary: FCFCU Violation of Rights"
+
+> *   **[NT_Damages_Matrix_Ab_Initio.md](content\05_LITIGATION\00_Intake\NT_Damages_Matrix_Ab_Initio.md)**: title: "FCFCU / MARION COUNTY SHERIFF: DAMAGES & HARM MATRIX (AB INITIO → PRESENT)"
+
+> *   **[NT_Forensic_Accounting_Audit_Summary.md](content\05_LITIGATION\00_Intake\NT_Forensic_Accounting_Audit_Summary.md)**: title: "FORENSIC AUDIT: Mortgage Accounting & Sale Discrepancies"
+
+> *   **[NT_INTERNAL VALUATION MEMO.md](content\05_LITIGATION\00_Intake\NT_INTERNAL VALUATION MEMO.md)**: case_slug: CASE_FCFCU
+
+> *   **[NT_LEGAL MEMORANDUM.md](content\05_LITIGATION\00_Intake\NT_LEGAL MEMORANDUM.md)**: title: NT_LEGAL MEMORANDUM
+
+> *   **[NT_Monetary_Exposure_Estimate.md](content\05_LITIGATION\00_Intake\NT_Monetary_Exposure_Estimate.md)**: title: MONETARY EXPOSURE & DAMAGES ESTIMATE
+
+> *   **[NT_Procedural_failure_map_one_pager.md](content\05_LITIGATION\00_Intake\NT_Procedural_failure_map_one_pager.md)**: title: Procedural Failure Map (One-Pager)
+
+> *   **[NT_Violation_Remedy_Inventory.md](content\05_LITIGATION\00_Intake\NT_Violation_Remedy_Inventory.md)**: title: NT_Violation_Remedy_Inventory
+
+> *   **[_00_Intake.md](content\05_LITIGATION\00_Intake\_00_Intake.md)**: Index of 00_Intake
+
+> 
+
+> ### 📂 content\05_LITIGATION\30_demand_letters
+
+> 
+
+> *   **[NT_Demand_Ready_Exposure_Summary.md](content\05_LITIGATION\30_demand_letters\NT_Demand_Ready_Exposure_Summary.md)**: title: "Settlement Demand Support: Exposure Summary"
+
+> *   **[Notice_of_Evidence_Preservation.md](content\05_LITIGATION\30_demand_letters\Notice_of_Evidence_Preservation.md)**: title: NOTICE OF EVIDENCE PRESERVATION / SPOLIATION WARNING
+
+> *   **[_30_demand_letters.md](content\05_LITIGATION\30_demand_letters\_30_demand_letters.md)**: Index of 30_demand_letters
+
+> 
+
+> ### 📂 content\05_LITIGATION\40_opposing_counsel
+
+> 
+
+> *   **[_40_opposing_counsel.md](content\05_LITIGATION\40_opposing_counsel\_40_opposing_counsel.md)**: Index of 40_opposing_counsel
+
+> 
+
+> ### 📂 content\05_LITIGATION\50_draft_pleadings
+
+> 
+
+> *   **[_50_draft_pleadings.md](content\05_LITIGATION\50_draft_pleadings\_50_draft_pleadings.md)**: Index of 50_draft_pleadings
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output
+
+> 
+
+> *   **[_60_output.md](content\05_LITIGATION\60_output\_60_output.md)**: Index of 60_output
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output\10_filings
+
+> 
+
+> *   **[_10_filings.md](content\05_LITIGATION\60_output\10_filings\_10_filings.md)**: Index of 10_filings
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output\20_orders
+
+> 
+
+> *   **[_20_orders.md](content\05_LITIGATION\60_output\20_orders\_20_orders.md)**: Index of 20_orders
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output\30_packets
+
+> 
+
+> *   **[_30_packets.md](content\05_LITIGATION\60_output\30_packets\_30_packets.md)**: Index of 30_packets
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output\40_motions
+
+> 
+
+> *   **[_40_motions.md](content\05_LITIGATION\60_output\40_motions\_40_motions.md)**: Index of 40_motions
+
+> 
+
+> ### 📂 content\05_LITIGATION\60_output\50_letters
+
+> 
+
+> *   **[_50_letters.md](content\05_LITIGATION\60_output\50_letters\_50_letters.md)**: Index of 50_letters
+
+> 
+
+> ### 📂 content\05_LITIGATION\70_hearings
+
+> 
+
+> *   **[_70_hearings.md](content\05_LITIGATION\70_hearings\_70_hearings.md)**: Index of 70_hearings
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE
+
+> 
+
+> *   **[06_PUBLIC_PRESSURE.md](content\06_PUBLIC_PRESSURE\06_PUBLIC_PRESSURE.md)**: title: 06_PUBLIC_PRESSURE
+
+> *   **[PHASE_05_Nuclear.md](content\06_PUBLIC_PRESSURE\PHASE_05_Nuclear.md)**: type: phase
+
+> *   **[_06_PUBLIC_PRESSURE.md](content\06_PUBLIC_PRESSURE\_06_PUBLIC_PRESSURE.md)**: Index of 06_PUBLIC_PRESSURE
+
+> *   **[_TOC_.md](content\06_PUBLIC_PRESSURE\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\10_inbox
+
+> 
+
+> *   **[_10_inbox.md](content\06_PUBLIC_PRESSURE\10_inbox\_10_inbox.md)**: Index of 10_inbox
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\20_social_media
+
+> 
+
+> *   **[2025-12-15_they_threw_us_into_the_cold.md](content\06_PUBLIC_PRESSURE\20_social_media\2025-12-15_they_threw_us_into_the_cold.md)**: title: They Threw Us Into the Cold
+
+> *   **[_20_social_media.md](content\06_PUBLIC_PRESSURE\20_social_media\_20_social_media.md)**: Index of 20_social_media
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\30_legislative_outreach
+
+> 
+
+> *   **[_30_legislative_outreach.md](content\06_PUBLIC_PRESSURE\30_legislative_outreach\_30_legislative_outreach.md)**: Index of 30_legislative_outreach
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\40_public_record_dumps
+
+> 
+
+> *   **[_40_public_record_dumps.md](content\06_PUBLIC_PRESSURE\40_public_record_dumps\_40_public_record_dumps.md)**: Index of 40_public_record_dumps
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\50_press_kits
+
+> 
+
+> *   **[_50_press_kits.md](content\06_PUBLIC_PRESSURE\50_press_kits\_50_press_kits.md)**: Index of 50_press_kits
+
+> 
+
+> ### 📂 content\06_PUBLIC_PRESSURE\60_news_media
+
+> 
+
+> *   **[_60_news_media.md](content\06_PUBLIC_PRESSURE\60_news_media\_60_news_media.md)**: Index of 60_news_media
+
+> 
+
+> ### 📂 content\07_HOTEL_DISPUTE
+
+> 
+
+> *   **[07_HOTEL_DISPUTE.md](content\07_HOTEL_DISPUTE\07_HOTEL_DISPUTE.md)**: title: 07_HOTEL_DISPUTE
+
+> *   **[_07_HOTEL_DISPUTE.md](content\07_HOTEL_DISPUTE\_07_HOTEL_DISPUTE.md)**: Index of 07_HOTEL_DISPUTE
+
+> *   **[_TOC_.md](content\07_HOTEL_DISPUTE\_TOC_.md)**: toc: true
+
+> 
+
+> ### 📂 content\07_HOTEL_DISPUTE\10_Service_Animal_Notice
+
+> 
+
+> *   **[Gigi_Documentation_Pack.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\Gigi_Documentation_Pack.md)**: title: "📂 GIGI: SUPPLEMENTAL DOCUMENTATION PACK"
+
+> *   **[Gigi_Service_Dog_Training_Manual.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\Gigi_Service_Dog_Training_Manual.md)**: title: "📘 GIGI: CERTIFIED SERVICE DOG TRAINING MANUAL"
+
+> *   **[_10_Service_Animal_Notice.md](content\07_HOTEL_DISPUTE\10_Service_Animal_Notice\_10_Service_Animal_Notice.md)**: Index of 10_Service_Animal_Notice
+
+> 
+
+> ### 📂 content\07_HOTEL_DISPUTE\20_Habitability
+
+> 
+
+> *   **[Demand_Notice_and_Ledger.md](content\07_HOTEL_DISPUTE\20_Habitability\Demand_Notice_and_Ledger.md)**: title: 1. Notice of Habitability & Maintenance Issues
+
+> *   **[Narrative_Room_Conditions.md](content\07_HOTEL_DISPUTE\20_Habitability\Narrative_Room_Conditions.md)**: title: "OCCUPANT'S STATEMENT: ROOM CONDITIONS & MAINTENANCE LOG (ROOM 155)"
+
+> *   **[_20_Habitability.md](content\07_HOTEL_DISPUTE\20_Habitability\_20_Habitability.md)**: Index of 20_Habitability
+
+> 
+
+> ### 📂 content\_infio_prompts
+
+> 
+
+> *   **[__infio_prompts.md](content\_infio_prompts\__infio_prompts.md)**: Index of _infio_prompts
+
+> 
+
+> ### 📂 scripts
+
+> 
+
+> *   **[binder_builder.py](scripts\binder_builder.py)**: import os
+
+> 
+
+> ### 📂 scripts\maintenance
+
+> 
+
+> *   **[ensure_path_length.py](scripts\maintenance\ensure_path_length.py)**: import os
+
+> *   **[generate_content_dump.py](scripts\maintenance\generate_content_dump.py)**: #!/usr/bin/env python3
+
+> *   **[generate_folder_indexes.py](scripts\maintenance\generate_folder_indexes.py)**: import os
+
+> 
+
+> ### 📂 scripts\ops
+
+> 
+
+> *   **[build_indexes.py](scripts\ops\build_indexes.py)**: #!/usr/bin/env python3
+
+> *   **[case_master.py](scripts\ops\case_master.py)**: import os
+
+> *   **[clean_and_enrich_timeline.py](scripts\ops\clean_and_enrich_timeline.py)**: import os
+
+> *   **[enrich_timeline.py](scripts\ops\enrich_timeline.py)**: import os
+
+> *   **[generate_envelope_seeds.py](scripts\ops\generate_envelope_seeds.py)**: import json
+
+> *   **[generate_obsidian_tree.py](scripts\ops\generate_obsidian_tree.py)**: import os
+
+> *   **[generate_supabase_seed.py](scripts\ops\generate_supabase_seed.py)**: import csv
+
+> *   **[generate_supabase_seed_csvs.py](scripts\ops\generate_supabase_seed_csvs.py)**: import csv
+
+> *   **[ingest_evidence.py](scripts\ops\ingest_evidence.py)**: import os
+
+> *   **[parse_envelopes.py](scripts\ops\parse_envelopes.py)**: import json
+
+> *   **[pull_from_paperless.py](scripts\ops\pull_from_paperless.py)**: import urllib.request
+
+> 
+
+> ### 📂 scripts\vis
+
+> 
+
 > *   **[generate_timeline_view.py](scripts\vis\generate_timeline_view.py)**: import os
 
 ### Assistant
@@ -3647,785 +5322,1564 @@ canonical_ref: ""
 > If you want, paste your current `07_PRINT_PLAN.md` content and I’ll rewrite it into a clean **PRINT ORDER MASTER** that matches the binder tabs you’re actually using.
 
 ### User
-> i think we are almost there and i can start sendin the letters to my creditors and the preservations letters and take action on my credit. ```markdown
-> . 📂 content
-> ├── 📄 000_MASTER_INDEX.md
-> └── 📂 00_COCKPIT/
-> │  └── 📂 01_Case_Master/
-> │    ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
-> │    ├── 📄 01_CASE_MASTER.md
-> │    ├── 📄 02_TIMELINE.mw
-> │    ├── 📄 03_VIOLATIONS.md
-> │    ├── 📄 04_STRATEGY.canvas
-> │    ├── 📄 05_VALUATION.md
-> │    ├── 📄 06_CHECKLIST.md
-> │    ├── 📄 07_PRINT_PLAN.md
-> │    ├── 📄 09_DECISION_MATRIX.canvas
-> │    ├── 📄 _01_Case_Master.md
-> │  └── 📂 10_Overview/
-> │    ├── 📄 01_forensic_audit.m4a
-> │    ├── 📄 03_critiques_Institutional_failure.m4a
-> │    ├── 📄 04_debate.m4a
-> │    ├── 📄 05_critiques_Separate_Appeals.m4a
-> │    ├── 📄 06_eviction_crisis.pdf
-> │    ├── 📄 07_institutional_failure.pdf
-> │    ├── 📄 08_wrongful_foreclosure.pdf
-> │    ├── 📄 09_Premonitions_I_Knew_Before_I_Knew.md
-> │    ├── 📄 _10_Overview.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_evidence/
-> │    └── 📂 10_Docket/
-> │      ├── 📄 001_2025-01-16_Complaint.pdf
-> │      ├── 📄 002_2025-01-16_Appearance.pdf
-> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
-> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
-> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
-> │      ├── 📄 006_2025-01-16_Summons_1.pdf
-> │      ├── 📄 007_2025-01-16_Summons_2.pdf
-> │      ├── 📄 008_2025-01-16_Summons_3.pdf
-> │      ├── 📄 009_2025-01-16_Summons_4.pdf
-> │      ├── 📄 010_2025-01-16_Summons_5.pdf
-> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
-> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
-> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 014_2025-05-13_Affidavit.pdf
-> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
-> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
-> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
-> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
-> │      ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
-> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
-> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
-> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
-> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
-> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
-> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
-> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
-> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
-> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
-> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
-> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
-> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
-> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
-> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
-> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
-> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
-> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
-> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
-> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
-> │      ├── 📄 _10_Docket.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_actors/
-> │      └── 📂 10_fcfcu/
-> │        └── 📂 Appraisal/
-> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │          ├── 📄 _Appraisal.md
-> │          ├── 📄 index.html
-> │        └── 📂 Emails/
-> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │          ├── 📄 _Emails.md
-> │          ├── 📄 index.html
-> │        └── 📂 Letters/
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
-> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │          ├── 📄 _Letters.md
-> │          ├── 📄 index.html
-> │        └── 📂 Payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 _Payments.md
-> │          ├── 📄 index.html
-> │        └── 📂 Reports/
-> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │          ├── 📄 _Reports.md
-> │          ├── 📄 index.html
-> │        └── 📂 Statements/
-> │          ├── 📄 _Statements.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _10_fcfcu.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_aes/
-> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │        ├── 📄 _20_aes.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _20_actors.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_supporting/
-> │      └── 📂 10_photos_video/
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _10_photos_video.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_multi-media/
-> │        └── 📂 Photos/
-> │          ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │          ├── 📄 _Photos.md
-> │          ├── 📄 index.html
-> │        └── 📂 Videos/
-> │          └── 📂 12092025-mayberemovalday/
-> │            ├── 📄 00-06-23_2a.mkv
-> │            ├── 📄 00-16-23_2a.mkv
-> │            ├── 📄 00-26-23_2a.mkv
-> │            ├── 📄 00-36-23_2a.mkv
-> │            ├── 📄 00-46-23_2a.mkv
-> │            ├── 📄 00-56-23_2a.mkv
-> │            ├── 📄 01-06-23_2a.mkv
-> │            ├── 📄 01-16-23_2a.mkv
-> │            ├── 📄 01-26-22_2a.mkv
-> │            ├── 📄 01-36-22_2a.mkv
-> │            ├── 📄 01-46-22_2a.mkv
-> │            ├── 📄 01-56-22_2a.mkv
-> │            ├── 📄 02-06-22_2a.mkv
-> │            ├── 📄 02-16-22_2a.mkv
-> │            ├── 📄 02-26-22_2a.mkv
-> │            ├── 📄 02-36-22_2a.mkv
-> │            ├── 📄 02-46-22_2a.mkv
-> │            ├── 📄 02-56-21_2a.mkv
-> │            ├── 📄 03-06-21_2a.mkv
-> │            ├── 📄 03-16-21_2a.mkv
-> │            ├── 📄 03-26-21_2a.mkv
-> │            ├── 📄 03-36-21_2a.mkv
-> │            ├── 📄 03-46-21_2a.mkv
-> │            ├── 📄 03-56-21_2a.mkv
-> │            ├── 📄 04-06-21_2a.mkv
-> │            ├── 📄 04-16-21_2a.mkv
-> │            ├── 📄 04-26-21_2a.mkv
-> │            ├── 📄 04-36-21_2a.mkv
-> │            ├── 📄 04-46-20_2a.mkv
-> │            ├── 📄 04-56-20_2a.mkv
-> │            ├── 📄 05-06-20_2a.mkv
-> │            ├── 📄 05-16-20_2a.mkv
-> │            ├── 📄 05-26-20_2a.mkv
-> │            ├── 📄 05-36-20_2a.mkv
-> │            ├── 📄 05-46-20_2a.mkv
-> │            ├── 📄 05-56-20_2a.mkv
-> │            ├── 📄 06-06-20_2a.mkv
-> │            ├── 📄 06-16-20_2a.mkv
-> │            ├── 📄 06-26-20_2a.mkv
-> │            ├── 📄 06-36-19_2a.mkv
-> │            ├── 📄 06-46-19_2a.mkv
-> │            ├── 📄 06-56-19_2a.mkv
-> │            ├── 📄 07-06-19_2a.mkv
-> │            ├── 📄 07-16-19_2a.mkv
-> │            ├── 📄 07-26-19_2a.mkv
-> │            ├── 📄 07-36-19_2a.mkv
-> │            ├── 📄 07-46-19_2a.mkv
-> │            ├── 📄 07-56-19_2a.mkv
-> │            ├── 📄 08-06-19_2a.mkv
-> │            ├── 📄 08-16-18_2a.mkv
-> │            ├── 📄 08-26-18_2a.mkv
-> │            ├── 📄 08-36-18_2a.mkv
-> │            ├── 📄 08-46-18_2a.mkv
-> │            ├── 📄 08-56-18_2a.mkv
-> │            ├── 📄 09-06-18_2a.mkv
-> │            ├── 📄 09-16-18_2a.mkv
-> │            ├── 📄 09-26-18_2a.mkv
-> │            ├── 📄 09-36-18_2a.mkv
-> │            ├── 📄 09-46-18_2a.mkv
-> │            ├── 📄 09-56-18_2a.mkv
-> │            ├── 📄 10-06-17_2a.mkv
-> │            ├── 📄 10-16-17_2a.mkv
-> │            ├── 📄 10-26-17_2a.mkv
-> │            ├── 📄 10-36-17_2a.mkv
-> │            ├── 📄 10-46-17_2a.mkv
-> │            ├── 📄 10-56-17_2a.mkv
-> │            ├── 📄 _12092025-mayberemovalday.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _Videos.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _20_multi-media.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _20_parcel.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_declarations/
-> │        ├── 📄 _30_declarations.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_affidavits/
-> │        ├── 📄 _40_affidavits.md
-> │        ├── 📄 _TOC_.md
-> │        └── 📂 ada-disability/
-> │          ├── 📄 _ada-disability.md
-> │          ├── 📄 index.html
-> │        └── 📂 character/
-> │          ├── 📄 _character.md
-> │          ├── 📄 index.html
-> │        └── 📂 community-service/
-> │          ├── 📄 _community-service.md
-> │          ├── 📄 index.html
-> │        └── 📂 credibility/
-> │          ├── 📄 _credibility.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 observations/
-> │          ├── 📄 _observations.md
-> │          ├── 📄 index.html
-> │      └── 📂 50_records/
-> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │        ├── 📄 _50_records.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_supporting.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_Exposure_and_Harm/
-> │      └── 📂 20_economic_harm/
-> │        └── 📂 10_property_possession_harms/
-> │          ├── 📄 _10_property_possession_harms.md
-> │          ├── 📄 index.html
-> │        └── 📂 30_financial/
-> │          ├── 📄 NT_Financial_Tracker.md
-> │          ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │          ├── 📄 _30_financial.md
-> │          ├── 📄 index.html
-> │        └── 📂 60_professional_harm/
-> │          ├── 📄 _60_professional_harm.md
-> │          ├── 📄 index.html
-> │        ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │        ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │        ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │        ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │        ├── 📄 NT_Quarantined_Claims_Hold.md
-> │        ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │        ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │        ├── 📄 _20_economic_harm.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_non_economic_harm/
-> │        └── 📂 40_health_and_safety/
-> │          └── 📂 20_companion_animal_risk/
-> │            ├── 📄 _20_companion_animal_risk.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _40_health_and_safety.md
-> │          ├── 📄 index.html
-> │        └── 📂 Photos_Conditions/
-> │          ├── 📄 _Photos_Conditions.md
-> │          ├── 📄 index.html
-> │        └── 📂 Weather_Reports/
-> │          ├── 📄 Cold_Risk_Report.md
-> │          ├── 📄 _Weather_Reports.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _50_non_economic_harm.md
-> │        └── 📂 cold_exposure/
-> │          ├── 📄 PL__Cold_Risk_Report.md
-> │          ├── 📄 _cold_exposure.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 70_remedies_scenarios/
-> │        ├── 📄 _70_remedies_scenarios.md
-> │        ├── 📄 index.html
-> │      └── 📂 80_payout_strategy/
-> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │        ├── 📄 _80_payout_strategy.md
-> │        ├── 📄 index.html
-> │      └── 📂 90_third_party_harm/
-> │        ├── 📄 _90_third_party_harm.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_Exposure_and_Harm.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_service_and_delivery/
-> │      └── 📂 Email_Transmittals/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Email_Transmittals.md
-> │        ├── 📄 index.html
-> │      ├── 📄 Service_Log.md
-> │      └── 📂 USPS_Certified/
-> │        ├── 📄 README.md
-> │        ├── 📄 _USPS_Certified.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _60_service_and_delivery.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_evidence.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_Trackers/
-> │    ├── 📄 authority.csv
-> │    ├── 📄 docket.csv
-> │    ├── 📄 financial.csv
-> │    ├── 📄 strategy.csv
-> │    ├── 📄 tasks.csv
-> │    ├── 📄 violations.csv
-> │  └── 📂 99_Templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 _10_motions.md
-> │      ├── 📄 _emergency_stay_of_writ.md
-> │      ├── 📄 _vacate_void_judgment.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_affidavits/
-> │      ├── 📄 _20_affidavits.md
-> │      ├── 📄 _GUIDE_Witness_Instructions.md
-> │      ├── 📄 __ADA_Disability_Affidavit.md
-> │      ├── 📄 __Character_Affidavit.md
-> │      ├── 📄 __Community_Service_Affidavit.md
-> │      ├── 📄 __Credibility_Affidavit.md
-> │      ├── 📄 __Gender_Identity_Clarification.md
-> │      ├── 📄 __Observations_Affidavit.md
-> │      ├── 📄 __updated_affidavit_language.md
-> │      ├── 📄 __verified_affidavit_of_defendant.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_exhibits/
-> │      ├── 📄 _40_exhibits.md
-> │      ├── 📄 _Exhibits_Lists.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_orders/
-> │      ├── 📄 _50_orders.md
-> │      ├── 📄 _Proposed_Order.md
-> │      ├── 📄 _proposed_order_emergency_stay.md
-> │      ├── 📄 _proposed_order_motion_to_vacate.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_packets/
-> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
-> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
-> │      ├── 📄 NT_TEMPLATE_ada_packet.md
-> │      ├── 📄 _60_packets.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_outreach/
-> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
-> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
-> │      ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> │      ├── 📄 _70_outreach.md
-> │      ├── 📄 index.html
-> │    └── 📂 80_binders/
-> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
-> │      ├── 📄 NT_TEMPLATE_Section_Index.md
-> │      ├── 📄 _80_binders.md
-> │      ├── 📄 index.html
-> │    └── 📂 90_internal/
-> │      ├── 📄 Phase_Logic_Matrix.canvas
-> │      ├── 📄 _90_internal.md
-> │      ├── 📄 _Court_Doc.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 _Timeline_Event.md
-> │      ├── 📄 _Violation_Entry.md
-> │      ├── 📄 _script_call_lawyers.md
-> │      ├── 📄 _settlement_letter_draft.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _99_Templates.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _00_COCKPIT.md
-> └── 📂 01_PHASE_FORECLOSURE/
-> │  ├── 📄 01_phase_foreclosure.md
-> │  └── 📂 01_phase_output/
-> │    └── 📂 10_proposed/
-> │      ├── 📄 _10_proposed.md
-> │      ├── 📄 index.html
-> │    └── 📂 2025-01-09_hearing_void_judgment/
-> │      └── 📂 2025-01-09_hearing/
-> │        ├── 📄 COURT_MODE_BUTTONS.md
-> │        ├── 📄 HEARING CHEAT SHEET.md
-> │        ├── 📄 _2025-01-09_hearing.md
-> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
-> │        ├── 📄 index.html
-> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> │      ├── 📄 _2025-01-09_hearing_void_judgment.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_motions/
-> │      ├── 📄 MO_01_motion_vacate.pdf
-> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │      ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │      ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │      ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │      ├── 📄 _30_motions.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_orders/
-> │      ├── 📄 OR_03_order_vacate_proposed.pdf
-> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │      ├── 📄 _40_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 90_Filed_Envelopes/
-> │      └── 📂 10_2025-12-10_motion_vacate/
-> │        ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 _10_2025-12-10_motion_vacate.md
-> │        ├── 📄 combinepdf.pdf
-> │        ├── 📄 index.html
-> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │        ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _90_Filed_Envelopes.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _01_phase_output.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _01_PHASE_FORECLOSURE.md
-> │  ├── 📄 index.html
-> └── 📂 02_PHASE_PRESERVATION/
-> │  └── 📂 10_scope_definitions/
-> │    ├── 📄 Evidence_Categories_and_Sources.md
-> │    ├── 📄 Utility_and_Ownership_Record_Scope.md
-> │    ├── 📄 _10_scope_definitions.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_spoliation_risk/
-> │    ├── 📄 Adverse_Inference_Triggers.md
-> │    ├── 📄 Housing_Harm_Ledger.md
-> │    ├── 📄 Spoliation_Legal_Framework.md
-> │    ├── 📄 Spoliation_Risk_Register.md
-> │    ├── 📄 _20_spoliation_risk.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_preservation_notices/
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 PHASE_01_5_Evidence_Preservation.md
-> │    ├── 📄 Service_Log.md
-> │    ├── 📄 _30_preservation_notices.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_output/
-> │    └── 📂 10_letters/
-> │      ├── 📄 Evidence_Preservation_Cover_Letter.md
-> │      ├── 📄 _10_letters.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_packets/
-> │      ├── 📄 Evidence_Preservation_Packet_Index.md
-> │      ├── 📄 Harm_Matrix_and_Timeline_Summary.md
-> │      ├── 📄 MASTER_DISPATCH_CHECKLIST.md
-> │      ├── 📄 MASTER_OPERATIONAL_INDEX.md
-> │      ├── 📄 Master_Exhibit_Index.md
-> │      ├── 📄 Phase_01_5_Execution_Checklist.md
-> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
-> │      ├── 📄 Service_Packet_Index.md
-> │      ├── 📄 _20_packets.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _40_output.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Phase_02_Overview.md
-> │  ├── 📄 _02_PHASE_PRESERVATION.md
-> │  ├── 📄 index.html
-> └── 📂 03_CREDIT_FCRA/
-> │  └── 📂 10_credit_reports/
-> │    └── 📂 Equifax/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Equifax.md
-> │      ├── 📄 index.html
-> │    └── 📂 Experian/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Experian.md
-> │      ├── 📄 index.html
-> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
-> │    └── 📂 Other/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Other.md
-> │      ├── 📄 index.html
-> │    └── 📂 TransUnion/
-> │      ├── 📄 README.md
-> │      ├── 📄 _TransUnion.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_credit_reports.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_furnisher_disputes/
-> │    ├── 📄 CFPB_Complaint_Draft.md
-> │    ├── 📄 FCFCU_Direct_Dispute_Letter.md
-> │    ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
-> │    ├── 📄 Utility_Dispute_Letter.md
-> │    ├── 📄 _20_furnisher_disputes.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_bureau_disputes/
-> │    ├── 📄 Consumer_Statement_Landlords.md
-> │    ├── 📄 Equifax_Dispute_Letter.md
-> │    ├── 📄 Experian_Dispute_Letter.md
-> │    ├── 📄 TransUnion_Dispute_Letter.md
-> │    ├── 📄 _30_bureau_disputes.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_verified_responses/
-> │    ├── 📄 _40_verified_responses.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_damages/
-> │    ├── 📄 Core_Credit_Tables.md
-> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
-> │    ├── 📄 Housing_Emergency_Affidavit.md
-> │    ├── 📄 _50_damages.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_output/
-> │    ├── 📄 _50_output.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Equifax_Violation_Excerpt.md
-> │  ├── 📄 Experian_Violation_Excerpt.md
-> │  ├── 📄 PHASE_02_Credit_FCRA.md
-> │  ├── 📄 TransUnion_Violation_Excerpt.md
-> │  ├── 📄 _03_CREDIT_FCRA.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 04_REGULATORS/
-> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
-> │  └── 📂 10_Industry/
-> │    └── 📂 BBB/
-> │      ├── 📄 BBB_Complaint_Narrative.md
-> │      ├── 📄 BBB_Violation_Excerpt.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 _BBB.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_Industry.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_Local/
-> │    └── 📂 35_Sheriff_Oversight/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │      ├── 📄 Sheriff_Violation_Excerpt.md
-> │      ├── 📄 _35_Sheriff_Oversight.md
-> │      ├── 📄 index.html
-> │    ├── 📄 AES_Utility_Violation_Excerpt.md
-> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
-> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │    ├── 📄 _20_Local.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_State/
-> │    └── 📂 20_AG_Indiana/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_AG_Violation_Excerpt.md
-> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │      ├── 📄 _20_AG_Indiana.md
-> │      ├── 📄 index.html
-> │    └── 📂 25_IN_DFI/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_DFI_Violation_Excerpt.md
-> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │      ├── 📄 _25_IN_DFI.md
-> │      ├── 📄 index.html
-> │    └── 📂 55_IN_Civil_Rights/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 ICRC_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │      ├── 📄 _55_IN_Civil_Rights.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _30_State.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_Federal/
-> │    └── 📂 20_CFPB/
-> │      ├── 📄 CFPB_Complaint_Narrative.md
-> │      ├── 📄 CFPB_Violation_Excerpt.md
-> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 _20_CFPB.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_NCUA/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │      ├── 📄 NCUA_Complaint_Narrative.md
-> │      ├── 📄 NCUA_Violation_Excerpt.md
-> │      ├── 📄 _30_NCUA.md
-> │      ├── 📄 _TOC_.md
-> │      └── 📂 _archive/
-> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
-> │        ├── 📄 __archive.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 40_DOJ_Civil_Rights/
-> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │      ├── 📄 DOJ_Violation_Excerpt.md
-> │      ├── 📄 _40_DOJ_Civil_Rights.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 45_FCC_Telecom/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 FCC_Harassment_Complaint.md
-> │      ├── 📄 FCC_Violation_Excerpt.md
-> │      ├── 📄 _45_FCC_Telecom.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_HUD_FHEO/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │      ├── 📄 _50_HUD_FHEO.md
-> │      └── 📂 _archive/
-> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
-> │        ├── 📄 __archive.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 65_SSA_OIG/
-> │      ├── 📄 SSA_OIG_Informational_Filing.md
-> │      ├── 📄 _65_SSA_OIG.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_VA_Informational/
-> │      ├── 📄 VA_Informational_Filing.md
-> │      ├── 📄 _70_VA_Informational.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _40_Federal.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_Other/
-> │    └── 📂 60_CMS_Caretaker_Impact/
-> │      ├── 📄 CMS_Informational_Complaint.md
-> │      ├── 📄 _60_CMS_Caretaker_Impact.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _50_Other.md
-> │    ├── 📄 index.html
-> │  ├── 📄 MANIFEST_Informational_Filings_Packet.md
-> │  ├── 📄 PHASE_04_Regulators.md
-> │  ├── 📄 Violation_to_Regulator_Mapping.md
-> │  ├── 📄 _04_REGULATORS.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 05_LITIGATION/
-> │  └── 📂 00_Intake/
-> │    ├── 📄 Litigation_Decision_Tree.md
-> │    ├── 📄 Master_Timeline_Strategy_Summary.md
-> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │    ├── 📄 NT_Attorney_Intake_Summary.md
-> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │    ├── 📄 _00_Intake.md
-> │    └── 📂 _archive/
-> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │      ├── 📄 NT_LEGAL MEMORANDUM.md
-> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │      ├── 📄 NT_Violation_Remedy_Inventory.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_demand_letters/
-> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 _30_demand_letters.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_opposing_counsel/
-> │    ├── 📄 _40_opposing_counsel.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_draft_pleadings/
-> │    ├── 📄 _50_draft_pleadings.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 _10_filings.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_orders/
-> │      ├── 📄 _20_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_packets/
-> │      ├── 📄 _30_packets.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_motions/
-> │      ├── 📄 _40_motions.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_letters/
-> │      ├── 📄 _50_letters.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _60_output.md
-> │    ├── 📄 index.html
-> │  └── 📂 70_hearings/
-> │    ├── 📄 _70_hearings.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_04_Litigation_and_Settlement.md
-> │  ├── 📄 _05_LITIGATION.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 06_PUBLIC_PRESSURE/
-> │  ├── 📄 06_PUBLIC_PRESSURE.md
-> │  └── 📂 10_inbox/
-> │    ├── 📄 _10_inbox.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_social_media/
-> │    ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │    ├── 📄 _20_social_media.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_legislative_outreach/
-> │    ├── 📄 _30_legislative_outreach.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_public_record_dumps/
-> │    ├── 📄 _40_public_record_dumps.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_press_kits/
-> │    ├── 📄 _50_press_kits.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_news_media/
-> │    ├── 📄 _60_news_media.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_05_Nuclear.md
-> │  ├── 📄 _06_PUBLIC_PRESSURE.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 07_HOTEL_DISPUTE/
-> │  ├── 📄 07_HOTEL_DISPUTE.md
-> │  └── 📂 10_Service_Animal_Notice/
-> │    ├── 📄 Gigi_Documentation_Pack.md
-> │    ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │    ├── 📄 _10_Service_Animal_Notice.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_Habitability/
-> │    ├── 📄 Demand_Notice_and_Ledger.md
-> │    ├── 📄 Narrative_Room_Conditions.md
-> │    ├── 📄 _20_Habitability.md
-> │    ├── 📄 index.html
-> │  ├── 📄 _07_HOTEL_DISPUTE.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📄 repo_index.csv
+> i think we are almost there and i can start sendin the letters to my creditors and the preservations letters and take action on my credit. ```markdown
+
+> . 📂 content
+
+> ├── 📄 000_MASTER_INDEX.md
+
+> └── 📂 00_COCKPIT/
+
+> │  └── 📂 01_Case_Master/
+
+> │    ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
+
+> │    ├── 📄 01_CASE_MASTER.md
+
+> │    ├── 📄 02_TIMELINE.mw
+
+> │    ├── 📄 03_VIOLATIONS.md
+
+> │    ├── 📄 04_STRATEGY.canvas
+
+> │    ├── 📄 05_VALUATION.md
+
+> │    ├── 📄 06_CHECKLIST.md
+
+> │    ├── 📄 07_PRINT_PLAN.md
+
+> │    ├── 📄 09_DECISION_MATRIX.canvas
+
+> │    ├── 📄 _01_Case_Master.md
+
+> │  └── 📂 10_Overview/
+
+> │    ├── 📄 01_forensic_audit.m4a
+
+> │    ├── 📄 03_critiques_Institutional_failure.m4a
+
+> │    ├── 📄 04_debate.m4a
+
+> │    ├── 📄 05_critiques_Separate_Appeals.m4a
+
+> │    ├── 📄 06_eviction_crisis.pdf
+
+> │    ├── 📄 07_institutional_failure.pdf
+
+> │    ├── 📄 08_wrongful_foreclosure.pdf
+
+> │    ├── 📄 09_Premonitions_I_Knew_Before_I_Knew.md
+
+> │    ├── 📄 _10_Overview.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_evidence/
+
+> │    └── 📂 10_Docket/
+
+> │      ├── 📄 001_2025-01-16_Complaint.pdf
+
+> │      ├── 📄 002_2025-01-16_Appearance.pdf
+
+> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
+
+> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
+
+> │      ├── 📄 006_2025-01-16_Summons_1.pdf
+
+> │      ├── 📄 007_2025-01-16_Summons_2.pdf
+
+> │      ├── 📄 008_2025-01-16_Summons_3.pdf
+
+> │      ├── 📄 009_2025-01-16_Summons_4.pdf
+
+> │      ├── 📄 010_2025-01-16_Summons_5.pdf
+
+> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
+
+> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
+
+> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 014_2025-05-13_Affidavit.pdf
+
+> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
+
+> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
+
+> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
+
+> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
+
+> │      ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
+
+> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
+
+> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
+
+> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
+
+> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
+
+> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
+
+> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
+
+> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
+
+> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
+
+> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
+
+> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
+
+> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
+
+> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
+
+> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
+
+> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
+
+> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
+
+> │      ├── 📄 _10_Docket.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_actors/
+
+> │      └── 📂 10_fcfcu/
+
+> │        └── 📂 Appraisal/
+
+> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │          ├── 📄 _Appraisal.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Emails/
+
+> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │          ├── 📄 _Emails.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Letters/
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
+
+> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │          ├── 📄 _Letters.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 _Payments.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Reports/
+
+> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │          ├── 📄 _Reports.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Statements/
+
+> │          ├── 📄 _Statements.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _10_fcfcu.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_aes/
+
+> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │        ├── 📄 _20_aes.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _20_actors.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_supporting/
+
+> │      └── 📂 10_photos_video/
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _10_photos_video.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_multi-media/
+
+> │        └── 📂 Photos/
+
+> │          ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │          ├── 📄 _Photos.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Videos/
+
+> │          └── 📂 12092025-mayberemovalday/
+
+> │            ├── 📄 00-06-23_2a.mkv
+
+> │            ├── 📄 00-16-23_2a.mkv
+
+> │            ├── 📄 00-26-23_2a.mkv
+
+> │            ├── 📄 00-36-23_2a.mkv
+
+> │            ├── 📄 00-46-23_2a.mkv
+
+> │            ├── 📄 00-56-23_2a.mkv
+
+> │            ├── 📄 01-06-23_2a.mkv
+
+> │            ├── 📄 01-16-23_2a.mkv
+
+> │            ├── 📄 01-26-22_2a.mkv
+
+> │            ├── 📄 01-36-22_2a.mkv
+
+> │            ├── 📄 01-46-22_2a.mkv
+
+> │            ├── 📄 01-56-22_2a.mkv
+
+> │            ├── 📄 02-06-22_2a.mkv
+
+> │            ├── 📄 02-16-22_2a.mkv
+
+> │            ├── 📄 02-26-22_2a.mkv
+
+> │            ├── 📄 02-36-22_2a.mkv
+
+> │            ├── 📄 02-46-22_2a.mkv
+
+> │            ├── 📄 02-56-21_2a.mkv
+
+> │            ├── 📄 03-06-21_2a.mkv
+
+> │            ├── 📄 03-16-21_2a.mkv
+
+> │            ├── 📄 03-26-21_2a.mkv
+
+> │            ├── 📄 03-36-21_2a.mkv
+
+> │            ├── 📄 03-46-21_2a.mkv
+
+> │            ├── 📄 03-56-21_2a.mkv
+
+> │            ├── 📄 04-06-21_2a.mkv
+
+> │            ├── 📄 04-16-21_2a.mkv
+
+> │            ├── 📄 04-26-21_2a.mkv
+
+> │            ├── 📄 04-36-21_2a.mkv
+
+> │            ├── 📄 04-46-20_2a.mkv
+
+> │            ├── 📄 04-56-20_2a.mkv
+
+> │            ├── 📄 05-06-20_2a.mkv
+
+> │            ├── 📄 05-16-20_2a.mkv
+
+> │            ├── 📄 05-26-20_2a.mkv
+
+> │            ├── 📄 05-36-20_2a.mkv
+
+> │            ├── 📄 05-46-20_2a.mkv
+
+> │            ├── 📄 05-56-20_2a.mkv
+
+> │            ├── 📄 06-06-20_2a.mkv
+
+> │            ├── 📄 06-16-20_2a.mkv
+
+> │            ├── 📄 06-26-20_2a.mkv
+
+> │            ├── 📄 06-36-19_2a.mkv
+
+> │            ├── 📄 06-46-19_2a.mkv
+
+> │            ├── 📄 06-56-19_2a.mkv
+
+> │            ├── 📄 07-06-19_2a.mkv
+
+> │            ├── 📄 07-16-19_2a.mkv
+
+> │            ├── 📄 07-26-19_2a.mkv
+
+> │            ├── 📄 07-36-19_2a.mkv
+
+> │            ├── 📄 07-46-19_2a.mkv
+
+> │            ├── 📄 07-56-19_2a.mkv
+
+> │            ├── 📄 08-06-19_2a.mkv
+
+> │            ├── 📄 08-16-18_2a.mkv
+
+> │            ├── 📄 08-26-18_2a.mkv
+
+> │            ├── 📄 08-36-18_2a.mkv
+
+> │            ├── 📄 08-46-18_2a.mkv
+
+> │            ├── 📄 08-56-18_2a.mkv
+
+> │            ├── 📄 09-06-18_2a.mkv
+
+> │            ├── 📄 09-16-18_2a.mkv
+
+> │            ├── 📄 09-26-18_2a.mkv
+
+> │            ├── 📄 09-36-18_2a.mkv
+
+> │            ├── 📄 09-46-18_2a.mkv
+
+> │            ├── 📄 09-56-18_2a.mkv
+
+> │            ├── 📄 10-06-17_2a.mkv
+
+> │            ├── 📄 10-16-17_2a.mkv
+
+> │            ├── 📄 10-26-17_2a.mkv
+
+> │            ├── 📄 10-36-17_2a.mkv
+
+> │            ├── 📄 10-46-17_2a.mkv
+
+> │            ├── 📄 10-56-17_2a.mkv
+
+> │            ├── 📄 _12092025-mayberemovalday.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _Videos.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _20_multi-media.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _20_parcel.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 _30_declarations.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_affidavits/
+
+> │        ├── 📄 _40_affidavits.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 _ada-disability.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 character/
+
+> │          ├── 📄 _character.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 _community-service.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 _credibility.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 _observations.md
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 50_records/
+
+> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │        ├── 📄 _50_records.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_supporting.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_Exposure_and_Harm/
+
+> │      └── 📂 20_economic_harm/
+
+> │        └── 📂 10_property_possession_harms/
+
+> │          ├── 📄 _10_property_possession_harms.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 30_financial/
+
+> │          ├── 📄 NT_Financial_Tracker.md
+
+> │          ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │          ├── 📄 _30_financial.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 60_professional_harm/
+
+> │          ├── 📄 _60_professional_harm.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │        ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │        ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │        ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │        ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │        ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │        ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │        ├── 📄 _20_economic_harm.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_non_economic_harm/
+
+> │        └── 📂 40_health_and_safety/
+
+> │          └── 📂 20_companion_animal_risk/
+
+> │            ├── 📄 _20_companion_animal_risk.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _40_health_and_safety.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Photos_Conditions/
+
+> │          ├── 📄 _Photos_Conditions.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Weather_Reports/
+
+> │          ├── 📄 Cold_Risk_Report.md
+
+> │          ├── 📄 _Weather_Reports.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _50_non_economic_harm.md
+
+> │        └── 📂 cold_exposure/
+
+> │          ├── 📄 PL__Cold_Risk_Report.md
+
+> │          ├── 📄 _cold_exposure.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 70_remedies_scenarios/
+
+> │        ├── 📄 _70_remedies_scenarios.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 80_payout_strategy/
+
+> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │        ├── 📄 _80_payout_strategy.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 90_third_party_harm/
+
+> │        ├── 📄 _90_third_party_harm.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_Exposure_and_Harm.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_service_and_delivery/
+
+> │      └── 📂 Email_Transmittals/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Email_Transmittals.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 Service_Log.md
+
+> │      └── 📂 USPS_Certified/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _USPS_Certified.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _60_service_and_delivery.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_evidence.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_Trackers/
+
+> │    ├── 📄 authority.csv
+
+> │    ├── 📄 docket.csv
+
+> │    ├── 📄 financial.csv
+
+> │    ├── 📄 strategy.csv
+
+> │    ├── 📄 tasks.csv
+
+> │    ├── 📄 violations.csv
+
+> │  └── 📂 99_Templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 _10_motions.md
+
+> │      ├── 📄 _emergency_stay_of_writ.md
+
+> │      ├── 📄 _vacate_void_judgment.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_affidavits/
+
+> │      ├── 📄 _20_affidavits.md
+
+> │      ├── 📄 _GUIDE_Witness_Instructions.md
+
+> │      ├── 📄 __ADA_Disability_Affidavit.md
+
+> │      ├── 📄 __Character_Affidavit.md
+
+> │      ├── 📄 __Community_Service_Affidavit.md
+
+> │      ├── 📄 __Credibility_Affidavit.md
+
+> │      ├── 📄 __Gender_Identity_Clarification.md
+
+> │      ├── 📄 __Observations_Affidavit.md
+
+> │      ├── 📄 __updated_affidavit_language.md
+
+> │      ├── 📄 __verified_affidavit_of_defendant.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_exhibits/
+
+> │      ├── 📄 _40_exhibits.md
+
+> │      ├── 📄 _Exhibits_Lists.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_orders/
+
+> │      ├── 📄 _50_orders.md
+
+> │      ├── 📄 _Proposed_Order.md
+
+> │      ├── 📄 _proposed_order_emergency_stay.md
+
+> │      ├── 📄 _proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_packets/
+
+> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
+
+> │      ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
+
+> │      ├── 📄 NT_TEMPLATE_ada_packet.md
+
+> │      ├── 📄 _60_packets.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_outreach/
+
+> │      ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
+
+> │      ├── 📄 NT_TEMPLATE_attorney_brief.md
+
+> │      ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> │      ├── 📄 _70_outreach.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 80_binders/
+
+> │      ├── 📄 NT_TEMPLATE_Section_Cover.md
+
+> │      ├── 📄 NT_TEMPLATE_Section_Index.md
+
+> │      ├── 📄 _80_binders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 90_internal/
+
+> │      ├── 📄 Phase_Logic_Matrix.canvas
+
+> │      ├── 📄 _90_internal.md
+
+> │      ├── 📄 _Court_Doc.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 _Timeline_Event.md
+
+> │      ├── 📄 _Violation_Entry.md
+
+> │      ├── 📄 _script_call_lawyers.md
+
+> │      ├── 📄 _settlement_letter_draft.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _99_Templates.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _00_COCKPIT.md
+
+> └── 📂 01_PHASE_FORECLOSURE/
+
+> │  ├── 📄 01_phase_foreclosure.md
+
+> │  └── 📂 01_phase_output/
+
+> │    └── 📂 10_proposed/
+
+> │      ├── 📄 _10_proposed.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 2025-01-09_hearing_void_judgment/
+
+> │      └── 📂 2025-01-09_hearing/
+
+> │        ├── 📄 COURT_MODE_BUTTONS.md
+
+> │        ├── 📄 HEARING CHEAT SHEET.md
+
+> │        ├── 📄 _2025-01-09_hearing.md
+
+> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> │      ├── 📄 _2025-01-09_hearing_void_judgment.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_motions/
+
+> │      ├── 📄 MO_01_motion_vacate.pdf
+
+> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │      ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │      ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 _30_motions.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_orders/
+
+> │      ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 _40_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 90_Filed_Envelopes/
+
+> │      └── 📂 10_2025-12-10_motion_vacate/
+
+> │        ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 _10_2025-12-10_motion_vacate.md
+
+> │        ├── 📄 combinepdf.pdf
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │        ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _90_Filed_Envelopes.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _01_phase_output.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _01_PHASE_FORECLOSURE.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 02_PHASE_PRESERVATION/
+
+> │  └── 📂 10_scope_definitions/
+
+> │    ├── 📄 Evidence_Categories_and_Sources.md
+
+> │    ├── 📄 Utility_and_Ownership_Record_Scope.md
+
+> │    ├── 📄 _10_scope_definitions.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_spoliation_risk/
+
+> │    ├── 📄 Adverse_Inference_Triggers.md
+
+> │    ├── 📄 Housing_Harm_Ledger.md
+
+> │    ├── 📄 Spoliation_Legal_Framework.md
+
+> │    ├── 📄 Spoliation_Risk_Register.md
+
+> │    ├── 📄 _20_spoliation_risk.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_preservation_notices/
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 PHASE_01_5_Evidence_Preservation.md
+
+> │    ├── 📄 Service_Log.md
+
+> │    ├── 📄 _30_preservation_notices.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_output/
+
+> │    └── 📂 10_letters/
+
+> │      ├── 📄 Evidence_Preservation_Cover_Letter.md
+
+> │      ├── 📄 _10_letters.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_packets/
+
+> │      ├── 📄 Evidence_Preservation_Packet_Index.md
+
+> │      ├── 📄 Harm_Matrix_and_Timeline_Summary.md
+
+> │      ├── 📄 MASTER_DISPATCH_CHECKLIST.md
+
+> │      ├── 📄 MASTER_OPERATIONAL_INDEX.md
+
+> │      ├── 📄 Master_Exhibit_Index.md
+
+> │      ├── 📄 Phase_01_5_Execution_Checklist.md
+
+> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
+
+> │      ├── 📄 Service_Packet_Index.md
+
+> │      ├── 📄 _20_packets.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _40_output.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Phase_02_Overview.md
+
+> │  ├── 📄 _02_PHASE_PRESERVATION.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 03_CREDIT_FCRA/
+
+> │  └── 📂 10_credit_reports/
+
+> │    └── 📂 Equifax/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Equifax.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 Experian/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Experian.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
+
+> │    └── 📂 Other/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Other.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 TransUnion/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _TransUnion.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_credit_reports.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_furnisher_disputes/
+
+> │    ├── 📄 CFPB_Complaint_Draft.md
+
+> │    ├── 📄 FCFCU_Direct_Dispute_Letter.md
+
+> │    ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
+
+> │    ├── 📄 Utility_Dispute_Letter.md
+
+> │    ├── 📄 _20_furnisher_disputes.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_bureau_disputes/
+
+> │    ├── 📄 Consumer_Statement_Landlords.md
+
+> │    ├── 📄 Equifax_Dispute_Letter.md
+
+> │    ├── 📄 Experian_Dispute_Letter.md
+
+> │    ├── 📄 TransUnion_Dispute_Letter.md
+
+> │    ├── 📄 _30_bureau_disputes.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_verified_responses/
+
+> │    ├── 📄 _40_verified_responses.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_damages/
+
+> │    ├── 📄 Core_Credit_Tables.md
+
+> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
+
+> │    ├── 📄 Housing_Emergency_Affidavit.md
+
+> │    ├── 📄 _50_damages.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_output/
+
+> │    ├── 📄 _50_output.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Equifax_Violation_Excerpt.md
+
+> │  ├── 📄 Experian_Violation_Excerpt.md
+
+> │  ├── 📄 PHASE_02_Credit_FCRA.md
+
+> │  ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │  ├── 📄 _03_CREDIT_FCRA.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 04_REGULATORS/
+
+> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
+
+> │  └── 📂 10_Industry/
+
+> │    └── 📂 BBB/
+
+> │      ├── 📄 BBB_Complaint_Narrative.md
+
+> │      ├── 📄 BBB_Violation_Excerpt.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 _BBB.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_Industry.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_Local/
+
+> │    └── 📂 35_Sheriff_Oversight/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │      ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │      ├── 📄 _35_Sheriff_Oversight.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 AES_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │    ├── 📄 _20_Local.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_State/
+
+> │    └── 📂 20_AG_Indiana/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │      ├── 📄 _20_AG_Indiana.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 25_IN_DFI/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │      ├── 📄 _25_IN_DFI.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 55_IN_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 ICRC_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │      ├── 📄 _55_IN_Civil_Rights.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _30_State.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_Federal/
+
+> │    └── 📂 20_CFPB/
+
+> │      ├── 📄 CFPB_Complaint_Narrative.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 _20_CFPB.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_NCUA/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │      ├── 📄 NCUA_Complaint_Narrative.md
+
+> │      ├── 📄 NCUA_Violation_Excerpt.md
+
+> │      ├── 📄 _30_NCUA.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
+
+> │        ├── 📄 __archive.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_DOJ_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │      ├── 📄 DOJ_Violation_Excerpt.md
+
+> │      ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 45_FCC_Telecom/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 FCC_Harassment_Complaint.md
+
+> │      ├── 📄 FCC_Violation_Excerpt.md
+
+> │      ├── 📄 _45_FCC_Telecom.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_HUD_FHEO/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │      ├── 📄 _50_HUD_FHEO.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
+
+> │        ├── 📄 __archive.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 65_SSA_OIG/
+
+> │      ├── 📄 SSA_OIG_Informational_Filing.md
+
+> │      ├── 📄 _65_SSA_OIG.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_VA_Informational/
+
+> │      ├── 📄 VA_Informational_Filing.md
+
+> │      ├── 📄 _70_VA_Informational.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _40_Federal.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_Other/
+
+> │    └── 📂 60_CMS_Caretaker_Impact/
+
+> │      ├── 📄 CMS_Informational_Complaint.md
+
+> │      ├── 📄 _60_CMS_Caretaker_Impact.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _50_Other.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 MANIFEST_Informational_Filings_Packet.md
+
+> │  ├── 📄 PHASE_04_Regulators.md
+
+> │  ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │  ├── 📄 _04_REGULATORS.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 05_LITIGATION/
+
+> │  └── 📂 00_Intake/
+
+> │    ├── 📄 Litigation_Decision_Tree.md
+
+> │    ├── 📄 Master_Timeline_Strategy_Summary.md
+
+> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │    ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │    ├── 📄 _00_Intake.md
+
+> │    └── 📂 _archive/
+
+> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │      ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_demand_letters/
+
+> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 _30_demand_letters.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_opposing_counsel/
+
+> │    ├── 📄 _40_opposing_counsel.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_draft_pleadings/
+
+> │    ├── 📄 _50_draft_pleadings.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 _10_filings.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 _20_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 _30_packets.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 _40_motions.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 _50_letters.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _60_output.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 70_hearings/
+
+> │    ├── 📄 _70_hearings.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_04_Litigation_and_Settlement.md
+
+> │  ├── 📄 _05_LITIGATION.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 06_PUBLIC_PRESSURE/
+
+> │  ├── 📄 06_PUBLIC_PRESSURE.md
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 _10_inbox.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_social_media/
+
+> │    ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │    ├── 📄 _20_social_media.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_legislative_outreach/
+
+> │    ├── 📄 _30_legislative_outreach.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_public_record_dumps/
+
+> │    ├── 📄 _40_public_record_dumps.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_press_kits/
+
+> │    ├── 📄 _50_press_kits.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_news_media/
+
+> │    ├── 📄 _60_news_media.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_05_Nuclear.md
+
+> │  ├── 📄 _06_PUBLIC_PRESSURE.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 07_HOTEL_DISPUTE/
+
+> │  ├── 📄 07_HOTEL_DISPUTE.md
+
+> │  └── 📂 10_Service_Animal_Notice/
+
+> │    ├── 📄 Gigi_Documentation_Pack.md
+
+> │    ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │    ├── 📄 _10_Service_Animal_Notice.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_Habitability/
+
+> │    ├── 📄 Demand_Notice_and_Ledger.md
+
+> │    ├── 📄 Narrative_Room_Conditions.md
+
+> │    ├── 📄 _20_Habitability.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 _07_HOTEL_DISPUTE.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📄 repo_index.csv
+
 > ```
 
 ### Assistant
@@ -4620,38 +7074,70 @@ canonical_ref: ""
 > No theory. Just the execution order + what to include in each.
 
 ### User
-> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
-> A-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Recently, the United States Court of Appeals for the Ninth Circuit held that the ADA requires a chain of movie theaters to exhibit movies with closed captioning and video description unless the theaters can show that to do so would amount to a fundamental alteration or undue burden. Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",,E-FCFCU-EXH-2010-0001,,Failure to provide closed captioning and audio description in movie theaters.,Alleged,Medium,LEGACY_ID:V-053
-> A-FCFCU-2004-0001,2004,,"Too, Inc.",,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation. See, e.g., Colorado Cross Disability Coalition v. Too, Inc., 344 F. Supp. 2d 707 (D. Colo. 2004)",,E-FCFCU-EXH-2004-0001,,Physical/architectural barriers to entry for individuals with disabilities.,Alleged,Medium,LEGACY_ID:V-054
-> A-FCFCU-2008-0001,2008,,Carrols Corp.,,ADA,ADA,42 U.S.C. 12182(b)(2)(A)(iii),"the Second Circuit held that a public accommodation’s failure to provide employee training on effective communication with individuals with disabilities can constitute a violation of title III, specifically 42 U.S.C. 12182(b)(2)(A)(iii).",,E-FCFCU-EXH-2008-0001,,Failure to train employees on effective communication with disabled individuals.,Alleged,Medium,LEGACY_ID:V-055
-> A-FCFCU-2009-0001,2009,,Walt Disney World Co.,,ADA,ADA,ADA  36.302 (Reasonable modification);  36.311,"Indeed, there has been litigation concerning the legal obligations of covered entities to accommodate individuals with mobility disabilities who wish to use an electronic personal assistance mobility device (EPAMD), such as the Segway® PT... See Ault v. Walt Disney World Co., No. 6:07–cv–1785–Orl–31KRS, 2009 WL 3242028 (M.D. Fla. Oct. 6, 2009).",,E-FCFCU-EXH-2009-0001,,Restricting use of electronic personal assistance mobility devices (EPAMDs).,Alleged,Medium,LEGACY_ID:V-056
-> A-FCFCU-1999-0001,1999,,New York Yankees,,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation... Pascuiti v. New York Yankees, 87 F. Supp. 2d 221 (S.D.N.Y. 1999).",,E-FCFCU-EXH-1999-0001,,Discriminatory seating/barrier to access in sports stadium.,Alleged,Medium,LEGACY_ID:V-057
-> A-FCFCU-2016-0001,"December 27, 2016",,Aspen View Condo. Ass'n,,Statutory,Fair Housing Act breach (Retaliation),42 U.S.C. § 3617,plaintiff’s retaliation claim was not dependent upon his reasonable accommodation claim and that a reasonable jury could conclude that the fines were imposed in retaliation for allowing his tenant to live in the condo unit with her dog,,E-FCFCU-EXH-2016-0001,,Owner was fined for allowing a tenant to keep a service dog for epilepsy.,Alleged,Medium,LEGACY_ID:V-059
-> A-FCFCU-2003-0001,"November 5, 2003",,Woodcrest Condominiums Association,,Statutory,Fair Housing Act breach (Familial Status Discrimination),42 U.S.C. § 3604,the United States argues that defendants' former policy of restricting families with children to first floor units violates the Act as a matter of law.,,E-FCFCU-EXH-2003-0001,,Restricting families with children to first-floor units; steering prospective tenants.,Alleged,Medium,LEGACY_ID:V-062
-> A-FCFCU-2013-0001,"December 2, 2013",,61 Main Street Corp. and Rosario Marci,,Statutory,Fair Housing Act breach (Race and Color Discrimination),42 U.S.C. § 3604(a)-(b),"Specifically, the United States alleges that the defendants failed to inform African-American prospective tenants about available apartments... provided higher rent prices and less favorable security deposit terms to African-American prospective tenants",,E-FCFCU-EXH-2013-0001,,Misrepresenting unit availability and charging higher rents/security deposits to African-American prospective tenants.,Alleged,Medium,LEGACY_ID:V-063
-> A-FCFCU-2013-0002,"June 24, 2013",,Altoona Housing Authority,,Procedural,Procedural,42 U.S.C. § 3604,the defendant discriminated on the basis of race by evicting an African-American tenant with less due process than was given to white tenants with similar or worse lease violations.,,E-FCFCU-EXH-2013-0002,,Evicting an African-American tenant with less due process than white tenants.,Alleged,Medium,LEGACY_ID:V-065
-> A-FCFCU-2015-0001,"September 30, 2015",,Allan Rappuhn and affiliated entities,,Statutory,Fair Housing Act breach (Design and Construction),42 U.S.C. § 3604(f)(3)(C),"the defendants engaged in a pattern or practice of designing and constructing multifamily housing developments... in violation of the Fair Housing Act (FHA), 42 U.S.C. § 3604(f)(3)(C)",,E-FCFCU-EXH-2015-0001,,"Failure to design 71 developments with accessible routes, curb cuts, or usable bathrooms/kitchens.",Alleged,Medium,LEGACY_ID:V-066
-> A-FCFCU-2011-0001,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Intentional Discrimination),42 U.S.C. & 3604(a),"Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin in violation of &3604(a).",,E-FCFCU-EXH-2011-0001,,"Deteriorating living conditions, neighborhood blight, health and safety concerns, and decreased market values for homeowners near foreclosed homes.",Alleged,Medium,LEGACY_ID:V-067
-> A-FCFCU-2011-0002,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Terms and Conditions of Sale/Service),42 U.S.C. & 3604(b),"Defendants have discriminated in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith, because of race or national origin in violation of 42 U.S.C. &3604(b).",,E-FCFCU-EXH-2011-0002,,Transfer of title with responsibility of remedying delayed maintenance; discriminatory provision of services in connection with dwellings.,Alleged,Medium,LEGACY_ID:V-068
-> A-FCFCU-2011-0003,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Residential Real Estate-Related Transactions),42 U.S.C. & 3605,"Accordingly, Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin or discriminated in the terms or conditions of such a transaction in violation of 42 U.S.C. &3605.",,E-FCFCU-EXH-2011-0003,,Interference with purchase loan viability and closing of sales due to poor property appraisals in communities of color.,Alleged,Medium,LEGACY_ID:V-069
-> A-FCFCU-2013-0003,"June 28, 2013",,Deutsche Bank,,Procedural,Procedural,Local Slumlord Ordinances; FHA non-delegable duties,"On June 28, 2013, Deutsche Bank publicly confirmed its policies of outsourcing and abdicating legal responsibilities with regard to REO properties in the course of a $10,000,000.00 settlement with the City of Los Angeles in a so-called ‘slum lord’ case",,E-FCFCU-EXH-2013-0003,,Deterioration of foreclosed REO properties; creation of 'slum lord' conditions in Los Angeles.,Alleged,Medium,LEGACY_ID:V-070
-> A-FCFCU-2011-0004,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Perpetuating Segregation),42 U.S.C. & 3601,The failure to maintain and market REO dwellings in communities of color according to the same standards as REO dwellings in predominantly white neighborhoods were maintained has stigmatized communities of color as less desirable... and has the effect of perpetuating segregated conditions.,,E-FCFCU-EXH-2011-0004,,Stigmatization of communities of color; restriction of the ability of minority homeowners to move into majority white neighborhoods due to reduced equity.,Alleged,Medium,LEGACY_ID:V-071
-> A-FCFCU-1972-0001,1972 (Fuentes),,State Government / Creditors,,Procedural,Procedural,U.S. Constitution Amendment XIV,"Fuentes v. Shevin, which struck down a replevin statute that authorized the seizure of property (here household goods purchased on an installment contract) simply upon the filing of an ex parte application and the posting of bond",,E-FCFCU-EXH-1972-0001,,Mistaken deprivation of property (household goods) without prior hearing.,Alleged,Medium,LEGACY_ID:V-076
-> A-FCFCU-2014-0001,"October 28, 2014",,"Fannie Mae / Cyprexx Services, LLC",,Statutory,Discriminatory treatment in property maintenance,42 U.S.C. § 3604,"This property exhibited 16 maintenance deficiencies, including: unsecured pool area, overgrown grass, unlocked doors, invsaive plants, trash, accumulated mail, dead shrubbery, uncovered holes, damaged soffet, damaged fence, warning sign, and water damage/discoloration.",,E-FCFCU-EXH-2014-0001,,"16 maintenance deficiencies including unsecured pool, overgrown grass, unlocked doors, invasive plants, trash, and structural holes.",Alleged,Medium,LEGACY_ID:V-080
-> A-FCFCU-2009-0004,2009 - 2015,,Fannie Mae,,Procedural,Procedural,42 U.S.C. § 3601 et seq.,"Despite Plaintiffs’ efforts to get Fannie Mae to voluntarily comply with the Fair Housing Act, Fannie Mae did not change its behavior. With discriminatory intent and deliberate indifference to the discriminatory purpose and effects of its policies and practices, Fannie Mae continued to maintain its REO properties differently because of the predominant race and national origin of neighborhoods.",,E-FCFCU-EXH-2009-0004,,Ongoing systemic discrimination despite being alerted to disparate maintenance levels by NFHA.,Alleged,Medium,LEGACY_ID:V-081
-> A-FCFCU-1996-0001,January 1996,,"Apartment owner (Lake Charles, Louisiana)",,Statutory,Fair Housing Act breach (Race discrimination),42 U.S.C. § 3604,"When Mr. Lewis went to view the apartment, however, the owner refused to accept his deposit, saying, 'I just don't rent to you people.' ... 'Black, colored, Negro, whatever you call yourself, I don't rent to y'all.'",,E-FCFCU-EXH-1996-0001,,Denial of housing; blatant racial discrimination.,Alleged,Medium,LEGACY_ID:V-083
-> A-FCFCU-2017-0001,"March 15, 2017 (Filing date)",,"Harbour Portfolio VII, LP; CWAM II, LLC; Harbour Portfolio VI, LP",,Statutory,Predatory land contract / Housing discrimination (Reverse Redlining),42 U.S.C. § 3604; Equal Credit Opportunity Act,"Harbour marketed its contract for deed transactions exclusively, or almost exclusively, in African-American neighborhoods ... induced to purchase properties that were in very bad condition, and to pay inflated purchase prices and very high interest rates.",,E-FCFCU-EXH-2017-0001,,Exorbitant interest rates (9.9%-10%); burden of all repairs; high likelihood of immediate default.,Alleged,Medium,LEGACY_ID:V-086
-> A-FCFCU-2018-0001,2018 (Trial court decision),,Rainbow Realty Group Inc.,,Statutory,Breach of Warranty of Habitability,Indiana landlord-tenant laws; IC 32-31,the trial court reiterated its earlier entry of partial summary judgment and found that Rainbow had breached the warranty of habitability and had engaged in willful and deceptive acts regarding the nature of the agreement,,E-FCFCU-EXH-2018-0001,,Unlivable housing conditions; intentional deception regarding agreement nature.,Alleged,Medium,LEGACY_ID:V-087
-> A-FCFCU-1999-0002,Circa 1999-2000,,"Apartment complexes (Charlotte, NC / New Orleans, LA)",,Statutory,Fair Housing Act breach (Disability accessibility),42 U.S.C. § 3604(f)(3)(C),100% of complexes surveyed did not meet the Fair Housing Act's accessibility requirements for the physically disabled,,E-FCFCU-EXH-1999-0002,,Exclusion of persons with physical disabilities from multifamily housing.,Alleged,Medium,LEGACY_ID:V-088
-> A-FCFCU-2015-0003,2015,,Cromwell Police and Town Officials,,Statutory,Fair Housing Act breach (Discriminatory Statements),42 U.S.C. § 3604(c),Gilead later learned that the police leaked sensitive health information about this individual— information learned from this interaction—to the media.,,E-FCFCU-EXH-2015-0003,,Sensitive health information about a group home resident was leaked to the media.,Alleged,Medium,LEGACY_ID:V-091
-> A-FCFCU-1977-0001,1977-1979,,Elkhart County,,Procedural,Due Process Failure / Notice Error,Due Process Clause of the Fourteenth Amendment,"the United States Supreme Court has held that the due process clause of the fourteenth amendment requires notice by mail to mortgagees prior to a tax sale. ... Elkhart county began proceedings to sell the land at public auction. ... Notice was not given to the Mennonite Board of Missions by either the county or Moore, and the Board was unaware of the tax sale.",,E-FCFCU-EXH-1977-0001,,"Extinguishment of $14,000 mortgage interest/lien without actual notice.",Alleged,Medium,LEGACY_ID:V-096
-> A-FCFCU-2005-0001,2005,,Norwegian Cruise Line Ltd.,,ADA,ADA,Title III of the ADA,"Cruise passengers with disabilities brought action against a foreign-flagged cruise line, alleging violations of Title III of the ADA. Specifically, plaintiffs alleged that physical barriers on the ships denied them access to: 1) Emergency evacuation equipment ... 2) Facilities such as public restrooms, restaurants, swimming pools, and elevators ... Plaintiffs also alleged that the defendant charged them a premium for use of the four accessible cabins",,E-FCFCU-EXH-2005-0001,,"Denied access to emergency equipment, pools, restaurants, and elevators; premium charges for accessible cabins.",Alleged,Medium,LEGACY_ID:V-099
-> A-FCFCU-2016-0002,July 2016,,AMP Residential,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act (42 U.S.C. & 3601 et seq.),The groups allege that AMP has engaged in systemic discrimination against families with children across 20 properties evaluated in three states.,,E-FCFCU-EXH-2016-0002,,Systemic discrimination against families with children across 20 properties.,Alleged,Medium,LEGACY_ID:V-104
-> A-FCFCU-2016-0003,April 2016,,Anderson Housing Authority,,Statutory,"Fair Housing Act breach (Race, Gender, Disability); State housing law violation",Federal Fair Housing Act; state housing laws,"The complaint alleges that the defendant discriminated in its ownership and management of its multifamily public housing dwellings on the basis of race, gender, and disability in violation of the federal Fair Housing Act and for its failure to maintain its dwellings in a decent, safe, and sanitary condition in violation of state housing laws.",,E-FCFCU-EXH-2016-0003,,Female tenants subjected to degrading comments; disability accommodations ignored; failure to maintain dwellings in safe condition.,Alleged,Medium,LEGACY_ID:V-105
-> A-FCFCU-2014-0002,July 2014,,Brookfield Farms Homeowners Association,,Statutory,Fair Housing Act breach (Disability); Restrictive Covenant,Federal Fair Housing Act,This case challenges a restrictive covenant binding all homeowners in a subdivision that restricted housing to single families that deterred a group home for three unrelated adults from opening in the subdivision.,,E-FCFCU-EXH-2014-0002,,Restrictive covenant deterred a group home for three unrelated adults with disabilities from opening.,Alleged,Medium,LEGACY_ID:V-108
-> A-FCFCU-2012-0003,December 2012,,Buckingham Realty and Development Corp.,,Statutory,Fair Housing Act breach (Disability); Design and Construction accessibility,Federal Fair Housing Act,alleging discrimination against persons with disabilities in the design and construction of multi-family properties.,,E-FCFCU-EXH-2012-0003,,Lack of housing accessibility in multi-family properties for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-109
-> A-FCFCU-2016-0004,February 2016,,"Capitol Station / United Church Homes, Inc.",,Statutory,Fair Housing Act breach (Disability); Failure to repair,Federal Fair Housing Act,The complaint alleges that the defendants did not take timely action to repair the only elevator in an apartment building which housed residents age 62 years or older... Capitol Station was without a working elevator for five and a half weeks in August and September 2015 resulting in harm to residents with disabilities.,,E-FCFCU-EXH-2016-0004,,Residents with mobility issues trapped or endangered for five and a half weeks due to broken elevator.,Alleged,Medium,LEGACY_ID:V-110
-> A-FCFCU-2018-0002,April 2018,,Casas Baratas Aqui / Marshall Welton / SLB Investments,,Statutory,"Fair Housing Act breach (Race, Color, National Origin); ECOA; TILA; Indiana state law violations",Federal Fair Housing Act; Equal Credit Opportunity Act; Truth in Lending Act; Indiana Home Loan Practices Act,"The complaint alleges that the Defendants violated civil rights and consumer protection laws, including the federal Fair Housing Act, the federal Equal Credit Opportunity Act, the Truth in Lending Act, and several Indiana state laws.",,E-FCFCU-EXH-2018-0002,,"Discriminatory and predatory rent-to-own schemes involving nearly 1,000 houses.",Alleged,Medium,LEGACY_ID:V-111
+> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
+
+> A-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Recently, the United States Court of Appeals for the Ninth Circuit held that the ADA requires a chain of movie theaters to exhibit movies with closed captioning and video description unless the theaters can show that to do so would amount to a fundamental alteration or undue burden. Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",,E-FCFCU-EXH-2010-0001,,Failure to provide closed captioning and audio description in movie theaters.,Alleged,Medium,LEGACY_ID:V-053
+
+> A-FCFCU-2004-0001,2004,,"Too, Inc.",,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation. See, e.g., Colorado Cross Disability Coalition v. Too, Inc., 344 F. Supp. 2d 707 (D. Colo. 2004)",,E-FCFCU-EXH-2004-0001,,Physical/architectural barriers to entry for individuals with disabilities.,Alleged,Medium,LEGACY_ID:V-054
+
+> A-FCFCU-2008-0001,2008,,Carrols Corp.,,ADA,ADA,42 U.S.C. 12182(b)(2)(A)(iii),"the Second Circuit held that a public accommodation’s failure to provide employee training on effective communication with individuals with disabilities can constitute a violation of title III, specifically 42 U.S.C. 12182(b)(2)(A)(iii).",,E-FCFCU-EXH-2008-0001,,Failure to train employees on effective communication with disabled individuals.,Alleged,Medium,LEGACY_ID:V-055
+
+> A-FCFCU-2009-0001,2009,,Walt Disney World Co.,,ADA,ADA,ADA  36.302 (Reasonable modification);  36.311,"Indeed, there has been litigation concerning the legal obligations of covered entities to accommodate individuals with mobility disabilities who wish to use an electronic personal assistance mobility device (EPAMD), such as the Segway® PT... See Ault v. Walt Disney World Co., No. 6:07–cv–1785–Orl–31KRS, 2009 WL 3242028 (M.D. Fla. Oct. 6, 2009).",,E-FCFCU-EXH-2009-0001,,Restricting use of electronic personal assistance mobility devices (EPAMDs).,Alleged,Medium,LEGACY_ID:V-056
+
+> A-FCFCU-1999-0001,1999,,New York Yankees,,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation... Pascuiti v. New York Yankees, 87 F. Supp. 2d 221 (S.D.N.Y. 1999).",,E-FCFCU-EXH-1999-0001,,Discriminatory seating/barrier to access in sports stadium.,Alleged,Medium,LEGACY_ID:V-057
+
+> A-FCFCU-2016-0001,"December 27, 2016",,Aspen View Condo. Ass'n,,Statutory,Fair Housing Act breach (Retaliation),42 U.S.C. § 3617,plaintiff’s retaliation claim was not dependent upon his reasonable accommodation claim and that a reasonable jury could conclude that the fines were imposed in retaliation for allowing his tenant to live in the condo unit with her dog,,E-FCFCU-EXH-2016-0001,,Owner was fined for allowing a tenant to keep a service dog for epilepsy.,Alleged,Medium,LEGACY_ID:V-059
+
+> A-FCFCU-2003-0001,"November 5, 2003",,Woodcrest Condominiums Association,,Statutory,Fair Housing Act breach (Familial Status Discrimination),42 U.S.C. § 3604,the United States argues that defendants' former policy of restricting families with children to first floor units violates the Act as a matter of law.,,E-FCFCU-EXH-2003-0001,,Restricting families with children to first-floor units; steering prospective tenants.,Alleged,Medium,LEGACY_ID:V-062
+
+> A-FCFCU-2013-0001,"December 2, 2013",,61 Main Street Corp. and Rosario Marci,,Statutory,Fair Housing Act breach (Race and Color Discrimination),42 U.S.C. § 3604(a)-(b),"Specifically, the United States alleges that the defendants failed to inform African-American prospective tenants about available apartments... provided higher rent prices and less favorable security deposit terms to African-American prospective tenants",,E-FCFCU-EXH-2013-0001,,Misrepresenting unit availability and charging higher rents/security deposits to African-American prospective tenants.,Alleged,Medium,LEGACY_ID:V-063
+
+> A-FCFCU-2013-0002,"June 24, 2013",,Altoona Housing Authority,,Procedural,Procedural,42 U.S.C. § 3604,the defendant discriminated on the basis of race by evicting an African-American tenant with less due process than was given to white tenants with similar or worse lease violations.,,E-FCFCU-EXH-2013-0002,,Evicting an African-American tenant with less due process than white tenants.,Alleged,Medium,LEGACY_ID:V-065
+
+> A-FCFCU-2015-0001,"September 30, 2015",,Allan Rappuhn and affiliated entities,,Statutory,Fair Housing Act breach (Design and Construction),42 U.S.C. § 3604(f)(3)(C),"the defendants engaged in a pattern or practice of designing and constructing multifamily housing developments... in violation of the Fair Housing Act (FHA), 42 U.S.C. § 3604(f)(3)(C)",,E-FCFCU-EXH-2015-0001,,"Failure to design 71 developments with accessible routes, curb cuts, or usable bathrooms/kitchens.",Alleged,Medium,LEGACY_ID:V-066
+
+> A-FCFCU-2011-0001,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Intentional Discrimination),42 U.S.C. & 3604(a),"Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin in violation of &3604(a).",,E-FCFCU-EXH-2011-0001,,"Deteriorating living conditions, neighborhood blight, health and safety concerns, and decreased market values for homeowners near foreclosed homes.",Alleged,Medium,LEGACY_ID:V-067
+
+> A-FCFCU-2011-0002,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Terms and Conditions of Sale/Service),42 U.S.C. & 3604(b),"Defendants have discriminated in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith, because of race or national origin in violation of 42 U.S.C. &3604(b).",,E-FCFCU-EXH-2011-0002,,Transfer of title with responsibility of remedying delayed maintenance; discriminatory provision of services in connection with dwellings.,Alleged,Medium,LEGACY_ID:V-068
+
+> A-FCFCU-2011-0003,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Residential Real Estate-Related Transactions),42 U.S.C. & 3605,"Accordingly, Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin or discriminated in the terms or conditions of such a transaction in violation of 42 U.S.C. &3605.",,E-FCFCU-EXH-2011-0003,,Interference with purchase loan viability and closing of sales due to poor property appraisals in communities of color.,Alleged,Medium,LEGACY_ID:V-069
+
+> A-FCFCU-2013-0003,"June 28, 2013",,Deutsche Bank,,Procedural,Procedural,Local Slumlord Ordinances; FHA non-delegable duties,"On June 28, 2013, Deutsche Bank publicly confirmed its policies of outsourcing and abdicating legal responsibilities with regard to REO properties in the course of a $10,000,000.00 settlement with the City of Los Angeles in a so-called ‘slum lord’ case",,E-FCFCU-EXH-2013-0003,,Deterioration of foreclosed REO properties; creation of 'slum lord' conditions in Los Angeles.,Alleged,Medium,LEGACY_ID:V-070
+
+> A-FCFCU-2011-0004,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Perpetuating Segregation),42 U.S.C. & 3601,The failure to maintain and market REO dwellings in communities of color according to the same standards as REO dwellings in predominantly white neighborhoods were maintained has stigmatized communities of color as less desirable... and has the effect of perpetuating segregated conditions.,,E-FCFCU-EXH-2011-0004,,Stigmatization of communities of color; restriction of the ability of minority homeowners to move into majority white neighborhoods due to reduced equity.,Alleged,Medium,LEGACY_ID:V-071
+
+> A-FCFCU-1972-0001,1972 (Fuentes),,State Government / Creditors,,Procedural,Procedural,U.S. Constitution Amendment XIV,"Fuentes v. Shevin, which struck down a replevin statute that authorized the seizure of property (here household goods purchased on an installment contract) simply upon the filing of an ex parte application and the posting of bond",,E-FCFCU-EXH-1972-0001,,Mistaken deprivation of property (household goods) without prior hearing.,Alleged,Medium,LEGACY_ID:V-076
+
+> A-FCFCU-2014-0001,"October 28, 2014",,"Fannie Mae / Cyprexx Services, LLC",,Statutory,Discriminatory treatment in property maintenance,42 U.S.C. § 3604,"This property exhibited 16 maintenance deficiencies, including: unsecured pool area, overgrown grass, unlocked doors, invsaive plants, trash, accumulated mail, dead shrubbery, uncovered holes, damaged soffet, damaged fence, warning sign, and water damage/discoloration.",,E-FCFCU-EXH-2014-0001,,"16 maintenance deficiencies including unsecured pool, overgrown grass, unlocked doors, invasive plants, trash, and structural holes.",Alleged,Medium,LEGACY_ID:V-080
+
+> A-FCFCU-2009-0004,2009 - 2015,,Fannie Mae,,Procedural,Procedural,42 U.S.C. § 3601 et seq.,"Despite Plaintiffs’ efforts to get Fannie Mae to voluntarily comply with the Fair Housing Act, Fannie Mae did not change its behavior. With discriminatory intent and deliberate indifference to the discriminatory purpose and effects of its policies and practices, Fannie Mae continued to maintain its REO properties differently because of the predominant race and national origin of neighborhoods.",,E-FCFCU-EXH-2009-0004,,Ongoing systemic discrimination despite being alerted to disparate maintenance levels by NFHA.,Alleged,Medium,LEGACY_ID:V-081
+
+> A-FCFCU-1996-0001,January 1996,,"Apartment owner (Lake Charles, Louisiana)",,Statutory,Fair Housing Act breach (Race discrimination),42 U.S.C. § 3604,"When Mr. Lewis went to view the apartment, however, the owner refused to accept his deposit, saying, 'I just don't rent to you people.' ... 'Black, colored, Negro, whatever you call yourself, I don't rent to y'all.'",,E-FCFCU-EXH-1996-0001,,Denial of housing; blatant racial discrimination.,Alleged,Medium,LEGACY_ID:V-083
+
+> A-FCFCU-2017-0001,"March 15, 2017 (Filing date)",,"Harbour Portfolio VII, LP; CWAM II, LLC; Harbour Portfolio VI, LP",,Statutory,Predatory land contract / Housing discrimination (Reverse Redlining),42 U.S.C. § 3604; Equal Credit Opportunity Act,"Harbour marketed its contract for deed transactions exclusively, or almost exclusively, in African-American neighborhoods ... induced to purchase properties that were in very bad condition, and to pay inflated purchase prices and very high interest rates.",,E-FCFCU-EXH-2017-0001,,Exorbitant interest rates (9.9%-10%); burden of all repairs; high likelihood of immediate default.,Alleged,Medium,LEGACY_ID:V-086
+
+> A-FCFCU-2018-0001,2018 (Trial court decision),,Rainbow Realty Group Inc.,,Statutory,Breach of Warranty of Habitability,Indiana landlord-tenant laws; IC 32-31,the trial court reiterated its earlier entry of partial summary judgment and found that Rainbow had breached the warranty of habitability and had engaged in willful and deceptive acts regarding the nature of the agreement,,E-FCFCU-EXH-2018-0001,,Unlivable housing conditions; intentional deception regarding agreement nature.,Alleged,Medium,LEGACY_ID:V-087
+
+> A-FCFCU-1999-0002,Circa 1999-2000,,"Apartment complexes (Charlotte, NC / New Orleans, LA)",,Statutory,Fair Housing Act breach (Disability accessibility),42 U.S.C. § 3604(f)(3)(C),100% of complexes surveyed did not meet the Fair Housing Act's accessibility requirements for the physically disabled,,E-FCFCU-EXH-1999-0002,,Exclusion of persons with physical disabilities from multifamily housing.,Alleged,Medium,LEGACY_ID:V-088
+
+> A-FCFCU-2015-0003,2015,,Cromwell Police and Town Officials,,Statutory,Fair Housing Act breach (Discriminatory Statements),42 U.S.C. § 3604(c),Gilead later learned that the police leaked sensitive health information about this individual— information learned from this interaction—to the media.,,E-FCFCU-EXH-2015-0003,,Sensitive health information about a group home resident was leaked to the media.,Alleged,Medium,LEGACY_ID:V-091
+
+> A-FCFCU-1977-0001,1977-1979,,Elkhart County,,Procedural,Due Process Failure / Notice Error,Due Process Clause of the Fourteenth Amendment,"the United States Supreme Court has held that the due process clause of the fourteenth amendment requires notice by mail to mortgagees prior to a tax sale. ... Elkhart county began proceedings to sell the land at public auction. ... Notice was not given to the Mennonite Board of Missions by either the county or Moore, and the Board was unaware of the tax sale.",,E-FCFCU-EXH-1977-0001,,"Extinguishment of $14,000 mortgage interest/lien without actual notice.",Alleged,Medium,LEGACY_ID:V-096
+
+> A-FCFCU-2005-0001,2005,,Norwegian Cruise Line Ltd.,,ADA,ADA,Title III of the ADA,"Cruise passengers with disabilities brought action against a foreign-flagged cruise line, alleging violations of Title III of the ADA. Specifically, plaintiffs alleged that physical barriers on the ships denied them access to: 1) Emergency evacuation equipment ... 2) Facilities such as public restrooms, restaurants, swimming pools, and elevators ... Plaintiffs also alleged that the defendant charged them a premium for use of the four accessible cabins",,E-FCFCU-EXH-2005-0001,,"Denied access to emergency equipment, pools, restaurants, and elevators; premium charges for accessible cabins.",Alleged,Medium,LEGACY_ID:V-099
+
+> A-FCFCU-2016-0002,July 2016,,AMP Residential,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act (42 U.S.C. & 3601 et seq.),The groups allege that AMP has engaged in systemic discrimination against families with children across 20 properties evaluated in three states.,,E-FCFCU-EXH-2016-0002,,Systemic discrimination against families with children across 20 properties.,Alleged,Medium,LEGACY_ID:V-104
+
+> A-FCFCU-2016-0003,April 2016,,Anderson Housing Authority,,Statutory,"Fair Housing Act breach (Race, Gender, Disability); State housing law violation",Federal Fair Housing Act; state housing laws,"The complaint alleges that the defendant discriminated in its ownership and management of its multifamily public housing dwellings on the basis of race, gender, and disability in violation of the federal Fair Housing Act and for its failure to maintain its dwellings in a decent, safe, and sanitary condition in violation of state housing laws.",,E-FCFCU-EXH-2016-0003,,Female tenants subjected to degrading comments; disability accommodations ignored; failure to maintain dwellings in safe condition.,Alleged,Medium,LEGACY_ID:V-105
+
+> A-FCFCU-2014-0002,July 2014,,Brookfield Farms Homeowners Association,,Statutory,Fair Housing Act breach (Disability); Restrictive Covenant,Federal Fair Housing Act,This case challenges a restrictive covenant binding all homeowners in a subdivision that restricted housing to single families that deterred a group home for three unrelated adults from opening in the subdivision.,,E-FCFCU-EXH-2014-0002,,Restrictive covenant deterred a group home for three unrelated adults with disabilities from opening.,Alleged,Medium,LEGACY_ID:V-108
+
+> A-FCFCU-2012-0003,December 2012,,Buckingham Realty and Development Corp.,,Statutory,Fair Housing Act breach (Disability); Design and Construction accessibility,Federal Fair Housing Act,alleging discrimination against persons with disabilities in the design and construction of multi-family properties.,,E-FCFCU-EXH-2012-0003,,Lack of housing accessibility in multi-family properties for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-109
+
+> A-FCFCU-2016-0004,February 2016,,"Capitol Station / United Church Homes, Inc.",,Statutory,Fair Housing Act breach (Disability); Failure to repair,Federal Fair Housing Act,The complaint alleges that the defendants did not take timely action to repair the only elevator in an apartment building which housed residents age 62 years or older... Capitol Station was without a working elevator for five and a half weeks in August and September 2015 resulting in harm to residents with disabilities.,,E-FCFCU-EXH-2016-0004,,Residents with mobility issues trapped or endangered for five and a half weeks due to broken elevator.,Alleged,Medium,LEGACY_ID:V-110
+
+> A-FCFCU-2018-0002,April 2018,,Casas Baratas Aqui / Marshall Welton / SLB Investments,,Statutory,"Fair Housing Act breach (Race, Color, National Origin); ECOA; TILA; Indiana state law violations",Federal Fair Housing Act; Equal Credit Opportunity Act; Truth in Lending Act; Indiana Home Loan Practices Act,"The complaint alleges that the Defendants violated civil rights and consumer protection laws, including the federal Fair Housing Act, the federal Equal Credit Opportunity Act, the Truth in Lending Act, and several Indiana state laws.",,E-FCFCU-EXH-2018-0002,,"Discriminatory and predatory rent-to-own schemes involving nearly 1,000 houses.",Alleged,Medium,LEGACY_ID:V-111
+
 > A-FCFCU-2015-0004,May 2015 - December 2016,,Fannie Mae,,Statutory,"Fair Housing Act breach (Race, National Origin); Discriminatory maintenance",Federal Fair Housing Act,The lawsuit alleges that Fannie Mae purposely fails to maintain its foreclosures... in middle- and working-class African American and Latino neighborhoods to the same level of quality it does for foreclosures it owns in white middle- and working-class neighborhoods.,,E-FCFCU-EXH-2015-0004,,Neglect of foreclosed properties in communities of color contributing to blight compared to white neighborhoods.,Alleged,Medium,LEGACY_ID:V-114
 
 ### Assistant
@@ -4914,98 +7400,190 @@ canonical_ref: ""
 > If you want, after Gemini returns, paste **only the Executive Readiness Summary + Phase Readiness sections** here and I’ll sanity-check the “GO” call before you start mailing.
 
 ### User
-> we also need to apply these critiques, Auditing a Digital Legal War Room
-> Feb 1, 2026, 11:08 AM
-> Auditing a Digital Legal War Room
-> Play
-> 
-> 
-> 08:39
-> 16:09
-> Mute
-> 
-> Settings
-> (0:00) Welcome to The Critique. Today, we're in a digital war room reviewing a submission called (0:06) Case Audit Summary. It's a massive structured archive for a legal battle covering foreclosure, (0:13) credit disputes, and even a hotel dispute with a service animal named Gigi.
-> (0:18) The expertise is obvious. I mean, you see a cockpit folder, (0:22) a settlement exposure matrix, Python scripts. This is far beyond typical pro se work.
-> (0:27) But that sophistication can sometimes hide strategic clutter. So let's get right into (0:33) the feedback. While the comprehensive nature of the (0:36) O4 regulators folder is impressive, the simultaneous targeting of every possible agency (0:42) risks diluting the narrative impact of the primary claim.
-> (0:46) Okay, that's a strong start. When you say diluting the narrative, you're talking about just (0:51) the sheer number of fronts they're fighting on. (0:53) I am, yeah.
-> I mean, if you actually open up the directory content, (0:58) 04 regulators, it's frankly exhausting just to scroll through it. (1:03) You've got subfolders for the BBB, the Indiana AG, the CFPB, NCUA, DOJ civil rights, the FCC, (1:13) HUD, all of them. The listener even made this violation to regulator mapping file.
-> (1:19) Which, you know, from a pure systems perspective is beautiful. (1:23) It's logical. You have a violation, you map it to a regulator.
-> (1:27) It is logical, but it's logical in a vacuum, in a courtroom or a negotiation. (1:32) It's actually dangerous. The weakness here is this failure to distinguish between, (1:37) say, administrative exhaustion, which is a good thing, checking the boxes.
-> (1:41) Right. And looking like a vexatious litigant. (1:44) By filing complaints against every single actor, the sheriff, the bank, (1:48) the utility company, all of them.
-> All at once. (1:50) All at once, across every channel. You risk looking less like a victim of a specific injustice (1:56) and more like someone who is just, you know, at war with the world.
-> (2:00) I see what you mean. It's like the difference between a surgical strike and just carpet (2:05) bombing. You bomb everything, people stop paying attention to the real target.
-> (2:09) Precisely. And look at the file, manifest, SheriffOversightPacket.md. (2:15) OK, fine. But it's sitting right next to FCCHarassmentComplaint.md. (2:20) When a regulator or judge's clerk sees those two things given equal weight, (2:25) they don't see thorough.
-> They see a pattern of conflict. (2:29) They start to wonder if the common denominator here isn't bad luck, (2:32) but maybe the litigant themselves. (2:34) And that FCC complaint? That one really sticks out to me.
-> (2:39) Telecom disputes are usually, what, billing issues? (2:43) It feels so disproportionate to put that on the same level as losing your home. (2:47) It is. It's noise.
-> That's the whole kitchen sink risk we talk about. (2:52) If you're screaming about a $50 phone bill with the same intensity that you're screaming (2:55) about foreclosure... You lose credibility on the foreclosure. (2:59) Yeah.
-> It suggests a lack of focus. (3:01) So the suggestion isn't to stop, but to stop the total war approach. (3:06) OK.
-> (3:07) The suggestion is to implement a tiered escalation strategy, (3:10) both in your file organization and in how you deploy these complaints. (3:14) You have to signal to the main audience, a judge or the CFPB, (3:18) that you are disciplined and focused on the core injury. (3:21) So how do we actually fix the folders to show that kind of discipline? (3:24) First, we move things.
-> I would take that FCCHarassmentComplaint.md (3:29) and the BBBComplaintNarrative.md and just move them out of the active regulators folder. (3:35) OK. (3:35) Create a new folder.
-> Call it secondary or reserve. (3:39) Something distinct from the core 01 phase foreclosure files. (3:43) So we're not deleting them.
-> We're just benching them for now. (3:46) Putting them in cold storage. They're there if you need them, but they aren't on the front line.
-> (3:51) Second, that 00CaseSnapshotOnePager.md... (3:55) In the cockpit, yeah. (3:56) ...that needs to explicitly state which regulator is the primary one. (4:00) If the mortgage is the main event, then list the CFPB as primary.
-> (4:04) The others, list them as contingent actions or escalation paths. (4:08) Ah, that creates a clear hierarchy. It tells the reader, I know what's most important here.
-> (4:13) Exactly. And finally, use that LitigationDecisionTree.md. (4:18) It's a great tool. When you're presenting this to a judge, (4:22) visually gray out the branches for the hotel dispute and the FCC.
-> (4:26) It shows restraint. It says, Your Honor, I have these other issues, (4:31) but I'm choosing not to burden the court with them. (4:33) That signals a legal maturity that this all-in structure just, it completely lacks right now.
-> (4:39) Restraint can be a powerful weapon. (4:42) Now, speaking of presentation, let's talk about the vibe of some of these files. (4:47) The tone.
-> It feels like it's clashing with itself in places. (4:51) The juxtaposition of hyperprofessional forensic accounting files (4:54) alongside emotionally charged file names undermines the objective authority established by the data. (5:01) I noticed this right away.
-> I was in the 00 cockpit, (5:04) and I felt like I was looking at a PricewaterhouseCoopers audit. (5:06) I mean, really impressive. (5:08) It's incredibly professional.
-> You see files like NTRRefinedSettlementExposureMatrix.md. (5:16) That title just screams hard math, logic, stress-tested models. It builds tremendous authority. (5:23) But then, then I went over to the 10Overview folder.
-> (5:28) And that's where the wheels come off the credibility bus. (5:31) You find a file called 09PremonitionsIKnewBeforeIKnew.md. (5:37) Premonitions, right. And in another folder, one called WI8.01.010202051251215, (5:47) they threw us into the cold.
-> (5:49) Those are evocative titles. (5:51) They're evocative and they are fatal to the case. (5:53) If these files are ever subpoenaed or if a judge reviews this archive, (5:57) those titles effectively erase all the good work done by the settlement matrix.
-> (6:03) How so? (6:04) Premonitions suggests a subjective, maybe even conspiratorial mindset. (6:07) It sounds like a diary entry, not a legal dossier. (6:10) And they threw us into the cold is a victim statement, not a statement of fact.
-> (6:16) Exactly. And when you put those emotional titles next to something (6:20) called a damage accounting ledger, you weaken the ledger. (6:24) The reader starts wondering, well, is the math in this ledger also based on premonitions? (6:29) It contaminates the objective evidence with subjective emotion.
-> (6:33) OK, so we need to fix this tone dissonance. (6:36) The content is probably relevant, but the wrapper is all wrong. (6:40) The suggestion is to sanitize the internal nomenclature.
-> (6:43) You need to maintain a consistent auditor persona throughout the entire directory. (6:48) Segregate the emotional narrative strictly to the 06 public pressure folder. (6:52) And even then, be careful.
-> (6:54) The whole archive needs to sound like it was written by a third party forensic accountant, (6:58) not the person who lived through it. (7:00) OK, so give me a concrete example. (7:02) How do we salvage that premonitions file? (7:04) Easy.
-> (7:05) You rename 09 premonitions I knew before I knew to something dry and descriptive. (7:10) Something like log of procedural regularities and notices dot MD. (7:14) That's boring.
-> (7:17) Which is good. (7:19) Boring is beautiful in litigation. (7:21) If the file is about things you suspected were going wrong, (7:24) you frame it as an audit log of red flags or irregularities, not psychic intuition.
-> (7:29) Got it. (7:30) And the cold file? (7:32) For 2025-1215, they threw us into the cart dot MD, which I'm guessing documents an eviction. (7:38) Rename that to timeline events, displacement and exposure dot MD.
-> (7:43) Displacement and exposure. (7:46) OK, that's clinical. (7:47) Sounds like an insurance adjuster wrote it.
-> (7:50) And that's the goal. (7:51) You are documenting a claim, not telling a story for sympathy. (7:54) And structurally, make sure the 06 public pressure folder is walled off from 00 cockpit.
-> (7:59) It has to be crystal clear that the cockpit is for facts and public pressure is for PR. (8:04) Don't mix them. (8:05) Right.
-> (8:05) That separation of church and state is vital. (8:09) Facts versus PR. (8:11) OK, let's move to the third critique.
-> (8:13) We touched on it a little with the kitchen sink problem, (8:15) but there's one folder in particular that seems to be causing a lot of trouble. (8:21) 07 hotel dispute. (8:23) The inclusion of 07 hotel dispute as a top level directory equal to 01 phase foreclosure (8:30) inadvertently signals that the listener views a hospitality service issue (8:34) as equivalent to the loss of real property.
-> (8:36) It's just sitting right there in the root directory. (8:39) You have foreclosure, litigation, and then boom, hotel dispute. (8:43) That structure, it just implies equivalence.
-> (8:46) By having ggdocumentationpack.md and narrativeroomconditions.md in a root folder, (8:52) it frames the user as someone who, well, (8:55) who maybe can't distinguish between a major life event and a customer service complaint. (9:00) But I can hear the listener saying, (9:01) I was only in that hotel because the bank took my house. (9:05) It's all part of the same story.
-> (9:08) And it is part of the same story, but it's not the same type of legal issue. (9:13) A skeptic reading this, and you have to assume your audience is skeptical. (9:16) Always.
-> (9:17) They might dismiss the whole foreclosure defense (9:19) when they see this massive folder about a service dog and room conditions. (9:22) They might just think, oh, this person is just difficult. (9:25) They fight with the bank.
-> (9:26) They fight with the hotel. (9:27) Who's next? (9:27) It just dilutes the sympathy for the core issue. (9:31) It absolutely does.
-> (9:32) So the suggestion is to reframe the hotel dispute. (9:34) It needs to be strictly a consequential damage (9:38) subfolder moved out of the top level hierarchy entirely. (9:42) So we're demoting it.
-> (9:43) It's not a phase of the war anymore. (9:45) It's a cost of the war. (9:46) That's it.
-> (9:47) Exactly. (9:47) I would move the entire contents of 07 hotel dispute into, let's see, (9:55) content-00 cockpit-20 evidence-40 exposure and harm-20 economic harm. (10:05) Wow, that's a deep bury.
-> (10:06) But logically, it makes sense. (10:08) It frames the hotel not as another villain you're fighting, (10:11) but as a hardship you were forced to endure. (10:14) And I'd rename the folder itself from hotel dispute to something like (10:18) mitigation of damages, temporary housing obstacles.
-> (10:22) Mitigation of damages. (10:23) That's a legal term. (10:25) It tells the court, I tried to find housing and these were the roadblocks.
-> (10:29) It turns a complaint into part of a legal argument. (10:32) It does. (10:33) And about the dog, the ggservicedogtrainingmanual.md, (10:37) that should only be used as an exhibit for medical necessity within the damages face.
-> (10:42) Don't let it look like you're launching a separate federal lawsuit about ADA compliance. (10:47) It's a side issue that's taken on a life of its own. (10:50) It really is all about perspective.
-> (10:51) When you're in the trenches, everything feels equally urgent. (10:56) But when you build the file, you have to impose a hierarchy. (10:59) That's the job of the war room, to filter the noise from the signal.
-> (11:03) OK, let's talk about the files themselves. (11:05) There's a lot of raw data here. (11:07) I'm seeing a lot of .csv files, (11:11) financialtransactionsdamages.csv, evidenceindexmaster.csv. (11:14) The reliance on raw CSV files for critical evidence indexes (11:18) places a cognitive burden on the recipient that may prevent them from seeing the smoking gun.
-> (11:24) Now, for our listener, these files are probably incredibly powerful. (11:28) We see scripts like ingestevidence.py, so they're clearly running some kind of dashboard. (11:33) And for a developer, that's fantastic.
-> (11:36) But a judge is not a developer. (11:37) A judge will not open a CSV file, (11:39) and they are certainly not going to run a Python script to see your evidence. (11:43) The readmebinder.md file suggests there's an automated output, (11:46) but the directory as it stands relies really heavily on these raw data tables.
-> (11:51) If the person reading this has to manually cross-reference a violation ID in a spreadsheet, (11:56) the argument is just lost. (11:58) They won't do it. (11:59) We talk about cognitive burden all the time.
-> (12:02) If you make the judge do math or database lookups to understand your point, (12:07) you have already lost. (12:08) You lose every single time. (12:09) The suggestion here is to create narrative bridges.
-> (12:13) You have to visually render these CSVs into static PDFs (12:17) or maybe mark down tables inside the cockpit summaries. (12:20) And how do they do that without, you know, redoing everything? (12:23) They have the tools already. (12:25) I see a script in there called generate-timeline-view.py. (12:28) So take the data from ntcase-docket-checklist.csv, (12:33) run that script, and generate a visual-docket-timeline.pdf. (12:36) Put that PDF at the top of the O1 Case Master folder.
-> (12:39) So instead of a spreadsheet of dates, I get a clean visual timeline I can print out. (12:44) Visuals always win. (12:46) Here's another one, nt-accounting-reconciliation-matrix-1-pager.md. (12:52) This sounds like a summary, but often these things just point to the raw data.
-> (12:57) This document needs to explicitly state the bottom line numbers, (13:01) the actual dollar value, in the very first paragraph. (13:04) So don't write C attachment A, write the bank owes me $45,000. (13:10) Exactly.
-> (13:11) Don't send them digging through nt-damage-accounting-ledger.md to do the math themselves. (13:17) Give them the answer key up front. (13:19) And finally, I'd add a how-to-read-this-archive guide at the very root of the whole project.
-> (13:24) Oh, that's smart. (13:25) In it, you explain that the CSVs are just the backing data for the PDF summaries. (13:30) You're giving them permission to ignore the spreadsheets.
-> (13:33) Yes. (13:35) Tell them the CSVs are there for audit purposes only. (13:39) The real narrative is in the PDFs.
-> (13:42) You have to guide the user. (13:45) They've built the Ferrari engine here, but they need to give the judge the steering wheel, (13:49) not the schematic for the fuel injection system. (13:51) This has been a really deep dive into the architecture of a legal fight.
-> (13:55) It's so rare to see this level of organization. (13:58) But as we've discussed, organization can quickly turn into overcomplication. (14:01) Let's recap the main points for our listener.
-> (14:04) Okay, four main things to fix. (14:06) First up was strategic focus. (14:09) You warned about that kitchen sink risk.
-> (14:11) Right. (14:12) Consolidate your targets. (14:13) You've built a regulatory cannon in that O4 regulators folder, (14:16) but firing it at everyone all at once makes you look erratic.
-> (14:20) Use that tiered escalation strategy. (14:22) Move the FCC and BBB files to a reserve folder and focus your fire. (14:26) Second was tone dissonance.
-> (14:28) The file names need a serious overhaul. (14:30) Professionalize your titles. (14:32) You can't have a refined settlement matrix sitting next to a file called premonitions.
-> (14:37) Rename the emotional files to sound like forensic audit logs. (14:41) Timeline event displacement is evidence. (14:44) They threw us into the cold is a story.
-> (14:47) And wall off the PR content from the cockpit. (14:50) Third, the hotel dispute. (14:52) It's just taking up way too much real estate.
-> (14:56) Subordinate the hotel issue. (14:57) That O7 hotel dispute cannot be a top level folder. (15:02) It makes a hotel complaint seem as important as a foreclosure.
-> (15:06) Move that whole thing inside the damages section. (15:09) Frame it all as consequential damages from the core issue, not a separate war. (15:14) And finally, data usability.
-> (15:17) Make it easy for the reader. (15:18) Visualize the data. (15:20) Please don't make your judge open a CSV.
-> (15:23) Use your own scripts to output visual summaries. (15:26) Create those narrative bridges that turn raw data into clean PDFs or tables. (15:31) And pull the bottom line dollar amounts out of the spreadsheets (15:34) and put them right in the first paragraph of your summaries.
-> (15:37) This listener has built an absolutely incredible foundation. (15:41) That cockpit concept is brilliant. (15:43) And the automation shows a mind that is clearly ready for a complex battle.
-> (15:48) But a war room has to be orderly and it must be focused. (15:51) It does. (15:52) Right now, there's just a little too much noise mixed in with the signal.
-> (15:56) But the signal itself is very, very strong. (15:59) We would love to see the next iteration of the 00 cockpit (16:01) once you've had a chance to filter out some of that noise and tighten the focus. (16:05) Please submit it again.
+> we also need to apply these critiques, Auditing a Digital Legal War Room
+
+> Feb 1, 2026, 11:08 AM
+
+> Auditing a Digital Legal War Room
+
+> Play
+
+> 
+
+> 
+
+> 08:39
+
+> 16:09
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) Welcome to The Critique. Today, we're in a digital war room reviewing a submission called (0:06) Case Audit Summary. It's a massive structured archive for a legal battle covering foreclosure, (0:13) credit disputes, and even a hotel dispute with a service animal named Gigi.
+
+> (0:18) The expertise is obvious. I mean, you see a cockpit folder, (0:22) a settlement exposure matrix, Python scripts. This is far beyond typical pro se work.
+
+> (0:27) But that sophistication can sometimes hide strategic clutter. So let's get right into (0:33) the feedback. While the comprehensive nature of the (0:36) O4 regulators folder is impressive, the simultaneous targeting of every possible agency (0:42) risks diluting the narrative impact of the primary claim.
+
+> (0:46) Okay, that's a strong start. When you say diluting the narrative, you're talking about just (0:51) the sheer number of fronts they're fighting on. (0:53) I am, yeah.
+
+> I mean, if you actually open up the directory content, (0:58) 04 regulators, it's frankly exhausting just to scroll through it. (1:03) You've got subfolders for the BBB, the Indiana AG, the CFPB, NCUA, DOJ civil rights, the FCC, (1:13) HUD, all of them. The listener even made this violation to regulator mapping file.
+
+> (1:19) Which, you know, from a pure systems perspective is beautiful. (1:23) It's logical. You have a violation, you map it to a regulator.
+
+> (1:27) It is logical, but it's logical in a vacuum, in a courtroom or a negotiation. (1:32) It's actually dangerous. The weakness here is this failure to distinguish between, (1:37) say, administrative exhaustion, which is a good thing, checking the boxes.
+
+> (1:41) Right. And looking like a vexatious litigant. (1:44) By filing complaints against every single actor, the sheriff, the bank, (1:48) the utility company, all of them.
+
+> All at once. (1:50) All at once, across every channel. You risk looking less like a victim of a specific injustice (1:56) and more like someone who is just, you know, at war with the world.
+
+> (2:00) I see what you mean. It's like the difference between a surgical strike and just carpet (2:05) bombing. You bomb everything, people stop paying attention to the real target.
+
+> (2:09) Precisely. And look at the file, manifest, SheriffOversightPacket.md. (2:15) OK, fine. But it's sitting right next to FCCHarassmentComplaint.md. (2:20) When a regulator or judge's clerk sees those two things given equal weight, (2:25) they don't see thorough.
+
+> They see a pattern of conflict. (2:29) They start to wonder if the common denominator here isn't bad luck, (2:32) but maybe the litigant themselves. (2:34) And that FCC complaint? That one really sticks out to me.
+
+> (2:39) Telecom disputes are usually, what, billing issues? (2:43) It feels so disproportionate to put that on the same level as losing your home. (2:47) It is. It's noise.
+
+> That's the whole kitchen sink risk we talk about. (2:52) If you're screaming about a $50 phone bill with the same intensity that you're screaming (2:55) about foreclosure... You lose credibility on the foreclosure. (2:59) Yeah.
+
+> It suggests a lack of focus. (3:01) So the suggestion isn't to stop, but to stop the total war approach. (3:06) OK.
+
+> (3:07) The suggestion is to implement a tiered escalation strategy, (3:10) both in your file organization and in how you deploy these complaints. (3:14) You have to signal to the main audience, a judge or the CFPB, (3:18) that you are disciplined and focused on the core injury. (3:21) So how do we actually fix the folders to show that kind of discipline? (3:24) First, we move things.
+
+> I would take that FCCHarassmentComplaint.md (3:29) and the BBBComplaintNarrative.md and just move them out of the active regulators folder. (3:35) OK. (3:35) Create a new folder.
+
+> Call it secondary or reserve. (3:39) Something distinct from the core 01 phase foreclosure files. (3:43) So we're not deleting them.
+
+> We're just benching them for now. (3:46) Putting them in cold storage. They're there if you need them, but they aren't on the front line.
+
+> (3:51) Second, that 00CaseSnapshotOnePager.md... (3:55) In the cockpit, yeah. (3:56) ...that needs to explicitly state which regulator is the primary one. (4:00) If the mortgage is the main event, then list the CFPB as primary.
+
+> (4:04) The others, list them as contingent actions or escalation paths. (4:08) Ah, that creates a clear hierarchy. It tells the reader, I know what's most important here.
+
+> (4:13) Exactly. And finally, use that LitigationDecisionTree.md. (4:18) It's a great tool. When you're presenting this to a judge, (4:22) visually gray out the branches for the hotel dispute and the FCC.
+
+> (4:26) It shows restraint. It says, Your Honor, I have these other issues, (4:31) but I'm choosing not to burden the court with them. (4:33) That signals a legal maturity that this all-in structure just, it completely lacks right now.
+
+> (4:39) Restraint can be a powerful weapon. (4:42) Now, speaking of presentation, let's talk about the vibe of some of these files. (4:47) The tone.
+
+> It feels like it's clashing with itself in places. (4:51) The juxtaposition of hyperprofessional forensic accounting files (4:54) alongside emotionally charged file names undermines the objective authority established by the data. (5:01) I noticed this right away.
+
+> I was in the 00 cockpit, (5:04) and I felt like I was looking at a PricewaterhouseCoopers audit. (5:06) I mean, really impressive. (5:08) It's incredibly professional.
+
+> You see files like NTRRefinedSettlementExposureMatrix.md. (5:16) That title just screams hard math, logic, stress-tested models. It builds tremendous authority. (5:23) But then, then I went over to the 10Overview folder.
+
+> (5:28) And that's where the wheels come off the credibility bus. (5:31) You find a file called 09PremonitionsIKnewBeforeIKnew.md. (5:37) Premonitions, right. And in another folder, one called WI8.01.010202051251215, (5:47) they threw us into the cold.
+
+> (5:49) Those are evocative titles. (5:51) They're evocative and they are fatal to the case. (5:53) If these files are ever subpoenaed or if a judge reviews this archive, (5:57) those titles effectively erase all the good work done by the settlement matrix.
+
+> (6:03) How so? (6:04) Premonitions suggests a subjective, maybe even conspiratorial mindset. (6:07) It sounds like a diary entry, not a legal dossier. (6:10) And they threw us into the cold is a victim statement, not a statement of fact.
+
+> (6:16) Exactly. And when you put those emotional titles next to something (6:20) called a damage accounting ledger, you weaken the ledger. (6:24) The reader starts wondering, well, is the math in this ledger also based on premonitions? (6:29) It contaminates the objective evidence with subjective emotion.
+
+> (6:33) OK, so we need to fix this tone dissonance. (6:36) The content is probably relevant, but the wrapper is all wrong. (6:40) The suggestion is to sanitize the internal nomenclature.
+
+> (6:43) You need to maintain a consistent auditor persona throughout the entire directory. (6:48) Segregate the emotional narrative strictly to the 06 public pressure folder. (6:52) And even then, be careful.
+
+> (6:54) The whole archive needs to sound like it was written by a third party forensic accountant, (6:58) not the person who lived through it. (7:00) OK, so give me a concrete example. (7:02) How do we salvage that premonitions file? (7:04) Easy.
+
+> (7:05) You rename 09 premonitions I knew before I knew to something dry and descriptive. (7:10) Something like log of procedural regularities and notices dot MD. (7:14) That's boring.
+
+> (7:17) Which is good. (7:19) Boring is beautiful in litigation. (7:21) If the file is about things you suspected were going wrong, (7:24) you frame it as an audit log of red flags or irregularities, not psychic intuition.
+
+> (7:29) Got it. (7:30) And the cold file? (7:32) For 2025-1215, they threw us into the cart dot MD, which I'm guessing documents an eviction. (7:38) Rename that to timeline events, displacement and exposure dot MD.
+
+> (7:43) Displacement and exposure. (7:46) OK, that's clinical. (7:47) Sounds like an insurance adjuster wrote it.
+
+> (7:50) And that's the goal. (7:51) You are documenting a claim, not telling a story for sympathy. (7:54) And structurally, make sure the 06 public pressure folder is walled off from 00 cockpit.
+
+> (7:59) It has to be crystal clear that the cockpit is for facts and public pressure is for PR. (8:04) Don't mix them. (8:05) Right.
+
+> (8:05) That separation of church and state is vital. (8:09) Facts versus PR. (8:11) OK, let's move to the third critique.
+
+> (8:13) We touched on it a little with the kitchen sink problem, (8:15) but there's one folder in particular that seems to be causing a lot of trouble. (8:21) 07 hotel dispute. (8:23) The inclusion of 07 hotel dispute as a top level directory equal to 01 phase foreclosure (8:30) inadvertently signals that the listener views a hospitality service issue (8:34) as equivalent to the loss of real property.
+
+> (8:36) It's just sitting right there in the root directory. (8:39) You have foreclosure, litigation, and then boom, hotel dispute. (8:43) That structure, it just implies equivalence.
+
+> (8:46) By having ggdocumentationpack.md and narrativeroomconditions.md in a root folder, (8:52) it frames the user as someone who, well, (8:55) who maybe can't distinguish between a major life event and a customer service complaint. (9:00) But I can hear the listener saying, (9:01) I was only in that hotel because the bank took my house. (9:05) It's all part of the same story.
+
+> (9:08) And it is part of the same story, but it's not the same type of legal issue. (9:13) A skeptic reading this, and you have to assume your audience is skeptical. (9:16) Always.
+
+> (9:17) They might dismiss the whole foreclosure defense (9:19) when they see this massive folder about a service dog and room conditions. (9:22) They might just think, oh, this person is just difficult. (9:25) They fight with the bank.
+
+> (9:26) They fight with the hotel. (9:27) Who's next? (9:27) It just dilutes the sympathy for the core issue. (9:31) It absolutely does.
+
+> (9:32) So the suggestion is to reframe the hotel dispute. (9:34) It needs to be strictly a consequential damage (9:38) subfolder moved out of the top level hierarchy entirely. (9:42) So we're demoting it.
+
+> (9:43) It's not a phase of the war anymore. (9:45) It's a cost of the war. (9:46) That's it.
+
+> (9:47) Exactly. (9:47) I would move the entire contents of 07 hotel dispute into, let's see, (9:55) content-00 cockpit-20 evidence-40 exposure and harm-20 economic harm. (10:05) Wow, that's a deep bury.
+
+> (10:06) But logically, it makes sense. (10:08) It frames the hotel not as another villain you're fighting, (10:11) but as a hardship you were forced to endure. (10:14) And I'd rename the folder itself from hotel dispute to something like (10:18) mitigation of damages, temporary housing obstacles.
+
+> (10:22) Mitigation of damages. (10:23) That's a legal term. (10:25) It tells the court, I tried to find housing and these were the roadblocks.
+
+> (10:29) It turns a complaint into part of a legal argument. (10:32) It does. (10:33) And about the dog, the ggservicedogtrainingmanual.md, (10:37) that should only be used as an exhibit for medical necessity within the damages face.
+
+> (10:42) Don't let it look like you're launching a separate federal lawsuit about ADA compliance. (10:47) It's a side issue that's taken on a life of its own. (10:50) It really is all about perspective.
+
+> (10:51) When you're in the trenches, everything feels equally urgent. (10:56) But when you build the file, you have to impose a hierarchy. (10:59) That's the job of the war room, to filter the noise from the signal.
+
+> (11:03) OK, let's talk about the files themselves. (11:05) There's a lot of raw data here. (11:07) I'm seeing a lot of .csv files, (11:11) financialtransactionsdamages.csv, evidenceindexmaster.csv. (11:14) The reliance on raw CSV files for critical evidence indexes (11:18) places a cognitive burden on the recipient that may prevent them from seeing the smoking gun.
+
+> (11:24) Now, for our listener, these files are probably incredibly powerful. (11:28) We see scripts like ingestevidence.py, so they're clearly running some kind of dashboard. (11:33) And for a developer, that's fantastic.
+
+> (11:36) But a judge is not a developer. (11:37) A judge will not open a CSV file, (11:39) and they are certainly not going to run a Python script to see your evidence. (11:43) The readmebinder.md file suggests there's an automated output, (11:46) but the directory as it stands relies really heavily on these raw data tables.
+
+> (11:51) If the person reading this has to manually cross-reference a violation ID in a spreadsheet, (11:56) the argument is just lost. (11:58) They won't do it. (11:59) We talk about cognitive burden all the time.
+
+> (12:02) If you make the judge do math or database lookups to understand your point, (12:07) you have already lost. (12:08) You lose every single time. (12:09) The suggestion here is to create narrative bridges.
+
+> (12:13) You have to visually render these CSVs into static PDFs (12:17) or maybe mark down tables inside the cockpit summaries. (12:20) And how do they do that without, you know, redoing everything? (12:23) They have the tools already. (12:25) I see a script in there called generate-timeline-view.py. (12:28) So take the data from ntcase-docket-checklist.csv, (12:33) run that script, and generate a visual-docket-timeline.pdf. (12:36) Put that PDF at the top of the O1 Case Master folder.
+
+> (12:39) So instead of a spreadsheet of dates, I get a clean visual timeline I can print out. (12:44) Visuals always win. (12:46) Here's another one, nt-accounting-reconciliation-matrix-1-pager.md. (12:52) This sounds like a summary, but often these things just point to the raw data.
+
+> (12:57) This document needs to explicitly state the bottom line numbers, (13:01) the actual dollar value, in the very first paragraph. (13:04) So don't write C attachment A, write the bank owes me $45,000. (13:10) Exactly.
+
+> (13:11) Don't send them digging through nt-damage-accounting-ledger.md to do the math themselves. (13:17) Give them the answer key up front. (13:19) And finally, I'd add a how-to-read-this-archive guide at the very root of the whole project.
+
+> (13:24) Oh, that's smart. (13:25) In it, you explain that the CSVs are just the backing data for the PDF summaries. (13:30) You're giving them permission to ignore the spreadsheets.
+
+> (13:33) Yes. (13:35) Tell them the CSVs are there for audit purposes only. (13:39) The real narrative is in the PDFs.
+
+> (13:42) You have to guide the user. (13:45) They've built the Ferrari engine here, but they need to give the judge the steering wheel, (13:49) not the schematic for the fuel injection system. (13:51) This has been a really deep dive into the architecture of a legal fight.
+
+> (13:55) It's so rare to see this level of organization. (13:58) But as we've discussed, organization can quickly turn into overcomplication. (14:01) Let's recap the main points for our listener.
+
+> (14:04) Okay, four main things to fix. (14:06) First up was strategic focus. (14:09) You warned about that kitchen sink risk.
+
+> (14:11) Right. (14:12) Consolidate your targets. (14:13) You've built a regulatory cannon in that O4 regulators folder, (14:16) but firing it at everyone all at once makes you look erratic.
+
+> (14:20) Use that tiered escalation strategy. (14:22) Move the FCC and BBB files to a reserve folder and focus your fire. (14:26) Second was tone dissonance.
+
+> (14:28) The file names need a serious overhaul. (14:30) Professionalize your titles. (14:32) You can't have a refined settlement matrix sitting next to a file called premonitions.
+
+> (14:37) Rename the emotional files to sound like forensic audit logs. (14:41) Timeline event displacement is evidence. (14:44) They threw us into the cold is a story.
+
+> (14:47) And wall off the PR content from the cockpit. (14:50) Third, the hotel dispute. (14:52) It's just taking up way too much real estate.
+
+> (14:56) Subordinate the hotel issue. (14:57) That O7 hotel dispute cannot be a top level folder. (15:02) It makes a hotel complaint seem as important as a foreclosure.
+
+> (15:06) Move that whole thing inside the damages section. (15:09) Frame it all as consequential damages from the core issue, not a separate war. (15:14) And finally, data usability.
+
+> (15:17) Make it easy for the reader. (15:18) Visualize the data. (15:20) Please don't make your judge open a CSV.
+
+> (15:23) Use your own scripts to output visual summaries. (15:26) Create those narrative bridges that turn raw data into clean PDFs or tables. (15:31) And pull the bottom line dollar amounts out of the spreadsheets (15:34) and put them right in the first paragraph of your summaries.
+
+> (15:37) This listener has built an absolutely incredible foundation. (15:41) That cockpit concept is brilliant. (15:43) And the automation shows a mind that is clearly ready for a complex battle.
+
+> (15:48) But a war room has to be orderly and it must be focused. (15:51) It does. (15:52) Right now, there's just a little too much noise mixed in with the signal.
+
+> (15:56) But the signal itself is very, very strong. (15:59) We would love to see the next iteration of the 00 cockpit (16:01) once you've had a chance to filter out some of that noise and tighten the focus. (16:05) Please submit it again.
+
 > (16:07) Until next time, keep refining the work.
 
 ### Assistant
@@ -5207,1111 +7785,2216 @@ canonical_ref: ""
 > And I’ll give you a straight **GO / NO-GO** call.
 
 ### User
-> create a renaming map and correct any prefixes. ```markdown
-> . 📂 CASE_FCFCU
-> ├── 📄 CASE_FCFCU.code-workspace
-> ├── 📄 README_BINDER.md
-> └── 📂 app/
-> │  └── 📂 Legalmind/
-> │    ├── 📄 CONTRIBUTING.md
-> │    ├── 📄 LICENSE
-> │    ├── 📄 PLATFORM_README.md
-> │    ├── 📄 PROJECT-OVERVIEW.md
-> │    ├── 📄 README.md
-> │    └── 📂 backend/
-> │      └── 📂 agent-orchestrator/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │        └── 📂 services/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 debate_manager.py
-> │          ├── 📄 dynamic_agent.py
-> │          ├── 📄 fixed_agent.py
-> │          ├── 📄 index.html
-> │          ├── 📄 legal_reference_engine.py
-> │          ├── 📄 retry_handler.py
-> │          ├── 📄 websocket_manager.py
-> │      └── 📂 api-gateway/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │      ├── 📄 index.html
-> │      └── 📂 parser-service/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │        └── 📂 services/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 document_processor.py
-> │          ├── 📄 entity_extractor.py
-> │          ├── 📄 firestore_client.py
-> │          ├── 📄 index.html
-> │          ├── 📄 pii_redactor.py
-> │          ├── 📄 pubsub_client.py
-> │          ├── 📄 storage_client.py
-> │      └── 📂 report-generator/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │        ├── 📄 subscriber.py
-> │      └── 📂 role-assignment/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │        └── 📂 services/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 agent_pool_manager.py
-> │          ├── 📄 firestore_client.py
-> │          ├── 📄 index.html
-> │          ├── 📄 pubsub_client.py
-> │          ├── 📄 role_analyzer.py
-> │      └── 📂 video-generator/
-> │        ├── 📄 Dockerfile
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 main_ai_video.py
-> │        ├── 📄 main_veo3.py
-> │        ├── 📄 requirements.txt
-> │        ├── 📄 subscriber.py
-> │      └── 📂 vis-service/
-> │        ├── 📄 Dockerfile
-> │        └── 📂 __pycache__/
-> │          ├── 📄 main.cpython-311.pyc
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │        └── 📂 services/
-> │          ├── 📄 __init__.py
-> │          └── 📂 __pycache__/
-> │            ├── 📄 __init__.cpython-311.pyc
-> │            ├── 📄 claims_mapper.cpython-311.pyc
-> │            ├── 📄 hasher.cpython-311.pyc
-> │            ├── 📄 indexer.cpython-311.pyc
-> │            ├── 📄 metadata.cpython-311.pyc
-> │            ├── 📄 scanner.cpython-311.pyc
-> │            ├── 📄 storage_adapter.cpython-311.pyc
-> │          ├── 📄 claims_mapper.py
-> │          ├── 📄 hasher.py
-> │          ├── 📄 index.html
-> │          ├── 📄 indexer.py
-> │          ├── 📄 metadata.py
-> │          ├── 📄 scanner.py
-> │          ├── 📄 storage_adapter.py
-> │        ├── 📄 vis.yaml
-> │    ├── 📄 deploy-to-github.sh
-> │    └── 📂 docs/
-> │      ├── 📄 DEPLOYMENT.md
-> │      └── 📂 backend-docs/
-> │        ├── 📄 01-parser-service-COMPLETE.md
-> │        ├── 📄 02-api-gateway-COMPLETE.md
-> │        ├── 📄 03-agent-orchestrator-COMPLETE.md
-> │        ├── 📄 04-role-assignment-COMPLETE.md
-> │        ├── 📄 05-video-generator-COMPLETE.md
-> │        ├── 📄 06-report-generator-COMPLETE.md
-> │        ├── 📄 AGENT_ORCHESTRATOR_SUMMARY.md
-> │        ├── 📄 COMPLETE_SYSTEM_GUIDE.md
-> │        ├── 📄 DOCUMENTATION_SUMMARY.md
-> │        ├── 📄 README.md
-> │        ├── 📄 ROLE_ASSIGNMENT_SUMMARY.md
-> │        ├── 📄 index.html
-> │      └── 📂 diagrams/
-> │        ├── 📄 README.md
-> │        ├── 📄 SYSTEM-ARCHITECTURE.md
-> │        ├── 📄 SYSTEM-WORKFLOW.md
-> │        ├── 📄 index.html
-> │      └── 📂 frontend-docs/
-> │        ├── 📄 01-FRONTEND-ARCHITECTURE-COMPLETE.md
-> │        ├── 📄 02-PAGES-AND-COMPONENTS.md
-> │        ├── 📄 03-API-AND-WEBSOCKET.md
-> │        ├── 📄 ALIGNMENT-VERIFICATION.md
-> │        ├── 📄 COMPLETE-FRONTEND-GUIDE.md
-> │        ├── 📄 DOCUMENTATION-COMPLETE.md
-> │        ├── 📄 FRONTEND-DOCUMENTATION-SUMMARY.md
-> │        ├── 📄 README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 frontend/
-> │      ├── 📄 Dockerfile
-> │      ├── 📄 README.md
-> │      ├── 📄 index.html
-> │      ├── 📄 next-env.d.ts
-> │      ├── 📄 next.config.js
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 postcss.config.js
-> │      └── 📂 public/
-> │      └── 📂 src/
-> │        └── 📂 app/
-> │          └── 📂 chat/
-> │            └── 📂 [sessionId]/
-> │              ├── 📄 index.html
-> │              ├── 📄 page.tsx
-> │            ├── 📄 index.html
-> │          ├── 📄 globals.css
-> │          ├── 📄 index.html
-> │          ├── 📄 layout.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 results/
-> │            └── 📂 [sessionId]/
-> │              ├── 📄 index.html
-> │              ├── 📄 page.tsx
-> │            ├── 📄 index.html
-> │          └── 📂 upload/
-> │            ├── 📄 index.html
-> │            ├── 📄 page.tsx
-> │        └── 📂 components/
-> │          ├── 📄 MessageBubble.tsx
-> │          ├── 📄 StageProgress.tsx
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 lib/
-> │          ├── 📄 api.ts
-> │          ├── 📄 index.html
-> │          ├── 📄 utils.ts
-> │          ├── 📄 websocket-native.ts
-> │        └── 📂 types/
-> │          ├── 📄 index.html
-> │          ├── 📄 index.ts
-> │      ├── 📄 tailwind.config.ts
-> │      ├── 📄 tsconfig.json
-> │    ├── 📄 index.html
-> │    └── 📂 infrastructure/
-> │      └── 📂 bigquery/
-> │        ├── 📄 add_criminal_offences.py
-> │        ├── 📄 add_marriage_laws.py
-> │        ├── 📄 add_marriage_relationship_laws.py
-> │        ├── 📄 add_more_ipc_sections.py
-> │        ├── 📄 add_murder_related_laws.py
-> │        ├── 📄 add_property_offences.py
-> │        ├── 📄 add_relationship_laws.py
-> │        ├── 📄 add_serious_crimes.py
-> │        ├── 📄 add_traffic_laws.py
-> │        ├── 📄 add_us_laws.py
-> │        ├── 📄 comprehensive_laws.sql
-> │        ├── 📄 index.html
-> │        ├── 📄 populate_comprehensive_laws.py
-> │        ├── 📄 populate_data.py
-> │        ├── 📄 sample_data.sql
-> │        ├── 📄 schema.sql
-> │        ├── 📄 verify_all_laws.sh
-> │        ├── 📄 verify_database.py
-> │      └── 📂 cloud-run/
-> │        ├── 📄 deploy.sh
-> │        ├── 📄 index.html
-> │        ├── 📄 service-template.yaml
-> │      ├── 📄 deploy_all.sh
-> │      └── 📂 firestore/
-> │        ├── 📄 firestore.rules
-> │        ├── 📄 index.html
-> │        ├── 📄 schema.md
-> │      ├── 📄 index.html
-> │  └── 📂 case-ops/
-> │    ├── 📄 APP_MANIFEST.json
-> │    ├── 📄 APP_MANIFEST.md
-> │    ├── 📄 DEPLOYMENT.md
-> │    ├── 📄 build_diagnostics.txt
-> │    ├── 📄 build_full.txt
-> │    ├── 📄 build_output.txt
-> │    ├── 📄 build_report.txt
-> │    ├── 📄 index.html
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    └── 📂 public/
-> │    └── 📂 src/
-> │      ├── 📄 App.tsx
-> │      └── 📂 components/
-> │        ├── 📄 DocUploader.tsx
-> │        ├── 📄 Layout.tsx
-> │        ├── 📄 PhaseHeader.tsx
-> │        ├── 📄 PhasePicker.tsx
-> │        ├── 📄 TaskDetail.tsx
-> │        ├── 📄 TaskList.tsx
-> │        ├── 📄 index.html
-> │        └── 📂 tabs/
-> │          ├── 📄 PhaseDocumentsTab.tsx
-> │          ├── 📄 PhaseDraftsTab.tsx
-> │          ├── 📄 PhaseNextTab.tsx
-> │          ├── 📄 PhaseOverviewTab.tsx
-> │          ├── 📄 PhasePacketsTab.tsx
-> │          ├── 📄 PhaseTasksTab.tsx
-> │          ├── 📄 PhaseTemplatesTab.tsx
-> │          ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 lib/
-> │        ├── 📄 index.html
-> │        ├── 📄 phase.ts
-> │        ├── 📄 phaseState.ts
-> │        ├── 📄 supabase.ts
-> │        ├── 📄 types.ts
-> │        ├── 📄 types_phase_state.ts
-> │      ├── 📄 main.tsx
-> │      └── 📂 pages/
-> │        ├── 📄 Dashboard.tsx
-> │        ├── 📄 Envelopes.tsx
-> │        ├── 📄 Exports.tsx
-> │        ├── 📄 Login.tsx
-> │        ├── 📄 Packets.tsx
-> │        ├── 📄 PhaseView.tsx
-> │        ├── 📄 index.html
-> │      ├── 📄 routes.tsx
-> │      ├── 📄 styles.css
-> │    └── 📂 supabase/
-> │      ├── 📄 index.html
-> │      └── 📂 migrations/
-> │        ├── 📄 0001_init.sql
-> │        ├── 📄 0002_updated_at_triggers.sql
-> │        ├── 📄 0003_rls.sql
-> │        ├── 📄 0004_storage.sql
-> │        ├── 📄 0005_patch_case_ops_schema.sql
-> │        ├── 📄 0006_sync_phases.sql
-> │        ├── 📄 0007_sync_phases_final.sql
-> │        ├── 📄 0008_phase_state.sql
-> │        ├── 📄 index.html
-> │      ├── 📄 seed.sql
-> │      └── 📂 seeds/
-> │        ├── 📄 actors.csv
-> │        ├── 📄 documents.csv
-> │        ├── 📄 envelopes.csv
-> │        ├── 📄 harms.csv
-> │        ├── 📄 index.html
-> │        ├── 📄 packets.csv
-> │        ├── 📄 phase_state.csv
-> │        ├── 📄 phases.csv
-> │        ├── 📄 tasks.csv
-> │        ├── 📄 violations.csv
-> │    ├── 📄 tsc_errors.txt
-> │    ├── 📄 tsc_output.txt
-> │    ├── 📄 tsconfig.json
-> │    ├── 📄 tsconfig.node.json
-> │    ├── 📄 vite.config.ts
-> │    ├── 📄 wrangler.toml
-> │  ├── 📄 scenario_simulation_agent.py
-> └── 📂 content/
-> │  ├── 📄 000_CASE_ORIENTATION.md
-> │  ├── 📄 000_MASTER_INDEX.md
-> │  └── 📂 00_CASE_MANAGEMENT/
-> │    └── 📂 01_Case_Master/
-> │      ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
-> │      ├── 📄 01_CASE_ANALYSIS_MEMO.md
-> │      ├── 📄 02_TIMELINE.md
-> │      ├── 📄 02_TIMELINE.mw
-> │      ├── 📄 03_VIOLATIONS.md
-> │      ├── 📄 04_STRATEGY.canvas
-> │      ├── 📄 05_VALUATION.md
-> │      ├── 📄 06_CHECKLIST.md
-> │      ├── 📄 07_PRINT_PLAN.md
-> │      ├── 📄 09_DECISION_MATRIX.canvas
-> │      └── 📂 10_Send_Queue/
-> │        ├── 📄 01_TODO_to_send.md
-> │        ├── 📄 02_Sent_Log.md
-> │        ├── 📄 03_Packet_Checklist.md
-> │    └── 📂 10_Overview/
-> │      ├── 📄 01_forensic_audit.m4a
-> │      ├── 📄 03_critiques_Institutional_failure.m4a
-> │      ├── 📄 04_debate.m4a
-> │      ├── 📄 05_critiques_Separate_Appeals.m4a
-> │      ├── 📄 06_eviction_crisis.pdf
-> │      ├── 📄 07_institutional_failure.pdf
-> │      ├── 📄 08_wrongful_foreclosure.pdf
-> │      ├── 📄 09_Premonitions_I_Knew_Before_I_Knew.md
-> │      ├── 📄 _10_Overview.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_evidence/
-> │      └── 📂 10_Docket/
-> │        ├── 📄 001_2025-01-16_Complaint.pdf
-> │        ├── 📄 002_2025-01-16_Appearance.pdf
-> │        ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
-> │        ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
-> │        ├── 📄 005_2025-01-16_Appearance_2.pdf
-> │        ├── 📄 006_2025-01-16_Summons_1.pdf
-> │        ├── 📄 007_2025-01-16_Summons_2.pdf
-> │        ├── 📄 008_2025-01-16_Summons_3.pdf
-> │        ├── 📄 009_2025-01-16_Summons_4.pdf
-> │        ├── 📄 010_2025-01-16_Summons_5.pdf
-> │        ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
-> │        ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
-> │        ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
-> │        ├── 📄 014_2025-05-13_Affidavit.pdf
-> │        ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
-> │        ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
-> │        ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
-> │        ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
-> │        ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
-> │        ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
-> │        ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
-> │        ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
-> │        ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
-> │        ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
-> │        ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
-> │        ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
-> │        ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
-> │        ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
-> │        ├── 📄 029_2025-12-10_motion_vacate.pdf
-> │        ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
-> │        ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
-> │        ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
-> │        ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
-> │        ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
-> │        ├── 📄 036_2025-12-12_Report_to_Court.pdf
-> │        ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
-> │        ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
-> │        ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
-> │        ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
-> │        ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
-> │        ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
-> │        ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
-> │        ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
-> │        ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
-> │        ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
-> │        ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
-> │        ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
-> │        ├── 📄 _10_Docket.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_actors/
-> │        └── 📂 10_fcfcu/
-> │          └── 📂 Appraisal/
-> │            ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │            ├── 📄 _Appraisal.md
-> │            ├── 📄 index.html
-> │          └── 📂 Emails/
-> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │            ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │            ├── 📄 _Emails.md
-> │            ├── 📄 index.html
-> │          └── 📂 Letters/
-> │            ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
-> │            ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │            ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │            ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
-> │            ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │            ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │            ├── 📄 _Letters.md
-> │            ├── 📄 index.html
-> │          └── 📂 Payments/
-> │            ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │            ├── 📄 _Payments.md
-> │            ├── 📄 index.html
-> │          └── 📂 Reports/
-> │            ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │            ├── 📄 _Reports.md
-> │            ├── 📄 index.html
-> │          └── 📂 Statements/
-> │            ├── 📄 _Statements.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _10_fcfcu.md
-> │          ├── 📄 index.html
-> │        └── 📂 20_aes/
-> │          ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │          ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │          ├── 📄 _20_aes.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _20_actors.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_supporting/
-> │        └── 📂 10_photos_video/
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │          ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 _10_photos_video.md
-> │          ├── 📄 index.html
-> │        └── 📂 20_multi-media/
-> │          └── 📂 Photos/
-> │            ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │            ├── 📄 _Photos.md
-> │            ├── 📄 index.html
-> │          └── 📂 Videos/
-> │            └── 📂 12092025-mayberemovalday/
-> │              ├── 📄 00-06-23_2a.mkv
-> │              ├── 📄 00-16-23_2a.mkv
-> │              ├── 📄 00-26-23_2a.mkv
-> │              ├── 📄 00-36-23_2a.mkv
-> │              ├── 📄 00-46-23_2a.mkv
-> │              ├── 📄 00-56-23_2a.mkv
-> │              ├── 📄 01-06-23_2a.mkv
-> │              ├── 📄 01-16-23_2a.mkv
-> │              ├── 📄 01-26-22_2a.mkv
-> │              ├── 📄 01-36-22_2a.mkv
-> │              ├── 📄 01-46-22_2a.mkv
-> │              ├── 📄 01-56-22_2a.mkv
-> │              ├── 📄 02-06-22_2a.mkv
-> │              ├── 📄 02-16-22_2a.mkv
-> │              ├── 📄 02-26-22_2a.mkv
-> │              ├── 📄 02-36-22_2a.mkv
-> │              ├── 📄 02-46-22_2a.mkv
-> │              ├── 📄 02-56-21_2a.mkv
-> │              ├── 📄 03-06-21_2a.mkv
-> │              ├── 📄 03-16-21_2a.mkv
-> │              ├── 📄 03-26-21_2a.mkv
-> │              ├── 📄 03-36-21_2a.mkv
-> │              ├── 📄 03-46-21_2a.mkv
-> │              ├── 📄 03-56-21_2a.mkv
-> │              ├── 📄 04-06-21_2a.mkv
-> │              ├── 📄 04-16-21_2a.mkv
-> │              ├── 📄 04-26-21_2a.mkv
-> │              ├── 📄 04-36-21_2a.mkv
-> │              ├── 📄 04-46-20_2a.mkv
-> │              ├── 📄 04-56-20_2a.mkv
-> │              ├── 📄 05-06-20_2a.mkv
-> │              ├── 📄 05-16-20_2a.mkv
-> │              ├── 📄 05-26-20_2a.mkv
-> │              ├── 📄 05-36-20_2a.mkv
-> │              ├── 📄 05-46-20_2a.mkv
-> │              ├── 📄 05-56-20_2a.mkv
-> │              ├── 📄 06-06-20_2a.mkv
-> │              ├── 📄 06-16-20_2a.mkv
-> │              ├── 📄 06-26-20_2a.mkv
-> │              ├── 📄 06-36-19_2a.mkv
-> │              ├── 📄 06-46-19_2a.mkv
-> │              ├── 📄 06-56-19_2a.mkv
-> │              ├── 📄 07-06-19_2a.mkv
-> │              ├── 📄 07-16-19_2a.mkv
-> │              ├── 📄 07-26-19_2a.mkv
-> │              ├── 📄 07-36-19_2a.mkv
-> │              ├── 📄 07-46-19_2a.mkv
-> │              ├── 📄 07-56-19_2a.mkv
-> │              ├── 📄 08-06-19_2a.mkv
-> │              ├── 📄 08-16-18_2a.mkv
-> │              ├── 📄 08-26-18_2a.mkv
-> │              ├── 📄 08-36-18_2a.mkv
-> │              ├── 📄 08-46-18_2a.mkv
-> │              ├── 📄 08-56-18_2a.mkv
-> │              ├── 📄 09-06-18_2a.mkv
-> │              ├── 📄 09-16-18_2a.mkv
-> │              ├── 📄 09-26-18_2a.mkv
-> │              ├── 📄 09-36-18_2a.mkv
-> │              ├── 📄 09-46-18_2a.mkv
-> │              ├── 📄 09-56-18_2a.mkv
-> │              ├── 📄 10-06-17_2a.mkv
-> │              ├── 📄 10-16-17_2a.mkv
-> │              ├── 📄 10-26-17_2a.mkv
-> │              ├── 📄 10-36-17_2a.mkv
-> │              ├── 📄 10-46-17_2a.mkv
-> │              ├── 📄 10-56-17_2a.mkv
-> │              ├── 📄 _12092025-mayberemovalday.md
-> │              ├── 📄 index.html
-> │            ├── 📄 _Videos.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _20_multi-media.md
-> │          ├── 📄 index.html
-> │        └── 📂 20_parcel/
-> │          ├── 📄 Parcel_6016506_PRC.pdf
-> │          ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │          ├── 📄 WH7.00.020__index.html
-> │          ├── 📄 _20_parcel.md
-> │          ├── 📄 index.html
-> │        └── 📂 30_declarations/
-> │          ├── 📄 _30_declarations.md
-> │          ├── 📄 index.html
-> │        └── 📂 40_affidavits/
-> │          ├── 📄 _40_affidavits.md
-> │          ├── 📄 _TOC_.md
-> │          └── 📂 ada-disability/
-> │            ├── 📄 _ada-disability.md
-> │            ├── 📄 index.html
-> │          └── 📂 character/
-> │            ├── 📄 _character.md
-> │            ├── 📄 index.html
-> │          └── 📂 community-service/
-> │            ├── 📄 _community-service.md
-> │            ├── 📄 index.html
-> │          └── 📂 credibility/
-> │            ├── 📄 _credibility.md
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │          └── 📂 observations/
-> │            ├── 📄 _observations.md
-> │            ├── 📄 index.html
-> │        └── 📂 50_records/
-> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │          ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │          ├── 📄 _50_records.md
-> │          ├── 📄 _TOC_.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _30_supporting.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_Exposure_and_Harm/
-> │        └── 📂 20_economic_harm/
-> │          └── 📂 10_property_possession_harms/
-> │            ├── 📄 _10_property_possession_harms.md
-> │            ├── 📄 index.html
-> │          └── 📂 30_financial/
-> │            ├── 📄 NT_Financial_Tracker.md
-> │            ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │            ├── 📄 _30_financial.md
-> │            ├── 📄 index.html
-> │          └── 📂 60_professional_harm/
-> │            ├── 📄 _60_professional_harm.md
-> │            ├── 📄 index.html
-> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │          ├── 📄 NT_Quarantined_Claims_Hold.md
-> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │          ├── 📄 _20_economic_harm.md
-> │          ├── 📄 index.html
-> │        └── 📂 50_non_economic_harm/
-> │          └── 📂 40_health_and_safety/
-> │            └── 📂 20_companion_animal_risk/
-> │              ├── 📄 _20_companion_animal_risk.md
-> │              ├── 📄 index.html
-> │            ├── 📄 _40_health_and_safety.md
-> │            ├── 📄 index.html
-> │          └── 📂 Photos_Conditions/
-> │            ├── 📄 _Photos_Conditions.md
-> │            ├── 📄 index.html
-> │          └── 📂 Weather_Reports/
-> │            ├── 📄 Cold_Risk_Report.md
-> │            ├── 📄 _Weather_Reports.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _50_non_economic_harm.md
-> │          └── 📂 cold_exposure/
-> │            ├── 📄 PL__Cold_Risk_Report.md
-> │            ├── 📄 _cold_exposure.md
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │        └── 📂 60_Consequential_Damages/
-> │          └── 📂 Hotel_Mitigation/
-> │            └── 📂 10_Service_Animal_Notice/
-> │              ├── 📄 Gigi_Documentation_Pack.md
-> │              ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │              ├── 📄 _10_Service_Animal_Notice.md
-> │              ├── 📄 index.html
-> │            └── 📂 20_Habitability/
-> │              ├── 📄 Demand_Notice_and_Ledger.md
-> │              ├── 📄 Narrative_Room_Conditions.md
-> │              ├── 📄 _20_Habitability.md
-> │              ├── 📄 index.html
-> │            ├── 📄 MITIGATION_LOG_Hotel.md
-> │            ├── 📄 PHASE_07_Hotel_Dispute.md
-> │            ├── 📄 _07_HOTEL_DISPUTE.md
-> │            ├── 📄 _TOC_.md
-> │            ├── 📄 index.html
-> │        └── 📂 70_remedies_scenarios/
-> │          ├── 📄 _70_remedies_scenarios.md
-> │          ├── 📄 index.html
-> │        └── 📂 80_payout_strategy/
-> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │          ├── 📄 _80_payout_strategy.md
-> │          ├── 📄 index.html
-> │        └── 📂 90_third_party_harm/
-> │          ├── 📄 _90_third_party_harm.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _40_Exposure_and_Harm.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      └── 📂 60_service_and_delivery/
-> │        └── 📂 Email_Transmittals/
-> │          ├── 📄 README.md
-> │          ├── 📄 _Email_Transmittals.md
-> │          ├── 📄 index.html
-> │        ├── 📄 Service_Log.md
-> │        └── 📂 USPS_Certified/
-> │          ├── 📄 README.md
-> │          ├── 📄 _USPS_Certified.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _60_service_and_delivery.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _20_evidence.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_Trackers/
-> │      ├── 📄 authority.csv
-> │      ├── 📄 docket.csv
-> │      ├── 📄 financial.csv
-> │      ├── 📄 strategy.csv
-> │      ├── 📄 tasks.csv
-> │      ├── 📄 violations.csv
-> │    └── 📂 99_Templates/
-> │      └── 📂 10_motions/
-> │        ├── 📄 _10_motions.md
-> │        ├── 📄 _emergency_stay_of_writ.md
-> │        ├── 📄 _vacate_void_judgment.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_affidavits/
-> │        ├── 📄 _20_affidavits.md
-> │        ├── 📄 _GUIDE_Witness_Instructions.md
-> │        ├── 📄 __ADA_Disability_Affidavit.md
-> │        ├── 📄 __Character_Affidavit.md
-> │        ├── 📄 __Community_Service_Affidavit.md
-> │        ├── 📄 __Credibility_Affidavit.md
-> │        ├── 📄 __Gender_Identity_Clarification.md
-> │        ├── 📄 __Observations_Affidavit.md
-> │        ├── 📄 __updated_affidavit_language.md
-> │        ├── 📄 __verified_affidavit_of_defendant.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_exhibits/
-> │        ├── 📄 _40_exhibits.md
-> │        ├── 📄 _Exhibits_Lists.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_orders/
-> │        ├── 📄 _50_orders.md
-> │        ├── 📄 _Proposed_Order.md
-> │        ├── 📄 _proposed_order_emergency_stay.md
-> │        ├── 📄 _proposed_order_motion_to_vacate.md
-> │        ├── 📄 index.html
-> │      └── 📂 60_packets/
-> │        ├── 📄 2026-01-19_attorney_intake_packet_executive.md
-> │        ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
-> │        ├── 📄 NT_TEMPLATE_ada_packet.md
-> │        ├── 📄 _60_packets.md
-> │        ├── 📄 index.html
-> │      └── 📂 70_outreach/
-> │        ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
-> │        ├── 📄 NT_TEMPLATE_attorney_brief.md
-> │        ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
-> │        ├── 📄 _70_outreach.md
-> │        ├── 📄 index.html
-> │      └── 📂 80_binders/
-> │        ├── 📄 NT_TEMPLATE_Section_Cover.md
-> │        ├── 📄 NT_TEMPLATE_Section_Index.md
-> │        ├── 📄 _80_binders.md
-> │        ├── 📄 index.html
-> │      └── 📂 90_internal/
-> │        ├── 📄 Phase_Logic_Matrix.canvas
-> │        ├── 📄 _90_internal.md
-> │        ├── 📄 _Court_Doc.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 _Timeline_Event.md
-> │        ├── 📄 _Violation_Entry.md
-> │        ├── 📄 _script_call_lawyers.md
-> │        ├── 📄 _settlement_letter_draft.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _99_Templates.md
-> │      ├── 📄 index.html
-> │    ├── 📄 VIOLATIONS_SUMMARY.md
-> │    ├── 📄 _00_COCKPIT.md
-> │  └── 📂 01_PHASE_FORECLOSURE/
-> │    └── 📂 10_proposed/
-> │      ├── 📄 _10_proposed.md
-> │      ├── 📄 index.html
-> │    └── 📂 2025-01-09_hearing_void_judgment/
-> │      └── 📂 2025-01-09_hearing/
-> │        ├── 📄 COURT_MODE_BUTTONS.md
-> │        ├── 📄 HEARING CHEAT SHEET.md
-> │        ├── 📄 _2025-01-09_hearing.md
-> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
-> │        ├── 📄 index.html
-> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> │      ├── 📄 _2025-01-09_hearing_void_judgment.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_motions/
-> │      ├── 📄 MO_01_motion_vacate.pdf
-> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │      ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │      ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │      ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │      ├── 📄 _30_motions.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_orders/
-> │      ├── 📄 OR_03_order_vacate_proposed.pdf
-> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │      ├── 📄 _40_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 90_Filed_Envelopes/
-> │      └── 📂 10_2025-12-10_motion_vacate/
-> │        ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │        ├── 📄 _10_2025-12-10_motion_vacate.md
-> │        ├── 📄 combinepdf.pdf
-> │        ├── 📄 index.html
-> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │        ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _90_Filed_Envelopes.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_01_Foreclosure.md
-> │    ├── 📄 _01_PHASE_FORECLOSURE.md
-> │    ├── 📄 index.html
-> │  └── 📂 02_PHASE_PRESERVATION/
-> │    └── 📂 10_scope_definitions/
-> │      ├── 📄 Evidence_Categories_and_Sources.md
-> │      ├── 📄 Utility_and_Ownership_Record_Scope.md
-> │      ├── 📄 _10_scope_definitions.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_spoliation_risk/
-> │      ├── 📄 Adverse_Inference_Triggers.md
-> │      ├── 📄 Housing_Harm_Ledger.md
-> │      ├── 📄 Spoliation_Legal_Framework.md
-> │      ├── 📄 Spoliation_Risk_Register.md
-> │      ├── 📄 _20_spoliation_risk.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_preservation_notices/
-> │      ├── 📄 Notice_of_Evidence_Preservation.md
-> │      ├── 📄 PHASE_01_5_Evidence_Preservation.md
-> │      ├── 📄 _30_preservation_notices.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_output/
-> │      └── 📂 10_letters/
-> │        ├── 📄 Evidence_Preservation_Cover_Letter.md
-> │        ├── 📄 _10_letters.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_packets/
-> │        ├── 📄 Evidence_Preservation_Packet_Index.md
-> │        ├── 📄 Harm_Matrix_and_Timeline_Summary.md
-> │        ├── 📄 MASTER_DISPATCH_CHECKLIST.md
-> │        ├── 📄 MASTER_OPERATIONAL_INDEX.md
-> │        ├── 📄 Master_Exhibit_Index.md
-> │        ├── 📄 Phase_01_5_Execution_Checklist.md
-> │        ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
-> │        ├── 📄 Service_Packet_Index.md
-> │        ├── 📄 _20_packets.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_output.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_02_Preservation.md
-> │    ├── 📄 _02_PHASE_PRESERVATION.md
-> │    ├── 📄 index.html
-> │  └── 📂 03_CREDIT_FCRA/
-> │    └── 📂 10_credit_reports/
-> │      └── 📂 Equifax/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Equifax.md
-> │        ├── 📄 index.html
-> │      └── 📂 Experian/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Experian.md
-> │        ├── 📄 index.html
-> │      ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
-> │      └── 📂 Other/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Other.md
-> │        ├── 📄 index.html
-> │      └── 📂 TransUnion/
-> │        ├── 📄 README.md
-> │        ├── 📄 _TransUnion.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _10_credit_reports.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_furnisher_disputes/
-> │      ├── 📄 CFPB_Complaint_Draft.md
-> │      ├── 📄 FCFCU_Direct_Dispute_Letter.md
-> │      ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
-> │      ├── 📄 Utility_Dispute_Letter.md
-> │      ├── 📄 _20_furnisher_disputes.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_bureau_disputes/
-> │      ├── 📄 Consumer_Statement_Landlords.md
-> │      ├── 📄 Equifax_Dispute_Letter.md
-> │      ├── 📄 Experian_Dispute_Letter.md
-> │      ├── 📄 TransUnion_Dispute_Letter.md
-> │      ├── 📄 _30_bureau_disputes.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_verified_responses/
-> │      ├── 📄 _40_verified_responses.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_damages/
-> │      ├── 📄 Core_Credit_Tables.md
-> │      ├── 📄 Emergency_Credit_Harm_Addendum.md
-> │      ├── 📄 Housing_Emergency_Affidavit.md
-> │      ├── 📄 _50_damages.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_output/
-> │      ├── 📄 _50_output.md
-> │      ├── 📄 index.html
-> │    ├── 📄 Equifax_Violation_Excerpt.md
-> │    ├── 📄 Experian_Violation_Excerpt.md
-> │    ├── 📄 PHASE_03_Credit_FCRA.md
-> │    ├── 📄 TransUnion_Violation_Excerpt.md
-> │    ├── 📄 _03_CREDIT_FCRA.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 04_REGULATORS/
-> │    ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
-> │    └── 📂 10_Industry/
-> │      └── 📂 BBB/
-> │        ├── 📄 BBB_Complaint_Narrative.md
-> │        ├── 📄 BBB_Violation_Excerpt.md
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 Exhibit_Manifest.md
-> │        ├── 📄 _BBB.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _10_Industry.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_Local/
-> │      └── 📂 35_Sheriff_Oversight/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │        ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │        ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │        ├── 📄 Sheriff_Violation_Excerpt.md
-> │        ├── 📄 _35_Sheriff_Oversight.md
-> │        ├── 📄 index.html
-> │      ├── 📄 AES_Utility_Violation_Excerpt.md
-> │      ├── 📄 Citizens_Utility_Violation_Excerpt.md
-> │      ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │      ├── 📄 _20_Local.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_State/
-> │      └── 📂 20_AG_Indiana/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 IN_AG_Violation_Excerpt.md
-> │        ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │        ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │        ├── 📄 _20_AG_Indiana.md
-> │        ├── 📄 index.html
-> │      └── 📂 25_IN_DFI/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 IN_DFI_Violation_Excerpt.md
-> │        ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │        ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │        ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │        ├── 📄 _25_IN_DFI.md
-> │        ├── 📄 index.html
-> │      └── 📂 55_IN_Civil_Rights/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 ICRC_Violation_Excerpt.md
-> │        ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │        ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │        ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │        ├── 📄 _55_IN_Civil_Rights.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_State.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_Federal/
-> │      └── 📂 20_CFPB/
-> │        ├── 📄 CFPB_Complaint_Narrative.md
-> │        ├── 📄 CFPB_Violation_Excerpt.md
-> │        ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 _20_CFPB.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_NCUA/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 Exhibit_Manifest.md
-> │        ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │        ├── 📄 NCUA_Complaint_Narrative.md
-> │        ├── 📄 NCUA_Violation_Excerpt.md
-> │        ├── 📄 _30_NCUA.md
-> │        ├── 📄 _TOC_.md
-> │        └── 📂 _archive/
-> │          ├── 📄 NCUA_Complaint_Narrative_draft_old.md
-> │          ├── 📄 __archive.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 40_DOJ_Civil_Rights/
-> │        ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │        ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │        ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │        ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │        ├── 📄 DOJ_Violation_Excerpt.md
-> │        ├── 📄 _40_DOJ_Civil_Rights.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_HUD_FHEO/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │        ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │        ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │        ├── 📄 _50_HUD_FHEO.md
-> │        └── 📂 _archive/
-> │          ├── 📄 HUD_Violation_Excerpt_OLD.md
-> │          ├── 📄 __archive.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_Federal.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_Other/
-> │      └── 📂 60_CMS_Caretaker_Impact/
-> │        ├── 📄 CMS_Informational_Complaint.md
-> │        ├── 📄 _60_CMS_Caretaker_Impact.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _50_Other.md
-> │      ├── 📄 index.html
-> │    └── 📂 99_Peripheral_Impact/
-> │      └── 📂 45_FCC_Telecom/
-> │        ├── 📄 Cover_Letter.md
-> │        ├── 📄 FCC_Harassment_Complaint.md
-> │        ├── 📄 FCC_Violation_Excerpt.md
-> │        ├── 📄 _45_FCC_Telecom.md
-> │        ├── 📄 index.html
-> │      └── 📂 65_SSA_OIG/
-> │        ├── 📄 SSA_OIG_Informational_Filing.md
-> │        ├── 📄 _65_SSA_OIG.md
-> │        ├── 📄 index.html
-> │      └── 📂 70_VA_Informational/
-> │        ├── 📄 VA_Informational_Filing.md
-> │        ├── 📄 _70_VA_Informational.md
-> │        ├── 📄 index.html
-> │    ├── 📄 MANIFEST_Informational_Filings_Packet.md
-> │    ├── 📄 PHASE_04_Regulators.md
-> │    ├── 📄 Violation_to_Regulator_Mapping.md
-> │    ├── 📄 _04_REGULATORS.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 05_LITIGATION/
-> │    └── 📂 00_Intake/
-> │      ├── 📄 Litigation_Decision_Tree.md
-> │      ├── 📄 Master_Timeline_Strategy_Summary.md
-> │      ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │      ├── 📄 NT_Attorney_Intake_Summary.md
-> │      ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │      ├── 📄 _00_Intake.md
-> │      └── 📂 _archive/
-> │        ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │        ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │        ├── 📄 NT_LEGAL MEMORANDUM.md
-> │        ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │        ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │        ├── 📄 NT_Violation_Remedy_Inventory.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_demand_letters/
-> │      ├── 📄 NT_Demand_Ready_Exposure_Summary.md
-> │      ├── 📄 Notice_of_Evidence_Preservation.md
-> │      ├── 📄 _30_demand_letters.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_opposing_counsel/
-> │      ├── 📄 _40_opposing_counsel.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_draft_pleadings/
-> │      ├── 📄 _50_draft_pleadings.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_output/
-> │      └── 📂 10_filings/
-> │        ├── 📄 _10_filings.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_orders/
-> │        ├── 📄 _20_orders.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_packets/
-> │        ├── 📄 _30_packets.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_motions/
-> │        ├── 📄 _40_motions.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_letters/
-> │        ├── 📄 _50_letters.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _60_output.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_hearings/
-> │      ├── 📄 _70_hearings.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_05_Litigation.md
-> │    ├── 📄 _05_LITIGATION.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 06_MEDIA_AND_INQUIRIES/
-> │    ├── 📄 06_PUBLIC_PRESSURE.md
-> │    └── 📂 10_inbox/
-> │      ├── 📄 _10_inbox.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_social_media/
-> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
-> │      ├── 📄 _20_social_media.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_legislative_outreach/
-> │      ├── 📄 _30_legislative_outreach.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_public_record_dumps/
-> │      ├── 📄 _40_public_record_dumps.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_press_kits/
-> │      ├── 📄 _50_press_kits.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_news_media/
-> │      ├── 📄 _60_news_media.md
-> │      ├── 📄 index.html
-> │    ├── 📄 PHASE_06_Public_Pressure.md
-> │    ├── 📄 _06_PUBLIC_PRESSURE.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  ├── 📄 repo_index.csv
-> └── 📂 logs/
-> │  ├── 📄 Evidence_Log.md
-> │  ├── 📄 index.html
-> │  └── 📂 migrations/
-> │    ├── 📄 index.html
-> │  └── 📂 sessions/
-> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_str_1.md
-> │    ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
-> │    ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
-> │    ├── 📄 WI8.02.010__2025-12-16_case_summary.md
-> │    ├── 📄 index.html
-> └── 📂 paperless_fcfcu/
-> │  ├── 📄 backup_case_evidence.cmd
-> │  └── 📂 backups/
-> │  └── 📂 consume/
-> │  └── 📂 data/
-> │  ├── 📄 docker-compose.yml
-> │  └── 📂 export/
-> │  ├── 📄 index.html
-> │  └── 📂 media/
-> └── 📂 scripts/
-> │  └── 📂 maintenance/
-> │    ├── 📄 ensure_path_length.py
-> │    ├── 📄 indexer.py
-> │    ├── 📄 reporter.py
-> │  └── 📂 ops/
-> │    ├── 📄 build_binder.py
-> │    ├── 📄 clean_and_enrich_timeline.py
-> │    ├── 📄 generate_supabase_data.py
-> │    ├── 📄 ingest_evidence.py
-> │    ├── 📄 pull_from_paperless.py
-> │  ├── 📄 qios_main.py
-> │  └── 📂 vis/
-> │    └── 📄 generate_timeline_view.py
+> create a renaming map and correct any prefixes. ```markdown
+
+> . 📂 CASE_FCFCU
+
+> ├── 📄 CASE_FCFCU.code-workspace
+
+> ├── 📄 README_BINDER.md
+
+> └── 📂 app/
+
+> │  └── 📂 Legalmind/
+
+> │    ├── 📄 CONTRIBUTING.md
+
+> │    ├── 📄 LICENSE
+
+> │    ├── 📄 PLATFORM_README.md
+
+> │    ├── 📄 PROJECT-OVERVIEW.md
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 backend/
+
+> │      └── 📂 agent-orchestrator/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │        └── 📂 services/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 debate_manager.py
+
+> │          ├── 📄 dynamic_agent.py
+
+> │          ├── 📄 fixed_agent.py
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 legal_reference_engine.py
+
+> │          ├── 📄 retry_handler.py
+
+> │          ├── 📄 websocket_manager.py
+
+> │      └── 📂 api-gateway/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 parser-service/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │        └── 📂 services/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 document_processor.py
+
+> │          ├── 📄 entity_extractor.py
+
+> │          ├── 📄 firestore_client.py
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 pii_redactor.py
+
+> │          ├── 📄 pubsub_client.py
+
+> │          ├── 📄 storage_client.py
+
+> │      └── 📂 report-generator/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │        ├── 📄 subscriber.py
+
+> │      └── 📂 role-assignment/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │        └── 📂 services/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 agent_pool_manager.py
+
+> │          ├── 📄 firestore_client.py
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 pubsub_client.py
+
+> │          ├── 📄 role_analyzer.py
+
+> │      └── 📂 video-generator/
+
+> │        ├── 📄 Dockerfile
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 main_ai_video.py
+
+> │        ├── 📄 main_veo3.py
+
+> │        ├── 📄 requirements.txt
+
+> │        ├── 📄 subscriber.py
+
+> │      └── 📂 vis-service/
+
+> │        ├── 📄 Dockerfile
+
+> │        └── 📂 __pycache__/
+
+> │          ├── 📄 main.cpython-311.pyc
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │        └── 📂 services/
+
+> │          ├── 📄 __init__.py
+
+> │          └── 📂 __pycache__/
+
+> │            ├── 📄 __init__.cpython-311.pyc
+
+> │            ├── 📄 claims_mapper.cpython-311.pyc
+
+> │            ├── 📄 hasher.cpython-311.pyc
+
+> │            ├── 📄 indexer.cpython-311.pyc
+
+> │            ├── 📄 metadata.cpython-311.pyc
+
+> │            ├── 📄 scanner.cpython-311.pyc
+
+> │            ├── 📄 storage_adapter.cpython-311.pyc
+
+> │          ├── 📄 claims_mapper.py
+
+> │          ├── 📄 hasher.py
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 indexer.py
+
+> │          ├── 📄 metadata.py
+
+> │          ├── 📄 scanner.py
+
+> │          ├── 📄 storage_adapter.py
+
+> │        ├── 📄 vis.yaml
+
+> │    ├── 📄 deploy-to-github.sh
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 DEPLOYMENT.md
+
+> │      └── 📂 backend-docs/
+
+> │        ├── 📄 01-parser-service-COMPLETE.md
+
+> │        ├── 📄 02-api-gateway-COMPLETE.md
+
+> │        ├── 📄 03-agent-orchestrator-COMPLETE.md
+
+> │        ├── 📄 04-role-assignment-COMPLETE.md
+
+> │        ├── 📄 05-video-generator-COMPLETE.md
+
+> │        ├── 📄 06-report-generator-COMPLETE.md
+
+> │        ├── 📄 AGENT_ORCHESTRATOR_SUMMARY.md
+
+> │        ├── 📄 COMPLETE_SYSTEM_GUIDE.md
+
+> │        ├── 📄 DOCUMENTATION_SUMMARY.md
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 ROLE_ASSIGNMENT_SUMMARY.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 diagrams/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 SYSTEM-ARCHITECTURE.md
+
+> │        ├── 📄 SYSTEM-WORKFLOW.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 frontend-docs/
+
+> │        ├── 📄 01-FRONTEND-ARCHITECTURE-COMPLETE.md
+
+> │        ├── 📄 02-PAGES-AND-COMPONENTS.md
+
+> │        ├── 📄 03-API-AND-WEBSOCKET.md
+
+> │        ├── 📄 ALIGNMENT-VERIFICATION.md
+
+> │        ├── 📄 COMPLETE-FRONTEND-GUIDE.md
+
+> │        ├── 📄 DOCUMENTATION-COMPLETE.md
+
+> │        ├── 📄 FRONTEND-DOCUMENTATION-SUMMARY.md
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 frontend/
+
+> │      ├── 📄 Dockerfile
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 next-env.d.ts
+
+> │      ├── 📄 next.config.js
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 postcss.config.js
+
+> │      └── 📂 public/
+
+> │      └── 📂 src/
+
+> │        └── 📂 app/
+
+> │          └── 📂 chat/
+
+> │            └── 📂 [sessionId]/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 page.tsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 globals.css
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 layout.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 results/
+
+> │            └── 📂 [sessionId]/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 page.tsx
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 upload/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 components/
+
+> │          ├── 📄 MessageBubble.tsx
+
+> │          ├── 📄 StageProgress.tsx
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 api.ts
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 utils.ts
+
+> │          ├── 📄 websocket-native.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 index.ts
+
+> │      ├── 📄 tailwind.config.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 infrastructure/
+
+> │      └── 📂 bigquery/
+
+> │        ├── 📄 add_criminal_offences.py
+
+> │        ├── 📄 add_marriage_laws.py
+
+> │        ├── 📄 add_marriage_relationship_laws.py
+
+> │        ├── 📄 add_more_ipc_sections.py
+
+> │        ├── 📄 add_murder_related_laws.py
+
+> │        ├── 📄 add_property_offences.py
+
+> │        ├── 📄 add_relationship_laws.py
+
+> │        ├── 📄 add_serious_crimes.py
+
+> │        ├── 📄 add_traffic_laws.py
+
+> │        ├── 📄 add_us_laws.py
+
+> │        ├── 📄 comprehensive_laws.sql
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 populate_comprehensive_laws.py
+
+> │        ├── 📄 populate_data.py
+
+> │        ├── 📄 sample_data.sql
+
+> │        ├── 📄 schema.sql
+
+> │        ├── 📄 verify_all_laws.sh
+
+> │        ├── 📄 verify_database.py
+
+> │      └── 📂 cloud-run/
+
+> │        ├── 📄 deploy.sh
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 service-template.yaml
+
+> │      ├── 📄 deploy_all.sh
+
+> │      └── 📂 firestore/
+
+> │        ├── 📄 firestore.rules
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 schema.md
+
+> │      ├── 📄 index.html
+
+> │  └── 📂 case-ops/
+
+> │    ├── 📄 APP_MANIFEST.json
+
+> │    ├── 📄 APP_MANIFEST.md
+
+> │    ├── 📄 DEPLOYMENT.md
+
+> │    ├── 📄 build_diagnostics.txt
+
+> │    ├── 📄 build_full.txt
+
+> │    ├── 📄 build_output.txt
+
+> │    ├── 📄 build_report.txt
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 public/
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.tsx
+
+> │      └── 📂 components/
+
+> │        ├── 📄 DocUploader.tsx
+
+> │        ├── 📄 Layout.tsx
+
+> │        ├── 📄 PhaseHeader.tsx
+
+> │        ├── 📄 PhasePicker.tsx
+
+> │        ├── 📄 TaskDetail.tsx
+
+> │        ├── 📄 TaskList.tsx
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 tabs/
+
+> │          ├── 📄 PhaseDocumentsTab.tsx
+
+> │          ├── 📄 PhaseDraftsTab.tsx
+
+> │          ├── 📄 PhaseNextTab.tsx
+
+> │          ├── 📄 PhaseOverviewTab.tsx
+
+> │          ├── 📄 PhasePacketsTab.tsx
+
+> │          ├── 📄 PhaseTasksTab.tsx
+
+> │          ├── 📄 PhaseTemplatesTab.tsx
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 lib/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 phase.ts
+
+> │        ├── 📄 phaseState.ts
+
+> │        ├── 📄 supabase.ts
+
+> │        ├── 📄 types.ts
+
+> │        ├── 📄 types_phase_state.ts
+
+> │      ├── 📄 main.tsx
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 Dashboard.tsx
+
+> │        ├── 📄 Envelopes.tsx
+
+> │        ├── 📄 Exports.tsx
+
+> │        ├── 📄 Login.tsx
+
+> │        ├── 📄 Packets.tsx
+
+> │        ├── 📄 PhaseView.tsx
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 routes.tsx
+
+> │      ├── 📄 styles.css
+
+> │    └── 📂 supabase/
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 migrations/
+
+> │        ├── 📄 0001_init.sql
+
+> │        ├── 📄 0002_updated_at_triggers.sql
+
+> │        ├── 📄 0003_rls.sql
+
+> │        ├── 📄 0004_storage.sql
+
+> │        ├── 📄 0005_patch_case_ops_schema.sql
+
+> │        ├── 📄 0006_sync_phases.sql
+
+> │        ├── 📄 0007_sync_phases_final.sql
+
+> │        ├── 📄 0008_phase_state.sql
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 seed.sql
+
+> │      └── 📂 seeds/
+
+> │        ├── 📄 actors.csv
+
+> │        ├── 📄 documents.csv
+
+> │        ├── 📄 envelopes.csv
+
+> │        ├── 📄 harms.csv
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 packets.csv
+
+> │        ├── 📄 phase_state.csv
+
+> │        ├── 📄 phases.csv
+
+> │        ├── 📄 tasks.csv
+
+> │        ├── 📄 violations.csv
+
+> │    ├── 📄 tsc_errors.txt
+
+> │    ├── 📄 tsc_output.txt
+
+> │    ├── 📄 tsconfig.json
+
+> │    ├── 📄 tsconfig.node.json
+
+> │    ├── 📄 vite.config.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  ├── 📄 scenario_simulation_agent.py
+
+> └── 📂 content/
+
+> │  ├── 📄 000_CASE_ORIENTATION.md
+
+> │  ├── 📄 000_MASTER_INDEX.md
+
+> │  └── 📂 00_CASE_MANAGEMENT/
+
+> │    └── 📂 01_Case_Master/
+
+> │      ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
+
+> │      ├── 📄 01_CASE_ANALYSIS_MEMO.md
+
+> │      ├── 📄 02_TIMELINE.md
+
+> │      ├── 📄 02_TIMELINE.mw
+
+> │      ├── 📄 03_VIOLATIONS.md
+
+> │      ├── 📄 04_STRATEGY.canvas
+
+> │      ├── 📄 05_VALUATION.md
+
+> │      ├── 📄 06_CHECKLIST.md
+
+> │      ├── 📄 07_PRINT_PLAN.md
+
+> │      ├── 📄 09_DECISION_MATRIX.canvas
+
+> │      └── 📂 10_Send_Queue/
+
+> │        ├── 📄 01_TODO_to_send.md
+
+> │        ├── 📄 02_Sent_Log.md
+
+> │        ├── 📄 03_Packet_Checklist.md
+
+> │    └── 📂 10_Overview/
+
+> │      ├── 📄 01_forensic_audit.m4a
+
+> │      ├── 📄 03_critiques_Institutional_failure.m4a
+
+> │      ├── 📄 04_debate.m4a
+
+> │      ├── 📄 05_critiques_Separate_Appeals.m4a
+
+> │      ├── 📄 06_eviction_crisis.pdf
+
+> │      ├── 📄 07_institutional_failure.pdf
+
+> │      ├── 📄 08_wrongful_foreclosure.pdf
+
+> │      ├── 📄 09_Premonitions_I_Knew_Before_I_Knew.md
+
+> │      ├── 📄 _10_Overview.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_evidence/
+
+> │      └── 📂 10_Docket/
+
+> │        ├── 📄 001_2025-01-16_Complaint.pdf
+
+> │        ├── 📄 002_2025-01-16_Appearance.pdf
+
+> │        ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
+
+> │        ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
+
+> │        ├── 📄 005_2025-01-16_Appearance_2.pdf
+
+> │        ├── 📄 006_2025-01-16_Summons_1.pdf
+
+> │        ├── 📄 007_2025-01-16_Summons_2.pdf
+
+> │        ├── 📄 008_2025-01-16_Summons_3.pdf
+
+> │        ├── 📄 009_2025-01-16_Summons_4.pdf
+
+> │        ├── 📄 010_2025-01-16_Summons_5.pdf
+
+> │        ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
+
+> │        ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
+
+> │        ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
+
+> │        ├── 📄 014_2025-05-13_Affidavit.pdf
+
+> │        ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
+
+> │        ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
+
+> │        ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
+
+> │        ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
+
+> │        ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
+
+> │        ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
+
+> │        ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
+
+> │        ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
+
+> │        ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
+
+> │        ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
+
+> │        ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
+
+> │        ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
+
+> │        ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
+
+> │        ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
+
+> │        ├── 📄 029_2025-12-10_motion_vacate.pdf
+
+> │        ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
+
+> │        ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
+
+> │        ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
+
+> │        ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
+
+> │        ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
+
+> │        ├── 📄 036_2025-12-12_Report_to_Court.pdf
+
+> │        ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
+
+> │        ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
+
+> │        ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
+
+> │        ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
+
+> │        ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
+
+> │        ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
+
+> │        ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
+
+> │        ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
+
+> │        ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
+
+> │        ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
+
+> │        ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
+
+> │        ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
+
+> │        ├── 📄 _10_Docket.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_actors/
+
+> │        └── 📂 10_fcfcu/
+
+> │          └── 📂 Appraisal/
+
+> │            ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │            ├── 📄 _Appraisal.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Emails/
+
+> │            ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │            ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │            ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │            ├── 📄 _Emails.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Letters/
+
+> │            ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
+
+> │            ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │            ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │            ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
+
+> │            ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │            ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │            ├── 📄 _Letters.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Payments/
+
+> │            ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │            ├── 📄 _Payments.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Reports/
+
+> │            ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │            ├── 📄 _Reports.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Statements/
+
+> │            ├── 📄 _Statements.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _10_fcfcu.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_aes/
+
+> │          ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │          ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │          ├── 📄 _20_aes.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _20_actors.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_supporting/
+
+> │        └── 📂 10_photos_video/
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │          ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 _10_photos_video.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_multi-media/
+
+> │          └── 📂 Photos/
+
+> │            ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │            ├── 📄 _Photos.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Videos/
+
+> │            └── 📂 12092025-mayberemovalday/
+
+> │              ├── 📄 00-06-23_2a.mkv
+
+> │              ├── 📄 00-16-23_2a.mkv
+
+> │              ├── 📄 00-26-23_2a.mkv
+
+> │              ├── 📄 00-36-23_2a.mkv
+
+> │              ├── 📄 00-46-23_2a.mkv
+
+> │              ├── 📄 00-56-23_2a.mkv
+
+> │              ├── 📄 01-06-23_2a.mkv
+
+> │              ├── 📄 01-16-23_2a.mkv
+
+> │              ├── 📄 01-26-22_2a.mkv
+
+> │              ├── 📄 01-36-22_2a.mkv
+
+> │              ├── 📄 01-46-22_2a.mkv
+
+> │              ├── 📄 01-56-22_2a.mkv
+
+> │              ├── 📄 02-06-22_2a.mkv
+
+> │              ├── 📄 02-16-22_2a.mkv
+
+> │              ├── 📄 02-26-22_2a.mkv
+
+> │              ├── 📄 02-36-22_2a.mkv
+
+> │              ├── 📄 02-46-22_2a.mkv
+
+> │              ├── 📄 02-56-21_2a.mkv
+
+> │              ├── 📄 03-06-21_2a.mkv
+
+> │              ├── 📄 03-16-21_2a.mkv
+
+> │              ├── 📄 03-26-21_2a.mkv
+
+> │              ├── 📄 03-36-21_2a.mkv
+
+> │              ├── 📄 03-46-21_2a.mkv
+
+> │              ├── 📄 03-56-21_2a.mkv
+
+> │              ├── 📄 04-06-21_2a.mkv
+
+> │              ├── 📄 04-16-21_2a.mkv
+
+> │              ├── 📄 04-26-21_2a.mkv
+
+> │              ├── 📄 04-36-21_2a.mkv
+
+> │              ├── 📄 04-46-20_2a.mkv
+
+> │              ├── 📄 04-56-20_2a.mkv
+
+> │              ├── 📄 05-06-20_2a.mkv
+
+> │              ├── 📄 05-16-20_2a.mkv
+
+> │              ├── 📄 05-26-20_2a.mkv
+
+> │              ├── 📄 05-36-20_2a.mkv
+
+> │              ├── 📄 05-46-20_2a.mkv
+
+> │              ├── 📄 05-56-20_2a.mkv
+
+> │              ├── 📄 06-06-20_2a.mkv
+
+> │              ├── 📄 06-16-20_2a.mkv
+
+> │              ├── 📄 06-26-20_2a.mkv
+
+> │              ├── 📄 06-36-19_2a.mkv
+
+> │              ├── 📄 06-46-19_2a.mkv
+
+> │              ├── 📄 06-56-19_2a.mkv
+
+> │              ├── 📄 07-06-19_2a.mkv
+
+> │              ├── 📄 07-16-19_2a.mkv
+
+> │              ├── 📄 07-26-19_2a.mkv
+
+> │              ├── 📄 07-36-19_2a.mkv
+
+> │              ├── 📄 07-46-19_2a.mkv
+
+> │              ├── 📄 07-56-19_2a.mkv
+
+> │              ├── 📄 08-06-19_2a.mkv
+
+> │              ├── 📄 08-16-18_2a.mkv
+
+> │              ├── 📄 08-26-18_2a.mkv
+
+> │              ├── 📄 08-36-18_2a.mkv
+
+> │              ├── 📄 08-46-18_2a.mkv
+
+> │              ├── 📄 08-56-18_2a.mkv
+
+> │              ├── 📄 09-06-18_2a.mkv
+
+> │              ├── 📄 09-16-18_2a.mkv
+
+> │              ├── 📄 09-26-18_2a.mkv
+
+> │              ├── 📄 09-36-18_2a.mkv
+
+> │              ├── 📄 09-46-18_2a.mkv
+
+> │              ├── 📄 09-56-18_2a.mkv
+
+> │              ├── 📄 10-06-17_2a.mkv
+
+> │              ├── 📄 10-16-17_2a.mkv
+
+> │              ├── 📄 10-26-17_2a.mkv
+
+> │              ├── 📄 10-36-17_2a.mkv
+
+> │              ├── 📄 10-46-17_2a.mkv
+
+> │              ├── 📄 10-56-17_2a.mkv
+
+> │              ├── 📄 _12092025-mayberemovalday.md
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 _Videos.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _20_multi-media.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 20_parcel/
+
+> │          ├── 📄 Parcel_6016506_PRC.pdf
+
+> │          ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │          ├── 📄 WH7.00.020__index.html
+
+> │          ├── 📄 _20_parcel.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 30_declarations/
+
+> │          ├── 📄 _30_declarations.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 40_affidavits/
+
+> │          ├── 📄 _40_affidavits.md
+
+> │          ├── 📄 _TOC_.md
+
+> │          └── 📂 ada-disability/
+
+> │            ├── 📄 _ada-disability.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 character/
+
+> │            ├── 📄 _character.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 community-service/
+
+> │            ├── 📄 _community-service.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 credibility/
+
+> │            ├── 📄 _credibility.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 observations/
+
+> │            ├── 📄 _observations.md
+
+> │            ├── 📄 index.html
+
+> │        └── 📂 50_records/
+
+> │          ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │          ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │          ├── 📄 _50_records.md
+
+> │          ├── 📄 _TOC_.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _30_supporting.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_Exposure_and_Harm/
+
+> │        └── 📂 20_economic_harm/
+
+> │          └── 📂 10_property_possession_harms/
+
+> │            ├── 📄 _10_property_possession_harms.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 30_financial/
+
+> │            ├── 📄 NT_Financial_Tracker.md
+
+> │            ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │            ├── 📄 _30_financial.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 60_professional_harm/
+
+> │            ├── 📄 _60_professional_harm.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │          ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │          ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │          ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │          ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │          ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │          ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │          ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │          ├── 📄 _20_economic_harm.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 50_non_economic_harm/
+
+> │          └── 📂 40_health_and_safety/
+
+> │            └── 📂 20_companion_animal_risk/
+
+> │              ├── 📄 _20_companion_animal_risk.md
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 _40_health_and_safety.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Photos_Conditions/
+
+> │            ├── 📄 _Photos_Conditions.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 Weather_Reports/
+
+> │            ├── 📄 Cold_Risk_Report.md
+
+> │            ├── 📄 _Weather_Reports.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _50_non_economic_harm.md
+
+> │          └── 📂 cold_exposure/
+
+> │            ├── 📄 PL__Cold_Risk_Report.md
+
+> │            ├── 📄 _cold_exposure.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 60_Consequential_Damages/
+
+> │          └── 📂 Hotel_Mitigation/
+
+> │            └── 📂 10_Service_Animal_Notice/
+
+> │              ├── 📄 Gigi_Documentation_Pack.md
+
+> │              ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │              ├── 📄 _10_Service_Animal_Notice.md
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 20_Habitability/
+
+> │              ├── 📄 Demand_Notice_and_Ledger.md
+
+> │              ├── 📄 Narrative_Room_Conditions.md
+
+> │              ├── 📄 _20_Habitability.md
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 MITIGATION_LOG_Hotel.md
+
+> │            ├── 📄 PHASE_07_Hotel_Dispute.md
+
+> │            ├── 📄 _07_HOTEL_DISPUTE.md
+
+> │            ├── 📄 _TOC_.md
+
+> │            ├── 📄 index.html
+
+> │        └── 📂 70_remedies_scenarios/
+
+> │          ├── 📄 _70_remedies_scenarios.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 80_payout_strategy/
+
+> │          ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │          ├── 📄 _80_payout_strategy.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 90_third_party_harm/
+
+> │          ├── 📄 _90_third_party_harm.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _40_Exposure_and_Harm.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 60_service_and_delivery/
+
+> │        └── 📂 Email_Transmittals/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 _Email_Transmittals.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Service_Log.md
+
+> │        └── 📂 USPS_Certified/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 _USPS_Certified.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _60_service_and_delivery.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _20_evidence.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_Trackers/
+
+> │      ├── 📄 authority.csv
+
+> │      ├── 📄 docket.csv
+
+> │      ├── 📄 financial.csv
+
+> │      ├── 📄 strategy.csv
+
+> │      ├── 📄 tasks.csv
+
+> │      ├── 📄 violations.csv
+
+> │    └── 📂 99_Templates/
+
+> │      └── 📂 10_motions/
+
+> │        ├── 📄 _10_motions.md
+
+> │        ├── 📄 _emergency_stay_of_writ.md
+
+> │        ├── 📄 _vacate_void_judgment.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_affidavits/
+
+> │        ├── 📄 _20_affidavits.md
+
+> │        ├── 📄 _GUIDE_Witness_Instructions.md
+
+> │        ├── 📄 __ADA_Disability_Affidavit.md
+
+> │        ├── 📄 __Character_Affidavit.md
+
+> │        ├── 📄 __Community_Service_Affidavit.md
+
+> │        ├── 📄 __Credibility_Affidavit.md
+
+> │        ├── 📄 __Gender_Identity_Clarification.md
+
+> │        ├── 📄 __Observations_Affidavit.md
+
+> │        ├── 📄 __updated_affidavit_language.md
+
+> │        ├── 📄 __verified_affidavit_of_defendant.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_exhibits/
+
+> │        ├── 📄 _40_exhibits.md
+
+> │        ├── 📄 _Exhibits_Lists.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_orders/
+
+> │        ├── 📄 _50_orders.md
+
+> │        ├── 📄 _Proposed_Order.md
+
+> │        ├── 📄 _proposed_order_emergency_stay.md
+
+> │        ├── 📄 _proposed_order_motion_to_vacate.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 60_packets/
+
+> │        ├── 📄 2026-01-19_attorney_intake_packet_executive.md
+
+> │        ├── 📄 NT_TEMPLATE_Handup_Packet_Note.md
+
+> │        ├── 📄 NT_TEMPLATE_ada_packet.md
+
+> │        ├── 📄 _60_packets.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 70_outreach/
+
+> │        ├── 📄 NT_TEMPLATE_Advocate_Outreach.md
+
+> │        ├── 📄 NT_TEMPLATE_attorney_brief.md
+
+> │        ├── 📄 WI8.01.010__2025-12-15_they_threw_us_into_the_c.md
+
+> │        ├── 📄 _70_outreach.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 80_binders/
+
+> │        ├── 📄 NT_TEMPLATE_Section_Cover.md
+
+> │        ├── 📄 NT_TEMPLATE_Section_Index.md
+
+> │        ├── 📄 _80_binders.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 90_internal/
+
+> │        ├── 📄 Phase_Logic_Matrix.canvas
+
+> │        ├── 📄 _90_internal.md
+
+> │        ├── 📄 _Court_Doc.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 _Timeline_Event.md
+
+> │        ├── 📄 _Violation_Entry.md
+
+> │        ├── 📄 _script_call_lawyers.md
+
+> │        ├── 📄 _settlement_letter_draft.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _99_Templates.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 VIOLATIONS_SUMMARY.md
+
+> │    ├── 📄 _00_COCKPIT.md
+
+> │  └── 📂 01_PHASE_FORECLOSURE/
+
+> │    └── 📂 10_proposed/
+
+> │      ├── 📄 _10_proposed.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 2025-01-09_hearing_void_judgment/
+
+> │      └── 📂 2025-01-09_hearing/
+
+> │        ├── 📄 COURT_MODE_BUTTONS.md
+
+> │        ├── 📄 HEARING CHEAT SHEET.md
+
+> │        ├── 📄 _2025-01-09_hearing.md
+
+> │        ├── 📄 _COURT_MODE_PLAYBOOK.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │      ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> │      ├── 📄 _2025-01-09_hearing_void_judgment.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_motions/
+
+> │      ├── 📄 MO_01_motion_vacate.pdf
+
+> │      ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │      ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │      ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │      ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 _30_motions.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_orders/
+
+> │      ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │      ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 _40_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 90_Filed_Envelopes/
+
+> │      └── 📂 10_2025-12-10_motion_vacate/
+
+> │        ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │        ├── 📄 _10_2025-12-10_motion_vacate.md
+
+> │        ├── 📄 combinepdf.pdf
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │        ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │        ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _90_Filed_Envelopes.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_01_Foreclosure.md
+
+> │    ├── 📄 _01_PHASE_FORECLOSURE.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 02_PHASE_PRESERVATION/
+
+> │    └── 📂 10_scope_definitions/
+
+> │      ├── 📄 Evidence_Categories_and_Sources.md
+
+> │      ├── 📄 Utility_and_Ownership_Record_Scope.md
+
+> │      ├── 📄 _10_scope_definitions.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_spoliation_risk/
+
+> │      ├── 📄 Adverse_Inference_Triggers.md
+
+> │      ├── 📄 Housing_Harm_Ledger.md
+
+> │      ├── 📄 Spoliation_Legal_Framework.md
+
+> │      ├── 📄 Spoliation_Risk_Register.md
+
+> │      ├── 📄 _20_spoliation_risk.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_preservation_notices/
+
+> │      ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │      ├── 📄 PHASE_01_5_Evidence_Preservation.md
+
+> │      ├── 📄 _30_preservation_notices.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_output/
+
+> │      └── 📂 10_letters/
+
+> │        ├── 📄 Evidence_Preservation_Cover_Letter.md
+
+> │        ├── 📄 _10_letters.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_packets/
+
+> │        ├── 📄 Evidence_Preservation_Packet_Index.md
+
+> │        ├── 📄 Harm_Matrix_and_Timeline_Summary.md
+
+> │        ├── 📄 MASTER_DISPATCH_CHECKLIST.md
+
+> │        ├── 📄 MASTER_OPERATIONAL_INDEX.md
+
+> │        ├── 📄 Master_Exhibit_Index.md
+
+> │        ├── 📄 Phase_01_5_Execution_Checklist.md
+
+> │        ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
+
+> │        ├── 📄 Service_Packet_Index.md
+
+> │        ├── 📄 _20_packets.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_output.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_02_Preservation.md
+
+> │    ├── 📄 _02_PHASE_PRESERVATION.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 03_CREDIT_FCRA/
+
+> │    └── 📂 10_credit_reports/
+
+> │      └── 📂 Equifax/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Equifax.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 Experian/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Experian.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
+
+> │      └── 📂 Other/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Other.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 TransUnion/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _TransUnion.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _10_credit_reports.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_furnisher_disputes/
+
+> │      ├── 📄 CFPB_Complaint_Draft.md
+
+> │      ├── 📄 FCFCU_Direct_Dispute_Letter.md
+
+> │      ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
+
+> │      ├── 📄 Utility_Dispute_Letter.md
+
+> │      ├── 📄 _20_furnisher_disputes.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_bureau_disputes/
+
+> │      ├── 📄 Consumer_Statement_Landlords.md
+
+> │      ├── 📄 Equifax_Dispute_Letter.md
+
+> │      ├── 📄 Experian_Dispute_Letter.md
+
+> │      ├── 📄 TransUnion_Dispute_Letter.md
+
+> │      ├── 📄 _30_bureau_disputes.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_verified_responses/
+
+> │      ├── 📄 _40_verified_responses.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_damages/
+
+> │      ├── 📄 Core_Credit_Tables.md
+
+> │      ├── 📄 Emergency_Credit_Harm_Addendum.md
+
+> │      ├── 📄 Housing_Emergency_Affidavit.md
+
+> │      ├── 📄 _50_damages.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_output/
+
+> │      ├── 📄 _50_output.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 Equifax_Violation_Excerpt.md
+
+> │    ├── 📄 Experian_Violation_Excerpt.md
+
+> │    ├── 📄 PHASE_03_Credit_FCRA.md
+
+> │    ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │    ├── 📄 _03_CREDIT_FCRA.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 04_REGULATORS/
+
+> │    ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
+
+> │    └── 📂 10_Industry/
+
+> │      └── 📂 BBB/
+
+> │        ├── 📄 BBB_Complaint_Narrative.md
+
+> │        ├── 📄 BBB_Violation_Excerpt.md
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 Exhibit_Manifest.md
+
+> │        ├── 📄 _BBB.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _10_Industry.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_Local/
+
+> │      └── 📂 35_Sheriff_Oversight/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │        ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │        ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │        ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │        ├── 📄 _35_Sheriff_Oversight.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 AES_Utility_Violation_Excerpt.md
+
+> │      ├── 📄 Citizens_Utility_Violation_Excerpt.md
+
+> │      ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │      ├── 📄 _20_Local.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_State/
+
+> │      └── 📂 20_AG_Indiana/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │        ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │        ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │        ├── 📄 _20_AG_Indiana.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 25_IN_DFI/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │        ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │        ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │        ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │        ├── 📄 _25_IN_DFI.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 55_IN_Civil_Rights/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 ICRC_Violation_Excerpt.md
+
+> │        ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │        ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │        ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │        ├── 📄 _55_IN_Civil_Rights.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_State.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_Federal/
+
+> │      └── 📂 20_CFPB/
+
+> │        ├── 📄 CFPB_Complaint_Narrative.md
+
+> │        ├── 📄 CFPB_Violation_Excerpt.md
+
+> │        ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 _20_CFPB.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_NCUA/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 Exhibit_Manifest.md
+
+> │        ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │        ├── 📄 NCUA_Complaint_Narrative.md
+
+> │        ├── 📄 NCUA_Violation_Excerpt.md
+
+> │        ├── 📄 _30_NCUA.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        └── 📂 _archive/
+
+> │          ├── 📄 NCUA_Complaint_Narrative_draft_old.md
+
+> │          ├── 📄 __archive.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_DOJ_Civil_Rights/
+
+> │        ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │        ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │        ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │        ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │        ├── 📄 DOJ_Violation_Excerpt.md
+
+> │        ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_HUD_FHEO/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │        ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │        ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │        ├── 📄 _50_HUD_FHEO.md
+
+> │        └── 📂 _archive/
+
+> │          ├── 📄 HUD_Violation_Excerpt_OLD.md
+
+> │          ├── 📄 __archive.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_Federal.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_Other/
+
+> │      └── 📂 60_CMS_Caretaker_Impact/
+
+> │        ├── 📄 CMS_Informational_Complaint.md
+
+> │        ├── 📄 _60_CMS_Caretaker_Impact.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _50_Other.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 99_Peripheral_Impact/
+
+> │      └── 📂 45_FCC_Telecom/
+
+> │        ├── 📄 Cover_Letter.md
+
+> │        ├── 📄 FCC_Harassment_Complaint.md
+
+> │        ├── 📄 FCC_Violation_Excerpt.md
+
+> │        ├── 📄 _45_FCC_Telecom.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 65_SSA_OIG/
+
+> │        ├── 📄 SSA_OIG_Informational_Filing.md
+
+> │        ├── 📄 _65_SSA_OIG.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 70_VA_Informational/
+
+> │        ├── 📄 VA_Informational_Filing.md
+
+> │        ├── 📄 _70_VA_Informational.md
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 MANIFEST_Informational_Filings_Packet.md
+
+> │    ├── 📄 PHASE_04_Regulators.md
+
+> │    ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │    ├── 📄 _04_REGULATORS.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 05_LITIGATION/
+
+> │    └── 📂 00_Intake/
+
+> │      ├── 📄 Litigation_Decision_Tree.md
+
+> │      ├── 📄 Master_Timeline_Strategy_Summary.md
+
+> │      ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │      ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │      ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │      ├── 📄 _00_Intake.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │        ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │        ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │        ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │        ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │        ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_demand_letters/
+
+> │      ├── 📄 NT_Demand_Ready_Exposure_Summary.md
+
+> │      ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │      ├── 📄 _30_demand_letters.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_opposing_counsel/
+
+> │      ├── 📄 _40_opposing_counsel.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_draft_pleadings/
+
+> │      ├── 📄 _50_draft_pleadings.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_output/
+
+> │      └── 📂 10_filings/
+
+> │        ├── 📄 _10_filings.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_orders/
+
+> │        ├── 📄 _20_orders.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_packets/
+
+> │        ├── 📄 _30_packets.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_motions/
+
+> │        ├── 📄 _40_motions.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_letters/
+
+> │        ├── 📄 _50_letters.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _60_output.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_hearings/
+
+> │      ├── 📄 _70_hearings.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_05_Litigation.md
+
+> │    ├── 📄 _05_LITIGATION.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 06_MEDIA_AND_INQUIRIES/
+
+> │    ├── 📄 06_PUBLIC_PRESSURE.md
+
+> │    └── 📂 10_inbox/
+
+> │      ├── 📄 _10_inbox.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_social_media/
+
+> │      ├── 📄 2025-12-15_they_threw_us_into_the_cold.md
+
+> │      ├── 📄 _20_social_media.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_legislative_outreach/
+
+> │      ├── 📄 _30_legislative_outreach.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_public_record_dumps/
+
+> │      ├── 📄 _40_public_record_dumps.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_press_kits/
+
+> │      ├── 📄 _50_press_kits.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_news_media/
+
+> │      ├── 📄 _60_news_media.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 PHASE_06_Public_Pressure.md
+
+> │    ├── 📄 _06_PUBLIC_PRESSURE.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 repo_index.csv
+
+> └── 📂 logs/
+
+> │  ├── 📄 Evidence_Log.md
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 migrations/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 sessions/
+
+> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_str_1.md
+
+> │    ├── 📄 WI8.02.010__03_Case_Log_Entry_2025-12-15.md
+
+> │    ├── 📄 WI8.02.010__2025-12-16_case_log_entry.md
+
+> │    ├── 📄 WI8.02.010__2025-12-16_case_summary.md
+
+> │    ├── 📄 index.html
+
+> └── 📂 paperless_fcfcu/
+
+> │  ├── 📄 backup_case_evidence.cmd
+
+> │  └── 📂 backups/
+
+> │  └── 📂 consume/
+
+> │  └── 📂 data/
+
+> │  ├── 📄 docker-compose.yml
+
+> │  └── 📂 export/
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 media/
+
+> └── 📂 scripts/
+
+> │  └── 📂 maintenance/
+
+> │    ├── 📄 ensure_path_length.py
+
+> │    ├── 📄 indexer.py
+
+> │    ├── 📄 reporter.py
+
+> │  └── 📂 ops/
+
+> │    ├── 📄 build_binder.py
+
+> │    ├── 📄 clean_and_enrich_timeline.py
+
+> │    ├── 📄 generate_supabase_data.py
+
+> │    ├── 📄 ingest_evidence.py
+
+> │    ├── 📄 pull_from_paperless.py
+
+> │  ├── 📄 qios_main.py
+
+> │  └── 📂 vis/
+
+> │    └── 📄 generate_timeline_view.py
+
 > ```
 
 ### Assistant
@@ -6500,803 +10183,1600 @@ canonical_ref: ""
 > If yes, I’ll give you a clean, consistent hearing subtree naming scheme that matches the rest of your phases.
 
 ### User
-> ```markdown
-> . 📂 content
-> ├── 📄 000_CASE_ORIENTATION.md
-> ├── 📄 000_MASTER_INDEX.md
-> └── 📂 00_CASE_MANAGEMENT/
-> │  └── 📂 01_Case_Master/
-> │    ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
-> │    ├── 📄 01_CASE_ANALYSIS_MEMO.md
-> │    ├── 📄 02_TIMELINE.md
-> │    ├── 📄 02_TIMELINE.mw
-> │    ├── 📄 03_VIOLATIONS.md
-> │    ├── 📄 04_STRATEGY.canvas
-> │    ├── 📄 05_VALUATION.md
-> │    ├── 📄 06_CHECKLIST.md
-> │    ├── 📄 07_PRINT_PLAN.md
-> │    ├── 📄 09_DECISION_MATRIX.canvas
-> │    └── 📂 10_Send_Queue/
-> │      ├── 📄 01_TODO_to_send.md
-> │      ├── 📄 02_Sent_Log.md
-> │      ├── 📄 03_Packet_Checklist.md
-> │      ├── 📄 _10_Send_Queue.md
-> │    ├── 📄 _01_Case_Master.md
-> │  └── 📂 10_Overview/
-> │    ├── 📄 01_forensic_audit.m4a
-> │    ├── 📄 03_critiques_Institutional_failure.m4a
-> │    ├── 📄 04_debate.m4a
-> │    ├── 📄 05_critiques_Separate_Appeals.m4a
-> │    ├── 📄 06_eviction_crisis.pdf
-> │    ├── 📄 07_institutional_failure.pdf
-> │    ├── 📄 08_wrongful_foreclosure.pdf
-> │    ├── 📄 09_Procedural_Red_Flags_Log.md
-> │    ├── 📄 _10_Overview.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_evidence/
-> │    └── 📂 10_Docket/
-> │      ├── 📄 001_2025-01-16_Complaint.pdf
-> │      ├── 📄 002_2025-01-16_Appearance.pdf
-> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
-> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
-> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
-> │      ├── 📄 006_2025-01-16_Summons_1.pdf
-> │      ├── 📄 007_2025-01-16_Summons_2.pdf
-> │      ├── 📄 008_2025-01-16_Summons_3.pdf
-> │      ├── 📄 009_2025-01-16_Summons_4.pdf
-> │      ├── 📄 010_2025-01-16_Summons_5.pdf
-> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
-> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
-> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
-> │      ├── 📄 014_2025-05-13_Affidavit.pdf
-> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
-> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
-> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
-> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
-> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
-> │      ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
-> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
-> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
-> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
-> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
-> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
-> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
-> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
-> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
-> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
-> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
-> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
-> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
-> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
-> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
-> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
-> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
-> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
-> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
-> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
-> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
-> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
-> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
-> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
-> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
-> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
-> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
-> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
-> │      ├── 📄 _10_Docket.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_actors/
-> │      └── 📂 10_fcfcu/
-> │        └── 📂 Appraisal/
-> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │          ├── 📄 _Appraisal.md
-> │          ├── 📄 index.html
-> │        └── 📂 Emails/
-> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │          ├── 📄 _Emails.md
-> │          ├── 📄 index.html
-> │        └── 📂 Letters/
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
-> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
-> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
-> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
-> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
-> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
-> │          ├── 📄 _Letters.md
-> │          ├── 📄 index.html
-> │        └── 📂 Payments/
-> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
-> │          ├── 📄 _Payments.md
-> │          ├── 📄 index.html
-> │        └── 📂 Reports/
-> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │          ├── 📄 _Reports.md
-> │          ├── 📄 index.html
-> │        └── 📂 Statements/
-> │          ├── 📄 _Statements.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _10_fcfcu.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_aes/
-> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │        ├── 📄 _20_aes.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _20_actors.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_supporting/
-> │      └── 📂 10_photos_video/
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
-> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _10_photos_video.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_multi-media/
-> │        └── 📂 Photos/
-> │          ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
-> │          ├── 📄 _Photos.md
-> │          ├── 📄 index.html
-> │        └── 📂 Videos/
-> │          └── 📂 12092025-mayberemovalday/
-> │            ├── 📄 00-06-23_2a.mkv
-> │            ├── 📄 00-16-23_2a.mkv
-> │            ├── 📄 00-26-23_2a.mkv
-> │            ├── 📄 00-36-23_2a.mkv
-> │            ├── 📄 00-46-23_2a.mkv
-> │            ├── 📄 00-56-23_2a.mkv
-> │            ├── 📄 01-06-23_2a.mkv
-> │            ├── 📄 01-16-23_2a.mkv
-> │            ├── 📄 01-26-22_2a.mkv
-> │            ├── 📄 01-36-22_2a.mkv
-> │            ├── 📄 01-46-22_2a.mkv
-> │            ├── 📄 01-56-22_2a.mkv
-> │            ├── 📄 02-06-22_2a.mkv
-> │            ├── 📄 02-16-22_2a.mkv
-> │            ├── 📄 02-26-22_2a.mkv
-> │            ├── 📄 02-36-22_2a.mkv
-> │            ├── 📄 02-46-22_2a.mkv
-> │            ├── 📄 02-56-21_2a.mkv
-> │            ├── 📄 03-06-21_2a.mkv
-> │            ├── 📄 03-16-21_2a.mkv
-> │            ├── 📄 03-26-21_2a.mkv
-> │            ├── 📄 03-36-21_2a.mkv
-> │            ├── 📄 03-46-21_2a.mkv
-> │            ├── 📄 03-56-21_2a.mkv
-> │            ├── 📄 04-06-21_2a.mkv
-> │            ├── 📄 04-16-21_2a.mkv
-> │            ├── 📄 04-26-21_2a.mkv
-> │            ├── 📄 04-36-21_2a.mkv
-> │            ├── 📄 04-46-20_2a.mkv
-> │            ├── 📄 04-56-20_2a.mkv
-> │            ├── 📄 05-06-20_2a.mkv
-> │            ├── 📄 05-16-20_2a.mkv
-> │            ├── 📄 05-26-20_2a.mkv
-> │            ├── 📄 05-36-20_2a.mkv
-> │            ├── 📄 05-46-20_2a.mkv
-> │            ├── 📄 05-56-20_2a.mkv
-> │            ├── 📄 06-06-20_2a.mkv
-> │            ├── 📄 06-16-20_2a.mkv
-> │            ├── 📄 06-26-20_2a.mkv
-> │            ├── 📄 06-36-19_2a.mkv
-> │            ├── 📄 06-46-19_2a.mkv
-> │            ├── 📄 06-56-19_2a.mkv
-> │            ├── 📄 07-06-19_2a.mkv
-> │            ├── 📄 07-16-19_2a.mkv
-> │            ├── 📄 07-26-19_2a.mkv
-> │            ├── 📄 07-36-19_2a.mkv
-> │            ├── 📄 07-46-19_2a.mkv
-> │            ├── 📄 07-56-19_2a.mkv
-> │            ├── 📄 08-06-19_2a.mkv
-> │            ├── 📄 08-16-18_2a.mkv
-> │            ├── 📄 08-26-18_2a.mkv
-> │            ├── 📄 08-36-18_2a.mkv
-> │            ├── 📄 08-46-18_2a.mkv
-> │            ├── 📄 08-56-18_2a.mkv
-> │            ├── 📄 09-06-18_2a.mkv
-> │            ├── 📄 09-16-18_2a.mkv
-> │            ├── 📄 09-26-18_2a.mkv
-> │            ├── 📄 09-36-18_2a.mkv
-> │            ├── 📄 09-46-18_2a.mkv
-> │            ├── 📄 09-56-18_2a.mkv
-> │            ├── 📄 10-06-17_2a.mkv
-> │            ├── 📄 10-16-17_2a.mkv
-> │            ├── 📄 10-26-17_2a.mkv
-> │            ├── 📄 10-36-17_2a.mkv
-> │            ├── 📄 10-46-17_2a.mkv
-> │            ├── 📄 10-56-17_2a.mkv
-> │            ├── 📄 _12092025-mayberemovalday.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _Videos.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _20_multi-media.md
-> │        ├── 📄 index.html
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 WH7.00.020__index.html
-> │        ├── 📄 _20_parcel.md
-> │        ├── 📄 index.html
-> │      └── 📂 30_declarations/
-> │        ├── 📄 _30_declarations.md
-> │        ├── 📄 index.html
-> │      └── 📂 40_affidavits/
-> │        ├── 📄 _40_affidavits.md
-> │        ├── 📄 _TOC_.md
-> │        └── 📂 ada-disability/
-> │          ├── 📄 _ada-disability.md
-> │          ├── 📄 index.html
-> │        └── 📂 character/
-> │          ├── 📄 _character.md
-> │          ├── 📄 index.html
-> │        └── 📂 community-service/
-> │          ├── 📄 _community-service.md
-> │          ├── 📄 index.html
-> │        └── 📂 credibility/
-> │          ├── 📄 _credibility.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 observations/
-> │          ├── 📄 _observations.md
-> │          ├── 📄 index.html
-> │      └── 📂 50_records/
-> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
-> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
-> │        ├── 📄 _50_records.md
-> │        ├── 📄 _TOC_.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _30_supporting.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_Exposure_and_Harm/
-> │      └── 📂 20_economic_harm/
-> │        └── 📂 10_property_possession_harms/
-> │          ├── 📄 _10_property_possession_harms.md
-> │          ├── 📄 index.html
-> │        └── 📂 30_financial/
-> │          ├── 📄 NT_Financial_Tracker.md
-> │          ├── 📄 NT_Payment_Portal_and_Check_History.md
-> │          ├── 📄 _30_financial.md
-> │          ├── 📄 index.html
-> │        └── 📂 60_professional_harm/
-> │          ├── 📄 _60_professional_harm.md
-> │          ├── 📄 index.html
-> │        ├── 📄 Declaration_Secondary_Displacement_Otis.md
-> │        ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
-> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
-> │        ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
-> │        ├── 📄 NT_Post_Removal_Artifact_Checklist.md
-> │        ├── 📄 NT_Quarantined_Claims_Hold.md
-> │        ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
-> │        ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
-> │        ├── 📄 _20_economic_harm.md
-> │        ├── 📄 index.html
-> │      └── 📂 50_non_economic_harm/
-> │        └── 📂 40_health_and_safety/
-> │          └── 📂 20_companion_animal_risk/
-> │            ├── 📄 _20_companion_animal_risk.md
-> │            ├── 📄 index.html
-> │          ├── 📄 _40_health_and_safety.md
-> │          ├── 📄 index.html
-> │        └── 📂 Photos_Conditions/
-> │          ├── 📄 _Photos_Conditions.md
-> │          ├── 📄 index.html
-> │        └── 📂 Weather_Reports/
-> │          ├── 📄 Cold_Risk_Report.md
-> │          ├── 📄 _Weather_Reports.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _50_non_economic_harm.md
-> │        └── 📂 cold_exposure/
-> │          ├── 📄 PL__Cold_Risk_Report.md
-> │          ├── 📄 _cold_exposure.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 60_Consequential_Damages/
-> │        └── 📂 Hotel_Mitigation/
-> │          └── 📂 10_Service_Animal_Notice/
-> │            ├── 📄 Gigi_Documentation_Pack.md
-> │            ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │            ├── 📄 _10_Service_Animal_Notice.md
-> │            ├── 📄 index.html
-> │          └── 📂 20_Habitability/
-> │            ├── 📄 Demand_Notice_and_Ledger.md
-> │            ├── 📄 Room_Conditions_Factual_Log.md
-> │            ├── 📄 _20_Habitability.md
-> │            ├── 📄 index.html
-> │          ├── 📄 MITIGATION_LOG_Temporary_Housing.md
-> │          ├── 📄 README_Temporary_Housing_Mitigation.md
-> │          ├── 📄 _Hotel_Mitigation.md
-> │          ├── 📄 _TOC_.md
-> │          ├── 📄 index.html
-> │        ├── 📄 _60_Consequential_Damages.md
-> │      └── 📂 70_remedies_scenarios/
-> │        ├── 📄 _70_remedies_scenarios.md
-> │        ├── 📄 index.html
-> │      └── 📂 80_payout_strategy/
-> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
-> │        ├── 📄 _80_payout_strategy.md
-> │        ├── 📄 index.html
-> │      └── 📂 90_third_party_harm/
-> │        ├── 📄 _90_third_party_harm.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _40_Exposure_and_Harm.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_service_and_delivery/
-> │      └── 📂 Email_Transmittals/
-> │        ├── 📄 README.md
-> │        ├── 📄 _Email_Transmittals.md
-> │        ├── 📄 index.html
-> │      ├── 📄 Service_Log.md
-> │      └── 📂 USPS_Certified/
-> │        ├── 📄 README.md
-> │        ├── 📄 _USPS_Certified.md
-> │        ├── 📄 index.html
-> │      ├── 📄 _60_service_and_delivery.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _20_evidence.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_Trackers/
-> │    ├── 📄 _30_Trackers.md
-> │    ├── 📄 authority.csv
-> │    ├── 📄 docket.csv
-> │    ├── 📄 financial.csv
-> │    ├── 📄 strategy.csv
-> │    ├── 📄 tasks.csv
-> │    ├── 📄 violations.csv
-> │  └── 📂 99_Templates/
-> │    └── 📂 10_motions/
-> │      ├── 📄 _10_motions.md
-> │      ├── 📄 _emergency_stay_of_writ.md
-> │      ├── 📄 _vacate_void_judgment.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_affidavits/
-> │      ├── 📄 TPL_Affidavit_ADA_Disability.md
-> │      ├── 📄 TPL_Affidavit_Character.md
-> │      ├── 📄 TPL_Affidavit_Community_Service.md
-> │      ├── 📄 TPL_Affidavit_Credibility.md
-> │      ├── 📄 TPL_Affidavit_Language_Updates.md
-> │      ├── 📄 TPL_Affidavit_Observations.md
-> │      ├── 📄 TPL_Affidavit_Verified_Defendant.md
-> │      ├── 📄 TPL_Declaration_Gender_Identity_Clarification.md
-> │      ├── 📄 _20_affidavits.md
-> │      ├── 📄 _GUIDE_Witness_Instructions.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_exhibits/
-> │      ├── 📄 _40_exhibits.md
-> │      ├── 📄 _Exhibits_Lists.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_orders/
-> │      ├── 📄 _50_orders.md
-> │      ├── 📄 _Proposed_Order.md
-> │      ├── 📄 _proposed_order_emergency_stay.md
-> │      ├── 📄 _proposed_order_motion_to_vacate.md
-> │      ├── 📄 index.html
-> │    └── 📂 60_packets/
-> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
-> │      ├── 📄 TPL_ADA_Packet.md
-> │      ├── 📄 TPL_Handup_Packet_Note.md
-> │      ├── 📄 _60_packets.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_outreach/
-> │      ├── 📄 TPL_Advocate_Outreach.md
-> │      ├── 📄 TPL_Attorney_Brief.md
-> │      ├── 📄 _70_outreach.md
-> │      ├── 📄 index.html
-> │    └── 📂 80_binders/
-> │      ├── 📄 TPL_Binder_Section_Cover.md
-> │      ├── 📄 TPL_Binder_Section_Index.md
-> │      ├── 📄 _80_binders.md
-> │      ├── 📄 index.html
-> │    └── 📂 90_internal/
-> │      ├── 📄 Phase_Logic_Matrix.canvas
-> │      ├── 📄 _90_internal.md
-> │      ├── 📄 _Court_Doc.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 _Timeline_Event.md
-> │      ├── 📄 _Violation_Entry.md
-> │      ├── 📄 _script_call_lawyers.md
-> │      ├── 📄 _settlement_letter_draft.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _99_Templates.md
-> │    ├── 📄 index.html
-> │  ├── 📄 VIOLATIONS_SUMMARY.md
-> │  ├── 📄 _00_CASE_MANAGEMENT.md
-> │  ├── 📄 _00_COCKPIT.md
-> └── 📂 01_PHASE_FORECLOSURE/
-> │  └── 📂 10_proposed/
-> │    ├── 📄 _10_proposed.md
-> │    ├── 📄 index.html
-> │  └── 📂 2025-01-09_hearing_void_judgment/
-> │    └── 📂 2025-01-09_hearing/
-> │      ├── 📄 COURT_MODE_BUTTONS.md
-> │      ├── 📄 HEARING_Cheat_Sheet.md
-> │      ├── 📄 _COURT_MODE_PLAYBOOK.md
-> │      ├── 📄 _Hearing_Packet_2026-01-09.md
-> │      ├── 📄 index.html
-> │    ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
-> │    ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
-> │    ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
-> │    ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
-> │    ├── 📄 _2025-01-09_hearing_void_judgment.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_motions/
-> │    ├── 📄 MO_01_motion_vacate.pdf
-> │    ├── 📄 MO_02_emergency_motion_quash_stay.pdf
-> │    ├── 📄 MO_motion_emergency_stay_of_writ.md
-> │    ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
-> │    ├── 📄 MO_motion_to_vacate_void_judgment.md
-> │    ├── 📄 MO_proposed_order_motion_to_vacate.md
-> │    ├── 📄 _30_motions.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_orders/
-> │    ├── 📄 OR_03_order_vacate_proposed.pdf
-> │    ├── 📄 OR_04_order_stay_writ_proposed.pdf
-> │    ├── 📄 _40_orders.md
-> │    ├── 📄 index.html
-> │  └── 📂 90_Filed_Envelopes/
-> │    └── 📂 10_2025-12-10_motion_vacate/
-> │      ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 _10_2025-12-10_motion_vacate.md
-> │      ├── 📄 combinepdf.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │      ├── 📄 MO_Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _90_Filed_Envelopes.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_01_Foreclosure.md
-> │  ├── 📄 _01_PHASE_FORECLOSURE.md
-> │  ├── 📄 index.html
-> └── 📂 02_PHASE_PRESERVATION/
-> │  └── 📂 10_scope_definitions/
-> │    ├── 📄 Evidence_Categories_and_Sources.md
-> │    ├── 📄 Utility_and_Ownership_Record_Scope.md
-> │    ├── 📄 _10_scope_definitions.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_spoliation_risk/
-> │    ├── 📄 Adverse_Inference_Triggers.md
-> │    ├── 📄 Housing_Harm_Ledger.md
-> │    ├── 📄 Spoliation_Legal_Framework.md
-> │    ├── 📄 Spoliation_Risk_Register.md
-> │    ├── 📄 _20_spoliation_risk.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_preservation_notices/
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 PHASE_01_5_Evidence_Preservation.md
-> │    ├── 📄 _30_preservation_notices.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_output/
-> │    └── 📂 10_letters/
-> │      ├── 📄 Evidence_Preservation_Cover_Letter.md
-> │      ├── 📄 _10_letters.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_packets/
-> │      ├── 📄 Evidence_Preservation_Packet_Index.md
-> │      ├── 📄 Harm_Matrix_and_Timeline_Summary.md
-> │      ├── 📄 MASTER_DISPATCH_CHECKLIST.md
-> │      ├── 📄 MASTER_OPERATIONAL_INDEX.md
-> │      ├── 📄 Master_Exhibit_Index.md
-> │      ├── 📄 Phase_01_5_Execution_Checklist.md
-> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
-> │      ├── 📄 Service_Packet_Index.md
-> │      ├── 📄 _20_packets.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _40_output.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_02_Preservation.md
-> │  ├── 📄 _02_PHASE_PRESERVATION.md
-> │  ├── 📄 index.html
-> └── 📂 03_CREDIT_FCRA/
-> │  └── 📂 10_credit_reports/
-> │    └── 📂 Equifax/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Equifax.md
-> │      ├── 📄 index.html
-> │    └── 📂 Experian/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Experian.md
-> │      ├── 📄 index.html
-> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
-> │    └── 📂 Other/
-> │      ├── 📄 README.md
-> │      ├── 📄 _Other.md
-> │      ├── 📄 index.html
-> │    └── 📂 TransUnion/
-> │      ├── 📄 README.md
-> │      ├── 📄 _TransUnion.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_credit_reports.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_furnisher_disputes/
-> │    ├── 📄 CFPB_Complaint_Draft.md
-> │    ├── 📄 FCFCU_Direct_Dispute_Letter.md
-> │    ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
-> │    ├── 📄 Utility_Dispute_Letter.md
-> │    ├── 📄 _20_furnisher_disputes.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_bureau_disputes/
-> │    ├── 📄 Consumer_Statement_Landlords.md
-> │    ├── 📄 Equifax_Dispute_Letter.md
-> │    ├── 📄 Experian_Dispute_Letter.md
-> │    ├── 📄 TransUnion_Dispute_Letter.md
-> │    ├── 📄 _30_bureau_disputes.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_verified_responses/
-> │    ├── 📄 _40_verified_responses.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_damages/
-> │    ├── 📄 Core_Credit_Tables.md
-> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
-> │    ├── 📄 Housing_Emergency_Affidavit.md
-> │    ├── 📄 _50_damages.md
-> │    ├── 📄 _TOC_.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_output/
-> │    ├── 📄 _50_output.md
-> │    ├── 📄 index.html
-> │  ├── 📄 Equifax_Violation_Excerpt.md
-> │  ├── 📄 Experian_Violation_Excerpt.md
-> │  ├── 📄 PHASE_03_Credit_FCRA.md
-> │  ├── 📄 TransUnion_Violation_Excerpt.md
-> │  ├── 📄 _03_CREDIT_FCRA.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 04_REGULATORS/
-> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
-> │  └── 📂 10_Industry/
-> │    └── 📂 BBB/
-> │      ├── 📄 BBB_Complaint_Narrative.md
-> │      ├── 📄 BBB_Violation_Excerpt.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 _BBB.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _10_Industry.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_Local/
-> │    └── 📂 35_Sheriff_Oversight/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │      ├── 📄 Sheriff_Violation_Excerpt.md
-> │      ├── 📄 _35_Sheriff_Oversight.md
-> │      ├── 📄 index.html
-> │    ├── 📄 AES_Utility_Violation_Excerpt.md
-> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
-> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │    ├── 📄 _20_Local.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_State/
-> │    └── 📂 20_AG_Indiana/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_AG_Violation_Excerpt.md
-> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │      ├── 📄 _20_AG_Indiana.md
-> │      ├── 📄 index.html
-> │    └── 📂 25_IN_DFI/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 IN_DFI_Violation_Excerpt.md
-> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │      ├── 📄 _25_IN_DFI.md
-> │      ├── 📄 index.html
-> │    └── 📂 55_IN_Civil_Rights/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 ICRC_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │      ├── 📄 _55_IN_Civil_Rights.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _30_State.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_Federal/
-> │    └── 📂 20_CFPB/
-> │      ├── 📄 CFPB_Complaint_Narrative.md
-> │      ├── 📄 CFPB_Violation_Excerpt.md
-> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 _20_CFPB.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_NCUA/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 Exhibit_Manifest.md
-> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │      ├── 📄 NCUA_Complaint_Narrative.md
-> │      ├── 📄 NCUA_Violation_Excerpt.md
-> │      ├── 📄 _30_NCUA.md
-> │      ├── 📄 _TOC_.md
-> │      └── 📂 _archive/
-> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
-> │        ├── 📄 __archive.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 40_DOJ_Civil_Rights/
-> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │      ├── 📄 DOJ_Violation_Excerpt.md
-> │      ├── 📄 _40_DOJ_Civil_Rights.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_HUD_FHEO/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │      ├── 📄 _50_HUD_FHEO.md
-> │      └── 📂 _archive/
-> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
-> │        ├── 📄 __archive.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    ├── 📄 _40_Federal.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_Other/
-> │    └── 📂 60_CMS_Caretaker_Impact/
-> │      ├── 📄 CMS_Informational_Complaint.md
-> │      ├── 📄 _60_CMS_Caretaker_Impact.md
-> │      ├── 📄 _TOC_.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _50_Other.md
-> │    ├── 📄 index.html
-> │  └── 📂 99_Reserve_Informational/
-> │    └── 📂 45_FCC_Telecom/
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 FCC_Harassment_Complaint.md
-> │      ├── 📄 FCC_Violation_Excerpt.md
-> │      ├── 📄 _45_FCC_Telecom.md
-> │      ├── 📄 index.html
-> │    └── 📂 65_SSA_OIG/
-> │      ├── 📄 SSA_OIG_Informational_Filing.md
-> │      ├── 📄 _65_SSA_OIG.md
-> │      ├── 📄 index.html
-> │    └── 📂 70_VA_Informational/
-> │      ├── 📄 VA_Informational_Filing.md
-> │      ├── 📄 _70_VA_Informational.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _99_Peripheral_Impact.md
-> │  ├── 📄 MANIFEST_Informational_Filings_Packet.md
-> │  ├── 📄 PHASE_04_Regulators.md
-> │  ├── 📄 Violation_to_Regulator_Mapping.md
-> │  ├── 📄 _04_REGULATORS.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 05_LITIGATION/
-> │  └── 📂 00_Intake/
-> │    ├── 📄 Litigation_Decision_Tree.md
-> │    ├── 📄 Master_Timeline_Strategy_Summary.md
-> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
-> │    ├── 📄 NT_Attorney_Intake_Summary.md
-> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
-> │    ├── 📄 _00_Intake.md
-> │    └── 📂 _archive/
-> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
-> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
-> │      ├── 📄 NT_LEGAL MEMORANDUM.md
-> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
-> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
-> │      ├── 📄 NT_Violation_Remedy_Inventory.md
-> │      ├── 📄 __archive.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_demand_letters/
-> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
-> │    ├── 📄 Notice_of_Evidence_Preservation.md
-> │    ├── 📄 _30_demand_letters.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_opposing_counsel/
-> │    ├── 📄 _40_opposing_counsel.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_draft_pleadings/
-> │    ├── 📄 _50_draft_pleadings.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_output/
-> │    └── 📂 10_filings/
-> │      ├── 📄 _10_filings.md
-> │      ├── 📄 index.html
-> │    └── 📂 20_orders/
-> │      ├── 📄 _20_orders.md
-> │      ├── 📄 index.html
-> │    └── 📂 30_packets/
-> │      ├── 📄 _30_packets.md
-> │      ├── 📄 index.html
-> │    └── 📂 40_motions/
-> │      ├── 📄 _40_motions.md
-> │      ├── 📄 index.html
-> │    └── 📂 50_letters/
-> │      ├── 📄 _50_letters.md
-> │      ├── 📄 index.html
-> │    ├── 📄 _60_output.md
-> │    ├── 📄 index.html
-> │  └── 📂 70_hearings/
-> │    ├── 📄 _70_hearings.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_05_Litigation.md
-> │  ├── 📄 _05_LITIGATION.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> └── 📂 06_MEDIA_AND_INQUIRIES/
-> │  ├── 📄 06_PUBLIC_PRESSURE.md
-> │  └── 📂 10_inbox/
-> │    ├── 📄 _10_inbox.md
-> │    ├── 📄 index.html
-> │  └── 📂 20_social_media/
-> │    ├── 📄 2025-12-15_displacement_cold_exposure.md
-> │    ├── 📄 2025-12-15_displacement_cold_exposure_narrative.md
-> │    ├── 📄 _20_social_media.md
-> │    ├── 📄 index.html
-> │  └── 📂 30_legislative_outreach/
-> │    ├── 📄 _30_legislative_outreach.md
-> │    ├── 📄 index.html
-> │  └── 📂 40_public_record_dumps/
-> │    ├── 📄 _40_public_record_dumps.md
-> │    ├── 📄 index.html
-> │  └── 📂 50_press_kits/
-> │    ├── 📄 _50_press_kits.md
-> │    ├── 📄 index.html
-> │  └── 📂 60_news_media/
-> │    ├── 📄 _60_news_media.md
-> │    ├── 📄 index.html
-> │  ├── 📄 PHASE_06_Public_Pressure.md
-> │  ├── 📄 _06_MEDIA_AND_INQUIRIES.md
-> │  ├── 📄 _06_PUBLIC_PRESSURE.md
-> │  ├── 📄 _TOC_.md
-> │  ├── 📄 index.html
-> ├── 📄 _content.md
-> ├── 📄 rename_map.csv
-> ├── 📄 repo_index.csv
-> └── 📂 scripts/
-> │  └── 📂 maintenance/
-> │    └── 📄 apply_rename_map.py
+> ```markdown
+
+> . 📂 content
+
+> ├── 📄 000_CASE_ORIENTATION.md
+
+> ├── 📄 000_MASTER_INDEX.md
+
+> └── 📂 00_CASE_MANAGEMENT/
+
+> │  └── 📂 01_Case_Master/
+
+> │    ├── 📄 00_CASE_SNAPSHOT_ONE_PAGER.md
+
+> │    ├── 📄 01_CASE_ANALYSIS_MEMO.md
+
+> │    ├── 📄 02_TIMELINE.md
+
+> │    ├── 📄 02_TIMELINE.mw
+
+> │    ├── 📄 03_VIOLATIONS.md
+
+> │    ├── 📄 04_STRATEGY.canvas
+
+> │    ├── 📄 05_VALUATION.md
+
+> │    ├── 📄 06_CHECKLIST.md
+
+> │    ├── 📄 07_PRINT_PLAN.md
+
+> │    ├── 📄 09_DECISION_MATRIX.canvas
+
+> │    └── 📂 10_Send_Queue/
+
+> │      ├── 📄 01_TODO_to_send.md
+
+> │      ├── 📄 02_Sent_Log.md
+
+> │      ├── 📄 03_Packet_Checklist.md
+
+> │      ├── 📄 _10_Send_Queue.md
+
+> │    ├── 📄 _01_Case_Master.md
+
+> │  └── 📂 10_Overview/
+
+> │    ├── 📄 01_forensic_audit.m4a
+
+> │    ├── 📄 03_critiques_Institutional_failure.m4a
+
+> │    ├── 📄 04_debate.m4a
+
+> │    ├── 📄 05_critiques_Separate_Appeals.m4a
+
+> │    ├── 📄 06_eviction_crisis.pdf
+
+> │    ├── 📄 07_institutional_failure.pdf
+
+> │    ├── 📄 08_wrongful_foreclosure.pdf
+
+> │    ├── 📄 09_Procedural_Red_Flags_Log.md
+
+> │    ├── 📄 _10_Overview.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_evidence/
+
+> │    └── 📂 10_Docket/
+
+> │      ├── 📄 001_2025-01-16_Complaint.pdf
+
+> │      ├── 📄 002_2025-01-16_Appearance.pdf
+
+> │      ├── 📄 003_2025-01-16_Request_for_Admissions.pdf
+
+> │      ├── 📄 004_2025-01-16_Notice_to_Homeowners.pdf
+
+> │      ├── 📄 005_2025-01-16_Appearance_2.pdf
+
+> │      ├── 📄 006_2025-01-16_Summons_1.pdf
+
+> │      ├── 📄 007_2025-01-16_Summons_2.pdf
+
+> │      ├── 📄 008_2025-01-16_Summons_3.pdf
+
+> │      ├── 📄 009_2025-01-16_Summons_4.pdf
+
+> │      ├── 📄 010_2025-01-16_Summons_5.pdf
+
+> │      ├── 📄 011_2025-03-05_Service_Returned_Served.pdf
+
+> │      ├── 📄 012_2025-04-15_Service_Returned_Served.pdf
+
+> │      ├── 📄 013_2025-05-13_Motion_for_Default_Judgment.pdf
+
+> │      ├── 📄 014_2025-05-13_Affidavit.pdf
+
+> │      ├── 📄 015_2025-05-13_Affidavit_Attorney_Fees.pdf
+
+> │      ├── 📄 016_2025-05-21_Order_Denying_Default.pdf
+
+> │      ├── 📄 017_2025-05-21_Notice_Omitted_Service.pdf
+
+> │      ├── 📄 018_2025-05-23_Motion_Amended_Default_1.pdf
+
+> │      ├── 📄 019_2025-05-23_Motion_Amended_Default_2.pdf
+
+> │      ├── 📄 020_2025_05_23_Order_Default_Judgement.pdf
+
+> │      ├── 📄 021_2025-05-30_Praecipe_Sheriff_Sale_1.pdf
+
+> │      ├── 📄 022_2025-05-30_Praecipe_Sheriff_Sale_2.pdf
+
+> │      ├── 📄 023_2025-07-09_Service_Returned_Served_Sheriff.pdf
+
+> │      ├── 📄 024_2025-07-17_Notice_Plaintiffs_Bid.pdf
+
+> │      ├── 📄 025_2025-09-09_Decree_Foreclosure_Returned.pdf
+
+> │      ├── 📄 026_2025-10-29_Petition_Writ_of_Assistance.pdf
+
+> │      ├── 📄 027_2025-10-29_Writ_of_Assistance_Document.pdf
+
+> │      ├── 📄 028_2025-11-06_Order_Writ_of_Assistance.pdf
+
+> │      ├── 📄 029_2025-12-10_motion_vacate.pdf
+
+> │      ├── 📄 030_2025-12-11_Motion_Vacate_Judgment.pdf
+
+> │      ├── 📄 031_2025-12-11_Exhibit_List_A-G.pdf
+
+> │      ├── 📄 032_2025-12-11_Denial_stay_writ.pdf
+
+> │      ├── 📄 033_2025-12-11_Hearing_Set_Proposed_Order_Vacate.pdf
+
+> │      ├── 📄 034_2025-12-11_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 035_2025-12-11_Proposed_Order_Stay.pdf
+
+> │      ├── 📄 036_2025-12-12_Report_to_Court.pdf
+
+> │      ├── 📄 037_2025-12-12_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 038_2025-12-16_Emergency_Supplemental_Declaration.pdf
+
+> │      ├── 📄 039_2025-12-17_Report_Sheriff_Sale_No_Excess.pdf
+
+> │      ├── 📄 040_2025-12-22_ADA_Disability_Affidavit.pdf
+
+> │      ├── 📄 041_2026-01-09_Appearance_Plaintiff.pdf
+
+> │      ├── 📄 042_2025-01-20_Order_from_1_9_26_hearing.pdf
+
+> │      ├── 📄 043_2025-12-22_Declaration_Ongoing_D.pdf
+
+> │      ├── 📄 044_2025-12-10_Exhibit_G1_ADA_Notice.pdf
+
+> │      ├── 📄 045_2025-12-10_Exhibit_F_Affidavit.pdf
+
+> │      ├── 📄 046_2025-12-10_Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 047_2025-12-10_Exhibit_G2_AES_ADA_Disconnects.pdf
+
+> │      ├── 📄 048_2025-12-10_Combined_Exhibits_A-H.pdf
+
+> │      ├── 📄 049_2025-05-21_Omitted_Notice_of_Service_Report.pdf
+
+> │      ├── 📄 _10_Docket.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_actors/
+
+> │      └── 📂 10_fcfcu/
+
+> │        └── 📂 Appraisal/
+
+> │          ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │          ├── 📄 _Appraisal.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Emails/
+
+> │          ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │          ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │          ├── 📄 _Emails.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Letters/
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_Health_Notice_Delivery.md
+
+> │          ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Le.pdf
+
+> │          ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Record.pdf
+
+> │          ├── 📄 2024-06-24_FCFCU_Past_Due_Letter.jpg
+
+> │          ├── 📄 2025-12-20_EXH-30_fcfcu_ac6eb2ea_2025-12-20_EX.jpg
+
+> │          ├── 📄 Formal_Retrieval_Protocol_ADA.md
+
+> │          ├── 📄 _Letters.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Payments/
+
+> │          ├── 📄 2025-12-20_EXH-20_payments_c5131deb_2025-12-20.png
+
+> │          ├── 📄 _Payments.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Reports/
+
+> │          ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │          ├── 📄 _Reports.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Statements/
+
+> │          ├── 📄 _Statements.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _10_fcfcu.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_aes/
+
+> │        ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │        ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │        ├── 📄 _20_aes.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _20_actors.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_supporting/
+
+> │      └── 📂 10_photos_video/
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_00241326_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_012aa06e_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_01b3e905_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_10f4975d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1a80b987_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1beefb11_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_1f3f8a81_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_25fb1992_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_2f0952db_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_49c74ec6_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_4e01fa01_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5be451ba_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_5d95cae5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_61129253_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_63fb7b02_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_71c9e6a7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_78ba1ccc_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_7a544ef7_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8350e7be_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8a163413_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_8d885a5c_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_942cfd7f_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9b611100_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9fb3a08a_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_9ff5022d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_a8832e17_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ca02d006_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_db9b10b5_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_e4cb3622_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ebaaa38d_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_ed6dc885_2025-1.mp4
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f510498b_2025-.heic
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f60d8098_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_f98b089a_2025-1.png
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fa1703bf_2025-1.jpg
+
+> │        ├── 📄 2025-12-20_EXH-10_photos_video_fdd8d4ef_2025-1.jpg
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _10_photos_video.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_multi-media/
+
+> │        └── 📂 Photos/
+
+> │          ├── 📄 7345FF5F-1928-4EF9-A63F-99C02D4020A2.jpeg
+
+> │          ├── 📄 _Photos.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Videos/
+
+> │          └── 📂 12092025-mayberemovalday/
+
+> │            ├── 📄 00-06-23_2a.mkv
+
+> │            ├── 📄 00-16-23_2a.mkv
+
+> │            ├── 📄 00-26-23_2a.mkv
+
+> │            ├── 📄 00-36-23_2a.mkv
+
+> │            ├── 📄 00-46-23_2a.mkv
+
+> │            ├── 📄 00-56-23_2a.mkv
+
+> │            ├── 📄 01-06-23_2a.mkv
+
+> │            ├── 📄 01-16-23_2a.mkv
+
+> │            ├── 📄 01-26-22_2a.mkv
+
+> │            ├── 📄 01-36-22_2a.mkv
+
+> │            ├── 📄 01-46-22_2a.mkv
+
+> │            ├── 📄 01-56-22_2a.mkv
+
+> │            ├── 📄 02-06-22_2a.mkv
+
+> │            ├── 📄 02-16-22_2a.mkv
+
+> │            ├── 📄 02-26-22_2a.mkv
+
+> │            ├── 📄 02-36-22_2a.mkv
+
+> │            ├── 📄 02-46-22_2a.mkv
+
+> │            ├── 📄 02-56-21_2a.mkv
+
+> │            ├── 📄 03-06-21_2a.mkv
+
+> │            ├── 📄 03-16-21_2a.mkv
+
+> │            ├── 📄 03-26-21_2a.mkv
+
+> │            ├── 📄 03-36-21_2a.mkv
+
+> │            ├── 📄 03-46-21_2a.mkv
+
+> │            ├── 📄 03-56-21_2a.mkv
+
+> │            ├── 📄 04-06-21_2a.mkv
+
+> │            ├── 📄 04-16-21_2a.mkv
+
+> │            ├── 📄 04-26-21_2a.mkv
+
+> │            ├── 📄 04-36-21_2a.mkv
+
+> │            ├── 📄 04-46-20_2a.mkv
+
+> │            ├── 📄 04-56-20_2a.mkv
+
+> │            ├── 📄 05-06-20_2a.mkv
+
+> │            ├── 📄 05-16-20_2a.mkv
+
+> │            ├── 📄 05-26-20_2a.mkv
+
+> │            ├── 📄 05-36-20_2a.mkv
+
+> │            ├── 📄 05-46-20_2a.mkv
+
+> │            ├── 📄 05-56-20_2a.mkv
+
+> │            ├── 📄 06-06-20_2a.mkv
+
+> │            ├── 📄 06-16-20_2a.mkv
+
+> │            ├── 📄 06-26-20_2a.mkv
+
+> │            ├── 📄 06-36-19_2a.mkv
+
+> │            ├── 📄 06-46-19_2a.mkv
+
+> │            ├── 📄 06-56-19_2a.mkv
+
+> │            ├── 📄 07-06-19_2a.mkv
+
+> │            ├── 📄 07-16-19_2a.mkv
+
+> │            ├── 📄 07-26-19_2a.mkv
+
+> │            ├── 📄 07-36-19_2a.mkv
+
+> │            ├── 📄 07-46-19_2a.mkv
+
+> │            ├── 📄 07-56-19_2a.mkv
+
+> │            ├── 📄 08-06-19_2a.mkv
+
+> │            ├── 📄 08-16-18_2a.mkv
+
+> │            ├── 📄 08-26-18_2a.mkv
+
+> │            ├── 📄 08-36-18_2a.mkv
+
+> │            ├── 📄 08-46-18_2a.mkv
+
+> │            ├── 📄 08-56-18_2a.mkv
+
+> │            ├── 📄 09-06-18_2a.mkv
+
+> │            ├── 📄 09-16-18_2a.mkv
+
+> │            ├── 📄 09-26-18_2a.mkv
+
+> │            ├── 📄 09-36-18_2a.mkv
+
+> │            ├── 📄 09-46-18_2a.mkv
+
+> │            ├── 📄 09-56-18_2a.mkv
+
+> │            ├── 📄 10-06-17_2a.mkv
+
+> │            ├── 📄 10-16-17_2a.mkv
+
+> │            ├── 📄 10-26-17_2a.mkv
+
+> │            ├── 📄 10-36-17_2a.mkv
+
+> │            ├── 📄 10-46-17_2a.mkv
+
+> │            ├── 📄 10-56-17_2a.mkv
+
+> │            ├── 📄 _12092025-mayberemovalday.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _Videos.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _20_multi-media.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 WH7.00.020__index.html
+
+> │        ├── 📄 _20_parcel.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 _30_declarations.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_affidavits/
+
+> │        ├── 📄 _40_affidavits.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        └── 📂 ada-disability/
+
+> │          ├── 📄 _ada-disability.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 character/
+
+> │          ├── 📄 _character.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 community-service/
+
+> │          ├── 📄 _community-service.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 credibility/
+
+> │          ├── 📄 _credibility.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 observations/
+
+> │          ├── 📄 _observations.md
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 50_records/
+
+> │        ├── 📄 2025-12-20_EXH-20_receipts_0860d3df_2025-12-20.jpg
+
+> │        ├── 📄 NT_Video_Narration_Log_Removal_Day.md
+
+> │        ├── 📄 _50_records.md
+
+> │        ├── 📄 _TOC_.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _30_supporting.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_Exposure_and_Harm/
+
+> │      └── 📂 20_economic_harm/
+
+> │        └── 📂 10_property_possession_harms/
+
+> │          ├── 📄 _10_property_possession_harms.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 30_financial/
+
+> │          ├── 📄 NT_Financial_Tracker.md
+
+> │          ├── 📄 NT_Payment_Portal_and_Check_History.md
+
+> │          ├── 📄 _30_financial.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 60_professional_harm/
+
+> │          ├── 📄 _60_professional_harm.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 Declaration_Secondary_Displacement_Otis.md
+
+> │        ├── 📄 Emergency_Supplemental_Declaration_Consolidated.md
+
+> │        ├── 📄 NT_2025-12-21_Gigi_Escape_Displacement_Safety_Event.md
+
+> │        ├── 📄 NT_Forced_Relocation_Market_Loss_Memo.md
+
+> │        ├── 📄 NT_Post_Removal_Artifact_Checklist.md
+
+> │        ├── 📄 NT_Quarantined_Claims_Hold.md
+
+> │        ├── 📄 Supplemental_Declaration_Accounting_Surplus.md
+
+> │        ├── 📄 Supplemental_Declaration_Cody_DRAFT.md
+
+> │        ├── 📄 _20_economic_harm.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 50_non_economic_harm/
+
+> │        └── 📂 40_health_and_safety/
+
+> │          └── 📂 20_companion_animal_risk/
+
+> │            ├── 📄 _20_companion_animal_risk.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 _40_health_and_safety.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Photos_Conditions/
+
+> │          ├── 📄 _Photos_Conditions.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 Weather_Reports/
+
+> │          ├── 📄 Cold_Risk_Report.md
+
+> │          ├── 📄 _Weather_Reports.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _50_non_economic_harm.md
+
+> │        └── 📂 cold_exposure/
+
+> │          ├── 📄 PL__Cold_Risk_Report.md
+
+> │          ├── 📄 _cold_exposure.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 60_Consequential_Damages/
+
+> │        └── 📂 Hotel_Mitigation/
+
+> │          └── 📂 10_Service_Animal_Notice/
+
+> │            ├── 📄 Gigi_Documentation_Pack.md
+
+> │            ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │            ├── 📄 _10_Service_Animal_Notice.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 20_Habitability/
+
+> │            ├── 📄 Demand_Notice_and_Ledger.md
+
+> │            ├── 📄 Room_Conditions_Factual_Log.md
+
+> │            ├── 📄 _20_Habitability.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 MITIGATION_LOG_Temporary_Housing.md
+
+> │          ├── 📄 README_Temporary_Housing_Mitigation.md
+
+> │          ├── 📄 _Hotel_Mitigation.md
+
+> │          ├── 📄 _TOC_.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 _60_Consequential_Damages.md
+
+> │      └── 📂 70_remedies_scenarios/
+
+> │        ├── 📄 _70_remedies_scenarios.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 80_payout_strategy/
+
+> │        ├── 📄 NT__Long_Term_Payout_Strategy.md
+
+> │        ├── 📄 _80_payout_strategy.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 90_third_party_harm/
+
+> │        ├── 📄 _90_third_party_harm.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _40_Exposure_and_Harm.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_service_and_delivery/
+
+> │      └── 📂 Email_Transmittals/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _Email_Transmittals.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 Service_Log.md
+
+> │      └── 📂 USPS_Certified/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 _USPS_Certified.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 _60_service_and_delivery.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _20_evidence.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_Trackers/
+
+> │    ├── 📄 _30_Trackers.md
+
+> │    ├── 📄 authority.csv
+
+> │    ├── 📄 docket.csv
+
+> │    ├── 📄 financial.csv
+
+> │    ├── 📄 strategy.csv
+
+> │    ├── 📄 tasks.csv
+
+> │    ├── 📄 violations.csv
+
+> │  └── 📂 99_Templates/
+
+> │    └── 📂 10_motions/
+
+> │      ├── 📄 _10_motions.md
+
+> │      ├── 📄 _emergency_stay_of_writ.md
+
+> │      ├── 📄 _vacate_void_judgment.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_affidavits/
+
+> │      ├── 📄 TPL_Affidavit_ADA_Disability.md
+
+> │      ├── 📄 TPL_Affidavit_Character.md
+
+> │      ├── 📄 TPL_Affidavit_Community_Service.md
+
+> │      ├── 📄 TPL_Affidavit_Credibility.md
+
+> │      ├── 📄 TPL_Affidavit_Language_Updates.md
+
+> │      ├── 📄 TPL_Affidavit_Observations.md
+
+> │      ├── 📄 TPL_Affidavit_Verified_Defendant.md
+
+> │      ├── 📄 TPL_Declaration_Gender_Identity_Clarification.md
+
+> │      ├── 📄 _20_affidavits.md
+
+> │      ├── 📄 _GUIDE_Witness_Instructions.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_exhibits/
+
+> │      ├── 📄 _40_exhibits.md
+
+> │      ├── 📄 _Exhibits_Lists.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_orders/
+
+> │      ├── 📄 _50_orders.md
+
+> │      ├── 📄 _Proposed_Order.md
+
+> │      ├── 📄 _proposed_order_emergency_stay.md
+
+> │      ├── 📄 _proposed_order_motion_to_vacate.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 60_packets/
+
+> │      ├── 📄 2026-01-19_attorney_intake_packet_executive.md
+
+> │      ├── 📄 TPL_ADA_Packet.md
+
+> │      ├── 📄 TPL_Handup_Packet_Note.md
+
+> │      ├── 📄 _60_packets.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_outreach/
+
+> │      ├── 📄 TPL_Advocate_Outreach.md
+
+> │      ├── 📄 TPL_Attorney_Brief.md
+
+> │      ├── 📄 _70_outreach.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 80_binders/
+
+> │      ├── 📄 TPL_Binder_Section_Cover.md
+
+> │      ├── 📄 TPL_Binder_Section_Index.md
+
+> │      ├── 📄 _80_binders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 90_internal/
+
+> │      ├── 📄 Phase_Logic_Matrix.canvas
+
+> │      ├── 📄 _90_internal.md
+
+> │      ├── 📄 _Court_Doc.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 _Timeline_Event.md
+
+> │      ├── 📄 _Violation_Entry.md
+
+> │      ├── 📄 _script_call_lawyers.md
+
+> │      ├── 📄 _settlement_letter_draft.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _99_Templates.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 VIOLATIONS_SUMMARY.md
+
+> │  ├── 📄 _00_CASE_MANAGEMENT.md
+
+> │  ├── 📄 _00_COCKPIT.md
+
+> └── 📂 01_PHASE_FORECLOSURE/
+
+> │  └── 📂 10_proposed/
+
+> │    ├── 📄 _10_proposed.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 2025-01-09_hearing_void_judgment/
+
+> │    └── 📂 2025-01-09_hearing/
+
+> │      ├── 📄 COURT_MODE_BUTTONS.md
+
+> │      ├── 📄 HEARING_Cheat_Sheet.md
+
+> │      ├── 📄 _COURT_MODE_PLAYBOOK.md
+
+> │      ├── 📄 _Hearing_Packet_2026-01-09.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 BINDER_1_USER_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 BINDER_2_JUDGE_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 BINDER_3_OPPOSING_COPY_PRINT_ME.pdf
+
+> │    ├── 📄 COMPLETE_COURT_BINDER_PRINT_ME.pdf
+
+> │    ├── 📄 _2025-01-09_hearing_void_judgment.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_motions/
+
+> │    ├── 📄 MO_01_motion_vacate.pdf
+
+> │    ├── 📄 MO_02_emergency_motion_quash_stay.pdf
+
+> │    ├── 📄 MO_motion_emergency_stay_of_writ.md
+
+> │    ├── 📄 MO_motion_emergency_supplemental_motion_ongoing_ha.md
+
+> │    ├── 📄 MO_motion_to_vacate_void_judgment.md
+
+> │    ├── 📄 MO_proposed_order_motion_to_vacate.md
+
+> │    ├── 📄 _30_motions.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_orders/
+
+> │    ├── 📄 OR_03_order_vacate_proposed.pdf
+
+> │    ├── 📄 OR_04_order_stay_writ_proposed.pdf
+
+> │    ├── 📄 _40_orders.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 90_Filed_Envelopes/
+
+> │    └── 📂 10_2025-12-10_motion_vacate/
+
+> │      ├── 📄 NT_37288599_Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 NT_Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 _10_2025-12-10_motion_vacate.md
+
+> │      ├── 📄 combinepdf.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │      ├── 📄 MO_Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 _20_2025-12-11_Supplemental_Emergency_Motion_Access.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _90_Filed_Envelopes.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_01_Foreclosure.md
+
+> │  ├── 📄 _01_PHASE_FORECLOSURE.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 02_PHASE_PRESERVATION/
+
+> │  └── 📂 10_scope_definitions/
+
+> │    ├── 📄 Evidence_Categories_and_Sources.md
+
+> │    ├── 📄 Utility_and_Ownership_Record_Scope.md
+
+> │    ├── 📄 _10_scope_definitions.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_spoliation_risk/
+
+> │    ├── 📄 Adverse_Inference_Triggers.md
+
+> │    ├── 📄 Housing_Harm_Ledger.md
+
+> │    ├── 📄 Spoliation_Legal_Framework.md
+
+> │    ├── 📄 Spoliation_Risk_Register.md
+
+> │    ├── 📄 _20_spoliation_risk.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_preservation_notices/
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 PHASE_01_5_Evidence_Preservation.md
+
+> │    ├── 📄 _30_preservation_notices.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_output/
+
+> │    └── 📂 10_letters/
+
+> │      ├── 📄 Evidence_Preservation_Cover_Letter.md
+
+> │      ├── 📄 _10_letters.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_packets/
+
+> │      ├── 📄 Evidence_Preservation_Packet_Index.md
+
+> │      ├── 📄 Harm_Matrix_and_Timeline_Summary.md
+
+> │      ├── 📄 MASTER_DISPATCH_CHECKLIST.md
+
+> │      ├── 📄 MASTER_OPERATIONAL_INDEX.md
+
+> │      ├── 📄 Master_Exhibit_Index.md
+
+> │      ├── 📄 Phase_01_5_Execution_Checklist.md
+
+> │      ├── 📄 Phase_01_5_Preservation_Packet_Cover_Sheet.md
+
+> │      ├── 📄 Service_Packet_Index.md
+
+> │      ├── 📄 _20_packets.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _40_output.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_02_Preservation.md
+
+> │  ├── 📄 _02_PHASE_PRESERVATION.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 03_CREDIT_FCRA/
+
+> │  └── 📂 10_credit_reports/
+
+> │    └── 📂 Equifax/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Equifax.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 Experian/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Experian.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 MANIFEST_Credit_Bureau_Dispute_Packet.md
+
+> │    └── 📂 Other/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _Other.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 TransUnion/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _TransUnion.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_credit_reports.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_furnisher_disputes/
+
+> │    ├── 📄 CFPB_Complaint_Draft.md
+
+> │    ├── 📄 FCFCU_Direct_Dispute_Letter.md
+
+> │    ├── 📄 Notice_of_Disputed_Liability_Other_Creditors.md
+
+> │    ├── 📄 Utility_Dispute_Letter.md
+
+> │    ├── 📄 _20_furnisher_disputes.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_bureau_disputes/
+
+> │    ├── 📄 Consumer_Statement_Landlords.md
+
+> │    ├── 📄 Equifax_Dispute_Letter.md
+
+> │    ├── 📄 Experian_Dispute_Letter.md
+
+> │    ├── 📄 TransUnion_Dispute_Letter.md
+
+> │    ├── 📄 _30_bureau_disputes.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_verified_responses/
+
+> │    ├── 📄 _40_verified_responses.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_damages/
+
+> │    ├── 📄 Core_Credit_Tables.md
+
+> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
+
+> │    ├── 📄 Housing_Emergency_Affidavit.md
+
+> │    ├── 📄 _50_damages.md
+
+> │    ├── 📄 _TOC_.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_output/
+
+> │    ├── 📄 _50_output.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 Equifax_Violation_Excerpt.md
+
+> │  ├── 📄 Experian_Violation_Excerpt.md
+
+> │  ├── 📄 PHASE_03_Credit_FCRA.md
+
+> │  ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │  ├── 📄 _03_CREDIT_FCRA.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 04_REGULATORS/
+
+> │  ├── 📄 00_COMPLAINT_PACKET_CHECKLIST.md
+
+> │  └── 📂 10_Industry/
+
+> │    └── 📂 BBB/
+
+> │      ├── 📄 BBB_Complaint_Narrative.md
+
+> │      ├── 📄 BBB_Violation_Excerpt.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 _BBB.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _10_Industry.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_Local/
+
+> │    └── 📂 35_Sheriff_Oversight/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │      ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │      ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │      ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │      ├── 📄 _35_Sheriff_Oversight.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 AES_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 Citizens_Utility_Violation_Excerpt.md
+
+> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │    ├── 📄 _20_Local.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_State/
+
+> │    └── 📂 20_AG_Indiana/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │      ├── 📄 _20_AG_Indiana.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 25_IN_DFI/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │      ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │      ├── 📄 _25_IN_DFI.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 55_IN_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 ICRC_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │      ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │      ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │      ├── 📄 _55_IN_Civil_Rights.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _30_State.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_Federal/
+
+> │    └── 📂 20_CFPB/
+
+> │      ├── 📄 CFPB_Complaint_Narrative.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 _20_CFPB.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_NCUA/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 Exhibit_Manifest.md
+
+> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │      ├── 📄 NCUA_Complaint_Narrative.md
+
+> │      ├── 📄 NCUA_Violation_Excerpt.md
+
+> │      ├── 📄 _30_NCUA.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 NCUA_Complaint_Narrative_draft_old.md
+
+> │        ├── 📄 __archive.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_DOJ_Civil_Rights/
+
+> │      ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │      ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │      ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │      ├── 📄 DOJ_Violation_Excerpt.md
+
+> │      ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_HUD_FHEO/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │      ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │      ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │      ├── 📄 _50_HUD_FHEO.md
+
+> │      └── 📂 _archive/
+
+> │        ├── 📄 HUD_Violation_Excerpt_OLD.md
+
+> │        ├── 📄 __archive.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _40_Federal.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_Other/
+
+> │    └── 📂 60_CMS_Caretaker_Impact/
+
+> │      ├── 📄 CMS_Informational_Complaint.md
+
+> │      ├── 📄 _60_CMS_Caretaker_Impact.md
+
+> │      ├── 📄 _TOC_.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _50_Other.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 99_Reserve_Informational/
+
+> │    └── 📂 45_FCC_Telecom/
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 FCC_Harassment_Complaint.md
+
+> │      ├── 📄 FCC_Violation_Excerpt.md
+
+> │      ├── 📄 _45_FCC_Telecom.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 65_SSA_OIG/
+
+> │      ├── 📄 SSA_OIG_Informational_Filing.md
+
+> │      ├── 📄 _65_SSA_OIG.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 70_VA_Informational/
+
+> │      ├── 📄 VA_Informational_Filing.md
+
+> │      ├── 📄 _70_VA_Informational.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _99_Peripheral_Impact.md
+
+> │  ├── 📄 MANIFEST_Informational_Filings_Packet.md
+
+> │  ├── 📄 PHASE_04_Regulators.md
+
+> │  ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │  ├── 📄 _04_REGULATORS.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 05_LITIGATION/
+
+> │  └── 📂 00_Intake/
+
+> │    ├── 📄 Litigation_Decision_Tree.md
+
+> │    ├── 📄 Master_Timeline_Strategy_Summary.md
+
+> │    ├── 📄 NT_Attorney_Intake_Packet_Executive.md
+
+> │    ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │    ├── 📄 NT_Forensic_Accounting_Audit_Summary.md
+
+> │    ├── 📄 _00_Intake.md
+
+> │    └── 📂 _archive/
+
+> │      ├── 📄 NT_Damages_Matrix_Ab_Initio.md
+
+> │      ├── 📄 NT_INTERNAL VALUATION MEMO.md
+
+> │      ├── 📄 NT_LEGAL MEMORANDUM.md
+
+> │      ├── 📄 NT_Monetary_Exposure_Estimate.md
+
+> │      ├── 📄 NT_Procedural_failure_map_one_pager.md
+
+> │      ├── 📄 NT_Violation_Remedy_Inventory.md
+
+> │      ├── 📄 __archive.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_demand_letters/
+
+> │    ├── 📄 NT_Demand_Ready_Exposure_Summary.md
+
+> │    ├── 📄 Notice_of_Evidence_Preservation.md
+
+> │    ├── 📄 _30_demand_letters.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_opposing_counsel/
+
+> │    ├── 📄 _40_opposing_counsel.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_draft_pleadings/
+
+> │    ├── 📄 _50_draft_pleadings.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_output/
+
+> │    └── 📂 10_filings/
+
+> │      ├── 📄 _10_filings.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_orders/
+
+> │      ├── 📄 _20_orders.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_packets/
+
+> │      ├── 📄 _30_packets.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 40_motions/
+
+> │      ├── 📄 _40_motions.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_letters/
+
+> │      ├── 📄 _50_letters.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 _60_output.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 70_hearings/
+
+> │    ├── 📄 _70_hearings.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_05_Litigation.md
+
+> │  ├── 📄 _05_LITIGATION.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> └── 📂 06_MEDIA_AND_INQUIRIES/
+
+> │  ├── 📄 06_PUBLIC_PRESSURE.md
+
+> │  └── 📂 10_inbox/
+
+> │    ├── 📄 _10_inbox.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_social_media/
+
+> │    ├── 📄 2025-12-15_displacement_cold_exposure.md
+
+> │    ├── 📄 2025-12-15_displacement_cold_exposure_narrative.md
+
+> │    ├── 📄 _20_social_media.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_legislative_outreach/
+
+> │    ├── 📄 _30_legislative_outreach.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_public_record_dumps/
+
+> │    ├── 📄 _40_public_record_dumps.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 50_press_kits/
+
+> │    ├── 📄 _50_press_kits.md
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 60_news_media/
+
+> │    ├── 📄 _60_news_media.md
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 PHASE_06_Public_Pressure.md
+
+> │  ├── 📄 _06_MEDIA_AND_INQUIRIES.md
+
+> │  ├── 📄 _06_PUBLIC_PRESSURE.md
+
+> │  ├── 📄 _TOC_.md
+
+> │  ├── 📄 index.html
+
+> ├── 📄 _content.md
+
+> ├── 📄 rename_map.csv
+
+> ├── 📄 repo_index.csv
+
+> └── 📂 scripts/
+
+> │  └── 📂 maintenance/
+
+> │    └── 📄 apply_rename_map.py
+
 > ```
 
 ### Assistant
@@ -7551,166 +12031,326 @@ canonical_ref: ""
 > But I need to know which of the above you’re currently using so I don’t hand you the wrong wrench.
 
 ### User
-> import os
-> import re
-> import argparse
-> from pathlib import Path
-> from fpdf import FPDF
-> from pypdf import PdfWriter, PdfReader
-> 
-> # Setup logging
-> import logging
-> 
-> logging.basicConfig(level=logging.INFO)
-> logger = logging.getLogger(__name__)
-> 
-> 
-> class PDFBinderGenerator:
->     def __init__(self, root_dir):
->         self.root_dir = Path(root_dir)
->         self.temp_dir = self.root_dir / "temp_binder_gen"
->         self.temp_dir.mkdir(exist_ok=True)
->         self.writer = PdfWriter()
-> 
->     def generate_text_pdf(self, text, output_filename, is_title=False):
->         pdf = FPDF()
->         pdf.add_page()
->         pdf.set_auto_page_break(auto=True, margin=15)
-> 
->         # Add fonts (using standard fonts for simplicity)
->         pdf.set_font("Helvetica", size=12)
-> 
->         # Sanitize text for standard fonts (Latin-1)
->         # Replaces unsupported characters (like emojis) with ?
->         text = text.encode("latin-1", "replace").decode("latin-1")
-> 
->         lines = text.split("\n")
->         for line in lines:
->             if line.startswith("# "):
->                 pdf.set_font("Helvetica", style="B", size=16)
->                 pdf.cell(0, 10, line.replace("# ", ""), ln=True)
->                 pdf.set_font("Helvetica", size=12)
->             elif line.startswith("## "):
->                 pdf.set_font("Helvetica", style="B", size=14)
->                 pdf.cell(0, 10, line.replace("## ", ""), ln=True)
->                 pdf.set_font("Helvetica", size=12)
->             elif line.startswith("### "):
->                 pdf.set_font("Helvetica", style="B", size=12)
->                 pdf.cell(0, 10, line.replace("### ", ""), ln=True)
->                 pdf.set_font("Helvetica", size=12)
->             else:
->                 # Basic handling for text wrapping
->                 try:
->                     pdf.multi_cell(0, 5, line)
->                 except Exception as e:
->                     logger.warning(f"Error printing line: {e}")
->                 pdf.ln(1)
-> 
->         output_path = self.temp_dir / output_filename
->         try:
->             pdf.output(output_path)
->             return output_path
->         except Exception as e:
->             logger.error(f"Failed to generate PDF for text: {e}")
->             return None
-> 
->     def process_binder_markdown(self, binder_path):
->         logger.info(f"Processing binder: {binder_path}")
->         with open(binder_path, "r", encoding="utf-8") as f:
->             content = f.read()
-> 
->         # Split by sections or lines
->         # Simple parser: look for transclusions ![[path]] and text blocks
-> 
->         # We'll split the content into tokens of (type, data)
->         # types: 'text', 'markdown_file', 'pdf_file'
-> 
->         pattern = r"!\[\[(.*?)\]\]"
->         parts = re.split(pattern, content)
-> 
->         # parts[0] is text, parts[1] is path, parts[2] is text, etc.
-> 
->         for i, part in enumerate(parts):
->             if i % 2 == 0:
->                 # Text part
->                 if part.strip():
->                     pdf_path = self.generate_text_pdf(part, f"part_{i}.pdf")
->                     if pdf_path:
->                         self.add_pdf_to_writer(pdf_path)
->             else:
->                 # Transclusion path part
->                 link_path = part.split("|")[0]  # Remove alias if present
->                 full_path = (binder_path.parent / link_path).resolve()
-> 
->                 if not full_path.exists():
->                     logger.warning(f"Linked file not found: {full_path}")
->                     # Add a placeholder page
->                     pdf_path = self.generate_text_pdf(
->                         f"[MISSING FILE: {link_path}]", f"missing_{i}.pdf"
->                     )
->                     if pdf_path:
->                         self.add_pdf_to_writer(pdf_path)
->                     continue
-> 
->                 if full_path.suffix.lower() == ".pdf":
->                     self.add_pdf_to_writer(full_path)
->                 elif full_path.suffix.lower() == ".md":
->                     # Recursive markdown processing?
->                     # For simplicity, just convert this markdown file to PDF text
->                     # We won't recurse infinitely, just one level read
->                     md_text = full_path.read_text(encoding="utf-8")
->                     # Strip frontmatter?
->                     md_text = re.sub(r"^---[\s\S]*?---", "", md_text, count=1).strip()
->                     pdf_path = self.generate_text_pdf(md_text, f"embed_{i}.pdf")
->                     if pdf_path:
->                         self.add_pdf_to_writer(pdf_path)
->                 else:
->                     logger.warning(f"Unsupported file type: {full_path}")
-> 
->     def add_pdf_to_writer(self, pdf_path):
->         try:
->             reader = PdfReader(pdf_path)
->             for page in reader.pages:
->                 self.writer.add_page(page)
->             logger.info(f"Added {pdf_path}")
->         except Exception as e:
->             logger.error(f"Failed to add PDF {pdf_path}: {e}")
-> 
->     def save_binder(self, output_path):
->         with open(output_path, "wb") as f:
->             self.writer.write(f)
->         logger.info(f"Binder saved to {output_path}")
-> 
->     def cleanup(self):
->         import shutil
-> 
->         if self.temp_dir.exists():
->             shutil.rmtree(self.temp_dir)
-> 
-> 
-> def main():
->     parser = argparse.ArgumentParser(
->         description="Generate PDF Binder from Markdown Index"
->     )
->     parser.add_argument("--binder", required=True, help="Path to BINDER_XX.md")
->     parser.add_argument("--output", required=True, help="Output PDF path")
->     args = parser.parse_args()
-> 
->     # Determine root from binder path (assuming standard structure)
->     # content/00_CASE_MANAGEMENT/00_BINDER/BINDER_...
->     # root is 3 levels up
->     binder_path = Path(args.binder).resolve()
->     root_dir = binder_path.parents[3]
-> 
->     generator = PDFBinderGenerator(root_dir)
->     try:
->         generator.process_binder_markdown(binder_path)
->         generator.save_binder(args.output)
->     finally:
->         generator.cleanup()
-> 
-> 
-> if __name__ == "__main__":
+> import os
+
+> import re
+
+> import argparse
+
+> from pathlib import Path
+
+> from fpdf import FPDF
+
+> from pypdf import PdfWriter, PdfReader
+
+> 
+
+> # Setup logging
+
+> import logging
+
+> 
+
+> logging.basicConfig(level=logging.INFO)
+
+> logger = logging.getLogger(__name__)
+
+> 
+
+> 
+
+> class PDFBinderGenerator:
+
+>     def __init__(self, root_dir):
+
+>         self.root_dir = Path(root_dir)
+
+>         self.temp_dir = self.root_dir / "temp_binder_gen"
+
+>         self.temp_dir.mkdir(exist_ok=True)
+
+>         self.writer = PdfWriter()
+
+> 
+
+>     def generate_text_pdf(self, text, output_filename, is_title=False):
+
+>         pdf = FPDF()
+
+>         pdf.add_page()
+
+>         pdf.set_auto_page_break(auto=True, margin=15)
+
+> 
+
+>         # Add fonts (using standard fonts for simplicity)
+
+>         pdf.set_font("Helvetica", size=12)
+
+> 
+
+>         # Sanitize text for standard fonts (Latin-1)
+
+>         # Replaces unsupported characters (like emojis) with ?
+
+>         text = text.encode("latin-1", "replace").decode("latin-1")
+
+> 
+
+>         lines = text.split("\n")
+
+>         for line in lines:
+
+>             if line.startswith("# "):
+
+>                 pdf.set_font("Helvetica", style="B", size=16)
+
+>                 pdf.cell(0, 10, line.replace("# ", ""), ln=True)
+
+>                 pdf.set_font("Helvetica", size=12)
+
+>             elif line.startswith("## "):
+
+>                 pdf.set_font("Helvetica", style="B", size=14)
+
+>                 pdf.cell(0, 10, line.replace("## ", ""), ln=True)
+
+>                 pdf.set_font("Helvetica", size=12)
+
+>             elif line.startswith("### "):
+
+>                 pdf.set_font("Helvetica", style="B", size=12)
+
+>                 pdf.cell(0, 10, line.replace("### ", ""), ln=True)
+
+>                 pdf.set_font("Helvetica", size=12)
+
+>             else:
+
+>                 # Basic handling for text wrapping
+
+>                 try:
+
+>                     pdf.multi_cell(0, 5, line)
+
+>                 except Exception as e:
+
+>                     logger.warning(f"Error printing line: {e}")
+
+>                 pdf.ln(1)
+
+> 
+
+>         output_path = self.temp_dir / output_filename
+
+>         try:
+
+>             pdf.output(output_path)
+
+>             return output_path
+
+>         except Exception as e:
+
+>             logger.error(f"Failed to generate PDF for text: {e}")
+
+>             return None
+
+> 
+
+>     def process_binder_markdown(self, binder_path):
+
+>         logger.info(f"Processing binder: {binder_path}")
+
+>         with open(binder_path, "r", encoding="utf-8") as f:
+
+>             content = f.read()
+
+> 
+
+>         # Split by sections or lines
+
+>         # Simple parser: look for transclusions ![[path]] and text blocks
+
+> 
+
+>         # We'll split the content into tokens of (type, data)
+
+>         # types: 'text', 'markdown_file', 'pdf_file'
+
+> 
+
+>         pattern = r"!\[\[(.*?)\]\]"
+
+>         parts = re.split(pattern, content)
+
+> 
+
+>         # parts[0] is text, parts[1] is path, parts[2] is text, etc.
+
+> 
+
+>         for i, part in enumerate(parts):
+
+>             if i % 2 == 0:
+
+>                 # Text part
+
+>                 if part.strip():
+
+>                     pdf_path = self.generate_text_pdf(part, f"part_{i}.pdf")
+
+>                     if pdf_path:
+
+>                         self.add_pdf_to_writer(pdf_path)
+
+>             else:
+
+>                 # Transclusion path part
+
+>                 link_path = part.split("|")[0]  # Remove alias if present
+
+>                 full_path = (binder_path.parent / link_path).resolve()
+
+> 
+
+>                 if not full_path.exists():
+
+>                     logger.warning(f"Linked file not found: {full_path}")
+
+>                     # Add a placeholder page
+
+>                     pdf_path = self.generate_text_pdf(
+
+>                         f"[MISSING FILE: {link_path}]", f"missing_{i}.pdf"
+
+>                     )
+
+>                     if pdf_path:
+
+>                         self.add_pdf_to_writer(pdf_path)
+
+>                     continue
+
+> 
+
+>                 if full_path.suffix.lower() == ".pdf":
+
+>                     self.add_pdf_to_writer(full_path)
+
+>                 elif full_path.suffix.lower() == ".md":
+
+>                     # Recursive markdown processing?
+
+>                     # For simplicity, just convert this markdown file to PDF text
+
+>                     # We won't recurse infinitely, just one level read
+
+>                     md_text = full_path.read_text(encoding="utf-8")
+
+>                     # Strip frontmatter?
+
+>                     md_text = re.sub(r"^---[\s\S]*?---", "", md_text, count=1).strip()
+
+>                     pdf_path = self.generate_text_pdf(md_text, f"embed_{i}.pdf")
+
+>                     if pdf_path:
+
+>                         self.add_pdf_to_writer(pdf_path)
+
+>                 else:
+
+>                     logger.warning(f"Unsupported file type: {full_path}")
+
+> 
+
+>     def add_pdf_to_writer(self, pdf_path):
+
+>         try:
+
+>             reader = PdfReader(pdf_path)
+
+>             for page in reader.pages:
+
+>                 self.writer.add_page(page)
+
+>             logger.info(f"Added {pdf_path}")
+
+>         except Exception as e:
+
+>             logger.error(f"Failed to add PDF {pdf_path}: {e}")
+
+> 
+
+>     def save_binder(self, output_path):
+
+>         with open(output_path, "wb") as f:
+
+>             self.writer.write(f)
+
+>         logger.info(f"Binder saved to {output_path}")
+
+> 
+
+>     def cleanup(self):
+
+>         import shutil
+
+> 
+
+>         if self.temp_dir.exists():
+
+>             shutil.rmtree(self.temp_dir)
+
+> 
+
+> 
+
+> def main():
+
+>     parser = argparse.ArgumentParser(
+
+>         description="Generate PDF Binder from Markdown Index"
+
+>     )
+
+>     parser.add_argument("--binder", required=True, help="Path to BINDER_XX.md")
+
+>     parser.add_argument("--output", required=True, help="Output PDF path")
+
+>     args = parser.parse_args()
+
+> 
+
+>     # Determine root from binder path (assuming standard structure)
+
+>     # content/00_CASE_MANAGEMENT/00_BINDER/BINDER_...
+
+>     # root is 3 levels up
+
+>     binder_path = Path(args.binder).resolve()
+
+>     root_dir = binder_path.parents[3]
+
+> 
+
+>     generator = PDFBinderGenerator(root_dir)
+
+>     try:
+
+>         generator.process_binder_markdown(binder_path)
+
+>         generator.save_binder(args.output)
+
+>     finally:
+
+>         generator.cleanup()
+
+> 
+
+> 
+
+> if __name__ == "__main__":
+
 >     main()
 
 ### Assistant

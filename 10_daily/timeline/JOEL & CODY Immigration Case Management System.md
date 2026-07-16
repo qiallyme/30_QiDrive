@@ -11,8 +11,24 @@ qi_decimal: 7.00.00-TECH
 qid: qfde9f4325d45
 status: active
 system: qios
-keywords:
+keywords: []
 - tech
+layout: page
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 8c0398e774df4256b96f3bf0053b3dce
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # JOEL & CODY Immigration Case Management System

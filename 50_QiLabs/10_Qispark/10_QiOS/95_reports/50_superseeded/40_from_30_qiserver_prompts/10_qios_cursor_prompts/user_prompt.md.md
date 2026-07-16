@@ -7,20 +7,20 @@ qi_decimal: 0.00.11-RUL
 qid:
 type: rule
 node: file
-keywords:
+keywords: []
   - QiOS
   - Governance
   - Cursor
   - Instruction
   - Coding
-tags:
+tags: []
   - Rules
   - User
   - Prompt
 context: QiOS_v1
 created: 2025-11-23
 updated: 2025-11-24
-aliases:
+aliases: []
   - cursor_task_prompt
   - qios_cursor_user_prompt
 version: 1.0.0
@@ -38,16 +38,16 @@ references:
 graph_weight: 400
 orbit: core
 entangled:
-summary:
+summary: ""
 sensitivity: internal
 classification: system_darkmatter
 layout: page
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 realm_label: ""
-uid: ""
+uid: 42aa624b54ae479c91899175809fa156
 canonical_ref: ""
 source_type: manual
 template_key: master-template

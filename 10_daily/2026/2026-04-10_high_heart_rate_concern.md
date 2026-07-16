@@ -3,9 +3,9 @@ layout: page
 title: "High Heart Rate Concern"
 slug: "high_heart_rate_concern"
 created_at: "2026-04-10 10:04:34"
-updated_at: "2026-04-10 10:04:34"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

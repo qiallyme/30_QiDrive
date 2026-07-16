@@ -3,9 +3,9 @@ layout: page
 title: "Vivaldi vs Edge comparison"
 slug: "vivaldi_vs_edge_comparison"
 created_at: "2025-09-13 10:25:22"
-updated_at: "2025-09-13 10:25:22"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -401,31 +401,56 @@ canonical_ref: ""
 > Do you want me to give you a little one-liner PowerShell script that will dump all your connected drives’ SMART attributes in one shot? That way you can see which one (if any) is dying without running multiple tools.
 
 ### User
-> PS C:\Users\codyr> Get-PhysicalDisk | Select FriendlyName, MediaType, SerialNumber, Size, HealthStatus
-> 
-> 
-> FriendlyName : NVME SSD 512GB
-> MediaType    : SSD
-> SerialNumber : A843_9700_0000_2521.
-> Size         : 512110190592
-> HealthStatus : Healthy
-> 
-> FriendlyName : WDC WD1003FBYX-18Y7B0
-> MediaType    : HDD
-> SerialNumber : WD-WCAW34793852
-> Size         : 1000204886016
-> HealthStatus : Healthy
-> 
-> FriendlyName : WDC WD10EZEX-08WN4A0
-> MediaType    : HDD
-> SerialNumber : WD-WCC6Y6YVSYF7
-> Size         : 1000204886016
-> HealthStatus : Healthy
-> 
-> FriendlyName : ST2000DM008-2FR102
-> MediaType    : HDD
-> SerialNumber : ZFL29R36
-> Size         : 2000398934016
+> PS C:\Users\codyr> Get-PhysicalDisk | Select FriendlyName, MediaType, SerialNumber, Size, HealthStatus
+
+> 
+
+> 
+
+> FriendlyName : NVME SSD 512GB
+
+> MediaType    : SSD
+
+> SerialNumber : A843_9700_0000_2521.
+
+> Size         : 512110190592
+
+> HealthStatus : Healthy
+
+> 
+
+> FriendlyName : WDC WD1003FBYX-18Y7B0
+
+> MediaType    : HDD
+
+> SerialNumber : WD-WCAW34793852
+
+> Size         : 1000204886016
+
+> HealthStatus : Healthy
+
+> 
+
+> FriendlyName : WDC WD10EZEX-08WN4A0
+
+> MediaType    : HDD
+
+> SerialNumber : WD-WCC6Y6YVSYF7
+
+> Size         : 1000204886016
+
+> HealthStatus : Healthy
+
+> 
+
+> FriendlyName : ST2000DM008-2FR102
+
+> MediaType    : HDD
+
+> SerialNumber : ZFL29R36
+
+> Size         : 2000398934016
+
 > HealthStatus : Healthy
 
 ### Assistant
@@ -1284,16 +1309,26 @@ canonical_ref: ""
 > - If you want the script to *refuse to run* when a source path is missing, I can tweak it to fail fast with a loud error. Say the word and I’ll drop that version.
 
 ### User
-> something popped up and went away. PS D:\> cd D:\qi\tools
-> PS D:\qi\tools> py "D:\tools\qi\qi_migrate.py" --workers 12 --logroot D:\_QiLogs `
-> >>   --qieos-src "V:\QiEOS" --qieos-dst "D:\QiEOS" `
-> >>   --qiv-src  "V:\QiVector" --qiv-dst  "K:\QiVector"
-> >> 
-> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'D:\\tools\\qi\\qi_migrate.py': [Errno 2] No such file or directory
-> PS D:\qi\tools> py "D:\tools\qi\qi_migrate.py" --workers 12 --logroot D:\_QiLogs `
-> >>   --qieos-src "V:\QiEOS" --qieos-dst "D:\QiEOS" `
-> >>   --qiv-src  "V:\QiVector" --qiv-dst  "K:\QiVector"
-> >>
+> something popped up and went away. PS D:\> cd D:\qi\tools
+
+> PS D:\qi\tools> py "D:\tools\qi\qi_migrate.py" --workers 12 --logroot D:\_QiLogs `
+
+> >>   --qieos-src "V:\QiEOS" --qieos-dst "D:\QiEOS" `
+
+> >>   --qiv-src  "V:\QiVector" --qiv-dst  "K:\QiVector"
+
+> >> 
+
+> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'D:\\tools\\qi\\qi_migrate.py': [Errno 2] No such file or directory
+
+> PS D:\qi\tools> py "D:\tools\qi\qi_migrate.py" --workers 12 --logroot D:\_QiLogs `
+
+> >>   --qieos-src "V:\QiEOS" --qieos-dst "D:\QiEOS" `
+
+> >>   --qiv-src  "V:\QiVector" --qiv-dst  "K:\QiVector"
+
+> >>
+
 > PS D:\qi\tools>
 
 ### Assistant

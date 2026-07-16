@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Deployment
-slug: ""
+slug: deployment
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 6e4bdfe5bb23483f8ce60454745c75d3
 canonical_ref: ""
 source_type: manual
 template_key: master-template

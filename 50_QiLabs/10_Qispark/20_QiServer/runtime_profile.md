@@ -3,8 +3,8 @@ layout: page
 title: QIServer Private AI Node
 slug: qiserver-private-ai-node
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:39-04:00"
+tags: []
   - qispark
 source_type: manual
 date: 2026-04-19
@@ -13,7 +13,7 @@ type: runtime_profile
 host: qiserver
 tailscale_name: qiserver-1
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -22,7 +22,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c9493b99674b4dc8bd2309da5c017a4d
 canonical_ref: ""
 template_key: master-template
 ---

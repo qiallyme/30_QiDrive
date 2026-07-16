@@ -6,21 +6,21 @@ summary: "Starter hero image and video prompts for ten flagship QSaysIt post con
 status: active
 visibility: internal
 created_at: "2026-07-02T02:20:00-05:00"
-updated_at: "2026-07-02T02:20:00-05:00"
+updated_at: "2026-07-16T06:49:36-04:00"
 author: "Cody J. Rice-Velasquez"
-owner:
+owner: ""
   - "Cody"
-tags:
+tags: []
   - qsaysit
   - hero-prompts
   - image-ai
   - video-ai
   - showcase
-keywords:
+keywords: []
   - hero image prompts
   - top 10 posts
   - QSaysIt visuals
-aliases:
+aliases: []
   - "QSaysIt showcase visual pack"
 context: "Starter visual prompt pack for flagship or likely-featured QSaysIt content."
 sensitivity: internal

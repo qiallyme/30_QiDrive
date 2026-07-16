@@ -3,9 +3,9 @@ layout: page
 title: "Fast RoboCopy Backup"
 slug: "fast_robocopy_backup"
 created_at: "2025-12-26 13:54:32"
-updated_at: "2025-12-26 13:54:32"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -308,366 +308,726 @@ canonical_ref: ""
 > **Preserve data. Nuke the rest later.**
 
 ### User
-> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
-> 
-> PS C:\Users\codyr> robocopy "C:\QiOS_v1" "D:\QiOS_BACKUP" ^
-> 
-> -------------------------------------------------------------------------------
->    ROBOCOPY     ::     Robust File Copy for Windows
-> -------------------------------------------------------------------------------
-> 
->   Started : Friday, December 26, 2025 3:00:59 PM
->    Source : C:\QiOS_v1\
->      Dest = D:\QiOS_BACKUP\
-> 
->     Files : ^
-> 
->   Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30
-> 
-> ------------------------------------------------------------------------------
-> 
->           New Dir          0    C:\QiOS_v1\
-> 
-> ------------------------------------------------------------------------------
-> 
->                Total    Copied   Skipped  Mismatch    FAILED    Extras
->     Dirs :         1         1         0         0         0         0
->    Files :         0         0         0         0         0         0
->    Bytes :         0         0         0         0         0         0
->    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
->    Ended : Friday, December 26, 2025 3:00:59 PM
-> 
-> PS C:\Users\codyr>  /E ^
-> /E : The term '/E' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /E ^
-> +  ~~
->     + CategoryInfo          : ObjectNotFound: (/E:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /MT:32 ^
-> /MT:32 : The term '/MT:32' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:2
-> +  /MT:32 ^
-> +  ~~~~~~
->     + CategoryInfo          : ObjectNotFound: (/MT:32:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /R:0 ^
-> /R:0 : The term '/R:0' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /R:0 ^
-> +  ~~~~
->     + CategoryInfo          : ObjectNotFound: (/R:0:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /W:0 ^
-> /W:0 : The term '/W:0' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /W:0 ^
-> +  ~~~~
->     + CategoryInfo          : ObjectNotFound: (/W:0:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /COPY:DAT ^
-> /COPY:DAT : The term '/COPY:DAT' is not recognized as the name of a cmdlet, function, script file,
-> or operable program. Check the spelling of the name, or if a path was included, verify that the path
-> is correct and try again.
-> At line:1 char:2
-> +  /COPY:DAT ^
-> +  ~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (/COPY:DAT:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /DCOPY:DAT ^
-> /DCOPY:DAT : The term '/DCOPY:DAT' is not recognized as the name of a cmdlet, function, script file,
-> or operable program. Check the spelling of the name, or if a path was included, verify that the path
-> is correct and try again.
-> At line:1 char:2
-> +  /DCOPY:DAT ^
-> +  ~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (/DCOPY:DAT:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /NFL /NDL ^
-> /NFL : The term '/NFL' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /NFL /NDL ^
-> +  ~~~~
->     + CategoryInfo          : ObjectNotFound: (/NFL:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /XJ ^
-> /XJ : The term '/XJ' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /XJ ^
-> +  ~~~
->     + CategoryInfo          : ObjectNotFound: (/XJ:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /XD ^
-> /XD : The term '/XD' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /XD ^
-> +  ~~~
->     + CategoryInfo          : ObjectNotFound: (/XD:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    node_modules ^
-> node_modules : The term 'node_modules' is not recognized as the name of a cmdlet, function, script
-> file, or operable program. Check the spelling of the name, or if a path was included, verify that
-> the path is correct and try again.
-> At line:1 char:4
-> +    node_modules ^
-> +    ~~~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (node_modules:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    __pycache__ ^
-> __pycache__ : The term '__pycache__' is not recognized as the name of a cmdlet, function, script
-> file, or operable program. Check the spelling of the name, or if a path was included, verify that
-> the path is correct and try again.
-> At line:1 char:4
-> +    __pycache__ ^
-> +    ~~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (__pycache__:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .git ^
-> .git : The term '.git' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    .git ^
-> +    ~~~~
->     + CategoryInfo          : ObjectNotFound: (.git:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .github ^
-> .github : The term '.github' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    .github ^
-> +    ~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (.github:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .vscode ^
-> .vscode : The term '.vscode' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    .vscode ^
-> +    ~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (.vscode:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    dist ^
-> dist : The term 'dist' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    dist ^
-> +    ~~~~
->     + CategoryInfo          : ObjectNotFound: (dist:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    build ^
-> build : The term 'build' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    build ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (build:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .next ^
-> .next : The term '.next' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    .next ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (.next:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .cache ^
-> .cache : The term '.cache' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    .cache ^
-> +    ~~~~~~
->     + CategoryInfo          : ObjectNotFound: (.cache:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .pytest_cache ^
-> .pytest_cache : The term '.pytest_cache' is not recognized as the name of a cmdlet, function, script
-> file, or operable program. Check the spelling of the name, or if a path was included, verify that
-> the path is correct and try again.
-> At line:1 char:4
-> +    .pytest_cache ^
-> +    ~~~~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (.pytest_cache:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    .venv ^
-> .venv : The term '.venv' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    .venv ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (.venv:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    venv ^
-> venv : The term 'venv' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    venv ^
-> +    ~~~~
->     + CategoryInfo          : ObjectNotFound: (venv:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    env ^
-> env : The term 'env' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    env ^
-> +    ~~~
->     + CategoryInfo          : ObjectNotFound: (env:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    coverage ^
-> coverage : The term 'coverage' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    coverage ^
-> +    ~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (coverage:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    logs ^
-> logs : The term 'logs' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    logs ^
-> +    ~~~~
->     + CategoryInfo          : ObjectNotFound: (logs:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    tmp ^
-> tmp : The term 'tmp' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    tmp ^
-> +    ~~~
->     + CategoryInfo          : ObjectNotFound: (tmp:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    temp ^
-> temp : The term 'temp' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:4
-> +    temp ^
-> +    ~~~~
->     + CategoryInfo          : ObjectNotFound: (temp:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /XF ^
-> /XF : The term '/XF' is not recognized as the name of a cmdlet, function, script file, or operable
-> program. Check the spelling of the name, or if a path was included, verify that the path is correct
-> and try again.
-> At line:1 char:2
-> +  /XF ^
-> +  ~~~
->     + CategoryInfo          : ObjectNotFound: (/XF:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    *.pyc ^
-> *.pyc : The term '*.pyc' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    *.pyc ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (*.pyc:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    *.log ^
-> *.log : The term '*.log' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    *.log ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (*.log:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    *.tmp ^
-> *.tmp : The term '*.tmp' is not recognized as the name of a cmdlet, function, script file, or
-> operable program. Check the spelling of the name, or if a path was included, verify that the path is
-> correct and try again.
-> At line:1 char:4
-> +    *.tmp ^
-> +    ~~~~~
->     + CategoryInfo          : ObjectNotFound: (*.tmp:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    Thumbs.db ^
-> Thumbs.db : The term 'Thumbs.db' is not recognized as the name of a cmdlet, function, script file,
-> or operable program. Check the spelling of the name, or if a path was included, verify that the path
-> is correct and try again.
-> At line:1 char:4
-> +    Thumbs.db ^
-> +    ~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (Thumbs.db:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>    desktop.ini ^
-> desktop.ini : The term 'desktop.ini' is not recognized as the name of a cmdlet, function, script
-> file, or operable program. Check the spelling of the name, or if a path was included, verify that
-> the path is correct and try again.
-> At line:1 char:4
-> +    desktop.ini ^
-> +    ~~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (desktop.ini:String) [], CommandNotFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
-> PS C:\Users\codyr>  /LOG:"D:\QiOS_BACKUP_robocopy.log"
-> /LOG:D:\QiOS_BACKUP_robocopy.log : The term '/LOG:D:\QiOS_BACKUP_robocopy.log' is not recognized as
-> the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or
-> if a path was included, verify that the path is correct and try again.
-> At line:1 char:2
-> +  /LOG:"D:\QiOS_BACKUP_robocopy.log"
-> +  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
->     + CategoryInfo          : ObjectNotFound: (/LOG:D:\QiOS_BACKUP_robocopy.log:String) [], CommandN
->    otFoundException
->     + FullyQualifiedErrorId : CommandNotFoundException
-> 
+> Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+> 
+
+> PS C:\Users\codyr> robocopy "C:\QiOS_v1" "D:\QiOS_BACKUP" ^
+
+> 
+
+> -------------------------------------------------------------------------------
+
+>    ROBOCOPY     ::     Robust File Copy for Windows
+
+> -------------------------------------------------------------------------------
+
+> 
+
+>   Started : Friday, December 26, 2025 3:00:59 PM
+
+>    Source : C:\QiOS_v1\
+
+>      Dest = D:\QiOS_BACKUP\
+
+> 
+
+>     Files : ^
+
+> 
+
+>   Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30
+
+> 
+
+> ------------------------------------------------------------------------------
+
+> 
+
+>           New Dir          0    C:\QiOS_v1\
+
+> 
+
+> ------------------------------------------------------------------------------
+
+> 
+
+>                Total    Copied   Skipped  Mismatch    FAILED    Extras
+
+>     Dirs :         1         1         0         0         0         0
+
+>    Files :         0         0         0         0         0         0
+
+>    Bytes :         0         0         0         0         0         0
+
+>    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+>    Ended : Friday, December 26, 2025 3:00:59 PM
+
+> 
+
+> PS C:\Users\codyr>  /E ^
+
+> /E : The term '/E' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /E ^
+
+> +  ~~
+
+>     + CategoryInfo          : ObjectNotFound: (/E:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /MT:32 ^
+
+> /MT:32 : The term '/MT:32' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:2
+
+> +  /MT:32 ^
+
+> +  ~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/MT:32:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /R:0 ^
+
+> /R:0 : The term '/R:0' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /R:0 ^
+
+> +  ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/R:0:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /W:0 ^
+
+> /W:0 : The term '/W:0' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /W:0 ^
+
+> +  ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/W:0:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /COPY:DAT ^
+
+> /COPY:DAT : The term '/COPY:DAT' is not recognized as the name of a cmdlet, function, script file,
+
+> or operable program. Check the spelling of the name, or if a path was included, verify that the path
+
+> is correct and try again.
+
+> At line:1 char:2
+
+> +  /COPY:DAT ^
+
+> +  ~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/COPY:DAT:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /DCOPY:DAT ^
+
+> /DCOPY:DAT : The term '/DCOPY:DAT' is not recognized as the name of a cmdlet, function, script file,
+
+> or operable program. Check the spelling of the name, or if a path was included, verify that the path
+
+> is correct and try again.
+
+> At line:1 char:2
+
+> +  /DCOPY:DAT ^
+
+> +  ~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/DCOPY:DAT:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /NFL /NDL ^
+
+> /NFL : The term '/NFL' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /NFL /NDL ^
+
+> +  ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/NFL:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /XJ ^
+
+> /XJ : The term '/XJ' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /XJ ^
+
+> +  ~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/XJ:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /XD ^
+
+> /XD : The term '/XD' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /XD ^
+
+> +  ~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/XD:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    node_modules ^
+
+> node_modules : The term 'node_modules' is not recognized as the name of a cmdlet, function, script
+
+> file, or operable program. Check the spelling of the name, or if a path was included, verify that
+
+> the path is correct and try again.
+
+> At line:1 char:4
+
+> +    node_modules ^
+
+> +    ~~~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (node_modules:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    __pycache__ ^
+
+> __pycache__ : The term '__pycache__' is not recognized as the name of a cmdlet, function, script
+
+> file, or operable program. Check the spelling of the name, or if a path was included, verify that
+
+> the path is correct and try again.
+
+> At line:1 char:4
+
+> +    __pycache__ ^
+
+> +    ~~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (__pycache__:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .git ^
+
+> .git : The term '.git' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    .git ^
+
+> +    ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.git:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .github ^
+
+> .github : The term '.github' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    .github ^
+
+> +    ~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.github:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .vscode ^
+
+> .vscode : The term '.vscode' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    .vscode ^
+
+> +    ~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.vscode:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    dist ^
+
+> dist : The term 'dist' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    dist ^
+
+> +    ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (dist:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    build ^
+
+> build : The term 'build' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    build ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (build:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .next ^
+
+> .next : The term '.next' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    .next ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.next:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .cache ^
+
+> .cache : The term '.cache' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    .cache ^
+
+> +    ~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.cache:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .pytest_cache ^
+
+> .pytest_cache : The term '.pytest_cache' is not recognized as the name of a cmdlet, function, script
+
+> file, or operable program. Check the spelling of the name, or if a path was included, verify that
+
+> the path is correct and try again.
+
+> At line:1 char:4
+
+> +    .pytest_cache ^
+
+> +    ~~~~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.pytest_cache:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    .venv ^
+
+> .venv : The term '.venv' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    .venv ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (.venv:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    venv ^
+
+> venv : The term 'venv' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    venv ^
+
+> +    ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (venv:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    env ^
+
+> env : The term 'env' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    env ^
+
+> +    ~~~
+
+>     + CategoryInfo          : ObjectNotFound: (env:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    coverage ^
+
+> coverage : The term 'coverage' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    coverage ^
+
+> +    ~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (coverage:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    logs ^
+
+> logs : The term 'logs' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    logs ^
+
+> +    ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (logs:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    tmp ^
+
+> tmp : The term 'tmp' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    tmp ^
+
+> +    ~~~
+
+>     + CategoryInfo          : ObjectNotFound: (tmp:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    temp ^
+
+> temp : The term 'temp' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:4
+
+> +    temp ^
+
+> +    ~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (temp:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /XF ^
+
+> /XF : The term '/XF' is not recognized as the name of a cmdlet, function, script file, or operable
+
+> program. Check the spelling of the name, or if a path was included, verify that the path is correct
+
+> and try again.
+
+> At line:1 char:2
+
+> +  /XF ^
+
+> +  ~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/XF:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    *.pyc ^
+
+> *.pyc : The term '*.pyc' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    *.pyc ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (*.pyc:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    *.log ^
+
+> *.log : The term '*.log' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    *.log ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (*.log:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    *.tmp ^
+
+> *.tmp : The term '*.tmp' is not recognized as the name of a cmdlet, function, script file, or
+
+> operable program. Check the spelling of the name, or if a path was included, verify that the path is
+
+> correct and try again.
+
+> At line:1 char:4
+
+> +    *.tmp ^
+
+> +    ~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (*.tmp:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    Thumbs.db ^
+
+> Thumbs.db : The term 'Thumbs.db' is not recognized as the name of a cmdlet, function, script file,
+
+> or operable program. Check the spelling of the name, or if a path was included, verify that the path
+
+> is correct and try again.
+
+> At line:1 char:4
+
+> +    Thumbs.db ^
+
+> +    ~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (Thumbs.db:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>    desktop.ini ^
+
+> desktop.ini : The term 'desktop.ini' is not recognized as the name of a cmdlet, function, script
+
+> file, or operable program. Check the spelling of the name, or if a path was included, verify that
+
+> the path is correct and try again.
+
+> At line:1 char:4
+
+> +    desktop.ini ^
+
+> +    ~~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (desktop.ini:String) [], CommandNotFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
+> PS C:\Users\codyr>  /LOG:"D:\QiOS_BACKUP_robocopy.log"
+
+> /LOG:D:\QiOS_BACKUP_robocopy.log : The term '/LOG:D:\QiOS_BACKUP_robocopy.log' is not recognized as
+
+> the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or
+
+> if a path was included, verify that the path is correct and try again.
+
+> At line:1 char:2
+
+> +  /LOG:"D:\QiOS_BACKUP_robocopy.log"
+
+> +  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+>     + CategoryInfo          : ObjectNotFound: (/LOG:D:\QiOS_BACKUP_robocopy.log:String) [], CommandN
+
+>    otFoundException
+
+>     + FullyQualifiedErrorId : CommandNotFoundException
+
+> 
+
 > PS C:\Users\codyr>
 
 ### Assistant
@@ -2104,121 +2464,236 @@ canonical_ref: ""
 > Say **1, 2, 3, or 4**.
 
 ### User
-> OK LETS GET REAL I HAVE ALL THESE HALF BAKED PROJECTS, I NEED TO DO AWAY WITH THE TEMPLATE FOR FUTURE IDEAS, RUN GIT ADD COMMIT PUSH ON THE PROJECTS WITHOUT ANY PUSH ISSUES AND BE DONE WITH THAT AND JUST UPLOAD MY ACTUAL ASSETS AND MD FILES NEEDED TO THE DRIVE NO, BUT HOW DO WE HANDLE THE QIOS LAW. # QiOS v1
-> 
-> **QiOS: The Cognitive Operating System**
-> 
-> > "Governance Over Chaos, Semantics Over Storage, Automation Over Effort"
-> 
-> ## Overview
-> 
-> QiOS v1 is the foundational implementation of a cognitive operating system designed to understand files as knowledge, not just data. It is built around a neural core (GINA) and a semantic memory service (QiBrain) that automate ingestion, routing, and intelligent retrieval.
-> 
-> ## Architecture
-> 
-> QiOS implements the Seven Layers of Governance:
-> 
-> 1. **Root Integrity** – Canonical folder structure
-> 2. **Dark Matter Physics** – System substrate protection
-> 3. **Realm Schema** – Ontology validation
-> 4. **File Identity** – QID and naming laws
-> 5. **Metadata** – Front matter semantic injection
-> 6. **Semantic Routing** – GINA + QiBrain-powered placement
-> 7. **Self-Healing** – Deduplication and normalization
-> 
-> ## Key Components
-> 
-> - **GINA**: Generative Intelligence Neural Archivist
->   - Orchestrates ingestion and embedding
->   - Coordinates semantic routing and classification
->   - Calls QiBrain for Retrieval Augmented Generation (RAG)
-> 
-> - **QiBrain**: Semantic Memory & RAG Service
->   - Stores embeddings and semantic chunks in Supabase (`semantic_profile`)
->   - Provides vector search over QiOS content
->   - Enforces realm, sensitivity, and routing rules via configuration
->   - Serves RAG context to GINA and other agents
-> 
-> - **Workers**: Autonomous Cloudflare Workers
->   - `gina_ingest`: File processing pipeline
->   - `gina_router`: Intelligent placement and retrieval routing
->   - `gina_linter`: Governance enforcement (naming, metadata, realms)
->   - `gina_orchestrator`: LLM coordination + high-level flow
-> 
-> - **Realms**: Meaning universes
->   - `qivault`: Core knowledge base
->   - `qibusiness`: Business operations
->   - `qipersonal`: Personal data
->   - `qiclients`: Client universes
-> 
-> ## Quick Start
-> 
-> 1. Install dependencies: `npm install`
-> 2. Set environment variables (see `env.example`)
-> 3. Start development: `npm run dev`
-> 4. Deploy workers: `npm run deploy`
-> 
-> > Adjust commands if your actual scripts differ; this README is the contract, so keep it honest.
-> 
-> ## Documentation
-> 
-> ### Genesis & Architecture
-> 
-> - [QiOS Genesis (Canonical)](realms/qivault/kb/0.00.00-SYS_qios_genesis.md) – Foundational architecture & ontology
-> 
-> ### Development
-> 
-> - [Workers Documentation](workers/README.md)
-> - [Component Library](components/README.md)
-> - [Data Schemas](data/schemas/README.md)
-> 
-> ## Rules & Governance
-> 
-> All changes must respect the QiOS Rules Registry (`rules/qios_rules_v1_1.yaml`). Key principles:
-> 
-> - **Identity vs Meaning**: Filenames = identity, metadata = meaning, embeddings = memory
-> - **QID**: Opaque unique IDs, immutable forever
-> - **QiDecimal**: Semantic addresses (##.##.##-TYPE)
-> - **Front Matter**: Complete YAML metadata for all files
-> 
-> ## Environment Setup
-> 
-> Copy `env.example` to `.env` and configure:
-> 
-> ```bash
-> SUPABASE_URL=your_supabase_url
-> SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-> OPENAI_API_KEY=your_openai_key
-> CLOUDFLARE_API_TOKEN=your_cf_token
-> ```
-> 
-> ## Development Scripts
-> 
-> ```bash
-> # Start all services
-> ./qios_start_all.ps1
-> 
-> # Development mode
-> ./qios_dev_start.ps1
-> 
-> # Launcher UI
-> ./start_launcher.ps1
-> ```
-> 
-> ## Contributing
-> 
-> 1. Respect the Seven Layers of Governance
-> 2. Update registries when adding rules/folders
-> 3. Use QiDecimal for new content
-> 4. Run linter before committing
-> 5. Document architectural decisions
-> 
-> ## License
-> 
-> See `LICENSE`.
-> 
-> ---
-> 
+> OK LETS GET REAL I HAVE ALL THESE HALF BAKED PROJECTS, I NEED TO DO AWAY WITH THE TEMPLATE FOR FUTURE IDEAS, RUN GIT ADD COMMIT PUSH ON THE PROJECTS WITHOUT ANY PUSH ISSUES AND BE DONE WITH THAT AND JUST UPLOAD MY ACTUAL ASSETS AND MD FILES NEEDED TO THE DRIVE NO, BUT HOW DO WE HANDLE THE QIOS LAW. # QiOS v1
+
+> 
+
+> **QiOS: The Cognitive Operating System**
+
+> 
+
+> > "Governance Over Chaos, Semantics Over Storage, Automation Over Effort"
+
+> 
+
+> ## Overview
+
+> 
+
+> QiOS v1 is the foundational implementation of a cognitive operating system designed to understand files as knowledge, not just data. It is built around a neural core (GINA) and a semantic memory service (QiBrain) that automate ingestion, routing, and intelligent retrieval.
+
+> 
+
+> ## Architecture
+
+> 
+
+> QiOS implements the Seven Layers of Governance:
+
+> 
+
+> 1. **Root Integrity** – Canonical folder structure
+
+> 2. **Dark Matter Physics** – System substrate protection
+
+> 3. **Realm Schema** – Ontology validation
+
+> 4. **File Identity** – QID and naming laws
+
+> 5. **Metadata** – Front matter semantic injection
+
+> 6. **Semantic Routing** – GINA + QiBrain-powered placement
+
+> 7. **Self-Healing** – Deduplication and normalization
+
+> 
+
+> ## Key Components
+
+> 
+
+> - **GINA**: Generative Intelligence Neural Archivist
+
+>   - Orchestrates ingestion and embedding
+
+>   - Coordinates semantic routing and classification
+
+>   - Calls QiBrain for Retrieval Augmented Generation (RAG)
+
+> 
+
+> - **QiBrain**: Semantic Memory & RAG Service
+
+>   - Stores embeddings and semantic chunks in Supabase (`semantic_profile`)
+
+>   - Provides vector search over QiOS content
+
+>   - Enforces realm, sensitivity, and routing rules via configuration
+
+>   - Serves RAG context to GINA and other agents
+
+> 
+
+> - **Workers**: Autonomous Cloudflare Workers
+
+>   - `gina_ingest`: File processing pipeline
+
+>   - `gina_router`: Intelligent placement and retrieval routing
+
+>   - `gina_linter`: Governance enforcement (naming, metadata, realms)
+
+>   - `gina_orchestrator`: LLM coordination + high-level flow
+
+> 
+
+> - **Realms**: Meaning universes
+
+>   - `qivault`: Core knowledge base
+
+>   - `qibusiness`: Business operations
+
+>   - `qipersonal`: Personal data
+
+>   - `qiclients`: Client universes
+
+> 
+
+> ## Quick Start
+
+> 
+
+> 1. Install dependencies: `npm install`
+
+> 2. Set environment variables (see `env.example`)
+
+> 3. Start development: `npm run dev`
+
+> 4. Deploy workers: `npm run deploy`
+
+> 
+
+> > Adjust commands if your actual scripts differ; this README is the contract, so keep it honest.
+
+> 
+
+> ## Documentation
+
+> 
+
+> ### Genesis & Architecture
+
+> 
+
+> - [QiOS Genesis (Canonical)](realms/qivault/kb/0.00.00-SYS_qios_genesis.md) – Foundational architecture & ontology
+
+> 
+
+> ### Development
+
+> 
+
+> - [Workers Documentation](workers/README.md)
+
+> - [Component Library](components/README.md)
+
+> - [Data Schemas](data/schemas/README.md)
+
+> 
+
+> ## Rules & Governance
+
+> 
+
+> All changes must respect the QiOS Rules Registry (`rules/qios_rules_v1_1.yaml`). Key principles:
+
+> 
+
+> - **Identity vs Meaning**: Filenames = identity, metadata = meaning, embeddings = memory
+
+> - **QID**: Opaque unique IDs, immutable forever
+
+> - **QiDecimal**: Semantic addresses (##.##.##-TYPE)
+
+> - **Front Matter**: Complete YAML metadata for all files
+
+> 
+
+> ## Environment Setup
+
+> 
+
+> Copy `env.example` to `.env` and configure:
+
+> 
+
+> ```bash
+
+> SUPABASE_URL=your_supabase_url
+
+> SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+
+> OPENAI_API_KEY=your_openai_key
+
+> CLOUDFLARE_API_TOKEN=your_cf_token
+
+> ```
+
+> 
+
+> ## Development Scripts
+
+> 
+
+> ```bash
+
+> # Start all services
+
+> ./qios_start_all.ps1
+
+> 
+
+> # Development mode
+
+> ./qios_dev_start.ps1
+
+> 
+
+> # Launcher UI
+
+> ./start_launcher.ps1
+
+> ```
+
+> 
+
+> ## Contributing
+
+> 
+
+> 1. Respect the Seven Layers of Governance
+
+> 2. Update registries when adding rules/folders
+
+> 3. Use QiDecimal for new content
+
+> 4. Run linter before committing
+
+> 5. Document architectural decisions
+
+> 
+
+> ## License
+
+> 
+
+> See `LICENSE`.
+
+> 
+
+> ---
+
+> 
+
 > *Built with governance over chaos.*
 
 ### Assistant
@@ -2494,64 +2969,122 @@ canonical_ref: ""
 > If you say “fresh repos, single commit,” I’ll give you a dead-simple checklist and command set that you can run repo-by-repo without thinking.
 
 ### User
-> OK YOU THREW a lot at me, ok my current gitignore at root, ########################
-> # NONE (DO NOT TRACK)  #
-> ########################
-> 
-> /.trunk/
-> /node_modules/
-> /tree-maker/
-> /venv/
-> /.venv/
-> /.env
-> /desktop.ini
-> /.archive/
-> /.legacy/
-> /.lfs/
-> /mdSilo-all.json
-> /.private/
-> /.trash/
-> ###############################
-> # IGNORE GIANT STORAGE ZONES  #
-> ###############################
-> 
-> # Ignore any `.lfs` folder anywhere in the tree
-> **/.lfs/
-> 
-> # Ignore any `.archive` folder anywhere
-> **/.archive/
-> 
-> # Ignore any `.legacy` folder anywhere
-> **/.legacy/
-> 
-> 
-> ########################
-> # SUB-REPOS (OWN GIT)  #
-> ########################
-> 
-> /_intake/
-> /apps/
-> /data/
-> /projects/
-> /realms/
-> /sites/
-> 
-> ########################
-> # GENERIC SAFE IGNORES #
-> ########################
-> 
-> # Python
-> **/__pycache__/
-> *.py[cod]
-> *$py.class
-> .venv/
-> 
-> # OS junk
-> .DS_Store
-> Thumbs.db
-> 
-> # Logs (optional)
-> logs/
+> OK YOU THREW a lot at me, ok my current gitignore at root, ########################
+
+> # NONE (DO NOT TRACK)  #
+
+> ########################
+
+> 
+
+> /.trunk/
+
+> /node_modules/
+
+> /tree-maker/
+
+> /venv/
+
+> /.venv/
+
+> /.env
+
+> /desktop.ini
+
+> /.archive/
+
+> /.legacy/
+
+> /.lfs/
+
+> /mdSilo-all.json
+
+> /.private/
+
+> /.trash/
+
+> ###############################
+
+> # IGNORE GIANT STORAGE ZONES  #
+
+> ###############################
+
+> 
+
+> # Ignore any `.lfs` folder anywhere in the tree
+
+> **/.lfs/
+
+> 
+
+> # Ignore any `.archive` folder anywhere
+
+> **/.archive/
+
+> 
+
+> # Ignore any `.legacy` folder anywhere
+
+> **/.legacy/
+
+> 
+
+> 
+
+> ########################
+
+> # SUB-REPOS (OWN GIT)  #
+
+> ########################
+
+> 
+
+> /_intake/
+
+> /apps/
+
+> /data/
+
+> /projects/
+
+> /realms/
+
+> /sites/
+
+> 
+
+> ########################
+
+> # GENERIC SAFE IGNORES #
+
+> ########################
+
+> 
+
+> # Python
+
+> **/__pycache__/
+
+> *.py[cod]
+
+> *$py.class
+
+> .venv/
+
+> 
+
+> # OS junk
+
+> .DS_Store
+
+> Thumbs.db
+
+> 
+
+> # Logs (optional)
+
+> logs/
+
 > *.log , also pdf i do want in git for now, moving forward we will adjust all pdfs have been optimized already, also i need a script to walk the directory and sub directories, identify the repos by looking for the .git folder once all are identified, it should cd to the deepest one, git add, commit, push, if errors report only, move up the the next level of gits and so on until at the repo root, this shoudl leave us with all repos without issues fully updated, and a list of repos to deal with manually, we should probably write a file at the same level at the .git to quickly identify wht can be safely removed unless we can handle that with the script to to minimize manual intervention, i guess we first need a standard gitignore.
 
 ### Assistant
@@ -3567,60 +4100,114 @@ canonical_ref: ""
 > Run the inventory script now and paste the “Category counts” section here.
 
 ### User
-> Git Repo Inventory - 2025-12-26 19:06:31
-> Root: C:\QiOS_v1
-> Repos inventoried: 42
-> 
-> Category counts:
->   MANUAL_NO_REMOTE: 1
->   MANUAL_NO_UPSTREAM: 1
->   MANUAL_UNKNOWN: 1
->   NOOP_CLEAN_IN_SYNC: 11
->   READY_COMMIT_PUSH_AHEAD_DIRTY: 5
->   READY_COMMIT_PUSH_DIRTY: 23
-> 
-> Repos:
-> - [MANUAL_NO_REMOTE] C:\QiOS_v1\realms\qiclients  (branch=master relation=no-upstream ahead= behind= clean=False remote=(none) upstream=)
-> - [MANUAL_NO_UPSTREAM] C:\QiOS_v1\realms\qiclients\_c.qios-client-template  (branch=main relation=no-upstream ahead= behind= clean=True remote=origin upstream=)
-> - [MANUAL_UNKNOWN] C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiMind\db\data  (branch=main relation=unknown ahead= behind= clean=False remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\apps\QiBP  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\apps\QiLauncher  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\QiStory  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiCareers  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiDocs  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiSpacePortfolio\spaceportfolio  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\realms\qiclients\c.inh\3_sites\3.1_innovahire-marketing-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\4817SD  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\LumaraLina  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\LumaraLinaVite  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\qially-com-v2.0  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1  (branch=main relation=ahead ahead=5 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\_sort  (branch=main relation=ahead ahead=2 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\projects\FCFCU_Case_Quartz  (branch=v4 relation=ahead ahead=2 behind=0 clean=False remote=origin upstream=origin/v4)
-> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEmpQNow  (branch=main relation=ahead ahead=1 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\sites\drivetest.qially.com  (branch=main relation=ahead ahead=1 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\apps\QiPortal  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiGPT  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\QiStory_Silence-Isnt-Distance  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEmpQNow\15_ARTICLES-Essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEnergyMonitor  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\drivetest.qially.com  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3\AES_Dispute_2025_26  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3\PDF-To-Excel-Converter  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\ideas_Lumara\Lina-Lumara-ai  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\3_sites\3.2_innovahire-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\4_apps\innovahire-kb-site-realtor-lookup.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\inh_realtor_navigator  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.mpp  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.mpp\site-kb  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\site  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\zai\innovahire-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\10_lived_experience\10_events  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\30_creative\713\06_lore_and_analysis\articles_essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\30_creative\713\06_lore_and_analysis\essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
-> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\sites\qially-me-v2.0  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+> Git Repo Inventory - 2025-12-26 19:06:31
+
+> Root: C:\QiOS_v1
+
+> Repos inventoried: 42
+
+> 
+
+> Category counts:
+
+>   MANUAL_NO_REMOTE: 1
+
+>   MANUAL_NO_UPSTREAM: 1
+
+>   MANUAL_UNKNOWN: 1
+
+>   NOOP_CLEAN_IN_SYNC: 11
+
+>   READY_COMMIT_PUSH_AHEAD_DIRTY: 5
+
+>   READY_COMMIT_PUSH_DIRTY: 23
+
+> 
+
+> Repos:
+
+> - [MANUAL_NO_REMOTE] C:\QiOS_v1\realms\qiclients  (branch=master relation=no-upstream ahead= behind= clean=False remote=(none) upstream=)
+
+> - [MANUAL_NO_UPSTREAM] C:\QiOS_v1\realms\qiclients\_c.qios-client-template  (branch=main relation=no-upstream ahead= behind= clean=True remote=origin upstream=)
+
+> - [MANUAL_UNKNOWN] C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiMind\db\data  (branch=main relation=unknown ahead= behind= clean=False remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\apps\QiBP  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\apps\QiLauncher  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\QiStory  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiCareers  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiDocs  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\projects\_QiLabs\QiSpacePortfolio\spaceportfolio  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\realms\qiclients\c.inh\3_sites\3.1_innovahire-marketing-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\4817SD  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\LumaraLina  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\LumaraLinaVite  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [NOOP_CLEAN_IN_SYNC] C:\QiOS_v1\sites\qially-com-v2.0  (branch=main relation=in-sync ahead=0 behind=0 clean=True remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1  (branch=main relation=ahead ahead=5 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\_sort  (branch=main relation=ahead ahead=2 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\projects\FCFCU_Case_Quartz  (branch=v4 relation=ahead ahead=2 behind=0 clean=False remote=origin upstream=origin/v4)
+
+> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEmpQNow  (branch=main relation=ahead ahead=1 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_AHEAD_DIRTY] C:\QiOS_v1\sites\drivetest.qially.com  (branch=main relation=ahead ahead=1 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\apps\QiPortal  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\QiOS_G.I.N.A_v2\QiGPT  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\QiStory_Silence-Isnt-Distance  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEmpQNow\15_ARTICLES-Essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\QiEnergyMonitor  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\_QiLabs\drivetest.qially.com  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3\AES_Dispute_2025_26  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\case_AES_Disputev3\PDF-To-Excel-Converter  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\projects\ideas_Lumara\Lina-Lumara-ai  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\3_sites\3.2_innovahire-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\4_apps\innovahire-kb-site-realtor-lookup.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.inh\inh_realtor_navigator  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.mpp  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.mpp\site-kb  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\site  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\zai\Sites\zjk-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qiclients\c.zjk\zai\innovahire-kb-site.g  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\10_lived_experience\10_events  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\30_creative\713\06_lore_and_analysis\articles_essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\realms\qivault\life\30_creative\713\06_lore_and_analysis\essays\mirrors-between-us  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
+> - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\sites\qially-me-v2.0  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
+
 > - [READY_COMMIT_PUSH_DIRTY] C:\QiOS_v1\templates\qi-client-template  (branch=main relation=in-sync ahead=0 behind=0 clean=False remote=origin upstream=origin/main)
 
 ### Assistant

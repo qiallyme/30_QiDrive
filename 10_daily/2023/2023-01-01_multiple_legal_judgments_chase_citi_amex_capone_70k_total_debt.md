@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Multiple legal judgments - Chase, Citi, Amex, CapOne (~$70K total debt)"
 slug: "multiple_legal_judgments_chase_citi_amex_capone_70k_total_debt"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8af4b1de55d64d0bad7b295055681a78
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Multiple legal judgments - Chase, Citi, Amex, CapOne (~$70K total debt)
 
 Category: Challenge

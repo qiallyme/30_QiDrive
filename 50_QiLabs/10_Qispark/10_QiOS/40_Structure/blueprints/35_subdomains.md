@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 35 Subdomains
-slug: ""
+slug: 35-subdomains
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f5cdced2ffab4efdb6e0d20de7bafbcc
 canonical_ref: ""
 source_type: manual
 template_key: master-template

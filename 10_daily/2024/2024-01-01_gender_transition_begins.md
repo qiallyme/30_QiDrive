@@ -3,7 +3,7 @@ layout: page
 title: "Gender Transition Begins"
 slug: "gender_transition_begins"
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["major change"]
 category: "major change"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3b5fbf0256c0479290acb5ffcf506dab
 canonical_ref: ""
 ---
 

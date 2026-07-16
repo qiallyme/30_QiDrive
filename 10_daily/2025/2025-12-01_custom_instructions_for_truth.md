@@ -3,9 +3,9 @@ layout: page
 title: "Custom instructions for truth"
 slug: "custom_instructions_for_truth"
 created_at: "2025-12-01 14:43:18"
-updated_at: "2025-12-01 14:43:18"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

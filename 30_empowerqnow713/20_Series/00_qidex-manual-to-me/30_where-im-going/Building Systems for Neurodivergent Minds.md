@@ -3,10 +3,10 @@ layout: page
 title: Building Systems for Neurodivergent Minds
 slug: building_systems_for_neurodivergent_minds
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - intake
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: q50cc18d39846
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 489e348f88ce46e8a80d9df617b08eec
 canonical_ref: ""
 template_key: master-template
 ---

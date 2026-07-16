@@ -3,9 +3,9 @@ layout: page
 title: "Storing Emails in Supabase"
 slug: "storing_emails_in_supabase"
 created_at: "2026-03-22 04:07:14"
-updated_at: "2026-03-22 04:07:14"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -4376,36 +4376,65 @@ canonical_ref: ""
 > ```
 
 ### User
-> # strict-compliance
-> 
-> Before planning or writing any code, you MUST review our core QiOS Blueprint documentation to ensure strict alignment. All blueprint files are located within the `__QiOS_Master_Blueprint_v0.4` directory:
-> 
-> - @/__QiOS_Master_Blueprint_v0.4/docs/01_governance/policies.md (Merge & Placement Policies)
-> - @/__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md (Namespace & Metadata Standards)
-> - @/__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md (The Primary Rule: One canonical domain per object)
-> - @/__QiOS_Master_Blueprint_v0.4/docs/04_data/schema.md (Supabase Migrations as canonical truth)
-> 
-> You must adhere to the QiOS constraints:
-> 1. Respect the 3-Band Model (Core, Platform, Domain).
-> 2. Do not write domain logic or new tables into the `public` schema.
-> 3. Ensure every domain table carries a `tenant_id` for RLS isolation.
-> 4. Do not bypass the "Spine" ingestion flow for file tracking.
-> 
-> If your proposed solution falls OUTSIDE the bounds of these documents, HALT coding. Provide an "Out-of-Bounds Alert" containing:
-> 
-> 1. **The Deviation:** Explain exactly which policy, standard, or placement rule is being broken.
-> 2. **The Ripple-Check:** Detail how this impacts the rest of the project (e.g., how it affects Supabase RLS policies, the 3-Band Model, or Python workers).
-> 3. **Pros & Cons:** Objective breakdown of making this exception versus sticking to the established docs.
+> # strict-compliance
+
+> 
+
+> Before planning or writing any code, you MUST review our core QiOS Blueprint documentation to ensure strict alignment. All blueprint files are located within the `__QiOS_Master_Blueprint_v0.4` directory:
+
+> 
+
+> - @/__QiOS_Master_Blueprint_v0.4/docs/01_governance/policies.md (Merge & Placement Policies)
+
+> - @/__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md (Namespace & Metadata Standards)
+
+> - @/__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md (The Primary Rule: One canonical domain per object)
+
+> - @/__QiOS_Master_Blueprint_v0.4/docs/04_data/schema.md (Supabase Migrations as canonical truth)
+
+> 
+
+> You must adhere to the QiOS constraints:
+
+> 1. Respect the 3-Band Model (Core, Platform, Domain).
+
+> 2. Do not write domain logic or new tables into the `public` schema.
+
+> 3. Ensure every domain table carries a `tenant_id` for RLS isolation.
+
+> 4. Do not bypass the "Spine" ingestion flow for file tracking.
+
+> 
+
+> If your proposed solution falls OUTSIDE the bounds of these documents, HALT coding. Provide an "Out-of-Bounds Alert" containing:
+
+> 
+
+> 1. **The Deviation:** Explain exactly which policy, standard, or placement rule is being broken.
+
+> 2. **The Ripple-Check:** Detail how this impacts the rest of the project (e.g., how it affects Supabase RLS policies, the 3-Band Model, or Python workers).
+
+> 3. **Pros & Cons:** Objective breakdown of making this exception versus sticking to the established docs.
+
 > 4. **Approval Request:** Ask the user if they wish to proceed. Instruct them to run `/update-adr` if approved. 
-> # update-adr
-> Description: Formalizes an approved architectural deviation by updating the QiOS Blueprint, creating an ADR, and modifying the changelog.
-> 
-> Step 1: Identify the approved out-of-bounds change from our current conversation context.
-> Step 2: Update the relevant governance files (e.g., `@/__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md` or `@/__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md`) to officially incorporate this new rule.
-> Step 3: Check the `@/__QiOS_Master_Blueprint_v0.4/docs/adr/` folder to determine the next sequential four-digit number.
-> Step 4: Read `@/__QiOS_Master_Blueprint_v0.4/docs/adr/ADR-0000_template.md` to get the required formatting.
-> Step 5: Generate the new Architecture Decision Record in the `@/__QiOS_Master_Blueprint_v0.4/docs/adr/` folder using the exact structure from the template. Format the filename as `ADR-XXXX_brief_description.md`.
-> Step 6: Append a new entry to `@/__QiOS_Master_Blueprint_v0.4/docs/appendices/changelog.md` detailing what was changed, linking to the new ADR, and explaining exactly why.
+> # update-adr
+
+> Description: Formalizes an approved architectural deviation by updating the QiOS Blueprint, creating an ADR, and modifying the changelog.
+
+> 
+
+> Step 1: Identify the approved out-of-bounds change from our current conversation context.
+
+> Step 2: Update the relevant governance files (e.g., `@/__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md` or `@/__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md`) to officially incorporate this new rule.
+
+> Step 3: Check the `@/__QiOS_Master_Blueprint_v0.4/docs/adr/` folder to determine the next sequential four-digit number.
+
+> Step 4: Read `@/__QiOS_Master_Blueprint_v0.4/docs/adr/ADR-0000_template.md` to get the required formatting.
+
+> Step 5: Generate the new Architecture Decision Record in the `@/__QiOS_Master_Blueprint_v0.4/docs/adr/` folder using the exact structure from the template. Format the filename as `ADR-XXXX_brief_description.md`.
+
+> Step 6: Append a new entry to `@/__QiOS_Master_Blueprint_v0.4/docs/appendices/changelog.md` detailing what was changed, linking to the new ADR, and explaining exactly why.
+
 > Step 7: Provide a brief summary confirming all QiOS Blueprint documentation has been successfully synchronized.
 
 ### Assistant

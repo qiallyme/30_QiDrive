@@ -3,9 +3,9 @@ layout: page
 title: "API key storage query"
 slug: "api_key_storage_query"
 created_at: "2026-03-16 21:06:38"
-updated_at: "2026-03-16 21:06:38"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -362,28 +362,50 @@ canonical_ref: ""
 > Just tell me which direction.
 
 ### User
-> actually i  need it for this table, and based on my current state of my tech stack i need to update most of this table probably. category	tool	decision	role	source	ide	automation	reason
-> notes	QiVault markdown repo	use	primary notes system	files	full	high	files enable AI editing, scripts, git, and bulk refactoring
-> editor	Cursor IDE	use	primary development and writing environment	files	full	high	AI-assisted coding and markdown editing
-> viewer	Obsidian	optional	note viewer and navigation UI	files	full	medium	graph view, backlinks, quick browsing
-> viewer	Obsidian Dataview plugin	optional	query dashboards inside vault	files	full	medium	metadata queries for exhibits timelines and missing fields
-> viewer	Obsidian Templater plugin	optional	note template generation	files	full	medium	consistent note creation
-> automation	Obsidian Linter plugin	optional	markdown and yaml normalization	files	full	medium	keeps formatting consistent
-> viewer	Metadata Menu plugin	optional	ui editing of frontmatter	files	full	low	convenient but not required
-> docs	QiArchive	use	document evidence storage	files	full	high	central storage for evidence and artifacts
-> docs	Paperless-NGX	use	document ingestion and OCR	mixed	limited	medium	scanning tagging and OCR intake
-> database	Postgres (Railway)	use	structured data backend	database	limited	high	structured entities logs automation data
-> automation	Python scripts	use	automation engine	files	full	high	bulk metadata updates ingestion scripts system tooling
-> automation	CSV manifest system	use	bulk metadata mapping and review	files	full	high	safe dry-run editing of frontmatter
-> viewer	Trilium (Railway)	optional	web knowledge viewer	database	none	medium	remote browsing but not source of truth
-> viewer	Atomic Server	future	semantic knowledge graph	database	none	high	possible future graph layer
-> viewer	Flotes	reject	web notebook	database	none	low	adds no capability beyond markdown repo
-> docs	Google Drive	use	blob storage and sync	mixed	limited	low	cheap large storage for files and archives
-> code	GitHub	use	code repository and version control	files	full	high	versioning collaboration automation
-> automation	n8n (Railway)	optional	workflow automation	mixed	limited	high	event pipelines integrations
-> portal	Cloudflare Pages	use	client portals and static apps	files	full	high	frontend hosting for QiPortals
-> automation	Cloudflare Workers	use	serverless automation layer	mixed	limited	high	api endpoints ingestion tasks
-> database	Supabase	optional	secondary structured backend	database	limited	high	used for portal apps if needed
+> actually i  need it for this table, and based on my current state of my tech stack i need to update most of this table probably. category	tool	decision	role	source	ide	automation	reason
+
+> notes	QiVault markdown repo	use	primary notes system	files	full	high	files enable AI editing, scripts, git, and bulk refactoring
+
+> editor	Cursor IDE	use	primary development and writing environment	files	full	high	AI-assisted coding and markdown editing
+
+> viewer	Obsidian	optional	note viewer and navigation UI	files	full	medium	graph view, backlinks, quick browsing
+
+> viewer	Obsidian Dataview plugin	optional	query dashboards inside vault	files	full	medium	metadata queries for exhibits timelines and missing fields
+
+> viewer	Obsidian Templater plugin	optional	note template generation	files	full	medium	consistent note creation
+
+> automation	Obsidian Linter plugin	optional	markdown and yaml normalization	files	full	medium	keeps formatting consistent
+
+> viewer	Metadata Menu plugin	optional	ui editing of frontmatter	files	full	low	convenient but not required
+
+> docs	QiArchive	use	document evidence storage	files	full	high	central storage for evidence and artifacts
+
+> docs	Paperless-NGX	use	document ingestion and OCR	mixed	limited	medium	scanning tagging and OCR intake
+
+> database	Postgres (Railway)	use	structured data backend	database	limited	high	structured entities logs automation data
+
+> automation	Python scripts	use	automation engine	files	full	high	bulk metadata updates ingestion scripts system tooling
+
+> automation	CSV manifest system	use	bulk metadata mapping and review	files	full	high	safe dry-run editing of frontmatter
+
+> viewer	Trilium (Railway)	optional	web knowledge viewer	database	none	medium	remote browsing but not source of truth
+
+> viewer	Atomic Server	future	semantic knowledge graph	database	none	high	possible future graph layer
+
+> viewer	Flotes	reject	web notebook	database	none	low	adds no capability beyond markdown repo
+
+> docs	Google Drive	use	blob storage and sync	mixed	limited	low	cheap large storage for files and archives
+
+> code	GitHub	use	code repository and version control	files	full	high	versioning collaboration automation
+
+> automation	n8n (Railway)	optional	workflow automation	mixed	limited	high	event pipelines integrations
+
+> portal	Cloudflare Pages	use	client portals and static apps	files	full	high	frontend hosting for QiPortals
+
+> automation	Cloudflare Workers	use	serverless automation layer	mixed	limited	high	api endpoints ingestion tasks
+
+> database	Supabase	optional	secondary structured backend	database	limited	high	used for portal apps if needed
+
 > database	Railway	use	hosting environment	mixed	limited	medium	runs postgres n8n and services
 
 ### Assistant

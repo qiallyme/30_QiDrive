@@ -4,7 +4,7 @@ title: No Onions, Please - How a Burger Order Becomes a Social Filter
 series: The Onion Effect
 episode: 1
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - food preferences
   - social labor
   - picky eating
@@ -17,10 +17,10 @@ platforms:
   - Qsays
   - YouTube
 layout: page
-slug: ""
+slug: no-onions-please-how-a-burger-order-becomes-a-social-filter
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -29,7 +29,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d95153abcfd840dd8b0b25c2b052aa59
 canonical_ref: ""
 source_type: manual
 template_key: master-template

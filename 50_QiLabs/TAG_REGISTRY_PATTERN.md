@@ -1,3 +1,26 @@
+---
+layout: page
+title: Tag Registry Pattern
+slug: tag-registry-pattern
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 079c150c978d4eeba2ddba159d6e9990
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # QiLabs Tag Registry Pattern
 
 ## Correct model

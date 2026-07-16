@@ -3,9 +3,9 @@ layout: page
 title: "Transcript Review Options"
 slug: "transcript_review_options"
 created_at: "2026-02-09 17:03:08"
-updated_at: "2026-02-09 17:03:08"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -843,18 +843,30 @@ canonical_ref: ""
 > Next thing we eventually need is the document where the $4,700-ish number appears. That’s where this turns from theory into evidence.
 
 ### User
-> {'asset_pointer': 'sediment://file_00000000955c71f5ac1e3252d0b368b2', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 701, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 201237, 'width': 1208}on the amended default on may 28th he once again cited 3000. heres the other piece on 7/17 the plaintiff bid said judgement 220863.09, property taxes 7600.81, which after review closely that would aligned is the2024 due in 2025 paymen for november 2025 of 1500 approximately would still be mine after the sale, but i dont think that is right, never the less, it also states they gave the sheriff a check of 300 sheriff said differnt amount, publication of 1094.35, noone  can or is able to produce a receipt of what they paid and a copy of the publication supossedly i was another way to be notifed, and 35 recording fees, ok, ya i saw that doc but michael filed it so that should ahve been in his fees, then on this same document attorneys fees only say 1275, not 3000, if this is the bid, he should of put 4275 as the total, they dont get to add 3000 in the jusdgement then add another 1275 later, after judgement, other than real and contractual costs like taxes and interst, but they dont get to make up interst when it was only 7k not 11k, on 7/17 the interst was only, $6,588.00, now if they are chargin me other fees, not in the agreement or in law, they can just say its interst, there are specific laws around that. look at the wording on number 1. its contridictory, they have the total plus this and this, but say based on the 220,863 judement, property taxes, interest and attorney fees, so is he saying that our total judgement is 240464 and we incurred costs of 300, 1094.35, and 35 (of which only the 35 matches any evidence) in that case the total was affidavit	
-> judgement	$220,863.09
-> taxes	$7,600.81
-> Interest	$10,725.27
-> Attorney	$1,275.00
-> SubTotal	$240,464.17
-> 	Plus
-> Sheriff	$300.00
-> Publication	$1,094.35
-> Clerk	$35.00
-> Sub Total	$1,429.35
-> 	
+> {'asset_pointer': 'sediment://file_00000000955c71f5ac1e3252d0b368b2', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 701, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 201237, 'width': 1208}on the amended default on may 28th he once again cited 3000. heres the other piece on 7/17 the plaintiff bid said judgement 220863.09, property taxes 7600.81, which after review closely that would aligned is the2024 due in 2025 paymen for november 2025 of 1500 approximately would still be mine after the sale, but i dont think that is right, never the less, it also states they gave the sheriff a check of 300 sheriff said differnt amount, publication of 1094.35, noone  can or is able to produce a receipt of what they paid and a copy of the publication supossedly i was another way to be notifed, and 35 recording fees, ok, ya i saw that doc but michael filed it so that should ahve been in his fees, then on this same document attorneys fees only say 1275, not 3000, if this is the bid, he should of put 4275 as the total, they dont get to add 3000 in the jusdgement then add another 1275 later, after judgement, other than real and contractual costs like taxes and interst, but they dont get to make up interst when it was only 7k not 11k, on 7/17 the interst was only, $6,588.00, now if they are chargin me other fees, not in the agreement or in law, they can just say its interst, there are specific laws around that. look at the wording on number 1. its contridictory, they have the total plus this and this, but say based on the 220,863 judement, property taxes, interest and attorney fees, so is he saying that our total judgement is 240464 and we incurred costs of 300, 1094.35, and 35 (of which only the 35 matches any evidence) in that case the total was affidavit	
+
+> judgement	$220,863.09
+
+> taxes	$7,600.81
+
+> Interest	$10,725.27
+
+> Attorney	$1,275.00
+
+> SubTotal	$240,464.17
+
+> 	Plus
+
+> Sheriff	$300.00
+
+> Publication	$1,094.35
+
+> Clerk	$35.00
+
+> Sub Total	$1,429.35
+
+> 	
+
 > Grand Total	$241,893.52
 > --- Defendants
 > 

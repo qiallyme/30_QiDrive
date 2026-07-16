@@ -4,14 +4,14 @@ title: QiLife Decisions
 slug: qilife-decisions
 summary: Architecture and product decisions specific to QiLife.
 status: active
-updated_at: "2026-06-28"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - moc
   - decisions
   - qilife
   - qispark
 source_type: manual
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b085cfe960b04f0291affb31960e756f
 canonical_ref: ""
 template_key: master-template
 ---

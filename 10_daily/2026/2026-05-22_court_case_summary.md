@@ -3,9 +3,9 @@ layout: page
 title: "Court Case Summary"
 slug: "court_case_summary"
 created_at: "2026-05-22 23:24:06"
-updated_at: "2026-05-22 23:24:06"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,54 +39,102 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> lmao, look at this. Odyssey E-Notices - 49D03-2501-MF-002559 Financial Center First Credit Union v. Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> Inbox
-> Court
-> Summarize this email
-> 
-> Indiana Courts <courts@subscription.in.gov>
-> 2:47 AM (20 hours ago)
-> to me
-> 
-> 
-> Cody Rice-Velasquez
-> 
-> Case Number:      49D03-2501-MF-002559
-> Financial Center First Credit Union
-> 
-> v.
-> 
-> Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> 
-> If any documents below are confidential, after you click the link, you must type your email address for verification before the document displays. In addition, document links expire 21 days after the date and time sent. If you need a copy of the document, download it immediately. Attorneys can access most cases and documents by signing into https://mycase.in.gov.
-> 
-> Notice Issued - Court holds hearing on defendants motion for release of excess funds. Plaintiff by counsel Kainrath. Defendant fails to appear. Plainitiff has no objection to motion for release of excess funds. Court grants motion.
-> Entry Date:      5/21/2026
-> 
-> Other Party - ENoticed:
-> N/A
-> Other Party - Noticed:
-> N/A
-> ___________________________________________________________
-> 
-> Notice Issued - Court issues notice for updated mailing address to be filed with the court
-> Entry Date:      5/21/2026
-> 
-> Other Party - ENoticed:
-> Felix O'Neill Rippy
-> Michael E. Farrer
-> Scott Andrew Kainrath
-> Other Party - Noticed:
-> American Express National Bank, N.A.
-> JP Morgan Chase Bank, N.A.
-> ___________________________________________________________
-> 
-> This email was sent by: 
-> Indiana Courts
-> 200 W. Washington Street
-> Indianapolis, IN 46204
-> 
-> Privacy Notice
+> lmao, look at this. Odyssey E-Notices - 49D03-2501-MF-002559 Financial Center First Credit Union v. Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> Inbox
+
+> Court
+
+> Summarize this email
+
+> 
+
+> Indiana Courts <courts@subscription.in.gov>
+
+> 2:47 AM (20 hours ago)
+
+> to me
+
+> 
+
+> 
+
+> Cody Rice-Velasquez
+
+> 
+
+> Case Number:      49D03-2501-MF-002559
+
+> Financial Center First Credit Union
+
+> 
+
+> v.
+
+> 
+
+> Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> 
+
+> If any documents below are confidential, after you click the link, you must type your email address for verification before the document displays. In addition, document links expire 21 days after the date and time sent. If you need a copy of the document, download it immediately. Attorneys can access most cases and documents by signing into https://mycase.in.gov.
+
+> 
+
+> Notice Issued - Court holds hearing on defendants motion for release of excess funds. Plaintiff by counsel Kainrath. Defendant fails to appear. Plainitiff has no objection to motion for release of excess funds. Court grants motion.
+
+> Entry Date:      5/21/2026
+
+> 
+
+> Other Party - ENoticed:
+
+> N/A
+
+> Other Party - Noticed:
+
+> N/A
+
+> ___________________________________________________________
+
+> 
+
+> Notice Issued - Court issues notice for updated mailing address to be filed with the court
+
+> Entry Date:      5/21/2026
+
+> 
+
+> Other Party - ENoticed:
+
+> Felix O'Neill Rippy
+
+> Michael E. Farrer
+
+> Scott Andrew Kainrath
+
+> Other Party - Noticed:
+
+> American Express National Bank, N.A.
+
+> JP Morgan Chase Bank, N.A.
+
+> ___________________________________________________________
+
+> 
+
+> This email was sent by: 
+
+> Indiana Courts
+
+> 200 W. Washington Street
+
+> Indianapolis, IN 46204
+
+> 
+
+> Privacy Notice
+
 > Online Services Terms of Use
 
 ### Assistant
@@ -195,60 +243,114 @@ canonical_ref: ""
 > Defendant, Pro Se
 
 ### User
-> should it be more like this. 
-> 
-> STATE OF INDIANA
-> 
-> COUNTY OF MARION
-> )
-> )    SS: 
-> )
-> THE MARION SUPERIOR COURT 3
-> 
-> CAUSE NO: 49D03-2501-MF-002559
-> FINANCIAL CENTER FIRST CREDIT UNION,
-> )
-> )
->      Plaintiff,
-> )  
-> )
-> v.
-> )
-> CODY RICE-VELASQUEZ;
-> )
-> Defendant.
-> )
-> 
-> 
-> NOTICE OF UPDATED MAILING ADDRESS
-> 
-> Comes now Defendant Cody Rice-Velasquez, appearing pro se, and files this Notice of Updated Mailing Address.
-> Defendant respectfully notifies the Court and all parties that Defendant’s current mailing address is:
-> Cody Rice-Velasquez
-> 1745 S Elliot Street
-> Evansville, IN 47713
-> 
-> WHEREFORE, Defendant Cody Rice-Velasquez respectfully requests that the Court:
-> 
-> 
-> Respectfully submitted,
-> /s/ Cody Rice-Velasquez
-> Cody Rice-Velasquez, Pro Se
-> 1745 S Elliot St
-> Evansville, IN 47713
-> crice4485@gmail.com
-> 317-266-1369
-> 
-> 
-> 
-> CERTIFICATE OF SERVICE
-> I, Cody Rice-Velasquez do hereby certify that a true and accurate copy of the foregoing document was served upon all parties of record via the Indiana E-Filing System and/or by electronic mail to counsel of record on this 29th day of April, 2026
-> 
-> /s/ Cody Rice-Velasquez
-> Cody Rice-Velasquez
-> Counsel for Plaintiff:
-> Scott A. Kainrath
-> Michael E. Farrer
+> should it be more like this. 
+
+> 
+
+> STATE OF INDIANA
+
+> 
+
+> COUNTY OF MARION
+
+> )
+
+> )    SS: 
+
+> )
+
+> THE MARION SUPERIOR COURT 3
+
+> 
+
+> CAUSE NO: 49D03-2501-MF-002559
+
+> FINANCIAL CENTER FIRST CREDIT UNION,
+
+> )
+
+> )
+
+>      Plaintiff,
+
+> )  
+
+> )
+
+> v.
+
+> )
+
+> CODY RICE-VELASQUEZ;
+
+> )
+
+> Defendant.
+
+> )
+
+> 
+
+> 
+
+> NOTICE OF UPDATED MAILING ADDRESS
+
+> 
+
+> Comes now Defendant Cody Rice-Velasquez, appearing pro se, and files this Notice of Updated Mailing Address.
+
+> Defendant respectfully notifies the Court and all parties that Defendant’s current mailing address is:
+
+> Cody Rice-Velasquez
+
+> 1745 S Elliot Street
+
+> Evansville, IN 47713
+
+> 
+
+> WHEREFORE, Defendant Cody Rice-Velasquez respectfully requests that the Court:
+
+> 
+
+> 
+
+> Respectfully submitted,
+
+> /s/ Cody Rice-Velasquez
+
+> Cody Rice-Velasquez, Pro Se
+
+> 1745 S Elliot St
+
+> Evansville, IN 47713
+
+> crice4485@gmail.com
+
+> 317-266-1369
+
+> 
+
+> 
+
+> 
+
+> CERTIFICATE OF SERVICE
+
+> I, Cody Rice-Velasquez do hereby certify that a true and accurate copy of the foregoing document was served upon all parties of record via the Indiana E-Filing System and/or by electronic mail to counsel of record on this 29th day of April, 2026
+
+> 
+
+> /s/ Cody Rice-Velasquez
+
+> Cody Rice-Velasquez
+
+> Counsel for Plaintiff:
+
+> Scott A. Kainrath
+
+> Michael E. Farrer
+
 > Graham, Farrer & Wilson, P.C.
 
 ### Assistant
@@ -320,8 +422,10 @@ canonical_ref: ""
 > Do **not** call it a motion. This is administrative compliance, not a request for relief.
 
 ### User
-> CODY RICE-VELASQUEZ
-> 1745 S ELLIOTT ST
+> CODY RICE-VELASQUEZ
+
+> 1745 S ELLIOTT ST
+
 > EVANSVILLE IN 47713-2016
 
 ### Assistant
@@ -439,58 +543,110 @@ canonical_ref: ""
 > If not filed yet: regenerate it with the caption at the top and consistent address formatting. That’s the cleaner move.
 
 ### User
-> its the parsing the caption remains unchanged ihave beenusing the same template for all filings, 
-> 
-> STATE OF INDIANA
-> 
-> COUNTY OF MARION
-> )
-> )    SS: 
-> )
-> THE MARION SUPERIOR COURT 3
-> 
-> CAUSE NO: 49D03-2501-MF-002559
-> FINANCIAL CENTER FIRST CREDIT UNION,
-> )
-> )
->      Plaintiff,
-> )  
-> )
-> v.
-> )
-> CODY RICE-VELASQUEZ;
-> )
-> Defendant.
-> )
-> 
-> 
-> NOTICE OF UPDATED MAILING ADDRESS
-> 
-> Comes now Defendant, Cody Rice-Velasquez, appearing pro se, and files this Notice of Updated Mailing Address.
-> Defendant respectfully notifies the Court and all parties that Defendant’s current mailing address is:
-> CODY RICE-VELASQUEZ
-> 1745 S ELLIOTT ST
-> EVANSVILLE IN 47713-2016
-> 
-> Defendant requests that all future notices, orders, checks, correspondence, and filings be sent to the mailing address listed above.
-> Respectfully submitted,
-> /s/ Cody Rice-Velasquez
-> Cody Rice-Velasquez, Pro Se
-> 1745 S Elliot St
-> Evansville, IN 47713-2016
-> crice4485@gmail.com
-> 317-266-1369
-> 
-> 
-> 
-> CERTIFICATE OF SERVICE
-> I, Cody Rice-Velasquez do hereby certify that a true and accurate copy of the foregoing document was served upon all parties of record via the Indiana E-Filing System and/or by electronic mail to counsel of record on this 22nd day of May, 2026
-> 
-> /s/ Cody Rice-Velasquez
-> Cody Rice-Velasquez
-> Counsel for Plaintiff:
-> Scott A. Kainrath
-> Michael E. Farrer
+> its the parsing the caption remains unchanged ihave beenusing the same template for all filings, 
+
+> 
+
+> STATE OF INDIANA
+
+> 
+
+> COUNTY OF MARION
+
+> )
+
+> )    SS: 
+
+> )
+
+> THE MARION SUPERIOR COURT 3
+
+> 
+
+> CAUSE NO: 49D03-2501-MF-002559
+
+> FINANCIAL CENTER FIRST CREDIT UNION,
+
+> )
+
+> )
+
+>      Plaintiff,
+
+> )  
+
+> )
+
+> v.
+
+> )
+
+> CODY RICE-VELASQUEZ;
+
+> )
+
+> Defendant.
+
+> )
+
+> 
+
+> 
+
+> NOTICE OF UPDATED MAILING ADDRESS
+
+> 
+
+> Comes now Defendant, Cody Rice-Velasquez, appearing pro se, and files this Notice of Updated Mailing Address.
+
+> Defendant respectfully notifies the Court and all parties that Defendant’s current mailing address is:
+
+> CODY RICE-VELASQUEZ
+
+> 1745 S ELLIOTT ST
+
+> EVANSVILLE IN 47713-2016
+
+> 
+
+> Defendant requests that all future notices, orders, checks, correspondence, and filings be sent to the mailing address listed above.
+
+> Respectfully submitted,
+
+> /s/ Cody Rice-Velasquez
+
+> Cody Rice-Velasquez, Pro Se
+
+> 1745 S Elliot St
+
+> Evansville, IN 47713-2016
+
+> crice4485@gmail.com
+
+> 317-266-1369
+
+> 
+
+> 
+
+> 
+
+> CERTIFICATE OF SERVICE
+
+> I, Cody Rice-Velasquez do hereby certify that a true and accurate copy of the foregoing document was served upon all parties of record via the Indiana E-Filing System and/or by electronic mail to counsel of record on this 22nd day of May, 2026
+
+> 
+
+> /s/ Cody Rice-Velasquez
+
+> Cody Rice-Velasquez
+
+> Counsel for Plaintiff:
+
+> Scott A. Kainrath
+
+> Michael E. Farrer
+
 > Graham, Farrer & Wilson, P.C.
 
 ### Assistant

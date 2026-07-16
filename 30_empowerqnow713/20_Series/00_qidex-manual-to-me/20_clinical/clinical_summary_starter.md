@@ -13,7 +13,7 @@ related:
   - 30_clinical/10_adhd/adhd_operating_notes.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
   - 30_clinical/30_stress_body_response/stress_body_response.md
-tags:
+tags: []
   - clinical
   - provider-context
   - summary
@@ -29,6 +29,23 @@ source:
   - _intake/10 8 Anxiety 219f84a0440281bb9e13c5b9d4a1af18.md
   - _intake/10 9 ADHD 219f84a04402818281e6cecb0ef7384a.md
   - _intake/10 10 Correspondence Anxiety 219f84a0440281dd8158c32fb4331416.md
+layout: page
+slug: clinical-summary-starter
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 041190368aeb4f62acefb0851397484d
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Clinical Summary Starter

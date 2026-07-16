@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0017: Canonical Vocabulary and V1 Direction
 slug: adr-0017-canonical-vocabulary-and-v1-direction
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: eb4a5e9b10554bc6894a7bc89b654d36
 canonical_ref: ""
 template_key: master-template
 ---

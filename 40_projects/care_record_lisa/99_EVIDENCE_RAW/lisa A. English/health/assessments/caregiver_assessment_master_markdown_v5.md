@@ -4,6 +4,23 @@ author: "Cody"
 date: "2026-05-24"
 document_type: "Caregiver assessment / boundary record"
 status: publish
+layout: page
+slug: caregiver-assessment-evidence-summary-financial-clarification-opportunity-loss-caregiver-fatigue-emergency-risk-and-role-transition
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 7e10df54d0f24e278422338094696e8b
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 > **Editor note:** This Markdown version is the cleaner master copy. It preserves the separate sections while making the document easier to edit, paste into Canva/Docs, or convert to PDF.

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 00 App Flow And Screens
-slug: ""
+slug: 00-app-flow-and-screens
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 35b698332fc5471c8b0076ff2f16bd0d
 canonical_ref: ""
 source_type: manual
 template_key: master-template

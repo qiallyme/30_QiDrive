@@ -3,9 +3,9 @@ layout: page
 title: "Codex for App Development"
 slug: "codex_for_app_development"
 created_at: "2026-03-31 18:56:16"
-updated_at: "2026-03-31 18:56:16"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1141,28 +1141,50 @@ canonical_ref: ""
 > If you want, I’ll turn this into a **two-week execution board** with exact tickets in dependency order.
 
 ### User
-> Ran command: `Get-ChildItem -Path C:\QiLabs -Recurse -Filter "*.csv" -File | Select-Object FullName, Length | ConvertTo-Json`
-> Edited legacy_csv_inventory.json
-> Edited legacy_csv_migration_plan.md
-> Edited mkdocs.yml
-> 
-> The legacy database CSV dump is indeed a very risky ingestion surface and should absolutely be handled via structured quarantines and staging pipelines rather than blind imports.
-> 
-> Per your prompt, I have fully audited the available file list and orchestrated the formal migration and validation pipeline. Here is what has been built and deposited directly into the Master Blueprint under the `Appendices` section:
-> 
-> ### 1. The Migration Action Plan (`docs/appendices/legacy_csv_migration_plan.md`)
-> I laid out the definitive 4-Zone Migration Model (Raw Vault → Staging Schema → Normalized Staging Views → Canonical Destinations). This plan:
-> * Specifically outlines the `staging.raw_*` and `staging.norm_*` table structure required for Supabase.
-> * Breaks the entire mass of 30+ files down into **6 coherent Migration Families** (e.g., *Contacts*, *Knowledge*, *Communications*).
-> * Explicitly defines the canonical mappings out of staging (e.g. `staging.norm_contacts` -> `qione.contact`).
-> * Includes the exact **10-step Action Plan** starting strictly with proving the model using the standalone `Contacts` family pipeline before touching anything else.
-> 
-> ### 2. The Comprehensive CSV Inventory (`docs/appendices/legacy_csv_inventory.json`)
-> I generated a machine-readable JSON inventory file classifying exactly what each CSV export is, where it likely originated, and its mandatory deposition rule:
-> * **The Quarantine Rules**: Explicitly flagged the `Chrome Passwords` and `API Recovery Keys` as `Quarantine / Shred`. They must be moved to an offline vault and instantly destroyed from the workspace.
-> * **The Archive Rules**: Flagged all structural matrixes and legacy realm registries (e.g., `qios_rules_v1_1.csv`, `realms_registry.csv`) as preservation-only since they've already been translated into the modern YAML registries.
-> * **The Migration Targets**: All genuine contacts, accounting data (COA, transactions), messaging histories, and blueprint memories are officially routed to their specific staging zone tables for processing.
-> 
+> Ran command: `Get-ChildItem -Path C:\QiLabs -Recurse -Filter "*.csv" -File | Select-Object FullName, Length | ConvertTo-Json`
+
+> Edited legacy_csv_inventory.json
+
+> Edited legacy_csv_migration_plan.md
+
+> Edited mkdocs.yml
+
+> 
+
+> The legacy database CSV dump is indeed a very risky ingestion surface and should absolutely be handled via structured quarantines and staging pipelines rather than blind imports.
+
+> 
+
+> Per your prompt, I have fully audited the available file list and orchestrated the formal migration and validation pipeline. Here is what has been built and deposited directly into the Master Blueprint under the `Appendices` section:
+
+> 
+
+> ### 1. The Migration Action Plan (`docs/appendices/legacy_csv_migration_plan.md`)
+
+> I laid out the definitive 4-Zone Migration Model (Raw Vault → Staging Schema → Normalized Staging Views → Canonical Destinations). This plan:
+
+> * Specifically outlines the `staging.raw_*` and `staging.norm_*` table structure required for Supabase.
+
+> * Breaks the entire mass of 30+ files down into **6 coherent Migration Families** (e.g., *Contacts*, *Knowledge*, *Communications*).
+
+> * Explicitly defines the canonical mappings out of staging (e.g. `staging.norm_contacts` -> `qione.contact`).
+
+> * Includes the exact **10-step Action Plan** starting strictly with proving the model using the standalone `Contacts` family pipeline before touching anything else.
+
+> 
+
+> ### 2. The Comprehensive CSV Inventory (`docs/appendices/legacy_csv_inventory.json`)
+
+> I generated a machine-readable JSON inventory file classifying exactly what each CSV export is, where it likely originated, and its mandatory deposition rule:
+
+> * **The Quarantine Rules**: Explicitly flagged the `Chrome Passwords` and `API Recovery Keys` as `Quarantine / Shred`. They must be moved to an offline vault and instantly destroyed from the workspace.
+
+> * **The Archive Rules**: Flagged all structural matrixes and legacy realm registries (e.g., `qios_rules_v1_1.csv`, `realms_registry.csv`) as preservation-only since they've already been translated into the modern YAML registries.
+
+> * **The Migration Targets**: All genuine contacts, accounting data (COA, transactions), messaging histories, and blueprint memories are officially routed to their specific staging zone tables for processing.
+
+> 
+
 > I have updated the MkDocs navigation structure to reflect these new planning documents. The environment is now perfectly prepped. Let me know when you're ready to proceed to the Supabase staging code generation prompt to actually spin up these staging buckets!
 
 ### Assistant
@@ -1746,55 +1768,104 @@ canonical_ref: ""
 > If you want, I’ll turn those into a **ranked Open Code task pack** with exact dependency order and copy-paste prompts.
 
 ### User
-> Edited directory_tree.md
-> Ran command: `Get-ChildItem -Path C:\QiLabs\_QiOne_MonoRepo -Filter .env* -Recurse | Select-Object FullName | ConvertTo-Json`
-> Listed directory admin-portal
-> Viewed .env:1-2
-> Viewed .env:1-4
-> Searched for "SUPABASE_SERVICE_ROLE_KEY"
-> Ran command: `gci env: | select name, value | convertto-json`
-> Ran command: `python -c "import supabase; print(supabase.__version__)"`
-> Viewed main.py:1-184
-> Ran command: `npx supabase status`
-> Edited main.py
-> Ran command: `python -m py_compile main.py`
-> 
-> ### PHASE D — FINISH THE BACKEND WRITE PATH
-> 
-> 1. **Wired Supabase Backend:**
->    * Modified `python/qiarchive/api/main.py`. Inserted `create_client` using `os.environ.get("NEXT_PUBLIC_SUPABASE_URL")` (or `VITE_SUPABASE_URL`) and `SUPABASE_SERVICE_ROLE_KEY`.
-> 2. **Real Mutation Logic:**
->    * Replaced the TODO markers in `admin_mutate()` with a real `supabase.table(table).update(updates).eq('id', record_id).execute()` operation to handle any approved canonical writes (`qione.tenants`, `qione.member_roles`, `qione.tenant_modules`, etc.).
->    * Replaced the TODO markers in `admin_invite_user()` with `supabase.auth.admin.invite_user_by_email()`, directly followed by an insert into `qione.tenant_members` to map the new ID to the given tenant and role.
-> 3. **Audit Implementation:**
->    * Configured an explicit schema insert to `qisys.system_events` immediately following the above mutating operations, pushing `{event_type, source, severity, payload}`.
-> 4. **TODO Markers:** 
->    * All mutation-related string pseudo-code markers removed. Server cleanly sets `{"status": "success", "audited": True}`.
-> 
-> ---
-> 
-> ### PHASE E — RUN AND VERIFY
-> 
-> **Status:** UNVERIFIED 
-> **Blocker:** Missing `SUPABASE_SERVICE_ROLE_KEY`.
-> 
-> I actively searched the local environment, `.env` files (via `grep_search`), and the active Windows PowerShell runtime (`gci env:`) for `SUPABASE_SERVICE_ROLE_KEY`. While the frontend possesses `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, the service role key indispensable for safely hitting the Python backend's `supabase.auth.admin` and bypassing RLS does not exist on this machine. Furthermore, attempting to parse the local keys via `npx supabase status` threw a compromised dependency lock script exception (`npm error code ECOMPROMISED`).
-> 
-> **Because the backend lacks the service role key required to instantiate its database client, I cannot execute the complete network roundtrip and mutate the Supabase instance as mandated.**
-> 
-> ---
-> 
-> ### PHASE F — RETURN PROOF, NOT CLAIMS
-> 
-> 1. **Exact commands run:**
->    * `python -c "import supabase; print(supabase.__version__)"` (Confirmed module `2.24.0` exists).
->    * `npx supabase status` (Failed - npm lock error)
->    * `gci env: | select name, value` (Confirmed `SUPABASE_SERVICE_ROLE_KEY` is completely missing from the host environment shell).
-> 2. **Exact endpoints hit:** Unverified. Designed to hit `http://localhost:8000/admin/mutate`.
-> 3. **Exact mutation tested:** Unverified.
-> 4. **Exact table affected:** Unverified. Designed for `qione.tenants` and `qione.tenant_members`.
-> 5. **Exact audit entry written:** Unverified. Designed for `qisys.system_events`.
-> 6. **Exact remaining blocker:**
+> Edited directory_tree.md
+
+> Ran command: `Get-ChildItem -Path C:\QiLabs\_QiOne_MonoRepo -Filter .env* -Recurse | Select-Object FullName | ConvertTo-Json`
+
+> Listed directory admin-portal
+
+> Viewed .env:1-2
+
+> Viewed .env:1-4
+
+> Searched for "SUPABASE_SERVICE_ROLE_KEY"
+
+> Ran command: `gci env: | select name, value | convertto-json`
+
+> Ran command: `python -c "import supabase; print(supabase.__version__)"`
+
+> Viewed main.py:1-184
+
+> Ran command: `npx supabase status`
+
+> Edited main.py
+
+> Ran command: `python -m py_compile main.py`
+
+> 
+
+> ### PHASE D — FINISH THE BACKEND WRITE PATH
+
+> 
+
+> 1. **Wired Supabase Backend:**
+
+>    * Modified `python/qiarchive/api/main.py`. Inserted `create_client` using `os.environ.get("NEXT_PUBLIC_SUPABASE_URL")` (or `VITE_SUPABASE_URL`) and `SUPABASE_SERVICE_ROLE_KEY`.
+
+> 2. **Real Mutation Logic:**
+
+>    * Replaced the TODO markers in `admin_mutate()` with a real `supabase.table(table).update(updates).eq('id', record_id).execute()` operation to handle any approved canonical writes (`qione.tenants`, `qione.member_roles`, `qione.tenant_modules`, etc.).
+
+>    * Replaced the TODO markers in `admin_invite_user()` with `supabase.auth.admin.invite_user_by_email()`, directly followed by an insert into `qione.tenant_members` to map the new ID to the given tenant and role.
+
+> 3. **Audit Implementation:**
+
+>    * Configured an explicit schema insert to `qisys.system_events` immediately following the above mutating operations, pushing `{event_type, source, severity, payload}`.
+
+> 4. **TODO Markers:** 
+
+>    * All mutation-related string pseudo-code markers removed. Server cleanly sets `{"status": "success", "audited": True}`.
+
+> 
+
+> ---
+
+> 
+
+> ### PHASE E — RUN AND VERIFY
+
+> 
+
+> **Status:** UNVERIFIED 
+
+> **Blocker:** Missing `SUPABASE_SERVICE_ROLE_KEY`.
+
+> 
+
+> I actively searched the local environment, `.env` files (via `grep_search`), and the active Windows PowerShell runtime (`gci env:`) for `SUPABASE_SERVICE_ROLE_KEY`. While the frontend possesses `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`, the service role key indispensable for safely hitting the Python backend's `supabase.auth.admin` and bypassing RLS does not exist on this machine. Furthermore, attempting to parse the local keys via `npx supabase status` threw a compromised dependency lock script exception (`npm error code ECOMPROMISED`).
+
+> 
+
+> **Because the backend lacks the service role key required to instantiate its database client, I cannot execute the complete network roundtrip and mutate the Supabase instance as mandated.**
+
+> 
+
+> ---
+
+> 
+
+> ### PHASE F — RETURN PROOF, NOT CLAIMS
+
+> 
+
+> 1. **Exact commands run:**
+
+>    * `python -c "import supabase; print(supabase.__version__)"` (Confirmed module `2.24.0` exists).
+
+>    * `npx supabase status` (Failed - npm lock error)
+
+>    * `gci env: | select name, value` (Confirmed `SUPABASE_SERVICE_ROLE_KEY` is completely missing from the host environment shell).
+
+> 2. **Exact endpoints hit:** Unverified. Designed to hit `http://localhost:8000/admin/mutate`.
+
+> 3. **Exact mutation tested:** Unverified.
+
+> 4. **Exact table affected:** Unverified. Designed for `qione.tenants` and `qione.tenant_members`.
+
+> 5. **Exact audit entry written:** Unverified. Designed for `qisys.system_events`.
+
+> 6. **Exact remaining blocker:**
+
 >    * The Python local control plane requires `SUPABASE_SERVICE_ROLE_KEY` to be passed to its running environment (e.g., via a `.env` in `python/qiarchive/api/`, or exported in your shell) to boot up the Supabase Client. Without this, the `get_supabase()` wrapper will throw a 500 configuration abort, blocking the write cycle.
 
 ### Assistant
@@ -1955,37 +2026,68 @@ canonical_ref: ""
 > Do **not** paste the service role key in chat.
 
 ### User
-> Edited .env
-> Edited supabase.ts
-> Edited mcp_config.json
-> 
-> I have implemented the config adjustments using the provided connection payload from Supabase. I have injected the new `VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY` into `apps/admin-portal/.env` and updated `src/lib/supabase.ts` to consume it. I also set up the new `mcp_config.json` inside your Antigravity cache so the AI can securely use the Supabase MCP integration moving forward.
-> 
-> However, the full backend write cycle remains **unverified** and blocked due to missing credentials.
-> 
-> ### PHASE D — FINISH THE BACKEND WRITE PATH
-> *   **Wired Supabase Client:** `main.py` now specifically tries to connect using `os.environ.get("SUPABASE_SERVICE_ROLE_KEY")`.
-> *   **Vite Connect:** `apps/admin-portal/.env` and `supabase.ts` are wired using your newly provided `sb_publishable_` default key.
-> *   **Audit Logging:** `main.py` is fully programmed to push to `qisys.system_events` but cannot currently verify success.
-> 
-> ### PHASE E — RUN AND VERIFY (UNVERIFIED)
-> *   **Dependency Installation:** Still required on your local machine (`cd apps/admin-portal && npm install`).
-> *   **Start Admin App:** Unverified. 
-> *   **Start Python API:** Starts cleanly and passes syntax checks, but fails on any endpoint hit due to the 500 error below.
-> *   **Verify Auth Login / Tenant Read / Mutations:** Unverified. 
-> 
-> ### PHASE F — RETURN PROOF
-> 1. **Exact commands run:**
->    * Configured `mcp_config.json` locally on the host. 
->    * Mutated `apps/admin-portal/.env` and `supabase.ts`.
-> 2. **Exact endpoints hit:** Unverified.
-> 3. **Exact mutation tested:** Unverified.
-> 4. **Exact table affected:** Unverified.
-> 5. **Exact audit entry written:** Unverified.
-> 6. **Exact remaining blocker:**
->    * **Missing Password & Service Key:** You provided the raw postgres string `postgresql://postgres:[YOUR-PASSWORD]@db.jneuyvckqeymsrqmrobh.supabase.co:5432/postgres`. Because the exact password was left as the `[YOUR-PASSWORD]` placeholder, and no actual `SUPABASE_SERVICE_ROLE_KEY` was provided for the Python backend `main.py` to use, the elevated transaction will immediately fail. 
->    * **MCP Restart Required:** Because the `mcp_config.json` was just modified, Antigravity requires an explicit restart from your end to complete the OAuth flow.
-> 
+> Edited .env
+
+> Edited supabase.ts
+
+> Edited mcp_config.json
+
+> 
+
+> I have implemented the config adjustments using the provided connection payload from Supabase. I have injected the new `VITE_SUPABASE_PUBLISHABLE_DEFAULT_KEY` into `apps/admin-portal/.env` and updated `src/lib/supabase.ts` to consume it. I also set up the new `mcp_config.json` inside your Antigravity cache so the AI can securely use the Supabase MCP integration moving forward.
+
+> 
+
+> However, the full backend write cycle remains **unverified** and blocked due to missing credentials.
+
+> 
+
+> ### PHASE D — FINISH THE BACKEND WRITE PATH
+
+> *   **Wired Supabase Client:** `main.py` now specifically tries to connect using `os.environ.get("SUPABASE_SERVICE_ROLE_KEY")`.
+
+> *   **Vite Connect:** `apps/admin-portal/.env` and `supabase.ts` are wired using your newly provided `sb_publishable_` default key.
+
+> *   **Audit Logging:** `main.py` is fully programmed to push to `qisys.system_events` but cannot currently verify success.
+
+> 
+
+> ### PHASE E — RUN AND VERIFY (UNVERIFIED)
+
+> *   **Dependency Installation:** Still required on your local machine (`cd apps/admin-portal && npm install`).
+
+> *   **Start Admin App:** Unverified. 
+
+> *   **Start Python API:** Starts cleanly and passes syntax checks, but fails on any endpoint hit due to the 500 error below.
+
+> *   **Verify Auth Login / Tenant Read / Mutations:** Unverified. 
+
+> 
+
+> ### PHASE F — RETURN PROOF
+
+> 1. **Exact commands run:**
+
+>    * Configured `mcp_config.json` locally on the host. 
+
+>    * Mutated `apps/admin-portal/.env` and `supabase.ts`.
+
+> 2. **Exact endpoints hit:** Unverified.
+
+> 3. **Exact mutation tested:** Unverified.
+
+> 4. **Exact table affected:** Unverified.
+
+> 5. **Exact audit entry written:** Unverified.
+
+> 6. **Exact remaining blocker:**
+
+>    * **Missing Password & Service Key:** You provided the raw postgres string `postgresql://postgres:[YOUR-PASSWORD]@db.jneuyvckqeymsrqmrobh.supabase.co:5432/postgres`. Because the exact password was left as the `[YOUR-PASSWORD]` placeholder, and no actual `SUPABASE_SERVICE_ROLE_KEY` was provided for the Python backend `main.py` to use, the elevated transaction will immediately fail. 
+
+>    * **MCP Restart Required:** Because the `mcp_config.json` was just modified, Antigravity requires an explicit restart from your end to complete the OAuth flow.
+
+> 
+
 > Please inject the actual `SUPABASE_SERVICE_ROLE_KEY` into the python `.env` payload or provide the PostgreSQL password so I can hit the database securely and test the admin end-to-end integration as mandated.
 
 ### Assistant
@@ -2114,40 +2216,74 @@ canonical_ref: ""
 > Everything else is side dressing.
 
 ### User
-> Viewed .env:1-126
-> Edited .env
-> Edited main.py
-> 
-> Stop touching frontend creds and stop asking for the raw Postgres password.
-> 
-> Clarification:
-> - frontend/browser uses publishable key only
-> - backend Python admin mutation path uses SUPABASE_SERVICE_ROLE_KEY
-> - raw Postgres password is not the credential we need for the current Supabase admin/auth flow
-> 
-> **exact backend env vars expected:**
-> `SUPABASE_URL`
-> `SUPABASE_SERVICE_ROLE_KEY`
-> 
-> **exact file/path loading them:**
-> `C:\QiLabs\_QiOne_MonoRepo\python\qiarchive\api\.env` (loaded natively via `dotenv` in `main.py`)
-> 
-> **exact commands run:**
-> None. (Execution path aborts immediately prior to Python boot due to missing functional secrets).
-> 
-> **exact endpoint hit:**
-> Unverified. Designed for `POST http://localhost:8000/admin/mutate`.
-> 
-> **exact payload used:**
-> Unverified. Designed for `{"table": "qione.tenants", "record_id": "[uuid]", "updates": {"name": "Test Tenant"}}`.
-> 
-> **exact row changed:**
-> Unverified.
-> 
-> **exact audit row written:**
-> Unverified.
-> 
-> **exact remaining blocker if failure occurs:**
+> Viewed .env:1-126
+
+> Edited .env
+
+> Edited main.py
+
+> 
+
+> Stop touching frontend creds and stop asking for the raw Postgres password.
+
+> 
+
+> Clarification:
+
+> - frontend/browser uses publishable key only
+
+> - backend Python admin mutation path uses SUPABASE_SERVICE_ROLE_KEY
+
+> - raw Postgres password is not the credential we need for the current Supabase admin/auth flow
+
+> 
+
+> **exact backend env vars expected:**
+
+> `SUPABASE_URL`
+
+> `SUPABASE_SERVICE_ROLE_KEY`
+
+> 
+
+> **exact file/path loading them:**
+
+> `C:\QiLabs\_QiOne_MonoRepo\python\qiarchive\api\.env` (loaded natively via `dotenv` in `main.py`)
+
+> 
+
+> **exact commands run:**
+
+> None. (Execution path aborts immediately prior to Python boot due to missing functional secrets).
+
+> 
+
+> **exact endpoint hit:**
+
+> Unverified. Designed for `POST http://localhost:8000/admin/mutate`.
+
+> 
+
+> **exact payload used:**
+
+> Unverified. Designed for `{"table": "qione.tenants", "record_id": "[uuid]", "updates": {"name": "Test Tenant"}}`.
+
+> 
+
+> **exact row changed:**
+
+> Unverified.
+
+> 
+
+> **exact audit row written:**
+
+> Unverified.
+
+> 
+
+> **exact remaining blocker if failure occurs:**
+
 > The `python/qiarchive/api/.env` file currently contains the literal placeholder string `YOUR_ACTUAL_SERVICE_ROLE_KEY`. Because you correctly withheld pasting the real service role key into this chat or in the workspace, I cannot boot the Python backend or complete the write cycle. You must manually paste your real `SUPABASE_SERVICE_ROLE_KEY` into `C:\QiLabs\_QiOne_MonoRepo\python\qiarchive\api\.env` so the backend can bypass RLS securely and write the audit event.
 
 ### Assistant
@@ -2254,24 +2390,42 @@ canonical_ref: ""
 > After you paste the key and the IDE runs verification, bring me that result and I’ll tell you whether it actually passes or if it’s still lying.
 
 ### User
-> i noticed in .legacy we have some folders trying to be differnt things when thye are essenitally the same thing, like qistory, qsaysit and qsjournal, well qjournal if the personal notes of q that make qsays it an dqiarchive to maybe they are part of a larger qihistory then components or features, also qinode, qinote and qiobjects are trying ot occompliah the same thing.  heres the ides response. Viewed .gitignore
-> Edited .gitignore
-> 
-> The `.env` files are now securely gitignored globally. I have ensured `python/qiarchive/api/.env`, `.env`, and `.env.*` are explicitly listed in `C:\QiLabs\_QiOne_MonoRepo\.gitignore`.
-> 
-> I have confirmed that `main.py` rigidly expects:
-> *   `SUPABASE_URL`
-> *   `SUPABASE_SERVICE_ROLE_KEY`
-> 
-> I am ready to perform the exact, sequential verification tests you outlined (starting with `qione.tenants` -> `qisys.system_events` -> `tenant_members` -> etc.).
-> 
-> **However, I am the IDE (the AI), and you did not provide the actual `SUPABASE_SERVICE_ROLE_KEY` in your message.**
-> 
-> Because `python/qiarchive/api/.env` still literally contains `YOUR_ACTUAL_SERVICE_ROLE_KEY`, any attempt to boot the API and run the verification will instantly fail the boot check I wrote in `main.py`.
-> 
-> **exact remaining blocker if failure occurs:**
-> I cannot run the tests until you manually open `C:\QiLabs\_QiOne_MonoRepo\python\qiarchive\api\.env` on your local machine and paste the true `SUPABASE_SERVICE_ROLE_KEY`.
-> 
+> i noticed in .legacy we have some folders trying to be differnt things when thye are essenitally the same thing, like qistory, qsaysit and qsjournal, well qjournal if the personal notes of q that make qsays it an dqiarchive to maybe they are part of a larger qihistory then components or features, also qinode, qinote and qiobjects are trying ot occompliah the same thing.  heres the ides response. Viewed .gitignore
+
+> Edited .gitignore
+
+> 
+
+> The `.env` files are now securely gitignored globally. I have ensured `python/qiarchive/api/.env`, `.env`, and `.env.*` are explicitly listed in `C:\QiLabs\_QiOne_MonoRepo\.gitignore`.
+
+> 
+
+> I have confirmed that `main.py` rigidly expects:
+
+> *   `SUPABASE_URL`
+
+> *   `SUPABASE_SERVICE_ROLE_KEY`
+
+> 
+
+> I am ready to perform the exact, sequential verification tests you outlined (starting with `qione.tenants` -> `qisys.system_events` -> `tenant_members` -> etc.).
+
+> 
+
+> **However, I am the IDE (the AI), and you did not provide the actual `SUPABASE_SERVICE_ROLE_KEY` in your message.**
+
+> 
+
+> Because `python/qiarchive/api/.env` still literally contains `YOUR_ACTUAL_SERVICE_ROLE_KEY`, any attempt to boot the API and run the verification will instantly fail the boot check I wrote in `main.py`.
+
+> 
+
+> **exact remaining blocker if failure occurs:**
+
+> I cannot run the tests until you manually open `C:\QiLabs\_QiOne_MonoRepo\python\qiarchive\api\.env` on your local machine and paste the true `SUPABASE_SERVICE_ROLE_KEY`.
+
+> 
+
 > Once you paste the real key into that file, reply here to authorize me to explicitly boot the servers and execute the test suite starting with the `qione.tenants` mutation.
 
 ### Assistant
@@ -26080,10492 +26234,20978 @@ canonical_ref: ""
 > If you want, next move is I turn this into a **full relocation map** with old path → new path for every one of those names.
 
 ### User
-> but remember all the front end parts would be modules inside qione portal no there own apps, so how do we reconcile that. ?```markdown
-> . 📂 QiLabs
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> └── 📂 _qios_master_blueprint/
-> │  └── 📂 assets/
-> │    ├── 📄 _QiOS_Master_Document.jpg
-> │    └── 📂 diagrams/
-> │    └── 📂 tables/
-> │  └── 📂 docs/
-> │    └── 📂 00_genesis/
-> │    └── 📂 01_governance/
-> │      ├── 📄 agent_rules.md
-> │      ├── 📄 decisions.md
-> │      ├── 📄 index.md
-> │      ├── 📄 policies.md
-> │      ├── 📄 principles.md
-> │      ├── 📄 registry.md
-> │      ├── 📄 standards.md
-> │    └── 📂 02_architecture/
-> │      ├── 📄 component_map.md
-> │      ├── 📄 data_flow.md
-> │      ├── 📄 device_model.md
-> │      ├── 📄 identity.md
-> │      ├── 📄 index.md
-> │      ├── 📄 runtime_zones.md
-> │      ├── 📄 service_boundaries.md
-> │      ├── 📄 system_model.md
-> │    └── 📂 03_structure/
-> │      ├── 📄 bands.md
-> │      ├── 📄 directory_tree.md
-> │      ├── 📄 domains.md
-> │      ├── 📄 index.md
-> │      ├── 📄 namespace_registry.md
-> │      ├── 📄 object_model.md
-> │      ├── 📄 placement_rules.md
-> │      ├── 📄 subdomains.md
-> │    └── 📂 04_data/
-> │      ├── 📄 exports.md
-> │      ├── 📄 index.md
-> │      ├── 📄 metadata.md
-> │      ├── 📄 objects.md
-> │      ├── 📄 qievidence.md
-> │      ├── 📄 schema.md
-> │      ├── 📄 storage.md
-> │    └── 📂 05_compute/
-> │      ├── 📄 apis.md
-> │      ├── 📄 index.md
-> │      ├── 📄 integrations.md
-> │      ├── 📄 pipelines.md
-> │      ├── 📄 runtime.md
-> │      ├── 📄 tech_stack.md
-> │      ├── 📄 workers.md
-> │    └── 📂 06_applications/
-> │      ├── 📄 admin.md
-> │      ├── 📄 index.md
-> │      ├── 📄 interfaces.md
-> │      ├── 📄 portal.md
-> │      ├── 📄 tools.md
-> │      ├── 📄 web.md
-> │    └── 📂 07_operations/
-> │      ├── 📄 cases.md
-> │      ├── 📄 clients.md
-> │      ├── 📄 finance.md
-> │      ├── 📄 index.md
-> │      ├── 📄 products.md
-> │      ├── 📄 templates.md
-> │    └── 📂 adr/
-> │      ├── 📄 ADR-0000_template.md
-> │      ├── 📄 ADR-0001_blueprint_scope.md
-> │      ├── 📄 ADR-0002_single_domain_rule.md
-> │      ├── 📄 ADR-0003_band_model.md
-> │      ├── 📄 ADR-0004_qilabs_root.md
-> │      ├── 📄 ADR-0005_fleet_orchestration.md
-> │      ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
-> │      ├── 📄 update-adr.md
-> │    └── 📂 appendices/
-> │      ├── 📄 changelog.md
-> │      ├── 📄 glossary.md
-> │      ├── 📄 legacy_csv_inventory.json
-> │      ├── 📄 legacy_csv_migration_plan.md
-> │      ├── 📄 legacy_salvage.md
-> │      ├── 📄 migration_notes.md
-> │    ├── 📄 index.md
-> │    ├── 📄 markmind.html
-> │    └── 📂 stylesheets/
-> │      ├── 📄 extra.css
-> │    └── 📂 templates/
-> │      ├── 📄 README.md
-> │      ├── 📄 artifact_template.md
-> │      ├── 📄 note_template.md
-> │  ├── 📄 main.py
-> │  ├── 📄 mkdocs.yml
-> │  └── 📂 overrides/
-> │    ├── 📄 home.html
-> │  └── 📂 registry/
-> │    ├── 📄 band_registry.yaml
-> │    ├── 📄 deprecation_registry.yaml
-> │    ├── 📄 domain_registry.yaml
-> │    ├── 📄 folder_registry.yaml
-> │    ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │    ├── 📄 qios_05_Cursor_and_naming.canvas
-> │    ├── 📄 realms_registry.yaml
-> │    ├── 📄 sensitivity_classification.yaml
-> │    ├── 📄 subdomain_registry.yaml
-> │    ├── 📄 workspace_realms.yaml
-> │  └── 📂 schemas/
-> │    ├── 📄 band_registry.schema.json
-> │    ├── 📄 qievidence.sql
-> │  └── 📂 scripts/
-> │    ├── 📄 enforce_structure.py
-> │  └── 📂 standards/
-> │    ├── 📄 content_metadata_profile.yaml
-> │    ├── 📄 metadata_rules.yaml
-> │    ├── 📄 naming_rules.yaml
-> │    ├── 📄 pdf_standards.yaml
-> │    ├── 📄 repo_rules.yaml
-> │    ├── 📄 strict-compliance.md
-> └── 📂 apps/
-> │  └── 📂 Labs/
-> │    └── 📂 Atrium/
-> │      ├── 📄 CHANGELOG.md
-> │      ├── 📄 CLAUDE.md
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 SECURITY_AUDIT.md
-> │      └── 📂 apps/
-> │        └── 📂 api/
-> │          ├── 📄 nest-cli.json
-> │          ├── 📄 package.json
-> │          └── 📂 src/
-> │            └── 📂 account/
-> │              ├── 📄 account.controller.ts
-> │              ├── 📄 account.module.ts
-> │              ├── 📄 account.service.spec.ts
-> │              ├── 📄 account.service.ts
-> │              ├── 📄 user-only-auth.guard.ts
-> │            └── 📂 activity/
-> │              ├── 📄 activity.module.ts
-> │              ├── 📄 activity.service.ts
-> │            ├── 📄 app.module.ts
-> │            └── 📂 auth/
-> │              ├── 📄 auth.controller.ts
-> │              ├── 📄 auth.module.ts
-> │              ├── 📄 auth.service.ts
-> │              ├── 📄 session.middleware.ts
-> │            └── 📂 billing/
-> │              ├── 📄 billing.controller.ts
-> │              ├── 📄 billing.dto.ts
-> │              ├── 📄 billing.module.ts
-> │              ├── 📄 billing.service.spec.ts
-> │              ├── 📄 billing.service.ts
-> │              ├── 📄 stripe.service.ts
-> │              ├── 📄 webhook.controller.ts
-> │            └── 📂 branding/
-> │              ├── 📄 branding.controller.ts
-> │              ├── 📄 branding.dto.ts
-> │              ├── 📄 branding.module.ts
-> │              ├── 📄 branding.service.spec.ts
-> │              ├── 📄 branding.service.ts
-> │            └── 📂 clients/
-> │              ├── 📄 client-profile.dto.ts
-> │              ├── 📄 clients.controller.ts
-> │              ├── 📄 clients.dto.ts
-> │              ├── 📄 clients.module.ts
-> │              ├── 📄 clients.service.spec.ts
-> │              ├── 📄 clients.service.ts
-> │            └── 📂 comments/
-> │              ├── 📄 comments.controller.ts
-> │              ├── 📄 comments.dto.ts
-> │              ├── 📄 comments.module.ts
-> │              ├── 📄 comments.service.spec.ts
-> │              ├── 📄 comments.service.ts
-> │            └── 📂 common/
-> │              └── 📂 decorators/
-> │                ├── 📄 current-member.decorator.ts
-> │                ├── 📄 current-org.decorator.ts
-> │                ├── 📄 current-user.decorator.ts
-> │                ├── 📄 plan-limit.decorator.ts
-> │                ├── 📄 public.decorator.ts
-> │                ├── 📄 roles.decorator.ts
-> │              └── 📂 dto/
-> │                ├── 📄 pagination.dto.ts
-> │              └── 📂 filters/
-> │                ├── 📄 http-exception.filter.ts
-> │              └── 📂 guards/
-> │                ├── 📄 auth.guard.spec.ts
-> │                ├── 📄 auth.guard.ts
-> │                ├── 📄 csrf.guard.spec.ts
-> │                ├── 📄 csrf.guard.ts
-> │                ├── 📄 plan.guard.spec.ts
-> │                ├── 📄 plan.guard.ts
-> │                ├── 📄 roles.guard.spec.ts
-> │                ├── 📄 roles.guard.ts
-> │              └── 📂 helpers/
-> │                ├── 📄 assert-project-access.ts
-> │                ├── 📄 paginate.ts
-> │              ├── 📄 index.ts
-> │              └── 📂 types/
-> │                ├── 📄 authenticated-request.ts
-> │              └── 📂 utils/
-> │                ├── 📄 blocked-extensions.ts
-> │                ├── 📄 csv.spec.ts
-> │                ├── 📄 csv.ts
-> │                ├── 📄 sanitize.spec.ts
-> │                ├── 📄 sanitize.ts
-> │            └── 📂 documents/
-> │              ├── 📄 document-audit.service.ts
-> │              ├── 📄 document-expiry.task.ts
-> │              ├── 📄 document-reminder.task.ts
-> │              ├── 📄 document-token-cleanup.task.ts
-> │              ├── 📄 documents.controller.ts
-> │              ├── 📄 documents.dto.ts
-> │              ├── 📄 documents.module.ts
-> │              ├── 📄 documents.service.spec.ts
-> │              ├── 📄 documents.service.ts
-> │            └── 📂 files/
-> │              ├── 📄 files.controller.ts
-> │              ├── 📄 files.module.ts
-> │              ├── 📄 files.service.spec.ts
-> │              ├── 📄 files.service.ts
-> │              └── 📂 storage/
-> │                ├── 📄 local.storage.spec.ts
-> │                ├── 📄 local.storage.ts
-> │                ├── 📄 minio.storage.ts
-> │                ├── 📄 r2.storage.ts
-> │                ├── 📄 s3.storage.ts
-> │                ├── 📄 storage.interface.ts
-> │            ├── 📄 health.controller.spec.ts
-> │            ├── 📄 health.controller.ts
-> │            └── 📂 invoices/
-> │              ├── 📄 invoice-overdue.task.spec.ts
-> │              ├── 📄 invoice-overdue.task.ts
-> │              ├── 📄 invoice-pdf.service.spec.ts
-> │              ├── 📄 invoice-pdf.service.ts
-> │              ├── 📄 invoices.controller.ts
-> │              ├── 📄 invoices.dto.ts
-> │              ├── 📄 invoices.module.ts
-> │              ├── 📄 invoices.service.spec.ts
-> │              ├── 📄 invoices.service.ts
-> │            └── 📂 labels/
-> │              ├── 📄 labels.controller.ts
-> │              ├── 📄 labels.dto.ts
-> │              ├── 📄 labels.module.ts
-> │              ├── 📄 labels.service.spec.ts
-> │              ├── 📄 labels.service.ts
-> │            └── 📂 mail/
-> │              ├── 📄 mail.module.ts
-> │              ├── 📄 mail.service.spec.ts
-> │              ├── 📄 mail.service.ts
-> │            ├── 📄 main.ts
-> │            └── 📂 notes/
-> │              ├── 📄 notes.controller.ts
-> │              ├── 📄 notes.dto.ts
-> │              ├── 📄 notes.module.ts
-> │              ├── 📄 notes.service.ts
-> │            └── 📂 notifications/
-> │              ├── 📄 in-app-notifications.controller.ts
-> │              ├── 📄 in-app-notifications.dto.ts
-> │              ├── 📄 in-app-notifications.service.spec.ts
-> │              ├── 📄 in-app-notifications.service.ts
-> │              ├── 📄 notifications.module.ts
-> │              ├── 📄 notifications.service.spec.ts
-> │              ├── 📄 notifications.service.ts
-> │              ├── 📄 push.controller.ts
-> │              ├── 📄 push.service.ts
-> │            └── 📂 onboarding/
-> │              ├── 📄 onboarding.controller.ts
-> │              ├── 📄 onboarding.module.ts
-> │              ├── 📄 signup.dto.ts
-> │            └── 📂 prisma/
-> │              ├── 📄 prisma.module.ts
-> │              ├── 📄 prisma.service.ts
-> │            └── 📂 projects/
-> │              ├── 📄 projects.controller.ts
-> │              ├── 📄 projects.dto.ts
-> │              ├── 📄 projects.module.ts
-> │              ├── 📄 projects.service.spec.ts
-> │              ├── 📄 projects.service.ts
-> │            └── 📂 settings/
-> │              ├── 📄 settings.controller.ts
-> │              ├── 📄 settings.dto.spec.ts
-> │              ├── 📄 settings.dto.ts
-> │              ├── 📄 settings.module.ts
-> │              ├── 📄 settings.service.spec.ts
-> │              ├── 📄 settings.service.ts
-> │            └── 📂 setup/
-> │              ├── 📄 setup.controller.spec.ts
-> │              ├── 📄 setup.controller.ts
-> │              ├── 📄 setup.dto.ts
-> │              ├── 📄 setup.module.ts
-> │              ├── 📄 setup.service.ts
-> │            └── 📂 tasks/
-> │              ├── 📄 tasks.controller.ts
-> │              ├── 📄 tasks.dto.ts
-> │              ├── 📄 tasks.module.ts
-> │              ├── 📄 tasks.service.ts
-> │            └── 📂 updates/
-> │              ├── 📄 updates.controller.ts
-> │              ├── 📄 updates.dto.ts
-> │              ├── 📄 updates.module.ts
-> │              ├── 📄 updates.service.ts
-> │          ├── 📄 tsconfig.json
-> │        └── 📂 web/
-> │          ├── 📄 CHANGELOG.md
-> │          ├── 📄 next-env.d.ts
-> │          ├── 📄 next.config.ts
-> │          ├── 📄 package.json
-> │          ├── 📄 postcss.config.mjs
-> │          └── 📂 public/
-> │            ├── 📄 icon.png
-> │            ├── 📄 sw.js
-> │          └── 📂 src/
-> │            └── 📂 app/
-> │              └── 📂 (auth)/
-> │                └── 📂 accept-invite/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 forgot-password/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 login/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 reset-password/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 signup/
-> │                  ├── 📄 page.tsx
-> │                └── 📂 verify-email/
-> │                  ├── 📄 page.tsx
-> │              └── 📂 (dashboard)/
-> │                └── 📂 dashboard/
-> │                  └── 📂 changelog/
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 clients/
-> │                    ├── 📄 page.tsx
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 projects/
-> │                    └── 📂 [id]/
-> │                      └── 📂 components/
-> │                        ├── 📄 client-assignment.tsx
-> │                        ├── 📄 files-section.tsx
-> │                        ├── 📄 invoices-section.tsx
-> │                        ├── 📄 notes-section.tsx
-> │                        ├── 📄 status-pipeline.tsx
-> │                        ├── 📄 tasks-section.tsx
-> │                        ├── 📄 updates-section.tsx
-> │                      ├── 📄 page.tsx
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 settings/
-> │                    └── 📂 account/
-> │                      ├── 📄 page.tsx
-> │                    └── 📂 billing/
-> │                      ├── 📄 billing-section.tsx
-> │                      ├── 📄 page.tsx
-> │                    └── 📂 system/
-> │                      ├── 📄 branding-section.tsx
-> │                      ├── 📄 labels-section.tsx
-> │                      ├── 📄 page.tsx
-> │                  └── 📂 team/
-> │                    ├── 📄 page.tsx
-> │                ├── 📄 email-verification-banner.tsx
-> │                ├── 📄 layout.tsx
-> │                ├── 📄 mobile-nav.tsx
-> │                ├── 📄 sidebar-nav.tsx
-> │                ├── 📄 sign-out-button.tsx
-> │              └── 📂 (portal)/
-> │                ├── 📄 layout.tsx
-> │                └── 📂 portal/
-> │                  └── 📂 changelog/
-> │                    ├── 📄 page.tsx
-> │                  ├── 📄 page.tsx
-> │                  └── 📂 projects/
-> │                    └── 📂 [id]/
-> │                      └── 📂 components/
-> │                        ├── 📄 portal-invoices-section.tsx
-> │                      ├── 📄 page.tsx
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 settings/
-> │                    ├── 📄 page.tsx
-> │                  └── 📂 sign/
-> │                    └── 📂 [token]/
-> │                      ├── 📄 page.tsx
-> │                ├── 📄 sign-out-button.tsx
-> │              └── 📂 (setup)/
-> │                ├── 📄 layout.tsx
-> │                └── 📂 setup/
-> │                  ├── 📄 page.tsx
-> │                  ├── 📄 step-complete.tsx
-> │                  ├── 📄 step-email-config.tsx
-> │                  ├── 📄 step-first-project.tsx
-> │                  ├── 📄 step-invite-client.tsx
-> │                  ├── 📄 step-org-profile.tsx
-> │              └── 📂 changelog/
-> │                ├── 📄 page.tsx
-> │              ├── 📄 globals.css
-> │              ├── 📄 layout.tsx
-> │              ├── 📄 page.tsx
-> │              ├── 📄 providers.tsx
-> │            └── 📂 components/
-> │              ├── 📄 changelog.tsx
-> │              ├── 📄 color-patch-grid.tsx
-> │              ├── 📄 comments-section.tsx
-> │              ├── 📄 confirm-modal.tsx
-> │              ├── 📄 document-viewer.tsx
-> │              ├── 📄 dynamic-favicon.tsx
-> │              ├── 📄 label-badge.tsx
-> │              ├── 📄 label-picker.tsx
-> │              ├── 📄 notification-bell.tsx
-> │              ├── 📄 pagination.tsx
-> │              ├── 📄 pdf-viewer.tsx
-> │              ├── 📄 signature-field-placer.tsx
-> │              ├── 📄 signature-pad.tsx
-> │              ├── 📄 signing-viewer.tsx
-> │              ├── 📄 skeletons.tsx
-> │              ├── 📄 toast.tsx
-> │            └── 📂 hooks/
-> │              ├── 📄 use-debounce.ts
-> │            └── 📂 lib/
-> │              ├── 📄 api.ts
-> │              ├── 📄 auth.ts
-> │              ├── 📄 download.ts
-> │              ├── 📄 format.ts
-> │              ├── 📄 linkify.tsx
-> │              ├── 📄 status-colors.ts
-> │              ├── 📄 track.ts
-> │              ├── 📄 utils.ts
-> │            └── 📂 types/
-> │              ├── 📄 global.d.ts
-> │          ├── 📄 tailwind.config.ts
-> │          ├── 📄 tsconfig.json
-> │      ├── 📄 bun.lock
-> │      ├── 📄 bunfig.toml
-> │      └── 📂 docker/
-> │      ├── 📄 docker-compose.dev.yml
-> │      ├── 📄 docker-compose.yml
-> │        ├── 📄 Caddyfile
-> │        ├── 📄 DOCKERHUB.md
-> │        ├── 📄 api-entrypoint.sh
-> │        ├── 📄 api.Dockerfile
-> │        ├── 📄 unified-entrypoint.sh
-> │        ├── 📄 unified.Dockerfile
-> │        ├── 📄 web.Dockerfile
-> │      └── 📂 docs/
-> │        ├── 📄 configuration.md
-> │        ├── 📄 development.md
-> │        ├── 📄 docker.md
-> │        ├── 📄 roadmap.md
-> │        ├── 📄 security.md
-> │        ├── 📄 unraid.md
-> │      └── 📂 e2e/
-> │        ├── 📄 global-setup.ts
-> │        ├── 📄 playwright.config.ts
-> │        └── 📂 tests/
-> │          ├── 📄 accept-invite.e2e.ts
-> │          ├── 📄 account-deletion.e2e.ts
-> │          ├── 📄 activity-feed.e2e.ts
-> │          ├── 📄 auth.e2e.ts
-> │          ├── 📄 billing.e2e.ts
-> │          ├── 📄 branding.e2e.ts
-> │          ├── 📄 client-profiles.e2e.ts
-> │          ├── 📄 comments.e2e.ts
-> │          ├── 📄 csv-export.e2e.ts
-> │          ├── 📄 decision-tasks.e2e.ts
-> │          ├── 📄 documents.e2e.ts
-> │          ├── 📄 email-verification.e2e.ts
-> │          ├── 📄 files.e2e.ts
-> │          ├── 📄 helpers.ts
-> │          ├── 📄 in-app-notifications.e2e.ts
-> │          ├── 📄 invoice-upload.e2e.ts
-> │          ├── 📄 invoices.e2e.ts
-> │          ├── 📄 labels.e2e.ts
-> │          ├── 📄 mobile-nav.e2e.ts
-> │          ├── 📄 notes.e2e.ts
-> │          ├── 📄 notifications.e2e.ts
-> │          ├── 📄 portal-isolation.e2e.ts
-> │          ├── 📄 portal.e2e.ts
-> │          ├── 📄 projects.e2e.ts
-> │          ├── 📄 setup-wizard.e2e.ts
-> │          ├── 📄 system-settings.e2e.ts
-> │          ├── 📄 tasks.e2e.ts
-> │          ├── 📄 team.e2e.ts
-> │      ├── 📄 package.json
-> │      └── 📂 packages/
-> │        └── 📂 database/
-> │          ├── 📄 package.json
-> │          └── 📂 prisma/
-> │            ├── 📄 schema.prisma
-> │          └── 📂 rls/
-> │            ├── 📄 enable-rls.sql
-> │          └── 📂 scripts/
-> │            ├── 📄 apply-rls.ts
-> │            ├── 📄 migrate-clients.ts
-> │            ├── 📄 migrate-document-sent-at.ts
-> │            ├── 📄 migrate-file-documents.ts
-> │          └── 📂 src/
-> │            ├── 📄 index.ts
-> │            ├── 📄 seed.ts
-> │          ├── 📄 tsconfig.json
-> │        └── 📂 email/
-> │          ├── 📄 package.json
-> │          └── 📂 src/
-> │            ├── 📄 index.ts
-> │            └── 📂 templates/
-> │              ├── 📄 decision-closed.tsx
-> │              ├── 📄 document-reminder.tsx
-> │              ├── 📄 document-responded.tsx
-> │              ├── 📄 document-signing-turn.tsx
-> │              ├── 📄 document-uploaded.tsx
-> │              ├── 📄 invitation.tsx
-> │              ├── 📄 invoice-sent.tsx
-> │              ├── 📄 magic-link.tsx
-> │              ├── 📄 project-update.tsx
-> │              ├── 📄 reset-password.tsx
-> │              ├── 📄 task-assigned.tsx
-> │              ├── 📄 verify-email.tsx
-> │              ├── 📄 welcome.tsx
-> │          ├── 📄 tsconfig.json
-> │        └── 📂 shared/
-> │          ├── 📄 package.json
-> │          └── 📂 src/
-> │            ├── 📄 index.ts
-> │          ├── 📄 tsconfig.json
-> │      └── 📂 public/
-> │        ├── 📄 dashboard.png
-> │        ├── 📄 icon.png
-> │        ├── 📄 landing.png
-> │      └── 📂 scripts/
-> │        ├── 📄 dev.ts
-> │        ├── 📄 setup.ts
-> │        ├── 📄 unraid-vm-snapshot.sh
-> │        ├── 📄 update-dockerhub-readme.sh
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 turbo.json
-> │      └── 📂 unraid/
-> │    └── 📂 video-transcriber/
-> │      ├── 📄 video_stt_pipeline.py
-> │  └── 📂 admin-portal/
-> │    ├── 📄 CNAME
-> │    ├── 📄 Dockerfile
-> │    ├── 📄 LICENSE
-> │    ├── 📄 Procfile
-> │    ├── 📄 README.md
-> │    ├── 📄 app.json
-> │    └── 📂 docker/
-> │    ├── 📄 docker-compose.yml
-> │      ├── 📄 Dockerfile-arm32v7
-> │      ├── 📄 Dockerfile-arm64v8
-> │      ├── 📄 Dockerfile-lite
-> │      ├── 📄 Dockerfile-old
-> │      ├── 📄 docker-readme.md
-> │      └── 📂 hooks/
-> │        ├── 📄 pre_build
-> │      ├── 📄 nginx.conf
-> │    └── 📂 docs/
-> │      ├── 📄 alternate-views.md
-> │      └── 📂 assets/
-> │        ├── 📄 CONTRIBUTORS.svg
-> │        ├── 📄 config-editor-demo.gif
-> │        ├── 📄 logo.png
-> │        ├── 📄 minimal-view-demo.gif
-> │        ├── 📄 repo-visualization.svg
-> │        ├── 📄 sponsor-button.svg
-> │        ├── 📄 status-check-demo.gif
-> │        ├── 📄 theme-config-demo.gif
-> │        ├── 📄 theme-slideshow.gif
-> │        ├── 📄 workspace-demo.gif
-> │      ├── 📄 authentication.md
-> │      ├── 📄 backup-restore.md
-> │      ├── 📄 configuring.md
-> │      ├── 📄 contributing.md
-> │      ├── 📄 credits.md
-> │      ├── 📄 deployment.md
-> │      ├── 📄 developing.md
-> │      ├── 📄 development-guides.md
-> │      ├── 📄 icons.md
-> │      ├── 📄 management.md
-> │      ├── 📄 multi-language-support.md
-> │      ├── 📄 pages-and-sections.md
-> │      ├── 📄 privacy.md
-> │      ├── 📄 quick-start.md
-> │      ├── 📄 readme.md
-> │      ├── 📄 release-workflow.md
-> │      ├── 📄 searching.md
-> │      └── 📂 showcase/
-> │      ├── 📄 showcase.md
-> │        ├── 📄 1-home-lab-material.png
-> │        ├── 📄 10-dashy-live.png
-> │        ├── 📄 11-ricky-cz.png
-> │        ├── 📄 12-evo-dashboard.png
-> │        ├── 📄 13-dragons-lair.png
-> │        ├── 📄 2-networking-services-minimal-dark.png
-> │        ├── 📄 3-cft-toolbox.png
-> │        ├── 📄 4-bookmarks-colourful.png
-> │        ├── 📄 5-project-management.png
-> │        ├── 📄 6-nas-home-dashboard.png
-> │        ├── 📄 7-ground-control-dtctek.png
-> │        ├── 📄 8-shadowking001s-dashy.png
-> │        ├── 📄 9-home-lab-oblivion.png
-> │        ├── 📄 readme.md
-> │      ├── 📄 status-indicators.md
-> │      ├── 📄 theming.md
-> │      ├── 📄 troubleshooting.md
-> │      ├── 📄 widgets.md
-> │    ├── 📄 index.html
-> │    ├── 📄 netlify.toml
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 postcss.config.js
-> │    └── 📂 public/
-> │      ├── 📄 favicon.ico
-> │      └── 📂 fonts/
-> │        ├── 📄 Audiowide-Regular.ttf
-> │        ├── 📄 CutiveMono-Regular.ttf
-> │        ├── 📄 Digital-Regular.ttf
-> │        ├── 📄 FrancoisOne-Regular.ttf
-> │        ├── 📄 Podkova-Medium.ttf
-> │        ├── 📄 Roboto-Light.ttf
-> │        ├── 📄 Shrikhand-Regular.ttf
-> │        ├── 📄 Sniglet-Regular.ttf
-> │        ├── 📄 VT323-Regular.ttf
-> │      ├── 📄 index.html
-> │      ├── 📄 initialization.html
-> │      └── 📂 item-icons/
-> │      ├── 📄 loading-screen.css
-> │      ├── 📄 manifest.json
-> │      ├── 📄 robots.txt
-> │      ├── 📄 theme-fonts.css
-> │      └── 📂 web-icons/
-> │        ├── 📄 dashy-logo.png
-> │        ├── 📄 dashy-pwa_144x144.png
-> │        ├── 📄 dashy-pwa_192x192.png
-> │        ├── 📄 dashy-pwa_48x48.png
-> │        ├── 📄 dashy-pwa_512x512.png
-> │        ├── 📄 dashy-pwa_72x72.png
-> │        ├── 📄 dashy-pwa_96x96.png
-> │        ├── 📄 favicon-16x16.png
-> │        ├── 📄 favicon-32x32.png
-> │        ├── 📄 favicon-64x64.png
-> │      └── 📂 widget-resources/
-> │        ├── 📄 WeatherIcons.eot
-> │        ├── 📄 WeatherIcons.svg
-> │        ├── 📄 WeatherIcons.ttf
-> │        ├── 📄 WeatherIcons.woff
-> │        ├── 📄 WeatherIcons.woff2
-> │    └── 📂 qilauncher/
-> │      ├── 📄 App.tsx
-> │      ├── 📄 README.md
-> │      ├── 📄 _readme.md
-> │      └── 📂 api/
-> │        ├── 📄 adminClient.ts
-> │        ├── 📄 client.ts
-> │      └── 📂 components/
-> │        └── 📂 chat/
-> │          ├── 📄 ChatHeader.tsx
-> │          ├── 📄 ChatInput.tsx
-> │          ├── 📄 ChatSidebar.tsx
-> │          ├── 📄 MessageBubble.tsx
-> │          ├── 📄 MessageList.tsx
-> │        └── 📂 dashboard/
-> │          ├── 📄 DeploymentsTable.tsx
-> │          ├── 📄 HealthWidget.tsx
-> │          ├── 📄 PageHeader.tsx
-> │          ├── 📄 QueueWidget.tsx
-> │          ├── 📄 StatCard.tsx
-> │          ├── 📄 WorkersWidget.tsx
-> │        └── 📂 layout/
-> │          ├── 📄 AppLayout.tsx
-> │          ├── 📄 MobileHeader.tsx
-> │          ├── 📄 Sidebar.tsx
-> │        └── 📂 views/
-> │          ├── 📄 HealthView.tsx
-> │          ├── 📄 IngestionQueueView.tsx
-> │          ├── 📄 JobsView.tsx
-> │          ├── 📄 QueueView.tsx
-> │          ├── 📄 SettingsView.tsx
-> │          ├── 📄 WorkersView.tsx
-> │      └── 📂 hooks/
-> │        ├── 📄 useSpeechRecognition.ts
-> │      ├── 📄 index.html
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 README.md
-> │      └── 📂 src/
-> │        ├── 📄 index.css
-> │        ├── 📄 main.jsx
-> │        ├── 📄 tailwind.css
-> │      ├── 📄 styles.css
-> │      ├── 📄 tailwind.config.js
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 tsconfig.node.json
-> │      └── 📂 types/
-> │      ├── 📄 types.ts
-> │        ├── 📄 speech.d.ts
-> │      └── 📂 utils/
-> │        ├── 📄 speech.ts
-> │      ├── 📄 vite.config.js
-> │    ├── 📄 server.js
-> │    └── 📂 services/
-> │      ├── 📄 config-validator.js
-> │      ├── 📄 cors-proxy.js
-> │      ├── 📄 get-user.js
-> │      ├── 📄 healthcheck.js
-> │      ├── 📄 print-message.js
-> │      ├── 📄 rebuild-app.js
-> │      ├── 📄 save-config.js
-> │      └── 📂 serverless-functions/
-> │        ├── 📄 cloud-status-check.js
-> │        ├── 📄 netlify-cors.js
-> │        ├── 📄 not-supported.js
-> │      ├── 📄 ssl-server.js
-> │      ├── 📄 status-check.js
-> │      ├── 📄 system-info.js
-> │      ├── 📄 update-checker.js
-> │    └── 📂 src/
-> │      ├── 📄 App.tsx
-> │      ├── 📄 App.vue
-> │      └── 📂 assets/
-> │        └── 📂 fonts/
-> │          ├── 📄 Inconsolata-Light.ttf
-> │          ├── 📄 PTMono-Regular.ttf
-> │          ├── 📄 Raleway-Variable.ttf
-> │        ├── 📄 index.css
-> │        └── 📂 interface-icons/
-> │          ├── 📄 add-new.svg
-> │          ├── 📄 application-about.svg
-> │          ├── 📄 application-change-view.svg
-> │          ├── 📄 application-home.svg
-> │          ├── 📄 application-minimal.svg
-> │          ├── 📄 application-rebuild.svg
-> │          ├── 📄 application-reload.svg
-> │          ├── 📄 application-workspace.svg
-> │          ├── 📄 back-arrow.svg
-> │          ├── 📄 broken-icon.svg
-> │          ├── 📄 burger-menu.svg
-> │          ├── 📄 cloud-backup-restore.svg
-> │          ├── 📄 config-backup.svg
-> │          ├── 📄 config-cancel.svg
-> │          ├── 📄 config-close.svg
-> │          ├── 📄 config-color-palette.svg
-> │          ├── 📄 config-custom-css.svg
-> │          ├── 📄 config-delete-local.svg
-> │          ├── 📄 config-download-file.svg
-> │          ├── 📄 config-edit-json.svg
-> │          ├── 📄 config-editor.svg
-> │          ├── 📄 config-language.svg
-> │          ├── 📄 config-meta-data.svg
-> │          ├── 📄 config-open-settings.svg
-> │          ├── 📄 config-pages.svg
-> │          ├── 📄 config-restore.svg
-> │          ├── 📄 icon-size-large.svg
-> │          ├── 📄 icon-size-medium.svg
-> │          ├── 📄 icon-size-small.svg
-> │          ├── 📄 interactive-editor-add.svg
-> │          ├── 📄 interactive-editor-app-config.svg
-> │          ├── 📄 interactive-editor-cancel-changes.svg
-> │          ├── 📄 interactive-editor-copy-clipboard.svg
-> │          ├── 📄 interactive-editor-edit-mode.svg
-> │          ├── 📄 interactive-editor-export-changes.svg
-> │          ├── 📄 interactive-editor-move-to.svg
-> │          ├── 📄 interactive-editor-page-info.svg
-> │          ├── 📄 interactive-editor-remove.svg
-> │          ├── 📄 interactive-editor-save-disk.svg
-> │          ├── 📄 interactive-editor-save-locally.svg
-> │          ├── 📄 layout-default.svg
-> │          ├── 📄 layout-horizontal.svg
-> │          ├── 📄 layout-vertical.svg
-> │          ├── 📄 loader.svg
-> │          ├── 📄 open-clipboard.svg
-> │          ├── 📄 open-current-tab.svg
-> │          ├── 📄 open-iframe.svg
-> │          ├── 📄 open-new-tab.svg
-> │          ├── 📄 open-parent.svg
-> │          ├── 📄 open-top.svg
-> │          ├── 📄 open-workspace.svg
-> │          ├── 📄 save-config.svg
-> │          ├── 📄 section-expand-collapse.svg
-> │          ├── 📄 unknown-icon.svg
-> │          ├── 📄 user-logout.svg
-> │          ├── 📄 widget-update.svg
-> │        └── 📂 locales/
-> │          ├── 📄 ar.json
-> │          ├── 📄 bg.json
-> │          ├── 📄 bn.json
-> │          ├── 📄 cs.json
-> │          ├── 📄 da.json
-> │          ├── 📄 de.json
-> │          ├── 📄 el.json
-> │          ├── 📄 en.json
-> │          ├── 📄 es.json
-> │          ├── 📄 fr.json
-> │          ├── 📄 gl.json
-> │          ├── 📄 hi.json
-> │          ├── 📄 hu.json
-> │          ├── 📄 it.json
-> │          ├── 📄 ja.json
-> │          ├── 📄 ko.json
-> │          ├── 📄 ky.json
-> │          ├── 📄 nb.json
-> │          ├── 📄 nl.json
-> │          ├── 📄 pl.json
-> │          ├── 📄 pt.json
-> │          ├── 📄 ro.json
-> │          ├── 📄 ru.json
-> │          ├── 📄 sk.json
-> │          ├── 📄 sl.json
-> │          ├── 📄 sv.json
-> │          ├── 📄 tr.json
-> │          ├── 📄 uk.json
-> │          ├── 📄 zh-CN.json
-> │          ├── 📄 zh-TW.json
-> │          ├── 📄 zz-pirate.json
-> │      └── 📂 components/
-> │        └── 📂 Charts/
-> │          ├── 📄 Gauge.vue
-> │          ├── 📄 PercentageChart.vue
-> │        └── 📂 Configuration/
-> │          ├── 📄 AccessError.vue
-> │          ├── 📄 AppInfoModal.vue
-> │          ├── 📄 AppVersion.vue
-> │          ├── 📄 CloudBackupRestore.vue
-> │          ├── 📄 ConfigContainer.vue
-> │          ├── 📄 CustomCss.vue
-> │          ├── 📄 EditSiteMeta.vue
-> │          ├── 📄 JsonEditor.vue
-> │          ├── 📄 RebuildApp.vue
-> │        └── 📂 FormElements/
-> │          ├── 📄 Button.vue
-> │          ├── 📄 Input.vue
-> │          ├── 📄 Radio.vue
-> │          ├── 📄 Select.vue
-> │          ├── 📄 Toggle.vue
-> │        └── 📂 InteractiveEditor/
-> │          ├── 📄 AddNewSectionLauncher.vue
-> │          ├── 📄 EditAppConfig.vue
-> │          ├── 📄 EditItem.vue
-> │          ├── 📄 EditModeSaveMenu.vue
-> │          ├── 📄 EditModeTopBanner.vue
-> │          ├── 📄 EditMultiPages.vue
-> │          ├── 📄 EditPageInfo.vue
-> │          ├── 📄 EditSection.vue
-> │          ├── 📄 ExportConfigMenu.vue
-> │          ├── 📄 MoveItemTo.vue
-> │          ├── 📄 SaveCancelButtons.vue
-> │        └── 📂 LinkItems/
-> │          ├── 📄 Collapsable.vue
-> │          ├── 📄 IframeModal.vue
-> │          ├── 📄 Item.vue
-> │          ├── 📄 ItemContextMenu.vue
-> │          ├── 📄 ItemIcon.vue
-> │          ├── 📄 ItemOpenMethodIcon.vue
-> │          ├── 📄 Section.vue
-> │          ├── 📄 SectionContextMenu.vue
-> │          ├── 📄 StatusIndicator.vue
-> │          ├── 📄 SubItem.vue
-> │          ├── 📄 SubItemGroup.vue
-> │        └── 📂 MinimalView/
-> │          ├── 📄 MinimalHeading.vue
-> │          ├── 📄 MinimalSearch.vue
-> │          ├── 📄 MinimalSection.vue
-> │        └── 📂 PageStrcture/
-> │          ├── 📄 CriticalError.vue
-> │          ├── 📄 Footer.vue
-> │          ├── 📄 Header.vue
-> │          ├── 📄 LoadingScreen.vue
-> │          ├── 📄 Nav.vue
-> │          ├── 📄 PageTitle.vue
-> │        └── 📂 Settings/
-> │          ├── 📄 AuthButtons.vue
-> │          ├── 📄 ConfigLauncher.vue
-> │          ├── 📄 CustomThemeMaker.vue
-> │          ├── 📄 ItemSizeSelector.vue
-> │          ├── 📄 LanguageSwitcher.vue
-> │          ├── 📄 LayoutSelector.vue
-> │          ├── 📄 LocalConfigWarning.vue
-> │          ├── 📄 SearchBar.vue
-> │          ├── 📄 SettingsContainer.vue
-> │          ├── 📄 ThemeSelector.vue
-> │          ├── 📄 ViewSwitcher.vue
-> │        └── 📂 Widgets/
-> │          ├── 📄 AdGuardDnsInfo.vue
-> │          ├── 📄 AdGuardFilterStatus.vue
-> │          ├── 📄 AdGuardStats.vue
-> │          ├── 📄 AdGuardTopDomains.vue
-> │          ├── 📄 AnonAddy.vue
-> │          ├── 📄 Apod.vue
-> │          ├── 📄 BlacklistCheck.vue
-> │          ├── 📄 Blank.vue
-> │          ├── 📄 ChuckNorris.vue
-> │          ├── 📄 Clock.vue
-> │          ├── 📄 CodeStats.vue
-> │          ├── 📄 CovidStats.vue
-> │          ├── 📄 CryptoPriceChart.vue
-> │          ├── 📄 CryptoWatchList.vue
-> │          ├── 📄 CustomList.vue
-> │          ├── 📄 CustomSearch.vue
-> │          ├── 📄 CveVulnerabilities.vue
-> │          ├── 📄 DomainMonitor.vue
-> │          ├── 📄 DroneCi.vue
-> │          ├── 📄 EmbedWidget.vue
-> │          ├── 📄 EthGasPrices.vue
-> │          ├── 📄 ExchangeRates.vue
-> │          ├── 📄 Filebrowser.vue
-> │          ├── 📄 Flights.vue
-> │          ├── 📄 GitHubProfile.vue
-> │          ├── 📄 GitHubTrending.vue
-> │          ├── 📄 GlAlerts.vue
-> │          ├── 📄 GlCompactMetrics.vue
-> │          ├── 📄 GlCpuCores.vue
-> │          ├── 📄 GlCpuGauge.vue
-> │          ├── 📄 GlCpuHistory.vue
-> │          ├── 📄 GlCpuSpeedometer.vue
-> │          ├── 📄 GlCpuTemp.vue
-> │          ├── 📄 GlDiskIo.vue
-> │          ├── 📄 GlDiskSpace.vue
-> │          ├── 📄 GlIpAddress.vue
-> │          ├── 📄 GlLoadHistory.vue
-> │          ├── 📄 GlMemGauge.vue
-> │          ├── 📄 GlMemHistory.vue
-> │          ├── 📄 GlMemSpeedometer.vue
-> │          ├── 📄 GlNetworkInterfaces.vue
-> │          ├── 📄 GlNetworkTraffic.vue
-> │          ├── 📄 GlSystemLoad.vue
-> │          ├── 📄 GlancesUptime.vue
-> │          ├── 📄 GluetunStatus.vue
-> │          ├── 📄 HackernewsTrending.vue
-> │          ├── 📄 HealthChecks.vue
-> │          ├── 📄 IframeWidget.vue
-> │          ├── 📄 ImageWidget.vue
-> │          ├── 📄 Jokes.vue
-> │          ├── 📄 Linkding.vue
-> │          ├── 📄 MinecraftStatus.vue
-> │          ├── 📄 MullvadStatus.vue
-> │          ├── 📄 Mvg.vue
-> │          ├── 📄 MvgConnection.vue
-> │          ├── 📄 NdCpuHistory.vue
-> │          ├── 📄 NdLoadHistory.vue
-> │          ├── 📄 NdRamHistory.vue
-> │          ├── 📄 NewsHeadlines.vue
-> │          ├── 📄 NextcloudNotifications.vue
-> │          ├── 📄 NextcloudPhpOpcache.vue
-> │          ├── 📄 NextcloudStats.vue
-> │          ├── 📄 NextcloudSystem.vue
-> │          ├── 📄 NextcloudUser.vue
-> │          ├── 📄 NextcloudUserStatus.vue
-> │          ├── 📄 PiHoleStats.vue
-> │          ├── 📄 PiHoleStatsV6.vue
-> │          ├── 📄 PiHoleTopQueries.vue
-> │          ├── 📄 PiHoleTopQueriesV6.vue
-> │          ├── 📄 PiHoleTraffic.vue
-> │          ├── 📄 PiHoleTrafficV6.vue
-> │          ├── 📄 Proxmox.vue
-> │          ├── 📄 PublicHolidays.vue
-> │          ├── 📄 PublicIp.vue
-> │          ├── 📄 RescueTime.vue
-> │          ├── 📄 RssFeed.vue
-> │          ├── 📄 Sabnzbd.vue
-> │          ├── 📄 SportsScores.vue
-> │          ├── 📄 StatPing.vue
-> │          ├── 📄 StockPriceChart.vue
-> │          ├── 📄 SynologyDownload.vue
-> │          ├── 📄 SystemInfo.vue
-> │          ├── 📄 TacticalRMM.vue
-> │          ├── 📄 TflStatus.vue
-> │          ├── 📄 UptimeKuma.vue
-> │          ├── 📄 UptimeKumaStatusPage.vue
-> │          ├── 📄 WalletBalance.vue
-> │          ├── 📄 Weather.vue
-> │          ├── 📄 WeatherForecast.vue
-> │          ├── 📄 WidgetBase.vue
-> │          ├── 📄 XkcdComic.vue
-> │        └── 📂 Workspace/
-> │          ├── 📄 MultiTaskingWebComtent.vue
-> │          ├── 📄 SideBar.vue
-> │          ├── 📄 SideBarItem.vue
-> │          ├── 📄 SideBarSection.vue
-> │          ├── 📄 WebContent.vue
-> │          ├── 📄 WidgetView.vue
-> │        └── 📂 layout/
-> │          ├── 📄 Sidebar.tsx
-> │      └── 📂 directives/
-> │        ├── 📄 ClickOutside.js
-> │        ├── 📄 LongPress.js
-> │      └── 📂 features/
-> │        └── 📂 cases/
-> │          ├── 📄 CaseManager.tsx
-> │        └── 📂 household/
-> │          ├── 📄 HouseholdModule.tsx
-> │        └── 📂 timeline/
-> │          ├── 📄 TimelineModule.tsx
-> │          ├── 📄 TimelineNode.tsx
-> │          ├── 📄 index.ts
-> │          ├── 📄 types.ts
-> │      └── 📂 lib/
-> │        ├── 📄 supabase.ts
-> │      ├── 📄 main.js
-> │      ├── 📄 main.tsx
-> │      └── 📂 mixins/
-> │        ├── 📄 ChartingMixin.js
-> │        ├── 📄 ConfigSaving.js
-> │        ├── 📄 GlancesMixin.js
-> │        ├── 📄 HomeMixin.js
-> │        ├── 📄 ItemMixin.js
-> │        ├── 📄 NextcloudMixin.js
-> │        ├── 📄 ThemingMixin.js
-> │        ├── 📄 WidgetMixin.js
-> │      └── 📂 pages/
-> │        ├── 📄 SystemStatusPage.tsx
-> │        └── 📂 admin/
-> │          ├── 📄 CaseManager.tsx
-> │          ├── 📄 Dashboard.tsx
-> │          ├── 📄 Login.tsx
-> │          ├── 📄 TableBrowser.tsx
-> │          ├── 📄 TenantManager.tsx
-> │          ├── 📄 UserManager.tsx
-> │      └── 📂 router/
-> │      ├── 📄 router.js
-> │        ├── 📄 index.tsx
-> │      └── 📂 store/
-> │      ├── 📄 store.js
-> │        ├── 📄 AuthContext.tsx
-> │      └── 📂 styles/
-> │        ├── 📄 color-palette.scss
-> │        ├── 📄 color-themes.scss
-> │        ├── 📄 dimensions.scss
-> │        ├── 📄 global-styles.scss
-> │        ├── 📄 media-queries.scss
-> │        ├── 📄 schema-editor.scss
-> │        ├── 📄 style-helpers.scss
-> │        ├── 📄 typography.scss
-> │        ├── 📄 user-defined-themes.scss
-> │        ├── 📄 weather-icons.scss
-> │        └── 📂 widgets/
-> │          ├── 📄 nextcloud-shared.scss
-> │      └── 📂 types/
-> │        ├── 📄 database.types.ts
-> │      └── 📂 utils/
-> │        ├── 📄 ArrowKeyNavigation.js
-> │        ├── 📄 Auth.js
-> │        ├── 📄 CheckItemVisibility.js
-> │        ├── 📄 CheckPageVisibility.js
-> │        ├── 📄 CheckSectionVisibility.js
-> │        ├── 📄 CloudBackup.js
-> │        ├── 📄 ConfigAccumalator.js
-> │        ├── 📄 ConfigHelpers.js
-> │        ├── 📄 ConfigSchema.json
-> │        ├── 📄 CoolConsole.js
-> │        ├── 📄 EmojiUnicodeRegex.js
-> │        ├── 📄 ErrorHandler.js
-> │        ├── 📄 ErrorReporting.js
-> │        ├── 📄 HeaderAuth.js
-> │        ├── 📄 InitServiceWorker.js
-> │        ├── 📄 IsVisibleToUser.js
-> │        ├── 📄 KeycloakAuth.js
-> │        ├── 📄 MiscHelpers.js
-> │        ├── 📄 OidcAuth.js
-> │        ├── 📄 Sanitizer.js
-> │        ├── 📄 Search.js
-> │        ├── 📄 SectionHelpers.js
-> │        ├── 📄 StoreMutations.js
-> │        ├── 📄 defaults.js
-> │        ├── 📄 emojis.json
-> │        ├── 📄 languages.js
-> │      └── 📂 views/
-> │        ├── 📄 404.vue
-> │        ├── 📄 About.vue
-> │        ├── 📄 DownloadConfig.vue
-> │        ├── 📄 Home.vue
-> │        ├── 📄 Login.vue
-> │        ├── 📄 Minimal.vue
-> │        ├── 📄 Workspace.vue
-> │      ├── 📄 vite-env.d.ts
-> │    ├── 📄 tailwind.config.js
-> │    └── 📂 tests/
-> │      └── 📂 components/
-> │        ├── 📄 item.test.js
-> │      ├── 📄 docker-smoke-test.sh
-> │      └── 📂 fixtures/
-> │        ├── 📄 valid-config.yml
-> │      ├── 📄 setup.js
-> │      └── 📂 unit/
-> │        ├── 📄 config-helpers.test.js
-> │        ├── 📄 config-validator.test.js
-> │        ├── 📄 error-handler.test.js
-> │        ├── 📄 healthcheck.test.js
-> │        ├── 📄 smoke.test.js
-> │    ├── 📄 tsconfig.json
-> │    └── 📂 user-data/
-> │      ├── 📄 conf.yml
-> │    ├── 📄 vite.config.ts
-> │    ├── 📄 vitest.config.js
-> │    ├── 📄 vue.config.js
-> │    ├── 📄 yarn.lock
-> │  └── 📂 api/
-> │    └── 📂 __pycache__/
-> │    ├── 📄 config.py
-> │    ├── 📄 database.py
-> │    ├── 📄 main.py
-> │    ├── 📄 package.json
-> │    ├── 📄 requirements.txt
-> │    └── 📂 routers/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 auth.py
-> │      ├── 📄 objects.py
-> │      ├── 📄 organizations.py
-> │      ├── 📄 users.py
-> │    └── 📂 schemas/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 auth.py
-> │    └── 📂 services/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 auth.py
-> │    └── 📂 venv/
-> │  └── 📂 qially-flows/
-> │    ├── 📄 README.md
-> │    └── 📂 assets/
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 logo.svg
-> │      ├── 📄 styles.css
-> │    ├── 📄 index.html
-> │    ├── 📄 privacy.html
-> │    ├── 📄 terms.html
-> │  └── 📂 qially-me/
-> │    ├── 📄 astro.config.mjs
-> │    ├── 📄 biome.json
-> │    ├── 📄 components.json
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 pnpm-lock.yaml
-> │    └── 📂 public/
-> │      ├── 📄 activity.svg
-> │      └── 📂 cards/
-> │        ├── 📄 fresh.png
-> │        ├── 📄 fresh.webp
-> │        ├── 📄 glass.png
-> │        ├── 📄 glass.webp
-> │        ├── 📄 mermaid.svg
-> │      ├── 📄 og.webp
-> │      ├── 📄 placeholder.webp
-> │      ├── 📄 rss.svg
-> │    └── 📂 scripts/
-> │      ├── 📄 build-pagefind-index.ts
-> │    └── 📂 site_QSaysIt_v1/
-> │      └── 📂 posts/
-> │        └── 📂 2026/
-> │          └── 📂 2026-02-19_post-title/
-> │            └── 📂 assets/
-> │              ├── 📄 brief.m4a
-> │              ├── 📄 critique.m4a
-> │              ├── 📄 debate.m4a
-> │              ├── 📄 deepdive.m4a
-> │              ├── 📄 explainer.mp4
-> │              ├── 📄 hero.jpg
-> │              ├── 📄 infographic.jpg
-> │            ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 qsaysit_blog/
-> │        └── 📂 templates/
-> │          └── 📂 2026-02-19_post-title/
-> │            └── 📂 assets/
-> │              ├── 📄 brief.m4a
-> │              ├── 📄 critique.m4a
-> │              ├── 📄 debate.m4a
-> │              ├── 📄 deepdive.m4a
-> │              ├── 📄 explainer.mp4
-> │              ├── 📄 hero.jpg
-> │              ├── 📄 infographic.jpg
-> │            ├── 📄 index.md
-> │          ├── 📄 post_template.md
-> │      └── 📂 templates/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │        ├── 📄 post_template.md
-> │    └── 📂 src/
-> │      └── 📂 assets/
-> │        ├── 📄 creations.json
-> │      └── 📂 components/
-> │        ├── 📄 BaseHead.astro
-> │        ├── 📄 BetaBadge.astro
-> │        ├── 📄 FormattedDate.astro
-> │        ├── 📄 HeaderLink.astro
-> │        ├── 📄 OptimizedImage.astro
-> │        ├── 📄 ProductCard.tsx
-> │        ├── 📄 ProductSection.astro
-> │        ├── 📄 ShareButtons.astro
-> │        ├── 📄 TagFilter.astro
-> │        └── 📂 blog/
-> │          ├── 📄 BlogCard.astro
-> │          ├── 📄 BlogsPage.astro
-> │        ├── 📄 copy-button.tsx
-> │        ├── 📄 image-viewer.tsx
-> │        └── 📂 knowledge-card/
-> │          ├── 📄 CardActions.astro
-> │          ├── 📄 CardBack.astro
-> │          ├── 📄 CardContainer.astro
-> │          ├── 📄 CardCover.astro
-> │          ├── 📄 CardFront.astro
-> │          ├── 📄 CardLink.astro
-> │          ├── 📄 CardsPage.astro
-> │          ├── 📄 KnowledgeCard.astro
-> │          ├── 📄 LinksModal.astro
-> │          ├── 📄 StructureDisplay.astro
-> │          ├── 📄 types.ts
-> │        └── 📂 landing-page/
-> │          ├── 📄 HeroSection.astro
-> │          ├── 📄 LatestSection.astro
-> │          ├── 📄 ScrollingTags.astro
-> │        └── 📂 navigation/
-> │          ├── 📄 ContentNavigation.astro
-> │        └── 📂 slide/
-> │          ├── 📄 SlideCard.astro
-> │          ├── 📄 SlidesPage.astro
-> │          ├── 📄 slide-viewer.tsx
-> │        └── 📂 ui/
-> │          ├── 📄 dialog.tsx
-> │          ├── 📄 sonner.tsx
-> │      ├── 📄 consts.ts
-> │      └── 📂 content/
-> │      ├── 📄 content.config.ts
-> │        └── 📂 blogs/
-> │          └── 📂 2025-08/
-> │            ├── 📄 groq-code-cli-internal.md
-> │          └── 📂 2025-09/
-> │            ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │            └── 📂 imgs/
-> │              ├── 📄 slides-01.png
-> │              ├── 📄 slides-02.png
-> │        └── 📂 cards/
-> │          └── 📂 2025-09/
-> │            ├── 📄 how-openai-uses-codex.md
-> │        └── 📂 doodles/
-> │          └── 📂 2025-09/
-> │            ├── 📄 monakit-released.md
-> │          └── 📂 2025-10/
-> │            └── 📂 imgs/
-> │              ├── 📄 doodle-list.png
-> │              ├── 📄 doodle.png
-> │            ├── 📄 mona-update-doodle-and-more.md
-> │        └── 📂 slides/
-> │          └── 📂 2025-09/
-> │            ├── 📄 agents-md-101.md
-> │            └── 📂 imgs/
-> │              ├── 📄 agents-md-ecosystem.png
-> │          └── 📂 2025-12/
-> │            ├── 📄 quadratic-101.md
-> │      ├── 📄 env.ts
-> │      └── 📂 layouts/
-> │        ├── 📄 ContentIndexLayout.astro
-> │        ├── 📄 MainLayout.astro
-> │      └── 📂 lib/
-> │        ├── 📄 navigation.ts
-> │        ├── 📄 pagination.ts
-> │        ├── 📄 utils.ts
-> │      └── 📂 pages/
-> │        └── 📂 blogs/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        └── 📂 cards/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        ├── 📄 creations.astro
-> │        └── 📂 doodles/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        ├── 📄 index.astro
-> │        ├── 📄 og-enhanced.ts
-> │        ├── 📄 rss.xml.ts
-> │        ├── 📄 search.astro
-> │        └── 📂 slides/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │      └── 📂 schemas/
-> │        ├── 📄 blog.ts
-> │        ├── 📄 card.ts
-> │        ├── 📄 doodle.ts
-> │        ├── 📄 slide.ts
-> │      └── 📂 styles/
-> │        ├── 📄 article.css
-> │        ├── 📄 card.css
-> │        ├── 📄 global.css
-> │        ├── 📄 scrolling-tags.css
-> │      └── 📂 themes/
-> │        ├── 📄 knowledge-card-themes.ts
-> │        ├── 📄 slide-card-themes.ts
-> │      └── 📂 types/
-> │        ├── 📄 product.ts
-> │        ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 qially-web/
-> │    ├── 📄 404.html
-> │    ├── 📄 LICENSE
-> │    ├── 📄 README.md
-> │    └── 📂 assets/
-> │      ├── 📄 cody_rice_velasquez-fullstack.pdf
-> │      └── 📂 css/
-> │        ├── 📄 global_styles.css
-> │        ├── 📄 styles.css
-> │      └── 📂 files/
-> │        ├── 📄 balance-sheet-template.xlsx
-> │        ├── 📄 contact.json
-> │        ├── 📄 emailsignature.html
-> │        └── 📂 forms/
-> │          └── 📂 uscis/
-> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
-> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
-> │            ├── 📄 Form-I-485.pdf
-> │            ├── 📄 Form-I-693.pdf
-> │        ├── 📄 income-statement-template.xlsx
-> │        ├── 📄 index.md
-> │        ├── 📄 payroll-calendar-2026.pdf
-> │        ├── 📄 resume.pdf
-> │        ├── 📄 services-full.json
-> │        ├── 📄 tax-prep-checklist.pdf
-> │      └── 📂 images/
-> │        ├── 📄 allegaracasa.jpg
-> │        ├── 📄 astrotext.png
-> │        ├── 📄 back-master-small.jpg
-> │        ├── 📄 business-performance-wins.png
-> │        └── 📂 business_tools/
-> │          ├── 📄 balance_sheet.svg
-> │          ├── 📄 calendar.svg
-> │          ├── 📄 capital.svg
-> │          ├── 📄 checklist.svg
-> │          ├── 📄 funding.svg
-> │          ├── 📄 income.svg
-> │          ├── 📄 inventory.svg
-> │          ├── 📄 invoice.svg
-> │          ├── 📄 payroll.svg
-> │          ├── 📄 sku.svg
-> │        ├── 📄 cassie-boca-x-tbVqkfQCU-unsplash.jpg
-> │        ├── 📄 cover.jpg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.png
-> │        ├── 📄 favicon.webp
-> │        ├── 📄 jesse-gardner-EqdpXeemf58-unsplash.jpg
-> │        ├── 📄 jf-martin-Ofs3LjEUcrk-unsplash.jpg
-> │        ├── 📄 josh-rose-trYl7JYATH0-unsplash.jpg
-> │        ├── 📄 llegaracasa.jpg
-> │        ├── 📄 logo.png
-> │        ├── 📄 profile-nogb.jpg
-> │        ├── 📄 profile.jpg
-> │        ├── 📄 tersius-van-rhyn-xcQWMPm9fG8-unsplash.jpg
-> │      └── 📂 js/
-> │        ├── 📄 i18n.js
-> │        ├── 📄 main.js
-> │      └── 📂 templates/
-> │        ├── 📄 detail.html
-> │        ├── 📄 flow.html
-> │        ├── 📄 hub.html
-> │        ├── 📄 promo.html
-> │      └── 📂 vids/
-> │        ├── 📄 video-logo.mp4
-> │    ├── 📄 build_nav.py
-> │    └── 📂 chat/
-> │      ├── 📄 index.html
-> │      ├── 📄 sales-iq-landing-page-qr-code.png
-> │    ├── 📄 check_links.py
-> │    └── 📂 client-portals/
-> │      └── 📂 dmejiasmartinez/
-> │        ├── 📄 README.md
-> │        ├── 📄 deepdash.m4a
-> │        ├── 📄 div.pdf
-> │        ├── 📄 eic.pdf
-> │        ├── 📄 estimated.pdf
-> │        ├── 📄 federal.pdf
-> │        ├── 📄 index.html
-> │        ├── 📄 infographic.png
-> │        ├── 📄 installments.pdf
-> │        ├── 📄 sse.pdf
-> │      ├── 📄 index.html
-> │      └── 📂 letters/
-> │        └── 📂 client.wiletvaldo_calderon-ramirez/
-> │          ├── 📄 index.html
-> │          ├── 📄 infographic.png
-> │          ├── 📄 review_audio.m4a
-> │        └── 📂 engagement/
-> │          ├── 📄 SignForm_URL_QR.png
-> │          ├── 📄 engagement_standard.html
-> │          ├── 📄 index.html
-> │        └── 📂 evansville_inn/
-> │          ├── 📄 Notice_Room_Conditions.html
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │    └── 📂 components/
-> │      ├── 📄 footer.html
-> │      ├── 📄 header.html
-> │    └── 📂 contact/
-> │      ├── 📄 index.html
-> │    └── 📂 data/
-> │      ├── 📄 _redirects
-> │      ├── 📄 site_map.json
-> │    └── 📂 faq/
-> │      ├── 📄 index.html
-> │    └── 📂 functions/
-> │      ├── 📄 [[path]].js
-> │      ├── 📄 index.html
-> │    ├── 📄 humans.txt
-> │    ├── 📄 index.html
-> │    ├── 📄 make_stubs.py
-> │    ├── 📄 manifest.webmanifest
-> │    └── 📂 modules/
-> │      └── 📂 cody/
-> │        └── 📂 ecard/
-> │          ├── 📄 cody.vcf
-> │          ├── 📄 index.html
-> │        └── 📂 helpcody/
-> │          ├── 📄 README.md
-> │          ├── 📄 data.csv
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 portfolio/
-> │          ├── 📄 index.html
-> │          ├── 📄 q-showcase-light.html
-> │      └── 📂 flows/
-> │        ├── 📄 README.md
-> │        └── 📂 estate-planning/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        ├── 📄 privacy.html
-> │        ├── 📄 terms.html
-> │      ├── 📄 index.html
-> │      └── 📂 legal/
-> │        └── 📂 accessibility/
-> │          ├── 📄 index.html
-> │          └── 📂 service_animal_gigi/
-> │            ├── 📄 Gigi_Certification_Statement.html
-> │            ├── 📄 Gigi_Documentation_Pack.md
-> │            ├── 📄 Gigi_Documentation_Pack_Print.html
-> │            ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │            ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
-> │            ├── 📄 Notice_Service_Animal_Status.html
-> │            └── 📂 assets/
-> │              ├── 📄 gigi_service_dog_hero.png
-> │            ├── 📄 index.html
-> │        └── 📂 compliance/
-> │          ├── 📄 data-inventory.html
-> │          ├── 📄 incident-response.html
-> │          ├── 📄 index.html
-> │          └── 📂 internal/
-> │            ├── 📄 index.html
-> │            └── 📂 provider-agreements/
-> │              ├── 📄 index.html
-> │            └── 📂 training-logs/
-> │              ├── 📄 index.html
-> │          ├── 📄 risk-assessment.html
-> │          ├── 📄 wisp-core.html
-> │        ├── 📄 index.html
-> │      └── 📂 promo/
-> │        └── 📂 cashapp_bonus/
-> │          ├── 📄 Cash_App_$15_Bonus_Five_Simple_Steps.m4a
-> │          ├── 📄 bonus_cody_en.mp3
-> │          ├── 📄 bonus_cody_es.mp3
-> │          ├── 📄 bonus_explainer_nlm_en.mp3
-> │          ├── 📄 bonus_explainer_nlm_es.mp3
-> │          ├── 📄 bonus_steps_es.png
-> │          ├── 📄 index.html
-> │          ├── 📄 infographic.png
-> │          ├── 📄 unnamed.png
-> │        ├── 📄 index.html
-> │        └── 📂 quickbooks/
-> │          ├── 📄 index.html
-> │        └── 📂 zoho/
-> │          ├── 📄 index.html
-> │      └── 📂 referral/
-> │        ├── 📄 index.html
-> │      └── 📂 review/
-> │        ├── 📄 index.html
-> │        ├── 📄 qrcode_www.google.com.png
-> │      └── 📂 tools/
-> │        └── 📂 budgets/
-> │          ├── 📄 index.html
-> │        └── 📂 business-readiness-check/
-> │          ├── 📄 index.html
-> │        └── 📂 expense-tracker/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 receipt-organizer/
-> │          ├── 📄 index.html
-> │        └── 📂 tax-checklist/
-> │          ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    ├── 📄 prepublish.py
-> │    └── 📂 privacy/
-> │      ├── 📄 index.html
-> │    └── 📂 public/
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 favicon.svg
-> │      ├── 📄 manifest.webmanifest
-> │    └── 📂 resources/
-> │      └── 📂 compliance/
-> │        └── 📂 data-inventory/
-> │          ├── 📄 index.html
-> │        └── 📂 incident-response/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 provider-agreements/
-> │          ├── 📄 index.html
-> │        └── 📂 risk-assessment/
-> │          ├── 📄 index.html
-> │        └── 📂 training-logs/
-> │          ├── 📄 index.html
-> │        └── 📂 wisp/
-> │          ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 kb/
-> │        └── 📂 accounting-cleanup/
-> │          ├── 📄 index.html
-> │        └── 📂 getting-started/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 irs-notices/
-> │          ├── 📄 index.html
-> │        └── 📂 tax-resolution/
-> │          ├── 📄 index.html
-> │      └── 📂 msa/
-> │        ├── 📄 index.html
-> │    ├── 📄 robots.txt
-> │    └── 📂 services/
-> │      └── 📂 books/
-> │        └── 📂 bookkeeping/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 year-end-process/
-> │          ├── 📄 index.html
-> │      └── 📂 compliance/
-> │        └── 📂 business-formation/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 flows/
-> │        └── 📂 immigration-forms/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 translations/
-> │          ├── 📄 index.html
-> │      └── 📂 hr-ops/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 it-ai/
-> │        └── 📂 automation-ai/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 marketing/
-> │        ├── 📄 index.html
-> │      └── 📂 qisuite/
-> │        ├── 📄 index.html
-> │      └── 📂 tax/
-> │        ├── 📄 index.html
-> │        └── 📂 prep/
-> │          └── 📂 2025/
-> │            ├── 📄 FormsQRCode.png
-> │            ├── 📄 bookingQRCode.png
-> │            └── 📂 email-templates/
-> │              ├── 📄 email-01-simple-w2.html
-> │              ├── 📄 email-02-self-employed.html
-> │              ├── 📄 email-03-complex.html
-> │              ├── 📄 email-04-itin.html
-> │              ├── 📄 email-05-business.html
-> │              ├── 📄 email-06-confirmation-docs.html
-> │              ├── 📄 email-generic-next-steps.html
-> │              ├── 📄 email-intake-received.html
-> │              ├── 📄 index.html
-> │            └── 📂 forms/
-> │              ├── 📄 business.html
-> │              ├── 📄 complex.html
-> │              ├── 📄 head-of-household.html
-> │              ├── 📄 index.html
-> │              ├── 📄 itin.html
-> │              ├── 📄 self-employed.html
-> │              ├── 📄 simple-w2.html
-> │            ├── 📄 index.html
-> │            └── 📂 next-steps/
-> │              ├── 📄 business.html
-> │              ├── 📄 complex.html
-> │              ├── 📄 head-of-household.html
-> │              ├── 📄 index.html
-> │              ├── 📄 itin.html
-> │              ├── 📄 self-employed.html
-> │              ├── 📄 simple-w2.html
-> │            ├── 📄 prompts.md
-> │            ├── 📄 qr-code.html
-> │            ├── 📄 tax-prep-2025-booking.html
-> │            ├── 📄 tax-prep-2025-intake.html
-> │            └── 📂 tax99/
-> │              ├── 📄 README.md
-> │              ├── 📄 index.html
-> │              └── 📂 steps/
-> │                ├── 📄 index.html
-> │              └── 📂 templates/
-> │                ├── 📄 email-template-client.html
-> │                ├── 📄 email-template-internal.html
-> │                ├── 📄 index.html
-> │              ├── 📄 worker.js
-> │              ├── 📄 wrangler.toml
-> │            ├── 📄 taxprepqially.jpg
-> │          └── 📂 forms/
-> │            ├── 📄 business.html
-> │            ├── 📄 complex.html
-> │            ├── 📄 head-of-household.html
-> │            ├── 📄 index.html
-> │            ├── 📄 itin.html
-> │            ├── 📄 self-employed.html
-> │            ├── 📄 simple-w2.html
-> │          ├── 📄 index.html
-> │          └── 📂 intake/
-> │            ├── 📄 index.html
-> │          └── 📂 next-steps/
-> │            └── 📂 business-return/
-> │              ├── 📄 index.html
-> │            └── 📂 complex-return/
-> │              ├── 📄 index.html
-> │            └── 📂 head-of-household/
-> │              ├── 📄 index.html
-> │            ├── 📄 index.html
-> │            └── 📂 individual/
-> │              ├── 📄 index.html
-> │            └── 📂 itin/
-> │              ├── 📄 index.html
-> │            └── 📂 self-employed/
-> │              ├── 📄 index.html
-> │            └── 📂 simple-w2/
-> │              ├── 📄 index.html
-> │          ├── 📄 qr-code.html
-> │          ├── 📄 tax-prep-2025-booking.html
-> │    └── 📂 showcases/
-> │      └── 📂 20000-swing/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      ├── 📄 videos.html
-> │    ├── 📄 sitemap.xml
-> │    └── 📂 src/
-> │      ├── 📄 App.tsx
-> │      └── 📂 components/
-> │        ├── 📄 footer.tsx
-> │        ├── 📄 hero.tsx
-> │        ├── 📄 nav.tsx
-> │      ├── 📄 main.tsx
-> │      └── 📂 pages/
-> │        ├── 📄 about.tsx
-> │        ├── 📄 contact.tsx
-> │        ├── 📄 home.tsx
-> │        ├── 📄 legal.tsx
-> │      └── 📂 styles/
-> │        ├── 📄 index.css
-> │    └── 📂 terms/
-> │      ├── 📄 index.html
-> │    ├── 📄 vite.config.ts
-> │  └── 📂 qibooks/
-> │    └── 📂 bankrules/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 index.html
-> │      ├── 📄 rule_manager.py
-> │      ├── 📄 rules.csv
-> │      ├── 📄 run.bat
-> │    ├── 📄 index.html
-> │    └── 📂 statement_tools/
-> │      └── 📂 cashApp/
-> │        ├── 📄 cashapp_converter.py
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      ├── 📄 requirements.txt
-> │  └── 📂 qinote/
-> │    ├── 📄 0.00.00-qios_genesis.md
-> │    ├── 📄 QiNoteOS_Dev_Doc_v1.2_ColdStart_Final.pdf
-> │    └── 📂 apps/
-> │      └── 📂 ui/
-> │        └── 📂 standard/
-> │          └── 📂 public/
-> │            ├── 📄 index.html
-> │          └── 📂 src/
-> │            ├── 📄 App.css
-> │            ├── 📄 App.jsx
-> │            └── 📂 assets/
-> │              ├── 📄 index.html
-> │            ├── 📄 index.css
-> │            ├── 📄 index.html
-> │            ├── 📄 main.jsx
-> │      └── 📂 versions/
-> │        ├── 📄 index.html
-> │        ├── 📄 log.md
-> │    └── 📂 data/
-> │      ├── 📄 index.html
-> │      └── 📂 migrations/
-> │        ├── 📄 003_file_history.sql
-> │        ├── 📄 004_daily_life_objects.sql
-> │        ├── 📄 005_typed_links.sql
-> │        ├── 📄 index.html
-> │      └── 📂 rules/
-> │        ├── 📄 index.html
-> │        ├── 📄 qios_rules_v1_1.yaml
-> │      └── 📂 schemas/
-> │        ├── 📄 index.html
-> │      └── 📂 seeds/
-> │        ├── 📄 index.html
-> │        ├── 📄 supabase_seed_core_status.sql
-> │    └── 📂 docs/
-> │      ├── 📄 CODE_REVIEW.md
-> │      ├── 📄 PRODUCTION_READINESS_FIXES.md
-> │      ├── 📄 README.md
-> │      ├── 📄 SETUP_STATUS.md
-> │      ├── 📄 TESTING_CHECKLIST.md
-> │      ├── 📄 n8n_workflows_v0.md
-> │      ├── 📄 normalization_rules_v0.md
-> │    ├── 📄 index.html
-> │    └── 📂 kernel/
-> │      └── 📂 config/
-> │        ├── 📄 index.html
-> │        ├── 📄 kernel.yaml
-> │      ├── 📄 index.html
-> │      └── 📂 src/
-> │        ├── 📄 index.html
-> │        ├── 📄 qid_bridge.py
-> │        ├── 📄 rag.py
-> │    └── 📂 packages/
-> │      └── 📂 api-client/
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 client.ts
-> │          ├── 📄 index.ts
-> │        ├── 📄 tsconfig.json
-> │      └── 📂 core/
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 index.ts
-> │          ├── 📄 types.ts
-> │      └── 📂 editors/
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 MarkdownEditor.tsx
-> │          ├── 📄 RichTextEditor.tsx
-> │          ├── 📄 index.ts
-> │      └── 📂 forms/
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 index.ts
-> │          └── 📂 schemas/
-> │          ├── 📄 schemas.ts
-> │            ├── 📄 noteSchema.ts
-> │      └── 📂 ui/
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 Button.tsx
-> │          ├── 📄 Card.tsx
-> │          ├── 📄 Input.tsx
-> │          ├── 📄 Modal.tsx
-> │          ├── 📄 Select.tsx
-> │          ├── 📄 Textarea.tsx
-> │          ├── 📄 index.ts
-> │    └── 📂 vault/
-> │      └── 📂 _derived/
-> │        ├── 📄 index.html
-> │        └── 📂 modules/
-> │          ├── 📄 index.html
-> │          └── 📂 qid0400003_fcfcu_case/
-> │            ├── 📄 index.html
-> │            ├── 📄 module_index.json
-> │          └── 📂 qid1500001_how_to_use_qinoteos/
-> │            ├── 📄 index.html
-> │            ├── 📄 module_index.json
-> │        ├── 📄 search.json
-> │        ├── 📄 vault_index.json
-> │      ├── 📄 index.html
-> │      └── 📂 modules/
-> │        ├── 📄 index.html
-> │        └── 📂 qid0400003_fcfcu_case/
-> │          ├── 📄 README.md
-> │          ├── 📄 README.md.bak
-> │          └── 📂 assets/
-> │            ├── 📄 index.html
-> │            ├── 📄 unnamed.png
-> │          └── 📂 content/
-> │            ├── 📄 content.md
-> │            ├── 📄 index.html
-> │          └── 📂 index/
-> │          ├── 📄 index.html
-> │            ├── 📄 index.html
-> │          ├── 📄 module.yaml
-> │          └── 📂 snapshots/
-> │            ├── 📄 index.html
-> │          └── 📂 vectors/
-> │            ├── 📄 chunks.jsonl
-> │            ├── 📄 embeddings.npy
-> │            ├── 📄 index.html
-> │          └── 📂 versions/
-> │            ├── 📄 index.html
-> │            ├── 📄 log.md
-> │            ├── 📄 log.md.bak
-> │        └── 📂 qid1500001_how_to_use_qinoteos/
-> │          ├── 📄 README.md
-> │          └── 📂 assets/
-> │            ├── 📄 index.html
-> │          └── 📂 content/
-> │          ├── 📄 content.md.bak
-> │            ├── 📄 content.md
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │          ├── 📄 module.yaml
-> │          └── 📂 snapshots/
-> │            ├── 📄 index.html
-> │          └── 📂 vectors/
-> │            ├── 📄 chunks.jsonl
-> │            ├── 📄 embeddings.npy
-> │            ├── 📄 index.html
-> │          └── 📂 versions/
-> │            ├── 📄 index.html
-> │            ├── 📄 log.md
-> │            ├── 📄 log.md.bak
-> │    └── 📂 worker/
-> │      ├── 📄 CLOUDFLARE_BUILD_COMMANDS.md
-> │      ├── 📄 WRANGLER_SECRETS_GUIDE.md
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 ginaMemory.ts
-> │        ├── 📄 index.ts
-> │        ├── 📄 qinoteApi.ts
-> │        ├── 📄 qinoteClassification.ts
-> │        ├── 📄 rag.ts
-> │        ├── 📄 seedQinote.ts
-> │        ├── 📄 supabaseMind.ts
-> │        ├── 📄 zohoMCP.ts
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 wrangler.toml
-> │    └── 📂 workers/
-> │      └── 📂 Tools_Launcher/
-> │        └── 📂 api/
-> │          ├── 📄 index.html
-> │        └── 📂 components/
-> │          └── 📂 chat/
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │          └── 📂 views/
-> │            ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 tools/
-> │          ├── 📄 index.html
-> │      └── 📂 _shared/
-> │        ├── 📄 index.html
-> │      └── 📂 embedder/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 ingestion/
-> │        ├── 📄 index.html
-> │      └── 📂 metadata_naming/
-> │        ├── 📄 index.html
-> │      └── 📂 orchestrator/
-> │        ├── 📄 index.html
-> │      └── 📂 self_heal/
-> │        ├── 📄 index.html
-> │      └── 📂 semantic_router/
-> │        ├── 📄 index.html
-> │  └── 📂 qione-portal/
-> │    ├── 📄 README.md
-> │    └── 📂 app/
-> │      └── 📂 (app)/
-> │        ├── 📄 _page.tsx
-> │        └── 📂 admin/
-> │          └── 📂 audit/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 permissions/
-> │            ├── 📄 page.tsx
-> │          └── 📂 roles/
-> │            ├── 📄 page.tsx
-> │          └── 📂 system/
-> │            ├── 📄 page.tsx
-> │          └── 📂 users/
-> │            ├── 📄 page.tsx
-> │          └── 📂 workers/
-> │            ├── 📄 page.tsx
-> │        └── 📂 ai/
-> │          └── 📂 agents/
-> │            ├── 📄 page.tsx
-> │          └── 📂 automations/
-> │            ├── 📄 page.tsx
-> │          └── 📂 memory/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 prompts/
-> │            ├── 📄 page.tsx
-> │        └── 📂 care/
-> │          ├── 📄 Caregiver Care Plan Wiki.html
-> │          └── 📂 meds/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 patients/
-> │            ├── 📄 page.tsx
-> │          └── 📂 supplies/
-> │            ├── 📄 page.tsx
-> │        └── 📂 chronicle/
-> │          └── 📂 [id]/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │        └── 📂 contracts/
-> │          └── 📂 [id]/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │        └── 📂 dashboard/
-> │          ├── 📄 page.tsx
-> │        └── 📂 documents/
-> │          └── 📂 [id]/
-> │            ├── 📄 page.tsx
-> │          └── 📂 inbox/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 search/
-> │            ├── 📄 page.tsx
-> │          └── 📂 tags/
-> │            ├── 📄 page.tsx
-> │        └── 📂 forms/
-> │          └── 📂 [formKey]/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │        ├── 📄 layout.tsx
-> │        └── 📂 notes/
-> │          └── 📂 [id]/
-> │            ├── 📄 page.tsx
-> │          └── 📂 new/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │        └── 📂 objects/
-> │          └── 📂 appointments/
-> │            ├── 📄 page.tsx
-> │          └── 📂 cases/
-> │            └── 📂 [id]/
-> │              ├── 📄 page.tsx
-> │            ├── 📄 page.tsx
-> │          └── 📂 clients/
-> │            └── 📂 [id]/
-> │              ├── 📄 page.tsx
-> │            ├── 📄 page.tsx
-> │          └── 📂 contacts/
-> │            └── 📂 [id]/
-> │              ├── 📄 page.tsx
-> │            ├── 📄 page.tsx
-> │          └── 📂 expenses/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 tasks/
-> │            ├── 📄 page.tsx
-> │        └── 📂 settings/
-> │          └── 📂 connections/
-> │            ├── 📄 page.tsx
-> │          └── 📂 notifications/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 profile/
-> │            ├── 📄 page.tsx
-> │        └── 📂 tax/
-> │          └── 📂 clients/
-> │            ├── 📄 page.tsx
-> │          └── 📂 organizers/
-> │            ├── 📄 page.tsx
-> │          ├── 📄 page.tsx
-> │          └── 📂 returns/
-> │            ├── 📄 page.tsx
-> │      └── 📂 (portal)/
-> │        ├── 📄 layout.tsx
-> │        └── 📂 objects/
-> │          └── 📂 [objectKey]/
-> │            └── 📂 contract/
-> │              ├── 📄 page.tsx
-> │            └── 📂 csv/
-> │              └── 📂 [formKey]/
-> │                ├── 📄 page.tsx
-> │            └── 📂 forms/
-> │              └── 📂 [formKey]/
-> │                ├── 📄 page.tsx
-> │            ├── 📄 page.tsx
-> │        ├── 📄 page.tsx
-> │        └── 📂 qichronicle/
-> │          ├── 📄 page.tsx
-> │      └── 📂 (public)/
-> │        └── 📂 invite/
-> │          ├── 📄 page.tsx
-> │        └── 📂 login/
-> │          ├── 📄 page.tsx
-> │        └── 📂 reset-password/
-> │          ├── 📄 page.tsx
-> │      └── 📂 api/
-> │        └── 📂 admin/
-> │          └── 📂 queue-status/
-> │            ├── 📄 route.ts
-> │          └── 📂 worker-health/
-> │            ├── 📄 route.ts
-> │        └── 📂 ai/
-> │          └── 📂 chat/
-> │            ├── 📄 route.ts
-> │          └── 📂 memory/
-> │            ├── 📄 route.ts
-> │        └── 📂 archive/
-> │          └── 📂 chunks/
-> │            ├── 📄 route.ts
-> │          └── 📂 register/
-> │            ├── 📄 route.ts
-> │          └── 📂 review/
-> │          └── 📂 search/
-> │        └── 📂 care/
-> │          ├── 📄 route.ts
-> │        └── 📂 chat/
-> │          └── 📂 retrieve/
-> │            ├── 📄 route.ts
-> │        └── 📂 chronicle/
-> │          └── 📂 [id]/
-> │            ├── 📄 route.ts
-> │          ├── 📄 route.ts
-> │        └── 📂 contracts/
-> │          ├── 📄 route.ts
-> │        └── 📂 documents/
-> │          └── 📂 search/
-> │            ├── 📄 route.ts
-> │          └── 📂 upload/
-> │            ├── 📄 route.ts
-> │        └── 📂 forms/
-> │          └── 📂 [formKey]/
-> │            ├── 📄 route.ts
-> │        └── 📂 notes/
-> │          └── 📂 [id]/
-> │            ├── 📄 route.ts
-> │          ├── 📄 route.ts
-> │        └── 📂 objects/
-> │          └── 📂 [objectType]/
-> │            └── 📂 [id]/
-> │              ├── 📄 route.ts
-> │            ├── 📄 route.ts
-> │        └── 📂 qichronicle/
-> │          └── 📂 moments/
-> │            └── 📂 [id]/
-> │              ├── 📄 route.ts
-> │            ├── 📄 route.ts
-> │        └── 📂 tax/
-> │          ├── 📄 route.ts
-> │        └── 📂 users/
-> │          └── 📂 [id]/
-> │            ├── 📄 route.ts
-> │          ├── 📄 route.ts
-> │        └── 📂 webhooks/
-> │          └── 📂 stripe/
-> │            ├── 📄 route.ts
-> │      └── 📂 auth/
-> │        └── 📂 callback/
-> │          ├── 📄 page.tsx
-> │      ├── 📄 layout.tsx
-> │    ├── 📄 components.json
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    ├── 📄 pnpm-lock.yaml
-> │    ├── 📄 postcss.config.js
-> │    └── 📂 public/
-> │      ├── 📄 _routes.json
-> │      ├── 📄 favicon.ico
-> │      └── 📂 images/
-> │      ├── 📄 manifest.webmanifest
-> │      ├── 📄 robots.txt
-> │    ├── 📄 qione_review_bundle.txt
-> │    └── 📂 src/
-> │      ├── 📄 App.tsx
-> │      └── 📂 api/
-> │        ├── 📄 client.ts
-> │      └── 📂 app/
-> │        └── 📂 guards/
-> │          ├── 📄 require-admin.tsx
-> │          ├── 📄 require-auth.tsx
-> │          ├── 📄 require-tenant.tsx
-> │        └── 📂 layouts/
-> │          ├── 📄 admin-layout.tsx
-> │          ├── 📄 app-layout.tsx
-> │          ├── 📄 portal-layout.tsx
-> │        └── 📂 providers/
-> │          ├── 📄 auth-provider.tsx
-> │          ├── 📄 query-provider.tsx
-> │          ├── 📄 tenant-provider.tsx
-> │        ├── 📄 router.tsx
-> │      └── 📂 components/
-> │        ├── 📄 AuthUI.tsx
-> │        ├── 📄 GinaChat.tsx
-> │        ├── 📄 Launcher.tsx
-> │        └── 📂 ui/
-> │          ├── 📄 button.tsx
-> │          ├── 📄 input.tsx
-> │      └── 📂 features/
-> │        └── 📂 admin/
-> │          └── 📂 components/
-> │            ├── 📄 archive-failure-panel.tsx
-> │            ├── 📄 device-status-card.tsx
-> │            ├── 📄 device-table.tsx
-> │            ├── 📄 fleet-job-panel.tsx
-> │            ├── 📄 watch-assignment-form.tsx
-> │          └── 📂 hooks/
-> │            ├── 📄 use-device-heartbeats.ts
-> │            ├── 📄 use-devices.ts
-> │            ├── 📄 use-fleet-jobs.ts
-> │            ├── 📄 use-watch-assignments.ts
-> │          └── 📂 services/
-> │            ├── 📄 admin-api.ts
-> │            ├── 📄 device-actions.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 archive/
-> │          └── 📂 components/
-> │            ├── 📄 archive-file-table.tsx
-> │            ├── 📄 ingest-job-table.tsx
-> │            ├── 📄 manifest-viewer.tsx
-> │          └── 📂 services/
-> │            ├── 📄 archive-api.ts
-> │        └── 📂 bookings/
-> │        └── 📂 portal/
-> │          └── 📂 components/
-> │            ├── 📄 dashboard-shell.tsx
-> │            ├── 📄 module-nav.tsx
-> │            ├── 📄 tenant-summary.tsx
-> │          └── 📂 services/
-> │            ├── 📄 portal-api.ts
-> │        └── 📂 qiarchive/
-> │          ├── 📄 LICENSE
-> │          ├── 📄 Makefile
-> │          ├── 📄 README.md
-> │          └── 📂 app/
-> │            └── 📂 agent/
-> │              ├── 📄 LICENSE
-> │              ├── 📄 README.md
-> │              └── 📂 _assets/
-> │                └── 📂 _generated_icons/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 qid_128.png
-> │                  ├── 📄 qid_16.png
-> │                  ├── 📄 qid_24.png
-> │                  ├── 📄 qid_256.png
-> │                  ├── 📄 qid_32.png
-> │                  ├── 📄 qid_48.png
-> │                  ├── 📄 qid_64.png
-> │                ├── 📄 index.html
-> │                ├── 📄 make_ico.py
-> │                ├── 📄 qid-3d.jpg
-> │                ├── 📄 qid-barcode.jpg
-> │                ├── 📄 qid-complex.jpg
-> │                ├── 📄 qid-complex.mp4
-> │                ├── 📄 qid-gradient.jpg
-> │                ├── 📄 qid-inverted.svg
-> │                ├── 📄 qid-led.jpg
-> │                ├── 📄 qid-qr-code.jpg
-> │                ├── 📄 qid.ico
-> │                ├── 📄 qid.ico.txt
-> │                ├── 📄 qid.jpg
-> │                ├── 📄 qid.png
-> │                ├── 📄 qid.svg
-> │              └── 📂 _backups/
-> │                └── 📂 daily/
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                └── 📂 rolling/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 registry.prev.json
-> │                  ├── 📄 state.prev.json
-> │              └── 📂 _logs/
-> │                ├── 📄 index.html
-> │                ├── 📄 qid_activity.jsonl
-> │              ├── 📄 _qid_registry.json
-> │              ├── 📄 _qid_state.json
-> │              └── 📂 _wal/
-> │                ├── 📄 index.html
-> │                ├── 📄 qid_wal.jsonl
-> │              ├── 📄 build_windows.ps1
-> │              ├── 📄 cloud_client.py
-> │              └── 📂 console/
-> │              ├── 📄 console.py
-> │                ├── 📄 index.html
-> │              └── 📂 desktop/
-> │                ├── 📄 create_shortcut.ps1
-> │                ├── 📄 create_shortcut.vbs
-> │                ├── 📄 index.html
-> │                ├── 📄 qid_launcher.bat
-> │                ├── 📄 qid_ui.bat
-> │              ├── 📄 doc_ids.py
-> │              └── 📂 docs/
-> │                ├── 📄 DEV_DOC.md
-> │                ├── 📄 gid_rules.md
-> │                ├── 📄 index.html
-> │              ├── 📄 file_router.py
-> │              ├── 📄 hasher.py
-> │              ├── 📄 paperless_upload.py
-> │              ├── 📄 pipeline.py
-> │              ├── 📄 pyproject.toml
-> │              ├── 📄 qid.py
-> │              ├── 📄 requirements.txt
-> │              ├── 📄 smoke_test.py
-> │              ├── 📄 status_overlay.py
-> │              ├── 📄 watcher.py
-> │          └── 📂 apps/
-> │            └── 📂 Notes/
-> │              ├── 📄 CONTRIBUTING.md
-> │              ├── 📄 Dockerfile
-> │              ├── 📄 LICENSE
-> │              ├── 📄 README.md
-> │              ├── 📄 VERSION
-> │              └── 📂 backend/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 export.py
-> │                ├── 📄 main.py
-> │                ├── 📄 plugins.py
-> │                ├── 📄 share.py
-> │                ├── 📄 themes.py
-> │                ├── 📄 utils.py
-> │              ├── 📄 config.yaml
-> │              ├── 📄 docker-compose.ghcr.yml
-> │              ├── 📄 docker-compose.yml
-> │              └── 📂 docs/
-> │                ├── 📄 CNAME
-> │                ├── 📄 carousel-1.jpg
-> │                ├── 📄 carousel-2.jpg
-> │                ├── 📄 carousel-3.jpg
-> │                ├── 📄 carousel-4.jpg
-> │                ├── 📄 carousel-5.jpg
-> │                ├── 📄 carousel-6.jpg
-> │                ├── 📄 carousel-7.png
-> │                ├── 📄 demo-button.svg
-> │                ├── 📄 favicon.svg
-> │                ├── 📄 index.html
-> │                ├── 📄 logo-512.svg
-> │                ├── 📄 logo-cropped.svg
-> │                ├── 📄 logo.svg
-> │                ├── 📄 og-image.png
-> │                ├── 📄 robots.txt
-> │                ├── 📄 sitemap.xml
-> │                ├── 📄 website-button.svg
-> │              └── 📂 documentation/
-> │                ├── 📄 API.md
-> │                ├── 📄 AUTHENTICATION.md
-> │                ├── 📄 ENVIRONMENT_VARIABLES.md
-> │                ├── 📄 FEATURES.md
-> │                ├── 📄 MATHJAX.md
-> │                ├── 📄 MERMAID.md
-> │                ├── 📄 PLUGINS.md
-> │                ├── 📄 PLUGIN_NOTE_STATISTICS.md
-> │                ├── 📄 SHARING.md
-> │                ├── 📄 TAGS.md
-> │                ├── 📄 TEMPLATES.md
-> │                ├── 📄 THEMES.md
-> │                └── 📂 templates/
-> │                  ├── 📄 daily-journal.md
-> │                  ├── 📄 meeting-notes.md
-> │                  ├── 📄 project-plan.md
-> │              └── 📂 frontend/
-> │                ├── 📄 app.js
-> │                ├── 📄 favicon.svg
-> │                ├── 📄 index.html
-> │                ├── 📄 login.html
-> │                ├── 📄 logo.svg
-> │                ├── 📄 manifest.json
-> │                ├── 📄 sw.js
-> │              ├── 📄 generate_password.py
-> │              └── 📂 locales/
-> │                ├── 📄 de-DE.json
-> │                ├── 📄 en-GB.json
-> │                ├── 📄 en-US.json
-> │                ├── 📄 es-ES.json
-> │                ├── 📄 fr-FR.json
-> │                ├── 📄 hu-HU.json
-> │                ├── 📄 it-IT.json
-> │                ├── 📄 ja-JP.json
-> │                ├── 📄 ru-RU.json
-> │                ├── 📄 sl-SI.json
-> │                ├── 📄 zh-CN.json
-> │              └── 📂 plugins/
-> │                ├── 📄 note_stats.py
-> │                ├── 📄 supabase_sync.py
-> │              ├── 📄 release.ps1
-> │              ├── 📄 render.yaml
-> │              ├── 📄 requirements.txt
-> │              ├── 📄 run.py
-> │              └── 📂 themes/
-> │                ├── 📄 cobalt2.css
-> │                ├── 📄 dark.css
-> │                ├── 📄 dracula.css
-> │                ├── 📄 gruvbox-dark.css
-> │                ├── 📄 light.css
-> │                ├── 📄 matcha-light.css
-> │                ├── 📄 monokai.css
-> │                ├── 📄 nord.css
-> │                ├── 📄 vs-blue.css
-> │                ├── 📄 vue-high-contrast.css
-> │            └── 📂 api/
-> │              ├── 📄 Procfile
-> │              ├── 📄 README.md
-> │              └── 📂 app/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 config.py
-> │                ├── 📄 db.py
-> │                ├── 📄 main.py
-> │                ├── 📄 models.py
-> │                ├── 📄 routes.py
-> │                ├── 📄 schemas.py
-> │                ├── 📄 services.py
-> │                ├── 📄 statuses.py
-> │              ├── 📄 requirements.txt
-> │            └── 📂 pwa/
-> │              ├── 📄 README.md
-> │              ├── 📄 eslint.config.js
-> │              ├── 📄 index.html
-> │              ├── 📄 package-lock.json
-> │              ├── 📄 package.json
-> │              └── 📂 public/
-> │                ├── 📄 favicon.ico
-> │                ├── 📄 logo.svg
-> │                ├── 📄 logo192.png
-> │                ├── 📄 logo512.png
-> │                ├── 📄 manifest.json
-> │                ├── 📄 vite.svg
-> │              └── 📂 src/
-> │                ├── 📄 App.css
-> │                ├── 📄 App.jsx
-> │                └── 📂 assets/
-> │                  ├── 📄 react.svg
-> │                ├── 📄 config.js
-> │                ├── 📄 index.css
-> │                ├── 📄 main.jsx
-> │                └── 📂 pages/
-> │                  ├── 📄 AgentStatus.jsx
-> │                  ├── 📄 Dashboard.jsx
-> │                  ├── 📄 Issues.jsx
-> │                  ├── 📄 RecentItems.jsx
-> │              ├── 📄 vite.config.js
-> │          └── 📂 config/
-> │            ├── 📄 correspondents_seed.yaml
-> │            ├── 📄 document_types_seed.yaml
-> │            ├── 📄 paperless.env
-> │            ├── 📄 tags_seed.yaml
-> │          └── 📂 contracts/
-> │            ├── 📄 agent_contract.md
-> │            ├── 📄 classification.md
-> │            ├── 📄 duplicate_contract.md
-> │            ├── 📄 folder_contract.md
-> │            ├── 📄 handoff_contract.md
-> │            ├── 📄 ingest_contract.md
-> │            ├── 📄 integration_contract.md
-> │            ├── 📄 manifest_contract.md
-> │            ├── 📄 metadata_contract.md
-> │            ├── 📄 naming_contract.md
-> │            ├── 📄 operations_contract.md
-> │            ├── 📄 paperless_inbox.csv
-> │            ├── 📄 paperless_seed.json
-> │            ├── 📄 review_contract.md
-> │            ├── 📄 status_contract.md
-> │            ├── 📄 storage_contract.md
-> │          └── 📂 data/
-> │            └── 📂 00_INBOX/
-> │            └── 📂 01_STAGED/
-> │            └── 📂 10_ARCHIVE_UPLOADED/
-> │              ├── 📄 duplicate_test.pdf
-> │              ├── 📄 smoke_test_doc.pdf
-> │              ├── 📄 test_normal.pdf
-> │            └── 📂 10_REVIEW/
-> │            └── 📂 20_DUPLICATES/
-> │              ├── 📄 test_duplicate.pdf
-> │              ├── 📄 third_test.pdf
-> │            └── 📂 20_QUARANTINE/
-> │            └── 📂 30_EXPORTS/
-> │            └── 📂 30_REVIEW/
-> │              ├── 📄 bad_upload.pdf
-> │              ├── 📄 bad_upload_test.pdf
-> │            └── 📂 90_MANIFESTS/
-> │            └── 📂 paperless/
-> │              └── 📂 consume/
-> │                ├── 📄 QDOC-2026-000001__alpha__undated.pdf
-> │                ├── 📄 QDOC-2026-000002__bravo__undated.pdf
-> │          └── 📂 deploy/
-> │            └── 📂 console/
-> │              ├── 📄 main.py
-> │            └── 📂 engine/
-> │              ├── 📄 Dockerfile
-> │              ├── 📄 main.py
-> │              ├── 📄 requirements.txt
-> │            └── 📂 paperless/
-> │              ├── 📄 Dockerfile
-> │          └── 📂 dev/
-> │            ├── 📄 352
-> │            ├── 📄 422
-> │            ├── 📄 444
-> │            ├── 📄 503
-> │            ├── 📄 505
-> │            ├── 📄 README.md
-> │            ├── 📄 chatbotes.txt
-> │            └── 📂 decisions/
-> │              ├── 📄 0001-identity-first-pipeline.md
-> │              ├── 📄 0002-cloud-paperless-drive-intake.md
-> │              ├── 📄 0003-pivot-to-cloud-orchestrator.md
-> │              ├── 📄 0004-qid-becomes-qiarchive-agent-core.md
-> │              ├── 📄 2026-03-06_v1_ingest_reality_check.md
-> │            ├── 📄 filetree.json
-> │            └── 📂 ide_state/
-> │            └── 📂 notes/
-> │              ├── 📄 implementation_v1.md
-> │            └── 📂 prompts/
-> │              ├── 📄 ingest_v2_ideas.md
-> │            └── 📂 scratch/
-> │            ├── 📄 summary_20260306_1430_agent_core.md
-> │            ├── 📄 summary_20260306_1450_cloud_api.md
-> │            ├── 📄 summary_20260306_1525_sync_plane_online.md
-> │            ├── 📄 summary_20260306_1550_final_sync_wiring.md
-> │            ├── 📄 summary_20260306_1600_startup_service.md
-> │            ├── 📄 summary_20260306_1612_singleton_instance.md
-> │            ├── 📄 summary_20260306_1615_status_overlay.md
-> │            ├── 📄 summary_20260306_1625_execution_fixes.md
-> │            ├── 📄 summary_20260306_1630_execution_cleanup.md
-> │            ├── 📄 summary_20260306_1630_status_board.md
-> │            ├── 📄 summary_20260306_1640_heartbeat_sync_fix.md
-> │            ├── 📄 summary_20260306_1645_fully_automatic_start.md
-> │            ├── 📄 summary_20260306_1645_pwa_icon_fix.md
-> │            ├── 📄 summary_20260306_1700_schema_recovery.md
-> │          ├── 📄 docker-compose.yml
-> │          └── 📂 docs/
-> │            ├── 📄 architecture.md
-> │            ├── 📄 google_drive_integration.md
-> │            ├── 📄 local_agent.md
-> │            ├── 📄 paperless_integration.md
-> │            ├── 📄 paperless_seed_loader.md
-> │            ├── 📄 railway_deployment.md
-> │            ├── 📄 railway_qiarchive_api.md
-> │            ├── 📄 setup.md
-> │            ├── 📄 status_model.md
-> │            ├── 📄 workflow.md
-> │          └── 📂 schemas/
-> │            ├── 📄 document_manifest.schema.json
-> │            ├── 📄 document_record.example.json
-> │            └── 📂 sql/
-> │              ├── 📄 init_ledger.sql
-> │          └── 📂 scripts/
-> │            └── 📂 ingest/
-> │              ├── 📄 main.py
-> │            └── 📂 ops/
-> │              ├── 📄 handoff_to_paperless.py
-> │              ├── 📄 push_to_paperless_railway.py
-> │              ├── 📄 queue_report.py
-> │              ├── 📄 seed_metadata.py
-> │            ├── 📄 register_agent_service.ps1
-> │            ├── 📄 seed_paperless.py
-> │            ├── 📄 start_background_agent.vbs
-> │            └── 📂 utils/
-> │              ├── 📄 file_utils.py
-> │              ├── 📄 hash_utils.py
-> │              ├── 📄 id_utils.py
-> │              ├── 📄 manifest_utils.py
-> │              ├── 📄 slug_utils.py
-> │          ├── 📄 start_agent_console.bat
-> │        └── 📂 qiblogs/
-> │          ├── 📄 VERSION
-> │          ├── 📄 astro.config.mjs
-> │          ├── 📄 netlify.toml
-> │          ├── 📄 pnpm-lock.yaml
-> │          └── 📂 public/
-> │            └── 📂 docs/
-> │              └── 📂 api-reference/
-> │                ├── 📄 code.png
-> │              └── 📂 attachments/
-> │                ├── 📄 astro-modular-configuration.png
-> │                ├── 📄 astro-modular-configuration.webp
-> │                ├── 📄 obsidian-cover.png
-> │                ├── 📄 obsidian-cover.webp
-> │              └── 📂 configuration/
-> │                ├── 📄 astro-modular-configuration.webp
-> │              └── 📂 sourcetree-and-git/
-> │              └── 📂 sourcetree-and-git-setup/
-> │                ├── 📄 sourcetree.png
-> │                ├── 📄 sourcetree.webp
-> │                ├── 📄 sourcetree.png
-> │            ├── 📄 favicon-dark.png
-> │            ├── 📄 favicon-light.png
-> │            └── 📂 graph/
-> │              ├── 📄 graph-data.json
-> │            ├── 📄 open-graph.png
-> │            └── 📂 pages/
-> │              └── 📂 attachments/
-> │                ├── 📄 water.png
-> │                ├── 📄 water.webp
-> │            └── 📂 posts/
-> │              └── 📂 advanced-folder-example/
-> │                ├── 📄 gallery-1.jpg
-> │                ├── 📄 gallery-2.jpg
-> │                ├── 📄 hero-image.jpg
-> │              └── 📂 attachments/
-> │                ├── 📄 autumn-leaves.webp
-> │                ├── 📄 city-skyline.webp
-> │                ├── 📄 desert-sunset.webp
-> │                ├── 📄 document.pdf
-> │                ├── 📄 forest-path.webp
-> │                ├── 📄 galaxy.png
-> │                ├── 📄 galaxy.webp
-> │                ├── 📄 mountain-landscape.webp
-> │                ├── 📄 mountains-clouds.png
-> │                ├── 📄 mountains-clouds.webp
-> │                ├── 📄 mountains.png
-> │                ├── 📄 mountains.webp
-> │                ├── 📄 ocean-view.webp
-> │                ├── 📄 sound.wav
-> │                ├── 📄 spring-flowers.webp
-> │                ├── 📄 summer-beach.webp
-> │                ├── 📄 sunset.webp
-> │                ├── 📄 vault-cms-cover.webp
-> │                ├── 📄 video.mp4
-> │                ├── 📄 winter-landscape.webp
-> │              └── 📂 sample-folder-based-post/
-> │                ├── 📄 forest.png
-> │                ├── 📄 forest.webp
-> │                ├── 📄 lush-forest.webp
-> │              └── 📂 sample-folder-post/
-> │                ├── 📄 forest.png
-> │                ├── 📄 sample-image.jpg
-> │            └── 📂 projects/
-> │              └── 📂 another-project/
-> │                ├── 📄 hero.png
-> │              └── 📂 attachments/
-> │                ├── 📄 rock.png
-> │                ├── 📄 rock.webp
-> │              └── 📂 obsidian-astro-suite/
-> │                ├── 📄 glacier.png
-> │                ├── 📄 glacier.webp
-> │              └── 📂 vault-cms/
-> │                ├── 📄 glacier.webp
-> │            └── 📂 scripts/
-> │              ├── 📄 category-filtering.js
-> │          └── 📂 scripts/
-> │            ├── 📄 check-missing-images.js
-> │            ├── 📄 dev-with-port.js
-> │            ├── 📄 generate-deployment-config.js
-> │            ├── 📄 generate-graph-data.js
-> │            ├── 📄 get-deployment-platform.js
-> │            ├── 📄 get-version.js
-> │            ├── 📄 process-aliases.js
-> │            ├── 📄 setup-dev.mjs
-> │            ├── 📄 sync-images.js
-> │          └── 📂 src/
-> │            └── 📂 components/
-> │              ├── 📄 BaseTable.astro
-> │              ├── 📄 Button.astro
-> │              ├── 📄 CategoryFilter.astro
-> │              ├── 📄 CommandPalette.astro
-> │              ├── 📄 DocsSidebar.astro
-> │              ├── 📄 DocumentationCard.astro
-> │              ├── 📄 GiscusComments.astro
-> │              ├── 📄 GraphModal.astro
-> │              ├── 📄 Icon.astro
-> │              ├── 📄 ImageGallery.astro
-> │              ├── 📄 ImageGalleryManager.astro
-> │              ├── 📄 ImageWrapper.astro
-> │              ├── 📄 Lightbox.astro
-> │              ├── 📄 LinkedMentions.astro
-> │              ├── 📄 LocalGraph.astro
-> │              ├── 📄 MermaidDiagram.astro
-> │              ├── 📄 Pagination.astro
-> │              ├── 📄 PostCard.astro
-> │              ├── 📄 PostContent.astro
-> │              ├── 📄 ProjectCard.astro
-> │              ├── 📄 ProjectCategories.astro
-> │              ├── 📄 ScrollToTop.astro
-> │              ├── 📄 SearchResults.astro
-> │              ├── 📄 TableOfContents.astro
-> │              ├── 📄 Tags.astro
-> │              ├── 📄 ThemeSelector.astro
-> │              ├── 📄 ThemeToggle.astro
-> │            └── 📂 config/
-> │            ├── 📄 config.ts
-> │              ├── 📄 dev.ts
-> │            └── 📂 content/
-> │            ├── 📄 content.config.ts
-> │              └── 📂 bases/
-> │                ├── 📄 Home.base
-> │              └── 📂 docs/
-> │                ├── 📄 api.md
-> │                └── 📂 attachments/
-> │                  ├── 📄 astro-modular-configuration.png
-> │                  ├── 📄 obsidian-cover.png
-> │                ├── 📄 configuration.md
-> │                ├── 📄 installing-obsidian.md
-> │                └── 📂 sourcetree-and-git-setup/
-> │                  ├── 📄 index.md
-> │                  ├── 📄 sourcetree.png
-> │              └── 📂 pages/
-> │                ├── 📄 about.md
-> │                └── 📂 attachments/
-> │                  ├── 📄 water.png
-> │                ├── 📄 contact.md
-> │                ├── 📄 privacy-policy.md
-> │                ├── 📄 thank-you.md
-> │              └── 📂 posts/
-> │                └── 📂 attachments/
-> │                  ├── 📄 autumn-leaves.jpg
-> │                  ├── 📄 city-skyline.jpg
-> │                  ├── 📄 desert-sunset.jpg
-> │                  ├── 📄 document.pdf
-> │                  ├── 📄 forest-path.jpg
-> │                  ├── 📄 galaxy.png
-> │                  ├── 📄 mountain-landscape.jpg
-> │                  ├── 📄 mountains-clouds.png
-> │                  ├── 📄 mountains.png
-> │                  ├── 📄 ocean-view.jpg
-> │                  ├── 📄 sound.wav
-> │                  ├── 📄 spring-flowers.jpg
-> │                  ├── 📄 summer-beach.jpg
-> │                  ├── 📄 sunset.png
-> │                  ├── 📄 vault-cms-cover.png
-> │                  ├── 📄 video.mp4
-> │                  ├── 📄 winter-landscape.jpg
-> │                ├── 📄 formatting-reference.md
-> │                ├── 📄 getting-started.md
-> │                ├── 📄 obsidian-embeds-demo.md
-> │                └── 📂 sample-folder-based-post/
-> │                  └── 📂 attachments/
-> │                    ├── 📄 lush-forest.jpg
-> │                  ├── 📄 forest.png
-> │                  ├── 📄 index.md
-> │                ├── 📄 vault-cms-guide.md
-> │              └── 📂 projects/
-> │                ├── 📄 astro-composer.md
-> │                └── 📂 attachments/
-> │                  ├── 📄 rock.png
-> │                └── 📂 vault-cms/
-> │                  ├── 📄 glacier.png
-> │                  ├── 📄 index.md
-> │              └── 📂 special/
-> │                ├── 📄 docs.md
-> │                ├── 📄 home.md
-> │                ├── 📄 posts.md
-> │                ├── 📄 projects.md
-> │            ├── 📄 env.d.ts
-> │            └── 📂 layouts/
-> │              ├── 📄 BaseLayout.astro
-> │              ├── 📄 DocumentationLayout.astro
-> │              ├── 📄 PageLayout.astro
-> │              ├── 📄 PostLayout.astro
-> │              ├── 📄 ProjectLayout.astro
-> │            └── 📂 pages/
-> │              ├── 📄 [...slug].astro
-> │              └── 📂 api/
-> │                ├── 📄 docs.json.ts
-> │                ├── 📄 files.json.ts
-> │                ├── 📄 og-image.ts
-> │                ├── 📄 pages.json.ts
-> │                ├── 📄 posts.json.ts
-> │                ├── 📄 projects.json.ts
-> │              └── 📂 docs/
-> │                ├── 📄 [...slug].astro
-> │                ├── 📄 index.astro
-> │              ├── 📄 feed.xml.ts
-> │              ├── 📄 index.astro
-> │              ├── 📄 llms.txt.ts
-> │              └── 📂 posts/
-> │                ├── 📄 [...slug].astro
-> │                ├── 📄 [page].astro
-> │                ├── 📄 index.astro
-> │                └── 📂 tag/
-> │                  └── 📂 [...tag]/
-> │                  ├── 📄 [...tag].astro
-> │                    ├── 📄 [page].astro
-> │              └── 📂 projects/
-> │                ├── 📄 [...slug].astro
-> │                ├── 📄 index.astro
-> │              ├── 📄 robots.txt.ts
-> │              ├── 📄 rss.xml.ts
-> │              ├── 📄 sitemap.xml.ts
-> │            └── 📂 scripts/
-> │              ├── 📄 base-embeds-client.ts
-> │              ├── 📄 mermaid-client.ts
-> │            └── 📂 styles/
-> │              ├── 📄 global.css
-> │            └── 📂 themes/
-> │              └── 📂 custom/
-> │                ├── 📄 custom.ts
-> │              ├── 📄 index.ts
-> │            ├── 📄 types.ts
-> │            └── 📂 utils/
-> │              ├── 📄 categories.ts
-> │              ├── 📄 graph-theme-colors.ts
-> │              ├── 📄 images.ts
-> │              ├── 📄 internallinks.ts
-> │              ├── 📄 markdown.ts
-> │              ├── 📄 mermaid.ts
-> │              ├── 📄 navigation.ts
-> │              ├── 📄 rehype-image-attributes.ts
-> │              ├── 📄 rehype-mark.ts
-> │              ├── 📄 rehype-normalize-anchors.ts
-> │              ├── 📄 remark-bases.ts
-> │              ├── 📄 remark-callouts.ts
-> │              ├── 📄 remark-image-grids.ts
-> │              ├── 📄 remark-inline-tags.ts
-> │              ├── 📄 remark-mermaid.ts
-> │              ├── 📄 remark-obsidian-comments.ts
-> │              ├── 📄 remark-obsidian-embeds.ts
-> │              ├── 📄 remark-obsidian-image-size.ts
-> │              ├── 📄 seo.ts
-> │              ├── 📄 status.ts
-> │              ├── 📄 theme.ts
-> │          ├── 📄 tailwind.config.mjs
-> │          ├── 📄 tsconfig.json
-> │          ├── 📄 vite.config.mjs
-> │        └── 📂 qibp/
-> │          ├── 📄 README.md
-> │          ├── 📄 app.jsx
-> │          ├── 📄 index.html
-> │          ├── 📄 main.jsx
-> │          ├── 📄 manifest.json
-> │          ├── 📄 package-lock.json
-> │          ├── 📄 package.json
-> │          └── 📂 public/
-> │            ├── 📄 QiBPAppIcon.png
-> │            ├── 📄 _redirects
-> │            ├── 📄 introvideo.mp4
-> │          ├── 📄 tailwind.config.js
-> │          ├── 📄 vite.config.js
-> │        └── 📂 qicare/
-> │          └── 📂 QiHabitSync/
-> │            ├── 📄 README.md
-> │            ├── 📄 index.html
-> │            ├── 📄 supabase_setup.sql
-> │          ├── 📄 index.html
-> │          └── 📂 lib/
-> │            ├── 📄 db.js
-> │            ├── 📄 supabase.js
-> │          ├── 📄 package.json
-> │          └── 📂 public/
-> │            └── 📂 assets/
-> │              ├── 📄 QiBPAppIcon.png
-> │              ├── 📄 introvideo.mp4
-> │            └── 📂 kb/
-> │              └── 📂 01_medical/
-> │                ├── 📄 index.html
-> │              └── 📂 02_legal/
-> │                ├── 📄 index.html
-> │              └── 📂 03_financial/
-> │                ├── 📄 index.html
-> │              └── 📂 04_housing/
-> │                ├── 📄 index.html
-> │              └── 📂 05_daily_care/
-> │                ├── 📄 index.html
-> │              └── 📂 06_contacts/
-> │                ├── 📄 index.html
-> │              └── 📂 07_vault/
-> │                ├── 📄 index.html
-> │              └── 📂 08_caregiver/
-> │                ├── 📄 index.html
-> │              └── 📂 binder/
-> │                └── 📂 01_emergency_protocol/
-> │                  ├── 📄 index.html
-> │                └── 📂 02_healthcare_representative/
-> │                  ├── 📄 index.html
-> │                └── 📂 03_hipaa_living_will/
-> │                  ├── 📄 index.html
-> │                └── 📂 04_emergency_access/
-> │                  ├── 📄 index.html
-> │                └── 📂 05_durable_poa_financial/
-> │                  ├── 📄 index.html
-> │                └── 📂 06_estate_interim_authority/
-> │                  ├── 📄 index.html
-> │                └── 📂 07_incident_log/
-> │                  ├── 📄 index.html
-> │                └── 📂 08_execution_notary/
-> │                  ├── 📄 index.html
-> │                └── 📂 09_labels/
-> │                  ├── 📄 index.html
-> │                └── 📂 10_executed_docs/
-> │                  ├── 📄 index.html
-> │                └── 📂 assets/
-> │                  └── 📂 css/
-> │                    ├── 📄 manual.css
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │            ├── 📄 manifest.json
-> │          └── 📂 qi-bp/
-> │            ├── 📄 README.md
-> │            ├── 📄 app.jsx
-> │            ├── 📄 index.html
-> │            ├── 📄 main.jsx
-> │            ├── 📄 manifest.json
-> │            ├── 📄 package.json
-> │            └── 📂 public/
-> │              ├── 📄 QiBPAppIcon.png
-> │              ├── 📄 _redirects
-> │              ├── 📄 introvideo.mp4
-> │            ├── 📄 tailwind.config.js
-> │            ├── 📄 vite.config.js
-> │          ├── 📄 schema.sql
-> │          ├── 📄 seed.sql
-> │          └── 📂 server/
-> │            ├── 📄 index.js
-> │          └── 📂 src/
-> │            ├── 📄 app.tsx
-> │            └── 📂 components/
-> │              ├── 📄 BPTracker.jsx
-> │              ├── 📄 layout.tsx
-> │              ├── 📄 require_auth.tsx
-> │            ├── 📄 env.d.ts
-> │            ├── 📄 index.css
-> │            └── 📂 lib/
-> │              ├── 📄 access.ts
-> │              ├── 📄 api.ts
-> │              ├── 📄 money.ts
-> │              ├── 📄 supabase.ts
-> │            ├── 📄 main.tsx
-> │            └── 📂 modules/
-> │              └── 📂 qichronicle/
-> │                ├── 📄 README.md
-> │                ├── 📄 helper.ts
-> │                ├── 📄 index.tsx
-> │                └── 📂 pages/
-> │                  ├── 📄 calendar.tsx
-> │                  ├── 📄 event_form.tsx
-> │                  ├── 📄 list.tsx
-> │                  ├── 📄 timeline.tsx
-> │              └── 📂 qihome/
-> │                ├── 📄 index.tsx
-> │                └── 📂 pages/
-> │                  ├── 📄 chores.tsx
-> │                  ├── 📄 dashboard.tsx
-> │                  ├── 📄 ledger.tsx
-> │              ├── 📄 registry.ts
-> │            └── 📂 routes/
-> │              ├── 📄 auth.tsx
-> │              ├── 📄 auth_confirm.tsx
-> │              ├── 📄 launcher.tsx
-> │              ├── 📄 module_router.tsx
-> │              ├── 📄 tenant_home.tsx
-> │              ├── 📄 tenant_select.tsx
-> │              ├── 📄 tenant_settings.tsx
-> │          ├── 📄 supabase_schema.sql
-> │          ├── 📄 tsconfig.json
-> │          ├── 📄 utils.ts
-> │          ├── 📄 vite.config.ts
-> │        └── 📂 qicases/
-> │          ├── 📄 README.md
-> │          ├── 📄 eslint.config.js
-> │          ├── 📄 index.html
-> │          ├── 📄 package-lock.json
-> │          ├── 📄 package.json
-> │          └── 📂 public/
-> │            ├── 📄 vite.svg
-> │          ├── 📄 railway.json
-> │          └── 📂 src/
-> │            ├── 📄 App.css
-> │            ├── 📄 App.tsx
-> │            └── 📂 assets/
-> │              ├── 📄 react.svg
-> │            ├── 📄 index.css
-> │            ├── 📄 main.tsx
-> │            ├── 📄 vite-env.d.ts
-> │          └── 📂 timeline/
-> │            └── 📂 assets/
-> │            ├── 📄 build_and_dev.py
-> │            └── 📂 content/
-> │              └── 📂 2026-03-15_QiArchive-Alpha/
-> │                ├── 📄 architecture.png
-> │                ├── 📄 index.md
-> │              └── 📂 2026-03-20_Client-Meeting/
-> │                ├── 📄 audio-memo.mp3
-> │                ├── 📄 index.md
-> │              └── 📂 2026-03-28_Constitutional_Memo/
-> │                ├── 📄 A_Judgment_on_Trial.mp4
-> │                ├── 📄 A_Judgment_on_Trial_web.mp4
-> │                ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade.m4a
-> │                ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web.mp3
-> │                ├── 📄 Voiding_foreclosure_when_banks_ignore_disability.m4a
-> │                ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web.mp3
-> │                ├── 📄 index.md
-> │                ├── 📄 infographic.png
-> │            ├── 📄 index.html
-> │            └── 📂 public/
-> │              └── 📂 content/
-> │                └── 📂 2026-03-15_QiArchive-Alpha/
-> │                  ├── 📄 architecture.png
-> │                └── 📂 2026-03-20_Client-Meeting/
-> │                └── 📂 2026-03-28_Constitutional_Memo/
-> │                  ├── 📄 A_Judgment_on_Trial_web.mp4
-> │                  ├── 📄 A_Judgment_on_Trial_web_web.mp4
-> │                  ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web.mp3
-> │                  ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web_web.mp3
-> │                  ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web.mp3
-> │                  ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web_web.mp3
-> │                  ├── 📄 infographic.png
-> │              ├── 📄 timeline.json
-> │            ├── 📄 run.bat
-> │            └── 📂 src/
-> │              ├── 📄 App.jsx
-> │            ├── 📄 timeline.json
-> │          ├── 📄 tsconfig.app.json
-> │          ├── 📄 tsconfig.json
-> │          ├── 📄 tsconfig.node.json
-> │          ├── 📄 vite.config.ts
-> │        └── 📂 qichronicle/
-> │          ├── 📄 utils.ts
-> │        └── 📂 qicockpit/
-> │          ├── 📄 utils.ts
-> │        └── 📂 qicontacts/
-> │          ├── 📄 LICENSE
-> │          ├── 📄 Makefile
-> │          └── 📂 QiCase/
-> │            ├── 📄 LICENSE
-> │            ├── 📄 README.md
-> │            └── 📂 api/
-> │              ├── 📄 Dockerfile
-> │              ├── 📄 README.md
-> │              ├── 📄 deploy_log.txt
-> │              ├── 📄 package.json
-> │              └── 📂 src/
-> │                ├── 📄 index.ts
-> │                └── 📂 lib/
-> │                  ├── 📄 auth.ts
-> │                  ├── 📄 context.ts
-> │                  ├── 📄 db.ts
-> │                  ├── 📄 email.ts
-> │                  ├── 📄 env.ts
-> │                  ├── 📄 middleware.ts
-> │                  ├── 📄 trpc.ts
-> │                ├── 📄 router.ts
-> │                └── 📂 routers/
-> │                  ├── 📄 case.ts
-> │                  ├── 📄 organization.ts
-> │                  ├── 📄 user.ts
-> │                ├── 📄 worker.ts
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 wrangler.jsonc
-> │            └── 📂 app/
-> │              ├── 📄 README.md
-> │              ├── 📄 build_out.txt
-> │              ├── 📄 index.html
-> │              ├── 📄 package.json
-> │              ├── 📄 postcss.config.js
-> │              └── 📂 public/
-> │                ├── 📄 favicon.ico
-> │                ├── 📄 logo192.png
-> │                ├── 📄 logo512.png
-> │                ├── 📄 robots.txt
-> │                ├── 📄 site.manifest
-> │              └── 📂 src/
-> │                └── 📂 components/
-> │                  ├── 📄 EntityForm.tsx
-> │                  └── 📂 auth/
-> │                    ├── 📄 auth-error-boundary.tsx
-> │                    ├── 📄 auth-form.tsx
-> │                    ├── 📄 google-login.tsx
-> │                    ├── 📄 index.ts
-> │                    ├── 📄 login-dialog.tsx
-> │                    ├── 📄 otp-verification.tsx
-> │                    ├── 📄 passkey-login.tsx
-> │                    ├── 📄 use-auth-form.ts
-> │                  ├── 📄 error.tsx
-> │                  ├── 📄 index.ts
-> │                  └── 📂 layout/
-> │                    ├── 📄 constants.ts
-> │                    ├── 📄 header.tsx
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 sidebar-nav.tsx
-> │                    ├── 📄 sidebar.tsx
-> │                  └── 📂 ui/
-> │                    ├── 📄 avatar.tsx
-> │                    ├── 📄 badge.tsx
-> │                    ├── 📄 button.tsx
-> │                    ├── 📄 card.tsx
-> │                    ├── 📄 checkbox.tsx
-> │                    ├── 📄 dialog.tsx
-> │                    ├── 📄 form.tsx
-> │                    ├── 📄 input.tsx
-> │                    ├── 📄 label.tsx
-> │                    ├── 📄 radio-group.tsx
-> │                    ├── 📄 scroll-area.tsx
-> │                    ├── 📄 select.tsx
-> │                    ├── 📄 separator.tsx
-> │                    ├── 📄 skeleton.tsx
-> │                    ├── 📄 slider.tsx
-> │                    ├── 📄 switch.tsx
-> │                    ├── 📄 tabs.tsx
-> │                    ├── 📄 textarea.tsx
-> │                  ├── 📄 user-menu.tsx
-> │                └── 📂 hooks/
-> │                  ├── 📄 index.ts
-> │                └── 📂 lib/
-> │                  └── 📂 auth/
-> │                    ├── 📄 auth-config.ts
-> │                    ├── 📄 auth.ts
-> │                  ├── 📄 query.ts
-> │                  ├── 📄 trpc.ts
-> │                  ├── 📄 utils.ts
-> │                ├── 📄 main.tsx
-> │                ├── 📄 routeTree.gen.ts
-> │                └── 📂 routes/
-> │                  └── 📂 (app)/
-> │                    ├── 📄 about.tsx
-> │                    ├── 📄 analytics.tsx
-> │                    ├── 📄 dashboard.tsx
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 library.tsx
-> │                    ├── 📄 phases.tsx
-> │                    ├── 📄 reports.tsx
-> │                    ├── 📄 resources.tsx
-> │                    ├── 📄 route.tsx
-> │                    ├── 📄 settings.tsx
-> │                    ├── 📄 table-data.tsx
-> │                    ├── 📄 timeline.tsx
-> │                    ├── 📄 users.tsx
-> │                  └── 📂 (auth)/
-> │                    ├── 📄 login.tsx
-> │                    ├── 📄 signup.tsx
-> │                  ├── 📄 __root.tsx
-> │                └── 📂 styles/
-> │                  ├── 📄 globals.css
-> │              ├── 📄 tsconfig.json
-> │              └── 📂 ui/
-> │                ├── 📄 index.ts
-> │                └── 📂 lib/
-> │                  ├── 📄 utils.ts
-> │              ├── 📄 vite.config.ts
-> │              ├── 📄 wrangler.jsonc
-> │            └── 📂 assets/
-> │              ├── 📄 logo.png
-> │            └── 📂 db/
-> │              ├── 📄 README.md
-> │              ├── 📄 index.ts
-> │              └── 📂 legacy/
-> │                └── 📂 supabase/
-> │                  ├── 📄 supabase_migration.sql
-> │                  ├── 📄 supabase_migration_consolidated.sql
-> │                  ├── 📄 supabase_migration_full_init.sql
-> │                  ├── 📄 supabase_migration_rls_fix.sql
-> │                  ├── 📄 supabase_migration_v2.sql
-> │                  ├── 📄 supabase_migration_v3.sql
-> │                  ├── 📄 supabase_migration_v3_resources.sql
-> │                  ├── 📄 supabase_migration_v4.sql
-> │              ├── 📄 package.json
-> │              └── 📂 schema/
-> │                ├── 📄 case.ts
-> │                ├── 📄 index.ts
-> │                ├── 📄 invitation.ts
-> │                ├── 📄 organization.ts
-> │                ├── 📄 passkey.ts
-> │                ├── 📄 team.ts
-> │                ├── 📄 user.ts
-> │              └── 📂 scripts/
-> │                ├── 📄 check_db_content.ts
-> │                ├── 📄 export.ts
-> │                ├── 📄 generate-auth-schema.ts
-> │                ├── 📄 import_trackers.ts
-> │                ├── 📄 seed.ts
-> │                ├── 📄 setup-extensions.sql
-> │              └── 📂 seeds/
-> │                ├── 📄 users.ts
-> │              └── 📂 tsconfig-base/
-> │                ├── 📄 base.jsonc
-> │                ├── 📄 cloudflare.jsonc
-> │                ├── 📄 node.jsonc
-> │                ├── 📄 react.jsonc
-> │              ├── 📄 tsconfig.json
-> │            └── 📂 docs/
-> │              └── 📂 adr/
-> │                ├── 📄 000-template.md
-> │                ├── 📄 001-auth-hint-cookie.md
-> │              ├── 📄 database-schema.md
-> │              ├── 📄 deployment.md
-> │              ├── 📄 getting-started.md
-> │              ├── 📄 index.md
-> │              └── 📂 public/
-> │                ├── 📄 CNAME
-> │              └── 📂 security/
-> │                ├── 📄 SECURITY.template.md
-> │                ├── 📄 checklist.md
-> │                ├── 📄 incident-playbook.md
-> │              └── 📂 specs/
-> │                ├── 📄 auth-form.md
-> │                ├── 📄 infra-terraform.md
-> │              ├── 📄 ui-components.md
-> │            ├── 📄 drizzle.config.ts
-> │            ├── 📄 dump_tree_with_ocr.py
-> │            ├── 📄 package.json
-> │            ├── 📄 vizvibe.mmd
-> │          └── 📂 QiLitigation/
-> │            ├── 📄 DEPLOYMENT.md
-> │            ├── 📄 README.md
-> │            ├── 📄 debug-build.sh
-> │            └── 📂 files-legal AI coach/
-> │              ├── 📄 README.md
-> │              └── 📂 backend/
-> │                ├── 📄 app.py
-> │                ├── 📄 coach_logic.py
-> │                ├── 📄 langchain_agent.py
-> │                ├── 📄 main.py
-> │              └── 📂 frontend/
-> │                ├── 📄 App.jsx
-> │                ├── 📄 README.md
-> │                └── 📂 public/
-> │                  ├── 📄 index.html
-> │                └── 📂 src/
-> │                  ├── 📄 App.jsx
-> │                  └── 📂 components/
-> │                    └── 📂 Chats/
-> │                      ├── 📄 ChatWindow.jsx
-> │                      ├── 📄 SavedChats.jsx
-> │                    └── 📂 Documents/
-> │                      ├── 📄 DocumentList.jsx
-> │                      ├── 📄 DocumentUpload.jsx
-> │                    └── 📂 Evidence/
-> │                      ├── 📄 EvidenceList.jsx
-> │                      ├── 📄 EvidenceUpload.jsx
-> │                    └── 📂 Goals/
-> │                      ├── 📄 AddGoalForm.jsx
-> │                      ├── 📄 GoalsList.jsx
-> │                    └── 📂 Layout/
-> │                      ├── 📄 Header.jsx
-> │                      ├── 📄 Sidebar.jsx
-> │                    └── 📂 Timeline/
-> │                      ├── 📄 TimelineView.jsx
-> │                  └── 📂 context/
-> │                    ├── 📄 AppContext.js
-> │                  └── 📂 hooks/
-> │                    ├── 📄 useChats.js
-> │                    ├── 📄 useDocuments.js
-> │                    ├── 📄 useEvidence.js
-> │                    ├── 📄 useGoals.js
-> │                    ├── 📄 useTimeline.js
-> │                  ├── 📄 index.js
-> │                  └── 📂 pages/
-> │                    ├── 📄 ChatsPage.jsx
-> │                    ├── 📄 Dashboard.jsx
-> │                    ├── 📄 DocumentsPage.jsx
-> │                    ├── 📄 EvidencePage.jsx
-> │                    ├── 📄 GoalsPage.jsx
-> │                    ├── 📄 TimelinePage.jsx
-> │                  └── 📂 styles/
-> │                    ├── 📄 main.css
-> │                    ├── 📄 theme.js
-> │              ├── 📄 project-overview.md
-> │              ├── 📄 requirements.txt
-> │              ├── 📄 step-by-step-guide-for-new-users.md
-> │            ├── 📄 fix_imports.js
-> │            ├── 📄 package.json
-> │            └── 📂 public/
-> │              ├── 📄 _redirects
-> │              ├── 📄 config.json
-> │              ├── 📄 index.html
-> │              ├── 📄 manifest.json
-> │            ├── 📄 render.yaml
-> │            └── 📂 src/
-> │              ├── 📄 App.tsx
-> │              └── 📂 components/
-> │                ├── 📄 AIAssistantPanel.tsx
-> │                ├── 📄 CollaborationPanel.tsx
-> │                ├── 📄 ErrorBoundary.tsx
-> │                ├── 📄 Layout.tsx
-> │                ├── 📄 PrivateRoute.tsx
-> │              └── 📂 contexts/
-> │                ├── 📄 AuthContext.tsx
-> │                ├── 📄 LoadingContext.tsx
-> │                ├── 📄 NotificationContext.tsx
-> │              ├── 📄 index.css
-> │              ├── 📄 index.tsx
-> │              └── 📂 lib/
-> │                ├── 📄 supabase.ts
-> │              └── 📂 pages/
-> │                ├── 📄 AIAssistant.tsx
-> │                ├── 📄 Attorneys.tsx
-> │                ├── 📄 Billing.tsx
-> │                ├── 📄 Calendar.tsx
-> │                ├── 📄 Calendar.tsx.backup
-> │                ├── 📄 Calendar_enhanced_problematic.tsx
-> │                ├── 📄 Calendar_temp.tsx
-> │                ├── 📄 CaseDetail.tsx
-> │                ├── 📄 Cases.tsx
-> │                ├── 📄 Cases.tsx.backup
-> │                ├── 📄 ClientDetail.tsx
-> │                ├── 📄 ClientPortal.tsx
-> │                ├── 📄 Clients.tsx
-> │                ├── 📄 Dashboard.tsx
-> │                ├── 📄 Dashboard.tsx.backup
-> │                ├── 📄 DeadlineCalculator.tsx
-> │                ├── 📄 DeadlineCalculator.tsx.backup
-> │                ├── 📄 Documents.tsx
-> │                ├── 📄 Firms.tsx
-> │                ├── 📄 Login.tsx
-> │                ├── 📄 NewCase.tsx
-> │                ├── 📄 Permissions.tsx
-> │                ├── 📄 Settings.tsx
-> │                ├── 📄 System.tsx
-> │                ├── 📄 Tasks.tsx
-> │                ├── 📄 Users.tsx
-> │                ├── 📄 temp_calendar_part1.tsx
-> │                ├── 📄 temp_render_method.txt
-> │              └── 📂 redux/
-> │                ├── 📄 store.ts
-> │              ├── 📄 setupProxy.js
-> │              └── 📂 utils/
-> │                ├── 📄 api.ts
-> │                ├── 📄 config.ts
-> │                ├── 📄 rbac.ts
-> │            └── 📂 supabase/
-> │              ├── 📄 schema.sql
-> │            ├── 📄 tsconfig.json
-> │            ├── 📄 vizvibe.mmd
-> │          ├── 📄 README.md
-> │          ├── 📄 README.md.merge_1771318730
-> │          ├── 📄 SETUP.md
-> │          ├── 📄 _Immigration Support Systems.md
-> │          └── 📂 accounts/
-> │            ├── 📄 admin.py
-> │            ├── 📄 apps.py
-> │            ├── 📄 forms.py
-> │            ├── 📄 models.py
-> │            ├── 📄 signals.py
-> │            ├── 📄 tests.py
-> │            ├── 📄 urls.py
-> │            ├── 📄 views.py
-> │          └── 📂 api/
-> │            ├── 📄 app.py
-> │          └── 📂 cases/
-> │            ├── 📄 admin.py
-> │            ├── 📄 apps.py
-> │            ├── 📄 forms.py
-> │            └── 📂 management/
-> │              └── 📂 commands/
-> │                ├── 📄 send_due_cases.py
-> │            └── 📂 models/
-> │              ├── 📄 __init__.py
-> │              ├── 📄 billing.py
-> │              ├── 📄 cases.py
-> │            ├── 📄 signals.py
-> │            ├── 📄 tasks.py
-> │            ├── 📄 urls.py
-> │            └── 📂 views/
-> │              ├── 📄 __init__.py
-> │              ├── 📄 billing.py
-> │              ├── 📄 cases.py
-> │          └── 📂 contacts/
-> │            ├── 📄 apps.py
-> │            ├── 📄 models.py
-> │            ├── 📄 urls.py
-> │            ├── 📄 views.py
-> │          └── 📂 contracts/
-> │            ├── 📄 apps.py
-> │          └── 📂 core/
-> │            ├── 📄 __init__.py
-> │            ├── 📄 asgi.py
-> │            ├── 📄 celery.py
-> │            ├── 📄 context_processors.py
-> │            ├── 📄 settings.py
-> │            ├── 📄 urls.py
-> │            ├── 📄 wsgi.py
-> │          └── 📂 crm/
-> │            ├── 📄 apps.py
-> │            ├── 📄 models.py
-> │          └── 📂 dashboard/
-> │            ├── 📄 admin.py
-> │            ├── 📄 apps.py
-> │            ├── 📄 urls.py
-> │            ├── 📄 views.py
-> │          └── 📂 hrm/
-> │            ├── 📄 apps.py
-> │            ├── 📄 models.py
-> │            ├── 📄 views.py
-> │          ├── 📄 legal-research-tool-interface-demo.png
-> │          ├── 📄 manage.py
-> │          ├── 📄 requirements.txt
-> │          ├── 📄 run.sh
-> │          └── 📂 src/
-> │            ├── 📄 __init__.py
-> │            └── 📂 core/
-> │              ├── 📄 agent.py
-> │              ├── 📄 rag_pipeline.py
-> │            └── 📂 generation/
-> │              ├── 📄 model_provider.py
-> │              ├── 📄 rag_prompt_tools.py
-> │            └── 📂 storage/
-> │              ├── 📄 caches.py
-> │              ├── 📄 database_manager.py
-> │              ├── 📄 sql_classes.py
-> │              ├── 📄 vector_database.py
-> │            └── 📂 utils/
-> │              ├── 📄 canlii_search.py
-> │          └── 📂 static/
-> │            └── 📂 assets/
-> │              └── 📂 img/
-> │                ├── 📄 AdminLTEFullLogo.png
-> │                ├── 📄 AdminLTELogo.png
-> │                ├── 📄 avatar.png
-> │                ├── 📄 avatar2.png
-> │                ├── 📄 avatar3.png
-> │                ├── 📄 avatar4.png
-> │                ├── 📄 avatar5.png
-> │                ├── 📄 boxed-bg.jpg
-> │                ├── 📄 boxed-bg.png
-> │                └── 📂 credit/
-> │                  ├── 📄 american-express.png
-> │                  ├── 📄 cirrus.png
-> │                  ├── 📄 mastercard.png
-> │                  ├── 📄 paypal.png
-> │                  ├── 📄 paypal2.png
-> │                  ├── 📄 visa.png
-> │                ├── 📄 default-150x150.png
-> │                ├── 📄 icons.png
-> │                ├── 📄 photo1.png
-> │                ├── 📄 photo2.png
-> │                ├── 📄 photo3.jpg
-> │                ├── 📄 photo4.jpg
-> │                ├── 📄 prod-1.jpg
-> │                ├── 📄 prod-2.jpg
-> │                ├── 📄 prod-3.jpg
-> │                ├── 📄 prod-4.jpg
-> │                ├── 📄 prod-5.jpg
-> │                ├── 📄 user1-128x128.jpg
-> │                ├── 📄 user2-160x160.jpg
-> │                ├── 📄 user3-128x128.jpg
-> │                ├── 📄 user4-128x128.jpg
-> │                ├── 📄 user5-128x128.jpg
-> │                ├── 📄 user6-128x128.jpg
-> │                ├── 📄 user7-128x128.jpg
-> │                ├── 📄 user8-128x128.jpg
-> │            └── 📂 css/
-> │              ├── 📄 adminlte.css
-> │              ├── 📄 adminlte.css.map
-> │              ├── 📄 adminlte.min.css
-> │              ├── 📄 adminlte.min.css.map
-> │              ├── 📄 adminlte.rtl.css
-> │              ├── 📄 adminlte.rtl.css.map
-> │              ├── 📄 adminlte.rtl.min.css
-> │              ├── 📄 adminlte.rtl.min.css.map
-> │              ├── 📄 bootstrap-grid.css
-> │              ├── 📄 bootstrap-grid.css.map
-> │              ├── 📄 bootstrap-grid.min.css
-> │              ├── 📄 bootstrap-grid.min.css.map
-> │              ├── 📄 bootstrap-grid.rtl.css
-> │              ├── 📄 bootstrap-grid.rtl.css.map
-> │              ├── 📄 bootstrap-grid.rtl.min.css
-> │              ├── 📄 bootstrap-grid.rtl.min.css.map
-> │              ├── 📄 bootstrap-reboot.css
-> │              ├── 📄 bootstrap-reboot.css.map
-> │              ├── 📄 bootstrap-reboot.min.css
-> │              ├── 📄 bootstrap-reboot.min.css.map
-> │              ├── 📄 bootstrap-reboot.rtl.css
-> │              ├── 📄 bootstrap-reboot.rtl.css.map
-> │              ├── 📄 bootstrap-reboot.rtl.min.css
-> │              ├── 📄 bootstrap-reboot.rtl.min.css.map
-> │              ├── 📄 bootstrap-utilities.css
-> │              ├── 📄 bootstrap-utilities.css.map
-> │              ├── 📄 bootstrap-utilities.min.css
-> │              ├── 📄 bootstrap-utilities.min.css.map
-> │              ├── 📄 bootstrap-utilities.rtl.css
-> │              ├── 📄 bootstrap-utilities.rtl.css.map
-> │              ├── 📄 bootstrap-utilities.rtl.min.css
-> │              ├── 📄 bootstrap-utilities.rtl.min.css.map
-> │              ├── 📄 bootstrap.css
-> │              ├── 📄 bootstrap.css.map
-> │              ├── 📄 bootstrap.min.css
-> │              ├── 📄 bootstrap.min.css.map
-> │              ├── 📄 bootstrap.rtl.css
-> │              ├── 📄 bootstrap.rtl.css.map
-> │              ├── 📄 bootstrap.rtl.min.css
-> │              ├── 📄 bootstrap.rtl.min.css.map
-> │              ├── 📄 custom.css
-> │            └── 📂 js/
-> │              ├── 📄 adminlte.js
-> │              ├── 📄 adminlte.js.map
-> │              ├── 📄 adminlte.min.js
-> │              ├── 📄 adminlte.min.js.map
-> │              ├── 📄 bootstrap.bundle.js
-> │              ├── 📄 bootstrap.esm.min.js
-> │              ├── 📄 bootstrap.min.js.map
-> │              ├── 📄 jquery.min.js
-> │            └── 📂 plugins/
-> │              ├── 📄 bootstrap.bundle.js.map
-> │              ├── 📄 bootstrap.bundle.min.js
-> │              ├── 📄 bootstrap.bundle.min.js.map
-> │              ├── 📄 bootstrap.esm.js
-> │              ├── 📄 bootstrap.esm.js.map
-> │              ├── 📄 bootstrap.esm.min.js.map
-> │              ├── 📄 bootstrap.js
-> │              ├── 📄 bootstrap.js.map
-> │              ├── 📄 bootstrap.min.js
-> │          └── 📂 staticfiles/
-> │            └── 📂 admin/
-> │              └── 📂 css/
-> │                ├── 📄 autocomplete.css
-> │                ├── 📄 base.css
-> │                ├── 📄 changelists.css
-> │                ├── 📄 dark_mode.css
-> │                ├── 📄 dashboard.css
-> │                ├── 📄 forms.css
-> │                ├── 📄 login.css
-> │                ├── 📄 nav_sidebar.css
-> │                ├── 📄 responsive.css
-> │                ├── 📄 responsive_rtl.css
-> │                ├── 📄 rtl.css
-> │                ├── 📄 unusable_password_field.css
-> │                ├── 📄 widgets.css
-> │              └── 📂 img/
-> │                ├── 📄 LICENSE
-> │                ├── 📄 README.txt
-> │                ├── 📄 calendar-icons.svg
-> │                └── 📂 gis/
-> │                  ├── 📄 move_vertex_off.svg
-> │                  ├── 📄 move_vertex_on.svg
-> │                ├── 📄 icon-addlink.svg
-> │                ├── 📄 icon-alert.svg
-> │                ├── 📄 icon-calendar.svg
-> │                ├── 📄 icon-changelink.svg
-> │                ├── 📄 icon-clock.svg
-> │                ├── 📄 icon-deletelink.svg
-> │                ├── 📄 icon-hidelink.svg
-> │                ├── 📄 icon-no.svg
-> │                ├── 📄 icon-unknown-alt.svg
-> │                ├── 📄 icon-unknown.svg
-> │                ├── 📄 icon-viewlink.svg
-> │                ├── 📄 icon-yes.svg
-> │                ├── 📄 inline-delete.svg
-> │                ├── 📄 search.svg
-> │                ├── 📄 selector-icons.svg
-> │                ├── 📄 sorting-icons.svg
-> │                ├── 📄 tooltag-add.svg
-> │                ├── 📄 tooltag-arrowright.svg
-> │              └── 📂 js/
-> │                ├── 📄 SelectBox.js
-> │                ├── 📄 SelectFilter2.js
-> │                ├── 📄 actions.js
-> │                └── 📂 admin/
-> │                  ├── 📄 DateTimeShortcuts.js
-> │                  ├── 📄 RelatedObjectLookups.js
-> │                ├── 📄 autocomplete.js
-> │                ├── 📄 calendar.js
-> │                ├── 📄 cancel.js
-> │                ├── 📄 change_form.js
-> │                ├── 📄 core.js
-> │                ├── 📄 filters.js
-> │                ├── 📄 inlines.js
-> │                ├── 📄 jquery.init.js
-> │                ├── 📄 nav_sidebar.js
-> │                ├── 📄 popup_response.js
-> │                ├── 📄 prepopulate.js
-> │                ├── 📄 prepopulate_init.js
-> │                ├── 📄 theme.js
-> │                ├── 📄 unusable_password_field.js
-> │                ├── 📄 urlify.js
-> │            └── 📂 css/
-> │              ├── 📄 custom.css
-> │          └── 📂 templates/
-> │            └── 📂 accounts/
-> │              └── 📂 client/
-> │                ├── 📄 client_form.html
-> │              ├── 📄 user_confirm_delete.html
-> │              ├── 📄 user_detail.html
-> │              ├── 📄 user_form.html
-> │              ├── 📄 user_list.html
-> │            ├── 📄 base.html
-> │            └── 📂 billing/
-> │              ├── 📄 time_entry_confirm_delete.html
-> │              ├── 📄 time_entry_detail.html
-> │              ├── 📄 time_entry_form.html
-> │              ├── 📄 time_entry_list.html
-> │            └── 📂 cases/
-> │              ├── 📄 case_confirm_delete.html
-> │              ├── 📄 case_detail.html
-> │              ├── 📄 case_form.html
-> │              ├── 📄 case_list.html
-> │              ├── 📄 document_confirm_delete.html
-> │              ├── 📄 document_detail.html
-> │              ├── 📄 document_form.html
-> │              ├── 📄 document_list.html
-> │            ├── 📄 dashboard.html
-> │            └── 📂 emails/
-> │              ├── 📄 admin_due_cases_notification.html
-> │              ├── 📄 due_cases_notification.html
-> │              ├── 📄 lawyer_due_cases_notification.html
-> │            └── 📂 inc/
-> │              ├── 📄 footer.html
-> │              ├── 📄 navbar.html
-> │              ├── 📄 sidebar.html
-> │            └── 📂 pages/
-> │              └── 📂 UI/
-> │                ├── 📄 general.html
-> │                ├── 📄 icons.html
-> │                ├── 📄 timeline.html
-> │              └── 📂 docs/
-> │                ├── 📄 browser-support.html
-> │                ├── 📄 color-mode.html
-> │                └── 📂 components/
-> │                  ├── 📄 main-header.html
-> │                  ├── 📄 main-sidebar.html
-> │                ├── 📄 faq.html
-> │                ├── 📄 how-to-contribute.html
-> │                ├── 📄 introduction.html
-> │                └── 📂 javascript/
-> │                  ├── 📄 treeview.html
-> │                ├── 📄 layout.html
-> │                ├── 📄 license.html
-> │              └── 📂 examples/
-> │                ├── 📄 lockscreen.html
-> │                ├── 📄 login-v2.html
-> │                ├── 📄 login.html
-> │                ├── 📄 register-v2.html
-> │                ├── 📄 register.html
-> │              └── 📂 forms/
-> │                ├── 📄 general.html
-> │              └── 📂 generate/
-> │                ├── 📄 theme.html
-> │              ├── 📄 index.html
-> │              ├── 📄 index2.html
-> │              ├── 📄 index3.html
-> │              └── 📂 layout/
-> │                ├── 📄 collapsed-sidebar.html
-> │                ├── 📄 fixed-sidebar.html
-> │                ├── 📄 layout-custom-area.html
-> │                ├── 📄 layout-rtl.html
-> │                ├── 📄 logo-switch.html
-> │                ├── 📄 sidebar-mini.html
-> │                ├── 📄 unfixed-sidebar.html
-> │              └── 📂 tables/
-> │                ├── 📄 simple.html
-> │              └── 📂 widgets/
-> │                ├── 📄 cards.html
-> │                ├── 📄 info-box.html
-> │                ├── 📄 small-box.html
-> │          └── 📂 ui/
-> │            ├── 📄 package.json
-> │            └── 📂 public/
-> │              ├── 📄 index.html
-> │              ├── 📄 manifest.json
-> │            └── 📂 src/
-> │              ├── 📄 App.js
-> │              └── 📂 components/
-> │                ├── 📄 ChatPanel.js
-> │                ├── 📄 Header.js
-> │                ├── 📄 LeftPanel.js
-> │                ├── 📄 RightPanel.js
-> │                ├── 📄 SetupDialog.js
-> │              ├── 📄 index.css
-> │              ├── 📄 index.js
-> │              ├── 📄 jurisdiction_code_names.json
-> │              └── 📂 services/
-> │                ├── 📄 Api.js
-> │          └── 📂 utils/
-> │          ├── 📄 utils.ts
-> │            ├── 📄 common.py
-> │            ├── 📄 enum.py
-> │            ├── 📄 mixins.py
-> │        └── 📂 qidiary/
-> │          └── 📂 backend/
-> │            ├── 📄 app.js
-> │            ├── 📄 eslint.config.js
-> │            └── 📂 lib/
-> │              └── 📂 helpers/
-> │                ├── 📄 area-widgets.js
-> │                ├── 📄 color-options.js
-> │                ├── 📄 typography-options.js
-> │              └── 📂 schema-mixins/
-> │                ├── 📄 card-fields.js
-> │                ├── 📄 hero-fields.js
-> │                ├── 📄 link-fields.js
-> │                ├── 📄 slideshow-fields.js
-> │            └── 📂 modules/
-> │              └── 📂 @apostrophecms/
-> │                └── 📂 admin-bar/
-> │                  ├── 📄 index.js
-> │                └── 📂 asset/
-> │                  ├── 📄 index.js
-> │                └── 📂 attachment/
-> │                  ├── 📄 index.js
-> │                └── 📂 express/
-> │                  ├── 📄 index.js
-> │                └── 📂 global/
-> │                  ├── 📄 index.js
-> │                └── 📂 home-page/
-> │                  ├── 📄 index.js
-> │                  └── 📂 views/
-> │                    ├── 📄 page.html
-> │                └── 📂 i18n/
-> │                  ├── 📄 index.js
-> │                └── 📂 image-widget/
-> │                  ├── 📄 index.js
-> │                  └── 📂 public/
-> │                    ├── 📄 preview.svg
-> │                └── 📂 layout-column-widget/
-> │                  ├── 📄 index.js
-> │                └── 📂 page/
-> │                  ├── 📄 index.js
-> │                  └── 📂 views/
-> │                    ├── 📄 notFound.html
-> │                └── 📂 rich-text-widget/
-> │                  ├── 📄 index.js
-> │                  └── 📂 public/
-> │                    ├── 📄 preview.svg
-> │                └── 📂 settings/
-> │                  ├── 📄 index.js
-> │                └── 📂 user/
-> │                  ├── 📄 index.js
-> │                └── 📂 video-widget/
-> │                  ├── 📄 index.js
-> │                  └── 📂 public/
-> │                    ├── 📄 preview.svg
-> │              └── 📂 accordion-widget/
-> │                ├── 📄 index.js
-> │                └── 📂 public/
-> │                  ├── 📄 preview.svg
-> │              └── 📂 article/
-> │              └── 📂 article-page/
-> │                ├── 📄 index.js
-> │                ├── 📄 index.js
-> │              └── 📂 author/
-> │                ├── 📄 index.js
-> │              └── 📂 card-widget/
-> │                ├── 📄 index.js
-> │                └── 📂 public/
-> │                  ├── 📄 preview.svg
-> │              └── 📂 default-page/
-> │                ├── 📄 index.js
-> │              └── 📂 hero-widget/
-> │                ├── 📄 index.js
-> │                └── 📂 public/
-> │                  ├── 📄 preview.svg
-> │              └── 📂 link-widget/
-> │                ├── 📄 index.js
-> │                └── 📂 public/
-> │                  ├── 📄 preview.svg
-> │              └── 📂 slideshow-widget/
-> │                ├── 📄 index.js
-> │                └── 📂 public/
-> │                  ├── 📄 preview.svg
-> │            ├── 📄 package-lock.json
-> │            └── 📂 scripts/
-> │              ├── 📄 load-starter-content
-> │              ├── 📄 update-starter-content
-> │            └── 📂 views/
-> │              ├── 📄 layout.html
-> │          └── 📂 frontend/
-> │            ├── 📄 Procfile
-> │            ├── 📄 astro.config.mjs
-> │            ├── 📄 package-lock.json
-> │            ├── 📄 postcss.config.js
-> │            └── 📂 public/
-> │              └── 📂 fonts/
-> │                └── 📂 fontawesome/
-> │                  ├── 📄 fa-brands-400.woff2
-> │                  ├── 📄 fa-regular-400.woff2
-> │                  ├── 📄 fa-solid-900.woff2
-> │                  ├── 📄 fa-v4compatibility.woff2
-> │              └── 📂 images/
-> │                ├── 📄 image-widget-placeholder.jpg
-> │                ├── 📄 missing-icon.svg
-> │              └── 📂 scripts/
-> │                ├── 📄 VideoWidget.js
-> │                ├── 📄 dynamic-navbar-padding.js
-> │            └── 📂 src/
-> │              └── 📂 components/
-> │                ├── 📄 ArticlesFilter.astro
-> │                ├── 📄 Figure.astro
-> │                ├── 📄 ImageLink.astro
-> │                ├── 📄 Pagination.astro
-> │              ├── 📄 env.d.ts
-> │              └── 📂 layouts/
-> │                └── 📂 article-layouts/
-> │                  ├── 📄 HeroGrid.astro
-> │                  ├── 📄 ListAside.astro
-> │                  ├── 📄 ShowFullWidth.astro
-> │                  ├── 📄 ShowMagazine.astro
-> │                  ├── 📄 ShowMinimal.astro
-> │                  ├── 📄 Standard.astro
-> │              └── 📂 lib/
-> │                ├── 📄 attachments.js
-> │                ├── 📄 get-layout-areas.js
-> │                ├── 📄 homepage-defaults.js
-> │                ├── 📄 use-site-config.js
-> │              └── 📂 pages/
-> │                ├── 📄 [...slug].astro
-> │              └── 📂 styles/
-> │                ├── 📄 app.css
-> │                ├── 📄 main.scss
-> │              └── 📂 templates/
-> │                ├── 📄 ArticleIndexPage.astro
-> │                ├── 📄 ArticleShowPage.astro
-> │                ├── 📄 DefaultPage.astro
-> │                ├── 📄 HomePage.astro
-> │                ├── 📄 index.js
-> │              └── 📂 widgets/
-> │                ├── 📄 AccordionWidget.astro
-> │                ├── 📄 CardWidget.astro
-> │                ├── 📄 FileWidget.astro
-> │                ├── 📄 HeroWidget.astro
-> │                ├── 📄 ImageWidget.astro
-> │                ├── 📄 LinkWidget.astro
-> │                ├── 📄 RichTextWidget.astro
-> │                ├── 📄 SlideshowWidget.astro
-> │                ├── 📄 VideoWidget.astro
-> │                ├── 📄 index.js
-> │            ├── 📄 tsconfig.json
-> │        └── 📂 qidocs/
-> │          └── 📂 QiDocFlow/
-> │            ├── 📄 LICENSE
-> │            ├── 📄 README.md
-> │            ├── 📄 alembic.ini
-> │            ├── 📄 api.Dockerfile
-> │            ├── 📄 docker-compose.override.yml
-> │            ├── 📄 docker-compose.prod.yml
-> │            ├── 📄 docker-compose.yml
-> │          └── 📂 QiDocStrange/
-> │            ├── 📄 CLAUDE.md
-> │            ├── 📄 LICENSE
-> │            ├── 📄 README.md
-> │            └── 📂 docstrange/
-> │              ├── 📄 WEB_INTERFACE.md
-> │              ├── 📄 __init__.py
-> │              ├── 📄 cli.py
-> │              ├── 📄 config.py
-> │              ├── 📄 exceptions.py
-> │              ├── 📄 extractor.py
-> │              ├── 📄 index.html
-> │              └── 📂 pipeline/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 index.html
-> │                ├── 📄 layout_detector.py
-> │                ├── 📄 model_downloader.py
-> │                ├── 📄 nanonets_processor.py
-> │                ├── 📄 neural_document_processor.py
-> │                ├── 📄 ocr_service.py
-> │              └── 📂 processors/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 base.py
-> │                ├── 📄 cloud_processor.py
-> │                ├── 📄 docx_processor.py
-> │                ├── 📄 excel_processor.py
-> │                ├── 📄 gpu_processor.py
-> │                ├── 📄 html_processor.py
-> │                ├── 📄 image_processor.py
-> │                ├── 📄 index.html
-> │                ├── 📄 pdf_processor.py
-> │                ├── 📄 pptx_processor.py
-> │                ├── 📄 txt_processor.py
-> │                ├── 📄 url_processor.py
-> │              ├── 📄 result.py
-> │              └── 📂 services/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 auth_service.py
-> │                ├── 📄 index.html
-> │                ├── 📄 ollama_service.py
-> │              └── 📂 static/
-> │                ├── 📄 index.html
-> │                ├── 📄 logo_clean.png
-> │                ├── 📄 script.js
-> │                ├── 📄 styles.css
-> │              └── 📂 templates/
-> │                ├── 📄 index.html
-> │              └── 📂 utils/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 gpu_utils.py
-> │                ├── 📄 index.html
-> │              ├── 📄 web_app.py
-> │            ├── 📄 example.py
-> │            └── 📂 examples/
-> │              ├── 📄 index.html
-> │              ├── 📄 test.py
-> │            ├── 📄 index.html
-> │            └── 📂 mcp_server_module/
-> │              ├── 📄 README.md
-> │              ├── 📄 __init__.py
-> │              ├── 📄 __main__.py
-> │              ├── 📄 claude_desktop_config.json
-> │              ├── 📄 index.html
-> │              ├── 📄 server.py
-> │            ├── 📄 pyproject.toml
-> │            └── 📂 scripts/
-> │              ├── 📄 README.md
-> │              ├── 📄 __init__.py
-> │              ├── 📄 index.html
-> │              ├── 📄 prepare_s3_models.py
-> │              ├── 📄 setup_dev.py
-> │              ├── 📄 setup_environment.sh
-> │            └── 📂 tests/
-> │              ├── 📄 debug_ocr.py
-> │              ├── 📄 debug_ocr_provider.py
-> │              ├── 📄 index.html
-> │              ├── 📄 test_advanced_ocr.py
-> │              ├── 📄 test_cloud_mode.py
-> │              ├── 📄 test_converter.py
-> │              ├── 📄 test_enhanced_layout.py
-> │              ├── 📄 test_enhanced_library.py
-> │              ├── 📄 test_enhanced_pdf_processor.py
-> │              ├── 📄 test_html_generation.py
-> │              ├── 📄 test_json_structure.py
-> │              ├── 📄 test_ocr_with_real_image.py
-> │              ├── 📄 test_real_files.py
-> │              ├── 📄 test_real_files_enhanced.py
-> │              ├── 📄 test_real_json_conversion.py
-> │          ├── 📄 QiDocs.jsx
-> │          └── 📂 QiFileRenamer/
-> │            └── 📂 smart-rename/
-> │              ├── 📄 README.md
-> │              ├── 📄 eslint.config.js
-> │              ├── 📄 index.html
-> │              ├── 📄 package.json
-> │              ├── 📄 setupguide.md
-> │              └── 📂 src/
-> │                ├── 📄 App.jsx
-> │                ├── 📄 index.css
-> │                ├── 📄 main.jsx
-> │              ├── 📄 vite.config.js
-> │          ├── 📄 QiNotePlan.md
-> │          ├── 📄 README.md
-> │          ├── 📄 README_INTEGRATION.md
-> │          └── 📂 api/
-> │            └── 📂 qimind/
-> │              ├── 📄 00_Laws_of_Qi.md
-> │              ├── 📄 01_QiMultiverse_Tree.md
-> │              ├── 📄 02_QiD_Spec.md
-> │              ├── 📄 03_QiNode_Schema.md
-> │              ├── 📄 04_Gina_Memory_Spec.md
-> │          └── 📂 app_QiNoteOS_ph00/
-> │            ├── 📄 0.00.00-qios_genesis.md
-> │            ├── 📄 QiNoteOS_Dev_Doc_v1.2_ColdStart_Final.pdf
-> │            └── 📂 apps/
-> │              └── 📂 ui/
-> │                └── 📂 standard/
-> │                  └── 📂 public/
-> │                    ├── 📄 index.html
-> │                  └── 📂 src/
-> │                    ├── 📄 App.css
-> │                    ├── 📄 App.jsx
-> │                    └── 📂 assets/
-> │                      ├── 📄 index.html
-> │                    ├── 📄 index.css
-> │                    ├── 📄 index.html
-> │                    ├── 📄 main.jsx
-> │              └── 📂 versions/
-> │                ├── 📄 index.html
-> │                ├── 📄 log.md
-> │            └── 📂 data/
-> │              ├── 📄 index.html
-> │              └── 📂 rules/
-> │                ├── 📄 index.html
-> │                ├── 📄 qios_rules_v1_1.yaml
-> │              └── 📂 schemas/
-> │                ├── 📄 index.html
-> │              └── 📂 seeds/
-> │                ├── 📄 index.html
-> │                ├── 📄 supabase_seed_core_status.sql
-> │            └── 📂 docs/
-> │              ├── 📄 CODE_REVIEW.md
-> │              ├── 📄 PRODUCTION_READINESS_FIXES.md
-> │              ├── 📄 README.md
-> │              ├── 📄 SETUP_STATUS.md
-> │              ├── 📄 TESTING_CHECKLIST.md
-> │              ├── 📄 n8n_workflows_v0.md
-> │              ├── 📄 normalization_rules_v0.md
-> │            ├── 📄 index.html
-> │            └── 📂 kernel/
-> │              └── 📂 config/
-> │                ├── 📄 index.html
-> │                ├── 📄 kernel.yaml
-> │              ├── 📄 index.html
-> │              └── 📂 src/
-> │                ├── 📄 index.html
-> │                ├── 📄 qid_bridge.py
-> │                ├── 📄 rag.py
-> │            └── 📂 packages/
-> │              └── 📂 api-client/
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 client.ts
-> │                  ├── 📄 index.ts
-> │                ├── 📄 tsconfig.json
-> │              └── 📂 core/
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 index.ts
-> │                  ├── 📄 types.ts
-> │              └── 📂 editors/
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 MarkdownEditor.tsx
-> │                  ├── 📄 RichTextEditor.tsx
-> │                  ├── 📄 index.ts
-> │              └── 📂 forms/
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 index.ts
-> │                  └── 📂 schemas/
-> │                  ├── 📄 schemas.ts
-> │                    ├── 📄 noteSchema.ts
-> │              └── 📂 ui/
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 Button.tsx
-> │                  ├── 📄 Card.tsx
-> │                  ├── 📄 Input.tsx
-> │                  ├── 📄 Modal.tsx
-> │                  ├── 📄 Select.tsx
-> │                  ├── 📄 Textarea.tsx
-> │                  ├── 📄 index.ts
-> │            └── 📂 vault/
-> │              └── 📂 _derived/
-> │                ├── 📄 index.html
-> │                └── 📂 modules/
-> │                  ├── 📄 index.html
-> │                  └── 📂 qid0400003_fcfcu_case/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 module_index.json
-> │                  └── 📂 qid1500001_how_to_use_qinoteos/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 module_index.json
-> │                ├── 📄 search.json
-> │                ├── 📄 vault_index.json
-> │              ├── 📄 index.html
-> │              └── 📂 modules/
-> │                ├── 📄 index.html
-> │                └── 📂 qid0400003_fcfcu_case/
-> │                  ├── 📄 README.md
-> │                  └── 📂 assets/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 unnamed.png
-> │                  └── 📂 content/
-> │                    ├── 📄 content.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 index/
-> │                  ├── 📄 index.html
-> │                    ├── 📄 index.html
-> │                  ├── 📄 module.yaml
-> │                  └── 📂 snapshots/
-> │                    ├── 📄 index.html
-> │                  └── 📂 vectors/
-> │                    ├── 📄 chunks.jsonl
-> │                    ├── 📄 embeddings.npy
-> │                    ├── 📄 index.html
-> │                  └── 📂 versions/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 log.md
-> │                └── 📂 qid1500001_how_to_use_qinoteos/
-> │                  ├── 📄 README.md
-> │                  └── 📂 assets/
-> │                    ├── 📄 index.html
-> │                  └── 📂 content/
-> │                    ├── 📄 content.md
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                  ├── 📄 module.yaml
-> │                  └── 📂 snapshots/
-> │                    ├── 📄 index.html
-> │                  └── 📂 vectors/
-> │                    ├── 📄 chunks.jsonl
-> │                    ├── 📄 embeddings.npy
-> │                    ├── 📄 index.html
-> │                  └── 📂 versions/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 log.md
-> │            └── 📂 worker/
-> │              ├── 📄 CLOUDFLARE_BUILD_COMMANDS.md
-> │              ├── 📄 WRANGLER_SECRETS_GUIDE.md
-> │              ├── 📄 package.json
-> │              └── 📂 src/
-> │                ├── 📄 ginaMemory.ts
-> │                ├── 📄 index.ts
-> │                ├── 📄 qinoteApi.ts
-> │                ├── 📄 qinoteClassification.ts
-> │                ├── 📄 rag.ts
-> │                ├── 📄 seedQinote.ts
-> │                ├── 📄 supabaseMind.ts
-> │                ├── 📄 zohoMCP.ts
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 wrangler.toml
-> │          └── 📂 app_QiNoteOS_ph02_Paperless/
-> │            ├── 📄 CODEOWNERS
-> │            ├── 📄 CODE_OF_CONDUCT.md
-> │            ├── 📄 CONTRIBUTING.md
-> │            ├── 📄 Dockerfile
-> │            ├── 📄 LICENSE
-> │            ├── 📄 README.md
-> │            ├── 📄 SECURITY.md
-> │            ├── 📄 crowdin.yml
-> │            └── 📂 docker/
-> │              └── 📂 compose/
-> │                ├── 📄 docker-compose.ci-test.yml
-> │                ├── 📄 docker-compose.env
-> │                ├── 📄 docker-compose.mariadb-tika.yml
-> │                ├── 📄 docker-compose.mariadb.yml
-> │                ├── 📄 docker-compose.portainer.yml
-> │                ├── 📄 docker-compose.postgres-tika.yml
-> │                ├── 📄 docker-compose.postgres.yml
-> │                ├── 📄 docker-compose.sqlite-tika.yml
-> │                ├── 📄 docker-compose.sqlite.yml
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              ├── 📄 init-flow.drawio.png
-> │              ├── 📄 install_management_commands.sh
-> │              ├── 📄 management_script.sh
-> │              └── 📂 rootfs/
-> │                └── 📂 etc/
-> │                  └── 📂 ImageMagick-6/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 paperless-policy.xml
-> │                  ├── 📄 index.html
-> │                  └── 📂 s6-overlay/
-> │                    ├── 📄 index.html
-> │                    └── 📂 s6-rc.d/
-> │                      ├── 📄 index.html
-> │                      └── 📂 init-complete/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-custom-init/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-env-file/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-folders/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-migrations/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-modify-user/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-search-index/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-start/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-superuser/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-system-checks/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-tesseract-langs/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-wait-for-db/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 up
-> │                      └── 📂 init-wait-for-redis/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 type
-> │                        ├── 📄 up
-> │                      └── 📂 svc-consumer/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                      └── 📂 svc-flower/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                      └── 📂 svc-scheduler/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                      └── 📂 svc-webserver/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                      └── 📂 svc-worker/
-> │                        └── 📂 dependencies.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        ├── 📄 run
-> │                        ├── 📄 type
-> │                      └── 📂 user/
-> │                        └── 📂 contents.d/
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                └── 📂 usr/
-> │                  ├── 📄 index.html
-> │                  └── 📂 local/
-> │                    └── 📂 bin/
-> │                      ├── 📄 convert_mariadb_uuid
-> │                      ├── 📄 createsuperuser
-> │                      ├── 📄 decrypt_documents
-> │                      ├── 📄 deduplicate.py
-> │                      ├── 📄 document_archiver
-> │                      ├── 📄 document_create_classifier
-> │                      ├── 📄 document_exporter
-> │                      ├── 📄 document_fuzzy_match
-> │                      ├── 📄 document_importer
-> │                      ├── 📄 document_index
-> │                      ├── 📄 document_renamer
-> │                      ├── 📄 document_retagger
-> │                      ├── 📄 document_sanity_checker
-> │                      ├── 📄 document_thumbnails
-> │                      ├── 📄 index.html
-> │                      ├── 📄 mail_fetcher
-> │                      ├── 📄 manage_superuser
-> │                      ├── 📄 prune_audit_logs
-> │                      ├── 📄 wait-for-redis.py
-> │                    ├── 📄 index.html
-> │            └── 📂 docs/
-> │              ├── 📄 administration.md
-> │              ├── 📄 advanced_usage.md
-> │              ├── 📄 api.md
-> │              └── 📂 assets/
-> │                ├── 📄 extra.css
-> │                ├── 📄 favicon.png
-> │                ├── 📄 index.html
-> │                ├── 📄 logo.svg
-> │                ├── 📄 logo_full_black.svg
-> │                ├── 📄 logo_full_white.svg
-> │                ├── 📄 recommended_workflow.png
-> │                └── 📂 screenshots/
-> │                  ├── 📄 bulk-edit.png
-> │                  ├── 📄 correspondents.png
-> │                  ├── 📄 custom_field1.png
-> │                  ├── 📄 custom_field2.png
-> │                  ├── 📄 dashboard.png
-> │                  ├── 📄 documents-filter.png
-> │                  ├── 📄 documents-largecards.png
-> │                  ├── 📄 documents-smallcards-dark.png
-> │                  ├── 📄 documents-smallcards-slimsidebar.png
-> │                  ├── 📄 documents-smallcards.png
-> │                  ├── 📄 documents-table.png
-> │                  ├── 📄 editing.png
-> │                  ├── 📄 index.html
-> │                  ├── 📄 logs.png
-> │                  ├── 📄 mail-rules-edited.png
-> │                  ├── 📄 mobile1.png
-> │                  ├── 📄 mobile2.png
-> │                  ├── 📄 mobile3.png
-> │                  ├── 📄 new-correspondent.png
-> │                  ├── 📄 new-document_type.png
-> │                  ├── 📄 new-storage_path.png
-> │                  ├── 📄 new-tag.png
-> │                  ├── 📄 permissions_document.png
-> │                  ├── 📄 permissions_global.png
-> │                  ├── 📄 search-preview.png
-> │                  ├── 📄 search-results.png
-> │                  ├── 📄 workflow.png
-> │              ├── 📄 changelog.md
-> │              ├── 📄 configuration.md
-> │              ├── 📄 development.md
-> │              ├── 📄 faq.md
-> │              ├── 📄 index.html
-> │              ├── 📄 index.md
-> │              ├── 📄 setup.md
-> │              ├── 📄 troubleshooting.md
-> │              ├── 📄 usage.md
-> │            ├── 📄 index.html
-> │            ├── 📄 install-paperless-ngx.sh
-> │            └── 📂 local-deploy/
-> │              └── 📂 consume/
-> │                ├── 📄 index.html
-> │              ├── 📄 docker-compose.env
-> │              ├── 📄 docker-compose.yml
-> │              └── 📂 export/
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              ├── 📄 start-paperless.bat
-> │            ├── 📄 mkdocs.yml
-> │            ├── 📄 paperless-ngx.code-workspace
-> │            ├── 📄 paperless.conf.example
-> │            ├── 📄 pyproject.toml
-> │            └── 📂 qinote-bridge/
-> │              ├── 📄 BRIDGE_README.md
-> │              ├── 📄 export_bridge.py
-> │              ├── 📄 index.html
-> │              └── 📂 qinote_vault/
-> │                └── 📂 documents/
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │            └── 📂 resources/
-> │              ├── 📄 index.html
-> │              └── 📂 logo/
-> │              ├── 📄 logo.txt
-> │                ├── 📄 index.html
-> │                └── 📂 print/
-> │                  └── 📂 eps/
-> │                    ├── 📄 Black logo - no background.eps
-> │                    ├── 📄 Color logo - no background.eps
-> │                    ├── 📄 Color logo with background.eps
-> │                    ├── 📄 White logo - no background.eps
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                  └── 📂 pdf/
-> │                    ├── 📄 Black logo - no background.pdf
-> │                    ├── 📄 Color logo - no background.pdf
-> │                    ├── 📄 Color logo with background.pdf
-> │                    ├── 📄 White logo - no background.pdf
-> │                    ├── 📄 index.html
-> │                └── 📂 web/
-> │                  ├── 📄 index.html
-> │                  └── 📂 png/
-> │                    ├── 📄 Color logo - no background.png
-> │                    ├── 📄 Color logo with background.png
-> │                    ├── 📄 White logo - no background.png
-> │                    ├── 📄 index.html
-> │                  └── 📂 svg/
-> │                    ├── 📄 Black logo - no background.svg
-> │                    ├── 📄 Color logo with background.svg
-> │                    ├── 📄 White logo - no background.svg
-> │                    ├── 📄 index.html
-> │                    ├── 📄 square.svg
-> │            └── 📂 scripts/
-> │              ├── 📄 index.html
-> │              ├── 📄 paperless-consumer.service
-> │              ├── 📄 paperless-scheduler.service
-> │              ├── 📄 paperless-task-queue.service
-> │              ├── 📄 paperless-webserver.service
-> │              ├── 📄 paperless-webserver.socket
-> │              ├── 📄 post-consumption-example.sh
-> │              ├── 📄 start_services.sh
-> │            └── 📂 src/
-> │            └── 📂 src-ui/
-> │              ├── 📄 README.md
-> │              └── 📂 __mocks__/
-> │                ├── 📄 index.html
-> │                ├── 📄 pdfjs-dist.ts
-> │              ├── 📄 angular.json
-> │              └── 📂 e2e/
-> │                └── 📂 admin/
-> │                  ├── 📄 index.html
-> │                  └── 📂 requests/
-> │                    ├── 📄 api-settings.har
-> │                    ├── 📄 index.html
-> │                  ├── 📄 settings.spec.ts
-> │                └── 📂 dashboard/
-> │                  ├── 📄 dashboard.spec.ts
-> │                  ├── 📄 index.html
-> │                  └── 📂 requests/
-> │                    ├── 📄 api-dashboard1.har
-> │                    ├── 📄 api-dashboard2.har
-> │                    ├── 📄 api-dashboard3.har
-> │                    ├── 📄 api-dashboard4.har
-> │                    ├── 📄 index.html
-> │                └── 📂 document-detail/
-> │                  ├── 📄 document-detail.spec.ts
-> │                  ├── 📄 index.html
-> │                  └── 📂 requests/
-> │                    ├── 📄 api-document-detail.har
-> │                    ├── 📄 api-document-detail2.har
-> │                    ├── 📄 index.html
-> │                └── 📂 document-list/
-> │                  ├── 📄 document-list.spec.ts
-> │                  ├── 📄 index.html
-> │                  └── 📂 requests/
-> │                    ├── 📄 api-document-list1.har
-> │                    ├── 📄 api-document-list2.har
-> │                    ├── 📄 api-document-list3.har
-> │                    ├── 📄 api-document-list4.har
-> │                    ├── 📄 api-document-list5.har
-> │                    ├── 📄 api-document-list6.har
-> │                    ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                └── 📂 permissions/
-> │                  ├── 📄 global-permissions.spec.ts
-> │                  ├── 📄 index.html
-> │                  └── 📂 requests/
-> │                    ├── 📄 api-global-permissions.har
-> │                    ├── 📄 index.html
-> │              ├── 📄 extra-webpack.config.ts
-> │              ├── 📄 index.html
-> │              ├── 📄 jest.config.js
-> │              ├── 📄 messages.xlf
-> │              ├── 📄 package.json
-> │              ├── 📄 playwright.config.ts
-> │              ├── 📄 pnpm-lock.yaml
-> │              ├── 📄 setup-jest.ts
-> │              └── 📂 src/
-> │                └── 📂 app/
-> │                  ├── 📄 app-routing.module.ts
-> │                  ├── 📄 app.component.html
-> │                  ├── 📄 app.component.spec.ts
-> │                  ├── 📄 app.component.ts
-> │                  └── 📂 components/
-> │                    └── 📂 admin/
-> │                      └── 📂 config/
-> │                        ├── 📄 config.component.html
-> │                        ├── 📄 config.component.spec.ts
-> │                        ├── 📄 config.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                      └── 📂 settings/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 settings.component.html
-> │                        ├── 📄 settings.component.spec.ts
-> │                        ├── 📄 settings.component.ts
-> │                      └── 📂 tasks/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 tasks.component.html
-> │                        ├── 📄 tasks.component.scss
-> │                        ├── 📄 tasks.component.spec.ts
-> │                        ├── 📄 tasks.component.ts
-> │                      └── 📂 trash/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 trash.component.html
-> │                        ├── 📄 trash.component.spec.ts
-> │                        ├── 📄 trash.component.ts
-> │                      └── 📂 users-groups/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 users-groups.component.html
-> │                        ├── 📄 users-groups.component.spec.ts
-> │                        ├── 📄 users-groups.component.ts
-> │                    └── 📂 app-frame/
-> │                      ├── 📄 app-frame.component.html
-> │                      ├── 📄 app-frame.component.scss
-> │                      ├── 📄 app-frame.component.spec.ts
-> │                      ├── 📄 app-frame.component.ts
-> │                      └── 📂 global-search/
-> │                        ├── 📄 global-search.component.html
-> │                        ├── 📄 global-search.component.scss
-> │                        ├── 📄 global-search.component.spec.ts
-> │                        ├── 📄 global-search.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                      └── 📂 toasts-dropdown/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 toasts-dropdown.component.html
-> │                        ├── 📄 toasts-dropdown.component.scss
-> │                        ├── 📄 toasts-dropdown.component.spec.ts
-> │                        ├── 📄 toasts-dropdown.component.ts
-> │                    └── 📂 common/
-> │                      └── 📂 clearable-badge/
-> │                        ├── 📄 clearable-badge.component.html
-> │                        ├── 📄 clearable-badge.component.scss
-> │                        ├── 📄 clearable-badge.component.spec.ts
-> │                        ├── 📄 clearable-badge.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 confirm-button/
-> │                        ├── 📄 confirm-button.component.html
-> │                        ├── 📄 confirm-button.component.scss
-> │                        ├── 📄 confirm-button.component.spec.ts
-> │                        ├── 📄 confirm-button.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 confirm-dialog/
-> │                        ├── 📄 confirm-dialog.component.html
-> │                        ├── 📄 confirm-dialog.component.spec.ts
-> │                        ├── 📄 confirm-dialog.component.ts
-> │                        ├── 📄 index.html
-> │                        └── 📂 merge-confirm-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 merge-confirm-dialog.component.html
-> │                          ├── 📄 merge-confirm-dialog.component.scss
-> │                          ├── 📄 merge-confirm-dialog.component.spec.ts
-> │                          ├── 📄 merge-confirm-dialog.component.ts
-> │                        └── 📂 rotate-confirm-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 rotate-confirm-dialog.component.html
-> │                          ├── 📄 rotate-confirm-dialog.component.scss
-> │                          ├── 📄 rotate-confirm-dialog.component.spec.ts
-> │                          ├── 📄 rotate-confirm-dialog.component.ts
-> │                      └── 📂 custom-field-display/
-> │                        ├── 📄 custom-field-display.component.html
-> │                        ├── 📄 custom-field-display.component.spec.ts
-> │                        ├── 📄 custom-field-display.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 custom-fields-dropdown/
-> │                        ├── 📄 custom-fields-dropdown.component.html
-> │                        ├── 📄 custom-fields-dropdown.component.scss
-> │                        ├── 📄 custom-fields-dropdown.component.spec.ts
-> │                        ├── 📄 custom-fields-dropdown.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 custom-fields-query-dropdown/
-> │                        ├── 📄 custom-fields-query-dropdown.component.html
-> │                        ├── 📄 custom-fields-query-dropdown.component.scss
-> │                        ├── 📄 custom-fields-query-dropdown.component.spec.ts
-> │                        ├── 📄 custom-fields-query-dropdown.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 dates-dropdown/
-> │                        ├── 📄 dates-dropdown.component.html
-> │                        ├── 📄 dates-dropdown.component.scss
-> │                        ├── 📄 dates-dropdown.component.spec.ts
-> │                        ├── 📄 dates-dropdown.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 edit-dialog/
-> │                        └── 📂 correspondent-edit-dialog/
-> │                          ├── 📄 correspondent-edit-dialog.component.html
-> │                          ├── 📄 correspondent-edit-dialog.component.spec.ts
-> │                          ├── 📄 correspondent-edit-dialog.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 custom-field-edit-dialog/
-> │                          ├── 📄 custom-field-edit-dialog.component.html
-> │                          ├── 📄 custom-field-edit-dialog.component.spec.ts
-> │                          ├── 📄 custom-field-edit-dialog.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 document-type-edit-dialog/
-> │                          ├── 📄 document-type-edit-dialog.component.html
-> │                          ├── 📄 document-type-edit-dialog.component.spec.ts
-> │                          ├── 📄 document-type-edit-dialog.component.ts
-> │                          ├── 📄 index.html
-> │                        ├── 📄 edit-dialog.component.spec.ts
-> │                        ├── 📄 edit-dialog.component.ts
-> │                        └── 📂 group-edit-dialog/
-> │                          ├── 📄 group-edit-dialog.component.html
-> │                          ├── 📄 group-edit-dialog.component.spec.ts
-> │                          ├── 📄 group-edit-dialog.component.ts
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        └── 📂 mail-account-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 mail-account-edit-dialog.component.html
-> │                          ├── 📄 mail-account-edit-dialog.component.scss
-> │                          ├── 📄 mail-account-edit-dialog.component.spec.ts
-> │                          ├── 📄 mail-account-edit-dialog.component.ts
-> │                        └── 📂 mail-rule-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 mail-rule-edit-dialog.component.html
-> │                          ├── 📄 mail-rule-edit-dialog.component.spec.ts
-> │                          ├── 📄 mail-rule-edit-dialog.component.ts
-> │                        └── 📂 storage-path-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 storage-path-edit-dialog.component.html
-> │                          ├── 📄 storage-path-edit-dialog.component.spec.ts
-> │                          ├── 📄 storage-path-edit-dialog.component.ts
-> │                        └── 📂 tag-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 tag-edit-dialog.component.html
-> │                          ├── 📄 tag-edit-dialog.component.spec.ts
-> │                          ├── 📄 tag-edit-dialog.component.ts
-> │                        └── 📂 user-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 user-edit-dialog.component.html
-> │                          ├── 📄 user-edit-dialog.component.spec.ts
-> │                          ├── 📄 user-edit-dialog.component.ts
-> │                        └── 📂 workflow-edit-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 workflow-edit-dialog.component.html
-> │                          ├── 📄 workflow-edit-dialog.component.scss
-> │                          ├── 📄 workflow-edit-dialog.component.spec.ts
-> │                          ├── 📄 workflow-edit-dialog.component.ts
-> │                      └── 📂 email-document-dialog/
-> │                        ├── 📄 email-document-dialog.component.html
-> │                        ├── 📄 email-document-dialog.component.spec.ts
-> │                        ├── 📄 email-document-dialog.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 filterable-dropdown/
-> │                        ├── 📄 filterable-dropdown.component.html
-> │                        ├── 📄 filterable-dropdown.component.scss
-> │                        ├── 📄 filterable-dropdown.component.spec.ts
-> │                        ├── 📄 filterable-dropdown.component.ts
-> │                        ├── 📄 index.html
-> │                        └── 📂 toggleable-dropdown-button/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 toggleable-dropdown-button.component.html
-> │                          ├── 📄 toggleable-dropdown-button.component.scss
-> │                          ├── 📄 toggleable-dropdown-button.component.spec.ts
-> │                          ├── 📄 toggleable-dropdown-button.component.ts
-> │                      └── 📂 hotkey-dialog/
-> │                        ├── 📄 hotkey-dialog.component.html
-> │                        ├── 📄 hotkey-dialog.component.spec.ts
-> │                        ├── 📄 hotkey-dialog.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                      └── 📂 input/
-> │                        ├── 📄 abstract-input.spec.ts
-> │                        ├── 📄 abstract-input.ts
-> │                        └── 📂 check/
-> │                          ├── 📄 check.component.html
-> │                          ├── 📄 check.component.spec.ts
-> │                          ├── 📄 check.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 color/
-> │                          ├── 📄 color.component.html
-> │                          ├── 📄 color.component.spec.ts
-> │                          ├── 📄 color.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 custom-fields-values/
-> │                          ├── 📄 custom-fields-values.component.html
-> │                          ├── 📄 custom-fields-values.component.scss
-> │                          ├── 📄 custom-fields-values.component.spec.ts
-> │                          ├── 📄 custom-fields-values.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 date/
-> │                          ├── 📄 date.component.html
-> │                          ├── 📄 date.component.scss
-> │                          ├── 📄 date.component.spec.ts
-> │                          ├── 📄 date.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 document-link/
-> │                          ├── 📄 document-link.component.html
-> │                          ├── 📄 document-link.component.scss
-> │                          ├── 📄 document-link.component.spec.ts
-> │                          ├── 📄 document-link.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 drag-drop-select/
-> │                          ├── 📄 drag-drop-select.component.html
-> │                          ├── 📄 drag-drop-select.component.scss
-> │                          ├── 📄 drag-drop-select.component.spec.ts
-> │                          ├── 📄 drag-drop-select.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 entries/
-> │                          ├── 📄 entries.component.html
-> │                          ├── 📄 entries.component.spec.ts
-> │                          ├── 📄 entries.component.ts
-> │                          ├── 📄 index.html
-> │                        └── 📂 file/
-> │                          ├── 📄 file.component.html
-> │                          ├── 📄 file.component.spec.ts
-> │                          ├── 📄 file.component.ts
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                        └── 📂 monetary/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 monetary.component.html
-> │                          ├── 📄 monetary.component.scss
-> │                          ├── 📄 monetary.component.spec.ts
-> │                          ├── 📄 monetary.component.ts
-> │                        └── 📂 number/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 number.component.html
-> │                          ├── 📄 number.component.spec.ts
-> │                          ├── 📄 number.component.ts
-> │                        └── 📂 password/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 password.component.html
-> │                          ├── 📄 password.component.spec.ts
-> │                          ├── 📄 password.component.ts
-> │                        └── 📂 permissions/
-> │                          ├── 📄 index.html
-> │                          └── 📂 permissions-form/
-> │                            ├── 📄 index.html
-> │                            ├── 📄 permissions-form.component.html
-> │                            ├── 📄 permissions-form.component.scss
-> │                            ├── 📄 permissions-form.component.spec.ts
-> │                            ├── 📄 permissions-form.component.ts
-> │                          └── 📂 permissions-group/
-> │                            ├── 📄 index.html
-> │                            ├── 📄 permissions-group.component.html
-> │                            ├── 📄 permissions-group.component.spec.ts
-> │                            ├── 📄 permissions-group.component.ts
-> │                          └── 📂 permissions-user/
-> │                            ├── 📄 index.html
-> │                            ├── 📄 permissions-user.component.html
-> │                            ├── 📄 permissions-user.component.scss
-> │                            ├── 📄 permissions-user.component.spec.ts
-> │                            ├── 📄 permissions-user.component.ts
-> │                        └── 📂 select/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 select.component.html
-> │                          ├── 📄 select.component.scss
-> │                          ├── 📄 select.component.spec.ts
-> │                          ├── 📄 select.component.ts
-> │                        └── 📂 switch/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 switch.component.html
-> │                          ├── 📄 switch.component.spec.ts
-> │                          ├── 📄 switch.component.ts
-> │                        └── 📂 tags/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 tags.component.html
-> │                          ├── 📄 tags.component.scss
-> │                          ├── 📄 tags.component.spec.ts
-> │                          ├── 📄 tags.component.ts
-> │                        └── 📂 text/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 text.component.html
-> │                          ├── 📄 text.component.spec.ts
-> │                          ├── 📄 text.component.ts
-> │                        └── 📂 textarea/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 textarea.component.html
-> │                          ├── 📄 textarea.component.spec.ts
-> │                          ├── 📄 textarea.component.ts
-> │                        └── 📂 url/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 url.component.html
-> │                          ├── 📄 url.component.spec.ts
-> │                          ├── 📄 url.component.ts
-> │                      └── 📂 logo/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 logo.component.html
-> │                        ├── 📄 logo.component.spec.ts
-> │                        ├── 📄 logo.component.ts
-> │                      └── 📂 page-header/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 page-header.component.html
-> │                        ├── 📄 page-header.component.scss
-> │                        ├── 📄 page-header.component.spec.ts
-> │                        ├── 📄 page-header.component.ts
-> │                      └── 📂 pdf-editor/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 pdf-editor.component.html
-> │                        ├── 📄 pdf-editor.component.scss
-> │                        ├── 📄 pdf-editor.component.spec.ts
-> │                        ├── 📄 pdf-editor.component.ts
-> │                      └── 📂 permissions-dialog/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 permissions-dialog.component.html
-> │                        ├── 📄 permissions-dialog.component.spec.ts
-> │                        ├── 📄 permissions-dialog.component.ts
-> │                      └── 📂 permissions-filter-dropdown/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 permissions-filter-dropdown.component.html
-> │                        ├── 📄 permissions-filter-dropdown.component.scss
-> │                        ├── 📄 permissions-filter-dropdown.component.spec.ts
-> │                        ├── 📄 permissions-filter-dropdown.component.ts
-> │                      └── 📂 permissions-select/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 permissions-select.component.html
-> │                        ├── 📄 permissions-select.component.spec.ts
-> │                        ├── 📄 permissions-select.component.ts
-> │                      └── 📂 preview-popup/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 preview-popup.component.html
-> │                        ├── 📄 preview-popup.component.scss
-> │                        ├── 📄 preview-popup.component.spec.ts
-> │                        ├── 📄 preview-popup.component.ts
-> │                      └── 📂 profile-edit-dialog/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 profile-edit-dialog.component.html
-> │                        ├── 📄 profile-edit-dialog.component.scss
-> │                        ├── 📄 profile-edit-dialog.component.spec.ts
-> │                        ├── 📄 profile-edit-dialog.component.ts
-> │                      └── 📂 share-links-dialog/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 share-links-dialog.component.html
-> │                        ├── 📄 share-links-dialog.component.scss
-> │                        ├── 📄 share-links-dialog.component.spec.ts
-> │                        ├── 📄 share-links-dialog.component.ts
-> │                      └── 📂 system-status-dialog/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 system-status-dialog.component.html
-> │                        ├── 📄 system-status-dialog.component.scss
-> │                        ├── 📄 system-status-dialog.component.spec.ts
-> │                        ├── 📄 system-status-dialog.component.ts
-> │                      └── 📂 tag/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 tag.component.html
-> │                        ├── 📄 tag.component.scss
-> │                        ├── 📄 tag.component.spec.ts
-> │                        ├── 📄 tag.component.ts
-> │                      └── 📂 toast/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 toast.component.html
-> │                        ├── 📄 toast.component.scss
-> │                        ├── 📄 toast.component.spec.ts
-> │                        ├── 📄 toast.component.ts
-> │                      └── 📂 toasts/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 toasts.component.html
-> │                        ├── 📄 toasts.component.scss
-> │                        ├── 📄 toasts.component.spec.ts
-> │                        ├── 📄 toasts.component.ts
-> │                    └── 📂 dashboard/
-> │                      ├── 📄 dashboard.component.html
-> │                      ├── 📄 dashboard.component.scss
-> │                      ├── 📄 dashboard.component.spec.ts
-> │                      ├── 📄 dashboard.component.ts
-> │                      ├── 📄 index.html
-> │                      └── 📂 widgets/
-> │                        ├── 📄 index.html
-> │                        └── 📂 saved-view-widget/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 saved-view-widget.component.html
-> │                          ├── 📄 saved-view-widget.component.scss
-> │                          ├── 📄 saved-view-widget.component.spec.ts
-> │                          ├── 📄 saved-view-widget.component.ts
-> │                        └── 📂 statistics-widget/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 statistics-widget.component.html
-> │                          ├── 📄 statistics-widget.component.scss
-> │                          ├── 📄 statistics-widget.component.spec.ts
-> │                          ├── 📄 statistics-widget.component.ts
-> │                        └── 📂 upload-file-widget/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 upload-file-widget.component.html
-> │                          ├── 📄 upload-file-widget.component.scss
-> │                          ├── 📄 upload-file-widget.component.spec.ts
-> │                          ├── 📄 upload-file-widget.component.ts
-> │                        └── 📂 welcome-widget/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 welcome-widget.component.html
-> │                          ├── 📄 welcome-widget.component.spec.ts
-> │                          ├── 📄 welcome-widget.component.ts
-> │                        └── 📂 widget-frame/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 widget-frame.component.html
-> │                          ├── 📄 widget-frame.component.scss
-> │                          ├── 📄 widget-frame.component.spec.ts
-> │                          ├── 📄 widget-frame.component.ts
-> │                    └── 📂 document-asn/
-> │                      ├── 📄 document-asn.component.html
-> │                      ├── 📄 document-asn.component.spec.ts
-> │                      ├── 📄 document-asn.component.ts
-> │                      ├── 📄 index.html
-> │                    └── 📂 document-detail/
-> │                      ├── 📄 document-detail.component.html
-> │                      ├── 📄 document-detail.component.scss
-> │                      ├── 📄 document-detail.component.spec.ts
-> │                      ├── 📄 document-detail.component.ts
-> │                      ├── 📄 index.html
-> │                      └── 📂 metadata-collapse/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 metadata-collapse.component.html
-> │                        ├── 📄 metadata-collapse.component.scss
-> │                        ├── 📄 metadata-collapse.component.spec.ts
-> │                        ├── 📄 metadata-collapse.component.ts
-> │                    └── 📂 document-history/
-> │                      ├── 📄 document-history.component.html
-> │                      ├── 📄 document-history.component.spec.ts
-> │                      ├── 📄 document-history.component.ts
-> │                      ├── 📄 index.html
-> │                    └── 📂 document-list/
-> │                      └── 📂 bulk-editor/
-> │                        ├── 📄 bulk-editor.component.html
-> │                        ├── 📄 bulk-editor.component.scss
-> │                        ├── 📄 bulk-editor.component.spec.ts
-> │                        ├── 📄 bulk-editor.component.ts
-> │                        └── 📂 custom-fields-bulk-edit-dialog/
-> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.html
-> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.spec.ts
-> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.ts
-> │                          ├── 📄 index.html
-> │                        ├── 📄 index.html
-> │                      └── 📂 document-card-large/
-> │                        ├── 📄 document-card-large.component.html
-> │                        ├── 📄 document-card-large.component.scss
-> │                        ├── 📄 document-card-large.component.spec.ts
-> │                        ├── 📄 document-card-large.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 document-card-small/
-> │                        ├── 📄 document-card-small.component.html
-> │                        ├── 📄 document-card-small.component.scss
-> │                        ├── 📄 document-card-small.component.spec.ts
-> │                        ├── 📄 document-card-small.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 document-list.component.html
-> │                      ├── 📄 document-list.component.scss
-> │                      ├── 📄 document-list.component.spec.ts
-> │                      ├── 📄 document-list.component.ts
-> │                      └── 📂 filter-editor/
-> │                        ├── 📄 filter-editor.component.html
-> │                        ├── 📄 filter-editor.component.scss
-> │                        ├── 📄 filter-editor.component.spec.ts
-> │                        ├── 📄 filter-editor.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                      └── 📂 save-view-config-dialog/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 save-view-config-dialog.component.html
-> │                        ├── 📄 save-view-config-dialog.component.spec.ts
-> │                        ├── 📄 save-view-config-dialog.component.ts
-> │                    └── 📂 document-notes/
-> │                      ├── 📄 document-notes.component.html
-> │                      ├── 📄 document-notes.component.scss
-> │                      ├── 📄 document-notes.component.spec.ts
-> │                      ├── 📄 document-notes.component.ts
-> │                      ├── 📄 index.html
-> │                    └── 📂 file-drop/
-> │                      ├── 📄 file-drop.component.html
-> │                      ├── 📄 file-drop.component.scss
-> │                      ├── 📄 file-drop.component.spec.ts
-> │                      ├── 📄 file-drop.component.ts
-> │                      ├── 📄 index.html
-> │                    ├── 📄 index.html
-> │                    └── 📂 loading-component/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 loading.component.spec.ts
-> │                      ├── 📄 loading.component.ts
-> │                    └── 📂 manage/
-> │                      └── 📂 correspondent-list/
-> │                        ├── 📄 correspondent-list.component.spec.ts
-> │                        ├── 📄 correspondent-list.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 custom-fields/
-> │                        ├── 📄 custom-fields.component.html
-> │                        ├── 📄 custom-fields.component.scss
-> │                        ├── 📄 custom-fields.component.spec.ts
-> │                        ├── 📄 custom-fields.component.ts
-> │                        ├── 📄 index.html
-> │                      └── 📂 document-type-list/
-> │                        ├── 📄 document-type-list.component.spec.ts
-> │                        ├── 📄 document-type-list.component.ts
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                      └── 📂 mail/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 mail.component.html
-> │                        ├── 📄 mail.component.scss
-> │                        ├── 📄 mail.component.spec.ts
-> │                        ├── 📄 mail.component.ts
-> │                        └── 📂 processed-mail-dialog/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 processed-mail-dialog.component.html
-> │                          ├── 📄 processed-mail-dialog.component.scss
-> │                          ├── 📄 processed-mail-dialog.component.spec.ts
-> │                          ├── 📄 processed-mail-dialog.component.ts
-> │                      └── 📂 management-list/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 management-list.component.html
-> │                        ├── 📄 management-list.component.scss
-> │                        ├── 📄 management-list.component.spec.ts
-> │                        ├── 📄 management-list.component.ts
-> │                      └── 📂 saved-views/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 saved-views.component.html
-> │                        ├── 📄 saved-views.component.scss
-> │                        ├── 📄 saved-views.component.spec.ts
-> │                        ├── 📄 saved-views.component.ts
-> │                      └── 📂 storage-path-list/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 storage-path-list.component.spec.ts
-> │                        ├── 📄 storage-path-list.component.ts
-> │                      └── 📂 tag-list/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 tag-list.component.spec.ts
-> │                        ├── 📄 tag-list.component.ts
-> │                      └── 📂 workflows/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 workflows.component.html
-> │                        ├── 📄 workflows.component.spec.ts
-> │                        ├── 📄 workflows.component.ts
-> │                    └── 📂 not-found/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 not-found.component.html
-> │                      ├── 📄 not-found.component.spec.ts
-> │                      ├── 📄 not-found.component.ts
-> │                    └── 📂 with-permissions/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 with-permissions.component.spec.ts
-> │                      ├── 📄 with-permissions.component.ts
-> │                  └── 📂 data/
-> │                    ├── 📄 auditlog-entry.ts
-> │                    ├── 📄 correspondent.ts
-> │                    ├── 📄 custom-field-instance.ts
-> │                    ├── 📄 custom-field-query.ts
-> │                    ├── 📄 custom-field.ts
-> │                    ├── 📄 datatype.ts
-> │                    ├── 📄 document-metadata.ts
-> │                    ├── 📄 document-note.ts
-> │                    ├── 📄 document-suggestions.ts
-> │                    ├── 📄 document-type.ts
-> │                    ├── 📄 document.ts
-> │                    ├── 📄 filter-rule-type.ts
-> │                    ├── 📄 filter-rule.ts
-> │                    ├── 📄 group.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 mail-account.ts
-> │                    ├── 📄 mail-rule.ts
-> │                    ├── 📄 matching-model.ts
-> │                    ├── 📄 object-with-id.ts
-> │                    ├── 📄 object-with-permissions.ts
-> │                    ├── 📄 paperless-config.ts
-> │                    ├── 📄 paperless-task.ts
-> │                    ├── 📄 processed-mail.ts
-> │                    ├── 📄 results.ts
-> │                    ├── 📄 saved-view.ts
-> │                    ├── 📄 share-link.ts
-> │                    ├── 📄 storage-keys.ts
-> │                    ├── 📄 storage-path.ts
-> │                    ├── 📄 system-status.ts
-> │                    ├── 📄 tag.ts
-> │                    ├── 📄 ui-settings.ts
-> │                    ├── 📄 user-profile.ts
-> │                    ├── 📄 user.ts
-> │                    ├── 📄 websocket-documents-deleted-message.ts
-> │                    ├── 📄 websocket-progress-message.ts
-> │                    ├── 📄 workflow-action.ts
-> │                    ├── 📄 workflow-trigger.ts
-> │                    ├── 📄 workflow.ts
-> │                  └── 📂 directives/
-> │                    ├── 📄 if-object-permissions.directive.spec.ts
-> │                    ├── 📄 if-object-permissions.directive.ts
-> │                    ├── 📄 if-owner.directive.spec.ts
-> │                    ├── 📄 if-owner.directive.ts
-> │                    ├── 📄 if-permissions.directive.spec.ts
-> │                    ├── 📄 if-permissions.directive.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 sortable.directive.spec.ts
-> │                    ├── 📄 sortable.directive.ts
-> │                  └── 📂 guards/
-> │                    ├── 📄 dirty-doc.guard.spec.ts
-> │                    ├── 📄 dirty-doc.guard.ts
-> │                    ├── 📄 dirty-form.guard.spec.ts
-> │                    ├── 📄 dirty-form.guard.ts
-> │                    ├── 📄 dirty-saved-view.guard.spec.ts
-> │                    ├── 📄 dirty-saved-view.guard.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 permissions.guard.spec.ts
-> │                    ├── 📄 permissions.guard.ts
-> │                  ├── 📄 index.html
-> │                  └── 📂 interceptors/
-> │                    ├── 📄 api-version.interceptor.spec.ts
-> │                    ├── 📄 api-version.interceptor.ts
-> │                    ├── 📄 csrf.interceptor.spec.ts
-> │                    ├── 📄 csrf.interceptor.ts
-> │                    ├── 📄 index.html
-> │                  └── 📂 pipes/
-> │                    ├── 📄 correspondent-name.pipe.spec.ts
-> │                    ├── 📄 correspondent-name.pipe.ts
-> │                    ├── 📄 custom-date.pipe.spec.ts
-> │                    ├── 📄 custom-date.pipe.ts
-> │                    ├── 📄 document-title.pipe.spec.ts
-> │                    ├── 📄 document-title.pipe.ts
-> │                    ├── 📄 document-type-name.pipe.spec.ts
-> │                    ├── 📄 document-type-name.pipe.ts
-> │                    ├── 📄 file-size.pipe.spec.ts
-> │                    ├── 📄 file-size.pipe.ts
-> │                    ├── 📄 filter.pipe.spec.ts
-> │                    ├── 📄 filter.pipe.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 is-number.pipe.spec.ts
-> │                    ├── 📄 is-number.pipe.ts
-> │                    ├── 📄 object-name.pipe.spec.ts
-> │                    ├── 📄 object-name.pipe.ts
-> │                    ├── 📄 safeurl.pipe.spec.ts
-> │                    ├── 📄 safeurl.pipe.ts
-> │                    ├── 📄 storage-path-name.pipe.spec.ts
-> │                    ├── 📄 storage-path-name.pipe.ts
-> │                    ├── 📄 username.pipe.spec.ts
-> │                    ├── 📄 username.pipe.ts
-> │                    ├── 📄 yes-no.pipe.spec.ts
-> │                    ├── 📄 yes-no.pipe.ts
-> │                  └── 📂 services/
-> │                    ├── 📄 component-router.service.spec.ts
-> │                    ├── 📄 component-router.service.ts
-> │                    ├── 📄 config.service.spec.ts
-> │                    ├── 📄 config.service.ts
-> │                    ├── 📄 django-messages.service.spec.ts
-> │                    ├── 📄 django-messages.service.ts
-> │                    ├── 📄 document-list-view.service.spec.ts
-> │                    ├── 📄 document-list-view.service.ts
-> │                    ├── 📄 hot-key.service.spec.ts
-> │                    ├── 📄 hot-key.service.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 open-documents.service.spec.ts
-> │                    ├── 📄 open-documents.service.ts
-> │                    ├── 📄 permissions.service.spec.ts
-> │                    ├── 📄 permissions.service.ts
-> │                    ├── 📄 profile.service.spec.ts
-> │                    ├── 📄 profile.service.ts
-> │                    └── 📂 rest/
-> │                      ├── 📄 abstract-name-filter-service.spec.ts
-> │                      ├── 📄 abstract-name-filter-service.ts
-> │                      ├── 📄 abstract-paperless-service.spec.ts
-> │                      ├── 📄 abstract-paperless-service.ts
-> │                      ├── 📄 correspondent.service.spec.ts
-> │                      ├── 📄 correspondent.service.ts
-> │                      ├── 📄 custom-fields.service.spec.ts
-> │                      ├── 📄 custom-fields.service.ts
-> │                      ├── 📄 document-notes.service.spec.ts
-> │                      ├── 📄 document-notes.service.ts
-> │                      ├── 📄 document-type.service.spec.ts
-> │                      ├── 📄 document-type.service.ts
-> │                      ├── 📄 document.service.spec.ts
-> │                      ├── 📄 document.service.ts
-> │                      ├── 📄 group.service.spec.ts
-> │                      ├── 📄 group.service.ts
-> │                      ├── 📄 index.html
-> │                      ├── 📄 log.service.spec.ts
-> │                      ├── 📄 log.service.ts
-> │                      ├── 📄 mail-account.service.spec.ts
-> │                      ├── 📄 mail-account.service.ts
-> │                      ├── 📄 mail-rule.service.spec.ts
-> │                      ├── 📄 mail-rule.service.ts
-> │                      ├── 📄 processed-mail.service.spec.ts
-> │                      ├── 📄 processed-mail.service.ts
-> │                      ├── 📄 remote-version.service.spec.ts
-> │                      ├── 📄 remote-version.service.ts
-> │                      ├── 📄 saved-view.service.spec.ts
-> │                      ├── 📄 saved-view.service.ts
-> │                      ├── 📄 search.service.spec.ts
-> │                      ├── 📄 search.service.ts
-> │                      ├── 📄 share-link.service.spec.ts
-> │                      ├── 📄 share-link.service.ts
-> │                      ├── 📄 storage-path.service.spec.ts
-> │                      ├── 📄 storage-path.service.ts
-> │                      ├── 📄 tag.service.spec.ts
-> │                      ├── 📄 tag.service.ts
-> │                      ├── 📄 user.service.spec.ts
-> │                      ├── 📄 user.service.ts
-> │                      ├── 📄 workflow.service.spec.ts
-> │                      ├── 📄 workflow.service.ts
-> │                    ├── 📄 settings.service.spec.ts
-> │                    ├── 📄 settings.service.ts
-> │                    ├── 📄 system-status.service.spec.ts
-> │                    ├── 📄 system-status.service.ts
-> │                    ├── 📄 tasks.service.spec.ts
-> │                    ├── 📄 tasks.service.ts
-> │                    ├── 📄 toast.service.spec.ts
-> │                    ├── 📄 toast.service.ts
-> │                    ├── 📄 trash.service.spec.ts
-> │                    ├── 📄 trash.service.ts
-> │                    ├── 📄 upload-documents.service.spec.ts
-> │                    ├── 📄 upload-documents.service.ts
-> │                    ├── 📄 websocket-status.service.spec.ts
-> │                    ├── 📄 websocket-status.service.ts
-> │                  └── 📂 utils/
-> │                    ├── 📄 color.spec.ts
-> │                    ├── 📄 color.ts
-> │                    ├── 📄 custom-field-query-element.spec.ts
-> │                    ├── 📄 custom-field-query-element.ts
-> │                    ├── 📄 filter-rules.spec.ts
-> │                    ├── 📄 filter-rules.ts
-> │                    ├── 📄 flatten-tags.spec.ts
-> │                    ├── 📄 flatten-tags.ts
-> │                    ├── 📄 http.spec.ts
-> │                    ├── 📄 http.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 navigation.ts
-> │                    ├── 📄 ngb-date-parser-formatter.spec.ts
-> │                    ├── 📄 ngb-date-parser-formatter.ts
-> │                    ├── 📄 ngb-iso-date-adapter.spec.ts
-> │                    ├── 📄 ngb-iso-date-adapter.ts
-> │                    ├── 📄 popper-options.spec.ts
-> │                    ├── 📄 popper-options.ts
-> │                    ├── 📄 query-params.spec.ts
-> │                    ├── 📄 query-params.ts
-> │                ├── 📄 apple-touch-icon.png
-> │                └── 📂 assets/
-> │                  ├── 📄 document.png
-> │                  ├── 📄 index.html
-> │                  ├── 📄 logo-dark-notext.svg
-> │                  ├── 📄 logo-dark.svg
-> │                  ├── 📄 logo-notext.svg
-> │                  ├── 📄 logo-white-notext.svg
-> │                └── 📂 environments/
-> │                  ├── 📄 environment.prod.ts
-> │                  ├── 📄 environment.ts
-> │                  ├── 📄 index.html
-> │                ├── 📄 favicon.ico
-> │                ├── 📄 index.html
-> │                └── 📂 locale/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 messages.af_ZA.xlf
-> │                  ├── 📄 messages.ar_AR.xlf
-> │                  ├── 📄 messages.be_BY.xlf
-> │                  ├── 📄 messages.bg_BG.xlf
-> │                  ├── 📄 messages.ca_ES.xlf
-> │                  ├── 📄 messages.cs_CZ.xlf
-> │                  ├── 📄 messages.da_DK.xlf
-> │                  ├── 📄 messages.de_DE.xlf
-> │                  ├── 📄 messages.el_GR.xlf
-> │                  ├── 📄 messages.en_GB.xlf
-> │                  ├── 📄 messages.en_US.xlf
-> │                  ├── 📄 messages.es_ES.xlf
-> │                  ├── 📄 messages.et_EE.xlf
-> │                  ├── 📄 messages.fa_IR.xlf
-> │                  ├── 📄 messages.fi_FI.xlf
-> │                  ├── 📄 messages.fr_FR.xlf
-> │                  ├── 📄 messages.he_IL.xlf
-> │                  ├── 📄 messages.hi_IN.xlf
-> │                  ├── 📄 messages.hr_HR.xlf
-> │                  ├── 📄 messages.hu_HU.xlf
-> │                  ├── 📄 messages.id_ID.xlf
-> │                  ├── 📄 messages.it_IT.xlf
-> │                  ├── 📄 messages.ja_JP.xlf
-> │                  ├── 📄 messages.km_KH.xlf
-> │                  ├── 📄 messages.ko_KR.xlf
-> │                  ├── 📄 messages.lb_LU.xlf
-> │                  ├── 📄 messages.lt_LT.xlf
-> │                  ├── 📄 messages.lv_LV.xlf
-> │                  ├── 📄 messages.mk_MK.xlf
-> │                  ├── 📄 messages.ms_MY.xlf
-> │                  ├── 📄 messages.nl_NL.xlf
-> │                  ├── 📄 messages.no_NO.xlf
-> │                  ├── 📄 messages.pl_PL.xlf
-> │                  ├── 📄 messages.pt_BR.xlf
-> │                  ├── 📄 messages.pt_PT.xlf
-> │                  ├── 📄 messages.ro_RO.xlf
-> │                  ├── 📄 messages.ru_RU.xlf
-> │                  ├── 📄 messages.sk_SK.xlf
-> │                  ├── 📄 messages.sl_SI.xlf
-> │                  ├── 📄 messages.sr_CS.xlf
-> │                  ├── 📄 messages.sv_SE.xlf
-> │                  ├── 📄 messages.th_TH.xlf
-> │                  ├── 📄 messages.tr_TR.xlf
-> │                  ├── 📄 messages.uk_UA.xlf
-> │                  ├── 📄 messages.vi_VN.xlf
-> │                  ├── 📄 messages.xh_ZA.xlf
-> │                  ├── 📄 messages.zh_CN.xlf
-> │                  ├── 📄 messages.zh_TW.xlf
-> │                ├── 📄 main.ts
-> │                ├── 📄 manifest.webmanifest
-> │                ├── 📄 polyfills.ts
-> │                ├── 📄 print.scss
-> │                ├── 📄 styles.scss
-> │                ├── 📄 theme.scss
-> │              ├── 📄 tsconfig.app.json
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 tsconfig.spec.json
-> │              └── 📂 documents/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 admin.py
-> │                ├── 📄 apps.py
-> │                ├── 📄 barcodes.py
-> │                ├── 📄 bulk_download.py
-> │                ├── 📄 bulk_edit.py
-> │                ├── 📄 caching.py
-> │                ├── 📄 checks.py
-> │                ├── 📄 classifier.py
-> │                ├── 📄 conditionals.py
-> │                ├── 📄 consumer.py
-> │                ├── 📄 context_processors.py
-> │                ├── 📄 converters.py
-> │                ├── 📄 data_models.py
-> │                ├── 📄 double_sided.py
-> │                ├── 📄 file_handling.py
-> │                ├── 📄 filters.py
-> │                ├── 📄 index.html
-> │                ├── 📄 index.py
-> │                ├── 📄 loggers.py
-> │                ├── 📄 mail.py
-> │                └── 📂 management/
-> │                  └── 📂 commands/
-> │                    ├── 📄 convert_mariadb_uuid.py
-> │                    ├── 📄 decrypt_documents.py
-> │                    ├── 📄 document_archiver.py
-> │                    ├── 📄 document_consumer.py
-> │                    ├── 📄 document_create_classifier.py
-> │                    ├── 📄 document_exporter.py
-> │                    ├── 📄 document_fuzzy_match.py
-> │                    ├── 📄 document_importer.py
-> │                    ├── 📄 document_index.py
-> │                    ├── 📄 document_renamer.py
-> │                    ├── 📄 document_retagger.py
-> │                    ├── 📄 document_sanity_checker.py
-> │                    ├── 📄 document_thumbnails.py
-> │                    ├── 📄 index.html
-> │                    ├── 📄 loaddata_stdin.py
-> │                    ├── 📄 manage_superuser.py
-> │                    ├── 📄 mixins.py
-> │                    ├── 📄 prune_audit_logs.py
-> │                  ├── 📄 index.html
-> │                ├── 📄 matching.py
-> │                ├── 📄 models.py
-> │                ├── 📄 parsers.py
-> │                ├── 📄 permissions.py
-> │                └── 📂 plugins/
-> │                  ├── 📄 base.py
-> │                  ├── 📄 helpers.py
-> │                  ├── 📄 index.html
-> │                ├── 📄 regex.py
-> │                └── 📂 resources/
-> │                  ├── 📄 document.webp
-> │                  ├── 📄 index.html
-> │                ├── 📄 sanity_checker.py
-> │                ├── 📄 schema.py
-> │                ├── 📄 serialisers.py
-> │                ├── 📄 settings.py
-> │                └── 📂 signals/
-> │                  ├── 📄 __init__.py
-> │                  ├── 📄 handlers.py
-> │                  ├── 📄 index.html
-> │                └── 📂 static/
-> │                  ├── 📄 base.css
-> │                  ├── 📄 bootstrap.min.css
-> │                  ├── 📄 index.html
-> │                ├── 📄 tasks.py
-> │                └── 📂 templates/
-> │                  └── 📂 account/
-> │                    ├── 📄 account_inactive.html
-> │                    └── 📂 email/
-> │                      ├── 📄 base_message.txt
-> │                      ├── 📄 index.html
-> │                    ├── 📄 index.html
-> │                    ├── 📄 login.html
-> │                    ├── 📄 password_reset.html
-> │                    ├── 📄 password_reset_done.html
-> │                    ├── 📄 password_reset_from_key.html
-> │                    ├── 📄 password_reset_from_key_done.html
-> │                    ├── 📄 signup.html
-> │                  ├── 📄 index.html
-> │                  └── 📂 mfa/
-> │                    ├── 📄 authenticate.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 paperless-ngx/
-> │                    ├── 📄 base.html
-> │                    ├── 📄 index.html
-> │                    └── 📂 snippets/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 svg_leaf.html
-> │                      ├── 📄 svg_logo.html
-> │                  └── 📂 socialaccount/
-> │                    ├── 📄 authentication_error.html
-> │                    ├── 📄 index.html
-> │                    ├── 📄 login.html
-> │                    ├── 📄 signup.html
-> │                └── 📂 templating/
-> │                  ├── 📄 environment.py
-> │                  ├── 📄 filepath.py
-> │                  ├── 📄 filters.py
-> │                  ├── 📄 index.html
-> │                  ├── 📄 utils.py
-> │                  ├── 📄 workflows.py
-> │                └── 📂 tests/
-> │                  ├── 📄 conftest.py
-> │                  └── 📂 data/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 v1.17.4.model.pickle
-> │                  └── 📂 examples/
-> │                    ├── 📄 index.html
-> │                  ├── 📄 factories.py
-> │                  ├── 📄 index.html
-> │                  └── 📂 samples/
-> │                    └── 📂 barcodes/
-> │                      ├── 📄 barcode-128-asn-too-large.pdf
-> │                      ├── 📄 barcode-128-custom.pdf
-> │                      ├── 📄 barcode-39-asn-123.pdf
-> │                      ├── 📄 barcode-39-asn-custom-prefix.pdf
-> │                      ├── 📄 barcode-39-asn-invalid.pdf
-> │                      ├── 📄 barcode-39-custom.pdf
-> │                      ├── 📄 barcode-fax-image.pdf
-> │                      ├── 📄 barcode-qr-asn-000123-upscale-dpi.pdf
-> │                      ├── 📄 barcode-qr-custom.pdf
-> │                      ├── 📄 index.html
-> │                      ├── 📄 many-qr-codes.pdf
-> │                      ├── 📄 patch-code-t-double.pdf
-> │                      ├── 📄 patch-code-t-middle-alpha.tiff
-> │                      ├── 📄 patch-code-t-middle-distorted.pdf
-> │                      ├── 📄 patch-code-t-middle-fuzzy.pdf
-> │                      ├── 📄 patch-code-t-middle-reverse.pdf
-> │                      ├── 📄 patch-code-t-middle-unreadable.pdf
-> │                      ├── 📄 patch-code-t-middle.pdf
-> │                      ├── 📄 patch-code-t-middle.tiff
-> │                      ├── 📄 patch-code-t-qr.pdf
-> │                      ├── 📄 patch-code-t.pdf
-> │                      ├── 📄 several-patcht-codes.pdf
-> │                      ├── 📄 split-by-asn-1.pdf
-> │                      ├── 📄 split-by-asn-2.pdf
-> │                    ├── 📄 content.txt
-> │                    └── 📂 documents/
-> │                      ├── 📄 index.html
-> │                      └── 📂 originals/
-> │                        ├── 📄 0000002.pdf
-> │                        ├── 📄 0000003.pdf
-> │                        ├── 📄 0000004.pdf.gpg
-> │                        ├── 📄 0000005.pdf
-> │                        ├── 📄 0000006.pdf
-> │                        ├── 📄 index.html
-> │                      └── 📂 thumbnails/
-> │                        ├── 📄 0000002.webp
-> │                        ├── 📄 0000004.webp.gpg
-> │                        ├── 📄 index.html
-> │                    ├── 📄 double-sided-even.pdf
-> │                    ├── 📄 double-sided-odd.pdf
-> │                    ├── 📄 index.html
-> │                    ├── 📄 invalid_pdf.pdf
-> │                    ├── 📄 password-is-test.pdf
-> │                    ├── 📄 preprocessed_content.txt
-> │                    ├── 📄 preprocessed_content_advanced.txt
-> │                    ├── 📄 simple-noalpha.png
-> │                    ├── 📄 simple.jpg
-> │                    ├── 📄 simple.png
-> │                    ├── 📄 simple.tiff
-> │                    ├── 📄 simple.zip
-> │                    ├── 📄 test_with_bom.pdf
-> │                  ├── 📄 test_admin.py
-> │                  ├── 📄 test_api_app_config.py
-> │                  ├── 📄 test_api_bulk_download.py
-> │                  ├── 📄 test_api_bulk_edit.py
-> │                  ├── 📄 test_api_custom_fields.py
-> │                  ├── 📄 test_api_documents.py
-> │                  ├── 📄 test_api_email.py
-> │                  ├── 📄 test_api_filter_by_custom_fields.py
-> │                  ├── 📄 test_api_objects.py
-> │                  ├── 📄 test_api_permissions.py
-> │                  ├── 📄 test_api_profile.py
-> │                  ├── 📄 test_api_remote_version.py
-> │                  ├── 📄 test_api_schema.py
-> │                  ├── 📄 test_api_search.py
-> │                  ├── 📄 test_api_status.py
-> │                  ├── 📄 test_api_tasks.py
-> │                  ├── 📄 test_api_trash.py
-> │                  ├── 📄 test_api_uisettings.py
-> │                  ├── 📄 test_api_workflows.py
-> │                  ├── 📄 test_barcodes.py
-> │                  ├── 📄 test_bulk_edit.py
-> │                  ├── 📄 test_caching.py
-> │                  ├── 📄 test_checks.py
-> │                  ├── 📄 test_classifier.py
-> │                  ├── 📄 test_consumer.py
-> │                  ├── 📄 test_date_parsing.py
-> │                  ├── 📄 test_delayedquery.py
-> │                  ├── 📄 test_document_model.py
-> │                  ├── 📄 test_double_sided.py
-> │                  ├── 📄 test_file_handling.py
-> │                  ├── 📄 test_filters.py
-> │                  ├── 📄 test_index.py
-> │                  ├── 📄 test_management.py
-> │                  ├── 📄 test_management_consumer.py
-> │                  ├── 📄 test_management_exporter.py
-> │                  ├── 📄 test_management_fuzzy.py
-> │                  ├── 📄 test_management_importer.py
-> │                  ├── 📄 test_management_retagger.py
-> │                  ├── 📄 test_management_superuser.py
-> │                  ├── 📄 test_management_thumbnails.py
-> │                  ├── 📄 test_matchables.py
-> │                  ├── 📄 test_migration_archive_files.py
-> │                  ├── 📄 test_migration_consumption_templates.py
-> │                  ├── 📄 test_migration_created.py
-> │                  ├── 📄 test_migration_custom_field_selects.py
-> │                  ├── 📄 test_migration_customfields.py
-> │                  ├── 📄 test_migration_document_pages_count.py
-> │                  ├── 📄 test_migration_encrypted_webp_conversion.py
-> │                  ├── 📄 test_migration_mime_type.py
-> │                  ├── 📄 test_migration_remove_null_characters.py
-> │                  ├── 📄 test_migration_storage_path_template.py
-> │                  ├── 📄 test_migration_tag_colors.py
-> │                  ├── 📄 test_migration_webp_conversion.py
-> │                  ├── 📄 test_migration_workflows.py
-> │                  ├── 📄 test_models.py
-> │                  ├── 📄 test_parsers.py
-> │                  ├── 📄 test_sanity_check.py
-> │                  ├── 📄 test_tag_hierarchy.py
-> │                  ├── 📄 test_task_signals.py
-> │                  ├── 📄 test_tasks.py
-> │                  ├── 📄 test_views.py
-> │                  ├── 📄 test_workflows.py
-> │                  ├── 📄 utils.py
-> │                ├── 📄 utils.py
-> │                ├── 📄 validators.py
-> │                ├── 📄 views.py
-> │                └── 📂 workflows/
-> │                  ├── 📄 actions.py
-> │                  ├── 📄 index.html
-> │                  ├── 📄 mutations.py
-> │                  ├── 📄 utils.py
-> │                  ├── 📄 webhooks.py
-> │              ├── 📄 index.html
-> │              └── 📂 locale/
-> │                └── 📂 af_ZA/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ar_AR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 be_BY/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 bg_BG/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ca_ES/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 cs_CZ/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 da_DK/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 de_DE/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 el_GR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 en_GB/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 en_US/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 es_ES/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 et_EE/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 fa_IR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 fi_FI/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 fr_FR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 he_IL/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 hi_IN/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 hr_HR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 hu_HU/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 id_ID/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                └── 📂 it_IT/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ja_JP/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 km_KH/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ko_KR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 la_LA/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 lb_LU/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 lt_LT/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 lv_LV/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 mk_MK/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ms_MY/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 nb_NO/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 nl_NL/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 no_NO/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 pl_PL/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 pt_BR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 pt_PT/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ro_RO/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 ru_RU/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 sk_SK/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 sl_SI/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 sr_CS/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 sv_SE/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 th_TH/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 tr_TR/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 uk_UA/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 vi_VN/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 xh_ZA/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 zh_CN/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                └── 📂 zh_TW/
-> │                  └── 📂 LC_MESSAGES/
-> │                    ├── 📄 django.po
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │              ├── 📄 manage.py
-> │              └── 📂 paperless/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 adapter.py
-> │                ├── 📄 admin.py
-> │                ├── 📄 apps.py
-> │                ├── 📄 asgi.py
-> │                ├── 📄 auth.py
-> │                ├── 📄 celery.py
-> │                ├── 📄 checks.py
-> │                ├── 📄 config.py
-> │                ├── 📄 consumers.py
-> │                ├── 📄 db.py
-> │                ├── 📄 db_cache.py
-> │                ├── 📄 filters.py
-> │                ├── 📄 index.html
-> │                ├── 📄 middleware.py
-> │                ├── 📄 models.py
-> │                ├── 📄 serialisers.py
-> │                ├── 📄 settings.py
-> │                ├── 📄 signals.py
-> │                └── 📂 static/
-> │                  ├── 📄 index.html
-> │                  └── 📂 paperless/
-> │                    └── 📂 img/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 logo-dark.png
-> │                      ├── 📄 logo-light.png
-> │                    ├── 📄 index.html
-> │                └── 📂 tests/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 test_adapter.py
-> │                  ├── 📄 test_checks.py
-> │                  ├── 📄 test_db_cache.py
-> │                  ├── 📄 test_remote_user.py
-> │                  ├── 📄 test_settings.py
-> │                  ├── 📄 test_signals.py
-> │                  ├── 📄 test_utils.py
-> │                  ├── 📄 test_views.py
-> │                  ├── 📄 test_websockets.py
-> │                ├── 📄 urls.py
-> │                ├── 📄 utils.py
-> │                ├── 📄 validators.py
-> │                ├── 📄 version.py
-> │                ├── 📄 views.py
-> │                ├── 📄 wsgi.py
-> │              └── 📂 paperless_mail/
-> │                ├── 📄 admin.py
-> │                ├── 📄 apps.py
-> │                ├── 📄 filters.py
-> │                ├── 📄 index.html
-> │                ├── 📄 mail.py
-> │                └── 📂 management/
-> │                  └── 📂 commands/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 mail_fetcher.py
-> │                  ├── 📄 index.html
-> │                ├── 📄 models.py
-> │                ├── 📄 oauth.py
-> │                ├── 📄 parsers.py
-> │                ├── 📄 preprocessor.py
-> │                ├── 📄 serialisers.py
-> │                ├── 📄 signals.py
-> │                ├── 📄 tasks.py
-> │                └── 📂 templates/
-> │                  ├── 📄 email_msg_template.html
-> │                  ├── 📄 index.html
-> │                  ├── 📄 input.css
-> │                  ├── 📄 output.css
-> │                  ├── 📄 package.json
-> │                  ├── 📄 tailwind.config.js
-> │                └── 📂 tests/
-> │                  ├── 📄 conftest.py
-> │                  ├── 📄 index.html
-> │                  └── 📂 samples/
-> │                    ├── 📄 first.pdf
-> │                    ├── 📄 html.eml.html
-> │                    ├── 📄 html.eml.pdf
-> │                    ├── 📄 html.eml.pdf.webp
-> │                    ├── 📄 index.html
-> │                    ├── 📄 sample.html
-> │                    ├── 📄 sample.html.pdf
-> │                    ├── 📄 sample.html.pdf.webp
-> │                    ├── 📄 sample.png
-> │                    ├── 📄 second.pdf
-> │                    ├── 📄 simple_text.eml.pdf
-> │                    ├── 📄 simple_text.eml.pdf.webp
-> │                  ├── 📄 test_api.py
-> │                  ├── 📄 test_live_mail.py
-> │                  ├── 📄 test_mail.py
-> │                  ├── 📄 test_mail_oauth.py
-> │                  ├── 📄 test_parsers.py
-> │                  ├── 📄 test_parsers_live.py
-> │                  ├── 📄 test_preprocessor.py
-> │                ├── 📄 views.py
-> │              └── 📂 paperless_tesseract/
-> │                ├── 📄 __init__.py
-> │                ├── 📄 apps.py
-> │                ├── 📄 checks.py
-> │                ├── 📄 index.html
-> │                ├── 📄 parsers.py
-> │                ├── 📄 signals.py
-> │                └── 📂 tests/
-> │                  ├── 📄 index.html
-> │                  └── 📂 samples/
-> │                    ├── 📄 document.webp
-> │                    ├── 📄 encrypted.pdf
-> │                    ├── 📄 index.html
-> │                    ├── 📄 multi-page-images-alpha-rgb.tiff
-> │                    ├── 📄 multi-page-images-alpha.tiff
-> │                    ├── 📄 multi-page-images.pdf
-> │                    ├── 📄 multi-page-images.tiff
-> │                    ├── 📄 multi-page-mixed.pdf
-> │                    ├── 📄 no-text-alpha.png
-> │                    ├── 📄 rotated.pdf
-> │                    ├── 📄 rtl-test.pdf
-> │                    ├── 📄 signed.pdf
-> │                    ├── 📄 simple-alpha.png
-> │                    ├── 📄 simple-digital.pdf
-> │                    ├── 📄 simple-no-dpi.png
-> │                    ├── 📄 simple.bmp
-> │                    ├── 📄 simple.gif
-> │                    ├── 📄 simple.heic
-> │                    ├── 📄 simple.jpg
-> │                    ├── 📄 simple.png
-> │                    ├── 📄 simple.tif
-> │                    ├── 📄 single-page-mixed.pdf
-> │                  ├── 📄 test_checks.py
-> │                  ├── 📄 test_parser.py
-> │                  ├── 📄 test_parser_custom_settings.py
-> │              └── 📂 paperless_text/
-> │                ├── 📄 apps.py
-> │                ├── 📄 index.html
-> │                ├── 📄 parsers.py
-> │                ├── 📄 signals.py
-> │                └── 📂 tests/
-> │                  ├── 📄 conftest.py
-> │                  ├── 📄 index.html
-> │                  └── 📂 samples/
-> │                    ├── 📄 decode_error.txt
-> │                    ├── 📄 index.html
-> │                    ├── 📄 test.txt
-> │                  ├── 📄 test_parser.py
-> │              └── 📂 paperless_tika/
-> │                ├── 📄 apps.py
-> │                ├── 📄 index.html
-> │                ├── 📄 parsers.py
-> │                ├── 📄 signals.py
-> │                └── 📂 tests/
-> │                  ├── 📄 conftest.py
-> │                  ├── 📄 index.html
-> │                  └── 📂 samples/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 multi-part-broken.odt
-> │                    ├── 📄 sample.doc
-> │                    ├── 📄 sample.docx
-> │                    ├── 📄 sample.odt
-> │                  ├── 📄 test_live_tika.py
-> │                  ├── 📄 test_tika_parser.py
-> │            ├── 📄 uv.lock
-> │          └── 📂 app_QiNoteOS_ph03_QiD-cli/
-> │            ├── 📄 README.md
-> │            └── 📂 _assets/
-> │              └── 📂 _generated_icons/
-> │                ├── 📄 index.html
-> │                ├── 📄 qid_128.png
-> │                ├── 📄 qid_16.png
-> │                ├── 📄 qid_24.png
-> │                ├── 📄 qid_256.png
-> │                ├── 📄 qid_32.png
-> │                ├── 📄 qid_48.png
-> │                ├── 📄 qid_64.png
-> │              ├── 📄 index.html
-> │              ├── 📄 make_ico.py
-> │              ├── 📄 qid-3d.jpg
-> │              ├── 📄 qid-barcode.jpg
-> │              ├── 📄 qid-complex.jpg
-> │              ├── 📄 qid-complex.mp4
-> │              ├── 📄 qid-gradient.jpg
-> │              ├── 📄 qid-inverted.svg
-> │              ├── 📄 qid-led.jpg
-> │              ├── 📄 qid-qr-code.jpg
-> │              ├── 📄 qid.ico
-> │              ├── 📄 qid.ico.txt
-> │              ├── 📄 qid.jpg
-> │              ├── 📄 qid.png
-> │            └── 📂 _backups/
-> │              └── 📂 daily/
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              └── 📂 rolling/
-> │                ├── 📄 index.html
-> │                ├── 📄 state.prev.json
-> │            └── 📂 _logs/
-> │              ├── 📄 index.html
-> │              ├── 📄 qid_activity.jsonl
-> │            ├── 📄 _qid_registry.json
-> │            ├── 📄 _qid_state.json
-> │            └── 📂 _wal/
-> │              ├── 📄 index.html
-> │              ├── 📄 qid_wal.jsonl
-> │            ├── 📄 build_windows.ps1
-> │            └── 📂 desktop/
-> │              ├── 📄 create_shortcut.ps1
-> │              ├── 📄 create_shortcut.vbs
-> │              ├── 📄 index.html
-> │              ├── 📄 qid_launcher.bat
-> │              ├── 📄 qid_ui.bat
-> │            └── 📂 docs/
-> │              ├── 📄 DEV_DOC.md
-> │              ├── 📄 gid_rules.md
-> │              ├── 📄 index.html
-> │            ├── 📄 index.html
-> │            ├── 📄 pyproject.toml
-> │            ├── 📄 qid.py
-> │            ├── 📄 requirements.txt
-> │          └── 📂 app_QiNoteOS_ph04_GINA/
-> │            └── 📂 GINA_launcher/
-> │              ├── 📄 index.html
-> │              └── 📂 src/
-> │                └── 📂 components/
-> │                  ├── 📄 FileBrowser.jsx
-> │                  ├── 📄 index.html
-> │                ├── 📄 config.js
-> │                ├── 📄 index.html
-> │            └── 📂 apps/
-> │              └── 📂 QiDocs/
-> │                ├── 📄 index.html
-> │              └── 📂 gina_core/
-> │                ├── 📄 db.py
-> │                ├── 📄 index.html
-> │                ├── 📄 main.py
-> │                └── 📂 services/
-> │                  ├── 📄 capture.py
-> │                  ├── 📄 index.html
-> │                ├── 📄 utils.py
-> │              ├── 📄 index.html
-> │              └── 📂 launcher/
-> │                ├── 📄 index.html
-> │                ├── 📄 package.json
-> │                └── 📂 public/
-> │                  ├── 📄 index.html
-> │                └── 📂 src/
-> │                  ├── 📄 App.css
-> │                  ├── 📄 App.jsx
-> │                  └── 📂 components/
-> │                    ├── 📄 FileBrowser.css
-> │                    ├── 📄 Tooltip.css
-> │                    ├── 📄 Tooltip.jsx
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.css
-> │                  ├── 📄 index.html
-> │                  ├── 📄 main.jsx
-> │                  ├── 📄 theme.js
-> │            └── 📂 data/
-> │              └── 📂 compiled/
-> │                ├── 📄 index.html
-> │                ├── 📄 qios_constitution_v1.json
-> │              ├── 📄 index.html
-> │              └── 📂 outputs/
-> │                ├── 📄 index.html
-> │              ├── 📄 qios_01_tables_and_registries.canvas
-> │              ├── 📄 qios_03_directory_tree.canvas
-> │              └── 📂 schemas/
-> │                ├── 📄 index.html
-> │              └── 📂 seeds/
-> │                ├── 📄 index.html
-> │                ├── 📄 supabase_seed_qid.sql
-> │                ├── 📄 supabase_seed_realms.sql
-> │                ├── 📄 supabase_seed_rules.sql
-> │              └── 📂 sheets/
-> │                ├── 📄 front_matter_schema_v1.csv
-> │                ├── 📄 fs_ignore_v1.csv
-> │                ├── 📄 index.html
-> │                ├── 📄 qios_rules_v1_1.csv
-> │            └── 📂 docs/
-> │              ├── 📄 INTEGRATION_COMPLETE.md
-> │              ├── 📄 QiAlly Call Ecosystem & Gina Voice Architecture.md
-> │              ├── 📄 gina_n8n_workflows.md
-> │              ├── 📄 index.html
-> │              ├── 📄 integration_summary.md
-> │              ├── 📄 launcher_ui_mindmap.md
-> │              ├── 📄 markdownlint_analysis_genesis.md
-> │              ├── 📄 markdownlint_analysis_remaining.md
-> │              ├── 📄 markdownlint_final_analysis.md
-> │              ├── 📄 markdownlint_quick_reference.md
-> │              ├── 📄 markdownlint_review_summary.md
-> │              ├── 📄 markdownlint_summary.md
-> │              └── 📂 notes/
-> │                ├── 📄 discussion26-07-01.md
-> │                ├── 📄 index.html
-> │              └── 📂 prompts/
-> │                ├── 📄 cockpit_gui_prompt.md
-> │                ├── 📄 index.html
-> │              ├── 📄 ui_contracts_v1.md
-> │            ├── 📄 env.example
-> │            └── 📂 gina_core/
-> │              ├── 📄 index.html
-> │              ├── 📄 main.py
-> │              ├── 📄 requirements.txt
-> │            ├── 📄 index.html
-> │            ├── 📄 package.json
-> │            ├── 📄 qios_00_genesis.canvas
-> │            ├── 📄 qios_runtime_mindmap.canvas
-> │            └── 📂 rules/
-> │              ├── 📄 _readme.md
-> │              ├── 📄 folder_registry.yaml
-> │              ├── 📄 index.html
-> │              ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │              ├── 📄 qios_05_Cursor_and_naming.canvas
-> │              └── 📂 qios_cursor_prompts/
-> │                ├── 📄 index.html
-> │                ├── 📄 install_ingestion_worker.md
-> │                ├── 📄 project_prompt.md.md
-> │                ├── 📄 qicompiler_add_prompt.md
-> │                ├── 📄 qicompiler_orchestrator_prompt.md
-> │                ├── 📄 qimatrix_csv_prompt.md
-> │                ├── 📄 qimatrix_sql_prompt.md
-> │                ├── 📄 qimatrix_yaml_prompt.md
-> │                ├── 📄 step3_tree_compiler_prompt.md
-> │                ├── 📄 user_prompt.md.md
-> │              ├── 📄 realms_registry.yaml
-> │            └── 📂 templates/
-> │              └── 📂 docs/
-> │                ├── 📄 index.html
-> │                ├── 📄 readme_template.md.md
-> │              ├── 📄 index.html
-> │            └── 📂 tests/
-> │              ├── 📄 index.html
-> │              ├── 📄 verify_parsing.py
-> │            └── 📂 tools/
-> │              ├── 📄 README_SCANNER.md
-> │              ├── 📄 index.html
-> │              ├── 📄 run_migrations.py
-> │          └── 📂 app_QiNoteOS_ph05_Tools_Launcher/
-> │            └── 📂 api/
-> │              ├── 📄 index.html
-> │            └── 📂 components/
-> │              └── 📂 chat/
-> │                ├── 📄 index.html
-> │              └── 📂 dashboard/
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              └── 📂 layout/
-> │                ├── 📄 index.html
-> │              └── 📂 views/
-> │                ├── 📄 index.html
-> │            └── 📂 hooks/
-> │              ├── 📄 index.html
-> │            ├── 📄 index.html
-> │            └── 📂 public/
-> │              ├── 📄 index.html
-> │            └── 📂 src/
-> │              ├── 📄 index.html
-> │            └── 📂 types/
-> │              ├── 📄 index.html
-> │            └── 📂 utils/
-> │              ├── 📄 index.html
-> │          └── 📂 app_QiNoteOS_ph05_Viewer/
-> │            ├── 📄 index.html
-> │            └── 📂 scripts/
-> │              ├── 📄 build_catalog.py
-> │              ├── 📄 build_site.py
-> │              ├── 📄 index.html
-> │            └── 📂 site/
-> │              └── 📂 assets/
-> │                ├── 📄 app.js
-> │                ├── 📄 index.html
-> │                ├── 📄 styles.css
-> │              ├── 📄 index.html
-> │          └── 📂 app_QiNoteOS_ph09_QiBooks/
-> │            └── 📂 bankrules/
-> │              ├── 📄 LICENSE
-> │              ├── 📄 README.md
-> │              ├── 📄 index.html
-> │              ├── 📄 rule_manager.py
-> │              ├── 📄 rules.csv
-> │              ├── 📄 run.bat
-> │            ├── 📄 index.html
-> │            └── 📂 statement_tools/
-> │              └── 📂 cashApp/
-> │                ├── 📄 cashapp_converter.py
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              ├── 📄 requirements.txt
-> │          └── 📂 app_QiNoteOS_ph09_QiHealth/
-> │            ├── 📄 index.html
-> │            └── 📂 public/
-> │              ├── 📄 index.html
-> │          └── 📂 app_QiNoteOS_ph09_QiStory/
-> │            └── 📂 app/
-> │              └── 📂 backend/
-> │                ├── 📄 index.html
-> │                └── 📂 qibook_api/
-> │                  ├── 📄 __init__.py
-> │                  ├── 📄 index.html
-> │                  ├── 📄 main.py
-> │                  └── 📂 routes/
-> │                    ├── 📄 __init__.py
-> │                    ├── 📄 books.py
-> │                    ├── 📄 drafting.py
-> │                    ├── 📄 engine.py
-> │                    ├── 📄 evidence.py
-> │                    ├── 📄 index.html
-> │                    ├── 📄 manuscript.py
-> │                    ├── 📄 outline.py
-> │                    ├── 📄 project.py
-> │                    ├── 📄 raw_items.py
-> │                    ├── 📄 system.py
-> │                  └── 📂 services/
-> │                    ├── 📄 __init__.py
-> │                    ├── 📄 chunk.py
-> │                    ├── 📄 engine.py
-> │                    ├── 📄 export.py
-> │                    ├── 📄 extract.py
-> │                    ├── 📄 heatmap.py
-> │                    ├── 📄 index.html
-> │                    ├── 📄 ingest.py
-> │                    ├── 📄 recap.py
-> │                    ├── 📄 retrieval.py
-> │                    ├── 📄 style_drift.py
-> │                  └── 📂 utils/
-> │                    ├── 📄 __init__.py
-> │                    ├── 📄 config.py
-> │                    ├── 📄 db.py
-> │                    ├── 📄 embeddings.py
-> │                    ├── 📄 index.html
-> │                    ├── 📄 llm.py
-> │                ├── 📄 requirements.txt
-> │              └── 📂 desktop/
-> │                ├── 📄 index.html
-> │                ├── 📄 package.json
-> │                └── 📂 src/
-> │                  ├── 📄 App.tsx
-> │                  └── 📂 components/
-> │                    ├── 📄 EvidenceBadge.tsx
-> │                    ├── 📄 Layout.tsx
-> │                    ├── 📄 LoadingSpinner.tsx
-> │                    ├── 📄 StatusBadge.tsx
-> │                    ├── 📄 Toast.tsx
-> │                    ├── 📄 ToastContainer.tsx
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.css
-> │                  ├── 📄 index.html
-> │                  └── 📂 lib/
-> │                    ├── 📄 api.ts
-> │                    ├── 📄 index.html
-> │                  ├── 📄 main.tsx
-> │                  └── 📂 routes/
-> │                    ├── 📄 BookDetail.tsx
-> │                    ├── 📄 BookWizard.tsx
-> │                    ├── 📄 Books.tsx
-> │                    ├── 📄 DraftingStudio.tsx
-> │                    ├── 📄 Library.tsx
-> │                    ├── 📄 OutlineStudio.tsx
-> │                    ├── 📄 Settings.tsx
-> │                    ├── 📄 index.html
-> │                ├── 📄 tsconfig.json
-> │                ├── 📄 vite.config.ts
-> │              ├── 📄 index.html
-> │              └── 📂 vault/
-> │                ├── 📄 global.sqlite
-> │                ├── 📄 index.html
-> │                └── 📂 projects/
-> │                  └── 📂 default/
-> │                    ├── 📄 index.html
-> │                    └── 📂 raw/
-> │                      ├── 📄 Mirror, Mirror How to Critique a Family Manifesto for Trauma, (1).txt
-> │                      ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │            └── 📂 content/
-> │              ├── 📄 index.html
-> │            └── 📂 cre_QiStory_Pole_To_Power/
-> │              └── 📂 FINAL_SUBMISSION/
-> │                ├── 📄 Paid_In_Full.docx
-> │                ├── 📄 Paid_In_Full.epub
-> │                ├── 📄 Paid_In_Full_Audio_Script.txt
-> │                ├── 📄 Paid_In_Full_PRINT.epub
-> │                ├── 📄 Publication_Requirements.txt
-> │                ├── 📄 _pandoc_metadata.yaml
-> │                ├── 📄 index.html
-> │              ├── 📄 README.md
-> │              └── 📂 assets/
-> │                └── 📂 audio/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 paid_in_full_intro.mp3
-> │                  ├── 📄 prologue_narration.mp3
-> │                ├── 📄 aurther.jpg
-> │                ├── 📄 epub_listening.css
-> │                ├── 📄 epub_print.css
-> │                └── 📂 imgs/
-> │                  ├── 📄 PAIDINFULL.PNG
-> │                  ├── 📄 boss.png
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                ├── 📄 media_prompts.md
-> │                └── 📂 original/
-> │                  ├── 📄 FULL_ORIGINAL_TRANSCRIPT.md
-> │                  ├── 📄 index.html
-> │                  └── 📂 transcripts/
-> │                    ├── 📄 Chapter_01_Monster.md
-> │                    ├── 📄 Chapter_02_Childhood.md
-> │                    ├── 📄 Chapter_03_Romance.md
-> │                    ├── 📄 Chapter_04_Husbands.md
-> │                    ├── 📄 Chapter_05_Otis.md
-> │                    ├── 📄 Final_Reflection.md
-> │                    ├── 📄 Front_Matter.md
-> │                    ├── 📄 index.html
-> │                └── 📂 outputs/
-> │                  ├── 📄 FULL_P2P_STRATEGIC_REWRITE.md
-> │                  ├── 📄 Paid_In_Full_Master_Manuscript.md
-> │                  ├── 📄 index.html
-> │                ├── 📄 print_styles.css
-> │                └── 📂 videos/
-> │                  ├── 📄 PAIDINFULL.gif
-> │                  ├── 📄 age.gif
-> │                  ├── 📄 boss (2).gif
-> │                  ├── 📄 boss.gif
-> │                  ├── 📄 index.html
-> │                  ├── 📄 lost.gif
-> │                  ├── 📄 mirror (2).gif
-> │                  ├── 📄 mirror.gif
-> │                  ├── 📄 monster.gif
-> │                  ├── 📄 potatos.gif
-> │              └── 📂 book/
-> │                ├── 📄 00_Front_Matter.md
-> │                └── 📂 00_PROLOGUE/
-> │                  ├── 📄 00_prologue_mirror_effect.md
-> │                  ├── 📄 index.html
-> │                └── 📂 01_PART_I_INVISIBLE_GIRL/
-> │                  ├── 📄 01_part_I_the_invisible_girl.md
-> │                  ├── 📄 01a_ch01_somerville_indiana.md
-> │                  ├── 📄 01b_ch02_claude.md
-> │                  ├── 📄 01c_ch03_mother.md
-> │                  ├── 📄 01d_ch04_bill.md
-> │                  ├── 📄 01e_ch05_lost_child.md
-> │                  ├── 📄 01f_ch06_early_pregnancy.md
-> │                  ├── 📄 01z_reflection_I_invisibility_is_training.md
-> │                  ├── 📄 index.html
-> │                └── 📂 02_PART_II_MARRYING_MONSTER/
-> │                  ├── 📄 02_part_II_marrying_the_monster.md
-> │                  ├── 📄 02a_ch07_the_musician.md
-> │                  ├── 📄 02b_ch08_marriage_as_ownership.md
-> │                  ├── 📄 02c_ch09_the_toll_of_ghosts.md
-> │                  ├── 📄 02d_ch10_busybody.md
-> │                  ├── 📄 02e_ch11_escalation.md
-> │                  ├── 📄 02f_ch12_the_dog.md
-> │                  ├── 📄 02g_ch13_leaving_without_rescue.md
-> │                  ├── 📄 02z_reflection_II_fear_is_governance.md
-> │                  ├── 📄 index.html
-> │                └── 📂 03_PART_III_BUSINESS_OF_PLEASURE/
-> │                  ├── 📄 03_part_III_business_of_pleasure.md
-> │                  ├── 📄 03a_ch14_jaye.md
-> │                  ├── 📄 03b_ch15_pager_economy.md
-> │                  ├── 📄 03c_ch16_the_upfront_rule.md
-> │                  ├── 📄 03d_ch17_becoming_professional.md
-> │                  ├── 📄 03e_ch18_lines_drawn.md
-> │                  ├── 📄 03z_reflection_III_control_is_not_ownership.md
-> │                  ├── 📄 index.html
-> │                └── 📂 04_PART_IV_CRACK_IN_FOUNDATION/
-> │                  ├── 📄 04_part_IV_crack_in_foundation.md
-> │                  ├── 📄 04a_ch19_dave.md
-> │                  ├── 📄 04b_ch20_miscarriages.md
-> │                  ├── 📄 04c_ch21_cody.md
-> │                  ├── 📄 04d_ch22_henry.md
-> │                  ├── 📄 04e_ch23_first_delivery.md
-> │                  ├── 📄 04f_ch24_police_search.md
-> │                  ├── 📄 04g_ch25_informant.md
-> │                  ├── 📄 04z_reflection_IV_survival_strategies_expire.md
-> │                  ├── 📄 index.html
-> │                └── 📂 05_PART_V_FINAL_STAND/
-> │                  ├── 📄 05_part_V_final_stand.md
-> │                  ├── 📄 05a_ch26_otis.md
-> │                  ├── 📄 05b_ch27_the_car.md
-> │                  ├── 📄 05c_ch28_the_knife_scene.md
-> │                  ├── 📄 05d_ch29_the_ambush.md
-> │                  ├── 📄 05e_ch30_aftermath.md
-> │                  ├── 📄 05z_reflection_V_decisiveness_not_fearlessness.md
-> │                  ├── 📄 index.html
-> │                └── 📂 06_EPILOGUE/
-> │                  ├── 📄 06_epilogue_madam_of_her_own_life.md
-> │                  ├── 📄 index.html
-> │                ├── 📄 99_About_the_Author.md
-> │                ├── 📄 99_Back_Matter.md
-> │                ├── 📄 index.html
-> │              ├── 📄 build_ebook.py
-> │              ├── 📄 coming-soon.html
-> │              └── 📂 docs/
-> │                ├── 📄 DISTRIBUTION_STRATEGY.md
-> │                ├── 📄 NARRATIVE_ARCHITECTURE.md
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              └── 📂 interactive/
-> │                └── 📂 css/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 reader.css
-> │                └── 📂 data/
-> │                  ├── 📄 chapter_05_knife_scene_timing.json
-> │                  ├── 📄 index.html
-> │                  ├── 📄 prologue.json
-> │                └── 📂 downloads/
-> │                ├── 📄 index.html
-> │                └── 📂 js/
-> │                  ├── 📄 index.html
-> │                ├── 📄 read.html
-> │              ├── 📄 paid-in-full-print.html
-> │            └── 📂 cre_QiStory_Silence-Isnt-Distance/
-> │              ├── 📄 MASTER_INDEX.md
-> │              ├── 📄 QIOS_REPO_INFO.txt
-> │              ├── 📄 README.md
-> │              ├── 📄 SETUP.md
-> │              └── 📂 assets/
-> │                ├── 📄 index.html
-> │              └── 📂 docs/
-> │                ├── 📄 MARKDOWN_FORMATTING_REPORT.md
-> │                ├── 📄 QA_COMPLETE_SUMMARY.md
-> │                ├── 📄 READER_IMPLEMENTATION.md
-> │                ├── 📄 SITE_AUDIT_REPORT.md
-> │                ├── 📄 index.html
-> │                ├── 📄 outline.csv
-> │                ├── 📄 sudowrite-outline-template.csv
-> │              └── 📂 export/
-> │              └── 📂 export-ready/
-> │                ├── 📄 00-cover.md
-> │                ├── 📄 01-title-page.md
-> │                ├── 📄 02-dedication.md
-> │                ├── 📄 02a-content-considerations.md
-> │                ├── 📄 03-preface.md
-> │                ├── 📄 04-how-to-use-this-book.md
-> │                ├── 📄 05-introduction.md
-> │                ├── 📄 06-chapter-01-overloaded-mind.md
-> │                ├── 📄 07-chapter-02-emotional-architecture.md
-> │                ├── 📄 08-chapter-03-mirror-misunderstanding.md
-> │                ├── 📄 09-chapter-04-science-of-withdrawal.md
-> │                ├── 📄 10-chapter-05-shutdown-triggers.md
-> │                ├── 📄 11-chapter-06-survival-mode-love.md
-> │                ├── 📄 12-chapter-07-overfunctioning.md
-> │                ├── 📄 13-chapter-08-projection-mirror.md
-> │                ├── 📄 14-chapter-09-burnout-breakdown-dissociation.md
-> │                ├── 📄 20-chapter-15-coming-home-to-silence.md
-> │                ├── 📄 21-epilogue.md
-> │                ├── 📄 22-acknowledgements.md
-> │                ├── 📄 23-about-the-author.md
-> │                ├── 📄 24-back-of-book-summary.md
-> │                ├── 📄 25-bibliography.md
-> │                ├── 📄 25a-glossary.md
-> │                ├── 📄 MASTER_BOOK.md
-> │                ├── 📄 index.html
-> │                ├── 📄 print_override.css
-> │              ├── 📄 export.sh
-> │                ├── 📄 ACKNOWLEDGMENTS.html
-> │                ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.html
-> │                ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.html
-> │                ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.html
-> │                ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.html
-> │                ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.html
-> │                ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.html
-> │                ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.html
-> │                ├── 📄 GLOSSARY.html
-> │                ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).html
-> │                ├── 📄 Silence Isnt Distance.html
-> │                ├── 📄 index.html
-> │                ├── 📄 silence-isnt-distance-ebook.pdf
-> │                ├── 📄 silence-isnt-distance-print.html
-> │                └── 📂 story/
-> │                  └── 📂 ACT_01 — AWAKENING/
-> │                    ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.html
-> │                    ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.html
-> │                    ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 ACT_02 — UNDERSTANDING/
-> │                    ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.html
-> │                    ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.html
-> │                    ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
-> │                    ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.html
-> │                    ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.html
-> │                    ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
-> │                    ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.html
-> │                    ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.html
-> │                    ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 ACT_05 — RECLAIMING THE SELF/
-> │                    ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.html
-> │                    ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.html
-> │                    ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.html
-> │                    ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 APPENDIX/
-> │                    ├── 📄 ACKNOWLEDGMENTS.html
-> │                    ├── 📄 GLOSSARY.html
-> │                    ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).html
-> │                    ├── 📄 index.html
-> │                  └── 📂 _intro/
-> │                    ├── 📄 AUTHOR'S NOTE.html
-> │                    ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).html
-> │                    ├── 📄 DEDICATION.html
-> │                    ├── 📄 HOW TO USE THIS BOOK.html
-> │                    ├── 📄 INTRODUCTION — When Silence Is Misunderstood.html
-> │                    ├── 📄 PREFACE — Why This Book Exists.html
-> │                    ├── 📄 Table of Content.html
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │              ├── 📄 generate_print_html.py
-> │              ├── 📄 index.html
-> │              └── 📂 publishing/
-> │                ├── 📄 00-PUBLISHING-MASTER-GUIDE.md
-> │                ├── 📄 01-KDP-METADATA.md
-> │                ├── 📄 02-AUTHOR-BIOS.md
-> │                ├── 📄 03-MEDIA-KIT.md
-> │                ├── 📄 04-MARKETING-MATERIALS.md
-> │                ├── 📄 05-AUDIOBOOK-PREP.md
-> │                ├── 📄 06-PUBLISHING-CHECKLIST.md
-> │                ├── 📄 07-ELEVENLABS-IMPORT-GUIDE.md
-> │                ├── 📄 08-EXPORT-PIPELINE.md
-> │                ├── 📄 09-ELEVENREADER-UPLOAD-GUIDE.md
-> │                ├── 📄 index.html
-> │              └── 📂 site/
-> │                ├── 📄 index.html
-> │              └── 📂 story/
-> │                └── 📂 ACT_01 — AWAKENING/
-> │                  ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.md
-> │                  ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.md
-> │                  ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.md
-> │                  ├── 📄 index.html
-> │                └── 📂 ACT_02 — UNDERSTANDING/
-> │                  ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.md
-> │                  ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.md
-> │                  ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.md
-> │                  ├── 📄 index.html
-> │                └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
-> │                  ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.md
-> │                  ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.md
-> │                  ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.md
-> │                  ├── 📄 index.html
-> │                └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
-> │                  ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.md
-> │                  ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.md
-> │                  ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.md
-> │                  ├── 📄 index.html
-> │                └── 📂 ACT_05 — RECLAIMING THE SELF/
-> │                  ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.md
-> │                  ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.md
-> │                  ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.md
-> │                  ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.md
-> │                  ├── 📄 index.html
-> │                └── 📂 APPENDIX/
-> │                  ├── 📄 ACKNOWLEDGMENTS.md
-> │                  ├── 📄 GLOSSARY.md
-> │                  ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).md
-> │                  ├── 📄 index.html
-> │                └── 📂 _intro/
-> │                  ├── 📄 AUTHOR'S NOTE.md
-> │                  ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).md
-> │                  ├── 📄 DEDICATION.md
-> │                  ├── 📄 HOW TO USE THIS BOOK.md
-> │                  ├── 📄 INTRODUCTION — When Silence Is Misunderstood.md
-> │                  ├── 📄 PREFACE — Why This Book Exists.md
-> │                  ├── 📄 Table of Content.md
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │            ├── 📄 index.html
-> │            └── 📂 models/
-> │              ├── 📄 index.html
-> │            └── 📂 scripts/
-> │              ├── 📄 index.html
-> │              ├── 📄 run_dev.sh
-> │          └── 📂 apps/
-> │            └── 📂 docs/
-> │              ├── 📄 README.md
-> │              └── 📂 api-reference/
-> │                ├── 📄 authorization.mdx
-> │                ├── 📄 generate-document.mdx
-> │                ├── 📄 generate-html.mdx
-> │                ├── 📄 index.html
-> │                ├── 📄 openapi.json
-> │              ├── 📄 cli.mdx
-> │              ├── 📄 comparison.mdx
-> │              └── 📂 components/
-> │                ├── 📄 document.mdx
-> │                ├── 📄 footer.mdx
-> │                ├── 📄 head.mdx
-> │                ├── 📄 index.html
-> │                ├── 📄 margin-box.mdx
-> │                ├── 📄 page.mdx
-> │                ├── 📄 spacer.mdx
-> │              ├── 📄 favicon.svg
-> │              ├── 📄 getting-started.mdx
-> │              └── 📂 images/
-> │                ├── 📄 checks-passed.png
-> │                ├── 📄 dev-server.png
-> │                ├── 📄 editor.png
-> │                ├── 📄 hero-dark.svg
-> │                ├── 📄 hero-light.svg
-> │                ├── 📄 index.html
-> │              ├── 📄 index.html
-> │              └── 📂 integrations/
-> │                ├── 📄 index.html
-> │                ├── 📄 resend.mdx
-> │              ├── 📄 introduction.mdx
-> │              └── 📂 logo/
-> │                ├── 📄 dark.svg
-> │                ├── 📄 index.html
-> │                ├── 📄 light.svg
-> │              ├── 📄 mint.json
-> │              ├── 📄 quickstart.mdx
-> │              └── 📂 snippets/
-> │                ├── 📄 index.html
-> │                ├── 📄 snippet-intro.mdx
-> │              └── 📂 usage/
-> │                ├── 📄 custom-fonts.mdx
-> │                ├── 📄 index.html
-> │                ├── 📄 publishing-to-the-cloud.mdx
-> │                ├── 📄 static-content.mdx
-> │                ├── 📄 tailwind.mdx
-> │                ├── 📄 template-variables.mdx
-> │            └── 📂 examples/
-> │              ├── 📄 CHANGELOG.md
-> │              ├── 📄 debug-render.html
-> │              └── 📂 documents/
-> │                ├── 📄 index.html
-> │                └── 📂 static/
-> │                  ├── 📄 axis.svg
-> │                  ├── 📄 content.md
-> │                  └── 📂 fonts/
-> │                    ├── 📄 PPEiko-Medium.otf
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                  ├── 📄 logo.svg
-> │                  ├── 📄 placeholder.svg
-> │                  ├── 📄 techflow.svg
-> │                └── 📂 templates/
-> │                  ├── 📄 Book.tsx
-> │                  ├── 📄 Invoice.tsx
-> │                  ├── 📄 Letter.tsx
-> │                  ├── 📄 Receipt.tsx
-> │                  ├── 📄 Resume.tsx
-> │                  ├── 📄 index.html
-> │              ├── 📄 index.css
-> │              ├── 📄 index.html
-> │              ├── 📄 package.json
-> │              ├── 📄 tailwind.config.js
-> │              ├── 📄 tsconfig.json
-> │            ├── 📄 index.html
-> │          └── 📂 assets/
-> │            └── 📂 css/
-> │              ├── 📄 kb.css
-> │          ├── 📄 build.py
-> │          └── 📂 components/
-> │            ├── 📄 HtmlDocViewer.tsx
-> │            ├── 📄 index.html
-> │          ├── 📄 config.yaml
-> │          └── 📂 content/
-> │            └── 📂 internal/
-> │              └── 📂 systems/
-> │                ├── 📄 overview.md
-> │            └── 📂 public/
-> │              └── 📂 getting-started/
-> │                ├── 📄 index.md
-> │          ├── 📄 generate_questions.py
-> │          ├── 📄 index (2).html
-> │          ├── 📄 index.html
-> │          └── 📂 legacy/
-> │            └── 📂 src/
-> │              ├── 📄 App.tsx
-> │              ├── 📄 main.tsx
-> │              ├── 📄 vite-env.d.ts
-> │          └── 📂 media/
-> │            ├── 📄 MiniAppTemplate.txt
-> │            ├── 📄 README.md
-> │            ├── 📄 analyze_frames.py
-> │            ├── 📄 app.py
-> │            ├── 📄 combine_multiple.bat
-> │            ├── 📄 combine_multiple.ps1
-> │            ├── 📄 flip_videos.py
-> │            ├── 📄 miniapp.json
-> │            └── 📂 photos/
-> │              ├── 📄 QUICKSTART_image_generator.txt
-> │              └── 📂 QiHeicConverter/
-> │                ├── 📄 LICENSE
-> │                ├── 📄 Readme.md
-> │                ├── 📄 converter.py
-> │                └── 📂 doc/
-> │                  ├── 📄 example.png
-> │                  ├── 📄 gui_example.png
-> │                  ├── 📄 vt_heic_console.png
-> │                  ├── 📄 vt_heic_gui.png
-> │                ├── 📄 heicConverter.py
-> │                ├── 📄 heicConverterGui.py
-> │                └── 📂 lang/
-> │                  ├── 📄 de.json
-> │                  ├── 📄 zh.json
-> │                ├── 📄 pyproject.toml
-> │                ├── 📄 requirements.txt
-> │                └── 📂 test/
-> │                  ├── 📄 create_test_heic.py
-> │                ├── 📄 test_converter.py
-> │                ├── 📄 uv.lock
-> │              ├── 📄 app.py
-> │              ├── 📄 build_portable.bat
-> │              ├── 📄 env_example.txt
-> │              ├── 📄 example_images.csv
-> │              ├── 📄 index.html
-> │              ├── 📄 requirements.txt
-> │              ├── 📄 run_image_generator.bat
-> │              ├── 📄 run_image_generator.sh
-> │              ├── 📄 run_qipics.bat
-> │              ├── 📄 run_qipics.sh
-> │              ├── 📄 setup_venv.bat
-> │              ├── 📄 setup_venv.sh
-> │              ├── 📄 stock_image_generator.py
-> │            ├── 📄 requirements.txt
-> │            ├── 📄 run.bat
-> │            ├── 📄 run_hq_processing.bat
-> │            ├── 📄 test_concat.txt
-> │          ├── 📄 package-lock (2).json
-> │          ├── 📄 package.json
-> │          └── 📂 public/
-> │            ├── 📄 54706 fill-in.pdf
-> │            ├── 📄 drivers-manual.pdf
-> │            ├── 📄 index.html
-> │            ├── 📄 learner_permit_and_residency_list.pdf
-> │          └── 📂 qinode/
-> │          ├── 📄 run-cockpit.bat
-> │          └── 📂 src/
-> │            ├── 📄 App.tsx
-> │            └── 📂 components/
-> │              ├── 📄 AiActionsPanel.tsx
-> │              ├── 📄 EditorShell.tsx
-> │              ├── 📄 HtmlDocViewer.tsx
-> │              ├── 📄 NoteMetadataPanel.tsx
-> │              ├── 📄 NoteSidebar.tsx
-> │              ├── 📄 RelatedNotesPanel.tsx
-> │              ├── 📄 RightPanel.tsx
-> │              └── 📂 common/
-> │                ├── 📄 Button.tsx
-> │                ├── 📄 Card.tsx
-> │                ├── 📄 ErrorBoundary (2).tsx
-> │                ├── 📄 ErrorBoundary.tsx
-> │                ├── 📄 GlassCard.tsx
-> │                ├── 📄 Pill.tsx
-> │              └── 📂 feedback/
-> │                ├── 📄 Alert.tsx
-> │                ├── 📄 Spinner.tsx
-> │              └── 📂 gina/
-> │                ├── 📄 GinaChatPanel.tsx
-> │              └── 📂 layout/
-> │                ├── 📄 Sidebar.tsx
-> │                ├── 📄 TopBar.tsx
-> │              └── 📂 notes/
-> │                ├── 📄 NewNoteModal.tsx
-> │              └── 📂 qinode/
-> │                ├── 📄 QiNodeCard.tsx
-> │                ├── 📄 QiNodeEditor.tsx
-> │              └── 📂 ui_transplant/
-> │                ├── 📄 AnimatedContainer.tsx
-> │                ├── 📄 ResizablePanels.tsx
-> │                ├── 📄 Sheet.tsx
-> │            └── 📂 core/
-> │              └── 📂 api/
-> │                ├── 📄 ingestStatus.ts
-> │                ├── 📄 workerClient.ts
-> │              └── 📂 data/
-> │                ├── 📄 ginaApi.ts
-> │                ├── 📄 qiNodeRepository.ts
-> │                ├── 📄 sampleData.ts
-> │                ├── 📄 storage.ts
-> │                ├── 📄 supabase.ts
-> │                ├── 📄 supabaseStore.ts
-> │                ├── 📄 types.ts
-> │                ├── 📄 vaultApi.ts
-> │              └── 📂 qi/
-> │                ├── 📄 laws.ts
-> │                ├── 📄 orbits.ts
-> │                ├── 📄 qid.ts
-> │                ├── 📄 realms.ts
-> │                ├── 📄 schema.ts
-> │                ├── 📄 systems.ts
-> │                ├── 📄 utils.ts
-> │              └── 📂 state/
-> │                ├── 📄 useQiStore.ts
-> │            └── 📂 features/
-> │              └── 📂 ingest_ui/
-> │                ├── 📄 DataIntakePanel.tsx
-> │              └── 📂 kb/
-> │                ├── 📄 KBBrowser.tsx
-> │            └── 📂 hooks/
-> │              └── 📂 transplant/
-> │                ├── 📄 useHandleStreamResponse.ts
-> │                ├── 📄 useUpload.ts
-> │              ├── 📄 useNotes.ts
-> │            └── 📂 lib/
-> │              ├── 📄 api.ts
-> │            ├── 📄 main.tsx
-> │            └── 📂 routes/
-> │              ├── 📄 DataIntakePage.tsx
-> │              ├── 📄 DocsView.tsx
-> │              ├── 📄 GraphView.tsx
-> │              ├── 📄 HomePage.tsx
-> │              ├── 📄 NodeView.tsx
-> │              ├── 📄 NoteEditorPage.tsx
-> │              ├── 📄 NoteListPage.tsx
-> │              ├── 📄 RealmView.tsx
-> │              ├── 📄 RootLayout.tsx
-> │              ├── 📄 VaultSettings.tsx
-> │              ├── 📄 VaultView.tsx
-> │            └── 📂 store/
-> │              ├── 📄 vaultStore.ts
-> │            └── 📂 styles/
-> │              ├── 📄 index (2).css
-> │            └── 📂 templates/
-> │              ├── 📄 Book.tsx
-> │            └── 📂 types/
-> │              ├── 📄 note.ts
-> │              ├── 📄 qinote-components.d.ts
-> │            ├── 📄 vite-env.d.ts
-> │          └── 📂 static/
-> │            └── 📂 fonts/
-> │              ├── 📄 index.html
-> │            ├── 📄 index.html
-> │          └── 📂 styles/
-> │            ├── 📄 index.html
-> │            ├── 📄 qidocs.css
-> │          ├── 📄 tailwind.config (2).js
-> │          ├── 📄 tailwind.config.js
-> │          └── 📂 templates/
-> │            ├── 📄 Book.tsx
-> │            ├── 📄 Invoice.tsx
-> │            ├── 📄 Letter.tsx
-> │            ├── 📄 Receipt.tsx
-> │            ├── 📄 Resume.tsx
-> │            ├── 📄 index.html
-> │          ├── 📄 tsconfig (2).json
-> │          ├── 📄 tsconfig.json
-> │          ├── 📄 utils.ts
-> │          └── 📂 vault/
-> │            ├── 📄 LICENSE
-> │            ├── 📄 README.md
-> │            ├── 📄 README.md.merge_1772570691
-> │            ├── 📄 astro.config.mjs
-> │            ├── 📄 contract.md
-> │            ├── 📄 netlify.toml
-> │            ├── 📄 package.json
-> │            ├── 📄 package.json.merge_1772570691
-> │            └── 📂 public/
-> │              ├── 📄 favicon.svg
-> │              ├── 📄 hero-icon.svg
-> │              ├── 📄 sitepins-manifest.json
-> │            └── 📂 src/
-> │              ├── 📄 App.tsx
-> │              └── 📂 pages/
-> │                ├── 📄 DocumentDetailPage.tsx
-> │                ├── 📄 InboxPage.tsx
-> │                ├── 📄 SearchPage.tsx
-> │                ├── 📄 SettingsPage.tsx
-> │                ├── 📄 TagsPage.tsx
-> │              └── 📂 services/
-> │                ├── 📄 storage.ts
-> │              └── 📂 types/
-> │                ├── 📄 index.ts
-> │            ├── 📄 tsconfig.json
-> │            ├── 📄 vite.config.ts
-> │          ├── 📄 vite.config (2).ts
-> │        └── 📂 qiforms/
-> │          ├── 📄 utils.ts
-> │        └── 📂 qihome-hub/
-> │          ├── 📄 Dockerfile
-> │          ├── 📄 LICENSE
-> │          ├── 📄 README.md
-> │          └── 📂 app/
-> │          ├── 📄 app.jsx
-> │            ├── 📄 __init__.py
-> │            └── 📂 blueprints/
-> │              ├── 📄 __init__.py
-> │              ├── 📄 auth.py
-> │              ├── 📄 chores.py
-> │              ├── 📄 dashboard.py
-> │              ├── 📄 expenses.py
-> │              ├── 📄 expiry.py
-> │              ├── 📄 media_pdfs.py
-> │              ├── 📄 notes.py
-> │              ├── 📄 qr.py
-> │              ├── 📄 recipes.py
-> │              ├── 📄 shopping.py
-> │              ├── 📄 shortener.py
-> │              ├── 📄 uploads.py
-> │              ├── 📄 weather.py
-> │            ├── 📄 config.py
-> │            ├── 📄 models.py
-> │            ├── 📄 routes.py
-> │            ├── 📄 security.py
-> │            ├── 📄 utils.py
-> │          ├── 📄 compose.yml
-> │          ├── 📄 package.json
-> │          ├── 📄 requirements.txt
-> │          ├── 📄 run.py
-> │          └── 📂 static/
-> │            ├── 📄 input.css
-> │            └── 📂 js/
-> │              ├── 📄 form_tags.js
-> │              ├── 📄 reminders_api.js
-> │              ├── 📄 tags.js
-> │              ├── 📄 weather.js
-> │            └── 📂 quill/
-> │              ├── 📄 quill.js
-> │              ├── 📄 quill.snow.css
-> │          ├── 📄 tailwind.config.js
-> │          └── 📂 templates/
-> │            ├── 📄 _flash.html
-> │            ├── 📄 base.html
-> │            ├── 📄 chores.html
-> │            ├── 📄 expenses.html
-> │            ├── 📄 expiry.html
-> │            ├── 📄 index.html
-> │            ├── 📄 login.html
-> │            ├── 📄 media.html
-> │            ├── 📄 notes.html
-> │            ├── 📄 pdfs.html
-> │            ├── 📄 qr.html
-> │            ├── 📄 recipes.html
-> │            ├── 📄 shopping.html
-> │            ├── 📄 shorten.html
-> │            ├── 📄 upload.html
-> │          └── 📂 tests/
-> │            ├── 📄 test_recurring_reminders.py
-> │            ├── 📄 test_reminder_conversion.py
-> │            ├── 📄 test_security.py
-> │            ├── 📄 test_shopping_chores_tags.py
-> │          ├── 📄 wsgi.py
-> │        └── 📂 qihtmldocs/
-> │          ├── 📄 CHANGELOG.md
-> │          └── 📂 documents/
-> │            └── 📂 static/
-> │              ├── 📄 axis.svg
-> │              ├── 📄 content.md
-> │              └── 📂 fonts/
-> │                ├── 📄 PPEiko-Medium.otf
-> │              ├── 📄 placeholder.svg
-> │              ├── 📄 techflow.svg
-> │            └── 📂 templates/
-> │              ├── 📄 Book.tsx
-> │              ├── 📄 Letter.tsx
-> │              ├── 📄 Receipt.tsx
-> │          ├── 📄 index.css
-> │          ├── 📄 tailwind.config.js
-> │          ├── 📄 tsconfig.json
-> │        └── 📂 qina/
-> │          └── 📂 app/
-> │            └── 📂 QiDocs/
-> │              ├── 📄 index.html
-> │            └── 📂 api-harmonization/
-> │              ├── 📄 CHANGELOG.md
-> │              ├── 📄 Dockerfile
-> │              ├── 📄 README.md
-> │              ├── 📄 eslint.config.mjs
-> │              ├── 📄 index.html
-> │              ├── 📄 nest-cli.json
-> │              ├── 📄 package.json
-> │              └── 📂 src/
-> │                ├── 📄 app.config.ts
-> │                ├── 📄 app.module.ts
-> │                ├── 📄 app.service.ts
-> │                └── 📂 blocks/
-> │                  ├── 📄 index.html
-> │                └── 📂 config/
-> │                  ├── 📄 configuration.ts
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                ├── 📄 index.ts
-> │                ├── 📄 main.ts
-> │                └── 📂 middleware/
-> │                  ├── 📄 context-headers.middleware.ts
-> │                  ├── 📄 index.html
-> │                └── 📂 modules/
-> │                  └── 📂 health/
-> │                    ├── 📄 health.controller.ts
-> │                    ├── 📄 health.module.ts
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                  ├── 📄 index.ts
-> │                  └── 📂 login-page/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.ts
-> │                    ├── 📄 login-page.controller.ts
-> │                    ├── 📄 login-page.mapper.ts
-> │                    ├── 📄 login-page.model.ts
-> │                    ├── 📄 login-page.module.ts
-> │                    ├── 📄 login-page.service.ts
-> │                    ├── 📄 login-page.url.ts
-> │                  └── 📂 not-found-page/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.ts
-> │                    ├── 📄 not-found-page.controller.ts
-> │                    ├── 📄 not-found-page.mapper.ts
-> │                    ├── 📄 not-found-page.model.ts
-> │                    ├── 📄 not-found-page.module.ts
-> │                    ├── 📄 not-found-page.request.ts
-> │                    ├── 📄 not-found-page.service.ts
-> │                    ├── 📄 not-found-page.url.ts
-> │                  └── 📂 organizations/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.ts
-> │                    ├── 📄 organizations.controller.ts
-> │                    ├── 📄 organizations.mapper.ts
-> │                    ├── 📄 organizations.model.ts
-> │                    ├── 📄 organizations.module.ts
-> │                    ├── 📄 organizations.request.ts
-> │                    ├── 📄 organizations.service.ts
-> │                    ├── 📄 organizations.url.ts
-> │                  └── 📂 page/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.ts
-> │                    ├── 📄 page.controller.ts
-> │                    ├── 📄 page.mapper.ts
-> │                    ├── 📄 page.model.ts
-> │                    ├── 📄 page.module.ts
-> │                    ├── 📄 page.request.ts
-> │                    ├── 📄 page.service.ts
-> │                    ├── 📄 page.url.ts
-> │                  └── 📂 routes/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.ts
-> │                    └── 📂 models/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 sitemap.model.ts
-> │                    ├── 📄 routes.controller.ts
-> │                    ├── 📄 routes.model.ts
-> │                    ├── 📄 routes.module.ts
-> │                    ├── 📄 routes.service.ts
-> │                    ├── 📄 routes.url.ts
-> │                └── 📂 utils/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 permissions.ts
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 turbo.json
-> │            └── 📂 docs/
-> │              ├── 📄 CHANGELOG.md
-> │              ├── 📄 README.md
-> │              └── 📂 blog/
-> │                └── 📂 articles/
-> │                  └── 📂 building-composable-frontends-with-strapi-and-nextjs/
-> │                    ├── 📄 content-model-block.png
-> │                    ├── 📄 content-model-faq.png
-> │                    ├── 📄 content-model-field-mapping.png
-> │                    ├── 📄 content-model-invoice-list.png
-> │                    ├── 📄 content-model-page.png
-> │                    ├── 📄 content-model-slot.png
-> │                    ├── 📄 content-model-table.png
-> │                    ├── 📄 content-model-template.png
-> │                    ├── 📄 example-content-page.png
-> │                    ├── 📄 example-web-page.png
-> │                    ├── 📄 frontend-app-router.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 queries-examples.png
-> │                    ├── 📄 queries-files.png
-> │                  └── 📂 ensuring-high-frontend-performance-in-composable-nextjs-apps/
-> │                    ├── 📄 cumulative-layout-shift.gif
-> │                    ├── 📄 high-level-architecture.png
-> │                    ├── 📄 high-level-architecture.svg
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 lighthouse-1.png
-> │                    ├── 📄 lighthouse-2.png
-> │                    ├── 📄 multi-block-loading-1.gif
-> │                    ├── 📄 multi-block-loading-2.gif
-> │                    ├── 📄 order-details-block.png
-> │                    ├── 📄 single-block-loading.gif
-> │                    ├── 📄 sizes-desktop.png
-> │                    ├── 📄 sizes-mobile.png
-> │                    ├── 📄 sizes.png
-> │                  ├── 📄 index.html
-> │                  └── 📂 integration-medusa/
-> │                    ├── 📄 asset-details.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 medusa-open-self-service-integration.png
-> │                    ├── 📄 open-self-service-orders-medusa.png
-> │                    ├── 📄 product-references.png
-> │                    ├── 📄 service-instances-list.png
-> │                  └── 📂 leveraging-ai-to-speed-up-ui-documentation-in-storybook/
-> │                    ├── 📄 checkbox-2.png
-> │                    ├── 📄 checkox-1.png
-> │                    ├── 📄 cursor-1.png
-> │                    ├── 📄 cursor-2.png
-> │                    ├── 📄 cursor-3.png
-> │                    ├── 📄 cursor-4.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 junie-bulk-1.png
-> │                    ├── 📄 junie-initial-prompt.png
-> │                    ├── 📄 junie-location-prompt.png
-> │                    ├── 📄 junie-ls.png
-> │                    ├── 📄 o2s-ai-storybook.png
-> │                  └── 📂 rethinking-frontend-architecture-composable/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 o2s-arch-article-coupling.jpeg
-> │                    ├── 📄 o2s-arch-article-front.jpeg
-> │                    ├── 📄 o2s-arch-article-perf.png
-> │                    ├── 📄 o2s-arch-article-starters.jpeg
-> │                ├── 📄 authors.yml
-> │                ├── 📄 index.html
-> │                └── 📂 releases/
-> │                  └── 📂 dxp/
-> │                    ├── 📄 1.0.0.md
-> │                    ├── 📄 1.1.0.md
-> │                    ├── 📄 index.html
-> │                  ├── 📄 index.html
-> │                  └── 📂 o2s/
-> │                    ├── 📄 0.0.9.md
-> │                    ├── 📄 1.0.0.md
-> │                    ├── 📄 1.1.0.md
-> │                    ├── 📄 1.2.0.md
-> │                    ├── 📄 index.html
-> │                └── 📂 roadmap/
-> │                  ├── 📄 2025-03-10-roadmap.md
-> │                  ├── 📄 2025-03-27-roadmap-update.md
-> │                  ├── 📄 index.html
-> │                ├── 📄 tags.yml
-> │              └── 📂 docs/
-> │                └── 📂 app-starters/
-> │                  ├── 📄 _category_.json
-> │                  └── 📂 dxp/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 blocks.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 overview.md
-> │                  ├── 📄 index.html
-> │                  └── 📂 o2s/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 blocks.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 overview.md
-> │                  ├── 📄 overview.md
-> │                └── 📂 getting-started/
-> │                  ├── 📄 _category_.json
-> │                  ├── 📄 index.html
-> │                  ├── 📄 installation.md
-> │                  ├── 📄 overview.md
-> │                  ├── 📄 prerequisites.md
-> │                  ├── 📄 project-structure.md
-> │                  ├── 📄 running-locally.md
-> │                  ├── 📄 telemetry.md
-> │                └── 📂 guides/
-> │                  ├── 📄 _category_.json
-> │                  ├── 📄 code-style.md
-> │                  └── 📂 create-new-block/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 api-harmonization-server.md
-> │                    ├── 📄 frontend-app.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 integrations.md
-> │                    ├── 📄 overview.md
-> │                    ├── 📄 postman-get-component.png
-> │                    ├── 📄 postman-get-page.png
-> │                  ├── 📄 customization.md
-> │                  └── 📂 deployment/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 docker.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 overview.md
-> │                    ├── 📄 vercel.md
-> │                  ├── 📄 index.html
-> │                  └── 📂 integrations/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 adding-new-integrations.md
-> │                    ├── 📄 extending-integrations.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 overview.md
-> │                    ├── 📄 switching-integrations.md
-> │                  ├── 📄 overview.md
-> │                  ├── 📄 sdk.md
-> │                  ├── 📄 using-generators.md
-> │                ├── 📄 index.html
-> │                └── 📂 integrations/
-> │                  ├── 📄 _category_.json
-> │                  └── 📂 cache/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    ├── 📄 redis.md
-> │                  └── 📂 cms/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    └── 📂 strapi/
-> │                      ├── 📄 _category_.json
-> │                      ├── 📄 content-model.md
-> │                      ├── 📄 getting-started.md
-> │                      ├── 📄 index.html
-> │                      ├── 📄 overview.md
-> │                  └── 📂 commerce/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    ├── 📄 medusa-js.md
-> │                  └── 📂 forms/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    ├── 📄 surveyjs.md
-> │                  ├── 📄 index.html
-> │                  └── 📂 mocked/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    ├── 📄 mocked.md
-> │                  ├── 📄 overview.md
-> │                  └── 📂 search/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 algolia.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 tickets/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    └── 📂 zendesk/
-> │                      ├── 📄 _category_.json
-> │                      ├── 📄 index.html
-> │                      ├── 📄 overview.md
-> │                └── 📂 main-components/
-> │                  ├── 📄 _category_.json
-> │                  └── 📂 blocks/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 customizing.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 structure.md
-> │                    ├── 📄 usage.md
-> │                  └── 📂 frontend-app/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 authentication.md
-> │                    ├── 📄 component-structure.md
-> │                    ├── 📄 gartner-self-service-customer-service-modern-self-service-needs.png
-> │                    ├── 📄 img.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 routing.md
-> │                    ├── 📄 routing.svg
-> │                  └── 📂 harmonization-app/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 module-structure.md
-> │                    └── 📂 normalized-data-model/
-> │                      ├── 📄 _category_.json
-> │                      ├── 📄 core-model-financial.md
-> │                      ├── 📄 core-model-organization.md
-> │                      ├── 📄 core-model-services.md
-> │                      ├── 📄 core-model-tickets.md
-> │                      ├── 📄 index.html
-> │                      ├── 📄 overview.md
-> │                  ├── 📄 index.html
-> │                  ├── 📄 overview.md
-> │                  └── 📂 ui-library/
-> │                    ├── 📄 _category_.json
-> │                    ├── 📄 essentials.md
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.md
-> │                    ├── 📄 theming.md
-> │                └── 📂 overview/
-> │                  ├── 📄 _category_.json
-> │                  ├── 📄 aggregated-data-model.svg
-> │                  ├── 📄 api-data-flow.svg
-> │                  ├── 📄 architecture.md
-> │                  ├── 📄 data-flow.md
-> │                  ├── 📄 data-flow.svg
-> │                  ├── 📄 data-normalization.svg
-> │                  ├── 📄 essentials.md
-> │                  ├── 📄 frontend-data-flow.svg
-> │                  ├── 📄 high-level-architecture.svg
-> │                  ├── 📄 index.html
-> │                  ├── 📄 overview.md
-> │                  ├── 📄 tech-stack.md
-> │              ├── 📄 docusaurus.config.ts
-> │              ├── 📄 index.html
-> │              ├── 📄 lint-staged.config.mjs
-> │              ├── 📄 package.json
-> │              └── 📂 plugins/
-> │                ├── 📄 index.html
-> │                ├── 📄 tailwind-config.ts
-> │              ├── 📄 sidebars.ts
-> │              └── 📂 src/
-> │                └── 📂 assets/
-> │                  ├── 📄 index.html
-> │                  └── 📂 integrations/
-> │                    ├── 📄 algolia-integration-icon.svg
-> │                    ├── 📄 auth.js-integration-icon.svg
-> │                    ├── 📄 contentful-integration-icon.svg
-> │                    ├── 📄 index.html
-> │                    ├── 📄 keycloak-integration-icon.svg
-> │                    ├── 📄 killbill-integration-icon.svg
-> │                    ├── 📄 medusa-integration-icon.svg
-> │                    ├── 📄 novu.co-integration-icon.svg
-> │                    ├── 📄 o2s-integration-icon.svg
-> │                    ├── 📄 oro-integration-icon.svg
-> │                    ├── 📄 pimcore-integration-icon.svg
-> │                    ├── 📄 redis-integration-icon.svg
-> │                    ├── 📄 salesforce-integration-icon.svg
-> │                    ├── 📄 sap-integration-icon.svg
-> │                    ├── 📄 storyblok-integration-icon.svg
-> │                    ├── 📄 strapi-integration-icon.svg
-> │                    ├── 📄 surveyjs-integration-icon.svg
-> │                    ├── 📄 zendesk-integration-icon.svg
-> │                  └── 📂 logos/
-> │                    ├── 📄 Bosch.svg
-> │                    ├── 📄 Cerrad.svg
-> │                    ├── 📄 DeutscheTelekom.svg
-> │                    ├── 📄 DormerPramet.svg
-> │                    ├── 📄 Fortum.svg
-> │                    ├── 📄 Orange.svg
-> │                    ├── 📄 OrangeEnergia.svg
-> │                    ├── 📄 Osadkowski.svg
-> │                    ├── 📄 index.html
-> │                  └── 📂 navbar/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 o2s-icon-blog.svg
-> │                    ├── 📄 o2s-icon-case.svg
-> │                    ├── 📄 o2s-icon-changelog.svg
-> │                    ├── 📄 o2s-icon-community.svg
-> │                    ├── 📄 o2s-icon-contact.svg
-> │                    ├── 📄 o2s-icon-dev.svg
-> │                    ├── 📄 o2s-icon-documentation.svg
-> │                    ├── 📄 o2s-icon-features.svg
-> │                    ├── 📄 o2s-icon-github.svg
-> │                    ├── 📄 o2s-icon-integrations.svg
-> │                    ├── 📄 o2s-icon-roadmap.svg
-> │                    ├── 📄 o2s-icon-starters.svg
-> │                    ├── 📄 o2s-icon-support.svg
-> │                └── 📂 components/
-> │                  └── 📂 Accordion/
-> │                    ├── 📄 Accordion.module.scss
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 Badge/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 BadgeList/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 BenefitsSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 Card/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 ClientsSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 CookieConsent/
-> │                    ├── 📄 config.ts
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 CopyCommandButton/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DXPArchitectureSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DXPComplexPlatformsSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DXPFeaturesSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DXPIntegrationsSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DXPUseCasesSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 DocLinkTiles/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 FeatureTile/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 FeaturesListWithImage/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 FooterSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 GetStartedButtons/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 GuidesSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HeroBannerSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageAboutSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageArchitectureSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageBannerSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageBenefitsSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageFeatures/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 styles.module.css
-> │                  └── 📂 HomepageFeaturesSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageJoinTheWaitlistSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 styles.module.css
-> │                  └── 📂 HomepageStartersSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HomepageUseCases/
-> │                    ├── 📄 Card.module.css
-> │                    ├── 📄 Card.tsx
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 styles.module.css
-> │                  └── 📂 HoverCard/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 HubspotForm/
-> │                    ├── 📄 HubspotForm.module.scss
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 IntegrationsBlocks/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 StarterInfoSection/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 SubscribeSection/
-> │                    ├── 📄 SubscribeSection.module.scss
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 Tile/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 Typography/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 WaitlistForm/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                    ├── 📄 styles.module.css
-> │                  ├── 📄 index.html
-> │                └── 📂 css/
-> │                  ├── 📄 cookie-consent.css
-> │                  ├── 📄 custom.css
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.html
-> │                └── 📂 pages/
-> │                  └── 📂 contact/
-> │                    ├── 📄 contact.module.scss
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 dxp/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  ├── 📄 index.html
-> │                  ├── 📄 index.tsx
-> │                  ├── 📄 main.module.scss
-> │                  └── 📂 partners/
-> │                    ├── 📄 apply.tsx
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 product/
-> │                    ├── 📄 features.tsx
-> │                    ├── 📄 index.html
-> │                    ├── 📄 integrations.tsx
-> │                    ├── 📄 product.module.scss
-> │                    ├── 📄 starters.tsx
-> │                  └── 📂 support/
-> │                    ├── 📄 developers.tsx
-> │                    ├── 📄 enterprise.tsx
-> │                    ├── 📄 index.html
-> │                └── 📂 theme/
-> │                  └── 📂 Blog/
-> │                    └── 📂 Components/
-> │                      └── 📂 Author/
-> │                        └── 📂 Socials/
-> │                          ├── 📄 index.html
-> │                          ├── 📄 index.tsx
-> │                          ├── 📄 styles.module.css
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                        ├── 📄 styles.module.css
-> │                      ├── 📄 index.html
-> │                    ├── 📄 index.html
-> │                  └── 📂 BlogPostItem/
-> │                    └── 📂 Footer/
-> │                      ├── 📄 EditMetaRow.tsx
-> │                      └── 📂 ReadMoreLink/
-> │                      ├── 📄 ReadMoreLink.tsx
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    └── 📂 Header/
-> │                      └── 📂 Authors/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                        ├── 📄 styles.module.css
-> │                      └── 📂 Info/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                        ├── 📄 styles.module.css
-> │                      └── 📂 Title/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                        ├── 📄 styles.module.css
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    ├── 📄 index.html
-> │                  └── 📂 Footer/
-> │                    └── 📂 Copyright/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    └── 📂 Layout/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    └── 📂 LinkItem/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    └── 📂 Links/
-> │                      └── 📂 MultiColumn/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                      └── 📂 Simple/
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.tsx
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                    └── 📂 Logo/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                      ├── 📄 styles.module.css
-> │                    ├── 📄 index.html
-> │                    ├── 📄 index.tsx
-> │                  └── 📂 NavbarItem/
-> │                    └── 📂 DropdownNavbarItem/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.tsx
-> │                      ├── 📄 styles.module.css
-> │                    ├── 📄 index.html
-> │                  ├── 📄 Root.tsx
-> │                  ├── 📄 index.html
-> │              └── 📂 static/
-> │                └── 📂 docs/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 openselfservice_EN_Information_obligation.pdf
-> │                └── 📂 img/
-> │                  └── 📂 blog/
-> │                    ├── 📄 dxp-1.0.0-header.png
-> │                    ├── 📄 dxp-1.1.0-header.png
-> │                    ├── 📄 dxp-knowledge-base-1.png
-> │                    ├── 📄 dxp-knowledge-base-2.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 o2s-1.1.0-header.png
-> │                    ├── 📄 o2s-1.2.0-header.png
-> │                    ├── 📄 o2s-context-switcher.png
-> │                    ├── 📄 o2s-features-6-min.jpg
-> │                    ├── 📄 o2s-features-7-min.jpg
-> │                    ├── 📄 o2s-features-8-min.jpg
-> │                    ├── 📄 o2s-knowledge-base-search.png
-> │                    ├── 📄 o2s-knowledge-base.png
-> │                    ├── 📄 o2s-order-details.png
-> │                    ├── 📄 o2s-orders.png
-> │                    ├── 📄 o2s-screen.jpg
-> │                    ├── 📄 o2s-services.png
-> │                    ├── 📄 o2s-surveyjs.png
-> │                    ├── 📄 o2s-ticket-submission.png
-> │                  ├── 📄 docusaurus-social-card.jpg
-> │                  ├── 📄 docusaurus.png
-> │                  ├── 📄 dxp-gh-cover.png
-> │                  ├── 📄 dxp-gh-demo.png
-> │                  └── 📂 favicons/
-> │                    ├── 📄 android-chrome-192x192.png
-> │                    ├── 📄 android-chrome-512x512.png
-> │                    ├── 📄 apple-touch-icon-114x114.png
-> │                    ├── 📄 apple-touch-icon-120x120.png
-> │                    ├── 📄 apple-touch-icon-152x152.png
-> │                    ├── 📄 apple-touch-icon-167x167.png
-> │                    ├── 📄 apple-touch-icon-180x180.png
-> │                    ├── 📄 apple-touch-icon-57x57.png
-> │                    ├── 📄 apple-touch-icon-60x60.png
-> │                    ├── 📄 apple-touch-icon-72x72.png
-> │                    ├── 📄 apple-touch-icon-76x76.png
-> │                    ├── 📄 favicon-128x128.png
-> │                    ├── 📄 favicon-16x16.png
-> │                    ├── 📄 favicon-196x196.png
-> │                    ├── 📄 favicon-32x32.png
-> │                    ├── 📄 favicon-96x96.png
-> │                    ├── 📄 favicon.ico
-> │                    ├── 📄 favicon.svg
-> │                    ├── 📄 index.html
-> │                    ├── 📄 mstile-144x144.png
-> │                    ├── 📄 mstile-150x150.png
-> │                    ├── 📄 mstile-310x150.png
-> │                    ├── 📄 mstile-310x310.png
-> │                    ├── 📄 mstile-70x70.png
-> │                  └── 📂 featurespage/
-> │                    ├── 📄 img-authentication.png
-> │                    ├── 📄 img-cms.png
-> │                    ├── 📄 img-content-categories.png
-> │                    ├── 📄 img-invoices-payments.png
-> │                    ├── 📄 img-knowledge.png
-> │                    ├── 📄 img-navigation.png
-> │                    ├── 📄 img-notifications.png
-> │                    ├── 📄 img-orders.png
-> │                    ├── 📄 img-search.png
-> │                    ├── 📄 img-service-overview.png
-> │                    ├── 📄 img-ticket-submission.png
-> │                    ├── 📄 img-user-profile.png
-> │                    ├── 📄 index.html
-> │                  └── 📂 homepage/
-> │                    ├── 📄 about-1.svg
-> │                    ├── 📄 about-2.svg
-> │                    ├── 📄 about-3.svg
-> │                    ├── 📄 about-4.svg
-> │                    ├── 📄 about-5.png
-> │                    ├── 📄 about-5.svg
-> │                    ├── 📄 about-6.png
-> │                    ├── 📄 about-6.svg
-> │                    ├── 📄 architecture-dxp.svg
-> │                    ├── 📄 architecture-mobile-dxp.svg
-> │                    ├── 📄 architecture-mobile.svg
-> │                    ├── 📄 architecture.svg
-> │                    ├── 📄 banner-dxp.png
-> │                    ├── 📄 banner.png
-> │                    ├── 📄 benefit-1.svg
-> │                    ├── 📄 benefit-2.svg
-> │                    ├── 📄 benefit-3.svg
-> │                    ├── 📄 built-for-complex-platforms.svg
-> │                    ├── 📄 case-1-img.png
-> │                    ├── 📄 case-2-img.png
-> │                    ├── 📄 case-3-img.png
-> │                    ├── 📄 case-4-img.png
-> │                    ├── 📄 case-5-img.png
-> │                    ├── 📄 index.html
-> │                    ├── 📄 starters-card-customer-portal.png
-> │                    ├── 📄 starters-card-digital-portal.png
-> │                  ├── 📄 index.html
-> │                  ├── 📄 logo.svg
-> │                  └── 📂 logos/
-> │                    ├── 📄 algolia-logo.svg
-> │                    ├── 📄 authjs-logo.svg
-> │                    ├── 📄 authjs.svg
-> │                    ├── 📄 hycom.svg
-> │                    ├── 📄 index.html
-> │                    ├── 📄 keycloak-logo.svg
-> │                    ├── 📄 medusa-logo.svg
-> │                    ├── 📄 nestjs.svg
-> │                    ├── 📄 nextjs.svg
-> │                    ├── 📄 nodejs.svg
-> │                    ├── 📄 reactjs.svg
-> │                    ├── 📄 redis-logo.svg
-> │                    ├── 📄 sap-logo.svg
-> │                    ├── 📄 shadcn-ui.svg
-> │                    ├── 📄 strapi-logo.svg
-> │                    ├── 📄 surveyjs-logo.svg
-> │                    ├── 📄 typescript.svg
-> │                  └── 📂 navbar/
-> │                    ├── 📄 community-bg-img.png
-> │                    ├── 📄 index.html
-> │                  ├── 📄 o2s-1.0.0-header.png
-> │                  ├── 📄 o2s-gh-cover.png
-> │                  ├── 📄 o2s-gh-demo.png
-> │                  ├── 📄 o2s-social-card-1.jpg
-> │                  ├── 📄 o2s-social-card.jpg
-> │                  ├── 📄 o2s-social-card.png
-> │                  └── 📂 starterspage/
-> │                    ├── 📄 customer-portal.png
-> │                    ├── 📄 digital-portal.png
-> │                    ├── 📄 index.html
-> │                  ├── 📄 undraw_docusaurus_mountain.svg
-> │                  ├── 📄 undraw_docusaurus_react.svg
-> │                  ├── 📄 undraw_docusaurus_tree.svg
-> │                ├── 📄 index.html
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 turbo.json
-> │              ├── 📄 vercel.json
-> │            └── 📂 frontend/
-> │              ├── 📄 CHANGELOG.md
-> │              ├── 📄 Dockerfile
-> │              ├── 📄 eslint.config.mjs
-> │              ├── 📄 index.html
-> │              ├── 📄 lint-staged.config.mjs
-> │              ├── 📄 next.config.ts
-> │              ├── 📄 package.json
-> │              └── 📂 public/
-> │                └── 📂 favicon/
-> │                  ├── 📄 apple-touch-icon.png
-> │                  ├── 📄 favicon.svg
-> │                  ├── 📄 index.html
-> │                  ├── 📄 web-app-manifest-192x192.png
-> │                  ├── 📄 web-app-manifest-512x512.png
-> │                ├── 📄 index.html
-> │              └── 📂 src/
-> │                └── 📂 actions/
-> │                  ├── 📄 index.html
-> │                  ├── 📄 signOut.ts
-> │                └── 📂 api/
-> │                  ├── 📄 index.html
-> │                  └── 📂 modules/
-> │                    ├── 📄 index.html
-> │                    ├── 📄 login-page.ts
-> │                    ├── 📄 not-found-page.ts
-> │                    ├── 📄 organizations.ts
-> │                    ├── 📄 page.ts
-> │                  ├── 📄 sdk.ts
-> │                └── 📂 app/
-> │                  └── 📂 [locale]/
-> │                    └── 📂 [[...slug]]/
-> │                      ├── 📄 index.html
-> │                      ├── 📄 page.tsx
-> │                    ├── 📄 index.html
-> │                    ├── 📄 layout.tsx
-> │                    ├── 📄 not-found.tsx
-> │                  └── 📂 api/
-> │                    └── 📂 auth/
-> │                      └── 📂 [...nextauth]/
-> │                        ├── 📄 index.html
-> │                      ├── 📄 index.html
-> │                    ├── 📄 index.html
-> │                  ├── 📄 error.tsx
-> │                  ├── 📄 index.html
-> │                  ├── 📄 layout.tsx
-> │                  ├── 📄 manifest.ts
-> │                ├── 📄 index.html
-> │                ├── 📄 middleware.ts
-> │                ├── 📄 types.d.ts
-> │              ├── 📄 tsconfig.json
-> │              ├── 📄 turbo.json
-> │            └── 📂 gina_core/
-> │              ├── 📄 db.py
-> │              ├── 📄 index.html
-> │              ├── 📄 main.py
-> │              └── 📂 services/
-> │                ├── 📄 capture.py
-> │                ├── 📄 index.html
-> │              ├── 📄 utils.py
-> │            ├── 📄 index (2).html
-> │            ├── 📄 index.html
-> │            └── 📂 launcher/
-> │              ├── 📄 index.html
-> │              ├── 📄 package.json
-> │              └── 📂 public/
-> │                ├── 📄 index.html
-> │              └── 📂 src/
-> │                ├── 📄 App.css
-> │                ├── 📄 App.jsx
-> │                └── 📂 components/
-> │                  ├── 📄 FileBrowser.css
-> │                  ├── 📄 Tooltip.css
-> │                  ├── 📄 Tooltip.jsx
-> │                  ├── 📄 index.html
-> │                ├── 📄 index.css
-> │                ├── 📄 index.html
-> │                ├── 📄 main.jsx
-> │                ├── 📄 theme.js
-> │            └── 📂 src/
-> │              ├── 📄 App (2).css
-> │              ├── 📄 App.css
-> │              ├── 📄 App.jsx
-> │              ├── 📄 App.tsx
-> │              └── 📂 app/
-> │                └── 📂 api/
-> │                  ├── 📄 api.ts
-> │                └── 📂 dashboard/
-> │                  ├── 📄 page.tsx
-> │              └── 📂 components/
-> │                ├── 📄 FileBrowser.css
-> │                ├── 📄 FileBrowser.jsx
-> │                ├── 📄 LoginForm.tsx
-> │                ├── 📄 Tooltip.css
-> │                ├── 📄 Tooltip.jsx
-> │                ├── 📄 index.html
-> │                └── 📂 shared/
-> │                  ├── 📄 supabase.ts
-> │              ├── 📄 config.js
-> │              ├── 📄 index (2).css
-> │              ├── 📄 index.css
-> │              ├── 📄 index.html
-> │              └── 📂 lib/
-> │                ├── 📄 supabase.ts
-> │              ├── 📄 main.jsx
-> │              ├── 📄 main.tsx
-> │              ├── 📄 theme.js
-> │              └── 📂 types/
-> │                ├── 📄 database.types.ts
-> │          ├── 📄 main.py
-> │          ├── 📄 qibook_bot.py
-> │          ├── 📄 requirements.txt
-> │        └── 📂 qinote/
-> │          ├── 📄 QiNotePlan.md
-> │          ├── 📄 README.md
-> │          ├── 📄 README_INTEGRATION.md
-> │          ├── 📄 index.html
-> │          ├── 📄 package-lock.json
-> │          ├── 📄 package.json
-> │          └── 📂 src/
-> │            ├── 📄 App.tsx
-> │            └── 📂 components/
-> │              ├── 📄 AiActionsPanel.tsx
-> │              ├── 📄 EditorShell.tsx
-> │              ├── 📄 NoteMetadataPanel.tsx
-> │              ├── 📄 NoteSidebar.tsx
-> │              ├── 📄 RelatedNotesPanel.tsx
-> │              ├── 📄 RightPanel.tsx
-> │              └── 📂 common/
-> │            └── 📂 core/
-> │            └── 📂 features/
-> │            └── 📂 hooks/
-> │              ├── 📄 useNotes.ts
-> │            └── 📂 lib/
-> │              ├── 📄 api.ts
-> │            ├── 📄 main.tsx
-> │            └── 📂 qidocs/
-> │            └── 📂 routes/
-> │              ├── 📄 NoteEditorPage.tsx
-> │              ├── 📄 NoteListPage.tsx
-> │            └── 📂 store/
-> │            └── 📂 styles/
-> │              ├── 📄 index.css
-> │            └── 📂 types/
-> │              ├── 📄 note.ts
-> │            ├── 📄 vite-env.d.ts
-> │          ├── 📄 tailwind.config.js
-> │          ├── 📄 tsconfig.json
-> │          ├── 📄 vite.config.ts
-> │        └── 📂 qisetting/
-> │          ├── 📄 utils.ts
-> │        └── 📂 qitax/
-> │          ├── 📄 __main__.py
-> │          ├── 📄 service.py
-> │          ├── 📄 storage.py
-> │          ├── 📄 utils.ts
-> │        └── 📂 shared/
-> │          └── 📂 components/
-> │            ├── 📄 app-shell.tsx
-> │            ├── 📄 data-table.tsx
-> │            ├── 📄 empty-state.tsx
-> │            ├── 📄 status-badge.tsx
-> │          └── 📂 utils/
-> │            ├── 📄 format-date.ts
-> │            ├── 📄 rbac.ts
-> │            ├── 📄 route-map.ts
-> │      └── 📂 hooks/
-> │        ├── 📄 useGina.ts
-> │      └── 📂 layouts/
-> │        ├── 📄 PortalLayout.tsx
-> │      └── 📂 lib/
-> │        └── 📂 ai/
-> │          ├── 📄 embeddings.ts
-> │          ├── 📄 recall.ts
-> │          ├── 📄 tools.ts
-> │        └── 📂 auth/
-> │          ├── 📄 guards.ts
-> │          ├── 📄 session.ts
-> │        ├── 📄 constants.ts
-> │        └── 📂 db/
-> │          ├── 📄 server.ts
-> │        ├── 📄 env.ts
-> │        └── 📂 integrations/
-> │          ├── 📄 calendar.ts
-> │          ├── 📄 crm.ts
-> │          ├── 📄 email.ts
-> │          └── 📂 email_pkg/
-> │            ├── 📄 render.ts
-> │            └── 📂 supabase-auth/
-> │              ├── 📄 change_email.html
-> │              ├── 📄 confirmation.html
-> │              ├── 📄 invite.html
-> │              ├── 📄 magic_link.html
-> │              ├── 📄 otp.html
-> │              ├── 📄 reauthentication.html
-> │              ├── 📄 recovery.html
-> │            └── 📂 templates/
-> │              └── 📂 general/
-> │                ├── 📄 welcome.html
-> │              └── 📂 projects/
-> │                ├── 📄 update.html
-> │              └── 📂 tax/
-> │                ├── 📄 return-accepted.html
-> │        └── 📂 permissions/
-> │          ├── 📄 access.ts
-> │          ├── 📄 roles.ts
-> │        └── 📂 storage/
-> │          ├── 📄 files.ts
-> │          ├── 📄 uploads.ts
-> │        └── 📂 supabase/
-> │        ├── 📄 supabase.ts
-> │          ├── 📄 client.ts
-> │          ├── 📄 middleware.ts
-> │          ├── 📄 server.ts
-> │          ├── 📄 supabase.ts
-> │        ├── 📄 tools.ts
-> │        └── 📂 utils/
-> │        ├── 📄 utils.ts
-> │          ├── 📄 dates.ts
-> │          ├── 📄 ids.ts
-> │          └── 📂 legacy_pkg/
-> │          ├── 📄 money.ts
-> │          ├── 📄 strings.ts
-> │      ├── 📄 main.tsx
-> │      ├── 📄 middleware.ts
-> │      └── 📂 pages/
-> │        ├── 📄 Dashboard.tsx
-> │        └── 📂 admin/
-> │          ├── 📄 archive.tsx
-> │          ├── 📄 device-detail.tsx
-> │          ├── 📄 devices.tsx
-> │          ├── 📄 events.tsx
-> │          ├── 📄 failures.tsx
-> │          ├── 📄 fleet-jobs.tsx
-> │          ├── 📄 index.tsx
-> │          ├── 📄 jobs.tsx
-> │          ├── 📄 runtime-config.tsx
-> │          ├── 📄 tenants.tsx
-> │          ├── 📄 users.tsx
-> │          ├── 📄 watch-assignments.tsx
-> │        └── 📂 auth/
-> │          ├── 📄 callback.tsx
-> │          ├── 📄 login.tsx
-> │        └── 📂 cases/
-> │          ├── 📄 index.tsx
-> │        └── 📂 clients/
-> │          ├── 📄 index.tsx
-> │        └── 📂 dashboard/
-> │          ├── 📄 index.tsx
-> │        └── 📂 home/
-> │          ├── 📄 index.tsx
-> │        └── 📂 knowledge/
-> │          ├── 📄 index.tsx
-> │        └── 📂 tax/
-> │          ├── 📄 index.tsx
-> │        └── 📂 vault/
-> │          ├── 📄 index.tsx
-> │      └── 📂 qione/
-> │        └── 📂 contracts/
-> │          ├── 📄 deriveContract.ts
-> │        └── 📂 csv/
-> │          ├── 📄 csvParse.ts
-> │          ├── 📄 csvValidate.ts
-> │        └── 📂 objects/
-> │          ├── 📄 appointment.ts
-> │          ├── 📄 case.ts
-> │          ├── 📄 chore.ts
-> │          ├── 📄 contact.ts
-> │          ├── 📄 expense.ts
-> │          ├── 📄 index.ts
-> │          ├── 📄 medication.ts
-> │          ├── 📄 patient.ts
-> │          ├── 📄 types.ts
-> │      └── 📂 rag-chatbot/
-> │        ├── 📄 README.md
-> │        └── 📂 app/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 app.py
-> │          ├── 📄 main.py
-> │        ├── 📄 requirements.txt
-> │      └── 📂 styles/
-> │        ├── 📄 globals.css
-> │        ├── 📄 index.css
-> │      └── 📂 types/
-> │        ├── 📄 auth.ts
-> │        ├── 📄 common.ts
-> │        ├── 📄 database.ts
-> │        ├── 📄 permissions.ts
-> │      └── 📂 ui/
-> │        └── 📂 components/
-> │          ├── 📄 DataTable.tsx
-> │          ├── 📄 FieldRenderer.tsx
-> │          ├── 📄 FormRenderer.tsx
-> │          ├── 📄 Sidebar.tsx
-> │          ├── 📄 Topbar.tsx
-> │        └── 📂 styles/
-> │          ├── 📄 globals.css
-> │      ├── 📄 vite-env.d.ts
-> │    ├── 📄 tailwind.config.ts
-> │    ├── 📄 tsconfig.json
-> │    ├── 📄 tsconfig.node.json
-> │    ├── 📄 vite.config.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 qistory/
-> │    └── 📂 app/
-> │      └── 📂 backend/
-> │        ├── 📄 index.html
-> │        └── 📂 qibook_api/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 index.html
-> │          ├── 📄 main.py
-> │          └── 📂 routes/
-> │            ├── 📄 __init__.py
-> │            ├── 📄 books.py
-> │            ├── 📄 drafting.py
-> │            ├── 📄 engine.py
-> │            ├── 📄 evidence.py
-> │            ├── 📄 index.html
-> │            ├── 📄 manuscript.py
-> │            ├── 📄 outline.py
-> │            ├── 📄 project.py
-> │            ├── 📄 raw_items.py
-> │            ├── 📄 system.py
-> │          └── 📂 services/
-> │            ├── 📄 __init__.py
-> │            ├── 📄 chunk.py
-> │            ├── 📄 engine.py
-> │            ├── 📄 export.py
-> │            ├── 📄 extract.py
-> │            ├── 📄 heatmap.py
-> │            ├── 📄 index.html
-> │            ├── 📄 ingest.py
-> │            ├── 📄 recap.py
-> │            ├── 📄 retrieval.py
-> │            ├── 📄 style_drift.py
-> │          └── 📂 utils/
-> │            ├── 📄 __init__.py
-> │            ├── 📄 config.py
-> │            ├── 📄 db.py
-> │            ├── 📄 embeddings.py
-> │            ├── 📄 index.html
-> │            ├── 📄 llm.py
-> │        ├── 📄 requirements.txt
-> │      └── 📂 desktop/
-> │        ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        └── 📂 src/
-> │          ├── 📄 App.tsx
-> │          └── 📂 components/
-> │            ├── 📄 EvidenceBadge.tsx
-> │            ├── 📄 Layout.tsx
-> │            ├── 📄 LoadingSpinner.tsx
-> │            ├── 📄 StatusBadge.tsx
-> │            ├── 📄 Toast.tsx
-> │            ├── 📄 ToastContainer.tsx
-> │            ├── 📄 index.html
-> │          ├── 📄 index.css
-> │          ├── 📄 index.html
-> │          └── 📂 lib/
-> │            ├── 📄 api.ts
-> │            ├── 📄 index.html
-> │          ├── 📄 main.tsx
-> │          └── 📂 routes/
-> │            ├── 📄 BookDetail.tsx
-> │            ├── 📄 BookWizard.tsx
-> │            ├── 📄 Books.tsx
-> │            ├── 📄 DraftingStudio.tsx
-> │            ├── 📄 Library.tsx
-> │            ├── 📄 OutlineStudio.tsx
-> │            ├── 📄 Settings.tsx
-> │            ├── 📄 index.html
-> │        ├── 📄 tsconfig.json
-> │        ├── 📄 vite.config.ts
-> │      ├── 📄 index.html
-> │      └── 📂 vault/
-> │        ├── 📄 global.sqlite
-> │        ├── 📄 index.html
-> │        └── 📂 projects/
-> │          └── 📂 default/
-> │            ├── 📄 index.html
-> │            └── 📂 raw/
-> │              ├── 📄 Mirror, Mirror How to Critique a Family Manifesto for Trauma, (1).txt
-> │              ├── 📄 index.html
-> │          ├── 📄 index.html
-> │    └── 📂 content/
-> │      ├── 📄 index.html
-> │    └── 📂 cre_QiStory_Pole_To_Power/
-> │      └── 📂 FINAL_SUBMISSION/
-> │        ├── 📄 Paid_In_Full.docx
-> │        ├── 📄 Paid_In_Full.epub
-> │        ├── 📄 Paid_In_Full_Audio_Script.txt
-> │        ├── 📄 Paid_In_Full_PRINT.epub
-> │        ├── 📄 Publication_Requirements.txt
-> │        ├── 📄 _pandoc_metadata.yaml
-> │        ├── 📄 index.html
-> │      ├── 📄 README.md
-> │      └── 📂 assets/
-> │        └── 📂 audio/
-> │          ├── 📄 index.html
-> │          ├── 📄 paid_in_full_intro.mp3
-> │          ├── 📄 prologue_narration.mp3
-> │        ├── 📄 aurther.jpg
-> │        ├── 📄 epub_listening.css
-> │        ├── 📄 epub_print.css
-> │        └── 📂 imgs/
-> │          ├── 📄 PAIDINFULL.PNG
-> │          ├── 📄 boss.png
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        ├── 📄 media_prompts.md
-> │        └── 📂 original/
-> │          ├── 📄 FULL_ORIGINAL_TRANSCRIPT.md
-> │          ├── 📄 index.html
-> │          └── 📂 transcripts/
-> │            ├── 📄 Chapter_01_Monster.md
-> │            ├── 📄 Chapter_02_Childhood.md
-> │            ├── 📄 Chapter_03_Romance.md
-> │            ├── 📄 Chapter_04_Husbands.md
-> │            ├── 📄 Chapter_05_Otis.md
-> │            ├── 📄 Final_Reflection.md
-> │            ├── 📄 Front_Matter.md
-> │            ├── 📄 index.html
-> │        └── 📂 outputs/
-> │          ├── 📄 FULL_P2P_STRATEGIC_REWRITE.md
-> │          ├── 📄 Paid_In_Full_Master_Manuscript.md
-> │          ├── 📄 index.html
-> │        ├── 📄 print_styles.css
-> │        └── 📂 videos/
-> │          ├── 📄 PAIDINFULL.gif
-> │          ├── 📄 index.html
-> │          ├── 📄 mirror (2).gif
-> │      └── 📂 book/
-> │        ├── 📄 00_Front_Matter.md
-> │        └── 📂 00_PROLOGUE/
-> │          ├── 📄 00_prologue_mirror_effect.md
-> │          ├── 📄 index.html
-> │        └── 📂 01_PART_I_INVISIBLE_GIRL/
-> │          ├── 📄 01_part_I_the_invisible_girl.md
-> │          ├── 📄 01a_ch01_somerville_indiana.md
-> │          ├── 📄 01b_ch02_claude.md
-> │          ├── 📄 01c_ch03_mother.md
-> │          ├── 📄 01d_ch04_bill.md
-> │          ├── 📄 01e_ch05_lost_child.md
-> │          ├── 📄 01f_ch06_early_pregnancy.md
-> │          ├── 📄 01z_reflection_I_invisibility_is_training.md
-> │          ├── 📄 index.html
-> │        └── 📂 02_PART_II_MARRYING_MONSTER/
-> │          ├── 📄 02_part_II_marrying_the_monster.md
-> │          ├── 📄 02a_ch07_the_musician.md
-> │          ├── 📄 02b_ch08_marriage_as_ownership.md
-> │          ├── 📄 02c_ch09_the_toll_of_ghosts.md
-> │          ├── 📄 02d_ch10_busybody.md
-> │          ├── 📄 02e_ch11_escalation.md
-> │          ├── 📄 02f_ch12_the_dog.md
-> │          ├── 📄 02g_ch13_leaving_without_rescue.md
-> │          ├── 📄 02z_reflection_II_fear_is_governance.md
-> │          ├── 📄 index.html
-> │        └── 📂 03_PART_III_BUSINESS_OF_PLEASURE/
-> │          ├── 📄 03_part_III_business_of_pleasure.md
-> │          ├── 📄 03a_ch14_jaye.md
-> │          ├── 📄 03b_ch15_pager_economy.md
-> │          ├── 📄 03c_ch16_the_upfront_rule.md
-> │          ├── 📄 03d_ch17_becoming_professional.md
-> │          ├── 📄 03e_ch18_lines_drawn.md
-> │          ├── 📄 03z_reflection_III_control_is_not_ownership.md
-> │          ├── 📄 index.html
-> │        └── 📂 04_PART_IV_CRACK_IN_FOUNDATION/
-> │          ├── 📄 04_part_IV_crack_in_foundation.md
-> │          ├── 📄 04a_ch19_dave.md
-> │          ├── 📄 04b_ch20_miscarriages.md
-> │          ├── 📄 04c_ch21_cody.md
-> │          ├── 📄 04d_ch22_henry.md
-> │          ├── 📄 04e_ch23_first_delivery.md
-> │          ├── 📄 04f_ch24_police_search.md
-> │          ├── 📄 04g_ch25_informant.md
-> │          ├── 📄 04z_reflection_IV_survival_strategies_expire.md
-> │          ├── 📄 index.html
-> │        └── 📂 05_PART_V_FINAL_STAND/
-> │          ├── 📄 05_part_V_final_stand.md
-> │          ├── 📄 05a_ch26_otis.md
-> │          ├── 📄 05b_ch27_the_car.md
-> │          ├── 📄 05c_ch28_the_knife_scene.md
-> │          ├── 📄 05d_ch29_the_ambush.md
-> │          ├── 📄 05e_ch30_aftermath.md
-> │          ├── 📄 05z_reflection_V_decisiveness_not_fearlessness.md
-> │          ├── 📄 index.html
-> │        └── 📂 06_EPILOGUE/
-> │          ├── 📄 06_epilogue_madam_of_her_own_life.md
-> │          ├── 📄 index.html
-> │        ├── 📄 99_About_the_Author.md
-> │        ├── 📄 99_Back_Matter.md
-> │        ├── 📄 index.html
-> │      ├── 📄 build_ebook.py
-> │      ├── 📄 coming-soon.html
-> │      └── 📂 docs/
-> │        ├── 📄 DISTRIBUTION_STRATEGY.md
-> │        ├── 📄 NARRATIVE_ARCHITECTURE.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 interactive/
-> │        └── 📂 css/
-> │          ├── 📄 index.html
-> │          ├── 📄 reader.css
-> │        └── 📂 data/
-> │          ├── 📄 chapter_05_knife_scene_timing.json
-> │          ├── 📄 index.html
-> │          ├── 📄 prologue.json
-> │        └── 📂 downloads/
-> │        ├── 📄 index.html
-> │        └── 📂 js/
-> │          ├── 📄 index.html
-> │        ├── 📄 read.html
-> │      ├── 📄 paid-in-full-print.html
-> │    └── 📂 cre_QiStory_Silence-Isnt-Distance/
-> │      ├── 📄 MASTER_INDEX.md
-> │      ├── 📄 QIOS_REPO_INFO.txt
-> │      ├── 📄 README.md
-> │      ├── 📄 SETUP.md
-> │      └── 📂 assets/
-> │        ├── 📄 index.html
-> │      └── 📂 docs/
-> │        ├── 📄 MARKDOWN_FORMATTING_REPORT.md
-> │        ├── 📄 QA_COMPLETE_SUMMARY.md
-> │        ├── 📄 READER_IMPLEMENTATION.md
-> │        ├── 📄 SITE_AUDIT_REPORT.md
-> │        ├── 📄 index.html
-> │        ├── 📄 outline.csv
-> │        ├── 📄 sudowrite-outline-template.csv
-> │      └── 📂 export/
-> │      └── 📂 export-ready/
-> │        ├── 📄 00-cover.md
-> │        ├── 📄 01-title-page.md
-> │        ├── 📄 02-dedication.md
-> │        ├── 📄 02a-content-considerations.md
-> │        ├── 📄 03-preface.md
-> │        ├── 📄 04-how-to-use-this-book.md
-> │        ├── 📄 05-introduction.md
-> │        ├── 📄 06-chapter-01-overloaded-mind.md
-> │        ├── 📄 07-chapter-02-emotional-architecture.md
-> │        ├── 📄 08-chapter-03-mirror-misunderstanding.md
-> │        ├── 📄 09-chapter-04-science-of-withdrawal.md
-> │        ├── 📄 10-chapter-05-shutdown-triggers.md
-> │        ├── 📄 11-chapter-06-survival-mode-love.md
-> │        ├── 📄 12-chapter-07-overfunctioning.md
-> │        ├── 📄 13-chapter-08-projection-mirror.md
-> │        ├── 📄 14-chapter-09-burnout-breakdown-dissociation.md
-> │        ├── 📄 20-chapter-15-coming-home-to-silence.md
-> │        ├── 📄 21-epilogue.md
-> │        ├── 📄 22-acknowledgements.md
-> │        ├── 📄 23-about-the-author.md
-> │        ├── 📄 24-back-of-book-summary.md
-> │        ├── 📄 25-bibliography.md
-> │        ├── 📄 25a-glossary.md
-> │        ├── 📄 MASTER_BOOK.md
-> │        ├── 📄 index.html
-> │        ├── 📄 print_override.css
-> │      ├── 📄 export.sh
-> │        ├── 📄 Silence Isnt Distance.html
-> │        ├── 📄 index.html
-> │        ├── 📄 silence-isnt-distance-ebook.pdf
-> │        ├── 📄 silence-isnt-distance-print.html
-> │        └── 📂 story/
-> │          └── 📂 ACT_01 — AWAKENING/
-> │            ├── 📄 index.html
-> │          └── 📂 ACT_02 — UNDERSTANDING/
-> │            ├── 📄 index.html
-> │          └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
-> │            ├── 📄 index.html
-> │          └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
-> │            ├── 📄 index.html
-> │          └── 📂 ACT_05 — RECLAIMING THE SELF/
-> │            ├── 📄 index.html
-> │          └── 📂 APPENDIX/
-> │            ├── 📄 index.html
-> │          └── 📂 _intro/
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │      ├── 📄 generate_print_html.py
-> │      ├── 📄 index.html
-> │      └── 📂 publishing/
-> │        ├── 📄 00-PUBLISHING-MASTER-GUIDE.md
-> │        ├── 📄 01-KDP-METADATA.md
-> │        ├── 📄 02-AUTHOR-BIOS.md
-> │        ├── 📄 03-MEDIA-KIT.md
-> │        ├── 📄 04-MARKETING-MATERIALS.md
-> │        ├── 📄 05-AUDIOBOOK-PREP.md
-> │        ├── 📄 06-PUBLISHING-CHECKLIST.md
-> │        ├── 📄 07-ELEVENLABS-IMPORT-GUIDE.md
-> │        ├── 📄 08-EXPORT-PIPELINE.md
-> │        ├── 📄 09-ELEVENREADER-UPLOAD-GUIDE.md
-> │        ├── 📄 index.html
-> │      └── 📂 site/
-> │        ├── 📄 index.html
-> │      └── 📂 story/
-> │        └── 📂 ACT_01 — AWAKENING/
-> │          ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.md
-> │          ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.md
-> │          ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.md
-> │          ├── 📄 index.html
-> │        └── 📂 ACT_02 — UNDERSTANDING/
-> │          ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.md
-> │          ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.md
-> │          ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.md
-> │          ├── 📄 index.html
-> │        └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
-> │          ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.md
-> │          ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.md
-> │          ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.md
-> │          ├── 📄 index.html
-> │        └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
-> │          ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.md
-> │          ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.md
-> │          ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.md
-> │          ├── 📄 index.html
-> │        └── 📂 ACT_05 — RECLAIMING THE SELF/
-> │          ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.md
-> │          ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.md
-> │          ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.md
-> │          ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.md
-> │          ├── 📄 index.html
-> │        └── 📂 APPENDIX/
-> │          ├── 📄 ACKNOWLEDGMENTS.md
-> │          ├── 📄 GLOSSARY.md
-> │          ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).md
-> │          ├── 📄 index.html
-> │        └── 📂 _intro/
-> │          ├── 📄 AUTHOR'S NOTE.md
-> │          ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).md
-> │          ├── 📄 DEDICATION.md
-> │          ├── 📄 HOW TO USE THIS BOOK.md
-> │          ├── 📄 INTRODUCTION — When Silence Is Misunderstood.md
-> │          ├── 📄 PREFACE — Why This Book Exists.md
-> │          ├── 📄 Table of Content.md
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    └── 📂 models/
-> │      ├── 📄 index.html
-> │    └── 📂 scripts/
-> │      ├── 📄 index.html
-> │      ├── 📄 run_dev.sh
-> └── 📂 data/
-> │  ├── 📄 README.md
-> │  └── 📂 assigned_watch/
-> │    ├── 📄 README.md
-> │  └── 📂 backups/
-> │  └── 📂 devices/
-> │    └── 📂 this-device/
-> │      ├── 📄 capabilities.json
-> │      ├── 📄 device.json
-> │      ├── 📄 last_heartbeat.json
-> │      ├── 📄 watcher_assignments.json
-> │  ├── 📄 docket.csv
-> │  └── 📂 dropzones/
-> │    ├── 📄 README.md
-> │    └── 📂 default/
-> │    └── 📂 imports/
-> │    └── 📂 mobile/
-> │    └── 📂 scans/
-> │      └── 📂 scan-snap/
-> │        ├── 📄 2026-04-01.pdf
-> │        ├── 📄 2026-04-01_A. Allegation of _Unauthorized Pel.pdf
-> │        ├── 📄 2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268.pdf
-> │        ├── 📄 2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268_001.pdf
-> │        ├── 📄 2026-04-01_FCFCU-card received during case.pdf
-> │        ├── 📄 2026-04-01_INVOICE.pdf
-> │        ├── 📄 2026-04-01_INVOICE_001.pdf
-> │        ├── 📄 2026-04-01_If you do not attend the hearing in this case, the  j.pdf
-> │        ├── 📄 2026-04-01_PTIN.pdf
-> │        ├── 📄 2026-04-01_UMTim.pdf
-> │        ├── 📄 2026-04-01_Wrect.pdf
-> │        ├── 📄 2026-04-01_Your subscription payment is due..pdf
-> │        ├── 📄 2026-04-01_n_‘-‘ Person IWant to Make Care Decisio-.pdf
-> │        ├── 📄 2026-04-01_paysign.pdf
-> │  └── 📂 embeddings_cache/
-> │  └── 📂 extracted_text/
-> │  └── 📂 failed/
-> │  └── 📂 inbox/
-> │    ├── 📄 README.md
-> │  ├── 📄 manifest.txt
-> │  └── 📂 manifests/
-> │  └── 📂 model_cache/
-> │  └── 📂 normalized/
-> │  └── 📂 previews/
-> │  └── 📂 processing/
-> │  ├── 📄 qios_00_genesis.canvas
-> │  ├── 📄 qios_runtime_mindmap.canvas
-> │  └── 📂 quarantine/
-> │  └── 📂 reviewed/
-> │  └── 📂 staging/
-> │  └── 📂 state/
-> │    └── 📂 local-agent/
-> │      ├── 📄 cursor.json
-> │      ├── 📄 locks.json
-> │      ├── 📄 queue.json
-> │    └── 📂 runtime/
-> │      ├── 📄 embeddings_state.json
-> │      ├── 📄 pipeline_state.json
-> │      ├── 📄 repair_state.json
-> │    └── 📂 sync/
-> │      ├── 📄 conflict_log.json
-> │      ├── 📄 sync_cursor.json
-> └── 📂 docs/
-> │  └── 📂 __QiOS_Master_Blueprint_v0.4/
-> │    └── 📂 01_governance/
-> │      ├── 📄 decisions.md
-> │      ├── 📄 policies.md
-> │      ├── 📄 principles.md
-> │      ├── 📄 registry.md
-> │      ├── 📄 standards.md
-> │    └── 📂 02_architecture/
-> │      ├── 📄 component_map.md
-> │      ├── 📄 data_flow.md
-> │      ├── 📄 device_model.md
-> │      ├── 📄 identity.md
-> │      ├── 📄 runtime_zones.md
-> │      ├── 📄 service_boundaries.md
-> │      ├── 📄 system_model.md
-> │    └── 📂 03_structure/
-> │      ├── 📄 bands.md
-> │      ├── 📄 domains.md
-> │      ├── 📄 object_model.md
-> │      ├── 📄 placement_rules.md
-> │      ├── 📄 subdomains.md
-> │    └── 📂 04_data/
-> │      ├── 📄 exports.md
-> │      ├── 📄 metadata.md
-> │      ├── 📄 objects.md
-> │      ├── 📄 schema.md
-> │      ├── 📄 storage.md
-> │    └── 📂 05_compute/
-> │      ├── 📄 apis.md
-> │      ├── 📄 integrations.md
-> │      ├── 📄 pipelines.md
-> │      ├── 📄 runtime.md
-> │      ├── 📄 tech_stack.md
-> │      ├── 📄 workers.md
-> │    └── 📂 06_applications/
-> │      ├── 📄 admin.md
-> │      ├── 📄 interfaces.md
-> │      ├── 📄 portal.md
-> │      ├── 📄 tools.md
-> │      ├── 📄 web.md
-> │    └── 📂 07_operations/
-> │      ├── 📄 cases.md
-> │      ├── 📄 clients.md
-> │      ├── 📄 finance.md
-> │      ├── 📄 products.md
-> │      ├── 📄 templates.md
-> │    └── 📂 adr/
-> │      ├── 📄 ADR-0001-blueprint-scope.md
-> │      ├── 📄 ADR-0002-single-domain-rule.md
-> │      ├── 📄 ADR-0003-band-model.md
-> │      ├── 📄 ADR-0004-qilabs-root.md
-> │      ├── 📄 ADR-0005-hosted-fleet-orchestration.md
-> │    └── 📂 appendices/
-> │      ├── 📄 changelog.md
-> │      ├── 📄 glossary.md
-> │      ├── 📄 migration_notes.md
-> │    ├── 📄 index.md
-> │  └── 📂 examples/
-> │    ├── 📄 archive_manifest.example.json
-> │    ├── 📄 fleet_job_payload.example.json
-> │    ├── 📄 local-agent.env.example
-> │    ├── 📄 watcher_paths.example.yaml
-> ├── 📄 eslint.config.js
-> ├── 📄 eslint.config.mjs
-> └── 📂 infra/
-> │  ├── 📄 README.md
-> │  └── 📂 bootstrap/
-> │    ├── 📄 README.md
-> │    └── 📂 config/
-> │      ├── 📄 README.md
-> │      └── 📂 global/
-> │        ├── 📄 device_policy.yaml
-> │        ├── 📄 metadata_rules.yaml
-> │        ├── 📄 naming_rules.yaml
-> │        ├── 📄 repo_rules.yaml
-> │        ├── 📄 runtime_rules.yaml
-> │        ├── 📄 watcher_rules.yaml
-> │      └── 📂 local/
-> │        ├── 📄 dropzones.yaml
-> │        ├── 📄 embeddings.yaml
-> │        ├── 📄 local_agent.yaml
-> │        ├── 📄 ocr.yaml
-> │        ├── 📄 watcher_paths.yaml
-> │      └── 📂 secrets/
-> │    ├── 📄 enroll_device.ps1
-> │    ├── 📄 enroll_device.sh
-> │    ├── 📄 install_local_agent.ps1
-> │    ├── 📄 install_local_agent.sh
-> │    ├── 📄 install_qilabs.ps1
-> │    ├── 📄 install_qilabs.sh
-> │    └── 📂 templates/
-> │      ├── 📄 local-agent.env.template
-> │      ├── 📄 qilabs.env.template
-> │      ├── 📄 watcher_paths.template.yaml
-> │    ├── 📄 validate_machine.ps1
-> │    ├── 📄 validate_machine.sh
-> │  └── 📂 docker/
-> │    ├── 📄 ai-api.Dockerfile
-> │    ├── 📄 app-api.Dockerfile
-> │    ├── 📄 compose.dev.yml
-> │    ├── 📄 local-agent.Dockerfile
-> │    ├── 📄 worker-orchestrator.Dockerfile
-> │  └── 📂 neo4j/
-> │    ├── 📄 README.md
-> │  └── 📂 redis/
-> │    ├── 📄 README.md
-> │  └── 📂 supabase/
-> │    ├── 📄 config.toml
-> │    └── 📂 functions/
-> │      ├── 📄 archive_register.sql
-> │      ├── 📄 device_heartbeat.sql
-> │      ├── 📄 enqueue_fleet_job.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 0001_init.sql
-> │      ├── 📄 0002_qione_core.sql
-> │      ├── 📄 0003_qiarchive_core.sql
-> │      ├── 📄 0004_qisys_jobs.sql
-> │      ├── 📄 0005_qivault.sql
-> │      ├── 📄 0006_qiknowledge.sql
-> │      ├── 📄 0007_qicase.sql
-> │      ├── 📄 0008_device_registry.sql
-> │      ├── 📄 0009_watch_assignments.sql
-> │    ├── 📄 seed.sql
-> │  └── 📂 tailscale/
-> │    ├── 📄 README.md
-> │    ├── 📄 acl.example.json
-> │    ├── 📄 node-enrollment.md
-> │  └── 📂 tests/
-> │    ├── 📄 README.md
-> │    └── 📂 e2e/
-> │      ├── 📄 admin-device-registry.spec.ts
-> │      ├── 📄 archive-dropzone.spec.ts
-> │      ├── 📄 portal-auth.spec.ts
-> │    └── 📂 fixtures/
-> │      ├── 📄 sample.pdf
-> │      ├── 📄 sample_email.eml
-> │      ├── 📄 sample_metadata.json
-> │    └── 📂 integration/
-> │      ├── 📄 test_archive_registration.py
-> │      ├── 📄 test_device_enrollment.py
-> │      ├── 📄 test_fleet_job_dispatch.py
-> │      ├── 📄 test_watch_assignment.py
-> ├── 📄 justfile
-> ├── 📄 mkdocs.yml
-> ├── 📄 package-lock.json
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 ai/
-> │    ├── 📄 README.md
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      └── 📂 adapters/
-> │      ├── 📄 index.ts
-> │      └── 📂 prompts/
-> │      └── 📂 tools/
-> │  └── 📂 assets/
-> │    ├── 📄 introvideo.mp4
-> │    ├── 📄 package.json
-> │    └── 📂 public/
-> │      ├── 📄 introvideo.mp4
-> │    └── 📂 src/
-> │      └── 📂 bookings/
-> │        ├── 📄 book-now.js
-> │        ├── 📄 booking-inline.js
-> │      └── 📂 brand/
-> │      ├── 📄 index.ts
-> │  └── 📂 auth/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 config/
-> │    └── 📂 eslint/
-> │      ├── 📄 base.js
-> │    ├── 📄 package.json
-> │    └── 📂 prettier/
-> │      ├── 📄 base.cjs
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │      └── 📂 json/
-> │        ├── 📄 QiRealms_seed.json
-> │        ├── 📄 QiTagClasses_schema.json
-> │        ├── 📄 QiTags_seed.json
-> │        ├── 📄 eos-frontmatter-mapping.json
-> │        ├── 📄 eos_frontmatter.schema.json
-> │        ├── 📄 frontmatter.schema.json
-> │        ├── 📄 git_manifest.json
-> │        ├── 📄 mapping.json
-> │        ├── 📄 repo_naming_policy.json
-> │        ├── 📄 systemInfoCMD.json
-> │      └── 📂 rules/
-> │        ├── 📄 audit_repo_rules.ts
-> │        ├── 📄 fix_repo_rules.ts
-> │        ├── 📄 repoRules.ts
-> │        ├── 📄 rulesRegistry.ts
-> │      └── 📂 yaml/
-> │        ├── 📄 csv_to_md_mappings.yaml
-> │        ├── 📄 fs_scan_config.yaml
-> │        ├── 📄 housekeeping.yaml
-> │        ├── 📄 qi_codex.config.yaml
-> │        ├── 📄 qi_prefix_map.yaml
-> │        ├── 📄 qicompiler_config.yaml
-> │        ├── 📄 qione_rag_routes.yaml
-> │        ├── 📄 slugs_mapping.yaml
-> │        ├── 📄 tree_compiler_config.yaml
-> │    └── 📂 tsconfig/
-> │      ├── 📄 base.json
-> │      ├── 📄 node.json
-> │      ├── 📄 react.json
-> │  └── 📂 database/
-> │    ├── 📄 README.md
-> │    ├── 📄 package.json
-> │    ├── 📄 scanner.js
-> │    └── 📂 src/
-> │      └── 📂 adapters/
-> │        └── 📂 auth/
-> │        └── 📂 supabase/
-> │          ├── 📄 bootstrap_tenant.sql
-> │          └── 📂 src/
-> │            ├── 📄 index.ts
-> │      ├── 📄 index.ts
-> │      └── 📂 migrations/
-> │        ├── 📄 0001_qione_core.sql
-> │        ├── 📄 0002_qiarchive_spine.sql
-> │        ├── 📄 0003_qisys_ops.sql
-> │        ├── 📄 0004_qigraph_index.sql
-> │        ├── 📄 0005_qiknowledge.sql
-> │        ├── 📄 0006_qially_comms.sql
-> │        ├── 📄 0007_namespace_registry.sql
-> │        ├── 📄 0007_qichronicle_time.sql
-> │        ├── 📄 0008_get_tenant_members_with_roles.sql
-> │        ├── 📄 0008_qihome_ledger.sql
-> │        ├── 📄 0009_household_bootstrap_final.sql
-> │        ├── 📄 0009_qitax_returns.sql
-> │        ├── 📄 0010_qicase_matters.sql
-> │        ├── 📄 0010_upsert_tenant_member.sql
-> │        ├── 📄 0011_add_display_name_to_members.sql
-> │        ├── 📄 0011_qicrm_contacts.sql
-> │        ├── 📄 0012_qivault_docs.sql
-> │        ├── 📄 0013_qicms_web.sql
-> │        ├── 📄 0014_registry.namespace_allocations.sql
-> │        ├── 📄 0015_registry_namespace_bands.sql
-> │      └── 📂 queries/
-> │      └── 📂 schemas/
-> │        ├── 📄 archive.ts
-> │        ├── 📄 case.ts
-> │        ├── 📄 client.ts
-> │        ├── 📄 comms.ts
-> │        ├── 📄 content.ts
-> │        ├── 📄 core.ts
-> │        ├── 📄 home.ts
-> │        └── 📂 src/
-> │          ├── 📄 contentFrontMatter.ts
-> │          ├── 📄 database.types.ts
-> │          ├── 📄 index.ts
-> │        ├── 📄 system.ts
-> │        ├── 📄 tax.ts
-> │        ├── 📄 vault.ts
-> │      └── 📂 types/
-> │    └── 📂 utils/
-> │      ├── 📄 supabase.ts
-> │  └── 📂 db/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      └── 📂 clients/
-> │        ├── 📄 postgres.ts
-> │        ├── 📄 redis.ts
-> │        ├── 📄 supabase.ts
-> │      ├── 📄 index.ts
-> │      └── 📂 queries/
-> │        ├── 📄 archive.ts
-> │        ├── 📄 devices.ts
-> │        ├── 📄 jobs.ts
-> │      └── 📂 schemas/
-> │        ├── 📄 qiarchive.ts
-> │        ├── 📄 qicase.ts
-> │        ├── 📄 qiknowledge.ts
-> │        ├── 📄 qione.ts
-> │        ├── 📄 qisys.ts
-> │        ├── 📄 qitax.ts
-> │        ├── 📄 qivault.ts
-> │  └── 📂 domain-types/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │      ├── 📄 qiarchive.ts
-> │      ├── 📄 qicase.ts
-> │      ├── 📄 qiknowledge.ts
-> │      ├── 📄 qione.ts
-> │      ├── 📄 qisys.ts
-> │      ├── 📄 qivault.ts
-> │  └── 📂 email/
-> │    └── 📂 partials/
-> │      ├── 📄 footer.html
-> │      ├── 📄 header.html
-> │    ├── 📄 render.ts
-> │    └── 📂 smtp/
-> │      ├── 📄 config.yml
-> │    └── 📂 supabase-auth/
-> │      ├── 📄 README.md
-> │      ├── 📄 change_email.html
-> │      ├── 📄 confirmation.html
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │      ├── 📄 reauthentication.html
-> │      ├── 📄 recovery.html
-> │    └── 📂 templates/
-> │      └── 📂 billing/
-> │        ├── 📄 invoice.html
-> │      └── 📂 general/
-> │        ├── 📄 welcome.html
-> │      └── 📂 projects/
-> │        ├── 📄 update.html
-> │      └── 📂 tax/
-> │        ├── 📄 return-accepted.html
-> │  └── 📂 gina/
-> │    ├── 📄 (2).gitignore
-> │    ├── 📄 LICENSE
-> │    ├── 📄 LICENSE (2)
-> │    ├── 📄 QIOS_REPO_INFO.txt
-> │    ├── 📄 QIOS_SAFE_TO_DELETE.txt
-> │    ├── 📄 README (2).md
-> │    ├── 📄 README (3).md
-> │    ├── 📄 README.md
-> │    ├── 📄 ```markdown (2).md
-> │    ├── 📄 ```markdown.md
-> │    └── 📂 demo/
-> │      ├── 📄 README (2).md
-> │      ├── 📄 README.md
-> │      └── 📂 assets/
-> │        ├── 📄 branding-lina (2).md
-> │        ├── 📄 branding-lina.md
-> │        ├── 📄 index (2).html
-> │        ├── 📄 index.html
-> │        ├── 📄 lina-config-prompt (2).md
-> │        ├── 📄 lina-config-prompt.md
-> │        ├── 📄 sora-prompts-lumara-lina (2).txt
-> │        ├── 📄 sora-prompts-lumara-lina.txt
-> │      ├── 📄 index (2).html
-> │      ├── 📄 index (3).html
-> │      ├── 📄 index (4).html
-> │      ├── 📄 index.html
-> │      ├── 📄 lumara_resource_graph_investor_section.md
-> │      ├── 📄 verify_parsing.py
-> │    ├── 📄 env.example
-> │    ├── 📄 favicon.ico
-> │    └── 📂 frontend/
-> │      ├── 📄 deno.lock
-> │      └── 📂 functions/
-> │        └── 📂 api/
-> │          ├── 📄 lina-chat.js
-> │      ├── 📄 index.html
-> │      ├── 📄 lina-widget.html
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 index.html
-> │        ├── 📄 lina-icon.svg
-> │        ├── 📄 lina-widget-drop.js
-> │      └── 📂 src/
-> │        ├── 📄 App.css
-> │        ├── 📄 App.tsx
-> │        └── 📂 api/
-> │          ├── 📄 index.html
-> │          ├── 📄 linaClient.ts
-> │          ├── 📄 resourceWorkerClient.ts
-> │        └── 📂 components/
-> │          ├── 📄 ChatHeader.tsx
-> │          ├── 📄 ChatInput.tsx
-> │          ├── 📄 MatchList.tsx
-> │          ├── 📄 MessageList.tsx
-> │          ├── 📄 NavigatorMediationPanel.tsx
-> │          ├── 📄 NeedForm.tsx
-> │          ├── 📄 OfferForm.tsx
-> │          ├── 📄 ResourceGraph.tsx
-> │          ├── 📄 WidgetShell.tsx
-> │          ├── 📄 index.html
-> │        ├── 📄 index.css
-> │        ├── 📄 index.html
-> │        ├── 📄 main.tsx
-> │        └── 📂 models/
-> │          ├── 📄 chat.ts
-> │          ├── 📄 index.html
-> │        └── 📂 pages/
-> │          ├── 📄 ClientPortal.tsx
-> │          ├── 📄 Home.tsx
-> │          ├── 📄 NavigatorDashboard.tsx
-> │          ├── 📄 index.html
-> │        ├── 📄 vite-env.d.ts
-> │        └── 📂 widget/
-> │          ├── 📄 index.html
-> │          ├── 📄 main-widget.tsx
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 vite.config.ts
-> │    └── 📂 functions/
-> │      └── 📂 api/
-> │        ├── 📄 index (2).html
-> │        ├── 📄 index.html
-> │        ├── 📄 lina-chat (2).js
-> │        ├── 📄 lina-chat.js
-> │      ├── 📄 index (2).html
-> │      ├── 📄 index.html
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index (4).html
-> │    ├── 📄 index (5).html
-> │    ├── 📄 index.html
-> │    ├── 📄 index.html.merge_1763192572
-> │    ├── 📄 lina-widget (2).html
-> │    ├── 📄 lina-widget.html
-> │    └── 📂 ops/
-> │      ├── 📄 crisis_routing_extension.md
-> │      ├── 📄 index.html
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 qios_00_genesis.canvas
-> │    ├── 📄 qios_runtime_mindmap.canvas
-> │    └── 📂 rules/
-> │      ├── 📄 _readme.md
-> │      ├── 📄 folder_registry.yaml
-> │      ├── 📄 index.html
-> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │      ├── 📄 qios_05_Cursor_and_naming.canvas
-> │      └── 📂 qios_cursor_prompts/
-> │        ├── 📄 index.html
-> │        ├── 📄 install_ingestion_worker.md
-> │        ├── 📄 project_prompt.md.md
-> │        ├── 📄 qicompiler_add_prompt.md
-> │        ├── 📄 qicompiler_orchestrator_prompt.md
-> │        ├── 📄 qimatrix_csv_prompt.md
-> │        ├── 📄 qimatrix_sql_prompt.md
-> │        ├── 📄 qimatrix_yaml_prompt.md
-> │        ├── 📄 step3_tree_compiler_prompt.md
-> │        ├── 📄 user_prompt.md.md
-> │      ├── 📄 realms_registry.yaml
-> │    └── 📂 src/
-> │      └── 📂 gina_core/
-> │        ├── 📄 db.py
-> │        ├── 📄 index.html
-> │        ├── 📄 main.py
-> │        └── 📂 services/
-> │          ├── 📄 capture.py
-> │        ├── 📄 utils.py
-> │      ├── 📄 index.html
-> │      └── 📂 launcher/
-> │        ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          ├── 📄 index.html
-> │        └── 📂 src/
-> │          ├── 📄 App.css
-> │          ├── 📄 App.jsx
-> │          └── 📂 components/
-> │            ├── 📄 FileBrowser.css
-> │            ├── 📄 Tooltip.css
-> │            ├── 📄 Tooltip.jsx
-> │            ├── 📄 index.html
-> │          ├── 📄 index.css
-> │          ├── 📄 index.html
-> │          ├── 📄 main.jsx
-> │          ├── 📄 theme.js
-> │    └── 📂 templates/
-> │      └── 📂 docs/
-> │        ├── 📄 index.html
-> │        ├── 📄 readme_template.md.md
-> │      ├── 📄 index.html
-> │    └── 📂 tools/
-> │      ├── 📄 README_SCANNER.md
-> │      ├── 📄 index.html
-> │      ├── 📄 run_migrations.py
-> │    └── 📂 workers/
-> │      ├── 📄 _readme.md
-> │      └── 📂 _shared/
-> │        ├── 📄 index.html
-> │      └── 📂 embedder/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_embedder.ts
-> │      ├── 📄 index.html
-> │      └── 📂 ingestion/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_ingestion.ts
-> │      └── 📂 linter/
-> │        ├── 📄 index.html
-> │        ├── 📄 readme_generator.py
-> │      └── 📂 metadata_naming/
-> │        ├── 📄 index.html
-> │      └── 📂 orchestrator/
-> │        ├── 📄 OrchestratorState.ts
-> │        ├── 📄 index.html
-> │        └── 📂 migrations/
-> │          ├── 📄 0001_do.mjs
-> │          ├── 📄 index.html
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        ├── 📄 qios_06_workers_orchestrator.canvas
-> │        ├── 📄 worker_orchestrator.ts
-> │      └── 📂 self_heal/
-> │        ├── 📄 index.html
-> │        ├── 📄 worker_self_heal.ts
-> │      └── 📂 semantic_router/
-> │        ├── 📄 index.html
-> │  └── 📂 qinode/
-> │    ├── 📄 Cargo.lock
-> │    ├── 📄 Cargo.toml
-> │    └── 📂 QiNode_Genesis_Root/
-> │      ├── 📄 data.json
-> │      ├── 📄 index.md
-> │    ├── 📄 README.md
-> │    ├── 📄 package.json
-> │    └── 📂 qinode-engine/
-> │      ├── 📄 Cargo.lock
-> │      ├── 📄 Cargo.toml
-> │      └── 📂 QiNode_Genesis_Root/
-> │        ├── 📄 data.json
-> │        ├── 📄 index.md
-> │      ├── 📄 seed.rs
-> │      ├── 📄 spark.bat
-> │      └── 📂 src/
-> │        ├── 📄 main.rs
-> │    ├── 📄 seed.rs
-> │    ├── 📄 spark.bat
-> │    └── 📂 src/
-> │      └── 📂 dna/
-> │      ├── 📄 index.ts
-> │      └── 📂 lineage/
-> │      ├── 📄 main.rs
-> │      └── 📂 obsidian-engine/
-> │      └── 📂 parser/
-> │      └── 📂 reconstruction/
-> │      └── 📂 registry/
-> │      └── 📂 serializer/
-> │  └── 📂 qiobject/
-> │    └── 📂 contacts/
-> │      ├── 📄 index.html
-> │      └── 📂 qicontacts/
-> │        ├── 📄 README.md
-> │        └── 📂 files/
-> │          ├── 📄 index.html
-> │          ├── 📄 raw_export_DO_NOT_TOUCH.csv
-> │        ├── 📄 index.html
-> │    └── 📂 energy/
-> │      ├── 📄 QIOS_REPO_INFO.txt
-> │      ├── 📄 QIOS_SAFE_TO_DELETE.txt
-> │      ├── 📄 README.md
-> │      ├── 📄 README.md.merge_1763241628
-> │      ├── 📄 README.md.merge_1767756324
-> │      ├── 📄 activity.csv
-> │      ├── 📄 data.csv
-> │      ├── 📄 data.txt
-> │      └── 📂 home-energy-tracker-v2 (1)/
-> │        ├── 📄 README.md
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      ├── 📄 index.html.merge_1769331278
-> │      ├── 📄 insert_bills.sql
-> │      ├── 📄 insert_bills_detailed.sql
-> │      ├── 📄 update_bills_schema.sql
-> │    └── 📂 rides/
-> │      ├── 📄 README.md
-> │      ├── 📄 database.sql
-> │      └── 📂 exp_rides/
-> │        ├── 📄 _2.50.10.10.1_QiRides.md
-> │        ├── 📄 index.html
-> │        ├── 📄 tandero_dev_doc.md
-> │      ├── 📄 index.html
-> │      └── 📂 web/
-> │        ├── 📄 app.js
-> │        ├── 📄 index.html
-> │        ├── 📄 manifest.json
-> │      └── 📂 worker/
-> │        ├── 📄 index.html
-> │        └── 📂 src/
-> │          ├── 📄 index.html
-> │          ├── 📄 index.js
-> │        ├── 📄 wrangler.toml
-> │    ├── 📄 utils.ts
-> │  └── 📂 qitax-cli/
-> │    ├── 📄 __main__.py
-> │    ├── 📄 service.py
-> │    ├── 📄 storage.py
-> │  └── 📂 sdk/
-> │  └── 📂 spine/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      └── 📂 archive/
-> │        ├── 📄 checksum.ts
-> │        ├── 📄 lineage.ts
-> │        ├── 📄 manifest.ts
-> │        ├── 📄 register.ts
-> │      └── 📂 ids/
-> │        ├── 📄 prefix_registry.ts
-> │        ├── 📄 qis_decimal.ts
-> │        ├── 📄 short_code.ts
-> │      ├── 📄 index.ts
-> │      └── 📂 metadata/
-> │        ├── 📄 contracts.ts
-> │        ├── 📄 normalize.ts
-> │        ├── 📄 validate.ts
-> │  └── 📂 ui/
-> │    ├── 📄 README.md
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      └── 📂 components/
-> │        ├── 📄 button.tsx
-> │        ├── 📄 card.tsx
-> │        ├── 📄 dialog.tsx
-> │        ├── 📄 input.tsx
-> │        ├── 📄 status-badge.tsx
-> │        ├── 📄 table.tsx
-> │      ├── 📄 index.ts
-> │      └── 📂 styles/
-> │        ├── 📄 tokens.css
-> │      └── 📂 tokens/
-> │        └── 📂 assets/
-> │          ├── 📄 introvideo.mp4
-> │          └── 📂 src/
-> │            └── 📂 brand/
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 utils/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 dates.ts
-> │      ├── 📄 env.ts
-> │      ├── 📄 filesystem.ts
-> │      ├── 📄 hashing.ts
-> │      ├── 📄 index.ts
-> │      ├── 📄 logger.ts
-> ├── 📄 pnpm-lock.yaml
-> ├── 📄 pnpm-workspace.yaml
-> ├── 📄 postcss.config.js
-> └── 📂 python_core/
-> │  └── 📂 QiEvidence/
-> │    └── 📂 archive/
-> │    └── 📂 input/
-> │      └── 📂 documents/
-> │      └── 📂 other/
-> │      └── 📂 photos/
-> │      └── 📂 videos/
-> │    └── 📂 output/
-> │      └── 📂 entities/
-> │      └── 📂 events/
-> │        ├── 📄 EV-bac3953fab31_visual.json
-> │      └── 📂 reports/
-> │      └── 📂 reviews/
-> │      └── 📂 timelines/
-> │    └── 📂 working/
-> │      └── 📂 audio/
-> │        ├── 📄 EV-bac3953fab31.mp3
-> │      └── 📂 frames/
-> │        └── 📂 EV-bac3953fab31/
-> │          ├── 📄 frame_0001.jpg
-> │          ├── 📄 frame_0002.jpg
-> │          ├── 📄 frame_0003.jpg
-> │          ├── 📄 frame_0004.jpg
-> │          ├── 📄 frame_0005.jpg
-> │          ├── 📄 frame_0006.jpg
-> │          ├── 📄 frame_0007.jpg
-> │          ├── 📄 frame_0008.jpg
-> │          ├── 📄 frame_0009.jpg
-> │          ├── 📄 frame_0010.jpg
-> │          ├── 📄 frame_0011.jpg
-> │          ├── 📄 frame_0012.jpg
-> │          ├── 📄 frame_0013.jpg
-> │          ├── 📄 frame_0014.jpg
-> │          ├── 📄 frame_0015.jpg
-> │          ├── 📄 frame_0016.jpg
-> │          ├── 📄 frame_0017.jpg
-> │          ├── 📄 frame_0018.jpg
-> │          ├── 📄 frame_0019.jpg
-> │          ├── 📄 frame_0020.jpg
-> │          ├── 📄 frame_0021.jpg
-> │          ├── 📄 frame_0022.jpg
-> │          ├── 📄 frame_0023.jpg
-> │          ├── 📄 frame_0024.jpg
-> │          ├── 📄 frame_0025.jpg
-> │          ├── 📄 frame_0026.jpg
-> │          ├── 📄 frame_0027.jpg
-> │          ├── 📄 frame_0028.jpg
-> │          ├── 📄 frame_0029.jpg
-> │          ├── 📄 frame_0030.jpg
-> │          ├── 📄 frame_0031.jpg
-> │          ├── 📄 frame_0032.jpg
-> │          ├── 📄 frame_0033.jpg
-> │          ├── 📄 frame_0034.jpg
-> │          ├── 📄 frame_0035.jpg
-> │          ├── 📄 frame_0036.jpg
-> │          ├── 📄 frame_0037.jpg
-> │          ├── 📄 frame_0038.jpg
-> │          ├── 📄 frame_0039.jpg
-> │          ├── 📄 frame_0040.jpg
-> │          ├── 📄 frame_0041.jpg
-> │          ├── 📄 frame_0042.jpg
-> │          ├── 📄 frame_0043.jpg
-> │          ├── 📄 frame_0044.jpg
-> │          ├── 📄 frame_0045.jpg
-> │          ├── 📄 frame_0046.jpg
-> │          ├── 📄 frame_0047.jpg
-> │          ├── 📄 frame_0048.jpg
-> │          ├── 📄 frame_0049.jpg
-> │          ├── 📄 frame_0050.jpg
-> │          ├── 📄 frame_0051.jpg
-> │          ├── 📄 frame_0052.jpg
-> │          ├── 📄 frame_0053.jpg
-> │          ├── 📄 frame_0054.jpg
-> │          ├── 📄 frame_0055.jpg
-> │          ├── 📄 frame_0056.jpg
-> │          ├── 📄 frame_0057.jpg
-> │          ├── 📄 frame_0058.jpg
-> │          ├── 📄 frame_0059.jpg
-> │          ├── 📄 frame_0060.jpg
-> │      └── 📂 transcripts/
-> │        ├── 📄 EV-bac3953fab31.json
-> │  └── 📂 agents/
-> │  └── 📂 api/
-> │    ├── 📄 main.py
-> │    ├── 📄 routes_health.py
-> │    ├── 📄 routes_ingest.py
-> │    ├── 📄 routes_jobs.py
-> │    ├── 📄 routes_search.py
-> │  └── 📂 audio/
-> │    ├── 📄 README.md
-> │    └── 📂 bin/
-> │      ├── 📄 index.html
-> │    └── 📂 book_projects/
-> │      ├── 📄 index.html
-> │      └── 📂 paid_in_full/
-> │        └── 📂 audio_final/
-> │          ├── 📄 index.html
-> │        └── 📂 audio_raw/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 licenses/
-> │          ├── 📄 index.html
-> │        └── 📂 music_sfx/
-> │          ├── 📄 index.html
-> │        └── 📂 text/
-> │          ├── 📄 00_intro.txt
-> │          ├── 📄 01_part_1.txt
-> │          ├── 📄 02_part_2.txt
-> │          ├── 📄 03_part_3.txt
-> │          ├── 📄 04_part_4.txt
-> │          ├── 📄 05_part_5.txt
-> │          ├── 📄 06_epilogue.txt
-> │          ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 render.py
-> │    ├── 📄 setup_piper.ps1
-> │    ├── 📄 split_chapters.py
-> │    ├── 📄 voice_map.json
-> │  └── 📂 config/
-> │    ├── 📄 prefixes.yaml
-> │    ├── 📄 settings.yaml
-> │  └── 📂 core_tools/
-> │    ├── 📄 build.bat
-> │    ├── 📄 builder.py
-> │    └── 📂 core/
-> │      └── 📂 __pycache__/
-> │      ├── 📄 base_tool.py
-> │    ├── 📄 file_version_info.txt
-> │    ├── 📄 main_ui.py
-> │    └── 📂 notion_pipeline/
-> │      └── 📂 notion/
-> │        ├── 📄 README.md
-> │        ├── 📄 __init__.py
-> │        └── 📂 helpers/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 client.py
-> │          ├── 📄 database.py
-> │        ├── 📄 settings.py
-> │      ├── 📄 notion_pipeline.py
-> │      ├── 📄 requirements.txt
-> │    ├── 📄 requirements.txt
-> │    └── 📂 tools/
-> │      ├── 📄 __init__.py
-> │      └── 📂 __pycache__/
-> │      ├── 📄 blank_template.py
-> │      ├── 📄 dev_extractor.py
-> │      ├── 📄 dev_git_push_tool.py
-> │      ├── 📄 dev_rule_tester.py
-> │      ├── 📄 doc_pdf_splitter.py
-> │      ├── 📄 doc_tax_compiler.py
-> │      ├── 📄 git_push_tool.py
-> │      ├── 📄 media_video_converter.py
-> │      ├── 📄 router_archivist.py
-> │      ├── 📄 router_downloads.py
-> │      ├── 📄 router_vault.py
-> │      ├── 📄 sys_bloat_destroyer.py
-> │      ├── 📄 sys_file_cleaner.py
-> │      ├── 📄 sys_unlock_downloads.py
-> │      ├── 📄 text_extractor.py
-> │  └── 📂 document-ingestion/
-> │    ├── 📄 README.md
-> │    ├── 📄 app.py
-> │    ├── 📄 requirements.txt
-> │  └── 📂 document-processors/
-> │    ├── 📄 WEB_INTERFACE.md
-> │    ├── 📄 __init__.py
-> │    ├── 📄 cli.py
-> │    ├── 📄 config.py
-> │    ├── 📄 exceptions.py
-> │    ├── 📄 extractor.py
-> │    ├── 📄 index.html
-> │    └── 📂 pipeline/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 index.html
-> │      ├── 📄 layout_detector.py
-> │      ├── 📄 model_downloader.py
-> │      ├── 📄 nanonets_processor.py
-> │      ├── 📄 neural_document_processor.py
-> │      ├── 📄 ocr_service.py
-> │    └── 📂 processors/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 base.py
-> │      ├── 📄 cloud_processor.py
-> │      ├── 📄 docx_processor.py
-> │      ├── 📄 excel_processor.py
-> │      ├── 📄 gpu_processor.py
-> │      ├── 📄 html_processor.py
-> │      ├── 📄 image_processor.py
-> │      ├── 📄 index.html
-> │      ├── 📄 pdf_processor.py
-> │      ├── 📄 pptx_processor.py
-> │      ├── 📄 txt_processor.py
-> │      ├── 📄 url_processor.py
-> │    ├── 📄 result.py
-> │    └── 📂 services/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 auth_service.py
-> │      ├── 📄 index.html
-> │      ├── 📄 ollama_service.py
-> │    └── 📂 static/
-> │      ├── 📄 index.html
-> │      ├── 📄 logo_clean.png
-> │      ├── 📄 script.js
-> │      ├── 📄 styles.css
-> │    └── 📂 templates/
-> │      ├── 📄 index.html
-> │    └── 📂 utils/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 gpu_utils.py
-> │      ├── 📄 index.html
-> │    ├── 📄 web_app.py
-> │  └── 📂 file_pipeline/
-> │    ├── 📄 __init__.py
-> │    ├── 📄 api_client.py
-> │    ├── 📄 archive.py
-> │    ├── 📄 chunk.py
-> │    ├── 📄 classify.py
-> │    ├── 📄 config.py
-> │    ├── 📄 embed.py
-> │    ├── 📄 extract.py
-> │    ├── 📄 graph_project.py
-> │    ├── 📄 ingest.py
-> │    ├── 📄 models.py
-> │    ├── 📄 route.py
-> │    ├── 📄 state_machine.py
-> │    └── 📂 tests/
-> │    ├── 📄 watcher.py
-> │  └── 📂 gina-ai/
-> │    ├── 📄 index.html
-> │    ├── 📄 main.py
-> │    ├── 📄 requirements.txt
-> │  └── 📂 jobs/
-> │    ├── 📄 runner.py
-> │  └── 📂 local_services/
-> │    ├── 📄 QUICK_START.md
-> │    ├── 📄 README.md
-> │    ├── 📄 README_WORKER.md
-> │    ├── 📄 SETUP.md
-> │    ├── 📄 TESTING_ROADMAP.md
-> │    ├── 📄 api_dev_history.py
-> │    ├── 📄 api_gina.py
-> │    ├── 📄 api_ingest.py
-> │    ├── 📄 api_query.py
-> │    ├── 📄 check_status.py
-> │    ├── 📄 check_workers.py
-> │    └── 📂 crawler/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 vault_crawler.py
-> │    ├── 📄 db.py
-> │    ├── 📄 dev_error_helpers.py
-> │    ├── 📄 frontmatter_utils.py
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 gina_chat_contract.md
-> │    ├── 📄 gina_chat_contract.ts
-> │    ├── 📄 gina_personality_prompt.md
-> │    ├── 📄 gina_prompt.py
-> │    └── 📂 integrations/
-> │      ├── 📄 INTEGRATION_LAYER_SUMMARY.md
-> │      ├── 📄 README.md
-> │      ├── 📄 __init__.py
-> │      ├── 📄 base.py
-> │    ├── 📄 job_processor.py
-> │    ├── 📄 jobs.py
-> │    ├── 📄 memory.py
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_local_core.py
-> │    ├── 📄 quick_start.ps1
-> │    ├── 📄 rag.py
-> │    ├── 📄 requirements.txt
-> │    └── 📂 scripts/
-> │      ├── 📄 README.md
-> │      ├── 📄 api_dev_history.py
-> │      ├── 📄 api_gina.py
-> │      ├── 📄 api_ingest.py
-> │      ├── 📄 api_query.py
-> │      ├── 📄 check-auth.ps1
-> │      ├── 📄 check-secrets.ps1
-> │      ├── 📄 check_status.py
-> │      ├── 📄 check_workers.py
-> │      ├── 📄 db.py
-> │      ├── 📄 deploy-all.ps1
-> │      ├── 📄 deploy-critical.ps1
-> │      ├── 📄 dev_error_helpers.py
-> │      ├── 📄 frontmatter_utils.py
-> │      ├── 📄 fs_scanner.py
-> │      ├── 📄 gina_prompt.py
-> │      ├── 📄 job_processor.py
-> │      ├── 📄 jobs.py
-> │      ├── 📄 memory.py
-> │      ├── 📄 models.py
-> │      ├── 📄 qios_local_core.py
-> │      ├── 📄 rag.py
-> │      ├── 📄 set-critical-secrets.ps1
-> │      ├── 📄 set-secrets-from-env.ps1
-> │      ├── 📄 start_worker.ps1
-> │      ├── 📄 sync-secrets.ps1
-> │      ├── 📄 test-rag-system.ps1
-> │      ├── 📄 test-with-curl.ps1
-> │      ├── 📄 test_debug_ingest.ps1
-> │      ├── 📄 test_ingest.py
-> │      ├── 📄 test_queue_admin.ps1
-> │      ├── 📄 text_extractor.py
-> │      ├── 📄 tools.py
-> │      ├── 📄 verify-and-test.ps1
-> │      ├── 📄 worker.py
-> │    ├── 📄 start_worker.ps1
-> │    ├── 📄 test_debug_ingest.ps1
-> │    ├── 📄 test_ingest.py
-> │    ├── 📄 test_queue_admin.ps1
-> │    └── 📂 tests/
-> │      ├── 📄 README.md
-> │      ├── 📄 run_tests.sh
-> │      ├── 📄 test_db_sanity.sql
-> │      ├── 📄 test_manual_failures.md
-> │      ├── 📄 test_sanity_checks.py
-> │    ├── 📄 text_extractor.py
-> │    └── 📂 tools/
-> │    ├── 📄 tools.py
-> │      ├── 📄 append_to_vault_note.py
-> │      ├── 📄 calendar_create_event.py
-> │      ├── 📄 calendar_get_upcoming.py
-> │      ├── 📄 check_worker_status.py
-> │      ├── 📄 create_vault_note.py
-> │      ├── 📄 crm_create_contact.py
-> │      ├── 📄 crm_create_task.py
-> │      ├── 📄 crm_list_recent_contacts.py
-> │      ├── 📄 crm_search_person.py
-> │      ├── 📄 list_realm_files.py
-> │      ├── 📄 mail_get_recent.py
-> │      ├── 📄 mail_send.py
-> │      ├── 📄 run_agent_command.py
-> │      ├── 📄 search_processed_documents.py
-> │      ├── 📄 sms_send.py
-> │      ├── 📄 start_agent_service.py
-> │      ├── 📄 start_worker.py
-> │      ├── 📄 web_get.py
-> │      ├── 📄 web_search.py
-> │    ├── 📄 tools_manifest.yaml
-> │    ├── 📄 worker.py
-> │  └── 📂 qiarchive/
-> │    └── 📂 api/
-> │      └── 📂 __pycache__/
-> │      ├── 📄 main.py
-> │    └── 📂 extract/
-> │    └── 📂 manifests/
-> │    └── 📂 ocr/
-> │    └── 📂 rename/
-> │    └── 📂 repair/
-> │      ├── 📄 repair.py
-> │    └── 📂 scan/
-> │      ├── 📄 scan.py
-> │  └── 📂 qid-cli/
-> │    ├── 📄 README.md
-> │    └── 📂 _assets/
-> │      └── 📂 _generated_icons/
-> │        ├── 📄 index.html
-> │        ├── 📄 qid_128.png
-> │        ├── 📄 qid_16.png
-> │        ├── 📄 qid_24.png
-> │        ├── 📄 qid_256.png
-> │        ├── 📄 qid_32.png
-> │        ├── 📄 qid_48.png
-> │        ├── 📄 qid_64.png
-> │      ├── 📄 index.html
-> │      ├── 📄 make_ico.py
-> │      ├── 📄 qid-3d.jpg
-> │      ├── 📄 qid-barcode.jpg
-> │      ├── 📄 qid-complex.jpg
-> │      ├── 📄 qid-complex.mp4
-> │      ├── 📄 qid-gradient.jpg
-> │      ├── 📄 qid-inverted.svg
-> │      ├── 📄 qid-led.jpg
-> │      ├── 📄 qid-qr-code.jpg
-> │      ├── 📄 qid.ico
-> │      ├── 📄 qid.ico.txt
-> │      ├── 📄 qid.jpg
-> │      ├── 📄 qid.png
-> │    └── 📂 _backups/
-> │      └── 📂 daily/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 rolling/
-> │        ├── 📄 index.html
-> │        ├── 📄 state.prev.json
-> │    └── 📂 _logs/
-> │      ├── 📄 index.html
-> │      ├── 📄 qid_activity.jsonl
-> │    ├── 📄 _qid_registry.json
-> │    ├── 📄 _qid_state.json
-> │    └── 📂 _wal/
-> │      ├── 📄 index.html
-> │      ├── 📄 qid_wal.jsonl
-> │    ├── 📄 build_windows.ps1
-> │    └── 📂 desktop/
-> │      ├── 📄 create_shortcut.ps1
-> │      ├── 📄 create_shortcut.vbs
-> │      ├── 📄 index.html
-> │      ├── 📄 qid_launcher.bat
-> │      ├── 📄 qid_ui.bat
-> │    └── 📂 docs/
-> │      ├── 📄 DEV_DOC.md
-> │      ├── 📄 gid_rules.md
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │    ├── 📄 pyproject.toml
-> │    ├── 📄 qid.py
-> │    ├── 📄 requirements.txt
-> │  └── 📂 qien/
-> │    └── 📂 __pycache__/
-> │    ├── 📄 audio_util.py
-> │    ├── 📄 main.py
-> │    ├── 📄 requirements.txt
-> │    ├── 📄 run_test.py
-> │    ├── 📄 transcribe_util.py
-> │    ├── 📄 visual_util.py
-> │  └── 📂 rag_env/
-> │  ├── 📄 requirements.txt
-> │  └── 📂 services/
-> │    └── 📂 ai-api/
-> │      ├── 📄 README.md
-> │      └── 📂 app/
-> │        ├── 📄 __init__.py
-> │        ├── 📄 main.py
-> │        └── 📂 routes/
-> │          ├── 📄 chat.py
-> │          ├── 📄 memory.py
-> │          ├── 📄 retrieval.py
-> │        └── 📂 services/
-> │          ├── 📄 embedding_service.py
-> │          ├── 📄 memory_service.py
-> │          ├── 📄 retrieval_service.py
-> │      ├── 📄 pyproject.toml
-> │      ├── 📄 requirements.txt
-> │    └── 📂 app-api/
-> │      ├── 📄 README.md
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │        └── 📂 lib/
-> │          ├── 📄 db.ts
-> │          ├── 📄 env.ts
-> │          ├── 📄 logger.ts
-> │        └── 📂 middleware/
-> │          ├── 📄 audit.ts
-> │          ├── 📄 auth.ts
-> │          ├── 📄 tenant.ts
-> │        └── 📂 modules/
-> │          └── 📂 archive/
-> │            ├── 📄 handlers.ts
-> │            ├── 📄 service.ts
-> │          └── 📂 devices/
-> │            ├── 📄 handlers.ts
-> │            ├── 📄 service.ts
-> │          └── 📂 tenants/
-> │            ├── 📄 handlers.ts
-> │            ├── 📄 service.ts
-> │        └── 📂 routes/
-> │          ├── 📄 admin.ts
-> │          ├── 📄 archive.ts
-> │          ├── 📄 auth.ts
-> │          ├── 📄 cases.ts
-> │          ├── 📄 devices.ts
-> │          ├── 📄 health.ts
-> │          ├── 📄 knowledge.ts
-> │          ├── 📄 modules.ts
-> │          ├── 📄 tenants.ts
-> │          ├── 📄 vault.ts
-> │        ├── 📄 server.ts
-> │      ├── 📄 tsconfig.json
-> │    ├── 📄 fs_service.py
-> │    └── 📂 local-agent/
-> │      ├── 📄 README.md
-> │      ├── 📄 agent.py
-> │      └── 📂 app/
-> │        ├── 📄 __init__.py
-> │        └── 📂 api/
-> │          ├── 📄 __init__.py
-> │          ├── 📄 health.py
-> │          ├── 📄 ingest.py
-> │          ├── 📄 jobs.py
-> │          ├── 📄 scan.py
-> │          ├── 📄 status.py
-> │          ├── 📄 update.py
-> │          ├── 📄 watchers.py
-> │        └── 📂 core/
-> │          ├── 📄 auth.py
-> │          ├── 📄 config.py
-> │          ├── 📄 heartbeat.py
-> │          ├── 📄 logging.py
-> │          ├── 📄 paths.py
-> │          ├── 📄 queue.py
-> │        └── 📂 models/
-> │          ├── 📄 assignment.py
-> │          ├── 📄 device.py
-> │          ├── 📄 heartbeat.py
-> │          ├── 📄 job.py
-> │        └── 📂 runtime/
-> │          ├── 📄 bootstrap.py
-> │          ├── 📄 dispatcher.py
-> │          ├── 📄 dropzone.py
-> │          ├── 📄 supervisor.py
-> │          ├── 📄 watchers.py
-> │        └── 📂 workers/
-> │          ├── 📄 backup_worker.py
-> │          ├── 📄 chunk_worker.py
-> │          ├── 📄 embed_worker.py
-> │          ├── 📄 extract_worker.py
-> │          ├── 📄 ingest_worker.py
-> │          ├── 📄 ocr_worker.py
-> │          ├── 📄 repair_worker.py
-> │          ├── 📄 sync_worker.py
-> │      ├── 📄 main.py
-> │      ├── 📄 pyproject.toml
-> │      ├── 📄 requirements.txt
-> │      └── 📂 tests/
-> │        ├── 📄 test_assignments.py
-> │        ├── 📄 test_dispatcher.py
-> │        ├── 📄 test_health.py
-> │        ├── 📄 test_watchers.py
-> │    ├── 📄 ocr_service.py
-> │    ├── 📄 ollama_client.py
-> │    └── 📂 worker-orchestrator/
-> │      ├── 📄 README.md
-> │      └── 📂 app/
-> │        ├── 📄 __init__.py
-> │        └── 📂 events/
-> │          ├── 📄 consumers.py
-> │          ├── 📄 publishers.py
-> │        └── 📂 jobs/
-> │          ├── 📄 dispatch.py
-> │          ├── 📄 node_updates.py
-> │          ├── 📄 repair.py
-> │          ├── 📄 retries.py
-> │        └── 📂 queue/
-> │          ├── 📄 redis_queue.py
-> │          ├── 📄 scheduler.py
-> │      ├── 📄 main.py
-> │      ├── 📄 pyproject.toml
-> │      ├── 📄 requirements.txt
-> └── 📂 python_local/
-> ├── 📄 qilabs_blueprint_full_tree.json
-> ├── 📄 reorg_plan.sample.json
-> ├── 📄 repo.rules.json
-> └── 📂 scripts/
-> │  ├── 📄 README.md
-> │  └── 📂 ai/
-> │    └── 📂 agents/
-> │      ├── 📄 agent_models.py
-> │      ├── 📄 agent_qios.py
-> │    └── 📂 memory/
-> │      ├── 📄 memory_store.py
-> │    └── 📂 prompts/
-> │      ├── 📄 prompt_gina.py
-> │    └── 📂 rag/
-> │      ├── 📄 rag_core.py
-> │  └── 📂 archive/
-> │    ├── 📄 rebuild-manifest.py
-> │    ├── 📄 reconcile-lineage.py
-> │    ├── 📄 register-file.py
-> │    ├── 📄 retry-failed.py
-> │  └── 📂 automate/
-> │    └── 📂 core/
-> │      ├── 📄 setup_antigravity.py
-> │    └── 📂 health/
-> │      ├── 📄 health_check_status.py
-> │      ├── 📄 health_check_worker_status.py
-> │      ├── 📄 health_check_workers.py
-> │    └── 📂 jobs/
-> │      ├── 📄 job_runner.py
-> │    └── 📂 movers/
-> │      ├── 📄 move_chatgpt_audio_registry.py
-> │    └── 📂 runners/
-> │      ├── 📄 run_agent_command.py
-> │      ├── 📄 run_agent_service.py
-> │      ├── 📄 run_worker.py
-> │    └── 📂 schedulers/
-> │      ├── 📄 sched_install.ps1
-> │      ├── 📄 sched_queue_load.py
-> │      ├── 📄 sched_windows_task.xml
-> │  └── 📂 core/
-> │    └── 📂 auth/
-> │      ├── 📄 auth_check.ps1
-> │      ├── 📄 auth_secrets_check.ps1
-> │    ├── 📄 check_ffmpeg.py
-> │    ├── 📄 core_base.py
-> │    ├── 📄 core_qi_codex.py
-> │    ├── 📄 core_qios_local.py
-> │    └── 📂 docs/
-> │      ├── 📄 usage.md
-> │    ├── 📄 ffmpeg_utils.py
-> │    └── 📂 modules/
-> │      ├── 📄 module_app_create.py
-> │  └── 📂 db/
-> │    ├── 📄 db-migrate.ps1
-> │    ├── 📄 db-reset.ps1
-> │    ├── 📄 db-seed.ps1
-> │    ├── 📄 db-start.ps1
-> │    ├── 📄 db-stop.ps1
-> │  └── 📂 deploy/
-> │    └── 📂 scripts/
-> │      ├── 📄 deploy_all.ps1
-> │      ├── 📄 deploy_critical.ps1
-> │      ├── 📄 deploy_git_autopush.ahk
-> │    └── 📂 sync/
-> │      ├── 📄 README.md
-> │      ├── 📄 sync_dev_gdrive.py
-> │      ├── 📄 sync_gdrive.ps1
-> │      ├── 📄 sync_git_push.py
-> │      ├── 📄 sync_index_content.ts
-> │      ├── 📄 sync_lfs_disable.ps1
-> │      ├── 📄 sync_lfs_enable.ps1
-> │    └── 📂 workers/
-> │      ├── 📄 worker_deploy.ps1
-> │      ├── 📄 worker_deploy_all.ps1
-> │      ├── 📄 worker_urls_get.ps1
-> │  └── 📂 dev/
-> │    ├── 📄 check-env.ps1
-> │    ├── 📄 check-env.sh
-> │    ├── 📄 dev.ps1
-> │    ├── 📄 dev.sh
-> │    ├── 📄 start-ai-api.ps1
-> │    ├── 📄 start-app-api.ps1
-> │    ├── 📄 start-local-agent.ps1
-> │    ├── 📄 start-local-agent.sh
-> │    ├── 📄 start-workers.ps1
-> │  └── 📂 docs/
-> │    ├── 📄 backup_restore.md
-> │    ├── 📄 device_enrollment.md
-> │    ├── 📄 docs-build.ps1
-> │    ├── 📄 docs-serve.ps1
-> │    ├── 📄 docs-validate.ps1
-> │    ├── 📄 panic_recovery.md
-> │    ├── 📄 workstation_setup.md
-> │  └── 📂 fleet/
-> │    ├── 📄 assign-watch-path.ts
-> │    ├── 📄 check-heartbeats.ts
-> │    ├── 📄 dispatch-node-job.ts
-> │    ├── 📄 issue-enrollment-token.ts
-> │    ├── 📄 revoke-device.ts
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 index/
-> │    └── 📂 builders/
-> │      ├── 📄 index_build.ps1
-> │      ├── 📄 index_immigration_example.py
-> │      ├── 📄 index_timeline_713_build.js
-> │      ├── 📄 index_timeline_build.js
-> │      ├── 📄 index_timeline_json_build.js
-> │    └── 📂 directory/
-> │      └── 📂 compile/
-> │        ├── 📄 dir_code_compile_review.py
-> │        ├── 📄 dir_timeline_load.js
-> │        ├── 📄 dir_tree_compile.py
-> │      └── 📂 create/
-> │        ├── 📄 dir_app_create.py
-> │        ├── 📄 dir_canvas_create.py
-> │        ├── 📄 dir_canvas_directory_create.py
-> │        ├── 📄 dir_cloudflare_md_create.py
-> │        ├── 📄 dir_node_new.bat
-> │        ├── 📄 dir_registry_trash_summarize.py
-> │        ├── 📄 dir_stubs_create.py
-> │      └── 📂 flatten/
-> │        ├── 📄 dir_flatten.py
-> │        ├── 📄 dir_folders_ultra_clean.py
-> │      └── 📂 indices/
-> │        ├── 📄 dir_indexes_generate.py
-> │      └── 📂 maps/
-> │        ├── 📄 dir_map.py
-> │        ├── 📄 dir_slugs_map.py
-> │    └── 📂 registry/
-> │      ├── 📄 reg_files_build.py
-> │      ├── 📄 reg_files_generate.ps1
-> │  └── 📂 ingest/
-> │    └── 📂 audio/
-> │      ├── 📄 audio_transcribe.py
-> │    └── 📂 files/
-> │      ├── 📄 file_large_move.ps1
-> │      ├── 📄 file_md_body_move.py
-> │      ├── 📄 file_media_tree_merge.bat
-> │      ├── 📄 file_realm_list.py
-> │      ├── 📄 file_scan_fs.py
-> │    └── 📂 inbox/
-> │      ├── 📄 inbox_audit.ts
-> │      ├── 📄 inbox_downloads_rename.py
-> │      ├── 📄 inbox_flatten.ps1
-> │      ├── 📄 inbox_merge_plan.ts
-> │      ├── 📄 inbox_names_fix.ts
-> │      ├── 📄 inbox_run.ts
-> │    └── 📂 video/
-> │      ├── 📄 video_media_tree_merge.py
-> │      ├── 📄 video_mkvs_merge.py
-> │  ├── 📄 master_pipeline.py
-> │  ├── 📄 orchestrator.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  └── 📂 process/
-> │    └── 📂 clean/
-> │      ├── 📄 clean_analysis.ps1
-> │      ├── 📄 clean_app_roots.py
-> │      ├── 📄 clean_comprehensive.ps1
-> │      ├── 📄 clean_continue.ps1
-> │      ├── 📄 clean_dedup_detect.ts
-> │      ├── 📄 clean_duplicates_find.ps1
-> │      ├── 📄 clean_duplicates_find.py
-> │      ├── 📄 clean_duplicates_move.ps1
-> │      ├── 📄 clean_housekeeper_run.py
-> │      ├── 📄 clean_inbox_organize.py
-> │      ├── 📄 clean_intake_trash.py
-> │      ├── 📄 clean_qi_prefixes.py
-> │      ├── 📄 clean_storage_bloat.py
-> │      ├── 📄 clean_stubs_detect.py
-> │      ├── 📄 clean_violations.py
-> │    └── 📂 convert/
-> │      ├── 📄 convert_code_extract.py
-> │      ├── 📄 convert_errors_to_markdown.py
-> │      └── 📂 csv/
-> │        ├── 📄 README.md
-> │        ├── 📄 USAGE.md
-> │        ├── 📄 csv_convert.js
-> │        ├── 📄 csv_convert.ps1
-> │        ├── 📄 csv_md_check.py
-> │        ├── 📄 csv_to_md.py
-> │      └── 📂 folders/
-> │        ├── 📄 folder_flatten.py
-> │        ├── 📄 folder_flatten_finish.ps1
-> │        ├── 📄 folder_flatten_organize.ps1
-> │      └── 📂 json/
-> │        ├── 📄 json_kb_generate.py
-> │      └── 📂 text/
-> │        ├── 📄 text_extract.py
-> │      └── 📂 video/
-> │        ├── 📄 video_mkv_enhance.py
-> │      └── 📂 zip/
-> │        ├── 📄 zip_downloads_extract.py
-> │    └── 📂 docs/
-> │      ├── 📄 _Convert_csv_to_md.md
-> │    └── 📂 normalize/
-> │      ├── 📄 norm_files_sort.py
-> │      ├── 📄 norm_inbox.ts
-> │      ├── 📄 norm_spaces_fix.py
-> │    └── 📂 pdf/
-> │      ├── 📄 pdf_inbox_process.ts
-> │      ├── 📄 pdf_process.ts
-> │      ├── 📄 pdf_validate.ts
-> │    └── 📂 validate/
-> │      ├── 📄 valid_cloud.ps1
-> │      ├── 📄 valid_compliance_check.py
-> │      ├── 📄 valid_csv_md_compare.py
-> │      ├── 📄 valid_csv_search.py
-> │      ├── 📄 valid_db_examine.py
-> │      ├── 📄 valid_drive_compare.py
-> │      ├── 📄 valid_file_error_context.py
-> │      ├── 📄 valid_housekeeping.ps1
-> │      ├── 📄 valid_linter.py
-> │      ├── 📄 valid_linter_run.py
-> │      ├── 📄 valid_local.ps1
-> │      ├── 📄 valid_md_check.py
-> │  └── 📂 processing/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │  └── 📂 repo/
-> │    ├── 📄 enforce-structure.py
-> │    ├── 📄 lint-tree.py
-> │    ├── 📄 print-tree.py
-> │    ├── 📄 validate-paths.py
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  ├── 📄 safe_reorg.py
-> │  └── 📂 scripts/
-> │    ├── 📄 backup_qidata.ps1
-> │    ├── 📄 repair_repo.ps1
-> │    ├── 📄 repair_repo.sh
-> │    ├── 📄 restore_qidata.ps1
-> │    ├── 📄 tree_snapshot.ps1
-> │    ├── 📄 tree_snapshot.sh
-> │    ├── 📄 verify_env.ps1
-> │    ├── 📄 verify_env.sh
-> │  └── 📂 services/
-> │    └── 📂 calendar/
-> │      ├── 📄 calendar_create_event.py
-> │      ├── 📄 calendar_get_upcoming.py
-> │    └── 📂 crm/
-> │      ├── 📄 crm_create_contact.py
-> │      ├── 📄 crm_create_task.py
-> │      ├── 📄 crm_list_recent_contacts.py
-> │      ├── 📄 crm_search_person.py
-> │    └── 📂 mail/
-> │      ├── 📄 mail_get_recent.py
-> │      ├── 📄 mail_send.py
-> │    └── 📂 sms/
-> │      ├── 📄 sms_send.py
-> │    └── 📂 vault/
-> │      ├── 📄 vault_append_note.py
-> │      ├── 📄 vault_create_note.py
-> │    └── 📂 web/
-> │      ├── 📄 web_get.py
-> │      ├── 📄 web_search.py
-> │  └── 📂 steps/
-> │    ├── 📄 step1_combine.py
-> │    ├── 📄 step1_fast_combine.py
-> │    ├── 📄 step2_convert.py
-> │    ├── 📄 step2_flip.py
-> │    ├── 📄 step3_enhance.py
-> │    ├── 📄 step3_filter.py
-> │  └── 📂 sync/
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 windows_task_scheduler.xml
-> │  └── 📂 tests/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  └── 📂 tools/
-> │    ├── 📄 ai_video_filter.py
-> │    ├── 📄 batch_processor.py
-> │    ├── 📄 check_processed.py
-> │    └── 📂 debug/
-> │      ├── 📄 debug_maps.py
-> │    ├── 📄 enforce_fm.py
-> │    ├── 📄 find_failed.py
-> │    ├── 📄 flatten_enhance.py
-> │    ├── 📄 flatten_trade.py
-> │    └── 📂 frontmatter/
-> │      ├── 📄 frontmatter_add.py
-> │      ├── 📄 frontmatter_enforce.py
-> │      ├── 📄 frontmatter_utils.py
-> │      ├── 📄 frontmatter_validate.ts
-> │    ├── 📄 local_processor.py
-> │    └── 📂 maps/
-> │      ├── 📄 map_3d_mindmap_run.bat
-> │      ├── 📄 map_3d_real_run.bat
-> │      ├── 📄 map_3d_simple_run.bat
-> │    └── 📂 misc/
-> │      ├── 📄 scripts_rename_manifest.json
-> │      ├── 📄 scripts_rename_pass1.py
-> │    ├── 📄 pipeline_processor.py
-> │    └── 📂 search/
-> │      ├── 📄 search_processed_docs.py
-> │    ├── 📄 tools_manifest.json
-> │    ├── 📄 unblock_all.bat
-> │  ├── 📄 update_imports.py
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 sites/
-> │  └── 📂 qially-me/
-> │    ├── 📄 astro.config.mjs
-> │    ├── 📄 biome.json
-> │    ├── 📄 components.json
-> │    ├── 📄 package-lock.json
-> │    ├── 📄 package.json
-> │    ├── 📄 pnpm-lock.yaml
-> │    └── 📂 public/
-> │      ├── 📄 activity.svg
-> │      └── 📂 cards/
-> │        ├── 📄 fresh.png
-> │        ├── 📄 fresh.webp
-> │        ├── 📄 glass.png
-> │        ├── 📄 glass.webp
-> │        ├── 📄 mermaid.svg
-> │      ├── 📄 og.webp
-> │      ├── 📄 placeholder.webp
-> │      ├── 📄 rss.svg
-> │    └── 📂 scripts/
-> │      ├── 📄 build-pagefind-index.ts
-> │    └── 📂 site_QSaysIt_v1/
-> │      └── 📂 posts/
-> │        └── 📂 2026/
-> │          └── 📂 2026-02-19_post-title/
-> │            └── 📂 assets/
-> │              ├── 📄 brief.m4a
-> │              ├── 📄 critique.m4a
-> │              ├── 📄 debate.m4a
-> │              ├── 📄 deepdive.m4a
-> │              ├── 📄 explainer.mp4
-> │              ├── 📄 hero.jpg
-> │              ├── 📄 infographic.jpg
-> │            ├── 📄 index.md
-> │        ├── 📄 index.md
-> │      └── 📂 qsaysit_blog/
-> │        └── 📂 templates/
-> │          └── 📂 2026-02-19_post-title/
-> │            └── 📂 assets/
-> │              ├── 📄 brief.m4a
-> │              ├── 📄 critique.m4a
-> │              ├── 📄 debate.m4a
-> │              ├── 📄 deepdive.m4a
-> │              ├── 📄 explainer.mp4
-> │              ├── 📄 hero.jpg
-> │              ├── 📄 infographic.jpg
-> │            ├── 📄 index.md
-> │          ├── 📄 post_template.md
-> │      └── 📂 templates/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │        ├── 📄 post_template.md
-> │    └── 📂 src/
-> │      └── 📂 assets/
-> │        ├── 📄 creations.json
-> │        └── 📂 images/
-> │      └── 📂 components/
-> │        ├── 📄 BaseHead.astro
-> │        ├── 📄 BetaBadge.astro
-> │        ├── 📄 FormattedDate.astro
-> │        ├── 📄 HeaderLink.astro
-> │        ├── 📄 OptimizedImage.astro
-> │        ├── 📄 ProductCard.tsx
-> │        ├── 📄 ProductSection.astro
-> │        ├── 📄 ShareButtons.astro
-> │        ├── 📄 TagFilter.astro
-> │        └── 📂 blog/
-> │          ├── 📄 BlogCard.astro
-> │          ├── 📄 BlogsPage.astro
-> │        ├── 📄 copy-button.tsx
-> │        ├── 📄 image-viewer.tsx
-> │        └── 📂 knowledge-card/
-> │          ├── 📄 CardActions.astro
-> │          ├── 📄 CardBack.astro
-> │          ├── 📄 CardContainer.astro
-> │          ├── 📄 CardCover.astro
-> │          ├── 📄 CardFront.astro
-> │          ├── 📄 CardLink.astro
-> │          ├── 📄 CardsPage.astro
-> │          ├── 📄 KnowledgeCard.astro
-> │          ├── 📄 LinksModal.astro
-> │          ├── 📄 StructureDisplay.astro
-> │          ├── 📄 types.ts
-> │        └── 📂 landing-page/
-> │          ├── 📄 HeroSection.astro
-> │          ├── 📄 LatestSection.astro
-> │          ├── 📄 ScrollingTags.astro
-> │        └── 📂 navigation/
-> │          ├── 📄 ContentNavigation.astro
-> │        └── 📂 slide/
-> │          ├── 📄 SlideCard.astro
-> │          ├── 📄 SlidesPage.astro
-> │          ├── 📄 slide-viewer.tsx
-> │        └── 📂 ui/
-> │          ├── 📄 dialog.tsx
-> │          ├── 📄 sonner.tsx
-> │      ├── 📄 consts.ts
-> │      └── 📂 content/
-> │      ├── 📄 content.config.ts
-> │        └── 📂 blogs/
-> │          └── 📂 2025-08/
-> │            ├── 📄 groq-code-cli-internal.md
-> │          └── 📂 2025-09/
-> │            ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │            └── 📂 imgs/
-> │              ├── 📄 slides-01.png
-> │              ├── 📄 slides-02.png
-> │        └── 📂 cards/
-> │          └── 📂 2025-09/
-> │            ├── 📄 how-openai-uses-codex.md
-> │        └── 📂 doodles/
-> │          └── 📂 2025-09/
-> │            ├── 📄 monakit-released.md
-> │          └── 📂 2025-10/
-> │            └── 📂 imgs/
-> │              ├── 📄 doodle-list.png
-> │              ├── 📄 doodle.png
-> │            ├── 📄 mona-update-doodle-and-more.md
-> │        └── 📂 slides/
-> │          └── 📂 2025-09/
-> │            ├── 📄 agents-md-101.md
-> │            └── 📂 imgs/
-> │              ├── 📄 agents-md-ecosystem.png
-> │          └── 📂 2025-12/
-> │            ├── 📄 quadratic-101.md
-> │      ├── 📄 env.ts
-> │      └── 📂 layouts/
-> │        ├── 📄 ContentIndexLayout.astro
-> │        ├── 📄 MainLayout.astro
-> │      └── 📂 lib/
-> │        ├── 📄 navigation.ts
-> │        ├── 📄 pagination.ts
-> │        ├── 📄 utils.ts
-> │      └── 📂 pages/
-> │        └── 📂 blogs/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        └── 📂 cards/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        ├── 📄 creations.astro
-> │        └── 📂 doodles/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │        ├── 📄 index.astro
-> │        ├── 📄 og-enhanced.ts
-> │        ├── 📄 rss.xml.ts
-> │        ├── 📄 search.astro
-> │        └── 📂 slides/
-> │          ├── 📄 [...slug].astro
-> │          ├── 📄 index.astro
-> │      └── 📂 schemas/
-> │        ├── 📄 blog.ts
-> │        ├── 📄 card.ts
-> │        ├── 📄 doodle.ts
-> │        ├── 📄 slide.ts
-> │      └── 📂 styles/
-> │        ├── 📄 article.css
-> │        ├── 📄 card.css
-> │        ├── 📄 global.css
-> │        ├── 📄 scrolling-tags.css
-> │      └── 📂 themes/
-> │        ├── 📄 knowledge-card-themes.ts
-> │        ├── 📄 slide-card-themes.ts
-> │      └── 📂 types/
-> │        ├── 📄 product.ts
-> │        ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 qially-web/
-> │    ├── 📄 404.html
-> │    ├── 📄 LICENSE
-> │    ├── 📄 README.md
-> │    ├── 📄 _redirects
-> │    └── 📂 assets/
-> │      └── 📂 css/
-> │        ├── 📄 styles.css
-> │      └── 📂 files/
-> │        ├── 📄 balance-sheet-template.xlsx
-> │        ├── 📄 emailsignature.html
-> │        └── 📂 forms/
-> │          └── 📂 uscis/
-> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
-> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
-> │            ├── 📄 Form-I-485.pdf
-> │            ├── 📄 Form-I-693.pdf
-> │        ├── 📄 income-statement-template.xlsx
-> │        ├── 📄 index.md
-> │        ├── 📄 payroll-calendar-2026.pdf
-> │        ├── 📄 resume.pdf
-> │        ├── 📄 tax-prep-checklist.pdf
-> │      └── 📂 imgs/
-> │        ├── 📄 allegaracasa.jpg
-> │        ├── 📄 astrotext.png
-> │        ├── 📄 back-master-small.jpg
-> │        ├── 📄 business-performance-wins.png
-> │        └── 📂 business_tools/
-> │          ├── 📄 balance_sheet.svg
-> │          ├── 📄 calendar.svg
-> │          ├── 📄 capital.svg
-> │          ├── 📄 checklist.svg
-> │          ├── 📄 funding.svg
-> │          ├── 📄 income.svg
-> │          ├── 📄 inventory.svg
-> │          ├── 📄 invoice.svg
-> │          ├── 📄 payroll.svg
-> │          ├── 📄 sku.svg
-> │        ├── 📄 cassie-boca-x-tbVqkfQCU-unsplash.jpg
-> │        ├── 📄 cover.jpg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.png
-> │        ├── 📄 favicon.webp
-> │        ├── 📄 jesse-gardner-EqdpXeemf58-unsplash.jpg
-> │        ├── 📄 jf-martin-Ofs3LjEUcrk-unsplash.jpg
-> │        ├── 📄 josh-rose-trYl7JYATH0-unsplash.jpg
-> │        ├── 📄 llegaracasa.jpg
-> │        ├── 📄 logo.png
-> │        ├── 📄 profile.jpg
-> │        ├── 📄 profile.png
-> │        ├── 📄 tersius-van-rhyn-xcQWMPm9fG8-unsplash.jpg
-> │      └── 📂 js/
-> │        ├── 📄 i18n.js
-> │        ├── 📄 main.js
-> │      └── 📂 vids/
-> │        ├── 📄 video-logo.mp4
-> │    └── 📂 cody/
-> │      ├── 📄 index.html
-> │    ├── 📄 contact.json
-> │    ├── 📄 footer.html
-> │    └── 📂 functions/
-> │      ├── 📄 [[path]].js
-> │    ├── 📄 header.html
-> │    ├── 📄 humans.txt
-> │    ├── 📄 index.html
-> │    └── 📂 js/
-> │      ├── 📄 main.js
-> │    └── 📂 kb/
-> │      └── 📂 accounting-cleanup/
-> │        ├── 📄 index.html
-> │      └── 📂 getting-started/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 irs-notices/
-> │        ├── 📄 index.html
-> │      └── 📂 tax-resolution/
-> │        ├── 📄 index.html
-> │    └── 📂 legal/
-> │      └── 📂 msa/
-> │        ├── 📄 index.html
-> │      └── 📂 privacy/
-> │        ├── 📄 index.html
-> │      └── 📂 terms/
-> │        ├── 📄 index.html
-> │    ├── 📄 main.js
-> │    ├── 📄 manifest.webmanifest
-> │    └── 📂 modules/
-> │      └── 📂 hr-ops/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 it-ai/
-> │        ├── 📄 index.html
-> │      └── 📂 qisuite/
-> │        ├── 📄 index.html
-> │      └── 📂 taxes/
-> │        ├── 📄 index.html
-> │        └── 📂 tax-prep-2025/
-> │          ├── 📄 FormsQRCode.png
-> │          ├── 📄 bookingQRCode.png
-> │          └── 📂 email-templates/
-> │          └── 📂 forms/
-> │          ├── 📄 index.html
-> │          └── 📂 next-steps/
-> │            ├── 📄 index.html
-> │          ├── 📄 prompts.md
-> │          ├── 📄 tax-prep-2025-intake.html
-> │          ├── 📄 taxprepqially.jpg
-> │        └── 📂 year-end-process/
-> │          ├── 📄 index.html
-> │    ├── 📄 orchestrate_clarity.py
-> │    ├── 📄 package.json
-> │    └── 📂 pages/
-> │      └── 📂 budgets/
-> │        ├── 📄 index.html
-> │      └── 📂 business_tools/
-> │        ├── 📄 index.html
-> │      └── 📂 chat/
-> │        ├── 📄 index.html
-> │        ├── 📄 sales-iq-landing-page-qr-code.png
-> │      └── 📂 compliance/
-> │        ├── 📄 data-inventory.html
-> │        ├── 📄 incident-response.html
-> │        ├── 📄 index.html
-> │        └── 📂 internal/
-> │          └── 📂 provider-agreements/
-> │            ├── 📄 index.html
-> │          └── 📂 training-logs/
-> │            ├── 📄 index.html
-> │        ├── 📄 risk-assessment.html
-> │        └── 📂 service_animal_gigi/
-> │          ├── 📄 Gigi_Certification_Statement.html
-> │          ├── 📄 Gigi_Documentation_Pack.md
-> │          ├── 📄 Gigi_Documentation_Pack_Print.html
-> │          ├── 📄 Gigi_Service_Dog_Training_Manual.md
-> │          ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
-> │          ├── 📄 Notice_Service_Animal_Status.html
-> │          └── 📂 assets/
-> │            ├── 📄 gigi_service_dog_hero.png
-> │          ├── 📄 index.html
-> │        ├── 📄 wisp-core.html
-> │      └── 📂 ecard/
-> │        ├── 📄 cody.vcf
-> │        ├── 📄 index.html
-> │      └── 📂 estate-planning/
-> │        ├── 📄 index.html
-> │      └── 📂 letters/
-> │        └── 📂 client.wiletvaldo_calderon-ramirez/
-> │          ├── 📄 index.html
-> │          ├── 📄 infographic.png
-> │          ├── 📄 review_audio.m4a
-> │        └── 📂 engagement/
-> │          ├── 📄 SignForm_URL_QR.png
-> │          ├── 📄 engagement_standard.html
-> │          ├── 📄 index.html
-> │        └── 📂 evansville_inn/
-> │          ├── 📄 Notice_Room_Conditions.html
-> │      └── 📂 msa/
-> │        ├── 📄 index.html
-> │      └── 📂 portfolio/
-> │        ├── 📄 index.html
-> │      └── 📂 privacy/
-> │        ├── 📄 index.html
-> │      └── 📂 referral/
-> │        └── 📂 cashapp/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 quickbooks/
-> │          ├── 📄 index.html
-> │        └── 📂 zoho/
-> │          ├── 📄 index.html
-> │      └── 📂 resources/
-> │        ├── 📄 index.html
-> │      └── 📂 review/
-> │        ├── 📄 index.html
-> │        ├── 📄 qrcode_www.google.com.png
-> │      └── 📂 services/
-> │        ├── 📄 index.html
-> │      └── 📂 showcases/
-> │        └── 📂 20000-swing/
-> │          ├── 📄 index.html
-> │        ├── 📄 videos.html
-> │      └── 📂 terms/
-> │        ├── 📄 index.html
-> │    └── 📂 portfolio/
-> │      ├── 📄 index.html
-> │    └── 📂 public/
-> │    └── 📂 resources/
-> │      └── 📂 compliance/
-> │        └── 📂 data-inventory/
-> │          ├── 📄 index.html
-> │        └── 📂 incident-response/
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │        └── 📂 provider-agreements/
-> │          ├── 📄 index.html
-> │        └── 📂 risk-assessment/
-> │          ├── 📄 index.html
-> │        └── 📂 training-logs/
-> │          ├── 📄 index.html
-> │        └── 📂 wisp/
-> │          ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    ├── 📄 robots.txt
-> │    ├── 📄 service-worker.js
-> │    └── 📂 services/
-> │    ├── 📄 services-full.json
-> │      └── 📂 automation-ai/
-> │        ├── 📄 index.html
-> │      └── 📂 client-portals/
-> │        ├── 📄 index.html
-> │      └── 📂 hr-operations/
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │      └── 📂 tax-preparation/
-> │        └── 📂 email-templates/
-> │          ├── 📄 email-01-simple-w2.html
-> │          ├── 📄 email-02-self-employed.html
-> │          ├── 📄 email-03-complex.html
-> │          ├── 📄 email-04-itin.html
-> │          ├── 📄 email-05-business.html
-> │          ├── 📄 email-06-confirmation-docs.html
-> │          ├── 📄 email-generic-next-steps.html
-> │          ├── 📄 email-intake-received.html
-> │        └── 📂 forms/
-> │          ├── 📄 business.html
-> │          ├── 📄 complex.html
-> │          ├── 📄 head-of-household.html
-> │          ├── 📄 itin.html
-> │          ├── 📄 self-employed.html
-> │          ├── 📄 simple-w2.html
-> │        ├── 📄 index.html
-> │        └── 📂 intake/
-> │          ├── 📄 index.html
-> │        └── 📂 next-steps/
-> │          └── 📂 business-return/
-> │            ├── 📄 index.html
-> │          └── 📂 complex-return/
-> │            ├── 📄 index.html
-> │          └── 📂 head-of-household/
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │          └── 📂 itin/
-> │            ├── 📄 index.html
-> │          └── 📂 self-employed/
-> │            ├── 📄 index.html
-> │          └── 📂 simple-w2/
-> │            ├── 📄 index.html
-> │        ├── 📄 qr-code.html
-> │        ├── 📄 tax-prep-2025-booking.html
-> │    ├── 📄 sitemap.xml
-> │    └── 📂 src/
-> │      └── 📂 app/
-> │      └── 📂 components/
-> │      └── 📂 content/
-> │      └── 📂 lib/
-> │      └── 📂 styles/
-> │      └── 📂 types/
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 qsaysit/
-> │  └── 📂 qsaysit-blog/
-> │  └── 📂 qsaysit-web/
-> │    ├── 📄 README.md
-> │    └── 📂 assets/
-> │      └── 📂 css/
-> │        ├── 📄 styles.css
-> │      └── 📂 img/
-> │        └── 📂 og/
-> │        └── 📂 posts/
-> │        └── 📂 series/
-> │      └── 📂 js/
-> │        ├── 📄 search.js
-> │        ├── 📄 site.js
-> │    ├── 📄 build.py
-> │    └── 📂 content/
-> │      └── 📂 data/
-> │        ├── 📄 featured.yaml
-> │        ├── 📄 nav.yaml
-> │        ├── 📄 site.yaml
-> │      └── 📂 pages/
-> │        ├── 📄 about.md
-> │        ├── 📄 contact.md
-> │      └── 📂 posts/
-> │        ├── 📄 2026-03-24_first_post.md
-> │      └── 📂 series/
-> │        ├── 📄 mirror-series.md
-> │        ├── 📄 notebooklm-deep-dives.md
-> │        ├── 📄 the-onion-effect.md
-> │    └── 📂 public/
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 robots.txt
-> │      ├── 📄 social-preview.png
-> │    ├── 📄 requirements.txt
-> │    └── 📂 site/
-> │      └── 📂 about/
-> │        ├── 📄 index.html
-> │      └── 📂 assets/
-> │        └── 📂 css/
-> │          ├── 📄 styles.css
-> │        └── 📂 img/
-> │          └── 📂 og/
-> │          └── 📂 posts/
-> │          └── 📂 series/
-> │        └── 📂 js/
-> │          ├── 📄 search.js
-> │          ├── 📄 site.js
-> │      └── 📂 contact/
-> │        ├── 📄 index.html
-> │      ├── 📄 favicon.ico
-> │      ├── 📄 index.html
-> │      └── 📂 posts/
-> │        └── 📂 first-post/
-> │          ├── 📄 index.html
-> │      ├── 📄 robots.txt
-> │      └── 📂 series/
-> │        ├── 📄 index.html
-> │        └── 📂 mirror-series/
-> │          ├── 📄 index.html
-> │        └── 📂 notebooklm-deep-dives/
-> │          ├── 📄 index.html
-> │        └── 📂 the-onion-effect/
-> │          ├── 📄 index.html
-> │      ├── 📄 social-preview.png
-> │    └── 📂 templates/
-> │      ├── 📄 archive.html
-> │      ├── 📄 base.html
-> │      └── 📂 components/
-> │        ├── 📄 footer.html
-> │        ├── 📄 header.html
-> │        ├── 📄 infographic-block.html
-> │        ├── 📄 notebooklm-block.html
-> │        ├── 📄 post-card.html
-> │        ├── 📄 youtube-embed.html
-> │      ├── 📄 index.html
-> │      ├── 📄 page.html
-> │      ├── 📄 post.html
-> │      ├── 📄 series.html
-> │    ├── 📄 astro.config.mjs
-> │    └── 📂 docs/
-> │      ├── 📄 index.md
-> │    └── 📂 scripts/
-> │      ├── 📄 legacy_build.py
-> │    └── 📂 site/
-> │      └── 📂 assets/
-> │        ├── 📄 style.css
-> │        ├── 📄 styles.css
-> │      ├── 📄 blog.html
-> │      ├── 📄 index.html
-> │    └── 📂 src/
-> │      └── 📂 content/
-> │        ├── 📄 config.ts
-> │      └── 📂 pages/
-> │        ├── 📄 index.astro
-> │        └── 📂 posts/
-> │          ├── 📄 [...id].astro
-> │    └── 📂 templates/
-> │      └── 📂 2026-02-19_post-title/
-> │        └── 📂 assets/
-> │          ├── 📄 brief.m4a
-> │          ├── 📄 critique.m4a
-> │          ├── 📄 debate.m4a
-> │          ├── 📄 deepdive.m4a
-> │          ├── 📄 explainer.mp4
-> │          ├── 📄 hero.jpg
-> │          ├── 📄 infographic.jpg
-> │        ├── 📄 index.md
-> │      ├── 📄 post_template.md
-> │    └── 📂 tools/
-> │      ├── 📄 build.py
-> │    ├── 📄 tsconfig.json
-> │  └── 📂 qsjournal/
-> │    └── 📂 backend/
-> │      ├── 📄 app.js
-> │      ├── 📄 eslint.config.js
-> │      └── 📂 lib/
-> │        └── 📂 helpers/
-> │          ├── 📄 area-widgets.js
-> │          ├── 📄 color-options.js
-> │          ├── 📄 typography-options.js
-> │        └── 📂 schema-mixins/
-> │          ├── 📄 card-fields.js
-> │          ├── 📄 hero-fields.js
-> │          ├── 📄 link-fields.js
-> │          ├── 📄 slideshow-fields.js
-> │      └── 📂 modules/
-> │        └── 📂 @apostrophecms/
-> │          └── 📂 admin-bar/
-> │            ├── 📄 index.js
-> │          └── 📂 asset/
-> │            ├── 📄 index.js
-> │          └── 📂 attachment/
-> │            ├── 📄 index.js
-> │          └── 📂 express/
-> │            ├── 📄 index.js
-> │          └── 📂 global/
-> │            ├── 📄 index.js
-> │          └── 📂 home-page/
-> │            ├── 📄 index.js
-> │            └── 📂 views/
-> │              ├── 📄 page.html
-> │          └── 📂 i18n/
-> │            ├── 📄 index.js
-> │          └── 📂 image-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 layout-column-widget/
-> │            ├── 📄 index.js
-> │          └── 📂 page/
-> │            ├── 📄 index.js
-> │            └── 📂 views/
-> │              ├── 📄 notFound.html
-> │          └── 📂 rich-text-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 settings/
-> │            ├── 📄 index.js
-> │          └── 📂 user/
-> │            ├── 📄 index.js
-> │          └── 📂 video-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │        └── 📂 accordion-widget/
-> │          ├── 📄 index.js
-> │          └── 📂 public/
-> │            ├── 📄 preview.svg
-> │        └── 📂 article/
-> │        └── 📂 article-page/
-> │          ├── 📄 index.js
-> │          ├── 📄 index.js
-> │        └── 📂 author/
-> │          ├── 📄 index.js
-> │        └── 📂 card-widget/
-> │          ├── 📄 index.js
-> │          └── 📂 public/
-> │            ├── 📄 preview.svg
-> │        └── 📂 default-page/
-> │          ├── 📄 index.js
-> │        └── 📂 hero-widget/
-> │          ├── 📄 index.js
-> │          └── 📂 public/
-> │            ├── 📄 preview.svg
-> │        └── 📂 link-widget/
-> │          ├── 📄 index.js
-> │          └── 📂 public/
-> │            ├── 📄 preview.svg
-> │        └── 📂 slideshow-widget/
-> │          ├── 📄 index.js
-> │          └── 📂 public/
-> │            ├── 📄 preview.svg
-> │      ├── 📄 package-lock.json
-> │      └── 📂 scripts/
-> │        ├── 📄 load-starter-content
-> │        ├── 📄 update-starter-content
-> │      └── 📂 views/
-> │        ├── 📄 layout.html
-> │    └── 📂 frontend/
-> │      ├── 📄 Procfile
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 postcss.config.js
-> │      └── 📂 public/
-> │        └── 📂 fonts/
-> │          └── 📂 fontawesome/
-> │            ├── 📄 fa-brands-400.woff2
-> │            ├── 📄 fa-regular-400.woff2
-> │            ├── 📄 fa-solid-900.woff2
-> │            ├── 📄 fa-v4compatibility.woff2
-> │        └── 📂 images/
-> │          ├── 📄 image-widget-placeholder.jpg
-> │          ├── 📄 missing-icon.svg
-> │        └── 📂 scripts/
-> │          ├── 📄 VideoWidget.js
-> │          ├── 📄 dynamic-navbar-padding.js
-> │      └── 📂 src/
-> │        └── 📂 components/
-> │          ├── 📄 ArticlesFilter.astro
-> │          ├── 📄 Figure.astro
-> │          ├── 📄 ImageLink.astro
-> │          ├── 📄 Pagination.astro
-> │        ├── 📄 env.d.ts
-> │        └── 📂 layouts/
-> │          └── 📂 article-layouts/
-> │            ├── 📄 HeroGrid.astro
-> │            ├── 📄 ListAside.astro
-> │            ├── 📄 ShowFullWidth.astro
-> │            ├── 📄 ShowMagazine.astro
-> │            ├── 📄 ShowMinimal.astro
-> │            ├── 📄 Standard.astro
-> │        └── 📂 lib/
-> │          ├── 📄 attachments.js
-> │          ├── 📄 get-layout-areas.js
-> │          ├── 📄 homepage-defaults.js
-> │          ├── 📄 use-site-config.js
-> │        └── 📂 pages/
-> │          ├── 📄 [...slug].astro
-> │        └── 📂 styles/
-> │          ├── 📄 app.css
-> │          ├── 📄 main.scss
-> │        └── 📂 templates/
-> │          ├── 📄 ArticleIndexPage.astro
-> │          ├── 📄 ArticleShowPage.astro
-> │          ├── 📄 DefaultPage.astro
-> │          ├── 📄 HomePage.astro
-> │          ├── 📄 index.js
-> │        └── 📂 widgets/
-> │          ├── 📄 AccordionWidget.astro
-> │          ├── 📄 CardWidget.astro
-> │          ├── 📄 FileWidget.astro
-> │          ├── 📄 HeroWidget.astro
-> │          ├── 📄 ImageWidget.astro
-> │          ├── 📄 LinkWidget.astro
-> │          ├── 📄 RichTextWidget.astro
-> │          ├── 📄 SlideshowWidget.astro
-> │          ├── 📄 VideoWidget.astro
-> │          ├── 📄 index.js
-> │      ├── 📄 tsconfig.json
-> └── 📂 supabase/
-> ├── 📄 tailwind.config.ts
-> ├── 📄 tsconfig.base.json
-> ├── 📄 tsconfig.root.json
-> ├── 📄 turbo.json
-> ├── 📄 vizvibe.mmd
-> └── 📂 workers/
-> │  ├── 📄 README.md
-> │  └── 📂 _shared/
-> │    ├── 📄 constitution.ts
-> │    ├── 📄 heartbeat.ts
-> │    ├── 📄 ignore.ts
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index.html
-> │  └── 📂 embedder/
-> │    ├── 📄 README.MD
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 embedding/
-> │    ├── 📄 README.MD
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 graph/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 ingestion/
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 worker_ingestion.ts
-> │    ├── 📄 wrangler (2).toml
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 memory/
-> │    ├── 📄 README_API.md
-> │    ├── 📄 README_DEV.md
-> │    ├── 📄 README_SECRETS.md
-> │    ├── 📄 VERIFY_SETUP.md
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │    ├── 📄 sync-secrets.sh
-> │    └── 📂 tests/
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 metadata_naming/
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 worker_metadata_naming.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 orchestrator/
-> │    ├── 📄 OrchestratorState (2).ts
-> │    ├── 📄 OrchestratorState.ts
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index.html
-> │    └── 📂 migrations/
-> │    ├── 📄 package.json
-> │    ├── 📄 qios_06_workers_orchestrator (2).canvas
-> │    ├── 📄 qios_06_workers_orchestrator.canvas
-> │    └── 📂 src/
-> │      ├── 📄 OrchestratorState.ts
-> │      ├── 📄 worker.ts
-> │    ├── 📄 worker_orchestrator.ts
-> │    ├── 📄 wrangler.toml
-> │  ├── 📄 package.json
-> │  └── 📂 repair/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 self_heal/
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 worker_self_heal.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 semantic_router/
-> │    ├── 📄 index (2).html
-> │    ├── 📄 index (3).html
-> │    ├── 📄 index.html
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 worker.ts
-> │    ├── 📄 worker_semantic_router.ts
-> │    ├── 📄 wrangler.toml
-> │  └── 📂 supabase/
-> │    ├── 📄 config.toml
-> │    └── 📂 functions/
-> │      └── 📂 qivault-ingest/
-> │        ├── 📄 index.ts
-> │    └── 📂 migrations/
-> │      └── 📂 qicase_meta/
-> │        ├── 📄 0000_snapshot.json
-> │        ├── 📄 _journal.json
-> │    └── 📂 seed/
-> │    └── 📂 snippets/
-> │      ├── 📄 is_admin.sql
-> │  └── 📄 worker.py
+> but remember all the front end parts would be modules inside qione portal no there own apps, so how do we reconcile that. ?```markdown
+
+> . 📂 QiLabs
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> └── 📂 _qios_master_blueprint/
+
+> │  └── 📂 assets/
+
+> │    ├── 📄 _QiOS_Master_Document.jpg
+
+> │    └── 📂 diagrams/
+
+> │    └── 📂 tables/
+
+> │  └── 📂 docs/
+
+> │    └── 📂 00_genesis/
+
+> │    └── 📂 01_governance/
+
+> │      ├── 📄 agent_rules.md
+
+> │      ├── 📄 decisions.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 policies.md
+
+> │      ├── 📄 principles.md
+
+> │      ├── 📄 registry.md
+
+> │      ├── 📄 standards.md
+
+> │    └── 📂 02_architecture/
+
+> │      ├── 📄 component_map.md
+
+> │      ├── 📄 data_flow.md
+
+> │      ├── 📄 device_model.md
+
+> │      ├── 📄 identity.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 runtime_zones.md
+
+> │      ├── 📄 service_boundaries.md
+
+> │      ├── 📄 system_model.md
+
+> │    └── 📂 03_structure/
+
+> │      ├── 📄 bands.md
+
+> │      ├── 📄 directory_tree.md
+
+> │      ├── 📄 domains.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 namespace_registry.md
+
+> │      ├── 📄 object_model.md
+
+> │      ├── 📄 placement_rules.md
+
+> │      ├── 📄 subdomains.md
+
+> │    └── 📂 04_data/
+
+> │      ├── 📄 exports.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 metadata.md
+
+> │      ├── 📄 objects.md
+
+> │      ├── 📄 qievidence.md
+
+> │      ├── 📄 schema.md
+
+> │      ├── 📄 storage.md
+
+> │    └── 📂 05_compute/
+
+> │      ├── 📄 apis.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 integrations.md
+
+> │      ├── 📄 pipelines.md
+
+> │      ├── 📄 runtime.md
+
+> │      ├── 📄 tech_stack.md
+
+> │      ├── 📄 workers.md
+
+> │    └── 📂 06_applications/
+
+> │      ├── 📄 admin.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 interfaces.md
+
+> │      ├── 📄 portal.md
+
+> │      ├── 📄 tools.md
+
+> │      ├── 📄 web.md
+
+> │    └── 📂 07_operations/
+
+> │      ├── 📄 cases.md
+
+> │      ├── 📄 clients.md
+
+> │      ├── 📄 finance.md
+
+> │      ├── 📄 index.md
+
+> │      ├── 📄 products.md
+
+> │      ├── 📄 templates.md
+
+> │    └── 📂 adr/
+
+> │      ├── 📄 ADR-0000_template.md
+
+> │      ├── 📄 ADR-0001_blueprint_scope.md
+
+> │      ├── 📄 ADR-0002_single_domain_rule.md
+
+> │      ├── 📄 ADR-0003_band_model.md
+
+> │      ├── 📄 ADR-0004_qilabs_root.md
+
+> │      ├── 📄 ADR-0005_fleet_orchestration.md
+
+> │      ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
+
+> │      ├── 📄 update-adr.md
+
+> │    └── 📂 appendices/
+
+> │      ├── 📄 changelog.md
+
+> │      ├── 📄 glossary.md
+
+> │      ├── 📄 legacy_csv_inventory.json
+
+> │      ├── 📄 legacy_csv_migration_plan.md
+
+> │      ├── 📄 legacy_salvage.md
+
+> │      ├── 📄 migration_notes.md
+
+> │    ├── 📄 index.md
+
+> │    ├── 📄 markmind.html
+
+> │    └── 📂 stylesheets/
+
+> │      ├── 📄 extra.css
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 artifact_template.md
+
+> │      ├── 📄 note_template.md
+
+> │  ├── 📄 main.py
+
+> │  ├── 📄 mkdocs.yml
+
+> │  └── 📂 overrides/
+
+> │    ├── 📄 home.html
+
+> │  └── 📂 registry/
+
+> │    ├── 📄 band_registry.yaml
+
+> │    ├── 📄 deprecation_registry.yaml
+
+> │    ├── 📄 domain_registry.yaml
+
+> │    ├── 📄 folder_registry.yaml
+
+> │    ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │    ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │    ├── 📄 realms_registry.yaml
+
+> │    ├── 📄 sensitivity_classification.yaml
+
+> │    ├── 📄 subdomain_registry.yaml
+
+> │    ├── 📄 workspace_realms.yaml
+
+> │  └── 📂 schemas/
+
+> │    ├── 📄 band_registry.schema.json
+
+> │    ├── 📄 qievidence.sql
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 enforce_structure.py
+
+> │  └── 📂 standards/
+
+> │    ├── 📄 content_metadata_profile.yaml
+
+> │    ├── 📄 metadata_rules.yaml
+
+> │    ├── 📄 naming_rules.yaml
+
+> │    ├── 📄 pdf_standards.yaml
+
+> │    ├── 📄 repo_rules.yaml
+
+> │    ├── 📄 strict-compliance.md
+
+> └── 📂 apps/
+
+> │  └── 📂 Labs/
+
+> │    └── 📂 Atrium/
+
+> │      ├── 📄 CHANGELOG.md
+
+> │      ├── 📄 CLAUDE.md
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 SECURITY_AUDIT.md
+
+> │      └── 📂 apps/
+
+> │        └── 📂 api/
+
+> │          ├── 📄 nest-cli.json
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 src/
+
+> │            └── 📂 account/
+
+> │              ├── 📄 account.controller.ts
+
+> │              ├── 📄 account.module.ts
+
+> │              ├── 📄 account.service.spec.ts
+
+> │              ├── 📄 account.service.ts
+
+> │              ├── 📄 user-only-auth.guard.ts
+
+> │            └── 📂 activity/
+
+> │              ├── 📄 activity.module.ts
+
+> │              ├── 📄 activity.service.ts
+
+> │            ├── 📄 app.module.ts
+
+> │            └── 📂 auth/
+
+> │              ├── 📄 auth.controller.ts
+
+> │              ├── 📄 auth.module.ts
+
+> │              ├── 📄 auth.service.ts
+
+> │              ├── 📄 session.middleware.ts
+
+> │            └── 📂 billing/
+
+> │              ├── 📄 billing.controller.ts
+
+> │              ├── 📄 billing.dto.ts
+
+> │              ├── 📄 billing.module.ts
+
+> │              ├── 📄 billing.service.spec.ts
+
+> │              ├── 📄 billing.service.ts
+
+> │              ├── 📄 stripe.service.ts
+
+> │              ├── 📄 webhook.controller.ts
+
+> │            └── 📂 branding/
+
+> │              ├── 📄 branding.controller.ts
+
+> │              ├── 📄 branding.dto.ts
+
+> │              ├── 📄 branding.module.ts
+
+> │              ├── 📄 branding.service.spec.ts
+
+> │              ├── 📄 branding.service.ts
+
+> │            └── 📂 clients/
+
+> │              ├── 📄 client-profile.dto.ts
+
+> │              ├── 📄 clients.controller.ts
+
+> │              ├── 📄 clients.dto.ts
+
+> │              ├── 📄 clients.module.ts
+
+> │              ├── 📄 clients.service.spec.ts
+
+> │              ├── 📄 clients.service.ts
+
+> │            └── 📂 comments/
+
+> │              ├── 📄 comments.controller.ts
+
+> │              ├── 📄 comments.dto.ts
+
+> │              ├── 📄 comments.module.ts
+
+> │              ├── 📄 comments.service.spec.ts
+
+> │              ├── 📄 comments.service.ts
+
+> │            └── 📂 common/
+
+> │              └── 📂 decorators/
+
+> │                ├── 📄 current-member.decorator.ts
+
+> │                ├── 📄 current-org.decorator.ts
+
+> │                ├── 📄 current-user.decorator.ts
+
+> │                ├── 📄 plan-limit.decorator.ts
+
+> │                ├── 📄 public.decorator.ts
+
+> │                ├── 📄 roles.decorator.ts
+
+> │              └── 📂 dto/
+
+> │                ├── 📄 pagination.dto.ts
+
+> │              └── 📂 filters/
+
+> │                ├── 📄 http-exception.filter.ts
+
+> │              └── 📂 guards/
+
+> │                ├── 📄 auth.guard.spec.ts
+
+> │                ├── 📄 auth.guard.ts
+
+> │                ├── 📄 csrf.guard.spec.ts
+
+> │                ├── 📄 csrf.guard.ts
+
+> │                ├── 📄 plan.guard.spec.ts
+
+> │                ├── 📄 plan.guard.ts
+
+> │                ├── 📄 roles.guard.spec.ts
+
+> │                ├── 📄 roles.guard.ts
+
+> │              └── 📂 helpers/
+
+> │                ├── 📄 assert-project-access.ts
+
+> │                ├── 📄 paginate.ts
+
+> │              ├── 📄 index.ts
+
+> │              └── 📂 types/
+
+> │                ├── 📄 authenticated-request.ts
+
+> │              └── 📂 utils/
+
+> │                ├── 📄 blocked-extensions.ts
+
+> │                ├── 📄 csv.spec.ts
+
+> │                ├── 📄 csv.ts
+
+> │                ├── 📄 sanitize.spec.ts
+
+> │                ├── 📄 sanitize.ts
+
+> │            └── 📂 documents/
+
+> │              ├── 📄 document-audit.service.ts
+
+> │              ├── 📄 document-expiry.task.ts
+
+> │              ├── 📄 document-reminder.task.ts
+
+> │              ├── 📄 document-token-cleanup.task.ts
+
+> │              ├── 📄 documents.controller.ts
+
+> │              ├── 📄 documents.dto.ts
+
+> │              ├── 📄 documents.module.ts
+
+> │              ├── 📄 documents.service.spec.ts
+
+> │              ├── 📄 documents.service.ts
+
+> │            └── 📂 files/
+
+> │              ├── 📄 files.controller.ts
+
+> │              ├── 📄 files.module.ts
+
+> │              ├── 📄 files.service.spec.ts
+
+> │              ├── 📄 files.service.ts
+
+> │              └── 📂 storage/
+
+> │                ├── 📄 local.storage.spec.ts
+
+> │                ├── 📄 local.storage.ts
+
+> │                ├── 📄 minio.storage.ts
+
+> │                ├── 📄 r2.storage.ts
+
+> │                ├── 📄 s3.storage.ts
+
+> │                ├── 📄 storage.interface.ts
+
+> │            ├── 📄 health.controller.spec.ts
+
+> │            ├── 📄 health.controller.ts
+
+> │            └── 📂 invoices/
+
+> │              ├── 📄 invoice-overdue.task.spec.ts
+
+> │              ├── 📄 invoice-overdue.task.ts
+
+> │              ├── 📄 invoice-pdf.service.spec.ts
+
+> │              ├── 📄 invoice-pdf.service.ts
+
+> │              ├── 📄 invoices.controller.ts
+
+> │              ├── 📄 invoices.dto.ts
+
+> │              ├── 📄 invoices.module.ts
+
+> │              ├── 📄 invoices.service.spec.ts
+
+> │              ├── 📄 invoices.service.ts
+
+> │            └── 📂 labels/
+
+> │              ├── 📄 labels.controller.ts
+
+> │              ├── 📄 labels.dto.ts
+
+> │              ├── 📄 labels.module.ts
+
+> │              ├── 📄 labels.service.spec.ts
+
+> │              ├── 📄 labels.service.ts
+
+> │            └── 📂 mail/
+
+> │              ├── 📄 mail.module.ts
+
+> │              ├── 📄 mail.service.spec.ts
+
+> │              ├── 📄 mail.service.ts
+
+> │            ├── 📄 main.ts
+
+> │            └── 📂 notes/
+
+> │              ├── 📄 notes.controller.ts
+
+> │              ├── 📄 notes.dto.ts
+
+> │              ├── 📄 notes.module.ts
+
+> │              ├── 📄 notes.service.ts
+
+> │            └── 📂 notifications/
+
+> │              ├── 📄 in-app-notifications.controller.ts
+
+> │              ├── 📄 in-app-notifications.dto.ts
+
+> │              ├── 📄 in-app-notifications.service.spec.ts
+
+> │              ├── 📄 in-app-notifications.service.ts
+
+> │              ├── 📄 notifications.module.ts
+
+> │              ├── 📄 notifications.service.spec.ts
+
+> │              ├── 📄 notifications.service.ts
+
+> │              ├── 📄 push.controller.ts
+
+> │              ├── 📄 push.service.ts
+
+> │            └── 📂 onboarding/
+
+> │              ├── 📄 onboarding.controller.ts
+
+> │              ├── 📄 onboarding.module.ts
+
+> │              ├── 📄 signup.dto.ts
+
+> │            └── 📂 prisma/
+
+> │              ├── 📄 prisma.module.ts
+
+> │              ├── 📄 prisma.service.ts
+
+> │            └── 📂 projects/
+
+> │              ├── 📄 projects.controller.ts
+
+> │              ├── 📄 projects.dto.ts
+
+> │              ├── 📄 projects.module.ts
+
+> │              ├── 📄 projects.service.spec.ts
+
+> │              ├── 📄 projects.service.ts
+
+> │            └── 📂 settings/
+
+> │              ├── 📄 settings.controller.ts
+
+> │              ├── 📄 settings.dto.spec.ts
+
+> │              ├── 📄 settings.dto.ts
+
+> │              ├── 📄 settings.module.ts
+
+> │              ├── 📄 settings.service.spec.ts
+
+> │              ├── 📄 settings.service.ts
+
+> │            └── 📂 setup/
+
+> │              ├── 📄 setup.controller.spec.ts
+
+> │              ├── 📄 setup.controller.ts
+
+> │              ├── 📄 setup.dto.ts
+
+> │              ├── 📄 setup.module.ts
+
+> │              ├── 📄 setup.service.ts
+
+> │            └── 📂 tasks/
+
+> │              ├── 📄 tasks.controller.ts
+
+> │              ├── 📄 tasks.dto.ts
+
+> │              ├── 📄 tasks.module.ts
+
+> │              ├── 📄 tasks.service.ts
+
+> │            └── 📂 updates/
+
+> │              ├── 📄 updates.controller.ts
+
+> │              ├── 📄 updates.dto.ts
+
+> │              ├── 📄 updates.module.ts
+
+> │              ├── 📄 updates.service.ts
+
+> │          ├── 📄 tsconfig.json
+
+> │        └── 📂 web/
+
+> │          ├── 📄 CHANGELOG.md
+
+> │          ├── 📄 next-env.d.ts
+
+> │          ├── 📄 next.config.ts
+
+> │          ├── 📄 package.json
+
+> │          ├── 📄 postcss.config.mjs
+
+> │          └── 📂 public/
+
+> │            ├── 📄 icon.png
+
+> │            ├── 📄 sw.js
+
+> │          └── 📂 src/
+
+> │            └── 📂 app/
+
+> │              └── 📂 (auth)/
+
+> │                └── 📂 accept-invite/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 forgot-password/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 login/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 reset-password/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 signup/
+
+> │                  ├── 📄 page.tsx
+
+> │                └── 📂 verify-email/
+
+> │                  ├── 📄 page.tsx
+
+> │              └── 📂 (dashboard)/
+
+> │                └── 📂 dashboard/
+
+> │                  └── 📂 changelog/
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 clients/
+
+> │                    ├── 📄 page.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 projects/
+
+> │                    └── 📂 [id]/
+
+> │                      └── 📂 components/
+
+> │                        ├── 📄 client-assignment.tsx
+
+> │                        ├── 📄 files-section.tsx
+
+> │                        ├── 📄 invoices-section.tsx
+
+> │                        ├── 📄 notes-section.tsx
+
+> │                        ├── 📄 status-pipeline.tsx
+
+> │                        ├── 📄 tasks-section.tsx
+
+> │                        ├── 📄 updates-section.tsx
+
+> │                      ├── 📄 page.tsx
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 settings/
+
+> │                    └── 📂 account/
+
+> │                      ├── 📄 page.tsx
+
+> │                    └── 📂 billing/
+
+> │                      ├── 📄 billing-section.tsx
+
+> │                      ├── 📄 page.tsx
+
+> │                    └── 📂 system/
+
+> │                      ├── 📄 branding-section.tsx
+
+> │                      ├── 📄 labels-section.tsx
+
+> │                      ├── 📄 page.tsx
+
+> │                  └── 📂 team/
+
+> │                    ├── 📄 page.tsx
+
+> │                ├── 📄 email-verification-banner.tsx
+
+> │                ├── 📄 layout.tsx
+
+> │                ├── 📄 mobile-nav.tsx
+
+> │                ├── 📄 sidebar-nav.tsx
+
+> │                ├── 📄 sign-out-button.tsx
+
+> │              └── 📂 (portal)/
+
+> │                ├── 📄 layout.tsx
+
+> │                └── 📂 portal/
+
+> │                  └── 📂 changelog/
+
+> │                    ├── 📄 page.tsx
+
+> │                  ├── 📄 page.tsx
+
+> │                  └── 📂 projects/
+
+> │                    └── 📂 [id]/
+
+> │                      └── 📂 components/
+
+> │                        ├── 📄 portal-invoices-section.tsx
+
+> │                      ├── 📄 page.tsx
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 settings/
+
+> │                    ├── 📄 page.tsx
+
+> │                  └── 📂 sign/
+
+> │                    └── 📂 [token]/
+
+> │                      ├── 📄 page.tsx
+
+> │                ├── 📄 sign-out-button.tsx
+
+> │              └── 📂 (setup)/
+
+> │                ├── 📄 layout.tsx
+
+> │                └── 📂 setup/
+
+> │                  ├── 📄 page.tsx
+
+> │                  ├── 📄 step-complete.tsx
+
+> │                  ├── 📄 step-email-config.tsx
+
+> │                  ├── 📄 step-first-project.tsx
+
+> │                  ├── 📄 step-invite-client.tsx
+
+> │                  ├── 📄 step-org-profile.tsx
+
+> │              └── 📂 changelog/
+
+> │                ├── 📄 page.tsx
+
+> │              ├── 📄 globals.css
+
+> │              ├── 📄 layout.tsx
+
+> │              ├── 📄 page.tsx
+
+> │              ├── 📄 providers.tsx
+
+> │            └── 📂 components/
+
+> │              ├── 📄 changelog.tsx
+
+> │              ├── 📄 color-patch-grid.tsx
+
+> │              ├── 📄 comments-section.tsx
+
+> │              ├── 📄 confirm-modal.tsx
+
+> │              ├── 📄 document-viewer.tsx
+
+> │              ├── 📄 dynamic-favicon.tsx
+
+> │              ├── 📄 label-badge.tsx
+
+> │              ├── 📄 label-picker.tsx
+
+> │              ├── 📄 notification-bell.tsx
+
+> │              ├── 📄 pagination.tsx
+
+> │              ├── 📄 pdf-viewer.tsx
+
+> │              ├── 📄 signature-field-placer.tsx
+
+> │              ├── 📄 signature-pad.tsx
+
+> │              ├── 📄 signing-viewer.tsx
+
+> │              ├── 📄 skeletons.tsx
+
+> │              ├── 📄 toast.tsx
+
+> │            └── 📂 hooks/
+
+> │              ├── 📄 use-debounce.ts
+
+> │            └── 📂 lib/
+
+> │              ├── 📄 api.ts
+
+> │              ├── 📄 auth.ts
+
+> │              ├── 📄 download.ts
+
+> │              ├── 📄 format.ts
+
+> │              ├── 📄 linkify.tsx
+
+> │              ├── 📄 status-colors.ts
+
+> │              ├── 📄 track.ts
+
+> │              ├── 📄 utils.ts
+
+> │            └── 📂 types/
+
+> │              ├── 📄 global.d.ts
+
+> │          ├── 📄 tailwind.config.ts
+
+> │          ├── 📄 tsconfig.json
+
+> │      ├── 📄 bun.lock
+
+> │      ├── 📄 bunfig.toml
+
+> │      └── 📂 docker/
+
+> │      ├── 📄 docker-compose.dev.yml
+
+> │      ├── 📄 docker-compose.yml
+
+> │        ├── 📄 Caddyfile
+
+> │        ├── 📄 DOCKERHUB.md
+
+> │        ├── 📄 api-entrypoint.sh
+
+> │        ├── 📄 api.Dockerfile
+
+> │        ├── 📄 unified-entrypoint.sh
+
+> │        ├── 📄 unified.Dockerfile
+
+> │        ├── 📄 web.Dockerfile
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 configuration.md
+
+> │        ├── 📄 development.md
+
+> │        ├── 📄 docker.md
+
+> │        ├── 📄 roadmap.md
+
+> │        ├── 📄 security.md
+
+> │        ├── 📄 unraid.md
+
+> │      └── 📂 e2e/
+
+> │        ├── 📄 global-setup.ts
+
+> │        ├── 📄 playwright.config.ts
+
+> │        └── 📂 tests/
+
+> │          ├── 📄 accept-invite.e2e.ts
+
+> │          ├── 📄 account-deletion.e2e.ts
+
+> │          ├── 📄 activity-feed.e2e.ts
+
+> │          ├── 📄 auth.e2e.ts
+
+> │          ├── 📄 billing.e2e.ts
+
+> │          ├── 📄 branding.e2e.ts
+
+> │          ├── 📄 client-profiles.e2e.ts
+
+> │          ├── 📄 comments.e2e.ts
+
+> │          ├── 📄 csv-export.e2e.ts
+
+> │          ├── 📄 decision-tasks.e2e.ts
+
+> │          ├── 📄 documents.e2e.ts
+
+> │          ├── 📄 email-verification.e2e.ts
+
+> │          ├── 📄 files.e2e.ts
+
+> │          ├── 📄 helpers.ts
+
+> │          ├── 📄 in-app-notifications.e2e.ts
+
+> │          ├── 📄 invoice-upload.e2e.ts
+
+> │          ├── 📄 invoices.e2e.ts
+
+> │          ├── 📄 labels.e2e.ts
+
+> │          ├── 📄 mobile-nav.e2e.ts
+
+> │          ├── 📄 notes.e2e.ts
+
+> │          ├── 📄 notifications.e2e.ts
+
+> │          ├── 📄 portal-isolation.e2e.ts
+
+> │          ├── 📄 portal.e2e.ts
+
+> │          ├── 📄 projects.e2e.ts
+
+> │          ├── 📄 setup-wizard.e2e.ts
+
+> │          ├── 📄 system-settings.e2e.ts
+
+> │          ├── 📄 tasks.e2e.ts
+
+> │          ├── 📄 team.e2e.ts
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 packages/
+
+> │        └── 📂 database/
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 prisma/
+
+> │            ├── 📄 schema.prisma
+
+> │          └── 📂 rls/
+
+> │            ├── 📄 enable-rls.sql
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 apply-rls.ts
+
+> │            ├── 📄 migrate-clients.ts
+
+> │            ├── 📄 migrate-document-sent-at.ts
+
+> │            ├── 📄 migrate-file-documents.ts
+
+> │          └── 📂 src/
+
+> │            ├── 📄 index.ts
+
+> │            ├── 📄 seed.ts
+
+> │          ├── 📄 tsconfig.json
+
+> │        └── 📂 email/
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 src/
+
+> │            ├── 📄 index.ts
+
+> │            └── 📂 templates/
+
+> │              ├── 📄 decision-closed.tsx
+
+> │              ├── 📄 document-reminder.tsx
+
+> │              ├── 📄 document-responded.tsx
+
+> │              ├── 📄 document-signing-turn.tsx
+
+> │              ├── 📄 document-uploaded.tsx
+
+> │              ├── 📄 invitation.tsx
+
+> │              ├── 📄 invoice-sent.tsx
+
+> │              ├── 📄 magic-link.tsx
+
+> │              ├── 📄 project-update.tsx
+
+> │              ├── 📄 reset-password.tsx
+
+> │              ├── 📄 task-assigned.tsx
+
+> │              ├── 📄 verify-email.tsx
+
+> │              ├── 📄 welcome.tsx
+
+> │          ├── 📄 tsconfig.json
+
+> │        └── 📂 shared/
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 src/
+
+> │            ├── 📄 index.ts
+
+> │          ├── 📄 tsconfig.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 dashboard.png
+
+> │        ├── 📄 icon.png
+
+> │        ├── 📄 landing.png
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 dev.ts
+
+> │        ├── 📄 setup.ts
+
+> │        ├── 📄 unraid-vm-snapshot.sh
+
+> │        ├── 📄 update-dockerhub-readme.sh
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 turbo.json
+
+> │      └── 📂 unraid/
+
+> │    └── 📂 video-transcriber/
+
+> │      ├── 📄 video_stt_pipeline.py
+
+> │  └── 📂 admin-portal/
+
+> │    ├── 📄 CNAME
+
+> │    ├── 📄 Dockerfile
+
+> │    ├── 📄 LICENSE
+
+> │    ├── 📄 Procfile
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 app.json
+
+> │    └── 📂 docker/
+
+> │    ├── 📄 docker-compose.yml
+
+> │      ├── 📄 Dockerfile-arm32v7
+
+> │      ├── 📄 Dockerfile-arm64v8
+
+> │      ├── 📄 Dockerfile-lite
+
+> │      ├── 📄 Dockerfile-old
+
+> │      ├── 📄 docker-readme.md
+
+> │      └── 📂 hooks/
+
+> │        ├── 📄 pre_build
+
+> │      ├── 📄 nginx.conf
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 alternate-views.md
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 CONTRIBUTORS.svg
+
+> │        ├── 📄 config-editor-demo.gif
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 minimal-view-demo.gif
+
+> │        ├── 📄 repo-visualization.svg
+
+> │        ├── 📄 sponsor-button.svg
+
+> │        ├── 📄 status-check-demo.gif
+
+> │        ├── 📄 theme-config-demo.gif
+
+> │        ├── 📄 theme-slideshow.gif
+
+> │        ├── 📄 workspace-demo.gif
+
+> │      ├── 📄 authentication.md
+
+> │      ├── 📄 backup-restore.md
+
+> │      ├── 📄 configuring.md
+
+> │      ├── 📄 contributing.md
+
+> │      ├── 📄 credits.md
+
+> │      ├── 📄 deployment.md
+
+> │      ├── 📄 developing.md
+
+> │      ├── 📄 development-guides.md
+
+> │      ├── 📄 icons.md
+
+> │      ├── 📄 management.md
+
+> │      ├── 📄 multi-language-support.md
+
+> │      ├── 📄 pages-and-sections.md
+
+> │      ├── 📄 privacy.md
+
+> │      ├── 📄 quick-start.md
+
+> │      ├── 📄 readme.md
+
+> │      ├── 📄 release-workflow.md
+
+> │      ├── 📄 searching.md
+
+> │      └── 📂 showcase/
+
+> │      ├── 📄 showcase.md
+
+> │        ├── 📄 1-home-lab-material.png
+
+> │        ├── 📄 10-dashy-live.png
+
+> │        ├── 📄 11-ricky-cz.png
+
+> │        ├── 📄 12-evo-dashboard.png
+
+> │        ├── 📄 13-dragons-lair.png
+
+> │        ├── 📄 2-networking-services-minimal-dark.png
+
+> │        ├── 📄 3-cft-toolbox.png
+
+> │        ├── 📄 4-bookmarks-colourful.png
+
+> │        ├── 📄 5-project-management.png
+
+> │        ├── 📄 6-nas-home-dashboard.png
+
+> │        ├── 📄 7-ground-control-dtctek.png
+
+> │        ├── 📄 8-shadowking001s-dashy.png
+
+> │        ├── 📄 9-home-lab-oblivion.png
+
+> │        ├── 📄 readme.md
+
+> │      ├── 📄 status-indicators.md
+
+> │      ├── 📄 theming.md
+
+> │      ├── 📄 troubleshooting.md
+
+> │      ├── 📄 widgets.md
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 netlify.toml
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 postcss.config.js
+
+> │    └── 📂 public/
+
+> │      ├── 📄 favicon.ico
+
+> │      └── 📂 fonts/
+
+> │        ├── 📄 Audiowide-Regular.ttf
+
+> │        ├── 📄 CutiveMono-Regular.ttf
+
+> │        ├── 📄 Digital-Regular.ttf
+
+> │        ├── 📄 FrancoisOne-Regular.ttf
+
+> │        ├── 📄 Podkova-Medium.ttf
+
+> │        ├── 📄 Roboto-Light.ttf
+
+> │        ├── 📄 Shrikhand-Regular.ttf
+
+> │        ├── 📄 Sniglet-Regular.ttf
+
+> │        ├── 📄 VT323-Regular.ttf
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 initialization.html
+
+> │      └── 📂 item-icons/
+
+> │      ├── 📄 loading-screen.css
+
+> │      ├── 📄 manifest.json
+
+> │      ├── 📄 robots.txt
+
+> │      ├── 📄 theme-fonts.css
+
+> │      └── 📂 web-icons/
+
+> │        ├── 📄 dashy-logo.png
+
+> │        ├── 📄 dashy-pwa_144x144.png
+
+> │        ├── 📄 dashy-pwa_192x192.png
+
+> │        ├── 📄 dashy-pwa_48x48.png
+
+> │        ├── 📄 dashy-pwa_512x512.png
+
+> │        ├── 📄 dashy-pwa_72x72.png
+
+> │        ├── 📄 dashy-pwa_96x96.png
+
+> │        ├── 📄 favicon-16x16.png
+
+> │        ├── 📄 favicon-32x32.png
+
+> │        ├── 📄 favicon-64x64.png
+
+> │      └── 📂 widget-resources/
+
+> │        ├── 📄 WeatherIcons.eot
+
+> │        ├── 📄 WeatherIcons.svg
+
+> │        ├── 📄 WeatherIcons.ttf
+
+> │        ├── 📄 WeatherIcons.woff
+
+> │        ├── 📄 WeatherIcons.woff2
+
+> │    └── 📂 qilauncher/
+
+> │      ├── 📄 App.tsx
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 _readme.md
+
+> │      └── 📂 api/
+
+> │        ├── 📄 adminClient.ts
+
+> │        ├── 📄 client.ts
+
+> │      └── 📂 components/
+
+> │        └── 📂 chat/
+
+> │          ├── 📄 ChatHeader.tsx
+
+> │          ├── 📄 ChatInput.tsx
+
+> │          ├── 📄 ChatSidebar.tsx
+
+> │          ├── 📄 MessageBubble.tsx
+
+> │          ├── 📄 MessageList.tsx
+
+> │        └── 📂 dashboard/
+
+> │          ├── 📄 DeploymentsTable.tsx
+
+> │          ├── 📄 HealthWidget.tsx
+
+> │          ├── 📄 PageHeader.tsx
+
+> │          ├── 📄 QueueWidget.tsx
+
+> │          ├── 📄 StatCard.tsx
+
+> │          ├── 📄 WorkersWidget.tsx
+
+> │        └── 📂 layout/
+
+> │          ├── 📄 AppLayout.tsx
+
+> │          ├── 📄 MobileHeader.tsx
+
+> │          ├── 📄 Sidebar.tsx
+
+> │        └── 📂 views/
+
+> │          ├── 📄 HealthView.tsx
+
+> │          ├── 📄 IngestionQueueView.tsx
+
+> │          ├── 📄 JobsView.tsx
+
+> │          ├── 📄 QueueView.tsx
+
+> │          ├── 📄 SettingsView.tsx
+
+> │          ├── 📄 WorkersView.tsx
+
+> │      └── 📂 hooks/
+
+> │        ├── 📄 useSpeechRecognition.ts
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 README.md
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.css
+
+> │        ├── 📄 main.jsx
+
+> │        ├── 📄 tailwind.css
+
+> │      ├── 📄 styles.css
+
+> │      ├── 📄 tailwind.config.js
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 tsconfig.node.json
+
+> │      └── 📂 types/
+
+> │      ├── 📄 types.ts
+
+> │        ├── 📄 speech.d.ts
+
+> │      └── 📂 utils/
+
+> │        ├── 📄 speech.ts
+
+> │      ├── 📄 vite.config.js
+
+> │    ├── 📄 server.js
+
+> │    └── 📂 services/
+
+> │      ├── 📄 config-validator.js
+
+> │      ├── 📄 cors-proxy.js
+
+> │      ├── 📄 get-user.js
+
+> │      ├── 📄 healthcheck.js
+
+> │      ├── 📄 print-message.js
+
+> │      ├── 📄 rebuild-app.js
+
+> │      ├── 📄 save-config.js
+
+> │      └── 📂 serverless-functions/
+
+> │        ├── 📄 cloud-status-check.js
+
+> │        ├── 📄 netlify-cors.js
+
+> │        ├── 📄 not-supported.js
+
+> │      ├── 📄 ssl-server.js
+
+> │      ├── 📄 status-check.js
+
+> │      ├── 📄 system-info.js
+
+> │      ├── 📄 update-checker.js
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.tsx
+
+> │      ├── 📄 App.vue
+
+> │      └── 📂 assets/
+
+> │        └── 📂 fonts/
+
+> │          ├── 📄 Inconsolata-Light.ttf
+
+> │          ├── 📄 PTMono-Regular.ttf
+
+> │          ├── 📄 Raleway-Variable.ttf
+
+> │        ├── 📄 index.css
+
+> │        └── 📂 interface-icons/
+
+> │          ├── 📄 add-new.svg
+
+> │          ├── 📄 application-about.svg
+
+> │          ├── 📄 application-change-view.svg
+
+> │          ├── 📄 application-home.svg
+
+> │          ├── 📄 application-minimal.svg
+
+> │          ├── 📄 application-rebuild.svg
+
+> │          ├── 📄 application-reload.svg
+
+> │          ├── 📄 application-workspace.svg
+
+> │          ├── 📄 back-arrow.svg
+
+> │          ├── 📄 broken-icon.svg
+
+> │          ├── 📄 burger-menu.svg
+
+> │          ├── 📄 cloud-backup-restore.svg
+
+> │          ├── 📄 config-backup.svg
+
+> │          ├── 📄 config-cancel.svg
+
+> │          ├── 📄 config-close.svg
+
+> │          ├── 📄 config-color-palette.svg
+
+> │          ├── 📄 config-custom-css.svg
+
+> │          ├── 📄 config-delete-local.svg
+
+> │          ├── 📄 config-download-file.svg
+
+> │          ├── 📄 config-edit-json.svg
+
+> │          ├── 📄 config-editor.svg
+
+> │          ├── 📄 config-language.svg
+
+> │          ├── 📄 config-meta-data.svg
+
+> │          ├── 📄 config-open-settings.svg
+
+> │          ├── 📄 config-pages.svg
+
+> │          ├── 📄 config-restore.svg
+
+> │          ├── 📄 icon-size-large.svg
+
+> │          ├── 📄 icon-size-medium.svg
+
+> │          ├── 📄 icon-size-small.svg
+
+> │          ├── 📄 interactive-editor-add.svg
+
+> │          ├── 📄 interactive-editor-app-config.svg
+
+> │          ├── 📄 interactive-editor-cancel-changes.svg
+
+> │          ├── 📄 interactive-editor-copy-clipboard.svg
+
+> │          ├── 📄 interactive-editor-edit-mode.svg
+
+> │          ├── 📄 interactive-editor-export-changes.svg
+
+> │          ├── 📄 interactive-editor-move-to.svg
+
+> │          ├── 📄 interactive-editor-page-info.svg
+
+> │          ├── 📄 interactive-editor-remove.svg
+
+> │          ├── 📄 interactive-editor-save-disk.svg
+
+> │          ├── 📄 interactive-editor-save-locally.svg
+
+> │          ├── 📄 layout-default.svg
+
+> │          ├── 📄 layout-horizontal.svg
+
+> │          ├── 📄 layout-vertical.svg
+
+> │          ├── 📄 loader.svg
+
+> │          ├── 📄 open-clipboard.svg
+
+> │          ├── 📄 open-current-tab.svg
+
+> │          ├── 📄 open-iframe.svg
+
+> │          ├── 📄 open-new-tab.svg
+
+> │          ├── 📄 open-parent.svg
+
+> │          ├── 📄 open-top.svg
+
+> │          ├── 📄 open-workspace.svg
+
+> │          ├── 📄 save-config.svg
+
+> │          ├── 📄 section-expand-collapse.svg
+
+> │          ├── 📄 unknown-icon.svg
+
+> │          ├── 📄 user-logout.svg
+
+> │          ├── 📄 widget-update.svg
+
+> │        └── 📂 locales/
+
+> │          ├── 📄 ar.json
+
+> │          ├── 📄 bg.json
+
+> │          ├── 📄 bn.json
+
+> │          ├── 📄 cs.json
+
+> │          ├── 📄 da.json
+
+> │          ├── 📄 de.json
+
+> │          ├── 📄 el.json
+
+> │          ├── 📄 en.json
+
+> │          ├── 📄 es.json
+
+> │          ├── 📄 fr.json
+
+> │          ├── 📄 gl.json
+
+> │          ├── 📄 hi.json
+
+> │          ├── 📄 hu.json
+
+> │          ├── 📄 it.json
+
+> │          ├── 📄 ja.json
+
+> │          ├── 📄 ko.json
+
+> │          ├── 📄 ky.json
+
+> │          ├── 📄 nb.json
+
+> │          ├── 📄 nl.json
+
+> │          ├── 📄 pl.json
+
+> │          ├── 📄 pt.json
+
+> │          ├── 📄 ro.json
+
+> │          ├── 📄 ru.json
+
+> │          ├── 📄 sk.json
+
+> │          ├── 📄 sl.json
+
+> │          ├── 📄 sv.json
+
+> │          ├── 📄 tr.json
+
+> │          ├── 📄 uk.json
+
+> │          ├── 📄 zh-CN.json
+
+> │          ├── 📄 zh-TW.json
+
+> │          ├── 📄 zz-pirate.json
+
+> │      └── 📂 components/
+
+> │        └── 📂 Charts/
+
+> │          ├── 📄 Gauge.vue
+
+> │          ├── 📄 PercentageChart.vue
+
+> │        └── 📂 Configuration/
+
+> │          ├── 📄 AccessError.vue
+
+> │          ├── 📄 AppInfoModal.vue
+
+> │          ├── 📄 AppVersion.vue
+
+> │          ├── 📄 CloudBackupRestore.vue
+
+> │          ├── 📄 ConfigContainer.vue
+
+> │          ├── 📄 CustomCss.vue
+
+> │          ├── 📄 EditSiteMeta.vue
+
+> │          ├── 📄 JsonEditor.vue
+
+> │          ├── 📄 RebuildApp.vue
+
+> │        └── 📂 FormElements/
+
+> │          ├── 📄 Button.vue
+
+> │          ├── 📄 Input.vue
+
+> │          ├── 📄 Radio.vue
+
+> │          ├── 📄 Select.vue
+
+> │          ├── 📄 Toggle.vue
+
+> │        └── 📂 InteractiveEditor/
+
+> │          ├── 📄 AddNewSectionLauncher.vue
+
+> │          ├── 📄 EditAppConfig.vue
+
+> │          ├── 📄 EditItem.vue
+
+> │          ├── 📄 EditModeSaveMenu.vue
+
+> │          ├── 📄 EditModeTopBanner.vue
+
+> │          ├── 📄 EditMultiPages.vue
+
+> │          ├── 📄 EditPageInfo.vue
+
+> │          ├── 📄 EditSection.vue
+
+> │          ├── 📄 ExportConfigMenu.vue
+
+> │          ├── 📄 MoveItemTo.vue
+
+> │          ├── 📄 SaveCancelButtons.vue
+
+> │        └── 📂 LinkItems/
+
+> │          ├── 📄 Collapsable.vue
+
+> │          ├── 📄 IframeModal.vue
+
+> │          ├── 📄 Item.vue
+
+> │          ├── 📄 ItemContextMenu.vue
+
+> │          ├── 📄 ItemIcon.vue
+
+> │          ├── 📄 ItemOpenMethodIcon.vue
+
+> │          ├── 📄 Section.vue
+
+> │          ├── 📄 SectionContextMenu.vue
+
+> │          ├── 📄 StatusIndicator.vue
+
+> │          ├── 📄 SubItem.vue
+
+> │          ├── 📄 SubItemGroup.vue
+
+> │        └── 📂 MinimalView/
+
+> │          ├── 📄 MinimalHeading.vue
+
+> │          ├── 📄 MinimalSearch.vue
+
+> │          ├── 📄 MinimalSection.vue
+
+> │        └── 📂 PageStrcture/
+
+> │          ├── 📄 CriticalError.vue
+
+> │          ├── 📄 Footer.vue
+
+> │          ├── 📄 Header.vue
+
+> │          ├── 📄 LoadingScreen.vue
+
+> │          ├── 📄 Nav.vue
+
+> │          ├── 📄 PageTitle.vue
+
+> │        └── 📂 Settings/
+
+> │          ├── 📄 AuthButtons.vue
+
+> │          ├── 📄 ConfigLauncher.vue
+
+> │          ├── 📄 CustomThemeMaker.vue
+
+> │          ├── 📄 ItemSizeSelector.vue
+
+> │          ├── 📄 LanguageSwitcher.vue
+
+> │          ├── 📄 LayoutSelector.vue
+
+> │          ├── 📄 LocalConfigWarning.vue
+
+> │          ├── 📄 SearchBar.vue
+
+> │          ├── 📄 SettingsContainer.vue
+
+> │          ├── 📄 ThemeSelector.vue
+
+> │          ├── 📄 ViewSwitcher.vue
+
+> │        └── 📂 Widgets/
+
+> │          ├── 📄 AdGuardDnsInfo.vue
+
+> │          ├── 📄 AdGuardFilterStatus.vue
+
+> │          ├── 📄 AdGuardStats.vue
+
+> │          ├── 📄 AdGuardTopDomains.vue
+
+> │          ├── 📄 AnonAddy.vue
+
+> │          ├── 📄 Apod.vue
+
+> │          ├── 📄 BlacklistCheck.vue
+
+> │          ├── 📄 Blank.vue
+
+> │          ├── 📄 ChuckNorris.vue
+
+> │          ├── 📄 Clock.vue
+
+> │          ├── 📄 CodeStats.vue
+
+> │          ├── 📄 CovidStats.vue
+
+> │          ├── 📄 CryptoPriceChart.vue
+
+> │          ├── 📄 CryptoWatchList.vue
+
+> │          ├── 📄 CustomList.vue
+
+> │          ├── 📄 CustomSearch.vue
+
+> │          ├── 📄 CveVulnerabilities.vue
+
+> │          ├── 📄 DomainMonitor.vue
+
+> │          ├── 📄 DroneCi.vue
+
+> │          ├── 📄 EmbedWidget.vue
+
+> │          ├── 📄 EthGasPrices.vue
+
+> │          ├── 📄 ExchangeRates.vue
+
+> │          ├── 📄 Filebrowser.vue
+
+> │          ├── 📄 Flights.vue
+
+> │          ├── 📄 GitHubProfile.vue
+
+> │          ├── 📄 GitHubTrending.vue
+
+> │          ├── 📄 GlAlerts.vue
+
+> │          ├── 📄 GlCompactMetrics.vue
+
+> │          ├── 📄 GlCpuCores.vue
+
+> │          ├── 📄 GlCpuGauge.vue
+
+> │          ├── 📄 GlCpuHistory.vue
+
+> │          ├── 📄 GlCpuSpeedometer.vue
+
+> │          ├── 📄 GlCpuTemp.vue
+
+> │          ├── 📄 GlDiskIo.vue
+
+> │          ├── 📄 GlDiskSpace.vue
+
+> │          ├── 📄 GlIpAddress.vue
+
+> │          ├── 📄 GlLoadHistory.vue
+
+> │          ├── 📄 GlMemGauge.vue
+
+> │          ├── 📄 GlMemHistory.vue
+
+> │          ├── 📄 GlMemSpeedometer.vue
+
+> │          ├── 📄 GlNetworkInterfaces.vue
+
+> │          ├── 📄 GlNetworkTraffic.vue
+
+> │          ├── 📄 GlSystemLoad.vue
+
+> │          ├── 📄 GlancesUptime.vue
+
+> │          ├── 📄 GluetunStatus.vue
+
+> │          ├── 📄 HackernewsTrending.vue
+
+> │          ├── 📄 HealthChecks.vue
+
+> │          ├── 📄 IframeWidget.vue
+
+> │          ├── 📄 ImageWidget.vue
+
+> │          ├── 📄 Jokes.vue
+
+> │          ├── 📄 Linkding.vue
+
+> │          ├── 📄 MinecraftStatus.vue
+
+> │          ├── 📄 MullvadStatus.vue
+
+> │          ├── 📄 Mvg.vue
+
+> │          ├── 📄 MvgConnection.vue
+
+> │          ├── 📄 NdCpuHistory.vue
+
+> │          ├── 📄 NdLoadHistory.vue
+
+> │          ├── 📄 NdRamHistory.vue
+
+> │          ├── 📄 NewsHeadlines.vue
+
+> │          ├── 📄 NextcloudNotifications.vue
+
+> │          ├── 📄 NextcloudPhpOpcache.vue
+
+> │          ├── 📄 NextcloudStats.vue
+
+> │          ├── 📄 NextcloudSystem.vue
+
+> │          ├── 📄 NextcloudUser.vue
+
+> │          ├── 📄 NextcloudUserStatus.vue
+
+> │          ├── 📄 PiHoleStats.vue
+
+> │          ├── 📄 PiHoleStatsV6.vue
+
+> │          ├── 📄 PiHoleTopQueries.vue
+
+> │          ├── 📄 PiHoleTopQueriesV6.vue
+
+> │          ├── 📄 PiHoleTraffic.vue
+
+> │          ├── 📄 PiHoleTrafficV6.vue
+
+> │          ├── 📄 Proxmox.vue
+
+> │          ├── 📄 PublicHolidays.vue
+
+> │          ├── 📄 PublicIp.vue
+
+> │          ├── 📄 RescueTime.vue
+
+> │          ├── 📄 RssFeed.vue
+
+> │          ├── 📄 Sabnzbd.vue
+
+> │          ├── 📄 SportsScores.vue
+
+> │          ├── 📄 StatPing.vue
+
+> │          ├── 📄 StockPriceChart.vue
+
+> │          ├── 📄 SynologyDownload.vue
+
+> │          ├── 📄 SystemInfo.vue
+
+> │          ├── 📄 TacticalRMM.vue
+
+> │          ├── 📄 TflStatus.vue
+
+> │          ├── 📄 UptimeKuma.vue
+
+> │          ├── 📄 UptimeKumaStatusPage.vue
+
+> │          ├── 📄 WalletBalance.vue
+
+> │          ├── 📄 Weather.vue
+
+> │          ├── 📄 WeatherForecast.vue
+
+> │          ├── 📄 WidgetBase.vue
+
+> │          ├── 📄 XkcdComic.vue
+
+> │        └── 📂 Workspace/
+
+> │          ├── 📄 MultiTaskingWebComtent.vue
+
+> │          ├── 📄 SideBar.vue
+
+> │          ├── 📄 SideBarItem.vue
+
+> │          ├── 📄 SideBarSection.vue
+
+> │          ├── 📄 WebContent.vue
+
+> │          ├── 📄 WidgetView.vue
+
+> │        └── 📂 layout/
+
+> │          ├── 📄 Sidebar.tsx
+
+> │      └── 📂 directives/
+
+> │        ├── 📄 ClickOutside.js
+
+> │        ├── 📄 LongPress.js
+
+> │      └── 📂 features/
+
+> │        └── 📂 cases/
+
+> │          ├── 📄 CaseManager.tsx
+
+> │        └── 📂 household/
+
+> │          ├── 📄 HouseholdModule.tsx
+
+> │        └── 📂 timeline/
+
+> │          ├── 📄 TimelineModule.tsx
+
+> │          ├── 📄 TimelineNode.tsx
+
+> │          ├── 📄 index.ts
+
+> │          ├── 📄 types.ts
+
+> │      └── 📂 lib/
+
+> │        ├── 📄 supabase.ts
+
+> │      ├── 📄 main.js
+
+> │      ├── 📄 main.tsx
+
+> │      └── 📂 mixins/
+
+> │        ├── 📄 ChartingMixin.js
+
+> │        ├── 📄 ConfigSaving.js
+
+> │        ├── 📄 GlancesMixin.js
+
+> │        ├── 📄 HomeMixin.js
+
+> │        ├── 📄 ItemMixin.js
+
+> │        ├── 📄 NextcloudMixin.js
+
+> │        ├── 📄 ThemingMixin.js
+
+> │        ├── 📄 WidgetMixin.js
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 SystemStatusPage.tsx
+
+> │        └── 📂 admin/
+
+> │          ├── 📄 CaseManager.tsx
+
+> │          ├── 📄 Dashboard.tsx
+
+> │          ├── 📄 Login.tsx
+
+> │          ├── 📄 TableBrowser.tsx
+
+> │          ├── 📄 TenantManager.tsx
+
+> │          ├── 📄 UserManager.tsx
+
+> │      └── 📂 router/
+
+> │      ├── 📄 router.js
+
+> │        ├── 📄 index.tsx
+
+> │      └── 📂 store/
+
+> │      ├── 📄 store.js
+
+> │        ├── 📄 AuthContext.tsx
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 color-palette.scss
+
+> │        ├── 📄 color-themes.scss
+
+> │        ├── 📄 dimensions.scss
+
+> │        ├── 📄 global-styles.scss
+
+> │        ├── 📄 media-queries.scss
+
+> │        ├── 📄 schema-editor.scss
+
+> │        ├── 📄 style-helpers.scss
+
+> │        ├── 📄 typography.scss
+
+> │        ├── 📄 user-defined-themes.scss
+
+> │        ├── 📄 weather-icons.scss
+
+> │        └── 📂 widgets/
+
+> │          ├── 📄 nextcloud-shared.scss
+
+> │      └── 📂 types/
+
+> │        ├── 📄 database.types.ts
+
+> │      └── 📂 utils/
+
+> │        ├── 📄 ArrowKeyNavigation.js
+
+> │        ├── 📄 Auth.js
+
+> │        ├── 📄 CheckItemVisibility.js
+
+> │        ├── 📄 CheckPageVisibility.js
+
+> │        ├── 📄 CheckSectionVisibility.js
+
+> │        ├── 📄 CloudBackup.js
+
+> │        ├── 📄 ConfigAccumalator.js
+
+> │        ├── 📄 ConfigHelpers.js
+
+> │        ├── 📄 ConfigSchema.json
+
+> │        ├── 📄 CoolConsole.js
+
+> │        ├── 📄 EmojiUnicodeRegex.js
+
+> │        ├── 📄 ErrorHandler.js
+
+> │        ├── 📄 ErrorReporting.js
+
+> │        ├── 📄 HeaderAuth.js
+
+> │        ├── 📄 InitServiceWorker.js
+
+> │        ├── 📄 IsVisibleToUser.js
+
+> │        ├── 📄 KeycloakAuth.js
+
+> │        ├── 📄 MiscHelpers.js
+
+> │        ├── 📄 OidcAuth.js
+
+> │        ├── 📄 Sanitizer.js
+
+> │        ├── 📄 Search.js
+
+> │        ├── 📄 SectionHelpers.js
+
+> │        ├── 📄 StoreMutations.js
+
+> │        ├── 📄 defaults.js
+
+> │        ├── 📄 emojis.json
+
+> │        ├── 📄 languages.js
+
+> │      └── 📂 views/
+
+> │        ├── 📄 404.vue
+
+> │        ├── 📄 About.vue
+
+> │        ├── 📄 DownloadConfig.vue
+
+> │        ├── 📄 Home.vue
+
+> │        ├── 📄 Login.vue
+
+> │        ├── 📄 Minimal.vue
+
+> │        ├── 📄 Workspace.vue
+
+> │      ├── 📄 vite-env.d.ts
+
+> │    ├── 📄 tailwind.config.js
+
+> │    └── 📂 tests/
+
+> │      └── 📂 components/
+
+> │        ├── 📄 item.test.js
+
+> │      ├── 📄 docker-smoke-test.sh
+
+> │      └── 📂 fixtures/
+
+> │        ├── 📄 valid-config.yml
+
+> │      ├── 📄 setup.js
+
+> │      └── 📂 unit/
+
+> │        ├── 📄 config-helpers.test.js
+
+> │        ├── 📄 config-validator.test.js
+
+> │        ├── 📄 error-handler.test.js
+
+> │        ├── 📄 healthcheck.test.js
+
+> │        ├── 📄 smoke.test.js
+
+> │    ├── 📄 tsconfig.json
+
+> │    └── 📂 user-data/
+
+> │      ├── 📄 conf.yml
+
+> │    ├── 📄 vite.config.ts
+
+> │    ├── 📄 vitest.config.js
+
+> │    ├── 📄 vue.config.js
+
+> │    ├── 📄 yarn.lock
+
+> │  └── 📂 api/
+
+> │    └── 📂 __pycache__/
+
+> │    ├── 📄 config.py
+
+> │    ├── 📄 database.py
+
+> │    ├── 📄 main.py
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 requirements.txt
+
+> │    └── 📂 routers/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 auth.py
+
+> │      ├── 📄 objects.py
+
+> │      ├── 📄 organizations.py
+
+> │      ├── 📄 users.py
+
+> │    └── 📂 schemas/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 auth.py
+
+> │    └── 📂 services/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 auth.py
+
+> │    └── 📂 venv/
+
+> │  └── 📂 qially-flows/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 assets/
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 logo.svg
+
+> │      ├── 📄 styles.css
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 privacy.html
+
+> │    ├── 📄 terms.html
+
+> │  └── 📂 qially-me/
+
+> │    ├── 📄 astro.config.mjs
+
+> │    ├── 📄 biome.json
+
+> │    ├── 📄 components.json
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 pnpm-lock.yaml
+
+> │    └── 📂 public/
+
+> │      ├── 📄 activity.svg
+
+> │      └── 📂 cards/
+
+> │        ├── 📄 fresh.png
+
+> │        ├── 📄 fresh.webp
+
+> │        ├── 📄 glass.png
+
+> │        ├── 📄 glass.webp
+
+> │        ├── 📄 mermaid.svg
+
+> │      ├── 📄 og.webp
+
+> │      ├── 📄 placeholder.webp
+
+> │      ├── 📄 rss.svg
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 build-pagefind-index.ts
+
+> │    └── 📂 site_QSaysIt_v1/
+
+> │      └── 📂 posts/
+
+> │        └── 📂 2026/
+
+> │          └── 📂 2026-02-19_post-title/
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 brief.m4a
+
+> │              ├── 📄 critique.m4a
+
+> │              ├── 📄 debate.m4a
+
+> │              ├── 📄 deepdive.m4a
+
+> │              ├── 📄 explainer.mp4
+
+> │              ├── 📄 hero.jpg
+
+> │              ├── 📄 infographic.jpg
+
+> │            ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 qsaysit_blog/
+
+> │        └── 📂 templates/
+
+> │          └── 📂 2026-02-19_post-title/
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 brief.m4a
+
+> │              ├── 📄 critique.m4a
+
+> │              ├── 📄 debate.m4a
+
+> │              ├── 📄 deepdive.m4a
+
+> │              ├── 📄 explainer.mp4
+
+> │              ├── 📄 hero.jpg
+
+> │              ├── 📄 infographic.jpg
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 post_template.md
+
+> │      └── 📂 templates/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 post_template.md
+
+> │    └── 📂 src/
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 creations.json
+
+> │      └── 📂 components/
+
+> │        ├── 📄 BaseHead.astro
+
+> │        ├── 📄 BetaBadge.astro
+
+> │        ├── 📄 FormattedDate.astro
+
+> │        ├── 📄 HeaderLink.astro
+
+> │        ├── 📄 OptimizedImage.astro
+
+> │        ├── 📄 ProductCard.tsx
+
+> │        ├── 📄 ProductSection.astro
+
+> │        ├── 📄 ShareButtons.astro
+
+> │        ├── 📄 TagFilter.astro
+
+> │        └── 📂 blog/
+
+> │          ├── 📄 BlogCard.astro
+
+> │          ├── 📄 BlogsPage.astro
+
+> │        ├── 📄 copy-button.tsx
+
+> │        ├── 📄 image-viewer.tsx
+
+> │        └── 📂 knowledge-card/
+
+> │          ├── 📄 CardActions.astro
+
+> │          ├── 📄 CardBack.astro
+
+> │          ├── 📄 CardContainer.astro
+
+> │          ├── 📄 CardCover.astro
+
+> │          ├── 📄 CardFront.astro
+
+> │          ├── 📄 CardLink.astro
+
+> │          ├── 📄 CardsPage.astro
+
+> │          ├── 📄 KnowledgeCard.astro
+
+> │          ├── 📄 LinksModal.astro
+
+> │          ├── 📄 StructureDisplay.astro
+
+> │          ├── 📄 types.ts
+
+> │        └── 📂 landing-page/
+
+> │          ├── 📄 HeroSection.astro
+
+> │          ├── 📄 LatestSection.astro
+
+> │          ├── 📄 ScrollingTags.astro
+
+> │        └── 📂 navigation/
+
+> │          ├── 📄 ContentNavigation.astro
+
+> │        └── 📂 slide/
+
+> │          ├── 📄 SlideCard.astro
+
+> │          ├── 📄 SlidesPage.astro
+
+> │          ├── 📄 slide-viewer.tsx
+
+> │        └── 📂 ui/
+
+> │          ├── 📄 dialog.tsx
+
+> │          ├── 📄 sonner.tsx
+
+> │      ├── 📄 consts.ts
+
+> │      └── 📂 content/
+
+> │      ├── 📄 content.config.ts
+
+> │        └── 📂 blogs/
+
+> │          └── 📂 2025-08/
+
+> │            ├── 📄 groq-code-cli-internal.md
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 slides-01.png
+
+> │              ├── 📄 slides-02.png
+
+> │        └── 📂 cards/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 how-openai-uses-codex.md
+
+> │        └── 📂 doodles/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 monakit-released.md
+
+> │          └── 📂 2025-10/
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 doodle-list.png
+
+> │              ├── 📄 doodle.png
+
+> │            ├── 📄 mona-update-doodle-and-more.md
+
+> │        └── 📂 slides/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 agents-md-101.md
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 agents-md-ecosystem.png
+
+> │          └── 📂 2025-12/
+
+> │            ├── 📄 quadratic-101.md
+
+> │      ├── 📄 env.ts
+
+> │      └── 📂 layouts/
+
+> │        ├── 📄 ContentIndexLayout.astro
+
+> │        ├── 📄 MainLayout.astro
+
+> │      └── 📂 lib/
+
+> │        ├── 📄 navigation.ts
+
+> │        ├── 📄 pagination.ts
+
+> │        ├── 📄 utils.ts
+
+> │      └── 📂 pages/
+
+> │        └── 📂 blogs/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        ├── 📄 creations.astro
+
+> │        └── 📂 doodles/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        ├── 📄 index.astro
+
+> │        ├── 📄 og-enhanced.ts
+
+> │        ├── 📄 rss.xml.ts
+
+> │        ├── 📄 search.astro
+
+> │        └── 📂 slides/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 blog.ts
+
+> │        ├── 📄 card.ts
+
+> │        ├── 📄 doodle.ts
+
+> │        ├── 📄 slide.ts
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 article.css
+
+> │        ├── 📄 card.css
+
+> │        ├── 📄 global.css
+
+> │        ├── 📄 scrolling-tags.css
+
+> │      └── 📂 themes/
+
+> │        ├── 📄 knowledge-card-themes.ts
+
+> │        ├── 📄 slide-card-themes.ts
+
+> │      └── 📂 types/
+
+> │        ├── 📄 product.ts
+
+> │        ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 qially-web/
+
+> │    ├── 📄 404.html
+
+> │    ├── 📄 LICENSE
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 assets/
+
+> │      ├── 📄 cody_rice_velasquez-fullstack.pdf
+
+> │      └── 📂 css/
+
+> │        ├── 📄 global_styles.css
+
+> │        ├── 📄 styles.css
+
+> │      └── 📂 files/
+
+> │        ├── 📄 balance-sheet-template.xlsx
+
+> │        ├── 📄 contact.json
+
+> │        ├── 📄 emailsignature.html
+
+> │        └── 📂 forms/
+
+> │          └── 📂 uscis/
+
+> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
+
+> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
+
+> │            ├── 📄 Form-I-485.pdf
+
+> │            ├── 📄 Form-I-693.pdf
+
+> │        ├── 📄 income-statement-template.xlsx
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 payroll-calendar-2026.pdf
+
+> │        ├── 📄 resume.pdf
+
+> │        ├── 📄 services-full.json
+
+> │        ├── 📄 tax-prep-checklist.pdf
+
+> │      └── 📂 images/
+
+> │        ├── 📄 allegaracasa.jpg
+
+> │        ├── 📄 astrotext.png
+
+> │        ├── 📄 back-master-small.jpg
+
+> │        ├── 📄 business-performance-wins.png
+
+> │        └── 📂 business_tools/
+
+> │          ├── 📄 balance_sheet.svg
+
+> │          ├── 📄 calendar.svg
+
+> │          ├── 📄 capital.svg
+
+> │          ├── 📄 checklist.svg
+
+> │          ├── 📄 funding.svg
+
+> │          ├── 📄 income.svg
+
+> │          ├── 📄 inventory.svg
+
+> │          ├── 📄 invoice.svg
+
+> │          ├── 📄 payroll.svg
+
+> │          ├── 📄 sku.svg
+
+> │        ├── 📄 cassie-boca-x-tbVqkfQCU-unsplash.jpg
+
+> │        ├── 📄 cover.jpg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.png
+
+> │        ├── 📄 favicon.webp
+
+> │        ├── 📄 jesse-gardner-EqdpXeemf58-unsplash.jpg
+
+> │        ├── 📄 jf-martin-Ofs3LjEUcrk-unsplash.jpg
+
+> │        ├── 📄 josh-rose-trYl7JYATH0-unsplash.jpg
+
+> │        ├── 📄 llegaracasa.jpg
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 profile-nogb.jpg
+
+> │        ├── 📄 profile.jpg
+
+> │        ├── 📄 tersius-van-rhyn-xcQWMPm9fG8-unsplash.jpg
+
+> │      └── 📂 js/
+
+> │        ├── 📄 i18n.js
+
+> │        ├── 📄 main.js
+
+> │      └── 📂 templates/
+
+> │        ├── 📄 detail.html
+
+> │        ├── 📄 flow.html
+
+> │        ├── 📄 hub.html
+
+> │        ├── 📄 promo.html
+
+> │      └── 📂 vids/
+
+> │        ├── 📄 video-logo.mp4
+
+> │    ├── 📄 build_nav.py
+
+> │    └── 📂 chat/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 sales-iq-landing-page-qr-code.png
+
+> │    ├── 📄 check_links.py
+
+> │    └── 📂 client-portals/
+
+> │      └── 📂 dmejiasmartinez/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 deepdash.m4a
+
+> │        ├── 📄 div.pdf
+
+> │        ├── 📄 eic.pdf
+
+> │        ├── 📄 estimated.pdf
+
+> │        ├── 📄 federal.pdf
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 infographic.png
+
+> │        ├── 📄 installments.pdf
+
+> │        ├── 📄 sse.pdf
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 letters/
+
+> │        └── 📂 client.wiletvaldo_calderon-ramirez/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 infographic.png
+
+> │          ├── 📄 review_audio.m4a
+
+> │        └── 📂 engagement/
+
+> │          ├── 📄 SignForm_URL_QR.png
+
+> │          ├── 📄 engagement_standard.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 evansville_inn/
+
+> │          ├── 📄 Notice_Room_Conditions.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 components/
+
+> │      ├── 📄 footer.html
+
+> │      ├── 📄 header.html
+
+> │    └── 📂 contact/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 data/
+
+> │      ├── 📄 _redirects
+
+> │      ├── 📄 site_map.json
+
+> │    └── 📂 faq/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 functions/
+
+> │      ├── 📄 [[path]].js
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 humans.txt
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 make_stubs.py
+
+> │    ├── 📄 manifest.webmanifest
+
+> │    └── 📂 modules/
+
+> │      └── 📂 cody/
+
+> │        └── 📂 ecard/
+
+> │          ├── 📄 cody.vcf
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 helpcody/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 data.csv
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 portfolio/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 q-showcase-light.html
+
+> │      └── 📂 flows/
+
+> │        ├── 📄 README.md
+
+> │        └── 📂 estate-planning/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 privacy.html
+
+> │        ├── 📄 terms.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 legal/
+
+> │        └── 📂 accessibility/
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 service_animal_gigi/
+
+> │            ├── 📄 Gigi_Certification_Statement.html
+
+> │            ├── 📄 Gigi_Documentation_Pack.md
+
+> │            ├── 📄 Gigi_Documentation_Pack_Print.html
+
+> │            ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │            ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
+
+> │            ├── 📄 Notice_Service_Animal_Status.html
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 gigi_service_dog_hero.png
+
+> │            ├── 📄 index.html
+
+> │        └── 📂 compliance/
+
+> │          ├── 📄 data-inventory.html
+
+> │          ├── 📄 incident-response.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 internal/
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 provider-agreements/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 training-logs/
+
+> │              ├── 📄 index.html
+
+> │          ├── 📄 risk-assessment.html
+
+> │          ├── 📄 wisp-core.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 promo/
+
+> │        └── 📂 cashapp_bonus/
+
+> │          ├── 📄 Cash_App_$15_Bonus_Five_Simple_Steps.m4a
+
+> │          ├── 📄 bonus_cody_en.mp3
+
+> │          ├── 📄 bonus_cody_es.mp3
+
+> │          ├── 📄 bonus_explainer_nlm_en.mp3
+
+> │          ├── 📄 bonus_explainer_nlm_es.mp3
+
+> │          ├── 📄 bonus_steps_es.png
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 infographic.png
+
+> │          ├── 📄 unnamed.png
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 quickbooks/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 zoho/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 referral/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 review/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qrcode_www.google.com.png
+
+> │      └── 📂 tools/
+
+> │        └── 📂 budgets/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 business-readiness-check/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 expense-tracker/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 receipt-organizer/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 tax-checklist/
+
+> │          ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 prepublish.py
+
+> │    └── 📂 privacy/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 public/
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 favicon.svg
+
+> │      ├── 📄 manifest.webmanifest
+
+> │    └── 📂 resources/
+
+> │      └── 📂 compliance/
+
+> │        └── 📂 data-inventory/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 incident-response/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 provider-agreements/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 risk-assessment/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 training-logs/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 wisp/
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 kb/
+
+> │        └── 📂 accounting-cleanup/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 getting-started/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 irs-notices/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 tax-resolution/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 msa/
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 robots.txt
+
+> │    └── 📂 services/
+
+> │      └── 📂 books/
+
+> │        └── 📂 bookkeeping/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 year-end-process/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 compliance/
+
+> │        └── 📂 business-formation/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 flows/
+
+> │        └── 📂 immigration-forms/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 translations/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 hr-ops/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 it-ai/
+
+> │        └── 📂 automation-ai/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 marketing/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 qisuite/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 tax/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 prep/
+
+> │          └── 📂 2025/
+
+> │            ├── 📄 FormsQRCode.png
+
+> │            ├── 📄 bookingQRCode.png
+
+> │            └── 📂 email-templates/
+
+> │              ├── 📄 email-01-simple-w2.html
+
+> │              ├── 📄 email-02-self-employed.html
+
+> │              ├── 📄 email-03-complex.html
+
+> │              ├── 📄 email-04-itin.html
+
+> │              ├── 📄 email-05-business.html
+
+> │              ├── 📄 email-06-confirmation-docs.html
+
+> │              ├── 📄 email-generic-next-steps.html
+
+> │              ├── 📄 email-intake-received.html
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 forms/
+
+> │              ├── 📄 business.html
+
+> │              ├── 📄 complex.html
+
+> │              ├── 📄 head-of-household.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 itin.html
+
+> │              ├── 📄 self-employed.html
+
+> │              ├── 📄 simple-w2.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 next-steps/
+
+> │              ├── 📄 business.html
+
+> │              ├── 📄 complex.html
+
+> │              ├── 📄 head-of-household.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 itin.html
+
+> │              ├── 📄 self-employed.html
+
+> │              ├── 📄 simple-w2.html
+
+> │            ├── 📄 prompts.md
+
+> │            ├── 📄 qr-code.html
+
+> │            ├── 📄 tax-prep-2025-booking.html
+
+> │            ├── 📄 tax-prep-2025-intake.html
+
+> │            └── 📂 tax99/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 steps/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 templates/
+
+> │                ├── 📄 email-template-client.html
+
+> │                ├── 📄 email-template-internal.html
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 worker.js
+
+> │              ├── 📄 wrangler.toml
+
+> │            ├── 📄 taxprepqially.jpg
+
+> │          └── 📂 forms/
+
+> │            ├── 📄 business.html
+
+> │            ├── 📄 complex.html
+
+> │            ├── 📄 head-of-household.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 itin.html
+
+> │            ├── 📄 self-employed.html
+
+> │            ├── 📄 simple-w2.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 intake/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 next-steps/
+
+> │            └── 📂 business-return/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 complex-return/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 head-of-household/
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 individual/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 itin/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 self-employed/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 simple-w2/
+
+> │              ├── 📄 index.html
+
+> │          ├── 📄 qr-code.html
+
+> │          ├── 📄 tax-prep-2025-booking.html
+
+> │    └── 📂 showcases/
+
+> │      └── 📂 20000-swing/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 videos.html
+
+> │    ├── 📄 sitemap.xml
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.tsx
+
+> │      └── 📂 components/
+
+> │        ├── 📄 footer.tsx
+
+> │        ├── 📄 hero.tsx
+
+> │        ├── 📄 nav.tsx
+
+> │      ├── 📄 main.tsx
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 about.tsx
+
+> │        ├── 📄 contact.tsx
+
+> │        ├── 📄 home.tsx
+
+> │        ├── 📄 legal.tsx
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 index.css
+
+> │    └── 📂 terms/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 vite.config.ts
+
+> │  └── 📂 qibooks/
+
+> │    └── 📂 bankrules/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 rule_manager.py
+
+> │      ├── 📄 rules.csv
+
+> │      ├── 📄 run.bat
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 statement_tools/
+
+> │      └── 📂 cashApp/
+
+> │        ├── 📄 cashapp_converter.py
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 requirements.txt
+
+> │  └── 📂 qinote/
+
+> │    ├── 📄 0.00.00-qios_genesis.md
+
+> │    ├── 📄 QiNoteOS_Dev_Doc_v1.2_ColdStart_Final.pdf
+
+> │    └── 📂 apps/
+
+> │      └── 📂 ui/
+
+> │        └── 📂 standard/
+
+> │          └── 📂 public/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 src/
+
+> │            ├── 📄 App.css
+
+> │            ├── 📄 App.jsx
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index.css
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 main.jsx
+
+> │      └── 📂 versions/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 log.md
+
+> │    └── 📂 data/
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 migrations/
+
+> │        ├── 📄 003_file_history.sql
+
+> │        ├── 📄 004_daily_life_objects.sql
+
+> │        ├── 📄 005_typed_links.sql
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 rules/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qios_rules_v1_1.yaml
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 seeds/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 supabase_seed_core_status.sql
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 CODE_REVIEW.md
+
+> │      ├── 📄 PRODUCTION_READINESS_FIXES.md
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 SETUP_STATUS.md
+
+> │      ├── 📄 TESTING_CHECKLIST.md
+
+> │      ├── 📄 n8n_workflows_v0.md
+
+> │      ├── 📄 normalization_rules_v0.md
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 kernel/
+
+> │      └── 📂 config/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 kernel.yaml
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qid_bridge.py
+
+> │        ├── 📄 rag.py
+
+> │    └── 📂 packages/
+
+> │      └── 📂 api-client/
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 client.ts
+
+> │          ├── 📄 index.ts
+
+> │        ├── 📄 tsconfig.json
+
+> │      └── 📂 core/
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 index.ts
+
+> │          ├── 📄 types.ts
+
+> │      └── 📂 editors/
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 MarkdownEditor.tsx
+
+> │          ├── 📄 RichTextEditor.tsx
+
+> │          ├── 📄 index.ts
+
+> │      └── 📂 forms/
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 index.ts
+
+> │          └── 📂 schemas/
+
+> │          ├── 📄 schemas.ts
+
+> │            ├── 📄 noteSchema.ts
+
+> │      └── 📂 ui/
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 Button.tsx
+
+> │          ├── 📄 Card.tsx
+
+> │          ├── 📄 Input.tsx
+
+> │          ├── 📄 Modal.tsx
+
+> │          ├── 📄 Select.tsx
+
+> │          ├── 📄 Textarea.tsx
+
+> │          ├── 📄 index.ts
+
+> │    └── 📂 vault/
+
+> │      └── 📂 _derived/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 modules/
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 qid0400003_fcfcu_case/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 module_index.json
+
+> │          └── 📂 qid1500001_how_to_use_qinoteos/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 module_index.json
+
+> │        ├── 📄 search.json
+
+> │        ├── 📄 vault_index.json
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 modules/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 qid0400003_fcfcu_case/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 README.md.bak
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 unnamed.png
+
+> │          └── 📂 content/
+
+> │            ├── 📄 content.md
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 index/
+
+> │          ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 module.yaml
+
+> │          └── 📂 snapshots/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 vectors/
+
+> │            ├── 📄 chunks.jsonl
+
+> │            ├── 📄 embeddings.npy
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 versions/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 log.md
+
+> │            ├── 📄 log.md.bak
+
+> │        └── 📂 qid1500001_how_to_use_qinoteos/
+
+> │          ├── 📄 README.md
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 content/
+
+> │          ├── 📄 content.md.bak
+
+> │            ├── 📄 content.md
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 module.yaml
+
+> │          └── 📂 snapshots/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 vectors/
+
+> │            ├── 📄 chunks.jsonl
+
+> │            ├── 📄 embeddings.npy
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 versions/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 log.md
+
+> │            ├── 📄 log.md.bak
+
+> │    └── 📂 worker/
+
+> │      ├── 📄 CLOUDFLARE_BUILD_COMMANDS.md
+
+> │      ├── 📄 WRANGLER_SECRETS_GUIDE.md
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 ginaMemory.ts
+
+> │        ├── 📄 index.ts
+
+> │        ├── 📄 qinoteApi.ts
+
+> │        ├── 📄 qinoteClassification.ts
+
+> │        ├── 📄 rag.ts
+
+> │        ├── 📄 seedQinote.ts
+
+> │        ├── 📄 supabaseMind.ts
+
+> │        ├── 📄 zohoMCP.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 wrangler.toml
+
+> │    └── 📂 workers/
+
+> │      └── 📂 Tools_Launcher/
+
+> │        └── 📂 api/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 components/
+
+> │          └── 📂 chat/
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 views/
+
+> │            ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 tools/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 _shared/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 embedder/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 ingestion/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 metadata_naming/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 orchestrator/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 self_heal/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 semantic_router/
+
+> │        ├── 📄 index.html
+
+> │  └── 📂 qione-portal/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 app/
+
+> │      └── 📂 (app)/
+
+> │        ├── 📄 _page.tsx
+
+> │        └── 📂 admin/
+
+> │          └── 📂 audit/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 permissions/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 roles/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 system/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 users/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 workers/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 ai/
+
+> │          └── 📂 agents/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 automations/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 memory/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 prompts/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 care/
+
+> │          ├── 📄 Caregiver Care Plan Wiki.html
+
+> │          └── 📂 meds/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 patients/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 supplies/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 chronicle/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 contracts/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 dashboard/
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 documents/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 inbox/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 search/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 tags/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 forms/
+
+> │          └── 📂 [formKey]/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │        ├── 📄 layout.tsx
+
+> │        └── 📂 notes/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 new/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 objects/
+
+> │          └── 📂 appointments/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 cases/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 page.tsx
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 clients/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 page.tsx
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 contacts/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 page.tsx
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 expenses/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 tasks/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 settings/
+
+> │          └── 📂 connections/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 notifications/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 profile/
+
+> │            ├── 📄 page.tsx
+
+> │        └── 📂 tax/
+
+> │          └── 📂 clients/
+
+> │            ├── 📄 page.tsx
+
+> │          └── 📂 organizers/
+
+> │            ├── 📄 page.tsx
+
+> │          ├── 📄 page.tsx
+
+> │          └── 📂 returns/
+
+> │            ├── 📄 page.tsx
+
+> │      └── 📂 (portal)/
+
+> │        ├── 📄 layout.tsx
+
+> │        └── 📂 objects/
+
+> │          └── 📂 [objectKey]/
+
+> │            └── 📂 contract/
+
+> │              ├── 📄 page.tsx
+
+> │            └── 📂 csv/
+
+> │              └── 📂 [formKey]/
+
+> │                ├── 📄 page.tsx
+
+> │            └── 📂 forms/
+
+> │              └── 📂 [formKey]/
+
+> │                ├── 📄 page.tsx
+
+> │            ├── 📄 page.tsx
+
+> │        ├── 📄 page.tsx
+
+> │        └── 📂 qichronicle/
+
+> │          ├── 📄 page.tsx
+
+> │      └── 📂 (public)/
+
+> │        └── 📂 invite/
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 login/
+
+> │          ├── 📄 page.tsx
+
+> │        └── 📂 reset-password/
+
+> │          ├── 📄 page.tsx
+
+> │      └── 📂 api/
+
+> │        └── 📂 admin/
+
+> │          └── 📂 queue-status/
+
+> │            ├── 📄 route.ts
+
+> │          └── 📂 worker-health/
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 ai/
+
+> │          └── 📂 chat/
+
+> │            ├── 📄 route.ts
+
+> │          └── 📂 memory/
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 archive/
+
+> │          └── 📂 chunks/
+
+> │            ├── 📄 route.ts
+
+> │          └── 📂 register/
+
+> │            ├── 📄 route.ts
+
+> │          └── 📂 review/
+
+> │          └── 📂 search/
+
+> │        └── 📂 care/
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 chat/
+
+> │          └── 📂 retrieve/
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 chronicle/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 route.ts
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 contracts/
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 documents/
+
+> │          └── 📂 search/
+
+> │            ├── 📄 route.ts
+
+> │          └── 📂 upload/
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 forms/
+
+> │          └── 📂 [formKey]/
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 notes/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 route.ts
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 objects/
+
+> │          └── 📂 [objectType]/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 route.ts
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 qichronicle/
+
+> │          └── 📂 moments/
+
+> │            └── 📂 [id]/
+
+> │              ├── 📄 route.ts
+
+> │            ├── 📄 route.ts
+
+> │        └── 📂 tax/
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 users/
+
+> │          └── 📂 [id]/
+
+> │            ├── 📄 route.ts
+
+> │          ├── 📄 route.ts
+
+> │        └── 📂 webhooks/
+
+> │          └── 📂 stripe/
+
+> │            ├── 📄 route.ts
+
+> │      └── 📂 auth/
+
+> │        └── 📂 callback/
+
+> │          ├── 📄 page.tsx
+
+> │      ├── 📄 layout.tsx
+
+> │    ├── 📄 components.json
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 pnpm-lock.yaml
+
+> │    ├── 📄 postcss.config.js
+
+> │    └── 📂 public/
+
+> │      ├── 📄 _routes.json
+
+> │      ├── 📄 favicon.ico
+
+> │      └── 📂 images/
+
+> │      ├── 📄 manifest.webmanifest
+
+> │      ├── 📄 robots.txt
+
+> │    ├── 📄 qione_review_bundle.txt
+
+> │    └── 📂 src/
+
+> │      ├── 📄 App.tsx
+
+> │      └── 📂 api/
+
+> │        ├── 📄 client.ts
+
+> │      └── 📂 app/
+
+> │        └── 📂 guards/
+
+> │          ├── 📄 require-admin.tsx
+
+> │          ├── 📄 require-auth.tsx
+
+> │          ├── 📄 require-tenant.tsx
+
+> │        └── 📂 layouts/
+
+> │          ├── 📄 admin-layout.tsx
+
+> │          ├── 📄 app-layout.tsx
+
+> │          ├── 📄 portal-layout.tsx
+
+> │        └── 📂 providers/
+
+> │          ├── 📄 auth-provider.tsx
+
+> │          ├── 📄 query-provider.tsx
+
+> │          ├── 📄 tenant-provider.tsx
+
+> │        ├── 📄 router.tsx
+
+> │      └── 📂 components/
+
+> │        ├── 📄 AuthUI.tsx
+
+> │        ├── 📄 GinaChat.tsx
+
+> │        ├── 📄 Launcher.tsx
+
+> │        └── 📂 ui/
+
+> │          ├── 📄 button.tsx
+
+> │          ├── 📄 input.tsx
+
+> │      └── 📂 features/
+
+> │        └── 📂 admin/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 archive-failure-panel.tsx
+
+> │            ├── 📄 device-status-card.tsx
+
+> │            ├── 📄 device-table.tsx
+
+> │            ├── 📄 fleet-job-panel.tsx
+
+> │            ├── 📄 watch-assignment-form.tsx
+
+> │          └── 📂 hooks/
+
+> │            ├── 📄 use-device-heartbeats.ts
+
+> │            ├── 📄 use-devices.ts
+
+> │            ├── 📄 use-fleet-jobs.ts
+
+> │            ├── 📄 use-watch-assignments.ts
+
+> │          └── 📂 services/
+
+> │            ├── 📄 admin-api.ts
+
+> │            ├── 📄 device-actions.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 archive/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 archive-file-table.tsx
+
+> │            ├── 📄 ingest-job-table.tsx
+
+> │            ├── 📄 manifest-viewer.tsx
+
+> │          └── 📂 services/
+
+> │            ├── 📄 archive-api.ts
+
+> │        └── 📂 bookings/
+
+> │        └── 📂 portal/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 dashboard-shell.tsx
+
+> │            ├── 📄 module-nav.tsx
+
+> │            ├── 📄 tenant-summary.tsx
+
+> │          └── 📂 services/
+
+> │            ├── 📄 portal-api.ts
+
+> │        └── 📂 qiarchive/
+
+> │          ├── 📄 LICENSE
+
+> │          ├── 📄 Makefile
+
+> │          ├── 📄 README.md
+
+> │          └── 📂 app/
+
+> │            └── 📂 agent/
+
+> │              ├── 📄 LICENSE
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 _assets/
+
+> │                └── 📂 _generated_icons/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 qid_128.png
+
+> │                  ├── 📄 qid_16.png
+
+> │                  ├── 📄 qid_24.png
+
+> │                  ├── 📄 qid_256.png
+
+> │                  ├── 📄 qid_32.png
+
+> │                  ├── 📄 qid_48.png
+
+> │                  ├── 📄 qid_64.png
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 make_ico.py
+
+> │                ├── 📄 qid-3d.jpg
+
+> │                ├── 📄 qid-barcode.jpg
+
+> │                ├── 📄 qid-complex.jpg
+
+> │                ├── 📄 qid-complex.mp4
+
+> │                ├── 📄 qid-gradient.jpg
+
+> │                ├── 📄 qid-inverted.svg
+
+> │                ├── 📄 qid-led.jpg
+
+> │                ├── 📄 qid-qr-code.jpg
+
+> │                ├── 📄 qid.ico
+
+> │                ├── 📄 qid.ico.txt
+
+> │                ├── 📄 qid.jpg
+
+> │                ├── 📄 qid.png
+
+> │                ├── 📄 qid.svg
+
+> │              └── 📂 _backups/
+
+> │                └── 📂 daily/
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 rolling/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 registry.prev.json
+
+> │                  ├── 📄 state.prev.json
+
+> │              └── 📂 _logs/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qid_activity.jsonl
+
+> │              ├── 📄 _qid_registry.json
+
+> │              ├── 📄 _qid_state.json
+
+> │              └── 📂 _wal/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qid_wal.jsonl
+
+> │              ├── 📄 build_windows.ps1
+
+> │              ├── 📄 cloud_client.py
+
+> │              └── 📂 console/
+
+> │              ├── 📄 console.py
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 desktop/
+
+> │                ├── 📄 create_shortcut.ps1
+
+> │                ├── 📄 create_shortcut.vbs
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qid_launcher.bat
+
+> │                ├── 📄 qid_ui.bat
+
+> │              ├── 📄 doc_ids.py
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 DEV_DOC.md
+
+> │                ├── 📄 gid_rules.md
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 file_router.py
+
+> │              ├── 📄 hasher.py
+
+> │              ├── 📄 paperless_upload.py
+
+> │              ├── 📄 pipeline.py
+
+> │              ├── 📄 pyproject.toml
+
+> │              ├── 📄 qid.py
+
+> │              ├── 📄 requirements.txt
+
+> │              ├── 📄 smoke_test.py
+
+> │              ├── 📄 status_overlay.py
+
+> │              ├── 📄 watcher.py
+
+> │          └── 📂 apps/
+
+> │            └── 📂 Notes/
+
+> │              ├── 📄 CONTRIBUTING.md
+
+> │              ├── 📄 Dockerfile
+
+> │              ├── 📄 LICENSE
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 VERSION
+
+> │              └── 📂 backend/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 export.py
+
+> │                ├── 📄 main.py
+
+> │                ├── 📄 plugins.py
+
+> │                ├── 📄 share.py
+
+> │                ├── 📄 themes.py
+
+> │                ├── 📄 utils.py
+
+> │              ├── 📄 config.yaml
+
+> │              ├── 📄 docker-compose.ghcr.yml
+
+> │              ├── 📄 docker-compose.yml
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 CNAME
+
+> │                ├── 📄 carousel-1.jpg
+
+> │                ├── 📄 carousel-2.jpg
+
+> │                ├── 📄 carousel-3.jpg
+
+> │                ├── 📄 carousel-4.jpg
+
+> │                ├── 📄 carousel-5.jpg
+
+> │                ├── 📄 carousel-6.jpg
+
+> │                ├── 📄 carousel-7.png
+
+> │                ├── 📄 demo-button.svg
+
+> │                ├── 📄 favicon.svg
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 logo-512.svg
+
+> │                ├── 📄 logo-cropped.svg
+
+> │                ├── 📄 logo.svg
+
+> │                ├── 📄 og-image.png
+
+> │                ├── 📄 robots.txt
+
+> │                ├── 📄 sitemap.xml
+
+> │                ├── 📄 website-button.svg
+
+> │              └── 📂 documentation/
+
+> │                ├── 📄 API.md
+
+> │                ├── 📄 AUTHENTICATION.md
+
+> │                ├── 📄 ENVIRONMENT_VARIABLES.md
+
+> │                ├── 📄 FEATURES.md
+
+> │                ├── 📄 MATHJAX.md
+
+> │                ├── 📄 MERMAID.md
+
+> │                ├── 📄 PLUGINS.md
+
+> │                ├── 📄 PLUGIN_NOTE_STATISTICS.md
+
+> │                ├── 📄 SHARING.md
+
+> │                ├── 📄 TAGS.md
+
+> │                ├── 📄 TEMPLATES.md
+
+> │                ├── 📄 THEMES.md
+
+> │                └── 📂 templates/
+
+> │                  ├── 📄 daily-journal.md
+
+> │                  ├── 📄 meeting-notes.md
+
+> │                  ├── 📄 project-plan.md
+
+> │              └── 📂 frontend/
+
+> │                ├── 📄 app.js
+
+> │                ├── 📄 favicon.svg
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 login.html
+
+> │                ├── 📄 logo.svg
+
+> │                ├── 📄 manifest.json
+
+> │                ├── 📄 sw.js
+
+> │              ├── 📄 generate_password.py
+
+> │              └── 📂 locales/
+
+> │                ├── 📄 de-DE.json
+
+> │                ├── 📄 en-GB.json
+
+> │                ├── 📄 en-US.json
+
+> │                ├── 📄 es-ES.json
+
+> │                ├── 📄 fr-FR.json
+
+> │                ├── 📄 hu-HU.json
+
+> │                ├── 📄 it-IT.json
+
+> │                ├── 📄 ja-JP.json
+
+> │                ├── 📄 ru-RU.json
+
+> │                ├── 📄 sl-SI.json
+
+> │                ├── 📄 zh-CN.json
+
+> │              └── 📂 plugins/
+
+> │                ├── 📄 note_stats.py
+
+> │                ├── 📄 supabase_sync.py
+
+> │              ├── 📄 release.ps1
+
+> │              ├── 📄 render.yaml
+
+> │              ├── 📄 requirements.txt
+
+> │              ├── 📄 run.py
+
+> │              └── 📂 themes/
+
+> │                ├── 📄 cobalt2.css
+
+> │                ├── 📄 dark.css
+
+> │                ├── 📄 dracula.css
+
+> │                ├── 📄 gruvbox-dark.css
+
+> │                ├── 📄 light.css
+
+> │                ├── 📄 matcha-light.css
+
+> │                ├── 📄 monokai.css
+
+> │                ├── 📄 nord.css
+
+> │                ├── 📄 vs-blue.css
+
+> │                ├── 📄 vue-high-contrast.css
+
+> │            └── 📂 api/
+
+> │              ├── 📄 Procfile
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 app/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 config.py
+
+> │                ├── 📄 db.py
+
+> │                ├── 📄 main.py
+
+> │                ├── 📄 models.py
+
+> │                ├── 📄 routes.py
+
+> │                ├── 📄 schemas.py
+
+> │                ├── 📄 services.py
+
+> │                ├── 📄 statuses.py
+
+> │              ├── 📄 requirements.txt
+
+> │            └── 📂 pwa/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 eslint.config.js
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 package-lock.json
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 public/
+
+> │                ├── 📄 favicon.ico
+
+> │                ├── 📄 logo.svg
+
+> │                ├── 📄 logo192.png
+
+> │                ├── 📄 logo512.png
+
+> │                ├── 📄 manifest.json
+
+> │                ├── 📄 vite.svg
+
+> │              └── 📂 src/
+
+> │                ├── 📄 App.css
+
+> │                ├── 📄 App.jsx
+
+> │                └── 📂 assets/
+
+> │                  ├── 📄 react.svg
+
+> │                ├── 📄 config.js
+
+> │                ├── 📄 index.css
+
+> │                ├── 📄 main.jsx
+
+> │                └── 📂 pages/
+
+> │                  ├── 📄 AgentStatus.jsx
+
+> │                  ├── 📄 Dashboard.jsx
+
+> │                  ├── 📄 Issues.jsx
+
+> │                  ├── 📄 RecentItems.jsx
+
+> │              ├── 📄 vite.config.js
+
+> │          └── 📂 config/
+
+> │            ├── 📄 correspondents_seed.yaml
+
+> │            ├── 📄 document_types_seed.yaml
+
+> │            ├── 📄 paperless.env
+
+> │            ├── 📄 tags_seed.yaml
+
+> │          └── 📂 contracts/
+
+> │            ├── 📄 agent_contract.md
+
+> │            ├── 📄 classification.md
+
+> │            ├── 📄 duplicate_contract.md
+
+> │            ├── 📄 folder_contract.md
+
+> │            ├── 📄 handoff_contract.md
+
+> │            ├── 📄 ingest_contract.md
+
+> │            ├── 📄 integration_contract.md
+
+> │            ├── 📄 manifest_contract.md
+
+> │            ├── 📄 metadata_contract.md
+
+> │            ├── 📄 naming_contract.md
+
+> │            ├── 📄 operations_contract.md
+
+> │            ├── 📄 paperless_inbox.csv
+
+> │            ├── 📄 paperless_seed.json
+
+> │            ├── 📄 review_contract.md
+
+> │            ├── 📄 status_contract.md
+
+> │            ├── 📄 storage_contract.md
+
+> │          └── 📂 data/
+
+> │            └── 📂 00_INBOX/
+
+> │            └── 📂 01_STAGED/
+
+> │            └── 📂 10_ARCHIVE_UPLOADED/
+
+> │              ├── 📄 duplicate_test.pdf
+
+> │              ├── 📄 smoke_test_doc.pdf
+
+> │              ├── 📄 test_normal.pdf
+
+> │            └── 📂 10_REVIEW/
+
+> │            └── 📂 20_DUPLICATES/
+
+> │              ├── 📄 test_duplicate.pdf
+
+> │              ├── 📄 third_test.pdf
+
+> │            └── 📂 20_QUARANTINE/
+
+> │            └── 📂 30_EXPORTS/
+
+> │            └── 📂 30_REVIEW/
+
+> │              ├── 📄 bad_upload.pdf
+
+> │              ├── 📄 bad_upload_test.pdf
+
+> │            └── 📂 90_MANIFESTS/
+
+> │            └── 📂 paperless/
+
+> │              └── 📂 consume/
+
+> │                ├── 📄 QDOC-2026-000001__alpha__undated.pdf
+
+> │                ├── 📄 QDOC-2026-000002__bravo__undated.pdf
+
+> │          └── 📂 deploy/
+
+> │            └── 📂 console/
+
+> │              ├── 📄 main.py
+
+> │            └── 📂 engine/
+
+> │              ├── 📄 Dockerfile
+
+> │              ├── 📄 main.py
+
+> │              ├── 📄 requirements.txt
+
+> │            └── 📂 paperless/
+
+> │              ├── 📄 Dockerfile
+
+> │          └── 📂 dev/
+
+> │            ├── 📄 352
+
+> │            ├── 📄 422
+
+> │            ├── 📄 444
+
+> │            ├── 📄 503
+
+> │            ├── 📄 505
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 chatbotes.txt
+
+> │            └── 📂 decisions/
+
+> │              ├── 📄 0001-identity-first-pipeline.md
+
+> │              ├── 📄 0002-cloud-paperless-drive-intake.md
+
+> │              ├── 📄 0003-pivot-to-cloud-orchestrator.md
+
+> │              ├── 📄 0004-qid-becomes-qiarchive-agent-core.md
+
+> │              ├── 📄 2026-03-06_v1_ingest_reality_check.md
+
+> │            ├── 📄 filetree.json
+
+> │            └── 📂 ide_state/
+
+> │            └── 📂 notes/
+
+> │              ├── 📄 implementation_v1.md
+
+> │            └── 📂 prompts/
+
+> │              ├── 📄 ingest_v2_ideas.md
+
+> │            └── 📂 scratch/
+
+> │            ├── 📄 summary_20260306_1430_agent_core.md
+
+> │            ├── 📄 summary_20260306_1450_cloud_api.md
+
+> │            ├── 📄 summary_20260306_1525_sync_plane_online.md
+
+> │            ├── 📄 summary_20260306_1550_final_sync_wiring.md
+
+> │            ├── 📄 summary_20260306_1600_startup_service.md
+
+> │            ├── 📄 summary_20260306_1612_singleton_instance.md
+
+> │            ├── 📄 summary_20260306_1615_status_overlay.md
+
+> │            ├── 📄 summary_20260306_1625_execution_fixes.md
+
+> │            ├── 📄 summary_20260306_1630_execution_cleanup.md
+
+> │            ├── 📄 summary_20260306_1630_status_board.md
+
+> │            ├── 📄 summary_20260306_1640_heartbeat_sync_fix.md
+
+> │            ├── 📄 summary_20260306_1645_fully_automatic_start.md
+
+> │            ├── 📄 summary_20260306_1645_pwa_icon_fix.md
+
+> │            ├── 📄 summary_20260306_1700_schema_recovery.md
+
+> │          ├── 📄 docker-compose.yml
+
+> │          └── 📂 docs/
+
+> │            ├── 📄 architecture.md
+
+> │            ├── 📄 google_drive_integration.md
+
+> │            ├── 📄 local_agent.md
+
+> │            ├── 📄 paperless_integration.md
+
+> │            ├── 📄 paperless_seed_loader.md
+
+> │            ├── 📄 railway_deployment.md
+
+> │            ├── 📄 railway_qiarchive_api.md
+
+> │            ├── 📄 setup.md
+
+> │            ├── 📄 status_model.md
+
+> │            ├── 📄 workflow.md
+
+> │          └── 📂 schemas/
+
+> │            ├── 📄 document_manifest.schema.json
+
+> │            ├── 📄 document_record.example.json
+
+> │            └── 📂 sql/
+
+> │              ├── 📄 init_ledger.sql
+
+> │          └── 📂 scripts/
+
+> │            └── 📂 ingest/
+
+> │              ├── 📄 main.py
+
+> │            └── 📂 ops/
+
+> │              ├── 📄 handoff_to_paperless.py
+
+> │              ├── 📄 push_to_paperless_railway.py
+
+> │              ├── 📄 queue_report.py
+
+> │              ├── 📄 seed_metadata.py
+
+> │            ├── 📄 register_agent_service.ps1
+
+> │            ├── 📄 seed_paperless.py
+
+> │            ├── 📄 start_background_agent.vbs
+
+> │            └── 📂 utils/
+
+> │              ├── 📄 file_utils.py
+
+> │              ├── 📄 hash_utils.py
+
+> │              ├── 📄 id_utils.py
+
+> │              ├── 📄 manifest_utils.py
+
+> │              ├── 📄 slug_utils.py
+
+> │          ├── 📄 start_agent_console.bat
+
+> │        └── 📂 qiblogs/
+
+> │          ├── 📄 VERSION
+
+> │          ├── 📄 astro.config.mjs
+
+> │          ├── 📄 netlify.toml
+
+> │          ├── 📄 pnpm-lock.yaml
+
+> │          └── 📂 public/
+
+> │            └── 📂 docs/
+
+> │              └── 📂 api-reference/
+
+> │                ├── 📄 code.png
+
+> │              └── 📂 attachments/
+
+> │                ├── 📄 astro-modular-configuration.png
+
+> │                ├── 📄 astro-modular-configuration.webp
+
+> │                ├── 📄 obsidian-cover.png
+
+> │                ├── 📄 obsidian-cover.webp
+
+> │              └── 📂 configuration/
+
+> │                ├── 📄 astro-modular-configuration.webp
+
+> │              └── 📂 sourcetree-and-git/
+
+> │              └── 📂 sourcetree-and-git-setup/
+
+> │                ├── 📄 sourcetree.png
+
+> │                ├── 📄 sourcetree.webp
+
+> │                ├── 📄 sourcetree.png
+
+> │            ├── 📄 favicon-dark.png
+
+> │            ├── 📄 favicon-light.png
+
+> │            └── 📂 graph/
+
+> │              ├── 📄 graph-data.json
+
+> │            ├── 📄 open-graph.png
+
+> │            └── 📂 pages/
+
+> │              └── 📂 attachments/
+
+> │                ├── 📄 water.png
+
+> │                ├── 📄 water.webp
+
+> │            └── 📂 posts/
+
+> │              └── 📂 advanced-folder-example/
+
+> │                ├── 📄 gallery-1.jpg
+
+> │                ├── 📄 gallery-2.jpg
+
+> │                ├── 📄 hero-image.jpg
+
+> │              └── 📂 attachments/
+
+> │                ├── 📄 autumn-leaves.webp
+
+> │                ├── 📄 city-skyline.webp
+
+> │                ├── 📄 desert-sunset.webp
+
+> │                ├── 📄 document.pdf
+
+> │                ├── 📄 forest-path.webp
+
+> │                ├── 📄 galaxy.png
+
+> │                ├── 📄 galaxy.webp
+
+> │                ├── 📄 mountain-landscape.webp
+
+> │                ├── 📄 mountains-clouds.png
+
+> │                ├── 📄 mountains-clouds.webp
+
+> │                ├── 📄 mountains.png
+
+> │                ├── 📄 mountains.webp
+
+> │                ├── 📄 ocean-view.webp
+
+> │                ├── 📄 sound.wav
+
+> │                ├── 📄 spring-flowers.webp
+
+> │                ├── 📄 summer-beach.webp
+
+> │                ├── 📄 sunset.webp
+
+> │                ├── 📄 vault-cms-cover.webp
+
+> │                ├── 📄 video.mp4
+
+> │                ├── 📄 winter-landscape.webp
+
+> │              └── 📂 sample-folder-based-post/
+
+> │                ├── 📄 forest.png
+
+> │                ├── 📄 forest.webp
+
+> │                ├── 📄 lush-forest.webp
+
+> │              └── 📂 sample-folder-post/
+
+> │                ├── 📄 forest.png
+
+> │                ├── 📄 sample-image.jpg
+
+> │            └── 📂 projects/
+
+> │              └── 📂 another-project/
+
+> │                ├── 📄 hero.png
+
+> │              └── 📂 attachments/
+
+> │                ├── 📄 rock.png
+
+> │                ├── 📄 rock.webp
+
+> │              └── 📂 obsidian-astro-suite/
+
+> │                ├── 📄 glacier.png
+
+> │                ├── 📄 glacier.webp
+
+> │              └── 📂 vault-cms/
+
+> │                ├── 📄 glacier.webp
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 category-filtering.js
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 check-missing-images.js
+
+> │            ├── 📄 dev-with-port.js
+
+> │            ├── 📄 generate-deployment-config.js
+
+> │            ├── 📄 generate-graph-data.js
+
+> │            ├── 📄 get-deployment-platform.js
+
+> │            ├── 📄 get-version.js
+
+> │            ├── 📄 process-aliases.js
+
+> │            ├── 📄 setup-dev.mjs
+
+> │            ├── 📄 sync-images.js
+
+> │          └── 📂 src/
+
+> │            └── 📂 components/
+
+> │              ├── 📄 BaseTable.astro
+
+> │              ├── 📄 Button.astro
+
+> │              ├── 📄 CategoryFilter.astro
+
+> │              ├── 📄 CommandPalette.astro
+
+> │              ├── 📄 DocsSidebar.astro
+
+> │              ├── 📄 DocumentationCard.astro
+
+> │              ├── 📄 GiscusComments.astro
+
+> │              ├── 📄 GraphModal.astro
+
+> │              ├── 📄 Icon.astro
+
+> │              ├── 📄 ImageGallery.astro
+
+> │              ├── 📄 ImageGalleryManager.astro
+
+> │              ├── 📄 ImageWrapper.astro
+
+> │              ├── 📄 Lightbox.astro
+
+> │              ├── 📄 LinkedMentions.astro
+
+> │              ├── 📄 LocalGraph.astro
+
+> │              ├── 📄 MermaidDiagram.astro
+
+> │              ├── 📄 Pagination.astro
+
+> │              ├── 📄 PostCard.astro
+
+> │              ├── 📄 PostContent.astro
+
+> │              ├── 📄 ProjectCard.astro
+
+> │              ├── 📄 ProjectCategories.astro
+
+> │              ├── 📄 ScrollToTop.astro
+
+> │              ├── 📄 SearchResults.astro
+
+> │              ├── 📄 TableOfContents.astro
+
+> │              ├── 📄 Tags.astro
+
+> │              ├── 📄 ThemeSelector.astro
+
+> │              ├── 📄 ThemeToggle.astro
+
+> │            └── 📂 config/
+
+> │            ├── 📄 config.ts
+
+> │              ├── 📄 dev.ts
+
+> │            └── 📂 content/
+
+> │            ├── 📄 content.config.ts
+
+> │              └── 📂 bases/
+
+> │                ├── 📄 Home.base
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 api.md
+
+> │                └── 📂 attachments/
+
+> │                  ├── 📄 astro-modular-configuration.png
+
+> │                  ├── 📄 obsidian-cover.png
+
+> │                ├── 📄 configuration.md
+
+> │                ├── 📄 installing-obsidian.md
+
+> │                └── 📂 sourcetree-and-git-setup/
+
+> │                  ├── 📄 index.md
+
+> │                  ├── 📄 sourcetree.png
+
+> │              └── 📂 pages/
+
+> │                ├── 📄 about.md
+
+> │                └── 📂 attachments/
+
+> │                  ├── 📄 water.png
+
+> │                ├── 📄 contact.md
+
+> │                ├── 📄 privacy-policy.md
+
+> │                ├── 📄 thank-you.md
+
+> │              └── 📂 posts/
+
+> │                └── 📂 attachments/
+
+> │                  ├── 📄 autumn-leaves.jpg
+
+> │                  ├── 📄 city-skyline.jpg
+
+> │                  ├── 📄 desert-sunset.jpg
+
+> │                  ├── 📄 document.pdf
+
+> │                  ├── 📄 forest-path.jpg
+
+> │                  ├── 📄 galaxy.png
+
+> │                  ├── 📄 mountain-landscape.jpg
+
+> │                  ├── 📄 mountains-clouds.png
+
+> │                  ├── 📄 mountains.png
+
+> │                  ├── 📄 ocean-view.jpg
+
+> │                  ├── 📄 sound.wav
+
+> │                  ├── 📄 spring-flowers.jpg
+
+> │                  ├── 📄 summer-beach.jpg
+
+> │                  ├── 📄 sunset.png
+
+> │                  ├── 📄 vault-cms-cover.png
+
+> │                  ├── 📄 video.mp4
+
+> │                  ├── 📄 winter-landscape.jpg
+
+> │                ├── 📄 formatting-reference.md
+
+> │                ├── 📄 getting-started.md
+
+> │                ├── 📄 obsidian-embeds-demo.md
+
+> │                └── 📂 sample-folder-based-post/
+
+> │                  └── 📂 attachments/
+
+> │                    ├── 📄 lush-forest.jpg
+
+> │                  ├── 📄 forest.png
+
+> │                  ├── 📄 index.md
+
+> │                ├── 📄 vault-cms-guide.md
+
+> │              └── 📂 projects/
+
+> │                ├── 📄 astro-composer.md
+
+> │                └── 📂 attachments/
+
+> │                  ├── 📄 rock.png
+
+> │                └── 📂 vault-cms/
+
+> │                  ├── 📄 glacier.png
+
+> │                  ├── 📄 index.md
+
+> │              └── 📂 special/
+
+> │                ├── 📄 docs.md
+
+> │                ├── 📄 home.md
+
+> │                ├── 📄 posts.md
+
+> │                ├── 📄 projects.md
+
+> │            ├── 📄 env.d.ts
+
+> │            └── 📂 layouts/
+
+> │              ├── 📄 BaseLayout.astro
+
+> │              ├── 📄 DocumentationLayout.astro
+
+> │              ├── 📄 PageLayout.astro
+
+> │              ├── 📄 PostLayout.astro
+
+> │              ├── 📄 ProjectLayout.astro
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 [...slug].astro
+
+> │              └── 📂 api/
+
+> │                ├── 📄 docs.json.ts
+
+> │                ├── 📄 files.json.ts
+
+> │                ├── 📄 og-image.ts
+
+> │                ├── 📄 pages.json.ts
+
+> │                ├── 📄 posts.json.ts
+
+> │                ├── 📄 projects.json.ts
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 [...slug].astro
+
+> │                ├── 📄 index.astro
+
+> │              ├── 📄 feed.xml.ts
+
+> │              ├── 📄 index.astro
+
+> │              ├── 📄 llms.txt.ts
+
+> │              └── 📂 posts/
+
+> │                ├── 📄 [...slug].astro
+
+> │                ├── 📄 [page].astro
+
+> │                ├── 📄 index.astro
+
+> │                └── 📂 tag/
+
+> │                  └── 📂 [...tag]/
+
+> │                  ├── 📄 [...tag].astro
+
+> │                    ├── 📄 [page].astro
+
+> │              └── 📂 projects/
+
+> │                ├── 📄 [...slug].astro
+
+> │                ├── 📄 index.astro
+
+> │              ├── 📄 robots.txt.ts
+
+> │              ├── 📄 rss.xml.ts
+
+> │              ├── 📄 sitemap.xml.ts
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 base-embeds-client.ts
+
+> │              ├── 📄 mermaid-client.ts
+
+> │            └── 📂 styles/
+
+> │              ├── 📄 global.css
+
+> │            └── 📂 themes/
+
+> │              └── 📂 custom/
+
+> │                ├── 📄 custom.ts
+
+> │              ├── 📄 index.ts
+
+> │            ├── 📄 types.ts
+
+> │            └── 📂 utils/
+
+> │              ├── 📄 categories.ts
+
+> │              ├── 📄 graph-theme-colors.ts
+
+> │              ├── 📄 images.ts
+
+> │              ├── 📄 internallinks.ts
+
+> │              ├── 📄 markdown.ts
+
+> │              ├── 📄 mermaid.ts
+
+> │              ├── 📄 navigation.ts
+
+> │              ├── 📄 rehype-image-attributes.ts
+
+> │              ├── 📄 rehype-mark.ts
+
+> │              ├── 📄 rehype-normalize-anchors.ts
+
+> │              ├── 📄 remark-bases.ts
+
+> │              ├── 📄 remark-callouts.ts
+
+> │              ├── 📄 remark-image-grids.ts
+
+> │              ├── 📄 remark-inline-tags.ts
+
+> │              ├── 📄 remark-mermaid.ts
+
+> │              ├── 📄 remark-obsidian-comments.ts
+
+> │              ├── 📄 remark-obsidian-embeds.ts
+
+> │              ├── 📄 remark-obsidian-image-size.ts
+
+> │              ├── 📄 seo.ts
+
+> │              ├── 📄 status.ts
+
+> │              ├── 📄 theme.ts
+
+> │          ├── 📄 tailwind.config.mjs
+
+> │          ├── 📄 tsconfig.json
+
+> │          ├── 📄 vite.config.mjs
+
+> │        └── 📂 qibp/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 app.jsx
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 main.jsx
+
+> │          ├── 📄 manifest.json
+
+> │          ├── 📄 package-lock.json
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 public/
+
+> │            ├── 📄 QiBPAppIcon.png
+
+> │            ├── 📄 _redirects
+
+> │            ├── 📄 introvideo.mp4
+
+> │          ├── 📄 tailwind.config.js
+
+> │          ├── 📄 vite.config.js
+
+> │        └── 📂 qicare/
+
+> │          └── 📂 QiHabitSync/
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 supabase_setup.sql
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 db.js
+
+> │            ├── 📄 supabase.js
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 public/
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 QiBPAppIcon.png
+
+> │              ├── 📄 introvideo.mp4
+
+> │            └── 📂 kb/
+
+> │              └── 📂 01_medical/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 02_legal/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 03_financial/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 04_housing/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 05_daily_care/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 06_contacts/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 07_vault/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 08_caregiver/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 binder/
+
+> │                └── 📂 01_emergency_protocol/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 02_healthcare_representative/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 03_hipaa_living_will/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 04_emergency_access/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 05_durable_poa_financial/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 06_estate_interim_authority/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 07_incident_log/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 08_execution_notary/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 09_labels/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 10_executed_docs/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 assets/
+
+> │                  └── 📂 css/
+
+> │                    ├── 📄 manual.css
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 manifest.json
+
+> │          └── 📂 qi-bp/
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 app.jsx
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 main.jsx
+
+> │            ├── 📄 manifest.json
+
+> │            ├── 📄 package.json
+
+> │            └── 📂 public/
+
+> │              ├── 📄 QiBPAppIcon.png
+
+> │              ├── 📄 _redirects
+
+> │              ├── 📄 introvideo.mp4
+
+> │            ├── 📄 tailwind.config.js
+
+> │            ├── 📄 vite.config.js
+
+> │          ├── 📄 schema.sql
+
+> │          ├── 📄 seed.sql
+
+> │          └── 📂 server/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 src/
+
+> │            ├── 📄 app.tsx
+
+> │            └── 📂 components/
+
+> │              ├── 📄 BPTracker.jsx
+
+> │              ├── 📄 layout.tsx
+
+> │              ├── 📄 require_auth.tsx
+
+> │            ├── 📄 env.d.ts
+
+> │            ├── 📄 index.css
+
+> │            └── 📂 lib/
+
+> │              ├── 📄 access.ts
+
+> │              ├── 📄 api.ts
+
+> │              ├── 📄 money.ts
+
+> │              ├── 📄 supabase.ts
+
+> │            ├── 📄 main.tsx
+
+> │            └── 📂 modules/
+
+> │              └── 📂 qichronicle/
+
+> │                ├── 📄 README.md
+
+> │                ├── 📄 helper.ts
+
+> │                ├── 📄 index.tsx
+
+> │                └── 📂 pages/
+
+> │                  ├── 📄 calendar.tsx
+
+> │                  ├── 📄 event_form.tsx
+
+> │                  ├── 📄 list.tsx
+
+> │                  ├── 📄 timeline.tsx
+
+> │              └── 📂 qihome/
+
+> │                ├── 📄 index.tsx
+
+> │                └── 📂 pages/
+
+> │                  ├── 📄 chores.tsx
+
+> │                  ├── 📄 dashboard.tsx
+
+> │                  ├── 📄 ledger.tsx
+
+> │              ├── 📄 registry.ts
+
+> │            └── 📂 routes/
+
+> │              ├── 📄 auth.tsx
+
+> │              ├── 📄 auth_confirm.tsx
+
+> │              ├── 📄 launcher.tsx
+
+> │              ├── 📄 module_router.tsx
+
+> │              ├── 📄 tenant_home.tsx
+
+> │              ├── 📄 tenant_select.tsx
+
+> │              ├── 📄 tenant_settings.tsx
+
+> │          ├── 📄 supabase_schema.sql
+
+> │          ├── 📄 tsconfig.json
+
+> │          ├── 📄 utils.ts
+
+> │          ├── 📄 vite.config.ts
+
+> │        └── 📂 qicases/
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 eslint.config.js
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 package-lock.json
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 public/
+
+> │            ├── 📄 vite.svg
+
+> │          ├── 📄 railway.json
+
+> │          └── 📂 src/
+
+> │            ├── 📄 App.css
+
+> │            ├── 📄 App.tsx
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 react.svg
+
+> │            ├── 📄 index.css
+
+> │            ├── 📄 main.tsx
+
+> │            ├── 📄 vite-env.d.ts
+
+> │          └── 📂 timeline/
+
+> │            └── 📂 assets/
+
+> │            ├── 📄 build_and_dev.py
+
+> │            └── 📂 content/
+
+> │              └── 📂 2026-03-15_QiArchive-Alpha/
+
+> │                ├── 📄 architecture.png
+
+> │                ├── 📄 index.md
+
+> │              └── 📂 2026-03-20_Client-Meeting/
+
+> │                ├── 📄 audio-memo.mp3
+
+> │                ├── 📄 index.md
+
+> │              └── 📂 2026-03-28_Constitutional_Memo/
+
+> │                ├── 📄 A_Judgment_on_Trial.mp4
+
+> │                ├── 📄 A_Judgment_on_Trial_web.mp4
+
+> │                ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade.m4a
+
+> │                ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web.mp3
+
+> │                ├── 📄 Voiding_foreclosure_when_banks_ignore_disability.m4a
+
+> │                ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web.mp3
+
+> │                ├── 📄 index.md
+
+> │                ├── 📄 infographic.png
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 public/
+
+> │              └── 📂 content/
+
+> │                └── 📂 2026-03-15_QiArchive-Alpha/
+
+> │                  ├── 📄 architecture.png
+
+> │                └── 📂 2026-03-20_Client-Meeting/
+
+> │                └── 📂 2026-03-28_Constitutional_Memo/
+
+> │                  ├── 📄 A_Judgment_on_Trial_web.mp4
+
+> │                  ├── 📄 A_Judgment_on_Trial_web_web.mp4
+
+> │                  ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web.mp3
+
+> │                  ├── 📄 Voiding_Foreclosures_with_a_Constitutional_Blade_web_web.mp3
+
+> │                  ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web.mp3
+
+> │                  ├── 📄 Voiding_foreclosure_when_banks_ignore_disability_web_web.mp3
+
+> │                  ├── 📄 infographic.png
+
+> │              ├── 📄 timeline.json
+
+> │            ├── 📄 run.bat
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App.jsx
+
+> │            ├── 📄 timeline.json
+
+> │          ├── 📄 tsconfig.app.json
+
+> │          ├── 📄 tsconfig.json
+
+> │          ├── 📄 tsconfig.node.json
+
+> │          ├── 📄 vite.config.ts
+
+> │        └── 📂 qichronicle/
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 qicockpit/
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 qicontacts/
+
+> │          ├── 📄 LICENSE
+
+> │          ├── 📄 Makefile
+
+> │          └── 📂 QiCase/
+
+> │            ├── 📄 LICENSE
+
+> │            ├── 📄 README.md
+
+> │            └── 📂 api/
+
+> │              ├── 📄 Dockerfile
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 deploy_log.txt
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 src/
+
+> │                ├── 📄 index.ts
+
+> │                └── 📂 lib/
+
+> │                  ├── 📄 auth.ts
+
+> │                  ├── 📄 context.ts
+
+> │                  ├── 📄 db.ts
+
+> │                  ├── 📄 email.ts
+
+> │                  ├── 📄 env.ts
+
+> │                  ├── 📄 middleware.ts
+
+> │                  ├── 📄 trpc.ts
+
+> │                ├── 📄 router.ts
+
+> │                └── 📂 routers/
+
+> │                  ├── 📄 case.ts
+
+> │                  ├── 📄 organization.ts
+
+> │                  ├── 📄 user.ts
+
+> │                ├── 📄 worker.ts
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 wrangler.jsonc
+
+> │            └── 📂 app/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 build_out.txt
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 package.json
+
+> │              ├── 📄 postcss.config.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 favicon.ico
+
+> │                ├── 📄 logo192.png
+
+> │                ├── 📄 logo512.png
+
+> │                ├── 📄 robots.txt
+
+> │                ├── 📄 site.manifest
+
+> │              └── 📂 src/
+
+> │                └── 📂 components/
+
+> │                  ├── 📄 EntityForm.tsx
+
+> │                  └── 📂 auth/
+
+> │                    ├── 📄 auth-error-boundary.tsx
+
+> │                    ├── 📄 auth-form.tsx
+
+> │                    ├── 📄 google-login.tsx
+
+> │                    ├── 📄 index.ts
+
+> │                    ├── 📄 login-dialog.tsx
+
+> │                    ├── 📄 otp-verification.tsx
+
+> │                    ├── 📄 passkey-login.tsx
+
+> │                    ├── 📄 use-auth-form.ts
+
+> │                  ├── 📄 error.tsx
+
+> │                  ├── 📄 index.ts
+
+> │                  └── 📂 layout/
+
+> │                    ├── 📄 constants.ts
+
+> │                    ├── 📄 header.tsx
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 sidebar-nav.tsx
+
+> │                    ├── 📄 sidebar.tsx
+
+> │                  └── 📂 ui/
+
+> │                    ├── 📄 avatar.tsx
+
+> │                    ├── 📄 badge.tsx
+
+> │                    ├── 📄 button.tsx
+
+> │                    ├── 📄 card.tsx
+
+> │                    ├── 📄 checkbox.tsx
+
+> │                    ├── 📄 dialog.tsx
+
+> │                    ├── 📄 form.tsx
+
+> │                    ├── 📄 input.tsx
+
+> │                    ├── 📄 label.tsx
+
+> │                    ├── 📄 radio-group.tsx
+
+> │                    ├── 📄 scroll-area.tsx
+
+> │                    ├── 📄 select.tsx
+
+> │                    ├── 📄 separator.tsx
+
+> │                    ├── 📄 skeleton.tsx
+
+> │                    ├── 📄 slider.tsx
+
+> │                    ├── 📄 switch.tsx
+
+> │                    ├── 📄 tabs.tsx
+
+> │                    ├── 📄 textarea.tsx
+
+> │                  ├── 📄 user-menu.tsx
+
+> │                └── 📂 hooks/
+
+> │                  ├── 📄 index.ts
+
+> │                └── 📂 lib/
+
+> │                  └── 📂 auth/
+
+> │                    ├── 📄 auth-config.ts
+
+> │                    ├── 📄 auth.ts
+
+> │                  ├── 📄 query.ts
+
+> │                  ├── 📄 trpc.ts
+
+> │                  ├── 📄 utils.ts
+
+> │                ├── 📄 main.tsx
+
+> │                ├── 📄 routeTree.gen.ts
+
+> │                └── 📂 routes/
+
+> │                  └── 📂 (app)/
+
+> │                    ├── 📄 about.tsx
+
+> │                    ├── 📄 analytics.tsx
+
+> │                    ├── 📄 dashboard.tsx
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 library.tsx
+
+> │                    ├── 📄 phases.tsx
+
+> │                    ├── 📄 reports.tsx
+
+> │                    ├── 📄 resources.tsx
+
+> │                    ├── 📄 route.tsx
+
+> │                    ├── 📄 settings.tsx
+
+> │                    ├── 📄 table-data.tsx
+
+> │                    ├── 📄 timeline.tsx
+
+> │                    ├── 📄 users.tsx
+
+> │                  └── 📂 (auth)/
+
+> │                    ├── 📄 login.tsx
+
+> │                    ├── 📄 signup.tsx
+
+> │                  ├── 📄 __root.tsx
+
+> │                └── 📂 styles/
+
+> │                  ├── 📄 globals.css
+
+> │              ├── 📄 tsconfig.json
+
+> │              └── 📂 ui/
+
+> │                ├── 📄 index.ts
+
+> │                └── 📂 lib/
+
+> │                  ├── 📄 utils.ts
+
+> │              ├── 📄 vite.config.ts
+
+> │              ├── 📄 wrangler.jsonc
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 logo.png
+
+> │            └── 📂 db/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 index.ts
+
+> │              └── 📂 legacy/
+
+> │                └── 📂 supabase/
+
+> │                  ├── 📄 supabase_migration.sql
+
+> │                  ├── 📄 supabase_migration_consolidated.sql
+
+> │                  ├── 📄 supabase_migration_full_init.sql
+
+> │                  ├── 📄 supabase_migration_rls_fix.sql
+
+> │                  ├── 📄 supabase_migration_v2.sql
+
+> │                  ├── 📄 supabase_migration_v3.sql
+
+> │                  ├── 📄 supabase_migration_v3_resources.sql
+
+> │                  ├── 📄 supabase_migration_v4.sql
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 schema/
+
+> │                ├── 📄 case.ts
+
+> │                ├── 📄 index.ts
+
+> │                ├── 📄 invitation.ts
+
+> │                ├── 📄 organization.ts
+
+> │                ├── 📄 passkey.ts
+
+> │                ├── 📄 team.ts
+
+> │                ├── 📄 user.ts
+
+> │              └── 📂 scripts/
+
+> │                ├── 📄 check_db_content.ts
+
+> │                ├── 📄 export.ts
+
+> │                ├── 📄 generate-auth-schema.ts
+
+> │                ├── 📄 import_trackers.ts
+
+> │                ├── 📄 seed.ts
+
+> │                ├── 📄 setup-extensions.sql
+
+> │              └── 📂 seeds/
+
+> │                ├── 📄 users.ts
+
+> │              └── 📂 tsconfig-base/
+
+> │                ├── 📄 base.jsonc
+
+> │                ├── 📄 cloudflare.jsonc
+
+> │                ├── 📄 node.jsonc
+
+> │                ├── 📄 react.jsonc
+
+> │              ├── 📄 tsconfig.json
+
+> │            └── 📂 docs/
+
+> │              └── 📂 adr/
+
+> │                ├── 📄 000-template.md
+
+> │                ├── 📄 001-auth-hint-cookie.md
+
+> │              ├── 📄 database-schema.md
+
+> │              ├── 📄 deployment.md
+
+> │              ├── 📄 getting-started.md
+
+> │              ├── 📄 index.md
+
+> │              └── 📂 public/
+
+> │                ├── 📄 CNAME
+
+> │              └── 📂 security/
+
+> │                ├── 📄 SECURITY.template.md
+
+> │                ├── 📄 checklist.md
+
+> │                ├── 📄 incident-playbook.md
+
+> │              └── 📂 specs/
+
+> │                ├── 📄 auth-form.md
+
+> │                ├── 📄 infra-terraform.md
+
+> │              ├── 📄 ui-components.md
+
+> │            ├── 📄 drizzle.config.ts
+
+> │            ├── 📄 dump_tree_with_ocr.py
+
+> │            ├── 📄 package.json
+
+> │            ├── 📄 vizvibe.mmd
+
+> │          └── 📂 QiLitigation/
+
+> │            ├── 📄 DEPLOYMENT.md
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 debug-build.sh
+
+> │            └── 📂 files-legal AI coach/
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 backend/
+
+> │                ├── 📄 app.py
+
+> │                ├── 📄 coach_logic.py
+
+> │                ├── 📄 langchain_agent.py
+
+> │                ├── 📄 main.py
+
+> │              └── 📂 frontend/
+
+> │                ├── 📄 App.jsx
+
+> │                ├── 📄 README.md
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 App.jsx
+
+> │                  └── 📂 components/
+
+> │                    └── 📂 Chats/
+
+> │                      ├── 📄 ChatWindow.jsx
+
+> │                      ├── 📄 SavedChats.jsx
+
+> │                    └── 📂 Documents/
+
+> │                      ├── 📄 DocumentList.jsx
+
+> │                      ├── 📄 DocumentUpload.jsx
+
+> │                    └── 📂 Evidence/
+
+> │                      ├── 📄 EvidenceList.jsx
+
+> │                      ├── 📄 EvidenceUpload.jsx
+
+> │                    └── 📂 Goals/
+
+> │                      ├── 📄 AddGoalForm.jsx
+
+> │                      ├── 📄 GoalsList.jsx
+
+> │                    └── 📂 Layout/
+
+> │                      ├── 📄 Header.jsx
+
+> │                      ├── 📄 Sidebar.jsx
+
+> │                    └── 📂 Timeline/
+
+> │                      ├── 📄 TimelineView.jsx
+
+> │                  └── 📂 context/
+
+> │                    ├── 📄 AppContext.js
+
+> │                  └── 📂 hooks/
+
+> │                    ├── 📄 useChats.js
+
+> │                    ├── 📄 useDocuments.js
+
+> │                    ├── 📄 useEvidence.js
+
+> │                    ├── 📄 useGoals.js
+
+> │                    ├── 📄 useTimeline.js
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 pages/
+
+> │                    ├── 📄 ChatsPage.jsx
+
+> │                    ├── 📄 Dashboard.jsx
+
+> │                    ├── 📄 DocumentsPage.jsx
+
+> │                    ├── 📄 EvidencePage.jsx
+
+> │                    ├── 📄 GoalsPage.jsx
+
+> │                    ├── 📄 TimelinePage.jsx
+
+> │                  └── 📂 styles/
+
+> │                    ├── 📄 main.css
+
+> │                    ├── 📄 theme.js
+
+> │              ├── 📄 project-overview.md
+
+> │              ├── 📄 requirements.txt
+
+> │              ├── 📄 step-by-step-guide-for-new-users.md
+
+> │            ├── 📄 fix_imports.js
+
+> │            ├── 📄 package.json
+
+> │            └── 📂 public/
+
+> │              ├── 📄 _redirects
+
+> │              ├── 📄 config.json
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 manifest.json
+
+> │            ├── 📄 render.yaml
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App.tsx
+
+> │              └── 📂 components/
+
+> │                ├── 📄 AIAssistantPanel.tsx
+
+> │                ├── 📄 CollaborationPanel.tsx
+
+> │                ├── 📄 ErrorBoundary.tsx
+
+> │                ├── 📄 Layout.tsx
+
+> │                ├── 📄 PrivateRoute.tsx
+
+> │              └── 📂 contexts/
+
+> │                ├── 📄 AuthContext.tsx
+
+> │                ├── 📄 LoadingContext.tsx
+
+> │                ├── 📄 NotificationContext.tsx
+
+> │              ├── 📄 index.css
+
+> │              ├── 📄 index.tsx
+
+> │              └── 📂 lib/
+
+> │                ├── 📄 supabase.ts
+
+> │              └── 📂 pages/
+
+> │                ├── 📄 AIAssistant.tsx
+
+> │                ├── 📄 Attorneys.tsx
+
+> │                ├── 📄 Billing.tsx
+
+> │                ├── 📄 Calendar.tsx
+
+> │                ├── 📄 Calendar.tsx.backup
+
+> │                ├── 📄 Calendar_enhanced_problematic.tsx
+
+> │                ├── 📄 Calendar_temp.tsx
+
+> │                ├── 📄 CaseDetail.tsx
+
+> │                ├── 📄 Cases.tsx
+
+> │                ├── 📄 Cases.tsx.backup
+
+> │                ├── 📄 ClientDetail.tsx
+
+> │                ├── 📄 ClientPortal.tsx
+
+> │                ├── 📄 Clients.tsx
+
+> │                ├── 📄 Dashboard.tsx
+
+> │                ├── 📄 Dashboard.tsx.backup
+
+> │                ├── 📄 DeadlineCalculator.tsx
+
+> │                ├── 📄 DeadlineCalculator.tsx.backup
+
+> │                ├── 📄 Documents.tsx
+
+> │                ├── 📄 Firms.tsx
+
+> │                ├── 📄 Login.tsx
+
+> │                ├── 📄 NewCase.tsx
+
+> │                ├── 📄 Permissions.tsx
+
+> │                ├── 📄 Settings.tsx
+
+> │                ├── 📄 System.tsx
+
+> │                ├── 📄 Tasks.tsx
+
+> │                ├── 📄 Users.tsx
+
+> │                ├── 📄 temp_calendar_part1.tsx
+
+> │                ├── 📄 temp_render_method.txt
+
+> │              └── 📂 redux/
+
+> │                ├── 📄 store.ts
+
+> │              ├── 📄 setupProxy.js
+
+> │              └── 📂 utils/
+
+> │                ├── 📄 api.ts
+
+> │                ├── 📄 config.ts
+
+> │                ├── 📄 rbac.ts
+
+> │            └── 📂 supabase/
+
+> │              ├── 📄 schema.sql
+
+> │            ├── 📄 tsconfig.json
+
+> │            ├── 📄 vizvibe.mmd
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 README.md.merge_1771318730
+
+> │          ├── 📄 SETUP.md
+
+> │          ├── 📄 _Immigration Support Systems.md
+
+> │          └── 📂 accounts/
+
+> │            ├── 📄 admin.py
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 forms.py
+
+> │            ├── 📄 models.py
+
+> │            ├── 📄 signals.py
+
+> │            ├── 📄 tests.py
+
+> │            ├── 📄 urls.py
+
+> │            ├── 📄 views.py
+
+> │          └── 📂 api/
+
+> │            ├── 📄 app.py
+
+> │          └── 📂 cases/
+
+> │            ├── 📄 admin.py
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 forms.py
+
+> │            └── 📂 management/
+
+> │              └── 📂 commands/
+
+> │                ├── 📄 send_due_cases.py
+
+> │            └── 📂 models/
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 billing.py
+
+> │              ├── 📄 cases.py
+
+> │            ├── 📄 signals.py
+
+> │            ├── 📄 tasks.py
+
+> │            ├── 📄 urls.py
+
+> │            └── 📂 views/
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 billing.py
+
+> │              ├── 📄 cases.py
+
+> │          └── 📂 contacts/
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 models.py
+
+> │            ├── 📄 urls.py
+
+> │            ├── 📄 views.py
+
+> │          └── 📂 contracts/
+
+> │            ├── 📄 apps.py
+
+> │          └── 📂 core/
+
+> │            ├── 📄 __init__.py
+
+> │            ├── 📄 asgi.py
+
+> │            ├── 📄 celery.py
+
+> │            ├── 📄 context_processors.py
+
+> │            ├── 📄 settings.py
+
+> │            ├── 📄 urls.py
+
+> │            ├── 📄 wsgi.py
+
+> │          └── 📂 crm/
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 models.py
+
+> │          └── 📂 dashboard/
+
+> │            ├── 📄 admin.py
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 urls.py
+
+> │            ├── 📄 views.py
+
+> │          └── 📂 hrm/
+
+> │            ├── 📄 apps.py
+
+> │            ├── 📄 models.py
+
+> │            ├── 📄 views.py
+
+> │          ├── 📄 legal-research-tool-interface-demo.png
+
+> │          ├── 📄 manage.py
+
+> │          ├── 📄 requirements.txt
+
+> │          ├── 📄 run.sh
+
+> │          └── 📂 src/
+
+> │            ├── 📄 __init__.py
+
+> │            └── 📂 core/
+
+> │              ├── 📄 agent.py
+
+> │              ├── 📄 rag_pipeline.py
+
+> │            └── 📂 generation/
+
+> │              ├── 📄 model_provider.py
+
+> │              ├── 📄 rag_prompt_tools.py
+
+> │            └── 📂 storage/
+
+> │              ├── 📄 caches.py
+
+> │              ├── 📄 database_manager.py
+
+> │              ├── 📄 sql_classes.py
+
+> │              ├── 📄 vector_database.py
+
+> │            └── 📂 utils/
+
+> │              ├── 📄 canlii_search.py
+
+> │          └── 📂 static/
+
+> │            └── 📂 assets/
+
+> │              └── 📂 img/
+
+> │                ├── 📄 AdminLTEFullLogo.png
+
+> │                ├── 📄 AdminLTELogo.png
+
+> │                ├── 📄 avatar.png
+
+> │                ├── 📄 avatar2.png
+
+> │                ├── 📄 avatar3.png
+
+> │                ├── 📄 avatar4.png
+
+> │                ├── 📄 avatar5.png
+
+> │                ├── 📄 boxed-bg.jpg
+
+> │                ├── 📄 boxed-bg.png
+
+> │                └── 📂 credit/
+
+> │                  ├── 📄 american-express.png
+
+> │                  ├── 📄 cirrus.png
+
+> │                  ├── 📄 mastercard.png
+
+> │                  ├── 📄 paypal.png
+
+> │                  ├── 📄 paypal2.png
+
+> │                  ├── 📄 visa.png
+
+> │                ├── 📄 default-150x150.png
+
+> │                ├── 📄 icons.png
+
+> │                ├── 📄 photo1.png
+
+> │                ├── 📄 photo2.png
+
+> │                ├── 📄 photo3.jpg
+
+> │                ├── 📄 photo4.jpg
+
+> │                ├── 📄 prod-1.jpg
+
+> │                ├── 📄 prod-2.jpg
+
+> │                ├── 📄 prod-3.jpg
+
+> │                ├── 📄 prod-4.jpg
+
+> │                ├── 📄 prod-5.jpg
+
+> │                ├── 📄 user1-128x128.jpg
+
+> │                ├── 📄 user2-160x160.jpg
+
+> │                ├── 📄 user3-128x128.jpg
+
+> │                ├── 📄 user4-128x128.jpg
+
+> │                ├── 📄 user5-128x128.jpg
+
+> │                ├── 📄 user6-128x128.jpg
+
+> │                ├── 📄 user7-128x128.jpg
+
+> │                ├── 📄 user8-128x128.jpg
+
+> │            └── 📂 css/
+
+> │              ├── 📄 adminlte.css
+
+> │              ├── 📄 adminlte.css.map
+
+> │              ├── 📄 adminlte.min.css
+
+> │              ├── 📄 adminlte.min.css.map
+
+> │              ├── 📄 adminlte.rtl.css
+
+> │              ├── 📄 adminlte.rtl.css.map
+
+> │              ├── 📄 adminlte.rtl.min.css
+
+> │              ├── 📄 adminlte.rtl.min.css.map
+
+> │              ├── 📄 bootstrap-grid.css
+
+> │              ├── 📄 bootstrap-grid.css.map
+
+> │              ├── 📄 bootstrap-grid.min.css
+
+> │              ├── 📄 bootstrap-grid.min.css.map
+
+> │              ├── 📄 bootstrap-grid.rtl.css
+
+> │              ├── 📄 bootstrap-grid.rtl.css.map
+
+> │              ├── 📄 bootstrap-grid.rtl.min.css
+
+> │              ├── 📄 bootstrap-grid.rtl.min.css.map
+
+> │              ├── 📄 bootstrap-reboot.css
+
+> │              ├── 📄 bootstrap-reboot.css.map
+
+> │              ├── 📄 bootstrap-reboot.min.css
+
+> │              ├── 📄 bootstrap-reboot.min.css.map
+
+> │              ├── 📄 bootstrap-reboot.rtl.css
+
+> │              ├── 📄 bootstrap-reboot.rtl.css.map
+
+> │              ├── 📄 bootstrap-reboot.rtl.min.css
+
+> │              ├── 📄 bootstrap-reboot.rtl.min.css.map
+
+> │              ├── 📄 bootstrap-utilities.css
+
+> │              ├── 📄 bootstrap-utilities.css.map
+
+> │              ├── 📄 bootstrap-utilities.min.css
+
+> │              ├── 📄 bootstrap-utilities.min.css.map
+
+> │              ├── 📄 bootstrap-utilities.rtl.css
+
+> │              ├── 📄 bootstrap-utilities.rtl.css.map
+
+> │              ├── 📄 bootstrap-utilities.rtl.min.css
+
+> │              ├── 📄 bootstrap-utilities.rtl.min.css.map
+
+> │              ├── 📄 bootstrap.css
+
+> │              ├── 📄 bootstrap.css.map
+
+> │              ├── 📄 bootstrap.min.css
+
+> │              ├── 📄 bootstrap.min.css.map
+
+> │              ├── 📄 bootstrap.rtl.css
+
+> │              ├── 📄 bootstrap.rtl.css.map
+
+> │              ├── 📄 bootstrap.rtl.min.css
+
+> │              ├── 📄 bootstrap.rtl.min.css.map
+
+> │              ├── 📄 custom.css
+
+> │            └── 📂 js/
+
+> │              ├── 📄 adminlte.js
+
+> │              ├── 📄 adminlte.js.map
+
+> │              ├── 📄 adminlte.min.js
+
+> │              ├── 📄 adminlte.min.js.map
+
+> │              ├── 📄 bootstrap.bundle.js
+
+> │              ├── 📄 bootstrap.esm.min.js
+
+> │              ├── 📄 bootstrap.min.js.map
+
+> │              ├── 📄 jquery.min.js
+
+> │            └── 📂 plugins/
+
+> │              ├── 📄 bootstrap.bundle.js.map
+
+> │              ├── 📄 bootstrap.bundle.min.js
+
+> │              ├── 📄 bootstrap.bundle.min.js.map
+
+> │              ├── 📄 bootstrap.esm.js
+
+> │              ├── 📄 bootstrap.esm.js.map
+
+> │              ├── 📄 bootstrap.esm.min.js.map
+
+> │              ├── 📄 bootstrap.js
+
+> │              ├── 📄 bootstrap.js.map
+
+> │              ├── 📄 bootstrap.min.js
+
+> │          └── 📂 staticfiles/
+
+> │            └── 📂 admin/
+
+> │              └── 📂 css/
+
+> │                ├── 📄 autocomplete.css
+
+> │                ├── 📄 base.css
+
+> │                ├── 📄 changelists.css
+
+> │                ├── 📄 dark_mode.css
+
+> │                ├── 📄 dashboard.css
+
+> │                ├── 📄 forms.css
+
+> │                ├── 📄 login.css
+
+> │                ├── 📄 nav_sidebar.css
+
+> │                ├── 📄 responsive.css
+
+> │                ├── 📄 responsive_rtl.css
+
+> │                ├── 📄 rtl.css
+
+> │                ├── 📄 unusable_password_field.css
+
+> │                ├── 📄 widgets.css
+
+> │              └── 📂 img/
+
+> │                ├── 📄 LICENSE
+
+> │                ├── 📄 README.txt
+
+> │                ├── 📄 calendar-icons.svg
+
+> │                └── 📂 gis/
+
+> │                  ├── 📄 move_vertex_off.svg
+
+> │                  ├── 📄 move_vertex_on.svg
+
+> │                ├── 📄 icon-addlink.svg
+
+> │                ├── 📄 icon-alert.svg
+
+> │                ├── 📄 icon-calendar.svg
+
+> │                ├── 📄 icon-changelink.svg
+
+> │                ├── 📄 icon-clock.svg
+
+> │                ├── 📄 icon-deletelink.svg
+
+> │                ├── 📄 icon-hidelink.svg
+
+> │                ├── 📄 icon-no.svg
+
+> │                ├── 📄 icon-unknown-alt.svg
+
+> │                ├── 📄 icon-unknown.svg
+
+> │                ├── 📄 icon-viewlink.svg
+
+> │                ├── 📄 icon-yes.svg
+
+> │                ├── 📄 inline-delete.svg
+
+> │                ├── 📄 search.svg
+
+> │                ├── 📄 selector-icons.svg
+
+> │                ├── 📄 sorting-icons.svg
+
+> │                ├── 📄 tooltag-add.svg
+
+> │                ├── 📄 tooltag-arrowright.svg
+
+> │              └── 📂 js/
+
+> │                ├── 📄 SelectBox.js
+
+> │                ├── 📄 SelectFilter2.js
+
+> │                ├── 📄 actions.js
+
+> │                └── 📂 admin/
+
+> │                  ├── 📄 DateTimeShortcuts.js
+
+> │                  ├── 📄 RelatedObjectLookups.js
+
+> │                ├── 📄 autocomplete.js
+
+> │                ├── 📄 calendar.js
+
+> │                ├── 📄 cancel.js
+
+> │                ├── 📄 change_form.js
+
+> │                ├── 📄 core.js
+
+> │                ├── 📄 filters.js
+
+> │                ├── 📄 inlines.js
+
+> │                ├── 📄 jquery.init.js
+
+> │                ├── 📄 nav_sidebar.js
+
+> │                ├── 📄 popup_response.js
+
+> │                ├── 📄 prepopulate.js
+
+> │                ├── 📄 prepopulate_init.js
+
+> │                ├── 📄 theme.js
+
+> │                ├── 📄 unusable_password_field.js
+
+> │                ├── 📄 urlify.js
+
+> │            └── 📂 css/
+
+> │              ├── 📄 custom.css
+
+> │          └── 📂 templates/
+
+> │            └── 📂 accounts/
+
+> │              └── 📂 client/
+
+> │                ├── 📄 client_form.html
+
+> │              ├── 📄 user_confirm_delete.html
+
+> │              ├── 📄 user_detail.html
+
+> │              ├── 📄 user_form.html
+
+> │              ├── 📄 user_list.html
+
+> │            ├── 📄 base.html
+
+> │            └── 📂 billing/
+
+> │              ├── 📄 time_entry_confirm_delete.html
+
+> │              ├── 📄 time_entry_detail.html
+
+> │              ├── 📄 time_entry_form.html
+
+> │              ├── 📄 time_entry_list.html
+
+> │            └── 📂 cases/
+
+> │              ├── 📄 case_confirm_delete.html
+
+> │              ├── 📄 case_detail.html
+
+> │              ├── 📄 case_form.html
+
+> │              ├── 📄 case_list.html
+
+> │              ├── 📄 document_confirm_delete.html
+
+> │              ├── 📄 document_detail.html
+
+> │              ├── 📄 document_form.html
+
+> │              ├── 📄 document_list.html
+
+> │            ├── 📄 dashboard.html
+
+> │            └── 📂 emails/
+
+> │              ├── 📄 admin_due_cases_notification.html
+
+> │              ├── 📄 due_cases_notification.html
+
+> │              ├── 📄 lawyer_due_cases_notification.html
+
+> │            └── 📂 inc/
+
+> │              ├── 📄 footer.html
+
+> │              ├── 📄 navbar.html
+
+> │              ├── 📄 sidebar.html
+
+> │            └── 📂 pages/
+
+> │              └── 📂 UI/
+
+> │                ├── 📄 general.html
+
+> │                ├── 📄 icons.html
+
+> │                ├── 📄 timeline.html
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 browser-support.html
+
+> │                ├── 📄 color-mode.html
+
+> │                └── 📂 components/
+
+> │                  ├── 📄 main-header.html
+
+> │                  ├── 📄 main-sidebar.html
+
+> │                ├── 📄 faq.html
+
+> │                ├── 📄 how-to-contribute.html
+
+> │                ├── 📄 introduction.html
+
+> │                └── 📂 javascript/
+
+> │                  ├── 📄 treeview.html
+
+> │                ├── 📄 layout.html
+
+> │                ├── 📄 license.html
+
+> │              └── 📂 examples/
+
+> │                ├── 📄 lockscreen.html
+
+> │                ├── 📄 login-v2.html
+
+> │                ├── 📄 login.html
+
+> │                ├── 📄 register-v2.html
+
+> │                ├── 📄 register.html
+
+> │              └── 📂 forms/
+
+> │                ├── 📄 general.html
+
+> │              └── 📂 generate/
+
+> │                ├── 📄 theme.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 index2.html
+
+> │              ├── 📄 index3.html
+
+> │              └── 📂 layout/
+
+> │                ├── 📄 collapsed-sidebar.html
+
+> │                ├── 📄 fixed-sidebar.html
+
+> │                ├── 📄 layout-custom-area.html
+
+> │                ├── 📄 layout-rtl.html
+
+> │                ├── 📄 logo-switch.html
+
+> │                ├── 📄 sidebar-mini.html
+
+> │                ├── 📄 unfixed-sidebar.html
+
+> │              └── 📂 tables/
+
+> │                ├── 📄 simple.html
+
+> │              └── 📂 widgets/
+
+> │                ├── 📄 cards.html
+
+> │                ├── 📄 info-box.html
+
+> │                ├── 📄 small-box.html
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 package.json
+
+> │            └── 📂 public/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 manifest.json
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App.js
+
+> │              └── 📂 components/
+
+> │                ├── 📄 ChatPanel.js
+
+> │                ├── 📄 Header.js
+
+> │                ├── 📄 LeftPanel.js
+
+> │                ├── 📄 RightPanel.js
+
+> │                ├── 📄 SetupDialog.js
+
+> │              ├── 📄 index.css
+
+> │              ├── 📄 index.js
+
+> │              ├── 📄 jurisdiction_code_names.json
+
+> │              └── 📂 services/
+
+> │                ├── 📄 Api.js
+
+> │          └── 📂 utils/
+
+> │          ├── 📄 utils.ts
+
+> │            ├── 📄 common.py
+
+> │            ├── 📄 enum.py
+
+> │            ├── 📄 mixins.py
+
+> │        └── 📂 qidiary/
+
+> │          └── 📂 backend/
+
+> │            ├── 📄 app.js
+
+> │            ├── 📄 eslint.config.js
+
+> │            └── 📂 lib/
+
+> │              └── 📂 helpers/
+
+> │                ├── 📄 area-widgets.js
+
+> │                ├── 📄 color-options.js
+
+> │                ├── 📄 typography-options.js
+
+> │              └── 📂 schema-mixins/
+
+> │                ├── 📄 card-fields.js
+
+> │                ├── 📄 hero-fields.js
+
+> │                ├── 📄 link-fields.js
+
+> │                ├── 📄 slideshow-fields.js
+
+> │            └── 📂 modules/
+
+> │              └── 📂 @apostrophecms/
+
+> │                └── 📂 admin-bar/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 asset/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 attachment/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 express/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 global/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 home-page/
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 views/
+
+> │                    ├── 📄 page.html
+
+> │                └── 📂 i18n/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 image-widget/
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 public/
+
+> │                    ├── 📄 preview.svg
+
+> │                └── 📂 layout-column-widget/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 page/
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 views/
+
+> │                    ├── 📄 notFound.html
+
+> │                └── 📂 rich-text-widget/
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 public/
+
+> │                    ├── 📄 preview.svg
+
+> │                └── 📂 settings/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 user/
+
+> │                  ├── 📄 index.js
+
+> │                └── 📂 video-widget/
+
+> │                  ├── 📄 index.js
+
+> │                  └── 📂 public/
+
+> │                    ├── 📄 preview.svg
+
+> │              └── 📂 accordion-widget/
+
+> │                ├── 📄 index.js
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 preview.svg
+
+> │              └── 📂 article/
+
+> │              └── 📂 article-page/
+
+> │                ├── 📄 index.js
+
+> │                ├── 📄 index.js
+
+> │              └── 📂 author/
+
+> │                ├── 📄 index.js
+
+> │              └── 📂 card-widget/
+
+> │                ├── 📄 index.js
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 preview.svg
+
+> │              └── 📂 default-page/
+
+> │                ├── 📄 index.js
+
+> │              └── 📂 hero-widget/
+
+> │                ├── 📄 index.js
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 preview.svg
+
+> │              └── 📂 link-widget/
+
+> │                ├── 📄 index.js
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 preview.svg
+
+> │              └── 📂 slideshow-widget/
+
+> │                ├── 📄 index.js
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 preview.svg
+
+> │            ├── 📄 package-lock.json
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 load-starter-content
+
+> │              ├── 📄 update-starter-content
+
+> │            └── 📂 views/
+
+> │              ├── 📄 layout.html
+
+> │          └── 📂 frontend/
+
+> │            ├── 📄 Procfile
+
+> │            ├── 📄 astro.config.mjs
+
+> │            ├── 📄 package-lock.json
+
+> │            ├── 📄 postcss.config.js
+
+> │            └── 📂 public/
+
+> │              └── 📂 fonts/
+
+> │                └── 📂 fontawesome/
+
+> │                  ├── 📄 fa-brands-400.woff2
+
+> │                  ├── 📄 fa-regular-400.woff2
+
+> │                  ├── 📄 fa-solid-900.woff2
+
+> │                  ├── 📄 fa-v4compatibility.woff2
+
+> │              └── 📂 images/
+
+> │                ├── 📄 image-widget-placeholder.jpg
+
+> │                ├── 📄 missing-icon.svg
+
+> │              └── 📂 scripts/
+
+> │                ├── 📄 VideoWidget.js
+
+> │                ├── 📄 dynamic-navbar-padding.js
+
+> │            └── 📂 src/
+
+> │              └── 📂 components/
+
+> │                ├── 📄 ArticlesFilter.astro
+
+> │                ├── 📄 Figure.astro
+
+> │                ├── 📄 ImageLink.astro
+
+> │                ├── 📄 Pagination.astro
+
+> │              ├── 📄 env.d.ts
+
+> │              └── 📂 layouts/
+
+> │                └── 📂 article-layouts/
+
+> │                  ├── 📄 HeroGrid.astro
+
+> │                  ├── 📄 ListAside.astro
+
+> │                  ├── 📄 ShowFullWidth.astro
+
+> │                  ├── 📄 ShowMagazine.astro
+
+> │                  ├── 📄 ShowMinimal.astro
+
+> │                  ├── 📄 Standard.astro
+
+> │              └── 📂 lib/
+
+> │                ├── 📄 attachments.js
+
+> │                ├── 📄 get-layout-areas.js
+
+> │                ├── 📄 homepage-defaults.js
+
+> │                ├── 📄 use-site-config.js
+
+> │              └── 📂 pages/
+
+> │                ├── 📄 [...slug].astro
+
+> │              └── 📂 styles/
+
+> │                ├── 📄 app.css
+
+> │                ├── 📄 main.scss
+
+> │              └── 📂 templates/
+
+> │                ├── 📄 ArticleIndexPage.astro
+
+> │                ├── 📄 ArticleShowPage.astro
+
+> │                ├── 📄 DefaultPage.astro
+
+> │                ├── 📄 HomePage.astro
+
+> │                ├── 📄 index.js
+
+> │              └── 📂 widgets/
+
+> │                ├── 📄 AccordionWidget.astro
+
+> │                ├── 📄 CardWidget.astro
+
+> │                ├── 📄 FileWidget.astro
+
+> │                ├── 📄 HeroWidget.astro
+
+> │                ├── 📄 ImageWidget.astro
+
+> │                ├── 📄 LinkWidget.astro
+
+> │                ├── 📄 RichTextWidget.astro
+
+> │                ├── 📄 SlideshowWidget.astro
+
+> │                ├── 📄 VideoWidget.astro
+
+> │                ├── 📄 index.js
+
+> │            ├── 📄 tsconfig.json
+
+> │        └── 📂 qidocs/
+
+> │          └── 📂 QiDocFlow/
+
+> │            ├── 📄 LICENSE
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 alembic.ini
+
+> │            ├── 📄 api.Dockerfile
+
+> │            ├── 📄 docker-compose.override.yml
+
+> │            ├── 📄 docker-compose.prod.yml
+
+> │            ├── 📄 docker-compose.yml
+
+> │          └── 📂 QiDocStrange/
+
+> │            ├── 📄 CLAUDE.md
+
+> │            ├── 📄 LICENSE
+
+> │            ├── 📄 README.md
+
+> │            └── 📂 docstrange/
+
+> │              ├── 📄 WEB_INTERFACE.md
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 cli.py
+
+> │              ├── 📄 config.py
+
+> │              ├── 📄 exceptions.py
+
+> │              ├── 📄 extractor.py
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 pipeline/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 layout_detector.py
+
+> │                ├── 📄 model_downloader.py
+
+> │                ├── 📄 nanonets_processor.py
+
+> │                ├── 📄 neural_document_processor.py
+
+> │                ├── 📄 ocr_service.py
+
+> │              └── 📂 processors/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 base.py
+
+> │                ├── 📄 cloud_processor.py
+
+> │                ├── 📄 docx_processor.py
+
+> │                ├── 📄 excel_processor.py
+
+> │                ├── 📄 gpu_processor.py
+
+> │                ├── 📄 html_processor.py
+
+> │                ├── 📄 image_processor.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 pdf_processor.py
+
+> │                ├── 📄 pptx_processor.py
+
+> │                ├── 📄 txt_processor.py
+
+> │                ├── 📄 url_processor.py
+
+> │              ├── 📄 result.py
+
+> │              └── 📂 services/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 auth_service.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 ollama_service.py
+
+> │              └── 📂 static/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 logo_clean.png
+
+> │                ├── 📄 script.js
+
+> │                ├── 📄 styles.css
+
+> │              └── 📂 templates/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 utils/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 gpu_utils.py
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 web_app.py
+
+> │            ├── 📄 example.py
+
+> │            └── 📂 examples/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 test.py
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 mcp_server_module/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 __main__.py
+
+> │              ├── 📄 claude_desktop_config.json
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 server.py
+
+> │            ├── 📄 pyproject.toml
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 prepare_s3_models.py
+
+> │              ├── 📄 setup_dev.py
+
+> │              ├── 📄 setup_environment.sh
+
+> │            └── 📂 tests/
+
+> │              ├── 📄 debug_ocr.py
+
+> │              ├── 📄 debug_ocr_provider.py
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 test_advanced_ocr.py
+
+> │              ├── 📄 test_cloud_mode.py
+
+> │              ├── 📄 test_converter.py
+
+> │              ├── 📄 test_enhanced_layout.py
+
+> │              ├── 📄 test_enhanced_library.py
+
+> │              ├── 📄 test_enhanced_pdf_processor.py
+
+> │              ├── 📄 test_html_generation.py
+
+> │              ├── 📄 test_json_structure.py
+
+> │              ├── 📄 test_ocr_with_real_image.py
+
+> │              ├── 📄 test_real_files.py
+
+> │              ├── 📄 test_real_files_enhanced.py
+
+> │              ├── 📄 test_real_json_conversion.py
+
+> │          ├── 📄 QiDocs.jsx
+
+> │          └── 📂 QiFileRenamer/
+
+> │            └── 📂 smart-rename/
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 eslint.config.js
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 package.json
+
+> │              ├── 📄 setupguide.md
+
+> │              └── 📂 src/
+
+> │                ├── 📄 App.jsx
+
+> │                ├── 📄 index.css
+
+> │                ├── 📄 main.jsx
+
+> │              ├── 📄 vite.config.js
+
+> │          ├── 📄 QiNotePlan.md
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 README_INTEGRATION.md
+
+> │          └── 📂 api/
+
+> │            └── 📂 qimind/
+
+> │              ├── 📄 00_Laws_of_Qi.md
+
+> │              ├── 📄 01_QiMultiverse_Tree.md
+
+> │              ├── 📄 02_QiD_Spec.md
+
+> │              ├── 📄 03_QiNode_Schema.md
+
+> │              ├── 📄 04_Gina_Memory_Spec.md
+
+> │          └── 📂 app_QiNoteOS_ph00/
+
+> │            ├── 📄 0.00.00-qios_genesis.md
+
+> │            ├── 📄 QiNoteOS_Dev_Doc_v1.2_ColdStart_Final.pdf
+
+> │            └── 📂 apps/
+
+> │              └── 📂 ui/
+
+> │                └── 📂 standard/
+
+> │                  └── 📂 public/
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 src/
+
+> │                    ├── 📄 App.css
+
+> │                    ├── 📄 App.jsx
+
+> │                    └── 📂 assets/
+
+> │                      ├── 📄 index.html
+
+> │                    ├── 📄 index.css
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 main.jsx
+
+> │              └── 📂 versions/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 log.md
+
+> │            └── 📂 data/
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 rules/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qios_rules_v1_1.yaml
+
+> │              └── 📂 schemas/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 seeds/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 supabase_seed_core_status.sql
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 CODE_REVIEW.md
+
+> │              ├── 📄 PRODUCTION_READINESS_FIXES.md
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 SETUP_STATUS.md
+
+> │              ├── 📄 TESTING_CHECKLIST.md
+
+> │              ├── 📄 n8n_workflows_v0.md
+
+> │              ├── 📄 normalization_rules_v0.md
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 kernel/
+
+> │              └── 📂 config/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 kernel.yaml
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 src/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qid_bridge.py
+
+> │                ├── 📄 rag.py
+
+> │            └── 📂 packages/
+
+> │              └── 📂 api-client/
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 client.ts
+
+> │                  ├── 📄 index.ts
+
+> │                ├── 📄 tsconfig.json
+
+> │              └── 📂 core/
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 index.ts
+
+> │                  ├── 📄 types.ts
+
+> │              └── 📂 editors/
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 MarkdownEditor.tsx
+
+> │                  ├── 📄 RichTextEditor.tsx
+
+> │                  ├── 📄 index.ts
+
+> │              └── 📂 forms/
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 index.ts
+
+> │                  └── 📂 schemas/
+
+> │                  ├── 📄 schemas.ts
+
+> │                    ├── 📄 noteSchema.ts
+
+> │              └── 📂 ui/
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 Button.tsx
+
+> │                  ├── 📄 Card.tsx
+
+> │                  ├── 📄 Input.tsx
+
+> │                  ├── 📄 Modal.tsx
+
+> │                  ├── 📄 Select.tsx
+
+> │                  ├── 📄 Textarea.tsx
+
+> │                  ├── 📄 index.ts
+
+> │            └── 📂 vault/
+
+> │              └── 📂 _derived/
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 modules/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 qid0400003_fcfcu_case/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 module_index.json
+
+> │                  └── 📂 qid1500001_how_to_use_qinoteos/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 module_index.json
+
+> │                ├── 📄 search.json
+
+> │                ├── 📄 vault_index.json
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 modules/
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 qid0400003_fcfcu_case/
+
+> │                  ├── 📄 README.md
+
+> │                  └── 📂 assets/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 unnamed.png
+
+> │                  └── 📂 content/
+
+> │                    ├── 📄 content.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 index/
+
+> │                  ├── 📄 index.html
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 module.yaml
+
+> │                  └── 📂 snapshots/
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 vectors/
+
+> │                    ├── 📄 chunks.jsonl
+
+> │                    ├── 📄 embeddings.npy
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 versions/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 log.md
+
+> │                └── 📂 qid1500001_how_to_use_qinoteos/
+
+> │                  ├── 📄 README.md
+
+> │                  └── 📂 assets/
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 content/
+
+> │                    ├── 📄 content.md
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 module.yaml
+
+> │                  └── 📂 snapshots/
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 vectors/
+
+> │                    ├── 📄 chunks.jsonl
+
+> │                    ├── 📄 embeddings.npy
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 versions/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 log.md
+
+> │            └── 📂 worker/
+
+> │              ├── 📄 CLOUDFLARE_BUILD_COMMANDS.md
+
+> │              ├── 📄 WRANGLER_SECRETS_GUIDE.md
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 src/
+
+> │                ├── 📄 ginaMemory.ts
+
+> │                ├── 📄 index.ts
+
+> │                ├── 📄 qinoteApi.ts
+
+> │                ├── 📄 qinoteClassification.ts
+
+> │                ├── 📄 rag.ts
+
+> │                ├── 📄 seedQinote.ts
+
+> │                ├── 📄 supabaseMind.ts
+
+> │                ├── 📄 zohoMCP.ts
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 wrangler.toml
+
+> │          └── 📂 app_QiNoteOS_ph02_Paperless/
+
+> │            ├── 📄 CODEOWNERS
+
+> │            ├── 📄 CODE_OF_CONDUCT.md
+
+> │            ├── 📄 CONTRIBUTING.md
+
+> │            ├── 📄 Dockerfile
+
+> │            ├── 📄 LICENSE
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 SECURITY.md
+
+> │            ├── 📄 crowdin.yml
+
+> │            └── 📂 docker/
+
+> │              └── 📂 compose/
+
+> │                ├── 📄 docker-compose.ci-test.yml
+
+> │                ├── 📄 docker-compose.env
+
+> │                ├── 📄 docker-compose.mariadb-tika.yml
+
+> │                ├── 📄 docker-compose.mariadb.yml
+
+> │                ├── 📄 docker-compose.portainer.yml
+
+> │                ├── 📄 docker-compose.postgres-tika.yml
+
+> │                ├── 📄 docker-compose.postgres.yml
+
+> │                ├── 📄 docker-compose.sqlite-tika.yml
+
+> │                ├── 📄 docker-compose.sqlite.yml
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 init-flow.drawio.png
+
+> │              ├── 📄 install_management_commands.sh
+
+> │              ├── 📄 management_script.sh
+
+> │              └── 📂 rootfs/
+
+> │                └── 📂 etc/
+
+> │                  └── 📂 ImageMagick-6/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 paperless-policy.xml
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 s6-overlay/
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 s6-rc.d/
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 init-complete/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-custom-init/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-env-file/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-folders/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-migrations/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-modify-user/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-search-index/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-start/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-superuser/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-system-checks/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-tesseract-langs/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-wait-for-db/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 init-wait-for-redis/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 type
+
+> │                        ├── 📄 up
+
+> │                      └── 📂 svc-consumer/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                      └── 📂 svc-flower/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                      └── 📂 svc-scheduler/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                      └── 📂 svc-webserver/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                      └── 📂 svc-worker/
+
+> │                        └── 📂 dependencies.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 run
+
+> │                        ├── 📄 type
+
+> │                      └── 📂 user/
+
+> │                        └── 📂 contents.d/
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 usr/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 local/
+
+> │                    └── 📂 bin/
+
+> │                      ├── 📄 convert_mariadb_uuid
+
+> │                      ├── 📄 createsuperuser
+
+> │                      ├── 📄 decrypt_documents
+
+> │                      ├── 📄 deduplicate.py
+
+> │                      ├── 📄 document_archiver
+
+> │                      ├── 📄 document_create_classifier
+
+> │                      ├── 📄 document_exporter
+
+> │                      ├── 📄 document_fuzzy_match
+
+> │                      ├── 📄 document_importer
+
+> │                      ├── 📄 document_index
+
+> │                      ├── 📄 document_renamer
+
+> │                      ├── 📄 document_retagger
+
+> │                      ├── 📄 document_sanity_checker
+
+> │                      ├── 📄 document_thumbnails
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 mail_fetcher
+
+> │                      ├── 📄 manage_superuser
+
+> │                      ├── 📄 prune_audit_logs
+
+> │                      ├── 📄 wait-for-redis.py
+
+> │                    ├── 📄 index.html
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 administration.md
+
+> │              ├── 📄 advanced_usage.md
+
+> │              ├── 📄 api.md
+
+> │              └── 📂 assets/
+
+> │                ├── 📄 extra.css
+
+> │                ├── 📄 favicon.png
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 logo.svg
+
+> │                ├── 📄 logo_full_black.svg
+
+> │                ├── 📄 logo_full_white.svg
+
+> │                ├── 📄 recommended_workflow.png
+
+> │                └── 📂 screenshots/
+
+> │                  ├── 📄 bulk-edit.png
+
+> │                  ├── 📄 correspondents.png
+
+> │                  ├── 📄 custom_field1.png
+
+> │                  ├── 📄 custom_field2.png
+
+> │                  ├── 📄 dashboard.png
+
+> │                  ├── 📄 documents-filter.png
+
+> │                  ├── 📄 documents-largecards.png
+
+> │                  ├── 📄 documents-smallcards-dark.png
+
+> │                  ├── 📄 documents-smallcards-slimsidebar.png
+
+> │                  ├── 📄 documents-smallcards.png
+
+> │                  ├── 📄 documents-table.png
+
+> │                  ├── 📄 editing.png
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 logs.png
+
+> │                  ├── 📄 mail-rules-edited.png
+
+> │                  ├── 📄 mobile1.png
+
+> │                  ├── 📄 mobile2.png
+
+> │                  ├── 📄 mobile3.png
+
+> │                  ├── 📄 new-correspondent.png
+
+> │                  ├── 📄 new-document_type.png
+
+> │                  ├── 📄 new-storage_path.png
+
+> │                  ├── 📄 new-tag.png
+
+> │                  ├── 📄 permissions_document.png
+
+> │                  ├── 📄 permissions_global.png
+
+> │                  ├── 📄 search-preview.png
+
+> │                  ├── 📄 search-results.png
+
+> │                  ├── 📄 workflow.png
+
+> │              ├── 📄 changelog.md
+
+> │              ├── 📄 configuration.md
+
+> │              ├── 📄 development.md
+
+> │              ├── 📄 faq.md
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 index.md
+
+> │              ├── 📄 setup.md
+
+> │              ├── 📄 troubleshooting.md
+
+> │              ├── 📄 usage.md
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 install-paperless-ngx.sh
+
+> │            └── 📂 local-deploy/
+
+> │              └── 📂 consume/
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 docker-compose.env
+
+> │              ├── 📄 docker-compose.yml
+
+> │              └── 📂 export/
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 start-paperless.bat
+
+> │            ├── 📄 mkdocs.yml
+
+> │            ├── 📄 paperless-ngx.code-workspace
+
+> │            ├── 📄 paperless.conf.example
+
+> │            ├── 📄 pyproject.toml
+
+> │            └── 📂 qinote-bridge/
+
+> │              ├── 📄 BRIDGE_README.md
+
+> │              ├── 📄 export_bridge.py
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 qinote_vault/
+
+> │                └── 📂 documents/
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │            └── 📂 resources/
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 logo/
+
+> │              ├── 📄 logo.txt
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 print/
+
+> │                  └── 📂 eps/
+
+> │                    ├── 📄 Black logo - no background.eps
+
+> │                    ├── 📄 Color logo - no background.eps
+
+> │                    ├── 📄 Color logo with background.eps
+
+> │                    ├── 📄 White logo - no background.eps
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 pdf/
+
+> │                    ├── 📄 Black logo - no background.pdf
+
+> │                    ├── 📄 Color logo - no background.pdf
+
+> │                    ├── 📄 Color logo with background.pdf
+
+> │                    ├── 📄 White logo - no background.pdf
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 web/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 png/
+
+> │                    ├── 📄 Color logo - no background.png
+
+> │                    ├── 📄 Color logo with background.png
+
+> │                    ├── 📄 White logo - no background.png
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 svg/
+
+> │                    ├── 📄 Black logo - no background.svg
+
+> │                    ├── 📄 Color logo with background.svg
+
+> │                    ├── 📄 White logo - no background.svg
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 square.svg
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 paperless-consumer.service
+
+> │              ├── 📄 paperless-scheduler.service
+
+> │              ├── 📄 paperless-task-queue.service
+
+> │              ├── 📄 paperless-webserver.service
+
+> │              ├── 📄 paperless-webserver.socket
+
+> │              ├── 📄 post-consumption-example.sh
+
+> │              ├── 📄 start_services.sh
+
+> │            └── 📂 src/
+
+> │            └── 📂 src-ui/
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 __mocks__/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 pdfjs-dist.ts
+
+> │              ├── 📄 angular.json
+
+> │              └── 📂 e2e/
+
+> │                └── 📂 admin/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 requests/
+
+> │                    ├── 📄 api-settings.har
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 settings.spec.ts
+
+> │                └── 📂 dashboard/
+
+> │                  ├── 📄 dashboard.spec.ts
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 requests/
+
+> │                    ├── 📄 api-dashboard1.har
+
+> │                    ├── 📄 api-dashboard2.har
+
+> │                    ├── 📄 api-dashboard3.har
+
+> │                    ├── 📄 api-dashboard4.har
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 document-detail/
+
+> │                  ├── 📄 document-detail.spec.ts
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 requests/
+
+> │                    ├── 📄 api-document-detail.har
+
+> │                    ├── 📄 api-document-detail2.har
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 document-list/
+
+> │                  ├── 📄 document-list.spec.ts
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 requests/
+
+> │                    ├── 📄 api-document-list1.har
+
+> │                    ├── 📄 api-document-list2.har
+
+> │                    ├── 📄 api-document-list3.har
+
+> │                    ├── 📄 api-document-list4.har
+
+> │                    ├── 📄 api-document-list5.har
+
+> │                    ├── 📄 api-document-list6.har
+
+> │                    ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 permissions/
+
+> │                  ├── 📄 global-permissions.spec.ts
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 requests/
+
+> │                    ├── 📄 api-global-permissions.har
+
+> │                    ├── 📄 index.html
+
+> │              ├── 📄 extra-webpack.config.ts
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 jest.config.js
+
+> │              ├── 📄 messages.xlf
+
+> │              ├── 📄 package.json
+
+> │              ├── 📄 playwright.config.ts
+
+> │              ├── 📄 pnpm-lock.yaml
+
+> │              ├── 📄 setup-jest.ts
+
+> │              └── 📂 src/
+
+> │                └── 📂 app/
+
+> │                  ├── 📄 app-routing.module.ts
+
+> │                  ├── 📄 app.component.html
+
+> │                  ├── 📄 app.component.spec.ts
+
+> │                  ├── 📄 app.component.ts
+
+> │                  └── 📂 components/
+
+> │                    └── 📂 admin/
+
+> │                      └── 📂 config/
+
+> │                        ├── 📄 config.component.html
+
+> │                        ├── 📄 config.component.spec.ts
+
+> │                        ├── 📄 config.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 settings/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 settings.component.html
+
+> │                        ├── 📄 settings.component.spec.ts
+
+> │                        ├── 📄 settings.component.ts
+
+> │                      └── 📂 tasks/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 tasks.component.html
+
+> │                        ├── 📄 tasks.component.scss
+
+> │                        ├── 📄 tasks.component.spec.ts
+
+> │                        ├── 📄 tasks.component.ts
+
+> │                      └── 📂 trash/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 trash.component.html
+
+> │                        ├── 📄 trash.component.spec.ts
+
+> │                        ├── 📄 trash.component.ts
+
+> │                      └── 📂 users-groups/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 users-groups.component.html
+
+> │                        ├── 📄 users-groups.component.spec.ts
+
+> │                        ├── 📄 users-groups.component.ts
+
+> │                    └── 📂 app-frame/
+
+> │                      ├── 📄 app-frame.component.html
+
+> │                      ├── 📄 app-frame.component.scss
+
+> │                      ├── 📄 app-frame.component.spec.ts
+
+> │                      ├── 📄 app-frame.component.ts
+
+> │                      └── 📂 global-search/
+
+> │                        ├── 📄 global-search.component.html
+
+> │                        ├── 📄 global-search.component.scss
+
+> │                        ├── 📄 global-search.component.spec.ts
+
+> │                        ├── 📄 global-search.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 toasts-dropdown/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 toasts-dropdown.component.html
+
+> │                        ├── 📄 toasts-dropdown.component.scss
+
+> │                        ├── 📄 toasts-dropdown.component.spec.ts
+
+> │                        ├── 📄 toasts-dropdown.component.ts
+
+> │                    └── 📂 common/
+
+> │                      └── 📂 clearable-badge/
+
+> │                        ├── 📄 clearable-badge.component.html
+
+> │                        ├── 📄 clearable-badge.component.scss
+
+> │                        ├── 📄 clearable-badge.component.spec.ts
+
+> │                        ├── 📄 clearable-badge.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 confirm-button/
+
+> │                        ├── 📄 confirm-button.component.html
+
+> │                        ├── 📄 confirm-button.component.scss
+
+> │                        ├── 📄 confirm-button.component.spec.ts
+
+> │                        ├── 📄 confirm-button.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 confirm-dialog/
+
+> │                        ├── 📄 confirm-dialog.component.html
+
+> │                        ├── 📄 confirm-dialog.component.spec.ts
+
+> │                        ├── 📄 confirm-dialog.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                        └── 📂 merge-confirm-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 merge-confirm-dialog.component.html
+
+> │                          ├── 📄 merge-confirm-dialog.component.scss
+
+> │                          ├── 📄 merge-confirm-dialog.component.spec.ts
+
+> │                          ├── 📄 merge-confirm-dialog.component.ts
+
+> │                        └── 📂 rotate-confirm-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 rotate-confirm-dialog.component.html
+
+> │                          ├── 📄 rotate-confirm-dialog.component.scss
+
+> │                          ├── 📄 rotate-confirm-dialog.component.spec.ts
+
+> │                          ├── 📄 rotate-confirm-dialog.component.ts
+
+> │                      └── 📂 custom-field-display/
+
+> │                        ├── 📄 custom-field-display.component.html
+
+> │                        ├── 📄 custom-field-display.component.spec.ts
+
+> │                        ├── 📄 custom-field-display.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 custom-fields-dropdown/
+
+> │                        ├── 📄 custom-fields-dropdown.component.html
+
+> │                        ├── 📄 custom-fields-dropdown.component.scss
+
+> │                        ├── 📄 custom-fields-dropdown.component.spec.ts
+
+> │                        ├── 📄 custom-fields-dropdown.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 custom-fields-query-dropdown/
+
+> │                        ├── 📄 custom-fields-query-dropdown.component.html
+
+> │                        ├── 📄 custom-fields-query-dropdown.component.scss
+
+> │                        ├── 📄 custom-fields-query-dropdown.component.spec.ts
+
+> │                        ├── 📄 custom-fields-query-dropdown.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 dates-dropdown/
+
+> │                        ├── 📄 dates-dropdown.component.html
+
+> │                        ├── 📄 dates-dropdown.component.scss
+
+> │                        ├── 📄 dates-dropdown.component.spec.ts
+
+> │                        ├── 📄 dates-dropdown.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 edit-dialog/
+
+> │                        └── 📂 correspondent-edit-dialog/
+
+> │                          ├── 📄 correspondent-edit-dialog.component.html
+
+> │                          ├── 📄 correspondent-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 correspondent-edit-dialog.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 custom-field-edit-dialog/
+
+> │                          ├── 📄 custom-field-edit-dialog.component.html
+
+> │                          ├── 📄 custom-field-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 custom-field-edit-dialog.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 document-type-edit-dialog/
+
+> │                          ├── 📄 document-type-edit-dialog.component.html
+
+> │                          ├── 📄 document-type-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 document-type-edit-dialog.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 edit-dialog.component.spec.ts
+
+> │                        ├── 📄 edit-dialog.component.ts
+
+> │                        └── 📂 group-edit-dialog/
+
+> │                          ├── 📄 group-edit-dialog.component.html
+
+> │                          ├── 📄 group-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 group-edit-dialog.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        └── 📂 mail-account-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 mail-account-edit-dialog.component.html
+
+> │                          ├── 📄 mail-account-edit-dialog.component.scss
+
+> │                          ├── 📄 mail-account-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 mail-account-edit-dialog.component.ts
+
+> │                        └── 📂 mail-rule-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 mail-rule-edit-dialog.component.html
+
+> │                          ├── 📄 mail-rule-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 mail-rule-edit-dialog.component.ts
+
+> │                        └── 📂 storage-path-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 storage-path-edit-dialog.component.html
+
+> │                          ├── 📄 storage-path-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 storage-path-edit-dialog.component.ts
+
+> │                        └── 📂 tag-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 tag-edit-dialog.component.html
+
+> │                          ├── 📄 tag-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 tag-edit-dialog.component.ts
+
+> │                        └── 📂 user-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 user-edit-dialog.component.html
+
+> │                          ├── 📄 user-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 user-edit-dialog.component.ts
+
+> │                        └── 📂 workflow-edit-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 workflow-edit-dialog.component.html
+
+> │                          ├── 📄 workflow-edit-dialog.component.scss
+
+> │                          ├── 📄 workflow-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 workflow-edit-dialog.component.ts
+
+> │                      └── 📂 email-document-dialog/
+
+> │                        ├── 📄 email-document-dialog.component.html
+
+> │                        ├── 📄 email-document-dialog.component.spec.ts
+
+> │                        ├── 📄 email-document-dialog.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 filterable-dropdown/
+
+> │                        ├── 📄 filterable-dropdown.component.html
+
+> │                        ├── 📄 filterable-dropdown.component.scss
+
+> │                        ├── 📄 filterable-dropdown.component.spec.ts
+
+> │                        ├── 📄 filterable-dropdown.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                        └── 📂 toggleable-dropdown-button/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 toggleable-dropdown-button.component.html
+
+> │                          ├── 📄 toggleable-dropdown-button.component.scss
+
+> │                          ├── 📄 toggleable-dropdown-button.component.spec.ts
+
+> │                          ├── 📄 toggleable-dropdown-button.component.ts
+
+> │                      └── 📂 hotkey-dialog/
+
+> │                        ├── 📄 hotkey-dialog.component.html
+
+> │                        ├── 📄 hotkey-dialog.component.spec.ts
+
+> │                        ├── 📄 hotkey-dialog.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 input/
+
+> │                        ├── 📄 abstract-input.spec.ts
+
+> │                        ├── 📄 abstract-input.ts
+
+> │                        └── 📂 check/
+
+> │                          ├── 📄 check.component.html
+
+> │                          ├── 📄 check.component.spec.ts
+
+> │                          ├── 📄 check.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 color/
+
+> │                          ├── 📄 color.component.html
+
+> │                          ├── 📄 color.component.spec.ts
+
+> │                          ├── 📄 color.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 custom-fields-values/
+
+> │                          ├── 📄 custom-fields-values.component.html
+
+> │                          ├── 📄 custom-fields-values.component.scss
+
+> │                          ├── 📄 custom-fields-values.component.spec.ts
+
+> │                          ├── 📄 custom-fields-values.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 date/
+
+> │                          ├── 📄 date.component.html
+
+> │                          ├── 📄 date.component.scss
+
+> │                          ├── 📄 date.component.spec.ts
+
+> │                          ├── 📄 date.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 document-link/
+
+> │                          ├── 📄 document-link.component.html
+
+> │                          ├── 📄 document-link.component.scss
+
+> │                          ├── 📄 document-link.component.spec.ts
+
+> │                          ├── 📄 document-link.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 drag-drop-select/
+
+> │                          ├── 📄 drag-drop-select.component.html
+
+> │                          ├── 📄 drag-drop-select.component.scss
+
+> │                          ├── 📄 drag-drop-select.component.spec.ts
+
+> │                          ├── 📄 drag-drop-select.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 entries/
+
+> │                          ├── 📄 entries.component.html
+
+> │                          ├── 📄 entries.component.spec.ts
+
+> │                          ├── 📄 entries.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        └── 📂 file/
+
+> │                          ├── 📄 file.component.html
+
+> │                          ├── 📄 file.component.spec.ts
+
+> │                          ├── 📄 file.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                        └── 📂 monetary/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 monetary.component.html
+
+> │                          ├── 📄 monetary.component.scss
+
+> │                          ├── 📄 monetary.component.spec.ts
+
+> │                          ├── 📄 monetary.component.ts
+
+> │                        └── 📂 number/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 number.component.html
+
+> │                          ├── 📄 number.component.spec.ts
+
+> │                          ├── 📄 number.component.ts
+
+> │                        └── 📂 password/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 password.component.html
+
+> │                          ├── 📄 password.component.spec.ts
+
+> │                          ├── 📄 password.component.ts
+
+> │                        └── 📂 permissions/
+
+> │                          ├── 📄 index.html
+
+> │                          └── 📂 permissions-form/
+
+> │                            ├── 📄 index.html
+
+> │                            ├── 📄 permissions-form.component.html
+
+> │                            ├── 📄 permissions-form.component.scss
+
+> │                            ├── 📄 permissions-form.component.spec.ts
+
+> │                            ├── 📄 permissions-form.component.ts
+
+> │                          └── 📂 permissions-group/
+
+> │                            ├── 📄 index.html
+
+> │                            ├── 📄 permissions-group.component.html
+
+> │                            ├── 📄 permissions-group.component.spec.ts
+
+> │                            ├── 📄 permissions-group.component.ts
+
+> │                          └── 📂 permissions-user/
+
+> │                            ├── 📄 index.html
+
+> │                            ├── 📄 permissions-user.component.html
+
+> │                            ├── 📄 permissions-user.component.scss
+
+> │                            ├── 📄 permissions-user.component.spec.ts
+
+> │                            ├── 📄 permissions-user.component.ts
+
+> │                        └── 📂 select/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 select.component.html
+
+> │                          ├── 📄 select.component.scss
+
+> │                          ├── 📄 select.component.spec.ts
+
+> │                          ├── 📄 select.component.ts
+
+> │                        └── 📂 switch/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 switch.component.html
+
+> │                          ├── 📄 switch.component.spec.ts
+
+> │                          ├── 📄 switch.component.ts
+
+> │                        └── 📂 tags/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 tags.component.html
+
+> │                          ├── 📄 tags.component.scss
+
+> │                          ├── 📄 tags.component.spec.ts
+
+> │                          ├── 📄 tags.component.ts
+
+> │                        └── 📂 text/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 text.component.html
+
+> │                          ├── 📄 text.component.spec.ts
+
+> │                          ├── 📄 text.component.ts
+
+> │                        └── 📂 textarea/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 textarea.component.html
+
+> │                          ├── 📄 textarea.component.spec.ts
+
+> │                          ├── 📄 textarea.component.ts
+
+> │                        └── 📂 url/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 url.component.html
+
+> │                          ├── 📄 url.component.spec.ts
+
+> │                          ├── 📄 url.component.ts
+
+> │                      └── 📂 logo/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 logo.component.html
+
+> │                        ├── 📄 logo.component.spec.ts
+
+> │                        ├── 📄 logo.component.ts
+
+> │                      └── 📂 page-header/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 page-header.component.html
+
+> │                        ├── 📄 page-header.component.scss
+
+> │                        ├── 📄 page-header.component.spec.ts
+
+> │                        ├── 📄 page-header.component.ts
+
+> │                      └── 📂 pdf-editor/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 pdf-editor.component.html
+
+> │                        ├── 📄 pdf-editor.component.scss
+
+> │                        ├── 📄 pdf-editor.component.spec.ts
+
+> │                        ├── 📄 pdf-editor.component.ts
+
+> │                      └── 📂 permissions-dialog/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 permissions-dialog.component.html
+
+> │                        ├── 📄 permissions-dialog.component.spec.ts
+
+> │                        ├── 📄 permissions-dialog.component.ts
+
+> │                      └── 📂 permissions-filter-dropdown/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 permissions-filter-dropdown.component.html
+
+> │                        ├── 📄 permissions-filter-dropdown.component.scss
+
+> │                        ├── 📄 permissions-filter-dropdown.component.spec.ts
+
+> │                        ├── 📄 permissions-filter-dropdown.component.ts
+
+> │                      └── 📂 permissions-select/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 permissions-select.component.html
+
+> │                        ├── 📄 permissions-select.component.spec.ts
+
+> │                        ├── 📄 permissions-select.component.ts
+
+> │                      └── 📂 preview-popup/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 preview-popup.component.html
+
+> │                        ├── 📄 preview-popup.component.scss
+
+> │                        ├── 📄 preview-popup.component.spec.ts
+
+> │                        ├── 📄 preview-popup.component.ts
+
+> │                      └── 📂 profile-edit-dialog/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 profile-edit-dialog.component.html
+
+> │                        ├── 📄 profile-edit-dialog.component.scss
+
+> │                        ├── 📄 profile-edit-dialog.component.spec.ts
+
+> │                        ├── 📄 profile-edit-dialog.component.ts
+
+> │                      └── 📂 share-links-dialog/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 share-links-dialog.component.html
+
+> │                        ├── 📄 share-links-dialog.component.scss
+
+> │                        ├── 📄 share-links-dialog.component.spec.ts
+
+> │                        ├── 📄 share-links-dialog.component.ts
+
+> │                      └── 📂 system-status-dialog/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 system-status-dialog.component.html
+
+> │                        ├── 📄 system-status-dialog.component.scss
+
+> │                        ├── 📄 system-status-dialog.component.spec.ts
+
+> │                        ├── 📄 system-status-dialog.component.ts
+
+> │                      └── 📂 tag/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 tag.component.html
+
+> │                        ├── 📄 tag.component.scss
+
+> │                        ├── 📄 tag.component.spec.ts
+
+> │                        ├── 📄 tag.component.ts
+
+> │                      └── 📂 toast/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 toast.component.html
+
+> │                        ├── 📄 toast.component.scss
+
+> │                        ├── 📄 toast.component.spec.ts
+
+> │                        ├── 📄 toast.component.ts
+
+> │                      └── 📂 toasts/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 toasts.component.html
+
+> │                        ├── 📄 toasts.component.scss
+
+> │                        ├── 📄 toasts.component.spec.ts
+
+> │                        ├── 📄 toasts.component.ts
+
+> │                    └── 📂 dashboard/
+
+> │                      ├── 📄 dashboard.component.html
+
+> │                      ├── 📄 dashboard.component.scss
+
+> │                      ├── 📄 dashboard.component.spec.ts
+
+> │                      ├── 📄 dashboard.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 widgets/
+
+> │                        ├── 📄 index.html
+
+> │                        └── 📂 saved-view-widget/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 saved-view-widget.component.html
+
+> │                          ├── 📄 saved-view-widget.component.scss
+
+> │                          ├── 📄 saved-view-widget.component.spec.ts
+
+> │                          ├── 📄 saved-view-widget.component.ts
+
+> │                        └── 📂 statistics-widget/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 statistics-widget.component.html
+
+> │                          ├── 📄 statistics-widget.component.scss
+
+> │                          ├── 📄 statistics-widget.component.spec.ts
+
+> │                          ├── 📄 statistics-widget.component.ts
+
+> │                        └── 📂 upload-file-widget/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 upload-file-widget.component.html
+
+> │                          ├── 📄 upload-file-widget.component.scss
+
+> │                          ├── 📄 upload-file-widget.component.spec.ts
+
+> │                          ├── 📄 upload-file-widget.component.ts
+
+> │                        └── 📂 welcome-widget/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 welcome-widget.component.html
+
+> │                          ├── 📄 welcome-widget.component.spec.ts
+
+> │                          ├── 📄 welcome-widget.component.ts
+
+> │                        └── 📂 widget-frame/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 widget-frame.component.html
+
+> │                          ├── 📄 widget-frame.component.scss
+
+> │                          ├── 📄 widget-frame.component.spec.ts
+
+> │                          ├── 📄 widget-frame.component.ts
+
+> │                    └── 📂 document-asn/
+
+> │                      ├── 📄 document-asn.component.html
+
+> │                      ├── 📄 document-asn.component.spec.ts
+
+> │                      ├── 📄 document-asn.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                    └── 📂 document-detail/
+
+> │                      ├── 📄 document-detail.component.html
+
+> │                      ├── 📄 document-detail.component.scss
+
+> │                      ├── 📄 document-detail.component.spec.ts
+
+> │                      ├── 📄 document-detail.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 metadata-collapse/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 metadata-collapse.component.html
+
+> │                        ├── 📄 metadata-collapse.component.scss
+
+> │                        ├── 📄 metadata-collapse.component.spec.ts
+
+> │                        ├── 📄 metadata-collapse.component.ts
+
+> │                    └── 📂 document-history/
+
+> │                      ├── 📄 document-history.component.html
+
+> │                      ├── 📄 document-history.component.spec.ts
+
+> │                      ├── 📄 document-history.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                    └── 📂 document-list/
+
+> │                      └── 📂 bulk-editor/
+
+> │                        ├── 📄 bulk-editor.component.html
+
+> │                        ├── 📄 bulk-editor.component.scss
+
+> │                        ├── 📄 bulk-editor.component.spec.ts
+
+> │                        ├── 📄 bulk-editor.component.ts
+
+> │                        └── 📂 custom-fields-bulk-edit-dialog/
+
+> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.html
+
+> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.spec.ts
+
+> │                          ├── 📄 custom-fields-bulk-edit-dialog.component.ts
+
+> │                          ├── 📄 index.html
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 document-card-large/
+
+> │                        ├── 📄 document-card-large.component.html
+
+> │                        ├── 📄 document-card-large.component.scss
+
+> │                        ├── 📄 document-card-large.component.spec.ts
+
+> │                        ├── 📄 document-card-large.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 document-card-small/
+
+> │                        ├── 📄 document-card-small.component.html
+
+> │                        ├── 📄 document-card-small.component.scss
+
+> │                        ├── 📄 document-card-small.component.spec.ts
+
+> │                        ├── 📄 document-card-small.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 document-list.component.html
+
+> │                      ├── 📄 document-list.component.scss
+
+> │                      ├── 📄 document-list.component.spec.ts
+
+> │                      ├── 📄 document-list.component.ts
+
+> │                      └── 📂 filter-editor/
+
+> │                        ├── 📄 filter-editor.component.html
+
+> │                        ├── 📄 filter-editor.component.scss
+
+> │                        ├── 📄 filter-editor.component.spec.ts
+
+> │                        ├── 📄 filter-editor.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 save-view-config-dialog/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 save-view-config-dialog.component.html
+
+> │                        ├── 📄 save-view-config-dialog.component.spec.ts
+
+> │                        ├── 📄 save-view-config-dialog.component.ts
+
+> │                    └── 📂 document-notes/
+
+> │                      ├── 📄 document-notes.component.html
+
+> │                      ├── 📄 document-notes.component.scss
+
+> │                      ├── 📄 document-notes.component.spec.ts
+
+> │                      ├── 📄 document-notes.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                    └── 📂 file-drop/
+
+> │                      ├── 📄 file-drop.component.html
+
+> │                      ├── 📄 file-drop.component.scss
+
+> │                      ├── 📄 file-drop.component.spec.ts
+
+> │                      ├── 📄 file-drop.component.ts
+
+> │                      ├── 📄 index.html
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 loading-component/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 loading.component.spec.ts
+
+> │                      ├── 📄 loading.component.ts
+
+> │                    └── 📂 manage/
+
+> │                      └── 📂 correspondent-list/
+
+> │                        ├── 📄 correspondent-list.component.spec.ts
+
+> │                        ├── 📄 correspondent-list.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 custom-fields/
+
+> │                        ├── 📄 custom-fields.component.html
+
+> │                        ├── 📄 custom-fields.component.scss
+
+> │                        ├── 📄 custom-fields.component.spec.ts
+
+> │                        ├── 📄 custom-fields.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 document-type-list/
+
+> │                        ├── 📄 document-type-list.component.spec.ts
+
+> │                        ├── 📄 document-type-list.component.ts
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 mail/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 mail.component.html
+
+> │                        ├── 📄 mail.component.scss
+
+> │                        ├── 📄 mail.component.spec.ts
+
+> │                        ├── 📄 mail.component.ts
+
+> │                        └── 📂 processed-mail-dialog/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 processed-mail-dialog.component.html
+
+> │                          ├── 📄 processed-mail-dialog.component.scss
+
+> │                          ├── 📄 processed-mail-dialog.component.spec.ts
+
+> │                          ├── 📄 processed-mail-dialog.component.ts
+
+> │                      └── 📂 management-list/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 management-list.component.html
+
+> │                        ├── 📄 management-list.component.scss
+
+> │                        ├── 📄 management-list.component.spec.ts
+
+> │                        ├── 📄 management-list.component.ts
+
+> │                      └── 📂 saved-views/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 saved-views.component.html
+
+> │                        ├── 📄 saved-views.component.scss
+
+> │                        ├── 📄 saved-views.component.spec.ts
+
+> │                        ├── 📄 saved-views.component.ts
+
+> │                      └── 📂 storage-path-list/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 storage-path-list.component.spec.ts
+
+> │                        ├── 📄 storage-path-list.component.ts
+
+> │                      └── 📂 tag-list/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 tag-list.component.spec.ts
+
+> │                        ├── 📄 tag-list.component.ts
+
+> │                      └── 📂 workflows/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 workflows.component.html
+
+> │                        ├── 📄 workflows.component.spec.ts
+
+> │                        ├── 📄 workflows.component.ts
+
+> │                    └── 📂 not-found/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 not-found.component.html
+
+> │                      ├── 📄 not-found.component.spec.ts
+
+> │                      ├── 📄 not-found.component.ts
+
+> │                    └── 📂 with-permissions/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 with-permissions.component.spec.ts
+
+> │                      ├── 📄 with-permissions.component.ts
+
+> │                  └── 📂 data/
+
+> │                    ├── 📄 auditlog-entry.ts
+
+> │                    ├── 📄 correspondent.ts
+
+> │                    ├── 📄 custom-field-instance.ts
+
+> │                    ├── 📄 custom-field-query.ts
+
+> │                    ├── 📄 custom-field.ts
+
+> │                    ├── 📄 datatype.ts
+
+> │                    ├── 📄 document-metadata.ts
+
+> │                    ├── 📄 document-note.ts
+
+> │                    ├── 📄 document-suggestions.ts
+
+> │                    ├── 📄 document-type.ts
+
+> │                    ├── 📄 document.ts
+
+> │                    ├── 📄 filter-rule-type.ts
+
+> │                    ├── 📄 filter-rule.ts
+
+> │                    ├── 📄 group.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 mail-account.ts
+
+> │                    ├── 📄 mail-rule.ts
+
+> │                    ├── 📄 matching-model.ts
+
+> │                    ├── 📄 object-with-id.ts
+
+> │                    ├── 📄 object-with-permissions.ts
+
+> │                    ├── 📄 paperless-config.ts
+
+> │                    ├── 📄 paperless-task.ts
+
+> │                    ├── 📄 processed-mail.ts
+
+> │                    ├── 📄 results.ts
+
+> │                    ├── 📄 saved-view.ts
+
+> │                    ├── 📄 share-link.ts
+
+> │                    ├── 📄 storage-keys.ts
+
+> │                    ├── 📄 storage-path.ts
+
+> │                    ├── 📄 system-status.ts
+
+> │                    ├── 📄 tag.ts
+
+> │                    ├── 📄 ui-settings.ts
+
+> │                    ├── 📄 user-profile.ts
+
+> │                    ├── 📄 user.ts
+
+> │                    ├── 📄 websocket-documents-deleted-message.ts
+
+> │                    ├── 📄 websocket-progress-message.ts
+
+> │                    ├── 📄 workflow-action.ts
+
+> │                    ├── 📄 workflow-trigger.ts
+
+> │                    ├── 📄 workflow.ts
+
+> │                  └── 📂 directives/
+
+> │                    ├── 📄 if-object-permissions.directive.spec.ts
+
+> │                    ├── 📄 if-object-permissions.directive.ts
+
+> │                    ├── 📄 if-owner.directive.spec.ts
+
+> │                    ├── 📄 if-owner.directive.ts
+
+> │                    ├── 📄 if-permissions.directive.spec.ts
+
+> │                    ├── 📄 if-permissions.directive.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 sortable.directive.spec.ts
+
+> │                    ├── 📄 sortable.directive.ts
+
+> │                  └── 📂 guards/
+
+> │                    ├── 📄 dirty-doc.guard.spec.ts
+
+> │                    ├── 📄 dirty-doc.guard.ts
+
+> │                    ├── 📄 dirty-form.guard.spec.ts
+
+> │                    ├── 📄 dirty-form.guard.ts
+
+> │                    ├── 📄 dirty-saved-view.guard.spec.ts
+
+> │                    ├── 📄 dirty-saved-view.guard.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 permissions.guard.spec.ts
+
+> │                    ├── 📄 permissions.guard.ts
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 interceptors/
+
+> │                    ├── 📄 api-version.interceptor.spec.ts
+
+> │                    ├── 📄 api-version.interceptor.ts
+
+> │                    ├── 📄 csrf.interceptor.spec.ts
+
+> │                    ├── 📄 csrf.interceptor.ts
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 pipes/
+
+> │                    ├── 📄 correspondent-name.pipe.spec.ts
+
+> │                    ├── 📄 correspondent-name.pipe.ts
+
+> │                    ├── 📄 custom-date.pipe.spec.ts
+
+> │                    ├── 📄 custom-date.pipe.ts
+
+> │                    ├── 📄 document-title.pipe.spec.ts
+
+> │                    ├── 📄 document-title.pipe.ts
+
+> │                    ├── 📄 document-type-name.pipe.spec.ts
+
+> │                    ├── 📄 document-type-name.pipe.ts
+
+> │                    ├── 📄 file-size.pipe.spec.ts
+
+> │                    ├── 📄 file-size.pipe.ts
+
+> │                    ├── 📄 filter.pipe.spec.ts
+
+> │                    ├── 📄 filter.pipe.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 is-number.pipe.spec.ts
+
+> │                    ├── 📄 is-number.pipe.ts
+
+> │                    ├── 📄 object-name.pipe.spec.ts
+
+> │                    ├── 📄 object-name.pipe.ts
+
+> │                    ├── 📄 safeurl.pipe.spec.ts
+
+> │                    ├── 📄 safeurl.pipe.ts
+
+> │                    ├── 📄 storage-path-name.pipe.spec.ts
+
+> │                    ├── 📄 storage-path-name.pipe.ts
+
+> │                    ├── 📄 username.pipe.spec.ts
+
+> │                    ├── 📄 username.pipe.ts
+
+> │                    ├── 📄 yes-no.pipe.spec.ts
+
+> │                    ├── 📄 yes-no.pipe.ts
+
+> │                  └── 📂 services/
+
+> │                    ├── 📄 component-router.service.spec.ts
+
+> │                    ├── 📄 component-router.service.ts
+
+> │                    ├── 📄 config.service.spec.ts
+
+> │                    ├── 📄 config.service.ts
+
+> │                    ├── 📄 django-messages.service.spec.ts
+
+> │                    ├── 📄 django-messages.service.ts
+
+> │                    ├── 📄 document-list-view.service.spec.ts
+
+> │                    ├── 📄 document-list-view.service.ts
+
+> │                    ├── 📄 hot-key.service.spec.ts
+
+> │                    ├── 📄 hot-key.service.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 open-documents.service.spec.ts
+
+> │                    ├── 📄 open-documents.service.ts
+
+> │                    ├── 📄 permissions.service.spec.ts
+
+> │                    ├── 📄 permissions.service.ts
+
+> │                    ├── 📄 profile.service.spec.ts
+
+> │                    ├── 📄 profile.service.ts
+
+> │                    └── 📂 rest/
+
+> │                      ├── 📄 abstract-name-filter-service.spec.ts
+
+> │                      ├── 📄 abstract-name-filter-service.ts
+
+> │                      ├── 📄 abstract-paperless-service.spec.ts
+
+> │                      ├── 📄 abstract-paperless-service.ts
+
+> │                      ├── 📄 correspondent.service.spec.ts
+
+> │                      ├── 📄 correspondent.service.ts
+
+> │                      ├── 📄 custom-fields.service.spec.ts
+
+> │                      ├── 📄 custom-fields.service.ts
+
+> │                      ├── 📄 document-notes.service.spec.ts
+
+> │                      ├── 📄 document-notes.service.ts
+
+> │                      ├── 📄 document-type.service.spec.ts
+
+> │                      ├── 📄 document-type.service.ts
+
+> │                      ├── 📄 document.service.spec.ts
+
+> │                      ├── 📄 document.service.ts
+
+> │                      ├── 📄 group.service.spec.ts
+
+> │                      ├── 📄 group.service.ts
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 log.service.spec.ts
+
+> │                      ├── 📄 log.service.ts
+
+> │                      ├── 📄 mail-account.service.spec.ts
+
+> │                      ├── 📄 mail-account.service.ts
+
+> │                      ├── 📄 mail-rule.service.spec.ts
+
+> │                      ├── 📄 mail-rule.service.ts
+
+> │                      ├── 📄 processed-mail.service.spec.ts
+
+> │                      ├── 📄 processed-mail.service.ts
+
+> │                      ├── 📄 remote-version.service.spec.ts
+
+> │                      ├── 📄 remote-version.service.ts
+
+> │                      ├── 📄 saved-view.service.spec.ts
+
+> │                      ├── 📄 saved-view.service.ts
+
+> │                      ├── 📄 search.service.spec.ts
+
+> │                      ├── 📄 search.service.ts
+
+> │                      ├── 📄 share-link.service.spec.ts
+
+> │                      ├── 📄 share-link.service.ts
+
+> │                      ├── 📄 storage-path.service.spec.ts
+
+> │                      ├── 📄 storage-path.service.ts
+
+> │                      ├── 📄 tag.service.spec.ts
+
+> │                      ├── 📄 tag.service.ts
+
+> │                      ├── 📄 user.service.spec.ts
+
+> │                      ├── 📄 user.service.ts
+
+> │                      ├── 📄 workflow.service.spec.ts
+
+> │                      ├── 📄 workflow.service.ts
+
+> │                    ├── 📄 settings.service.spec.ts
+
+> │                    ├── 📄 settings.service.ts
+
+> │                    ├── 📄 system-status.service.spec.ts
+
+> │                    ├── 📄 system-status.service.ts
+
+> │                    ├── 📄 tasks.service.spec.ts
+
+> │                    ├── 📄 tasks.service.ts
+
+> │                    ├── 📄 toast.service.spec.ts
+
+> │                    ├── 📄 toast.service.ts
+
+> │                    ├── 📄 trash.service.spec.ts
+
+> │                    ├── 📄 trash.service.ts
+
+> │                    ├── 📄 upload-documents.service.spec.ts
+
+> │                    ├── 📄 upload-documents.service.ts
+
+> │                    ├── 📄 websocket-status.service.spec.ts
+
+> │                    ├── 📄 websocket-status.service.ts
+
+> │                  └── 📂 utils/
+
+> │                    ├── 📄 color.spec.ts
+
+> │                    ├── 📄 color.ts
+
+> │                    ├── 📄 custom-field-query-element.spec.ts
+
+> │                    ├── 📄 custom-field-query-element.ts
+
+> │                    ├── 📄 filter-rules.spec.ts
+
+> │                    ├── 📄 filter-rules.ts
+
+> │                    ├── 📄 flatten-tags.spec.ts
+
+> │                    ├── 📄 flatten-tags.ts
+
+> │                    ├── 📄 http.spec.ts
+
+> │                    ├── 📄 http.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 navigation.ts
+
+> │                    ├── 📄 ngb-date-parser-formatter.spec.ts
+
+> │                    ├── 📄 ngb-date-parser-formatter.ts
+
+> │                    ├── 📄 ngb-iso-date-adapter.spec.ts
+
+> │                    ├── 📄 ngb-iso-date-adapter.ts
+
+> │                    ├── 📄 popper-options.spec.ts
+
+> │                    ├── 📄 popper-options.ts
+
+> │                    ├── 📄 query-params.spec.ts
+
+> │                    ├── 📄 query-params.ts
+
+> │                ├── 📄 apple-touch-icon.png
+
+> │                └── 📂 assets/
+
+> │                  ├── 📄 document.png
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 logo-dark-notext.svg
+
+> │                  ├── 📄 logo-dark.svg
+
+> │                  ├── 📄 logo-notext.svg
+
+> │                  ├── 📄 logo-white-notext.svg
+
+> │                └── 📂 environments/
+
+> │                  ├── 📄 environment.prod.ts
+
+> │                  ├── 📄 environment.ts
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 favicon.ico
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 locale/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 messages.af_ZA.xlf
+
+> │                  ├── 📄 messages.ar_AR.xlf
+
+> │                  ├── 📄 messages.be_BY.xlf
+
+> │                  ├── 📄 messages.bg_BG.xlf
+
+> │                  ├── 📄 messages.ca_ES.xlf
+
+> │                  ├── 📄 messages.cs_CZ.xlf
+
+> │                  ├── 📄 messages.da_DK.xlf
+
+> │                  ├── 📄 messages.de_DE.xlf
+
+> │                  ├── 📄 messages.el_GR.xlf
+
+> │                  ├── 📄 messages.en_GB.xlf
+
+> │                  ├── 📄 messages.en_US.xlf
+
+> │                  ├── 📄 messages.es_ES.xlf
+
+> │                  ├── 📄 messages.et_EE.xlf
+
+> │                  ├── 📄 messages.fa_IR.xlf
+
+> │                  ├── 📄 messages.fi_FI.xlf
+
+> │                  ├── 📄 messages.fr_FR.xlf
+
+> │                  ├── 📄 messages.he_IL.xlf
+
+> │                  ├── 📄 messages.hi_IN.xlf
+
+> │                  ├── 📄 messages.hr_HR.xlf
+
+> │                  ├── 📄 messages.hu_HU.xlf
+
+> │                  ├── 📄 messages.id_ID.xlf
+
+> │                  ├── 📄 messages.it_IT.xlf
+
+> │                  ├── 📄 messages.ja_JP.xlf
+
+> │                  ├── 📄 messages.km_KH.xlf
+
+> │                  ├── 📄 messages.ko_KR.xlf
+
+> │                  ├── 📄 messages.lb_LU.xlf
+
+> │                  ├── 📄 messages.lt_LT.xlf
+
+> │                  ├── 📄 messages.lv_LV.xlf
+
+> │                  ├── 📄 messages.mk_MK.xlf
+
+> │                  ├── 📄 messages.ms_MY.xlf
+
+> │                  ├── 📄 messages.nl_NL.xlf
+
+> │                  ├── 📄 messages.no_NO.xlf
+
+> │                  ├── 📄 messages.pl_PL.xlf
+
+> │                  ├── 📄 messages.pt_BR.xlf
+
+> │                  ├── 📄 messages.pt_PT.xlf
+
+> │                  ├── 📄 messages.ro_RO.xlf
+
+> │                  ├── 📄 messages.ru_RU.xlf
+
+> │                  ├── 📄 messages.sk_SK.xlf
+
+> │                  ├── 📄 messages.sl_SI.xlf
+
+> │                  ├── 📄 messages.sr_CS.xlf
+
+> │                  ├── 📄 messages.sv_SE.xlf
+
+> │                  ├── 📄 messages.th_TH.xlf
+
+> │                  ├── 📄 messages.tr_TR.xlf
+
+> │                  ├── 📄 messages.uk_UA.xlf
+
+> │                  ├── 📄 messages.vi_VN.xlf
+
+> │                  ├── 📄 messages.xh_ZA.xlf
+
+> │                  ├── 📄 messages.zh_CN.xlf
+
+> │                  ├── 📄 messages.zh_TW.xlf
+
+> │                ├── 📄 main.ts
+
+> │                ├── 📄 manifest.webmanifest
+
+> │                ├── 📄 polyfills.ts
+
+> │                ├── 📄 print.scss
+
+> │                ├── 📄 styles.scss
+
+> │                ├── 📄 theme.scss
+
+> │              ├── 📄 tsconfig.app.json
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 tsconfig.spec.json
+
+> │              └── 📂 documents/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 admin.py
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 barcodes.py
+
+> │                ├── 📄 bulk_download.py
+
+> │                ├── 📄 bulk_edit.py
+
+> │                ├── 📄 caching.py
+
+> │                ├── 📄 checks.py
+
+> │                ├── 📄 classifier.py
+
+> │                ├── 📄 conditionals.py
+
+> │                ├── 📄 consumer.py
+
+> │                ├── 📄 context_processors.py
+
+> │                ├── 📄 converters.py
+
+> │                ├── 📄 data_models.py
+
+> │                ├── 📄 double_sided.py
+
+> │                ├── 📄 file_handling.py
+
+> │                ├── 📄 filters.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 index.py
+
+> │                ├── 📄 loggers.py
+
+> │                ├── 📄 mail.py
+
+> │                └── 📂 management/
+
+> │                  └── 📂 commands/
+
+> │                    ├── 📄 convert_mariadb_uuid.py
+
+> │                    ├── 📄 decrypt_documents.py
+
+> │                    ├── 📄 document_archiver.py
+
+> │                    ├── 📄 document_consumer.py
+
+> │                    ├── 📄 document_create_classifier.py
+
+> │                    ├── 📄 document_exporter.py
+
+> │                    ├── 📄 document_fuzzy_match.py
+
+> │                    ├── 📄 document_importer.py
+
+> │                    ├── 📄 document_index.py
+
+> │                    ├── 📄 document_renamer.py
+
+> │                    ├── 📄 document_retagger.py
+
+> │                    ├── 📄 document_sanity_checker.py
+
+> │                    ├── 📄 document_thumbnails.py
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 loaddata_stdin.py
+
+> │                    ├── 📄 manage_superuser.py
+
+> │                    ├── 📄 mixins.py
+
+> │                    ├── 📄 prune_audit_logs.py
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 matching.py
+
+> │                ├── 📄 models.py
+
+> │                ├── 📄 parsers.py
+
+> │                ├── 📄 permissions.py
+
+> │                └── 📂 plugins/
+
+> │                  ├── 📄 base.py
+
+> │                  ├── 📄 helpers.py
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 regex.py
+
+> │                └── 📂 resources/
+
+> │                  ├── 📄 document.webp
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 sanity_checker.py
+
+> │                ├── 📄 schema.py
+
+> │                ├── 📄 serialisers.py
+
+> │                ├── 📄 settings.py
+
+> │                └── 📂 signals/
+
+> │                  ├── 📄 __init__.py
+
+> │                  ├── 📄 handlers.py
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 static/
+
+> │                  ├── 📄 base.css
+
+> │                  ├── 📄 bootstrap.min.css
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 tasks.py
+
+> │                └── 📂 templates/
+
+> │                  └── 📂 account/
+
+> │                    ├── 📄 account_inactive.html
+
+> │                    └── 📂 email/
+
+> │                      ├── 📄 base_message.txt
+
+> │                      ├── 📄 index.html
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 login.html
+
+> │                    ├── 📄 password_reset.html
+
+> │                    ├── 📄 password_reset_done.html
+
+> │                    ├── 📄 password_reset_from_key.html
+
+> │                    ├── 📄 password_reset_from_key_done.html
+
+> │                    ├── 📄 signup.html
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 mfa/
+
+> │                    ├── 📄 authenticate.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 paperless-ngx/
+
+> │                    ├── 📄 base.html
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 snippets/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 svg_leaf.html
+
+> │                      ├── 📄 svg_logo.html
+
+> │                  └── 📂 socialaccount/
+
+> │                    ├── 📄 authentication_error.html
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 login.html
+
+> │                    ├── 📄 signup.html
+
+> │                └── 📂 templating/
+
+> │                  ├── 📄 environment.py
+
+> │                  ├── 📄 filepath.py
+
+> │                  ├── 📄 filters.py
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 utils.py
+
+> │                  ├── 📄 workflows.py
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 conftest.py
+
+> │                  └── 📂 data/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 v1.17.4.model.pickle
+
+> │                  └── 📂 examples/
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 factories.py
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 samples/
+
+> │                    └── 📂 barcodes/
+
+> │                      ├── 📄 barcode-128-asn-too-large.pdf
+
+> │                      ├── 📄 barcode-128-custom.pdf
+
+> │                      ├── 📄 barcode-39-asn-123.pdf
+
+> │                      ├── 📄 barcode-39-asn-custom-prefix.pdf
+
+> │                      ├── 📄 barcode-39-asn-invalid.pdf
+
+> │                      ├── 📄 barcode-39-custom.pdf
+
+> │                      ├── 📄 barcode-fax-image.pdf
+
+> │                      ├── 📄 barcode-qr-asn-000123-upscale-dpi.pdf
+
+> │                      ├── 📄 barcode-qr-custom.pdf
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 many-qr-codes.pdf
+
+> │                      ├── 📄 patch-code-t-double.pdf
+
+> │                      ├── 📄 patch-code-t-middle-alpha.tiff
+
+> │                      ├── 📄 patch-code-t-middle-distorted.pdf
+
+> │                      ├── 📄 patch-code-t-middle-fuzzy.pdf
+
+> │                      ├── 📄 patch-code-t-middle-reverse.pdf
+
+> │                      ├── 📄 patch-code-t-middle-unreadable.pdf
+
+> │                      ├── 📄 patch-code-t-middle.pdf
+
+> │                      ├── 📄 patch-code-t-middle.tiff
+
+> │                      ├── 📄 patch-code-t-qr.pdf
+
+> │                      ├── 📄 patch-code-t.pdf
+
+> │                      ├── 📄 several-patcht-codes.pdf
+
+> │                      ├── 📄 split-by-asn-1.pdf
+
+> │                      ├── 📄 split-by-asn-2.pdf
+
+> │                    ├── 📄 content.txt
+
+> │                    └── 📂 documents/
+
+> │                      ├── 📄 index.html
+
+> │                      └── 📂 originals/
+
+> │                        ├── 📄 0000002.pdf
+
+> │                        ├── 📄 0000003.pdf
+
+> │                        ├── 📄 0000004.pdf.gpg
+
+> │                        ├── 📄 0000005.pdf
+
+> │                        ├── 📄 0000006.pdf
+
+> │                        ├── 📄 index.html
+
+> │                      └── 📂 thumbnails/
+
+> │                        ├── 📄 0000002.webp
+
+> │                        ├── 📄 0000004.webp.gpg
+
+> │                        ├── 📄 index.html
+
+> │                    ├── 📄 double-sided-even.pdf
+
+> │                    ├── 📄 double-sided-odd.pdf
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 invalid_pdf.pdf
+
+> │                    ├── 📄 password-is-test.pdf
+
+> │                    ├── 📄 preprocessed_content.txt
+
+> │                    ├── 📄 preprocessed_content_advanced.txt
+
+> │                    ├── 📄 simple-noalpha.png
+
+> │                    ├── 📄 simple.jpg
+
+> │                    ├── 📄 simple.png
+
+> │                    ├── 📄 simple.tiff
+
+> │                    ├── 📄 simple.zip
+
+> │                    ├── 📄 test_with_bom.pdf
+
+> │                  ├── 📄 test_admin.py
+
+> │                  ├── 📄 test_api_app_config.py
+
+> │                  ├── 📄 test_api_bulk_download.py
+
+> │                  ├── 📄 test_api_bulk_edit.py
+
+> │                  ├── 📄 test_api_custom_fields.py
+
+> │                  ├── 📄 test_api_documents.py
+
+> │                  ├── 📄 test_api_email.py
+
+> │                  ├── 📄 test_api_filter_by_custom_fields.py
+
+> │                  ├── 📄 test_api_objects.py
+
+> │                  ├── 📄 test_api_permissions.py
+
+> │                  ├── 📄 test_api_profile.py
+
+> │                  ├── 📄 test_api_remote_version.py
+
+> │                  ├── 📄 test_api_schema.py
+
+> │                  ├── 📄 test_api_search.py
+
+> │                  ├── 📄 test_api_status.py
+
+> │                  ├── 📄 test_api_tasks.py
+
+> │                  ├── 📄 test_api_trash.py
+
+> │                  ├── 📄 test_api_uisettings.py
+
+> │                  ├── 📄 test_api_workflows.py
+
+> │                  ├── 📄 test_barcodes.py
+
+> │                  ├── 📄 test_bulk_edit.py
+
+> │                  ├── 📄 test_caching.py
+
+> │                  ├── 📄 test_checks.py
+
+> │                  ├── 📄 test_classifier.py
+
+> │                  ├── 📄 test_consumer.py
+
+> │                  ├── 📄 test_date_parsing.py
+
+> │                  ├── 📄 test_delayedquery.py
+
+> │                  ├── 📄 test_document_model.py
+
+> │                  ├── 📄 test_double_sided.py
+
+> │                  ├── 📄 test_file_handling.py
+
+> │                  ├── 📄 test_filters.py
+
+> │                  ├── 📄 test_index.py
+
+> │                  ├── 📄 test_management.py
+
+> │                  ├── 📄 test_management_consumer.py
+
+> │                  ├── 📄 test_management_exporter.py
+
+> │                  ├── 📄 test_management_fuzzy.py
+
+> │                  ├── 📄 test_management_importer.py
+
+> │                  ├── 📄 test_management_retagger.py
+
+> │                  ├── 📄 test_management_superuser.py
+
+> │                  ├── 📄 test_management_thumbnails.py
+
+> │                  ├── 📄 test_matchables.py
+
+> │                  ├── 📄 test_migration_archive_files.py
+
+> │                  ├── 📄 test_migration_consumption_templates.py
+
+> │                  ├── 📄 test_migration_created.py
+
+> │                  ├── 📄 test_migration_custom_field_selects.py
+
+> │                  ├── 📄 test_migration_customfields.py
+
+> │                  ├── 📄 test_migration_document_pages_count.py
+
+> │                  ├── 📄 test_migration_encrypted_webp_conversion.py
+
+> │                  ├── 📄 test_migration_mime_type.py
+
+> │                  ├── 📄 test_migration_remove_null_characters.py
+
+> │                  ├── 📄 test_migration_storage_path_template.py
+
+> │                  ├── 📄 test_migration_tag_colors.py
+
+> │                  ├── 📄 test_migration_webp_conversion.py
+
+> │                  ├── 📄 test_migration_workflows.py
+
+> │                  ├── 📄 test_models.py
+
+> │                  ├── 📄 test_parsers.py
+
+> │                  ├── 📄 test_sanity_check.py
+
+> │                  ├── 📄 test_tag_hierarchy.py
+
+> │                  ├── 📄 test_task_signals.py
+
+> │                  ├── 📄 test_tasks.py
+
+> │                  ├── 📄 test_views.py
+
+> │                  ├── 📄 test_workflows.py
+
+> │                  ├── 📄 utils.py
+
+> │                ├── 📄 utils.py
+
+> │                ├── 📄 validators.py
+
+> │                ├── 📄 views.py
+
+> │                └── 📂 workflows/
+
+> │                  ├── 📄 actions.py
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 mutations.py
+
+> │                  ├── 📄 utils.py
+
+> │                  ├── 📄 webhooks.py
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 locale/
+
+> │                └── 📂 af_ZA/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ar_AR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 be_BY/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 bg_BG/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ca_ES/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 cs_CZ/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 da_DK/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 de_DE/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 el_GR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 en_GB/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 en_US/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 es_ES/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 et_EE/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 fa_IR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 fi_FI/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 fr_FR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 he_IL/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 hi_IN/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 hr_HR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 hu_HU/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 id_ID/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 it_IT/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ja_JP/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 km_KH/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ko_KR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 la_LA/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 lb_LU/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 lt_LT/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 lv_LV/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 mk_MK/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ms_MY/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 nb_NO/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 nl_NL/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 no_NO/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 pl_PL/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 pt_BR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 pt_PT/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ro_RO/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ru_RU/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 sk_SK/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 sl_SI/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 sr_CS/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 sv_SE/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 th_TH/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 tr_TR/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 uk_UA/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 vi_VN/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 xh_ZA/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 zh_CN/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 zh_TW/
+
+> │                  └── 📂 LC_MESSAGES/
+
+> │                    ├── 📄 django.po
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │              ├── 📄 manage.py
+
+> │              └── 📂 paperless/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 adapter.py
+
+> │                ├── 📄 admin.py
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 asgi.py
+
+> │                ├── 📄 auth.py
+
+> │                ├── 📄 celery.py
+
+> │                ├── 📄 checks.py
+
+> │                ├── 📄 config.py
+
+> │                ├── 📄 consumers.py
+
+> │                ├── 📄 db.py
+
+> │                ├── 📄 db_cache.py
+
+> │                ├── 📄 filters.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 middleware.py
+
+> │                ├── 📄 models.py
+
+> │                ├── 📄 serialisers.py
+
+> │                ├── 📄 settings.py
+
+> │                ├── 📄 signals.py
+
+> │                └── 📂 static/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 paperless/
+
+> │                    └── 📂 img/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 logo-dark.png
+
+> │                      ├── 📄 logo-light.png
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 test_adapter.py
+
+> │                  ├── 📄 test_checks.py
+
+> │                  ├── 📄 test_db_cache.py
+
+> │                  ├── 📄 test_remote_user.py
+
+> │                  ├── 📄 test_settings.py
+
+> │                  ├── 📄 test_signals.py
+
+> │                  ├── 📄 test_utils.py
+
+> │                  ├── 📄 test_views.py
+
+> │                  ├── 📄 test_websockets.py
+
+> │                ├── 📄 urls.py
+
+> │                ├── 📄 utils.py
+
+> │                ├── 📄 validators.py
+
+> │                ├── 📄 version.py
+
+> │                ├── 📄 views.py
+
+> │                ├── 📄 wsgi.py
+
+> │              └── 📂 paperless_mail/
+
+> │                ├── 📄 admin.py
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 filters.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 mail.py
+
+> │                └── 📂 management/
+
+> │                  └── 📂 commands/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 mail_fetcher.py
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 models.py
+
+> │                ├── 📄 oauth.py
+
+> │                ├── 📄 parsers.py
+
+> │                ├── 📄 preprocessor.py
+
+> │                ├── 📄 serialisers.py
+
+> │                ├── 📄 signals.py
+
+> │                ├── 📄 tasks.py
+
+> │                └── 📂 templates/
+
+> │                  ├── 📄 email_msg_template.html
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 input.css
+
+> │                  ├── 📄 output.css
+
+> │                  ├── 📄 package.json
+
+> │                  ├── 📄 tailwind.config.js
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 conftest.py
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 samples/
+
+> │                    ├── 📄 first.pdf
+
+> │                    ├── 📄 html.eml.html
+
+> │                    ├── 📄 html.eml.pdf
+
+> │                    ├── 📄 html.eml.pdf.webp
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 sample.html
+
+> │                    ├── 📄 sample.html.pdf
+
+> │                    ├── 📄 sample.html.pdf.webp
+
+> │                    ├── 📄 sample.png
+
+> │                    ├── 📄 second.pdf
+
+> │                    ├── 📄 simple_text.eml.pdf
+
+> │                    ├── 📄 simple_text.eml.pdf.webp
+
+> │                  ├── 📄 test_api.py
+
+> │                  ├── 📄 test_live_mail.py
+
+> │                  ├── 📄 test_mail.py
+
+> │                  ├── 📄 test_mail_oauth.py
+
+> │                  ├── 📄 test_parsers.py
+
+> │                  ├── 📄 test_parsers_live.py
+
+> │                  ├── 📄 test_preprocessor.py
+
+> │                ├── 📄 views.py
+
+> │              └── 📂 paperless_tesseract/
+
+> │                ├── 📄 __init__.py
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 checks.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 parsers.py
+
+> │                ├── 📄 signals.py
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 samples/
+
+> │                    ├── 📄 document.webp
+
+> │                    ├── 📄 encrypted.pdf
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 multi-page-images-alpha-rgb.tiff
+
+> │                    ├── 📄 multi-page-images-alpha.tiff
+
+> │                    ├── 📄 multi-page-images.pdf
+
+> │                    ├── 📄 multi-page-images.tiff
+
+> │                    ├── 📄 multi-page-mixed.pdf
+
+> │                    ├── 📄 no-text-alpha.png
+
+> │                    ├── 📄 rotated.pdf
+
+> │                    ├── 📄 rtl-test.pdf
+
+> │                    ├── 📄 signed.pdf
+
+> │                    ├── 📄 simple-alpha.png
+
+> │                    ├── 📄 simple-digital.pdf
+
+> │                    ├── 📄 simple-no-dpi.png
+
+> │                    ├── 📄 simple.bmp
+
+> │                    ├── 📄 simple.gif
+
+> │                    ├── 📄 simple.heic
+
+> │                    ├── 📄 simple.jpg
+
+> │                    ├── 📄 simple.png
+
+> │                    ├── 📄 simple.tif
+
+> │                    ├── 📄 single-page-mixed.pdf
+
+> │                  ├── 📄 test_checks.py
+
+> │                  ├── 📄 test_parser.py
+
+> │                  ├── 📄 test_parser_custom_settings.py
+
+> │              └── 📂 paperless_text/
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 parsers.py
+
+> │                ├── 📄 signals.py
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 conftest.py
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 samples/
+
+> │                    ├── 📄 decode_error.txt
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 test.txt
+
+> │                  ├── 📄 test_parser.py
+
+> │              └── 📂 paperless_tika/
+
+> │                ├── 📄 apps.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 parsers.py
+
+> │                ├── 📄 signals.py
+
+> │                └── 📂 tests/
+
+> │                  ├── 📄 conftest.py
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 samples/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 multi-part-broken.odt
+
+> │                    ├── 📄 sample.doc
+
+> │                    ├── 📄 sample.docx
+
+> │                    ├── 📄 sample.odt
+
+> │                  ├── 📄 test_live_tika.py
+
+> │                  ├── 📄 test_tika_parser.py
+
+> │            ├── 📄 uv.lock
+
+> │          └── 📂 app_QiNoteOS_ph03_QiD-cli/
+
+> │            ├── 📄 README.md
+
+> │            └── 📂 _assets/
+
+> │              └── 📂 _generated_icons/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qid_128.png
+
+> │                ├── 📄 qid_16.png
+
+> │                ├── 📄 qid_24.png
+
+> │                ├── 📄 qid_256.png
+
+> │                ├── 📄 qid_32.png
+
+> │                ├── 📄 qid_48.png
+
+> │                ├── 📄 qid_64.png
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 make_ico.py
+
+> │              ├── 📄 qid-3d.jpg
+
+> │              ├── 📄 qid-barcode.jpg
+
+> │              ├── 📄 qid-complex.jpg
+
+> │              ├── 📄 qid-complex.mp4
+
+> │              ├── 📄 qid-gradient.jpg
+
+> │              ├── 📄 qid-inverted.svg
+
+> │              ├── 📄 qid-led.jpg
+
+> │              ├── 📄 qid-qr-code.jpg
+
+> │              ├── 📄 qid.ico
+
+> │              ├── 📄 qid.ico.txt
+
+> │              ├── 📄 qid.jpg
+
+> │              ├── 📄 qid.png
+
+> │            └── 📂 _backups/
+
+> │              └── 📂 daily/
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 rolling/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 state.prev.json
+
+> │            └── 📂 _logs/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 qid_activity.jsonl
+
+> │            ├── 📄 _qid_registry.json
+
+> │            ├── 📄 _qid_state.json
+
+> │            └── 📂 _wal/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 qid_wal.jsonl
+
+> │            ├── 📄 build_windows.ps1
+
+> │            └── 📂 desktop/
+
+> │              ├── 📄 create_shortcut.ps1
+
+> │              ├── 📄 create_shortcut.vbs
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 qid_launcher.bat
+
+> │              ├── 📄 qid_ui.bat
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 DEV_DOC.md
+
+> │              ├── 📄 gid_rules.md
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 pyproject.toml
+
+> │            ├── 📄 qid.py
+
+> │            ├── 📄 requirements.txt
+
+> │          └── 📂 app_QiNoteOS_ph04_GINA/
+
+> │            └── 📂 GINA_launcher/
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 src/
+
+> │                └── 📂 components/
+
+> │                  ├── 📄 FileBrowser.jsx
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 config.js
+
+> │                ├── 📄 index.html
+
+> │            └── 📂 apps/
+
+> │              └── 📂 QiDocs/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 gina_core/
+
+> │                ├── 📄 db.py
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 main.py
+
+> │                └── 📂 services/
+
+> │                  ├── 📄 capture.py
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 utils.py
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 launcher/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 public/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 App.css
+
+> │                  ├── 📄 App.jsx
+
+> │                  └── 📂 components/
+
+> │                    ├── 📄 FileBrowser.css
+
+> │                    ├── 📄 Tooltip.css
+
+> │                    ├── 📄 Tooltip.jsx
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.css
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 main.jsx
+
+> │                  ├── 📄 theme.js
+
+> │            └── 📂 data/
+
+> │              └── 📂 compiled/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qios_constitution_v1.json
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 outputs/
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 qios_01_tables_and_registries.canvas
+
+> │              ├── 📄 qios_03_directory_tree.canvas
+
+> │              └── 📂 schemas/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 seeds/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 supabase_seed_qid.sql
+
+> │                ├── 📄 supabase_seed_realms.sql
+
+> │                ├── 📄 supabase_seed_rules.sql
+
+> │              └── 📂 sheets/
+
+> │                ├── 📄 front_matter_schema_v1.csv
+
+> │                ├── 📄 fs_ignore_v1.csv
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 qios_rules_v1_1.csv
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 INTEGRATION_COMPLETE.md
+
+> │              ├── 📄 QiAlly Call Ecosystem & Gina Voice Architecture.md
+
+> │              ├── 📄 gina_n8n_workflows.md
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 integration_summary.md
+
+> │              ├── 📄 launcher_ui_mindmap.md
+
+> │              ├── 📄 markdownlint_analysis_genesis.md
+
+> │              ├── 📄 markdownlint_analysis_remaining.md
+
+> │              ├── 📄 markdownlint_final_analysis.md
+
+> │              ├── 📄 markdownlint_quick_reference.md
+
+> │              ├── 📄 markdownlint_review_summary.md
+
+> │              ├── 📄 markdownlint_summary.md
+
+> │              └── 📂 notes/
+
+> │                ├── 📄 discussion26-07-01.md
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 prompts/
+
+> │                ├── 📄 cockpit_gui_prompt.md
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 ui_contracts_v1.md
+
+> │            ├── 📄 env.example
+
+> │            └── 📂 gina_core/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 main.py
+
+> │              ├── 📄 requirements.txt
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 package.json
+
+> │            ├── 📄 qios_00_genesis.canvas
+
+> │            ├── 📄 qios_runtime_mindmap.canvas
+
+> │            └── 📂 rules/
+
+> │              ├── 📄 _readme.md
+
+> │              ├── 📄 folder_registry.yaml
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │              ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │              └── 📂 qios_cursor_prompts/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 install_ingestion_worker.md
+
+> │                ├── 📄 project_prompt.md.md
+
+> │                ├── 📄 qicompiler_add_prompt.md
+
+> │                ├── 📄 qicompiler_orchestrator_prompt.md
+
+> │                ├── 📄 qimatrix_csv_prompt.md
+
+> │                ├── 📄 qimatrix_sql_prompt.md
+
+> │                ├── 📄 qimatrix_yaml_prompt.md
+
+> │                ├── 📄 step3_tree_compiler_prompt.md
+
+> │                ├── 📄 user_prompt.md.md
+
+> │              ├── 📄 realms_registry.yaml
+
+> │            └── 📂 templates/
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 readme_template.md.md
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 tests/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 verify_parsing.py
+
+> │            └── 📂 tools/
+
+> │              ├── 📄 README_SCANNER.md
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 run_migrations.py
+
+> │          └── 📂 app_QiNoteOS_ph05_Tools_Launcher/
+
+> │            └── 📂 api/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 components/
+
+> │              └── 📂 chat/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 dashboard/
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 layout/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 views/
+
+> │                ├── 📄 index.html
+
+> │            └── 📂 hooks/
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 public/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 src/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 types/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 utils/
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 app_QiNoteOS_ph05_Viewer/
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 build_catalog.py
+
+> │              ├── 📄 build_site.py
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 site/
+
+> │              └── 📂 assets/
+
+> │                ├── 📄 app.js
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 styles.css
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 app_QiNoteOS_ph09_QiBooks/
+
+> │            └── 📂 bankrules/
+
+> │              ├── 📄 LICENSE
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 rule_manager.py
+
+> │              ├── 📄 rules.csv
+
+> │              ├── 📄 run.bat
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 statement_tools/
+
+> │              └── 📂 cashApp/
+
+> │                ├── 📄 cashapp_converter.py
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 requirements.txt
+
+> │          └── 📂 app_QiNoteOS_ph09_QiHealth/
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 public/
+
+> │              ├── 📄 index.html
+
+> │          └── 📂 app_QiNoteOS_ph09_QiStory/
+
+> │            └── 📂 app/
+
+> │              └── 📂 backend/
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 qibook_api/
+
+> │                  ├── 📄 __init__.py
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 main.py
+
+> │                  └── 📂 routes/
+
+> │                    ├── 📄 __init__.py
+
+> │                    ├── 📄 books.py
+
+> │                    ├── 📄 drafting.py
+
+> │                    ├── 📄 engine.py
+
+> │                    ├── 📄 evidence.py
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 manuscript.py
+
+> │                    ├── 📄 outline.py
+
+> │                    ├── 📄 project.py
+
+> │                    ├── 📄 raw_items.py
+
+> │                    ├── 📄 system.py
+
+> │                  └── 📂 services/
+
+> │                    ├── 📄 __init__.py
+
+> │                    ├── 📄 chunk.py
+
+> │                    ├── 📄 engine.py
+
+> │                    ├── 📄 export.py
+
+> │                    ├── 📄 extract.py
+
+> │                    ├── 📄 heatmap.py
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 ingest.py
+
+> │                    ├── 📄 recap.py
+
+> │                    ├── 📄 retrieval.py
+
+> │                    ├── 📄 style_drift.py
+
+> │                  └── 📂 utils/
+
+> │                    ├── 📄 __init__.py
+
+> │                    ├── 📄 config.py
+
+> │                    ├── 📄 db.py
+
+> │                    ├── 📄 embeddings.py
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 llm.py
+
+> │                ├── 📄 requirements.txt
+
+> │              └── 📂 desktop/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 package.json
+
+> │                └── 📂 src/
+
+> │                  ├── 📄 App.tsx
+
+> │                  └── 📂 components/
+
+> │                    ├── 📄 EvidenceBadge.tsx
+
+> │                    ├── 📄 Layout.tsx
+
+> │                    ├── 📄 LoadingSpinner.tsx
+
+> │                    ├── 📄 StatusBadge.tsx
+
+> │                    ├── 📄 Toast.tsx
+
+> │                    ├── 📄 ToastContainer.tsx
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.css
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 lib/
+
+> │                    ├── 📄 api.ts
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 main.tsx
+
+> │                  └── 📂 routes/
+
+> │                    ├── 📄 BookDetail.tsx
+
+> │                    ├── 📄 BookWizard.tsx
+
+> │                    ├── 📄 Books.tsx
+
+> │                    ├── 📄 DraftingStudio.tsx
+
+> │                    ├── 📄 Library.tsx
+
+> │                    ├── 📄 OutlineStudio.tsx
+
+> │                    ├── 📄 Settings.tsx
+
+> │                    ├── 📄 index.html
+
+> │                ├── 📄 tsconfig.json
+
+> │                ├── 📄 vite.config.ts
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 vault/
+
+> │                ├── 📄 global.sqlite
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 projects/
+
+> │                  └── 📂 default/
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 raw/
+
+> │                      ├── 📄 Mirror, Mirror How to Critique a Family Manifesto for Trauma, (1).txt
+
+> │                      ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │            └── 📂 content/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 cre_QiStory_Pole_To_Power/
+
+> │              └── 📂 FINAL_SUBMISSION/
+
+> │                ├── 📄 Paid_In_Full.docx
+
+> │                ├── 📄 Paid_In_Full.epub
+
+> │                ├── 📄 Paid_In_Full_Audio_Script.txt
+
+> │                ├── 📄 Paid_In_Full_PRINT.epub
+
+> │                ├── 📄 Publication_Requirements.txt
+
+> │                ├── 📄 _pandoc_metadata.yaml
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 assets/
+
+> │                └── 📂 audio/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 paid_in_full_intro.mp3
+
+> │                  ├── 📄 prologue_narration.mp3
+
+> │                ├── 📄 aurther.jpg
+
+> │                ├── 📄 epub_listening.css
+
+> │                ├── 📄 epub_print.css
+
+> │                └── 📂 imgs/
+
+> │                  ├── 📄 PAIDINFULL.PNG
+
+> │                  ├── 📄 boss.png
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 media_prompts.md
+
+> │                └── 📂 original/
+
+> │                  ├── 📄 FULL_ORIGINAL_TRANSCRIPT.md
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 transcripts/
+
+> │                    ├── 📄 Chapter_01_Monster.md
+
+> │                    ├── 📄 Chapter_02_Childhood.md
+
+> │                    ├── 📄 Chapter_03_Romance.md
+
+> │                    ├── 📄 Chapter_04_Husbands.md
+
+> │                    ├── 📄 Chapter_05_Otis.md
+
+> │                    ├── 📄 Final_Reflection.md
+
+> │                    ├── 📄 Front_Matter.md
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 outputs/
+
+> │                  ├── 📄 FULL_P2P_STRATEGIC_REWRITE.md
+
+> │                  ├── 📄 Paid_In_Full_Master_Manuscript.md
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 print_styles.css
+
+> │                └── 📂 videos/
+
+> │                  ├── 📄 PAIDINFULL.gif
+
+> │                  ├── 📄 age.gif
+
+> │                  ├── 📄 boss (2).gif
+
+> │                  ├── 📄 boss.gif
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 lost.gif
+
+> │                  ├── 📄 mirror (2).gif
+
+> │                  ├── 📄 mirror.gif
+
+> │                  ├── 📄 monster.gif
+
+> │                  ├── 📄 potatos.gif
+
+> │              └── 📂 book/
+
+> │                ├── 📄 00_Front_Matter.md
+
+> │                └── 📂 00_PROLOGUE/
+
+> │                  ├── 📄 00_prologue_mirror_effect.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 01_PART_I_INVISIBLE_GIRL/
+
+> │                  ├── 📄 01_part_I_the_invisible_girl.md
+
+> │                  ├── 📄 01a_ch01_somerville_indiana.md
+
+> │                  ├── 📄 01b_ch02_claude.md
+
+> │                  ├── 📄 01c_ch03_mother.md
+
+> │                  ├── 📄 01d_ch04_bill.md
+
+> │                  ├── 📄 01e_ch05_lost_child.md
+
+> │                  ├── 📄 01f_ch06_early_pregnancy.md
+
+> │                  ├── 📄 01z_reflection_I_invisibility_is_training.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 02_PART_II_MARRYING_MONSTER/
+
+> │                  ├── 📄 02_part_II_marrying_the_monster.md
+
+> │                  ├── 📄 02a_ch07_the_musician.md
+
+> │                  ├── 📄 02b_ch08_marriage_as_ownership.md
+
+> │                  ├── 📄 02c_ch09_the_toll_of_ghosts.md
+
+> │                  ├── 📄 02d_ch10_busybody.md
+
+> │                  ├── 📄 02e_ch11_escalation.md
+
+> │                  ├── 📄 02f_ch12_the_dog.md
+
+> │                  ├── 📄 02g_ch13_leaving_without_rescue.md
+
+> │                  ├── 📄 02z_reflection_II_fear_is_governance.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 03_PART_III_BUSINESS_OF_PLEASURE/
+
+> │                  ├── 📄 03_part_III_business_of_pleasure.md
+
+> │                  ├── 📄 03a_ch14_jaye.md
+
+> │                  ├── 📄 03b_ch15_pager_economy.md
+
+> │                  ├── 📄 03c_ch16_the_upfront_rule.md
+
+> │                  ├── 📄 03d_ch17_becoming_professional.md
+
+> │                  ├── 📄 03e_ch18_lines_drawn.md
+
+> │                  ├── 📄 03z_reflection_III_control_is_not_ownership.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 04_PART_IV_CRACK_IN_FOUNDATION/
+
+> │                  ├── 📄 04_part_IV_crack_in_foundation.md
+
+> │                  ├── 📄 04a_ch19_dave.md
+
+> │                  ├── 📄 04b_ch20_miscarriages.md
+
+> │                  ├── 📄 04c_ch21_cody.md
+
+> │                  ├── 📄 04d_ch22_henry.md
+
+> │                  ├── 📄 04e_ch23_first_delivery.md
+
+> │                  ├── 📄 04f_ch24_police_search.md
+
+> │                  ├── 📄 04g_ch25_informant.md
+
+> │                  ├── 📄 04z_reflection_IV_survival_strategies_expire.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 05_PART_V_FINAL_STAND/
+
+> │                  ├── 📄 05_part_V_final_stand.md
+
+> │                  ├── 📄 05a_ch26_otis.md
+
+> │                  ├── 📄 05b_ch27_the_car.md
+
+> │                  ├── 📄 05c_ch28_the_knife_scene.md
+
+> │                  ├── 📄 05d_ch29_the_ambush.md
+
+> │                  ├── 📄 05e_ch30_aftermath.md
+
+> │                  ├── 📄 05z_reflection_V_decisiveness_not_fearlessness.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 06_EPILOGUE/
+
+> │                  ├── 📄 06_epilogue_madam_of_her_own_life.md
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 99_About_the_Author.md
+
+> │                ├── 📄 99_Back_Matter.md
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 build_ebook.py
+
+> │              ├── 📄 coming-soon.html
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 DISTRIBUTION_STRATEGY.md
+
+> │                ├── 📄 NARRATIVE_ARCHITECTURE.md
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 interactive/
+
+> │                └── 📂 css/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 reader.css
+
+> │                └── 📂 data/
+
+> │                  ├── 📄 chapter_05_knife_scene_timing.json
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 prologue.json
+
+> │                └── 📂 downloads/
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 js/
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 read.html
+
+> │              ├── 📄 paid-in-full-print.html
+
+> │            └── 📂 cre_QiStory_Silence-Isnt-Distance/
+
+> │              ├── 📄 MASTER_INDEX.md
+
+> │              ├── 📄 QIOS_REPO_INFO.txt
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 SETUP.md
+
+> │              └── 📂 assets/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 docs/
+
+> │                ├── 📄 MARKDOWN_FORMATTING_REPORT.md
+
+> │                ├── 📄 QA_COMPLETE_SUMMARY.md
+
+> │                ├── 📄 READER_IMPLEMENTATION.md
+
+> │                ├── 📄 SITE_AUDIT_REPORT.md
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 outline.csv
+
+> │                ├── 📄 sudowrite-outline-template.csv
+
+> │              └── 📂 export/
+
+> │              └── 📂 export-ready/
+
+> │                ├── 📄 00-cover.md
+
+> │                ├── 📄 01-title-page.md
+
+> │                ├── 📄 02-dedication.md
+
+> │                ├── 📄 02a-content-considerations.md
+
+> │                ├── 📄 03-preface.md
+
+> │                ├── 📄 04-how-to-use-this-book.md
+
+> │                ├── 📄 05-introduction.md
+
+> │                ├── 📄 06-chapter-01-overloaded-mind.md
+
+> │                ├── 📄 07-chapter-02-emotional-architecture.md
+
+> │                ├── 📄 08-chapter-03-mirror-misunderstanding.md
+
+> │                ├── 📄 09-chapter-04-science-of-withdrawal.md
+
+> │                ├── 📄 10-chapter-05-shutdown-triggers.md
+
+> │                ├── 📄 11-chapter-06-survival-mode-love.md
+
+> │                ├── 📄 12-chapter-07-overfunctioning.md
+
+> │                ├── 📄 13-chapter-08-projection-mirror.md
+
+> │                ├── 📄 14-chapter-09-burnout-breakdown-dissociation.md
+
+> │                ├── 📄 20-chapter-15-coming-home-to-silence.md
+
+> │                ├── 📄 21-epilogue.md
+
+> │                ├── 📄 22-acknowledgements.md
+
+> │                ├── 📄 23-about-the-author.md
+
+> │                ├── 📄 24-back-of-book-summary.md
+
+> │                ├── 📄 25-bibliography.md
+
+> │                ├── 📄 25a-glossary.md
+
+> │                ├── 📄 MASTER_BOOK.md
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 print_override.css
+
+> │              ├── 📄 export.sh
+
+> │                ├── 📄 ACKNOWLEDGMENTS.html
+
+> │                ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.html
+
+> │                ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.html
+
+> │                ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.html
+
+> │                ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.html
+
+> │                ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.html
+
+> │                ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.html
+
+> │                ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.html
+
+> │                ├── 📄 GLOSSARY.html
+
+> │                ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).html
+
+> │                ├── 📄 Silence Isnt Distance.html
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 silence-isnt-distance-ebook.pdf
+
+> │                ├── 📄 silence-isnt-distance-print.html
+
+> │                └── 📂 story/
+
+> │                  └── 📂 ACT_01 — AWAKENING/
+
+> │                    ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.html
+
+> │                    ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.html
+
+> │                    ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 ACT_02 — UNDERSTANDING/
+
+> │                    ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.html
+
+> │                    ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.html
+
+> │                    ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
+
+> │                    ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.html
+
+> │                    ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.html
+
+> │                    ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
+
+> │                    ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.html
+
+> │                    ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.html
+
+> │                    ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 ACT_05 — RECLAIMING THE SELF/
+
+> │                    ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.html
+
+> │                    ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.html
+
+> │                    ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.html
+
+> │                    ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 APPENDIX/
+
+> │                    ├── 📄 ACKNOWLEDGMENTS.html
+
+> │                    ├── 📄 GLOSSARY.html
+
+> │                    ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 _intro/
+
+> │                    ├── 📄 AUTHOR'S NOTE.html
+
+> │                    ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).html
+
+> │                    ├── 📄 DEDICATION.html
+
+> │                    ├── 📄 HOW TO USE THIS BOOK.html
+
+> │                    ├── 📄 INTRODUCTION — When Silence Is Misunderstood.html
+
+> │                    ├── 📄 PREFACE — Why This Book Exists.html
+
+> │                    ├── 📄 Table of Content.html
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │              ├── 📄 generate_print_html.py
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 publishing/
+
+> │                ├── 📄 00-PUBLISHING-MASTER-GUIDE.md
+
+> │                ├── 📄 01-KDP-METADATA.md
+
+> │                ├── 📄 02-AUTHOR-BIOS.md
+
+> │                ├── 📄 03-MEDIA-KIT.md
+
+> │                ├── 📄 04-MARKETING-MATERIALS.md
+
+> │                ├── 📄 05-AUDIOBOOK-PREP.md
+
+> │                ├── 📄 06-PUBLISHING-CHECKLIST.md
+
+> │                ├── 📄 07-ELEVENLABS-IMPORT-GUIDE.md
+
+> │                ├── 📄 08-EXPORT-PIPELINE.md
+
+> │                ├── 📄 09-ELEVENREADER-UPLOAD-GUIDE.md
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 site/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 story/
+
+> │                └── 📂 ACT_01 — AWAKENING/
+
+> │                  ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.md
+
+> │                  ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.md
+
+> │                  ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ACT_02 — UNDERSTANDING/
+
+> │                  ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.md
+
+> │                  ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.md
+
+> │                  ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
+
+> │                  ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.md
+
+> │                  ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.md
+
+> │                  ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
+
+> │                  ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.md
+
+> │                  ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.md
+
+> │                  ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 ACT_05 — RECLAIMING THE SELF/
+
+> │                  ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.md
+
+> │                  ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.md
+
+> │                  ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.md
+
+> │                  ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 APPENDIX/
+
+> │                  ├── 📄 ACKNOWLEDGMENTS.md
+
+> │                  ├── 📄 GLOSSARY.md
+
+> │                  ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).md
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 _intro/
+
+> │                  ├── 📄 AUTHOR'S NOTE.md
+
+> │                  ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).md
+
+> │                  ├── 📄 DEDICATION.md
+
+> │                  ├── 📄 HOW TO USE THIS BOOK.md
+
+> │                  ├── 📄 INTRODUCTION — When Silence Is Misunderstood.md
+
+> │                  ├── 📄 PREFACE — Why This Book Exists.md
+
+> │                  ├── 📄 Table of Content.md
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 models/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 scripts/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 run_dev.sh
+
+> │          └── 📂 apps/
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 api-reference/
+
+> │                ├── 📄 authorization.mdx
+
+> │                ├── 📄 generate-document.mdx
+
+> │                ├── 📄 generate-html.mdx
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 openapi.json
+
+> │              ├── 📄 cli.mdx
+
+> │              ├── 📄 comparison.mdx
+
+> │              └── 📂 components/
+
+> │                ├── 📄 document.mdx
+
+> │                ├── 📄 footer.mdx
+
+> │                ├── 📄 head.mdx
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 margin-box.mdx
+
+> │                ├── 📄 page.mdx
+
+> │                ├── 📄 spacer.mdx
+
+> │              ├── 📄 favicon.svg
+
+> │              ├── 📄 getting-started.mdx
+
+> │              └── 📂 images/
+
+> │                ├── 📄 checks-passed.png
+
+> │                ├── 📄 dev-server.png
+
+> │                ├── 📄 editor.png
+
+> │                ├── 📄 hero-dark.svg
+
+> │                ├── 📄 hero-light.svg
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 integrations/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 resend.mdx
+
+> │              ├── 📄 introduction.mdx
+
+> │              └── 📂 logo/
+
+> │                ├── 📄 dark.svg
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 light.svg
+
+> │              ├── 📄 mint.json
+
+> │              ├── 📄 quickstart.mdx
+
+> │              └── 📂 snippets/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 snippet-intro.mdx
+
+> │              └── 📂 usage/
+
+> │                ├── 📄 custom-fonts.mdx
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 publishing-to-the-cloud.mdx
+
+> │                ├── 📄 static-content.mdx
+
+> │                ├── 📄 tailwind.mdx
+
+> │                ├── 📄 template-variables.mdx
+
+> │            └── 📂 examples/
+
+> │              ├── 📄 CHANGELOG.md
+
+> │              ├── 📄 debug-render.html
+
+> │              └── 📂 documents/
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 static/
+
+> │                  ├── 📄 axis.svg
+
+> │                  ├── 📄 content.md
+
+> │                  └── 📂 fonts/
+
+> │                    ├── 📄 PPEiko-Medium.otf
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 logo.svg
+
+> │                  ├── 📄 placeholder.svg
+
+> │                  ├── 📄 techflow.svg
+
+> │                └── 📂 templates/
+
+> │                  ├── 📄 Book.tsx
+
+> │                  ├── 📄 Invoice.tsx
+
+> │                  ├── 📄 Letter.tsx
+
+> │                  ├── 📄 Receipt.tsx
+
+> │                  ├── 📄 Resume.tsx
+
+> │                  ├── 📄 index.html
+
+> │              ├── 📄 index.css
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 package.json
+
+> │              ├── 📄 tailwind.config.js
+
+> │              ├── 📄 tsconfig.json
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 assets/
+
+> │            └── 📂 css/
+
+> │              ├── 📄 kb.css
+
+> │          ├── 📄 build.py
+
+> │          └── 📂 components/
+
+> │            ├── 📄 HtmlDocViewer.tsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 config.yaml
+
+> │          └── 📂 content/
+
+> │            └── 📂 internal/
+
+> │              └── 📂 systems/
+
+> │                ├── 📄 overview.md
+
+> │            └── 📂 public/
+
+> │              └── 📂 getting-started/
+
+> │                ├── 📄 index.md
+
+> │          ├── 📄 generate_questions.py
+
+> │          ├── 📄 index (2).html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 legacy/
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App.tsx
+
+> │              ├── 📄 main.tsx
+
+> │              ├── 📄 vite-env.d.ts
+
+> │          └── 📂 media/
+
+> │            ├── 📄 MiniAppTemplate.txt
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 analyze_frames.py
+
+> │            ├── 📄 app.py
+
+> │            ├── 📄 combine_multiple.bat
+
+> │            ├── 📄 combine_multiple.ps1
+
+> │            ├── 📄 flip_videos.py
+
+> │            ├── 📄 miniapp.json
+
+> │            └── 📂 photos/
+
+> │              ├── 📄 QUICKSTART_image_generator.txt
+
+> │              └── 📂 QiHeicConverter/
+
+> │                ├── 📄 LICENSE
+
+> │                ├── 📄 Readme.md
+
+> │                ├── 📄 converter.py
+
+> │                └── 📂 doc/
+
+> │                  ├── 📄 example.png
+
+> │                  ├── 📄 gui_example.png
+
+> │                  ├── 📄 vt_heic_console.png
+
+> │                  ├── 📄 vt_heic_gui.png
+
+> │                ├── 📄 heicConverter.py
+
+> │                ├── 📄 heicConverterGui.py
+
+> │                └── 📂 lang/
+
+> │                  ├── 📄 de.json
+
+> │                  ├── 📄 zh.json
+
+> │                ├── 📄 pyproject.toml
+
+> │                ├── 📄 requirements.txt
+
+> │                └── 📂 test/
+
+> │                  ├── 📄 create_test_heic.py
+
+> │                ├── 📄 test_converter.py
+
+> │                ├── 📄 uv.lock
+
+> │              ├── 📄 app.py
+
+> │              ├── 📄 build_portable.bat
+
+> │              ├── 📄 env_example.txt
+
+> │              ├── 📄 example_images.csv
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 requirements.txt
+
+> │              ├── 📄 run_image_generator.bat
+
+> │              ├── 📄 run_image_generator.sh
+
+> │              ├── 📄 run_qipics.bat
+
+> │              ├── 📄 run_qipics.sh
+
+> │              ├── 📄 setup_venv.bat
+
+> │              ├── 📄 setup_venv.sh
+
+> │              ├── 📄 stock_image_generator.py
+
+> │            ├── 📄 requirements.txt
+
+> │            ├── 📄 run.bat
+
+> │            ├── 📄 run_hq_processing.bat
+
+> │            ├── 📄 test_concat.txt
+
+> │          ├── 📄 package-lock (2).json
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 public/
+
+> │            ├── 📄 54706 fill-in.pdf
+
+> │            ├── 📄 drivers-manual.pdf
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 learner_permit_and_residency_list.pdf
+
+> │          └── 📂 qinode/
+
+> │          ├── 📄 run-cockpit.bat
+
+> │          └── 📂 src/
+
+> │            ├── 📄 App.tsx
+
+> │            └── 📂 components/
+
+> │              ├── 📄 AiActionsPanel.tsx
+
+> │              ├── 📄 EditorShell.tsx
+
+> │              ├── 📄 HtmlDocViewer.tsx
+
+> │              ├── 📄 NoteMetadataPanel.tsx
+
+> │              ├── 📄 NoteSidebar.tsx
+
+> │              ├── 📄 RelatedNotesPanel.tsx
+
+> │              ├── 📄 RightPanel.tsx
+
+> │              └── 📂 common/
+
+> │                ├── 📄 Button.tsx
+
+> │                ├── 📄 Card.tsx
+
+> │                ├── 📄 ErrorBoundary (2).tsx
+
+> │                ├── 📄 ErrorBoundary.tsx
+
+> │                ├── 📄 GlassCard.tsx
+
+> │                ├── 📄 Pill.tsx
+
+> │              └── 📂 feedback/
+
+> │                ├── 📄 Alert.tsx
+
+> │                ├── 📄 Spinner.tsx
+
+> │              └── 📂 gina/
+
+> │                ├── 📄 GinaChatPanel.tsx
+
+> │              └── 📂 layout/
+
+> │                ├── 📄 Sidebar.tsx
+
+> │                ├── 📄 TopBar.tsx
+
+> │              └── 📂 notes/
+
+> │                ├── 📄 NewNoteModal.tsx
+
+> │              └── 📂 qinode/
+
+> │                ├── 📄 QiNodeCard.tsx
+
+> │                ├── 📄 QiNodeEditor.tsx
+
+> │              └── 📂 ui_transplant/
+
+> │                ├── 📄 AnimatedContainer.tsx
+
+> │                ├── 📄 ResizablePanels.tsx
+
+> │                ├── 📄 Sheet.tsx
+
+> │            └── 📂 core/
+
+> │              └── 📂 api/
+
+> │                ├── 📄 ingestStatus.ts
+
+> │                ├── 📄 workerClient.ts
+
+> │              └── 📂 data/
+
+> │                ├── 📄 ginaApi.ts
+
+> │                ├── 📄 qiNodeRepository.ts
+
+> │                ├── 📄 sampleData.ts
+
+> │                ├── 📄 storage.ts
+
+> │                ├── 📄 supabase.ts
+
+> │                ├── 📄 supabaseStore.ts
+
+> │                ├── 📄 types.ts
+
+> │                ├── 📄 vaultApi.ts
+
+> │              └── 📂 qi/
+
+> │                ├── 📄 laws.ts
+
+> │                ├── 📄 orbits.ts
+
+> │                ├── 📄 qid.ts
+
+> │                ├── 📄 realms.ts
+
+> │                ├── 📄 schema.ts
+
+> │                ├── 📄 systems.ts
+
+> │                ├── 📄 utils.ts
+
+> │              └── 📂 state/
+
+> │                ├── 📄 useQiStore.ts
+
+> │            └── 📂 features/
+
+> │              └── 📂 ingest_ui/
+
+> │                ├── 📄 DataIntakePanel.tsx
+
+> │              └── 📂 kb/
+
+> │                ├── 📄 KBBrowser.tsx
+
+> │            └── 📂 hooks/
+
+> │              └── 📂 transplant/
+
+> │                ├── 📄 useHandleStreamResponse.ts
+
+> │                ├── 📄 useUpload.ts
+
+> │              ├── 📄 useNotes.ts
+
+> │            └── 📂 lib/
+
+> │              ├── 📄 api.ts
+
+> │            ├── 📄 main.tsx
+
+> │            └── 📂 routes/
+
+> │              ├── 📄 DataIntakePage.tsx
+
+> │              ├── 📄 DocsView.tsx
+
+> │              ├── 📄 GraphView.tsx
+
+> │              ├── 📄 HomePage.tsx
+
+> │              ├── 📄 NodeView.tsx
+
+> │              ├── 📄 NoteEditorPage.tsx
+
+> │              ├── 📄 NoteListPage.tsx
+
+> │              ├── 📄 RealmView.tsx
+
+> │              ├── 📄 RootLayout.tsx
+
+> │              ├── 📄 VaultSettings.tsx
+
+> │              ├── 📄 VaultView.tsx
+
+> │            └── 📂 store/
+
+> │              ├── 📄 vaultStore.ts
+
+> │            └── 📂 styles/
+
+> │              ├── 📄 index (2).css
+
+> │            └── 📂 templates/
+
+> │              ├── 📄 Book.tsx
+
+> │            └── 📂 types/
+
+> │              ├── 📄 note.ts
+
+> │              ├── 📄 qinote-components.d.ts
+
+> │            ├── 📄 vite-env.d.ts
+
+> │          └── 📂 static/
+
+> │            └── 📂 fonts/
+
+> │              ├── 📄 index.html
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 styles/
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 qidocs.css
+
+> │          ├── 📄 tailwind.config (2).js
+
+> │          ├── 📄 tailwind.config.js
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 Book.tsx
+
+> │            ├── 📄 Invoice.tsx
+
+> │            ├── 📄 Letter.tsx
+
+> │            ├── 📄 Receipt.tsx
+
+> │            ├── 📄 Resume.tsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 tsconfig (2).json
+
+> │          ├── 📄 tsconfig.json
+
+> │          ├── 📄 utils.ts
+
+> │          └── 📂 vault/
+
+> │            ├── 📄 LICENSE
+
+> │            ├── 📄 README.md
+
+> │            ├── 📄 README.md.merge_1772570691
+
+> │            ├── 📄 astro.config.mjs
+
+> │            ├── 📄 contract.md
+
+> │            ├── 📄 netlify.toml
+
+> │            ├── 📄 package.json
+
+> │            ├── 📄 package.json.merge_1772570691
+
+> │            └── 📂 public/
+
+> │              ├── 📄 favicon.svg
+
+> │              ├── 📄 hero-icon.svg
+
+> │              ├── 📄 sitepins-manifest.json
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App.tsx
+
+> │              └── 📂 pages/
+
+> │                ├── 📄 DocumentDetailPage.tsx
+
+> │                ├── 📄 InboxPage.tsx
+
+> │                ├── 📄 SearchPage.tsx
+
+> │                ├── 📄 SettingsPage.tsx
+
+> │                ├── 📄 TagsPage.tsx
+
+> │              └── 📂 services/
+
+> │                ├── 📄 storage.ts
+
+> │              └── 📂 types/
+
+> │                ├── 📄 index.ts
+
+> │            ├── 📄 tsconfig.json
+
+> │            ├── 📄 vite.config.ts
+
+> │          ├── 📄 vite.config (2).ts
+
+> │        └── 📂 qiforms/
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 qihome-hub/
+
+> │          ├── 📄 Dockerfile
+
+> │          ├── 📄 LICENSE
+
+> │          ├── 📄 README.md
+
+> │          └── 📂 app/
+
+> │          ├── 📄 app.jsx
+
+> │            ├── 📄 __init__.py
+
+> │            └── 📂 blueprints/
+
+> │              ├── 📄 __init__.py
+
+> │              ├── 📄 auth.py
+
+> │              ├── 📄 chores.py
+
+> │              ├── 📄 dashboard.py
+
+> │              ├── 📄 expenses.py
+
+> │              ├── 📄 expiry.py
+
+> │              ├── 📄 media_pdfs.py
+
+> │              ├── 📄 notes.py
+
+> │              ├── 📄 qr.py
+
+> │              ├── 📄 recipes.py
+
+> │              ├── 📄 shopping.py
+
+> │              ├── 📄 shortener.py
+
+> │              ├── 📄 uploads.py
+
+> │              ├── 📄 weather.py
+
+> │            ├── 📄 config.py
+
+> │            ├── 📄 models.py
+
+> │            ├── 📄 routes.py
+
+> │            ├── 📄 security.py
+
+> │            ├── 📄 utils.py
+
+> │          ├── 📄 compose.yml
+
+> │          ├── 📄 package.json
+
+> │          ├── 📄 requirements.txt
+
+> │          ├── 📄 run.py
+
+> │          └── 📂 static/
+
+> │            ├── 📄 input.css
+
+> │            └── 📂 js/
+
+> │              ├── 📄 form_tags.js
+
+> │              ├── 📄 reminders_api.js
+
+> │              ├── 📄 tags.js
+
+> │              ├── 📄 weather.js
+
+> │            └── 📂 quill/
+
+> │              ├── 📄 quill.js
+
+> │              ├── 📄 quill.snow.css
+
+> │          ├── 📄 tailwind.config.js
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 _flash.html
+
+> │            ├── 📄 base.html
+
+> │            ├── 📄 chores.html
+
+> │            ├── 📄 expenses.html
+
+> │            ├── 📄 expiry.html
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 login.html
+
+> │            ├── 📄 media.html
+
+> │            ├── 📄 notes.html
+
+> │            ├── 📄 pdfs.html
+
+> │            ├── 📄 qr.html
+
+> │            ├── 📄 recipes.html
+
+> │            ├── 📄 shopping.html
+
+> │            ├── 📄 shorten.html
+
+> │            ├── 📄 upload.html
+
+> │          └── 📂 tests/
+
+> │            ├── 📄 test_recurring_reminders.py
+
+> │            ├── 📄 test_reminder_conversion.py
+
+> │            ├── 📄 test_security.py
+
+> │            ├── 📄 test_shopping_chores_tags.py
+
+> │          ├── 📄 wsgi.py
+
+> │        └── 📂 qihtmldocs/
+
+> │          ├── 📄 CHANGELOG.md
+
+> │          └── 📂 documents/
+
+> │            └── 📂 static/
+
+> │              ├── 📄 axis.svg
+
+> │              ├── 📄 content.md
+
+> │              └── 📂 fonts/
+
+> │                ├── 📄 PPEiko-Medium.otf
+
+> │              ├── 📄 placeholder.svg
+
+> │              ├── 📄 techflow.svg
+
+> │            └── 📂 templates/
+
+> │              ├── 📄 Book.tsx
+
+> │              ├── 📄 Letter.tsx
+
+> │              ├── 📄 Receipt.tsx
+
+> │          ├── 📄 index.css
+
+> │          ├── 📄 tailwind.config.js
+
+> │          ├── 📄 tsconfig.json
+
+> │        └── 📂 qina/
+
+> │          └── 📂 app/
+
+> │            └── 📂 QiDocs/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 api-harmonization/
+
+> │              ├── 📄 CHANGELOG.md
+
+> │              ├── 📄 Dockerfile
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 eslint.config.mjs
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 nest-cli.json
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 src/
+
+> │                ├── 📄 app.config.ts
+
+> │                ├── 📄 app.module.ts
+
+> │                ├── 📄 app.service.ts
+
+> │                └── 📂 blocks/
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 config/
+
+> │                  ├── 📄 configuration.ts
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 index.ts
+
+> │                ├── 📄 main.ts
+
+> │                └── 📂 middleware/
+
+> │                  ├── 📄 context-headers.middleware.ts
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 modules/
+
+> │                  └── 📂 health/
+
+> │                    ├── 📄 health.controller.ts
+
+> │                    ├── 📄 health.module.ts
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 index.ts
+
+> │                  └── 📂 login-page/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.ts
+
+> │                    ├── 📄 login-page.controller.ts
+
+> │                    ├── 📄 login-page.mapper.ts
+
+> │                    ├── 📄 login-page.model.ts
+
+> │                    ├── 📄 login-page.module.ts
+
+> │                    ├── 📄 login-page.service.ts
+
+> │                    ├── 📄 login-page.url.ts
+
+> │                  └── 📂 not-found-page/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.ts
+
+> │                    ├── 📄 not-found-page.controller.ts
+
+> │                    ├── 📄 not-found-page.mapper.ts
+
+> │                    ├── 📄 not-found-page.model.ts
+
+> │                    ├── 📄 not-found-page.module.ts
+
+> │                    ├── 📄 not-found-page.request.ts
+
+> │                    ├── 📄 not-found-page.service.ts
+
+> │                    ├── 📄 not-found-page.url.ts
+
+> │                  └── 📂 organizations/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.ts
+
+> │                    ├── 📄 organizations.controller.ts
+
+> │                    ├── 📄 organizations.mapper.ts
+
+> │                    ├── 📄 organizations.model.ts
+
+> │                    ├── 📄 organizations.module.ts
+
+> │                    ├── 📄 organizations.request.ts
+
+> │                    ├── 📄 organizations.service.ts
+
+> │                    ├── 📄 organizations.url.ts
+
+> │                  └── 📂 page/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.ts
+
+> │                    ├── 📄 page.controller.ts
+
+> │                    ├── 📄 page.mapper.ts
+
+> │                    ├── 📄 page.model.ts
+
+> │                    ├── 📄 page.module.ts
+
+> │                    ├── 📄 page.request.ts
+
+> │                    ├── 📄 page.service.ts
+
+> │                    ├── 📄 page.url.ts
+
+> │                  └── 📂 routes/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.ts
+
+> │                    └── 📂 models/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 sitemap.model.ts
+
+> │                    ├── 📄 routes.controller.ts
+
+> │                    ├── 📄 routes.model.ts
+
+> │                    ├── 📄 routes.module.ts
+
+> │                    ├── 📄 routes.service.ts
+
+> │                    ├── 📄 routes.url.ts
+
+> │                └── 📂 utils/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 permissions.ts
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 turbo.json
+
+> │            └── 📂 docs/
+
+> │              ├── 📄 CHANGELOG.md
+
+> │              ├── 📄 README.md
+
+> │              └── 📂 blog/
+
+> │                └── 📂 articles/
+
+> │                  └── 📂 building-composable-frontends-with-strapi-and-nextjs/
+
+> │                    ├── 📄 content-model-block.png
+
+> │                    ├── 📄 content-model-faq.png
+
+> │                    ├── 📄 content-model-field-mapping.png
+
+> │                    ├── 📄 content-model-invoice-list.png
+
+> │                    ├── 📄 content-model-page.png
+
+> │                    ├── 📄 content-model-slot.png
+
+> │                    ├── 📄 content-model-table.png
+
+> │                    ├── 📄 content-model-template.png
+
+> │                    ├── 📄 example-content-page.png
+
+> │                    ├── 📄 example-web-page.png
+
+> │                    ├── 📄 frontend-app-router.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 queries-examples.png
+
+> │                    ├── 📄 queries-files.png
+
+> │                  └── 📂 ensuring-high-frontend-performance-in-composable-nextjs-apps/
+
+> │                    ├── 📄 cumulative-layout-shift.gif
+
+> │                    ├── 📄 high-level-architecture.png
+
+> │                    ├── 📄 high-level-architecture.svg
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 lighthouse-1.png
+
+> │                    ├── 📄 lighthouse-2.png
+
+> │                    ├── 📄 multi-block-loading-1.gif
+
+> │                    ├── 📄 multi-block-loading-2.gif
+
+> │                    ├── 📄 order-details-block.png
+
+> │                    ├── 📄 single-block-loading.gif
+
+> │                    ├── 📄 sizes-desktop.png
+
+> │                    ├── 📄 sizes-mobile.png
+
+> │                    ├── 📄 sizes.png
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 integration-medusa/
+
+> │                    ├── 📄 asset-details.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 medusa-open-self-service-integration.png
+
+> │                    ├── 📄 open-self-service-orders-medusa.png
+
+> │                    ├── 📄 product-references.png
+
+> │                    ├── 📄 service-instances-list.png
+
+> │                  └── 📂 leveraging-ai-to-speed-up-ui-documentation-in-storybook/
+
+> │                    ├── 📄 checkbox-2.png
+
+> │                    ├── 📄 checkox-1.png
+
+> │                    ├── 📄 cursor-1.png
+
+> │                    ├── 📄 cursor-2.png
+
+> │                    ├── 📄 cursor-3.png
+
+> │                    ├── 📄 cursor-4.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 junie-bulk-1.png
+
+> │                    ├── 📄 junie-initial-prompt.png
+
+> │                    ├── 📄 junie-location-prompt.png
+
+> │                    ├── 📄 junie-ls.png
+
+> │                    ├── 📄 o2s-ai-storybook.png
+
+> │                  └── 📂 rethinking-frontend-architecture-composable/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 o2s-arch-article-coupling.jpeg
+
+> │                    ├── 📄 o2s-arch-article-front.jpeg
+
+> │                    ├── 📄 o2s-arch-article-perf.png
+
+> │                    ├── 📄 o2s-arch-article-starters.jpeg
+
+> │                ├── 📄 authors.yml
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 releases/
+
+> │                  └── 📂 dxp/
+
+> │                    ├── 📄 1.0.0.md
+
+> │                    ├── 📄 1.1.0.md
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 o2s/
+
+> │                    ├── 📄 0.0.9.md
+
+> │                    ├── 📄 1.0.0.md
+
+> │                    ├── 📄 1.1.0.md
+
+> │                    ├── 📄 1.2.0.md
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 roadmap/
+
+> │                  ├── 📄 2025-03-10-roadmap.md
+
+> │                  ├── 📄 2025-03-27-roadmap-update.md
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 tags.yml
+
+> │              └── 📂 docs/
+
+> │                └── 📂 app-starters/
+
+> │                  ├── 📄 _category_.json
+
+> │                  └── 📂 dxp/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 blocks.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 overview.md
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 o2s/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 blocks.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 overview.md
+
+> │                  ├── 📄 overview.md
+
+> │                └── 📂 getting-started/
+
+> │                  ├── 📄 _category_.json
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 installation.md
+
+> │                  ├── 📄 overview.md
+
+> │                  ├── 📄 prerequisites.md
+
+> │                  ├── 📄 project-structure.md
+
+> │                  ├── 📄 running-locally.md
+
+> │                  ├── 📄 telemetry.md
+
+> │                └── 📂 guides/
+
+> │                  ├── 📄 _category_.json
+
+> │                  ├── 📄 code-style.md
+
+> │                  └── 📂 create-new-block/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 api-harmonization-server.md
+
+> │                    ├── 📄 frontend-app.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 integrations.md
+
+> │                    ├── 📄 overview.md
+
+> │                    ├── 📄 postman-get-component.png
+
+> │                    ├── 📄 postman-get-page.png
+
+> │                  ├── 📄 customization.md
+
+> │                  └── 📂 deployment/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 docker.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 overview.md
+
+> │                    ├── 📄 vercel.md
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 integrations/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 adding-new-integrations.md
+
+> │                    ├── 📄 extending-integrations.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 overview.md
+
+> │                    ├── 📄 switching-integrations.md
+
+> │                  ├── 📄 overview.md
+
+> │                  ├── 📄 sdk.md
+
+> │                  ├── 📄 using-generators.md
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 integrations/
+
+> │                  ├── 📄 _category_.json
+
+> │                  └── 📂 cache/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 redis.md
+
+> │                  └── 📂 cms/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 strapi/
+
+> │                      ├── 📄 _category_.json
+
+> │                      ├── 📄 content-model.md
+
+> │                      ├── 📄 getting-started.md
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 overview.md
+
+> │                  └── 📂 commerce/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 medusa-js.md
+
+> │                  └── 📂 forms/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 surveyjs.md
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 mocked/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 mocked.md
+
+> │                  ├── 📄 overview.md
+
+> │                  └── 📂 search/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 algolia.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 tickets/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 zendesk/
+
+> │                      ├── 📄 _category_.json
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 overview.md
+
+> │                └── 📂 main-components/
+
+> │                  ├── 📄 _category_.json
+
+> │                  └── 📂 blocks/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 customizing.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 structure.md
+
+> │                    ├── 📄 usage.md
+
+> │                  └── 📂 frontend-app/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 authentication.md
+
+> │                    ├── 📄 component-structure.md
+
+> │                    ├── 📄 gartner-self-service-customer-service-modern-self-service-needs.png
+
+> │                    ├── 📄 img.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 routing.md
+
+> │                    ├── 📄 routing.svg
+
+> │                  └── 📂 harmonization-app/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 module-structure.md
+
+> │                    └── 📂 normalized-data-model/
+
+> │                      ├── 📄 _category_.json
+
+> │                      ├── 📄 core-model-financial.md
+
+> │                      ├── 📄 core-model-organization.md
+
+> │                      ├── 📄 core-model-services.md
+
+> │                      ├── 📄 core-model-tickets.md
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 overview.md
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 overview.md
+
+> │                  └── 📂 ui-library/
+
+> │                    ├── 📄 _category_.json
+
+> │                    ├── 📄 essentials.md
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.md
+
+> │                    ├── 📄 theming.md
+
+> │                └── 📂 overview/
+
+> │                  ├── 📄 _category_.json
+
+> │                  ├── 📄 aggregated-data-model.svg
+
+> │                  ├── 📄 api-data-flow.svg
+
+> │                  ├── 📄 architecture.md
+
+> │                  ├── 📄 data-flow.md
+
+> │                  ├── 📄 data-flow.svg
+
+> │                  ├── 📄 data-normalization.svg
+
+> │                  ├── 📄 essentials.md
+
+> │                  ├── 📄 frontend-data-flow.svg
+
+> │                  ├── 📄 high-level-architecture.svg
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 overview.md
+
+> │                  ├── 📄 tech-stack.md
+
+> │              ├── 📄 docusaurus.config.ts
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 lint-staged.config.mjs
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 plugins/
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 tailwind-config.ts
+
+> │              ├── 📄 sidebars.ts
+
+> │              └── 📂 src/
+
+> │                └── 📂 assets/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 integrations/
+
+> │                    ├── 📄 algolia-integration-icon.svg
+
+> │                    ├── 📄 auth.js-integration-icon.svg
+
+> │                    ├── 📄 contentful-integration-icon.svg
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 keycloak-integration-icon.svg
+
+> │                    ├── 📄 killbill-integration-icon.svg
+
+> │                    ├── 📄 medusa-integration-icon.svg
+
+> │                    ├── 📄 novu.co-integration-icon.svg
+
+> │                    ├── 📄 o2s-integration-icon.svg
+
+> │                    ├── 📄 oro-integration-icon.svg
+
+> │                    ├── 📄 pimcore-integration-icon.svg
+
+> │                    ├── 📄 redis-integration-icon.svg
+
+> │                    ├── 📄 salesforce-integration-icon.svg
+
+> │                    ├── 📄 sap-integration-icon.svg
+
+> │                    ├── 📄 storyblok-integration-icon.svg
+
+> │                    ├── 📄 strapi-integration-icon.svg
+
+> │                    ├── 📄 surveyjs-integration-icon.svg
+
+> │                    ├── 📄 zendesk-integration-icon.svg
+
+> │                  └── 📂 logos/
+
+> │                    ├── 📄 Bosch.svg
+
+> │                    ├── 📄 Cerrad.svg
+
+> │                    ├── 📄 DeutscheTelekom.svg
+
+> │                    ├── 📄 DormerPramet.svg
+
+> │                    ├── 📄 Fortum.svg
+
+> │                    ├── 📄 Orange.svg
+
+> │                    ├── 📄 OrangeEnergia.svg
+
+> │                    ├── 📄 Osadkowski.svg
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 navbar/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 o2s-icon-blog.svg
+
+> │                    ├── 📄 o2s-icon-case.svg
+
+> │                    ├── 📄 o2s-icon-changelog.svg
+
+> │                    ├── 📄 o2s-icon-community.svg
+
+> │                    ├── 📄 o2s-icon-contact.svg
+
+> │                    ├── 📄 o2s-icon-dev.svg
+
+> │                    ├── 📄 o2s-icon-documentation.svg
+
+> │                    ├── 📄 o2s-icon-features.svg
+
+> │                    ├── 📄 o2s-icon-github.svg
+
+> │                    ├── 📄 o2s-icon-integrations.svg
+
+> │                    ├── 📄 o2s-icon-roadmap.svg
+
+> │                    ├── 📄 o2s-icon-starters.svg
+
+> │                    ├── 📄 o2s-icon-support.svg
+
+> │                └── 📂 components/
+
+> │                  └── 📂 Accordion/
+
+> │                    ├── 📄 Accordion.module.scss
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 Badge/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 BadgeList/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 BenefitsSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 Card/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 ClientsSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 CookieConsent/
+
+> │                    ├── 📄 config.ts
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 CopyCommandButton/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DXPArchitectureSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DXPComplexPlatformsSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DXPFeaturesSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DXPIntegrationsSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DXPUseCasesSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 DocLinkTiles/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 FeatureTile/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 FeaturesListWithImage/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 FooterSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 GetStartedButtons/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 GuidesSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HeroBannerSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageAboutSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageArchitectureSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageBannerSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageBenefitsSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageFeatures/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 styles.module.css
+
+> │                  └── 📂 HomepageFeaturesSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageJoinTheWaitlistSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 styles.module.css
+
+> │                  └── 📂 HomepageStartersSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HomepageUseCases/
+
+> │                    ├── 📄 Card.module.css
+
+> │                    ├── 📄 Card.tsx
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 styles.module.css
+
+> │                  └── 📂 HoverCard/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 HubspotForm/
+
+> │                    ├── 📄 HubspotForm.module.scss
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 IntegrationsBlocks/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 StarterInfoSection/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 SubscribeSection/
+
+> │                    ├── 📄 SubscribeSection.module.scss
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 Tile/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 Typography/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 WaitlistForm/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                    ├── 📄 styles.module.css
+
+> │                  ├── 📄 index.html
+
+> │                └── 📂 css/
+
+> │                  ├── 📄 cookie-consent.css
+
+> │                  ├── 📄 custom.css
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 pages/
+
+> │                  └── 📂 contact/
+
+> │                    ├── 📄 contact.module.scss
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 dxp/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 index.tsx
+
+> │                  ├── 📄 main.module.scss
+
+> │                  └── 📂 partners/
+
+> │                    ├── 📄 apply.tsx
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 product/
+
+> │                    ├── 📄 features.tsx
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 integrations.tsx
+
+> │                    ├── 📄 product.module.scss
+
+> │                    ├── 📄 starters.tsx
+
+> │                  └── 📂 support/
+
+> │                    ├── 📄 developers.tsx
+
+> │                    ├── 📄 enterprise.tsx
+
+> │                    ├── 📄 index.html
+
+> │                └── 📂 theme/
+
+> │                  └── 📂 Blog/
+
+> │                    └── 📂 Components/
+
+> │                      └── 📂 Author/
+
+> │                        └── 📂 Socials/
+
+> │                          ├── 📄 index.html
+
+> │                          ├── 📄 index.tsx
+
+> │                          ├── 📄 styles.module.css
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                        ├── 📄 styles.module.css
+
+> │                      ├── 📄 index.html
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 BlogPostItem/
+
+> │                    └── 📂 Footer/
+
+> │                      ├── 📄 EditMetaRow.tsx
+
+> │                      └── 📂 ReadMoreLink/
+
+> │                      ├── 📄 ReadMoreLink.tsx
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    └── 📂 Header/
+
+> │                      └── 📂 Authors/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                        ├── 📄 styles.module.css
+
+> │                      └── 📂 Info/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                        ├── 📄 styles.module.css
+
+> │                      └── 📂 Title/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                        ├── 📄 styles.module.css
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 Footer/
+
+> │                    └── 📂 Copyright/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    └── 📂 Layout/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    └── 📂 LinkItem/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    └── 📂 Links/
+
+> │                      └── 📂 MultiColumn/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                      └── 📂 Simple/
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.tsx
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                    └── 📂 Logo/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                      ├── 📄 styles.module.css
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 index.tsx
+
+> │                  └── 📂 NavbarItem/
+
+> │                    └── 📂 DropdownNavbarItem/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.tsx
+
+> │                      ├── 📄 styles.module.css
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 Root.tsx
+
+> │                  ├── 📄 index.html
+
+> │              └── 📂 static/
+
+> │                └── 📂 docs/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 openselfservice_EN_Information_obligation.pdf
+
+> │                └── 📂 img/
+
+> │                  └── 📂 blog/
+
+> │                    ├── 📄 dxp-1.0.0-header.png
+
+> │                    ├── 📄 dxp-1.1.0-header.png
+
+> │                    ├── 📄 dxp-knowledge-base-1.png
+
+> │                    ├── 📄 dxp-knowledge-base-2.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 o2s-1.1.0-header.png
+
+> │                    ├── 📄 o2s-1.2.0-header.png
+
+> │                    ├── 📄 o2s-context-switcher.png
+
+> │                    ├── 📄 o2s-features-6-min.jpg
+
+> │                    ├── 📄 o2s-features-7-min.jpg
+
+> │                    ├── 📄 o2s-features-8-min.jpg
+
+> │                    ├── 📄 o2s-knowledge-base-search.png
+
+> │                    ├── 📄 o2s-knowledge-base.png
+
+> │                    ├── 📄 o2s-order-details.png
+
+> │                    ├── 📄 o2s-orders.png
+
+> │                    ├── 📄 o2s-screen.jpg
+
+> │                    ├── 📄 o2s-services.png
+
+> │                    ├── 📄 o2s-surveyjs.png
+
+> │                    ├── 📄 o2s-ticket-submission.png
+
+> │                  ├── 📄 docusaurus-social-card.jpg
+
+> │                  ├── 📄 docusaurus.png
+
+> │                  ├── 📄 dxp-gh-cover.png
+
+> │                  ├── 📄 dxp-gh-demo.png
+
+> │                  └── 📂 favicons/
+
+> │                    ├── 📄 android-chrome-192x192.png
+
+> │                    ├── 📄 android-chrome-512x512.png
+
+> │                    ├── 📄 apple-touch-icon-114x114.png
+
+> │                    ├── 📄 apple-touch-icon-120x120.png
+
+> │                    ├── 📄 apple-touch-icon-152x152.png
+
+> │                    ├── 📄 apple-touch-icon-167x167.png
+
+> │                    ├── 📄 apple-touch-icon-180x180.png
+
+> │                    ├── 📄 apple-touch-icon-57x57.png
+
+> │                    ├── 📄 apple-touch-icon-60x60.png
+
+> │                    ├── 📄 apple-touch-icon-72x72.png
+
+> │                    ├── 📄 apple-touch-icon-76x76.png
+
+> │                    ├── 📄 favicon-128x128.png
+
+> │                    ├── 📄 favicon-16x16.png
+
+> │                    ├── 📄 favicon-196x196.png
+
+> │                    ├── 📄 favicon-32x32.png
+
+> │                    ├── 📄 favicon-96x96.png
+
+> │                    ├── 📄 favicon.ico
+
+> │                    ├── 📄 favicon.svg
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 mstile-144x144.png
+
+> │                    ├── 📄 mstile-150x150.png
+
+> │                    ├── 📄 mstile-310x150.png
+
+> │                    ├── 📄 mstile-310x310.png
+
+> │                    ├── 📄 mstile-70x70.png
+
+> │                  └── 📂 featurespage/
+
+> │                    ├── 📄 img-authentication.png
+
+> │                    ├── 📄 img-cms.png
+
+> │                    ├── 📄 img-content-categories.png
+
+> │                    ├── 📄 img-invoices-payments.png
+
+> │                    ├── 📄 img-knowledge.png
+
+> │                    ├── 📄 img-navigation.png
+
+> │                    ├── 📄 img-notifications.png
+
+> │                    ├── 📄 img-orders.png
+
+> │                    ├── 📄 img-search.png
+
+> │                    ├── 📄 img-service-overview.png
+
+> │                    ├── 📄 img-ticket-submission.png
+
+> │                    ├── 📄 img-user-profile.png
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 homepage/
+
+> │                    ├── 📄 about-1.svg
+
+> │                    ├── 📄 about-2.svg
+
+> │                    ├── 📄 about-3.svg
+
+> │                    ├── 📄 about-4.svg
+
+> │                    ├── 📄 about-5.png
+
+> │                    ├── 📄 about-5.svg
+
+> │                    ├── 📄 about-6.png
+
+> │                    ├── 📄 about-6.svg
+
+> │                    ├── 📄 architecture-dxp.svg
+
+> │                    ├── 📄 architecture-mobile-dxp.svg
+
+> │                    ├── 📄 architecture-mobile.svg
+
+> │                    ├── 📄 architecture.svg
+
+> │                    ├── 📄 banner-dxp.png
+
+> │                    ├── 📄 banner.png
+
+> │                    ├── 📄 benefit-1.svg
+
+> │                    ├── 📄 benefit-2.svg
+
+> │                    ├── 📄 benefit-3.svg
+
+> │                    ├── 📄 built-for-complex-platforms.svg
+
+> │                    ├── 📄 case-1-img.png
+
+> │                    ├── 📄 case-2-img.png
+
+> │                    ├── 📄 case-3-img.png
+
+> │                    ├── 📄 case-4-img.png
+
+> │                    ├── 📄 case-5-img.png
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 starters-card-customer-portal.png
+
+> │                    ├── 📄 starters-card-digital-portal.png
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 logo.svg
+
+> │                  └── 📂 logos/
+
+> │                    ├── 📄 algolia-logo.svg
+
+> │                    ├── 📄 authjs-logo.svg
+
+> │                    ├── 📄 authjs.svg
+
+> │                    ├── 📄 hycom.svg
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 keycloak-logo.svg
+
+> │                    ├── 📄 medusa-logo.svg
+
+> │                    ├── 📄 nestjs.svg
+
+> │                    ├── 📄 nextjs.svg
+
+> │                    ├── 📄 nodejs.svg
+
+> │                    ├── 📄 reactjs.svg
+
+> │                    ├── 📄 redis-logo.svg
+
+> │                    ├── 📄 sap-logo.svg
+
+> │                    ├── 📄 shadcn-ui.svg
+
+> │                    ├── 📄 strapi-logo.svg
+
+> │                    ├── 📄 surveyjs-logo.svg
+
+> │                    ├── 📄 typescript.svg
+
+> │                  └── 📂 navbar/
+
+> │                    ├── 📄 community-bg-img.png
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 o2s-1.0.0-header.png
+
+> │                  ├── 📄 o2s-gh-cover.png
+
+> │                  ├── 📄 o2s-gh-demo.png
+
+> │                  ├── 📄 o2s-social-card-1.jpg
+
+> │                  ├── 📄 o2s-social-card.jpg
+
+> │                  ├── 📄 o2s-social-card.png
+
+> │                  └── 📂 starterspage/
+
+> │                    ├── 📄 customer-portal.png
+
+> │                    ├── 📄 digital-portal.png
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 undraw_docusaurus_mountain.svg
+
+> │                  ├── 📄 undraw_docusaurus_react.svg
+
+> │                  ├── 📄 undraw_docusaurus_tree.svg
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 turbo.json
+
+> │              ├── 📄 vercel.json
+
+> │            └── 📂 frontend/
+
+> │              ├── 📄 CHANGELOG.md
+
+> │              ├── 📄 Dockerfile
+
+> │              ├── 📄 eslint.config.mjs
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 lint-staged.config.mjs
+
+> │              ├── 📄 next.config.ts
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 public/
+
+> │                └── 📂 favicon/
+
+> │                  ├── 📄 apple-touch-icon.png
+
+> │                  ├── 📄 favicon.svg
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 web-app-manifest-192x192.png
+
+> │                  ├── 📄 web-app-manifest-512x512.png
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 src/
+
+> │                └── 📂 actions/
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 signOut.ts
+
+> │                └── 📂 api/
+
+> │                  ├── 📄 index.html
+
+> │                  └── 📂 modules/
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 login-page.ts
+
+> │                    ├── 📄 not-found-page.ts
+
+> │                    ├── 📄 organizations.ts
+
+> │                    ├── 📄 page.ts
+
+> │                  ├── 📄 sdk.ts
+
+> │                └── 📂 app/
+
+> │                  └── 📂 [locale]/
+
+> │                    └── 📂 [[...slug]]/
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 page.tsx
+
+> │                    ├── 📄 index.html
+
+> │                    ├── 📄 layout.tsx
+
+> │                    ├── 📄 not-found.tsx
+
+> │                  └── 📂 api/
+
+> │                    └── 📂 auth/
+
+> │                      └── 📂 [...nextauth]/
+
+> │                        ├── 📄 index.html
+
+> │                      ├── 📄 index.html
+
+> │                    ├── 📄 index.html
+
+> │                  ├── 📄 error.tsx
+
+> │                  ├── 📄 index.html
+
+> │                  ├── 📄 layout.tsx
+
+> │                  ├── 📄 manifest.ts
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 middleware.ts
+
+> │                ├── 📄 types.d.ts
+
+> │              ├── 📄 tsconfig.json
+
+> │              ├── 📄 turbo.json
+
+> │            └── 📂 gina_core/
+
+> │              ├── 📄 db.py
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 main.py
+
+> │              └── 📂 services/
+
+> │                ├── 📄 capture.py
+
+> │                ├── 📄 index.html
+
+> │              ├── 📄 utils.py
+
+> │            ├── 📄 index (2).html
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 launcher/
+
+> │              ├── 📄 index.html
+
+> │              ├── 📄 package.json
+
+> │              └── 📂 public/
+
+> │                ├── 📄 index.html
+
+> │              └── 📂 src/
+
+> │                ├── 📄 App.css
+
+> │                ├── 📄 App.jsx
+
+> │                └── 📂 components/
+
+> │                  ├── 📄 FileBrowser.css
+
+> │                  ├── 📄 Tooltip.css
+
+> │                  ├── 📄 Tooltip.jsx
+
+> │                  ├── 📄 index.html
+
+> │                ├── 📄 index.css
+
+> │                ├── 📄 index.html
+
+> │                ├── 📄 main.jsx
+
+> │                ├── 📄 theme.js
+
+> │            └── 📂 src/
+
+> │              ├── 📄 App (2).css
+
+> │              ├── 📄 App.css
+
+> │              ├── 📄 App.jsx
+
+> │              ├── 📄 App.tsx
+
+> │              └── 📂 app/
+
+> │                └── 📂 api/
+
+> │                  ├── 📄 api.ts
+
+> │                └── 📂 dashboard/
+
+> │                  ├── 📄 page.tsx
+
+> │              └── 📂 components/
+
+> │                ├── 📄 FileBrowser.css
+
+> │                ├── 📄 FileBrowser.jsx
+
+> │                ├── 📄 LoginForm.tsx
+
+> │                ├── 📄 Tooltip.css
+
+> │                ├── 📄 Tooltip.jsx
+
+> │                ├── 📄 index.html
+
+> │                └── 📂 shared/
+
+> │                  ├── 📄 supabase.ts
+
+> │              ├── 📄 config.js
+
+> │              ├── 📄 index (2).css
+
+> │              ├── 📄 index.css
+
+> │              ├── 📄 index.html
+
+> │              └── 📂 lib/
+
+> │                ├── 📄 supabase.ts
+
+> │              ├── 📄 main.jsx
+
+> │              ├── 📄 main.tsx
+
+> │              ├── 📄 theme.js
+
+> │              └── 📂 types/
+
+> │                ├── 📄 database.types.ts
+
+> │          ├── 📄 main.py
+
+> │          ├── 📄 qibook_bot.py
+
+> │          ├── 📄 requirements.txt
+
+> │        └── 📂 qinote/
+
+> │          ├── 📄 QiNotePlan.md
+
+> │          ├── 📄 README.md
+
+> │          ├── 📄 README_INTEGRATION.md
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 package-lock.json
+
+> │          ├── 📄 package.json
+
+> │          └── 📂 src/
+
+> │            ├── 📄 App.tsx
+
+> │            └── 📂 components/
+
+> │              ├── 📄 AiActionsPanel.tsx
+
+> │              ├── 📄 EditorShell.tsx
+
+> │              ├── 📄 NoteMetadataPanel.tsx
+
+> │              ├── 📄 NoteSidebar.tsx
+
+> │              ├── 📄 RelatedNotesPanel.tsx
+
+> │              ├── 📄 RightPanel.tsx
+
+> │              └── 📂 common/
+
+> │            └── 📂 core/
+
+> │            └── 📂 features/
+
+> │            └── 📂 hooks/
+
+> │              ├── 📄 useNotes.ts
+
+> │            └── 📂 lib/
+
+> │              ├── 📄 api.ts
+
+> │            ├── 📄 main.tsx
+
+> │            └── 📂 qidocs/
+
+> │            └── 📂 routes/
+
+> │              ├── 📄 NoteEditorPage.tsx
+
+> │              ├── 📄 NoteListPage.tsx
+
+> │            └── 📂 store/
+
+> │            └── 📂 styles/
+
+> │              ├── 📄 index.css
+
+> │            └── 📂 types/
+
+> │              ├── 📄 note.ts
+
+> │            ├── 📄 vite-env.d.ts
+
+> │          ├── 📄 tailwind.config.js
+
+> │          ├── 📄 tsconfig.json
+
+> │          ├── 📄 vite.config.ts
+
+> │        └── 📂 qisetting/
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 qitax/
+
+> │          ├── 📄 __main__.py
+
+> │          ├── 📄 service.py
+
+> │          ├── 📄 storage.py
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 shared/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 app-shell.tsx
+
+> │            ├── 📄 data-table.tsx
+
+> │            ├── 📄 empty-state.tsx
+
+> │            ├── 📄 status-badge.tsx
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 format-date.ts
+
+> │            ├── 📄 rbac.ts
+
+> │            ├── 📄 route-map.ts
+
+> │      └── 📂 hooks/
+
+> │        ├── 📄 useGina.ts
+
+> │      └── 📂 layouts/
+
+> │        ├── 📄 PortalLayout.tsx
+
+> │      └── 📂 lib/
+
+> │        └── 📂 ai/
+
+> │          ├── 📄 embeddings.ts
+
+> │          ├── 📄 recall.ts
+
+> │          ├── 📄 tools.ts
+
+> │        └── 📂 auth/
+
+> │          ├── 📄 guards.ts
+
+> │          ├── 📄 session.ts
+
+> │        ├── 📄 constants.ts
+
+> │        └── 📂 db/
+
+> │          ├── 📄 server.ts
+
+> │        ├── 📄 env.ts
+
+> │        └── 📂 integrations/
+
+> │          ├── 📄 calendar.ts
+
+> │          ├── 📄 crm.ts
+
+> │          ├── 📄 email.ts
+
+> │          └── 📂 email_pkg/
+
+> │            ├── 📄 render.ts
+
+> │            └── 📂 supabase-auth/
+
+> │              ├── 📄 change_email.html
+
+> │              ├── 📄 confirmation.html
+
+> │              ├── 📄 invite.html
+
+> │              ├── 📄 magic_link.html
+
+> │              ├── 📄 otp.html
+
+> │              ├── 📄 reauthentication.html
+
+> │              ├── 📄 recovery.html
+
+> │            └── 📂 templates/
+
+> │              └── 📂 general/
+
+> │                ├── 📄 welcome.html
+
+> │              └── 📂 projects/
+
+> │                ├── 📄 update.html
+
+> │              └── 📂 tax/
+
+> │                ├── 📄 return-accepted.html
+
+> │        └── 📂 permissions/
+
+> │          ├── 📄 access.ts
+
+> │          ├── 📄 roles.ts
+
+> │        └── 📂 storage/
+
+> │          ├── 📄 files.ts
+
+> │          ├── 📄 uploads.ts
+
+> │        └── 📂 supabase/
+
+> │        ├── 📄 supabase.ts
+
+> │          ├── 📄 client.ts
+
+> │          ├── 📄 middleware.ts
+
+> │          ├── 📄 server.ts
+
+> │          ├── 📄 supabase.ts
+
+> │        ├── 📄 tools.ts
+
+> │        └── 📂 utils/
+
+> │        ├── 📄 utils.ts
+
+> │          ├── 📄 dates.ts
+
+> │          ├── 📄 ids.ts
+
+> │          └── 📂 legacy_pkg/
+
+> │          ├── 📄 money.ts
+
+> │          ├── 📄 strings.ts
+
+> │      ├── 📄 main.tsx
+
+> │      ├── 📄 middleware.ts
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 Dashboard.tsx
+
+> │        └── 📂 admin/
+
+> │          ├── 📄 archive.tsx
+
+> │          ├── 📄 device-detail.tsx
+
+> │          ├── 📄 devices.tsx
+
+> │          ├── 📄 events.tsx
+
+> │          ├── 📄 failures.tsx
+
+> │          ├── 📄 fleet-jobs.tsx
+
+> │          ├── 📄 index.tsx
+
+> │          ├── 📄 jobs.tsx
+
+> │          ├── 📄 runtime-config.tsx
+
+> │          ├── 📄 tenants.tsx
+
+> │          ├── 📄 users.tsx
+
+> │          ├── 📄 watch-assignments.tsx
+
+> │        └── 📂 auth/
+
+> │          ├── 📄 callback.tsx
+
+> │          ├── 📄 login.tsx
+
+> │        └── 📂 cases/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 clients/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 dashboard/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 home/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 knowledge/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 tax/
+
+> │          ├── 📄 index.tsx
+
+> │        └── 📂 vault/
+
+> │          ├── 📄 index.tsx
+
+> │      └── 📂 qione/
+
+> │        └── 📂 contracts/
+
+> │          ├── 📄 deriveContract.ts
+
+> │        └── 📂 csv/
+
+> │          ├── 📄 csvParse.ts
+
+> │          ├── 📄 csvValidate.ts
+
+> │        └── 📂 objects/
+
+> │          ├── 📄 appointment.ts
+
+> │          ├── 📄 case.ts
+
+> │          ├── 📄 chore.ts
+
+> │          ├── 📄 contact.ts
+
+> │          ├── 📄 expense.ts
+
+> │          ├── 📄 index.ts
+
+> │          ├── 📄 medication.ts
+
+> │          ├── 📄 patient.ts
+
+> │          ├── 📄 types.ts
+
+> │      └── 📂 rag-chatbot/
+
+> │        ├── 📄 README.md
+
+> │        └── 📂 app/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 app.py
+
+> │          ├── 📄 main.py
+
+> │        ├── 📄 requirements.txt
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 globals.css
+
+> │        ├── 📄 index.css
+
+> │      └── 📂 types/
+
+> │        ├── 📄 auth.ts
+
+> │        ├── 📄 common.ts
+
+> │        ├── 📄 database.ts
+
+> │        ├── 📄 permissions.ts
+
+> │      └── 📂 ui/
+
+> │        └── 📂 components/
+
+> │          ├── 📄 DataTable.tsx
+
+> │          ├── 📄 FieldRenderer.tsx
+
+> │          ├── 📄 FormRenderer.tsx
+
+> │          ├── 📄 Sidebar.tsx
+
+> │          ├── 📄 Topbar.tsx
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 globals.css
+
+> │      ├── 📄 vite-env.d.ts
+
+> │    ├── 📄 tailwind.config.ts
+
+> │    ├── 📄 tsconfig.json
+
+> │    ├── 📄 tsconfig.node.json
+
+> │    ├── 📄 vite.config.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 qistory/
+
+> │    └── 📂 app/
+
+> │      └── 📂 backend/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 qibook_api/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 main.py
+
+> │          └── 📂 routes/
+
+> │            ├── 📄 __init__.py
+
+> │            ├── 📄 books.py
+
+> │            ├── 📄 drafting.py
+
+> │            ├── 📄 engine.py
+
+> │            ├── 📄 evidence.py
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 manuscript.py
+
+> │            ├── 📄 outline.py
+
+> │            ├── 📄 project.py
+
+> │            ├── 📄 raw_items.py
+
+> │            ├── 📄 system.py
+
+> │          └── 📂 services/
+
+> │            ├── 📄 __init__.py
+
+> │            ├── 📄 chunk.py
+
+> │            ├── 📄 engine.py
+
+> │            ├── 📄 export.py
+
+> │            ├── 📄 extract.py
+
+> │            ├── 📄 heatmap.py
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 ingest.py
+
+> │            ├── 📄 recap.py
+
+> │            ├── 📄 retrieval.py
+
+> │            ├── 📄 style_drift.py
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 __init__.py
+
+> │            ├── 📄 config.py
+
+> │            ├── 📄 db.py
+
+> │            ├── 📄 embeddings.py
+
+> │            ├── 📄 index.html
+
+> │            ├── 📄 llm.py
+
+> │        ├── 📄 requirements.txt
+
+> │      └── 📂 desktop/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 src/
+
+> │          ├── 📄 App.tsx
+
+> │          └── 📂 components/
+
+> │            ├── 📄 EvidenceBadge.tsx
+
+> │            ├── 📄 Layout.tsx
+
+> │            ├── 📄 LoadingSpinner.tsx
+
+> │            ├── 📄 StatusBadge.tsx
+
+> │            ├── 📄 Toast.tsx
+
+> │            ├── 📄 ToastContainer.tsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.css
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 api.ts
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 main.tsx
+
+> │          └── 📂 routes/
+
+> │            ├── 📄 BookDetail.tsx
+
+> │            ├── 📄 BookWizard.tsx
+
+> │            ├── 📄 Books.tsx
+
+> │            ├── 📄 DraftingStudio.tsx
+
+> │            ├── 📄 Library.tsx
+
+> │            ├── 📄 OutlineStudio.tsx
+
+> │            ├── 📄 Settings.tsx
+
+> │            ├── 📄 index.html
+
+> │        ├── 📄 tsconfig.json
+
+> │        ├── 📄 vite.config.ts
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 vault/
+
+> │        ├── 📄 global.sqlite
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 projects/
+
+> │          └── 📂 default/
+
+> │            ├── 📄 index.html
+
+> │            └── 📂 raw/
+
+> │              ├── 📄 Mirror, Mirror How to Critique a Family Manifesto for Trauma, (1).txt
+
+> │              ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │    └── 📂 content/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 cre_QiStory_Pole_To_Power/
+
+> │      └── 📂 FINAL_SUBMISSION/
+
+> │        ├── 📄 Paid_In_Full.docx
+
+> │        ├── 📄 Paid_In_Full.epub
+
+> │        ├── 📄 Paid_In_Full_Audio_Script.txt
+
+> │        ├── 📄 Paid_In_Full_PRINT.epub
+
+> │        ├── 📄 Publication_Requirements.txt
+
+> │        ├── 📄 _pandoc_metadata.yaml
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 assets/
+
+> │        └── 📂 audio/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 paid_in_full_intro.mp3
+
+> │          ├── 📄 prologue_narration.mp3
+
+> │        ├── 📄 aurther.jpg
+
+> │        ├── 📄 epub_listening.css
+
+> │        ├── 📄 epub_print.css
+
+> │        └── 📂 imgs/
+
+> │          ├── 📄 PAIDINFULL.PNG
+
+> │          ├── 📄 boss.png
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 media_prompts.md
+
+> │        └── 📂 original/
+
+> │          ├── 📄 FULL_ORIGINAL_TRANSCRIPT.md
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 transcripts/
+
+> │            ├── 📄 Chapter_01_Monster.md
+
+> │            ├── 📄 Chapter_02_Childhood.md
+
+> │            ├── 📄 Chapter_03_Romance.md
+
+> │            ├── 📄 Chapter_04_Husbands.md
+
+> │            ├── 📄 Chapter_05_Otis.md
+
+> │            ├── 📄 Final_Reflection.md
+
+> │            ├── 📄 Front_Matter.md
+
+> │            ├── 📄 index.html
+
+> │        └── 📂 outputs/
+
+> │          ├── 📄 FULL_P2P_STRATEGIC_REWRITE.md
+
+> │          ├── 📄 Paid_In_Full_Master_Manuscript.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 print_styles.css
+
+> │        └── 📂 videos/
+
+> │          ├── 📄 PAIDINFULL.gif
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 mirror (2).gif
+
+> │      └── 📂 book/
+
+> │        ├── 📄 00_Front_Matter.md
+
+> │        └── 📂 00_PROLOGUE/
+
+> │          ├── 📄 00_prologue_mirror_effect.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 01_PART_I_INVISIBLE_GIRL/
+
+> │          ├── 📄 01_part_I_the_invisible_girl.md
+
+> │          ├── 📄 01a_ch01_somerville_indiana.md
+
+> │          ├── 📄 01b_ch02_claude.md
+
+> │          ├── 📄 01c_ch03_mother.md
+
+> │          ├── 📄 01d_ch04_bill.md
+
+> │          ├── 📄 01e_ch05_lost_child.md
+
+> │          ├── 📄 01f_ch06_early_pregnancy.md
+
+> │          ├── 📄 01z_reflection_I_invisibility_is_training.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 02_PART_II_MARRYING_MONSTER/
+
+> │          ├── 📄 02_part_II_marrying_the_monster.md
+
+> │          ├── 📄 02a_ch07_the_musician.md
+
+> │          ├── 📄 02b_ch08_marriage_as_ownership.md
+
+> │          ├── 📄 02c_ch09_the_toll_of_ghosts.md
+
+> │          ├── 📄 02d_ch10_busybody.md
+
+> │          ├── 📄 02e_ch11_escalation.md
+
+> │          ├── 📄 02f_ch12_the_dog.md
+
+> │          ├── 📄 02g_ch13_leaving_without_rescue.md
+
+> │          ├── 📄 02z_reflection_II_fear_is_governance.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 03_PART_III_BUSINESS_OF_PLEASURE/
+
+> │          ├── 📄 03_part_III_business_of_pleasure.md
+
+> │          ├── 📄 03a_ch14_jaye.md
+
+> │          ├── 📄 03b_ch15_pager_economy.md
+
+> │          ├── 📄 03c_ch16_the_upfront_rule.md
+
+> │          ├── 📄 03d_ch17_becoming_professional.md
+
+> │          ├── 📄 03e_ch18_lines_drawn.md
+
+> │          ├── 📄 03z_reflection_III_control_is_not_ownership.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 04_PART_IV_CRACK_IN_FOUNDATION/
+
+> │          ├── 📄 04_part_IV_crack_in_foundation.md
+
+> │          ├── 📄 04a_ch19_dave.md
+
+> │          ├── 📄 04b_ch20_miscarriages.md
+
+> │          ├── 📄 04c_ch21_cody.md
+
+> │          ├── 📄 04d_ch22_henry.md
+
+> │          ├── 📄 04e_ch23_first_delivery.md
+
+> │          ├── 📄 04f_ch24_police_search.md
+
+> │          ├── 📄 04g_ch25_informant.md
+
+> │          ├── 📄 04z_reflection_IV_survival_strategies_expire.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 05_PART_V_FINAL_STAND/
+
+> │          ├── 📄 05_part_V_final_stand.md
+
+> │          ├── 📄 05a_ch26_otis.md
+
+> │          ├── 📄 05b_ch27_the_car.md
+
+> │          ├── 📄 05c_ch28_the_knife_scene.md
+
+> │          ├── 📄 05d_ch29_the_ambush.md
+
+> │          ├── 📄 05e_ch30_aftermath.md
+
+> │          ├── 📄 05z_reflection_V_decisiveness_not_fearlessness.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 06_EPILOGUE/
+
+> │          ├── 📄 06_epilogue_madam_of_her_own_life.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 99_About_the_Author.md
+
+> │        ├── 📄 99_Back_Matter.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 build_ebook.py
+
+> │      ├── 📄 coming-soon.html
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 DISTRIBUTION_STRATEGY.md
+
+> │        ├── 📄 NARRATIVE_ARCHITECTURE.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 interactive/
+
+> │        └── 📂 css/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 reader.css
+
+> │        └── 📂 data/
+
+> │          ├── 📄 chapter_05_knife_scene_timing.json
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 prologue.json
+
+> │        └── 📂 downloads/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 js/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 read.html
+
+> │      ├── 📄 paid-in-full-print.html
+
+> │    └── 📂 cre_QiStory_Silence-Isnt-Distance/
+
+> │      ├── 📄 MASTER_INDEX.md
+
+> │      ├── 📄 QIOS_REPO_INFO.txt
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 SETUP.md
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 MARKDOWN_FORMATTING_REPORT.md
+
+> │        ├── 📄 QA_COMPLETE_SUMMARY.md
+
+> │        ├── 📄 READER_IMPLEMENTATION.md
+
+> │        ├── 📄 SITE_AUDIT_REPORT.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 outline.csv
+
+> │        ├── 📄 sudowrite-outline-template.csv
+
+> │      └── 📂 export/
+
+> │      └── 📂 export-ready/
+
+> │        ├── 📄 00-cover.md
+
+> │        ├── 📄 01-title-page.md
+
+> │        ├── 📄 02-dedication.md
+
+> │        ├── 📄 02a-content-considerations.md
+
+> │        ├── 📄 03-preface.md
+
+> │        ├── 📄 04-how-to-use-this-book.md
+
+> │        ├── 📄 05-introduction.md
+
+> │        ├── 📄 06-chapter-01-overloaded-mind.md
+
+> │        ├── 📄 07-chapter-02-emotional-architecture.md
+
+> │        ├── 📄 08-chapter-03-mirror-misunderstanding.md
+
+> │        ├── 📄 09-chapter-04-science-of-withdrawal.md
+
+> │        ├── 📄 10-chapter-05-shutdown-triggers.md
+
+> │        ├── 📄 11-chapter-06-survival-mode-love.md
+
+> │        ├── 📄 12-chapter-07-overfunctioning.md
+
+> │        ├── 📄 13-chapter-08-projection-mirror.md
+
+> │        ├── 📄 14-chapter-09-burnout-breakdown-dissociation.md
+
+> │        ├── 📄 20-chapter-15-coming-home-to-silence.md
+
+> │        ├── 📄 21-epilogue.md
+
+> │        ├── 📄 22-acknowledgements.md
+
+> │        ├── 📄 23-about-the-author.md
+
+> │        ├── 📄 24-back-of-book-summary.md
+
+> │        ├── 📄 25-bibliography.md
+
+> │        ├── 📄 25a-glossary.md
+
+> │        ├── 📄 MASTER_BOOK.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 print_override.css
+
+> │      ├── 📄 export.sh
+
+> │        ├── 📄 Silence Isnt Distance.html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 silence-isnt-distance-ebook.pdf
+
+> │        ├── 📄 silence-isnt-distance-print.html
+
+> │        └── 📂 story/
+
+> │          └── 📂 ACT_01 — AWAKENING/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 ACT_02 — UNDERSTANDING/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 ACT_05 — RECLAIMING THE SELF/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 APPENDIX/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 _intro/
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 generate_print_html.py
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 publishing/
+
+> │        ├── 📄 00-PUBLISHING-MASTER-GUIDE.md
+
+> │        ├── 📄 01-KDP-METADATA.md
+
+> │        ├── 📄 02-AUTHOR-BIOS.md
+
+> │        ├── 📄 03-MEDIA-KIT.md
+
+> │        ├── 📄 04-MARKETING-MATERIALS.md
+
+> │        ├── 📄 05-AUDIOBOOK-PREP.md
+
+> │        ├── 📄 06-PUBLISHING-CHECKLIST.md
+
+> │        ├── 📄 07-ELEVENLABS-IMPORT-GUIDE.md
+
+> │        ├── 📄 08-EXPORT-PIPELINE.md
+
+> │        ├── 📄 09-ELEVENREADER-UPLOAD-GUIDE.md
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 site/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 story/
+
+> │        └── 📂 ACT_01 — AWAKENING/
+
+> │          ├── 📄 CHAPTER 1 — THE OVERLOADED MIND.md
+
+> │          ├── 📄 CHAPTER 2 — THE EMOTIONAL ARCHITECTURE.md
+
+> │          ├── 📄 CHAPTER 3 — THE MYTH OF THE QUIET PERSON.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 ACT_02 — UNDERSTANDING/
+
+> │          ├── 📄 CHAPTER 4 — THE MISREAD RETREAT.md
+
+> │          ├── 📄 CHAPTER 5 — SHUTDOWN TRIGGERS.md
+
+> │          ├── 📄 CHAPTER 6 — SURVIVAL-MODE LOVE.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 ACT_03 — THE INVISIBLE WEIGHT/
+
+> │          ├── 📄 CHAPTER 7 — RESPONSIBILITY AND OVERFUNCTIONING.md
+
+> │          ├── 📄 CHAPTER 8 — PROJECTION AND THE MIRROR EFFECT.md
+
+> │          ├── 📄 CHAPTER 9 — BURNOUT, BREAKDOWN, DISSOCIATION.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 ACT_04 — RELATIONSHIPS WITH THE OVERWHELMED/
+
+> │          ├── 📄 CHAPTER 10 — LOVING SOMEONE WHO RETREATS.md
+
+> │          ├── 📄 CHAPTER 11 — WHAT PEOPLE OFTEN GET WRONG.md
+
+> │          ├── 📄 CHAPTER 12 — REPAIR AND RECONNECTION.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 ACT_05 — RECLAIMING THE SELF/
+
+> │          ├── 📄 CHAPTER 13 — EMOTIONAL BANDWIDTH.md
+
+> │          ├── 📄 CHAPTER 14 — HEALING SURVIVAL PATTERNS.md
+
+> │          ├── 📄 CHAPTER 15 — COMING HOME TO SILENCE.md
+
+> │          ├── 📄 EPILOGUE — THE ONES WHO DISAPPEAR.md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 APPENDIX/
+
+> │          ├── 📄 ACKNOWLEDGMENTS.md
+
+> │          ├── 📄 GLOSSARY.md
+
+> │          ├── 📄 REFERENCES AND INFLUENCES (Studies, Thinkers, Sources).md
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 _intro/
+
+> │          ├── 📄 AUTHOR'S NOTE.md
+
+> │          ├── 📄 CONTENT CONSIDERATIONS (Gentle Trauma Warning).md
+
+> │          ├── 📄 DEDICATION.md
+
+> │          ├── 📄 HOW TO USE THIS BOOK.md
+
+> │          ├── 📄 INTRODUCTION — When Silence Is Misunderstood.md
+
+> │          ├── 📄 PREFACE — Why This Book Exists.md
+
+> │          ├── 📄 Table of Content.md
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 models/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 run_dev.sh
+
+> └── 📂 data/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 assigned_watch/
+
+> │    ├── 📄 README.md
+
+> │  └── 📂 backups/
+
+> │  └── 📂 devices/
+
+> │    └── 📂 this-device/
+
+> │      ├── 📄 capabilities.json
+
+> │      ├── 📄 device.json
+
+> │      ├── 📄 last_heartbeat.json
+
+> │      ├── 📄 watcher_assignments.json
+
+> │  ├── 📄 docket.csv
+
+> │  └── 📂 dropzones/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 default/
+
+> │    └── 📂 imports/
+
+> │    └── 📂 mobile/
+
+> │    └── 📂 scans/
+
+> │      └── 📂 scan-snap/
+
+> │        ├── 📄 2026-04-01.pdf
+
+> │        ├── 📄 2026-04-01_A. Allegation of _Unauthorized Pel.pdf
+
+> │        ├── 📄 2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268.pdf
+
+> │        ├── 📄 2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268_001.pdf
+
+> │        ├── 📄 2026-04-01_FCFCU-card received during case.pdf
+
+> │        ├── 📄 2026-04-01_INVOICE.pdf
+
+> │        ├── 📄 2026-04-01_INVOICE_001.pdf
+
+> │        ├── 📄 2026-04-01_If you do not attend the hearing in this case, the  j.pdf
+
+> │        ├── 📄 2026-04-01_PTIN.pdf
+
+> │        ├── 📄 2026-04-01_UMTim.pdf
+
+> │        ├── 📄 2026-04-01_Wrect.pdf
+
+> │        ├── 📄 2026-04-01_Your subscription payment is due..pdf
+
+> │        ├── 📄 2026-04-01_n_‘-‘ Person IWant to Make Care Decisio-.pdf
+
+> │        ├── 📄 2026-04-01_paysign.pdf
+
+> │  └── 📂 embeddings_cache/
+
+> │  └── 📂 extracted_text/
+
+> │  └── 📂 failed/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 README.md
+
+> │  ├── 📄 manifest.txt
+
+> │  └── 📂 manifests/
+
+> │  └── 📂 model_cache/
+
+> │  └── 📂 normalized/
+
+> │  └── 📂 previews/
+
+> │  └── 📂 processing/
+
+> │  ├── 📄 qios_00_genesis.canvas
+
+> │  ├── 📄 qios_runtime_mindmap.canvas
+
+> │  └── 📂 quarantine/
+
+> │  └── 📂 reviewed/
+
+> │  └── 📂 staging/
+
+> │  └── 📂 state/
+
+> │    └── 📂 local-agent/
+
+> │      ├── 📄 cursor.json
+
+> │      ├── 📄 locks.json
+
+> │      ├── 📄 queue.json
+
+> │    └── 📂 runtime/
+
+> │      ├── 📄 embeddings_state.json
+
+> │      ├── 📄 pipeline_state.json
+
+> │      ├── 📄 repair_state.json
+
+> │    └── 📂 sync/
+
+> │      ├── 📄 conflict_log.json
+
+> │      ├── 📄 sync_cursor.json
+
+> └── 📂 docs/
+
+> │  └── 📂 __QiOS_Master_Blueprint_v0.4/
+
+> │    └── 📂 01_governance/
+
+> │      ├── 📄 decisions.md
+
+> │      ├── 📄 policies.md
+
+> │      ├── 📄 principles.md
+
+> │      ├── 📄 registry.md
+
+> │      ├── 📄 standards.md
+
+> │    └── 📂 02_architecture/
+
+> │      ├── 📄 component_map.md
+
+> │      ├── 📄 data_flow.md
+
+> │      ├── 📄 device_model.md
+
+> │      ├── 📄 identity.md
+
+> │      ├── 📄 runtime_zones.md
+
+> │      ├── 📄 service_boundaries.md
+
+> │      ├── 📄 system_model.md
+
+> │    └── 📂 03_structure/
+
+> │      ├── 📄 bands.md
+
+> │      ├── 📄 domains.md
+
+> │      ├── 📄 object_model.md
+
+> │      ├── 📄 placement_rules.md
+
+> │      ├── 📄 subdomains.md
+
+> │    └── 📂 04_data/
+
+> │      ├── 📄 exports.md
+
+> │      ├── 📄 metadata.md
+
+> │      ├── 📄 objects.md
+
+> │      ├── 📄 schema.md
+
+> │      ├── 📄 storage.md
+
+> │    └── 📂 05_compute/
+
+> │      ├── 📄 apis.md
+
+> │      ├── 📄 integrations.md
+
+> │      ├── 📄 pipelines.md
+
+> │      ├── 📄 runtime.md
+
+> │      ├── 📄 tech_stack.md
+
+> │      ├── 📄 workers.md
+
+> │    └── 📂 06_applications/
+
+> │      ├── 📄 admin.md
+
+> │      ├── 📄 interfaces.md
+
+> │      ├── 📄 portal.md
+
+> │      ├── 📄 tools.md
+
+> │      ├── 📄 web.md
+
+> │    └── 📂 07_operations/
+
+> │      ├── 📄 cases.md
+
+> │      ├── 📄 clients.md
+
+> │      ├── 📄 finance.md
+
+> │      ├── 📄 products.md
+
+> │      ├── 📄 templates.md
+
+> │    └── 📂 adr/
+
+> │      ├── 📄 ADR-0001-blueprint-scope.md
+
+> │      ├── 📄 ADR-0002-single-domain-rule.md
+
+> │      ├── 📄 ADR-0003-band-model.md
+
+> │      ├── 📄 ADR-0004-qilabs-root.md
+
+> │      ├── 📄 ADR-0005-hosted-fleet-orchestration.md
+
+> │    └── 📂 appendices/
+
+> │      ├── 📄 changelog.md
+
+> │      ├── 📄 glossary.md
+
+> │      ├── 📄 migration_notes.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 examples/
+
+> │    ├── 📄 archive_manifest.example.json
+
+> │    ├── 📄 fleet_job_payload.example.json
+
+> │    ├── 📄 local-agent.env.example
+
+> │    ├── 📄 watcher_paths.example.yaml
+
+> ├── 📄 eslint.config.js
+
+> ├── 📄 eslint.config.mjs
+
+> └── 📂 infra/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 bootstrap/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 config/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 global/
+
+> │        ├── 📄 device_policy.yaml
+
+> │        ├── 📄 metadata_rules.yaml
+
+> │        ├── 📄 naming_rules.yaml
+
+> │        ├── 📄 repo_rules.yaml
+
+> │        ├── 📄 runtime_rules.yaml
+
+> │        ├── 📄 watcher_rules.yaml
+
+> │      └── 📂 local/
+
+> │        ├── 📄 dropzones.yaml
+
+> │        ├── 📄 embeddings.yaml
+
+> │        ├── 📄 local_agent.yaml
+
+> │        ├── 📄 ocr.yaml
+
+> │        ├── 📄 watcher_paths.yaml
+
+> │      └── 📂 secrets/
+
+> │    ├── 📄 enroll_device.ps1
+
+> │    ├── 📄 enroll_device.sh
+
+> │    ├── 📄 install_local_agent.ps1
+
+> │    ├── 📄 install_local_agent.sh
+
+> │    ├── 📄 install_qilabs.ps1
+
+> │    ├── 📄 install_qilabs.sh
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 local-agent.env.template
+
+> │      ├── 📄 qilabs.env.template
+
+> │      ├── 📄 watcher_paths.template.yaml
+
+> │    ├── 📄 validate_machine.ps1
+
+> │    ├── 📄 validate_machine.sh
+
+> │  └── 📂 docker/
+
+> │    ├── 📄 ai-api.Dockerfile
+
+> │    ├── 📄 app-api.Dockerfile
+
+> │    ├── 📄 compose.dev.yml
+
+> │    ├── 📄 local-agent.Dockerfile
+
+> │    ├── 📄 worker-orchestrator.Dockerfile
+
+> │  └── 📂 neo4j/
+
+> │    ├── 📄 README.md
+
+> │  └── 📂 redis/
+
+> │    ├── 📄 README.md
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 config.toml
+
+> │    └── 📂 functions/
+
+> │      ├── 📄 archive_register.sql
+
+> │      ├── 📄 device_heartbeat.sql
+
+> │      ├── 📄 enqueue_fleet_job.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 0001_init.sql
+
+> │      ├── 📄 0002_qione_core.sql
+
+> │      ├── 📄 0003_qiarchive_core.sql
+
+> │      ├── 📄 0004_qisys_jobs.sql
+
+> │      ├── 📄 0005_qivault.sql
+
+> │      ├── 📄 0006_qiknowledge.sql
+
+> │      ├── 📄 0007_qicase.sql
+
+> │      ├── 📄 0008_device_registry.sql
+
+> │      ├── 📄 0009_watch_assignments.sql
+
+> │    ├── 📄 seed.sql
+
+> │  └── 📂 tailscale/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 acl.example.json
+
+> │    ├── 📄 node-enrollment.md
+
+> │  └── 📂 tests/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 e2e/
+
+> │      ├── 📄 admin-device-registry.spec.ts
+
+> │      ├── 📄 archive-dropzone.spec.ts
+
+> │      ├── 📄 portal-auth.spec.ts
+
+> │    └── 📂 fixtures/
+
+> │      ├── 📄 sample.pdf
+
+> │      ├── 📄 sample_email.eml
+
+> │      ├── 📄 sample_metadata.json
+
+> │    └── 📂 integration/
+
+> │      ├── 📄 test_archive_registration.py
+
+> │      ├── 📄 test_device_enrollment.py
+
+> │      ├── 📄 test_fleet_job_dispatch.py
+
+> │      ├── 📄 test_watch_assignment.py
+
+> ├── 📄 justfile
+
+> ├── 📄 mkdocs.yml
+
+> ├── 📄 package-lock.json
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 ai/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      └── 📂 adapters/
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 prompts/
+
+> │      └── 📂 tools/
+
+> │  └── 📂 assets/
+
+> │    ├── 📄 introvideo.mp4
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 public/
+
+> │      ├── 📄 introvideo.mp4
+
+> │    └── 📂 src/
+
+> │      └── 📂 bookings/
+
+> │        ├── 📄 book-now.js
+
+> │        ├── 📄 booking-inline.js
+
+> │      └── 📂 brand/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 config/
+
+> │    └── 📂 eslint/
+
+> │      ├── 📄 base.js
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 prettier/
+
+> │      ├── 📄 base.cjs
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 json/
+
+> │        ├── 📄 QiRealms_seed.json
+
+> │        ├── 📄 QiTagClasses_schema.json
+
+> │        ├── 📄 QiTags_seed.json
+
+> │        ├── 📄 eos-frontmatter-mapping.json
+
+> │        ├── 📄 eos_frontmatter.schema.json
+
+> │        ├── 📄 frontmatter.schema.json
+
+> │        ├── 📄 git_manifest.json
+
+> │        ├── 📄 mapping.json
+
+> │        ├── 📄 repo_naming_policy.json
+
+> │        ├── 📄 systemInfoCMD.json
+
+> │      └── 📂 rules/
+
+> │        ├── 📄 audit_repo_rules.ts
+
+> │        ├── 📄 fix_repo_rules.ts
+
+> │        ├── 📄 repoRules.ts
+
+> │        ├── 📄 rulesRegistry.ts
+
+> │      └── 📂 yaml/
+
+> │        ├── 📄 csv_to_md_mappings.yaml
+
+> │        ├── 📄 fs_scan_config.yaml
+
+> │        ├── 📄 housekeeping.yaml
+
+> │        ├── 📄 qi_codex.config.yaml
+
+> │        ├── 📄 qi_prefix_map.yaml
+
+> │        ├── 📄 qicompiler_config.yaml
+
+> │        ├── 📄 qione_rag_routes.yaml
+
+> │        ├── 📄 slugs_mapping.yaml
+
+> │        ├── 📄 tree_compiler_config.yaml
+
+> │    └── 📂 tsconfig/
+
+> │      ├── 📄 base.json
+
+> │      ├── 📄 node.json
+
+> │      ├── 📄 react.json
+
+> │  └── 📂 database/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 scanner.js
+
+> │    └── 📂 src/
+
+> │      └── 📂 adapters/
+
+> │        └── 📂 auth/
+
+> │        └── 📂 supabase/
+
+> │          ├── 📄 bootstrap_tenant.sql
+
+> │          └── 📂 src/
+
+> │            ├── 📄 index.ts
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 migrations/
+
+> │        ├── 📄 0001_qione_core.sql
+
+> │        ├── 📄 0002_qiarchive_spine.sql
+
+> │        ├── 📄 0003_qisys_ops.sql
+
+> │        ├── 📄 0004_qigraph_index.sql
+
+> │        ├── 📄 0005_qiknowledge.sql
+
+> │        ├── 📄 0006_qially_comms.sql
+
+> │        ├── 📄 0007_namespace_registry.sql
+
+> │        ├── 📄 0007_qichronicle_time.sql
+
+> │        ├── 📄 0008_get_tenant_members_with_roles.sql
+
+> │        ├── 📄 0008_qihome_ledger.sql
+
+> │        ├── 📄 0009_household_bootstrap_final.sql
+
+> │        ├── 📄 0009_qitax_returns.sql
+
+> │        ├── 📄 0010_qicase_matters.sql
+
+> │        ├── 📄 0010_upsert_tenant_member.sql
+
+> │        ├── 📄 0011_add_display_name_to_members.sql
+
+> │        ├── 📄 0011_qicrm_contacts.sql
+
+> │        ├── 📄 0012_qivault_docs.sql
+
+> │        ├── 📄 0013_qicms_web.sql
+
+> │        ├── 📄 0014_registry.namespace_allocations.sql
+
+> │        ├── 📄 0015_registry_namespace_bands.sql
+
+> │      └── 📂 queries/
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 archive.ts
+
+> │        ├── 📄 case.ts
+
+> │        ├── 📄 client.ts
+
+> │        ├── 📄 comms.ts
+
+> │        ├── 📄 content.ts
+
+> │        ├── 📄 core.ts
+
+> │        ├── 📄 home.ts
+
+> │        └── 📂 src/
+
+> │          ├── 📄 contentFrontMatter.ts
+
+> │          ├── 📄 database.types.ts
+
+> │          ├── 📄 index.ts
+
+> │        ├── 📄 system.ts
+
+> │        ├── 📄 tax.ts
+
+> │        ├── 📄 vault.ts
+
+> │      └── 📂 types/
+
+> │    └── 📂 utils/
+
+> │      ├── 📄 supabase.ts
+
+> │  └── 📂 db/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      └── 📂 clients/
+
+> │        ├── 📄 postgres.ts
+
+> │        ├── 📄 redis.ts
+
+> │        ├── 📄 supabase.ts
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 queries/
+
+> │        ├── 📄 archive.ts
+
+> │        ├── 📄 devices.ts
+
+> │        ├── 📄 jobs.ts
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 qiarchive.ts
+
+> │        ├── 📄 qicase.ts
+
+> │        ├── 📄 qiknowledge.ts
+
+> │        ├── 📄 qione.ts
+
+> │        ├── 📄 qisys.ts
+
+> │        ├── 📄 qitax.ts
+
+> │        ├── 📄 qivault.ts
+
+> │  └── 📂 domain-types/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │      ├── 📄 qiarchive.ts
+
+> │      ├── 📄 qicase.ts
+
+> │      ├── 📄 qiknowledge.ts
+
+> │      ├── 📄 qione.ts
+
+> │      ├── 📄 qisys.ts
+
+> │      ├── 📄 qivault.ts
+
+> │  └── 📂 email/
+
+> │    └── 📂 partials/
+
+> │      ├── 📄 footer.html
+
+> │      ├── 📄 header.html
+
+> │    ├── 📄 render.ts
+
+> │    └── 📂 smtp/
+
+> │      ├── 📄 config.yml
+
+> │    └── 📂 supabase-auth/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 change_email.html
+
+> │      ├── 📄 confirmation.html
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │      ├── 📄 reauthentication.html
+
+> │      ├── 📄 recovery.html
+
+> │    └── 📂 templates/
+
+> │      └── 📂 billing/
+
+> │        ├── 📄 invoice.html
+
+> │      └── 📂 general/
+
+> │        ├── 📄 welcome.html
+
+> │      └── 📂 projects/
+
+> │        ├── 📄 update.html
+
+> │      └── 📂 tax/
+
+> │        ├── 📄 return-accepted.html
+
+> │  └── 📂 gina/
+
+> │    ├── 📄 (2).gitignore
+
+> │    ├── 📄 LICENSE
+
+> │    ├── 📄 LICENSE (2)
+
+> │    ├── 📄 QIOS_REPO_INFO.txt
+
+> │    ├── 📄 QIOS_SAFE_TO_DELETE.txt
+
+> │    ├── 📄 README (2).md
+
+> │    ├── 📄 README (3).md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 ```markdown (2).md
+
+> │    ├── 📄 ```markdown.md
+
+> │    └── 📂 demo/
+
+> │      ├── 📄 README (2).md
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 branding-lina (2).md
+
+> │        ├── 📄 branding-lina.md
+
+> │        ├── 📄 index (2).html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 lina-config-prompt (2).md
+
+> │        ├── 📄 lina-config-prompt.md
+
+> │        ├── 📄 sora-prompts-lumara-lina (2).txt
+
+> │        ├── 📄 sora-prompts-lumara-lina.txt
+
+> │      ├── 📄 index (2).html
+
+> │      ├── 📄 index (3).html
+
+> │      ├── 📄 index (4).html
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 lumara_resource_graph_investor_section.md
+
+> │      ├── 📄 verify_parsing.py
+
+> │    ├── 📄 env.example
+
+> │    ├── 📄 favicon.ico
+
+> │    └── 📂 frontend/
+
+> │      ├── 📄 deno.lock
+
+> │      └── 📂 functions/
+
+> │        └── 📂 api/
+
+> │          ├── 📄 lina-chat.js
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 lina-widget.html
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 lina-icon.svg
+
+> │        ├── 📄 lina-widget-drop.js
+
+> │      └── 📂 src/
+
+> │        ├── 📄 App.css
+
+> │        ├── 📄 App.tsx
+
+> │        └── 📂 api/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 linaClient.ts
+
+> │          ├── 📄 resourceWorkerClient.ts
+
+> │        └── 📂 components/
+
+> │          ├── 📄 ChatHeader.tsx
+
+> │          ├── 📄 ChatInput.tsx
+
+> │          ├── 📄 MatchList.tsx
+
+> │          ├── 📄 MessageList.tsx
+
+> │          ├── 📄 NavigatorMediationPanel.tsx
+
+> │          ├── 📄 NeedForm.tsx
+
+> │          ├── 📄 OfferForm.tsx
+
+> │          ├── 📄 ResourceGraph.tsx
+
+> │          ├── 📄 WidgetShell.tsx
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.css
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.tsx
+
+> │        └── 📂 models/
+
+> │          ├── 📄 chat.ts
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 ClientPortal.tsx
+
+> │          ├── 📄 Home.tsx
+
+> │          ├── 📄 NavigatorDashboard.tsx
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 vite-env.d.ts
+
+> │        └── 📂 widget/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 main-widget.tsx
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 vite.config.ts
+
+> │    └── 📂 functions/
+
+> │      └── 📂 api/
+
+> │        ├── 📄 index (2).html
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 lina-chat (2).js
+
+> │        ├── 📄 lina-chat.js
+
+> │      ├── 📄 index (2).html
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index (4).html
+
+> │    ├── 📄 index (5).html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 index.html.merge_1763192572
+
+> │    ├── 📄 lina-widget (2).html
+
+> │    ├── 📄 lina-widget.html
+
+> │    └── 📂 ops/
+
+> │      ├── 📄 crisis_routing_extension.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 qios_00_genesis.canvas
+
+> │    ├── 📄 qios_runtime_mindmap.canvas
+
+> │    └── 📂 rules/
+
+> │      ├── 📄 _readme.md
+
+> │      ├── 📄 folder_registry.yaml
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │      ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │      └── 📂 qios_cursor_prompts/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 install_ingestion_worker.md
+
+> │        ├── 📄 project_prompt.md.md
+
+> │        ├── 📄 qicompiler_add_prompt.md
+
+> │        ├── 📄 qicompiler_orchestrator_prompt.md
+
+> │        ├── 📄 qimatrix_csv_prompt.md
+
+> │        ├── 📄 qimatrix_sql_prompt.md
+
+> │        ├── 📄 qimatrix_yaml_prompt.md
+
+> │        ├── 📄 step3_tree_compiler_prompt.md
+
+> │        ├── 📄 user_prompt.md.md
+
+> │      ├── 📄 realms_registry.yaml
+
+> │    └── 📂 src/
+
+> │      └── 📂 gina_core/
+
+> │        ├── 📄 db.py
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 main.py
+
+> │        └── 📂 services/
+
+> │          ├── 📄 capture.py
+
+> │        ├── 📄 utils.py
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 launcher/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 src/
+
+> │          ├── 📄 App.css
+
+> │          ├── 📄 App.jsx
+
+> │          └── 📂 components/
+
+> │            ├── 📄 FileBrowser.css
+
+> │            ├── 📄 Tooltip.css
+
+> │            ├── 📄 Tooltip.jsx
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.css
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 main.jsx
+
+> │          ├── 📄 theme.js
+
+> │    └── 📂 templates/
+
+> │      └── 📂 docs/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 readme_template.md.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 tools/
+
+> │      ├── 📄 README_SCANNER.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 run_migrations.py
+
+> │    └── 📂 workers/
+
+> │      ├── 📄 _readme.md
+
+> │      └── 📂 _shared/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 embedder/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_embedder.ts
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 ingestion/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_ingestion.ts
+
+> │      └── 📂 linter/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 readme_generator.py
+
+> │      └── 📂 metadata_naming/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 orchestrator/
+
+> │        ├── 📄 OrchestratorState.ts
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 migrations/
+
+> │          ├── 📄 0001_do.mjs
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │        ├── 📄 worker_orchestrator.ts
+
+> │      └── 📂 self_heal/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 worker_self_heal.ts
+
+> │      └── 📂 semantic_router/
+
+> │        ├── 📄 index.html
+
+> │  └── 📂 qinode/
+
+> │    ├── 📄 Cargo.lock
+
+> │    ├── 📄 Cargo.toml
+
+> │    └── 📂 QiNode_Genesis_Root/
+
+> │      ├── 📄 data.json
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 qinode-engine/
+
+> │      ├── 📄 Cargo.lock
+
+> │      ├── 📄 Cargo.toml
+
+> │      └── 📂 QiNode_Genesis_Root/
+
+> │        ├── 📄 data.json
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 seed.rs
+
+> │      ├── 📄 spark.bat
+
+> │      └── 📂 src/
+
+> │        ├── 📄 main.rs
+
+> │    ├── 📄 seed.rs
+
+> │    ├── 📄 spark.bat
+
+> │    └── 📂 src/
+
+> │      └── 📂 dna/
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 lineage/
+
+> │      ├── 📄 main.rs
+
+> │      └── 📂 obsidian-engine/
+
+> │      └── 📂 parser/
+
+> │      └── 📂 reconstruction/
+
+> │      └── 📂 registry/
+
+> │      └── 📂 serializer/
+
+> │  └── 📂 qiobject/
+
+> │    └── 📂 contacts/
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 qicontacts/
+
+> │        ├── 📄 README.md
+
+> │        └── 📂 files/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 raw_export_DO_NOT_TOUCH.csv
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 energy/
+
+> │      ├── 📄 QIOS_REPO_INFO.txt
+
+> │      ├── 📄 QIOS_SAFE_TO_DELETE.txt
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 README.md.merge_1763241628
+
+> │      ├── 📄 README.md.merge_1767756324
+
+> │      ├── 📄 activity.csv
+
+> │      ├── 📄 data.csv
+
+> │      ├── 📄 data.txt
+
+> │      └── 📂 home-energy-tracker-v2 (1)/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.html.merge_1769331278
+
+> │      ├── 📄 insert_bills.sql
+
+> │      ├── 📄 insert_bills_detailed.sql
+
+> │      ├── 📄 update_bills_schema.sql
+
+> │    └── 📂 rides/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 database.sql
+
+> │      └── 📂 exp_rides/
+
+> │        ├── 📄 _2.50.10.10.1_QiRides.md
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 tandero_dev_doc.md
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 web/
+
+> │        ├── 📄 app.js
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 manifest.json
+
+> │      └── 📂 worker/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 src/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 index.js
+
+> │        ├── 📄 wrangler.toml
+
+> │    ├── 📄 utils.ts
+
+> │  └── 📂 qitax-cli/
+
+> │    ├── 📄 __main__.py
+
+> │    ├── 📄 service.py
+
+> │    ├── 📄 storage.py
+
+> │  └── 📂 sdk/
+
+> │  └── 📂 spine/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      └── 📂 archive/
+
+> │        ├── 📄 checksum.ts
+
+> │        ├── 📄 lineage.ts
+
+> │        ├── 📄 manifest.ts
+
+> │        ├── 📄 register.ts
+
+> │      └── 📂 ids/
+
+> │        ├── 📄 prefix_registry.ts
+
+> │        ├── 📄 qis_decimal.ts
+
+> │        ├── 📄 short_code.ts
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 metadata/
+
+> │        ├── 📄 contracts.ts
+
+> │        ├── 📄 normalize.ts
+
+> │        ├── 📄 validate.ts
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      └── 📂 components/
+
+> │        ├── 📄 button.tsx
+
+> │        ├── 📄 card.tsx
+
+> │        ├── 📄 dialog.tsx
+
+> │        ├── 📄 input.tsx
+
+> │        ├── 📄 status-badge.tsx
+
+> │        ├── 📄 table.tsx
+
+> │      ├── 📄 index.ts
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 tokens.css
+
+> │      └── 📂 tokens/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 introvideo.mp4
+
+> │          └── 📂 src/
+
+> │            └── 📂 brand/
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 utils/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 dates.ts
+
+> │      ├── 📄 env.ts
+
+> │      ├── 📄 filesystem.ts
+
+> │      ├── 📄 hashing.ts
+
+> │      ├── 📄 index.ts
+
+> │      ├── 📄 logger.ts
+
+> ├── 📄 pnpm-lock.yaml
+
+> ├── 📄 pnpm-workspace.yaml
+
+> ├── 📄 postcss.config.js
+
+> └── 📂 python_core/
+
+> │  └── 📂 QiEvidence/
+
+> │    └── 📂 archive/
+
+> │    └── 📂 input/
+
+> │      └── 📂 documents/
+
+> │      └── 📂 other/
+
+> │      └── 📂 photos/
+
+> │      └── 📂 videos/
+
+> │    └── 📂 output/
+
+> │      └── 📂 entities/
+
+> │      └── 📂 events/
+
+> │        ├── 📄 EV-bac3953fab31_visual.json
+
+> │      └── 📂 reports/
+
+> │      └── 📂 reviews/
+
+> │      └── 📂 timelines/
+
+> │    └── 📂 working/
+
+> │      └── 📂 audio/
+
+> │        ├── 📄 EV-bac3953fab31.mp3
+
+> │      └── 📂 frames/
+
+> │        └── 📂 EV-bac3953fab31/
+
+> │          ├── 📄 frame_0001.jpg
+
+> │          ├── 📄 frame_0002.jpg
+
+> │          ├── 📄 frame_0003.jpg
+
+> │          ├── 📄 frame_0004.jpg
+
+> │          ├── 📄 frame_0005.jpg
+
+> │          ├── 📄 frame_0006.jpg
+
+> │          ├── 📄 frame_0007.jpg
+
+> │          ├── 📄 frame_0008.jpg
+
+> │          ├── 📄 frame_0009.jpg
+
+> │          ├── 📄 frame_0010.jpg
+
+> │          ├── 📄 frame_0011.jpg
+
+> │          ├── 📄 frame_0012.jpg
+
+> │          ├── 📄 frame_0013.jpg
+
+> │          ├── 📄 frame_0014.jpg
+
+> │          ├── 📄 frame_0015.jpg
+
+> │          ├── 📄 frame_0016.jpg
+
+> │          ├── 📄 frame_0017.jpg
+
+> │          ├── 📄 frame_0018.jpg
+
+> │          ├── 📄 frame_0019.jpg
+
+> │          ├── 📄 frame_0020.jpg
+
+> │          ├── 📄 frame_0021.jpg
+
+> │          ├── 📄 frame_0022.jpg
+
+> │          ├── 📄 frame_0023.jpg
+
+> │          ├── 📄 frame_0024.jpg
+
+> │          ├── 📄 frame_0025.jpg
+
+> │          ├── 📄 frame_0026.jpg
+
+> │          ├── 📄 frame_0027.jpg
+
+> │          ├── 📄 frame_0028.jpg
+
+> │          ├── 📄 frame_0029.jpg
+
+> │          ├── 📄 frame_0030.jpg
+
+> │          ├── 📄 frame_0031.jpg
+
+> │          ├── 📄 frame_0032.jpg
+
+> │          ├── 📄 frame_0033.jpg
+
+> │          ├── 📄 frame_0034.jpg
+
+> │          ├── 📄 frame_0035.jpg
+
+> │          ├── 📄 frame_0036.jpg
+
+> │          ├── 📄 frame_0037.jpg
+
+> │          ├── 📄 frame_0038.jpg
+
+> │          ├── 📄 frame_0039.jpg
+
+> │          ├── 📄 frame_0040.jpg
+
+> │          ├── 📄 frame_0041.jpg
+
+> │          ├── 📄 frame_0042.jpg
+
+> │          ├── 📄 frame_0043.jpg
+
+> │          ├── 📄 frame_0044.jpg
+
+> │          ├── 📄 frame_0045.jpg
+
+> │          ├── 📄 frame_0046.jpg
+
+> │          ├── 📄 frame_0047.jpg
+
+> │          ├── 📄 frame_0048.jpg
+
+> │          ├── 📄 frame_0049.jpg
+
+> │          ├── 📄 frame_0050.jpg
+
+> │          ├── 📄 frame_0051.jpg
+
+> │          ├── 📄 frame_0052.jpg
+
+> │          ├── 📄 frame_0053.jpg
+
+> │          ├── 📄 frame_0054.jpg
+
+> │          ├── 📄 frame_0055.jpg
+
+> │          ├── 📄 frame_0056.jpg
+
+> │          ├── 📄 frame_0057.jpg
+
+> │          ├── 📄 frame_0058.jpg
+
+> │          ├── 📄 frame_0059.jpg
+
+> │          ├── 📄 frame_0060.jpg
+
+> │      └── 📂 transcripts/
+
+> │        ├── 📄 EV-bac3953fab31.json
+
+> │  └── 📂 agents/
+
+> │  └── 📂 api/
+
+> │    ├── 📄 main.py
+
+> │    ├── 📄 routes_health.py
+
+> │    ├── 📄 routes_ingest.py
+
+> │    ├── 📄 routes_jobs.py
+
+> │    ├── 📄 routes_search.py
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 bin/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 book_projects/
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 paid_in_full/
+
+> │        └── 📂 audio_final/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 audio_raw/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 licenses/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 music_sfx/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 text/
+
+> │          ├── 📄 00_intro.txt
+
+> │          ├── 📄 01_part_1.txt
+
+> │          ├── 📄 02_part_2.txt
+
+> │          ├── 📄 03_part_3.txt
+
+> │          ├── 📄 04_part_4.txt
+
+> │          ├── 📄 05_part_5.txt
+
+> │          ├── 📄 06_epilogue.txt
+
+> │          ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 render.py
+
+> │    ├── 📄 setup_piper.ps1
+
+> │    ├── 📄 split_chapters.py
+
+> │    ├── 📄 voice_map.json
+
+> │  └── 📂 config/
+
+> │    ├── 📄 prefixes.yaml
+
+> │    ├── 📄 settings.yaml
+
+> │  └── 📂 core_tools/
+
+> │    ├── 📄 build.bat
+
+> │    ├── 📄 builder.py
+
+> │    └── 📂 core/
+
+> │      └── 📂 __pycache__/
+
+> │      ├── 📄 base_tool.py
+
+> │    ├── 📄 file_version_info.txt
+
+> │    ├── 📄 main_ui.py
+
+> │    └── 📂 notion_pipeline/
+
+> │      └── 📂 notion/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 __init__.py
+
+> │        └── 📂 helpers/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 client.py
+
+> │          ├── 📄 database.py
+
+> │        ├── 📄 settings.py
+
+> │      ├── 📄 notion_pipeline.py
+
+> │      ├── 📄 requirements.txt
+
+> │    ├── 📄 requirements.txt
+
+> │    └── 📂 tools/
+
+> │      ├── 📄 __init__.py
+
+> │      └── 📂 __pycache__/
+
+> │      ├── 📄 blank_template.py
+
+> │      ├── 📄 dev_extractor.py
+
+> │      ├── 📄 dev_git_push_tool.py
+
+> │      ├── 📄 dev_rule_tester.py
+
+> │      ├── 📄 doc_pdf_splitter.py
+
+> │      ├── 📄 doc_tax_compiler.py
+
+> │      ├── 📄 git_push_tool.py
+
+> │      ├── 📄 media_video_converter.py
+
+> │      ├── 📄 router_archivist.py
+
+> │      ├── 📄 router_downloads.py
+
+> │      ├── 📄 router_vault.py
+
+> │      ├── 📄 sys_bloat_destroyer.py
+
+> │      ├── 📄 sys_file_cleaner.py
+
+> │      ├── 📄 sys_unlock_downloads.py
+
+> │      ├── 📄 text_extractor.py
+
+> │  └── 📂 document-ingestion/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 app.py
+
+> │    ├── 📄 requirements.txt
+
+> │  └── 📂 document-processors/
+
+> │    ├── 📄 WEB_INTERFACE.md
+
+> │    ├── 📄 __init__.py
+
+> │    ├── 📄 cli.py
+
+> │    ├── 📄 config.py
+
+> │    ├── 📄 exceptions.py
+
+> │    ├── 📄 extractor.py
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 pipeline/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 layout_detector.py
+
+> │      ├── 📄 model_downloader.py
+
+> │      ├── 📄 nanonets_processor.py
+
+> │      ├── 📄 neural_document_processor.py
+
+> │      ├── 📄 ocr_service.py
+
+> │    └── 📂 processors/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 base.py
+
+> │      ├── 📄 cloud_processor.py
+
+> │      ├── 📄 docx_processor.py
+
+> │      ├── 📄 excel_processor.py
+
+> │      ├── 📄 gpu_processor.py
+
+> │      ├── 📄 html_processor.py
+
+> │      ├── 📄 image_processor.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 pdf_processor.py
+
+> │      ├── 📄 pptx_processor.py
+
+> │      ├── 📄 txt_processor.py
+
+> │      ├── 📄 url_processor.py
+
+> │    ├── 📄 result.py
+
+> │    └── 📂 services/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 auth_service.py
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 ollama_service.py
+
+> │    └── 📂 static/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 logo_clean.png
+
+> │      ├── 📄 script.js
+
+> │      ├── 📄 styles.css
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 utils/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 gpu_utils.py
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 web_app.py
+
+> │  └── 📂 file_pipeline/
+
+> │    ├── 📄 __init__.py
+
+> │    ├── 📄 api_client.py
+
+> │    ├── 📄 archive.py
+
+> │    ├── 📄 chunk.py
+
+> │    ├── 📄 classify.py
+
+> │    ├── 📄 config.py
+
+> │    ├── 📄 embed.py
+
+> │    ├── 📄 extract.py
+
+> │    ├── 📄 graph_project.py
+
+> │    ├── 📄 ingest.py
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 route.py
+
+> │    ├── 📄 state_machine.py
+
+> │    └── 📂 tests/
+
+> │    ├── 📄 watcher.py
+
+> │  └── 📂 gina-ai/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 main.py
+
+> │    ├── 📄 requirements.txt
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 runner.py
+
+> │  └── 📂 local_services/
+
+> │    ├── 📄 QUICK_START.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 README_WORKER.md
+
+> │    ├── 📄 SETUP.md
+
+> │    ├── 📄 TESTING_ROADMAP.md
+
+> │    ├── 📄 api_dev_history.py
+
+> │    ├── 📄 api_gina.py
+
+> │    ├── 📄 api_ingest.py
+
+> │    ├── 📄 api_query.py
+
+> │    ├── 📄 check_status.py
+
+> │    ├── 📄 check_workers.py
+
+> │    └── 📂 crawler/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 vault_crawler.py
+
+> │    ├── 📄 db.py
+
+> │    ├── 📄 dev_error_helpers.py
+
+> │    ├── 📄 frontmatter_utils.py
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 gina_chat_contract.md
+
+> │    ├── 📄 gina_chat_contract.ts
+
+> │    ├── 📄 gina_personality_prompt.md
+
+> │    ├── 📄 gina_prompt.py
+
+> │    └── 📂 integrations/
+
+> │      ├── 📄 INTEGRATION_LAYER_SUMMARY.md
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 base.py
+
+> │    ├── 📄 job_processor.py
+
+> │    ├── 📄 jobs.py
+
+> │    ├── 📄 memory.py
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_local_core.py
+
+> │    ├── 📄 quick_start.ps1
+
+> │    ├── 📄 rag.py
+
+> │    ├── 📄 requirements.txt
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 api_dev_history.py
+
+> │      ├── 📄 api_gina.py
+
+> │      ├── 📄 api_ingest.py
+
+> │      ├── 📄 api_query.py
+
+> │      ├── 📄 check-auth.ps1
+
+> │      ├── 📄 check-secrets.ps1
+
+> │      ├── 📄 check_status.py
+
+> │      ├── 📄 check_workers.py
+
+> │      ├── 📄 db.py
+
+> │      ├── 📄 deploy-all.ps1
+
+> │      ├── 📄 deploy-critical.ps1
+
+> │      ├── 📄 dev_error_helpers.py
+
+> │      ├── 📄 frontmatter_utils.py
+
+> │      ├── 📄 fs_scanner.py
+
+> │      ├── 📄 gina_prompt.py
+
+> │      ├── 📄 job_processor.py
+
+> │      ├── 📄 jobs.py
+
+> │      ├── 📄 memory.py
+
+> │      ├── 📄 models.py
+
+> │      ├── 📄 qios_local_core.py
+
+> │      ├── 📄 rag.py
+
+> │      ├── 📄 set-critical-secrets.ps1
+
+> │      ├── 📄 set-secrets-from-env.ps1
+
+> │      ├── 📄 start_worker.ps1
+
+> │      ├── 📄 sync-secrets.ps1
+
+> │      ├── 📄 test-rag-system.ps1
+
+> │      ├── 📄 test-with-curl.ps1
+
+> │      ├── 📄 test_debug_ingest.ps1
+
+> │      ├── 📄 test_ingest.py
+
+> │      ├── 📄 test_queue_admin.ps1
+
+> │      ├── 📄 text_extractor.py
+
+> │      ├── 📄 tools.py
+
+> │      ├── 📄 verify-and-test.ps1
+
+> │      ├── 📄 worker.py
+
+> │    ├── 📄 start_worker.ps1
+
+> │    ├── 📄 test_debug_ingest.ps1
+
+> │    ├── 📄 test_ingest.py
+
+> │    ├── 📄 test_queue_admin.ps1
+
+> │    └── 📂 tests/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 run_tests.sh
+
+> │      ├── 📄 test_db_sanity.sql
+
+> │      ├── 📄 test_manual_failures.md
+
+> │      ├── 📄 test_sanity_checks.py
+
+> │    ├── 📄 text_extractor.py
+
+> │    └── 📂 tools/
+
+> │    ├── 📄 tools.py
+
+> │      ├── 📄 append_to_vault_note.py
+
+> │      ├── 📄 calendar_create_event.py
+
+> │      ├── 📄 calendar_get_upcoming.py
+
+> │      ├── 📄 check_worker_status.py
+
+> │      ├── 📄 create_vault_note.py
+
+> │      ├── 📄 crm_create_contact.py
+
+> │      ├── 📄 crm_create_task.py
+
+> │      ├── 📄 crm_list_recent_contacts.py
+
+> │      ├── 📄 crm_search_person.py
+
+> │      ├── 📄 list_realm_files.py
+
+> │      ├── 📄 mail_get_recent.py
+
+> │      ├── 📄 mail_send.py
+
+> │      ├── 📄 run_agent_command.py
+
+> │      ├── 📄 search_processed_documents.py
+
+> │      ├── 📄 sms_send.py
+
+> │      ├── 📄 start_agent_service.py
+
+> │      ├── 📄 start_worker.py
+
+> │      ├── 📄 web_get.py
+
+> │      ├── 📄 web_search.py
+
+> │    ├── 📄 tools_manifest.yaml
+
+> │    ├── 📄 worker.py
+
+> │  └── 📂 qiarchive/
+
+> │    └── 📂 api/
+
+> │      └── 📂 __pycache__/
+
+> │      ├── 📄 main.py
+
+> │    └── 📂 extract/
+
+> │    └── 📂 manifests/
+
+> │    └── 📂 ocr/
+
+> │    └── 📂 rename/
+
+> │    └── 📂 repair/
+
+> │      ├── 📄 repair.py
+
+> │    └── 📂 scan/
+
+> │      ├── 📄 scan.py
+
+> │  └── 📂 qid-cli/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 _assets/
+
+> │      └── 📂 _generated_icons/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qid_128.png
+
+> │        ├── 📄 qid_16.png
+
+> │        ├── 📄 qid_24.png
+
+> │        ├── 📄 qid_256.png
+
+> │        ├── 📄 qid_32.png
+
+> │        ├── 📄 qid_48.png
+
+> │        ├── 📄 qid_64.png
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 make_ico.py
+
+> │      ├── 📄 qid-3d.jpg
+
+> │      ├── 📄 qid-barcode.jpg
+
+> │      ├── 📄 qid-complex.jpg
+
+> │      ├── 📄 qid-complex.mp4
+
+> │      ├── 📄 qid-gradient.jpg
+
+> │      ├── 📄 qid-inverted.svg
+
+> │      ├── 📄 qid-led.jpg
+
+> │      ├── 📄 qid-qr-code.jpg
+
+> │      ├── 📄 qid.ico
+
+> │      ├── 📄 qid.ico.txt
+
+> │      ├── 📄 qid.jpg
+
+> │      ├── 📄 qid.png
+
+> │    └── 📂 _backups/
+
+> │      └── 📂 daily/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 rolling/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 state.prev.json
+
+> │    └── 📂 _logs/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 qid_activity.jsonl
+
+> │    ├── 📄 _qid_registry.json
+
+> │    ├── 📄 _qid_state.json
+
+> │    └── 📂 _wal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 qid_wal.jsonl
+
+> │    ├── 📄 build_windows.ps1
+
+> │    └── 📂 desktop/
+
+> │      ├── 📄 create_shortcut.ps1
+
+> │      ├── 📄 create_shortcut.vbs
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 qid_launcher.bat
+
+> │      ├── 📄 qid_ui.bat
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 DEV_DOC.md
+
+> │      ├── 📄 gid_rules.md
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 pyproject.toml
+
+> │    ├── 📄 qid.py
+
+> │    ├── 📄 requirements.txt
+
+> │  └── 📂 qien/
+
+> │    └── 📂 __pycache__/
+
+> │    ├── 📄 audio_util.py
+
+> │    ├── 📄 main.py
+
+> │    ├── 📄 requirements.txt
+
+> │    ├── 📄 run_test.py
+
+> │    ├── 📄 transcribe_util.py
+
+> │    ├── 📄 visual_util.py
+
+> │  └── 📂 rag_env/
+
+> │  ├── 📄 requirements.txt
+
+> │  └── 📂 services/
+
+> │    └── 📂 ai-api/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 app/
+
+> │        ├── 📄 __init__.py
+
+> │        ├── 📄 main.py
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 chat.py
+
+> │          ├── 📄 memory.py
+
+> │          ├── 📄 retrieval.py
+
+> │        └── 📂 services/
+
+> │          ├── 📄 embedding_service.py
+
+> │          ├── 📄 memory_service.py
+
+> │          ├── 📄 retrieval_service.py
+
+> │      ├── 📄 pyproject.toml
+
+> │      ├── 📄 requirements.txt
+
+> │    └── 📂 app-api/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 db.ts
+
+> │          ├── 📄 env.ts
+
+> │          ├── 📄 logger.ts
+
+> │        └── 📂 middleware/
+
+> │          ├── 📄 audit.ts
+
+> │          ├── 📄 auth.ts
+
+> │          ├── 📄 tenant.ts
+
+> │        └── 📂 modules/
+
+> │          └── 📂 archive/
+
+> │            ├── 📄 handlers.ts
+
+> │            ├── 📄 service.ts
+
+> │          └── 📂 devices/
+
+> │            ├── 📄 handlers.ts
+
+> │            ├── 📄 service.ts
+
+> │          └── 📂 tenants/
+
+> │            ├── 📄 handlers.ts
+
+> │            ├── 📄 service.ts
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 admin.ts
+
+> │          ├── 📄 archive.ts
+
+> │          ├── 📄 auth.ts
+
+> │          ├── 📄 cases.ts
+
+> │          ├── 📄 devices.ts
+
+> │          ├── 📄 health.ts
+
+> │          ├── 📄 knowledge.ts
+
+> │          ├── 📄 modules.ts
+
+> │          ├── 📄 tenants.ts
+
+> │          ├── 📄 vault.ts
+
+> │        ├── 📄 server.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    ├── 📄 fs_service.py
+
+> │    └── 📂 local-agent/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 agent.py
+
+> │      └── 📂 app/
+
+> │        ├── 📄 __init__.py
+
+> │        └── 📂 api/
+
+> │          ├── 📄 __init__.py
+
+> │          ├── 📄 health.py
+
+> │          ├── 📄 ingest.py
+
+> │          ├── 📄 jobs.py
+
+> │          ├── 📄 scan.py
+
+> │          ├── 📄 status.py
+
+> │          ├── 📄 update.py
+
+> │          ├── 📄 watchers.py
+
+> │        └── 📂 core/
+
+> │          ├── 📄 auth.py
+
+> │          ├── 📄 config.py
+
+> │          ├── 📄 heartbeat.py
+
+> │          ├── 📄 logging.py
+
+> │          ├── 📄 paths.py
+
+> │          ├── 📄 queue.py
+
+> │        └── 📂 models/
+
+> │          ├── 📄 assignment.py
+
+> │          ├── 📄 device.py
+
+> │          ├── 📄 heartbeat.py
+
+> │          ├── 📄 job.py
+
+> │        └── 📂 runtime/
+
+> │          ├── 📄 bootstrap.py
+
+> │          ├── 📄 dispatcher.py
+
+> │          ├── 📄 dropzone.py
+
+> │          ├── 📄 supervisor.py
+
+> │          ├── 📄 watchers.py
+
+> │        └── 📂 workers/
+
+> │          ├── 📄 backup_worker.py
+
+> │          ├── 📄 chunk_worker.py
+
+> │          ├── 📄 embed_worker.py
+
+> │          ├── 📄 extract_worker.py
+
+> │          ├── 📄 ingest_worker.py
+
+> │          ├── 📄 ocr_worker.py
+
+> │          ├── 📄 repair_worker.py
+
+> │          ├── 📄 sync_worker.py
+
+> │      ├── 📄 main.py
+
+> │      ├── 📄 pyproject.toml
+
+> │      ├── 📄 requirements.txt
+
+> │      └── 📂 tests/
+
+> │        ├── 📄 test_assignments.py
+
+> │        ├── 📄 test_dispatcher.py
+
+> │        ├── 📄 test_health.py
+
+> │        ├── 📄 test_watchers.py
+
+> │    ├── 📄 ocr_service.py
+
+> │    ├── 📄 ollama_client.py
+
+> │    └── 📂 worker-orchestrator/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 app/
+
+> │        ├── 📄 __init__.py
+
+> │        └── 📂 events/
+
+> │          ├── 📄 consumers.py
+
+> │          ├── 📄 publishers.py
+
+> │        └── 📂 jobs/
+
+> │          ├── 📄 dispatch.py
+
+> │          ├── 📄 node_updates.py
+
+> │          ├── 📄 repair.py
+
+> │          ├── 📄 retries.py
+
+> │        └── 📂 queue/
+
+> │          ├── 📄 redis_queue.py
+
+> │          ├── 📄 scheduler.py
+
+> │      ├── 📄 main.py
+
+> │      ├── 📄 pyproject.toml
+
+> │      ├── 📄 requirements.txt
+
+> └── 📂 python_local/
+
+> ├── 📄 qilabs_blueprint_full_tree.json
+
+> ├── 📄 reorg_plan.sample.json
+
+> ├── 📄 repo.rules.json
+
+> └── 📂 scripts/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 ai/
+
+> │    └── 📂 agents/
+
+> │      ├── 📄 agent_models.py
+
+> │      ├── 📄 agent_qios.py
+
+> │    └── 📂 memory/
+
+> │      ├── 📄 memory_store.py
+
+> │    └── 📂 prompts/
+
+> │      ├── 📄 prompt_gina.py
+
+> │    └── 📂 rag/
+
+> │      ├── 📄 rag_core.py
+
+> │  └── 📂 archive/
+
+> │    ├── 📄 rebuild-manifest.py
+
+> │    ├── 📄 reconcile-lineage.py
+
+> │    ├── 📄 register-file.py
+
+> │    ├── 📄 retry-failed.py
+
+> │  └── 📂 automate/
+
+> │    └── 📂 core/
+
+> │      ├── 📄 setup_antigravity.py
+
+> │    └── 📂 health/
+
+> │      ├── 📄 health_check_status.py
+
+> │      ├── 📄 health_check_worker_status.py
+
+> │      ├── 📄 health_check_workers.py
+
+> │    └── 📂 jobs/
+
+> │      ├── 📄 job_runner.py
+
+> │    └── 📂 movers/
+
+> │      ├── 📄 move_chatgpt_audio_registry.py
+
+> │    └── 📂 runners/
+
+> │      ├── 📄 run_agent_command.py
+
+> │      ├── 📄 run_agent_service.py
+
+> │      ├── 📄 run_worker.py
+
+> │    └── 📂 schedulers/
+
+> │      ├── 📄 sched_install.ps1
+
+> │      ├── 📄 sched_queue_load.py
+
+> │      ├── 📄 sched_windows_task.xml
+
+> │  └── 📂 core/
+
+> │    └── 📂 auth/
+
+> │      ├── 📄 auth_check.ps1
+
+> │      ├── 📄 auth_secrets_check.ps1
+
+> │    ├── 📄 check_ffmpeg.py
+
+> │    ├── 📄 core_base.py
+
+> │    ├── 📄 core_qi_codex.py
+
+> │    ├── 📄 core_qios_local.py
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 usage.md
+
+> │    ├── 📄 ffmpeg_utils.py
+
+> │    └── 📂 modules/
+
+> │      ├── 📄 module_app_create.py
+
+> │  └── 📂 db/
+
+> │    ├── 📄 db-migrate.ps1
+
+> │    ├── 📄 db-reset.ps1
+
+> │    ├── 📄 db-seed.ps1
+
+> │    ├── 📄 db-start.ps1
+
+> │    ├── 📄 db-stop.ps1
+
+> │  └── 📂 deploy/
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 deploy_all.ps1
+
+> │      ├── 📄 deploy_critical.ps1
+
+> │      ├── 📄 deploy_git_autopush.ahk
+
+> │    └── 📂 sync/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 sync_dev_gdrive.py
+
+> │      ├── 📄 sync_gdrive.ps1
+
+> │      ├── 📄 sync_git_push.py
+
+> │      ├── 📄 sync_index_content.ts
+
+> │      ├── 📄 sync_lfs_disable.ps1
+
+> │      ├── 📄 sync_lfs_enable.ps1
+
+> │    └── 📂 workers/
+
+> │      ├── 📄 worker_deploy.ps1
+
+> │      ├── 📄 worker_deploy_all.ps1
+
+> │      ├── 📄 worker_urls_get.ps1
+
+> │  └── 📂 dev/
+
+> │    ├── 📄 check-env.ps1
+
+> │    ├── 📄 check-env.sh
+
+> │    ├── 📄 dev.ps1
+
+> │    ├── 📄 dev.sh
+
+> │    ├── 📄 start-ai-api.ps1
+
+> │    ├── 📄 start-app-api.ps1
+
+> │    ├── 📄 start-local-agent.ps1
+
+> │    ├── 📄 start-local-agent.sh
+
+> │    ├── 📄 start-workers.ps1
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 backup_restore.md
+
+> │    ├── 📄 device_enrollment.md
+
+> │    ├── 📄 docs-build.ps1
+
+> │    ├── 📄 docs-serve.ps1
+
+> │    ├── 📄 docs-validate.ps1
+
+> │    ├── 📄 panic_recovery.md
+
+> │    ├── 📄 workstation_setup.md
+
+> │  └── 📂 fleet/
+
+> │    ├── 📄 assign-watch-path.ts
+
+> │    ├── 📄 check-heartbeats.ts
+
+> │    ├── 📄 dispatch-node-job.ts
+
+> │    ├── 📄 issue-enrollment-token.ts
+
+> │    ├── 📄 revoke-device.ts
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 index/
+
+> │    └── 📂 builders/
+
+> │      ├── 📄 index_build.ps1
+
+> │      ├── 📄 index_immigration_example.py
+
+> │      ├── 📄 index_timeline_713_build.js
+
+> │      ├── 📄 index_timeline_build.js
+
+> │      ├── 📄 index_timeline_json_build.js
+
+> │    └── 📂 directory/
+
+> │      └── 📂 compile/
+
+> │        ├── 📄 dir_code_compile_review.py
+
+> │        ├── 📄 dir_timeline_load.js
+
+> │        ├── 📄 dir_tree_compile.py
+
+> │      └── 📂 create/
+
+> │        ├── 📄 dir_app_create.py
+
+> │        ├── 📄 dir_canvas_create.py
+
+> │        ├── 📄 dir_canvas_directory_create.py
+
+> │        ├── 📄 dir_cloudflare_md_create.py
+
+> │        ├── 📄 dir_node_new.bat
+
+> │        ├── 📄 dir_registry_trash_summarize.py
+
+> │        ├── 📄 dir_stubs_create.py
+
+> │      └── 📂 flatten/
+
+> │        ├── 📄 dir_flatten.py
+
+> │        ├── 📄 dir_folders_ultra_clean.py
+
+> │      └── 📂 indices/
+
+> │        ├── 📄 dir_indexes_generate.py
+
+> │      └── 📂 maps/
+
+> │        ├── 📄 dir_map.py
+
+> │        ├── 📄 dir_slugs_map.py
+
+> │    └── 📂 registry/
+
+> │      ├── 📄 reg_files_build.py
+
+> │      ├── 📄 reg_files_generate.ps1
+
+> │  └── 📂 ingest/
+
+> │    └── 📂 audio/
+
+> │      ├── 📄 audio_transcribe.py
+
+> │    └── 📂 files/
+
+> │      ├── 📄 file_large_move.ps1
+
+> │      ├── 📄 file_md_body_move.py
+
+> │      ├── 📄 file_media_tree_merge.bat
+
+> │      ├── 📄 file_realm_list.py
+
+> │      ├── 📄 file_scan_fs.py
+
+> │    └── 📂 inbox/
+
+> │      ├── 📄 inbox_audit.ts
+
+> │      ├── 📄 inbox_downloads_rename.py
+
+> │      ├── 📄 inbox_flatten.ps1
+
+> │      ├── 📄 inbox_merge_plan.ts
+
+> │      ├── 📄 inbox_names_fix.ts
+
+> │      ├── 📄 inbox_run.ts
+
+> │    └── 📂 video/
+
+> │      ├── 📄 video_media_tree_merge.py
+
+> │      ├── 📄 video_mkvs_merge.py
+
+> │  ├── 📄 master_pipeline.py
+
+> │  ├── 📄 orchestrator.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  └── 📂 process/
+
+> │    └── 📂 clean/
+
+> │      ├── 📄 clean_analysis.ps1
+
+> │      ├── 📄 clean_app_roots.py
+
+> │      ├── 📄 clean_comprehensive.ps1
+
+> │      ├── 📄 clean_continue.ps1
+
+> │      ├── 📄 clean_dedup_detect.ts
+
+> │      ├── 📄 clean_duplicates_find.ps1
+
+> │      ├── 📄 clean_duplicates_find.py
+
+> │      ├── 📄 clean_duplicates_move.ps1
+
+> │      ├── 📄 clean_housekeeper_run.py
+
+> │      ├── 📄 clean_inbox_organize.py
+
+> │      ├── 📄 clean_intake_trash.py
+
+> │      ├── 📄 clean_qi_prefixes.py
+
+> │      ├── 📄 clean_storage_bloat.py
+
+> │      ├── 📄 clean_stubs_detect.py
+
+> │      ├── 📄 clean_violations.py
+
+> │    └── 📂 convert/
+
+> │      ├── 📄 convert_code_extract.py
+
+> │      ├── 📄 convert_errors_to_markdown.py
+
+> │      └── 📂 csv/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 USAGE.md
+
+> │        ├── 📄 csv_convert.js
+
+> │        ├── 📄 csv_convert.ps1
+
+> │        ├── 📄 csv_md_check.py
+
+> │        ├── 📄 csv_to_md.py
+
+> │      └── 📂 folders/
+
+> │        ├── 📄 folder_flatten.py
+
+> │        ├── 📄 folder_flatten_finish.ps1
+
+> │        ├── 📄 folder_flatten_organize.ps1
+
+> │      └── 📂 json/
+
+> │        ├── 📄 json_kb_generate.py
+
+> │      └── 📂 text/
+
+> │        ├── 📄 text_extract.py
+
+> │      └── 📂 video/
+
+> │        ├── 📄 video_mkv_enhance.py
+
+> │      └── 📂 zip/
+
+> │        ├── 📄 zip_downloads_extract.py
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 _Convert_csv_to_md.md
+
+> │    └── 📂 normalize/
+
+> │      ├── 📄 norm_files_sort.py
+
+> │      ├── 📄 norm_inbox.ts
+
+> │      ├── 📄 norm_spaces_fix.py
+
+> │    └── 📂 pdf/
+
+> │      ├── 📄 pdf_inbox_process.ts
+
+> │      ├── 📄 pdf_process.ts
+
+> │      ├── 📄 pdf_validate.ts
+
+> │    └── 📂 validate/
+
+> │      ├── 📄 valid_cloud.ps1
+
+> │      ├── 📄 valid_compliance_check.py
+
+> │      ├── 📄 valid_csv_md_compare.py
+
+> │      ├── 📄 valid_csv_search.py
+
+> │      ├── 📄 valid_db_examine.py
+
+> │      ├── 📄 valid_drive_compare.py
+
+> │      ├── 📄 valid_file_error_context.py
+
+> │      ├── 📄 valid_housekeeping.ps1
+
+> │      ├── 📄 valid_linter.py
+
+> │      ├── 📄 valid_linter_run.py
+
+> │      ├── 📄 valid_local.ps1
+
+> │      ├── 📄 valid_md_check.py
+
+> │  └── 📂 processing/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │  └── 📂 repo/
+
+> │    ├── 📄 enforce-structure.py
+
+> │    ├── 📄 lint-tree.py
+
+> │    ├── 📄 print-tree.py
+
+> │    ├── 📄 validate-paths.py
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  ├── 📄 safe_reorg.py
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 backup_qidata.ps1
+
+> │    ├── 📄 repair_repo.ps1
+
+> │    ├── 📄 repair_repo.sh
+
+> │    ├── 📄 restore_qidata.ps1
+
+> │    ├── 📄 tree_snapshot.ps1
+
+> │    ├── 📄 tree_snapshot.sh
+
+> │    ├── 📄 verify_env.ps1
+
+> │    ├── 📄 verify_env.sh
+
+> │  └── 📂 services/
+
+> │    └── 📂 calendar/
+
+> │      ├── 📄 calendar_create_event.py
+
+> │      ├── 📄 calendar_get_upcoming.py
+
+> │    └── 📂 crm/
+
+> │      ├── 📄 crm_create_contact.py
+
+> │      ├── 📄 crm_create_task.py
+
+> │      ├── 📄 crm_list_recent_contacts.py
+
+> │      ├── 📄 crm_search_person.py
+
+> │    └── 📂 mail/
+
+> │      ├── 📄 mail_get_recent.py
+
+> │      ├── 📄 mail_send.py
+
+> │    └── 📂 sms/
+
+> │      ├── 📄 sms_send.py
+
+> │    └── 📂 vault/
+
+> │      ├── 📄 vault_append_note.py
+
+> │      ├── 📄 vault_create_note.py
+
+> │    └── 📂 web/
+
+> │      ├── 📄 web_get.py
+
+> │      ├── 📄 web_search.py
+
+> │  └── 📂 steps/
+
+> │    ├── 📄 step1_combine.py
+
+> │    ├── 📄 step1_fast_combine.py
+
+> │    ├── 📄 step2_convert.py
+
+> │    ├── 📄 step2_flip.py
+
+> │    ├── 📄 step3_enhance.py
+
+> │    ├── 📄 step3_filter.py
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> │  └── 📂 tests/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 ai_video_filter.py
+
+> │    ├── 📄 batch_processor.py
+
+> │    ├── 📄 check_processed.py
+
+> │    └── 📂 debug/
+
+> │      ├── 📄 debug_maps.py
+
+> │    ├── 📄 enforce_fm.py
+
+> │    ├── 📄 find_failed.py
+
+> │    ├── 📄 flatten_enhance.py
+
+> │    ├── 📄 flatten_trade.py
+
+> │    └── 📂 frontmatter/
+
+> │      ├── 📄 frontmatter_add.py
+
+> │      ├── 📄 frontmatter_enforce.py
+
+> │      ├── 📄 frontmatter_utils.py
+
+> │      ├── 📄 frontmatter_validate.ts
+
+> │    ├── 📄 local_processor.py
+
+> │    └── 📂 maps/
+
+> │      ├── 📄 map_3d_mindmap_run.bat
+
+> │      ├── 📄 map_3d_real_run.bat
+
+> │      ├── 📄 map_3d_simple_run.bat
+
+> │    └── 📂 misc/
+
+> │      ├── 📄 scripts_rename_manifest.json
+
+> │      ├── 📄 scripts_rename_pass1.py
+
+> │    ├── 📄 pipeline_processor.py
+
+> │    └── 📂 search/
+
+> │      ├── 📄 search_processed_docs.py
+
+> │    ├── 📄 tools_manifest.json
+
+> │    ├── 📄 unblock_all.bat
+
+> │  ├── 📄 update_imports.py
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 sites/
+
+> │  └── 📂 qially-me/
+
+> │    ├── 📄 astro.config.mjs
+
+> │    ├── 📄 biome.json
+
+> │    ├── 📄 components.json
+
+> │    ├── 📄 package-lock.json
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 pnpm-lock.yaml
+
+> │    └── 📂 public/
+
+> │      ├── 📄 activity.svg
+
+> │      └── 📂 cards/
+
+> │        ├── 📄 fresh.png
+
+> │        ├── 📄 fresh.webp
+
+> │        ├── 📄 glass.png
+
+> │        ├── 📄 glass.webp
+
+> │        ├── 📄 mermaid.svg
+
+> │      ├── 📄 og.webp
+
+> │      ├── 📄 placeholder.webp
+
+> │      ├── 📄 rss.svg
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 build-pagefind-index.ts
+
+> │    └── 📂 site_QSaysIt_v1/
+
+> │      └── 📂 posts/
+
+> │        └── 📂 2026/
+
+> │          └── 📂 2026-02-19_post-title/
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 brief.m4a
+
+> │              ├── 📄 critique.m4a
+
+> │              ├── 📄 debate.m4a
+
+> │              ├── 📄 deepdive.m4a
+
+> │              ├── 📄 explainer.mp4
+
+> │              ├── 📄 hero.jpg
+
+> │              ├── 📄 infographic.jpg
+
+> │            ├── 📄 index.md
+
+> │        ├── 📄 index.md
+
+> │      └── 📂 qsaysit_blog/
+
+> │        └── 📂 templates/
+
+> │          └── 📂 2026-02-19_post-title/
+
+> │            └── 📂 assets/
+
+> │              ├── 📄 brief.m4a
+
+> │              ├── 📄 critique.m4a
+
+> │              ├── 📄 debate.m4a
+
+> │              ├── 📄 deepdive.m4a
+
+> │              ├── 📄 explainer.mp4
+
+> │              ├── 📄 hero.jpg
+
+> │              ├── 📄 infographic.jpg
+
+> │            ├── 📄 index.md
+
+> │          ├── 📄 post_template.md
+
+> │      └── 📂 templates/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │        ├── 📄 post_template.md
+
+> │    └── 📂 src/
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 creations.json
+
+> │        └── 📂 images/
+
+> │      └── 📂 components/
+
+> │        ├── 📄 BaseHead.astro
+
+> │        ├── 📄 BetaBadge.astro
+
+> │        ├── 📄 FormattedDate.astro
+
+> │        ├── 📄 HeaderLink.astro
+
+> │        ├── 📄 OptimizedImage.astro
+
+> │        ├── 📄 ProductCard.tsx
+
+> │        ├── 📄 ProductSection.astro
+
+> │        ├── 📄 ShareButtons.astro
+
+> │        ├── 📄 TagFilter.astro
+
+> │        └── 📂 blog/
+
+> │          ├── 📄 BlogCard.astro
+
+> │          ├── 📄 BlogsPage.astro
+
+> │        ├── 📄 copy-button.tsx
+
+> │        ├── 📄 image-viewer.tsx
+
+> │        └── 📂 knowledge-card/
+
+> │          ├── 📄 CardActions.astro
+
+> │          ├── 📄 CardBack.astro
+
+> │          ├── 📄 CardContainer.astro
+
+> │          ├── 📄 CardCover.astro
+
+> │          ├── 📄 CardFront.astro
+
+> │          ├── 📄 CardLink.astro
+
+> │          ├── 📄 CardsPage.astro
+
+> │          ├── 📄 KnowledgeCard.astro
+
+> │          ├── 📄 LinksModal.astro
+
+> │          ├── 📄 StructureDisplay.astro
+
+> │          ├── 📄 types.ts
+
+> │        └── 📂 landing-page/
+
+> │          ├── 📄 HeroSection.astro
+
+> │          ├── 📄 LatestSection.astro
+
+> │          ├── 📄 ScrollingTags.astro
+
+> │        └── 📂 navigation/
+
+> │          ├── 📄 ContentNavigation.astro
+
+> │        └── 📂 slide/
+
+> │          ├── 📄 SlideCard.astro
+
+> │          ├── 📄 SlidesPage.astro
+
+> │          ├── 📄 slide-viewer.tsx
+
+> │        └── 📂 ui/
+
+> │          ├── 📄 dialog.tsx
+
+> │          ├── 📄 sonner.tsx
+
+> │      ├── 📄 consts.ts
+
+> │      └── 📂 content/
+
+> │      ├── 📄 content.config.ts
+
+> │        └── 📂 blogs/
+
+> │          └── 📂 2025-08/
+
+> │            ├── 📄 groq-code-cli-internal.md
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 slides-01.png
+
+> │              ├── 📄 slides-02.png
+
+> │        └── 📂 cards/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 how-openai-uses-codex.md
+
+> │        └── 📂 doodles/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 monakit-released.md
+
+> │          └── 📂 2025-10/
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 doodle-list.png
+
+> │              ├── 📄 doodle.png
+
+> │            ├── 📄 mona-update-doodle-and-more.md
+
+> │        └── 📂 slides/
+
+> │          └── 📂 2025-09/
+
+> │            ├── 📄 agents-md-101.md
+
+> │            └── 📂 imgs/
+
+> │              ├── 📄 agents-md-ecosystem.png
+
+> │          └── 📂 2025-12/
+
+> │            ├── 📄 quadratic-101.md
+
+> │      ├── 📄 env.ts
+
+> │      └── 📂 layouts/
+
+> │        ├── 📄 ContentIndexLayout.astro
+
+> │        ├── 📄 MainLayout.astro
+
+> │      └── 📂 lib/
+
+> │        ├── 📄 navigation.ts
+
+> │        ├── 📄 pagination.ts
+
+> │        ├── 📄 utils.ts
+
+> │      └── 📂 pages/
+
+> │        └── 📂 blogs/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        ├── 📄 creations.astro
+
+> │        └── 📂 doodles/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │        ├── 📄 index.astro
+
+> │        ├── 📄 og-enhanced.ts
+
+> │        ├── 📄 rss.xml.ts
+
+> │        ├── 📄 search.astro
+
+> │        └── 📂 slides/
+
+> │          ├── 📄 [...slug].astro
+
+> │          ├── 📄 index.astro
+
+> │      └── 📂 schemas/
+
+> │        ├── 📄 blog.ts
+
+> │        ├── 📄 card.ts
+
+> │        ├── 📄 doodle.ts
+
+> │        ├── 📄 slide.ts
+
+> │      └── 📂 styles/
+
+> │        ├── 📄 article.css
+
+> │        ├── 📄 card.css
+
+> │        ├── 📄 global.css
+
+> │        ├── 📄 scrolling-tags.css
+
+> │      └── 📂 themes/
+
+> │        ├── 📄 knowledge-card-themes.ts
+
+> │        ├── 📄 slide-card-themes.ts
+
+> │      └── 📂 types/
+
+> │        ├── 📄 product.ts
+
+> │        ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 qially-web/
+
+> │    ├── 📄 404.html
+
+> │    ├── 📄 LICENSE
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 _redirects
+
+> │    └── 📂 assets/
+
+> │      └── 📂 css/
+
+> │        ├── 📄 styles.css
+
+> │      └── 📂 files/
+
+> │        ├── 📄 balance-sheet-template.xlsx
+
+> │        ├── 📄 emailsignature.html
+
+> │        └── 📂 forms/
+
+> │          └── 📂 uscis/
+
+> │            ├── 📄 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
+
+> │            ├── 📄 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
+
+> │            ├── 📄 Form-I-485.pdf
+
+> │            ├── 📄 Form-I-693.pdf
+
+> │        ├── 📄 income-statement-template.xlsx
+
+> │        ├── 📄 index.md
+
+> │        ├── 📄 payroll-calendar-2026.pdf
+
+> │        ├── 📄 resume.pdf
+
+> │        ├── 📄 tax-prep-checklist.pdf
+
+> │      └── 📂 imgs/
+
+> │        ├── 📄 allegaracasa.jpg
+
+> │        ├── 📄 astrotext.png
+
+> │        ├── 📄 back-master-small.jpg
+
+> │        ├── 📄 business-performance-wins.png
+
+> │        └── 📂 business_tools/
+
+> │          ├── 📄 balance_sheet.svg
+
+> │          ├── 📄 calendar.svg
+
+> │          ├── 📄 capital.svg
+
+> │          ├── 📄 checklist.svg
+
+> │          ├── 📄 funding.svg
+
+> │          ├── 📄 income.svg
+
+> │          ├── 📄 inventory.svg
+
+> │          ├── 📄 invoice.svg
+
+> │          ├── 📄 payroll.svg
+
+> │          ├── 📄 sku.svg
+
+> │        ├── 📄 cassie-boca-x-tbVqkfQCU-unsplash.jpg
+
+> │        ├── 📄 cover.jpg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.png
+
+> │        ├── 📄 favicon.webp
+
+> │        ├── 📄 jesse-gardner-EqdpXeemf58-unsplash.jpg
+
+> │        ├── 📄 jf-martin-Ofs3LjEUcrk-unsplash.jpg
+
+> │        ├── 📄 josh-rose-trYl7JYATH0-unsplash.jpg
+
+> │        ├── 📄 llegaracasa.jpg
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 profile.jpg
+
+> │        ├── 📄 profile.png
+
+> │        ├── 📄 tersius-van-rhyn-xcQWMPm9fG8-unsplash.jpg
+
+> │      └── 📂 js/
+
+> │        ├── 📄 i18n.js
+
+> │        ├── 📄 main.js
+
+> │      └── 📂 vids/
+
+> │        ├── 📄 video-logo.mp4
+
+> │    └── 📂 cody/
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 contact.json
+
+> │    ├── 📄 footer.html
+
+> │    └── 📂 functions/
+
+> │      ├── 📄 [[path]].js
+
+> │    ├── 📄 header.html
+
+> │    ├── 📄 humans.txt
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 js/
+
+> │      ├── 📄 main.js
+
+> │    └── 📂 kb/
+
+> │      └── 📂 accounting-cleanup/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 getting-started/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 irs-notices/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 tax-resolution/
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 legal/
+
+> │      └── 📂 msa/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 privacy/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 terms/
+
+> │        ├── 📄 index.html
+
+> │    ├── 📄 main.js
+
+> │    ├── 📄 manifest.webmanifest
+
+> │    └── 📂 modules/
+
+> │      └── 📂 hr-ops/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 it-ai/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 qisuite/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 taxes/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 tax-prep-2025/
+
+> │          ├── 📄 FormsQRCode.png
+
+> │          ├── 📄 bookingQRCode.png
+
+> │          └── 📂 email-templates/
+
+> │          └── 📂 forms/
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 next-steps/
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 prompts.md
+
+> │          ├── 📄 tax-prep-2025-intake.html
+
+> │          ├── 📄 taxprepqially.jpg
+
+> │        └── 📂 year-end-process/
+
+> │          ├── 📄 index.html
+
+> │    ├── 📄 orchestrate_clarity.py
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 pages/
+
+> │      └── 📂 budgets/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 business_tools/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 chat/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 sales-iq-landing-page-qr-code.png
+
+> │      └── 📂 compliance/
+
+> │        ├── 📄 data-inventory.html
+
+> │        ├── 📄 incident-response.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 internal/
+
+> │          └── 📂 provider-agreements/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 training-logs/
+
+> │            ├── 📄 index.html
+
+> │        ├── 📄 risk-assessment.html
+
+> │        └── 📂 service_animal_gigi/
+
+> │          ├── 📄 Gigi_Certification_Statement.html
+
+> │          ├── 📄 Gigi_Documentation_Pack.md
+
+> │          ├── 📄 Gigi_Documentation_Pack_Print.html
+
+> │          ├── 📄 Gigi_Service_Dog_Training_Manual.md
+
+> │          ├── 📄 Gigi_Services_Dog_Training_Manual_Print.html
+
+> │          ├── 📄 Notice_Service_Animal_Status.html
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 gigi_service_dog_hero.png
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 wisp-core.html
+
+> │      └── 📂 ecard/
+
+> │        ├── 📄 cody.vcf
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 estate-planning/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 letters/
+
+> │        └── 📂 client.wiletvaldo_calderon-ramirez/
+
+> │          ├── 📄 index.html
+
+> │          ├── 📄 infographic.png
+
+> │          ├── 📄 review_audio.m4a
+
+> │        └── 📂 engagement/
+
+> │          ├── 📄 SignForm_URL_QR.png
+
+> │          ├── 📄 engagement_standard.html
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 evansville_inn/
+
+> │          ├── 📄 Notice_Room_Conditions.html
+
+> │      └── 📂 msa/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 portfolio/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 privacy/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 referral/
+
+> │        └── 📂 cashapp/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 quickbooks/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 zoho/
+
+> │          ├── 📄 index.html
+
+> │      └── 📂 resources/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 review/
+
+> │        ├── 📄 index.html
+
+> │        ├── 📄 qrcode_www.google.com.png
+
+> │      └── 📂 services/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 showcases/
+
+> │        └── 📂 20000-swing/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 videos.html
+
+> │      └── 📂 terms/
+
+> │        ├── 📄 index.html
+
+> │    └── 📂 portfolio/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 public/
+
+> │    └── 📂 resources/
+
+> │      └── 📂 compliance/
+
+> │        └── 📂 data-inventory/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 incident-response/
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 provider-agreements/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 risk-assessment/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 training-logs/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 wisp/
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 robots.txt
+
+> │    ├── 📄 service-worker.js
+
+> │    └── 📂 services/
+
+> │    ├── 📄 services-full.json
+
+> │      └── 📂 automation-ai/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 client-portals/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 hr-operations/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 tax-preparation/
+
+> │        └── 📂 email-templates/
+
+> │          ├── 📄 email-01-simple-w2.html
+
+> │          ├── 📄 email-02-self-employed.html
+
+> │          ├── 📄 email-03-complex.html
+
+> │          ├── 📄 email-04-itin.html
+
+> │          ├── 📄 email-05-business.html
+
+> │          ├── 📄 email-06-confirmation-docs.html
+
+> │          ├── 📄 email-generic-next-steps.html
+
+> │          ├── 📄 email-intake-received.html
+
+> │        └── 📂 forms/
+
+> │          ├── 📄 business.html
+
+> │          ├── 📄 complex.html
+
+> │          ├── 📄 head-of-household.html
+
+> │          ├── 📄 itin.html
+
+> │          ├── 📄 self-employed.html
+
+> │          ├── 📄 simple-w2.html
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 intake/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 next-steps/
+
+> │          └── 📂 business-return/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 complex-return/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 head-of-household/
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │          └── 📂 itin/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 self-employed/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 simple-w2/
+
+> │            ├── 📄 index.html
+
+> │        ├── 📄 qr-code.html
+
+> │        ├── 📄 tax-prep-2025-booking.html
+
+> │    ├── 📄 sitemap.xml
+
+> │    └── 📂 src/
+
+> │      └── 📂 app/
+
+> │      └── 📂 components/
+
+> │      └── 📂 content/
+
+> │      └── 📂 lib/
+
+> │      └── 📂 styles/
+
+> │      └── 📂 types/
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 qsaysit/
+
+> │  └── 📂 qsaysit-blog/
+
+> │  └── 📂 qsaysit-web/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 assets/
+
+> │      └── 📂 css/
+
+> │        ├── 📄 styles.css
+
+> │      └── 📂 img/
+
+> │        └── 📂 og/
+
+> │        └── 📂 posts/
+
+> │        └── 📂 series/
+
+> │      └── 📂 js/
+
+> │        ├── 📄 search.js
+
+> │        ├── 📄 site.js
+
+> │    ├── 📄 build.py
+
+> │    └── 📂 content/
+
+> │      └── 📂 data/
+
+> │        ├── 📄 featured.yaml
+
+> │        ├── 📄 nav.yaml
+
+> │        ├── 📄 site.yaml
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 about.md
+
+> │        ├── 📄 contact.md
+
+> │      └── 📂 posts/
+
+> │        ├── 📄 2026-03-24_first_post.md
+
+> │      └── 📂 series/
+
+> │        ├── 📄 mirror-series.md
+
+> │        ├── 📄 notebooklm-deep-dives.md
+
+> │        ├── 📄 the-onion-effect.md
+
+> │    └── 📂 public/
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 robots.txt
+
+> │      ├── 📄 social-preview.png
+
+> │    ├── 📄 requirements.txt
+
+> │    └── 📂 site/
+
+> │      └── 📂 about/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 assets/
+
+> │        └── 📂 css/
+
+> │          ├── 📄 styles.css
+
+> │        └── 📂 img/
+
+> │          └── 📂 og/
+
+> │          └── 📂 posts/
+
+> │          └── 📂 series/
+
+> │        └── 📂 js/
+
+> │          ├── 📄 search.js
+
+> │          ├── 📄 site.js
+
+> │      └── 📂 contact/
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 favicon.ico
+
+> │      ├── 📄 index.html
+
+> │      └── 📂 posts/
+
+> │        └── 📂 first-post/
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 robots.txt
+
+> │      └── 📂 series/
+
+> │        ├── 📄 index.html
+
+> │        └── 📂 mirror-series/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 notebooklm-deep-dives/
+
+> │          ├── 📄 index.html
+
+> │        └── 📂 the-onion-effect/
+
+> │          ├── 📄 index.html
+
+> │      ├── 📄 social-preview.png
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 archive.html
+
+> │      ├── 📄 base.html
+
+> │      └── 📂 components/
+
+> │        ├── 📄 footer.html
+
+> │        ├── 📄 header.html
+
+> │        ├── 📄 infographic-block.html
+
+> │        ├── 📄 notebooklm-block.html
+
+> │        ├── 📄 post-card.html
+
+> │        ├── 📄 youtube-embed.html
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 page.html
+
+> │      ├── 📄 post.html
+
+> │      ├── 📄 series.html
+
+> │    ├── 📄 astro.config.mjs
+
+> │    └── 📂 docs/
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 scripts/
+
+> │      ├── 📄 legacy_build.py
+
+> │    └── 📂 site/
+
+> │      └── 📂 assets/
+
+> │        ├── 📄 style.css
+
+> │        ├── 📄 styles.css
+
+> │      ├── 📄 blog.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 src/
+
+> │      └── 📂 content/
+
+> │        ├── 📄 config.ts
+
+> │      └── 📂 pages/
+
+> │        ├── 📄 index.astro
+
+> │        └── 📂 posts/
+
+> │          ├── 📄 [...id].astro
+
+> │    └── 📂 templates/
+
+> │      └── 📂 2026-02-19_post-title/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 brief.m4a
+
+> │          ├── 📄 critique.m4a
+
+> │          ├── 📄 debate.m4a
+
+> │          ├── 📄 deepdive.m4a
+
+> │          ├── 📄 explainer.mp4
+
+> │          ├── 📄 hero.jpg
+
+> │          ├── 📄 infographic.jpg
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 post_template.md
+
+> │    └── 📂 tools/
+
+> │      ├── 📄 build.py
+
+> │    ├── 📄 tsconfig.json
+
+> │  └── 📂 qsjournal/
+
+> │    └── 📂 backend/
+
+> │      ├── 📄 app.js
+
+> │      ├── 📄 eslint.config.js
+
+> │      └── 📂 lib/
+
+> │        └── 📂 helpers/
+
+> │          ├── 📄 area-widgets.js
+
+> │          ├── 📄 color-options.js
+
+> │          ├── 📄 typography-options.js
+
+> │        └── 📂 schema-mixins/
+
+> │          ├── 📄 card-fields.js
+
+> │          ├── 📄 hero-fields.js
+
+> │          ├── 📄 link-fields.js
+
+> │          ├── 📄 slideshow-fields.js
+
+> │      └── 📂 modules/
+
+> │        └── 📂 @apostrophecms/
+
+> │          └── 📂 admin-bar/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 asset/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 attachment/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 express/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 global/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 home-page/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 views/
+
+> │              ├── 📄 page.html
+
+> │          └── 📂 i18n/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 image-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 layout-column-widget/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 page/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 views/
+
+> │              ├── 📄 notFound.html
+
+> │          └── 📂 rich-text-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 settings/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 user/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 video-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │        └── 📂 accordion-widget/
+
+> │          ├── 📄 index.js
+
+> │          └── 📂 public/
+
+> │            ├── 📄 preview.svg
+
+> │        └── 📂 article/
+
+> │        └── 📂 article-page/
+
+> │          ├── 📄 index.js
+
+> │          ├── 📄 index.js
+
+> │        └── 📂 author/
+
+> │          ├── 📄 index.js
+
+> │        └── 📂 card-widget/
+
+> │          ├── 📄 index.js
+
+> │          └── 📂 public/
+
+> │            ├── 📄 preview.svg
+
+> │        └── 📂 default-page/
+
+> │          ├── 📄 index.js
+
+> │        └── 📂 hero-widget/
+
+> │          ├── 📄 index.js
+
+> │          └── 📂 public/
+
+> │            ├── 📄 preview.svg
+
+> │        └── 📂 link-widget/
+
+> │          ├── 📄 index.js
+
+> │          └── 📂 public/
+
+> │            ├── 📄 preview.svg
+
+> │        └── 📂 slideshow-widget/
+
+> │          ├── 📄 index.js
+
+> │          └── 📂 public/
+
+> │            ├── 📄 preview.svg
+
+> │      ├── 📄 package-lock.json
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 load-starter-content
+
+> │        ├── 📄 update-starter-content
+
+> │      └── 📂 views/
+
+> │        ├── 📄 layout.html
+
+> │    └── 📂 frontend/
+
+> │      ├── 📄 Procfile
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 postcss.config.js
+
+> │      └── 📂 public/
+
+> │        └── 📂 fonts/
+
+> │          └── 📂 fontawesome/
+
+> │            ├── 📄 fa-brands-400.woff2
+
+> │            ├── 📄 fa-regular-400.woff2
+
+> │            ├── 📄 fa-solid-900.woff2
+
+> │            ├── 📄 fa-v4compatibility.woff2
+
+> │        └── 📂 images/
+
+> │          ├── 📄 image-widget-placeholder.jpg
+
+> │          ├── 📄 missing-icon.svg
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 VideoWidget.js
+
+> │          ├── 📄 dynamic-navbar-padding.js
+
+> │      └── 📂 src/
+
+> │        └── 📂 components/
+
+> │          ├── 📄 ArticlesFilter.astro
+
+> │          ├── 📄 Figure.astro
+
+> │          ├── 📄 ImageLink.astro
+
+> │          ├── 📄 Pagination.astro
+
+> │        ├── 📄 env.d.ts
+
+> │        └── 📂 layouts/
+
+> │          └── 📂 article-layouts/
+
+> │            ├── 📄 HeroGrid.astro
+
+> │            ├── 📄 ListAside.astro
+
+> │            ├── 📄 ShowFullWidth.astro
+
+> │            ├── 📄 ShowMagazine.astro
+
+> │            ├── 📄 ShowMinimal.astro
+
+> │            ├── 📄 Standard.astro
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 attachments.js
+
+> │          ├── 📄 get-layout-areas.js
+
+> │          ├── 📄 homepage-defaults.js
+
+> │          ├── 📄 use-site-config.js
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 [...slug].astro
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 app.css
+
+> │          ├── 📄 main.scss
+
+> │        └── 📂 templates/
+
+> │          ├── 📄 ArticleIndexPage.astro
+
+> │          ├── 📄 ArticleShowPage.astro
+
+> │          ├── 📄 DefaultPage.astro
+
+> │          ├── 📄 HomePage.astro
+
+> │          ├── 📄 index.js
+
+> │        └── 📂 widgets/
+
+> │          ├── 📄 AccordionWidget.astro
+
+> │          ├── 📄 CardWidget.astro
+
+> │          ├── 📄 FileWidget.astro
+
+> │          ├── 📄 HeroWidget.astro
+
+> │          ├── 📄 ImageWidget.astro
+
+> │          ├── 📄 LinkWidget.astro
+
+> │          ├── 📄 RichTextWidget.astro
+
+> │          ├── 📄 SlideshowWidget.astro
+
+> │          ├── 📄 VideoWidget.astro
+
+> │          ├── 📄 index.js
+
+> │      ├── 📄 tsconfig.json
+
+> └── 📂 supabase/
+
+> ├── 📄 tailwind.config.ts
+
+> ├── 📄 tsconfig.base.json
+
+> ├── 📄 tsconfig.root.json
+
+> ├── 📄 turbo.json
+
+> ├── 📄 vizvibe.mmd
+
+> └── 📂 workers/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 _shared/
+
+> │    ├── 📄 constitution.ts
+
+> │    ├── 📄 heartbeat.ts
+
+> │    ├── 📄 ignore.ts
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 embedder/
+
+> │    ├── 📄 README.MD
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 embedding/
+
+> │    ├── 📄 README.MD
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 graph/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 ingestion/
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 worker_ingestion.ts
+
+> │    ├── 📄 wrangler (2).toml
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 README_API.md
+
+> │    ├── 📄 README_DEV.md
+
+> │    ├── 📄 README_SECRETS.md
+
+> │    ├── 📄 VERIFY_SETUP.md
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │    ├── 📄 sync-secrets.sh
+
+> │    └── 📂 tests/
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 metadata_naming/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 worker_metadata_naming.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 orchestrator/
+
+> │    ├── 📄 OrchestratorState (2).ts
+
+> │    ├── 📄 OrchestratorState.ts
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 migrations/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 qios_06_workers_orchestrator (2).canvas
+
+> │    ├── 📄 qios_06_workers_orchestrator.canvas
+
+> │    └── 📂 src/
+
+> │      ├── 📄 OrchestratorState.ts
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 worker_orchestrator.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  ├── 📄 package.json
+
+> │  └── 📂 repair/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 self_heal/
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 worker_self_heal.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 semantic_router/
+
+> │    ├── 📄 index (2).html
+
+> │    ├── 📄 index (3).html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 worker.ts
+
+> │    ├── 📄 worker_semantic_router.ts
+
+> │    ├── 📄 wrangler.toml
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 config.toml
+
+> │    └── 📂 functions/
+
+> │      └── 📂 qivault-ingest/
+
+> │        ├── 📄 index.ts
+
+> │    └── 📂 migrations/
+
+> │      └── 📂 qicase_meta/
+
+> │        ├── 📄 0000_snapshot.json
+
+> │        ├── 📄 _journal.json
+
+> │    └── 📂 seed/
+
+> │    └── 📂 snippets/
+
+> │      ├── 📄 is_admin.sql
+
+> │  └── 📄 worker.py
+
 > ```
 
 ### Assistant
@@ -37221,80 +47861,154 @@ canonical_ref: ""
 > LETS BUILD THE WORKER, WORKERS OR APIS FOR CLOUDFLARE QUICKLY TO GET THEM CONNECTED.
 
 ### User
-> Listed directory QiLabs
-> Viewed vizvibe.mmd:1-139
-> Viewed package.json
-> Listed directory apps
-> Listed directory workers
-> Listed directory qione-portal
-> Viewed package.json:1-40
-> Viewed wrangler.toml:1-11
-> Listed directory src
-> Viewed App.tsx:1-121
-> Listed directory lib
-> Listed directory features
-> Listed directory pages
-> Viewed AuthUI.tsx:1-137
-> Viewed PortalLayout.tsx:1-178
-> Viewed Dashboard.tsx:1-210
-> Viewed supabase.ts:1-36
-> Listed directory supabase
-> Listed directory packages
-> Searched for "tenant"
-> Searched for "Household"
-> Listed directory auth
-> Created AuthContext.tsx
-> Edited App.tsx
-> Created Members.tsx
-> Edited Members.tsx
-> Edited PortalLayout.tsx
-> Ran command: `pnpm build`
-> Edited package.json
-> Ran command: `pnpm build`
-> Viewed vite.config.ts:1-21
-> Ran command: `pnpm install`
-> Viewed pnpm-workspace.yaml
-> Edited pnpm-workspace.yaml
-> Ran command: `pnpm install`
-> Ran command: `pnpm install --ignore-workspace`
-> Ran command: `pnpm run build`
-> Viewed App.tsx:1-106
-> Ran command: `pnpm run dev`
-> Edited package.json
-> Ran command: `pnpm install --ignore-workspace && pnpm run build`
-> Ran command: `pnpm install --ignore-workspace ; pnpm run build`
-> Listed directory QiLabs
-> Viewed vizvibe.mmd:1-139
-> Edited vizvibe.mmd
-> 
-> The complete authentication architecture and member management system has been successfully implemented and tested! Everything is fully compiling, tested on Vite dev, and prepared for Cloudflare Pages.
-> 
-> Here is a summary of the finalized architecture and fixes made across the repository:
-> 
-> 1. **New UI and Auth Management (`Members.tsx`)**: 
->    - I built the new `/home` page (`src/pages/Members.tsx`) dedicated to active tenant management.
->    - It intelligently lists members inside the current specific tenant using your Supabase configurations (`tenant_members` schema). If the table hasn't been added yet, it'll run gracefully using fallback simulated data.
->    - Included UI for fetching tenant roles, adding new member invitations, and deleting tenant members. All UI operates only on the `activeTenant` context preventing cross-tenant data leaks. 
-> 
-> 2. **Tenant Switching & Session Injection (`PortalLayout.tsx`)**:
->    - Integrated the layout directly with `useAuth` hook rather than direct Supabase bindings.
->    - Transformed the User dropdown into a comprehensive Account menu – it now provides a full **Active Space Switcher**. By clicking between assigned tenants on the menu, users can completely change the active `TenantContext` in real-time, locking out data fetching from the previously selected tenant.
->    - Bound sign-out directly to the `signOut()` method in `AuthContext`, handling clean local storage wiping. 
-> 
-> 3. **Cloudflare Deployment Readiness (Build Fixes)**:
->    - While building, an empty root workspace definition and a `rolldown` crash from the newly experimental Vite version (v8 release candidates picked up via "latest") caused your `pnpm build` pipeline to fail unexpectedly on Windows. 
->    - I rebuilt your workspace files and locked `vite` and `@vitejs/plugin-react` to stabler production versions (`^6.0.0` and `^4.3.4`).
->    - Re-ran the build pipeline manually inside the app, and the output bundles generated securely inside the `dist` folder: `✓ built in 11.61s`.
-> 
-> ### How to Deploy to Cloudflare Now
-> Because the build issues have been resolved, it's ready to go. You can execute:
-> 
-> ```bash
-> cd c:\QiLabs\apps\qione-portal
-> npx wrangler pages deploy dist --project-name qione-portal
-> ```
-> *(Optionally, if you already have the GitHub integration lined up for Cloudflare Pages, pushing this branch right now will trigger a perfect and stable build).*
-> 
+> Listed directory QiLabs
+
+> Viewed vizvibe.mmd:1-139
+
+> Viewed package.json
+
+> Listed directory apps
+
+> Listed directory workers
+
+> Listed directory qione-portal
+
+> Viewed package.json:1-40
+
+> Viewed wrangler.toml:1-11
+
+> Listed directory src
+
+> Viewed App.tsx:1-121
+
+> Listed directory lib
+
+> Listed directory features
+
+> Listed directory pages
+
+> Viewed AuthUI.tsx:1-137
+
+> Viewed PortalLayout.tsx:1-178
+
+> Viewed Dashboard.tsx:1-210
+
+> Viewed supabase.ts:1-36
+
+> Listed directory supabase
+
+> Listed directory packages
+
+> Searched for "tenant"
+
+> Searched for "Household"
+
+> Listed directory auth
+
+> Created AuthContext.tsx
+
+> Edited App.tsx
+
+> Created Members.tsx
+
+> Edited Members.tsx
+
+> Edited PortalLayout.tsx
+
+> Ran command: `pnpm build`
+
+> Edited package.json
+
+> Ran command: `pnpm build`
+
+> Viewed vite.config.ts:1-21
+
+> Ran command: `pnpm install`
+
+> Viewed pnpm-workspace.yaml
+
+> Edited pnpm-workspace.yaml
+
+> Ran command: `pnpm install`
+
+> Ran command: `pnpm install --ignore-workspace`
+
+> Ran command: `pnpm run build`
+
+> Viewed App.tsx:1-106
+
+> Ran command: `pnpm run dev`
+
+> Edited package.json
+
+> Ran command: `pnpm install --ignore-workspace && pnpm run build`
+
+> Ran command: `pnpm install --ignore-workspace ; pnpm run build`
+
+> Listed directory QiLabs
+
+> Viewed vizvibe.mmd:1-139
+
+> Edited vizvibe.mmd
+
+> 
+
+> The complete authentication architecture and member management system has been successfully implemented and tested! Everything is fully compiling, tested on Vite dev, and prepared for Cloudflare Pages.
+
+> 
+
+> Here is a summary of the finalized architecture and fixes made across the repository:
+
+> 
+
+> 1. **New UI and Auth Management (`Members.tsx`)**: 
+
+>    - I built the new `/home` page (`src/pages/Members.tsx`) dedicated to active tenant management.
+
+>    - It intelligently lists members inside the current specific tenant using your Supabase configurations (`tenant_members` schema). If the table hasn't been added yet, it'll run gracefully using fallback simulated data.
+
+>    - Included UI for fetching tenant roles, adding new member invitations, and deleting tenant members. All UI operates only on the `activeTenant` context preventing cross-tenant data leaks. 
+
+> 
+
+> 2. **Tenant Switching & Session Injection (`PortalLayout.tsx`)**:
+
+>    - Integrated the layout directly with `useAuth` hook rather than direct Supabase bindings.
+
+>    - Transformed the User dropdown into a comprehensive Account menu – it now provides a full **Active Space Switcher**. By clicking between assigned tenants on the menu, users can completely change the active `TenantContext` in real-time, locking out data fetching from the previously selected tenant.
+
+>    - Bound sign-out directly to the `signOut()` method in `AuthContext`, handling clean local storage wiping. 
+
+> 
+
+> 3. **Cloudflare Deployment Readiness (Build Fixes)**:
+
+>    - While building, an empty root workspace definition and a `rolldown` crash from the newly experimental Vite version (v8 release candidates picked up via "latest") caused your `pnpm build` pipeline to fail unexpectedly on Windows. 
+
+>    - I rebuilt your workspace files and locked `vite` and `@vitejs/plugin-react` to stabler production versions (`^6.0.0` and `^4.3.4`).
+
+>    - Re-ran the build pipeline manually inside the app, and the output bundles generated securely inside the `dist` folder: `✓ built in 11.61s`.
+
+> 
+
+> ### How to Deploy to Cloudflare Now
+
+> Because the build issues have been resolved, it's ready to go. You can execute:
+
+> 
+
+> ```bash
+
+> cd c:\QiLabs\apps\qione-portal
+
+> npx wrangler pages deploy dist --project-name qione-portal
+
+> ```
+
+> *(Optionally, if you already have the GitHub integration lined up for Cloudflare Pages, pushing this branch right now will trigger a perfect and stable build).*
+
+> 
+
 > Finally, I recorded this implementation natively to the ongoing `vizvibe.mmd` project history trajectory! Is there anything else you want to implement inside the AuthContext or test before completing deployment?
 
 ### Assistant
@@ -38680,37 +49394,68 @@ canonical_ref: ""
 > If you want, I’ll turn this into a **single corrected Gemini/Codex prompt** that says exactly what to fix and what not to lie about.
 
 ### User
-> Viewed client.ts:1-116
-> Edited qione-endpoints.ts
-> Edited types.ts
-> Edited client.ts
-> Edited qione-portal_endpoint_manifest.json
-> 
-> **Normalize this draft. Fix naming, auth transport, and response envelope. Implement only the first 6 routes end-to-end.**
-> 
-> I have completely scrapped the contradictory scaffolding and aligned the frontend architecture to your exact specifications. This is now a clean, safe foundation for the Edge Gateway. 
-> 
-> Here is what was fixed:
-> 
-> ### 1) Flattened the Contract
-> `src/lib/contracts/qione-endpoints.ts` was entirely rewritten. `ENDPOINTS` is now a flat, non-nested, type-safe constant mapping directly to the actual routing paths without ambiguity.
-> 
-> ### 2) Fixed Auth Transport
-> `src/lib/api/client.ts` no longer uses arbitrary browser credentials for its auth model. It has been restructured to explicitly pull the session via `supabase.auth.getSession()` and inject `Authorization: Bearer <token>` headers into every outbound fetch request exactly as the backend expects.
-> 
-> ### 3) Fixed Response Envelope Double-Wrapping
-> The `ApiEnvelope<T>` pattern has been fully introduced in `src/lib/api/types.ts`.
-> The client now inherently trusts the Worker to return `{ data, error }` payloads and passes them through directly, preventing the `{ data: { data: ... } }` object drift. 
-> 
-> ### 4) Restricted the Implementation Scope (First 6 Routes Only)
-> The `qione-portal_endpoint_manifest.json` reporting manifest and the frontend `apiClient` instance have been aggressively purged of any "fake progress." They strictly map only what is being safely executed in the first pass:
-> - `GET /health`
-> - `GET /v1/me`
-> - `GET /v1/tenants`
-> - `POST /v1/tenants/active`
-> - `GET /v1/admin/tenants/:tenantId/members`
-> - `POST /v1/admin/tenants/:tenantId/members/invite` *(Marked correctly as stubbed pending backend RPC)*.
-> 
+> Viewed client.ts:1-116
+
+> Edited qione-endpoints.ts
+
+> Edited types.ts
+
+> Edited client.ts
+
+> Edited qione-portal_endpoint_manifest.json
+
+> 
+
+> **Normalize this draft. Fix naming, auth transport, and response envelope. Implement only the first 6 routes end-to-end.**
+
+> 
+
+> I have completely scrapped the contradictory scaffolding and aligned the frontend architecture to your exact specifications. This is now a clean, safe foundation for the Edge Gateway. 
+
+> 
+
+> Here is what was fixed:
+
+> 
+
+> ### 1) Flattened the Contract
+
+> `src/lib/contracts/qione-endpoints.ts` was entirely rewritten. `ENDPOINTS` is now a flat, non-nested, type-safe constant mapping directly to the actual routing paths without ambiguity.
+
+> 
+
+> ### 2) Fixed Auth Transport
+
+> `src/lib/api/client.ts` no longer uses arbitrary browser credentials for its auth model. It has been restructured to explicitly pull the session via `supabase.auth.getSession()` and inject `Authorization: Bearer <token>` headers into every outbound fetch request exactly as the backend expects.
+
+> 
+
+> ### 3) Fixed Response Envelope Double-Wrapping
+
+> The `ApiEnvelope<T>` pattern has been fully introduced in `src/lib/api/types.ts`.
+
+> The client now inherently trusts the Worker to return `{ data, error }` payloads and passes them through directly, preventing the `{ data: { data: ... } }` object drift. 
+
+> 
+
+> ### 4) Restricted the Implementation Scope (First 6 Routes Only)
+
+> The `qione-portal_endpoint_manifest.json` reporting manifest and the frontend `apiClient` instance have been aggressively purged of any "fake progress." They strictly map only what is being safely executed in the first pass:
+
+> - `GET /health`
+
+> - `GET /v1/me`
+
+> - `GET /v1/tenants`
+
+> - `POST /v1/tenants/active`
+
+> - `GET /v1/admin/tenants/:tenantId/members`
+
+> - `POST /v1/admin/tenants/:tenantId/members/invite` *(Marked correctly as stubbed pending backend RPC)*.
+
+> 
+
 > This implementation wave is enough to prove the frontend can load a user, execute tenant-switching, list members, and initiate a secure member invitation cleanly. All downstream archive and system flows remain safely deferred out of the contract until this foundational session proxy works perfectly.
 
 ### Assistant

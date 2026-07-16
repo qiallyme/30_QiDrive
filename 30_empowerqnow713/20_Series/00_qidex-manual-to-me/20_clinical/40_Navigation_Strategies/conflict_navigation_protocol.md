@@ -4,15 +4,15 @@ title: Conflict Navigation Protocol
 slug: conflict_navigation_protocol
 summary: What this strategy is designed to support - navigating conflicts without triggering shutdown or escalation
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Navigation strategy for managing high-conflict situations
-tags:
+tags: []
   - strategy
   - communication
   - conflict
   - protocol
   - empowerqnow713
-keywords:
+keywords: []
   - conflict
   - navigation
   - protocol
@@ -26,14 +26,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.5.1
 category: navigation_strategy
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: cedbb87c09604c98bf85cc9602693e7b
 canonical_ref: ""
 template_key: master-template
 ---

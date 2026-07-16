@@ -3,9 +3,9 @@ layout: page
 title: "Eviction letter draft"
 slug: "eviction_letter_draft"
 created_at: "2025-12-09 11:21:24"
-updated_at: "2025-12-09 11:21:24"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

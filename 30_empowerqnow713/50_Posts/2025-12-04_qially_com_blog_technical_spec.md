@@ -4,6 +4,23 @@ date: 2025-12-04
 owner: "Cody Rice-Velasquez"
 project: "qiAlly.com Public Blog"
 status: "v1 - skeleton spec"
+layout: page
+slug: qially-com-blog-exposure-system-technical-spec
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ae9eb032ec1c4b3f988add45d6206d3e
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 ## 1. Goals & Constraints

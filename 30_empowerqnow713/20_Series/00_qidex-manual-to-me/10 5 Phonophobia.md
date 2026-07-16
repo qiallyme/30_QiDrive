@@ -1,3 +1,26 @@
+---
+layout: page
+title: 10 5 Phonophobia
+slug: 10-5-phonophobia
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: bb8323cab0eb41d4acd9f507fd135d00
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 10.5 Phonophobia
 
 <aside>

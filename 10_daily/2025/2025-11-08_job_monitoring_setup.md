@@ -3,9 +3,9 @@ layout: page
 title: "Job monitoring setup"
 slug: "job_monitoring_setup"
 created_at: "2025-11-08 19:24:16"
-updated_at: "2025-11-08 19:24:16"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

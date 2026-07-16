@@ -3,10 +3,10 @@ layout: page
 title: 1 5 Personality NTFJ
 slug: 1_5_personality_ntfj
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - intake
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: qa3b5ace49de9
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 958d7e59890c4d70b4a9658d25495a1d
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Index Fund Investment Apps"
 slug: "index_fund_investment_apps"
 created_at: "2026-05-18 11:31:16"
-updated_at: "2026-05-18 11:31:16"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1158,133 +1158,260 @@ canonical_ref: ""
 > That way Firefly becomes the template for every other app. That’s the leverage move.
 
 ### User
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/stacks/firefly/{import,backups}
-> [sudo] password for qiadmin: 
-> qiadmin@qiserver:~$ cd /srv/qios/stacks/firefly
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ APP_KEY=$(openssl rand -hex 16)
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ STATIC_CRON_TOKEN=$(openssl rand -hex 16)
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ DB_PASSWORD=$(openssl rand -hex 24)
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .db.env <<EOF
-> > MYSQL_RANDOM_ROOT_PASSWORD=yes
-> > MYSQL_USER=firefly
-> > MYSQL_PASSWORD=${DB_PASSWORD}
-> > MYSQL_DATABASE=firefly
-> > EOF
-> bash: .db.env: Permission denied
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .env <<EOF
-> > APP_ENV=local
-> > APP_DEBUG=false
-> > SITE_OWNER=crice4485@gmail.com
-> > APP_KEY=${APP_KEY}
-> > DEFAULT_LANGUAGE=en_US
-> > DEFAULT_LOCALE=equal
-> > TZ=America/Chicago
-> > TRUSTED_PROXIES=**
-> > LOG_CHANNEL=stack
-> > 
-> > DB_CONNECTION=mysql
-> > DB_HOST=db
-> > DB_PORT=3306
-> > DB_DATABASE=firefly
-> > DB_USERNAME=firefly
-> > DB_PASSWORD=${DB_PASSWORD}
-> > 
-> > APP_URL=http://127.0.0.1:8087
-> > STATIC_CRON_TOKEN=${STATIC_CRON_TOKEN}
-> > ENABLE_EXTERNAL_MAP=false
-> > EOF
-> bash: .env: Permission denied
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .importer.env <<EOF
-> > TZ=America/Chicago
-> > FIREFLY_III_URL=http://app:8080
-> > VANITY_URL=http://127.0.0.1:8087
-> > TRUSTED_PROXIES=**
-> > EOF
-> bash: .importer.env: Permission denied
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > docker-compose.yml <<'EOF'
-> > services:
-> >   app:
-> >     image: fireflyiii/core:latest
-> >     hostname: app
-> >     container_name: firefly_iii_core
-> >     restart: unless-stopped
-> >     networks:
-> >       - firefly_iii
-> >     volumes:
-> >       - firefly_iii_upload:/var/www/html/storage/upload
-> >     env_file:
-> >       - .env
-> >     ports:
-> >       - "127.0.0.1:8087:8080"
-> >     depends_on:
-> >       - db
-> > 
-> >   db:
-> >     image: mariadb:lts
-> >     hostname: db
-> >     container_name: firefly_iii_db
-> >     restart: unless-stopped
-> >     networks:
-> >       - firefly_iii
-> >     env_file:
-> >       - .db.env
-> >     volumes:
-> >       - firefly_iii_db:/var/lib/mysql
-> > 
-> >   importer:
-> >     image: fireflyiii/data-importer:latest
-> >     hostname: importer
-> >     container_name: firefly_iii_importer
-> >     restart: unless-stopped
-> >     networks:
-> >       - firefly_iii
-> >     volumes:
-> >       - ./import:/import
-> >     env_file:
-> >       - .importer.env
-> >     ports:
-> >       - "127.0.0.1:8088:8080"
-> >     depends_on:
-> >       - app
-> > 
-> >   cron:
-> >     image: alpine
-> >     container_name: firefly_iii_cron
-> >     restart: unless-stopped
-> >     env_file:
-> >       - .env
-> >     command:
-> >       - sh
-> >       - -c
-> >       - |
-> >         apk add --no-cache tzdata wget
-> >         ln -snf /usr/share/zoneinfo/$$TZ /etc/localtime || true
-> >         echo "0 3 * * * wget -qO- http://app:8080/api/v1/cron/$$STATIC_CRON_TOKEN; echo" | crontab -
-> >         crond -f -L /dev/stdout
-> >     networks:
-> >       - firefly_iii
-> >     depends_on:
-> >       - app
-> > 
-> > volumes:
-> >   firefly_iii_upload:
-> >   firefly_iii_db:
-> > 
-> > networks:
-> >   firefly_iii:
-> >     driver: bridge
-> > EOF
-> bash: docker-compose.yml: Permission denied
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose pull
-> no configuration file provided: not found
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose up -d
-> no configuration file provided: not found
-> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose ps
-> no configuration file provided: not found
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ sudo mkdir -p /srv/qios/stacks/firefly/{import,backups}
+
+> [sudo] password for qiadmin: 
+
+> qiadmin@qiserver:~$ cd /srv/qios/stacks/firefly
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ APP_KEY=$(openssl rand -hex 16)
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ STATIC_CRON_TOKEN=$(openssl rand -hex 16)
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ DB_PASSWORD=$(openssl rand -hex 24)
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .db.env <<EOF
+
+> > MYSQL_RANDOM_ROOT_PASSWORD=yes
+
+> > MYSQL_USER=firefly
+
+> > MYSQL_PASSWORD=${DB_PASSWORD}
+
+> > MYSQL_DATABASE=firefly
+
+> > EOF
+
+> bash: .db.env: Permission denied
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .env <<EOF
+
+> > APP_ENV=local
+
+> > APP_DEBUG=false
+
+> > SITE_OWNER=crice4485@gmail.com
+
+> > APP_KEY=${APP_KEY}
+
+> > DEFAULT_LANGUAGE=en_US
+
+> > DEFAULT_LOCALE=equal
+
+> > TZ=America/Chicago
+
+> > TRUSTED_PROXIES=**
+
+> > LOG_CHANNEL=stack
+
+> > 
+
+> > DB_CONNECTION=mysql
+
+> > DB_HOST=db
+
+> > DB_PORT=3306
+
+> > DB_DATABASE=firefly
+
+> > DB_USERNAME=firefly
+
+> > DB_PASSWORD=${DB_PASSWORD}
+
+> > 
+
+> > APP_URL=http://127.0.0.1:8087
+
+> > STATIC_CRON_TOKEN=${STATIC_CRON_TOKEN}
+
+> > ENABLE_EXTERNAL_MAP=false
+
+> > EOF
+
+> bash: .env: Permission denied
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > .importer.env <<EOF
+
+> > TZ=America/Chicago
+
+> > FIREFLY_III_URL=http://app:8080
+
+> > VANITY_URL=http://127.0.0.1:8087
+
+> > TRUSTED_PROXIES=**
+
+> > EOF
+
+> bash: .importer.env: Permission denied
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ cat > docker-compose.yml <<'EOF'
+
+> > services:
+
+> >   app:
+
+> >     image: fireflyiii/core:latest
+
+> >     hostname: app
+
+> >     container_name: firefly_iii_core
+
+> >     restart: unless-stopped
+
+> >     networks:
+
+> >       - firefly_iii
+
+> >     volumes:
+
+> >       - firefly_iii_upload:/var/www/html/storage/upload
+
+> >     env_file:
+
+> >       - .env
+
+> >     ports:
+
+> >       - "127.0.0.1:8087:8080"
+
+> >     depends_on:
+
+> >       - db
+
+> > 
+
+> >   db:
+
+> >     image: mariadb:lts
+
+> >     hostname: db
+
+> >     container_name: firefly_iii_db
+
+> >     restart: unless-stopped
+
+> >     networks:
+
+> >       - firefly_iii
+
+> >     env_file:
+
+> >       - .db.env
+
+> >     volumes:
+
+> >       - firefly_iii_db:/var/lib/mysql
+
+> > 
+
+> >   importer:
+
+> >     image: fireflyiii/data-importer:latest
+
+> >     hostname: importer
+
+> >     container_name: firefly_iii_importer
+
+> >     restart: unless-stopped
+
+> >     networks:
+
+> >       - firefly_iii
+
+> >     volumes:
+
+> >       - ./import:/import
+
+> >     env_file:
+
+> >       - .importer.env
+
+> >     ports:
+
+> >       - "127.0.0.1:8088:8080"
+
+> >     depends_on:
+
+> >       - app
+
+> > 
+
+> >   cron:
+
+> >     image: alpine
+
+> >     container_name: firefly_iii_cron
+
+> >     restart: unless-stopped
+
+> >     env_file:
+
+> >       - .env
+
+> >     command:
+
+> >       - sh
+
+> >       - -c
+
+> >       - |
+
+> >         apk add --no-cache tzdata wget
+
+> >         ln -snf /usr/share/zoneinfo/$$TZ /etc/localtime || true
+
+> >         echo "0 3 * * * wget -qO- http://app:8080/api/v1/cron/$$STATIC_CRON_TOKEN; echo" | crontab -
+
+> >         crond -f -L /dev/stdout
+
+> >     networks:
+
+> >       - firefly_iii
+
+> >     depends_on:
+
+> >       - app
+
+> > 
+
+> > volumes:
+
+> >   firefly_iii_upload:
+
+> >   firefly_iii_db:
+
+> > 
+
+> > networks:
+
+> >   firefly_iii:
+
+> >     driver: bridge
+
+> > EOF
+
+> bash: docker-compose.yml: Permission denied
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose pull
+
+> no configuration file provided: not found
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose up -d
+
+> no configuration file provided: not found
+
+> qiadmin@qiserver:/srv/qios/stacks/firefly$ sudo docker compose ps
+
+> no configuration file provided: not found
+
 > qiadmin@qiserver:/srv/qios/stacks/firefly$
 
 ### Assistant

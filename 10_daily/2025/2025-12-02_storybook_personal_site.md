@@ -3,9 +3,9 @@ layout: page
 title: "Storybook personal site"
 slug: "storybook_personal_site"
 created_at: "2025-12-02 00:42:20"
-updated_at: "2025-12-02 00:42:20"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -652,546 +652,1086 @@ canonical_ref: ""
 > ```
 
 ### User
-> this is what gemini did, so we kinda need that slow, but maybe we break it up into 7 main modules, each module can have 3 tops or sections and 1 summary at the end, ow 3 modules 7 topics then `1 summary. <!DOCTYPE html>
-> <html lang="en">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>Manual to Me</title>
->     <style>
->         /* --- CORE VARIABLES & RESET --- */
->         :root {
->             --bg-color: #ffffff;
->             --text-color: #1f2937;
->             --muted-color: #6b7280;
->             --primary-color: #2563eb;
->             --primary-hover: #1d4ed8;
->             --secondary-bg: #f3f4f6;
->             --border-radius-btn: 999px;
->             --border-radius-card: 12px;
->             --spacing: 1.5rem;
->             --max-width: 800px;
->         }
-> 
->         * { box-sizing: border-box; margin: 0; padding: 0; }
->         
->         body {
->             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
->             background-color: var(--bg-color);
->             color: var(--text-color);
->             line-height: 1.6;
->             padding: var(--spacing);
->         }
-> 
->         /* --- LAYOUT --- */
->         main {
->             max-width: var(--max-width);
->             margin: 0 auto;
->             min-height: 80vh;
->             display: flex;
->             flex-direction: column;
->             justify-content: center;
->         }
-> 
->         h1, h2, h3 {
->             line-height: 1.2;
->             margin-bottom: 1rem;
->         }
->         
->         h1 { font-size: 2.5rem; letter-spacing: -0.05em; }
->         h2 { font-size: 1.75rem; color: var(--text-color); }
->         h3 { font-size: 1.25rem; margin-top: 1rem; }
-> 
->         p { margin-bottom: 1.25rem; color: #374151; }
->         ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
->         li { margin-bottom: 0.5rem; }
-> 
->         /* --- NAVIGATION / SCREENS --- */
->         .screen {
->             display: none; /* Hidden by default */
->             animation: fadeIn 0.4s ease-out;
->         }
->         
->         .screen.active {
->             display: block; /* Shown when active */
->         }
-> 
->         @keyframes fadeIn {
->             from { opacity: 0; transform: translateY(10px); }
->             to { opacity: 1; transform: translateY(0); }
->         }
-> 
->         /* --- BUTTONS --- */
->         button {
->             cursor: pointer;
->             font-size: 1rem;
->             font-weight: 600;
->             padding: 0.75rem 1.5rem;
->             border: none;
->             border-radius: var(--border-radius-btn);
->             transition: all 0.2s ease;
->             display: inline-block;
->             margin-top: 0.5rem;
->             margin-right: 0.5rem;
->         }
-> 
->         .btn-primary {
->             background-color: var(--primary-color);
->             color: white;
->             box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
->             width: 100%; /* Mobile friendly */
->             margin-bottom: 0.5rem;
->             text-align: center;
->         }
->         .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-1px); }
-> 
->         .btn-secondary {
->             background-color: var(--secondary-bg);
->             color: var(--text-color);
->             border: 1px solid #e5e7eb;
->             width: 100%;
->             text-align: center;
->         }
->         .btn-secondary:hover { background-color: #e5e7eb; }
-> 
->         .btn-link {
->             background: none;
->             color: var(--muted-color);
->             text-decoration: underline;
->             padding: 0;
->             margin-top: 1rem;
->             font-weight: normal;
->         }
-> 
->         @media (min-width: 600px) {
->             .btn-primary, .btn-secondary { width: auto; }
->         }
-> 
->         /* --- PROGRESS BAR --- */
->         .progress-container {
->             margin: 2rem 0;
->             text-align: center;
->         }
->         .progress-text {
->             font-size: 0.875rem;
->             color: var(--muted-color);
->             margin-bottom: 0.5rem;
->             font-weight: 600;
->             text-transform: uppercase;
->             letter-spacing: 0.05em;
->         }
->         .progress-track {
->             background-color: #e5e7eb;
->             height: 12px;
->             border-radius: 999px;
->             overflow: hidden;
->             width: 100%;
->         }
->         .progress-fill {
->             background-color: var(--primary-color);
->             height: 100%;
->             width: 0%; /* JS updates this */
->             transition: width 0.5s ease-in-out;
->         }
-> 
->         /* --- VIDEO EMBEDS --- */
->         .video-wrapper {
->             position: relative;
->             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
->             height: 0;
->             overflow: hidden;
->             border-radius: var(--border-radius-card);
->             background: #000;
->             margin-bottom: 1.5rem;
->             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
->         }
->         .video-wrapper iframe {
->             position: absolute;
->             top: 0;
->             left: 0;
->             width: 100%;
->             height: 100%;
->             border: 0;
->         }
->         .video-label {
->             font-size: 0.75rem;
->             text-transform: uppercase;
->             letter-spacing: 0.05em;
->             color: var(--muted-color);
->             margin-bottom: 0.5rem;
->             display: block;
->         }
-> 
->         /* --- CARDS (EXTRAS) --- */
->         .card-grid {
->             display: grid;
->             grid-template-columns: 1fr;
->             gap: 1.5rem;
->             margin-top: 1.5rem;
->         }
->         .card {
->             background: var(--secondary-bg);
->             border-radius: var(--border-radius-card);
->             padding: 1.5rem;
->         }
->         .card h3 { margin-top: 0; font-size: 1.1rem; }
->         .card p { font-size: 0.9rem; margin-bottom: 1rem; }
-> 
->         /* --- HELPERS --- */
->         .center-text { text-align: center; }
->         .divider { height: 1px; background: #e5e7eb; margin: 2rem 0; }
->         .section-spacer { margin-bottom: 2rem; }
->     </style>
-> </head>
-> <body>
-> 
-> <main>
-> 
->     <!-- 1. COVER SCREEN -->
->     <section id="screen-cover" class="screen active center-text">
->         <div style="padding: 2rem 0;">
->             <h1>Manual to Me</h1>
->             <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
->                 A guided story about how my brain works, how to support me, and how we can thrive together.
->             </p>
->             <button class="btn-primary" data-go="screen-hub">Begin the Story</button>
->         </div>
->     </section>
-> 
->     <!-- 2. HUB SCREEN -->
->     <section id="screen-hub" class="screen">
->         <div class="center-text section-spacer">
->             <h2>Where do you want to start?</h2>
->             
->             <!-- Progress UI -->
->             <div class="progress-container">
->                 <div class="progress-text" id="progress-label">0/3 Chapters Visited (0%)</div>
->                 <div class="progress-track">
->                     <div class="progress-fill" id="progress-bar"></div>
->                 </div>
->             </div>
->         </div>
-> 
->         <!-- Dynamic Content Area -->
->         <div id="hub-dynamic-content">
->             <!-- JS will inject buttons here -->
->         </div>
-> 
->         <div class="divider"></div>
-> 
->         <!-- Extras Link -->
->         <div class="center-text">
->             <button class="btn-secondary" data-go="screen-extras">Browse Extras & Deep Dives</button>
->         </div>
->     </section>
-> 
->     <!-- 3. LEARN SCREEN -->
->     <section id="screen-learn" class="screen">
->         <span class="video-label">Watch: The 2-minute version</span>
->         <div class="video-wrapper">
->             <!-- Placeholder Video -->
->             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Learn Video" allowfullscreen></iframe>
->         </div>
-> 
->         <h2>Learn / How My World Works</h2>
->         
->         <p><strong>Who I am in broad strokes:</strong> I operate on high energy bursts followed by necessary recharge periods. I value clarity over politeness, and I think in interconnected systems rather than linear lists.</p>
->         
->         <p><strong>How to use this site:</strong> Treat this as a reference manual. You don't need to memorize it, but checking the "Health" section when I'm overwhelmed will save us both a headache.</p>
-> 
->         <h3>If you remember nothing else:</h3>
->         <ul>
->             <li>My "no" is not a rejection of you; it's a protection of my energy.</li>
->             <li>I process information verbally; let me talk it out.</li>
->             <li>Surprise changes to plans are my kryptonite.</li>
->         </ul>
-> 
->         <div class="center-text" style="margin-top: 3rem;">
->             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
->         </div>
->     </section>
-> 
->     <!-- 4. HEALTH SCREEN -->
->     <section id="screen-health" class="screen">
->         <span class="video-label">Watch: What my brain days are actually like</span>
->         <div class="video-wrapper">
->              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Health Video" allowfullscreen></iframe>
->         </div>
-> 
->         <h2>Health / Brain & Body</h2>
-> 
->         <h3>ADHD, Overwhelm, and Energy</h3>
->         <p>Some days my brain is a Ferrari with bicycle brakes. Other days, it's a foggy swamp. Recognizing which day it is helps me adjust my expectations (and yours).</p>
-> 
->         <h3>What Helps</h3>
->         <ul>
->             <li>Body doubling (just sitting near me while I work).</li>
->             <li>High protein snacks.</li>
->             <li>Clear, written instructions rather than verbal requests.</li>
->         </ul>
-> 
->         <h3>What Makes Things Worse</h3>
->         <ul>
->             <li>"Did you remember to...?" questions (I probably didn't, and now I feel shame).</li>
->             <li>Fluorescent lighting.</li>
->             <li>Open-ended questions like "What do you want for dinner?"</li>
->         </ul>
-> 
->         <div class="center-text" style="margin-top: 3rem;">
->             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
->         </div>
->     </section>
-> 
->     <!-- 5. RELATIONSHIPS SCREEN -->
->     <section id="screen-relationships" class="screen">
->         <span class="video-label">Watch: How to be in my life without drama</span>
->         <div class="video-wrapper">
->              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Relationships Video" allowfullscreen></iframe>
->         </div>
-> 
->         <h2>Relationships / Boundaries</h2>
-> 
->         <h3>What Safety Looks Like for Me</h3>
->         <p>Safety is consistency. I need to know that your mood isn't a puzzle I have to solve. If you are angry, tell me directly so I don't spiral into anxiety guessing.</p>
-> 
->         <h3>Non-Negotiables</h3>
->         <ul>
->             <li>No yelling. Ever.</li>
->             <li>Respect my need for solitary recharge time after social events.</li>
->             <li>Honesty, even when it's uncomfortable.</li>
->         </ul>
-> 
->         <h3>How to Handle Conflict</h3>
->         <p>Write it down. Text or email gives me time to process my emotions before reacting. Immediate verbal confrontation usually leads to me shutting down.</p>
-> 
->         <div class="center-text" style="margin-top: 3rem;">
->             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
->         </div>
->     </section>
-> 
->     <!-- 6. EXTRAS SCREEN -->
->     <section id="screen-extras" class="screen">
->         <div class="center-text section-spacer">
->             <h2>Extras & Deep Dives</h2>
->             <p>Optional content if you want to geek out on the details.</p>
->         </div>
-> 
->         <div class="card-grid">
->             <!-- Playlist Card 1 -->
->             <div class="card">
->                 <h3>Health & ADHD Essentials</h3>
->                 <p>Deep dive into dopamine, sleep hygiene, and meds.</p>
->                 <div class="video-wrapper">
->                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 1" allowfullscreen></iframe>
->                 </div>
->             </div>
-> 
->             <!-- Playlist Card 2 -->
->             <div class="card">
->                 <h3>Work, Money & Systems</h3>
->                 <p>How I organize my digital life and finances.</p>
->                 <div class="video-wrapper">
->                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 2" allowfullscreen></iframe>
->                 </div>
->             </div>
-> 
->             <!-- Playlist Card 3 -->
->             <div class="card">
->                 <h3>Storytime & Philosophy</h3>
->                 <p>Long-form rants about the universe.</p>
->                 <div class="video-wrapper">
->                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 3" allowfullscreen></iframe>
->                 </div>
->             </div>
->         </div>
-> 
->         <div class="center-text" style="margin-top: 3rem;">
->             <button class="btn-secondary" data-go="screen-hub">Back to Hub</button>
->         </div>
->     </section>
-> 
->     <!-- 7. COMPLETE SCREEN -->
->     <section id="screen-complete" class="screen center-text">
->         <div style="padding: 2rem 0;">
->             <h1>Loop Complete.</h1>
->             <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
->                 You've reviewed the core pillars of my manual. Thanks for taking the time to understand me better.
->             </p>
->             
->             <button class="btn-primary" data-go="screen-extras">Explore Extras & Deep Dives</button>
->             <br>
->             <button class="btn-secondary" data-go="screen-hub" style="margin-top: 1rem;">Revisit a Chapter</button>
->         </div>
->     </section>
-> 
-> </main>
-> 
-> <script>
->     // --- CONFIGURATION ---
->     const STORAGE_KEY = 'manual_to_me_progress_v1';
->     
->     // Definition of the 3 core chapters that count towards progress
->     const CHAPTERS = [
->         { id: 'learn', title: 'Learn / How My World Works', screen: 'screen-learn' },
->         { id: 'health', title: 'Health / Brain & Body', screen: 'screen-health' },
->         { id: 'relationships', title: 'Relationships / Boundaries', screen: 'screen-relationships' }
->     ];
-> 
->     // --- STATE MANAGEMENT ---
-> 
->     function getVisited() {
->         try {
->             const stored = localStorage.getItem(STORAGE_KEY);
->             return stored ? JSON.parse(stored) : [];
->         } catch (e) {
->             console.error('LocalStorage not supported', e);
->             return [];
->         }
->     }
-> 
->     function setVisited(arr) {
->         try {
->             localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
->         } catch (e) {
->             console.error('LocalStorage write failed', e);
->         }
->     }
-> 
->     // Mark a chapter as visited if it's new
->     function markVisited(chapterId) {
->         const visited = getVisited();
->         if (!visited.includes(chapterId)) {
->             visited.push(chapterId);
->             setVisited(visited);
->             updateProgressUI(); // Update UI immediately
->         }
->     }
-> 
->     // Calculate progress stats
->     function getProgressStats() {
->         const visited = getVisited();
->         const total = CHAPTERS.length;
->         const count = visited.length;
->         const percent = Math.round((count / total) * 100);
->         return { visited, total, count, percent };
->     }
-> 
->     // --- UI UPDATES ---
-> 
->     function updateProgressUI() {
->         const { count, total, percent } = getProgressStats();
->         
->         // Update text
->         const label = document.getElementById('progress-label');
->         label.innerText = `${count}/${total} Chapters Visited (${percent}%)`;
->         
->         // Update bar width
->         const bar = document.getElementById('progress-bar');
->         bar.style.width = `${percent}%`;
->     }
-> 
->     function renderHub() {
->         const { visited, count, total } = getProgressStats();
->         const container = document.getElementById('hub-dynamic-content');
->         container.innerHTML = ''; // Clear current content
-> 
->         // 1. Filter lists
->         const remaining = CHAPTERS.filter(ch => !visited.includes(ch.id));
->         const done = CHAPTERS.filter(ch => visited.includes(ch.id));
-> 
->         // 2. Render Remaining (Primary Buttons)
->         if (remaining.length > 0) {
->             remaining.forEach(ch => {
->                 const btn = document.createElement('button');
->                 btn.className = 'btn-primary';
->                 btn.innerText = ch.title;
->                 btn.setAttribute('data-go', ch.screen);
->                 // Re-bind click event for dynamic element
->                 btn.addEventListener('click', () => showScreen(ch.screen));
->                 container.appendChild(btn);
->             });
->         }
-> 
->         // 3. Render "Finish Loop" if all done
->         if (count === total) {
->             const finishBtn = document.createElement('button');
->             finishBtn.className = 'btn-primary';
->             finishBtn.innerText = '✨ Finish this loop';
->             finishBtn.setAttribute('data-go', 'screen-complete');
->             finishBtn.style.backgroundColor = '#10b981'; // Green for completion
->             finishBtn.addEventListener('click', () => showScreen('screen-complete'));
->             container.appendChild(finishBtn);
->         }
-> 
->         // 4. Render Revisit Area (Secondary Buttons)
->         if (done.length > 0) {
->             const divider = document.createElement('p');
->             divider.style.marginTop = '2rem';
->             divider.style.fontSize = '0.9rem';
->             divider.style.color = '#6b7280';
->             divider.innerText = 'Revisit:';
->             container.appendChild(divider);
-> 
->             done.forEach(ch => {
->                 const btn = document.createElement('button');
->                 btn.className = 'btn-secondary';
->                 btn.innerText = ch.title;
->                 btn.setAttribute('data-go', ch.screen);
->                 btn.addEventListener('click', () => showScreen(ch.screen));
->                 container.appendChild(btn);
->             });
->         }
->     }
-> 
->     // --- NAVIGATION LOGIC ---
-> 
->     function showScreen(screenId) {
->         // 1. Hide all screens
->         document.querySelectorAll('.screen').forEach(el => {
->             el.classList.remove('active');
->         });
-> 
->         // 2. Show target screen
->         const target = document.getElementById(screenId);
->         if (target) {
->             target.classList.add('active');
->             window.scrollTo(0, 0); // Reset scroll
->         }
-> 
->         // 3. Logic based on specific screen logic
->         if (screenId === 'screen-hub') {
->             updateProgressUI();
->             renderHub();
->         } else {
->             // Check if this screen is a chapter
->             const chapter = CHAPTERS.find(ch => ch.screen === screenId);
->             if (chapter) {
->                 markVisited(chapter.id);
->             }
->         }
->     }
-> 
->     // --- INITIALIZATION ---
-> 
->     // 1. Bind static buttons (Cover, Nav buttons inside static HTML)
->     document.querySelectorAll('button[data-go]').forEach(btn => {
->         btn.addEventListener('click', () => {
->             showScreen(btn.getAttribute('data-go'));
->         });
->     });
-> 
->     // 2. Initial Setup
->     // If we load the page, we start at cover.
->     // However, we want the Hub ready just in case.
->     updateProgressUI();
->     
->     // Optional: If user has finished before, maybe show 'Complete' screen? 
->     // For now, adhering to flow: Start -> Cover.
->     showScreen('screen-cover');
-> 
-> </script>
-> 
-> </body>
+> this is what gemini did, so we kinda need that slow, but maybe we break it up into 7 main modules, each module can have 3 tops or sections and 1 summary at the end, ow 3 modules 7 topics then `1 summary. <!DOCTYPE html>
+
+> <html lang="en">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>Manual to Me</title>
+
+>     <style>
+
+>         /* --- CORE VARIABLES & RESET --- */
+
+>         :root {
+
+>             --bg-color: #ffffff;
+
+>             --text-color: #1f2937;
+
+>             --muted-color: #6b7280;
+
+>             --primary-color: #2563eb;
+
+>             --primary-hover: #1d4ed8;
+
+>             --secondary-bg: #f3f4f6;
+
+>             --border-radius-btn: 999px;
+
+>             --border-radius-card: 12px;
+
+>             --spacing: 1.5rem;
+
+>             --max-width: 800px;
+
+>         }
+
+> 
+
+>         * { box-sizing: border-box; margin: 0; padding: 0; }
+
+>         
+
+>         body {
+
+>             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+>             background-color: var(--bg-color);
+
+>             color: var(--text-color);
+
+>             line-height: 1.6;
+
+>             padding: var(--spacing);
+
+>         }
+
+> 
+
+>         /* --- LAYOUT --- */
+
+>         main {
+
+>             max-width: var(--max-width);
+
+>             margin: 0 auto;
+
+>             min-height: 80vh;
+
+>             display: flex;
+
+>             flex-direction: column;
+
+>             justify-content: center;
+
+>         }
+
+> 
+
+>         h1, h2, h3 {
+
+>             line-height: 1.2;
+
+>             margin-bottom: 1rem;
+
+>         }
+
+>         
+
+>         h1 { font-size: 2.5rem; letter-spacing: -0.05em; }
+
+>         h2 { font-size: 1.75rem; color: var(--text-color); }
+
+>         h3 { font-size: 1.25rem; margin-top: 1rem; }
+
+> 
+
+>         p { margin-bottom: 1.25rem; color: #374151; }
+
+>         ul { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+
+>         li { margin-bottom: 0.5rem; }
+
+> 
+
+>         /* --- NAVIGATION / SCREENS --- */
+
+>         .screen {
+
+>             display: none; /* Hidden by default */
+
+>             animation: fadeIn 0.4s ease-out;
+
+>         }
+
+>         
+
+>         .screen.active {
+
+>             display: block; /* Shown when active */
+
+>         }
+
+> 
+
+>         @keyframes fadeIn {
+
+>             from { opacity: 0; transform: translateY(10px); }
+
+>             to { opacity: 1; transform: translateY(0); }
+
+>         }
+
+> 
+
+>         /* --- BUTTONS --- */
+
+>         button {
+
+>             cursor: pointer;
+
+>             font-size: 1rem;
+
+>             font-weight: 600;
+
+>             padding: 0.75rem 1.5rem;
+
+>             border: none;
+
+>             border-radius: var(--border-radius-btn);
+
+>             transition: all 0.2s ease;
+
+>             display: inline-block;
+
+>             margin-top: 0.5rem;
+
+>             margin-right: 0.5rem;
+
+>         }
+
+> 
+
+>         .btn-primary {
+
+>             background-color: var(--primary-color);
+
+>             color: white;
+
+>             box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+
+>             width: 100%; /* Mobile friendly */
+
+>             margin-bottom: 0.5rem;
+
+>             text-align: center;
+
+>         }
+
+>         .btn-primary:hover { background-color: var(--primary-hover); transform: translateY(-1px); }
+
+> 
+
+>         .btn-secondary {
+
+>             background-color: var(--secondary-bg);
+
+>             color: var(--text-color);
+
+>             border: 1px solid #e5e7eb;
+
+>             width: 100%;
+
+>             text-align: center;
+
+>         }
+
+>         .btn-secondary:hover { background-color: #e5e7eb; }
+
+> 
+
+>         .btn-link {
+
+>             background: none;
+
+>             color: var(--muted-color);
+
+>             text-decoration: underline;
+
+>             padding: 0;
+
+>             margin-top: 1rem;
+
+>             font-weight: normal;
+
+>         }
+
+> 
+
+>         @media (min-width: 600px) {
+
+>             .btn-primary, .btn-secondary { width: auto; }
+
+>         }
+
+> 
+
+>         /* --- PROGRESS BAR --- */
+
+>         .progress-container {
+
+>             margin: 2rem 0;
+
+>             text-align: center;
+
+>         }
+
+>         .progress-text {
+
+>             font-size: 0.875rem;
+
+>             color: var(--muted-color);
+
+>             margin-bottom: 0.5rem;
+
+>             font-weight: 600;
+
+>             text-transform: uppercase;
+
+>             letter-spacing: 0.05em;
+
+>         }
+
+>         .progress-track {
+
+>             background-color: #e5e7eb;
+
+>             height: 12px;
+
+>             border-radius: 999px;
+
+>             overflow: hidden;
+
+>             width: 100%;
+
+>         }
+
+>         .progress-fill {
+
+>             background-color: var(--primary-color);
+
+>             height: 100%;
+
+>             width: 0%; /* JS updates this */
+
+>             transition: width 0.5s ease-in-out;
+
+>         }
+
+> 
+
+>         /* --- VIDEO EMBEDS --- */
+
+>         .video-wrapper {
+
+>             position: relative;
+
+>             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+
+>             height: 0;
+
+>             overflow: hidden;
+
+>             border-radius: var(--border-radius-card);
+
+>             background: #000;
+
+>             margin-bottom: 1.5rem;
+
+>             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+>         }
+
+>         .video-wrapper iframe {
+
+>             position: absolute;
+
+>             top: 0;
+
+>             left: 0;
+
+>             width: 100%;
+
+>             height: 100%;
+
+>             border: 0;
+
+>         }
+
+>         .video-label {
+
+>             font-size: 0.75rem;
+
+>             text-transform: uppercase;
+
+>             letter-spacing: 0.05em;
+
+>             color: var(--muted-color);
+
+>             margin-bottom: 0.5rem;
+
+>             display: block;
+
+>         }
+
+> 
+
+>         /* --- CARDS (EXTRAS) --- */
+
+>         .card-grid {
+
+>             display: grid;
+
+>             grid-template-columns: 1fr;
+
+>             gap: 1.5rem;
+
+>             margin-top: 1.5rem;
+
+>         }
+
+>         .card {
+
+>             background: var(--secondary-bg);
+
+>             border-radius: var(--border-radius-card);
+
+>             padding: 1.5rem;
+
+>         }
+
+>         .card h3 { margin-top: 0; font-size: 1.1rem; }
+
+>         .card p { font-size: 0.9rem; margin-bottom: 1rem; }
+
+> 
+
+>         /* --- HELPERS --- */
+
+>         .center-text { text-align: center; }
+
+>         .divider { height: 1px; background: #e5e7eb; margin: 2rem 0; }
+
+>         .section-spacer { margin-bottom: 2rem; }
+
+>     </style>
+
+> </head>
+
+> <body>
+
+> 
+
+> <main>
+
+> 
+
+>     <!-- 1. COVER SCREEN -->
+
+>     <section id="screen-cover" class="screen active center-text">
+
+>         <div style="padding: 2rem 0;">
+
+>             <h1>Manual to Me</h1>
+
+>             <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
+
+>                 A guided story about how my brain works, how to support me, and how we can thrive together.
+
+>             </p>
+
+>             <button class="btn-primary" data-go="screen-hub">Begin the Story</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 2. HUB SCREEN -->
+
+>     <section id="screen-hub" class="screen">
+
+>         <div class="center-text section-spacer">
+
+>             <h2>Where do you want to start?</h2>
+
+>             
+
+>             <!-- Progress UI -->
+
+>             <div class="progress-container">
+
+>                 <div class="progress-text" id="progress-label">0/3 Chapters Visited (0%)</div>
+
+>                 <div class="progress-track">
+
+>                     <div class="progress-fill" id="progress-bar"></div>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+> 
+
+>         <!-- Dynamic Content Area -->
+
+>         <div id="hub-dynamic-content">
+
+>             <!-- JS will inject buttons here -->
+
+>         </div>
+
+> 
+
+>         <div class="divider"></div>
+
+> 
+
+>         <!-- Extras Link -->
+
+>         <div class="center-text">
+
+>             <button class="btn-secondary" data-go="screen-extras">Browse Extras & Deep Dives</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 3. LEARN SCREEN -->
+
+>     <section id="screen-learn" class="screen">
+
+>         <span class="video-label">Watch: The 2-minute version</span>
+
+>         <div class="video-wrapper">
+
+>             <!-- Placeholder Video -->
+
+>             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Learn Video" allowfullscreen></iframe>
+
+>         </div>
+
+> 
+
+>         <h2>Learn / How My World Works</h2>
+
+>         
+
+>         <p><strong>Who I am in broad strokes:</strong> I operate on high energy bursts followed by necessary recharge periods. I value clarity over politeness, and I think in interconnected systems rather than linear lists.</p>
+
+>         
+
+>         <p><strong>How to use this site:</strong> Treat this as a reference manual. You don't need to memorize it, but checking the "Health" section when I'm overwhelmed will save us both a headache.</p>
+
+> 
+
+>         <h3>If you remember nothing else:</h3>
+
+>         <ul>
+
+>             <li>My "no" is not a rejection of you; it's a protection of my energy.</li>
+
+>             <li>I process information verbally; let me talk it out.</li>
+
+>             <li>Surprise changes to plans are my kryptonite.</li>
+
+>         </ul>
+
+> 
+
+>         <div class="center-text" style="margin-top: 3rem;">
+
+>             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 4. HEALTH SCREEN -->
+
+>     <section id="screen-health" class="screen">
+
+>         <span class="video-label">Watch: What my brain days are actually like</span>
+
+>         <div class="video-wrapper">
+
+>              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Health Video" allowfullscreen></iframe>
+
+>         </div>
+
+> 
+
+>         <h2>Health / Brain & Body</h2>
+
+> 
+
+>         <h3>ADHD, Overwhelm, and Energy</h3>
+
+>         <p>Some days my brain is a Ferrari with bicycle brakes. Other days, it's a foggy swamp. Recognizing which day it is helps me adjust my expectations (and yours).</p>
+
+> 
+
+>         <h3>What Helps</h3>
+
+>         <ul>
+
+>             <li>Body doubling (just sitting near me while I work).</li>
+
+>             <li>High protein snacks.</li>
+
+>             <li>Clear, written instructions rather than verbal requests.</li>
+
+>         </ul>
+
+> 
+
+>         <h3>What Makes Things Worse</h3>
+
+>         <ul>
+
+>             <li>"Did you remember to...?" questions (I probably didn't, and now I feel shame).</li>
+
+>             <li>Fluorescent lighting.</li>
+
+>             <li>Open-ended questions like "What do you want for dinner?"</li>
+
+>         </ul>
+
+> 
+
+>         <div class="center-text" style="margin-top: 3rem;">
+
+>             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 5. RELATIONSHIPS SCREEN -->
+
+>     <section id="screen-relationships" class="screen">
+
+>         <span class="video-label">Watch: How to be in my life without drama</span>
+
+>         <div class="video-wrapper">
+
+>              <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Relationships Video" allowfullscreen></iframe>
+
+>         </div>
+
+> 
+
+>         <h2>Relationships / Boundaries</h2>
+
+> 
+
+>         <h3>What Safety Looks Like for Me</h3>
+
+>         <p>Safety is consistency. I need to know that your mood isn't a puzzle I have to solve. If you are angry, tell me directly so I don't spiral into anxiety guessing.</p>
+
+> 
+
+>         <h3>Non-Negotiables</h3>
+
+>         <ul>
+
+>             <li>No yelling. Ever.</li>
+
+>             <li>Respect my need for solitary recharge time after social events.</li>
+
+>             <li>Honesty, even when it's uncomfortable.</li>
+
+>         </ul>
+
+> 
+
+>         <h3>How to Handle Conflict</h3>
+
+>         <p>Write it down. Text or email gives me time to process my emotions before reacting. Immediate verbal confrontation usually leads to me shutting down.</p>
+
+> 
+
+>         <div class="center-text" style="margin-top: 3rem;">
+
+>             <button class="btn-secondary" data-go="screen-hub">Back to Choices</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 6. EXTRAS SCREEN -->
+
+>     <section id="screen-extras" class="screen">
+
+>         <div class="center-text section-spacer">
+
+>             <h2>Extras & Deep Dives</h2>
+
+>             <p>Optional content if you want to geek out on the details.</p>
+
+>         </div>
+
+> 
+
+>         <div class="card-grid">
+
+>             <!-- Playlist Card 1 -->
+
+>             <div class="card">
+
+>                 <h3>Health & ADHD Essentials</h3>
+
+>                 <p>Deep dive into dopamine, sleep hygiene, and meds.</p>
+
+>                 <div class="video-wrapper">
+
+>                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 1" allowfullscreen></iframe>
+
+>                 </div>
+
+>             </div>
+
+> 
+
+>             <!-- Playlist Card 2 -->
+
+>             <div class="card">
+
+>                 <h3>Work, Money & Systems</h3>
+
+>                 <p>How I organize my digital life and finances.</p>
+
+>                 <div class="video-wrapper">
+
+>                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 2" allowfullscreen></iframe>
+
+>                 </div>
+
+>             </div>
+
+> 
+
+>             <!-- Playlist Card 3 -->
+
+>             <div class="card">
+
+>                 <h3>Storytime & Philosophy</h3>
+
+>                 <p>Long-form rants about the universe.</p>
+
+>                 <div class="video-wrapper">
+
+>                     <iframe src="https://www.youtube.com/embed/videoseries?list=PLz8YL4HVC87WJbX7w_aC4VzI35c_aF" title="Playlist 3" allowfullscreen></iframe>
+
+>                 </div>
+
+>             </div>
+
+>         </div>
+
+> 
+
+>         <div class="center-text" style="margin-top: 3rem;">
+
+>             <button class="btn-secondary" data-go="screen-hub">Back to Hub</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <!-- 7. COMPLETE SCREEN -->
+
+>     <section id="screen-complete" class="screen center-text">
+
+>         <div style="padding: 2rem 0;">
+
+>             <h1>Loop Complete.</h1>
+
+>             <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
+
+>                 You've reviewed the core pillars of my manual. Thanks for taking the time to understand me better.
+
+>             </p>
+
+>             
+
+>             <button class="btn-primary" data-go="screen-extras">Explore Extras & Deep Dives</button>
+
+>             <br>
+
+>             <button class="btn-secondary" data-go="screen-hub" style="margin-top: 1rem;">Revisit a Chapter</button>
+
+>         </div>
+
+>     </section>
+
+> 
+
+> </main>
+
+> 
+
+> <script>
+
+>     // --- CONFIGURATION ---
+
+>     const STORAGE_KEY = 'manual_to_me_progress_v1';
+
+>     
+
+>     // Definition of the 3 core chapters that count towards progress
+
+>     const CHAPTERS = [
+
+>         { id: 'learn', title: 'Learn / How My World Works', screen: 'screen-learn' },
+
+>         { id: 'health', title: 'Health / Brain & Body', screen: 'screen-health' },
+
+>         { id: 'relationships', title: 'Relationships / Boundaries', screen: 'screen-relationships' }
+
+>     ];
+
+> 
+
+>     // --- STATE MANAGEMENT ---
+
+> 
+
+>     function getVisited() {
+
+>         try {
+
+>             const stored = localStorage.getItem(STORAGE_KEY);
+
+>             return stored ? JSON.parse(stored) : [];
+
+>         } catch (e) {
+
+>             console.error('LocalStorage not supported', e);
+
+>             return [];
+
+>         }
+
+>     }
+
+> 
+
+>     function setVisited(arr) {
+
+>         try {
+
+>             localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+
+>         } catch (e) {
+
+>             console.error('LocalStorage write failed', e);
+
+>         }
+
+>     }
+
+> 
+
+>     // Mark a chapter as visited if it's new
+
+>     function markVisited(chapterId) {
+
+>         const visited = getVisited();
+
+>         if (!visited.includes(chapterId)) {
+
+>             visited.push(chapterId);
+
+>             setVisited(visited);
+
+>             updateProgressUI(); // Update UI immediately
+
+>         }
+
+>     }
+
+> 
+
+>     // Calculate progress stats
+
+>     function getProgressStats() {
+
+>         const visited = getVisited();
+
+>         const total = CHAPTERS.length;
+
+>         const count = visited.length;
+
+>         const percent = Math.round((count / total) * 100);
+
+>         return { visited, total, count, percent };
+
+>     }
+
+> 
+
+>     // --- UI UPDATES ---
+
+> 
+
+>     function updateProgressUI() {
+
+>         const { count, total, percent } = getProgressStats();
+
+>         
+
+>         // Update text
+
+>         const label = document.getElementById('progress-label');
+
+>         label.innerText = `${count}/${total} Chapters Visited (${percent}%)`;
+
+>         
+
+>         // Update bar width
+
+>         const bar = document.getElementById('progress-bar');
+
+>         bar.style.width = `${percent}%`;
+
+>     }
+
+> 
+
+>     function renderHub() {
+
+>         const { visited, count, total } = getProgressStats();
+
+>         const container = document.getElementById('hub-dynamic-content');
+
+>         container.innerHTML = ''; // Clear current content
+
+> 
+
+>         // 1. Filter lists
+
+>         const remaining = CHAPTERS.filter(ch => !visited.includes(ch.id));
+
+>         const done = CHAPTERS.filter(ch => visited.includes(ch.id));
+
+> 
+
+>         // 2. Render Remaining (Primary Buttons)
+
+>         if (remaining.length > 0) {
+
+>             remaining.forEach(ch => {
+
+>                 const btn = document.createElement('button');
+
+>                 btn.className = 'btn-primary';
+
+>                 btn.innerText = ch.title;
+
+>                 btn.setAttribute('data-go', ch.screen);
+
+>                 // Re-bind click event for dynamic element
+
+>                 btn.addEventListener('click', () => showScreen(ch.screen));
+
+>                 container.appendChild(btn);
+
+>             });
+
+>         }
+
+> 
+
+>         // 3. Render "Finish Loop" if all done
+
+>         if (count === total) {
+
+>             const finishBtn = document.createElement('button');
+
+>             finishBtn.className = 'btn-primary';
+
+>             finishBtn.innerText = '✨ Finish this loop';
+
+>             finishBtn.setAttribute('data-go', 'screen-complete');
+
+>             finishBtn.style.backgroundColor = '#10b981'; // Green for completion
+
+>             finishBtn.addEventListener('click', () => showScreen('screen-complete'));
+
+>             container.appendChild(finishBtn);
+
+>         }
+
+> 
+
+>         // 4. Render Revisit Area (Secondary Buttons)
+
+>         if (done.length > 0) {
+
+>             const divider = document.createElement('p');
+
+>             divider.style.marginTop = '2rem';
+
+>             divider.style.fontSize = '0.9rem';
+
+>             divider.style.color = '#6b7280';
+
+>             divider.innerText = 'Revisit:';
+
+>             container.appendChild(divider);
+
+> 
+
+>             done.forEach(ch => {
+
+>                 const btn = document.createElement('button');
+
+>                 btn.className = 'btn-secondary';
+
+>                 btn.innerText = ch.title;
+
+>                 btn.setAttribute('data-go', ch.screen);
+
+>                 btn.addEventListener('click', () => showScreen(ch.screen));
+
+>                 container.appendChild(btn);
+
+>             });
+
+>         }
+
+>     }
+
+> 
+
+>     // --- NAVIGATION LOGIC ---
+
+> 
+
+>     function showScreen(screenId) {
+
+>         // 1. Hide all screens
+
+>         document.querySelectorAll('.screen').forEach(el => {
+
+>             el.classList.remove('active');
+
+>         });
+
+> 
+
+>         // 2. Show target screen
+
+>         const target = document.getElementById(screenId);
+
+>         if (target) {
+
+>             target.classList.add('active');
+
+>             window.scrollTo(0, 0); // Reset scroll
+
+>         }
+
+> 
+
+>         // 3. Logic based on specific screen logic
+
+>         if (screenId === 'screen-hub') {
+
+>             updateProgressUI();
+
+>             renderHub();
+
+>         } else {
+
+>             // Check if this screen is a chapter
+
+>             const chapter = CHAPTERS.find(ch => ch.screen === screenId);
+
+>             if (chapter) {
+
+>                 markVisited(chapter.id);
+
+>             }
+
+>         }
+
+>     }
+
+> 
+
+>     // --- INITIALIZATION ---
+
+> 
+
+>     // 1. Bind static buttons (Cover, Nav buttons inside static HTML)
+
+>     document.querySelectorAll('button[data-go]').forEach(btn => {
+
+>         btn.addEventListener('click', () => {
+
+>             showScreen(btn.getAttribute('data-go'));
+
+>         });
+
+>     });
+
+> 
+
+>     // 2. Initial Setup
+
+>     // If we load the page, we start at cover.
+
+>     // However, we want the Hub ready just in case.
+
+>     updateProgressUI();
+
+>     
+
+>     // Optional: If user has finished before, maybe show 'Complete' screen? 
+
+>     // For now, adhering to flow: Start -> Cover.
+
+>     showScreen('screen-cover');
+
+> 
+
+> </script>
+
+> 
+
+> </body>
+
 > </html>
 
 ### Assistant
@@ -1399,696 +1939,1386 @@ canonical_ref: ""
 > If you want, after Cursor spits out the new file, paste it back here and I’ll help you tighten the actual text for each module so it sounds like you and not like a TED Talk robot.
 
 ### User
-> cursor is tripping give me a prompt for gemini to make the main landing index.html that setup up the roadmap or the trail to take, then each section it the setup like this one. <!DOCTYPE html>
-> <html lang="en" class="scroll-smooth">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>Understanding the INFJ | The Advocate</title>
->     <script src="https://cdn.tailwindcss.com"></script>
->     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
->     <style>
->         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
->         
->         :root {
->             --infj-dark: #0f172a;
->             --infj-purple: #6b21a8;
->             --infj-green: #059669;
->         }
->         
->         body {
->             font-family: 'Inter', sans-serif;
->             background-color: var(--infj-dark);
->             color: #e2e8f0;
->         }
-> 
->         h1, h2, h3 {
->             font-family: 'Inter', sans-serif;
->             letter-spacing: -0.025em;
->         }
-> 
->         .mono-accent {
->             font-family: 'JetBrains Mono', monospace;
->         }
-> 
->         /* Custom Scrollbar */
->         ::-webkit-scrollbar {
->             width: 8px;
->         }
->         ::-webkit-scrollbar-track {
->             background: #1e293b;
->         }
->         ::-webkit-scrollbar-thumb {
->             background: #475569;
->             border-radius: 4px;
->         }
->         ::-webkit-scrollbar-thumb:hover {
->             background: #64748b;
->         }
-> 
->         .card-hover {
->             transition: all 0.3s ease;
->         }
->         .card-hover:hover {
->             transform: translateY(-4px);
->             box-shadow: 0 10px 30px -10px rgba(107, 33, 168, 0.4);
->             border-color: #d8b4fe;
->         }
->     </style>
-> </head>
-> <body class="bg-slate-950 text-slate-300 antialiased selection:bg-emerald-500 selection:text-white">
-> 
->     <!-- Hero Section -->
->     <header class="relative overflow-hidden bg-slate-900 border-b border-slate-800">
->         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMTY3LCAyNDMsIDIwOCwgMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
->         <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-900 rounded-full blur-3xl opacity-20"></div>
->         <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-emerald-900 rounded-full blur-3xl opacity-10"></div>
-> 
->         <div class="container mx-auto px-6 py-24 relative z-10 max-w-5xl">
->             <span class="mono-accent text-emerald-500 text-sm font-bold tracking-widest uppercase mb-4 block">The Rarest Type</span>
->             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
->                 The <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-emerald-400">Advocate</span>.
->             </h1>
->             <p class="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed">
->                 Intuitive. Empathic. Mystical. <br>
->                 Understanding the deep, psychic-like intuition of the <strong>INFJ</strong>.
->             </p>
->         </div>
->     </header>
-> 
->     <!-- Main Content -->
->     <main class="container mx-auto px-6 py-16 max-w-5xl space-y-24">
-> 
->         <!-- Video for people who don't want to read -->
->         <section class="bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-800">
->             <p class="text-sm font-semibold text-slate-400 mb-4 text-center">Watch: INFJ Playlist (if you don't want to read)</p>
->             <div class="relative w-full max-w-3xl mx-auto" style="aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden;">
->                 <iframe 
->                     src="https://www.youtube.com/embed/videoseries?list=PL41I8OadmxxgNnsU7LykwtYmCrqPHQ7vv" 
->                     title="YouTube video player" 
->                     frameborder="0" 
->                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
->                     referrerpolicy="strict-origin-when-cross-origin"
->                     allowfullscreen
->                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
->                 </iframe>
->             </div>
->         </section>
-> 
->         <!-- Intro -->
->         <section class="grid md:grid-cols-12 gap-12 items-center">
->             <div class="md:col-span-8">
->                 <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
->                     <i data-lucide="sparkles" class="text-purple-400"></i>
->                     Who Are INFJs?
->                 </h2>
->                 <p class="text-lg leading-relaxed text-slate-300 mb-6">
->                     INFJ stands for <strong class="text-emerald-300">Introverted, Intuitive, Feeling, and Judging</strong>. 
->                     Often called "The Advocate" or "The Mystic," they are the rarest personality type (under 2%). 
->                     They possess an uncanny ability to read people and situations, often seeing patterns and outcomes so clearly it feels like a psychic premonition.
->                 </p>
->                 <div class="flex gap-4 flex-wrap">
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Empathy</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Intuition</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Harmony</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Insight</span>
->                 </div>
->             </div>
->             <div class="md:col-span-4 bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl">
->                 <div class="space-y-4">
->                     <div class="flex justify-between items-center">
->                         <span class="text-slate-400">Rarity</span>
->                         <span class="text-white font-bold mono-accent">< 1.5%</span>
->                     </div>
->                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
->                         <div class="bg-gradient-to-r from-purple-500 to-emerald-500 h-full w-[1.5%]"></div>
->                     </div>
->                     <div class="pt-4 border-t border-slate-800">
->                         <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-slate-500">I</span>
->                             <span class="text-sm text-slate-500">E</span>
->                         </div>
->                          <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-slate-500">N</span>
->                             <span class="text-sm text-slate-500">S</span>
->                         </div>
->                          <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-emerald-400 font-bold">F</span>
->                             <span class="text-sm text-slate-500">T</span>
->                         </div>
->                          <div class="flex justify-between items-center">
->                             <span class="text-sm text-slate-500">J</span>
->                             <span class="text-sm text-slate-500">P</span>
->                         </div>
->                     </div>
->                 </div>
->             </div>
->         </section>
-> 
->         <!-- Key Characteristics Grid -->
->         <section>
->             <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Key Characteristics</h2>
->             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
->                 
->                 <!-- Card 1 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-900/30 group-hover:text-purple-400 transition-colors">
->                         <i data-lucide="eye"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Psychic-Like Intuition</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They process unconscious patterns instantly. They often "know" things without being able to explain logically how they know.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 2 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-900/30 group-hover:text-emerald-400 transition-colors">
->                         <i data-lucide="waves"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Emotional Absorbency</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They don't just sympathize; they physically <em>feel</em> others' emotions. Crowded rooms can be exhausting emotional noise.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 3 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-900/30 group-hover:text-blue-400 transition-colors">
->                         <i data-lucide="heart-handshake"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Deeply Relational</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They crave profound connections. Small talk feels like torture; they want to know your soul, your fears, and your dreams.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 4 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-900/30 group-hover:text-red-400 transition-colors">
->                         <i data-lucide="door-closed"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">The Door Slam</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         Extremely patient, but once a line is crossed, they can cut someone out of their life completely to protect their peace.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 5 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-900/30 group-hover:text-amber-400 transition-colors">
->                         <i data-lucide="theater"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Social Chameleons</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They naturally mirror the energy around them to maintain harmony, sometimes losing track of their own feelings in the process.
->                     </p>
->                 </div>
-> 
->                  <!-- Card 6 -->
->                  <div class="bg-gradient-to-br from-emerald-900 to-slate-900 p-6 rounded-xl border border-slate-800 card-hover flex flex-col justify-center items-center text-center">
->                     <h3 class="text-xl font-bold text-white mb-2">The Mystic</h3>
->                     <p class="text-emerald-200 text-sm">"I don't just see the person. I see their path."</p>
->                 </div>
-> 
->             </div>
->         </section>
-> 
->         <!-- Connecting Section -->
->         <section class="bg-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800">
->             <h2 class="text-3xl font-bold text-white mb-8">How to Connect</h2>
->             <div class="space-y-6">
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Be Authentic</h4>
->                         <p class="text-slate-400 text-sm">They can spot a lie instantly. Vulnerability is the fastest way to their heart.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Skip the Small Talk</h4>
->                         <p class="text-slate-400 text-sm">Dive deep. Ask about the meaning of life, the universe, or personal growth.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Respect Their Recharge Time</h4>
->                         <p class="text-slate-400 text-sm">They absorb emotions. They need absolute silence to "wring out" the sponge.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Listen to Their Intuition</h4>
->                         <p class="text-slate-400 text-sm">If they say "something feels off," believe them. They are almost always right.</p>
->                     </div>
->                 </div>
->             </div>
->         </section>
-> 
->         <!-- Struggles vs Gifts -->
->         <section class="grid md:grid-cols-2 gap-12">
->             <div>
->                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
->                     <i data-lucide="cloud-rain" class="text-slate-400"></i> Struggles
->                 </h2>
->                 <ul class="space-y-4">
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">The "Weird" Feeling</strong>
->                         <span class="text-slate-400 text-sm">Feeling like an alien because no one else sees the hidden patterns they see.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">One-Sided Relationships</strong>
->                         <span class="text-slate-400 text-sm">They often act as therapists for others but feel they have no one to turn to.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">Perfectionism Paralysis</strong>
->                         <span class="text-slate-400 text-sm">Their vision is so perfect that reality often feels disappointing.</span>
->                     </li>
->                 </ul>
->             </div>
->             <div>
->                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
->                     <i data-lucide="star" class="text-emerald-400"></i> The Gifts
->                 </h2>
->                 <ul class="space-y-4">
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Uncanny Insight</strong>
->                         <span class="text-slate-400 text-sm">Seeing the truth behind the mask. Predicting outcomes with scary accuracy.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Empathetic Healing</strong>
->                         <span class="text-slate-400 text-sm">They can help others understand their own feelings better than they can.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Visionary Zeal</strong>
->                         <span class="text-slate-400 text-sm">When they believe in a cause, they are unstoppable forces for good.</span>
->                     </li>
->                 </ul>
->             </div>
->         </section>
-> 
->         <!-- Final Thoughts -->
->         <section class="text-center py-12 border-t border-slate-800">
->             <h2 class="text-3xl font-bold text-white mb-6">Final Thoughts</h2>
->             <p class="text-lg text-slate-300 max-w-3xl mx-auto italic">
->                 "Being an INFJ means seeing the world in layers that others miss. It can be lonely, but your ability to see the soul of things is a rare and necessary gift."
->             </p>
->         </section>
-> 
->         <!-- Video Embed -->
->         <section class="bg-black/50 p-6 rounded-2xl border border-slate-800">
->             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
->                 <i data-lucide="play-circle" class="text-red-500"></i> Video Insight
->             </h3>
->             <div class="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-xl" style="padding-bottom: 56.25%; height: 0;">
->                 <iframe 
->                     class="absolute top-0 left-0 w-full h-full"
->                     src="https://www.youtube.com/embed/x7kfDcOSpCI?si=70xayXdpZbbIFbGg" 
->                     title="YouTube video player" 
->                     frameborder="0" 
->                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
->                     allowfullscreen>
->                 </iframe>
->             </div>
->             <p class="mt-4 text-xs text-slate-500 text-center">Video content provided by user. Covers the "Weird Phenomenons" of the INFJ type.</p>
->         </section>
-> 
->     </main>
-> 
->     <!-- Related Guides -->
->     <section class="container mx-auto px-6 py-12 max-w-5xl">
->         <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
->             <h3 class="text-2xl font-bold text-white mb-6 text-center">Related Guides</h3>
->             <div class="grid md:grid-cols-2 gap-6">
->                 <a href="understanding-cody-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors group">
->                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Guide to Understanding Cody</h4>
->                     <p class="text-slate-400 text-sm">A comprehensive guide for friends, colleagues, and loved ones to foster deeper connection.</p>
->                 </a>
->                 <a href="inclusive-collaboration-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500 transition-colors group">
->                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400">Inclusive Collaboration Guide</h4>
->                     <p class="text-slate-400 text-sm">Actionable best practices for managers and team members to build inclusive teams.</p>
->                 </a>
->             </div>
->         </div>
->     </section>
-> 
->     <footer class="bg-slate-950 py-8 text-center text-slate-600 text-sm border-t border-slate-900">
->         <p>Created with <i data-lucide="heart" class="inline w-3 h-3 text-emerald-900"></i> for the Advocates.</p>
->     </footer>
-> 
->     <script>
->         lucide.createIcons();
->     </script>
-> </body>
-> </html> but with this, <!DOCTYPE html>
-> <html lang="en" class="scroll-smooth">
-> <head>
->     <meta charset="UTF-8">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>Understanding the INFJ | The Advocate</title>
->     <script src="https://cdn.tailwindcss.com"></script>
->     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
->     <style>
->         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
->         
->         :root {
->             --infj-dark: #0f172a;
->             --infj-purple: #6b21a8;
->             --infj-green: #059669;
->         }
->         
->         body {
->             font-family: 'Inter', sans-serif;
->             background-color: var(--infj-dark);
->             color: #e2e8f0;
->         }
-> 
->         h1, h2, h3 {
->             font-family: 'Inter', sans-serif;
->             letter-spacing: -0.025em;
->         }
-> 
->         .mono-accent {
->             font-family: 'JetBrains Mono', monospace;
->         }
-> 
->         /* Custom Scrollbar */
->         ::-webkit-scrollbar {
->             width: 8px;
->         }
->         ::-webkit-scrollbar-track {
->             background: #1e293b;
->         }
->         ::-webkit-scrollbar-thumb {
->             background: #475569;
->             border-radius: 4px;
->         }
->         ::-webkit-scrollbar-thumb:hover {
->             background: #64748b;
->         }
-> 
->         .card-hover {
->             transition: all 0.3s ease;
->         }
->         .card-hover:hover {
->             transform: translateY(-4px);
->             box-shadow: 0 10px 30px -10px rgba(107, 33, 168, 0.4);
->             border-color: #d8b4fe;
->         }
->     </style>
-> </head>
-> <body class="bg-slate-950 text-slate-300 antialiased selection:bg-emerald-500 selection:text-white">
-> 
->     <!-- Hero Section -->
->     <header class="relative overflow-hidden bg-slate-900 border-b border-slate-800">
->         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMTY3LCAyNDMsIDIwOCwgMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
->         <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-900 rounded-full blur-3xl opacity-20"></div>
->         <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-emerald-900 rounded-full blur-3xl opacity-10"></div>
-> 
->         <div class="container mx-auto px-6 py-24 relative z-10 max-w-5xl">
->             <span class="mono-accent text-emerald-500 text-sm font-bold tracking-widest uppercase mb-4 block">The Rarest Type</span>
->             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
->                 The <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-emerald-400">Advocate</span>.
->             </h1>
->             <p class="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed">
->                 Intuitive. Empathic. Mystical. <br>
->                 Understanding the deep, psychic-like intuition of the <strong>INFJ</strong>.
->             </p>
->         </div>
->     </header>
-> 
->     <!-- Main Content -->
->     <main class="container mx-auto px-6 py-16 max-w-5xl space-y-24">
-> 
->         <!-- Video for people who don't want to read -->
->         <section class="bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-800">
->             <p class="text-sm font-semibold text-slate-400 mb-4 text-center">Watch: INFJ Playlist (if you don't want to read)</p>
->             <div class="relative w-full max-w-3xl mx-auto" style="aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden;">
->                 <iframe 
->                     src="https://www.youtube.com/embed/videoseries?list=PL41I8OadmxxgNnsU7LykwtYmCrqPHQ7vv" 
->                     title="YouTube video player" 
->                     frameborder="0" 
->                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
->                     referrerpolicy="strict-origin-when-cross-origin"
->                     allowfullscreen
->                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
->                 </iframe>
->             </div>
->         </section>
-> 
->         <!-- Intro -->
->         <section class="grid md:grid-cols-12 gap-12 items-center">
->             <div class="md:col-span-8">
->                 <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
->                     <i data-lucide="sparkles" class="text-purple-400"></i>
->                     Who Are INFJs?
->                 </h2>
->                 <p class="text-lg leading-relaxed text-slate-300 mb-6">
->                     INFJ stands for <strong class="text-emerald-300">Introverted, Intuitive, Feeling, and Judging</strong>. 
->                     Often called "The Advocate" or "The Mystic," they are the rarest personality type (under 2%). 
->                     They possess an uncanny ability to read people and situations, often seeing patterns and outcomes so clearly it feels like a psychic premonition.
->                 </p>
->                 <div class="flex gap-4 flex-wrap">
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Empathy</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Intuition</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Harmony</span>
->                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Insight</span>
->                 </div>
->             </div>
->             <div class="md:col-span-4 bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl">
->                 <div class="space-y-4">
->                     <div class="flex justify-between items-center">
->                         <span class="text-slate-400">Rarity</span>
->                         <span class="text-white font-bold mono-accent">< 1.5%</span>
->                     </div>
->                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
->                         <div class="bg-gradient-to-r from-purple-500 to-emerald-500 h-full w-[1.5%]"></div>
->                     </div>
->                     <div class="pt-4 border-t border-slate-800">
->                         <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-slate-500">I</span>
->                             <span class="text-sm text-slate-500">E</span>
->                         </div>
->                          <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-slate-500">N</span>
->                             <span class="text-sm text-slate-500">S</span>
->                         </div>
->                          <div class="flex justify-between items-center mb-2">
->                             <span class="text-sm text-emerald-400 font-bold">F</span>
->                             <span class="text-sm text-slate-500">T</span>
->                         </div>
->                          <div class="flex justify-between items-center">
->                             <span class="text-sm text-slate-500">J</span>
->                             <span class="text-sm text-slate-500">P</span>
->                         </div>
->                     </div>
->                 </div>
->             </div>
->         </section>
-> 
->         <!-- Key Characteristics Grid -->
->         <section>
->             <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Key Characteristics</h2>
->             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
->                 
->                 <!-- Card 1 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-900/30 group-hover:text-purple-400 transition-colors">
->                         <i data-lucide="eye"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Psychic-Like Intuition</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They process unconscious patterns instantly. They often "know" things without being able to explain logically how they know.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 2 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-900/30 group-hover:text-emerald-400 transition-colors">
->                         <i data-lucide="waves"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Emotional Absorbency</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They don't just sympathize; they physically <em>feel</em> others' emotions. Crowded rooms can be exhausting emotional noise.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 3 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-900/30 group-hover:text-blue-400 transition-colors">
->                         <i data-lucide="heart-handshake"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Deeply Relational</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They crave profound connections. Small talk feels like torture; they want to know your soul, your fears, and your dreams.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 4 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-900/30 group-hover:text-red-400 transition-colors">
->                         <i data-lucide="door-closed"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">The Door Slam</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         Extremely patient, but once a line is crossed, they can cut someone out of their life completely to protect their peace.
->                     </p>
->                 </div>
-> 
->                 <!-- Card 5 -->
->                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
->                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-900/30 group-hover:text-amber-400 transition-colors">
->                         <i data-lucide="theater"></i>
->                     </div>
->                     <h3 class="text-xl font-bold text-white mb-3">Social Chameleons</h3>
->                     <p class="text-slate-400 text-sm leading-relaxed">
->                         They naturally mirror the energy around them to maintain harmony, sometimes losing track of their own feelings in the process.
->                     </p>
->                 </div>
-> 
->                  <!-- Card 6 -->
->                  <div class="bg-gradient-to-br from-emerald-900 to-slate-900 p-6 rounded-xl border border-slate-800 card-hover flex flex-col justify-center items-center text-center">
->                     <h3 class="text-xl font-bold text-white mb-2">The Mystic</h3>
->                     <p class="text-emerald-200 text-sm">"I don't just see the person. I see their path."</p>
->                 </div>
-> 
->             </div>
->         </section>
-> 
->         <!-- Connecting Section -->
->         <section class="bg-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800">
->             <h2 class="text-3xl font-bold text-white mb-8">How to Connect</h2>
->             <div class="space-y-6">
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Be Authentic</h4>
->                         <p class="text-slate-400 text-sm">They can spot a lie instantly. Vulnerability is the fastest way to their heart.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Skip the Small Talk</h4>
->                         <p class="text-slate-400 text-sm">Dive deep. Ask about the meaning of life, the universe, or personal growth.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Respect Their Recharge Time</h4>
->                         <p class="text-slate-400 text-sm">They absorb emotions. They need absolute silence to "wring out" the sponge.</p>
->                     </div>
->                 </div>
->                 <div class="flex gap-4 items-start">
->                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
->                     <div>
->                         <h4 class="text-white font-semibold">Listen to Their Intuition</h4>
->                         <p class="text-slate-400 text-sm">If they say "something feels off," believe them. They are almost always right.</p>
->                     </div>
->                 </div>
->             </div>
->         </section>
-> 
->         <!-- Struggles vs Gifts -->
->         <section class="grid md:grid-cols-2 gap-12">
->             <div>
->                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
->                     <i data-lucide="cloud-rain" class="text-slate-400"></i> Struggles
->                 </h2>
->                 <ul class="space-y-4">
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">The "Weird" Feeling</strong>
->                         <span class="text-slate-400 text-sm">Feeling like an alien because no one else sees the hidden patterns they see.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">One-Sided Relationships</strong>
->                         <span class="text-slate-400 text-sm">They often act as therapists for others but feel they have no one to turn to.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
->                         <strong class="block text-slate-200">Perfectionism Paralysis</strong>
->                         <span class="text-slate-400 text-sm">Their vision is so perfect that reality often feels disappointing.</span>
->                     </li>
->                 </ul>
->             </div>
->             <div>
->                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
->                     <i data-lucide="star" class="text-emerald-400"></i> The Gifts
->                 </h2>
->                 <ul class="space-y-4">
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Uncanny Insight</strong>
->                         <span class="text-slate-400 text-sm">Seeing the truth behind the mask. Predicting outcomes with scary accuracy.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Empathetic Healing</strong>
->                         <span class="text-slate-400 text-sm">They can help others understand their own feelings better than they can.</span>
->                     </li>
->                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
->                         <strong class="block text-slate-200">Visionary Zeal</strong>
->                         <span class="text-slate-400 text-sm">When they believe in a cause, they are unstoppable forces for good.</span>
->                     </li>
->                 </ul>
->             </div>
->         </section>
-> 
->         <!-- Final Thoughts -->
->         <section class="text-center py-12 border-t border-slate-800">
->             <h2 class="text-3xl font-bold text-white mb-6">Final Thoughts</h2>
->             <p class="text-lg text-slate-300 max-w-3xl mx-auto italic">
->                 "Being an INFJ means seeing the world in layers that others miss. It can be lonely, but your ability to see the soul of things is a rare and necessary gift."
->             </p>
->         </section>
-> 
->         <!-- Video Embed -->
->         <section class="bg-black/50 p-6 rounded-2xl border border-slate-800">
->             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
->                 <i data-lucide="play-circle" class="text-red-500"></i> Video Insight
->             </h3>
->             <div class="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-xl" style="padding-bottom: 56.25%; height: 0;">
->                 <iframe 
->                     class="absolute top-0 left-0 w-full h-full"
->                     src="https://www.youtube.com/embed/x7kfDcOSpCI?si=70xayXdpZbbIFbGg" 
->                     title="YouTube video player" 
->                     frameborder="0" 
->                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
->                     allowfullscreen>
->                 </iframe>
->             </div>
->             <p class="mt-4 text-xs text-slate-500 text-center">Video content provided by user. Covers the "Weird Phenomenons" of the INFJ type.</p>
->         </section>
-> 
->     </main>
-> 
->     <!-- Related Guides -->
->     <section class="container mx-auto px-6 py-12 max-w-5xl">
->         <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
->             <h3 class="text-2xl font-bold text-white mb-6 text-center">Related Guides</h3>
->             <div class="grid md:grid-cols-2 gap-6">
->                 <a href="understanding-cody-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors group">
->                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Guide to Understanding Cody</h4>
->                     <p class="text-slate-400 text-sm">A comprehensive guide for friends, colleagues, and loved ones to foster deeper connection.</p>
->                 </a>
->                 <a href="inclusive-collaboration-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500 transition-colors group">
->                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400">Inclusive Collaboration Guide</h4>
->                     <p class="text-slate-400 text-sm">Actionable best practices for managers and team members to build inclusive teams.</p>
->                 </a>
->             </div>
->         </div>
->     </section>
-> 
->     <footer class="bg-slate-950 py-8 text-center text-slate-600 text-sm border-t border-slate-900">
->         <p>Created with <i data-lucide="heart" class="inline w-3 h-3 text-emerald-900"></i> for the Advocates.</p>
->     </footer>
-> 
->     <script>
->         lucide.createIcons();
->     </script>
-> </body>
+> cursor is tripping give me a prompt for gemini to make the main landing index.html that setup up the roadmap or the trail to take, then each section it the setup like this one. <!DOCTYPE html>
+
+> <html lang="en" class="scroll-smooth">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>Understanding the INFJ | The Advocate</title>
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+
+>     <style>
+
+>         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+>         
+
+>         :root {
+
+>             --infj-dark: #0f172a;
+
+>             --infj-purple: #6b21a8;
+
+>             --infj-green: #059669;
+
+>         }
+
+>         
+
+>         body {
+
+>             font-family: 'Inter', sans-serif;
+
+>             background-color: var(--infj-dark);
+
+>             color: #e2e8f0;
+
+>         }
+
+> 
+
+>         h1, h2, h3 {
+
+>             font-family: 'Inter', sans-serif;
+
+>             letter-spacing: -0.025em;
+
+>         }
+
+> 
+
+>         .mono-accent {
+
+>             font-family: 'JetBrains Mono', monospace;
+
+>         }
+
+> 
+
+>         /* Custom Scrollbar */
+
+>         ::-webkit-scrollbar {
+
+>             width: 8px;
+
+>         }
+
+>         ::-webkit-scrollbar-track {
+
+>             background: #1e293b;
+
+>         }
+
+>         ::-webkit-scrollbar-thumb {
+
+>             background: #475569;
+
+>             border-radius: 4px;
+
+>         }
+
+>         ::-webkit-scrollbar-thumb:hover {
+
+>             background: #64748b;
+
+>         }
+
+> 
+
+>         .card-hover {
+
+>             transition: all 0.3s ease;
+
+>         }
+
+>         .card-hover:hover {
+
+>             transform: translateY(-4px);
+
+>             box-shadow: 0 10px 30px -10px rgba(107, 33, 168, 0.4);
+
+>             border-color: #d8b4fe;
+
+>         }
+
+>     </style>
+
+> </head>
+
+> <body class="bg-slate-950 text-slate-300 antialiased selection:bg-emerald-500 selection:text-white">
+
+> 
+
+>     <!-- Hero Section -->
+
+>     <header class="relative overflow-hidden bg-slate-900 border-b border-slate-800">
+
+>         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMTY3LCAyNDMsIDIwOCwgMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+
+>         <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-900 rounded-full blur-3xl opacity-20"></div>
+
+>         <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-emerald-900 rounded-full blur-3xl opacity-10"></div>
+
+> 
+
+>         <div class="container mx-auto px-6 py-24 relative z-10 max-w-5xl">
+
+>             <span class="mono-accent text-emerald-500 text-sm font-bold tracking-widest uppercase mb-4 block">The Rarest Type</span>
+
+>             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+
+>                 The <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-emerald-400">Advocate</span>.
+
+>             </h1>
+
+>             <p class="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed">
+
+>                 Intuitive. Empathic. Mystical. <br>
+
+>                 Understanding the deep, psychic-like intuition of the <strong>INFJ</strong>.
+
+>             </p>
+
+>         </div>
+
+>     </header>
+
+> 
+
+>     <!-- Main Content -->
+
+>     <main class="container mx-auto px-6 py-16 max-w-5xl space-y-24">
+
+> 
+
+>         <!-- Video for people who don't want to read -->
+
+>         <section class="bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-800">
+
+>             <p class="text-sm font-semibold text-slate-400 mb-4 text-center">Watch: INFJ Playlist (if you don't want to read)</p>
+
+>             <div class="relative w-full max-w-3xl mx-auto" style="aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden;">
+
+>                 <iframe 
+
+>                     src="https://www.youtube.com/embed/videoseries?list=PL41I8OadmxxgNnsU7LykwtYmCrqPHQ7vv" 
+
+>                     title="YouTube video player" 
+
+>                     frameborder="0" 
+
+>                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+>                     referrerpolicy="strict-origin-when-cross-origin"
+
+>                     allowfullscreen
+
+>                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+
+>                 </iframe>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Intro -->
+
+>         <section class="grid md:grid-cols-12 gap-12 items-center">
+
+>             <div class="md:col-span-8">
+
+>                 <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+
+>                     <i data-lucide="sparkles" class="text-purple-400"></i>
+
+>                     Who Are INFJs?
+
+>                 </h2>
+
+>                 <p class="text-lg leading-relaxed text-slate-300 mb-6">
+
+>                     INFJ stands for <strong class="text-emerald-300">Introverted, Intuitive, Feeling, and Judging</strong>. 
+
+>                     Often called "The Advocate" or "The Mystic," they are the rarest personality type (under 2%). 
+
+>                     They possess an uncanny ability to read people and situations, often seeing patterns and outcomes so clearly it feels like a psychic premonition.
+
+>                 </p>
+
+>                 <div class="flex gap-4 flex-wrap">
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Empathy</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Intuition</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Harmony</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Insight</span>
+
+>                 </div>
+
+>             </div>
+
+>             <div class="md:col-span-4 bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl">
+
+>                 <div class="space-y-4">
+
+>                     <div class="flex justify-between items-center">
+
+>                         <span class="text-slate-400">Rarity</span>
+
+>                         <span class="text-white font-bold mono-accent">< 1.5%</span>
+
+>                     </div>
+
+>                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+
+>                         <div class="bg-gradient-to-r from-purple-500 to-emerald-500 h-full w-[1.5%]"></div>
+
+>                     </div>
+
+>                     <div class="pt-4 border-t border-slate-800">
+
+>                         <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-slate-500">I</span>
+
+>                             <span class="text-sm text-slate-500">E</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-slate-500">N</span>
+
+>                             <span class="text-sm text-slate-500">S</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-emerald-400 font-bold">F</span>
+
+>                             <span class="text-sm text-slate-500">T</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center">
+
+>                             <span class="text-sm text-slate-500">J</span>
+
+>                             <span class="text-sm text-slate-500">P</span>
+
+>                         </div>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Key Characteristics Grid -->
+
+>         <section>
+
+>             <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Key Characteristics</h2>
+
+>             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+>                 
+
+>                 <!-- Card 1 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-900/30 group-hover:text-purple-400 transition-colors">
+
+>                         <i data-lucide="eye"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Psychic-Like Intuition</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They process unconscious patterns instantly. They often "know" things without being able to explain logically how they know.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 2 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-900/30 group-hover:text-emerald-400 transition-colors">
+
+>                         <i data-lucide="waves"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Emotional Absorbency</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They don't just sympathize; they physically <em>feel</em> others' emotions. Crowded rooms can be exhausting emotional noise.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 3 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-900/30 group-hover:text-blue-400 transition-colors">
+
+>                         <i data-lucide="heart-handshake"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Deeply Relational</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They crave profound connections. Small talk feels like torture; they want to know your soul, your fears, and your dreams.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 4 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-900/30 group-hover:text-red-400 transition-colors">
+
+>                         <i data-lucide="door-closed"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">The Door Slam</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         Extremely patient, but once a line is crossed, they can cut someone out of their life completely to protect their peace.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 5 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-900/30 group-hover:text-amber-400 transition-colors">
+
+>                         <i data-lucide="theater"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Social Chameleons</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They naturally mirror the energy around them to maintain harmony, sometimes losing track of their own feelings in the process.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                  <!-- Card 6 -->
+
+>                  <div class="bg-gradient-to-br from-emerald-900 to-slate-900 p-6 rounded-xl border border-slate-800 card-hover flex flex-col justify-center items-center text-center">
+
+>                     <h3 class="text-xl font-bold text-white mb-2">The Mystic</h3>
+
+>                     <p class="text-emerald-200 text-sm">"I don't just see the person. I see their path."</p>
+
+>                 </div>
+
+> 
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Connecting Section -->
+
+>         <section class="bg-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800">
+
+>             <h2 class="text-3xl font-bold text-white mb-8">How to Connect</h2>
+
+>             <div class="space-y-6">
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Be Authentic</h4>
+
+>                         <p class="text-slate-400 text-sm">They can spot a lie instantly. Vulnerability is the fastest way to their heart.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Skip the Small Talk</h4>
+
+>                         <p class="text-slate-400 text-sm">Dive deep. Ask about the meaning of life, the universe, or personal growth.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Respect Their Recharge Time</h4>
+
+>                         <p class="text-slate-400 text-sm">They absorb emotions. They need absolute silence to "wring out" the sponge.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Listen to Their Intuition</h4>
+
+>                         <p class="text-slate-400 text-sm">If they say "something feels off," believe them. They are almost always right.</p>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Struggles vs Gifts -->
+
+>         <section class="grid md:grid-cols-2 gap-12">
+
+>             <div>
+
+>                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+
+>                     <i data-lucide="cloud-rain" class="text-slate-400"></i> Struggles
+
+>                 </h2>
+
+>                 <ul class="space-y-4">
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">The "Weird" Feeling</strong>
+
+>                         <span class="text-slate-400 text-sm">Feeling like an alien because no one else sees the hidden patterns they see.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">One-Sided Relationships</strong>
+
+>                         <span class="text-slate-400 text-sm">They often act as therapists for others but feel they have no one to turn to.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">Perfectionism Paralysis</strong>
+
+>                         <span class="text-slate-400 text-sm">Their vision is so perfect that reality often feels disappointing.</span>
+
+>                     </li>
+
+>                 </ul>
+
+>             </div>
+
+>             <div>
+
+>                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+
+>                     <i data-lucide="star" class="text-emerald-400"></i> The Gifts
+
+>                 </h2>
+
+>                 <ul class="space-y-4">
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Uncanny Insight</strong>
+
+>                         <span class="text-slate-400 text-sm">Seeing the truth behind the mask. Predicting outcomes with scary accuracy.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Empathetic Healing</strong>
+
+>                         <span class="text-slate-400 text-sm">They can help others understand their own feelings better than they can.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Visionary Zeal</strong>
+
+>                         <span class="text-slate-400 text-sm">When they believe in a cause, they are unstoppable forces for good.</span>
+
+>                     </li>
+
+>                 </ul>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Final Thoughts -->
+
+>         <section class="text-center py-12 border-t border-slate-800">
+
+>             <h2 class="text-3xl font-bold text-white mb-6">Final Thoughts</h2>
+
+>             <p class="text-lg text-slate-300 max-w-3xl mx-auto italic">
+
+>                 "Being an INFJ means seeing the world in layers that others miss. It can be lonely, but your ability to see the soul of things is a rare and necessary gift."
+
+>             </p>
+
+>         </section>
+
+> 
+
+>         <!-- Video Embed -->
+
+>         <section class="bg-black/50 p-6 rounded-2xl border border-slate-800">
+
+>             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+
+>                 <i data-lucide="play-circle" class="text-red-500"></i> Video Insight
+
+>             </h3>
+
+>             <div class="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-xl" style="padding-bottom: 56.25%; height: 0;">
+
+>                 <iframe 
+
+>                     class="absolute top-0 left-0 w-full h-full"
+
+>                     src="https://www.youtube.com/embed/x7kfDcOSpCI?si=70xayXdpZbbIFbGg" 
+
+>                     title="YouTube video player" 
+
+>                     frameborder="0" 
+
+>                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+>                     allowfullscreen>
+
+>                 </iframe>
+
+>             </div>
+
+>             <p class="mt-4 text-xs text-slate-500 text-center">Video content provided by user. Covers the "Weird Phenomenons" of the INFJ type.</p>
+
+>         </section>
+
+> 
+
+>     </main>
+
+> 
+
+>     <!-- Related Guides -->
+
+>     <section class="container mx-auto px-6 py-12 max-w-5xl">
+
+>         <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+>             <h3 class="text-2xl font-bold text-white mb-6 text-center">Related Guides</h3>
+
+>             <div class="grid md:grid-cols-2 gap-6">
+
+>                 <a href="understanding-cody-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors group">
+
+>                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Guide to Understanding Cody</h4>
+
+>                     <p class="text-slate-400 text-sm">A comprehensive guide for friends, colleagues, and loved ones to foster deeper connection.</p>
+
+>                 </a>
+
+>                 <a href="inclusive-collaboration-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500 transition-colors group">
+
+>                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400">Inclusive Collaboration Guide</h4>
+
+>                     <p class="text-slate-400 text-sm">Actionable best practices for managers and team members to build inclusive teams.</p>
+
+>                 </a>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <footer class="bg-slate-950 py-8 text-center text-slate-600 text-sm border-t border-slate-900">
+
+>         <p>Created with <i data-lucide="heart" class="inline w-3 h-3 text-emerald-900"></i> for the Advocates.</p>
+
+>     </footer>
+
+> 
+
+>     <script>
+
+>         lucide.createIcons();
+
+>     </script>
+
+> </body>
+
+> </html> but with this, <!DOCTYPE html>
+
+> <html lang="en" class="scroll-smooth">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>Understanding the INFJ | The Advocate</title>
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+
+>     <style>
+
+>         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+>         
+
+>         :root {
+
+>             --infj-dark: #0f172a;
+
+>             --infj-purple: #6b21a8;
+
+>             --infj-green: #059669;
+
+>         }
+
+>         
+
+>         body {
+
+>             font-family: 'Inter', sans-serif;
+
+>             background-color: var(--infj-dark);
+
+>             color: #e2e8f0;
+
+>         }
+
+> 
+
+>         h1, h2, h3 {
+
+>             font-family: 'Inter', sans-serif;
+
+>             letter-spacing: -0.025em;
+
+>         }
+
+> 
+
+>         .mono-accent {
+
+>             font-family: 'JetBrains Mono', monospace;
+
+>         }
+
+> 
+
+>         /* Custom Scrollbar */
+
+>         ::-webkit-scrollbar {
+
+>             width: 8px;
+
+>         }
+
+>         ::-webkit-scrollbar-track {
+
+>             background: #1e293b;
+
+>         }
+
+>         ::-webkit-scrollbar-thumb {
+
+>             background: #475569;
+
+>             border-radius: 4px;
+
+>         }
+
+>         ::-webkit-scrollbar-thumb:hover {
+
+>             background: #64748b;
+
+>         }
+
+> 
+
+>         .card-hover {
+
+>             transition: all 0.3s ease;
+
+>         }
+
+>         .card-hover:hover {
+
+>             transform: translateY(-4px);
+
+>             box-shadow: 0 10px 30px -10px rgba(107, 33, 168, 0.4);
+
+>             border-color: #d8b4fe;
+
+>         }
+
+>     </style>
+
+> </head>
+
+> <body class="bg-slate-950 text-slate-300 antialiased selection:bg-emerald-500 selection:text-white">
+
+> 
+
+>     <!-- Hero Section -->
+
+>     <header class="relative overflow-hidden bg-slate-900 border-b border-slate-800">
+
+>         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMTY3LCAyNDMsIDIwOCwgMC4wNSkiLz48L3N2Zz4=')] opacity-20"></div>
+
+>         <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-900 rounded-full blur-3xl opacity-20"></div>
+
+>         <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-emerald-900 rounded-full blur-3xl opacity-10"></div>
+
+> 
+
+>         <div class="container mx-auto px-6 py-24 relative z-10 max-w-5xl">
+
+>             <span class="mono-accent text-emerald-500 text-sm font-bold tracking-widest uppercase mb-4 block">The Rarest Type</span>
+
+>             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+
+>                 The <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-emerald-400">Advocate</span>.
+
+>             </h1>
+
+>             <p class="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed">
+
+>                 Intuitive. Empathic. Mystical. <br>
+
+>                 Understanding the deep, psychic-like intuition of the <strong>INFJ</strong>.
+
+>             </p>
+
+>         </div>
+
+>     </header>
+
+> 
+
+>     <!-- Main Content -->
+
+>     <main class="container mx-auto px-6 py-16 max-w-5xl space-y-24">
+
+> 
+
+>         <!-- Video for people who don't want to read -->
+
+>         <section class="bg-slate-900 rounded-2xl p-6 md:p-8 border border-slate-800">
+
+>             <p class="text-sm font-semibold text-slate-400 mb-4 text-center">Watch: INFJ Playlist (if you don't want to read)</p>
+
+>             <div class="relative w-full max-w-3xl mx-auto" style="aspect-ratio: 16 / 9; background: #000; border-radius: 8px; overflow: hidden;">
+
+>                 <iframe 
+
+>                     src="https://www.youtube.com/embed/videoseries?list=PL41I8OadmxxgNnsU7LykwtYmCrqPHQ7vv" 
+
+>                     title="YouTube video player" 
+
+>                     frameborder="0" 
+
+>                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+>                     referrerpolicy="strict-origin-when-cross-origin"
+
+>                     allowfullscreen
+
+>                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+
+>                 </iframe>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Intro -->
+
+>         <section class="grid md:grid-cols-12 gap-12 items-center">
+
+>             <div class="md:col-span-8">
+
+>                 <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+
+>                     <i data-lucide="sparkles" class="text-purple-400"></i>
+
+>                     Who Are INFJs?
+
+>                 </h2>
+
+>                 <p class="text-lg leading-relaxed text-slate-300 mb-6">
+
+>                     INFJ stands for <strong class="text-emerald-300">Introverted, Intuitive, Feeling, and Judging</strong>. 
+
+>                     Often called "The Advocate" or "The Mystic," they are the rarest personality type (under 2%). 
+
+>                     They possess an uncanny ability to read people and situations, often seeing patterns and outcomes so clearly it feels like a psychic premonition.
+
+>                 </p>
+
+>                 <div class="flex gap-4 flex-wrap">
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Empathy</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Intuition</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Harmony</span>
+
+>                     <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-400">Insight</span>
+
+>                 </div>
+
+>             </div>
+
+>             <div class="md:col-span-4 bg-slate-900 p-8 rounded-2xl border border-slate-800 shadow-2xl">
+
+>                 <div class="space-y-4">
+
+>                     <div class="flex justify-between items-center">
+
+>                         <span class="text-slate-400">Rarity</span>
+
+>                         <span class="text-white font-bold mono-accent">< 1.5%</span>
+
+>                     </div>
+
+>                     <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+
+>                         <div class="bg-gradient-to-r from-purple-500 to-emerald-500 h-full w-[1.5%]"></div>
+
+>                     </div>
+
+>                     <div class="pt-4 border-t border-slate-800">
+
+>                         <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-slate-500">I</span>
+
+>                             <span class="text-sm text-slate-500">E</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-slate-500">N</span>
+
+>                             <span class="text-sm text-slate-500">S</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center mb-2">
+
+>                             <span class="text-sm text-emerald-400 font-bold">F</span>
+
+>                             <span class="text-sm text-slate-500">T</span>
+
+>                         </div>
+
+>                          <div class="flex justify-between items-center">
+
+>                             <span class="text-sm text-slate-500">J</span>
+
+>                             <span class="text-sm text-slate-500">P</span>
+
+>                         </div>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Key Characteristics Grid -->
+
+>         <section>
+
+>             <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-emerald-500 pl-4">Key Characteristics</h2>
+
+>             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+>                 
+
+>                 <!-- Card 1 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-900/30 group-hover:text-purple-400 transition-colors">
+
+>                         <i data-lucide="eye"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Psychic-Like Intuition</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They process unconscious patterns instantly. They often "know" things without being able to explain logically how they know.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 2 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-emerald-900/30 group-hover:text-emerald-400 transition-colors">
+
+>                         <i data-lucide="waves"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Emotional Absorbency</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They don't just sympathize; they physically <em>feel</em> others' emotions. Crowded rooms can be exhausting emotional noise.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 3 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-900/30 group-hover:text-blue-400 transition-colors">
+
+>                         <i data-lucide="heart-handshake"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Deeply Relational</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They crave profound connections. Small talk feels like torture; they want to know your soul, your fears, and your dreams.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 4 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-red-900/30 group-hover:text-red-400 transition-colors">
+
+>                         <i data-lucide="door-closed"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">The Door Slam</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         Extremely patient, but once a line is crossed, they can cut someone out of their life completely to protect their peace.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                 <!-- Card 5 -->
+
+>                 <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 card-hover group">
+
+>                     <div class="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-amber-900/30 group-hover:text-amber-400 transition-colors">
+
+>                         <i data-lucide="theater"></i>
+
+>                     </div>
+
+>                     <h3 class="text-xl font-bold text-white mb-3">Social Chameleons</h3>
+
+>                     <p class="text-slate-400 text-sm leading-relaxed">
+
+>                         They naturally mirror the energy around them to maintain harmony, sometimes losing track of their own feelings in the process.
+
+>                     </p>
+
+>                 </div>
+
+> 
+
+>                  <!-- Card 6 -->
+
+>                  <div class="bg-gradient-to-br from-emerald-900 to-slate-900 p-6 rounded-xl border border-slate-800 card-hover flex flex-col justify-center items-center text-center">
+
+>                     <h3 class="text-xl font-bold text-white mb-2">The Mystic</h3>
+
+>                     <p class="text-emerald-200 text-sm">"I don't just see the person. I see their path."</p>
+
+>                 </div>
+
+> 
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Connecting Section -->
+
+>         <section class="bg-slate-900 rounded-3xl p-8 md:p-12 border border-slate-800">
+
+>             <h2 class="text-3xl font-bold text-white mb-8">How to Connect</h2>
+
+>             <div class="space-y-6">
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Be Authentic</h4>
+
+>                         <p class="text-slate-400 text-sm">They can spot a lie instantly. Vulnerability is the fastest way to their heart.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Skip the Small Talk</h4>
+
+>                         <p class="text-slate-400 text-sm">Dive deep. Ask about the meaning of life, the universe, or personal growth.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Respect Their Recharge Time</h4>
+
+>                         <p class="text-slate-400 text-sm">They absorb emotions. They need absolute silence to "wring out" the sponge.</p>
+
+>                     </div>
+
+>                 </div>
+
+>                 <div class="flex gap-4 items-start">
+
+>                     <div class="mt-1 bg-emerald-500/10 p-2 rounded text-emerald-400"><i data-lucide="check" size="20"></i></div>
+
+>                     <div>
+
+>                         <h4 class="text-white font-semibold">Listen to Their Intuition</h4>
+
+>                         <p class="text-slate-400 text-sm">If they say "something feels off," believe them. They are almost always right.</p>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Struggles vs Gifts -->
+
+>         <section class="grid md:grid-cols-2 gap-12">
+
+>             <div>
+
+>                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+
+>                     <i data-lucide="cloud-rain" class="text-slate-400"></i> Struggles
+
+>                 </h2>
+
+>                 <ul class="space-y-4">
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">The "Weird" Feeling</strong>
+
+>                         <span class="text-slate-400 text-sm">Feeling like an alien because no one else sees the hidden patterns they see.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">One-Sided Relationships</strong>
+
+>                         <span class="text-slate-400 text-sm">They often act as therapists for others but feel they have no one to turn to.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-slate-600">
+
+>                         <strong class="block text-slate-200">Perfectionism Paralysis</strong>
+
+>                         <span class="text-slate-400 text-sm">Their vision is so perfect that reality often feels disappointing.</span>
+
+>                     </li>
+
+>                 </ul>
+
+>             </div>
+
+>             <div>
+
+>                 <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+
+>                     <i data-lucide="star" class="text-emerald-400"></i> The Gifts
+
+>                 </h2>
+
+>                 <ul class="space-y-4">
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Uncanny Insight</strong>
+
+>                         <span class="text-slate-400 text-sm">Seeing the truth behind the mask. Predicting outcomes with scary accuracy.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Empathetic Healing</strong>
+
+>                         <span class="text-slate-400 text-sm">They can help others understand their own feelings better than they can.</span>
+
+>                     </li>
+
+>                     <li class="bg-slate-900 p-4 rounded-lg border-l-2 border-emerald-500">
+
+>                         <strong class="block text-slate-200">Visionary Zeal</strong>
+
+>                         <span class="text-slate-400 text-sm">When they believe in a cause, they are unstoppable forces for good.</span>
+
+>                     </li>
+
+>                 </ul>
+
+>             </div>
+
+>         </section>
+
+> 
+
+>         <!-- Final Thoughts -->
+
+>         <section class="text-center py-12 border-t border-slate-800">
+
+>             <h2 class="text-3xl font-bold text-white mb-6">Final Thoughts</h2>
+
+>             <p class="text-lg text-slate-300 max-w-3xl mx-auto italic">
+
+>                 "Being an INFJ means seeing the world in layers that others miss. It can be lonely, but your ability to see the soul of things is a rare and necessary gift."
+
+>             </p>
+
+>         </section>
+
+> 
+
+>         <!-- Video Embed -->
+
+>         <section class="bg-black/50 p-6 rounded-2xl border border-slate-800">
+
+>             <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+
+>                 <i data-lucide="play-circle" class="text-red-500"></i> Video Insight
+
+>             </h3>
+
+>             <div class="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-xl" style="padding-bottom: 56.25%; height: 0;">
+
+>                 <iframe 
+
+>                     class="absolute top-0 left-0 w-full h-full"
+
+>                     src="https://www.youtube.com/embed/x7kfDcOSpCI?si=70xayXdpZbbIFbGg" 
+
+>                     title="YouTube video player" 
+
+>                     frameborder="0" 
+
+>                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+
+>                     allowfullscreen>
+
+>                 </iframe>
+
+>             </div>
+
+>             <p class="mt-4 text-xs text-slate-500 text-center">Video content provided by user. Covers the "Weird Phenomenons" of the INFJ type.</p>
+
+>         </section>
+
+> 
+
+>     </main>
+
+> 
+
+>     <!-- Related Guides -->
+
+>     <section class="container mx-auto px-6 py-12 max-w-5xl">
+
+>         <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+
+>             <h3 class="text-2xl font-bold text-white mb-6 text-center">Related Guides</h3>
+
+>             <div class="grid md:grid-cols-2 gap-6">
+
+>                 <a href="understanding-cody-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-purple-500 transition-colors group">
+
+>                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Guide to Understanding Cody</h4>
+
+>                     <p class="text-slate-400 text-sm">A comprehensive guide for friends, colleagues, and loved ones to foster deeper connection.</p>
+
+>                 </a>
+
+>                 <a href="inclusive-collaboration-guide.html" class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-emerald-500 transition-colors group">
+
+>                     <h4 class="text-lg font-bold text-white mb-2 group-hover:text-emerald-400">Inclusive Collaboration Guide</h4>
+
+>                     <p class="text-slate-400 text-sm">Actionable best practices for managers and team members to build inclusive teams.</p>
+
+>                 </a>
+
+>             </div>
+
+>         </div>
+
+>     </section>
+
+> 
+
+>     <footer class="bg-slate-950 py-8 text-center text-slate-600 text-sm border-t border-slate-900">
+
+>         <p>Created with <i data-lucide="heart" class="inline w-3 h-3 text-emerald-900"></i> for the Advocates.</p>
+
+>     </footer>
+
+> 
+
+>     <script>
+
+>         lucide.createIcons();
+
+>     </script>
+
+> </body>
+
 > </html>
 
 ### Assistant
@@ -2393,60 +3623,114 @@ canonical_ref: ""
 > - a **Gemini prompt for one module page** using this structure so you can just change the folder name + module title 7 times.
 
 ### User
-> heres the current mess. ```markdown
-> . 📂 qially-me-v2.0
-> ├── 📄 DEPLOYMENT.md
-> ├── 📄 Episode,Prompt.csv
-> ├── 📄 README.md
-> ├── 📄 build.py
-> ├── 📄 cloudflare-pages-config.md
-> ├── 📄 crisis-analysis.html
-> └── 📂 docs/
-> │  ├── 📄 MWBS.md
-> │  ├── 📄 dangerous_cycles_explained.html
-> ├── 📄 faith.html
-> ├── 📄 health.html
-> ├── 📄 identity.html
-> └── 📂 images/
-> │  ├── 📄 connection_with_codys_world_infographic.png
-> │  ├── 📄 cover.jpg
-> │  ├── 📄 favicon.png
-> │  ├── 📄 profile.jpg
-> ├── 📄 inclusive-collaboration-guide.html
-> ├── 📄 index.html
-> ├── 📄 inftj-personality.html
-> ├── 📄 manual-to-me.html
-> ├── 📄 mwbs-calculator.html
-> ├── 📄 mwbs-documentation.html
-> ├── 📄 mwbs-graph-view.html
-> └── 📂 projects/
-> ├── 📄 projects.html
-> │  ├── 📄 713-complete-narrative.md
-> │  ├── 📄 713-series.html
-> │  ├── 📄 713-summary-for-dad.md
-> │  ├── 📄 713-timeline-patterns-analysis.md
-> │  ├── 📄 angelas-awakening.html
-> │  ├── 📄 bankruptcy.html
-> │  ├── 📄 breaking-silence.html
-> │  ├── 📄 funny-video.html
-> │  ├── 📄 joels-immigration-case.html
-> │  ├── 📄 love-without-carrying.html
-> │  ├── 📄 manual-to-me.html
-> │  ├── 📄 mirrors-between-us.html
-> │  ├── 📄 summary-for-dad.html
-> └── 📂 sections/
-> ├── 📄 site_config.json
-> └── 📂 status-updates/
-> │  ├── 📄 2025-01-15-current-status.md
-> │  ├── 📄 2025-12-17-lights-scheduled-off.md
-> │  ├── 📄 README.md
-> ├── 📄 status.json
-> ├── 📄 story.html
-> └── 📂 templates/
-> │  ├── 📄 index_base.html
-> ├── 📄 understanding-cody-guide.html
-> ├── 📄 update_status.py
-> └── 📄 work.html
+> heres the current mess. ```markdown
+
+> . 📂 qially-me-v2.0
+
+> ├── 📄 DEPLOYMENT.md
+
+> ├── 📄 Episode,Prompt.csv
+
+> ├── 📄 README.md
+
+> ├── 📄 build.py
+
+> ├── 📄 cloudflare-pages-config.md
+
+> ├── 📄 crisis-analysis.html
+
+> └── 📂 docs/
+
+> │  ├── 📄 MWBS.md
+
+> │  ├── 📄 dangerous_cycles_explained.html
+
+> ├── 📄 faith.html
+
+> ├── 📄 health.html
+
+> ├── 📄 identity.html
+
+> └── 📂 images/
+
+> │  ├── 📄 connection_with_codys_world_infographic.png
+
+> │  ├── 📄 cover.jpg
+
+> │  ├── 📄 favicon.png
+
+> │  ├── 📄 profile.jpg
+
+> ├── 📄 inclusive-collaboration-guide.html
+
+> ├── 📄 index.html
+
+> ├── 📄 inftj-personality.html
+
+> ├── 📄 manual-to-me.html
+
+> ├── 📄 mwbs-calculator.html
+
+> ├── 📄 mwbs-documentation.html
+
+> ├── 📄 mwbs-graph-view.html
+
+> └── 📂 projects/
+
+> ├── 📄 projects.html
+
+> │  ├── 📄 713-complete-narrative.md
+
+> │  ├── 📄 713-series.html
+
+> │  ├── 📄 713-summary-for-dad.md
+
+> │  ├── 📄 713-timeline-patterns-analysis.md
+
+> │  ├── 📄 angelas-awakening.html
+
+> │  ├── 📄 bankruptcy.html
+
+> │  ├── 📄 breaking-silence.html
+
+> │  ├── 📄 funny-video.html
+
+> │  ├── 📄 joels-immigration-case.html
+
+> │  ├── 📄 love-without-carrying.html
+
+> │  ├── 📄 manual-to-me.html
+
+> │  ├── 📄 mirrors-between-us.html
+
+> │  ├── 📄 summary-for-dad.html
+
+> └── 📂 sections/
+
+> ├── 📄 site_config.json
+
+> └── 📂 status-updates/
+
+> │  ├── 📄 2025-01-15-current-status.md
+
+> │  ├── 📄 2025-12-17-lights-scheduled-off.md
+
+> │  ├── 📄 README.md
+
+> ├── 📄 status.json
+
+> ├── 📄 story.html
+
+> └── 📂 templates/
+
+> │  ├── 📄 index_base.html
+
+> ├── 📄 understanding-cody-guide.html
+
+> ├── 📄 update_status.py
+
+> └── 📄 work.html
+
 > ```
 
 ### Assistant
@@ -2680,81 +3964,156 @@ canonical_ref: ""
 > **“Gina, build Module 1 in the new structure.”**
 
 ### User
-> ```markdown
-> . 📂 qially-me-v2.0
-> ├── 📄 README.md
-> ├── 📄 build.py
-> └── 📂 docs/
-> │  ├── 📄 713-complete-narrative.md
-> │  ├── 📄 713-summary-for-dad.md
-> │  ├── 📄 713-timeline-patterns-analysis.md
-> │  ├── 📄 DEPLOYMENT.md
-> │  ├── 📄 MWBS.md
-> │  ├── 📄 cloudflare-pages-config.md
-> └── 📂 guides/
-> │  ├── 📄 dangerous_cycles_explained.html
-> │  ├── 📄 inclusive-collaboration-guide.html
-> │  ├── 📄 inftj-personality.html
-> │  ├── 📄 manual-to-me.html
-> │  ├── 📄 understanding-cody-guide.html
-> └── 📂 images/
-> │  ├── 📄 connection_with_codys_world_infographic.png
-> │  ├── 📄 cover.jpg
-> │  ├── 📄 favicon.png
-> │  ├── 📄 profile.jpg
-> ├── 📄 index.html
-> └── 📂 modules/
-> │  └── 📂 01-foundations-orientation/
-> │    ├── 📄 identity.html
-> │    ├── 📄 index.html
-> │  └── 📂 02-brain-health-energy/
-> │    ├── 📄 health.html
-> │    ├── 📄 index.html
-> │  └── 📂 03-relationships-boundaries/
-> │    ├── 📄 index.html
-> │    ├── 📄 joels-immigration-case.html
-> │    ├── 📄 love-without-carrying.html
-> │  └── 📂 04-work-money-systems/
-> │    ├── 📄 bankruptcy.html
-> │    ├── 📄 index.html
-> │    ├── 📄 work.html
-> │  └── 📂 05-safety-overwhelm-crisis/
-> │    ├── 📄 breaking-silence.html
-> │    ├── 📄 crisis-analysis.html
-> │    ├── 📄 index.html
-> │  └── 📂 06-family-history-context/
-> │    ├── 📄 index.html
-> │    ├── 📄 mirrors-between-us.html
-> │  └── 📂 07-meaning-values-purpose/
-> │    ├── 📄 faith.html
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 projects/
-> │  └── 📂 713-series/
-> │    ├── 📄 713-series.html
-> │    ├── 📄 index.html
-> │  └── 📂 Awakening/
-> │    ├── 📄 index.html
-> │  └── 📂 Need-a-laugh/
-> │    ├── 📄 index.html
-> │  └── 📂 Summary-for-dad/
-> │    ├── 📄 index.html
-> │  └── 📂 What-We-Carry/
-> │    ├── 📄 index.html
-> │    ├── 📄 mwbs-calculator.html
-> │    ├── 📄 mwbs-graph-view.html
-> │  ├── 📄 index.html
-> ├── 📄 site_config.json
-> └── 📂 static/
-> │  ├── 📄 README.md
-> │  └── 📂 status-updates/
-> │    ├── 📄 2025-01-15-current-status.md
-> │    ├── 📄 2025-12-17-lights-scheduled-off.md
-> │  └── 📂 templates/
-> ├── 📄 status.json
-> └── 📂 templates/
-> │  ├── 📄 index_base.html
-> └── 📄 update_status.py
+> ```markdown
+
+> . 📂 qially-me-v2.0
+
+> ├── 📄 README.md
+
+> ├── 📄 build.py
+
+> └── 📂 docs/
+
+> │  ├── 📄 713-complete-narrative.md
+
+> │  ├── 📄 713-summary-for-dad.md
+
+> │  ├── 📄 713-timeline-patterns-analysis.md
+
+> │  ├── 📄 DEPLOYMENT.md
+
+> │  ├── 📄 MWBS.md
+
+> │  ├── 📄 cloudflare-pages-config.md
+
+> └── 📂 guides/
+
+> │  ├── 📄 dangerous_cycles_explained.html
+
+> │  ├── 📄 inclusive-collaboration-guide.html
+
+> │  ├── 📄 inftj-personality.html
+
+> │  ├── 📄 manual-to-me.html
+
+> │  ├── 📄 understanding-cody-guide.html
+
+> └── 📂 images/
+
+> │  ├── 📄 connection_with_codys_world_infographic.png
+
+> │  ├── 📄 cover.jpg
+
+> │  ├── 📄 favicon.png
+
+> │  ├── 📄 profile.jpg
+
+> ├── 📄 index.html
+
+> └── 📂 modules/
+
+> │  └── 📂 01-foundations-orientation/
+
+> │    ├── 📄 identity.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 02-brain-health-energy/
+
+> │    ├── 📄 health.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 03-relationships-boundaries/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 joels-immigration-case.html
+
+> │    ├── 📄 love-without-carrying.html
+
+> │  └── 📂 04-work-money-systems/
+
+> │    ├── 📄 bankruptcy.html
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 work.html
+
+> │  └── 📂 05-safety-overwhelm-crisis/
+
+> │    ├── 📄 breaking-silence.html
+
+> │    ├── 📄 crisis-analysis.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 06-family-history-context/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 mirrors-between-us.html
+
+> │  └── 📂 07-meaning-values-purpose/
+
+> │    ├── 📄 faith.html
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 projects/
+
+> │  └── 📂 713-series/
+
+> │    ├── 📄 713-series.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 Awakening/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 Need-a-laugh/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 Summary-for-dad/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 What-We-Carry/
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 mwbs-calculator.html
+
+> │    ├── 📄 mwbs-graph-view.html
+
+> │  ├── 📄 index.html
+
+> ├── 📄 site_config.json
+
+> └── 📂 static/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 status-updates/
+
+> │    ├── 📄 2025-01-15-current-status.md
+
+> │    ├── 📄 2025-12-17-lights-scheduled-off.md
+
+> │  └── 📂 templates/
+
+> ├── 📄 status.json
+
+> └── 📂 templates/
+
+> │  ├── 📄 index_base.html
+
+> └── 📄 update_status.py
+
 > ```
 
 ### Assistant

@@ -4,13 +4,13 @@ title: QiCode Root Doctrine Cleanup
 slug: cleanup-2026-06-30-qicode-root
 summary: Moved QiCode root doctrine and overview files into their correct homes, leaving only the QiCode index at root.
 status: complete
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:42-04:00"
+tags: []
   - cleanup
   - qicode
   - qispark
 source_type: manual
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 05f6b1d190854da8b0a175220cea27f4
 canonical_ref: ""
 template_key: master-template
 ---

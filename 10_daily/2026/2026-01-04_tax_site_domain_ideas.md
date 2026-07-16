@@ -3,9 +3,9 @@ layout: page
 title: "Tax Site Domain Ideas"
 slug: "tax_site_domain_ideas"
 created_at: "2026-01-04 13:59:23"
-updated_at: "2026-01-04 13:59:23"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1058,21 +1058,36 @@ canonical_ref: ""
 > Say the word and I’ll refine.
 
 ### User
-> etails
-> Title
-> Any amount
-> Exact amount
-> Frequency
-> One-time
-> Description (optional)
-> 0/400 characters
-> Upload image
-> Checkout
-> Custom fields
-> 
-> Tipping
-> 
-> Confirmation
+> etails
+
+> Title
+
+> Any amount
+
+> Exact amount
+
+> Frequency
+
+> One-time
+
+> Description (optional)
+
+> 0/400 characters
+
+> Upload image
+
+> Checkout
+
+> Custom fields
+
+> 
+
+> Tipping
+
+> 
+
+> Confirmation
+
 > Redirect to a website after checkout
 
 ### Assistant

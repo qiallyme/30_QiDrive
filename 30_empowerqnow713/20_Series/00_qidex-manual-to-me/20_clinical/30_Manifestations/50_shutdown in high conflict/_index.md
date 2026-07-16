@@ -5,10 +5,10 @@ status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260701-200047"
 layout: page
-slug: ""
+slug: 50-shutdown-in-high-conflict
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 910ad02e4f6f4a10972b0319b5919a4d
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0007 App Managed Storage And Sync
-slug: ""
+slug: 0007-app-managed-storage-and-sync
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: bd6bbdd6c33c4b768b558faf243bd6e2
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,9 +3,9 @@ layout: page
 title: "Offer.hoosierbuyers.com legit?"
 slug: "offerhoosierbuyerscom_legit"
 created_at: "2025-12-04 17:21:13"
-updated_at: "2025-12-04 17:21:13"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

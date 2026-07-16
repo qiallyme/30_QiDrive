@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Onset of Escalating Abusive Behavior"
 slug: "luis_onset_of_escalating_abusive_behavior"
 created_at: "2024-10-01"
-updated_at: "2024-10-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 02b94d4976f0442fb83f141c51eff56a
 canonical_ref: ""
 ---
 

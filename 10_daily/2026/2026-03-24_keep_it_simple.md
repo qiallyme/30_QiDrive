@@ -3,9 +3,9 @@ layout: page
 title: "Keep It Simple"
 slug: "keep_it_simple"
 created_at: "2026-03-24 09:56:37"
-updated_at: "2026-03-24 09:56:37"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

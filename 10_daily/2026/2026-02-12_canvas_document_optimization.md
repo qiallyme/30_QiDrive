@@ -3,9 +3,9 @@ layout: page
 title: "Canvas Document Optimization"
 slug: "canvas_document_optimization"
 created_at: "2026-02-12 06:38:13"
-updated_at: "2026-02-12 06:38:13"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1751,100 +1751,194 @@ canonical_ref: ""
 > Answer that and we know whether to escalate or recalibrate.
 
 ### User
-> these are not all the same accounts, Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 4877....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 08/26/2020
-> 
-> Status
-> Paid, Closed/Never
-> late.
-> 
-> Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 4877....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 08/26/2020
-> 
-> Status
-> Paid, Closed/Never
-> late.
-> 
-> Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 4877....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 08/24/2020
-> 
-> Status
-> Paid, Closed/Never
-> late.
-> 
-> Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 661563L....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 07/02/2020
-> 
-> Status
-> Paid, Closed/Never
-> late.
-> 
-> Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 661563L....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 06/29/2021
-> 
-> Status
-> Paid, Closed/Never
-> late.
-> 
-> Account name
-> FINANCIAL CNTR FIRST C U
-> 
-> Account number
-> 6653....
-> 
-> Recent balance
-> Not reported
-> 
-> Date opened
-> 08/24/2020
-> 
-> Status
-> Paid, Closed/Never
+> these are not all the same accounts, Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 4877....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 08/26/2020
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
+> late.
+
+> 
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 4877....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 08/26/2020
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
+> late.
+
+> 
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 4877....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 08/24/2020
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
+> late.
+
+> 
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 661563L....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 07/02/2020
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
+> late.
+
+> 
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 661563L....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 06/29/2021
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
+> late.
+
+> 
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> 
+
+> Account number
+
+> 6653....
+
+> 
+
+> Recent balance
+
+> Not reported
+
+> 
+
+> Date opened
+
+> 08/24/2020
+
+> 
+
+> Status
+
+> Paid, Closed/Never
+
 > late., so even if they go by the first part of the account number there is atleast 3 i think that have a different acount number paid and in good standing.
 
 ### Assistant
@@ -2286,30 +2380,54 @@ canonical_ref: ""
 > We move once we see the full pattern.
 
 ### User
-> my equifax has drop another 23 points since my complaint on the ninth, Feb 12, 2026, 8:43 AM
-> Recording (2)
-> Play
-> 
-> 
-> 00:00
-> 03:23
-> Mute
-> 
-> Settings
-> (0:00) Okay, I'm just going to record this because it's going to take me too much time to try to (0:04) copy my past everything since I can't pull a full credit report without paying for one and I'm broke. (0:10) Why is this? Hello? Okay. (0:18) Hello.
-> Okay, anyways. So, on my credit report, I'm showing some TransUnion from WalletHub. (0:25) It was last updated on the 2nd, I think.
-> Anyways. So, I do have a Credit Financial Center (0:33) entry here. This was an unsecured loan when they gave me a loan.
-> This was from last reported June (0:39) 29th, 2021. The account number was 48778340. So, that had nothing to do with this deletion.
-> (0:46) I shouldn't have touched it. Okay, that one needs to be replaced. (0:51) Then, the next one was Financial Center Credit Union.
-> This was for an auto loan. It was April (0:58) 9th, 2021 was the last report and the account number is 66536740. That one also was paid in (1:06) full with no missed payments.
-> That should have been not deleted. The next one was also an auto (1:12) loan. This account number is 661563L1220.
-> Now, that one looks like it is tied to that same (1:23) trade line because they didn't give me the full account number when I did the dispute, (1:29) but tell me if I'm wrong. This one is the account number 661563L1220 auto loan. (1:38) It's been closed since 2022.
-> (1:42) Now, the home loan. There's a home loan on here that has account number 48778329. (1:48) That was the second mortgage that was paid in full and good standing all payments.
-> (1:54) Then, there's another one 48778328. That's a home equity 125600 last reported June 29th, (2:03) 2021. That was also paid in full and no missed payments because I refinanced.
-> (2:09) There's another one 661563L1510. Now, this is the one that was I think was converted (2:17) or something on July 2nd, 2022. So, this was the one that they refinanced with the same account (2:23) number later.
-> So, if they deleted this one too because technically it's connected, they were (2:28) just redoing the numbers or whatever for the last one, then that's fine. I get that because (2:34) those are connected, but the ones before that were not connected. Then, the next one for the (2:41) 24848, they say, oh, it says it's been charged off as of February 4th, 2026.
-> Now, if they (2:49) technically bought the house and it's been paid for and the sheriff says this is taken care of, (2:54) it should have no balance on there. It should be a balance of zero. Same thing with the other (2:58) one that says I owe them $201,290 and it's saying I'm $65,000 past due.
-> (3:07) And the other one saying I'm $24,848 past due. So, really they're saying that I haven't paid (3:12) over $100,000 past due. There's no way in hell.
+> my equifax has drop another 23 points since my complaint on the ninth, Feb 12, 2026, 8:43 AM
+
+> Recording (2)
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 03:23
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) Okay, I'm just going to record this because it's going to take me too much time to try to (0:04) copy my past everything since I can't pull a full credit report without paying for one and I'm broke. (0:10) Why is this? Hello? Okay. (0:18) Hello.
+
+> Okay, anyways. So, on my credit report, I'm showing some TransUnion from WalletHub. (0:25) It was last updated on the 2nd, I think.
+
+> Anyways. So, I do have a Credit Financial Center (0:33) entry here. This was an unsecured loan when they gave me a loan.
+
+> This was from last reported June (0:39) 29th, 2021. The account number was 48778340. So, that had nothing to do with this deletion.
+
+> (0:46) I shouldn't have touched it. Okay, that one needs to be replaced. (0:51) Then, the next one was Financial Center Credit Union.
+
+> This was for an auto loan. It was April (0:58) 9th, 2021 was the last report and the account number is 66536740. That one also was paid in (1:06) full with no missed payments.
+
+> That should have been not deleted. The next one was also an auto (1:12) loan. This account number is 661563L1220.
+
+> Now, that one looks like it is tied to that same (1:23) trade line because they didn't give me the full account number when I did the dispute, (1:29) but tell me if I'm wrong. This one is the account number 661563L1220 auto loan. (1:38) It's been closed since 2022.
+
+> (1:42) Now, the home loan. There's a home loan on here that has account number 48778329. (1:48) That was the second mortgage that was paid in full and good standing all payments.
+
+> (1:54) Then, there's another one 48778328. That's a home equity 125600 last reported June 29th, (2:03) 2021. That was also paid in full and no missed payments because I refinanced.
+
+> (2:09) There's another one 661563L1510. Now, this is the one that was I think was converted (2:17) or something on July 2nd, 2022. So, this was the one that they refinanced with the same account (2:23) number later.
+
+> So, if they deleted this one too because technically it's connected, they were (2:28) just redoing the numbers or whatever for the last one, then that's fine. I get that because (2:34) those are connected, but the ones before that were not connected. Then, the next one for the (2:41) 24848, they say, oh, it says it's been charged off as of February 4th, 2026.
+
+> Now, if they (2:49) technically bought the house and it's been paid for and the sheriff says this is taken care of, (2:54) it should have no balance on there. It should be a balance of zero. Same thing with the other (2:58) one that says I owe them $201,290 and it's saying I'm $65,000 past due.
+
+> (3:07) And the other one saying I'm $24,848 past due. So, really they're saying that I haven't paid (3:12) over $100,000 past due. There's no way in hell.
+
 > That looks really bad on me.
 
 ### Assistant
@@ -6502,61 +6620,116 @@ canonical_ref: ""
 > Added final polish to complete and clarify the sentence, ensuring grammatical precision and consistency with the rest of the document.
 
 ### User
-> HERES A CRITIC FROM GEMINI. This changes everything. If you have done the math on the interest and it’s only a $200 variance, and you have **proof that they never published the notice of sale**, you have them on the ropes.
-> 
-> Failing to publish the Sheriff's Sale notice is a massive procedural defect. In many cases, it can render the sale voidable, but more importantly for you: **they cannot charge you a penny for a publication that never happened.**
-> 
-> Here are the specific, aggressive edits you need to make to the letter to call out "Scenario C" (the intentional zeroing out) and the lack of publication.
-> 
-> ### Edit 1: Rewrite "Section II: Surplus Computation"
-> 
-> *We need to clarify that your numbers **already** account for interest and that their numbers are mathematically impossible without fraud.*
-> 
-> **Replace the text in Section II with this:**
-> 
-> > **II. Surplus Computation**
-> > The surplus calculation below is derived from the Court-entered Judgment and verifiable post-judgment costs. **Crucially, this calculation accounts for statutory interest accrued through the date of sale (August 15, 2025).** Even providing a generous allowance for maximum statutory interest, the sale proceeds exceed the debt by over $11,000.
-> > It appears the payoff figure provided to the Sheriff was artificially inflated to exactly match the winning bid, effectively "zeroing out" the surplus. This practice is impermissible absent documented, incurred costs.
-> > **Calculation:**
-> > * **Judgment (Principal + Interest through 8/15/25):** $220,863.09 (inclusive of lawful interest)
-> > * **Clerk recording fee:** $35.00
-> > * **Sheriff fees:** $338.00
-> > * **Property taxes paid:** $7,600.81
-> > * **Publication Costs:** $0.00 (See Section III)
-> > 
-> > 
-> > **Total Lawful Deductions:** $228,836.90
-> > **Sheriff's Sale Price:** $240,464.20
-> > **Missing Surplus:** $11,627.30
-> 
-> ### Edit 2: Insert a "Publication" Clause in Section III
-> 
-> *Since you searched and found nothing, we need to weaponize that. This is your "smoking gun."*
-> 
-> **Add this new subsection inside "Section III. Legal Basis":**
-> 
-> > **Defect regarding Publication Costs:**
-> > A diligent search of public newspaper archives and electronic dockets reveals that, unlike other foreclosures conducted on this same date, **no Notice of Sheriff’s Sale was published for this specific property.**
-> > As you are aware, Indiana law requires publication of the sale. If FCFCU failed to publish, it cannot deduct publication fees from the proceeds. Furthermore, charging the debtor for a service that was never rendered constitutes a falsification of the payoff records.
-> > Consequently, my calculation above allocates **$0.00** for publication. If you claim a deduction for publication, you must produce the physical affidavit of publication and the newspaper clipping.
-> 
-> ### Edit 3: Sharpen the Demand in Section IV
-> 
-> *Make it clear that you know they are "padding" the numbers.*
-> 
-> **Update the bullet points in Section IV (B) to this:**
-> 
-> > B. Provide contemporaneous documentation (created at or before August 15, 2025) establishing lawful deductions, specifically:
-> > * **Proof of Publication:** A file-stamped copy of the Publisher’s Affidavit and the actual newspaper clipping. (Note: An internal invoice from a lawyer to the bank is *not* proof of publication).
-> > * **Interest Calculation:** A breakdown showing the exact interest rate and per-diem calculation used. The current discrepancy suggests an attempt to charge interest on fees or costs not permitted by statute.
-> > * **Sale-date payoff ledger:** Showing the precise line items that allowed the payoff to miraculously equal the bid amount.
-> > 
-> > 
-> 
-> ### Why this works
-> 
-> By stating **"unlike other foreclosures... no Notice was published for this property,"** you are telling them you are watching the docket like a hawk. You are signaling that if they force you to go to court, you won't just ask for the money—you will expose a procedural failure that could embarrass their legal team and compliance department.
-> 
+> HERES A CRITIC FROM GEMINI. This changes everything. If you have done the math on the interest and it’s only a $200 variance, and you have **proof that they never published the notice of sale**, you have them on the ropes.
+
+> 
+
+> Failing to publish the Sheriff's Sale notice is a massive procedural defect. In many cases, it can render the sale voidable, but more importantly for you: **they cannot charge you a penny for a publication that never happened.**
+
+> 
+
+> Here are the specific, aggressive edits you need to make to the letter to call out "Scenario C" (the intentional zeroing out) and the lack of publication.
+
+> 
+
+> ### Edit 1: Rewrite "Section II: Surplus Computation"
+
+> 
+
+> *We need to clarify that your numbers **already** account for interest and that their numbers are mathematically impossible without fraud.*
+
+> 
+
+> **Replace the text in Section II with this:**
+
+> 
+
+> > **II. Surplus Computation**
+
+> > The surplus calculation below is derived from the Court-entered Judgment and verifiable post-judgment costs. **Crucially, this calculation accounts for statutory interest accrued through the date of sale (August 15, 2025).** Even providing a generous allowance for maximum statutory interest, the sale proceeds exceed the debt by over $11,000.
+
+> > It appears the payoff figure provided to the Sheriff was artificially inflated to exactly match the winning bid, effectively "zeroing out" the surplus. This practice is impermissible absent documented, incurred costs.
+
+> > **Calculation:**
+
+> > * **Judgment (Principal + Interest through 8/15/25):** $220,863.09 (inclusive of lawful interest)
+
+> > * **Clerk recording fee:** $35.00
+
+> > * **Sheriff fees:** $338.00
+
+> > * **Property taxes paid:** $7,600.81
+
+> > * **Publication Costs:** $0.00 (See Section III)
+
+> > 
+
+> > 
+
+> > **Total Lawful Deductions:** $228,836.90
+
+> > **Sheriff's Sale Price:** $240,464.20
+
+> > **Missing Surplus:** $11,627.30
+
+> 
+
+> ### Edit 2: Insert a "Publication" Clause in Section III
+
+> 
+
+> *Since you searched and found nothing, we need to weaponize that. This is your "smoking gun."*
+
+> 
+
+> **Add this new subsection inside "Section III. Legal Basis":**
+
+> 
+
+> > **Defect regarding Publication Costs:**
+
+> > A diligent search of public newspaper archives and electronic dockets reveals that, unlike other foreclosures conducted on this same date, **no Notice of Sheriff’s Sale was published for this specific property.**
+
+> > As you are aware, Indiana law requires publication of the sale. If FCFCU failed to publish, it cannot deduct publication fees from the proceeds. Furthermore, charging the debtor for a service that was never rendered constitutes a falsification of the payoff records.
+
+> > Consequently, my calculation above allocates **$0.00** for publication. If you claim a deduction for publication, you must produce the physical affidavit of publication and the newspaper clipping.
+
+> 
+
+> ### Edit 3: Sharpen the Demand in Section IV
+
+> 
+
+> *Make it clear that you know they are "padding" the numbers.*
+
+> 
+
+> **Update the bullet points in Section IV (B) to this:**
+
+> 
+
+> > B. Provide contemporaneous documentation (created at or before August 15, 2025) establishing lawful deductions, specifically:
+
+> > * **Proof of Publication:** A file-stamped copy of the Publisher’s Affidavit and the actual newspaper clipping. (Note: An internal invoice from a lawyer to the bank is *not* proof of publication).
+
+> > * **Interest Calculation:** A breakdown showing the exact interest rate and per-diem calculation used. The current discrepancy suggests an attempt to charge interest on fees or costs not permitted by statute.
+
+> > * **Sale-date payoff ledger:** Showing the precise line items that allowed the payoff to miraculously equal the bid amount.
+
+> > 
+
+> > 
+
+> 
+
+> ### Why this works
+
+> 
+
+> By stating **"unlike other foreclosures... no Notice was published for this property,"** you are telling them you are watching the docket like a hawk. You are signaling that if they force you to go to court, you won't just ask for the money—you will expose a procedural failure that could embarrass their legal team and compliance department.
+
+> 
+
 > **Would you like to add a sentence threatening to report this to the Indiana Attorney General’s Consumer Protection Division if they don't respond?** (Sometimes that scares banks more than a lawsuit).
 
 ### Assistant
@@ -6572,29 +6745,52 @@ canonical_ref: ""
 > If you *confirm* publication truly never occurred, we can escalate that separately — but we don’t swing that bat until we’re certain.
 
 ### User
-> HERE IS GROKS CRITIQUE AND ALSO HOW ARE WE GOING TO HAVELT HE FACT IT HS TO GOT TO THE CLERK. **Major Issues Identified**
-> 
-> 1. **Misdirected Demand**  
->    Under Indiana Code § 32-30-10-14, any surplus after paying sale expenses, principal, interest, costs, and prior liens goes directly to the **court clerk**, who holds and distributes it upon claim or court order. The foreclosing lender (Financial Center First Credit Union) receives only the amount due under the judgment (including accrued interest and costs). They do not hold or control the surplus.  
->    **Action**: Redirect your claim to the Marion County Clerk's Office (Cause No. 49D03-2501-MF-002559). They have a specific surplus claim form available online. Download and submit it with proof of your identity and prior ownership.
-> 
-> 2. **Post-Judgment Interest Likely Reduces Surplus**  
->    The statute explicitly allows payment of "principal due, interest, and costs." Indiana foreclosure judgments typically accrue post-judgment interest (often at the contract rate or statutory rate) from the judgment date until the sale date. Your calculation caps at the entered judgment amount ($220,863.09) and rejects additional interest without contemporaneous ledgers. However, interest accrual is usually authorized by the judgment itself and does not require separate per diem ledgers for validity.  
->    **Action**: Check the court docket or decree for the interest provision. The actual amount paid to the lender was likely higher than $220,863.09, reducing or eliminating the claimed $11,627.30 surplus.
-> 
-> 3. **Potential Missing Deductions**  
->    Sale expenses (subdivision 1) often include publication fees, sheriff's commission (sometimes percentage-based), and other costs beyond the $338 sheriff and $35 clerk fees listed. Property taxes are correctly prioritized but must be verified as paid from proceeds.  
->    **Action**: Obtain the sheriff's return of sale or distribution report from the court file to confirm exact deductions.
-> 
-> 4. **Correct Procedure for Recovery**  
->    Indiana requires filing a claim or motion with the court/clerk, not a pre-litigation demand to the lender. Your letter is professionally drafted but sent to the wrong party and may be ignored or refuted on procedural grounds.
-> 
-> **Recommended Next Steps (Immediate Implementation)**  
-> - Visit marioncountyclerk.org or call the Clerk's Office to confirm if surplus funds are held under your cause number.  
-> - Download and file the official Surplus Claim Form (notifies lienholders if any).  
-> - Request the full court file or sheriff's deed/return for accurate distribution details.  
-> - If surplus exists and is disputed, file a motion in the original case for release.
-> 
+> HERE IS GROKS CRITIQUE AND ALSO HOW ARE WE GOING TO HAVELT HE FACT IT HS TO GOT TO THE CLERK. **Major Issues Identified**
+
+> 
+
+> 1. **Misdirected Demand**  
+
+>    Under Indiana Code § 32-30-10-14, any surplus after paying sale expenses, principal, interest, costs, and prior liens goes directly to the **court clerk**, who holds and distributes it upon claim or court order. The foreclosing lender (Financial Center First Credit Union) receives only the amount due under the judgment (including accrued interest and costs). They do not hold or control the surplus.  
+
+>    **Action**: Redirect your claim to the Marion County Clerk's Office (Cause No. 49D03-2501-MF-002559). They have a specific surplus claim form available online. Download and submit it with proof of your identity and prior ownership.
+
+> 
+
+> 2. **Post-Judgment Interest Likely Reduces Surplus**  
+
+>    The statute explicitly allows payment of "principal due, interest, and costs." Indiana foreclosure judgments typically accrue post-judgment interest (often at the contract rate or statutory rate) from the judgment date until the sale date. Your calculation caps at the entered judgment amount ($220,863.09) and rejects additional interest without contemporaneous ledgers. However, interest accrual is usually authorized by the judgment itself and does not require separate per diem ledgers for validity.  
+
+>    **Action**: Check the court docket or decree for the interest provision. The actual amount paid to the lender was likely higher than $220,863.09, reducing or eliminating the claimed $11,627.30 surplus.
+
+> 
+
+> 3. **Potential Missing Deductions**  
+
+>    Sale expenses (subdivision 1) often include publication fees, sheriff's commission (sometimes percentage-based), and other costs beyond the $338 sheriff and $35 clerk fees listed. Property taxes are correctly prioritized but must be verified as paid from proceeds.  
+
+>    **Action**: Obtain the sheriff's return of sale or distribution report from the court file to confirm exact deductions.
+
+> 
+
+> 4. **Correct Procedure for Recovery**  
+
+>    Indiana requires filing a claim or motion with the court/clerk, not a pre-litigation demand to the lender. Your letter is professionally drafted but sent to the wrong party and may be ignored or refuted on procedural grounds.
+
+> 
+
+> **Recommended Next Steps (Immediate Implementation)**  
+
+> - Visit marioncountyclerk.org or call the Clerk's Office to confirm if surplus funds are held under your cause number.  
+
+> - Download and file the official Surplus Claim Form (notifies lienholders if any).  
+
+> - Request the full court file or sheriff's deed/return for accurate distribution details.  
+
+> - If surplus exists and is disputed, file a motion in the original case for release.
+
+> 
+
 > This approach will efficiently position you to recover any entitled funds while avoiding unproductive correspondence with the lender. Note: This is not legal advice; consult Indiana counsel if needed for case-specific review.
 
 ### Assistant
@@ -7296,53 +7492,100 @@ canonical_ref: ""
 > When you’re ready, we pivot to the next lane.
 
 ### User
-> look at this email i just got. Follow-Up Courtesy Notice – Demand for Deletion of FCFCU Tradelines (Acct. 661563L****)
-> skainrath@gfwlawyers.com <skainrath@inlawemail.com>	Thu, Feb 5, 2026 at 7:35 AM
-> Reply-To: skainrath@gfwlawyers.com
-> To: crice4485@gmail.com
-> Cc: skainrath@gfwlawyers.com, mfarrer@gfwlawyers.com
-> Cody Rice-Velasquez,
-> 
->  
-> 
-> The last submission to your credit reporting agencies coded your loan as “Foreclosure Completed”.  Both the balances and past due amounts for both loans were listed at $0.  In addition, the account history should not show anything beyond the satisfaction date of August 15, 2025 (as indicated on the September 9, 2025, entry in the Court’s Docket).  If you see any discrepancies, please bring it to my attention and please include me in any future correspondence with Financial Center First Credit Union. 
-> 
->  
-> 
-> Sincerely,
-> 
->  
-> 
-> Scott A. Kainrath
-> 
-> GRAHAM, FARRER & WILSON, P.C
-> 
-> 1601 S. Anderson Street
-> 
-> Elwood, IN 46036
-> 
-> P 765-552-9878, F 765-552-5496
-> 
->  
-> 
->  
-> 
-> CONFIDENTIALITY NOTICE
-> 
-> This transmission (including any attachments) may contain information which is confidential, attorney work product and/or subject to the attorney-client privilege, and is intended solely for the recipient(s)named above.  If you are not a named recipient, any interception, copying, distribution, disclosure or use of this transmission or any information contained in it is strictly prohibited, and may be subject to criminal and civil penalties.  If you have received this transmission in error, please immediately call us at (752) 552-9878, delete the transmission from all forms of electronic or other storage, and destroy all hard copies.  Do NOT forward this transmission.  Thank you.
-> 
->  
-> 
->  
-> 
-> From: Cody Rice-Velasquez <crice4485@gmail.com>
-> Sent: Tuesday, February 3, 2026 1:43 PM
-> To: mfarrer@gfwlawyers.com; Abbett, Susan <SAbbett@fcfcu.com>; jscott@ghfwlaw.com; Flowers, Kimberly <KFlowers@fcfcu.com>
-> Cc: Compliance <Compliance@fcfcu.com>
-> Subject: [EXTERNAL] Follow-Up Courtesy Notice – Demand for Deletion of FCFCU Tradelines (Acct. 661563L****)
-> 
->  
-> 
+> look at this email i just got. Follow-Up Courtesy Notice – Demand for Deletion of FCFCU Tradelines (Acct. 661563L****)
+
+> skainrath@gfwlawyers.com <skainrath@inlawemail.com>	Thu, Feb 5, 2026 at 7:35 AM
+
+> Reply-To: skainrath@gfwlawyers.com
+
+> To: crice4485@gmail.com
+
+> Cc: skainrath@gfwlawyers.com, mfarrer@gfwlawyers.com
+
+> Cody Rice-Velasquez,
+
+> 
+
+>  
+
+> 
+
+> The last submission to your credit reporting agencies coded your loan as “Foreclosure Completed”.  Both the balances and past due amounts for both loans were listed at $0.  In addition, the account history should not show anything beyond the satisfaction date of August 15, 2025 (as indicated on the September 9, 2025, entry in the Court’s Docket).  If you see any discrepancies, please bring it to my attention and please include me in any future correspondence with Financial Center First Credit Union. 
+
+> 
+
+>  
+
+> 
+
+> Sincerely,
+
+> 
+
+>  
+
+> 
+
+> Scott A. Kainrath
+
+> 
+
+> GRAHAM, FARRER & WILSON, P.C
+
+> 
+
+> 1601 S. Anderson Street
+
+> 
+
+> Elwood, IN 46036
+
+> 
+
+> P 765-552-9878, F 765-552-5496
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> CONFIDENTIALITY NOTICE
+
+> 
+
+> This transmission (including any attachments) may contain information which is confidential, attorney work product and/or subject to the attorney-client privilege, and is intended solely for the recipient(s)named above.  If you are not a named recipient, any interception, copying, distribution, disclosure or use of this transmission or any information contained in it is strictly prohibited, and may be subject to criminal and civil penalties.  If you have received this transmission in error, please immediately call us at (752) 552-9878, delete the transmission from all forms of electronic or other storage, and destroy all hard copies.  Do NOT forward this transmission.  Thank you.
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> From: Cody Rice-Velasquez <crice4485@gmail.com>
+
+> Sent: Tuesday, February 3, 2026 1:43 PM
+
+> To: mfarrer@gfwlawyers.com; Abbett, Susan <SAbbett@fcfcu.com>; jscott@ghfwlaw.com; Flowers, Kimberly <KFlowers@fcfcu.com>
+
+> Cc: Compliance <Compliance@fcfcu.com>
+
+> Subject: [EXTERNAL] Follow-Up Courtesy Notice – Demand for Deletion of FCFCU Tradelines (Acct. 661563L****)
+
+> 
+
+>  
+
+> 
+
 > THIS MESSAGE ORIGINATED FROM OUTSIDE OF FCFCU’s NETWORK: DO NOT click links or open attachments unless you trust the EXTERNAL sender
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Marriage certificate request description"
 slug: "marriage_certificate_request_description"
 created_at: "2025-10-24 08:50:02"
-updated_at: "2025-10-24 08:50:02"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -174,10 +174,14 @@ canonical_ref: ""
 > Want it as a downloadable PDF or ready-to-print docx?
 
 ### User
-> i requested it online, here is the confirmation i need to put the statement of work now, please put in give it to me in code block without any markdown syntact, just plain ol text fo rthe client in spanish for an update. Your request is being processed.
-> Your request id is: 97271.
-> You will receive a confirmation email shortly at cody@qially.com.
-> 
+> i requested it online, here is the confirmation i need to put the statement of work now, please put in give it to me in code block without any markdown syntact, just plain ol text fo rthe client in spanish for an update. Your request is being processed.
+
+> Your request id is: 97271.
+
+> You will receive a confirmation email shortly at cody@qially.com.
+
+> 
+
 > If you have not received a response to your request in seven days or if you have questions about the Access to Public Records Act, you may contact the Public Access Counselor at 317.327.4055 or PAC@indy.gov.
 
 ### Assistant

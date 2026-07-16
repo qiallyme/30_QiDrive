@@ -1,28 +1,28 @@
 ---
-layout:
+layout: page
   standard
   ...
 title: 'Standard: '
-slug: ''
-summary: ''
-status:
+slug: standard
+summary: ""
+status: active
   publish
   ...
 
-created_at: ''
-updated_at: ''
-author: ''
-owner: ''
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
 
-sensitivity:
+sensitivity: internal
   internal
   ...
-classification:
+classification: business_internal
   business_internal
   ...
-realm_label: ''
+realm_label: ""
 
-context: ''
+context: ""
 aliases: []
 tags: []
 keywords: []
@@ -30,13 +30,13 @@ references: []
 
 target_system: ''
 target_scope: ''
-canonical_ref: ''
+canonical_ref: ""
 
-uid: ''
-template_key:
+uid: 6c32414ae34a483bb716db6fb0426164
+template_key: master-template
   standard_template
   ...
-source_type:
+source_type: manual
   manual
   ...
 

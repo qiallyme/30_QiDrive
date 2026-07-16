@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 00 Ai Layer Blueprint
-slug: ""
+slug: 00-ai-layer-blueprint
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ffa56916b3194625ae5f9cb4b0a94643
 canonical_ref: ""
 source_type: manual
 template_key: master-template

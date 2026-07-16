@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Physical Altercation with Zaitullah"
 slug: "luis_physical_altercation_with_zaitullah"
 created_at: "2024-11-12"
-updated_at: "2024-11-12"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e78565cc9cee4065b454dc2d1492d8d1
 canonical_ref: ""
 ---
 

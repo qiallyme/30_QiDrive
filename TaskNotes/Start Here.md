@@ -3,12 +3,12 @@ layout: page
 title: Start Here with TaskNotes
 slug: start-here-with-tasknotes
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:42-04:00"
+tags: []
   - tasknotes
 source_type: imported
 summary: ""
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b7d7a7f705854f309e1a57fef721e917
 canonical_ref: ""
 template_key: master-template
 ---

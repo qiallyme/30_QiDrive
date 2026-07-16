@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah - Loss of Colleague"
 slug: "zaitullah_loss_of_colleague"
 created_at: "2021-06-01"
-updated_at: "2021-06-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d4e0e011a0434218970df948a11f156d
 canonical_ref: ""
 ---
 

@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0019: Directus as Supabase Admin and API Layer; NocoDB Deprecated
 slug: adr-0019-directus-as-supabase-admin-and-api-layer-nocodb-deprecated
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ff30339235124a4ab68f1c9127af8234
 canonical_ref: ""
 template_key: master-template
 ---

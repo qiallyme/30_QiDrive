@@ -3,9 +3,9 @@ layout: page
 title: "Video Evidence Strategy"
 slug: "video_evidence_strategy"
 created_at: "2025-12-28 15:48:01"
-updated_at: "2025-12-28 15:48:01"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

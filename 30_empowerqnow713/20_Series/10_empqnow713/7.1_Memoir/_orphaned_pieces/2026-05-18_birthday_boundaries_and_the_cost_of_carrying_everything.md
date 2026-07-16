@@ -3,8 +3,8 @@ layout: page
 title: Birthday, Boundaries, and the Cost of Carrying Everything
 slug: birthday-boundaries-and-the-cost-of-carrying-everything
 status: captured
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - birthday
   - boundaries
   - relationship-strain
@@ -17,7 +17,7 @@ date: 2026-05-18
 category: journal
 type: reflection
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7d5b4714b2774b17bc541d21a378e703
 canonical_ref: ""
 template_key: master-template
 ---

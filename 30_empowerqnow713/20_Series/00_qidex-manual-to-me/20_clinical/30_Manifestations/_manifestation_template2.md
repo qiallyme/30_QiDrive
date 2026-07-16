@@ -4,14 +4,14 @@ title: Manifestation Template
 slug: manifestation_template
 summary: Template for describing how conditions manifest in behavior and experience
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical manifestations in clinical track
-tags:
+tags: []
   - template
   - manifestation
   - clinical
   - empowerqnow713
-keywords:
+keywords: []
   - manifestation
   - clinical
   - behavior
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.2.0
 category: clinical_manifestation
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c68fbe58f75a4e6197bc3172a8ba0c4c
 canonical_ref: ""
 template_key: master-template
 ---

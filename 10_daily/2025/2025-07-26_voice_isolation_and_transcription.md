@@ -3,9 +3,9 @@ layout: page
 title: "Voice isolation and transcription"
 slug: "voice_isolation_and_transcription"
 created_at: "2025-07-26 17:46:00"
-updated_at: "2025-07-26 17:46:00"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

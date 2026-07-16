@@ -3,9 +3,9 @@ layout: page
 title: "VLC Audio Enhancement Tips"
 slug: "vlc_audio_enhancement_tips"
 created_at: "2026-04-01 23:32:50"
-updated_at: "2026-04-01 23:32:50"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

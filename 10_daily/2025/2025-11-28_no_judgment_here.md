@@ -3,9 +3,9 @@ layout: page
 title: "No judgment here"
 slug: "no_judgment_here"
 created_at: "2025-11-28 17:26:25"
-updated_at: "2025-11-28 17:26:25"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

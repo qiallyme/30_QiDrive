@@ -3,9 +3,9 @@ layout: page
 title: "HTML Receipt Format"
 slug: "html_receipt_format"
 created_at: "2023-07-20 14:06:56"
-updated_at: "2023-07-20 14:06:56"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

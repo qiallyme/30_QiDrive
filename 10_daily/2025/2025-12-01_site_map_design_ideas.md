@@ -3,9 +3,9 @@ layout: page
 title: "Site map design ideas"
 slug: "site_map_design_ideas"
 created_at: "2025-12-01 08:17:50"
-updated_at: "2025-12-01 08:17:50"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -197,696 +197,1386 @@ canonical_ref: ""
 > If you want, I can spit the exact folder structure, HTML scaffolds, or mockup wireframes next.
 
 ### User
-> this is what cursor did so far. <!DOCTYPE html>
-> <html lang="en">
-> <head>
->     <meta charset="UTF-8">
->     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
->     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
->     <link rel="icon" type="image/x-icon" href="images/favicon.png">
->     <link rel="apple-touch-icon" href="images/favicon.png">
->     <meta name="viewport" content="width=device-width, initial-scale=1.0">
->     <title>Cody Rice-Velasquez - Personal Site</title>
->     <meta name="description" content="Fractional C-suite leader, AI workflow designer, and perpetual learner.">
->     
->     <!-- Tailwind CSS CDN -->
->     <script src="https://cdn.tailwindcss.com"></script>
->     
->     <!-- Google Fonts -->
->     <link rel="preconnect" href="https://fonts.googleapis.com">
->     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
->     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
->     
->     <script>
->         tailwind.config = {
->             theme: {
->                 extend: {
->                     colors: {
->                         'electric': {
->                             50: '#eff6ff',
->                             100: '#dbeafe',
->                             200: '#bfdbfe',
->                             300: '#93c5fd',
->                             400: '#60a5fa',
->                             500: '#3b82f6',
->                             600: '#2563eb',
->                             700: '#1d4ed8',
->                             800: '#1e40af',
->                             900: '#1e3a8a',
->                         },
->                         'primary': {
->                             50: '#f0f9ff',
->                             100: '#e0f2fe',
->                             200: '#bae6fd',
->                             300: '#7dd3fc',
->                             400: '#38bdf8',
->                             500: '#0ea5e9',
->                             600: '#0284c7',
->                             700: '#0369a1',
->                             800: '#075985',
->                             900: '#0c4a6e',
->                         },
->                         'plasma': {
->                             50: '#f9fafb',
->                             100: '#f3f4f6',
->                             200: '#e5e7eb',
->                             300: '#d1d5db',
->                             400: '#9ca3af',
->                             500: '#6b7280',
->                             600: '#4b5563',
->                             700: '#374151',
->                             800: '#1f2937',
->                             900: '#111827',
->                         },
->                         'ocean': {
->                             50: '#f0f9ff',
->                             100: '#e0f2fe',
->                             200: '#bae6fd',
->                             300: '#7dd3fc',
->                             400: '#38bdf8',
->                             500: '#0ea5e9',
->                             600: '#0284c7',
->                             700: '#0369a1',
->                             800: '#075985',
->                             900: '#0c4a6e',
->                         },
->                     },
->                     fontFamily: {
->                         'inter': ['Inter', 'sans-serif'],
->                         'montserrat': ['Montserrat', 'sans-serif'],
->                     },
->                 }
->             }
->         }
->     </script>
->     
->     <style>
->         body {
->             font-family: 'Inter', sans-serif;
->         }
->         .font-montserrat {
->             font-family: 'Montserrat', sans-serif;
->         }
->         
->         /* Mind Map Styles */
->         .mind-map-container {
->             position: relative;
->             width: 100%;
->             height: 100vh;
->             min-height: 800px;
->             overflow: hidden;
->             background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #f9fafb 100%);
->         }
->         
->         .center-node {
->             position: absolute;
->             top: 50%;
->             left: 50%;
->             transform: translate(-50%, -50%);
->             z-index: 10;
->             transition: transform 0.3s ease;
->         }
->         
->         .center-node:hover {
->             transform: translate(-50%, -50%) scale(1.05);
->         }
->         
->         .mind-map-node {
->             position: absolute;
->             cursor: pointer;
->             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
->             z-index: 5;
->         }
->         
->         .mind-map-node:hover {
->             transform: scale(1.15);
->             z-index: 15;
->         }
->         
->         .node-circle {
->             width: 120px;
->             height: 120px;
->             border-radius: 50%;
->             display: flex;
->             flex-direction: column;
->             align-items: center;
->             justify-content: center;
->             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
->             backdrop-filter: blur(10px);
->             border: 3px solid white;
->             transition: all 0.3s ease;
->         }
->         
->         .node-circle:hover {
->             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
->             border-width: 4px;
->         }
->         
->         .node-label {
->             font-size: 14px;
->             font-weight: 700;
->             text-align: center;
->             margin-top: 8px;
->             color: white;
->             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
->         }
->         
->         .connection-line {
->             position: absolute;
->             height: 2px;
->             background: linear-gradient(90deg, rgba(37, 99, 235, 0.3), rgba(2, 132, 199, 0.3));
->             transform-origin: left center;
->             z-index: 1;
->             transition: all 0.3s ease;
->         }
->         
->         .mind-map-node:hover ~ .connection-line,
->         .connection-line:hover {
->             background: linear-gradient(90deg, rgba(37, 99, 235, 0.6), rgba(2, 132, 199, 0.6));
->             height: 3px;
->         }
->         
->         .content-panel {
->             position: fixed;
->             top: 0;
->             right: -100%;
->             width: 100%;
->             max-width: 600px;
->             height: 100vh;
->             background: white;
->             box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
->             z-index: 100;
->             transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
->             overflow-y: auto;
->         }
->         
->         .content-panel.open {
->             right: 0;
->         }
->         
->         .overlay {
->             position: fixed;
->             top: 0;
->             left: 0;
->             width: 100%;
->             height: 100%;
->             background: rgba(0, 0, 0, 0.5);
->             z-index: 99;
->             opacity: 0;
->             pointer-events: none;
->             transition: opacity 0.3s ease;
->         }
->         
->         .overlay.active {
->             opacity: 1;
->             pointer-events: all;
->         }
->         
->         @keyframes float {
->             0%, 100% { transform: translateY(0px); }
->             50% { transform: translateY(-10px); }
->         }
->         
->         .center-node img {
->             animation: float 6s ease-in-out infinite;
->         }
->         
->         @media (max-width: 768px) {
->             .mind-map-container {
->                 height: 100vh;
->                 min-height: 600px;
->             }
->             
->             .node-circle {
->                 width: 80px;
->                 height: 80px;
->             }
->             
->             .node-label {
->                 font-size: 11px;
->             }
->             
->             .content-panel {
->                 max-width: 100%;
->             }
->         }
->     </style>
-> </head>
-> <body>
->     <div class="font-inter bg-gradient-to-b from-ocean-50 to-white text-plasma-900">
->         <!-- Header -->
->         <header class="sticky top-0 bg-white shadow-sm z-50">
->             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
->                 <a href="/" class="text-xl font-montserrat font-bold flex gap-2 items-center justify-center">
->                     <img src="images/favicon.png" alt="Cody" class="w-10 h-10 rounded-full">
->                     <div class="text-electric-600">Cody</div>
->                 </a>
->                 <button type="button" class="md:hidden focus:outline-none text-plasma-700" aria-label="Open menu">
->                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
->                         <path d="M4 5h16"></path>
->                         <path d="M4 12h16"></path>
->                         <path d="M4 19h16"></path>
->                     </svg>
->                 </button>
->                 <nav class="hidden md:flex space-x-8">
->                     <a href="#explore" class="cursor-pointer font-medium text-plasma-700 hover:text-electric-600 transition-colors">Explore</a>
->                     <a href="#contact" class="cursor-pointer font-medium text-white py-2 px-4 rounded font-medium transition-colors bg-gradient-to-r from-electric-600 to-primary-600 hover:from-electric-700 hover:to-primary-700">Contact</a>
->                 </nav>
->             </div>
->         </header>
-> 
->         <main>
->             <!-- Interactive Mind Map Section -->
->             <section id="explore" class="mind-map-container">
->                 <!-- Center Node (Profile) -->
->                 <div class="center-node">
->                     <div class="w-64 h-64 rounded-full bg-gradient-to-br from-electric-400 to-primary-400 flex items-center justify-center shadow-2xl overflow-hidden border-4 border-white">
->                         <img src="images/profile.jpg" alt="Cody Rice-Velasquez" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
->                         <div class="fallback-initials w-60 h-60 rounded-full bg-gradient-to-br from-plasma-200 to-electric-200 flex items-center justify-center text-6xl font-bold text-plasma-600 absolute" style="display: none;">CR</div>
->                     </div>
->                     <div class="text-center mt-4">
->                         <h1 class="text-3xl font-bold text-plasma-900 font-montserrat">Cody Rice-Velasquez</h1>
->                         <p class="text-electric-600 font-semibold mt-1">Systems thinker, builder, writer</p>
->                     </div>
->                 </div>
-> 
->                 <!-- Mind Map Nodes -->
->                 <div id="mind-map-nodes"></div>
-> 
->                 <!-- Connection Lines -->
->                 <svg id="connection-lines" class="absolute inset-0 pointer-events-none" style="z-index: 1;"></svg>
->             </section>
-> 
->             <!-- Content Panel (slides in from right) -->
->             <div class="overlay" id="overlay"></div>
->             <div class="content-panel" id="content-panel">
->                 <div class="p-8">
->                     <button id="close-panel" class="mb-6 text-plasma-500 hover:text-plasma-900 transition-colors">
->                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
->                             <path d="M18 6L6 18"></path>
->                             <path d="M6 6l12 12"></path>
->                         </svg>
->                     </button>
->                     <div id="panel-content"></div>
->                 </div>
->             </div>
-> 
->             <!-- Contact Section -->
->             <section id="contact" class="py-20 bg-white">
->                 <div class="container mx-auto px-4">
->                     <div class="max-w-4xl mx-auto">
->                         <div class="text-center mb-12">
->                             <h2 class="text-4xl md:text-5xl font-bold text-plasma-900 mb-6 font-montserrat">Contact & Information</h2>
->                             <p class="text-xl text-plasma-600 leading-relaxed">Ways to reach me, and a bit of history about where I've been</p>
->                         </div>
->                         <div class="mb-8 bg-gradient-to-br from-electric-50 to-primary-50 rounded-2xl p-8 border border-electric-100">
->                             <h3 class="text-2xl font-bold text-plasma-900 mb-6 font-montserrat flex items-center gap-3">
->                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar text-electric-600" aria-hidden="true">
->                                     <path d="M8 2v4"></path>
->                                     <path d="M16 2v4"></path>
->                                     <rect width="18" height="18" x="3" y="4" rx="2"></rect>
->                                     <path d="M3 10h18"></path>
->                                 </svg>
->                                 Current Contact Information
->                             </h3>
->                             <div class="grid md:grid-cols-2 gap-6">
->                                 <div class="flex items-center gap-4 p-4 bg-white rounded-lg border border-electric-100">
->                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
->                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-white" aria-hidden="true">
->                                             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
->                                             <circle cx="12" cy="10" r="3"></circle>
->                                         </svg>
->                                     </div>
->                                     <div>
->                                         <p class="text-sm text-plasma-500">Location</p>
->                                         <p class="font-semibold text-plasma-900">Indianapolis, IN, USA</p>
->                                     </div>
->                                 </div>
->                                 <div class="flex items-center gap-4 p-4 bg-white rounded-lg border border-electric-100">
->                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
->                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-white" aria-hidden="true">
->                                             <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
->                                         </svg>
->                                     </div>
->                                     <div>
->                                         <p class="text-sm text-plasma-500">Phone</p>
->                                         <a href="tel:+13172054383" class="font-semibold text-plasma-900 hover:text-electric-600 transition-colors">(317) 205-4383</a>
->                                     </div>
->                                 </div>
->                             </div>
->                         </div>
->                         <div class="grid md:grid-cols-2 gap-6 mb-6">
->                             <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
->                                 <div class="flex items-center gap-3 mb-4">
->                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
->                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-white" aria-hidden="true">
->                                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
->                                             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
->                                         </svg>
->                                     </div>
->                                     <h3 class="text-xl font-bold text-plasma-900 font-montserrat">Email Addresses</h3>
->                                 </div>
->                                 <ul class="space-y-3">
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="mailto:cody@qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">cody@qially.com</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">Primary</span>
->                                     </li>
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="mailto:hello@qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">hello@qially.com</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">Business</span>
->                                     </li>
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="mailto:cody@qially.me" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">cody@qially.me</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">Personal</span>
->                                     </li>
->                                 </ul>
->                             </div>
->                             <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
->                                 <div class="flex items-center gap-3 mb-4">
->                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
->                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-2 text-white" aria-hidden="true">
->                                             <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
->                                             <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
->                                             <line x1="8" x2="16" y1="12" y2="12"></line>
->                                         </svg>
->                                     </div>
->                                     <h3 class="text-xl font-bold text-plasma-900 font-montserrat">Socials & Links</h3>
->                                 </div>
->                                 <ul class="space-y-3">
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="https://qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">qially.com</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">Website</span>
->                                     </li>
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">linkedin.com/in/cody-rice-velasquez-qially</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">LinkedIn</span>
->                                     </li>
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="https://twitter.com/codyrice" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">@codyrice</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">Twitter/X</span>
->                                     </li>
->                                     <li class="flex flex-col gap-1">
->                                         <div class="flex items-start justify-between">
->                                             <a href="https://github.com/codyrice" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">github.com/codyrice</a>
->                                         </div>
->                                         <span class="text-sm text-plasma-500">GitHub</span>
->                                     </li>
->                                 </ul>
->                             </div>
->                         </div>
->                     </div>
->                 </div>
->             </section>
->         </main>
-> 
->         <!-- Footer -->
->         <footer class="bg-gradient-to-r from-plasma-900 to-primary-900 text-white py-8">
->             <div class="container mx-auto px-4">
->                 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
->                     <p class="text-plasma-400 text-sm order-2 md:order-1">© 2025 Cody Rice-Velasquez. All rights reserved.</p>
->                     <div class="flex items-center gap-4 order-1 md:order-2">
->                         <a href="https://github.com/qiallyme" target="_blank" rel="noopener noreferrer" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="GitHub Profile">
->                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
->                                 <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
->                                 <path d="M9 18c-4.51 2-5-2-7-2"></path>
->                             </svg>
->                         </a>
->                         <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" target="_blank" rel="noopener noreferrer" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="LinkedIn Profile">
->                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
->                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
->                                 <rect width="4" height="12" x="2" y="9"></rect>
->                                 <circle cx="4" cy="4" r="2"></circle>
->                             </svg>
->                         </a>
->                         <a href="mailto:cody@qially.com" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="Email">
->                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
->                                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
->                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
->                             </svg>
->                         </a>
->                     </div>
->                 </div>
->             </div>
->         </footer>
->     </div>
-> 
->     <script>
->         // Mind Map Configuration
->         const nodes = [
->             {
->                 id: 'professional',
->                 label: 'Professional',
->                 icon: '💼',
->                 color: 'from-electric-600 to-electric-700',
->                 angle: 0, // Top
->                 content: `
->                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Professional</h2>
->                     <div class="space-y-6">
->                         <div class="bg-gradient-to-br from-electric-50 to-primary-50 rounded-xl p-6 border border-electric-100">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Work & Experience</h3>
->                             <p class="text-plasma-600 leading-relaxed mb-4">I've spent my career at the intersection of finance, operations, and technology. I've worked with companies across different stages, from startups to established businesses, helping them build systems and processes that scale.</p>
->                             <p class="text-plasma-600 leading-relaxed mb-4">More recently, I've been exploring how AI and automation can enhance human work rather than replace it, and how to design workflows that feel natural and empowering.</p>
->                             <a href="https://qially.com" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-electric-600 to-primary-600 hover:from-electric-700 hover:to-primary-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">Visit qially.com →</a>
->                         </div>
->                         <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Current Focus</h3>
->                             <ul class="space-y-3 text-plasma-600">
->                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>Fractional CFO/COO services</span></li>
->                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>AI workflow design and implementation</span></li>
->                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>Systems thinking and operations consulting</span></li>
->                             </ul>
->                         </div>
->                     </div>
->                 `
->             },
->             {
->                 id: 'personal',
->                 label: 'Personal',
->                 icon: '🏠',
->                 color: 'from-primary-600 to-primary-700',
->                 angle: 72, // Top-right
->                 content: `
->                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Personal</h2>
->                     <div class="space-y-6">
->                         <div class="bg-gradient-to-br from-primary-50 to-electric-50 rounded-xl p-6 border border-primary-100">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">What I'm Focused On Now</h3>
->                             <div class="grid md:grid-cols-2 gap-4 mb-4">
->                                 <div>
->                                     <h4 class="font-semibold text-plasma-900 mb-2">Projects</h4>
->                                     <ul class="space-y-2 text-plasma-600 text-sm">
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Building EmpowerQNow 713 series</span></li>
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Maintaining Memory Vault</span></li>
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Iterating on this site</span></li>
->                                     </ul>
->                                 </div>
->                                 <div>
->                                     <h4 class="font-semibold text-plasma-900 mb-2">Learning</h4>
->                                     <ul class="space-y-2 text-plasma-600 text-sm">
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Systems thinking practice</span></li>
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Spiritual integration</span></li>
->                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Knowledge systems</span></li>
->                                     </ul>
->                                 </div>
->                             </div>
->                         </div>
->                         <div class="bg-white rounded-xl p-6 border border-primary-100 shadow-sm">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Essays</h3>
->                             <p class="text-plasma-600 mb-4">Long-form thoughts on systems, growth, and life experiences</p>
->                             <div class="grid md:grid-cols-2 gap-4"><a href="/docs/dangerous_cycles_explained.html" class="block hover:scale-[1.02] transition-transform duration-300">
->                 <div class="bg-white border rounded-lg p-6 shadow-sm transition-all duration-300 border-plasma-200 hover:shadow-lg hover:border-electric-400">
->                     <h3 class="text-xl font-bold text-plasma-900 mb-2 font-montserrat">What Really Happened (Family-Facing Narrative)</h3>
->                     <p class="text-plasma-600 leading-relaxed mb-4">Long-form thoughts on systems, growth, and life experiences</p>
->                     
->                 </div>
->             </a></div>
->                         </div>
->                     </div>
->                 `
->             },
->             {
->                 id: 'history',
->                 label: 'History',
->                 icon: '📜',
->                 color: 'from-plasma-600 to-plasma-700',
->                 angle: 144, // Right
->                 content: `
->                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">History</h2>
->                     <div class="space-y-6">
->                         <div class="bg-gradient-to-br from-plasma-50 to-electric-50 rounded-xl p-6 border border-plasma-100">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Timeline</h3>
->                             <p class="text-plasma-600 leading-relaxed mb-4">Major milestones and reflections on the journey</p>
->                             <p class="text-plasma-600 leading-relaxed mb-4">Interactive timeline coming soon. For now, explore my work and essays above.</p>
->                             <a href="https://memory.vault.qially.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-plasma-600 to-electric-600 text-white rounded-lg hover:from-plasma-700 hover:to-electric-700 transition-all duration-300 shadow-lg font-medium">View Full Timeline →</a>
->                         </div>
->                         <div class="bg-white rounded-xl p-6 border border-plasma-100 shadow-sm">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Address History</h3>
->                             <ul class="space-y-3">
->                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
->                                     <span class="font-medium text-plasma-900">Indianapolis, Indiana, USA</span>
->                                     <span class="text-sm text-plasma-500">2024 - Present</span>
->                                 </li>
->                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
->                                     <span class="font-medium text-plasma-900">Austin, Texas, USA</span>
->                                     <span class="text-sm text-plasma-500">2019 - 2023</span>
->                                 </li>
->                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
->                                     <span class="font-medium text-plasma-900">Dallas, Texas, USA</span>
->                                     <span class="text-sm text-plasma-500">2015 - 2019</span>
->                                 </li>
->                             </ul>
->                         </div>
->                     </div>
->                 `
->             },
->             {
->                 id: 'health',
->                 label: 'Health',
->                 icon: '💚',
->                 color: 'from-green-600 to-green-700',
->                 angle: 216, // Bottom-left
->                 content: `
->                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Health</h2>
->                     <div class="space-y-6">
->                         <div class="bg-gradient-to-br from-green-50 to-electric-50 rounded-xl p-6 border border-green-100">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Wellness & Balance</h3>
->                             <p class="text-plasma-600 leading-relaxed mb-4">Health is foundational to everything else. I focus on maintaining balance across physical, mental, and emotional well-being.</p>
->                             <div class="grid md:grid-cols-2 gap-4">
->                                 <div class="bg-white rounded-lg p-4 border border-green-100">
->                                     <h4 class="font-semibold text-plasma-900 mb-2">Physical</h4>
->                                     <p class="text-sm text-plasma-600">Movement, nutrition, rest, and energy management</p>
->                                 </div>
->                                 <div class="bg-white rounded-lg p-4 border border-green-100">
->                                     <h4 class="font-semibold text-plasma-900 mb-2">Mental</h4>
->                                     <p class="text-sm text-plasma-600">Systems thinking, learning, and cognitive wellness</p>
->                                 </div>
->                             </div>
->                         </div>
->                     </div>
->                 `
->             },
->             {
->                 id: 'spiritual',
->                 label: 'Spiritual',
->                 icon: '✨',
->                 color: 'from-purple-600 to-purple-700',
->                 angle: 288, // Top-left
->                 content: `
->                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Spiritual</h2>
->                     <div class="space-y-6">
->                         <div class="bg-gradient-to-br from-purple-50 to-electric-50 rounded-xl p-6 border border-purple-100">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">EmpowerQNow 713</h3>
->                             <p class="text-plasma-600 leading-relaxed mb-4">A living operating system for the soul—a fusion of personal philosophy, life system, and brand identity. At its heart lies a simple but transformative mission:</p>
->                             <blockquote class="border-l-4 border-purple-600 pl-4 italic text-plasma-700 mb-4">
->                                 "Remember who we are. Remember that we are connected. We are one love."
->                             </blockquote>
->                             <p class="text-plasma-600 leading-relaxed mb-4">This movement calls for radical compassion and daily growth. We are invited to love the other as we love ourselves, be kind, do better, and grow every day.</p>
->                             <a href="https://empowerqnow.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-electric-600 text-white rounded-lg hover:from-purple-700 hover:to-electric-700 transition-all duration-300 shadow-lg font-medium">Learn More →</a>
->                         </div>
->                         <div class="bg-white rounded-xl p-6 border border-purple-100 shadow-sm">
->                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Integration</h3>
->                             <p class="text-plasma-600 leading-relaxed">Exploring how spiritual and operational integration creates more meaningful work and life. Science and spirituality are converging on the same truth: we are energy, we are consciousness, and we are connected.</p>
->                         </div>
->                     </div>
->                 `
->             }
->         ];
-> 
->         // Initialize Mind Map
->         function initMindMap() {
->             const container = document.getElementById('mind-map-nodes');
->             const svg = document.getElementById('connection-lines');
->             const centerX = window.innerWidth / 2;
->             const centerY = window.innerHeight / 2;
->             const radius = Math.min(window.innerWidth, window.innerHeight) * 0.35;
-> 
->             nodes.forEach((node, index) => {
->                 // Calculate position
->                 const angleRad = (node.angle * Math.PI) / 180;
->                 const x = centerX + radius * Math.cos(angleRad);
->                 const y = centerY + radius * Math.sin(angleRad);
-> 
->                 // Create node element
->                 const nodeEl = document.createElement('div');
->                 nodeEl.className = 'mind-map-node';
->                 nodeEl.style.left = `${x}px`;
->                 nodeEl.style.top = `${y}px`;
->                 nodeEl.style.transform = 'translate(-50%, -50%)';
->                 nodeEl.dataset.nodeId = node.id;
-> 
->                 nodeEl.innerHTML = `
->                     <div class="node-circle bg-gradient-to-br ${node.color}">
->                         <div class="text-4xl">${node.icon}</div>
->                     </div>
->                     <div class="node-label">${node.label}</div>
->                 `;
-> 
->                 // Add click handler
->                 nodeEl.addEventListener('click', () => openPanel(node));
-> 
->                 container.appendChild(nodeEl);
-> 
->                 // Draw connection line
->                 const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
->                 line.setAttribute('x1', centerX);
->                 line.setAttribute('y1', centerY);
->                 line.setAttribute('x2', x);
->                 line.setAttribute('y2', y);
->                 line.setAttribute('class', 'connection-line');
->                 line.setAttribute('stroke', 'rgba(37, 99, 235, 0.3)');
->                 line.setAttribute('stroke-width', '2');
->                 svg.appendChild(line);
->             });
-> 
->             // Handle window resize
->             window.addEventListener('resize', () => {
->                 container.innerHTML = '';
->                 svg.innerHTML = '';
->                 initMindMap();
->             });
->         }
-> 
->         // Open content panel
->         function openPanel(node) {
->             const panel = document.getElementById('content-panel');
->             const overlay = document.getElementById('overlay');
->             const content = document.getElementById('panel-content');
->             
->             content.innerHTML = node.content;
->             panel.classList.add('open');
->             overlay.classList.add('active');
->         }
-> 
->         // Close content panel
->         function closePanel() {
->             const panel = document.getElementById('content-panel');
->             const overlay = document.getElementById('overlay');
->             
->             panel.classList.remove('open');
->             overlay.classList.remove('active');
->         }
-> 
->         // Event listeners
->         document.getElementById('close-panel').addEventListener('click', closePanel);
->         document.getElementById('overlay').addEventListener('click', closePanel);
-> 
->         // Initialize on load
->         window.addEventListener('load', () => {
->             initMindMap();
->         });
->     </script>
-> </body>
+> this is what cursor did so far. <!DOCTYPE html>
+
+> <html lang="en">
+
+> <head>
+
+>     <meta charset="UTF-8">
+
+>     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+>     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+>     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+>     <link rel="apple-touch-icon" href="images/favicon.png">
+
+>     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>     <title>Cody Rice-Velasquez - Personal Site</title>
+
+>     <meta name="description" content="Fractional C-suite leader, AI workflow designer, and perpetual learner.">
+
+>     
+
+>     <!-- Tailwind CSS CDN -->
+
+>     <script src="https://cdn.tailwindcss.com"></script>
+
+>     
+
+>     <!-- Google Fonts -->
+
+>     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+>     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+>     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+>     
+
+>     <script>
+
+>         tailwind.config = {
+
+>             theme: {
+
+>                 extend: {
+
+>                     colors: {
+
+>                         'electric': {
+
+>                             50: '#eff6ff',
+
+>                             100: '#dbeafe',
+
+>                             200: '#bfdbfe',
+
+>                             300: '#93c5fd',
+
+>                             400: '#60a5fa',
+
+>                             500: '#3b82f6',
+
+>                             600: '#2563eb',
+
+>                             700: '#1d4ed8',
+
+>                             800: '#1e40af',
+
+>                             900: '#1e3a8a',
+
+>                         },
+
+>                         'primary': {
+
+>                             50: '#f0f9ff',
+
+>                             100: '#e0f2fe',
+
+>                             200: '#bae6fd',
+
+>                             300: '#7dd3fc',
+
+>                             400: '#38bdf8',
+
+>                             500: '#0ea5e9',
+
+>                             600: '#0284c7',
+
+>                             700: '#0369a1',
+
+>                             800: '#075985',
+
+>                             900: '#0c4a6e',
+
+>                         },
+
+>                         'plasma': {
+
+>                             50: '#f9fafb',
+
+>                             100: '#f3f4f6',
+
+>                             200: '#e5e7eb',
+
+>                             300: '#d1d5db',
+
+>                             400: '#9ca3af',
+
+>                             500: '#6b7280',
+
+>                             600: '#4b5563',
+
+>                             700: '#374151',
+
+>                             800: '#1f2937',
+
+>                             900: '#111827',
+
+>                         },
+
+>                         'ocean': {
+
+>                             50: '#f0f9ff',
+
+>                             100: '#e0f2fe',
+
+>                             200: '#bae6fd',
+
+>                             300: '#7dd3fc',
+
+>                             400: '#38bdf8',
+
+>                             500: '#0ea5e9',
+
+>                             600: '#0284c7',
+
+>                             700: '#0369a1',
+
+>                             800: '#075985',
+
+>                             900: '#0c4a6e',
+
+>                         },
+
+>                     },
+
+>                     fontFamily: {
+
+>                         'inter': ['Inter', 'sans-serif'],
+
+>                         'montserrat': ['Montserrat', 'sans-serif'],
+
+>                     },
+
+>                 }
+
+>             }
+
+>         }
+
+>     </script>
+
+>     
+
+>     <style>
+
+>         body {
+
+>             font-family: 'Inter', sans-serif;
+
+>         }
+
+>         .font-montserrat {
+
+>             font-family: 'Montserrat', sans-serif;
+
+>         }
+
+>         
+
+>         /* Mind Map Styles */
+
+>         .mind-map-container {
+
+>             position: relative;
+
+>             width: 100%;
+
+>             height: 100vh;
+
+>             min-height: 800px;
+
+>             overflow: hidden;
+
+>             background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 50%, #f9fafb 100%);
+
+>         }
+
+>         
+
+>         .center-node {
+
+>             position: absolute;
+
+>             top: 50%;
+
+>             left: 50%;
+
+>             transform: translate(-50%, -50%);
+
+>             z-index: 10;
+
+>             transition: transform 0.3s ease;
+
+>         }
+
+>         
+
+>         .center-node:hover {
+
+>             transform: translate(-50%, -50%) scale(1.05);
+
+>         }
+
+>         
+
+>         .mind-map-node {
+
+>             position: absolute;
+
+>             cursor: pointer;
+
+>             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+>             z-index: 5;
+
+>         }
+
+>         
+
+>         .mind-map-node:hover {
+
+>             transform: scale(1.15);
+
+>             z-index: 15;
+
+>         }
+
+>         
+
+>         .node-circle {
+
+>             width: 120px;
+
+>             height: 120px;
+
+>             border-radius: 50%;
+
+>             display: flex;
+
+>             flex-direction: column;
+
+>             align-items: center;
+
+>             justify-content: center;
+
+>             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+>             backdrop-filter: blur(10px);
+
+>             border: 3px solid white;
+
+>             transition: all 0.3s ease;
+
+>         }
+
+>         
+
+>         .node-circle:hover {
+
+>             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+>             border-width: 4px;
+
+>         }
+
+>         
+
+>         .node-label {
+
+>             font-size: 14px;
+
+>             font-weight: 700;
+
+>             text-align: center;
+
+>             margin-top: 8px;
+
+>             color: white;
+
+>             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+>         }
+
+>         
+
+>         .connection-line {
+
+>             position: absolute;
+
+>             height: 2px;
+
+>             background: linear-gradient(90deg, rgba(37, 99, 235, 0.3), rgba(2, 132, 199, 0.3));
+
+>             transform-origin: left center;
+
+>             z-index: 1;
+
+>             transition: all 0.3s ease;
+
+>         }
+
+>         
+
+>         .mind-map-node:hover ~ .connection-line,
+
+>         .connection-line:hover {
+
+>             background: linear-gradient(90deg, rgba(37, 99, 235, 0.6), rgba(2, 132, 199, 0.6));
+
+>             height: 3px;
+
+>         }
+
+>         
+
+>         .content-panel {
+
+>             position: fixed;
+
+>             top: 0;
+
+>             right: -100%;
+
+>             width: 100%;
+
+>             max-width: 600px;
+
+>             height: 100vh;
+
+>             background: white;
+
+>             box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+
+>             z-index: 100;
+
+>             transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+>             overflow-y: auto;
+
+>         }
+
+>         
+
+>         .content-panel.open {
+
+>             right: 0;
+
+>         }
+
+>         
+
+>         .overlay {
+
+>             position: fixed;
+
+>             top: 0;
+
+>             left: 0;
+
+>             width: 100%;
+
+>             height: 100%;
+
+>             background: rgba(0, 0, 0, 0.5);
+
+>             z-index: 99;
+
+>             opacity: 0;
+
+>             pointer-events: none;
+
+>             transition: opacity 0.3s ease;
+
+>         }
+
+>         
+
+>         .overlay.active {
+
+>             opacity: 1;
+
+>             pointer-events: all;
+
+>         }
+
+>         
+
+>         @keyframes float {
+
+>             0%, 100% { transform: translateY(0px); }
+
+>             50% { transform: translateY(-10px); }
+
+>         }
+
+>         
+
+>         .center-node img {
+
+>             animation: float 6s ease-in-out infinite;
+
+>         }
+
+>         
+
+>         @media (max-width: 768px) {
+
+>             .mind-map-container {
+
+>                 height: 100vh;
+
+>                 min-height: 600px;
+
+>             }
+
+>             
+
+>             .node-circle {
+
+>                 width: 80px;
+
+>                 height: 80px;
+
+>             }
+
+>             
+
+>             .node-label {
+
+>                 font-size: 11px;
+
+>             }
+
+>             
+
+>             .content-panel {
+
+>                 max-width: 100%;
+
+>             }
+
+>         }
+
+>     </style>
+
+> </head>
+
+> <body>
+
+>     <div class="font-inter bg-gradient-to-b from-ocean-50 to-white text-plasma-900">
+
+>         <!-- Header -->
+
+>         <header class="sticky top-0 bg-white shadow-sm z-50">
+
+>             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+>                 <a href="/" class="text-xl font-montserrat font-bold flex gap-2 items-center justify-center">
+
+>                     <img src="images/favicon.png" alt="Cody" class="w-10 h-10 rounded-full">
+
+>                     <div class="text-electric-600">Cody</div>
+
+>                 </a>
+
+>                 <button type="button" class="md:hidden focus:outline-none text-plasma-700" aria-label="Open menu">
+
+>                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true">
+
+>                         <path d="M4 5h16"></path>
+
+>                         <path d="M4 12h16"></path>
+
+>                         <path d="M4 19h16"></path>
+
+>                     </svg>
+
+>                 </button>
+
+>                 <nav class="hidden md:flex space-x-8">
+
+>                     <a href="#explore" class="cursor-pointer font-medium text-plasma-700 hover:text-electric-600 transition-colors">Explore</a>
+
+>                     <a href="#contact" class="cursor-pointer font-medium text-white py-2 px-4 rounded font-medium transition-colors bg-gradient-to-r from-electric-600 to-primary-600 hover:from-electric-700 hover:to-primary-700">Contact</a>
+
+>                 </nav>
+
+>             </div>
+
+>         </header>
+
+> 
+
+>         <main>
+
+>             <!-- Interactive Mind Map Section -->
+
+>             <section id="explore" class="mind-map-container">
+
+>                 <!-- Center Node (Profile) -->
+
+>                 <div class="center-node">
+
+>                     <div class="w-64 h-64 rounded-full bg-gradient-to-br from-electric-400 to-primary-400 flex items-center justify-center shadow-2xl overflow-hidden border-4 border-white">
+
+>                         <img src="images/profile.jpg" alt="Cody Rice-Velasquez" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+>                         <div class="fallback-initials w-60 h-60 rounded-full bg-gradient-to-br from-plasma-200 to-electric-200 flex items-center justify-center text-6xl font-bold text-plasma-600 absolute" style="display: none;">CR</div>
+
+>                     </div>
+
+>                     <div class="text-center mt-4">
+
+>                         <h1 class="text-3xl font-bold text-plasma-900 font-montserrat">Cody Rice-Velasquez</h1>
+
+>                         <p class="text-electric-600 font-semibold mt-1">Systems thinker, builder, writer</p>
+
+>                     </div>
+
+>                 </div>
+
+> 
+
+>                 <!-- Mind Map Nodes -->
+
+>                 <div id="mind-map-nodes"></div>
+
+> 
+
+>                 <!-- Connection Lines -->
+
+>                 <svg id="connection-lines" class="absolute inset-0 pointer-events-none" style="z-index: 1;"></svg>
+
+>             </section>
+
+> 
+
+>             <!-- Content Panel (slides in from right) -->
+
+>             <div class="overlay" id="overlay"></div>
+
+>             <div class="content-panel" id="content-panel">
+
+>                 <div class="p-8">
+
+>                     <button id="close-panel" class="mb-6 text-plasma-500 hover:text-plasma-900 transition-colors">
+
+>                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+
+>                             <path d="M18 6L6 18"></path>
+
+>                             <path d="M6 6l12 12"></path>
+
+>                         </svg>
+
+>                     </button>
+
+>                     <div id="panel-content"></div>
+
+>                 </div>
+
+>             </div>
+
+> 
+
+>             <!-- Contact Section -->
+
+>             <section id="contact" class="py-20 bg-white">
+
+>                 <div class="container mx-auto px-4">
+
+>                     <div class="max-w-4xl mx-auto">
+
+>                         <div class="text-center mb-12">
+
+>                             <h2 class="text-4xl md:text-5xl font-bold text-plasma-900 mb-6 font-montserrat">Contact & Information</h2>
+
+>                             <p class="text-xl text-plasma-600 leading-relaxed">Ways to reach me, and a bit of history about where I've been</p>
+
+>                         </div>
+
+>                         <div class="mb-8 bg-gradient-to-br from-electric-50 to-primary-50 rounded-2xl p-8 border border-electric-100">
+
+>                             <h3 class="text-2xl font-bold text-plasma-900 mb-6 font-montserrat flex items-center gap-3">
+
+>                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar text-electric-600" aria-hidden="true">
+
+>                                     <path d="M8 2v4"></path>
+
+>                                     <path d="M16 2v4"></path>
+
+>                                     <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+
+>                                     <path d="M3 10h18"></path>
+
+>                                 </svg>
+
+>                                 Current Contact Information
+
+>                             </h3>
+
+>                             <div class="grid md:grid-cols-2 gap-6">
+
+>                                 <div class="flex items-center gap-4 p-4 bg-white rounded-lg border border-electric-100">
+
+>                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
+
+>                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-white" aria-hidden="true">
+
+>                                             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+
+>                                             <circle cx="12" cy="10" r="3"></circle>
+
+>                                         </svg>
+
+>                                     </div>
+
+>                                     <div>
+
+>                                         <p class="text-sm text-plasma-500">Location</p>
+
+>                                         <p class="font-semibold text-plasma-900">Indianapolis, IN, USA</p>
+
+>                                     </div>
+
+>                                 </div>
+
+>                                 <div class="flex items-center gap-4 p-4 bg-white rounded-lg border border-electric-100">
+
+>                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
+
+>                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-white" aria-hidden="true">
+
+>                                             <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
+
+>                                         </svg>
+
+>                                     </div>
+
+>                                     <div>
+
+>                                         <p class="text-sm text-plasma-500">Phone</p>
+
+>                                         <a href="tel:+13172054383" class="font-semibold text-plasma-900 hover:text-electric-600 transition-colors">(317) 205-4383</a>
+
+>                                     </div>
+
+>                                 </div>
+
+>                             </div>
+
+>                         </div>
+
+>                         <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+>                             <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
+
+>                                 <div class="flex items-center gap-3 mb-4">
+
+>                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
+
+>                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-white" aria-hidden="true">
+
+>                                             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+
+>                                             <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+
+>                                         </svg>
+
+>                                     </div>
+
+>                                     <h3 class="text-xl font-bold text-plasma-900 font-montserrat">Email Addresses</h3>
+
+>                                 </div>
+
+>                                 <ul class="space-y-3">
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="mailto:cody@qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">cody@qially.com</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">Primary</span>
+
+>                                     </li>
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="mailto:hello@qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">hello@qially.com</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">Business</span>
+
+>                                     </li>
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="mailto:cody@qially.me" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">cody@qially.me</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">Personal</span>
+
+>                                     </li>
+
+>                                 </ul>
+
+>                             </div>
+
+>                             <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
+
+>                                 <div class="flex items-center gap-3 mb-4">
+
+>                                     <div class="w-10 h-10 bg-gradient-to-r from-electric-600 to-primary-600 rounded-lg flex items-center justify-center">
+
+>                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-2 text-white" aria-hidden="true">
+
+>                                             <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+
+>                                             <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+
+>                                             <line x1="8" x2="16" y1="12" y2="12"></line>
+
+>                                         </svg>
+
+>                                     </div>
+
+>                                     <h3 class="text-xl font-bold text-plasma-900 font-montserrat">Socials & Links</h3>
+
+>                                 </div>
+
+>                                 <ul class="space-y-3">
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="https://qially.com" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">qially.com</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">Website</span>
+
+>                                     </li>
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">linkedin.com/in/cody-rice-velasquez-qially</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">LinkedIn</span>
+
+>                                     </li>
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="https://twitter.com/codyrice" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">@codyrice</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">Twitter/X</span>
+
+>                                     </li>
+
+>                                     <li class="flex flex-col gap-1">
+
+>                                         <div class="flex items-start justify-between">
+
+>                                             <a href="https://github.com/codyrice" class="text-plasma-700 hover:text-electric-600 transition-colors font-medium">github.com/codyrice</a>
+
+>                                         </div>
+
+>                                         <span class="text-sm text-plasma-500">GitHub</span>
+
+>                                     </li>
+
+>                                 </ul>
+
+>                             </div>
+
+>                         </div>
+
+>                     </div>
+
+>                 </div>
+
+>             </section>
+
+>         </main>
+
+> 
+
+>         <!-- Footer -->
+
+>         <footer class="bg-gradient-to-r from-plasma-900 to-primary-900 text-white py-8">
+
+>             <div class="container mx-auto px-4">
+
+>                 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+
+>                     <p class="text-plasma-400 text-sm order-2 md:order-1">© 2025 Cody Rice-Velasquez. All rights reserved.</p>
+
+>                     <div class="flex items-center gap-4 order-1 md:order-2">
+
+>                         <a href="https://github.com/qiallyme" target="_blank" rel="noopener noreferrer" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="GitHub Profile">
+
+>                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
+
+>                                 <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+
+>                                 <path d="M9 18c-4.51 2-5-2-7-2"></path>
+
+>                             </svg>
+
+>                         </a>
+
+>                         <a href="https://www.linkedin.com/in/cody-rice-velasquez-qially/" target="_blank" rel="noopener noreferrer" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="LinkedIn Profile">
+
+>                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
+
+>                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+
+>                                 <rect width="4" height="12" x="2" y="9"></rect>
+
+>                                 <circle cx="4" cy="4" r="2"></circle>
+
+>                             </svg>
+
+>                         </a>
+
+>                         <a href="mailto:cody@qially.com" class="p-2 text-plasma-400 hover:text-white hover:bg-plasma-800 rounded-lg transition-all duration-200" aria-label="Email">
+
+>                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail" aria-hidden="true">
+
+>                                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+
+>                                 <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+
+>                             </svg>
+
+>                         </a>
+
+>                     </div>
+
+>                 </div>
+
+>             </div>
+
+>         </footer>
+
+>     </div>
+
+> 
+
+>     <script>
+
+>         // Mind Map Configuration
+
+>         const nodes = [
+
+>             {
+
+>                 id: 'professional',
+
+>                 label: 'Professional',
+
+>                 icon: '💼',
+
+>                 color: 'from-electric-600 to-electric-700',
+
+>                 angle: 0, // Top
+
+>                 content: `
+
+>                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Professional</h2>
+
+>                     <div class="space-y-6">
+
+>                         <div class="bg-gradient-to-br from-electric-50 to-primary-50 rounded-xl p-6 border border-electric-100">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Work & Experience</h3>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">I've spent my career at the intersection of finance, operations, and technology. I've worked with companies across different stages, from startups to established businesses, helping them build systems and processes that scale.</p>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">More recently, I've been exploring how AI and automation can enhance human work rather than replace it, and how to design workflows that feel natural and empowering.</p>
+
+>                             <a href="https://qially.com" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-electric-600 to-primary-600 hover:from-electric-700 hover:to-primary-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">Visit qially.com →</a>
+
+>                         </div>
+
+>                         <div class="bg-white rounded-xl p-6 border border-electric-100 shadow-sm">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Current Focus</h3>
+
+>                             <ul class="space-y-3 text-plasma-600">
+
+>                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>Fractional CFO/COO services</span></li>
+
+>                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>AI workflow design and implementation</span></li>
+
+>                                 <li class="flex items-start"><span class="text-electric-600 mr-2">→</span><span>Systems thinking and operations consulting</span></li>
+
+>                             </ul>
+
+>                         </div>
+
+>                     </div>
+
+>                 `
+
+>             },
+
+>             {
+
+>                 id: 'personal',
+
+>                 label: 'Personal',
+
+>                 icon: '🏠',
+
+>                 color: 'from-primary-600 to-primary-700',
+
+>                 angle: 72, // Top-right
+
+>                 content: `
+
+>                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Personal</h2>
+
+>                     <div class="space-y-6">
+
+>                         <div class="bg-gradient-to-br from-primary-50 to-electric-50 rounded-xl p-6 border border-primary-100">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">What I'm Focused On Now</h3>
+
+>                             <div class="grid md:grid-cols-2 gap-4 mb-4">
+
+>                                 <div>
+
+>                                     <h4 class="font-semibold text-plasma-900 mb-2">Projects</h4>
+
+>                                     <ul class="space-y-2 text-plasma-600 text-sm">
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Building EmpowerQNow 713 series</span></li>
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Maintaining Memory Vault</span></li>
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Iterating on this site</span></li>
+
+>                                     </ul>
+
+>                                 </div>
+
+>                                 <div>
+
+>                                     <h4 class="font-semibold text-plasma-900 mb-2">Learning</h4>
+
+>                                     <ul class="space-y-2 text-plasma-600 text-sm">
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Systems thinking practice</span></li>
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Spiritual integration</span></li>
+
+>                                         <li class="flex items-start"><span class="text-primary-600 mr-2">→</span><span>Knowledge systems</span></li>
+
+>                                     </ul>
+
+>                                 </div>
+
+>                             </div>
+
+>                         </div>
+
+>                         <div class="bg-white rounded-xl p-6 border border-primary-100 shadow-sm">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Essays</h3>
+
+>                             <p class="text-plasma-600 mb-4">Long-form thoughts on systems, growth, and life experiences</p>
+
+>                             <div class="grid md:grid-cols-2 gap-4"><a href="/docs/dangerous_cycles_explained.html" class="block hover:scale-[1.02] transition-transform duration-300">
+
+>                 <div class="bg-white border rounded-lg p-6 shadow-sm transition-all duration-300 border-plasma-200 hover:shadow-lg hover:border-electric-400">
+
+>                     <h3 class="text-xl font-bold text-plasma-900 mb-2 font-montserrat">What Really Happened (Family-Facing Narrative)</h3>
+
+>                     <p class="text-plasma-600 leading-relaxed mb-4">Long-form thoughts on systems, growth, and life experiences</p>
+
+>                     
+
+>                 </div>
+
+>             </a></div>
+
+>                         </div>
+
+>                     </div>
+
+>                 `
+
+>             },
+
+>             {
+
+>                 id: 'history',
+
+>                 label: 'History',
+
+>                 icon: '📜',
+
+>                 color: 'from-plasma-600 to-plasma-700',
+
+>                 angle: 144, // Right
+
+>                 content: `
+
+>                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">History</h2>
+
+>                     <div class="space-y-6">
+
+>                         <div class="bg-gradient-to-br from-plasma-50 to-electric-50 rounded-xl p-6 border border-plasma-100">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Timeline</h3>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">Major milestones and reflections on the journey</p>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">Interactive timeline coming soon. For now, explore my work and essays above.</p>
+
+>                             <a href="https://memory.vault.qially.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-plasma-600 to-electric-600 text-white rounded-lg hover:from-plasma-700 hover:to-electric-700 transition-all duration-300 shadow-lg font-medium">View Full Timeline →</a>
+
+>                         </div>
+
+>                         <div class="bg-white rounded-xl p-6 border border-plasma-100 shadow-sm">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Address History</h3>
+
+>                             <ul class="space-y-3">
+
+>                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
+
+>                                     <span class="font-medium text-plasma-900">Indianapolis, Indiana, USA</span>
+
+>                                     <span class="text-sm text-plasma-500">2024 - Present</span>
+
+>                                 </li>
+
+>                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
+
+>                                     <span class="font-medium text-plasma-900">Austin, Texas, USA</span>
+
+>                                     <span class="text-sm text-plasma-500">2019 - 2023</span>
+
+>                                 </li>
+
+>                                 <li class="flex justify-between items-center p-3 bg-plasma-50 rounded-lg">
+
+>                                     <span class="font-medium text-plasma-900">Dallas, Texas, USA</span>
+
+>                                     <span class="text-sm text-plasma-500">2015 - 2019</span>
+
+>                                 </li>
+
+>                             </ul>
+
+>                         </div>
+
+>                     </div>
+
+>                 `
+
+>             },
+
+>             {
+
+>                 id: 'health',
+
+>                 label: 'Health',
+
+>                 icon: '💚',
+
+>                 color: 'from-green-600 to-green-700',
+
+>                 angle: 216, // Bottom-left
+
+>                 content: `
+
+>                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Health</h2>
+
+>                     <div class="space-y-6">
+
+>                         <div class="bg-gradient-to-br from-green-50 to-electric-50 rounded-xl p-6 border border-green-100">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Wellness & Balance</h3>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">Health is foundational to everything else. I focus on maintaining balance across physical, mental, and emotional well-being.</p>
+
+>                             <div class="grid md:grid-cols-2 gap-4">
+
+>                                 <div class="bg-white rounded-lg p-4 border border-green-100">
+
+>                                     <h4 class="font-semibold text-plasma-900 mb-2">Physical</h4>
+
+>                                     <p class="text-sm text-plasma-600">Movement, nutrition, rest, and energy management</p>
+
+>                                 </div>
+
+>                                 <div class="bg-white rounded-lg p-4 border border-green-100">
+
+>                                     <h4 class="font-semibold text-plasma-900 mb-2">Mental</h4>
+
+>                                     <p class="text-sm text-plasma-600">Systems thinking, learning, and cognitive wellness</p>
+
+>                                 </div>
+
+>                             </div>
+
+>                         </div>
+
+>                     </div>
+
+>                 `
+
+>             },
+
+>             {
+
+>                 id: 'spiritual',
+
+>                 label: 'Spiritual',
+
+>                 icon: '✨',
+
+>                 color: 'from-purple-600 to-purple-700',
+
+>                 angle: 288, // Top-left
+
+>                 content: `
+
+>                     <h2 class="text-3xl font-bold text-plasma-900 mb-6 font-montserrat">Spiritual</h2>
+
+>                     <div class="space-y-6">
+
+>                         <div class="bg-gradient-to-br from-purple-50 to-electric-50 rounded-xl p-6 border border-purple-100">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">EmpowerQNow 713</h3>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">A living operating system for the soul—a fusion of personal philosophy, life system, and brand identity. At its heart lies a simple but transformative mission:</p>
+
+>                             <blockquote class="border-l-4 border-purple-600 pl-4 italic text-plasma-700 mb-4">
+
+>                                 "Remember who we are. Remember that we are connected. We are one love."
+
+>                             </blockquote>
+
+>                             <p class="text-plasma-600 leading-relaxed mb-4">This movement calls for radical compassion and daily growth. We are invited to love the other as we love ourselves, be kind, do better, and grow every day.</p>
+
+>                             <a href="https://empowerqnow.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-electric-600 text-white rounded-lg hover:from-purple-700 hover:to-electric-700 transition-all duration-300 shadow-lg font-medium">Learn More →</a>
+
+>                         </div>
+
+>                         <div class="bg-white rounded-xl p-6 border border-purple-100 shadow-sm">
+
+>                             <h3 class="text-xl font-bold text-plasma-900 mb-4 font-montserrat">Integration</h3>
+
+>                             <p class="text-plasma-600 leading-relaxed">Exploring how spiritual and operational integration creates more meaningful work and life. Science and spirituality are converging on the same truth: we are energy, we are consciousness, and we are connected.</p>
+
+>                         </div>
+
+>                     </div>
+
+>                 `
+
+>             }
+
+>         ];
+
+> 
+
+>         // Initialize Mind Map
+
+>         function initMindMap() {
+
+>             const container = document.getElementById('mind-map-nodes');
+
+>             const svg = document.getElementById('connection-lines');
+
+>             const centerX = window.innerWidth / 2;
+
+>             const centerY = window.innerHeight / 2;
+
+>             const radius = Math.min(window.innerWidth, window.innerHeight) * 0.35;
+
+> 
+
+>             nodes.forEach((node, index) => {
+
+>                 // Calculate position
+
+>                 const angleRad = (node.angle * Math.PI) / 180;
+
+>                 const x = centerX + radius * Math.cos(angleRad);
+
+>                 const y = centerY + radius * Math.sin(angleRad);
+
+> 
+
+>                 // Create node element
+
+>                 const nodeEl = document.createElement('div');
+
+>                 nodeEl.className = 'mind-map-node';
+
+>                 nodeEl.style.left = `${x}px`;
+
+>                 nodeEl.style.top = `${y}px`;
+
+>                 nodeEl.style.transform = 'translate(-50%, -50%)';
+
+>                 nodeEl.dataset.nodeId = node.id;
+
+> 
+
+>                 nodeEl.innerHTML = `
+
+>                     <div class="node-circle bg-gradient-to-br ${node.color}">
+
+>                         <div class="text-4xl">${node.icon}</div>
+
+>                     </div>
+
+>                     <div class="node-label">${node.label}</div>
+
+>                 `;
+
+> 
+
+>                 // Add click handler
+
+>                 nodeEl.addEventListener('click', () => openPanel(node));
+
+> 
+
+>                 container.appendChild(nodeEl);
+
+> 
+
+>                 // Draw connection line
+
+>                 const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+
+>                 line.setAttribute('x1', centerX);
+
+>                 line.setAttribute('y1', centerY);
+
+>                 line.setAttribute('x2', x);
+
+>                 line.setAttribute('y2', y);
+
+>                 line.setAttribute('class', 'connection-line');
+
+>                 line.setAttribute('stroke', 'rgba(37, 99, 235, 0.3)');
+
+>                 line.setAttribute('stroke-width', '2');
+
+>                 svg.appendChild(line);
+
+>             });
+
+> 
+
+>             // Handle window resize
+
+>             window.addEventListener('resize', () => {
+
+>                 container.innerHTML = '';
+
+>                 svg.innerHTML = '';
+
+>                 initMindMap();
+
+>             });
+
+>         }
+
+> 
+
+>         // Open content panel
+
+>         function openPanel(node) {
+
+>             const panel = document.getElementById('content-panel');
+
+>             const overlay = document.getElementById('overlay');
+
+>             const content = document.getElementById('panel-content');
+
+>             
+
+>             content.innerHTML = node.content;
+
+>             panel.classList.add('open');
+
+>             overlay.classList.add('active');
+
+>         }
+
+> 
+
+>         // Close content panel
+
+>         function closePanel() {
+
+>             const panel = document.getElementById('content-panel');
+
+>             const overlay = document.getElementById('overlay');
+
+>             
+
+>             panel.classList.remove('open');
+
+>             overlay.classList.remove('active');
+
+>         }
+
+> 
+
+>         // Event listeners
+
+>         document.getElementById('close-panel').addEventListener('click', closePanel);
+
+>         document.getElementById('overlay').addEventListener('click', closePanel);
+
+> 
+
+>         // Initialize on load
+
+>         window.addEventListener('load', () => {
+
+>             initMindMap();
+
+>         });
+
+>     </script>
+
+> </body>
+
 > </html>
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Poder Especial de Representación"
 slug: "poder_especial_de_representacion"
 created_at: "2023-07-30 16:08:10"
-updated_at: "2023-07-30 16:08:10"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

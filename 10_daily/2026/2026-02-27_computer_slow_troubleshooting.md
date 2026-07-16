@@ -3,9 +3,9 @@ layout: page
 title: "Computer Slow Troubleshooting"
 slug: "computer_slow_troubleshooting"
 created_at: "2026-02-27 00:32:36"
-updated_at: "2026-02-27 00:32:36"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

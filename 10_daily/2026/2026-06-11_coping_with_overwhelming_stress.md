@@ -3,9 +3,9 @@ layout: page
 title: "Coping with Overwhelming Stress"
 slug: "coping_with_overwhelming_stress"
 created_at: "2026-06-11 20:46:50"
-updated_at: "2026-06-11 20:46:50"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

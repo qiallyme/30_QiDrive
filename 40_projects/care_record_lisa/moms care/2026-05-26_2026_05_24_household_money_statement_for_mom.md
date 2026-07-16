@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 2026 05 24 Household Money Statement For Mom
-slug: ""
+slug: 2026-05-24-household-money-statement-for-mom
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f57ccaa48b2e4e56b821c144f71866be
 canonical_ref: ""
 source_type: manual
 template_key: master-template

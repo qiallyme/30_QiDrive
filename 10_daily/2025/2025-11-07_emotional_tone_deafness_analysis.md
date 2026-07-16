@@ -3,9 +3,9 @@ layout: page
 title: "Emotional tone-deafness analysis"
 slug: "emotional_tone_deafness_analysis"
 created_at: "2025-11-07 12:23:17"
-updated_at: "2025-11-07 12:23:17"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

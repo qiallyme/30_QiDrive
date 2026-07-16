@@ -3,9 +3,9 @@ layout: page
 title: "Violations Inventory Management"
 slug: "violations_inventory_management"
 created_at: "2026-01-18 00:54:28"
-updated_at: "2026-01-18 00:54:28"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -534,81 +534,156 @@ canonical_ref: ""
 > You caught it before it turned into a silent structural failure.
 
 ### User
-> CLARIFICATION: The implementation resulted in two separate standardized sheets, not a single unified sheet, strictly adhering to the "LOCK-IN RULES" provided in the previous request. The audit below reflects the existence of violations_inventory_master.csv (populated) and financial_transactions_damages.csv (empty template).
-> 
-> SECTION 1: Sheet Schemas (Current State)
-> A. Violations Schema (violations_inventory_master.csv)
-> violation_id (String, Required) - Primary Key
-> violation_date (String, Optional)
-> violation_date_end (String, Optional)
-> actor (String, Optional)
-> actor_role (String, Optional)
-> violation_category (String, Optional) - Controlled derivation
-> violation_type (String, Optional)
-> legal_authority (String, Optional)
-> description (String, Optional)
-> procedural_context (String, Optional)
-> evidence_ids (String, Optional) - Foreign Key (External)
-> harm_category (String, Optional)
-> impact_summary (String, Optional)
-> status (String, Required) - Default applied
-> confidence_level (String, Required) - Default applied
-> notes (String, Optional)
-> B. Financial Transactions Schema (financial_transactions_damages.csv)
-> Note: This file contains headers only; no data was migrated into it.
-> 
-> transaction_id (String, Required) - Primary Key
-> transaction_date (Date, Required)
-> amount (Number, Required)
-> currency (String, Required) - Default: USD
-> transaction_category (String, Required)
-> transaction_type (String, Required)
-> description (String, Required)
-> related_violation_ids (List, Optional) - Foreign Key (links to violation_id)
-> evidence_ids (List, Optional) - Foreign Key (External)
-> payee (String, Optional)
-> payment_method (String, Optional)
-> recoverable (Boolean/Enum, Optional)
-> notes (String, Optional)
-> SECTION 2: Mapping & Transformations Performed
-> Data Source
-> Source File: 
-> content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
-> Destinations:
-> All rows mapped to violations_inventory_master.csv.
-> financial_transactions_damages.csv remains empty (template only).
-> Column Mappings (Source NT_inventory... → Target violations_inventory_master.csv)
-> Target Field	Source Field	Transformation / Default
-> violation_id	None	Generated: Sequential V-001, V-002, etc.
-> violation_date	Date / timeframe	Direct copy.
-> violation_date_end	None	Default: Empty.
-> actor	Actor / institution	Direct copy.
-> actor_role	None	Default: Empty.
-> violation_category	Violation type	Derived: Mapped via keyword matching (e.g., "ADA" → "ADA", "Tort" → "Tort"). Default: "Statutory".
-> violation_type	Violation type	Direct copy (preserves original specificity).
-> legal_authority	Rights implicated	Direct copy.
-> description	Supporting text excerpt	Direct copy.
-> procedural_context	None	Default: Empty.
-> evidence_ids	Source	Direct copy.
-> harm_category	None	Default: Empty.
-> impact_summary	Harm caused	Direct copy.
-> status	None	Default: "Alleged".
-> confidence_level	None	Default: "Medium".
-> notes	None	Default: Empty.
-> Deduplication & Consolidation
-> Row Consolidation: None. 1 Source Row = 1 Target Row.
-> Deduplication: None performed.
-> SECTION 3: Assumptions, Data Loss, and Risks
-> Assumptions
-> Imputed Defaults: It is assumed all migrated violations currently have a status of "Alleged" and a confidence level of "Medium".
-> Category Mapping: It is assumed that the text presence of "ADA", "Due Process", "Tort", etc., in the original Violation type field is sufficient to categorize the violation.
-> Financials are Distinct: It is assumed that rows in the source file describing billing (e.g., "AES billed electric charges") are fundamentally Violations (improper cost-shifting) and not purely Financial Transactions (ledger entries), so they reside in the Violations sheet.
-> Data Loss
-> No data fields were explicitly dropped.
-> Original row order was preserved to generate IDs; re-sorting the source would generate different IDs.
-> Risks
-> Sequential IDs: The generated violation_id (V-xxx) is mutable if the script is re-run against a sorted or modified source file; these IDs are not yet permanently bonded to the data.
-> Separation: Violations and Financials are in separate files. There is currently no data in the Financials file, meaning any implied financial data in the Violations source (like amounts mentioned in text) remains unstructured text within the description or impact_summary fields of the Violations sheet.
+> CLARIFICATION: The implementation resulted in two separate standardized sheets, not a single unified sheet, strictly adhering to the "LOCK-IN RULES" provided in the previous request. The audit below reflects the existence of violations_inventory_master.csv (populated) and financial_transactions_damages.csv (empty template).
+
+> 
+
+> SECTION 1: Sheet Schemas (Current State)
+
+> A. Violations Schema (violations_inventory_master.csv)
+
+> violation_id (String, Required) - Primary Key
+
+> violation_date (String, Optional)
+
+> violation_date_end (String, Optional)
+
+> actor (String, Optional)
+
+> actor_role (String, Optional)
+
+> violation_category (String, Optional) - Controlled derivation
+
+> violation_type (String, Optional)
+
+> legal_authority (String, Optional)
+
+> description (String, Optional)
+
+> procedural_context (String, Optional)
+
+> evidence_ids (String, Optional) - Foreign Key (External)
+
+> harm_category (String, Optional)
+
+> impact_summary (String, Optional)
+
+> status (String, Required) - Default applied
+
+> confidence_level (String, Required) - Default applied
+
+> notes (String, Optional)
+
+> B. Financial Transactions Schema (financial_transactions_damages.csv)
+
+> Note: This file contains headers only; no data was migrated into it.
+
+> 
+
+> transaction_id (String, Required) - Primary Key
+
+> transaction_date (Date, Required)
+
+> amount (Number, Required)
+
+> currency (String, Required) - Default: USD
+
+> transaction_category (String, Required)
+
+> transaction_type (String, Required)
+
+> description (String, Required)
+
+> related_violation_ids (List, Optional) - Foreign Key (links to violation_id)
+
+> evidence_ids (List, Optional) - Foreign Key (External)
+
+> payee (String, Optional)
+
+> payment_method (String, Optional)
+
+> recoverable (Boolean/Enum, Optional)
+
+> notes (String, Optional)
+
+> SECTION 2: Mapping & Transformations Performed
+
+> Data Source
+
+> Source File: 
+
+> content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
+
+> Destinations:
+
+> All rows mapped to violations_inventory_master.csv.
+
+> financial_transactions_damages.csv remains empty (template only).
+
+> Column Mappings (Source NT_inventory... → Target violations_inventory_master.csv)
+
+> Target Field	Source Field	Transformation / Default
+
+> violation_id	None	Generated: Sequential V-001, V-002, etc.
+
+> violation_date	Date / timeframe	Direct copy.
+
+> violation_date_end	None	Default: Empty.
+
+> actor	Actor / institution	Direct copy.
+
+> actor_role	None	Default: Empty.
+
+> violation_category	Violation type	Derived: Mapped via keyword matching (e.g., "ADA" → "ADA", "Tort" → "Tort"). Default: "Statutory".
+
+> violation_type	Violation type	Direct copy (preserves original specificity).
+
+> legal_authority	Rights implicated	Direct copy.
+
+> description	Supporting text excerpt	Direct copy.
+
+> procedural_context	None	Default: Empty.
+
+> evidence_ids	Source	Direct copy.
+
+> harm_category	None	Default: Empty.
+
+> impact_summary	Harm caused	Direct copy.
+
+> status	None	Default: "Alleged".
+
+> confidence_level	None	Default: "Medium".
+
+> notes	None	Default: Empty.
+
+> Deduplication & Consolidation
+
+> Row Consolidation: None. 1 Source Row = 1 Target Row.
+
+> Deduplication: None performed.
+
+> SECTION 3: Assumptions, Data Loss, and Risks
+
+> Assumptions
+
+> Imputed Defaults: It is assumed all migrated violations currently have a status of "Alleged" and a confidence level of "Medium".
+
+> Category Mapping: It is assumed that the text presence of "ADA", "Due Process", "Tort", etc., in the original Violation type field is sufficient to categorize the violation.
+
+> Financials are Distinct: It is assumed that rows in the source file describing billing (e.g., "AES billed electric charges") are fundamentally Violations (improper cost-shifting) and not purely Financial Transactions (ledger entries), so they reside in the Violations sheet.
+
+> Data Loss
+
+> No data fields were explicitly dropped.
+
+> Original row order was preserved to generate IDs; re-sorting the source would generate different IDs.
+
+> Risks
+
+> Sequential IDs: The generated violation_id (V-xxx) is mutable if the script is re-run against a sorted or modified source file; these IDs are not yet permanently bonded to the data.
+
+> Separation: Violations and Financials are in separate files. There is currently no data in the Financials file, meaning any implied financial data in the Violations source (like amounts mentioned in text) remains unstructured text within the description or impact_summary fields of the Violations sheet.
+
 > Reversibility: The structure is fully reversible back to separate tables or the original format, provided the violation_id links are maintained or ignored.
 
 ### Assistant
@@ -731,20 +806,34 @@ canonical_ref: ""
 > No more schema changes after that. Lock it and build.
 
 ### User
-> {'asset_pointer': 'sediment://file_000000001a5c722f95f59d1060238015', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 286, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 60138, 'width': 1093}violation_id	violation_date	violation_date_end	actor	actor_role	violation_category	violation_type	legal_authority	description	procedural_context	evidence_ids	harm_category	impact_summary	status	confidence_level
-> V-001	1/2/2026				Statutory	General		Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations		C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md			Alleged	Medium
-> V-002			Experian		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	Experian reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md		Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
-> V-003			Equifax		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	Equifax reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md		Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
-> V-004			TransUnion		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	TransUnion reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md		TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
-> V-005			FCFCU		Statutory	FCRA	THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE	Failure to correct inaccurate furnishings after notice (1681s-2(b))		C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md		FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness.	Alleged	Medium
-> V-006			FCFCU		Statutory	FCRA	THEORY_FCRA_SYSTEMIC_MISREPORTING	Dual tradeline double-counting of same collateral/debt causing compounded credit harm		C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md		The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages.	Alleged	Medium
-> V-007			FCFCU		Tort	Tort	THEORY_CREDIT_DEFAMATION	Credit defamation: false publication of delinquency after legal status changed		C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md		False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims.	Alleged	Medium
-> V-008			FCFCU/Attorney		Statutory	FDCPA	THEORY_DEBT_STATUS_MISREPRESENTATION	FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved)		C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md		Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved.	Alleged	Medium
-> V-009			FCFCU		Statutory	FCRA	THEORY_FCRA_ACCURACY	Failure to mark account 'foreclosure' / 'closed' accurately after sale		C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md		Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles.	Alleged	Medium
-> V-010			FCFCU		Tort	Tort	THEORY_POST_SALE_COST_SHIFT	Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties		C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md		FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly.	Alleged	Medium
-> V-011			FCFCU		Statutory	Due_Process	THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE	Removal occurred 6–7 days after deed recorded/assessor update (compressed window)		C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md		The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice.	Alleged	Medium
-> V-012			Court/FCFCU		Procedural	Procedure/Accounting	THEORY_ACCOUNTING_IRREGULARITIES	Surplus funds declared resolved despite dispute on accuracy/fees		C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md		Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities.	Alleged	Medium
-> V-013			FCFCU		Statutory	Accounting	THEORY_ACCOUNTING_IRREGULARITIES	Interest/fees arbitrarily inflated (dispute) impacting accounting and harm		C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md		Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages.	Alleged	Medium
+> {'asset_pointer': 'sediment://file_000000001a5c722f95f59d1060238015', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 286, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 60138, 'width': 1093}violation_id	violation_date	violation_date_end	actor	actor_role	violation_category	violation_type	legal_authority	description	procedural_context	evidence_ids	harm_category	impact_summary	status	confidence_level
+
+> V-001	1/2/2026				Statutory	General		Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations		C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md			Alleged	Medium
+
+> V-002			Experian		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	Experian reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md		Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
+
+> V-003			Equifax		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	Equifax reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md		Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
+
+> V-004			TransUnion		Statutory	FCRA	THEORY_CRA_REINVESTIGATION_FAILURE	TransUnion reinvestigation failure / inadequate investigation (if occurs)		C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md		TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.	Alleged	Medium
+
+> V-005			FCFCU		Statutory	FCRA	THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE	Failure to correct inaccurate furnishings after notice (1681s-2(b))		C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md		FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness.	Alleged	Medium
+
+> V-006			FCFCU		Statutory	FCRA	THEORY_FCRA_SYSTEMIC_MISREPORTING	Dual tradeline double-counting of same collateral/debt causing compounded credit harm		C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md		The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages.	Alleged	Medium
+
+> V-007			FCFCU		Tort	Tort	THEORY_CREDIT_DEFAMATION	Credit defamation: false publication of delinquency after legal status changed		C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md		False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims.	Alleged	Medium
+
+> V-008			FCFCU/Attorney		Statutory	FDCPA	THEORY_DEBT_STATUS_MISREPRESENTATION	FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved)		C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md		Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved.	Alleged	Medium
+
+> V-009			FCFCU		Statutory	FCRA	THEORY_FCRA_ACCURACY	Failure to mark account 'foreclosure' / 'closed' accurately after sale		C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md		Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles.	Alleged	Medium
+
+> V-010			FCFCU		Tort	Tort	THEORY_POST_SALE_COST_SHIFT	Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties		C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md		FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly.	Alleged	Medium
+
+> V-011			FCFCU		Statutory	Due_Process	THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE	Removal occurred 6–7 days after deed recorded/assessor update (compressed window)		C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md		The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice.	Alleged	Medium
+
+> V-012			Court/FCFCU		Procedural	Procedure/Accounting	THEORY_ACCOUNTING_IRREGULARITIES	Surplus funds declared resolved despite dispute on accuracy/fees		C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md		Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities.	Alleged	Medium
+
+> V-013			FCFCU		Statutory	Accounting	THEORY_ACCOUNTING_IRREGULARITIES	Interest/fees arbitrarily inflated (dispute) impacting accounting and harm		C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md		Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages.	Alleged	Medium
+
 > V-014			FCFCU		Tort	Tort	THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH	FCFCU testimony: winterize then leave until spring (arbitrary urgency for removal)		C_VIS\10_violations\FCFCU\NT_V-038_fcfcu-testimony-winterize-then-leave.md		FCFCU testimony that the property should be winterized then left until spring may indicate arbitrary urgency used to justify removal.	Alleged	Medium
 
 ### Assistant
@@ -1096,154 +1185,302 @@ canonical_ref: ""
 > If you tell me where Gemini is running (local repo agent, Codespaces, Drive, etc.), I can tighten the prompt to that environment’s exact file operations and path conventions.
 
 ### User
-> I have completed the full VIS migration.
-> 
-> Summary of Actions
-> ID Stabilization: Migrated 135 rows to stable V-FCFCU-YYYY-#### IDs.
-> Evidence Indexing: Extracted source paths (like EXH_Exhibit X...) into evidence_index_master.csv with stable E-FCFCU-EXH-YYYY-#### IDs.
-> Master Inventory: Updated violations_inventory_master.csv with the new IDs, normalized categories, and evidence references.
-> Markdown Standardization: Created or updated 135 per-violation Markdown files in content/C_VIS/10_violations/, organized by actor (e.g., FCFCU, CREDIT_BUREAUS). Each file now has the correct frontmatter and stable ID.
-> Archiving: Moved the old _OLD_... CSV and other legacy indices to content/C_VIS/60_data_inventories/_TRASH_ARCHIVE/2026-01-18/.
-> Outputs
-> Master Violations: content/C_VIS/60_data_inventories/violations_inventory_master.csv
-> Evidence Index: content/C_VIS/60_data_inventories/evidence_index_master.csv (Newly created)
-> Financial Template: content/C_VIS/60_data_inventories/financial_transactions_damages.csv (Unchanged)
-> Violations Content: content/C_VIS/10_violations/ (Populated with standardized notes)
-> You can now review the master inventory or the generated markdown files. All data is preserved and traceable. violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
-> V-FCFCU-2026-0001,2026-01-02,,,,Statutory,General,,"Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations",,E-FCFCU-EXH-2026-0001,,,Alleged,Medium,LEGACY_ID:V-001
-> V-FCFCU-2025-0001,,,Experian,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,Experian reinvestigation failure / inadequate investigation (if occurs),,,,"Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md
-> V-FCFCU-2025-0002,,,Equifax,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,Equifax reinvestigation failure / inadequate investigation (if occurs),,,,"Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md
-> V-FCFCU-2025-0003,,,TransUnion,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,TransUnion reinvestigation failure / inadequate investigation (if occurs),,,,"TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md
-> V-FCFCU-2025-0004,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE,Failure to correct inaccurate furnishings after notice (1681s-2(b)),,,,"FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness.",Alleged,Medium,LEGACY_ID:V-005; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md
-> V-FCFCU-2025-0005,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Dual tradeline double-counting of same collateral/debt causing compounded credit harm,,,,"The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages.",Alleged,Medium,LEGACY_ID:V-006; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md
-> V-FCFCU-2025-0006,,,FCFCU,,Tort,Tort,THEORY_CREDIT_DEFAMATION,Credit defamation: false publication of delinquency after legal status changed,,,,False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims.,Alleged,Medium,LEGACY_ID:V-007; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md
-> V-FCFCU-2025-0007,,,FCFCU/Attorney,,Statutory,FDCPA,THEORY_DEBT_STATUS_MISREPRESENTATION,FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved),,,,Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved.,Alleged,Medium,LEGACY_ID:V-008; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md
-> V-FCFCU-2025-0008,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_ACCURACY,Failure to mark account 'foreclosure' / 'closed' accurately after sale,,,,Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles.,Alleged,Medium,LEGACY_ID:V-009; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md
-> V-FCFCU-2025-0009,,,FCFCU,,Tort,Tort,THEORY_POST_SALE_COST_SHIFT,Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties,,,,"FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly.",Alleged,Medium,LEGACY_ID:V-010; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md
-> V-FCFCU-2025-0010,,,FCFCU,,Statutory,Due_Process,THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE,Removal occurred 6–7 days after deed recorded/assessor update (compressed window),,,,"The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice.",Alleged,Medium,LEGACY_ID:V-011; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md
-> V-FCFCU-2025-0011,,,Court/FCFCU,,Procedural,Procedure/Accounting,THEORY_ACCOUNTING_IRREGULARITIES,Surplus funds declared resolved despite dispute on accuracy/fees,,,,"Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities.",Alleged,Medium,LEGACY_ID:V-012; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md
-> V-FCFCU-2025-0012,,,FCFCU,,Statutory,Accounting,THEORY_ACCOUNTING_IRREGULARITIES,Interest/fees arbitrarily inflated (dispute) impacting accounting and harm,,,,Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages.,Alleged,Medium,LEGACY_ID:V-013; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md
-> V-FCFCU-2025-0013,,,FCFCU,,Tort,Tort,THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH,FCFCU testimony: winterize then leave until spring (arbitrary urgency for removal),,,,FCFCU testimony that the property should be winterized then left until spring may indicate arbitrary urgency used to justify removal.,Alleged,Medium,LEGACY_ID:V-014; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-038_fcfcu-testimony-winterize-then-leave.md
-> V-FCFCU-2025-0014,,,FCFCU,,Statutory,Litigation,THEORY_GLOBAL_RESOLUTION,Global demand letter: deletion + monetary settlement + account purges,,,,"Prepare a global demand seeking tradeline deletion, monetary settlement, and account purges as a resolution posture.",Alleged,Medium,LEGACY_ID:V-015; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-070_global-demand-letter.md
-> V-FCFCU-2025-0015,,,FCFCU,,Statutory,Litigation,THEORY_PRESERVATION,Litigation hold/preservation letter to FCFCU for credit reporting and internal records,,,,Send and document a litigation hold/preservation request to FCFCU for credit reporting files and internal communications.,Alleged,Medium,LEGACY_ID:V-016; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-071_litigation-hold-preservation-letter.md
-> V-FCFCU-2025-0016,,,FCFCU,,Statutory,Litigation,THEORY_EQUITABLE_RELIEF_DELETION,Equitable relief theory: complete tradeline deletion due to loss of reporting integrity,,,,Pursue equitable relief seeking complete tradeline deletion where reporting integrity is irreparably compromised.,Alleged,Medium,LEGACY_ID:V-017; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-072_equitable-relief-tradeline-deletion.md
-> V-FCFCU-2025-0017,,,FCFCU,,Statutory,Damages,THEORY_DAMAGES_CREDIT,Damages: credit score suppression and denials (documented) attributable to misreporting,,,,Document credit score impacts and lending denials attributable to misreporting to support damages claims.,Alleged,Medium,LEGACY_ID:V-018; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-073_damages-credit-score-suppression.md
-> V-FCFCU-2025-0018,,,FCFCU,,Statutory,Damages,THEORY_DAMAGES_FINANCIAL,Damages: out-of-pocket costs from displacement and post-sale bills,,,,Collect and document out-of-pocket costs following displacement and post-sale billing for damages mapping.,Alleged,Medium,LEGACY_ID:V-019; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-074_damages-out-of-pocket-costs.md
-> V-FCFCU-2025-0019,,,FCFCU,,Statutory,Public,THEORY_PUBLIC_ACCOUNTABILITY,Public accountability hold: prepare fact-checked summary and timeline (not published yet),,,,Prepare and fact-check an internal public summary and timeline for accountability; do not publish yet.,Alleged,Medium,LEGACY_ID:V-020; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-075_public-accountability-hold.md
-> V-FCFCU-2025-0020,,,FCFCU / Sheriff personnel,,Tort,Tort,THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH,Conversion / Negligence: Property damage and personal property loss after removal,,,,"Alleged property damage (burst pipes, spoiled food, unplugged appliances) and conversion of personal property following forcible removal.",Alleged,Medium,LEGACY_ID:V-021; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-080_conversion-negligence-post-removal-damage.md
-> V-FCFCU-2025-0021,,,FCFCU,,Procedural,Procedure / Evidence,THEORY_PRESERVATION,Evidence spoliation: Interior security cameras unplugged during contested retrieval,,,,"Interior security cameras were unplugged during a contested removal period, potentially constituting spoliation of evidence.",Alleged,Medium,LEGACY_ID:V-022; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-081_evidence-spoliation-unplugged-cameras.md
-> V-FCFCU-2025-0022,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,FCFCU continues reporting first mortgage as active delinquent installment loan post-judgment/sale,,,,"FCFCU continues reporting the first mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness.",Alleged,Medium,LEGACY_ID:V-023; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
-> V-FCFCU-2025-0023,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,FCFCU continues reporting second mortgage as active delinquent installment loan post-judgment/sale,,,,"FCFCU continues reporting the second mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness.",Alleged,Medium,LEGACY_ID:V-024; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
-> V-FCFCU-2025-0024,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Monthly delinquencies reported after foreclosure judgment (no lawful monthly obligation),,,,"Monthly delinquencies continue to be reported after a foreclosure judgment where no lawful monthly obligation exists, potentially inflating arrears and harming credit.",Alleged,Medium,LEGACY_ID:V-025; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
-> V-FCFCU-2025-0025,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Past-due amount and payment schedule reported after judgment despite merger/extinguishment,,,,"A past-due amount and payment schedule are reported after judgment despite merger or extinguishment of the underlying obligation, suggesting inaccurate reporting.",Alleged,Medium,LEGACY_ID:V-026; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-004_past-due-amount-schedule-after-judgment.md
-> V-FCFCU-2025-0026,,,FCFCU,,Statutory,FCRA,THEORY_CONTRADICTION_AND_MISREPRESENTATION,Inconsistent reporting vs court position (ownership/possession vs ongoing borrower obligation),,,,"FCFCU's reporting conflicts with positions taken in court about ownership or possession, creating a contradiction useful for disputes and complaints.",Alleged,Medium,LEGACY_ID:V-027; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-007_inconsistent-reporting-vs-court-position.md
-> V-FCFCU-2025-0027,,,FCFCU/Sheriff,,Statutory,Due_Process,THEORY_LACK_OF_NOTICE_AND_JURISDICTION,Service allegedly completed but Defendant received no notice before writ executed,,,,Allegations that service was completed but no actual notice reached the Defendant before writ execution can undermine jurisdiction and due process.,Alleged,Medium,LEGACY_ID:V-028; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-030_service-completed-no-notice-before-writ.md
-> V-FCFCU-2025-0028,,,Various housing providers,,Statutory,Fair Housing Act,THEORY_PUBLIC_ACCOUNTABILITY,Fair Housing Act: Reasonable accommodation failure (group homes / emotional support animals),,,,Alleged and documented failures to provide reasonable accommodations (including denial of group homes or emotional support animals) under the Fair Housing Act.,Alleged,Medium,LEGACY_ID:V-029; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-076_fha-reasonable-accommodation-failure.md
-> V-FCFCU-2025-0029,,,Various public accommodation operators,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,"ADA Title III: Entertainment / public accommodation accessibility failures (closed captioning, audio description)",,,,"Instances where public accommodations failed to provide required accessibility features (e.g., closed captioning, audio description), impacting disabled patrons.",Alleged,Medium,LEGACY_ID:V-030; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-077_ada-title-iii-entertainment-access-failure.md
-> V-FCFCU-2025-0030,,,Various institutions,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,ADA: Effective communication failures (failure to train staff / provide interpreters),,,,"Failures to provide effective communication (e.g., sign language interpreters, auxiliary aids) and to train staff, harming people with communication disabilities.",Alleged,Medium,LEGACY_ID:V-031; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-078_ada-effective-communication-failure.md
-> V-FCFCU-2025-0031,,,Major servicers / asset managers,,Statutory,Fair Housing Act,THEORY_PUBLIC_ACCOUNTABILITY,Discriminatory maintenance / redlining of REO properties,,,,"Allegations that servicers and asset managers systematically under-maintained REO properties in majority-Black and Latino neighborhoods compared to white neighborhoods, amounting to discriminatory practices.",Alleged,Medium,LEGACY_ID:V-032; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-083_discriminatory-maintenance-redlining.md
-> V-FCFCU-2025-0032,,,"Harbour Portfolio VII, CWAM II, Harbour Portfolio VI",,Statutory,Consumer Protection / FHA,THEORY_PUBLIC_ACCOUNTABILITY,Predatory land contract / reverse redlining in rent-to-own schemes,,,,"Claims that certain sellers marketed predatory land contracts primarily in minority neighborhoods with inflated prices and onerous terms, amounting to discriminatory lending and consumer harm.",Alleged,Medium,LEGACY_ID:V-033; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-084_predatory-land-contract-reverse-redlining.md
-> V-FCFCU-2025-0033,,,Sheriff,,Statutory,Due_Process,THEORY_FALSE_RETURN_OR_DEFECTIVE_SERVICE,Sheriff return inaccuracies (claimed posting/mailing not done) - factual dispute,,,,"Sheriff return records claim posting/mailing that may not have occurred, creating a factual dispute over proper service.",Alleged,Medium,LEGACY_ID:V-034; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-031_sheriff-return-inaccuracies.md
-> V-FCFCU-2025-0034,,,Court,,Statutory,Due_Process,THEORY_INADEQUATE_FACTFINDING,Court relied on service sufficiency without addressing conflicting facts,,,,"The court accepted service sufficiency without reconciling conflicting facts, raising issues about the adequacy of factfinding.",Alleged,Medium,LEGACY_ID:V-035; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-035_court-relied-on-service-sufficiency.md
-> V-FCFCU-2025-0035,,,FCFCU,,Procedural,Procedure,THEORY_INADEQUATE_FACTFINDING,Fraud on the court / material misrepresentation in writ petition,,,,"Allegations that a writ petition contained false or materially misleading statements (e.g., ""Unknown Occupants""), resulting in issuance without proper notice.",Alleged,Medium,LEGACY_ID:V-036; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-082_fraud-on-the-court-material-misrepresentation.md
-> V-FCFCU-2025-0036,,,Marion Superior Court / FCFCU,,Procedural,Procedure,THEORY_LACK_OF_NOTICE_AND_JURISDICTION,Procedural error: Void judgment due to defective service / lack of jurisdiction,,,,"Judgment appears void because service of process did not comply with Indiana Trial Rule 4.1(B), depriving the court of personal jurisdiction.",Alleged,Medium,LEGACY_ID:V-037; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\OR_V-079_void-judgment-procedural-error.md
-> V-FCFCU-2025-0037,,,Court/FCFCU,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,No ADA-compliant notice/accommodation despite disability communication needs,,,,"The court or FCFCU failed to provide ADA-compliant notice or accommodations, disadvantaging parties with disabilities.",Alleged,Medium,LEGACY_ID:V-038; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-032_no-ada-compliant-notice.md
-> V-FCFCU-2025-0038,,,Plaintiff counsel,,Procedural,Procedure,THEORY_PROCEDURAL_IRREGULARITY,Attorney appeared without formal appearance filed at hearing,,,,"An attorney appeared at a hearing without a formal appearance on file, which may be a procedural irregularity.",Alleged,Medium,LEGACY_ID:V-039; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-034_attorney-appeared-without-formal-appearance.md
-> V-FCFCU-2025-0039,,,CFPB,,Statutory,Regulatory,THEORY_REGULATORY_PRESSURE,CFPB complaint track for credit misreporting + cost shift,,,,Prepare and submit a CFPB complaint documenting credit misreporting and cost-shifting harms.,Alleged,Medium,LEGACY_ID:V-040; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-050_cfpb-complaint-track.md
-> V-FCFCU-2025-0040,,,Indiana AG,,Statutory,Regulatory,THEORY_REGULATORY_PRESSURE,"Indiana AG complaint track (pattern/practice, consumer harm)",,,,Consider filing an Indiana AG complaint to highlight pattern or practice and consumer harm.,Alleged,Medium,LEGACY_ID:V-041; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-051_indiana-ag-complaint-track.md
-> V-FCFCU-2025-0041,,,IN Civil Rights,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,Indiana Civil Rights Commission complaint track (ADA-related exclusion),,,,Prepare an Indiana Civil Rights Commission complaint focused on ADA-related procedural exclusions.,Alleged,Medium,LEGACY_ID:V-042; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-052_icrc-complaint-track.md
-> V-FCFCU-2025-0042,,,DOJ,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,DOJ Civil Rights (ADA Title II) complaint track,,,,Track and file a DOJ Civil Rights complaint under Title II for systemic ADA failures.,Alleged,Medium,LEGACY_ID:V-043; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-053_doj-civil-rights-complaint-track.md
-> V-FCFCU-2025-0043,,,BBB,,Statutory,Reputation,THEORY_REPUTATIONAL_PRESSURE,BBB complaint as reputational pressure channel,,,,Use BBB complaint filing as a low-cost reputational channel after legal notices have been issued.,Alleged,Medium,LEGACY_ID:V-044; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-060_bbb-complaint-reputational-pressure.md
-> V-FCFCU-2025-0044,,,AES Indiana,,Statutory,Utility,THEORY_POST_SALE_COST_SHIFT,Post-08/15 AES electric charges billed to Defendant despite FCFCU ownership/possession,,,,"AES billed electric charges to the Defendant after FCFCU assumed ownership/possession, suggesting improper cost-shifting.",Alleged,Medium,LEGACY_ID:V-045; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-020_post-0815-aes-electric-charges-billed.md
-> V-FCFCU-2025-0045,,,Citizens Energy,,Statutory,Utility,THEORY_POST_SALE_COST_SHIFT,Post-08/15 Citizens Energy charges billed to Defendant despite FCFCU ownership/possession,,,,"Citizens Energy billed charges to the Defendant after FCFCU owned/possessed the property, indicating potential improper billing.",Alleged,Medium,LEGACY_ID:V-046; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-021_post-0815-citizens-energy-charges-billed.md
-> V-FCFCU-2025-0046,,,Shadow Pointe HOA,,Tort,Tort,THEORY_POST_SALE_COST_SHIFT,Post-08/15 HOA assessments/fines billed to Defendant despite FCFCU ownership/possession,,,,"HOA assessments or fines were billed to the Defendant after FCFCU had ownership or possession, indicating improper ledger entries.",Alleged,Medium,LEGACY_ID:V-047; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-022_post-0815-hoa-assessments-billed.md
-> V-FCFCU-2025-0047,,,City of Indianapolis,,Statutory,Municipal,THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL,City grass-cut ticket assessed against Defendant after loss of access/authority,,,,"A city grass-cut ticket was assessed after the Defendant lost access/authority, suggesting wrongful enforcement.",Alleged,Medium,LEGACY_ID:V-048; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
-> V-FCFCU-2025-0048,,,City of Indianapolis,,Statutory,Municipal,THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL,Municipal code enforcement actions after possession transfer (if any),,,,"Municipal code enforcement actions occurred after possession transferred, potentially misplaced responsibility.",Alleged,Medium,LEGACY_ID:V-049; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-024_municipal-code-enforcement-after-possession-transfer.md
-> V-FCFCU-2025-0049,,,Multiple,,Statutory,Consumer_Protection,THEORY_COMPOUNDING_HARM,Credit reporting harm compounded by utility/municipal delinquency risk (collections),,,,Utility and municipal delinquencies compound credit reporting harm when collections reflect on consumer reports.,Alleged,Medium,LEGACY_ID:V-050; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-026_credit-harm-compounded-utility-municipal.md
-> V-FCFCU-0000-0001,Not in source,,"Overlook Mutual Homes, Inc.",,Statutory,Fair Housing Act breach (reasonable accommodation failure),"Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq.","emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009).",,E-FCFCU-EXH-0000-0001,,Legal dispute over the exclusion of emotional support animals from housing.,Alleged,Medium,LEGACY_ID:V-051
-> V-FCFCU-1985-0001,1985,,Public accommodations/Federal agencies,,Procedural,Procedural,Section 504 of the Rehabilitation Act; ADA  36.204,These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design.,,E-FCFCU-EXH-1985-0001,,Failure to rectify harms from actions that discriminate by effect/design.,Alleged,Medium,LEGACY_ID:V-052
-> V-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Recently, the United States Court of Appeals for the Ninth Circuit held that the ADA requires a chain of movie theaters to exhibit movies with closed captioning and video description unless the theaters can show that to do so would amount to a fundamental alteration or undue burden. Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",,E-FCFCU-EXH-2010-0001,,Failure to provide closed captioning and audio description in movie theaters.,Alleged,Medium,LEGACY_ID:V-053
-> V-FCFCU-2004-0001,2004,,"Too, Inc.",,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation. See, e.g., Colorado Cross Disability Coalition v. Too, Inc., 344 F. Supp. 2d 707 (D. Colo. 2004)",,E-FCFCU-EXH-2004-0001,,Physical/architectural barriers to entry for individuals with disabilities.,Alleged,Medium,LEGACY_ID:V-054
-> V-FCFCU-2008-0001,2008,,Carrols Corp.,,ADA,ADA,42 U.S.C. 12182(b)(2)(A)(iii),"the Second Circuit held that a public accommodation’s failure to provide employee training on effective communication with individuals with disabilities can constitute a violation of title III, specifically 42 U.S.C. 12182(b)(2)(A)(iii).",,E-FCFCU-EXH-2008-0001,,Failure to train employees on effective communication with disabled individuals.,Alleged,Medium,LEGACY_ID:V-055
-> V-FCFCU-2009-0001,2009,,Walt Disney World Co.,,ADA,ADA,ADA  36.302 (Reasonable modification);  36.311,"Indeed, there has been litigation concerning the legal obligations of covered entities to accommodate individuals with mobility disabilities who wish to use an electronic personal assistance mobility device (EPAMD), such as the Segway® PT... See Ault v. Walt Disney World Co., No. 6:07–cv–1785–Orl–31KRS, 2009 WL 3242028 (M.D. Fla. Oct. 6, 2009).",,E-FCFCU-EXH-2009-0001,,Restricting use of electronic personal assistance mobility devices (EPAMDs).,Alleged,Medium,LEGACY_ID:V-056
-> V-FCFCU-1999-0001,1999,,New York Yankees,,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation... Pascuiti v. New York Yankees, 87 F. Supp. 2d 221 (S.D.N.Y. 1999).",,E-FCFCU-EXH-1999-0001,,Discriminatory seating/barrier to access in sports stadium.,Alleged,Medium,LEGACY_ID:V-057
-> V-FCFCU-2020-0001,"August 10, 2020",,"Moline Builders, Inc.",,Statutory,Fair Housing Act breach (Accessibility Requirements),42 U.S.C. § 3604(f)(3)(C),"the court agreed, finding that the failure to provide “unimpeded access” to the front door to persons who use wheelchairs... is “precisely the discrimination the FHAA forbids.”",,E-FCFCU-EXH-2020-0001,,Failure to provide wheelchair-accessible front door and walkway to covered units.,Alleged,Medium,LEGACY_ID:V-058
-> V-FCFCU-2016-0001,"December 27, 2016",,Aspen View Condo. Ass'n,,Statutory,Fair Housing Act breach (Retaliation),42 U.S.C. § 3617,plaintiff’s retaliation claim was not dependent upon his reasonable accommodation claim and that a reasonable jury could conclude that the fines were imposed in retaliation for allowing his tenant to live in the condo unit with her dog,,E-FCFCU-EXH-2016-0001,,Owner was fined for allowing a tenant to keep a service dog for epilepsy.,Alleged,Medium,LEGACY_ID:V-059
-> V-FCFCU-2000-0001,"November 9, 2000",,City of Dallas,,Statutory,Fair Housing Act breach (Reasonable Accommodation Denial),42 U.S.C. § 3604(f)(3)(B),The United States argued that the City violated the Fair Housing Act by improperly denying a reasonable accommodation when it refused to grant the plaintiff a variance to the City's 1000 foot spacing requirement,,E-FCFCU-EXH-2000-0001,,Refusal to grant spacing and occupancy variances for group homes for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-060
-> V-FCFCU-2009-0002,2009 to 2013,,"Hudson City Savings Bank, F.S.B.",,Statutory,Fair Housing Act breach (Pattern or Practice of Redlining),Fair Housing Act; Equal Credit Opportunity Act,"Hudson City Savings Bank (Hudson City) failed to provide its home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis as it provided those services to predominantly white neighborhoods, a practice commonly known as 'redlining,'""",,E-FCFCU-EXH-2009-0002,,Failure to provide home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis.,Alleged,Medium,LEGACY_ID:V-061
-> V-FCFCU-2003-0001,"November 5, 2003",,Woodcrest Condominiums Association,,Statutory,Fair Housing Act breach (Familial Status Discrimination),42 U.S.C. § 3604,the United States argues that defendants' former policy of restricting families with children to first floor units violates the Act as a matter of law.,,E-FCFCU-EXH-2003-0001,,Restricting families with children to first-floor units; steering prospective tenants.,Alleged,Medium,LEGACY_ID:V-062
-> V-FCFCU-2013-0001,"December 2, 2013",,61 Main Street Corp. and Rosario Marci,,Statutory,Fair Housing Act breach (Race and Color Discrimination),42 U.S.C. § 3604(a)-(b),"Specifically, the United States alleges that the defendants failed to inform African-American prospective tenants about available apartments... provided higher rent prices and less favorable security deposit terms to African-American prospective tenants",,E-FCFCU-EXH-2013-0001,,Misrepresenting unit availability and charging higher rents/security deposits to African-American prospective tenants.,Alleged,Medium,LEGACY_ID:V-063
-> V-FCFCU-2010-0002,"April 20, 2010",,Barnason (Owner/Manager),,Statutory,Fair Housing Act breach (Sexual Harassment),42 U.S.C. § 3604,the managers and owner of three residential apartment buildings in Manhattan engaged in a pattern or practice of sexual harassment of female tenants in violation of Fair Housing Act.,,E-FCFCU-EXH-2010-0002,,Severe sexual harassment of female tenants by a manager who was a Level 3 sex offender.,Alleged,Medium,LEGACY_ID:V-064
-> V-FCFCU-2013-0002,"June 24, 2013",,Altoona Housing Authority,,Procedural,Procedural,42 U.S.C. § 3604,the defendant discriminated on the basis of race by evicting an African-American tenant with less due process than was given to white tenants with similar or worse lease violations.,,E-FCFCU-EXH-2013-0002,,Evicting an African-American tenant with less due process than white tenants.,Alleged,Medium,LEGACY_ID:V-065
-> V-FCFCU-2015-0001,"September 30, 2015",,Allan Rappuhn and affiliated entities,,Statutory,Fair Housing Act breach (Design and Construction),42 U.S.C. § 3604(f)(3)(C),"the defendants engaged in a pattern or practice of designing and constructing multifamily housing developments... in violation of the Fair Housing Act (FHA), 42 U.S.C. § 3604(f)(3)(C)",,E-FCFCU-EXH-2015-0001,,"Failure to design 71 developments with accessible routes, curb cuts, or usable bathrooms/kitchens.",Alleged,Medium,LEGACY_ID:V-066
-> V-FCFCU-2011-0001,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Intentional Discrimination),42 U.S.C. & 3604(a),"Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin in violation of &3604(a).",,E-FCFCU-EXH-2011-0001,,"Deteriorating living conditions, neighborhood blight, health and safety concerns, and decreased market values for homeowners near foreclosed homes.",Alleged,Medium,LEGACY_ID:V-067
-> V-FCFCU-2011-0002,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Terms and Conditions of Sale/Service),42 U.S.C. & 3604(b),"Defendants have discriminated in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith, because of race or national origin in violation of 42 U.S.C. &3604(b).",,E-FCFCU-EXH-2011-0002,,Transfer of title with responsibility of remedying delayed maintenance; discriminatory provision of services in connection with dwellings.,Alleged,Medium,LEGACY_ID:V-068
-> V-FCFCU-2011-0003,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Residential Real Estate-Related Transactions),42 U.S.C. & 3605,"Accordingly, Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin or discriminated in the terms or conditions of such a transaction in violation of 42 U.S.C. &3605.",,E-FCFCU-EXH-2011-0003,,Interference with purchase loan viability and closing of sales due to poor property appraisals in communities of color.,Alleged,Medium,LEGACY_ID:V-069
-> V-FCFCU-2013-0003,"June 28, 2013",,Deutsche Bank,,Procedural,Procedural,Local Slumlord Ordinances; FHA non-delegable duties,"On June 28, 2013, Deutsche Bank publicly confirmed its policies of outsourcing and abdicating legal responsibilities with regard to REO properties in the course of a $10,000,000.00 settlement with the City of Los Angeles in a so-called ‘slum lord’ case",,E-FCFCU-EXH-2013-0003,,Deterioration of foreclosed REO properties; creation of 'slum lord' conditions in Los Angeles.,Alleged,Medium,LEGACY_ID:V-070
-> V-FCFCU-2011-0004,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Perpetuating Segregation),42 U.S.C. & 3601,The failure to maintain and market REO dwellings in communities of color according to the same standards as REO dwellings in predominantly white neighborhoods were maintained has stigmatized communities of color as less desirable... and has the effect of perpetuating segregated conditions.,,E-FCFCU-EXH-2011-0004,,Stigmatization of communities of color; restriction of the ability of minority homeowners to move into majority white neighborhoods due to reduced equity.,Alleged,Medium,LEGACY_ID:V-071
-> V-FCFCU-2025-0050,"May 28, 2025",,Financial Center First Credit Union / Marion Superior Court 3,,Procedural,Procedural,Indiana Trial Rule 4.1(B); Procedural Due Process,Service of process was not completed in accordance with Indiana Trial Rule 4.1(B); The Court therefore did not acquire personal jurisdiction over Defendant; A judgment entered without personal jurisdiction is VOID ab initio and must be vacated.,,E-FCFCU-EXH-2025-0001,,Default Judgment and Decree of Foreclosure entered without jurisdiction.,Alleged,Medium,LEGACY_ID:V-072
-> V-FCFCU-0000-0002,Not in source,,State Government / Judiciary,,Procedural,Procedural,"U.S. Constitution Amendment XIV,  1","An elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections.",,E-FCFCU-EXH-0000-0002,,"Unjustified deprivation of life, liberty, or property.",Alleged,Medium,LEGACY_ID:V-073
-> V-FCFCU-2009-0003,2009 (Caperton); 2016 (Williams),,State Courts / Judiciary,,Procedural,Procedural,U.S. Constitution Amendment XIV (Due Process Clause),"The neutrality requirement helps to guarantee that life, liberty, or property will not be taken on the basis of an erroneous or distorted conception of the facts or the law. . . . there is a serious risk of actual biasbased on objective and reasonable perceptionswhen a person with a personal stake in a particular case had a significant and disproportionate influence in placing the judge on the case.",,E-FCFCU-EXH-2009-0003,,Risk of actual bias in judicial decision-making.,Alleged,Medium,LEGACY_ID:V-074
-> V-FCFCU-0000-0003,Not in source,,State Government / Legislatures,,Procedural,Due Process Violation (Standard of Proof),U.S. Constitution Amendment XIV; Clear and Convincing Evidence Standard,"because the interest of parents in retaining custody of their children is fundamental, the state may not terminate parental rights through reliance on a standard of preponderance of the evidencethe proof necessary to award money damages in an ordinary civil action but must prove that the parents are unfit by clear and convincing evidence.",,E-FCFCU-EXH-0000-0003,,"Erroneous deprivation of fundamental interests (e.g., parental rights).",Alleged,Medium,LEGACY_ID:V-075
-> V-FCFCU-1972-0001,1972 (Fuentes),,State Government / Creditors,,Procedural,Procedural,U.S. Constitution Amendment XIV,"Fuentes v. Shevin, which struck down a replevin statute that authorized the seizure of property (here household goods purchased on an installment contract) simply upon the filing of an ex parte application and the posting of bond",,E-FCFCU-EXH-1972-0001,,Mistaken deprivation of property (household goods) without prior hearing.,Alleged,Medium,LEGACY_ID:V-076
-> V-FCFCU-0000-0004,Not in source,,State Legislatures,,Constitutional,Unconstitutional Presumption (Vesting of Title),U.S. Constitution Amendment XIV (Property Rights),"for suits to recover real and personal property, when the right of action has been barred by a statute of limitations and title as well as real ownership have become vested in the defendant, any later act removing or repealing the bar would be void as attempting an arbitrary transfer of title.",,E-FCFCU-EXH-0000-0004,,Arbitrary transfer of title after statute of limitations has run.,Alleged,Medium,LEGACY_ID:V-077
-> V-FCFCU-2011-0005,July 2011 - October 2015,,Federal National Mortgage Association (Fannie Mae),,Statutory,Fair Housing Act breach (Intentional Discrimination / Disparate Impact),"Fair Housing Act (42 U.S.C. §§ 3601, 3604, 3605, 3617)","Fannie Mae and its agents have failed to conduct routine exterior maintenance and marketing of REO properties in communities of color, thereby leaving those REO properties in a state of neglect, while satisfactorily conducting routine exterior maintenance and marketing of its REO properties in predominantly white neighborhoods.",,E-FCFCU-EXH-2011-0005,,Neglected REO properties in communities of color; decreased home values; health risks (high blood pressure); social isolation; anxiety; perpetuation of racial segregation.,Alleged,Medium,LEGACY_ID:V-078
-> V-FCFCU-2012-0001,"August 27, 2012",,"Fannie Mae / Asset Management Specialists, Inc.",,Statutory,Failure to provide equal maintenance services (REO Dwellings),42 U.S.C. § 3604(b),"On August 27, 2012, Plaintiffs visited Defendant’s REO property located at 1142 Kalamazoo Avenue, Grand Rapids, MI 49507... This property had 10 maintenance deficiencies: trash, overgrown grass, overgrown shrubbery, missing screens, unsecured doors, broken and boarded windows, a damaged fence, a dilapidated garage, damaged siding, and exposed or tampered-with utilities.",,E-FCFCU-EXH-2012-0001,,"Property neglect: trash, overgrown grass/shrubbery, unsecured doors, broken/boarded windows, damaged fence/siding.",Alleged,Medium,LEGACY_ID:V-079
-> V-FCFCU-2014-0001,"October 28, 2014",,"Fannie Mae / Cyprexx Services, LLC",,Statutory,Discriminatory treatment in property maintenance,42 U.S.C. § 3604,"This property exhibited 16 maintenance deficiencies, including: unsecured pool area, overgrown grass, unlocked doors, invsaive plants, trash, accumulated mail, dead shrubbery, uncovered holes, damaged soffet, damaged fence, warning sign, and water damage/discoloration.",,E-FCFCU-EXH-2014-0001,,"16 maintenance deficiencies including unsecured pool, overgrown grass, unlocked doors, invasive plants, trash, and structural holes.",Alleged,Medium,LEGACY_ID:V-080
-> V-FCFCU-2009-0004,2009 - 2015,,Fannie Mae,,Procedural,Procedural,42 U.S.C. § 3601 et seq.,"Despite Plaintiffs’ efforts to get Fannie Mae to voluntarily comply with the Fair Housing Act, Fannie Mae did not change its behavior. With discriminatory intent and deliberate indifference to the discriminatory purpose and effects of its policies and practices, Fannie Mae continued to maintain its REO properties differently because of the predominant race and national origin of neighborhoods.",,E-FCFCU-EXH-2009-0004,,Ongoing systemic discrimination despite being alerted to disparate maintenance levels by NFHA.,Alleged,Medium,LEGACY_ID:V-081
-> V-FCFCU-2000-0002,2000,,Trial Court (Indiana),,Procedural,Procedural,Indiana Evidence Rule 702; Procedural Due Process,The trial court’s failure to rule on the admissibility of the evidence requires us to remand to the trial court for such proceedings as may be necessary to determine whether the statements of the purported experts meet the requirements of Evid.R. 702.,,E-FCFCU-EXH-2000-0002,,Failure to address evidentiary admissibility leading to remand; unresolved questions of fact on safer alternative design.,Alleged,Medium,LEGACY_ID:V-082
-> V-FCFCU-1996-0001,January 1996,,"Apartment owner (Lake Charles, Louisiana)",,Statutory,Fair Housing Act breach (Race discrimination),42 U.S.C. § 3604,"When Mr. Lewis went to view the apartment, however, the owner refused to accept his deposit, saying, 'I just don't rent to you people.' ... 'Black, colored, Negro, whatever you call yourself, I don't rent to y'all.'",,E-FCFCU-EXH-1996-0001,,Denial of housing; blatant racial discrimination.,Alleged,Medium,LEGACY_ID:V-083
-> V-FCFCU-2025-0051,"December 9, 2025",,Marion Superior Court / Financial Center First Credit Union,,Procedural,Procedural,IN Code § 32-30-10.5-10; Due Process Clause,"Cody was removed from the residence at 4817 Shadow Pointe Dr. on December 9, 2025, through enforcement of a Writ of Assistance whose validity is currently under challenge.",,E-FCFCU-EXH-2025-0002,,Removal from residence; homelessness; risk to safety and mental health; inability to access essential belongings.,Alleged,Medium,LEGACY_ID:V-084
-> V-FCFCU-2025-0052,December 2025 - January 2026,,Plaintiff (Financial Center First Credit Union) / Court,,ADA,ADA,Americans with Disabilities Act (ADA),"ADA requires reasonable modifications ensuring equal access. ... Forced displacement has caused acute destabilization including inability to sleep, panic episodes, cognitive shutdown, and impaired functioning.",,E-FCFCU-EXH-2025-0003,,Acute destabilization; trauma-related panic episodes; impaired cognitive functioning.,Alleged,Medium,LEGACY_ID:V-085
-> V-FCFCU-2017-0001,"March 15, 2017 (Filing date)",,"Harbour Portfolio VII, LP; CWAM II, LLC; Harbour Portfolio VI, LP",,Statutory,Predatory land contract / Housing discrimination (Reverse Redlining),42 U.S.C. § 3604; Equal Credit Opportunity Act,"Harbour marketed its contract for deed transactions exclusively, or almost exclusively, in African-American neighborhoods ... induced to purchase properties that were in very bad condition, and to pay inflated purchase prices and very high interest rates.",,E-FCFCU-EXH-2017-0001,,Exorbitant interest rates (9.9%-10%); burden of all repairs; high likelihood of immediate default.,Alleged,Medium,LEGACY_ID:V-086
-> V-FCFCU-2018-0001,2018 (Trial court decision),,Rainbow Realty Group Inc.,,Statutory,Breach of Warranty of Habitability,Indiana landlord-tenant laws; IC 32-31,the trial court reiterated its earlier entry of partial summary judgment and found that Rainbow had breached the warranty of habitability and had engaged in willful and deceptive acts regarding the nature of the agreement,,E-FCFCU-EXH-2018-0001,,Unlivable housing conditions; intentional deception regarding agreement nature.,Alleged,Medium,LEGACY_ID:V-087
-> V-FCFCU-1999-0002,Circa 1999-2000,,"Apartment complexes (Charlotte, NC / New Orleans, LA)",,Statutory,Fair Housing Act breach (Disability accessibility),42 U.S.C. § 3604(f)(3)(C),100% of complexes surveyed did not meet the Fair Housing Act's accessibility requirements for the physically disabled,,E-FCFCU-EXH-1999-0002,,Exclusion of persons with physical disabilities from multifamily housing.,Alleged,Medium,LEGACY_ID:V-088
-> V-FCFCU-0000-0005,Not in source,,Urban Search Management,,Statutory,Discriminatory Advertising,42 U.S.C. § 3604(c),district court refused to instruct jury on punitive damages despite evidence that established that luxury apartment complex used exclusively white human models in its advertising,,E-FCFCU-EXH-0000-0005,,Messaging of exclusion to nonwhite home seekers.,Alleged,Medium,LEGACY_ID:V-089
-> V-FCFCU-2015-0002,Early 2015 to August 2015,,Town of Cromwell (Mayor and Town Manager),,ADA,ADA,"42 U.S.C. §§ 3604(c), 3604(f), 3617; 42 U.S.C. § 12132","In early 2015, Gilead Community Services, Inc.... purchased a house in Cromwell... to be used as a group home for men with disabilities... Cromwell’s mayor and other high-ranking officials joined the opposition and undertook a series of actions designed to discourage the group home... Gilead closed the group home in August 2015",,E-FCFCU-EXH-2015-0002,,"Closure of a group home for men with disabilities, emotional and financial harm to Gilead Community Services, and leakage of sensitive health information.",Alleged,Medium,LEGACY_ID:V-090
-> V-FCFCU-2015-0003,2015,,Cromwell Police and Town Officials,,Statutory,Fair Housing Act breach (Discriminatory Statements),42 U.S.C. § 3604(c),Gilead later learned that the police leaked sensitive health information about this individual— information learned from this interaction—to the media.,,E-FCFCU-EXH-2015-0003,,Sensitive health information about a group home resident was leaked to the media.,Alleged,Medium,LEGACY_ID:V-091
-> V-FCFCU-1975-0001,1975,,"City of Newport, Rhode Island",,Statutory,Civil Rights,42 U.S.C. § 1983; First and Fourteenth Amendments,"After Newport cancelled the contract due to a dispute over some of the hired musicians, Fact Concerts brought a § 1983 action against the city... alleging violations of the plaintiff’s rights to due process and free expression under the First Amendment.",,E-FCFCU-EXH-1975-0001,,"Cancellation of a contract for a music festival based on content/musicians, violating free expression and due process.",Alleged,Medium,LEGACY_ID:V-092
-> V-FCFCU-2020-0002,2020-2021,,Town of Wolcott,,Statutory,Fair Housing Act breach (Reasonable Accommodation Failure),42 U.S.C. § 3604(f)(3)(B),"setting forth consent decree calling for town, inter alia, to make payments of $350,000 in damages to group home... for failing to make FHA-mandated reasonable accommodation",,E-FCFCU-EXH-2020-0002,,Denial of reasonable accommodation for a group home.,Alleged,Medium,LEGACY_ID:V-093
-> V-FCFCU-2025-0053,2025-12-10,,Federal Courts (interpreting Rule 13(a)),,Procedural,Procedural,Fed. R. Civ. P. 13(a),Every federal court that has addressed the issue has held that Rule 13(a)... bars a defendant who defaults... from later filing a transactionally related claim in a subsequent suit. This Article argues that the federal courts’ interpretation of Rule 13(a) is fundamentally wrong.,,E-FCFCU-EXH-2025-0004,,Depriving defaulting defendants of potentially meritorious transactionally related claims in subsequent suits.,Alleged,Medium,LEGACY_ID:V-094
-> V-FCFCU-0000-0006,1980s,,"City of Yonkers, New York",,Statutory,Fair Housing Act breach (Exclusionary Zoning),42 U.S.C. § 3601 et seq.,Yonkers’s elected leaders had illegally maintained residential segregation by restricting affordable housing projects to minority areas,,E-FCFCU-EXH-0000-0006,,Illegal maintenance of residential segregation.,Alleged,Medium,LEGACY_ID:V-095
-> V-FCFCU-1977-0001,1977-1979,,Elkhart County,,Procedural,Due Process Failure / Notice Error,Due Process Clause of the Fourteenth Amendment,"the United States Supreme Court has held that the due process clause of the fourteenth amendment requires notice by mail to mortgagees prior to a tax sale. ... Elkhart county began proceedings to sell the land at public auction. ... Notice was not given to the Mennonite Board of Missions by either the county or Moore, and the Board was unaware of the tax sale.",,E-FCFCU-EXH-1977-0001,,"Extinguishment of $14,000 mortgage interest/lien without actual notice.",Alleged,Medium,LEGACY_ID:V-096
-> V-FCFCU-0000-0007,Not in source,,"U.S. Airways, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) - Reasonable Accommodation,"As a reasonable accommodation under the ADA, Barnett asked U.S. Airways to make an exception to the seniority system so that he could retain his mailroom job. U.S. Airways denied his request and Barnett lost his job when he was bumped by an employee with more seniority.",,E-FCFCU-EXH-0000-0007,,Loss of employment after being 'bumped' by more senior employee.,Alleged,Medium,LEGACY_ID:V-097
-> V-FCFCU-0000-0008,Not in source,,New York Medicaid Program,,Procedural,Procedural,ADA Integration Mandate / Rehabilitation Act / Due Process,The plaintiffs did not receive written notice of the changes in coverage and learned of the changes when they attempted to fulfill their prescriptions. ... cutting funding for medically necessary orthopedic footwear and compression stockings violated Olmstead’s integration mandate and put plaintiffs at a substantial risk of requiring institutionalized care.,,E-FCFCU-EXH-0000-0008,,Loss of mobility funding without written notice; substantial risk of institutionalization.,Alleged,Medium,LEGACY_ID:V-098
-> V-FCFCU-2005-0001,2005,,Norwegian Cruise Line Ltd.,,ADA,ADA,Title III of the ADA,"Cruise passengers with disabilities brought action against a foreign-flagged cruise line, alleging violations of Title III of the ADA. Specifically, plaintiffs alleged that physical barriers on the ships denied them access to: 1) Emergency evacuation equipment ... 2) Facilities such as public restrooms, restaurants, swimming pools, and elevators ... Plaintiffs also alleged that the defendant charged them a premium for use of the four accessible cabins",,E-FCFCU-EXH-2005-0001,,"Denied access to emergency equipment, pools, restaurants, and elevators; premium charges for accessible cabins.",Alleged,Medium,LEGACY_ID:V-099
-> V-FCFCU-1993-0001,"June 9, 1993",,Indiana General Assembly / Melroe Company,,Procedural,Procedural,"Article I, Section 12 of the Indiana Constitution (Right to Remedy)",James McIntosh was injured in an accident involving a Clark Bobcat skid steer loader manufactured by Melroe. ... Melroe responded with a motion for summary judgment based on the ten-year statute of repose ... providing that 'a product liability action must be commenced ... within ten (10) years after the delivery of the product to the initial user or consumer.',,E-FCFCU-EXH-1993-0001,,Loss of legal remedy for injury caused by alleged product defect.,Alleged,Medium,LEGACY_ID:V-100
-> V-FCFCU-0000-0009,Not in source,,Pennsylvania Dept. of Corrections,,ADA,ADA,Title II of the ADA,Ronald Yeskey was sentenced to 18 to 36 months ... recommended that he participate in a Motivational Boot Camp ... The State refused Yeskey’s admission into the Boot Camp due to his history of hypertension. Yeskey filed suit under the ADA.,,E-FCFCU-EXH-0000-0009,,Refusal of admission to Boot Camp (affecting parole eligibility) due to hypertension.,Alleged,Medium,LEGACY_ID:V-101
-> V-FCFCU-0000-0010,Not in source,,St. Helena Hospital,,ADA,ADA,ADA Title III / Rehabilitation Act,"A Deaf plaintiff did not have standing to seek injunctive relief against a hospital, that failed to provide effective communication to plaintiff, who arrived in emergency room because of husband's fatal cardiac arrest.",,E-FCFCU-EXH-0000-0010,,Denial of effective communication during a medical emergency (husband's cardiac arrest).,Alleged,Medium,LEGACY_ID:V-102
-> V-FCFCU-0000-0011,Not in source,,City and County of Denver (Law Enforcement),,Statutory,Section 504 Breach / Failure to Provide Interpreter,Section 504 of the Rehabilitation Act of 1973,Plaintiff Sarah Burke was Deaf mother ... police showed up to enforce the warrant. Ms. Burke asked for a sign language interpreter. ... the police refused and asked her 8-year-old child to interpret. They then arrested Ms. Burke ... One of the things she was trying to communicate was that she needed medication for diabetes,,E-FCFCU-EXH-0000-0011,,Arrested without communication; forced to use 8-year-old child to interpret; unable to communicate medical need (diabetes).,Alleged,Medium,LEGACY_ID:V-103
-> V-FCFCU-2016-0002,July 2016,,AMP Residential,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act (42 U.S.C. & 3601 et seq.),The groups allege that AMP has engaged in systemic discrimination against families with children across 20 properties evaluated in three states.,,E-FCFCU-EXH-2016-0002,,Systemic discrimination against families with children across 20 properties.,Alleged,Medium,LEGACY_ID:V-104
-> V-FCFCU-2016-0003,April 2016,,Anderson Housing Authority,,Statutory,"Fair Housing Act breach (Race, Gender, Disability); State housing law violation",Federal Fair Housing Act; state housing laws,"The complaint alleges that the defendant discriminated in its ownership and management of its multifamily public housing dwellings on the basis of race, gender, and disability in violation of the federal Fair Housing Act and for its failure to maintain its dwellings in a decent, safe, and sanitary condition in violation of state housing laws.",,E-FCFCU-EXH-2016-0003,,Female tenants subjected to degrading comments; disability accommodations ignored; failure to maintain dwellings in safe condition.,Alleged,Medium,LEGACY_ID:V-105
-> V-FCFCU-2012-0002,October 2012 - June 2018,,"Bank of America / Safeguard Properties Management, LLC",,Statutory,"Fair Housing Act breach (Race, National Origin); Discriminatory maintenance",Federal Fair Housing Act,"The lawsuit alleges Defendants intentionally failed to provide routine exterior maintenance and marketing at Bank of America-owned homes in working- and middle-class African American and Latino neighborhoods in 37 metropolitan areas, while they consistently maintained similar bank-owned homes in comparable white neighborhoods.",,E-FCFCU-EXH-2012-0002,,Intentional failure to provide routine exterior maintenance and marketing at bank-owned homes in African American and Latino neighborhoods compared to white neighborhoods.,Alleged,Medium,LEGACY_ID:V-106
-> V-FCFCU-2024-0001,September 2024,,Barrington Group,,Statutory,Fair Housing Act breach (Race); Arbitrary criminal history policies,Federal Fair Housing Act,alleging discrimination due to race and color which alleged discriminatory practices against Black renters through arbitrary criminal history policies.,,E-FCFCU-EXH-2024-0001,,Discriminatory practices against Black renters through arbitrary criminal history policies.,Alleged,Medium,LEGACY_ID:V-107
-> V-FCFCU-2014-0002,July 2014,,Brookfield Farms Homeowners Association,,Statutory,Fair Housing Act breach (Disability); Restrictive Covenant,Federal Fair Housing Act,This case challenges a restrictive covenant binding all homeowners in a subdivision that restricted housing to single families that deterred a group home for three unrelated adults from opening in the subdivision.,,E-FCFCU-EXH-2014-0002,,Restrictive covenant deterred a group home for three unrelated adults with disabilities from opening.,Alleged,Medium,LEGACY_ID:V-108
-> V-FCFCU-2012-0003,December 2012,,Buckingham Realty and Development Corp.,,Statutory,Fair Housing Act breach (Disability); Design and Construction accessibility,Federal Fair Housing Act,alleging discrimination against persons with disabilities in the design and construction of multi-family properties.,,E-FCFCU-EXH-2012-0003,,Lack of housing accessibility in multi-family properties for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-109
-> V-FCFCU-2016-0004,February 2016,,"Capitol Station / United Church Homes, Inc.",,Statutory,Fair Housing Act breach (Disability); Failure to repair,Federal Fair Housing Act,The complaint alleges that the defendants did not take timely action to repair the only elevator in an apartment building which housed residents age 62 years or older... Capitol Station was without a working elevator for five and a half weeks in August and September 2015 resulting in harm to residents with disabilities.,,E-FCFCU-EXH-2016-0004,,Residents with mobility issues trapped or endangered for five and a half weeks due to broken elevator.,Alleged,Medium,LEGACY_ID:V-110
-> V-FCFCU-2018-0002,April 2018,,Casas Baratas Aqui / Marshall Welton / SLB Investments,,Statutory,"Fair Housing Act breach (Race, Color, National Origin); ECOA; TILA; Indiana state law violations",Federal Fair Housing Act; Equal Credit Opportunity Act; Truth in Lending Act; Indiana Home Loan Practices Act,"The complaint alleges that the Defendants violated civil rights and consumer protection laws, including the federal Fair Housing Act, the federal Equal Credit Opportunity Act, the Truth in Lending Act, and several Indiana state laws.",,E-FCFCU-EXH-2018-0002,,"Discriminatory and predatory rent-to-own schemes involving nearly 1,000 houses.",Alleged,Medium,LEGACY_ID:V-111
-> V-FCFCU-2021-0001,March 2021,,CityWide Home Loans / Pierce Appraisal / Freedom Mortgage,,Statutory,"Fair Housing Act breach (Race, Color); Appraisal Bias",Federal Fair Housing Act,Ms. Duffy and the FHCCI allege in the HUD complaints that the Respondents have violated fair housing laws by allowing race and color to impact their appraisals and/or lending practices.,,E-FCFCU-EXH-2021-0001,,Black homeowner received significantly lower home appraisal until Black identifiers were removed and a white friend stood in.,Alleged,Medium,LEGACY_ID:V-112
-> V-FCFCU-2021-0002,March 2021,,Coolspring Estates / LaPorte Lake Properties,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act,alleging violations of fair housing and other laws against families with children.,,E-FCFCU-EXH-2021-0002,,Discrimination against families with children.,Alleged,Medium,LEGACY_ID:V-113
-> V-FCFCU-2015-0004,May 2015 - December 2016,,Fannie Mae,,Statutory,"Fair Housing Act breach (Race, National Origin); Discriminatory maintenance",Federal Fair Housing Act,The lawsuit alleges that Fannie Mae purposely fails to maintain its foreclosures... in middle- and working-class African American and Latino neighborhoods to the same level of quality it does for foreclosures it owns in white middle- and working-class neighborhoods.,,E-FCFCU-EXH-2015-0004,,Neglect of foreclosed properties in communities of color contributing to blight compared to white neighborhoods.,Alleged,Medium,LEGACY_ID:V-114
-> V-FCFCU-2016-0005,February 2016,,Grandville Cooperative / Kirkpatrick Management Co. Inc.,,Statutory,"Fair Housing Act breach (Disability, Familial status)",Federal Fair Housing Act,The complaint alleges that the defendants refused to rent to a family that included a person with disabilities stating that ‘…it will be a liability to offer the person with a disability a unit that is not accommodating to everyone in the household.’,,E-FCFCU-EXH-2016-0005,,Refusal to rent to a family with a disabled member; claimed liability for non-accommodating units.,Alleged,Medium,LEGACY_ID:V-115
-> V-FCFCU-2020-0003,August 2020,,Henry Long (Landlord),,Statutory,Fair Housing Act breach (Gender); Sexual Harassment,Federal Fair Housing Act,"As part of the consent decree, Mr. Long will pay $45,900 in monetary relief to resolve the lawsuit which alleged he sexually harassed a female tenant.",,E-FCFCU-EXH-2020-0003,,Landlord solicited sex from female tenant after she lost her job and could not afford rent.,Alleged,Medium,LEGACY_ID:V-116
-> V-FCFCU-2021-0003,October 2021,,Old National Bank,,Statutory,Fair Housing Act breach (Race); Redlining,Federal Fair Housing Act,The FHCCI also alleges that Old National deliberately seeks to limit its residential lending business to predominantly White areas and customers and has removed branches in Black neighborhoods and sited branches in White neighborhoods – conduct which constitutes redlining.,,E-FCFCU-EXH-2021-0003,,Structured business to avoid providing mortgage credit to Black residents; removed branches in Black neighborhoods.,Alleged,Medium,LEGACY_ID:V-117
-> V-FCFCU-2018-0003,January 2018,,Marquette Management & Marquette Companies,,Statutory,Fair Housing Act breach (Familial status); Occupancy policies,Federal Fair Housing Act,alleging that Marquette Management Inc. discriminates on the basis of familial status in properties it manages in Illinois and Indiana by enforcing unduly restrictive occupancy policies.,,E-FCFCU-EXH-2018-0003,,Enforcement of unduly restrictive occupancy policies against families with children.,Alleged,Medium,LEGACY_ID:V-118
-> V-FCFCU-2019-0001,April 2019 - April 2020,,Twin Creeks Homeowners Association / Kirkpatrick Property Management / Vicki New,,Statutory,"Fair Housing Act breach (Race, National Origin); Hostile Housing Environment",Federal Fair Housing Act,"alleged a pattern and practice of harassing, taunting, and threatening African American and Latino residents, guests, and contractors and creating a racially hostile environment... Vicki New... engaged in a campaign of harassment based on race and national origin for more than two years.",,E-FCFCU-EXH-2019-0001,,"Campaign of harassment, taunting, and death threats against African American and Latino residents; failure of HOA to stop conduct.",Alleged,Medium,LEGACY_ID:V-119
-> V-FCFCU-2010-0003,2010 - 2011,,Dearborn Superior Court No. 1 / Dearborn Circuit Court / State of Indiana,,ADA,ADA,Americans with Disabilities Act (ADA); Section 504 of the Rehabilitation Act,"Mr. Prakel repeatedly requested that Indiana’s Dearborn Superior Court No. 1 and Dearborn Circuit Court provide sign language interpreter services so that he could understand the proceedings. On each occasion, the Defendants refused to provide an interpreter or any other auxiliary aids or services.",,E-FCFCU-EXH-2010-0003,,Deaf individual denied sign language interpreter services needed to understand court proceedings for his mother.,Alleged,Medium,LEGACY_ID:V-120
-> V-FCFCU-1977-0002,1977 - 1983,,"Elkhart County, Indiana / Indiana State Legislature",,Procedural,Procedural,Due Process Clause of the Fourteenth Amendment,The manner of notice provided to appellant did not meet the requirements of the Due Process Clause of the Fourteenth Amendment... constructive notice by publication must be supplemented by notice mailed to the mortgagee's last known available address.,,E-FCFCU-EXH-1977-0002,,"Mortgagee (Mennonite Board of Missions) lost property interest in tax sale without receiving actual notice, only constructive notice (publication).",Alleged,Medium,LEGACY_ID:V-121
-> V-FCFCU-2025-0054,"March 5, 2025 and April 15, 2025",,Marion County Sheriff / Financial Center First Credit Union (FCFCU),,Procedural,Due Process Failure / Defective Service,Indiana Trial Rule 4.1(B); 14th Amendment Due Process (Mennonite standard),"The Sheriff’s Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B).",,E-FCFCU-EXH-2025-0005,,Loss of personal jurisdiction; wrongful entry of default judgment leading to subsequent displacement.,Alleged,Medium,LEGACY_ID:V-122
-> V-FCFCU-2025-0055,"June 8, 2025 (and ongoing through December 2025)",,AES Indiana / Financial Center First Credit Union / Marion County Sheriff,,ADA,ADA,42 U.S.C. § 12181 (ADA Title III); ADA Title II,"No ADA inquiry or accommodation was provided by the Court, Plaintiff, or Sheriff before attempting service or executing the writ. Sheriff deputies did not modify service attempts to account for disability-related auditory and processing delays.",,E-FCFCU-EXH-2025-0006,,Inability to effectively communicate or respond to service attempts and billing; severe emotional distress and physical risk during removal.,Alleged,Medium,LEGACY_ID:V-123
-> V-FCFCU-2025-0056,"December 9, 2025",,Marion County Sheriff,,Procedural,Procedural,Procedural Due Process; IC § 32-30-10.5-8,No advance notice of a vacate date or removal date was provided to me. No notice was posted on the door or mailbox... I was not served with the writ prior to enforcement.,,E-FCFCU-EXH-2025-0007,,Forcible removal in freezing temperatures without time to gather essential belongings; humanitarian harm to Afghan ally.,Alleged,Medium,LEGACY_ID:V-124
-> V-FCFCU-2025-0057,August 2025 - December 2025,,Financial Center First Credit Union / Clerk of Marion County,,Statutory,Potential IC § 32-30-10-14 Violation (Surplus Mismanagement),IN Code § 32-30-10-14,"Confirmed surplus discrepancy between the $220,863.09 judgment and $240,464.20 sheriff sale satisfaction, triggering IC § 32-30-10-14 protections.",,E-FCFCU-EXH-2025-0008,,Discrepancy between judgment amount and sheriff sale satisfaction without documented surplus accounting to the defendant.,Alleged,Medium,LEGACY_ID:V-125
-> V-FCFCU-2025-0058,December 2025 (Post-removal),,Financial Center First Credit Union / Sheriff Personnel,,Tort,Conversion / Negligence,Tort law (Negligence/Conversion); 14th Amendment (Right to Property),"Pipes in the laundry room appear to have burst due to freezing temperatures... Refrigerator had been unplugged, resulting in food spoilage and visible mold contamination.",,E-FCFCU-EXH-2025-0009,,"Burst pipes, mold growth, destruction of personal property (mini-fridge), and spoilage of food.",Alleged,Medium,LEGACY_ID:V-126
-> V-FCFCU-2025-0059,"December 21, 2025 (Discovery)",,Financial Center First Credit Union,,Statutory,Spoliation of Evidence,Procedural Due Process; Evidence Preservation duties,"Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled.",,E-FCFCU-EXH-2025-0010,,Disabling of interior security cameras during a contested period of retrieval.,Alleged,Medium,LEGACY_ID:V-127
-> V-FCFCU-2025-0060,"March 5, 2025 and April 15, 2025",,Financial Center First Credit Union (FCFCU) / Marion County Sheriff's Office,,Procedural,Procedural,Indiana Trial Rule 4.1(B); Indiana Trial Rule 4.15(F),"The Sheriff's Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B).",,E-FCFCU-EXH-2025-0011,,Lack of personal jurisdiction; Court never acquired jurisdiction to enter judgment.,Alleged,Medium,LEGACY_ID:V-128
-> V-FCFCU-2025-0061,"January 2025 – May 28, 2025",,Financial Center First Credit Union (FCFCU),,Procedural,Due Process Failure / Notice Deficiency,U.S. Const. amend. XIV; Constitutional due process,"Defendant never received the summons, complaint, notice of foreclosure, or any written directive informing him of required dates or obligations. Nothing was ever handed to him or placed in a location reasonably calculated to notify him.",,E-FCFCU-EXH-2025-0012,,Deprivation of protected rights without meaningful opportunity to be heard; Default judgment entered without defendant's knowledge.,Alleged,Medium,LEGACY_ID:V-129
-> V-FCFCU-2025-0062,Pre-foreclosure through removal (2025),,Financial Center First Credit Union (FCFCU),,ADA,ADA,Americans with Disabilities Act (ADA); 42 U.S.C.  3601 et seq.,"FCFCU refused to accommodate these requests and insisted on phone-based communication, despite: Email being a standard and widely accepted method of business communication; My documented disability-related limitations with phone communication.",,E-FCFCU-EXH-2025-0013,,Impaired ability to access the courts; material interference with ability to process legal directives.,Alleged,Medium,LEGACY_ID:V-130
-> V-FCFCU-2025-0063,"May 28, 2025 (Judgment) – December 9, 2025 (Removal)",,Financial Center First Credit Union (FCFCU),,Statutory,Foreclosure,Fair Housing Act (42 U.S.C.  3604); IC 22-9.5,"FCFCU obtained a default judgment against me on May 28, 2025, without my knowledge or participation, and without providing reasonable accommodations for my disability-related needs.",,E-FCFCU-EXH-2025-0014,,Forced displacement in freezing weather; destruction of income base; loss of stable housing.,Alleged,Medium,LEGACY_ID:V-131
-> V-FCFCU-2025-0064,"December 9, 2025",,Marion County Sheriff's Office / FCFCU,,Procedural,Procedural,Indiana Code  32-30-10.5-8; Procedural Due Process,"Sheriff executed a forcible removal WITHOUT an eviction case. No summons, no hearing, no eviction order. Sheriff posted no 48-hour notice before removal.",,E-FCFCU-EXH-2025-0015,,Unlawful dispossession; emergency displacement; health and safety risks.,Alleged,Medium,LEGACY_ID:V-132
-> V-FCFCU-2025-0065,November 2025 (Writ Petition),,Financial Center First Credit Union (FCFCU),,Statutory,Fraud on the Court / Material Misrepresentation,Procedural Due Process; TR 60(B),Petition falsely alleged “Unknown Occupants”... Petition falsely alleged refusal to vacate... Defendant never received writ petition. Writ issued without notice.,,E-FCFCU-EXH-2025-0016,,Issuance of Writ of Assistance without proper legal foundation.,Alleged,Medium,LEGACY_ID:V-133
-> V-FCFCU-2025-0066,"December 21, 2025 (Discovery Date)",,Financial Center First Credit Union (FCFCU),,Statutory,Conversion / Property Interference,Negligence; Conversion; Procedural Due Process,"I discovered that a bedroom mini-fridge had been unplugged, resulting in mold contamination and total loss of the appliance... refrigerator had been unplugged, resulting in food spoilage... pipes in the laundry room had burst due to freezing temperatures.",,E-FCFCU-EXH-2025-0017,,Loss of personal property; food spoilage; mold contamination; burst pipes.,Alleged,Medium,LEGACY_ID:V-134
+> I have completed the full VIS migration.
+
+> 
+
+> Summary of Actions
+
+> ID Stabilization: Migrated 135 rows to stable V-FCFCU-YYYY-#### IDs.
+
+> Evidence Indexing: Extracted source paths (like EXH_Exhibit X...) into evidence_index_master.csv with stable E-FCFCU-EXH-YYYY-#### IDs.
+
+> Master Inventory: Updated violations_inventory_master.csv with the new IDs, normalized categories, and evidence references.
+
+> Markdown Standardization: Created or updated 135 per-violation Markdown files in content/C_VIS/10_violations/, organized by actor (e.g., FCFCU, CREDIT_BUREAUS). Each file now has the correct frontmatter and stable ID.
+
+> Archiving: Moved the old _OLD_... CSV and other legacy indices to content/C_VIS/60_data_inventories/_TRASH_ARCHIVE/2026-01-18/.
+
+> Outputs
+
+> Master Violations: content/C_VIS/60_data_inventories/violations_inventory_master.csv
+
+> Evidence Index: content/C_VIS/60_data_inventories/evidence_index_master.csv (Newly created)
+
+> Financial Template: content/C_VIS/60_data_inventories/financial_transactions_damages.csv (Unchanged)
+
+> Violations Content: content/C_VIS/10_violations/ (Populated with standardized notes)
+
+> You can now review the master inventory or the generated markdown files. All data is preserved and traceable. violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
+
+> V-FCFCU-2026-0001,2026-01-02,,,,Statutory,General,,"Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations",,E-FCFCU-EXH-2026-0001,,,Alleged,Medium,LEGACY_ID:V-001
+
+> V-FCFCU-2025-0001,,,Experian,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,Experian reinvestigation failure / inadequate investigation (if occurs),,,,"Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md
+
+> V-FCFCU-2025-0002,,,Equifax,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,Equifax reinvestigation failure / inadequate investigation (if occurs),,,,"Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md
+
+> V-FCFCU-2025-0003,,,TransUnion,,Statutory,FCRA,THEORY_CRA_REINVESTIGATION_FAILURE,TransUnion reinvestigation failure / inadequate investigation (if occurs),,,,"TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",Alleged,Medium,LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md
+
+> V-FCFCU-2025-0004,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_NOTICE_AND_NONCOMPLIANCE,Failure to correct inaccurate furnishings after notice (1681s-2(b)),,,,"FCFCU failed to correct inaccurate reporting after receiving notice under 15 U.S.C. §1681s-2(b), which may indicate noncompliance or willfulness.",Alleged,Medium,LEGACY_ID:V-005; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-005_failure-to-correct-inaccurate-furnishings.md
+
+> V-FCFCU-2025-0005,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Dual tradeline double-counting of same collateral/debt causing compounded credit harm,,,,"The same collateral or debt is reported on multiple tradelines, effectively double-counting the harm and increasing damages.",Alleged,Medium,LEGACY_ID:V-006; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-006_dual-tradeline-double-counting.md
+
+> V-FCFCU-2025-0006,,,FCFCU,,Tort,Tort,THEORY_CREDIT_DEFAMATION,Credit defamation: false publication of delinquency after legal status changed,,,,False publications of delinquency after the legal status changed may constitute credit defamation and support litigation claims.,Alleged,Medium,LEGACY_ID:V-007; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-008_credit-defamation-false-publication.md
+
+> V-FCFCU-2025-0007,,,FCFCU/Attorney,,Statutory,FDCPA,THEORY_DEBT_STATUS_MISREPRESENTATION,FDCPA-style misrepresentation of legal status of debt (if collector/attorney involved),,,,Alleged misrepresentations about the legal status of debt by collectors or attorneys may implicate FDCPA theories when collectors are involved.,Alleged,Medium,LEGACY_ID:V-008; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-009_fdCPA-misrepresentation-of-debt-status.md
+
+> V-FCFCU-2025-0008,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_ACCURACY,Failure to mark account 'foreclosure' / 'closed' accurately after sale,,,,Accounts not accurately marked as foreclosure or closed after sale may mislead future creditors and harm consumers' credit profiles.,Alleged,Medium,LEGACY_ID:V-009; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-010_failure-to-mark-account-foreclosure-closed.md
+
+> V-FCFCU-2025-0009,,,FCFCU,,Tort,Tort,THEORY_POST_SALE_COST_SHIFT,Cost-shift: FCFCU refused to winterize/maintain yet billed occupant/Defendant via third parties,,,,"FCFCU allegedly refused to winterize or maintain property yet third parties billed the occupant, shifting costs improperly.",Alleged,Medium,LEGACY_ID:V-010; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-025_cost-shift-fcfcu-refused-winterize.md
+
+> V-FCFCU-2025-0010,,,FCFCU,,Statutory,Due_Process,THEORY_UNREASONABLE_TIMELINE_AND_PREJUDICE,Removal occurred 6–7 days after deed recorded/assessor update (compressed window),,,,"The property removal occurred within 6–7 days after deed recording, creating a compressed timeline that may have caused prejudice.",Alleged,Medium,LEGACY_ID:V-011; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-033_removal-6-7-days-after-deed-recorded.md
+
+> V-FCFCU-2025-0011,,,Court/FCFCU,,Procedural,Procedure/Accounting,THEORY_ACCOUNTING_IRREGULARITIES,Surplus funds declared resolved despite dispute on accuracy/fees,,,,"Surplus funds were declared resolved even while disputes over fees and accounting accuracy remained, suggesting accounting irregularities.",Alleged,Medium,LEGACY_ID:V-012; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-036_surplus-funds-declared-resolved.md
+
+> V-FCFCU-2025-0012,,,FCFCU,,Statutory,Accounting,THEORY_ACCOUNTING_IRREGULARITIES,Interest/fees arbitrarily inflated (dispute) impacting accounting and harm,,,,Allegations that interest and fees were arbitrarily inflated could affect accounting integrity and damages.,Alleged,Medium,LEGACY_ID:V-013; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-037_interest-fees-arbitrarily-inflated.md
+
+> V-FCFCU-2025-0013,,,FCFCU,,Tort,Tort,THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH,FCFCU testimony: winterize then leave until spring (arbitrary urgency for removal),,,,FCFCU testimony that the property should be winterized then left until spring may indicate arbitrary urgency used to justify removal.,Alleged,Medium,LEGACY_ID:V-014; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-038_fcfcu-testimony-winterize-then-leave.md
+
+> V-FCFCU-2025-0014,,,FCFCU,,Statutory,Litigation,THEORY_GLOBAL_RESOLUTION,Global demand letter: deletion + monetary settlement + account purges,,,,"Prepare a global demand seeking tradeline deletion, monetary settlement, and account purges as a resolution posture.",Alleged,Medium,LEGACY_ID:V-015; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-070_global-demand-letter.md
+
+> V-FCFCU-2025-0015,,,FCFCU,,Statutory,Litigation,THEORY_PRESERVATION,Litigation hold/preservation letter to FCFCU for credit reporting and internal records,,,,Send and document a litigation hold/preservation request to FCFCU for credit reporting files and internal communications.,Alleged,Medium,LEGACY_ID:V-016; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-071_litigation-hold-preservation-letter.md
+
+> V-FCFCU-2025-0016,,,FCFCU,,Statutory,Litigation,THEORY_EQUITABLE_RELIEF_DELETION,Equitable relief theory: complete tradeline deletion due to loss of reporting integrity,,,,Pursue equitable relief seeking complete tradeline deletion where reporting integrity is irreparably compromised.,Alleged,Medium,LEGACY_ID:V-017; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-072_equitable-relief-tradeline-deletion.md
+
+> V-FCFCU-2025-0017,,,FCFCU,,Statutory,Damages,THEORY_DAMAGES_CREDIT,Damages: credit score suppression and denials (documented) attributable to misreporting,,,,Document credit score impacts and lending denials attributable to misreporting to support damages claims.,Alleged,Medium,LEGACY_ID:V-018; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-073_damages-credit-score-suppression.md
+
+> V-FCFCU-2025-0018,,,FCFCU,,Statutory,Damages,THEORY_DAMAGES_FINANCIAL,Damages: out-of-pocket costs from displacement and post-sale bills,,,,Collect and document out-of-pocket costs following displacement and post-sale billing for damages mapping.,Alleged,Medium,LEGACY_ID:V-019; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-074_damages-out-of-pocket-costs.md
+
+> V-FCFCU-2025-0019,,,FCFCU,,Statutory,Public,THEORY_PUBLIC_ACCOUNTABILITY,Public accountability hold: prepare fact-checked summary and timeline (not published yet),,,,Prepare and fact-check an internal public summary and timeline for accountability; do not publish yet.,Alleged,Medium,LEGACY_ID:V-020; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-075_public-accountability-hold.md
+
+> V-FCFCU-2025-0020,,,FCFCU / Sheriff personnel,,Tort,Tort,THEORY_ARBITRARY_HARDSHIP_AND_BAD_FAITH,Conversion / Negligence: Property damage and personal property loss after removal,,,,"Alleged property damage (burst pipes, spoiled food, unplugged appliances) and conversion of personal property following forcible removal.",Alleged,Medium,LEGACY_ID:V-021; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-080_conversion-negligence-post-removal-damage.md
+
+> V-FCFCU-2025-0021,,,FCFCU,,Procedural,Procedure / Evidence,THEORY_PRESERVATION,Evidence spoliation: Interior security cameras unplugged during contested retrieval,,,,"Interior security cameras were unplugged during a contested removal period, potentially constituting spoliation of evidence.",Alleged,Medium,LEGACY_ID:V-022; SOURCE_FILE:C_VIS\10_violations\FCFCU\NT_V-081_evidence-spoliation-unplugged-cameras.md
+
+> V-FCFCU-2025-0022,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,FCFCU continues reporting first mortgage as active delinquent installment loan post-judgment/sale,,,,"FCFCU continues reporting the first mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness.",Alleged,Medium,LEGACY_ID:V-023; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-001_fcfcu-continues-reporting-first-mortgage-post-judgment-sale.md
+
+> V-FCFCU-2025-0023,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,FCFCU continues reporting second mortgage as active delinquent installment loan post-judgment/sale,,,,"FCFCU continues reporting the second mortgage as an active delinquent installment loan after judgment and sale, which may misrepresent the borrower's obligations and harm creditworthiness.",Alleged,Medium,LEGACY_ID:V-024; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-002_fcfcu-continues-reporting-second-mortgage-post-judgment-sale.md
+
+> V-FCFCU-2025-0024,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Monthly delinquencies reported after foreclosure judgment (no lawful monthly obligation),,,,"Monthly delinquencies continue to be reported after a foreclosure judgment where no lawful monthly obligation exists, potentially inflating arrears and harming credit.",Alleged,Medium,LEGACY_ID:V-025; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-003_monthly-delinquencies-after-foreclosure-judgment.md
+
+> V-FCFCU-2025-0025,,,FCFCU,,Statutory,FCRA,THEORY_FCRA_SYSTEMIC_MISREPORTING,Past-due amount and payment schedule reported after judgment despite merger/extinguishment,,,,"A past-due amount and payment schedule are reported after judgment despite merger or extinguishment of the underlying obligation, suggesting inaccurate reporting.",Alleged,Medium,LEGACY_ID:V-026; SOURCE_FILE:C_VIS\10_violations\FCFCU\OR_V-004_past-due-amount-schedule-after-judgment.md
+
+> V-FCFCU-2025-0026,,,FCFCU,,Statutory,FCRA,THEORY_CONTRADICTION_AND_MISREPRESENTATION,Inconsistent reporting vs court position (ownership/possession vs ongoing borrower obligation),,,,"FCFCU's reporting conflicts with positions taken in court about ownership or possession, creating a contradiction useful for disputes and complaints.",Alleged,Medium,LEGACY_ID:V-027; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-007_inconsistent-reporting-vs-court-position.md
+
+> V-FCFCU-2025-0027,,,FCFCU/Sheriff,,Statutory,Due_Process,THEORY_LACK_OF_NOTICE_AND_JURISDICTION,Service allegedly completed but Defendant received no notice before writ executed,,,,Allegations that service was completed but no actual notice reached the Defendant before writ execution can undermine jurisdiction and due process.,Alleged,Medium,LEGACY_ID:V-028; SOURCE_FILE:C_VIS\10_violations\FCFCU\PL_V-030_service-completed-no-notice-before-writ.md
+
+> V-FCFCU-2025-0028,,,Various housing providers,,Statutory,Fair Housing Act,THEORY_PUBLIC_ACCOUNTABILITY,Fair Housing Act: Reasonable accommodation failure (group homes / emotional support animals),,,,Alleged and documented failures to provide reasonable accommodations (including denial of group homes or emotional support animals) under the Fair Housing Act.,Alleged,Medium,LEGACY_ID:V-029; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-076_fha-reasonable-accommodation-failure.md
+
+> V-FCFCU-2025-0029,,,Various public accommodation operators,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,"ADA Title III: Entertainment / public accommodation accessibility failures (closed captioning, audio description)",,,,"Instances where public accommodations failed to provide required accessibility features (e.g., closed captioning, audio description), impacting disabled patrons.",Alleged,Medium,LEGACY_ID:V-030; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-077_ada-title-iii-entertainment-access-failure.md
+
+> V-FCFCU-2025-0030,,,Various institutions,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,ADA: Effective communication failures (failure to train staff / provide interpreters),,,,"Failures to provide effective communication (e.g., sign language interpreters, auxiliary aids) and to train staff, harming people with communication disabilities.",Alleged,Medium,LEGACY_ID:V-031; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-078_ada-effective-communication-failure.md
+
+> V-FCFCU-2025-0031,,,Major servicers / asset managers,,Statutory,Fair Housing Act,THEORY_PUBLIC_ACCOUNTABILITY,Discriminatory maintenance / redlining of REO properties,,,,"Allegations that servicers and asset managers systematically under-maintained REO properties in majority-Black and Latino neighborhoods compared to white neighborhoods, amounting to discriminatory practices.",Alleged,Medium,LEGACY_ID:V-032; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-083_discriminatory-maintenance-redlining.md
+
+> V-FCFCU-2025-0032,,,"Harbour Portfolio VII, CWAM II, Harbour Portfolio VI",,Statutory,Consumer Protection / FHA,THEORY_PUBLIC_ACCOUNTABILITY,Predatory land contract / reverse redlining in rent-to-own schemes,,,,"Claims that certain sellers marketed predatory land contracts primarily in minority neighborhoods with inflated prices and onerous terms, amounting to discriminatory lending and consumer harm.",Alleged,Medium,LEGACY_ID:V-033; SOURCE_FILE:C_VIS\10_violations\OTHER_PARTIES\NT_V-084_predatory-land-contract-reverse-redlining.md
+
+> V-FCFCU-2025-0033,,,Sheriff,,Statutory,Due_Process,THEORY_FALSE_RETURN_OR_DEFECTIVE_SERVICE,Sheriff return inaccuracies (claimed posting/mailing not done) - factual dispute,,,,"Sheriff return records claim posting/mailing that may not have occurred, creating a factual dispute over proper service.",Alleged,Medium,LEGACY_ID:V-034; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-031_sheriff-return-inaccuracies.md
+
+> V-FCFCU-2025-0034,,,Court,,Statutory,Due_Process,THEORY_INADEQUATE_FACTFINDING,Court relied on service sufficiency without addressing conflicting facts,,,,"The court accepted service sufficiency without reconciling conflicting facts, raising issues about the adequacy of factfinding.",Alleged,Medium,LEGACY_ID:V-035; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-035_court-relied-on-service-sufficiency.md
+
+> V-FCFCU-2025-0035,,,FCFCU,,Procedural,Procedure,THEORY_INADEQUATE_FACTFINDING,Fraud on the court / material misrepresentation in writ petition,,,,"Allegations that a writ petition contained false or materially misleading statements (e.g., ""Unknown Occupants""), resulting in issuance without proper notice.",Alleged,Medium,LEGACY_ID:V-036; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\NT_V-082_fraud-on-the-court-material-misrepresentation.md
+
+> V-FCFCU-2025-0036,,,Marion Superior Court / FCFCU,,Procedural,Procedure,THEORY_LACK_OF_NOTICE_AND_JURISDICTION,Procedural error: Void judgment due to defective service / lack of jurisdiction,,,,"Judgment appears void because service of process did not comply with Indiana Trial Rule 4.1(B), depriving the court of personal jurisdiction.",Alleged,Medium,LEGACY_ID:V-037; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\OR_V-079_void-judgment-procedural-error.md
+
+> V-FCFCU-2025-0037,,,Court/FCFCU,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,No ADA-compliant notice/accommodation despite disability communication needs,,,,"The court or FCFCU failed to provide ADA-compliant notice or accommodations, disadvantaging parties with disabilities.",Alleged,Medium,LEGACY_ID:V-038; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-032_no-ada-compliant-notice.md
+
+> V-FCFCU-2025-0038,,,Plaintiff counsel,,Procedural,Procedure,THEORY_PROCEDURAL_IRREGULARITY,Attorney appeared without formal appearance filed at hearing,,,,"An attorney appeared at a hearing without a formal appearance on file, which may be a procedural irregularity.",Alleged,Medium,LEGACY_ID:V-039; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-034_attorney-appeared-without-formal-appearance.md
+
+> V-FCFCU-2025-0039,,,CFPB,,Statutory,Regulatory,THEORY_REGULATORY_PRESSURE,CFPB complaint track for credit misreporting + cost shift,,,,Prepare and submit a CFPB complaint documenting credit misreporting and cost-shifting harms.,Alleged,Medium,LEGACY_ID:V-040; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-050_cfpb-complaint-track.md
+
+> V-FCFCU-2025-0040,,,Indiana AG,,Statutory,Regulatory,THEORY_REGULATORY_PRESSURE,"Indiana AG complaint track (pattern/practice, consumer harm)",,,,Consider filing an Indiana AG complaint to highlight pattern or practice and consumer harm.,Alleged,Medium,LEGACY_ID:V-041; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-051_indiana-ag-complaint-track.md
+
+> V-FCFCU-2025-0041,,,IN Civil Rights,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,Indiana Civil Rights Commission complaint track (ADA-related exclusion),,,,Prepare an Indiana Civil Rights Commission complaint focused on ADA-related procedural exclusions.,Alleged,Medium,LEGACY_ID:V-042; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-052_icrc-complaint-track.md
+
+> V-FCFCU-2025-0042,,,DOJ,,ADA,ADA,THEORY_ADA_PROCEDURAL_EXCLUSION,DOJ Civil Rights (ADA Title II) complaint track,,,,Track and file a DOJ Civil Rights complaint under Title II for systemic ADA failures.,Alleged,Medium,LEGACY_ID:V-043; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-053_doj-civil-rights-complaint-track.md
+
+> V-FCFCU-2025-0043,,,BBB,,Statutory,Reputation,THEORY_REPUTATIONAL_PRESSURE,BBB complaint as reputational pressure channel,,,,Use BBB complaint filing as a low-cost reputational channel after legal notices have been issued.,Alleged,Medium,LEGACY_ID:V-044; SOURCE_FILE:C_VIS\10_violations\REGULATORS_PROCEDURAL\PL_V-060_bbb-complaint-reputational-pressure.md
+
+> V-FCFCU-2025-0044,,,AES Indiana,,Statutory,Utility,THEORY_POST_SALE_COST_SHIFT,Post-08/15 AES electric charges billed to Defendant despite FCFCU ownership/possession,,,,"AES billed electric charges to the Defendant after FCFCU assumed ownership/possession, suggesting improper cost-shifting.",Alleged,Medium,LEGACY_ID:V-045; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-020_post-0815-aes-electric-charges-billed.md
+
+> V-FCFCU-2025-0045,,,Citizens Energy,,Statutory,Utility,THEORY_POST_SALE_COST_SHIFT,Post-08/15 Citizens Energy charges billed to Defendant despite FCFCU ownership/possession,,,,"Citizens Energy billed charges to the Defendant after FCFCU owned/possessed the property, indicating potential improper billing.",Alleged,Medium,LEGACY_ID:V-046; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-021_post-0815-citizens-energy-charges-billed.md
+
+> V-FCFCU-2025-0046,,,Shadow Pointe HOA,,Tort,Tort,THEORY_POST_SALE_COST_SHIFT,Post-08/15 HOA assessments/fines billed to Defendant despite FCFCU ownership/possession,,,,"HOA assessments or fines were billed to the Defendant after FCFCU had ownership or possession, indicating improper ledger entries.",Alleged,Medium,LEGACY_ID:V-047; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-022_post-0815-hoa-assessments-billed.md
+
+> V-FCFCU-2025-0047,,,City of Indianapolis,,Statutory,Municipal,THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL,City grass-cut ticket assessed against Defendant after loss of access/authority,,,,"A city grass-cut ticket was assessed after the Defendant lost access/authority, suggesting wrongful enforcement.",Alleged,Medium,LEGACY_ID:V-048; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-023_city-grass-cut-ticket-assessed-after-loss-of-access.md
+
+> V-FCFCU-2025-0048,,,City of Indianapolis,,Statutory,Municipal,THEORY_WRONGFUL_ENFORCEMENT_NO_CONTROL,Municipal code enforcement actions after possession transfer (if any),,,,"Municipal code enforcement actions occurred after possession transferred, potentially misplaced responsibility.",Alleged,Medium,LEGACY_ID:V-049; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-024_municipal-code-enforcement-after-possession-transfer.md
+
+> V-FCFCU-2025-0049,,,Multiple,,Statutory,Consumer_Protection,THEORY_COMPOUNDING_HARM,Credit reporting harm compounded by utility/municipal delinquency risk (collections),,,,Utility and municipal delinquencies compound credit reporting harm when collections reflect on consumer reports.,Alleged,Medium,LEGACY_ID:V-050; SOURCE_FILE:C_VIS\10_violations\UTILITIES_HOA_CITY\NT_V-026_credit-harm-compounded-utility-municipal.md
+
+> V-FCFCU-0000-0001,Not in source,,"Overlook Mutual Homes, Inc.",,Statutory,Fair Housing Act breach (reasonable accommodation failure),"Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq.","emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009).",,E-FCFCU-EXH-0000-0001,,Legal dispute over the exclusion of emotional support animals from housing.,Alleged,Medium,LEGACY_ID:V-051
+
+> V-FCFCU-1985-0001,1985,,Public accommodations/Federal agencies,,Procedural,Procedural,Section 504 of the Rehabilitation Act; ADA  36.204,These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design.,,E-FCFCU-EXH-1985-0001,,Failure to rectify harms from actions that discriminate by effect/design.,Alleged,Medium,LEGACY_ID:V-052
+
+> V-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Recently, the United States Court of Appeals for the Ninth Circuit held that the ADA requires a chain of movie theaters to exhibit movies with closed captioning and video description unless the theaters can show that to do so would amount to a fundamental alteration or undue burden. Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",,E-FCFCU-EXH-2010-0001,,Failure to provide closed captioning and audio description in movie theaters.,Alleged,Medium,LEGACY_ID:V-053
+
+> V-FCFCU-2004-0001,2004,,"Too, Inc.",,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation. See, e.g., Colorado Cross Disability Coalition v. Too, Inc., 344 F. Supp. 2d 707 (D. Colo. 2004)",,E-FCFCU-EXH-2004-0001,,Physical/architectural barriers to entry for individuals with disabilities.,Alleged,Medium,LEGACY_ID:V-054
+
+> V-FCFCU-2008-0001,2008,,Carrols Corp.,,ADA,ADA,42 U.S.C. 12182(b)(2)(A)(iii),"the Second Circuit held that a public accommodation’s failure to provide employee training on effective communication with individuals with disabilities can constitute a violation of title III, specifically 42 U.S.C. 12182(b)(2)(A)(iii).",,E-FCFCU-EXH-2008-0001,,Failure to train employees on effective communication with disabled individuals.,Alleged,Medium,LEGACY_ID:V-055
+
+> V-FCFCU-2009-0001,2009,,Walt Disney World Co.,,ADA,ADA,ADA  36.302 (Reasonable modification);  36.311,"Indeed, there has been litigation concerning the legal obligations of covered entities to accommodate individuals with mobility disabilities who wish to use an electronic personal assistance mobility device (EPAMD), such as the Segway® PT... See Ault v. Walt Disney World Co., No. 6:07–cv–1785–Orl–31KRS, 2009 WL 3242028 (M.D. Fla. Oct. 6, 2009).",,E-FCFCU-EXH-2009-0001,,Restricting use of electronic personal assistance mobility devices (EPAMDs).,Alleged,Medium,LEGACY_ID:V-056
+
+> V-FCFCU-1999-0001,1999,,New York Yankees,,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers. Courts have affirmed this interpretation... Pascuiti v. New York Yankees, 87 F. Supp. 2d 221 (S.D.N.Y. 1999).",,E-FCFCU-EXH-1999-0001,,Discriminatory seating/barrier to access in sports stadium.,Alleged,Medium,LEGACY_ID:V-057
+
+> V-FCFCU-2020-0001,"August 10, 2020",,"Moline Builders, Inc.",,Statutory,Fair Housing Act breach (Accessibility Requirements),42 U.S.C. § 3604(f)(3)(C),"the court agreed, finding that the failure to provide “unimpeded access” to the front door to persons who use wheelchairs... is “precisely the discrimination the FHAA forbids.”",,E-FCFCU-EXH-2020-0001,,Failure to provide wheelchair-accessible front door and walkway to covered units.,Alleged,Medium,LEGACY_ID:V-058
+
+> V-FCFCU-2016-0001,"December 27, 2016",,Aspen View Condo. Ass'n,,Statutory,Fair Housing Act breach (Retaliation),42 U.S.C. § 3617,plaintiff’s retaliation claim was not dependent upon his reasonable accommodation claim and that a reasonable jury could conclude that the fines were imposed in retaliation for allowing his tenant to live in the condo unit with her dog,,E-FCFCU-EXH-2016-0001,,Owner was fined for allowing a tenant to keep a service dog for epilepsy.,Alleged,Medium,LEGACY_ID:V-059
+
+> V-FCFCU-2000-0001,"November 9, 2000",,City of Dallas,,Statutory,Fair Housing Act breach (Reasonable Accommodation Denial),42 U.S.C. § 3604(f)(3)(B),The United States argued that the City violated the Fair Housing Act by improperly denying a reasonable accommodation when it refused to grant the plaintiff a variance to the City's 1000 foot spacing requirement,,E-FCFCU-EXH-2000-0001,,Refusal to grant spacing and occupancy variances for group homes for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-060
+
+> V-FCFCU-2009-0002,2009 to 2013,,"Hudson City Savings Bank, F.S.B.",,Statutory,Fair Housing Act breach (Pattern or Practice of Redlining),Fair Housing Act; Equal Credit Opportunity Act,"Hudson City Savings Bank (Hudson City) failed to provide its home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis as it provided those services to predominantly white neighborhoods, a practice commonly known as 'redlining,'""",,E-FCFCU-EXH-2009-0002,,Failure to provide home mortgage lending services to majority-Black-and-Hispanic neighborhoods on an equal basis.,Alleged,Medium,LEGACY_ID:V-061
+
+> V-FCFCU-2003-0001,"November 5, 2003",,Woodcrest Condominiums Association,,Statutory,Fair Housing Act breach (Familial Status Discrimination),42 U.S.C. § 3604,the United States argues that defendants' former policy of restricting families with children to first floor units violates the Act as a matter of law.,,E-FCFCU-EXH-2003-0001,,Restricting families with children to first-floor units; steering prospective tenants.,Alleged,Medium,LEGACY_ID:V-062
+
+> V-FCFCU-2013-0001,"December 2, 2013",,61 Main Street Corp. and Rosario Marci,,Statutory,Fair Housing Act breach (Race and Color Discrimination),42 U.S.C. § 3604(a)-(b),"Specifically, the United States alleges that the defendants failed to inform African-American prospective tenants about available apartments... provided higher rent prices and less favorable security deposit terms to African-American prospective tenants",,E-FCFCU-EXH-2013-0001,,Misrepresenting unit availability and charging higher rents/security deposits to African-American prospective tenants.,Alleged,Medium,LEGACY_ID:V-063
+
+> V-FCFCU-2010-0002,"April 20, 2010",,Barnason (Owner/Manager),,Statutory,Fair Housing Act breach (Sexual Harassment),42 U.S.C. § 3604,the managers and owner of three residential apartment buildings in Manhattan engaged in a pattern or practice of sexual harassment of female tenants in violation of Fair Housing Act.,,E-FCFCU-EXH-2010-0002,,Severe sexual harassment of female tenants by a manager who was a Level 3 sex offender.,Alleged,Medium,LEGACY_ID:V-064
+
+> V-FCFCU-2013-0002,"June 24, 2013",,Altoona Housing Authority,,Procedural,Procedural,42 U.S.C. § 3604,the defendant discriminated on the basis of race by evicting an African-American tenant with less due process than was given to white tenants with similar or worse lease violations.,,E-FCFCU-EXH-2013-0002,,Evicting an African-American tenant with less due process than white tenants.,Alleged,Medium,LEGACY_ID:V-065
+
+> V-FCFCU-2015-0001,"September 30, 2015",,Allan Rappuhn and affiliated entities,,Statutory,Fair Housing Act breach (Design and Construction),42 U.S.C. § 3604(f)(3)(C),"the defendants engaged in a pattern or practice of designing and constructing multifamily housing developments... in violation of the Fair Housing Act (FHA), 42 U.S.C. § 3604(f)(3)(C)",,E-FCFCU-EXH-2015-0001,,"Failure to design 71 developments with accessible routes, curb cuts, or usable bathrooms/kitchens.",Alleged,Medium,LEGACY_ID:V-066
+
+> V-FCFCU-2011-0001,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Intentional Discrimination),42 U.S.C. & 3604(a),"Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin in violation of &3604(a).",,E-FCFCU-EXH-2011-0001,,"Deteriorating living conditions, neighborhood blight, health and safety concerns, and decreased market values for homeowners near foreclosed homes.",Alleged,Medium,LEGACY_ID:V-067
+
+> V-FCFCU-2011-0002,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Terms and Conditions of Sale/Service),42 U.S.C. & 3604(b),"Defendants have discriminated in the terms, conditions, or privileges of sale or rental of a dwelling, or in the provision of services or facilities in connection therewith, because of race or national origin in violation of 42 U.S.C. &3604(b).",,E-FCFCU-EXH-2011-0002,,Transfer of title with responsibility of remedying delayed maintenance; discriminatory provision of services in connection with dwellings.,Alleged,Medium,LEGACY_ID:V-068
+
+> V-FCFCU-2011-0003,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Residential Real Estate-Related Transactions),42 U.S.C. & 3605,"Accordingly, Defendants have discriminated in the marketing and sale of, or otherwise made unavailable or denied, dwellings to persons because of race or national origin or discriminated in the terms or conditions of such a transaction in violation of 42 U.S.C. &3605.",,E-FCFCU-EXH-2011-0003,,Interference with purchase loan viability and closing of sales due to poor property appraisals in communities of color.,Alleged,Medium,LEGACY_ID:V-069
+
+> V-FCFCU-2013-0003,"June 28, 2013",,Deutsche Bank,,Procedural,Procedural,Local Slumlord Ordinances; FHA non-delegable duties,"On June 28, 2013, Deutsche Bank publicly confirmed its policies of outsourcing and abdicating legal responsibilities with regard to REO properties in the course of a $10,000,000.00 settlement with the City of Los Angeles in a so-called ‘slum lord’ case",,E-FCFCU-EXH-2013-0003,,Deterioration of foreclosed REO properties; creation of 'slum lord' conditions in Los Angeles.,Alleged,Medium,LEGACY_ID:V-070
+
+> V-FCFCU-2011-0004,2011 to December 2017,,"Deutsche Bank National Trust; Deutsche Bank Trust Company Americas; Ocwen Loan Servicing, LLC; Altisource Solutions, Inc.",,Statutory,Fair Housing Act breach (Perpetuating Segregation),42 U.S.C. & 3601,The failure to maintain and market REO dwellings in communities of color according to the same standards as REO dwellings in predominantly white neighborhoods were maintained has stigmatized communities of color as less desirable... and has the effect of perpetuating segregated conditions.,,E-FCFCU-EXH-2011-0004,,Stigmatization of communities of color; restriction of the ability of minority homeowners to move into majority white neighborhoods due to reduced equity.,Alleged,Medium,LEGACY_ID:V-071
+
+> V-FCFCU-2025-0050,"May 28, 2025",,Financial Center First Credit Union / Marion Superior Court 3,,Procedural,Procedural,Indiana Trial Rule 4.1(B); Procedural Due Process,Service of process was not completed in accordance with Indiana Trial Rule 4.1(B); The Court therefore did not acquire personal jurisdiction over Defendant; A judgment entered without personal jurisdiction is VOID ab initio and must be vacated.,,E-FCFCU-EXH-2025-0001,,Default Judgment and Decree of Foreclosure entered without jurisdiction.,Alleged,Medium,LEGACY_ID:V-072
+
+> V-FCFCU-0000-0002,Not in source,,State Government / Judiciary,,Procedural,Procedural,"U.S. Constitution Amendment XIV,  1","An elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections.",,E-FCFCU-EXH-0000-0002,,"Unjustified deprivation of life, liberty, or property.",Alleged,Medium,LEGACY_ID:V-073
+
+> V-FCFCU-2009-0003,2009 (Caperton); 2016 (Williams),,State Courts / Judiciary,,Procedural,Procedural,U.S. Constitution Amendment XIV (Due Process Clause),"The neutrality requirement helps to guarantee that life, liberty, or property will not be taken on the basis of an erroneous or distorted conception of the facts or the law. . . . there is a serious risk of actual biasbased on objective and reasonable perceptionswhen a person with a personal stake in a particular case had a significant and disproportionate influence in placing the judge on the case.",,E-FCFCU-EXH-2009-0003,,Risk of actual bias in judicial decision-making.,Alleged,Medium,LEGACY_ID:V-074
+
+> V-FCFCU-0000-0003,Not in source,,State Government / Legislatures,,Procedural,Due Process Violation (Standard of Proof),U.S. Constitution Amendment XIV; Clear and Convincing Evidence Standard,"because the interest of parents in retaining custody of their children is fundamental, the state may not terminate parental rights through reliance on a standard of preponderance of the evidencethe proof necessary to award money damages in an ordinary civil action but must prove that the parents are unfit by clear and convincing evidence.",,E-FCFCU-EXH-0000-0003,,"Erroneous deprivation of fundamental interests (e.g., parental rights).",Alleged,Medium,LEGACY_ID:V-075
+
+> V-FCFCU-1972-0001,1972 (Fuentes),,State Government / Creditors,,Procedural,Procedural,U.S. Constitution Amendment XIV,"Fuentes v. Shevin, which struck down a replevin statute that authorized the seizure of property (here household goods purchased on an installment contract) simply upon the filing of an ex parte application and the posting of bond",,E-FCFCU-EXH-1972-0001,,Mistaken deprivation of property (household goods) without prior hearing.,Alleged,Medium,LEGACY_ID:V-076
+
+> V-FCFCU-0000-0004,Not in source,,State Legislatures,,Constitutional,Unconstitutional Presumption (Vesting of Title),U.S. Constitution Amendment XIV (Property Rights),"for suits to recover real and personal property, when the right of action has been barred by a statute of limitations and title as well as real ownership have become vested in the defendant, any later act removing or repealing the bar would be void as attempting an arbitrary transfer of title.",,E-FCFCU-EXH-0000-0004,,Arbitrary transfer of title after statute of limitations has run.,Alleged,Medium,LEGACY_ID:V-077
+
+> V-FCFCU-2011-0005,July 2011 - October 2015,,Federal National Mortgage Association (Fannie Mae),,Statutory,Fair Housing Act breach (Intentional Discrimination / Disparate Impact),"Fair Housing Act (42 U.S.C. §§ 3601, 3604, 3605, 3617)","Fannie Mae and its agents have failed to conduct routine exterior maintenance and marketing of REO properties in communities of color, thereby leaving those REO properties in a state of neglect, while satisfactorily conducting routine exterior maintenance and marketing of its REO properties in predominantly white neighborhoods.",,E-FCFCU-EXH-2011-0005,,Neglected REO properties in communities of color; decreased home values; health risks (high blood pressure); social isolation; anxiety; perpetuation of racial segregation.,Alleged,Medium,LEGACY_ID:V-078
+
+> V-FCFCU-2012-0001,"August 27, 2012",,"Fannie Mae / Asset Management Specialists, Inc.",,Statutory,Failure to provide equal maintenance services (REO Dwellings),42 U.S.C. § 3604(b),"On August 27, 2012, Plaintiffs visited Defendant’s REO property located at 1142 Kalamazoo Avenue, Grand Rapids, MI 49507... This property had 10 maintenance deficiencies: trash, overgrown grass, overgrown shrubbery, missing screens, unsecured doors, broken and boarded windows, a damaged fence, a dilapidated garage, damaged siding, and exposed or tampered-with utilities.",,E-FCFCU-EXH-2012-0001,,"Property neglect: trash, overgrown grass/shrubbery, unsecured doors, broken/boarded windows, damaged fence/siding.",Alleged,Medium,LEGACY_ID:V-079
+
+> V-FCFCU-2014-0001,"October 28, 2014",,"Fannie Mae / Cyprexx Services, LLC",,Statutory,Discriminatory treatment in property maintenance,42 U.S.C. § 3604,"This property exhibited 16 maintenance deficiencies, including: unsecured pool area, overgrown grass, unlocked doors, invsaive plants, trash, accumulated mail, dead shrubbery, uncovered holes, damaged soffet, damaged fence, warning sign, and water damage/discoloration.",,E-FCFCU-EXH-2014-0001,,"16 maintenance deficiencies including unsecured pool, overgrown grass, unlocked doors, invasive plants, trash, and structural holes.",Alleged,Medium,LEGACY_ID:V-080
+
+> V-FCFCU-2009-0004,2009 - 2015,,Fannie Mae,,Procedural,Procedural,42 U.S.C. § 3601 et seq.,"Despite Plaintiffs’ efforts to get Fannie Mae to voluntarily comply with the Fair Housing Act, Fannie Mae did not change its behavior. With discriminatory intent and deliberate indifference to the discriminatory purpose and effects of its policies and practices, Fannie Mae continued to maintain its REO properties differently because of the predominant race and national origin of neighborhoods.",,E-FCFCU-EXH-2009-0004,,Ongoing systemic discrimination despite being alerted to disparate maintenance levels by NFHA.,Alleged,Medium,LEGACY_ID:V-081
+
+> V-FCFCU-2000-0002,2000,,Trial Court (Indiana),,Procedural,Procedural,Indiana Evidence Rule 702; Procedural Due Process,The trial court’s failure to rule on the admissibility of the evidence requires us to remand to the trial court for such proceedings as may be necessary to determine whether the statements of the purported experts meet the requirements of Evid.R. 702.,,E-FCFCU-EXH-2000-0002,,Failure to address evidentiary admissibility leading to remand; unresolved questions of fact on safer alternative design.,Alleged,Medium,LEGACY_ID:V-082
+
+> V-FCFCU-1996-0001,January 1996,,"Apartment owner (Lake Charles, Louisiana)",,Statutory,Fair Housing Act breach (Race discrimination),42 U.S.C. § 3604,"When Mr. Lewis went to view the apartment, however, the owner refused to accept his deposit, saying, 'I just don't rent to you people.' ... 'Black, colored, Negro, whatever you call yourself, I don't rent to y'all.'",,E-FCFCU-EXH-1996-0001,,Denial of housing; blatant racial discrimination.,Alleged,Medium,LEGACY_ID:V-083
+
+> V-FCFCU-2025-0051,"December 9, 2025",,Marion Superior Court / Financial Center First Credit Union,,Procedural,Procedural,IN Code § 32-30-10.5-10; Due Process Clause,"Cody was removed from the residence at 4817 Shadow Pointe Dr. on December 9, 2025, through enforcement of a Writ of Assistance whose validity is currently under challenge.",,E-FCFCU-EXH-2025-0002,,Removal from residence; homelessness; risk to safety and mental health; inability to access essential belongings.,Alleged,Medium,LEGACY_ID:V-084
+
+> V-FCFCU-2025-0052,December 2025 - January 2026,,Plaintiff (Financial Center First Credit Union) / Court,,ADA,ADA,Americans with Disabilities Act (ADA),"ADA requires reasonable modifications ensuring equal access. ... Forced displacement has caused acute destabilization including inability to sleep, panic episodes, cognitive shutdown, and impaired functioning.",,E-FCFCU-EXH-2025-0003,,Acute destabilization; trauma-related panic episodes; impaired cognitive functioning.,Alleged,Medium,LEGACY_ID:V-085
+
+> V-FCFCU-2017-0001,"March 15, 2017 (Filing date)",,"Harbour Portfolio VII, LP; CWAM II, LLC; Harbour Portfolio VI, LP",,Statutory,Predatory land contract / Housing discrimination (Reverse Redlining),42 U.S.C. § 3604; Equal Credit Opportunity Act,"Harbour marketed its contract for deed transactions exclusively, or almost exclusively, in African-American neighborhoods ... induced to purchase properties that were in very bad condition, and to pay inflated purchase prices and very high interest rates.",,E-FCFCU-EXH-2017-0001,,Exorbitant interest rates (9.9%-10%); burden of all repairs; high likelihood of immediate default.,Alleged,Medium,LEGACY_ID:V-086
+
+> V-FCFCU-2018-0001,2018 (Trial court decision),,Rainbow Realty Group Inc.,,Statutory,Breach of Warranty of Habitability,Indiana landlord-tenant laws; IC 32-31,the trial court reiterated its earlier entry of partial summary judgment and found that Rainbow had breached the warranty of habitability and had engaged in willful and deceptive acts regarding the nature of the agreement,,E-FCFCU-EXH-2018-0001,,Unlivable housing conditions; intentional deception regarding agreement nature.,Alleged,Medium,LEGACY_ID:V-087
+
+> V-FCFCU-1999-0002,Circa 1999-2000,,"Apartment complexes (Charlotte, NC / New Orleans, LA)",,Statutory,Fair Housing Act breach (Disability accessibility),42 U.S.C. § 3604(f)(3)(C),100% of complexes surveyed did not meet the Fair Housing Act's accessibility requirements for the physically disabled,,E-FCFCU-EXH-1999-0002,,Exclusion of persons with physical disabilities from multifamily housing.,Alleged,Medium,LEGACY_ID:V-088
+
+> V-FCFCU-0000-0005,Not in source,,Urban Search Management,,Statutory,Discriminatory Advertising,42 U.S.C. § 3604(c),district court refused to instruct jury on punitive damages despite evidence that established that luxury apartment complex used exclusively white human models in its advertising,,E-FCFCU-EXH-0000-0005,,Messaging of exclusion to nonwhite home seekers.,Alleged,Medium,LEGACY_ID:V-089
+
+> V-FCFCU-2015-0002,Early 2015 to August 2015,,Town of Cromwell (Mayor and Town Manager),,ADA,ADA,"42 U.S.C. §§ 3604(c), 3604(f), 3617; 42 U.S.C. § 12132","In early 2015, Gilead Community Services, Inc.... purchased a house in Cromwell... to be used as a group home for men with disabilities... Cromwell’s mayor and other high-ranking officials joined the opposition and undertook a series of actions designed to discourage the group home... Gilead closed the group home in August 2015",,E-FCFCU-EXH-2015-0002,,"Closure of a group home for men with disabilities, emotional and financial harm to Gilead Community Services, and leakage of sensitive health information.",Alleged,Medium,LEGACY_ID:V-090
+
+> V-FCFCU-2015-0003,2015,,Cromwell Police and Town Officials,,Statutory,Fair Housing Act breach (Discriminatory Statements),42 U.S.C. § 3604(c),Gilead later learned that the police leaked sensitive health information about this individual— information learned from this interaction—to the media.,,E-FCFCU-EXH-2015-0003,,Sensitive health information about a group home resident was leaked to the media.,Alleged,Medium,LEGACY_ID:V-091
+
+> V-FCFCU-1975-0001,1975,,"City of Newport, Rhode Island",,Statutory,Civil Rights,42 U.S.C. § 1983; First and Fourteenth Amendments,"After Newport cancelled the contract due to a dispute over some of the hired musicians, Fact Concerts brought a § 1983 action against the city... alleging violations of the plaintiff’s rights to due process and free expression under the First Amendment.",,E-FCFCU-EXH-1975-0001,,"Cancellation of a contract for a music festival based on content/musicians, violating free expression and due process.",Alleged,Medium,LEGACY_ID:V-092
+
+> V-FCFCU-2020-0002,2020-2021,,Town of Wolcott,,Statutory,Fair Housing Act breach (Reasonable Accommodation Failure),42 U.S.C. § 3604(f)(3)(B),"setting forth consent decree calling for town, inter alia, to make payments of $350,000 in damages to group home... for failing to make FHA-mandated reasonable accommodation",,E-FCFCU-EXH-2020-0002,,Denial of reasonable accommodation for a group home.,Alleged,Medium,LEGACY_ID:V-093
+
+> V-FCFCU-2025-0053,2025-12-10,,Federal Courts (interpreting Rule 13(a)),,Procedural,Procedural,Fed. R. Civ. P. 13(a),Every federal court that has addressed the issue has held that Rule 13(a)... bars a defendant who defaults... from later filing a transactionally related claim in a subsequent suit. This Article argues that the federal courts’ interpretation of Rule 13(a) is fundamentally wrong.,,E-FCFCU-EXH-2025-0004,,Depriving defaulting defendants of potentially meritorious transactionally related claims in subsequent suits.,Alleged,Medium,LEGACY_ID:V-094
+
+> V-FCFCU-0000-0006,1980s,,"City of Yonkers, New York",,Statutory,Fair Housing Act breach (Exclusionary Zoning),42 U.S.C. § 3601 et seq.,Yonkers’s elected leaders had illegally maintained residential segregation by restricting affordable housing projects to minority areas,,E-FCFCU-EXH-0000-0006,,Illegal maintenance of residential segregation.,Alleged,Medium,LEGACY_ID:V-095
+
+> V-FCFCU-1977-0001,1977-1979,,Elkhart County,,Procedural,Due Process Failure / Notice Error,Due Process Clause of the Fourteenth Amendment,"the United States Supreme Court has held that the due process clause of the fourteenth amendment requires notice by mail to mortgagees prior to a tax sale. ... Elkhart county began proceedings to sell the land at public auction. ... Notice was not given to the Mennonite Board of Missions by either the county or Moore, and the Board was unaware of the tax sale.",,E-FCFCU-EXH-1977-0001,,"Extinguishment of $14,000 mortgage interest/lien without actual notice.",Alleged,Medium,LEGACY_ID:V-096
+
+> V-FCFCU-0000-0007,Not in source,,"U.S. Airways, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) - Reasonable Accommodation,"As a reasonable accommodation under the ADA, Barnett asked U.S. Airways to make an exception to the seniority system so that he could retain his mailroom job. U.S. Airways denied his request and Barnett lost his job when he was bumped by an employee with more seniority.",,E-FCFCU-EXH-0000-0007,,Loss of employment after being 'bumped' by more senior employee.,Alleged,Medium,LEGACY_ID:V-097
+
+> V-FCFCU-0000-0008,Not in source,,New York Medicaid Program,,Procedural,Procedural,ADA Integration Mandate / Rehabilitation Act / Due Process,The plaintiffs did not receive written notice of the changes in coverage and learned of the changes when they attempted to fulfill their prescriptions. ... cutting funding for medically necessary orthopedic footwear and compression stockings violated Olmstead’s integration mandate and put plaintiffs at a substantial risk of requiring institutionalized care.,,E-FCFCU-EXH-0000-0008,,Loss of mobility funding without written notice; substantial risk of institutionalization.,Alleged,Medium,LEGACY_ID:V-098
+
+> V-FCFCU-2005-0001,2005,,Norwegian Cruise Line Ltd.,,ADA,ADA,Title III of the ADA,"Cruise passengers with disabilities brought action against a foreign-flagged cruise line, alleging violations of Title III of the ADA. Specifically, plaintiffs alleged that physical barriers on the ships denied them access to: 1) Emergency evacuation equipment ... 2) Facilities such as public restrooms, restaurants, swimming pools, and elevators ... Plaintiffs also alleged that the defendant charged them a premium for use of the four accessible cabins",,E-FCFCU-EXH-2005-0001,,"Denied access to emergency equipment, pools, restaurants, and elevators; premium charges for accessible cabins.",Alleged,Medium,LEGACY_ID:V-099
+
+> V-FCFCU-1993-0001,"June 9, 1993",,Indiana General Assembly / Melroe Company,,Procedural,Procedural,"Article I, Section 12 of the Indiana Constitution (Right to Remedy)",James McIntosh was injured in an accident involving a Clark Bobcat skid steer loader manufactured by Melroe. ... Melroe responded with a motion for summary judgment based on the ten-year statute of repose ... providing that 'a product liability action must be commenced ... within ten (10) years after the delivery of the product to the initial user or consumer.',,E-FCFCU-EXH-1993-0001,,Loss of legal remedy for injury caused by alleged product defect.,Alleged,Medium,LEGACY_ID:V-100
+
+> V-FCFCU-0000-0009,Not in source,,Pennsylvania Dept. of Corrections,,ADA,ADA,Title II of the ADA,Ronald Yeskey was sentenced to 18 to 36 months ... recommended that he participate in a Motivational Boot Camp ... The State refused Yeskey’s admission into the Boot Camp due to his history of hypertension. Yeskey filed suit under the ADA.,,E-FCFCU-EXH-0000-0009,,Refusal of admission to Boot Camp (affecting parole eligibility) due to hypertension.,Alleged,Medium,LEGACY_ID:V-101
+
+> V-FCFCU-0000-0010,Not in source,,St. Helena Hospital,,ADA,ADA,ADA Title III / Rehabilitation Act,"A Deaf plaintiff did not have standing to seek injunctive relief against a hospital, that failed to provide effective communication to plaintiff, who arrived in emergency room because of husband's fatal cardiac arrest.",,E-FCFCU-EXH-0000-0010,,Denial of effective communication during a medical emergency (husband's cardiac arrest).,Alleged,Medium,LEGACY_ID:V-102
+
+> V-FCFCU-0000-0011,Not in source,,City and County of Denver (Law Enforcement),,Statutory,Section 504 Breach / Failure to Provide Interpreter,Section 504 of the Rehabilitation Act of 1973,Plaintiff Sarah Burke was Deaf mother ... police showed up to enforce the warrant. Ms. Burke asked for a sign language interpreter. ... the police refused and asked her 8-year-old child to interpret. They then arrested Ms. Burke ... One of the things she was trying to communicate was that she needed medication for diabetes,,E-FCFCU-EXH-0000-0011,,Arrested without communication; forced to use 8-year-old child to interpret; unable to communicate medical need (diabetes).,Alleged,Medium,LEGACY_ID:V-103
+
+> V-FCFCU-2016-0002,July 2016,,AMP Residential,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act (42 U.S.C. & 3601 et seq.),The groups allege that AMP has engaged in systemic discrimination against families with children across 20 properties evaluated in three states.,,E-FCFCU-EXH-2016-0002,,Systemic discrimination against families with children across 20 properties.,Alleged,Medium,LEGACY_ID:V-104
+
+> V-FCFCU-2016-0003,April 2016,,Anderson Housing Authority,,Statutory,"Fair Housing Act breach (Race, Gender, Disability); State housing law violation",Federal Fair Housing Act; state housing laws,"The complaint alleges that the defendant discriminated in its ownership and management of its multifamily public housing dwellings on the basis of race, gender, and disability in violation of the federal Fair Housing Act and for its failure to maintain its dwellings in a decent, safe, and sanitary condition in violation of state housing laws.",,E-FCFCU-EXH-2016-0003,,Female tenants subjected to degrading comments; disability accommodations ignored; failure to maintain dwellings in safe condition.,Alleged,Medium,LEGACY_ID:V-105
+
+> V-FCFCU-2012-0002,October 2012 - June 2018,,"Bank of America / Safeguard Properties Management, LLC",,Statutory,"Fair Housing Act breach (Race, National Origin); Discriminatory maintenance",Federal Fair Housing Act,"The lawsuit alleges Defendants intentionally failed to provide routine exterior maintenance and marketing at Bank of America-owned homes in working- and middle-class African American and Latino neighborhoods in 37 metropolitan areas, while they consistently maintained similar bank-owned homes in comparable white neighborhoods.",,E-FCFCU-EXH-2012-0002,,Intentional failure to provide routine exterior maintenance and marketing at bank-owned homes in African American and Latino neighborhoods compared to white neighborhoods.,Alleged,Medium,LEGACY_ID:V-106
+
+> V-FCFCU-2024-0001,September 2024,,Barrington Group,,Statutory,Fair Housing Act breach (Race); Arbitrary criminal history policies,Federal Fair Housing Act,alleging discrimination due to race and color which alleged discriminatory practices against Black renters through arbitrary criminal history policies.,,E-FCFCU-EXH-2024-0001,,Discriminatory practices against Black renters through arbitrary criminal history policies.,Alleged,Medium,LEGACY_ID:V-107
+
+> V-FCFCU-2014-0002,July 2014,,Brookfield Farms Homeowners Association,,Statutory,Fair Housing Act breach (Disability); Restrictive Covenant,Federal Fair Housing Act,This case challenges a restrictive covenant binding all homeowners in a subdivision that restricted housing to single families that deterred a group home for three unrelated adults from opening in the subdivision.,,E-FCFCU-EXH-2014-0002,,Restrictive covenant deterred a group home for three unrelated adults with disabilities from opening.,Alleged,Medium,LEGACY_ID:V-108
+
+> V-FCFCU-2012-0003,December 2012,,Buckingham Realty and Development Corp.,,Statutory,Fair Housing Act breach (Disability); Design and Construction accessibility,Federal Fair Housing Act,alleging discrimination against persons with disabilities in the design and construction of multi-family properties.,,E-FCFCU-EXH-2012-0003,,Lack of housing accessibility in multi-family properties for persons with disabilities.,Alleged,Medium,LEGACY_ID:V-109
+
+> V-FCFCU-2016-0004,February 2016,,"Capitol Station / United Church Homes, Inc.",,Statutory,Fair Housing Act breach (Disability); Failure to repair,Federal Fair Housing Act,The complaint alleges that the defendants did not take timely action to repair the only elevator in an apartment building which housed residents age 62 years or older... Capitol Station was without a working elevator for five and a half weeks in August and September 2015 resulting in harm to residents with disabilities.,,E-FCFCU-EXH-2016-0004,,Residents with mobility issues trapped or endangered for five and a half weeks due to broken elevator.,Alleged,Medium,LEGACY_ID:V-110
+
+> V-FCFCU-2018-0002,April 2018,,Casas Baratas Aqui / Marshall Welton / SLB Investments,,Statutory,"Fair Housing Act breach (Race, Color, National Origin); ECOA; TILA; Indiana state law violations",Federal Fair Housing Act; Equal Credit Opportunity Act; Truth in Lending Act; Indiana Home Loan Practices Act,"The complaint alleges that the Defendants violated civil rights and consumer protection laws, including the federal Fair Housing Act, the federal Equal Credit Opportunity Act, the Truth in Lending Act, and several Indiana state laws.",,E-FCFCU-EXH-2018-0002,,"Discriminatory and predatory rent-to-own schemes involving nearly 1,000 houses.",Alleged,Medium,LEGACY_ID:V-111
+
+> V-FCFCU-2021-0001,March 2021,,CityWide Home Loans / Pierce Appraisal / Freedom Mortgage,,Statutory,"Fair Housing Act breach (Race, Color); Appraisal Bias",Federal Fair Housing Act,Ms. Duffy and the FHCCI allege in the HUD complaints that the Respondents have violated fair housing laws by allowing race and color to impact their appraisals and/or lending practices.,,E-FCFCU-EXH-2021-0001,,Black homeowner received significantly lower home appraisal until Black identifiers were removed and a white friend stood in.,Alleged,Medium,LEGACY_ID:V-112
+
+> V-FCFCU-2021-0002,March 2021,,Coolspring Estates / LaPorte Lake Properties,,Statutory,Fair Housing Act breach (Familial status),Federal Fair Housing Act,alleging violations of fair housing and other laws against families with children.,,E-FCFCU-EXH-2021-0002,,Discrimination against families with children.,Alleged,Medium,LEGACY_ID:V-113
+
+> V-FCFCU-2015-0004,May 2015 - December 2016,,Fannie Mae,,Statutory,"Fair Housing Act breach (Race, National Origin); Discriminatory maintenance",Federal Fair Housing Act,The lawsuit alleges that Fannie Mae purposely fails to maintain its foreclosures... in middle- and working-class African American and Latino neighborhoods to the same level of quality it does for foreclosures it owns in white middle- and working-class neighborhoods.,,E-FCFCU-EXH-2015-0004,,Neglect of foreclosed properties in communities of color contributing to blight compared to white neighborhoods.,Alleged,Medium,LEGACY_ID:V-114
+
+> V-FCFCU-2016-0005,February 2016,,Grandville Cooperative / Kirkpatrick Management Co. Inc.,,Statutory,"Fair Housing Act breach (Disability, Familial status)",Federal Fair Housing Act,The complaint alleges that the defendants refused to rent to a family that included a person with disabilities stating that ‘…it will be a liability to offer the person with a disability a unit that is not accommodating to everyone in the household.’,,E-FCFCU-EXH-2016-0005,,Refusal to rent to a family with a disabled member; claimed liability for non-accommodating units.,Alleged,Medium,LEGACY_ID:V-115
+
+> V-FCFCU-2020-0003,August 2020,,Henry Long (Landlord),,Statutory,Fair Housing Act breach (Gender); Sexual Harassment,Federal Fair Housing Act,"As part of the consent decree, Mr. Long will pay $45,900 in monetary relief to resolve the lawsuit which alleged he sexually harassed a female tenant.",,E-FCFCU-EXH-2020-0003,,Landlord solicited sex from female tenant after she lost her job and could not afford rent.,Alleged,Medium,LEGACY_ID:V-116
+
+> V-FCFCU-2021-0003,October 2021,,Old National Bank,,Statutory,Fair Housing Act breach (Race); Redlining,Federal Fair Housing Act,The FHCCI also alleges that Old National deliberately seeks to limit its residential lending business to predominantly White areas and customers and has removed branches in Black neighborhoods and sited branches in White neighborhoods – conduct which constitutes redlining.,,E-FCFCU-EXH-2021-0003,,Structured business to avoid providing mortgage credit to Black residents; removed branches in Black neighborhoods.,Alleged,Medium,LEGACY_ID:V-117
+
+> V-FCFCU-2018-0003,January 2018,,Marquette Management & Marquette Companies,,Statutory,Fair Housing Act breach (Familial status); Occupancy policies,Federal Fair Housing Act,alleging that Marquette Management Inc. discriminates on the basis of familial status in properties it manages in Illinois and Indiana by enforcing unduly restrictive occupancy policies.,,E-FCFCU-EXH-2018-0003,,Enforcement of unduly restrictive occupancy policies against families with children.,Alleged,Medium,LEGACY_ID:V-118
+
+> V-FCFCU-2019-0001,April 2019 - April 2020,,Twin Creeks Homeowners Association / Kirkpatrick Property Management / Vicki New,,Statutory,"Fair Housing Act breach (Race, National Origin); Hostile Housing Environment",Federal Fair Housing Act,"alleged a pattern and practice of harassing, taunting, and threatening African American and Latino residents, guests, and contractors and creating a racially hostile environment... Vicki New... engaged in a campaign of harassment based on race and national origin for more than two years.",,E-FCFCU-EXH-2019-0001,,"Campaign of harassment, taunting, and death threats against African American and Latino residents; failure of HOA to stop conduct.",Alleged,Medium,LEGACY_ID:V-119
+
+> V-FCFCU-2010-0003,2010 - 2011,,Dearborn Superior Court No. 1 / Dearborn Circuit Court / State of Indiana,,ADA,ADA,Americans with Disabilities Act (ADA); Section 504 of the Rehabilitation Act,"Mr. Prakel repeatedly requested that Indiana’s Dearborn Superior Court No. 1 and Dearborn Circuit Court provide sign language interpreter services so that he could understand the proceedings. On each occasion, the Defendants refused to provide an interpreter or any other auxiliary aids or services.",,E-FCFCU-EXH-2010-0003,,Deaf individual denied sign language interpreter services needed to understand court proceedings for his mother.,Alleged,Medium,LEGACY_ID:V-120
+
+> V-FCFCU-1977-0002,1977 - 1983,,"Elkhart County, Indiana / Indiana State Legislature",,Procedural,Procedural,Due Process Clause of the Fourteenth Amendment,The manner of notice provided to appellant did not meet the requirements of the Due Process Clause of the Fourteenth Amendment... constructive notice by publication must be supplemented by notice mailed to the mortgagee's last known available address.,,E-FCFCU-EXH-1977-0002,,"Mortgagee (Mennonite Board of Missions) lost property interest in tax sale without receiving actual notice, only constructive notice (publication).",Alleged,Medium,LEGACY_ID:V-121
+
+> V-FCFCU-2025-0054,"March 5, 2025 and April 15, 2025",,Marion County Sheriff / Financial Center First Credit Union (FCFCU),,Procedural,Due Process Failure / Defective Service,Indiana Trial Rule 4.1(B); 14th Amendment Due Process (Mennonite standard),"The Sheriff’s Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B).",,E-FCFCU-EXH-2025-0005,,Loss of personal jurisdiction; wrongful entry of default judgment leading to subsequent displacement.,Alleged,Medium,LEGACY_ID:V-122
+
+> V-FCFCU-2025-0055,"June 8, 2025 (and ongoing through December 2025)",,AES Indiana / Financial Center First Credit Union / Marion County Sheriff,,ADA,ADA,42 U.S.C. § 12181 (ADA Title III); ADA Title II,"No ADA inquiry or accommodation was provided by the Court, Plaintiff, or Sheriff before attempting service or executing the writ. Sheriff deputies did not modify service attempts to account for disability-related auditory and processing delays.",,E-FCFCU-EXH-2025-0006,,Inability to effectively communicate or respond to service attempts and billing; severe emotional distress and physical risk during removal.,Alleged,Medium,LEGACY_ID:V-123
+
+> V-FCFCU-2025-0056,"December 9, 2025",,Marion County Sheriff,,Procedural,Procedural,Procedural Due Process; IC § 32-30-10.5-8,No advance notice of a vacate date or removal date was provided to me. No notice was posted on the door or mailbox... I was not served with the writ prior to enforcement.,,E-FCFCU-EXH-2025-0007,,Forcible removal in freezing temperatures without time to gather essential belongings; humanitarian harm to Afghan ally.,Alleged,Medium,LEGACY_ID:V-124
+
+> V-FCFCU-2025-0057,August 2025 - December 2025,,Financial Center First Credit Union / Clerk of Marion County,,Statutory,Potential IC § 32-30-10-14 Violation (Surplus Mismanagement),IN Code § 32-30-10-14,"Confirmed surplus discrepancy between the $220,863.09 judgment and $240,464.20 sheriff sale satisfaction, triggering IC § 32-30-10-14 protections.",,E-FCFCU-EXH-2025-0008,,Discrepancy between judgment amount and sheriff sale satisfaction without documented surplus accounting to the defendant.,Alleged,Medium,LEGACY_ID:V-125
+
+> V-FCFCU-2025-0058,December 2025 (Post-removal),,Financial Center First Credit Union / Sheriff Personnel,,Tort,Conversion / Negligence,Tort law (Negligence/Conversion); 14th Amendment (Right to Property),"Pipes in the laundry room appear to have burst due to freezing temperatures... Refrigerator had been unplugged, resulting in food spoilage and visible mold contamination.",,E-FCFCU-EXH-2025-0009,,"Burst pipes, mold growth, destruction of personal property (mini-fridge), and spoilage of food.",Alleged,Medium,LEGACY_ID:V-126
+
+> V-FCFCU-2025-0059,"December 21, 2025 (Discovery)",,Financial Center First Credit Union,,Statutory,Spoliation of Evidence,Procedural Due Process; Evidence Preservation duties,"Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled.",,E-FCFCU-EXH-2025-0010,,Disabling of interior security cameras during a contested period of retrieval.,Alleged,Medium,LEGACY_ID:V-127
+
+> V-FCFCU-2025-0060,"March 5, 2025 and April 15, 2025",,Financial Center First Credit Union (FCFCU) / Marion County Sheriff's Office,,Procedural,Procedural,Indiana Trial Rule 4.1(B); Indiana Trial Rule 4.15(F),"The Sheriff's Returns dated March 5, 2025 and April 15, 2025 are defective and incomplete. No personal service occurred. No delivery to a person 16+ occurred. No mailing was performed or documented as required by Trial Rule 4.1(B).",,E-FCFCU-EXH-2025-0011,,Lack of personal jurisdiction; Court never acquired jurisdiction to enter judgment.,Alleged,Medium,LEGACY_ID:V-128
+
+> V-FCFCU-2025-0061,"January 2025 – May 28, 2025",,Financial Center First Credit Union (FCFCU),,Procedural,Due Process Failure / Notice Deficiency,U.S. Const. amend. XIV; Constitutional due process,"Defendant never received the summons, complaint, notice of foreclosure, or any written directive informing him of required dates or obligations. Nothing was ever handed to him or placed in a location reasonably calculated to notify him.",,E-FCFCU-EXH-2025-0012,,Deprivation of protected rights without meaningful opportunity to be heard; Default judgment entered without defendant's knowledge.,Alleged,Medium,LEGACY_ID:V-129
+
+> V-FCFCU-2025-0062,Pre-foreclosure through removal (2025),,Financial Center First Credit Union (FCFCU),,ADA,ADA,Americans with Disabilities Act (ADA); 42 U.S.C.  3601 et seq.,"FCFCU refused to accommodate these requests and insisted on phone-based communication, despite: Email being a standard and widely accepted method of business communication; My documented disability-related limitations with phone communication.",,E-FCFCU-EXH-2025-0013,,Impaired ability to access the courts; material interference with ability to process legal directives.,Alleged,Medium,LEGACY_ID:V-130
+
+> V-FCFCU-2025-0063,"May 28, 2025 (Judgment) – December 9, 2025 (Removal)",,Financial Center First Credit Union (FCFCU),,Statutory,Foreclosure,Fair Housing Act (42 U.S.C.  3604); IC 22-9.5,"FCFCU obtained a default judgment against me on May 28, 2025, without my knowledge or participation, and without providing reasonable accommodations for my disability-related needs.",,E-FCFCU-EXH-2025-0014,,Forced displacement in freezing weather; destruction of income base; loss of stable housing.,Alleged,Medium,LEGACY_ID:V-131
+
+> V-FCFCU-2025-0064,"December 9, 2025",,Marion County Sheriff's Office / FCFCU,,Procedural,Procedural,Indiana Code  32-30-10.5-8; Procedural Due Process,"Sheriff executed a forcible removal WITHOUT an eviction case. No summons, no hearing, no eviction order. Sheriff posted no 48-hour notice before removal.",,E-FCFCU-EXH-2025-0015,,Unlawful dispossession; emergency displacement; health and safety risks.,Alleged,Medium,LEGACY_ID:V-132
+
+> V-FCFCU-2025-0065,November 2025 (Writ Petition),,Financial Center First Credit Union (FCFCU),,Statutory,Fraud on the Court / Material Misrepresentation,Procedural Due Process; TR 60(B),Petition falsely alleged “Unknown Occupants”... Petition falsely alleged refusal to vacate... Defendant never received writ petition. Writ issued without notice.,,E-FCFCU-EXH-2025-0016,,Issuance of Writ of Assistance without proper legal foundation.,Alleged,Medium,LEGACY_ID:V-133
+
+> V-FCFCU-2025-0066,"December 21, 2025 (Discovery Date)",,Financial Center First Credit Union (FCFCU),,Statutory,Conversion / Property Interference,Negligence; Conversion; Procedural Due Process,"I discovered that a bedroom mini-fridge had been unplugged, resulting in mold contamination and total loss of the appliance... refrigerator had been unplugged, resulting in food spoilage... pipes in the laundry room had burst due to freezing temperatures.",,E-FCFCU-EXH-2025-0017,,Loss of personal property; food spoilage; mold contamination; burst pipes.,Alleged,Medium,LEGACY_ID:V-134
+
 > V-FCFCU-2025-0067,"December 21, 2025",,Financial Center First Credit Union (FCFCU) Agents,,Statutory,Evidence Spoliation,Procedural Due Process; Access to Justice,I discovered that all interior security cameras had been unplugged and rendered nonfunctional... The unplugging of security cameras constitutes interference with potential evidence and spoliation.,,E-FCFCU-EXH-2025-0018,,Material impairment of ability to document removal conduct.,Alleged,Medium,LEGACY_ID:V-135
 
 ### Assistant
@@ -1422,42 +1659,78 @@ canonical_ref: ""
 > If you want, I’ll give you a **deterministic filter rule** (based on actor + keywords + date ranges) that will split the CSV automatically without you manually touching 135 rows.
 
 ### User
-> lets go with your recommendation and this is what gemini said. Checked command status
-> Analyzed
-> evidence_index_master.csv#L1-88
-> Analyzed
-> seirotnevni_atad_06\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
-> Error during tool execution
-> MCP server not found:
-> c\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU\content\C_VIS\60_data_inventories
-> 1. Headers of 
-> evidence_index_master.csv
->  evidence_id,evidence_type,date,label,source_path,notes
-> 
-> 2. 5 Sample Rows
-> 
-> csv
-> E-FCFCU-EXH-2026-0001,EXH,2026-01-02,Source for V-FCFCU-2026-0001,"C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md",Auto-extracted from legacy inventory
-> E-FCFCU-EXH-0000-0005,EXH,Not in source,Source for V-FCFCU-0000-0005,8,Auto-extracted from legacy inventory
-> E-FCFCU-EXH-2025-0001,EXH,"May 28, 2025",Source for V-FCFCU-2025-0050,4,Auto-extracted from legacy inventory
-> E-FCFCU-EXH-2016-0001,EXH,"December 27, 2016",Source for V-FCFCU-2016-0001,2,Auto-extracted from legacy inventory
-> E-FCFCU-EXH-1972-0001,EXH,1972 (Fuentes),Source for V-FCFCU-1972-0001,5,Auto-extracted from legacy inventory
-> 3. Folder Path for “External Legal Research/Exhibits” I have split the external items into a dedicated CSV library file: 
-> content/C_VIS/60_data_inventories/legal_authority_library.csv
-> 
-> The corresponding markdown files (if they exist) currently reside within the 10_violations structure, bucketed by actor. For example, OTHER_PARTIES contains many of the external/FHA examples. I have not physically moved the markdown files yet, but I have logically separated them in the inventory.
-> 
-> Answer to your Question: YES, I understand you want the 
-> violations_inventory_master.csv
->  to represent CASE EVENTS ONLY.
-> 
-> I have already executed the "Surgical Cleanup Pass" based on this understanding:
-> 
-> Split the Inventory: Moving 32 rows (external case law, random FHA examples) out of the master and into 
-> legal_authority_library.csv
-> .
-> Swapped Fields: Fixed the violation_type vs legal_authority inversion where THEORY_ tokens were in the wrong place.
-> Sanity Check: Verified evidence mappings.
+> lets go with your recommendation and this is what gemini said. Checked command status
+
+> Analyzed
+
+> evidence_index_master.csv#L1-88
+
+> Analyzed
+
+> seirotnevni_atad_06\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
+
+> Error during tool execution
+
+> MCP server not found:
+
+> c\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU\content\C_VIS\60_data_inventories
+
+> 1. Headers of 
+
+> evidence_index_master.csv
+
+>  evidence_id,evidence_type,date,label,source_path,notes
+
+> 
+
+> 2. 5 Sample Rows
+
+> 
+
+> csv
+
+> E-FCFCU-EXH-2026-0001,EXH,2026-01-02,Source for V-FCFCU-2026-0001,"C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md",Auto-extracted from legacy inventory
+
+> E-FCFCU-EXH-0000-0005,EXH,Not in source,Source for V-FCFCU-0000-0005,8,Auto-extracted from legacy inventory
+
+> E-FCFCU-EXH-2025-0001,EXH,"May 28, 2025",Source for V-FCFCU-2025-0050,4,Auto-extracted from legacy inventory
+
+> E-FCFCU-EXH-2016-0001,EXH,"December 27, 2016",Source for V-FCFCU-2016-0001,2,Auto-extracted from legacy inventory
+
+> E-FCFCU-EXH-1972-0001,EXH,1972 (Fuentes),Source for V-FCFCU-1972-0001,5,Auto-extracted from legacy inventory
+
+> 3. Folder Path for “External Legal Research/Exhibits” I have split the external items into a dedicated CSV library file: 
+
+> content/C_VIS/60_data_inventories/legal_authority_library.csv
+
+> 
+
+> The corresponding markdown files (if they exist) currently reside within the 10_violations structure, bucketed by actor. For example, OTHER_PARTIES contains many of the external/FHA examples. I have not physically moved the markdown files yet, but I have logically separated them in the inventory.
+
+> 
+
+> Answer to your Question: YES, I understand you want the 
+
+> violations_inventory_master.csv
+
+>  to represent CASE EVENTS ONLY.
+
+> 
+
+> I have already executed the "Surgical Cleanup Pass" based on this understanding:
+
+> 
+
+> Split the Inventory: Moving 32 rows (external case law, random FHA examples) out of the master and into 
+
+> legal_authority_library.csv
+
+> .
+
+> Swapped Fields: Fixed the violation_type vs legal_authority inversion where THEORY_ tokens were in the wrong place.
+
+> Sanity Check: Verified evidence mappings.
+
 > Your master inventory is now focused on FCFCU/Case events (103 rows), and your external references are safely stored in the library (32 rows).
 
 ### Assistant
@@ -1576,41 +1849,76 @@ canonical_ref: ""
 > - and how to correct the evidence index without breaking links
 
 ### User
-> shoudl be the full path and we can extract related paths from that if needed no. yes, i am in my repo. i can run commans. Outputs
-> 1. 
-> violations_inventory_master.csv
->  (Top 5 rows)
-> 
-> csv
-> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
-> V-FCFCU-2026-0001,2026-01-02,,,Statutory,General,"Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations",,,E-FCFCU-EXH-2026-0001,,,Alleged,Medium,LEGACY_ID:V-001; SOURCE_FILE:C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md
-> V-FCFCU-2025-0001,,,Experian,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,Experian reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md
-> V-FCFCU-2025-0002,,,Equifax,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,Equifax reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md
-> V-FCFCU-2025-0003,,,TransUnion,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,TransUnion reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md
-> 2. 
-> evidence_index_master.csv
->  (Rows matching pattern ,numbers,) (Note: These are legacy "source path" numbers that were extracted during migration. They represent row numbers or references from the original source files, e.g., "extracted from row 2".)
-> 
-> csv
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:10:E-FCFCU-EXH-2020-0001,EXH,"August 10, 2020",Source for V-FCFCU-2020-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:11:E-FCFCU-EXH-2016-0001,EXH,"December 27, 2016",Source for V-FCFCU-2016-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:12:E-FCFCU-EXH-2000-0001,EXH,"November 9, 2000",Source for V-FCFCU-2000-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:13:E-FCFCU-EXH-2009-0002,EXH,2009 to 2013,Source for V-FCFCU-2009-0002,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:14:E-FCFCU-EXH-2003-0001,EXH,"November 5, 2003",Source for V-FCFCU-2003-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:15:E-FCFCU-EXH-2013-0001,EXH,"December 2, 2013",Source for V-FCFCU-2013-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:16:E-FCFCU-EXH-2010-0002,EXH,"April 20, 2010",Source for V-FCFCU-2010-0002,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:17:E-FCFCU-EXH-2013-0002,EXH,"June 24, 2013",Source for V-FCFCU-2013-0002,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:18:E-FCFCU-EXH-2015-0001,EXH,"September 30, 2015",Source for V-FCFCU-2015-0001,2,Auto-extracted from legacy inventory
-> content\C_VIS\60_data_inventories\evidence_index_master.csv:19:E-FCFCU-EXH-2011-0001,EXH,2011 to December 2017,Source for V-FCFCU-2011-0001,3,Auto-extracted from legacy inventory
-> 3. 
-> legal_authority_library.csv
->  (Top 5 rows)
-> 
-> csv
-> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
-> V-FCFCU-0000-0001,,,"Overlook Mutual Homes, Inc.",,Statutory,Fair Housing Act breach (reasonable accommodation failure),"Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq.","Legal dispute over the exclusion of emotional support animals from housing.",,E-FCFCU-EXH-0000-0001,,"emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009).",Alleged,Medium,LEGACY_ID:V-052
-> V-FCFCU-1985-0001,1985,,Public accommodations/Federal agencies,,Procedural,Procedural,"Section 504 of the Rehabilitation Act; ADA    36.204","Failure to rectify harms from actions that discriminate by effect/design.",,E-FCFCU-EXH-1985-0001,,"These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design.",Alleged,Medium,LEGACY_ID:V-053
-> V-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Failure to provide closed captioning and audio description in movie theaters.",,E-FCFCU-EXH-2010-0001,,"Recently, the United States Court of Appeals for the Ninth Circuit held that a chain of movie theaters to exhibit movies with closed captioning and video description... Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",Alleged,Medium,LEGACY_ID:V-054
+> shoudl be the full path and we can extract related paths from that if needed no. yes, i am in my repo. i can run commans. Outputs
+
+> 1. 
+
+> violations_inventory_master.csv
+
+>  (Top 5 rows)
+
+> 
+
+> csv
+
+> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
+
+> V-FCFCU-2026-0001,2026-01-02,,,Statutory,General,"Exhibit X — Inventory of Jurisdictional, Execution, and Civil Rights Violations",,,E-FCFCU-EXH-2026-0001,,,Alleged,Medium,LEGACY_ID:V-001; SOURCE_FILE:C_VIS\10_violations\EXH_Exhibit X — Inventory of Jurisdictional, Execut.md
+
+> V-FCFCU-2025-0001,,,Experian,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"Experian failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,Experian reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-002; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-011_experian-reinvestigation-failure.md
+
+> V-FCFCU-2025-0002,,,Equifax,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"Equifax failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,Equifax reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-003; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-012_equifax-reinvestigation-failure.md
+
+> V-FCFCU-2025-0003,,,TransUnion,,Statutory,THEORY_CRA_REINVESTIGATION_FAILURE,FCRA,"TransUnion failed to adequately reinvestigate a dispute, which may violate FCRA reinvestigation duties.",,E-FCFCU-EXH-2026-0001,THEORY_CRA_REINVESTIGATION_FAILURE,TransUnion reinvestigation failure / inadequate investigation (if occurs),Alleged,Medium,LEGACY_ID:V-004; SOURCE_FILE:C_VIS\10_violations\CREDIT_BUREAUS\NT_V-013_transunion-reinvestigation-failure.md
+
+> 2. 
+
+> evidence_index_master.csv
+
+>  (Rows matching pattern ,numbers,) (Note: These are legacy "source path" numbers that were extracted during migration. They represent row numbers or references from the original source files, e.g., "extracted from row 2".)
+
+> 
+
+> csv
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:10:E-FCFCU-EXH-2020-0001,EXH,"August 10, 2020",Source for V-FCFCU-2020-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:11:E-FCFCU-EXH-2016-0001,EXH,"December 27, 2016",Source for V-FCFCU-2016-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:12:E-FCFCU-EXH-2000-0001,EXH,"November 9, 2000",Source for V-FCFCU-2000-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:13:E-FCFCU-EXH-2009-0002,EXH,2009 to 2013,Source for V-FCFCU-2009-0002,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:14:E-FCFCU-EXH-2003-0001,EXH,"November 5, 2003",Source for V-FCFCU-2003-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:15:E-FCFCU-EXH-2013-0001,EXH,"December 2, 2013",Source for V-FCFCU-2013-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:16:E-FCFCU-EXH-2010-0002,EXH,"April 20, 2010",Source for V-FCFCU-2010-0002,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:17:E-FCFCU-EXH-2013-0002,EXH,"June 24, 2013",Source for V-FCFCU-2013-0002,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:18:E-FCFCU-EXH-2015-0001,EXH,"September 30, 2015",Source for V-FCFCU-2015-0001,2,Auto-extracted from legacy inventory
+
+> content\C_VIS\60_data_inventories\evidence_index_master.csv:19:E-FCFCU-EXH-2011-0001,EXH,2011 to December 2017,Source for V-FCFCU-2011-0001,3,Auto-extracted from legacy inventory
+
+> 3. 
+
+> legal_authority_library.csv
+
+>  (Top 5 rows)
+
+> 
+
+> csv
+
+> violation_id,violation_date,violation_date_end,actor,actor_role,violation_category,violation_type,legal_authority,description,procedural_context,evidence_ids,harm_category,impact_summary,status,confidence_level,notes
+
+> V-FCFCU-0000-0001,,,"Overlook Mutual Homes, Inc.",,Statutory,Fair Housing Act breach (reasonable accommodation failure),"Fair Housing Act (FHAct), 42 U.S.C. § 3601 et seq.","Legal dispute over the exclusion of emotional support animals from housing.",,E-FCFCU-EXH-0000-0001,,"emotional support animals that do not qualify as service animals under the Department’s title III regulations may nevertheless qualify as permitted reasonable accommodations for persons with disabilities under the FHAct and the ACAA. See, e.g., Overlook Mutual Homes, Inc. v. Spencer, 666 F. Supp. 2d 850 (S.D. Ohio 2009).",Alleged,Medium,LEGACY_ID:V-052
+
+> V-FCFCU-1985-0001,1985,,Public accommodations/Federal agencies,,Procedural,Procedural,"Section 504 of the Rehabilitation Act; ADA    36.204","Failure to rectify harms from actions that discriminate by effect/design.",,E-FCFCU-EXH-1985-0001,,"These statements would ring hollow if the resulting legislation could not rectify the harms resulting from action that discriminated by effect as well as by design.",Alleged,Medium,LEGACY_ID:V-053
+
+> V-FCFCU-2010-0001,2010,,"Harkins Amusement Enterprises, Inc.",,ADA,ADA,Americans with Disabilities Act (ADA) Title III; 42 U.S.C. 12181–12189,"Failure to provide closed captioning and audio description in movie theaters.",,E-FCFCU-EXH-2010-0001,,"Recently, the United States Court of Appeals for the Ninth Circuit held that a chain of movie theaters to exhibit movies with closed captioning and video description... Arizona ex rel. Goddard v. Harkins Amusement Enterprises, Inc., 603 F.3d 666 (9th Cir. 2010).",Alleged,Medium,LEGACY_ID:V-054
+
 > V-FCFCU-2004-0001,2004,,"Too, Inc.",,ADA,ADA,ADA Standards for Accessible Design; 28 CFR 36.308,"Physical/architectural barriers to entry for individuals with disabilities.",,E-FCFCU-EXH-2004-0001,,"Since enactment of the ADA, the Department has interpreted the 1991 Standards as a guide for determining the existence of barriers... See, e.g., Colorado Cross Disability Coalition v. Too, Inc., 344 F. Supp. 2d 707 (D. Colo. 2004)",Alleged,Medium,LEGACY_ID:V-055
 
 ### Assistant
@@ -2038,36 +2346,66 @@ canonical_ref: ""
 > Send Gemini’s output when ready.
 
 ### User
-> Here is the audit report of your VIS system.
-> 
-> SECTION A: Violations to Keep
-> Total Count: 262 (Most entries passed validation as discrete case events or specific allegations.)
-> 
-> SECTION B: Violations to Remove or Reclassify
-> V-FCFCU-2025-0016: Strategy/Task -> TASKS or REMOVE (Description: "Prepare a global demand...")
-> V-FCFCU-2025-0017: Strategy/Task -> TASKS or REMOVE (Description: "Send and document a litigation hold...")
-> V-FCFCU-2025-0021: Strategy/Task -> TASKS or REMOVE (Description: "Prepare and fact-check an internal public summary...")
-> V-FCFCU-2025-0041: Strategy/Task -> TASKS or REMOVE (Description: "Prepare and submit a CFPB complaint...")
-> V-FCFCU-2025-0042: Strategy/Task -> TASKS or REMOVE (Description: "Consider filing an Indiana AG complaint...")
-> V-FCFCU-2025-0043: Strategy/Task -> TASKS or REMOVE (Description: "Prepare an Indiana Civil Rights Commission complaint...")
-> V-FCFCU-2025-0044: Strategy/Task -> TASKS or REMOVE (Description: "Track and file a DOJ Civil Rights complaint...")
-> SECTION C: Evidence Index Issues
-> evidence_id	current_source_path	issue	action
-> E-FCFCU-EXH-2026-0001	C_VIS\10_violations\EXH_Exhibit X...	INVENTORY_AS_EVIDENCE	MISCLASSIFIED
-> (Note: Using an inventory list as "evidence" for a violation is circular. The evidence should be the underlying document (e.g., the Sheriff's Return), not the list summarizing it.)			
-> SECTION D: Authority Library Assessment
-> Current State: IDs use V-FCFCU-* prefix (e.g., V-FCFCU-0000-0001).
-> Found: 5 entries explicitly appearing to be citational authority (e.g., Case v. Case).
-> Recommendation: Rename all IDs in 
-> legal_authority_library.csv
->  to A-FCFCU-* schema to clearly distinguish them from factual violations.
-> SECTION E: Blocking Issues
-> Duplicates: None.
-> Broken Links: None.
-> Summary Recommendation:
-> 
-> Move the 7 "Strategy/Task" rows (B) out of the Master Inventory into a separate tasks_strategy.csv or deletion.
-> Rename the Authority IDs (D) to A-FCFCU-*.
+> Here is the audit report of your VIS system.
+
+> 
+
+> SECTION A: Violations to Keep
+
+> Total Count: 262 (Most entries passed validation as discrete case events or specific allegations.)
+
+> 
+
+> SECTION B: Violations to Remove or Reclassify
+
+> V-FCFCU-2025-0016: Strategy/Task -> TASKS or REMOVE (Description: "Prepare a global demand...")
+
+> V-FCFCU-2025-0017: Strategy/Task -> TASKS or REMOVE (Description: "Send and document a litigation hold...")
+
+> V-FCFCU-2025-0021: Strategy/Task -> TASKS or REMOVE (Description: "Prepare and fact-check an internal public summary...")
+
+> V-FCFCU-2025-0041: Strategy/Task -> TASKS or REMOVE (Description: "Prepare and submit a CFPB complaint...")
+
+> V-FCFCU-2025-0042: Strategy/Task -> TASKS or REMOVE (Description: "Consider filing an Indiana AG complaint...")
+
+> V-FCFCU-2025-0043: Strategy/Task -> TASKS or REMOVE (Description: "Prepare an Indiana Civil Rights Commission complaint...")
+
+> V-FCFCU-2025-0044: Strategy/Task -> TASKS or REMOVE (Description: "Track and file a DOJ Civil Rights complaint...")
+
+> SECTION C: Evidence Index Issues
+
+> evidence_id	current_source_path	issue	action
+
+> E-FCFCU-EXH-2026-0001	C_VIS\10_violations\EXH_Exhibit X...	INVENTORY_AS_EVIDENCE	MISCLASSIFIED
+
+> (Note: Using an inventory list as "evidence" for a violation is circular. The evidence should be the underlying document (e.g., the Sheriff's Return), not the list summarizing it.)			
+
+> SECTION D: Authority Library Assessment
+
+> Current State: IDs use V-FCFCU-* prefix (e.g., V-FCFCU-0000-0001).
+
+> Found: 5 entries explicitly appearing to be citational authority (e.g., Case v. Case).
+
+> Recommendation: Rename all IDs in 
+
+> legal_authority_library.csv
+
+>  to A-FCFCU-* schema to clearly distinguish them from factual violations.
+
+> SECTION E: Blocking Issues
+
+> Duplicates: None.
+
+> Broken Links: None.
+
+> Summary Recommendation:
+
+> 
+
+> Move the 7 "Strategy/Task" rows (B) out of the Master Inventory into a separate tasks_strategy.csv or deletion.
+
+> Rename the Authority IDs (D) to A-FCFCU-*.
+
 > Fix the Evidence Index (C). E-FCFCU-EXH-2026-0001 (Exhibit X) should be removed as "evidence" and replaced with specific documents (like DKT_SheriffReturn_March) where possible, or accepted as a "Summary Exhibit" but acknowledged as such.
 
 ### Assistant
@@ -2212,31 +2550,56 @@ canonical_ref: ""
 > If you paste Gemini’s “diff summaries” outputs after it runs, I’ll tell you immediately whether the inventory is now litigation-clean or still contaminated.
 
 ### User
-> I have successfully executed the requested changes.
-> 
-> 1) Diff Summary
-> violations_inventory_master.csv
-> :
-> Removed 7 rows (moved to tasks_strategy.csv).
-> Modified 1 row (removed E-FCFCU-EXH-2026-0001 from evidence_ids).
-> tasks_strategy.csv:
-> Created new file with 7 rows.
-> evidence_index_master.csv
-> :
-> Modified 1 row: E-FCFCU-EXH-2026-0001 is now Type IDX with label "Summary Inventory (Exhibit X) - NOT PRIMARY EVIDENCE".
-> legal_authority_library.csv
-> :
-> Modified 32 rows: IDs renamed from V-FCFCU-* to A-FCFCU-*.
-> 2) Tasks Preview (Top 5)
-> text
-> T-FCFCU-2026-0001 | Strategy | Prepare a global demand seeking tradeline deletion...
-> T-FCFCU-2026-0002 | Strategy | Send and document a litigation hold/preservation r...
-> T-FCFCU-2026-0003 | Strategy | Prepare and fact-check an internal public summary ...
-> T-FCFCU-2026-0004 | Strategy | Prepare and submit a CFPB complaint documenting cr...
-> T-FCFCU-2026-0005 | Strategy | Consider filing an Indiana AG complaint to highlig...
-> 3) Exhibit X References Cleaned
-> 1 violation had Exhibit X removed from its evidence list. (Most violations did not reference it directly, which is good).
-> 4) Authority IDs Renamed
+> I have successfully executed the requested changes.
+
+> 
+
+> 1) Diff Summary
+
+> violations_inventory_master.csv
+
+> :
+
+> Removed 7 rows (moved to tasks_strategy.csv).
+
+> Modified 1 row (removed E-FCFCU-EXH-2026-0001 from evidence_ids).
+
+> tasks_strategy.csv:
+
+> Created new file with 7 rows.
+
+> evidence_index_master.csv
+
+> :
+
+> Modified 1 row: E-FCFCU-EXH-2026-0001 is now Type IDX with label "Summary Inventory (Exhibit X) - NOT PRIMARY EVIDENCE".
+
+> legal_authority_library.csv
+
+> :
+
+> Modified 32 rows: IDs renamed from V-FCFCU-* to A-FCFCU-*.
+
+> 2) Tasks Preview (Top 5)
+
+> text
+
+> T-FCFCU-2026-0001 | Strategy | Prepare a global demand seeking tradeline deletion...
+
+> T-FCFCU-2026-0002 | Strategy | Send and document a litigation hold/preservation r...
+
+> T-FCFCU-2026-0003 | Strategy | Prepare and fact-check an internal public summary ...
+
+> T-FCFCU-2026-0004 | Strategy | Prepare and submit a CFPB complaint documenting cr...
+
+> T-FCFCU-2026-0005 | Strategy | Consider filing an Indiana AG complaint to highlig...
+
+> 3) Exhibit X References Cleaned
+
+> 1 violation had Exhibit X removed from its evidence list. (Most violations did not reference it directly, which is good).
+
+> 4) Authority IDs Renamed
+
 > 32 authorities were renamed to the A-FCFCU-* schema.
 
 ### Assistant
@@ -2482,139 +2845,272 @@ canonical_ref: ""
 > - a **14-day sprint** tied to your VIS IDs.
 
 ### User
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git status
-> On branch main
-> Your branch is up to date with 'origin/main'.
-> 
-> Changes not staged for commit:
->   (use "git add/rm <file>..." to update what will be committed)
->   (use "git restore <file>..." to discard changes in working directory)
->         modified:   content/.obsidian/graph.json
->         modified:   content/.obsidian/workspace.json
->         deleted:    content/000_MASTER_INDEX.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_10_motions.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_stay_of_writ.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_to_vacate_void_judgment.md
->         modified:   content/0_ADMIN/70_templates/10_motions/_10_motions.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/NT_TEMPLATE_Gender_Identity_Clarification.md
->         deleted:    content/0_ADMIN/70_templates/20_declarations/PL_20_declarations.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Community_Service_Affidavit.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Declarations.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_affidavit_not_served.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_updated_affidavit_language.md
->         deleted:    "content/C_VIS/10_violations/EXH_Exhibit X \342\200\224 Inventory of Jurisdictional, Execut.md"
->         deleted:    content/C_VIS/60_data_inventories/NT_Violation_Index.md
->         deleted:    content/C_VIS/60_data_inventories/NT_foreclosure-and-housing-litigation-case-record.csv
->         deleted:    content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
->         deleted:    content/C_VIS/60_data_inventories/_60_data_inventories.md
->         modified:   content/C_VIS/_C_VIS.md
->         deleted:    content/Case_Data.base
->         modified:   content/_content.md
->         deleted:    content/long_paths_report.txt
-> 
-> Untracked files:
->   (use "git add <file>..." to include in what will be committed)       
->         .trash/2026-01-18/
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_stay_of_writ.md
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_supplemental_ongoing_harm.md
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_vacate_void_judgment.md
->         content/C_VIS/10_violations/COUNSEL/
->         content/C_VIS/10_violations/COURT/
->         content/C_VIS/10_violations/CREDIT_BUREAUS/
->         content/C_VIS/10_violations/FCFCU/
->         content/C_VIS/10_violations/OTHER_PARTIES/
->         content/C_VIS/10_violations/REGULATORS/
->         content/C_VIS/10_violations/SHERIFF/
->         content/C_VIS/10_violations/UTILITIES/
->         content/C_VIS/10_violations/UTILITIES_HOA_CITY/
->         content/C_VIS/60_data_inventories/evidence_index_master.csv    
->         content/C_VIS/60_data_inventories/financial_transactions_damages.csv
->         content/C_VIS/60_data_inventories/legal_authority_library.csv  
->         content/C_VIS/60_data_inventories/tasks_strategy.csv
->         content/C_VIS/60_data_inventories/violations_inventory_master.csv
->         scripts/maintenance/audit_vis_state.py
->         scripts/maintenance/check_exhibit_x.py
->         scripts/maintenance/fix_vis_data.py
->         scripts/maintenance/import_exhibit_x.py
->         scripts/maintenance/migrate_vis_csvs.py
->         scripts/maintenance/vis_migration_full.py
->         scripts/maintenance/vis_surgical_cleanup.py
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")      
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git add content/C_VIS/60_data_inventories/violations_inventory_master.csv \
-> fatal: \: '\' is outside repository at 'C:/QiOS_Local_Only/QiRepos/cases/CASE_FCFCU'
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/tasks_strategy.csv \
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/evidence_index_master.csv \
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/legal_authority_library.csv
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> 
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git commit -m "VIS: separate case events, evidence, authority, and strategy
-> >> - Move strategy/task items to tasks_strategy.csv
-> >> - Reclassify Exhibit X as IDX summary (not primary evidence)        
-> >> - Rename authority IDs to A-FCFCU-* in legal_authority_library
-> >> - Remove circular Exhibit X evidence reference from master inventory"
-> On branch main
-> Your branch is up to date with 'origin/main'.
-> 
-> Changes not staged for commit:
->   (use "git add/rm <file>..." to update what will be committed)        
->   (use "git restore <file>..." to discard changes in working directory)
->         modified:   content/.obsidian/graph.json
->         modified:   content/.obsidian/workspace.json
->         deleted:    content/000_MASTER_INDEX.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_10_motions.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_stay_of_writ.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
->         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_to_vacate_void_judgment.md
->         modified:   content/0_ADMIN/70_templates/10_motions/_10_motions.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/NT_TEMPLATE_Gender_Identity_Clarification.md
->         deleted:    content/0_ADMIN/70_templates/20_declarations/PL_20_declarations.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Community_Service_Affidavit.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Declarations.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_affidavit_not_served.md
->         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_updated_affidavit_language.md
->         deleted:    "content/C_VIS/10_violations/EXH_Exhibit X \342\200\224 Inventory of Jurisdictional, Execut.md"
->         deleted:    content/C_VIS/60_data_inventories/NT_Violation_Index.md
->         deleted:    content/C_VIS/60_data_inventories/NT_foreclosure-and-housing-litigation-case-record.csv
->         deleted:    content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
->         deleted:    content/C_VIS/60_data_inventories/_60_data_inventories.md
->         modified:   content/C_VIS/_C_VIS.md
->         deleted:    content/Case_Data.base
->         modified:   content/_content.md
->         deleted:    content/long_paths_report.txt
-> 
-> Untracked files:
->   (use "git add <file>..." to include in what will be committed)       
->         .trash/2026-01-18/
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_stay_of_writ.md
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_supplemental_ongoing_harm.md
->         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_vacate_void_judgment.md
->         content/C_VIS/10_violations/COUNSEL/
->         content/C_VIS/10_violations/COURT/
->         content/C_VIS/10_violations/CREDIT_BUREAUS/
->         content/C_VIS/10_violations/FCFCU/
->         content/C_VIS/10_violations/OTHER_PARTIES/
->         content/C_VIS/10_violations/REGULATORS/
->         content/C_VIS/10_violations/SHERIFF/
->         content/C_VIS/10_violations/UTILITIES/
->         content/C_VIS/10_violations/UTILITIES_HOA_CITY/
->         content/C_VIS/60_data_inventories/evidence_index_master.csv    
->         content/C_VIS/60_data_inventories/financial_transactions_damages.csv
->         content/C_VIS/60_data_inventories/legal_authority_library.csv  
->         content/C_VIS/60_data_inventories/tasks_strategy.csv
->         content/C_VIS/60_data_inventories/violations_inventory_master.csv
->         scripts/maintenance/audit_vis_state.py
->         scripts/maintenance/check_exhibit_x.py
->         scripts/maintenance/fix_vis_data.py
->         scripts/maintenance/import_exhibit_x.py
->         scripts/maintenance/migrate_vis_csvs.py
->         scripts/maintenance/vis_migration_full.py
->         scripts/maintenance/vis_surgical_cleanup.py
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")      
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> 
-> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git push
-> Everything up-to-date
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git status
+
+> On branch main
+
+> Your branch is up to date with 'origin/main'.
+
+> 
+
+> Changes not staged for commit:
+
+>   (use "git add/rm <file>..." to update what will be committed)
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+>         modified:   content/.obsidian/graph.json
+
+>         modified:   content/.obsidian/workspace.json
+
+>         deleted:    content/000_MASTER_INDEX.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_10_motions.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_stay_of_writ.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_to_vacate_void_judgment.md
+
+>         modified:   content/0_ADMIN/70_templates/10_motions/_10_motions.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/NT_TEMPLATE_Gender_Identity_Clarification.md
+
+>         deleted:    content/0_ADMIN/70_templates/20_declarations/PL_20_declarations.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Community_Service_Affidavit.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Declarations.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_affidavit_not_served.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_updated_affidavit_language.md
+
+>         deleted:    "content/C_VIS/10_violations/EXH_Exhibit X \342\200\224 Inventory of Jurisdictional, Execut.md"
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_Violation_Index.md
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_foreclosure-and-housing-litigation-case-record.csv
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
+
+>         deleted:    content/C_VIS/60_data_inventories/_60_data_inventories.md
+
+>         modified:   content/C_VIS/_C_VIS.md
+
+>         deleted:    content/Case_Data.base
+
+>         modified:   content/_content.md
+
+>         deleted:    content/long_paths_report.txt
+
+> 
+
+> Untracked files:
+
+>   (use "git add <file>..." to include in what will be committed)       
+
+>         .trash/2026-01-18/
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_stay_of_writ.md
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_supplemental_ongoing_harm.md
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_vacate_void_judgment.md
+
+>         content/C_VIS/10_violations/COUNSEL/
+
+>         content/C_VIS/10_violations/COURT/
+
+>         content/C_VIS/10_violations/CREDIT_BUREAUS/
+
+>         content/C_VIS/10_violations/FCFCU/
+
+>         content/C_VIS/10_violations/OTHER_PARTIES/
+
+>         content/C_VIS/10_violations/REGULATORS/
+
+>         content/C_VIS/10_violations/SHERIFF/
+
+>         content/C_VIS/10_violations/UTILITIES/
+
+>         content/C_VIS/10_violations/UTILITIES_HOA_CITY/
+
+>         content/C_VIS/60_data_inventories/evidence_index_master.csv    
+
+>         content/C_VIS/60_data_inventories/financial_transactions_damages.csv
+
+>         content/C_VIS/60_data_inventories/legal_authority_library.csv  
+
+>         content/C_VIS/60_data_inventories/tasks_strategy.csv
+
+>         content/C_VIS/60_data_inventories/violations_inventory_master.csv
+
+>         scripts/maintenance/audit_vis_state.py
+
+>         scripts/maintenance/check_exhibit_x.py
+
+>         scripts/maintenance/fix_vis_data.py
+
+>         scripts/maintenance/import_exhibit_x.py
+
+>         scripts/maintenance/migrate_vis_csvs.py
+
+>         scripts/maintenance/vis_migration_full.py
+
+>         scripts/maintenance/vis_surgical_cleanup.py
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")      
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git add content/C_VIS/60_data_inventories/violations_inventory_master.csv \
+
+> fatal: \: '\' is outside repository at 'C:/QiOS_Local_Only/QiRepos/cases/CASE_FCFCU'
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/tasks_strategy.csv \
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/evidence_index_master.csv \
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>         content/C_VIS/60_data_inventories/legal_authority_library.csv
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> 
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git commit -m "VIS: separate case events, evidence, authority, and strategy
+
+> >> - Move strategy/task items to tasks_strategy.csv
+
+> >> - Reclassify Exhibit X as IDX summary (not primary evidence)        
+
+> >> - Rename authority IDs to A-FCFCU-* in legal_authority_library
+
+> >> - Remove circular Exhibit X evidence reference from master inventory"
+
+> On branch main
+
+> Your branch is up to date with 'origin/main'.
+
+> 
+
+> Changes not staged for commit:
+
+>   (use "git add/rm <file>..." to update what will be committed)        
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+>         modified:   content/.obsidian/graph.json
+
+>         modified:   content/.obsidian/workspace.json
+
+>         deleted:    content/000_MASTER_INDEX.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_10_motions.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_stay_of_writ.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_emergency_supplemental_motion_ongoing_ha.md
+
+>         deleted:    content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_motion_to_vacate_void_judgment.md
+
+>         modified:   content/0_ADMIN/70_templates/10_motions/_10_motions.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/NT_TEMPLATE_Gender_Identity_Clarification.md
+
+>         deleted:    content/0_ADMIN/70_templates/20_declarations/PL_20_declarations.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Community_Service_Affidavit.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_Declarations.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_affidavit_not_served.md
+
+>         modified:   content/0_ADMIN/70_templates/20_declarations/PL_TEMPLATE_updated_affidavit_language.md
+
+>         deleted:    "content/C_VIS/10_violations/EXH_Exhibit X \342\200\224 Inventory of Jurisdictional, Execut.md"
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_Violation_Index.md
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_foreclosure-and-housing-litigation-case-record.csv
+
+>         deleted:    content/C_VIS/60_data_inventories/NT_inventory-of-civil-and-fair-housing-rights-vio.csv
+
+>         deleted:    content/C_VIS/60_data_inventories/_60_data_inventories.md
+
+>         modified:   content/C_VIS/_C_VIS.md
+
+>         deleted:    content/Case_Data.base
+
+>         modified:   content/_content.md
+
+>         deleted:    content/long_paths_report.txt
+
+> 
+
+> Untracked files:
+
+>   (use "git add <file>..." to include in what will be committed)       
+
+>         .trash/2026-01-18/
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_stay_of_writ.md
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_emergency_supplemental_ongoing_harm.md
+
+>         content/0_ADMIN/70_templates/10_motions/MO_TEMPLATE_vacate_void_judgment.md
+
+>         content/C_VIS/10_violations/COUNSEL/
+
+>         content/C_VIS/10_violations/COURT/
+
+>         content/C_VIS/10_violations/CREDIT_BUREAUS/
+
+>         content/C_VIS/10_violations/FCFCU/
+
+>         content/C_VIS/10_violations/OTHER_PARTIES/
+
+>         content/C_VIS/10_violations/REGULATORS/
+
+>         content/C_VIS/10_violations/SHERIFF/
+
+>         content/C_VIS/10_violations/UTILITIES/
+
+>         content/C_VIS/10_violations/UTILITIES_HOA_CITY/
+
+>         content/C_VIS/60_data_inventories/evidence_index_master.csv    
+
+>         content/C_VIS/60_data_inventories/financial_transactions_damages.csv
+
+>         content/C_VIS/60_data_inventories/legal_authority_library.csv  
+
+>         content/C_VIS/60_data_inventories/tasks_strategy.csv
+
+>         content/C_VIS/60_data_inventories/violations_inventory_master.csv
+
+>         scripts/maintenance/audit_vis_state.py
+
+>         scripts/maintenance/check_exhibit_x.py
+
+>         scripts/maintenance/fix_vis_data.py
+
+>         scripts/maintenance/import_exhibit_x.py
+
+>         scripts/maintenance/migrate_vis_csvs.py
+
+>         scripts/maintenance/vis_migration_full.py
+
+>         scripts/maintenance/vis_surgical_cleanup.py
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")      
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> 
+
+> PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git push
+
+> Everything up-to-date
+
 > PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>
 
 ### Assistant
@@ -3498,134 +3994,262 @@ canonical_ref: ""
 > No fluff—just a clean, court-safe evidence ingestion appliance living inside `CASE_FCFCU`.
 
 ### User
-> Analyzed
-> snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
-> Analyzed
-> violations_inventory_master.csv#L1-258
-> Analyzed
-> evidence_index_master.csv#L1-88
-> Analyzed
-> legal_authority_library.csv#L1-34
-> Analyzed
-> tasks_strategy.csv#L1-9
-> Analyzed
-> financial_transactions_damages.csv#L1-2
-> 
-> Thought for 17s
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> Analyzed
-> UCFCF\snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
-> Analyzed
-> SUAERUB_TIDERC\snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
-> Analyzed
-> NT_V-005_failure-to-correct-inaccurate-furnishings.md#L1-31
-> Analyzed
-> NT_V-080_conversion-negligence-post-removal-damage.md#L1-41
-> Analyzed
-> NT_V-031_sheriff-return-inaccuracies.md#L1-24
-> 
-> Thought for 21s
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> 
-> CASE_FCFCU Litigation Status Report
-> Date: 2026-01-18 Analyst: Antigravity
-> 
-> A) CURRENT STATE SNAPSHOT
-> 1. Data Inventory Counts
-> 
-> Violations (V-FCFCU): 250 rows (approx)
-> Evidence (E-FCFCU): 88 rows
-> Authority (A-FCFCU): 34 rows (Clean)
-> Tasks (T-FCFCU): 8 rows
-> Damages Ledger: 0 rows (Critical Gap)
-> 2. Completeness Metrics
-> 
-> Evidence Coverage: High (~80%). Most violations link to at least one E-FCFCU item, primarily sourced from "Exhibit X".
-> Date Precision: Mixed. Many 2025 violations are well-dated. Legacy items (1980s-2000s) are distinct.
-> Actor Attribution: High. FCFCU, Sheriff, and Court are clearly segmented.
-> 3. Schema & Integrity Warnings (Blocking)
-> 
-> Ghost Files in CSV: The SOURCE_FILE column in 
-> violations_inventory_master.csv
->  points to paths like C_VIS\10_violations\FCFCU\NT_V-005... which do not exist.
-> Reality: The legacy file is in the root (10_violations/NT_V-005...) and the new file is in the folder with a new name (10_violations/FCFCU/NT_V-FCFCU-2025-0004...).
-> Risk: Scripts relying on SOURCE_FILE will fail.
-> Duplicate Content: You have both "New Standard" and "Old Legacy" markdown files co-existing, creating a "Dual World" of truth.
-> B) TOP 12 “HIGH LEVERAGE” CASE EVENTS
-> Focus: Void Judgment (Process) + FCRA (Damages) + ADA (Civil Rights)
-> 
-> Priority	Violation ID	Claim Summary	Evidence Status	Channel
-> 1	V-FCFCU-2025-0054	Void Judgment: No personal service; Return defective.	Have: E-FCFCU-EXH-2025-0011 (Returns) Need: Affidavit of non-service	Court (Motion to Vacate)
-> 2	V-FCFCU-2025-0056	Illegal Eviction: No 48hr Notice; No Eviction Order.	Have: E-FCFCU-EXH-2025-0007 Need: Witness statement	Court / Tort Claim
-> 3	V-FCFCU-2025-0059	Spoliation: Interior cameras unplugged during retrieval.	Have: E-FCFCU-EXH-2025-0010 Need: Metadata/Photos of cables	Litigation (Sanctions)
-> 4	V-FCFCU-2025-0001	FCRA: Experian Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
-> 5	V-FCFCU-2025-0002	FCRA: Equifax Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
-> 6	V-FCFCU-2025-0003	FCRA: TransUnion Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
-> 7	V-FCFCU-2025-0022	FCRA: FCFCU Misreporting (1st Mtg as Active).	Have: E-FCFCU-EXH-2025-0012 Need: Credit Report Excerpt	Furnisher Dispute
-> 8	V-FCFCU-2025-0055	ADA: Effective Communication Failure (Sheriff/Court).	Have: E-FCFCU-EXH-2025-0006 Need: Request Logs	DOJ / ICRC
-> 9	V-FCFCU-2025-0062	ADA: Reasonable Accommodation Denial (FCFCU Phone).	Have: E-FCFCU-EXH-2025-0013 Need: Email Chain	CFPB / ICRC
-> 10	V-FCFCU-2025-0057	Statutory: Surplus Discrepancy ($20k gap).	Have: E-FCFCU-EXH-2025-0008 Need: Audit Worksheet	Demand Letter
-> 11	V-FCFCU-2025-0058	Tort: Conversion (Fridge/Pipes).	Have: E-FCFCU-EXH-2025-0009 Need: Replacement Receipts	Demand Letter
-> 12	V-FCFCU-2025-0005	FCRA: Systemic Double Counting.	Need: Side-by-side Tradeline Comparison	CFPB
-> C) NEXT ACTIONS (Dependency Ordered)
-> order	Action	Owner	Input	Output	Est. Time
-> 1	Fix Inventory Links	Cody	
-> violations_inventory_master.csv
-> Correct SOURCE_FILE paths	15 min
-> 2	Purge Ghost Files	Cody	10_violations/ root	Remove legacy NT_V-005 etc.	5 min
-> 3	Populate Damages	Cody	
-> financial_transactions_damages.csv
-> Add estimates for Items 10 & 11	20 min
-> 4	Draft Preservation Letter	Cody	V-FCFCU-2025-0059	PDF Letter to Counsel	30 min
-> 5	Draft CRA Disputes	Cody	V-FCFCU-2025-0001 thru 003	3 Dispute Letters	45 min
-> 6	Draft Furnisher Dispute	Cody	V-FCFCU-2025-0004	1 Certified Letter to FCFCU	30 min
-> 7	Draft Surplus Demand	Cody	V-FCFCU-2025-0057	1 Demand Letter	30 min
-> 8	Compile Evidence PDF	Cody	Top 12 E- Items	E_BUNDLE_CORE.pdf	60 min
-> 9	Outline Motion to Vacate	Cody	V-FCFCU-2025-0054 + A-FCFCU-*	Motion Outline	45 min
-> 10	Draft CFPB Narrative	Cody	V-FCFCU-2025-0004 + 0062	2000-char text block	20 min
-> D) OUTBOUND LETTER + FILING QUEUE
-> TRACK 1: CREDIT (Pre-Litigation Setup)
-> CRA Dispute Letters (Round 1): Send immediately to Ex/Eq/TU.
-> Why: Triggers 30-day clock and "reasonable reinvestigation" duty.
-> Attach: E-FCFCU-EXH-2025-0012 (Proof of Defective Notice/Status).
-> Furnisher Direct Dispute (FCFCU): Send 5 days after CRA receipts.
-> Why: Triggers 1681s-2(b) liability. FCFCU cannot investigate if they don't know (officially).
-> Cite: V-FCFCU-2025-0022 (Active vs Foreclosure status).
-> TRACK 2: REGULATORS (Pressure)
-> CFPB Complaint: File 31 days after CRA letters sent (if no cure).
-> Focus: "Systemic Misreporting" (V-FCFCU-2025-0022) + "Double Counting" (V-0005).
-> ICRC / HUD Complaint: File immediately specific to ADA/FHA.
-> Focus: "Denial of Accommodation" (V-FCFCU-2025-0062) & "Illegal Eviction" (V-0056).
-> Evidence: E-FCFCU-EXH-2025-0013 (Phone refusal email).
-> TRACK 3: LITIGATION (The Hammer)
-> Preservation & Spoliation Notice: SEND TODAY.
-> Target: Opposing Counsel.
-> Cite: V-FCFCU-2025-0059 (Cameras). Demand lock on all video/access logs.
-> Motion to Vacate Void Judgment: Prepare now, file when E_BUNDLE_CORE is consolidated.
-> Argument: Judgment Void for process failure (V-FCFCU-2025-0054).
+> Analyzed
+
+> snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
+
+> Analyzed
+
+> violations_inventory_master.csv#L1-258
+
+> Analyzed
+
+> evidence_index_master.csv#L1-88
+
+> Analyzed
+
+> legal_authority_library.csv#L1-34
+
+> Analyzed
+
+> tasks_strategy.csv#L1-9
+
+> Analyzed
+
+> financial_transactions_damages.csv#L1-2
+
+> 
+
+> Thought for 17s
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> Analyzed
+
+> UCFCF\snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
+
+> Analyzed
+
+> SUAERUB_TIDERC\snoitaloiv_01\SIV_C\tnetnoc\UCFCF_ESAC\sesac\sopeRiQ\ylnO_lacoL_SOiQ\:c
+
+> Analyzed
+
+> NT_V-005_failure-to-correct-inaccurate-furnishings.md#L1-31
+
+> Analyzed
+
+> NT_V-080_conversion-negligence-post-removal-damage.md#L1-41
+
+> Analyzed
+
+> NT_V-031_sheriff-return-inaccuracies.md#L1-24
+
+> 
+
+> Thought for 21s
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> CASE_FCFCU Litigation Status Report
+
+> Date: 2026-01-18 Analyst: Antigravity
+
+> 
+
+> A) CURRENT STATE SNAPSHOT
+
+> 1. Data Inventory Counts
+
+> 
+
+> Violations (V-FCFCU): 250 rows (approx)
+
+> Evidence (E-FCFCU): 88 rows
+
+> Authority (A-FCFCU): 34 rows (Clean)
+
+> Tasks (T-FCFCU): 8 rows
+
+> Damages Ledger: 0 rows (Critical Gap)
+
+> 2. Completeness Metrics
+
+> 
+
+> Evidence Coverage: High (~80%). Most violations link to at least one E-FCFCU item, primarily sourced from "Exhibit X".
+
+> Date Precision: Mixed. Many 2025 violations are well-dated. Legacy items (1980s-2000s) are distinct.
+
+> Actor Attribution: High. FCFCU, Sheriff, and Court are clearly segmented.
+
+> 3. Schema & Integrity Warnings (Blocking)
+
+> 
+
+> Ghost Files in CSV: The SOURCE_FILE column in 
+
+> violations_inventory_master.csv
+
+>  points to paths like C_VIS\10_violations\FCFCU\NT_V-005... which do not exist.
+
+> Reality: The legacy file is in the root (10_violations/NT_V-005...) and the new file is in the folder with a new name (10_violations/FCFCU/NT_V-FCFCU-2025-0004...).
+
+> Risk: Scripts relying on SOURCE_FILE will fail.
+
+> Duplicate Content: You have both "New Standard" and "Old Legacy" markdown files co-existing, creating a "Dual World" of truth.
+
+> B) TOP 12 “HIGH LEVERAGE” CASE EVENTS
+
+> Focus: Void Judgment (Process) + FCRA (Damages) + ADA (Civil Rights)
+
+> 
+
+> Priority	Violation ID	Claim Summary	Evidence Status	Channel
+
+> 1	V-FCFCU-2025-0054	Void Judgment: No personal service; Return defective.	Have: E-FCFCU-EXH-2025-0011 (Returns) Need: Affidavit of non-service	Court (Motion to Vacate)
+
+> 2	V-FCFCU-2025-0056	Illegal Eviction: No 48hr Notice; No Eviction Order.	Have: E-FCFCU-EXH-2025-0007 Need: Witness statement	Court / Tort Claim
+
+> 3	V-FCFCU-2025-0059	Spoliation: Interior cameras unplugged during retrieval.	Have: E-FCFCU-EXH-2025-0010 Need: Metadata/Photos of cables	Litigation (Sanctions)
+
+> 4	V-FCFCU-2025-0001	FCRA: Experian Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
+
+> 5	V-FCFCU-2025-0002	FCRA: Equifax Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
+
+> 6	V-FCFCU-2025-0003	FCRA: TransUnion Failure to Reinvestigate.	Need: Dispute Letter + Results	CRA Dispute
+
+> 7	V-FCFCU-2025-0022	FCRA: FCFCU Misreporting (1st Mtg as Active).	Have: E-FCFCU-EXH-2025-0012 Need: Credit Report Excerpt	Furnisher Dispute
+
+> 8	V-FCFCU-2025-0055	ADA: Effective Communication Failure (Sheriff/Court).	Have: E-FCFCU-EXH-2025-0006 Need: Request Logs	DOJ / ICRC
+
+> 9	V-FCFCU-2025-0062	ADA: Reasonable Accommodation Denial (FCFCU Phone).	Have: E-FCFCU-EXH-2025-0013 Need: Email Chain	CFPB / ICRC
+
+> 10	V-FCFCU-2025-0057	Statutory: Surplus Discrepancy ($20k gap).	Have: E-FCFCU-EXH-2025-0008 Need: Audit Worksheet	Demand Letter
+
+> 11	V-FCFCU-2025-0058	Tort: Conversion (Fridge/Pipes).	Have: E-FCFCU-EXH-2025-0009 Need: Replacement Receipts	Demand Letter
+
+> 12	V-FCFCU-2025-0005	FCRA: Systemic Double Counting.	Need: Side-by-side Tradeline Comparison	CFPB
+
+> C) NEXT ACTIONS (Dependency Ordered)
+
+> order	Action	Owner	Input	Output	Est. Time
+
+> 1	Fix Inventory Links	Cody	
+
+> violations_inventory_master.csv
+
+> Correct SOURCE_FILE paths	15 min
+
+> 2	Purge Ghost Files	Cody	10_violations/ root	Remove legacy NT_V-005 etc.	5 min
+
+> 3	Populate Damages	Cody	
+
+> financial_transactions_damages.csv
+
+> Add estimates for Items 10 & 11	20 min
+
+> 4	Draft Preservation Letter	Cody	V-FCFCU-2025-0059	PDF Letter to Counsel	30 min
+
+> 5	Draft CRA Disputes	Cody	V-FCFCU-2025-0001 thru 003	3 Dispute Letters	45 min
+
+> 6	Draft Furnisher Dispute	Cody	V-FCFCU-2025-0004	1 Certified Letter to FCFCU	30 min
+
+> 7	Draft Surplus Demand	Cody	V-FCFCU-2025-0057	1 Demand Letter	30 min
+
+> 8	Compile Evidence PDF	Cody	Top 12 E- Items	E_BUNDLE_CORE.pdf	60 min
+
+> 9	Outline Motion to Vacate	Cody	V-FCFCU-2025-0054 + A-FCFCU-*	Motion Outline	45 min
+
+> 10	Draft CFPB Narrative	Cody	V-FCFCU-2025-0004 + 0062	2000-char text block	20 min
+
+> D) OUTBOUND LETTER + FILING QUEUE
+
+> TRACK 1: CREDIT (Pre-Litigation Setup)
+
+> CRA Dispute Letters (Round 1): Send immediately to Ex/Eq/TU.
+
+> Why: Triggers 30-day clock and "reasonable reinvestigation" duty.
+
+> Attach: E-FCFCU-EXH-2025-0012 (Proof of Defective Notice/Status).
+
+> Furnisher Direct Dispute (FCFCU): Send 5 days after CRA receipts.
+
+> Why: Triggers 1681s-2(b) liability. FCFCU cannot investigate if they don't know (officially).
+
+> Cite: V-FCFCU-2025-0022 (Active vs Foreclosure status).
+
+> TRACK 2: REGULATORS (Pressure)
+
+> CFPB Complaint: File 31 days after CRA letters sent (if no cure).
+
+> Focus: "Systemic Misreporting" (V-FCFCU-2025-0022) + "Double Counting" (V-0005).
+
+> ICRC / HUD Complaint: File immediately specific to ADA/FHA.
+
+> Focus: "Denial of Accommodation" (V-FCFCU-2025-0062) & "Illegal Eviction" (V-0056).
+
+> Evidence: E-FCFCU-EXH-2025-0013 (Phone refusal email).
+
+> TRACK 3: LITIGATION (The Hammer)
+
+> Preservation & Spoliation Notice: SEND TODAY.
+
+> Target: Opposing Counsel.
+
+> Cite: V-FCFCU-2025-0059 (Cameras). Demand lock on all video/access logs.
+
+> Motion to Vacate Void Judgment: Prepare now, file when E_BUNDLE_CORE is consolidated.
+
+> Argument: Judgment Void for process failure (V-FCFCU-2025-0054).
+
 > Effect: Unwinds the sale, kills the eviction authority, resets the board.
 
 ### Assistant
@@ -3789,11 +4413,16 @@ canonical_ref: ""
 > If you want, paste the first ~20 lines of your `violations_inventory_master.csv` including the `notes` column and any `SOURCE_FILE`/path fields, and I’ll tell you the exact column rename + transformation rules so you can fix it in one pass.
 
 ### User
-> nPS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git status
-> On branch main
-> Your branch is up to date with 'origin/main'.
-> 
-> nothing to commit, working tree clean
+> nPS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU> git status
+
+> On branch main
+
+> Your branch is up to date with 'origin/main'.
+
+> 
+
+> nothing to commit, working tree clean
+
 > PS C:\QiOS_Local_Only\QiRepos\cases\CASE_FCFCU>
 
 ### Assistant

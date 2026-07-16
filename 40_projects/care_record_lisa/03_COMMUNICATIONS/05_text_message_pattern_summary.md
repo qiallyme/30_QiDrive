@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 05 Text Message Pattern Summary
-slug: ""
+slug: 05-text-message-pattern-summary
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f0e9f5e63cd347d3aee5756de9773bb5
 canonical_ref: ""
 source_type: manual
 template_key: master-template

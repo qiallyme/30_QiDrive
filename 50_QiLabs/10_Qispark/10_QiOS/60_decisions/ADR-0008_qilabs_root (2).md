@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0008 Qilabs Root
-slug: ""
+slug: adr-0008-qilabs-root
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 187f7ec62bc14e72a5feaaaa5ade3fda
 canonical_ref: ""
 source_type: manual
 template_key: master-template

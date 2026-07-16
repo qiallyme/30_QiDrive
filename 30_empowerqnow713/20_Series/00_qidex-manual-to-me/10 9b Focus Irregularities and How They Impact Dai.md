@@ -1,3 +1,26 @@
+---
+layout: page
+title: 10 9b Focus Irregularities And How They Impact Dai
+slug: 10-9b-focus-irregularities-and-how-they-impact-dai
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 1ea9ce68b264420893e3e2fe75cb5836
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 10.9b | Focus Irregularities and How They Impact Daily Life
 
 <aside>

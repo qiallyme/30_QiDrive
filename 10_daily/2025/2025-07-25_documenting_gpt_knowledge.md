@@ -3,9 +3,9 @@ layout: page
 title: "Documenting GPT knowledge"
 slug: "documenting_gpt_knowledge"
 created_at: "2025-07-25 22:42:23"
-updated_at: "2025-07-25 22:42:23"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -760,7 +760,8 @@ canonical_ref: ""
 > Also — should I **simplify Types** (less than 20) or keep them granular like your screenshot?
 
 ### User
-> {'asset_pointer': 'file-service://file-6nibZBChQu4jFAouQKLi5k', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1035, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 322234, 'width': 1920}[media pointer="file-service://file-CvJPnQ3spcLNWQhRXyPCP1"]
+> {'asset_pointer': 'file-service://file-6nibZBChQu4jFAouQKLi5k', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 1035, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 322234, 'width': 1920}[media pointer="file-service://file-CvJPnQ3spcLNWQhRXyPCP1"]
+
 > Then we have qinote systems that breakdown the orbits into smaller more granular groups, then nodes entangled are the connected or backlinked nodes to that node, then we have type.
 
 ### Assistant
@@ -1231,7 +1232,8 @@ canonical_ref: ""
 > And should I **add extended properties** (like mood, location, people_involved) for deeper context in memories?
 
 ### User
-> can you update the names to make sure the folders are all lower case and end with a _ and the current level folder name is still spelled out for example P01shl_   (Self & Health)
+> can you update the names to make sure the folders are all lower case and end with a _ and the current level folder name is still spelled out for example P01shl_   (Self & Health)
+
 >   P01shl_jrn_   Journals should be p01shl_self-n-health -> p01shl_jrn_journals
 
 ### Assistant

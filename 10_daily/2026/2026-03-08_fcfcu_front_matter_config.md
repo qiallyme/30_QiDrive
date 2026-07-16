@@ -3,9 +3,9 @@ layout: page
 title: "FCFCU Front Matter Config"
 slug: "fcfcu_front_matter_config"
 created_at: "2026-03-08 20:07:57"
-updated_at: "2026-03-08 20:07:57"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -4466,557 +4466,1108 @@ canonical_ref: ""
 > If you want, I can show you that one next — it pairs extremely well with **card themes like Border**.
 
 ### User
-> here is the obsidian folder whtich file do you want to see to update. {
->   "name": ".obsidian",
->   "path": "g:\\My Drive\\QiVault\\30_projects\\CASES\\30.05.01_CASE_FCFCU\\content\\.obsidian",
->   "type": "directory",
->   "children": [
->     {
->       "name": "plugins",
->       "type": "folder",
->       "children": [
->         {
->           "name": "better_export_pdf",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "cmdr",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "dataview",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "export-to-html",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "folder_notes",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "markwhen",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "metadata-menu",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "note_uid_generator",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "notebook_navigator",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian-excalidraw-plugin",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian-linter",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian-mind-map",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian-style-settings",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian_enhancing_export",
->           "type": "folder",
->           "children": [
->             {
->               "name": "lua",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "citefilter.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markdown+hugo.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "markdown.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "math_block.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "newline_to_para.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "pdf.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "polyfill.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "shift_headings.lua",
->                   "type": "file"
->                 },
->                 {
->                   "name": "url.lua",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "textemplate",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "dissertation.tex",
->                   "type": "file"
->                 },
->                 {
->                   "name": "neurips.sty",
->                   "type": "file"
->                 },
->                 {
->                   "name": "neurips.tex",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian_html_plugin",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian_markmind",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian_ocr",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "obsidian_pandoc",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "omnisearch",
->           "type": "folder",
->           "children": [
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "templater-obsidian",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "styles.css",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "themes",
->       "type": "folder",
->       "children": [
->         {
->           "name": "Border",
->           "type": "folder",
->           "children": [
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "theme.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "Obsidianotion",
->           "type": "folder",
->           "children": [
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "theme.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "Oxygen",
->           "type": "folder",
->           "children": [
->             {
->               "name": "manifest.json",
->               "type": "file"
->             },
->             {
->               "name": "theme.css",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "app.json",
->       "type": "file"
->     },
->     {
->       "name": "appearance.json",
->       "type": "file"
->     },
->     {
->       "name": "backlink.json",
->       "type": "file"
->     },
->     {
->       "name": "community-plugins.json",
->       "type": "file"
->     },
->     {
->       "name": "community_plugins.json",
->       "type": "file"
->     },
->     {
->       "name": "core-plugins.json",
->       "type": "file"
->     },
->     {
->       "name": "core_plugins.json",
->       "type": "file"
->     },
->     {
->       "name": "graph.json",
->       "type": "file"
->     },
->     {
->       "name": "types.json",
->       "type": "file"
->     },
->     {
->       "name": "workspace.json",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-03-09T02:00:42.462Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> here is the obsidian folder whtich file do you want to see to update. {
+
+>   "name": ".obsidian",
+
+>   "path": "g:\\My Drive\\QiVault\\30_projects\\CASES\\30.05.01_CASE_FCFCU\\content\\.obsidian",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "plugins",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "better_export_pdf",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "cmdr",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "dataview",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "export-to-html",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "folder_notes",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "markwhen",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "metadata-menu",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "note_uid_generator",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "notebook_navigator",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian-excalidraw-plugin",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian-linter",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian-mind-map",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian-style-settings",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian_enhancing_export",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "lua",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "citefilter.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markdown+hugo.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "markdown.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "math_block.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "newline_to_para.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "pdf.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "polyfill.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "shift_headings.lua",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "url.lua",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "textemplate",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "dissertation.tex",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "neurips.sty",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "neurips.tex",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian_html_plugin",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian_markmind",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian_ocr",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "obsidian_pandoc",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "omnisearch",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "templater-obsidian",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "styles.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "themes",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "Border",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "theme.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "Obsidianotion",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "theme.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "Oxygen",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "manifest.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "theme.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "app.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "appearance.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "backlink.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "community-plugins.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "community_plugins.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "core-plugins.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "core_plugins.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "graph.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "types.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "workspace.json",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-03-09T02:00:42.462Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -5457,300 +6008,594 @@ canonical_ref: ""
 > You’d probably love that setup.
 
 ### User
-> there is no tdata json for datab view yet, and can you help me update the linter setting and create the tempaltes. {
->   "ruleConfigs": {
->     "add-blank-line-after-yaml": {
->       "enabled": false
->     },
->     "dedupe-yaml-array-values": {
->       "enabled": false,
->       "dedupe-alias-key": true,
->       "dedupe-tag-key": true,
->       "dedupe-array-keys": true,
->       "ignore-keys": ""
->     },
->     "escape-yaml-special-characters": {
->       "enabled": false,
->       "try-to-escape-single-line-arrays": false
->     },
->     "force-yaml-escape": {
->       "enabled": false,
->       "force-yaml-escape-keys": ""
->     },
->     "format-tags-in-yaml": {
->       "enabled": false
->     },
->     "format-yaml-array": {
->       "enabled": false,
->       "alias-key": true,
->       "tag-key": true,
->       "default-array-style": "single-line",
->       "default-array-keys": true,
->       "force-single-line-array-style": "",
->       "force-multi-line-array-style": ""
->     },
->     "insert-yaml-attributes": {
->       "enabled": false,
->       "text-to-insert": "aliases: \ntags: "
->     },
->     "move-tags-to-yaml": {
->       "enabled": false,
->       "how-to-handle-existing-tags": "Nothing",
->       "tags-to-ignore": ""
->     },
->     "remove-yaml-keys": {
->       "enabled": false,
->       "yaml-keys-to-remove": ""
->     },
->     "sort-yaml-array-values": {
->       "enabled": false,
->       "sort-alias-key": true,
->       "sort-tag-key": true,
->       "sort-array-keys": true,
->       "ignore-keys": "",
->       "sort-order": "Ascending Alphabetical"
->     },
->     "yaml-key-sort": {
->       "enabled": false,
->       "yaml-key-priority-sort-order": "",
->       "priority-keys-at-start-of-yaml": true,
->       "yaml-sort-order-for-other-keys": "None"
->     },
->     "yaml-timestamp": {
->       "enabled": false,
->       "date-created": true,
->       "date-created-key": "date created",
->       "date-created-source-of-truth": "file system",
->       "date-modified": true,
->       "date-modified-key": "date modified",
->       "date-modified-source-of-truth": "file system",
->       "format": "dddd, MMMM Do YYYY, h:mm:ss a",
->       "convert-to-utc": false,
->       "update-on-file-contents-updated": "never"
->     },
->     "yaml-title": {
->       "enabled": false,
->       "title-key": "title",
->       "mode": "first-h1-or-filename-if-h1-missing"
->     },
->     "yaml-title-alias": {
->       "enabled": false,
->       "preserve-existing-alias-section-style": true,
->       "keep-alias-that-matches-the-filename": false,
->       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
->       "alias-helper-key": "linter-yaml-title-alias"
->     },
->     "capitalize-headings": {
->       "enabled": false,
->       "style": "Title Case",
->       "ignore-case-words": true,
->       "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, I",
->       "lowercase-words": "a, an, the, aboard, about, abt., above, abreast, absent, across, after, against, along, aloft, alongside, amid, amidst, mid, midst, among, amongst, anti, apropos, around, round, as, aslant, astride, at, atop, ontop, bar, barring, before, B4, behind, below, beneath, neath, beside, besides, between, 'tween, beyond, but, by, chez, circa, c., ca., come, concerning, contra, counting, cum, despite, spite, down, during, effective, ere, except, excepting, excluding, failing, following, for, from, in, including, inside, into, less, like, minus, modulo, mod, near, nearer, nearest, next, notwithstanding, of, o', off, offshore, on, onto, opposite, out, outside, over, o'er, pace, past, pending, per, plus, post, pre, pro, qua, re, regarding, respecting, sans, save, saving, short, since, sub, than, through, thru, throughout, thruout, till, times, to, t', touching, toward, towards, under, underneath, unlike, until, unto, up, upon, versus, vs., v., via, vice, vis-à-vis, wanting, with, w/, w., c̄, within, w/i, without, 'thout, w/o, abroad, adrift, aft, afterward, afterwards, ahead, apart, ashore, aside, away, back, backward, backwards, beforehand, downhill, downstage, downstairs, downstream, downward, downwards, downwind, east, eastward, eastwards, forth, forward, forwards, heavenward, heavenwards, hence, henceforth, here, hereby, herein, hereof, hereto, herewith, home, homeward, homewards, indoors, inward, inwards, leftward, leftwards, north, northeast, northward, northwards, northwest, now, onward, onwards, outdoors, outward, outwards, overboard, overhead, overland, overseas, rightward, rightwards, seaward, seawards, skywards, skyward, south, southeast, southwards, southward, southwest, then, thence, thenceforth, there, thereby, therein, thereof, thereto, therewith, together, underfoot, underground, uphill, upstage, upstairs, upstream, upward, upwards, upwind, west, westward, westwards, when, whence, where, whereby, wherein, whereto, wherewith, although, because, considering, given, granted, if, lest, once, provided, providing, seeing, so, supposing, though, unless, whenever, whereas, wherever, while, whilst, ago, inasmuch, even, whether, whose, whoever, why, how, whatever, what, both, and, or, either, neither, nor, just, rather, such, that, yet, is, it"
->     },
->     "file-name-heading": {
->       "enabled": false
->     },
->     "header-increment": {
->       "enabled": false,
->       "start-at-h2": false
->     },
->     "headings-start-line": {
->       "enabled": false
->     },
->     "remove-trailing-punctuation-in-heading": {
->       "enabled": false,
->       "punctuation-to-remove": ".,;:!。，；：！"
->     },
->     "footnote-after-punctuation": {
->       "enabled": false
->     },
->     "move-footnotes-to-the-bottom": {
->       "enabled": false,
->       "include-blank-line-between-footnotes": false
->     },
->     "re-index-footnotes": {
->       "enabled": false
->     },
->     "auto-correct-common-misspellings": {
->       "enabled": false,
->       "ignore-words": "",
->       "skip-words-with-multiple-capitals": false,
->       "extra-auto-correct-files": []
->     },
->     "blockquote-style": {
->       "enabled": false,
->       "style": "space"
->     },
->     "convert-bullet-list-markers": {
->       "enabled": false
->     },
->     "default-language-for-code-fences": {
->       "enabled": false,
->       "default-language": ""
->     },
->     "emphasis-style": {
->       "enabled": false,
->       "style": "consistent"
->     },
->     "no-bare-urls": {
->       "enabled": false,
->       "no-bare-uris": false
->     },
->     "ordered-list-style": {
->       "enabled": false,
->       "number-style": "ascending",
->       "list-end-style": "."
->     },
->     "proper-ellipsis": {
->       "enabled": false
->     },
->     "quote-style": {
->       "enabled": false,
->       "single-quote-enabled": true,
->       "single-quote-style": "''",
->       "double-quote-enabled": true,
->       "double-quote-style": "\"\""
->     },
->     "remove-consecutive-list-markers": {
->       "enabled": false
->     },
->     "remove-empty-list-markers": {
->       "enabled": false
->     },
->     "remove-hyphenated-line-breaks": {
->       "enabled": false
->     },
->     "remove-multiple-spaces": {
->       "enabled": false
->     },
->     "strong-style": {
->       "enabled": false,
->       "style": "consistent"
->     },
->     "two-spaces-between-lines-with-content": {
->       "enabled": false,
->       "line-break-indicator": "  "
->     },
->     "unordered-list-style": {
->       "enabled": false,
->       "list-style": "consistent"
->     },
->     "compact-yaml": {
->       "enabled": false,
->       "inner-new-lines": false
->     },
->     "consecutive-blank-lines": {
->       "enabled": false
->     },
->     "convert-spaces-to-tabs": {
->       "enabled": false,
->       "tabsize": 4
->     },
->     "empty-line-around-blockquotes": {
->       "enabled": false
->     },
->     "empty-line-around-code-fences": {
->       "enabled": false
->     },
->     "empty-line-around-horizontal-rules": {
->       "enabled": false
->     },
->     "empty-line-around-math-blocks": {
->       "enabled": false
->     },
->     "empty-line-around-tables": {
->       "enabled": false
->     },
->     "heading-blank-lines": {
->       "enabled": false,
->       "bottom": true,
->       "empty-line-after-yaml": true
->     },
->     "line-break-at-document-end": {
->       "enabled": false
->     },
->     "move-math-block-indicators-to-their-own-line": {
->       "enabled": false
->     },
->     "paragraph-blank-lines": {
->       "enabled": false
->     },
->     "remove-empty-lines-between-list-markers-and-checklists": {
->       "enabled": false
->     },
->     "remove-link-spacing": {
->       "enabled": false
->     },
->     "remove-space-around-characters": {
->       "enabled": false,
->       "include-fullwidth-forms": true,
->       "include-cjk-symbols-and-punctuation": true,
->       "include-dashes": true,
->       "other-symbols": ""
->     },
->     "remove-space-before-or-after-characters": {
->       "enabled": false,
->       "characters-to-remove-space-before": ",!?;:).’”]",
->       "characters-to-remove-space-after": "¿¡‘“(["
->     },
->     "space-after-list-markers": {
->       "enabled": false
->     },
->     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
->       "enabled": false,
->       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
->       "english-symbols-punctuation-after": "-+'\"([¥$"
->     },
->     "trailing-spaces": {
->       "enabled": false,
->       "two-space-line-break": false
->     },
->     "add-blockquote-indentation-on-paste": {
->       "enabled": false
->     },
->     "prevent-double-checklist-indicator-on-paste": {
->       "enabled": false
->     },
->     "prevent-double-list-item-indicator-on-paste": {
->       "enabled": false
->     },
->     "proper-ellipsis-on-paste": {
->       "enabled": false
->     },
->     "remove-hyphens-on-paste": {
->       "enabled": false
->     },
->     "remove-leading-or-trailing-whitespace-on-paste": {
->       "enabled": false
->     },
->     "remove-leftover-footnotes-from-quote-on-paste": {
->       "enabled": false
->     },
->     "remove-multiple-blank-lines-on-paste": {
->       "enabled": false
->     }
->   },
->   "lintOnSave": false,
->   "recordLintOnSaveLogs": false,
->   "displayChanged": true,
->   "suppressMessageWhenNoChange": false,
->   "lintOnFileChange": false,
->   "displayLintOnFileChangeNotice": false,
->   "settingsConvertedToConfigKeyValues": true,
->   "additionalFileExtensions": [],
->   "foldersToIgnore": [],
->   "filesToIgnore": [],
->   "linterLocale": "system-default",
->   "logLevel": "ERROR",
->   "lintCommands": [],
->   "customRegexes": [],
->   "commonStyles": {
->     "aliasArrayStyle": "single-line",
->     "tagArrayStyle": "single-line",
->     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
->     "escapeCharacter": "\"",
->     "removeUnnecessaryEscapeCharsForMultiLineArrays": false
->   }
+> there is no tdata json for datab view yet, and can you help me update the linter setting and create the tempaltes. {
+
+>   "ruleConfigs": {
+
+>     "add-blank-line-after-yaml": {
+
+>       "enabled": false
+
+>     },
+
+>     "dedupe-yaml-array-values": {
+
+>       "enabled": false,
+
+>       "dedupe-alias-key": true,
+
+>       "dedupe-tag-key": true,
+
+>       "dedupe-array-keys": true,
+
+>       "ignore-keys": ""
+
+>     },
+
+>     "escape-yaml-special-characters": {
+
+>       "enabled": false,
+
+>       "try-to-escape-single-line-arrays": false
+
+>     },
+
+>     "force-yaml-escape": {
+
+>       "enabled": false,
+
+>       "force-yaml-escape-keys": ""
+
+>     },
+
+>     "format-tags-in-yaml": {
+
+>       "enabled": false
+
+>     },
+
+>     "format-yaml-array": {
+
+>       "enabled": false,
+
+>       "alias-key": true,
+
+>       "tag-key": true,
+
+>       "default-array-style": "single-line",
+
+>       "default-array-keys": true,
+
+>       "force-single-line-array-style": "",
+
+>       "force-multi-line-array-style": ""
+
+>     },
+
+>     "insert-yaml-attributes": {
+
+>       "enabled": false,
+
+>       "text-to-insert": "aliases: \ntags: "
+
+>     },
+
+>     "move-tags-to-yaml": {
+
+>       "enabled": false,
+
+>       "how-to-handle-existing-tags": "Nothing",
+
+>       "tags-to-ignore": ""
+
+>     },
+
+>     "remove-yaml-keys": {
+
+>       "enabled": false,
+
+>       "yaml-keys-to-remove": ""
+
+>     },
+
+>     "sort-yaml-array-values": {
+
+>       "enabled": false,
+
+>       "sort-alias-key": true,
+
+>       "sort-tag-key": true,
+
+>       "sort-array-keys": true,
+
+>       "ignore-keys": "",
+
+>       "sort-order": "Ascending Alphabetical"
+
+>     },
+
+>     "yaml-key-sort": {
+
+>       "enabled": false,
+
+>       "yaml-key-priority-sort-order": "",
+
+>       "priority-keys-at-start-of-yaml": true,
+
+>       "yaml-sort-order-for-other-keys": "None"
+
+>     },
+
+>     "yaml-timestamp": {
+
+>       "enabled": false,
+
+>       "date-created": true,
+
+>       "date-created-key": "date created",
+
+>       "date-created-source-of-truth": "file system",
+
+>       "date-modified": true,
+
+>       "date-modified-key": "date modified",
+
+>       "date-modified-source-of-truth": "file system",
+
+>       "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+
+>       "convert-to-utc": false,
+
+>       "update-on-file-contents-updated": "never"
+
+>     },
+
+>     "yaml-title": {
+
+>       "enabled": false,
+
+>       "title-key": "title",
+
+>       "mode": "first-h1-or-filename-if-h1-missing"
+
+>     },
+
+>     "yaml-title-alias": {
+
+>       "enabled": false,
+
+>       "preserve-existing-alias-section-style": true,
+
+>       "keep-alias-that-matches-the-filename": false,
+
+>       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
+
+>       "alias-helper-key": "linter-yaml-title-alias"
+
+>     },
+
+>     "capitalize-headings": {
+
+>       "enabled": false,
+
+>       "style": "Title Case",
+
+>       "ignore-case-words": true,
+
+>       "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, I",
+
+>       "lowercase-words": "a, an, the, aboard, about, abt., above, abreast, absent, across, after, against, along, aloft, alongside, amid, amidst, mid, midst, among, amongst, anti, apropos, around, round, as, aslant, astride, at, atop, ontop, bar, barring, before, B4, behind, below, beneath, neath, beside, besides, between, 'tween, beyond, but, by, chez, circa, c., ca., come, concerning, contra, counting, cum, despite, spite, down, during, effective, ere, except, excepting, excluding, failing, following, for, from, in, including, inside, into, less, like, minus, modulo, mod, near, nearer, nearest, next, notwithstanding, of, o', off, offshore, on, onto, opposite, out, outside, over, o'er, pace, past, pending, per, plus, post, pre, pro, qua, re, regarding, respecting, sans, save, saving, short, since, sub, than, through, thru, throughout, thruout, till, times, to, t', touching, toward, towards, under, underneath, unlike, until, unto, up, upon, versus, vs., v., via, vice, vis-à-vis, wanting, with, w/, w., c̄, within, w/i, without, 'thout, w/o, abroad, adrift, aft, afterward, afterwards, ahead, apart, ashore, aside, away, back, backward, backwards, beforehand, downhill, downstage, downstairs, downstream, downward, downwards, downwind, east, eastward, eastwards, forth, forward, forwards, heavenward, heavenwards, hence, henceforth, here, hereby, herein, hereof, hereto, herewith, home, homeward, homewards, indoors, inward, inwards, leftward, leftwards, north, northeast, northward, northwards, northwest, now, onward, onwards, outdoors, outward, outwards, overboard, overhead, overland, overseas, rightward, rightwards, seaward, seawards, skywards, skyward, south, southeast, southwards, southward, southwest, then, thence, thenceforth, there, thereby, therein, thereof, thereto, therewith, together, underfoot, underground, uphill, upstage, upstairs, upstream, upward, upwards, upwind, west, westward, westwards, when, whence, where, whereby, wherein, whereto, wherewith, although, because, considering, given, granted, if, lest, once, provided, providing, seeing, so, supposing, though, unless, whenever, whereas, wherever, while, whilst, ago, inasmuch, even, whether, whose, whoever, why, how, whatever, what, both, and, or, either, neither, nor, just, rather, such, that, yet, is, it"
+
+>     },
+
+>     "file-name-heading": {
+
+>       "enabled": false
+
+>     },
+
+>     "header-increment": {
+
+>       "enabled": false,
+
+>       "start-at-h2": false
+
+>     },
+
+>     "headings-start-line": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-trailing-punctuation-in-heading": {
+
+>       "enabled": false,
+
+>       "punctuation-to-remove": ".,;:!。，；：！"
+
+>     },
+
+>     "footnote-after-punctuation": {
+
+>       "enabled": false
+
+>     },
+
+>     "move-footnotes-to-the-bottom": {
+
+>       "enabled": false,
+
+>       "include-blank-line-between-footnotes": false
+
+>     },
+
+>     "re-index-footnotes": {
+
+>       "enabled": false
+
+>     },
+
+>     "auto-correct-common-misspellings": {
+
+>       "enabled": false,
+
+>       "ignore-words": "",
+
+>       "skip-words-with-multiple-capitals": false,
+
+>       "extra-auto-correct-files": []
+
+>     },
+
+>     "blockquote-style": {
+
+>       "enabled": false,
+
+>       "style": "space"
+
+>     },
+
+>     "convert-bullet-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "default-language-for-code-fences": {
+
+>       "enabled": false,
+
+>       "default-language": ""
+
+>     },
+
+>     "emphasis-style": {
+
+>       "enabled": false,
+
+>       "style": "consistent"
+
+>     },
+
+>     "no-bare-urls": {
+
+>       "enabled": false,
+
+>       "no-bare-uris": false
+
+>     },
+
+>     "ordered-list-style": {
+
+>       "enabled": false,
+
+>       "number-style": "ascending",
+
+>       "list-end-style": "."
+
+>     },
+
+>     "proper-ellipsis": {
+
+>       "enabled": false
+
+>     },
+
+>     "quote-style": {
+
+>       "enabled": false,
+
+>       "single-quote-enabled": true,
+
+>       "single-quote-style": "''",
+
+>       "double-quote-enabled": true,
+
+>       "double-quote-style": "\"\""
+
+>     },
+
+>     "remove-consecutive-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-empty-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-hyphenated-line-breaks": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-multiple-spaces": {
+
+>       "enabled": false
+
+>     },
+
+>     "strong-style": {
+
+>       "enabled": false,
+
+>       "style": "consistent"
+
+>     },
+
+>     "two-spaces-between-lines-with-content": {
+
+>       "enabled": false,
+
+>       "line-break-indicator": "  "
+
+>     },
+
+>     "unordered-list-style": {
+
+>       "enabled": false,
+
+>       "list-style": "consistent"
+
+>     },
+
+>     "compact-yaml": {
+
+>       "enabled": false,
+
+>       "inner-new-lines": false
+
+>     },
+
+>     "consecutive-blank-lines": {
+
+>       "enabled": false
+
+>     },
+
+>     "convert-spaces-to-tabs": {
+
+>       "enabled": false,
+
+>       "tabsize": 4
+
+>     },
+
+>     "empty-line-around-blockquotes": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-code-fences": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-horizontal-rules": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-math-blocks": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-tables": {
+
+>       "enabled": false
+
+>     },
+
+>     "heading-blank-lines": {
+
+>       "enabled": false,
+
+>       "bottom": true,
+
+>       "empty-line-after-yaml": true
+
+>     },
+
+>     "line-break-at-document-end": {
+
+>       "enabled": false
+
+>     },
+
+>     "move-math-block-indicators-to-their-own-line": {
+
+>       "enabled": false
+
+>     },
+
+>     "paragraph-blank-lines": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-empty-lines-between-list-markers-and-checklists": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-link-spacing": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-space-around-characters": {
+
+>       "enabled": false,
+
+>       "include-fullwidth-forms": true,
+
+>       "include-cjk-symbols-and-punctuation": true,
+
+>       "include-dashes": true,
+
+>       "other-symbols": ""
+
+>     },
+
+>     "remove-space-before-or-after-characters": {
+
+>       "enabled": false,
+
+>       "characters-to-remove-space-before": ",!?;:).’”]",
+
+>       "characters-to-remove-space-after": "¿¡‘“(["
+
+>     },
+
+>     "space-after-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
+
+>       "enabled": false,
+
+>       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+
+>       "english-symbols-punctuation-after": "-+'\"([¥$"
+
+>     },
+
+>     "trailing-spaces": {
+
+>       "enabled": false,
+
+>       "two-space-line-break": false
+
+>     },
+
+>     "add-blockquote-indentation-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "prevent-double-checklist-indicator-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "prevent-double-list-item-indicator-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "proper-ellipsis-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-hyphens-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-leading-or-trailing-whitespace-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-leftover-footnotes-from-quote-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-multiple-blank-lines-on-paste": {
+
+>       "enabled": false
+
+>     }
+
+>   },
+
+>   "lintOnSave": false,
+
+>   "recordLintOnSaveLogs": false,
+
+>   "displayChanged": true,
+
+>   "suppressMessageWhenNoChange": false,
+
+>   "lintOnFileChange": false,
+
+>   "displayLintOnFileChangeNotice": false,
+
+>   "settingsConvertedToConfigKeyValues": true,
+
+>   "additionalFileExtensions": [],
+
+>   "foldersToIgnore": [],
+
+>   "filesToIgnore": [],
+
+>   "linterLocale": "system-default",
+
+>   "logLevel": "ERROR",
+
+>   "lintCommands": [],
+
+>   "customRegexes": [],
+
+>   "commonStyles": {
+
+>     "aliasArrayStyle": "single-line",
+
+>     "tagArrayStyle": "single-line",
+
+>     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
+
+>     "escapeCharacter": "\"",
+
+>     "removeUnnecessaryEscapeCharsForMultiLineArrays": false
+
+>   }
+
 > }
 
 ### Assistant
@@ -6788,300 +7633,594 @@ canonical_ref: ""
 > If you want, I can also show you a **very slick trick to turn Obsidian into a case command center** (basically a dashboard page you open every time). It fits perfectly with how you're structuring this.
 
 ### User
-> this is what you gave me. {
->   "ruleConfigs": {
->     "add-blank-line-after-yaml": {
->       "enabled": true
->     },
->     "dedupe-yaml-array-values": {
->       "enabled": false,
->       "dedupe-alias-key": true,
->       "dedupe-tag-key": true,
->       "dedupe-array-keys": true,
->       "ignore-keys": ""
->     },
->     "escape-yaml-special-characters": {
->       "enabled": false,
->       "try-to-escape-single-line-arrays": false
->     },
->     "force-yaml-escape": {
->       "enabled": false,
->       "force-yaml-escape-keys": ""
->     },
->     "format-tags-in-yaml": {
->       "enabled": false
->     },
->     "format-yaml-array": {
->       "enabled": false,
->       "alias-key": true,
->       "tag-key": true,
->       "default-array-style": "single-line",
->       "default-array-keys": true,
->       "force-single-line-array-style": "",
->       "force-multi-line-array-style": ""
->     },
->     "insert-yaml-attributes": {
->       "enabled": false,
->       "text-to-insert": "aliases: \ntags: "
->     },
->     "move-tags-to-yaml": {
->       "enabled": false,
->       "how-to-handle-existing-tags": "Nothing",
->       "tags-to-ignore": ""
->     },
->     "remove-yaml-keys": {
->       "enabled": false,
->       "yaml-keys-to-remove": ""
->     },
->     "sort-yaml-array-values": {
->       "enabled": false,
->       "sort-alias-key": true,
->       "sort-tag-key": true,
->       "sort-array-keys": true,
->       "ignore-keys": "",
->       "sort-order": "Ascending Alphabetical"
->     },
->     "yaml-key-sort": {
->       "enabled": false,
->       "yaml-key-priority-sort-order": "",
->       "priority-keys-at-start-of-yaml": true,
->       "yaml-sort-order-for-other-keys": "None"
->     },
->     "yaml-timestamp": {
->       "enabled": false,
->       "date-created": true,
->       "date-created-key": "date created",
->       "date-created-source-of-truth": "file system",
->       "date-modified": true,
->       "date-modified-key": "date modified",
->       "date-modified-source-of-truth": "file system",
->       "format": "dddd, MMMM Do YYYY, h:mm:ss a",
->       "convert-to-utc": false,
->       "update-on-file-contents-updated": "never"
->     },
->     "yaml-title": {
->       "enabled": false,
->       "title-key": "title",
->       "mode": "first-h1-or-filename-if-h1-missing"
->     },
->     "yaml-title-alias": {
->       "enabled": false,
->       "preserve-existing-alias-section-style": true,
->       "keep-alias-that-matches-the-filename": false,
->       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
->       "alias-helper-key": "linter-yaml-title-alias"
->     },
->     "capitalize-headings": {
->       "enabled": false,
->       "style": "Title Case",
->       "ignore-case-words": true,
->       "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, I",
->       "lowercase-words": "a, an, the, aboard, about, abt., above, abreast, absent, across, after, against, along, aloft, alongside, amid, amidst, mid, midst, among, amongst, anti, apropos, around, round, as, aslant, astride, at, atop, ontop, bar, barring, before, B4, behind, below, beneath, neath, beside, besides, between, 'tween, beyond, but, by, chez, circa, c., ca., come, concerning, contra, counting, cum, despite, spite, down, during, effective, ere, except, excepting, excluding, failing, following, for, from, in, including, inside, into, less, like, minus, modulo, mod, near, nearer, nearest, next, notwithstanding, of, o', off, offshore, on, onto, opposite, out, outside, over, o'er, pace, past, pending, per, plus, post, pre, pro, qua, re, regarding, respecting, sans, save, saving, short, since, sub, than, through, thru, throughout, thruout, till, times, to, t', touching, toward, towards, under, underneath, unlike, until, unto, up, upon, versus, vs., v., via, vice, vis-à-vis, wanting, with, w/, w., c̄, within, w/i, without, 'thout, w/o, abroad, adrift, aft, afterward, afterwards, ahead, apart, ashore, aside, away, back, backward, backwards, beforehand, downhill, downstage, downstairs, downstream, downward, downwards, downwind, east, eastward, eastwards, forth, forward, forwards, heavenward, heavenwards, hence, henceforth, here, hereby, herein, hereof, hereto, herewith, home, homeward, homewards, indoors, inward, inwards, leftward, leftwards, north, northeast, northward, northwards, northwest, now, onward, onwards, outdoors, outward, outwards, overboard, overhead, overland, overseas, rightward, rightwards, seaward, seawards, skywards, skyward, south, southeast, southwards, southward, southwest, then, thence, thenceforth, there, thereby, therein, thereof, thereto, therewith, together, underfoot, underground, uphill, upstage, upstairs, upstream, upward, upwards, upwind, west, westward, westwards, when, whence, where, whereby, wherein, whereto, wherewith, although, because, considering, given, granted, if, lest, once, provided, providing, seeing, so, supposing, though, unless, whenever, whereas, wherever, while, whilst, ago, inasmuch, even, whether, whose, whoever, why, how, whatever, what, both, and, or, either, neither, nor, just, rather, such, that, yet, is, it"
->     },
->     "file-name-heading": {
->       "enabled": false
->     },
->     "header-increment": {
->       "enabled": false,
->       "start-at-h2": false
->     },
->     "headings-start-line": {
->       "enabled": false
->     },
->     "remove-trailing-punctuation-in-heading": {
->       "enabled": false,
->       "punctuation-to-remove": ".,;:!。，；：！"
->     },
->     "footnote-after-punctuation": {
->       "enabled": false
->     },
->     "move-footnotes-to-the-bottom": {
->       "enabled": false,
->       "include-blank-line-between-footnotes": false
->     },
->     "re-index-footnotes": {
->       "enabled": false
->     },
->     "auto-correct-common-misspellings": {
->       "enabled": false,
->       "ignore-words": "",
->       "skip-words-with-multiple-capitals": false,
->       "extra-auto-correct-files": []
->     },
->     "blockquote-style": {
->       "enabled": false,
->       "style": "space"
->     },
->     "convert-bullet-list-markers": {
->       "enabled": false
->     },
->     "default-language-for-code-fences": {
->       "enabled": false,
->       "default-language": ""
->     },
->     "emphasis-style": {
->       "enabled": false,
->       "style": "consistent"
->     },
->     "no-bare-urls": {
->       "enabled": false,
->       "no-bare-uris": false
->     },
->     "ordered-list-style": {
->       "enabled": false,
->       "number-style": "ascending",
->       "list-end-style": "."
->     },
->     "proper-ellipsis": {
->       "enabled": false
->     },
->     "quote-style": {
->       "enabled": false,
->       "single-quote-enabled": true,
->       "single-quote-style": "''",
->       "double-quote-enabled": true,
->       "double-quote-style": "\"\""
->     },
->     "remove-consecutive-list-markers": {
->       "enabled": false
->     },
->     "remove-empty-list-markers": {
->       "enabled": false
->     },
->     "remove-hyphenated-line-breaks": {
->       "enabled": false
->     },
->     "remove-multiple-spaces": {
->       "enabled": false
->     },
->     "strong-style": {
->       "enabled": false,
->       "style": "consistent"
->     },
->     "two-spaces-between-lines-with-content": {
->       "enabled": false,
->       "line-break-indicator": "  "
->     },
->     "unordered-list-style": {
->       "enabled": false,
->       "list-style": "consistent"
->     },
->     "compact-yaml": {
->       "enabled": false,
->       "inner-new-lines": false
->     },
->     "consecutive-blank-lines": {
->       "enabled": false
->     },
->     "convert-spaces-to-tabs": {
->       "enabled": false,
->       "tabsize": 4
->     },
->     "empty-line-around-blockquotes": {
->       "enabled": false
->     },
->     "empty-line-around-code-fences": {
->       "enabled": false
->     },
->     "empty-line-around-horizontal-rules": {
->       "enabled": false
->     },
->     "empty-line-around-math-blocks": {
->       "enabled": false
->     },
->     "empty-line-around-tables": {
->       "enabled": false
->     },
->     "heading-blank-lines": {
->       "enabled": false,
->       "bottom": true,
->       "empty-line-after-yaml": true
->     },
->     "line-break-at-document-end": {
->       "enabled": false
->     },
->     "move-math-block-indicators-to-their-own-line": {
->       "enabled": false
->     },
->     "paragraph-blank-lines": {
->       "enabled": false
->     },
->     "remove-empty-lines-between-list-markers-and-checklists": {
->       "enabled": false
->     },
->     "remove-link-spacing": {
->       "enabled": false
->     },
->     "remove-space-around-characters": {
->       "enabled": false,
->       "include-fullwidth-forms": true,
->       "include-cjk-symbols-and-punctuation": true,
->       "include-dashes": true,
->       "other-symbols": ""
->     },
->     "remove-space-before-or-after-characters": {
->       "enabled": false,
->       "characters-to-remove-space-before": ",!?;:).’”]",
->       "characters-to-remove-space-after": "¿¡‘“(["
->     },
->     "space-after-list-markers": {
->       "enabled": false
->     },
->     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
->       "enabled": false,
->       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
->       "english-symbols-punctuation-after": "-+'\"([¥$"
->     },
->     "trailing-spaces": {
->       "enabled": false,
->       "two-space-line-break": false
->     },
->     "add-blockquote-indentation-on-paste": {
->       "enabled": false
->     },
->     "prevent-double-checklist-indicator-on-paste": {
->       "enabled": false
->     },
->     "prevent-double-list-item-indicator-on-paste": {
->       "enabled": false
->     },
->     "proper-ellipsis-on-paste": {
->       "enabled": false
->     },
->     "remove-hyphens-on-paste": {
->       "enabled": false
->     },
->     "remove-leading-or-trailing-whitespace-on-paste": {
->       "enabled": false
->     },
->     "remove-leftover-footnotes-from-quote-on-paste": {
->       "enabled": false
->     },
->     "remove-multiple-blank-lines-on-paste": {
->       "enabled": false
->     }
->   },
->   "lintOnSave": true,
->   "recordLintOnSaveLogs": false,
->   "displayChanged": true,
->   "suppressMessageWhenNoChange": false,
->   "lintOnFileChange": false,
->   "displayLintOnFileChangeNotice": false,
->   "settingsConvertedToConfigKeyValues": true,
->   "additionalFileExtensions": [],
->   "foldersToIgnore": [],
->   "filesToIgnore": [],
->   "linterLocale": "system-default",
->   "logLevel": "ERROR",
->   "lintCommands": [],
->   "customRegexes": [],
->   "commonStyles": {
->     "aliasArrayStyle": "single-line",
->     "tagArrayStyle": "single-line",
->     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
->     "escapeCharacter": "\"",
->     "removeUnnecessaryEscapeCharsForMultiLineArrays": false
->   }
+> this is what you gave me. {
+
+>   "ruleConfigs": {
+
+>     "add-blank-line-after-yaml": {
+
+>       "enabled": true
+
+>     },
+
+>     "dedupe-yaml-array-values": {
+
+>       "enabled": false,
+
+>       "dedupe-alias-key": true,
+
+>       "dedupe-tag-key": true,
+
+>       "dedupe-array-keys": true,
+
+>       "ignore-keys": ""
+
+>     },
+
+>     "escape-yaml-special-characters": {
+
+>       "enabled": false,
+
+>       "try-to-escape-single-line-arrays": false
+
+>     },
+
+>     "force-yaml-escape": {
+
+>       "enabled": false,
+
+>       "force-yaml-escape-keys": ""
+
+>     },
+
+>     "format-tags-in-yaml": {
+
+>       "enabled": false
+
+>     },
+
+>     "format-yaml-array": {
+
+>       "enabled": false,
+
+>       "alias-key": true,
+
+>       "tag-key": true,
+
+>       "default-array-style": "single-line",
+
+>       "default-array-keys": true,
+
+>       "force-single-line-array-style": "",
+
+>       "force-multi-line-array-style": ""
+
+>     },
+
+>     "insert-yaml-attributes": {
+
+>       "enabled": false,
+
+>       "text-to-insert": "aliases: \ntags: "
+
+>     },
+
+>     "move-tags-to-yaml": {
+
+>       "enabled": false,
+
+>       "how-to-handle-existing-tags": "Nothing",
+
+>       "tags-to-ignore": ""
+
+>     },
+
+>     "remove-yaml-keys": {
+
+>       "enabled": false,
+
+>       "yaml-keys-to-remove": ""
+
+>     },
+
+>     "sort-yaml-array-values": {
+
+>       "enabled": false,
+
+>       "sort-alias-key": true,
+
+>       "sort-tag-key": true,
+
+>       "sort-array-keys": true,
+
+>       "ignore-keys": "",
+
+>       "sort-order": "Ascending Alphabetical"
+
+>     },
+
+>     "yaml-key-sort": {
+
+>       "enabled": false,
+
+>       "yaml-key-priority-sort-order": "",
+
+>       "priority-keys-at-start-of-yaml": true,
+
+>       "yaml-sort-order-for-other-keys": "None"
+
+>     },
+
+>     "yaml-timestamp": {
+
+>       "enabled": false,
+
+>       "date-created": true,
+
+>       "date-created-key": "date created",
+
+>       "date-created-source-of-truth": "file system",
+
+>       "date-modified": true,
+
+>       "date-modified-key": "date modified",
+
+>       "date-modified-source-of-truth": "file system",
+
+>       "format": "dddd, MMMM Do YYYY, h:mm:ss a",
+
+>       "convert-to-utc": false,
+
+>       "update-on-file-contents-updated": "never"
+
+>     },
+
+>     "yaml-title": {
+
+>       "enabled": false,
+
+>       "title-key": "title",
+
+>       "mode": "first-h1-or-filename-if-h1-missing"
+
+>     },
+
+>     "yaml-title-alias": {
+
+>       "enabled": false,
+
+>       "preserve-existing-alias-section-style": true,
+
+>       "keep-alias-that-matches-the-filename": false,
+
+>       "use-yaml-key-to-keep-track-of-old-filename-or-heading": true,
+
+>       "alias-helper-key": "linter-yaml-title-alias"
+
+>     },
+
+>     "capitalize-headings": {
+
+>       "enabled": false,
+
+>       "style": "Title Case",
+
+>       "ignore-case-words": true,
+
+>       "ignore-words": "macOS, iOS, iPhone, iPad, JavaScript, TypeScript, AppleScript, I",
+
+>       "lowercase-words": "a, an, the, aboard, about, abt., above, abreast, absent, across, after, against, along, aloft, alongside, amid, amidst, mid, midst, among, amongst, anti, apropos, around, round, as, aslant, astride, at, atop, ontop, bar, barring, before, B4, behind, below, beneath, neath, beside, besides, between, 'tween, beyond, but, by, chez, circa, c., ca., come, concerning, contra, counting, cum, despite, spite, down, during, effective, ere, except, excepting, excluding, failing, following, for, from, in, including, inside, into, less, like, minus, modulo, mod, near, nearer, nearest, next, notwithstanding, of, o', off, offshore, on, onto, opposite, out, outside, over, o'er, pace, past, pending, per, plus, post, pre, pro, qua, re, regarding, respecting, sans, save, saving, short, since, sub, than, through, thru, throughout, thruout, till, times, to, t', touching, toward, towards, under, underneath, unlike, until, unto, up, upon, versus, vs., v., via, vice, vis-à-vis, wanting, with, w/, w., c̄, within, w/i, without, 'thout, w/o, abroad, adrift, aft, afterward, afterwards, ahead, apart, ashore, aside, away, back, backward, backwards, beforehand, downhill, downstage, downstairs, downstream, downward, downwards, downwind, east, eastward, eastwards, forth, forward, forwards, heavenward, heavenwards, hence, henceforth, here, hereby, herein, hereof, hereto, herewith, home, homeward, homewards, indoors, inward, inwards, leftward, leftwards, north, northeast, northward, northwards, northwest, now, onward, onwards, outdoors, outward, outwards, overboard, overhead, overland, overseas, rightward, rightwards, seaward, seawards, skywards, skyward, south, southeast, southwards, southward, southwest, then, thence, thenceforth, there, thereby, therein, thereof, thereto, therewith, together, underfoot, underground, uphill, upstage, upstairs, upstream, upward, upwards, upwind, west, westward, westwards, when, whence, where, whereby, wherein, whereto, wherewith, although, because, considering, given, granted, if, lest, once, provided, providing, seeing, so, supposing, though, unless, whenever, whereas, wherever, while, whilst, ago, inasmuch, even, whether, whose, whoever, why, how, whatever, what, both, and, or, either, neither, nor, just, rather, such, that, yet, is, it"
+
+>     },
+
+>     "file-name-heading": {
+
+>       "enabled": false
+
+>     },
+
+>     "header-increment": {
+
+>       "enabled": false,
+
+>       "start-at-h2": false
+
+>     },
+
+>     "headings-start-line": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-trailing-punctuation-in-heading": {
+
+>       "enabled": false,
+
+>       "punctuation-to-remove": ".,;:!。，；：！"
+
+>     },
+
+>     "footnote-after-punctuation": {
+
+>       "enabled": false
+
+>     },
+
+>     "move-footnotes-to-the-bottom": {
+
+>       "enabled": false,
+
+>       "include-blank-line-between-footnotes": false
+
+>     },
+
+>     "re-index-footnotes": {
+
+>       "enabled": false
+
+>     },
+
+>     "auto-correct-common-misspellings": {
+
+>       "enabled": false,
+
+>       "ignore-words": "",
+
+>       "skip-words-with-multiple-capitals": false,
+
+>       "extra-auto-correct-files": []
+
+>     },
+
+>     "blockquote-style": {
+
+>       "enabled": false,
+
+>       "style": "space"
+
+>     },
+
+>     "convert-bullet-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "default-language-for-code-fences": {
+
+>       "enabled": false,
+
+>       "default-language": ""
+
+>     },
+
+>     "emphasis-style": {
+
+>       "enabled": false,
+
+>       "style": "consistent"
+
+>     },
+
+>     "no-bare-urls": {
+
+>       "enabled": false,
+
+>       "no-bare-uris": false
+
+>     },
+
+>     "ordered-list-style": {
+
+>       "enabled": false,
+
+>       "number-style": "ascending",
+
+>       "list-end-style": "."
+
+>     },
+
+>     "proper-ellipsis": {
+
+>       "enabled": false
+
+>     },
+
+>     "quote-style": {
+
+>       "enabled": false,
+
+>       "single-quote-enabled": true,
+
+>       "single-quote-style": "''",
+
+>       "double-quote-enabled": true,
+
+>       "double-quote-style": "\"\""
+
+>     },
+
+>     "remove-consecutive-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-empty-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-hyphenated-line-breaks": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-multiple-spaces": {
+
+>       "enabled": false
+
+>     },
+
+>     "strong-style": {
+
+>       "enabled": false,
+
+>       "style": "consistent"
+
+>     },
+
+>     "two-spaces-between-lines-with-content": {
+
+>       "enabled": false,
+
+>       "line-break-indicator": "  "
+
+>     },
+
+>     "unordered-list-style": {
+
+>       "enabled": false,
+
+>       "list-style": "consistent"
+
+>     },
+
+>     "compact-yaml": {
+
+>       "enabled": false,
+
+>       "inner-new-lines": false
+
+>     },
+
+>     "consecutive-blank-lines": {
+
+>       "enabled": false
+
+>     },
+
+>     "convert-spaces-to-tabs": {
+
+>       "enabled": false,
+
+>       "tabsize": 4
+
+>     },
+
+>     "empty-line-around-blockquotes": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-code-fences": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-horizontal-rules": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-math-blocks": {
+
+>       "enabled": false
+
+>     },
+
+>     "empty-line-around-tables": {
+
+>       "enabled": false
+
+>     },
+
+>     "heading-blank-lines": {
+
+>       "enabled": false,
+
+>       "bottom": true,
+
+>       "empty-line-after-yaml": true
+
+>     },
+
+>     "line-break-at-document-end": {
+
+>       "enabled": false
+
+>     },
+
+>     "move-math-block-indicators-to-their-own-line": {
+
+>       "enabled": false
+
+>     },
+
+>     "paragraph-blank-lines": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-empty-lines-between-list-markers-and-checklists": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-link-spacing": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-space-around-characters": {
+
+>       "enabled": false,
+
+>       "include-fullwidth-forms": true,
+
+>       "include-cjk-symbols-and-punctuation": true,
+
+>       "include-dashes": true,
+
+>       "other-symbols": ""
+
+>     },
+
+>     "remove-space-before-or-after-characters": {
+
+>       "enabled": false,
+
+>       "characters-to-remove-space-before": ",!?;:).’”]",
+
+>       "characters-to-remove-space-after": "¿¡‘“(["
+
+>     },
+
+>     "space-after-list-markers": {
+
+>       "enabled": false
+
+>     },
+
+>     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
+
+>       "enabled": false,
+
+>       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
+
+>       "english-symbols-punctuation-after": "-+'\"([¥$"
+
+>     },
+
+>     "trailing-spaces": {
+
+>       "enabled": false,
+
+>       "two-space-line-break": false
+
+>     },
+
+>     "add-blockquote-indentation-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "prevent-double-checklist-indicator-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "prevent-double-list-item-indicator-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "proper-ellipsis-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-hyphens-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-leading-or-trailing-whitespace-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-leftover-footnotes-from-quote-on-paste": {
+
+>       "enabled": false
+
+>     },
+
+>     "remove-multiple-blank-lines-on-paste": {
+
+>       "enabled": false
+
+>     }
+
+>   },
+
+>   "lintOnSave": true,
+
+>   "recordLintOnSaveLogs": false,
+
+>   "displayChanged": true,
+
+>   "suppressMessageWhenNoChange": false,
+
+>   "lintOnFileChange": false,
+
+>   "displayLintOnFileChangeNotice": false,
+
+>   "settingsConvertedToConfigKeyValues": true,
+
+>   "additionalFileExtensions": [],
+
+>   "foldersToIgnore": [],
+
+>   "filesToIgnore": [],
+
+>   "linterLocale": "system-default",
+
+>   "logLevel": "ERROR",
+
+>   "lintCommands": [],
+
+>   "customRegexes": [],
+
+>   "commonStyles": {
+
+>     "aliasArrayStyle": "single-line",
+
+>     "tagArrayStyle": "single-line",
+
+>     "minimumNumberOfDollarSignsToBeAMathBlock": 2,
+
+>     "escapeCharacter": "\"",
+
+>     "removeUnnecessaryEscapeCharsForMultiLineArrays": false
+
+>   }
+
 > }
 
 ### Assistant

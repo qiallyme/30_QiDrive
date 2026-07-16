@@ -3,7 +3,7 @@ layout: page
 title: "Close Friend's Tragic Death"
 slug: "close_friends_tragic_death"
 created_at: "2024-05-01"
-updated_at: "2024-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5cebe17dc7ba47bc998d4a4317bc5265
 canonical_ref: ""
 ---
 

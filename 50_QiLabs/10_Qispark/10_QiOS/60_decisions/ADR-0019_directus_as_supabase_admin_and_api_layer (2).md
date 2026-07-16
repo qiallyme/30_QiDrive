@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0019 Directus As Supabase Admin And Api Layer
-slug: ""
+slug: adr-0019-directus-as-supabase-admin-and-api-layer
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 13282d1ec689495da34fe23f0531fb91
 canonical_ref: ""
 source_type: manual
 template_key: master-template

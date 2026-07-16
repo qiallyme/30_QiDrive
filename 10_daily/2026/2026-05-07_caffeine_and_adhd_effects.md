@@ -3,9 +3,9 @@ layout: page
 title: "Caffeine and ADHD Effects"
 slug: "caffeine_and_adhd_effects"
 created_at: "2026-05-07 21:52:22"
-updated_at: "2026-05-07 21:52:22"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -13,7 +13,7 @@ related:
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 30_clinical/30_stress_body_response/stress_body_response.md
   - 10_functional/40_overwhelm_protocols/overwhelm_protocol.md
-tags:
+tags: []
   - anxiety
   - panic
   - correspondence-anxiety
@@ -23,6 +23,23 @@ source:
   - _intake/07 How to Support Me Needs & Triggers 219f84a04402815fa336f9e38b58b4b6.md
   - _intake/10 8 Anxiety 219f84a0440281bb9e13c5b9d4a1af18.md
   - _intake/10 10 Correspondence Anxiety 219f84a0440281dd8158c32fb4331416.md
+layout: page
+slug: anxiety-and-panic-context
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 4d07905e3aec4285b5fb461c30369f27
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Anxiety and Panic Context

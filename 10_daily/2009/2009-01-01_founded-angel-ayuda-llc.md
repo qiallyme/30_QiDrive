@@ -3,7 +3,7 @@ layout: page
 title: "Founded Angel Ayuda LLC"
 slug: "founded-angel-ayuda-llc"
 created_at: "2009-01-01"
-updated_at: "2009-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["personal"]
 category: "personal"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 118fe8dfbe7e4de6a47c1b5a58ab877f
 canonical_ref: ""
 ---
 

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 60 Directory Tree
-slug: ""
+slug: 60-directory-tree
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 18cb398472904ceea5eb589873de5e56
 canonical_ref: ""
 source_type: manual
 template_key: master-template

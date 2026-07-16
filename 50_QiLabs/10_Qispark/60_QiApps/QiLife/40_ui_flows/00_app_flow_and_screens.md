@@ -3,12 +3,12 @@ layout: page
 title: QiLife App Flow and Screens
 slug: qilife-app-flow-and-screens
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8bb13e6556204c3c87e1ab2e3caca160
 canonical_ref: ""
 template_key: master-template
 ---

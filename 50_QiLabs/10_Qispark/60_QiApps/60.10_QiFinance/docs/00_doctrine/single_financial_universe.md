@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Single Financial Universe
-slug: ""
+slug: single-financial-universe
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: fc195819002548369d222002e0ca385a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,11 +3,11 @@ layout: page
 title: 03_Traumas
 slug: 03-traumas
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 owner: CRV
-tags:
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - ideas
 source_type: manual
 realm: 2_QsKb
@@ -21,14 +21,14 @@ qid: q72b1e5b6bcd0
 system: qios
 privacy: private
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 aliases: []
 context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7012a9f4619b4ff2857b3086bb3b1a77
 canonical_ref: ""
 template_key: master-template
 ---

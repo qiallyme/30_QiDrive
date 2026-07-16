@@ -3,9 +3,9 @@ layout: page
 title: "QiOS System Reconciliation"
 slug: "qios_system_reconciliation"
 created_at: "2026-06-04 18:02:53"
-updated_at: "2026-06-04 18:02:53"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -5449,245 +5449,484 @@ canonical_ref: ""
 > That’s the correct pivot. We were treating the missing schema like a lost file. It’s not lost — **it was never born yet.**
 
 ### User
-> ok so you were tripping and using old schema ideas from the past, can you update the text below so it is aligned with the most update to date decisions. Paste this into your IDE agent/Aider/Codex. It tells it to **populate the safe general repo files** without touching secrets or doing anything destructive.
-> 
-> You are working inside the QiSystem Supabase project.
-> 
-> Current intended project folder:
-> 
-> C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase
-> 
-> Goal:
-> Populate the basic Supabase repo structure so it is useful for GitHub/Supabase deployment testing, documentation, and future data migration work.
-> 
-> Important rules:
-> 
-> 1. Do NOT add real secrets, passwords, Supabase service-role keys, database URLs, JWT secrets, API keys, or personal/private data.
-> 2. Do NOT delete or rename existing migrations.
-> 3. Do NOT rewrite existing migration files unless there is an obvious syntax-breaking issue, and if so, report it first.
-> 4. Do NOT run production deploy commands.
-> 5. Create missing folders and safe starter files only.
-> 6. Use placeholder values in .env.example.
-> 7. Keep this migration-first and GitHub-safe.
-> 8. If there is already a file, update it carefully rather than replacing useful content.
-> 
-> Create or update this structure:
-> 
-> qisupabase/
-> README.md
-> connection-map.md
-> .env.example
-> .gitignore
-> config.toml
-> 
-> migrations/
-> existing files stay untouched
-> add one new timestamped migration for import infrastructure only if no equivalent exists
-> 
-> schemas/
-> 00_extensions.sql
-> 01_core.sql
-> 02_imports.sql
-> 03_qivault.sql
-> 04_qicase.sql
-> 05_qievidence.sql
-> 90_views.sql
-> 99_grants.sql
-> 
-> policies/
-> 00_rls_enable.sql
-> 01_admin_policies.sql
-> 02_import_policies.sql
-> 03_qivault_policies.sql
-> 04_qicase_policies.sql
-> 05_qievidence_policies.sql
-> 
-> sql/
-> is_admin.sql
-> updated_at_trigger.sql
-> 
-> functions/
-> qivault-ingest/
-> index.ts
-> _shared/
-> supabaseAdmin.ts
-> 
-> types/
-> README.md
-> 
-> docs/
-> schema-catalog.md
-> field-catalog.md
-> policy-catalog.md
-> data-source-catalog.md
-> migration-runbook.md
-> import-runbook.md
-> deployment-flow.md
-> 
-> imports/
-> README.md
-> manifests/
-> initial-import-manifest.csv
-> templates/
-> qibit_import_template.csv
-> evidence_import_template.csv
-> case_event_import_template.csv
-> contact_import_template.csv
-> file_import_template.csv
-> samples/
-> sample_qibit_import.csv
-> 
-> README.md should explain:
-> 
-> * This is QiSupabase, the Supabase database/backend project for QiSystem.
-> * Supabase is owned by QiSystem.
-> * QiConnect feeds data into Supabase.
-> * QiLife and other apps consume Supabase data.
-> * Real secrets are not stored here.
-> * Production changes should happen through migrations and protected GitHub branches.
-> 
-> connection-map.md should document:
-> 
-> * Supabase dashboard URL placeholder
-> * project ref placeholder
-> * anon key location placeholder
-> * service role key location placeholder
-> * database password location placeholder
-> * where local/server secrets are stored, using:
->   /srv/qios/_secrets/supabase/
-> * connected apps:
->   QiLife
->   QiAccess
->   QiVault ingest
->   QiConnect integrations
-> * no actual secrets
-> 
-> .env.example should include placeholder variables:
-> SUPABASE_URL=
-> SUPABASE_ANON_KEY=
-> SUPABASE_SERVICE_ROLE_KEY=
-> SUPABASE_DB_HOST=
-> SUPABASE_DB_PORT=5432
-> SUPABASE_DB_NAME=postgres
-> SUPABASE_DB_USER=postgres
-> SUPABASE_DB_PASSWORD=
-> DATABASE_URL=
-> 
-> .gitignore should block:
-> .env
-> .env.*
-> !.env.example
-> **/_secrets/
-> **/secrets/
-> *.pem
-> *.key
-> *.p12
-> *.crt
-> node_modules/
-> dist/
-> .supabase/
-> 
-> docs/schema-catalog.md should create a starter catalog table with columns:
-> Schema, Table, Purpose, Owner Module, Sensitivity, Status, Notes
-> 
-> docs/field-catalog.md should create a starter canonical field registry with columns:
-> Field Name, Type, Meaning, Used In Tables, Required, Default, Notes
-> 
-> docs/policy-catalog.md should create a starter RLS/policy registry with columns:
-> Table, RLS Enabled, Policy Name, Role, Operation, Rule Summary, Status
-> 
-> docs/data-source-catalog.md should create a starter source inventory with columns:
-> Source, Type, Location, Owner, Sensitivity, Target Table, Import Status, Notes
-> 
-> docs/migration-runbook.md should document:
-> 
-> * create migrations through Supabase CLI
-> * test locally before pushing
-> * never hand-edit production without capturing it in migration files
-> * never commit secrets
-> * protect main branch
-> * use pull requests for production changes
-> 
-> docs/import-runbook.md should document the intended import flow:
-> raw source file -> import batch -> source_records -> validation -> canonical table -> audit trail
-> 
-> docs/deployment-flow.md should document:
-> feature branch -> PR -> Supabase checks -> merge to main -> Supabase deploys production
-> 
-> Create SQL helper file sql/updated_at_trigger.sql:
-> 
-> * define a reusable updated_at trigger function
-> 
-> Create SQL helper file sql/is_admin.sql:
-> 
-> * define or document a placeholder public.is_admin() function.
-> * If an existing version exists, do not overwrite it; just preserve or comment.
-> 
-> Create schemas/ files as declarative placeholders with useful comments.
-> Do not duplicate all migrations into schemas yet.
-> Just create clean starter files explaining intended ownership.
-> 
-> Create policies/ files as placeholders with comments explaining RLS intent.
-> Do not create open public access policies.
-> 
-> Add one new migration only if import infrastructure tables do not already exist.
-> Name it with current timestamp format:
-> YYYYMMDDHHMMSS_create_import_infrastructure.sql
-> 
-> The migration should safely create:
-> 
-> public.import_batches:
-> 
-> * id uuid primary key default gen_random_uuid()
-> * source_name text not null
-> * source_type text not null
-> * source_path text
-> * imported_by uuid
-> * import_status text not null default 'pending'
-> * record_count integer default 0
-> * error_count integer default 0
-> * notes text
-> * created_at timestamptz not null default now()
-> * updated_at timestamptz not null default now()
-> 
-> public.source_records:
-> 
-> * id uuid primary key default gen_random_uuid()
-> * import_batch_id uuid references public.import_batches(id) on delete cascade
-> * source_record_id text
-> * source_table text
-> * source_payload jsonb not null
-> * normalized_payload jsonb
-> * target_table text
-> * target_id uuid
-> * processing_status text not null default 'pending'
-> * error_message text
-> * created_at timestamptz not null default now()
-> * processed_at timestamptz
-> 
-> Also:
-> 
-> * enable RLS on both tables
-> * do not create broad permissive policies
-> * create indexes for import_batch_id, processing_status, source_table, target_table
-> * create updated_at trigger for import_batches if helper function exists in the same migration or project
-> 
-> Create import templates as CSV headers only. No real data.
-> 
-> After making changes:
-> 
-> 1. Show the final tree under qisupabase.
-> 2. Show git status.
-> 3. List every file created or changed.
-> 4. Warn me if any real-looking secret was detected.
-> 5. Do not push unless I explicitly tell you to push.
-> 
-> One extra thing: **before you push**, check whether Supabase is watching this nested path:
-> 
-> ```text
-> 20_QiSystem/50_data/supabase/qisupabase
-> ```
-> 
+> ok so you were tripping and using old schema ideas from the past, can you update the text below so it is aligned with the most update to date decisions. Paste this into your IDE agent/Aider/Codex. It tells it to **populate the safe general repo files** without touching secrets or doing anything destructive.
+
+> 
+
+> You are working inside the QiSystem Supabase project.
+
+> 
+
+> Current intended project folder:
+
+> 
+
+> C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase
+
+> 
+
+> Goal:
+
+> Populate the basic Supabase repo structure so it is useful for GitHub/Supabase deployment testing, documentation, and future data migration work.
+
+> 
+
+> Important rules:
+
+> 
+
+> 1. Do NOT add real secrets, passwords, Supabase service-role keys, database URLs, JWT secrets, API keys, or personal/private data.
+
+> 2. Do NOT delete or rename existing migrations.
+
+> 3. Do NOT rewrite existing migration files unless there is an obvious syntax-breaking issue, and if so, report it first.
+
+> 4. Do NOT run production deploy commands.
+
+> 5. Create missing folders and safe starter files only.
+
+> 6. Use placeholder values in .env.example.
+
+> 7. Keep this migration-first and GitHub-safe.
+
+> 8. If there is already a file, update it carefully rather than replacing useful content.
+
+> 
+
+> Create or update this structure:
+
+> 
+
+> qisupabase/
+
+> README.md
+
+> connection-map.md
+
+> .env.example
+
+> .gitignore
+
+> config.toml
+
+> 
+
+> migrations/
+
+> existing files stay untouched
+
+> add one new timestamped migration for import infrastructure only if no equivalent exists
+
+> 
+
+> schemas/
+
+> 00_extensions.sql
+
+> 01_core.sql
+
+> 02_imports.sql
+
+> 03_qivault.sql
+
+> 04_qicase.sql
+
+> 05_qievidence.sql
+
+> 90_views.sql
+
+> 99_grants.sql
+
+> 
+
+> policies/
+
+> 00_rls_enable.sql
+
+> 01_admin_policies.sql
+
+> 02_import_policies.sql
+
+> 03_qivault_policies.sql
+
+> 04_qicase_policies.sql
+
+> 05_qievidence_policies.sql
+
+> 
+
+> sql/
+
+> is_admin.sql
+
+> updated_at_trigger.sql
+
+> 
+
+> functions/
+
+> qivault-ingest/
+
+> index.ts
+
+> _shared/
+
+> supabaseAdmin.ts
+
+> 
+
+> types/
+
+> README.md
+
+> 
+
+> docs/
+
+> schema-catalog.md
+
+> field-catalog.md
+
+> policy-catalog.md
+
+> data-source-catalog.md
+
+> migration-runbook.md
+
+> import-runbook.md
+
+> deployment-flow.md
+
+> 
+
+> imports/
+
+> README.md
+
+> manifests/
+
+> initial-import-manifest.csv
+
+> templates/
+
+> qibit_import_template.csv
+
+> evidence_import_template.csv
+
+> case_event_import_template.csv
+
+> contact_import_template.csv
+
+> file_import_template.csv
+
+> samples/
+
+> sample_qibit_import.csv
+
+> 
+
+> README.md should explain:
+
+> 
+
+> * This is QiSupabase, the Supabase database/backend project for QiSystem.
+
+> * Supabase is owned by QiSystem.
+
+> * QiConnect feeds data into Supabase.
+
+> * QiLife and other apps consume Supabase data.
+
+> * Real secrets are not stored here.
+
+> * Production changes should happen through migrations and protected GitHub branches.
+
+> 
+
+> connection-map.md should document:
+
+> 
+
+> * Supabase dashboard URL placeholder
+
+> * project ref placeholder
+
+> * anon key location placeholder
+
+> * service role key location placeholder
+
+> * database password location placeholder
+
+> * where local/server secrets are stored, using:
+
+>   /srv/qios/_secrets/supabase/
+
+> * connected apps:
+
+>   QiLife
+
+>   QiAccess
+
+>   QiVault ingest
+
+>   QiConnect integrations
+
+> * no actual secrets
+
+> 
+
+> .env.example should include placeholder variables:
+
+> SUPABASE_URL=
+
+> SUPABASE_ANON_KEY=
+
+> SUPABASE_SERVICE_ROLE_KEY=
+
+> SUPABASE_DB_HOST=
+
+> SUPABASE_DB_PORT=5432
+
+> SUPABASE_DB_NAME=postgres
+
+> SUPABASE_DB_USER=postgres
+
+> SUPABASE_DB_PASSWORD=
+
+> DATABASE_URL=
+
+> 
+
+> .gitignore should block:
+
+> .env
+
+> .env.*
+
+> !.env.example
+
+> **/_secrets/
+
+> **/secrets/
+
+> *.pem
+
+> *.key
+
+> *.p12
+
+> *.crt
+
+> node_modules/
+
+> dist/
+
+> .supabase/
+
+> 
+
+> docs/schema-catalog.md should create a starter catalog table with columns:
+
+> Schema, Table, Purpose, Owner Module, Sensitivity, Status, Notes
+
+> 
+
+> docs/field-catalog.md should create a starter canonical field registry with columns:
+
+> Field Name, Type, Meaning, Used In Tables, Required, Default, Notes
+
+> 
+
+> docs/policy-catalog.md should create a starter RLS/policy registry with columns:
+
+> Table, RLS Enabled, Policy Name, Role, Operation, Rule Summary, Status
+
+> 
+
+> docs/data-source-catalog.md should create a starter source inventory with columns:
+
+> Source, Type, Location, Owner, Sensitivity, Target Table, Import Status, Notes
+
+> 
+
+> docs/migration-runbook.md should document:
+
+> 
+
+> * create migrations through Supabase CLI
+
+> * test locally before pushing
+
+> * never hand-edit production without capturing it in migration files
+
+> * never commit secrets
+
+> * protect main branch
+
+> * use pull requests for production changes
+
+> 
+
+> docs/import-runbook.md should document the intended import flow:
+
+> raw source file -> import batch -> source_records -> validation -> canonical table -> audit trail
+
+> 
+
+> docs/deployment-flow.md should document:
+
+> feature branch -> PR -> Supabase checks -> merge to main -> Supabase deploys production
+
+> 
+
+> Create SQL helper file sql/updated_at_trigger.sql:
+
+> 
+
+> * define a reusable updated_at trigger function
+
+> 
+
+> Create SQL helper file sql/is_admin.sql:
+
+> 
+
+> * define or document a placeholder public.is_admin() function.
+
+> * If an existing version exists, do not overwrite it; just preserve or comment.
+
+> 
+
+> Create schemas/ files as declarative placeholders with useful comments.
+
+> Do not duplicate all migrations into schemas yet.
+
+> Just create clean starter files explaining intended ownership.
+
+> 
+
+> Create policies/ files as placeholders with comments explaining RLS intent.
+
+> Do not create open public access policies.
+
+> 
+
+> Add one new migration only if import infrastructure tables do not already exist.
+
+> Name it with current timestamp format:
+
+> YYYYMMDDHHMMSS_create_import_infrastructure.sql
+
+> 
+
+> The migration should safely create:
+
+> 
+
+> public.import_batches:
+
+> 
+
+> * id uuid primary key default gen_random_uuid()
+
+> * source_name text not null
+
+> * source_type text not null
+
+> * source_path text
+
+> * imported_by uuid
+
+> * import_status text not null default 'pending'
+
+> * record_count integer default 0
+
+> * error_count integer default 0
+
+> * notes text
+
+> * created_at timestamptz not null default now()
+
+> * updated_at timestamptz not null default now()
+
+> 
+
+> public.source_records:
+
+> 
+
+> * id uuid primary key default gen_random_uuid()
+
+> * import_batch_id uuid references public.import_batches(id) on delete cascade
+
+> * source_record_id text
+
+> * source_table text
+
+> * source_payload jsonb not null
+
+> * normalized_payload jsonb
+
+> * target_table text
+
+> * target_id uuid
+
+> * processing_status text not null default 'pending'
+
+> * error_message text
+
+> * created_at timestamptz not null default now()
+
+> * processed_at timestamptz
+
+> 
+
+> Also:
+
+> 
+
+> * enable RLS on both tables
+
+> * do not create broad permissive policies
+
+> * create indexes for import_batch_id, processing_status, source_table, target_table
+
+> * create updated_at trigger for import_batches if helper function exists in the same migration or project
+
+> 
+
+> Create import templates as CSV headers only. No real data.
+
+> 
+
+> After making changes:
+
+> 
+
+> 1. Show the final tree under qisupabase.
+
+> 2. Show git status.
+
+> 3. List every file created or changed.
+
+> 4. Warn me if any real-looking secret was detected.
+
+> 5. Do not push unless I explicitly tell you to push.
+
+> 
+
+> One extra thing: **before you push**, check whether Supabase is watching this nested path:
+
+> 
+
+> ```text
+
+> 20_QiSystem/50_data/supabase/qisupabase
+
+> ```
+
+> 
+
 > If Supabase expects the deployable folder to be named exactly `supabase/` at repo root, this structure may not deploy automatically. If that happens, we either adjust the GitHub integration path or add a thin root-level `supabase/` deploy folder.
 
 ### Assistant

@@ -7,10 +7,10 @@ type: runtime_profile
 host: qiserver
 tailscale_name: qiserver-1
 layout: page
-slug: ""
+slug: qiserver-private-ai-node
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 57838754da11442a852c59433aa775e7
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,9 +3,9 @@ layout: page
 title: "Cloning NocoDB Instance"
 slug: "cloning_nocodb_instance"
 created_at: "2026-03-18 21:38:07"
-updated_at: "2026-03-18 21:38:07"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -217,109 +217,212 @@ canonical_ref: ""
 > - or a ready-to-paste `docker-compose.yml` plus `.env` built for your setup.
 
 ### User
-> at 11607 (/usr/src/app/docker/index.js:1:16196460)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 49614 (/usr/src/app/docker/index.js:1:12108432)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
->   code: 'ERR_INVALID_URL',
->   input: 'nocodb.qially.com'
-> }
-> Node.js v22.12.0
-> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
-> Skip sourcing /mnt/efs/master_config.env as file does not exists
-> Skip sourcing /mnt/efs//cluster.env as file does not exists
-> splitting NC_PROPERTIES_JSON into env variables
-> completed configure
-> node:internal/url:818
->       href = bindingUrl.parse(input, base, true);
->                         ^
-> TypeError: Invalid URL
->     at new URL (node:internal/url:818:25)
->     at 41721 (/usr/src/app/docker/index.js:1:13313714)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 85698 (/usr/src/app/docker/index.js:1:21307455)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 11607 (/usr/src/app/docker/index.js:1:16196460)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 49614 (/usr/src/app/docker/index.js:1:12108432)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
->   code: 'ERR_INVALID_URL',
->   input: 'nocodb.qially.com'
-> }
-> Node.js v22.12.0
-> Skip sourcing /mnt/efs/master_config.env as file does not exists
-> Skip sourcing /mnt/efs//cluster.env as file does not exists
-> splitting NC_PROPERTIES_JSON into env variables
-> completed configure
-> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
->     at 49614 (/usr/src/app/docker/index.js:1:12108432)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
->   code: 'ERR_INVALID_URL',
->   input: 'nocodb.qially.com'
-> }
-> Node.js v22.12.0
-> node:internal/url:818
->       href = bindingUrl.parse(input, base, true);
->                         ^
-> TypeError: Invalid URL
->     at new URL (node:internal/url:818:25)
->     at 41721 (/usr/src/app/docker/index.js:1:13313714)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 85698 (/usr/src/app/docker/index.js:1:21307455)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 11607 (/usr/src/app/docker/index.js:1:16196460)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
-> Skip sourcing /mnt/efs/master_config.env as file does not exists
-> Skip sourcing /mnt/efs//cluster.env as file does not exists
-> splitting NC_PROPERTIES_JSON into env variables
-> completed configure
-> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
-> node:internal/url:818
->       href = bindingUrl.parse(input, base, true);
->                         ^
-> TypeError: Invalid URL
->     at new URL (node:internal/url:818:25)
->     at 41721 (/usr/src/app/docker/index.js:1:13313714)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 85698 (/usr/src/app/docker/index.js:1:21307455)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 11607 (/usr/src/app/docker/index.js:1:16196460)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 49614 (/usr/src/app/docker/index.js:1:12108432)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
->   code: 'ERR_INVALID_URL',
->   input: 'nocodb.qially.com'
-> }
-> Node.js v22.12.0
-> Skip sourcing /mnt/efs/master_config.env as file does not exists
-> Skip sourcing /mnt/efs//cluster.env as file does not exists
-> splitting NC_PROPERTIES_JSON into env variables
-> completed configure
-> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
->     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
->   code: 'ERR_INVALID_URL',
->   input: 'nocodb.qially.com'
-> }
-> Node.js v22.12.0
-> node:internal/url:818
->       href = bindingUrl.parse(input, base, true);
->                         ^
-> TypeError: Invalid URL
->     at new URL (node:internal/url:818:25)
->     at 41721 (/usr/src/app/docker/index.js:1:13313714)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 85698 (/usr/src/app/docker/index.js:1:21307455)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 11607 (/usr/src/app/docker/index.js:1:16196460)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
->     at 49614 (/usr/src/app/docker/index.js:1:12108432)
->     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
-> Skip sourcing /mnt/efs/master_config.env as file does not exists
-> Skip sourcing /mnt/efs//cluster.env as file does not exists
+> at 11607 (/usr/src/app/docker/index.js:1:16196460)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 49614 (/usr/src/app/docker/index.js:1:12108432)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
+
+>   code: 'ERR_INVALID_URL',
+
+>   input: 'nocodb.qially.com'
+
+> }
+
+> Node.js v22.12.0
+
+> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
+
+> Skip sourcing /mnt/efs/master_config.env as file does not exists
+
+> Skip sourcing /mnt/efs//cluster.env as file does not exists
+
+> splitting NC_PROPERTIES_JSON into env variables
+
+> completed configure
+
+> node:internal/url:818
+
+>       href = bindingUrl.parse(input, base, true);
+
+>                         ^
+
+> TypeError: Invalid URL
+
+>     at new URL (node:internal/url:818:25)
+
+>     at 41721 (/usr/src/app/docker/index.js:1:13313714)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 85698 (/usr/src/app/docker/index.js:1:21307455)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 11607 (/usr/src/app/docker/index.js:1:16196460)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 49614 (/usr/src/app/docker/index.js:1:12108432)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
+
+>   code: 'ERR_INVALID_URL',
+
+>   input: 'nocodb.qially.com'
+
+> }
+
+> Node.js v22.12.0
+
+> Skip sourcing /mnt/efs/master_config.env as file does not exists
+
+> Skip sourcing /mnt/efs//cluster.env as file does not exists
+
+> splitting NC_PROPERTIES_JSON into env variables
+
+> completed configure
+
+> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
+
+>     at 49614 (/usr/src/app/docker/index.js:1:12108432)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
+
+>   code: 'ERR_INVALID_URL',
+
+>   input: 'nocodb.qially.com'
+
+> }
+
+> Node.js v22.12.0
+
+> node:internal/url:818
+
+>       href = bindingUrl.parse(input, base, true);
+
+>                         ^
+
+> TypeError: Invalid URL
+
+>     at new URL (node:internal/url:818:25)
+
+>     at 41721 (/usr/src/app/docker/index.js:1:13313714)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 85698 (/usr/src/app/docker/index.js:1:21307455)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 11607 (/usr/src/app/docker/index.js:1:16196460)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+> Skip sourcing /mnt/efs/master_config.env as file does not exists
+
+> Skip sourcing /mnt/efs//cluster.env as file does not exists
+
+> splitting NC_PROPERTIES_JSON into env variables
+
+> completed configure
+
+> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
+
+> node:internal/url:818
+
+>       href = bindingUrl.parse(input, base, true);
+
+>                         ^
+
+> TypeError: Invalid URL
+
+>     at new URL (node:internal/url:818:25)
+
+>     at 41721 (/usr/src/app/docker/index.js:1:13313714)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 85698 (/usr/src/app/docker/index.js:1:21307455)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 11607 (/usr/src/app/docker/index.js:1:16196460)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 49614 (/usr/src/app/docker/index.js:1:12108432)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
+
+>   code: 'ERR_INVALID_URL',
+
+>   input: 'nocodb.qially.com'
+
+> }
+
+> Node.js v22.12.0
+
+> Skip sourcing /mnt/efs/master_config.env as file does not exists
+
+> Skip sourcing /mnt/efs//cluster.env as file does not exists
+
+> splitting NC_PROPERTIES_JSON into env variables
+
+> completed configure
+
+> Mounting volume on: /var/lib/containers/railwayapp/bind-mounts/7baa66d6-8294-4fcb-83c3-3171e12df581/vol_59vf9c5wvoehgmiy
+
+>     at 68538 (/usr/src/app/docker/index.js:1:9668603) {
+
+>   code: 'ERR_INVALID_URL',
+
+>   input: 'nocodb.qially.com'
+
+> }
+
+> Node.js v22.12.0
+
+> node:internal/url:818
+
+>       href = bindingUrl.parse(input, base, true);
+
+>                         ^
+
+> TypeError: Invalid URL
+
+>     at new URL (node:internal/url:818:25)
+
+>     at 41721 (/usr/src/app/docker/index.js:1:13313714)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 85698 (/usr/src/app/docker/index.js:1:21307455)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 11607 (/usr/src/app/docker/index.js:1:16196460)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+>     at 49614 (/usr/src/app/docker/index.js:1:12108432)
+
+>     at _0x5acfbe (/usr/src/app/docker/index.js:1:25792506)
+
+> Skip sourcing /mnt/efs/master_config.env as file does not exists
+
+> Skip sourcing /mnt/efs//cluster.env as file does not exists
+
 > splitting NC_PROPERTIES_JSON into env variables
 
 ### Assistant

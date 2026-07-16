@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Business funds unlawfully frozen by Verizon"
 slug: "business_funds_unlawfully_frozen_by_verizon"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 1db675e6ed5d49e38f65129ec65c2bf1
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Business funds unlawfully frozen by Verizon
 
 Category: Challenge

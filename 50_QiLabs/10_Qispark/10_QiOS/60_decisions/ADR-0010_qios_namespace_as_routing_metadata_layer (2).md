@@ -9,10 +9,10 @@ related:
   - docs/10_core/30_data/70_object_model.md
   - docs/10_core/30_data/110_front_matter.md
 layout: page
-slug: ""
+slug: adr-0010-qios-namespace-as-routing-metadata-layer
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 tags: []
 keywords: []
@@ -21,7 +21,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: a3880fce78a24cc8b3bc28fd19e101b3
 canonical_ref: ""
 source_type: manual
 template_key: master-template

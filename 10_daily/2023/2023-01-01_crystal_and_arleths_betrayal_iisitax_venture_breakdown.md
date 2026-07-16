@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Crystal and Arleth's betrayal - IISITAX venture breakdown"
 slug: "crystal_and_arleths_betrayal_iisitax_venture_breakdown"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3dfe12a89b604e1d93ae383f6d684518
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Crystal and Arleth's betrayal - IISITAX venture breakdown
 
 Category: Challenge

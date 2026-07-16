@@ -3,9 +3,9 @@ layout: page
 title: "Thermal Receipt Generation"
 slug: "thermal_receipt_generation"
 created_at: "2023-07-14 12:25:59"
-updated_at: "2023-07-14 12:25:59"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

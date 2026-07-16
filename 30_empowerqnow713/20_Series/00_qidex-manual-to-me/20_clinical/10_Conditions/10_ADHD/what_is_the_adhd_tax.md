@@ -12,10 +12,27 @@ last_updated: 2026-05-24
 related:
   - 30_clinical/10_adhd/adhd_operating_notes.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
-tags:
+tags: []
   - adhd
   - adhd-tax
   - financial
+layout: page
+slug: what-is-the-adhd-tax-and-how-to-stop-paying-it
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 7c7cce6622ac4ad2a612f1a354c9d401
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # What Is the ADHD Tax? (And How to Stop Paying It)

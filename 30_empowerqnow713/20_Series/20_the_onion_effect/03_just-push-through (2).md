@@ -4,7 +4,7 @@ title: The "Just Push Through" Myth - When Masking Becomes Survival Mode
 series: The Onion Effect
 episode: 3
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - masking
   - neurodivergence
   - burnout
@@ -17,10 +17,10 @@ platforms:
   - Qsays
   - YouTube
 layout: page
-slug: ""
+slug: the-just-push-through-myth-when-masking-becomes-survival-mode
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -29,7 +29,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: dacc6dffffbe4125aa6d314eedc1a150
 canonical_ref: ""
 source_type: manual
 template_key: master-template

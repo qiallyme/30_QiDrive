@@ -3,9 +3,9 @@ layout: page
 title: "Updated Printout Needed"
 slug: "updated_printout_needed"
 created_at: "2023-07-14 17:16:33"
-updated_at: "2023-07-14 17:16:33"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -1,14 +1,14 @@
 ---
-uid:
+uid: da462159691243c3889ddb96296e28c1
   9138f16a-3e33-440d-9133-98d6b5964d2a ...
   ...
 layout: page
 title: Portal Api
-slug: ""
+slug: portal-api
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []

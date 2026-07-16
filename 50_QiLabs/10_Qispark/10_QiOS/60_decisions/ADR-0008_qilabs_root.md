@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0008: QiLabs as Canonical Local Workstation Root
 slug: adr-0008-qilabs-as-canonical-local-workstation-root
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f5060c8c9b7a46ff8234a079ceb686d5
 canonical_ref: ""
 template_key: master-template
 ---

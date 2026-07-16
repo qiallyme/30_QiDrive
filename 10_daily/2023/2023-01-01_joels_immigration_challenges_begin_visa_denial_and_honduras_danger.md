@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Joel's immigration challenges begin - visa denial and Honduras danger"
 slug: "joels_immigration_challenges_begin_visa_denial_and_honduras_danger"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 925edce98cf64795acf321f3076dfacd
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Joel's immigration challenges begin - visa denial and Honduras danger
 
 Category: Challenge

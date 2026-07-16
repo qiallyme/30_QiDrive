@@ -3,9 +3,9 @@ layout: page
 title: "Video to Speech Pipeline"
 slug: "video_to_speech_pipeline"
 created_at: "2026-03-30 08:35:44"
-updated_at: "2026-03-30 08:35:44"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -571,40 +571,74 @@ canonical_ref: ""
 > I can also patch the script so it automatically writes a **“needs_recheck” CSV** based on transcript confidence signals.
 
 ### User
-> Requirement already satisfied: idna<4,>=2.5 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (3.11)
-> Requirement already satisfied: urllib3<3,>=1.21.1 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (2.5.0)
-> Requirement already satisfied: certifi>=2017.4.17 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (2025.10.5)
-> Requirement already satisfied: mpmath<1.4,>=1.1.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from sympy->onnxruntime<2,>=1.14->faster-whisper) (1.3.0)
-> Using cached faster_whisper-1.2.1-py3-none-any.whl (1.1 MB)
-> Using cached ctranslate2-4.7.1-cp314-cp314-win_amd64.whl (19.1 MB)
-> Using cached onnxruntime-1.24.4-cp314-cp314-win_amd64.whl (12.9 MB)
-> Using cached av-17.0.0-cp311-abi3-win_amd64.whl (28.9 MB)
-> Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
-> Installing collected packages: flatbuffers, ctranslate2, av, onnxruntime, faster-whisper
-> Successfully installed av-17.0.0 ctranslate2-4.7.1 faster-whisper-1.2.1 flatbuffers-25.12.19 onnxruntime-1.24.4
-> PS C:\QiLabstranscriber> python video_stt_pipeline.py
-> Enter the folder path to scan: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day
-> Produce speech-to-text too? [Y/n]: y
-> Apply cleanup filters before STT? [Y/n]: y
-> Whisper model to use [small]: base.en
-> 
-> Root: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day
-> Found 174 video file(s).
-> Output: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\_stt_output
-> Cleanup: ON
-> STT: ON
-> Model: base.en
-> Device: cpu
-> 
-> [1/174] G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\08-56-18_2a.mkv
->   - Audio written: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\_stt_output\audio_clean\08-56-18_2a.clean.wav
-> Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
-> config.json: 2.23kB [00:00, 5.22MB/s]
-> vocabulary.txt: 0.00B [00:00, ?B/s]C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\codyr\.cache\huggingface\hub\models--Systran--faster-whisper-base.en. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
-> To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
->   warnings.warn(message)
-> vocabulary.txt: 422kB [00:00, 617kB/s]
-> tokenizer.json: 2.13MB [00:01, 1.87MB/s]
+> Requirement already satisfied: idna<4,>=2.5 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (3.11)
+
+> Requirement already satisfied: urllib3<3,>=1.21.1 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (2.5.0)
+
+> Requirement already satisfied: certifi>=2017.4.17 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from requests->huggingface-hub>=0.21->faster-whisper) (2025.10.5)
+
+> Requirement already satisfied: mpmath<1.4,>=1.1.0 in C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages (from sympy->onnxruntime<2,>=1.14->faster-whisper) (1.3.0)
+
+> Using cached faster_whisper-1.2.1-py3-none-any.whl (1.1 MB)
+
+> Using cached ctranslate2-4.7.1-cp314-cp314-win_amd64.whl (19.1 MB)
+
+> Using cached onnxruntime-1.24.4-cp314-cp314-win_amd64.whl (12.9 MB)
+
+> Using cached av-17.0.0-cp311-abi3-win_amd64.whl (28.9 MB)
+
+> Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+
+> Installing collected packages: flatbuffers, ctranslate2, av, onnxruntime, faster-whisper
+
+> Successfully installed av-17.0.0 ctranslate2-4.7.1 faster-whisper-1.2.1 flatbuffers-25.12.19 onnxruntime-1.24.4
+
+> PS C:\QiLabstranscriber> python video_stt_pipeline.py
+
+> Enter the folder path to scan: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day
+
+> Produce speech-to-text too? [Y/n]: y
+
+> Apply cleanup filters before STT? [Y/n]: y
+
+> Whisper model to use [small]: base.en
+
+> 
+
+> Root: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day
+
+> Found 174 video file(s).
+
+> Output: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\_stt_output
+
+> Cleanup: ON
+
+> STT: ON
+
+> Model: base.en
+
+> Device: cpu
+
+> 
+
+> [1/174] G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\08-56-18_2a.mkv
+
+>   - Audio written: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\_stt_output\audio_clean\08-56-18_2a.clean.wav
+
+> Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+
+> config.json: 2.23kB [00:00, 5.22MB/s]
+
+> vocabulary.txt: 0.00B [00:00, ?B/s]C:\Users\codyr\AppData\Roaming\Python\Python314\site-packages\huggingface_hub\file_download.py:143: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\codyr\.cache\huggingface\hub\models--Systran--faster-whisper-base.en. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+
+> To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+
+>   warnings.warn(message)
+
+> vocabulary.txt: 422kB [00:00, 617kB/s]
+
+> tokenizer.json: 2.13MB [00:01, 1.87MB/s]
+
 > model.bin:  79%|█████████████████████████████████████████████████████████████████▉                 | 115M/145M [01:17<00:22, 1.30MB/s]
 
 ### Assistant
@@ -1080,390 +1114,774 @@ canonical_ref: ""
 > If you want, I can give you the **fully rewritten script** in one clean block so you can just replace the whole file instead of doing surgery.
 
 ### User
-> PS C:\QiLabs> & C:/Users/codyr/AppData/Roaming/uv/python/cpython-3.14.3-windows-x86_64-none/python.exe c:/QiLabs/_QiOne_MonoRepo_v0.4/_App_Experiments/video-transcriber/video_stt_pipeline.py
-> Enter the folder path to scan: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\redo
-> Produce speech-to-text too? [Y/n]: y
-> Apply cleanup filters before STT? [Y/n]: y
-> Whisper model to use [small]: medium.en
-> Traceback (most recent call last):
->   File "c:\QiLabs\_QiOne_MonoRepo_v0.4\_App_Experiments\video-transcriber\video_stt_pipeline.py", line 372, in <module>
->     main()
->     ~~~~^^
->   File "c:\QiLabs\_QiOne_MonoRepo_v0.4\_App_Experiments\video-transcriber\video_stt_pipeline.py", line 284, in main
->     video_files = discover_videos(root)
->                   ^^^^^^^^^^^^^^^
-> NameError: name 'discover_videos' is not defined. Did you mean: 'discover_media'?
-> PS C:\QiLabs> , just redo the whole thing and have it interactive for pass selection small, medium etc. #!/usr/bin/env python3
-> """
-> Recursive video -> cleaned audio -> optional English STT pipeline.
-> 
-> What it does:
-> 1. Prompts for a root folder (unless --path is passed)
-> 2. Recursively finds video files
-> 3. Extracts audio to 16 kHz mono WAV
-> 4. Applies conservative speech-focused cleanup with FFmpeg
-> 5. Optionally transcribes to English .txt and .srt using faster-whisper
-> 
-> Outputs go into:
-> <root>/_stt_output/audio_clean/...
-> <root>/_stt_output/transcripts/...
-> <root>/_stt_output/manifest.json
-> """
-> 
-> from __future__ import annotations
-> 
-> import argparse
-> import json
-> import shutil
-> import subprocess
-> import sys
-> from dataclasses import asdict, dataclass
-> from pathlib import Path
-> from typing import Optional
-> 
-> VIDEO_EXTENSIONS = {
->     ".mp4", ".mov", ".mkv", ".avi", ".wmv", ".m4v", ".webm",
->     ".flv", ".mpeg", ".mpg", ".ts", ".mts", ".m2ts", ".3gp"
-> }
-> 
-> AUDIO_EXTENSIONS = {
->     ".wav", ".mp3", ".m4a", ".aac", ".flac", ".ogg", ".wma"
-> }
-> 
-> SUPPORTED_EXTENSIONS = VIDEO_EXTENSIONS | AUDIO_EXTENSIONS
-> 
-> # Conservative cleanup chain for speech prep:
-> # - highpass: remove low rumble
-> # - lowpass: remove useless very high frequencies for speech STT
-> # - afftdn: light spectral denoise
-> # - loudnorm: stabilize volume
-> DEFAULT_FILTER_CHAIN = (
->     "highpass=f=80,"
->     "lowpass=f=7500,"
->     "afftdn=nr=12:nf=-30,"
->     "loudnorm=I=-16:LRA=11:TP=-1.5"
-> )
-> 
-> 
-> @dataclass
-> class FileResult:
->     video: str
->     status: str
->     audio_path: Optional[str] = None
->     txt_path: Optional[str] = None
->     srt_path: Optional[str] = None
->     error: Optional[str] = None
-> 
-> 
-> def run_cmd(cmd: list[str]) -> subprocess.CompletedProcess:
->     return subprocess.run(
->         cmd,
->         stdout=subprocess.PIPE,
->         stderr=subprocess.PIPE,
->         text=True,
->         check=False
->     )
-> 
-> 
-> def require_binary(name: str) -> str:
->     path = shutil.which(name)
->     if not path:
->         print(f"ERROR: '{name}' was not found on PATH.")
->         sys.exit(1)
->     return path
-> 
-> 
-> def prompt_path() -> Path:
->     while True:
->         raw = input("Enter the folder path to scan: ").strip().strip('"').strip("'")
->         path = Path(raw).expanduser()
->         if path.is_dir():
->             return path.resolve()
->         print("That path is not a valid folder. Try again.")
-> 
-> 
-> def prompt_yes_no(question: str, default: bool = True) -> bool:
->     suffix = " [Y/n]: " if default else " [y/N]: "
->     raw = input(question + suffix).strip().lower()
->     if not raw:
->         return default
->     return raw in {"y", "yes"}
-> 
-> 
-> def prompt_text(question: str, default: str) -> str:
->     raw = input(f"{question} [{default}]: ").strip()
->     return raw or default
-> 
-> 
-> def discover_media(root: Path) -> list[Path]:
->     return sorted(
->         p for p in root.rglob("*")
->         if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS
->     )
-> 
-> 
-> def has_audio_stream(ffprobe_bin: str, video_path: Path) -> bool:
->     cmd = [
->         ffprobe_bin,
->         "-v", "error",
->         "-select_streams", "a:0",
->         "-show_entries", "stream=codec_type",
->         "-of", "default=nw=1:nk=1",
->         str(video_path),
->     ]
->     result = run_cmd(cmd)
->     return result.returncode == 0 and "audio" in result.stdout.lower()
-> 
-> 
-> def ensure_parent(path: Path) -> None:
->     path.parent.mkdir(parents=True, exist_ok=True)
-> 
-> 
-> def extract_and_clean_audio(
->     ffmpeg_bin: str,
->     video_path: Path,
->     output_wav: Path,
->     cleanup: bool,
->     filter_chain: str,
-> ) -> None:
->     ensure_parent(output_wav)
-> 
->     cmd = [
->         ffmpeg_bin,
->         "-y",
->         "-hide_banner",
->         "-loglevel", "error",
->         "-i", str(video_path),
->         "-vn",
->         "-map", "0:a:0",
->         "-ac", "1",
->         "-ar", "16000",
->         "-c:a", "pcm_s16le",
->     ]
-> 
->     if cleanup:
->         cmd += ["-af", filter_chain]
-> 
->     cmd.append(str(output_wav))
-> 
->     result = run_cmd(cmd)
->     if result.returncode != 0:
->         raise RuntimeError(result.stderr.strip() or "ffmpeg failed")
-> 
-> 
-> def format_srt_timestamp(seconds: float) -> str:
->     total_ms = int(round(seconds * 1000))
->     hours = total_ms // 3_600_000
->     total_ms %= 3_600_000
->     minutes = total_ms // 60_000
->     total_ms %= 60_000
->     secs = total_ms // 1000
->     millis = total_ms % 1000
->     return f"{hours:02d}:{minutes:02d}:{secs:02d},{millis:03d}"
-> 
-> 
-> def write_transcript_files(txt_path: Path, srt_path: Path, segments: list) -> None:
->     ensure_parent(txt_path)
->     ensure_parent(srt_path)
-> 
->     text_lines = []
->     srt_blocks = []
-> 
->     for idx, seg in enumerate(segments, start=1):
->         text = (seg.text or "").strip()
->         if not text:
->             continue
-> 
->         text_lines.append(text)
-> 
->         start_ts = format_srt_timestamp(seg.start)
->         end_ts = format_srt_timestamp(seg.end)
->         srt_blocks.append(f"{idx}\n{start_ts} --> {end_ts}\n{text}\n")
-> 
->     txt_path.write_text("\n".join(text_lines).strip() + "\n", encoding="utf-8")
->     srt_path.write_text("\n".join(srt_blocks).strip() + "\n", encoding="utf-8")
-> 
-> 
-> def transcribe_audio(
->     audio_path: Path,
->     txt_path: Path,
->     srt_path: Path,
->     model_size: str,
->     device: str,
-> ) -> None:
->     try:
->         from faster_whisper import WhisperModel
->     except ImportError as exc:
->         raise RuntimeError(
->             "faster-whisper is not installed. Run: pip install faster-whisper"
->         ) from exc
-> 
->     compute_type = "float16" if device == "cuda" else "int8"
-> 
->     model = WhisperModel(
->         model_size,
->         device=device,
->         compute_type=compute_type,
->     )
-> 
->     segments_iter, info = model.transcribe(
->         str(audio_path),
->         language="en",
->         beam_size=5,
->         vad_filter=True,
->         condition_on_previous_text=False,
->     )
-> 
->     segments = list(segments_iter)
->     if not segments:
->         ensure_parent(txt_path)
->         txt_path.write_text("", encoding="utf-8")
->         ensure_parent(srt_path)
->         srt_path.write_text("", encoding="utf-8")
->         return
-> 
->     write_transcript_files(txt_path, srt_path, segments)
-> 
-> 
-> def choose_default_device() -> str:
->     return "cuda" if shutil.which("nvidia-smi") else "cpu"
-> 
-> 
-> def build_output_paths(root: Path, video_path: Path, out_root: Path) -> tuple[Path, Path, Path]:
->     rel = video_path.relative_to(root)
->     base_rel = rel.with_suffix("")  # remove only final suffix
-> 
->     audio_out = (out_root / "audio_clean" / base_rel).with_suffix(".clean.wav")
->     txt_out = (out_root / "transcripts" / base_rel).with_suffix(".txt")
->     srt_out = (out_root / "transcripts" / base_rel).with_suffix(".srt")
->     return audio_out, txt_out, srt_out
-> 
-> 
-> def parse_args() -> argparse.Namespace:
->     parser = argparse.ArgumentParser(
->         description="Recursively extract/clean audio from video files and optionally transcribe to English."
->     )
->     parser.add_argument("--path", type=str, help="Root folder to scan")
->     parser.add_argument("--no-stt", action="store_true", help="Only extract/clean audio; do not transcribe")
->     parser.add_argument("--no-cleanup", action="store_true", help="Extract audio without cleanup filters")
->     parser.add_argument("--model", type=str, default=None, help="Whisper model size (tiny, base, small, medium, large-v3, etc.)")
->     parser.add_argument("--device", type=str, default=None, choices=["cpu", "cuda"], help="Transcription device")
->     parser.add_argument("--filter-chain", type=str, default=DEFAULT_FILTER_CHAIN, help="Custom FFmpeg audio filter chain")
->     return parser.parse_args()
-> 
-> 
-> def main() -> None:
->     args = parse_args()
-> 
->     ffmpeg_bin = require_binary("ffmpeg")
->     ffprobe_bin = require_binary("ffprobe")
-> 
->     root = Path(args.path).expanduser().resolve() if args.path else prompt_path()
->     if not root.is_dir():
->         print("ERROR: Provided path is not a folder.")
->         sys.exit(1)
-> 
->     do_stt = not args.no_stt
->     cleanup = not args.no_cleanup
-> 
->     if args.path is None:
->         do_stt = prompt_yes_no("Produce speech-to-text too?", default=True)
->         cleanup = prompt_yes_no("Apply cleanup filters before STT?", default=True)
-> 
->     model_size = args.model
->     if do_stt and not model_size:
->         model_size = prompt_text("Whisper model to use", "small")
-> 
->     device = args.device or choose_default_device()
-> 
->     video_files = discover_videos(root)
->     if not video_files:
->         print("No video files found.")
->         return
-> 
->     out_root = root / "_stt_output"
->     out_root.mkdir(parents=True, exist_ok=True)
-> 
->     print(f"\nRoot: {root}")
->     print(f"Found {len(video_files)} video file(s).")
->     print(f"Output: {out_root}")
->     print(f"Cleanup: {'ON' if cleanup else 'OFF'}")
->     print(f"STT: {'ON' if do_stt else 'OFF'}")
->     if do_stt:
->         print(f"Model: {model_size}")
->         print(f"Device: {device}")
->     print()
-> 
->     results: list[FileResult] = []
-> 
->     for index, video_path in enumerate(video_files, start=1):
->         print(f"[{index}/{len(video_files)}] {video_path}")
-> 
->         audio_out, txt_out, srt_out = build_output_paths(root, video_path, out_root)
-> 
->         try:
->             if not has_audio_stream(ffprobe_bin, video_path):
->                 msg = "Skipped: no audio stream found"
->                 print(f"  - {msg}")
->                 results.append(FileResult(
->                     video=str(video_path),
->                     status="skipped_no_audio",
->                     error=msg,
->                 ))
->                 continue
-> 
->             extract_and_clean_audio(
->                 ffmpeg_bin=ffmpeg_bin,
->                 video_path=video_path,
->                 output_wav=audio_out,
->                 cleanup=cleanup,
->                 filter_chain=args.filter_chain,
->             )
->             print(f"  - Audio written: {audio_out}")
-> 
->             txt_path_str = None
->             srt_path_str = None
-> 
->             if do_stt:
->                 transcribe_audio(
->                     audio_path=audio_out,
->                     txt_path=txt_out,
->                     srt_path=srt_out,
->                     model_size=model_size,
->                     device=device,
->                 )
->                 txt_path_str = str(txt_out)
->                 srt_path_str = str(srt_out)
->                 print(f"  - Transcript written: {txt_out}")
->                 print(f"  - Subtitles written:  {srt_out}")
-> 
->             results.append(FileResult(
->                 video=str(video_path),
->                 status="ok",
->                 audio_path=str(audio_out),
->                 txt_path=txt_path_str,
->                 srt_path=srt_path_str,
->             ))
-> 
->         except Exception as exc:
->             print(f"  - ERROR: {exc}")
->             results.append(FileResult(
->                 video=str(video_path),
->                 status="error",
->                 error=str(exc),
->             ))
-> 
->     manifest_path = out_root / "manifest.json"
->     manifest_path.write_text(
->         json.dumps([asdict(r) for r in results], indent=2, ensure_ascii=False),
->         encoding="utf-8",
->     )
-> 
->     print("\nDone.")
->     print(f"Manifest: {manifest_path}")
-> 
-> 
-> if __name__ == "__main__":
+> PS C:\QiLabs> & C:/Users/codyr/AppData/Roaming/uv/python/cpython-3.14.3-windows-x86_64-none/python.exe c:/QiLabs/_QiOne_MonoRepo_v0.4/_App_Experiments/video-transcriber/video_stt_pipeline.py
+
+> Enter the folder path to scan: G:\My Drive\QiVault\04_Projects\3.3_cases\30.06_CASE_FCFCU\content\1_Evidence\03_Video\2025-12-09_Removal_Day\redo
+
+> Produce speech-to-text too? [Y/n]: y
+
+> Apply cleanup filters before STT? [Y/n]: y
+
+> Whisper model to use [small]: medium.en
+
+> Traceback (most recent call last):
+
+>   File "c:\QiLabs\_QiOne_MonoRepo_v0.4\_App_Experiments\video-transcriber\video_stt_pipeline.py", line 372, in <module>
+
+>     main()
+
+>     ~~~~^^
+
+>   File "c:\QiLabs\_QiOne_MonoRepo_v0.4\_App_Experiments\video-transcriber\video_stt_pipeline.py", line 284, in main
+
+>     video_files = discover_videos(root)
+
+>                   ^^^^^^^^^^^^^^^
+
+> NameError: name 'discover_videos' is not defined. Did you mean: 'discover_media'?
+
+> PS C:\QiLabs> , just redo the whole thing and have it interactive for pass selection small, medium etc. #!/usr/bin/env python3
+
+> """
+
+> Recursive video -> cleaned audio -> optional English STT pipeline.
+
+> 
+
+> What it does:
+
+> 1. Prompts for a root folder (unless --path is passed)
+
+> 2. Recursively finds video files
+
+> 3. Extracts audio to 16 kHz mono WAV
+
+> 4. Applies conservative speech-focused cleanup with FFmpeg
+
+> 5. Optionally transcribes to English .txt and .srt using faster-whisper
+
+> 
+
+> Outputs go into:
+
+> <root>/_stt_output/audio_clean/...
+
+> <root>/_stt_output/transcripts/...
+
+> <root>/_stt_output/manifest.json
+
+> """
+
+> 
+
+> from __future__ import annotations
+
+> 
+
+> import argparse
+
+> import json
+
+> import shutil
+
+> import subprocess
+
+> import sys
+
+> from dataclasses import asdict, dataclass
+
+> from pathlib import Path
+
+> from typing import Optional
+
+> 
+
+> VIDEO_EXTENSIONS = {
+
+>     ".mp4", ".mov", ".mkv", ".avi", ".wmv", ".m4v", ".webm",
+
+>     ".flv", ".mpeg", ".mpg", ".ts", ".mts", ".m2ts", ".3gp"
+
+> }
+
+> 
+
+> AUDIO_EXTENSIONS = {
+
+>     ".wav", ".mp3", ".m4a", ".aac", ".flac", ".ogg", ".wma"
+
+> }
+
+> 
+
+> SUPPORTED_EXTENSIONS = VIDEO_EXTENSIONS | AUDIO_EXTENSIONS
+
+> 
+
+> # Conservative cleanup chain for speech prep:
+
+> # - highpass: remove low rumble
+
+> # - lowpass: remove useless very high frequencies for speech STT
+
+> # - afftdn: light spectral denoise
+
+> # - loudnorm: stabilize volume
+
+> DEFAULT_FILTER_CHAIN = (
+
+>     "highpass=f=80,"
+
+>     "lowpass=f=7500,"
+
+>     "afftdn=nr=12:nf=-30,"
+
+>     "loudnorm=I=-16:LRA=11:TP=-1.5"
+
+> )
+
+> 
+
+> 
+
+> @dataclass
+
+> class FileResult:
+
+>     video: str
+
+>     status: str
+
+>     audio_path: Optional[str] = None
+
+>     txt_path: Optional[str] = None
+
+>     srt_path: Optional[str] = None
+
+>     error: Optional[str] = None
+
+> 
+
+> 
+
+> def run_cmd(cmd: list[str]) -> subprocess.CompletedProcess:
+
+>     return subprocess.run(
+
+>         cmd,
+
+>         stdout=subprocess.PIPE,
+
+>         stderr=subprocess.PIPE,
+
+>         text=True,
+
+>         check=False
+
+>     )
+
+> 
+
+> 
+
+> def require_binary(name: str) -> str:
+
+>     path = shutil.which(name)
+
+>     if not path:
+
+>         print(f"ERROR: '{name}' was not found on PATH.")
+
+>         sys.exit(1)
+
+>     return path
+
+> 
+
+> 
+
+> def prompt_path() -> Path:
+
+>     while True:
+
+>         raw = input("Enter the folder path to scan: ").strip().strip('"').strip("'")
+
+>         path = Path(raw).expanduser()
+
+>         if path.is_dir():
+
+>             return path.resolve()
+
+>         print("That path is not a valid folder. Try again.")
+
+> 
+
+> 
+
+> def prompt_yes_no(question: str, default: bool = True) -> bool:
+
+>     suffix = " [Y/n]: " if default else " [y/N]: "
+
+>     raw = input(question + suffix).strip().lower()
+
+>     if not raw:
+
+>         return default
+
+>     return raw in {"y", "yes"}
+
+> 
+
+> 
+
+> def prompt_text(question: str, default: str) -> str:
+
+>     raw = input(f"{question} [{default}]: ").strip()
+
+>     return raw or default
+
+> 
+
+> 
+
+> def discover_media(root: Path) -> list[Path]:
+
+>     return sorted(
+
+>         p for p in root.rglob("*")
+
+>         if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS
+
+>     )
+
+> 
+
+> 
+
+> def has_audio_stream(ffprobe_bin: str, video_path: Path) -> bool:
+
+>     cmd = [
+
+>         ffprobe_bin,
+
+>         "-v", "error",
+
+>         "-select_streams", "a:0",
+
+>         "-show_entries", "stream=codec_type",
+
+>         "-of", "default=nw=1:nk=1",
+
+>         str(video_path),
+
+>     ]
+
+>     result = run_cmd(cmd)
+
+>     return result.returncode == 0 and "audio" in result.stdout.lower()
+
+> 
+
+> 
+
+> def ensure_parent(path: Path) -> None:
+
+>     path.parent.mkdir(parents=True, exist_ok=True)
+
+> 
+
+> 
+
+> def extract_and_clean_audio(
+
+>     ffmpeg_bin: str,
+
+>     video_path: Path,
+
+>     output_wav: Path,
+
+>     cleanup: bool,
+
+>     filter_chain: str,
+
+> ) -> None:
+
+>     ensure_parent(output_wav)
+
+> 
+
+>     cmd = [
+
+>         ffmpeg_bin,
+
+>         "-y",
+
+>         "-hide_banner",
+
+>         "-loglevel", "error",
+
+>         "-i", str(video_path),
+
+>         "-vn",
+
+>         "-map", "0:a:0",
+
+>         "-ac", "1",
+
+>         "-ar", "16000",
+
+>         "-c:a", "pcm_s16le",
+
+>     ]
+
+> 
+
+>     if cleanup:
+
+>         cmd += ["-af", filter_chain]
+
+> 
+
+>     cmd.append(str(output_wav))
+
+> 
+
+>     result = run_cmd(cmd)
+
+>     if result.returncode != 0:
+
+>         raise RuntimeError(result.stderr.strip() or "ffmpeg failed")
+
+> 
+
+> 
+
+> def format_srt_timestamp(seconds: float) -> str:
+
+>     total_ms = int(round(seconds * 1000))
+
+>     hours = total_ms // 3_600_000
+
+>     total_ms %= 3_600_000
+
+>     minutes = total_ms // 60_000
+
+>     total_ms %= 60_000
+
+>     secs = total_ms // 1000
+
+>     millis = total_ms % 1000
+
+>     return f"{hours:02d}:{minutes:02d}:{secs:02d},{millis:03d}"
+
+> 
+
+> 
+
+> def write_transcript_files(txt_path: Path, srt_path: Path, segments: list) -> None:
+
+>     ensure_parent(txt_path)
+
+>     ensure_parent(srt_path)
+
+> 
+
+>     text_lines = []
+
+>     srt_blocks = []
+
+> 
+
+>     for idx, seg in enumerate(segments, start=1):
+
+>         text = (seg.text or "").strip()
+
+>         if not text:
+
+>             continue
+
+> 
+
+>         text_lines.append(text)
+
+> 
+
+>         start_ts = format_srt_timestamp(seg.start)
+
+>         end_ts = format_srt_timestamp(seg.end)
+
+>         srt_blocks.append(f"{idx}\n{start_ts} --> {end_ts}\n{text}\n")
+
+> 
+
+>     txt_path.write_text("\n".join(text_lines).strip() + "\n", encoding="utf-8")
+
+>     srt_path.write_text("\n".join(srt_blocks).strip() + "\n", encoding="utf-8")
+
+> 
+
+> 
+
+> def transcribe_audio(
+
+>     audio_path: Path,
+
+>     txt_path: Path,
+
+>     srt_path: Path,
+
+>     model_size: str,
+
+>     device: str,
+
+> ) -> None:
+
+>     try:
+
+>         from faster_whisper import WhisperModel
+
+>     except ImportError as exc:
+
+>         raise RuntimeError(
+
+>             "faster-whisper is not installed. Run: pip install faster-whisper"
+
+>         ) from exc
+
+> 
+
+>     compute_type = "float16" if device == "cuda" else "int8"
+
+> 
+
+>     model = WhisperModel(
+
+>         model_size,
+
+>         device=device,
+
+>         compute_type=compute_type,
+
+>     )
+
+> 
+
+>     segments_iter, info = model.transcribe(
+
+>         str(audio_path),
+
+>         language="en",
+
+>         beam_size=5,
+
+>         vad_filter=True,
+
+>         condition_on_previous_text=False,
+
+>     )
+
+> 
+
+>     segments = list(segments_iter)
+
+>     if not segments:
+
+>         ensure_parent(txt_path)
+
+>         txt_path.write_text("", encoding="utf-8")
+
+>         ensure_parent(srt_path)
+
+>         srt_path.write_text("", encoding="utf-8")
+
+>         return
+
+> 
+
+>     write_transcript_files(txt_path, srt_path, segments)
+
+> 
+
+> 
+
+> def choose_default_device() -> str:
+
+>     return "cuda" if shutil.which("nvidia-smi") else "cpu"
+
+> 
+
+> 
+
+> def build_output_paths(root: Path, video_path: Path, out_root: Path) -> tuple[Path, Path, Path]:
+
+>     rel = video_path.relative_to(root)
+
+>     base_rel = rel.with_suffix("")  # remove only final suffix
+
+> 
+
+>     audio_out = (out_root / "audio_clean" / base_rel).with_suffix(".clean.wav")
+
+>     txt_out = (out_root / "transcripts" / base_rel).with_suffix(".txt")
+
+>     srt_out = (out_root / "transcripts" / base_rel).with_suffix(".srt")
+
+>     return audio_out, txt_out, srt_out
+
+> 
+
+> 
+
+> def parse_args() -> argparse.Namespace:
+
+>     parser = argparse.ArgumentParser(
+
+>         description="Recursively extract/clean audio from video files and optionally transcribe to English."
+
+>     )
+
+>     parser.add_argument("--path", type=str, help="Root folder to scan")
+
+>     parser.add_argument("--no-stt", action="store_true", help="Only extract/clean audio; do not transcribe")
+
+>     parser.add_argument("--no-cleanup", action="store_true", help="Extract audio without cleanup filters")
+
+>     parser.add_argument("--model", type=str, default=None, help="Whisper model size (tiny, base, small, medium, large-v3, etc.)")
+
+>     parser.add_argument("--device", type=str, default=None, choices=["cpu", "cuda"], help="Transcription device")
+
+>     parser.add_argument("--filter-chain", type=str, default=DEFAULT_FILTER_CHAIN, help="Custom FFmpeg audio filter chain")
+
+>     return parser.parse_args()
+
+> 
+
+> 
+
+> def main() -> None:
+
+>     args = parse_args()
+
+> 
+
+>     ffmpeg_bin = require_binary("ffmpeg")
+
+>     ffprobe_bin = require_binary("ffprobe")
+
+> 
+
+>     root = Path(args.path).expanduser().resolve() if args.path else prompt_path()
+
+>     if not root.is_dir():
+
+>         print("ERROR: Provided path is not a folder.")
+
+>         sys.exit(1)
+
+> 
+
+>     do_stt = not args.no_stt
+
+>     cleanup = not args.no_cleanup
+
+> 
+
+>     if args.path is None:
+
+>         do_stt = prompt_yes_no("Produce speech-to-text too?", default=True)
+
+>         cleanup = prompt_yes_no("Apply cleanup filters before STT?", default=True)
+
+> 
+
+>     model_size = args.model
+
+>     if do_stt and not model_size:
+
+>         model_size = prompt_text("Whisper model to use", "small")
+
+> 
+
+>     device = args.device or choose_default_device()
+
+> 
+
+>     video_files = discover_videos(root)
+
+>     if not video_files:
+
+>         print("No video files found.")
+
+>         return
+
+> 
+
+>     out_root = root / "_stt_output"
+
+>     out_root.mkdir(parents=True, exist_ok=True)
+
+> 
+
+>     print(f"\nRoot: {root}")
+
+>     print(f"Found {len(video_files)} video file(s).")
+
+>     print(f"Output: {out_root}")
+
+>     print(f"Cleanup: {'ON' if cleanup else 'OFF'}")
+
+>     print(f"STT: {'ON' if do_stt else 'OFF'}")
+
+>     if do_stt:
+
+>         print(f"Model: {model_size}")
+
+>         print(f"Device: {device}")
+
+>     print()
+
+> 
+
+>     results: list[FileResult] = []
+
+> 
+
+>     for index, video_path in enumerate(video_files, start=1):
+
+>         print(f"[{index}/{len(video_files)}] {video_path}")
+
+> 
+
+>         audio_out, txt_out, srt_out = build_output_paths(root, video_path, out_root)
+
+> 
+
+>         try:
+
+>             if not has_audio_stream(ffprobe_bin, video_path):
+
+>                 msg = "Skipped: no audio stream found"
+
+>                 print(f"  - {msg}")
+
+>                 results.append(FileResult(
+
+>                     video=str(video_path),
+
+>                     status="skipped_no_audio",
+
+>                     error=msg,
+
+>                 ))
+
+>                 continue
+
+> 
+
+>             extract_and_clean_audio(
+
+>                 ffmpeg_bin=ffmpeg_bin,
+
+>                 video_path=video_path,
+
+>                 output_wav=audio_out,
+
+>                 cleanup=cleanup,
+
+>                 filter_chain=args.filter_chain,
+
+>             )
+
+>             print(f"  - Audio written: {audio_out}")
+
+> 
+
+>             txt_path_str = None
+
+>             srt_path_str = None
+
+> 
+
+>             if do_stt:
+
+>                 transcribe_audio(
+
+>                     audio_path=audio_out,
+
+>                     txt_path=txt_out,
+
+>                     srt_path=srt_out,
+
+>                     model_size=model_size,
+
+>                     device=device,
+
+>                 )
+
+>                 txt_path_str = str(txt_out)
+
+>                 srt_path_str = str(srt_out)
+
+>                 print(f"  - Transcript written: {txt_out}")
+
+>                 print(f"  - Subtitles written:  {srt_out}")
+
+> 
+
+>             results.append(FileResult(
+
+>                 video=str(video_path),
+
+>                 status="ok",
+
+>                 audio_path=str(audio_out),
+
+>                 txt_path=txt_path_str,
+
+>                 srt_path=srt_path_str,
+
+>             ))
+
+> 
+
+>         except Exception as exc:
+
+>             print(f"  - ERROR: {exc}")
+
+>             results.append(FileResult(
+
+>                 video=str(video_path),
+
+>                 status="error",
+
+>                 error=str(exc),
+
+>             ))
+
+> 
+
+>     manifest_path = out_root / "manifest.json"
+
+>     manifest_path.write_text(
+
+>         json.dumps([asdict(r) for r in results], indent=2, ensure_ascii=False),
+
+>         encoding="utf-8",
+
+>     )
+
+> 
+
+>     print("\nDone.")
+
+>     print(f"Manifest: {manifest_path}")
+
+> 
+
+> 
+
+> if __name__ == "__main__":
+
 >     main()
 
 ### Assistant

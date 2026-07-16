@@ -3,9 +3,9 @@ layout: page
 title: "Money Manager EX Plan"
 slug: "money_manager_ex_plan"
 created_at: "2026-04-29 01:28:37"
-updated_at: "2026-04-29 01:28:37"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -820,30 +820,54 @@ canonical_ref: ""
 > **Make MMEX show what Zai owes Cody without a debate, memory fog, or “I thought you meant…” theater.**
 
 ### User
-> ok lets start with may monthlys lets get those entered first. also is there a way to run this app on the web? 
-> Money Manager Ex
-> • Version: 1.9.2 64-bit
-> • Built on: Jan 20 2026 16:00:01
-> • Database version: 21 (aes256cbc-hmac-sha512)
-> • Git commit: 96c3984 (2026-01-20)
-> MMEX is using the following support products:
-> • wxWidgets 3.3.1 (wxMSW 10.0)
-> • wxSQLite3 4.9.1 (SQLite 3.40.0)
-> • RapidJSON 1.1.0
-> • Lua 5.3.5
-> • libcurl/8.5.0-DEV Schannel
-> • gettext 0.22.5
-> • apexcharts.js
-> Built with:
-> • CMake 4.1.0
-> • MSBuild 17.14.23.42201
-> • Microsoft Visual Studio 17.0
-> • Microsoft Visual C++ 19.44.35219.0
-> • Windows SDK 10.0.26100.0
-> Running on:
-> • Windows 11 (build 29570), 64-bit edition
-> • System Locale: 
-> • User Interface Language: en_US.windows-1252
+> ok lets start with may monthlys lets get those entered first. also is there a way to run this app on the web? 
+
+> Money Manager Ex
+
+> • Version: 1.9.2 64-bit
+
+> • Built on: Jan 20 2026 16:00:01
+
+> • Database version: 21 (aes256cbc-hmac-sha512)
+
+> • Git commit: 96c3984 (2026-01-20)
+
+> MMEX is using the following support products:
+
+> • wxWidgets 3.3.1 (wxMSW 10.0)
+
+> • wxSQLite3 4.9.1 (SQLite 3.40.0)
+
+> • RapidJSON 1.1.0
+
+> • Lua 5.3.5
+
+> • libcurl/8.5.0-DEV Schannel
+
+> • gettext 0.22.5
+
+> • apexcharts.js
+
+> Built with:
+
+> • CMake 4.1.0
+
+> • MSBuild 17.14.23.42201
+
+> • Microsoft Visual Studio 17.0
+
+> • Microsoft Visual C++ 19.44.35219.0
+
+> • Windows SDK 10.0.26100.0
+
+> Running on:
+
+> • Windows 11 (build 29570), 64-bit edition
+
+> • System Locale: 
+
+> • User Interface Language: en_US.windows-1252
+
 > • 1920x1080 32-bit 96x96ppi
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Property details search"
 slug: "property_details_search"
 created_at: "2025-12-05 08:04:04"
-updated_at: "2025-12-05 08:04:04"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2322,178 +2322,350 @@ canonical_ref: ""
 > - Don’t stress about uploading every random photo; the 3D tour does the job.
 
 ### User
-> this is not good, i want to see the financial charts, like we calcualted, no like straight up with them. Document No
-> Document Type
-> Recorded Date
-> Party1
-> Party2
-> A202500103198
-> SHERIFF DEED
-> 12/3/2025 7:02:35 AM
-> RICE-VELASQUEZ CODY
-> FINANCIAL CENTER FIRST CREDIT UNION
-> A202500103198
-> 12/3/2025 7:02:35 AM
-> SHERIFF DEED
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY
-> Party 2:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Additional
-> A202200076185
-> MORTGAGE RELEASE
-> 7/7/2022 7:11:04 AM
-> FINANCIAL CENTER FIRST CREDIT UNION
-> RICE-VELASQUEZ CODY
-> A202200076185
-> 7/7/2022 7:11:04 AM
-> MORTGAGE RELEASE
-> Parties
-> Party 1:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Party 2:
-> RICE-VELASQUEZ CODY
-> Additional
-> A202200076124
-> MORTGAGE
-> 7/7/2022 7:09:35 AM
-> RICE-VELASQUEZ CODY J
-> FINANCIAL CENTER FIRST CU
-> A202200076124
-> 7/7/2022 7:09:35 AM
-> MORTGAGE
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY J
-> Party 2:
-> FINANCIAL CENTER FIRST CU
-> Additional
-> A202200076094
-> MORTGAGE
-> 7/7/2022 7:08:50 AM
-> RICE-VELASQUEZ CODY J
-> FINANCIAL CENTER FIRST CU
-> A202200076094
-> 7/7/2022 7:08:50 AM
-> MORTGAGE
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY J
-> Party 2:
-> FINANCIAL CENTER FIRST CU
-> Additional
-> A202100100373
-> MORTGAGE RELEASE
-> 7/30/2021 6:39:19 AM
-> FINANCIAL CENTER FIRST CREDIT UNION
-> RICE VELASQUEZ CODY J
-> A202100100373
-> 7/30/2021 6:39:19 AM
-> MORTGAGE RELEASE
-> Parties
-> Party 1:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Party 2:
-> RICE VELASQUEZ CODY J
-> Additional
-> A202100100372
-> MORTGAGE RELEASE
-> 7/30/2021 6:39:17 AM
-> FINANCIAL CENTER FIRST CREDIT UNION
-> RICE VELASQUEZ CODY J
-> A202100100372
-> 7/30/2021 6:39:17 AM
-> MORTGAGE RELEASE
-> Parties
-> Party 1:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Party 2:
-> RICE VELASQUEZ CODY J
-> Additional
-> A202100085167
-> MORTGAGE
-> 6/30/2021 6:32:44 AM
-> RICE-VELASQUEZ CODY
-> FINANCIAL CENTER FIRST CREDIT UNION
-> A202100085167
-> 6/30/2021 6:32:44 AM
-> MORTGAGE
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY
-> Party 2:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Additional
-> A202000099565
-> MORTGAGE RELEASE
-> 9/9/2020 8:07:00 AM
-> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
-> RICE-VELASQUEZ CODY J
-> A202000099565
-> 9/9/2020 8:07:00 AM
-> MORTGAGE RELEASE
-> Parties
-> Party 1:
-> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
-> AMERICAN NEIGHBORHOOD MORTGAGE ACCEPTANCE COMPANY LLC
-> Party 2:
-> RICE-VELASQUEZ CODY J
-> Additional
-> A202000094154
-> MORTGAGE
-> 8/27/2020 11:14:40 AM
-> RICE-VELASQUEZ CODY J
-> FINANCIAL CENTER FIRST CREDIT UNION
-> A202000094154
-> 8/27/2020 11:14:40 AM
-> MORTGAGE
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY J
-> Party 2:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Additional
-> Consideration:
-> $125,600.00
-> A202000094148
-> MORTGAGE
-> 8/27/2020 11:10:12 AM
-> RICE-VELASQUEZ CODY J
-> FINANCIAL CENTER FIRST CREDIT UNION
-> A202000094148
-> 8/27/2020 11:10:12 AM
-> MORTGAGE
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY J
-> Party 2:
-> FINANCIAL CENTER FIRST CREDIT UNION
-> Additional
-> Consideration:
-> $15,700.00
-> A201700073231
-> MORTGAGE
-> 6/28/2017 7:02:11 AM
-> RICE-VELASQUEZ CODY J
-> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
-> A201700073231
-> 6/28/2017 7:02:11 AM
-> MORTGAGE
-> 6/23/2017
-> Parties
-> Party 1:
-> RICE-VELASQUEZ CODY J
-> Party 2:
-> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
-> AMERICAN NEIGHBORHOOD MORTGAGE ACCEPTANCE COMPANY LLC
-> Additional
-> Consideration:
-> $133,536.00
-> A201700073230
-> DEED
-> 6/28/2017 7:02:11 AM
-> SHARPE RECO D
+> this is not good, i want to see the financial charts, like we calcualted, no like straight up with them. Document No
+
+> Document Type
+
+> Recorded Date
+
+> Party1
+
+> Party2
+
+> A202500103198
+
+> SHERIFF DEED
+
+> 12/3/2025 7:02:35 AM
+
+> RICE-VELASQUEZ CODY
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> A202500103198
+
+> 12/3/2025 7:02:35 AM
+
+> SHERIFF DEED
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Additional
+
+> A202200076185
+
+> MORTGAGE RELEASE
+
+> 7/7/2022 7:11:04 AM
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> RICE-VELASQUEZ CODY
+
+> A202200076185
+
+> 7/7/2022 7:11:04 AM
+
+> MORTGAGE RELEASE
+
+> Parties
+
+> Party 1:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Party 2:
+
+> RICE-VELASQUEZ CODY
+
+> Additional
+
+> A202200076124
+
+> MORTGAGE
+
+> 7/7/2022 7:09:35 AM
+
+> RICE-VELASQUEZ CODY J
+
+> FINANCIAL CENTER FIRST CU
+
+> A202200076124
+
+> 7/7/2022 7:09:35 AM
+
+> MORTGAGE
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY J
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CU
+
+> Additional
+
+> A202200076094
+
+> MORTGAGE
+
+> 7/7/2022 7:08:50 AM
+
+> RICE-VELASQUEZ CODY J
+
+> FINANCIAL CENTER FIRST CU
+
+> A202200076094
+
+> 7/7/2022 7:08:50 AM
+
+> MORTGAGE
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY J
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CU
+
+> Additional
+
+> A202100100373
+
+> MORTGAGE RELEASE
+
+> 7/30/2021 6:39:19 AM
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> RICE VELASQUEZ CODY J
+
+> A202100100373
+
+> 7/30/2021 6:39:19 AM
+
+> MORTGAGE RELEASE
+
+> Parties
+
+> Party 1:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Party 2:
+
+> RICE VELASQUEZ CODY J
+
+> Additional
+
+> A202100100372
+
+> MORTGAGE RELEASE
+
+> 7/30/2021 6:39:17 AM
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> RICE VELASQUEZ CODY J
+
+> A202100100372
+
+> 7/30/2021 6:39:17 AM
+
+> MORTGAGE RELEASE
+
+> Parties
+
+> Party 1:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Party 2:
+
+> RICE VELASQUEZ CODY J
+
+> Additional
+
+> A202100085167
+
+> MORTGAGE
+
+> 6/30/2021 6:32:44 AM
+
+> RICE-VELASQUEZ CODY
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> A202100085167
+
+> 6/30/2021 6:32:44 AM
+
+> MORTGAGE
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Additional
+
+> A202000099565
+
+> MORTGAGE RELEASE
+
+> 9/9/2020 8:07:00 AM
+
+> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
+
+> RICE-VELASQUEZ CODY J
+
+> A202000099565
+
+> 9/9/2020 8:07:00 AM
+
+> MORTGAGE RELEASE
+
+> Parties
+
+> Party 1:
+
+> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
+
+> AMERICAN NEIGHBORHOOD MORTGAGE ACCEPTANCE COMPANY LLC
+
+> Party 2:
+
+> RICE-VELASQUEZ CODY J
+
+> Additional
+
+> A202000094154
+
+> MORTGAGE
+
+> 8/27/2020 11:14:40 AM
+
+> RICE-VELASQUEZ CODY J
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> A202000094154
+
+> 8/27/2020 11:14:40 AM
+
+> MORTGAGE
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY J
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Additional
+
+> Consideration:
+
+> $125,600.00
+
+> A202000094148
+
+> MORTGAGE
+
+> 8/27/2020 11:10:12 AM
+
+> RICE-VELASQUEZ CODY J
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> A202000094148
+
+> 8/27/2020 11:10:12 AM
+
+> MORTGAGE
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY J
+
+> Party 2:
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+> Additional
+
+> Consideration:
+
+> $15,700.00
+
+> A201700073231
+
+> MORTGAGE
+
+> 6/28/2017 7:02:11 AM
+
+> RICE-VELASQUEZ CODY J
+
+> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
+
+> A201700073231
+
+> 6/28/2017 7:02:11 AM
+
+> MORTGAGE
+
+> 6/23/2017
+
+> Parties
+
+> Party 1:
+
+> RICE-VELASQUEZ CODY J
+
+> Party 2:
+
+> MORTGAGE ELECTRONIC REGISTRATION SYSTEMS INC
+
+> AMERICAN NEIGHBORHOOD MORTGAGE ACCEPTANCE COMPANY LLC
+
+> Additional
+
+> Consideration:
+
+> $133,536.00
+
+> A201700073230
+
+> DEED
+
+> 6/28/2017 7:02:11 AM
+
+> SHARPE RECO D
+
 > RICE-VELASQUEZ CODY J with the land its shwoing 310-350k total value.
 
 ### Assistant
@@ -3214,336 +3386,666 @@ canonical_ref: ""
 > > Deal only works for me if you clear all liens/taxes and can hit the seller cash line. If that still fits your buy box, call me at 317-643-3489.”
 
 ### User
-> update thsi for me. ---
-> title: 4817 Shadow Pointe - Investor Package
-> date: 2025-12-05
-> status: draft
-> type: investment-property
-> address: 4817 Shadow Pointe
-> ---
-> 
-> # 4817 Shadow Pointe - Investor Package
-> 
-> ## Executive Summary
-> 
-> **Property Address:** 4817 Shadow Pointe Dr, Indianapolis, IN 46254  
-> **Property Type:** Single Family  
-> **Investment Type:** Fix & Flip / Buy & Hold  
-> **Date Acquired:** 2017  
-> **Current Status:** Vacant / Sheriff's Deed (Financial Center First Credit Union)
-> 
-> ### Key Highlights
-> - Purchase Price (2017): $133,536
-> - Current Estimated Value: $287,100 (County Assessment)
-> - Total Investment to Date: $253,342.66 (estimated all-in with rehab)
-> - Projected ROI: 10-15% (depending on exit scenario)
-> - Projected Cash Flow: N/A (flip scenario)
-> 
-> ---
-> 
-> ## Property Details
-> 
-> ### Physical Characteristics
-> - **Square Footage:** [To be verified from property records]
-> - **Bedrooms:** [To be verified]
-> - **Bathrooms:** [To be verified]
-> - **Lot Size:** [To be verified]
-> - **Year Built:** 1992
-> - **Property Condition:** Needs Work (As-Is Sale)
-> - **Foundation:** [To be verified]
-> - **Roof Age:** Functional (age TBD)
-> - **HVAC Age:** Functional (age TBD)
-> - **Water Heater Age:** Functional (age TBD)
-> 
-> ### Location & Neighborhood
-> - **City:** Indianapolis
-> - **State:** Indiana
-> - **ZIP Code:** 46254
-> - **School District:** Pike Township
-> - **School Ratings:** [To be researched]
-> - **Crime Rating:** [To be researched]
-> - **Walkability Score:** [To be researched]
-> - **Nearby Amenities:**
->   - [ ] Shopping Centers: [To be researched]
->   - [ ] Restaurants: [To be researched]
->   - [ ] Parks: [To be researched]
->   - [ ] Public Transportation: [To be researched]
->   - [ ] Hospitals: [To be researched]
-> 
-> ### Zoning & Legal
-> - **Zoning Classification:** Use Code 510 (Single-family residence)
-> - **Permitted Uses:** Single-family residential
-> - **HOA:** [To be verified - see HOA documents in /docs]
-> - **HOA Fees:** [To be verified]
-> - **HOA Restrictions:** [See hoa-update.pdf in /docs]
-> - **Property Taxes:** $3,244.92/year (2024)
-> - **Special Assessments:** None known
-> 
-> ---
-> 
-> ## Financial Analysis
-> 
-> ### Purchase & Acquisition Costs
-> | Item | Amount |
-> |------|--------|
-> | Estimated lien + tax payoff | $221,142.66 |
-> | Buyer closing costs (title, fees) | $2,200.00 |
-> | Cash to seller at closing | $20,000.00 |
-> | **Total Acquisition Cost** | **$243,342.66** |
-> 
-> ### Renovation & Improvement Costs
-> | Item | Amount | Date Completed | Notes |
-> |------|--------|----------------|-------|
-> | Light rehab (flooring, paint, bathroom repair, yard cleanup) | $10,000.00 | TBD | Estimated budget |
-> | **Total Renovation Costs** | **$10,000.00** | | |
-> 
-> ### Operating Expenses (Monthly)
-> | Item | Amount | Notes |
-> |------|--------|-------|
-> | Property Taxes | $270.41 | $3,244.92/year ÷ 12 |
-> | Insurance | [TBD] | [TYPE OF INSURANCE] |
-> | HOA Fees | [TBD] | [IF APPLICABLE] |
-> | Property Management | N/A | Flip scenario |
-> | Maintenance Reserve | N/A | Flip scenario |
-> | Vacancy Reserve | N/A | Flip scenario |
-> | Utilities (if paid by owner) | [TBD] | During rehab/holding |
-> | **Total Monthly Expenses** | **$270.41+** | (minimal during flip) |
-> 
-> ### Income Projections
-> 
-> #### Rental Income (If Buy & Hold Strategy)
-> - **Current/Projected Monthly Rent:** [To be researched - comparable rentals]
-> - **Annual Rental Income:** [TBD]
-> - **Rent per Square Foot:** [TBD]
-> - **Comparable Rentals in Area:**
->   - [COMP 1]: [TBD]/month
->   - [COMP 2]: [TBD]/month
->   - [COMP 3]: [TBD]/month
-> 
-> #### Cash Flow Analysis (Flip Scenario)
-> - **Monthly Income:** N/A (flip)
-> - **Monthly Expenses:** $270.41+ (holding costs)
-> - **Monthly Cash Flow:** Negative during hold period
-> - **Annual Cash Flow:** N/A (flip)
-> - **Cash-on-Cash Return:** 7-15% (depending on exit price)
-> 
-> ### Return Metrics (Flip Scenario)
-> - **Cap Rate:** N/A (flip scenario)
-> - **ROI:** 7-15% (based on exit scenarios below)
-> - **IRR (Internal Rate of Return):** [TBD - depends on hold period]
-> - **Equity Build:** N/A (flip)
-> - **Appreciation Rate:** [TBD - market research needed]
-> 
-> ### Exit Scenarios (Flip / Wholetail)
-> | Scenario | Resale Price | Gross Profit (vs. Basis) | Est. Selling Costs* | Net Profit |
-> |----------|--------------|-------------------------|---------------------|------------|
-> | Conservative | $295,000 | $41,657 | ≈ $23,200 | **$18,457** |
-> | Base Case | $305,000 | $51,657 | ≈ $23,800 | **$27,857** |
-> | Optimistic | $315,000 | $61,657 | ≈ $24,400 | **$37,257** |
-> 
-> *Selling costs assume ~6% agent commissions + ≈$2.5K resale closing + ≈$3K holding/interest.
-> 
-> ---
-> 
-> ## Market Analysis
-> 
-> ### Comparable Sales (Comps)
-> | Address | Sale Price | Sale Date | SqFt | Price/SqFt | Notes |
-> |---------|------------|-----------|------|------------|-------|
-> | [To be researched] | [TBD] | [DATE] | [SQFT] | $[AMOUNT] | [NOTES] |
-> | [To be researched] | [TBD] | [DATE] | [SQFT] | $[AMOUNT] | [NOTES] |
-> | [To be researched] | [TBD] | [DATE] | [SQFT] | [AMOUNT] | [NOTES] |
-> 
-> **Average Price per Square Foot:** [TBD]
-> 
-> ### Market Trends
-> - **Local Market Appreciation (5-year):** [To be researched]
-> - **Rental Market Growth:** [To be researched]
-> - **Days on Market (Average):** [To be researched]
-> - **Inventory Levels:** [To be researched]
-> - **Market Outlook:** [To be researched]
-> 
-> ### Economic Indicators
-> - **Unemployment Rate:** [To be researched]
-> - **Population Growth:** [To be researched]
-> - **Job Growth:** [To be researched]
-> - **Major Employers:** [To be researched]
-> - **Economic Development Projects:** [To be researched]
-> 
-> ---
-> 
-> ## Property History & Timeline
-> 
-> ### Ownership History
-> - **Current Owner:** Financial Center First Credit Union (Sheriff's Deed)
-> - **Previous Owner:** Cody J Rice-Velasquez
-> - **Previous Sale Price:** $133,536 (2017 - purchase money mortgage)
-> - **Previous Sale Date:** 2017
-> - **Years Owned:** ~8 years (2017-2025)
-> - **Sheriff's Sale Date:** 08/19/2025
-> - **Deed Recorded:** 12/03/2025 (Document A202500103198)
-> 
-> ### Recorded Mortgages & Key Documents
-> | Year | Doc Type | Doc No. | Parties / Consideration |
-> |------|----------|---------|------------------------|
-> | 2025 | Sheriff Deed | A202500103198 | FINANCIAL CENTER FCU → takes title via sheriff's sale |
-> | 2022 | Mortgage | A202200076094 / 76124 | Cody J Rice-Velasquez ↔ Financial Center FCU |
-> | 2020 | Mortgages | A202000094148 | Consideration ≈ $15,700 (2nd lien) |
-> | 2020 | Mortgage | A202000094154 | Consideration ≈ $125,600 (primary lien) |
-> | 2017 | Mortgage | A201700073231 | Consideration ≈ $133,536 (purchase money) |
-> 
-> ### Renovation & Improvement History
-> | Date | Work Completed | Cost | Contractor | Notes |
-> |------|----------------|------|------------|-------|
-> | [TBD] | [WORK] | $[AMOUNT] | [NAME] | [NOTES] |
-> 
-> ### Maintenance & Repairs Needed
-> - Flooring replacement/repair
-> - Paint (interior)
-> - Bathroom floor repair (from past small leak)
-> - Yard cleanup
-> - [Additional items to be identified during inspection]
-> 
-> ---
-> 
-> ## Risk Analysis
-> 
-> ### Identified Risks
-> 1. **Market Risk:** Property value dependent on local market conditions
->    - Mitigation: Conservative pricing in exit scenarios
-> 
-> 2. **Property Risk:** As-is condition may have hidden issues
->    - Mitigation: Thorough inspection during due diligence
-> 
-> 3. **Title Risk:** Sheriff's deed - verify all liens cleared
->    - Mitigation: Title verification required before closing
-> 
-> 4. **Financial Risk:** Rehab costs may exceed budget
->    - Mitigation: Contingency buffer in rehab budget
-> 
-> 5. **Regulatory Risk:** HOA restrictions may limit use/renovations
->    - Mitigation: Review HOA documents (see /docs/hoa-update.pdf)
-> 
-> ### Insurance Coverage
-> - **Property Insurance:** [TBD - to be obtained by buyer]
-> - **Liability Insurance:** [TBD]
-> - **Flood Insurance:** [To be verified - check flood zone]
-> - **Other Coverage:** [TBD]
-> 
-> ---
-> 
-> ## Investment Strategy
-> 
-> ### Short-Term Goals (1-2 years)
-> - [ ] Complete title verification
-> - [ ] Conduct thorough property inspection
-> - [ ] Complete light rehab (flooring, paint, bathroom, yard)
-> - [ ] List property for sale or rent
-> - [ ] Exit with target profit margin
-> 
-> ### Long-Term Goals (3-5+ years)
-> - [ ] [If buy & hold: establish rental income stream]
-> - [ ] [If buy & hold: optimize property value]
-> 
-> ### Exit Strategy
-> - **Hold Period:** 3-6 months (flip scenario)
-> - **Exit Method:** Sale (cash buyer preferred)
-> - **Target Sale Price:** $295,000 - $315,000
-> - **Target Sale Date:** [TBD - after rehab completion]
-> 
-> ---
-> 
-> ## Documentation & Records
-> 
-> ### Legal Documents
-> - [x] Sheriff's Deed (A202500103198)
-> - [ ] Title Insurance Policy (to be obtained)
-> - [ ] Survey (to be obtained if needed)
-> - [ ] Home Inspection Report (to be conducted)
-> - [ ] Appraisal Report (to be obtained)
-> - [ ] Insurance Policies (to be obtained)
-> - [x] HOA Documents (see /docs/hoa-update.pdf)
-> - [ ] Permits & Certificates of Occupancy (if needed for rehab)
-> 
-> ### Financial Records
-> - [x] Property Tax Records (see /docs/Parcel_6016506_PRC.pdf)
-> - [x] Parcel History (see /docs/Parcel_6016506_ParcelDetailHistory.pdf)
-> - [x] Property Summary (see /docs/property-summary.pdf)
-> - [x] Utility Information (see /docs/utility-info.pdf)
-> - [ ] Closing Statement (HUD-1) - pending
-> - [ ] Receipts for Improvements - pending
-> 
-> ### Photos & Media
-> - [x] 3D Walkthrough (embedded in index.html)
-> - [ ] Exterior Photos (see /imgs folder)
-> - [ ] Interior Photos (from 3D tour)
-> - [ ] Before/After Renovation Photos - pending
-> - [ ] Video Walkthrough (3D tour available)
-> - [ ] Aerial/Drone Photos (if applicable)
-> 
-> ---
-> 
-> ## Contact Information
-> 
-> ### Property Management
-> - **Company:** N/A (flip scenario)
-> - **Contact:** N/A
-> - **Phone:** N/A
-> - **Email:** N/A
-> 
-> ### Key Vendors
-> - **Contractor:** [TBD]
-> - **Plumber:** [TBD]
-> - **Electrician:** [TBD]
-> - **HVAC:** [TBD]
-> - **Landscaping:** [TBD]
-> 
-> ### Professional Services
-> - **Real Estate Agent:** [TBD]
-> - **Attorney:** [TBD]
-> - **Accountant:** [TBD]
-> - **Insurance Agent:** [TBD]
-> - **Title Company:** [TBD]
-> 
-> ### Seller Contact
-> - **Name:** Cody Rice-Velasquez
-> - **Phone:** 317-643-3489
-> - **Email:** [TBD]
-> 
-> ---
-> 
-> ## Appendices
-> 
-> ### Appendix A: Property Photos
-> - See /imgs folder for property images
-> - 3D walkthrough embedded in index.html
-> 
-> ### Appendix B: Inspection Reports
-> - [To be conducted during due diligence]
-> 
-> ### Appendix C: Financial Statements
-> - Property tax records: /docs/Parcel_6016506_PRC.pdf
-> - Parcel history: /docs/Parcel_6016506_ParcelDetailHistory.pdf
-> - Property summary: /docs/property-summary.pdf
-> 
-> ### Appendix D: Market Research
-> - [To be completed]
-> 
-> ### Appendix E: Supporting Documents
-> - HOA Update: /docs/hoa-update.pdf
-> - Utility Information: /docs/utility-info.pdf
-> 
-> ---
-> 
-> ## Notes & Updates
-> 
-> ### 2025-12-05 - Investor Package Created
-> Initial investor package document created with available information from property records and financial snapshot.
-> 
-> ---
-> 
-> **Document Last Updated:** 2025-12-05  
-> **Prepared By:** Cody Rice-Velasquez  
+> update thsi for me. ---
+
+> title: 4817 Shadow Pointe - Investor Package
+
+> date: 2025-12-05
+
+> status: draft
+
+> type: investment-property
+
+> address: 4817 Shadow Pointe
+
+> ---
+
+> 
+
+> # 4817 Shadow Pointe - Investor Package
+
+> 
+
+> ## Executive Summary
+
+> 
+
+> **Property Address:** 4817 Shadow Pointe Dr, Indianapolis, IN 46254  
+
+> **Property Type:** Single Family  
+
+> **Investment Type:** Fix & Flip / Buy & Hold  
+
+> **Date Acquired:** 2017  
+
+> **Current Status:** Vacant / Sheriff's Deed (Financial Center First Credit Union)
+
+> 
+
+> ### Key Highlights
+
+> - Purchase Price (2017): $133,536
+
+> - Current Estimated Value: $287,100 (County Assessment)
+
+> - Total Investment to Date: $253,342.66 (estimated all-in with rehab)
+
+> - Projected ROI: 10-15% (depending on exit scenario)
+
+> - Projected Cash Flow: N/A (flip scenario)
+
+> 
+
+> ---
+
+> 
+
+> ## Property Details
+
+> 
+
+> ### Physical Characteristics
+
+> - **Square Footage:** [To be verified from property records]
+
+> - **Bedrooms:** [To be verified]
+
+> - **Bathrooms:** [To be verified]
+
+> - **Lot Size:** [To be verified]
+
+> - **Year Built:** 1992
+
+> - **Property Condition:** Needs Work (As-Is Sale)
+
+> - **Foundation:** [To be verified]
+
+> - **Roof Age:** Functional (age TBD)
+
+> - **HVAC Age:** Functional (age TBD)
+
+> - **Water Heater Age:** Functional (age TBD)
+
+> 
+
+> ### Location & Neighborhood
+
+> - **City:** Indianapolis
+
+> - **State:** Indiana
+
+> - **ZIP Code:** 46254
+
+> - **School District:** Pike Township
+
+> - **School Ratings:** [To be researched]
+
+> - **Crime Rating:** [To be researched]
+
+> - **Walkability Score:** [To be researched]
+
+> - **Nearby Amenities:**
+
+>   - [ ] Shopping Centers: [To be researched]
+
+>   - [ ] Restaurants: [To be researched]
+
+>   - [ ] Parks: [To be researched]
+
+>   - [ ] Public Transportation: [To be researched]
+
+>   - [ ] Hospitals: [To be researched]
+
+> 
+
+> ### Zoning & Legal
+
+> - **Zoning Classification:** Use Code 510 (Single-family residence)
+
+> - **Permitted Uses:** Single-family residential
+
+> - **HOA:** [To be verified - see HOA documents in /docs]
+
+> - **HOA Fees:** [To be verified]
+
+> - **HOA Restrictions:** [See hoa-update.pdf in /docs]
+
+> - **Property Taxes:** $3,244.92/year (2024)
+
+> - **Special Assessments:** None known
+
+> 
+
+> ---
+
+> 
+
+> ## Financial Analysis
+
+> 
+
+> ### Purchase & Acquisition Costs
+
+> | Item | Amount |
+
+> |------|--------|
+
+> | Estimated lien + tax payoff | $221,142.66 |
+
+> | Buyer closing costs (title, fees) | $2,200.00 |
+
+> | Cash to seller at closing | $20,000.00 |
+
+> | **Total Acquisition Cost** | **$243,342.66** |
+
+> 
+
+> ### Renovation & Improvement Costs
+
+> | Item | Amount | Date Completed | Notes |
+
+> |------|--------|----------------|-------|
+
+> | Light rehab (flooring, paint, bathroom repair, yard cleanup) | $10,000.00 | TBD | Estimated budget |
+
+> | **Total Renovation Costs** | **$10,000.00** | | |
+
+> 
+
+> ### Operating Expenses (Monthly)
+
+> | Item | Amount | Notes |
+
+> |------|--------|-------|
+
+> | Property Taxes | $270.41 | $3,244.92/year ÷ 12 |
+
+> | Insurance | [TBD] | [TYPE OF INSURANCE] |
+
+> | HOA Fees | [TBD] | [IF APPLICABLE] |
+
+> | Property Management | N/A | Flip scenario |
+
+> | Maintenance Reserve | N/A | Flip scenario |
+
+> | Vacancy Reserve | N/A | Flip scenario |
+
+> | Utilities (if paid by owner) | [TBD] | During rehab/holding |
+
+> | **Total Monthly Expenses** | **$270.41+** | (minimal during flip) |
+
+> 
+
+> ### Income Projections
+
+> 
+
+> #### Rental Income (If Buy & Hold Strategy)
+
+> - **Current/Projected Monthly Rent:** [To be researched - comparable rentals]
+
+> - **Annual Rental Income:** [TBD]
+
+> - **Rent per Square Foot:** [TBD]
+
+> - **Comparable Rentals in Area:**
+
+>   - [COMP 1]: [TBD]/month
+
+>   - [COMP 2]: [TBD]/month
+
+>   - [COMP 3]: [TBD]/month
+
+> 
+
+> #### Cash Flow Analysis (Flip Scenario)
+
+> - **Monthly Income:** N/A (flip)
+
+> - **Monthly Expenses:** $270.41+ (holding costs)
+
+> - **Monthly Cash Flow:** Negative during hold period
+
+> - **Annual Cash Flow:** N/A (flip)
+
+> - **Cash-on-Cash Return:** 7-15% (depending on exit price)
+
+> 
+
+> ### Return Metrics (Flip Scenario)
+
+> - **Cap Rate:** N/A (flip scenario)
+
+> - **ROI:** 7-15% (based on exit scenarios below)
+
+> - **IRR (Internal Rate of Return):** [TBD - depends on hold period]
+
+> - **Equity Build:** N/A (flip)
+
+> - **Appreciation Rate:** [TBD - market research needed]
+
+> 
+
+> ### Exit Scenarios (Flip / Wholetail)
+
+> | Scenario | Resale Price | Gross Profit (vs. Basis) | Est. Selling Costs* | Net Profit |
+
+> |----------|--------------|-------------------------|---------------------|------------|
+
+> | Conservative | $295,000 | $41,657 | ≈ $23,200 | **$18,457** |
+
+> | Base Case | $305,000 | $51,657 | ≈ $23,800 | **$27,857** |
+
+> | Optimistic | $315,000 | $61,657 | ≈ $24,400 | **$37,257** |
+
+> 
+
+> *Selling costs assume ~6% agent commissions + ≈$2.5K resale closing + ≈$3K holding/interest.
+
+> 
+
+> ---
+
+> 
+
+> ## Market Analysis
+
+> 
+
+> ### Comparable Sales (Comps)
+
+> | Address | Sale Price | Sale Date | SqFt | Price/SqFt | Notes |
+
+> |---------|------------|-----------|------|------------|-------|
+
+> | [To be researched] | [TBD] | [DATE] | [SQFT] | $[AMOUNT] | [NOTES] |
+
+> | [To be researched] | [TBD] | [DATE] | [SQFT] | $[AMOUNT] | [NOTES] |
+
+> | [To be researched] | [TBD] | [DATE] | [SQFT] | [AMOUNT] | [NOTES] |
+
+> 
+
+> **Average Price per Square Foot:** [TBD]
+
+> 
+
+> ### Market Trends
+
+> - **Local Market Appreciation (5-year):** [To be researched]
+
+> - **Rental Market Growth:** [To be researched]
+
+> - **Days on Market (Average):** [To be researched]
+
+> - **Inventory Levels:** [To be researched]
+
+> - **Market Outlook:** [To be researched]
+
+> 
+
+> ### Economic Indicators
+
+> - **Unemployment Rate:** [To be researched]
+
+> - **Population Growth:** [To be researched]
+
+> - **Job Growth:** [To be researched]
+
+> - **Major Employers:** [To be researched]
+
+> - **Economic Development Projects:** [To be researched]
+
+> 
+
+> ---
+
+> 
+
+> ## Property History & Timeline
+
+> 
+
+> ### Ownership History
+
+> - **Current Owner:** Financial Center First Credit Union (Sheriff's Deed)
+
+> - **Previous Owner:** Cody J Rice-Velasquez
+
+> - **Previous Sale Price:** $133,536 (2017 - purchase money mortgage)
+
+> - **Previous Sale Date:** 2017
+
+> - **Years Owned:** ~8 years (2017-2025)
+
+> - **Sheriff's Sale Date:** 08/19/2025
+
+> - **Deed Recorded:** 12/03/2025 (Document A202500103198)
+
+> 
+
+> ### Recorded Mortgages & Key Documents
+
+> | Year | Doc Type | Doc No. | Parties / Consideration |
+
+> |------|----------|---------|------------------------|
+
+> | 2025 | Sheriff Deed | A202500103198 | FINANCIAL CENTER FCU → takes title via sheriff's sale |
+
+> | 2022 | Mortgage | A202200076094 / 76124 | Cody J Rice-Velasquez ↔ Financial Center FCU |
+
+> | 2020 | Mortgages | A202000094148 | Consideration ≈ $15,700 (2nd lien) |
+
+> | 2020 | Mortgage | A202000094154 | Consideration ≈ $125,600 (primary lien) |
+
+> | 2017 | Mortgage | A201700073231 | Consideration ≈ $133,536 (purchase money) |
+
+> 
+
+> ### Renovation & Improvement History
+
+> | Date | Work Completed | Cost | Contractor | Notes |
+
+> |------|----------------|------|------------|-------|
+
+> | [TBD] | [WORK] | $[AMOUNT] | [NAME] | [NOTES] |
+
+> 
+
+> ### Maintenance & Repairs Needed
+
+> - Flooring replacement/repair
+
+> - Paint (interior)
+
+> - Bathroom floor repair (from past small leak)
+
+> - Yard cleanup
+
+> - [Additional items to be identified during inspection]
+
+> 
+
+> ---
+
+> 
+
+> ## Risk Analysis
+
+> 
+
+> ### Identified Risks
+
+> 1. **Market Risk:** Property value dependent on local market conditions
+
+>    - Mitigation: Conservative pricing in exit scenarios
+
+> 
+
+> 2. **Property Risk:** As-is condition may have hidden issues
+
+>    - Mitigation: Thorough inspection during due diligence
+
+> 
+
+> 3. **Title Risk:** Sheriff's deed - verify all liens cleared
+
+>    - Mitigation: Title verification required before closing
+
+> 
+
+> 4. **Financial Risk:** Rehab costs may exceed budget
+
+>    - Mitigation: Contingency buffer in rehab budget
+
+> 
+
+> 5. **Regulatory Risk:** HOA restrictions may limit use/renovations
+
+>    - Mitigation: Review HOA documents (see /docs/hoa-update.pdf)
+
+> 
+
+> ### Insurance Coverage
+
+> - **Property Insurance:** [TBD - to be obtained by buyer]
+
+> - **Liability Insurance:** [TBD]
+
+> - **Flood Insurance:** [To be verified - check flood zone]
+
+> - **Other Coverage:** [TBD]
+
+> 
+
+> ---
+
+> 
+
+> ## Investment Strategy
+
+> 
+
+> ### Short-Term Goals (1-2 years)
+
+> - [ ] Complete title verification
+
+> - [ ] Conduct thorough property inspection
+
+> - [ ] Complete light rehab (flooring, paint, bathroom, yard)
+
+> - [ ] List property for sale or rent
+
+> - [ ] Exit with target profit margin
+
+> 
+
+> ### Long-Term Goals (3-5+ years)
+
+> - [ ] [If buy & hold: establish rental income stream]
+
+> - [ ] [If buy & hold: optimize property value]
+
+> 
+
+> ### Exit Strategy
+
+> - **Hold Period:** 3-6 months (flip scenario)
+
+> - **Exit Method:** Sale (cash buyer preferred)
+
+> - **Target Sale Price:** $295,000 - $315,000
+
+> - **Target Sale Date:** [TBD - after rehab completion]
+
+> 
+
+> ---
+
+> 
+
+> ## Documentation & Records
+
+> 
+
+> ### Legal Documents
+
+> - [x] Sheriff's Deed (A202500103198)
+
+> - [ ] Title Insurance Policy (to be obtained)
+
+> - [ ] Survey (to be obtained if needed)
+
+> - [ ] Home Inspection Report (to be conducted)
+
+> - [ ] Appraisal Report (to be obtained)
+
+> - [ ] Insurance Policies (to be obtained)
+
+> - [x] HOA Documents (see /docs/hoa-update.pdf)
+
+> - [ ] Permits & Certificates of Occupancy (if needed for rehab)
+
+> 
+
+> ### Financial Records
+
+> - [x] Property Tax Records (see /docs/Parcel_6016506_PRC.pdf)
+
+> - [x] Parcel History (see /docs/Parcel_6016506_ParcelDetailHistory.pdf)
+
+> - [x] Property Summary (see /docs/property-summary.pdf)
+
+> - [x] Utility Information (see /docs/utility-info.pdf)
+
+> - [ ] Closing Statement (HUD-1) - pending
+
+> - [ ] Receipts for Improvements - pending
+
+> 
+
+> ### Photos & Media
+
+> - [x] 3D Walkthrough (embedded in index.html)
+
+> - [ ] Exterior Photos (see /imgs folder)
+
+> - [ ] Interior Photos (from 3D tour)
+
+> - [ ] Before/After Renovation Photos - pending
+
+> - [ ] Video Walkthrough (3D tour available)
+
+> - [ ] Aerial/Drone Photos (if applicable)
+
+> 
+
+> ---
+
+> 
+
+> ## Contact Information
+
+> 
+
+> ### Property Management
+
+> - **Company:** N/A (flip scenario)
+
+> - **Contact:** N/A
+
+> - **Phone:** N/A
+
+> - **Email:** N/A
+
+> 
+
+> ### Key Vendors
+
+> - **Contractor:** [TBD]
+
+> - **Plumber:** [TBD]
+
+> - **Electrician:** [TBD]
+
+> - **HVAC:** [TBD]
+
+> - **Landscaping:** [TBD]
+
+> 
+
+> ### Professional Services
+
+> - **Real Estate Agent:** [TBD]
+
+> - **Attorney:** [TBD]
+
+> - **Accountant:** [TBD]
+
+> - **Insurance Agent:** [TBD]
+
+> - **Title Company:** [TBD]
+
+> 
+
+> ### Seller Contact
+
+> - **Name:** Cody Rice-Velasquez
+
+> - **Phone:** 317-643-3489
+
+> - **Email:** [TBD]
+
+> 
+
+> ---
+
+> 
+
+> ## Appendices
+
+> 
+
+> ### Appendix A: Property Photos
+
+> - See /imgs folder for property images
+
+> - 3D walkthrough embedded in index.html
+
+> 
+
+> ### Appendix B: Inspection Reports
+
+> - [To be conducted during due diligence]
+
+> 
+
+> ### Appendix C: Financial Statements
+
+> - Property tax records: /docs/Parcel_6016506_PRC.pdf
+
+> - Parcel history: /docs/Parcel_6016506_ParcelDetailHistory.pdf
+
+> - Property summary: /docs/property-summary.pdf
+
+> 
+
+> ### Appendix D: Market Research
+
+> - [To be completed]
+
+> 
+
+> ### Appendix E: Supporting Documents
+
+> - HOA Update: /docs/hoa-update.pdf
+
+> - Utility Information: /docs/utility-info.pdf
+
+> 
+
+> ---
+
+> 
+
+> ## Notes & Updates
+
+> 
+
+> ### 2025-12-05 - Investor Package Created
+
+> Initial investor package document created with available information from property records and financial snapshot.
+
+> 
+
+> ---
+
+> 
+
+> **Document Last Updated:** 2025-12-05  
+
+> **Prepared By:** Cody Rice-Velasquez  
+
 > **Version:** 1.0
 
 ### Assistant

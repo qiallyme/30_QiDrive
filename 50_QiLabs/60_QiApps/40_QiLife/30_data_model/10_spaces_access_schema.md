@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 10 Spaces Access Schema
-slug: ""
+slug: 10-spaces-access-schema
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 76bee11c19f04249bd050d86d68e53be
 canonical_ref: ""
 source_type: manual
 template_key: master-template

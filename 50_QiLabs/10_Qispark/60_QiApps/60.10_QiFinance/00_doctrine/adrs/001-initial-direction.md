@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 001 Initial Direction
-slug: ""
+slug: 001-initial-direction
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 8fa5fffc839b41148f9ca93d41bff9f6
 canonical_ref: ""
 source_type: manual
 template_key: master-template

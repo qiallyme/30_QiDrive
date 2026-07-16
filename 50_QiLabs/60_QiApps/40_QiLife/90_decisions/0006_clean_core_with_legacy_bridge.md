@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0006 Clean Core With Legacy Bridge
-slug: ""
+slug: 0006-clean-core-with-legacy-bridge
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 04de0a7305d447e2b784b8d40ca239cb
 canonical_ref: ""
 source_type: manual
 template_key: master-template

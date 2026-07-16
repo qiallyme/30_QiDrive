@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 000 Run Me First
-slug: ""
+slug: 000-run-me-first
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d30bd8814c284f29a87066237041c47a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

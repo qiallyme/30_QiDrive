@@ -1,3 +1,26 @@
+---
+layout: page
+title: Incident De Escalation Script & Action Plan
+slug: incident-de-escalation-script-action-plan
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 70dfbaeae0d148578ec389c05dbff296
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # Incident De-escalation Script & Action Plan
 
 **Date:** 2026-05-24  

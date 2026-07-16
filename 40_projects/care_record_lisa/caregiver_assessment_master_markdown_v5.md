@@ -5,10 +5,10 @@ date: "2026-05-24"
 document_type: "Caregiver assessment / boundary record"
 status: "Working draft"
 layout: page
-slug: ""
+slug: caregiver-assessment-evidence-summary-financial-clarification-opportunity-loss-caregiver-fatigue-emergency-risk-and-role-transition
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 owner: ""
 tags: []
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3dd0270358cf48abb56dd321674bab56
 canonical_ref: ""
 source_type: manual
 template_key: master-template

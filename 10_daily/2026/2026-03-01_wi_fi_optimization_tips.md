@@ -3,9 +3,9 @@ layout: page
 title: "Wi-Fi Optimization Tips"
 slug: "wi_fi_optimization_tips"
 created_at: "2026-03-01 15:21:03"
-updated_at: "2026-03-01 15:21:03"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,124 +39,242 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> can you help me set this to prevent congestions and optimnize spead. REMOTE ACCESS IS CURRENTLY ENABLED
-> Wi-Fi
-> Making a change to some pulldowns on this page will automatically change the context below it, enabling you to fill only the appropriate fields for the change you have made.
-> 
-> To configure only basic Wi-Fi options with shared Wi-Fi settings, click on the "Basic Options" link below.
-> 
->     Basic Options
-> 
-> Hide or Show Passwords	
-> 
-> 2.4 GHz Wi-Fi Configuration
-> Wi-Fi OperationDefault: On	
-> On
->   
-> ModeDefault: B/G/N	
-> B/G/N
->   
-> BandwidthDefault: 20MHz	
-> 20MHz
-> ChannelDefault: Automatic	
-> Automatic
-> Power Level (in %)Default: 100	
-> 100
-> 
-> Home SSID
-> Home SSID EnableDefault: On	
-> On
-> Network Name (SSID)Default: ATTcynZDvS	
-> LINK
-> 
-> Hide Network NameDefault: Off	
-> Off
-> SecurityDefault: WPA-Default Password	
-> WPA - PSK
->   
-> WPA VersionDefault: WPA-2	
-> WPA-2
-> Password
-> Default: 6d?d#n5hzmtx
-> 060606le
-> 
-> Wi-Fi Protected SetupDefault: On	
-> On
-> Maximum ClientsDefault: 80	
-> 80
-> 
-> Scan to Join SSID	Main ssid qrcode
-> Guest SSID
-> 
-> Guest SSID EnableDefault: Off	
-> Off
-> Network AccessDefault: Internet Only	
-> Internet Only
-> Guest SSID SubnetDefault: 192.168.1.0/24	192.168.
-> 1
-> .0/24
-> Guest Network NameDefault: ATTcynZDvS_Guest	
-> ATTfhUnmCI_Guest
-> 
-> Hide Network NameDefault: Off	
-> Off
-> SecurityDefault: WPA-PSK	
-> WPA - PSK
->   
-> WPA VersionDefault: WPA-2	
-> WPA-2
-> Password	
-> 
-> Maximum ClientsDefault: 10	
-> 10
-> 
-> 
-> 
-> 
-> 5 GHz Wi-Fi Configuration
-> Wi-Fi OperationDefault: On	
-> On
->   
-> ModeDefault: AC/N	
-> AC/N
->   
-> BandwidthDefault: 80MHz	
-> 80MHz
-> ChannelDefault: Automatic	
-> Automatic
-> Power Level (in %)Default: 100	
-> 100
-> Home SSID
-> Home SSID EnableDefault: On	On
-> Network Name (SSID)Default: ATTcynZDvS	
-> LINK
-> Hide Network NameDefault: Off	
-> Off
-> SecurityDefault: WPA-Default Password	
-> WPA - PSK
->   
-> WPA Version	WPA-2
-> Password
-> Default: 6d?d#n5hzmtx
-> 060606le
-> 
-> Wi-Fi Protected SetupDefault: On	
-> On
-> Maximum ClientsDefault: 80	
-> 80
-> 
-> Scan to Join SSID	Main 5ghz ssid qrcode
-> 
-> 
-> WPS Virtual Pushbutton
-> Click the pushbutton below, associated with the Home SSID, then follow the Wi-Fi client instructions.
-> WPS PIN
-> Enter the Wi-Fi Client's all digit PIN, Submit, then follow the Wi-Fi client instructions.
-> WPS PIN     
-> 
-> e.g., 12345670
-> 
-> 
+> can you help me set this to prevent congestions and optimnize spead. REMOTE ACCESS IS CURRENTLY ENABLED
+
+> Wi-Fi
+
+> Making a change to some pulldowns on this page will automatically change the context below it, enabling you to fill only the appropriate fields for the change you have made.
+
+> 
+
+> To configure only basic Wi-Fi options with shared Wi-Fi settings, click on the "Basic Options" link below.
+
+> 
+
+>     Basic Options
+
+> 
+
+> Hide or Show Passwords	
+
+> 
+
+> 2.4 GHz Wi-Fi Configuration
+
+> Wi-Fi OperationDefault: On	
+
+> On
+
+>   
+
+> ModeDefault: B/G/N	
+
+> B/G/N
+
+>   
+
+> BandwidthDefault: 20MHz	
+
+> 20MHz
+
+> ChannelDefault: Automatic	
+
+> Automatic
+
+> Power Level (in %)Default: 100	
+
+> 100
+
+> 
+
+> Home SSID
+
+> Home SSID EnableDefault: On	
+
+> On
+
+> Network Name (SSID)Default: ATTcynZDvS	
+
+> LINK
+
+> 
+
+> Hide Network NameDefault: Off	
+
+> Off
+
+> SecurityDefault: WPA-Default Password	
+
+> WPA - PSK
+
+>   
+
+> WPA VersionDefault: WPA-2	
+
+> WPA-2
+
+> Password
+
+> Default: 6d?d#n5hzmtx
+
+> 060606le
+
+> 
+
+> Wi-Fi Protected SetupDefault: On	
+
+> On
+
+> Maximum ClientsDefault: 80	
+
+> 80
+
+> 
+
+> Scan to Join SSID	Main ssid qrcode
+
+> Guest SSID
+
+> 
+
+> Guest SSID EnableDefault: Off	
+
+> Off
+
+> Network AccessDefault: Internet Only	
+
+> Internet Only
+
+> Guest SSID SubnetDefault: 192.168.1.0/24	192.168.
+
+> 1
+
+> .0/24
+
+> Guest Network NameDefault: ATTcynZDvS_Guest	
+
+> ATTfhUnmCI_Guest
+
+> 
+
+> Hide Network NameDefault: Off	
+
+> Off
+
+> SecurityDefault: WPA-PSK	
+
+> WPA - PSK
+
+>   
+
+> WPA VersionDefault: WPA-2	
+
+> WPA-2
+
+> Password	
+
+> 
+
+> Maximum ClientsDefault: 10	
+
+> 10
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 5 GHz Wi-Fi Configuration
+
+> Wi-Fi OperationDefault: On	
+
+> On
+
+>   
+
+> ModeDefault: AC/N	
+
+> AC/N
+
+>   
+
+> BandwidthDefault: 80MHz	
+
+> 80MHz
+
+> ChannelDefault: Automatic	
+
+> Automatic
+
+> Power Level (in %)Default: 100	
+
+> 100
+
+> Home SSID
+
+> Home SSID EnableDefault: On	On
+
+> Network Name (SSID)Default: ATTcynZDvS	
+
+> LINK
+
+> Hide Network NameDefault: Off	
+
+> Off
+
+> SecurityDefault: WPA-Default Password	
+
+> WPA - PSK
+
+>   
+
+> WPA Version	WPA-2
+
+> Password
+
+> Default: 6d?d#n5hzmtx
+
+> 060606le
+
+> 
+
+> Wi-Fi Protected SetupDefault: On	
+
+> On
+
+> Maximum ClientsDefault: 80	
+
+> 80
+
+> 
+
+> Scan to Join SSID	Main 5ghz ssid qrcode
+
+> 
+
+> 
+
+> WPS Virtual Pushbutton
+
+> Click the pushbutton below, associated with the Home SSID, then follow the Wi-Fi client instructions.
+
+> WPS PIN
+
+> Enter the Wi-Fi Client's all digit PIN, Submit, then follow the Wi-Fi client instructions.
+
+> WPS PIN     
+
+> 
+
+> e.g., 12345670
+
+> 
+
+> 
+
 > The buttons below apply any Wi-Fi changes made above. Clients currently connected on each radio may be affected.
 
 ### Assistant
@@ -618,61 +736,116 @@ canonical_ref: ""
 > And now we fix it properly instead of throwing repeaters at a dying line.
 
 ### User
-> Broadband Status
-> Primary Broadband
-> Broadband Connection Source	DSL
->  
-> Broadband Connection	Up
-> Broadband Network Type	Lightspeed
-> Broadband IPv4 Address	104.180.201.131
-> Gateway IPv4 Address	104.180.200.1
-> MAC Address	10:93:97:44:1f:c1
-> Primary DNS	68.94.156.10
-> Secondary DNS	68.94.157.10
-> Primary DNS Name	dns156r10.sbcglobal.net
-> Secondary DNS Name 	dns157r10.sbcglobal.net
-> MTU	1500
-> DSLAM Vendor ID	b5004244434da3b8
-> DSL Status
-> Line State	Up
-> Downstream Sync Rate (kbps)	17997
-> Upstream Sync Rate (kbps)	1020
-> Downstream Max Attainable Rate (kbps)	24560
-> Upstream Max Attainable Rate (kbps)	1175
-> Modulation	ADSL2+
-> Data Path	Interleaved
->  	Downstream	Upstream
-> SN Margin (dB)	7.8	9.1
-> Line Attenuation (dB)	21.0	11.9
-> Output Power(dBm)	17.3	12.0
-> Errored Seconds	0	0
-> Loss of Signal	0	0
-> Loss of Frame	0	0
-> FEC Errors	18144	0
-> CRC Errors	0	0
-> Timed Statistics
->  	15 Min	Cur Day	Showtime	Last Showtime	Total
-> Errored Seconds (ES)	0	0	0	0	0
-> Severely Errored Seconds (SESL)	0	0	0	0	0
-> Unavailable Seconds (UASL)	0	73	0	0	73
-> FEC Errors	2064	18143	18144	18144	18143
-> CRC Errors	0	0	0	0	0
-> DSL Initialization Timeouts	0	1	0	0	1
-> IPv6
-> Status	Unavailable
-> IPv4 Statistics
-> Transmit Packets	267573
-> Transmit Errors	0
-> Transmit Discards	81838
-> Transmit Bytes	289102875
-> Receive Packets	268711
-> Receive Errors	0
-> Receive Discards	0
-> Receive Bytes	160234951
-> PTM Receive PDUs	268711
-> IPv6 Statistics
-> Transmit Packets	58
-> Transmit Errors	0
+> Broadband Status
+
+> Primary Broadband
+
+> Broadband Connection Source	DSL
+
+>  
+
+> Broadband Connection	Up
+
+> Broadband Network Type	Lightspeed
+
+> Broadband IPv4 Address	104.180.201.131
+
+> Gateway IPv4 Address	104.180.200.1
+
+> MAC Address	10:93:97:44:1f:c1
+
+> Primary DNS	68.94.156.10
+
+> Secondary DNS	68.94.157.10
+
+> Primary DNS Name	dns156r10.sbcglobal.net
+
+> Secondary DNS Name 	dns157r10.sbcglobal.net
+
+> MTU	1500
+
+> DSLAM Vendor ID	b5004244434da3b8
+
+> DSL Status
+
+> Line State	Up
+
+> Downstream Sync Rate (kbps)	17997
+
+> Upstream Sync Rate (kbps)	1020
+
+> Downstream Max Attainable Rate (kbps)	24560
+
+> Upstream Max Attainable Rate (kbps)	1175
+
+> Modulation	ADSL2+
+
+> Data Path	Interleaved
+
+>  	Downstream	Upstream
+
+> SN Margin (dB)	7.8	9.1
+
+> Line Attenuation (dB)	21.0	11.9
+
+> Output Power(dBm)	17.3	12.0
+
+> Errored Seconds	0	0
+
+> Loss of Signal	0	0
+
+> Loss of Frame	0	0
+
+> FEC Errors	18144	0
+
+> CRC Errors	0	0
+
+> Timed Statistics
+
+>  	15 Min	Cur Day	Showtime	Last Showtime	Total
+
+> Errored Seconds (ES)	0	0	0	0	0
+
+> Severely Errored Seconds (SESL)	0	0	0	0	0
+
+> Unavailable Seconds (UASL)	0	73	0	0	73
+
+> FEC Errors	2064	18143	18144	18144	18143
+
+> CRC Errors	0	0	0	0	0
+
+> DSL Initialization Timeouts	0	1	0	0	1
+
+> IPv6
+
+> Status	Unavailable
+
+> IPv4 Statistics
+
+> Transmit Packets	267573
+
+> Transmit Errors	0
+
+> Transmit Discards	81838
+
+> Transmit Bytes	289102875
+
+> Receive Packets	268711
+
+> Receive Errors	0
+
+> Receive Discards	0
+
+> Receive Bytes	160234951
+
+> PTM Receive PDUs	268711
+
+> IPv6 Statistics
+
+> Transmit Packets	58
+
+> Transmit Errors	0
+
 > Transmit Discards	3
 
 ### Assistant

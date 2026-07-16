@@ -7,12 +7,12 @@ privacy: private
 qi_decimal: 2.99.00-01.SYS
 layout: page
 summary: ""
-status:
+status: active
   - draft
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
-tags:
+tags: []
   - to-merge
 keywords: []
 aliases: []
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 73d608b95a074388a5d18a740f28a004
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,9 +3,9 @@ layout: page
 title: "Compiling personal notes"
 slug: "compiling_personal_notes"
 created_at: "2026-03-16 06:21:38"
-updated_at: "2026-03-16 06:21:38"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -4801,62 +4801,118 @@ canonical_ref: ""
 > Let’s clean this up.
 
 ### User
-> Select Truck Size
-> Origin CityEvansville, IN
-> 
-> Reservation Date3/24/2026
-> 
-> 8' Pickup Truck
-> 8' Pickup Truck Inventory
-> Limited Availability
-> 8' Pickup Truck
-> Moving Type:
-> Home improvement / Small loads
-> 
-> Inside dimensions: 7'10" x 5'2" x 1'9" (LxWxH)
-> Rate
-> $19.95
-> plus $0.99/mile
-> Extended days/miles special rates
-> Select
-> 9' Cargo Van
-> 9' Cargo Van
-> Moving Type:
-> Apartment - 1 bedroom / Studio / Deliveries
-> 
-> Inside dimensions: 9'6" x 5'7" x 4'8" (LxWxH)
-> Door opening: 5'1-1/2" x 4'1-1/2" (WxH)
-> Holds queen size mattress
-> Rate
-> $19.95
-> plus $0.99/mile
-> Extended days/miles special rates
-> Select
-> 10' Truck
-> 10' Truck
-> Moving Type:
-> Studio to 1 Bedroom Apt.
-> 
-> Inside dimensions: 9'11" x 6'4" x 6'2" (LxWxH)
-> Door opening: 5'11" x 5'7" (WxH)
-> Deck height: 2'5" Length: 9'11"
-> Loading ramp: None
-> Rate
-> $19.95
-> plus $0.99/mile
-> Select
-> 15' Truck
-> 15' Truck
-> Moving Type:
-> 1 Bedroom Home to 2 Bedroom Apt.
-> 
-> Inside dimensions: 15' x 7'8" x 7'2" (LxWxH)
-> Door opening: 7'3" x 6'5" (WxH)
-> Deck height: 2'9" Length: 12'5"
-> EZ-Load Ramp
-> Rate
-> $29.95
-> plus $0.99/mile
+> Select Truck Size
+
+> Origin CityEvansville, IN
+
+> 
+
+> Reservation Date3/24/2026
+
+> 
+
+> 8' Pickup Truck
+
+> 8' Pickup Truck Inventory
+
+> Limited Availability
+
+> 8' Pickup Truck
+
+> Moving Type:
+
+> Home improvement / Small loads
+
+> 
+
+> Inside dimensions: 7'10" x 5'2" x 1'9" (LxWxH)
+
+> Rate
+
+> $19.95
+
+> plus $0.99/mile
+
+> Extended days/miles special rates
+
+> Select
+
+> 9' Cargo Van
+
+> 9' Cargo Van
+
+> Moving Type:
+
+> Apartment - 1 bedroom / Studio / Deliveries
+
+> 
+
+> Inside dimensions: 9'6" x 5'7" x 4'8" (LxWxH)
+
+> Door opening: 5'1-1/2" x 4'1-1/2" (WxH)
+
+> Holds queen size mattress
+
+> Rate
+
+> $19.95
+
+> plus $0.99/mile
+
+> Extended days/miles special rates
+
+> Select
+
+> 10' Truck
+
+> 10' Truck
+
+> Moving Type:
+
+> Studio to 1 Bedroom Apt.
+
+> 
+
+> Inside dimensions: 9'11" x 6'4" x 6'2" (LxWxH)
+
+> Door opening: 5'11" x 5'7" (WxH)
+
+> Deck height: 2'5" Length: 9'11"
+
+> Loading ramp: None
+
+> Rate
+
+> $19.95
+
+> plus $0.99/mile
+
+> Select
+
+> 15' Truck
+
+> 15' Truck
+
+> Moving Type:
+
+> 1 Bedroom Home to 2 Bedroom Apt.
+
+> 
+
+> Inside dimensions: 15' x 7'8" x 7'2" (LxWxH)
+
+> Door opening: 7'3" x 6'5" (WxH)
+
+> Deck height: 2'9" Length: 12'5"
+
+> EZ-Load Ramp
+
+> Rate
+
+> $29.95
+
+> plus $0.99/mile
+
 > Select
 
 ### Assistant

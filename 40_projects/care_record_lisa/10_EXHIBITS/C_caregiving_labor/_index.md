@@ -5,10 +5,10 @@ status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260701-200047"
 layout: page
-slug: ""
+slug: c-caregiving-labor
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ca08e9ae52804d989ee28798d3f13b1f
 canonical_ref: ""
 source_type: manual
 template_key: master-template

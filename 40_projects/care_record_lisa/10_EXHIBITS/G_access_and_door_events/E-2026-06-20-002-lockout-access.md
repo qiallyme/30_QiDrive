@@ -3,14 +3,14 @@ layout: page
 title: Event: Lockout/access incident while Lisa inpatient
 slug: lockout-access-incident-while-lisa-inpatient
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
   - lisa-care-record
   - housing-property
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 151ecfc1b5b547b9b864267a6bca72cb
 canonical_ref: ""
 template_key: master-template
 ---

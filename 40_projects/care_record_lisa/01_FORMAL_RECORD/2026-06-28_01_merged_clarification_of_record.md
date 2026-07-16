@@ -3,13 +3,13 @@ layout: page
 title: Clarification of Record - 2026-06-28 Merged Note
 slug: clarification-of-record-2026-06-28
 status: publish
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2e5f1faa6bb847189db27cdb85eee358
 canonical_ref: ""
 template_key: master-template
 ---

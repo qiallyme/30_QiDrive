@@ -3,9 +3,9 @@ layout: page
 title: "Error troubleshooting guide"
 slug: "error_troubleshooting_guide"
 created_at: "2025-09-26 17:50:20"
-updated_at: "2025-09-26 17:50:20"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -210,12 +210,18 @@ canonical_ref: ""
 > By following these steps—creating placeholders or removing incomplete features, parsing query parameters, updating route matching, and providing fallback data—you’ll transform the portal from a skeleton with broken links into a usable application you can iteratively enhance.
 
 ### User
-> Issues Found
-> 
-> In pages/Dashboard.js component:
-> Error evaluating module pages/Dashboard.js: Error in pages/Dashboard.js: can't import file @/api/entities, it doesn't exist.
-> In Dashboard component:
-> Error: No component found in "pages/Dashboard"
+> Issues Found
+
+> 
+
+> In pages/Dashboard.js component:
+
+> Error evaluating module pages/Dashboard.js: Error in pages/Dashboard.js: can't import file @/api/entities, it doesn't exist.
+
+> In Dashboard component:
+
+> Error: No component found in "pages/Dashboard"
+
 > Resolve with AI
 
 ### Assistant

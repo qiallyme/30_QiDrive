@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Readme Posting
-slug: ""
+slug: readme-posting
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: dd1924f8c9e94d34bc6f6c58cd59ced7
 canonical_ref: ""
 source_type: manual
 template_key: master-template

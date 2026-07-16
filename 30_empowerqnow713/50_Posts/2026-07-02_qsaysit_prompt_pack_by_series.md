@@ -6,22 +6,22 @@ summary: "Copy-paste AI prompt pack for image and video generation across QSaysI
 status: active
 visibility: internal
 created_at: "2026-07-02T02:20:00-05:00"
-updated_at: "2026-07-02T02:20:00-05:00"
+updated_at: "2026-07-16T06:49:36-04:00"
 author: "Cody J. Rice-Velasquez"
-owner:
+owner: ""
   - "Cody"
-tags:
+tags: []
   - qsaysit
   - prompts
   - image-ai
   - video-ai
   - series
-keywords:
+keywords: []
   - prompt pack
   - image prompts
   - video prompts
   - QSaysIt series
-aliases:
+aliases: []
   - "QSaysIt prompt library"
 context: "Use this as a copy-paste prompt bank for creating visuals by series."
 sensitivity: internal

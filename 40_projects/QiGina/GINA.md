@@ -3,12 +3,12 @@ layout: page
 title: GINA (Generative Intelligence Neural Archivist)
 slug: gina-generative-intelligence-neural-archivist
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c6a8995ede62493dbce31ca87051e4df
 canonical_ref: ""
 template_key: master-template
 ---

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Began documenting 'You Thought You Knew Me' story project"
 slug: "began_documenting_you_thought_you_knew_me_story_project"
 summary: ""
 status: active
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 449483b774c34989805af6fe50d4a7dc
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-01-01
 ---
+
 # Began documenting 'You Thought You Knew Me' story project
 
 Category: Creative

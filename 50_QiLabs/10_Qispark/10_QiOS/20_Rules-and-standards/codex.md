@@ -3,12 +3,12 @@ layout: page
 title: CODEX SYSTEM CONTROL FILE
 slug: codex-system-control-file
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 673412a200a94f269c00fe2dbcf4e55a
 canonical_ref: ""
 template_key: master-template
 ---

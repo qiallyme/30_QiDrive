@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Ui Flow
-slug: ""
+slug: ui-flow
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: de00b7ce81674b29aeb51949ff748a4d
 canonical_ref: ""
 source_type: manual
 template_key: master-template

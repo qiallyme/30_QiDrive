@@ -3,9 +3,9 @@ layout: page
 title: "Message Sent Error"
 slug: "message_sent_error"
 created_at: "2026-03-18 14:07:26"
-updated_at: "2026-03-18 14:07:26"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

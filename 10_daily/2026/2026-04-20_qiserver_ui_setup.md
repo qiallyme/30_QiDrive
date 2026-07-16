@@ -3,9 +3,9 @@ layout: page
 title: "Qiserver UI Setup"
 slug: "qiserver_ui_setup"
 created_at: "2026-04-20 13:06:01"
-updated_at: "2026-04-20 13:06:01"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -133,58 +133,110 @@ canonical_ref: ""
 > If you want, paste me the output of that status block and I’ll tell you exactly what’s up, what’s broken, and the next command.
 
 ### User
-> Learn more about enabling ESM Apps service at https://ubuntu.com/esm
-> 
-> Last login: Sat Apr 18 23:54:50 2026 from 192.168.0.74
-> 
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ echo "=== BASIC ==="
-> hostname
-> uptime
-> tailscale status || true
-> 
-> echo
-> echo "=== SERVICES ==="
-> systemctl is-active docker || true
-> systemctl is-active ollama || true
-> systemctl is-active cockpit.socket || true
-> 
-> echo
-> echo "=== DOCKER ==="
-> docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}' || true
-> 
-> echo
-> echo "=== LISTENING PORTS ==="
-> ss -tulpn | grep -E ':(22|80|443|3000|9090|9443|11434)\b' || true
-> === BASIC ===
-> qiserver
->  13:20:00 up 10:21,  2 users,  load average: 0.00, 0.00, 0.00
-> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                  
-> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 26d ago
-> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 10d ago
-> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                  
-> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.0.74:41641, tx 23020 rx 21180
-> 
-> === SERVICES ===
-> active
-> active
-> inactive
-> 
-> === DOCKER ===
-> NAMES        STATUS                  PORTS
-> open-webui   Up 27 hours (healthy)   127.0.0.1:3000->8080/tcp
-> neo4j        Up 27 hours             127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
-> 
-> === LISTENING PORTS ===
-> tcp   LISTEN 0      4096               100.121.111.106:443        0.0.0.0:*
-> tcp   LISTEN 0      4096                     127.0.0.1:3000       0.0.0.0:*
-> tcp   LISTEN 0      4096                       0.0.0.0:22         0.0.0.0:*
-> tcp   LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:443           [::]:*
-> tcp   LISTEN 0      4096                          [::]:22            [::]:*
-> tcp   LISTEN 0      4096                             *:11434            *:*
+> Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+> 
+
+> Last login: Sat Apr 18 23:54:50 2026 from 192.168.0.74
+
+> 
+
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ echo "=== BASIC ==="
+
+> hostname
+
+> uptime
+
+> tailscale status || true
+
+> 
+
+> echo
+
+> echo "=== SERVICES ==="
+
+> systemctl is-active docker || true
+
+> systemctl is-active ollama || true
+
+> systemctl is-active cockpit.socket || true
+
+> 
+
+> echo
+
+> echo "=== DOCKER ==="
+
+> docker ps --format 'table {{.Names}}\t{{.Status}}\t{{.Ports}}' || true
+
+> 
+
+> echo
+
+> echo "=== LISTENING PORTS ==="
+
+> ss -tulpn | grep -E ':(22|80|443|3000|9090|9443|11434)\b' || true
+
+> === BASIC ===
+
+> qiserver
+
+>  13:20:00 up 10:21,  2 users,  load average: 0.00, 0.00, 0.00
+
+> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                  
+
+> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 26d ago
+
+> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 10d ago
+
+> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                  
+
+> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.0.74:41641, tx 23020 rx 21180
+
+> 
+
+> === SERVICES ===
+
+> active
+
+> active
+
+> inactive
+
+> 
+
+> === DOCKER ===
+
+> NAMES        STATUS                  PORTS
+
+> open-webui   Up 27 hours (healthy)   127.0.0.1:3000->8080/tcp
+
+> neo4j        Up 27 hours             127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> 
+
+> === LISTENING PORTS ===
+
+> tcp   LISTEN 0      4096               100.121.111.106:443        0.0.0.0:*
+
+> tcp   LISTEN 0      4096                     127.0.0.1:3000       0.0.0.0:*
+
+> tcp   LISTEN 0      4096                       0.0.0.0:22         0.0.0.0:*
+
+> tcp   LISTEN 0      4096   [fd7a:115c:a1e0::8532:6f6a]:443           [::]:*
+
+> tcp   LISTEN 0      4096                          [::]:22            [::]:*
+
+> tcp   LISTEN 0      4096                             *:11434            *:*
+
 > qiadmin@qiserver:~$
 
 ### Assistant

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "SRVGroup reaches ~$1.5M in sales, opened Lafayette branch with ~20 employees"
 slug: "srvgroup_reaches_15m_in_sales_opened_lafayette_branch_with_20_employees"
 summary: ""
 status: active
 created_at: "2022-01-01"
-updated_at: "2022-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c2883a549c3640429eb09ac0af99fa24
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2022-01-01
 ---
+
 # SRVGroup reaches ~$1.5M in sales, opened Lafayette branch with ~20 employees
 
 Category: Achievement

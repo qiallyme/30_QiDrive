@@ -3,9 +3,9 @@ layout: page
 title: "Motion and Surplus Process"
 slug: "motion_and_surplus_process"
 created_at: "2026-04-28 23:31:44"
-updated_at: "2026-04-28 23:31:44"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -708,8 +708,10 @@ canonical_ref: ""
 > Reason: the clerk/judge/counsel do not care about your internal QDOC ID. The exhibit letter needs to be obvious at a glance. Keep internal numbering in your archive, not necessarily in the e-file upload name.
 
 ### User
-> HELP ME CORRECT THESE ENTRIES FOR THE DOC ID. 34	2026-04-29	MO	DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS	FCFCU-20260416-033-MO	2026-04-19_response_on_acceptance_limited_non-objection_cross_motion	2026-04-19_response_on_acceptance_limited_non-objection_cross_motion	pending
-> 35	2026-04-29	PO	DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS	FCFCU-20260416-034-PO	2026-04-19_cross_motion_proposed_order	2026-04-19_cross_motion_proposed_order	pending
+> HELP ME CORRECT THESE ENTRIES FOR THE DOC ID. 34	2026-04-29	MO	DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS	FCFCU-20260416-033-MO	2026-04-19_response_on_acceptance_limited_non-objection_cross_motion	2026-04-19_response_on_acceptance_limited_non-objection_cross_motion	pending
+
+> 35	2026-04-29	PO	DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS	FCFCU-20260416-034-PO	2026-04-19_cross_motion_proposed_order	2026-04-19_cross_motion_proposed_order	pending
+
 > 36	2026-04-29	EX	ORDER ON MOTION FOR ACCEPTANCE OF OVERBID CALCULATION	FCFCU-20260428-035-EX
 
 ### Assistant
@@ -876,64 +878,122 @@ canonical_ref: ""
 > This is ready enough.
 
 ### User
-> HOW DOES THIS LOOK? Filing Type
-> (Required)
-> 
-> eFile Only
-> Pick "eFile Only" to just electronically file your papers.
-> 
-> 
-> eFile and Serve
-> Electronically file your papers with the court and have your documents sent to the selected service contacts.
-> 
-> 
-> Service Only
-> Your filing will only be sent to the selected service contacts and will not be filed with the court.
-> 
-> Filing Information
-> Motion
-> Filing Code
-> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
-> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
-> Filing Description
-> Client Reference Number
-> Filing on Behalf of
-> Select...
-> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
-> Upload Documents
-> To add more than one lead document to the filing, create another filing and upload your document.
-> Lead Document
-> 2026-04-29_motion_to_direct_disbursement_of_surplus_funds.pdf
-> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
-> File Description
-> Public document
-> Security
-> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
-> Attachments
-> 2026-04-29_EXHIBIT_AB_Order_on_Motion_for_Acceptance_of_Overbid_Calculation.pdf
-> EXHIBIT AB - ORDER ON MOTION FOR ACCEPTANCE OF OVERBID CALCULATION
-> File Description
-> Public document
-> Security
-> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
-> 2026-04-29_proposed_order_on_motion_to_direct_disbursement_of_surplus_funds.pdf
-> PROPOSED ORDER ON DEFENDANT CODY RICE-VELASQUEZ'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
-> File Description
-> Public document
-> Security
-> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
-> file_link
-> Drag files here or
-> Maximum file size:
->  
-> 52.43 MB
-> Accepted file types:
->  
-> Portable Document File (PDF)
-> Communications
-> If you want someone to receive emails (for example, a legal helper, family member, friend), input their email address below.
-> If the court rejects a filing these email addresses do not receive notification that the file was rejected by the court.
-> Courtesy Copies
+> HOW DOES THIS LOOK? Filing Type
+
+> (Required)
+
+> 
+
+> eFile Only
+
+> Pick "eFile Only" to just electronically file your papers.
+
+> 
+
+> 
+
+> eFile and Serve
+
+> Electronically file your papers with the court and have your documents sent to the selected service contacts.
+
+> 
+
+> 
+
+> Service Only
+
+> Your filing will only be sent to the selected service contacts and will not be filed with the court.
+
+> 
+
+> Filing Information
+
+> Motion
+
+> Filing Code
+
+> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
+
+> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
+
+> Filing Description
+
+> Client Reference Number
+
+> Filing on Behalf of
+
+> Select...
+
+> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
+
+> Upload Documents
+
+> To add more than one lead document to the filing, create another filing and upload your document.
+
+> Lead Document
+
+> 2026-04-29_motion_to_direct_disbursement_of_surplus_funds.pdf
+
+> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
+
+> File Description
+
+> Public document
+
+> Security
+
+> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
+
+> Attachments
+
+> 2026-04-29_EXHIBIT_AB_Order_on_Motion_for_Acceptance_of_Overbid_Calculation.pdf
+
+> EXHIBIT AB - ORDER ON MOTION FOR ACCEPTANCE OF OVERBID CALCULATION
+
+> File Description
+
+> Public document
+
+> Security
+
+> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
+
+> 2026-04-29_proposed_order_on_motion_to_direct_disbursement_of_surplus_funds.pdf
+
+> PROPOSED ORDER ON DEFENDANT CODY RICE-VELASQUEZ'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
+
+> File Description
+
+> Public document
+
+> Security
+
+> Use the down arrow to show the dropdown list. You can use the up and down arrows to navigate the list. Press Enter to select an option.
+
+> file_link
+
+> Drag files here or
+
+> Maximum file size:
+
+>  
+
+> 52.43 MB
+
+> Accepted file types:
+
+>  
+
+> Portable Document File (PDF)
+
+> Communications
+
+> If you want someone to receive emails (for example, a legal helper, family member, friend), input their email address below.
+
+> If the court rejects a filing these email addresses do not receive notification that the file was rejected by the court.
+
+> Courtesy Copies
+
 > These individuals will receive a file stamped copy of the document if the court accepts the filing.
 
 ### Assistant
@@ -1063,82 +1123,158 @@ canonical_ref: ""
 > That setup is better than burying the proposed order as an attachment. It gives the clerk/judge a clean separate proposed order to route.
 
 ### User
-> here you go. Submission Agreements
-> 
-> Each “lead document” I uploaded matches the filing code I selected for it.
-> 
-> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
-> 
-> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
-> 
-> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
-> Case Information
-> Court Location
-> Marion Superior Court 3
-> Case Type
-> MF - Mortgage Foreclosure
-> Case Category
-> Civil
-> Judge
-> Miller, Gary L
-> Parties
-> Party Type
-> Party Name
-> Lead Attorney
-> Plaintiff
-> Financial Center First Credit Union
-> Michael E. Farrer,Felix O'Neill Rippy,Scott Andrew Kainrath
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> Defendant
-> American Express National Bank, N.A.
-> Defendant
-> Cody Rice-Velasquez
-> Pro Se
-> Filings
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Motion
-> eFile and Serve
-> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
-> 
-> Proposed Order Filed
-> eFile and Serve
-> PROPOSED ORDER ON DEFENDANT CODY RICE-VELASQUEZ'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
-> 
-> Service Contacts
-> Party Type
-> Party Name
-> Service Contacts
-> Plaintiff
-> Financial Center First Credit Union
-> person
-> 2
-> 
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> person
-> 0
-> Defendant
-> American Express National Bank, N.A.
-> person
-> 0
-> Defendant
-> Cody Rice-Velasquez
-> person
-> 0
-> Other Service Contacts
-> person
-> 0
-> Fees
-> Payment account
-> card
-> Party responsible for envelope fees
-> Cody Rice-Velasquez
-> Total
-> $0.00
+> here you go. Submission Agreements
+
+> 
+
+> Each “lead document” I uploaded matches the filing code I selected for it.
+
+> 
+
+> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
+
+> 
+
+> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
+
+> 
+
+> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
+
+> Case Information
+
+> Court Location
+
+> Marion Superior Court 3
+
+> Case Type
+
+> MF - Mortgage Foreclosure
+
+> Case Category
+
+> Civil
+
+> Judge
+
+> Miller, Gary L
+
+> Parties
+
+> Party Type
+
+> Party Name
+
+> Lead Attorney
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> Michael E. Farrer,Felix O'Neill Rippy,Scott Andrew Kainrath
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> Pro Se
+
+> Filings
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Motion
+
+> eFile and Serve
+
+> DEFENDANT'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
+
+> 
+
+> Proposed Order Filed
+
+> eFile and Serve
+
+> PROPOSED ORDER ON DEFENDANT CODY RICE-VELASQUEZ'S MOTION TO DIRECT DISBURSEMENT OF SURPLUS FUNDS
+
+> 
+
+> Service Contacts
+
+> Party Type
+
+> Party Name
+
+> Service Contacts
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> person
+
+> 2
+
+> 
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> person
+
+> 0
+
+> Other Service Contacts
+
+> person
+
+> 0
+
+> Fees
+
+> Payment account
+
+> card
+
+> Party responsible for envelope fees
+
+> Cody Rice-Velasquez
+
+> Total
+
+> $0.00
+
 > Grand Total
 
 ### Assistant

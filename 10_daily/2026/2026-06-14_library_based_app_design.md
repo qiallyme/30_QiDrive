@@ -3,9 +3,9 @@ layout: page
 title: "Library-Based App Design"
 slug: "library_based_app_design"
 created_at: "2026-06-14 15:47:33"
-updated_at: "2026-06-14 15:47:33"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3785,696 +3785,1386 @@ canonical_ref: ""
 > That’s the next big leap.
 
 ### User
-> this should help you. {
->   "name": "20_QiSystem",
->   "path": "c:\\QiLabs\\20_QiSystem",
->   "type": "directory",
->   "children": [
->     {
->       "name": "10_standards",
->       "type": "folder",
->       "children": [
->         {
->           "name": "fs_ignore.yaml",
->           "type": "file"
->         },
->         {
->           "name": "readme_registry_v1.yaml",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "20_schemas",
->       "type": "folder",
->       "children": [
->         {
->           "name": "apply_rulesets.sql",
->           "type": "file"
->         },
->         {
->           "name": "qid_rpc.sql",
->           "type": "file"
->         },
->         {
->           "name": "qid_rpc_v1.sql",
->           "type": "file"
->         },
->         {
->           "name": "qios_brain_db_v1_1_patch.sql",
->           "type": "file"
->         },
->         {
->           "name": "qios_matrix.sql",
->           "type": "file"
->         },
->         {
->           "name": "system_Brand Assets.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Chargers.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Communication Logs.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Core Registry.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Daily Metrics.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_DirectoryTrees db.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Domains.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_FieldDependencyRelation_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Fields_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Issue Tracking.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_LayoutFieldProperties_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Layout_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Lists db Industries.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Lists.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Log.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Master Code Matrix with Numerical Values.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Master Services Catalog.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Modules_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Notification Center (1).csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Notifications.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_PickListFieldProperties_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Processes & Checklists.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_QIVerse DB.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_QiAlly_Addons_Import_Final.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Spread List.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Tools Checklist.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Tools.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Translation_Codes_001.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Triggers Detail.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_Types.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_database outline.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_db_groups_db.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_job_titles_db.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_speedometer-3-2025-11-15T22_11_11.487Z.csv",
->           "type": "file"
->         },
->         {
->           "name": "system_usage_timeline_rows.csv",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "30_security",
->       "type": "folder"
->     },
->     {
->       "name": "40_automation",
->       "type": "folder"
->     },
->     {
->       "name": "50_data",
->       "type": "folder",
->       "children": [
->         {
->           "name": "supabase",
->           "type": "folder",
->           "children": [
->             {
->               "name": "qisupabase",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "functions",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "qivault-ingest",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.ts",
->                           "type": "file"
->                         }
->                       ]
->                     }
->                   ]
->                 },
->                 {
->                   "name": "migrations",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "001_ingestion_queue.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "002_semantic_profile_file_level.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "20260401000000_qione_admin_invite.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "20260404000001_qios_modular_mode_pivot.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "20260507045840_add_daily_care_notes.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "20260508112922_medication_hold_and_inventory_workflows.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "20260510090423_desktop_admin_admin_console_foundation.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qicase_schema.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qievidence.sql",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "policies",
->                   "type": "folder"
->                 },
->                 {
->                   "name": "schemas",
->                   "type": "folder"
->                 },
->                 {
->                   "name": "sql",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "00_core",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "001_create_schemas.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "002_extensions.sql",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "01_tables",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "001_libraries.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "002_records.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "003_record_links.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "004_tags.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "005_record_tags.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "006_attachments.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "007_events.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "008_event_links.sql",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "02_indexes",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "001_core_indexes.sql",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "03_seed",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "001_libraries_seed.sql",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "05_pipeline",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "002_firefly_staging.sql",
->                           "type": "file"
->                         },
->                         {
->                           "name": "003_firefly_transform.sql",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "is_admin.sql",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "config.toml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "connection-map.md",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "60_quality",
->       "type": "folder"
->     },
->     {
->       "name": "70_lifecycle",
->       "type": "folder"
->     },
->     {
->       "name": "META",
->       "type": "folder",
->       "children": [
->         {
->           "name": "INDEX.csv",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "packages",
->       "type": "folder",
->       "children": [
->         {
->           "name": "ai",
->           "type": "folder",
->           "children": [
->             {
->               "name": "src",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "worker.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": ".keep",
->               "type": "file"
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "package.json",
->               "type": "file"
->             },
->             {
->               "name": "worker_semantic_router.ts",
->               "type": "file"
->             },
->             {
->               "name": "wrangler.toml",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "config",
->           "type": "folder",
->           "children": [
->             {
->               "name": "eslint",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "base.js",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "prettier",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "base.cjs",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "src",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "json",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "QiRealms_seed.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "QiTagClasses_schema.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "QiTags_seed.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "eos-frontmatter-mapping.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "eos_frontmatter.schema.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "frontmatter.schema.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "git_manifest.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "mapping.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "repo_naming_policy.json",
->                       "type": "file"
->                     },
->                     {
->                       "name": "systemInfoCMD.json",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "rules",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "audit_repo_rules.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "fix_repo_rules.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "repoRules.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "rulesRegistry.ts",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "yaml",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "csv_to_md_mappings.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "fs_scan_config.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "housekeeping.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qi_codex.config.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qi_prefix_map.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qicompiler_config.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qione_rag_routes.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "slugs_mapping.yaml",
->                       "type": "file"
->                     },
->                     {
->                       "name": "tree_compiler_config.yaml",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "index.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "tsconfig",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "base.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "node.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "react.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "package.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "database",
->           "type": "folder",
->           "children": [
->             {
->               "name": "src",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "adapters",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "auth",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": ".gitkeep",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "supabase",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "src",
->                           "type": "folder",
->                           "children": [
->                             {
->                               "name": "index.ts",
->                               "type": "file"
->                             }
->                           ]
->                         },
->                         {
->                           "name": "bootstrap_tenant.sql",
->                           "type": "file"
->                         }
->                       ]
->                     }
->                   ]
->                 },
->                 {
->                   "name": "migrations",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "0001_qione_core.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "0002_qiarchive_spine.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "0003_qisys_ops.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "0004_qigraph_index.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "0005_qiknowledge.sql",
->                       "type": "file"
->                     },
->                     {
->                       "name": "0006_qially_comms.sql",
->                       "type": "file"
+> this should help you. {
+
+>   "name": "20_QiSystem",
+
+>   "path": "c:\\QiLabs\\20_QiSystem",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "10_standards",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "fs_ignore.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "readme_registry_v1.yaml",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "20_schemas",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "apply_rulesets.sql",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qid_rpc.sql",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qid_rpc_v1.sql",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qios_brain_db_v1_1_patch.sql",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qios_matrix.sql",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Brand Assets.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Chargers.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Communication Logs.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Core Registry.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Daily Metrics.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_DirectoryTrees db.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Domains.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_FieldDependencyRelation_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Fields_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Issue Tracking.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_LayoutFieldProperties_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Layout_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Lists db Industries.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Lists.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Log.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Master Code Matrix with Numerical Values.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Master Services Catalog.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Modules_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Notification Center (1).csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Notifications.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_PickListFieldProperties_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Processes & Checklists.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_QIVerse DB.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_QiAlly_Addons_Import_Final.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Spread List.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Tools Checklist.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Tools.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Translation_Codes_001.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Triggers Detail.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_Types.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_database outline.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_db_groups_db.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_job_titles_db.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_speedometer-3-2025-11-15T22_11_11.487Z.csv",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "system_usage_timeline_rows.csv",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "30_security",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "40_automation",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "50_data",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "supabase",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "qisupabase",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "functions",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "qivault-ingest",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.ts",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "migrations",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "001_ingestion_queue.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "002_semantic_profile_file_level.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "20260401000000_qione_admin_invite.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "20260404000001_qios_modular_mode_pivot.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "20260507045840_add_daily_care_notes.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "20260508112922_medication_hold_and_inventory_workflows.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "20260510090423_desktop_admin_admin_console_foundation.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qicase_schema.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qievidence.sql",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "policies",
+
+>                   "type": "folder"
+
+>                 },
+
+>                 {
+
+>                   "name": "schemas",
+
+>                   "type": "folder"
+
+>                 },
+
+>                 {
+
+>                   "name": "sql",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "00_core",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "001_create_schemas.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "002_extensions.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "01_tables",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "001_libraries.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "002_records.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "003_record_links.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "004_tags.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "005_record_tags.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "006_attachments.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "007_events.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "008_event_links.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "02_indexes",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "001_core_indexes.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "03_seed",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "001_libraries_seed.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "05_pipeline",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "002_firefly_staging.sql",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "003_firefly_transform.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "is_admin.sql",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "config.toml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "connection-map.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_quality",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "70_lifecycle",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "META",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "INDEX.csv",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "packages",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "ai",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "src",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "worker.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": ".keep",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "package.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "worker_semantic_router.ts",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "wrangler.toml",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "config",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "eslint",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "base.js",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "prettier",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "base.cjs",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "src",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "json",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "QiRealms_seed.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "QiTagClasses_schema.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "QiTags_seed.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "eos-frontmatter-mapping.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "eos_frontmatter.schema.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "frontmatter.schema.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "git_manifest.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "mapping.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "repo_naming_policy.json",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "systemInfoCMD.json",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "rules",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "audit_repo_rules.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "fix_repo_rules.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "repoRules.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "rulesRegistry.ts",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "yaml",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "csv_to_md_mappings.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "fs_scan_config.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "housekeeping.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qi_codex.config.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qi_prefix_map.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qicompiler_config.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qione_rag_routes.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "slugs_mapping.yaml",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "tree_compiler_config.yaml",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "index.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "tsconfig",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "base.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "node.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "react.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "package.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "database",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "src",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "adapters",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "auth",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": ".gitkeep",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "supabase",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "src",
+
+>                           "type": "folder",
+
+>                           "children": [
+
+>                             {
+
+>                               "name": "index.ts",
+
+>                               "type": "file"
+
+>                             }
+
+>                           ]
+
+>                         },
+
+>                         {
+
+>                           "name": "bootstrap_tenant.sql",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "migrations",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "0001_qione_core.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "0002_qiarchive_spine.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "0003_qisys_ops.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "0004_qigraph_index.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "0005_qiknowledge.sql",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "0006_qially_comms.sql",
+
+>                       "type": "file"
+
 >                     },
 
 ### Assistant
@@ -5072,1693 +5762,3380 @@ canonical_ref: ""
 > Use that as-is. The one thing I’d watch: **do not let the IDE “clean up” migrations.** That folder is a loaded weapon. Move around docs and SQL scripts, not historical migrations.
 
 ### User
-> i also have thsi randon packages folder i dont know what to do with. {
->   "name": "packages",
->   "path": "c:\\QiLabs\\20_QiSystem\\packages",
->   "type": "directory",
->   "children": [
->     {
->       "name": "ai",
->       "type": "folder",
->       "children": [
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.ts",
->               "type": "file"
->             },
->             {
->               "name": "worker.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": ".keep",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         },
->         {
->           "name": "worker_semantic_router.ts",
->           "type": "file"
->         },
->         {
->           "name": "wrangler.toml",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "config",
->       "type": "folder",
->       "children": [
->         {
->           "name": "eslint",
->           "type": "folder",
->           "children": [
->             {
->               "name": "base.js",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "prettier",
->           "type": "folder",
->           "children": [
->             {
->               "name": "base.cjs",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "json",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "QiRealms_seed.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "QiTagClasses_schema.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "QiTags_seed.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "eos-frontmatter-mapping.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "eos_frontmatter.schema.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "frontmatter.schema.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "git_manifest.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "mapping.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "repo_naming_policy.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "systemInfoCMD.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "rules",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "audit_repo_rules.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "fix_repo_rules.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "repoRules.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "rulesRegistry.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "yaml",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "csv_to_md_mappings.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "fs_scan_config.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "housekeeping.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qi_codex.config.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qi_prefix_map.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qicompiler_config.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qione_rag_routes.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "slugs_mapping.yaml",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tree_compiler_config.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "tsconfig",
->           "type": "folder",
->           "children": [
->             {
->               "name": "base.json",
->               "type": "file"
->             },
->             {
->               "name": "node.json",
->               "type": "file"
->             },
->             {
->               "name": "react.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "database",
->       "type": "folder",
->       "children": [
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "adapters",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "auth",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": ".gitkeep",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "supabase",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "src",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.ts",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "bootstrap_tenant.sql",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "migrations",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "0001_qione_core.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0002_qiarchive_spine.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0003_qisys_ops.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0004_qigraph_index.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0005_qiknowledge.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0006_qially_comms.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0007_namespace_registry.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0007_qichronicle_time.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0008_get_tenant_members_with_roles.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0008_qihome_ledger.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0009_household_bootstrap_final.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0009_qitax_returns.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0010_qicase_matters.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0010_upsert_tenant_member.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0011_add_display_name_to_members.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0011_qicrm_contacts.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0012_qivault_docs.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0013_qicms_web.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0014_registry.namespace_allocations.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "0015_registry_namespace_bands.sql",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "schemas",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "src",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "contentFrontMatter.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "database.types.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.ts",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "archive.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "case.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "client.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "comms.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "content.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "core.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "home.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "system.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tax.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "vault.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "utils",
->           "type": "folder",
->           "children": [
->             {
->               "name": "supabase.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": ".keep",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         },
->         {
->           "name": "scanner.js",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "email",
->       "type": "folder",
->       "children": [
->         {
->           "name": "partials",
->           "type": "folder",
->           "children": [
->             {
->               "name": "footer.html",
->               "type": "file"
->             },
->             {
->               "name": "header.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "smtp",
->           "type": "folder",
->           "children": [
->             {
->               "name": "config.yml",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "supabase-auth",
->           "type": "folder",
->           "children": [
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "change_email.html",
->               "type": "file"
->             },
->             {
->               "name": "confirmation.html",
->               "type": "file"
->             },
->             {
->               "name": "invite.html",
->               "type": "file"
->             },
->             {
->               "name": "magic_link.html",
->               "type": "file"
->             },
->             {
->               "name": "otp.html",
->               "type": "file"
->             },
->             {
->               "name": "reauthentication.html",
->               "type": "file"
->             },
->             {
->               "name": "recovery.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "templates",
->           "type": "folder",
->           "children": [
->             {
->               "name": "billing",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "invoice.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "general",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "welcome.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "projects",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "update.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "tax",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "return-accepted.html",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "render.ts",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "gina",
->       "type": "folder",
->       "children": [
->         {
->           "name": "demo",
->           "type": "folder",
->           "children": [
->             {
->               "name": "assets",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "branding-lina.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-config-prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "sora-prompts-lumara-lina.txt",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "lumara_resource_graph_investor_section.md",
->               "type": "file"
->             },
->             {
->               "name": "verify_parsing.py",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "frontend",
->           "type": "folder",
->           "children": [
->             {
->               "name": "functions",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "api",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "lina-chat.js",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "public",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-icon.svg",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-widget-drop.js",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "src",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "api",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "linaClient.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "resourceWorkerClient.ts",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "components",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "ChatHeader.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "ChatInput.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "MatchList.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "MessageList.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "NavigatorMediationPanel.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "NeedForm.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "OfferForm.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "ResourceGraph.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "WidgetShell.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "models",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "chat.ts",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "pages",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "ClientPortal.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "Home.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "NavigatorDashboard.tsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "widget",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "main-widget.tsx",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "App.css",
->                   "type": "file"
->                 },
->                 {
->                   "name": "App.tsx",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.css",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "main.tsx",
->                   "type": "file"
->                 },
->                 {
->                   "name": "vite-env.d.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "deno.lock",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "lina-widget.html",
->               "type": "file"
->             },
->             {
->               "name": "package.json",
->               "type": "file"
->             },
->             {
->               "name": "tsconfig.json",
->               "type": "file"
->             },
->             {
->               "name": "vite.config.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "functions",
->           "type": "folder",
->           "children": [
->             {
->               "name": "api",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-chat.js",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "ops",
->           "type": "folder",
->           "children": [
->             {
->               "name": "crisis_routing_extension.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "rules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "qios_cursor_prompts",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "install_ingestion_worker.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "project_prompt.md.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qicompiler_add_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qicompiler_orchestrator_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qimatrix_csv_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qimatrix_sql_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qimatrix_yaml_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "step3_tree_compiler_prompt.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "user_prompt.md.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_readme.md",
->               "type": "file"
->             },
->             {
->               "name": "folder_registry.yaml",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "qios_04_rules_and_readmes.canvas.canvas",
->               "type": "file"
->             },
->             {
->               "name": "qios_05_Cursor_and_naming.canvas",
->               "type": "file"
->             },
->             {
->               "name": "realms_registry.yaml",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "gina_core",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "services",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "capture.py",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "db.py",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "main.py",
->                   "type": "file"
->                 },
->                 {
->                   "name": "utils.py",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "launcher",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "public",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "src",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "components",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "FileBrowser.css",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Tooltip.css",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Tooltip.jsx",
->                           "type": "file"
->                         },
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "App.css",
->                       "type": "file"
->                     },
->                     {
->                       "name": "App.jsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.css",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "main.jsx",
->                       "type": "file"
->                     },
->                     {
->                       "name": "theme.js",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "package-lock.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "package.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "templates",
->           "type": "folder",
->           "children": [
->             {
->               "name": "docs",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "readme_template.md.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "tools",
->           "type": "folder",
->           "children": [
->             {
->               "name": "README_SCANNER.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "run_migrations.py",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "workers",
->           "type": "folder",
->           "children": [
->             {
->               "name": "_shared",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "embedder",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "worker_embedder.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "ingestion",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "worker_ingestion.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "linter",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "readme_generator.py",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "metadata_naming",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "orchestrator",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".wrangler",
->                   "type": "folder"
->                 },
->                 {
->                   "name": "migrations",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "0001_do.mjs",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "OrchestratorState.ts",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "package-lock.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "package.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qios_06_workers_orchestrator.canvas",
->                   "type": "file"
->                 },
->                 {
->                   "name": "worker_orchestrator.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "self_heal",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "worker_self_heal.ts",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "semantic_router",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "_readme.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "(2).gitignore",
->           "type": "file"
->         },
->         {
->           "name": ".cursorrules",
->           "type": "file"
->         },
->         {
->           "name": ".gitignore",
->           "type": "file"
->         },
->         {
->           "name": "LICENSE",
->           "type": "file"
->         },
->         {
->           "name": "QIOS_REPO_INFO.txt",
->           "type": "file"
->         },
->         {
->           "name": "QIOS_SAFE_TO_DELETE.txt",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "```markdown.md",
->           "type": "file"
->         },
->         {
->           "name": "env.example",
->           "type": "file"
->         },
->         {
->           "name": "favicon.ico",
->           "type": "file"
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         },
->         {
->           "name": "lina-widget.html",
->           "type": "file"
->         },
->         {
->           "name": "package-lock.json",
->           "type": "file"
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         },
->         {
->           "name": "qios_00_genesis.canvas",
->           "type": "file"
->         },
->         {
->           "name": "qios_runtime_mindmap.canvas",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "qinode",
->       "type": "folder",
->       "children": [
->         {
->           "name": "QiNode_Genesis_Root",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".node_id",
->               "type": "file"
->             },
->             {
->               "name": "data.json",
->               "type": "file"
->             },
->             {
->               "name": "index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "qinode-engine",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiNode_Genesis_Root",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".node",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": ".gitkeep",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": ".node_id",
->                   "type": "file"
->                 },
->                 {
->                   "name": "data.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "src",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "main.rs",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "Cargo.lock",
->               "type": "file"
->             },
->             {
->               "name": "Cargo.toml",
->               "type": "file"
->             },
->             {
->               "name": "seed.rs",
->               "type": "file"
->             },
->             {
->               "name": "spark.bat",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "obsidian-engine",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.ts",
->               "type": "file"
->             },
->             {
->               "name": "main.rs",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "Cargo.lock",
->           "type": "file"
->         },
->         {
->           "name": "Cargo.toml",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         },
->         {
->           "name": "seed.rs",
->           "type": "file"
->         },
->         {
->           "name": "spark.bat",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "qiobject",
->       "type": "folder",
->       "children": [
->         {
->           "name": "contacts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "qicontacts",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "files",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "raw_export_DO_NOT_TOUCH.csv",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "README.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "energy",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".trunk",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "configs",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": ".markdownlint.yaml",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "trunk.yaml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "QIOS_REPO_INFO.txt",
->               "type": "file"
->             },
->             {
->               "name": "QIOS_SAFE_TO_DELETE.txt",
->               "type": "file"
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "activity.csv",
->               "type": "file"
->             },
->             {
->               "name": "data.csv",
->               "type": "file"
->             },
->             {
->               "name": "data.txt",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "insert_bills.sql",
->               "type": "file"
->             },
->             {
->               "name": "insert_bills_detailed.sql",
->               "type": "file"
->             },
->             {
->               "name": "update_bills_schema.sql",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "rides",
->           "type": "folder",
->           "children": [
->             {
->               "name": "exp_rides",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "_2.50.10.10.1_QiRides.md",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "tandero_dev_doc.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "web",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "app.js",
->                   "type": "file"
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "manifest.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "worker",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "src",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.js",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "wrangler.toml",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": ".gitignore",
->               "type": "file"
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "database.sql",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "utils.ts",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "qitax-cli",
->       "type": "folder",
->       "children": [
->         {
->           "name": "__main__.py",
->           "type": "file"
->         },
->         {
->           "name": "service.py",
->           "type": "file"
->         },
->         {
->           "name": "storage.py",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "workers",
->       "type": "folder",
->       "children": [
->         {
->           "name": "constitution.ts",
->           "type": "file"
->         },
->         {
->           "name": "heartbeat.ts",
->           "type": "file"
->         },
->         {
->           "name": "ignore.ts",
->           "type": "file"
->         }
->       ]
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-14T21:42:54.611Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> i also have thsi randon packages folder i dont know what to do with. {
+
+>   "name": "packages",
+
+>   "path": "c:\\QiLabs\\20_QiSystem\\packages",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "ai",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.ts",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "worker.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": ".keep",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "worker_semantic_router.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "wrangler.toml",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "config",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "eslint",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "base.js",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "prettier",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "base.cjs",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "json",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "QiRealms_seed.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "QiTagClasses_schema.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "QiTags_seed.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "eos-frontmatter-mapping.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "eos_frontmatter.schema.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "frontmatter.schema.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "git_manifest.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "mapping.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "repo_naming_policy.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "systemInfoCMD.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "rules",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "audit_repo_rules.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "fix_repo_rules.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "repoRules.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "rulesRegistry.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "yaml",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "csv_to_md_mappings.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "fs_scan_config.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "housekeeping.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qi_codex.config.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qi_prefix_map.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qicompiler_config.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qione_rag_routes.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "slugs_mapping.yaml",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tree_compiler_config.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "tsconfig",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "base.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "node.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "react.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "database",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "adapters",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "auth",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": ".gitkeep",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "supabase",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "src",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.ts",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "bootstrap_tenant.sql",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "migrations",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "0001_qione_core.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0002_qiarchive_spine.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0003_qisys_ops.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0004_qigraph_index.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0005_qiknowledge.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0006_qially_comms.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0007_namespace_registry.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0007_qichronicle_time.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0008_get_tenant_members_with_roles.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0008_qihome_ledger.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0009_household_bootstrap_final.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0009_qitax_returns.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0010_qicase_matters.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0010_upsert_tenant_member.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0011_add_display_name_to_members.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0011_qicrm_contacts.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0012_qivault_docs.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0013_qicms_web.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0014_registry.namespace_allocations.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "0015_registry_namespace_bands.sql",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "schemas",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "src",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "contentFrontMatter.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "database.types.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.ts",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "archive.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "case.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "client.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "comms.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "content.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "core.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "home.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "system.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tax.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "vault.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "utils",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "supabase.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": ".keep",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "scanner.js",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "email",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "partials",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "footer.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "header.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "smtp",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "config.yml",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "supabase-auth",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "change_email.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "confirmation.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "invite.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "magic_link.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "otp.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "reauthentication.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "recovery.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "templates",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "billing",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "invoice.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "general",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "welcome.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "projects",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "update.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "tax",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "return-accepted.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "render.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "gina",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "demo",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "assets",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "branding-lina.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-config-prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "sora-prompts-lumara-lina.txt",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "lumara_resource_graph_investor_section.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "verify_parsing.py",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "frontend",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "functions",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "api",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "lina-chat.js",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "public",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-icon.svg",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-widget-drop.js",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "src",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "api",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "linaClient.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "resourceWorkerClient.ts",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "components",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "ChatHeader.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "ChatInput.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "MatchList.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "MessageList.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "NavigatorMediationPanel.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "NeedForm.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "OfferForm.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "ResourceGraph.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "WidgetShell.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "models",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "chat.ts",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "pages",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "ClientPortal.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "Home.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "NavigatorDashboard.tsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "widget",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "main-widget.tsx",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "App.css",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "App.tsx",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.css",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "main.tsx",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "vite-env.d.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "deno.lock",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "lina-widget.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "package.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tsconfig.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "vite.config.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "functions",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "api",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-chat.js",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "ops",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "crisis_routing_extension.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "rules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "qios_cursor_prompts",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "install_ingestion_worker.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "project_prompt.md.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qicompiler_add_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qicompiler_orchestrator_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qimatrix_csv_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qimatrix_sql_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qimatrix_yaml_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "step3_tree_compiler_prompt.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "user_prompt.md.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_readme.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "folder_registry.yaml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_04_rules_and_readmes.canvas.canvas",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_05_Cursor_and_naming.canvas",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "realms_registry.yaml",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "gina_core",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "services",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "capture.py",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "db.py",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "main.py",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "utils.py",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "launcher",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "public",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "src",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "components",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "FileBrowser.css",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Tooltip.css",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Tooltip.jsx",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "App.css",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "App.jsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.css",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "main.jsx",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "theme.js",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "package-lock.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "package.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "templates",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "docs",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "readme_template.md.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "tools",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "README_SCANNER.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "run_migrations.py",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "workers",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "_shared",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "embedder",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "worker_embedder.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "ingestion",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "worker_ingestion.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "linter",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "readme_generator.py",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "metadata_naming",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "orchestrator",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".wrangler",
+
+>                   "type": "folder"
+
+>                 },
+
+>                 {
+
+>                   "name": "migrations",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "0001_do.mjs",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "OrchestratorState.ts",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "package-lock.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "package.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qios_06_workers_orchestrator.canvas",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "worker_orchestrator.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "self_heal",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "worker_self_heal.ts",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "semantic_router",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "_readme.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "(2).gitignore",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": ".cursorrules",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": ".gitignore",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "LICENSE",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "QIOS_REPO_INFO.txt",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "QIOS_SAFE_TO_DELETE.txt",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "```markdown.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "env.example",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "favicon.ico",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "lina-widget.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package-lock.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qios_00_genesis.canvas",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "qios_runtime_mindmap.canvas",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "qinode",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "QiNode_Genesis_Root",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".node_id",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "qinode-engine",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiNode_Genesis_Root",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".node",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": ".gitkeep",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": ".node_id",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "data.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "src",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "main.rs",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "Cargo.lock",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Cargo.toml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "seed.rs",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "spark.bat",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "obsidian-engine",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.ts",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.rs",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "Cargo.lock",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "Cargo.toml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "seed.rs",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "spark.bat",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "qiobject",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "contacts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "qicontacts",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "files",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "raw_export_DO_NOT_TOUCH.csv",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "README.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "energy",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".trunk",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "configs",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": ".markdownlint.yaml",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "trunk.yaml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "QIOS_REPO_INFO.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QIOS_SAFE_TO_DELETE.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "activity.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "data.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "data.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "insert_bills.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "insert_bills_detailed.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "update_bills_schema.sql",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "rides",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "exp_rides",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "_2.50.10.10.1_QiRides.md",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "tandero_dev_doc.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "web",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "app.js",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "manifest.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "worker",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "src",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.js",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "wrangler.toml",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": ".gitignore",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "database.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "utils.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "qitax-cli",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "__main__.py",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "service.py",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "storage.py",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "workers",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "constitution.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "heartbeat.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ignore.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-14T21:42:54.611Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -7387,264 +9764,522 @@ canonical_ref: ""
 > That keeps the database project from becoming a junk drawer. Good catch.
 
 ### User
-> Viewed ai.md:21-28
-> 
-> I will scan the repository and generate a comprehensive inventory of all database-related files (such as SQL scripts, config files, and migrations) and CSV files (source reference data or staging files) with their full paths.
-> 
-> Ran command: `Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
->     $_.FullName -notmatch 'node_modules|\.git' -and 
->     ($_.Extension -eq '.sql' -or $_.Extension -eq '.csv' -or $_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
-> } | Select-Object Name, FullName | Sort-Object Name`
-> 
-> I will run a script to compile this list of database and CSV files grouped by category (SQL Scripts, Migrations, Configs, Reference Schemas, and Staging Sheets) to prevent truncation and provide a clear overview.
-> 
-> Ran command: `# Group 1: SQL Scripts under 50_data/supabase
-> $sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> 
-> # Group 2: SQL Migrations under 50_data/supabase
-> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> 
-> # Group 3: SQL Files under packages
-> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> 
-> # Group 4: Config files (.env, .env.example, config.toml, wrangler.toml)
-> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
->     $_.FullName -notmatch 'node_modules|\.git' -and 
->     ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
-> } | Select-Object -ExpandProperty FullName
-> 
-> # Group 5: CSV reference source files under 20_schemas
-> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
-> 
-> # Group 6: CSV data sheets under sheets
-> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
-> 
-> Write-Output "=== SQL EXECUTION SCRIPTS ==="
-> $sqlScripts | ForEach-Object { Write-Output $_ }
-> 
-> Write-Output "`n=== SUPABASE CANONICAL MIGRATIONS ==="
-> $migrations | ForEach-Object { Write-Output $_ }
-> 
-> Write-Output "`n=== MONOREPO PACKAGES SQL FILES ==="
-> $packagesSql | ForEach-Object { Write-Output $_ }
-> 
-> Write-Output "`n=== DATABASE & RUNTIME CONFIGS ==="
-> $configs | ForEach-Object { Write-Output $_ }
-> 
-> Write-Output "`n=== REFERENCE SOURCE CSVS ==="
-> $referenceCsvs | ForEach-Object { Write-Output $_ }
-> 
-> Write-Output "`n=== FLAT SOURCE DATA CSVS (sheets/) ==="
-> $sheetsCsvs | ForEach-Object { Write-Output $_ }`
-> 
-> I will run a PowerShell script to automatically scan the repository for all database files (SQL files, config files, and migrations) and all CSV files, compile them into a structured markdown inventory, and write it to `C:\QiLabs\20_QiSystem\META\database_file_inventory.md` for your reference.
-> 
-> Ran command: `$inventoryPath = "C:\QiLabs\20_QiSystem\META\database_file_inventory.md"
-> 
-> # Gather files
-> $sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
-> 
-> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
->     $_.FullName -notmatch 'node_modules|\.git' -and 
->     ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
-> } | Select-Object -ExpandProperty FullName
-> 
-> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
-> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
-> 
-> # Generate Markdown Content
-> $content = @()
-> $content += "# QiSystem Database and Import Files Inventory"
-> $content += ""
-> $content += "This document lists the absolute paths of all database files, schemas, configurations, and CSV data files in the repository."
-> $content += ""
-> 
-> $content += "## 1. Supabase SQL Execution Scripts"
-> $content += "These are modular SQL files under `50_data/supabase/qisupabase/sql/` used to run up database structures locally."
-> $content += ""
-> foreach ($f in $sqlScripts) { $content += "* `$f`" }
-> $content += ""
-> 
-> $content += "## 2. Supabase Deployment Migrations"
-> $content += "These are versioned, deployment migration files under `50_data/supabase/qisupabase/migrations/`."
-> $content += ""
-> foreach ($f in $migrations) { $content += "* `$f`" }
-> $content += ""
-> 
-> $content += "## 3. SQL Files Located in Packages"
-> $content += "These are legacy or domain-specific prototype SQL files located inside `packages/`."
-> $content += ""
-> foreach ($f in $packagesSql) { $content += "* `$f`" }
-> $content += ""
-> 
-> $content += "## 4. Database & Runtime Configurations"
-> $content += "These are environment configuration files, wrangler settings, or CLI configuration files."
-> $content += ""
-> foreach ($f in $configs) { $content += "* `$f`" }
-> $content += ""
-> 
-> $content += "## 5. Reference System CSVs"
-> $content += "These are conceptual source system-definition CSVs located under `20_schemas/`."
-> $content += ""
-> foreach ($f in $referenceCsvs) { $content += "* `$f`" }
-> $content += ""
-> 
-> $content += "## 6. Flat Source Data CSVs (`sheets/`)"
-> $content += "These are flat CSV registers containing historical record sets or import candidate files."
-> $content += ""
-> foreach ($f in $sheetsCsvs) { $content += "* `$f`" }
-> $content += ""
-> 
-> # Write to file
-> $content | Out-File -FilePath $inventoryPath -Encoding utf8
-> Write-Output "Database and CSV file inventory written to $inventoryPath"`
-> 
-> I will run the corrected script using .NET APIs in PowerShell to construct the inventory safely without string parsing issues.
-> 
-> Ran command: `$sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
-> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
-> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
-> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { $_.FullName -notmatch 'node_modules|\.git' -and ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') } | ForEach-Object { $_.FullName }
-> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | ForEach-Object { $_.FullName }
-> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | ForEach-Object { $_.FullName }
-> 
-> $sb = [System.Text.StringBuilder]::new()
-> $null = $sb.AppendLine("# QiSystem Database and Import Files Inventory")
-> $null = $sb.AppendLine()
-> $null = $sb.AppendLine("This document lists the absolute paths of all database files, schemas, configurations, and CSV data files in the repository.")
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 1. Supabase SQL Execution Scripts")
-> $null = $sb.AppendLine("These are modular SQL files under ``50_data/supabase/qisupabase/sql/`` used to run up database structures locally.")
-> $null = $sb.AppendLine()
-> foreach ($f in $sqlScripts) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 2. Supabase Deployment Migrations")
-> $null = $sb.AppendLine("These are versioned, deployment migration files under ``50_data/supabase/qisupabase/migrations/``.")
-> $null = $sb.AppendLine()
-> foreach ($f in $migrations) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 3. SQL Files Located in Packages")
-> $null = $sb.AppendLine("These are legacy or domain-specific prototype SQL files located inside ``packages/``.")
-> $null = $sb.AppendLine()
-> foreach ($f in $packagesSql) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 4. Database & Runtime Configurations")
-> $null = $sb.AppendLine("These are environment configuration files, wrangler settings, or CLI configuration files.")
-> $null = $sb.AppendLine()
-> foreach ($f in $configs) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 5. Reference System CSVs")
-> $null = $sb.AppendLine("These are conceptual source system-definition CSVs located under ``20_schemas/``.")
-> $null = $sb.AppendLine()
-> foreach ($f in $referenceCsvs) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> $null = $sb.AppendLine("## 6. Flat Source Data CSVs (sheets/)")
-> $null = $sb.AppendLine("These are flat CSV registers containing historical record sets or import candidate files.")
-> $null = $sb.AppendLine()
-> foreach ($f in $sheetsCsvs) { $null = $sb.AppendLine("* ``$f``") }
-> $null = $sb.AppendLine()
-> 
-> [System.IO.File]::WriteAllText("C:\QiLabs\20_QiSystem\META\database_file_inventory.md", $sb.ToString())
-> Write-Output "Database inventory generated successfully"`
-> 
-> I will verify the start of the generated database inventory file to ensure the structure is correct and readable.
-> 
-> Viewed database_file_inventory.md:1-270
-> 
-> I have scanned the repository and created a complete markdown inventory file located at [database_file_inventory.md](file:///C:/QiLabs/20_QiSystem/META/database_file_inventory.md) containing the **absolute paths of all 270 database-related and CSV files** in the repository. 
-> 
-> Here is a summary breakdown of the inventory:
-> 
-> ### 1. Supabase SQL Execution Scripts (18 files)
-> These are organized execution SQL files under `50_data/supabase/qisupabase/sql/` used to run up database structures locally:
-> * [00.001_create_schemas.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.001_create_schemas.sql)
-> * [00.002_extensions.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.002_extensions.sql)
-> * [00.003_updated_at_function.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.003_updated_at_function.sql)
-> * [01.001_libraries.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.001_libraries.sql)
-> * [01.002_records.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.002_records.sql)
-> * [01.003_record_links.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.003_record_links.sql)
-> * [01.004_tags.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.004_tags.sql)
-> * [01.005_record_tags.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.005_record_tags.sql)
-> * [01.006_attachments.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.006_attachments.sql)
-> * [01.007_events.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.007_events.sql)
-> * [01.008_event_links.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.008_event_links.sql)
-> * [01.009_records_updated_at_trigger.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.009_records_updated_at_trigger.sql)
-> * [02.001_core_indexes.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/02_indexes/02.001_core_indexes.sql)
-> * [03.001_libraries_seed.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/03_seed/03.001_libraries_seed.sql)
-> * [04.001_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.001_transaction_rules.sql)
-> * [04.002_seed_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.002_seed_transaction_rules.sql)
-> * [04.003_apply_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.003_apply_transaction_rules.sql)
-> * [05.001_transaction_normalization_contract.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.001_transaction_normalization_contract.sql)
-> * [05.002_firefly_staging.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.002_firefly_staging.sql)
-> * [05.003_firefly_transform.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.003_firefly_transform.sql)
-> * [99.001_smoke_tests.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/99_verify/99.001_smoke_tests.sql)
-> 
-> ---
-> 
-> ### 2. Supabase Deployment Migrations (9 files)
-> These are deployment migration checkpoint files under `50_data/supabase/qisupabase/migrations/`:
-> * [001_ingestion_queue.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/001_ingestion_queue.sql)
-> * [002_semantic_profile_file_level.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/002_semantic_profile_file_level.sql)
-> * [20260401000000_qione_admin_invite.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260401000000_qione_admin_invite.sql)
-> * [20260404000001_qios_modular_mode_pivot.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260404000001_qios_modular_mode_pivot.sql)
-> * [20260507045840_add_daily_care_notes.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260507045840_add_daily_care_notes.sql)
-> * [20260508112922_medication_hold_and_inventory_workflows.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260508112922_medication_hold_and_inventory_workflows.sql)
-> * [20260510090423_desktop_admin_admin_console_foundation.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260510090423_desktop_admin_admin_console_foundation.sql)
-> * [qicase_schema.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/qicase_schema.sql)
-> * [qievidence.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/qievidence.sql)
-> 
-> ---
-> 
-> ### 3. Database Configurations (7 files)
-> * [config.toml](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/config.toml)
-> * [.env.example](file:///C:/QiLabs/20_QiSystem/50_data/supabase/.env.example)
-> * [packages/database/.env](file:///C:/QiLabs/20_QiSystem/packages/database/.env)
-> * [packages/qiobject/energy/.env](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/.env)
-> * [packages/qiobject/rides/.env](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/.env)
-> * [packages/qiobject/rides/worker/wrangler.toml](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/worker/wrangler.toml)
-> * [packages/ai/wrangler.toml](file:///C:/QiLabs/20_QiSystem/packages/ai/wrangler.toml)
-> 
-> ---
-> 
-> ### 4. SQL Files Located in Packages (20 files)
-> These legacy, prototype, or adapter SQL scripts reside inside `packages/`:
-> * [bootstrap_tenant.sql](file:///C:/QiLabs/20_QiSystem/packages/database/src/adapters/supabase/bootstrap_tenant.sql)
-> * **`packages/database/src/migrations/`**: Prisma/Drizzle historic logs (`0001_qione_core.sql` through `0015_registry_namespace_bands.sql`)
-> * **`packages/qiobject/energy/`**:
->   * [insert_bills.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/insert_bills.sql)
->   * [insert_bills_detailed.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/insert_bills_detailed.sql)
->   * [update_bills_schema.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/update_bills_schema.sql)
-> * **`packages/qiobject/rides/`**:
->   * [database.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/database.sql)
-> 
-> ---
-> 
-> ### 5. Reference CSV Files (36 files)
-> System-definition schema references stored under `20_schemas/reference_csv/system/` (e.g. fields, modules, models, logs):
-> * [system_API Recovery Keys & Related.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_API%20Recovery%20Keys%20&%20Related.csv)
-> * [system_Brand Assets.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Brand%20Assets.csv)
-> * [system_Fields_001.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Fields_001.csv)
-> * [system_Modules_001.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Modules_001.csv)
-> * [system_Master Services Catalog.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Master%20Services%20Catalog.csv)
-> * *(Refer to `META/database_file_inventory.md` for the full list of 36 reference files)*
-> 
-> ---
-> 
-> ### 6. Flat Source Data CSV Files (180 files)
-> CSV registers containing historical data, system logs, or candidates for ingestion, stored in `sheets/` subdirectories:
-> * **`sheets/business/`**: `businesses_db.csv`, `calls_db.csv`, `tasks_db.csv`, etc.
-> * **`sheets/financial/`**: `coa_db.csv`, `financial_billpay_db.csv`, `financial_cashapp_db.csv`, `financial_Register.csv`, etc.
-> * **`sheets/legal/`**: `legal_Background_Check_Adjudication_Grid.csv`, `legal_DocumentChecklist.csv`, etc.
-> * **`sheets/medical/`**: `medical_Medication.csv`, `medical_Blood_Glucose_Log.csv`, etc.
-> * **`sheets/personal/`**: `personal_allergies_db.csv`, `personal_bookmarks_db.csv`, `personal_Habit.csv`, etc.
+> Viewed ai.md:21-28
+
+> 
+
+> I will scan the repository and generate a comprehensive inventory of all database-related files (such as SQL scripts, config files, and migrations) and CSV files (source reference data or staging files) with their full paths.
+
+> 
+
+> Ran command: `Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
+
+>     $_.FullName -notmatch 'node_modules|\.git' -and 
+
+>     ($_.Extension -eq '.sql' -or $_.Extension -eq '.csv' -or $_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
+
+> } | Select-Object Name, FullName | Sort-Object Name`
+
+> 
+
+> I will run a script to compile this list of database and CSV files grouped by category (SQL Scripts, Migrations, Configs, Reference Schemas, and Staging Sheets) to prevent truncation and provide a clear overview.
+
+> 
+
+> Ran command: `# Group 1: SQL Scripts under 50_data/supabase
+
+> $sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Group 2: SQL Migrations under 50_data/supabase
+
+> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Group 3: SQL Files under packages
+
+> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Group 4: Config files (.env, .env.example, config.toml, wrangler.toml)
+
+> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
+
+>     $_.FullName -notmatch 'node_modules|\.git' -and 
+
+>     ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
+
+> } | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Group 5: CSV reference source files under 20_schemas
+
+> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Group 6: CSV data sheets under sheets
+
+> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
+
+> 
+
+> Write-Output "=== SQL EXECUTION SCRIPTS ==="
+
+> $sqlScripts | ForEach-Object { Write-Output $_ }
+
+> 
+
+> Write-Output "`n=== SUPABASE CANONICAL MIGRATIONS ==="
+
+> $migrations | ForEach-Object { Write-Output $_ }
+
+> 
+
+> Write-Output "`n=== MONOREPO PACKAGES SQL FILES ==="
+
+> $packagesSql | ForEach-Object { Write-Output $_ }
+
+> 
+
+> Write-Output "`n=== DATABASE & RUNTIME CONFIGS ==="
+
+> $configs | ForEach-Object { Write-Output $_ }
+
+> 
+
+> Write-Output "`n=== REFERENCE SOURCE CSVS ==="
+
+> $referenceCsvs | ForEach-Object { Write-Output $_ }
+
+> 
+
+> Write-Output "`n=== FLAT SOURCE DATA CSVS (sheets/) ==="
+
+> $sheetsCsvs | ForEach-Object { Write-Output $_ }`
+
+> 
+
+> I will run a PowerShell script to automatically scan the repository for all database files (SQL files, config files, and migrations) and all CSV files, compile them into a structured markdown inventory, and write it to `C:\QiLabs\20_QiSystem\META\database_file_inventory.md` for your reference.
+
+> 
+
+> Ran command: `$inventoryPath = "C:\QiLabs\20_QiSystem\META\database_file_inventory.md"
+
+> 
+
+> # Gather files
+
+> $sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | Select-Object -ExpandProperty FullName
+
+> 
+
+> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { 
+
+>     $_.FullName -notmatch 'node_modules|\.git' -and 
+
+>     ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') 
+
+> } | Select-Object -ExpandProperty FullName
+
+> 
+
+> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
+
+> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | Select-Object -ExpandProperty FullName
+
+> 
+
+> # Generate Markdown Content
+
+> $content = @()
+
+> $content += "# QiSystem Database and Import Files Inventory"
+
+> $content += ""
+
+> $content += "This document lists the absolute paths of all database files, schemas, configurations, and CSV data files in the repository."
+
+> $content += ""
+
+> 
+
+> $content += "## 1. Supabase SQL Execution Scripts"
+
+> $content += "These are modular SQL files under `50_data/supabase/qisupabase/sql/` used to run up database structures locally."
+
+> $content += ""
+
+> foreach ($f in $sqlScripts) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> $content += "## 2. Supabase Deployment Migrations"
+
+> $content += "These are versioned, deployment migration files under `50_data/supabase/qisupabase/migrations/`."
+
+> $content += ""
+
+> foreach ($f in $migrations) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> $content += "## 3. SQL Files Located in Packages"
+
+> $content += "These are legacy or domain-specific prototype SQL files located inside `packages/`."
+
+> $content += ""
+
+> foreach ($f in $packagesSql) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> $content += "## 4. Database & Runtime Configurations"
+
+> $content += "These are environment configuration files, wrangler settings, or CLI configuration files."
+
+> $content += ""
+
+> foreach ($f in $configs) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> $content += "## 5. Reference System CSVs"
+
+> $content += "These are conceptual source system-definition CSVs located under `20_schemas/`."
+
+> $content += ""
+
+> foreach ($f in $referenceCsvs) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> $content += "## 6. Flat Source Data CSVs (`sheets/`)"
+
+> $content += "These are flat CSV registers containing historical record sets or import candidate files."
+
+> $content += ""
+
+> foreach ($f in $sheetsCsvs) { $content += "* `$f`" }
+
+> $content += ""
+
+> 
+
+> # Write to file
+
+> $content | Out-File -FilePath $inventoryPath -Encoding utf8
+
+> Write-Output "Database and CSV file inventory written to $inventoryPath"`
+
+> 
+
+> I will run the corrected script using .NET APIs in PowerShell to construct the inventory safely without string parsing issues.
+
+> 
+
+> Ran command: `$sqlScripts = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\sql -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
+
+> $migrations = Get-ChildItem -Path C:\QiLabs\20_QiSystem\50_data\supabase\qisupabase\migrations -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
+
+> $packagesSql = Get-ChildItem -Path C:\QiLabs\20_QiSystem\packages -Recurse -File -Filter "*.sql" | ForEach-Object { $_.FullName }
+
+> $configs = Get-ChildItem -Path C:\QiLabs\20_QiSystem -Recurse -File | Where-Object { $_.FullName -notmatch 'node_modules|\.git' -and ($_.Name -eq 'config.toml' -or $_.Name -eq 'wrangler.toml' -or $_.Name -eq '.env' -or $_.Name -eq '.env.example') } | ForEach-Object { $_.FullName }
+
+> $referenceCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\20_schemas -Recurse -File -Filter "*.csv" | ForEach-Object { $_.FullName }
+
+> $sheetsCsvs = Get-ChildItem -Path C:\QiLabs\20_QiSystem\sheets -Recurse -File -Filter "*.csv" | ForEach-Object { $_.FullName }
+
+> 
+
+> $sb = [System.Text.StringBuilder]::new()
+
+> $null = $sb.AppendLine("# QiSystem Database and Import Files Inventory")
+
+> $null = $sb.AppendLine()
+
+> $null = $sb.AppendLine("This document lists the absolute paths of all database files, schemas, configurations, and CSV data files in the repository.")
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 1. Supabase SQL Execution Scripts")
+
+> $null = $sb.AppendLine("These are modular SQL files under ``50_data/supabase/qisupabase/sql/`` used to run up database structures locally.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $sqlScripts) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 2. Supabase Deployment Migrations")
+
+> $null = $sb.AppendLine("These are versioned, deployment migration files under ``50_data/supabase/qisupabase/migrations/``.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $migrations) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 3. SQL Files Located in Packages")
+
+> $null = $sb.AppendLine("These are legacy or domain-specific prototype SQL files located inside ``packages/``.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $packagesSql) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 4. Database & Runtime Configurations")
+
+> $null = $sb.AppendLine("These are environment configuration files, wrangler settings, or CLI configuration files.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $configs) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 5. Reference System CSVs")
+
+> $null = $sb.AppendLine("These are conceptual source system-definition CSVs located under ``20_schemas/``.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $referenceCsvs) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> $null = $sb.AppendLine("## 6. Flat Source Data CSVs (sheets/)")
+
+> $null = $sb.AppendLine("These are flat CSV registers containing historical record sets or import candidate files.")
+
+> $null = $sb.AppendLine()
+
+> foreach ($f in $sheetsCsvs) { $null = $sb.AppendLine("* ``$f``") }
+
+> $null = $sb.AppendLine()
+
+> 
+
+> [System.IO.File]::WriteAllText("C:\QiLabs\20_QiSystem\META\database_file_inventory.md", $sb.ToString())
+
+> Write-Output "Database inventory generated successfully"`
+
+> 
+
+> I will verify the start of the generated database inventory file to ensure the structure is correct and readable.
+
+> 
+
+> Viewed database_file_inventory.md:1-270
+
+> 
+
+> I have scanned the repository and created a complete markdown inventory file located at [database_file_inventory.md](file:///C:/QiLabs/20_QiSystem/META/database_file_inventory.md) containing the **absolute paths of all 270 database-related and CSV files** in the repository. 
+
+> 
+
+> Here is a summary breakdown of the inventory:
+
+> 
+
+> ### 1. Supabase SQL Execution Scripts (18 files)
+
+> These are organized execution SQL files under `50_data/supabase/qisupabase/sql/` used to run up database structures locally:
+
+> * [00.001_create_schemas.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.001_create_schemas.sql)
+
+> * [00.002_extensions.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.002_extensions.sql)
+
+> * [00.003_updated_at_function.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/00_core/00.003_updated_at_function.sql)
+
+> * [01.001_libraries.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.001_libraries.sql)
+
+> * [01.002_records.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.002_records.sql)
+
+> * [01.003_record_links.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.003_record_links.sql)
+
+> * [01.004_tags.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.004_tags.sql)
+
+> * [01.005_record_tags.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.005_record_tags.sql)
+
+> * [01.006_attachments.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.006_attachments.sql)
+
+> * [01.007_events.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.007_events.sql)
+
+> * [01.008_event_links.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.008_event_links.sql)
+
+> * [01.009_records_updated_at_trigger.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/01_tables/01.009_records_updated_at_trigger.sql)
+
+> * [02.001_core_indexes.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/02_indexes/02.001_core_indexes.sql)
+
+> * [03.001_libraries_seed.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/03_seed/03.001_libraries_seed.sql)
+
+> * [04.001_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.001_transaction_rules.sql)
+
+> * [04.002_seed_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.002_seed_transaction_rules.sql)
+
+> * [04.003_apply_transaction_rules.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/04_rules/04.003_apply_transaction_rules.sql)
+
+> * [05.001_transaction_normalization_contract.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.001_transaction_normalization_contract.sql)
+
+> * [05.002_firefly_staging.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.002_firefly_staging.sql)
+
+> * [05.003_firefly_transform.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/05_pipeline/05.003_firefly_transform.sql)
+
+> * [99.001_smoke_tests.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/sql/99_verify/99.001_smoke_tests.sql)
+
+> 
+
+> ---
+
+> 
+
+> ### 2. Supabase Deployment Migrations (9 files)
+
+> These are deployment migration checkpoint files under `50_data/supabase/qisupabase/migrations/`:
+
+> * [001_ingestion_queue.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/001_ingestion_queue.sql)
+
+> * [002_semantic_profile_file_level.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/002_semantic_profile_file_level.sql)
+
+> * [20260401000000_qione_admin_invite.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260401000000_qione_admin_invite.sql)
+
+> * [20260404000001_qios_modular_mode_pivot.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260404000001_qios_modular_mode_pivot.sql)
+
+> * [20260507045840_add_daily_care_notes.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260507045840_add_daily_care_notes.sql)
+
+> * [20260508112922_medication_hold_and_inventory_workflows.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260508112922_medication_hold_and_inventory_workflows.sql)
+
+> * [20260510090423_desktop_admin_admin_console_foundation.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/20260510090423_desktop_admin_admin_console_foundation.sql)
+
+> * [qicase_schema.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/qicase_schema.sql)
+
+> * [qievidence.sql](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/migrations/qievidence.sql)
+
+> 
+
+> ---
+
+> 
+
+> ### 3. Database Configurations (7 files)
+
+> * [config.toml](file:///C:/QiLabs/20_QiSystem/50_data/supabase/qisupabase/config.toml)
+
+> * [.env.example](file:///C:/QiLabs/20_QiSystem/50_data/supabase/.env.example)
+
+> * [packages/database/.env](file:///C:/QiLabs/20_QiSystem/packages/database/.env)
+
+> * [packages/qiobject/energy/.env](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/.env)
+
+> * [packages/qiobject/rides/.env](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/.env)
+
+> * [packages/qiobject/rides/worker/wrangler.toml](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/worker/wrangler.toml)
+
+> * [packages/ai/wrangler.toml](file:///C:/QiLabs/20_QiSystem/packages/ai/wrangler.toml)
+
+> 
+
+> ---
+
+> 
+
+> ### 4. SQL Files Located in Packages (20 files)
+
+> These legacy, prototype, or adapter SQL scripts reside inside `packages/`:
+
+> * [bootstrap_tenant.sql](file:///C:/QiLabs/20_QiSystem/packages/database/src/adapters/supabase/bootstrap_tenant.sql)
+
+> * **`packages/database/src/migrations/`**: Prisma/Drizzle historic logs (`0001_qione_core.sql` through `0015_registry_namespace_bands.sql`)
+
+> * **`packages/qiobject/energy/`**:
+
+>   * [insert_bills.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/insert_bills.sql)
+
+>   * [insert_bills_detailed.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/insert_bills_detailed.sql)
+
+>   * [update_bills_schema.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/energy/update_bills_schema.sql)
+
+> * **`packages/qiobject/rides/`**:
+
+>   * [database.sql](file:///C:/QiLabs/20_QiSystem/packages/qiobject/rides/database.sql)
+
+> 
+
+> ---
+
+> 
+
+> ### 5. Reference CSV Files (36 files)
+
+> System-definition schema references stored under `20_schemas/reference_csv/system/` (e.g. fields, modules, models, logs):
+
+> * [system_API Recovery Keys & Related.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_API%20Recovery%20Keys%20&%20Related.csv)
+
+> * [system_Brand Assets.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Brand%20Assets.csv)
+
+> * [system_Fields_001.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Fields_001.csv)
+
+> * [system_Modules_001.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Modules_001.csv)
+
+> * [system_Master Services Catalog.csv](file:///C:/QiLabs/20_QiSystem/20_schemas/reference_csv/system/system_Master%20Services%20Catalog.csv)
+
+> * *(Refer to `META/database_file_inventory.md` for the full list of 36 reference files)*
+
+> 
+
+> ---
+
+> 
+
+> ### 6. Flat Source Data CSV Files (180 files)
+
+> CSV registers containing historical data, system logs, or candidates for ingestion, stored in `sheets/` subdirectories:
+
+> * **`sheets/business/`**: `businesses_db.csv`, `calls_db.csv`, `tasks_db.csv`, etc.
+
+> * **`sheets/financial/`**: `coa_db.csv`, `financial_billpay_db.csv`, `financial_cashapp_db.csv`, `financial_Register.csv`, etc.
+
+> * **`sheets/legal/`**: `legal_Background_Check_Adjudication_Grid.csv`, `legal_DocumentChecklist.csv`, etc.
+
+> * **`sheets/medical/`**: `medical_Medication.csv`, `medical_Blood_Glucose_Log.csv`, etc.
+
+> * **`sheets/personal/`**: `personal_allergies_db.csv`, `personal_bookmarks_db.csv`, `personal_Habit.csv`, etc.
+
 > * *(Refer to `META/database_file_inventory.md` for the complete list of 180 paths)*
 
 ### Assistant
@@ -8213,773 +10848,1540 @@ canonical_ref: ""
 > Final answer: **your journal and timeline live in `02_timeline`; your personal operating notes live in `03_life`; your relationship/person notes live in `04_people`.**
 
 ### User
-> ok, here is what is inside the q folder now, so you can map where it actually goes. here is the file tree do you want to tell the ide any changes now. {
->   "name": "01_Q",
->   "path": "c:\\QiLabs\\01_Q",
->   "type": "directory",
->   "children": [
->     {
->       "name": ".temp",
->       "type": "folder",
->       "children": [
->         {
->           "name": "qially.com-reset",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "cli-latest",
->           "type": "file"
->         },
->         {
->           "name": "linked-project.json",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "00_surface",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_public_profile",
->           "type": "folder"
->         },
->         {
->           "name": "10_professional_bio",
->           "type": "folder"
->         },
->         {
->           "name": "20_portfolio_projects",
->           "type": "folder"
->         },
->         {
->           "name": "30_public_talking_points",
->           "type": "folder"
->         }
->       ]
->     },
->     {
->       "name": "05_creative",
->       "type": "folder"
->     },
->     {
->       "name": "10_functional",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_manual_to_me",
->           "type": "folder",
->           "children": [
->             {
->               "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
->                   "type": "file"
->                 },
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
->                   "type": "file"
->                 },
->                 {
->                   "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
->               "type": "file"
->             },
->             {
->               "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
->               "type": "file"
->             },
->             {
->               "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
->               "type": "file"
->             },
->             {
->               "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
->               "type": "file"
->             },
->             {
->               "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
->               "type": "file"
->             },
->             {
->               "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
->               "type": "file"
->             },
->             {
->               "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
->               "type": "file"
->             },
->             {
->               "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
->               "type": "file"
->             },
->             {
->               "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
->               "type": "file"
->             },
->             {
->               "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
->               "type": "file"
->             },
->             {
->               "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
->               "type": "file"
->             },
->             {
->               "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
->               "type": "file"
->             },
->             {
->               "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
->               "type": "file"
->             },
->             {
->               "name": "Compass-Icon.png",
->               "type": "file"
->             },
->             {
->               "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
->               "type": "file"
->             },
->             {
->               "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
->               "type": "file"
->             },
->             {
->               "name": "manual_to_me.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10_communication",
->           "type": "folder"
->         },
->         {
->           "name": "20_working_style",
->           "type": "folder"
->         },
->         {
->           "name": "30_support_needs",
->           "type": "folder"
->         },
->         {
->           "name": "40_overwhelm_protocols",
->           "type": "folder"
->         }
->       ]
->     },
->     {
->       "name": "20_personal",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_personal_context",
->           "type": "folder"
->         },
->         {
->           "name": "10_preferences",
->           "type": "folder"
->         },
->         {
->           "name": "20_values",
->           "type": "folder"
->         },
->         {
->           "name": "30_identity_notes",
->           "type": "folder"
->         },
->         {
->           "name": "40_life_admin_context",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "30_clinical",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_clinical_summary",
->           "type": "folder",
->           "children": [
->             {
->               "name": "clinical_summary_starter.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10_adhd",
->           "type": "folder"
->         },
->         {
->           "name": "20_anxiety_panic",
->           "type": "folder"
->         },
->         {
->           "name": "30_stress_body_response",
->           "type": "folder"
->         },
->         {
->           "name": "40_medications_supplements",
->           "type": "folder"
->         },
->         {
->           "name": "50_provider_language",
->           "type": "folder"
->         },
->         {
->           "name": "60_symptom_logs",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "40_history",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_timeline",
->           "type": "folder"
->         },
->         {
->           "name": "10_origin_family",
->           "type": "folder"
->         },
->         {
->           "name": "20_education_work",
->           "type": "folder"
->         },
->         {
->           "name": "30_business_arc",
->           "type": "folder"
->         },
->         {
->           "name": "40_relationship_arc",
->           "type": "folder"
->         },
->         {
->           "name": "50_caregiving_arc",
->           "type": "folder"
->         },
->         {
->           "name": "60_legal_housing_arc",
->           "type": "folder"
->         },
->         {
->           "name": "70_major_resets",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "50_patterns",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_pattern_index",
->           "type": "folder"
->         },
->         {
->           "name": "10_personality",
->           "type": "folder"
->         },
->         {
->           "name": "20_inf_j",
->           "type": "folder"
->         },
->         {
->           "name": "30_premonitions_pattern_log",
->           "type": "folder"
->         },
->         {
->           "name": "40_strengths",
->           "type": "folder"
->         },
->         {
->           "name": "50_blindspots",
->           "type": "folder"
->         },
->         {
->           "name": "60_conflict_patterns",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_relationships",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_relationship_map",
->           "type": "folder"
->         },
->         {
->           "name": "10_family_roles",
->           "type": "folder"
->         },
->         {
->           "name": "20_support_network",
->           "type": "folder"
->         },
->         {
->           "name": "30_boundaries",
->           "type": "folder"
->         },
->         {
->           "name": "40_trust_levels",
->           "type": "folder"
->         },
->         {
->           "name": "50_repair_scripts",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "70_trauma_recovery",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_safe_summary",
->           "type": "folder"
->         },
->         {
->           "name": "10_recurring_themes",
->           "type": "folder"
->         },
->         {
->           "name": "20_triggers_loops",
->           "type": "folder"
->         },
->         {
->           "name": "30_survival_strategies",
->           "type": "folder"
->         },
->         {
->           "name": "40_recovery_work",
->           "type": "folder"
->         },
->         {
->           "name": "50_shadow_integration",
->           "type": "folder"
->         },
->         {
->           "name": "60_parts_work",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "80_legacy_meaning",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_legacy_index",
->           "type": "folder"
->         },
->         {
->           "name": "10_empowerqnow",
->           "type": "folder"
->         },
->         {
->           "name": "20_713_book",
->           "type": "folder"
->         },
->         {
->           "name": "30_spiritual_framework",
->           "type": "folder"
->         },
->         {
->           "name": "40_ethics_philosophy",
->           "type": "folder"
->         },
->         {
->           "name": "50_future_self",
->           "type": "folder"
->         },
->         {
->           "name": "2026-05-26_journalqiallycom.html",
->           "type": "file"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "90_locked",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_my_eyes_only",
->           "type": "folder",
->           "children": [
->             {
->               "name": "DO_NOT_INGEST.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10_raw_journal",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026-06-05_morning-reflection.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "20_unprocessed_trauma",
->           "type": "folder"
->         },
->         {
->           "name": "30_medical_sensitive",
->           "type": "folder"
->         },
->         {
->           "name": "40_legal_sensitive",
->           "type": "folder"
->         },
->         {
->           "name": "50_relationship_sensitive",
->           "type": "folder"
->         },
->         {
->           "name": "60_financial_sensitive",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "99_system",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_navigation",
->           "type": "folder",
->           "children": [
->             {
->               "name": "navigation_map.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "10_access_rules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "access_level_map.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "20_templates",
->           "type": "folder",
->           "children": [
->             {
->               "name": "front_matter_templates.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "30_ai_rules",
->           "type": "folder",
->           "children": [
->             {
->               "name": "ai_handling_rules.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "40_exports",
->           "type": "folder"
->         },
->         {
->           "name": "index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "scripts",
->       "type": "folder"
->     },
->     {
->       "name": "site",
->       "type": "folder",
->       "children": [
->         {
->           "name": "scripts",
->           "type": "folder"
->         },
->         {
->           "name": "src",
->           "type": "folder",
->           "children": [
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "theme.css",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         },
->         {
->           "name": "package-lock.json",
->           "type": "file"
->         },
->         {
->           "name": "package.json",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": ".gitignore",
->       "type": "file"
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "_index.md",
->       "type": "file"
->     },
->     {
->       "name": "create_01_Q.ps1",
->       "type": "file"
->     },
->     {
->       "name": "file_inventory.md",
->       "type": "file"
->     },
->     {
->       "name": "file_inventory_01_Q.csv",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-15T00:23:39.554Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> ok, here is what is inside the q folder now, so you can map where it actually goes. here is the file tree do you want to tell the ide any changes now. {
+
+>   "name": "01_Q",
+
+>   "path": "c:\\QiLabs\\01_Q",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": ".temp",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "qially.com-reset",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "cli-latest",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "linked-project.json",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "00_surface",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_public_profile",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_professional_bio",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_portfolio_projects",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_public_talking_points",
+
+>           "type": "folder"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "05_creative",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "10_functional",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_manual_to_me",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "94d60b86-a732-4d2c-b2dc-1ddd74c96dce.jfif",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_01_Who_I_Am_Core_Identity__Values.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_02__How_I_Work_Focus_Flow_Boundaries.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_04__How_I_Feel_Emotional_Landscape.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_05__How_I_Grow_Learning__Creativity.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_06__How_I_Operate_Routines__Energy_Management.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_07__How_to_Support_Me_Needs__Triggers.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_08__When_I_Struggle_Overwhelm_Shutdown_Recovery.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_09__Building_Bridges_Mutual_Understanding.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "10 9a Time Management Challenges in Neurodivergent 203f84a04402800bb533fa5e22a971c0.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "10 9b Focus Irregularities and How They Impact Dai 203f84a0440280a79100d36b85f803f8.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "10 9c The Invisible Weight of Executive Function C 203f84a04402806b8c40f3e83a2a9b5d.pdf",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "10 1 Transgender 203f84a044028084bdbfec332d881b7c.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 10 Correspondence Anxiety 203f84a044028022ae12cfc1e77fa7c3.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 2 Sleep inertia 203f84a0440280efbebce629dd529f36.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 3 Delayed sleep phase 203f84a04402807ba39ccbec0500a164.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 4 Person of Color 203f84a0440280218544fb4d96808b5b.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 5 Phonophobia 203f84a0440280a49d46ea1d2121a02d.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 6 Depression 203f84a044028046a765cb0568eac83a.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 7 PTSD 203f84a0440280628a38e26e5e7cb1bc.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 8 Anxiety 203f84a0440280fa9a97cd796ee8fe0c.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "10 9 ADHD 203f84a0440280a7abc8dafbd78ac3e1.pdf",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "Codys_Guide_to_Understanding_and_Connection_-_10__Learn_More_About.wav",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "00 CLIFF NOTES Manual to Me - Cody's Guide 203f84a04402802cbf08d7edabcd80c1.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "01 Who I Am Core Identity & Values 203f84a0440280649bd1d30bffb5edfc.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02 How I Work Focus, Flow, Boundaries 203f84a04402806fb95fc0862c0556e8.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "03 How I Relate Communication & Boundaries 203f84a044028063a81ae8e5867e8618.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "04 How I Feel Emotional Landscape 203f84a0440280e6927af392a916c6bf.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "05 How I Grow Learning & Creativity 203f84a044028098a2dbec92694a4358.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "06 How I Operate Routines & Energy Management 203f84a04402803fa35cffab28a6ee91.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "07 How to Support Me Needs & Triggers 203f84a0440280cc8f5ece450f21978f.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "08 When I Struggle Overwhelm, Shutdown, Recovery 203f84a0440280e2bd8bdb18da258847.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "09 Building Bridges Mutual Understanding 203f84a0440280dfb159f34e6b6c7ecb.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "1 5 Personality NTFJ 295f84a0440280f396e7cddbaf3c905b.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "10 Learn More About… 203f84a044028017ab5bfc6269a4b4ac.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_(1).wav",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Codys_Guide_to_Understanding_and_Connection_-_An_Overview.wav",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Compass-Icon.png",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Thank You for Taking This Journey 203f84a0440280efbc16d8451dc9cda1.pdf",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ZwC7IC_S4_GX9Z6--2mx7.png",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manual_to_me.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10_communication",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_working_style",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_support_needs",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_overwhelm_protocols",
+
+>           "type": "folder"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "20_personal",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_personal_context",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_preferences",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_values",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_identity_notes",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_life_admin_context",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "30_clinical",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_clinical_summary",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "clinical_summary_starter.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10_adhd",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_anxiety_panic",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_stress_body_response",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_medications_supplements",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_provider_language",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "60_symptom_logs",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "40_history",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_timeline",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_origin_family",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_education_work",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_business_arc",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_relationship_arc",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_caregiving_arc",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "60_legal_housing_arc",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "70_major_resets",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "50_patterns",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_pattern_index",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_personality",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_inf_j",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_premonitions_pattern_log",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_strengths",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_blindspots",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "60_conflict_patterns",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_relationships",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_relationship_map",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_family_roles",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_support_network",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_boundaries",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_trust_levels",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_repair_scripts",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "70_trauma_recovery",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_safe_summary",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_recurring_themes",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_triggers_loops",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_survival_strategies",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_recovery_work",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_shadow_integration",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "60_parts_work",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "80_legacy_meaning",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_legacy_index",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "10_empowerqnow",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "20_713_book",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_spiritual_framework",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_ethics_philosophy",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_future_self",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "2026-05-26_journalqiallycom.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "90_locked",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_my_eyes_only",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "DO_NOT_INGEST.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10_raw_journal",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026-06-05_morning-reflection.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "20_unprocessed_trauma",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "30_medical_sensitive",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "40_legal_sensitive",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "50_relationship_sensitive",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "60_financial_sensitive",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "99_system",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_navigation",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "navigation_map.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "10_access_rules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "access_level_map.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "20_templates",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "front_matter_templates.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "30_ai_rules",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "ai_handling_rules.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "40_exports",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "scripts",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "site",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "scripts",
+
+>           "type": "folder"
+
+>         },
+
+>         {
+
+>           "name": "src",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "theme.css",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package-lock.json",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "package.json",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": ".gitignore",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_index.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "create_01_Q.ps1",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "file_inventory.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "file_inventory_01_Q.csv",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-15T00:23:39.554Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -9470,180 +12872,354 @@ canonical_ref: ""
 > That’s the clean version.
 
 ### User
-> Viewed config.toml:1-26
-> 
-> I will check the progress of the Python extraction script to see how far it has gotten and if it's running smoothly.
-> 
-> Used tool: manage_task
-> 
-> I will view the log file `_takeout_unzip_log.txt` to see if there are any updates written directly to it by the running script.
-> 
-> I will run a command to view the last 30 lines of the `_takeout_unzip_log.txt` file to check its contents, as it is UTF-16 encoded.
-> 
-> Ran command: `Get-Content -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_takeout_unzip_log.txt" -Tail 30`
-> 
-> I will check the files in the `Takeout` directory to see if `takeout-20260308T055341Z-16-001.zip` has been deleted (meaning it succeeded and moved on) or if files are being created under `_extracted`.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout" -Filter "*.zip" | Select-Object Name; Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted\Takeout" -Depth 2 | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10`
-> 
-> I will check if files are actively being written to the extraction directory by listing the most recently created files in `_extracted`.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10`
-> 
-> I will run a command to show the creation/modification times of the files in `_extracted` to see if the Python script is actively writing files or if it is stuck.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime | First 10`
-> 
-> I will run the corrected command to check the modification times of the most recently extracted files.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime -First 10`
-> 
-> I will check the status/result of the top-level directory listing (`task-68`) to see what exists under the root of `C:\QiLabs`.
-> 
-> Used tool: manage_task
-> 
-> I will terminate `task-68` to prevent it from continuing to produce thousands of lines of output.
-> 
-> Used tool: manage_task
-> 
-> I will create a Python script to scan the folders under `C:\QiLabs` to depth 3 (excluding `_QiOS_DNA`, `__QiLabs.workspace`, and ignoring standard build folders like `node_modules`, `target`, `dist`, `.git`, `.venv`) so we can review the active structure and find redundancies.
-> 
-> Edited check_nesting.py
-> 
-> I will execute the `check_nesting.py` script to get a clean tree view of directories and files up to depth 3, helping us identify structural nesting issues and redundant components in QiLabs.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
-> 
-> I will modify the script to print standard text markers instead of emojis to avoid CP1252 encoding errors in the Windows shell.
-> 
-> Edited check_nesting.py
-> 
-> I will run the updated Python script to scan the folders under `C:\QiLabs`.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
-> 
-> I will update the scanning script to reconfigure the stdout encoding to UTF-8 with error replacement to prevent crashes from special characters in filenames (like accented characters, Spanish punctuation, or narrow spaces).
-> 
-> Edited check_nesting.py
-> 
-> I will execute the updated `check_nesting.py` script to get the structure of the workspace.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
-> 
-> I will update the check script to write its full results directly to a report file (`scratch/nesting_report.txt`) so we can analyze the entire filesystem structure without command-line truncation. I will also increase the max depth to 6 to find any deeply nested folder structures.
-> 
-> Edited check_nesting.py
-> 
-> I will run the updated Python script to generate the complete directory scan report.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
-> 
-> I will write a Python script `analyze_nesting.py` to analyze the directory scan report. It will automatically detect:
-> 1. **Self-nested directories**: Folders containing subfolders with the exact same name (e.g. `QiNotesSync/QiNotesSync/`).
-> 2. **Duplicate files**: Files with the same name and size residing in different paths.
-> 3. **Empty directories** or redundant copies.
-> This will give us a clear list of target cleanup items.
-> 
-> Edited analyze_nesting.py
-> 
-> I will run the `analyze_nesting.py` script to generate our diagnostics report.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
-> 
-> I will update the analyzer script to remove unicode emojis, preventing encoding failures in the Windows terminal.
-> 
-> Edited analyze_nesting.py
-> 
-> I will run the updated analyzer script.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
-> 
-> I will modify `analyze_nesting.py` to output the entire analysis directly to a file (`scratch/analysis_report.txt`) so we can read it in detail without truncation.
-> 
-> Edited analyze_nesting.py
-> 
-> I will run the updated analysis script to generate `analysis_report.txt`.
-> 
-> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
-> 
-> I will read the generated `analysis_report.txt` file to examine the list of nesting and duplication issues.
-> 
-> Viewed analysis_report.txt:1-592
-> 
-> I will check the directory contents of `qiportals/src/features/qiadmin` to see why it has nested `src/` and `src/features/` directories and if this represents accidental copy-paste or migration debt.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\1000_QiApps\qiportals\src\features\qiadmin" -Depth 2 | Select-Object FullName`
-> 
-> I will check `qiportals` package.json to see what frameworks are used in this app and understand if the Vue dashboard was copy-pasted as a whole into `src/features/qiadmin`.
-> 
-> Viewed package.json:1-42
-> 
-> I will list the top-level files and directories in `C:\QiLabs\1000_QiApps\qiportals` to see if we have redundant `app` and `src` directories.
-> 
-> Listed directory qiportals
-> 
-> I will view `vite.config.ts` in `qiportals` to determine whether `src/` or `app/` is the active build target for Vite.
-> 
-> Viewed vite.config.ts:1-21
-> 
-> I will check `index.html` to confirm whether it points to `src/main.tsx` or an entrypoint inside `app/`.
-> 
-> Viewed index.html:1-16
-> 
-> I will check the status of our Google Takeout unzip task to see how many zip files have been extracted and deleted.
-> 
-> Used tool: manage_task
-> 
-> I will check the most recently modified files under `_extracted` to see if extraction is still actively progressing or if it finished the file loop and got stuck on the `empty_recycle_bin` subprocess call.
-> 
-> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime -First 10`
-> 
-> I will create the `analysis_results.md` artifact to document the findings of our structural and nesting audit of the QiLabs folders and files, complete with a review of nesting, redundancies, and alignment with the QiOS DNA guidelines.
-> 
-> Edited analysis_results.md
-> 
-> I will check the status of the extraction process again to see if it has finished `takeout-20260308T055341Z-16-001.zip` or if it has moved to the next files.
-> 
-> Used tool: manage_task
-> 
-> ### Unzip Process Status
-> I checked the extraction folder's files and verified their modification timestamps. The python script is actively writing files (updated within the last minute). Because it is writing to `50_QiNexus`, which maps to a Google Drive stream directory, the filesystem virtualization and sync overhead make the extraction slower than writing to a local drive. However, it is working successfully and bypassing the trailing-space errors that crashed standard tools.
-> 
-> ---
-> 
-> ### Folder and File Review (QiLabs Structure Audit)
-> 
-> I ran a directory scanner and duplicate analyzer on `C:\QiLabs` (up to depth 6) and compiled a detailed report. You can review the full details in the [analysis_results.md](file:///C:/Users/codyr/.gemini/antigravity-ide/brain/c0a4678e-51af-4bc4-bb31-30207f04c866/analysis_results.md) artifact. 
-> 
-> Here is a summary of the nesting, redundancies, and DNA deviations identified:
-> 
-> #### 1. Self-Nesting (Recursion Errors)
-> We found multiple instances where folders were recursively nested inside themselves:
-> *   **`70_QiConnect/QiNotesSync/QiNotesSync/QiNotesSync/...`** — Obsidian sync folder has duplicated its structure 3+ levels deep, causing duplicated note files and paths.
-> *   **`1000_QiApps/qiportals/src/features/qiadmin/src/`** — An entire Vue.js dashboard application folder was copied inside a React portal feature folder, creating a redundant nested `src` directory.
-> *   **`20_QiSystem/packages/database/src/adapters/supabase/src`** & **`packages/database/src/schemas/src`** — Duplicated `src` directories in database adapters.
-> *   **`1000_QiApps/qifinance/qifinance/`** — Double folder nesting.
-> 
-> #### 2. Overly Redundant Folders
-> *   **`qiportals/app/` vs `qiportals/src/`** — There is a complete duplication between these two directories. I verified in `vite.config.ts` (defining `@` alias to `./src`) and `index.html` (referencing `/src/main.tsx`) that **`src/` is the active development target**. The entire `app/` folder is legacy code and is 100% redundant.
-> *   **`qiportals/USBLegalAidv2/`** — Contains an entire legacy repository clone with its own `node_modules` and frontend build files, which has already been migrated into the portal.
-> 
-> #### 3. QiOS DNA Alignment Review
-> Comparing the actual folder layout against the master schemas inside `_QiOS_DNA` revealed a few discrepancies:
-> *   **`70_QiConnect` vs `60_QiConnect`**: The actual folder at the root is numbered `70`, but the DNA documents specify `60`.
-> *   **`1100_QiApp_QiLife` vs `1100_QiLife` / `60_QiApp_QiLife`**: The folder at the root is named `1100_QiApp_QiLife`, which deviates from the specified DNA standards.
-> *   **`10_QiAccess` vs `10_QiOS_Start`**: DNA documentation references `10_QiOS_Start`, but the actual root folder is called `10_QiAccess` (which aligns with `_01_QiDNA.md` but differs from `README.md`).
-> 
-> #### 4. File Duplicates
-> Our analyzer flagged **799 duplicate groups** containing identical file names and sizes (such as `.env`, `.gitignore` templates, and notes) scattered across features and folders.
-> 
-> ---
-> 
-> ### Suggested Cleanup Plan
-> Once the Google Takeout extraction finishes:
-> 1.  **Resolve Obsidian Nesting:** Prune the duplicate inner nested folder `70_QiConnect/QiNotesSync/QiNotesSync/`.
-> 2.  **Delete Legacy Portal Code:** Remove the `app/` and `USBLegalAidv2/` directories from `1000_QiApps/qiportals/` to reduce workspace bloat.
-> 3.  **Delete Nested Vue code:** Remove `src/features/qiadmin/src/` Vue files from the React project.
+> Viewed config.toml:1-26
+
+> 
+
+> I will check the progress of the Python extraction script to see how far it has gotten and if it's running smoothly.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> I will view the log file `_takeout_unzip_log.txt` to see if there are any updates written directly to it by the running script.
+
+> 
+
+> I will run a command to view the last 30 lines of the `_takeout_unzip_log.txt` file to check its contents, as it is UTF-16 encoded.
+
+> 
+
+> Ran command: `Get-Content -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_takeout_unzip_log.txt" -Tail 30`
+
+> 
+
+> I will check the files in the `Takeout` directory to see if `takeout-20260308T055341Z-16-001.zip` has been deleted (meaning it succeeded and moved on) or if files are being created under `_extracted`.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout" -Filter "*.zip" | Select-Object Name; Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted\Takeout" -Depth 2 | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10`
+
+> 
+
+> I will check if files are actively being written to the extraction directory by listing the most recently created files in `_extracted`.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object FullName, LastWriteTime -First 10`
+
+> 
+
+> I will run a command to show the creation/modification times of the files in `_extracted` to see if the Python script is actively writing files or if it is stuck.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime | First 10`
+
+> 
+
+> I will run the corrected command to check the modification times of the most recently extracted files.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime -First 10`
+
+> 
+
+> I will check the status/result of the top-level directory listing (`task-68`) to see what exists under the root of `C:\QiLabs`.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> I will terminate `task-68` to prevent it from continuing to produce thousands of lines of output.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> I will create a Python script to scan the folders under `C:\QiLabs` to depth 3 (excluding `_QiOS_DNA`, `__QiLabs.workspace`, and ignoring standard build folders like `node_modules`, `target`, `dist`, `.git`, `.venv`) so we can review the active structure and find redundancies.
+
+> 
+
+> Edited check_nesting.py
+
+> 
+
+> I will execute the `check_nesting.py` script to get a clean tree view of directories and files up to depth 3, helping us identify structural nesting issues and redundant components in QiLabs.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
+
+> 
+
+> I will modify the script to print standard text markers instead of emojis to avoid CP1252 encoding errors in the Windows shell.
+
+> 
+
+> Edited check_nesting.py
+
+> 
+
+> I will run the updated Python script to scan the folders under `C:\QiLabs`.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
+
+> 
+
+> I will update the scanning script to reconfigure the stdout encoding to UTF-8 with error replacement to prevent crashes from special characters in filenames (like accented characters, Spanish punctuation, or narrow spaces).
+
+> 
+
+> Edited check_nesting.py
+
+> 
+
+> I will execute the updated `check_nesting.py` script to get the structure of the workspace.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
+
+> 
+
+> I will update the check script to write its full results directly to a report file (`scratch/nesting_report.txt`) so we can analyze the entire filesystem structure without command-line truncation. I will also increase the max depth to 6 to find any deeply nested folder structures.
+
+> 
+
+> Edited check_nesting.py
+
+> 
+
+> I will run the updated Python script to generate the complete directory scan report.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\check_nesting.py"`
+
+> 
+
+> I will write a Python script `analyze_nesting.py` to analyze the directory scan report. It will automatically detect:
+
+> 1. **Self-nested directories**: Folders containing subfolders with the exact same name (e.g. `QiNotesSync/QiNotesSync/`).
+
+> 2. **Duplicate files**: Files with the same name and size residing in different paths.
+
+> 3. **Empty directories** or redundant copies.
+
+> This will give us a clear list of target cleanup items.
+
+> 
+
+> Edited analyze_nesting.py
+
+> 
+
+> I will run the `analyze_nesting.py` script to generate our diagnostics report.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
+
+> 
+
+> I will update the analyzer script to remove unicode emojis, preventing encoding failures in the Windows terminal.
+
+> 
+
+> Edited analyze_nesting.py
+
+> 
+
+> I will run the updated analyzer script.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
+
+> 
+
+> I will modify `analyze_nesting.py` to output the entire analysis directly to a file (`scratch/analysis_report.txt`) so we can read it in detail without truncation.
+
+> 
+
+> Edited analyze_nesting.py
+
+> 
+
+> I will run the updated analysis script to generate `analysis_report.txt`.
+
+> 
+
+> Ran command: `python.exe "C:\Users\codyr\.gemini\antigravity-ide\brain\c0a4678e-51af-4bc4-bb31-30207f04c866\scratch\analyze_nesting.py"`
+
+> 
+
+> I will read the generated `analysis_report.txt` file to examine the list of nesting and duplication issues.
+
+> 
+
+> Viewed analysis_report.txt:1-592
+
+> 
+
+> I will check the directory contents of `qiportals/src/features/qiadmin` to see why it has nested `src/` and `src/features/` directories and if this represents accidental copy-paste or migration debt.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\1000_QiApps\qiportals\src\features\qiadmin" -Depth 2 | Select-Object FullName`
+
+> 
+
+> I will check `qiportals` package.json to see what frameworks are used in this app and understand if the Vue dashboard was copy-pasted as a whole into `src/features/qiadmin`.
+
+> 
+
+> Viewed package.json:1-42
+
+> 
+
+> I will list the top-level files and directories in `C:\QiLabs\1000_QiApps\qiportals` to see if we have redundant `app` and `src` directories.
+
+> 
+
+> Listed directory qiportals
+
+> 
+
+> I will view `vite.config.ts` in `qiportals` to determine whether `src/` or `app/` is the active build target for Vite.
+
+> 
+
+> Viewed vite.config.ts:1-21
+
+> 
+
+> I will check `index.html` to confirm whether it points to `src/main.tsx` or an entrypoint inside `app/`.
+
+> 
+
+> Viewed index.html:1-16
+
+> 
+
+> I will check the status of our Google Takeout unzip task to see how many zip files have been extracted and deleted.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> I will check the most recently modified files under `_extracted` to see if extraction is still actively progressing or if it finished the file loop and got stuck on the `empty_recycle_bin` subprocess call.
+
+> 
+
+> Ran command: `Get-ChildItem -Path "C:\QiLabs\50_QiNexus\My Drive\00_inbox\10_ingestion\20_drive_imports\Takeout\_extracted" -Recurse | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime -First 10`
+
+> 
+
+> I will create the `analysis_results.md` artifact to document the findings of our structural and nesting audit of the QiLabs folders and files, complete with a review of nesting, redundancies, and alignment with the QiOS DNA guidelines.
+
+> 
+
+> Edited analysis_results.md
+
+> 
+
+> I will check the status of the extraction process again to see if it has finished `takeout-20260308T055341Z-16-001.zip` or if it has moved to the next files.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> ### Unzip Process Status
+
+> I checked the extraction folder's files and verified their modification timestamps. The python script is actively writing files (updated within the last minute). Because it is writing to `50_QiNexus`, which maps to a Google Drive stream directory, the filesystem virtualization and sync overhead make the extraction slower than writing to a local drive. However, it is working successfully and bypassing the trailing-space errors that crashed standard tools.
+
+> 
+
+> ---
+
+> 
+
+> ### Folder and File Review (QiLabs Structure Audit)
+
+> 
+
+> I ran a directory scanner and duplicate analyzer on `C:\QiLabs` (up to depth 6) and compiled a detailed report. You can review the full details in the [analysis_results.md](file:///C:/Users/codyr/.gemini/antigravity-ide/brain/c0a4678e-51af-4bc4-bb31-30207f04c866/analysis_results.md) artifact. 
+
+> 
+
+> Here is a summary of the nesting, redundancies, and DNA deviations identified:
+
+> 
+
+> #### 1. Self-Nesting (Recursion Errors)
+
+> We found multiple instances where folders were recursively nested inside themselves:
+
+> *   **`70_QiConnect/QiNotesSync/QiNotesSync/QiNotesSync/...`** — Obsidian sync folder has duplicated its structure 3+ levels deep, causing duplicated note files and paths.
+
+> *   **`1000_QiApps/qiportals/src/features/qiadmin/src/`** — An entire Vue.js dashboard application folder was copied inside a React portal feature folder, creating a redundant nested `src` directory.
+
+> *   **`20_QiSystem/packages/database/src/adapters/supabase/src`** & **`packages/database/src/schemas/src`** — Duplicated `src` directories in database adapters.
+
+> *   **`1000_QiApps/qifinance/qifinance/`** — Double folder nesting.
+
+> 
+
+> #### 2. Overly Redundant Folders
+
+> *   **`qiportals/app/` vs `qiportals/src/`** — There is a complete duplication between these two directories. I verified in `vite.config.ts` (defining `@` alias to `./src`) and `index.html` (referencing `/src/main.tsx`) that **`src/` is the active development target**. The entire `app/` folder is legacy code and is 100% redundant.
+
+> *   **`qiportals/USBLegalAidv2/`** — Contains an entire legacy repository clone with its own `node_modules` and frontend build files, which has already been migrated into the portal.
+
+> 
+
+> #### 3. QiOS DNA Alignment Review
+
+> Comparing the actual folder layout against the master schemas inside `_QiOS_DNA` revealed a few discrepancies:
+
+> *   **`70_QiConnect` vs `60_QiConnect`**: The actual folder at the root is numbered `70`, but the DNA documents specify `60`.
+
+> *   **`1100_QiApp_QiLife` vs `1100_QiLife` / `60_QiApp_QiLife`**: The folder at the root is named `1100_QiApp_QiLife`, which deviates from the specified DNA standards.
+
+> *   **`10_QiAccess` vs `10_QiOS_Start`**: DNA documentation references `10_QiOS_Start`, but the actual root folder is called `10_QiAccess` (which aligns with `_01_QiDNA.md` but differs from `README.md`).
+
+> 
+
+> #### 4. File Duplicates
+
+> Our analyzer flagged **799 duplicate groups** containing identical file names and sizes (such as `.env`, `.gitignore` templates, and notes) scattered across features and folders.
+
+> 
+
+> ---
+
+> 
+
+> ### Suggested Cleanup Plan
+
+> Once the Google Takeout extraction finishes:
+
+> 1.  **Resolve Obsidian Nesting:** Prune the duplicate inner nested folder `70_QiConnect/QiNotesSync/QiNotesSync/`.
+
+> 2.  **Delete Legacy Portal Code:** Remove the `app/` and `USBLegalAidv2/` directories from `1000_QiApps/qiportals/` to reduce workspace bloat.
+
+> 3.  **Delete Nested Vue code:** Remove `src/features/qiadmin/src/` Vue files from the React project.
+
 > 4.  **Rename top-level folders** to align numbers (`70_QiConnect` -> `60_QiConnect`, `1100_QiApp_QiLife` -> `1100_QiLife`) and update references in config files.
 
 ### Assistant
@@ -10018,102 +13594,198 @@ canonical_ref: ""
 > Let Codex do **copy, UI, routes, landing pages, and shell polish** only.
 
 ### User
-> I will update the references to `70_QiConnect` / `70_qiconnect` in `qilabs_structure_checker.py` using `multi_replace_file_content`.
-> 
-> Edited qilabs_structure_checker.py
-> 
-> I will view `qilabs_final_target_tree.md` to find the exact lines referencing `70_QiConnect` so we can update them safely.
-> 
-> Viewed qilabs_final_target_tree.md:1-51
-> 
-> I will update the references to `70_QiConnect` / `70_qiconnect` in `qilabs_final_target_tree.md` using `multi_replace_file_content`.
-> 
-> Edited qilabs_final_target_tree.md
-> 
-> I will run the command to rename `70_QiConnect` to `60_QiConnect` and `1100_QiApp_QiLife` to `1100_QiLife` in `C:\QiLabs`.
-> 
-> Ran command: `Rename-Item -Path "C:\QiLabs\70_QiConnect" -NewName "60_QiConnect" -ErrorAction Stop; Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife" -ErrorAction Stop`
-> 
-> I will await the completion of the directory rename task.
-> 
-> I will try to rename `1100_QiApp_QiLife` separately to see if that folder is locked as well.
-> 
-> Ran command: `Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife" -ErrorAction Stop`
-> 
-> I will attempt to move the legacy `qiportals/app` directory to its archive path to check if subfolders are also locked by the IDE file watcher.
-> 
-> Ran command: `Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\app" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\app_legacy" -ErrorAction Stop`
-> 
-> I will attempt to move `USBLegalAidv2` and the nested Vue `src` directory inside `qiportals` to their respective archive folders.
-> 
-> Ran command: `Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\USBLegalAidv2" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\USBLegalAidv2_legacy" -ErrorAction Stop; Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\src\features\qiadmin\src" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\qiadmin_nested_vue_app" -ErrorAction Stop`
-> 
-> I will write the recursion review document `C:\QiLabs\META\qinotessync_recursion_review.md` to map out the Obsidian sync nesting issue and outline the recovery plan.
-> 
-> Edited qinotessync_recursion_review.md
-> 
-> I will write the environment file security review `C:\QiLabs\META\env_security_review.md`. This lists paths of all environment files in the workspace and labels them without revealing any secrets.
-> 
-> Edited env_security_review.md
-> 
-> I will write the duplicate files review document `C:\QiLabs\META\duplicate_files_review.md`. This lists the major duplicate groups and classifies them.
-> 
-> Edited duplicate_files_review.md
-> 
-> I will update `task.md` to reflect the completed archiving moves, review documents, and the blocked status of the parent folder renames.
-> 
-> Edited task.md
-> 
-> I will run the TypeScript typecheck in `qiportals` to verify that our archiving moves (moving the redundant `app/` and `USBLegalAidv2/` directories) did not break compiling or leave behind missing import references in the main `src/` code.
-> 
-> Ran command: `npm run typecheck`
-> 
-> I will await the completion of the typecheck process.
-> 
-> I will run a grep search for references to `USBLegalAidv2` in the active `src/` folder of `qiportals` to ensure no components import files from the legacy folder.
-> 
-> Searched for "USBLegalAidv2"
-> 
-> I will search `src/` for any relative imports pointing to the legacy `app/` folder.
-> 
-> Searched for "from\s+['"].*\/app[\/'"]"
-> 
-> I will run a literal search for the path segment `/app/` inside `src/` to catch any references to the old `app` directory.
-> 
-> Searched for "/app/"
-> 
-> I will update the task checklist to mark the verification phase as complete based on our path dependency checks.
-> 
-> Edited task.md
-> 
-> I will create the `walkthrough.md` artifact to summarize the completed work, verified paths, and generated files as a reference for your review.
-> 
-> Edited walkthrough.md
-> 
-> I will update the `vizvibe.mmd` file to record the completed workspace cleanup and audit step in the visual trajectory map. I will add the new closed task node, link it, and move the highlighted `RECENT` subgraph to point to it.
-> 
-> Edited vizvibe.mmd
-> 
-> I will do a final check on the status of our background Google Takeout extraction task to give you an accurate progress update.
-> 
-> Used tool: manage_task
-> 
-> I have successfully executed the archive-first cleanup plan. For a complete summary of the actions taken and verification checks, please see the [walkthrough.md](file:///C:/Users/codyr/.gemini/antigravity-ide/brain/c0a4678e-51af-4bc4-bb31-30207f04c866/walkthrough.md) artifact.
-> 
-> ### Summary of Completed Actions
-> 1.  **Archived Legacy Portal Code:** Moved the redundant `app/` and `USBLegalAidv2/` directories, and the nested `src/` Vue code from `qiportals` to safety under `_archive/` subfolders.
-> 2.  **Prepared Reference Renames:** Updated references in `qilabs_structure_checker.py` and `qilabs_final_target_tree.md` to map `70_QiConnect` -> `60_QiConnect`.
-> 3.  **Local Reports Generated:** Created the master [cleanup_plan_2026-06.md](file:///C:/QiLabs/META/cleanup_plan_2026-06.md), the Obsidian [qinotessync_recursion_review.md](file:///C:/QiLabs/META/qinotessync_recursion_review.md), the [env_security_review.md](file:///C:/QiLabs/META/env_security_review.md), and the [duplicate_files_review.md](file:///C:/QiLabs/META/duplicate_files_review.md).
-> 4.  **Updated Trajectory Map:** Checked off the cleanup milestone inside `vizvibe.mmd`.
-> 
-> ### Blocked Action Requiring Your Attention
-> *   **Access Denied on Parent Folder Renames:** Renaming `C:\QiLabs\70_QiConnect` and `C:\QiLabs\1100_QiApp_QiLife` was blocked at the OS level due to active handles (likely locked by your IDE file-watcher and Obsidian client).
-> *   **Resolution:** When convenient, please pause your Obsidian Sync, close the workspace in the IDE, and run the following PowerShell command in a separate terminal:
->     ```powershell
->     Rename-Item -Path "C:\QiLabs\70_QiConnect" -NewName "60_QiConnect"
->     Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife"
->     ```
-> 
+> I will update the references to `70_QiConnect` / `70_qiconnect` in `qilabs_structure_checker.py` using `multi_replace_file_content`.
+
+> 
+
+> Edited qilabs_structure_checker.py
+
+> 
+
+> I will view `qilabs_final_target_tree.md` to find the exact lines referencing `70_QiConnect` so we can update them safely.
+
+> 
+
+> Viewed qilabs_final_target_tree.md:1-51
+
+> 
+
+> I will update the references to `70_QiConnect` / `70_qiconnect` in `qilabs_final_target_tree.md` using `multi_replace_file_content`.
+
+> 
+
+> Edited qilabs_final_target_tree.md
+
+> 
+
+> I will run the command to rename `70_QiConnect` to `60_QiConnect` and `1100_QiApp_QiLife` to `1100_QiLife` in `C:\QiLabs`.
+
+> 
+
+> Ran command: `Rename-Item -Path "C:\QiLabs\70_QiConnect" -NewName "60_QiConnect" -ErrorAction Stop; Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife" -ErrorAction Stop`
+
+> 
+
+> I will await the completion of the directory rename task.
+
+> 
+
+> I will try to rename `1100_QiApp_QiLife` separately to see if that folder is locked as well.
+
+> 
+
+> Ran command: `Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife" -ErrorAction Stop`
+
+> 
+
+> I will attempt to move the legacy `qiportals/app` directory to its archive path to check if subfolders are also locked by the IDE file watcher.
+
+> 
+
+> Ran command: `Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\app" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\app_legacy" -ErrorAction Stop`
+
+> 
+
+> I will attempt to move `USBLegalAidv2` and the nested Vue `src` directory inside `qiportals` to their respective archive folders.
+
+> 
+
+> Ran command: `Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\USBLegalAidv2" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\USBLegalAidv2_legacy" -ErrorAction Stop; Move-Item -Path "C:\QiLabs\1000_QiApps\qiportals\src\features\qiadmin\src" -Destination "C:\QiLabs\1000_QiApps\qiportals\_archive\qiadmin_nested_vue_app" -ErrorAction Stop`
+
+> 
+
+> I will write the recursion review document `C:\QiLabs\META\qinotessync_recursion_review.md` to map out the Obsidian sync nesting issue and outline the recovery plan.
+
+> 
+
+> Edited qinotessync_recursion_review.md
+
+> 
+
+> I will write the environment file security review `C:\QiLabs\META\env_security_review.md`. This lists paths of all environment files in the workspace and labels them without revealing any secrets.
+
+> 
+
+> Edited env_security_review.md
+
+> 
+
+> I will write the duplicate files review document `C:\QiLabs\META\duplicate_files_review.md`. This lists the major duplicate groups and classifies them.
+
+> 
+
+> Edited duplicate_files_review.md
+
+> 
+
+> I will update `task.md` to reflect the completed archiving moves, review documents, and the blocked status of the parent folder renames.
+
+> 
+
+> Edited task.md
+
+> 
+
+> I will run the TypeScript typecheck in `qiportals` to verify that our archiving moves (moving the redundant `app/` and `USBLegalAidv2/` directories) did not break compiling or leave behind missing import references in the main `src/` code.
+
+> 
+
+> Ran command: `npm run typecheck`
+
+> 
+
+> I will await the completion of the typecheck process.
+
+> 
+
+> I will run a grep search for references to `USBLegalAidv2` in the active `src/` folder of `qiportals` to ensure no components import files from the legacy folder.
+
+> 
+
+> Searched for "USBLegalAidv2"
+
+> 
+
+> I will search `src/` for any relative imports pointing to the legacy `app/` folder.
+
+> 
+
+> Searched for "from\s+['"].*\/app[\/'"]"
+
+> 
+
+> I will run a literal search for the path segment `/app/` inside `src/` to catch any references to the old `app` directory.
+
+> 
+
+> Searched for "/app/"
+
+> 
+
+> I will update the task checklist to mark the verification phase as complete based on our path dependency checks.
+
+> 
+
+> Edited task.md
+
+> 
+
+> I will create the `walkthrough.md` artifact to summarize the completed work, verified paths, and generated files as a reference for your review.
+
+> 
+
+> Edited walkthrough.md
+
+> 
+
+> I will update the `vizvibe.mmd` file to record the completed workspace cleanup and audit step in the visual trajectory map. I will add the new closed task node, link it, and move the highlighted `RECENT` subgraph to point to it.
+
+> 
+
+> Edited vizvibe.mmd
+
+> 
+
+> I will do a final check on the status of our background Google Takeout extraction task to give you an accurate progress update.
+
+> 
+
+> Used tool: manage_task
+
+> 
+
+> I have successfully executed the archive-first cleanup plan. For a complete summary of the actions taken and verification checks, please see the [walkthrough.md](file:///C:/Users/codyr/.gemini/antigravity-ide/brain/c0a4678e-51af-4bc4-bb31-30207f04c866/walkthrough.md) artifact.
+
+> 
+
+> ### Summary of Completed Actions
+
+> 1.  **Archived Legacy Portal Code:** Moved the redundant `app/` and `USBLegalAidv2/` directories, and the nested `src/` Vue code from `qiportals` to safety under `_archive/` subfolders.
+
+> 2.  **Prepared Reference Renames:** Updated references in `qilabs_structure_checker.py` and `qilabs_final_target_tree.md` to map `70_QiConnect` -> `60_QiConnect`.
+
+> 3.  **Local Reports Generated:** Created the master [cleanup_plan_2026-06.md](file:///C:/QiLabs/META/cleanup_plan_2026-06.md), the Obsidian [qinotessync_recursion_review.md](file:///C:/QiLabs/META/qinotessync_recursion_review.md), the [env_security_review.md](file:///C:/QiLabs/META/env_security_review.md), and the [duplicate_files_review.md](file:///C:/QiLabs/META/duplicate_files_review.md).
+
+> 4.  **Updated Trajectory Map:** Checked off the cleanup milestone inside `vizvibe.mmd`.
+
+> 
+
+> ### Blocked Action Requiring Your Attention
+
+> *   **Access Denied on Parent Folder Renames:** Renaming `C:\QiLabs\70_QiConnect` and `C:\QiLabs\1100_QiApp_QiLife` was blocked at the OS level due to active handles (likely locked by your IDE file-watcher and Obsidian client).
+
+> *   **Resolution:** When convenient, please pause your Obsidian Sync, close the workspace in the IDE, and run the following PowerShell command in a separate terminal:
+
+>     ```powershell
+
+>     Rename-Item -Path "C:\QiLabs\70_QiConnect" -NewName "60_QiConnect"
+
+>     Rename-Item -Path "C:\QiLabs\1100_QiApp_QiLife" -NewName "1100_QiLife"
+
+>     ```
+
+> 
+
 > The Google Takeout background unzip continues to extract files safely (`takeout-20260308T055341Z-16-002.zip` is currently being written to `_extracted`).
 
 ### Assistant

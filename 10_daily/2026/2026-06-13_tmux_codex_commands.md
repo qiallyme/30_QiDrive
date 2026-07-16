@@ -3,9 +3,9 @@ layout: page
 title: "Tmux Codex Commands"
 slug: "tmux_codex_commands"
 created_at: "2026-06-13 10:12:43"
-updated_at: "2026-06-13 10:12:43"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -302,1893 +302,3780 @@ canonical_ref: ""
 > This keeps future-you from opening 40 mystery CSVs and cussing at past-you.
 
 ### User
-> is qi server with everything that should be in that module {
->   "name": "30_QiServer",
->   "path": "c:\\QiLabs\\30_QiServer",
->   "type": "directory",
->   "children": [
->     {
->       "name": "backups",
->       "type": "folder"
->     },
->     {
->       "name": "cloudflare",
->       "type": "folder"
->     },
->     {
->       "name": "data",
->       "type": "folder",
->       "children": [
->         {
->           "name": "MMEX",
->           "type": "folder",
->           "children": [
->             {
->               "name": "moneydb.mmb",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "csv",
->           "type": "folder",
->           "children": [
->             {
->               "name": "20251116_biz_ai_kb_full.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_blueprints_workflows_list.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_drive_health_tracker_full.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_it_tools_inventory_full.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_mandated_training_full.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_pricing_category_feature.csv",
->               "type": "file"
->             },
->             {
->               "name": "20251116_biz_unified_data_sheet.csv",
->               "type": "file"
->             },
->             {
->               "name": "AES_Usage_Timeline.csv",
->               "type": "file"
->             },
->             {
->               "name": "API Recovery Keys & Related.csv",
->               "type": "file"
->             },
->             {
->               "name": "Blueprints and Workflows Lists 1b8f84a0440281bf8a61e310341c1f4e_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Chrome Passwords.csv",
->               "type": "file"
->             },
->             {
->               "name": "Company_Details_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Core Registry 277f84a044028064be05eb377973ee4e_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Core Registry.csv",
->               "type": "file"
->             },
->             {
->               "name": "Currency_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "DNS Settings 1ccf84a044028062b0d0f53e3ac73bc3_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Domains 1caf84a0440281329311ff8f52bcb6d6_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Domains.csv",
->               "type": "file"
->             },
->             {
->               "name": "Drive Health Tracker.csv",
->               "type": "file"
->             },
->             {
->               "name": "Emails_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "FieldDependencyRelation_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Fields_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Flow Docs_C_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "IT Tools Systems Software Inventory.csv",
->               "type": "file"
->             },
->             {
->               "name": "Internal COA (OS).csv",
->               "type": "file"
->             },
->             {
->               "name": "Invitees_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Invoices_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "LayoutFieldProperties_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Layout_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Meetings_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Modules_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Notes_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Notes_Contacts_2025_08_31.csv",
->               "type": "file"
->             },
->             {
->               "name": "Notifications 20df84a04402800588c0ede6eaabefb3_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Notifications.csv",
->               "type": "file"
->             },
->             {
->               "name": "Ordered Items_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "PickListFieldProperties_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Posts 139f84a044028193a945f14394f08053_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Products_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Profiles_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Programming Languages 5e783f64b8db430d87f79656eafb588e_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "QiCode_Chart_of_Accounts_Mapping.csv",
->               "type": "file"
->             },
->             {
->               "name": "Quoted Items_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Roles_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "SOFI-Checking-7940-2025-10-31T12_45_50.csv",
->               "type": "file"
->             },
->             {
->               "name": "Sales Orders_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Social Channels.csv",
->               "type": "file"
->             },
->             {
->               "name": "Solutions_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "StickyNotes_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Translation_Codes_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Translation_Language_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "Triggers Detail 1e1f84a0440281ed9e4fdac4463a497c_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "Triggers Detail.csv",
->               "type": "file"
->             },
->             {
->               "name": "Untitled_1.csv",
->               "type": "file"
->             },
->             {
->               "name": "Vendors_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "businesses_2025-11-09_6.csv",
->               "type": "file"
->             },
->             {
->               "name": "card_list_combined.csv",
->               "type": "file"
->             },
->             {
->               "name": "contact_merged.csv",
->               "type": "file"
->             },
->             {
->               "name": "contacts_cleaned.csv",
->               "type": "file"
->             },
->             {
->               "name": "conversations.csv",
->               "type": "file"
->             },
->             {
->               "name": "db_Coins Database 169f84a0440280a790b0e7e2a0db38a9_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "db_RawEmails_KB 23550d1b26bb4b28a71867c584e55805_all.csv",
->               "type": "file"
->             },
->             {
->               "name": "db_RawEmails_KB.csv",
->               "type": "file"
->             },
->             {
->               "name": "docket.csv",
->               "type": "file"
->             },
->             {
->               "name": "file_system_nodes.csv",
->               "type": "file"
->             },
->             {
->               "name": "fs_ignore_v1.csv",
->               "type": "file"
->             },
->             {
->               "name": "gina_memory_rows.csv",
->               "type": "file"
->             },
->             {
->               "name": "ignore_list_v1.csv",
->               "type": "file"
->             },
->             {
->               "name": "internal_coa_os__all.csv",
->               "type": "file"
->             },
->             {
->               "name": "master_services_catalog__all.csv",
->               "type": "file"
->             },
->             {
->               "name": "qimessages_C_001.csv",
->               "type": "file"
->             },
->             {
->               "name": "qios_matrix.csv",
->               "type": "file"
->             },
->             {
->               "name": "raw_emails_combined.csv",
->               "type": "file"
->             },
->             {
->               "name": "reading_journal__all.csv",
->               "type": "file"
->             },
->             {
->               "name": "realms_registry.csv",
->               "type": "file"
->             },
->             {
->               "name": "sensitivity_classification_matrix_v1.csv",
->               "type": "file"
->             },
->             {
->               "name": "sensitivity_classification_registry.csv",
->               "type": "file"
->             },
->             {
->               "name": "service_matrix.csv",
->               "type": "file"
->             },
->             {
->               "name": "untitled.csv",
->               "type": "file"
->             },
->             {
->               "name": "vendors_merged.csv",
->               "type": "file"
->             },
->             {
->               "name": "zai-vitals.csv",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "devices",
->           "type": "folder",
->           "children": [
->             {
->               "name": "this-device",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "capabilities.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "device.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "last_heartbeat.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "watcher_assignments.json",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "docs",
->           "type": "folder",
->           "children": [
->             {
->               "name": "notes",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "discussion26-07-01.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "prompts",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "cockpit_gui_prompt.md",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "INTEGRATION_COMPLETE.md",
->               "type": "file"
->             },
->             {
->               "name": "PART_X_Resource_Opportunity_Graph.md",
->               "type": "file"
->             },
->             {
->               "name": "QiAlly Call Ecosystem & Gina Voice Architecture.md",
->               "type": "file"
->             },
->             {
->               "name": "gina_n8n_workflows.md",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "integration_summary.md",
->               "type": "file"
->             },
->             {
->               "name": "launcher_ui_mindmap.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_analysis_genesis.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_analysis_remaining.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_final_analysis.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_quick_reference.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_review_summary.md",
->               "type": "file"
->             },
->             {
->               "name": "markdownlint_summary.md",
->               "type": "file"
->             },
->             {
->               "name": "ui_contracts_v1.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "dropzones",
->           "type": "folder",
->           "children": [
->             {
->               "name": "default",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "imports",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "mobile",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "scans",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "scan-snap",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "2026-04-01.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_A. Allegation of _Unauthorized Pel.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268_001.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_FCFCU-card received during case.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_INVOICE.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_INVOICE_001.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_If you do not attend the hearing in this case, the  j.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_PTIN.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_UMTim.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_Wrect.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_Your subscription payment is due..pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_n_‘-‘ Person IWant to Make Care Decisio-.pdf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "2026-04-01_paysign.pdf",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "embeddings_cache",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "extracted_text",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "failed",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "inbox",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "json",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiRealms_seed.json",
->               "type": "file"
->             },
->             {
->               "name": "QiTagClasses_schema.json",
->               "type": "file"
->             },
->             {
->               "name": "QiTags_seed.json",
->               "type": "file"
->             },
->             {
->               "name": "bio_contact_info.json",
->               "type": "file"
->             },
->             {
->               "name": "client_memberships_rows.json",
->               "type": "file"
->             },
->             {
->               "name": "eos_frontmatter.schema.json",
->               "type": "file"
->             },
->             {
->               "name": "frontmatter.schema.json",
->               "type": "file"
->             },
->             {
->               "name": "intake_form_schema.json",
->               "type": "file"
->             },
->             {
->               "name": "kb_spaces_rows.json",
->               "type": "file"
->             },
->             {
->               "name": "message_feedback.json",
->               "type": "file"
->             },
->             {
->               "name": "portfolio-content.json",
->               "type": "file"
->             },
->             {
->               "name": "portfolio-projects.json",
->               "type": "file"
->             },
->             {
->               "name": "qios_constitution_schema_v1.json",
->               "type": "file"
->             },
->             {
->               "name": "qios_constitution_v1.json",
->               "type": "file"
->             },
->             {
->               "name": "slugs_mapping.json",
->               "type": "file"
->             },
->             {
->               "name": "systemInfoCMD.json",
->               "type": "file"
->             },
->             {
->               "name": "user.json",
->               "type": "file"
->             },
->             {
->               "name": "voice_mapper_rules.json",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "legacy",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiCodex.csv",
->               "type": "file"
->             },
->             {
->               "name": "manifest.txt",
->               "type": "file"
->             },
->             {
->               "name": "opensourcetools.txt",
->               "type": "file"
->             },
->             {
->               "name": "qios_00_genesis.canvas",
->               "type": "file"
->             },
->             {
->               "name": "qios_runtime_mindmap.canvas",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "logs",
->           "type": "folder",
->           "children": [
->             {
->               "name": "ingest",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "local-agent",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "runtime",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "sync",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": ".gitkeep",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "lumara",
->           "type": "folder",
->           "children": [
->             {
->               "name": "assets",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "imgs",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "cover.jpeg",
->                       "type": "file"
->                     },
->                     {
->                       "name": "icon.jpeg",
->                       "type": "file"
->                     },
->                     {
->                       "name": "icon.png",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "logo.jpeg",
->                       "type": "file"
->                     },
->                     {
->                       "name": "square.jpeg",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "db",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lumara_schema_resource_graph.sql",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "js",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "lina-api-client.js",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-widget-drop.js",
->                   "type": "file"
->                 },
->                 {
->                   "name": "lina-widget.js",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "QiMobileResourcetolumar.md",
->               "type": "file"
->             },
->             {
->               "name": "lumara_resource_graph_investor_section.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "manifests",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "migrations",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "model_cache",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "normalized",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "outputs",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "posts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "2026",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "2026-02-19_post-title",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "assets",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "brief.m4a",
->                           "type": "file"
->                         },
->                         {
->                           "name": "critique.m4a",
->                           "type": "file"
->                         },
->                         {
->                           "name": "debate.m4a",
->                           "type": "file"
->                         },
->                         {
->                           "name": "deepdive.m4a",
->                           "type": "file"
->                         },
->                         {
->                           "name": "explainer.mp4",
->                           "type": "file"
->                         },
->                         {
->                           "name": "hero.jpg",
->                           "type": "file"
->                         },
->                         {
->                           "name": "infographic.jpg",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "index.md",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "index.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "previews",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "processing",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             },
->             {
->               "name": "README_Q6CFA05.md",
->               "type": "file"
->             },
->             {
->               "name": "README_Q9F2A58.md",
->               "type": "file"
->             },
->             {
->               "name": "test_tmp1pzzpqaq_Q7579B5.txt",
->               "type": "file"
->             },
->             {
->               "name": "test_tmp24462bb9_QA3EB4F.txt",
->               "type": "file"
->             },
->             {
->               "name": "test_tmpq7_y0ey4_Q1FC037.txt",
->               "type": "file"
->             },
->             {
->               "name": "tmp2peyi7y3_Q890C10.txt",
->               "type": "file"
->             },
->             {
->               "name": "tmpp8arr_kv_Q637D6F.txt",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "qios_cursor_prompts",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "install_ingestion_worker.md",
->               "type": "file"
->             },
->             {
->               "name": "project_prompt.md.md",
->               "type": "file"
->             },
->             {
->               "name": "qicompiler_add_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "qicompiler_orchestrator_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "qimatrix_csv_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "qimatrix_sql_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "qimatrix_yaml_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "step3_tree_compiler_prompt.md",
->               "type": "file"
->             },
->             {
->               "name": "user_prompt.md.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "quarantine",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "reviewed",
->           "type": "folder",
->           "children": [
->             {
->               "name": ".gitkeep",
->               "type": "file"
->             },
->             {
->               "name": "README_Q6CFA05.md",
->               "type": "file"
->             },
->             {
->               "name": "README_Q9F2A58.md",
->               "type": "file"
->             },
->             {
->               "name": "tmpp8arr_kv_Q637D6F.txt",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "schemas",
->           "type": "folder",
->           "children": [
->             {
->               "name": "index.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "seeds",
->           "type": "folder",
->           "children": [
->             {
->               "name": "seeds",
->               "type": "folder"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "supabase_seed_qid.sql",
->               "type": "file"
->             },
->             {
->               "name": "supabase_seed_realms.sql",
->               "type": "file"
->             },
->             {
->               "name": "supabase_seed_rules.sql",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "sheets",
->           "type": "folder",
->           "children": [
->             {
->               "name": "front_matter_schema_v1.csv",
->               "type": "file"
->             },
->             {
->               "name": "fs_ignore_v1.csv",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "qios_rules_v1_1.csv",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "sites_QiAlly.com",
->           "type": "folder",
->           "children": [
->             {
->               "name": "assets",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "css",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "styles.css",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "files",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.md",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "js",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "main.js",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "cody",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "functions",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "[[path]].js",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "kb",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "accounting-cleanup",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "getting-started",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "irs-notices",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "tax-resolution",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "modules",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "hr-ops",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "it-ai",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "qisuite",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "taxes",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "tax-prep-2025",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "next-steps",
->                           "type": "folder",
->                           "children": [
->                             {
->                               "name": "index.html",
->                               "type": "file"
->                             }
->                           ]
->                         },
->                         {
->                           "name": "FormsQRCode.png",
->                           "type": "file"
->                         },
->                         {
->                           "name": "bookingQRCode.png",
->                           "type": "file"
->                         },
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "prompts.md",
->                           "type": "file"
->                         },
->                         {
->                           "name": "tax-prep-2025-intake.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "taxprepqially.jpg",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "year-end-process",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "index.html",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "pages",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "budgets",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "business_tools",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "chat",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "sales-iq-landing-page-qr-code.png",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "compliance",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "internal",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "provider-agreements",
->                           "type": "folder",
->                           "children": [
->                             {
->                               "name": "index.html",
->                               "type": "file"
->                             }
->                           ]
->                         },
->                         {
->                           "name": "training-logs",
->                           "type": "folder",
->                           "children": [
->                             {
->                               "name": "index.html",
->                               "type": "file"
->                             }
->                           ]
->                         }
->                       ]
->                     },
->                     {
->                       "name": "service_animal_gigi",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "assets",
->                           "type": "folder",
->                           "children": [
->                             {
->                               "name": "gigi_service_dog_hero.png",
->                               "type": "file"
->                             }
->                           ]
->                         },
->                         {
->                           "name": "Gigi_Certification_Statement.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Gigi_Documentation_Pack.md",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Gigi_Documentation_Pack_Print.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Gigi_Service_Dog_Training_Manual.md",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Gigi_Services_Dog_Training_Manual_Print.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "Notice_Service_Animal_Status.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "data-inventory.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "incident-response.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "risk-assessment.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "wisp-core.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "ecard",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "cody.vcf",
->                       "type": "file"
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "estate-planning",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "letters",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "client.wiletvaldo_calderon-ramirez",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "infographic.png",
->                           "type": "file"
->                         },
->                         {
->                           "name": "review_audio.m4a",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "engagement",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "SignForm_URL_QR.png",
->                           "type": "file"
->                         },
->                         {
->                           "name": "engagement_standard.html",
->                           "type": "file"
->                         },
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "evansville_inn",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "Notice_Room_Conditions.html",
->                           "type": "file"
->                         }
->                       ]
->                     }
->                   ]
->                 },
->                 {
->                   "name": "msa",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "portfolio",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "privacy",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "referral",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "cashapp",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "quickbooks",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "zoho",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "resources",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "review",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     },
->                     {
->                       "name": "qrcode_www.google.com.png",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "services",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "showcases",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "20000-swing",
->                       "type": "folder",
->                       "children": [
->                         {
->                           "name": "index.html",
->                           "type": "file"
->                         }
->                       ]
->                     },
->                     {
->                       "name": "videos.html",
->                       "type": "file"
->                     }
->                   ]
->                 },
->                 {
->                   "name": "terms",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.html",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "contact.json",
->               "type": "file"
->             },
->             {
->               "name": "index.html",
->               "type": "file"
->             },
->             {
->               "name": "main.js",
->               "type": "file"
->             },
->             {
->               "name": "orchestrate_clarity.py",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "sql",
->           "type": "folder",
->           "children": [
->             {
->               "name": "01_init.sql",
->               "type": "file"
->             },
->             {
->               "name": "02_policies.sql",
->               "type": "file"
->             },
->             {
->               "name": "03_add_chunk_hash.sql",
->               "type": "file"
->             },
->             {
->               "name": "get-workspace-id.sql",
->               "type": "file"
->             },
->             {
->               "name": "schema.sql",
->               "type": "file"
->             },
->             {
->               "name": "tax_returns_schema.sql",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "state",
->           "type": "folder",
->           "children": [
->             {
->               "name": "local-agent",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "cursor.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "locks.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "queue.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "runtime",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "embeddings_state.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "pipeline_state.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "repair_state.json",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "sync",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "conflict_log.json",
->                   "type": "file"
->                 },
->                 {
->                   "name": "sync_cursor.json",
->                   "type": "file"
->                 }
->               ]
->             }
->           ]
->         },
->         {
->           "name": "vector",
->           "type": "folder",
->           "children": [
->             {
->               "name": "qios_local.db",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "yaml",
->           "type": "folder",
->           "children": [
->             {
->               "name": "fs_ignore.yaml",
->               "type": "file"
->             },
->             {
->               "name": "qios_matrix.yaml",
->               "type": "file"
->             },
->             {
->               "name": "qios_rules_v1.yaml",
->               "type": "file"
->             },
->             {
->               "name": "registry_folders.yaml",
->               "type": "file"
->             },
->             {
->               "name": "registry_realms.yaml",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "index.html",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "deploy",
->       "type": "folder"
->     },
->     {
->       "name": "docker",
->       "type": "folder"
->     },
->     {
->       "name": "monitoring",
->       "type": "folder"
->     },
->     {
->       "name": "opeartions",
->       "type": "folder"
->     },
->     {
->       "name": "tailscale",
->       "type": "folder"
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "qiserver_runbook.md",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-13T16:18:06.244Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> is qi server with everything that should be in that module {
+
+>   "name": "30_QiServer",
+
+>   "path": "c:\\QiLabs\\30_QiServer",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "backups",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "cloudflare",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "data",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "MMEX",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "moneydb.mmb",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "csv",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "20251116_biz_ai_kb_full.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_blueprints_workflows_list.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_drive_health_tracker_full.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_it_tools_inventory_full.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_mandated_training_full.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_pricing_category_feature.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "20251116_biz_unified_data_sheet.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "AES_Usage_Timeline.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "API Recovery Keys & Related.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Blueprints and Workflows Lists 1b8f84a0440281bf8a61e310341c1f4e_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Chrome Passwords.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Company_Details_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Core Registry 277f84a044028064be05eb377973ee4e_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Core Registry.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Currency_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "DNS Settings 1ccf84a044028062b0d0f53e3ac73bc3_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Domains 1caf84a0440281329311ff8f52bcb6d6_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Domains.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Drive Health Tracker.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Emails_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "FieldDependencyRelation_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Fields_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Flow Docs_C_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "IT Tools Systems Software Inventory.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Internal COA (OS).csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Invitees_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Invoices_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "LayoutFieldProperties_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Layout_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Meetings_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Modules_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Notes_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Notes_Contacts_2025_08_31.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Notifications 20df84a04402800588c0ede6eaabefb3_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Notifications.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Ordered Items_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "PickListFieldProperties_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Posts 139f84a044028193a945f14394f08053_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Products_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Profiles_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Programming Languages 5e783f64b8db430d87f79656eafb588e_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiCode_Chart_of_Accounts_Mapping.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Quoted Items_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Roles_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SOFI-Checking-7940-2025-10-31T12_45_50.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Sales Orders_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Social Channels.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Solutions_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "StickyNotes_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Translation_Codes_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Translation_Language_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Triggers Detail 1e1f84a0440281ed9e4fdac4463a497c_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Triggers Detail.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Untitled_1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Vendors_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "businesses_2025-11-09_6.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "card_list_combined.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "contact_merged.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "contacts_cleaned.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "conversations.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "db_Coins Database 169f84a0440280a790b0e7e2a0db38a9_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "db_RawEmails_KB 23550d1b26bb4b28a71867c584e55805_all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "db_RawEmails_KB.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "docket.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "file_system_nodes.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "fs_ignore_v1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "gina_memory_rows.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ignore_list_v1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "internal_coa_os__all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "master_services_catalog__all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qimessages_C_001.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_matrix.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "raw_emails_combined.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "reading_journal__all.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "realms_registry.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "sensitivity_classification_matrix_v1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "sensitivity_classification_registry.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "service_matrix.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "untitled.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "vendors_merged.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "zai-vitals.csv",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "devices",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "this-device",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "capabilities.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "device.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "last_heartbeat.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "watcher_assignments.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "docs",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "notes",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "discussion26-07-01.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "prompts",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "cockpit_gui_prompt.md",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "INTEGRATION_COMPLETE.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "PART_X_Resource_Opportunity_Graph.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiAlly Call Ecosystem & Gina Voice Architecture.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "gina_n8n_workflows.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "integration_summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "launcher_ui_mindmap.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_analysis_genesis.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_analysis_remaining.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_final_analysis.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_quick_reference.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_review_summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markdownlint_summary.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ui_contracts_v1.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "dropzones",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "default",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "imports",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "mobile",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "scans",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "scan-snap",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "2026-04-01.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_A. Allegation of _Unauthorized Pel.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_Department of Treasury Internal Revenue Service IRS Tax Professional PTIN Processing Center PO Box 380638 San Antonio, TX 78268_001.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_FCFCU-card received during case.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_INVOICE.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_INVOICE_001.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_If you do not attend the hearing in this case, the  j.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_PTIN.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_UMTim.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_Wrect.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_Your subscription payment is due..pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_n_‘-‘ Person IWant to Make Care Decisio-.pdf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "2026-04-01_paysign.pdf",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "embeddings_cache",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "extracted_text",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "failed",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "inbox",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "json",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiRealms_seed.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiTagClasses_schema.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QiTags_seed.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "bio_contact_info.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "client_memberships_rows.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "eos_frontmatter.schema.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "frontmatter.schema.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "intake_form_schema.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "kb_spaces_rows.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "message_feedback.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "portfolio-content.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "portfolio-projects.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_constitution_schema_v1.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_constitution_v1.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "slugs_mapping.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "systemInfoCMD.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "user.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "voice_mapper_rules.json",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "legacy",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiCodex.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "manifest.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "opensourcetools.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_00_genesis.canvas",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_runtime_mindmap.canvas",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "logs",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "ingest",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "local-agent",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "runtime",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "sync",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": ".gitkeep",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "lumara",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "assets",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "imgs",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "cover.jpeg",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "icon.jpeg",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "icon.png",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "logo.jpeg",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "square.jpeg",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "db",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lumara_schema_resource_graph.sql",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "js",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "lina-api-client.js",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-widget-drop.js",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "lina-widget.js",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "QiMobileResourcetolumar.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "lumara_resource_graph_investor_section.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "manifests",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "migrations",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "model_cache",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "normalized",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "outputs",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "posts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "2026",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "2026-02-19_post-title",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "assets",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "brief.m4a",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "critique.m4a",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "debate.m4a",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "deepdive.m4a",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "explainer.mp4",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "hero.jpg",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "infographic.jpg",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "index.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "previews",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "processing",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README_Q6CFA05.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README_Q9F2A58.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "test_tmp1pzzpqaq_Q7579B5.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "test_tmp24462bb9_QA3EB4F.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "test_tmpq7_y0ey4_Q1FC037.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tmp2peyi7y3_Q890C10.txt",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tmpp8arr_kv_Q637D6F.txt",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "qios_cursor_prompts",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "install_ingestion_worker.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "project_prompt.md.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qicompiler_add_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qicompiler_orchestrator_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qimatrix_csv_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qimatrix_sql_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qimatrix_yaml_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "step3_tree_compiler_prompt.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "user_prompt.md.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "quarantine",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "reviewed",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": ".gitkeep",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README_Q6CFA05.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README_Q9F2A58.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tmpp8arr_kv_Q637D6F.txt",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "schemas",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "seeds",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "seeds",
+
+>               "type": "folder"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "supabase_seed_qid.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "supabase_seed_realms.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "supabase_seed_rules.sql",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "sheets",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "front_matter_schema_v1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "fs_ignore_v1.csv",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_rules_v1_1.csv",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "sites_QiAlly.com",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "assets",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "css",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "styles.css",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "files",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.md",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "js",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "main.js",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "cody",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "functions",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "[[path]].js",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "kb",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "accounting-cleanup",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "getting-started",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "irs-notices",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "tax-resolution",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "modules",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "hr-ops",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "it-ai",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "qisuite",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "taxes",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "tax-prep-2025",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "next-steps",
+
+>                           "type": "folder",
+
+>                           "children": [
+
+>                             {
+
+>                               "name": "index.html",
+
+>                               "type": "file"
+
+>                             }
+
+>                           ]
+
+>                         },
+
+>                         {
+
+>                           "name": "FormsQRCode.png",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "bookingQRCode.png",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "prompts.md",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "tax-prep-2025-intake.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "taxprepqially.jpg",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "year-end-process",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "index.html",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "pages",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "budgets",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "business_tools",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "chat",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "sales-iq-landing-page-qr-code.png",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "compliance",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "internal",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "provider-agreements",
+
+>                           "type": "folder",
+
+>                           "children": [
+
+>                             {
+
+>                               "name": "index.html",
+
+>                               "type": "file"
+
+>                             }
+
+>                           ]
+
+>                         },
+
+>                         {
+
+>                           "name": "training-logs",
+
+>                           "type": "folder",
+
+>                           "children": [
+
+>                             {
+
+>                               "name": "index.html",
+
+>                               "type": "file"
+
+>                             }
+
+>                           ]
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "service_animal_gigi",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "assets",
+
+>                           "type": "folder",
+
+>                           "children": [
+
+>                             {
+
+>                               "name": "gigi_service_dog_hero.png",
+
+>                               "type": "file"
+
+>                             }
+
+>                           ]
+
+>                         },
+
+>                         {
+
+>                           "name": "Gigi_Certification_Statement.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Gigi_Documentation_Pack.md",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Gigi_Documentation_Pack_Print.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Gigi_Service_Dog_Training_Manual.md",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Gigi_Services_Dog_Training_Manual_Print.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "Notice_Service_Animal_Status.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "data-inventory.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "incident-response.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "risk-assessment.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "wisp-core.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "ecard",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "cody.vcf",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "estate-planning",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "letters",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "client.wiletvaldo_calderon-ramirez",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "infographic.png",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "review_audio.m4a",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "engagement",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "SignForm_URL_QR.png",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "engagement_standard.html",
+
+>                           "type": "file"
+
+>                         },
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "evansville_inn",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "Notice_Room_Conditions.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "msa",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "portfolio",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "privacy",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "referral",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "cashapp",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "quickbooks",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "zoho",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "resources",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "review",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     },
+
+>                     {
+
+>                       "name": "qrcode_www.google.com.png",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "services",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "showcases",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "20000-swing",
+
+>                       "type": "folder",
+
+>                       "children": [
+
+>                         {
+
+>                           "name": "index.html",
+
+>                           "type": "file"
+
+>                         }
+
+>                       ]
+
+>                     },
+
+>                     {
+
+>                       "name": "videos.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 },
+
+>                 {
+
+>                   "name": "terms",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.html",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "contact.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "index.html",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "main.js",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "orchestrate_clarity.py",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "sql",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "01_init.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "02_policies.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "03_add_chunk_hash.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "get-workspace-id.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "schema.sql",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tax_returns_schema.sql",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "state",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "local-agent",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "cursor.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "locks.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "queue.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "runtime",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "embeddings_state.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "pipeline_state.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "repair_state.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "sync",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "conflict_log.json",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "sync_cursor.json",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "vector",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "qios_local.db",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "yaml",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "fs_ignore.yaml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_matrix.yaml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qios_rules_v1.yaml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "registry_folders.yaml",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "registry_realms.yaml",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "index.html",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "deploy",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "docker",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "monitoring",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "opeartions",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "tailscale",
+
+>       "type": "folder"
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "qiserver_runbook.md",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-13T16:18:06.244Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant

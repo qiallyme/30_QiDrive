@@ -13,7 +13,7 @@ related:
   - 20_personal/20_values/values.md
   - 40_history/00_timeline/life_timeline_overview.md
   - 00_surface/10_professional_bio/professional_profile.md
-tags:
+tags: []
   - legacy
   - purpose
   - meaning
@@ -22,6 +22,23 @@ source:
   - _intake/02 How I Work Focus, Flow, Boundaries 219f84a0440281edb448ec0bda3c3676.md
   - _intake/09 Building Bridges Mutual Understanding 219f84a0440281029211f2d5edb84d28.md
   - _intake/Thank You for Taking This Journey 219f84a0440281a19cdecd1bd31e8e6b.md
+layout: page
+slug: legacy-index
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 12e9f64ed3624042aa5752dc99e5d7ae
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Legacy Index

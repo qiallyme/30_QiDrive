@@ -4,7 +4,7 @@ title: The Onion Doesn't Lie - The Truth Beneath All the Layers
 series: The Onion Effect
 episode: 8
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - self-discovery
   - authenticity
   - truth
@@ -16,6 +16,23 @@ platforms:
   - NotebookLM
   - Qsays
   - YouTube
+layout: page
+slug: the-onion-doesnt-lie-the-truth-beneath-all-the-layers
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: deae032e896141e6b66a38b6a5a45b65
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # The Onion Effect – Episode 8

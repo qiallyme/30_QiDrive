@@ -3,9 +3,9 @@ layout: page
 title: "Paperless Docker Setup"
 slug: "paperless_docker_setup"
 created_at: "2026-05-08 05:25:00"
-updated_at: "2026-05-08 05:25:00"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -854,104 +854,202 @@ canonical_ref: ""
 > But for `qiserver`, the proper fix is: **Docker + Tailscale + Cockpit enabled at boot, containers using restart policies, and QiAccess managed by systemd.**
 
 ### User
-> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
-> QISERVER → Status: qs
-> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
-> 
-> qiadmin@qiserver:~$ echo "=== OS ==="
-> === OS ===
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ cat /etc/os-release | head
-> PRETTY_NAME="Ubuntu 24.04.4 LTS"
-> NAME="Ubuntu"
-> VERSION_ID="24.04"
-> VERSION="24.04.4 LTS (Noble Numbat)"
-> VERSION_CODENAME=noble
-> ID=ubuntu
-> ID_LIKE=debian
-> HOME_URL="https://www.ubuntu.com/"
-> SUPPORT_URL="https://help.ubuntu.com/"
-> BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo ""
-> 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo "=== Docker enabled? ==="
-> === Docker enabled? ===
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-enabled docker
-> enabled
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-active docker
-> active
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo ""
-> 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo "=== Tailscale enabled? ==="
-> === Tailscale enabled? ===
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-enabled tailscaled
-> enabled
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-active tailscaled
-> active
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo ""
-> 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo "=== Cockpit enabled? ==="
-> === Cockpit enabled? ===
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-enabled cockpit.socket
-> enabled
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ systemctl is-active cockpit.socket
-> active
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo ""
-> 
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ echo "=== Containers + restart policies ==="
-> === Containers + restart policies ===
-> qiadmin@qiserver:~$ 
-> qiadmin@qiserver:~$ docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-> NAMES            STATUS                    PORTS
-> homepage         Up 22 minutes (healthy)   0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp
-> portainer        Up 22 minutes             8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp
-> open-webui       Up 22 minutes (healthy)   127.0.0.1:3000->8080/tcp
-> neo4j            Up 22 minutes             127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
-> friendly_elion   Exited (0) 2 weeks ago    
-> qiadmin@qiserver:~$ sudo systemctl enable --now docker
-> [sudo] password for qiadmin: 
-> Sorry, try again.
-> [sudo] password for qiadmin: 
-> Synchronizing state of docker.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
-> Executing: /usr/lib/systemd/systemd-sysv-install enable docker
-> qiadmin@qiserver:~$ systemctl is-enabled docker tailscaled cockpit.socket
-> enabled
-> enabled
-> enabled
-> qiadmin@qiserver:~$ docker inspect --format='{{.Name}} restart={{.HostConfig.RestartPolicy.Name}}' $(docker ps -aq)
-> /homepage restart=unless-stopped
-> /portainer restart=always
-> /open-webui restart=unless-stopped
-> /neo4j restart=unless-stopped
-> /friendly_elion restart=no
-> qiadmin@qiserver:~$ docker update --restart unless-stopped $(docker ps -aq)
-> 5be0d0165f5e
-> 84663ecd9ba4
-> ee7fc7eecea1
-> c11fc8375559
-> 5c606e3b7e1c
+> QISERVER → Runbook: /srv/qios/docs/000_RUN_ME_FIRST.md
+
+> QISERVER → Status: qs
+
+> QISERVER → UI: https://qiserver-1.cerberus-sirius.ts.net
+
+> 
+
+> qiadmin@qiserver:~$ echo "=== OS ==="
+
+> === OS ===
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ cat /etc/os-release | head
+
+> PRETTY_NAME="Ubuntu 24.04.4 LTS"
+
+> NAME="Ubuntu"
+
+> VERSION_ID="24.04"
+
+> VERSION="24.04.4 LTS (Noble Numbat)"
+
+> VERSION_CODENAME=noble
+
+> ID=ubuntu
+
+> ID_LIKE=debian
+
+> HOME_URL="https://www.ubuntu.com/"
+
+> SUPPORT_URL="https://help.ubuntu.com/"
+
+> BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo ""
+
+> 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo "=== Docker enabled? ==="
+
+> === Docker enabled? ===
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-enabled docker
+
+> enabled
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-active docker
+
+> active
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo ""
+
+> 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo "=== Tailscale enabled? ==="
+
+> === Tailscale enabled? ===
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-enabled tailscaled
+
+> enabled
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-active tailscaled
+
+> active
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo ""
+
+> 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo "=== Cockpit enabled? ==="
+
+> === Cockpit enabled? ===
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-enabled cockpit.socket
+
+> enabled
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ systemctl is-active cockpit.socket
+
+> active
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo ""
+
+> 
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ echo "=== Containers + restart policies ==="
+
+> === Containers + restart policies ===
+
+> qiadmin@qiserver:~$ 
+
+> qiadmin@qiserver:~$ docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+> NAMES            STATUS                    PORTS
+
+> homepage         Up 22 minutes (healthy)   0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp
+
+> portainer        Up 22 minutes             8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp
+
+> open-webui       Up 22 minutes (healthy)   127.0.0.1:3000->8080/tcp
+
+> neo4j            Up 22 minutes             127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> friendly_elion   Exited (0) 2 weeks ago    
+
+> qiadmin@qiserver:~$ sudo systemctl enable --now docker
+
+> [sudo] password for qiadmin: 
+
+> Sorry, try again.
+
+> [sudo] password for qiadmin: 
+
+> Synchronizing state of docker.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+
+> Executing: /usr/lib/systemd/systemd-sysv-install enable docker
+
+> qiadmin@qiserver:~$ systemctl is-enabled docker tailscaled cockpit.socket
+
+> enabled
+
+> enabled
+
+> enabled
+
+> qiadmin@qiserver:~$ docker inspect --format='{{.Name}} restart={{.HostConfig.RestartPolicy.Name}}' $(docker ps -aq)
+
+> /homepage restart=unless-stopped
+
+> /portainer restart=always
+
+> /open-webui restart=unless-stopped
+
+> /neo4j restart=unless-stopped
+
+> /friendly_elion restart=no
+
+> qiadmin@qiserver:~$ docker update --restart unless-stopped $(docker ps -aq)
+
+> 5be0d0165f5e
+
+> 84663ecd9ba4
+
+> ee7fc7eecea1
+
+> c11fc8375559
+
+> 5c606e3b7e1c
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -1298,13 +1396,20 @@ canonical_ref: ""
 > That folder becomes an input source for QiArchive scanning. Paperless gets documents readable. QiArchive makes them canonical.
 
 ### User
-> qiadmin@qiserver:~$ docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-> NAMES            STATUS                          PORTS
-> homepage         Up 45 seconds (healthy)         0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp
-> portainer        Up 45 seconds                   8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp
-> open-webui       Up 45 seconds (healthy)         127.0.0.1:3000->8080/tcp
-> neo4j            Up 45 seconds                   127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
-> friendly_elion   Restarting (0) 19 seconds ago   
+> qiadmin@qiserver:~$ docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+
+> NAMES            STATUS                          PORTS
+
+> homepage         Up 45 seconds (healthy)         0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp
+
+> portainer        Up 45 seconds                   8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, [::]:9443->9443/tcp
+
+> open-webui       Up 45 seconds (healthy)         127.0.0.1:3000->8080/tcp
+
+> neo4j            Up 45 seconds                   127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
+
+> friendly_elion   Restarting (0) 19 seconds ago   
+
 > qiadmin@qiserver:~$
 
 ### Assistant

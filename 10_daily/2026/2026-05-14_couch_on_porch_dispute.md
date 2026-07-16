@@ -3,9 +3,9 @@ layout: page
 title: "Couch on Porch Dispute"
 slug: "couch_on_porch_dispute"
 created_at: "2026-05-14 17:00:59"
-updated_at: "2026-05-14 17:00:59"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

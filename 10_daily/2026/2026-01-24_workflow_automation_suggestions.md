@@ -3,9 +3,9 @@ layout: page
 title: "Workflow Automation Suggestions"
 slug: "workflow_automation_suggestions"
 created_at: "2026-01-24 05:26:44"
-updated_at: "2026-01-24 05:26:44"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,220 +39,434 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> DO YOU SUGGEST ANY OF THESE FOR MY WORKFLOW OR AUTOMATIONS Skip to content
-> meirwah
-> awesome-workflow-engines
-> Repository navigation
-> Code
-> Issues
-> 19
->  (19)
-> Pull requests
-> 29
->  (29)
-> Actions
-> Projects
-> Wiki
-> Security
-> Insights
-> Owner avatar
-> awesome-workflow-engines
-> Public
-> meirwah/awesome-workflow-engines
-> Go to file
-> t
-> Name		
-> meirwah
-> meirwah
-> Merge pull request #179 from canuto/codehooks-patch-1
-> 12e8e17
->  · 
-> 4 months ago
-> LICENSE
-> Initial commit
-> 11 years ago
-> README.md
-> Removed link to NPM in codehooks.io description
-> 4 months ago
-> contributing.md
-> Modify format in contributing.md
-> 11 years ago
-> Repository files navigation
-> README
-> Contributing
-> Apache-2.0 license
-> awesome-workflow-engines
-> A curated list of awesome open source workflow engines
-> 
-> Full fledged product
-> Activepieces Stars - Open source no-code business automation, alternative to Zapier
-> AiiDA Stars - Open source workflow manager for computational science with strong focus on performance, provenance, and extensibility.
-> Airflow Stars - Python-based platform for running directed acyclic graphs (DAGs) of tasks
-> Argo Workflows Stars - Open source container-native workflow engine for getting work done on Kubernetes
-> Arvados Stars - Open Source data and workflow management platform with emphasis on reproducibily, scale, and secure data sharing, deployable on cloud and HPC.
-> Azkaban Stars - Batch workflow job scheduler created at LinkedIn to run Hadoop jobs.
-> Brigade Stars - Brigade is a tool for running scriptable, automated tasks in the cloud — as part of your Kubernetes cluster.
-> Bytechef Stars - Open-source, low-code, extendable API integration & workflow automation platform
-> CabloyJS Stars - A Node.js full-stack framework with workflow engine, based on koa + egg + vue + framework7.
-> Cadence Stars - An orchestration engine to execute asynchronous long-running business logic developed by Uber Engineering.
-> Camunda Stars - BPMN-based workflow engine that can be embedded as java library (e.g. Spring Boot) or used standalone, including a graphical modeler and operations tooling.
-> CDS Stars - Enterprise-grade continuous delivery & DevOps automation open source platform developped by OVHcloud.
-> CGraph Stars - A simple-used and cross-platform DAG framework based on C++17 without any 3rd-party.
-> CloudSlang Stars - Workflow engine to automate your DevOps use cases.
-> Conductor Stars - Conductor is a microservices orchestration platform that enables developers to build scalable, durable application flows. Conductor workflows are language and framework-agnostic. The Conductor is maintained by Orkes and a team of open-source contributors.
-> Copper Stars - A high performance Java workflow engine.
-> Couler Stars - Unified interface for constructing and managing workflows on different workflow engines, such as Argo Workflows, Tekton Pipelines, and Apache Airflow.
-> Covalent Stars - Workflow orchestration platform for quantum and high performance computing.
-> Cromwell Stars - Workflow engine written in Scala and designed for simplicity and scalability. Executes workflows written in WDL or CWL.
-> Cylc Stars - Workflow engine that orchestrates complex distributed workflows with cyclic or acyclic graphs. It was originally designed to automate weather forecasting systems at NIWA.
-> Dagu Stars - A No-code workflow executor. It executes workflows from declarative YAML definitions.
-> Dagster Stars - Data orchestrator for machine learning, analytics, and ETL.
-> Dapr Workflows Stars - Author and execute durable & long-running Workflow-as-code at scale in Python, Javascript, .NET, Java & Go. Based on the Open-source Durable Task Framework.
-> Didact Stars - The open source .NET job orchestrator.
-> DigDag Stars - Digdag is a simple tool that helps you to build, run, schedule, and monitor complex pipelines of tasks.
-> DolphinScheduler Stars Apache DolphinScheduler is a distributed and extensible workflow scheduler platform with powerful DAG visual interfaces, dedicated to solving complex job dependencies in the data pipeline and providing various types of jobs available out of box.
-> elsa-workflows Stars - A .NET Standard 2.0 Workflows Library.
-> easy-rules Stars - The simple, stupid rules engine for Java.
-> FireWorks Stars - FireWorks stores, executes, and manages calculation workflows.
-> Fission Workflows Stars - A high-perfomant workflow engine for serverless functions on Kubernetes.
-> Flor Stars - A workflow engine written in Ruby.
-> Flyte Stars - A container-native, type-safe workflow and pipelines platform optimized for large scale processing and machine learning written in Golang. Workflows can be written in any language, with out of the box support for Python.
-> ForML Stars - A development framework and MLOps platform for the lifecycle management of data science projects.
-> Galaxy Project Stars - Galaxy is a scientific tool and workflow system that facilitates reproducibility and transparency by providing a graphical user interface (GUI), a multitude of computational dataset tools, a rich API, and a robust scientific community.
-> Goflow Stars - A simple but powerful DAG scheduler and dashboard, written in Go.
-> Huginn Stars - Create agents that monitor and act on your behalf. Your agents are standing by!
-> Imixs-Workflow Stars - A powerful human-centric Workflow Engine based on the BPMN 2.0 standard.
-> Inngest Stars - An event-driven workflow engine that combines event streams, queues, and durable execution into a single reliability layer.
-> iWF Stars - iWF is a WorkflowAsCode API orchestration platform offering an orchestration coding framework and service for building resilient, fault-tolerant, scalable long-running processes.
-> Kestra Stars - Open source data orchestration and scheduling platform with declarative syntax.
-> Kiba Stars - Data processing & ETL framework for Ruby
-> Kubeflow pipelines Stars - Kubeflow pipelines are reusable end-to-end ML workflows built using the Kubeflow Pipelines SDK.
-> Laravel Workflow Stars - Laravel Workflow is a durable workflow engine that allows users to track job status, orchestrate microservices and write long running persistent distributed workflows in PHP powered by Laravel Queues.
-> Petri Flow Stars - Petri Net workflow engine for Ruby.
-> Martian Stars - An elegant, powerful language and framework for building high-performance computational pipelines.
-> Metaflow Stars - Metaflow is a human-friendly Python/R library that helps scientists and engineers build and manage real-life data science projects.
-> MassTransitStars - .Net Messaging system with Saga Workflow Support
-> Mistral Stars - Workflow service, in OpenStack foundation.
-> N8n-io Stars - Free and open node based Workflow Automation Tool. Easily automate tasks across different services.
-> Nextflow Stars - Develop container-backed, reproducible workflows portable across computational platforms including local, HPC schedulers, AWS Batch, Google Genomics Pipelines, and Kubernetes.
-> Node-RED Stars - Node-RED is a NodeJS based workflow tool featuring a browser based editor for wiring together hardware devices, APIs and online services in new and interesting ways.
-> Oozie Stars - Workflow Scheduler for Hadoop.
-> Pallets Stars - Simple and reliable workflow engine, written in Ruby
-> Parsl Stars - Python framework for workflow orchestration and parallelization based on a dynamic graph of tasks and their data dependencies.
-> Pegasus Stars - Automate, recover, and debug scientific computations.
-> Piper Stars - A distributed Java workflow engine designed to be dead simple.
-> Platformeco - Technology platform, allows Product & Project teams easily build micro services using drag & drop UI and operate it, within out of the box cloud and CI/CD tools with deep tracing & monitoring.
-> Plynx Stars - Interactive platform with drag and drop interface for building and deploying portable and scalable end-to-end data driven workflows.
-> Popper Stars - Lightweight, YAML based container-native workflow engine supporting Docker, Singularity, Vagrant VMs with Docker daemon in VM, and local host.
-> Prefect Stars - Prefect is a new workflow management system, designed for modern infrastructure and powered by the open-source Prefect Core workflow engine
-> Restate Stars - A low-latency durable execution engine for workflows, event-driven handlers, transactional state machines, and stateful orchestration. Fully self-contained in a single binary. Supports programs in TypeScript, Java/Kotlin, Go, Python, and Rust.
-> River Pro Stars - Postgres-backed workflow engine and web dashboard for the River background queue, written in Go.
-> RunDeck Stars - Job Scheduler and Runbook Automation.
-> Snakemake Stars - Workflow management system to create reproducible and scalable data analyses; python-based inspired by GNU Make.
-> StackStorm Stars - Robust Automation Engine providing Sensors, Triggers, Rules, Workflows, and Actions. StackStorm is how you "glue" your applications together.
-> StepWise Stars - A code-first, event-driven workflow framework for .NET Developers.
-> Temporal Stars - Temporal is a microservice orchestration platform which enables developers to build scalable applications without sacrificing productivity or reliability. Temporal is a mature technology, a fork of Uber's Cadence. Temporal is being developed by Temporal Technologies, a startup by the creators of Cadence.
-> Titanoboa Stars - Titanoboa is a platform for creating complex workflows on JVM.
-> Tork Stars - Tork is a very lightweight workflow engine written in Golang.
-> uTask Stars - Automation engine that models and executes business processes declared in yaml.
-> Wexflow Stars .NET Workflow Engine and Automation Platform.
-> Windmill Stars - Turn scripts into workflows and UIs. Open-source alternative to Airplane and Retool.
-> Workflow Engine - A lightweight .NET and Java workflow engine.
-> YAWL Stars - (Yet Another Workflow Language), Java-based, handles complex data transformations, and full integration with organizational resources and external Web Services.
-> Zeebe Stars - A horizontally scalable, cloud-native workflow engine that executes BPMN models and is best operated on Kubernetes; polyglot clients connect via gRPC or available language clients.
-> BPM Suite
-> Activiti Stars - Activiti is a leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs.
-> Activiti Cloud - is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.
-> Bonita Stars - BPMN engine that comes with an optional development environment, a designer, an optional user interface and administrative tools.
-> Flowable Stars - The Flowable project provides a core set of open source business process engines that are compact and highly efficient. They provide a workflow and Business Process Management (BPM) platform for developers, system admins and business users.
-> jBPM Stars - The core of jBPM is a light-weight, extensible workflow engine written in pure Java that allows you to execute business processes using the latest BPMN 2.0 specification.
-> SAAS
-> AWS Step Functions - Clear workflows for modern applications.
-> Azure Logic Apps - Built on a containerized runtime, deploy and run anywhere to increase scale and portability while automating business-critical workflows.
-> Braze - Power customer-centric interactions between consumers and brands in real-time.
-> Camunda Cloud - A workflow service executing BPMN, providing various language clients, based on the open source project Zeebe Stars.
-> Codehooks.io – Serverless backend with a workflow engine for automation and AI, supporting LLM-generated workflows via the codehooks-js NPM package.
-> Corezoid - Hyperautomation engine.
-> Embed Workflow - Simple native workflow builder for your end-users
-> Orkes Conductor - Orkes provides Netflix Conductor as a cloud services across all the major cloud providers with enterprise features such as security, integrations and Visual workflow code editor.
-> Google Cloud Workflows - Combine Google Cloud services and APIs to build reliable applications, process automation, and data and machine learning pipelines.
-> Inngest - A scalable, event-driven durable execution platform
-> Zenaton - Workflow engine for data processes and background jobs available in PHP, Node.js, Python and Ruby.
-> Library (embedded usage)
-> Automatiko Stars - a toolkit to build services and functions based on workflows (primarily BPMN2). Introduces and implements concepts: workflow as a service, workflow as a function and workflow as a function flow.
-> C++ Workflow Stars - C++ Parallel Computing and Asynchronous Networking Engine.
-> Camunda Stars - BPMN-based workflow engine that can be embedded as java library (e.g. Spring Boot) or used standalone, including a graphical modeler and operations tooling.
-> Captain Stars - Distributed, light-weight java workflow engine for a microservice architecture.
-> CoreWF Stars - WF runtime ported to work on .NET Core
-> Dagger - Dagger is a distributed, horizontally scalable, durable, and highly available orchestration engine in python based on Faust-Streaming for running millions of long running tasks with direct integration with Kafka
-> Django River Stars - Django workflow library that supports on the fly changes for states, transitions, and authorizations
-> DBOS Transact Stars - DBOS typescript library for writing durable and transactional workflows.
-> Durable Task Framework Stars - Durable Task Framework (DTFx) is a library that allows users to write long running persistent workflows in C#.
-> go-taskflowStars - A pure go General-purpose Task-parallel Programming Framework with integrated visualizer and profiler
-> Kogito Stars - Cloud-native business automation technology. Embeddable to produce JVM or GraalVM artifacts or interacted through Kafka & REST APIs
-> Luigi Stars - Python module that helps you build complex pipelines of batch jobs.
-> nFlow Stars - Embeddable JVM-based workflow engine with high availability, fault tolerance, and support for multiple databases. Additional libraries are provided for visualization and REST API.
-> Oban - Robust job processing in Elixir, backed by modern PostgreSQL or SQLite3
-> SciPipe Stars - A Go library for writing pipelines of Bash commands or Go-code using the dataflow / flow-based programming paradigm.
-> SpiffWorkflow Stars - SpiffWorkflow - a BPMN 2.0 workflow engine implemented in pure Python.
-> Symfony Workflow Stars - Symfony Workflow component - The Workflow component provides tools for managing a workflow or finite state machine in PHP.
-> Unify Flowret Stars - A lightweight Java based workflow / orchestration engine.
-> Viewflow Stars - Reusable workflow library that helps organize people collaboration business logic in django applications.
-> Workflow Core Stars - Lightweight workflow engine for .NET Standard
-> WorkflowEngine.NET Stars - WorkflowEngine.NET - component that adds workflow in your application. It can be fully integrated into your application, or be in the form of a specific service (such as a web service)
-> About
-> A curated list of awesome open source workflow engines
-> 
-> Resources
->  Readme
-> License
->  Apache-2.0 license
-> Contributing
->  Contributing
->  Activity
-> Stars
->  7.6k stars
-> Watchers
->  244 watching
-> Forks
->  733 forks
-> Report repository
-> Releases
-> No releases published
-> Packages
-> No packages published
-> Contributors
-> 98
-> @meirwah
-> @crazybber
-> @PiotrIw
-> @jmettraux
-> @berndruecker
-> @jsyrjala
-> @crimeminister
-> @canuto
-> @gchauvet
-> @kinow
-> @jorisros
-> @rabernat
-> @aelassas
-> @mbarrien
-> + 84 contributors
-> Deployments
-> 93
->  github-pages 4 months ago
-> + 92 deployments
-> Footer
-> © 2026 GitHub, Inc.
-> Footer navigation
-> Terms
-> Privacy
-> Security
-> Status
-> Community
-> Docs
-> Contact
-> Manage cookies
+> DO YOU SUGGEST ANY OF THESE FOR MY WORKFLOW OR AUTOMATIONS Skip to content
+
+> meirwah
+
+> awesome-workflow-engines
+
+> Repository navigation
+
+> Code
+
+> Issues
+
+> 19
+
+>  (19)
+
+> Pull requests
+
+> 29
+
+>  (29)
+
+> Actions
+
+> Projects
+
+> Wiki
+
+> Security
+
+> Insights
+
+> Owner avatar
+
+> awesome-workflow-engines
+
+> Public
+
+> meirwah/awesome-workflow-engines
+
+> Go to file
+
+> t
+
+> Name		
+
+> meirwah
+
+> meirwah
+
+> Merge pull request #179 from canuto/codehooks-patch-1
+
+> 12e8e17
+
+>  · 
+
+> 4 months ago
+
+> LICENSE
+
+> Initial commit
+
+> 11 years ago
+
+> README.md
+
+> Removed link to NPM in codehooks.io description
+
+> 4 months ago
+
+> contributing.md
+
+> Modify format in contributing.md
+
+> 11 years ago
+
+> Repository files navigation
+
+> README
+
+> Contributing
+
+> Apache-2.0 license
+
+> awesome-workflow-engines
+
+> A curated list of awesome open source workflow engines
+
+> 
+
+> Full fledged product
+
+> Activepieces Stars - Open source no-code business automation, alternative to Zapier
+
+> AiiDA Stars - Open source workflow manager for computational science with strong focus on performance, provenance, and extensibility.
+
+> Airflow Stars - Python-based platform for running directed acyclic graphs (DAGs) of tasks
+
+> Argo Workflows Stars - Open source container-native workflow engine for getting work done on Kubernetes
+
+> Arvados Stars - Open Source data and workflow management platform with emphasis on reproducibily, scale, and secure data sharing, deployable on cloud and HPC.
+
+> Azkaban Stars - Batch workflow job scheduler created at LinkedIn to run Hadoop jobs.
+
+> Brigade Stars - Brigade is a tool for running scriptable, automated tasks in the cloud — as part of your Kubernetes cluster.
+
+> Bytechef Stars - Open-source, low-code, extendable API integration & workflow automation platform
+
+> CabloyJS Stars - A Node.js full-stack framework with workflow engine, based on koa + egg + vue + framework7.
+
+> Cadence Stars - An orchestration engine to execute asynchronous long-running business logic developed by Uber Engineering.
+
+> Camunda Stars - BPMN-based workflow engine that can be embedded as java library (e.g. Spring Boot) or used standalone, including a graphical modeler and operations tooling.
+
+> CDS Stars - Enterprise-grade continuous delivery & DevOps automation open source platform developped by OVHcloud.
+
+> CGraph Stars - A simple-used and cross-platform DAG framework based on C++17 without any 3rd-party.
+
+> CloudSlang Stars - Workflow engine to automate your DevOps use cases.
+
+> Conductor Stars - Conductor is a microservices orchestration platform that enables developers to build scalable, durable application flows. Conductor workflows are language and framework-agnostic. The Conductor is maintained by Orkes and a team of open-source contributors.
+
+> Copper Stars - A high performance Java workflow engine.
+
+> Couler Stars - Unified interface for constructing and managing workflows on different workflow engines, such as Argo Workflows, Tekton Pipelines, and Apache Airflow.
+
+> Covalent Stars - Workflow orchestration platform for quantum and high performance computing.
+
+> Cromwell Stars - Workflow engine written in Scala and designed for simplicity and scalability. Executes workflows written in WDL or CWL.
+
+> Cylc Stars - Workflow engine that orchestrates complex distributed workflows with cyclic or acyclic graphs. It was originally designed to automate weather forecasting systems at NIWA.
+
+> Dagu Stars - A No-code workflow executor. It executes workflows from declarative YAML definitions.
+
+> Dagster Stars - Data orchestrator for machine learning, analytics, and ETL.
+
+> Dapr Workflows Stars - Author and execute durable & long-running Workflow-as-code at scale in Python, Javascript, .NET, Java & Go. Based on the Open-source Durable Task Framework.
+
+> Didact Stars - The open source .NET job orchestrator.
+
+> DigDag Stars - Digdag is a simple tool that helps you to build, run, schedule, and monitor complex pipelines of tasks.
+
+> DolphinScheduler Stars Apache DolphinScheduler is a distributed and extensible workflow scheduler platform with powerful DAG visual interfaces, dedicated to solving complex job dependencies in the data pipeline and providing various types of jobs available out of box.
+
+> elsa-workflows Stars - A .NET Standard 2.0 Workflows Library.
+
+> easy-rules Stars - The simple, stupid rules engine for Java.
+
+> FireWorks Stars - FireWorks stores, executes, and manages calculation workflows.
+
+> Fission Workflows Stars - A high-perfomant workflow engine for serverless functions on Kubernetes.
+
+> Flor Stars - A workflow engine written in Ruby.
+
+> Flyte Stars - A container-native, type-safe workflow and pipelines platform optimized for large scale processing and machine learning written in Golang. Workflows can be written in any language, with out of the box support for Python.
+
+> ForML Stars - A development framework and MLOps platform for the lifecycle management of data science projects.
+
+> Galaxy Project Stars - Galaxy is a scientific tool and workflow system that facilitates reproducibility and transparency by providing a graphical user interface (GUI), a multitude of computational dataset tools, a rich API, and a robust scientific community.
+
+> Goflow Stars - A simple but powerful DAG scheduler and dashboard, written in Go.
+
+> Huginn Stars - Create agents that monitor and act on your behalf. Your agents are standing by!
+
+> Imixs-Workflow Stars - A powerful human-centric Workflow Engine based on the BPMN 2.0 standard.
+
+> Inngest Stars - An event-driven workflow engine that combines event streams, queues, and durable execution into a single reliability layer.
+
+> iWF Stars - iWF is a WorkflowAsCode API orchestration platform offering an orchestration coding framework and service for building resilient, fault-tolerant, scalable long-running processes.
+
+> Kestra Stars - Open source data orchestration and scheduling platform with declarative syntax.
+
+> Kiba Stars - Data processing & ETL framework for Ruby
+
+> Kubeflow pipelines Stars - Kubeflow pipelines are reusable end-to-end ML workflows built using the Kubeflow Pipelines SDK.
+
+> Laravel Workflow Stars - Laravel Workflow is a durable workflow engine that allows users to track job status, orchestrate microservices and write long running persistent distributed workflows in PHP powered by Laravel Queues.
+
+> Petri Flow Stars - Petri Net workflow engine for Ruby.
+
+> Martian Stars - An elegant, powerful language and framework for building high-performance computational pipelines.
+
+> Metaflow Stars - Metaflow is a human-friendly Python/R library that helps scientists and engineers build and manage real-life data science projects.
+
+> MassTransitStars - .Net Messaging system with Saga Workflow Support
+
+> Mistral Stars - Workflow service, in OpenStack foundation.
+
+> N8n-io Stars - Free and open node based Workflow Automation Tool. Easily automate tasks across different services.
+
+> Nextflow Stars - Develop container-backed, reproducible workflows portable across computational platforms including local, HPC schedulers, AWS Batch, Google Genomics Pipelines, and Kubernetes.
+
+> Node-RED Stars - Node-RED is a NodeJS based workflow tool featuring a browser based editor for wiring together hardware devices, APIs and online services in new and interesting ways.
+
+> Oozie Stars - Workflow Scheduler for Hadoop.
+
+> Pallets Stars - Simple and reliable workflow engine, written in Ruby
+
+> Parsl Stars - Python framework for workflow orchestration and parallelization based on a dynamic graph of tasks and their data dependencies.
+
+> Pegasus Stars - Automate, recover, and debug scientific computations.
+
+> Piper Stars - A distributed Java workflow engine designed to be dead simple.
+
+> Platformeco - Technology platform, allows Product & Project teams easily build micro services using drag & drop UI and operate it, within out of the box cloud and CI/CD tools with deep tracing & monitoring.
+
+> Plynx Stars - Interactive platform with drag and drop interface for building and deploying portable and scalable end-to-end data driven workflows.
+
+> Popper Stars - Lightweight, YAML based container-native workflow engine supporting Docker, Singularity, Vagrant VMs with Docker daemon in VM, and local host.
+
+> Prefect Stars - Prefect is a new workflow management system, designed for modern infrastructure and powered by the open-source Prefect Core workflow engine
+
+> Restate Stars - A low-latency durable execution engine for workflows, event-driven handlers, transactional state machines, and stateful orchestration. Fully self-contained in a single binary. Supports programs in TypeScript, Java/Kotlin, Go, Python, and Rust.
+
+> River Pro Stars - Postgres-backed workflow engine and web dashboard for the River background queue, written in Go.
+
+> RunDeck Stars - Job Scheduler and Runbook Automation.
+
+> Snakemake Stars - Workflow management system to create reproducible and scalable data analyses; python-based inspired by GNU Make.
+
+> StackStorm Stars - Robust Automation Engine providing Sensors, Triggers, Rules, Workflows, and Actions. StackStorm is how you "glue" your applications together.
+
+> StepWise Stars - A code-first, event-driven workflow framework for .NET Developers.
+
+> Temporal Stars - Temporal is a microservice orchestration platform which enables developers to build scalable applications without sacrificing productivity or reliability. Temporal is a mature technology, a fork of Uber's Cadence. Temporal is being developed by Temporal Technologies, a startup by the creators of Cadence.
+
+> Titanoboa Stars - Titanoboa is a platform for creating complex workflows on JVM.
+
+> Tork Stars - Tork is a very lightweight workflow engine written in Golang.
+
+> uTask Stars - Automation engine that models and executes business processes declared in yaml.
+
+> Wexflow Stars .NET Workflow Engine and Automation Platform.
+
+> Windmill Stars - Turn scripts into workflows and UIs. Open-source alternative to Airplane and Retool.
+
+> Workflow Engine - A lightweight .NET and Java workflow engine.
+
+> YAWL Stars - (Yet Another Workflow Language), Java-based, handles complex data transformations, and full integration with organizational resources and external Web Services.
+
+> Zeebe Stars - A horizontally scalable, cloud-native workflow engine that executes BPMN models and is best operated on Kubernetes; polyglot clients connect via gRPC or available language clients.
+
+> BPM Suite
+
+> Activiti Stars - Activiti is a leading lightweight, java-centric open-source BPMN engine supporting real-world process automation needs.
+
+> Activiti Cloud - is now the new generation of business automation platform offering a set of cloud native building blocks designed to run on distributed infrastructures.
+
+> Bonita Stars - BPMN engine that comes with an optional development environment, a designer, an optional user interface and administrative tools.
+
+> Flowable Stars - The Flowable project provides a core set of open source business process engines that are compact and highly efficient. They provide a workflow and Business Process Management (BPM) platform for developers, system admins and business users.
+
+> jBPM Stars - The core of jBPM is a light-weight, extensible workflow engine written in pure Java that allows you to execute business processes using the latest BPMN 2.0 specification.
+
+> SAAS
+
+> AWS Step Functions - Clear workflows for modern applications.
+
+> Azure Logic Apps - Built on a containerized runtime, deploy and run anywhere to increase scale and portability while automating business-critical workflows.
+
+> Braze - Power customer-centric interactions between consumers and brands in real-time.
+
+> Camunda Cloud - A workflow service executing BPMN, providing various language clients, based on the open source project Zeebe Stars.
+
+> Codehooks.io – Serverless backend with a workflow engine for automation and AI, supporting LLM-generated workflows via the codehooks-js NPM package.
+
+> Corezoid - Hyperautomation engine.
+
+> Embed Workflow - Simple native workflow builder for your end-users
+
+> Orkes Conductor - Orkes provides Netflix Conductor as a cloud services across all the major cloud providers with enterprise features such as security, integrations and Visual workflow code editor.
+
+> Google Cloud Workflows - Combine Google Cloud services and APIs to build reliable applications, process automation, and data and machine learning pipelines.
+
+> Inngest - A scalable, event-driven durable execution platform
+
+> Zenaton - Workflow engine for data processes and background jobs available in PHP, Node.js, Python and Ruby.
+
+> Library (embedded usage)
+
+> Automatiko Stars - a toolkit to build services and functions based on workflows (primarily BPMN2). Introduces and implements concepts: workflow as a service, workflow as a function and workflow as a function flow.
+
+> C++ Workflow Stars - C++ Parallel Computing and Asynchronous Networking Engine.
+
+> Camunda Stars - BPMN-based workflow engine that can be embedded as java library (e.g. Spring Boot) or used standalone, including a graphical modeler and operations tooling.
+
+> Captain Stars - Distributed, light-weight java workflow engine for a microservice architecture.
+
+> CoreWF Stars - WF runtime ported to work on .NET Core
+
+> Dagger - Dagger is a distributed, horizontally scalable, durable, and highly available orchestration engine in python based on Faust-Streaming for running millions of long running tasks with direct integration with Kafka
+
+> Django River Stars - Django workflow library that supports on the fly changes for states, transitions, and authorizations
+
+> DBOS Transact Stars - DBOS typescript library for writing durable and transactional workflows.
+
+> Durable Task Framework Stars - Durable Task Framework (DTFx) is a library that allows users to write long running persistent workflows in C#.
+
+> go-taskflowStars - A pure go General-purpose Task-parallel Programming Framework with integrated visualizer and profiler
+
+> Kogito Stars - Cloud-native business automation technology. Embeddable to produce JVM or GraalVM artifacts or interacted through Kafka & REST APIs
+
+> Luigi Stars - Python module that helps you build complex pipelines of batch jobs.
+
+> nFlow Stars - Embeddable JVM-based workflow engine with high availability, fault tolerance, and support for multiple databases. Additional libraries are provided for visualization and REST API.
+
+> Oban - Robust job processing in Elixir, backed by modern PostgreSQL or SQLite3
+
+> SciPipe Stars - A Go library for writing pipelines of Bash commands or Go-code using the dataflow / flow-based programming paradigm.
+
+> SpiffWorkflow Stars - SpiffWorkflow - a BPMN 2.0 workflow engine implemented in pure Python.
+
+> Symfony Workflow Stars - Symfony Workflow component - The Workflow component provides tools for managing a workflow or finite state machine in PHP.
+
+> Unify Flowret Stars - A lightweight Java based workflow / orchestration engine.
+
+> Viewflow Stars - Reusable workflow library that helps organize people collaboration business logic in django applications.
+
+> Workflow Core Stars - Lightweight workflow engine for .NET Standard
+
+> WorkflowEngine.NET Stars - WorkflowEngine.NET - component that adds workflow in your application. It can be fully integrated into your application, or be in the form of a specific service (such as a web service)
+
+> About
+
+> A curated list of awesome open source workflow engines
+
+> 
+
+> Resources
+
+>  Readme
+
+> License
+
+>  Apache-2.0 license
+
+> Contributing
+
+>  Contributing
+
+>  Activity
+
+> Stars
+
+>  7.6k stars
+
+> Watchers
+
+>  244 watching
+
+> Forks
+
+>  733 forks
+
+> Report repository
+
+> Releases
+
+> No releases published
+
+> Packages
+
+> No packages published
+
+> Contributors
+
+> 98
+
+> @meirwah
+
+> @crazybber
+
+> @PiotrIw
+
+> @jmettraux
+
+> @berndruecker
+
+> @jsyrjala
+
+> @crimeminister
+
+> @canuto
+
+> @gchauvet
+
+> @kinow
+
+> @jorisros
+
+> @rabernat
+
+> @aelassas
+
+> @mbarrien
+
+> + 84 contributors
+
+> Deployments
+
+> 93
+
+>  github-pages 4 months ago
+
+> + 92 deployments
+
+> Footer
+
+> © 2026 GitHub, Inc.
+
+> Footer navigation
+
+> Terms
+
+> Privacy
+
+> Security
+
+> Status
+
+> Community
+
+> Docs
+
+> Contact
+
+> Manage cookies
+
 > Do not share my personal information
 
 ### Assistant
@@ -2028,234 +2242,462 @@ canonical_ref: ""
 > Say **A, B, or C** (you can stack them, e.g., “A then B”).
 
 ### User
-> this is form antigravity anything you need to add Implementation Plan: Create tools.json
-> This plan outlines the creation of a centralized 
-> tools.json
->  file in the _admin repository to list all tools used for development and operations across the user's workspaces.
-> 
-> Proposed Changes
-> [Admin Component]
-> [MODIFY] 
-> tools.json
-> I will populate 
-> tools.json
->  with a categorized list of tools, including descriptions and use cases where applicable.
-> 
-> Categories:
-> 
-> Languages & Runtimes
-> 
-> Python (3.11, venv, pip)
-> Node.js (LTS, npm, npx)
-> TypeScript
-> PowerShell / Bash
-> Frontend Frameworks & Build Tools
-> 
-> Next.js 14
-> React 18
-> Tailwind CSS
-> Vite
-> VitePress
-> Quartz
-> Axios / Lucide React / React Dropzone / React PDF
-> Backend & APIs
-> 
-> FastAPI
-> Pydantic / Uvicorn
-> Supabase (PostgreSQL, Auth, Edge Functions)
-> Firestore (NoSQL Real-time)
-> BigQuery (Legal Database)
-> ReportLab (PDF Generation)
-> PyPDF2 / python-docx (Document Parsing)
-> AI Models & Services
-> 
-> Google Gemini 2.5 Flash
-> Google Veo 3 (Video Generation)
-> Google Imagen 4 (Image Generation)
-> ElevenLabs (TTS)
-> Cloud & Infrastructure
-> 
-> Google Cloud Platform (Cloud Run, Pub/Sub, Cloud Storage, Logging, Monitoring)
-> Cloudflare (Zero Trust, Pages)
-> Terraform (IaC)
-> Docker (Containerization)
-> DevOps & Productivity Tools
-> 
-> Git / GitHub
-> ESLint / Prettier
-> Obsidian (Knowledge Management)
-> Notion (Project Management/Integration)
-> Tesseract / Redis (OCR/Caching)
-> Publishing & Operations
-> 
-> Amazon KDP
-> Draft2Digital
-> Verification Plan
-> Manual Verification
-> Review the 
-> tools.json
->  file to ensure all tools are correctly categorized and spelled.
-> Verify the JSON structure is valid. {
->   "development_and_operations_tools": {
->     "languages_and_runtimes": [
->       {
->         "name": "Python",
->         "version": "3.11",
->         "tools": ["venv", "pip"],
->         "description": "Primary backend language used across microservices."
->       },
->       {
->         "name": "Node.js",
->         "version": "LTS",
->         "tools": ["npm", "npx"],
->         "description": "Runtime for frontend and JavaScript-based tooling."
->       },
->       {
->         "name": "TypeScript",
->         "description": "Used for type-safe frontend and backend development."
->       },
->       {
->         "name": "Shell Scripting",
->         "tools": ["PowerShell", "Bash"],
->         "description": "Automation scripts for deployment and environment setup."
->       }
->     ],
->     "frontend_frameworks_and_build_tools": [
->       {
->         "name": "Next.js 14",
->         "description": "App Router, SSR, and React-based framework for web apps."
->       },
->       {
->         "name": "React 18",
->         "description": "UI component library."
->       },
->       {
->         "name": "Tailwind CSS",
->         "description": "Utility-first CSS framework for responsive styling."
->       },
->       {
->         "name": "Vite",
->         "description": "Fast build tool and dev server."
->       },
->       {
->         "name": "VitePress",
->         "description": "Vue-powered static site generator for documentation."
->       },
->       {
->         "name": "Quartz",
->         "description": "Obsidian-friendly static site generator."
->       },
->       {
->         "name": "Frontend Libraries",
->         "tools": ["Axios", "Lucide React", "React Dropzone", "React PDF"],
->         "description": "Core libraries for UI features and API communication."
->       }
->     ],
->     "backend_and_apis": [
->       {
->         "name": "FastAPI",
->         "description": "High-performance Python API framework."
->       },
->       {
->         "name": "Pydantic & Uvicorn",
->         "description": "Data validation and ASGI server for FastAPI."
->       },
->       {
->         "name": "Supabase",
->         "components": ["PostgreSQL", "Auth", "Edge Functions"],
->         "description": "Backend as a Service used for database and authentication."
->       },
->       {
->         "name": "Firestore",
->         "description": "NoSQL real-time database from Google Cloud."
->       },
->       {
->         "name": "BigQuery",
->         "description": "Data warehouse used for legal database storage and querying."
->       },
->       {
->         "name": "ReportLab",
->         "description": "Library for dynamic PDF generation."
->       },
->       {
->         "name": "Document Parsers",
->         "tools": ["PyPDF2", "python-docx"],
->         "description": "Libraries for extracting content from PDF and Word files."
->       }
->     ],
->     "ai_models_and_services": [
->       {
->         "name": "Google Gemini 2.5 Flash",
->         "description": "Core LLM for orchestration, extraction, and debate generation."
->       },
->       {
->         "name": "Google Veo 3",
->         "description": "AI model for cinematic video generation."
->       },
->       {
->         "name": "Google Imagen 4",
->         "description": "AI model for image generation and visual assets."
->       },
->       {
->         "name": "ElevenLabs",
->         "description": "Text-to-Speech (TTS) service for audio narration."
->       }
->     ],
->     "cloud_and_infrastructure": [
->       {
->         "name": "Google Cloud Platform",
->         "services": ["Cloud Run", "Pub/Sub", "Cloud Storage", "Logging", "Monitoring"],
->         "description": "Main hosting and infrastructure provider."
->       },
->       {
->         "name": "Cloudflare",
->         "services": ["Zero Trust", "Pages"],
->         "description": "Network security, access control, and static site hosting."
->       },
->       {
->         "name": "Terraform",
->         "description": "Infrastructure as Code (IaC) for GCP resources."
->       },
->       {
->         "name": "Docker",
->         "description": "Containerization platform for microservices."
->       }
->     ],
->     "devops_and_productivity": [
->       {
->         "name": "Git & GitHub",
->         "description": "Version control and source code hosting."
->       },
->       {
->         "name": "Linting & Formatting",
->         "tools": ["ESLint", "Prettier"],
->         "description": "Code quality and consistency tools."
->       },
->       {
->         "name": "Obsidian",
->         "description": "Personal knowledge base and content creation."
->       },
->       {
->         "name": "Notion",
->         "description": "Project management and workspace integration."
->       },
->       {
->         "name": "System Services",
->         "tools": ["Tesseract OCR", "Redis"],
->         "description": "OCR processing and caching services."
->       }
->     ],
->     "publishing_and_operations": [
->       {
->         "name": "Amazon KDP",
->         "description": "Kindle Direct Publishing for e-books and paperbacks."
->       },
->       {
->         "name": "Draft2Digital",
->         "description": "Digital book distribution service."
->       }
->     ]
->   }
+> this is form antigravity anything you need to add Implementation Plan: Create tools.json
+
+> This plan outlines the creation of a centralized 
+
+> tools.json
+
+>  file in the _admin repository to list all tools used for development and operations across the user's workspaces.
+
+> 
+
+> Proposed Changes
+
+> [Admin Component]
+
+> [MODIFY] 
+
+> tools.json
+
+> I will populate 
+
+> tools.json
+
+>  with a categorized list of tools, including descriptions and use cases where applicable.
+
+> 
+
+> Categories:
+
+> 
+
+> Languages & Runtimes
+
+> 
+
+> Python (3.11, venv, pip)
+
+> Node.js (LTS, npm, npx)
+
+> TypeScript
+
+> PowerShell / Bash
+
+> Frontend Frameworks & Build Tools
+
+> 
+
+> Next.js 14
+
+> React 18
+
+> Tailwind CSS
+
+> Vite
+
+> VitePress
+
+> Quartz
+
+> Axios / Lucide React / React Dropzone / React PDF
+
+> Backend & APIs
+
+> 
+
+> FastAPI
+
+> Pydantic / Uvicorn
+
+> Supabase (PostgreSQL, Auth, Edge Functions)
+
+> Firestore (NoSQL Real-time)
+
+> BigQuery (Legal Database)
+
+> ReportLab (PDF Generation)
+
+> PyPDF2 / python-docx (Document Parsing)
+
+> AI Models & Services
+
+> 
+
+> Google Gemini 2.5 Flash
+
+> Google Veo 3 (Video Generation)
+
+> Google Imagen 4 (Image Generation)
+
+> ElevenLabs (TTS)
+
+> Cloud & Infrastructure
+
+> 
+
+> Google Cloud Platform (Cloud Run, Pub/Sub, Cloud Storage, Logging, Monitoring)
+
+> Cloudflare (Zero Trust, Pages)
+
+> Terraform (IaC)
+
+> Docker (Containerization)
+
+> DevOps & Productivity Tools
+
+> 
+
+> Git / GitHub
+
+> ESLint / Prettier
+
+> Obsidian (Knowledge Management)
+
+> Notion (Project Management/Integration)
+
+> Tesseract / Redis (OCR/Caching)
+
+> Publishing & Operations
+
+> 
+
+> Amazon KDP
+
+> Draft2Digital
+
+> Verification Plan
+
+> Manual Verification
+
+> Review the 
+
+> tools.json
+
+>  file to ensure all tools are correctly categorized and spelled.
+
+> Verify the JSON structure is valid. {
+
+>   "development_and_operations_tools": {
+
+>     "languages_and_runtimes": [
+
+>       {
+
+>         "name": "Python",
+
+>         "version": "3.11",
+
+>         "tools": ["venv", "pip"],
+
+>         "description": "Primary backend language used across microservices."
+
+>       },
+
+>       {
+
+>         "name": "Node.js",
+
+>         "version": "LTS",
+
+>         "tools": ["npm", "npx"],
+
+>         "description": "Runtime for frontend and JavaScript-based tooling."
+
+>       },
+
+>       {
+
+>         "name": "TypeScript",
+
+>         "description": "Used for type-safe frontend and backend development."
+
+>       },
+
+>       {
+
+>         "name": "Shell Scripting",
+
+>         "tools": ["PowerShell", "Bash"],
+
+>         "description": "Automation scripts for deployment and environment setup."
+
+>       }
+
+>     ],
+
+>     "frontend_frameworks_and_build_tools": [
+
+>       {
+
+>         "name": "Next.js 14",
+
+>         "description": "App Router, SSR, and React-based framework for web apps."
+
+>       },
+
+>       {
+
+>         "name": "React 18",
+
+>         "description": "UI component library."
+
+>       },
+
+>       {
+
+>         "name": "Tailwind CSS",
+
+>         "description": "Utility-first CSS framework for responsive styling."
+
+>       },
+
+>       {
+
+>         "name": "Vite",
+
+>         "description": "Fast build tool and dev server."
+
+>       },
+
+>       {
+
+>         "name": "VitePress",
+
+>         "description": "Vue-powered static site generator for documentation."
+
+>       },
+
+>       {
+
+>         "name": "Quartz",
+
+>         "description": "Obsidian-friendly static site generator."
+
+>       },
+
+>       {
+
+>         "name": "Frontend Libraries",
+
+>         "tools": ["Axios", "Lucide React", "React Dropzone", "React PDF"],
+
+>         "description": "Core libraries for UI features and API communication."
+
+>       }
+
+>     ],
+
+>     "backend_and_apis": [
+
+>       {
+
+>         "name": "FastAPI",
+
+>         "description": "High-performance Python API framework."
+
+>       },
+
+>       {
+
+>         "name": "Pydantic & Uvicorn",
+
+>         "description": "Data validation and ASGI server for FastAPI."
+
+>       },
+
+>       {
+
+>         "name": "Supabase",
+
+>         "components": ["PostgreSQL", "Auth", "Edge Functions"],
+
+>         "description": "Backend as a Service used for database and authentication."
+
+>       },
+
+>       {
+
+>         "name": "Firestore",
+
+>         "description": "NoSQL real-time database from Google Cloud."
+
+>       },
+
+>       {
+
+>         "name": "BigQuery",
+
+>         "description": "Data warehouse used for legal database storage and querying."
+
+>       },
+
+>       {
+
+>         "name": "ReportLab",
+
+>         "description": "Library for dynamic PDF generation."
+
+>       },
+
+>       {
+
+>         "name": "Document Parsers",
+
+>         "tools": ["PyPDF2", "python-docx"],
+
+>         "description": "Libraries for extracting content from PDF and Word files."
+
+>       }
+
+>     ],
+
+>     "ai_models_and_services": [
+
+>       {
+
+>         "name": "Google Gemini 2.5 Flash",
+
+>         "description": "Core LLM for orchestration, extraction, and debate generation."
+
+>       },
+
+>       {
+
+>         "name": "Google Veo 3",
+
+>         "description": "AI model for cinematic video generation."
+
+>       },
+
+>       {
+
+>         "name": "Google Imagen 4",
+
+>         "description": "AI model for image generation and visual assets."
+
+>       },
+
+>       {
+
+>         "name": "ElevenLabs",
+
+>         "description": "Text-to-Speech (TTS) service for audio narration."
+
+>       }
+
+>     ],
+
+>     "cloud_and_infrastructure": [
+
+>       {
+
+>         "name": "Google Cloud Platform",
+
+>         "services": ["Cloud Run", "Pub/Sub", "Cloud Storage", "Logging", "Monitoring"],
+
+>         "description": "Main hosting and infrastructure provider."
+
+>       },
+
+>       {
+
+>         "name": "Cloudflare",
+
+>         "services": ["Zero Trust", "Pages"],
+
+>         "description": "Network security, access control, and static site hosting."
+
+>       },
+
+>       {
+
+>         "name": "Terraform",
+
+>         "description": "Infrastructure as Code (IaC) for GCP resources."
+
+>       },
+
+>       {
+
+>         "name": "Docker",
+
+>         "description": "Containerization platform for microservices."
+
+>       }
+
+>     ],
+
+>     "devops_and_productivity": [
+
+>       {
+
+>         "name": "Git & GitHub",
+
+>         "description": "Version control and source code hosting."
+
+>       },
+
+>       {
+
+>         "name": "Linting & Formatting",
+
+>         "tools": ["ESLint", "Prettier"],
+
+>         "description": "Code quality and consistency tools."
+
+>       },
+
+>       {
+
+>         "name": "Obsidian",
+
+>         "description": "Personal knowledge base and content creation."
+
+>       },
+
+>       {
+
+>         "name": "Notion",
+
+>         "description": "Project management and workspace integration."
+
+>       },
+
+>       {
+
+>         "name": "System Services",
+
+>         "tools": ["Tesseract OCR", "Redis"],
+
+>         "description": "OCR processing and caching services."
+
+>       }
+
+>     ],
+
+>     "publishing_and_operations": [
+
+>       {
+
+>         "name": "Amazon KDP",
+
+>         "description": "Kindle Direct Publishing for e-books and paperbacks."
+
+>       },
+
+>       {
+
+>         "name": "Draft2Digital",
+
+>         "description": "Digital book distribution service."
+
+>       }
+
+>     ]
+
+>   }
+
 > }
 
 ### Assistant
@@ -3211,326 +3653,646 @@ canonical_ref: ""
 > If you don’t answer, my default recommendation is: **global ID namespace**, with `entity_type` used to categorize—simpler integrity rules, fewer collisions, less confusion.
 
 ### User
-> ok so we dont have a qirepo yet for flows, should i make one call flows and we can have flo_n8n repo. then update and put these sepearte by wht ethey are we should have a final outline and content for qios admin repo, the flows repo and the setup Go it is. Here’s the **practical, enforceable** way to version n8n workflows, plus a **better qios_admin repo layout**, plus a **QiD CLI cloud plan** that won’t turn into a science project.
-> 
-> ---
-> 
-> # 1) n8n Workflow Versioning Policy (so nothing is trapped in the UI)
-> 
-> ## Non-negotiable goals
-> 
-> * You can **rebuild n8n from scratch** using Git.
-> * You can diff workflow changes.
-> * You can track “what changed, when, and why.”
-> * You can roll back quickly.
-> 
-> ## The 3 artifacts you will version-control
-> 
-> 1. **Workflow exports** (JSON)
-> 2. **Flow Specs** (Markdown)
-> 3. **Credential map** (NOT secrets; just names/keys required)
-> 
-> ### Important: do NOT export secrets into Git
-> 
-> * Secrets stay in **Railway env vars** and/or n8n credentials store.
-> * Git contains **structure + logic**, not credentials.
-> 
-> ---
-> 
-> ## Workflow naming standard (in n8n UI)
-> 
-> Use this exact format:
-> 
-> **`QIOS | <Domain> | <Trigger> -> <Outcome>`**
-> 
-> Examples:
-> 
-> * `QIOS | Docs | Paperless -> Triage -> Log -> Notify`
-> * `QIOS | Finance | Daily Cash Checkpoint -> Log -> Alert`
-> * `QIOS | CRM | New Lead -> Normalize -> Create Tasks -> Notify`
-> 
-> ### Tags (use n8n tags if available)
-> 
-> * `QIOS`
-> * `ENV:PROD` / `ENV:DEV`
-> * `OWNER:Cody`
-> 
-> ---
-> 
-> ## Export cadence
-> 
-> * **After any meaningful change:** export immediately.
-> * **Daily at end of day (if you changed anything):** export everything.
-> * **Weekly:** baseline export + quick audit.
-> 
-> ## Export method
-> 
-> There are two ways:
-> 
-> ### Option A (best): Use n8n CLI/API export (automated)
-> 
-> * Run a scheduled job (Railway cron or n8n internal schedule) that:
-> 
->   * exports workflows
->   * commits to GitHub (using a bot token)
->   * pushes to `main`
-> 
-> This is the ideal state.
-> 
-> ### Option B (acceptable now): Manual export from UI (fast to start)
-> 
-> * Export workflow JSON from n8n UI
-> * Drop into repo and commit with a standard message
-> 
-> This is the “start today” approach.
-> 
-> ---
-> 
-> ## Git repo structure for n8n exports
-> 
-> Put this in **qios_admin** or a sibling repo called **qios_n8n**. I recommend sibling to keep admin docs clean, but either works.
-> 
-> ```
-> qios_n8n/
->   workflows/
->     PROD/
->       QIOS__Docs__Paperless_Triage_Log_Notify.json
->       QIOS__Finance__Daily_Cash_Checkpoint_Log_Alert.json
->     DEV/
->   specs/
->     2026-01-24_qios_flow__docs__paperless_triage.md
->     2026-01-24_qios_flow__finance__daily_cash_checkpoint.md
->   credential_requirements/
->     credential_map.json
->   CHANGELOG.md
->   README.md
-> ```
-> 
-> ### Filename format for exports
-> 
-> Use stable filenames (no random IDs in name):
-> 
-> * `QIOS__<Domain>__<ShortName>.json`
-> 
-> ---
-> 
-> ## Commit message standard
-> 
-> * `flows: add <name>`
-> * `flows: update <name> (reason)`
-> * `flows: fix <name> (bug)`
-> * `flows: refactor <name> (no behavior change)`
-> 
-> If you do nothing else, **this alone** makes your history usable.
-> 
-> ---
-> 
-> ## Credential map (no secrets)
-> 
-> Create a `credential_map.json` like:
-> 
-> ```json
-> {
->   "required_credentials": [
->     { "name": "railway_postgres", "type": "postgres", "used_by": ["QIOS | *"] },
->     { "name": "zoho_oauth", "type": "oauth2", "used_by": ["QIOS | CRM | *"] },
->     { "name": "google_oauth", "type": "oauth2", "used_by": ["QIOS | Docs | *"] }
->   ],
->   "env_vars": [
->     "N8N_ENCRYPTION_KEY",
->     "WEBHOOK_SHARED_SECRET",
->     "GITHUB_TOKEN_FOR_EXPORT_BOT"
->   ]
-> }
-> ```
-> 
-> This keeps you from “mystery credential” hell.
-> 
-> ---
-> 
-> # 2) Upgraded qios_admin repo layout (Ops Constitution done right)
-> 
-> Your current admin repo should include **governance + standards + templates + registries**.
-> 
-> ### Recommended structure
-> 
-> ```
-> qios_admin/
->   README.md
->   stack.json
->   tools.json
-> 
->   doctrine/
->     2026-01-24_qios_logic_placement_doctrine.md
->     2026-01-24_qios_v1_governance_declaration.md
-> 
->   protocols/
->     workflow_versioning_policy.md
->     secrets_and_access_policy.md
->     incident_response.md
->     backup_and_restore.md
->     naming_standards.md
-> 
->   registries/
->     workflows_registry.json
->     clients_registry.json
->     domains_registry.json
->     ids_registry.json
-> 
->   templates/
->     flow_spec_template.md
->     decision_template.md
->     runbook_template.md
-> 
->   decisions/
->     2026-01-24_adR_qios_runtime_railway.md
-> ```
-> 
-> ### Why these extra folders matter
-> 
-> * **doctrine/** = philosophy and guardrails
-> * **protocols/** = how-to rules
-> * **registries/** = the “lists that must stay true” (workflows, domains, ID systems)
-> * **templates/** = makes everything repeatable
-> * **decisions/** = prevents “why did we do this?” spirals
-> 
-> ---
-> 
-> # 3) QiD CLI in the cloud (QiDecimal IDs, integrity, automation)
-> 
-> You’re right: **QiD must be callable from workflows** so IDs are assigned consistently and verifiably.
-> 
-> ## What QiD should do (minimum viable scope)
-> 
-> * Generate a **QiDecimal ID** for a file/object
-> * Apply it to:
-> 
->   * filename prefix
->   * metadata manifest
-> * Enforce immutability rules:
-> 
->   * ID never changes once assigned
->   * collisions prevented
-> * Produce a verifiable “integrity line” (hash + ID mapping)
-> 
-> ## The cleanest cloud pattern (low-ops, works with Railway + n8n)
-> 
-> ### Option 1 (recommended): QiD as a tiny HTTP service on Railway
-> 
-> * A small Python FastAPI service (“qidsvc”)
-> * Exposes endpoints:
-> 
->   * `POST /id/allocate`
->   * `POST /file/label`
->   * `POST /manifest/update`
-> * Stores ID allocations in **Railway Postgres** (authoritative)
-> * Called by n8n via HTTP nodes
-> 
-> **Pros:** simplest to integrate with n8n; lives in same roof (Railway).
-> **Cons:** you’re running one more service (still low ops on Railway).
-> 
-> ### Option 2: QiD as an n8n “Code” step (not preferred for integrity)
-> 
-> You could generate IDs inside n8n code nodes, but you lose:
-> 
-> * centralized collision control
-> * clean unit tests
-> * reuse across systems
-> 
-> Use this only for prototypes.
-> 
-> ---
-> 
-> ## QiD Data Model (in Railway Postgres)
-> 
-> You will need at least these tables:
-> 
-> 1. `qid_allocations`
-> 
-> * `qid` (unique)
-> * `entity_type` (file, client, case, invoice, etc.)
-> * `entity_key` (external reference)
-> * `created_at`
-> * `created_by`
-> 
-> 2. `qid_objects`
-> 
-> * `object_id` (uuid)
-> * `qid` (fk)
-> * `canonical_name`
-> * `hash_sha256` (optional but recommended)
-> * `storage_ref` (path/url)
-> * `metadata_json`
-> * `updated_at`
-> 
-> This gives you integrity and traceability.
-> 
-> ---
-> 
-> ## How it connects to your workflow reality
-> 
-> Example flow:
-> 
-> 1. New doc arrives (Paperless / upload / email)
-> 2. n8n calls `qidsvc /id/allocate` with entity info
-> 3. qidsvc returns `qid`
-> 4. n8n:
-> 
->    * renames the object
->    * writes to manifest/log tables
->    * notifies you
-> 
-> That’s it. Clean, deterministic.
-> 
-> ---
-> 
-> # 4) What we should do next (sequenced, no detours)
-> 
-> ## Step 1: Create repos
-> 
-> * `qios_admin` (governance + registries + templates)
-> * `qios_n8n` (workflow exports + flow specs)
-> * `qidsvc` (QiD service, later)
-> 
-> If you refuse multiple repos, then:
-> 
-> * keep `qios_admin` and create subfolders `n8n/` and `services/qidsvc/`.
-> 
-> ## Step 2: Implement versioning policy immediately
-> 
-> Even with manual exports for now.
-> 
-> ## Step 3: Stand up QiD service on Railway
-> 
-> Minimal FastAPI service + Postgres tables + one endpoint.
-> 
-> ---
-> 
-> # 5) Two concrete files to add right now to qios_admin
-> 
-> ## `protocols/workflow_versioning_policy.md`
-> 
-> (If you want, I can generate the full Markdown exactly in your house style, but here’s the content direction.)
-> 
-> * naming
-> * export cadence
-> * repo structure
-> * credential map rules
-> * restore procedure
-> 
-> ## `registries/workflows_registry.json`
-> 
-> A simple registry listing official workflows, owners, status, and links to exported JSON filenames.
-> 
-> ---
-> 
-> ## One question (and it matters)
-> 
-> Do you want QiD IDs to be:
-> 
-> * **global across everything** (clients, files, cases, invoices), or
-> * **scoped by domain** (client IDs separate from file IDs, etc.)?
-> 
+> ok so we dont have a qirepo yet for flows, should i make one call flows and we can have flo_n8n repo. then update and put these sepearte by wht ethey are we should have a final outline and content for qios admin repo, the flows repo and the setup Go it is. Here’s the **practical, enforceable** way to version n8n workflows, plus a **better qios_admin repo layout**, plus a **QiD CLI cloud plan** that won’t turn into a science project.
+
+> 
+
+> ---
+
+> 
+
+> # 1) n8n Workflow Versioning Policy (so nothing is trapped in the UI)
+
+> 
+
+> ## Non-negotiable goals
+
+> 
+
+> * You can **rebuild n8n from scratch** using Git.
+
+> * You can diff workflow changes.
+
+> * You can track “what changed, when, and why.”
+
+> * You can roll back quickly.
+
+> 
+
+> ## The 3 artifacts you will version-control
+
+> 
+
+> 1. **Workflow exports** (JSON)
+
+> 2. **Flow Specs** (Markdown)
+
+> 3. **Credential map** (NOT secrets; just names/keys required)
+
+> 
+
+> ### Important: do NOT export secrets into Git
+
+> 
+
+> * Secrets stay in **Railway env vars** and/or n8n credentials store.
+
+> * Git contains **structure + logic**, not credentials.
+
+> 
+
+> ---
+
+> 
+
+> ## Workflow naming standard (in n8n UI)
+
+> 
+
+> Use this exact format:
+
+> 
+
+> **`QIOS | <Domain> | <Trigger> -> <Outcome>`**
+
+> 
+
+> Examples:
+
+> 
+
+> * `QIOS | Docs | Paperless -> Triage -> Log -> Notify`
+
+> * `QIOS | Finance | Daily Cash Checkpoint -> Log -> Alert`
+
+> * `QIOS | CRM | New Lead -> Normalize -> Create Tasks -> Notify`
+
+> 
+
+> ### Tags (use n8n tags if available)
+
+> 
+
+> * `QIOS`
+
+> * `ENV:PROD` / `ENV:DEV`
+
+> * `OWNER:Cody`
+
+> 
+
+> ---
+
+> 
+
+> ## Export cadence
+
+> 
+
+> * **After any meaningful change:** export immediately.
+
+> * **Daily at end of day (if you changed anything):** export everything.
+
+> * **Weekly:** baseline export + quick audit.
+
+> 
+
+> ## Export method
+
+> 
+
+> There are two ways:
+
+> 
+
+> ### Option A (best): Use n8n CLI/API export (automated)
+
+> 
+
+> * Run a scheduled job (Railway cron or n8n internal schedule) that:
+
+> 
+
+>   * exports workflows
+
+>   * commits to GitHub (using a bot token)
+
+>   * pushes to `main`
+
+> 
+
+> This is the ideal state.
+
+> 
+
+> ### Option B (acceptable now): Manual export from UI (fast to start)
+
+> 
+
+> * Export workflow JSON from n8n UI
+
+> * Drop into repo and commit with a standard message
+
+> 
+
+> This is the “start today” approach.
+
+> 
+
+> ---
+
+> 
+
+> ## Git repo structure for n8n exports
+
+> 
+
+> Put this in **qios_admin** or a sibling repo called **qios_n8n**. I recommend sibling to keep admin docs clean, but either works.
+
+> 
+
+> ```
+
+> qios_n8n/
+
+>   workflows/
+
+>     PROD/
+
+>       QIOS__Docs__Paperless_Triage_Log_Notify.json
+
+>       QIOS__Finance__Daily_Cash_Checkpoint_Log_Alert.json
+
+>     DEV/
+
+>   specs/
+
+>     2026-01-24_qios_flow__docs__paperless_triage.md
+
+>     2026-01-24_qios_flow__finance__daily_cash_checkpoint.md
+
+>   credential_requirements/
+
+>     credential_map.json
+
+>   CHANGELOG.md
+
+>   README.md
+
+> ```
+
+> 
+
+> ### Filename format for exports
+
+> 
+
+> Use stable filenames (no random IDs in name):
+
+> 
+
+> * `QIOS__<Domain>__<ShortName>.json`
+
+> 
+
+> ---
+
+> 
+
+> ## Commit message standard
+
+> 
+
+> * `flows: add <name>`
+
+> * `flows: update <name> (reason)`
+
+> * `flows: fix <name> (bug)`
+
+> * `flows: refactor <name> (no behavior change)`
+
+> 
+
+> If you do nothing else, **this alone** makes your history usable.
+
+> 
+
+> ---
+
+> 
+
+> ## Credential map (no secrets)
+
+> 
+
+> Create a `credential_map.json` like:
+
+> 
+
+> ```json
+
+> {
+
+>   "required_credentials": [
+
+>     { "name": "railway_postgres", "type": "postgres", "used_by": ["QIOS | *"] },
+
+>     { "name": "zoho_oauth", "type": "oauth2", "used_by": ["QIOS | CRM | *"] },
+
+>     { "name": "google_oauth", "type": "oauth2", "used_by": ["QIOS | Docs | *"] }
+
+>   ],
+
+>   "env_vars": [
+
+>     "N8N_ENCRYPTION_KEY",
+
+>     "WEBHOOK_SHARED_SECRET",
+
+>     "GITHUB_TOKEN_FOR_EXPORT_BOT"
+
+>   ]
+
+> }
+
+> ```
+
+> 
+
+> This keeps you from “mystery credential” hell.
+
+> 
+
+> ---
+
+> 
+
+> # 2) Upgraded qios_admin repo layout (Ops Constitution done right)
+
+> 
+
+> Your current admin repo should include **governance + standards + templates + registries**.
+
+> 
+
+> ### Recommended structure
+
+> 
+
+> ```
+
+> qios_admin/
+
+>   README.md
+
+>   stack.json
+
+>   tools.json
+
+> 
+
+>   doctrine/
+
+>     2026-01-24_qios_logic_placement_doctrine.md
+
+>     2026-01-24_qios_v1_governance_declaration.md
+
+> 
+
+>   protocols/
+
+>     workflow_versioning_policy.md
+
+>     secrets_and_access_policy.md
+
+>     incident_response.md
+
+>     backup_and_restore.md
+
+>     naming_standards.md
+
+> 
+
+>   registries/
+
+>     workflows_registry.json
+
+>     clients_registry.json
+
+>     domains_registry.json
+
+>     ids_registry.json
+
+> 
+
+>   templates/
+
+>     flow_spec_template.md
+
+>     decision_template.md
+
+>     runbook_template.md
+
+> 
+
+>   decisions/
+
+>     2026-01-24_adR_qios_runtime_railway.md
+
+> ```
+
+> 
+
+> ### Why these extra folders matter
+
+> 
+
+> * **doctrine/** = philosophy and guardrails
+
+> * **protocols/** = how-to rules
+
+> * **registries/** = the “lists that must stay true” (workflows, domains, ID systems)
+
+> * **templates/** = makes everything repeatable
+
+> * **decisions/** = prevents “why did we do this?” spirals
+
+> 
+
+> ---
+
+> 
+
+> # 3) QiD CLI in the cloud (QiDecimal IDs, integrity, automation)
+
+> 
+
+> You’re right: **QiD must be callable from workflows** so IDs are assigned consistently and verifiably.
+
+> 
+
+> ## What QiD should do (minimum viable scope)
+
+> 
+
+> * Generate a **QiDecimal ID** for a file/object
+
+> * Apply it to:
+
+> 
+
+>   * filename prefix
+
+>   * metadata manifest
+
+> * Enforce immutability rules:
+
+> 
+
+>   * ID never changes once assigned
+
+>   * collisions prevented
+
+> * Produce a verifiable “integrity line” (hash + ID mapping)
+
+> 
+
+> ## The cleanest cloud pattern (low-ops, works with Railway + n8n)
+
+> 
+
+> ### Option 1 (recommended): QiD as a tiny HTTP service on Railway
+
+> 
+
+> * A small Python FastAPI service (“qidsvc”)
+
+> * Exposes endpoints:
+
+> 
+
+>   * `POST /id/allocate`
+
+>   * `POST /file/label`
+
+>   * `POST /manifest/update`
+
+> * Stores ID allocations in **Railway Postgres** (authoritative)
+
+> * Called by n8n via HTTP nodes
+
+> 
+
+> **Pros:** simplest to integrate with n8n; lives in same roof (Railway).
+
+> **Cons:** you’re running one more service (still low ops on Railway).
+
+> 
+
+> ### Option 2: QiD as an n8n “Code” step (not preferred for integrity)
+
+> 
+
+> You could generate IDs inside n8n code nodes, but you lose:
+
+> 
+
+> * centralized collision control
+
+> * clean unit tests
+
+> * reuse across systems
+
+> 
+
+> Use this only for prototypes.
+
+> 
+
+> ---
+
+> 
+
+> ## QiD Data Model (in Railway Postgres)
+
+> 
+
+> You will need at least these tables:
+
+> 
+
+> 1. `qid_allocations`
+
+> 
+
+> * `qid` (unique)
+
+> * `entity_type` (file, client, case, invoice, etc.)
+
+> * `entity_key` (external reference)
+
+> * `created_at`
+
+> * `created_by`
+
+> 
+
+> 2. `qid_objects`
+
+> 
+
+> * `object_id` (uuid)
+
+> * `qid` (fk)
+
+> * `canonical_name`
+
+> * `hash_sha256` (optional but recommended)
+
+> * `storage_ref` (path/url)
+
+> * `metadata_json`
+
+> * `updated_at`
+
+> 
+
+> This gives you integrity and traceability.
+
+> 
+
+> ---
+
+> 
+
+> ## How it connects to your workflow reality
+
+> 
+
+> Example flow:
+
+> 
+
+> 1. New doc arrives (Paperless / upload / email)
+
+> 2. n8n calls `qidsvc /id/allocate` with entity info
+
+> 3. qidsvc returns `qid`
+
+> 4. n8n:
+
+> 
+
+>    * renames the object
+
+>    * writes to manifest/log tables
+
+>    * notifies you
+
+> 
+
+> That’s it. Clean, deterministic.
+
+> 
+
+> ---
+
+> 
+
+> # 4) What we should do next (sequenced, no detours)
+
+> 
+
+> ## Step 1: Create repos
+
+> 
+
+> * `qios_admin` (governance + registries + templates)
+
+> * `qios_n8n` (workflow exports + flow specs)
+
+> * `qidsvc` (QiD service, later)
+
+> 
+
+> If you refuse multiple repos, then:
+
+> 
+
+> * keep `qios_admin` and create subfolders `n8n/` and `services/qidsvc/`.
+
+> 
+
+> ## Step 2: Implement versioning policy immediately
+
+> 
+
+> Even with manual exports for now.
+
+> 
+
+> ## Step 3: Stand up QiD service on Railway
+
+> 
+
+> Minimal FastAPI service + Postgres tables + one endpoint.
+
+> 
+
+> ---
+
+> 
+
+> # 5) Two concrete files to add right now to qios_admin
+
+> 
+
+> ## `protocols/workflow_versioning_policy.md`
+
+> 
+
+> (If you want, I can generate the full Markdown exactly in your house style, but here’s the content direction.)
+
+> 
+
+> * naming
+
+> * export cadence
+
+> * repo structure
+
+> * credential map rules
+
+> * restore procedure
+
+> 
+
+> ## `registries/workflows_registry.json`
+
+> 
+
+> A simple registry listing official workflows, owners, status, and links to exported JSON filenames.
+
+> 
+
+> ---
+
+> 
+
+> ## One question (and it matters)
+
+> 
+
+> Do you want QiD IDs to be:
+
+> 
+
+> * **global across everything** (clients, files, cases, invoices), or
+
+> * **scoped by domain** (client IDs separate from file IDs, etc.)?
+
+> 
+
 > If you don’t answer, my default recommendation is: **global ID namespace**, with `entity_type` used to categorize—simpler integrity rules, fewer collisions, less confusion.
 
 ### Assistant
@@ -4746,41 +5508,76 @@ canonical_ref: ""
 > Send the status/deployment info and we’ll land this in the next step.
 
 ### User
-> You reached the start of the range
-> Jan 24, 2026, 8:43 AM
-> Starting Container
-> Stopping Container
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
+> You reached the start of the range
+
+> Jan 24, 2026, 8:43 AM
+
+> Starting Container
+
+> Stopping Container
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
 > Last session crashed
 
 ### Assistant
@@ -5005,18 +5802,29 @@ canonical_ref: ""
 > If you want the quickest path: tell me whether `${{DATABASE_URL}}` resolves in the n8n service (yes/no).
 
 ### User
-> {
+> {
+
 >   "N8N_ENCRYPTION_KEY": "hidden", 
->   "TZ": "America/Chicago",
->   "N8N_PROTOCOL": "https",
->   "N8N_HOST": "flows.qially.me",
->   "WEBHOOK_URL": "https://flows.qially.me/",
->   "N8N_LOG_LEVEL": "info",
->   "N8N_DIAGNOSTICS_ENABLED": "false",
->   "N8N_PERSONALIZATION_ENABLED": "false",
->   "DB_TYPE": "postgresdb",
->   "DB_POSTGRESDB_CONNECTION_STRING": "${{DATABASE_URL}}",
->   "DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED": "false"
+>   "TZ": "America/Chicago",
+
+>   "N8N_PROTOCOL": "https",
+
+>   "N8N_HOST": "flows.qially.me",
+
+>   "WEBHOOK_URL": "https://flows.qially.me/",
+
+>   "N8N_LOG_LEVEL": "info",
+
+>   "N8N_DIAGNOSTICS_ENABLED": "false",
+
+>   "N8N_PERSONALIZATION_ENABLED": "false",
+
+>   "DB_TYPE": "postgresdb",
+
+>   "DB_POSTGRESDB_CONNECTION_STRING": "${{DATABASE_URL}}",
+
+>   "DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED": "false"
+
 > }
 
 ### Assistant
@@ -5070,71 +5878,136 @@ canonical_ref: ""
 > After redeploy, paste the next error (or success) lines. The key is: **does it still mention `::1:5432`?** If yes, the connection string is not being applied/resolved. If no, we’re past the hard part.
 
 ### User
-> You reached the start of the range
-> Jan 24, 2026, 8:45 AM
-> Starting Container
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
-> connect ECONNREFUSED ::1:5432
-> Last session crashed
-> Initializing n8n process
-> There was an error initializing DB
+> You reached the start of the range
+
+> Jan 24, 2026, 8:45 AM
+
+> Starting Container
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
+> connect ECONNREFUSED ::1:5432
+
+> Last session crashed
+
+> Initializing n8n process
+
+> There was an error initializing DB
+
 > connect ECONNREFUSED ::1:5432
 
 ### Assistant
@@ -5235,114 +6108,222 @@ canonical_ref: ""
 > If the hostname in the error is no longer `::1`, we’re progressing. If it becomes auth/SSL, we fix that next in one move.
 
 ### User
-> Deployments
-> Variables
-> Metrics
-> Settings
-> Filter settings
-> Filter Settings...
-> 
-> /
-> Source
-> Source Image
-> n8nio/n8n:latest
-> 
-> 
-> Configure auto updates
-> 
-> 
-> Disconnect
-> Networking
-> Public Networking
-> Access to this service publicly through HTTP or TCP
-> 
-> Generate Domain
-> 
-> Custom Domain
-> 
-> TCP Proxy
-> Private Networking
-> Communicate with this service from within the Railway network.
-> n8n.railway.internal
-> IPv6
-> 
-> 
-> Ready to talk privately ·
-> You can also simply call me
-> n8n
-> .
-> 
-> DNS
-> n8n
-> .railway.internal
-> 
-> Endpoint name available!
-> 
-> 
-> Cancel
-> 
-> Update
-> Build
-> Metal Build Environment
-> Metal
-> 
-> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
-> 
-> 
-> Deploy
-> Custom Start Command
-> Command that will be run to start new deployments. Docs↗
-> 
-> Start Command
-> Add pre-deploy step (Docs↗)
-> Regions
-> Configure how many instances of this service are deployed in each region.
-> US East (Virginia, USA)
-> 
-> Replicas
-> 1
-> Instance
-> Multi-region replicas are only available on the Pro plan.
-> 
-> Learn More↗
-> Teardown
-> Configure old deployment termination when a new one is started. Docs↗
-> 
-> Resource Limits
-> Max amount of vCPU and Memory to allocate to each replica for this service.
-> CPU: 8 vCPU
-> 
-> Plan limit: 8 vCPU
-> 
-> Memory: 8 GB
-> 
-> Plan limit: 8 GB
-> 
-> Increase your resources
-> Cron Schedule
-> Run the service according to the specified cron schedule.
-> 
-> Add Schedule
-> Healthcheck Path
-> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
-> 
-> Healthcheck Path
-> Serverless
-> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
-> 
-> Restart Policy
-> Configure what to do when the process exits. Docs↗
-> On Failure
-> 
-> Restart the container if it exits with a non-zero exit code.
-> 
-> 
-> Number of times to try and restart the service if it stopped due to an error.
-> Max restart retries
-> 10
-> Delete Service
-> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
-> 
+> Deployments
+
+> Variables
+
+> Metrics
+
+> Settings
+
+> Filter settings
+
+> Filter Settings...
+
+> 
+
+> /
+
+> Source
+
+> Source Image
+
+> n8nio/n8n:latest
+
+> 
+
+> 
+
+> Configure auto updates
+
+> 
+
+> 
+
+> Disconnect
+
+> Networking
+
+> Public Networking
+
+> Access to this service publicly through HTTP or TCP
+
+> 
+
+> Generate Domain
+
+> 
+
+> Custom Domain
+
+> 
+
+> TCP Proxy
+
+> Private Networking
+
+> Communicate with this service from within the Railway network.
+
+> n8n.railway.internal
+
+> IPv6
+
+> 
+
+> 
+
+> Ready to talk privately ·
+
+> You can also simply call me
+
+> n8n
+
+> .
+
+> 
+
+> DNS
+
+> n8n
+
+> .railway.internal
+
+> 
+
+> Endpoint name available!
+
+> 
+
+> 
+
+> Cancel
+
+> 
+
+> Update
+
+> Build
+
+> Metal Build Environment
+
+> Metal
+
+> 
+
+> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
+
+> 
+
+> 
+
+> Deploy
+
+> Custom Start Command
+
+> Command that will be run to start new deployments. Docs↗
+
+> 
+
+> Start Command
+
+> Add pre-deploy step (Docs↗)
+
+> Regions
+
+> Configure how many instances of this service are deployed in each region.
+
+> US East (Virginia, USA)
+
+> 
+
+> Replicas
+
+> 1
+
+> Instance
+
+> Multi-region replicas are only available on the Pro plan.
+
+> 
+
+> Learn More↗
+
+> Teardown
+
+> Configure old deployment termination when a new one is started. Docs↗
+
+> 
+
+> Resource Limits
+
+> Max amount of vCPU and Memory to allocate to each replica for this service.
+
+> CPU: 8 vCPU
+
+> 
+
+> Plan limit: 8 vCPU
+
+> 
+
+> Memory: 8 GB
+
+> 
+
+> Plan limit: 8 GB
+
+> 
+
+> Increase your resources
+
+> Cron Schedule
+
+> Run the service according to the specified cron schedule.
+
+> 
+
+> Add Schedule
+
+> Healthcheck Path
+
+> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
+
+> 
+
+> Healthcheck Path
+
+> Serverless
+
+> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
+
+> 
+
+> Restart Policy
+
+> Configure what to do when the process exits. Docs↗
+
+> On Failure
+
+> 
+
+> Restart the container if it exits with a non-zero exit code.
+
+> 
+
+> 
+
+> Number of times to try and restart the service if it stopped due to an error.
+
+> Max restart retries
+
+> 10
+
+> Delete Service
+
+> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
+
+> 
+
 > Delete service
 
 ### Assistant
@@ -5440,109 +6421,212 @@ canonical_ref: ""
 > If you paste that host value here, I’ll hand you the final JSON with no placeholders.
 
 ### User
-> Source
-> Source Image
-> ghcr.io/railwayapp-templates/postgres-ssl:17
-> 
-> 
-> Configure auto updates
-> 
-> 
-> Disconnect
-> Networking
-> Public Networking
-> Connect to your service over TCP using a proxied domain and port
-> switchyard.proxy.rlwy.net:23533
-> 
-> :5432
-> 
-> 
-> 
-> 
-> Generate Domain
-> 
-> Custom Domain
-> Private Networking
-> Communicate with this service from within the Railway network.
-> postgres.railway.internal
-> IPv6
-> 
-> 
-> Ready to talk privately ·
-> You can also simply call me
-> postgres
-> .
-> 
-> DNS
-> postgres
-> .railway.internal
-> 
-> Endpoint name available!
-> 
-> 
-> Cancel
-> 
-> Update
-> Build
-> Metal Build Environment
-> Metal
-> 
-> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
-> 
-> 
-> Deploy
-> Custom Start Command
-> Command that will be run to start new deployments. Docs↗
-> 
-> Start Command
-> Add pre-deploy step (Docs↗)
-> Regions
-> Configure how many instances of this service are deployed in each region.
-> US East (Virginia, USA)
-> 
-> Replicas
-> 1
-> Instance
-> Replication is not available for services that have a cron schedule or a volume attached.
-> 
-> Teardown
-> Configure old deployment termination when a new one is started. Docs↗
-> 
-> Resource Limits
-> Max amount of vCPU and Memory to allocate to each replica for this service.
-> CPU: 8 vCPU
-> 
-> Plan limit: 8 vCPU
-> 
-> Memory: 8 GB
-> 
-> Plan limit: 8 GB
-> 
-> Increase your resources
-> Cron Schedule
-> Run the service according to the specified cron schedule.
-> 
-> Add Schedule
-> Healthcheck Path
-> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
-> 
-> Healthcheck Path
-> Serverless
-> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
-> 
-> Restart Policy
-> Configure what to do when the process exits. Docs↗
-> On Failure
-> 
-> Restart the container if it exits with a non-zero exit code.
-> 
-> 
-> Number of times to try and restart the service if it stopped due to an error.
-> Max restart retries
-> 10
-> Delete Service
-> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
-> 
+> Source
+
+> Source Image
+
+> ghcr.io/railwayapp-templates/postgres-ssl:17
+
+> 
+
+> 
+
+> Configure auto updates
+
+> 
+
+> 
+
+> Disconnect
+
+> Networking
+
+> Public Networking
+
+> Connect to your service over TCP using a proxied domain and port
+
+> switchyard.proxy.rlwy.net:23533
+
+> 
+
+> :5432
+
+> 
+
+> 
+
+> 
+
+> 
+
+> Generate Domain
+
+> 
+
+> Custom Domain
+
+> Private Networking
+
+> Communicate with this service from within the Railway network.
+
+> postgres.railway.internal
+
+> IPv6
+
+> 
+
+> 
+
+> Ready to talk privately ·
+
+> You can also simply call me
+
+> postgres
+
+> .
+
+> 
+
+> DNS
+
+> postgres
+
+> .railway.internal
+
+> 
+
+> Endpoint name available!
+
+> 
+
+> 
+
+> Cancel
+
+> 
+
+> Update
+
+> Build
+
+> Metal Build Environment
+
+> Metal
+
+> 
+
+> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
+
+> 
+
+> 
+
+> Deploy
+
+> Custom Start Command
+
+> Command that will be run to start new deployments. Docs↗
+
+> 
+
+> Start Command
+
+> Add pre-deploy step (Docs↗)
+
+> Regions
+
+> Configure how many instances of this service are deployed in each region.
+
+> US East (Virginia, USA)
+
+> 
+
+> Replicas
+
+> 1
+
+> Instance
+
+> Replication is not available for services that have a cron schedule or a volume attached.
+
+> 
+
+> Teardown
+
+> Configure old deployment termination when a new one is started. Docs↗
+
+> 
+
+> Resource Limits
+
+> Max amount of vCPU and Memory to allocate to each replica for this service.
+
+> CPU: 8 vCPU
+
+> 
+
+> Plan limit: 8 vCPU
+
+> 
+
+> Memory: 8 GB
+
+> 
+
+> Plan limit: 8 GB
+
+> 
+
+> Increase your resources
+
+> Cron Schedule
+
+> Run the service according to the specified cron schedule.
+
+> 
+
+> Add Schedule
+
+> Healthcheck Path
+
+> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
+
+> 
+
+> Healthcheck Path
+
+> Serverless
+
+> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
+
+> 
+
+> Restart Policy
+
+> Configure what to do when the process exits. Docs↗
+
+> On Failure
+
+> 
+
+> Restart the container if it exits with a non-zero exit code.
+
+> 
+
+> 
+
+> Number of times to try and restart the service if it stopped due to an error.
+
+> Max restart retries
+
+> 10
+
+> Delete Service
+
+> Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
+
+> 
+
 > Delete service
 
 ### Assistant
@@ -5754,287 +6838,568 @@ canonical_ref: ""
 > If it connects, we move forward immediately.
 
 ### User
-> 2026-01-24T14:01:11.000000000Z [inf]  Starting Container
-> 2026-01-24T14:01:17.604213818Z [inf]  Initializing n8n process
-> 2026-01-24T14:01:17.604219015Z [inf]  n8n ready on ::, port 5678
-> 2026-01-24T14:01:17.604224907Z [inf]  Migrations in progress, please do NOT stop the process.
-> 2026-01-24T14:01:17.604229760Z [inf]  Starting migration InitialMigration1587669153312
-> 2026-01-24T14:01:17.604234477Z [inf]  Finished migration InitialMigration1587669153312
-> 2026-01-24T14:01:17.604244519Z [inf]  Starting migration WebhookModel1589476000887
-> 2026-01-24T14:01:17.604249513Z [inf]  Finished migration WebhookModel1589476000887
-> 2026-01-24T14:01:17.604255089Z [inf]  Starting migration CreateIndexStoppedAt1594828256133
-> 2026-01-24T14:01:17.604260008Z [inf]  Finished migration CreateIndexStoppedAt1594828256133
-> 2026-01-24T14:01:17.604270412Z [inf]  Starting migration MakeStoppedAtNullable1607431743768
-> 2026-01-24T14:01:17.604274771Z [inf]  Finished migration MakeStoppedAtNullable1607431743768
-> 2026-01-24T14:01:17.604279453Z [inf]  Starting migration AddWebhookId1611144599516
-> 2026-01-24T14:01:17.604285880Z [inf]  Finished migration AddWebhookId1611144599516
-> 2026-01-24T14:01:17.604293308Z [inf]  Starting migration CreateTagEntity1617270242566
-> 2026-01-24T14:01:17.604299183Z [inf]  Finished migration CreateTagEntity1617270242566
-> 2026-01-24T14:01:17.604305365Z [inf]  Starting migration UniqueWorkflowNames1620824779533
-> 2026-01-24T14:01:17.604311449Z [inf]  Finished migration UniqueWorkflowNames1620824779533
-> 2026-01-24T14:01:17.604318174Z [inf]  Starting migration AddwaitTill1626176912946
-> 2026-01-24T14:01:17.604325380Z [inf]  Finished migration AddwaitTill1626176912946
-> 2026-01-24T14:01:17.604332587Z [inf]  Starting migration UpdateWorkflowCredentials1630419189837
-> 2026-01-24T14:01:17.604338487Z [inf]  Finished migration UpdateWorkflowCredentials1630419189837
-> 2026-01-24T14:01:17.604343579Z [inf]  Starting migration AddExecutionEntityIndexes1644422880309
-> 2026-01-24T14:01:17.604350019Z [inf]  Finished migration AddExecutionEntityIndexes1644422880309
-> 2026-01-24T14:01:17.606500380Z [inf]  Starting migration IncreaseTypeVarcharLimit1646834195327
-> 2026-01-24T14:01:17.606506165Z [inf]  Finished migration IncreaseTypeVarcharLimit1646834195327
-> 2026-01-24T14:01:17.606512034Z [inf]  Starting migration CreateUserManagement1646992772331
-> 2026-01-24T14:01:17.606517817Z [inf]  Finished migration CreateUserManagement1646992772331
-> 2026-01-24T14:01:17.606524054Z [inf]  Starting migration LowerCaseUserEmail1648740597343
-> 2026-01-24T14:01:17.606530203Z [inf]  Finished migration LowerCaseUserEmail1648740597343
-> 2026-01-24T14:01:17.606536227Z [inf]  Starting migration CommunityNodes1652254514002
-> 2026-01-24T14:01:17.606542646Z [inf]  Finished migration CommunityNodes1652254514002
-> 2026-01-24T14:01:17.606549002Z [inf]  Starting migration AddUserSettings1652367743993
-> 2026-01-24T14:01:17.606554721Z [inf]  Finished migration AddUserSettings1652367743993
-> 2026-01-24T14:01:17.606560507Z [inf]  Starting migration AddAPIKeyColumn1652905585850
-> 2026-01-24T14:01:17.606565955Z [inf]  Finished migration AddAPIKeyColumn1652905585850
-> 2026-01-24T14:01:17.606575324Z [inf]  Starting migration IntroducePinData1654090467022
-> 2026-01-24T14:01:17.606581226Z [inf]  Finished migration IntroducePinData1654090467022
-> 2026-01-24T14:01:17.606587529Z [inf]  Starting migration AddNodeIds1658932090381
-> 2026-01-24T14:01:17.606593322Z [inf]  Finished migration AddNodeIds1658932090381
-> 2026-01-24T14:01:17.606599791Z [inf]  Starting migration AddJsonKeyPinData1659902242948
-> 2026-01-24T14:01:17.606606855Z [inf]  Finished migration AddJsonKeyPinData1659902242948
-> 2026-01-24T14:01:17.606613000Z [inf]  Starting migration CreateCredentialsUserRole1660062385367
-> 2026-01-24T14:01:17.606619010Z [inf]  Finished migration CreateCredentialsUserRole1660062385367
-> 2026-01-24T14:01:17.606625586Z [inf]  Starting migration CreateWorkflowsEditorRole1663755770893
-> 2026-01-24T14:01:17.606634555Z [inf]  Finished migration CreateWorkflowsEditorRole1663755770893
-> 2026-01-24T14:01:17.606641413Z [inf]  Starting migration WorkflowStatistics1664196174001
-> 2026-01-24T14:01:17.606647266Z [inf]  Finished migration WorkflowStatistics1664196174001
-> 2026-01-24T14:01:17.606653606Z [inf]  Starting migration CreateCredentialUsageTable1665484192212
-> 2026-01-24T14:01:17.606659379Z [inf]  Finished migration CreateCredentialUsageTable1665484192212
-> 2026-01-24T14:01:17.606665352Z [inf]  Starting migration RemoveCredentialUsageTable1665754637025
-> 2026-01-24T14:01:17.606671124Z [inf]  Finished migration RemoveCredentialUsageTable1665754637025
-> 2026-01-24T14:01:17.609577362Z [inf]  Starting migration AddWorkflowVersionIdColumn1669739707126
-> 2026-01-24T14:01:17.609588655Z [inf]  Finished migration AddWorkflowVersionIdColumn1669739707126
-> 2026-01-24T14:01:17.615655140Z [inf]  Starting migration AddTriggerCountColumn1669823906995
-> 2026-01-24T14:01:17.615662088Z [inf]  Finished migration AddTriggerCountColumn1669823906995
-> 2026-01-24T14:01:17.615675430Z [inf]  Starting migration MessageEventBusDestinations1671535397530
-> 2026-01-24T14:01:17.616806670Z [inf]  Finished migration MessageEventBusDestinations1671535397530
-> 2026-01-24T14:01:17.622393388Z [inf]  Starting migration RemoveWorkflowDataLoadedFlag1671726148421
-> 2026-01-24T14:01:17.622401124Z [inf]  Finished migration RemoveWorkflowDataLoadedFlag1671726148421
-> 2026-01-24T14:01:17.623100736Z [inf]  Starting migration DeleteExecutionsWithWorkflows1673268682475
-> 2026-01-24T14:01:17.630435781Z [inf]  Finished migration DeleteExecutionsWithWorkflows1673268682475
-> 2026-01-24T14:01:17.635748165Z [inf]  Starting migration AddStatusToExecutions1674138566000
-> 2026-01-24T14:01:17.635754707Z [inf]  Finished migration AddStatusToExecutions1674138566000
-> 2026-01-24T14:01:17.636559940Z [inf]  Starting migration CreateLdapEntities1674509946020
-> 2026-01-24T14:01:17.641907533Z [inf]  Finished migration CreateLdapEntities1674509946020
-> 2026-01-24T14:01:17.642550087Z [inf]  Starting migration PurgeInvalidWorkflowConnections1675940580449
-> 2026-01-24T14:01:17.648256315Z [inf]  Finished migration PurgeInvalidWorkflowConnections1675940580449
-> 2026-01-24T14:01:17.649032955Z [inf]  Starting migration MigrateExecutionStatus1676996103000
-> 2026-01-24T14:01:17.657296466Z [inf]  Finished migration MigrateExecutionStatus1676996103000
-> 2026-01-24T14:01:17.657308606Z [inf]  Starting migration UpdateRunningExecutionStatus1677236854063
-> 2026-01-24T14:01:17.657315921Z [inf]  Finished migration UpdateRunningExecutionStatus1677236854063
-> 2026-01-24T14:01:17.657878579Z [inf]  Starting migration CreateVariables1677501636754
-> 2026-01-24T14:01:17.665590186Z [inf]  Finished migration CreateVariables1677501636754
-> 2026-01-24T14:01:17.665600265Z [inf]  Starting migration CreateExecutionMetadataTable1679416281778
-> 2026-01-24T14:01:17.669428970Z [inf]  Finished migration CreateExecutionMetadataTable1679416281778
-> 2026-01-24T14:01:17.669440060Z [inf]  Starting migration AddUserActivatedProperty1681134145996
-> 2026-01-24T14:01:17.676072809Z [inf]  Finished migration AddUserActivatedProperty1681134145996
-> 2026-01-24T14:01:17.676742814Z [inf]  Starting migration RemoveSkipOwnerSetup1681134145997
-> 2026-01-24T14:01:17.678064208Z [inf]  Finished migration RemoveSkipOwnerSetup1681134145997
-> 2026-01-24T14:01:17.683720032Z [inf]  Starting migration MigrateIntegerKeysToString1690000000000
-> 2026-01-24T14:01:17.765553537Z [inf]  Finished migration MigrateIntegerKeysToString1690000000000
-> 2026-01-24T14:01:17.765562615Z [inf]  Starting migration SeparateExecutionData1690000000020
-> 2026-01-24T14:01:17.765568802Z [inf]  Finished migration SeparateExecutionData1690000000020
-> 2026-01-24T14:01:17.765574994Z [inf]  Starting migration RemoveResetPasswordColumns1690000000030
-> 2026-01-24T14:01:17.788786539Z [inf]  Finished migration RemoveResetPasswordColumns1690000000030
-> 2026-01-24T14:01:17.794888870Z [inf]  Starting migration AddMfaColumns1690000000030
-> 2026-01-24T14:01:17.794898716Z [inf]  Finished migration AddMfaColumns1690000000030
-> 2026-01-24T14:01:17.801545983Z [inf]  Starting migration AddMissingPrimaryKeyOnExecutionData1690787606731
-> 2026-01-24T14:01:17.801556444Z [inf]  Finished migration AddMissingPrimaryKeyOnExecutionData1690787606731
-> 2026-01-24T14:01:17.802284890Z [inf]  Starting migration CreateWorkflowNameIndex1691088862123
-> 2026-01-24T14:01:17.834200158Z [inf]  Finished migration CreateWorkflowNameIndex1691088862123
-> 2026-01-24T14:01:17.834210434Z [inf]  Starting migration CreateWorkflowHistoryTable1692967111175
-> 2026-01-24T14:01:17.835851698Z [inf]  Finished migration CreateWorkflowHistoryTable1692967111175
-> 2026-01-24T14:01:17.849033724Z [inf]  Starting migration ExecutionSoftDelete1693491613982
-> 2026-01-24T14:01:17.871108075Z [inf]  Finished migration ExecutionSoftDelete1693491613982
-> 2026-01-24T14:01:17.871113988Z [inf]  Starting migration DisallowOrphanExecutions1693554410387
-> 2026-01-24T14:01:17.893606334Z [inf]  Finished migration DisallowOrphanExecutions1693554410387
-> 2026-01-24T14:01:17.894274032Z [inf]  Starting migration MigrateToTimestampTz1694091729095
-> 2026-01-24T14:01:17.953145206Z [inf]  Finished migration MigrateToTimestampTz1694091729095
-> 2026-01-24T14:01:17.953156244Z [inf]  Starting migration AddWorkflowMetadata1695128658538
-> 2026-01-24T14:01:17.977571665Z [inf]  Finished migration AddWorkflowMetadata1695128658538
-> 2026-01-24T14:01:17.977582240Z [inf]  Starting migration ModifyWorkflowHistoryNodesAndConnections1695829275184
-> 2026-01-24T14:01:17.990392028Z [inf]  Finished migration ModifyWorkflowHistoryNodesAndConnections1695829275184
-> 2026-01-24T14:01:17.997129058Z [inf]  Starting migration AddGlobalAdminRole1700571993961
-> 2026-01-24T14:01:17.997138115Z [inf]  Finished migration AddGlobalAdminRole1700571993961
-> 2026-01-24T14:01:17.998772354Z [inf]  Starting migration DropRoleMapping1705429061930
-> 2026-01-24T14:01:18.168733001Z [inf]  Finished migration DropRoleMapping1705429061930
-> 2026-01-24T14:01:18.168742947Z [inf]  Starting migration RemoveFailedExecutionStatus1711018413374
-> 2026-01-24T14:01:18.168750296Z [inf]  Finished migration RemoveFailedExecutionStatus1711018413374
-> 2026-01-24T14:01:18.168763531Z [inf]  Starting migration MoveSshKeysToDatabase1711390882123
-> 2026-01-24T14:01:18.168771081Z [inf]  [MoveSshKeysToDatabase1711390882123] No SSH keys in filesystem, skipping
-> 2026-01-24T14:01:18.168777878Z [inf]  Finished migration MoveSshKeysToDatabase1711390882123
-> 2026-01-24T14:01:18.168784711Z [inf]  Starting migration RemoveNodesAccess1712044305787
-> 2026-01-24T14:01:18.168790967Z [inf]  Finished migration RemoveNodesAccess1712044305787
-> 2026-01-24T14:01:18.168797657Z [inf]  Starting migration CreateProject1714133768519
-> 2026-01-24T14:01:18.312845727Z [inf]  Finished migration CreateProject1714133768519
-> 2026-01-24T14:01:18.312850917Z [inf]  Starting migration MakeExecutionStatusNonNullable1714133768521
-> 2026-01-24T14:01:18.312855994Z [inf]  Finished migration MakeExecutionStatusNonNullable1714133768521
-> 2026-01-24T14:01:18.312859886Z [inf]  Starting migration AddActivatedAtUserSetting1717498465931
-> 2026-01-24T14:01:18.312863933Z [inf]  Finished migration AddActivatedAtUserSetting1717498465931
-> 2026-01-24T14:01:18.312868303Z [inf]  Starting migration AddConstraintToExecutionMetadata1720101653148
-> 2026-01-24T14:01:18.614759088Z [inf]  Finished migration AddConstraintToExecutionMetadata1720101653148
-> 2026-01-24T14:01:18.614763702Z [inf]  Starting migration FixExecutionMetadataSequence1721377157740
-> 2026-01-24T14:01:18.614767811Z [inf]  Finished migration FixExecutionMetadataSequence1721377157740
-> 2026-01-24T14:01:18.614771907Z [inf]  Starting migration CreateInvalidAuthTokenTable1723627610222
-> 2026-01-24T14:01:18.614776367Z [inf]  Finished migration CreateInvalidAuthTokenTable1723627610222
-> 2026-01-24T14:01:18.614781886Z [inf]  Starting migration RefactorExecutionIndices1723796243146
-> 2026-01-24T14:01:18.614786977Z [inf]  Finished migration RefactorExecutionIndices1723796243146
-> 2026-01-24T14:01:18.614791036Z [inf]  Starting migration CreateAnnotationTables1724753530828
-> 2026-01-24T14:01:18.614795095Z [inf]  Finished migration CreateAnnotationTables1724753530828
-> 2026-01-24T14:01:18.614799506Z [inf]  Starting migration AddApiKeysTable1724951148974
-> 2026-01-24T14:01:18.614804344Z [inf]  Finished migration AddApiKeysTable1724951148974
-> 2026-01-24T14:01:18.614809758Z [inf]  Starting migration CreateProcessedDataTable1726606152711
-> 2026-01-24T14:01:18.614814318Z [inf]  Finished migration CreateProcessedDataTable1726606152711
-> 2026-01-24T14:01:18.614819511Z [inf]  Starting migration SeparateExecutionCreationFromStart1727427440136
-> 2026-01-24T14:01:18.614823542Z [inf]  Finished migration SeparateExecutionCreationFromStart1727427440136
-> 2026-01-24T14:01:18.614827782Z [inf]  Starting migration AddMissingPrimaryKeyOnAnnotationTagMapping1728659839644
-> 2026-01-24T14:01:18.614833259Z [inf]  Finished migration AddMissingPrimaryKeyOnAnnotationTagMapping1728659839644
-> 2026-01-24T14:01:18.614837456Z [inf]  Starting migration UpdateProcessedDataValueColumnToText1729607673464
-> 2026-01-24T14:01:18.614841567Z [inf]  Finished migration UpdateProcessedDataValueColumnToText1729607673464
-> 2026-01-24T14:01:18.614845796Z [inf]  Starting migration AddProjectIcons1729607673469
-> 2026-01-24T14:01:18.617844685Z [inf]  Finished migration AddMockedNodesColumnToTestDefinition1733133775640
-> 2026-01-24T14:01:18.617844902Z [inf]  Finished migration AddProjectIcons1729607673469
-> 2026-01-24T14:01:18.617857204Z [inf]  Starting migration CreateTestDefinitionTable1730386903556
-> 2026-01-24T14:01:18.617858079Z [inf]  Starting migration AddManagedColumnToCredentialsTable1734479635324
-> 2026-01-24T14:01:18.617865728Z [inf]  Finished migration AddManagedColumnToCredentialsTable1734479635324
-> 2026-01-24T14:01:18.617872609Z [inf]  Finished migration CreateTestDefinitionTable1730386903556
-> 2026-01-24T14:01:18.617873005Z [inf]  Starting migration AddStatsColumnsToTestRun1736172058779
-> 2026-01-24T14:01:18.617879038Z [inf]  Finished migration AddStatsColumnsToTestRun1736172058779
-> 2026-01-24T14:01:18.617884945Z [inf]  Starting migration AddDescriptionToTestDefinition1731404028106
-> 2026-01-24T14:01:18.617886287Z [inf]  Starting migration CreateTestCaseExecutionTable1736947513045
-> 2026-01-24T14:01:18.617895001Z [inf]  Finished migration CreateTestCaseExecutionTable1736947513045
-> 2026-01-24T14:01:18.617895131Z [inf]  Finished migration AddDescriptionToTestDefinition1731404028106
-> 2026-01-24T14:01:18.617903931Z [inf]  Starting migration AddErrorColumnsToTestRuns1737715421462
-> 2026-01-24T14:01:18.617906540Z [inf]  Starting migration MigrateTestDefinitionKeyToString1731582748663
-> 2026-01-24T14:01:18.617913301Z [inf]  Finished migration MigrateTestDefinitionKeyToString1731582748663
-> 2026-01-24T14:01:18.617919692Z [inf]  Starting migration CreateTestMetricTable1732271325258
-> 2026-01-24T14:01:18.617927049Z [inf]  Finished migration CreateTestMetricTable1732271325258
-> 2026-01-24T14:01:18.617937190Z [inf]  Starting migration CreateTestRun1732549866705
-> 2026-01-24T14:01:18.617944866Z [inf]  Finished migration CreateTestRun1732549866705
-> 2026-01-24T14:01:18.617953210Z [inf]  Starting migration AddMockedNodesColumnToTestDefinition1733133775640
-> 2026-01-24T14:01:18.618182098Z [inf]  Finished migration AddErrorColumnsToTestRuns1737715421462
-> 2026-01-24T14:01:18.618189181Z [inf]  Starting migration CreateFolderTable1738709609940
-> 2026-01-24T14:01:18.618194827Z [inf]  Finished migration CreateFolderTable1738709609940
-> 2026-01-24T14:01:18.618200281Z [inf]  Starting migration CreateAnalyticsTables1739549398681
-> 2026-01-24T14:01:18.618214375Z [inf]  Finished migration CreateAnalyticsTables1739549398681
-> 2026-01-24T14:01:18.618220182Z [inf]  Starting migration UpdateParentFolderIdColumn1740445074052
-> 2026-01-24T14:01:18.618226644Z [inf]  Finished migration UpdateParentFolderIdColumn1740445074052
-> 2026-01-24T14:01:18.618233124Z [inf]  Starting migration RenameAnalyticsToInsights1741167584277
-> 2026-01-24T14:01:18.665413589Z [inf]  Finished migration RenameAnalyticsToInsights1741167584277
-> 2026-01-24T14:01:18.666198285Z [inf]  Starting migration AddScopesColumnToApiKeys1742918400000
-> 2026-01-24T14:01:18.687902717Z [inf]  Finished migration AddScopesColumnToApiKeys1742918400000
-> 2026-01-24T14:01:18.687921446Z [inf]  Starting migration ClearEvaluation1745322634000
-> 2026-01-24T14:01:18.766377539Z [inf]  Finished migration ClearEvaluation1745322634000
-> 2026-01-24T14:01:18.766389630Z [inf]  Starting migration AddWorkflowStatisticsRootCount1745587087521
-> 2026-01-24T14:01:18.766398145Z [inf]  Finished migration AddWorkflowStatisticsRootCount1745587087521
-> 2026-01-24T14:01:18.766406426Z [inf]  Starting migration AddWorkflowArchivedColumn1745934666076
-> 2026-01-24T14:01:18.766412858Z [inf]  Finished migration AddWorkflowArchivedColumn1745934666076
-> 2026-01-24T14:01:18.766419537Z [inf]  Starting migration DropRoleTable1745934666077
-> 2026-01-24T14:01:18.778191829Z [inf]  Finished migration DropRoleTable1745934666077
-> 2026-01-24T14:01:18.783522816Z [inf]  Starting migration AddProjectDescriptionColumn1747824239000
-> 2026-01-24T14:01:18.783533710Z [inf]  Finished migration AddProjectDescriptionColumn1747824239000
-> 2026-01-24T14:01:18.784450028Z [inf]  Starting migration AddLastActiveAtColumnToUser1750252139166
-> 2026-01-24T14:01:18.785437169Z [inf]  Finished migration AddLastActiveAtColumnToUser1750252139166
-> 2026-01-24T14:01:18.791241097Z [inf]  Starting migration AddScopeTables1750252139166
-> 2026-01-24T14:01:18.793083904Z [inf]  Finished migration AddScopeTables1750252139166
-> 2026-01-24T14:01:18.798869746Z [inf]  Starting migration AddRolesTables1750252139167
-> 2026-01-24T14:01:18.821767085Z [inf]  Finished migration AddRolesTables1750252139167
-> 2026-01-24T14:01:18.821777611Z [inf]  Starting migration LinkRoleToUserTable1750252139168
-> 2026-01-24T14:01:18.848459604Z [inf]  Finished migration LinkRoleToUserTable1750252139168
-> 2026-01-24T14:01:18.848469569Z [inf]  Starting migration RemoveOldRoleColumn1750252139170
-> 2026-01-24T14:01:18.849933685Z [inf]  Finished migration RemoveOldRoleColumn1750252139170
-> 2026-01-24T14:01:18.855450635Z [inf]  Starting migration AddInputsOutputsToTestCaseExecution1752669793000
-> 2026-01-24T14:01:18.885153892Z [inf]  Finished migration AddInputsOutputsToTestCaseExecution1752669793000
-> 2026-01-24T14:01:18.885161852Z [inf]  Starting migration LinkRoleToProjectRelationTable1753953244168
-> 2026-01-24T14:01:18.896239347Z [inf]  Finished migration LinkRoleToProjectRelationTable1753953244168
-> 2026-01-24T14:01:18.901051375Z [inf]  Starting migration CreateDataStoreTables1754475614601
-> 2026-01-24T14:01:18.905876821Z [inf]  Finished migration CreateDataStoreTables1754475614601
-> 2026-01-24T14:01:18.911166241Z [inf]  Starting migration ReplaceDataStoreTablesWithDataTables1754475614602
-> 2026-01-24T14:01:18.952003056Z [inf]  Finished migration ReplaceDataStoreTablesWithDataTables1754475614602
-> 2026-01-24T14:01:18.952011404Z [inf]  Starting migration AddTimestampsToRoleAndRoleIndexes1756906557570
-> 2026-01-24T14:01:18.994594848Z [inf]  Finished migration AddTimestampsToRoleAndRoleIndexes1756906557570
-> 2026-01-24T14:01:18.999513070Z [inf]  Starting migration AddAudienceColumnToApiKeys1758731786132
-> 2026-01-24T14:01:19.022642617Z [inf]  Finished migration AddAudienceColumnToApiKeys1758731786132
-> 2026-01-24T14:01:19.022650326Z [inf]  Starting migration AddProjectIdToVariableTable1758794506893
-> 2026-01-24T14:01:19.035640543Z [inf]  Finished migration AddProjectIdToVariableTable1758794506893
-> 2026-01-24T14:01:19.041244661Z [inf]  Starting migration ChangeValueTypesForInsights1759399811000
-> 2026-01-24T14:01:19.042166868Z [inf]  Finished migration ChangeValueTypesForInsights1759399811000
-> 2026-01-24T14:01:19.048077004Z [inf]  Starting migration CreateChatHubTables1760019379982
-> 2026-01-24T14:01:19.053312660Z [inf]  Finished migration CreateChatHubTables1760019379982
-> 2026-01-24T14:01:19.058666516Z [inf]  Starting migration CreateChatHubAgentTable1760020000000
-> 2026-01-24T14:01:19.100124767Z [inf]  Finished migration CreateChatHubAgentTable1760020000000
-> 2026-01-24T14:01:19.100138930Z [inf]  Starting migration UniqueRoleNames1760020838000
-> 2026-01-24T14:01:19.107127332Z [inf]  Finished migration UniqueRoleNames1760020838000
-> 2026-01-24T14:01:19.107133172Z [inf]  Starting migration CreateOAuthEntities1760116750277
-> 2026-01-24T14:01:19.133186310Z [inf]  Finished migration CreateOAuthEntities1760116750277
-> 2026-01-24T14:01:19.133195505Z [inf]  Starting migration CreateWorkflowDependencyTable1760314000000
-> 2026-01-24T14:01:19.133202071Z [inf]  Finished migration CreateWorkflowDependencyTable1760314000000
-> 2026-01-24T14:01:19.133208626Z [inf]  Starting migration DropUnusedChatHubColumns1760965142113
-> 2026-01-24T14:01:19.139123209Z [inf]  Finished migration DropUnusedChatHubColumns1760965142113
-> 2026-01-24T14:01:19.140020096Z [inf]  Starting migration AddWorkflowVersionColumn1761047826451
-> 2026-01-24T14:01:19.145658916Z [inf]  Finished migration AddWorkflowVersionColumn1761047826451
-> 2026-01-24T14:01:19.145667146Z [inf]  Starting migration ChangeDependencyInfoToJson1761655473000
-> 2026-01-24T14:01:19.148482100Z [inf]  Finished migration ChangeDependencyInfoToJson1761655473000
-> 2026-01-24T14:01:19.161115907Z [inf]  Starting migration AddAttachmentsToChatHubMessages1761773155024
-> 2026-01-24T14:01:19.161130787Z [inf]  Finished migration AddAttachmentsToChatHubMessages1761773155024
-> 2026-01-24T14:01:19.161141985Z [inf]  Starting migration AddToolsColumnToChatHubTables1761830340990
-> 2026-01-24T14:01:19.182433514Z [inf]  Finished migration AddToolsColumnToChatHubTables1761830340990
-> 2026-01-24T14:01:19.182442106Z [inf]  Starting migration AddWorkflowDescriptionColumn1762177736257
-> 2026-01-24T14:01:19.197272328Z [inf]  Finished migration AddWorkflowDescriptionColumn1762177736257
-> 2026-01-24T14:01:19.203489338Z [inf]  Starting migration BackfillMissingWorkflowHistoryRecords1762763704614
-> 2026-01-24T14:01:19.215054019Z [inf]  Finished migration BackfillMissingWorkflowHistoryRecords1762763704614
-> 2026-01-24T14:01:19.220860299Z [inf]  Starting migration ChangeDefaultForIdInUserTable1762771264000
-> 2026-01-24T14:01:19.220870197Z [inf]  Finished migration ChangeDefaultForIdInUserTable1762771264000
-> 2026-01-24T14:01:19.220876651Z [inf]  Starting migration AddIsGlobalColumnToCredentialsTable1762771954619
-> 2026-01-24T14:01:19.226169815Z [inf]  Finished migration AddIsGlobalColumnToCredentialsTable1762771954619
-> 2026-01-24T14:01:19.226179965Z [inf]  Starting migration AddWorkflowHistoryAutoSaveFields1762847206508
-> 2026-01-24T14:01:19.248209692Z [inf]  Finished migration AddWorkflowHistoryAutoSaveFields1762847206508
-> 2026-01-24T14:01:19.248219169Z [inf]  Starting migration AddActiveVersionIdColumn1763047800000
-> 2026-01-24T14:01:19.248224264Z [inf]  Finished migration AddActiveVersionIdColumn1763047800000
-> 2026-01-24T14:01:19.253562802Z [inf]  Starting migration ActivateExecuteWorkflowTriggerWorkflows1763048000000
-> 2026-01-24T14:01:19.253571280Z [inf]  Finished migration ActivateExecuteWorkflowTriggerWorkflows1763048000000
-> 2026-01-24T14:01:19.255383478Z [inf]  Starting migration ChangeOAuthStateColumnToUnboundedVarchar1763572724000
-> 2026-01-24T14:01:19.257696969Z [inf]  Finished migration ChangeOAuthStateColumnToUnboundedVarchar1763572724000
-> 2026-01-24T14:01:19.261717530Z [inf]  Starting migration CreateBinaryDataTable1763716655000
-> 2026-01-24T14:01:19.273402867Z [inf]  Finished migration CreateBinaryDataTable1763716655000
-> 2026-01-24T14:01:19.273417479Z [inf]  Starting migration CreateWorkflowPublishHistoryTable1764167920585
-> 2026-01-24T14:01:19.274870712Z [inf]  Finished migration CreateWorkflowPublishHistoryTable1764167920585
-> 2026-01-24T14:01:19.280455316Z [inf]  Starting migration AddCreatorIdToProjectTable1764276827837
-> 2026-01-24T14:01:19.303654319Z [inf]  Finished migration AddCreatorIdToProjectTable1764276827837
-> 2026-01-24T14:01:19.303663874Z [inf]  Starting migration CreateDynamicCredentialResolverTable1764682447000
-> 2026-01-24T14:01:19.303670720Z [inf]  Finished migration CreateDynamicCredentialResolverTable1764682447000
-> 2026-01-24T14:01:19.304475604Z [inf]  Starting migration AddDynamicCredentialEntryTable1764689388394
-> 2026-01-24T14:01:19.309861002Z [inf]  Finished migration AddDynamicCredentialEntryTable1764689388394
-> 2026-01-24T14:01:19.320643159Z [inf]  Starting migration BackfillMissingWorkflowHistoryRecords1765448186933
-> 2026-01-24T14:01:19.326495457Z [inf]  Finished migration BackfillMissingWorkflowHistoryRecords1765448186933
-> 2026-01-24T14:01:19.327188486Z [inf]  Starting migration AddResolvableFieldsToCredentials1765459448000
-> 2026-01-24T14:01:19.623594240Z [inf]  Finished migration AddResolvableFieldsToCredentials1765459448000
-> 2026-01-24T14:01:19.623599444Z [inf]  Starting migration AddIconToAgentTable1765788427674
-> 2026-01-24T14:01:19.623604034Z [inf]  Finished migration AddIconToAgentTable1765788427674
-> 2026-01-24T14:01:19.623614744Z [inf]  Starting migration ConvertAgentIdToUuid1765804780000
-> 2026-01-24T14:01:19.623619887Z [inf]  Finished migration ConvertAgentIdToUuid1765804780000
-> 2026-01-24T14:01:19.623624673Z [inf]  Starting migration AddAgentIdForeignKeys1765886667897
-> 2026-01-24T14:01:19.623629155Z [inf]  Finished migration AddAgentIdForeignKeys1765886667897
-> 2026-01-24T14:01:19.623633451Z [inf]  Starting migration AddWorkflowVersionIdToExecutionData1765892199653
-> 2026-01-24T14:01:19.623639233Z [inf]  Finished migration AddWorkflowVersionIdToExecutionData1765892199653
-> 2026-01-24T14:01:19.623644104Z [inf]  Starting migration AddWorkflowPublishScopeToProjectRoles1766064542000
-> 2026-01-24T14:01:19.623648967Z [inf]  Added workflow:publish scope to project roles with workflow:update
-> 2026-01-24T14:01:19.623653867Z [inf]  Finished migration AddWorkflowPublishScopeToProjectRoles1766064542000
-> 2026-01-24T14:01:19.623658100Z [inf]  Starting migration AddChatMessageIndices1766068346315
-> 2026-01-24T14:01:19.623662403Z [inf]  Finished migration AddChatMessageIndices1766068346315
-> 2026-01-24T14:01:19.623671838Z [inf]  Starting migration ExpandInsightsWorkflowIdLength1766500000000
-> 2026-01-24T14:01:19.623679139Z [inf]  Finished migration ExpandInsightsWorkflowIdLength1766500000000
-> 2026-01-24T14:01:19.623683977Z [inf]  n8n Task Broker ready on 127.0.0.1, port 5679
-> 2026-01-24T14:01:19.666540634Z [inf]  Failed to start Python task runner in internal mode. because Python 3 is missing from this system. Launching a Python runner in internal mode is intended only for debugging and is not recommended for production. Users are encouraged to deploy in external mode. See: https://docs.n8n.io/hosting/configuration/task-runners/#setting-up-external-mode
-> 2026-01-24T14:01:19.688568663Z [inf]  [license SDK] Skipping renewal on init: license cert is not initialized
-> 2026-01-24T14:01:21.758699397Z [inf]  Registered runner "JS Task Runner" (l3qQKZC_hrBpembauz41y) 
-> 2026-01-24T14:01:22.702659962Z [inf]  Version: 2.4.6
-> 2026-01-24T14:01:22.702670399Z [inf]  
-> 2026-01-24T14:01:22.702677284Z [inf]  Editor is now accessible via:
+> 2026-01-24T14:01:11.000000000Z [inf]  Starting Container
+
+> 2026-01-24T14:01:17.604213818Z [inf]  Initializing n8n process
+
+> 2026-01-24T14:01:17.604219015Z [inf]  n8n ready on ::, port 5678
+
+> 2026-01-24T14:01:17.604224907Z [inf]  Migrations in progress, please do NOT stop the process.
+
+> 2026-01-24T14:01:17.604229760Z [inf]  Starting migration InitialMigration1587669153312
+
+> 2026-01-24T14:01:17.604234477Z [inf]  Finished migration InitialMigration1587669153312
+
+> 2026-01-24T14:01:17.604244519Z [inf]  Starting migration WebhookModel1589476000887
+
+> 2026-01-24T14:01:17.604249513Z [inf]  Finished migration WebhookModel1589476000887
+
+> 2026-01-24T14:01:17.604255089Z [inf]  Starting migration CreateIndexStoppedAt1594828256133
+
+> 2026-01-24T14:01:17.604260008Z [inf]  Finished migration CreateIndexStoppedAt1594828256133
+
+> 2026-01-24T14:01:17.604270412Z [inf]  Starting migration MakeStoppedAtNullable1607431743768
+
+> 2026-01-24T14:01:17.604274771Z [inf]  Finished migration MakeStoppedAtNullable1607431743768
+
+> 2026-01-24T14:01:17.604279453Z [inf]  Starting migration AddWebhookId1611144599516
+
+> 2026-01-24T14:01:17.604285880Z [inf]  Finished migration AddWebhookId1611144599516
+
+> 2026-01-24T14:01:17.604293308Z [inf]  Starting migration CreateTagEntity1617270242566
+
+> 2026-01-24T14:01:17.604299183Z [inf]  Finished migration CreateTagEntity1617270242566
+
+> 2026-01-24T14:01:17.604305365Z [inf]  Starting migration UniqueWorkflowNames1620824779533
+
+> 2026-01-24T14:01:17.604311449Z [inf]  Finished migration UniqueWorkflowNames1620824779533
+
+> 2026-01-24T14:01:17.604318174Z [inf]  Starting migration AddwaitTill1626176912946
+
+> 2026-01-24T14:01:17.604325380Z [inf]  Finished migration AddwaitTill1626176912946
+
+> 2026-01-24T14:01:17.604332587Z [inf]  Starting migration UpdateWorkflowCredentials1630419189837
+
+> 2026-01-24T14:01:17.604338487Z [inf]  Finished migration UpdateWorkflowCredentials1630419189837
+
+> 2026-01-24T14:01:17.604343579Z [inf]  Starting migration AddExecutionEntityIndexes1644422880309
+
+> 2026-01-24T14:01:17.604350019Z [inf]  Finished migration AddExecutionEntityIndexes1644422880309
+
+> 2026-01-24T14:01:17.606500380Z [inf]  Starting migration IncreaseTypeVarcharLimit1646834195327
+
+> 2026-01-24T14:01:17.606506165Z [inf]  Finished migration IncreaseTypeVarcharLimit1646834195327
+
+> 2026-01-24T14:01:17.606512034Z [inf]  Starting migration CreateUserManagement1646992772331
+
+> 2026-01-24T14:01:17.606517817Z [inf]  Finished migration CreateUserManagement1646992772331
+
+> 2026-01-24T14:01:17.606524054Z [inf]  Starting migration LowerCaseUserEmail1648740597343
+
+> 2026-01-24T14:01:17.606530203Z [inf]  Finished migration LowerCaseUserEmail1648740597343
+
+> 2026-01-24T14:01:17.606536227Z [inf]  Starting migration CommunityNodes1652254514002
+
+> 2026-01-24T14:01:17.606542646Z [inf]  Finished migration CommunityNodes1652254514002
+
+> 2026-01-24T14:01:17.606549002Z [inf]  Starting migration AddUserSettings1652367743993
+
+> 2026-01-24T14:01:17.606554721Z [inf]  Finished migration AddUserSettings1652367743993
+
+> 2026-01-24T14:01:17.606560507Z [inf]  Starting migration AddAPIKeyColumn1652905585850
+
+> 2026-01-24T14:01:17.606565955Z [inf]  Finished migration AddAPIKeyColumn1652905585850
+
+> 2026-01-24T14:01:17.606575324Z [inf]  Starting migration IntroducePinData1654090467022
+
+> 2026-01-24T14:01:17.606581226Z [inf]  Finished migration IntroducePinData1654090467022
+
+> 2026-01-24T14:01:17.606587529Z [inf]  Starting migration AddNodeIds1658932090381
+
+> 2026-01-24T14:01:17.606593322Z [inf]  Finished migration AddNodeIds1658932090381
+
+> 2026-01-24T14:01:17.606599791Z [inf]  Starting migration AddJsonKeyPinData1659902242948
+
+> 2026-01-24T14:01:17.606606855Z [inf]  Finished migration AddJsonKeyPinData1659902242948
+
+> 2026-01-24T14:01:17.606613000Z [inf]  Starting migration CreateCredentialsUserRole1660062385367
+
+> 2026-01-24T14:01:17.606619010Z [inf]  Finished migration CreateCredentialsUserRole1660062385367
+
+> 2026-01-24T14:01:17.606625586Z [inf]  Starting migration CreateWorkflowsEditorRole1663755770893
+
+> 2026-01-24T14:01:17.606634555Z [inf]  Finished migration CreateWorkflowsEditorRole1663755770893
+
+> 2026-01-24T14:01:17.606641413Z [inf]  Starting migration WorkflowStatistics1664196174001
+
+> 2026-01-24T14:01:17.606647266Z [inf]  Finished migration WorkflowStatistics1664196174001
+
+> 2026-01-24T14:01:17.606653606Z [inf]  Starting migration CreateCredentialUsageTable1665484192212
+
+> 2026-01-24T14:01:17.606659379Z [inf]  Finished migration CreateCredentialUsageTable1665484192212
+
+> 2026-01-24T14:01:17.606665352Z [inf]  Starting migration RemoveCredentialUsageTable1665754637025
+
+> 2026-01-24T14:01:17.606671124Z [inf]  Finished migration RemoveCredentialUsageTable1665754637025
+
+> 2026-01-24T14:01:17.609577362Z [inf]  Starting migration AddWorkflowVersionIdColumn1669739707126
+
+> 2026-01-24T14:01:17.609588655Z [inf]  Finished migration AddWorkflowVersionIdColumn1669739707126
+
+> 2026-01-24T14:01:17.615655140Z [inf]  Starting migration AddTriggerCountColumn1669823906995
+
+> 2026-01-24T14:01:17.615662088Z [inf]  Finished migration AddTriggerCountColumn1669823906995
+
+> 2026-01-24T14:01:17.615675430Z [inf]  Starting migration MessageEventBusDestinations1671535397530
+
+> 2026-01-24T14:01:17.616806670Z [inf]  Finished migration MessageEventBusDestinations1671535397530
+
+> 2026-01-24T14:01:17.622393388Z [inf]  Starting migration RemoveWorkflowDataLoadedFlag1671726148421
+
+> 2026-01-24T14:01:17.622401124Z [inf]  Finished migration RemoveWorkflowDataLoadedFlag1671726148421
+
+> 2026-01-24T14:01:17.623100736Z [inf]  Starting migration DeleteExecutionsWithWorkflows1673268682475
+
+> 2026-01-24T14:01:17.630435781Z [inf]  Finished migration DeleteExecutionsWithWorkflows1673268682475
+
+> 2026-01-24T14:01:17.635748165Z [inf]  Starting migration AddStatusToExecutions1674138566000
+
+> 2026-01-24T14:01:17.635754707Z [inf]  Finished migration AddStatusToExecutions1674138566000
+
+> 2026-01-24T14:01:17.636559940Z [inf]  Starting migration CreateLdapEntities1674509946020
+
+> 2026-01-24T14:01:17.641907533Z [inf]  Finished migration CreateLdapEntities1674509946020
+
+> 2026-01-24T14:01:17.642550087Z [inf]  Starting migration PurgeInvalidWorkflowConnections1675940580449
+
+> 2026-01-24T14:01:17.648256315Z [inf]  Finished migration PurgeInvalidWorkflowConnections1675940580449
+
+> 2026-01-24T14:01:17.649032955Z [inf]  Starting migration MigrateExecutionStatus1676996103000
+
+> 2026-01-24T14:01:17.657296466Z [inf]  Finished migration MigrateExecutionStatus1676996103000
+
+> 2026-01-24T14:01:17.657308606Z [inf]  Starting migration UpdateRunningExecutionStatus1677236854063
+
+> 2026-01-24T14:01:17.657315921Z [inf]  Finished migration UpdateRunningExecutionStatus1677236854063
+
+> 2026-01-24T14:01:17.657878579Z [inf]  Starting migration CreateVariables1677501636754
+
+> 2026-01-24T14:01:17.665590186Z [inf]  Finished migration CreateVariables1677501636754
+
+> 2026-01-24T14:01:17.665600265Z [inf]  Starting migration CreateExecutionMetadataTable1679416281778
+
+> 2026-01-24T14:01:17.669428970Z [inf]  Finished migration CreateExecutionMetadataTable1679416281778
+
+> 2026-01-24T14:01:17.669440060Z [inf]  Starting migration AddUserActivatedProperty1681134145996
+
+> 2026-01-24T14:01:17.676072809Z [inf]  Finished migration AddUserActivatedProperty1681134145996
+
+> 2026-01-24T14:01:17.676742814Z [inf]  Starting migration RemoveSkipOwnerSetup1681134145997
+
+> 2026-01-24T14:01:17.678064208Z [inf]  Finished migration RemoveSkipOwnerSetup1681134145997
+
+> 2026-01-24T14:01:17.683720032Z [inf]  Starting migration MigrateIntegerKeysToString1690000000000
+
+> 2026-01-24T14:01:17.765553537Z [inf]  Finished migration MigrateIntegerKeysToString1690000000000
+
+> 2026-01-24T14:01:17.765562615Z [inf]  Starting migration SeparateExecutionData1690000000020
+
+> 2026-01-24T14:01:17.765568802Z [inf]  Finished migration SeparateExecutionData1690000000020
+
+> 2026-01-24T14:01:17.765574994Z [inf]  Starting migration RemoveResetPasswordColumns1690000000030
+
+> 2026-01-24T14:01:17.788786539Z [inf]  Finished migration RemoveResetPasswordColumns1690000000030
+
+> 2026-01-24T14:01:17.794888870Z [inf]  Starting migration AddMfaColumns1690000000030
+
+> 2026-01-24T14:01:17.794898716Z [inf]  Finished migration AddMfaColumns1690000000030
+
+> 2026-01-24T14:01:17.801545983Z [inf]  Starting migration AddMissingPrimaryKeyOnExecutionData1690787606731
+
+> 2026-01-24T14:01:17.801556444Z [inf]  Finished migration AddMissingPrimaryKeyOnExecutionData1690787606731
+
+> 2026-01-24T14:01:17.802284890Z [inf]  Starting migration CreateWorkflowNameIndex1691088862123
+
+> 2026-01-24T14:01:17.834200158Z [inf]  Finished migration CreateWorkflowNameIndex1691088862123
+
+> 2026-01-24T14:01:17.834210434Z [inf]  Starting migration CreateWorkflowHistoryTable1692967111175
+
+> 2026-01-24T14:01:17.835851698Z [inf]  Finished migration CreateWorkflowHistoryTable1692967111175
+
+> 2026-01-24T14:01:17.849033724Z [inf]  Starting migration ExecutionSoftDelete1693491613982
+
+> 2026-01-24T14:01:17.871108075Z [inf]  Finished migration ExecutionSoftDelete1693491613982
+
+> 2026-01-24T14:01:17.871113988Z [inf]  Starting migration DisallowOrphanExecutions1693554410387
+
+> 2026-01-24T14:01:17.893606334Z [inf]  Finished migration DisallowOrphanExecutions1693554410387
+
+> 2026-01-24T14:01:17.894274032Z [inf]  Starting migration MigrateToTimestampTz1694091729095
+
+> 2026-01-24T14:01:17.953145206Z [inf]  Finished migration MigrateToTimestampTz1694091729095
+
+> 2026-01-24T14:01:17.953156244Z [inf]  Starting migration AddWorkflowMetadata1695128658538
+
+> 2026-01-24T14:01:17.977571665Z [inf]  Finished migration AddWorkflowMetadata1695128658538
+
+> 2026-01-24T14:01:17.977582240Z [inf]  Starting migration ModifyWorkflowHistoryNodesAndConnections1695829275184
+
+> 2026-01-24T14:01:17.990392028Z [inf]  Finished migration ModifyWorkflowHistoryNodesAndConnections1695829275184
+
+> 2026-01-24T14:01:17.997129058Z [inf]  Starting migration AddGlobalAdminRole1700571993961
+
+> 2026-01-24T14:01:17.997138115Z [inf]  Finished migration AddGlobalAdminRole1700571993961
+
+> 2026-01-24T14:01:17.998772354Z [inf]  Starting migration DropRoleMapping1705429061930
+
+> 2026-01-24T14:01:18.168733001Z [inf]  Finished migration DropRoleMapping1705429061930
+
+> 2026-01-24T14:01:18.168742947Z [inf]  Starting migration RemoveFailedExecutionStatus1711018413374
+
+> 2026-01-24T14:01:18.168750296Z [inf]  Finished migration RemoveFailedExecutionStatus1711018413374
+
+> 2026-01-24T14:01:18.168763531Z [inf]  Starting migration MoveSshKeysToDatabase1711390882123
+
+> 2026-01-24T14:01:18.168771081Z [inf]  [MoveSshKeysToDatabase1711390882123] No SSH keys in filesystem, skipping
+
+> 2026-01-24T14:01:18.168777878Z [inf]  Finished migration MoveSshKeysToDatabase1711390882123
+
+> 2026-01-24T14:01:18.168784711Z [inf]  Starting migration RemoveNodesAccess1712044305787
+
+> 2026-01-24T14:01:18.168790967Z [inf]  Finished migration RemoveNodesAccess1712044305787
+
+> 2026-01-24T14:01:18.168797657Z [inf]  Starting migration CreateProject1714133768519
+
+> 2026-01-24T14:01:18.312845727Z [inf]  Finished migration CreateProject1714133768519
+
+> 2026-01-24T14:01:18.312850917Z [inf]  Starting migration MakeExecutionStatusNonNullable1714133768521
+
+> 2026-01-24T14:01:18.312855994Z [inf]  Finished migration MakeExecutionStatusNonNullable1714133768521
+
+> 2026-01-24T14:01:18.312859886Z [inf]  Starting migration AddActivatedAtUserSetting1717498465931
+
+> 2026-01-24T14:01:18.312863933Z [inf]  Finished migration AddActivatedAtUserSetting1717498465931
+
+> 2026-01-24T14:01:18.312868303Z [inf]  Starting migration AddConstraintToExecutionMetadata1720101653148
+
+> 2026-01-24T14:01:18.614759088Z [inf]  Finished migration AddConstraintToExecutionMetadata1720101653148
+
+> 2026-01-24T14:01:18.614763702Z [inf]  Starting migration FixExecutionMetadataSequence1721377157740
+
+> 2026-01-24T14:01:18.614767811Z [inf]  Finished migration FixExecutionMetadataSequence1721377157740
+
+> 2026-01-24T14:01:18.614771907Z [inf]  Starting migration CreateInvalidAuthTokenTable1723627610222
+
+> 2026-01-24T14:01:18.614776367Z [inf]  Finished migration CreateInvalidAuthTokenTable1723627610222
+
+> 2026-01-24T14:01:18.614781886Z [inf]  Starting migration RefactorExecutionIndices1723796243146
+
+> 2026-01-24T14:01:18.614786977Z [inf]  Finished migration RefactorExecutionIndices1723796243146
+
+> 2026-01-24T14:01:18.614791036Z [inf]  Starting migration CreateAnnotationTables1724753530828
+
+> 2026-01-24T14:01:18.614795095Z [inf]  Finished migration CreateAnnotationTables1724753530828
+
+> 2026-01-24T14:01:18.614799506Z [inf]  Starting migration AddApiKeysTable1724951148974
+
+> 2026-01-24T14:01:18.614804344Z [inf]  Finished migration AddApiKeysTable1724951148974
+
+> 2026-01-24T14:01:18.614809758Z [inf]  Starting migration CreateProcessedDataTable1726606152711
+
+> 2026-01-24T14:01:18.614814318Z [inf]  Finished migration CreateProcessedDataTable1726606152711
+
+> 2026-01-24T14:01:18.614819511Z [inf]  Starting migration SeparateExecutionCreationFromStart1727427440136
+
+> 2026-01-24T14:01:18.614823542Z [inf]  Finished migration SeparateExecutionCreationFromStart1727427440136
+
+> 2026-01-24T14:01:18.614827782Z [inf]  Starting migration AddMissingPrimaryKeyOnAnnotationTagMapping1728659839644
+
+> 2026-01-24T14:01:18.614833259Z [inf]  Finished migration AddMissingPrimaryKeyOnAnnotationTagMapping1728659839644
+
+> 2026-01-24T14:01:18.614837456Z [inf]  Starting migration UpdateProcessedDataValueColumnToText1729607673464
+
+> 2026-01-24T14:01:18.614841567Z [inf]  Finished migration UpdateProcessedDataValueColumnToText1729607673464
+
+> 2026-01-24T14:01:18.614845796Z [inf]  Starting migration AddProjectIcons1729607673469
+
+> 2026-01-24T14:01:18.617844685Z [inf]  Finished migration AddMockedNodesColumnToTestDefinition1733133775640
+
+> 2026-01-24T14:01:18.617844902Z [inf]  Finished migration AddProjectIcons1729607673469
+
+> 2026-01-24T14:01:18.617857204Z [inf]  Starting migration CreateTestDefinitionTable1730386903556
+
+> 2026-01-24T14:01:18.617858079Z [inf]  Starting migration AddManagedColumnToCredentialsTable1734479635324
+
+> 2026-01-24T14:01:18.617865728Z [inf]  Finished migration AddManagedColumnToCredentialsTable1734479635324
+
+> 2026-01-24T14:01:18.617872609Z [inf]  Finished migration CreateTestDefinitionTable1730386903556
+
+> 2026-01-24T14:01:18.617873005Z [inf]  Starting migration AddStatsColumnsToTestRun1736172058779
+
+> 2026-01-24T14:01:18.617879038Z [inf]  Finished migration AddStatsColumnsToTestRun1736172058779
+
+> 2026-01-24T14:01:18.617884945Z [inf]  Starting migration AddDescriptionToTestDefinition1731404028106
+
+> 2026-01-24T14:01:18.617886287Z [inf]  Starting migration CreateTestCaseExecutionTable1736947513045
+
+> 2026-01-24T14:01:18.617895001Z [inf]  Finished migration CreateTestCaseExecutionTable1736947513045
+
+> 2026-01-24T14:01:18.617895131Z [inf]  Finished migration AddDescriptionToTestDefinition1731404028106
+
+> 2026-01-24T14:01:18.617903931Z [inf]  Starting migration AddErrorColumnsToTestRuns1737715421462
+
+> 2026-01-24T14:01:18.617906540Z [inf]  Starting migration MigrateTestDefinitionKeyToString1731582748663
+
+> 2026-01-24T14:01:18.617913301Z [inf]  Finished migration MigrateTestDefinitionKeyToString1731582748663
+
+> 2026-01-24T14:01:18.617919692Z [inf]  Starting migration CreateTestMetricTable1732271325258
+
+> 2026-01-24T14:01:18.617927049Z [inf]  Finished migration CreateTestMetricTable1732271325258
+
+> 2026-01-24T14:01:18.617937190Z [inf]  Starting migration CreateTestRun1732549866705
+
+> 2026-01-24T14:01:18.617944866Z [inf]  Finished migration CreateTestRun1732549866705
+
+> 2026-01-24T14:01:18.617953210Z [inf]  Starting migration AddMockedNodesColumnToTestDefinition1733133775640
+
+> 2026-01-24T14:01:18.618182098Z [inf]  Finished migration AddErrorColumnsToTestRuns1737715421462
+
+> 2026-01-24T14:01:18.618189181Z [inf]  Starting migration CreateFolderTable1738709609940
+
+> 2026-01-24T14:01:18.618194827Z [inf]  Finished migration CreateFolderTable1738709609940
+
+> 2026-01-24T14:01:18.618200281Z [inf]  Starting migration CreateAnalyticsTables1739549398681
+
+> 2026-01-24T14:01:18.618214375Z [inf]  Finished migration CreateAnalyticsTables1739549398681
+
+> 2026-01-24T14:01:18.618220182Z [inf]  Starting migration UpdateParentFolderIdColumn1740445074052
+
+> 2026-01-24T14:01:18.618226644Z [inf]  Finished migration UpdateParentFolderIdColumn1740445074052
+
+> 2026-01-24T14:01:18.618233124Z [inf]  Starting migration RenameAnalyticsToInsights1741167584277
+
+> 2026-01-24T14:01:18.665413589Z [inf]  Finished migration RenameAnalyticsToInsights1741167584277
+
+> 2026-01-24T14:01:18.666198285Z [inf]  Starting migration AddScopesColumnToApiKeys1742918400000
+
+> 2026-01-24T14:01:18.687902717Z [inf]  Finished migration AddScopesColumnToApiKeys1742918400000
+
+> 2026-01-24T14:01:18.687921446Z [inf]  Starting migration ClearEvaluation1745322634000
+
+> 2026-01-24T14:01:18.766377539Z [inf]  Finished migration ClearEvaluation1745322634000
+
+> 2026-01-24T14:01:18.766389630Z [inf]  Starting migration AddWorkflowStatisticsRootCount1745587087521
+
+> 2026-01-24T14:01:18.766398145Z [inf]  Finished migration AddWorkflowStatisticsRootCount1745587087521
+
+> 2026-01-24T14:01:18.766406426Z [inf]  Starting migration AddWorkflowArchivedColumn1745934666076
+
+> 2026-01-24T14:01:18.766412858Z [inf]  Finished migration AddWorkflowArchivedColumn1745934666076
+
+> 2026-01-24T14:01:18.766419537Z [inf]  Starting migration DropRoleTable1745934666077
+
+> 2026-01-24T14:01:18.778191829Z [inf]  Finished migration DropRoleTable1745934666077
+
+> 2026-01-24T14:01:18.783522816Z [inf]  Starting migration AddProjectDescriptionColumn1747824239000
+
+> 2026-01-24T14:01:18.783533710Z [inf]  Finished migration AddProjectDescriptionColumn1747824239000
+
+> 2026-01-24T14:01:18.784450028Z [inf]  Starting migration AddLastActiveAtColumnToUser1750252139166
+
+> 2026-01-24T14:01:18.785437169Z [inf]  Finished migration AddLastActiveAtColumnToUser1750252139166
+
+> 2026-01-24T14:01:18.791241097Z [inf]  Starting migration AddScopeTables1750252139166
+
+> 2026-01-24T14:01:18.793083904Z [inf]  Finished migration AddScopeTables1750252139166
+
+> 2026-01-24T14:01:18.798869746Z [inf]  Starting migration AddRolesTables1750252139167
+
+> 2026-01-24T14:01:18.821767085Z [inf]  Finished migration AddRolesTables1750252139167
+
+> 2026-01-24T14:01:18.821777611Z [inf]  Starting migration LinkRoleToUserTable1750252139168
+
+> 2026-01-24T14:01:18.848459604Z [inf]  Finished migration LinkRoleToUserTable1750252139168
+
+> 2026-01-24T14:01:18.848469569Z [inf]  Starting migration RemoveOldRoleColumn1750252139170
+
+> 2026-01-24T14:01:18.849933685Z [inf]  Finished migration RemoveOldRoleColumn1750252139170
+
+> 2026-01-24T14:01:18.855450635Z [inf]  Starting migration AddInputsOutputsToTestCaseExecution1752669793000
+
+> 2026-01-24T14:01:18.885153892Z [inf]  Finished migration AddInputsOutputsToTestCaseExecution1752669793000
+
+> 2026-01-24T14:01:18.885161852Z [inf]  Starting migration LinkRoleToProjectRelationTable1753953244168
+
+> 2026-01-24T14:01:18.896239347Z [inf]  Finished migration LinkRoleToProjectRelationTable1753953244168
+
+> 2026-01-24T14:01:18.901051375Z [inf]  Starting migration CreateDataStoreTables1754475614601
+
+> 2026-01-24T14:01:18.905876821Z [inf]  Finished migration CreateDataStoreTables1754475614601
+
+> 2026-01-24T14:01:18.911166241Z [inf]  Starting migration ReplaceDataStoreTablesWithDataTables1754475614602
+
+> 2026-01-24T14:01:18.952003056Z [inf]  Finished migration ReplaceDataStoreTablesWithDataTables1754475614602
+
+> 2026-01-24T14:01:18.952011404Z [inf]  Starting migration AddTimestampsToRoleAndRoleIndexes1756906557570
+
+> 2026-01-24T14:01:18.994594848Z [inf]  Finished migration AddTimestampsToRoleAndRoleIndexes1756906557570
+
+> 2026-01-24T14:01:18.999513070Z [inf]  Starting migration AddAudienceColumnToApiKeys1758731786132
+
+> 2026-01-24T14:01:19.022642617Z [inf]  Finished migration AddAudienceColumnToApiKeys1758731786132
+
+> 2026-01-24T14:01:19.022650326Z [inf]  Starting migration AddProjectIdToVariableTable1758794506893
+
+> 2026-01-24T14:01:19.035640543Z [inf]  Finished migration AddProjectIdToVariableTable1758794506893
+
+> 2026-01-24T14:01:19.041244661Z [inf]  Starting migration ChangeValueTypesForInsights1759399811000
+
+> 2026-01-24T14:01:19.042166868Z [inf]  Finished migration ChangeValueTypesForInsights1759399811000
+
+> 2026-01-24T14:01:19.048077004Z [inf]  Starting migration CreateChatHubTables1760019379982
+
+> 2026-01-24T14:01:19.053312660Z [inf]  Finished migration CreateChatHubTables1760019379982
+
+> 2026-01-24T14:01:19.058666516Z [inf]  Starting migration CreateChatHubAgentTable1760020000000
+
+> 2026-01-24T14:01:19.100124767Z [inf]  Finished migration CreateChatHubAgentTable1760020000000
+
+> 2026-01-24T14:01:19.100138930Z [inf]  Starting migration UniqueRoleNames1760020838000
+
+> 2026-01-24T14:01:19.107127332Z [inf]  Finished migration UniqueRoleNames1760020838000
+
+> 2026-01-24T14:01:19.107133172Z [inf]  Starting migration CreateOAuthEntities1760116750277
+
+> 2026-01-24T14:01:19.133186310Z [inf]  Finished migration CreateOAuthEntities1760116750277
+
+> 2026-01-24T14:01:19.133195505Z [inf]  Starting migration CreateWorkflowDependencyTable1760314000000
+
+> 2026-01-24T14:01:19.133202071Z [inf]  Finished migration CreateWorkflowDependencyTable1760314000000
+
+> 2026-01-24T14:01:19.133208626Z [inf]  Starting migration DropUnusedChatHubColumns1760965142113
+
+> 2026-01-24T14:01:19.139123209Z [inf]  Finished migration DropUnusedChatHubColumns1760965142113
+
+> 2026-01-24T14:01:19.140020096Z [inf]  Starting migration AddWorkflowVersionColumn1761047826451
+
+> 2026-01-24T14:01:19.145658916Z [inf]  Finished migration AddWorkflowVersionColumn1761047826451
+
+> 2026-01-24T14:01:19.145667146Z [inf]  Starting migration ChangeDependencyInfoToJson1761655473000
+
+> 2026-01-24T14:01:19.148482100Z [inf]  Finished migration ChangeDependencyInfoToJson1761655473000
+
+> 2026-01-24T14:01:19.161115907Z [inf]  Starting migration AddAttachmentsToChatHubMessages1761773155024
+
+> 2026-01-24T14:01:19.161130787Z [inf]  Finished migration AddAttachmentsToChatHubMessages1761773155024
+
+> 2026-01-24T14:01:19.161141985Z [inf]  Starting migration AddToolsColumnToChatHubTables1761830340990
+
+> 2026-01-24T14:01:19.182433514Z [inf]  Finished migration AddToolsColumnToChatHubTables1761830340990
+
+> 2026-01-24T14:01:19.182442106Z [inf]  Starting migration AddWorkflowDescriptionColumn1762177736257
+
+> 2026-01-24T14:01:19.197272328Z [inf]  Finished migration AddWorkflowDescriptionColumn1762177736257
+
+> 2026-01-24T14:01:19.203489338Z [inf]  Starting migration BackfillMissingWorkflowHistoryRecords1762763704614
+
+> 2026-01-24T14:01:19.215054019Z [inf]  Finished migration BackfillMissingWorkflowHistoryRecords1762763704614
+
+> 2026-01-24T14:01:19.220860299Z [inf]  Starting migration ChangeDefaultForIdInUserTable1762771264000
+
+> 2026-01-24T14:01:19.220870197Z [inf]  Finished migration ChangeDefaultForIdInUserTable1762771264000
+
+> 2026-01-24T14:01:19.220876651Z [inf]  Starting migration AddIsGlobalColumnToCredentialsTable1762771954619
+
+> 2026-01-24T14:01:19.226169815Z [inf]  Finished migration AddIsGlobalColumnToCredentialsTable1762771954619
+
+> 2026-01-24T14:01:19.226179965Z [inf]  Starting migration AddWorkflowHistoryAutoSaveFields1762847206508
+
+> 2026-01-24T14:01:19.248209692Z [inf]  Finished migration AddWorkflowHistoryAutoSaveFields1762847206508
+
+> 2026-01-24T14:01:19.248219169Z [inf]  Starting migration AddActiveVersionIdColumn1763047800000
+
+> 2026-01-24T14:01:19.248224264Z [inf]  Finished migration AddActiveVersionIdColumn1763047800000
+
+> 2026-01-24T14:01:19.253562802Z [inf]  Starting migration ActivateExecuteWorkflowTriggerWorkflows1763048000000
+
+> 2026-01-24T14:01:19.253571280Z [inf]  Finished migration ActivateExecuteWorkflowTriggerWorkflows1763048000000
+
+> 2026-01-24T14:01:19.255383478Z [inf]  Starting migration ChangeOAuthStateColumnToUnboundedVarchar1763572724000
+
+> 2026-01-24T14:01:19.257696969Z [inf]  Finished migration ChangeOAuthStateColumnToUnboundedVarchar1763572724000
+
+> 2026-01-24T14:01:19.261717530Z [inf]  Starting migration CreateBinaryDataTable1763716655000
+
+> 2026-01-24T14:01:19.273402867Z [inf]  Finished migration CreateBinaryDataTable1763716655000
+
+> 2026-01-24T14:01:19.273417479Z [inf]  Starting migration CreateWorkflowPublishHistoryTable1764167920585
+
+> 2026-01-24T14:01:19.274870712Z [inf]  Finished migration CreateWorkflowPublishHistoryTable1764167920585
+
+> 2026-01-24T14:01:19.280455316Z [inf]  Starting migration AddCreatorIdToProjectTable1764276827837
+
+> 2026-01-24T14:01:19.303654319Z [inf]  Finished migration AddCreatorIdToProjectTable1764276827837
+
+> 2026-01-24T14:01:19.303663874Z [inf]  Starting migration CreateDynamicCredentialResolverTable1764682447000
+
+> 2026-01-24T14:01:19.303670720Z [inf]  Finished migration CreateDynamicCredentialResolverTable1764682447000
+
+> 2026-01-24T14:01:19.304475604Z [inf]  Starting migration AddDynamicCredentialEntryTable1764689388394
+
+> 2026-01-24T14:01:19.309861002Z [inf]  Finished migration AddDynamicCredentialEntryTable1764689388394
+
+> 2026-01-24T14:01:19.320643159Z [inf]  Starting migration BackfillMissingWorkflowHistoryRecords1765448186933
+
+> 2026-01-24T14:01:19.326495457Z [inf]  Finished migration BackfillMissingWorkflowHistoryRecords1765448186933
+
+> 2026-01-24T14:01:19.327188486Z [inf]  Starting migration AddResolvableFieldsToCredentials1765459448000
+
+> 2026-01-24T14:01:19.623594240Z [inf]  Finished migration AddResolvableFieldsToCredentials1765459448000
+
+> 2026-01-24T14:01:19.623599444Z [inf]  Starting migration AddIconToAgentTable1765788427674
+
+> 2026-01-24T14:01:19.623604034Z [inf]  Finished migration AddIconToAgentTable1765788427674
+
+> 2026-01-24T14:01:19.623614744Z [inf]  Starting migration ConvertAgentIdToUuid1765804780000
+
+> 2026-01-24T14:01:19.623619887Z [inf]  Finished migration ConvertAgentIdToUuid1765804780000
+
+> 2026-01-24T14:01:19.623624673Z [inf]  Starting migration AddAgentIdForeignKeys1765886667897
+
+> 2026-01-24T14:01:19.623629155Z [inf]  Finished migration AddAgentIdForeignKeys1765886667897
+
+> 2026-01-24T14:01:19.623633451Z [inf]  Starting migration AddWorkflowVersionIdToExecutionData1765892199653
+
+> 2026-01-24T14:01:19.623639233Z [inf]  Finished migration AddWorkflowVersionIdToExecutionData1765892199653
+
+> 2026-01-24T14:01:19.623644104Z [inf]  Starting migration AddWorkflowPublishScopeToProjectRoles1766064542000
+
+> 2026-01-24T14:01:19.623648967Z [inf]  Added workflow:publish scope to project roles with workflow:update
+
+> 2026-01-24T14:01:19.623653867Z [inf]  Finished migration AddWorkflowPublishScopeToProjectRoles1766064542000
+
+> 2026-01-24T14:01:19.623658100Z [inf]  Starting migration AddChatMessageIndices1766068346315
+
+> 2026-01-24T14:01:19.623662403Z [inf]  Finished migration AddChatMessageIndices1766068346315
+
+> 2026-01-24T14:01:19.623671838Z [inf]  Starting migration ExpandInsightsWorkflowIdLength1766500000000
+
+> 2026-01-24T14:01:19.623679139Z [inf]  Finished migration ExpandInsightsWorkflowIdLength1766500000000
+
+> 2026-01-24T14:01:19.623683977Z [inf]  n8n Task Broker ready on 127.0.0.1, port 5679
+
+> 2026-01-24T14:01:19.666540634Z [inf]  Failed to start Python task runner in internal mode. because Python 3 is missing from this system. Launching a Python runner in internal mode is intended only for debugging and is not recommended for production. Users are encouraged to deploy in external mode. See: https://docs.n8n.io/hosting/configuration/task-runners/#setting-up-external-mode
+
+> 2026-01-24T14:01:19.688568663Z [inf]  [license SDK] Skipping renewal on init: license cert is not initialized
+
+> 2026-01-24T14:01:21.758699397Z [inf]  Registered runner "JS Task Runner" (l3qQKZC_hrBpembauz41y) 
+
+> 2026-01-24T14:01:22.702659962Z [inf]  Version: 2.4.6
+
+> 2026-01-24T14:01:22.702670399Z [inf]  
+
+> 2026-01-24T14:01:22.702677284Z [inf]  Editor is now accessible via:
+
 > 2026-01-24T14:01:22.702683530Z [inf]  https://flows.qially.me
 
 ### Assistant
@@ -6146,116 +7511,226 @@ canonical_ref: ""
 > Then I’ll give you the exact Cloudflare Access policy setup (minimal, correct), and the first 3 “real” workflows that match your QiOS ops (QiD allocation, intake triage, daily cash checkpoint).
 
 ### User
-> Source
-> Source Image
-> n8nio/n8n:latest
-> 
-> 
-> Configure auto updates
-> 
-> 
-> Disconnect
-> Networking
-> Public Networking
-> Access to this service publicly through HTTP or TCP
-> Generate Service Domain
-> 
-> Enter the port your app is listening on
-> 
-> Target port
-> 8080
-> Choose your target port
-> 
-> 
-> Cancel
-> 
-> Generate Domain
-> 
-> Generate Domain
-> 
-> Custom Domain
-> 
-> TCP Proxy
-> Private Networking
-> Communicate with this service from within the Railway network.
-> n8n.railway.internal
-> IPv6
-> 
-> 
-> Ready to talk privately ·
-> You can also simply call me
-> n8n
-> .
-> 
-> DNS
-> n8n
-> .railway.internal
-> 
-> Endpoint name available!
-> 
-> 
-> Cancel
-> 
-> Update
-> Build
-> Metal Build Environment
-> Metal
-> 
-> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
-> 
-> 
-> Deploy
-> Custom Start Command
-> Command that will be run to start new deployments. Docs↗
-> 
-> Start Command
-> Add pre-deploy step (Docs↗)
-> Regions
-> Configure how many instances of this service are deployed in each region.
-> US East (Virginia, USA)
-> 
-> Replicas
-> 1
-> Instance
-> Multi-region replicas are only available on the Pro plan.
-> 
-> Learn More↗
-> Teardown
-> Configure old deployment termination when a new one is started. Docs↗
-> 
-> Resource Limits
-> Max amount of vCPU and Memory to allocate to each replica for this service.
-> CPU: 8 vCPU
-> 
-> Plan limit: 8 vCPU
-> 
-> Memory: 8 GB
-> 
-> Plan limit: 8 GB
-> 
-> Increase your resources
-> Cron Schedule
-> Run the service according to the specified cron schedule.
-> 
-> Add Schedule
-> Healthcheck Path
-> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
-> 
-> Healthcheck Path
-> Serverless
-> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
-> 
-> Restart Policy
-> Configure what to do when the process exits. Docs↗
-> On Failure
-> 
-> Restart the container if it exits with a non-zero exit code.
-> 
-> 
-> Number of times to try and restart the service if it stopped due to an error.
-> Max restart retries
-> 10
-> Delete Service
+> Source
+
+> Source Image
+
+> n8nio/n8n:latest
+
+> 
+
+> 
+
+> Configure auto updates
+
+> 
+
+> 
+
+> Disconnect
+
+> Networking
+
+> Public Networking
+
+> Access to this service publicly through HTTP or TCP
+
+> Generate Service Domain
+
+> 
+
+> Enter the port your app is listening on
+
+> 
+
+> Target port
+
+> 8080
+
+> Choose your target port
+
+> 
+
+> 
+
+> Cancel
+
+> 
+
+> Generate Domain
+
+> 
+
+> Generate Domain
+
+> 
+
+> Custom Domain
+
+> 
+
+> TCP Proxy
+
+> Private Networking
+
+> Communicate with this service from within the Railway network.
+
+> n8n.railway.internal
+
+> IPv6
+
+> 
+
+> 
+
+> Ready to talk privately ·
+
+> You can also simply call me
+
+> n8n
+
+> .
+
+> 
+
+> DNS
+
+> n8n
+
+> .railway.internal
+
+> 
+
+> Endpoint name available!
+
+> 
+
+> 
+
+> Cancel
+
+> 
+
+> Update
+
+> Build
+
+> Metal Build Environment
+
+> Metal
+
+> 
+
+> Use our new Metal-based build environment. The new Metal build environment is faster and will be the default for all builds in the coming months.
+
+> 
+
+> 
+
+> Deploy
+
+> Custom Start Command
+
+> Command that will be run to start new deployments. Docs↗
+
+> 
+
+> Start Command
+
+> Add pre-deploy step (Docs↗)
+
+> Regions
+
+> Configure how many instances of this service are deployed in each region.
+
+> US East (Virginia, USA)
+
+> 
+
+> Replicas
+
+> 1
+
+> Instance
+
+> Multi-region replicas are only available on the Pro plan.
+
+> 
+
+> Learn More↗
+
+> Teardown
+
+> Configure old deployment termination when a new one is started. Docs↗
+
+> 
+
+> Resource Limits
+
+> Max amount of vCPU and Memory to allocate to each replica for this service.
+
+> CPU: 8 vCPU
+
+> 
+
+> Plan limit: 8 vCPU
+
+> 
+
+> Memory: 8 GB
+
+> 
+
+> Plan limit: 8 GB
+
+> 
+
+> Increase your resources
+
+> Cron Schedule
+
+> Run the service according to the specified cron schedule.
+
+> 
+
+> Add Schedule
+
+> Healthcheck Path
+
+> Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
+
+> 
+
+> Healthcheck Path
+
+> Serverless
+
+> Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
+
+> 
+
+> Restart Policy
+
+> Configure what to do when the process exits. Docs↗
+
+> On Failure
+
+> 
+
+> Restart the container if it exits with a non-zero exit code.
+
+> 
+
+> 
+
+> Number of times to try and restart the service if it stopped due to an error.
+
+> Max restart retries
+
+> 10
+
+> Delete Service
+
 > Deleting this service will permanently delete all its deploym
 
 ### Assistant
@@ -6432,16 +7907,26 @@ canonical_ref: ""
 > Once confirmed, we move from **infrastructure** to **actual QiOS workflows**.
 
 ### User
-> Not Found
-> The train has not arrived at the station.
-> 
-> Please check your network settings to confirm that your domain has provisioned.
-> 
-> If you are a visitor, please let the owner know you're stuck at the station.
-> 
-> Request ID:
-> -fUoooi6TeKTxO6mAax-fw
-> 
+> Not Found
+
+> The train has not arrived at the station.
+
+> 
+
+> Please check your network settings to confirm that your domain has provisioned.
+
+> 
+
+> If you are a visitor, please let the owner know you're stuck at the station.
+
+> 
+
+> Request ID:
+
+> -fUoooi6TeKTxO6mAax-fw
+
+> 
+
 > Go to Railway i dont understand, the link works, but this domain alias is not resolving i check cloudflare and reailway and n8n makes no sense
 
 ### Assistant
@@ -6832,341 +8317,676 @@ canonical_ref: ""
 > Given your style and risk profile, I recommend **B with shared secret**, but your call.
 
 ### User
-> my next questions for GINA are any of the repos good to have and also i do need tts jwith real voices and agents im trying to replace eleven labs costs. #
-> voice-agents
-> Here are 43 public repositories matching this topic...
-> bolna-ai / bolna
->  Code
->  Issues
->  Pull requests
-> Conversational voice AI agents
-> 
-> twilio
-> openai
-> llama
-> plivo
-> agents
-> whisper
-> voice-assistant
-> ai-agents
-> conversational-ai
-> deepgram
-> gpt-4
-> elevenlabs
-> function-calling
-> deepseek-chat
-> deepseek
-> voice-agents
-> agentic-ai
-> cartesia
-> voice-ai-agents
-> Updated 1 hour ago
->  Python
-> voice-ai
-> rapidaai / voice-ai
->  Code
->  Issues
->  Pull requests
->  Discussions
-> Rapida is an open-source, end-to-end voice AI orchestration platform for building real-time conversational voice agents with audio streaming, STT, TTS, VAD, multi-channel integration, agent state management, and observability.
-> 
-> golang
-> open-source
-> text-to-speech
-> sip
-> orchestration
-> audio-streaming
-> telephony
-> speech-to-text
-> realtime-audio
-> voice-bot
-> voice-ai
-> agent-framework
-> voice-assistant-ai
-> llms
-> speech-ai
-> voice-ai-platform
-> voice-agents
-> voice-observability
-> voice-ai-agents
-> Updated yesterday
->  Go
-> gemini-multimodal-playground
-> saharmor / gemini-multimodal-playground
->  Code
->  Issues
->  Pull requests
-> Build realtime voice and video agents with Google's new Gemini 2.0 (API is free for now)
-> 
-> gemini
-> llm
-> voice-agents
-> Updated on Sep 11, 2025
->  TypeScript
-> Anil-matcha / AI-Voice-Agent
->  Code
->  Issues
->  Pull requests
-> Self-hosted AI voice agent
-> 
-> voice-assistant
-> conversational-agents
-> ai-assistants
-> ai-agents
-> conversational-ai
-> voice-ai
-> virtual-assistant-ai
-> ai-assistant
-> ai-agent
-> voice-agent
-> voice-agents
-> ai-voice-assistant
-> Updated on Aug 23, 2024
->  Python
-> SaynaAI / sayna
->  Code
->  Issues
->  Pull requests
-> Sayna is a unified Voice Layer for AI Agents with a seemless integration to an existing agentic frameworks
-> 
-> text-to-speech
-> speech-to-text
-> ai-agents
-> voice-synthesis
-> voice-ai
-> voice-agents
-> voice-ai-agents
-> Updated yesterday
->  Rust
-> elevenlabs / packages
->  Code
->  Issues
->  Pull requests
-> The ElevenLabs Agents SDK for TypeScript.
-> 
-> react
-> javascript
-> typescript
-> react-native
-> agents
-> conversational-ai
-> llm
-> voice-agents
-> Updated 6 hours ago
->  TypeScript
-> langgptai / awesome-voice-prompts
->  Code
->  Issues
->  Pull requests
-> Voice Prompts, GPT-4o prompts, Voice Agent Prompts, ChatGPT Prompts, HumeAI Prompts
-> 
-> voice
-> voice-chat
-> voice-assistant
-> voice-prompt
-> voice-agent
-> voice-agents
-> voice-prompts
-> voice-ai-agents
-> Updated on Jul 26, 2024
-> VapiAI / mcp-server
->  Code
->  Issues
->  Pull requests
-> Vapi MCP Server
-> 
-> ai
-> mcp
-> vapi
-> voice-agents
-> mcp-server
-> Updated 4 hours ago
->  TypeScript
-> ahmad2b / langgraph-voice-call-agent
->  Code
->  Issues
->  Pull requests
-> A real-time voice/call AI agent that lets you talk to a LangGraph agent over LiveKit — similar to "voice mode" experiences in ChatGPT Voice, OpenAI Realtime API sessions, and Gemini Live. This repo demonstrates adapting any LangGraph agent into a full-duplex, low-latency voice assistant using LiveKit Agents.
-> 
-> voice
-> agents
-> realtime-chat
-> voice-agent
-> livekit
-> voice-agents
-> langgraph
-> call-agent
-> Updated on Aug 31, 2025
->  Python
-> saaslabsco / justcall-mcp-server
->  Code
->  Issues
->  Pull requests
->  Discussions
-> JustCall's Official MCP Server
-> 
-> ai
-> mcp
-> voice-agents
-> mcp-server
-> Updated 2 days ago
->  HTML
-> DrDroidLab / voicesummary
->  Code
->  Issues
->  Pull requests
-> Open Source AI Database for Voice Agent Transcripts | Call Analysis & Insights | Extraction | Labelling & Classification
-> 
-> database
-> ai
-> voice-assistant
-> vapi
-> voice-ai
-> retell
-> livekit
-> llm
-> voice-agents
-> bolna
-> Updated on Nov 3, 2025
->  Python
-> deepgram-devs / flask-agent-function-calling-demo
->  Code
->  Issues
->  Pull requests
-> python
-> flask
-> deepgram
-> voice-agent
-> voice-agents
-> deepgram-api
-> Updated 2 weeks ago
->  Python
-> yzfly / awesome-voice-agents
->  Code
->  Issues
->  Pull requests
-> A curated list of voice AI agent frameworks, tools, resources, and best practices
-> 
-> tts
-> voice-recognition
-> vad
-> agents
-> stt
-> voice-conversion
-> voice-assistant
-> voice-activity-detection
-> realtime-chat
-> voice-synthesis
-> voice-cloning
-> voice-agents
-> Updated on Nov 16, 2025
-> deepgram-devs / sts-twilio
->  Code
->  Issues
->  Pull requests
-> Enable calls made to your Twilio phone number to pass through to Deepgram's Voice Agent API, enabling the caller to talk to a voice agent/bot.
-> 
-> twilio
-> twilio-api
-> deepgram
-> voice-agent
-> voice-agents
-> deepgram-api
-> Updated on May 7, 2025
->  Python
-> BohdanPetryshyn / voice-agent-generative-ui
->  Code
->  Issues
->  Pull requests
-> Generative UI Forms for ElevenLabs Conversational AI
-> 
-> elevenlabs
-> voice-agents
-> generative-ui
-> Updated on Feb 23, 2025
->  JavaScript
-> The-Swarm-Corporation / Voice-Agents
->  Code
->  Issues
->  Pull requests
-> Voice-Agents is a production-ready Python library for building enterprise-grade voice-enabled AI applications. Built by Swarms Corporation, it provides seamless integration with multiple TTS/STT providers including OpenAI, ElevenLabs, and Groq, with real-time streaming capabilities optimized for agent-based architectures.
-> 
-> text-to-speech
-> tts
-> openai
-> speech-to-text
-> elevenlabs
-> voice-agents
-> voice-agent-framework
-> Updated last month
->  Python
-> mahimairaja / vapiserve
->  Code
->  Issues
->  Pull requests
->  Discussions
-> A to Z Vapi's custom tools | All your voice agent needs
-> 
-> automations
-> vapi
-> voice-ai
-> voice-agents
-> vapiserve
-> Updated on Mar 16, 2025
->  Python
-> TimShaw1 / VoiceBox
->  Code
->  Issues
->  Pull requests
-> A flexible and extensible framework for integrating various AI services into Unity projects
-> 
-> ai
-> unity
-> unity-package
-> bepinex-mod
-> voice-agents
-> Updated 2 weeks ago
->  C#
-> Techiral / AutoBoss
->  Code
->  Issues
->  Pull requests
-> Launch your own no-code AI agency in minutes with real client-ready tools, no tech skills, no cost, just results.
-> 
-> firebase
-> automation
-> ai
-> gemini
-> chatbot-framework
-> no-code
-> ai-agents
-> ai-chatbot
-> supabase
-> ai-agent
-> botpress-alternative
-> voice-agents
-> genkit
-> ai-agent-tools
-> vibe-coding
-> ai-agency
-> Updated on Sep 11, 2025
->  JavaScript
-> Skymore / voice-memo-ai
->  Code
->  Issues
->  Pull requests
-> 🎙️ End-to-end AI-powered system for transcribing and summarizing audio using Azure Speech and GPT-4o. Ideal for medical, legal, and business voice notes.
-> 
-> react
-> ai
-> azure
-> voice
-> summarization
-> speech-to-text
-> fastapi
-> llm
-> voice-agents
-> Updated last month
+> my next questions for GINA are any of the repos good to have and also i do need tts jwith real voices and agents im trying to replace eleven labs costs. #
+
+> voice-agents
+
+> Here are 43 public repositories matching this topic...
+
+> bolna-ai / bolna
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Conversational voice AI agents
+
+> 
+
+> twilio
+
+> openai
+
+> llama
+
+> plivo
+
+> agents
+
+> whisper
+
+> voice-assistant
+
+> ai-agents
+
+> conversational-ai
+
+> deepgram
+
+> gpt-4
+
+> elevenlabs
+
+> function-calling
+
+> deepseek-chat
+
+> deepseek
+
+> voice-agents
+
+> agentic-ai
+
+> cartesia
+
+> voice-ai-agents
+
+> Updated 1 hour ago
+
+>  Python
+
+> voice-ai
+
+> rapidaai / voice-ai
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+>  Discussions
+
+> Rapida is an open-source, end-to-end voice AI orchestration platform for building real-time conversational voice agents with audio streaming, STT, TTS, VAD, multi-channel integration, agent state management, and observability.
+
+> 
+
+> golang
+
+> open-source
+
+> text-to-speech
+
+> sip
+
+> orchestration
+
+> audio-streaming
+
+> telephony
+
+> speech-to-text
+
+> realtime-audio
+
+> voice-bot
+
+> voice-ai
+
+> agent-framework
+
+> voice-assistant-ai
+
+> llms
+
+> speech-ai
+
+> voice-ai-platform
+
+> voice-agents
+
+> voice-observability
+
+> voice-ai-agents
+
+> Updated yesterday
+
+>  Go
+
+> gemini-multimodal-playground
+
+> saharmor / gemini-multimodal-playground
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Build realtime voice and video agents with Google's new Gemini 2.0 (API is free for now)
+
+> 
+
+> gemini
+
+> llm
+
+> voice-agents
+
+> Updated on Sep 11, 2025
+
+>  TypeScript
+
+> Anil-matcha / AI-Voice-Agent
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Self-hosted AI voice agent
+
+> 
+
+> voice-assistant
+
+> conversational-agents
+
+> ai-assistants
+
+> ai-agents
+
+> conversational-ai
+
+> voice-ai
+
+> virtual-assistant-ai
+
+> ai-assistant
+
+> ai-agent
+
+> voice-agent
+
+> voice-agents
+
+> ai-voice-assistant
+
+> Updated on Aug 23, 2024
+
+>  Python
+
+> SaynaAI / sayna
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Sayna is a unified Voice Layer for AI Agents with a seemless integration to an existing agentic frameworks
+
+> 
+
+> text-to-speech
+
+> speech-to-text
+
+> ai-agents
+
+> voice-synthesis
+
+> voice-ai
+
+> voice-agents
+
+> voice-ai-agents
+
+> Updated yesterday
+
+>  Rust
+
+> elevenlabs / packages
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> The ElevenLabs Agents SDK for TypeScript.
+
+> 
+
+> react
+
+> javascript
+
+> typescript
+
+> react-native
+
+> agents
+
+> conversational-ai
+
+> llm
+
+> voice-agents
+
+> Updated 6 hours ago
+
+>  TypeScript
+
+> langgptai / awesome-voice-prompts
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Voice Prompts, GPT-4o prompts, Voice Agent Prompts, ChatGPT Prompts, HumeAI Prompts
+
+> 
+
+> voice
+
+> voice-chat
+
+> voice-assistant
+
+> voice-prompt
+
+> voice-agent
+
+> voice-agents
+
+> voice-prompts
+
+> voice-ai-agents
+
+> Updated on Jul 26, 2024
+
+> VapiAI / mcp-server
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Vapi MCP Server
+
+> 
+
+> ai
+
+> mcp
+
+> vapi
+
+> voice-agents
+
+> mcp-server
+
+> Updated 4 hours ago
+
+>  TypeScript
+
+> ahmad2b / langgraph-voice-call-agent
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> A real-time voice/call AI agent that lets you talk to a LangGraph agent over LiveKit — similar to "voice mode" experiences in ChatGPT Voice, OpenAI Realtime API sessions, and Gemini Live. This repo demonstrates adapting any LangGraph agent into a full-duplex, low-latency voice assistant using LiveKit Agents.
+
+> 
+
+> voice
+
+> agents
+
+> realtime-chat
+
+> voice-agent
+
+> livekit
+
+> voice-agents
+
+> langgraph
+
+> call-agent
+
+> Updated on Aug 31, 2025
+
+>  Python
+
+> saaslabsco / justcall-mcp-server
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+>  Discussions
+
+> JustCall's Official MCP Server
+
+> 
+
+> ai
+
+> mcp
+
+> voice-agents
+
+> mcp-server
+
+> Updated 2 days ago
+
+>  HTML
+
+> DrDroidLab / voicesummary
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Open Source AI Database for Voice Agent Transcripts | Call Analysis & Insights | Extraction | Labelling & Classification
+
+> 
+
+> database
+
+> ai
+
+> voice-assistant
+
+> vapi
+
+> voice-ai
+
+> retell
+
+> livekit
+
+> llm
+
+> voice-agents
+
+> bolna
+
+> Updated on Nov 3, 2025
+
+>  Python
+
+> deepgram-devs / flask-agent-function-calling-demo
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> python
+
+> flask
+
+> deepgram
+
+> voice-agent
+
+> voice-agents
+
+> deepgram-api
+
+> Updated 2 weeks ago
+
+>  Python
+
+> yzfly / awesome-voice-agents
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> A curated list of voice AI agent frameworks, tools, resources, and best practices
+
+> 
+
+> tts
+
+> voice-recognition
+
+> vad
+
+> agents
+
+> stt
+
+> voice-conversion
+
+> voice-assistant
+
+> voice-activity-detection
+
+> realtime-chat
+
+> voice-synthesis
+
+> voice-cloning
+
+> voice-agents
+
+> Updated on Nov 16, 2025
+
+> deepgram-devs / sts-twilio
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Enable calls made to your Twilio phone number to pass through to Deepgram's Voice Agent API, enabling the caller to talk to a voice agent/bot.
+
+> 
+
+> twilio
+
+> twilio-api
+
+> deepgram
+
+> voice-agent
+
+> voice-agents
+
+> deepgram-api
+
+> Updated on May 7, 2025
+
+>  Python
+
+> BohdanPetryshyn / voice-agent-generative-ui
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Generative UI Forms for ElevenLabs Conversational AI
+
+> 
+
+> elevenlabs
+
+> voice-agents
+
+> generative-ui
+
+> Updated on Feb 23, 2025
+
+>  JavaScript
+
+> The-Swarm-Corporation / Voice-Agents
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Voice-Agents is a production-ready Python library for building enterprise-grade voice-enabled AI applications. Built by Swarms Corporation, it provides seamless integration with multiple TTS/STT providers including OpenAI, ElevenLabs, and Groq, with real-time streaming capabilities optimized for agent-based architectures.
+
+> 
+
+> text-to-speech
+
+> tts
+
+> openai
+
+> speech-to-text
+
+> elevenlabs
+
+> voice-agents
+
+> voice-agent-framework
+
+> Updated last month
+
+>  Python
+
+> mahimairaja / vapiserve
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+>  Discussions
+
+> A to Z Vapi's custom tools | All your voice agent needs
+
+> 
+
+> automations
+
+> vapi
+
+> voice-ai
+
+> voice-agents
+
+> vapiserve
+
+> Updated on Mar 16, 2025
+
+>  Python
+
+> TimShaw1 / VoiceBox
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> A flexible and extensible framework for integrating various AI services into Unity projects
+
+> 
+
+> ai
+
+> unity
+
+> unity-package
+
+> bepinex-mod
+
+> voice-agents
+
+> Updated 2 weeks ago
+
+>  C#
+
+> Techiral / AutoBoss
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> Launch your own no-code AI agency in minutes with real client-ready tools, no tech skills, no cost, just results.
+
+> 
+
+> firebase
+
+> automation
+
+> ai
+
+> gemini
+
+> chatbot-framework
+
+> no-code
+
+> ai-agents
+
+> ai-chatbot
+
+> supabase
+
+> ai-agent
+
+> botpress-alternative
+
+> voice-agents
+
+> genkit
+
+> ai-agent-tools
+
+> vibe-coding
+
+> ai-agency
+
+> Updated on Sep 11, 2025
+
+>  JavaScript
+
+> Skymore / voice-memo-ai
+
+>  Code
+
+>  Issues
+
+>  Pull requests
+
+> 🎙️ End-to-end AI-powered system for transcribing and summarizing audio using Azure Speech and GPT-4o. Ideal for medical, legal, and business voice notes.
+
+> 
+
+> react
+
+> ai
+
+> azure
+
+> voice
+
+> summarization
+
+> speech-to-text
+
+> fastapi
+
+> llm
+
+> voice-agents
+
+> Updated last month
+
 >  TypeScript  https://github.com/NVIDIA/personaplex
 > https://github.com/dograh-hq/dograh
 > https://github.com/openai/openai-agents-js

@@ -3,9 +3,9 @@ layout: page
 title: "EIN Status Update"
 slug: "ein_status_update"
 created_at: "2023-07-29 15:34:26"
-updated_at: "2023-07-29 15:34:26"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

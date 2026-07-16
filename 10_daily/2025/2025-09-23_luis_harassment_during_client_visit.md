@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Harassment During Client Visit"
 slug: "luis_harassment_during_client_visit"
 created_at: "2025-09-23"
-updated_at: "2025-09-23"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0b6bcc7f1d2944c6a3c3c87b381d4807
 canonical_ref: ""
 ---
 

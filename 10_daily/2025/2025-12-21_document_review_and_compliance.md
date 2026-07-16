@@ -3,9 +3,9 @@ layout: page
 title: "Document review and compliance"
 slug: "document_review_and_compliance"
 created_at: "2025-12-21 15:41:11"
-updated_at: "2025-12-21 15:41:11"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3539,17 +3539,28 @@ canonical_ref: ""
 > If you want next, I can review your current `Case_Log.md` and tell you *exactly* what to keep, what to trim, and what to leave alone.
 
 ### User
-> ok but im at this point i might as well make sure my current case log is not lost and we have a seperate time log entrie for my work on the case or loss time can capacity incase i use it in court which i will be doing that, should we just include it as part of the financial tracker (maybe rename it) and leave my case log alone and also i just added cursor rules and agents to help more what other agents do you recommend and what rules should we add now before we move foreward. ```markdown
-> . 📂 rules
-> ├── 📄 201-compliance-ucc.mdc
-> ├── 📄 202-court-clerk.mdc
-> ├── 📄 301-plaintiff-attorney.mdc
-> ├── 📄 302-judge.mdc
-> ├── 📄 auditor.mdc
-> ├── 📄 clerk-agent.mdc
-> ├── 📄 compliance-agent.mdc
-> ├── 📄 critic.mdc
-> └── 📄 strategist.mdc
+> ok but im at this point i might as well make sure my current case log is not lost and we have a seperate time log entrie for my work on the case or loss time can capacity incase i use it in court which i will be doing that, should we just include it as part of the financial tracker (maybe rename it) and leave my case log alone and also i just added cursor rules and agents to help more what other agents do you recommend and what rules should we add now before we move foreward. ```markdown
+
+> . 📂 rules
+
+> ├── 📄 201-compliance-ucc.mdc
+
+> ├── 📄 202-court-clerk.mdc
+
+> ├── 📄 301-plaintiff-attorney.mdc
+
+> ├── 📄 302-judge.mdc
+
+> ├── 📄 auditor.mdc
+
+> ├── 📄 clerk-agent.mdc
+
+> ├── 📄 compliance-agent.mdc
+
+> ├── 📄 critic.mdc
+
+> └── 📄 strategist.mdc
+
 > ```
 
 ### Assistant
@@ -4229,40 +4240,74 @@ canonical_ref: ""
 > If you paste your current index note titles (or your existing MOCs), I’ll adjust the `.cursorrules` parent list to match your exact vault naming so the links never break.
 
 ### User
-> fyi, We have successfully pivoted your **Quartz 4** setup from a standard GitHub Pages deployment to a high-privacy, mobile-optimized legal repository hosted on **Cloudflare Pages**.
-> 
-> Here is the "receipt" of our progress and the current state of your system:
-> 
-> ---
-> 
-> ## 1. Architecture & Deployment
-> 
-> * **Hosting Shift:** We moved the hosting to **Cloudflare Pages** to keep your legal site private for free, utilizing **Cloudflare Access (Zero Trust)** for security.
-> * **Directory Strategy:** We finalized a **dedicated subfolder strategy** (pointing to `case_fcfcu_v_codyrv`) to keep your legal files separate from the Quartz engine files.
-> * **Build Logic:** We configured the Cloudflare build command to `npx quartz build -d case_fcfcu_v_codyrv`, ensuring your site URLs remain clean and professional.
-> 
-> ## 2. Configuration & Layout
-> 
-> * **Tokyo Night Theme:** We applied the **Tokyo Night** color scheme to your `quartz.config.ts`, giving your vault a high-contrast, professional "dark mode" aesthetic.
-> * **Explorer Fix:** We resolved a "deadlock" build crash by hardening the `Explorer` component in `quartz.layout.ts` to safely handle undefined file properties.
-> * **Media Support:** We enabled **HTML embeds** in the configuration to ensure your evidence (MP4 videos and PDFs) renders as playable content rather than just links.
-> 
-> ## 3. The "Case Hub" Homepage
-> 
-> * **Index Transformation:** We converted your custom mobile HTML hub into a **Quartz-compatible `index.md**` using HTML-in-Markdown, allowing it to function as a dynamic app-like interface.
-> * **Dynamic Links:** We mapped the hub's buttons to your actual folder structure (`10_filings`, `20_evidence_vault`, `30_court_record`), ensuring the navigation matches your case organization exactly.
-> 
-> ## 4. Performance & Workflow
-> 
-> * **Slow Connection Fixes:** We implemented strategies to handle your limited bandwidth, including **Git LFS** for large evidence files and increasing the **Git postBuffer** to prevent timeouts.
-> * **Canvas Strategy:** We established a workflow to handle Obsidian `.canvas` files by exporting them as images and embedding them in `.md` files for full web compatibility.
-> 
-> ---
-> 
-> ### Your Current Directory Tree Look
-> 
-> ### Next Step
-> 
+> fyi, We have successfully pivoted your **Quartz 4** setup from a standard GitHub Pages deployment to a high-privacy, mobile-optimized legal repository hosted on **Cloudflare Pages**.
+
+> 
+
+> Here is the "receipt" of our progress and the current state of your system:
+
+> 
+
+> ---
+
+> 
+
+> ## 1. Architecture & Deployment
+
+> 
+
+> * **Hosting Shift:** We moved the hosting to **Cloudflare Pages** to keep your legal site private for free, utilizing **Cloudflare Access (Zero Trust)** for security.
+
+> * **Directory Strategy:** We finalized a **dedicated subfolder strategy** (pointing to `case_fcfcu_v_codyrv`) to keep your legal files separate from the Quartz engine files.
+
+> * **Build Logic:** We configured the Cloudflare build command to `npx quartz build -d case_fcfcu_v_codyrv`, ensuring your site URLs remain clean and professional.
+
+> 
+
+> ## 2. Configuration & Layout
+
+> 
+
+> * **Tokyo Night Theme:** We applied the **Tokyo Night** color scheme to your `quartz.config.ts`, giving your vault a high-contrast, professional "dark mode" aesthetic.
+
+> * **Explorer Fix:** We resolved a "deadlock" build crash by hardening the `Explorer` component in `quartz.layout.ts` to safely handle undefined file properties.
+
+> * **Media Support:** We enabled **HTML embeds** in the configuration to ensure your evidence (MP4 videos and PDFs) renders as playable content rather than just links.
+
+> 
+
+> ## 3. The "Case Hub" Homepage
+
+> 
+
+> * **Index Transformation:** We converted your custom mobile HTML hub into a **Quartz-compatible `index.md**` using HTML-in-Markdown, allowing it to function as a dynamic app-like interface.
+
+> * **Dynamic Links:** We mapped the hub's buttons to your actual folder structure (`10_filings`, `20_evidence_vault`, `30_court_record`), ensuring the navigation matches your case organization exactly.
+
+> 
+
+> ## 4. Performance & Workflow
+
+> 
+
+> * **Slow Connection Fixes:** We implemented strategies to handle your limited bandwidth, including **Git LFS** for large evidence files and increasing the **Git postBuffer** to prevent timeouts.
+
+> * **Canvas Strategy:** We established a workflow to handle Obsidian `.canvas` files by exporting them as images and embedding them in `.md` files for full web compatibility.
+
+> 
+
+> ---
+
+> 
+
+> ### Your Current Directory Tree Look
+
+> 
+
+> ### Next Step
+
+> 
+
 > Since the build is now technically stable, **would you like me to help you finalize that "Confidential" watermark in the Tokyo Night theme to ensure every page clearly indicates its sensitive nature?**
 
 ### Assistant
@@ -5161,57 +5206,108 @@ canonical_ref: ""
 > I *am* concerned about your energy — and we’re going to protect that too.
 
 ### User
-> WHAT DO I PICK? Primary concern
-> What is your primary reason for contacting the Civil Rights Division?required
-> 
-> Select the reason that best describes your concern. Each reason lists examples of civil rights violations that may relate to your incident. In another section of this report, you will be able to describe your concern in your own words.
-> 
-> Workplace discrimination or other employment-related problem.
-> Examples:
-> Discriminated against because you are a US Citizen.
-> Fired, not hired, or demoted for reasons unrelated to job performance or qualifications.
-> Retaliated against for reporting discrimination.
-> Inappropriately asked to provide immigration documentation.
-> Denied reemployment or fired based on military service.
-> Denied an accommodation for a disability, including not being allowed to have a service animal in the workplace.
-> 
-> Housing discrimination or harassment.
-> Examples:
-> Denied housing, a permit, or a loan based on personal characteristics like race, sex, and/or having children under 18 years old.
-> Harassment by a landlord or another tenant, including sexual harassment.
-> Challenges with terminating a lease due to military status change.
-> Denied an accommodation for a disability, including not being allowed to have a service or assistance animal in public housing.
-> 
-> Discrimination at a school, educational program or service, or related to receiving education.
-> Examples:
-> Harassment based on race, sex, national origin, disability, or religion.
-> Denied admission or segregated in an education program or activity.
-> Denied educational accommodations for a disability or language barrier.
-> 
-> Mistreated by police, correctional staff, or inmates.
-> (Including while in prison)
-> 
-> Examples:
-> Police brutality or use of excessive force, including patterns of police misconduct.
-> Searched and arrested under false pretenses, including racial or other discriminatory profiling.
-> Denied rights while arrested or incarcerated.
-> Denied access to safe living conditions or accommodations for a disability, language barrier, or religious practice while incarcerated.
-> 
-> Voting rights or ability to vote affected.
-> Examples:
-> Obstacles to registering to vote, obtaining or submitting a ballot, having your ballot counted, or entering a polling place to vote.
-> Denied adequate voting assistance or accommodations for a disability at a polling place.
-> Restricted or prevented from participating in an election, including voting, becoming a candidate, or being elected for office.
-> 
-> Discriminated against in a commercial location or public place.
-> This could include a store, restaurant, bar, hotel, place of worship, library, medical facility, bank, courthouse, government building, public park or street, as well as online.
-> 
-> Examples:
-> A physical or online location that does not provide disability accommodations.
-> Denied service or entry because of a perceived personal characteristic like race, sex, or religion.
-> Denied an accommodation for a disability, including not being allowed to have a service animal in a commercial or public location.
-> 
-> Something else happened.
+> WHAT DO I PICK? Primary concern
+
+> What is your primary reason for contacting the Civil Rights Division?required
+
+> 
+
+> Select the reason that best describes your concern. Each reason lists examples of civil rights violations that may relate to your incident. In another section of this report, you will be able to describe your concern in your own words.
+
+> 
+
+> Workplace discrimination or other employment-related problem.
+
+> Examples:
+
+> Discriminated against because you are a US Citizen.
+
+> Fired, not hired, or demoted for reasons unrelated to job performance or qualifications.
+
+> Retaliated against for reporting discrimination.
+
+> Inappropriately asked to provide immigration documentation.
+
+> Denied reemployment or fired based on military service.
+
+> Denied an accommodation for a disability, including not being allowed to have a service animal in the workplace.
+
+> 
+
+> Housing discrimination or harassment.
+
+> Examples:
+
+> Denied housing, a permit, or a loan based on personal characteristics like race, sex, and/or having children under 18 years old.
+
+> Harassment by a landlord or another tenant, including sexual harassment.
+
+> Challenges with terminating a lease due to military status change.
+
+> Denied an accommodation for a disability, including not being allowed to have a service or assistance animal in public housing.
+
+> 
+
+> Discrimination at a school, educational program or service, or related to receiving education.
+
+> Examples:
+
+> Harassment based on race, sex, national origin, disability, or religion.
+
+> Denied admission or segregated in an education program or activity.
+
+> Denied educational accommodations for a disability or language barrier.
+
+> 
+
+> Mistreated by police, correctional staff, or inmates.
+
+> (Including while in prison)
+
+> 
+
+> Examples:
+
+> Police brutality or use of excessive force, including patterns of police misconduct.
+
+> Searched and arrested under false pretenses, including racial or other discriminatory profiling.
+
+> Denied rights while arrested or incarcerated.
+
+> Denied access to safe living conditions or accommodations for a disability, language barrier, or religious practice while incarcerated.
+
+> 
+
+> Voting rights or ability to vote affected.
+
+> Examples:
+
+> Obstacles to registering to vote, obtaining or submitting a ballot, having your ballot counted, or entering a polling place to vote.
+
+> Denied adequate voting assistance or accommodations for a disability at a polling place.
+
+> Restricted or prevented from participating in an election, including voting, becoming a candidate, or being elected for office.
+
+> 
+
+> Discriminated against in a commercial location or public place.
+
+> This could include a store, restaurant, bar, hotel, place of worship, library, medical facility, bank, courthouse, government building, public park or street, as well as online.
+
+> 
+
+> Examples:
+
+> A physical or online location that does not provide disability accommodations.
+
+> Denied service or entry because of a perceived personal characteristic like race, sex, or religion.
+
+> Denied an accommodation for a disability, including not being allowed to have a service animal in a commercial or public location.
+
+> 
+
+> Something else happened.
+
 > The examples above reflect some but not all of the civil rights violations that we address. Select this option if you don’t see an example that applies to your situation. You will be able to tell us more later.
 
 ### Assistant
@@ -5290,17 +5386,28 @@ canonical_ref: ""
 > If you want, I can stay with you through the **next screen** and help you phrase each response cleanly and calmly.
 
 ### User
-> Location details
-> Please tell us the city, state, and name of the location where this incident took place. This ensures your report is reviewed by the right people within the Civil Rights Division.
-> 
-> Where did this happen?
-> Organization namerequired
-> Examples: Name of business, school, intersection, prison, polling place, website, etc.
-> 
-> 4817 SHADOW POINTE
-> Street address 1
-> Street address 2
-> City/townrequired
+> Location details
+
+> Please tell us the city, state, and name of the location where this incident took place. This ensures your report is reviewed by the right people within the Civil Rights Division.
+
+> 
+
+> Where did this happen?
+
+> Organization namerequired
+
+> Examples: Name of business, school, intersection, prison, polling place, website, etc.
+
+> 
+
+> 4817 SHADOW POINTE
+
+> Street address 1
+
+> Street address 2
+
+> City/townrequired
+
 > Staterequired
 
 ### Assistant
@@ -5398,37 +5505,68 @@ canonical_ref: ""
 > If you want, paste the **next screen** and I’ll walk you through that too, step by step, until you’re done.
 
 ### User
-> Personal characteristics
-> Do you believe any of these personal characteristics influenced why you were treated this way?required
-> There are federal and state laws that protect people from discrimination based on their personal characteristics. Here is a list of the most common characteristics that are legally protected. Select any that apply to your incident.
-> 
-> 
-> Age
-> 
-> Disability (including temporary or recovered and including HIV and drug addiction)
-> 
-> Family, marital, or parental status
-> 
-> Genetic information (including family medical history)
-> 
-> Immigration/citizenship status (choosing this will not share your status)
-> 
-> Language
-> 
-> National origin (including ancestry and ethnicity)
-> 
-> Pregnancy
-> 
-> Race/color
-> 
-> Religion
-> 
-> Sex
-> 
-> Sexual orientation
-> 
-> None of these apply to me
-> 
+> Personal characteristics
+
+> Do you believe any of these personal characteristics influenced why you were treated this way?required
+
+> There are federal and state laws that protect people from discrimination based on their personal characteristics. Here is a list of the most common characteristics that are legally protected. Select any that apply to your incident.
+
+> 
+
+> 
+
+> Age
+
+> 
+
+> Disability (including temporary or recovered and including HIV and drug addiction)
+
+> 
+
+> Family, marital, or parental status
+
+> 
+
+> Genetic information (including family medical history)
+
+> 
+
+> Immigration/citizenship status (choosing this will not share your status)
+
+> 
+
+> Language
+
+> 
+
+> National origin (including ancestry and ethnicity)
+
+> 
+
+> Pregnancy
+
+> 
+
+> Race/color
+
+> 
+
+> Religion
+
+> 
+
+> Sex
+
+> 
+
+> Sexual orientation
+
+> 
+
+> None of these apply to me
+
+> 
+
 > Other reason -- ALSO ABBOT KEPT CALLING ME HE, SO WE COULD PROBABLY ADD SEX OR ORIENTATION TOO OR GENDER.
 
 ### Assistant
@@ -5535,14 +5673,22 @@ canonical_ref: ""
 > If you want, paste the **next question** and I’ll keep walking you through it until you hit “submit.”
 
 ### User
-> Date
-> It is important for us to know how recently this incident happened so we can take the appropriate action. If this happened over a period of time or is still happening, please provide the most recent date.
-> 
-> When did this happen?
-> * You must enter a month and year. Please use the format MM/DD/YYYY.
-> 
-> Month*
-> Day
+> Date
+
+> It is important for us to know how recently this incident happened so we can take the appropriate action. If this happened over a period of time or is still happening, please provide the most recent date.
+
+> 
+
+> When did this happen?
+
+> * You must enter a month and year. Please use the format MM/DD/YYYY.
+
+> 
+
+> Month*
+
+> Day
+
 > Year*
 
 ### Assistant
@@ -5563,15 +5709,24 @@ canonical_ref: ""
 > Proceed with that and paste the next screen if you want me to sanity-check it before you submit.
 
 ### User
-> Personal description
-> In your own words, describe what happenedrequired
-> Please share details like:
-> 
-> Time
-> Names of people involved including witnesses if there are any
-> Any supporting materials (please list and describe them)
-> While you cannot submit these materials through this site, we may request copies of these from you at a later date. If you provide details of these materials, we can know what will be most helpful for your report.
-> 
+> Personal description
+
+> In your own words, describe what happenedrequired
+
+> Please share details like:
+
+> 
+
+> Time
+
+> Names of people involved including witnesses if there are any
+
+> Any supporting materials (please list and describe them)
+
+> While you cannot submit these materials through this site, we may request copies of these from you at a later date. If you provide details of these materials, we can know what will be most helpful for your report.
+
+> 
+
 > 500 words remaining
 
 ### Assistant
@@ -5609,12 +5764,18 @@ canonical_ref: ""
 > You’re doing this correctly.
 
 ### User
-> Report successfully submitted
-> Please save your record number for tracking.
-> paper
-> Your record number is:
-> 688619-FXN
-> Print report
+> Report successfully submitted
+
+> Please save your record number for tracking.
+
+> paper
+
+> Your record number is:
+
+> 688619-FXN
+
+> Print report
+
 > Save report
 
 ### Assistant
@@ -6704,77 +6865,148 @@ canonical_ref: ""
 > So you never think about this again.
 
 ### User
-> Submission Agreements
-> 
-> Each “lead document” I uploaded matches the filing code I selected for it.
-> 
-> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
-> 
-> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
-> 
-> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
-> Case Information
-> Court Location
-> Marion Superior Court 3
-> Case Type
-> MF - Mortgage Foreclosure
-> Case Category
-> Civil
-> Judge
-> Miller, Gary L
-> Parties
-> Party Type
-> Party Name
-> Lead Attorney
-> Plaintiff
-> Financial Center First Credit Union
-> Felix O'Neill Rippy,Michael E. Farrer
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> Defendant
-> American Express National Bank, N.A.
-> Defendant
-> Cody Rice-Velasquez
-> Filings
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Proposed Exhibit Filed
-> eFile Only
-> Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.
-> 
-> Service Contacts
-> Party Type
-> Party Name
-> Service Contacts
-> Plaintiff
-> Financial Center First Credit Union
-> person
-> 0
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> person
-> 0
-> Defendant
-> American Express National Bank, N.A.
-> person
-> 0
-> Defendant
-> Cody Rice-Velasquez
-> person
-> 0
-> Other Service Contacts
-> person
-> 0
-> Fees
-> Payment account
-> card
-> Party responsible for envelope fees
-> Cody Rice-Velasquez
-> Total
-> $0.00
-> Grand Total
+> Submission Agreements
+
+> 
+
+> Each “lead document” I uploaded matches the filing code I selected for it.
+
+> 
+
+> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
+
+> 
+
+> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
+
+> 
+
+> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
+
+> Case Information
+
+> Court Location
+
+> Marion Superior Court 3
+
+> Case Type
+
+> MF - Mortgage Foreclosure
+
+> Case Category
+
+> Civil
+
+> Judge
+
+> Miller, Gary L
+
+> Parties
+
+> Party Type
+
+> Party Name
+
+> Lead Attorney
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> Felix O'Neill Rippy,Michael E. Farrer
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> Filings
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Proposed Exhibit Filed
+
+> eFile Only
+
+> Declaration of Defendant regarding ongoing displacement, economic harm, removal and retrieval conduct, and interference with access to the courts.
+
+> 
+
+> Service Contacts
+
+> Party Type
+
+> Party Name
+
+> Service Contacts
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> person
+
+> 0
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> person
+
+> 0
+
+> Other Service Contacts
+
+> person
+
+> 0
+
+> Fees
+
+> Payment account
+
+> card
+
+> Party responsible for envelope fees
+
+> Cody Rice-Velasquez
+
+> Total
+
+> $0.00
+
+> Grand Total
+
 > $0.00
 
 ### Assistant

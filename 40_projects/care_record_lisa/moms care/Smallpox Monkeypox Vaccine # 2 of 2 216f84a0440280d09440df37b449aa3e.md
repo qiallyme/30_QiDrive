@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Smallpox Monkeypox Vaccine # 2 Of 2 216f84a0440280d09440df37b449aa3e"
-slug: ""
+slug: smallpox-monkeypox-vaccine-2-of-2-216f84a0440280d09440df37b449aa3e
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0af24f4672094eb5b69bfd0759c84b23
 canonical_ref: ""
 source_type: manual
 template_key: master-template

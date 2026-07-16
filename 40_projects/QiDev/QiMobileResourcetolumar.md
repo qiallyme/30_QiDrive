@@ -11,9 +11,26 @@ qi_decimal: 0.00.00-INTAKE
 qid: q0b1c2a140f38
 status: active
 system: qios
-keywords:
+keywords: []
 - intake
+layout: page
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 4ce2518d22704ffb841cbd2e338b694c
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
+
 Perfect — let’s take **QiMobileResource™** and map it into a full **SBA-approved business plan** structure.
 
 The SBA prefers a **formal yet narrative style** — clean sections with data-driven clarity and a clear path to profitability.

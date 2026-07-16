@@ -3,9 +3,9 @@ layout: page
 title: "Glass panel cost estimate"
 slug: "glass_panel_cost_estimate"
 created_at: "2025-09-15 04:24:36"
-updated_at: "2025-09-15 04:24:36"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

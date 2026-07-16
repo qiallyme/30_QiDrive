@@ -3,9 +3,9 @@ layout: page
 title: "Care Log Entry"
 slug: "care_log_entry"
 created_at: "2026-05-24 13:13:04"
-updated_at: "2026-05-24 13:13:04"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -4566,75 +4566,144 @@ canonical_ref: ""
 > > Even when I was not directly paying money out of pocket, I was losing income-producing time, energy, mobility, and planning capacity. That is still a real financial cost.
 
 ### User
-> AND HWO MY MOM IS ALWAYS LIKE I DIDNT ASK YOU TO DO THAT, AND IM LIKE, IM NOT A HIGHLY EDUCATED EMPATHIC, CHAOS WHISPERER TO BE YOUR SLAVE MOTHER. SMH, AND LOOK AT WHAT EVEN CONFORT KEEPER SAYS ON THEIR SITE. Compassion Fatigue: What Family Caregivers Need to Know
-> Caring for others is often driven by motivations of love and understanding. It’s not uncommon for family caregivers to initially feel that their capacity for helping those they love is nearly limitless.
-> 
-> Contact an Office in Your Area
-> compassion-fatigueKnowing the Limits
-> Caring for others is often driven by motivations of love and understanding. It’s not uncommon for family caregivers to initially feel that their capacity for helping those they love is nearly limitless. From taking care of finances and managing medications to preparing meals and cleaning, there’s certainly a sense of fulfillment that comes along with assisting a loved one. But many find themselves going through the motions of caring without taking time out to focus on their own needs – often to the point of physical and emotional exhaustion. As a result, family caregivers may feel something they’ve never experienced before: decreased empathy. This condition is known as compassion fatigue.
-> 
-> In decades past, compassion fatigue was seen primarily in healthcare professionals. This should hardly come as a surprise considering the profession involves constantly helping patients who are suffering or experiencing diminished quality of life. But as the country’s aging population continues to grow, there are many family caregivers who are left feeling much the same way.
-> 
->  In addition to the lower threshold of empathy, family caregivers experiencing compassion fatigue may feel the following:
-> 
-> Exhaustion (physical and/or emotional)
-> Feelings of dread or guilt
-> Irritability, anxiety, or anger
-> Difficulty sleeping
-> Difficulty making decisions
-> Feeling disconnected
-> Trouble finding meaning in caregiving
-> Self-isolation
-> The Compassion Fatigue Awareness Project notes that the worst symptom of compassion fatigue is denial because it prohibits family caregivers from examining the feelings associated with their caregiving situation. And if ignored for an extended period of time, family caregivers may begin to feel resentment toward their loved one, ultimately leading to a communication breakdown and strained relationship.
-> 
-> Outside relationships suffer as well. In a collaborative research study with the Stanford Center on Longevity, Comfort Keepers, and ClearCare, it was indicated that those responsible for a loved one with a severe illness experience poor emotional wellbeing because of their inability to properly maintain their social lives. The results of the study highlight the increasing need for family caregivers to not only acknowledge their compassion fatigue, but also take steps toward self-care. Doing so can certainly help the family caregiver, but it will also help mend the relationship with their loved one. 
-> 
-> What to Do Next
-> Below are a few steps that family caregivers can take to combat compassion fatigue and get back to feeling positive about caring for their loved ones.
-> 
-> Understand the common signs of compassion fatigue (listed above) and acknowledge them if they occur.
-> Practice a self-care regimen that includes a balanced diet, regular exercise, and consistent sleep.
-> Carve out time to spend with friends and maintain social connections.
-> Find a caregiver support program, either in the community or online. 
-> Document your thoughts and feelings related to caregiving in a journal.
-> Choose healthy activities during your downtime (e.g., go for a walk, meditate, or practice a favorite hobby).
-> Discuss your feelings with a counselor or therapist. 
->  Comfort Keepers®Can Help
-> Caring for others, especially those who have been instrumental in our upbringing, can be uniquely rewarding. At Comfort Keepers®, we value the relationships family caregivers have with their loved ones, and it’s our goal to help maintain them. We offer respite care and senior care services that help family caregivers take the time they need to practice self-care, with peace of mind that their loved ones are receiving quality assistance.
-> 
-> Learn more about our respite care and senior care services by contacting a local office today. 
-> 
-> References:
-> Good Therapy. “The Cost of Caring: 10 Ways to Prevent Compassion Fatigue.” Web. 2016.
-> Psychology Today. “Are You Suffering from Compassion Fatigue?” by Sherrie Bourg Carter Psy.D. Web. 2014.
-> Stanford Center on Longevity. “Spotlight on Caregiving: Exploring the Well-being of Family Caregivers” by
-> Sarah Raposo, Jessica Barnes, Tamara Sims, Amy Yotopoulos, Laura Carstensen, Mary Bowman,
-> Jacquelyn Kung. Web. 2016.
-> Daily Caring. “How to Cope with Compassion Fatigue: 8 Tips for Caregiver.” Web. 2017.
-> 
-> AARP. “Caregiving in the U.S.” Web. 2015. Caregivers Providing End of Life Care Need Support
-> Many family caregivers must deal with not only the time demands and additional responsibilities, but also the emotional needs of their loved one and family.
-> 
-> Contact an Office in Your Area
-> Comfort Keepers can provide respite they need
-> The Hospice Foundation of America estimates that almost half a million people, 68 percent being age 65 or older, received hospice care in 2006.  For most, that care involved a family caregiver.
-> 
-> According to the National Family Caregivers Association (NFCA), more than one quarter (26.6 percent) of the adult population has provided care for a chronically ill, disabled or aging family member or friend during the past year. Based on current census data, that translates into more than 50 million people.
-> 
-> Hospice services address all aspects of care, emphasizing the control of pain and discomfort and allow the patient and family to focus on maintaining quality of life.  Providing care in a hospice situation is difficult at best.  Many family caregivers must deal with not only the time demands and additional responsibilities but also the emotional needs of their loved one and family.
-> 
-> Recent medical research indicates the stress associated with caregiving can lead to a weakened immune system and in some cases take years off the caregiver's life. Those risks increase when they have to manage caregiving responsibilities in an end of life situation and while juggling career and family.
-> 
-> "We have seen how stressful the demands of caregiving can be," said Jim Booth, President and CEO of Comfort Keepers Franchising, Inc.  "For an individual juggling the demands of a job and being a caregiver, simple everyday responsibilities like grocery shopping or laundry can get overlooked.  That is where a service like Comfort Keepers can help."
-> 
-> For those working caregivers, below are a few things to consider.
-> 
-> If others offer to assist with some of their caregiving responsibilities, assign them specific tasks.
-> Find out if part-time work is an available option for you.
-> Temporary leave from work may help the situation and allow you to spend more time at home during your loved one's final days. 
-> Under the Family Medical Leave Act, covered employers must grant eligible employees up to 12 weeks of unpaid leave in a 12-month period to care for an immediate family member with a serious health condition.
-> Caregiving can often be a 24-hour responsibility, particularly when providing hospice care.  For many, respite care is a great alternative solution. Respite care provides temporary relief to the primary caregiver. Companies like Comfort Keepers®, an in-home care provider, offer a range of assistance with a mix of daily living assistance, personal care and homemaking services.
-> 
+> AND HWO MY MOM IS ALWAYS LIKE I DIDNT ASK YOU TO DO THAT, AND IM LIKE, IM NOT A HIGHLY EDUCATED EMPATHIC, CHAOS WHISPERER TO BE YOUR SLAVE MOTHER. SMH, AND LOOK AT WHAT EVEN CONFORT KEEPER SAYS ON THEIR SITE. Compassion Fatigue: What Family Caregivers Need to Know
+
+> Caring for others is often driven by motivations of love and understanding. It’s not uncommon for family caregivers to initially feel that their capacity for helping those they love is nearly limitless.
+
+> 
+
+> Contact an Office in Your Area
+
+> compassion-fatigueKnowing the Limits
+
+> Caring for others is often driven by motivations of love and understanding. It’s not uncommon for family caregivers to initially feel that their capacity for helping those they love is nearly limitless. From taking care of finances and managing medications to preparing meals and cleaning, there’s certainly a sense of fulfillment that comes along with assisting a loved one. But many find themselves going through the motions of caring without taking time out to focus on their own needs – often to the point of physical and emotional exhaustion. As a result, family caregivers may feel something they’ve never experienced before: decreased empathy. This condition is known as compassion fatigue.
+
+> 
+
+> In decades past, compassion fatigue was seen primarily in healthcare professionals. This should hardly come as a surprise considering the profession involves constantly helping patients who are suffering or experiencing diminished quality of life. But as the country’s aging population continues to grow, there are many family caregivers who are left feeling much the same way.
+
+> 
+
+>  In addition to the lower threshold of empathy, family caregivers experiencing compassion fatigue may feel the following:
+
+> 
+
+> Exhaustion (physical and/or emotional)
+
+> Feelings of dread or guilt
+
+> Irritability, anxiety, or anger
+
+> Difficulty sleeping
+
+> Difficulty making decisions
+
+> Feeling disconnected
+
+> Trouble finding meaning in caregiving
+
+> Self-isolation
+
+> The Compassion Fatigue Awareness Project notes that the worst symptom of compassion fatigue is denial because it prohibits family caregivers from examining the feelings associated with their caregiving situation. And if ignored for an extended period of time, family caregivers may begin to feel resentment toward their loved one, ultimately leading to a communication breakdown and strained relationship.
+
+> 
+
+> Outside relationships suffer as well. In a collaborative research study with the Stanford Center on Longevity, Comfort Keepers, and ClearCare, it was indicated that those responsible for a loved one with a severe illness experience poor emotional wellbeing because of their inability to properly maintain their social lives. The results of the study highlight the increasing need for family caregivers to not only acknowledge their compassion fatigue, but also take steps toward self-care. Doing so can certainly help the family caregiver, but it will also help mend the relationship with their loved one. 
+
+> 
+
+> What to Do Next
+
+> Below are a few steps that family caregivers can take to combat compassion fatigue and get back to feeling positive about caring for their loved ones.
+
+> 
+
+> Understand the common signs of compassion fatigue (listed above) and acknowledge them if they occur.
+
+> Practice a self-care regimen that includes a balanced diet, regular exercise, and consistent sleep.
+
+> Carve out time to spend with friends and maintain social connections.
+
+> Find a caregiver support program, either in the community or online. 
+
+> Document your thoughts and feelings related to caregiving in a journal.
+
+> Choose healthy activities during your downtime (e.g., go for a walk, meditate, or practice a favorite hobby).
+
+> Discuss your feelings with a counselor or therapist. 
+
+>  Comfort Keepers®Can Help
+
+> Caring for others, especially those who have been instrumental in our upbringing, can be uniquely rewarding. At Comfort Keepers®, we value the relationships family caregivers have with their loved ones, and it’s our goal to help maintain them. We offer respite care and senior care services that help family caregivers take the time they need to practice self-care, with peace of mind that their loved ones are receiving quality assistance.
+
+> 
+
+> Learn more about our respite care and senior care services by contacting a local office today. 
+
+> 
+
+> References:
+
+> Good Therapy. “The Cost of Caring: 10 Ways to Prevent Compassion Fatigue.” Web. 2016.
+
+> Psychology Today. “Are You Suffering from Compassion Fatigue?” by Sherrie Bourg Carter Psy.D. Web. 2014.
+
+> Stanford Center on Longevity. “Spotlight on Caregiving: Exploring the Well-being of Family Caregivers” by
+
+> Sarah Raposo, Jessica Barnes, Tamara Sims, Amy Yotopoulos, Laura Carstensen, Mary Bowman,
+
+> Jacquelyn Kung. Web. 2016.
+
+> Daily Caring. “How to Cope with Compassion Fatigue: 8 Tips for Caregiver.” Web. 2017.
+
+> 
+
+> AARP. “Caregiving in the U.S.” Web. 2015. Caregivers Providing End of Life Care Need Support
+
+> Many family caregivers must deal with not only the time demands and additional responsibilities, but also the emotional needs of their loved one and family.
+
+> 
+
+> Contact an Office in Your Area
+
+> Comfort Keepers can provide respite they need
+
+> The Hospice Foundation of America estimates that almost half a million people, 68 percent being age 65 or older, received hospice care in 2006.  For most, that care involved a family caregiver.
+
+> 
+
+> According to the National Family Caregivers Association (NFCA), more than one quarter (26.6 percent) of the adult population has provided care for a chronically ill, disabled or aging family member or friend during the past year. Based on current census data, that translates into more than 50 million people.
+
+> 
+
+> Hospice services address all aspects of care, emphasizing the control of pain and discomfort and allow the patient and family to focus on maintaining quality of life.  Providing care in a hospice situation is difficult at best.  Many family caregivers must deal with not only the time demands and additional responsibilities but also the emotional needs of their loved one and family.
+
+> 
+
+> Recent medical research indicates the stress associated with caregiving can lead to a weakened immune system and in some cases take years off the caregiver's life. Those risks increase when they have to manage caregiving responsibilities in an end of life situation and while juggling career and family.
+
+> 
+
+> "We have seen how stressful the demands of caregiving can be," said Jim Booth, President and CEO of Comfort Keepers Franchising, Inc.  "For an individual juggling the demands of a job and being a caregiver, simple everyday responsibilities like grocery shopping or laundry can get overlooked.  That is where a service like Comfort Keepers can help."
+
+> 
+
+> For those working caregivers, below are a few things to consider.
+
+> 
+
+> If others offer to assist with some of their caregiving responsibilities, assign them specific tasks.
+
+> Find out if part-time work is an available option for you.
+
+> Temporary leave from work may help the situation and allow you to spend more time at home during your loved one's final days. 
+
+> Under the Family Medical Leave Act, covered employers must grant eligible employees up to 12 weeks of unpaid leave in a 12-month period to care for an immediate family member with a serious health condition.
+
+> Caregiving can often be a 24-hour responsibility, particularly when providing hospice care.  For many, respite care is a great alternative solution. Respite care provides temporary relief to the primary caregiver. Companies like Comfort Keepers®, an in-home care provider, offer a range of assistance with a mix of daily living assistance, personal care and homemaking services.
+
+> 
+
 > According to Booth, "Respite care has always been a part of our in-home care business.  An average of 12 percent of family caregivers have left their jobs as a result of caregiving responsibilities.  We'd like to think the services we offer can positively impact the lives of these caregivers. NOT TO MENTION THE LINES ARE SO BLURRED IM PROBABLY BREAKING THE LAW BY EXCEEDIGN ALLOWED HOURSA ND OT AND SUCH.
 
 ### Assistant

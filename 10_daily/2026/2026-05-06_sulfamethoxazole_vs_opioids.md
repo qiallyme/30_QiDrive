@@ -3,9 +3,9 @@ layout: page
 title: "Sulfamethoxazole vs Opioids"
 slug: "sulfamethoxazole_vs_opioids"
 created_at: "2026-05-06 10:10:39"
-updated_at: "2026-05-06 10:10:39"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

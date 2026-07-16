@@ -3,9 +3,9 @@ layout: page
 title: "Resume enrichment complete"
 slug: "resume_enrichment_complete"
 created_at: "2025-12-06 20:21:47"
-updated_at: "2025-12-06 20:21:47"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,141 +39,276 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> make sure this has all the details from my resume. {
->   "person": {
->     "full_name": "Cody Rice-Velazquez",
->     "preferred_name": "Cody",
->     "headline": "Director of People Systems & Organizational Architecture | Business Systems & Integration Analyst",
->     "email": "cody@qially.com",
->     "phone": "+1-317-205-4383",
->     "location": {
->       "city": "Indianapolis",
->       "state": "IN",
->       "country": "United States",
->       "postal_code": "46254",
->       "address_line_1": "4817 Shadow Pointe Dr"
->     },
->     "linkedin_url": "",
->     "website_url": "https://qially.com",
->     "github_url": "",
->     "work_authorization": "US Citizen",
->     "remote_preference": "Remote-first, hybrid considered"
->   },
-> 
->   "summary": "Systems-first operator focused on AI-powered business systems, people operations architecture, and cross-platform integrations. Designs and implements HRIS, ERP-adjacent workflows, and automation across SaaS stacks, improving reliability, data quality, and decision-making.",
-> 
->   "work_history": [
->     {
->       "id": "qially",
->       "title": "Director of People Systems & Business Operations (Consultant)",
->       "company": "QiAlly (Consulting)",
->       "location": "Indianapolis, IN (Remote)",
->       "start_date": "2020-01",
->       "end_date": null,
->       "is_current": true,
->       "description_bullets": [
->         "Designed and implemented AI-powered business systems and integrations across CRM, HR, finance, and support stacks.",
->         "Architected people operations workflows (onboarding, access provisioning, lifecycle changes, offboarding) using low-code tools, APIs, and automation platforms.",
->         "Built client portals and internal cockpits for operations visibility, ticketing, and evidence tracking.",
->         "Led requirements gathering with stakeholders and translated needs into technical workflows, data models, and integration specs."
->       ]
->     },
->     {
->       "id": "role_2",
->       "title": "Business Systems / Operations Role",
->       "company": "FILL_ME_IN",
->       "location": "FILL_ME_IN",
->       "start_date": "YYYY-MM",
->       "end_date": "YYYY-MM",
->       "is_current": false,
->       "description_bullets": [
->         "FILL_ME_IN"
->       ]
->     }
->   ],
-> 
->   "education": [
->     {
->       "id": "bachelors",
->       "degree": "Bachelor's Degree",
->       "field_of_study": "FILL_ME_IN",
->       "institution": "FILL_ME_IN",
->       "location": "FILL_ME_IN",
->       "start_date": "YYYY-MM",
->       "end_date": "YYYY-MM"
->     }
->   ],
-> 
->   "skills": {
->     "languages": [
->       "Python",
->       "JavaScript",
->       "SQL",
->       "JSON",
->       "XML"
->     ],
->     "platforms": [
->       "SaaS business systems",
->       "HRIS / People Systems",
->       "CRM platforms",
->       "Cloudflare",
->       "Zoho (CRM/Desk/Projects)",
->       "API-first architectures"
->     ],
->     "integrations": [
->       "REST APIs",
->       "Webhooks",
->       "Zapier / automation tools",
->       "Data pipelines / ETL",
->       "RAG / LLM integrations"
->     ],
->     "ai": [
->       "LLMs and prompt engineering",
->       "AI-assisted workflows",
->       "Chatbots and support automations",
->       "Predictive / rules-based automations"
->     ],
->     "soft_skills": [
->       "Systems thinking",
->       "Business analysis",
->       "Stakeholder communication",
->       "Process design",
->       "Change management"
->     ]
->   },
-> 
->   "job_search_preferences": {
->     "target_titles": [
->       "Business Systems & Integration Analyst",
->       "Director of People Systems & Org Architecture",
->       "Business Systems Analyst",
->       "People Systems Architect"
->     ],
->     "target_locations": [
->       "Remote",
->       "Indianapolis, IN",
->       "US-based Remote"
->     ],
->     "remote_only": true,
->     "salary_min_usd": 85000,
->     "salary_target_usd": 110000
->   },
-> 
->   "field_aliases": {
->     "first_name": ["first name", "fname", "given_name", "given name"],
->     "last_name": ["last name", "lname", "family_name", "surname"],
->     "full_name": ["name", "full name", "your name"],
->     "email": ["email", "email address", "work email", "personal email"],
->     "phone": ["phone", "phone number", "mobile", "cell"],
->     "city": ["city", "town"],
->     "state": ["state", "province", "region"],
->     "postal_code": ["zip", "postal code", "zip code"],
->     "address_line_1": ["address", "street", "street address", "address line 1"],
->     "linkedin_url": ["linkedin", "linkedin profile", "linkedin url"],
->     "website_url": ["website", "portfolio", "personal site", "url"],
->     "headline": ["professional headline", "current title"],
->     "summary": ["summary", "professional summary", "about you", "about me"]
->   }
+> make sure this has all the details from my resume. {
+
+>   "person": {
+
+>     "full_name": "Cody Rice-Velazquez",
+
+>     "preferred_name": "Cody",
+
+>     "headline": "Director of People Systems & Organizational Architecture | Business Systems & Integration Analyst",
+
+>     "email": "cody@qially.com",
+
+>     "phone": "+1-317-205-4383",
+
+>     "location": {
+
+>       "city": "Indianapolis",
+
+>       "state": "IN",
+
+>       "country": "United States",
+
+>       "postal_code": "46254",
+
+>       "address_line_1": "4817 Shadow Pointe Dr"
+
+>     },
+
+>     "linkedin_url": "",
+
+>     "website_url": "https://qially.com",
+
+>     "github_url": "",
+
+>     "work_authorization": "US Citizen",
+
+>     "remote_preference": "Remote-first, hybrid considered"
+
+>   },
+
+> 
+
+>   "summary": "Systems-first operator focused on AI-powered business systems, people operations architecture, and cross-platform integrations. Designs and implements HRIS, ERP-adjacent workflows, and automation across SaaS stacks, improving reliability, data quality, and decision-making.",
+
+> 
+
+>   "work_history": [
+
+>     {
+
+>       "id": "qially",
+
+>       "title": "Director of People Systems & Business Operations (Consultant)",
+
+>       "company": "QiAlly (Consulting)",
+
+>       "location": "Indianapolis, IN (Remote)",
+
+>       "start_date": "2020-01",
+
+>       "end_date": null,
+
+>       "is_current": true,
+
+>       "description_bullets": [
+
+>         "Designed and implemented AI-powered business systems and integrations across CRM, HR, finance, and support stacks.",
+
+>         "Architected people operations workflows (onboarding, access provisioning, lifecycle changes, offboarding) using low-code tools, APIs, and automation platforms.",
+
+>         "Built client portals and internal cockpits for operations visibility, ticketing, and evidence tracking.",
+
+>         "Led requirements gathering with stakeholders and translated needs into technical workflows, data models, and integration specs."
+
+>       ]
+
+>     },
+
+>     {
+
+>       "id": "role_2",
+
+>       "title": "Business Systems / Operations Role",
+
+>       "company": "FILL_ME_IN",
+
+>       "location": "FILL_ME_IN",
+
+>       "start_date": "YYYY-MM",
+
+>       "end_date": "YYYY-MM",
+
+>       "is_current": false,
+
+>       "description_bullets": [
+
+>         "FILL_ME_IN"
+
+>       ]
+
+>     }
+
+>   ],
+
+> 
+
+>   "education": [
+
+>     {
+
+>       "id": "bachelors",
+
+>       "degree": "Bachelor's Degree",
+
+>       "field_of_study": "FILL_ME_IN",
+
+>       "institution": "FILL_ME_IN",
+
+>       "location": "FILL_ME_IN",
+
+>       "start_date": "YYYY-MM",
+
+>       "end_date": "YYYY-MM"
+
+>     }
+
+>   ],
+
+> 
+
+>   "skills": {
+
+>     "languages": [
+
+>       "Python",
+
+>       "JavaScript",
+
+>       "SQL",
+
+>       "JSON",
+
+>       "XML"
+
+>     ],
+
+>     "platforms": [
+
+>       "SaaS business systems",
+
+>       "HRIS / People Systems",
+
+>       "CRM platforms",
+
+>       "Cloudflare",
+
+>       "Zoho (CRM/Desk/Projects)",
+
+>       "API-first architectures"
+
+>     ],
+
+>     "integrations": [
+
+>       "REST APIs",
+
+>       "Webhooks",
+
+>       "Zapier / automation tools",
+
+>       "Data pipelines / ETL",
+
+>       "RAG / LLM integrations"
+
+>     ],
+
+>     "ai": [
+
+>       "LLMs and prompt engineering",
+
+>       "AI-assisted workflows",
+
+>       "Chatbots and support automations",
+
+>       "Predictive / rules-based automations"
+
+>     ],
+
+>     "soft_skills": [
+
+>       "Systems thinking",
+
+>       "Business analysis",
+
+>       "Stakeholder communication",
+
+>       "Process design",
+
+>       "Change management"
+
+>     ]
+
+>   },
+
+> 
+
+>   "job_search_preferences": {
+
+>     "target_titles": [
+
+>       "Business Systems & Integration Analyst",
+
+>       "Director of People Systems & Org Architecture",
+
+>       "Business Systems Analyst",
+
+>       "People Systems Architect"
+
+>     ],
+
+>     "target_locations": [
+
+>       "Remote",
+
+>       "Indianapolis, IN",
+
+>       "US-based Remote"
+
+>     ],
+
+>     "remote_only": true,
+
+>     "salary_min_usd": 85000,
+
+>     "salary_target_usd": 110000
+
+>   },
+
+> 
+
+>   "field_aliases": {
+
+>     "first_name": ["first name", "fname", "given_name", "given name"],
+
+>     "last_name": ["last name", "lname", "family_name", "surname"],
+
+>     "full_name": ["name", "full name", "your name"],
+
+>     "email": ["email", "email address", "work email", "personal email"],
+
+>     "phone": ["phone", "phone number", "mobile", "cell"],
+
+>     "city": ["city", "town"],
+
+>     "state": ["state", "province", "region"],
+
+>     "postal_code": ["zip", "postal code", "zip code"],
+
+>     "address_line_1": ["address", "street", "street address", "address line 1"],
+
+>     "linkedin_url": ["linkedin", "linkedin profile", "linkedin url"],
+
+>     "website_url": ["website", "portfolio", "personal site", "url"],
+
+>     "headline": ["professional headline", "current title"],
+
+>     "summary": ["summary", "professional summary", "about you", "about me"]
+
+>   }
+
 > }
 
 ### Assistant

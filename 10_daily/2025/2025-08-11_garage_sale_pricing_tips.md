@@ -3,9 +3,9 @@ layout: page
 title: "Garage sale pricing tips"
 slug: "garage_sale_pricing_tips"
 created_at: "2025-08-11 11:15:55"
-updated_at: "2025-08-11 11:15:55"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

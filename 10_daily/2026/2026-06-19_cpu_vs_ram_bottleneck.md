@@ -3,9 +3,9 @@ layout: page
 title: "CPU vs RAM Bottleneck"
 slug: "cpu_vs_ram_bottleneck"
 created_at: "2026-06-19 23:11:27"
-updated_at: "2026-06-19 23:11:27"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

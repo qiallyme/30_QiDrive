@@ -3,9 +3,9 @@ layout: page
 title: "Clarify communication needs"
 slug: "clarify_communication_needs"
 created_at: "2025-12-22 17:07:50"
-updated_at: "2025-12-22 17:07:50"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

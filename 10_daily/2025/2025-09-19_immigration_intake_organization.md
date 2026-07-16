@@ -3,9 +3,9 @@ layout: page
 title: "Immigration intake organization"
 slug: "immigration_intake_organization"
 created_at: "2025-09-19 21:56:09"
-updated_at: "2025-09-19 21:56:09"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1399,429 +1399,852 @@ canonical_ref: ""
 > When you’re ready, paste **Step 2** first. After it confirms, eyeball the JSON, then go Step 3 → Step 4 → Step 5. Momentum on, nonsense off.
 
 ### User
-> {
->   "review": [
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_001_Original.jpg",
->       "file_name": "PET_Birth_Cert_001_Original.jpg",
->       "file_type": "jpg",
->       "summary": "Original birth certificate for petitioner Rosa Lucas-Esteban from San Juan Bautista Tuxtepec, Oaxaca, Mexico.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": 1971,
->       "confidence": 0.95,
->       "notes": "Primary identity document for petitioner"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_002_Digital.jpg",
->       "file_name": "PET_Birth_Cert_002_Digital.jpg",
->       "file_type": "jpg",
->       "summary": "Digital copy of petitioner's birth certificate for Rosa Lucas-Esteban.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": 1971,
->       "confidence": 0.95,
->       "notes": "Digital backup of original birth certificate"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_003_Translation.pdf",
->       "file_name": "PET_Birth_Cert_003_Translation.pdf",
->       "file_type": "pdf",
->       "summary": "Official English translation of petitioner's birth certificate from Spanish to English.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": 1971,
->       "confidence": 0.95,
->       "notes": "Certified translation required for USCIS"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_004_Translation.md",
->       "file_name": "PET_Birth_Cert_004_Translation.md",
->       "file_type": "md",
->       "summary": "Markdown transcription of petitioner's birth certificate translation showing Rosa Lucas-Esteban born March 30, 1971 in San Juan Bautista Tuxtepec, Oaxaca.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": 1971,
->       "confidence": 0.98,
->       "notes": "Text version of birth certificate translation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_005_Supplemental.md",
->       "file_name": "PET_Birth_Cert_005_Supplemental.md",
->       "file_type": "md",
->       "summary": "Supplemental documentation for petitioner's birth certificate with additional verification details.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": 1971,
->       "confidence": 0.90,
->       "notes": "Additional supporting documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_001_Original.jpg",
->       "file_name": "BEN_Birth_Cert_001_Original.jpg",
->       "file_type": "jpg",
->       "summary": "Original birth certificate for beneficiary Ciriaco Castañeda Rodríguez from Ayahualulco, Chilapa de Álvarez, Guerrero, Mexico.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": 1987,
->       "confidence": 0.95,
->       "notes": "Primary identity document for beneficiary"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_002_Translation.md",
->       "file_name": "BEN_Birth_Cert_002_Translation.md",
->       "file_type": "md",
->       "summary": "Certificate of Origin for beneficiary Ciriaco Castañeda Rodríguez born June 27, 1987 in Ayahualulco, Chilapa de Álvarez, Guerrero, Mexico.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": 1987,
->       "confidence": 0.98,
->       "notes": "Official certificate with family verification"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_003_Supplemental.pdf",
->       "file_name": "BEN_Birth_Cert_003_Supplemental.pdf",
->       "file_type": "pdf",
->       "summary": "Supplemental documentation for beneficiary's birth certificate with additional verification details.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": 1987,
->       "confidence": 0.90,
->       "notes": "Additional supporting documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Indiana_Drivers_License-001.jpg",
->       "file_name": "Indiana_Drivers_License-001.jpg",
->       "file_type": "jpg",
->       "summary": "Indiana driver's license for petitioner Rosa Lucas-Esteban showing current address and identification.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Government-issued photo ID"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Indiana_Drivers_License-002.jpg",
->       "file_name": "Indiana_Drivers_License-002.jpg",
->       "file_type": "jpg",
->       "summary": "Second copy of Indiana driver's license for petitioner Rosa Lucas-Esteban.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Backup copy of driver's license"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Lucas-Esteban_Rosa (Petitioner)-I551 .png",
->       "file_name": "Lucas-Esteban_Rosa (Petitioner)-I551 .png",
->       "file_type": "png",
->       "summary": "I-551 Permanent Resident Card (Green Card) for petitioner Rosa Lucas-Esteban showing lawful permanent resident status.",
->       "form_type": "I-551",
->       "evidence_type": "Identity",
->       "person_role": "Petitioner",
->       "year": null,
->       "confidence": 0.98,
->       "notes": "Permanent resident card - key immigration status document"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\Castaneda-Rodriguez_Ciri-(Beneficiary)-SS-Card.jpg",
->       "file_name": "Castaneda-Rodriguez_Ciri-(Beneficiary)-SS-Card.jpg",
->       "file_type": "jpg",
->       "summary": "Social Security card for beneficiary Ciriaco Castañeda Rodríguez showing authorized work status.",
->       "form_type": "Unknown",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Social Security card with work authorization"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\Castaneda-Rodriguez_Ciri-(Beneficiary)-SSA-89.jpg",
->       "file_name": "Castaneda-Rodriguez_Ciri-(Beneficiary)-SSA-89.jpg",
->       "file_type": "jpg",
->       "summary": "SSA-89 form for beneficiary Ciriaco Castañeda Rodríguez related to Social Security application or update.",
->       "form_type": "SSA-89",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Social Security Administration form"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Certificates\\1301_Marriage Certificate.jpg",
->       "file_name": "1301_Marriage Certificate.jpg",
->       "file_type": "jpg",
->       "summary": "Marriage certificate for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez showing legal marriage status.",
->       "form_type": "Unknown",
->       "evidence_type": "Marriage",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Primary marriage evidence document"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Certificates\\1302_Marriage Certificate.jpg",
->       "file_name": "1302_Marriage Certificate.jpg",
->       "file_type": "jpg",
->       "summary": "Second copy of marriage certificate for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez.",
->       "form_type": "Unknown",
->       "evidence_type": "Marriage",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Backup copy of marriage certificate"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Tax_Filings\\TaxReturn.20250919T810315Z.pdf",
->       "file_name": "TaxReturn.20250919T810315Z.pdf",
->       "file_type": "pdf",
->       "summary": "2022 joint tax return for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez filed as married filing jointly.",
->       "form_type": "Unknown",
->       "evidence_type": "Tax",
->       "person_role": "Joint",
->       "year": 2022,
->       "confidence": 0.95,
->       "notes": "Complete 2022 tax return filing"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\W2_GEODIS_ROSA.jpg",
->       "file_name": "W2_GEODIS_ROSA.jpg",
->       "file_type": "jpg",
->       "summary": "2022 W-2 form for Rosa Lucas-Esteban from GEODIS showing employment income and tax withholding.",
->       "form_type": "W-2",
->       "evidence_type": "Employment",
->       "person_role": "Petitioner",
->       "year": 2022,
->       "confidence": 0.98,
->       "notes": "Employment income documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\1099-NEC_SERGIO_SANCHEZ-CIRIACO.pdf",
->       "file_name": "1099-NEC_SERGIO_SANCHEZ-CIRIACO.pdf",
->       "file_type": "pdf",
->       "summary": "2022 1099-NEC form for Ciriaco Castañeda Rodríguez from Sergio Sanchez showing non-employee compensation income.",
->       "form_type": "1099-NEC",
->       "evidence_type": "Employment",
->       "person_role": "Beneficiary",
->       "year": 2022,
->       "confidence": 0.98,
->       "notes": "Self-employment income documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\1099-MISC_PRINCESS HOUSE - ROSA.jpg",
->       "file_name": "1099-MISC_PRINCESS HOUSE - ROSA.jpg",
->       "file_type": "jpg",
->       "summary": "2022 1099-MISC form for Rosa Lucas-Esteban from Princess House showing miscellaneous income.",
->       "form_type": "1099-MISC",
->       "evidence_type": "Employment",
->       "person_role": "Petitioner",
->       "year": 2022,
->       "confidence": 0.98,
->       "notes": "Additional income documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2023_Tax_Year\\2023\\Wages-n-Income\\1099-NEC ROSA.jpg",
->       "file_name": "1099-NEC ROSA.jpg",
->       "file_type": "jpg",
->       "summary": "2023 1099-NEC form for Rosa Lucas-Esteban showing non-employee compensation income.",
->       "form_type": "1099-NEC",
->       "evidence_type": "Employment",
->       "person_role": "Petitioner",
->       "year": 2023,
->       "confidence": 0.98,
->       "notes": "Self-employment income for 2023"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2023_Tax_Year\\2023\\Wages-n-Income\\1099-NEC CIRACO.jpg",
->       "file_name": "1099-NEC CIRACO.jpg",
->       "file_type": "jpg",
->       "summary": "2023 1099-NEC form for Ciriaco Castañeda Rodríguez showing non-employee compensation income.",
->       "form_type": "1099-NEC",
->       "evidence_type": "Employment",
->       "person_role": "Beneficiary",
->       "year": 2023,
->       "confidence": 0.98,
->       "notes": "Self-employment income for 2023"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2024_Tax_Year\\2024\\1099_misc_2024.jpg",
->       "file_name": "1099_misc_2024.jpg",
->       "file_type": "jpg",
->       "summary": "2024 1099-MISC form showing miscellaneous income for current tax year.",
->       "form_type": "1099-MISC",
->       "evidence_type": "Employment",
->       "person_role": "Unknown",
->       "year": 2024,
->       "confidence": 0.95,
->       "notes": "Current year income documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2024_Tax_Year\\2024\\bank_stmt_chase_2024.jpg",
->       "file_name": "bank_stmt_chase_2024.jpg",
->       "file_type": "jpg",
->       "summary": "2024 Chase bank statement showing joint account activity and financial stability.",
->       "form_type": "Unknown",
->       "evidence_type": "Financial",
->       "person_role": "Joint",
->       "year": 2024,
->       "confidence": 0.95,
->       "notes": "Joint bank account statement"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Accounts\\BANK_20220902_09022022_Operating_Bank_P001.jpg",
->       "file_name": "BANK_20220902_09022022_Operating_Bank_P001.jpg",
->       "file_type": "jpg",
->       "summary": "September 2022 joint bank account statement showing shared financial responsibility.",
->       "form_type": "Unknown",
->       "evidence_type": "Financial",
->       "person_role": "Joint",
->       "year": 2022,
->       "confidence": 0.95,
->       "notes": "Joint account evidence for marriage bona fides"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Insurance\\1370_Joint Auto Insurance Policy.md",
->       "file_name": "1370_Joint Auto Insurance Policy.md",
->       "file_type": "md",
->       "summary": "Joint auto insurance policy documentation showing shared insurance coverage for both spouses.",
->       "form_type": "Unknown",
->       "evidence_type": "Insurance",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Joint insurance evidence"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Utilities\\1360_Joint Utility Bills.md",
->       "file_name": "1360_Joint Utility Bills.md",
->       "file_type": "md",
->       "summary": "Joint utility bills documentation showing shared household expenses and joint responsibility.",
->       "form_type": "Unknown",
->       "evidence_type": "Utilities",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Joint utility evidence for marriage bona fides"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\Receipt_Notices\\NOT_20250729_07292025_Form_i-797C_Notice_of_Action_P001.jpg",
->       "file_name": "NOT_20250729_07292025_Form_i-797C_Notice_of_Action_P001.jpg",
->       "file_type": "jpg",
->       "summary": "I-797C Notice of Action receipt from USCIS dated July 29, 2025 showing case acceptance and processing.",
->       "form_type": "I-797C",
->       "evidence_type": "Unknown",
->       "person_role": "Unknown",
->       "year": 2025,
->       "confidence": 0.95,
->       "notes": "USCIS receipt notice"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\NOT-ACT-i797-FORM-I765_APPROVAL_20250419-20300418.jpg",
->       "file_name": "NOT-ACT-i797-FORM-I765_APPROVAL_20250419-20300418.jpg",
->       "file_type": "jpg",
->       "summary": "I-797 approval notice for Form I-765 (Employment Authorization Document) approved April 19, 2025.",
->       "form_type": "I-765",
->       "evidence_type": "Unknown",
->       "person_role": "Beneficiary",
->       "year": 2025,
->       "confidence": 0.98,
->       "notes": "Work authorization approval"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\EAD.jpeg.png",
->       "file_name": "EAD.jpeg.png",
->       "file_type": "png",
->       "summary": "Employment Authorization Document (EAD) card showing work authorization for beneficiary.",
->       "form_type": "I-765",
->       "evidence_type": "Identity",
->       "person_role": "Beneficiary",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Physical EAD card"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\Intake_Forms\\01-Immigration Intake Form.md",
->       "file_name": "01-Immigration Intake Form.md",
->       "file_type": "md",
->       "summary": "Comprehensive immigration intake form with petitioner and beneficiary information including personal details, addresses, and family information.",
->       "form_type": "Unknown",
->       "evidence_type": "Unknown",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.95,
->       "notes": "Case intake documentation"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\02_Legal_Agreements\\Legal_Documents\\Accountant_Verification_Letter_Draft.md",
->       "file_name": "Accountant_Verification_Letter_Draft.md",
->       "file_type": "md",
->       "summary": "Draft accountant verification letter template for employment and financial verification for immigration case.",
->       "form_type": "Unknown",
->       "evidence_type": "Employment",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Employment verification template"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\02_Legal_Agreements\\Legal_Documents\\Living_Will_Draft.md",
->       "file_name": "Living_Will_Draft.md",
->       "file_type": "md",
->       "summary": "Draft living will and testament naming spouse as beneficiary, demonstrating financial interdependence and family relationship.",
->       "form_type": "Unknown",
->       "evidence_type": "Unknown",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Estate planning document for marriage evidence"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Family_Photos\\README.md",
->       "file_name": "README.md",
->       "file_type": "md",
->       "summary": "Family photos collection requirements and guidelines for immigration case showing marriage bona fides.",
->       "form_type": "Unknown",
->       "evidence_type": "Photos",
->       "person_role": "Joint",
->       "year": null,
->       "confidence": 0.85,
->       "notes": "Photo collection guidelines"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Passport_Photos.md",
->       "file_name": "Petitioner_Passport_Photos.md",
->       "file_type": "md",
->       "summary": "Passport photo status tracking for petitioner Rosa Lucas-Esteban showing completion status.",
->       "form_type": "Unknown",
->       "evidence_type": "Photos",
->       "person_role": "Petitioner",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Photo requirements tracking"
->     },
->     {
->       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Passport_Photos.md",
->       "file_name": "Beneficiary_Passport_Photos.md",
->       "file_type": "md",
->       "summary": "Passport photo status tracking for beneficiary Ciriaco Castañeda Rodríguez showing completion status.",
->       "form_type": "Unknown",
->       "evidence_type": "Photos",
->       "person_role": "Beneficiary",
->       "year": null,
->       "confidence": 0.90,
->       "notes": "Photo requirements tracking"
->     }
->   ]
+> {
+
+>   "review": [
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_001_Original.jpg",
+
+>       "file_name": "PET_Birth_Cert_001_Original.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Original birth certificate for petitioner Rosa Lucas-Esteban from San Juan Bautista Tuxtepec, Oaxaca, Mexico.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": 1971,
+
+>       "confidence": 0.95,
+
+>       "notes": "Primary identity document for petitioner"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_002_Digital.jpg",
+
+>       "file_name": "PET_Birth_Cert_002_Digital.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Digital copy of petitioner's birth certificate for Rosa Lucas-Esteban.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": 1971,
+
+>       "confidence": 0.95,
+
+>       "notes": "Digital backup of original birth certificate"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_003_Translation.pdf",
+
+>       "file_name": "PET_Birth_Cert_003_Translation.pdf",
+
+>       "file_type": "pdf",
+
+>       "summary": "Official English translation of petitioner's birth certificate from Spanish to English.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": 1971,
+
+>       "confidence": 0.95,
+
+>       "notes": "Certified translation required for USCIS"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_004_Translation.md",
+
+>       "file_name": "PET_Birth_Cert_004_Translation.md",
+
+>       "file_type": "md",
+
+>       "summary": "Markdown transcription of petitioner's birth certificate translation showing Rosa Lucas-Esteban born March 30, 1971 in San Juan Bautista Tuxtepec, Oaxaca.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": 1971,
+
+>       "confidence": 0.98,
+
+>       "notes": "Text version of birth certificate translation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\PET_Birth_Cert_005_Supplemental.md",
+
+>       "file_name": "PET_Birth_Cert_005_Supplemental.md",
+
+>       "file_type": "md",
+
+>       "summary": "Supplemental documentation for petitioner's birth certificate with additional verification details.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": 1971,
+
+>       "confidence": 0.90,
+
+>       "notes": "Additional supporting documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_001_Original.jpg",
+
+>       "file_name": "BEN_Birth_Cert_001_Original.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Original birth certificate for beneficiary Ciriaco Castañeda Rodríguez from Ayahualulco, Chilapa de Álvarez, Guerrero, Mexico.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 1987,
+
+>       "confidence": 0.95,
+
+>       "notes": "Primary identity document for beneficiary"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_002_Translation.md",
+
+>       "file_name": "BEN_Birth_Cert_002_Translation.md",
+
+>       "file_type": "md",
+
+>       "summary": "Certificate of Origin for beneficiary Ciriaco Castañeda Rodríguez born June 27, 1987 in Ayahualulco, Chilapa de Álvarez, Guerrero, Mexico.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 1987,
+
+>       "confidence": 0.98,
+
+>       "notes": "Official certificate with family verification"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\BEN_Birth_Cert_003_Supplemental.pdf",
+
+>       "file_name": "BEN_Birth_Cert_003_Supplemental.pdf",
+
+>       "file_type": "pdf",
+
+>       "summary": "Supplemental documentation for beneficiary's birth certificate with additional verification details.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 1987,
+
+>       "confidence": 0.90,
+
+>       "notes": "Additional supporting documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Indiana_Drivers_License-001.jpg",
+
+>       "file_name": "Indiana_Drivers_License-001.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Indiana driver's license for petitioner Rosa Lucas-Esteban showing current address and identification.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Government-issued photo ID"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Indiana_Drivers_License-002.jpg",
+
+>       "file_name": "Indiana_Drivers_License-002.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Second copy of Indiana driver's license for petitioner Rosa Lucas-Esteban.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Backup copy of driver's license"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Rosa_Lucas\\01_Identity_Financial\\Lucas-Esteban_Rosa (Petitioner)-I551 .png",
+
+>       "file_name": "Lucas-Esteban_Rosa (Petitioner)-I551 .png",
+
+>       "file_type": "png",
+
+>       "summary": "I-551 Permanent Resident Card (Green Card) for petitioner Rosa Lucas-Esteban showing lawful permanent resident status.",
+
+>       "form_type": "I-551",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Petitioner",
+
+>       "year": null,
+
+>       "confidence": 0.98,
+
+>       "notes": "Permanent resident card - key immigration status document"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\Castaneda-Rodriguez_Ciri-(Beneficiary)-SS-Card.jpg",
+
+>       "file_name": "Castaneda-Rodriguez_Ciri-(Beneficiary)-SS-Card.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Social Security card for beneficiary Ciriaco Castañeda Rodríguez showing authorized work status.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Social Security card with work authorization"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Ciriaco_Castaneda\\01_Identity_Financial\\Castaneda-Rodriguez_Ciri-(Beneficiary)-SSA-89.jpg",
+
+>       "file_name": "Castaneda-Rodriguez_Ciri-(Beneficiary)-SSA-89.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "SSA-89 form for beneficiary Ciriaco Castañeda Rodríguez related to Social Security application or update.",
+
+>       "form_type": "SSA-89",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Social Security Administration form"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Certificates\\1301_Marriage Certificate.jpg",
+
+>       "file_name": "1301_Marriage Certificate.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Marriage certificate for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez showing legal marriage status.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Marriage",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Primary marriage evidence document"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Certificates\\1302_Marriage Certificate.jpg",
+
+>       "file_name": "1302_Marriage Certificate.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "Second copy of marriage certificate for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Marriage",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Backup copy of marriage certificate"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Tax_Filings\\TaxReturn.20250919T810315Z.pdf",
+
+>       "file_name": "TaxReturn.20250919T810315Z.pdf",
+
+>       "file_type": "pdf",
+
+>       "summary": "2022 joint tax return for Rosa Lucas-Esteban and Ciriaco Castañeda Rodríguez filed as married filing jointly.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Tax",
+
+>       "person_role": "Joint",
+
+>       "year": 2022,
+
+>       "confidence": 0.95,
+
+>       "notes": "Complete 2022 tax return filing"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\W2_GEODIS_ROSA.jpg",
+
+>       "file_name": "W2_GEODIS_ROSA.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2022 W-2 form for Rosa Lucas-Esteban from GEODIS showing employment income and tax withholding.",
+
+>       "form_type": "W-2",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Petitioner",
+
+>       "year": 2022,
+
+>       "confidence": 0.98,
+
+>       "notes": "Employment income documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\1099-NEC_SERGIO_SANCHEZ-CIRIACO.pdf",
+
+>       "file_name": "1099-NEC_SERGIO_SANCHEZ-CIRIACO.pdf",
+
+>       "file_type": "pdf",
+
+>       "summary": "2022 1099-NEC form for Ciriaco Castañeda Rodríguez from Sergio Sanchez showing non-employee compensation income.",
+
+>       "form_type": "1099-NEC",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 2022,
+
+>       "confidence": 0.98,
+
+>       "notes": "Self-employment income documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2022_Tax_Year\\2022\\Wages-n-Income\\1099-MISC_PRINCESS HOUSE - ROSA.jpg",
+
+>       "file_name": "1099-MISC_PRINCESS HOUSE - ROSA.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2022 1099-MISC form for Rosa Lucas-Esteban from Princess House showing miscellaneous income.",
+
+>       "form_type": "1099-MISC",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Petitioner",
+
+>       "year": 2022,
+
+>       "confidence": 0.98,
+
+>       "notes": "Additional income documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2023_Tax_Year\\2023\\Wages-n-Income\\1099-NEC ROSA.jpg",
+
+>       "file_name": "1099-NEC ROSA.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2023 1099-NEC form for Rosa Lucas-Esteban showing non-employee compensation income.",
+
+>       "form_type": "1099-NEC",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Petitioner",
+
+>       "year": 2023,
+
+>       "confidence": 0.98,
+
+>       "notes": "Self-employment income for 2023"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2023_Tax_Year\\2023\\Wages-n-Income\\1099-NEC CIRACO.jpg",
+
+>       "file_name": "1099-NEC CIRACO.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2023 1099-NEC form for Ciriaco Castañeda Rodríguez showing non-employee compensation income.",
+
+>       "form_type": "1099-NEC",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 2023,
+
+>       "confidence": 0.98,
+
+>       "notes": "Self-employment income for 2023"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2024_Tax_Year\\2024\\1099_misc_2024.jpg",
+
+>       "file_name": "1099_misc_2024.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2024 1099-MISC form showing miscellaneous income for current tax year.",
+
+>       "form_type": "1099-MISC",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Unknown",
+
+>       "year": 2024,
+
+>       "confidence": 0.95,
+
+>       "notes": "Current year income documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Tax_Documents\\2024_Tax_Year\\2024\\bank_stmt_chase_2024.jpg",
+
+>       "file_name": "bank_stmt_chase_2024.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "2024 Chase bank statement showing joint account activity and financial stability.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Financial",
+
+>       "person_role": "Joint",
+
+>       "year": 2024,
+
+>       "confidence": 0.95,
+
+>       "notes": "Joint bank account statement"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Accounts\\BANK_20220902_09022022_Operating_Bank_P001.jpg",
+
+>       "file_name": "BANK_20220902_09022022_Operating_Bank_P001.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "September 2022 joint bank account statement showing shared financial responsibility.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Financial",
+
+>       "person_role": "Joint",
+
+>       "year": 2022,
+
+>       "confidence": 0.95,
+
+>       "notes": "Joint account evidence for marriage bona fides"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Insurance\\1370_Joint Auto Insurance Policy.md",
+
+>       "file_name": "1370_Joint Auto Insurance Policy.md",
+
+>       "file_type": "md",
+
+>       "summary": "Joint auto insurance policy documentation showing shared insurance coverage for both spouses.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Insurance",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Joint insurance evidence"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Joint_Utilities\\1360_Joint Utility Bills.md",
+
+>       "file_name": "1360_Joint Utility Bills.md",
+
+>       "file_type": "md",
+
+>       "summary": "Joint utility bills documentation showing shared household expenses and joint responsibility.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Utilities",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Joint utility evidence for marriage bona fides"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\Receipt_Notices\\NOT_20250729_07292025_Form_i-797C_Notice_of_Action_P001.jpg",
+
+>       "file_name": "NOT_20250729_07292025_Form_i-797C_Notice_of_Action_P001.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "I-797C Notice of Action receipt from USCIS dated July 29, 2025 showing case acceptance and processing.",
+
+>       "form_type": "I-797C",
+
+>       "evidence_type": "Unknown",
+
+>       "person_role": "Unknown",
+
+>       "year": 2025,
+
+>       "confidence": 0.95,
+
+>       "notes": "USCIS receipt notice"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\NOT-ACT-i797-FORM-I765_APPROVAL_20250419-20300418.jpg",
+
+>       "file_name": "NOT-ACT-i797-FORM-I765_APPROVAL_20250419-20300418.jpg",
+
+>       "file_type": "jpg",
+
+>       "summary": "I-797 approval notice for Form I-765 (Employment Authorization Document) approved April 19, 2025.",
+
+>       "form_type": "I-765",
+
+>       "evidence_type": "Unknown",
+
+>       "person_role": "Beneficiary",
+
+>       "year": 2025,
+
+>       "confidence": 0.98,
+
+>       "notes": "Work authorization approval"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\02_USCIS_Documents\\01_Forms_Notices\\EAD.jpeg.png",
+
+>       "file_name": "EAD.jpeg.png",
+
+>       "file_type": "png",
+
+>       "summary": "Employment Authorization Document (EAD) card showing work authorization for beneficiary.",
+
+>       "form_type": "I-765",
+
+>       "evidence_type": "Identity",
+
+>       "person_role": "Beneficiary",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Physical EAD card"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\Intake_Forms\\01-Immigration Intake Form.md",
+
+>       "file_name": "01-Immigration Intake Form.md",
+
+>       "file_type": "md",
+
+>       "summary": "Comprehensive immigration intake form with petitioner and beneficiary information including personal details, addresses, and family information.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Unknown",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.95,
+
+>       "notes": "Case intake documentation"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\02_Legal_Agreements\\Legal_Documents\\Accountant_Verification_Letter_Draft.md",
+
+>       "file_name": "Accountant_Verification_Letter_Draft.md",
+
+>       "file_type": "md",
+
+>       "summary": "Draft accountant verification letter template for employment and financial verification for immigration case.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Employment",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Employment verification template"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\02_Legal_Agreements\\Legal_Documents\\Living_Will_Draft.md",
+
+>       "file_name": "Living_Will_Draft.md",
+
+>       "file_type": "md",
+
+>       "summary": "Draft living will and testament naming spouse as beneficiary, demonstrating financial interdependence and family relationship.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Unknown",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Estate planning document for marriage evidence"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\01_Joint_Documents\\01_Marriage_Financial\\Family_Photos\\README.md",
+
+>       "file_name": "README.md",
+
+>       "file_type": "md",
+
+>       "summary": "Family photos collection requirements and guidelines for immigration case showing marriage bona fides.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Photos",
+
+>       "person_role": "Joint",
+
+>       "year": null,
+
+>       "confidence": 0.85,
+
+>       "notes": "Photo collection guidelines"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Petitioner_Passport_Photos.md",
+
+>       "file_name": "Petitioner_Passport_Photos.md",
+
+>       "file_type": "md",
+
+>       "summary": "Passport photo status tracking for petitioner Rosa Lucas-Esteban showing completion status.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Photos",
+
+>       "person_role": "Petitioner",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Photo requirements tracking"
+
+>     },
+
+>     {
+
+>       "current_path": "k:\\vaults\\client\\rosalucas\\Vault_Rosa\\00_Individual_Documents\\Beneficiary_Passport_Photos.md",
+
+>       "file_name": "Beneficiary_Passport_Photos.md",
+
+>       "file_type": "md",
+
+>       "summary": "Passport photo status tracking for beneficiary Ciriaco Castañeda Rodríguez showing completion status.",
+
+>       "form_type": "Unknown",
+
+>       "evidence_type": "Photos",
+
+>       "person_role": "Beneficiary",
+
+>       "year": null,
+
+>       "confidence": 0.90,
+
+>       "notes": "Photo requirements tracking"
+
+>     }
+
+>   ]
+
 > }
 
 ### Assistant

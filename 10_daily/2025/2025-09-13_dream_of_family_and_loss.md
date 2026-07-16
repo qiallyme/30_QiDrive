@@ -3,9 +3,9 @@ layout: page
 title: "Dream of family and loss"
 slug: "dream_of_family_and_loss"
 created_at: "2025-09-13 03:34:54"
-updated_at: "2025-09-13 03:34:54"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,8 +39,10 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> dream last night
-> i was at this house kinda felt  like i t was my house rminded mee of my aunt roseamrys house family was icmin g in i ws my room upastaris as more and more family showed up the cousins, and auntie, and more faces i rememer friends, of the family all there, i was kinda hiding in my room, 
+> dream last night
+
+> i was at this house kinda felt  like i t was my house rminded mee of my aunt roseamrys house family was icmin g in i ws my room upastaris as more and more family showed up the cousins, and auntie, and more faces i rememer friends, of the family all there, i was kinda hiding in my room, 
+
 > it ws my job bfore to keep us all connected, i also workedin some warehouse, not sure, accross the streat there qsaa bunch of geeksquard crew cars there, it was no very bright inside the house but it was a beautful sunny day outside, i opened the blind all the way and the house was live with light. i woke up weaping and so sad and morning feeling of loss. maryann robyn, kyle , wife, mom, my best friend, mary anns kid and crew kenya, among others.
 
 ### Assistant

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 0003 Timeline As Spine
-slug: ""
+slug: 0003-timeline-as-spine
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0a9a2f496104466cacc032cac7427cef
 canonical_ref: ""
 source_type: manual
 template_key: master-template

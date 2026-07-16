@@ -4,14 +4,14 @@ title: Research Summary Template
 slug: research_template
 summary: Template for summarizing research studies and their relevance
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting research summaries in clinical track
-tags:
+tags: []
   - template
   - research
   - clinical
   - empowerqnow713
-keywords:
+keywords: []
   - research
   - clinical
   - study
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.4.0
 category: research
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 98c122cce6d043b5ad573b20a0632a01
 canonical_ref: ""
 template_key: master-template
 ---

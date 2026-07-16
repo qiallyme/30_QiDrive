@@ -3,9 +3,9 @@ layout: page
 title: "WhatsApp business templates"
 slug: "whatsapp_business_templates"
 created_at: "2025-09-07 23:21:15"
-updated_at: "2025-09-07 23:21:15"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -176,21 +176,36 @@ canonical_ref: ""
 > Do you want me to also turn these into the **Meta-approved JSON submission format** (with category + sample variables) so you can upload them directly to your WhatsApp Business Manager?
 
 ### User
-> this was rejected: Template Preview
-> Information
-> Template Name
-> Project Update
-> Language
-> English
-> Category
-> Utility
-> Status
->  Rejected
-> Preview
-> Hello ${Contacts.First Name}, there’s an update available for your project.
-> Please log in to your client portal to view the latest details.
-> Thank you,
-> ${Organization.Organization Name}
+> this was rejected: Template Preview
+
+> Information
+
+> Template Name
+
+> Project Update
+
+> Language
+
+> English
+
+> Category
+
+> Utility
+
+> Status
+
+>  Rejected
+
+> Preview
+
+> Hello ${Contacts.First Name}, there’s an update available for your project.
+
+> Please log in to your client portal to view the latest details.
+
+> Thank you,
+
+> ${Organization.Organization Name}
+
 > 🌐 ${Organization.Website} --- > 
 > 
 > 
@@ -238,10 +253,14 @@ canonical_ref: ""
 > Do you want me to rewrite **all five templates** in this safer Meta-style so you can resubmit without more rejections?
 
 ### User
-> you think this one will work. Hello ${Contacts.First Name}, your work project status has been updated and is available by accessing the QiAlly QiSuite Portal. Your Username: ${Contacts.Email}
-> Portal Enabled?: ${Contacts.Portal Enabled}
-> Please check your client portal for the latest information.
-> Thank you,
+> you think this one will work. Hello ${Contacts.First Name}, your work project status has been updated and is available by accessing the QiAlly QiSuite Portal. Your Username: ${Contacts.Email}
+
+> Portal Enabled?: ${Contacts.Portal Enabled}
+
+> Please check your client portal for the latest information.
+
+> Thank you,
+
 > ${Organization.Organization Name}
 
 ### Assistant

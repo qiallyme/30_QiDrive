@@ -12,10 +12,27 @@ last_updated: 2026-05-24
 related:
   - 30_clinical/10_adhd/adhd_operating_notes.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
-tags:
+tags: []
   - adhd
   - rsd
   - emotional-regulation
+layout: page
+slug: adhd-rejection-sensitivity-rsd-why-criticism-hits-so-hard
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 9deeb0fc05294fc2ac5d122d3bb5c218
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # ADHD Rejection Sensitivity (RSD): Why Criticism Hits So Hard

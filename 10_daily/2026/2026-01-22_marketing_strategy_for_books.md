@@ -3,9 +3,9 @@ layout: page
 title: "Marketing Strategy for Books"
 slug: "marketing_strategy_for_books"
 created_at: "2026-01-22 17:10:58"
-updated_at: "2026-01-22 17:10:58"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

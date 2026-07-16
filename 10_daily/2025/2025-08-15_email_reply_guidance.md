@@ -3,9 +3,9 @@ layout: page
 title: "Email reply guidance"
 slug: "email_reply_guidance"
 created_at: "2025-08-15 16:23:48"
-updated_at: "2025-08-15 16:23:48"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

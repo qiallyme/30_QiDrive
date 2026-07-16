@@ -3,9 +3,9 @@ layout: page
 title: "Document Pick-up List"
 slug: "document_pick_up_list"
 created_at: "2023-07-15 13:30:04"
-updated_at: "2023-07-15 13:30:04"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

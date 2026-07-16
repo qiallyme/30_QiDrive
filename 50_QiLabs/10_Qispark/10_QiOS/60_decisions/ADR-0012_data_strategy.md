@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0012: Data Strategy Across Supabase and QiNexus
 slug: adr-0012-data-strategy-across-supabase-and-qinexus
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 74941ce71a6a428ebd7b7d7c96426116
 canonical_ref: ""
 template_key: master-template
 ---

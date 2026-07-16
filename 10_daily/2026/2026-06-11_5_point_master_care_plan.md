@@ -3,9 +3,9 @@ layout: page
 title: "5-Point Master Care Plan"
 slug: "5_point_master_care_plan"
 created_at: "2026-06-11 23:02:23"
-updated_at: "2026-06-11 23:02:23"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

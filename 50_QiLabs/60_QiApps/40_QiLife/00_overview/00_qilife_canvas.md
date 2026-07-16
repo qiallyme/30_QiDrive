@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 00 Qilife Canvas
-slug: ""
+slug: 00-qilife-canvas
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5b86a0eb779b4539b96dbb11e9fd3f60
 canonical_ref: ""
 source_type: manual
 template_key: master-template

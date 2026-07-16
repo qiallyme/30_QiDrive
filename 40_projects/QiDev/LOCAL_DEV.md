@@ -3,12 +3,12 @@ layout: page
 title: Local Development Guide
 slug: local-development-guide
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: fa2f6d4a95b940fab71a4197baf7f5c4
 canonical_ref: ""
 template_key: master-template
 ---

@@ -11,12 +11,12 @@ qi_decimal: 6.00.00-FINANCE
 qid: q7796da8290f5
 status: active
 system: qios
-keywords:
+keywords: []
 - finance
 layout: page
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -25,7 +25,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: be2f2886c7504ec1bc2a85b17dd1bcba
 canonical_ref: ""
 source_type: manual
 template_key: master-template

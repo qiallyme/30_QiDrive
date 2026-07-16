@@ -3,9 +3,9 @@ layout: page
 title: "Drive Duplication Script"
 slug: "drive_duplication_script"
 created_at: "2026-05-18 12:13:26"
-updated_at: "2026-05-18 12:13:26"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -157,11 +157,16 @@ canonical_ref: ""
 > Then run on a tiny folder with known duplicates. If that behaves correctly, it’s safe enough to scale to strict-stage scanning.
 
 ### User
-> PS C:\QiLabs> & C:/Users/codyr/AppData/Roaming/uv/python/cpython-3.14.3-windows-x86_64-none/python.exe c:/QiLabs/apps/qidrive_dedupe_tool/qidrive_dedupe.py
-> c:\QiLabs\apps\qidrive_dedupe_tool\qidrive_dedupe.py:17: SyntaxWarning: "\M" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\M"? A raw string is also an option.
->   python qidrive_dedupe.py scan "G:\My Drive" --db qidrive_manifest.sqlite
-> usage: qidrive_dedupe.py [-h] {scan,plan,apply} ...
-> qidrive_dedupe.py: error: the following arguments are required: command
+> PS C:\QiLabs> & C:/Users/codyr/AppData/Roaming/uv/python/cpython-3.14.3-windows-x86_64-none/python.exe c:/QiLabs/apps/qidrive_dedupe_tool/qidrive_dedupe.py
+
+> c:\QiLabs\apps\qidrive_dedupe_tool\qidrive_dedupe.py:17: SyntaxWarning: "\M" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\M"? A raw string is also an option.
+
+>   python qidrive_dedupe.py scan "G:\My Drive" --db qidrive_manifest.sqlite
+
+> usage: qidrive_dedupe.py [-h] {scan,plan,apply} ...
+
+> qidrive_dedupe.py: error: the following arguments are required: command
+
 > PS C:\QiLabs>
 
 ### Assistant

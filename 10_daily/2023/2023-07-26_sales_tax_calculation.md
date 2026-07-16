@@ -3,9 +3,9 @@ layout: page
 title: "Sales Tax Calculation."
 slug: "sales_tax_calculation"
 created_at: "2023-07-26 16:56:27"
-updated_at: "2023-07-26 16:56:27"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

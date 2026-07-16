@@ -3,9 +3,9 @@ layout: page
 title: "Financial Management Categories"
 slug: "financial_management_categories"
 created_at: "2026-05-22 22:00:04"
-updated_at: "2026-05-22 22:00:04"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -814,18 +814,30 @@ canonical_ref: ""
 > My recommendation: create **3 test categories first**, confirm they appear correctly with notes, then run the full list.
 
 ### User
-> This installation of Firefly III can be reached at http://qiserver-1.cerberus-sirius.ts.net:6877. This applies to you of course, but also to web applications, AI-agents and other remote programs. However, this access is only possible with the use of Personal Access Tokens or OAuth Clients. Both can be managed on this page. Beware that contrary to previous versions, Firefly III will no longer show you the client secret more than once.
-> 
-> OAuth Clients and Applications
-> An OAuth client can be used to connect "smart" applications to Firefly III: applications that are capable of redirecting you to your Firefly III, get your permission, and return you back. The Firefly III Data Importer is such an application. OAuth clients can be generated with or without a "secret". This secret is used to authenticate the client. Since not all clients are capable of storing the secret, so you have the option to generate a client without one.
-> 
-> Please note that if you're using an external authentication provider like Authelia, OAuth Clients will not work. You can use Personal Access Tokens only.
-> 
-> You have not created any OAuth clients or applications.
-> 
-> Personal Access Tokens
-> Personal Access Tokens are long lived (with a maximum of 1 year) keys that allow direct and unlimited access to your Firefly III data. Tools like the Firefly III Data Importer and the Firefly III integration in Home Assistant use such tokens to connect to Firefly III and do their thing. When you create a token, it is only visible once. The token is also very long.
-> 
+> This installation of Firefly III can be reached at http://qiserver-1.cerberus-sirius.ts.net:6877. This applies to you of course, but also to web applications, AI-agents and other remote programs. However, this access is only possible with the use of Personal Access Tokens or OAuth Clients. Both can be managed on this page. Beware that contrary to previous versions, Firefly III will no longer show you the client secret more than once.
+
+> 
+
+> OAuth Clients and Applications
+
+> An OAuth client can be used to connect "smart" applications to Firefly III: applications that are capable of redirecting you to your Firefly III, get your permission, and return you back. The Firefly III Data Importer is such an application. OAuth clients can be generated with or without a "secret". This secret is used to authenticate the client. Since not all clients are capable of storing the secret, so you have the option to generate a client without one.
+
+> 
+
+> Please note that if you're using an external authentication provider like Authelia, OAuth Clients will not work. You can use Personal Access Tokens only.
+
+> 
+
+> You have not created any OAuth clients or applications.
+
+> 
+
+> Personal Access Tokens
+
+> Personal Access Tokens are long lived (with a maximum of 1 year) keys that allow direct and unlimited access to your Firefly III data. Tools like the Firefly III Data Importer and the Firefly III integration in Home Assistant use such tokens to connect to Firefly III and do their thing. When you create a token, it is only visible once. The token is also very long.
+
+> 
+
 > You have not created any personal access tokens.
 
 ### Assistant
@@ -921,15 +933,24 @@ canonical_ref: ""
 > That’s the move. PAT only. No OAuth client needed.
 
 ### User
-> qiadmin@qiserver:~$ curl -H "Authorization: Bearer $FIREFLY_TOKEN" \
-> > 
-> curl: (2) no URL specified
-> curl: try 'curl --help' or 'curl --manual' for more information
-> qiadmin@qiserver:~$   -H "Accept: application/json" \
-> > 
-> -H: command not found
-> qiadmin@qiserver:~$   "$FIREFLY_URL/api/v1/categories"
-> bash: http://qiserver-1.cerberus-sirius.ts.net:6877/api/v1/categories: No such file or directory
+> qiadmin@qiserver:~$ curl -H "Authorization: Bearer $FIREFLY_TOKEN" \
+
+> > 
+
+> curl: (2) no URL specified
+
+> curl: try 'curl --help' or 'curl --manual' for more information
+
+> qiadmin@qiserver:~$   -H "Accept: application/json" \
+
+> > 
+
+> -H: command not found
+
+> qiadmin@qiserver:~$   "$FIREFLY_URL/api/v1/categories"
+
+> bash: http://qiserver-1.cerberus-sirius.ts.net:6877/api/v1/categories: No such file or directory
+
 > qiadmin@qiserver:~$
 
 ### Assistant
@@ -971,7 +992,8 @@ canonical_ref: ""
 > What you want back is JSON. If you get a big HTML page, Firefly is redirecting you to login instead of accepting the token.
 
 ### User
-> qiadmin@qiserver:~$ curl -H "Authorization: Bearer $FIREFLY_TOKEN" -H "Accept: application/json" "$FIREFLY_URL/api/v1/categories"
+> qiadmin@qiserver:~$ curl -H "Authorization: Bearer $FIREFLY_TOKEN" -H "Accept: application/json" "$FIREFLY_URL/api/v1/categories"
+
 > {"data":[{"type":"categories","id":"1","attributes":{"created_at":"2026-05-22T22:00:33-05:00","updated_at":"2026-05-22T22:00:33-05:00","name":"01_Income","notes":"Includes caregiver pay, Lyft deposits, refunds, reimbursements, side income, and one-time payouts.","object_has_currency_setting":false,"primary_currency_id":"12","primary_currency_name":"US Dollar","primary_currency_code":"USD","primary_currency_symbol":"$","primary_currency_decimal_places":2,"spent":null,"pc_spent":null,"earned":null,"pc_earned":null,"transferred":null,"pc_transferred":null},"links":{"self":"http:\/\/qiserver-1.cerberus-sirius.ts.net:6877\/api\/v1\/categories\/1","0":{"rel":"self","uri":"\/categories\/1"}}}],"meta":{"pagination":{"total":1,"count":1,"per_page":50,"current_page":1,"total_pages":1}},"links":{"self":"http:\/\/qiserver-1.cerberus-sirius.ts.net:6877\/api\/v1\/categories?limit=50&page=1","first":"http:\/\/qiserver-1.cerberus-sirius.ts.net:6877\/api\/v1\/categories?limit=50&page=1","last":"http:\/\/qiserver-1.cerberus-sirius.ts.net:6877\/api\/v1\/categories?limit=50&page=1"}}qiadmin@qiserver:~$
 
 ### Assistant
@@ -2714,7 +2736,8 @@ canonical_ref: ""
 > Do not split everything. Do not group for vibes. Do not create fake architecture inside Firefly just because the word “group” sounds useful. Your category names already carry the domain grouping beautifully.
 
 ### User
-> Groups
+> Groups
+
 > Some things in Firefly III can be divided into groups. Piggy banks for example, feature a "Group" field in the edit and create screens. When you set this field, you can edit the names and the order of the groups on this page. For more information, check out the help-pages in the top right corner, under the (?)-icon.
 
 ### Assistant

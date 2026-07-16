@@ -3,9 +3,9 @@ layout: page
 title: "Obsidian plugin recommendations"
 slug: "obsidian_plugin_recommendations"
 created_at: "2025-08-11 06:39:16"
-updated_at: "2025-08-11 06:39:16"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

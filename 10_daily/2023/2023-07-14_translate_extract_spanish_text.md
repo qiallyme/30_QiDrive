@@ -3,9 +3,9 @@ layout: page
 title: "Translate & Extract Spanish Text"
 slug: "translate_extract_spanish_text"
 created_at: "2023-07-14 14:48:21"
-updated_at: "2023-07-14 14:48:21"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

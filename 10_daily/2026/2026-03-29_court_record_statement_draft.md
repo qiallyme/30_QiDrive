@@ -3,9 +3,9 @@ layout: page
 title: "Court Record Statement Draft"
 slug: "court_record_statement_draft"
 created_at: "2026-03-29 22:52:18"
-updated_at: "2026-03-29 22:52:18"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3383,404 +3383,802 @@ canonical_ref: ""
 > and we’ll do it together clean and fast.
 
 ### User
-> also remember the3 hearing here is that transcript, waht was said about the removal day with teh cleanign people. TRANSCRIPT OF PROCEEDINGS 
-> Case No: 49D@3-2501-MF-002559 
-> Date: January 9, 2026 
-> Plaintiff: Financial Center First Credit Union 
-> Defendants: Cody Rice Velazquez, American Express, JP Morgan Chase 
-> [9:28:27 AM] Magistrate Hannah: All right. Good morning. My name is Magistrate 
-> Hannah. We are here today on cause four nine D@32501MF 800255 9. Plaintiff 
-> Financial Center, first Credit Union versus defendant American Express, JP Morgan 
-> Chase and Cody Rice qui. To begin, I'd like the parties to please state and spell 
-> their names, beginning with counsel for plaintiff 
-> [9:28:55 AM] Scott Kain Wrath: Judge. My name is Scott Kain Wrath. 
-> S-C-0-T-T-K-A-I-N-R-A-T-H. Although I'm not a party and I represent Financial Center 
-> First Credit Union, and I have Susan Abbott from Financial Center here with me. 
-> [9:29:16 AM] Susan Abbott: My name is Susan Abbott, S-U-S-A-N-A-B-B-E-T-T. And I'm 
-> with Financial Center First Credit Union. 
-> [9:29:24 AM] Magistrate Hannah: Pardon? 
-> [9:29:25 AM] Susan Abbott: I'm with Financial Center First Credit Union. 
-> [9:29:29 AM] Cody Rice Velazquez: My name is, 
-> [9:29:30 AM] Magistrate Hannah: Sorry. Okay, so that's everybody for plaintiff, 
-> correct? Yeah. Alright, sir. 
-> [9:29:35 AM] Cody Rice Velazquez: Cody Rice Velazquez. C-O-D-Y-R-I-C-E hyphen 
-> V-E-L-A-S-Q-U-E-Z. 
-> [9:29:45 AM] Magistrate Hannah: Now we are here today on defendant Cody Rice 
-> Velasquez has filed from the court's perspective. I see a motion to set aside the 
-> judgment and then it looked like there was also a motion for release of excess 
-> proceeds. That's correct. So those are the two motions and as the moving party you 
-> go first you bear the burden of proof. A court always is guided by trial Rule 60 
-> when ruling on a motion to set aside a judgment. I see that a default judgment was 
-> granted it looks like on it was 5 28 25 and so you may begin. 
-> [9:30:35 AM] Cody Rice Velazquez: Okay, your Honor, in my motion I stated that the 
-> service was deficient because there was not adequate method to ensure I receive it 
-> and I didn't receive anything and that would leave it void under trial rule four one 
-> B. And because it void, I mean it would have to be void, which makes everything else 
-> after that legal. I have the summons here that has the receipt that's not completely 
-> filled out and some of the information. Isn't that correct? Could I? 
-> 2026/03/11 13:34 
-> know? 
-> [9:31:13 AM] Cody Rice Velazquez: The return to service one was on March 15th. I'm 
-> double checking real quick. 
-> [9:31:24 AM] Magistrate Hannah: I see one dated three five and one dated four 15. 
-> [9:31:28 AM] Cody Rice Velazquez: That's correction, your Honor. Okay. Yes, but 
-> neither of those were received. Can I give this to the pardon clerk? I brought 
-> courtesy. 
-> [9:31:40 AM] Magistrate Hannah: Are you offering this as an exhibit? Yeah. All 
-> right. If you could show it to counsel first and then offer it to the court and tell 
-> the court what it is. 
-> [9:31:52 AM] Cody Rice Velazquez: So this is just a summary of today it has the 
-> organized exhibits and the motions. 
-> [9:31:59 AM] Magistrate Hannah: Oh, these are all of your proposed exhibits 
-> [9:32:01 AM] Cody Rice Velazquez: For this motion to set aside for your 
-> [9:32:04 AM] Magistrate Hannah: Judgment. Okay. 
-> [9:32:07 AM] Cody Rice Velazquez: So everything should already be on the record 
-> already. It's just organization for. 
-> [9:32:12 AM] Magistrate Hannah: So these are things that have already been okay. 
-> Alright, thank you. So if you could tell the court why you believe the service was 
-> deficient? 
-> [9:32:37 AM] Cody Rice Velazquez: Because since it was, apparently it says it was 
-> dropped off according to the summons receipt, but there was no attached certified 
-> receipt of certified mailing. And also they appeared to be incomplete and one of ‘em 
-> was very early morning, which is not reasonable for me to hear. And due to my ad 
-> accommodations I don't necessarily hear sounds that well. So it would need more time 
-> for me to even notice that someone had been at the home. So there was no way for me 
-> to know that that was there. 
-> [9:33:18 AM] Magistrate Hannah: So you're saying go ahead. Say again. Why is it 
-> deficient? 
-> [9:33:24 AM] Cody Rice Velazquez: Because apparently according to the some in 
-> receipt it was just dropped off somewhere. Doesn't say out of service. Yeah, it 
-> doesn't say exactly where or if it was posted and I never received it and no one 
-> else ever noticed anything. So I never had an opportunity to properly respond. 
-> [9:33:43 AM] Magistrate Hannah: All right. 
-> [9:33:46 AM] Magistrate Hannah: And does that conclude your argument on EXHIBIT_L the motion 
-> 2026/03/11 13:34 
-> to set aside or is there more you'd like to say? 
-> [9:33:53 AM] Cody Rice Velazquez: Since there was the service was not adequate under 
-> the A DA, that would rule the default judgment. But wait al issue. So that's it. 
-> [9:34:06 AM] Magistrate Hannah: Alright, Mr. Now, Mr. Ken ra, what is your role here 
-> today? Are you representing the 
-> [9:34:15 AM] Cody Rice Velazquez: Financial center first? Okay. 
-> [9:34:17 AM] Magistrate Hannah: Yeah. 
-> [9:34:18 AM] Magistrate Hannah: And they are plaintiff, so would you like to 
-> respond? 
-> [9:34:21 AM] Cody Rice Velazquez: Well, my response is 
-> [9:34:23 AM] Scott Kain Wrath: That the trial rule was followed, a copy was left at 
-> the residence as well as mailed. It doesn't have to be certified mailed. So as a 
-> copy was put in the mail after it was left in the residence. And that happened both 
-> on the fifth and on the 15th. So service was filed, therefore it's held service. 
-> [9:34:51 AM] Magistrate Hannah: Okay, 
-> [9:34:53 AM] Magistrate Hannah: Well I am looking at both returns of service and it 
-> looks like on, and I don't know why we have two of them, but I do see a return to 
-> sir or defendant. Where did you live 
-> [9:35:18 AM] Cody Rice Velazquez: At the location where they stated it was left, 
-> [9:35:20 AM] Magistrate Hannah: The 4@ 17 Shadow Point Drive? That's correct, your 
-> Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy 
-> attested that they left a copy and mailed a copy and then I see it again on, let's 
-> go back here on April 15th that again they left a copy and mailed a copy, a 
-> different deputy and under trial rule four, that is adequate service. 
-> [9:36:02 AM] Cody Rice Velazquez: Understood, your Honor. But I would argue that 
-> because my A requests accommodations were completely ignored, it wasn't sufficient, 
-> it wasn't sufficiently calculated, ensure I received it, they could have very easily 
-> did a certification as well like they did with the other defendants. And it would, 
-> [9:36:19 AM] Magistrate Hannah: I'm sorry, what do you think they should have done? 
-> In addition 
-> [9:36:23 AM] Cody Rice Velazquez: Had also certified like they did the other two, 
-> American Express and Chase. That way it would ensure that I would receive some type 
-> of notice even if it was just receipt mail available to pick up. But I never 
-> received, I never saw anything else, even though they say that. 
-> [9:36:39 AM] Magistrate Hannah: And I don't see any on file, any request for a 
-> 2026/03/11 13:35 
-> different type of service. 
-> [9:36:51 AM] Cody Rice Velazquez: No, I communicated. 
-> [9:36:52 AM] Magistrate Hannah: So the court, and I'm looking since the beginning of 
-> the case, so the court does find that there was good service under trial rule four 
-> and denies your motion to set aside the judgment. 
-> [9:37:33 AM] Cody Rice Velazquez: Okay, understood. Thank you. 
-> [9:37:57 AM] Magistrate Hannah: No, that's not the only motion that we're hearing 
-> today though. There's also a motion for release of excess proceeds. And so I'm going 
-> to go through the case and the court finds that the property was sold. It says here 
-> on the 8 15 25 Sheriff's Sale notice was posted on the property. Mr. Ra, do you have 
-> anything to say as to this? 
-> [9:38:34 AM] Scott Kain Wrath: We're talking about the report of Are we into the 
-> excess? 
-> [9:38:40 AM] Magistrate Hannah: Yes, we are. Okay. 
-> [9:38:42 AM] Scott Kain Wrath: Yeah, our office filed a report of the sheriff's sale 
-> and report of no excess proceeds. Finance center was the primary, I guess, lien 
-> holder on this house. So they bid exactly what was owed, no more the amount debt, 
-> there's no reason to bid more. So it covered what was outstanding as well as outback 
-> taxes, some of the attorney fees and the administrative costs. In fact, there's more 
-> attorney fees that aren't even included in this. So actually at this point it's 
-> probably an underbid if anything. But there is no excess. And I think what was filed 
-> on December 17th kind of breaks it down and it includes, and there's also a copy of 
-> the taxes that were paid as part of that as well. 
-> [9:39:40 AM] Magistrate Hannah: Well, the notice I see filed on, was it 12 17 25 
-> shows $240,464 and 20 cents paid on the judgment. Looks like publication fee, 
-> sheriff fee, sheriff user fee, and zero was paid to the clerk. 
-> [9:40:07 AM] Cody Rice Velazquez: Your Honor, I would argue that there needs to be 
-> an audit done on that. I've reviewed the numbers and I think that doesn't need be 
-> looked at because they don't calculate to the same amounts, even based on their own. 
-> So I believe that the amount is incorrect that they're recording. 
-> [9:40:24 AM] Magistrate Hannah: And do you have anything to support that? 
-> [9:40:29 AM] Cody Rice Velazquez: I apologize, your Honor. Not with me at the 
-> moment. 
-> [9:40:31 AM] Magistrate Hannah: Pardon? 
-> [9:40:31 AM] Cody Rice Velazquez: Not with me at the moment, your Honor. I just 
-> become aware of the fact that we were going to discuss that other motion last night 
-> when I was reviewing the docket. And unfortunately due to some other issues, I 
-> wasn't the don't against accounting Significant judgment, confirm record. [9:41:14 [9:40:59 [9:41:08 [9:41:36 [9:41:39 [9:41:48 [9:40:45 [9:41:15 interest statements match able AndthAM] the done to what defendant? above numbers. so Magistrate Magistrate Magistrate Magistrate Magistrate Cody and amount when fullyor onthe $9,000. Rice it theIAnd final notifications prepare requested to lok IVelazquez: Velazquez: Velazquez: last Hannah: Hannah: Hannah: Hannah: Hannah: that's didn'tconfirm at calculation couple for the isYears. And Well, why Let's see it. the ItYour there, The record, that of Ione. because how information. could I believe bank see,was. When Honor, wouldmean later ar statements be Ithe you you all I ifwas thatere a very found courtsay I of asking usmay, impact? the needs statements, large forromgoes I theirat documents, tohe actually the offdifference, a be mortgage own the personal bank documentation I went actual judgment and mean, I amounts the judgment back believe first are amounts and through of and tohe go
-> [9:42 
-> [9:42 
-> [9:42 
-> [9:42 
-> [9:42 
-> :16 AM] 
-> [17 AM] 
-> :19 AM] 
-> :21 AM] 
-> 7:23 AM] 
-> Scott Kain 
-> Magistrate 
-> Scott Kain 
-> Magistrate 
-> Scott Kain 
-> Wrath: No, it's 
-> Hannah: It's all in rem. 
-> Wrath: It's in rem, yeah. Going after him for a 
-> Hannah: Deficiency. Right. 
-> I, would finance line. also [9:42:51 [9:42:56 [9:42:53 [9:42:55 besides on Iget the don't center AM] paid these property Magistrate Magistrate Scott think off. did numbers, exactly Kain there Therethat Wrath: weas didwhat believe two nota It's it second get JP was inMorgan being paidmortgage owed rem. off, accurate, And judgments was that Judge, there. would therethat I would were Okay. get also paidtwo prbably So off like judgment bfore to next add liens in Cody that 
-> Hannah: Yes, there is a first and the second 
-> Wrath: Correct, but with Finance Center. But with 
-> Hannah: Financial 
-> Wrath: Center. Okay. Yes. So in the order of the EXHIBIT_L sale 
-> 2026/03/11 13:35 
-> [9:43:03 AM] Magistrate Hannah: On their two mortgages. 
-> [9:43:05 AM] Scott Kain Wrath: On their two mortgages. Plus again, the taxes they 
-> paid and interest and all that, which effectively cut off the next in line, which 
-> would've been those two judgment liens from JP who would get paid if there was any 
-> access. And after they were paid, then there might be some money left over if there 
-> wasn't access to Cody. But as we stated, we believe there was no access to begin 
-> with and there's not. And again, there's no, it's an in rem, so there's no pursuit 
-> against Cody for any kind of deficiency or anything like that. 
-> [9:43:45 AM] Magistrate Hannah: Alright. 
-> [9:43:46 AM] Magistrate Hannah: Now there was a request to obtain personal 
-> possessions. Was that resolved 
-> [9:43:53 AM] Cody Rice Velazquez: Your Honor, as allotted one day, approximately 
-> four hours to do so while I was also trying to deal with homelessness and freezing 
-> weather. So it was very difficult to coordinate an actual moving truck or 
-> assistance. I packed as much stuff in the car that day as I could repacked at a 
-> park, but I still have a lot of property there that I do not want. I do want to 
-> retrieve or receive compensation for the loss. 
-> [9:44:26 AM] Magistrate Hannah: Any response? 
-> [9:44:27 AM] Scott Kain Wrath: Judge? The sheriff sale was held in August. A writ to 
-> remove did not occur until sometime later. There were plenty of time to remove items 
-> from the house. And then there was a three hour, three or four hour period set, I 
-> think for Cody to come and remove his or their items. And it's my understanding that 
-> they arrived late, an hour late. The sheriffs were ready to leave at that point, 
-> finance Center had a representative there, waited for an hour until they were ready 
-> to leave and then Cody showed up. So still had two or three hours to remove what was 
-> in there. So we believe there was ample time to get these items removed. Now finance 
-> center is sitting on a house, an empty house in the middle of winter, having to pay 
-> utility fees to keep the pipes from freezing, et cetera. They just want to get this 
-> place sold. So we don't want any more delay setting up additional times to come and 
-> get whatever's in that house. 
-> [9:45:37 AM] Cody Rice Velazquez: Your Honor, they have not changed the electric or 
-> water and into their name yet. I'm still getting billed for it. I'm still getting 
-> contacted for that. Also, the taxes paid, they paid the following periods taxes and 
-> are counting that against my taxes, which that would be theirs if they were the 
-> legal owners at the time. So they're, they're putting that on my ledger. Should not 
-> be 
-> [9:46:03 AM] Scott Kain Wrath: Judge my fault on the utilities. Ms. Abbot just 
-> indicated it just gets switched over today. 
-> [9:46:10 AM] Susan Abbott: Well, it will get switched over. We didn't do anything 
-> until this hearing today to see the outcome for electric or utilities. EXHIBIT 2026/03/11 13:35 L 
-> [9:46:17 AM] Magistrate Hannah: And since they've been switched over, does that mean 
-> you current, I mean has everything we will 
-> [9:46:25 AM] Susan Abbott: Take over? We will put the utilities in our name, 
-> anything that was prior to today's date that is on the previous person? 
-> [9:46:36 AM] Magistrate Hannah: Well, I 
-> [9:46:37 AM] Susan Abbott: Can let them know that 
-> [9:46:38 AM] Magistrate Hannah: It seems like from the court's perspective that you 
-> would be responsible for anything from your date of possession. 
-> [9:46:46 AM] Susan Abbott: I can do that. I can let them know the date that we 
-> recorded the deed and take possession of the utilities from that date going forward. 
-> [9:46:56 AM] Magistrate Hannah: Okay. 
-> [9:47:07 AM] Cody Rice Velazquez: And Your Honor, can I have 
-> [9:47:09 AM] Magistrate Hannah: Your Nope. Nope, not yet. I'm writing apologize, 
-> [9:47:11 AM] Cody Rice Velazquez: Sorry. 
-> [9:47:23 AM] Magistrate Hannah: All right. So what I have thus far, I have the 
-> court's ruled on the motion to set aside the judgment due to lack of service and the 
-> court denies that motion. Secondly, the court finds that there are no excess funds 
-> and as part of that ruling, it denies defendant's request for an audit as to, and 
-> the audit would be the mortgage, is that what you're asking? The audit 
-> [9:47:54 AM] Cody Rice Velazquez: Of? It'd be of what was calculated in the total 
-> judgment according to their documents. 
-> [9:48:00 AM] Magistrate Hannah: So that's the mortgage calculation of amount sewed 
-> by defendant you 
-> [9:48:07 AM] Cody Rice Velazquez: And it also includes their attorney fees and other 
-> charges, but I believe the totals are incorrect. 
-> [9:48:17 AM] Magistrate Hannah: All right. And third, we have plaintiffs request or 
-> defendant's request rather, that plaintiff bear responsibility for utilities from 
-> the date of possession and the court grants that request. And the last request I 
-> have is plaintiff's request to obtain additional personal possessions. And I've 
-> heard plaintiff's response, I'm sorry, defendant's request that you obtain gather 
-> additional personal possessions left at the property. Correct. And I've heard 
-> plaintiff's response that they did set up a time and 
-> [9:49:07 AM] Cody Rice Velazquez: I would like to add something to that. 
-> [9:49:10 AM] Magistrate Hannah: You'd like to respond? Go ahead. 
-> 2026/03/11 13:35 
-> [9:49:11 AM] Cody Rice Velazquez: Yes. So whenever they had attained ownership of 
-> the property, again, I have no idea. I was given 30 minutes to leave the first day 
-> and no time to plan. 
-> [9:49:25 AM] Magistrate Hannah: Well the court shows that the sheriff posted notice 
-> at the property D Notice of Sheriff's sale posted on 7 9 25 and it looks like the 
-> sheriff's sale wasn't until 8 15 25. So that's a month. 
-> [9:49:45 AM] Cody Rice Velazquez: But even then, your Honor, there would still be 
-> required to provide some type of eviction notice or process there too for me to 
-> understand when the timeframe was for me to have been left the home. That didn't 
-> happen. Also, there's other procedures the sheriff needed to take if I'm not 
-> mistaken, to inform me of the writ that's going to take place. I did not find out 
-> about the writ until literally the morning of, and I was given 30 minutes to vacate 
-> immediately with my pet and freezing cold with barely anything. So it was very 
-> difficult to plan. Every day was a struggle just to find a place to stay 
-> [9:50:23 AM] Magistrate Hannah: And 
-> [9:50:24 AM] Cody Rice Velazquez: Removal. 
-> [9:50:25 AM] Magistrate Hannah: You received notice in July of the 8 15 25 Sheriff's 
-> Sale and then they didn't file for the writ until the end of October. So that's much 
-> more time than people generally received. 
-> [9:50:40 AM] Cody Rice Velazquez: Yes, your Honor. But I didn't necessarily 
-> understand what those things meant and I didn't even know about ‘em until later. It 
-> wasn't until this writ happened that I was forced to focus a little bit of energy. I 
-> do have completely into this to find out exactly what did happen. I was at a loss 
-> and I was confused. I was even in discussions with real estate agents that even they 
-> didn't see the change in ownership and they thought it was still my home as recent 
-> as I believe, I want to say September and October. 
-> [9:51:10 AM] Magistrate Hannah: So what I hear now though, the remaining motion is 
-> for additional time to obtain personal possessions. Yes ma'am. Are they still at the 
-> property or have they been disposed of or stored? 
-> [9:51:23 AM] Susan Abbott: We have not touched anything in the house. 
-> [9:51:28 AM] Magistrate Hannah: And you've been given one opportunity, what are you 
-> asking fore 
-> [9:51:34 AM] Cody Rice Velazquez: Just for at least one more day just to get the 
-> last remaining days. 
-> [9:51:37 AM] Magistrate Hannah: You mean one more hour? 
-> [9:51:39 AM] Cody Rice Velazquez: Four hours would be helpful, honestly. 
-> 2026/03/11 13:35 
-> [9:51:41 AM] Magistrate Hannah: Well, they've already done, I mean the court can, if 
-> you still have possession, if nothing's been touched, then the court would, if you 
-> provide the court with a proposed order, we'd provide a one hour interval and we 
-> need to settle on the date and time right now. Okay. 
-> [9:52:02 AM] Cody Rice Velazquez: I'm available tomorrow. Today 
-> [9:52:06 AM] Susan Abbott: We have police sheriff's deputy that go to the house with 
-> me and I don't have access to that. He's out of town right now. So I wouldn't be 
-> able 
-> [9:52:19 AM] Magistrate Hannah: To, I'm sorry, say that one more 
-> [9:52:28 AM] Susan Abbott: Time. We have a sheriff's deputy and a retired sheriff's 
-> deputy that accompany me to the home for protection or I don't know the plaintiff. 
-> So we take a sheriff's deputy, we have to make time and arrangements for him to go 
-> as well as myself because that's an hour out of my office that I have to schedule. 
-> So at this time I wouldn't be able to give you a date that I would be able to do 
-> that. 
-> [9:52:48 AM] Magistrate Hannah: Because you don't know when they'll return. 
-> [9:52:58 AM] Susan Abbott: I don't. They're on vacation in Florida for the next two 
-> months. He's 
-> [9:52:54 AM] Magistrate Hannah: Retired. Oh, for two months. He's 
-> [9:52:55 AM] Susan Abbott: Retired. So he's our contact, 
-> [9:53:00 AM] Cody Rice Velazquez: Your Honor, may for what she just stated about 
-> needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. 
-> So F-C-F-C-U does know me. 
-> [9:53:14 AM] Magistrate Hannah: Who are you talking about? 
-> [9:53:16 AM] Cody Rice Velazquez: The bank. So we actually use them as a vendor, the 
-> company I work for. So they are aware of who I am and also I have no criminal 
-> record. There's no, there's no need for protection. Well 
-> [9:53:25 AM] Magistrate Hannah: The court, 
-> [9:53:26 AM] Cody Rice Velazquez: I just want to grab some things. 
-> [9:53:30 AM] Magistrate Hannah: This is, the court's not aware of what possessions 
-> are left. Are you going to put them, are you going, what do you do with them? I 
-> mean, I think the order permits that you dispose or store them. That 
-> [9:53:46 AM] Susan Abbott: Is correct. We normally have someone come in and just 
-> basically take everything and put it in a dumpster and clean out the property. 
-> [9:53:56 AM] Magistrate Hannah: And do you plan to schedule that? 
-> [9:53:58 AM] Susan Abbott: Not we haven't scheduled it yet. We would probably do 
-> that in the spring. 
-> [9:54:04 AM] Magistrate Hannah: Oh, well, Mr. Kenry, do you have any thoughts here? 
-> [9:54:18 AM] Scott Kain Wrath: Well, unless, and I don't know what the, Marion, this 
-> is properties in Marion County, whether the Marion Marion County Sheriff would show 
-> up or whether they charged to do that. They do. 
-> [9:54:22 AM] Magistrate Hannah: They do. They do If the court provides them with the 
-> root of assistance. Well, 
-> [9:54:26 AM] Susan Abbott: We were charged the second time when we were waiting for 
-> Cody to show up in the three hours, we had to pay those two officers to join me with 
-> letting him back in the property. 
-> [9:54:40 AM] Magistrate Hannah: Alright, well then the court's going to deny the 
-> request. However, I mean if you are going to schedule as to the disposition of the 
-> materials left in the home, the court could provide in the order that you provide 
-> notice of the date that you're going to be disposing of everything. And I assume 
-> you'll have someone there do that. And if you provide notice to the defendant, then 
-> he could show up as well. Is that agreeable? 
-> [9:55:20 AM] Scott Kain Wrath: Yes, your honor. 
-> [9:55:22 AM] Magistrate Hannah: Alright. Now do you have an address for purposes of 
-> notice or an email? 
-> [9:55:27 AM] Cody Rice Velazquez: Yes ma'am. My email is perfectly fine. It's C 
-> [9:55:30 AM] Magistrate Hannah: Wait a minute, wait a minute. How far in advance do 
-> you schedule that? 
-> [9:55:50 AM] Susan Abbott: We don't even have a company right now that we could 
-> hire. It's been several years since we've had a foreclosed property. So we do not 
-> currently have a company that we use to clean out properties. Normally if we take in 
-> a property during the winter seasons, all we do is go in and winterize it until the 
-> spring when we can go in and do a clean out and hire a real estate agent to place it 
-> for sale. 
-> [9:56:28 AM] Magistrate Hannah: Well the court will do a hearing journal entry from 
-> today's hearing and also an order since I've made some rulings and I have the 
-> plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior 
-> to disposition of house and personal possessions of date and time. And really all 
-> the court needs to order is that you provide him with notice. You don't have to 
-> assist and I don't have to order that the defendant be permitted to appear because 
-> there's no stay away order or anything like that. 
-> EXHIBIT_L _ 
-> 2026/03/11 13:35 
-> [9:57:18 AM] Scott Kain Wrath: And this could just be an email to Cody or are you 
-> wanting a notice filed on the docket? 
-> [9:57:28 AM] Cody Rice Velazquez: I prefer it to be on the docket just to keep 
-> everything organized. 
-> [9:57:35 AM] Magistrate Hannah: So notice with court, so then you're not providing 
-> notice to the defendant. You're filing notice with the court? 
-> [9:57:47 AM] Scott Kain Wrath: Yeah, well we, yes, your honor. But we would need an 
-> address where to serve Cody unless he's just going to constantly check the docket. 
-> [9:57:59 AM] Magistrate Hannah: Our notice is sent out. 
-> [9:58:01 AM] Cody Rice Velazquez: If we have an email address, it'll go to his 
-> email. 
-> [9:58:04 AM] Scott Kain Wrath: Okay. Alright, 
-> [9:58:05 AM] Cody Rice Velazquez: That's fine your Honor. 
-> [9:58:07 AM] Magistrate Hannah: Alright, So then I show I have five rulings from 
-> today. We're going to review those. We've got a motion to set aside denied court 
-> finds good service, two court finds, no excess funds. Court denies defendants motion 
-> to request for audit of mortgage calculation and amounts owed by defendant. Three. 
-> Defendant requests additional time to obtain personal possessions left on property 
-> court denies that request the court grants defendants request that plaintiff be, 
-> this is number four, that plaintiff be responsible for utilities from the date of 
-> possession and five plaintiff ordered to file notice with court file 10 days prior 
-> to disposition of house and personal possessions. Actually, it's just disposition of 
-> personal possessions because you're not disposing of the house anything further from 
-> either party? 
-> [9:59:21 AM] Cody Rice Velazquez: No, your Honor. Only one thing, your Honor. 
-> [9:59:22 AM] Magistrate Hannah: Okay. I'll send this out as we'll. Do it as a 
-> hearing journal entry and send it out to the parties as a notice. You said you had a 
-> remaining item? Yes. And it is 
-> [9:59:33 AM] Cody Rice Velazquez: The taxes for the second period, those are being 
-> calculated towards the total judgment, which would've been there. 
-> [9:59:41 AM] Magistrate Hannah: The judgment is complete. Oh, there are no more 
-> changes to the judgment, which would, okay. Alright. All right then if we have, and 
-> I'm sure Mr. Raith, have you filed in appearance? 
-> [10:00:02 AM] Cody Rice Velazquez: We need one from, I was going to tell you, we 
-> need [10:00:06 you to AM] file Magistrate one. We don't Hannah: have Then the after one you on four. fileOkay. it, if you do that EXHIBIT_L today, 2026/03/11 13:36 
-> you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out 
-> [10:00:17 AM] Cody Rice Velazquez: 4, 4 85. We got it. Thank you. 
-> [10:00:21 AM] Magistrate Hannah: And that's on the parties tab, I believe, isn't ite 
-> [10:00:25 AM] Cody Rice Velazquez: No, I don't know if it's on my case. I actually 
-> don't know if they have access to it on my case or not. I don't know if it appears 
-> on there or not. 
-> [10:00:31 AM] Magistrate Hannah: Do you want to, that concludes today's hearing. We 
+> also remember the3 hearing here is that transcript, waht was said about the removal day with teh cleanign people. TRANSCRIPT OF PROCEEDINGS 
+
+> Case No: 49D@3-2501-MF-002559 
+
+> Date: January 9, 2026 
+
+> Plaintiff: Financial Center First Credit Union 
+
+> Defendants: Cody Rice Velazquez, American Express, JP Morgan Chase 
+
+> [9:28:27 AM] Magistrate Hannah: All right. Good morning. My name is Magistrate 
+
+> Hannah. We are here today on cause four nine D@32501MF 800255 9. Plaintiff 
+
+> Financial Center, first Credit Union versus defendant American Express, JP Morgan 
+
+> Chase and Cody Rice qui. To begin, I'd like the parties to please state and spell 
+
+> their names, beginning with counsel for plaintiff 
+
+> [9:28:55 AM] Scott Kain Wrath: Judge. My name is Scott Kain Wrath. 
+
+> S-C-0-T-T-K-A-I-N-R-A-T-H. Although I'm not a party and I represent Financial Center 
+
+> First Credit Union, and I have Susan Abbott from Financial Center here with me. 
+
+> [9:29:16 AM] Susan Abbott: My name is Susan Abbott, S-U-S-A-N-A-B-B-E-T-T. And I'm 
+
+> with Financial Center First Credit Union. 
+
+> [9:29:24 AM] Magistrate Hannah: Pardon? 
+
+> [9:29:25 AM] Susan Abbott: I'm with Financial Center First Credit Union. 
+
+> [9:29:29 AM] Cody Rice Velazquez: My name is, 
+
+> [9:29:30 AM] Magistrate Hannah: Sorry. Okay, so that's everybody for plaintiff, 
+
+> correct? Yeah. Alright, sir. 
+
+> [9:29:35 AM] Cody Rice Velazquez: Cody Rice Velazquez. C-O-D-Y-R-I-C-E hyphen 
+
+> V-E-L-A-S-Q-U-E-Z. 
+
+> [9:29:45 AM] Magistrate Hannah: Now we are here today on defendant Cody Rice 
+
+> Velasquez has filed from the court's perspective. I see a motion to set aside the 
+
+> judgment and then it looked like there was also a motion for release of excess 
+
+> proceeds. That's correct. So those are the two motions and as the moving party you 
+
+> go first you bear the burden of proof. A court always is guided by trial Rule 60 
+
+> when ruling on a motion to set aside a judgment. I see that a default judgment was 
+
+> granted it looks like on it was 5 28 25 and so you may begin. 
+
+> [9:30:35 AM] Cody Rice Velazquez: Okay, your Honor, in my motion I stated that the 
+
+> service was deficient because there was not adequate method to ensure I receive it 
+
+> and I didn't receive anything and that would leave it void under trial rule four one 
+
+> B. And because it void, I mean it would have to be void, which makes everything else 
+
+> after that legal. I have the summons here that has the receipt that's not completely 
+
+> filled out and some of the information. Isn't that correct? Could I? 
+
+> 2026/03/11 13:34 
+
+> know? 
+
+> [9:31:13 AM] Cody Rice Velazquez: The return to service one was on March 15th. I'm 
+
+> double checking real quick. 
+
+> [9:31:24 AM] Magistrate Hannah: I see one dated three five and one dated four 15. 
+
+> [9:31:28 AM] Cody Rice Velazquez: That's correction, your Honor. Okay. Yes, but 
+
+> neither of those were received. Can I give this to the pardon clerk? I brought 
+
+> courtesy. 
+
+> [9:31:40 AM] Magistrate Hannah: Are you offering this as an exhibit? Yeah. All 
+
+> right. If you could show it to counsel first and then offer it to the court and tell 
+
+> the court what it is. 
+
+> [9:31:52 AM] Cody Rice Velazquez: So this is just a summary of today it has the 
+
+> organized exhibits and the motions. 
+
+> [9:31:59 AM] Magistrate Hannah: Oh, these are all of your proposed exhibits 
+
+> [9:32:01 AM] Cody Rice Velazquez: For this motion to set aside for your 
+
+> [9:32:04 AM] Magistrate Hannah: Judgment. Okay. 
+
+> [9:32:07 AM] Cody Rice Velazquez: So everything should already be on the record 
+
+> already. It's just organization for. 
+
+> [9:32:12 AM] Magistrate Hannah: So these are things that have already been okay. 
+
+> Alright, thank you. So if you could tell the court why you believe the service was 
+
+> deficient? 
+
+> [9:32:37 AM] Cody Rice Velazquez: Because since it was, apparently it says it was 
+
+> dropped off according to the summons receipt, but there was no attached certified 
+
+> receipt of certified mailing. And also they appeared to be incomplete and one of ‘em 
+
+> was very early morning, which is not reasonable for me to hear. And due to my ad 
+
+> accommodations I don't necessarily hear sounds that well. So it would need more time 
+
+> for me to even notice that someone had been at the home. So there was no way for me 
+
+> to know that that was there. 
+
+> [9:33:18 AM] Magistrate Hannah: So you're saying go ahead. Say again. Why is it 
+
+> deficient? 
+
+> [9:33:24 AM] Cody Rice Velazquez: Because apparently according to the some in 
+
+> receipt it was just dropped off somewhere. Doesn't say out of service. Yeah, it 
+
+> doesn't say exactly where or if it was posted and I never received it and no one 
+
+> else ever noticed anything. So I never had an opportunity to properly respond. 
+
+> [9:33:43 AM] Magistrate Hannah: All right. 
+
+> [9:33:46 AM] Magistrate Hannah: And does that conclude your argument on EXHIBIT_L the motion 
+
+> 2026/03/11 13:34 
+
+> to set aside or is there more you'd like to say? 
+
+> [9:33:53 AM] Cody Rice Velazquez: Since there was the service was not adequate under 
+
+> the A DA, that would rule the default judgment. But wait al issue. So that's it. 
+
+> [9:34:06 AM] Magistrate Hannah: Alright, Mr. Now, Mr. Ken ra, what is your role here 
+
+> today? Are you representing the 
+
+> [9:34:15 AM] Cody Rice Velazquez: Financial center first? Okay. 
+
+> [9:34:17 AM] Magistrate Hannah: Yeah. 
+
+> [9:34:18 AM] Magistrate Hannah: And they are plaintiff, so would you like to 
+
+> respond? 
+
+> [9:34:21 AM] Cody Rice Velazquez: Well, my response is 
+
+> [9:34:23 AM] Scott Kain Wrath: That the trial rule was followed, a copy was left at 
+
+> the residence as well as mailed. It doesn't have to be certified mailed. So as a 
+
+> copy was put in the mail after it was left in the residence. And that happened both 
+
+> on the fifth and on the 15th. So service was filed, therefore it's held service. 
+
+> [9:34:51 AM] Magistrate Hannah: Okay, 
+
+> [9:34:53 AM] Magistrate Hannah: Well I am looking at both returns of service and it 
+
+> looks like on, and I don't know why we have two of them, but I do see a return to 
+
+> sir or defendant. Where did you live 
+
+> [9:35:18 AM] Cody Rice Velazquez: At the location where they stated it was left, 
+
+> [9:35:20 AM] Magistrate Hannah: The 4@ 17 Shadow Point Drive? That's correct, your 
+
+> Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy 
+
+> attested that they left a copy and mailed a copy and then I see it again on, let's 
+
+> go back here on April 15th that again they left a copy and mailed a copy, a 
+
+> different deputy and under trial rule four, that is adequate service. 
+
+> [9:36:02 AM] Cody Rice Velazquez: Understood, your Honor. But I would argue that 
+
+> because my A requests accommodations were completely ignored, it wasn't sufficient, 
+
+> it wasn't sufficiently calculated, ensure I received it, they could have very easily 
+
+> did a certification as well like they did with the other defendants. And it would, 
+
+> [9:36:19 AM] Magistrate Hannah: I'm sorry, what do you think they should have done? 
+
+> In addition 
+
+> [9:36:23 AM] Cody Rice Velazquez: Had also certified like they did the other two, 
+
+> American Express and Chase. That way it would ensure that I would receive some type 
+
+> of notice even if it was just receipt mail available to pick up. But I never 
+
+> received, I never saw anything else, even though they say that. 
+
+> [9:36:39 AM] Magistrate Hannah: And I don't see any on file, any request for a 
+
+> 2026/03/11 13:35 
+
+> different type of service. 
+
+> [9:36:51 AM] Cody Rice Velazquez: No, I communicated. 
+
+> [9:36:52 AM] Magistrate Hannah: So the court, and I'm looking since the beginning of 
+
+> the case, so the court does find that there was good service under trial rule four 
+
+> and denies your motion to set aside the judgment. 
+
+> [9:37:33 AM] Cody Rice Velazquez: Okay, understood. Thank you. 
+
+> [9:37:57 AM] Magistrate Hannah: No, that's not the only motion that we're hearing 
+
+> today though. There's also a motion for release of excess proceeds. And so I'm going 
+
+> to go through the case and the court finds that the property was sold. It says here 
+
+> on the 8 15 25 Sheriff's Sale notice was posted on the property. Mr. Ra, do you have 
+
+> anything to say as to this? 
+
+> [9:38:34 AM] Scott Kain Wrath: We're talking about the report of Are we into the 
+
+> excess? 
+
+> [9:38:40 AM] Magistrate Hannah: Yes, we are. Okay. 
+
+> [9:38:42 AM] Scott Kain Wrath: Yeah, our office filed a report of the sheriff's sale 
+
+> and report of no excess proceeds. Finance center was the primary, I guess, lien 
+
+> holder on this house. So they bid exactly what was owed, no more the amount debt, 
+
+> there's no reason to bid more. So it covered what was outstanding as well as outback 
+
+> taxes, some of the attorney fees and the administrative costs. In fact, there's more 
+
+> attorney fees that aren't even included in this. So actually at this point it's 
+
+> probably an underbid if anything. But there is no excess. And I think what was filed 
+
+> on December 17th kind of breaks it down and it includes, and there's also a copy of 
+
+> the taxes that were paid as part of that as well. 
+
+> [9:39:40 AM] Magistrate Hannah: Well, the notice I see filed on, was it 12 17 25 
+
+> shows $240,464 and 20 cents paid on the judgment. Looks like publication fee, 
+
+> sheriff fee, sheriff user fee, and zero was paid to the clerk. 
+
+> [9:40:07 AM] Cody Rice Velazquez: Your Honor, I would argue that there needs to be 
+
+> an audit done on that. I've reviewed the numbers and I think that doesn't need be 
+
+> looked at because they don't calculate to the same amounts, even based on their own. 
+
+> So I believe that the amount is incorrect that they're recording. 
+
+> [9:40:24 AM] Magistrate Hannah: And do you have anything to support that? 
+
+> [9:40:29 AM] Cody Rice Velazquez: I apologize, your Honor. Not with me at the 
+
+> moment. 
+
+> [9:40:31 AM] Magistrate Hannah: Pardon? 
+
+> [9:40:31 AM] Cody Rice Velazquez: Not with me at the moment, your Honor. I just 
+
+> become aware of the fact that we were going to discuss that other motion last night 
+
+> when I was reviewing the docket. And unfortunately due to some other issues, I 
+
+> wasn't the don't against accounting Significant judgment, confirm record. [9:41:14 [9:40:59 [9:41:08 [9:41:36 [9:41:39 [9:41:48 [9:40:45 [9:41:15 interest statements match able AndthAM] the done to what defendant? above numbers. so Magistrate Magistrate Magistrate Magistrate Magistrate Cody and amount when fullyor onthe $9,000. Rice it theIAnd final notifications prepare requested to lok IVelazquez: Velazquez: Velazquez: last Hannah: Hannah: Hannah: Hannah: Hannah: that's didn'tconfirm at calculation couple for the isYears. And Well, why Let's see it. the ItYour there, The record, that of Ione. because how information. could I believe bank see,was. When Honor, wouldmean later ar statements be Ithe you you all I ifwas thatere a very found courtsay I of asking usmay, impact? the needs statements, large forromgoes I theirat documents, tohe actually the offdifference, a be mortgage own the personal bank documentation I went actual judgment and mean, I amounts the judgment back believe first are amounts and through of and tohe go
+
+> [9:42 
+
+> [9:42 
+
+> [9:42 
+
+> [9:42 
+
+> [9:42 
+
+> :16 AM] 
+
+> [17 AM] 
+
+> :19 AM] 
+
+> :21 AM] 
+
+> 7:23 AM] 
+
+> Scott Kain 
+
+> Magistrate 
+
+> Scott Kain 
+
+> Magistrate 
+
+> Scott Kain 
+
+> Wrath: No, it's 
+
+> Hannah: It's all in rem. 
+
+> Wrath: It's in rem, yeah. Going after him for a 
+
+> Hannah: Deficiency. Right. 
+
+> I, would finance line. also [9:42:51 [9:42:56 [9:42:53 [9:42:55 besides on Iget the don't center AM] paid these property Magistrate Magistrate Scott think off. did numbers, exactly Kain there Therethat Wrath: weas didwhat believe two nota It's it second get JP was inMorgan being paidmortgage owed rem. off, accurate, And judgments was that Judge, there. would therethat I would were Okay. get also paidtwo prbably So off like judgment bfore to next add liens in Cody that 
+
+> Hannah: Yes, there is a first and the second 
+
+> Wrath: Correct, but with Finance Center. But with 
+
+> Hannah: Financial 
+
+> Wrath: Center. Okay. Yes. So in the order of the EXHIBIT_L sale 
+
+> 2026/03/11 13:35 
+
+> [9:43:03 AM] Magistrate Hannah: On their two mortgages. 
+
+> [9:43:05 AM] Scott Kain Wrath: On their two mortgages. Plus again, the taxes they 
+
+> paid and interest and all that, which effectively cut off the next in line, which 
+
+> would've been those two judgment liens from JP who would get paid if there was any 
+
+> access. And after they were paid, then there might be some money left over if there 
+
+> wasn't access to Cody. But as we stated, we believe there was no access to begin 
+
+> with and there's not. And again, there's no, it's an in rem, so there's no pursuit 
+
+> against Cody for any kind of deficiency or anything like that. 
+
+> [9:43:45 AM] Magistrate Hannah: Alright. 
+
+> [9:43:46 AM] Magistrate Hannah: Now there was a request to obtain personal 
+
+> possessions. Was that resolved 
+
+> [9:43:53 AM] Cody Rice Velazquez: Your Honor, as allotted one day, approximately 
+
+> four hours to do so while I was also trying to deal with homelessness and freezing 
+
+> weather. So it was very difficult to coordinate an actual moving truck or 
+
+> assistance. I packed as much stuff in the car that day as I could repacked at a 
+
+> park, but I still have a lot of property there that I do not want. I do want to 
+
+> retrieve or receive compensation for the loss. 
+
+> [9:44:26 AM] Magistrate Hannah: Any response? 
+
+> [9:44:27 AM] Scott Kain Wrath: Judge? The sheriff sale was held in August. A writ to 
+
+> remove did not occur until sometime later. There were plenty of time to remove items 
+
+> from the house. And then there was a three hour, three or four hour period set, I 
+
+> think for Cody to come and remove his or their items. And it's my understanding that 
+
+> they arrived late, an hour late. The sheriffs were ready to leave at that point, 
+
+> finance Center had a representative there, waited for an hour until they were ready 
+
+> to leave and then Cody showed up. So still had two or three hours to remove what was 
+
+> in there. So we believe there was ample time to get these items removed. Now finance 
+
+> center is sitting on a house, an empty house in the middle of winter, having to pay 
+
+> utility fees to keep the pipes from freezing, et cetera. They just want to get this 
+
+> place sold. So we don't want any more delay setting up additional times to come and 
+
+> get whatever's in that house. 
+
+> [9:45:37 AM] Cody Rice Velazquez: Your Honor, they have not changed the electric or 
+
+> water and into their name yet. I'm still getting billed for it. I'm still getting 
+
+> contacted for that. Also, the taxes paid, they paid the following periods taxes and 
+
+> are counting that against my taxes, which that would be theirs if they were the 
+
+> legal owners at the time. So they're, they're putting that on my ledger. Should not 
+
+> be 
+
+> [9:46:03 AM] Scott Kain Wrath: Judge my fault on the utilities. Ms. Abbot just 
+
+> indicated it just gets switched over today. 
+
+> [9:46:10 AM] Susan Abbott: Well, it will get switched over. We didn't do anything 
+
+> until this hearing today to see the outcome for electric or utilities. EXHIBIT 2026/03/11 13:35 L 
+
+> [9:46:17 AM] Magistrate Hannah: And since they've been switched over, does that mean 
+
+> you current, I mean has everything we will 
+
+> [9:46:25 AM] Susan Abbott: Take over? We will put the utilities in our name, 
+
+> anything that was prior to today's date that is on the previous person? 
+
+> [9:46:36 AM] Magistrate Hannah: Well, I 
+
+> [9:46:37 AM] Susan Abbott: Can let them know that 
+
+> [9:46:38 AM] Magistrate Hannah: It seems like from the court's perspective that you 
+
+> would be responsible for anything from your date of possession. 
+
+> [9:46:46 AM] Susan Abbott: I can do that. I can let them know the date that we 
+
+> recorded the deed and take possession of the utilities from that date going forward. 
+
+> [9:46:56 AM] Magistrate Hannah: Okay. 
+
+> [9:47:07 AM] Cody Rice Velazquez: And Your Honor, can I have 
+
+> [9:47:09 AM] Magistrate Hannah: Your Nope. Nope, not yet. I'm writing apologize, 
+
+> [9:47:11 AM] Cody Rice Velazquez: Sorry. 
+
+> [9:47:23 AM] Magistrate Hannah: All right. So what I have thus far, I have the 
+
+> court's ruled on the motion to set aside the judgment due to lack of service and the 
+
+> court denies that motion. Secondly, the court finds that there are no excess funds 
+
+> and as part of that ruling, it denies defendant's request for an audit as to, and 
+
+> the audit would be the mortgage, is that what you're asking? The audit 
+
+> [9:47:54 AM] Cody Rice Velazquez: Of? It'd be of what was calculated in the total 
+
+> judgment according to their documents. 
+
+> [9:48:00 AM] Magistrate Hannah: So that's the mortgage calculation of amount sewed 
+
+> by defendant you 
+
+> [9:48:07 AM] Cody Rice Velazquez: And it also includes their attorney fees and other 
+
+> charges, but I believe the totals are incorrect. 
+
+> [9:48:17 AM] Magistrate Hannah: All right. And third, we have plaintiffs request or 
+
+> defendant's request rather, that plaintiff bear responsibility for utilities from 
+
+> the date of possession and the court grants that request. And the last request I 
+
+> have is plaintiff's request to obtain additional personal possessions. And I've 
+
+> heard plaintiff's response, I'm sorry, defendant's request that you obtain gather 
+
+> additional personal possessions left at the property. Correct. And I've heard 
+
+> plaintiff's response that they did set up a time and 
+
+> [9:49:07 AM] Cody Rice Velazquez: I would like to add something to that. 
+
+> [9:49:10 AM] Magistrate Hannah: You'd like to respond? Go ahead. 
+
+> 2026/03/11 13:35 
+
+> [9:49:11 AM] Cody Rice Velazquez: Yes. So whenever they had attained ownership of 
+
+> the property, again, I have no idea. I was given 30 minutes to leave the first day 
+
+> and no time to plan. 
+
+> [9:49:25 AM] Magistrate Hannah: Well the court shows that the sheriff posted notice 
+
+> at the property D Notice of Sheriff's sale posted on 7 9 25 and it looks like the 
+
+> sheriff's sale wasn't until 8 15 25. So that's a month. 
+
+> [9:49:45 AM] Cody Rice Velazquez: But even then, your Honor, there would still be 
+
+> required to provide some type of eviction notice or process there too for me to 
+
+> understand when the timeframe was for me to have been left the home. That didn't 
+
+> happen. Also, there's other procedures the sheriff needed to take if I'm not 
+
+> mistaken, to inform me of the writ that's going to take place. I did not find out 
+
+> about the writ until literally the morning of, and I was given 30 minutes to vacate 
+
+> immediately with my pet and freezing cold with barely anything. So it was very 
+
+> difficult to plan. Every day was a struggle just to find a place to stay 
+
+> [9:50:23 AM] Magistrate Hannah: And 
+
+> [9:50:24 AM] Cody Rice Velazquez: Removal. 
+
+> [9:50:25 AM] Magistrate Hannah: You received notice in July of the 8 15 25 Sheriff's 
+
+> Sale and then they didn't file for the writ until the end of October. So that's much 
+
+> more time than people generally received. 
+
+> [9:50:40 AM] Cody Rice Velazquez: Yes, your Honor. But I didn't necessarily 
+
+> understand what those things meant and I didn't even know about ‘em until later. It 
+
+> wasn't until this writ happened that I was forced to focus a little bit of energy. I 
+
+> do have completely into this to find out exactly what did happen. I was at a loss 
+
+> and I was confused. I was even in discussions with real estate agents that even they 
+
+> didn't see the change in ownership and they thought it was still my home as recent 
+
+> as I believe, I want to say September and October. 
+
+> [9:51:10 AM] Magistrate Hannah: So what I hear now though, the remaining motion is 
+
+> for additional time to obtain personal possessions. Yes ma'am. Are they still at the 
+
+> property or have they been disposed of or stored? 
+
+> [9:51:23 AM] Susan Abbott: We have not touched anything in the house. 
+
+> [9:51:28 AM] Magistrate Hannah: And you've been given one opportunity, what are you 
+
+> asking fore 
+
+> [9:51:34 AM] Cody Rice Velazquez: Just for at least one more day just to get the 
+
+> last remaining days. 
+
+> [9:51:37 AM] Magistrate Hannah: You mean one more hour? 
+
+> [9:51:39 AM] Cody Rice Velazquez: Four hours would be helpful, honestly. 
+
+> 2026/03/11 13:35 
+
+> [9:51:41 AM] Magistrate Hannah: Well, they've already done, I mean the court can, if 
+
+> you still have possession, if nothing's been touched, then the court would, if you 
+
+> provide the court with a proposed order, we'd provide a one hour interval and we 
+
+> need to settle on the date and time right now. Okay. 
+
+> [9:52:02 AM] Cody Rice Velazquez: I'm available tomorrow. Today 
+
+> [9:52:06 AM] Susan Abbott: We have police sheriff's deputy that go to the house with 
+
+> me and I don't have access to that. He's out of town right now. So I wouldn't be 
+
+> able 
+
+> [9:52:19 AM] Magistrate Hannah: To, I'm sorry, say that one more 
+
+> [9:52:28 AM] Susan Abbott: Time. We have a sheriff's deputy and a retired sheriff's 
+
+> deputy that accompany me to the home for protection or I don't know the plaintiff. 
+
+> So we take a sheriff's deputy, we have to make time and arrangements for him to go 
+
+> as well as myself because that's an hour out of my office that I have to schedule. 
+
+> So at this time I wouldn't be able to give you a date that I would be able to do 
+
+> that. 
+
+> [9:52:48 AM] Magistrate Hannah: Because you don't know when they'll return. 
+
+> [9:52:58 AM] Susan Abbott: I don't. They're on vacation in Florida for the next two 
+
+> months. He's 
+
+> [9:52:54 AM] Magistrate Hannah: Retired. Oh, for two months. He's 
+
+> [9:52:55 AM] Susan Abbott: Retired. So he's our contact, 
+
+> [9:53:00 AM] Cody Rice Velazquez: Your Honor, may for what she just stated about 
+
+> needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. 
+
+> So F-C-F-C-U does know me. 
+
+> [9:53:14 AM] Magistrate Hannah: Who are you talking about? 
+
+> [9:53:16 AM] Cody Rice Velazquez: The bank. So we actually use them as a vendor, the 
+
+> company I work for. So they are aware of who I am and also I have no criminal 
+
+> record. There's no, there's no need for protection. Well 
+
+> [9:53:25 AM] Magistrate Hannah: The court, 
+
+> [9:53:26 AM] Cody Rice Velazquez: I just want to grab some things. 
+
+> [9:53:30 AM] Magistrate Hannah: This is, the court's not aware of what possessions 
+
+> are left. Are you going to put them, are you going, what do you do with them? I 
+
+> mean, I think the order permits that you dispose or store them. That 
+
+> [9:53:46 AM] Susan Abbott: Is correct. We normally have someone come in and just 
+
+> basically take everything and put it in a dumpster and clean out the property. 
+
+> [9:53:56 AM] Magistrate Hannah: And do you plan to schedule that? 
+
+> [9:53:58 AM] Susan Abbott: Not we haven't scheduled it yet. We would probably do 
+
+> that in the spring. 
+
+> [9:54:04 AM] Magistrate Hannah: Oh, well, Mr. Kenry, do you have any thoughts here? 
+
+> [9:54:18 AM] Scott Kain Wrath: Well, unless, and I don't know what the, Marion, this 
+
+> is properties in Marion County, whether the Marion Marion County Sheriff would show 
+
+> up or whether they charged to do that. They do. 
+
+> [9:54:22 AM] Magistrate Hannah: They do. They do If the court provides them with the 
+
+> root of assistance. Well, 
+
+> [9:54:26 AM] Susan Abbott: We were charged the second time when we were waiting for 
+
+> Cody to show up in the three hours, we had to pay those two officers to join me with 
+
+> letting him back in the property. 
+
+> [9:54:40 AM] Magistrate Hannah: Alright, well then the court's going to deny the 
+
+> request. However, I mean if you are going to schedule as to the disposition of the 
+
+> materials left in the home, the court could provide in the order that you provide 
+
+> notice of the date that you're going to be disposing of everything. And I assume 
+
+> you'll have someone there do that. And if you provide notice to the defendant, then 
+
+> he could show up as well. Is that agreeable? 
+
+> [9:55:20 AM] Scott Kain Wrath: Yes, your honor. 
+
+> [9:55:22 AM] Magistrate Hannah: Alright. Now do you have an address for purposes of 
+
+> notice or an email? 
+
+> [9:55:27 AM] Cody Rice Velazquez: Yes ma'am. My email is perfectly fine. It's C 
+
+> [9:55:30 AM] Magistrate Hannah: Wait a minute, wait a minute. How far in advance do 
+
+> you schedule that? 
+
+> [9:55:50 AM] Susan Abbott: We don't even have a company right now that we could 
+
+> hire. It's been several years since we've had a foreclosed property. So we do not 
+
+> currently have a company that we use to clean out properties. Normally if we take in 
+
+> a property during the winter seasons, all we do is go in and winterize it until the 
+
+> spring when we can go in and do a clean out and hire a real estate agent to place it 
+
+> for sale. 
+
+> [9:56:28 AM] Magistrate Hannah: Well the court will do a hearing journal entry from 
+
+> today's hearing and also an order since I've made some rulings and I have the 
+
+> plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior 
+
+> to disposition of house and personal possessions of date and time. And really all 
+
+> the court needs to order is that you provide him with notice. You don't have to 
+
+> assist and I don't have to order that the defendant be permitted to appear because 
+
+> there's no stay away order or anything like that. 
+
+> EXHIBIT_L _ 
+
+> 2026/03/11 13:35 
+
+> [9:57:18 AM] Scott Kain Wrath: And this could just be an email to Cody or are you 
+
+> wanting a notice filed on the docket? 
+
+> [9:57:28 AM] Cody Rice Velazquez: I prefer it to be on the docket just to keep 
+
+> everything organized. 
+
+> [9:57:35 AM] Magistrate Hannah: So notice with court, so then you're not providing 
+
+> notice to the defendant. You're filing notice with the court? 
+
+> [9:57:47 AM] Scott Kain Wrath: Yeah, well we, yes, your honor. But we would need an 
+
+> address where to serve Cody unless he's just going to constantly check the docket. 
+
+> [9:57:59 AM] Magistrate Hannah: Our notice is sent out. 
+
+> [9:58:01 AM] Cody Rice Velazquez: If we have an email address, it'll go to his 
+
+> email. 
+
+> [9:58:04 AM] Scott Kain Wrath: Okay. Alright, 
+
+> [9:58:05 AM] Cody Rice Velazquez: That's fine your Honor. 
+
+> [9:58:07 AM] Magistrate Hannah: Alright, So then I show I have five rulings from 
+
+> today. We're going to review those. We've got a motion to set aside denied court 
+
+> finds good service, two court finds, no excess funds. Court denies defendants motion 
+
+> to request for audit of mortgage calculation and amounts owed by defendant. Three. 
+
+> Defendant requests additional time to obtain personal possessions left on property 
+
+> court denies that request the court grants defendants request that plaintiff be, 
+
+> this is number four, that plaintiff be responsible for utilities from the date of 
+
+> possession and five plaintiff ordered to file notice with court file 10 days prior 
+
+> to disposition of house and personal possessions. Actually, it's just disposition of 
+
+> personal possessions because you're not disposing of the house anything further from 
+
+> either party? 
+
+> [9:59:21 AM] Cody Rice Velazquez: No, your Honor. Only one thing, your Honor. 
+
+> [9:59:22 AM] Magistrate Hannah: Okay. I'll send this out as we'll. Do it as a 
+
+> hearing journal entry and send it out to the parties as a notice. You said you had a 
+
+> remaining item? Yes. And it is 
+
+> [9:59:33 AM] Cody Rice Velazquez: The taxes for the second period, those are being 
+
+> calculated towards the total judgment, which would've been there. 
+
+> [9:59:41 AM] Magistrate Hannah: The judgment is complete. Oh, there are no more 
+
+> changes to the judgment, which would, okay. Alright. All right then if we have, and 
+
+> I'm sure Mr. Raith, have you filed in appearance? 
+
+> [10:00:02 AM] Cody Rice Velazquez: We need one from, I was going to tell you, we 
+
+> need [10:00:06 you to AM] file Magistrate one. We don't Hannah: have Then the after one you on four. fileOkay. it, if you do that EXHIBIT_L today, 2026/03/11 13:36 
+
+> you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out 
+
+> [10:00:17 AM] Cody Rice Velazquez: 4, 4 85. We got it. Thank you. 
+
+> [10:00:21 AM] Magistrate Hannah: And that's on the parties tab, I believe, isn't ite 
+
+> [10:00:25 AM] Cody Rice Velazquez: No, I don't know if it's on my case. I actually 
+
+> don't know if they have access to it on my case or not. I don't know if it appears 
+
+> on there or not. 
+
+> [10:00:31 AM] Magistrate Hannah: Do you want to, that concludes today's hearing. We 
+
 > can go off.
 
 ### Assistant
@@ -4054,28 +4452,50 @@ canonical_ref: ""
 > I can turn this into a tight **2-paragraph record clarification section** next.
 
 ### User
-> ya literally the truck doors closed and they drove right to the dump and back to i guess dump more. then the attorney said they came back later and all this, like ok but the truck already dump my stuff off at the dump so why did it matter if they came back. also about my ada needs, this part proves the plaintiff withheld that info. [9:35:18 AM] Cody Rice Velazquez: At the location where they stated it was left, 
-> [9:35:20 AM] Magistrate Hannah: The 4@ 17 Shadow Point Drive? That's correct, your 
-> Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy 
-> attested that they left a copy and mailed a copy and then I see it again on, let's 
-> go back here on April 15th that again they left a copy and mailed a copy, a 
-> different deputy and under trial rule four, that is adequate service. 
-> [9:36:02 AM] Cody Rice Velazquez: Understood, your Honor. But I would argue that 
-> because my A requests accommodations were completely ignored, it wasn't sufficient, 
-> it wasn't sufficiently calculated, ensure I received it, they could have very easily 
-> did a certification as well like they did with the other defendants. And it would, 
-> [9:36:19 AM] Magistrate Hannah: I'm sorry, what do you think they should have done? 
-> In addition 
-> [9:36:23 AM] Cody Rice Velazquez: Had also certified like they did the other two, 
-> American Express and Chase. That way it would ensure that I would receive some type 
-> of notice even if it was just receipt mail available to pick up. But I never 
-> received, I never saw anything else, even though they say that. 
-> [9:36:39 AM] Magistrate Hannah: And I don't see any on file, any request for a 
-> 2026/03/11 13:35 
-> different type of service. 
-> [9:36:51 AM] Cody Rice Velazquez: No, I communicated. 
-> [9:36:52 AM] Magistrate Hannah: So the court, and I'm looking since the beginning of 
-> the case, so the court does find that there was good service under trial rule four 
+> ya literally the truck doors closed and they drove right to the dump and back to i guess dump more. then the attorney said they came back later and all this, like ok but the truck already dump my stuff off at the dump so why did it matter if they came back. also about my ada needs, this part proves the plaintiff withheld that info. [9:35:18 AM] Cody Rice Velazquez: At the location where they stated it was left, 
+
+> [9:35:20 AM] Magistrate Hannah: The 4@ 17 Shadow Point Drive? That's correct, your 
+
+> Honor. Alright, so the notice did go on March 5th then to 48 17 and the deputy 
+
+> attested that they left a copy and mailed a copy and then I see it again on, let's 
+
+> go back here on April 15th that again they left a copy and mailed a copy, a 
+
+> different deputy and under trial rule four, that is adequate service. 
+
+> [9:36:02 AM] Cody Rice Velazquez: Understood, your Honor. But I would argue that 
+
+> because my A requests accommodations were completely ignored, it wasn't sufficient, 
+
+> it wasn't sufficiently calculated, ensure I received it, they could have very easily 
+
+> did a certification as well like they did with the other defendants. And it would, 
+
+> [9:36:19 AM] Magistrate Hannah: I'm sorry, what do you think they should have done? 
+
+> In addition 
+
+> [9:36:23 AM] Cody Rice Velazquez: Had also certified like they did the other two, 
+
+> American Express and Chase. That way it would ensure that I would receive some type 
+
+> of notice even if it was just receipt mail available to pick up. But I never 
+
+> received, I never saw anything else, even though they say that. 
+
+> [9:36:39 AM] Magistrate Hannah: And I don't see any on file, any request for a 
+
+> 2026/03/11 13:35 
+
+> different type of service. 
+
+> [9:36:51 AM] Cody Rice Velazquez: No, I communicated. 
+
+> [9:36:52 AM] Magistrate Hannah: So the court, and I'm looking since the beginning of 
+
+> the case, so the court does find that there was good service under trial rule four 
+
 > and denies your motion to set aside the judgment.
 
 ### Assistant
@@ -4407,30 +4827,54 @@ canonical_ref: ""
 > and we’ll lock it in.
 
 ### User
-> and scott acerting tehre were other judgement liens, and there were note, he said i guess, and all this. park, but I still have a lot of property there that I do not want. I do want to 
-> retrieve or receive compensation for the loss. 
-> [9:44:26 AM] Magistrate Hannah: Any response? 
-> [9:44:27 AM] Scott Kain Wrath: Judge? The sheriff sale was held in August. A writ to 
-> remove did not occur until sometime later. There were plenty of time to remove items 
-> from the house. And then there was a three hour, three or four hour period set, I 
-> think for Cody to come and remove his or their items. And it's my understanding that 
-> they arrived late, an hour late. The sheriffs were ready to leave at that point, 
-> finance Center had a representative there, waited for an hour until they were ready 
-> to leave and then Cody showed up. So still had two or three hours to remove what was 
-> in there. So we believe there was ample time to get these items removed. Now finance 
-> center is sitting on a house, an empty house in the middle of winter, having to pay 
-> utility fees to keep the pipes from freezing, et cetera. They just want to get this 
-> place sold. So we don't want any more delay setting up additional times to come and 
-> get whatever's in that house. 
-> [9:45:37 AM] Cody Rice Velazquez: Your Honor, they have not changed the electric or 
-> water and into their name yet. I'm still getting billed for it. I'm still getting 
-> contacted for that. Also, the taxes paid, they paid the following periods taxes and 
-> are counting that against my taxes, which that would be theirs if they were the 
-> legal owners at the time. So they're, they're putting that on my ledger. Should not 
-> be 
-> [9:46:03 AM] Scott Kain Wrath: Judge my fault on the utilities. Ms. Abbot just 
-> indicated it just gets switched over today. 
-> [9:46:10 AM] Susan Abbott: Well, it will get switched over. We didn't do anything 
+> and scott acerting tehre were other judgement liens, and there were note, he said i guess, and all this. park, but I still have a lot of property there that I do not want. I do want to 
+
+> retrieve or receive compensation for the loss. 
+
+> [9:44:26 AM] Magistrate Hannah: Any response? 
+
+> [9:44:27 AM] Scott Kain Wrath: Judge? The sheriff sale was held in August. A writ to 
+
+> remove did not occur until sometime later. There were plenty of time to remove items 
+
+> from the house. And then there was a three hour, three or four hour period set, I 
+
+> think for Cody to come and remove his or their items. And it's my understanding that 
+
+> they arrived late, an hour late. The sheriffs were ready to leave at that point, 
+
+> finance Center had a representative there, waited for an hour until they were ready 
+
+> to leave and then Cody showed up. So still had two or three hours to remove what was 
+
+> in there. So we believe there was ample time to get these items removed. Now finance 
+
+> center is sitting on a house, an empty house in the middle of winter, having to pay 
+
+> utility fees to keep the pipes from freezing, et cetera. They just want to get this 
+
+> place sold. So we don't want any more delay setting up additional times to come and 
+
+> get whatever's in that house. 
+
+> [9:45:37 AM] Cody Rice Velazquez: Your Honor, they have not changed the electric or 
+
+> water and into their name yet. I'm still getting billed for it. I'm still getting 
+
+> contacted for that. Also, the taxes paid, they paid the following periods taxes and 
+
+> are counting that against my taxes, which that would be theirs if they were the 
+
+> legal owners at the time. So they're, they're putting that on my ledger. Should not 
+
+> be 
+
+> [9:46:03 AM] Scott Kain Wrath: Judge my fault on the utilities. Ms. Abbot just 
+
+> indicated it just gets switched over today. 
+
+> [9:46:10 AM] Susan Abbott: Well, it will get switched over. We didn't do anything 
+
 > until this hearing today to see the outcome for electric or utilities.
 
 ### Assistant
@@ -4595,82 +5039,158 @@ canonical_ref: ""
 > and I’ll give you the clean ending that hits like a hammer.
 
 ### User
-> did you get the sherif said the posted something on the hosue and they did not work it flow off. this whole scheduling mess, had they just let me go back that day, it could have changed everything tremendously i could have been to my dads in florida but i had to wait all this time to actually get my stuff just to get there and see it all in the back of a dump truck i could not get to without creating a liablity that could be used against me later if i was hurt or somethign tryign to get into the back of that truc. [9:51:23 AM] Susan Abbott: We have not touched anything in the house. 
-> [9:51:28 AM] Magistrate Hannah: And you've been given one opportunity, what are you 
-> asking fore 
-> [9:51:34 AM] Cody Rice Velazquez: Just for at least one more day just to get the 
-> last remaining days. 
-> [9:51:37 AM] Magistrate Hannah: You mean one more hour? 
-> [9:51:39 AM] Cody Rice Velazquez: Four hours would be helpful, honestly. 
-> 2026/03/11 13:35 
-> [9:51:41 AM] Magistrate Hannah: Well, they've already done, I mean the court can, if 
-> you still have possession, if nothing's been touched, then the court would, if you 
-> provide the court with a proposed order, we'd provide a one hour interval and we 
-> need to settle on the date and time right now. Okay. 
-> [9:52:02 AM] Cody Rice Velazquez: I'm available tomorrow. Today 
-> [9:52:06 AM] Susan Abbott: We have police sheriff's deputy that go to the house with 
-> me and I don't have access to that. He's out of town right now. So I wouldn't be 
-> able 
-> [9:52:19 AM] Magistrate Hannah: To, I'm sorry, say that one more 
-> [9:52:28 AM] Susan Abbott: Time. We have a sheriff's deputy and a retired sheriff's 
-> deputy that accompany me to the home for protection or I don't know the plaintiff. 
-> So we take a sheriff's deputy, we have to make time and arrangements for him to go 
-> as well as myself because that's an hour out of my office that I have to schedule. 
-> So at this time I wouldn't be able to give you a date that I would be able to do 
-> that. 
-> [9:52:48 AM] Magistrate Hannah: Because you don't know when they'll return. 
-> [9:52:58 AM] Susan Abbott: I don't. They're on vacation in Florida for the next two 
-> months. He's 
-> [9:52:54 AM] Magistrate Hannah: Retired. Oh, for two months. He's 
-> [9:52:55 AM] Susan Abbott: Retired. So he's our contact, 
-> [9:53:00 AM] Cody Rice Velazquez: Your Honor, may for what she just stated about 
-> needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. 
-> So F-C-F-C-U does know me. 
-> [9:53:14 AM] Magistrate Hannah: Who are you talking about? 
-> [9:53:16 AM] Cody Rice Velazquez: The bank. So we actually use them as a vendor, the 
-> company I work for. So they are aware of who I am and also I have no criminal 
-> record. There's no, there's no need for protection. Well 
-> [9:53:25 AM] Magistrate Hannah: The court, 
-> [9:53:26 AM] Cody Rice Velazquez: I just want to grab some things. 
-> [9:53:30 AM] Magistrate Hannah: This is, the court's not aware of what possessions 
-> are left. Are you going to put them, are you going, what do you do with them? I 
-> mean, I think the order permits that you dispose or store them. That 
-> [9:53:46 AM] Susan Abbott: Is correct. We normally have someone come in and just 
-> basically take everything and put it in a dumpster and clean out the property. 
-> [9:53:56 AM] Magistrate Hannah: And do you plan to schedule that? 
-> [9:53:58 AM] Susan Abbott: Not we haven't scheduled it yet. We would probably do 
-> that in the spring. 
-> [9:54:04 AM] Magistrate Hannah: Oh, well, Mr. Kenry, do you have any thoughts here? 
-> [9:54:18 AM] Scott Kain Wrath: Well, unless, and I don't know what the, Marion, this 
-> is properties in Marion County, whether the Marion Marion County Sheriff would show 
-> up or whether they charged to do that. They do. 
-> [9:54:22 AM] Magistrate Hannah: They do. They do If the court provides them with the 
-> root of assistance. Well, 
-> [9:54:26 AM] Susan Abbott: We were charged the second time when we were waiting for 
-> Cody to show up in the three hours, we had to pay those two officers to join me with 
-> letting him back in the property. 
-> [9:54:40 AM] Magistrate Hannah: Alright, well then the court's going to deny the 
-> request. However, I mean if you are going to schedule as to the disposition of the 
-> materials left in the home, the court could provide in the order that you provide 
-> notice of the date that you're going to be disposing of everything. And I assume 
-> you'll have someone there do that. And if you provide notice to the defendant, then 
-> he could show up as well. Is that agreeable? 
-> [9:55:20 AM] Scott Kain Wrath: Yes, your honor. 
-> [9:55:22 AM] Magistrate Hannah: Alright. Now do you have an address for purposes of 
-> notice or an email? 
-> [9:55:27 AM] Cody Rice Velazquez: Yes ma'am. My email is perfectly fine. It's C 
-> [9:55:30 AM] Magistrate Hannah: Wait a minute, wait a minute. How far in advance do 
-> you schedule that? 
-> [9:55:50 AM] Susan Abbott: We don't even have a company right now that we could 
-> hire. It's been several years since we've had a foreclosed property. So we do not 
-> currently have a company that we use to clean out properties. Normally if we take in 
-> a property during the winter seasons, all we do is go in and winterize it until the 
-> spring when we can go in and do a clean out and hire a real estate agent to place it 
-> for sale. 
-> [9:56:28 AM] Magistrate Hannah: Well the court will do a hearing journal entry from 
-> today's hearing and also an order since I've made some rulings and I have the 
-> plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior 
-> to disposition of house and personal possessions of date and time. And really all 
+> did you get the sherif said the posted something on the hosue and they did not work it flow off. this whole scheduling mess, had they just let me go back that day, it could have changed everything tremendously i could have been to my dads in florida but i had to wait all this time to actually get my stuff just to get there and see it all in the back of a dump truck i could not get to without creating a liablity that could be used against me later if i was hurt or somethign tryign to get into the back of that truc. [9:51:23 AM] Susan Abbott: We have not touched anything in the house. 
+
+> [9:51:28 AM] Magistrate Hannah: And you've been given one opportunity, what are you 
+
+> asking fore 
+
+> [9:51:34 AM] Cody Rice Velazquez: Just for at least one more day just to get the 
+
+> last remaining days. 
+
+> [9:51:37 AM] Magistrate Hannah: You mean one more hour? 
+
+> [9:51:39 AM] Cody Rice Velazquez: Four hours would be helpful, honestly. 
+
+> 2026/03/11 13:35 
+
+> [9:51:41 AM] Magistrate Hannah: Well, they've already done, I mean the court can, if 
+
+> you still have possession, if nothing's been touched, then the court would, if you 
+
+> provide the court with a proposed order, we'd provide a one hour interval and we 
+
+> need to settle on the date and time right now. Okay. 
+
+> [9:52:02 AM] Cody Rice Velazquez: I'm available tomorrow. Today 
+
+> [9:52:06 AM] Susan Abbott: We have police sheriff's deputy that go to the house with 
+
+> me and I don't have access to that. He's out of town right now. So I wouldn't be 
+
+> able 
+
+> [9:52:19 AM] Magistrate Hannah: To, I'm sorry, say that one more 
+
+> [9:52:28 AM] Susan Abbott: Time. We have a sheriff's deputy and a retired sheriff's 
+
+> deputy that accompany me to the home for protection or I don't know the plaintiff. 
+
+> So we take a sheriff's deputy, we have to make time and arrangements for him to go 
+
+> as well as myself because that's an hour out of my office that I have to schedule. 
+
+> So at this time I wouldn't be able to give you a date that I would be able to do 
+
+> that. 
+
+> [9:52:48 AM] Magistrate Hannah: Because you don't know when they'll return. 
+
+> [9:52:58 AM] Susan Abbott: I don't. They're on vacation in Florida for the next two 
+
+> months. He's 
+
+> [9:52:54 AM] Magistrate Hannah: Retired. Oh, for two months. He's 
+
+> [9:52:55 AM] Susan Abbott: Retired. So he's our contact, 
+
+> [9:53:00 AM] Cody Rice Velazquez: Your Honor, may for what she just stated about 
+
+> needing officer there. I worked with F-C-F-C-U as our HSA vendor through MSIL also. 
+
+> So F-C-F-C-U does know me. 
+
+> [9:53:14 AM] Magistrate Hannah: Who are you talking about? 
+
+> [9:53:16 AM] Cody Rice Velazquez: The bank. So we actually use them as a vendor, the 
+
+> company I work for. So they are aware of who I am and also I have no criminal 
+
+> record. There's no, there's no need for protection. Well 
+
+> [9:53:25 AM] Magistrate Hannah: The court, 
+
+> [9:53:26 AM] Cody Rice Velazquez: I just want to grab some things. 
+
+> [9:53:30 AM] Magistrate Hannah: This is, the court's not aware of what possessions 
+
+> are left. Are you going to put them, are you going, what do you do with them? I 
+
+> mean, I think the order permits that you dispose or store them. That 
+
+> [9:53:46 AM] Susan Abbott: Is correct. We normally have someone come in and just 
+
+> basically take everything and put it in a dumpster and clean out the property. 
+
+> [9:53:56 AM] Magistrate Hannah: And do you plan to schedule that? 
+
+> [9:53:58 AM] Susan Abbott: Not we haven't scheduled it yet. We would probably do 
+
+> that in the spring. 
+
+> [9:54:04 AM] Magistrate Hannah: Oh, well, Mr. Kenry, do you have any thoughts here? 
+
+> [9:54:18 AM] Scott Kain Wrath: Well, unless, and I don't know what the, Marion, this 
+
+> is properties in Marion County, whether the Marion Marion County Sheriff would show 
+
+> up or whether they charged to do that. They do. 
+
+> [9:54:22 AM] Magistrate Hannah: They do. They do If the court provides them with the 
+
+> root of assistance. Well, 
+
+> [9:54:26 AM] Susan Abbott: We were charged the second time when we were waiting for 
+
+> Cody to show up in the three hours, we had to pay those two officers to join me with 
+
+> letting him back in the property. 
+
+> [9:54:40 AM] Magistrate Hannah: Alright, well then the court's going to deny the 
+
+> request. However, I mean if you are going to schedule as to the disposition of the 
+
+> materials left in the home, the court could provide in the order that you provide 
+
+> notice of the date that you're going to be disposing of everything. And I assume 
+
+> you'll have someone there do that. And if you provide notice to the defendant, then 
+
+> he could show up as well. Is that agreeable? 
+
+> [9:55:20 AM] Scott Kain Wrath: Yes, your honor. 
+
+> [9:55:22 AM] Magistrate Hannah: Alright. Now do you have an address for purposes of 
+
+> notice or an email? 
+
+> [9:55:27 AM] Cody Rice Velazquez: Yes ma'am. My email is perfectly fine. It's C 
+
+> [9:55:30 AM] Magistrate Hannah: Wait a minute, wait a minute. How far in advance do 
+
+> you schedule that? 
+
+> [9:55:50 AM] Susan Abbott: We don't even have a company right now that we could 
+
+> hire. It's been several years since we've had a foreclosed property. So we do not 
+
+> currently have a company that we use to clean out properties. Normally if we take in 
+
+> a property during the winter seasons, all we do is go in and winterize it until the 
+
+> spring when we can go in and do a clean out and hire a real estate agent to place it 
+
+> for sale. 
+
+> [9:56:28 AM] Magistrate Hannah: Well the court will do a hearing journal entry from 
+
+> today's hearing and also an order since I've made some rulings and I have the 
+
+> plaintiff to provide notice to defendant. I'm going to put with 10 days notice prior 
+
+> to disposition of house and personal possessions of date and time. And really all 
+
 > the court needs to order is that you provide him with
 
 ### Assistant
@@ -4874,18 +5394,30 @@ canonical_ref: ""
 > and I’ll give you the last section that ties EVERYTHING together into one clean hit.
 
 ### User
-> and dont forget they can even file their apprearance in a timely manner, i wish i got that much help. [9:59:41 AM] Magistrate Hannah: The judgment is complete. Oh, there are no more 
-> changes to the judgment, which would, okay. Alright. All right then if we have, and 
-> I'm sure Mr. Raith, have you filed in appearance? 
-> [10:00:02 AM] Cody Rice Velazquez: We need one from, I was going to tell you, we 
-> need [10:00:06 you to AM] file Magistrate one. We don't Hannah: have Then the after one you on four. fileOkay. it, if you do that EXHIBIT_L today, 2026/03/11 13:36 
-> you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out 
-> [10:00:17 AM] Cody Rice Velazquez: 4, 4 85. We got it. Thank you. 
-> [10:00:21 AM] Magistrate Hannah: And that's on the parties tab, I believe, isn't ite 
-> [10:00:25 AM] Cody Rice Velazquez: No, I don't know if it's on my case. I actually 
-> don't know if they have access to it on my case or not. I don't know if it appears 
-> on there or not. 
-> [10:00:31 AM] Magistrate Hannah: Do you want to, that concludes today's hearing. We 
+> and dont forget they can even file their apprearance in a timely manner, i wish i got that much help. [9:59:41 AM] Magistrate Hannah: The judgment is complete. Oh, there are no more 
+
+> changes to the judgment, which would, okay. Alright. All right then if we have, and 
+
+> I'm sure Mr. Raith, have you filed in appearance? 
+
+> [10:00:02 AM] Cody Rice Velazquez: We need one from, I was going to tell you, we 
+
+> need [10:00:06 you to AM] file Magistrate one. We don't Hannah: have Then the after one you on four. fileOkay. it, if you do that EXHIBIT_L today, 2026/03/11 13:36 
+
+> you'll get the notice. Okay. And if we have your email, you'll get it. It's sent out 
+
+> [10:00:17 AM] Cody Rice Velazquez: 4, 4 85. We got it. Thank you. 
+
+> [10:00:21 AM] Magistrate Hannah: And that's on the parties tab, I believe, isn't ite 
+
+> [10:00:25 AM] Cody Rice Velazquez: No, I don't know if it's on my case. I actually 
+
+> don't know if they have access to it on my case or not. I don't know if it appears 
+
+> on there or not. 
+
+> [10:00:31 AM] Magistrate Hannah: Do you want to, that concludes today's hearing. We 
+
 > can go off.
 
 ### Assistant
@@ -6288,44 +6820,82 @@ canonical_ref: ""
 > **“strong statement” → “case leverage”**
 
 ### User
-> this is from one of the audios them all talking int he garage after i was pushed out. 1
-> 00:00:05,330 --> 00:00:15,860
-> And he asked his partner, he didn't know anything about this, but why would you tell them about what's going on?
-> 
-> 2
-> 00:00:15,940 --> 00:00:20,120
-> Someone that I can work with, I would tell them to call me or something before I, you know,
-> 
-> 3
-> 00:00:20,760 --> 00:00:23,280
-> before I would have understood this or something.
-> 
-> 4
-> 00:00:23,860 --> 00:00:29,000
-> And I would bring a couple of good people, and we all would bring, like, the market-oriented message or something,
-> 
-> 5
-> 00:00:29,080 --> 00:00:33,880
-> and we would bring, and we'd talk to the next person, and we would tell you, like,
-> 
-> 6
-> 00:00:33,940 --> 00:00:36,940
-> what product is this right here that they have with us?
-> 
-> 7
-> 00:00:37,020 --> 00:00:38,440
-> And I was like, well, I haven't seen anything.
-> 
-> 8
-> 00:00:38,440 --> 00:00:44,440
-> Well, this was filed back in November 6th, and this is over a month old.
-> 
-> 9
-> 00:00:44,440 --> 00:00:47,440
-> It was shared by the Subdivision of Communication.
-> 
-> 10
-> 00:00:47,440 --> 00:00:55,350
+> this is from one of the audios them all talking int he garage after i was pushed out. 1
+
+> 00:00:05,330 --> 00:00:15,860
+
+> And he asked his partner, he didn't know anything about this, but why would you tell them about what's going on?
+
+> 
+
+> 2
+
+> 00:00:15,940 --> 00:00:20,120
+
+> Someone that I can work with, I would tell them to call me or something before I, you know,
+
+> 
+
+> 3
+
+> 00:00:20,760 --> 00:00:23,280
+
+> before I would have understood this or something.
+
+> 
+
+> 4
+
+> 00:00:23,860 --> 00:00:29,000
+
+> And I would bring a couple of good people, and we all would bring, like, the market-oriented message or something,
+
+> 
+
+> 5
+
+> 00:00:29,080 --> 00:00:33,880
+
+> and we would bring, and we'd talk to the next person, and we would tell you, like,
+
+> 
+
+> 6
+
+> 00:00:33,940 --> 00:00:36,940
+
+> what product is this right here that they have with us?
+
+> 
+
+> 7
+
+> 00:00:37,020 --> 00:00:38,440
+
+> And I was like, well, I haven't seen anything.
+
+> 
+
+> 8
+
+> 00:00:38,440 --> 00:00:44,440
+
+> Well, this was filed back in November 6th, and this is over a month old.
+
+> 
+
+> 9
+
+> 00:00:44,440 --> 00:00:47,440
+
+> It was shared by the Subdivision of Communication.
+
+> 
+
+> 10
+
+> 00:00:47,440 --> 00:00:55,350
+
 > And so I said, well, it's a problem.
 
 ### Assistant
@@ -6422,100 +6992,194 @@ canonical_ref: ""
 > You’re doing this right now. This is no longer chaos—this is controlled pressure.
 
 ### User
-> o an this gem i told you about earlier, 1
-> 00:00:00,000 --> 00:00:00,960
-> ...or anything like that?
-> 
-> 2
-> 00:00:01,040 --> 00:00:03,600
-> I don't have an attorney, I don't have money, I don't have a job, I don't have anything.
-> 
-> 3
-> 00:00:03,920 --> 00:00:07,740
-> Okay, I don't know what's going on, but that's why we're here, okay?
-> 
-> 4
-> 00:00:07,840 --> 00:00:10,300
-> And we're going to do this, okay?
-> 
-> 5
-> 00:00:10,980 --> 00:00:11,560
-> So, uh...
-> 
-> 6
-> 00:00:11,560 --> 00:00:13,340
-> I'm going to have you grab some stuff, so I can...
-> 
-> 7
-> 00:00:13,340 --> 00:00:15,440
-> Well, that's... Can we step inside?
-> 
-> 8
-> 00:00:16,020 --> 00:00:17,860
-> It's not a can. We're about to...
-> 
-> 9
-> 00:00:17,860 --> 00:00:20,980
-> Once we're here, we take possession of this property.
-> 
-> 10
-> 00:00:21,080 --> 00:00:21,600
-> Right, right.
-> 
-> 11
-> 00:00:21,620 --> 00:00:22,480
-> It's courteous.
-> 
-> 12
-> 00:00:22,520 --> 00:00:23,220
-> I understand, yeah.
-> 
-> 13
-> 00:00:23,260 --> 00:00:24,600
-> I'm going to allow you guys to get some...
-> 
-> 14
-> 00:00:24,600 --> 00:00:27,860
-> Yeah, I'll let you in. I just want to grab my stuff and, you know...
-> 
-> 15
-> 00:00:27,860 --> 00:00:32,320
-> We just want you to understand that this property is in our possession, okay?
-> 
-> 16
-> 00:00:32,760 --> 00:00:34,700
-> We're not telling you anything.
-> 
-> 17
-> 00:00:34,920 --> 00:00:36,160
-> Nobody told us anything.
-> 
-> 18
-> 00:00:42,360 --> 00:00:43,200
-> You can move the warning.
-> 
-> 19
-> 00:00:43,320 --> 00:00:43,940
-> It's not going to be ready.
-> 
-> 20
-> 00:00:45,700 --> 00:00:47,720
-> We're going to be nice to you, okay?
-> 
-> 21
-> 00:00:48,080 --> 00:00:48,820
-> We're not here.
-> 
-> 22
-> 00:00:54,360 --> 00:00:55,580
-> Is this your van right here?
-> 
-> 23
-> 00:00:56,840 --> 00:00:57,760
-> Is this your friend?
-> 
-> 24
-> 00:00:58,100 --> 00:00:59,900
+> o an this gem i told you about earlier, 1
+
+> 00:00:00,000 --> 00:00:00,960
+
+> ...or anything like that?
+
+> 
+
+> 2
+
+> 00:00:01,040 --> 00:00:03,600
+
+> I don't have an attorney, I don't have money, I don't have a job, I don't have anything.
+
+> 
+
+> 3
+
+> 00:00:03,920 --> 00:00:07,740
+
+> Okay, I don't know what's going on, but that's why we're here, okay?
+
+> 
+
+> 4
+
+> 00:00:07,840 --> 00:00:10,300
+
+> And we're going to do this, okay?
+
+> 
+
+> 5
+
+> 00:00:10,980 --> 00:00:11,560
+
+> So, uh...
+
+> 
+
+> 6
+
+> 00:00:11,560 --> 00:00:13,340
+
+> I'm going to have you grab some stuff, so I can...
+
+> 
+
+> 7
+
+> 00:00:13,340 --> 00:00:15,440
+
+> Well, that's... Can we step inside?
+
+> 
+
+> 8
+
+> 00:00:16,020 --> 00:00:17,860
+
+> It's not a can. We're about to...
+
+> 
+
+> 9
+
+> 00:00:17,860 --> 00:00:20,980
+
+> Once we're here, we take possession of this property.
+
+> 
+
+> 10
+
+> 00:00:21,080 --> 00:00:21,600
+
+> Right, right.
+
+> 
+
+> 11
+
+> 00:00:21,620 --> 00:00:22,480
+
+> It's courteous.
+
+> 
+
+> 12
+
+> 00:00:22,520 --> 00:00:23,220
+
+> I understand, yeah.
+
+> 
+
+> 13
+
+> 00:00:23,260 --> 00:00:24,600
+
+> I'm going to allow you guys to get some...
+
+> 
+
+> 14
+
+> 00:00:24,600 --> 00:00:27,860
+
+> Yeah, I'll let you in. I just want to grab my stuff and, you know...
+
+> 
+
+> 15
+
+> 00:00:27,860 --> 00:00:32,320
+
+> We just want you to understand that this property is in our possession, okay?
+
+> 
+
+> 16
+
+> 00:00:32,760 --> 00:00:34,700
+
+> We're not telling you anything.
+
+> 
+
+> 17
+
+> 00:00:34,920 --> 00:00:36,160
+
+> Nobody told us anything.
+
+> 
+
+> 18
+
+> 00:00:42,360 --> 00:00:43,200
+
+> You can move the warning.
+
+> 
+
+> 19
+
+> 00:00:43,320 --> 00:00:43,940
+
+> It's not going to be ready.
+
+> 
+
+> 20
+
+> 00:00:45,700 --> 00:00:47,720
+
+> We're going to be nice to you, okay?
+
+> 
+
+> 21
+
+> 00:00:48,080 --> 00:00:48,820
+
+> We're not here.
+
+> 
+
+> 22
+
+> 00:00:54,360 --> 00:00:55,580
+
+> Is this your van right here?
+
+> 
+
+> 23
+
+> 00:00:56,840 --> 00:00:57,760
+
+> Is this your friend?
+
+> 
+
+> 24
+
+> 00:00:58,100 --> 00:00:59,900
+
 > Okay, is your friend up and away? , this video show sthe bank security doing all the taklkign and directing.
 
 ### Assistant

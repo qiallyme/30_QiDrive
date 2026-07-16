@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Spiritual awakening - embracing neurodivergence as design not deficit"
 slug: "spiritual_awakening_embracing_neurodivergence_as_design_not_deficit"
 summary: ""
 status: active
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9fad5c78c1a54882ab5cc2974385fc0c
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-01-01
 ---
+
 # Spiritual awakening - embracing neurodivergence as design not deficit
 
 Category: Spiritual

@@ -3,9 +3,9 @@ layout: page
 title: "La Fuente Cargo Contract"
 slug: "la_fuente_cargo_contract"
 created_at: "2023-07-31 15:08:03"
-updated_at: "2023-07-31 15:08:03"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

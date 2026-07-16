@@ -3,9 +3,9 @@ layout: page
 title: "Caregiver App Sections"
 slug: "caregiver_app_sections"
 created_at: "2026-02-19 10:42:40"
-updated_at: "2026-02-19 10:42:40"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

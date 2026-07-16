@@ -3,9 +3,9 @@ layout: page
 title: "Desired job title"
 slug: "desired_job_title"
 created_at: "2025-12-06 20:07:37"
-updated_at: "2025-12-06 20:07:37"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -194,31 +194,56 @@ canonical_ref: ""
 > If you want, I can compare JobHire.AI to better tools or tell you whether it’s worth using **for your specific career goals** (given the titles/roles you’re targeting).
 
 ### User
-> do i qualify ? 
-> CIS - HR - ESSENTIAL
-> 
-> HRSD - ESSENTIAL
-> 
-> CSA - ESSENTIAL
-> 
-> BPC
-> 
-> Excellent communication or consultancy skills
-> 
-> Ability to work independently
-> 
-> You will use your knowledge to get involved in the configuration, support, process and implementation of HRSD solutions.
-> 
-> Rate - Negotiable
-> 
-> If this is of interest, please apply with an updated resume to matt.stevenson@platform-6.com or call +1 315 277 3100
-> 
-> For all our ServiceNow vacancies please view our website www.platform-6.com
-> 
-> Platform 6 Ltd is an international leader in Cloud and Technology Talent who specialise in Salesforce.com, Data Transformation, AI and ServiceNow recruitment within North America, Europe and the UK.
-> 
-> We provide Salesforce, Data Transformation, AI and ServiceNow recruitment services to a wide variety of companies from Consultancies to partners to end users on a permanent, contract and contract to hire basis, working across numerous Salesforce roles such as an Administrator, Developer, Consultant, Integration expert, Implementation specialist, Business Analyst, Project Manager, Program Manager, Tester, Architect, CRM Manager/Director, Trainer/Instructor, Sales, Marketing Automation expert, Technical Lead and many more.
-> 
+> do i qualify ? 
+
+> CIS - HR - ESSENTIAL
+
+> 
+
+> HRSD - ESSENTIAL
+
+> 
+
+> CSA - ESSENTIAL
+
+> 
+
+> BPC
+
+> 
+
+> Excellent communication or consultancy skills
+
+> 
+
+> Ability to work independently
+
+> 
+
+> You will use your knowledge to get involved in the configuration, support, process and implementation of HRSD solutions.
+
+> 
+
+> Rate - Negotiable
+
+> 
+
+> If this is of interest, please apply with an updated resume to matt.stevenson@platform-6.com or call +1 315 277 3100
+
+> 
+
+> For all our ServiceNow vacancies please view our website www.platform-6.com
+
+> 
+
+> Platform 6 Ltd is an international leader in Cloud and Technology Talent who specialise in Salesforce.com, Data Transformation, AI and ServiceNow recruitment within North America, Europe and the UK.
+
+> 
+
+> We provide Salesforce, Data Transformation, AI and ServiceNow recruitment services to a wide variety of companies from Consultancies to partners to end users on a permanent, contract and contract to hire basis, working across numerous Salesforce roles such as an Administrator, Developer, Consultant, Integration expert, Implementation specialist, Business Analyst, Project Manager, Program Manager, Tester, Architect, CRM Manager/Director, Trainer/Instructor, Sales, Marketing Automation expert, Technical Lead and many more.
+
+> 
+
 > INDHP
 
 ### Assistant
@@ -436,142 +461,278 @@ canonical_ref: ""
 > Just say the word.
 
 ### User
-> &nbsp;
-> Profile insights
-> Here’s how the job qualifications align with your profile.
-> Skills
-> 
-> XML
-> 
-> SQL databases
-> 
-> SQL
-> + show more
-> 
-> Do you have experience in XML?
-> Education
-> 
-> Bachelor's degree
-> &nbsp;
-> Benefits
-> Pulled from the full job description
-> AD&D insurance
-> Health insurance
-> Paid time off
-> Vision insurance
-> Health savings account
-> Dental insurance
-> Flexible spending account
-> &nbsp;
-> Full job description
-> Title: Business Systems & Integration Analyst
-> 
-> Date: 12/1/2025
-> 
-> Function: IT & Security
-> 
-> Reports to: Senior Director, IT & Security
-> 
-> 
-> Position Summary:
-> 
-> The Business Systems & Integration Analyst is responsible for identifying, implementing, and managing AI-powered business systems and designing integrations between applications and data sources to enhance operational efficiency, decision-making, and customer experience in a fast-paced SaaS environment. This role acts as a bridge between business units, IT, and data science, ensuring that technology solutions—including AI and automation—are aligned with strategic goals and deliver measurable business value.
-> 
-> Key Responsibilities:
-> 
-> Systems Analysis & AI Integration
-> 
-> Collaborate with business units to identify opportunities for AI and automation in workflows and systems.
-> Evaluate, implement, and maintain AI-driven platforms (e.g., chatbots, predictive analytics, automation tools).
-> Serve as a liaison between IT, data science, and business teams to ensure alignment of AI initiatives with strategic goals.
-> Manage vendor relationships and third-party AI tools, ensuring compliance with security and data governance standards.
-> Develop and maintain documentation for AI systems, including architecture, workflows, and user guides.
-> Monitor performance and usage of AI tools, providing insights and recommendations for optimization.
-> Support change management and training efforts related to AI system adoption.
-> Stay current with emerging AI technologies and trends relevant to SaaS and enterprise IT.
-> Business Systems Integration
-> 
-> Analyze business requirements and translate them into technical integration solutions.
-> Design, develop, and implement APIs, middleware, and data pipelines to connect disparate systems (e.g., ERP, CRM, HRIS, cloud platforms).
-> Collaborate with business stakeholders, developers, and IT teams to ensure seamless integration and data consistency.
-> Monitor and troubleshoot integration workflows, ensuring high availability and performance.
-> Maintain documentation for integration processes, data mappings, and system configurations.
-> Ensure compliance with data governance, security, and privacy standards.
-> Evaluate and recommend integration tools, platforms, and best practices.
-> Support change management and training efforts related to new integrations.
-> IT Governance & Compliance
-> 
-> Ensure all systems and integrations comply with IT governance, security, and data privacy policies.
-> Support audits and reviews of internal systems and software usage to ensure compliance.
-> 
-> Skills and Experience Needed:
-> 
-> Bachelor's degree in Information Systems, Computer Science, Engineering, Business Analytics, or related field.
-> 3+ years of experience in business systems analysis, systems integration, IT project management, or enterprise software implementation.
-> Technical Skills
-> 
-> Familiarity with AI/ML concepts and tools (e.g., NLP, RPA, LLMs, predictive analytics).
-> Experience with SaaS platforms and cloud environments (e.g., AWS, Azure, Google Cloud).
-> Proficiency in integration platforms (e.g., MuleSoft, Dell Boomi, Zapier, Workato, Azure Logic Apps).
-> Experience with APIs (REST, SOAP), web services, and data formats (JSON, XML).
-> Familiarity with databases (SQL, NoSQL) and ETL tools.
-> Knowledge of scripting languages (Python, JavaScript, PowerShell) is a plus.
-> Understanding of enterprise systems (e.g., SAP, Salesforce, NetSuite, Workday).
-> Certifications in AI, business analysis, integration tools, or project management (e.g., CBAP, PMP, Azure AI Engineer) a plus.
-> Competencies
-> 
-> Accountability
-> 
-> Adaptability
-> 
-> Applied Learning
-> 
-> Business Acumen
-> 
-> Collaboration
-> 
-> Customer Focus
-> 
-> Dealing w/Ambiguity
-> 
-> Decision Making
-> 
-> Driving for Results
-> 
-> Initiating Action
-> 
-> Planning & Organizing
-> 
-> Technical/Professional Knowledge/Skills
-> 
-> 
-> About the company:
-> 
-> Boards set the standard for what organizations can achieve. At OnBoard, our board management software helps boards function at a higher level so every organization can make a bigger difference in the world.
-> 
-> Launched in 2011, today, OnBoard serves as the board intelligence platform for more than 5,000 organizations and their 12,000 boards and committees in 60 countries worldwide. With customers in higher education, nonprofit, healthcare systems, government, and enterprise business, OnBoard is the leading board management provider.
-> 
-> OnBoard has grown from a class project at Purdue University in West Lafayette, Indiana in 2003 into the world's leading board management software platform today. Backed by JMI Equity and the acquisitions of eScribe and Govenda, OnBoard is positioned to become the industry leader in Board Management and Meeting Solutions for private and public sector entities.
-> 
-> 
-> Benefits and Perks:
-> 
-> Company provided equipment (laptop, software, etc.)
-> Employment with a growing, casual, fun, philanthropic minded company
-> Employer paid extended health benefits, including health spending account (CAN based employees)
-> US Based Employees
-> Comprehensive, high-quality medical/prescription drug plan options, as well as dental and vision plan offerings.
-> An employer contribution to your Health Savings Account (HSA) if you participate in a High Deductible Healthcare Plan.
-> Medical Flexible Spending Accounts available.
-> Dependent Care Flexible Spending Accounts available.
-> Basic life insurance in the amount of $50,000 or 1 X's your salary (whichever is higher).
-> Short and long-term disability and Accidental Death and Dismemberment benefits at no cost to you.
-> 401K Retirement Savings Plan with automatic enrollment at the first of the month following 60 days of employment at 5% to help you secure your financial freedom. We offer a generous company match that starts on the first of the month following 60 days of employment. The company match is dollar for dollar on the first 3% of your pay that you contribute and $0.50 on the dollar on the next 2%, for a total match of 4%.
-> Paid Time Off (PTO)/Holiday
-> Diversity Statement - Culture of Togetherness:
-> 
-> At OnBoard, our mission is to encourage and celebrate a culture of togetherness. We acknowledge that uniqueness is powerful, and we welcome, foster, and appreciate all. Diversity, Equity, and Inclusiveness fuel the Pathfinder atmosphere and all our efforts. Our power is in our people and we Pledge 1% to give back to our communities and across the globe.
-> 
+> &nbsp;
+
+> Profile insights
+
+> Here’s how the job qualifications align with your profile.
+
+> Skills
+
+> 
+
+> XML
+
+> 
+
+> SQL databases
+
+> 
+
+> SQL
+
+> + show more
+
+> 
+
+> Do you have experience in XML?
+
+> Education
+
+> 
+
+> Bachelor's degree
+
+> &nbsp;
+
+> Benefits
+
+> Pulled from the full job description
+
+> AD&D insurance
+
+> Health insurance
+
+> Paid time off
+
+> Vision insurance
+
+> Health savings account
+
+> Dental insurance
+
+> Flexible spending account
+
+> &nbsp;
+
+> Full job description
+
+> Title: Business Systems & Integration Analyst
+
+> 
+
+> Date: 12/1/2025
+
+> 
+
+> Function: IT & Security
+
+> 
+
+> Reports to: Senior Director, IT & Security
+
+> 
+
+> 
+
+> Position Summary:
+
+> 
+
+> The Business Systems & Integration Analyst is responsible for identifying, implementing, and managing AI-powered business systems and designing integrations between applications and data sources to enhance operational efficiency, decision-making, and customer experience in a fast-paced SaaS environment. This role acts as a bridge between business units, IT, and data science, ensuring that technology solutions—including AI and automation—are aligned with strategic goals and deliver measurable business value.
+
+> 
+
+> Key Responsibilities:
+
+> 
+
+> Systems Analysis & AI Integration
+
+> 
+
+> Collaborate with business units to identify opportunities for AI and automation in workflows and systems.
+
+> Evaluate, implement, and maintain AI-driven platforms (e.g., chatbots, predictive analytics, automation tools).
+
+> Serve as a liaison between IT, data science, and business teams to ensure alignment of AI initiatives with strategic goals.
+
+> Manage vendor relationships and third-party AI tools, ensuring compliance with security and data governance standards.
+
+> Develop and maintain documentation for AI systems, including architecture, workflows, and user guides.
+
+> Monitor performance and usage of AI tools, providing insights and recommendations for optimization.
+
+> Support change management and training efforts related to AI system adoption.
+
+> Stay current with emerging AI technologies and trends relevant to SaaS and enterprise IT.
+
+> Business Systems Integration
+
+> 
+
+> Analyze business requirements and translate them into technical integration solutions.
+
+> Design, develop, and implement APIs, middleware, and data pipelines to connect disparate systems (e.g., ERP, CRM, HRIS, cloud platforms).
+
+> Collaborate with business stakeholders, developers, and IT teams to ensure seamless integration and data consistency.
+
+> Monitor and troubleshoot integration workflows, ensuring high availability and performance.
+
+> Maintain documentation for integration processes, data mappings, and system configurations.
+
+> Ensure compliance with data governance, security, and privacy standards.
+
+> Evaluate and recommend integration tools, platforms, and best practices.
+
+> Support change management and training efforts related to new integrations.
+
+> IT Governance & Compliance
+
+> 
+
+> Ensure all systems and integrations comply with IT governance, security, and data privacy policies.
+
+> Support audits and reviews of internal systems and software usage to ensure compliance.
+
+> 
+
+> Skills and Experience Needed:
+
+> 
+
+> Bachelor's degree in Information Systems, Computer Science, Engineering, Business Analytics, or related field.
+
+> 3+ years of experience in business systems analysis, systems integration, IT project management, or enterprise software implementation.
+
+> Technical Skills
+
+> 
+
+> Familiarity with AI/ML concepts and tools (e.g., NLP, RPA, LLMs, predictive analytics).
+
+> Experience with SaaS platforms and cloud environments (e.g., AWS, Azure, Google Cloud).
+
+> Proficiency in integration platforms (e.g., MuleSoft, Dell Boomi, Zapier, Workato, Azure Logic Apps).
+
+> Experience with APIs (REST, SOAP), web services, and data formats (JSON, XML).
+
+> Familiarity with databases (SQL, NoSQL) and ETL tools.
+
+> Knowledge of scripting languages (Python, JavaScript, PowerShell) is a plus.
+
+> Understanding of enterprise systems (e.g., SAP, Salesforce, NetSuite, Workday).
+
+> Certifications in AI, business analysis, integration tools, or project management (e.g., CBAP, PMP, Azure AI Engineer) a plus.
+
+> Competencies
+
+> 
+
+> Accountability
+
+> 
+
+> Adaptability
+
+> 
+
+> Applied Learning
+
+> 
+
+> Business Acumen
+
+> 
+
+> Collaboration
+
+> 
+
+> Customer Focus
+
+> 
+
+> Dealing w/Ambiguity
+
+> 
+
+> Decision Making
+
+> 
+
+> Driving for Results
+
+> 
+
+> Initiating Action
+
+> 
+
+> Planning & Organizing
+
+> 
+
+> Technical/Professional Knowledge/Skills
+
+> 
+
+> 
+
+> About the company:
+
+> 
+
+> Boards set the standard for what organizations can achieve. At OnBoard, our board management software helps boards function at a higher level so every organization can make a bigger difference in the world.
+
+> 
+
+> Launched in 2011, today, OnBoard serves as the board intelligence platform for more than 5,000 organizations and their 12,000 boards and committees in 60 countries worldwide. With customers in higher education, nonprofit, healthcare systems, government, and enterprise business, OnBoard is the leading board management provider.
+
+> 
+
+> OnBoard has grown from a class project at Purdue University in West Lafayette, Indiana in 2003 into the world's leading board management software platform today. Backed by JMI Equity and the acquisitions of eScribe and Govenda, OnBoard is positioned to become the industry leader in Board Management and Meeting Solutions for private and public sector entities.
+
+> 
+
+> 
+
+> Benefits and Perks:
+
+> 
+
+> Company provided equipment (laptop, software, etc.)
+
+> Employment with a growing, casual, fun, philanthropic minded company
+
+> Employer paid extended health benefits, including health spending account (CAN based employees)
+
+> US Based Employees
+
+> Comprehensive, high-quality medical/prescription drug plan options, as well as dental and vision plan offerings.
+
+> An employer contribution to your Health Savings Account (HSA) if you participate in a High Deductible Healthcare Plan.
+
+> Medical Flexible Spending Accounts available.
+
+> Dependent Care Flexible Spending Accounts available.
+
+> Basic life insurance in the amount of $50,000 or 1 X's your salary (whichever is higher).
+
+> Short and long-term disability and Accidental Death and Dismemberment benefits at no cost to you.
+
+> 401K Retirement Savings Plan with automatic enrollment at the first of the month following 60 days of employment at 5% to help you secure your financial freedom. We offer a generous company match that starts on the first of the month following 60 days of employment. The company match is dollar for dollar on the first 3% of your pay that you contribute and $0.50 on the dollar on the next 2%, for a total match of 4%.
+
+> Paid Time Off (PTO)/Holiday
+
+> Diversity Statement - Culture of Togetherness:
+
+> 
+
+> At OnBoard, our mission is to encourage and celebrate a culture of togetherness. We acknowledge that uniqueness is powerful, and we welcome, foster, and appreciate all. Diversity, Equity, and Inclusiveness fuel the Pathfinder atmosphere and all our efforts. Our power is in our people and we Pledge 1% to give back to our communities and across the globe.
+
+> 
+
 > OnBoard is an equal opportunity employer and committed to a diverse and inclusive working environment. Passageways does not discriminate based on race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status. For individuals with disabilities who would like to request an accommodation please email peopleops@passageways.com.
 
 ### Assistant

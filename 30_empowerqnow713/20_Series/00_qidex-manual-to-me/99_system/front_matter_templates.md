@@ -6,6 +6,24 @@ visibility: private
 ai_ingest: true
 status: active
 last_updated: 2026-05-24
+layout: page
+slug: front-matter-templates
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 9dca86a6424446fdbbadb93ae97c1c99
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Front Matter Templates

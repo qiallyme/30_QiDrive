@@ -4,14 +4,14 @@ title: C2 Completion Summary - Initial Clinical Documentation Batch
 slug: c2_completion_summary
 summary: Overview of clinical documentation files created in initial batch
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Summary of initial clinical documentation created by C2 (Clinical Synthesizer)
-tags:
+tags: []
   - clinical
   - summary
   - c2
   - empowerqnow713
-keywords:
+keywords: []
   - completion
   - summary
   - clinical
@@ -25,14 +25,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.0.2
 category: meta
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5bad7e7eec3f40acbdbf3aded5a61d6b
 canonical_ref: ""
 template_key: master-template
 ---

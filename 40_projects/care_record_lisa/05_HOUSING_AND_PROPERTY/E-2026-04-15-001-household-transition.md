@@ -3,14 +3,14 @@ layout: page
 title: Event: Household transition / tenant context begins
 slug: household-transition-tenant-context-begins
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - housing-property
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ef894c7532c94180aa0baf5092946fed
 canonical_ref: ""
 template_key: master-template
 ---

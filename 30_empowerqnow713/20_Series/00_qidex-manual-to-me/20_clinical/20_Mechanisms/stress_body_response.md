@@ -13,7 +13,7 @@ related:
   - 10_functional/40_overwhelm_protocols/overwhelm_protocol.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
   - 70_trauma_recovery/00_safe_summary/trauma_safe_summary.md
-tags:
+tags: []
   - stress
   - body
   - shutdown
@@ -25,6 +25,23 @@ source:
   - _intake/10 2 Sleep inertia 219f84a0440281c2b987cf2a96d66474.md
   - _intake/10 3 Delayed sleep phase 219f84a04402816fbffec7c284aaa818.md
   - _intake/10 5 Phonophobia 219f84a044028179b85bcdef2fa17d96.md
+layout: page
+slug: stress-body-response
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 6784a57605444aa496b170dcba5454a2
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Stress Body Response

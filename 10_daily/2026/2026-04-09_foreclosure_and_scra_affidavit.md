@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure and SCRA Affidavit"
 slug: "foreclosure_and_scra_affidavit"
 created_at: "2026-04-09 23:45:43"
-updated_at: "2026-04-09 23:45:43"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

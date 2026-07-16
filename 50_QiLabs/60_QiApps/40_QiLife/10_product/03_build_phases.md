@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 03 Build Phases
-slug: ""
+slug: 03-build-phases
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e8d9b37a004544cdb810f60af422f42d
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -3,9 +3,9 @@ layout: page
 title: "QiLife Plugin Guide"
 slug: "qilife_plugin_guide"
 created_at: "2026-06-22 23:30:24"
-updated_at: "2026-06-22 23:30:24"
+updated_at: "2026-07-16T06:49:34-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2705,77 +2705,148 @@ canonical_ref: ""
 > That’s it. Don’t install a random “Supabase database driver.” It’s Postgres wearing a Supabase hoodie.
 
 ### User
-> Request URL
-> https://emnskvvajdlqixwzjfsm.supabase.co/rest/v1/records?select=*
-> Request Method
-> POST
-> Status Code
-> 403 Forbidden (from service worker)
-> Referrer Policy
-> strict-origin-when-cross-origin
-> access-control-allow-origin
-> https://qilife.qially.com
-> access-control-expose-headers
-> Content-Encoding, Content-Location, Content-Range, Content-Type, Date, Location, Server, Transfer-Encoding, Range-Unit
-> alt-svc
-> h3=":443"; ma=86400
-> cf-cache-status
-> DYNAMIC
-> cf-ray
-> a10159ee48161fa5-ORD
-> content-encoding
-> br
-> content-type
-> application/json; charset=utf-8
-> date
-> Tue, 23 Jun 2026 06:14:13 GMT
-> priority
-> u=1,i
-> proxy-status
-> PostgREST; error=42501
-> sb-gateway-version
-> 1
-> sb-project-ref
-> emnskvvajdlqixwzjfsm
-> sb-request-id
-> 019ef31d-70ee-71a4-bda1-f1c66b7d9bba
-> server
-> cloudflare
-> server-timing
-> cfExtPri
-> strict-transport-security
-> max-age=31536000; includeSubDomains; preload
-> x-content-type-options
-> nosniff
-> x-envoy-attempt-count
-> 1
-> x-envoy-upstream-service-time
-> 130
-> accept
-> application/vnd.pgrst.object+json
-> apikey
-> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVtbnNrdnZhamRscWl4d3pqZnNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzNjEyMTAsImV4cCI6MjA5NjkzNzIxMH0.7v_iGqu1BtAWYnwzk0x_tjcd4q3-yNxoHfrJW1bW2Sc
-> authorization
-> Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6IjQ3ZTE5ZDRkLWM4MGItNGIzNC1hMDIyLWNiODI2ODFlYTIxZSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2VtbnNrdnZhamRscWl4d3pqZnNtLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJlZGQzZWZjZS1lMTk5LTRlOTktODRjYi05YjJlNGQyY2ZjZDUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzgyMTk4Nzk3LCJpYXQiOjE3ODIxOTUxOTcsImVtYWlsIjoiY3JpY2U0NDg1QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJjcmljZTQ0ODVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiZWRkM2VmY2UtZTE5OS00ZTk5LTg0Y2ItOWIyZTRkMmNmY2Q1In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib3RwIiwidGltZXN0YW1wIjoxNzgyMTk1MTk3fV0sInNlc3Npb25faWQiOiJiYWQ5MmJjMS01NmFhLTQ2ZjktYWQ2Mi04ZDRkMzZmNGJlZDQiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.dvcnUnYnImOAn2j2XpCpzvS82ZgWfAdZakYlC2bX_auNCyoFvsuTLWmbD4taUkl2r3qIa5FKbutKo5dVwio44g
-> content-profile
-> qilife
-> content-type
-> application/json
-> dnt
-> 1
-> prefer
-> return=representation
-> referer
-> https://qilife.qially.com/
-> sec-ch-ua
-> "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"
-> sec-ch-ua-mobile
-> ?0
-> sec-ch-ua-platform
-> "Windows"
-> user-agent
-> Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
-> x-client-info
+> Request URL
+
+> https://emnskvvajdlqixwzjfsm.supabase.co/rest/v1/records?select=*
+
+> Request Method
+
+> POST
+
+> Status Code
+
+> 403 Forbidden (from service worker)
+
+> Referrer Policy
+
+> strict-origin-when-cross-origin
+
+> access-control-allow-origin
+
+> https://qilife.qially.com
+
+> access-control-expose-headers
+
+> Content-Encoding, Content-Location, Content-Range, Content-Type, Date, Location, Server, Transfer-Encoding, Range-Unit
+
+> alt-svc
+
+> h3=":443"; ma=86400
+
+> cf-cache-status
+
+> DYNAMIC
+
+> cf-ray
+
+> a10159ee48161fa5-ORD
+
+> content-encoding
+
+> br
+
+> content-type
+
+> application/json; charset=utf-8
+
+> date
+
+> Tue, 23 Jun 2026 06:14:13 GMT
+
+> priority
+
+> u=1,i
+
+> proxy-status
+
+> PostgREST; error=42501
+
+> sb-gateway-version
+
+> 1
+
+> sb-project-ref
+
+> emnskvvajdlqixwzjfsm
+
+> sb-request-id
+
+> 019ef31d-70ee-71a4-bda1-f1c66b7d9bba
+
+> server
+
+> cloudflare
+
+> server-timing
+
+> cfExtPri
+
+> strict-transport-security
+
+> max-age=31536000; includeSubDomains; preload
+
+> x-content-type-options
+
+> nosniff
+
+> x-envoy-attempt-count
+
+> 1
+
+> x-envoy-upstream-service-time
+
+> 130
+
+> accept
+
+> application/vnd.pgrst.object+json
+
+> apikey
+
+> eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVtbnNrdnZhamRscWl4d3pqZnNtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEzNjEyMTAsImV4cCI6MjA5NjkzNzIxMH0.7v_iGqu1BtAWYnwzk0x_tjcd4q3-yNxoHfrJW1bW2Sc
+
+> authorization
+
+> Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6IjQ3ZTE5ZDRkLWM4MGItNGIzNC1hMDIyLWNiODI2ODFlYTIxZSIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2VtbnNrdnZhamRscWl4d3pqZnNtLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJlZGQzZWZjZS1lMTk5LTRlOTktODRjYi05YjJlNGQyY2ZjZDUiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzgyMTk4Nzk3LCJpYXQiOjE3ODIxOTUxOTcsImVtYWlsIjoiY3JpY2U0NDg1QGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXBwX21ldGFkYXRhIjp7InByb3ZpZGVyIjoiZW1haWwiLCJwcm92aWRlcnMiOlsiZW1haWwiXX0sInVzZXJfbWV0YWRhdGEiOnsiZW1haWwiOiJjcmljZTQ0ODVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBob25lX3ZlcmlmaWVkIjpmYWxzZSwic3ViIjoiZWRkM2VmY2UtZTE5OS00ZTk5LTg0Y2ItOWIyZTRkMmNmY2Q1In0sInJvbGUiOiJhdXRoZW50aWNhdGVkIiwiYWFsIjoiYWFsMSIsImFtciI6W3sibWV0aG9kIjoib3RwIiwidGltZXN0YW1wIjoxNzgyMTk1MTk3fV0sInNlc3Npb25faWQiOiJiYWQ5MmJjMS01NmFhLTQ2ZjktYWQ2Mi04ZDRkMzZmNGJlZDQiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.dvcnUnYnImOAn2j2XpCpzvS82ZgWfAdZakYlC2bX_auNCyoFvsuTLWmbD4taUkl2r3qIa5FKbutKo5dVwio44g
+
+> content-profile
+
+> qilife
+
+> content-type
+
+> application/json
+
+> dnt
+
+> 1
+
+> prefer
+
+> return=representation
+
+> referer
+
+> https://qilife.qially.com/
+
+> sec-ch-ua
+
+> "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"
+
+> sec-ch-ua-mobile
+
+> ?0
+
+> sec-ch-ua-platform
+
+> "Windows"
+
+> user-agent
+
+> Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+
+> x-client-info
+
 > supabase-js/2.108.2; runtime=web
 
 ### Assistant

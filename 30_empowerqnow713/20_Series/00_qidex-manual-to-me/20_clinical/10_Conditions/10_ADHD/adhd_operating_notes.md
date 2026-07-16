@@ -13,7 +13,7 @@ related:
   - 10_functional/20_working_style/working_style.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 30_clinical/20_anxiety_panic/anxiety_panic_context.md
-tags:
+tags: []
   - adhd
   - executive-function
   - time-blindness
@@ -24,6 +24,23 @@ source:
   - _intake/10 9a Time Management Challenges in Neurodivergent 219f84a0440281d89c2adfca0894a445.md
   - _intake/10 9b Focus Irregularities and How They Impact Dai 219f84a04402814ab839c48b05cbeeba.md
   - _intake/10 9c The Invisible Weight of Executive Function C 219f84a0440281269605f616c2d7f340.md
+layout: page
+slug: adhd-operating-notes
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 33743496b47a46f386cba7c599f961a7
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # ADHD Operating Notes

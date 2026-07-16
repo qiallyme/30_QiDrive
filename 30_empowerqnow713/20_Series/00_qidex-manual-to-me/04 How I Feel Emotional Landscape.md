@@ -1,3 +1,26 @@
+---
+layout: page
+title: 04 How I Feel Emotional Landscape
+slug: 04-how-i-feel-emotional-landscape
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 52b2197d5d1a4747989533462da29444
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 04 | How I Feel: Emotional Landscape
 
 <aside>

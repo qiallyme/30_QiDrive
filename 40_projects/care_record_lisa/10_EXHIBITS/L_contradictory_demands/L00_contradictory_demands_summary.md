@@ -3,13 +3,13 @@ layout: page
 title: Exhibit L00 - Contradictory Demands Summary
 slug: exhibit-l00-contradictory-demands-summary
 status: publish
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2a337d0c5ade4b039a629028ae356dc8
 canonical_ref: ""
 template_key: master-template
 ---

@@ -2,7 +2,7 @@
 date: 2026-05-09
 title: "S Elliott St Household Meeting Summary"
 category: "Family Operating System / Household Operations"
-keywords:
+keywords: []
   - groceries
   - caregiver planning
   - household budget
@@ -13,11 +13,11 @@ keywords:
 project_context: "Summary of Cody and mom's household planning conversation from the uploaded S Elliott St transcript."
 source_file: "S Elliott St.txt"
 layout: page
-slug: ""
+slug: s-elliott-st-household-meeting-summary
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: bf396b8127a94937a8a232dea6eb20f0
 canonical_ref: ""
 source_type: manual
 template_key: master-template

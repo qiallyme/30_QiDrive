@@ -3,9 +3,9 @@ layout: page
 title: "QiOS Local Host Setup"
 slug: "qios_local_host_setup"
 created_at: "2026-04-01 16:18:07"
-updated_at: "2026-04-01 16:18:07"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

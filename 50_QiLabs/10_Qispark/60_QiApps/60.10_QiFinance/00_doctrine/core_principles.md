@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Core Principles
-slug: ""
+slug: core-principles
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 212a80b5032445bb9d50a549b93248ae
 canonical_ref: ""
 source_type: manual
 template_key: master-template

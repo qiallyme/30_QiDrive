@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Helped over 10,000 people through entrepreneurial work"
 slug: "helped_over_10000_people_through_entrepreneurial_work"
 summary: ""
 status: active
 created_at: "2023-12-31"
-updated_at: "2023-12-31"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 4d025f0e6f98445eb35a6bf18401d4c9
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-12-31
 ---
+
 # Helped over 10,000 people through entrepreneurial work
 
 Category: Achievement

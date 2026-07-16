@@ -4,7 +4,7 @@ title: "Loss of Assets and Housing Instability"
 category: career
 life_stage: early-30s
 critical: true
-tags:
+tags: []
   - financial
   - loss
   - critical-event
@@ -16,8 +16,8 @@ qi_decimal: 2.30.10.2023
 layout: page
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -25,7 +25,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f031542e64ad44e2a9f2e9fb9b941d55
 canonical_ref: ""
 source_type: manual
 template_key: master-template

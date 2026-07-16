@@ -3,9 +3,9 @@ layout: page
 title: "Retreat from Community Support"
 slug: "retreat_from_community_support"
 created_at: "2023-08-02 19:40:45"
-updated_at: "2023-08-02 19:40:45"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

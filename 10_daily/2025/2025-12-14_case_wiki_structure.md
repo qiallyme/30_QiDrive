@@ -3,9 +3,9 @@ layout: page
 title: "Case wiki structure"
 slug: "case_wiki_structure"
 created_at: "2025-12-14 20:44:18"
-updated_at: "2025-12-14 20:44:18"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

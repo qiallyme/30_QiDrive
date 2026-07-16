@@ -3,7 +3,7 @@ layout: page
 title: "Joel's Deportation"
 slug: "joels_deportation"
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d44db5d148d64c69bb82573aa82da168
 canonical_ref: ""
 ---
 

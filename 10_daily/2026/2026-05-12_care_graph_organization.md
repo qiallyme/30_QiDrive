@@ -3,9 +3,9 @@ layout: page
 title: "Care Graph Organization"
 slug: "care_graph_organization"
 created_at: "2026-05-12 19:28:08"
-updated_at: "2026-05-12 19:28:08"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -802,7 +802,8 @@ canonical_ref: ""
 > Pick one and I’ll build it out clean and runnable.
 
 ### User
-> option 3 sounds good but remember i already ahve moms care app and it has a chatbot already but it gives an error, Supabase regimen_events query failed: {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+> option 3 sounds good but remember i already ahve moms care app and it has a chatbot already but it gives an error, Supabase regimen_events query failed: {"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+
 > Ask about today, meds, oxygen, supplies, symptoms, history, or just talk. but never the less we need to point it at a new database on my server instead of supabase for now.
 
 ### Assistant
@@ -4054,2052 +4055,4098 @@ canonical_ref: ""
 > ```
 
 ### User
-> which one of these tests shoudl i look at the details. Individual Results
-> Showing 452 of 452
-> CBC W AUTO DIFF
-> Abnormal
-> May 05, 2026
-> 
-> Samata Pathireddy
-> RENAL PROFILE
-> Abnormal
-> May 04, 2026
-> 
-> Kyle Kopatich
-> HEMOGLOBIN A1C
-> Abnormal
-> May 04, 2026
-> 
-> Avi Arora
-> RENAL PROFILE
-> Abnormal
-> May 03, 2026
-> 
-> Kyle Kopatich
-> PROCALCITONIN
-> Abnormal
-> May 03, 2026
-> 
-> Kyle Kopatich
-> CBC W AUTO DIFF
-> Abnormal
-> May 02, 2026
-> 
-> Samata Pathireddy
-> BASIC METABOLIC PANEL
-> Abnormal
-> May 02, 2026
-> 
-> Samata Pathireddy
-> BASIC METABOLIC PANEL
-> Abnormal
-> May 01, 2026
-> 
-> Samata Pathireddy
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 29, 2026
-> 
-> Samata Pathireddy
-> XR CHEST PORTABLE
-> Apr 29, 2026
-> 
-> Samata Pathireddy
-> MRSA BY PCR (NARES ONLY)
-> Apr 27, 2026
-> 
-> Avi Arora
-> MRSA BY PCR (NARES ONLY)
-> Abnormal
-> Apr 26, 2026
-> 
-> Avi Arora
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Apr 26, 2026
-> 
-> Avi Arora
-> TROPONIN T
-> Abnormal
-> Apr 25, 2026
-> 
-> Avi Arora
-> SPECIMEN REJECTED
-> Apr 25, 2026
-> 
-> Avi Arora
-> CT ABDOMEN PELVIS WO CONTRAST
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> TROPONIN T
-> Abnormal
-> Apr 25, 2026
-> 
-> Avi Arora
-> CULTURE, BLOOD
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> LACTIC ACID, SERUM
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> CULTURE, BLOOD
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> XR CHEST PORTABLE
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> PROCALCITONIN
-> Abnormal
-> Apr 25, 2026
-> 
-> Brandon Charlton
-> TROPONIN T
-> Abnormal
-> Apr 25, 2026
-> 
-> Avi Arora
-> EKG
-> Apr 25, 2026
-> 
-> Avi Arora
-> POCT GLUCOSE - G3100A
-> Abnormal
-> Apr 20, 2026
-> 
-> Tatiana Denega
-> POCT GLUCOSE - G3100A
-> Abnormal
-> Apr 20, 2026
-> 
-> Tatiana Denega
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 20, 2026
-> 
-> Tatiana Denega
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 20, 2026
-> 
-> Tatiana Denega
-> POCT GLUCOSE - G3100A
-> Abnormal
-> Apr 19, 2026
-> 
-> Tatiana Denega
-> LACTIC ACID, SERUM
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> XR CHEST PORTABLE
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> CULTURE, BLOOD
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> LACTIC ACID, SERUM
-> Abnormal
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> PROCALCITONIN
-> Abnormal
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> CULTURE, BLOOD
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> EKG
-> Apr 19, 2026
-> 
-> Jennifer Lampert, NP
-> XR KNEE LEFT
-> Apr 17, 2026
-> 
-> Jung Kang Smith
-> XR KNEE RIGHT
-> Apr 17, 2026
-> 
-> Jung Kang Smith
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 08, 2026
-> 
-> Edin Alihodzic
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 08, 2026
-> 
-> Roxana Donea
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 05, 2026
-> 
-> Edin Alihodzic
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 04, 2026
-> 
-> Roxana Donea
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 02, 2026
-> 
-> Edin Alihodzic
-> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
-> Apr 01, 2026
-> 
-> Zachary Fields
-> RENAL PROFILE
-> Abnormal
-> Apr 01, 2026
-> 
-> Zachary Fields
-> CBC W AUTO DIFF
-> Abnormal
-> Mar 31, 2026
-> 
-> Edin Alihodzic
-> BASIC METABOLIC PANEL
-> Abnormal
-> Mar 31, 2026
-> 
-> Edin Alihodzic
-> TROPONIN T
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> PROCALCITONIN
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> BLOOD GAS VENOUS
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> XR CHEST PORTABLE
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> CBC W AUTO DIFF
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> TROPONIN T
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> PROCALCITONIN
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> THEOPHYLLINE LEVEL
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> EKG
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> TROPONIN T
-> Abnormal
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> MAGNESIUM
-> Mar 30, 2026
-> 
-> Laura Diaz Del Castillo
-> BLOOD GAS VENOUS
-> Abnormal
-> Jan 26, 2026
-> 
-> Casana Siebert
-> POTASSIUM
-> Jan 26, 2026
-> 
-> Jessica Mendel
-> CBC W AUTO DIFF
-> Abnormal
-> Jan 26, 2026
-> 
-> Casana Siebert
-> MAGNESIUM
-> Jan 26, 2026
-> 
-> Casana Siebert
-> RENAL PROFILE
-> Abnormal
-> Jan 26, 2026
-> 
-> Casana Siebert
-> C-REACTIVE PROTEIN
-> Abnormal
-> Jan 26, 2026
-> 
-> Casana Siebert
-> PROCALCITONIN
-> Abnormal
-> Jan 26, 2026
-> 
-> Casana Siebert
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 26, 2026
-> 
-> Jessica Mendel
-> RECOLLECT
-> Jan 26, 2026
-> 
-> Casana Siebert
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jan 25, 2026
-> 
-> Brandon Charlton
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> LACTIC ACID, SERUM
-> Abnormal
-> Jan 25, 2026
-> 
-> Brandon Charlton
-> TROPONIN T
-> Abnormal
-> Jan 25, 2026
-> 
-> Brandon Charlton
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> MAGNESIUM
-> Jan 25, 2026
-> 
-> Jessica Mendel
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> LACTIC ACID, SERUM
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> TROPONIN T
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> THEOPHYLLINE LEVEL
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> HEMOGLOBIN A1C
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> BLOOD GAS VENOUS
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> POCT GLUCOSE - G2500A
-> Abnormal
-> Jan 24, 2026
-> 
-> Jessica Mendel
-> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> XR CHEST PORTABLE
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> CULTURE, BLOOD
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> LACTIC ACID, SERUM
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> CBC W AUTO DIFF
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> CULTURE, BLOOD
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> D-DIMER,QUANTITATIVE
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> PROCALCITONIN
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> TROPONIN T
-> Abnormal
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> EKG
-> Jan 24, 2026
-> 
-> Brandon Charlton
-> NM GB HIDA QUANTITATIVE (WITH EF)
-> Dec 01, 2025
-> 
-> Chelsy Marlin
-> COLONOSCOPY, DIAGNOSTIC
-> Oct 20, 2025
-> 
-> Rubin Bahuva
-> SURGICAL SPECIMEN
-> Oct 20, 2025
-> 
-> Rubin Bahuva
-> CBC W AUTO DIFF
-> Abnormal
-> Oct 07, 2025
-> 
-> Stjepan Surbek
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Oct 07, 2025
-> 
-> Stjepan Surbek
-> MAGNESIUM
-> Oct 07, 2025
-> 
-> Stjepan Surbek
-> PHOSPHORUS
-> Abnormal
-> Oct 07, 2025
-> 
-> Stjepan Surbek
-> CULTURE, BLOOD
-> Oct 06, 2025
-> 
-> Rachel Silliman
-> CULTURE, BLOOD
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> MAGNESIUM
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> PHOSPHORUS
-> Abnormal
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> LACTIC ACID, SERUM
-> Oct 06, 2025
-> 
-> Stjepan Surbek
-> XR CHEST PORTABLE
-> Oct 05, 2025
-> 
-> Jeremy Curtis
-> CBC W AUTO DIFF
-> Abnormal
-> Oct 05, 2025
-> 
-> Jeremy Curtis
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Oct 05, 2025
-> 
-> Jeremy Curtis
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Oct 05, 2025
-> 
-> Jeremy Curtis
-> EKG
-> Oct 05, 2025
-> 
-> Stjepan Surbek
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> XR CHEST PORTABLE
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> CBC W AUTO DIFF
-> Abnormal
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> PROCALCITONIN
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> ALCOHOL SERUM MEDICAL
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> EKG
-> Aug 30, 2025
-> 
-> Laura Diaz Del Castillo
-> CULTURE, EYE
-> Jul 24, 2025
-> 
-> Drew Sommerville
-> XR CHEST PORTABLE
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> Abnormal
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> THEOPHYLLINE LEVEL
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> EKG
-> Jun 13, 2025
-> 
-> Clinton Simpson
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 11, 2025
-> 
-> Stjepan Surbek
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 11, 2025
-> 
-> Stjepan Surbek
-> MAGNESIUM
-> Jun 11, 2025
-> 
-> Stjepan Surbek
-> PHOSPHORUS
-> Abnormal
-> Jun 11, 2025
-> 
-> Stjepan Surbek
-> BASIC METABOLIC PANEL
-> Abnormal
-> Jun 10, 2025
-> 
-> Michael Murillo
-> PHOSPHORUS
-> Abnormal
-> Jun 10, 2025
-> 
-> Stjepan Surbek
-> THEOPHYLLINE LEVEL
-> Abnormal
-> Jun 10, 2025
-> 
-> Stjepan Surbek
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 10, 2025
-> 
-> Stjepan Surbek
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 10, 2025
-> 
-> Stjepan Surbek
-> MAGNESIUM
-> Jun 10, 2025
-> 
-> Stjepan Surbek
-> THEOPHYLLINE LEVEL
-> Abnormal
-> Jun 09, 2025
-> 
-> Michael Murillo
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> XR CHEST PORTABLE
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> Abnormal
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> MAGNESIUM
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> PHOSPHORUS
-> Jun 09, 2025
-> 
-> Jeremy Curtis
-> EKG
-> Jun 09, 2025
-> 
-> Stjepan Surbek
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> CULTURE RESPIRATORY
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> XR ABDOMEN KUB GI PLACEMENT PORTABLE
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> XR CHEST PORTABLE
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> LACTIC ACID, SERUM
-> Abnormal
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> CARBOXYHEMOGLOBIN
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> EKG
-> Jun 04, 2025
-> 
-> Jeremy Curtis
-> PROCALCITONIN
-> Feb 24, 2025
-> 
-> Raul Ramirez Velazquez
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 22, 2025
-> 
-> Joel Phelps
-> BASIC METABOLIC PANEL
-> Abnormal
-> Feb 22, 2025
-> 
-> Joel Phelps
-> PROCALCITONIN
-> Feb 22, 2025
-> 
-> Joel Phelps
-> DRUG SCREEN MEDICAL
-> Feb 21, 2025
-> 
-> Raul Ramirez Velazquez
-> EKG
-> Feb 21, 2025
-> 
-> Joel Phelps
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 21, 2025
-> 
-> Raul Ramirez Velazquez
-> BASIC METABOLIC PANEL
-> Abnormal
-> Feb 21, 2025
-> 
-> Raul Ramirez Velazquez
-> MAGNESIUM
-> Feb 21, 2025
-> 
-> Raul Ramirez Velazquez
-> TROPONIN T
-> Abnormal
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> TROPONIN T
-> Abnormal
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> LACTIC ACID, SERUM
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> XR CHEST PORTABLE
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> CULTURE, BLOOD
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> TROPONIN T
-> Abnormal
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> LACTIC ACID, SERUM
-> Abnormal
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> PROCALCITONIN
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> CULTURE, BLOOD
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Feb 20, 2025
-> 
-> Tracy Deno-Buechlein, NP
-> EKG
-> Feb 20, 2025
-> 
-> Raul Ramirez Velazquez
-> XR CHEST PA AND LATERAL 2 VIEW
-> Feb 05, 2025
-> 
-> Danielle McFadden, NP
-> TRANSTHORACIC ECHO (TTE) COMPLETE (CONTRAST/BUBBLE/3D PRN)
-> Oct 29, 2024
-> 
-> Caitlin Miller, ACNP
-> PHOSPHORUS
-> Abnormal
-> Oct 06, 2024
-> 
-> Bailey Rankin, NP
-> MAGNESIUM
-> Oct 06, 2024
-> 
-> Bailey Rankin, NP
-> RESPIRATORY PANEL BY PCR
-> Oct 06, 2024
-> 
-> Nathalie Douge
-> XR CHEST PORTABLE
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> CBC W AUTO DIFF
-> Abnormal
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> PROCALCITONIN
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> EKG
-> Oct 06, 2024
-> 
-> Christopher Cannon
-> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
-> Sep 05, 2024
-> 
-> Chelsy Marlin
-> VITAMIN D 25 HYDROXY
-> Sep 05, 2024
-> 
-> Chelsy Marlin
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Sep 05, 2024
-> 
-> Chelsy Marlin
-> HEMOGLOBIN A1C
-> Abnormal
-> Sep 05, 2024
-> 
-> Chelsy Marlin
-> LIPID PANEL
-> Abnormal
-> Sep 05, 2024
-> 
-> Chelsy Marlin
-> EKG
-> Sep 04, 2024
-> 
-> Caitlin Miller, ACNP
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 04, 2024
-> 
-> Talia Nesmith
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 04, 2024
-> 
-> Stefanie Colavito
-> BASIC METABOLIC PANEL
-> Abnormal
-> Apr 04, 2024
-> 
-> Stefanie Colavito
-> PROCALCITONIN
-> Apr 04, 2024
-> 
-> Hasan Albitar
-> RECOLLECT
-> Apr 04, 2024
-> 
-> Stefanie Colavito
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 03, 2024
-> 
-> Stefanie Colavito
-> BASIC METABOLIC PANEL
-> Abnormal
-> Apr 03, 2024
-> 
-> Stefanie Colavito
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 02, 2024
-> 
-> Stefanie Colavito
-> BASIC METABOLIC PANEL
-> Abnormal
-> Apr 02, 2024
-> 
-> Stefanie Colavito
-> RESPIRATORY PANEL BY PCR
-> Abnormal
-> Apr 02, 2024
-> 
-> Hasan Albitar
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Apr 02, 2024
-> 
-> Stefanie Colavito
-> URINE CULTURE
-> Apr 02, 2024
-> 
-> Stefanie Colavito
-> PROTIME-INR
-> Apr 01, 2024
-> 
-> Stefanie Colavito
-> THEOPHYLLINE LEVEL
-> Abnormal
-> Apr 01, 2024
-> 
-> Stefanie Colavito
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> CULTURE, BLOOD
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> LACTIC ACID, SERUM
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> CULTURE, BLOOD
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> XR CHEST PORTABLE
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> PROCALCITONIN
-> Abnormal
-> Apr 01, 2024
-> 
-> Dr Dh Emerg
-> EKG
-> Apr 01, 2024
-> 
-> Joshua Kindrat
-> CULTURE, BLOOD
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> CBC W AUTO DIFF
-> Abnormal
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> LACTIC ACID, SERUM
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> PROCALCITONIN
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> CULTURE, BLOOD
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> XR FOOT RIGHT MIN 3 VIEWS AND ANKLE MIN 3 VIEWS
-> Mar 12, 2024
-> 
-> Joshua Kindrat
-> XR LOWER LEG RIGHT
-> Mar 12, 2024
-> 
-> Lindsay Yoder
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 15, 2024
-> 
-> Kyle Kopatich
-> RENAL PROFILE
-> Abnormal
-> Feb 15, 2024
-> 
-> Kyle Kopatich
-> BASIC METABOLIC PANEL
-> Abnormal
-> Feb 14, 2024
-> 
-> Michael Albring
-> TROPONIN T
-> Abnormal
-> Feb 14, 2024
-> 
-> Reza Mohammadi
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 14, 2024
-> 
-> Michael Albring
-> TROPONIN T
-> Abnormal
-> Feb 14, 2024
-> 
-> Reza Mohammadi
-> INFLUENZA A/B, RSV, COVID BY PCR
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> DRUG SCREEN MEDICAL
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> XR CHEST PORTABLE
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> CULTURE, BLOOD
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> CBC W AUTO DIFF
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> LACTIC ACID, SERUM
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> CULTURE, BLOOD
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> TROPONIN T
-> Abnormal
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> EKG
-> Feb 13, 2024
-> 
-> Reza Mohammadi
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 13, 2023
-> 
-> Jessica Jeffries
-> PROCALCITONIN
-> Jun 13, 2023
-> 
-> Brian Chaffin
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 12, 2023
-> 
-> Brian Chaffin
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 12, 2023
-> 
-> Brian Chaffin
-> XR ABDOMEN KUB GI PLACEMENT PORTABLE
-> Jun 11, 2023
-> 
-> Phillip Adams
-> LACTIC ACID, SERUM
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> HEMOGLOBIN
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> LACTIC ACID, SERUM
-> Abnormal
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> XR CHEST PORTABLE
-> Jun 11, 2023
-> 
-> Matthew Tucker
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> CULTURE RESPIRATORY
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> MRSA BY PCR (NARES ONLY)
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> LEGIONELLA ANTIGEN URINE
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> STREP PNEU AG, URINE
-> Jun 11, 2023
-> 
-> Brian Chaffin
-> CULTURE RESPIRATORY
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> XR CHEST PORTABLE
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> XR ABDOMEN KUB GI PLACEMENT PORTABLE
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> DRUG SCREEN MEDICAL
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> XR CHEST PORTABLE
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> CREATININE (XRAY EVAL)
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> MAGNESIUM
-> Jun 11, 2023
-> 
-> Dr Dh Emerg
-> PROCALCITONIN
-> Jun 11, 2023
-> 
-> Dr Dh Emerg
-> EKG
-> Jun 11, 2023
-> 
-> Christopher Cannon
-> XR ANKLE LEFT
-> Jun 10, 2023
-> 
-> Stephanie Dittmer, NP
-> New message from Stephanie Dittmer, NP
-> XR FOOT LEFT
-> Jun 10, 2023
-> 
-> Stephanie Dittmer, NP
-> New message from Stephanie Dittmer, NP
-> PROTIME-INR
-> May 22, 2023
-> 
-> Jacob Moore
-> XR CHEST PORTABLE
-> May 22, 2023
-> 
-> Michael Davis
-> EKG
-> May 22, 2023
-> 
-> Michael Davis
-> CBC W AUTO DIFF
-> Abnormal
-> May 22, 2023
-> 
-> Michael Davis
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> May 22, 2023
-> 
-> Michael Davis
-> CREATININE (XRAY EVAL)
-> Abnormal
-> May 22, 2023
-> 
-> Michael Davis
-> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
-> May 22, 2023
-> 
-> Michael Davis
-> PROCALCITONIN
-> May 22, 2023
-> 
-> Michael Davis
-> XR CHEST PORTABLE
-> May 16, 2023
-> 
-> Jeremy Curtis
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> May 16, 2023
-> 
-> Jeremy Curtis
-> CBC W AUTO DIFF
-> Abnormal
-> May 16, 2023
-> 
-> Jeremy Curtis
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> May 16, 2023
-> 
-> Jeremy Curtis
-> CREATININE (XRAY EVAL)
-> Abnormal
-> May 16, 2023
-> 
-> Jeremy Curtis
-> EKG
-> May 16, 2023
-> 
-> Jeremy Curtis
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Mar 10, 2023
-> 
-> Dan Vardi
-> COLONOSCOPY, DIAGNOSTIC
-> Oct 03, 2022
-> 
-> Rubin Bahuva
-> CHLAMYDIA/GC/TRICHOMONAS BY TMA
-> Sep 08, 2022
-> 
-> Meredith Hall, PA
-> CYTOLOGY, PAP (THIN PREP)
-> Sep 08, 2022
-> 
-> Meredith Hall, PA
-> ALPHA-1-ANTITRYPSIN
-> Abnormal
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> VITAMIN D 25 HYDROXY
-> Abnormal
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> TSH THIRD GENERATION
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> LIPID PANEL
-> Abnormal
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> CBC W AUTO DIFF
-> Abnormal
-> Aug 11, 2022
-> 
-> Alan Swartz, NP
-> PULMONARY FUNCTION TEST
-> Apr 29, 2021
-> 
-> Khawaja Zaki
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Mar 30, 2021
-> 
-> Meredith Hall, PA
-> LIPID PANEL
-> Abnormal
-> Mar 30, 2021
-> 
-> Meredith Hall, PA
-> CTA CHEST W CONTRAST
-> Mar 05, 2021
-> 
-> Sridhar Banuru
-> CREATININE (XRAY EVAL)
-> Mar 05, 2021
-> 
-> Sridhar Banuru
-> ECHOCARDIOGRAM COMPLETE
-> Feb 11, 2021
-> 
-> Alan Swartz, NP
-> POCT URINALYSIS DIPSTICK (AUTOMATED)
-> Dec 22, 2020
-> 
-> Alan Swartz, NP
-> URINE CULTURE
-> Dec 22, 2020
-> 
-> Alan Swartz, NP
-> LIPID PANEL
-> Abnormal
-> Sep 30, 2020
-> 
-> Meredith Hall, PA
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Sep 30, 2020
-> 
-> Meredith Hall, PA
-> CBC W AUTO DIFF
-> Abnormal
-> Sep 30, 2020
-> 
-> Meredith Hall, PA
-> POTASSIUM,RANDOM URINE
-> Sep 30, 2020
-> 
-> Meredith Hall, PA
-> NM LASIX WASHOUT RENAL SCAN SINGLE STUDIES
-> Jul 30, 2020
-> 
-> William Collyer
-> POTASSIUM
-> Jun 14, 2020
-> 
-> William Walker
-> XR CYSTO IN SURGERY
-> Jun 14, 2020
-> 
-> William Collyer
-> POCT GLUCOSE - G3600A
-> Abnormal
-> Jun 14, 2020
-> 
-> Christine Schaffer
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 14, 2020
-> 
-> Fuli Richie, NP
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 14, 2020
-> 
-> Christine Schaffer
-> POCT GLUCOSE - G3600A
-> Abnormal
-> Jun 13, 2020
-> 
-> Christine Schaffer
-> EKG
-> Jun 13, 2020
-> 
-> Robert G
-> PROTIME-INR
-> Jun 13, 2020
-> 
-> Christine Schaffer
-> CT ABDOMEN PELVIS W CONTRAST
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> LIPASE
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> URINE CULTURE
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> CREATININE (XRAY EVAL)
-> Abnormal
-> Jun 13, 2020
-> 
-> Gina Huhnke
-> RECOLLECT
-> Jun 13, 2020
-> 
-> Dr Dh Emerg
-> CT ABDOMEN PELVIS W CONTRAST
-> Jan 19, 2020
-> 
-> Howard Heerdt
-> LIPASE
-> Jan 19, 2020
-> 
-> Howard Heerdt
-> CBC W AUTO DIFF
-> Abnormal
-> Jan 19, 2020
-> 
-> Howard Heerdt
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jan 19, 2020
-> 
-> Howard Heerdt
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jan 19, 2020
-> 
-> Howard Heerdt
-> URINE CULTURE
-> Jan 19, 2020
-> 
-> Dr Dh Emerg
-> LIPID PANEL
-> Abnormal
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> CBC W AUTO DIFF
-> Abnormal
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> HSV 2 IGG ANITBODY
-> Abnormal
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> HEPATITIS C VIRUS QUANT BY RT TMA
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> SYPHILIS ANTIBODY
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> CHLAMYDIA/GC/TRICHOMONAS BY TMA
-> Jan 16, 2020
-> 
-> Meredith Hall, PA
-> HEMOGLOBIN A1C
-> May 15, 2019
-> 
-> Meredith Hall, PA
-> LIPID PANEL
-> Abnormal
-> May 15, 2019
-> 
-> Meredith Hall, PA
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> May 15, 2019
-> 
-> Meredith Hall, PA
-> CBC W AUTO DIFF
-> Abnormal
-> May 15, 2019
-> 
-> Meredith Hall, PA
-> CBC W AUTO DIFF
-> Abnormal
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> LIPID PANEL
-> Abnormal
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> SYPHILIS ANTIBODY
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> HEPATITIS C ANTIBODY
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> EXTRA HEPATITIS
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> HSV 1 IGG ANTIBODY
-> Abnormal
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> HSV 2 IGG ANITBODY
-> Abnormal
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> CHLAMYDIA/GC/TRICHOMONAS BY TMA
-> Dec 04, 2018
-> 
-> Meredith Hall, PA
-> CBC W AUTO DIFF
-> Abnormal
-> Mar 11, 2018
-> 
-> Michael Peters
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Mar 11, 2018
-> 
-> Michael Peters
-> ACETAMINOPHEN LEVEL
-> Mar 11, 2018
-> 
-> Michael Peters
-> ALCOHOL SERUM MEDICAL
-> Abnormal
-> Mar 11, 2018
-> 
-> Michael Peters
-> SALICYLATE LEVEL
-> Mar 11, 2018
-> 
-> Michael Peters
-> XR CHEST PA AND LATERAL 2 VIEW
-> Jun 29, 2017
-> 
-> Ryan Tucker
-> URINALYSIS AUTO W/SCOPE
-> Abnormal
-> Jun 29, 2017
-> 
-> Ryan Tucker
-> D-DIMER,QUANTITATIVE
-> Jun 29, 2017
-> 
-> Ryan Tucker
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 29, 2017
-> 
-> Ryan Tucker
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 29, 2017
-> 
-> Ryan Tucker
-> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
-> Apr 14, 2017
-> 
-> William Smith
-> CT ABDOMEN AND PELVIS WO CONTRAST KIDNEY STONE PROTOCOL
-> Jul 17, 2016
-> 
-> Gregory Jacobs
-> CBC W AUTO DIFF
-> Abnormal
-> Jul 17, 2016
-> 
-> Gregory Jacobs
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jul 17, 2016
-> 
-> Gregory Jacobs
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jul 17, 2016
-> 
-> Gregory Jacobs
-> URINE CULTURE
-> Jul 17, 2016
-> 
-> Dr Dh Emerg
-> XR CHEST PA AND LATERAL 2 VIEW
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> URINE CULTURE
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> CBC W AUTO DIFF
-> Abnormal
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> LIPASE
-> Jun 09, 2016
-> 
-> Reza Mohammadi
-> CT ABDOMEN PELVIS W CONTRAST
-> Dec 13, 2015
-> 
-> Michael Davis
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Dec 13, 2015
-> 
-> Michael Peters
-> CBC W AUTO DIFF
-> Abnormal
-> Dec 13, 2015
-> 
-> Michael Peters
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Dec 13, 2015
-> 
-> Michael Peters
-> LIPASE
-> Dec 13, 2015
-> 
-> Michael Peters
-> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
-> Dec 08, 2015
-> 
-> Mica Metz
-> LIPID PANEL
-> Abnormal
-> Dec 04, 2015
-> 
-> Mica Metz
-> CBC W AUTO DIFF
-> Abnormal
-> Dec 04, 2015
-> 
-> Mica Metz
-> COMPREHENSIVE METABOLIC PANEL
-> Dec 04, 2015
-> 
-> Mica Metz
-> US PELVIC AND TRANSVAGINAL NON-OB
-> Jan 08, 2015
-> 
-> Brad Hirsch
-> CHLAMYDIA/GC/TRICHOMONAS BY TMA
-> Dec 22, 2014
-> 
-> Brad Hirsch
-> POCT PERFORM URINE PREGNANCY
-> Dec 22, 2014
-> 
-> Kim Volz
-> CT ABDOMEN PELVIS WO CONTRAST
-> Dec 19, 2014
-> 
-> Cheryl Thomas
-> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
-> Abnormal
-> Dec 19, 2014
-> 
-> Cheryl Thomas
-> CHLAMYDIA/GC BY TMA
-> Dec 19, 2014
-> 
-> Cheryl Thomas
-> TRICHOMONAS ANTIGEN
-> Dec 19, 2014
-> 
-> Cheryl Thomas
-> APTT
-> Sep 18, 2014
-> 
-> Mark Logan
-> CBC W AUTO DIFF
-> Sep 18, 2014
-> 
-> Mark Logan
-> PROTIME-INR
-> Sep 18, 2014
-> 
-> Mark Logan
-> CT SINUSES WO CONTRAST
-> Apr 10, 2014
-> 
-> Brandon Page, MD
-> CBC W AUTO DIFF
-> Abnormal
-> Apr 08, 2014
-> 
-> Brandon Page, MD
-> RAPID HIV 1/2 ANTIBODIES
-> Apr 08, 2014
-> 
-> Brandon Page, MD
-> LIPID PANEL
-> Abnormal
-> Jan 17, 2014
-> 
-> Mica Metz
-> BASIC METABOLIC PANEL
-> Abnormal
-> Jan 17, 2014
-> 
-> Mica Metz
-> MAMMO HISTORICAL EXAM
-> Jan 14, 2014
-> 
-> Mica Metz
-> MAMMO HISTORICAL EXAM
-> Jan 14, 2014
-> 
-> Mica Metz
-> MAMMO DIAGNOSTIC BILATERAL - DIGITAL W TOMO
-> Jan 14, 2014
-> 
-> Mica Metz
-> URINALYSIS AUTO W/SCOPE
-> Abnormal
-> Dec 26, 2013
-> 
-> Todd Burry
-> CARDIAC PROFILE 3
-> Dec 25, 2013
-> 
-> Todd Burry
-> CARDIAC PROFILE 2
-> Dec 25, 2013
-> 
-> Todd Burry
-> XR CHEST PORTABLE
-> Dec 25, 2013
-> 
-> Todd Burry
-> CARDIAC PROFILE 1
-> Dec 25, 2013
-> 
-> Todd Burry
-> DRUG SCREEN MEDICAL
-> Dec 25, 2013
-> 
-> Todd Burry
-> AMYLASE
-> Abnormal
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> APTT
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> LIPASE
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> PROTIME-INR
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> ALCOHOL SERUM MEDICAL
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> ER TRAUMA,HCG QUAL PREG SERUM
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> BLOOD GAS ARTERIAL(AKA ABG)
-> Abnormal
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> XR CHEST PORTABLE
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> CTA HEAD AND NECK W WO CONTRAST
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> CT CERVICAL SPINE WO CONTRAST
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> XR HAND LEFT
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> CBC W AUTO DIFF
-> Abnormal
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Dec 25, 2013
-> 
-> Matthew Gilbert
-> XR CHEST PA AND LATERAL 2 VIEW
-> Jan 07, 2013
-> 
-> Rebekah Basham, PA
-> CHLAMYDIA AND GC THIN PREP
-> Sep 25, 2012
-> 
-> Lauren Veazey
-> XR KNEE RIGHT
-> Sep 13, 2012
-> 
-> Tammy Ransom, NP
-> CULTURE, WOUND
-> Aug 12, 2012
-> 
-> Erin Tiu Tong, NP
-> XR CHEST PA AND LATERAL 2 VIEW
-> Jun 22, 2012
-> 
-> Jeffrey Selby
-> XR ANKLE LEFT
-> Jan 11, 2012
-> 
-> Barry Gest
-> XR CHEST PA AND LATERAL 2 VIEW
-> Feb 25, 2011
-> 
-> Dr Dh Emerg
-> COMPREHENSIVE METABOLIC PANEL
-> Abnormal
-> Feb 07, 2011
-> 
-> David Yerkes
-> LIPID PANEL
-> Abnormal
-> Feb 07, 2011
-> 
-> David Yerkes
-> US PELVIC AND TRANSVAGINAL NON-OB
-> Aug 04, 2010
-> 
-> Deborah Kinney, NP
-> There are no more test results available.
+> which one of these tests shoudl i look at the details. Individual Results
+
+> Showing 452 of 452
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> May 05, 2026
+
+> 
+
+> Samata Pathireddy
+
+> RENAL PROFILE
+
+> Abnormal
+
+> May 04, 2026
+
+> 
+
+> Kyle Kopatich
+
+> HEMOGLOBIN A1C
+
+> Abnormal
+
+> May 04, 2026
+
+> 
+
+> Avi Arora
+
+> RENAL PROFILE
+
+> Abnormal
+
+> May 03, 2026
+
+> 
+
+> Kyle Kopatich
+
+> PROCALCITONIN
+
+> Abnormal
+
+> May 03, 2026
+
+> 
+
+> Kyle Kopatich
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> May 02, 2026
+
+> 
+
+> Samata Pathireddy
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> May 02, 2026
+
+> 
+
+> Samata Pathireddy
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> May 01, 2026
+
+> 
+
+> Samata Pathireddy
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 29, 2026
+
+> 
+
+> Samata Pathireddy
+
+> XR CHEST PORTABLE
+
+> Apr 29, 2026
+
+> 
+
+> Samata Pathireddy
+
+> MRSA BY PCR (NARES ONLY)
+
+> Apr 27, 2026
+
+> 
+
+> Avi Arora
+
+> MRSA BY PCR (NARES ONLY)
+
+> Abnormal
+
+> Apr 26, 2026
+
+> 
+
+> Avi Arora
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Apr 26, 2026
+
+> 
+
+> Avi Arora
+
+> TROPONIN T
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Avi Arora
+
+> SPECIMEN REJECTED
+
+> Apr 25, 2026
+
+> 
+
+> Avi Arora
+
+> CT ABDOMEN PELVIS WO CONTRAST
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> TROPONIN T
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Avi Arora
+
+> CULTURE, BLOOD
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> LACTIC ACID, SERUM
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> CULTURE, BLOOD
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> XR CHEST PORTABLE
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> PROCALCITONIN
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> TROPONIN T
+
+> Abnormal
+
+> Apr 25, 2026
+
+> 
+
+> Avi Arora
+
+> EKG
+
+> Apr 25, 2026
+
+> 
+
+> Avi Arora
+
+> POCT GLUCOSE - G3100A
+
+> Abnormal
+
+> Apr 20, 2026
+
+> 
+
+> Tatiana Denega
+
+> POCT GLUCOSE - G3100A
+
+> Abnormal
+
+> Apr 20, 2026
+
+> 
+
+> Tatiana Denega
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 20, 2026
+
+> 
+
+> Tatiana Denega
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 20, 2026
+
+> 
+
+> Tatiana Denega
+
+> POCT GLUCOSE - G3100A
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Tatiana Denega
+
+> LACTIC ACID, SERUM
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> XR CHEST PORTABLE
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> CULTURE, BLOOD
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> PROCALCITONIN
+
+> Abnormal
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> CULTURE, BLOOD
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> EKG
+
+> Apr 19, 2026
+
+> 
+
+> Jennifer Lampert, NP
+
+> XR KNEE LEFT
+
+> Apr 17, 2026
+
+> 
+
+> Jung Kang Smith
+
+> XR KNEE RIGHT
+
+> Apr 17, 2026
+
+> 
+
+> Jung Kang Smith
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 08, 2026
+
+> 
+
+> Edin Alihodzic
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 08, 2026
+
+> 
+
+> Roxana Donea
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 05, 2026
+
+> 
+
+> Edin Alihodzic
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 04, 2026
+
+> 
+
+> Roxana Donea
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 02, 2026
+
+> 
+
+> Edin Alihodzic
+
+> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
+
+> Apr 01, 2026
+
+> 
+
+> Zachary Fields
+
+> RENAL PROFILE
+
+> Abnormal
+
+> Apr 01, 2026
+
+> 
+
+> Zachary Fields
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Mar 31, 2026
+
+> 
+
+> Edin Alihodzic
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Mar 31, 2026
+
+> 
+
+> Edin Alihodzic
+
+> TROPONIN T
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> PROCALCITONIN
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> BLOOD GAS VENOUS
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> XR CHEST PORTABLE
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> TROPONIN T
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> PROCALCITONIN
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> THEOPHYLLINE LEVEL
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> EKG
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> TROPONIN T
+
+> Abnormal
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> MAGNESIUM
+
+> Mar 30, 2026
+
+> 
+
+> Laura Diaz Del Castillo
+
+> BLOOD GAS VENOUS
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> POTASSIUM
+
+> Jan 26, 2026
+
+> 
+
+> Jessica Mendel
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> MAGNESIUM
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> RENAL PROFILE
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> C-REACTIVE PROTEIN
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> PROCALCITONIN
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 26, 2026
+
+> 
+
+> Jessica Mendel
+
+> RECOLLECT
+
+> Jan 26, 2026
+
+> 
+
+> Casana Siebert
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> TROPONIN T
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Brandon Charlton
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> MAGNESIUM
+
+> Jan 25, 2026
+
+> 
+
+> Jessica Mendel
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> TROPONIN T
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> THEOPHYLLINE LEVEL
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> HEMOGLOBIN A1C
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> BLOOD GAS VENOUS
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> POCT GLUCOSE - G2500A
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Jessica Mendel
+
+> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> XR CHEST PORTABLE
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> CULTURE, BLOOD
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> CULTURE, BLOOD
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> D-DIMER,QUANTITATIVE
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> PROCALCITONIN
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> TROPONIN T
+
+> Abnormal
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> EKG
+
+> Jan 24, 2026
+
+> 
+
+> Brandon Charlton
+
+> NM GB HIDA QUANTITATIVE (WITH EF)
+
+> Dec 01, 2025
+
+> 
+
+> Chelsy Marlin
+
+> COLONOSCOPY, DIAGNOSTIC
+
+> Oct 20, 2025
+
+> 
+
+> Rubin Bahuva
+
+> SURGICAL SPECIMEN
+
+> Oct 20, 2025
+
+> 
+
+> Rubin Bahuva
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Oct 07, 2025
+
+> 
+
+> Stjepan Surbek
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Oct 07, 2025
+
+> 
+
+> Stjepan Surbek
+
+> MAGNESIUM
+
+> Oct 07, 2025
+
+> 
+
+> Stjepan Surbek
+
+> PHOSPHORUS
+
+> Abnormal
+
+> Oct 07, 2025
+
+> 
+
+> Stjepan Surbek
+
+> CULTURE, BLOOD
+
+> Oct 06, 2025
+
+> 
+
+> Rachel Silliman
+
+> CULTURE, BLOOD
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> MAGNESIUM
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> PHOSPHORUS
+
+> Abnormal
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> CTA CHEST FOR PULMONARY EMBOLISM W CONTRAST
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> LACTIC ACID, SERUM
+
+> Oct 06, 2025
+
+> 
+
+> Stjepan Surbek
+
+> XR CHEST PORTABLE
+
+> Oct 05, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Oct 05, 2025
+
+> 
+
+> Jeremy Curtis
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Oct 05, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Oct 05, 2025
+
+> 
+
+> Jeremy Curtis
+
+> EKG
+
+> Oct 05, 2025
+
+> 
+
+> Stjepan Surbek
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> XR CHEST PORTABLE
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> PROCALCITONIN
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> ALCOHOL SERUM MEDICAL
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> EKG
+
+> Aug 30, 2025
+
+> 
+
+> Laura Diaz Del Castillo
+
+> CULTURE, EYE
+
+> Jul 24, 2025
+
+> 
+
+> Drew Sommerville
+
+> XR CHEST PORTABLE
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> Abnormal
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> THEOPHYLLINE LEVEL
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> EKG
+
+> Jun 13, 2025
+
+> 
+
+> Clinton Simpson
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 11, 2025
+
+> 
+
+> Stjepan Surbek
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 11, 2025
+
+> 
+
+> Stjepan Surbek
+
+> MAGNESIUM
+
+> Jun 11, 2025
+
+> 
+
+> Stjepan Surbek
+
+> PHOSPHORUS
+
+> Abnormal
+
+> Jun 11, 2025
+
+> 
+
+> Stjepan Surbek
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Jun 10, 2025
+
+> 
+
+> Michael Murillo
+
+> PHOSPHORUS
+
+> Abnormal
+
+> Jun 10, 2025
+
+> 
+
+> Stjepan Surbek
+
+> THEOPHYLLINE LEVEL
+
+> Abnormal
+
+> Jun 10, 2025
+
+> 
+
+> Stjepan Surbek
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 10, 2025
+
+> 
+
+> Stjepan Surbek
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 10, 2025
+
+> 
+
+> Stjepan Surbek
+
+> MAGNESIUM
+
+> Jun 10, 2025
+
+> 
+
+> Stjepan Surbek
+
+> THEOPHYLLINE LEVEL
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Michael Murillo
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> XR CHEST PORTABLE
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> Abnormal
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> MAGNESIUM
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> PHOSPHORUS
+
+> Jun 09, 2025
+
+> 
+
+> Jeremy Curtis
+
+> EKG
+
+> Jun 09, 2025
+
+> 
+
+> Stjepan Surbek
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CULTURE RESPIRATORY
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> XR ABDOMEN KUB GI PLACEMENT PORTABLE
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> XR CHEST PORTABLE
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> CARBOXYHEMOGLOBIN
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> EKG
+
+> Jun 04, 2025
+
+> 
+
+> Jeremy Curtis
+
+> PROCALCITONIN
+
+> Feb 24, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 22, 2025
+
+> 
+
+> Joel Phelps
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Feb 22, 2025
+
+> 
+
+> Joel Phelps
+
+> PROCALCITONIN
+
+> Feb 22, 2025
+
+> 
+
+> Joel Phelps
+
+> DRUG SCREEN MEDICAL
+
+> Feb 21, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> EKG
+
+> Feb 21, 2025
+
+> 
+
+> Joel Phelps
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 21, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Feb 21, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> MAGNESIUM
+
+> Feb 21, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> LACTIC ACID, SERUM
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> XR CHEST PORTABLE
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> CULTURE, BLOOD
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> PROCALCITONIN
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> CULTURE, BLOOD
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Feb 20, 2025
+
+> 
+
+> Tracy Deno-Buechlein, NP
+
+> EKG
+
+> Feb 20, 2025
+
+> 
+
+> Raul Ramirez Velazquez
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Feb 05, 2025
+
+> 
+
+> Danielle McFadden, NP
+
+> TRANSTHORACIC ECHO (TTE) COMPLETE (CONTRAST/BUBBLE/3D PRN)
+
+> Oct 29, 2024
+
+> 
+
+> Caitlin Miller, ACNP
+
+> PHOSPHORUS
+
+> Abnormal
+
+> Oct 06, 2024
+
+> 
+
+> Bailey Rankin, NP
+
+> MAGNESIUM
+
+> Oct 06, 2024
+
+> 
+
+> Bailey Rankin, NP
+
+> RESPIRATORY PANEL BY PCR
+
+> Oct 06, 2024
+
+> 
+
+> Nathalie Douge
+
+> XR CHEST PORTABLE
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> PROCALCITONIN
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> EKG
+
+> Oct 06, 2024
+
+> 
+
+> Christopher Cannon
+
+> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
+
+> Sep 05, 2024
+
+> 
+
+> Chelsy Marlin
+
+> VITAMIN D 25 HYDROXY
+
+> Sep 05, 2024
+
+> 
+
+> Chelsy Marlin
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Sep 05, 2024
+
+> 
+
+> Chelsy Marlin
+
+> HEMOGLOBIN A1C
+
+> Abnormal
+
+> Sep 05, 2024
+
+> 
+
+> Chelsy Marlin
+
+> LIPID PANEL
+
+> Abnormal
+
+> Sep 05, 2024
+
+> 
+
+> Chelsy Marlin
+
+> EKG
+
+> Sep 04, 2024
+
+> 
+
+> Caitlin Miller, ACNP
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 04, 2024
+
+> 
+
+> Talia Nesmith
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 04, 2024
+
+> 
+
+> Stefanie Colavito
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Apr 04, 2024
+
+> 
+
+> Stefanie Colavito
+
+> PROCALCITONIN
+
+> Apr 04, 2024
+
+> 
+
+> Hasan Albitar
+
+> RECOLLECT
+
+> Apr 04, 2024
+
+> 
+
+> Stefanie Colavito
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 03, 2024
+
+> 
+
+> Stefanie Colavito
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Apr 03, 2024
+
+> 
+
+> Stefanie Colavito
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 02, 2024
+
+> 
+
+> Stefanie Colavito
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Apr 02, 2024
+
+> 
+
+> Stefanie Colavito
+
+> RESPIRATORY PANEL BY PCR
+
+> Abnormal
+
+> Apr 02, 2024
+
+> 
+
+> Hasan Albitar
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Apr 02, 2024
+
+> 
+
+> Stefanie Colavito
+
+> URINE CULTURE
+
+> Apr 02, 2024
+
+> 
+
+> Stefanie Colavito
+
+> PROTIME-INR
+
+> Apr 01, 2024
+
+> 
+
+> Stefanie Colavito
+
+> THEOPHYLLINE LEVEL
+
+> Abnormal
+
+> Apr 01, 2024
+
+> 
+
+> Stefanie Colavito
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CULTURE, BLOOD
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> LACTIC ACID, SERUM
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CULTURE, BLOOD
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> XR CHEST PORTABLE
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> PROCALCITONIN
+
+> Abnormal
+
+> Apr 01, 2024
+
+> 
+
+> Dr Dh Emerg
+
+> EKG
+
+> Apr 01, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CULTURE, BLOOD
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> LACTIC ACID, SERUM
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> PROCALCITONIN
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> CULTURE, BLOOD
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> XR FOOT RIGHT MIN 3 VIEWS AND ANKLE MIN 3 VIEWS
+
+> Mar 12, 2024
+
+> 
+
+> Joshua Kindrat
+
+> XR LOWER LEG RIGHT
+
+> Mar 12, 2024
+
+> 
+
+> Lindsay Yoder
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 15, 2024
+
+> 
+
+> Kyle Kopatich
+
+> RENAL PROFILE
+
+> Abnormal
+
+> Feb 15, 2024
+
+> 
+
+> Kyle Kopatich
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Feb 14, 2024
+
+> 
+
+> Michael Albring
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 14, 2024
+
+> 
+
+> Reza Mohammadi
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 14, 2024
+
+> 
+
+> Michael Albring
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 14, 2024
+
+> 
+
+> Reza Mohammadi
+
+> INFLUENZA A/B, RSV, COVID BY PCR
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> DRUG SCREEN MEDICAL
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> XR CHEST PORTABLE
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> CULTURE, BLOOD
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> LACTIC ACID, SERUM
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> CULTURE, BLOOD
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> TROPONIN T
+
+> Abnormal
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> EKG
+
+> Feb 13, 2024
+
+> 
+
+> Reza Mohammadi
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 13, 2023
+
+> 
+
+> Jessica Jeffries
+
+> PROCALCITONIN
+
+> Jun 13, 2023
+
+> 
+
+> Brian Chaffin
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 12, 2023
+
+> 
+
+> Brian Chaffin
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 12, 2023
+
+> 
+
+> Brian Chaffin
+
+> XR ABDOMEN KUB GI PLACEMENT PORTABLE
+
+> Jun 11, 2023
+
+> 
+
+> Phillip Adams
+
+> LACTIC ACID, SERUM
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> HEMOGLOBIN
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> LACTIC ACID, SERUM
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> XR CHEST PORTABLE
+
+> Jun 11, 2023
+
+> 
+
+> Matthew Tucker
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> CULTURE RESPIRATORY
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> MRSA BY PCR (NARES ONLY)
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> LEGIONELLA ANTIGEN URINE
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> STREP PNEU AG, URINE
+
+> Jun 11, 2023
+
+> 
+
+> Brian Chaffin
+
+> CULTURE RESPIRATORY
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> XR CHEST PORTABLE
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> XR ABDOMEN KUB GI PLACEMENT PORTABLE
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> DRUG SCREEN MEDICAL
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> XR CHEST PORTABLE
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> CREATININE (XRAY EVAL)
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> MAGNESIUM
+
+> Jun 11, 2023
+
+> 
+
+> Dr Dh Emerg
+
+> PROCALCITONIN
+
+> Jun 11, 2023
+
+> 
+
+> Dr Dh Emerg
+
+> EKG
+
+> Jun 11, 2023
+
+> 
+
+> Christopher Cannon
+
+> XR ANKLE LEFT
+
+> Jun 10, 2023
+
+> 
+
+> Stephanie Dittmer, NP
+
+> New message from Stephanie Dittmer, NP
+
+> XR FOOT LEFT
+
+> Jun 10, 2023
+
+> 
+
+> Stephanie Dittmer, NP
+
+> New message from Stephanie Dittmer, NP
+
+> PROTIME-INR
+
+> May 22, 2023
+
+> 
+
+> Jacob Moore
+
+> XR CHEST PORTABLE
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> EKG
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> PRO BRAIN NATRIURETIC PEPTIDE (BNP)
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> PROCALCITONIN
+
+> May 22, 2023
+
+> 
+
+> Michael Davis
+
+> XR CHEST PORTABLE
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> EKG
+
+> May 16, 2023
+
+> 
+
+> Jeremy Curtis
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Mar 10, 2023
+
+> 
+
+> Dan Vardi
+
+> COLONOSCOPY, DIAGNOSTIC
+
+> Oct 03, 2022
+
+> 
+
+> Rubin Bahuva
+
+> CHLAMYDIA/GC/TRICHOMONAS BY TMA
+
+> Sep 08, 2022
+
+> 
+
+> Meredith Hall, PA
+
+> CYTOLOGY, PAP (THIN PREP)
+
+> Sep 08, 2022
+
+> 
+
+> Meredith Hall, PA
+
+> ALPHA-1-ANTITRYPSIN
+
+> Abnormal
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> VITAMIN D 25 HYDROXY
+
+> Abnormal
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> TSH THIRD GENERATION
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> LIPID PANEL
+
+> Abnormal
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Aug 11, 2022
+
+> 
+
+> Alan Swartz, NP
+
+> PULMONARY FUNCTION TEST
+
+> Apr 29, 2021
+
+> 
+
+> Khawaja Zaki
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Mar 30, 2021
+
+> 
+
+> Meredith Hall, PA
+
+> LIPID PANEL
+
+> Abnormal
+
+> Mar 30, 2021
+
+> 
+
+> Meredith Hall, PA
+
+> CTA CHEST W CONTRAST
+
+> Mar 05, 2021
+
+> 
+
+> Sridhar Banuru
+
+> CREATININE (XRAY EVAL)
+
+> Mar 05, 2021
+
+> 
+
+> Sridhar Banuru
+
+> ECHOCARDIOGRAM COMPLETE
+
+> Feb 11, 2021
+
+> 
+
+> Alan Swartz, NP
+
+> POCT URINALYSIS DIPSTICK (AUTOMATED)
+
+> Dec 22, 2020
+
+> 
+
+> Alan Swartz, NP
+
+> URINE CULTURE
+
+> Dec 22, 2020
+
+> 
+
+> Alan Swartz, NP
+
+> LIPID PANEL
+
+> Abnormal
+
+> Sep 30, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Sep 30, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Sep 30, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> POTASSIUM,RANDOM URINE
+
+> Sep 30, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> NM LASIX WASHOUT RENAL SCAN SINGLE STUDIES
+
+> Jul 30, 2020
+
+> 
+
+> William Collyer
+
+> POTASSIUM
+
+> Jun 14, 2020
+
+> 
+
+> William Walker
+
+> XR CYSTO IN SURGERY
+
+> Jun 14, 2020
+
+> 
+
+> William Collyer
+
+> POCT GLUCOSE - G3600A
+
+> Abnormal
+
+> Jun 14, 2020
+
+> 
+
+> Christine Schaffer
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 14, 2020
+
+> 
+
+> Fuli Richie, NP
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 14, 2020
+
+> 
+
+> Christine Schaffer
+
+> POCT GLUCOSE - G3600A
+
+> Abnormal
+
+> Jun 13, 2020
+
+> 
+
+> Christine Schaffer
+
+> EKG
+
+> Jun 13, 2020
+
+> 
+
+> Robert G
+
+> PROTIME-INR
+
+> Jun 13, 2020
+
+> 
+
+> Christine Schaffer
+
+> CT ABDOMEN PELVIS W CONTRAST
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> LIPASE
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> URINE CULTURE
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> CREATININE (XRAY EVAL)
+
+> Abnormal
+
+> Jun 13, 2020
+
+> 
+
+> Gina Huhnke
+
+> RECOLLECT
+
+> Jun 13, 2020
+
+> 
+
+> Dr Dh Emerg
+
+> CT ABDOMEN PELVIS W CONTRAST
+
+> Jan 19, 2020
+
+> 
+
+> Howard Heerdt
+
+> LIPASE
+
+> Jan 19, 2020
+
+> 
+
+> Howard Heerdt
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jan 19, 2020
+
+> 
+
+> Howard Heerdt
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jan 19, 2020
+
+> 
+
+> Howard Heerdt
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jan 19, 2020
+
+> 
+
+> Howard Heerdt
+
+> URINE CULTURE
+
+> Jan 19, 2020
+
+> 
+
+> Dr Dh Emerg
+
+> LIPID PANEL
+
+> Abnormal
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> HSV 2 IGG ANITBODY
+
+> Abnormal
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> HEPATITIS C VIRUS QUANT BY RT TMA
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> SYPHILIS ANTIBODY
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> CHLAMYDIA/GC/TRICHOMONAS BY TMA
+
+> Jan 16, 2020
+
+> 
+
+> Meredith Hall, PA
+
+> HEMOGLOBIN A1C
+
+> May 15, 2019
+
+> 
+
+> Meredith Hall, PA
+
+> LIPID PANEL
+
+> Abnormal
+
+> May 15, 2019
+
+> 
+
+> Meredith Hall, PA
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> May 15, 2019
+
+> 
+
+> Meredith Hall, PA
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> May 15, 2019
+
+> 
+
+> Meredith Hall, PA
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> LIPID PANEL
+
+> Abnormal
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> SYPHILIS ANTIBODY
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> HEPATITIS C ANTIBODY
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> EXTRA HEPATITIS
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> HSV 1 IGG ANTIBODY
+
+> Abnormal
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> HSV 2 IGG ANITBODY
+
+> Abnormal
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> CHLAMYDIA/GC/TRICHOMONAS BY TMA
+
+> Dec 04, 2018
+
+> 
+
+> Meredith Hall, PA
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Mar 11, 2018
+
+> 
+
+> Michael Peters
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Mar 11, 2018
+
+> 
+
+> Michael Peters
+
+> ACETAMINOPHEN LEVEL
+
+> Mar 11, 2018
+
+> 
+
+> Michael Peters
+
+> ALCOHOL SERUM MEDICAL
+
+> Abnormal
+
+> Mar 11, 2018
+
+> 
+
+> Michael Peters
+
+> SALICYLATE LEVEL
+
+> Mar 11, 2018
+
+> 
+
+> Michael Peters
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Jun 29, 2017
+
+> 
+
+> Ryan Tucker
+
+> URINALYSIS AUTO W/SCOPE
+
+> Abnormal
+
+> Jun 29, 2017
+
+> 
+
+> Ryan Tucker
+
+> D-DIMER,QUANTITATIVE
+
+> Jun 29, 2017
+
+> 
+
+> Ryan Tucker
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 29, 2017
+
+> 
+
+> Ryan Tucker
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 29, 2017
+
+> 
+
+> Ryan Tucker
+
+> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
+
+> Apr 14, 2017
+
+> 
+
+> William Smith
+
+> CT ABDOMEN AND PELVIS WO CONTRAST KIDNEY STONE PROTOCOL
+
+> Jul 17, 2016
+
+> 
+
+> Gregory Jacobs
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jul 17, 2016
+
+> 
+
+> Gregory Jacobs
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jul 17, 2016
+
+> 
+
+> Gregory Jacobs
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jul 17, 2016
+
+> 
+
+> Gregory Jacobs
+
+> URINE CULTURE
+
+> Jul 17, 2016
+
+> 
+
+> Dr Dh Emerg
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> URINE CULTURE
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> LIPASE
+
+> Jun 09, 2016
+
+> 
+
+> Reza Mohammadi
+
+> CT ABDOMEN PELVIS W CONTRAST
+
+> Dec 13, 2015
+
+> 
+
+> Michael Davis
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Dec 13, 2015
+
+> 
+
+> Michael Peters
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Dec 13, 2015
+
+> 
+
+> Michael Peters
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Dec 13, 2015
+
+> 
+
+> Michael Peters
+
+> LIPASE
+
+> Dec 13, 2015
+
+> 
+
+> Michael Peters
+
+> MAMMO SCREENING BILATERAL - DIGITAL W TOMO
+
+> Dec 08, 2015
+
+> 
+
+> Mica Metz
+
+> LIPID PANEL
+
+> Abnormal
+
+> Dec 04, 2015
+
+> 
+
+> Mica Metz
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Dec 04, 2015
+
+> 
+
+> Mica Metz
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Dec 04, 2015
+
+> 
+
+> Mica Metz
+
+> US PELVIC AND TRANSVAGINAL NON-OB
+
+> Jan 08, 2015
+
+> 
+
+> Brad Hirsch
+
+> CHLAMYDIA/GC/TRICHOMONAS BY TMA
+
+> Dec 22, 2014
+
+> 
+
+> Brad Hirsch
+
+> POCT PERFORM URINE PREGNANCY
+
+> Dec 22, 2014
+
+> 
+
+> Kim Volz
+
+> CT ABDOMEN PELVIS WO CONTRAST
+
+> Dec 19, 2014
+
+> 
+
+> Cheryl Thomas
+
+> URINALYSIS WITH REFLEX TO CULTURE, IF INDICATED
+
+> Abnormal
+
+> Dec 19, 2014
+
+> 
+
+> Cheryl Thomas
+
+> CHLAMYDIA/GC BY TMA
+
+> Dec 19, 2014
+
+> 
+
+> Cheryl Thomas
+
+> TRICHOMONAS ANTIGEN
+
+> Dec 19, 2014
+
+> 
+
+> Cheryl Thomas
+
+> APTT
+
+> Sep 18, 2014
+
+> 
+
+> Mark Logan
+
+> CBC W AUTO DIFF
+
+> Sep 18, 2014
+
+> 
+
+> Mark Logan
+
+> PROTIME-INR
+
+> Sep 18, 2014
+
+> 
+
+> Mark Logan
+
+> CT SINUSES WO CONTRAST
+
+> Apr 10, 2014
+
+> 
+
+> Brandon Page, MD
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Apr 08, 2014
+
+> 
+
+> Brandon Page, MD
+
+> RAPID HIV 1/2 ANTIBODIES
+
+> Apr 08, 2014
+
+> 
+
+> Brandon Page, MD
+
+> LIPID PANEL
+
+> Abnormal
+
+> Jan 17, 2014
+
+> 
+
+> Mica Metz
+
+> BASIC METABOLIC PANEL
+
+> Abnormal
+
+> Jan 17, 2014
+
+> 
+
+> Mica Metz
+
+> MAMMO HISTORICAL EXAM
+
+> Jan 14, 2014
+
+> 
+
+> Mica Metz
+
+> MAMMO HISTORICAL EXAM
+
+> Jan 14, 2014
+
+> 
+
+> Mica Metz
+
+> MAMMO DIAGNOSTIC BILATERAL - DIGITAL W TOMO
+
+> Jan 14, 2014
+
+> 
+
+> Mica Metz
+
+> URINALYSIS AUTO W/SCOPE
+
+> Abnormal
+
+> Dec 26, 2013
+
+> 
+
+> Todd Burry
+
+> CARDIAC PROFILE 3
+
+> Dec 25, 2013
+
+> 
+
+> Todd Burry
+
+> CARDIAC PROFILE 2
+
+> Dec 25, 2013
+
+> 
+
+> Todd Burry
+
+> XR CHEST PORTABLE
+
+> Dec 25, 2013
+
+> 
+
+> Todd Burry
+
+> CARDIAC PROFILE 1
+
+> Dec 25, 2013
+
+> 
+
+> Todd Burry
+
+> DRUG SCREEN MEDICAL
+
+> Dec 25, 2013
+
+> 
+
+> Todd Burry
+
+> AMYLASE
+
+> Abnormal
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> APTT
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> LIPASE
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> PROTIME-INR
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> ALCOHOL SERUM MEDICAL
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> ER TRAUMA,HCG QUAL PREG SERUM
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> BLOOD GAS ARTERIAL(AKA ABG)
+
+> Abnormal
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> XR CHEST PORTABLE
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> CTA HEAD AND NECK W WO CONTRAST
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> CT CERVICAL SPINE WO CONTRAST
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> XR HAND LEFT
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> CBC W AUTO DIFF
+
+> Abnormal
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Dec 25, 2013
+
+> 
+
+> Matthew Gilbert
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Jan 07, 2013
+
+> 
+
+> Rebekah Basham, PA
+
+> CHLAMYDIA AND GC THIN PREP
+
+> Sep 25, 2012
+
+> 
+
+> Lauren Veazey
+
+> XR KNEE RIGHT
+
+> Sep 13, 2012
+
+> 
+
+> Tammy Ransom, NP
+
+> CULTURE, WOUND
+
+> Aug 12, 2012
+
+> 
+
+> Erin Tiu Tong, NP
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Jun 22, 2012
+
+> 
+
+> Jeffrey Selby
+
+> XR ANKLE LEFT
+
+> Jan 11, 2012
+
+> 
+
+> Barry Gest
+
+> XR CHEST PA AND LATERAL 2 VIEW
+
+> Feb 25, 2011
+
+> 
+
+> Dr Dh Emerg
+
+> COMPREHENSIVE METABOLIC PANEL
+
+> Abnormal
+
+> Feb 07, 2011
+
+> 
+
+> David Yerkes
+
+> LIPID PANEL
+
+> Abnormal
+
+> Feb 07, 2011
+
+> 
+
+> David Yerkes
+
+> US PELVIC AND TRANSVAGINAL NON-OB
+
+> Aug 04, 2010
+
+> 
+
+> Deborah Kinney, NP
+
+> There are no more test results available.
+
 > Copyright © 2026 Epic Systems Corporation. All rights reserved.
 
 ### Assistant

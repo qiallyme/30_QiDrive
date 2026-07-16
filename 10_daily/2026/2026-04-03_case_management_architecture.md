@@ -3,9 +3,9 @@ layout: page
 title: "Case Management Architecture"
 slug: "case_management_architecture"
 created_at: "2026-04-03 00:19:00"
-updated_at: "2026-04-03 00:19:00"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

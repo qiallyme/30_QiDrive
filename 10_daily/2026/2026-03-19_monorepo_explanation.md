@@ -3,9 +3,9 @@ layout: page
 title: "Monorepo Explanation"
 slug: "monorepo_explanation"
 created_at: "2026-03-19 21:53:32"
-updated_at: "2026-03-19 21:53:32"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -504,134 +504,262 @@ canonical_ref: ""
 > - what should stay local vs shared
 
 ### User
-> ok is this yaml correct for my qione mono repo. resources:
->   - name: Users
->     subtitle: Clients, Admins, & Caregivers
->     color: Gray
->     style: plural
->     icon: Networking/user.svg
->     
->   - name: QiOne Monorepo
->     subtitle: System Architecture
->     color: Navy
->     children:
->       - name: Frontend Applications
->         subtitle: Web, Mobile & Portals (apps/)
->         color: RoyalBlue
->         children:
->           - name: QiOne Platform
->             subtitle: Next.js App & Portals
->           - name: QiArchive Docs
->             subtitle: Vue/React Doc Management
->           - name: Domain Apps (Care Cases Litigation)
->             subtitle: Specialized Vite/React Apps
->           - name: QiBlogs & Sites
->             subtitle: Astro Static Sites
->           - name: Immigration System
->             subtitle: Django App
->           - name: QiHome Hub
->             subtitle: Flask Home Dashboard
-> 
->       - name: APIs & Microservices
->         subtitle: Backend Services
->         color: DarkGreen
->         children:
->           - name: FastAPI Core
->             subtitle: Main Python Backend
->             icon: Networking/cloud-server.svg
->           - name: QiNA
->             subtitle: NestJS API Harmonization
->             icon: Networking/cloud-server.svg
->           - name: QiDocStrange
->             subtitle: OCR & Document Pipeline
->           - name: Local Agents
->             subtitle: Python Runtime & File Automation
-> 
->       - name: Edge Computing
->         subtitle: Cloudflare Workers (workers/)
->         color: DarkOrange
->         children:
->           - name: Orchestrator Worker
->             subtitle: State Machine & Routing
->           - name: Ingestion Worker
->             subtitle: Processing Queue
->           - name: Memory & Embedder
->             subtitle: RAG & Vector Computation
->           - name: Semantic Router
->             subtitle: AI Request Routing
-> 
->       - name: Shared Packages
->         subtitle: Internal Libraries (packages/)
->         color: Purple
->         children:
->           - name: core-db
->             subtitle: Database Schemas
->           - name: core-auth
->             subtitle: Auth Logic
->           - name: core-ui
->             subtitle: UI Components
->           - name: core-ai
->             subtitle: Prompts & Tools
-> 
->       - name: Data & Infrastructure
->         subtitle: Storage
->         color: Firebrick
->         children:
->           - name: Supabase
->             subtitle: PostgreSQL & Auth
->             icon: Networking/database.svg
->           - name: Local Vault
->             subtitle: Markdown Notes & Files
->             icon: Networking/storage.svg
-> 
-> perspectives:
->   - name: High-Level Dependency Map
->     relations:
->       - from: Users
->         to: QiOne Platform, QiArchive / Docs, Domain Apps (Care, Cases, Litigation), QiBlogs & Sites, Immigration System, QiHome Hub
->         label: Interact via UI
->         
->       - from: QiOne Platform, Domain Apps (Care, Cases, Litigation), QiHome Hub
->         to: QiNA
->         label: Unified API Requests
->         
->       - from: QiNA
->         to: FastAPI Core, Edge Computing
->         label: Routes & Harmonizes
->         description: NestJS layer acts as a gateway, routing requests to the appropriate backend or worker.
-> 
->       - from: FastAPI Core, Local Agents
->         to: QiDocStrange
->         label: Offload OCR
->         description: Delegates heavy document parsing and OCR tasks to the specialized processing pipeline.
-> 
->       - from: FastAPI Core, Local Agents
->         to: Orchestrator Worker, Ingestion Worker, Memory & Embedder, Semantic Router
->         label: Dispatch Edge Tasks
->         description: Triggers Cloudflare workers for scalable ingestion, embedding, and LLM routing.
-> 
->       - from: QiOne Platform, FastAPI Core, Edge Computing, Domain Apps (Care, Cases, Litigation)
->         to: core-db, core-auth, core-ui, core-ai
->         label: Import shared code
->         description: Monorepo packages shared across the TypeScript and UI ecosystem.
-> 
->       - from: FastAPI Core, Edge Computing, Immigration System
->         to: Supabase
->         label: Read/Write
->         
->       - from: Local Agents, Memory & Embedder
->         to: Local Vault
->         label: Sync / Index Files
->         description: Scans, parses, and maintains the local markdown Obsidian/QiNote vault.
-> 
->     notes: |-
->       Welcome to the **QiOne Monorepo** Architecture Diagram.
-> 
->       This view illustrates the macro-level structure of your V2 Monorepo, mapping how the Next.js/Vite frontend apps, Python FastAPI/Django backends, NestJS API Gateway (QiNA), and Cloudflare Edge workers all connect and share internal packages.
-> 
->       **Key Areas:**
->       * **Frontend Applications:** The user-facing surfaces including the main QiOne app, specialized case/care tools, and static Astro sites.
->       * **APIs:** The core Python logic and the Node-based API harmonization layer.
+> ok is this yaml correct for my qione mono repo. resources:
+
+>   - name: Users
+
+>     subtitle: Clients, Admins, & Caregivers
+
+>     color: Gray
+
+>     style: plural
+
+>     icon: Networking/user.svg
+
+>     
+
+>   - name: QiOne Monorepo
+
+>     subtitle: System Architecture
+
+>     color: Navy
+
+>     children:
+
+>       - name: Frontend Applications
+
+>         subtitle: Web, Mobile & Portals (apps/)
+
+>         color: RoyalBlue
+
+>         children:
+
+>           - name: QiOne Platform
+
+>             subtitle: Next.js App & Portals
+
+>           - name: QiArchive Docs
+
+>             subtitle: Vue/React Doc Management
+
+>           - name: Domain Apps (Care Cases Litigation)
+
+>             subtitle: Specialized Vite/React Apps
+
+>           - name: QiBlogs & Sites
+
+>             subtitle: Astro Static Sites
+
+>           - name: Immigration System
+
+>             subtitle: Django App
+
+>           - name: QiHome Hub
+
+>             subtitle: Flask Home Dashboard
+
+> 
+
+>       - name: APIs & Microservices
+
+>         subtitle: Backend Services
+
+>         color: DarkGreen
+
+>         children:
+
+>           - name: FastAPI Core
+
+>             subtitle: Main Python Backend
+
+>             icon: Networking/cloud-server.svg
+
+>           - name: QiNA
+
+>             subtitle: NestJS API Harmonization
+
+>             icon: Networking/cloud-server.svg
+
+>           - name: QiDocStrange
+
+>             subtitle: OCR & Document Pipeline
+
+>           - name: Local Agents
+
+>             subtitle: Python Runtime & File Automation
+
+> 
+
+>       - name: Edge Computing
+
+>         subtitle: Cloudflare Workers (workers/)
+
+>         color: DarkOrange
+
+>         children:
+
+>           - name: Orchestrator Worker
+
+>             subtitle: State Machine & Routing
+
+>           - name: Ingestion Worker
+
+>             subtitle: Processing Queue
+
+>           - name: Memory & Embedder
+
+>             subtitle: RAG & Vector Computation
+
+>           - name: Semantic Router
+
+>             subtitle: AI Request Routing
+
+> 
+
+>       - name: Shared Packages
+
+>         subtitle: Internal Libraries (packages/)
+
+>         color: Purple
+
+>         children:
+
+>           - name: core-db
+
+>             subtitle: Database Schemas
+
+>           - name: core-auth
+
+>             subtitle: Auth Logic
+
+>           - name: core-ui
+
+>             subtitle: UI Components
+
+>           - name: core-ai
+
+>             subtitle: Prompts & Tools
+
+> 
+
+>       - name: Data & Infrastructure
+
+>         subtitle: Storage
+
+>         color: Firebrick
+
+>         children:
+
+>           - name: Supabase
+
+>             subtitle: PostgreSQL & Auth
+
+>             icon: Networking/database.svg
+
+>           - name: Local Vault
+
+>             subtitle: Markdown Notes & Files
+
+>             icon: Networking/storage.svg
+
+> 
+
+> perspectives:
+
+>   - name: High-Level Dependency Map
+
+>     relations:
+
+>       - from: Users
+
+>         to: QiOne Platform, QiArchive / Docs, Domain Apps (Care, Cases, Litigation), QiBlogs & Sites, Immigration System, QiHome Hub
+
+>         label: Interact via UI
+
+>         
+
+>       - from: QiOne Platform, Domain Apps (Care, Cases, Litigation), QiHome Hub
+
+>         to: QiNA
+
+>         label: Unified API Requests
+
+>         
+
+>       - from: QiNA
+
+>         to: FastAPI Core, Edge Computing
+
+>         label: Routes & Harmonizes
+
+>         description: NestJS layer acts as a gateway, routing requests to the appropriate backend or worker.
+
+> 
+
+>       - from: FastAPI Core, Local Agents
+
+>         to: QiDocStrange
+
+>         label: Offload OCR
+
+>         description: Delegates heavy document parsing and OCR tasks to the specialized processing pipeline.
+
+> 
+
+>       - from: FastAPI Core, Local Agents
+
+>         to: Orchestrator Worker, Ingestion Worker, Memory & Embedder, Semantic Router
+
+>         label: Dispatch Edge Tasks
+
+>         description: Triggers Cloudflare workers for scalable ingestion, embedding, and LLM routing.
+
+> 
+
+>       - from: QiOne Platform, FastAPI Core, Edge Computing, Domain Apps (Care, Cases, Litigation)
+
+>         to: core-db, core-auth, core-ui, core-ai
+
+>         label: Import shared code
+
+>         description: Monorepo packages shared across the TypeScript and UI ecosystem.
+
+> 
+
+>       - from: FastAPI Core, Edge Computing, Immigration System
+
+>         to: Supabase
+
+>         label: Read/Write
+
+>         
+
+>       - from: Local Agents, Memory & Embedder
+
+>         to: Local Vault
+
+>         label: Sync / Index Files
+
+>         description: Scans, parses, and maintains the local markdown Obsidian/QiNote vault.
+
+> 
+
+>     notes: |-
+
+>       Welcome to the **QiOne Monorepo** Architecture Diagram.
+
+> 
+
+>       This view illustrates the macro-level structure of your V2 Monorepo, mapping how the Next.js/Vite frontend apps, Python FastAPI/Django backends, NestJS API Gateway (QiNA), and Cloudflare Edge workers all connect and share internal packages.
+
+> 
+
+>       **Key Areas:**
+
+>       * **Frontend Applications:** The user-facing surfaces including the main QiOne app, specialized case/care tools, and static Astro sites.
+
+>       * **APIs:** The core Python logic and the Node-based API harmonization layer.
+
 >       * **Edge Computing:** Highly distributed Cloudflare workers handling orchestration, RAG memory, and document ingestion.
 
 ### Assistant
@@ -1163,84 +1291,162 @@ canonical_ref: ""
 > - cleaner relation flow
 
 ### User
-> real quick from this i think affine or siyaun is what i need instead of notion, May 8, 2024
-> Alternatives
-> Ethan Sholly
-> Self-Hosting Guide to Alternatives: Notion
-> Self-hosted alternatives for the popular collaboration platform
-> 
-> Screenshot of Notion's dashboard, featuring a task list and gallery of people
-> Notion is a popular SaaS platform utilized by individuals and teams to compile knowledge, information, ideas, tasks, and projects into collaborative workspaces. With a user count in the millions – including individuals and large corporations – it's one of the most sought after platforms by users of self-hosted and open source software.
-> 
-> As a result, a number of self-hosted alternatives have surfaced in the last several years that have made it easier to replicate Notion's functionality without sacrificing privacy or reliance on third-parties.
-> 
-> AFFiNE
-> AFFiNE Screenshot
-> 
-> AFFiNE is one of the more popular self-hosted alternatives to Notion – and for good reason. The platform features a heavily inspired interface and similar functionality focused on docs, wikis, storyboarding, mind mapping, project tracking, and moodboards (despite not having published a v1.0 release as of the time of writing).
-> 
-> The platform also recently launched AI features similar to Notion's own AI offerings to assist users with writing, drawing, and generating presentations. Unfortunately, these features are limited to the paid hosting option and not available in the software's self-hosted offering.
-> 
-> Deployment of AFFiNE is fairly straightforward – the documentation provides instructions for spinning up the software via Docker Compose, which consists of an image for the server as well as instances of PostgreSQL and Redis for storage and memory caching.
-> 
-> Outline
-> Outline Screenshot
-> 
-> Outline is a self-hosted alternative to Notion popular for its polished web interface, ease-of-use, and integration support.
-> 
-> Unlike AFFiNE, however, Outline seems to fall a bit short as a complete replacement for Notion. It functions extremely well as a collaborative wiki and note-taking application, but lacks some of the bells and whistles (mostly the various content types) that have allowed teams to replace several tools of varying functionality with a single platform.
-> 
-> Outline also offers AI integration in the form of answers to contextual questions within a given workspace, but limits it to the paid hosting options offered by the developers as well.
-> 
-> Historically, Outline's sticking point has been its deployment options, which initially required S3 for storage and only supported third-party authentication options (Google, Microsoft, Slack). It has since released updates that allow users to leverage local storage and other self-hosted authentication options (OIDC, magic links, SAML) that eliminate any dependence on third-parties for deployment.
-> 
-> Looking for self-hosted alternatives to other popular services? Check out other posts in the alternatives series and selfh.st/apps, a directory of self-hosted software with filters for tags and alternatives for easy browsing and discovery.
-> SiYuan
-> SiYuan Screenshot
-> 
-> SiYuan is a self-hosted Notion alternative that places a bit more emphasis on privacy and offline capabilities (although offline sync and local storage apply to most of the applications on this list).
-> 
-> ITs interface resembles Notion's, but is less polished and appears more cluttered than the aforementioned alternatives. Despite this, SiYuan makes up for its appearance with a feature set beyond just note-taking and documentation – flashcards, database views, OCR, block focus, and its own protocol.
-> 
-> Unlike the other options, SiYuan's AI offerings aren't locked behind paid hosting options and the platform provides writing, translation, abstracts, and spelling/grammar correction help in the form of assistance via OpenAI integration.
-> 
-> Deployment of SiYuan is very straightforward – only a single Docker container is required to get the web application up-and-running. The development team also supports installation across a number of other platforms (including mobile apps) for users looking to manage their workspaces elsewhere – although sync across applications and for offline capabilities does come with a cost.
-> 
-> Anytype
-> Anytype Screenshot
-> 
-> Anytype is a relatively young contender in the space of Notion alternatives, but that doesn't make it a lesser option. The platform provides a similar amount of content types and views (table, Kanban, galleries, database, etc.) while being a bit more innovative with its interface – unlike the others, its sidebar consists of groups of tiles displaying information rather than a list of navigation items.
-> 
-> Anytype's capabilities can be best observed in its Experience Gallery, where the team has compiled examples of how users have utilized the tool to track data and information. Interestingly, the project is the only on the list to make a reference to itself as a no-code/low-code solution, which might also make it a viable AirTable alternative (more on that in a future post).
-> 
-> However, deploying Anytype can be convoluted and extremely confusing for newcomers. Users looking to deploy the self-hosted offering will need to run the latest version of Any-Sync server, which acts as a sync node for the various desktop and mobile applications (it is not a browser-based application). The server requires MongoDB, S3-compatible storage, and Redis to run properly.
-> 
-> XWiki
-> XWiki Screenshot
-> 
-> XWiki is another capable self-hosted alternative to Notion that places a heavy emphasis on documentation collaboration while also boasting itself as an alternative for other popular enterprise tools like Confluence and SharePoint.
-> 
-> Despite its deceptive name, XWiki includes most of the features one would expect from a Notion alternative that might not be found in a traditional wiki-focused platform – collaborative editing, extensibility via apps and extensions, and various content types and data structures. Its interface, however, differs the most from the other alternatives mentioned in this article and takes inspiration from traditional text-based websites vs the distinct Notion style exhibited by the others.
-> 
-> XWiki is fairly straightforward to deploy with support for Docker and bare metal, and does require a separate MySQL database for data storage. The team has also compiled comprehensive guides for migrating from other services as well as comparisons with several popular services for those still on the fence.
-> 
-> Honorable Mentions
-> In my research for this article, I found several applications referring to themselves as Notion alternatives that didn't quite fit the bill as replacements for the platform in its entirety. In many cases, they were note-taking applications designed to resemble Notion's interface but without its various content types and views.
-> 
-> Regardless, I'm a big proponent of self-hosted software and believe any efforts to replicate SaaS platform functionality should be commended. So in no particular order, here are some other options worth considering:
-> 
-> AppFlowy
-> 
-> TriliumNext Notes
-> 
-> Focalboard
-> 
-> Joplin
-> 
-> Memos
-> 
-> Obsidian (with a self-hosted backend)
-> What did I miss?
+> real quick from this i think affine or siyaun is what i need instead of notion, May 8, 2024
+
+> Alternatives
+
+> Ethan Sholly
+
+> Self-Hosting Guide to Alternatives: Notion
+
+> Self-hosted alternatives for the popular collaboration platform
+
+> 
+
+> Screenshot of Notion's dashboard, featuring a task list and gallery of people
+
+> Notion is a popular SaaS platform utilized by individuals and teams to compile knowledge, information, ideas, tasks, and projects into collaborative workspaces. With a user count in the millions – including individuals and large corporations – it's one of the most sought after platforms by users of self-hosted and open source software.
+
+> 
+
+> As a result, a number of self-hosted alternatives have surfaced in the last several years that have made it easier to replicate Notion's functionality without sacrificing privacy or reliance on third-parties.
+
+> 
+
+> AFFiNE
+
+> AFFiNE Screenshot
+
+> 
+
+> AFFiNE is one of the more popular self-hosted alternatives to Notion – and for good reason. The platform features a heavily inspired interface and similar functionality focused on docs, wikis, storyboarding, mind mapping, project tracking, and moodboards (despite not having published a v1.0 release as of the time of writing).
+
+> 
+
+> The platform also recently launched AI features similar to Notion's own AI offerings to assist users with writing, drawing, and generating presentations. Unfortunately, these features are limited to the paid hosting option and not available in the software's self-hosted offering.
+
+> 
+
+> Deployment of AFFiNE is fairly straightforward – the documentation provides instructions for spinning up the software via Docker Compose, which consists of an image for the server as well as instances of PostgreSQL and Redis for storage and memory caching.
+
+> 
+
+> Outline
+
+> Outline Screenshot
+
+> 
+
+> Outline is a self-hosted alternative to Notion popular for its polished web interface, ease-of-use, and integration support.
+
+> 
+
+> Unlike AFFiNE, however, Outline seems to fall a bit short as a complete replacement for Notion. It functions extremely well as a collaborative wiki and note-taking application, but lacks some of the bells and whistles (mostly the various content types) that have allowed teams to replace several tools of varying functionality with a single platform.
+
+> 
+
+> Outline also offers AI integration in the form of answers to contextual questions within a given workspace, but limits it to the paid hosting options offered by the developers as well.
+
+> 
+
+> Historically, Outline's sticking point has been its deployment options, which initially required S3 for storage and only supported third-party authentication options (Google, Microsoft, Slack). It has since released updates that allow users to leverage local storage and other self-hosted authentication options (OIDC, magic links, SAML) that eliminate any dependence on third-parties for deployment.
+
+> 
+
+> Looking for self-hosted alternatives to other popular services? Check out other posts in the alternatives series and selfh.st/apps, a directory of self-hosted software with filters for tags and alternatives for easy browsing and discovery.
+
+> SiYuan
+
+> SiYuan Screenshot
+
+> 
+
+> SiYuan is a self-hosted Notion alternative that places a bit more emphasis on privacy and offline capabilities (although offline sync and local storage apply to most of the applications on this list).
+
+> 
+
+> ITs interface resembles Notion's, but is less polished and appears more cluttered than the aforementioned alternatives. Despite this, SiYuan makes up for its appearance with a feature set beyond just note-taking and documentation – flashcards, database views, OCR, block focus, and its own protocol.
+
+> 
+
+> Unlike the other options, SiYuan's AI offerings aren't locked behind paid hosting options and the platform provides writing, translation, abstracts, and spelling/grammar correction help in the form of assistance via OpenAI integration.
+
+> 
+
+> Deployment of SiYuan is very straightforward – only a single Docker container is required to get the web application up-and-running. The development team also supports installation across a number of other platforms (including mobile apps) for users looking to manage their workspaces elsewhere – although sync across applications and for offline capabilities does come with a cost.
+
+> 
+
+> Anytype
+
+> Anytype Screenshot
+
+> 
+
+> Anytype is a relatively young contender in the space of Notion alternatives, but that doesn't make it a lesser option. The platform provides a similar amount of content types and views (table, Kanban, galleries, database, etc.) while being a bit more innovative with its interface – unlike the others, its sidebar consists of groups of tiles displaying information rather than a list of navigation items.
+
+> 
+
+> Anytype's capabilities can be best observed in its Experience Gallery, where the team has compiled examples of how users have utilized the tool to track data and information. Interestingly, the project is the only on the list to make a reference to itself as a no-code/low-code solution, which might also make it a viable AirTable alternative (more on that in a future post).
+
+> 
+
+> However, deploying Anytype can be convoluted and extremely confusing for newcomers. Users looking to deploy the self-hosted offering will need to run the latest version of Any-Sync server, which acts as a sync node for the various desktop and mobile applications (it is not a browser-based application). The server requires MongoDB, S3-compatible storage, and Redis to run properly.
+
+> 
+
+> XWiki
+
+> XWiki Screenshot
+
+> 
+
+> XWiki is another capable self-hosted alternative to Notion that places a heavy emphasis on documentation collaboration while also boasting itself as an alternative for other popular enterprise tools like Confluence and SharePoint.
+
+> 
+
+> Despite its deceptive name, XWiki includes most of the features one would expect from a Notion alternative that might not be found in a traditional wiki-focused platform – collaborative editing, extensibility via apps and extensions, and various content types and data structures. Its interface, however, differs the most from the other alternatives mentioned in this article and takes inspiration from traditional text-based websites vs the distinct Notion style exhibited by the others.
+
+> 
+
+> XWiki is fairly straightforward to deploy with support for Docker and bare metal, and does require a separate MySQL database for data storage. The team has also compiled comprehensive guides for migrating from other services as well as comparisons with several popular services for those still on the fence.
+
+> 
+
+> Honorable Mentions
+
+> In my research for this article, I found several applications referring to themselves as Notion alternatives that didn't quite fit the bill as replacements for the platform in its entirety. In many cases, they were note-taking applications designed to resemble Notion's interface but without its various content types and views.
+
+> 
+
+> Regardless, I'm a big proponent of self-hosted software and believe any efforts to replicate SaaS platform functionality should be commended. So in no particular order, here are some other options worth considering:
+
+> 
+
+> AppFlowy
+
+> 
+
+> TriliumNext Notes
+
+> 
+
+> Focalboard
+
+> 
+
+> Joplin
+
+> 
+
+> Memos
+
+> 
+
+> Obsidian (with a self-hosted backend)
+
+> What did I miss?
+
 > Did I miss anything? Feel free to drop a comment or reach out using any of the communication methods listed on the site's contact page to get in touch., capacities is a cool concept and kinda what i want to build one day but its not quite there yet, so lets make the decision today, i either suck it up and use notion or pick one of the others ont he list and delete capcities all together
 
 ### Assistant
@@ -3362,286 +3568,566 @@ canonical_ref: ""
 > 👉 I’ll turn your **Daily Glance Sheet + Care system + Client workflow** into ready-to-use AFFiNE docs so you’re not starting from zero.
 
 ### User
-> i need to organize these scripts how would you do it. ```markdown
-> . 📂 scripts
-> └── 📂 01_core/
-> │  ├── 📄 README.md
-> │  ├── 📄 base.py
-> │  ├── 📄 check-auth.ps1
-> │  ├── 📄 check-secrets.ps1
-> │  └── 📂 exe/
-> │    ├── 📄 dotenv.exe
-> │    ├── 📄 f2py.exe
-> │    ├── 📄 fastapi.exe
-> │    ├── 📄 google-oauthlib-tool.exe
-> │    ├── 📄 normalizer.exe
-> │    ├── 📄 numpy-config.exe
-> │    ├── 📄 pip.exe
-> │    ├── 📄 pyrsa-decrypt.exe
-> │    ├── 📄 pyrsa-encrypt.exe
-> │    ├── 📄 pyrsa-keygen.exe
-> │    ├── 📄 pyrsa-priv2pub.exe
-> │    ├── 📄 pyrsa-sign.exe
-> │    ├── 📄 pyrsa-verify.exe
-> │    ├── 📄 uvicorn.exe
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  ├── 📄 usage.md
-> │  └── 📂 yaml/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fix_repo_rules.ts
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 02_guardian/
-> │  └── 📂 linter/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 check-md.py
-> │    ├── 📄 check_compliance.py
-> │    └── 📂 clean/
-> │    ├── 📄 compare-csv-md.py
-> │    ├── 📄 compare-drive.py
-> │    ├── 📄 comprehensive_cleanup.ps1
-> │    └── 📂 debug/
-> │      ├── 📄 debug-maps.py
-> │    └── 📂 duplicates/
-> │      ├── 📄 _move_duplicate_files.ps1
-> │    ├── 📄 enforce_fm.py
-> │    ├── 📄 examine_db.py
-> │    ├── 📄 find_duplicates.ps1
-> │    ├── 📄 find_duplicates.py
-> │    ├── 📄 fix-spaces.py
-> │    ├── 📄 fix_repo_rules.ts
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 get_file_error_context.py
-> │    ├── 📄 housekeeping.ps1
-> │    ├── 📄 linter.py
-> │    ├── 📄 linterrunner.py
-> │    └── 📂 linters/
-> │      ├── 📄 add_frontmatter.py
-> │    ├── 📄 search-csv.py
-> │    ├── 📄 sort-files.py
-> │    ├── 📄 sync_errors_to_markdown.py
-> │    ├── 📄 validate_cloud.ps1
-> │    ├── 📄 validate_local.ps1
-> │  └── 📂 tests/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  ├── 📄 unblock_all.bat
-> └── 📂 03_ingestion/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 intake/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 run_inbox.ts
-> │  ├── 📄 merge_media_tree.bat
-> │  ├── 📄 merge_media_tree.py
-> │  ├── 📄 merge_mkvs.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> └── 📂 04_transformation/
-> │  └── 📂 cleaning/
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 convert/
-> │    └── 📂 convert-csv-to-md/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 _Convert_csv_to_md.md
-> │      ├── 📄 _csv-to-md.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      └── 📂 data/
-> │      ├── 📄 mapping.json
-> │      └── 📂 mapping_examples/
-> │      └── 📂 output/
-> │      └── 📂 tests/
-> │    ├── 📄 enhance-mkv.PY
-> │    └── 📂 exporters/
-> │      ├── 📄 code_extractor.py
-> │    ├── 📄 finish_flattening.ps1
-> │    ├── 📄 flat-folders.py
-> │    ├── 📄 flatten_and_organize.ps1
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 generate_kb_from_json.py
-> │    ├── 📄 unzip_downloads.py
-> │  └── 📂 directory/
-> │    ├── 📄 attach-mirrors.py
-> │    └── 📂 builders/
-> │      ├── 📄 build-timeline.js
-> │      ├── 📄 build.ps1
-> │      ├── 📄 build_file_registry.py
-> │    ├── 📄 cloudflare-create-md.py
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │    ├── 📄 create-canvas-directory.py
-> │    ├── 📄 create-canvas.py
-> │    ├── 📄 create_app.py
-> │    ├── 📄 create_stubs.py
-> │    ├── 📄 directory_mapper.py
-> │    ├── 📄 flatten_directory.py
-> │    ├── 📄 generate_indexes.py
-> │    ├── 📄 immigration_structure_example.py
-> │    └── 📂 indices/
-> │      ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │    ├── 📄 newnode.bat
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 slugs_mapping.json.py
-> │    ├── 📄 slugs_mapping.py
-> │    ├── 📄 slugs_mapping.yaml.py
-> │    ├── 📄 summarize_trash_from_registry.py
-> │    ├── 📄 timeline-loader.js
-> │    └── 📂 timelines/
-> │      ├── 📄 build-timeline-713.js
-> │      ├── 📄 build-timeline.js
-> │    ├── 📄 tree_compiler.py
-> │    ├── 📄 ultra_clean_folders.py
-> │    ├── 📄 windows_task_scheduler.xml
-> └── 📂 05_deployment/
-> │  └── 📂 agents/
-> │    ├── 📄 qios_agent.py
-> │  ├── 📄 deploy-all.ps1
-> │  ├── 📄 deploy-critical.ps1
-> │  ├── 📄 start_agent_service.py
-> │  ├── 📄 start_worker.py
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> └── 📂 06_visualize/
-> │  └── 📂 3d_maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │  ├── 📄 git-autopush.ahk
-> └── 📂 ai/
-> │  ├── 📄 gina_prompt.py
-> │  ├── 📄 run_agent_command.py
-> └── 📂 calendar/
-> │  ├── 📄 calendar_create_event.py
-> │  ├── 📄 calendar_get_upcoming.py
-> └── 📂 crm/
-> │  ├── 📄 crm_create_contact.py
-> │  ├── 📄 crm_create_task.py
-> │  ├── 📄 crm_list_recent_contacts.py
-> │  ├── 📄 crm_search_person.py
-> └── 📂 files/
-> │  ├── 📄 fs_scanner.py
-> │  ├── 📄 list_realm_files.py
-> │  ├── 📄 move_large_files.ps1
-> │  ├── 📄 move_md_by_body_content.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  ├── 📄 search_processed_documents.py
-> └── 📂 frontmatter/
-> │  ├── 📄 frontmatter_utils.py
-> └── 📂 inbox/
-> │  ├── 📄 audit_inbox.ts
-> │  ├── 📄 dedup_detect.ts
-> │  ├── 📄 fix_inbox_names.ts
-> │  ├── 📄 merge_plan.ts
-> │  ├── 📄 normalize_inbox.ts
-> │  ├── 📄 run_inbox.ts
-> └── 📂 jobs/
-> │  ├── 📄 job_processor.py
-> │  ├── 📄 jobs.py
-> └── 📂 json/
-> │  ├── 📄 QiRealms_seed.json
-> │  ├── 📄 QiTagClasses_schema.json
-> │  ├── 📄 QiTags_seed.json
-> │  ├── 📄 eos-frontmatter-mapping.json
-> │  ├── 📄 eos_frontmatter.schema.json
-> │  ├── 📄 frontmatter.schema.json
-> │  ├── 📄 systemInfoCMD.json
-> └── 📂 mail/
-> │  ├── 📄 mail_get_recent.py
-> │  ├── 📄 mail_send.py
-> └── 📂 memory/
-> │  ├── 📄 memory.py
-> │  ├── 📄 models.py
-> └── 📂 pdf/
-> │  ├── 📄 process_inbox_pdfs.ts
-> │  ├── 📄 process_pdf.ts
-> │  ├── 📄 validate_pdfs.ts
-> └── 📂 rag/
-> │  ├── 📄 rag.py
-> └── 📂 rules/
-> │  ├── 📄 audit_repo_rules.ts
-> │  ├── 📄 fix_repo_rules.ts
-> └── 📂 sms/
-> │  ├── 📄 sms_send.py
-> └── 📂 sync/
-> │  ├── 📄 check_status.py
-> │  ├── 📄 check_worker_status.py
-> │  ├── 📄 check_workers.py
-> │  ├── 📄 index_content.ts
-> │  ├── 📄 windows_task_scheduler.xml
-> ├── 📄 text_extractor.py
-> └── 📂 tools/
-> │  ├── 📄 enforce_fm.py
-> │  ├── 📄 tools_manifest.json
-> │  ├── 📄 transcribe_audio.py
-> │  ├── 📄 unblock_all.bat
-> ├── 📄 validate-eos-frontmatter.ts
-> └── 📂 vault/
-> │  ├── 📄 append_to_vault_note.py
-> │  ├── 📄 create_vault_note.py
-> └── 📂 venv/
-> │  ├── 📄 activate
-> │  ├── 📄 activate.bat
-> ├── 📄 web_get.py
-> ├── 📄 web_search.py
-> └── 📂 yaml/
-> │  ├── 📄 csv_to_md_mappings.yaml
-> │  ├── 📄 fs_scan_config.yaml
-> │  ├── 📄 housekeeping.yaml
-> │  ├── 📄 qi_codex.config.yaml
-> │  ├── 📄 qi_prefix_map.yaml
-> │  ├── 📄 qicompiler_config.yaml
-> │  ├── 📄 qione_rag_routes.yaml
-> │  ├── 📄 slugs_mapping.yaml
-> │  └── 📄 tree_compiler_config.yaml
+> i need to organize these scripts how would you do it. ```markdown
+
+> . 📂 scripts
+
+> └── 📂 01_core/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 base.py
+
+> │  ├── 📄 check-auth.ps1
+
+> │  ├── 📄 check-secrets.ps1
+
+> │  └── 📂 exe/
+
+> │    ├── 📄 dotenv.exe
+
+> │    ├── 📄 f2py.exe
+
+> │    ├── 📄 fastapi.exe
+
+> │    ├── 📄 google-oauthlib-tool.exe
+
+> │    ├── 📄 normalizer.exe
+
+> │    ├── 📄 numpy-config.exe
+
+> │    ├── 📄 pip.exe
+
+> │    ├── 📄 pyrsa-decrypt.exe
+
+> │    ├── 📄 pyrsa-encrypt.exe
+
+> │    ├── 📄 pyrsa-keygen.exe
+
+> │    ├── 📄 pyrsa-priv2pub.exe
+
+> │    ├── 📄 pyrsa-sign.exe
+
+> │    ├── 📄 pyrsa-verify.exe
+
+> │    ├── 📄 uvicorn.exe
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  ├── 📄 usage.md
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 02_guardian/
+
+> │  └── 📂 linter/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 check-md.py
+
+> │    ├── 📄 check_compliance.py
+
+> │    └── 📂 clean/
+
+> │    ├── 📄 compare-csv-md.py
+
+> │    ├── 📄 compare-drive.py
+
+> │    ├── 📄 comprehensive_cleanup.ps1
+
+> │    └── 📂 debug/
+
+> │      ├── 📄 debug-maps.py
+
+> │    └── 📂 duplicates/
+
+> │      ├── 📄 _move_duplicate_files.ps1
+
+> │    ├── 📄 enforce_fm.py
+
+> │    ├── 📄 examine_db.py
+
+> │    ├── 📄 find_duplicates.ps1
+
+> │    ├── 📄 find_duplicates.py
+
+> │    ├── 📄 fix-spaces.py
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 get_file_error_context.py
+
+> │    ├── 📄 housekeeping.ps1
+
+> │    ├── 📄 linter.py
+
+> │    ├── 📄 linterrunner.py
+
+> │    └── 📂 linters/
+
+> │      ├── 📄 add_frontmatter.py
+
+> │    ├── 📄 search-csv.py
+
+> │    ├── 📄 sort-files.py
+
+> │    ├── 📄 sync_errors_to_markdown.py
+
+> │    ├── 📄 validate_cloud.ps1
+
+> │    ├── 📄 validate_local.ps1
+
+> │  └── 📂 tests/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  ├── 📄 unblock_all.bat
+
+> └── 📂 03_ingestion/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 intake/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  ├── 📄 merge_media_tree.bat
+
+> │  ├── 📄 merge_media_tree.py
+
+> │  ├── 📄 merge_mkvs.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> └── 📂 04_transformation/
+
+> │  └── 📂 cleaning/
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 convert/
+
+> │    └── 📂 convert-csv-to-md/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 _Convert_csv_to_md.md
+
+> │      ├── 📄 _csv-to-md.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      └── 📂 data/
+
+> │      ├── 📄 mapping.json
+
+> │      └── 📂 mapping_examples/
+
+> │      └── 📂 output/
+
+> │      └── 📂 tests/
+
+> │    ├── 📄 enhance-mkv.PY
+
+> │    └── 📂 exporters/
+
+> │      ├── 📄 code_extractor.py
+
+> │    ├── 📄 finish_flattening.ps1
+
+> │    ├── 📄 flat-folders.py
+
+> │    ├── 📄 flatten_and_organize.ps1
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 generate_kb_from_json.py
+
+> │    ├── 📄 unzip_downloads.py
+
+> │  └── 📂 directory/
+
+> │    ├── 📄 attach-mirrors.py
+
+> │    └── 📂 builders/
+
+> │      ├── 📄 build-timeline.js
+
+> │      ├── 📄 build.ps1
+
+> │      ├── 📄 build_file_registry.py
+
+> │    ├── 📄 cloudflare-create-md.py
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │    ├── 📄 create-canvas-directory.py
+
+> │    ├── 📄 create-canvas.py
+
+> │    ├── 📄 create_app.py
+
+> │    ├── 📄 create_stubs.py
+
+> │    ├── 📄 directory_mapper.py
+
+> │    ├── 📄 flatten_directory.py
+
+> │    ├── 📄 generate_indexes.py
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │    ├── 📄 newnode.bat
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 slugs_mapping.json.py
+
+> │    ├── 📄 slugs_mapping.py
+
+> │    ├── 📄 slugs_mapping.yaml.py
+
+> │    ├── 📄 summarize_trash_from_registry.py
+
+> │    ├── 📄 timeline-loader.js
+
+> │    └── 📂 timelines/
+
+> │      ├── 📄 build-timeline-713.js
+
+> │      ├── 📄 build-timeline.js
+
+> │    ├── 📄 tree_compiler.py
+
+> │    ├── 📄 ultra_clean_folders.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 05_deployment/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 qios_agent.py
+
+> │  ├── 📄 deploy-all.ps1
+
+> │  ├── 📄 deploy-critical.ps1
+
+> │  ├── 📄 start_agent_service.py
+
+> │  ├── 📄 start_worker.py
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> └── 📂 06_visualize/
+
+> │  └── 📂 3d_maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │  ├── 📄 git-autopush.ahk
+
+> └── 📂 ai/
+
+> │  ├── 📄 gina_prompt.py
+
+> │  ├── 📄 run_agent_command.py
+
+> └── 📂 calendar/
+
+> │  ├── 📄 calendar_create_event.py
+
+> │  ├── 📄 calendar_get_upcoming.py
+
+> └── 📂 crm/
+
+> │  ├── 📄 crm_create_contact.py
+
+> │  ├── 📄 crm_create_task.py
+
+> │  ├── 📄 crm_list_recent_contacts.py
+
+> │  ├── 📄 crm_search_person.py
+
+> └── 📂 files/
+
+> │  ├── 📄 fs_scanner.py
+
+> │  ├── 📄 list_realm_files.py
+
+> │  ├── 📄 move_large_files.ps1
+
+> │  ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  ├── 📄 search_processed_documents.py
+
+> └── 📂 frontmatter/
+
+> │  ├── 📄 frontmatter_utils.py
+
+> └── 📂 inbox/
+
+> │  ├── 📄 audit_inbox.ts
+
+> │  ├── 📄 dedup_detect.ts
+
+> │  ├── 📄 fix_inbox_names.ts
+
+> │  ├── 📄 merge_plan.ts
+
+> │  ├── 📄 normalize_inbox.ts
+
+> │  ├── 📄 run_inbox.ts
+
+> └── 📂 jobs/
+
+> │  ├── 📄 job_processor.py
+
+> │  ├── 📄 jobs.py
+
+> └── 📂 json/
+
+> │  ├── 📄 QiRealms_seed.json
+
+> │  ├── 📄 QiTagClasses_schema.json
+
+> │  ├── 📄 QiTags_seed.json
+
+> │  ├── 📄 eos-frontmatter-mapping.json
+
+> │  ├── 📄 eos_frontmatter.schema.json
+
+> │  ├── 📄 frontmatter.schema.json
+
+> │  ├── 📄 systemInfoCMD.json
+
+> └── 📂 mail/
+
+> │  ├── 📄 mail_get_recent.py
+
+> │  ├── 📄 mail_send.py
+
+> └── 📂 memory/
+
+> │  ├── 📄 memory.py
+
+> │  ├── 📄 models.py
+
+> └── 📂 pdf/
+
+> │  ├── 📄 process_inbox_pdfs.ts
+
+> │  ├── 📄 process_pdf.ts
+
+> │  ├── 📄 validate_pdfs.ts
+
+> └── 📂 rag/
+
+> │  ├── 📄 rag.py
+
+> └── 📂 rules/
+
+> │  ├── 📄 audit_repo_rules.ts
+
+> │  ├── 📄 fix_repo_rules.ts
+
+> └── 📂 sms/
+
+> │  ├── 📄 sms_send.py
+
+> └── 📂 sync/
+
+> │  ├── 📄 check_status.py
+
+> │  ├── 📄 check_worker_status.py
+
+> │  ├── 📄 check_workers.py
+
+> │  ├── 📄 index_content.ts
+
+> │  ├── 📄 windows_task_scheduler.xml
+
+> ├── 📄 text_extractor.py
+
+> └── 📂 tools/
+
+> │  ├── 📄 enforce_fm.py
+
+> │  ├── 📄 tools_manifest.json
+
+> │  ├── 📄 transcribe_audio.py
+
+> │  ├── 📄 unblock_all.bat
+
+> ├── 📄 validate-eos-frontmatter.ts
+
+> └── 📂 vault/
+
+> │  ├── 📄 append_to_vault_note.py
+
+> │  ├── 📄 create_vault_note.py
+
+> └── 📂 venv/
+
+> │  ├── 📄 activate
+
+> │  ├── 📄 activate.bat
+
+> ├── 📄 web_get.py
+
+> ├── 📄 web_search.py
+
+> └── 📂 yaml/
+
+> │  ├── 📄 csv_to_md_mappings.yaml
+
+> │  ├── 📄 fs_scan_config.yaml
+
+> │  ├── 📄 housekeeping.yaml
+
+> │  ├── 📄 qi_codex.config.yaml
+
+> │  ├── 📄 qi_prefix_map.yaml
+
+> │  ├── 📄 qicompiler_config.yaml
+
+> │  ├── 📄 qione_rag_routes.yaml
+
+> │  ├── 📄 slugs_mapping.yaml
+
+> │  └── 📄 tree_compiler_config.yaml
+
 > ```
 
 ### Assistant
@@ -3983,288 +4469,570 @@ canonical_ref: ""
 > 👉 generate a **clean folder tree + naming convention + import pattern (Python + TS)** so this stays clean long-term and doesn’t regress in 2 weeks
 
 ### User
-> i folowed your instruction but i see we are not finished. ```markdown
-> . 📂 scripts
-> └── 📂 02_guardian/
-> │  └── 📂 linter/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 check-md.py
-> │    ├── 📄 check_compliance.py
-> │    └── 📂 clean/
-> │    ├── 📄 compare-csv-md.py
-> │    ├── 📄 compare-drive.py
-> │    ├── 📄 comprehensive_cleanup.ps1
-> │    └── 📂 debug/
-> │      ├── 📄 debug-maps.py
-> │    └── 📂 duplicates/
-> │      ├── 📄 _move_duplicate_files.ps1
-> │    ├── 📄 enforce_fm.py
-> │    ├── 📄 examine_db.py
-> │    ├── 📄 find_duplicates.ps1
-> │    ├── 📄 find_duplicates.py
-> │    ├── 📄 fix-spaces.py
-> │    ├── 📄 fix_repo_rules.ts
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 get_file_error_context.py
-> │    ├── 📄 housekeeping.ps1
-> │    ├── 📄 linter.py
-> │    ├── 📄 linterrunner.py
-> │    └── 📂 linters/
-> │      ├── 📄 add_frontmatter.py
-> │    ├── 📄 search-csv.py
-> │    ├── 📄 sort-files.py
-> │    ├── 📄 sync_errors_to_markdown.py
-> │    ├── 📄 validate_cloud.ps1
-> │    ├── 📄 validate_local.ps1
-> │  ├── 📄 unblock_all.bat
-> └── 📂 06_visualize/
-> │  └── 📂 3d_maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │  ├── 📄 git-autopush.ahk
-> └── 📂 ai/
-> │  └── 📂 agents/
-> │  └── 📂 memory/
-> │    ├── 📄 memory.py
-> │    ├── 📄 models.py
-> │  └── 📂 prompts/
-> │    ├── 📄 gina_prompt.py
-> │    ├── 📄 run_agent_command.py
-> │  └── 📂 rag/
-> │    ├── 📄 rag.py
-> └── 📂 archive/
-> │  └── 📂 duplicates/
-> │  └── 📂 experiments/
-> │  └── 📂 old/
-> └── 📂 automation/
-> │  └── 📂 jobs/
-> │    ├── 📄 job_processor.py
-> │    ├── 📄 jobs.py
-> │  └── 📂 runners/
-> │  └── 📂 schedulers/
-> └── 📂 config/
-> │  └── 📂 json/
-> │    ├── 📄 QiRealms_seed.json
-> │    ├── 📄 QiTagClasses_schema.json
-> │    ├── 📄 QiTags_seed.json
-> │    ├── 📄 eos-frontmatter-mapping.json
-> │    ├── 📄 eos_frontmatter.schema.json
-> │    ├── 📄 frontmatter.schema.json
-> │    ├── 📄 systemInfoCMD.json
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 core/
-> │  └── 📂 auth/
-> │    ├── 📄 check-auth.ps1
-> │    ├── 📄 check-secrets.ps1
-> │  ├── 📄 base.py
-> │  └── 📂 docs/
-> │    ├── 📄 usage.md
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  └── 📂 secrets/
-> └── 📂 deployment/
-> │  └── 📂 agents/
-> │    ├── 📄 qios_agent.py
-> │    ├── 📄 start_agent_service.py
-> │  └── 📂 scripts/
-> │    ├── 📄 deploy-all.ps1
-> │    ├── 📄 deploy-critical.ps1
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> │    ├── 📄 start_worker.py
-> └── 📂 exporters/
-> │  ├── 📄 code_extractor.py
-> └── 📂 files/
-> │  ├── 📄 fs_scanner.py
-> │  ├── 📄 list_realm_files.py
-> │  ├── 📄 move_large_files.ps1
-> │  ├── 📄 move_md_by_body_content.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  ├── 📄 search_processed_documents.py
-> └── 📂 frontmatter/
-> │  ├── 📄 frontmatter_utils.py
-> └── 📂 inbox/
-> │  ├── 📄 audit_inbox.ts
-> │  ├── 📄 dedup_detect.ts
-> │  ├── 📄 fix_inbox_names.ts
-> │  ├── 📄 flatten_inbox.ps1
-> │  ├── 📄 merge_plan.ts
-> │  ├── 📄 normalize_inbox.ts
-> │  ├── 📄 run_inbox.ts
-> └── 📂 indexing/
-> │  └── 📂 builders/
-> │    ├── 📄 build-timeline.js
-> │    ├── 📄 build.ps1
-> │    ├── 📄 build_file_registry.py
-> │  └── 📂 directory/
-> │    ├── 📄 attach-mirrors.py
-> │    ├── 📄 cloudflare-create-md.py
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │    ├── 📄 create-canvas-directory.py
-> │    ├── 📄 create-canvas.py
-> │    ├── 📄 create_app.py
-> │    ├── 📄 create_stubs.py
-> │    ├── 📄 directory_mapper.py
-> │    ├── 📄 flatten_directory.py
-> │    ├── 📄 generate_indexes.py
-> │    ├── 📄 immigration_structure_example.py
-> │    └── 📂 indices/
-> │      ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │    ├── 📄 newnode.bat
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 slugs_mapping.json.py
-> │    ├── 📄 slugs_mapping.py
-> │    ├── 📄 slugs_mapping.yaml.py
-> │    ├── 📄 summarize_trash_from_registry.py
-> │    ├── 📄 timeline-loader.js
-> │    ├── 📄 tree_compiler.py
-> │    ├── 📄 ultra_clean_folders.py
-> │    ├── 📄 windows_task_scheduler.xml
-> │  └── 📂 registry/
-> │  └── 📂 timelines/
-> │    ├── 📄 build-timeline-713.js
-> │    ├── 📄 build-timeline.js
-> └── 📂 ingestion/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 files/
-> │    ├── 📄 merge_media_tree.bat
-> │  └── 📂 images/
-> │  └── 📂 imports/
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 pdf/
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  └── 📂 sheets/
-> │  └── 📂 video/
-> │    ├── 📄 merge_media_tree.py
-> │    ├── 📄 merge_mkvs.py
-> └── 📂 pdf/
-> │  ├── 📄 process_inbox_pdfs.ts
-> │  ├── 📄 process_pdf.ts
-> │  ├── 📄 validate_pdfs.ts
-> └── 📂 processing/
-> │  └── 📂 cleaning/
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 conversion/
-> │    └── 📂 csv/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      ├── 📄 enhance-mkv.PY
-> │      ├── 📄 mapping.json
-> │    └── 📂 folders/
-> │      ├── 📄 finish_flattening.ps1
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 flatten_and_organize.ps1
-> │    └── 📂 json/
-> │      ├── 📄 generate_kb_from_json.py
-> │    └── 📂 video/
-> │    └── 📂 zip/
-> │      ├── 📄 unzip_downloads.py
-> │  └── 📂 docs/
-> │    ├── 📄 _Convert_csv_to_md.md
-> │  └── 📂 normalization/
-> └── 📂 services/
-> │  └── 📂 calendar/
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │  └── 📂 crm/
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │  └── 📂 mail/
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │  └── 📂 sms/
-> │    ├── 📄 sms_send.py
-> │  └── 📂 web/
-> └── 📂 sync/
-> │  ├── 📄 check_status.py
-> │  ├── 📄 check_worker_status.py
-> │  ├── 📄 check_workers.py
-> │  ├── 📄 index_content.ts
-> │  ├── 📄 windows_task_scheduler.xml
-> └── 📂 tests/
-> │  └── 📂 integration/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  └── 📂 unit/
-> ├── 📄 text_extractor.py
-> └── 📂 tools/
-> │  └── 📂 debugging/
-> │  ├── 📄 enforce_fm.py
-> │  └── 📂 file_tools/
-> │  └── 📂 misc/
-> │  ├── 📄 tools_manifest.json
-> │  ├── 📄 transcribe_audio.py
-> │  ├── 📄 unblock_all.bat
-> ├── 📄 validate-eos-frontmatter.ts
-> └── 📂 vault/
-> │  ├── 📄 append_to_vault_note.py
-> │  ├── 📄 create_vault_note.py
-> └── 📂 venv/
-> │  ├── 📄 activate
-> │  ├── 📄 activate.bat
-> ├── 📄 web_get.py
-> └── 📄 web_search.py
+> i folowed your instruction but i see we are not finished. ```markdown
+
+> . 📂 scripts
+
+> └── 📂 02_guardian/
+
+> │  └── 📂 linter/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 check-md.py
+
+> │    ├── 📄 check_compliance.py
+
+> │    └── 📂 clean/
+
+> │    ├── 📄 compare-csv-md.py
+
+> │    ├── 📄 compare-drive.py
+
+> │    ├── 📄 comprehensive_cleanup.ps1
+
+> │    └── 📂 debug/
+
+> │      ├── 📄 debug-maps.py
+
+> │    └── 📂 duplicates/
+
+> │      ├── 📄 _move_duplicate_files.ps1
+
+> │    ├── 📄 enforce_fm.py
+
+> │    ├── 📄 examine_db.py
+
+> │    ├── 📄 find_duplicates.ps1
+
+> │    ├── 📄 find_duplicates.py
+
+> │    ├── 📄 fix-spaces.py
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 get_file_error_context.py
+
+> │    ├── 📄 housekeeping.ps1
+
+> │    ├── 📄 linter.py
+
+> │    ├── 📄 linterrunner.py
+
+> │    └── 📂 linters/
+
+> │      ├── 📄 add_frontmatter.py
+
+> │    ├── 📄 search-csv.py
+
+> │    ├── 📄 sort-files.py
+
+> │    ├── 📄 sync_errors_to_markdown.py
+
+> │    ├── 📄 validate_cloud.ps1
+
+> │    ├── 📄 validate_local.ps1
+
+> │  ├── 📄 unblock_all.bat
+
+> └── 📂 06_visualize/
+
+> │  └── 📂 3d_maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │  ├── 📄 git-autopush.ahk
+
+> └── 📂 ai/
+
+> │  └── 📂 agents/
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 memory.py
+
+> │    ├── 📄 models.py
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 gina_prompt.py
+
+> │    ├── 📄 run_agent_command.py
+
+> │  └── 📂 rag/
+
+> │    ├── 📄 rag.py
+
+> └── 📂 archive/
+
+> │  └── 📂 duplicates/
+
+> │  └── 📂 experiments/
+
+> │  └── 📂 old/
+
+> └── 📂 automation/
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 job_processor.py
+
+> │    ├── 📄 jobs.py
+
+> │  └── 📂 runners/
+
+> │  └── 📂 schedulers/
+
+> └── 📂 config/
+
+> │  └── 📂 json/
+
+> │    ├── 📄 QiRealms_seed.json
+
+> │    ├── 📄 QiTagClasses_schema.json
+
+> │    ├── 📄 QiTags_seed.json
+
+> │    ├── 📄 eos-frontmatter-mapping.json
+
+> │    ├── 📄 eos_frontmatter.schema.json
+
+> │    ├── 📄 frontmatter.schema.json
+
+> │    ├── 📄 systemInfoCMD.json
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 core/
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 check-auth.ps1
+
+> │    ├── 📄 check-secrets.ps1
+
+> │  ├── 📄 base.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 usage.md
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  └── 📂 secrets/
+
+> └── 📂 deployment/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 qios_agent.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 deploy-all.ps1
+
+> │    ├── 📄 deploy-critical.ps1
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> │    ├── 📄 start_worker.py
+
+> └── 📂 exporters/
+
+> │  ├── 📄 code_extractor.py
+
+> └── 📂 files/
+
+> │  ├── 📄 fs_scanner.py
+
+> │  ├── 📄 list_realm_files.py
+
+> │  ├── 📄 move_large_files.ps1
+
+> │  ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  ├── 📄 search_processed_documents.py
+
+> └── 📂 frontmatter/
+
+> │  ├── 📄 frontmatter_utils.py
+
+> └── 📂 inbox/
+
+> │  ├── 📄 audit_inbox.ts
+
+> │  ├── 📄 dedup_detect.ts
+
+> │  ├── 📄 fix_inbox_names.ts
+
+> │  ├── 📄 flatten_inbox.ps1
+
+> │  ├── 📄 merge_plan.ts
+
+> │  ├── 📄 normalize_inbox.ts
+
+> │  ├── 📄 run_inbox.ts
+
+> └── 📂 indexing/
+
+> │  └── 📂 builders/
+
+> │    ├── 📄 build-timeline.js
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 build_file_registry.py
+
+> │  └── 📂 directory/
+
+> │    ├── 📄 attach-mirrors.py
+
+> │    ├── 📄 cloudflare-create-md.py
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │    ├── 📄 create-canvas-directory.py
+
+> │    ├── 📄 create-canvas.py
+
+> │    ├── 📄 create_app.py
+
+> │    ├── 📄 create_stubs.py
+
+> │    ├── 📄 directory_mapper.py
+
+> │    ├── 📄 flatten_directory.py
+
+> │    ├── 📄 generate_indexes.py
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │    ├── 📄 newnode.bat
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 slugs_mapping.json.py
+
+> │    ├── 📄 slugs_mapping.py
+
+> │    ├── 📄 slugs_mapping.yaml.py
+
+> │    ├── 📄 summarize_trash_from_registry.py
+
+> │    ├── 📄 timeline-loader.js
+
+> │    ├── 📄 tree_compiler.py
+
+> │    ├── 📄 ultra_clean_folders.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> │  └── 📂 registry/
+
+> │  └── 📂 timelines/
+
+> │    ├── 📄 build-timeline-713.js
+
+> │    ├── 📄 build-timeline.js
+
+> └── 📂 ingestion/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 files/
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │  └── 📂 images/
+
+> │  └── 📂 imports/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  └── 📂 sheets/
+
+> │  └── 📂 video/
+
+> │    ├── 📄 merge_media_tree.py
+
+> │    ├── 📄 merge_mkvs.py
+
+> └── 📂 pdf/
+
+> │  ├── 📄 process_inbox_pdfs.ts
+
+> │  ├── 📄 process_pdf.ts
+
+> │  ├── 📄 validate_pdfs.ts
+
+> └── 📂 processing/
+
+> │  └── 📂 cleaning/
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 conversion/
+
+> │    └── 📂 csv/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      ├── 📄 enhance-mkv.PY
+
+> │      ├── 📄 mapping.json
+
+> │    └── 📂 folders/
+
+> │      ├── 📄 finish_flattening.ps1
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 flatten_and_organize.ps1
+
+> │    └── 📂 json/
+
+> │      ├── 📄 generate_kb_from_json.py
+
+> │    └── 📂 video/
+
+> │    └── 📂 zip/
+
+> │      ├── 📄 unzip_downloads.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 _Convert_csv_to_md.md
+
+> │  └── 📂 normalization/
+
+> └── 📂 services/
+
+> │  └── 📂 calendar/
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │  └── 📂 crm/
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │  └── 📂 mail/
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │  └── 📂 sms/
+
+> │    ├── 📄 sms_send.py
+
+> │  └── 📂 web/
+
+> └── 📂 sync/
+
+> │  ├── 📄 check_status.py
+
+> │  ├── 📄 check_worker_status.py
+
+> │  ├── 📄 check_workers.py
+
+> │  ├── 📄 index_content.ts
+
+> │  ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 tests/
+
+> │  └── 📂 integration/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  └── 📂 unit/
+
+> ├── 📄 text_extractor.py
+
+> └── 📂 tools/
+
+> │  └── 📂 debugging/
+
+> │  ├── 📄 enforce_fm.py
+
+> │  └── 📂 file_tools/
+
+> │  └── 📂 misc/
+
+> │  ├── 📄 tools_manifest.json
+
+> │  ├── 📄 transcribe_audio.py
+
+> │  ├── 📄 unblock_all.bat
+
+> ├── 📄 validate-eos-frontmatter.ts
+
+> └── 📂 vault/
+
+> │  ├── 📄 append_to_vault_note.py
+
+> │  ├── 📄 create_vault_note.py
+
+> └── 📂 venv/
+
+> │  ├── 📄 activate
+
+> │  ├── 📄 activate.bat
+
+> ├── 📄 web_get.py
+
+> └── 📄 web_search.py
+
 > ```
 
 ### Assistant
@@ -4698,274 +5466,542 @@ canonical_ref: ""
 > Paste the next tree after Wave 1 and Wave 2, and I’ll give you the final cut line.
 
 ### User
-> i started to drift, here is my current tree, please make a manifest and a script for me to run to finish cleaning up these scripts. ```markdown
-> . 📂 scripts
-> └── 📂 _archive/
-> │  └── 📂 duplicates/
-> │  └── 📂 experiments/
-> │  └── 📂 old/
-> └── 📂 ai/
-> │  └── 📂 agents/
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_agent.py
-> │  └── 📂 memory/
-> │    ├── 📄 memory.py
-> │  └── 📂 prompts/
-> │    ├── 📄 gina_prompt.py
-> │  └── 📂 rag/
-> │    ├── 📄 rag.py
-> └── 📂 automation/
-> │  └── 📂 jobs/
-> │    ├── 📄 jobs.py
-> │  └── 📂 logs/
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │  └── 📂 movers/
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │  └── 📂 runners/
-> │    ├── 📄 run_agent_command.py
-> │    ├── 📄 start_agent_service.py
-> │    ├── 📄 start_worker.py
-> │  └── 📂 schedulers/
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 windows_task_scheduler.xml
-> └── 📂 config/
-> │  └── 📂 json/
-> │    ├── 📄 QiRealms_seed.json
-> │    ├── 📄 QiTagClasses_schema.json
-> │    ├── 📄 QiTags_seed.json
-> │    ├── 📄 eos-frontmatter-mapping.json
-> │    ├── 📄 eos_frontmatter.schema.json
-> │    ├── 📄 frontmatter.schema.json
-> │    ├── 📄 systemInfoCMD.json
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 core/
-> │  └── 📂 auth/
-> │    ├── 📄 check-auth.ps1
-> │    ├── 📄 check-secrets.ps1
-> │  ├── 📄 base.py
-> │  └── 📂 docs/
-> │    ├── 📄 usage.md
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  └── 📂 secrets/
-> └── 📂 deployment/
-> │  └── 📂 scripts/
-> │    ├── 📄 deploy-all.ps1
-> │    ├── 📄 deploy-critical.ps1
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> └── 📂 inbox/
-> │  ├── 📄 process_inbox_pdfs.ts
-> └── 📂 indexing/
-> │  └── 📂 builders/
-> │    ├── 📄 build-timeline-713.js
-> │    ├── 📄 build-timeline-json.js
-> │    ├── 📄 build-timeline.js
-> │    ├── 📄 build.ps1
-> │    ├── 📄 immigration_structure_example.py
-> │  └── 📂 directory/
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │      ├── 📄 timeline-loader.js
-> │      ├── 📄 tree_compiler.py
-> │    └── 📂 create/
-> │      ├── 📄 cloudflare-create-md.py
-> │      ├── 📄 create-canvas-directory.py
-> │      ├── 📄 create-canvas.py
-> │      ├── 📄 create_app.py
-> │      ├── 📄 create_stubs.py
-> │      ├── 📄 newnode.bat
-> │      ├── 📄 summarize_trash_from_registry.py
-> │    └── 📂 flatten/
-> │      ├── 📄 flatten_directory.py
-> │      ├── 📄 ultra_clean_folders.py
-> │    └── 📂 indices/
-> │      ├── 📄 generate_indexes.py
-> │    └── 📂 maps/
-> │      ├── 📄 directory_mapper.py
-> │      ├── 📄 slugs_mapping.json.py
-> │      ├── 📄 slugs_mapping.py
-> │      ├── 📄 slugs_mapping.yaml.py
-> │  └── 📂 registry/
-> │    ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 build_file_registry.py
-> └── 📂 ingestion/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 files/
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 list_realm_files.py
-> │    ├── 📄 merge_media_tree.bat
-> │    ├── 📄 move_large_files.ps1
-> │    ├── 📄 move_md_by_body_content.py
-> │  └── 📂 frontmatter/
-> │    ├── 📄 frontmatter_utils.py
-> │  └── 📂 images/
-> │  └── 📂 imports/
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 sheets/
-> │  └── 📂 video/
-> │    ├── 📄 merge_media_tree.py
-> │    ├── 📄 merge_mkvs.py
-> └── 📂 processing/
-> │  └── 📂 cleaning/
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 conversion/
-> │    ├── 📄 code_extractor.py
-> │    └── 📂 csv/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      ├── 📄 enhance-mkv.PY
-> │      ├── 📄 mapping.json
-> │    └── 📂 folders/
-> │      ├── 📄 finish_flattening.ps1
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 flatten_and_organize.ps1
-> │    └── 📂 json/
-> │      ├── 📄 generate_kb_from_json.py
-> │    └── 📂 video/
-> │    └── 📂 zip/
-> │      ├── 📄 unzip_downloads.py
-> │  └── 📂 docs/
-> │    ├── 📄 _Convert_csv_to_md.md
-> │  └── 📂 normalization/
-> │  ├── 📄 normalize_inbox.ts
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  ├── 📄 process_inbox_pdfs.ts
-> │  ├── 📄 search_processed_documents.py
-> │  └── 📂 validation/
-> │    └── 📂 linter/
-> │      ├── 📄 audit_repo_rules.ts
-> │      ├── 📄 check-md.py
-> │      ├── 📄 check_compliance.py
-> │      └── 📂 clean/
-> │      ├── 📄 compare-csv-md.py
-> │      ├── 📄 compare-drive.py
-> │      ├── 📄 comprehensive_cleanup.ps1
-> │      └── 📂 debug/
-> │        ├── 📄 debug-maps.py
-> │      └── 📂 duplicates/
-> │        ├── 📄 _move_duplicate_files.ps1
-> │      ├── 📄 enforce_fm.py
-> │      ├── 📄 examine_db.py
-> │      ├── 📄 find_duplicates.ps1
-> │      ├── 📄 find_duplicates.py
-> │      ├── 📄 fix-spaces.py
-> │      ├── 📄 fix_repo_rules.ts
-> │      ├── 📄 fs_scanner.py
-> │      ├── 📄 get_file_error_context.py
-> │      ├── 📄 housekeeping.ps1
-> │      ├── 📄 linter.py
-> │      ├── 📄 linterrunner.py
-> │      └── 📂 linters/
-> │        ├── 📄 add_frontmatter.py
-> │      ├── 📄 search-csv.py
-> │      ├── 📄 sort-files.py
-> │      ├── 📄 sync_errors_to_markdown.py
-> │      ├── 📄 validate_cloud.ps1
-> │      ├── 📄 validate_local.ps1
-> └── 📂 services/
-> │  └── 📂 calendar/
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │  └── 📂 crm/
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │  └── 📂 git/
-> │    ├── 📄 git-autopush.ahk
-> │  └── 📂 mail/
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │  └── 📂 sms/
-> │    ├── 📄 sms_send.py
-> │  └── 📂 web/
-> └── 📂 sync/
-> │  ├── 📄 check_status.py
-> │  ├── 📄 check_worker_status.py
-> │  ├── 📄 check_workers.py
-> │  ├── 📄 index_content.ts
-> │  ├── 📄 windows_task_scheduler.xml
-> └── 📂 tests/
-> │  └── 📂 integration/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  └── 📂 unit/
-> ├── 📄 text_extractor.py
-> └── 📂 tools/
-> │  └── 📂 3d_maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │  └── 📂 debugging/
-> │  ├── 📄 enforce_fm.py
-> │  └── 📂 file_tools/
-> │  └── 📂 misc/
-> │  ├── 📄 tools_manifest.json
-> │  ├── 📄 transcribe_audio.py
-> │  ├── 📄 unblock_all.bat
-> ├── 📄 validate-eos-frontmatter.ts
-> └── 📂 vault/
-> │  ├── 📄 append_to_vault_note.py
-> │  ├── 📄 create_vault_note.py
-> └── 📂 venv/
-> │  ├── 📄 activate
-> │  ├── 📄 activate.bat
-> ├── 📄 web_get.py
-> └── 📄 web_search.py
+> i started to drift, here is my current tree, please make a manifest and a script for me to run to finish cleaning up these scripts. ```markdown
+
+> . 📂 scripts
+
+> └── 📂 _archive/
+
+> │  └── 📂 duplicates/
+
+> │  └── 📂 experiments/
+
+> │  └── 📂 old/
+
+> └── 📂 ai/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_agent.py
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 memory.py
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 gina_prompt.py
+
+> │  └── 📂 rag/
+
+> │    ├── 📄 rag.py
+
+> └── 📂 automation/
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 jobs.py
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │  └── 📂 movers/
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │  └── 📂 runners/
+
+> │    ├── 📄 run_agent_command.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │    ├── 📄 start_worker.py
+
+> │  └── 📂 schedulers/
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 config/
+
+> │  └── 📂 json/
+
+> │    ├── 📄 QiRealms_seed.json
+
+> │    ├── 📄 QiTagClasses_schema.json
+
+> │    ├── 📄 QiTags_seed.json
+
+> │    ├── 📄 eos-frontmatter-mapping.json
+
+> │    ├── 📄 eos_frontmatter.schema.json
+
+> │    ├── 📄 frontmatter.schema.json
+
+> │    ├── 📄 systemInfoCMD.json
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 core/
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 check-auth.ps1
+
+> │    ├── 📄 check-secrets.ps1
+
+> │  ├── 📄 base.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 usage.md
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  └── 📂 secrets/
+
+> └── 📂 deployment/
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 deploy-all.ps1
+
+> │    ├── 📄 deploy-critical.ps1
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> └── 📂 inbox/
+
+> │  ├── 📄 process_inbox_pdfs.ts
+
+> └── 📂 indexing/
+
+> │  └── 📂 builders/
+
+> │    ├── 📄 build-timeline-713.js
+
+> │    ├── 📄 build-timeline-json.js
+
+> │    ├── 📄 build-timeline.js
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │  └── 📂 directory/
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │      ├── 📄 timeline-loader.js
+
+> │      ├── 📄 tree_compiler.py
+
+> │    └── 📂 create/
+
+> │      ├── 📄 cloudflare-create-md.py
+
+> │      ├── 📄 create-canvas-directory.py
+
+> │      ├── 📄 create-canvas.py
+
+> │      ├── 📄 create_app.py
+
+> │      ├── 📄 create_stubs.py
+
+> │      ├── 📄 newnode.bat
+
+> │      ├── 📄 summarize_trash_from_registry.py
+
+> │    └── 📂 flatten/
+
+> │      ├── 📄 flatten_directory.py
+
+> │      ├── 📄 ultra_clean_folders.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 generate_indexes.py
+
+> │    └── 📂 maps/
+
+> │      ├── 📄 directory_mapper.py
+
+> │      ├── 📄 slugs_mapping.json.py
+
+> │      ├── 📄 slugs_mapping.py
+
+> │      ├── 📄 slugs_mapping.yaml.py
+
+> │  └── 📂 registry/
+
+> │    ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 build_file_registry.py
+
+> └── 📂 ingestion/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 files/
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 list_realm_files.py
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │    ├── 📄 move_large_files.ps1
+
+> │    ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 frontmatter/
+
+> │    ├── 📄 frontmatter_utils.py
+
+> │  └── 📂 images/
+
+> │  └── 📂 imports/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 sheets/
+
+> │  └── 📂 video/
+
+> │    ├── 📄 merge_media_tree.py
+
+> │    ├── 📄 merge_mkvs.py
+
+> └── 📂 processing/
+
+> │  └── 📂 cleaning/
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 conversion/
+
+> │    ├── 📄 code_extractor.py
+
+> │    └── 📂 csv/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      ├── 📄 enhance-mkv.PY
+
+> │      ├── 📄 mapping.json
+
+> │    └── 📂 folders/
+
+> │      ├── 📄 finish_flattening.ps1
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 flatten_and_organize.ps1
+
+> │    └── 📂 json/
+
+> │      ├── 📄 generate_kb_from_json.py
+
+> │    └── 📂 video/
+
+> │    └── 📂 zip/
+
+> │      ├── 📄 unzip_downloads.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 _Convert_csv_to_md.md
+
+> │  └── 📂 normalization/
+
+> │  ├── 📄 normalize_inbox.ts
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  ├── 📄 process_inbox_pdfs.ts
+
+> │  ├── 📄 search_processed_documents.py
+
+> │  └── 📂 validation/
+
+> │    └── 📂 linter/
+
+> │      ├── 📄 audit_repo_rules.ts
+
+> │      ├── 📄 check-md.py
+
+> │      ├── 📄 check_compliance.py
+
+> │      └── 📂 clean/
+
+> │      ├── 📄 compare-csv-md.py
+
+> │      ├── 📄 compare-drive.py
+
+> │      ├── 📄 comprehensive_cleanup.ps1
+
+> │      └── 📂 debug/
+
+> │        ├── 📄 debug-maps.py
+
+> │      └── 📂 duplicates/
+
+> │        ├── 📄 _move_duplicate_files.ps1
+
+> │      ├── 📄 enforce_fm.py
+
+> │      ├── 📄 examine_db.py
+
+> │      ├── 📄 find_duplicates.ps1
+
+> │      ├── 📄 find_duplicates.py
+
+> │      ├── 📄 fix-spaces.py
+
+> │      ├── 📄 fix_repo_rules.ts
+
+> │      ├── 📄 fs_scanner.py
+
+> │      ├── 📄 get_file_error_context.py
+
+> │      ├── 📄 housekeeping.ps1
+
+> │      ├── 📄 linter.py
+
+> │      ├── 📄 linterrunner.py
+
+> │      └── 📂 linters/
+
+> │        ├── 📄 add_frontmatter.py
+
+> │      ├── 📄 search-csv.py
+
+> │      ├── 📄 sort-files.py
+
+> │      ├── 📄 sync_errors_to_markdown.py
+
+> │      ├── 📄 validate_cloud.ps1
+
+> │      ├── 📄 validate_local.ps1
+
+> └── 📂 services/
+
+> │  └── 📂 calendar/
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │  └── 📂 crm/
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │  └── 📂 git/
+
+> │    ├── 📄 git-autopush.ahk
+
+> │  └── 📂 mail/
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │  └── 📂 sms/
+
+> │    ├── 📄 sms_send.py
+
+> │  └── 📂 web/
+
+> └── 📂 sync/
+
+> │  ├── 📄 check_status.py
+
+> │  ├── 📄 check_worker_status.py
+
+> │  ├── 📄 check_workers.py
+
+> │  ├── 📄 index_content.ts
+
+> │  ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 tests/
+
+> │  └── 📂 integration/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  └── 📂 unit/
+
+> ├── 📄 text_extractor.py
+
+> └── 📂 tools/
+
+> │  └── 📂 3d_maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │  └── 📂 debugging/
+
+> │  ├── 📄 enforce_fm.py
+
+> │  └── 📂 file_tools/
+
+> │  └── 📂 misc/
+
+> │  ├── 📄 tools_manifest.json
+
+> │  ├── 📄 transcribe_audio.py
+
+> │  ├── 📄 unblock_all.bat
+
+> ├── 📄 validate-eos-frontmatter.ts
+
+> └── 📂 vault/
+
+> │  ├── 📄 append_to_vault_note.py
+
+> │  ├── 📄 create_vault_note.py
+
+> └── 📂 venv/
+
+> │  ├── 📄 activate
+
+> │  ├── 📄 activate.bat
+
+> ├── 📄 web_get.py
+
+> └── 📄 web_search.py
+
 > ```
 
 ### Assistant
@@ -5329,276 +6365,546 @@ canonical_ref: ""
 > That’s the shortest path out of this mess.
 
 ### User
-> and now. ```markdown
-> . 📂 scripts
-> └── 📂 _archive/
-> │  └── 📂 experiments/
-> │  └── 📂 old/
-> │    └── 📂 duplicates/
-> │    └── 📂 legacy_inbox/
-> │    └── 📂 legacy_sync/
-> │    └── 📂 root_loose/
-> │    └── 📂 venv/
-> └── 📂 ai/
-> │  └── 📂 agents/
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_agent.py
-> │  └── 📂 memory/
-> │    ├── 📄 memory.py
-> │  └── 📂 prompts/
-> │    ├── 📄 gina_prompt.py
-> │  └── 📂 rag/
-> │    ├── 📄 rag.py
-> └── 📂 automation/
-> │  └── 📂 health/
-> │    ├── 📄 check_status.py
-> │    ├── 📄 check_worker_status.py
-> │    ├── 📄 check_workers.py
-> │  └── 📂 jobs/
-> │    ├── 📄 jobs.py
-> │  └── 📂 logs/
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │  └── 📂 movers/
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │  └── 📂 runners/
-> │    ├── 📄 run_agent_command.py
-> │    ├── 📄 start_agent_service.py
-> │    ├── 📄 start_worker.py
-> │  └── 📂 schedulers/
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 windows_task_scheduler.xml
-> └── 📂 config/
-> │  └── 📂 json/
-> │    ├── 📄 QiRealms_seed.json
-> │    ├── 📄 QiTagClasses_schema.json
-> │    ├── 📄 QiTags_seed.json
-> │    ├── 📄 eos-frontmatter-mapping.json
-> │    ├── 📄 eos_frontmatter.schema.json
-> │    ├── 📄 frontmatter.schema.json
-> │    ├── 📄 systemInfoCMD.json
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 core/
-> │  └── 📂 auth/
-> │    ├── 📄 check-auth.ps1
-> │    ├── 📄 check-secrets.ps1
-> │  ├── 📄 base.py
-> │  └── 📂 docs/
-> │    ├── 📄 usage.md
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  └── 📂 secrets/
-> └── 📂 deployment/
-> │  └── 📂 scripts/
-> │    ├── 📄 deploy-all.ps1
-> │    ├── 📄 deploy-critical.ps1
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> └── 📂 inbox/
-> └── 📂 indexing/
-> │  └── 📂 builders/
-> │    ├── 📄 build-timeline-713.js
-> │    ├── 📄 build-timeline-json.js
-> │    ├── 📄 build-timeline.js
-> │    ├── 📄 build.ps1
-> │    ├── 📄 immigration_structure_example.py
-> │  └── 📂 directory/
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │      ├── 📄 timeline-loader.js
-> │      ├── 📄 tree_compiler.py
-> │    └── 📂 create/
-> │      ├── 📄 cloudflare-create-md.py
-> │      ├── 📄 create-canvas-directory.py
-> │      ├── 📄 create-canvas.py
-> │      ├── 📄 create_app.py
-> │      ├── 📄 create_stubs.py
-> │      ├── 📄 newnode.bat
-> │      ├── 📄 summarize_trash_from_registry.py
-> │    └── 📂 flatten/
-> │      ├── 📄 flatten_directory.py
-> │      ├── 📄 ultra_clean_folders.py
-> │    └── 📂 indices/
-> │      ├── 📄 generate_indexes.py
-> │    └── 📂 maps/
-> │      ├── 📄 directory_mapper.py
-> │      ├── 📄 slugs_mapping.py
-> │  └── 📂 registry/
-> │    ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 build_file_registry.py
-> └── 📂 ingestion/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 files/
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 list_realm_files.py
-> │    ├── 📄 merge_media_tree.bat
-> │    ├── 📄 move_large_files.ps1
-> │    ├── 📄 move_md_by_body_content.py
-> │  └── 📂 frontmatter/
-> │    ├── 📄 frontmatter_utils.py
-> │  └── 📂 images/
-> │  └── 📂 imports/
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 sheets/
-> │  └── 📂 video/
-> │    ├── 📄 merge_media_tree.py
-> │    ├── 📄 merge_mkvs.py
-> └── 📂 processing/
-> │  └── 📂 cleaning/
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 conversion/
-> │    ├── 📄 code_extractor.py
-> │    └── 📂 csv/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      ├── 📄 enhance-mkv.PY
-> │      ├── 📄 mapping.json
-> │    └── 📂 folders/
-> │      ├── 📄 finish_flattening.ps1
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 flatten_and_organize.ps1
-> │    └── 📂 json/
-> │      ├── 📄 generate_kb_from_json.py
-> │    └── 📂 text/
-> │      ├── 📄 text_extractor.py
-> │    └── 📂 video/
-> │    └── 📂 zip/
-> │      ├── 📄 unzip_downloads.py
-> │  └── 📂 docs/
-> │    ├── 📄 _Convert_csv_to_md.md
-> │  └── 📂 normalization/
-> │  ├── 📄 normalize_inbox.ts
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  ├── 📄 search_processed_documents.py
-> │  └── 📂 validation/
-> │    └── 📂 linter/
-> │      ├── 📄 check-md.py
-> │      ├── 📄 check_compliance.py
-> │      └── 📂 clean/
-> │      ├── 📄 compare-csv-md.py
-> │      ├── 📄 compare-drive.py
-> │      ├── 📄 comprehensive_cleanup.ps1
-> │      └── 📂 debug/
-> │        ├── 📄 debug-maps.py
-> │      └── 📂 duplicates/
-> │        ├── 📄 _move_duplicate_files.ps1
-> │      ├── 📄 enforce_fm.py
-> │      ├── 📄 examine_db.py
-> │      ├── 📄 find_duplicates.ps1
-> │      ├── 📄 find_duplicates.py
-> │      ├── 📄 fix-spaces.py
-> │      ├── 📄 get_file_error_context.py
-> │      ├── 📄 housekeeping.ps1
-> │      ├── 📄 linter.py
-> │      ├── 📄 linterrunner.py
-> │      └── 📂 linters/
-> │        ├── 📄 add_frontmatter.py
-> │      ├── 📄 search-csv.py
-> │      ├── 📄 sort-files.py
-> │      ├── 📄 sync_errors_to_markdown.py
-> │      ├── 📄 validate_cloud.ps1
-> │      ├── 📄 validate_local.ps1
-> └── 📂 services/
-> │  └── 📂 calendar/
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │  └── 📂 crm/
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │  └── 📂 git/
-> │    ├── 📄 git-autopush.ahk
-> │  └── 📂 mail/
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │  └── 📂 sms/
-> │    ├── 📄 sms_send.py
-> │  └── 📂 web/
-> │    ├── 📄 web_get.py
-> │    ├── 📄 web_search.py
-> └── 📂 sync/
-> └── 📂 tests/
-> │  └── 📂 integration/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  └── 📂 unit/
-> └── 📂 tools/
-> │  └── 📂 3d_maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │  └── 📂 debugging/
-> │  ├── 📄 enforce_fm.py
-> │  └── 📂 file_tools/
-> │    └── 📂 duplicates/
-> │    └── 📂 scanning/
-> │    └── 📂 search/
-> │  └── 📂 misc/
-> │    ├── 📄 finish_scripts_cleanup.py
-> │    └── 📂 root/
-> │    ├── 📄 scripts_cleanup_manifest.json
-> │  └── 📂 quality/
-> │    └── 📂 frontmatter/
-> │      ├── 📄 validate-eos-frontmatter.ts
-> │    └── 📂 linter/
-> │  ├── 📄 tools_manifest.json
-> │  ├── 📄 unblock_all.bat
-> └── 📂 vault/
-> │  ├── 📄 append_to_vault_note.py
-> │  └── 📄 create_vault_note.py
+> and now. ```markdown
+
+> . 📂 scripts
+
+> └── 📂 _archive/
+
+> │  └── 📂 experiments/
+
+> │  └── 📂 old/
+
+> │    └── 📂 duplicates/
+
+> │    └── 📂 legacy_inbox/
+
+> │    └── 📂 legacy_sync/
+
+> │    └── 📂 root_loose/
+
+> │    └── 📂 venv/
+
+> └── 📂 ai/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_agent.py
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 memory.py
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 gina_prompt.py
+
+> │  └── 📂 rag/
+
+> │    ├── 📄 rag.py
+
+> └── 📂 automation/
+
+> │  └── 📂 health/
+
+> │    ├── 📄 check_status.py
+
+> │    ├── 📄 check_worker_status.py
+
+> │    ├── 📄 check_workers.py
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 jobs.py
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │  └── 📂 movers/
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │  └── 📂 runners/
+
+> │    ├── 📄 run_agent_command.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │    ├── 📄 start_worker.py
+
+> │  └── 📂 schedulers/
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 config/
+
+> │  └── 📂 json/
+
+> │    ├── 📄 QiRealms_seed.json
+
+> │    ├── 📄 QiTagClasses_schema.json
+
+> │    ├── 📄 QiTags_seed.json
+
+> │    ├── 📄 eos-frontmatter-mapping.json
+
+> │    ├── 📄 eos_frontmatter.schema.json
+
+> │    ├── 📄 frontmatter.schema.json
+
+> │    ├── 📄 systemInfoCMD.json
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 core/
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 check-auth.ps1
+
+> │    ├── 📄 check-secrets.ps1
+
+> │  ├── 📄 base.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 usage.md
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  └── 📂 secrets/
+
+> └── 📂 deployment/
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 deploy-all.ps1
+
+> │    ├── 📄 deploy-critical.ps1
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> └── 📂 inbox/
+
+> └── 📂 indexing/
+
+> │  └── 📂 builders/
+
+> │    ├── 📄 build-timeline-713.js
+
+> │    ├── 📄 build-timeline-json.js
+
+> │    ├── 📄 build-timeline.js
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │  └── 📂 directory/
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │      ├── 📄 timeline-loader.js
+
+> │      ├── 📄 tree_compiler.py
+
+> │    └── 📂 create/
+
+> │      ├── 📄 cloudflare-create-md.py
+
+> │      ├── 📄 create-canvas-directory.py
+
+> │      ├── 📄 create-canvas.py
+
+> │      ├── 📄 create_app.py
+
+> │      ├── 📄 create_stubs.py
+
+> │      ├── 📄 newnode.bat
+
+> │      ├── 📄 summarize_trash_from_registry.py
+
+> │    └── 📂 flatten/
+
+> │      ├── 📄 flatten_directory.py
+
+> │      ├── 📄 ultra_clean_folders.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 generate_indexes.py
+
+> │    └── 📂 maps/
+
+> │      ├── 📄 directory_mapper.py
+
+> │      ├── 📄 slugs_mapping.py
+
+> │  └── 📂 registry/
+
+> │    ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 build_file_registry.py
+
+> └── 📂 ingestion/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 files/
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 list_realm_files.py
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │    ├── 📄 move_large_files.ps1
+
+> │    ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 frontmatter/
+
+> │    ├── 📄 frontmatter_utils.py
+
+> │  └── 📂 images/
+
+> │  └── 📂 imports/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 sheets/
+
+> │  └── 📂 video/
+
+> │    ├── 📄 merge_media_tree.py
+
+> │    ├── 📄 merge_mkvs.py
+
+> └── 📂 processing/
+
+> │  └── 📂 cleaning/
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 conversion/
+
+> │    ├── 📄 code_extractor.py
+
+> │    └── 📂 csv/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      ├── 📄 enhance-mkv.PY
+
+> │      ├── 📄 mapping.json
+
+> │    └── 📂 folders/
+
+> │      ├── 📄 finish_flattening.ps1
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 flatten_and_organize.ps1
+
+> │    └── 📂 json/
+
+> │      ├── 📄 generate_kb_from_json.py
+
+> │    └── 📂 text/
+
+> │      ├── 📄 text_extractor.py
+
+> │    └── 📂 video/
+
+> │    └── 📂 zip/
+
+> │      ├── 📄 unzip_downloads.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 _Convert_csv_to_md.md
+
+> │  └── 📂 normalization/
+
+> │  ├── 📄 normalize_inbox.ts
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  ├── 📄 search_processed_documents.py
+
+> │  └── 📂 validation/
+
+> │    └── 📂 linter/
+
+> │      ├── 📄 check-md.py
+
+> │      ├── 📄 check_compliance.py
+
+> │      └── 📂 clean/
+
+> │      ├── 📄 compare-csv-md.py
+
+> │      ├── 📄 compare-drive.py
+
+> │      ├── 📄 comprehensive_cleanup.ps1
+
+> │      └── 📂 debug/
+
+> │        ├── 📄 debug-maps.py
+
+> │      └── 📂 duplicates/
+
+> │        ├── 📄 _move_duplicate_files.ps1
+
+> │      ├── 📄 enforce_fm.py
+
+> │      ├── 📄 examine_db.py
+
+> │      ├── 📄 find_duplicates.ps1
+
+> │      ├── 📄 find_duplicates.py
+
+> │      ├── 📄 fix-spaces.py
+
+> │      ├── 📄 get_file_error_context.py
+
+> │      ├── 📄 housekeeping.ps1
+
+> │      ├── 📄 linter.py
+
+> │      ├── 📄 linterrunner.py
+
+> │      └── 📂 linters/
+
+> │        ├── 📄 add_frontmatter.py
+
+> │      ├── 📄 search-csv.py
+
+> │      ├── 📄 sort-files.py
+
+> │      ├── 📄 sync_errors_to_markdown.py
+
+> │      ├── 📄 validate_cloud.ps1
+
+> │      ├── 📄 validate_local.ps1
+
+> └── 📂 services/
+
+> │  └── 📂 calendar/
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │  └── 📂 crm/
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │  └── 📂 git/
+
+> │    ├── 📄 git-autopush.ahk
+
+> │  └── 📂 mail/
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │  └── 📂 sms/
+
+> │    ├── 📄 sms_send.py
+
+> │  └── 📂 web/
+
+> │    ├── 📄 web_get.py
+
+> │    ├── 📄 web_search.py
+
+> └── 📂 sync/
+
+> └── 📂 tests/
+
+> │  └── 📂 integration/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  └── 📂 unit/
+
+> └── 📂 tools/
+
+> │  └── 📂 3d_maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │  └── 📂 debugging/
+
+> │  ├── 📄 enforce_fm.py
+
+> │  └── 📂 file_tools/
+
+> │    └── 📂 duplicates/
+
+> │    └── 📂 scanning/
+
+> │    └── 📂 search/
+
+> │  └── 📂 misc/
+
+> │    ├── 📄 finish_scripts_cleanup.py
+
+> │    └── 📂 root/
+
+> │    ├── 📄 scripts_cleanup_manifest.json
+
+> │  └── 📂 quality/
+
+> │    └── 📂 frontmatter/
+
+> │      ├── 📄 validate-eos-frontmatter.ts
+
+> │    └── 📂 linter/
+
+> │  ├── 📄 tools_manifest.json
+
+> │  ├── 📄 unblock_all.bat
+
+> └── 📂 vault/
+
+> │  ├── 📄 append_to_vault_note.py
+
+> │  └── 📄 create_vault_note.py
+
 > ```
 
 ### Assistant
@@ -5982,263 +7288,520 @@ canonical_ref: ""
 > Send me the post-pass-2 tree and I’ll give you the **final naming cleanup list** only, not another restructure.
 
 ### User
-> ```markdown
-> . 📂 scripts
-> └── 📂 _archive/
-> │  └── 📂 old/
-> │    └── 📂 duplicates_pass2/
-> │    └── 📂 empty_legacy/
-> └── 📂 ai/
-> │  └── 📂 agents/
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_agent.py
-> │  └── 📂 memory/
-> │    ├── 📄 memory.py
-> │  └── 📂 prompts/
-> │    ├── 📄 gina_prompt.py
-> │  └── 📂 rag/
-> │    ├── 📄 rag.py
-> └── 📂 automation/
-> │  └── 📂 health/
-> │    ├── 📄 check_status.py
-> │    ├── 📄 check_worker_status.py
-> │    ├── 📄 check_workers.py
-> │  └── 📂 jobs/
-> │    ├── 📄 jobs.py
-> │  └── 📂 logs/
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │  └── 📂 movers/
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │  └── 📂 runners/
-> │    ├── 📄 linterrunner.py
-> │    ├── 📄 run_agent_command.py
-> │    ├── 📄 start_agent_service.py
-> │    ├── 📄 start_worker.py
-> │  └── 📂 schedulers/
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 windows_task_scheduler.xml
-> └── 📂 config/
-> │  └── 📂 json/
-> │    ├── 📄 QiRealms_seed.json
-> │    ├── 📄 QiTagClasses_schema.json
-> │    ├── 📄 QiTags_seed.json
-> │    ├── 📄 eos-frontmatter-mapping.json
-> │    ├── 📄 eos_frontmatter.schema.json
-> │    ├── 📄 frontmatter.schema.json
-> │    ├── 📄 systemInfoCMD.json
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 core/
-> │  └── 📂 auth/
-> │    ├── 📄 check-auth.ps1
-> │    ├── 📄 check-secrets.ps1
-> │  ├── 📄 base.py
-> │  └── 📂 docs/
-> │    ├── 📄 usage.md
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  └── 📂 secrets/
-> └── 📂 deployment/
-> │  └── 📂 scripts/
-> │    ├── 📄 deploy-all.ps1
-> │    ├── 📄 deploy-critical.ps1
-> │    ├── 📄 git-autopush.ahk
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy-worker.ps1
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> └── 📂 indexing/
-> │  └── 📂 builders/
-> │    ├── 📄 build-timeline-713.js
-> │    ├── 📄 build-timeline-json.js
-> │    ├── 📄 build-timeline.js
-> │    ├── 📄 build.ps1
-> │    ├── 📄 immigration_structure_example.py
-> │  └── 📂 directory/
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │      ├── 📄 timeline-loader.js
-> │      ├── 📄 tree_compiler.py
-> │    └── 📂 create/
-> │      ├── 📄 cloudflare-create-md.py
-> │      ├── 📄 create-canvas-directory.py
-> │      ├── 📄 create-canvas.py
-> │      ├── 📄 create_app.py
-> │      ├── 📄 create_stubs.py
-> │      ├── 📄 newnode.bat
-> │      ├── 📄 summarize_trash_from_registry.py
-> │    └── 📂 flatten/
-> │      ├── 📄 flatten_directory.py
-> │      ├── 📄 ultra_clean_folders.py
-> │    └── 📂 indices/
-> │      ├── 📄 generate_indexes.py
-> │    └── 📂 maps/
-> │      ├── 📄 directory_mapper.py
-> │      ├── 📄 slugs_mapping.py
-> │  └── 📂 registry/
-> │    ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 build_file_registry.py
-> └── 📂 ingestion/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 files/
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 list_realm_files.py
-> │    ├── 📄 merge_media_tree.bat
-> │    ├── 📄 move_large_files.ps1
-> │    ├── 📄 move_md_by_body_content.py
-> │  └── 📂 images/
-> │  └── 📂 imports/
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 sheets/
-> │  └── 📂 video/
-> │    ├── 📄 merge_media_tree.py
-> │    ├── 📄 merge_mkvs.py
-> └── 📂 processing/
-> │  └── 📂 cleaning/
-> │    ├── 📄 _move_duplicate_files.ps1
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 comprehensive_cleanup.ps1
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 find_duplicates.ps1
-> │    ├── 📄 find_duplicates.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 conversion/
-> │    ├── 📄 code_extractor.py
-> │    └── 📂 csv/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      ├── 📄 mapping.json
-> │    └── 📂 folders/
-> │      ├── 📄 finish_flattening.ps1
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 flatten_and_organize.ps1
-> │    └── 📂 json/
-> │      ├── 📄 generate_kb_from_json.py
-> │    ├── 📄 sync_errors_to_markdown.py
-> │    └── 📂 text/
-> │      ├── 📄 text_extractor.py
-> │    └── 📂 video/
-> │      ├── 📄 enhance_mkv.py
-> │    └── 📂 zip/
-> │      ├── 📄 unzip_downloads.py
-> │  └── 📂 docs/
-> │    ├── 📄 _Convert_csv_to_md.md
-> │  └── 📂 normalization/
-> │    ├── 📄 fix-spaces.py
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 sort-files.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  └── 📂 validation/
-> │    ├── 📄 check-md.py
-> │    ├── 📄 check_compliance.py
-> │    ├── 📄 compare-csv-md.py
-> │    ├── 📄 compare-drive.py
-> │    ├── 📄 examine_db.py
-> │    ├── 📄 get_file_error_context.py
-> │    ├── 📄 housekeeping.ps1
-> │    ├── 📄 linter.py
-> │    ├── 📄 search-csv.py
-> │    ├── 📄 search_processed_documents.py
-> │    ├── 📄 validate_cloud.ps1
-> │    ├── 📄 validate_local.ps1
-> └── 📂 services/
-> │  └── 📂 calendar/
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │  └── 📂 crm/
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │  └── 📂 mail/
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │  └── 📂 sms/
-> │    ├── 📄 sms_send.py
-> │  └── 📂 web/
-> │    ├── 📄 web_get.py
-> │    ├── 📄 web_search.py
-> └── 📂 tests/
-> │  ├── 📄 debug-maps.py
-> │  └── 📂 integration/
-> │    ├── 📄 test_abbreviations.py
-> │    ├── 📄 test_gina_chat_simple.ps1
-> │    ├── 📄 test_pipeline.ps1
-> │  └── 📂 unit/
-> └── 📂 tools/
-> │  └── 📂 3d_maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> │  └── 📂 debugging/
-> │  └── 📂 file_tools/
-> │    └── 📂 duplicates/
-> │    └── 📂 scanning/
-> │    └── 📂 search/
-> │  └── 📂 misc/
-> │    ├── 📄 finish_scripts_cleanup.py
-> │    ├── 📄 finish_scripts_cleanup_pass2.py
-> │    ├── 📄 scripts_cleanup_manifest.json
-> │    ├── 📄 scripts_cleanup_manifest_pass2.json
-> │    ├── 📄 tools_manifest.json
-> │    ├── 📄 unblock_all.bat
-> │  └── 📂 quality/
-> │    ├── 📄 add_frontmatter.py
-> │    ├── 📄 enforce_fm.py
-> │    └── 📂 frontmatter/
-> │      ├── 📄 frontmatter_utils.py
-> │      ├── 📄 validate-eos-frontmatter.ts
-> │    └── 📂 linter/
-> └── 📂 vault/
-> │  ├── 📄 append_to_vault_note.py
-> │  └── 📄 create_vault_note.py
+> ```markdown
+
+> . 📂 scripts
+
+> └── 📂 _archive/
+
+> │  └── 📂 old/
+
+> │    └── 📂 duplicates_pass2/
+
+> │    └── 📂 empty_legacy/
+
+> └── 📂 ai/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_agent.py
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 memory.py
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 gina_prompt.py
+
+> │  └── 📂 rag/
+
+> │    ├── 📄 rag.py
+
+> └── 📂 automation/
+
+> │  └── 📂 health/
+
+> │    ├── 📄 check_status.py
+
+> │    ├── 📄 check_worker_status.py
+
+> │    ├── 📄 check_workers.py
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 jobs.py
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │  └── 📂 movers/
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │  └── 📂 runners/
+
+> │    ├── 📄 linterrunner.py
+
+> │    ├── 📄 run_agent_command.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │    ├── 📄 start_worker.py
+
+> │  └── 📂 schedulers/
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 config/
+
+> │  └── 📂 json/
+
+> │    ├── 📄 QiRealms_seed.json
+
+> │    ├── 📄 QiTagClasses_schema.json
+
+> │    ├── 📄 QiTags_seed.json
+
+> │    ├── 📄 eos-frontmatter-mapping.json
+
+> │    ├── 📄 eos_frontmatter.schema.json
+
+> │    ├── 📄 frontmatter.schema.json
+
+> │    ├── 📄 systemInfoCMD.json
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 core/
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 check-auth.ps1
+
+> │    ├── 📄 check-secrets.ps1
+
+> │  ├── 📄 base.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 usage.md
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  └── 📂 secrets/
+
+> └── 📂 deployment/
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 deploy-all.ps1
+
+> │    ├── 📄 deploy-critical.ps1
+
+> │    ├── 📄 git-autopush.ahk
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy-worker.ps1
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> └── 📂 indexing/
+
+> │  └── 📂 builders/
+
+> │    ├── 📄 build-timeline-713.js
+
+> │    ├── 📄 build-timeline-json.js
+
+> │    ├── 📄 build-timeline.js
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │  └── 📂 directory/
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │      ├── 📄 timeline-loader.js
+
+> │      ├── 📄 tree_compiler.py
+
+> │    └── 📂 create/
+
+> │      ├── 📄 cloudflare-create-md.py
+
+> │      ├── 📄 create-canvas-directory.py
+
+> │      ├── 📄 create-canvas.py
+
+> │      ├── 📄 create_app.py
+
+> │      ├── 📄 create_stubs.py
+
+> │      ├── 📄 newnode.bat
+
+> │      ├── 📄 summarize_trash_from_registry.py
+
+> │    └── 📂 flatten/
+
+> │      ├── 📄 flatten_directory.py
+
+> │      ├── 📄 ultra_clean_folders.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 generate_indexes.py
+
+> │    └── 📂 maps/
+
+> │      ├── 📄 directory_mapper.py
+
+> │      ├── 📄 slugs_mapping.py
+
+> │  └── 📂 registry/
+
+> │    ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 build_file_registry.py
+
+> └── 📂 ingestion/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 files/
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 list_realm_files.py
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │    ├── 📄 move_large_files.ps1
+
+> │    ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 images/
+
+> │  └── 📂 imports/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 sheets/
+
+> │  └── 📂 video/
+
+> │    ├── 📄 merge_media_tree.py
+
+> │    ├── 📄 merge_mkvs.py
+
+> └── 📂 processing/
+
+> │  └── 📂 cleaning/
+
+> │    ├── 📄 _move_duplicate_files.ps1
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 comprehensive_cleanup.ps1
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 find_duplicates.ps1
+
+> │    ├── 📄 find_duplicates.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 conversion/
+
+> │    ├── 📄 code_extractor.py
+
+> │    └── 📂 csv/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      ├── 📄 mapping.json
+
+> │    └── 📂 folders/
+
+> │      ├── 📄 finish_flattening.ps1
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 flatten_and_organize.ps1
+
+> │    └── 📂 json/
+
+> │      ├── 📄 generate_kb_from_json.py
+
+> │    ├── 📄 sync_errors_to_markdown.py
+
+> │    └── 📂 text/
+
+> │      ├── 📄 text_extractor.py
+
+> │    └── 📂 video/
+
+> │      ├── 📄 enhance_mkv.py
+
+> │    └── 📂 zip/
+
+> │      ├── 📄 unzip_downloads.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 _Convert_csv_to_md.md
+
+> │  └── 📂 normalization/
+
+> │    ├── 📄 fix-spaces.py
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 sort-files.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  └── 📂 validation/
+
+> │    ├── 📄 check-md.py
+
+> │    ├── 📄 check_compliance.py
+
+> │    ├── 📄 compare-csv-md.py
+
+> │    ├── 📄 compare-drive.py
+
+> │    ├── 📄 examine_db.py
+
+> │    ├── 📄 get_file_error_context.py
+
+> │    ├── 📄 housekeeping.ps1
+
+> │    ├── 📄 linter.py
+
+> │    ├── 📄 search-csv.py
+
+> │    ├── 📄 search_processed_documents.py
+
+> │    ├── 📄 validate_cloud.ps1
+
+> │    ├── 📄 validate_local.ps1
+
+> └── 📂 services/
+
+> │  └── 📂 calendar/
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │  └── 📂 crm/
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │  └── 📂 mail/
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │  └── 📂 sms/
+
+> │    ├── 📄 sms_send.py
+
+> │  └── 📂 web/
+
+> │    ├── 📄 web_get.py
+
+> │    ├── 📄 web_search.py
+
+> └── 📂 tests/
+
+> │  ├── 📄 debug-maps.py
+
+> │  └── 📂 integration/
+
+> │    ├── 📄 test_abbreviations.py
+
+> │    ├── 📄 test_gina_chat_simple.ps1
+
+> │    ├── 📄 test_pipeline.ps1
+
+> │  └── 📂 unit/
+
+> └── 📂 tools/
+
+> │  └── 📂 3d_maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> │  └── 📂 debugging/
+
+> │  └── 📂 file_tools/
+
+> │    └── 📂 duplicates/
+
+> │    └── 📂 scanning/
+
+> │    └── 📂 search/
+
+> │  └── 📂 misc/
+
+> │    ├── 📄 finish_scripts_cleanup.py
+
+> │    ├── 📄 finish_scripts_cleanup_pass2.py
+
+> │    ├── 📄 scripts_cleanup_manifest.json
+
+> │    ├── 📄 scripts_cleanup_manifest_pass2.json
+
+> │    ├── 📄 tools_manifest.json
+
+> │    ├── 📄 unblock_all.bat
+
+> │  └── 📂 quality/
+
+> │    ├── 📄 add_frontmatter.py
+
+> │    ├── 📄 enforce_fm.py
+
+> │    └── 📂 frontmatter/
+
+> │      ├── 📄 frontmatter_utils.py
+
+> │      ├── 📄 validate-eos-frontmatter.ts
+
+> │    └── 📂 linter/
+
+> └── 📂 vault/
+
+> │  ├── 📄 append_to_vault_note.py
+
+> │  └── 📄 create_vault_note.py
+
 > ```
 
 ### Assistant
@@ -6570,246 +8133,486 @@ canonical_ref: ""
 > The repo is good enough now.
 
 ### User
-> lets make sure naming is consisten i like how you did the other where the prefix was teh group then teh underscore and function. clean up the whole list please that way. but i like to keep names short so i shortened the folders. ```markdown
-> . 📂 scripts
-> └── 📂 ai/
-> │  └── 📂 agents/
-> │    ├── 📄 models.py
-> │    ├── 📄 qios_agent.py
-> │  └── 📂 memory/
-> │    ├── 📄 memory.py
-> │  └── 📂 prompts/
-> │    ├── 📄 gina_prompt.py
-> │  └── 📂 rag/
-> │    ├── 📄 rag.py
-> └── 📂 automate/
-> │  └── 📂 health/
-> │    ├── 📄 check_status.py
-> │    ├── 📄 check_worker_status.py
-> │    ├── 📄 check_workers.py
-> │  └── 📂 jobs/
-> │    ├── 📄 jobs.py
-> │  └── 📂 logs/
-> │    ├── 📄 log_build_error.ps1
-> │    ├── 📄 log_error_to_supabase.py
-> │  └── 📂 movers/
-> │    ├── 📄 move_chatgpt_audio_from_registry.py
-> │  └── 📂 runners/
-> │    ├── 📄 run_agent_command.py
-> │    ├── 📄 start_agent_service.py
-> │    ├── 📄 start_worker.py
-> │  └── 📂 schedulers/
-> │    ├── 📄 install_scheduler.ps1
-> │    ├── 📄 queue_loader.py
-> │    ├── 📄 windows_task_scheduler.xml
-> └── 📂 config/
-> │  └── 📂 json/
-> │    ├── 📄 QiRealms_seed.json
-> │    ├── 📄 QiTagClasses_schema.json
-> │    ├── 📄 QiTags_seed.json
-> │    ├── 📄 eos-frontmatter-mapping.json
-> │    ├── 📄 eos_frontmatter.schema.json
-> │    ├── 📄 frontmatter.schema.json
-> │    ├── 📄 systemInfoCMD.json
-> │  └── 📂 rules/
-> │    ├── 📄 audit_repo_rules.ts
-> │    ├── 📄 fix_repo_rules.ts
-> │  └── 📂 yaml/
-> │    ├── 📄 csv_to_md_mappings.yaml
-> │    ├── 📄 fs_scan_config.yaml
-> │    ├── 📄 housekeeping.yaml
-> │    ├── 📄 qi_codex.config.yaml
-> │    ├── 📄 qi_prefix_map.yaml
-> │    ├── 📄 qicompiler_config.yaml
-> │    ├── 📄 qione_rag_routes.yaml
-> │    ├── 📄 slugs_mapping.yaml
-> │    ├── 📄 tree_compiler_config.yaml
-> └── 📂 core/
-> │  └── 📂 auth/
-> │    ├── 📄 check_auth.ps1
-> │    ├── 📄 check_secrets.ps1
-> │  ├── 📄 base.py
-> │  └── 📂 docs/
-> │    ├── 📄 usage.md
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  ├── 📄 qi_codex_tool.py
-> │  ├── 📄 qios_local_core.py
-> │  └── 📂 secrets/
-> └── 📂 deploy/
-> │  └── 📂 scripts/
-> │    ├── 📄 deploy_all.ps1
-> │    ├── 📄 deploy_critical.ps1
-> │    ├── 📄 git-autopush.ahk
-> │  └── 📂 sync/
-> │    ├── 📄 README.md
-> │    ├── 📄 copy-assets.mjs
-> │    ├── 📄 disable-lfs-hooks.ps1
-> │    ├── 📄 enable-lfs-hooks.ps1
-> │    ├── 📄 git_manifest.json
-> │    ├── 📄 git_pusher.py
-> │    ├── 📄 index_content.ts
-> │    ├── 📄 sync_dev_gdrive.py
-> │    ├── 📄 sync_gdrive.ps1
-> │  └── 📂 workers/
-> │    ├── 📄 deploy_all_workers.ps1
-> │    ├── 📄 deploy_worker.ps1
-> │    ├── 📄 get_worker_urls.ps1
-> └── 📂 index/
-> │  └── 📂 builders/
-> │    ├── 📄 build.ps1
-> │    ├── 📄 build_timeline.js
-> │    ├── 📄 build_timeline_713.js
-> │    ├── 📄 build_timeline_json.js
-> │    ├── 📄 immigration_structure_example.py
-> │  └── 📂 directory/
-> │    └── 📂 compile/
-> │      ├── 📄 code-compile-review.py
-> │      ├── 📄 timeline-loader.js
-> │      ├── 📄 tree_compiler.py
-> │    └── 📂 create/
-> │      ├── 📄 cloudflare-create-md.py
-> │      ├── 📄 create-canvas-directory.py
-> │      ├── 📄 create-canvas.py
-> │      ├── 📄 create_app.py
-> │      ├── 📄 create_stubs.py
-> │      ├── 📄 newnode.bat
-> │      ├── 📄 summarize_trash_from_registry.py
-> │    └── 📂 flatten/
-> │      ├── 📄 flatten_directory.py
-> │      ├── 📄 ultra_clean_folders.py
-> │    └── 📂 indices/
-> │      ├── 📄 generate_indexes.py
-> │    └── 📂 maps/
-> │      ├── 📄 directory_mapper.py
-> │      ├── 📄 slugs_mapping.py
-> │  └── 📂 registry/
-> │    ├── 📄 _generate_file_registry.ps1
-> │    ├── 📄 build_file_registry.py
-> └── 📂 ingest/
-> │  └── 📂 audio/
-> │    ├── 📄 transcribe_audio.py
-> │  └── 📂 files/
-> │    ├── 📄 fs_scanner.py
-> │    ├── 📄 list_realm_files.py
-> │    ├── 📄 merge_media_tree.bat
-> │    ├── 📄 move_large_files.ps1
-> │    ├── 📄 move_md_by_body_content.py
-> │  └── 📂 images/
-> │  └── 📂 imports/
-> │  └── 📂 inbox/
-> │    ├── 📄 audit_inbox.ts
-> │    ├── 📄 downloads_renamer.py
-> │    ├── 📄 fix_inbox_names.ts
-> │    ├── 📄 flatten_inbox.ps1
-> │    ├── 📄 merge_plan.ts
-> │    ├── 📄 run_inbox.ts
-> │  └── 📂 sheets/
-> │  └── 📂 video/
-> │    ├── 📄 merge_media_tree.py
-> │    ├── 📄 merge_mkvs.py
-> └── 📂 process/
-> │  └── 📂 clean/
-> │    ├── 📄 _move_duplicate_files.ps1
-> │    ├── 📄 clean_qi_prefixes.py
-> │    ├── 📄 cleanup_analysis.ps1
-> │    ├── 📄 cleanup_app_roots.py
-> │    ├── 📄 cleanup_intake_and_trash.py
-> │    ├── 📄 cleanup_violations.py
-> │    ├── 📄 comprehensive_cleanup.ps1
-> │    ├── 📄 continue_cleanup.ps1
-> │    ├── 📄 dedup_detect.ts
-> │    ├── 📄 detect_stubs.py
-> │    ├── 📄 find_duplicates.ps1
-> │    ├── 📄 find_duplicates.py
-> │    ├── 📄 housekeeper_runner.py
-> │    ├── 📄 organize_inbox_complete.py
-> │    ├── 📄 storage_bloat_destroyer.py
-> │  └── 📂 convert/
-> │    ├── 📄 code_extractor.py
-> │    └── 📂 csv/
-> │      ├── 📄 README.md
-> │      ├── 📄 USAGE.md
-> │      ├── 📄 check-csv-md.py
-> │      ├── 📄 convert_to_csv.js
-> │      ├── 📄 convert_to_csv.ps1
-> │      ├── 📄 csv_to_md.py
-> │      ├── 📄 mapping.json
-> │    └── 📂 folders/
-> │      ├── 📄 finish_flattening.ps1
-> │      ├── 📄 flat-folders.py
-> │      ├── 📄 flatten_and_organize.ps1
-> │    └── 📂 json/
-> │      ├── 📄 generate_kb_from_json.py
-> │    ├── 📄 sync_errors_to_markdown.py
-> │    └── 📂 text/
-> │      ├── 📄 text_extractor.py
-> │    └── 📂 video/
-> │      ├── 📄 enhance_mkv.py
-> │    └── 📂 zip/
-> │      ├── 📄 unzip_downloads.py
-> │  └── 📂 docs/
-> │    ├── 📄 _Convert_csv_to_md.md
-> │  └── 📂 normalize/
-> │    ├── 📄 fix-spaces.py
-> │    ├── 📄 normalize_inbox.ts
-> │    ├── 📄 sort-files.py
-> │  └── 📂 pdf/
-> │    ├── 📄 process_inbox_pdfs.ts
-> │    ├── 📄 process_pdf.ts
-> │    ├── 📄 validate_pdfs.ts
-> │  └── 📂 validate/
-> │    ├── 📄 check-md.py
-> │    ├── 📄 check_compliance.py
-> │    ├── 📄 compare-csv-md.py
-> │    ├── 📄 compare-drive.py
-> │    ├── 📄 examine_db.py
-> │    ├── 📄 get_file_error_context.py
-> │    ├── 📄 housekeeping.ps1
-> │    ├── 📄 linter.py
-> │    ├── 📄 linter_runner.py
-> │    ├── 📄 search-csv.py
-> │    ├── 📄 validate_cloud.ps1
-> │    ├── 📄 validate_local.ps1
-> └── 📂 services/
-> │  └── 📂 calendar/
-> │    ├── 📄 calendar_create_event.py
-> │    ├── 📄 calendar_get_upcoming.py
-> │  └── 📂 crm/
-> │    ├── 📄 crm_create_contact.py
-> │    ├── 📄 crm_create_task.py
-> │    ├── 📄 crm_list_recent_contacts.py
-> │    ├── 📄 crm_search_person.py
-> │  └── 📂 mail/
-> │    ├── 📄 mail_get_recent.py
-> │    ├── 📄 mail_send.py
-> │  └── 📂 sms/
-> │    ├── 📄 sms_send.py
-> │  └── 📂 vault/
-> │    ├── 📄 append_to_vault_note.py
-> │    ├── 📄 create_vault_note.py
-> │  └── 📂 web/
-> │    ├── 📄 web_get.py
-> │    ├── 📄 web_search.py
-> └── 📂 tests/
-> │  ├── 📄 test_abbreviations.py
-> │  ├── 📄 test_gina_chat_simple.ps1
-> │  ├── 📄 test_pipeline.ps1
-> └── 📂 tools/
-> │  └── 📂 debug/
-> │    ├── 📄 debug_maps.py
-> │  └── 📂 file-tool/
-> │    └── 📂 quality/
-> │      ├── 📄 frontmatter_add.py
-> │      ├── 📄 frontmatter_enforce.py
-> │      ├── 📄 frontmatter_utils.py
-> │      ├── 📄 frontmatter_validate.ts
-> │    └── 📂 search/
-> │      ├── 📄 search_processed_documents.py
-> │  └── 📂 maps/
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    └── 📄 run_3d_simple.bat
+> lets make sure naming is consisten i like how you did the other where the prefix was teh group then teh underscore and function. clean up the whole list please that way. but i like to keep names short so i shortened the folders. ```markdown
+
+> . 📂 scripts
+
+> └── 📂 ai/
+
+> │  └── 📂 agents/
+
+> │    ├── 📄 models.py
+
+> │    ├── 📄 qios_agent.py
+
+> │  └── 📂 memory/
+
+> │    ├── 📄 memory.py
+
+> │  └── 📂 prompts/
+
+> │    ├── 📄 gina_prompt.py
+
+> │  └── 📂 rag/
+
+> │    ├── 📄 rag.py
+
+> └── 📂 automate/
+
+> │  └── 📂 health/
+
+> │    ├── 📄 check_status.py
+
+> │    ├── 📄 check_worker_status.py
+
+> │    ├── 📄 check_workers.py
+
+> │  └── 📂 jobs/
+
+> │    ├── 📄 jobs.py
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 log_build_error.ps1
+
+> │    ├── 📄 log_error_to_supabase.py
+
+> │  └── 📂 movers/
+
+> │    ├── 📄 move_chatgpt_audio_from_registry.py
+
+> │  └── 📂 runners/
+
+> │    ├── 📄 run_agent_command.py
+
+> │    ├── 📄 start_agent_service.py
+
+> │    ├── 📄 start_worker.py
+
+> │  └── 📂 schedulers/
+
+> │    ├── 📄 install_scheduler.ps1
+
+> │    ├── 📄 queue_loader.py
+
+> │    ├── 📄 windows_task_scheduler.xml
+
+> └── 📂 config/
+
+> │  └── 📂 json/
+
+> │    ├── 📄 QiRealms_seed.json
+
+> │    ├── 📄 QiTagClasses_schema.json
+
+> │    ├── 📄 QiTags_seed.json
+
+> │    ├── 📄 eos-frontmatter-mapping.json
+
+> │    ├── 📄 eos_frontmatter.schema.json
+
+> │    ├── 📄 frontmatter.schema.json
+
+> │    ├── 📄 systemInfoCMD.json
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 audit_repo_rules.ts
+
+> │    ├── 📄 fix_repo_rules.ts
+
+> │  └── 📂 yaml/
+
+> │    ├── 📄 csv_to_md_mappings.yaml
+
+> │    ├── 📄 fs_scan_config.yaml
+
+> │    ├── 📄 housekeeping.yaml
+
+> │    ├── 📄 qi_codex.config.yaml
+
+> │    ├── 📄 qi_prefix_map.yaml
+
+> │    ├── 📄 qicompiler_config.yaml
+
+> │    ├── 📄 qione_rag_routes.yaml
+
+> │    ├── 📄 slugs_mapping.yaml
+
+> │    ├── 📄 tree_compiler_config.yaml
+
+> └── 📂 core/
+
+> │  └── 📂 auth/
+
+> │    ├── 📄 check_auth.ps1
+
+> │    ├── 📄 check_secrets.ps1
+
+> │  ├── 📄 base.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 usage.md
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  ├── 📄 qi_codex_tool.py
+
+> │  ├── 📄 qios_local_core.py
+
+> │  └── 📂 secrets/
+
+> └── 📂 deploy/
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 deploy_all.ps1
+
+> │    ├── 📄 deploy_critical.ps1
+
+> │    ├── 📄 git-autopush.ahk
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 copy-assets.mjs
+
+> │    ├── 📄 disable-lfs-hooks.ps1
+
+> │    ├── 📄 enable-lfs-hooks.ps1
+
+> │    ├── 📄 git_manifest.json
+
+> │    ├── 📄 git_pusher.py
+
+> │    ├── 📄 index_content.ts
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> │    ├── 📄 sync_gdrive.ps1
+
+> │  └── 📂 workers/
+
+> │    ├── 📄 deploy_all_workers.ps1
+
+> │    ├── 📄 deploy_worker.ps1
+
+> │    ├── 📄 get_worker_urls.ps1
+
+> └── 📂 index/
+
+> │  └── 📂 builders/
+
+> │    ├── 📄 build.ps1
+
+> │    ├── 📄 build_timeline.js
+
+> │    ├── 📄 build_timeline_713.js
+
+> │    ├── 📄 build_timeline_json.js
+
+> │    ├── 📄 immigration_structure_example.py
+
+> │  └── 📂 directory/
+
+> │    └── 📂 compile/
+
+> │      ├── 📄 code-compile-review.py
+
+> │      ├── 📄 timeline-loader.js
+
+> │      ├── 📄 tree_compiler.py
+
+> │    └── 📂 create/
+
+> │      ├── 📄 cloudflare-create-md.py
+
+> │      ├── 📄 create-canvas-directory.py
+
+> │      ├── 📄 create-canvas.py
+
+> │      ├── 📄 create_app.py
+
+> │      ├── 📄 create_stubs.py
+
+> │      ├── 📄 newnode.bat
+
+> │      ├── 📄 summarize_trash_from_registry.py
+
+> │    └── 📂 flatten/
+
+> │      ├── 📄 flatten_directory.py
+
+> │      ├── 📄 ultra_clean_folders.py
+
+> │    └── 📂 indices/
+
+> │      ├── 📄 generate_indexes.py
+
+> │    └── 📂 maps/
+
+> │      ├── 📄 directory_mapper.py
+
+> │      ├── 📄 slugs_mapping.py
+
+> │  └── 📂 registry/
+
+> │    ├── 📄 _generate_file_registry.ps1
+
+> │    ├── 📄 build_file_registry.py
+
+> └── 📂 ingest/
+
+> │  └── 📂 audio/
+
+> │    ├── 📄 transcribe_audio.py
+
+> │  └── 📂 files/
+
+> │    ├── 📄 fs_scanner.py
+
+> │    ├── 📄 list_realm_files.py
+
+> │    ├── 📄 merge_media_tree.bat
+
+> │    ├── 📄 move_large_files.ps1
+
+> │    ├── 📄 move_md_by_body_content.py
+
+> │  └── 📂 images/
+
+> │  └── 📂 imports/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 audit_inbox.ts
+
+> │    ├── 📄 downloads_renamer.py
+
+> │    ├── 📄 fix_inbox_names.ts
+
+> │    ├── 📄 flatten_inbox.ps1
+
+> │    ├── 📄 merge_plan.ts
+
+> │    ├── 📄 run_inbox.ts
+
+> │  └── 📂 sheets/
+
+> │  └── 📂 video/
+
+> │    ├── 📄 merge_media_tree.py
+
+> │    ├── 📄 merge_mkvs.py
+
+> └── 📂 process/
+
+> │  └── 📂 clean/
+
+> │    ├── 📄 _move_duplicate_files.ps1
+
+> │    ├── 📄 clean_qi_prefixes.py
+
+> │    ├── 📄 cleanup_analysis.ps1
+
+> │    ├── 📄 cleanup_app_roots.py
+
+> │    ├── 📄 cleanup_intake_and_trash.py
+
+> │    ├── 📄 cleanup_violations.py
+
+> │    ├── 📄 comprehensive_cleanup.ps1
+
+> │    ├── 📄 continue_cleanup.ps1
+
+> │    ├── 📄 dedup_detect.ts
+
+> │    ├── 📄 detect_stubs.py
+
+> │    ├── 📄 find_duplicates.ps1
+
+> │    ├── 📄 find_duplicates.py
+
+> │    ├── 📄 housekeeper_runner.py
+
+> │    ├── 📄 organize_inbox_complete.py
+
+> │    ├── 📄 storage_bloat_destroyer.py
+
+> │  └── 📂 convert/
+
+> │    ├── 📄 code_extractor.py
+
+> │    └── 📂 csv/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 USAGE.md
+
+> │      ├── 📄 check-csv-md.py
+
+> │      ├── 📄 convert_to_csv.js
+
+> │      ├── 📄 convert_to_csv.ps1
+
+> │      ├── 📄 csv_to_md.py
+
+> │      ├── 📄 mapping.json
+
+> │    └── 📂 folders/
+
+> │      ├── 📄 finish_flattening.ps1
+
+> │      ├── 📄 flat-folders.py
+
+> │      ├── 📄 flatten_and_organize.ps1
+
+> │    └── 📂 json/
+
+> │      ├── 📄 generate_kb_from_json.py
+
+> │    ├── 📄 sync_errors_to_markdown.py
+
+> │    └── 📂 text/
+
+> │      ├── 📄 text_extractor.py
+
+> │    └── 📂 video/
+
+> │      ├── 📄 enhance_mkv.py
+
+> │    └── 📂 zip/
+
+> │      ├── 📄 unzip_downloads.py
+
+> │  └── 📂 docs/
+
+> │    ├── 📄 _Convert_csv_to_md.md
+
+> │  └── 📂 normalize/
+
+> │    ├── 📄 fix-spaces.py
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │    ├── 📄 sort-files.py
+
+> │  └── 📂 pdf/
+
+> │    ├── 📄 process_inbox_pdfs.ts
+
+> │    ├── 📄 process_pdf.ts
+
+> │    ├── 📄 validate_pdfs.ts
+
+> │  └── 📂 validate/
+
+> │    ├── 📄 check-md.py
+
+> │    ├── 📄 check_compliance.py
+
+> │    ├── 📄 compare-csv-md.py
+
+> │    ├── 📄 compare-drive.py
+
+> │    ├── 📄 examine_db.py
+
+> │    ├── 📄 get_file_error_context.py
+
+> │    ├── 📄 housekeeping.ps1
+
+> │    ├── 📄 linter.py
+
+> │    ├── 📄 linter_runner.py
+
+> │    ├── 📄 search-csv.py
+
+> │    ├── 📄 validate_cloud.ps1
+
+> │    ├── 📄 validate_local.ps1
+
+> └── 📂 services/
+
+> │  └── 📂 calendar/
+
+> │    ├── 📄 calendar_create_event.py
+
+> │    ├── 📄 calendar_get_upcoming.py
+
+> │  └── 📂 crm/
+
+> │    ├── 📄 crm_create_contact.py
+
+> │    ├── 📄 crm_create_task.py
+
+> │    ├── 📄 crm_list_recent_contacts.py
+
+> │    ├── 📄 crm_search_person.py
+
+> │  └── 📂 mail/
+
+> │    ├── 📄 mail_get_recent.py
+
+> │    ├── 📄 mail_send.py
+
+> │  └── 📂 sms/
+
+> │    ├── 📄 sms_send.py
+
+> │  └── 📂 vault/
+
+> │    ├── 📄 append_to_vault_note.py
+
+> │    ├── 📄 create_vault_note.py
+
+> │  └── 📂 web/
+
+> │    ├── 📄 web_get.py
+
+> │    ├── 📄 web_search.py
+
+> └── 📂 tests/
+
+> │  ├── 📄 test_abbreviations.py
+
+> │  ├── 📄 test_gina_chat_simple.ps1
+
+> │  ├── 📄 test_pipeline.ps1
+
+> └── 📂 tools/
+
+> │  └── 📂 debug/
+
+> │    ├── 📄 debug_maps.py
+
+> │  └── 📂 file-tool/
+
+> │    └── 📂 quality/
+
+> │      ├── 📄 frontmatter_add.py
+
+> │      ├── 📄 frontmatter_enforce.py
+
+> │      ├── 📄 frontmatter_utils.py
+
+> │      ├── 📄 frontmatter_validate.ts
+
+> │    └── 📂 search/
+
+> │      ├── 📄 search_processed_documents.py
+
+> │  └── 📂 maps/
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    └── 📄 run_3d_simple.bat
+
 > ```
 
 ### Assistant
@@ -7539,62 +9342,118 @@ canonical_ref: ""
 > If you want, I’ll generate a **full rename manifest JSON + Python renamer script** for this exact tree so you can run it instead of manually doing all this.
 
 ### User
-> can you help me update my repo rules with everything so far. {
->     "ignore_globs": [
->         "**/node_modules/**",
->         "**/dist/**",
->         "**/build/**",
->         "**/.astro/**",
->         "**/.turbo/**",
->         "**/target/**",
->         "**/.git/**",
->         "**/.next/**",
->         "**/.output/**",
->         "**/coverage/**",
->         "**/logs/**",
->         "**/.trash/**",
->         "**/__pycache__/**",
->         "**/venv/**",
->         "scripts/**",
->         "apps/**",
->         "sites/**",
->         "supabase/**",
->         "docs/**",
->         "python_core/**",
->         "python_local/**",
->         "workers/**",
->         "rag_env/**",
->         "README.md",
->         "package.json",
->         "pnpm-lock.yaml",
->         "yarn.lock",
->         ".husky/**",
->         ".vscode/**",
->         "TODO.md",
->         "LICENSE"
->     ],
->     "filename": {
->         "no_spaces": true,
->         "allowed_chars_regex": "^[a-z0-9_.-]+$",
->         "max_base_len": 50,
->         "prefer_underscore": true
->     },
->     "foldername": {
->         "capitalization": "sentencecase",
->         "allowed_regex": "^[A-Z0-9][a-zA-Z0-9_-]*$"
->     },
->     "scripts": {
->         "folder": "/scripts/",
->         "script_folders": [
->             "ai",
->             "automate",
->             "config",
->             "core",
->             "deploy",
->             "index",
->             
->         ]
->     }
+> can you help me update my repo rules with everything so far. {
+
+>     "ignore_globs": [
+
+>         "**/node_modules/**",
+
+>         "**/dist/**",
+
+>         "**/build/**",
+
+>         "**/.astro/**",
+
+>         "**/.turbo/**",
+
+>         "**/target/**",
+
+>         "**/.git/**",
+
+>         "**/.next/**",
+
+>         "**/.output/**",
+
+>         "**/coverage/**",
+
+>         "**/logs/**",
+
+>         "**/.trash/**",
+
+>         "**/__pycache__/**",
+
+>         "**/venv/**",
+
+>         "scripts/**",
+
+>         "apps/**",
+
+>         "sites/**",
+
+>         "supabase/**",
+
+>         "docs/**",
+
+>         "python_core/**",
+
+>         "python_local/**",
+
+>         "workers/**",
+
+>         "rag_env/**",
+
+>         "README.md",
+
+>         "package.json",
+
+>         "pnpm-lock.yaml",
+
+>         "yarn.lock",
+
+>         ".husky/**",
+
+>         ".vscode/**",
+
+>         "TODO.md",
+
+>         "LICENSE"
+
+>     ],
+
+>     "filename": {
+
+>         "no_spaces": true,
+
+>         "allowed_chars_regex": "^[a-z0-9_.-]+$",
+
+>         "max_base_len": 50,
+
+>         "prefer_underscore": true
+
+>     },
+
+>     "foldername": {
+
+>         "capitalization": "sentencecase",
+
+>         "allowed_regex": "^[A-Z0-9][a-zA-Z0-9_-]*$"
+
+>     },
+
+>     "scripts": {
+
+>         "folder": "/scripts/",
+
+>         "script_folders": [
+
+>             "ai",
+
+>             "automate",
+
+>             "config",
+
+>             "core",
+
+>             "deploy",
+
+>             "index",
+
+>             
+
+>         ]
+
+>     }
+
 > }
 
 ### Assistant

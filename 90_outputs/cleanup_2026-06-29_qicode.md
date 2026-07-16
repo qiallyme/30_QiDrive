@@ -5,8 +5,8 @@ slug: cleanup-2026-06-29-qicode
 summary: Report for reshaping QiCode into personal life doctrine with a legal-code citation style and a bridge into QiSpark technical doctrine.
 status: active
 created_at: "2026-06-29"
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:42-04:00"
+tags: []
   - cleanup
   - qicode
   - qispark
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 512dd52286c144e7aa0ebacc95cbe89f
 canonical_ref: ""
 template_key: master-template
 ---

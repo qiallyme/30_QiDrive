@@ -3,7 +3,7 @@ layout: page
 title: "Systemic Business Collapse"
 slug: "systemic_business_collapse"
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c9876ba0fd2b4d11b30ff4b58f7a347b
 canonical_ref: ""
 ---
 

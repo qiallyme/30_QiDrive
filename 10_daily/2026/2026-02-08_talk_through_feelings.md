@@ -3,9 +3,9 @@ layout: page
 title: "Talk through feelings"
 slug: "talk_through_feelings"
 created_at: "2026-02-08 00:59:21"
-updated_at: "2026-02-08 00:59:21"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

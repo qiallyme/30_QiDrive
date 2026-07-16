@@ -3,7 +3,7 @@ layout: page
 title: "Zaitullah Receives Threatening Contact"
 slug: "zaitullah_receives_threatening_contact"
 created_at: "2024-10-01"
-updated_at: "2024-10-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["crisis"]
 category: "crisis"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3330263c881b4093af48bb1833fc7ac0
 canonical_ref: ""
 ---
 

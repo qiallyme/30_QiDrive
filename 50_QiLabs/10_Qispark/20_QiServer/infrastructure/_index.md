@@ -3,13 +3,13 @@ layout: section
 title: 10 Infrastructure
 slug: 10-infrastructure
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:39-04:00"
+tags: []
   - moc
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f350697982d1486f9aa83210b8f55706
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Vitals and Fall Risk"
 slug: "vitals_and_fall_risk"
 created_at: "2026-04-28 21:57:55"
-updated_at: "2026-04-28 21:57:55"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

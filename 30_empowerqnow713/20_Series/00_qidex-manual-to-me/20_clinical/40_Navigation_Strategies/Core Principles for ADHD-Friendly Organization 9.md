@@ -3,10 +3,10 @@ layout: page
 title: Core Principles for ADHD Friendly Organization 9
 slug: core_principles_for_adhd_friendly_organization_9
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - tech
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 7.00.00-TECH
 qid: q6b8ff09091a4
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f153882e7b6f4478a0f19657f95f1693
 canonical_ref: ""
 template_key: master-template
 ---

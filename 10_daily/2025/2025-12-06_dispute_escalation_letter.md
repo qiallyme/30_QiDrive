@@ -3,9 +3,9 @@ layout: page
 title: "Dispute escalation letter"
 slug: "dispute_escalation_letter"
 created_at: "2025-12-06 22:06:51"
-updated_at: "2025-12-06 22:06:51"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -623,14 +623,22 @@ canonical_ref: ""
 > Just tell me **“Make the packet”** and I’ll orchestrate the whole thing.
 
 ### User
-> WTF, did you see this, Old meters are passive. The magnetic forces induced by your consumption are rotating a disc. The resolution is bassicaly infinite.
-> 
-> Besides manufacturing errors, only a mechanical tampering can influence the accuracy and readings.
-> 
-> Digital meters calculate the usage based on sampled data. The result is completely dependant on the samplerate, accuracy or measurements, ...Most importantly, there is a limited resolution and the samples are extrapolated to make up for all the times there was no measurement. (We are still talking about 1000's of samples per second here.)
-> 
-> Due to this limited resolution, it has been shown the resulting measurements can be off a bit, especially when using devices with active power supplies. (As they don't contineously consume power, but consume it in very fast, small bursts.)
-> 
+> WTF, did you see this, Old meters are passive. The magnetic forces induced by your consumption are rotating a disc. The resolution is bassicaly infinite.
+
+> 
+
+> Besides manufacturing errors, only a mechanical tampering can influence the accuracy and readings.
+
+> 
+
+> Digital meters calculate the usage based on sampled data. The result is completely dependant on the samplerate, accuracy or measurements, ...Most importantly, there is a limited resolution and the samples are extrapolated to make up for all the times there was no measurement. (We are still talking about 1000's of samples per second here.)
+
+> 
+
+> Due to this limited resolution, it has been shown the resulting measurements can be off a bit, especially when using devices with active power supplies. (As they don't contineously consume power, but consume it in very fast, small bursts.)
+
+> 
+
 > A paper from 2017 by a Dutch university showed a digital meter can measure almost up to 6x more than the actual consumption. The actual results are highly dependant on the manufacturer., you mean event hough i have been losing people in the house, less and less electronics, have my water heater lower than vaction mode, keep my heat at 62, and mose of the day noone is here and all lights are leds and yet my bill is the saem or more than when there was 7 humans, in and out all day, 3 dogs, 4 cats, and workers from home with a whole team of people two monitors each with heavy drawing machine power, extra aircondtioner unites, etc, etc, old tvs, humidifires and lights on almost 24/7 yes my bill is more now than it was before i got thsi ereadyer meter bull shit, theres a change its 3-6x off or more than what i really use, and i might be in the cold not ablet ow rok or do anything because of they think i owe them all this money, no no no.
 
 ### Assistant
@@ -1000,141 +1008,276 @@ canonical_ref: ""
 > I’ll drop them instantly.
 
 ### User
-> AES bill discrepancies and incorrect meter readings
-> Summarized by AI from the post below
-> Bellefontaine In The Know  · 
-> Shalem Loritsch
->  ·
-> Moderator
->  ·
-> January 29
->  ·
-> I have seen a number of people in here complaining of unusually high AES bills (2-4x the normal amount), and wanted to share how to investigate/document this yourself, and that WHIO just ran a story about it (linked below).
-> AES upgraded my meter on 11/19/2024, and my usage has been incorrect ever since (last two bills).  In my case, it is far too low—my last bill was only $29.60 despite electric being my sole source of energy!  I called AES last week and they promised to correct my most recent bill ASAP.  Nothing has happened since.
-> Anyway, I invite everyone who believes their bill is substantially too high to play along here, for educational and documentation purposes.  Grab your most recent bill and look where it shows 'Meter Reading Detail'.  The first clue that something is wrong would be if your 'Read Type' is 'Estimate' instead of 'Actual'.  Most AES customers have a Smart Meter; these regularly transmit your usage figures back to AES, eliminating the need for someone to come out and manually read your meter.  Therefore, you should never have an estimated bill.  Then note your 'Meter Number' and 'Current Meter Reading Index', and then go outside to your meter and compare with the 'M#' printed on the meter and the 'DEL' (delivery) figure when it cycles up on the display.
-> 'Meter Number' on your bill should match 'M#' on your meter.  Mine doesn't (two digits are swapped).  If yours doesn't match, please share in a comment below (don't share the whole number, only that they're different).
-> 'Current Meter Reading Index' on your bill should always be a bit lower (within reason) on your bill than the 'DEL' figure shown on your meter display (it's like an odometer, always counting up; the figure on your bill is obviously older than the one on the meter now).  If 'Current' on your bill is higher than 'DEL' on your meter, you are being over-billed for electricity you haven't used yet; please share below in a comment what 'Current' on your bill says versus what 'DEL' on your meter says, as well as kWh number for the highest bar shown in the yearly usage graph on your bill.
-> To put the number in perspective, any difference here should reflect the kWh used in the time between your last bill and now (as you look at your meter)—so no more than a month of electricity.  These figures are shown monthly for a whole year in the bars on your bill.  In my case, my meter reads 'DEL 2066' and 'Current' on my bill reads only 188.  This is a discrepancy of 1878kWh!  The most I have ever used in a month over the last year was 1134kWh—which suggests that I have been underbilled for well over an entire month's worth of electricity (this calculation works either way—if it's too low, or if it's too high).
-> https://www.facebook.com/whionews/posts/pfbid02o75Hea6myDXYmxv6jqnMihg47kAtwahseVbna7UvrFBSZj1pKm1oRNiq1WSDngKAl
-> All reactions:
-> 77
-> Shalem Loritsch
-> Author
-> Moderator
-> I'll start with a sample comment: Current meter reading on my latest bill is 188.01, while the meter actually reads DEL 2066kWh. The tallest bar for the last 12 months at the top of my bill is at 1134kWh (February 2024). And, the meter number shown o… See more
-> 44w
-> Jessica Abrego
-> I believe this has been going on for over a year. I called last year sometime when I noticed my bill was incredibly higher than it should be. I wrote down the date she said they changed the meter but she told me everything was fine and I just believed … See more
-> 44w
-> Deb Laird
-> I checked my meter number and the number on my account. I'm blessed our numbers match. We are on level billing and I haven't seen too much out of the ordinary with usage on the bill.
-> 44w
-> Jonezen Four-Stringz
-> Thank you for the information. Upon comparing my current bill with the actual meter there is a huge discrepancy! Meter #'s do not match at all.
-> Meter reading index
-> Current = 9,515 (estimate)… See more
-> 44w
-> Linda Snider
-> Are these smart meters
-> 44w
-> Yona Dodson
-> Ty for the info… learned alot
-> 43w
-> Jim Fletcher
-> Thank you for making it easy to understand.
-> 44w
-> Mary Lucas
-> Mine is way crazy. Meter numbers do not match. On bill it is 7 numbers beginning with 100 but on meter it is 9 numbers beginning with 400
-> My current on bill is 6920 and my meter del is 1457. Also “estimated “… See more
-> 44w
-> Holley Milroy
-> Years ago , Logan Co. Co-op, replaced my meter. I had lived at that house for 12 years and knew what to expect my bill to be. After the replaced meter, my bill was $700 more for 1 months than had ever been!! I called about it, they said it was NOT a ne… See more
-> 44w
-> Richard Morris
-> Call Ohio PUCO and file a complaint and they will.open a investigation. You can even file a complaint online with Ohio PUCO... TAKE S
-> PICTURE OF YOUR METER THE MORNING OF THE DAY END IF YOUR BILLING CYCLE. THEN COMPARE WITH ACTUSL BILL. I ALSO RECOMME… See more
-> 44w
-> Aurora Dawn
-> So, this post made me check my AES account today….it says I owe $408, but I cannot view the bill. My bill last month was $292, this and my previous bill statements are available, just not the current one. My bills have been roughly $89-100 before. Some… See more
-> 44w
-> Sam Blinn
-> We actually caught the person changing it to a new meter peaking in the windows. My husband just happened to be home on lunch and ran him off. Our bill has been double to triple since the new meter was installed. I’m going to check these things!
-> 44w
-> Kerstin Manor
-> Thanks for that info. Cause I couldn't make sense out of that smart meter
-> 44w
-> Rick Tobin
-> Thank you for sharing this information Shalem!
-> 44w
-> Gary K
-> They estimated mine at 6 months worth of my normal bill. I called them and they gave me a credit for the overage.
-> 44w
-> Linda M Dayton
-> AES is a thief!! I went to another company to lower the bill. But AES remains the delivery(?) company. My electric is 67/mo. Not bad
-> The delivery charge is the same amount😡😡😡😡
-> 44w
-> Rhonda Adams
-> We were told we’d be charge a fee if we didn’t change over
-> 44w
-> Pamela Russell Moder
-> Thank you, I will be checking into mine
-> 44w
-> Mary Lucas
-> I’m surprised non of our local news places haven’t picked up this story nor done their own investigation. WHIO has another story out yet Logan county not listed yet but shows this issue is with majority of aes customers and smart meters and estimating.… See more
-> 44w
-> Harriet Hall Strawn
-> I am still fighting with them. I have talked to someone 5 times since Dec 27..I moved in to where I live now Nov 25. That is the day the electric went into my name. I have not gotten 1 bill since I have lived here. They did confirm that electric is… See more
-> 44w
-> Tim Anderson
-> I don't get a bill just call every month an pay it
-> 44w
-> Sheila Ballinger
-> I'm gonna look tomorrow.
-> 43w
-> Anna M LaFollette
-> Mine was $700 this month meyers don’t match never been this high 😮
-> 44w
-> Mary Lucas
-> Anyone else get this notice via email. I had to LAUGH when I read “ a small amount of customers were affected. Hahahaahaha.
-> Will post the remaining 2 after this
-> No photo description available.
-> 42w
-> Robert Hicks
-> Lilly Janell
-> 44w
-> Charlottə Ora Mariə
-> Liz Morgan ? I don't know ...this is why I was like maybe they did mess up ...Worth checking out with customer service first.
-> 43w
-> Linda M Dayton
-> They do this thing called submetering in apartments now draining people if their money. And it’s legal!! There are people who live at Kenmore Place in Marysville that pay 300/mo for a small one bedroom apartment 😡😡😡😡
-> We need to ALL GET TOGETHER and f… See more
-> 44w
-> Kara Wills
-> Bradley Smith show this to Michael plz
-> 44w
-> Keith Levan
-> Absolutely insane what they have done. Corruption at it’s finest
-> 44w
-> Britanie Watkins
-> Randy!!!
-> 43w
-> Darren Whitaker
-> .
-> 43w
-> Kelly Vermillion
-> .
-> 43w
-> Lily Black
-> .
-> 44w
-> Patty Driscoll McIntyre
-> Contact PUCO
-> 44w
-> Kimberly Sue
-> .
-> 44w
-> Brandy Patterson-Poling
-> .
+> AES bill discrepancies and incorrect meter readings
+
+> Summarized by AI from the post below
+
+> Bellefontaine In The Know  · 
+
+> Shalem Loritsch
+
+>  ·
+
+> Moderator
+
+>  ·
+
+> January 29
+
+>  ·
+
+> I have seen a number of people in here complaining of unusually high AES bills (2-4x the normal amount), and wanted to share how to investigate/document this yourself, and that WHIO just ran a story about it (linked below).
+
+> AES upgraded my meter on 11/19/2024, and my usage has been incorrect ever since (last two bills).  In my case, it is far too low—my last bill was only $29.60 despite electric being my sole source of energy!  I called AES last week and they promised to correct my most recent bill ASAP.  Nothing has happened since.
+
+> Anyway, I invite everyone who believes their bill is substantially too high to play along here, for educational and documentation purposes.  Grab your most recent bill and look where it shows 'Meter Reading Detail'.  The first clue that something is wrong would be if your 'Read Type' is 'Estimate' instead of 'Actual'.  Most AES customers have a Smart Meter; these regularly transmit your usage figures back to AES, eliminating the need for someone to come out and manually read your meter.  Therefore, you should never have an estimated bill.  Then note your 'Meter Number' and 'Current Meter Reading Index', and then go outside to your meter and compare with the 'M#' printed on the meter and the 'DEL' (delivery) figure when it cycles up on the display.
+
+> 'Meter Number' on your bill should match 'M#' on your meter.  Mine doesn't (two digits are swapped).  If yours doesn't match, please share in a comment below (don't share the whole number, only that they're different).
+
+> 'Current Meter Reading Index' on your bill should always be a bit lower (within reason) on your bill than the 'DEL' figure shown on your meter display (it's like an odometer, always counting up; the figure on your bill is obviously older than the one on the meter now).  If 'Current' on your bill is higher than 'DEL' on your meter, you are being over-billed for electricity you haven't used yet; please share below in a comment what 'Current' on your bill says versus what 'DEL' on your meter says, as well as kWh number for the highest bar shown in the yearly usage graph on your bill.
+
+> To put the number in perspective, any difference here should reflect the kWh used in the time between your last bill and now (as you look at your meter)—so no more than a month of electricity.  These figures are shown monthly for a whole year in the bars on your bill.  In my case, my meter reads 'DEL 2066' and 'Current' on my bill reads only 188.  This is a discrepancy of 1878kWh!  The most I have ever used in a month over the last year was 1134kWh—which suggests that I have been underbilled for well over an entire month's worth of electricity (this calculation works either way—if it's too low, or if it's too high).
+
+> https://www.facebook.com/whionews/posts/pfbid02o75Hea6myDXYmxv6jqnMihg47kAtwahseVbna7UvrFBSZj1pKm1oRNiq1WSDngKAl
+
+> All reactions:
+
+> 77
+
+> Shalem Loritsch
+
+> Author
+
+> Moderator
+
+> I'll start with a sample comment: Current meter reading on my latest bill is 188.01, while the meter actually reads DEL 2066kWh. The tallest bar for the last 12 months at the top of my bill is at 1134kWh (February 2024). And, the meter number shown o… See more
+
+> 44w
+
+> Jessica Abrego
+
+> I believe this has been going on for over a year. I called last year sometime when I noticed my bill was incredibly higher than it should be. I wrote down the date she said they changed the meter but she told me everything was fine and I just believed … See more
+
+> 44w
+
+> Deb Laird
+
+> I checked my meter number and the number on my account. I'm blessed our numbers match. We are on level billing and I haven't seen too much out of the ordinary with usage on the bill.
+
+> 44w
+
+> Jonezen Four-Stringz
+
+> Thank you for the information. Upon comparing my current bill with the actual meter there is a huge discrepancy! Meter #'s do not match at all.
+
+> Meter reading index
+
+> Current = 9,515 (estimate)… See more
+
+> 44w
+
+> Linda Snider
+
+> Are these smart meters
+
+> 44w
+
+> Yona Dodson
+
+> Ty for the info… learned alot
+
+> 43w
+
+> Jim Fletcher
+
+> Thank you for making it easy to understand.
+
+> 44w
+
+> Mary Lucas
+
+> Mine is way crazy. Meter numbers do not match. On bill it is 7 numbers beginning with 100 but on meter it is 9 numbers beginning with 400
+
+> My current on bill is 6920 and my meter del is 1457. Also “estimated “… See more
+
+> 44w
+
+> Holley Milroy
+
+> Years ago , Logan Co. Co-op, replaced my meter. I had lived at that house for 12 years and knew what to expect my bill to be. After the replaced meter, my bill was $700 more for 1 months than had ever been!! I called about it, they said it was NOT a ne… See more
+
+> 44w
+
+> Richard Morris
+
+> Call Ohio PUCO and file a complaint and they will.open a investigation. You can even file a complaint online with Ohio PUCO... TAKE S
+
+> PICTURE OF YOUR METER THE MORNING OF THE DAY END IF YOUR BILLING CYCLE. THEN COMPARE WITH ACTUSL BILL. I ALSO RECOMME… See more
+
+> 44w
+
+> Aurora Dawn
+
+> So, this post made me check my AES account today….it says I owe $408, but I cannot view the bill. My bill last month was $292, this and my previous bill statements are available, just not the current one. My bills have been roughly $89-100 before. Some… See more
+
+> 44w
+
+> Sam Blinn
+
+> We actually caught the person changing it to a new meter peaking in the windows. My husband just happened to be home on lunch and ran him off. Our bill has been double to triple since the new meter was installed. I’m going to check these things!
+
+> 44w
+
+> Kerstin Manor
+
+> Thanks for that info. Cause I couldn't make sense out of that smart meter
+
+> 44w
+
+> Rick Tobin
+
+> Thank you for sharing this information Shalem!
+
+> 44w
+
+> Gary K
+
+> They estimated mine at 6 months worth of my normal bill. I called them and they gave me a credit for the overage.
+
+> 44w
+
+> Linda M Dayton
+
+> AES is a thief!! I went to another company to lower the bill. But AES remains the delivery(?) company. My electric is 67/mo. Not bad
+
+> The delivery charge is the same amount😡😡😡😡
+
+> 44w
+
+> Rhonda Adams
+
+> We were told we’d be charge a fee if we didn’t change over
+
+> 44w
+
+> Pamela Russell Moder
+
+> Thank you, I will be checking into mine
+
+> 44w
+
+> Mary Lucas
+
+> I’m surprised non of our local news places haven’t picked up this story nor done their own investigation. WHIO has another story out yet Logan county not listed yet but shows this issue is with majority of aes customers and smart meters and estimating.… See more
+
+> 44w
+
+> Harriet Hall Strawn
+
+> I am still fighting with them. I have talked to someone 5 times since Dec 27..I moved in to where I live now Nov 25. That is the day the electric went into my name. I have not gotten 1 bill since I have lived here. They did confirm that electric is… See more
+
+> 44w
+
+> Tim Anderson
+
+> I don't get a bill just call every month an pay it
+
+> 44w
+
+> Sheila Ballinger
+
+> I'm gonna look tomorrow.
+
+> 43w
+
+> Anna M LaFollette
+
+> Mine was $700 this month meyers don’t match never been this high 😮
+
+> 44w
+
+> Mary Lucas
+
+> Anyone else get this notice via email. I had to LAUGH when I read “ a small amount of customers were affected. Hahahaahaha.
+
+> Will post the remaining 2 after this
+
+> No photo description available.
+
+> 42w
+
+> Robert Hicks
+
+> Lilly Janell
+
+> 44w
+
+> Charlottə Ora Mariə
+
+> Liz Morgan ? I don't know ...this is why I was like maybe they did mess up ...Worth checking out with customer service first.
+
+> 43w
+
+> Linda M Dayton
+
+> They do this thing called submetering in apartments now draining people if their money. And it’s legal!! There are people who live at Kenmore Place in Marysville that pay 300/mo for a small one bedroom apartment 😡😡😡😡
+
+> We need to ALL GET TOGETHER and f… See more
+
+> 44w
+
+> Kara Wills
+
+> Bradley Smith show this to Michael plz
+
+> 44w
+
+> Keith Levan
+
+> Absolutely insane what they have done. Corruption at it’s finest
+
+> 44w
+
+> Britanie Watkins
+
+> Randy!!!
+
+> 43w
+
+> Darren Whitaker
+
+> .
+
+> 43w
+
+> Kelly Vermillion
+
+> .
+
+> 43w
+
+> Lily Black
+
+> .
+
+> 44w
+
+> Patty Driscoll McIntyre
+
+> Contact PUCO
+
+> 44w
+
+> Kimberly Sue
+
+> .
+
+> 44w
+
+> Brandy Patterson-Poling
+
+> .
+
 > 44w
 
 ### Assistant
@@ -1341,106 +1484,206 @@ canonical_ref: ""
 > - And line everything up so when they come for you with that $10k, you’re standing on a mountain of evidence, not vibes.
 
 ### User
-> WHIO 
-> January 28
->  ·
-> There was one thing people said they had in common — a change on the outside of their home.
-> ‘Why this much?’ Several homeowners shocked as electric bills spike by as much as $400 a month
-> whio.com
-> ‘Why this much?’ Several homeowners shocked as electric bills spike by as much as $400 a month
-> All reactions:
-> 591
-> 
-> Top fan
-> Brandon Lee
-> Every year electricity production is easier, more advanced, and cheaper... yet it's more expensive than ever. Doesn't make sense.
-> 44w
-> Tany Yeslek
-> My bill is $720 this month - the absolute most it’s ever been . This is not late fees or unpaid - this is one single month of a 750 square-foot house.
-> We have a well and no gas but comparing to years before the entire 2024 bills to current just does not break down or make the slight of sense .
-> We’re going to call to have somebody come out and see what’s going on.
-> 44w
-> Nicole Riegel-Wood
-> Ever since they installed the new meters my bills have been way higher. Our meter was checked twice and of course were told it’s fine.
-> This month’s bill is close to $150 more than the “new” normal.
-> 44w
-> 
-> Top fan
-> Sue Kowalewski
-> AES Ohio is a joke and rip off! Paid my bill last month in full and then 8 minutes later took another 315.00 out of my account! I was beyond 😡! Went to my bank and they got my money back, I thanked God and my bank for that. Then they tried to get another 5.00 for calling to pay my bill for this month for this month. I refused to pay that. Now I pay my bill at Kroger. Ever since the new meter it has been nothing but headaches with them.
-> 44w
-> RodneyTheresa Kniess
-> LOOK at your utility bills for extra charges. Hmmmmm, the electric company had the smart meters put on your homes said it would get the readings automatically instead of having the meter readers coming around. Plus helps them to know if there’s an issue with power at your home.
-> They ask consumers to go paperless to reduce paper waste and postage, plus to save money.
-> Then, you read your bill online and see a charge for $9.75
-> Here is the definition of the charge:
-> As of January 1, 2024, AES Ohio's customer charge is $9.75 per billing period. This is a fixed monthly fee that covers the cost of billing, meter reading, and service line maintenance. AES Ohio charges this fee even if a customer doesn't use any electricity.
-> Explanation
-> The customer charge is a base monthly charge that covers the cost of billing, meter reading, and service line maintenance.
-> AES Ohio also charges a delivery charge, which covers the cost of electric operations, equipment, and Ohio energy-related programs.
-> The energy rate is the rate paid for each kilowatt-hour of energy used by the customer.
-> Unbelievable! So, everything consumers have done to help save money, now consumers are getting this charge on their bills. And, several consumers might have their bills paid automatically each month and possibly not even look at their bill to what the small charges are for. What I look for next is, if you don’t pay automatically from your bank account they will charge.
-> Consumers need to contact: PUBLIC UTILITIES COMMISSION and complain, I suggest putting complaints either email or via U.S. Mail.. Complaints are best put on paper and sent in or possibly on website a complaint form. This is not what consumers were told when the smart meters were placed.
-> 44w
-> Jaclyn Trusler
-> Mine is $450 this month and is normally never over $200. I'm in disbelief. I've lived in this house in Xenia for 7 years. Never had a bill this high. It was up to $355 last month. Unbelievable.
-> 44w
-> Rachael Za'ReyahsMama
-> Aes is such a sham they're just money hungry!
-> 44w
-> Brenda Hansen
-> Just another way to rob people . We don’t have a luxury house like them , They probably have there bill estimated so it stays the same in the winter . People has to decide electric bill or Food.
-> 44w
-> 
-> Top fan
-> Dawn Palser
-> The bill I paid in December was an actual reading of an older meter. It showed that I used more than double the historical usage of my home in 12 years! I called AES and spoke to representatives and was told there would be an investigation and then was told the supervisor denied it. I'm waiting on my new bill to come in to see what the reading is after the new meter was installed. I went through an entire year's bills the other day and every reading I've had is actual, they can't claim they've been estimating me and not getting the proper usage on my property. It's not an increase in kilowatt charges they're stating we're using more electricity than we've ever used before! This is happening all over my community to numerous customers.
-> 44w
-> David Poling
-> Mine went from one $1 78-$400 they said they had to estimate it because my box wasn’t working right so they come out and replace it. They said they’ll let me know but I ain’t never had a $400 electric bill in my last 25 years.
-> 44w
-> Kim Winals
-> AES is organized crime
-> 44w
-> 
-> Top fan
-> Stephanie Letner
-> Aes has been robbing us for years🤔
-> 44w
-> Tiffiney Van Winkle
-> Our AES bill went from 112.00 to 298.00 from November to December. Our bill has never been this high. It is just myself and my husband. My husband is gone on the road for 5 days at a time and I work 12 hr shifts. And when he is gone on the road the TV never comes on because I don't watch TV. When calling AES they said it was normal. So I went to my local FB group and asked if anyone else AES bill was so High and everyone said the same thing there bills were 300 and 400 and they have never had a bill that high.
-> 44w
-> Jenna Pepper
-> They said “isolated” group - no, it’s everyone being taken advantage of something we MUST have and we don’t have a choice to shop around and we have to pay what they bill us or get shut off! And they don’t answer the phone unless it’s for a new service. They said our kw usage was 2355 this month. My sister didn’t use that much and her house is 3x the size of ours - there’s no way these meters are reading correctly
-> 44w
-> Amy Bear
-> That’s what say. EVERY ENTITY wants every dime you make. Before Electric bills would share with phone bills. And cable bills and all other bills—-/ NOW —- each business wants every dime you make God help us. I want a land line back for 30$ a month. No more cell phones. A 30$ cable bill. And a 150$ max per month electric bill
-> 44w
-> Patricia Goodman
-> Our bill was $417 this month.Shame how do they expect seniors to pay these outrages bills.They say you don’t have to pay all the bill but quick to send you a shut off date if you don’t pay all of it.
-> 44w
-> Megan Orange
-> Ours was wrong Dec 400.00 and now Jan is 600! We’ve NEVER had any where near that bill. My heat is at 66!
-> 44w
-> Abbie Arnold Beam
-> I have a house that we rent. The AES bill is always a little higher for a month or two in the winter, but only by about $50. The last two months, the same brick 3 bedroom house is running $800.00 per month! That is approximately $600.00 more per month, which is outrageous! And, the thermostat is set on 68 degrees.
-> 44w
-> Levi Runkle
-> Between the new meters and the expansive high voltage project spaning over half Champaign County for redundant power supply for KTH, our bills have increased significantly in the short time there after. Someone has to pay for all of those expansive projects...
-> 44w
-> Mark Whittaker
-> I hear complaining about AES and lots of other companies, but nobody does anything. Assemble, get in these people’s faces, protest at their homes, and make their life difficult. That’s the only way things will change. It takes physical action rather than just words.
-> 44w
-> 
-> Top fan
-> Emily Elizabeth
-> I just got a $2000 AES bill. I wish mine was $400.
-> 44w
-> Maria Helton
-> Mine bill last month was $300 MORE than what it usually is at this time of year in the 10 years I’ve had this company. I questioned them and they said I’ve used just as much electricity as I did last year. Lies.
-> 44w
-> Ryan Stnr
-> Estimations need to be outlawed. Take your reading every month and send a bill. Yes, whatever is overpaid gets credited toward a future bill, but most people dont have hundreds of extra dollars at their disposal in a given month.
+> WHIO 
+
+> January 28
+
+>  ·
+
+> There was one thing people said they had in common — a change on the outside of their home.
+
+> ‘Why this much?’ Several homeowners shocked as electric bills spike by as much as $400 a month
+
+> whio.com
+
+> ‘Why this much?’ Several homeowners shocked as electric bills spike by as much as $400 a month
+
+> All reactions:
+
+> 591
+
+> 
+
+> Top fan
+
+> Brandon Lee
+
+> Every year electricity production is easier, more advanced, and cheaper... yet it's more expensive than ever. Doesn't make sense.
+
+> 44w
+
+> Tany Yeslek
+
+> My bill is $720 this month - the absolute most it’s ever been . This is not late fees or unpaid - this is one single month of a 750 square-foot house.
+
+> We have a well and no gas but comparing to years before the entire 2024 bills to current just does not break down or make the slight of sense .
+
+> We’re going to call to have somebody come out and see what’s going on.
+
+> 44w
+
+> Nicole Riegel-Wood
+
+> Ever since they installed the new meters my bills have been way higher. Our meter was checked twice and of course were told it’s fine.
+
+> This month’s bill is close to $150 more than the “new” normal.
+
+> 44w
+
+> 
+
+> Top fan
+
+> Sue Kowalewski
+
+> AES Ohio is a joke and rip off! Paid my bill last month in full and then 8 minutes later took another 315.00 out of my account! I was beyond 😡! Went to my bank and they got my money back, I thanked God and my bank for that. Then they tried to get another 5.00 for calling to pay my bill for this month for this month. I refused to pay that. Now I pay my bill at Kroger. Ever since the new meter it has been nothing but headaches with them.
+
+> 44w
+
+> RodneyTheresa Kniess
+
+> LOOK at your utility bills for extra charges. Hmmmmm, the electric company had the smart meters put on your homes said it would get the readings automatically instead of having the meter readers coming around. Plus helps them to know if there’s an issue with power at your home.
+
+> They ask consumers to go paperless to reduce paper waste and postage, plus to save money.
+
+> Then, you read your bill online and see a charge for $9.75
+
+> Here is the definition of the charge:
+
+> As of January 1, 2024, AES Ohio's customer charge is $9.75 per billing period. This is a fixed monthly fee that covers the cost of billing, meter reading, and service line maintenance. AES Ohio charges this fee even if a customer doesn't use any electricity.
+
+> Explanation
+
+> The customer charge is a base monthly charge that covers the cost of billing, meter reading, and service line maintenance.
+
+> AES Ohio also charges a delivery charge, which covers the cost of electric operations, equipment, and Ohio energy-related programs.
+
+> The energy rate is the rate paid for each kilowatt-hour of energy used by the customer.
+
+> Unbelievable! So, everything consumers have done to help save money, now consumers are getting this charge on their bills. And, several consumers might have their bills paid automatically each month and possibly not even look at their bill to what the small charges are for. What I look for next is, if you don’t pay automatically from your bank account they will charge.
+
+> Consumers need to contact: PUBLIC UTILITIES COMMISSION and complain, I suggest putting complaints either email or via U.S. Mail.. Complaints are best put on paper and sent in or possibly on website a complaint form. This is not what consumers were told when the smart meters were placed.
+
+> 44w
+
+> Jaclyn Trusler
+
+> Mine is $450 this month and is normally never over $200. I'm in disbelief. I've lived in this house in Xenia for 7 years. Never had a bill this high. It was up to $355 last month. Unbelievable.
+
+> 44w
+
+> Rachael Za'ReyahsMama
+
+> Aes is such a sham they're just money hungry!
+
+> 44w
+
+> Brenda Hansen
+
+> Just another way to rob people . We don’t have a luxury house like them , They probably have there bill estimated so it stays the same in the winter . People has to decide electric bill or Food.
+
+> 44w
+
+> 
+
+> Top fan
+
+> Dawn Palser
+
+> The bill I paid in December was an actual reading of an older meter. It showed that I used more than double the historical usage of my home in 12 years! I called AES and spoke to representatives and was told there would be an investigation and then was told the supervisor denied it. I'm waiting on my new bill to come in to see what the reading is after the new meter was installed. I went through an entire year's bills the other day and every reading I've had is actual, they can't claim they've been estimating me and not getting the proper usage on my property. It's not an increase in kilowatt charges they're stating we're using more electricity than we've ever used before! This is happening all over my community to numerous customers.
+
+> 44w
+
+> David Poling
+
+> Mine went from one $1 78-$400 they said they had to estimate it because my box wasn’t working right so they come out and replace it. They said they’ll let me know but I ain’t never had a $400 electric bill in my last 25 years.
+
+> 44w
+
+> Kim Winals
+
+> AES is organized crime
+
+> 44w
+
+> 
+
+> Top fan
+
+> Stephanie Letner
+
+> Aes has been robbing us for years🤔
+
+> 44w
+
+> Tiffiney Van Winkle
+
+> Our AES bill went from 112.00 to 298.00 from November to December. Our bill has never been this high. It is just myself and my husband. My husband is gone on the road for 5 days at a time and I work 12 hr shifts. And when he is gone on the road the TV never comes on because I don't watch TV. When calling AES they said it was normal. So I went to my local FB group and asked if anyone else AES bill was so High and everyone said the same thing there bills were 300 and 400 and they have never had a bill that high.
+
+> 44w
+
+> Jenna Pepper
+
+> They said “isolated” group - no, it’s everyone being taken advantage of something we MUST have and we don’t have a choice to shop around and we have to pay what they bill us or get shut off! And they don’t answer the phone unless it’s for a new service. They said our kw usage was 2355 this month. My sister didn’t use that much and her house is 3x the size of ours - there’s no way these meters are reading correctly
+
+> 44w
+
+> Amy Bear
+
+> That’s what say. EVERY ENTITY wants every dime you make. Before Electric bills would share with phone bills. And cable bills and all other bills—-/ NOW —- each business wants every dime you make God help us. I want a land line back for 30$ a month. No more cell phones. A 30$ cable bill. And a 150$ max per month electric bill
+
+> 44w
+
+> Patricia Goodman
+
+> Our bill was $417 this month.Shame how do they expect seniors to pay these outrages bills.They say you don’t have to pay all the bill but quick to send you a shut off date if you don’t pay all of it.
+
+> 44w
+
+> Megan Orange
+
+> Ours was wrong Dec 400.00 and now Jan is 600! We’ve NEVER had any where near that bill. My heat is at 66!
+
+> 44w
+
+> Abbie Arnold Beam
+
+> I have a house that we rent. The AES bill is always a little higher for a month or two in the winter, but only by about $50. The last two months, the same brick 3 bedroom house is running $800.00 per month! That is approximately $600.00 more per month, which is outrageous! And, the thermostat is set on 68 degrees.
+
+> 44w
+
+> Levi Runkle
+
+> Between the new meters and the expansive high voltage project spaning over half Champaign County for redundant power supply for KTH, our bills have increased significantly in the short time there after. Someone has to pay for all of those expansive projects...
+
+> 44w
+
+> Mark Whittaker
+
+> I hear complaining about AES and lots of other companies, but nobody does anything. Assemble, get in these people’s faces, protest at their homes, and make their life difficult. That’s the only way things will change. It takes physical action rather than just words.
+
+> 44w
+
+> 
+
+> Top fan
+
+> Emily Elizabeth
+
+> I just got a $2000 AES bill. I wish mine was $400.
+
+> 44w
+
+> Maria Helton
+
+> Mine bill last month was $300 MORE than what it usually is at this time of year in the 10 years I’ve had this company. I questioned them and they said I’ve used just as much electricity as I did last year. Lies.
+
+> 44w
+
+> Ryan Stnr
+
+> Estimations need to be outlawed. Take your reading every month and send a bill. Yes, whatever is overpaid gets credited toward a future bill, but most people dont have hundreds of extra dollars at their disposal in a given month.
+
 > 44w
 
 ### Assistant
@@ -2249,54 +2492,102 @@ canonical_ref: ""
 > > today it does not, and yet AES is billing as if that load still exists.”
 
 ### User
-> Far too many Hoosiers are struggling to afford significant increases in the cost of essential utility service and having to make choices between things like electricity, food, and medicine.
-> 
->  
-> 
-> eia monthly household electricity expendituresFor decades, utilities were not required to report important data showing how many Hoosiers struggle to keep up with ever increasing utility bills. After prodding from CAC, utilities began reporting this data in 2020. The results were alarming: Indiana ranked third in the nation for utility disconnections in 2020-2021.
-> 
->  
-> 
-> When utilities stopped reporting this crucial data in 2022, we continued our push for transparency. The data shows harrowing trends: thousands of Hoosiers getting disconnected each month, with tens of thousands of Hoosiers over 60 days behind on bills, and hundreds of thousands of Hoosiers receiving disconnect notices.
-> 
->  
-> 
-> A System Rigged Against Consumers 
-> 
-> Jan 2023 Indiana disconnect dataThe monopoly utilities have a nice gig: they are shielded from competition and sell services we all need to survive. They also earn a rate of return on every one of your dollars they spend, so the more money they spend, the more money they make.
-> 
->  
-> 
-> In exchange for the privilege of being monopolies, utilities are regulated by the Indiana Utility Regulatory Commission (IURC). The IURC’s primary function is to act as a surrogate to competition, but legislation passed by the Indiana General Assembly has fundamentally changed how we regulate utilities here in Indiana. 
-> 
->  
-> 
-> 2022 Indiana utility campaign contributionsUtilities have used their power and influence to secure legislation that compels the IURC to approve excessive rate hikes for:
-> 
-> Transmission and distribution upgrades (TDSIC), leading to billions of dollars of rate increases across Indiana
-> Construction of power plants and power plant upgrades, leading to billions of dollars of rate increases across the state
-> Fuel costs, leading to significant bill hikes over the course of 2021 and 2022
->  
-> 
-> To make matters worse, the Indiana General  Assembly has also put an end to programs and policies that help Hoosiers save money and control their energy use, like net metering for rooftop solar and Energizing Indiana, a successful state-wide energy efficiency program. 
-> 
->  
-> 
-> When state legislation takes away the authority of regulators to actually regulate, the IURC is powerless to stop extreme increases. But even when the IURC has the ability to stand up for the needs of utility consumers, regulators frequently fail to do so. Utility regulators allow:
-> 
-> High fixed monthly charges, which make it harder to control energy bills and disproportionately impact those who use the least energy
-> Declining block rates, a regressive rate structure that forces those who use the least energy to pay the highest rates per kilowatt hour
-> Sweetheart deals for industrial customers, with residential customers picking up the tab
-> Unaffordable utility service compromises public health and disproportionately impacts marginalized communities.
-> 
->  
-> 
-> Hoosier Families At Risk
-> 
-> aceee energy burden reportStruggling to afford utility service forces Hoosiers to make difficult decisions: skipping out on food or medicine to pay bills instead, resorting to risky heating methods to stay warm, or maintaining unsafe indoor temperatures (especially damaging for senior citizens, children, and people with disabilities). Losing utility service also compromises public health and safety. 
-> 
->  
-> 
+> Far too many Hoosiers are struggling to afford significant increases in the cost of essential utility service and having to make choices between things like electricity, food, and medicine.
+
+> 
+
+>  
+
+> 
+
+> eia monthly household electricity expendituresFor decades, utilities were not required to report important data showing how many Hoosiers struggle to keep up with ever increasing utility bills. After prodding from CAC, utilities began reporting this data in 2020. The results were alarming: Indiana ranked third in the nation for utility disconnections in 2020-2021.
+
+> 
+
+>  
+
+> 
+
+> When utilities stopped reporting this crucial data in 2022, we continued our push for transparency. The data shows harrowing trends: thousands of Hoosiers getting disconnected each month, with tens of thousands of Hoosiers over 60 days behind on bills, and hundreds of thousands of Hoosiers receiving disconnect notices.
+
+> 
+
+>  
+
+> 
+
+> A System Rigged Against Consumers 
+
+> 
+
+> Jan 2023 Indiana disconnect dataThe monopoly utilities have a nice gig: they are shielded from competition and sell services we all need to survive. They also earn a rate of return on every one of your dollars they spend, so the more money they spend, the more money they make.
+
+> 
+
+>  
+
+> 
+
+> In exchange for the privilege of being monopolies, utilities are regulated by the Indiana Utility Regulatory Commission (IURC). The IURC’s primary function is to act as a surrogate to competition, but legislation passed by the Indiana General Assembly has fundamentally changed how we regulate utilities here in Indiana. 
+
+> 
+
+>  
+
+> 
+
+> 2022 Indiana utility campaign contributionsUtilities have used their power and influence to secure legislation that compels the IURC to approve excessive rate hikes for:
+
+> 
+
+> Transmission and distribution upgrades (TDSIC), leading to billions of dollars of rate increases across Indiana
+
+> Construction of power plants and power plant upgrades, leading to billions of dollars of rate increases across the state
+
+> Fuel costs, leading to significant bill hikes over the course of 2021 and 2022
+
+>  
+
+> 
+
+> To make matters worse, the Indiana General  Assembly has also put an end to programs and policies that help Hoosiers save money and control their energy use, like net metering for rooftop solar and Energizing Indiana, a successful state-wide energy efficiency program. 
+
+> 
+
+>  
+
+> 
+
+> When state legislation takes away the authority of regulators to actually regulate, the IURC is powerless to stop extreme increases. But even when the IURC has the ability to stand up for the needs of utility consumers, regulators frequently fail to do so. Utility regulators allow:
+
+> 
+
+> High fixed monthly charges, which make it harder to control energy bills and disproportionately impact those who use the least energy
+
+> Declining block rates, a regressive rate structure that forces those who use the least energy to pay the highest rates per kilowatt hour
+
+> Sweetheart deals for industrial customers, with residential customers picking up the tab
+
+> Unaffordable utility service compromises public health and disproportionately impacts marginalized communities.
+
+> 
+
+>  
+
+> 
+
+> Hoosier Families At Risk
+
+> 
+
+> aceee energy burden reportStruggling to afford utility service forces Hoosiers to make difficult decisions: skipping out on food or medicine to pay bills instead, resorting to risky heating methods to stay warm, or maintaining unsafe indoor temperatures (especially damaging for senior citizens, children, and people with disabilities). Losing utility service also compromises public health and safety. 
+
+> 
+
+>  
+
+> 
+
 > High utility bills also cause disproportionate harm to marginalized communities. Research from the American Council for an Energy Efficient Economy shows that Black, Hispanic, Indigenous, and low-income households pay a larger proportion of their incomes towards utility service. In addition, 77% of households who rely on the federal Energy Assistance Program include a vulnerable member: someone who is elderly, a person with disabilities, or a small child. So what, they're just gonna keep cutting off people's power until people can't work, can't eat, can't do what they gotta do? They're never gonna get their money. They think, what, cutting it off is just gonna make people magically come up with money? Most people are working from home or unemployed right now. Why don't they send them, you know, energy-efficient things to bring down their energy costs? At the end of the day, they're making a profit. I mean, come on now. So they don't care. So it's not affecting them. If I can't pay my bill, why are you gonna tack on another $3,000? What's that gonna do? It's not gonna scare me. It's just gonna make me say, y'all are crazy. Charging me more money doesn't magically give me more money. It's not like I had—it's different if I was some rich person and they knew for a fact I had money, I just wasn't paying them. But I've literally sent them certified letters that I'm destitute, essentially, so close to homelessness, trying to pull myself together. And right now, I'm supposed to be working right now because I make some money to pay my insurance so I can keep working. And so I can hopefully get some money to pay them the $330 I said I could pay them this week before they shut me off. But no, I'm sitting here now dealing with this instead of working. Literally, they're making it worse and harder for me to pay them. If they want their money, they need to just leave my shit on and let me work.
 
 ### Assistant
@@ -2458,41 +2749,76 @@ canonical_ref: ""
 > **“Add it to all filings.”**
 
 ### User
-> Financial Assistance & Payment Arrangements
-> The Commission does not provide financial assistance to customers, nor does it oversee the implementation of such programs. Utility companies and other state agencies, however, may be able to offer assistance to Hoosiers in need.
-> 
-> How do I qualify for a payment arrangement?
-> 
-> It is not uncommon for customers to experience financial setbacks, which make it difficult to remain current with a utility bill. Utilities are willing to work with customers to avoid a loss of service, as well as the expense of a disconnection. However, customers must contact the utility prior to the date of disconnection. It is important to note that a utility is only required to offer a customer a payment arrangement once in any 12-month period. If a customer has a failed payment arrangement within the last 12 months, it is at the discretion of the utility whether or not to offer a subsequent payment arrangement.
-> 
-> Payment arrangements must be fulfilled to prevent an account from being subject to immediate disconnection. To fulfill an arrangement, generally the current charges and the payment arrangement amount must be paid and posted to the account on the date agreed upon with the utility. Bear in mind that the current charges and the payment arrangement may not be due on the same date. Any deviation from the arrangement without the consent of the utility may result in the immediate disconnection of service.
-> 
-> What programs are available to help me pay my utility bills?
-> 
-> There are many organizations, agencies, and charities willing to assist Hoosiers during their time of need. However, before contacting these entities, customers should contact their utility companies and explain their situation. Often, utilities will work with customers to set up payment arrangements so that customers can pay their bills on time and avoid disconnection.
-> 
-> If you are still having trouble making a full payment, it is important to know how much you can contribute toward your utility bills and convey that amount to the organizations or agencies you contact for assistance. Some agencies and programs offering financial assistance include:
-> 
-> Low Income Home Energy Assistance Program
-> Indiana Community Action Association
-> Lifeline and Link-Up
-> Temporary Assistance for Needy Families
-> Indiana Township Association
-> United Way of Central Indiana
-> What is winter moratorium and who is protected by this law?
-> 
-> Winter moratorium is a period of time each year from December 1 through March 15 in which those individuals who have applied for benefits for home heating assistance through programs like the Low Income Home Energy Assistance Program (LIHEAP) may not have their heat source disconnected. It is important to note that these customers are still responsible for charges incurred during this time.
-> 
-> To apply for energy assistance in Indiana, please contact a Community Action Agency (CAA) near you. The CAAs are designated by federal regulation and under contract with the Indiana Housing and Community Development Authority to serve as the local agencies responsible for administering the LIHEAP. There are 24 CAAs throughout Indiana that can take applications. The CAAs are also responsible for eligibility determination and timely payment to vendors.
-> 
-> What is Lifeline? How do I apply?
-> 
-> Lifeline provides qualified customers with a discount on monthly charges from their primary home phone line, even if it’s a cellphone. Lifeline lowers the cost that eligible customers pay for setting up new phone service at their home. This includes cell phone service. To apply, contact the telephone carrier of your choice and ask if the carrier participates in the Lifeline program. Some carriers may take an application over the phone while others may provide a paper application to be completed and submitted to the provider.
-> 
-> How can I connect with other social services in my area?
-> 
-> For a list of local organizations and charities in your area that may be in a position to help you, please visit the Indiana 2-1-1 website or simply dial 2-1-1. This number will direct you to a network of information and referral services that enables anyone in need of human services in Indiana to have quick referrals to those service providers.
-> 
+> Financial Assistance & Payment Arrangements
+
+> The Commission does not provide financial assistance to customers, nor does it oversee the implementation of such programs. Utility companies and other state agencies, however, may be able to offer assistance to Hoosiers in need.
+
+> 
+
+> How do I qualify for a payment arrangement?
+
+> 
+
+> It is not uncommon for customers to experience financial setbacks, which make it difficult to remain current with a utility bill. Utilities are willing to work with customers to avoid a loss of service, as well as the expense of a disconnection. However, customers must contact the utility prior to the date of disconnection. It is important to note that a utility is only required to offer a customer a payment arrangement once in any 12-month period. If a customer has a failed payment arrangement within the last 12 months, it is at the discretion of the utility whether or not to offer a subsequent payment arrangement.
+
+> 
+
+> Payment arrangements must be fulfilled to prevent an account from being subject to immediate disconnection. To fulfill an arrangement, generally the current charges and the payment arrangement amount must be paid and posted to the account on the date agreed upon with the utility. Bear in mind that the current charges and the payment arrangement may not be due on the same date. Any deviation from the arrangement without the consent of the utility may result in the immediate disconnection of service.
+
+> 
+
+> What programs are available to help me pay my utility bills?
+
+> 
+
+> There are many organizations, agencies, and charities willing to assist Hoosiers during their time of need. However, before contacting these entities, customers should contact their utility companies and explain their situation. Often, utilities will work with customers to set up payment arrangements so that customers can pay their bills on time and avoid disconnection.
+
+> 
+
+> If you are still having trouble making a full payment, it is important to know how much you can contribute toward your utility bills and convey that amount to the organizations or agencies you contact for assistance. Some agencies and programs offering financial assistance include:
+
+> 
+
+> Low Income Home Energy Assistance Program
+
+> Indiana Community Action Association
+
+> Lifeline and Link-Up
+
+> Temporary Assistance for Needy Families
+
+> Indiana Township Association
+
+> United Way of Central Indiana
+
+> What is winter moratorium and who is protected by this law?
+
+> 
+
+> Winter moratorium is a period of time each year from December 1 through March 15 in which those individuals who have applied for benefits for home heating assistance through programs like the Low Income Home Energy Assistance Program (LIHEAP) may not have their heat source disconnected. It is important to note that these customers are still responsible for charges incurred during this time.
+
+> 
+
+> To apply for energy assistance in Indiana, please contact a Community Action Agency (CAA) near you. The CAAs are designated by federal regulation and under contract with the Indiana Housing and Community Development Authority to serve as the local agencies responsible for administering the LIHEAP. There are 24 CAAs throughout Indiana that can take applications. The CAAs are also responsible for eligibility determination and timely payment to vendors.
+
+> 
+
+> What is Lifeline? How do I apply?
+
+> 
+
+> Lifeline provides qualified customers with a discount on monthly charges from their primary home phone line, even if it’s a cellphone. Lifeline lowers the cost that eligible customers pay for setting up new phone service at their home. This includes cell phone service. To apply, contact the telephone carrier of your choice and ask if the carrier participates in the Lifeline program. Some carriers may take an application over the phone while others may provide a paper application to be completed and submitted to the provider.
+
+> 
+
+> How can I connect with other social services in my area?
+
+> 
+
+> For a list of local organizations and charities in your area that may be in a position to help you, please visit the Indiana 2-1-1 website or simply dial 2-1-1. This number will direct you to a network of information and referral services that enables anyone in need of human services in Indiana to have quick referrals to those service providers.
+
+> 
+
 > Learn About Your Rates
 
 ### Assistant
@@ -3071,29 +3397,52 @@ canonical_ref: ""
 > Just say **“morning script please.”**
 
 ### User
-> IURC Online Services Portal
-> 
-> Welcome to Indiana Utility Regulatory Commission’s Online Services Portal!
-> The Indiana Utility Regulatory Commission (Commission) is an administrative agency that hears evidence in cases filed before it and makes decisions based on the evidence presented in those cases.
-> The mission of the Commission’s Consumer Affairs Division is to ensure that utilities are in compliance with Commission rules and regulations. Through the Commission’s online services, consumers can file complaints and check the status of an existing complaint.
-> The Commission’s online services also offer the ability to file legal documents anytime and from anywhere and to search for case documents. Documents can be accessed by entering the case's five-digit docket number. If you do not have this information, the system allows you to search by date, industry, petition type, or party.
-> Scroll to the bottom of this page to access the User Manual and FAQs for assistance.
-> Online Portal Access
-> 
-> Beginning Monday, Aug. 24, 2020, all users will need to create an Access Indiana account in order to submit filings or CAD complaints/inquiries. The “sign-in” button on the Portal will now direct to Access Indiana. Once users sign in through Access Indiana (and you must create an account if you don’t have one already), it will direct you back to the Portal, which will look and function the exact same as it does now, both for submitting filings and CAD complaints/inquiries. Whether or not you have a current account on the Online Services Portal, you MUST create an Access Indiana account. Failing to do so will mean you cannot access the Portal to submit filings. 
-> 
-> System Notice: Email filing notification Links
-> The Commission is aware of a technical issue regarding the document links that are being sent out through our email filing notification system. As we are working to resolve the issue, if you are signed up to receive those notifications, please ignore the link in the email and, instead, use our Online Service Portal to view documents in docketed cases. We apologize for the inconvenience.
-> 
-> Detailed instructions on creating an Access Indiana account can be found here (link to PDF attachment). If you have any difficulties setting up an account or have questions, please contact an IT Support Specialist at URCITSupport@urc.IN.gov. If you are LOCKED OUT of you Access Indiana account, please contact Access Indiana's customer support line at (866) 960-3023. Thank you.
-> Online Services  
-> File a Consumer Complaint
-> File a Document
-> Search for a Docketed Case
-> File a Utility Annual Report
-> Subscribe to a Legal Case
-> Search for a Communications
-> Non-Docketed Case
+> IURC Online Services Portal
+
+> 
+
+> Welcome to Indiana Utility Regulatory Commission’s Online Services Portal!
+
+> The Indiana Utility Regulatory Commission (Commission) is an administrative agency that hears evidence in cases filed before it and makes decisions based on the evidence presented in those cases.
+
+> The mission of the Commission’s Consumer Affairs Division is to ensure that utilities are in compliance with Commission rules and regulations. Through the Commission’s online services, consumers can file complaints and check the status of an existing complaint.
+
+> The Commission’s online services also offer the ability to file legal documents anytime and from anywhere and to search for case documents. Documents can be accessed by entering the case's five-digit docket number. If you do not have this information, the system allows you to search by date, industry, petition type, or party.
+
+> Scroll to the bottom of this page to access the User Manual and FAQs for assistance.
+
+> Online Portal Access
+
+> 
+
+> Beginning Monday, Aug. 24, 2020, all users will need to create an Access Indiana account in order to submit filings or CAD complaints/inquiries. The “sign-in” button on the Portal will now direct to Access Indiana. Once users sign in through Access Indiana (and you must create an account if you don’t have one already), it will direct you back to the Portal, which will look and function the exact same as it does now, both for submitting filings and CAD complaints/inquiries. Whether or not you have a current account on the Online Services Portal, you MUST create an Access Indiana account. Failing to do so will mean you cannot access the Portal to submit filings. 
+
+> 
+
+> System Notice: Email filing notification Links
+
+> The Commission is aware of a technical issue regarding the document links that are being sent out through our email filing notification system. As we are working to resolve the issue, if you are signed up to receive those notifications, please ignore the link in the email and, instead, use our Online Service Portal to view documents in docketed cases. We apologize for the inconvenience.
+
+> 
+
+> Detailed instructions on creating an Access Indiana account can be found here (link to PDF attachment). If you have any difficulties setting up an account or have questions, please contact an IT Support Specialist at URCITSupport@urc.IN.gov. If you are LOCKED OUT of you Access Indiana account, please contact Access Indiana's customer support line at (866) 960-3023. Thank you.
+
+> Online Services  
+
+> File a Consumer Complaint
+
+> File a Document
+
+> Search for a Docketed Case
+
+> File a Utility Annual Report
+
+> Subscribe to a Legal Case
+
+> Search for a Communications
+
+> Non-Docketed Case
+
 > Search for a 30-Day Case
 
 ### Assistant
@@ -3790,33 +4139,60 @@ canonical_ref: ""
 > Paste the header row and we go.
 
 ### User
-> {'asset_pointer': 'sediment://file_000000000c9471f5ba35e553e3f066b1', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 139, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 489355, 'width': 2048}ToDo Name	Associated Team	Owner	Custom Status	Tags	Start Date	Due Date	Duration	Priority	Created By	% Completed	Completion Date	Work hours	Billable Hours	Planned Cost	Actual Cost	Budget Balance	Forecasted Hours	Forecasted Cost	Billing Type	Budgeted Hours	Cost Budget	Cost Per Hour	ToDo Comment	ToDo Description	Duration Type	Schedule Status	Phase Start Date	Phase End Date	Project Name	Parent ToDo ID	Parent ToDo System ID	Parent ToDo Name	ToDo ID	ToDo System ID	Project Group	Non Billable Hours	Total Log Hours	Individual Work	Work Hours Per Owner	Work Hours Unit	Dependency status	Difference	Project ID	Project Status	ToDo URL	Task List ID	Critical ToDo	Task List Name	Phase Name	Created Time	Predecessors	Successors	Last Modified Time
-> Project Wiki\	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T29	2500469000000621537	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621537	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Canvas Map	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T30	2500469000000621543	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621543	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
-> Task Lists	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T31	2500469000000621549	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621549	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
-> Status Logs	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T32	2500469000000621555	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621555	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
-> Meter Error Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T23	2500469000000621497	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621497	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Load Profile Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T24	2500469000000621503	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621503	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Public Pattern Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T25	2500469000000621509	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621509	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Hardship Statement	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T26	2500469000000621515	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621515	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Summary for Regulators	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T27	2500469000000621521	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621521	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> PDF Export	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T28	2500469000000621527	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621527	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Meter test request	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T19	2500469000000621469	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621469	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> Billing correction request	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T20	2500469000000621475	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621475	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> ADA response demand	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T21	2500469000000621481	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621481	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> Payment plan proposal	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T22	2500469000000621487	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621487	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
-> LIHEAP application	Not Associated	Unassigned User	Open				10:00	None	Cody Rice-Velasquez	0	-	10:00	0:00	$ 290.00	-	$ 290.00	10:00	$ 290.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T15	2500469000000621433	Personal	0:00	0:00	Unassigned User-10:00 hrs	10:00	hrs	Independent Tasks	(+) 10:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621433	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> ADA protections	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T16	2500469000000621439	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621439	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> Dispute status documentation	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T17	2500469000000621445	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621445	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> Winter moratorium confirmation	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T18	2500469000000621451	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621451	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
-> 3 fully drafted filings	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T12	2500469000000621411	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621411	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
-> Exhibits A–G	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T13	2500469000000621417	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621417	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
-> Filing confirmation screenshots	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T14	2500469000000621423	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621423	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
-> 1.1 Upload Current Bill	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T1	2500469000000621289	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621289	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
-> 1.2 Upload Meter Photo (DEL + M#)	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T2	2500469000000621295	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621295	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
-> 1.3 Import Historical Bills	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T3	2500469000000621301	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621301	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
-> 1.4 Save ADA Letters + Certified Mail Receipts	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T4	2500469000000621307	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621307	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
-> 1.5 Save Public Evidence (FB + WHIO)	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T5	2500469000000621313	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621313	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:59 AM
+> {'asset_pointer': 'sediment://file_000000000c9471f5ba35e553e3f066b1', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 139, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 489355, 'width': 2048}ToDo Name	Associated Team	Owner	Custom Status	Tags	Start Date	Due Date	Duration	Priority	Created By	% Completed	Completion Date	Work hours	Billable Hours	Planned Cost	Actual Cost	Budget Balance	Forecasted Hours	Forecasted Cost	Billing Type	Budgeted Hours	Cost Budget	Cost Per Hour	ToDo Comment	ToDo Description	Duration Type	Schedule Status	Phase Start Date	Phase End Date	Project Name	Parent ToDo ID	Parent ToDo System ID	Parent ToDo Name	ToDo ID	ToDo System ID	Project Group	Non Billable Hours	Total Log Hours	Individual Work	Work Hours Per Owner	Work Hours Unit	Dependency status	Difference	Project ID	Project Status	ToDo URL	Task List ID	Critical ToDo	Task List Name	Phase Name	Created Time	Predecessors	Successors	Last Modified Time
+
+> Project Wiki\	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T29	2500469000000621537	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621537	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Canvas Map	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T30	2500469000000621543	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621543	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
+
+> Task Lists	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T31	2500469000000621549	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621549	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
+
+> Status Logs	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T32	2500469000000621555	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621555	2500469000000621533	false	Document everything, track tasks, maintain clarity.	7. Project Management & Wiki Module	12/07/2025 12:58 AM			12/07/2025 12:58 AM
+
+> Meter Error Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T23	2500469000000621497	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621497	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Load Profile Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T24	2500469000000621503	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621503	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Public Pattern Packet	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T25	2500469000000621509	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621509	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Hardship Statement	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T26	2500469000000621515	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621515	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Summary for Regulators	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T27	2500469000000621521	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621521	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> PDF Export	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T28	2500469000000621527	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621527	2500469000000621493	false	Produce a unified master packet for the regulator.	6. Case Packet Assembly Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Meter test request	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T19	2500469000000621469	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621469	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> Billing correction request	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T20	2500469000000621475	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621475	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> ADA response demand	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T21	2500469000000621481	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621481	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> Payment plan proposal	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T22	2500469000000621487	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621487	2500469000000621465	false	Submit demand letters and request action from AES.	5. AES Direct Response Module	12/07/2025 12:57 AM			12/07/2025 12:57 AM
+
+> LIHEAP application	Not Associated	Unassigned User	Open				10:00	None	Cody Rice-Velasquez	0	-	10:00	0:00	$ 290.00	-	$ 290.00	10:00	$ 290.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T15	2500469000000621433	Personal	0:00	0:00	Unassigned User-10:00 hrs	10:00	hrs	Independent Tasks	(+) 10:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621433	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> ADA protections	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T16	2500469000000621439	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621439	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> Dispute status documentation	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T17	2500469000000621445	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621445	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> Winter moratorium confirmation	Not Associated	Unassigned User	Open				05:00	None	Cody Rice-Velasquez	0	-	05:00	0:00	$ 145.00	-	$ 145.00	05:00	$ 145.00	None	-	-	$ 29.00			hrs	-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T18	2500469000000621451	Personal	0:00	0:00	Unassigned User-05:00 hrs	05:00	hrs	Independent Tasks	(+) 05:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621451	2500469000000621429	false	Activate legal and regulatory shields against disconnection.	4. Consumer Protections Module	12/07/2025 12:56 AM			12/07/2025 12:56 AM
+
+> 3 fully drafted filings	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T12	2500469000000621411	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621411	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
+
+> Exhibits A–G	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T13	2500469000000621417	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621417	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
+
+> Filing confirmation screenshots	Not Associated	Unassigned User	Open				-	None	Cody Rice-Velasquez	0	-	00:00	0:00	-	-	-	00:00	-	None	-	-	$ 29.00				-	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T14	2500469000000621423	Personal	0:00	0:00	Unassigned User-100 %	100	%/day	Independent Tasks	00:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621423	2500469000000621407	false	Prepare and file complaints with IURC, OUCC, DOJ ADA.	3. Regulatory Filings Module	12/07/2025 12:55 AM			12/07/2025 12:55 AM
+
+> 1.1 Upload Current Bill	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T1	2500469000000621289	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621289	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
+
+> 1.2 Upload Meter Photo (DEL + M#)	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T2	2500469000000621295	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621295	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
+
+> 1.3 Import Historical Bills	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T3	2500469000000621301	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621301	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
+
+> 1.4 Save ADA Letters + Certified Mail Receipts	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T4	2500469000000621307	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621307	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:58 AM
+
+> 1.5 Save Public Evidence (FB + WHIO)	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T5	2500469000000621313	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621313	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:59 AM
+
 > Logs	Not Associated	Unassigned User	Open		12/08/2025 04:00 PM	12/08/2025 06:00 PM	02:00	High	Cody Rice-Velasquez	0	-	02:00	0:00	$ 58.00	-	$ 58.00	02:00	$ 58.00	None	-	-	$ 29.00			hrs	Upcoming	12/07/2025 12:00 AM	12/31/2025 11:59 PM	AES Utility Dispute & Regulatory Action	-	-		AU1-T6	2500469000000621319	Personal	0:00	0:00	Unassigned User-02:00 hrs	02:00	hrs	Independent Tasks	(+) 02:00	QI-14	Active	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000621319	2500469000000621285	true	1. Evidence Collection Tasks	1. Evidence Collection Module	12/07/2025 12:53 AM			12/07/2025 12:54 AM
 
 ### Assistant
@@ -4878,49 +5254,92 @@ canonical_ref: ""
 > **“Lock this structure and update the index files.”**
 
 ### User
-> gemeni said this. rganizing your case files digitally using a consistent and logical directory structure is crucial for easy navigation, retrieval, and sharing with legal professionals. A hierarchical "tree" structure ensures all documents are logically grouped and easy to find.
-> Here is a recommended directory hierarchy:
-> [Case Name or File Number]
-> ├── 00_Intake_and_Admin
-> │   ├── Client_Intake_Forms
-> │   └── Retainer_Agreement
-> ├── 10_Pleadings_and_Filings (Filed court documents)
-> │   ├── Complaint_and_Summons
-> │   ├── Motions
-> │   └── Orders
-> ├── 20_Correspondence
-> │   ├── Client_Correspondence
-> │   ├── Opposing_Counsel_Correspondence
-> │   └── Third_Party_Correspondence (Energy Provider, Agencies, etc.)
-> ├── 30_Discovery (Evidence gathering phase)
-> │   ├── Requests_for_Production_Propounded
-> │   ├── Requests_for_Production_Received
-> │   ├── Interrogatories_Propounded
-> │   └── Interrogatories_Received
-> ├── 40_Evidence_and_Exhibits
-> │   ├── Incident_Logs_and_Timeline
-> │   ├── Medical_Documentation (HIPAA sensitive)
-> │   ├── Utility_Records_and_Bills
-> │   ├── Photos_and_Videos
-> │   └── Witness_Statements_and_Info
-> ├── 50_Legal_Research
-> │   ├── ADA_Title_III_Statutes
-> │   ├── Case_Law_Precedent
-> │   └── Internal_Memos
-> ├── 60_Financial_Docs
-> │   ├── Invoices_and_Billing
-> │   └── Expense_Reports
-> └── 70_Final_Docs (Trial/Settlement related)
->     ├── Deposition_Transcripts
->     ├── Settlement_Offers
->     └── Trial_Exhibits
-> Key Organizational Principles:
-> Use Numbered Folders: The leading numbers (00, 10, 20...) ensure folders maintain a specific, logical order regardless of alphabetical sorting by your operating system.
-> Granular Subfolders: Break down major categories into specific sub-topics. For example, 40_Evidence_and_Exhibits is where the core of your case lives, separated by type.
-> Consistent File Naming Convention: Within these folders, use a clear file naming structure that includes the date first, followed by a description and document type.
-> Example: 2025-10-26_Email_from_JSmith_re_Service_Disruption.pdf
-> Example: 2025-11-01_Incident_Log_Entry_Bathroom_Access.docx
-> Example: 2025-11-15_Dr_Smith_Medical_Statement_ADA.pdf
+> gemeni said this. rganizing your case files digitally using a consistent and logical directory structure is crucial for easy navigation, retrieval, and sharing with legal professionals. A hierarchical "tree" structure ensures all documents are logically grouped and easy to find.
+
+> Here is a recommended directory hierarchy:
+
+> [Case Name or File Number]
+
+> ├── 00_Intake_and_Admin
+
+> │   ├── Client_Intake_Forms
+
+> │   └── Retainer_Agreement
+
+> ├── 10_Pleadings_and_Filings (Filed court documents)
+
+> │   ├── Complaint_and_Summons
+
+> │   ├── Motions
+
+> │   └── Orders
+
+> ├── 20_Correspondence
+
+> │   ├── Client_Correspondence
+
+> │   ├── Opposing_Counsel_Correspondence
+
+> │   └── Third_Party_Correspondence (Energy Provider, Agencies, etc.)
+
+> ├── 30_Discovery (Evidence gathering phase)
+
+> │   ├── Requests_for_Production_Propounded
+
+> │   ├── Requests_for_Production_Received
+
+> │   ├── Interrogatories_Propounded
+
+> │   └── Interrogatories_Received
+
+> ├── 40_Evidence_and_Exhibits
+
+> │   ├── Incident_Logs_and_Timeline
+
+> │   ├── Medical_Documentation (HIPAA sensitive)
+
+> │   ├── Utility_Records_and_Bills
+
+> │   ├── Photos_and_Videos
+
+> │   └── Witness_Statements_and_Info
+
+> ├── 50_Legal_Research
+
+> │   ├── ADA_Title_III_Statutes
+
+> │   ├── Case_Law_Precedent
+
+> │   └── Internal_Memos
+
+> ├── 60_Financial_Docs
+
+> │   ├── Invoices_and_Billing
+
+> │   └── Expense_Reports
+
+> └── 70_Final_Docs (Trial/Settlement related)
+
+>     ├── Deposition_Transcripts
+
+>     ├── Settlement_Offers
+
+>     └── Trial_Exhibits
+
+> Key Organizational Principles:
+
+> Use Numbered Folders: The leading numbers (00, 10, 20...) ensure folders maintain a specific, logical order regardless of alphabetical sorting by your operating system.
+
+> Granular Subfolders: Break down major categories into specific sub-topics. For example, 40_Evidence_and_Exhibits is where the core of your case lives, separated by type.
+
+> Consistent File Naming Convention: Within these folders, use a clear file naming structure that includes the date first, followed by a description and document type.
+
+> Example: 2025-10-26_Email_from_JSmith_re_Service_Disruption.pdf
+
+> Example: 2025-11-01_Incident_Log_Entry_Bathroom_Access.docx
+
+> Example: 2025-11-15_Dr_Smith_Medical_Statement_ADA.pdf
+
 > This structure provides a clean, predictable system for anyone working on the case, allowing easy navigation from the general down to the specific document.
 
 ### Assistant
@@ -6070,38 +6489,70 @@ canonical_ref: ""
 > If you want the **Zoho task lists** renamed to mirror `00–90` next, we can refit that whole project so everything lines up perfectly.
 
 ### User
-> tegory)
-> SKIP  requirements.txt  (unclassified: filename does not match convention or unknown category)
-> SKIP  TE_smart-meter-teardown-engineering-report_en.pdf  (unclassified: filename does not match convention or unknown category)
-> SKIP  WHAT_TO_EXPECT.md  (unclassified: filename does not match convention or unknown category)
-> PS C:\QiOS_v1\projects\utility_aes_dispute> 
-> PS C:\QiOS_v1\projects\utility_aes_dispute> # Actually move files
-> PS C:\QiOS_v1\projects\utility_aes_dispute> python auto_sort_aes.py
-> SKIP  aes_case_roadmap.canvas  (unclassified: filename does not match convention or unknown category)
-> SKIP  AES_Dispute_INDEX.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  AES_Folder_Map.canvas  (unclassified: filename does not match convention or unknown category)
-> SKIP  EXECUTION_CHECKLIST.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  extract_aes_bills.py  (unclassified: filename does not match convention or unknown category)
-> SKIP  FILE_REFERENCES.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  forensic_analysis_dataset.json  (unclassified: filename does not match convention or unknown category)
-> SKIP  index-lite.json  (unclassified: filename does not match convention or unknown category) 
-> SKIP  index.json  (unclassified: filename does not match convention or unknown category)      
-> SKIP  index.map.md  (unclassified: filename does not match convention or unknown category)    
-> SKIP  index.schema.json  (unclassified: filename does not match convention or unknown category)
-> SKIP  LIHEAP_APPLICATION_GUIDE.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  MORNING_SCRIPT.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  PROJECT_MASTER.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  PROJECT_MODULES.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  PROJECT_TASKS.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  PROJECT_WIKI.md  (unclassified: filename does not match convention or unknown category) 
-> SKIP  QUICK_REFERENCE_PHONE_SCRIPT.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  README_EXTRACTION_TOOL.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  READY_TO_PASTE_INDEX.md  (unclassified: filename does not match convention or unknown category)
-> SKIP  requirements.txt  (unclassified: filename does not match convention or unknown category)
-> SKIP  TE_smart-meter-teardown-engineering-report_en.pdf  (unclassified: filename does not match convention or unknown category)
-> SKIP  WHAT_TO_EXPECT.md  (unclassified: filename does not match convention or unknown category)
-> PS C:\QiOS_v1\projects\utility_aes_dispute> 
-> PS C:\QiOS_v1\projects\utility_aes_dispute> # Process files from a specific inbox folder
+> tegory)
+
+> SKIP  requirements.txt  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  TE_smart-meter-teardown-engineering-report_en.pdf  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  WHAT_TO_EXPECT.md  (unclassified: filename does not match convention or unknown category)
+
+> PS C:\QiOS_v1\projects\utility_aes_dispute> 
+
+> PS C:\QiOS_v1\projects\utility_aes_dispute> # Actually move files
+
+> PS C:\QiOS_v1\projects\utility_aes_dispute> python auto_sort_aes.py
+
+> SKIP  aes_case_roadmap.canvas  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  AES_Dispute_INDEX.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  AES_Folder_Map.canvas  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  EXECUTION_CHECKLIST.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  extract_aes_bills.py  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  FILE_REFERENCES.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  forensic_analysis_dataset.json  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  index-lite.json  (unclassified: filename does not match convention or unknown category) 
+
+> SKIP  index.json  (unclassified: filename does not match convention or unknown category)      
+
+> SKIP  index.map.md  (unclassified: filename does not match convention or unknown category)    
+
+> SKIP  index.schema.json  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  LIHEAP_APPLICATION_GUIDE.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  MORNING_SCRIPT.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  PROJECT_MASTER.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  PROJECT_MODULES.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  PROJECT_TASKS.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  PROJECT_WIKI.md  (unclassified: filename does not match convention or unknown category) 
+
+> SKIP  QUICK_REFERENCE_PHONE_SCRIPT.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  README_EXTRACTION_TOOL.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  READY_TO_PASTE_INDEX.md  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  requirements.txt  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  TE_smart-meter-teardown-engineering-report_en.pdf  (unclassified: filename does not match convention or unknown category)
+
+> SKIP  WHAT_TO_EXPECT.md  (unclassified: filename does not match convention or unknown category)
+
+> PS C:\QiOS_v1\projects\utility_aes_dispute> 
+
+> PS C:\QiOS_v1\projects\utility_aes_dispute> # Process files from a specific inbox folder
+
 > PS C:\QiOS_v1\projects\utility_aes_dispute> python auto_sort_aes.py --inbox ./_INBOX
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Mortgage Payment Analysis"
 slug: "mortgage_payment_analysis"
 created_at: "2026-04-01 05:09:29"
-updated_at: "2026-04-01 05:09:29"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -85,91 +85,176 @@ canonical_ref: ""
 > 2. Contact FCFCU Member Solutions (317-916-7700 or 800-473-2328) referencing account 661563 / loan 1520 and request a full payment history + reinstatement quote.
 > 3. Check Marion County Recorder/Assessor online for any new filings (foreclosure complaint or lis pendens).
 > 
-> Provide any newer statements, FCFCU portal login screenshots, or specific dates and I can dig deeper. This looks like a classic case of payments attempted but not sticking due to NSF/fee snowball. **Updated Good-Faith Assessment (Incorporating December 4, 2024 Letter + 2025 Follow-Ups)**
-> 
-> **Short answer**:  
-> **Yes — the debtor (Cody Rice-Velasquez) demonstrated clear good faith.**  
-> He made **multiple documented payment attempts** in 2024 **and** engaged in **repeated, escalating outreach** for help (phone, email, formal letter, and certified mail in 2025). This meets or exceeds the reasonable-effort standard courts and lenders use in Indiana foreclosure cases.
-> 
-> ### 1. New Evidence from the December 4, 2024 Letter
-> - **Formal written request** for loss mitigation (temporary payment reduction, restructuring, or any available option).
-> - **Detailed hardship explanation**: Internal theft, fraud, marriage breakdown, immigration legal battles, medical issues, and closure of three businesses — all tied directly to the delinquency.
-> - **Prior outreach claimed**: Reached FCFCU **twice** (when only 1–2 payments behind) seeking solutions; told no refinancing or reduction options were available.
-> - **Sent via USPS** (as you confirmed) after **multiple email and phone attempts**.
-> - **Tone and intent**: Emphasizes loyalty to FCFCU (referrals over years), willingness to work on any solution, and desire to keep the home — classic good-faith language.
-> 
-> ### 2. Additional 2025 Follow-Ups You Mentioned
-> You noted **two certified notices in 2025** specifically addressing help and disabilities. These are **strong additional evidence** of continued good-faith communication **after** the December 2024 letter and well past the original October 13, 2024 cure deadline.
-> 
-> ### 3. Updated Good-Faith Summary
-> 
-> | Factor                          | Evidence (Now Including New Letter + 2025 Notices) | Strength of Good Faith |
-> |--------------------------------|-----------------------------------------------------|------------------------|
-> | **Payment attempts**           | Multiple confirmed portal payments (Apr–May 2024: >$2,800 total) | Strong (unchanged) |
-> | **Communication with lender**  | Phone + email (pre-Dec 2024) → Formal letter (Dec 4, 2024) → Two certified notices (2025) | **Very Strong** (new) |
-> | **Hardship documentation**     | Detailed written explanation of theft, fraud, medical, legal, and business issues | Strong (new) |
-> | **Prior informal outreach**    | Twice contacted FCFCU when only 1–2 payments behind | Strong (new claim in letter) |
-> | **Response to default notice** | Proactive letter + certified follow-ups after Sept 2024 default | Strong |
-> | **Overall pattern**            | Payments attempted **and** help repeatedly sought | **Clear good faith** |
-> 
-> **Indiana context**: Lenders must generally engage in good-faith loss-mitigation discussions (especially pre-foreclosure). Borrower good faith is shown by payment efforts + reasonable communication. Your records now show **both**.
-> 
-> ### Bottom Line
-> The debtor **acted in good faith** by:
-> - Actively trying to pay (portal confirmations).
-> - Reaching out repeatedly for assistance (phone/email → formal letter → certified mail).
-> - Documenting hardships in writing.
-> 
-> This is a **much stronger position** than the earlier records alone suggested. The absence of any lender response or resolution in the provided files does **not** negate the debtor’s efforts.
-> 
-> If you have copies of the 2025 certified notices, any email threads, or phone logs, they would further solidify this. Otherwise, this letter + your description is solid evidence of good-faith attempts to resolve the delinquency and avoid foreclosure. also i dont think we can stress enough that they literally no once have ever addressed responded to any of my requests for help or notices they were flat out ignored and the few times I could handle a phone all with them it was just, no there is nothign to do you just need to pay. **Bank Bad Faith & Foreseeable Harm Analysis (Updated with Dec 4, 2024 Letter + 2025 Certified Notices)**
-> 
-> **Short answer**:  
-> **No clear evidence of bad faith** by FCFCU in the provided records (no predatory practices, no illegal fees, no improper accounting).  
-> **However**, the bank’s **complete lack of response** to your multiple good-faith contacts (phone/email → formal letter → two certified notices in 2025) could be argued as a failure to engage in reasonable loss mitigation.  
-> 
-> **Foreseeable harm**: **Yes** — once you sent the detailed hardship letter and followed up in writing, the bank could reasonably foresee that ignoring it would cause escalating fees, deeper default, credit damage, and risk of foreclosure/loss of your home.
-> 
-> ### 1. Evidence of Bank Behavior (What the Documents Actually Show)
-> - **Payment handling (NSF reversals)**: The June 26 and Aug 27, 2024 NSF notices (with the handwritten “All payments have now been canceled” note) are standard when funds are insufficient. This is **not bad faith** — it’s routine banking procedure. The reversals explain why the default ballooned to $4,726.27 by Sept 2024.
-> - **Default & collection notices**: FCFCU sent proper written notices (Sept 2024 default with 30-day cure period, earlier collection letters). They followed basic legal notice requirements.
-> - **Response to your outreach**:
->   - You state multiple phone/email attempts **before** Dec 2024.
->   - Formal hardship letter sent Dec 4, 2024 via USPS (detailed hardships, prior contacts, request for any assistance).
->   - Two additional **certified notices in 2025** specifically about help and disabilities.
->   - **Result in records**: Zero acknowledgment, reply, counter-offer, or denial from FCFCU appears in any provided document, log, or screenshot.
-> 
-> The attached PDF you just shared contains **only your letter** — no bank stamp, reply, or internal note.
-> 
-> ### 2. Bad Faith Assessment
-> | Potential Bad-Faith Indicator          | Evidence in Records? | Assessment |
-> |----------------------------------------|----------------------|------------|
-> | Unfair payment processing / hidden fees | No                   | Standard NSF reversals; no evidence of improper fees |
-> | Failure to provide loss-mitigation options | Yes (your letter claims two prior denials; no response to Dec 2024/2025 contacts) | **Possible issue** — credit unions are expected to work with members in hardship |
-> | Ignoring formal hardship request       | Yes (no reply to certified/USPS letters) | **Potential lack of reciprocal good faith** |
-> | Predatory or illegal actions           | No                   | None found |
-> | Misrepresentation of account status    | No                   | Notices were clear and timely |
-> 
-> **Bottom line on bad faith**: The documents do **not** show intentional wrongdoing or illegal conduct. However, the **silence after your repeated, documented requests** (especially the formal Dec 4, 2024 letter citing specific hardships) could be viewed by a court or regulator as failing to act in a commercially reasonable or member-focused manner — particularly for a credit union that markets itself as community-oriented.
-> 
-> ### 3. Foreseeable Harm
-> Once FCFCU received your Dec 4, 2024 letter (which explicitly listed theft, fraud, medical issues, business closures, etc.) **and** your 2025 certified follow-ups, the bank could reasonably foresee these harms:
-> - Continued accrual of late fees and interest on the growing $4,726+ arrears.
-> - Escalation from “late” to full default/foreclosure proceedings.
-> - Damage to your credit score and future borrowing ability.
-> - Emotional/financial stress and potential loss of the home at 4817 Shadow Pointe Drive.
-> - Further business/personal hardship for a member who had referred others to them.
-> 
-> This harm was **foreseeable** because you put the bank on clear written notice of your situation and willingness to work on any solution.
-> 
-> ### Overall Conclusion
-> - **Debtor (you)**: Strong good-faith record (payments attempted + repeated outreach).
-> - **Bank (FCFCU)**: No smoking-gun bad faith, but **notable inaction** after your formal requests. This imbalance strengthens your position if foreclosure or litigation arises.
-> - **Foreseeable harm**: Clearly present and documented once the bank had your hardship letter.
-> 
-> **Next-step recommendation** (if you want to use this):  
-> Keep proof of delivery for the certified 2025 notices (USPS tracking). If FCFCU still has not responded, this pattern of non-engagement after documented good-faith attempts can be powerful in any loss-mitigation discussion, mediation, or court proceeding.
-> 
+> Provide any newer statements, FCFCU portal login screenshots, or specific dates and I can dig deeper. This looks like a classic case of payments attempted but not sticking due to NSF/fee snowball. **Updated Good-Faith Assessment (Incorporating December 4, 2024 Letter + 2025 Follow-Ups)**
+
+> 
+
+> **Short answer**:  
+
+> **Yes — the debtor (Cody Rice-Velasquez) demonstrated clear good faith.**  
+
+> He made **multiple documented payment attempts** in 2024 **and** engaged in **repeated, escalating outreach** for help (phone, email, formal letter, and certified mail in 2025). This meets or exceeds the reasonable-effort standard courts and lenders use in Indiana foreclosure cases.
+
+> 
+
+> ### 1. New Evidence from the December 4, 2024 Letter
+
+> - **Formal written request** for loss mitigation (temporary payment reduction, restructuring, or any available option).
+
+> - **Detailed hardship explanation**: Internal theft, fraud, marriage breakdown, immigration legal battles, medical issues, and closure of three businesses — all tied directly to the delinquency.
+
+> - **Prior outreach claimed**: Reached FCFCU **twice** (when only 1–2 payments behind) seeking solutions; told no refinancing or reduction options were available.
+
+> - **Sent via USPS** (as you confirmed) after **multiple email and phone attempts**.
+
+> - **Tone and intent**: Emphasizes loyalty to FCFCU (referrals over years), willingness to work on any solution, and desire to keep the home — classic good-faith language.
+
+> 
+
+> ### 2. Additional 2025 Follow-Ups You Mentioned
+
+> You noted **two certified notices in 2025** specifically addressing help and disabilities. These are **strong additional evidence** of continued good-faith communication **after** the December 2024 letter and well past the original October 13, 2024 cure deadline.
+
+> 
+
+> ### 3. Updated Good-Faith Summary
+
+> 
+
+> | Factor                          | Evidence (Now Including New Letter + 2025 Notices) | Strength of Good Faith |
+
+> |--------------------------------|-----------------------------------------------------|------------------------|
+
+> | **Payment attempts**           | Multiple confirmed portal payments (Apr–May 2024: >$2,800 total) | Strong (unchanged) |
+
+> | **Communication with lender**  | Phone + email (pre-Dec 2024) → Formal letter (Dec 4, 2024) → Two certified notices (2025) | **Very Strong** (new) |
+
+> | **Hardship documentation**     | Detailed written explanation of theft, fraud, medical, legal, and business issues | Strong (new) |
+
+> | **Prior informal outreach**    | Twice contacted FCFCU when only 1–2 payments behind | Strong (new claim in letter) |
+
+> | **Response to default notice** | Proactive letter + certified follow-ups after Sept 2024 default | Strong |
+
+> | **Overall pattern**            | Payments attempted **and** help repeatedly sought | **Clear good faith** |
+
+> 
+
+> **Indiana context**: Lenders must generally engage in good-faith loss-mitigation discussions (especially pre-foreclosure). Borrower good faith is shown by payment efforts + reasonable communication. Your records now show **both**.
+
+> 
+
+> ### Bottom Line
+
+> The debtor **acted in good faith** by:
+
+> - Actively trying to pay (portal confirmations).
+
+> - Reaching out repeatedly for assistance (phone/email → formal letter → certified mail).
+
+> - Documenting hardships in writing.
+
+> 
+
+> This is a **much stronger position** than the earlier records alone suggested. The absence of any lender response or resolution in the provided files does **not** negate the debtor’s efforts.
+
+> 
+
+> If you have copies of the 2025 certified notices, any email threads, or phone logs, they would further solidify this. Otherwise, this letter + your description is solid evidence of good-faith attempts to resolve the delinquency and avoid foreclosure. also i dont think we can stress enough that they literally no once have ever addressed responded to any of my requests for help or notices they were flat out ignored and the few times I could handle a phone all with them it was just, no there is nothign to do you just need to pay. **Bank Bad Faith & Foreseeable Harm Analysis (Updated with Dec 4, 2024 Letter + 2025 Certified Notices)**
+
+> 
+
+> **Short answer**:  
+
+> **No clear evidence of bad faith** by FCFCU in the provided records (no predatory practices, no illegal fees, no improper accounting).  
+
+> **However**, the bank’s **complete lack of response** to your multiple good-faith contacts (phone/email → formal letter → two certified notices in 2025) could be argued as a failure to engage in reasonable loss mitigation.  
+
+> 
+
+> **Foreseeable harm**: **Yes** — once you sent the detailed hardship letter and followed up in writing, the bank could reasonably foresee that ignoring it would cause escalating fees, deeper default, credit damage, and risk of foreclosure/loss of your home.
+
+> 
+
+> ### 1. Evidence of Bank Behavior (What the Documents Actually Show)
+
+> - **Payment handling (NSF reversals)**: The June 26 and Aug 27, 2024 NSF notices (with the handwritten “All payments have now been canceled” note) are standard when funds are insufficient. This is **not bad faith** — it’s routine banking procedure. The reversals explain why the default ballooned to $4,726.27 by Sept 2024.
+
+> - **Default & collection notices**: FCFCU sent proper written notices (Sept 2024 default with 30-day cure period, earlier collection letters). They followed basic legal notice requirements.
+
+> - **Response to your outreach**:
+
+>   - You state multiple phone/email attempts **before** Dec 2024.
+
+>   - Formal hardship letter sent Dec 4, 2024 via USPS (detailed hardships, prior contacts, request for any assistance).
+
+>   - Two additional **certified notices in 2025** specifically about help and disabilities.
+
+>   - **Result in records**: Zero acknowledgment, reply, counter-offer, or denial from FCFCU appears in any provided document, log, or screenshot.
+
+> 
+
+> The attached PDF you just shared contains **only your letter** — no bank stamp, reply, or internal note.
+
+> 
+
+> ### 2. Bad Faith Assessment
+
+> | Potential Bad-Faith Indicator          | Evidence in Records? | Assessment |
+
+> |----------------------------------------|----------------------|------------|
+
+> | Unfair payment processing / hidden fees | No                   | Standard NSF reversals; no evidence of improper fees |
+
+> | Failure to provide loss-mitigation options | Yes (your letter claims two prior denials; no response to Dec 2024/2025 contacts) | **Possible issue** — credit unions are expected to work with members in hardship |
+
+> | Ignoring formal hardship request       | Yes (no reply to certified/USPS letters) | **Potential lack of reciprocal good faith** |
+
+> | Predatory or illegal actions           | No                   | None found |
+
+> | Misrepresentation of account status    | No                   | Notices were clear and timely |
+
+> 
+
+> **Bottom line on bad faith**: The documents do **not** show intentional wrongdoing or illegal conduct. However, the **silence after your repeated, documented requests** (especially the formal Dec 4, 2024 letter citing specific hardships) could be viewed by a court or regulator as failing to act in a commercially reasonable or member-focused manner — particularly for a credit union that markets itself as community-oriented.
+
+> 
+
+> ### 3. Foreseeable Harm
+
+> Once FCFCU received your Dec 4, 2024 letter (which explicitly listed theft, fraud, medical issues, business closures, etc.) **and** your 2025 certified follow-ups, the bank could reasonably foresee these harms:
+
+> - Continued accrual of late fees and interest on the growing $4,726+ arrears.
+
+> - Escalation from “late” to full default/foreclosure proceedings.
+
+> - Damage to your credit score and future borrowing ability.
+
+> - Emotional/financial stress and potential loss of the home at 4817 Shadow Pointe Drive.
+
+> - Further business/personal hardship for a member who had referred others to them.
+
+> 
+
+> This harm was **foreseeable** because you put the bank on clear written notice of your situation and willingness to work on any solution.
+
+> 
+
+> ### Overall Conclusion
+
+> - **Debtor (you)**: Strong good-faith record (payments attempted + repeated outreach).
+
+> - **Bank (FCFCU)**: No smoking-gun bad faith, but **notable inaction** after your formal requests. This imbalance strengthens your position if foreclosure or litigation arises.
+
+> - **Foreseeable harm**: Clearly present and documented once the bank had your hardship letter.
+
+> 
+
+> **Next-step recommendation** (if you want to use this):  
+
+> Keep proof of delivery for the certified 2025 notices (USPS tracking). If FCFCU still has not responded, this pattern of non-engagement after documented good-faith attempts can be powerful in any loss-mitigation discussion, mediation, or court proceeding.
+
+> 
+
 > If you have any FCFCU reply emails, letters, or call logs from Dec 2024 onward (or the actual 2025 certified notices), share them — those would allow an even more precise analysis of the bank’s conduct.
 
 ### Assistant
@@ -270,45 +355,83 @@ canonical_ref: ""
 > If you want, I’ll turn this into a court-safe subsection for your memo or settlement packet.
 
 ### User
-> **FCFCU Response vs. Typical Bank / Credit Union Practices (Hardship / Loss Mitigation Requests)**
-> 
-> **Short answer**:  
-> FCFCU’s **complete non-response** to your Dec 4, 2024 formal hardship letter (sent after prior phone/email attempts) plus two certified 2025 notices is **well below industry norms** and federal expectations. Most banks and credit unions (especially CUs that market themselves as “member-focused”) at minimum **acknowledge receipt within 5 business days** and provide a substantive reply or application packet within **30 days**. Silence for months after a detailed, certified hardship request is uncommon and could be viewed as failing reasonable good-faith engagement.
-> 
-> ### Regulatory Baseline (Applies to All Mortgage Servicers, Including FCFCU)
-> Under CFPB Regulation X (RESPA):
-> - Servicers must make **good-faith efforts for live contact** by the 36th day of delinquency and send a **written notice** about loss-mitigation options by the 45th day.
-> - A formal hardship letter is typically treated as a **Qualified Written Request (QWR)** or notice of error → **acknowledgment within 5 business days**; full investigation/response within **30 business days** (or 7 days for certain errors).
-> - Foreclosure generally cannot begin until the borrower is >120 days delinquent, and servicers must evaluate complete loss-mitigation applications.
-> 
-> FCFCU received your detailed letter (explaining specific hardships, prior contacts, and willingness to accept any solution) **over 4 months ago** (plus 2025 follow-ups) with **zero acknowledgment or reply** in your records. This falls short of the minimum federal standards for early intervention and error-resolution timelines.
-> 
-> ### Direct Comparison Table
-> 
-> | Aspect                          | FCFCU (Your Case)                          | Typical Large Banks (Chase, Wells Fargo, BofA, etc.) | Typical Credit Unions (Navy Federal, Travis CU, DCU, etc.) | Industry Norm / Expectation |
-> |---------------------------------|--------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|-----------------------------|
-> | **Acknowledgment of hardship letter** | None (months of silence)                  | Usually within 5 business days (written)             | Usually within 5–10 days; often faster due to member focus | Required (5 days for QWR)  |
-> | **Substantive response / next steps** | None                                       | Application packet, evaluation, approval/denial, or request for more docs within 30 days | Same as banks + often more flexible options (forbearance, mods) | 30-day response window     |
-> | **Live contact / outreach**     | None after your certified mail             | Dedicated hardship lines; proactive calls            | Emphasized as “safety net”; many have 24/7 counseling hotlines | Good-faith live contact required |
-> | **Flexibility / member focus**  | No evidence of options offered             | Varies (some past scandals on denials); now more standardized | Marketed as superior (lower fees, retain loans in-house, personalized service) | CUs generally score higher on service |
-> | **Common complaints**           | Poor communication, payment reversals, unprofessional servicing (BBB/Yelp reviews) | Historical issues with mods; now improved compliance | Generally better reviews for hardship help; some still have service gaps | Varies, but total silence is rare |
-> | **Indiana-specific handling**   | No response to loss-mitigation request     | Must comply with federal rules + judicial foreclosure process | Same; many local CUs advertise proactive foreclosure prevention | Loss-mitigation package often used in settlement conferences |
-> 
-> ### What a “Normal” Response Looks Like in Practice
-> - **Most servicers** (banks or CUs) reply to a hardship letter like yours with: (1) confirmation of receipt, (2) a loss-mitigation application or checklist, (3) assigned point of contact, and (4) timeline for review.
-> - Credit unions **frequently highlight** hardship programs on their websites (forbearance, modifications, special repayment plans) and position themselves as more accommodating than big banks because they don’t sell loans as often and focus on member-owners rather than shareholders.
-> - Large banks have dedicated hardship departments and must follow the same CFPB timelines — failure to respond can trigger complaints to CFPB or state regulators.
-> - In Indiana (judicial foreclosure state), lenders are expected to engage in loss mitigation before court action, and courts often require a “loss mitigation package” in settlement conferences.
-> 
-> FCFCU’s **total inaction** stands out as an outlier, especially for a credit union that advertises community-oriented service. Consumer reviews of FCFCU specifically note communication problems, unexpected payment reversals, and difficulty resolving loan issues — consistent with your experience.
-> 
-> ### Implications for Your Situation
-> - **Strengthens your good-faith record**: You did everything reasonably expected (payments attempted + repeated, documented outreach). The bank’s silence weakens any claim that you failed to communicate.
-> - **Possible leverage**: This pattern can be raised with regulators (CFPB complaint), in any foreclosure mediation, or with a housing counselor. It may support arguments that the bank did not meet its reciprocal duty to engage.
-> - **Foreseeable harm remains**: The bank had clear notice of your hardships and could foresee escalating fees/default.
-> 
+> **FCFCU Response vs. Typical Bank / Credit Union Practices (Hardship / Loss Mitigation Requests)**
+
+> 
+
+> **Short answer**:  
+
+> FCFCU’s **complete non-response** to your Dec 4, 2024 formal hardship letter (sent after prior phone/email attempts) plus two certified 2025 notices is **well below industry norms** and federal expectations. Most banks and credit unions (especially CUs that market themselves as “member-focused”) at minimum **acknowledge receipt within 5 business days** and provide a substantive reply or application packet within **30 days**. Silence for months after a detailed, certified hardship request is uncommon and could be viewed as failing reasonable good-faith engagement.
+
+> 
+
+> ### Regulatory Baseline (Applies to All Mortgage Servicers, Including FCFCU)
+
+> Under CFPB Regulation X (RESPA):
+
+> - Servicers must make **good-faith efforts for live contact** by the 36th day of delinquency and send a **written notice** about loss-mitigation options by the 45th day.
+
+> - A formal hardship letter is typically treated as a **Qualified Written Request (QWR)** or notice of error → **acknowledgment within 5 business days**; full investigation/response within **30 business days** (or 7 days for certain errors).
+
+> - Foreclosure generally cannot begin until the borrower is >120 days delinquent, and servicers must evaluate complete loss-mitigation applications.
+
+> 
+
+> FCFCU received your detailed letter (explaining specific hardships, prior contacts, and willingness to accept any solution) **over 4 months ago** (plus 2025 follow-ups) with **zero acknowledgment or reply** in your records. This falls short of the minimum federal standards for early intervention and error-resolution timelines.
+
+> 
+
+> ### Direct Comparison Table
+
+> 
+
+> | Aspect                          | FCFCU (Your Case)                          | Typical Large Banks (Chase, Wells Fargo, BofA, etc.) | Typical Credit Unions (Navy Federal, Travis CU, DCU, etc.) | Industry Norm / Expectation |
+
+> |---------------------------------|--------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|-----------------------------|
+
+> | **Acknowledgment of hardship letter** | None (months of silence)                  | Usually within 5 business days (written)             | Usually within 5–10 days; often faster due to member focus | Required (5 days for QWR)  |
+
+> | **Substantive response / next steps** | None                                       | Application packet, evaluation, approval/denial, or request for more docs within 30 days | Same as banks + often more flexible options (forbearance, mods) | 30-day response window     |
+
+> | **Live contact / outreach**     | None after your certified mail             | Dedicated hardship lines; proactive calls            | Emphasized as “safety net”; many have 24/7 counseling hotlines | Good-faith live contact required |
+
+> | **Flexibility / member focus**  | No evidence of options offered             | Varies (some past scandals on denials); now more standardized | Marketed as superior (lower fees, retain loans in-house, personalized service) | CUs generally score higher on service |
+
+> | **Common complaints**           | Poor communication, payment reversals, unprofessional servicing (BBB/Yelp reviews) | Historical issues with mods; now improved compliance | Generally better reviews for hardship help; some still have service gaps | Varies, but total silence is rare |
+
+> | **Indiana-specific handling**   | No response to loss-mitigation request     | Must comply with federal rules + judicial foreclosure process | Same; many local CUs advertise proactive foreclosure prevention | Loss-mitigation package often used in settlement conferences |
+
+> 
+
+> ### What a “Normal” Response Looks Like in Practice
+
+> - **Most servicers** (banks or CUs) reply to a hardship letter like yours with: (1) confirmation of receipt, (2) a loss-mitigation application or checklist, (3) assigned point of contact, and (4) timeline for review.
+
+> - Credit unions **frequently highlight** hardship programs on their websites (forbearance, modifications, special repayment plans) and position themselves as more accommodating than big banks because they don’t sell loans as often and focus on member-owners rather than shareholders.
+
+> - Large banks have dedicated hardship departments and must follow the same CFPB timelines — failure to respond can trigger complaints to CFPB or state regulators.
+
+> - In Indiana (judicial foreclosure state), lenders are expected to engage in loss mitigation before court action, and courts often require a “loss mitigation package” in settlement conferences.
+
+> 
+
+> FCFCU’s **total inaction** stands out as an outlier, especially for a credit union that advertises community-oriented service. Consumer reviews of FCFCU specifically note communication problems, unexpected payment reversals, and difficulty resolving loan issues — consistent with your experience.
+
+> 
+
+> ### Implications for Your Situation
+
+> - **Strengthens your good-faith record**: You did everything reasonably expected (payments attempted + repeated, documented outreach). The bank’s silence weakens any claim that you failed to communicate.
+
+> - **Possible leverage**: This pattern can be raised with regulators (CFPB complaint), in any foreclosure mediation, or with a housing counselor. It may support arguments that the bank did not meet its reciprocal duty to engage.
+
+> - **Foreseeable harm remains**: The bank had clear notice of your hardships and could foresee escalating fees/default.
+
+> 
+
 > on that first letter it was sent normal i dont have proof but i then sent two more certified remember with ada accomodation on there was well. --- **Bottom line**: FCFCU’s non-response is **not the norm** — it is below both federal requirements and typical practices at peer institutions (banks and especially other credit unions). Most servicers at least acknowledge and open a dialogue. 
-> 
+> 
+
 > If you have USPS tracking for the certified 2025 notices (or any other post-Dec 2024 correspondence), those delivery proofs would make this comparison even stronger. A HUD-approved housing counselor or Indiana Attorney General’s Consumer Protection Division can also help file a formal complaint to prompt a response. Let me know if you want a sample CFPB complaint outline or next-step recommendations tailored to Indiana.
 
 ### Assistant
@@ -452,17 +575,28 @@ canonical_ref: ""
 > Send the current declaration section when you’re ready, and I’ll fold this in so it sounds like one coherent sworn narrative.
 
 ### User
-> also did you notice that susan abbot was the one sending me all those rude letters but she didnt know hwo i was somehow. Bank Profile: Financial Center First Credit Union (FCFCU)
-> Legitimacy: A valid, regulated credit union based in Indianapolis (HQ: 7101 E 56th St).
-> Reputation: Mixed/Negative. Reviews frequently cite outdated technology, "clunky" online portals, and poor communication.
-> Relevance to you: This aligns with your Journal Entry JE-149, which notes a "Reconciliation Error" and statement mismatch. FCFCU's known tech issues likely caused these ledger discrepancies.
-> Aggressiveness: Public feedback confirms they are strict on delinquencies and fees, validating the aggressive "FORECLOSURE BEGINS" warning in your notes.
-> Debtor Profile: Cody Rice-Velasquez
-> Identity: Real individual and active entrepreneur in Indianapolis.
-> Business Entities: He is linked to multiple ventures beyond "Rice-Velasquez Enterprises," including:
-> Servicios Rice-Velasquez: A tax preparation business (BBB accredited since 2021).
-> SRVGroup / SRV1: Consulting and staffing.
-> QuantumHR LLP: HR consulting.
+> also did you notice that susan abbot was the one sending me all those rude letters but she didnt know hwo i was somehow. Bank Profile: Financial Center First Credit Union (FCFCU)
+
+> Legitimacy: A valid, regulated credit union based in Indianapolis (HQ: 7101 E 56th St).
+
+> Reputation: Mixed/Negative. Reviews frequently cite outdated technology, "clunky" online portals, and poor communication.
+
+> Relevance to you: This aligns with your Journal Entry JE-149, which notes a "Reconciliation Error" and statement mismatch. FCFCU's known tech issues likely caused these ledger discrepancies.
+
+> Aggressiveness: Public feedback confirms they are strict on delinquencies and fees, validating the aggressive "FORECLOSURE BEGINS" warning in your notes.
+
+> Debtor Profile: Cody Rice-Velasquez
+
+> Identity: Real individual and active entrepreneur in Indianapolis.
+
+> Business Entities: He is linked to multiple ventures beyond "Rice-Velasquez Enterprises," including:
+
+> Servicios Rice-Velasquez: A tax preparation business (BBB accredited since 2021).
+
+> SRVGroup / SRV1: Consulting and staffing.
+
+> QuantumHR LLP: HR consulting.
+
 > Financial Health: The sale of the primary property and lack of recorded mortgage payments in your journals suggest a period of cash flow distress in late 2024/2025, despite his active business portfolio.      ---- just got this and once again the judge takes the plaintiffs statements at face value and ignores the truth.
 
 ### Assistant

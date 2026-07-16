@@ -3,13 +3,13 @@ layout: page
 title: Medication Organization Attempt
 slug: medication-organization-attempt
 status: publish
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5d5f5b195a45489ea8f5d96f519f7238
 canonical_ref: ""
 template_key: master-template
 ---

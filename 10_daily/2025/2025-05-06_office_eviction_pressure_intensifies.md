@@ -3,7 +3,7 @@ layout: page
 title: "Office Eviction Pressure Intensifies"
 slug: "office_eviction_pressure_intensifies"
 created_at: "2025-05-06"
-updated_at: "2025-05-06"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c99d41ea404146eebf3259ec3ac9033f
 canonical_ref: ""
 ---
 

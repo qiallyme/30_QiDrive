@@ -2,7 +2,7 @@
 date: 2026-01-06
 title: Sundowning — Evening Cognitive & Nervous System Depletion
 category: Neuroregulation
-keywords:
+keywords: []
   - sundowning
   - ADHD
   - nervous system regulation
@@ -14,10 +14,10 @@ keywords:
 project_context: QiNote / Personal Operating Manual
 status: publish
 layout: page
-slug: ""
+slug: sundowning-evening-cognitive-nervous-system-depletion
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 24db7ad2880047d58c51244bb1419d72
 canonical_ref: ""
 source_type: manual
 template_key: master-template

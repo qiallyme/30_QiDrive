@@ -3,9 +3,9 @@ layout: page
 title: "Email and text draft"
 slug: "email_and_text_draft"
 created_at: "2025-08-20 13:35:21"
-updated_at: "2025-08-20 13:35:21"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1055,173 +1055,338 @@ canonical_ref: ""
 > This setup turns Pipeline 2 into a conveyor belt: intake → site visit → priced proposal → signed contract, with guardrails so nothing slips. Steer back to port.
 
 ### User
-> ok before we do 3 and 4, which i think 3 is a subpipeline of 2 and 4 is on its own, right, but heres the moduel fields and pipeline fields, liet get this documented, what they are for how ot use them and provide the workflow and automations to create so far lets lock it down. Contacts/Properties
-> Contact/Property Information
-> Last Name
-> First Name
-> Title
-> Company Name
-> Email
-> Mobile
-> Phone
-> Home Phone
-> Email Opt Out
-> Description
-> Address Information
-> Mailing Street
-> Mailing City
-> Mailing State
-> Mailing Country
-> Mailing Zip
-> Customize Fields
-> Used Custom Fields
-> :
-> 0/25
-> Companies
-> Company Information
-> Company Name
-> Phone
-> Website
-> Description
-> Address Information
-> Billing Street
-> Billing City
-> Billing State
-> Billing Country
-> Billing Code
-> Customize Fields
-> Used Custom Fields
-> :
-> 0/25
-> Products
-> Product Information
-> Product Name (Unique)
-> Product Code
-> Product Category
-> Unit Price
-> Description
-> Product Active
-> Customize Fields
-> Used Custom Fields
-> :
-> 0/25
-> Tasks
-> Task Information
-> Task Name
-> Due Date
-> Repeat
-> Related To
-> Description
-> Priority
-> Customize Fields
-> Used Custom Fields
-> :
-> 0/25
-> Events
-> Event Information
-> Title
-> From
-> To
-> Repeat
-> Location
-> Related To
-> Participants
-> Description
-> Customize Fields
-> Used Custom Fields
-> :
-> 0/25
-> Calls
-> Call Information
-> To/From
-> Related To
-> Call Type
-> Outgoing Call Status
-> Call Start Time
-> Call Duration
-> Voice Recording
-> Call Duration (in seconds)
-> Scheduled in Bigin
-> Purpose Of Outgoing Call
-> Call Purpose
-> Call Agenda
-> Outcome Of Outgoing Call
-> Call Result
-> Description
-> Reason For Incoming Call
-> Description
-> Customize Fields
-> Used Custom Fields
-> :
+> ok before we do 3 and 4, which i think 3 is a subpipeline of 2 and 4 is on its own, right, but heres the moduel fields and pipeline fields, liet get this documented, what they are for how ot use them and provide the workflow and automations to create so far lets lock it down. Contacts/Properties
+
+> Contact/Property Information
+
+> Last Name
+
+> First Name
+
+> Title
+
+> Company Name
+
+> Email
+
+> Mobile
+
+> Phone
+
+> Home Phone
+
+> Email Opt Out
+
+> Description
+
+> Address Information
+
+> Mailing Street
+
+> Mailing City
+
+> Mailing State
+
+> Mailing Country
+
+> Mailing Zip
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 0/25
+
+> Companies
+
+> Company Information
+
+> Company Name
+
+> Phone
+
+> Website
+
+> Description
+
+> Address Information
+
+> Billing Street
+
+> Billing City
+
+> Billing State
+
+> Billing Country
+
+> Billing Code
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 0/25
+
+> Products
+
+> Product Information
+
+> Product Name (Unique)
+
+> Product Code
+
+> Product Category
+
+> Unit Price
+
+> Description
+
+> Product Active
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 0/25
+
+> Tasks
+
+> Task Information
+
+> Task Name
+
+> Due Date
+
+> Repeat
+
+> Related To
+
+> Description
+
+> Priority
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 0/25
+
+> Events
+
+> Event Information
+
+> Title
+
+> From
+
+> To
+
+> Repeat
+
+> Location
+
+> Related To
+
+> Participants
+
+> Description
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 0/25
+
+> Calls
+
+> Call Information
+
+> To/From
+
+> Related To
+
+> Call Type
+
+> Outgoing Call Status
+
+> Call Start Time
+
+> Call Duration
+
+> Voice Recording
+
+> Call Duration (in seconds)
+
+> Scheduled in Bigin
+
+> Purpose Of Outgoing Call
+
+> Call Purpose
+
+> Call Agenda
+
+> Outcome Of Outgoing Call
+
+> Call Result
+
+> Description
+
+> Reason For Incoming Call
+
+> Description
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
 > 0/25
 > 
-> Lead Pipeline
-> Lead Information
-> Contact/Property Name
-> Lead Name (Unique)
-> Secondary Contacts/Properties
-> Lead Source
-> Sub-Pipeline & Stage
-> Description
-> Closing Date
-> Company Name
-> Project Type 
-> Detail Type 
-> Additional Information
-> Property Nickname 
-> Service State 
-> Service ZIP 
-> Google Maps Link 
-> Same as Billing? 
-> Estimated Budget 
-> Service Address 
-> Unit/Lot 
-> Service City 
-> Next Step
-> Customize Fields
-> Used Custom Fields
-> :
-> 11/25
-> Pre-Project Pipeline
-> Pre-Project Information
-> Contact/Property Name
-> Description
-> Pre-Project Name (Unique)
-> Sub-Pipeline & Stage
-> Company Name
-> Project Type 
-> Detail Type 
-> Service Address 
-> Property Nickname 
-> Service City 
-> Unit/Lot 
-> Secondary Contacts/Properties
-> Service State 
-> Service ZIP 
-> Google Maps Link 
-> Same as Billing? 
-> Estimated Budget 
-> Site Visit Date 
-> Permit Required? 
-> Next Action Date 
-> Next Action (Picklist) 
-> Additional Information
-> Closing Date
-> Expected Revenue
-> Amount
-> Next Step
-> Payment Schedule 
-> Permit Status 
-> Proposal Status 
-> Associated Products
-> Product
-> List Price
-> Quantity
-> Discount (%)
-> Total
-> Customize Fields
-> Used Custom Fields
-> :
+> Lead Pipeline
+
+> Lead Information
+
+> Contact/Property Name
+
+> Lead Name (Unique)
+
+> Secondary Contacts/Properties
+
+> Lead Source
+
+> Sub-Pipeline & Stage
+
+> Description
+
+> Closing Date
+
+> Company Name
+
+> Project Type 
+
+> Detail Type 
+
+> Additional Information
+
+> Property Nickname 
+
+> Service State 
+
+> Service ZIP 
+
+> Google Maps Link 
+
+> Same as Billing? 
+
+> Estimated Budget 
+
+> Service Address 
+
+> Unit/Lot 
+
+> Service City 
+
+> Next Step
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
+> 11/25
+
+> Pre-Project Pipeline
+
+> Pre-Project Information
+
+> Contact/Property Name
+
+> Description
+
+> Pre-Project Name (Unique)
+
+> Sub-Pipeline & Stage
+
+> Company Name
+
+> Project Type 
+
+> Detail Type 
+
+> Service Address 
+
+> Property Nickname 
+
+> Service City 
+
+> Unit/Lot 
+
+> Secondary Contacts/Properties
+
+> Service State 
+
+> Service ZIP 
+
+> Google Maps Link 
+
+> Same as Billing? 
+
+> Estimated Budget 
+
+> Site Visit Date 
+
+> Permit Required? 
+
+> Next Action Date 
+
+> Next Action (Picklist) 
+
+> Additional Information
+
+> Closing Date
+
+> Expected Revenue
+
+> Amount
+
+> Next Step
+
+> Payment Schedule 
+
+> Permit Status 
+
+> Proposal Status 
+
+> Associated Products
+
+> Product
+
+> List Price
+
+> Quantity
+
+> Discount (%)
+
+> Total
+
+> Customize Fields
+
+> Used Custom Fields
+
+> :
+
 > 18/25
 
 ### Assistant

@@ -4,7 +4,7 @@ title: Being the "Chill Friend" - The Emotional Labor You're Not Supposed to Tal
 series: The Onion Effect
 episode: 5
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - friendship
   - emotional labor
   - boundaries
@@ -17,10 +17,10 @@ platforms:
   - Qsays
   - YouTube
 layout: page
-slug: ""
+slug: being-the-chill-friend-the-emotional-labor-youre-not-supposed-to-talk-about
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -29,7 +29,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 252201cac2bc45168993f0e7dc680f93
 canonical_ref: ""
 source_type: manual
 template_key: master-template

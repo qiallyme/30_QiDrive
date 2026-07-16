@@ -3,9 +3,9 @@ layout: page
 title: "Manual to Me Cody"
 slug: "manual_to_me_cody"
 created_at: "2026-04-19 01:32:34"
-updated_at: "2026-04-19 01:32:34"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2603,49 +2603,92 @@ canonical_ref: ""
 > Next move should be a **real Supabase migration file plus TypeScript types and seed inserts for “Understanding Cody.”**
 
 ### User
-> ok i added a manual but how can i quickly add all that you just told me, Update row from manuals
-> id
-> uuid
-> ffe08bbe-4d3f-4255-bfaf-c0a8a1b62593
-> owner_id
-> uuid
-> 19c914fb-149b-4b65-a436-3a1d722db469
-> 
-> Has a foreign key relation toauth.users.id
-> slug
-> text
-> understanding-cody
-> 
-> title
-> text
-> Manual To Me - Cody
-> 
-> status
-> text
-> draft
-> 
-> created_at
-> timestamptz
-> 
-> 04/19/2026 02:07:34 AM
-> 
-> Default: now()
-> 
-> Your local timezone will be automatically applied (-0500)
-> 
-> updated_at
-> timestamptz
-> 
-> 04/19/2026 02:07:40 AM
-> 
-> Default: now()
-> 
-> Your local timezone will be automatically applied (-0500)
-> 
-> Optional Fields
-> These are columns that do not need any value
-> 
-> description
+> ok i added a manual but how can i quickly add all that you just told me, Update row from manuals
+
+> id
+
+> uuid
+
+> ffe08bbe-4d3f-4255-bfaf-c0a8a1b62593
+
+> owner_id
+
+> uuid
+
+> 19c914fb-149b-4b65-a436-3a1d722db469
+
+> 
+
+> Has a foreign key relation toauth.users.id
+
+> slug
+
+> text
+
+> understanding-cody
+
+> 
+
+> title
+
+> text
+
+> Manual To Me - Cody
+
+> 
+
+> status
+
+> text
+
+> draft
+
+> 
+
+> created_at
+
+> timestamptz
+
+> 
+
+> 04/19/2026 02:07:34 AM
+
+> 
+
+> Default: now()
+
+> 
+
+> Your local timezone will be automatically applied (-0500)
+
+> 
+
+> updated_at
+
+> timestamptz
+
+> 
+
+> 04/19/2026 02:07:40 AM
+
+> 
+
+> Default: now()
+
+> 
+
+> Your local timezone will be automatically applied (-0500)
+
+> 
+
+> Optional Fields
+
+> These are columns that do not need any value
+
+> 
+
+> description
+
 > text
 
 ### Assistant

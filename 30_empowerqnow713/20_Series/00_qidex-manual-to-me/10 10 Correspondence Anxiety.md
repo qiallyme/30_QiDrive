@@ -1,3 +1,26 @@
+---
+layout: page
+title: 10 10 Correspondence Anxiety
+slug: 10-10-correspondence-anxiety
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: c1281505f7d94618bba81b863ce10580
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 10.10 Correspondence Anxiety
 
 <aside>

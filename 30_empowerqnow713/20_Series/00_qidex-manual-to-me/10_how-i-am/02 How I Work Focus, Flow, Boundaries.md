@@ -3,10 +3,10 @@ layout: page
 title: 02 How I Work Focus, Flow, Boundaries
 slug: 02_how_i_work_focus_flow_boundaries
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - tech
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 7.00.00-TECH
 qid: qe5eb90459da7
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0ccb3a9a0dfb4d50ab5a28b5c829c47e
 canonical_ref: ""
 template_key: master-template
 ---

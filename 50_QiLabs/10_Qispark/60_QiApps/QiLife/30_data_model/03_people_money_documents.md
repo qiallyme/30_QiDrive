@@ -3,12 +3,12 @@ layout: page
 title: People, Money, Documents Data Model
 slug: people-money-documents-data-model
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c99d9d57e2d84223bda712a72a3f72e2
 canonical_ref: ""
 template_key: master-template
 ---

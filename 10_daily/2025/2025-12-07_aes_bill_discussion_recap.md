@@ -3,9 +3,9 @@ layout: page
 title: "AES bill discussion recap"
 slug: "aes_bill_discussion_recap"
 created_at: "2025-12-07 18:43:17"
-updated_at: "2025-12-07 18:43:17"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -233,37 +233,68 @@ canonical_ref: ""
 > ```
 
 ### User
-> Thank you for submitting your application for the Energy Assistance Program. Your application number is INTK-670771. Because you live in Marion county, your application will be processed by John H. Boner Community Center. If you have questions about the program, your application, or your benefit amounts, please call them at (317)808-2378. Please also keep in mind, it may take their staff up to 55 days to process your application and notify you of their determination. (If you applied before October 1, the 55 days to work on your application does not begin until November 1.) You can return to the application portal at any time to check the status of your application. This is the quickest and most convenient way to stay informed.
-> 
-> Welcome Cody!
-> The Indiana Energy Assistance Client Portal will allow you to view your applications.
-> Thank you for starting your application for the Energy Assistance Program. Because you live in Marion county, your application will be processed by John H. Boner Community Center. If you have questions about the program, your application, or your benefit amounts, please call them at (317)808-2378. Please also keep in mind, it may take their staff up to 55 days to process your application and notify you of their determination. (If you applied before October 1, the staff’s 55 days to work on your application does not begin until November 1.) You can return to the application portal at any time to check the status of your application. This is the quickest and most convenient way to stay informed. If you have moved, please change which county you currently live in so that your applications can be processed. Please do not submit an online application and a paper application.
-> Applications
-> You have an existing application so you do not need to create a new application.
-> LIHEAP
-> 
-> 2026
-> 
-> Status: Submitted on 12/08/2025 at 5:58AM (UTC)
-> 
-> Intake Number: INTK-670771
-> 
-> LIHEAP
-> 
-> 2025
-> 
-> Status: Cancelled
-> 
-> Intake Number: INTK-614564
-> 
-> Messages
-> Contact Information
-> Email
-> crice4485@gmail.com
-> Texting Phone
-> (317)205-4383
-> T-Mobile
-> County
+> Thank you for submitting your application for the Energy Assistance Program. Your application number is INTK-670771. Because you live in Marion county, your application will be processed by John H. Boner Community Center. If you have questions about the program, your application, or your benefit amounts, please call them at (317)808-2378. Please also keep in mind, it may take their staff up to 55 days to process your application and notify you of their determination. (If you applied before October 1, the 55 days to work on your application does not begin until November 1.) You can return to the application portal at any time to check the status of your application. This is the quickest and most convenient way to stay informed.
+
+> 
+
+> Welcome Cody!
+
+> The Indiana Energy Assistance Client Portal will allow you to view your applications.
+
+> Thank you for starting your application for the Energy Assistance Program. Because you live in Marion county, your application will be processed by John H. Boner Community Center. If you have questions about the program, your application, or your benefit amounts, please call them at (317)808-2378. Please also keep in mind, it may take their staff up to 55 days to process your application and notify you of their determination. (If you applied before October 1, the staff’s 55 days to work on your application does not begin until November 1.) You can return to the application portal at any time to check the status of your application. This is the quickest and most convenient way to stay informed. If you have moved, please change which county you currently live in so that your applications can be processed. Please do not submit an online application and a paper application.
+
+> Applications
+
+> You have an existing application so you do not need to create a new application.
+
+> LIHEAP
+
+> 
+
+> 2026
+
+> 
+
+> Status: Submitted on 12/08/2025 at 5:58AM (UTC)
+
+> 
+
+> Intake Number: INTK-670771
+
+> 
+
+> LIHEAP
+
+> 
+
+> 2025
+
+> 
+
+> Status: Cancelled
+
+> 
+
+> Intake Number: INTK-614564
+
+> 
+
+> Messages
+
+> Contact Information
+
+> Email
+
+> crice4485@gmail.com
+
+> Texting Phone
+
+> (317)205-4383
+
+> T-Mobile
+
+> County
+
 > Marion
 
 ### Assistant
@@ -1640,20 +1671,34 @@ canonical_ref: ""
 > Just tell me which one next.
 
 ### User
-> this was another message on one of their bills. Message Center Message Center
-> AES Indiana recently went through a large system upgrade to
-> replace a 25-year-old customer system. We've experienced some
-> issues and are currently working on fixes to resolve them as
-> quickly as possible. Some customers have found discrepancies in
-> their bills or have not received a bill. While AES Indiana works to
-> resolve these issues, customers will not be negatively impacted.
-> AES Indiana is not disconnecting customers nor are any late fees
-> being incurred. Please visit aesindiana.com/system-upgrade for
-> more information and FAQs. It's also important to maintain current
-> contact information with AES Indiana to ensure we can properly
-> notify you of outages, potential future remote disconnects and
-> additional safety information. Please visit
-> aesindiana.com/my-account to update your contact information
+> this was another message on one of their bills. Message Center Message Center
+
+> AES Indiana recently went through a large system upgrade to
+
+> replace a 25-year-old customer system. We've experienced some
+
+> issues and are currently working on fixes to resolve them as
+
+> quickly as possible. Some customers have found discrepancies in
+
+> their bills or have not received a bill. While AES Indiana works to
+
+> resolve these issues, customers will not be negatively impacted.
+
+> AES Indiana is not disconnecting customers nor are any late fees
+
+> being incurred. Please visit aesindiana.com/system-upgrade for
+
+> more information and FAQs. It's also important to maintain current
+
+> contact information with AES Indiana to ensure we can properly
+
+> notify you of outages, potential future remote disconnects and
+
+> additional safety information. Please visit
+
+> aesindiana.com/my-account to update your contact information
+
 > today., they worded this really poorly leave them open to a lot of liability.   --- Oh, and I also just realized that I haven't been reading your questions at the end of these, because I'm trying to give you so much information that I keep skipping over it. You want to go ahead and double check and tell me what suggestions you have now. Like, give me, like, you know, what you think is relevant now at this point, and then just go ahead and do it, because I always like you. I almost always like all your suggestions, so we can skip the question. Okay, honey.  -- I would also add to the thing about them turning this stuff on at this time, being reckless, predatory, and just downright disgusting, because you have to think, too, like my friend, she called me because she doesn't know what to do, she needs to apply for this, too, because I guess she's just a couple of months behind, and they already gave her a disconnect notice. She has five young kids, and two of them are infants, and she's pregnant, and I'm pretty sure Indiana protects children with the moratorium automatically, well, maybe not automatically, she's got to inform them, right, AES doesn't know how many kids she's got. But I'm like, you're going to turn off these children's electricity in the middle of winter for a couple months behind? What is wrong with you people? Also, this is what I was actually going to say, by them automating the cutoff and making it remote, you no longer have that face-to-face opportunity to humanize yourself, to state your claim, to that last opportunity, that barrier, that physical barrier was important, because it gave the utility company the opportunity to physically and viscerally see and understand and communion with that person before a final decision would ultimately be taken. Now, when you just have to press a button, or not even a button, the system just does it. That's, you've just dehumanized every customer. Absolutely. They're now just a number on a sheet, and their lives, the lives they affect, inadvertently and affect everybody. They're literally adding more negativity in the world. And I'm not saying this is a spiritual thing. This is just logical, psychological, and it will have an overall net negative effect, not only on the individual that they're cutting off prematurely, too fast, without warning, automated by a system and not a person doing it. So no accountability, no understanding, no empathy. That is going to also erode at the social fabric. It's going to create more hardships, and it's ultimately going to hurt their bottom line. So it's so counterproductive. It's so punitive that it's even punitive to their bottom line. And they don't see it because they don't realize that we all in a community affect one another. OK. Also, I want to add that because I had to go to that hotel that night and put stuff in storage, we were moving stuff all day long with no lights. I was terrified most of the time. I kept thinking I was seeing things. I kept jumping. I was I thought I was going to have a freaking heart attack. By the time we got to the hotel and got settled that night, I was so exhausted and I was trying to save money. So I only did one night and I was going to renew in the morning when the prices dropped the next day. I was so tired, I overslept. And it was five minutes after checkout and it wasn't the nicest hotel. And literally by eleven oh six a.m., even though I called up front and I was going to get another day, I had security have to watch me as I had to rush to get all the things that I had taken from the house in the hotel room that it was extended stay. So I took a lot more things I normally would for a hotel. OK, with my dog as well. With through all that chaos, I hadn't ate anything. I had no money for food. My blood sugar was dropping. I was literally fainting. OK, trying to drag stuff on the floor in this nasty hotel as security just sat there and had to stare at me. They tried to get in the door before. And this is on Motel six. But this is just an antidote. Or maybe we can put it in the narrative somehow. The the additional toll, the unseen toll of this. My friend is a veteran that protected U.S. soldiers in Afghanistan. He was also having some kind of PTSD episodes and things from all the stress. It was becoming too much for everybody. And then because of that hassle and having had my dog with me and she actually escaped. And for a moment there, I didn't know what was going to happen. She's going to get by a car or something. My point is these have. Territory effects that they cannot foresee and they need to lean on the side of understanding. OK, and not the side of punitive actions, because it's not going to help them. It makes no logical sense and is counterproductive. And ultimately, it's just harmful. It's unethical and it's immoral. And it should be illegal. And it kind of is. Some of the stuff they're doing is already illegal and they're doing it anyway.
 
 ### Assistant
@@ -2178,194 +2223,382 @@ canonical_ref: ""
 > Then we can move to the **actual IURC/OUCC complaint draft** next.
 
 ### User
-> https://www.reddit.com/r/Indiana/comments/1nkbfwv/aes_class_action_lawsuit/   And for shits and giggles, let's go ahead and send some letters to Congress and the President. They may never read them, but let's just do it anyway.  AES Indiana Cases Before the IURC in which CAC has intervened
-> Last update: May 2024
-> 
-> Previous years: 2023, 2022
-> 
->  
-> 
->  
-> 
-> Active Cases
-> 
-> There are currently no active cases involving AES that CAC has intervened in. 
-> 
->  
-> 
-> 
->   
-> 
->  
-> 
-> Closed Cases
-> 
->  
-> 
-> 45917 - AES Storm Outages Investigation
-> 
-> File date: 7/11/2023
-> 
-> Order date: 4/17/2024
-> 
-> Status: dismissed with prejudice
-> 
-> The OUCC and CAC initiated this proceeding by filing a joint petition with the Commission, requesting an investigation into AES Indiana’s practices and procedures regarding storm outage restoration after the June 29, 2023 storm wherein the utility did not report full restoration until the evening of July 4, 2023. The IURC frustratingly used the 45911 settlement as its basis to dismiss this investigation with prejudice
-> 
->  
-> 
->  
-> 
-> 45898 - AES 2024 Demand Side Management 1-Year Plan
-> 
-> File date: 5/26/2023
-> 
-> Order date: 12/27/2023
-> 
-> Status: approved
-> 
-> AES proposed a 1-year extension of its 2021-2023 plan into 2024. CAC was able to resolve its issues with AES prior to AES filing the case and with a stipulation at the evidentiary hearing in September. The IURC approved the proposal incorporating CAC's stipulation.
-> 
->  
->  
-> 45911 - AES Indiana Rate Hike
-> 
-> File date: 6/28/2023
-> 
-> Order date: 4/17/2024
-> 
-> Status: settlement approved
-> 
-> You can get the full details of this rate case on our AES Indiana Rate Hike (2023) webpage.
-> 
-> AES is asking the IURC for permission to hike bills by over $23 per month so they can raise their annual operating revenues by $134.2 million, and significantly increase their profit margin.
-> 
-> In this case, AES wants to:
-> 
-> Increase their authorized return on equity (profit) from 9.99% to 10.6%.
-> Increase the monthly fixed charge for most customers to $25 per month, a 49% increase. This would give AES the highest monthly fixed charge of any investor-owned monopoly utility in Indiana, by far.
-> Increase the fixed charge for low usage customers (those using 325 kilowatt hours or less per month) by 34% to $16.50.
-> Use their newly installed smart meters to remotely disconnect residential customers.
-> Increase household reconnection fees from $44 to $51 ($64 to $80 for Sunday reconnections).
-> Force Hoosier households to pay higher rates to subsidize lower rates for large commercial and industrial customers; and 7) Force customers to pay for the $5 million they're planning to spend on consultants and lawyers to help them argue for this rate increase.
->  
-> 
->  
-> 
-> 
->  
-> 
->  
-> 
-> 2023 Cases
-> 
-> Back to top
-> 
->  
-> 
-> 45843 - AES Electric Vehicle Portfolio
-> 
-> File date: 1/27/2023
-> 
-> Order date: 11/22/2023
-> 
-> Status: approved
-> 
-> AES proposes to offer a three-year portfolio of EV programs. The proposed Public Use EV Pilot Program includes:
-> 
-> Bi-directional Charging Pilot to test test vehicle-to-grid integration and bi-directional power flow with select customers in AES Indiana’s service territory.
-> Fleet Solutions to provide planning and advisory services to customers who are transitioning their fleets from traditional fuels to Public Use EVs.
-> EVSE Rebates to encourage customer investment in Level 2 and direct current fast charging (“DCFC”) equipment to serve Public Use EVs.
-> EVSE Rebates for Disadvantaged Communities.
->  
-> 
-> AES also proposes certain time of use rates for Residential customers, including:
-> 
-> Residential Managed Charging
-> Off-Peak Incentive
-> Cessation of Rate EVX to drive participants to the other two offerings.
->  
-> 
-> For C&I and Public customers, AES proposes:
-> 
-> C&I Managed Charging
-> Rate EVP which updates AES Indiana’s existing Level 2 public charging rate to match current market conditions.
-> Rate DCFC to provide a new, market-based rate that would be charged to drivers using AES Indiana-owned DCFC charging infrastructure.
-> Tariff EVSE, a voluntary, participant-funded alternative tariff to provide charging infrastructure to participating customers for a fixed, monthly fee.
->  
-> 
-> On 4/27/23, CAC filed testimony noting that AES Indiana has not provided sufficient information to assess the merits of most components of the EV Portfolio (including not providing draft tariffs or other critical details), and therefore CAC recommends that most components be denied at this time. We also recommend that the Commission direct AES Indiana to establish a EV charging collaborative, open to all interested stakeholders, to further develop and improve upon the EV Portfolio concepts, after which time AES Indiana can refile a more robustly supported and transparent proposal at the Commission. We also noted that Commission guidance on EV projects was likely forthcoming from pending Cause No. 45816 and/or a rulemaking to implement House Enrolled Act 1221 (2022), and thus AES should incorporate that before refiling.
-> 
-> On 11/22/2023, the IURC approved AES's proposal without modification.
-> 
->  
-> 
->  
-> 
-> 38703 FAC 133 S1 - Eagle Valley FAC Subdocket Investigation
-> 
-> File date: 11/24/2021
-> 
-> Order date: 1/8/2023
-> 
-> Status: settlement approved
-> 
-> In AES-Indiana’s FAC proceeding, the Company reported on the extended forced outage at the 671 megawatt Eagle Valley CCGT plant, the result of human and technical error. For nearly one year, AES's Eagle Valley fossil gas-fired power plant sat idle, failing to provide electricity to customers, yet customers continued to pay for the power plant in their monthly bills. Because Eagle Valley was not producing electricity for almost a full year, AES had to buy power in the marketplace to replace the power Eagle Valley failed to generate. AES then came before the IURC to ask to charge customers almost $71 million for that replacement power. CAC helped to cut the rate increase that AES Indiana wanted down from $71 million to $13.7 million.
-> 
->  
-> 
->  
-> 
-> 
->  
-> 
->  
-> 
-> 2022 Cases 
-> 
-> Back to top
-> 
->  
-> 
-> 45584 - Clean energy subscription billing
-> 
-> File date: 7/27/2021
-> 
-> Order date: 4/6/2022
-> 
-> Status: settlement approved
-> 
-> AES Indiana proposes the AES Indiana Plus Subscription, a “clean energy subscription option with flat-billing, accessible via a mobile customer engagement application which is designed to improve the residential customer experience around energy usage. The clean energy will be provided by renewable energy credits (“RECs”), which may be furnished under AES Indiana Standard Contract Rider No. 21: Green Power Initiative.” The IURC approved the settlement we reached with AES Indiana and the OUCC, addressing many of our collective concerns such as disclosing hidden fees, ensuring transparent customer communications and notices, increasing consumer protections, and providing several off ramps to exit the program without a termination fee.
-> 
->  
-> 
->  
-> 
-> 45504 - Excess Distributed Generation
-> 
-> File date: 3/1/2021
-> 
-> Order date: 1/26/2022
-> 
-> Status: approved
-> 
-> SEA309 (2017) ended net metering in Indiana. Net metering is a fair and simple way to credit solar owners for the electricity they generate but don’t use themselves. Instead, the solar owner earns a bill credit for energy shared with their neighbors on the electric grid valued at the same rate as electricity purchased from the utility - an even 1:1 swap. As a result of SEA309, Indiana’s investor-owned utilities replaced net metering with an arbitrarily designed Excess Distributed Generation (EDG) tariff that credits new solar customers far less on their monthly bills  for the extra electricity they generate.
-> 
-> The outcome of this case was affected by the outcome of the CenterPoint 45378 case.
-> Sarah Bowman at the IndyStar wrote a comprehensive piece about this in November 2022: Advocates, utilities ask Indiana Supreme Court to decide how solar customers are charged.
-> In response to the January 2023 Supreme Court Opinion regarding net metering, CAC and our partners at Solar United Neighbors wrote an op-ed (Solar opinion undermines growing industry), which was published by the Indiana Capital Chronicle on January 9th.
->  
-> 
->  
-> 
-> 45509 - Electric vehicle charging accounting
-> 
-> File date: 3/2/2021
-> 
-> Status: withdrawn
-> 
-> AES Indiana was proposing to offer a portfolio of electric vehicle programs and initiatives, including managed charging (active curtailment of EV charging during peak hours), AES Indiana Motor (digitally-enabled EV marketplace), and an off-peak incentive (off-bill, seasonal incentive structure designed to encourage off-peak EV charging). AES withdrew the case, but can refile the same or similar case in the future.
-> 
+> https://www.reddit.com/r/Indiana/comments/1nkbfwv/aes_class_action_lawsuit/   And for shits and giggles, let's go ahead and send some letters to Congress and the President. They may never read them, but let's just do it anyway.  AES Indiana Cases Before the IURC in which CAC has intervened
+
+> Last update: May 2024
+
+> 
+
+> Previous years: 2023, 2022
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> Active Cases
+
+> 
+
+> There are currently no active cases involving AES that CAC has intervened in. 
+
+> 
+
+>  
+
+> 
+
+> 
+
+>   
+
+> 
+
+>  
+
+> 
+
+> Closed Cases
+
+> 
+
+>  
+
+> 
+
+> 45917 - AES Storm Outages Investigation
+
+> 
+
+> File date: 7/11/2023
+
+> 
+
+> Order date: 4/17/2024
+
+> 
+
+> Status: dismissed with prejudice
+
+> 
+
+> The OUCC and CAC initiated this proceeding by filing a joint petition with the Commission, requesting an investigation into AES Indiana’s practices and procedures regarding storm outage restoration after the June 29, 2023 storm wherein the utility did not report full restoration until the evening of July 4, 2023. The IURC frustratingly used the 45911 settlement as its basis to dismiss this investigation with prejudice
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 45898 - AES 2024 Demand Side Management 1-Year Plan
+
+> 
+
+> File date: 5/26/2023
+
+> 
+
+> Order date: 12/27/2023
+
+> 
+
+> Status: approved
+
+> 
+
+> AES proposed a 1-year extension of its 2021-2023 plan into 2024. CAC was able to resolve its issues with AES prior to AES filing the case and with a stipulation at the evidentiary hearing in September. The IURC approved the proposal incorporating CAC's stipulation.
+
+> 
+
+>  
+
+>  
+
+> 45911 - AES Indiana Rate Hike
+
+> 
+
+> File date: 6/28/2023
+
+> 
+
+> Order date: 4/17/2024
+
+> 
+
+> Status: settlement approved
+
+> 
+
+> You can get the full details of this rate case on our AES Indiana Rate Hike (2023) webpage.
+
+> 
+
+> AES is asking the IURC for permission to hike bills by over $23 per month so they can raise their annual operating revenues by $134.2 million, and significantly increase their profit margin.
+
+> 
+
+> In this case, AES wants to:
+
+> 
+
+> Increase their authorized return on equity (profit) from 9.99% to 10.6%.
+
+> Increase the monthly fixed charge for most customers to $25 per month, a 49% increase. This would give AES the highest monthly fixed charge of any investor-owned monopoly utility in Indiana, by far.
+
+> Increase the fixed charge for low usage customers (those using 325 kilowatt hours or less per month) by 34% to $16.50.
+
+> Use their newly installed smart meters to remotely disconnect residential customers.
+
+> Increase household reconnection fees from $44 to $51 ($64 to $80 for Sunday reconnections).
+
+> Force Hoosier households to pay higher rates to subsidize lower rates for large commercial and industrial customers; and 7) Force customers to pay for the $5 million they're planning to spend on consultants and lawyers to help them argue for this rate increase.
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 2023 Cases
+
+> 
+
+> Back to top
+
+> 
+
+>  
+
+> 
+
+> 45843 - AES Electric Vehicle Portfolio
+
+> 
+
+> File date: 1/27/2023
+
+> 
+
+> Order date: 11/22/2023
+
+> 
+
+> Status: approved
+
+> 
+
+> AES proposes to offer a three-year portfolio of EV programs. The proposed Public Use EV Pilot Program includes:
+
+> 
+
+> Bi-directional Charging Pilot to test test vehicle-to-grid integration and bi-directional power flow with select customers in AES Indiana’s service territory.
+
+> Fleet Solutions to provide planning and advisory services to customers who are transitioning their fleets from traditional fuels to Public Use EVs.
+
+> EVSE Rebates to encourage customer investment in Level 2 and direct current fast charging (“DCFC”) equipment to serve Public Use EVs.
+
+> EVSE Rebates for Disadvantaged Communities.
+
+>  
+
+> 
+
+> AES also proposes certain time of use rates for Residential customers, including:
+
+> 
+
+> Residential Managed Charging
+
+> Off-Peak Incentive
+
+> Cessation of Rate EVX to drive participants to the other two offerings.
+
+>  
+
+> 
+
+> For C&I and Public customers, AES proposes:
+
+> 
+
+> C&I Managed Charging
+
+> Rate EVP which updates AES Indiana’s existing Level 2 public charging rate to match current market conditions.
+
+> Rate DCFC to provide a new, market-based rate that would be charged to drivers using AES Indiana-owned DCFC charging infrastructure.
+
+> Tariff EVSE, a voluntary, participant-funded alternative tariff to provide charging infrastructure to participating customers for a fixed, monthly fee.
+
+>  
+
+> 
+
+> On 4/27/23, CAC filed testimony noting that AES Indiana has not provided sufficient information to assess the merits of most components of the EV Portfolio (including not providing draft tariffs or other critical details), and therefore CAC recommends that most components be denied at this time. We also recommend that the Commission direct AES Indiana to establish a EV charging collaborative, open to all interested stakeholders, to further develop and improve upon the EV Portfolio concepts, after which time AES Indiana can refile a more robustly supported and transparent proposal at the Commission. We also noted that Commission guidance on EV projects was likely forthcoming from pending Cause No. 45816 and/or a rulemaking to implement House Enrolled Act 1221 (2022), and thus AES should incorporate that before refiling.
+
+> 
+
+> On 11/22/2023, the IURC approved AES's proposal without modification.
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 38703 FAC 133 S1 - Eagle Valley FAC Subdocket Investigation
+
+> 
+
+> File date: 11/24/2021
+
+> 
+
+> Order date: 1/8/2023
+
+> 
+
+> Status: settlement approved
+
+> 
+
+> In AES-Indiana’s FAC proceeding, the Company reported on the extended forced outage at the 671 megawatt Eagle Valley CCGT plant, the result of human and technical error. For nearly one year, AES's Eagle Valley fossil gas-fired power plant sat idle, failing to provide electricity to customers, yet customers continued to pay for the power plant in their monthly bills. Because Eagle Valley was not producing electricity for almost a full year, AES had to buy power in the marketplace to replace the power Eagle Valley failed to generate. AES then came before the IURC to ask to charge customers almost $71 million for that replacement power. CAC helped to cut the rate increase that AES Indiana wanted down from $71 million to $13.7 million.
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 2022 Cases 
+
+> 
+
+> Back to top
+
+> 
+
+>  
+
+> 
+
+> 45584 - Clean energy subscription billing
+
+> 
+
+> File date: 7/27/2021
+
+> 
+
+> Order date: 4/6/2022
+
+> 
+
+> Status: settlement approved
+
+> 
+
+> AES Indiana proposes the AES Indiana Plus Subscription, a “clean energy subscription option with flat-billing, accessible via a mobile customer engagement application which is designed to improve the residential customer experience around energy usage. The clean energy will be provided by renewable energy credits (“RECs”), which may be furnished under AES Indiana Standard Contract Rider No. 21: Green Power Initiative.” The IURC approved the settlement we reached with AES Indiana and the OUCC, addressing many of our collective concerns such as disclosing hidden fees, ensuring transparent customer communications and notices, increasing consumer protections, and providing several off ramps to exit the program without a termination fee.
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 45504 - Excess Distributed Generation
+
+> 
+
+> File date: 3/1/2021
+
+> 
+
+> Order date: 1/26/2022
+
+> 
+
+> Status: approved
+
+> 
+
+> SEA309 (2017) ended net metering in Indiana. Net metering is a fair and simple way to credit solar owners for the electricity they generate but don’t use themselves. Instead, the solar owner earns a bill credit for energy shared with their neighbors on the electric grid valued at the same rate as electricity purchased from the utility - an even 1:1 swap. As a result of SEA309, Indiana’s investor-owned utilities replaced net metering with an arbitrarily designed Excess Distributed Generation (EDG) tariff that credits new solar customers far less on their monthly bills  for the extra electricity they generate.
+
+> 
+
+> The outcome of this case was affected by the outcome of the CenterPoint 45378 case.
+
+> Sarah Bowman at the IndyStar wrote a comprehensive piece about this in November 2022: Advocates, utilities ask Indiana Supreme Court to decide how solar customers are charged.
+
+> In response to the January 2023 Supreme Court Opinion regarding net metering, CAC and our partners at Solar United Neighbors wrote an op-ed (Solar opinion undermines growing industry), which was published by the Indiana Capital Chronicle on January 9th.
+
+>  
+
+> 
+
+>  
+
+> 
+
+> 45509 - Electric vehicle charging accounting
+
+> 
+
+> File date: 3/2/2021
+
+> 
+
+> Status: withdrawn
+
+> 
+
+> AES Indiana was proposing to offer a portfolio of electric vehicle programs and initiatives, including managed charging (active curtailment of EV charging during peak hours), AES Indiana Motor (digitally-enabled EV marketplace), and an off-peak incentive (off-bill, seasonal incentive structure designed to encourage off-peak EV charging). AES withdrew the case, but can refile the same or similar case in the future.
+
+> 
+
 >  And then look at all these filings. They just they just don't know where to stop to get money, do they? Let's let's encourage everybody to get EVs. So then our our screwed up meters can charge them six times more when the car is not even charging. Yeah, OK. Oh, also, we know our billing issues are all wrong, and we've been overcharging two to six times of 60,000 to 100,000 people in the Indiana area and probably in other countries. But yeah, we also want to go ahead and increase our profit margins more and increase the rates. What what are who are these people? Is this the devil? I mean, like, what are you doing with so much money? There's only so many things you can buy. Like, and no human can can consume all that stuff in a lifetime. So it's like, dude, what are you guys doing? Stop it. Sit down. Fix the problems first. You keep asking for stuff.
 
 ### Assistant
@@ -5861,385 +6094,764 @@ canonical_ref: ""
 > **“Yes Gina, automate the exhibit copier.”**
 
 ### User
-> map out the directory with teh tree and create a move script to put evething where is goes. ```markdown
-> . 📂 AES_Disputev3
-> └── 📂 00_SYSTEM/
-> │  ├── 📄 ACTION_ITEMS.md
-> │  ├── 📄 AES_Contact_Form_Text.txt
-> │  ├── 📄 AES_Dispute_INDEX.md
-> │  ├── 📄 AES_Phone_Script.txt
-> │  ├── 📄 AUDIT_COMPLETE_SUMMARY.md
-> │  ├── 📄 CASE_BINDER_SUMMARY.md
-> │  ├── 📄 EVIDENCE_NUMBERING_SYSTEM.md
-> │  ├── 📄 EXECUTION_CHECKLIST.md
-> │  ├── 📄 FILE_REFERENCES.md
-> │  ├── 📄 LIHEAP_APPLICATION_GUIDE.md
-> │  ├── 📄 MASTER_EVIDENCE_INDEX.md
-> │  ├── 📄 MIGRATION_NOTES.md
-> │  ├── 📄 MORNING_SCRIPT.md
-> │  ├── 📄 PROJECT_MASTER.md
-> │  ├── 📄 PROJECT_MODULES.md
-> │  ├── 📄 PROJECT_TASKS.md
-> │  ├── 📄 PROJECT_WIKI.md
-> │  ├── 📄 QUICK_REFERENCE_PHONE_SCRIPT.md
-> │  ├── 📄 README_EXTRACTION_TOOL.md
-> │  ├── 📄 READY_TO_PASTE_INDEX.md
-> │  ├── 📄 REPOSITORY_INVENTORY.md
-> │  ├── 📄 WHAT_TO_EXPECT.md
-> │  ├── 📄 audit_repository.py
-> │  ├── 📄 auto_sort_aes.py
-> │  ├── 📄 check_structure.ps1
-> │  ├── 📄 demand_meter_test_to_AES.md
-> │  ├── 📄 extract_aes_bills.py
-> │  ├── 📄 folder_scaffold.ps1
-> │  ├── 📄 folder_scaffold.sh
-> │  ├── 📄 forensic_analysis_dataset.csv
-> │  └── 📂 logs/
-> │    └── 📂 assets/
-> │      └── 📂 visuals/
-> │    ├── 📄 auto_sort_log.txt
-> │    ├── 📄 calls_log.md
-> │    ├── 📄 portal_activity_log.md
-> │    ├── 📄 time_tracking.md
-> │  ├── 📄 migrate_and_organize.ps1
-> │  ├── 📄 naming_rules.md
-> │  ├── 📄 organize_and_number_evidence.py
-> │  ├── 📄 requirements.txt
-> │  ├── 📄 scaffold_generator.ps1
-> │  ├── 📄 scaffold_generator.sh
-> │  └── 📂 scripts/
-> │    ├── 📄 packet_manifest_generator.py
-> │    ├── 📄 repo_structure_validator.py
-> │    ├── 📄 validate_and_migrate.ps1
-> │  ├── 📄 supplemental_IURC_meter_error_filing.md
-> │  ├── 📄 supplemental_OUCC_meter_error_filing.md
-> │  └── 📂 time/
-> │    ├── 📄 ADA_Request_1_TimeLog.md
-> │    ├── 📄 ADA_Request_2_TimeLog.md
-> │    ├── 📄 AES_Dispute_TimeLog.md
-> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
-> │    ├── 📄 TimeLog_MasterIndex.md
-> │  └── 📂 tools/
-> │    ├── 📄 README_EXTRACTION_TOOL.md
-> │    ├── 📄 add_poppler_to_path.ps1
-> │    ├── 📄 extract_aes_bills.py
-> │    ├── 📄 requirements.txt
-> │    ├── 📄 verify_poppler.ps1
-> └── 📂 01_CASE_NARRATIVE/
-> │  ├── 📄 00_Timeline_Master.md
-> │  ├── 📄 01_Case_Overview.md
-> │  ├── 📄 02_Personal_Impact_Statement.md
-> │  ├── 📄 _index.md
-> └── 📂 02_BILLS_AND_USAGE/
-> │  ├── 📄 01_Meter_Nameplate_Specs.md
-> │  ├── 📄 02_Meter_Display_Observations.md
-> │  ├── 📄 03_Smart_Meter_Function_and_Risks.md
-> │  ├── 📄 04_Questions_for_AES_Metering_Team.md
-> │  ├── 📄 _index.md
-> └── 📂 03_CORRESPONDENCE/
-> │  └── 📂 AES_Correspondence/
-> │    ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
-> │    ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
-> │    ├── 📄 20251120_Gmail_Energy_Report.pdf
-> │    ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
-> │    ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
-> │    ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
-> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
-> │  └── 📂 Call_Notes/
-> │    ├── 📄 Call_Scripts.md
-> │  ├── 📄 INDEX.md
-> │  └── 📂 Incoming/
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
-> │  └── 📂 Outbound/
-> │    └── 📂 2025-12-08_ADA_Request_Second_Packet/
-> │      ├── 📄 README.md
-> │  ├── 📄 README.md
-> │  └── 📂 Regulators/
-> │  └── 📂 _drafts/
-> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
-> └── 📂 04_REQUESTS_AND_FILINGS/
-> │  └── 📂 ADA_Requests/
-> │  ├── 📄 AES_Dispute_Letter_Primary.md
-> │  └── 📂 Misc_Forms/
-> │  └── 📂 Payment_Extension_Requests/
-> │  └── 📂 Regulatory_Requests/
-> │  └── 📂 _drafts/
-> │  └── 📂 regulatory/
-> │    └── 📂 Congress_and_President_Letters/
-> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
-> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
-> └── 📂 05_EVIDENCE_AND_EXHIBITS/
-> │  └── 📂 ADA_Documents/
-> │    └── 📂 AES_Usage_Reports/
-> │      ├── 📄 Gmail - Hi CODY RICE, here's your improved, more personalized report_.pdf
-> │      ├── 📄 Gmail - Weekly energy analysis November 10 – 16, 2025_ You used 18% more energy_.pdf
-> │      ├── 📄 Gmail - Weekly energy analysis November 17 – 23, 2025_ Your energy usage was about the same_.pdf
-> │      ├── 📄 Gmail - Weekly energy analysis November 24 – 30, 2025_ You used 29% more energy_.pdf
-> │      ├── 📄 Gmail - Weekly energy analysis November 3 – 9, 2025_ You used 26% more energy_.pdf
-> │    ├── 📄 STUB_PaymentExtension_Documentation.md
-> │    ├── 📄 STUB_README.md
-> │    ├── 📄 STUB_ReturnedPayment_Documentation.md
-> │  ├── 📄 AES_Evidence_Index_and_Checklist.md
-> │  └── 📂 Affidavits_and_Witness_Statements/
-> │    ├── 📄 Affidavit_Hardship.pdf
-> │    ├── 📄 Affidavit_Roommate.pdf
-> │  └── 📂 Bills_and_Statements/
-> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │    ├── 📄 12172025_30S Indiana.pdf
-> │    ├── 📄 20220426_AES_Bill.pdf
-> │    ├── 📄 20220518_AES_Bill.pdf
-> │    ├── 📄 20220628_AES_Bill.pdf
-> │    ├── 📄 20220720_AES_Bill.pdf
-> │    ├── 📄 20221128_AES_Bill.pdf
-> │    ├── 📄 20221228_AES_Bill.pdf
-> │    ├── 📄 20230127_AES_Bill.pdf
-> │    ├── 📄 20230224_AES_Bill.pdf
-> │    ├── 📄 20230328_AES_Bill.pdf
-> │    ├── 📄 20230426_AES_Bill.pdf
-> │    ├── 📄 20230526_AES_Bill.pdf
-> │    ├── 📄 20230628_AES_Bill.pdf
-> │    ├── 📄 20230727_AES_Bill.pdf
-> │    ├── 📄 20230829_AES_Bill.pdf
-> │    ├── 📄 20230927_AES_Bill.pdf
-> │    ├── 📄 20231025_AES_Bill.pdf
-> │    ├── 📄 20231130_AES_Bill.pdf
-> │    ├── 📄 20231229_AES_Bill.pdf
-> │    ├── 📄 20240130_AES_Bill.pdf
-> │    ├── 📄 20240305_AES_Bill.pdf
-> │    ├── 📄 20240328_AES_Bill.pdf
-> │    ├── 📄 20240430_AES_Bill.pdf
-> │    ├── 📄 20240531_AES_Bill.pdf
-> │    ├── 📄 20240628_AES_Bill.pdf
-> │    ├── 📄 20240729_AES_Bill.pdf
-> │    ├── 📄 20240918_AES_Bill.pdf
-> │    ├── 📄 20240930_AES_Bill.pdf
-> │    ├── 📄 20241021_AES_Bill.pdf
-> │    ├── 📄 20241031_AES_Bill.pdf
-> │    ├── 📄 20241127_AES_Bill.pdf
-> │    ├── 📄 20241231_AES_Bill.pdf
-> │    ├── 📄 20250131_AES_Bill.pdf
-> │    ├── 📄 20250303_AES_Bill.pdf
-> │    ├── 📄 20250331_AES_Bill.pdf
-> │    ├── 📄 20250430_AES_Bill.pdf
-> │    ├── 📄 20250518_AES_Bill.pdf
-> │    ├── 📄 20250530_AES_Bill.pdf
-> │    ├── 📄 20250630_AES_Bill.pdf
-> │    ├── 📄 20250731_AES_Bill.pdf
-> │    ├── 📄 20250829_AES_Bill.pdf
-> │    ├── 📄 20250919_AES_Bill.pdf
-> │    ├── 📄 20250930_AES_Bill.pdf
-> │    ├── 📄 20251021_AES_Bill.pdf
-> │    ├── 📄 AES_data.xlsx
-> │    ├── 📄 Bills_and_Statements_compressed.zip
-> │    ├── 📄 compress.py
-> │    ├── 📄 compress_aggressive.ps1
-> │    ├── 📄 compress_folder.ps1
-> │    ├── 📄 compress_to_24mb.ps1
-> │    ├── 📄 compress_to_24mb.py
-> │    ├── 📄 compression_result.txt
-> │    ├── 📄 create_compressed_archive.ps1
-> │    ├── 📄 run_compression.bat
-> │    ├── 📄 split_by_year.ps1
-> │  └── 📂 Data_Analysis/
-> │  ├── 📄 DisconnectDate_Changed_Proof.md
-> │  ├── 📄 DisconnectNotice_ChangedDate_Log.md
-> │  └── 📂 Disconnection_Notices/
-> │    ├── 📄 STUB_DisconnectionNotice_Log.md
-> │    ├── 📄 STUB_README.md
-> │  └── 📂 E_Technical_Errors_and_Markup/
-> │    ├── 📄 README_MarkupError.md
-> │    ├── 📄 System_Upgrade_Message.md
-> │  └── 📂 Energy_Conservation/
-> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
-> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │    ├── 📄 2025-10-30_Thermostat_65F.png
-> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
-> │    ├── 📄 2025-10-30_WaterHeater_127F.png
-> │  ├── 📄 Exhibit_Index.md
-> │  └── 📂 Exhibits/
-> │  ├── 📄 Exhibits_Index.md
-> │  └── 📂 Household_Inventory/
-> │    ├── 📄 COMPLETION_SUMMARY.md
-> │    ├── 📄 Comparison_Table.md
-> │    ├── 📄 Current_Inventory.md
-> │    ├── 📄 Inventory_Analysis_Summary.md
-> │    ├── 📄 Peak_Inventory.md
-> │    ├── 📄 README.md
-> │    ├── 📄 inventory_manifest.json
-> │  ├── 📄 INDEX.md
-> │  └── 📂 Logs/
-> │    ├── 📄 STUB_CallLog_AESContacts.md
-> │    ├── 📄 STUB_HotelReceipts_Disconnection.md
-> │    ├── 📄 STUB_README.md
-> │  └── 📂 Media/
-> │    └── 📂 Audio/
-> │    └── 📂 Photos/
-> │      ├── 📄 README.md
-> │    └── 📂 Screenshots/
-> │    └── 📂 Videos/
-> │      ├── 📄 README.md
-> │  └── 📂 Meter_Readings_and_Photos/
-> │    ├── 📄 STUB_MeterNumber_Verification.md
-> │    ├── 📄 STUB_MeterPhoto_DELReading.md
-> │    ├── 📄 STUB_README.md
-> │  └── 📂 Obsidian_Canvas_Maps/
-> │    ├── 📄 AES_Case_Roadmap.canvas
-> │    ├── 📄 AES_Folder_Map.canvas
-> │  └── 📂 Public_Evidence/
-> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
-> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
-> │  ├── 📄 README (2).md
-> │  ├── 📄 README.md
-> │  └── 📂 Recorded_Calls_and_Notes/
-> │  └── 📂 Scientific_Support/
-> │    ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
-> │  ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
-> │  ├── 📄 _index_manifest.json
-> │  └── 📂 payments/
-> │    ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
-> │    ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
-> │    ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
-> │    ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
-> │  └── 📂 tesla/
-> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │  └── 📂 timeline/
-> │  └── 📂 usage_charts/
-> │    └── 📂 billing_audit/
-> │    └── 📂 legal_theory/
-> │    └── 📂 timeline/
-> └── 📂 06_ANALYSIS_AND_FINDINGS/
-> │  ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
-> │  ├── 📄 02_Billing_and_Usage_Analysis.md
-> │  ├── 📄 03_ADA_Violations_Findings.md
-> │  ├── 📄 04_Public_Evidence_Memo.md
-> │  └── 📂 Negligence_Instances/
-> │  └── 📂 Policy_Notes/
-> │  ├── 📄 README.md
-> │  └── 📂 Recorded_Behavior/
-> │  ├── 📄 aes_bill_meter_check_guide.md
-> │  └── 📂 billing_audit/
-> │  ├── 📄 forensic_analysis_dataset.csv
-> │  ├── 📄 forensic_analysis_dataset.json
-> │  ├── 📄 household_load_profile_before_vs_now.md
-> │  ├── 📄 household_load_profile_estimates.csv
-> │  └── 📂 legal_theory/
-> │  ├── 📄 meter_error_analysis.md
-> │  ├── 📄 public_pattern_analysis.md
-> └── 📂 07_AES_DIRECT_ACTIONS/
-> │  └── 📂 Negligence_Instances/
-> │  └── 📂 Policy_Notes/
-> │  ├── 📄 README.md
-> │  └── 📂 Recorded_Behavior/
-> └── 📂 08_CONSUMER_PROTECTION_CASE/
-> │  └── 📂 ADA_letter/
-> │    └── 📂 ADA_letter/
-> │  ├── 📄 AES_Regulator_Complaint_IURC.md
-> │  └── 📂 BBB_complaint/
-> │    └── 📂 BBB_complaint/
-> │  └── 📂 DOJ_ADA_complaint/
-> │    ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
-> │    └── 📂 DOJ_ADA_complaint/
-> │    ├── 📄 DOJ_ADA_complaint_main.md
-> │  └── 📂 Federal/
-> │  ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
-> │  └── 📂 IURC/
-> │    ├── 📄 IURC_READY_TO_PASTE.txt
-> │    └── 📂 IURC_complaint/
-> │    ├── 📄 IURC_complaint_main.md
-> │  └── 📂 Indiana_AG/
-> │  └── 📂 OUCC/
-> │    ├── 📄 OUCC_READY_TO_PASTE.txt
-> │    └── 📂 OUCC_complaint/
-> │    ├── 📄 OUCC_complaint_main.md
-> │  ├── 📄 README.md
-> │  ├── 📄 STUB_README.md
-> └── 📂 09_FINAL_DELIVERABLES/
-> │  ├── 📄 08_Final_Index.md
-> │  └── 📂 ADA_Request_One/
-> │    ├── 📄 2025-06-08_ADA-Request-AES.pdf
-> │  └── 📂 ADA_Request_Two/
-> │    ├── 📄 01_Cover_Letter_ADA.pdf
-> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
-> │    ├── 📄 04_Evidence_Checklist.pdf
-> │    ├── 📄 12_Affidavit_of_Hardship.pdf
-> │  ├── 📄 COMPLETION_SUMMARY.md
-> │  └── 📂 Evidence_Indexes/
-> │  ├── 📄 FINAL_ACTION_CHECKLIST.md
-> │  └── 📂 Letters/
-> │  └── 📂 Packet_Assemblies/
-> │  ├── 📄 README (2).md
-> │  ├── 📄 README.md
-> │  └── 📂 Regulatory_Submissions/
-> │  ├── 📄 aes_case_roadmap.canvas
-> │  └── 📂 aes_packet/
-> │    ├── 📄 00_INDEX.md
-> │    ├── 📄 01_Cover_Letter_ADA.md
-> │    ├── 📄 01_Cover_Letter_ADA.pdf
-> │    ├── 📄 02_Payment_Plan_Seasonal.md
-> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
-> │    ├── 📄 03_Regulatory_Complaint_IURC.md
-> │    ├── 📄 04_Evidence_Checklist.md
-> │    ├── 📄 05_Call_Log_Template.md
-> │    ├── 📄 06_Timeline.md
-> │    ├── 📄 07_Billing_Audit_Summary.md
-> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
-> │    ├── 📄 09_Monthly_Tracker_Template.md
-> │    ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │    ├── 📄 10_Media_Talking_Points.md
-> │    ├── 📄 11_Job_Application_Cover_Letter.md
-> │    ├── 📄 12_Affidavit_of_Hardship.md
-> │    ├── 📄 2025-06-08_ADA-Request-AES.txt
-> │    ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
-> │    ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
-> │    ├── 📄 AES_Contact_Form_Text.txt
-> │    ├── 📄 AES_Email_Draft.eml
-> │    ├── 📄 AES_Phone_Script.txt
-> │    ├── 📄 AES_Usage_Timeline.csv
-> │    ├── 📄 AES_Usage_Timelines_Bills.xlsx
-> │    ├── 📄 README.md
-> │    └── 📂 aes_packet/
-> │    └── 📂 attachments/
-> │      └── 📂 Affidavits/
-> │        ├── 📄 Affidavit_Aunt.md
-> │        ├── 📄 Affidavit_Father.md
-> │        ├── 📄 Affidavit_Mother.md
-> │    └── 📂 docs/
-> │      └── 📂 aes_dispute/
-> │        ├── 📄 AES_Call_Script_Notes.md
-> │        ├── 📄 AES_Dispute_Email_Template.md
-> │        ├── 📄 AES_Dispute_Letter_Primary.md
-> │        ├── 📄 AES_Evidence_Index_and_Checklist.md
-> │        ├── 📄 AES_Regulator_Complaint_IURC.md
-> │        ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
-> │        ├── 📄 README.md
-> │  └── 📂 meter_error_packet/
-> │    ├── 📄 01_summary.md
-> │    ├── 📄 02_scientific_support.md
-> │    ├── 📄 03_usage_analysis.md
-> │    ├── 📄 04_impossible_consumption.md
-> │    ├── 📄 05_evidence_index.md
-> │    ├── 📄 06_request_for_meter_test.md
-> │    ├── 📄 07_DOJ_addendum.md
-> │    ├── 📄 08_IURC_exhibit.md
-> │    ├── 📄 09_OUCC_exhibit.md
-> │    ├── 📄 09_public_pattern_exhibit.md
-> │    ├── 📄 10_whio_public_pattern_exhibit.md
-> │    ├── 📄 11_hardship_impact_exhibit.md
-> │    └── 📂 meter_error_packet/
-> │  └── 📂 regulatory_packet/
-> │    └── 📂 regulatory_packet/
-> ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
-> ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
-> ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
-> ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
-> ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
-> ├── 📄 MASTER_INDEX.md
-> ├── 📄 README.md
-> ├── 📄 index-lite.json
-> ├── 📄 index.json
-> ├── 📄 index.map.md
-> └── 📄 index.schema.json
+> map out the directory with teh tree and create a move script to put evething where is goes. ```markdown
+
+> . 📂 AES_Disputev3
+
+> └── 📂 00_SYSTEM/
+
+> │  ├── 📄 ACTION_ITEMS.md
+
+> │  ├── 📄 AES_Contact_Form_Text.txt
+
+> │  ├── 📄 AES_Dispute_INDEX.md
+
+> │  ├── 📄 AES_Phone_Script.txt
+
+> │  ├── 📄 AUDIT_COMPLETE_SUMMARY.md
+
+> │  ├── 📄 CASE_BINDER_SUMMARY.md
+
+> │  ├── 📄 EVIDENCE_NUMBERING_SYSTEM.md
+
+> │  ├── 📄 EXECUTION_CHECKLIST.md
+
+> │  ├── 📄 FILE_REFERENCES.md
+
+> │  ├── 📄 LIHEAP_APPLICATION_GUIDE.md
+
+> │  ├── 📄 MASTER_EVIDENCE_INDEX.md
+
+> │  ├── 📄 MIGRATION_NOTES.md
+
+> │  ├── 📄 MORNING_SCRIPT.md
+
+> │  ├── 📄 PROJECT_MASTER.md
+
+> │  ├── 📄 PROJECT_MODULES.md
+
+> │  ├── 📄 PROJECT_TASKS.md
+
+> │  ├── 📄 PROJECT_WIKI.md
+
+> │  ├── 📄 QUICK_REFERENCE_PHONE_SCRIPT.md
+
+> │  ├── 📄 README_EXTRACTION_TOOL.md
+
+> │  ├── 📄 READY_TO_PASTE_INDEX.md
+
+> │  ├── 📄 REPOSITORY_INVENTORY.md
+
+> │  ├── 📄 WHAT_TO_EXPECT.md
+
+> │  ├── 📄 audit_repository.py
+
+> │  ├── 📄 auto_sort_aes.py
+
+> │  ├── 📄 check_structure.ps1
+
+> │  ├── 📄 demand_meter_test_to_AES.md
+
+> │  ├── 📄 extract_aes_bills.py
+
+> │  ├── 📄 folder_scaffold.ps1
+
+> │  ├── 📄 folder_scaffold.sh
+
+> │  ├── 📄 forensic_analysis_dataset.csv
+
+> │  └── 📂 logs/
+
+> │    └── 📂 assets/
+
+> │      └── 📂 visuals/
+
+> │    ├── 📄 auto_sort_log.txt
+
+> │    ├── 📄 calls_log.md
+
+> │    ├── 📄 portal_activity_log.md
+
+> │    ├── 📄 time_tracking.md
+
+> │  ├── 📄 migrate_and_organize.ps1
+
+> │  ├── 📄 naming_rules.md
+
+> │  ├── 📄 organize_and_number_evidence.py
+
+> │  ├── 📄 requirements.txt
+
+> │  ├── 📄 scaffold_generator.ps1
+
+> │  ├── 📄 scaffold_generator.sh
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 packet_manifest_generator.py
+
+> │    ├── 📄 repo_structure_validator.py
+
+> │    ├── 📄 validate_and_migrate.ps1
+
+> │  ├── 📄 supplemental_IURC_meter_error_filing.md
+
+> │  ├── 📄 supplemental_OUCC_meter_error_filing.md
+
+> │  └── 📂 time/
+
+> │    ├── 📄 ADA_Request_1_TimeLog.md
+
+> │    ├── 📄 ADA_Request_2_TimeLog.md
+
+> │    ├── 📄 AES_Dispute_TimeLog.md
+
+> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
+
+> │    ├── 📄 TimeLog_MasterIndex.md
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 README_EXTRACTION_TOOL.md
+
+> │    ├── 📄 add_poppler_to_path.ps1
+
+> │    ├── 📄 extract_aes_bills.py
+
+> │    ├── 📄 requirements.txt
+
+> │    ├── 📄 verify_poppler.ps1
+
+> └── 📂 01_CASE_NARRATIVE/
+
+> │  ├── 📄 00_Timeline_Master.md
+
+> │  ├── 📄 01_Case_Overview.md
+
+> │  ├── 📄 02_Personal_Impact_Statement.md
+
+> │  ├── 📄 _index.md
+
+> └── 📂 02_BILLS_AND_USAGE/
+
+> │  ├── 📄 01_Meter_Nameplate_Specs.md
+
+> │  ├── 📄 02_Meter_Display_Observations.md
+
+> │  ├── 📄 03_Smart_Meter_Function_and_Risks.md
+
+> │  ├── 📄 04_Questions_for_AES_Metering_Team.md
+
+> │  ├── 📄 _index.md
+
+> └── 📂 03_CORRESPONDENCE/
+
+> │  └── 📂 AES_Correspondence/
+
+> │    ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
+
+> │    ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
+
+> │    ├── 📄 20251120_Gmail_Energy_Report.pdf
+
+> │    ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
+
+> │    ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
+
+> │    ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
+
+> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
+
+> │  └── 📂 Call_Notes/
+
+> │    ├── 📄 Call_Scripts.md
+
+> │  ├── 📄 INDEX.md
+
+> │  └── 📂 Incoming/
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
+
+> │  └── 📂 Outbound/
+
+> │    └── 📂 2025-12-08_ADA_Request_Second_Packet/
+
+> │      ├── 📄 README.md
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 Regulators/
+
+> │  └── 📂 _drafts/
+
+> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
+
+> └── 📂 04_REQUESTS_AND_FILINGS/
+
+> │  └── 📂 ADA_Requests/
+
+> │  ├── 📄 AES_Dispute_Letter_Primary.md
+
+> │  └── 📂 Misc_Forms/
+
+> │  └── 📂 Payment_Extension_Requests/
+
+> │  └── 📂 Regulatory_Requests/
+
+> │  └── 📂 _drafts/
+
+> │  └── 📂 regulatory/
+
+> │    └── 📂 Congress_and_President_Letters/
+
+> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
+
+> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
+
+> └── 📂 05_EVIDENCE_AND_EXHIBITS/
+
+> │  └── 📂 ADA_Documents/
+
+> │    └── 📂 AES_Usage_Reports/
+
+> │      ├── 📄 Gmail - Hi CODY RICE, here's your improved, more personalized report_.pdf
+
+> │      ├── 📄 Gmail - Weekly energy analysis November 10 – 16, 2025_ You used 18% more energy_.pdf
+
+> │      ├── 📄 Gmail - Weekly energy analysis November 17 – 23, 2025_ Your energy usage was about the same_.pdf
+
+> │      ├── 📄 Gmail - Weekly energy analysis November 24 – 30, 2025_ You used 29% more energy_.pdf
+
+> │      ├── 📄 Gmail - Weekly energy analysis November 3 – 9, 2025_ You used 26% more energy_.pdf
+
+> │    ├── 📄 STUB_PaymentExtension_Documentation.md
+
+> │    ├── 📄 STUB_README.md
+
+> │    ├── 📄 STUB_ReturnedPayment_Documentation.md
+
+> │  ├── 📄 AES_Evidence_Index_and_Checklist.md
+
+> │  └── 📂 Affidavits_and_Witness_Statements/
+
+> │    ├── 📄 Affidavit_Hardship.pdf
+
+> │    ├── 📄 Affidavit_Roommate.pdf
+
+> │  └── 📂 Bills_and_Statements/
+
+> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │    ├── 📄 12172025_30S Indiana.pdf
+
+> │    ├── 📄 20220426_AES_Bill.pdf
+
+> │    ├── 📄 20220518_AES_Bill.pdf
+
+> │    ├── 📄 20220628_AES_Bill.pdf
+
+> │    ├── 📄 20220720_AES_Bill.pdf
+
+> │    ├── 📄 20221128_AES_Bill.pdf
+
+> │    ├── 📄 20221228_AES_Bill.pdf
+
+> │    ├── 📄 20230127_AES_Bill.pdf
+
+> │    ├── 📄 20230224_AES_Bill.pdf
+
+> │    ├── 📄 20230328_AES_Bill.pdf
+
+> │    ├── 📄 20230426_AES_Bill.pdf
+
+> │    ├── 📄 20230526_AES_Bill.pdf
+
+> │    ├── 📄 20230628_AES_Bill.pdf
+
+> │    ├── 📄 20230727_AES_Bill.pdf
+
+> │    ├── 📄 20230829_AES_Bill.pdf
+
+> │    ├── 📄 20230927_AES_Bill.pdf
+
+> │    ├── 📄 20231025_AES_Bill.pdf
+
+> │    ├── 📄 20231130_AES_Bill.pdf
+
+> │    ├── 📄 20231229_AES_Bill.pdf
+
+> │    ├── 📄 20240130_AES_Bill.pdf
+
+> │    ├── 📄 20240305_AES_Bill.pdf
+
+> │    ├── 📄 20240328_AES_Bill.pdf
+
+> │    ├── 📄 20240430_AES_Bill.pdf
+
+> │    ├── 📄 20240531_AES_Bill.pdf
+
+> │    ├── 📄 20240628_AES_Bill.pdf
+
+> │    ├── 📄 20240729_AES_Bill.pdf
+
+> │    ├── 📄 20240918_AES_Bill.pdf
+
+> │    ├── 📄 20240930_AES_Bill.pdf
+
+> │    ├── 📄 20241021_AES_Bill.pdf
+
+> │    ├── 📄 20241031_AES_Bill.pdf
+
+> │    ├── 📄 20241127_AES_Bill.pdf
+
+> │    ├── 📄 20241231_AES_Bill.pdf
+
+> │    ├── 📄 20250131_AES_Bill.pdf
+
+> │    ├── 📄 20250303_AES_Bill.pdf
+
+> │    ├── 📄 20250331_AES_Bill.pdf
+
+> │    ├── 📄 20250430_AES_Bill.pdf
+
+> │    ├── 📄 20250518_AES_Bill.pdf
+
+> │    ├── 📄 20250530_AES_Bill.pdf
+
+> │    ├── 📄 20250630_AES_Bill.pdf
+
+> │    ├── 📄 20250731_AES_Bill.pdf
+
+> │    ├── 📄 20250829_AES_Bill.pdf
+
+> │    ├── 📄 20250919_AES_Bill.pdf
+
+> │    ├── 📄 20250930_AES_Bill.pdf
+
+> │    ├── 📄 20251021_AES_Bill.pdf
+
+> │    ├── 📄 AES_data.xlsx
+
+> │    ├── 📄 Bills_and_Statements_compressed.zip
+
+> │    ├── 📄 compress.py
+
+> │    ├── 📄 compress_aggressive.ps1
+
+> │    ├── 📄 compress_folder.ps1
+
+> │    ├── 📄 compress_to_24mb.ps1
+
+> │    ├── 📄 compress_to_24mb.py
+
+> │    ├── 📄 compression_result.txt
+
+> │    ├── 📄 create_compressed_archive.ps1
+
+> │    ├── 📄 run_compression.bat
+
+> │    ├── 📄 split_by_year.ps1
+
+> │  └── 📂 Data_Analysis/
+
+> │  ├── 📄 DisconnectDate_Changed_Proof.md
+
+> │  ├── 📄 DisconnectNotice_ChangedDate_Log.md
+
+> │  └── 📂 Disconnection_Notices/
+
+> │    ├── 📄 STUB_DisconnectionNotice_Log.md
+
+> │    ├── 📄 STUB_README.md
+
+> │  └── 📂 E_Technical_Errors_and_Markup/
+
+> │    ├── 📄 README_MarkupError.md
+
+> │    ├── 📄 System_Upgrade_Message.md
+
+> │  └── 📂 Energy_Conservation/
+
+> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
+
+> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │    ├── 📄 2025-10-30_Thermostat_65F.png
+
+> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
+
+> │    ├── 📄 2025-10-30_WaterHeater_127F.png
+
+> │  ├── 📄 Exhibit_Index.md
+
+> │  └── 📂 Exhibits/
+
+> │  ├── 📄 Exhibits_Index.md
+
+> │  └── 📂 Household_Inventory/
+
+> │    ├── 📄 COMPLETION_SUMMARY.md
+
+> │    ├── 📄 Comparison_Table.md
+
+> │    ├── 📄 Current_Inventory.md
+
+> │    ├── 📄 Inventory_Analysis_Summary.md
+
+> │    ├── 📄 Peak_Inventory.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 inventory_manifest.json
+
+> │  ├── 📄 INDEX.md
+
+> │  └── 📂 Logs/
+
+> │    ├── 📄 STUB_CallLog_AESContacts.md
+
+> │    ├── 📄 STUB_HotelReceipts_Disconnection.md
+
+> │    ├── 📄 STUB_README.md
+
+> │  └── 📂 Media/
+
+> │    └── 📂 Audio/
+
+> │    └── 📂 Photos/
+
+> │      ├── 📄 README.md
+
+> │    └── 📂 Screenshots/
+
+> │    └── 📂 Videos/
+
+> │      ├── 📄 README.md
+
+> │  └── 📂 Meter_Readings_and_Photos/
+
+> │    ├── 📄 STUB_MeterNumber_Verification.md
+
+> │    ├── 📄 STUB_MeterPhoto_DELReading.md
+
+> │    ├── 📄 STUB_README.md
+
+> │  └── 📂 Obsidian_Canvas_Maps/
+
+> │    ├── 📄 AES_Case_Roadmap.canvas
+
+> │    ├── 📄 AES_Folder_Map.canvas
+
+> │  └── 📂 Public_Evidence/
+
+> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
+
+> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
+
+> │  ├── 📄 README (2).md
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 Recorded_Calls_and_Notes/
+
+> │  └── 📂 Scientific_Support/
+
+> │    ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
+
+> │  ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
+
+> │  ├── 📄 _index_manifest.json
+
+> │  └── 📂 payments/
+
+> │    ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
+
+> │    ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
+
+> │    ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
+
+> │    ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
+
+> │  └── 📂 tesla/
+
+> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │  └── 📂 timeline/
+
+> │  └── 📂 usage_charts/
+
+> │    └── 📂 billing_audit/
+
+> │    └── 📂 legal_theory/
+
+> │    └── 📂 timeline/
+
+> └── 📂 06_ANALYSIS_AND_FINDINGS/
+
+> │  ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
+
+> │  ├── 📄 02_Billing_and_Usage_Analysis.md
+
+> │  ├── 📄 03_ADA_Violations_Findings.md
+
+> │  ├── 📄 04_Public_Evidence_Memo.md
+
+> │  └── 📂 Negligence_Instances/
+
+> │  └── 📂 Policy_Notes/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 Recorded_Behavior/
+
+> │  ├── 📄 aes_bill_meter_check_guide.md
+
+> │  └── 📂 billing_audit/
+
+> │  ├── 📄 forensic_analysis_dataset.csv
+
+> │  ├── 📄 forensic_analysis_dataset.json
+
+> │  ├── 📄 household_load_profile_before_vs_now.md
+
+> │  ├── 📄 household_load_profile_estimates.csv
+
+> │  └── 📂 legal_theory/
+
+> │  ├── 📄 meter_error_analysis.md
+
+> │  ├── 📄 public_pattern_analysis.md
+
+> └── 📂 07_AES_DIRECT_ACTIONS/
+
+> │  └── 📂 Negligence_Instances/
+
+> │  └── 📂 Policy_Notes/
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 Recorded_Behavior/
+
+> └── 📂 08_CONSUMER_PROTECTION_CASE/
+
+> │  └── 📂 ADA_letter/
+
+> │    └── 📂 ADA_letter/
+
+> │  ├── 📄 AES_Regulator_Complaint_IURC.md
+
+> │  └── 📂 BBB_complaint/
+
+> │    └── 📂 BBB_complaint/
+
+> │  └── 📂 DOJ_ADA_complaint/
+
+> │    ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
+
+> │    └── 📂 DOJ_ADA_complaint/
+
+> │    ├── 📄 DOJ_ADA_complaint_main.md
+
+> │  └── 📂 Federal/
+
+> │  ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
+
+> │  └── 📂 IURC/
+
+> │    ├── 📄 IURC_READY_TO_PASTE.txt
+
+> │    └── 📂 IURC_complaint/
+
+> │    ├── 📄 IURC_complaint_main.md
+
+> │  └── 📂 Indiana_AG/
+
+> │  └── 📂 OUCC/
+
+> │    ├── 📄 OUCC_READY_TO_PASTE.txt
+
+> │    └── 📂 OUCC_complaint/
+
+> │    ├── 📄 OUCC_complaint_main.md
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 STUB_README.md
+
+> └── 📂 09_FINAL_DELIVERABLES/
+
+> │  ├── 📄 08_Final_Index.md
+
+> │  └── 📂 ADA_Request_One/
+
+> │    ├── 📄 2025-06-08_ADA-Request-AES.pdf
+
+> │  └── 📂 ADA_Request_Two/
+
+> │    ├── 📄 01_Cover_Letter_ADA.pdf
+
+> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
+
+> │    ├── 📄 04_Evidence_Checklist.pdf
+
+> │    ├── 📄 12_Affidavit_of_Hardship.pdf
+
+> │  ├── 📄 COMPLETION_SUMMARY.md
+
+> │  └── 📂 Evidence_Indexes/
+
+> │  ├── 📄 FINAL_ACTION_CHECKLIST.md
+
+> │  └── 📂 Letters/
+
+> │  └── 📂 Packet_Assemblies/
+
+> │  ├── 📄 README (2).md
+
+> │  ├── 📄 README.md
+
+> │  └── 📂 Regulatory_Submissions/
+
+> │  ├── 📄 aes_case_roadmap.canvas
+
+> │  └── 📂 aes_packet/
+
+> │    ├── 📄 00_INDEX.md
+
+> │    ├── 📄 01_Cover_Letter_ADA.md
+
+> │    ├── 📄 01_Cover_Letter_ADA.pdf
+
+> │    ├── 📄 02_Payment_Plan_Seasonal.md
+
+> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
+
+> │    ├── 📄 03_Regulatory_Complaint_IURC.md
+
+> │    ├── 📄 04_Evidence_Checklist.md
+
+> │    ├── 📄 05_Call_Log_Template.md
+
+> │    ├── 📄 06_Timeline.md
+
+> │    ├── 📄 07_Billing_Audit_Summary.md
+
+> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
+
+> │    ├── 📄 09_Monthly_Tracker_Template.md
+
+> │    ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │    ├── 📄 10_Media_Talking_Points.md
+
+> │    ├── 📄 11_Job_Application_Cover_Letter.md
+
+> │    ├── 📄 12_Affidavit_of_Hardship.md
+
+> │    ├── 📄 2025-06-08_ADA-Request-AES.txt
+
+> │    ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
+
+> │    ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
+
+> │    ├── 📄 AES_Contact_Form_Text.txt
+
+> │    ├── 📄 AES_Email_Draft.eml
+
+> │    ├── 📄 AES_Phone_Script.txt
+
+> │    ├── 📄 AES_Usage_Timeline.csv
+
+> │    ├── 📄 AES_Usage_Timelines_Bills.xlsx
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 aes_packet/
+
+> │    └── 📂 attachments/
+
+> │      └── 📂 Affidavits/
+
+> │        ├── 📄 Affidavit_Aunt.md
+
+> │        ├── 📄 Affidavit_Father.md
+
+> │        ├── 📄 Affidavit_Mother.md
+
+> │    └── 📂 docs/
+
+> │      └── 📂 aes_dispute/
+
+> │        ├── 📄 AES_Call_Script_Notes.md
+
+> │        ├── 📄 AES_Dispute_Email_Template.md
+
+> │        ├── 📄 AES_Dispute_Letter_Primary.md
+
+> │        ├── 📄 AES_Evidence_Index_and_Checklist.md
+
+> │        ├── 📄 AES_Regulator_Complaint_IURC.md
+
+> │        ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
+
+> │        ├── 📄 README.md
+
+> │  └── 📂 meter_error_packet/
+
+> │    ├── 📄 01_summary.md
+
+> │    ├── 📄 02_scientific_support.md
+
+> │    ├── 📄 03_usage_analysis.md
+
+> │    ├── 📄 04_impossible_consumption.md
+
+> │    ├── 📄 05_evidence_index.md
+
+> │    ├── 📄 06_request_for_meter_test.md
+
+> │    ├── 📄 07_DOJ_addendum.md
+
+> │    ├── 📄 08_IURC_exhibit.md
+
+> │    ├── 📄 09_OUCC_exhibit.md
+
+> │    ├── 📄 09_public_pattern_exhibit.md
+
+> │    ├── 📄 10_whio_public_pattern_exhibit.md
+
+> │    ├── 📄 11_hardship_impact_exhibit.md
+
+> │    └── 📂 meter_error_packet/
+
+> │  └── 📂 regulatory_packet/
+
+> │    └── 📂 regulatory_packet/
+
+> ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
+
+> ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
+
+> ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
+
+> ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
+
+> ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
+
+> ├── 📄 MASTER_INDEX.md
+
+> ├── 📄 README.md
+
+> ├── 📄 index-lite.json
+
+> ├── 📄 index.json
+
+> ├── 📄 index.map.md
+
+> └── 📄 index.schema.json
+
 > ```
 
 ### Assistant
@@ -6532,150 +7144,294 @@ canonical_ref: ""
 > But first, I’d run the script above and confirm you’re happy with the normalization.
 
 ### User
-> here is my workign prototype for the device inventory. Appliance/Device	Model Number	Location	2024	Current	Date Removed	Estimated Usage Pattern (Hours/Day)	Power Consumption (Watts)	Potential Usage (kWh/Month)	Notes	Required Voltage (V)
-> 1500 btu air conditioner		Master	TRUE	FALSE	05/2025					
-> 3 bulbs		Bathroom	TRUE	TRUE						
-> 3 bulbs		Basement	TRUE	TRUE						
-> 300 btu air conditioner		Second Bed	TRUE	FALSE						
-> 32 inch smart tv		Basement	TRUE	FALSE						
-> 72In Smart TV		Living	TRUE	FALSE						
-> accent lights		Basement	TRUE	FALSE						
-> Accent Lights		Master	TRUE	FALSE						
-> Air Conditioner (Central)		Laundry Room	TRUE	TRUE	0	8	3500	840	Seasonal usage (4 months/year)	240
-> Air Fryer		Kitchen	TRUE	FALSE						
-> Air Purifer		Basement	TRUE	TRUE						
-> Air Purifier		Bonus Room	TRUE	FALSE						
-> Air Purifier		Bonus Room	TRUE	FALSE						
-> Air Purifier		Master	TRUE	FALSE						
-> Alexa		Master	TRUE	FALSE						
-> Android 1		All	TRUE	FALSE						
-> Back Porch Light		Kitchen	TRUE	FALSE						
-> Backup laptop		All	TRUE	FALSE						
-> Bathroom Lights		Master	TRUE	TRUE						
-> Blender		Kitchen	TRUE	FALSE						
-> Bulbs LED - Bathroom		Bath Half	TRUE	TRUE						
-> Carpet Clean		Living	TRUE	FALSE						
-> Charge Batter Backup		Garage	TRUE	FALSE						
-> Charge Leaf Blower		Garage	TRUE	FALSE						
-> Charge Weedwacker		Garage	TRUE	FALSE						
-> Cieling Fan 1		Master	TRUE	TRUE						
-> Cieling Fan 2		Master	TRUE	TRUE						
-> Cieling Fan With Light		Dinning Room	TRUE	TRUE						
-> Cieling Fan With Light		Second Bed	TRUE	TRUE						
-> Cieling Fan with Light, 		Bonus Room	TRUE	TRUE						
-> Cieling Fan with Light, 		Kitchen	TRUE	TRUE						
-> Closet Light		Master	TRUE	TRUE						
-> Computer 2		Bonus Room	TRUE	FALSE						
-> dehumidifer		Basement	TRUE	FALSE						
-> Dishwasher	Bosch SHEM78Z55N	Kitchen	TRUE	FALSE	0	0.5	1200	18	Used 4 times per week	120
-> Drip charge lawnmore 1-2		Garage	TRUE	FALSE						
-> Dryer (Electric)		Laundry Room	TRUE	FALSE	0	0.75	4500	101.25	Used 3 times per week	240
-> DVD Player		Living	TRUE	FALSE						
-> Echo Dot		Living	TRUE	FALSE						
-> Echo Dot		Master	TRUE	FALSE						
-> Echo Dot		Office	TRUE	FALSE						
-> Echo Dot		Basement	TRUE	FALSE						
-> Echo Show		Bonus Room	TRUE	FALSE						
-> Echo Show		Living	TRUE	FALSE						
-> fan		Basement	TRUE	FALSE						
-> Fan		Master	TRUE	FALSE						
-> Floor Lamp		Dinning Room	TRUE	FALSE						
-> Garage Door Opener		Garage	TRUE	TRUE						
-> Google Home		Living	TRUE	FALSE						
-> Google Home		Kitchen	TRUE	FALSE						
-> Hair Dryer		BathRoom	TRUE	FALSE						
-> Hair Dryer		Master	TRUE	TRUE						
-> Hallway Light		Hallway	TRUE	TRUE						
-> Heater - Faux Fire Place Living Room		Living	TRUE	FALSE						
-> Heating Pad		Master	TRUE	TRUE						
-> Internet		Laundry Room	TRUE	TRUE						
-> IP Phone 1		any	TRUE	TRUE						
-> IP Phone 2		any	TRUE	TRUE						
-> IP Phone 3		any	TRUE	TRUE						
-> Ipad		All	TRUE	TRUE						
-> Ipad		All	TRUE	FALSE						
-> Ipad		All	TRUE	FALSE						
-> Iphone		Second Bed	TRUE	FALSE						
-> Iphone 1		All	TRUE	FALSE						
-> Iphone 2		All	TRUE	FALSE						
-> Iphone 3		All	TRUE	FALSE						
-> Iphone 4		All	TRUE	FALSE						
-> Iphone 5		All	TRUE	FALSE						
-> Iphone 6		All	TRUE	FALSE						
-> Iphone 7		All	TRUE	FALSE						
-> Laminator		Master	TRUE	FALSE						
-> Lamp 3 bulbs		Living	TRUE	FALSE						
-> Laptop 2		All	TRUE	FALSE						
-> Large Fridge		Kitchen	TRUE	FALSE						
-> Large Vacuum Cleaner		Living	TRUE	FALSE						
-> Light - Foyer		Foyer	TRUE	FALSE						
-> Light - Front Yard		Yard	TRUE	FALSE						
-> Light - Porch		Porch	TRUE	FALSE						
-> MacBook		Second Bed	TRUE	FALSE						
-> Micro Fridge		Master	TRUE	FALSE						
-> Microwave		Kitchen	TRUE	FALSE						
-> Microwave Large		Bonus Room	TRUE	FALSE						
-> Microwave Oven	Panasonic NN-SN966S	Kitchen	TRUE	TRUE	0	0.1	1500	4.5	High peak usage	120
-> Mini Fridge 1		Master	TRUE	FALSE						
-> Mini Fridge 2		Basement	TRUE	FALSE						
-> Mini Fridge 3		Bonus Room	TRUE	FALSE						
-> Monitor 1		Master	TRUE	TRUE						
-> Monitor 2		Master	TRUE	TRUE						
-> Monitor 3		Master	TRUE	FALSE						
-> Monitor 4		Master	TRUE	FALSE						
-> Monitor 5		Master	TRUE	FALSE						
-> PC		Master	TRUE	TRUE						
-> PC2		Basement	TRUE	TRUE						
-> Phone Charger Backup		Garage	TRUE	FALSE						
-> Photo Printer		Master	TRUE	FALSE						
-> Plasma TV 40in		Second Bed	TRUE	FALSE						
-> Printer Business		Master	TRUE	FALSE						
-> Printer Home		Master	TRUE	TRUE						
-> Refrigerator Main		Kitchen	TRUE	FALSE	0	24	150	108	Energy Star Rated	120
-> Roku		Living	TRUE	FALSE						
-> Roku		Second Bed	TRUE	FALSE						
-> Router		Laundry Room	TRUE	FALSE						
-> Security Camera Garage		Kitchen	TRUE	FALSE						
-> Side Lamp		Second Bed	TRUE	TRUE						
-> Sling TV		Laundry Room	TRUE	FALSE						
-> Smart Plug 1		any	TRUE	TRUE						
-> Smart Plug 10		any	TRUE	FALSE						
-> Smart Plug 11		any	TRUE	FALSE						
-> Smart Plug 2		any	TRUE	FALSE						
-> Smart Plug 3		any	TRUE	FALSE						
-> Smart Plug 4		any	TRUE	FALSE						
-> Smart Plug 5		any	TRUE	FALSE						
-> Smart Plug 6		any	TRUE	FALSE						
-> Smart Plug 7		any	TRUE	FALSE						
-> Smart Plug 8		any	TRUE	FALSE						
-> Smart Plug 9		any	TRUE	FALSE						
-> Smart Speaker	Amazon Echo Dot	Basement	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
-> Smart Speaker	Amazon Echo Dot	Bonus Room	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
-> Smart Speaker	Amazon Echo Dot	Living Room	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
-> Smart Speaker	Amazon Echo Dot	Master	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
-> Smart TV		Bonus Room	TRUE	FALSE						
-> Smart TV		Master	TRUE	TRUE						
-> Smart TV		Master	TRUE	FALSE						
-> Sound System		Master	TRUE	TRUE						
-> space heater		Basement	TRUE	FALSE						
-> space heater		Basement	TRUE	FALSE						
-> Space Heater		Bonus Room	TRUE	FALSE						
-> speaker system		Basement	TRUE	FALSE						
-> Speaker System		Living	TRUE	FALSE						
-> Sterio		Basement	TRUE	FALSE						
-> Stove		Kitchen	TRUE	FALSE						
-> Straighter		Master	TRUE	TRUE						
-> Straightner		Bathroom	TRUE	FALSE						
-> subpump[		Basement	TRUE	TRUE						
-> Table Lamp		Living Room	TRUE	FALSE						
-> Table Lamp 1		Master	TRUE	FALSE						
-> Table Lamp 2		Master	TRUE	FALSE						
-> Tesla Wall Charging Commute		Garage	TRUE	FALSE						
-> Tesla Wall Charging Ridesahre		garage	TRUE	TRUE						
-> Toaster		Kitchen	TRUE	FALSE						
-> Toaster Oven	Breville BOV845BSS	Kitchen	TRUE	FALSE	0	0.25	1800	13.5	Variable heating elements	120
-> Vacuum Cleaner		Master	TRUE	FALSE						
-> Washing Machine		Laundry Room	TRUE	TRUE	0	0.5	500	7.5	Used 3 times per week	240
+> here is my workign prototype for the device inventory. Appliance/Device	Model Number	Location	2024	Current	Date Removed	Estimated Usage Pattern (Hours/Day)	Power Consumption (Watts)	Potential Usage (kWh/Month)	Notes	Required Voltage (V)
+
+> 1500 btu air conditioner		Master	TRUE	FALSE	05/2025					
+
+> 3 bulbs		Bathroom	TRUE	TRUE						
+
+> 3 bulbs		Basement	TRUE	TRUE						
+
+> 300 btu air conditioner		Second Bed	TRUE	FALSE						
+
+> 32 inch smart tv		Basement	TRUE	FALSE						
+
+> 72In Smart TV		Living	TRUE	FALSE						
+
+> accent lights		Basement	TRUE	FALSE						
+
+> Accent Lights		Master	TRUE	FALSE						
+
+> Air Conditioner (Central)		Laundry Room	TRUE	TRUE	0	8	3500	840	Seasonal usage (4 months/year)	240
+
+> Air Fryer		Kitchen	TRUE	FALSE						
+
+> Air Purifer		Basement	TRUE	TRUE						
+
+> Air Purifier		Bonus Room	TRUE	FALSE						
+
+> Air Purifier		Bonus Room	TRUE	FALSE						
+
+> Air Purifier		Master	TRUE	FALSE						
+
+> Alexa		Master	TRUE	FALSE						
+
+> Android 1		All	TRUE	FALSE						
+
+> Back Porch Light		Kitchen	TRUE	FALSE						
+
+> Backup laptop		All	TRUE	FALSE						
+
+> Bathroom Lights		Master	TRUE	TRUE						
+
+> Blender		Kitchen	TRUE	FALSE						
+
+> Bulbs LED - Bathroom		Bath Half	TRUE	TRUE						
+
+> Carpet Clean		Living	TRUE	FALSE						
+
+> Charge Batter Backup		Garage	TRUE	FALSE						
+
+> Charge Leaf Blower		Garage	TRUE	FALSE						
+
+> Charge Weedwacker		Garage	TRUE	FALSE						
+
+> Cieling Fan 1		Master	TRUE	TRUE						
+
+> Cieling Fan 2		Master	TRUE	TRUE						
+
+> Cieling Fan With Light		Dinning Room	TRUE	TRUE						
+
+> Cieling Fan With Light		Second Bed	TRUE	TRUE						
+
+> Cieling Fan with Light, 		Bonus Room	TRUE	TRUE						
+
+> Cieling Fan with Light, 		Kitchen	TRUE	TRUE						
+
+> Closet Light		Master	TRUE	TRUE						
+
+> Computer 2		Bonus Room	TRUE	FALSE						
+
+> dehumidifer		Basement	TRUE	FALSE						
+
+> Dishwasher	Bosch SHEM78Z55N	Kitchen	TRUE	FALSE	0	0.5	1200	18	Used 4 times per week	120
+
+> Drip charge lawnmore 1-2		Garage	TRUE	FALSE						
+
+> Dryer (Electric)		Laundry Room	TRUE	FALSE	0	0.75	4500	101.25	Used 3 times per week	240
+
+> DVD Player		Living	TRUE	FALSE						
+
+> Echo Dot		Living	TRUE	FALSE						
+
+> Echo Dot		Master	TRUE	FALSE						
+
+> Echo Dot		Office	TRUE	FALSE						
+
+> Echo Dot		Basement	TRUE	FALSE						
+
+> Echo Show		Bonus Room	TRUE	FALSE						
+
+> Echo Show		Living	TRUE	FALSE						
+
+> fan		Basement	TRUE	FALSE						
+
+> Fan		Master	TRUE	FALSE						
+
+> Floor Lamp		Dinning Room	TRUE	FALSE						
+
+> Garage Door Opener		Garage	TRUE	TRUE						
+
+> Google Home		Living	TRUE	FALSE						
+
+> Google Home		Kitchen	TRUE	FALSE						
+
+> Hair Dryer		BathRoom	TRUE	FALSE						
+
+> Hair Dryer		Master	TRUE	TRUE						
+
+> Hallway Light		Hallway	TRUE	TRUE						
+
+> Heater - Faux Fire Place Living Room		Living	TRUE	FALSE						
+
+> Heating Pad		Master	TRUE	TRUE						
+
+> Internet		Laundry Room	TRUE	TRUE						
+
+> IP Phone 1		any	TRUE	TRUE						
+
+> IP Phone 2		any	TRUE	TRUE						
+
+> IP Phone 3		any	TRUE	TRUE						
+
+> Ipad		All	TRUE	TRUE						
+
+> Ipad		All	TRUE	FALSE						
+
+> Ipad		All	TRUE	FALSE						
+
+> Iphone		Second Bed	TRUE	FALSE						
+
+> Iphone 1		All	TRUE	FALSE						
+
+> Iphone 2		All	TRUE	FALSE						
+
+> Iphone 3		All	TRUE	FALSE						
+
+> Iphone 4		All	TRUE	FALSE						
+
+> Iphone 5		All	TRUE	FALSE						
+
+> Iphone 6		All	TRUE	FALSE						
+
+> Iphone 7		All	TRUE	FALSE						
+
+> Laminator		Master	TRUE	FALSE						
+
+> Lamp 3 bulbs		Living	TRUE	FALSE						
+
+> Laptop 2		All	TRUE	FALSE						
+
+> Large Fridge		Kitchen	TRUE	FALSE						
+
+> Large Vacuum Cleaner		Living	TRUE	FALSE						
+
+> Light - Foyer		Foyer	TRUE	FALSE						
+
+> Light - Front Yard		Yard	TRUE	FALSE						
+
+> Light - Porch		Porch	TRUE	FALSE						
+
+> MacBook		Second Bed	TRUE	FALSE						
+
+> Micro Fridge		Master	TRUE	FALSE						
+
+> Microwave		Kitchen	TRUE	FALSE						
+
+> Microwave Large		Bonus Room	TRUE	FALSE						
+
+> Microwave Oven	Panasonic NN-SN966S	Kitchen	TRUE	TRUE	0	0.1	1500	4.5	High peak usage	120
+
+> Mini Fridge 1		Master	TRUE	FALSE						
+
+> Mini Fridge 2		Basement	TRUE	FALSE						
+
+> Mini Fridge 3		Bonus Room	TRUE	FALSE						
+
+> Monitor 1		Master	TRUE	TRUE						
+
+> Monitor 2		Master	TRUE	TRUE						
+
+> Monitor 3		Master	TRUE	FALSE						
+
+> Monitor 4		Master	TRUE	FALSE						
+
+> Monitor 5		Master	TRUE	FALSE						
+
+> PC		Master	TRUE	TRUE						
+
+> PC2		Basement	TRUE	TRUE						
+
+> Phone Charger Backup		Garage	TRUE	FALSE						
+
+> Photo Printer		Master	TRUE	FALSE						
+
+> Plasma TV 40in		Second Bed	TRUE	FALSE						
+
+> Printer Business		Master	TRUE	FALSE						
+
+> Printer Home		Master	TRUE	TRUE						
+
+> Refrigerator Main		Kitchen	TRUE	FALSE	0	24	150	108	Energy Star Rated	120
+
+> Roku		Living	TRUE	FALSE						
+
+> Roku		Second Bed	TRUE	FALSE						
+
+> Router		Laundry Room	TRUE	FALSE						
+
+> Security Camera Garage		Kitchen	TRUE	FALSE						
+
+> Side Lamp		Second Bed	TRUE	TRUE						
+
+> Sling TV		Laundry Room	TRUE	FALSE						
+
+> Smart Plug 1		any	TRUE	TRUE						
+
+> Smart Plug 10		any	TRUE	FALSE						
+
+> Smart Plug 11		any	TRUE	FALSE						
+
+> Smart Plug 2		any	TRUE	FALSE						
+
+> Smart Plug 3		any	TRUE	FALSE						
+
+> Smart Plug 4		any	TRUE	FALSE						
+
+> Smart Plug 5		any	TRUE	FALSE						
+
+> Smart Plug 6		any	TRUE	FALSE						
+
+> Smart Plug 7		any	TRUE	FALSE						
+
+> Smart Plug 8		any	TRUE	FALSE						
+
+> Smart Plug 9		any	TRUE	FALSE						
+
+> Smart Speaker	Amazon Echo Dot	Basement	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
+
+> Smart Speaker	Amazon Echo Dot	Bonus Room	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
+
+> Smart Speaker	Amazon Echo Dot	Living Room	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
+
+> Smart Speaker	Amazon Echo Dot	Master	TRUE	FALSE	0	24	3	2.16	Continuous low draw	120
+
+> Smart TV		Bonus Room	TRUE	FALSE						
+
+> Smart TV		Master	TRUE	TRUE						
+
+> Smart TV		Master	TRUE	FALSE						
+
+> Sound System		Master	TRUE	TRUE						
+
+> space heater		Basement	TRUE	FALSE						
+
+> space heater		Basement	TRUE	FALSE						
+
+> Space Heater		Bonus Room	TRUE	FALSE						
+
+> speaker system		Basement	TRUE	FALSE						
+
+> Speaker System		Living	TRUE	FALSE						
+
+> Sterio		Basement	TRUE	FALSE						
+
+> Stove		Kitchen	TRUE	FALSE						
+
+> Straighter		Master	TRUE	TRUE						
+
+> Straightner		Bathroom	TRUE	FALSE						
+
+> subpump[		Basement	TRUE	TRUE						
+
+> Table Lamp		Living Room	TRUE	FALSE						
+
+> Table Lamp 1		Master	TRUE	FALSE						
+
+> Table Lamp 2		Master	TRUE	FALSE						
+
+> Tesla Wall Charging Commute		Garage	TRUE	FALSE						
+
+> Tesla Wall Charging Ridesahre		garage	TRUE	TRUE						
+
+> Toaster		Kitchen	TRUE	FALSE						
+
+> Toaster Oven	Breville BOV845BSS	Kitchen	TRUE	FALSE	0	0.25	1800	13.5	Variable heating elements	120
+
+> Vacuum Cleaner		Master	TRUE	FALSE						
+
+> Washing Machine		Laundry Room	TRUE	TRUE	0	0.5	500	7.5	Used 3 times per week	240
+
 > Water Heater		Laundry Room	TRUE	FALSE
 
 ### Assistant
@@ -8521,331 +9277,656 @@ canonical_ref: ""
 > Send me the tree when you’re ready and I’ll finalize the Exhibit schema inside 02_EXHIBITS.
 
 ### User
-> ```markdown
-> . 📂 AES_Disputev3
-> └── 📂 00_SYSTEM/
-> │  ├── 📄 ACTION_ITEMS.md
-> │  ├── 📄 AES_Contact_Form_Text.txt
-> │  ├── 📄 AES_Dispute_INDEX.md
-> │  ├── 📄 AES_Phone_Script.txt
-> │  ├── 📄 AUDIT_COMPLETE_SUMMARY.md
-> │  ├── 📄 CASE_BINDER_SUMMARY.md
-> │  ├── 📄 EVIDENCE_NUMBERING_SYSTEM.md
-> │  ├── 📄 EXECUTION_CHECKLIST.md
-> │  ├── 📄 FILE_REFERENCES.md
-> │  ├── 📄 LIHEAP_APPLICATION_GUIDE.md
-> │  ├── 📄 MASTER_EVIDENCE_INDEX.md
-> │  ├── 📄 MIGRATION_NOTES.md
-> │  ├── 📄 MORNING_SCRIPT.md
-> │  ├── 📄 PROJECT_MASTER.md
-> │  ├── 📄 PROJECT_MODULES.md
-> │  ├── 📄 PROJECT_TASKS.md
-> │  ├── 📄 PROJECT_WIKI.md
-> │  ├── 📄 QUICK_REFERENCE_PHONE_SCRIPT.md
-> │  ├── 📄 READY_TO_PASTE_INDEX.md
-> │  ├── 📄 REPOSITORY_INVENTORY.md
-> │  ├── 📄 WHAT_TO_EXPECT.md
-> │  ├── 📄 audit_repository.py
-> │  ├── 📄 auto_sort_aes.py
-> │  ├── 📄 check_structure.ps1
-> │  ├── 📄 demand_meter_test_to_AES.md
-> │  ├── 📄 folder_scaffold.ps1
-> │  ├── 📄 folder_scaffold.sh
-> │  └── 📂 logs/
-> │    ├── 📄 auto_sort_log.txt
-> │    ├── 📄 calls_log.md
-> │    ├── 📄 portal_activity_log.md
-> │    ├── 📄 time_tracking.md
-> │  ├── 📄 migrate_and_organize.ps1
-> │  ├── 📄 naming_rules.md
-> │  ├── 📄 organize_and_number_evidence.py
-> │  ├── 📄 requirements.txt
-> │  ├── 📄 scaffold_generator.ps1
-> │  ├── 📄 scaffold_generator.sh
-> │  └── 📂 scripts/
-> │    ├── 📄 README_EXTRACTION_TOOL.md
-> │    ├── 📄 add_poppler_to_path.ps1
-> │    ├── 📄 extract_aes_bills.py
-> │    ├── 📄 packet_manifest_generator.py
-> │    ├── 📄 repo_structure_validator.py
-> │    ├── 📄 requirements.txt
-> │    ├── 📄 validate_and_migrate.ps1
-> │    ├── 📄 verify_poppler.ps1
-> │  ├── 📄 supplemental_IURC_meter_error_filing.md
-> │  ├── 📄 supplemental_OUCC_meter_error_filing.md
-> │  └── 📂 time/
-> │    ├── 📄 ADA_Request_1_TimeLog.md
-> │    ├── 📄 ADA_Request_2_TimeLog.md
-> │    ├── 📄 AES_Dispute_TimeLog.md
-> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
-> │    ├── 📄 TimeLog_MasterIndex.md
-> │  └── 📂 tools/
-> │    ├── 📄 compress.py
-> │    ├── 📄 compress_aggressive.ps1
-> │    ├── 📄 compress_folder.ps1
-> │    ├── 📄 compress_to_24mb.ps1
-> │    ├── 📄 compress_to_24mb.py
-> │    ├── 📄 create_compressed_archive.ps1
-> │    ├── 📄 run_compression.bat
-> │    ├── 📄 split_by_year.ps1
-> └── 📂 01_NARRATIVE/
-> │  ├── 📄 00_Timeline_Master.md
-> │  ├── 📄 01_Case_Overview.md
-> │  ├── 📄 02_Personal_Impact_Statement.md
-> └── 📂 02_EXHIBITS/
-> │  ├── 📄 AES_Evidence_Index_and_Checklist.md
-> │  └── 📂 EX01_Identity/
-> │  └── 📂 EX02_BILLS_USAGE/
-> │    ├── 📄 01_Meter_Nameplate_Specs.md
-> │    ├── 📄 02_Meter_Display_Observations.md
-> │    ├── 📄 03_Smart_Meter_Function_and_Risks.md
-> │    ├── 📄 04_Questions_for_AES_Metering_Team.md
-> │    └── 📂 EX02-B_Bills/
-> │      ├── 📄 20220426_AES_Bill.pdf
-> │      ├── 📄 20220518_AES_Bill.pdf
-> │      ├── 📄 20220628_AES_Bill.pdf
-> │      ├── 📄 20220720_AES_Bill.pdf
-> │      ├── 📄 20221128_AES_Bill.pdf
-> │      ├── 📄 20221228_AES_Bill.pdf
-> │      ├── 📄 20230127_AES_Bill.pdf
-> │      ├── 📄 20230224_AES_Bill.pdf
-> │      ├── 📄 20230328_AES_Bill.pdf
-> │      ├── 📄 20230426_AES_Bill.pdf
-> │      ├── 📄 20230526_AES_Bill.pdf
-> │      ├── 📄 20230628_AES_Bill.pdf
-> │      ├── 📄 20230727_AES_Bill.pdf
-> │      ├── 📄 20230829_AES_Bill.pdf
-> │      ├── 📄 20230927_AES_Bill.pdf
-> │      ├── 📄 20231025_AES_Bill.pdf
-> │      ├── 📄 20231130_AES_Bill.pdf
-> │      ├── 📄 20231229_AES_Bill.pdf
-> │      ├── 📄 20240130_AES_Bill.pdf
-> │      ├── 📄 20240305_AES_Bill.pdf
-> │      ├── 📄 20240328_AES_Bill.pdf
-> │      ├── 📄 20240430_AES_Bill.pdf
-> │      ├── 📄 20240531_AES_Bill.pdf
-> │      ├── 📄 20240628_AES_Bill.pdf
-> │      ├── 📄 20240729_AES_Bill.pdf
-> │      ├── 📄 20240918_AES_Bill.pdf
-> │      ├── 📄 20240930_AES_Bill.pdf
-> │      ├── 📄 20241021_AES_Bill.pdf
-> │      ├── 📄 20241031_AES_Bill.pdf
-> │      ├── 📄 20241127_AES_Bill.pdf
-> │      ├── 📄 20241231_AES_Bill.pdf
-> │      ├── 📄 20250131_AES_Bill.pdf
-> │      ├── 📄 20250303_AES_Bill.pdf
-> │      ├── 📄 20250331_AES_Bill.pdf
-> │      ├── 📄 20250430_AES_Bill.pdf
-> │      ├── 📄 20250518_AES_Bill.pdf
-> │      ├── 📄 20250530_AES_Bill.pdf
-> │      ├── 📄 20250630_AES_Bill.pdf
-> │      ├── 📄 20250731_AES_Bill.pdf
-> │      ├── 📄 20250829_AES_Bill.pdf
-> │      ├── 📄 20250919_AES_Bill.pdf
-> │      ├── 📄 20250930_AES_Bill.pdf
-> │      ├── 📄 20251021_AES_Bill.pdf
-> │      ├── 📄 20251217_AES_Bill.pdf
-> │    ├── 📄 EX02-D001_BREAKDOWN.xlsx
-> │    ├── 📄 EX02-N001_DISCONNECTS.md
-> │    └── 📂 EX02-P_Payments/
-> │      ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
-> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
-> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
-> │      ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
-> │      ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
-> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
-> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
-> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
-> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
-> │    └── 📂 EX02-U_Usage/
-> │      ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251120_Gmail_Personalized_Analysis.pdf
-> │      ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 EX02-U001_Usage_Estimates.md
-> │    └── 📂 Meter_Readings_and_Photos/
-> │      ├── 📄 README.md
-> │    └── 📂 usage_charts/
-> │      └── 📂 billing_audit/
-> │      └── 📂 legal_theory/
-> │      └── 📂 timeline/
-> │  └── 📂 EX03_CORRESPONDENCE/
-> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
-> │    └── 📂 Call_Notes/
-> │      ├── 📄 Call_Scripts.md
-> │    └── 📂 Incoming/
-> │    └── 📂 Outbound/
-> │    ├── 📄 README.md
-> │    └── 📂 Regulators/
-> │  └── 📂 EX04_REQUESTS_FILINGS/
-> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
-> │    └── 📂 ADA_Documents/
-> │      ├── 📄 README.md
-> │    └── 📂 ADA_Requests/
-> │    └── 📂 Congress_and_President_Letters/
-> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
-> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
-> │    └── 📂 IHEAP/
-> │      ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
-> │    └── 📂 Misc_Forms/
-> │    └── 📂 Payment_Extension_Requests/
-> │    └── 📂 Regulatory_Requests/
-> │  └── 📂 EX05_ANALYSIS_FINDINGS/
-> │    ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
-> │    ├── 📄 02_Billing_and_Usage_Analysis.md
-> │    ├── 📄 03_ADA_Violations_Findings.md
-> │    ├── 📄 04_Public_Evidence_Memo.md
-> │    └── 📂 07_AES_DIRECT_ACTIONS/
-> │      └── 📂 Negligence_Instances/
-> │      └── 📂 Policy_Notes/
-> │      ├── 📄 README.md
-> │      └── 📂 Recorded_Behavior/
-> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
-> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │    ├── 📄 2025-10-30_Thermostat_65F.png
-> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
-> │    ├── 📄 2025-10-30_WaterHeater_127F.png
-> │    └── 📂 EX05-E_ERRORS/
-> │      ├── 📄 EX05-E001_MARKUPERROR.md
-> │      ├── 📄 EX05-E002_UPGRADE_MESSAGE.md
-> │    └── 📂 EX05-I_HOME_INVENTORY/
-> │      ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │      ├── 📄 EX05-I001_Inventory_Analysis.md
-> │      ├── 📄 _MANIFEST.md
-> │      ├── 📄 device_inventory_estimates.csv
-> │      ├── 📄 inventory_manifest.json
-> │    └── 📂 EX05-S_SCIENTIFIC_SUPPORT/
-> │      ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
-> │    └── 📂 METER_ERROR_PACKET/
-> │      ├── 📄 01_summary.md
-> │      ├── 📄 02_scientific_support.md
-> │      ├── 📄 03_usage_analysis.md
-> │      ├── 📄 04_impossible_consumption.md
-> │      ├── 📄 05_evidence_index.md
-> │      ├── 📄 06_request_for_meter_test.md
-> │      ├── 📄 07_DOJ_addendum.md
-> │      ├── 📄 08_IURC_exhibit.md
-> │      ├── 📄 09_OUCC_exhibit.md
-> │      ├── 📄 09_public_pattern_exhibit.md
-> │      ├── 📄 10_whio_public_pattern_exhibit.md
-> │      ├── 📄 11_hardship_impact_exhibit.md
-> │      └── 📂 meter_error_packet/
-> │    └── 📂 Negligence_Instances/
-> │    └── 📂 Policy_Notes/
-> │    ├── 📄 README.md
-> │    └── 📂 Recorded_Behavior/
-> │    ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
-> │    ├── 📄 aes_bill_meter_check_guide.md
-> │    └── 📂 billing_audit/
-> │      ├── 📄 forensic_analysis_dataset.csv
-> │      ├── 📄 household_load_profile_before_vs_now.md
-> │    ├── 📄 forensic_analysis_dataset.csv
-> │    ├── 📄 forensic_analysis_dataset.json
-> │    ├── 📄 household_load_profile_before_vs_now.md
-> │    ├── 📄 household_load_profile_estimates.csv
-> │    └── 📂 legal_theory/
-> │    ├── 📄 meter_error_analysis.md
-> │    ├── 📄 public_pattern_analysis.md
-> │    ├── 📄 rename_files.bat
-> │  └── 📂 EX06_AFFIDAVITS/
-> │    ├── 📄 Affidavit_Hardship.pdf
-> │    ├── 📄 Affidavit_Roommate.pdf
-> │  └── 📂 EX07_PUBLIC/
-> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
-> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
-> │  └── 📂 EX08_MISC/
-> │    ├── 📄 DisconnectDate_Changed_Proof.md
-> │    ├── 📄 DisconnectNotice_ChangedDate_Log.md
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
-> │  ├── 📄 Exhibits_Index.md
-> │  ├── 📄 README.md
-> │  ├── 📄 _index_manifest.json
-> └── 📂 03_FINAL/
-> │  ├── 📄 03_Final_Index.md
-> │  └── 📂 ADA_REQUESTS/
-> │    └── 📂 ADA_REQUEST_v1/
-> │      ├── 📄 2025-06-08_ADA-Request-AES.pdf
-> │    └── 📂 ADA_REQUEST_v2/
-> │      ├── 📄 01_Cover_Letter_ADA.pdf
-> │      ├── 📄 02_Payment_Plan_Seasonal.pdf
-> │      ├── 📄 04_Evidence_Checklist.pdf
-> │      ├── 📄 12_Affidavit_of_Hardship.pdf
-> │    └── 📂 ADA_REQUEST_v3/
-> │  └── 📂 AES_PACKET/
-> │    ├── 📄 00_INDEX.md
-> │    ├── 📄 01_Cover_Letter_ADA.md
-> │    ├── 📄 01_Cover_Letter_ADA.pdf
-> │    ├── 📄 02_Payment_Plan_Seasonal.md
-> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
-> │    ├── 📄 03_Regulatory_Complaint_IURC.md
-> │    ├── 📄 04_Evidence_Checklist.md
-> │    ├── 📄 05_Call_Log_Template.md
-> │    ├── 📄 06_Timeline.md
-> │    ├── 📄 07_Billing_Audit_Summary.md
-> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
-> │    ├── 📄 09_Monthly_Tracker_Template.md
-> │    ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │    ├── 📄 10_Media_Talking_Points.md
-> │    ├── 📄 11_Job_Application_Cover_Letter.md
-> │    ├── 📄 12_Affidavit_of_Hardship.md
-> │    ├── 📄 2025-06-08_ADA-Request-AES.txt
-> │    ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
-> │    ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
-> │    ├── 📄 AES_Contact_Form_Text.txt
-> │    ├── 📄 AES_Email_Draft.eml
-> │    ├── 📄 AES_Phone_Script.txt
-> │    ├── 📄 AES_Usage_Timeline.csv
-> │    ├── 📄 AES_Usage_Timelines_Bills.xlsx
-> │    ├── 📄 README.md
-> │    └── 📂 aes_packet/
-> │    └── 📂 attachments/
-> │      └── 📂 Affidavits/
-> │        ├── 📄 Affidavit_Aunt.md
-> │        ├── 📄 Affidavit_Father.md
-> │        ├── 📄 Affidavit_Mother.md
-> │    └── 📂 docs/
-> │      └── 📂 aes_dispute/
-> │        ├── 📄 AES_Call_Script_Notes.md
-> │        ├── 📄 AES_Dispute_Email_Template.md
-> │        ├── 📄 AES_Dispute_Letter_Primary.md
-> │        ├── 📄 AES_Evidence_Index_and_Checklist.md
-> │        ├── 📄 AES_Regulator_Complaint_IURC.md
-> │        ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
-> │        ├── 📄 README.md
-> │  └── 📂 BBB_COMPLAINT/
-> │    └── 📂 BBB_complaint/
-> │  ├── 📄 DELIVERY_LOG.md
-> │  └── 📂 GOVERNMENT_LETTERS/
-> │    └── 📂 CONGRESS_PACKET/
-> │    └── 📂 GOVERNER_PACKET/
-> │    └── 📂 WHITHOUSE/
-> │  └── 📂 MASTER_PACKET/
-> │  └── 📂 REGULATORS/
-> │    └── 📂 DOJ_ADA_COMPLAINT/
-> │      ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
-> │      └── 📂 DOJ_ADA_complaint/
-> │      ├── 📄 DOJ_ADA_complaint_main.md
-> │    └── 📂 INDIANA_AG/
-> │    └── 📂 IURC_PACKET/
-> │      ├── 📄 AES_Regulator_Complaint_IURC.md
-> │      ├── 📄 IURC_READY_TO_PASTE.txt
-> │      └── 📂 IURC_complaint/
-> │      ├── 📄 IURC_complaint_main.md
-> │    └── 📂 OUCC_PACKET/
-> │      ├── 📄 OUCC_READY_TO_PASTE.txt
-> │      └── 📂 OUCC_complaint/
-> │      ├── 📄 OUCC_complaint_main.md
-> ├── 📄 AES_Case_Roadmap.canvas
-> ├── 📄 AES_Folder_Map.canvas
-> ├── 📄 MASTER_INDEX.md
-> ├── 📄 README.md
-> ├── 📄 index-lite.json
-> ├── 📄 index.json
-> ├── 📄 index.map.md
-> └── 📄 index.schema.json
+> ```markdown
+
+> . 📂 AES_Disputev3
+
+> └── 📂 00_SYSTEM/
+
+> │  ├── 📄 ACTION_ITEMS.md
+
+> │  ├── 📄 AES_Contact_Form_Text.txt
+
+> │  ├── 📄 AES_Dispute_INDEX.md
+
+> │  ├── 📄 AES_Phone_Script.txt
+
+> │  ├── 📄 AUDIT_COMPLETE_SUMMARY.md
+
+> │  ├── 📄 CASE_BINDER_SUMMARY.md
+
+> │  ├── 📄 EVIDENCE_NUMBERING_SYSTEM.md
+
+> │  ├── 📄 EXECUTION_CHECKLIST.md
+
+> │  ├── 📄 FILE_REFERENCES.md
+
+> │  ├── 📄 LIHEAP_APPLICATION_GUIDE.md
+
+> │  ├── 📄 MASTER_EVIDENCE_INDEX.md
+
+> │  ├── 📄 MIGRATION_NOTES.md
+
+> │  ├── 📄 MORNING_SCRIPT.md
+
+> │  ├── 📄 PROJECT_MASTER.md
+
+> │  ├── 📄 PROJECT_MODULES.md
+
+> │  ├── 📄 PROJECT_TASKS.md
+
+> │  ├── 📄 PROJECT_WIKI.md
+
+> │  ├── 📄 QUICK_REFERENCE_PHONE_SCRIPT.md
+
+> │  ├── 📄 READY_TO_PASTE_INDEX.md
+
+> │  ├── 📄 REPOSITORY_INVENTORY.md
+
+> │  ├── 📄 WHAT_TO_EXPECT.md
+
+> │  ├── 📄 audit_repository.py
+
+> │  ├── 📄 auto_sort_aes.py
+
+> │  ├── 📄 check_structure.ps1
+
+> │  ├── 📄 demand_meter_test_to_AES.md
+
+> │  ├── 📄 folder_scaffold.ps1
+
+> │  ├── 📄 folder_scaffold.sh
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 auto_sort_log.txt
+
+> │    ├── 📄 calls_log.md
+
+> │    ├── 📄 portal_activity_log.md
+
+> │    ├── 📄 time_tracking.md
+
+> │  ├── 📄 migrate_and_organize.ps1
+
+> │  ├── 📄 naming_rules.md
+
+> │  ├── 📄 organize_and_number_evidence.py
+
+> │  ├── 📄 requirements.txt
+
+> │  ├── 📄 scaffold_generator.ps1
+
+> │  ├── 📄 scaffold_generator.sh
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 README_EXTRACTION_TOOL.md
+
+> │    ├── 📄 add_poppler_to_path.ps1
+
+> │    ├── 📄 extract_aes_bills.py
+
+> │    ├── 📄 packet_manifest_generator.py
+
+> │    ├── 📄 repo_structure_validator.py
+
+> │    ├── 📄 requirements.txt
+
+> │    ├── 📄 validate_and_migrate.ps1
+
+> │    ├── 📄 verify_poppler.ps1
+
+> │  ├── 📄 supplemental_IURC_meter_error_filing.md
+
+> │  ├── 📄 supplemental_OUCC_meter_error_filing.md
+
+> │  └── 📂 time/
+
+> │    ├── 📄 ADA_Request_1_TimeLog.md
+
+> │    ├── 📄 ADA_Request_2_TimeLog.md
+
+> │    ├── 📄 AES_Dispute_TimeLog.md
+
+> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
+
+> │    ├── 📄 TimeLog_MasterIndex.md
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 compress.py
+
+> │    ├── 📄 compress_aggressive.ps1
+
+> │    ├── 📄 compress_folder.ps1
+
+> │    ├── 📄 compress_to_24mb.ps1
+
+> │    ├── 📄 compress_to_24mb.py
+
+> │    ├── 📄 create_compressed_archive.ps1
+
+> │    ├── 📄 run_compression.bat
+
+> │    ├── 📄 split_by_year.ps1
+
+> └── 📂 01_NARRATIVE/
+
+> │  ├── 📄 00_Timeline_Master.md
+
+> │  ├── 📄 01_Case_Overview.md
+
+> │  ├── 📄 02_Personal_Impact_Statement.md
+
+> └── 📂 02_EXHIBITS/
+
+> │  ├── 📄 AES_Evidence_Index_and_Checklist.md
+
+> │  └── 📂 EX01_Identity/
+
+> │  └── 📂 EX02_BILLS_USAGE/
+
+> │    ├── 📄 01_Meter_Nameplate_Specs.md
+
+> │    ├── 📄 02_Meter_Display_Observations.md
+
+> │    ├── 📄 03_Smart_Meter_Function_and_Risks.md
+
+> │    ├── 📄 04_Questions_for_AES_Metering_Team.md
+
+> │    └── 📂 EX02-B_Bills/
+
+> │      ├── 📄 20220426_AES_Bill.pdf
+
+> │      ├── 📄 20220518_AES_Bill.pdf
+
+> │      ├── 📄 20220628_AES_Bill.pdf
+
+> │      ├── 📄 20220720_AES_Bill.pdf
+
+> │      ├── 📄 20221128_AES_Bill.pdf
+
+> │      ├── 📄 20221228_AES_Bill.pdf
+
+> │      ├── 📄 20230127_AES_Bill.pdf
+
+> │      ├── 📄 20230224_AES_Bill.pdf
+
+> │      ├── 📄 20230328_AES_Bill.pdf
+
+> │      ├── 📄 20230426_AES_Bill.pdf
+
+> │      ├── 📄 20230526_AES_Bill.pdf
+
+> │      ├── 📄 20230628_AES_Bill.pdf
+
+> │      ├── 📄 20230727_AES_Bill.pdf
+
+> │      ├── 📄 20230829_AES_Bill.pdf
+
+> │      ├── 📄 20230927_AES_Bill.pdf
+
+> │      ├── 📄 20231025_AES_Bill.pdf
+
+> │      ├── 📄 20231130_AES_Bill.pdf
+
+> │      ├── 📄 20231229_AES_Bill.pdf
+
+> │      ├── 📄 20240130_AES_Bill.pdf
+
+> │      ├── 📄 20240305_AES_Bill.pdf
+
+> │      ├── 📄 20240328_AES_Bill.pdf
+
+> │      ├── 📄 20240430_AES_Bill.pdf
+
+> │      ├── 📄 20240531_AES_Bill.pdf
+
+> │      ├── 📄 20240628_AES_Bill.pdf
+
+> │      ├── 📄 20240729_AES_Bill.pdf
+
+> │      ├── 📄 20240918_AES_Bill.pdf
+
+> │      ├── 📄 20240930_AES_Bill.pdf
+
+> │      ├── 📄 20241021_AES_Bill.pdf
+
+> │      ├── 📄 20241031_AES_Bill.pdf
+
+> │      ├── 📄 20241127_AES_Bill.pdf
+
+> │      ├── 📄 20241231_AES_Bill.pdf
+
+> │      ├── 📄 20250131_AES_Bill.pdf
+
+> │      ├── 📄 20250303_AES_Bill.pdf
+
+> │      ├── 📄 20250331_AES_Bill.pdf
+
+> │      ├── 📄 20250430_AES_Bill.pdf
+
+> │      ├── 📄 20250518_AES_Bill.pdf
+
+> │      ├── 📄 20250530_AES_Bill.pdf
+
+> │      ├── 📄 20250630_AES_Bill.pdf
+
+> │      ├── 📄 20250731_AES_Bill.pdf
+
+> │      ├── 📄 20250829_AES_Bill.pdf
+
+> │      ├── 📄 20250919_AES_Bill.pdf
+
+> │      ├── 📄 20250930_AES_Bill.pdf
+
+> │      ├── 📄 20251021_AES_Bill.pdf
+
+> │      ├── 📄 20251217_AES_Bill.pdf
+
+> │    ├── 📄 EX02-D001_BREAKDOWN.xlsx
+
+> │    ├── 📄 EX02-N001_DISCONNECTS.md
+
+> │    └── 📂 EX02-P_Payments/
+
+> │      ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
+
+> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
+
+> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
+
+> │      ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
+
+> │      ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
+
+> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
+
+> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
+
+> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
+
+> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
+
+> │    └── 📂 EX02-U_Usage/
+
+> │      ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251120_Gmail_Personalized_Analysis.pdf
+
+> │      ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 EX02-U001_Usage_Estimates.md
+
+> │    └── 📂 Meter_Readings_and_Photos/
+
+> │      ├── 📄 README.md
+
+> │    └── 📂 usage_charts/
+
+> │      └── 📂 billing_audit/
+
+> │      └── 📂 legal_theory/
+
+> │      └── 📂 timeline/
+
+> │  └── 📂 EX03_CORRESPONDENCE/
+
+> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
+
+> │    └── 📂 Call_Notes/
+
+> │      ├── 📄 Call_Scripts.md
+
+> │    └── 📂 Incoming/
+
+> │    └── 📂 Outbound/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 Regulators/
+
+> │  └── 📂 EX04_REQUESTS_FILINGS/
+
+> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
+
+> │    └── 📂 ADA_Documents/
+
+> │      ├── 📄 README.md
+
+> │    └── 📂 ADA_Requests/
+
+> │    └── 📂 Congress_and_President_Letters/
+
+> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
+
+> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
+
+> │    └── 📂 IHEAP/
+
+> │      ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
+
+> │    └── 📂 Misc_Forms/
+
+> │    └── 📂 Payment_Extension_Requests/
+
+> │    └── 📂 Regulatory_Requests/
+
+> │  └── 📂 EX05_ANALYSIS_FINDINGS/
+
+> │    ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
+
+> │    ├── 📄 02_Billing_and_Usage_Analysis.md
+
+> │    ├── 📄 03_ADA_Violations_Findings.md
+
+> │    ├── 📄 04_Public_Evidence_Memo.md
+
+> │    └── 📂 07_AES_DIRECT_ACTIONS/
+
+> │      └── 📂 Negligence_Instances/
+
+> │      └── 📂 Policy_Notes/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 Recorded_Behavior/
+
+> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
+
+> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │    ├── 📄 2025-10-30_Thermostat_65F.png
+
+> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
+
+> │    ├── 📄 2025-10-30_WaterHeater_127F.png
+
+> │    └── 📂 EX05-E_ERRORS/
+
+> │      ├── 📄 EX05-E001_MARKUPERROR.md
+
+> │      ├── 📄 EX05-E002_UPGRADE_MESSAGE.md
+
+> │    └── 📂 EX05-I_HOME_INVENTORY/
+
+> │      ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │      ├── 📄 EX05-I001_Inventory_Analysis.md
+
+> │      ├── 📄 _MANIFEST.md
+
+> │      ├── 📄 device_inventory_estimates.csv
+
+> │      ├── 📄 inventory_manifest.json
+
+> │    └── 📂 EX05-S_SCIENTIFIC_SUPPORT/
+
+> │      ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
+
+> │    └── 📂 METER_ERROR_PACKET/
+
+> │      ├── 📄 01_summary.md
+
+> │      ├── 📄 02_scientific_support.md
+
+> │      ├── 📄 03_usage_analysis.md
+
+> │      ├── 📄 04_impossible_consumption.md
+
+> │      ├── 📄 05_evidence_index.md
+
+> │      ├── 📄 06_request_for_meter_test.md
+
+> │      ├── 📄 07_DOJ_addendum.md
+
+> │      ├── 📄 08_IURC_exhibit.md
+
+> │      ├── 📄 09_OUCC_exhibit.md
+
+> │      ├── 📄 09_public_pattern_exhibit.md
+
+> │      ├── 📄 10_whio_public_pattern_exhibit.md
+
+> │      ├── 📄 11_hardship_impact_exhibit.md
+
+> │      └── 📂 meter_error_packet/
+
+> │    └── 📂 Negligence_Instances/
+
+> │    └── 📂 Policy_Notes/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 Recorded_Behavior/
+
+> │    ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
+
+> │    ├── 📄 aes_bill_meter_check_guide.md
+
+> │    └── 📂 billing_audit/
+
+> │      ├── 📄 forensic_analysis_dataset.csv
+
+> │      ├── 📄 household_load_profile_before_vs_now.md
+
+> │    ├── 📄 forensic_analysis_dataset.csv
+
+> │    ├── 📄 forensic_analysis_dataset.json
+
+> │    ├── 📄 household_load_profile_before_vs_now.md
+
+> │    ├── 📄 household_load_profile_estimates.csv
+
+> │    └── 📂 legal_theory/
+
+> │    ├── 📄 meter_error_analysis.md
+
+> │    ├── 📄 public_pattern_analysis.md
+
+> │    ├── 📄 rename_files.bat
+
+> │  └── 📂 EX06_AFFIDAVITS/
+
+> │    ├── 📄 Affidavit_Hardship.pdf
+
+> │    ├── 📄 Affidavit_Roommate.pdf
+
+> │  └── 📂 EX07_PUBLIC/
+
+> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
+
+> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
+
+> │  └── 📂 EX08_MISC/
+
+> │    ├── 📄 DisconnectDate_Changed_Proof.md
+
+> │    ├── 📄 DisconnectNotice_ChangedDate_Log.md
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
+
+> │  ├── 📄 Exhibits_Index.md
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 _index_manifest.json
+
+> └── 📂 03_FINAL/
+
+> │  ├── 📄 03_Final_Index.md
+
+> │  └── 📂 ADA_REQUESTS/
+
+> │    └── 📂 ADA_REQUEST_v1/
+
+> │      ├── 📄 2025-06-08_ADA-Request-AES.pdf
+
+> │    └── 📂 ADA_REQUEST_v2/
+
+> │      ├── 📄 01_Cover_Letter_ADA.pdf
+
+> │      ├── 📄 02_Payment_Plan_Seasonal.pdf
+
+> │      ├── 📄 04_Evidence_Checklist.pdf
+
+> │      ├── 📄 12_Affidavit_of_Hardship.pdf
+
+> │    └── 📂 ADA_REQUEST_v3/
+
+> │  └── 📂 AES_PACKET/
+
+> │    ├── 📄 00_INDEX.md
+
+> │    ├── 📄 01_Cover_Letter_ADA.md
+
+> │    ├── 📄 01_Cover_Letter_ADA.pdf
+
+> │    ├── 📄 02_Payment_Plan_Seasonal.md
+
+> │    ├── 📄 02_Payment_Plan_Seasonal.pdf
+
+> │    ├── 📄 03_Regulatory_Complaint_IURC.md
+
+> │    ├── 📄 04_Evidence_Checklist.md
+
+> │    ├── 📄 05_Call_Log_Template.md
+
+> │    ├── 📄 06_Timeline.md
+
+> │    ├── 📄 07_Billing_Audit_Summary.md
+
+> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
+
+> │    ├── 📄 09_Monthly_Tracker_Template.md
+
+> │    ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │    ├── 📄 10_Media_Talking_Points.md
+
+> │    ├── 📄 11_Job_Application_Cover_Letter.md
+
+> │    ├── 📄 12_Affidavit_of_Hardship.md
+
+> │    ├── 📄 2025-06-08_ADA-Request-AES.txt
+
+> │    ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
+
+> │    ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
+
+> │    ├── 📄 AES_Contact_Form_Text.txt
+
+> │    ├── 📄 AES_Email_Draft.eml
+
+> │    ├── 📄 AES_Phone_Script.txt
+
+> │    ├── 📄 AES_Usage_Timeline.csv
+
+> │    ├── 📄 AES_Usage_Timelines_Bills.xlsx
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 aes_packet/
+
+> │    └── 📂 attachments/
+
+> │      └── 📂 Affidavits/
+
+> │        ├── 📄 Affidavit_Aunt.md
+
+> │        ├── 📄 Affidavit_Father.md
+
+> │        ├── 📄 Affidavit_Mother.md
+
+> │    └── 📂 docs/
+
+> │      └── 📂 aes_dispute/
+
+> │        ├── 📄 AES_Call_Script_Notes.md
+
+> │        ├── 📄 AES_Dispute_Email_Template.md
+
+> │        ├── 📄 AES_Dispute_Letter_Primary.md
+
+> │        ├── 📄 AES_Evidence_Index_and_Checklist.md
+
+> │        ├── 📄 AES_Regulator_Complaint_IURC.md
+
+> │        ├── 📄 AES_TODO_for_Cody_BEFORE_SENDING.md
+
+> │        ├── 📄 README.md
+
+> │  └── 📂 BBB_COMPLAINT/
+
+> │    └── 📂 BBB_complaint/
+
+> │  ├── 📄 DELIVERY_LOG.md
+
+> │  └── 📂 GOVERNMENT_LETTERS/
+
+> │    └── 📂 CONGRESS_PACKET/
+
+> │    └── 📂 GOVERNER_PACKET/
+
+> │    └── 📂 WHITHOUSE/
+
+> │  └── 📂 MASTER_PACKET/
+
+> │  └── 📂 REGULATORS/
+
+> │    └── 📂 DOJ_ADA_COMPLAINT/
+
+> │      ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
+
+> │      └── 📂 DOJ_ADA_complaint/
+
+> │      ├── 📄 DOJ_ADA_complaint_main.md
+
+> │    └── 📂 INDIANA_AG/
+
+> │    └── 📂 IURC_PACKET/
+
+> │      ├── 📄 AES_Regulator_Complaint_IURC.md
+
+> │      ├── 📄 IURC_READY_TO_PASTE.txt
+
+> │      └── 📂 IURC_complaint/
+
+> │      ├── 📄 IURC_complaint_main.md
+
+> │    └── 📂 OUCC_PACKET/
+
+> │      ├── 📄 OUCC_READY_TO_PASTE.txt
+
+> │      └── 📂 OUCC_complaint/
+
+> │      ├── 📄 OUCC_complaint_main.md
+
+> ├── 📄 AES_Case_Roadmap.canvas
+
+> ├── 📄 AES_Folder_Map.canvas
+
+> ├── 📄 MASTER_INDEX.md
+
+> ├── 📄 README.md
+
+> ├── 📄 index-lite.json
+
+> ├── 📄 index.json
+
+> ├── 📄 index.map.md
+
+> └── 📄 index.schema.json
+
 > ```
 
 ### Assistant
@@ -9131,278 +10212,550 @@ canonical_ref: ""
 > - Give you a 5-line “how to cite exhibits” convention so you sound clean in every letter and complaint.
 
 ### User
-> ```markdown
-> . 📂 AES_Disputev3
-> └── 📂 00_SYSTEM/
-> │  ├── 📄 10_Media_Talking_Points.md
-> │  ├── 📄 11_Job_Application_Cover_Letter.md
-> │  ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
-> │  ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
-> │  ├── 📄 AES_Contact_Form_Text.txt
-> │  ├── 📄 AES_Email_Draft.eml
-> │  ├── 📄 AES_Phone_Script.txt
-> │  ├── 📄 README.md
-> │  ├── 📄 TEMPLATES_AND_REFERENCE.md
-> │  ├── 📄 audit_repository.py
-> │  ├── 📄 auto_sort_aes.py
-> │  ├── 📄 check_structure.ps1
-> │  └── 📂 docs/
-> │  ├── 📄 folder_scaffold.ps1
-> │  ├── 📄 folder_scaffold.sh
-> │  └── 📂 logs/
-> │    ├── 📄 auto_sort_log.txt
-> │    ├── 📄 calls_log.md
-> │    ├── 📄 portal_activity_log.md
-> │    ├── 📄 time_tracking.md
-> │  ├── 📄 migrate_and_organize.ps1
-> │  ├── 📄 organize_and_number_evidence.py
-> │  ├── 📄 requirements.txt
-> │  ├── 📄 scaffold_generator.ps1
-> │  ├── 📄 scaffold_generator.sh
-> │  └── 📂 scripts/
-> │    ├── 📄 README_EXTRACTION_TOOL.md
-> │    ├── 📄 add_poppler_to_path.ps1
-> │    ├── 📄 extract_aes_bills.py
-> │    ├── 📄 packet_manifest_generator.py
-> │    ├── 📄 repo_structure_validator.py
-> │    ├── 📄 requirements.txt
-> │    ├── 📄 validate_and_migrate.ps1
-> │    ├── 📄 verify_poppler.ps1
-> │  └── 📂 time/
-> │    ├── 📄 ADA_Request_1_TimeLog.md
-> │    ├── 📄 ADA_Request_2_TimeLog.md
-> │    ├── 📄 AES_Dispute_TimeLog.md
-> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
-> │    ├── 📄 TimeLog_MasterIndex.md
-> │  └── 📂 tools/
-> │    ├── 📄 compress.py
-> │    ├── 📄 compress_aggressive.ps1
-> │    ├── 📄 compress_folder.ps1
-> │    ├── 📄 compress_to_24mb.ps1
-> │    ├── 📄 compress_to_24mb.py
-> │    ├── 📄 create_compressed_archive.ps1
-> │    ├── 📄 run_compression.bat
-> │    ├── 📄 split_by_year.ps1
-> └── 📂 01_NARRATIVE/
-> │  ├── 📄 00_Timeline_Master.md
-> │  ├── 📄 01_Case_Overview.md
-> │  ├── 📄 02_Personal_Impact_Statement.md
-> └── 📂 02_EXHIBITS/
-> │  ├── 📄 04_Evidence_Checklist.md
-> │  ├── 📄 06_Timeline.md
-> │  └── 📂 EX01_Identity/
-> │    ├── 📄 07_Billing_Audit_Summary.md
-> │  └── 📂 EX02_BILLS_USAGE/
-> │    └── 📂 EX02-B_Bills/
-> │      ├── 📄 20220426_AES_Bill.pdf
-> │      ├── 📄 20220518_AES_Bill.pdf
-> │      ├── 📄 20220628_AES_Bill.pdf
-> │      ├── 📄 20220720_AES_Bill.pdf
-> │      ├── 📄 20221128_AES_Bill.pdf
-> │      ├── 📄 20221228_AES_Bill.pdf
-> │      ├── 📄 20230127_AES_Bill.pdf
-> │      ├── 📄 20230224_AES_Bill.pdf
-> │      ├── 📄 20230328_AES_Bill.pdf
-> │      ├── 📄 20230426_AES_Bill.pdf
-> │      ├── 📄 20230526_AES_Bill.pdf
-> │      ├── 📄 20230628_AES_Bill.pdf
-> │      ├── 📄 20230727_AES_Bill.pdf
-> │      ├── 📄 20230829_AES_Bill.pdf
-> │      ├── 📄 20230927_AES_Bill.pdf
-> │      ├── 📄 20231025_AES_Bill.pdf
-> │      ├── 📄 20231130_AES_Bill.pdf
-> │      ├── 📄 20231229_AES_Bill.pdf
-> │      ├── 📄 20240130_AES_Bill.pdf
-> │      ├── 📄 20240305_AES_Bill.pdf
-> │      ├── 📄 20240328_AES_Bill.pdf
-> │      ├── 📄 20240430_AES_Bill.pdf
-> │      ├── 📄 20240531_AES_Bill.pdf
-> │      ├── 📄 20240628_AES_Bill.pdf
-> │      ├── 📄 20240729_AES_Bill.pdf
-> │      ├── 📄 20240918_AES_Bill.pdf
-> │      ├── 📄 20240930_AES_Bill.pdf
-> │      ├── 📄 20241021_AES_Bill.pdf
-> │      ├── 📄 20241031_AES_Bill.pdf
-> │      ├── 📄 20241127_AES_Bill.pdf
-> │      ├── 📄 20241231_AES_Bill.pdf
-> │      ├── 📄 20250131_AES_Bill.pdf
-> │      ├── 📄 20250303_AES_Bill.pdf
-> │      ├── 📄 20250331_AES_Bill.pdf
-> │      ├── 📄 20250430_AES_Bill.pdf
-> │      ├── 📄 20250518_AES_Bill.pdf
-> │      ├── 📄 20250530_AES_Bill.pdf
-> │      ├── 📄 20250630_AES_Bill.pdf
-> │      ├── 📄 20250731_AES_Bill.pdf
-> │      ├── 📄 20250829_AES_Bill.pdf
-> │      ├── 📄 20250919_AES_Bill.pdf
-> │      ├── 📄 20250930_AES_Bill.pdf
-> │      ├── 📄 20251021_AES_Bill.pdf
-> │      ├── 📄 20251217_AES_Bill.pdf
-> │      ├── 📄 EX02-N001_DISCONNECTS.md
-> │    └── 📂 EX02-M_Meter/
-> │      ├── 📄 01_Meter_Nameplate_Specs.md
-> │      ├── 📄 02_Meter_Display_Observations.md
-> │      ├── 📄 03_Smart_Meter_Function_and_Risks.md
-> │      ├── 📄 04_Questions_for_AES_Metering_Team.md
-> │    └── 📂 EX02-P_Payments/
-> │      ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
-> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
-> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
-> │      ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
-> │      ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
-> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
-> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
-> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
-> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
-> │    └── 📂 EX02-U_Usage/
-> │      ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251120_Gmail_Personalized_Analysis.pdf
-> │      ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
-> │      ├── 📄 AES_Usage_Timeline.csv
-> │      ├── 📄 AES_Usage_Timelines_Bills.xlsx
-> │      ├── 📄 EX02-D001_BREAKDOWN.xlsx
-> │      ├── 📄 EX02-U001_Usage_Estimates.md
-> │      └── 📂 billing_audit/
-> │      └── 📂 legal_theory/
-> │      └── 📂 timeline/
-> │  └── 📂 EX03_CORRESPONDENCE/
-> │    ├── 📄 05_Call_Log_Template.md
-> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
-> │    └── 📂 Call_Notes/
-> │      ├── 📄 Call_Scripts.md
-> │    └── 📂 Incoming/
-> │    └── 📂 Outbound/
-> │    ├── 📄 README.md
-> │    └── 📂 Regulators/
-> │  └── 📂 EX04_REQUESTS_FILINGS/
-> │    ├── 📄 03_Regulatory_Complaint_IURC.md
-> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
-> │    └── 📂 ADA_Documents/
-> │      ├── 📄 README.md
-> │    └── 📂 ADA_Requests/
-> │    └── 📂 Congress_and_President_Letters/
-> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
-> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
-> │    └── 📂 IHEAP/
-> │      ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
-> │    └── 📂 Misc_Forms/
-> │    └── 📂 Payment_Extension_Requests/
-> │  └── 📂 EX05_ANALYSIS_FINDINGS/
-> │    ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
-> │    ├── 📄 02_Billing_and_Usage_Analysis.md
-> │    ├── 📄 03_ADA_Violations_Findings.md
-> │    ├── 📄 04_Public_Evidence_Memo.md
-> │    ├── 📄 09_Monthly_Tracker_Template.md
-> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
-> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │    ├── 📄 2025-10-30_Thermostat_65F.png
-> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
-> │    ├── 📄 2025-10-30_WaterHeater_127F.png
-> │    └── 📂 EX05-B_BILLING_AUDIT/
-> │      ├── 📄 forensic_analysis_dataset.csv
-> │      ├── 📄 household_load_profile_before_vs_now.md
-> │    └── 📂 EX05-D_DIRECT_ACTIONS_AES/
-> │      └── 📂 Negligence_Instances/
-> │      └── 📂 Policy_Notes/
-> │      ├── 📄 README.md
-> │      └── 📂 Recorded_Behavior/
-> │    └── 📂 EX05-E_ERRORS/
-> │      ├── 📄 01_summary.md
-> │      ├── 📄 02_scientific_support.md
-> │      ├── 📄 03_usage_analysis.md
-> │      ├── 📄 04_impossible_consumption.md
-> │      ├── 📄 05_evidence_index.md
-> │      ├── 📄 06_request_for_meter_test.md
-> │      ├── 📄 07_DOJ_addendum.md
-> │      ├── 📄 08_IURC_exhibit.md
-> │      ├── 📄 09_OUCC_exhibit.md
-> │      ├── 📄 09_public_pattern_exhibit.md
-> │      ├── 📄 10_whio_public_pattern_exhibit.md
-> │      ├── 📄 11_hardship_impact_exhibit.md
-> │      ├── 📄 EX05-E001_MARKUPERROR.md
-> │      ├── 📄 EX05-E002_UPGRADE_MESSAGE.md
-> │    └── 📂 EX05-I_HOME_INVENTORY/
-> │      ├── 📄 2025-10-30_Tesla_Charge_Stats.png
-> │      ├── 📄 EX05-I001_Inventory_Analysis.md
-> │      ├── 📄 _MANIFEST.md
-> │      ├── 📄 device_inventory_estimates.csv
-> │      ├── 📄 inventory_manifest.json
-> │    └── 📂 EX05-S_SCIENTIFIC_SUPPORT/
-> │      ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
-> │    ├── 📄 README.md
-> │    ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
-> │    ├── 📄 aes_bill_meter_check_guide.md
-> │    ├── 📄 forensic_analysis_dataset.csv
-> │    ├── 📄 forensic_analysis_dataset.json
-> │    ├── 📄 household_load_profile_before_vs_now.md
-> │    ├── 📄 household_load_profile_estimates.csv
-> │    ├── 📄 meter_error_analysis.md
-> │    ├── 📄 public_pattern_analysis.md
-> │    ├── 📄 rename_files.bat
-> │  └── 📂 EX06_AFFIDAVITS/
-> │    ├── 📄 12_Affidavit_of_Hardship.md
-> │    ├── 📄 Affidavit_Aunt.md
-> │    ├── 📄 Affidavit_Father.md
-> │    ├── 📄 Affidavit_Hardship.pdf
-> │    ├── 📄 Affidavit_Mother.md
-> │    ├── 📄 Affidavit_Roommate.pdf
-> │  └── 📂 EX07_PUBLIC/
-> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
-> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
-> │  └── 📂 EX08_MISC/
-> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
-> │    ├── 📄 DisconnectDate_Changed_Proof.md
-> │    ├── 📄 DisconnectNotice_ChangedDate_Log.md
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
-> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
-> │  ├── 📄 Exhibits_Index.md
-> │  ├── 📄 README.md
-> │  ├── 📄 _index_manifest.json
-> └── 📂 03_FINAL/
-> │  ├── 📄 03_Final_Index.md
-> │  └── 📂 ADA_REQUESTS/
-> │    └── 📂 ADA_REQUEST_v1/
-> │      ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
-> │      ├── 📄 2025-06-08_ADA-Request-AES.pdf
-> │    └── 📂 ADA_REQUEST_v2/
-> │      ├── 📄 01_Cover_Letter_ADA.pdf
-> │      ├── 📄 02_Payment_Plan_Seasonal.pdf
-> │      ├── 📄 04_Evidence_Checklist.pdf
-> │      ├── 📄 12_Affidavit_of_Hardship.pdf
-> │    └── 📂 ADA_REQUEST_v3/
-> │  └── 📂 AES_PACKET/
-> │    ├── 📄 00_INDEX.md
-> │    ├── 📄 README.md
-> │  └── 📂 BBB_COMPLAINT/
-> │  ├── 📄 DELIVERY_LOG.md
-> │  └── 📂 GOVERNMENT_LETTERS/
-> │    └── 📂 CONGRESS_PACKET/
-> │    └── 📂 GOVERNER_PACKET/
-> │    └── 📂 WHITHOUSE_PACKET/
-> │  └── 📂 MASTER_PACKET/
-> │  └── 📂 REGULATORS/
-> │    └── 📂 DOJ_ADA_COMPLAINT/
-> │      ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
-> │      ├── 📄 DOJ_ADA_complaint_main.md
-> │    └── 📂 INDIANA_AG/
-> │    └── 📂 IURC_PACKET/
-> │      ├── 📄 AES_Regulator_Complaint_IURC.md
-> │      ├── 📄 IURC_READY_TO_PASTE.txt
-> │      ├── 📄 IURC_complaint_main.md
-> │    └── 📂 OUCC_PACKET/
-> │      ├── 📄 OUCC_READY_TO_PASTE.txt
-> │      ├── 📄 OUCC_complaint_main.md
-> ├── 📄 AES_Case_Roadmap.canvas
-> ├── 📄 AES_Folder_Map.canvas
-> ├── 📄 MASTER_INDEX.md
-> ├── 📄 README.md
-> ├── 📄 index-lite.json
-> ├── 📄 index.json
-> ├── 📄 index.map.md
-> └── 📄 index.schema.json
+> ```markdown
+
+> . 📂 AES_Disputev3
+
+> └── 📂 00_SYSTEM/
+
+> │  ├── 📄 10_Media_Talking_Points.md
+
+> │  ├── 📄 11_Job_Application_Cover_Letter.md
+
+> │  ├── 📄 45911_AESIN_Responses-to-ACE-Questions_061124 (1).pdf
+
+> │  ├── 📄 46258_AESIN_Joint Motion for Leave to File Settlement Agreement_101525.pdf
+
+> │  ├── 📄 AES_Contact_Form_Text.txt
+
+> │  ├── 📄 AES_Email_Draft.eml
+
+> │  ├── 📄 AES_Phone_Script.txt
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 TEMPLATES_AND_REFERENCE.md
+
+> │  ├── 📄 audit_repository.py
+
+> │  ├── 📄 auto_sort_aes.py
+
+> │  ├── 📄 check_structure.ps1
+
+> │  └── 📂 docs/
+
+> │  ├── 📄 folder_scaffold.ps1
+
+> │  ├── 📄 folder_scaffold.sh
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 auto_sort_log.txt
+
+> │    ├── 📄 calls_log.md
+
+> │    ├── 📄 portal_activity_log.md
+
+> │    ├── 📄 time_tracking.md
+
+> │  ├── 📄 migrate_and_organize.ps1
+
+> │  ├── 📄 organize_and_number_evidence.py
+
+> │  ├── 📄 requirements.txt
+
+> │  ├── 📄 scaffold_generator.ps1
+
+> │  ├── 📄 scaffold_generator.sh
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 README_EXTRACTION_TOOL.md
+
+> │    ├── 📄 add_poppler_to_path.ps1
+
+> │    ├── 📄 extract_aes_bills.py
+
+> │    ├── 📄 packet_manifest_generator.py
+
+> │    ├── 📄 repo_structure_validator.py
+
+> │    ├── 📄 requirements.txt
+
+> │    ├── 📄 validate_and_migrate.ps1
+
+> │    ├── 📄 verify_poppler.ps1
+
+> │  └── 📂 time/
+
+> │    ├── 📄 ADA_Request_1_TimeLog.md
+
+> │    ├── 📄 ADA_Request_2_TimeLog.md
+
+> │    ├── 📄 AES_Dispute_TimeLog.md
+
+> │    ├── 📄 Extended_PaymentPlan_Issue_Log.md
+
+> │    ├── 📄 TimeLog_MasterIndex.md
+
+> │  └── 📂 tools/
+
+> │    ├── 📄 compress.py
+
+> │    ├── 📄 compress_aggressive.ps1
+
+> │    ├── 📄 compress_folder.ps1
+
+> │    ├── 📄 compress_to_24mb.ps1
+
+> │    ├── 📄 compress_to_24mb.py
+
+> │    ├── 📄 create_compressed_archive.ps1
+
+> │    ├── 📄 run_compression.bat
+
+> │    ├── 📄 split_by_year.ps1
+
+> └── 📂 01_NARRATIVE/
+
+> │  ├── 📄 00_Timeline_Master.md
+
+> │  ├── 📄 01_Case_Overview.md
+
+> │  ├── 📄 02_Personal_Impact_Statement.md
+
+> └── 📂 02_EXHIBITS/
+
+> │  ├── 📄 04_Evidence_Checklist.md
+
+> │  ├── 📄 06_Timeline.md
+
+> │  └── 📂 EX01_Identity/
+
+> │    ├── 📄 07_Billing_Audit_Summary.md
+
+> │  └── 📂 EX02_BILLS_USAGE/
+
+> │    └── 📂 EX02-B_Bills/
+
+> │      ├── 📄 20220426_AES_Bill.pdf
+
+> │      ├── 📄 20220518_AES_Bill.pdf
+
+> │      ├── 📄 20220628_AES_Bill.pdf
+
+> │      ├── 📄 20220720_AES_Bill.pdf
+
+> │      ├── 📄 20221128_AES_Bill.pdf
+
+> │      ├── 📄 20221228_AES_Bill.pdf
+
+> │      ├── 📄 20230127_AES_Bill.pdf
+
+> │      ├── 📄 20230224_AES_Bill.pdf
+
+> │      ├── 📄 20230328_AES_Bill.pdf
+
+> │      ├── 📄 20230426_AES_Bill.pdf
+
+> │      ├── 📄 20230526_AES_Bill.pdf
+
+> │      ├── 📄 20230628_AES_Bill.pdf
+
+> │      ├── 📄 20230727_AES_Bill.pdf
+
+> │      ├── 📄 20230829_AES_Bill.pdf
+
+> │      ├── 📄 20230927_AES_Bill.pdf
+
+> │      ├── 📄 20231025_AES_Bill.pdf
+
+> │      ├── 📄 20231130_AES_Bill.pdf
+
+> │      ├── 📄 20231229_AES_Bill.pdf
+
+> │      ├── 📄 20240130_AES_Bill.pdf
+
+> │      ├── 📄 20240305_AES_Bill.pdf
+
+> │      ├── 📄 20240328_AES_Bill.pdf
+
+> │      ├── 📄 20240430_AES_Bill.pdf
+
+> │      ├── 📄 20240531_AES_Bill.pdf
+
+> │      ├── 📄 20240628_AES_Bill.pdf
+
+> │      ├── 📄 20240729_AES_Bill.pdf
+
+> │      ├── 📄 20240918_AES_Bill.pdf
+
+> │      ├── 📄 20240930_AES_Bill.pdf
+
+> │      ├── 📄 20241021_AES_Bill.pdf
+
+> │      ├── 📄 20241031_AES_Bill.pdf
+
+> │      ├── 📄 20241127_AES_Bill.pdf
+
+> │      ├── 📄 20241231_AES_Bill.pdf
+
+> │      ├── 📄 20250131_AES_Bill.pdf
+
+> │      ├── 📄 20250303_AES_Bill.pdf
+
+> │      ├── 📄 20250331_AES_Bill.pdf
+
+> │      ├── 📄 20250430_AES_Bill.pdf
+
+> │      ├── 📄 20250518_AES_Bill.pdf
+
+> │      ├── 📄 20250530_AES_Bill.pdf
+
+> │      ├── 📄 20250630_AES_Bill.pdf
+
+> │      ├── 📄 20250731_AES_Bill.pdf
+
+> │      ├── 📄 20250829_AES_Bill.pdf
+
+> │      ├── 📄 20250919_AES_Bill.pdf
+
+> │      ├── 📄 20250930_AES_Bill.pdf
+
+> │      ├── 📄 20251021_AES_Bill.pdf
+
+> │      ├── 📄 20251217_AES_Bill.pdf
+
+> │      ├── 📄 EX02-N001_DISCONNECTS.md
+
+> │    └── 📂 EX02-M_Meter/
+
+> │      ├── 📄 01_Meter_Nameplate_Specs.md
+
+> │      ├── 📄 02_Meter_Display_Observations.md
+
+> │      ├── 📄 03_Smart_Meter_Function_and_Risks.md
+
+> │      ├── 📄 04_Questions_for_AES_Metering_Team.md
+
+> │    └── 📂 EX02-P_Payments/
+
+> │      ├── 📄 20251030_Gmail_Payment_Receipts-250-50.pdf
+
+> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-1-of-2.pdf
+
+> │      ├── 📄 20251030_KUBRA_EZ_PAY_Payment_Receipt-2-of-2.pdf
+
+> │      ├── 📄 20251117_Gmail_Payment_Receipt-30.pdf
+
+> │      ├── 📄 20251217_AES_Bill-Disconnect-12-17-2025.pdf
+
+> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully.pdf
+
+> │      ├── 📄 Gmail - KUBRA EZ-PAY - Your payment processed successfully121321.pdf
+
+> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY-02.pdf
+
+> │      ├── 📄 Payment Receipt - KUBRA EZ-PAY.pdf
+
+> │    └── 📂 EX02-U_Usage/
+
+> │      ├── 📄 20251113_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251120_Gmail_Personalized_Analysis.pdf
+
+> │      ├── 📄 20251120_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251127_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 20251204_Gmail_Weekly_Analysis.pdf
+
+> │      ├── 📄 AES_Usage_Timeline.csv
+
+> │      ├── 📄 AES_Usage_Timelines_Bills.xlsx
+
+> │      ├── 📄 EX02-D001_BREAKDOWN.xlsx
+
+> │      ├── 📄 EX02-U001_Usage_Estimates.md
+
+> │      └── 📂 billing_audit/
+
+> │      └── 📂 legal_theory/
+
+> │      └── 📂 timeline/
+
+> │  └── 📂 EX03_CORRESPONDENCE/
+
+> │    ├── 📄 05_Call_Log_Template.md
+
+> │    ├── 📄 20251208_AES_ADA_Request_Response.pdf
+
+> │    └── 📂 Call_Notes/
+
+> │      ├── 📄 Call_Scripts.md
+
+> │    └── 📂 Incoming/
+
+> │    └── 📂 Outbound/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 Regulators/
+
+> │  └── 📂 EX04_REQUESTS_FILINGS/
+
+> │    ├── 📄 03_Regulatory_Complaint_IURC.md
+
+> │    ├── 📄 12082025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │    ├── 📄 2025-12-08_Formal_Notice_EAP_ADA_Billing.md
+
+> │    └── 📂 ADA_Documents/
+
+> │      ├── 📄 README.md
+
+> │    └── 📂 ADA_Requests/
+
+> │    └── 📂 Congress_and_President_Letters/
+
+> │      ├── 📄 Letter_US_Congress_AES_Utility_Oversight.md
+
+> │      ├── 📄 Letter_US_President_AES_Utility_Oversight.md
+
+> │    └── 📂 IHEAP/
+
+> │      ├── 📄 FormUIV-2026-UndocumentedIncomeVerification.pdf
+
+> │    └── 📂 Misc_Forms/
+
+> │    └── 📂 Payment_Extension_Requests/
+
+> │  └── 📂 EX05_ANALYSIS_FINDINGS/
+
+> │    ├── 📄 01_Systemic_Errors_and_Inconsistencies.md
+
+> │    ├── 📄 02_Billing_and_Usage_Analysis.md
+
+> │    ├── 📄 03_ADA_Violations_Findings.md
+
+> │    ├── 📄 04_Public_Evidence_Memo.md
+
+> │    ├── 📄 09_Monthly_Tracker_Template.md
+
+> │    ├── 📄 2025-10-30_Kitchen_NoFridge.png
+
+> │    ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │    ├── 📄 2025-10-30_Thermostat_65F.png
+
+> │    ├── 📄 2025-10-30_UtilityRoom_NoAppliances.png
+
+> │    ├── 📄 2025-10-30_WaterHeater_127F.png
+
+> │    └── 📂 EX05-B_BILLING_AUDIT/
+
+> │      ├── 📄 forensic_analysis_dataset.csv
+
+> │      ├── 📄 household_load_profile_before_vs_now.md
+
+> │    └── 📂 EX05-D_DIRECT_ACTIONS_AES/
+
+> │      └── 📂 Negligence_Instances/
+
+> │      └── 📂 Policy_Notes/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 Recorded_Behavior/
+
+> │    └── 📂 EX05-E_ERRORS/
+
+> │      ├── 📄 01_summary.md
+
+> │      ├── 📄 02_scientific_support.md
+
+> │      ├── 📄 03_usage_analysis.md
+
+> │      ├── 📄 04_impossible_consumption.md
+
+> │      ├── 📄 05_evidence_index.md
+
+> │      ├── 📄 06_request_for_meter_test.md
+
+> │      ├── 📄 07_DOJ_addendum.md
+
+> │      ├── 📄 08_IURC_exhibit.md
+
+> │      ├── 📄 09_OUCC_exhibit.md
+
+> │      ├── 📄 09_public_pattern_exhibit.md
+
+> │      ├── 📄 10_whio_public_pattern_exhibit.md
+
+> │      ├── 📄 11_hardship_impact_exhibit.md
+
+> │      ├── 📄 EX05-E001_MARKUPERROR.md
+
+> │      ├── 📄 EX05-E002_UPGRADE_MESSAGE.md
+
+> │    └── 📂 EX05-I_HOME_INVENTORY/
+
+> │      ├── 📄 2025-10-30_Tesla_Charge_Stats.png
+
+> │      ├── 📄 EX05-I001_Inventory_Analysis.md
+
+> │      ├── 📄 _MANIFEST.md
+
+> │      ├── 📄 device_inventory_estimates.csv
+
+> │      ├── 📄 inventory_manifest.json
+
+> │    └── 📂 EX05-S_SCIENTIFIC_SUPPORT/
+
+> │      ├── 📄 2025-12-07_Evidence_SmartMeterEngineeringReport.pdf
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 TE_smart-meter-teardown-engineering-report_en.pdf
+
+> │    ├── 📄 aes_bill_meter_check_guide.md
+
+> │    ├── 📄 forensic_analysis_dataset.csv
+
+> │    ├── 📄 forensic_analysis_dataset.json
+
+> │    ├── 📄 household_load_profile_before_vs_now.md
+
+> │    ├── 📄 household_load_profile_estimates.csv
+
+> │    ├── 📄 meter_error_analysis.md
+
+> │    ├── 📄 public_pattern_analysis.md
+
+> │    ├── 📄 rename_files.bat
+
+> │  └── 📂 EX06_AFFIDAVITS/
+
+> │    ├── 📄 12_Affidavit_of_Hardship.md
+
+> │    ├── 📄 Affidavit_Aunt.md
+
+> │    ├── 📄 Affidavit_Father.md
+
+> │    ├── 📄 Affidavit_Hardship.pdf
+
+> │    ├── 📄 Affidavit_Mother.md
+
+> │    ├── 📄 Affidavit_Roommate.pdf
+
+> │  └── 📂 EX07_PUBLIC/
+
+> │    ├── 📄 aes_fb_thread_bellefontaine_2025-01-29.md
+
+> │    ├── 📄 whio_aes_bill_spike_story_2025-01-28.md
+
+> │  └── 📂 EX08_MISC/
+
+> │    ├── 📄 08_Tesla_Reimbursement_Worksheet.md
+
+> │    ├── 📄 DisconnectDate_Changed_Proof.md
+
+> │    ├── 📄 DisconnectNotice_ChangedDate_Log.md
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_ACCOUNT.pdf
+
+> │    ├── 📄 ZOHO_Mail_IHCDA_EAP_CONFIRMATION.pdf
+
+> │  ├── 📄 Exhibits_Index.md
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 _index_manifest.json
+
+> └── 📂 03_FINAL/
+
+> │  ├── 📄 03_Final_Index.md
+
+> │  └── 📂 ADA_REQUESTS/
+
+> │    └── 📂 ADA_REQUEST_v1/
+
+> │      ├── 📄 10312025_01 _Cover_Letter_ADA ADA Accommodation &Urgent Account .pdf
+
+> │      ├── 📄 2025-06-08_ADA-Request-AES.pdf
+
+> │    └── 📂 ADA_REQUEST_v2/
+
+> │      ├── 📄 01_Cover_Letter_ADA.pdf
+
+> │      ├── 📄 02_Payment_Plan_Seasonal.pdf
+
+> │      ├── 📄 04_Evidence_Checklist.pdf
+
+> │      ├── 📄 12_Affidavit_of_Hardship.pdf
+
+> │    └── 📂 ADA_REQUEST_v3/
+
+> │  └── 📂 AES_PACKET/
+
+> │    ├── 📄 00_INDEX.md
+
+> │    ├── 📄 README.md
+
+> │  └── 📂 BBB_COMPLAINT/
+
+> │  ├── 📄 DELIVERY_LOG.md
+
+> │  └── 📂 GOVERNMENT_LETTERS/
+
+> │    └── 📂 CONGRESS_PACKET/
+
+> │    └── 📂 GOVERNER_PACKET/
+
+> │    └── 📂 WHITHOUSE_PACKET/
+
+> │  └── 📂 MASTER_PACKET/
+
+> │  └── 📂 REGULATORS/
+
+> │    └── 📂 DOJ_ADA_COMPLAINT/
+
+> │      ├── 📄 DOJ_ADA_READY_TO_PASTE.txt
+
+> │      ├── 📄 DOJ_ADA_complaint_main.md
+
+> │    └── 📂 INDIANA_AG/
+
+> │    └── 📂 IURC_PACKET/
+
+> │      ├── 📄 AES_Regulator_Complaint_IURC.md
+
+> │      ├── 📄 IURC_READY_TO_PASTE.txt
+
+> │      ├── 📄 IURC_complaint_main.md
+
+> │    └── 📂 OUCC_PACKET/
+
+> │      ├── 📄 OUCC_READY_TO_PASTE.txt
+
+> │      ├── 📄 OUCC_complaint_main.md
+
+> ├── 📄 AES_Case_Roadmap.canvas
+
+> ├── 📄 AES_Folder_Map.canvas
+
+> ├── 📄 MASTER_INDEX.md
+
+> ├── 📄 README.md
+
+> ├── 📄 index-lite.json
+
+> ├── 📄 index.json
+
+> ├── 📄 index.map.md
+
+> └── 📄 index.schema.json
+
 > ```
 
 ### Assistant

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Locked out of own office by partners - IISITAX betrayal"
 slug: "locked_out_of_own_office_by_partners_iisitax_betrayal"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 66d5a75a038a4fffb18c0516b4eab176
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Locked out of own office by partners - IISITAX betrayal
 
 Category: Challenge

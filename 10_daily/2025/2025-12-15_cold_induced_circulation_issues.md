@@ -3,9 +3,9 @@ layout: page
 title: "Cold-induced circulation issues"
 slug: "cold_induced_circulation_issues"
 created_at: "2025-12-15 10:56:53"
-updated_at: "2025-12-15 10:56:53"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3182,315 +3182,624 @@ canonical_ref: ""
 > You’re building this the right way.
 
 ### User
-> and just fyi this is what the letter said. C
-> o
-> d
-> y
-> Ric
-> e
-> -
-> Vela
-> s
-> q
-> u
-> e
-> z
-> 4
-> 8
-> 1
-> 7
-> S
-> h
-> a
-> d
-> o
-> w
-> P
-> oin
-> t
-> e
-> D
-> riv
-> e Indianapolis, IN 46254 Cody@SRVGroup.co 317.339.7947 09/20/2023 Financial Center First Credit
-> U
-> nio
-> n
-> 7
-> 1
-> 0
-> 1
-> E. 5
-> 6
-> t
-> h
-> S
-> t
-> r
-> e
-> e
-> t Indianapolis, IN 46
-> 2
-> 2
-> 6
-> R
-> E: A
-> c
-> c
-> o
-> u
-> n
-> t
-> #
-> X
-> X
-> X
-> 5
-> 6
-> 3
-> D
-> e
-> a
-> r
-> M
-> e
-> m
-> b
-> e
-> r
-> S
-> olu
-> tio
-> n
-> s
-> R
-> e
-> p
-> r
-> e
-> s
-> e
-> n
-> t
-> a
-> tiv
-> e
-> , I am writing to address the matter conce
-> r
-> nin
-> g
-> m
-> y
-> a
-> c
-> c
-> o
-> u
-> n
-> t
-> ,
-> w
-> hic
-> h is
-> n
-> o
-> w in
-> d
-> e
-> f
-> a
-> ult
-> a
-> s
-> p
-> e
-> r
-> y
-> o
-> u
-> r
-> r
-> e
-> c
-> e
-> n
-> t le
-> t
-> t
-> e
-> r. Fir
-> s
-> t
-> , le
-> t
-> m
-> e
-> a
-> c
-> k
-> n
-> o
-> wle
-> d
-> g
-> e
-> t
-> h
-> a
-> t I f
-> ully
-> u
-> n
-> d
-> e
-> r
-> s
-> t
-> a
-> n
-> d
-> t
-> h
-> e
-> s
-> e
-> rio
-> u
-> s
-> n
-> e
-> s
-> s
-> o
-> f
-> t
-> h
-> e
-> sit
-> u
-> a
-> tio
-> n. I have been going through a series of unfortunate life events that have affected my ability to main
-> t
-> ain
-> m
-> y
-> fin
-> a
-> n
-> cial c
-> o
-> m
-> mit
-> m
-> e
-> n
-> t
-> s. To briefly outline, I am curre
-> n
-> tly
-> f
-> a
-> cin
-> g
-> t
-> h
-> e
-> f
-> ollo
-> win
-> g
-> c
-> h
-> alle
-> n
-> g
-> e
-> s: 1. My husband has been deported, causing not just emotional turm
-> oil b
-> u
-> t
-> als
-> o lo
-> gis
-> tic
-> al complications in daily life. 2. I've had multiple health issues, which have led to additional medical expenses. 3. I've been victimized by thefts and fraud perpetrated by vendors. 4. I've experienced overcharges from vendors that I work with. 5. My business has seen a 50% reduction in revenue, straining my finances further. 6. My mother's failing health requires emotional and financial support. 7. I've been working 100-hour weeks to salvage my business and personal life. 8. I have a sleeping disorder that needs specialized care, further adding to the stress and
-> fin
-> a
-> n
-> cial burden. 9. Due to severe stress, I came close to contemplating suicide a couple of months back. Given all these factors, making a simple phone call to discuss my account has become a
-> m
-> o
-> n
-> u
-> m
-> e
-> n
-> t
-> al t
-> a
-> s
-> k
-> d
-> u
-> e
-> t
-> o
-> h
-> eig
-> h
-> t
-> e
-> n
-> e
-> d
-> p
-> h
-> o
-> n
-> e
-> a
-> n
-> xie
-> t
-> y. I e
-> a
-> r
-> n
-> e
-> s
-> tly
-> r
-> e
-> q
-> u
-> e
-> s
-> t
-> y
-> o
-> u
-> r
-> u
-> n
-> d
-> e
-> r
-> s
-> t
-> a
-> n
-> din
-> g
-> a
-> n
-> d
-> a
-> s
-> sis
-> t
-> a
-> n
-> c
+> and just fyi this is what the letter said. C
+
+> o
+
+> d
+
+> y
+
+> Ric
+
+> e
+
+> -
+
+> Vela
+
+> s
+
+> q
+
+> u
+
+> e
+
+> z
+
+> 4
+
+> 8
+
+> 1
+
+> 7
+
+> S
+
+> h
+
+> a
+
+> d
+
+> o
+
+> w
+
+> P
+
+> oin
+
+> t
+
+> e
+
+> D
+
+> riv
+
+> e Indianapolis, IN 46254 Cody@SRVGroup.co 317.339.7947 09/20/2023 Financial Center First Credit
+
+> U
+
+> nio
+
+> n
+
+> 7
+
+> 1
+
+> 0
+
+> 1
+
+> E. 5
+
+> 6
+
+> t
+
+> h
+
+> S
+
+> t
+
+> r
+
+> e
+
+> e
+
+> t Indianapolis, IN 46
+
+> 2
+
+> 2
+
+> 6
+
+> R
+
+> E: A
+
+> c
+
+> c
+
+> o
+
+> u
+
+> n
+
+> t
+
+> #
+
+> X
+
+> X
+
+> X
+
+> 5
+
+> 6
+
+> 3
+
+> D
+
+> e
+
+> a
+
+> r
+
+> M
+
+> e
+
+> m
+
+> b
+
+> e
+
+> r
+
+> S
+
+> olu
+
+> tio
+
+> n
+
+> s
+
+> R
+
+> e
+
+> p
+
+> r
+
+> e
+
+> s
+
+> e
+
+> n
+
+> t
+
+> a
+
+> tiv
+
+> e
+
+> , I am writing to address the matter conce
+
+> r
+
+> nin
+
+> g
+
+> m
+
+> y
+
+> a
+
+> c
+
+> c
+
+> o
+
+> u
+
+> n
+
+> t
+
+> ,
+
+> w
+
+> hic
+
+> h is
+
+> n
+
+> o
+
+> w in
+
+> d
+
+> e
+
+> f
+
+> a
+
+> ult
+
+> a
+
+> s
+
+> p
+
+> e
+
+> r
+
+> y
+
+> o
+
+> u
+
+> r
+
+> r
+
+> e
+
+> c
+
+> e
+
+> n
+
+> t le
+
+> t
+
+> t
+
+> e
+
+> r. Fir
+
+> s
+
+> t
+
+> , le
+
+> t
+
+> m
+
+> e
+
+> a
+
+> c
+
+> k
+
+> n
+
+> o
+
+> wle
+
+> d
+
+> g
+
+> e
+
+> t
+
+> h
+
+> a
+
+> t I f
+
+> ully
+
+> u
+
+> n
+
+> d
+
+> e
+
+> r
+
+> s
+
+> t
+
+> a
+
+> n
+
+> d
+
+> t
+
+> h
+
+> e
+
+> s
+
+> e
+
+> rio
+
+> u
+
+> s
+
+> n
+
+> e
+
+> s
+
+> s
+
+> o
+
+> f
+
+> t
+
+> h
+
+> e
+
+> sit
+
+> u
+
+> a
+
+> tio
+
+> n. I have been going through a series of unfortunate life events that have affected my ability to main
+
+> t
+
+> ain
+
+> m
+
+> y
+
+> fin
+
+> a
+
+> n
+
+> cial c
+
+> o
+
+> m
+
+> mit
+
+> m
+
+> e
+
+> n
+
+> t
+
+> s. To briefly outline, I am curre
+
+> n
+
+> tly
+
+> f
+
+> a
+
+> cin
+
+> g
+
+> t
+
+> h
+
+> e
+
+> f
+
+> ollo
+
+> win
+
+> g
+
+> c
+
+> h
+
+> alle
+
+> n
+
+> g
+
+> e
+
+> s: 1. My husband has been deported, causing not just emotional turm
+
+> oil b
+
+> u
+
+> t
+
+> als
+
+> o lo
+
+> gis
+
+> tic
+
+> al complications in daily life. 2. I've had multiple health issues, which have led to additional medical expenses. 3. I've been victimized by thefts and fraud perpetrated by vendors. 4. I've experienced overcharges from vendors that I work with. 5. My business has seen a 50% reduction in revenue, straining my finances further. 6. My mother's failing health requires emotional and financial support. 7. I've been working 100-hour weeks to salvage my business and personal life. 8. I have a sleeping disorder that needs specialized care, further adding to the stress and
+
+> fin
+
+> a
+
+> n
+
+> cial burden. 9. Due to severe stress, I came close to contemplating suicide a couple of months back. Given all these factors, making a simple phone call to discuss my account has become a
+
+> m
+
+> o
+
+> n
+
+> u
+
+> m
+
+> e
+
+> n
+
+> t
+
+> al t
+
+> a
+
+> s
+
+> k
+
+> d
+
+> u
+
+> e
+
+> t
+
+> o
+
+> h
+
+> eig
+
+> h
+
+> t
+
+> e
+
+> n
+
+> e
+
+> d
+
+> p
+
+> h
+
+> o
+
+> n
+
+> e
+
+> a
+
+> n
+
+> xie
+
+> t
+
+> y. I e
+
+> a
+
+> r
+
+> n
+
+> e
+
+> s
+
+> tly
+
+> r
+
+> e
+
+> q
+
+> u
+
+> e
+
+> s
+
+> t
+
+> y
+
+> o
+
+> u
+
+> r
+
+> u
+
+> n
+
+> d
+
+> e
+
+> r
+
+> s
+
+> t
+
+> a
+
+> n
+
+> din
+
+> g
+
+> a
+
+> n
+
+> d
+
+> a
+
+> s
+
+> sis
+
+> t
+
+> a
+
+> n
+
+> c
+
 > e in creating a mutually beneficial payment plan. I am committed to rectifying this situation and appreciate your patience and understanding. Please feel free to contact me via email or through my work phone, 317-339-7947, as those are the best ways to reach me given my current challenges. I look forward to resolving this matter and am eager to work with you to achieve a satisfactory outcome for both parties. Sincerely, Cody Rice-Velasquez 1
 
 ### Assistant

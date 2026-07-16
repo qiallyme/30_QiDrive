@@ -3,13 +3,13 @@ layout: section
 title: 20 Structure
 slug: 20-structure
 status: active
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - moc
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d62b5e4ea5984f0cbc9d5390e4b93f6c
 canonical_ref: ""
 template_key: master-template
 ---

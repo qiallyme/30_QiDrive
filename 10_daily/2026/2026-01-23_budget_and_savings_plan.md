@@ -3,9 +3,9 @@ layout: page
 title: "Budget and savings plan"
 slug: "budget_and_savings_plan"
 created_at: "2026-01-23 08:56:40"
-updated_at: "2026-01-23 08:56:40"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Breaking the Silence - sharing unfiltered voice publicly"
 slug: "breaking_the_silence_sharing_unfiltered_voice_publicly"
 summary: ""
 status: active
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7735da804f7546c48b519cf1fa548078
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-01-01
 ---
+
 # Breaking the Silence - sharing unfiltered voice publicly
 
 Category: Personal Milestone

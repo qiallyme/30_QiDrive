@@ -3,9 +3,9 @@ layout: page
 title: "Translation Certificate Request"
 slug: "translation_certificate_request"
 created_at: "2023-07-16 13:15:18"
-updated_at: "2023-07-16 13:15:18"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

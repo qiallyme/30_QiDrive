@@ -3,9 +3,9 @@ layout: page
 title: "Book on Building Business"
 slug: "book_on_building_business"
 created_at: "2026-02-24 08:15:09"
-updated_at: "2026-02-24 08:15:09"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -4,14 +4,14 @@ title: Mechanism Template
 slug: mechanism_template
 summary: Template for explaining neurobiological mechanisms and processes
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting clinical mechanisms in clinical track
-tags:
+tags: []
   - template
   - mechanism
   - clinical
   - empowerqnow713
-keywords:
+keywords: []
   - mechanism
   - clinical
   - neurobiology
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.1.0
 category: clinical_mechanism
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b78c2c7076ef4c6ea13d492e372058ef
 canonical_ref: ""
 template_key: master-template
 ---

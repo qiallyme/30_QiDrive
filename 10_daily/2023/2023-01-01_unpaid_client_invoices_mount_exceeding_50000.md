@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Unpaid client invoices mount - exceeding $50,000"
 slug: "unpaid_client_invoices_mount_exceeding_50000"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3d622023945247ff94170f03d32d7eaa
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Unpaid client invoices mount - exceeding $50,000
 
 Category: Challenge

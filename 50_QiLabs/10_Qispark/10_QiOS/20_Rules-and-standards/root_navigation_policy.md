@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Root Navigation Policy
-slug: ""
+slug: root-navigation-policy
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c02e096b5ed445bf9ce8dfadfb4cf7eb
 canonical_ref: ""
 source_type: manual
 template_key: master-template

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Childhood trauma - abuse, neglect, exposure to prostitution"
 slug: "childhood_trauma_abuse_neglect_exposure_to_prostitution"
 summary: ""
 status: active
 created_at: "2008-05-01"
-updated_at: "2008-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 10fa0466e7f64029b2f2901b0b021137
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2008-05-01
 ---
+
 # Childhood trauma - abuse, neglect, exposure to prostitution
 
 Category: Challenge

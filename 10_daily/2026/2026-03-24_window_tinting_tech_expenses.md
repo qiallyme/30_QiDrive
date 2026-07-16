@@ -3,9 +3,9 @@ layout: page
 title: "Window Tinting Tech Expenses"
 slug: "window_tinting_tech_expenses"
 created_at: "2026-03-24 19:50:00"
-updated_at: "2026-03-24 19:50:00"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -970,20 +970,34 @@ canonical_ref: ""
 > 👉 Or build a **payment schedule you can send as a visual tracker** (clients LOVE that)
 
 ### User
-> i just got this warning, Federal Tax Return Alerts
-> - yellow warning messageCheck Health Insurance Deduction and Credit
-> You entered health insurance or long term care insurance premiums with the following business income:
-> RIDESHARE
-> AUTOMOTIVE
-> 
-> Make sure that you don't count the same health insurance premiums for the Self-Employed Health Insurance Deduction (or as an itemized deduction for your self-employed insurance premiums) and for the Premium Tax Credit.
-> 
-> The IRS allows various methods for figuring out how to allocate insurance premiums between the deduction and credit. One way to allocate the amounts is using the Alternative Calculation.
-> - yellow warning messageTips and Overtime from Income on 1099-NEC
-> You entered income shown on 1099 NEC, Box 1, but you haven't told us if it's from tips or overtime compensation. Please go back to the Your 1099-NEC or 1099-MISC Income screen and review if any of the Other Income is from tips or overtime for the following:
-> AMAZONCOM, INC
-> Indiana Tax Return Alerts
-> - yellow warning messageYou might owe an underpayment penalty
+> i just got this warning, Federal Tax Return Alerts
+
+> - yellow warning messageCheck Health Insurance Deduction and Credit
+
+> You entered health insurance or long term care insurance premiums with the following business income:
+
+> RIDESHARE
+
+> AUTOMOTIVE
+
+> 
+
+> Make sure that you don't count the same health insurance premiums for the Self-Employed Health Insurance Deduction (or as an itemized deduction for your self-employed insurance premiums) and for the Premium Tax Credit.
+
+> 
+
+> The IRS allows various methods for figuring out how to allocate insurance premiums between the deduction and credit. One way to allocate the amounts is using the Alternative Calculation.
+
+> - yellow warning messageTips and Overtime from Income on 1099-NEC
+
+> You entered income shown on 1099 NEC, Box 1, but you haven't told us if it's from tips or overtime compensation. Please go back to the Your 1099-NEC or 1099-MISC Income screen and review if any of the Other Income is from tips or overtime for the following:
+
+> AMAZONCOM, INC
+
+> Indiana Tax Return Alerts
+
+> - yellow warning messageYou might owe an underpayment penalty
+
 > We recommend you go back through the Indiana Underpayment Penalty screens and enter underpayment information. We'll help you determine if you owe an underpayment penalty penalty.
 
 ### Assistant

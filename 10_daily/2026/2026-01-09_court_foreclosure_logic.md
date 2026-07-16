@@ -3,9 +3,9 @@ layout: page
 title: "Court Foreclosure Logic"
 slug: "court_foreclosure_logic"
 created_at: "2026-01-09 14:42:14"
-updated_at: "2026-01-09 14:42:14"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

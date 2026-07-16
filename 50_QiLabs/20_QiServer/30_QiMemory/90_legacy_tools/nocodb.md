@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Nocodb
-slug: ""
+slug: nocodb
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 6c425bb4c3154f518c4b2ad6368c9033
 canonical_ref: ""
 source_type: manual
 template_key: master-template

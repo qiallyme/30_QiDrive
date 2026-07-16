@@ -3,12 +3,12 @@ layout: page
 title: QiLife Data Model Spine
 slug: qilife-data-model-spine
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: abcf079b6f4a4b83aafa77b18b89cd08
 canonical_ref: ""
 template_key: master-template
 ---

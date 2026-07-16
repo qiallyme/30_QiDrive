@@ -3,7 +3,7 @@ layout: page
 title: "Promissory Notes & Mortgages Established"
 slug: "promissory_notes_mortgages_established"
 created_at: "2022-01-01"
-updated_at: "2022-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 71f14130d9af4d22aa12b501fa213b8f
 canonical_ref: ""
 ---
 

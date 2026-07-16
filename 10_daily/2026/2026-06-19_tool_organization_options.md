@@ -3,9 +3,9 @@ layout: page
 title: "Tool Organization Options"
 slug: "tool_organization_options"
 created_at: "2026-06-19 12:20:06"
-updated_at: "2026-06-19 12:20:06"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

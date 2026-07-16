@@ -3,9 +3,9 @@ layout: page
 title: "Self-hosted mobile docs"
 slug: "self_hosted_mobile_docs"
 created_at: "2025-12-26 19:14:38"
-updated_at: "2025-12-26 19:14:38"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -2612,53 +2612,100 @@ canonical_ref: ""
 > Say which one.
 
 ### User
-> ok so oracle is tripping i cant verify and your only allowed one time. ora_cloud.js:10 A parser-blocking, cross site (i.e. different eTLD+1) script, https://www.oracleimg.com/us/assets/metrics/ora_code.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
-> (anonymous) @ ora_cloud.js:10
-> ora_cloud.js:10 A parser-blocking, cross site (i.e. different eTLD+1) script, https://www.oracleimg.com/us/assets/metrics/ora_code.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
-> (anonymous) @ ora_cloud.js:10
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> atgsvcs.js:102 EE: Page Peek Enabled
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
-> ora_cloud.js:12 Error collecting BlueKai data...
+> ok so oracle is tripping i cant verify and your only allowed one time. ora_cloud.js:10 A parser-blocking, cross site (i.e. different eTLD+1) script, https://www.oracleimg.com/us/assets/metrics/ora_code.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+
+> (anonymous) @ ora_cloud.js:10
+
+> ora_cloud.js:10 A parser-blocking, cross site (i.e. different eTLD+1) script, https://www.oracleimg.com/us/assets/metrics/ora_code.js, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details.
+
+> (anonymous) @ ora_cloud.js:10
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> atgsvcs.js:102 EE: Page Peek Enabled
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
+> ora_cloud.js:12 Error collecting BlueKai data...
+
 > ora_cloud.js:12 Error collecting BlueKai data...
 
 ### Assistant
@@ -4371,225 +4418,444 @@ canonical_ref: ""
 > Say the number(s).
 
 ### User
-> heres soem guiedes. Docs
-> The next gen of notes & docs
-> Simple. Powerful. Beautiful. Communicate more efficiently with Notion's flexible building blocks.
-> 
-> Get Notion free
-> Request a demo →
-> AI meeting notes
-> Meeting Notes
-> 
-> Connect people & projects with updates & action items.
-> 
-> Duplicate Template →
-> Design System
-> 
-> All your company's design assets in one place.
-> 
-> Duplicate Template →
-> Project requirements
-> 
-> A customizable PRD that fits any type of project.
-> 
-> Duplicate Template →
-> Pitch deck
-> 
-> Tell your company's story in a dynamic way.
-> 
-> Duplicate Template →
-> 
-> 
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> AI meeting notes
-> Go way beyond text & bullet points
-> Code snippets
-> 
-> Native syntax highlighting for dozens of languages.
-> 
-> AI meeting notes
-> Toggles
-> 
-> Collapsible sections make your docs easy to read.
-> 
-> AI meeting notes
-> Images & videos
-> 
-> Embed directly from Loom & YouTube, or upload your own.
-> 
-> AI meeting notes
-> Table of contents
-> 
-> Click to jump to a section. Updates automatically.
-> 
-> AI meeting notes
-> Charts
-> 
-> Add live charts to any doc.
-> 
-> AI meeting notes
-> And 50+ more content types
-> 
-> Like a bottomless box of building blocks.
-> 
-> AI meeting notes
-> Store docs where people can easily find them
-> Every team’s files, at a glance
-> 
-> Notion’s sidebar keeps your workspace organized no matter how fast you grow.
-> 
-> Acme Inc company wiki
-> Toyota
-> Not only do our streamlined workflows in Notion save us time, they also make it easier to stay up to date on task details and progress.
-> 
-> Taku Wakasugi
-> 
-> Toyota Frontier Research Center, Toyota
-> 
-> Get your team on the same page, literally
-> Collaborate or co-edit together
-> 
-> Allow others to comment or suggest edits. Just type the @ key to get their attention.
-> 
-> Ramp
-> Comments keep the ball rolling async
-> 
-> A consolidated view of feedback makes it easy to iterate, even across time zones.
-> 
-> Ramp
-> We can quickly build out a meeting agenda for a large group of people and still make it interactive and fun.
-> Ramp
-> Scott Stephens
-> Design Operations Manager, Kin + Carta
-> 
-> For PMs, designers, engineers, and everyone in between
-> Ramp
-> Product managers
-> 
-> Connect the roadmap to goals, and keep folks aligned on what’s shipping and when.
-> 
-> See how PMs use Notion ->
-> Designers
-> 
-> Move review rounds forward, prioritize requests, and hit all your creative deadlines.
-> 
-> See how designers use Notion ->
-> Engineers
-> 
-> Ship features faster with sprints, code guidelines, bug fixes & more, all in one place.
-> 
-> See how engineers use Notion ->
-> Wikis and Projects included, for the same price
-> Wikis
-> 
-> It's hard to move fast with a clunky & disorganized workspace. Centralize all your knowledge in Notion instead.
-> 
-> Wikis
-> Projects
-> 
-> Manage any type of project, no matter the team or size.
-> 
-> Projects
-> Info from Figma, GitHub & more. Easy to share, easy to see.
-> See all integrations
-> Figma
-> Figma
-> 
-> Always share the most updated designs with your team.
-> 
-> Try now →
-> Figma integration
-> Amplitude
-> Amplitude
-> 
-> Track release metrics, experiment results, and more.
-> 
-> Try now →
-> Amplitude integration
-> Github
-> Github
-> 
-> Bring pull requests, issues, and even repos directly into Notion.
-> 
-> Try now →
-> Github integration
-> Slack
-> Slack
-> 
-> Simply paste a link to see the full message without switching tools.
-> 
-> Try now →
-> Slack integration
-> Figma
-> Jira
-> 
-> See bug updates, or convert an entire project into a database.
-> 
-> Try now →
-> Jira integration
-> Browse all integrations
-> 
-> Go to the gallery →
-> Illustration
-> Choose a template to get started
-> Explore templates
-> Mixpanel’s daily standup & tasks
-> 
-> Try template →
-> Standup temmplate
-> Notion's product requirement doc
-> 
-> Try template →
-> PRD template
-> Netflix's branding framework
-> 
-> Try template →
-> Branding framework template
-> Write your next doc in Notion
-> Play around with it first. Pay and add your team later.
-> 
-> Get Notion free
-> Request a demo →
-> AI meeting notes
-> 
-> English (US)
-> Do Not Sell or Share My Info
-> Cookie settings
-> © 2025 Notion Labs, Inc.
-> Company
-> 
-> About us
-> Careers
-> Security
-> Status
-> Terms & privacy
-> Your privacy rights
-> Download
-> 
-> iOS & Android
-> Mac & Windows
-> Calendar
-> Web Clipper
-> Resources
-> 
-> Help center
-> Pricing
-> Blog
-> Community
-> Integrations
-> Templates
-> Partner programs
-> Notion for
-> 
-> Enterprise
-> Small business
-> Personal
+> heres soem guiedes. Docs
+
+> The next gen of notes & docs
+
+> Simple. Powerful. Beautiful. Communicate more efficiently with Notion's flexible building blocks.
+
+> 
+
+> Get Notion free
+
+> Request a demo →
+
+> AI meeting notes
+
+> Meeting Notes
+
+> 
+
+> Connect people & projects with updates & action items.
+
+> 
+
+> Duplicate Template →
+
+> Design System
+
+> 
+
+> All your company's design assets in one place.
+
+> 
+
+> Duplicate Template →
+
+> Project requirements
+
+> 
+
+> A customizable PRD that fits any type of project.
+
+> 
+
+> Duplicate Template →
+
+> Pitch deck
+
+> 
+
+> Tell your company's story in a dynamic way.
+
+> 
+
+> Duplicate Template →
+
+> 
+
+> 
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> AI meeting notes
+
+> Go way beyond text & bullet points
+
+> Code snippets
+
+> 
+
+> Native syntax highlighting for dozens of languages.
+
+> 
+
+> AI meeting notes
+
+> Toggles
+
+> 
+
+> Collapsible sections make your docs easy to read.
+
+> 
+
+> AI meeting notes
+
+> Images & videos
+
+> 
+
+> Embed directly from Loom & YouTube, or upload your own.
+
+> 
+
+> AI meeting notes
+
+> Table of contents
+
+> 
+
+> Click to jump to a section. Updates automatically.
+
+> 
+
+> AI meeting notes
+
+> Charts
+
+> 
+
+> Add live charts to any doc.
+
+> 
+
+> AI meeting notes
+
+> And 50+ more content types
+
+> 
+
+> Like a bottomless box of building blocks.
+
+> 
+
+> AI meeting notes
+
+> Store docs where people can easily find them
+
+> Every team’s files, at a glance
+
+> 
+
+> Notion’s sidebar keeps your workspace organized no matter how fast you grow.
+
+> 
+
+> Acme Inc company wiki
+
+> Toyota
+
+> Not only do our streamlined workflows in Notion save us time, they also make it easier to stay up to date on task details and progress.
+
+> 
+
+> Taku Wakasugi
+
+> 
+
+> Toyota Frontier Research Center, Toyota
+
+> 
+
+> Get your team on the same page, literally
+
+> Collaborate or co-edit together
+
+> 
+
+> Allow others to comment or suggest edits. Just type the @ key to get their attention.
+
+> 
+
+> Ramp
+
+> Comments keep the ball rolling async
+
+> 
+
+> A consolidated view of feedback makes it easy to iterate, even across time zones.
+
+> 
+
+> Ramp
+
+> We can quickly build out a meeting agenda for a large group of people and still make it interactive and fun.
+
+> Ramp
+
+> Scott Stephens
+
+> Design Operations Manager, Kin + Carta
+
+> 
+
+> For PMs, designers, engineers, and everyone in between
+
+> Ramp
+
+> Product managers
+
+> 
+
+> Connect the roadmap to goals, and keep folks aligned on what’s shipping and when.
+
+> 
+
+> See how PMs use Notion ->
+
+> Designers
+
+> 
+
+> Move review rounds forward, prioritize requests, and hit all your creative deadlines.
+
+> 
+
+> See how designers use Notion ->
+
+> Engineers
+
+> 
+
+> Ship features faster with sprints, code guidelines, bug fixes & more, all in one place.
+
+> 
+
+> See how engineers use Notion ->
+
+> Wikis and Projects included, for the same price
+
+> Wikis
+
+> 
+
+> It's hard to move fast with a clunky & disorganized workspace. Centralize all your knowledge in Notion instead.
+
+> 
+
+> Wikis
+
+> Projects
+
+> 
+
+> Manage any type of project, no matter the team or size.
+
+> 
+
+> Projects
+
+> Info from Figma, GitHub & more. Easy to share, easy to see.
+
+> See all integrations
+
+> Figma
+
+> Figma
+
+> 
+
+> Always share the most updated designs with your team.
+
+> 
+
+> Try now →
+
+> Figma integration
+
+> Amplitude
+
+> Amplitude
+
+> 
+
+> Track release metrics, experiment results, and more.
+
+> 
+
+> Try now →
+
+> Amplitude integration
+
+> Github
+
+> Github
+
+> 
+
+> Bring pull requests, issues, and even repos directly into Notion.
+
+> 
+
+> Try now →
+
+> Github integration
+
+> Slack
+
+> Slack
+
+> 
+
+> Simply paste a link to see the full message without switching tools.
+
+> 
+
+> Try now →
+
+> Slack integration
+
+> Figma
+
+> Jira
+
+> 
+
+> See bug updates, or convert an entire project into a database.
+
+> 
+
+> Try now →
+
+> Jira integration
+
+> Browse all integrations
+
+> 
+
+> Go to the gallery →
+
+> Illustration
+
+> Choose a template to get started
+
+> Explore templates
+
+> Mixpanel’s daily standup & tasks
+
+> 
+
+> Try template →
+
+> Standup temmplate
+
+> Notion's product requirement doc
+
+> 
+
+> Try template →
+
+> PRD template
+
+> Netflix's branding framework
+
+> 
+
+> Try template →
+
+> Branding framework template
+
+> Write your next doc in Notion
+
+> Play around with it first. Pay and add your team later.
+
+> 
+
+> Get Notion free
+
+> Request a demo →
+
+> AI meeting notes
+
+> 
+
+> English (US)
+
+> Do Not Sell or Share My Info
+
+> Cookie settings
+
+> © 2025 Notion Labs, Inc.
+
+> Company
+
+> 
+
+> About us
+
+> Careers
+
+> Security
+
+> Status
+
+> Terms & privacy
+
+> Your privacy rights
+
+> Download
+
+> 
+
+> iOS & Android
+
+> Mac & Windows
+
+> Calendar
+
+> Web Clipper
+
+> Resources
+
+> 
+
+> Help center
+
+> Pricing
+
+> Blog
+
+> Community
+
+> Integrations
+
+> Templates
+
+> Partner programs
+
+> Notion for
+
+> 
+
+> Enterprise
+
+> Small business
+
+> Personal
+
 > Explor
 
 ### Assistant

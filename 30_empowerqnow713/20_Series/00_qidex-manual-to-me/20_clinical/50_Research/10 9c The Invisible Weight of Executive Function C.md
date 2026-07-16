@@ -3,10 +3,10 @@ layout: page
 title: 10 9c The Invisible Weight of Executive Function C
 slug: 10_9c_the_invisible_weight_of_executive_function_c
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
-keywords:
+keywords: []
   - intake
 source_type: manual
 realm: QiVault
@@ -19,7 +19,7 @@ qi_decimal: 0.00.00-INTAKE
 qid: q4acf6b4e2180
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
@@ -27,7 +27,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b8288e6b393144d0aa87b56c99394bd2
 canonical_ref: ""
 template_key: master-template
 ---

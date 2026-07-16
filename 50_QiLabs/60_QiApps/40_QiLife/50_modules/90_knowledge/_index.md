@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Index
-slug: ""
+slug: index
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 1598079a269946f8b2ab3e166a4ab3ae
 canonical_ref: ""
 source_type: manual
 template_key: master-template

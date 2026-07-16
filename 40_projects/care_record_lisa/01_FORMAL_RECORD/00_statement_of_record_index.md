@@ -3,13 +3,13 @@ layout: page
 title: Statement Of Record
 slug: statement-of-record
 status: active
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: cad90b4c4c80457198c5a868ba02cc23
 canonical_ref: ""
 template_key: master-template
 ---

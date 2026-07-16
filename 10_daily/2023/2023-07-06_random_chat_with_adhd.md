@@ -3,9 +3,9 @@ layout: page
 title: "Random Chat with ADHD"
 slug: "random_chat_with_adhd"
 created_at: "2023-07-06 23:35:49"
-updated_at: "2023-07-06 23:35:49"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

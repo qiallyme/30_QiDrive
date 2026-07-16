@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Data Pipelines
-slug: ""
+slug: data-pipelines
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: b19fa25191af4c7d852f3039b2e627ff
 canonical_ref: ""
 source_type: manual
 template_key: master-template

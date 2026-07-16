@@ -3,9 +3,9 @@ layout: page
 title: "Price comparison MagTek MICR"
 slug: "price_comparison_magtek_micr"
 created_at: "2025-09-20 09:34:36"
-updated_at: "2025-09-20 09:34:36"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

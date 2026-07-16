@@ -4,13 +4,13 @@ title: Voice Notes
 slug: voice-notes
 summary: Imported voice-note entries awaiting review and normalization.
 status: active
-updated_at: "2026-06-28"
-tags:
+updated_at: "2026-07-16T06:49:34-04:00"
+tags: []
   - moc
   - daily
   - voice-notes
 source_type: manual
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: dde458f91257437f86783cd9a6b2287d
 canonical_ref: ""
 template_key: master-template
 ---

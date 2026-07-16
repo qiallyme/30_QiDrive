@@ -3,9 +3,9 @@ layout: page
 title: "Camera protocol advice"
 slug: "camera_protocol_advice"
 created_at: "2025-12-17 10:13:10"
-updated_at: "2025-12-17 10:13:10"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

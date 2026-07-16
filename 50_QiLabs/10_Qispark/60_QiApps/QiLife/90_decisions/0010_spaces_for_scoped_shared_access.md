@@ -3,13 +3,13 @@ layout: adr
 title: Decision 0010: Spaces for Scoped Shared Access
 slug: decision-0010-spaces-for-scoped-shared-access
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 44418e86a41b47fda5e7692f8d6063eb
 canonical_ref: ""
 template_key: master-template
 ---

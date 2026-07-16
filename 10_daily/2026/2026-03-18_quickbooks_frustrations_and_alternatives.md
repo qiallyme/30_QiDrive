@@ -3,9 +3,9 @@ layout: page
 title: "QuickBooks Frustrations and Alternatives"
 slug: "quickbooks_frustrations_and_alternatives"
 created_at: "2026-03-18 18:20:37"
-updated_at: "2026-03-18 18:20:37"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

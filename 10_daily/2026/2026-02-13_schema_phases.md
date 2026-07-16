@@ -3,9 +3,9 @@ layout: page
 title: "Schema-Phases"
 slug: "schema_phases"
 created_at: "2026-02-13 00:24:19"
-updated_at: "2026-02-13 00:24:19"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -284,12 +284,18 @@ canonical_ref: ""
 > Pick your dominant engine and build pressure there.
 
 ### User
-> what fields or look up for these. ?? 1. Core Exposure Engines
-> 2. Pressure Multipliers
-> 3. Escalation Pathways
-> 4. Settlement Architecture
-> 5. Regulatory Track
-> 6. Risk Controls
+> what fields or look up for these. ?? 1. Core Exposure Engines
+
+> 2. Pressure Multipliers
+
+> 3. Escalation Pathways
+
+> 4. Settlement Architecture
+
+> 5. Regulatory Track
+
+> 6. Risk Controls
+
 > 7. Deadlines & Trigger Events
 
 ### Assistant
@@ -2140,16 +2146,26 @@ canonical_ref: ""
 > What level of minimal are you comfortable with?
 
 ### User
-> i had already made some so i left them. Case Phase Information
-> Status
-> Owner
-> Unassigned User
-> Start Date
-> End Date
-> Completed Date
-> Flag
-> Tags
-> Purpose
+> i had already made some so i left them. Case Phase Information
+
+> Status
+
+> Owner
+
+> Unassigned User
+
+> Start Date
+
+> End Date
+
+> Completed Date
+
+> Flag
+
+> Tags
+
+> Purpose
+
 > 1. Core Exposure Engines
 
 ### Assistant
@@ -2543,45 +2559,84 @@ canonical_ref: ""
 > 
 > Attorney intake packet preparation
 > 
-> This phase should stay small and sharp.  here the example export help me get these in this a csv filled out using the same columsn, Tasks Name	Custom Status	Start Date	Tags	Due Date	Duration	Priority	% Completed	Phase	Phase System ID	Phase Link	Type	Method	Alt Id	Actor	Actor System ID	Actor Link	Flags	Completion Date	Date Filed	Violation Type (If Violation)	Severity	Violation ID	Violation Group ID	Deadline-Date	Deadline-Status	Deadline Reason	Doc-URL	Doc File Name	Doc ID	Doc-Date	Doc-Source	Doc-Type	Doc Hash	Doc Text	Created By	Task List Name	Case Phase Name	Created Time	Predecessors	Successors	Last Modified Time	Tasks Comment	Tasks Description	Duration Type	Schedule Status	Case Phase Start Date	Case Phase End Date	Project Name	Parent Tasks ID	Parent Tasks System ID	Parent Tasks Name	Tasks ID	Tasks System ID	Project Group	Billable Hours	Non Billable Hours	Total Log Hours	Dependency status	Work hours	Difference	Project ID	Project Status	Tasks URL	Task List ID	Critical Tasks	Owner	Rate Per Hour
-> Personal service defect	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T562	2500469000000832401	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832401	2500469000000832377	false	Unassigned User	-
-> TR 4.1 mailing failure	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T563	2500469000000832407	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832407	2500469000000832377	false	Unassigned User	-
-> Clerk certificate absence	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T564	2500469000000832413	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832413	2500469000000832377	false	Unassigned User	-
-> Notice of appeal tracking	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T565	2500469000000832419	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832419	2500469000000832373	false	Unassigned User	-
-> Appellate issue framing	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T566	2500469000000832425	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832425	2500469000000832373	false	Unassigned User	-
-> Record appendix prep	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T567	2500469000000832431	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832431	2500469000000832373	false	Unassigned User	-
-> Docket verification	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T559	2500469000000832383	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832383	2500469000000832367	false	Unassigned User	-
-> Filing audit	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T560	2500469000000832389	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832389	2500469000000832367	false	Unassigned User	-
-> Order timeline alignment	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T561	2500469000000832395	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832395	2500469000000832367	false	Unassigned User	-
-> Judgment date proof: Timestamped order.	Not Started	05/15/2025		05/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T547	2500469000000808402	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808402	2500469000000808394	false	Cody Rice-Velasquez	-
-> Sale date proof: Sheriff sale result sheet / Title transfer.	Not Started	12/09/2025		12/09/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T548	2500469000000808408	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808408	2500469000000808394	false	Cody Rice-Velasquez	-
-> Removal date/time: 12/09/2025 (Photo/GPS/Witness timestamp).	Not Started	01/09/2026		01/09/2026	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T549	2500469000000808414	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808414	2500469000000808394	false	Cody Rice-Velasquez	-
-> Proof of NO 48-Hour Notice: Affidavit of non-receipt + record of immediate execution.	Not Started	12/09/2025		12/09/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T550	2500469000000808420	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808420	2500469000000808394	false	Cody Rice-Velasquez	-
-> Writ filing date: Date FCFCU asked for the shortcut removal.	Not Started	11/05/2025		11/05/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T551	2500469000000808426	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808426	2500469000000808394	false	Cody Rice-Velasquez	-
-> NOTICE OF APPEAL – Filed	Filed	02/09/2026	"notice", "appeal", "forclosure"	02/09/2026	1	Low	0				Filing							-																	Cody Rice-Velasquez	General	None	02/10/2026			02/12/2026			days	Overdue	-	-	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T508	2500469000000797466	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000797466	2500469000000797464	false	Cody Rice-Velasquez	-
-> Dispatch Preservation Notices	Filed	02/02/2026		02/02/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T526	2500469000000808148	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808148	2500469000000808144	false	Cody Rice-Velasquez	-
-> Finalize Service Log	Not Started	02/03/2026		02/03/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T527	2500469000000808154	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808154	2500469000000808144	false	Cody Rice-Velasquez	-
-> Review Attorney Outreach Packet	Not Started	02/09/2026		02/09/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T528	2500469000000808160	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808160	2500469000000808144	false	Cody Rice-Velasquez	-
-> Dispatch FCFCU Direct Dispute (Re: 14 months post-sale lates)	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	03.02_Fee_Audit	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T530	2500469000000808192	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808192	2500469000000808176	false	Cody Rice-Velasquez	-
-> Correct AES/Citizens responsibility dates	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	03.02_Fee_Audit	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T531	2500469000000808198	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808198	2500469000000808176	false	Cody Rice-Velasquez	-
-> Letters Sent: Hard copies of all formal correspondence.	Not Started	02/12/2026		02/12/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T535	2500469000000808284	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808284	2500469000000808280	false	Cody Rice-Velasquez	-
-> Proof of Delivery: Certified mail receipts, USPS tracking, or LetterStream logs.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/15/2026			days	Upcoming	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T536	2500469000000808292	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808292	2500469000000808280	false	Cody Rice-Velasquez	-
-> 20260203-LET_FCFCU_EVIDENCE_PRESERVATION_Notice	Not Started	02/03/2026	"first-class", "letters", "FCFCU", "Fcfc", "Evidence-Preservation", "notice"	02/03/2026	1	Medium	0				Document	Physcial	Job ID: 13311911				Spoliation-Risk	-	02/03/2026											02/03/2026	Letter Stream	Notice			Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/15/2026			02/15/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	FC1-T536	2500469000000808292	Proof of Delivery: Certified mail receipts, USPS tracking, or LetterStream logs.	FC1-T558	2500469000000827007	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000827007	2500469000000808280	false	Unassigned User	-
-> Incoming Email: Substantive responses (or lack thereof) from FCFCU/Susan Abbett.	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T537	2500469000000808302	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808302	2500469000000808280	false	Cody Rice-Velasquez	-
-> Branch Visit Logs: Contemporaneous notes of dates, times, and staff names.	Not Started	11/05/2025		11/05/2025	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T538	2500469000000808308	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808308	2500469000000808280	false	Cody Rice-Velasquez	-
-> Digital Media: Screenshots of text messages and MP3s of voicemails.	Not Started	12/01/2025		12/01/2025	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T539	2500469000000808314	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808314	2500469000000808280	false	Cody Rice-Velasquez	-
-> Dispatch Bureau Disputes (Experian/TU/Equifax)	Not Started	02/13/2026		02/13/2026	1	Low	0											-																	Cody Rice-Velasquez	03.04_Regulatory_Exposure	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T529	2500469000000808186	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808186	2500469000000808182	false	Cody Rice-Velasquez	-
-> Sheriff Service Returns: Both front and back copies (Crucial: Check for blank fields/missing stamps).	Served	03/03/2025		03/03/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T552	2500469000000808432	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808432	2500469000000808272	false	Cody Rice-Velasquez	-
->  Initial Complaint: Full FCFCU foreclosure filing (01/16/2025). Default Judgment: The 05/28/2025 order (The "Target" for vacating). Sheriff Sale Notice: Proof of posting or affidavit of non-receipt. Writ of Assistance Petition: The request for physical removal. Writ Issuance Order: The final court authorization for the sheriff. Full Docket Sheet: Updated weekly to track "silent" filings or orders.	Served	01/01/2025		01/01/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T553	2500469000000808442	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808442	2500469000000808272	false	Cody Rice-Velasquez	-
-> Default Judgment: The 05/28/2025 order (The "Target" for vacating).	Served	05/15/2025		05/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T554	2500469000000808448	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808448	2500469000000808272	false	Cody Rice-Velasquez	-
-> Sheriff Sale Notice: Proof of posting or affidavit of non-receipt.	Building	08/15/2025		08/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T555	2500469000000808454	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808454	2500469000000808272	false	Cody Rice-Velasquez	-
-> Writ of Assistance Petition: The request for physical removal.	Served	11/06/2025		11/06/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T556	2500469000000808460	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808460	2500469000000808272	false	Cody Rice-Velasquez	-
-> Writ Issuance Order: The final court authorization for the sheriff.	Served	11/06/2025		11/06/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T557	2500469000000808466	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808466	2500469000000808272	false	Cody Rice-Velasquez	-
-> Mortgage Statements: Proof of payment history and the $10k overcharge discrepancy.	Not Started	02/26/2026		02/26/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T540	2500469000000808344	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808344	2500469000000808340	true	Cody Rice-Velasquez	-
-> Reinstatement Quotes: Detailed breakdown of the $22k figure vs. the actual $6k cure amount.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T541	2500469000000808350	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808350	2500469000000808340	false	Cody Rice-Velasquez	-
-> Payment Proof: Logs of attempted payments or equity in the home.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T542	2500469000000808356	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808356	2500469000000808340	false	Cody Rice-Velasquez	-
-> Expense Receipts: All hotel, gas, storage, and medical costs incurred since removal.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T543	2500469000000808362	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808362	2500469000000808340	false	Cody Rice-Velasquez	-
-> 																																																																			
+> This phase should stay small and sharp.  here the example export help me get these in this a csv filled out using the same columsn, Tasks Name	Custom Status	Start Date	Tags	Due Date	Duration	Priority	% Completed	Phase	Phase System ID	Phase Link	Type	Method	Alt Id	Actor	Actor System ID	Actor Link	Flags	Completion Date	Date Filed	Violation Type (If Violation)	Severity	Violation ID	Violation Group ID	Deadline-Date	Deadline-Status	Deadline Reason	Doc-URL	Doc File Name	Doc ID	Doc-Date	Doc-Source	Doc-Type	Doc Hash	Doc Text	Created By	Task List Name	Case Phase Name	Created Time	Predecessors	Successors	Last Modified Time	Tasks Comment	Tasks Description	Duration Type	Schedule Status	Case Phase Start Date	Case Phase End Date	Project Name	Parent Tasks ID	Parent Tasks System ID	Parent Tasks Name	Tasks ID	Tasks System ID	Project Group	Billable Hours	Non Billable Hours	Total Log Hours	Dependency status	Work hours	Difference	Project ID	Project Status	Tasks URL	Task List ID	Critical Tasks	Owner	Rate Per Hour
+
+> Personal service defect	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T562	2500469000000832401	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832401	2500469000000832377	false	Unassigned User	-
+
+> TR 4.1 mailing failure	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T563	2500469000000832407	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832407	2500469000000832377	false	Unassigned User	-
+
+> Clerk certificate absence	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.02_Jurisdictional_Arguments	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T564	2500469000000832413	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832413	2500469000000832377	false	Unassigned User	-
+
+> Notice of appeal tracking	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T565	2500469000000832419	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832419	2500469000000832373	false	Unassigned User	-
+
+> Appellate issue framing	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T566	2500469000000832425	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832425	2500469000000832373	false	Unassigned User	-
+
+> Record appendix prep	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.03_Appeal_Preservation	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T567	2500469000000832431	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832431	2500469000000832373	false	Unassigned User	-
+
+> Docket verification	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T559	2500469000000832383	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832383	2500469000000832367	false	Unassigned User	-
+
+> Filing audit	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T560	2500469000000832389	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832389	2500469000000832367	false	Unassigned User	-
+
+> Order timeline alignment	Not Started				-	None	0											-																	Cody Rice-Velasquez	00.01_Record_Integrity	C-00_Foreclosure_Record	02/15/2026			02/15/2026				-	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T561	2500469000000832395	QiCase	0:00	0:00	0:00	Independent Tasks	00:00	00:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000832395	2500469000000832367	false	Unassigned User	-
+
+> Judgment date proof: Timestamped order.	Not Started	05/15/2025		05/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T547	2500469000000808402	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808402	2500469000000808394	false	Cody Rice-Velasquez	-
+
+> Sale date proof: Sheriff sale result sheet / Title transfer.	Not Started	12/09/2025		12/09/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T548	2500469000000808408	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808408	2500469000000808394	false	Cody Rice-Velasquez	-
+
+> Removal date/time: 12/09/2025 (Photo/GPS/Witness timestamp).	Not Started	01/09/2026		01/09/2026	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T549	2500469000000808414	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808414	2500469000000808394	false	Cody Rice-Velasquez	-
+
+> Proof of NO 48-Hour Notice: Affidavit of non-receipt + record of immediate execution.	Not Started	12/09/2025		12/09/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T550	2500469000000808420	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808420	2500469000000808394	false	Cody Rice-Velasquez	-
+
+> Writ filing date: Date FCFCU asked for the shortcut removal.	Not Started	11/05/2025		11/05/2025	1	Low	0											-																	Cody Rice-Velasquez	01.01_Service_Analysis	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T551	2500469000000808426	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808426	2500469000000808394	false	Cody Rice-Velasquez	-
+
+> NOTICE OF APPEAL – Filed	Filed	02/09/2026	"notice", "appeal", "forclosure"	02/09/2026	1	Low	0				Filing							-																	Cody Rice-Velasquez	General	None	02/10/2026			02/12/2026			days	Overdue	-	-	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T508	2500469000000797466	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000797466	2500469000000797464	false	Cody Rice-Velasquez	-
+
+> Dispatch Preservation Notices	Filed	02/02/2026		02/02/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T526	2500469000000808148	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808148	2500469000000808144	false	Cody Rice-Velasquez	-
+
+> Finalize Service Log	Not Started	02/03/2026		02/03/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T527	2500469000000808154	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808154	2500469000000808144	false	Cody Rice-Velasquez	-
+
+> Review Attorney Outreach Packet	Not Started	02/09/2026		02/09/2026	1	Low	0											-																	Cody Rice-Velasquez	02.01_Litigation_Hold	C-02_Evidence_Preservation	02/11/2026			02/12/2026			days	Overdue	02/02/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T528	2500469000000808160	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808160	2500469000000808144	false	Cody Rice-Velasquez	-
+
+> Dispatch FCFCU Direct Dispute (Re: 14 months post-sale lates)	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	03.02_Fee_Audit	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T530	2500469000000808192	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808192	2500469000000808176	false	Cody Rice-Velasquez	-
+
+> Correct AES/Citizens responsibility dates	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	03.02_Fee_Audit	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T531	2500469000000808198	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808198	2500469000000808176	false	Cody Rice-Velasquez	-
+
+> Letters Sent: Hard copies of all formal correspondence.	Not Started	02/12/2026		02/12/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T535	2500469000000808284	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808284	2500469000000808280	false	Cody Rice-Velasquez	-
+
+> Proof of Delivery: Certified mail receipts, USPS tracking, or LetterStream logs.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/15/2026			days	Upcoming	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T536	2500469000000808292	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808292	2500469000000808280	false	Cody Rice-Velasquez	-
+
+> 20260203-LET_FCFCU_EVIDENCE_PRESERVATION_Notice	Not Started	02/03/2026	"first-class", "letters", "FCFCU", "Fcfc", "Evidence-Preservation", "notice"	02/03/2026	1	Medium	0				Document	Physcial	Job ID: 13311911				Spoliation-Risk	-	02/03/2026											02/03/2026	Letter Stream	Notice			Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/15/2026			02/15/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	FC1-T536	2500469000000808292	Proof of Delivery: Certified mail receipts, USPS tracking, or LetterStream logs.	FC1-T558	2500469000000827007	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000827007	2500469000000808280	false	Unassigned User	-
+
+> Incoming Email: Substantive responses (or lack thereof) from FCFCU/Susan Abbett.	Not Started	02/11/2026		02/11/2026	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T537	2500469000000808302	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808302	2500469000000808280	false	Cody Rice-Velasquez	-
+
+> Branch Visit Logs: Contemporaneous notes of dates, times, and staff names.	Not Started	11/05/2025		11/05/2025	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T538	2500469000000808308	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808308	2500469000000808280	false	Cody Rice-Velasquez	-
+
+> Digital Media: Screenshots of text messages and MP3s of voicemails.	Not Started	12/01/2025		12/01/2025	1	Low	0											-																	Cody Rice-Velasquez	05.01_ADA_Accommodation	C-05_Civil_Rights	02/11/2026			02/12/2026			days	Overdue	02/22/2026	04/26/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T539	2500469000000808314	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808314	2500469000000808280	false	Cody Rice-Velasquez	-
+
+> Dispatch Bureau Disputes (Experian/TU/Equifax)	Not Started	02/13/2026		02/13/2026	1	Low	0											-																	Cody Rice-Velasquez	03.04_Regulatory_Exposure	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Overdue	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T529	2500469000000808186	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808186	2500469000000808182	false	Cody Rice-Velasquez	-
+
+> Sheriff Service Returns: Both front and back copies (Crucial: Check for blank fields/missing stamps).	Served	03/03/2025		03/03/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T552	2500469000000808432	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808432	2500469000000808272	false	Cody Rice-Velasquez	-
+
+>  Initial Complaint: Full FCFCU foreclosure filing (01/16/2025). Default Judgment: The 05/28/2025 order (The "Target" for vacating). Sheriff Sale Notice: Proof of posting or affidavit of non-receipt. Writ of Assistance Petition: The request for physical removal. Writ Issuance Order: The final court authorization for the sheriff. Full Docket Sheet: Updated weekly to track "silent" filings or orders.	Served	01/01/2025		01/01/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T553	2500469000000808442	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808442	2500469000000808272	false	Cody Rice-Velasquez	-
+
+> Default Judgment: The 05/28/2025 order (The "Target" for vacating).	Served	05/15/2025		05/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T554	2500469000000808448	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808448	2500469000000808272	false	Cody Rice-Velasquez	-
+
+> Sheriff Sale Notice: Proof of posting or affidavit of non-receipt.	Building	08/15/2025		08/15/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T555	2500469000000808454	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808454	2500469000000808272	false	Cody Rice-Velasquez	-
+
+> Writ of Assistance Petition: The request for physical removal.	Served	11/06/2025		11/06/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T556	2500469000000808460	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808460	2500469000000808272	false	Cody Rice-Velasquez	-
+
+> Writ Issuance Order: The final court authorization for the sheriff.	Served	11/06/2025		11/06/2025	1	Low	0											-																	Cody Rice-Velasquez	01.02_Notice_Defects	C-01_Service_Notice_Defects	02/11/2026			02/12/2026			days	Overdue	12/10/2025	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T557	2500469000000808466	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808466	2500469000000808272	false	Cody Rice-Velasquez	-
+
+> Mortgage Statements: Proof of payment history and the $10k overcharge discrepancy.	Not Started	02/26/2026		02/26/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T540	2500469000000808344	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808344	2500469000000808340	true	Cody Rice-Velasquez	-
+
+> Reinstatement Quotes: Detailed breakdown of the $22k figure vs. the actual $6k cure amount.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T541	2500469000000808350	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808350	2500469000000808340	false	Cody Rice-Velasquez	-
+
+> Payment Proof: Logs of attempted payments or equity in the home.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T542	2500469000000808356	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808356	2500469000000808340	false	Cody Rice-Velasquez	-
+
+> Expense Receipts: All hotel, gas, storage, and medical costs incurred since removal.	Not Started	02/19/2026		02/19/2026	1	Low	0											-																	Cody Rice-Velasquez	03.03_Credit_Furnishing_Overlap	C-03_Financial_Misconduct	02/11/2026			02/12/2026			days	Upcoming	02/06/2026	03/22/2026	FCFCU — Jurisdictional Nullity & Civil Rights Case	-	-		FC1-T543	2500469000000808362	QiCase	0:00	0:00	0:00	Independent Tasks	09:00	(+) 09:00	QI-17	In Progress	https://projects.zoho.com/portal/download/qially#zp/task-detail/2500469000000808362	2500469000000808340	false	Cody Rice-Velasquez	-
+
+> 																																																																			
+
 > 																																																							0:00	0:00	0:00		252:00
 
 ### Assistant
@@ -2606,119 +2661,232 @@ canonical_ref: ""
 > If you want, I can also generate a **second CSV** that creates the **Task Lists** themselves (if your import flow supports that) so you don’t have to build them manually.
 
 ### User
-> give me a gemini prompt to clean up these phases per our new outline. ```markdown
-> . 📂 03_PHASES
-> └── 📂 C-00_Foreclosure_Record/
-> │  └── 📂 00.01_Record_Integrity/
-> │    ├── 📄 Filing timestamp audit (service vs default timing).md
-> │    ├── 📄 Master docket verification (all entries accounted for).md
-> │    ├── 📄 Order sequence alignment (complaint → default → sale → writ).md
-> │  └── 📂 00.02_Jurisdictional_Defects/
-> │    ├── 📄 Untitled.md
-> │  └── 📂 00.03_Appellate_Preservation/
-> │    ├── 📄 Untitled.md
-> │  ├── 📄 _01_PHASE_FORECLOSURE_COURT.md
-> │  ├── 📄 _C00_Preserve_Record_Defects.md
-> └── 📂 C-01_Service_Notice_Defects/
-> │  ├── 📄 _C01_Service_Notice_Defects.md
-> └── 📂 C-02_Evidence_Preservation/
-> │  ├── 📄 01_PHASE_PRESERVATION_MASTER.md
-> │  ├── 📄 20_Spoliation_Risk_Ledger.md
-> │  ├── 📄 NT_Attorney_Intake_Summary.md
-> │  ├── 📄 PHASE_05_Litigation.md
-> │  ├── 📄 _C02_Evidence_Preservation.md
-> └── 📂 C-03_Financial_Misconduct/
-> │  ├── 📄 1️⃣ SURPLUS ACCOUNTING DEMAND LETTER.md
-> │  ├── 📄 2️⃣ FCRA STATUTORY DAMAGES MODEL.md
-> │  ├── 📄 30_Full_TriMerge_2025_12_tradelines.csv
-> │  ├── 📄 3️⃣ REGULATOR-READY COMPLAINT PACKET.md
-> │  └── 📂 C07_Financial_Misconduct/
-> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │    ├── 📄 _C07_Financial_Misconduct.md
-> │  └── 📂 CFPB/
-> │    ├── 📄 01_Combined_Narrative_and_Excerpt.md
-> │    ├── 📄 CFPB_Complaint_Draft.md
-> │    ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │    ├── 📄 Cover_Letter.md
-> │    ├── 📄 _CFPB.md
-> │  └── 📂 CRAs/
-> │    └── 📂 Equifax/
-> │      ├── 📄 Equifax_Violation_Excerpt.md
-> │      ├── 📄 _Equifax.md
-> │    └── 📂 Experian/
-> │      ├── 📄 Experian_Access_your_credit_report_2_tradelines.csv
-> │      ├── 📄 Experian_Access_your_credit_report_CH13_tradelines.csv
-> │      ├── 📄 Experian_Violation_Excerpt.md
-> │      ├── 📄 _Experian.md
-> │    └── 📂 Transunion/
-> │      ├── 📄 TransUnion_Violation_Excerpt.md
-> │      ├── 📄 _Transunion.md
-> │    ├── 📄 _CRAs.md
-> │  └── 📂 Consumer_Statements/
-> │    ├── 📄 Consumer_Statement_Landlords.md
-> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
-> │    ├── 📄 _Consumer_Statements.md
-> │  ├── 📄 Core_Credit_Tables.md
-> │  ├── 📄 Execution_Checklist.md
-> │  ├── 📄 FCFCU_Audit_Forensic_Discrepancies.canvas
-> │  └── 📂 NCUA/
-> │    ├── 📄 01_Combined_Narrative_and_Excerpt_2.md
-> │    ├── 📄 Cover_Letter_6.md
-> │    ├── 📄 Exhibit_Manifest_1.md
-> │    ├── 📄 _NCUA.md
-> │  ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
-> │  ├── 📄 Sanctions_Readiness_Memo.md
-> │  ├── 📄 _C03_Credit_FCRA.md
-> │  ├── 📄 _CREDIT_FCRA_MASTER.md
-> └── 📂 C-04_Writ_Removal_Conduct/
-> │  ├── 📄 _C04_Writ_Removal.md
-> └── 📂 C-05_Civil_Rights/
-> │  ├── 📄 99_Legacy_Excerpt_1.md
-> │  └── 📂 C06_ADA/
-> │    ├── 📄 99_Legacy_Excerpt_3.md
-> │    ├── 📄 _C06_ADA.md
-> │  └── 📂 C08_Regulators/
-> │    ├── 📄 Cover_Letter_1.md
-> │    ├── 📄 Cover_Letter_3.md
-> │    ├── 📄 Cover_Letter_4.md
-> │    ├── 📄 Cover_Letter_5.md
-> │    ├── 📄 Cover_Letter_7.md
-> │    ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │    ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │    ├── 📄 Exhibit_Manifest.md
-> │    ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │    ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │    ├── 📄 IN_AG_Violation_Excerpt.md
-> │    ├── 📄 IN_DFI_Violation_Excerpt.md
-> │    ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │    ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │    ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │    ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │    ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │    ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │    ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │    ├── 📄 Violation_to_Regulator_Mapping.md
-> │  ├── 📄 Cover_Letter_2.md
-> │  ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │  ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │  ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │  ├── 📄 Sheriff_Violation_Excerpt.md
-> │  ├── 📄 _C05_State_Action.md
-> └── 📂 C-06_Settlement_Narrative_Control/
-> │  └── 📂 C10_Narrative_Control/
-> │    ├── 📄 01_Combined_Narrative_and_Excerpt_1.md
-> │    ├── 📄 20251215_displacement_cold_exposure.md
-> │    ├── 📄 BBB_Violation_Excerpt.md
-> │    ├── 📄 _C10_Narrative_Control.md
-> │  ├── 📄 _C09_Settlement.md
-> ├── 📄 Phases.txt
-> ├── 📄 _03_PHASES.md
-> └── 📄 dump_tree_with_ocr.py
+> give me a gemini prompt to clean up these phases per our new outline. ```markdown
+
+> . 📂 03_PHASES
+
+> └── 📂 C-00_Foreclosure_Record/
+
+> │  └── 📂 00.01_Record_Integrity/
+
+> │    ├── 📄 Filing timestamp audit (service vs default timing).md
+
+> │    ├── 📄 Master docket verification (all entries accounted for).md
+
+> │    ├── 📄 Order sequence alignment (complaint → default → sale → writ).md
+
+> │  └── 📂 00.02_Jurisdictional_Defects/
+
+> │    ├── 📄 Untitled.md
+
+> │  └── 📂 00.03_Appellate_Preservation/
+
+> │    ├── 📄 Untitled.md
+
+> │  ├── 📄 _01_PHASE_FORECLOSURE_COURT.md
+
+> │  ├── 📄 _C00_Preserve_Record_Defects.md
+
+> └── 📂 C-01_Service_Notice_Defects/
+
+> │  ├── 📄 _C01_Service_Notice_Defects.md
+
+> └── 📂 C-02_Evidence_Preservation/
+
+> │  ├── 📄 01_PHASE_PRESERVATION_MASTER.md
+
+> │  ├── 📄 20_Spoliation_Risk_Ledger.md
+
+> │  ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │  ├── 📄 PHASE_05_Litigation.md
+
+> │  ├── 📄 _C02_Evidence_Preservation.md
+
+> └── 📂 C-03_Financial_Misconduct/
+
+> │  ├── 📄 1️⃣ SURPLUS ACCOUNTING DEMAND LETTER.md
+
+> │  ├── 📄 2️⃣ FCRA STATUTORY DAMAGES MODEL.md
+
+> │  ├── 📄 30_Full_TriMerge_2025_12_tradelines.csv
+
+> │  ├── 📄 3️⃣ REGULATOR-READY COMPLAINT PACKET.md
+
+> │  └── 📂 C07_Financial_Misconduct/
+
+> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │    ├── 📄 _C07_Financial_Misconduct.md
+
+> │  └── 📂 CFPB/
+
+> │    ├── 📄 01_Combined_Narrative_and_Excerpt.md
+
+> │    ├── 📄 CFPB_Complaint_Draft.md
+
+> │    ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │    ├── 📄 Cover_Letter.md
+
+> │    ├── 📄 _CFPB.md
+
+> │  └── 📂 CRAs/
+
+> │    └── 📂 Equifax/
+
+> │      ├── 📄 Equifax_Violation_Excerpt.md
+
+> │      ├── 📄 _Equifax.md
+
+> │    └── 📂 Experian/
+
+> │      ├── 📄 Experian_Access_your_credit_report_2_tradelines.csv
+
+> │      ├── 📄 Experian_Access_your_credit_report_CH13_tradelines.csv
+
+> │      ├── 📄 Experian_Violation_Excerpt.md
+
+> │      ├── 📄 _Experian.md
+
+> │    └── 📂 Transunion/
+
+> │      ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │      ├── 📄 _Transunion.md
+
+> │    ├── 📄 _CRAs.md
+
+> │  └── 📂 Consumer_Statements/
+
+> │    ├── 📄 Consumer_Statement_Landlords.md
+
+> │    ├── 📄 Emergency_Credit_Harm_Addendum.md
+
+> │    ├── 📄 _Consumer_Statements.md
+
+> │  ├── 📄 Core_Credit_Tables.md
+
+> │  ├── 📄 Execution_Checklist.md
+
+> │  ├── 📄 FCFCU_Audit_Forensic_Discrepancies.canvas
+
+> │  └── 📂 NCUA/
+
+> │    ├── 📄 01_Combined_Narrative_and_Excerpt_2.md
+
+> │    ├── 📄 Cover_Letter_6.md
+
+> │    ├── 📄 Exhibit_Manifest_1.md
+
+> │    ├── 📄 _NCUA.md
+
+> │  ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
+
+> │  ├── 📄 Sanctions_Readiness_Memo.md
+
+> │  ├── 📄 _C03_Credit_FCRA.md
+
+> │  ├── 📄 _CREDIT_FCRA_MASTER.md
+
+> └── 📂 C-04_Writ_Removal_Conduct/
+
+> │  ├── 📄 _C04_Writ_Removal.md
+
+> └── 📂 C-05_Civil_Rights/
+
+> │  ├── 📄 99_Legacy_Excerpt_1.md
+
+> │  └── 📂 C06_ADA/
+
+> │    ├── 📄 99_Legacy_Excerpt_3.md
+
+> │    ├── 📄 _C06_ADA.md
+
+> │  └── 📂 C08_Regulators/
+
+> │    ├── 📄 Cover_Letter_1.md
+
+> │    ├── 📄 Cover_Letter_3.md
+
+> │    ├── 📄 Cover_Letter_4.md
+
+> │    ├── 📄 Cover_Letter_5.md
+
+> │    ├── 📄 Cover_Letter_7.md
+
+> │    ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │    ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │    ├── 📄 Exhibit_Manifest.md
+
+> │    ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │    ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │    ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │    ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │    ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │    ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │    ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │    ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │    ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │  ├── 📄 Cover_Letter_2.md
+
+> │  ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │  ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │  ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │  ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │  ├── 📄 _C05_State_Action.md
+
+> └── 📂 C-06_Settlement_Narrative_Control/
+
+> │  └── 📂 C10_Narrative_Control/
+
+> │    ├── 📄 01_Combined_Narrative_and_Excerpt_1.md
+
+> │    ├── 📄 20251215_displacement_cold_exposure.md
+
+> │    ├── 📄 BBB_Violation_Excerpt.md
+
+> │    ├── 📄 _C10_Narrative_Control.md
+
+> │  ├── 📄 _C09_Settlement.md
+
+> ├── 📄 Phases.txt
+
+> ├── 📄 _03_PHASES.md
+
+> └── 📄 dump_tree_with_ocr.py
+
 > ```
 
 ### Assistant
@@ -2801,146 +2969,286 @@ canonical_ref: ""
 > ```
 
 ### User
-> ok, so give me the full and final these phases are phases, lanes-theory, and the md files under those are like the tasks, done, written in stone, whats the final. ```markdown
-> . 📂 01_PHASES
-> └── 📂 C-00_Foreclosure_Record/
-> │  └── 📂 00.01_Record_Integrity/
-> │    ├── 📄 Filing timestamp audit (service vs default timing).md
-> │    ├── 📄 Master docket verification (all entries accounted for).md
-> │    ├── 📄 Order sequence alignment (complaint → default → sale → writ).md
-> │  └── 📂 00.02_Jurisdictional_Defects/
-> │    ├── 📄 Service_Deficiency_Analysis.md
-> │  └── 📂 00.03_Appellate_Preservation/
-> │    ├── 📄 Appellate_Issue_Preservation.md
-> └── 📂 C-01_Service_Notice_Defects/
-> │  └── 📂 01.01_Service_Compliance_Audit/
-> │  └── 📂 01.02_Notice_Failures/
-> │  └── 📂 01.03_Legal_Impact_Assessment/
-> │  ├── 📄 _PHASE_OVERVIEW.md
-> └── 📂 C-02_Evidence_Preservation/
-> │  └── 📂 02.01_Litigation_Hold_Control/
-> │  └── 📂 02.02_Spoliation_Risk_Register/
-> │    ├── 📄 20_Spoliation_Risk_Ledger.md
-> │  └── 📂 02.03_Evidence_Intake_Log/
-> └── 📂 C-03_Financial_Misconduct/
-> │  └── 📂 03.01_Surplus_Forensics/
-> │    ├── 📄 1️⃣ SURPLUS ACCOUNTING DEMAND LETTER.md
-> │    └── 📂 C-05_Accounting_Surplus/
-> │      ├── 📄 NT_Attorney_Intake_Summary.md
-> │      ├── 📄 _25_IN_DFI.md
-> │      ├── 📄 _50_HUD_FHEO.md
-> │      ├── 📄 _PHASE_OVERVIEW.md
-> │  └── 📂 03.02_Fee_Inflation_Audit/
-> │    ├── 📄 FCFCU_Audit_Forensic_Discrepancies.canvas
-> │  └── 📂 03.03_FCRA_Exposure_Link/
-> │    ├── 📄 2️⃣ FCRA STATUTORY DAMAGES MODEL.md
-> │    ├── 📄 30_Full_TriMerge_2025_12_tradelines.csv
-> │    ├── 📄 Core_Credit_Tables.md
-> │    ├── 📄 _20_furnisher_disputes.md
-> │    ├── 📄 _CREDIT_FCRA_MASTER.md
-> │  └── 📂 03.04_Regulatory_Pressure/
-> │    ├── 📄 3️⃣ REGULATOR-READY COMPLAINT PACKET.md
-> │    └── 📂 CFPB/
-> │      ├── 📄 01_Combined_Narrative_and_Excerpt.md
-> │      ├── 📄 CFPB_Complaint_Draft.md
-> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
-> │      ├── 📄 Cover_Letter.md
-> │      ├── 📄 _CFPB.md
-> │    └── 📂 CRAs/
-> │      └── 📂 Equifax/
-> │        ├── 📄 Equifax_Violation_Excerpt.md
-> │        ├── 📄 _Equifax.md
-> │      └── 📂 Experian/
-> │        ├── 📄 Experian_Access_your_credit_report_2_tradelines.csv
-> │        ├── 📄 Experian_Access_your_credit_report_CH13_tradelines.csv
-> │        ├── 📄 Experian_Violation_Excerpt.md
-> │        ├── 📄 _Experian.md
-> │      └── 📂 Transunion/
-> │        ├── 📄 TransUnion_Violation_Excerpt.md
-> │        ├── 📄 _Transunion.md
-> │      ├── 📄 _CRAs.md
-> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
-> │    ├── 📄 Execution_Checklist.md
-> │    ├── 📄 FORMAL NOTICE OF CONTINUING FCRA VIOLATIONS.md
-> │    └── 📂 NCUA/
-> │    ├── 📄 NCUA CONSUMER COMPLAINT – DRAFT.md
-> │      ├── 📄 01_Combined_Narrative_and_Excerpt_2.md
-> │      ├── 📄 Cover_Letter_6.md
-> │      ├── 📄 Exhibit_Manifest_1.md
-> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
-> │      ├── 📄 _NCUA.md
-> │    ├── 📄 NOTICE OF FAILURE TO REFLECT DISPUTED STATUS.md
-> │    ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
-> │    ├── 📄 Sanctions_Readiness_Memo.md
-> │    ├── 📄 _20_CFPB.md
-> │    ├── 📄 _30_NCUA.md
-> │    ├── 📄 _30_bureau_disputes.md
-> │    ├── 📄 _30_demand_letters.md
-> │    ├── 📄 _BBB.md
-> │  ├── 📄 _PHASE_OVERVIEW.md
-> └── 📂 C-04_Writ_Removal_Conduct/
-> │  └── 📂 04.01_Writ_Execution_Validity/
-> │  └── 📂 04.02_Property_Interference/
-> │  └── 📂 04.03_State_Action_Analysis/
-> │    ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
-> │    ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
-> │    ├── 📄 Sheriff_Internal_Affairs_Complaint.md
-> │    ├── 📄 Sheriff_Violation_Excerpt.md
-> │  └── 📂 04.04_Post_Removal_Damages/
-> │  ├── 📄 _20_AG_Indiana.md
-> │  ├── 📄 _20_Habitability.md
-> │  ├── 📄 _35_Sheriff_Oversight.md
-> │  ├── 📄 _45_FCC_Telecom.md
-> │  ├── 📄 _PHASE_OVERVIEW.md
-> └── 📂 C-05_Civil_Rights/
-> │  └── 📂 05.01_ADA_Accommodation_Record/
-> │    ├── 📄 99_Legacy_Excerpt_3.md
-> │    ├── 📄 _C06_ADA.md
-> │  └── 📂 05.02_Access_to_Court_Impact/
-> │  └── 📂 05.03_Discriminatory_Impact_Assessment/
-> │    ├── 📄 Cover_Letter_1.md
-> │    ├── 📄 Cover_Letter_3.md
-> │    ├── 📄 Cover_Letter_4.md
-> │    ├── 📄 Cover_Letter_5.md
-> │    ├── 📄 Cover_Letter_7.md
-> │    ├── 📄 Cover_Letter_DOJ_Supplemental.md
-> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
-> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
-> │    ├── 📄 DOJ_Supplemental_Continuing_Harm.md
-> │    ├── 📄 Exhibit_Manifest.md
-> │    ├── 📄 HUD_FHEO_Complaint_Narrative.md
-> │    ├── 📄 HUD_FHEO_Violation_Excerpt.md
-> │    ├── 📄 IN_AG_Violation_Excerpt.md
-> │    ├── 📄 IN_DFI_Violation_Excerpt.md
-> │    ├── 📄 Indiana_AG_Complaint_Narrative.md
-> │    ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
-> │    ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
-> │    ├── 📄 Indiana_DFI_Complaint_Narrative.md
-> │    ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
-> │    ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
-> │    ├── 📄 MANIFEST_Indiana_DFI_Packet.md
-> │    ├── 📄 Violation_to_Regulator_Mapping.md
-> │  ├── 📄 _40_DOJ_Civil_Rights.md
-> │  ├── 📄 _55_IN_Civil_Rights.md
-> └── 📂 C-06_Settlement_Narrative_Control/
-> │  └── 📂 06.01_Settlement_Framework/
-> │  └── 📂 06.02_Negotiation_Tracking/
-> │  └── 📂 06.03_Narrative_Discipline/
-> │    ├── 📄 01_Combined_Narrative_and_Excerpt_1.md
-> │    ├── 📄 20251215_displacement_cold_exposure.md
-> │    ├── 📄 BBB_Violation_Excerpt.md
-> │    ├── 📄 _C10_Narrative_Control.md
-> │  ├── 📄 _PHASE_OVERVIEW.md
-> ├── 📄 FCFCU_CASE_MASTER - 1_phases.csv
-> ├── 📄 FCFCU_CASE_MASTER - 1_phases.csv.md
-> ├── 📄 Phase Kanban.md
-> ├── 📄 _PHASES_MASTER.md
-> └── 📂 task_spine/
-> │  ├── 📄 _task_spine.md
-> │  ├── 📄 task_export.csv
-> │  └── 📄 task_export_backup.csv
+> ok, so give me the full and final these phases are phases, lanes-theory, and the md files under those are like the tasks, done, written in stone, whats the final. ```markdown
+
+> . 📂 01_PHASES
+
+> └── 📂 C-00_Foreclosure_Record/
+
+> │  └── 📂 00.01_Record_Integrity/
+
+> │    ├── 📄 Filing timestamp audit (service vs default timing).md
+
+> │    ├── 📄 Master docket verification (all entries accounted for).md
+
+> │    ├── 📄 Order sequence alignment (complaint → default → sale → writ).md
+
+> │  └── 📂 00.02_Jurisdictional_Defects/
+
+> │    ├── 📄 Service_Deficiency_Analysis.md
+
+> │  └── 📂 00.03_Appellate_Preservation/
+
+> │    ├── 📄 Appellate_Issue_Preservation.md
+
+> └── 📂 C-01_Service_Notice_Defects/
+
+> │  └── 📂 01.01_Service_Compliance_Audit/
+
+> │  └── 📂 01.02_Notice_Failures/
+
+> │  └── 📂 01.03_Legal_Impact_Assessment/
+
+> │  ├── 📄 _PHASE_OVERVIEW.md
+
+> └── 📂 C-02_Evidence_Preservation/
+
+> │  └── 📂 02.01_Litigation_Hold_Control/
+
+> │  └── 📂 02.02_Spoliation_Risk_Register/
+
+> │    ├── 📄 20_Spoliation_Risk_Ledger.md
+
+> │  └── 📂 02.03_Evidence_Intake_Log/
+
+> └── 📂 C-03_Financial_Misconduct/
+
+> │  └── 📂 03.01_Surplus_Forensics/
+
+> │    ├── 📄 1️⃣ SURPLUS ACCOUNTING DEMAND LETTER.md
+
+> │    └── 📂 C-05_Accounting_Surplus/
+
+> │      ├── 📄 NT_Attorney_Intake_Summary.md
+
+> │      ├── 📄 _25_IN_DFI.md
+
+> │      ├── 📄 _50_HUD_FHEO.md
+
+> │      ├── 📄 _PHASE_OVERVIEW.md
+
+> │  └── 📂 03.02_Fee_Inflation_Audit/
+
+> │    ├── 📄 FCFCU_Audit_Forensic_Discrepancies.canvas
+
+> │  └── 📂 03.03_FCRA_Exposure_Link/
+
+> │    ├── 📄 2️⃣ FCRA STATUTORY DAMAGES MODEL.md
+
+> │    ├── 📄 30_Full_TriMerge_2025_12_tradelines.csv
+
+> │    ├── 📄 Core_Credit_Tables.md
+
+> │    ├── 📄 _20_furnisher_disputes.md
+
+> │    ├── 📄 _CREDIT_FCRA_MASTER.md
+
+> │  └── 📂 03.04_Regulatory_Pressure/
+
+> │    ├── 📄 3️⃣ REGULATOR-READY COMPLAINT PACKET.md
+
+> │    └── 📂 CFPB/
+
+> │      ├── 📄 01_Combined_Narrative_and_Excerpt.md
+
+> │      ├── 📄 CFPB_Complaint_Draft.md
+
+> │      ├── 📄 CFPB_Violation_Excerpt_Master.md
+
+> │      ├── 📄 Cover_Letter.md
+
+> │      ├── 📄 _CFPB.md
+
+> │    └── 📂 CRAs/
+
+> │      └── 📂 Equifax/
+
+> │        ├── 📄 Equifax_Violation_Excerpt.md
+
+> │        ├── 📄 _Equifax.md
+
+> │      └── 📂 Experian/
+
+> │        ├── 📄 Experian_Access_your_credit_report_2_tradelines.csv
+
+> │        ├── 📄 Experian_Access_your_credit_report_CH13_tradelines.csv
+
+> │        ├── 📄 Experian_Violation_Excerpt.md
+
+> │        ├── 📄 _Experian.md
+
+> │      └── 📂 Transunion/
+
+> │        ├── 📄 TransUnion_Violation_Excerpt.md
+
+> │        ├── 📄 _Transunion.md
+
+> │      ├── 📄 _CRAs.md
+
+> │    ├── 📄 City_of_Indy_Violation_Excerpt.md
+
+> │    ├── 📄 Execution_Checklist.md
+
+> │    ├── 📄 FORMAL NOTICE OF CONTINUING FCRA VIOLATIONS.md
+
+> │    └── 📂 NCUA/
+
+> │    ├── 📄 NCUA CONSUMER COMPLAINT – DRAFT.md
+
+> │      ├── 📄 01_Combined_Narrative_and_Excerpt_2.md
+
+> │      ├── 📄 Cover_Letter_6.md
+
+> │      ├── 📄 Exhibit_Manifest_1.md
+
+> │      ├── 📄 MANIFEST_NCUA_Complaint_Packet.md
+
+> │      ├── 📄 _NCUA.md
+
+> │    ├── 📄 NOTICE OF FAILURE TO REFLECT DISPUTED STATUS.md
+
+> │    ├── 📄 PHASE_CREDIT_EXECUTION_MAP.md
+
+> │    ├── 📄 Sanctions_Readiness_Memo.md
+
+> │    ├── 📄 _20_CFPB.md
+
+> │    ├── 📄 _30_NCUA.md
+
+> │    ├── 📄 _30_bureau_disputes.md
+
+> │    ├── 📄 _30_demand_letters.md
+
+> │    ├── 📄 _BBB.md
+
+> │  ├── 📄 _PHASE_OVERVIEW.md
+
+> └── 📂 C-04_Writ_Removal_Conduct/
+
+> │  └── 📂 04.01_Writ_Execution_Validity/
+
+> │  └── 📂 04.02_Property_Interference/
+
+> │  └── 📂 04.03_State_Action_Analysis/
+
+> │    ├── 📄 MANIFEST_Sheriff_Oversight_Packet.md
+
+> │    ├── 📄 Marion_County_Sheriff_Oversight_Violation_Excerpt.md
+
+> │    ├── 📄 Sheriff_Internal_Affairs_Complaint.md
+
+> │    ├── 📄 Sheriff_Violation_Excerpt.md
+
+> │  └── 📂 04.04_Post_Removal_Damages/
+
+> │  ├── 📄 _20_AG_Indiana.md
+
+> │  ├── 📄 _20_Habitability.md
+
+> │  ├── 📄 _35_Sheriff_Oversight.md
+
+> │  ├── 📄 _45_FCC_Telecom.md
+
+> │  ├── 📄 _PHASE_OVERVIEW.md
+
+> └── 📂 C-05_Civil_Rights/
+
+> │  └── 📂 05.01_ADA_Accommodation_Record/
+
+> │    ├── 📄 99_Legacy_Excerpt_3.md
+
+> │    ├── 📄 _C06_ADA.md
+
+> │  └── 📂 05.02_Access_to_Court_Impact/
+
+> │  └── 📂 05.03_Discriminatory_Impact_Assessment/
+
+> │    ├── 📄 Cover_Letter_1.md
+
+> │    ├── 📄 Cover_Letter_3.md
+
+> │    ├── 📄 Cover_Letter_4.md
+
+> │    ├── 📄 Cover_Letter_5.md
+
+> │    ├── 📄 Cover_Letter_7.md
+
+> │    ├── 📄 Cover_Letter_DOJ_Supplemental.md
+
+> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt.md
+
+> │    ├── 📄 DOJ_Civil_Rights_Violation_Excerpt_Master.md
+
+> │    ├── 📄 DOJ_Supplemental_Continuing_Harm.md
+
+> │    ├── 📄 Exhibit_Manifest.md
+
+> │    ├── 📄 HUD_FHEO_Complaint_Narrative.md
+
+> │    ├── 📄 HUD_FHEO_Violation_Excerpt.md
+
+> │    ├── 📄 IN_AG_Violation_Excerpt.md
+
+> │    ├── 📄 IN_DFI_Violation_Excerpt.md
+
+> │    ├── 📄 Indiana_AG_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_Civil_Rights_Commission_Violation_Excerpt.md
+
+> │    ├── 📄 Indiana_Civil_Rights_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_DFI_Complaint_Narrative.md
+
+> │    ├── 📄 Indiana_Department_of_Financial_Institutions_DFI_Violation_Excerpt.md
+
+> │    ├── 📄 MANIFEST_HUD_FHEO_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_ICRC_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_IN_AG_Complaint_Packet.md
+
+> │    ├── 📄 MANIFEST_Indiana_DFI_Packet.md
+
+> │    ├── 📄 Violation_to_Regulator_Mapping.md
+
+> │  ├── 📄 _40_DOJ_Civil_Rights.md
+
+> │  ├── 📄 _55_IN_Civil_Rights.md
+
+> └── 📂 C-06_Settlement_Narrative_Control/
+
+> │  └── 📂 06.01_Settlement_Framework/
+
+> │  └── 📂 06.02_Negotiation_Tracking/
+
+> │  └── 📂 06.03_Narrative_Discipline/
+
+> │    ├── 📄 01_Combined_Narrative_and_Excerpt_1.md
+
+> │    ├── 📄 20251215_displacement_cold_exposure.md
+
+> │    ├── 📄 BBB_Violation_Excerpt.md
+
+> │    ├── 📄 _C10_Narrative_Control.md
+
+> │  ├── 📄 _PHASE_OVERVIEW.md
+
+> ├── 📄 FCFCU_CASE_MASTER - 1_phases.csv
+
+> ├── 📄 FCFCU_CASE_MASTER - 1_phases.csv.md
+
+> ├── 📄 Phase Kanban.md
+
+> ├── 📄 _PHASES_MASTER.md
+
+> └── 📂 task_spine/
+
+> │  ├── 📄 _task_spine.md
+
+> │  ├── 📄 task_export.csv
+
+> │  └── 📄 task_export_backup.csv
+
 > ```
 
 ### Assistant
@@ -3321,13 +3629,20 @@ canonical_ref: ""
 > Choose deliberately.
 
 ### User
-> {'asset_pointer': 'sediment://file_0000000044c4722fb799eef2cfaa75d8', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 154, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 30611, 'width': 1238}why dont we make thsi easier, can you just put this in csv and ill have gemeni finish building it out. phase_id	phase_name	parent_phase2	status	core_theory	primary_objective	notes	is_task
-> C-01	Jurisdictional Defects		Active	Void ab initio via TR 60(B)(6)	Vacate Judgment	Consolidated Service/Notice/Foreclosure defects	
-> C-02	Writ & Eviction Irregularities		Active	Execution irregularities & Abuse of process	Invalidate/Stay Writ	Consolidated Writ issuance & procedure	
-> C-03	Post-Removal Conduct & Civil Liability		Active	Tort & Civil Rights liability	Damage recovery	Consolidated Armed removal/ADA/Property harm	
-> C-04	FCRA & Financial Reporting Misconduct		Active	Federal statutory & Willfulness exposure	Account deletion & Statutory damages	Consolidated FCRA/Bureau disputes	
-> C-05	Accounting Misconduct & Surplus		Active	Pure math & Audit lane	Recover surplus	Consolidated Surplus/Accounting forensics	
-> C-00	Forclosure_Record						
+> {'asset_pointer': 'sediment://file_0000000044c4722fb799eef2cfaa75d8', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 154, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 30611, 'width': 1238}why dont we make thsi easier, can you just put this in csv and ill have gemeni finish building it out. phase_id	phase_name	parent_phase2	status	core_theory	primary_objective	notes	is_task
+
+> C-01	Jurisdictional Defects		Active	Void ab initio via TR 60(B)(6)	Vacate Judgment	Consolidated Service/Notice/Foreclosure defects	
+
+> C-02	Writ & Eviction Irregularities		Active	Execution irregularities & Abuse of process	Invalidate/Stay Writ	Consolidated Writ issuance & procedure	
+
+> C-03	Post-Removal Conduct & Civil Liability		Active	Tort & Civil Rights liability	Damage recovery	Consolidated Armed removal/ADA/Property harm	
+
+> C-04	FCRA & Financial Reporting Misconduct		Active	Federal statutory & Willfulness exposure	Account deletion & Statutory damages	Consolidated FCRA/Bureau disputes	
+
+> C-05	Accounting Misconduct & Surplus		Active	Pure math & Audit lane	Recover surplus	Consolidated Surplus/Accounting forensics	
+
+> C-00	Forclosure_Record						
+
 > C-00.01							, we should probably number them C-00, C-00.01, C-00.01T001 or something.
 
 ### Assistant

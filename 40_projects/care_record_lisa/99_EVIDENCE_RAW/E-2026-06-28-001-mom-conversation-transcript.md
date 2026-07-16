@@ -3,14 +3,14 @@ layout: page
 title: Event: Conversation with mom transcript preserved
 slug: conversation-with-mom-transcript-preserved
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
   - lisa-care-record
   - communications
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2499398e6d2a467186ebd9cf91c11a43
 canonical_ref: ""
 template_key: master-template
 ---

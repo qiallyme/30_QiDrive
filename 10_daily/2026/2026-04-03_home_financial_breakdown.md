@@ -3,9 +3,9 @@ layout: page
 title: "Home Financial Breakdown"
 slug: "home_financial_breakdown"
 created_at: "2026-04-03 11:28:56"
-updated_at: "2026-04-03 11:28:56"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

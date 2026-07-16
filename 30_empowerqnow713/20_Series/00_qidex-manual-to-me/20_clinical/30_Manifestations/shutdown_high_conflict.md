@@ -4,15 +4,15 @@ title: Shutdown During High-Conflict Conversations
 slug: shutdown_high_conflict
 summary: What this looks like in day-to-day life when high-conflict conversations trigger shutdown responses
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Clinical documentation of shutdown manifestation during high-conflict situations
-tags:
+tags: []
   - manifestation
   - ptsd
   - coping_strategy
   - shutdown
   - empowerqnow713
-keywords:
+keywords: []
   - shutdown
   - dissociation
   - conflict
@@ -26,14 +26,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.2.3
 category: manifestation
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d335017957d74ad7a18d7cfeca28bacd
 canonical_ref: ""
 template_key: master-template
 ---

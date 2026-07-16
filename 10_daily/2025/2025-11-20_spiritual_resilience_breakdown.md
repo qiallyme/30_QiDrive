@@ -3,9 +3,9 @@ layout: page
 title: "Spiritual resilience breakdown"
 slug: "spiritual_resilience_breakdown"
 created_at: "2025-11-20 16:27:50"
-updated_at: "2025-11-20 16:27:50"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

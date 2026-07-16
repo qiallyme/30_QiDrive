@@ -3,8 +3,8 @@ layout: page
 title: 06 How I Operate Routines & Energy Management
 slug: 06_how_i_operate_routines_energy_management
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 realm: QiVault
@@ -17,7 +17,7 @@ qi_decimal: 0.00.00-UNKNOWN
 qid: q48cb4a7262b5
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ca95fcc7c13447ae9b67bb3be3295198
 canonical_ref: ""
 template_key: master-template
 ---

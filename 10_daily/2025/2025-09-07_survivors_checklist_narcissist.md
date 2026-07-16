@@ -3,9 +3,9 @@ layout: page
 title: "Survivor's checklist narcissist"
 slug: "survivors_checklist_narcissist"
 created_at: "2025-09-07 02:22:16"
-updated_at: "2025-09-07 02:22:16"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

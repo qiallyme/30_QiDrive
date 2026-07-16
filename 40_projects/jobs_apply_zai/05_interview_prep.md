@@ -1,3 +1,26 @@
+---
+layout: page
+title: 05 Interview Prep
+slug: 05-interview-prep
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ccc8594b866f47d6a95208f0e87a15dd
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # Zaitullah — Interview preparation
 
 Practice slowly with a helper. Short, truthful answers are better than memorized long answers.

@@ -3,9 +3,9 @@ layout: page
 title: "Resume ready for copy"
 slug: "resume_ready_for_copy"
 created_at: "2025-11-29 12:47:18"
-updated_at: "2025-11-29 12:47:18"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

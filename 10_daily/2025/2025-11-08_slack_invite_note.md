@@ -3,9 +3,9 @@ layout: page
 title: "Slack invite note"
 slug: "slack_invite_note"
 created_at: "2025-11-08 19:47:03"
-updated_at: "2025-11-08 19:47:03"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -902,1073 +902,2135 @@ canonical_ref: ""
 > - Or give you a bilingual blurb at the top (“This portal replaces WhatsApp/text for all project work…”) so it sets expectations for him clearly.
 
 ### User
-> heres what i currently have. // @ts-check
-> import { defineConfig } from 'astro/config';
-> import react from '@astrojs/react';
-> import mdx from '@astrojs/mdx';
-> import tailwind from '@astrojs/tailwind';
-> import starlight from '@astrojs/starlight';
-> 
-> // https://astro.build/config
-> export default defineConfig({
-> 	integrations: [
-> 		react(),
-> 		tailwind(),
-> 		starlight({
-> 			title: 'InnovaHire Knowledge Base',
-> 			sidebar: [
-> 				{
-> 					label: 'Starting Point',
-> 					autogenerate: { directory: '01_EOS' },
-> 				},
-> 				{
-> 					label: 'Engagements',
-> 					autogenerate: { directory: '02_Engagements' },
-> 				},
-> 				{
-> 					label: 'My Stuff',
-> 					autogenerate: { directory: '03_Client' },
-> 				},
-> 				{
-> 					label: 'Business Operations',
-> 					autogenerate: { directory: '03_Client/Business_Ops' },
-> 				},
-> 				{
-> 					label: 'Finance_and_Legal',
-> 					autogenerate: { directory: '03_Client/Finance_and_Legal' },
-> 				},
-> 				{
-> 					label: 'Personal',
-> 					autogenerate: { directory: '03_Client/Personal' },
-> 				},
-> 				{
-> 					label: 'Resources',
-> 					autogenerate: { directory: '03_Client/Resources' },
-> 				}
-> 			],
-> 		}),
-> 		mdx(), // MDX after Starlight (which includes expressive-code)
-> 	],
+> heres what i currently have. // @ts-check
+
+> import { defineConfig } from 'astro/config';
+
+> import react from '@astrojs/react';
+
+> import mdx from '@astrojs/mdx';
+
+> import tailwind from '@astrojs/tailwind';
+
+> import starlight from '@astrojs/starlight';
+
+> 
+
+> // https://astro.build/config
+
+> export default defineConfig({
+
+> 	integrations: [
+
+> 		react(),
+
+> 		tailwind(),
+
+> 		starlight({
+
+> 			title: 'InnovaHire Knowledge Base',
+
+> 			sidebar: [
+
+> 				{
+
+> 					label: 'Starting Point',
+
+> 					autogenerate: { directory: '01_EOS' },
+
+> 				},
+
+> 				{
+
+> 					label: 'Engagements',
+
+> 					autogenerate: { directory: '02_Engagements' },
+
+> 				},
+
+> 				{
+
+> 					label: 'My Stuff',
+
+> 					autogenerate: { directory: '03_Client' },
+
+> 				},
+
+> 				{
+
+> 					label: 'Business Operations',
+
+> 					autogenerate: { directory: '03_Client/Business_Ops' },
+
+> 				},
+
+> 				{
+
+> 					label: 'Finance_and_Legal',
+
+> 					autogenerate: { directory: '03_Client/Finance_and_Legal' },
+
+> 				},
+
+> 				{
+
+> 					label: 'Personal',
+
+> 					autogenerate: { directory: '03_Client/Personal' },
+
+> 				},
+
+> 				{
+
+> 					label: 'Resources',
+
+> 					autogenerate: { directory: '03_Client/Resources' },
+
+> 				}
+
+> 			],
+
+> 		}),
+
+> 		mdx(), // MDX after Starlight (which includes expressive-code)
+
+> 	],
+
 > });
 > 
-> ---
-> title: Welcome to InnovaHire Client Portal
-> description: Your central hub for engagement information and resources
-> hero:
->   tagline: Welcome to your Client Operating System
->   image:
->     file: ../../assets/houston.webp
->   actions:
->     - text: Get Started
->       link: /01_eos/
->       icon: right-arrow
->     - text: View Engagements
->       link: /02_engagements/
->       icon: right-arrow
->       variant: minimal
-> ---
-> 
-> import { Card, CardGrid } from '@astrojs/starlight/components';
-> 
-> ## Your Client Portal
-> 
-> <CardGrid stagger>
-> 	<Card title="Engagement & Scope" icon="document">
-> 		Learn about how we work together, our policies, procedures, and engagement details.
-> 		[Get Started →](/01_eos/)
-> 	</Card>
-> 	<Card title="Engagements" icon="folder">
-> 		View proposals, contracts, agreements, and detailed work summaries.
-> 		[View Engagements →](/02_engagements/)
-> 	</Card>
-> 	<Card title="Client Information" icon="user">
-> 		Access your business operations, finance, personal, and resource information.
-> 		[View Client Info →](/03_client/)
-> 	</Card>
-> </CardGrid>
+> ---
+
+> title: Welcome to InnovaHire Client Portal
+
+> description: Your central hub for engagement information and resources
+
+> hero:
+
+>   tagline: Welcome to your Client Operating System
+
+>   image:
+
+>     file: ../../assets/houston.webp
+
+>   actions:
+
+>     - text: Get Started
+
+>       link: /01_eos/
+
+>       icon: right-arrow
+
+>     - text: View Engagements
+
+>       link: /02_engagements/
+
+>       icon: right-arrow
+
+>       variant: minimal
+
+> ---
+
 > 
-> ---
-> const { client, sidebar } = Astro.props;
-> ---
-> 
-> <aside
->   class="w-64 bg-slate-900 border-r border-slate-800 p-4 flex flex-col gap-4"
->   style={`--accent:${client.primaryColor};`}
-> >
->   <div class="flex items-center gap-3">
->     {client.logo && <img src={client.logo} alt={client.name} class="h-8" />}
->     <div>
->       <div class="text-xs uppercase text-slate-400">Knowledge Base</div>
->       <div class="font-semibold">{client.name}</div>
->     </div>
->   </div>
-> 
->   <nav class="mt-4 space-y-2">
->     {sidebar.map((item) => (
->       <a
->         href={item.path}
->         class="block text-sm px-2 py-1 rounded hover:bg-slate-800"
->       >
->         {item.label}
->       </a>
->     ))}
->   </nav>
+
+> import { Card, CardGrid } from '@astrojs/starlight/components';
+
+> 
+
+> ## Your Client Portal
+
+> 
+
+> <CardGrid stagger>
+
+> 	<Card title="Engagement & Scope" icon="document">
+
+> 		Learn about how we work together, our policies, procedures, and engagement details.
+
+> 		[Get Started →](/01_eos/)
+
+> 	</Card>
+
+> 	<Card title="Engagements" icon="folder">
+
+> 		View proposals, contracts, agreements, and detailed work summaries.
+
+> 		[View Engagements →](/02_engagements/)
+
+> 	</Card>
+
+> 	<Card title="Client Information" icon="user">
+
+> 		Access your business operations, finance, personal, and resource information.
+
+> 		[View Client Info →](/03_client/)
+
+> 	</Card>
+
+> </CardGrid>
+
+> 
+> ---
+
+> const { client, sidebar } = Astro.props;
+
+> ---
+
+> 
+
+> <aside
+
+>   class="w-64 bg-slate-900 border-r border-slate-800 p-4 flex flex-col gap-4"
+
+>   style={`--accent:${client.primaryColor};`}
+
+> >
+
+>   <div class="flex items-center gap-3">
+
+>     {client.logo && <img src={client.logo} alt={client.name} class="h-8" />}
+
+>     <div>
+
+>       <div class="text-xs uppercase text-slate-400">Knowledge Base</div>
+
+>       <div class="font-semibold">{client.name}</div>
+
+>     </div>
+
+>   </div>
+
+> 
+
+>   <nav class="mt-4 space-y-2">
+
+>     {sidebar.map((item) => (
+
+>       <a
+
+>         href={item.path}
+
+>         class="block text-sm px-2 py-1 rounded hover:bg-slate-800"
+
+>       >
+
+>         {item.label}
+
+>       </a>
+
+>     ))}
+
+>   </nav>
+
 > </aside>
 > 
-> ```markdown
-> . 📂 4.10_Innovahire-os
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> ├── 📄 TITLE_VALIDATION_SETUP.md
-> ├── 📄 innovahire.net.txt
-> └── 📂 miniapps/
-> │  ├── 📄 README.md
-> │  ├── 📄 _miniapps.md
-> │  └── 📂 binder/
-> │    ├── 📄 README.md
-> │    ├── 📄 _binder.md
-> │  └── 📂 navigator-3d/
-> │    ├── 📄 README.md
-> │    ├── 📄 _navigator-3d.md
-> │  └── 📂 timeline/
-> │    ├── 📄 README.md
-> │    ├── 📄 _timeline.md
-> │  └── 📂 tools/
-> │    └── 📂 Qi-Mind/
-> │      ├── 📄 README.md
-> │      ├── 📄 directory-map.html
-> │      ├── 📄 navigator-3d.html
-> │      ├── 📄 navigator.html
-> │      ├── 📄 run-navigator.bat
-> │      ├── 📄 run-navigator.ps1
-> │    ├── 📄 README.md
-> │    ├── 📄 directory_structure.json
-> │    ├── 📄 directory_walker.py
-> │    ├── 📄 generate_3d_data.py
-> │    ├── 📄 navigator.html
-> │    ├── 📄 run_3d_mindmap.bat
-> │    ├── 📄 run_3d_real.bat
-> │    ├── 📄 run_3d_simple.bat
-> └── 📂 scripts/
-> │  ├── 📄 README.md
-> │  ├── 📄 _scripts.md
-> │  ├── 📄 analyze-astro-structure.py
-> │  ├── 📄 check-md-titles.py
-> └── 📂 site-kb/
-> │  ├── 📄 ASTRO_STRUCTURE_GUIDE.md
-> │  ├── 📄 INDEX_FIXES_SUMMARY.md
-> │  ├── 📄 README.md
-> │  ├── 📄 STRUCTURE_ANALYSIS.md
-> │  ├── 📄 _site-kb.md
-> │  ├── 📄 astro.config.mjs
-> │  ├── 📄 fix-titles-log.json
-> │  ├── 📄 package.json
-> │  └── 📂 public/
-> │    └── 📂 admin/
-> │      ├── 📄 _admin.md
-> │      ├── 📄 config.yml
-> │      ├── 📄 index.html
-> │    ├── 📄 favicon.svg
-> │  └── 📂 scripts/
-> │    ├── 📄 fix-missing-titles.ps1
-> │    ├── 📄 undo-fix-titles.ps1
-> │  └── 📂 src/
-> │    └── 📂 assets/
-> │      ├── 📄 houston.webp
-> │    └── 📂 components/
-> │      ├── 📄 ChatPanel.tsx
-> │      ├── 📄 ClientHeader.astro
-> │      ├── 📄 Sidebar.astro
-> │      ├── 📄 _components.md
-> │    └── 📂 content/
-> │    ├── 📄 content.config.ts
-> │      └── 📂 clients/
-> │        ├── 📄 _clients.md
-> │        ├── 📄 innova-hire.md
-> │      └── 📂 docs/
-> │        └── 📂 01_EOS/
-> │          ├── 📄 10_Welcome.md
-> │          ├── 📄 20_About_QiAlly.md
-> │          ├── 📄 30_Value_and_Scope.md
-> │          ├── 📄 40_Policies_and_Procedures.md
-> │          ├── 📄 50_Onboarding.md
-> │          ├── 📄 60_How_To.md
-> │          ├── 📄 70_FAQ_and_Glossary.md
-> │          ├── 📄 _01_EOS.md
-> │        └── 📂 02_Engagements/
-> │          └── 📂 Contracts_and_Agreements/
-> │            ├── 📄 Drafts_and_Templates.md
-> │            ├── 📄 Signed_Contracts.md
-> │            ├── 📄 _Contracts_and_Agreements.md
-> │          └── 📂 Proposals_and_Offers/
-> │            └── 📂 2025-11-01_InnovaHire_Integrated_Services/
-> │              ├── 📄 111.md
-> │              ├── 📄 2025-11-08_Plan-of-Action.md
-> │              ├── 📄 2025-11-08_Plan-of-action.html
-> │              └── 📂 Bookkeeping/
-> │                ├── 📄 _Bookkeeping.md
-> │              ├── 📄 _InnovaHire_Integrated_Services.md
-> │            ├── 📄 Active_Proposals.md
-> │            ├── 📄 Archived_Proposals.md
-> │            ├── 📄 _Proposals_and_Offers.md
-> │          └── 📂 Work_Summaries/
-> │            └── 📂 2025-09-01_innovahire-on-qially/
-> │              ├── 📄 LICENSE
-> │              ├── 📄 README.md
-> │              ├── 📄 _innovahire-on-qially.md
-> │              ├── 📄 index.html
-> │            └── 📂 2025-10-01_Microsoft-Setup/
-> │              ├── 📄 07.10.10.10_Microsoft-Business-365.md
-> │              ├── 📄 INH-04.20A_Microsoft-Business-365.md
-> │              ├── 📄 _INH-04.20_Microsoft-Setup.md
-> │            └── 📂 2025-10-02_Time-Keeper/
-> │              ├── 📄 answer.pptx
-> │            └── 📂 2025-11-01_MIBOR_Member_Directory/
-> │              └── 📂 Iteration-One/
-> │                ├── 📄 SOW_Real_Estate_Agent_Search.md
-> │                ├── 📄 _Iteration-One.md
-> │                ├── 📄 _inh_grab-home-text.md
-> │                ├── 📄 add-agents.mjs
-> │                ├── 📄 add-emails-and-dedup.mjs
-> │                └── 📂 alternative_sources/
-> │                  ├── 📄 _alternative_sources.md
-> │                  ├── 📄 source_7_www_kw_com.html
-> │                ├── 📄 billing_breakdown.md
-> │                ├── 📄 bypass-homes-scraper.mjs
-> │                └── 📂 client_package/
-> │                  ├── 📄 README.md
-> │                  ├── 📄 _client_package.md
-> │                  ├── 📄 indianapolis_agents.csv
-> │                  ├── 📄 indianapolis_agents_viewer.html
-> │                ├── 📄 create-viewer.mjs
-> │                ├── 📄 debug-full-page.mjs
-> │                ├── 📄 debug-pagination.mjs
-> │                ├── 📄 dedup-summary.mjs
-> │                ├── 📄 dedup-with-emails.mjs
-> │                ├── 📄 final-summary.mjs
-> │                ├── 📄 final_summary.md
-> │                ├── 📄 fix-viewer.mjs
-> │                ├── 📄 grab-homes-text.mjs
-> │                └── 📂 homes_all_pages/
-> │                  ├── 📄 _homes_all_pages.md
-> │                  ├── 📄 all_pages_combined.txt
-> │                  ├── 📄 page_1.txt
-> │                └── 📂 homes_html/
-> │                  ├── 📄 _homes_html.md
-> │                  ├── 📄 homes_main_content.html
-> │                  ├── 📄 homes_page.html
-> │                └── 📂 homes_text_dump/
-> │                  ├── 📄 _homes_text_dump.md
-> │                  ├── 📄 raw_text_all.txt
-> │                  ├── 📄 raw_text_page_1.txt
-> │                ├── 📄 hybrid_puppeteer_scraper.js
-> │                └── 📂 indianapolis_agents_client_package/
-> │                  ├── 📄 README.md
-> │                  ├── 📄 SOW_Real_Estate_Agent_Search.md
-> │                  ├── 📄 _indianapolis_agents_client_package.md
-> │                  ├── 📄 final_summary.md
-> │                  ├── 📄 indianapolis_agents_v1.csv
-> │                  ├── 📄 indianapolis_agents_viewer.html
-> │                ├── 📄 indianapolis_agents_v1.csv
-> │                └── 📂 indianapolis_agents_viewer/
-> │                ├── 📄 indianapolis_agents_viewer.html
-> │                  ├── 📄 _indianapolis_agents_viewer.md
-> │                  ├── 📄 indianapolis_agents_viewer.html
-> │                ├── 📄 kw_agents.csv
-> │                ├── 📄 package.json
-> │                ├── 📄 parse-kw-agents.mjs
-> │                ├── 📄 parse-yellowpages.mjs
-> │                ├── 📄 sample-yellowpages.csv
-> │                ├── 📄 save-homes-html.mjs
-> │                ├── 📄 scrape-allpages-real-estate.mjs
-> │                ├── 📄 scrape-homes-all-pages.mjs
-> │                ├── 📄 test-different-urls.mjs
-> │                ├── 📄 test-page-2.mjs
-> │                ├── 📄 try-alternative-sources.mjs
-> │                ├── 📄 yellowpages-summary.mjs
-> │                ├── 📄 yellowpages-to-csv.mjs
-> │                ├── 📄 yellowpages.md
-> │                ├── 📄 yellowpages_real_estate.csv
-> │                ├── 📄 yellowpages_real_estate_deduplicated.csv
-> │                ├── 📄 yellowpages_real_estate_updated.csv
-> │              └── 📂 Iteration-Two/
-> │                ├── 📄 _Iteration-Two.md
-> │              ├── 📄 QiAlly Document Services — MIBOR Member Directory Capture & Automation.md
-> │              ├── 📄 _MIBOR_Member_Directory.md
-> │              ├── 📄 _QiScripts.md
-> │            ├── 📄 Deliverables_and_Results.md
-> │            ├── 📄 Monthly_Summary.md
-> │            ├── 📄 _Work_Summaries.md
-> │          ├── 📄 _02_Engagements.md
-> │        └── 📂 03_Client/
-> │          └── 📂 Business_Ops/
-> │            └── 📂 1_Company_Info/
-> │              ├── 📄 _1_Company_Info.md
-> │              ├── 📄 _Company_Info.md
-> │            └── 📂 2_Procedures_and_SOPs/
-> │              ├── 📄 10_incident-001.md
-> │              ├── 📄 20_release.md
-> │              ├── 📄 _2_Procedures_and_SOPs.md
-> │              ├── 📄 _Procedures_and_SOPs.md
-> │            └── 📂 3_Compliance_and_Regulations/
-> │              ├── 📄 _Compliance_and_Regulations.md
-> │            ├── 📄 Business_Notes.md
-> │            ├── 📄 _Business_and_Operations.md
-> │          └── 📂 Finance_and_Legal/
-> │            └── 📂 Accounting/
-> │              └── 📂 Assets/
-> │                └── 📂 04.10.40.10_Real-Estate/
-> │                  ├── 📄 10_deed.pdf
-> │                  ├── 📄 20_property-tax.pdf
-> │                  ├── 📄 _04.10.40.10_Real-Estate.md
-> │                └── 📂 04.10.40.20_Investments/
-> │                  ├── 📄 10_2024_Investment-Statements.pdf
-> │                  ├── 📄 _04.10.40.20_Investments.md
-> │                ├── 📄 _Assets.md
-> │                ├── 📄 _index.md
-> │              └── 📂 Banking/
-> │                ├── 📄 _Banking.md
-> │                ├── 📄 _index.md
-> │                └── 📂 check-images/
-> │                  ├── 📄 _check-images.md
-> │                  ├── 📄 _index.md
-> │              └── 📂 Expenses/
-> │                ├── 📄 _Expenses.md
-> │                ├── 📄 _index.md
-> │              └── 📂 Income/
-> │                └── 📂 04.10.30.10_Salary/
-> │                  ├── 📄 10_pay-stubs.pdf
-> │                  ├── 📄 20_w2-forms.pdf
-> │                  ├── 📄 _04.10.30.10_Salary.md
-> │                └── 📂 04.10.30.20_Business/
-> │                  ├── 📄 10_invoices.pdf
-> │                  ├── 📄 20_expenses.pdf
-> │                  ├── 📄 _04.10.30.20_Business.md
-> │                ├── 📄 _Income.md
-> │                ├── 📄 _index.md
-> │              └── 📂 Liabilities/
-> │                └── 📂 04.10.50.10_Loans/
-> │                  ├── 📄 10_loan-agreement.pdf
-> │                  ├── 📄 _04.10.50.10_Loans.md
-> │                └── 📂 04.10.50.20_Credit-Cards/
-> │                  ├── 📄 10_credit-statement.pdf
-> │                  ├── 📄 _04.10.50.20_Credit-Cards.md
-> │                ├── 📄 _Liabilities.md
-> │                ├── 📄 _index.md
-> │              └── 📂 Process/
-> │                ├── 📄 04.20.20.10_Bookkeeping_Procedures.md
-> │                ├── 📄 06.00_Bookkeeping_Procedures.md
-> │                ├── 📄 _Process.md
-> │              └── 📂 QuickBooks/
-> │                ├── 📄 BankRules.csv
-> │                ├── 📄 BankRules.gsheet
-> │                ├── 📄 BankRules.xls
-> │                ├── 📄 BankRules_QuickBooks.csv
-> │                ├── 📄 BankRules_QuickBooks.gsheet
-> │                ├── 📄 InnovaHire LLC_Account List.csv
-> │                ├── 📄 InnovaHire LLC_Account List.xlsx
-> │                ├── 📄 InnovaHire_LLC_Bank_Feed_Rules_FINAL.csv
-> │                ├── 📄 InnovaHire_LLC_Bank_Feed_Rules_FINAL.xls
-> │                ├── 📄 _InnovaHireQuickBooks.md
-> │                ├── 📄 _QuickBooks.md
-> │              └── 📂 Receipts/
-> │                ├── 📄 _Receipts_and_Invoices.md
-> │              ├── 📄 _Accounting.md
-> │            └── 📂 Billing/
-> │              └── 📂 04.30.40_Expenses/
-> │                ├── 📄 10_monthly-expenses.pdf
-> │                ├── 📄 20_receipts-summary.pdf
-> │                ├── 📄 _04.30.40_Expenses.md
-> │              ├── 📄 _04.30_Billing-and-Payments.md
-> │            └── 📂 Contracts_and_Policies/
-> │              ├── 📄 _Contracts_and_Policies.md
-> │            ├── 📄 Finance_Notes.md
-> │            └── 📂 Insurance/
-> │              ├── 📄 Insurance_Audits.md
-> │              ├── 📄 _Insurance.md
-> │            ├── 📄 README.md
-> │            └── 📂 Reports_and_Statements/
-> │              └── 📂 04.40.40_Budgets-Forcasts/
-> │                ├── 📄 10_2025-q4-budget.pdf
-> │                ├── 📄 _04.40.40_Budgets-Forcasts.md
-> │              ├── 📄 04.80.10_Financial_Reports.md
-> │              └── 📂 04.80.50_Budgets-Forcasts/
-> │                ├── 📄 2025-Q4-budget (2).md
-> │                ├── 📄 2025-Q4-budget.md
-> │                ├── 📄 _04.80.50_Budgets-Forcasts (2).md
-> │                ├── 📄 _04.80.50_Budgets-Forcasts.md
-> │              ├── 📄 H.030_Financial_Reports.md
-> │              ├── 📄 _04.40_Reports.md
-> │              ├── 📄 _04.80_Reports.md
-> │              ├── 📄 _80_Reports.md
-> │              ├── 📄 _Reports_and_Statements.md
-> │            └── 📂 Tax_Returns/
-> │              └── 📂 04.20.10_Tax-Planning/
-> │                ├── 📄 1040_Federal_Return.md
-> │                ├── 📄 H.02.00.10_Current_Year.md
-> │                ├── 📄 H.020.020_Prior_Years.md
-> │                ├── 📄 Schedule_C.md
-> │                ├── 📄 _04.20.10_Tax-Planning.md
-> │              └── 📂 04.20.20_Returns-and-Filings/
-> │                └── 📂 2023/
-> │                  └── 📂 01_Prepare_for_Taxes/
-> │                    ├── 📄 01_engagement-letter.pdf
-> │                    ├── 📄 02_trial-balance.pdf
-> │                    ├── 📄 03_adjusting-entries.pdf
-> │                    ├── 📄 04_tax-return-prep.pdf
-> │                    ├── 📄 05_tax-provision.pdf
-> │                    ├── 📄 06_financial-statements.pdf
-> │                    ├── 📄 07_client-approval-docs.pdf
-> │                    ├── 📄 _01_Prepare_for_Taxes.md
-> │                  └── 📂 02_Document_Review/
-> │                    ├── 📄 01_approved-documents.pdf
-> │                    ├── 📄 02_document-reviews.pdf
-> │                    ├── 📄 _02_Document_Review.md
-> │                  └── 📂 03_Tax_Mapping/
-> │                    ├── 📄 01_tax-mapping.pdf
-> │                    ├── 📄 02_adjustments-summary.pdf
-> │                    ├── 📄 _03_Tax_Mapping.md
-> │                  └── 📂 04_Filing_and_Supporting_Documents/
-> │                    ├── 📄 01_filed-1040.pdf
-> │                    ├── 📄 02_filed-schedule-c.pdf
-> │                    ├── 📄 03_supporting-documents.pdf
-> │                    ├── 📄 _04_Filing_and_Supporting_Documents.md
-> │                  ├── 📄 10_1040_fed-return.pdf
-> │                  ├── 📄 20_schedule-c.pdf
-> │                  ├── 📄 30_tax-workpapers.pdf
-> │                  ├── 📄 _2023.md
-> │                └── 📂 2024/
-> │                  ├── 📄 10_1040_fed-return.pdf
-> │                  ├── 📄 20_schedule-c.pdf
-> │                  ├── 📄 30_tax-workpapers.pdf
-> │                  ├── 📄 _2024.md
-> │                ├── 📄 _04.20.20_Returns-and-Filings.md
-> │              └── 📂 04.20.30_Tax-Binders/
-> │                └── 📂 2021_Filings/
-> │                  ├── 📄 INH_Tax-return-2021_ITIN Application.pdf
-> │                  ├── 📄 _2021_Filings.md
-> │                └── 📂 2022_Filings/
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 30_Adjusting/
-> │                    ├── 📄 _30_Adjusting.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 40_Credits/
-> │                    ├── 📄 _40_Credits.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 50_Contractors/
-> │                    ├── 📄 Print 1099 Information Sheet.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
-> │                    ├── 📄 _50_Contractors.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                    └── 📂 payroll-contractors/
-> │                      ├── 📄 _payroll-contractors.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                  └── 📂 60_Banking/
-> │                    ├── 📄 1.pdf
-> │                    ├── 📄 10.pdf
-> │                    ├── 📄 11.pdf
-> │                    ├── 📄 12.pdf
-> │                    ├── 📄 2.pdf
-> │                    ├── 📄 251.pdf
-> │                    ├── 📄 252.pdf
-> │                    ├── 📄 253.pdf
-> │                    ├── 📄 254.pdf
-> │                    ├── 📄 255.pdf
-> │                    ├── 📄 256.pdf
-> │                    ├── 📄 257.pdf
-> │                    ├── 📄 258.pdf
-> │                    ├── 📄 3.pdf
-> │                    ├── 📄 4.pdf
-> │                    ├── 📄 5.pdf
-> │                    ├── 📄 6.pdf
-> │                    ├── 📄 7.pdf
-> │                    ├── 📄 8.pdf
-> │                    ├── 📄 9.pdf
-> │                    ├── 📄 _60_Banking.md
-> │                    ├── 📄 _index.md
-> │                    └── 📂 banking/
-> │                      ├── 📄 _banking.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                    ├── 📄 index.html
-> │                  └── 📂 70_Payments/
-> │                    ├── 📄 _70_Payments.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 99_Prep/
-> │                    ├── 📄 2022-Tax Binder.pdf
-> │                    ├── 📄 60.2022_builtbyrays.pdf
-> │                    ├── 📄 _99_Prep.md
-> │                    ├── 📄 _index.md
-> │                  ├── 📄 INH_Tax-return-2022.pdf
-> │                  ├── 📄 _2022_Filings.md
-> │                └── 📂 2023_Filings/
-> │                  └── 📂 00_Returns/
-> │                    ├── 📄 1040x_signature_page.pdf
-> │                    ├── 📄 _00_Returns.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 bbr_TaxReturn.20250930T915949Z (1).pdf
-> │                  └── 📂 10_Income/
-> │                    ├── 📄 _10_Income.md
-> │                    ├── 📄 _index.md
-> │                    └── 📂 invoices/
-> │                      ├── 📄 _invoices.md
-> │                      ├── 📄 sample-invoice.json
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 30_Adjusting/
-> │                    ├── 📄 _30_Adjusting.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 40_Credits/
-> │                    ├── 📄 _40_Credits.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 50_Contractors/
-> │                    ├── 📄 Print 1099 Information Sheet.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
-> │                    ├── 📄 _50_Contractors.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                    └── 📂 payroll-contractors/
-> │                      ├── 📄 _payroll-contractors.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                  └── 📂 60_Banking/
-> │                    ├── 📄 1.pdf
-> │                    ├── 📄 10.pdf
-> │                    ├── 📄 11.pdf
-> │                    ├── 📄 12.pdf
-> │                    ├── 📄 2.pdf
-> │                    ├── 📄 251.pdf
-> │                    ├── 📄 252.pdf
-> │                    ├── 📄 253.pdf
-> │                    ├── 📄 254.pdf
-> │                    ├── 📄 255.pdf
-> │                    ├── 📄 256.pdf
-> │                    ├── 📄 257.pdf
-> │                    ├── 📄 258.pdf
-> │                    ├── 📄 3.pdf
-> │                    ├── 📄 4.pdf
-> │                    ├── 📄 5.pdf
-> │                    ├── 📄 6.pdf
-> │                    ├── 📄 7.pdf
-> │                    ├── 📄 8.pdf
-> │                    ├── 📄 9.pdf
-> │                    ├── 📄 _60_Banking.md
-> │                    ├── 📄 _index.md
-> │                    └── 📂 banking/
-> │                      ├── 📄 _banking.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                    ├── 📄 index.html
-> │                  └── 📂 70_Payments/
-> │                    ├── 📄 _70_Payments.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 99_Prep/
-> │                    ├── 📄 09302025_RAYS CONSTRUCTION LLC Profit &Loss January through Dece.pdf
-> │                    ├── 📄 2023-Tax Binder.pdf
-> │                    ├── 📄 BasicCompanyFinancials Copy.pdf
-> │                    ├── 📄 ExpandedCompanyFinancials.pdf
-> │                    ├── 📄 _99_Prep.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 bbr-tax-scedule-2023.pdf
-> │                    ├── 📄 e2187d81-51f2-47ae-bc8a-7872f3635794.pdf
-> │                  └── 📂 Extract Rays-Construction-LLC/
-> │                    ├── 📄 Extract[1].pdf
-> │                    ├── 📄 Extract[2].pdf
-> │                    ├── 📄 Extract[3].pdf
-> │                    ├── 📄 Extract[4].pdf
-> │                    ├── 📄 Extract[5].pdf
-> │                    ├── 📄 Extract[6].pdf
-> │                    ├── 📄 Extract[7].pdf
-> │                    ├── 📄 Extract[8].pdf
-> │                    ├── 📄 Extract[9].pdf
-> │                    ├── 📄 _Extract Rays-Construction-LLC.md
-> │                  ├── 📄 _2023_Filings.md
-> │                  ├── 📄 _index.md
-> │                └── 📂 2024_Filings/
-> │                  └── 📂 10_Income/
-> │                    ├── 📄 _10_Income.md
-> │                    ├── 📄 _index.md
-> │                    └── 📂 invoices/
-> │                      ├── 📄 _invoices.md
-> │                      ├── 📄 sample-invoice.json
-> │                  ├── 📄 2024-Tax Binder.pdf
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 30_Adjusting/
-> │                    ├── 📄 _30_Adjusting.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 40_Credits/
-> │                    ├── 📄 _40_Credits.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 50_Contractors/
-> │                    ├── 📄 Print 1099 Information Sheet.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
-> │                    ├── 📄 _50_Contractors.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                    └── 📂 payroll-contractors/
-> │                      ├── 📄 _payroll-contractors.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                  └── 📂 60_Banking/
-> │                    ├── 📄 1.pdf
-> │                    ├── 📄 10.pdf
-> │                    ├── 📄 11.pdf
-> │                    ├── 📄 12.pdf
-> │                    ├── 📄 2.pdf
-> │                    ├── 📄 251.pdf
-> │                    ├── 📄 252.pdf
-> │                    ├── 📄 253.pdf
-> │                    ├── 📄 254.pdf
-> │                    ├── 📄 255.pdf
-> │                    ├── 📄 256.pdf
-> │                    ├── 📄 257.pdf
-> │                    ├── 📄 258.pdf
-> │                    ├── 📄 3.pdf
-> │                    ├── 📄 4.pdf
-> │                    ├── 📄 5.pdf
-> │                    ├── 📄 6.pdf
-> │                    ├── 📄 7.pdf
-> │                    ├── 📄 8.pdf
-> │                    ├── 📄 9.pdf
-> │                    ├── 📄 _60_Banking.md
-> │                    ├── 📄 _index.md
-> │                    └── 📂 banking/
-> │                      ├── 📄 _banking.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                    ├── 📄 index.html
-> │                  └── 📂 70_Payments/
-> │                    ├── 📄 _70_Payments.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                    ├── 📄 _index.md
-> │                  ├── 📄 _2024_Filings.md
-> │                  ├── 📄 _index.md
-> │                └── 📂 2025_Filings/
-> │                  └── 📂 10_Income/
-> │                    ├── 📄 _10_Income.md
-> │                    └── 📂 invoices/
-> │                      ├── 📄 _invoices.md
-> │                      ├── 📄 sample-invoice.json
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 50_Contractors/
-> │                    ├── 📄 Print 1099 Information Sheet.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
-> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
-> │                    ├── 📄 _50_Contractors.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                    └── 📂 payroll-contractors/
-> │                      ├── 📄 _payroll-contractors.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                  └── 📂 60_Banking/
-> │                    ├── 📄 1.pdf
-> │                    ├── 📄 10.pdf
-> │                    ├── 📄 11.pdf
-> │                    ├── 📄 12.pdf
-> │                    ├── 📄 2.pdf
-> │                    ├── 📄 251.pdf
-> │                    ├── 📄 252.pdf
-> │                    ├── 📄 253.pdf
-> │                    ├── 📄 254.pdf
-> │                    ├── 📄 255.pdf
-> │                    ├── 📄 256.pdf
-> │                    ├── 📄 257.pdf
-> │                    ├── 📄 258.pdf
-> │                    ├── 📄 3.pdf
-> │                    ├── 📄 4.pdf
-> │                    ├── 📄 5.pdf
-> │                    ├── 📄 6.pdf
-> │                    ├── 📄 7.pdf
-> │                    ├── 📄 8.pdf
-> │                    ├── 📄 9.pdf
-> │                    ├── 📄 _60_Banking.md
-> │                    └── 📂 banking/
-> │                      ├── 📄 _banking.md
-> │                      └── 📂 _versions/
-> │                        ├── 📄 __versions.md
-> │                        ├── 📄 index.html
-> │                        ├── 📄 index.md-2.html
-> │                        ├── 📄 index.md.html
-> │                      ├── 📄 index.html
-> │                      ├── 📄 index.md
-> │                      ├── 📄 index.md.bak
-> │                      ├── 📄 index.md.bak2
-> │                    ├── 📄 index.html
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                  ├── 📄 _2025_Filings.md
-> │                  ├── 📄 _index.md
-> │                ├── 📄 _04.20.30_Tax-Binders.md
-> │              └── 📂 10_Tax-Planning/
-> │                ├── 📄 1040_Federal_Return.md
-> │                ├── 📄 Schedule_C.md
-> │                ├── 📄 _10_Tax-Planning.md
-> │              └── 📂 20_Estimated-Payments/
-> │                ├── 📄 _20_Estimated-Payments.md
-> │                ├── 📄 index.md
-> │              └── 📂 30_Tax-Binders/
-> │                └── 📂 2021_Filings/
-> │                  ├── 📄 INH_Tax-return-2021_ITIN Application.pdf
-> │                  ├── 📄 _2021_Filings.md
-> │                └── 📂 2022_Filings/
-> │                  └── 📂 00_Returns/
-> │                    ├── 📄 INH_Tax-return-2022.pdf
-> │                    ├── 📄 _00_Returns.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 30_Adjusting/
-> │                    ├── 📄 _30_Adjusting.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 40_Credits/
-> │                    ├── 📄 _40_Credits.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 50_Contractors/
-> │                    └── 📂 1099-checklist/
-> │                      ├── 📄 _1099-checklist.md
-> │                      ├── 📄 index.md
-> │                    ├── 📄 _50_Contractors.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 60_Banking/
-> │                    ├── 📄 _60_Banking.md
-> │                    ├── 📄 _index.md
-> │                    ├── 📄 index.html
-> │                  └── 📂 70_Payments/
-> │                    ├── 📄 _70_Payments.md
-> │                    ├── 📄 _index.md
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                    ├── 📄 _index.md
-> │                  ├── 📄 _2022_Filings.md
-> │                └── 📂 2023_Filings/
-> │                  └── 📂 00_Returns/
-> │                    ├── 📄 _00_Returns.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 10_Income/
-> │                    ├── 📄 _10_Income.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 20_Deductions/
-> │                    ├── 📄 _20_Deductions.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 30_Adjusting/
-> │                    ├── 📄 _30_Adjusting.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 40_Credits/
-> │                    ├── 📄 _40_Credits.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 70_Payments/
-> │                    ├── 📄 _70_Payments.md
-> │                    ├── 📄 index.md
-> │                  └── 📂 90_Receipts/
-> │                    ├── 📄 _90_Receipts.md
-> │                    ├── 📄 index.md
-> │                  ├── 📄 _2023_Filings.md
-> │                  ├── 📄 index.md
-> │                ├── 📄 _30_Tax-Binders.md
-> │                ├── 📄 index.md
-> │              ├── 📄 Munoz_Corp_DOR_Letter.docx
-> │              ├── 📄 _04.10_TAX.md
-> │              ├── 📄 _04.20_Tax.md
-> │              ├── 📄 _10_TAX.md
-> │              ├── 📄 _Tax_Returns.md
-> │              ├── 📄 _tax.md
-> │            ├── 📄 _Finance_and_Legal.md
-> │          └── 📂 Personal/
-> │            └── 📂 Education_and_Certificates/
-> │              ├── 📄 _Education_and_Certificates.md
-> │            └── 📂 Health_and_Wellness/
-> │              ├── 📄 _Health_and_Wellness.md
-> │            └── 📂 IDs_and_Documents/
-> │              ├── 📄 _IDs_and_Documents.md
-> │            └── 📂 Immigration_and_Travel/
-> │              └── 📂 00_Drafts_and_Strategy/
-> │                ├── 📄 2025-09-01_QiAlly_Leg_Strat_v01_final.pdf
-> │                ├── 📄 2025-09-05_QiAlly_Leg_Timeline_v01_final.pdf
-> │                ├── 📄 2025-09-10_QiAlly_Leg_Draft_v01_Aff_draft.pdf
-> │                ├── 📄 2025-09-15_QiAlly_Leg_Timeline_v01_review_final.pdf
-> │                ├── 📄 _00_Drafts_and_Strategy.md
-> │              └── 📂 10_Bio_and_IDs/
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_BC.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_ID.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_MC.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_PC.pdf
-> │                ├── 📄 _10_Bio_and_IDs.md
-> │              └── 📂 20_Employment/
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_OL.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_PS.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_W2.pdf
-> │                ├── 📄 _20_Employment.md
-> │              └── 📂 30_Financial/
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_BS.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_EIS.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_Tax.pdf
-> │                ├── 📄 _30_Financial.md
-> │              └── 📂 40_Other_Evidence/
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_LOS.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_PR.pdf
-> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_UB.pdf
-> │                ├── 📄 _40_Other_Evidence.md
-> │              └── 📂 50_Form_Filings/
-> │                └── 📂 10_I-589 (Asylum)/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_Aff_v01_draft.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_CL_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_EOS.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_SD.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_form.pdf
-> │                  ├── 📄 _10_I-589 (Asylum).md
-> │                └── 📂 20_I-360 (Special Immigrant)/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_CL_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_EOSvc.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_PS_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_form.pdf
-> │                  ├── 📄 _20_I-360 (Special Immigrant).md
-> │                └── 📂 30_I-130 (Family Sponsorship)/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_CL_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_EOR_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_SP.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_form.pdf
-> │                  ├── 📄 _30_I-130 (Family Sponsorship).md
-> │                └── 📂 40_I-765 (Employment Authorization)/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_CL_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_ED.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_EOS.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_form.pdf
-> │                  ├── 📄 _40_I-765 (Employment Authorization).md
-> │                └── 📂 50_I-485 (Adjustment of Status)/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_Bio.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_CL_v01_final.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_EOS.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_ME.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_form.pdf
-> │                  ├── 📄 _50_I-485 (Adjustment of Status).md
-> │                └── 📂 60_Change_of_Address/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_COA_form.pdf
-> │                  ├── 📄 _60_Change_of_Address.md
-> │                └── 📂 70_Indiana_BMV_License/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_BMV_Apps.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_BMV_Docs.pdf
-> │                  ├── 📄 _70_Indiana_BMV_License.md
-> │                └── 📂 80_Social_Security_Applications/
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_Soc-Sec_Apps.pdf
-> │                  ├── 📄 2025-09-28_QiAlly_Leg_Soc-Sec_Docs.pdf
-> │                  ├── 📄 _80_Social_Security_Applications.md
-> │                ├── 📄 _50_Form_Filings.md
-> │              ├── 📄 _Immigration.md
-> │              ├── 📄 _Immigration_and_Travel.md
-> │            ├── 📄 Personal_Notes.md
-> │            ├── 📄 _Personal.md
-> │          └── 📂 Resources/
-> │            └── 📂 Brand/
-> │              └── 📂 10_Brand-Guide/
-> │                ├── 📄 03.50.10.10_Branding_Guide.md
-> │                ├── 📄 _10_Brand-Guide.md
-> │              └── 📂 20_Logos/
-> │                ├── 📄 _20_Logos.md
-> │                ├── 📄 logoround.png
-> │                ├── 📄 logosquare.png
-> │                ├── 📄 logowide.png
-> │              └── 📂 30_Marketing/
-> │                └── 📂 10_Strategy/
-> │                  ├── 📄 _10_Strategy.md
-> │                  ├── 📄 index.md
-> │                └── 📂 20_Campaigns/
-> │                  ├── 📄 _20_Campaigns.md
-> │                  ├── 📄 index.md
-> │                └── 📂 30_Assets/
-> │                  ├── 📄 _30_Assets.md
-> │                  ├── 📄 index.md
-> │                └── 📂 40_Socials/
-> │                  ├── 📄 _40_Socials.md
-> │                  ├── 📄 index.md
-> │                ├── 📄 _30_Marketing.md
-> │                ├── 📄 index.md
-> │              └── 📂 40_Website/
-> │                ├── 📄 03.50.40.10_Website_Assets.md
-> │                ├── 📄 _40_Website.md
-> │              ├── 📄 _50_Brand.md
-> │            └── 📂 Checklists_and_Guides/
-> │              ├── 📄 _Checklists_and_Guides.md
-> │            └── 📂 Media_and_Visuals/
-> │              ├── 📄 _Media_and_Visuals.md
-> │            └── 📂 Misc_References/
-> │              ├── 📄 _Misc_References.md
-> │            └── 📂 Templates_and_Forms/
-> │              ├── 📄 05.00.10_innova_hire_direct_hire_agreement.md
-> │              ├── 📄 05.30.70_innova_hire_direct_hire_agreement.md
-> │              ├── 📄 05.40.10_msa.md
-> │              ├── 📄 10_info-release-template.md
-> │              ├── 📄 10_msa.md
-> │              └── 📂 Authorizations/
-> │                ├── 📄 05.60.10_Info-Release-Template.md
-> │                ├── 📄 Info-Release-Template.md
-> │                ├── 📄 _05.60_Authorizations (2).md
-> │                ├── 📄 _05.60_Authorizations.md
-> │                ├── 📄 _index (2).md
-> │                ├── 📄 _index.md
-> │              ├── 📄 Innova Hire Direct Hire Agreement.docx
-> │              ├── 📄 Proposal - Proposal For Direct Hire Staffing Services.pptx
-> │              ├── 📄 _Templates_and_Forms.md
-> │              ├── 📄 innova_hire_direct_hire_agreement.md
-> │            ├── 📄 _Resources.md
-> │          ├── 📄 _03_Client.md
-> │        └── 📂 guides/
-> │          ├── 📄 example.md
-> │        ├── 📄 index.mdx
-> │        └── 📂 reference/
-> │          ├── 📄 example.md
-> │    └── 📂 layouts/
-> │      ├── 📄 ClientLayout.astro
-> │      ├── 📄 _layouts.md
-> │    └── 📂 pages/
-> │      └── 📂 [client]/
-> │        ├── 📄 _[client].md
-> │        ├── 📄 index.astro
-> │      ├── 📄 _pages.md
-> │  ├── 📄 tsconfig.json
-> │  ├── 📄 wrangler.toml
-> └── 📄 wrangler.toml
+> ```markdown
+
+> . 📂 4.10_Innovahire-os
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> ├── 📄 TITLE_VALIDATION_SETUP.md
+
+> ├── 📄 innovahire.net.txt
+
+> └── 📂 miniapps/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 _miniapps.md
+
+> │  └── 📂 binder/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 _binder.md
+
+> │  └── 📂 navigator-3d/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 _navigator-3d.md
+
+> │  └── 📂 timeline/
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 _timeline.md
+
+> │  └── 📂 tools/
+
+> │    └── 📂 Qi-Mind/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 directory-map.html
+
+> │      ├── 📄 navigator-3d.html
+
+> │      ├── 📄 navigator.html
+
+> │      ├── 📄 run-navigator.bat
+
+> │      ├── 📄 run-navigator.ps1
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 directory_structure.json
+
+> │    ├── 📄 directory_walker.py
+
+> │    ├── 📄 generate_3d_data.py
+
+> │    ├── 📄 navigator.html
+
+> │    ├── 📄 run_3d_mindmap.bat
+
+> │    ├── 📄 run_3d_real.bat
+
+> │    ├── 📄 run_3d_simple.bat
+
+> └── 📂 scripts/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 _scripts.md
+
+> │  ├── 📄 analyze-astro-structure.py
+
+> │  ├── 📄 check-md-titles.py
+
+> └── 📂 site-kb/
+
+> │  ├── 📄 ASTRO_STRUCTURE_GUIDE.md
+
+> │  ├── 📄 INDEX_FIXES_SUMMARY.md
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 STRUCTURE_ANALYSIS.md
+
+> │  ├── 📄 _site-kb.md
+
+> │  ├── 📄 astro.config.mjs
+
+> │  ├── 📄 fix-titles-log.json
+
+> │  ├── 📄 package.json
+
+> │  └── 📂 public/
+
+> │    └── 📂 admin/
+
+> │      ├── 📄 _admin.md
+
+> │      ├── 📄 config.yml
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 favicon.svg
+
+> │  └── 📂 scripts/
+
+> │    ├── 📄 fix-missing-titles.ps1
+
+> │    ├── 📄 undo-fix-titles.ps1
+
+> │  └── 📂 src/
+
+> │    └── 📂 assets/
+
+> │      ├── 📄 houston.webp
+
+> │    └── 📂 components/
+
+> │      ├── 📄 ChatPanel.tsx
+
+> │      ├── 📄 ClientHeader.astro
+
+> │      ├── 📄 Sidebar.astro
+
+> │      ├── 📄 _components.md
+
+> │    └── 📂 content/
+
+> │    ├── 📄 content.config.ts
+
+> │      └── 📂 clients/
+
+> │        ├── 📄 _clients.md
+
+> │        ├── 📄 innova-hire.md
+
+> │      └── 📂 docs/
+
+> │        └── 📂 01_EOS/
+
+> │          ├── 📄 10_Welcome.md
+
+> │          ├── 📄 20_About_QiAlly.md
+
+> │          ├── 📄 30_Value_and_Scope.md
+
+> │          ├── 📄 40_Policies_and_Procedures.md
+
+> │          ├── 📄 50_Onboarding.md
+
+> │          ├── 📄 60_How_To.md
+
+> │          ├── 📄 70_FAQ_and_Glossary.md
+
+> │          ├── 📄 _01_EOS.md
+
+> │        └── 📂 02_Engagements/
+
+> │          └── 📂 Contracts_and_Agreements/
+
+> │            ├── 📄 Drafts_and_Templates.md
+
+> │            ├── 📄 Signed_Contracts.md
+
+> │            ├── 📄 _Contracts_and_Agreements.md
+
+> │          └── 📂 Proposals_and_Offers/
+
+> │            └── 📂 2025-11-01_InnovaHire_Integrated_Services/
+
+> │              ├── 📄 111.md
+
+> │              ├── 📄 2025-11-08_Plan-of-Action.md
+
+> │              ├── 📄 2025-11-08_Plan-of-action.html
+
+> │              └── 📂 Bookkeeping/
+
+> │                ├── 📄 _Bookkeeping.md
+
+> │              ├── 📄 _InnovaHire_Integrated_Services.md
+
+> │            ├── 📄 Active_Proposals.md
+
+> │            ├── 📄 Archived_Proposals.md
+
+> │            ├── 📄 _Proposals_and_Offers.md
+
+> │          └── 📂 Work_Summaries/
+
+> │            └── 📂 2025-09-01_innovahire-on-qially/
+
+> │              ├── 📄 LICENSE
+
+> │              ├── 📄 README.md
+
+> │              ├── 📄 _innovahire-on-qially.md
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 2025-10-01_Microsoft-Setup/
+
+> │              ├── 📄 07.10.10.10_Microsoft-Business-365.md
+
+> │              ├── 📄 INH-04.20A_Microsoft-Business-365.md
+
+> │              ├── 📄 _INH-04.20_Microsoft-Setup.md
+
+> │            └── 📂 2025-10-02_Time-Keeper/
+
+> │              ├── 📄 answer.pptx
+
+> │            └── 📂 2025-11-01_MIBOR_Member_Directory/
+
+> │              └── 📂 Iteration-One/
+
+> │                ├── 📄 SOW_Real_Estate_Agent_Search.md
+
+> │                ├── 📄 _Iteration-One.md
+
+> │                ├── 📄 _inh_grab-home-text.md
+
+> │                ├── 📄 add-agents.mjs
+
+> │                ├── 📄 add-emails-and-dedup.mjs
+
+> │                └── 📂 alternative_sources/
+
+> │                  ├── 📄 _alternative_sources.md
+
+> │                  ├── 📄 source_7_www_kw_com.html
+
+> │                ├── 📄 billing_breakdown.md
+
+> │                ├── 📄 bypass-homes-scraper.mjs
+
+> │                └── 📂 client_package/
+
+> │                  ├── 📄 README.md
+
+> │                  ├── 📄 _client_package.md
+
+> │                  ├── 📄 indianapolis_agents.csv
+
+> │                  ├── 📄 indianapolis_agents_viewer.html
+
+> │                ├── 📄 create-viewer.mjs
+
+> │                ├── 📄 debug-full-page.mjs
+
+> │                ├── 📄 debug-pagination.mjs
+
+> │                ├── 📄 dedup-summary.mjs
+
+> │                ├── 📄 dedup-with-emails.mjs
+
+> │                ├── 📄 final-summary.mjs
+
+> │                ├── 📄 final_summary.md
+
+> │                ├── 📄 fix-viewer.mjs
+
+> │                ├── 📄 grab-homes-text.mjs
+
+> │                └── 📂 homes_all_pages/
+
+> │                  ├── 📄 _homes_all_pages.md
+
+> │                  ├── 📄 all_pages_combined.txt
+
+> │                  ├── 📄 page_1.txt
+
+> │                └── 📂 homes_html/
+
+> │                  ├── 📄 _homes_html.md
+
+> │                  ├── 📄 homes_main_content.html
+
+> │                  ├── 📄 homes_page.html
+
+> │                └── 📂 homes_text_dump/
+
+> │                  ├── 📄 _homes_text_dump.md
+
+> │                  ├── 📄 raw_text_all.txt
+
+> │                  ├── 📄 raw_text_page_1.txt
+
+> │                ├── 📄 hybrid_puppeteer_scraper.js
+
+> │                └── 📂 indianapolis_agents_client_package/
+
+> │                  ├── 📄 README.md
+
+> │                  ├── 📄 SOW_Real_Estate_Agent_Search.md
+
+> │                  ├── 📄 _indianapolis_agents_client_package.md
+
+> │                  ├── 📄 final_summary.md
+
+> │                  ├── 📄 indianapolis_agents_v1.csv
+
+> │                  ├── 📄 indianapolis_agents_viewer.html
+
+> │                ├── 📄 indianapolis_agents_v1.csv
+
+> │                └── 📂 indianapolis_agents_viewer/
+
+> │                ├── 📄 indianapolis_agents_viewer.html
+
+> │                  ├── 📄 _indianapolis_agents_viewer.md
+
+> │                  ├── 📄 indianapolis_agents_viewer.html
+
+> │                ├── 📄 kw_agents.csv
+
+> │                ├── 📄 package.json
+
+> │                ├── 📄 parse-kw-agents.mjs
+
+> │                ├── 📄 parse-yellowpages.mjs
+
+> │                ├── 📄 sample-yellowpages.csv
+
+> │                ├── 📄 save-homes-html.mjs
+
+> │                ├── 📄 scrape-allpages-real-estate.mjs
+
+> │                ├── 📄 scrape-homes-all-pages.mjs
+
+> │                ├── 📄 test-different-urls.mjs
+
+> │                ├── 📄 test-page-2.mjs
+
+> │                ├── 📄 try-alternative-sources.mjs
+
+> │                ├── 📄 yellowpages-summary.mjs
+
+> │                ├── 📄 yellowpages-to-csv.mjs
+
+> │                ├── 📄 yellowpages.md
+
+> │                ├── 📄 yellowpages_real_estate.csv
+
+> │                ├── 📄 yellowpages_real_estate_deduplicated.csv
+
+> │                ├── 📄 yellowpages_real_estate_updated.csv
+
+> │              └── 📂 Iteration-Two/
+
+> │                ├── 📄 _Iteration-Two.md
+
+> │              ├── 📄 QiAlly Document Services — MIBOR Member Directory Capture & Automation.md
+
+> │              ├── 📄 _MIBOR_Member_Directory.md
+
+> │              ├── 📄 _QiScripts.md
+
+> │            ├── 📄 Deliverables_and_Results.md
+
+> │            ├── 📄 Monthly_Summary.md
+
+> │            ├── 📄 _Work_Summaries.md
+
+> │          ├── 📄 _02_Engagements.md
+
+> │        └── 📂 03_Client/
+
+> │          └── 📂 Business_Ops/
+
+> │            └── 📂 1_Company_Info/
+
+> │              ├── 📄 _1_Company_Info.md
+
+> │              ├── 📄 _Company_Info.md
+
+> │            └── 📂 2_Procedures_and_SOPs/
+
+> │              ├── 📄 10_incident-001.md
+
+> │              ├── 📄 20_release.md
+
+> │              ├── 📄 _2_Procedures_and_SOPs.md
+
+> │              ├── 📄 _Procedures_and_SOPs.md
+
+> │            └── 📂 3_Compliance_and_Regulations/
+
+> │              ├── 📄 _Compliance_and_Regulations.md
+
+> │            ├── 📄 Business_Notes.md
+
+> │            ├── 📄 _Business_and_Operations.md
+
+> │          └── 📂 Finance_and_Legal/
+
+> │            └── 📂 Accounting/
+
+> │              └── 📂 Assets/
+
+> │                └── 📂 04.10.40.10_Real-Estate/
+
+> │                  ├── 📄 10_deed.pdf
+
+> │                  ├── 📄 20_property-tax.pdf
+
+> │                  ├── 📄 _04.10.40.10_Real-Estate.md
+
+> │                └── 📂 04.10.40.20_Investments/
+
+> │                  ├── 📄 10_2024_Investment-Statements.pdf
+
+> │                  ├── 📄 _04.10.40.20_Investments.md
+
+> │                ├── 📄 _Assets.md
+
+> │                ├── 📄 _index.md
+
+> │              └── 📂 Banking/
+
+> │                ├── 📄 _Banking.md
+
+> │                ├── 📄 _index.md
+
+> │                └── 📂 check-images/
+
+> │                  ├── 📄 _check-images.md
+
+> │                  ├── 📄 _index.md
+
+> │              └── 📂 Expenses/
+
+> │                ├── 📄 _Expenses.md
+
+> │                ├── 📄 _index.md
+
+> │              └── 📂 Income/
+
+> │                └── 📂 04.10.30.10_Salary/
+
+> │                  ├── 📄 10_pay-stubs.pdf
+
+> │                  ├── 📄 20_w2-forms.pdf
+
+> │                  ├── 📄 _04.10.30.10_Salary.md
+
+> │                └── 📂 04.10.30.20_Business/
+
+> │                  ├── 📄 10_invoices.pdf
+
+> │                  ├── 📄 20_expenses.pdf
+
+> │                  ├── 📄 _04.10.30.20_Business.md
+
+> │                ├── 📄 _Income.md
+
+> │                ├── 📄 _index.md
+
+> │              └── 📂 Liabilities/
+
+> │                └── 📂 04.10.50.10_Loans/
+
+> │                  ├── 📄 10_loan-agreement.pdf
+
+> │                  ├── 📄 _04.10.50.10_Loans.md
+
+> │                └── 📂 04.10.50.20_Credit-Cards/
+
+> │                  ├── 📄 10_credit-statement.pdf
+
+> │                  ├── 📄 _04.10.50.20_Credit-Cards.md
+
+> │                ├── 📄 _Liabilities.md
+
+> │                ├── 📄 _index.md
+
+> │              └── 📂 Process/
+
+> │                ├── 📄 04.20.20.10_Bookkeeping_Procedures.md
+
+> │                ├── 📄 06.00_Bookkeeping_Procedures.md
+
+> │                ├── 📄 _Process.md
+
+> │              └── 📂 QuickBooks/
+
+> │                ├── 📄 BankRules.csv
+
+> │                ├── 📄 BankRules.gsheet
+
+> │                ├── 📄 BankRules.xls
+
+> │                ├── 📄 BankRules_QuickBooks.csv
+
+> │                ├── 📄 BankRules_QuickBooks.gsheet
+
+> │                ├── 📄 InnovaHire LLC_Account List.csv
+
+> │                ├── 📄 InnovaHire LLC_Account List.xlsx
+
+> │                ├── 📄 InnovaHire_LLC_Bank_Feed_Rules_FINAL.csv
+
+> │                ├── 📄 InnovaHire_LLC_Bank_Feed_Rules_FINAL.xls
+
+> │                ├── 📄 _InnovaHireQuickBooks.md
+
+> │                ├── 📄 _QuickBooks.md
+
+> │              └── 📂 Receipts/
+
+> │                ├── 📄 _Receipts_and_Invoices.md
+
+> │              ├── 📄 _Accounting.md
+
+> │            └── 📂 Billing/
+
+> │              └── 📂 04.30.40_Expenses/
+
+> │                ├── 📄 10_monthly-expenses.pdf
+
+> │                ├── 📄 20_receipts-summary.pdf
+
+> │                ├── 📄 _04.30.40_Expenses.md
+
+> │              ├── 📄 _04.30_Billing-and-Payments.md
+
+> │            └── 📂 Contracts_and_Policies/
+
+> │              ├── 📄 _Contracts_and_Policies.md
+
+> │            ├── 📄 Finance_Notes.md
+
+> │            └── 📂 Insurance/
+
+> │              ├── 📄 Insurance_Audits.md
+
+> │              ├── 📄 _Insurance.md
+
+> │            ├── 📄 README.md
+
+> │            └── 📂 Reports_and_Statements/
+
+> │              └── 📂 04.40.40_Budgets-Forcasts/
+
+> │                ├── 📄 10_2025-q4-budget.pdf
+
+> │                ├── 📄 _04.40.40_Budgets-Forcasts.md
+
+> │              ├── 📄 04.80.10_Financial_Reports.md
+
+> │              └── 📂 04.80.50_Budgets-Forcasts/
+
+> │                ├── 📄 2025-Q4-budget (2).md
+
+> │                ├── 📄 2025-Q4-budget.md
+
+> │                ├── 📄 _04.80.50_Budgets-Forcasts (2).md
+
+> │                ├── 📄 _04.80.50_Budgets-Forcasts.md
+
+> │              ├── 📄 H.030_Financial_Reports.md
+
+> │              ├── 📄 _04.40_Reports.md
+
+> │              ├── 📄 _04.80_Reports.md
+
+> │              ├── 📄 _80_Reports.md
+
+> │              ├── 📄 _Reports_and_Statements.md
+
+> │            └── 📂 Tax_Returns/
+
+> │              └── 📂 04.20.10_Tax-Planning/
+
+> │                ├── 📄 1040_Federal_Return.md
+
+> │                ├── 📄 H.02.00.10_Current_Year.md
+
+> │                ├── 📄 H.020.020_Prior_Years.md
+
+> │                ├── 📄 Schedule_C.md
+
+> │                ├── 📄 _04.20.10_Tax-Planning.md
+
+> │              └── 📂 04.20.20_Returns-and-Filings/
+
+> │                └── 📂 2023/
+
+> │                  └── 📂 01_Prepare_for_Taxes/
+
+> │                    ├── 📄 01_engagement-letter.pdf
+
+> │                    ├── 📄 02_trial-balance.pdf
+
+> │                    ├── 📄 03_adjusting-entries.pdf
+
+> │                    ├── 📄 04_tax-return-prep.pdf
+
+> │                    ├── 📄 05_tax-provision.pdf
+
+> │                    ├── 📄 06_financial-statements.pdf
+
+> │                    ├── 📄 07_client-approval-docs.pdf
+
+> │                    ├── 📄 _01_Prepare_for_Taxes.md
+
+> │                  └── 📂 02_Document_Review/
+
+> │                    ├── 📄 01_approved-documents.pdf
+
+> │                    ├── 📄 02_document-reviews.pdf
+
+> │                    ├── 📄 _02_Document_Review.md
+
+> │                  └── 📂 03_Tax_Mapping/
+
+> │                    ├── 📄 01_tax-mapping.pdf
+
+> │                    ├── 📄 02_adjustments-summary.pdf
+
+> │                    ├── 📄 _03_Tax_Mapping.md
+
+> │                  └── 📂 04_Filing_and_Supporting_Documents/
+
+> │                    ├── 📄 01_filed-1040.pdf
+
+> │                    ├── 📄 02_filed-schedule-c.pdf
+
+> │                    ├── 📄 03_supporting-documents.pdf
+
+> │                    ├── 📄 _04_Filing_and_Supporting_Documents.md
+
+> │                  ├── 📄 10_1040_fed-return.pdf
+
+> │                  ├── 📄 20_schedule-c.pdf
+
+> │                  ├── 📄 30_tax-workpapers.pdf
+
+> │                  ├── 📄 _2023.md
+
+> │                └── 📂 2024/
+
+> │                  ├── 📄 10_1040_fed-return.pdf
+
+> │                  ├── 📄 20_schedule-c.pdf
+
+> │                  ├── 📄 30_tax-workpapers.pdf
+
+> │                  ├── 📄 _2024.md
+
+> │                ├── 📄 _04.20.20_Returns-and-Filings.md
+
+> │              └── 📂 04.20.30_Tax-Binders/
+
+> │                └── 📂 2021_Filings/
+
+> │                  ├── 📄 INH_Tax-return-2021_ITIN Application.pdf
+
+> │                  ├── 📄 _2021_Filings.md
+
+> │                └── 📂 2022_Filings/
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 30_Adjusting/
+
+> │                    ├── 📄 _30_Adjusting.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 40_Credits/
+
+> │                    ├── 📄 _40_Credits.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 50_Contractors/
+
+> │                    ├── 📄 Print 1099 Information Sheet.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
+
+> │                    ├── 📄 _50_Contractors.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 payroll-contractors/
+
+> │                      ├── 📄 _payroll-contractors.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                  └── 📂 60_Banking/
+
+> │                    ├── 📄 1.pdf
+
+> │                    ├── 📄 10.pdf
+
+> │                    ├── 📄 11.pdf
+
+> │                    ├── 📄 12.pdf
+
+> │                    ├── 📄 2.pdf
+
+> │                    ├── 📄 251.pdf
+
+> │                    ├── 📄 252.pdf
+
+> │                    ├── 📄 253.pdf
+
+> │                    ├── 📄 254.pdf
+
+> │                    ├── 📄 255.pdf
+
+> │                    ├── 📄 256.pdf
+
+> │                    ├── 📄 257.pdf
+
+> │                    ├── 📄 258.pdf
+
+> │                    ├── 📄 3.pdf
+
+> │                    ├── 📄 4.pdf
+
+> │                    ├── 📄 5.pdf
+
+> │                    ├── 📄 6.pdf
+
+> │                    ├── 📄 7.pdf
+
+> │                    ├── 📄 8.pdf
+
+> │                    ├── 📄 9.pdf
+
+> │                    ├── 📄 _60_Banking.md
+
+> │                    ├── 📄 _index.md
+
+> │                    └── 📂 banking/
+
+> │                      ├── 📄 _banking.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 70_Payments/
+
+> │                    ├── 📄 _70_Payments.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 99_Prep/
+
+> │                    ├── 📄 2022-Tax Binder.pdf
+
+> │                    ├── 📄 60.2022_builtbyrays.pdf
+
+> │                    ├── 📄 _99_Prep.md
+
+> │                    ├── 📄 _index.md
+
+> │                  ├── 📄 INH_Tax-return-2022.pdf
+
+> │                  ├── 📄 _2022_Filings.md
+
+> │                └── 📂 2023_Filings/
+
+> │                  └── 📂 00_Returns/
+
+> │                    ├── 📄 1040x_signature_page.pdf
+
+> │                    ├── 📄 _00_Returns.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 bbr_TaxReturn.20250930T915949Z (1).pdf
+
+> │                  └── 📂 10_Income/
+
+> │                    ├── 📄 _10_Income.md
+
+> │                    ├── 📄 _index.md
+
+> │                    └── 📂 invoices/
+
+> │                      ├── 📄 _invoices.md
+
+> │                      ├── 📄 sample-invoice.json
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 30_Adjusting/
+
+> │                    ├── 📄 _30_Adjusting.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 40_Credits/
+
+> │                    ├── 📄 _40_Credits.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 50_Contractors/
+
+> │                    ├── 📄 Print 1099 Information Sheet.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
+
+> │                    ├── 📄 _50_Contractors.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 payroll-contractors/
+
+> │                      ├── 📄 _payroll-contractors.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                  └── 📂 60_Banking/
+
+> │                    ├── 📄 1.pdf
+
+> │                    ├── 📄 10.pdf
+
+> │                    ├── 📄 11.pdf
+
+> │                    ├── 📄 12.pdf
+
+> │                    ├── 📄 2.pdf
+
+> │                    ├── 📄 251.pdf
+
+> │                    ├── 📄 252.pdf
+
+> │                    ├── 📄 253.pdf
+
+> │                    ├── 📄 254.pdf
+
+> │                    ├── 📄 255.pdf
+
+> │                    ├── 📄 256.pdf
+
+> │                    ├── 📄 257.pdf
+
+> │                    ├── 📄 258.pdf
+
+> │                    ├── 📄 3.pdf
+
+> │                    ├── 📄 4.pdf
+
+> │                    ├── 📄 5.pdf
+
+> │                    ├── 📄 6.pdf
+
+> │                    ├── 📄 7.pdf
+
+> │                    ├── 📄 8.pdf
+
+> │                    ├── 📄 9.pdf
+
+> │                    ├── 📄 _60_Banking.md
+
+> │                    ├── 📄 _index.md
+
+> │                    └── 📂 banking/
+
+> │                      ├── 📄 _banking.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 70_Payments/
+
+> │                    ├── 📄 _70_Payments.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 99_Prep/
+
+> │                    ├── 📄 09302025_RAYS CONSTRUCTION LLC Profit &Loss January through Dece.pdf
+
+> │                    ├── 📄 2023-Tax Binder.pdf
+
+> │                    ├── 📄 BasicCompanyFinancials Copy.pdf
+
+> │                    ├── 📄 ExpandedCompanyFinancials.pdf
+
+> │                    ├── 📄 _99_Prep.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 bbr-tax-scedule-2023.pdf
+
+> │                    ├── 📄 e2187d81-51f2-47ae-bc8a-7872f3635794.pdf
+
+> │                  └── 📂 Extract Rays-Construction-LLC/
+
+> │                    ├── 📄 Extract[1].pdf
+
+> │                    ├── 📄 Extract[2].pdf
+
+> │                    ├── 📄 Extract[3].pdf
+
+> │                    ├── 📄 Extract[4].pdf
+
+> │                    ├── 📄 Extract[5].pdf
+
+> │                    ├── 📄 Extract[6].pdf
+
+> │                    ├── 📄 Extract[7].pdf
+
+> │                    ├── 📄 Extract[8].pdf
+
+> │                    ├── 📄 Extract[9].pdf
+
+> │                    ├── 📄 _Extract Rays-Construction-LLC.md
+
+> │                  ├── 📄 _2023_Filings.md
+
+> │                  ├── 📄 _index.md
+
+> │                └── 📂 2024_Filings/
+
+> │                  └── 📂 10_Income/
+
+> │                    ├── 📄 _10_Income.md
+
+> │                    ├── 📄 _index.md
+
+> │                    └── 📂 invoices/
+
+> │                      ├── 📄 _invoices.md
+
+> │                      ├── 📄 sample-invoice.json
+
+> │                  ├── 📄 2024-Tax Binder.pdf
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 30_Adjusting/
+
+> │                    ├── 📄 _30_Adjusting.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 40_Credits/
+
+> │                    ├── 📄 _40_Credits.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 50_Contractors/
+
+> │                    ├── 📄 Print 1099 Information Sheet.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
+
+> │                    ├── 📄 _50_Contractors.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 payroll-contractors/
+
+> │                      ├── 📄 _payroll-contractors.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                  └── 📂 60_Banking/
+
+> │                    ├── 📄 1.pdf
+
+> │                    ├── 📄 10.pdf
+
+> │                    ├── 📄 11.pdf
+
+> │                    ├── 📄 12.pdf
+
+> │                    ├── 📄 2.pdf
+
+> │                    ├── 📄 251.pdf
+
+> │                    ├── 📄 252.pdf
+
+> │                    ├── 📄 253.pdf
+
+> │                    ├── 📄 254.pdf
+
+> │                    ├── 📄 255.pdf
+
+> │                    ├── 📄 256.pdf
+
+> │                    ├── 📄 257.pdf
+
+> │                    ├── 📄 258.pdf
+
+> │                    ├── 📄 3.pdf
+
+> │                    ├── 📄 4.pdf
+
+> │                    ├── 📄 5.pdf
+
+> │                    ├── 📄 6.pdf
+
+> │                    ├── 📄 7.pdf
+
+> │                    ├── 📄 8.pdf
+
+> │                    ├── 📄 9.pdf
+
+> │                    ├── 📄 _60_Banking.md
+
+> │                    ├── 📄 _index.md
+
+> │                    └── 📂 banking/
+
+> │                      ├── 📄 _banking.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 70_Payments/
+
+> │                    ├── 📄 _70_Payments.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                    ├── 📄 _index.md
+
+> │                  ├── 📄 _2024_Filings.md
+
+> │                  ├── 📄 _index.md
+
+> │                └── 📂 2025_Filings/
+
+> │                  └── 📂 10_Income/
+
+> │                    ├── 📄 _10_Income.md
+
+> │                    └── 📂 invoices/
+
+> │                      ├── 📄 _invoices.md
+
+> │                      ├── 📄 sample-invoice.json
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 50_Contractors/
+
+> │                    ├── 📄 Print 1099 Information Sheet.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_07277.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_09b61.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_10742.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_29c79.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_328e1.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_32db2.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_429ab.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_4e93c.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_55f6e.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_94455.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a424d.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_a6179.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ae4ed.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_bc8a7.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_d8795.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_da8fb.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_e65f6.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_ef83f.pdf
+
+> │                    ├── 📄 Rays Construction LLC_1099_fa137.pdf
+
+> │                    ├── 📄 _50_Contractors.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                    └── 📂 payroll-contractors/
+
+> │                      ├── 📄 _payroll-contractors.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                  └── 📂 60_Banking/
+
+> │                    ├── 📄 1.pdf
+
+> │                    ├── 📄 10.pdf
+
+> │                    ├── 📄 11.pdf
+
+> │                    ├── 📄 12.pdf
+
+> │                    ├── 📄 2.pdf
+
+> │                    ├── 📄 251.pdf
+
+> │                    ├── 📄 252.pdf
+
+> │                    ├── 📄 253.pdf
+
+> │                    ├── 📄 254.pdf
+
+> │                    ├── 📄 255.pdf
+
+> │                    ├── 📄 256.pdf
+
+> │                    ├── 📄 257.pdf
+
+> │                    ├── 📄 258.pdf
+
+> │                    ├── 📄 3.pdf
+
+> │                    ├── 📄 4.pdf
+
+> │                    ├── 📄 5.pdf
+
+> │                    ├── 📄 6.pdf
+
+> │                    ├── 📄 7.pdf
+
+> │                    ├── 📄 8.pdf
+
+> │                    ├── 📄 9.pdf
+
+> │                    ├── 📄 _60_Banking.md
+
+> │                    └── 📂 banking/
+
+> │                      ├── 📄 _banking.md
+
+> │                      └── 📂 _versions/
+
+> │                        ├── 📄 __versions.md
+
+> │                        ├── 📄 index.html
+
+> │                        ├── 📄 index.md-2.html
+
+> │                        ├── 📄 index.md.html
+
+> │                      ├── 📄 index.html
+
+> │                      ├── 📄 index.md
+
+> │                      ├── 📄 index.md.bak
+
+> │                      ├── 📄 index.md.bak2
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                  ├── 📄 _2025_Filings.md
+
+> │                  ├── 📄 _index.md
+
+> │                ├── 📄 _04.20.30_Tax-Binders.md
+
+> │              └── 📂 10_Tax-Planning/
+
+> │                ├── 📄 1040_Federal_Return.md
+
+> │                ├── 📄 Schedule_C.md
+
+> │                ├── 📄 _10_Tax-Planning.md
+
+> │              └── 📂 20_Estimated-Payments/
+
+> │                ├── 📄 _20_Estimated-Payments.md
+
+> │                ├── 📄 index.md
+
+> │              └── 📂 30_Tax-Binders/
+
+> │                └── 📂 2021_Filings/
+
+> │                  ├── 📄 INH_Tax-return-2021_ITIN Application.pdf
+
+> │                  ├── 📄 _2021_Filings.md
+
+> │                └── 📂 2022_Filings/
+
+> │                  └── 📂 00_Returns/
+
+> │                    ├── 📄 INH_Tax-return-2022.pdf
+
+> │                    ├── 📄 _00_Returns.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 30_Adjusting/
+
+> │                    ├── 📄 _30_Adjusting.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 40_Credits/
+
+> │                    ├── 📄 _40_Credits.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 50_Contractors/
+
+> │                    └── 📂 1099-checklist/
+
+> │                      ├── 📄 _1099-checklist.md
+
+> │                      ├── 📄 index.md
+
+> │                    ├── 📄 _50_Contractors.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 60_Banking/
+
+> │                    ├── 📄 _60_Banking.md
+
+> │                    ├── 📄 _index.md
+
+> │                    ├── 📄 index.html
+
+> │                  └── 📂 70_Payments/
+
+> │                    ├── 📄 _70_Payments.md
+
+> │                    ├── 📄 _index.md
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                    ├── 📄 _index.md
+
+> │                  ├── 📄 _2022_Filings.md
+
+> │                └── 📂 2023_Filings/
+
+> │                  └── 📂 00_Returns/
+
+> │                    ├── 📄 _00_Returns.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 10_Income/
+
+> │                    ├── 📄 _10_Income.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 20_Deductions/
+
+> │                    ├── 📄 _20_Deductions.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 30_Adjusting/
+
+> │                    ├── 📄 _30_Adjusting.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 40_Credits/
+
+> │                    ├── 📄 _40_Credits.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 70_Payments/
+
+> │                    ├── 📄 _70_Payments.md
+
+> │                    ├── 📄 index.md
+
+> │                  └── 📂 90_Receipts/
+
+> │                    ├── 📄 _90_Receipts.md
+
+> │                    ├── 📄 index.md
+
+> │                  ├── 📄 _2023_Filings.md
+
+> │                  ├── 📄 index.md
+
+> │                ├── 📄 _30_Tax-Binders.md
+
+> │                ├── 📄 index.md
+
+> │              ├── 📄 Munoz_Corp_DOR_Letter.docx
+
+> │              ├── 📄 _04.10_TAX.md
+
+> │              ├── 📄 _04.20_Tax.md
+
+> │              ├── 📄 _10_TAX.md
+
+> │              ├── 📄 _Tax_Returns.md
+
+> │              ├── 📄 _tax.md
+
+> │            ├── 📄 _Finance_and_Legal.md
+
+> │          └── 📂 Personal/
+
+> │            └── 📂 Education_and_Certificates/
+
+> │              ├── 📄 _Education_and_Certificates.md
+
+> │            └── 📂 Health_and_Wellness/
+
+> │              ├── 📄 _Health_and_Wellness.md
+
+> │            └── 📂 IDs_and_Documents/
+
+> │              ├── 📄 _IDs_and_Documents.md
+
+> │            └── 📂 Immigration_and_Travel/
+
+> │              └── 📂 00_Drafts_and_Strategy/
+
+> │                ├── 📄 2025-09-01_QiAlly_Leg_Strat_v01_final.pdf
+
+> │                ├── 📄 2025-09-05_QiAlly_Leg_Timeline_v01_final.pdf
+
+> │                ├── 📄 2025-09-10_QiAlly_Leg_Draft_v01_Aff_draft.pdf
+
+> │                ├── 📄 2025-09-15_QiAlly_Leg_Timeline_v01_review_final.pdf
+
+> │                ├── 📄 _00_Drafts_and_Strategy.md
+
+> │              └── 📂 10_Bio_and_IDs/
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_BC.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_ID.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_MC.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Bio_PC.pdf
+
+> │                ├── 📄 _10_Bio_and_IDs.md
+
+> │              └── 📂 20_Employment/
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_OL.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_PS.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Emp_W2.pdf
+
+> │                ├── 📄 _20_Employment.md
+
+> │              └── 📂 30_Financial/
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_BS.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_EIS.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Fin_Tax.pdf
+
+> │                ├── 📄 _30_Financial.md
+
+> │              └── 📂 40_Other_Evidence/
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_LOS.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_PR.pdf
+
+> │                ├── 📄 2025-09-28_QiAlly_Leg_Other_UB.pdf
+
+> │                ├── 📄 _40_Other_Evidence.md
+
+> │              └── 📂 50_Form_Filings/
+
+> │                └── 📂 10_I-589 (Asylum)/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_Aff_v01_draft.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_CL_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_EOS.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_SD.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i589_form.pdf
+
+> │                  ├── 📄 _10_I-589 (Asylum).md
+
+> │                └── 📂 20_I-360 (Special Immigrant)/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_CL_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_EOSvc.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_PS_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i360_form.pdf
+
+> │                  ├── 📄 _20_I-360 (Special Immigrant).md
+
+> │                └── 📂 30_I-130 (Family Sponsorship)/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_CL_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_EOR_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_SP.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i130_form.pdf
+
+> │                  ├── 📄 _30_I-130 (Family Sponsorship).md
+
+> │                └── 📂 40_I-765 (Employment Authorization)/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_CL_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_ED.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_EOS.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i765_form.pdf
+
+> │                  ├── 📄 _40_I-765 (Employment Authorization).md
+
+> │                └── 📂 50_I-485 (Adjustment of Status)/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_Bio.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_CL_v01_final.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_EOS.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_ME.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_i485_form.pdf
+
+> │                  ├── 📄 _50_I-485 (Adjustment of Status).md
+
+> │                └── 📂 60_Change_of_Address/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_COA_form.pdf
+
+> │                  ├── 📄 _60_Change_of_Address.md
+
+> │                └── 📂 70_Indiana_BMV_License/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_BMV_Apps.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_BMV_Docs.pdf
+
+> │                  ├── 📄 _70_Indiana_BMV_License.md
+
+> │                └── 📂 80_Social_Security_Applications/
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_Soc-Sec_Apps.pdf
+
+> │                  ├── 📄 2025-09-28_QiAlly_Leg_Soc-Sec_Docs.pdf
+
+> │                  ├── 📄 _80_Social_Security_Applications.md
+
+> │                ├── 📄 _50_Form_Filings.md
+
+> │              ├── 📄 _Immigration.md
+
+> │              ├── 📄 _Immigration_and_Travel.md
+
+> │            ├── 📄 Personal_Notes.md
+
+> │            ├── 📄 _Personal.md
+
+> │          └── 📂 Resources/
+
+> │            └── 📂 Brand/
+
+> │              └── 📂 10_Brand-Guide/
+
+> │                ├── 📄 03.50.10.10_Branding_Guide.md
+
+> │                ├── 📄 _10_Brand-Guide.md
+
+> │              └── 📂 20_Logos/
+
+> │                ├── 📄 _20_Logos.md
+
+> │                ├── 📄 logoround.png
+
+> │                ├── 📄 logosquare.png
+
+> │                ├── 📄 logowide.png
+
+> │              └── 📂 30_Marketing/
+
+> │                └── 📂 10_Strategy/
+
+> │                  ├── 📄 _10_Strategy.md
+
+> │                  ├── 📄 index.md
+
+> │                └── 📂 20_Campaigns/
+
+> │                  ├── 📄 _20_Campaigns.md
+
+> │                  ├── 📄 index.md
+
+> │                └── 📂 30_Assets/
+
+> │                  ├── 📄 _30_Assets.md
+
+> │                  ├── 📄 index.md
+
+> │                └── 📂 40_Socials/
+
+> │                  ├── 📄 _40_Socials.md
+
+> │                  ├── 📄 index.md
+
+> │                ├── 📄 _30_Marketing.md
+
+> │                ├── 📄 index.md
+
+> │              └── 📂 40_Website/
+
+> │                ├── 📄 03.50.40.10_Website_Assets.md
+
+> │                ├── 📄 _40_Website.md
+
+> │              ├── 📄 _50_Brand.md
+
+> │            └── 📂 Checklists_and_Guides/
+
+> │              ├── 📄 _Checklists_and_Guides.md
+
+> │            └── 📂 Media_and_Visuals/
+
+> │              ├── 📄 _Media_and_Visuals.md
+
+> │            └── 📂 Misc_References/
+
+> │              ├── 📄 _Misc_References.md
+
+> │            └── 📂 Templates_and_Forms/
+
+> │              ├── 📄 05.00.10_innova_hire_direct_hire_agreement.md
+
+> │              ├── 📄 05.30.70_innova_hire_direct_hire_agreement.md
+
+> │              ├── 📄 05.40.10_msa.md
+
+> │              ├── 📄 10_info-release-template.md
+
+> │              ├── 📄 10_msa.md
+
+> │              └── 📂 Authorizations/
+
+> │                ├── 📄 05.60.10_Info-Release-Template.md
+
+> │                ├── 📄 Info-Release-Template.md
+
+> │                ├── 📄 _05.60_Authorizations (2).md
+
+> │                ├── 📄 _05.60_Authorizations.md
+
+> │                ├── 📄 _index (2).md
+
+> │                ├── 📄 _index.md
+
+> │              ├── 📄 Innova Hire Direct Hire Agreement.docx
+
+> │              ├── 📄 Proposal - Proposal For Direct Hire Staffing Services.pptx
+
+> │              ├── 📄 _Templates_and_Forms.md
+
+> │              ├── 📄 innova_hire_direct_hire_agreement.md
+
+> │            ├── 📄 _Resources.md
+
+> │          ├── 📄 _03_Client.md
+
+> │        └── 📂 guides/
+
+> │          ├── 📄 example.md
+
+> │        ├── 📄 index.mdx
+
+> │        └── 📂 reference/
+
+> │          ├── 📄 example.md
+
+> │    └── 📂 layouts/
+
+> │      ├── 📄 ClientLayout.astro
+
+> │      ├── 📄 _layouts.md
+
+> │    └── 📂 pages/
+
+> │      └── 📂 [client]/
+
+> │        ├── 📄 _[client].md
+
+> │        ├── 📄 index.astro
+
+> │      ├── 📄 _pages.md
+
+> │  ├── 📄 tsconfig.json
+
+> │  ├── 📄 wrangler.toml
+
+> └── 📄 wrangler.toml
+
 > ```
 
 ### Assistant
@@ -2661,31 +3723,56 @@ canonical_ref: ""
 > Would you like me to also give you the **matching folder naming convention** (QiDecimal-style, e.g. `02.10_Innovahire_Accounting/`) to keep it aligned with your binder system?
 
 ### User
-> heres the current engagements .md can you make yours better too. ---
-> title: Engagements
-> description: Proposals, contracts, agreements, and work summaries
-> ---
-> 
-> # Engagements
-> 
-> This section contains all information related to our active and past engagements, including proposals, contracts, agreements, and detailed work summaries.
-> 
-> ## Overview
-> 
-> The Engagements section is organized into:
-> 
-> - **Contracts and Agreements**: Signed contracts, drafts, and templates
-> - **Proposals and Offers**: Active and archived proposals, including ongoing service engagements
-> - **Work Summaries**: Detailed summaries of completed work and deliverables
-> 
-> ## Quick Links
-> 
-> - [Contracts and Agreements](./Contracts_and_Agreements/_Contracts_and_Agreements.md) - All contract-related documents
-> - [Proposals and Offers](./Proposals_and_Offers/_Proposals_and_Offers.md) - Active and archived proposals
-> - [Work Summaries](./Work_Summaries/_Work_Summaries.md) - Detailed summaries of completed work and deliverables
-> 
-> ---
-> 
+> heres the current engagements .md can you make yours better too. ---
+
+> title: Engagements
+
+> description: Proposals, contracts, agreements, and work summaries
+
+> ---
+
+> 
+
+> # Engagements
+
+> 
+
+> This section contains all information related to our active and past engagements, including proposals, contracts, agreements, and detailed work summaries.
+
+> 
+
+> ## Overview
+
+> 
+
+> The Engagements section is organized into:
+
+> 
+
+> - **Contracts and Agreements**: Signed contracts, drafts, and templates
+
+> - **Proposals and Offers**: Active and archived proposals, including ongoing service engagements
+
+> - **Work Summaries**: Detailed summaries of completed work and deliverables
+
+> 
+
+> ## Quick Links
+
+> 
+
+> - [Contracts and Agreements](./Contracts_and_Agreements/_Contracts_and_Agreements.md) - All contract-related documents
+
+> - [Proposals and Offers](./Proposals_and_Offers/_Proposals_and_Offers.md) - Active and archived proposals
+
+> - [Work Summaries](./Work_Summaries/_Work_Summaries.md) - Detailed summaries of completed work and deliverables
+
+> 
+
+> ---
+
+> 
+
 > *Last reviewed: 2025-01-27*
 
 ### Assistant
@@ -3934,166 +5021,326 @@ canonical_ref: ""
 > If you want, next round we can do: “tiny bilingual intro at the top of `/` + Quicklinks” so it feels extra tailored to him.
 
 ### User
-> > inh-kb@0.0.1 build
-> > astro build
-> 
-> 22:02:25 [content] Syncing content
-> 22:02:25 [content] Synced content
-> 22:02:25 [types] Generated 1.15s
-> 22:02:25 [build] output: "static"
-> 22:02:25 [build] mode: "static"
-> 22:02:25 [build] directory: C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os\site-kb\dist\
-> 22:02:25 [build] Collecting build info...
-> 22:02:25 [build] ✓ Completed in 1.66s.
-> 22:02:25 [build] Building static entrypoints...
-> 
-> warn - The `content` option in your Tailwind CSS configuration is missing or empty.
-> warn - Configure your content sources or your generated CSS will be missing styles.
-> warn - https://tailwindcss.com/docs/content-configuration
-> 22:02:32 [WARN] [vite] "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/remotePattern.js" and "node_modules/astro/dist/assets/services/service.js".
-> 22:02:32 [vite] ✓ built in 7.66s
-> 22:02:32 [build] ✓ Completed in 7.73s.
-> 
->  building client (vite) 
-> 22:02:34 [vite] ✓ 37 modules transformed.
-> 22:02:35 [vite] dist/_astro/ec.p1z7b.js                                                               2.48 kB
-> 22:02:35 [vite] dist/_astro/ec.v4551.css                                                             18.22 kB │ gzip:  3.96 kB
-> 22:02:35 [vite] dist/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js    0.67 kB │ gzip:  0.40 kB
-> 22:02:35 [vite] dist/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js          1.67 kB │ gzip:  0.86 kB
-> 22:02:35 [vite] dist/_astro/page.B1D-nYk3.js                                                          2.24 kB │ gzip:  1.01 kB
-> 22:02:35 [vite] dist/_astro/Search.astro_astro_type_script_index_0_lang.cjYDvRdi.js                   2.69 kB │ gzip:  1.38 kB
-> 22:02:35 [vite] dist/_astro/ui-core.D_Lfcn_I.js                                                      72.93 kB │ gzip: 22.86 kB
-> 22:02:35 [vite] dist/_astro/client.BwmHNfYO.js                                                      143.47 kB │ gzip: 46.21 kB
-> 22:02:35 [vite] ✓ built in 2.07s
-> 
->  generating static routes 
-> 22:02:35 ▶ @astrojs/starlight/routes/static/404.astro
-> 22:02:35   └─ /404.htmlEntry docs → 404 was not found.
->  (+118ms) 
-> 22:02:35 ▶ src/pages/[client]/index.astro
-> 22:02:35   └─ /innova-hire/index.html (+20ms) 
-> 22:02:35 ▶ @astrojs/starlight/routes/static/index.astro
-> 22:02:35   ├─ /index.html (+106ms) 
-> 22:02:35   ├─ /01_eos/10_welcome/index.html (+97ms) 
-> 22:02:35   ├─ /01_eos/20_about_qially/index.html (+85ms) 
-> 22:02:35   ├─ /01_eos/30_value_and_scope/index.html (+69ms) 
-> 22:02:35   ├─ /01_eos/40_policies_and_procedures/index.html (+67ms) 
-> 22:02:35   ├─ /01_eos/50_onboarding/index.html (+43ms) 
-> 22:02:36   ├─ /01_eos/70_faq_and_glossary/index.html (+39ms) 
-> 22:02:36   ├─ /reference/example/index.html (+63ms) 
-> 22:02:36   ├─ /guides/example/index.html (+81ms) 
-> 22:02:36   ├─ /01_eos/60_how_to/index.html (+41ms) 
-> 22:02:36   ├─ /02_engagements/contracts_and_agreements/drafts_and_templates/index.html (+56ms) 
-> 22:02:36   ├─ /02_engagements/contracts_and_agreements/signed_contracts/index.html (+39ms) 
-> 22:02:36   ├─ /02_engagements/proposals_and_offers/active_proposals/index.html (+49ms) 
-> 22:02:36   ├─ /02_engagements/proposals_and_offers/archived_proposals/index.html (+66ms) 
-> 22:02:36   ├─ /02_engagements/work_summaries/deliverables_and_results/index.html (+42ms) 
-> 22:02:36   ├─ /02_engagements/work_summaries/monthly_summary/index.html (+180ms) 
-> 22:02:36   ├─ /03_client/business_ops/business_notes/index.html (+357ms) 
-> 22:02:37   ├─ /03_client/finance_and_legal/finance_notes/index.html (+133ms) 
-> 22:02:37   ├─ /03_client/finance_and_legal/readme/index.html (+87ms) 
-> 22:02:37   ├─ /03_client/personal/personal_notes/index.html (+80ms) 
-> 22:02:37   ├─ /02_engagements/proposals_and_offers/2025-11-01_innovahire_integrated_services/111/index.html (+42ms) 
-> 22:02:37   ├─ /02_engagements/proposals_and_offers/2025-11-01_innovahire_integrated_services/2025-11-08_plan-of-action/index.html (+40ms) 
-> 22:02:37   ├─ /02_engagements/work_summaries/2025-09-01_innovahire-on-qially/readme/index.html (+47ms) 
-> 22:02:37   ├─ /02_engagements/work_summaries/2025-10-01_microsoft-setup/07101010_microsoft-business-365/index.html (+55ms) 
-> 22:02:37   ├─ /02_engagements/work_summaries/2025-10-01_microsoft-setup/inh-0420a_microsoft-business-365/index.html (+39ms) 
-> 22:02:37   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/qially-document-services--mibor-member-directory-capture--automation/index.html (+45ms) 
-> 22:02:37   ├─ /03_client/business_ops/2_procedures_and_sops/10_incident-001/index.html (+54ms) 
-> 22:02:37   ├─ /03_client/business_ops/2_procedures_and_sops/20_release/index.html (+68ms) 
-> 22:02:37   ├─ /03_client/finance_and_legal/insurance/insurance_audits/index.html (+65ms) 
-> 22:02:37   ├─ /03_client/finance_and_legal/reports_and_statements/048010_financial_reports/index.html (+68ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/reports_and_statements/h030_financial_reports/index.html (+28ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/050010_innova_hire_direct_hire_agreement/index.html (+54ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/053070_innova_hire_direct_hire_agreement/index.html (+32ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/054010_msa/index.html (+33ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/10_info-release-template/index.html (+30ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/10_msa/index.html (+81ms) 
-> 22:02:38   ├─ /03_client/resources/templates_and_forms/innova_hire_direct_hire_agreement/index.html (+37ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/billing_breakdown/index.html (+28ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/final_summary/index.html (+36ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/sow_real_estate_agent_search/index.html (+43ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/accounting/process/04202010_bookkeeping_procedures/index.html (+28ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/yellowpages/index.html (+28ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/accounting/process/0600_bookkeeping_procedures/index.html (+28ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/042010_tax-planning/h020010_current_year/index.html (+26ms) 
-> 22:02:38   ├─ /1040-federal-return/index.html (+27ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/042010_tax-planning/h020020_prior_years/index.html (+28ms) 
-> 22:02:38   ├─ /schedule-c/index.html (+38ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/20_estimated-payments/index.html (+38ms) 
-> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/index.html (+29ms) 
-> 22:02:38   ├─ /2025-q4-budget/index.html (+22ms) 
-> 22:02:38   ├─ /03_client/resources/brand/10_brand-guide/03501010_branding_guide/index.html (+34ms) 
-> 22:02:38   ├─ /03_client/resources/brand/30_marketing/index.html (+26ms) 
-> 22:02:38   ├─ /03_client/resources/brand/40_website/03504010_website_assets/index.html (+28ms) 
-> 22:02:38   ├─ /info-release-template/index.html (+45ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/client_package/readme/index.html (+36ms) 
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/final_summary/index.html (+46ms)
-> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/readme/index.html (+42ms) 
-> 22:02:39   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/sow_real_estate_agent_search/index.html (+42ms) 
-> 22:02:39   ├─ /tax-returns/index.html (+23ms) 
-> 22:02:39   ├─ /03_client/resources/brand/30_marketing/10_strategy/index.html (+17ms) 
-> 22:02:39   ├─ /03_client/resources/brand/30_marketing/20_campaigns/index.html (+93ms) 
-> 22:02:39   ├─ /03_client/resources/brand/30_marketing/30_assets/index.html (+64ms) 
-> 22:02:39   ├─ /03_client/resources/brand/30_marketing/40_socials/index.html (+42ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/00_returns/index.html (+91ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/50_contractors/index.html (+37ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2022_filings/50_contractors/payroll-contractors/index.html (+55ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2022_filings/60_banking/banking/index.html (+42ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2023_filings/50_contractors/payroll-contractors/index.html (+49ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2023_filings/60_banking/banking/index.html (+64ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2024_filings/60_banking/banking/index.html (+42ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2025_filings/60_banking/banking/index.html (+41ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/50_contractors/1099-checklist/index.html (+59ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2024_filings/50_contractors/payroll-contractors/index.html (+40ms) 
-> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2025_filings/50_contractors/payroll-contractors/index.html (+54ms) 
-> 22:02:39   ├─ /quicklinks/index.html (+52ms) 
-> 22:02:40   ├─ /requests/index.html (+42ms) 
-> 22:02:40   ├─ /02_engagements/active/index.html (+29ms) 
-> 22:02:40   ├─ /02_engagements/active/brain_sessions/index.html (+40ms) 
-> 22:02:40   ├─ /02_engagements/active/innovahire_accounting/index.html (+20ms) 
-> 22:02:40   ├─ /02_engagements/active/lumara/index.html (+67ms) 
-> 22:02:40   ├─ /02_engagements/active/punchpro/index.html (+65ms) 
-> 22:02:40   └─ /02_engagements/active/innovahire_accounting/supporting_files/index.html (+28ms) 
-> 22:02:40 ✓ Completed in 5.19s.
-> 
->  generating optimized images 
-> 22:02:40   ▶ /_astro/houston.COneX7CN_17yiqx.webp (before: 4kB, after: 12kB) (+333ms) (1/1)
-> 22:02:40 ✓ Completed in 335ms.
-> 
-> (node:21196) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
-> (Use `node --trace-deprecation ...` to show where the warning was created)
-> 22:02:43 [build] Waiting for integration "@astrojs/starlight", hook "astro:build:done"...
-> 
-> Running Pagefind v1.4.0 (Extended)
-> Running from: "C:\\Users\\codyr\\My Drive\\QiOne\\4_Clients\\4.10_Innovahire-os\\site-kb\\node_modules\\@astrojs\\starlight"
-> Source:       "..\\..\\..\\dist"
-> Output:       "..\\..\\..\\dist\\pagefind"
-> 
-> [Walking source directory]
-> Found 85 files matching **/*.{html}
-> 
-> [Parsing files]
-> Found a data-pagefind-body element on the site.
-> ↳ Ignoring pages without this tag.
-> 
-> [Reading languages]
-> Discovered 1 language: en
-> 
-> [Building search indexes]
-> Total: 
->   Indexed 1 language
->   Indexed 82 pages
->   Indexed 9554 words
->   Indexed 0 filters
->   Indexed 0 sorts
-> 
-> Finished in 5.320 seconds
-> 22:02:49 [WARN] [@astrojs/sitemap] The Sitemap integration requires the `site` astro.config option. Skipping.
-> 22:02:49 [build] 84 page(s) built in 26.33s
-> 22:02:49 [build] Complete!
-> 
-> ✅ Build completed successfully!
+> > inh-kb@0.0.1 build
+
+> > astro build
+
+> 
+
+> 22:02:25 [content] Syncing content
+
+> 22:02:25 [content] Synced content
+
+> 22:02:25 [types] Generated 1.15s
+
+> 22:02:25 [build] output: "static"
+
+> 22:02:25 [build] mode: "static"
+
+> 22:02:25 [build] directory: C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os\site-kb\dist\
+
+> 22:02:25 [build] Collecting build info...
+
+> 22:02:25 [build] ✓ Completed in 1.66s.
+
+> 22:02:25 [build] Building static entrypoints...
+
+> 
+
+> warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+
+> warn - Configure your content sources or your generated CSS will be missing styles.
+
+> warn - https://tailwindcss.com/docs/content-configuration
+
+> 22:02:32 [WARN] [vite] "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/remotePattern.js" and "node_modules/astro/dist/assets/services/service.js".
+
+> 22:02:32 [vite] ✓ built in 7.66s
+
+> 22:02:32 [build] ✓ Completed in 7.73s.
+
+> 
+
+>  building client (vite) 
+
+> 22:02:34 [vite] ✓ 37 modules transformed.
+
+> 22:02:35 [vite] dist/_astro/ec.p1z7b.js                                                               2.48 kB
+
+> 22:02:35 [vite] dist/_astro/ec.v4551.css                                                             18.22 kB │ gzip:  3.96 kB
+
+> 22:02:35 [vite] dist/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js    0.67 kB │ gzip:  0.40 kB
+
+> 22:02:35 [vite] dist/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js          1.67 kB │ gzip:  0.86 kB
+
+> 22:02:35 [vite] dist/_astro/page.B1D-nYk3.js                                                          2.24 kB │ gzip:  1.01 kB
+
+> 22:02:35 [vite] dist/_astro/Search.astro_astro_type_script_index_0_lang.cjYDvRdi.js                   2.69 kB │ gzip:  1.38 kB
+
+> 22:02:35 [vite] dist/_astro/ui-core.D_Lfcn_I.js                                                      72.93 kB │ gzip: 22.86 kB
+
+> 22:02:35 [vite] dist/_astro/client.BwmHNfYO.js                                                      143.47 kB │ gzip: 46.21 kB
+
+> 22:02:35 [vite] ✓ built in 2.07s
+
+> 
+
+>  generating static routes 
+
+> 22:02:35 ▶ @astrojs/starlight/routes/static/404.astro
+
+> 22:02:35   └─ /404.htmlEntry docs → 404 was not found.
+
+>  (+118ms) 
+
+> 22:02:35 ▶ src/pages/[client]/index.astro
+
+> 22:02:35   └─ /innova-hire/index.html (+20ms) 
+
+> 22:02:35 ▶ @astrojs/starlight/routes/static/index.astro
+
+> 22:02:35   ├─ /index.html (+106ms) 
+
+> 22:02:35   ├─ /01_eos/10_welcome/index.html (+97ms) 
+
+> 22:02:35   ├─ /01_eos/20_about_qially/index.html (+85ms) 
+
+> 22:02:35   ├─ /01_eos/30_value_and_scope/index.html (+69ms) 
+
+> 22:02:35   ├─ /01_eos/40_policies_and_procedures/index.html (+67ms) 
+
+> 22:02:35   ├─ /01_eos/50_onboarding/index.html (+43ms) 
+
+> 22:02:36   ├─ /01_eos/70_faq_and_glossary/index.html (+39ms) 
+
+> 22:02:36   ├─ /reference/example/index.html (+63ms) 
+
+> 22:02:36   ├─ /guides/example/index.html (+81ms) 
+
+> 22:02:36   ├─ /01_eos/60_how_to/index.html (+41ms) 
+
+> 22:02:36   ├─ /02_engagements/contracts_and_agreements/drafts_and_templates/index.html (+56ms) 
+
+> 22:02:36   ├─ /02_engagements/contracts_and_agreements/signed_contracts/index.html (+39ms) 
+
+> 22:02:36   ├─ /02_engagements/proposals_and_offers/active_proposals/index.html (+49ms) 
+
+> 22:02:36   ├─ /02_engagements/proposals_and_offers/archived_proposals/index.html (+66ms) 
+
+> 22:02:36   ├─ /02_engagements/work_summaries/deliverables_and_results/index.html (+42ms) 
+
+> 22:02:36   ├─ /02_engagements/work_summaries/monthly_summary/index.html (+180ms) 
+
+> 22:02:36   ├─ /03_client/business_ops/business_notes/index.html (+357ms) 
+
+> 22:02:37   ├─ /03_client/finance_and_legal/finance_notes/index.html (+133ms) 
+
+> 22:02:37   ├─ /03_client/finance_and_legal/readme/index.html (+87ms) 
+
+> 22:02:37   ├─ /03_client/personal/personal_notes/index.html (+80ms) 
+
+> 22:02:37   ├─ /02_engagements/proposals_and_offers/2025-11-01_innovahire_integrated_services/111/index.html (+42ms) 
+
+> 22:02:37   ├─ /02_engagements/proposals_and_offers/2025-11-01_innovahire_integrated_services/2025-11-08_plan-of-action/index.html (+40ms) 
+
+> 22:02:37   ├─ /02_engagements/work_summaries/2025-09-01_innovahire-on-qially/readme/index.html (+47ms) 
+
+> 22:02:37   ├─ /02_engagements/work_summaries/2025-10-01_microsoft-setup/07101010_microsoft-business-365/index.html (+55ms) 
+
+> 22:02:37   ├─ /02_engagements/work_summaries/2025-10-01_microsoft-setup/inh-0420a_microsoft-business-365/index.html (+39ms) 
+
+> 22:02:37   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/qially-document-services--mibor-member-directory-capture--automation/index.html (+45ms) 
+
+> 22:02:37   ├─ /03_client/business_ops/2_procedures_and_sops/10_incident-001/index.html (+54ms) 
+
+> 22:02:37   ├─ /03_client/business_ops/2_procedures_and_sops/20_release/index.html (+68ms) 
+
+> 22:02:37   ├─ /03_client/finance_and_legal/insurance/insurance_audits/index.html (+65ms) 
+
+> 22:02:37   ├─ /03_client/finance_and_legal/reports_and_statements/048010_financial_reports/index.html (+68ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/reports_and_statements/h030_financial_reports/index.html (+28ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/050010_innova_hire_direct_hire_agreement/index.html (+54ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/053070_innova_hire_direct_hire_agreement/index.html (+32ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/054010_msa/index.html (+33ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/10_info-release-template/index.html (+30ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/10_msa/index.html (+81ms) 
+
+> 22:02:38   ├─ /03_client/resources/templates_and_forms/innova_hire_direct_hire_agreement/index.html (+37ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/billing_breakdown/index.html (+28ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/final_summary/index.html (+36ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/sow_real_estate_agent_search/index.html (+43ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/accounting/process/04202010_bookkeeping_procedures/index.html (+28ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/yellowpages/index.html (+28ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/accounting/process/0600_bookkeeping_procedures/index.html (+28ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/042010_tax-planning/h020010_current_year/index.html (+26ms) 
+
+> 22:02:38   ├─ /1040-federal-return/index.html (+27ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/042010_tax-planning/h020020_prior_years/index.html (+28ms) 
+
+> 22:02:38   ├─ /schedule-c/index.html (+38ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/20_estimated-payments/index.html (+38ms) 
+
+> 22:02:38   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/index.html (+29ms) 
+
+> 22:02:38   ├─ /2025-q4-budget/index.html (+22ms) 
+
+> 22:02:38   ├─ /03_client/resources/brand/10_brand-guide/03501010_branding_guide/index.html (+34ms) 
+
+> 22:02:38   ├─ /03_client/resources/brand/30_marketing/index.html (+26ms) 
+
+> 22:02:38   ├─ /03_client/resources/brand/40_website/03504010_website_assets/index.html (+28ms) 
+
+> 22:02:38   ├─ /info-release-template/index.html (+45ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/client_package/readme/index.html (+36ms) 
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/final_summary/index.html (+46ms)
+
+> 22:02:38   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/readme/index.html (+42ms) 
+
+> 22:02:39   ├─ /02_engagements/work_summaries/2025-11-01_mibor_member_directory/iteration-one/indianapolis_agents_client_package/sow_real_estate_agent_search/index.html (+42ms) 
+
+> 22:02:39   ├─ /tax-returns/index.html (+23ms) 
+
+> 22:02:39   ├─ /03_client/resources/brand/30_marketing/10_strategy/index.html (+17ms) 
+
+> 22:02:39   ├─ /03_client/resources/brand/30_marketing/20_campaigns/index.html (+93ms) 
+
+> 22:02:39   ├─ /03_client/resources/brand/30_marketing/30_assets/index.html (+64ms) 
+
+> 22:02:39   ├─ /03_client/resources/brand/30_marketing/40_socials/index.html (+42ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/00_returns/index.html (+91ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/50_contractors/index.html (+37ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2022_filings/50_contractors/payroll-contractors/index.html (+55ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2022_filings/60_banking/banking/index.html (+42ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2023_filings/50_contractors/payroll-contractors/index.html (+49ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2023_filings/60_banking/banking/index.html (+64ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2024_filings/60_banking/banking/index.html (+42ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2025_filings/60_banking/banking/index.html (+41ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/30_tax-binders/2022_filings/50_contractors/1099-checklist/index.html (+59ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2024_filings/50_contractors/payroll-contractors/index.html (+40ms) 
+
+> 22:02:39   ├─ /03_client/finance_and_legal/tax_returns/042030_tax-binders/2025_filings/50_contractors/payroll-contractors/index.html (+54ms) 
+
+> 22:02:39   ├─ /quicklinks/index.html (+52ms) 
+
+> 22:02:40   ├─ /requests/index.html (+42ms) 
+
+> 22:02:40   ├─ /02_engagements/active/index.html (+29ms) 
+
+> 22:02:40   ├─ /02_engagements/active/brain_sessions/index.html (+40ms) 
+
+> 22:02:40   ├─ /02_engagements/active/innovahire_accounting/index.html (+20ms) 
+
+> 22:02:40   ├─ /02_engagements/active/lumara/index.html (+67ms) 
+
+> 22:02:40   ├─ /02_engagements/active/punchpro/index.html (+65ms) 
+
+> 22:02:40   └─ /02_engagements/active/innovahire_accounting/supporting_files/index.html (+28ms) 
+
+> 22:02:40 ✓ Completed in 5.19s.
+
+> 
+
+>  generating optimized images 
+
+> 22:02:40   ▶ /_astro/houston.COneX7CN_17yiqx.webp (before: 4kB, after: 12kB) (+333ms) (1/1)
+
+> 22:02:40 ✓ Completed in 335ms.
+
+> 
+
+> (node:21196) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+
+> (Use `node --trace-deprecation ...` to show where the warning was created)
+
+> 22:02:43 [build] Waiting for integration "@astrojs/starlight", hook "astro:build:done"...
+
+> 
+
+> Running Pagefind v1.4.0 (Extended)
+
+> Running from: "C:\\Users\\codyr\\My Drive\\QiOne\\4_Clients\\4.10_Innovahire-os\\site-kb\\node_modules\\@astrojs\\starlight"
+
+> Source:       "..\\..\\..\\dist"
+
+> Output:       "..\\..\\..\\dist\\pagefind"
+
+> 
+
+> [Walking source directory]
+
+> Found 85 files matching **/*.{html}
+
+> 
+
+> [Parsing files]
+
+> Found a data-pagefind-body element on the site.
+
+> ↳ Ignoring pages without this tag.
+
+> 
+
+> [Reading languages]
+
+> Discovered 1 language: en
+
+> 
+
+> [Building search indexes]
+
+> Total: 
+
+>   Indexed 1 language
+
+>   Indexed 82 pages
+
+>   Indexed 9554 words
+
+>   Indexed 0 filters
+
+>   Indexed 0 sorts
+
+> 
+
+> Finished in 5.320 seconds
+
+> 22:02:49 [WARN] [@astrojs/sitemap] The Sitemap integration requires the `site` astro.config option. Skipping.
+
+> 22:02:49 [build] 84 page(s) built in 26.33s
+
+> 22:02:49 [build] Complete!
+
+> 
+
+> ✅ Build completed successfully!
+
 >    Output: site-kb/dist/
 
 ### Assistant
@@ -4230,74 +5477,142 @@ canonical_ref: ""
 > If you want, next I can help you write that exact message to send him with the link so it sets expectations really clearly.
 
 ### User
-> 22:29:35 [WARN] [router] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/01_eos/`.
-> 
-> Possible dynamic routes being matched: src/pages/[client]/index.astro, node_modules/@astrojs/starlight/routes/static/index.astro.
-> Entry docs → 404 was not found.
-> 22:29:35 [404] /01_eos/ 14ms
-> 22:29:39 [200] / 34ms
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os\site-kb> cd..
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add .
-> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
-> 
-> Another git process seems to be running in this repository, e.g.
-> an editor opened by 'git commit'. Please make sure all processes
-> are terminated then try again. If it still fails, a git process
-> may have crashed in this repository earlier:
-> remove the file manually to continue.
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commit 
-> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
-> 
-> Another git process seems to be running in this repository, e.g.
-> an editor opened by 'git commit'. Please make sure all processes
-> are terminated then try again. If it still fails, a git process
-> may have crashed in this repository earlier:
-> remove the file manually to continue.
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commi -a
-> git: 'commi' is not a git command. See 'git --help'.
-> 
-> The most similar commands are
->         commit
->         column
->         config
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commit -a
-> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
-> 
-> Another git process seems to be running in this repository, e.g.
-> an editor opened by 'git commit'. Please make sure all processes
-> are terminated then try again. If it still fails, a git process
-> may have crashed in this repository earlier:
-> remove the file manually to continue.
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git status
-> On branch main
-> Changes not staged for commit:
->   (use "git add <file>..." to update what will be committed)
->   (use "git restore <file>..." to discard changes in working directory)
->   (commit or discard the untracked or modified content in submodules)
->         modified:   ../../.obsidian/workspace.json
->         modified:   ../../5_Apps/5.0_QiApps (new commits, modified content, untracked content)
-> 
-> Untracked files:
->   (use "git add <file>..." to include in what will be committed)
->         site-kb/tailwind.config.mjs
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add 4_Clients\4.10_Innovahire-os\site-kb
-> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
-> 
-> Another git process seems to be running in this repository, e.g.
-> an editor opened by 'git commit'. Please make sure all processes
-> are terminated then try again. If it still fails, a git process
-> may have crashed in this repository earlier:
-> remove the file manually to continue.
-> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add <4_Clients\4.10_Innovahire-os\site-kb>
-> At line:1 char:9
-> + git add <4_Clients\4.10_Innovahire-os\site-kb>
-> +         ~
-> The '<' operator is reserved for future use.
->     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
->     + FullyQualifiedErrorId : RedirectionNotSupported
-> 
+> 22:29:35 [WARN] [router] A `getStaticPaths()` route pattern was matched, but no matching static path was found for requested path `/01_eos/`.
+
+> 
+
+> Possible dynamic routes being matched: src/pages/[client]/index.astro, node_modules/@astrojs/starlight/routes/static/index.astro.
+
+> Entry docs → 404 was not found.
+
+> 22:29:35 [404] /01_eos/ 14ms
+
+> 22:29:39 [200] / 34ms
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os\site-kb> cd..
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add .
+
+> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
+
+> 
+
+> Another git process seems to be running in this repository, e.g.
+
+> an editor opened by 'git commit'. Please make sure all processes
+
+> are terminated then try again. If it still fails, a git process
+
+> may have crashed in this repository earlier:
+
+> remove the file manually to continue.
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commit 
+
+> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
+
+> 
+
+> Another git process seems to be running in this repository, e.g.
+
+> an editor opened by 'git commit'. Please make sure all processes
+
+> are terminated then try again. If it still fails, a git process
+
+> may have crashed in this repository earlier:
+
+> remove the file manually to continue.
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commi -a
+
+> git: 'commi' is not a git command. See 'git --help'.
+
+> 
+
+> The most similar commands are
+
+>         commit
+
+>         column
+
+>         config
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git commit -a
+
+> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
+
+> 
+
+> Another git process seems to be running in this repository, e.g.
+
+> an editor opened by 'git commit'. Please make sure all processes
+
+> are terminated then try again. If it still fails, a git process
+
+> may have crashed in this repository earlier:
+
+> remove the file manually to continue.
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git status
+
+> On branch main
+
+> Changes not staged for commit:
+
+>   (use "git add <file>..." to update what will be committed)
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+>   (commit or discard the untracked or modified content in submodules)
+
+>         modified:   ../../.obsidian/workspace.json
+
+>         modified:   ../../5_Apps/5.0_QiApps (new commits, modified content, untracked content)
+
+> 
+
+> Untracked files:
+
+>   (use "git add <file>..." to include in what will be committed)
+
+>         site-kb/tailwind.config.mjs
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add 4_Clients\4.10_Innovahire-os\site-kb
+
+> fatal: Unable to create 'C:/Users/codyr/My Drive/QiOne/.git/index.lock': File exists.
+
+> 
+
+> Another git process seems to be running in this repository, e.g.
+
+> an editor opened by 'git commit'. Please make sure all processes
+
+> are terminated then try again. If it still fails, a git process
+
+> may have crashed in this repository earlier:
+
+> remove the file manually to continue.
+
+> PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os> git add <4_Clients\4.10_Innovahire-os\site-kb>
+
+> At line:1 char:9
+
+> + git add <4_Clients\4.10_Innovahire-os\site-kb>
+
+> +         ~
+
+> The '<' operator is reserved for future use.
+
+>     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+
+>     + FullyQualifiedErrorId : RedirectionNotSupported
+
+> 
+
 > PS C:\Users\codyr\My Drive\QiOne\4_Clients\4.10_Innovahire-os>
 
 ### Assistant

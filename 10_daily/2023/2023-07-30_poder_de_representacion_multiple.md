@@ -3,9 +3,9 @@ layout: page
 title: "Poder de Representación Multiple."
 slug: "poder_de_representacion_multiple"
 created_at: "2023-07-30 17:19:45"
-updated_at: "2023-07-30 17:19:45"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

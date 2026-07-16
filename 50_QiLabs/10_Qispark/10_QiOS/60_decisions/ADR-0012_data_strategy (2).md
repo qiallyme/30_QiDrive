@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0012 Data Strategy
-slug: ""
+slug: adr-0012-data-strategy
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9153f0467c7945278163879b695cba8b
 canonical_ref: ""
 source_type: manual
 template_key: master-template

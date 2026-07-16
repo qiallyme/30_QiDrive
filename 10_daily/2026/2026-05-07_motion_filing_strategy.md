@@ -3,9 +3,9 @@ layout: page
 title: "Motion Filing Strategy"
 slug: "motion_filing_strategy"
 created_at: "2026-05-07 17:02:59"
-updated_at: "2026-05-07 17:02:59"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

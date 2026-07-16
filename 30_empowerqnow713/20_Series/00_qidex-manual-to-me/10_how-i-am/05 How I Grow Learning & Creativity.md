@@ -3,8 +3,8 @@ layout: page
 title: 05 How I Grow Learning & Creativity
 slug: 05_how_i_grow_learning_creativity
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:35-04:00"
+tags: []
   - empowerqnow713
 source_type: manual
 realm: QiVault
@@ -17,7 +17,7 @@ qi_decimal: 0.00.00-UNKNOWN
 qid: q5e066fdb5eae
 system: qios
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -26,7 +26,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c2362b252f74431d8a4e7277e81de8fb
 canonical_ref: ""
 template_key: master-template
 ---

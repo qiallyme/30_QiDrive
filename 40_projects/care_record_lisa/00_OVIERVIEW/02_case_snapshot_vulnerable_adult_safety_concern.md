@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 02 Case Snapshot Vulnerable Adult Safety Concern
-slug: ""
+slug: 02-case-snapshot-vulnerable-adult-safety-concern
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 562008a3ddde433c8fcbef367e840e1f
 canonical_ref: ""
 source_type: manual
 template_key: master-template

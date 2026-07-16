@@ -8,7 +8,7 @@ visibility: internal
 publish_target: none
 publish_url: /40 Media Prompts
 created_at: "2026-07-08 03:55:46"
-updated_at: "2026-07-08 03:55:46"
+updated_at: "2026-07-16T06:49:36-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "40 Media Prompts"
@@ -18,16 +18,16 @@ nav_hidden: false
 is_index: true
 parent_ref: ""
 sensitivity: internal
-classification:
+classification: business_internal
   - blog-post
-realm_label:
+realm_label: ""
   - empowerqnow
-tags:
+tags: []
   - EmpowerQNow
 keywords: []
 aliases: []
 context: ""
-uid: ""
+uid: e6816912f8ad419f9fba8e0ae9c7a395
 canonical_ref: ""
 source_type: manual
 template_key: master-template

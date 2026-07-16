@@ -3,13 +3,13 @@ layout: adr
 title: ADR-0016: AI as Auditor, Not Authority
 slug: adr-0016-ai-as-auditor-not-authority
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - qispark
   - decisions
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 071b54b665c542ba9017744e2ea53168
 canonical_ref: ""
 template_key: master-template
 ---

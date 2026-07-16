@@ -1,8 +1,26 @@
 ---
 title: Publishing Notes
-tags:
+tags: []
   - story-bible
   - publishing
+layout: page
+slug: publishing-notes
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 5109afd4b10c469494407e7eec440136
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Publishing Notes

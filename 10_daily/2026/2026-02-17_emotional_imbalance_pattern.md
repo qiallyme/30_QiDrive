@@ -3,9 +3,9 @@ layout: page
 title: "Emotional Imbalance Pattern"
 slug: "emotional_imbalance_pattern"
 created_at: "2026-02-17 22:21:20"
-updated_at: "2026-02-17 22:21:20"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

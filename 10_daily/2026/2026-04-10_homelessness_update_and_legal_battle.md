@@ -3,9 +3,9 @@ layout: page
 title: "Homelessness Update and Legal Battle"
 slug: "homelessness_update_and_legal_battle"
 created_at: "2026-04-10 12:31:28"
-updated_at: "2026-04-10 12:31:28"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

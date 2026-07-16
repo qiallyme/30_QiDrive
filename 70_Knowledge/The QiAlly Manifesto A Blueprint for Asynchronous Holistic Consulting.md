@@ -5,7 +5,25 @@ realm: 2_QsKb
 owner: CRV
 privacy: private
 qi_decimal: 2.99.00-01.SYS
+layout: page
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ece37e7326a94ee9b15ad7135494bceb
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
+
 The QiAlly Manifesto: A Blueprint for Asynchronous Holistic Consulting
 
 

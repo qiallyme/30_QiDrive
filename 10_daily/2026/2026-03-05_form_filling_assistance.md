@@ -3,9 +3,9 @@ layout: page
 title: "Form Filling Assistance"
 slug: "form_filling_assistance"
 created_at: "2026-03-05 09:39:47"
-updated_at: "2026-03-05 09:39:47"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1936,131 +1936,256 @@ canonical_ref: ""
 > A **“Life Graph” structure inside Zoho CRM** that turns the whole system into a searchable **network of people, situations, and events**, almost like a personal intelligence system. It’s surprisingly powerful once you see it.
 
 ### User
-> ok give me a clean map, what to use, in what order, what ot name it what fields must have and what to ddeactivaetrt or detlate. Displayed in tabs as	Module Name	Teamspace	Last Modified	Status
-> People
-> Contacts	1Teamspaces	
-> User Image
-> Mar 5, 2026
-> Accounts
-> Accounts	1Teamspaces	
-> User Image
-> Mar 5, 2026
-> Tasks
-> Tasks	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Calls
-> Calls	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Leads
-> Leads	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> QiServices
-> Products	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Cases
-> Cases	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Tax Returns
-> CustomModule7	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Immigration Forms
-> CustomModule6	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Deals
-> Deals	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Documents
-> Documents	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Vendors
-> Vendors	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Immigration Forms Linked
-> LinkingModule11	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Meetings
-> Meetings	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Identifiers
-> CustomModule4	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Invoices
-> Invoices	1Teamspaces	
-> User Image
-> Jan 26, 2026
-> Contact-Business	LinkingModule7	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Appointments	Appointments	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Feeds	Feeds	No Teamspace	
-> User Image
-> Mar 5, 2026
-> Social
-> Social	No Teamspace	
-> User Image
-> Mar 5, 2026
-> Reports	Reports	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Services	Services	1Teamspaces	
-> User Image
-> Jan 30, 2026
-> Sales Orders	Sales Orders	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Campaigns	Campaigns	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Quotes	Quotes	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Purchase Orders	Purchase Orders	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Analytics	Analytics	No Teamspace	
-> User Image
-> Jan 30, 2026
-> SalesInbox	SalesInbox	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Price Books	PriceBooks	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Business Assosciates	LinkingModule8	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Solutions	Solutions	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Forecasts	Forecasts	No Teamspace	
-> User Image
-> Jan 30, 2026
-> Visits
-> Visits	No Teamspace	
-> User Image
-> Mar 5, 2026
-> Google Ads
-> Google AdWords	No Teamspace	
-> User Image
-> Mar 5, 2026
-> Deal Services
-> LinkingModule5	1Teamspaces	
-> User Image
+> ok give me a clean map, what to use, in what order, what ot name it what fields must have and what to ddeactivaetrt or detlate. Displayed in tabs as	Module Name	Teamspace	Last Modified	Status
+
+> People
+
+> Contacts	1Teamspaces	
+
+> User Image
+
+> Mar 5, 2026
+
+> Accounts
+
+> Accounts	1Teamspaces	
+
+> User Image
+
+> Mar 5, 2026
+
+> Tasks
+
+> Tasks	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Calls
+
+> Calls	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Leads
+
+> Leads	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> QiServices
+
+> Products	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Cases
+
+> Cases	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Tax Returns
+
+> CustomModule7	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Immigration Forms
+
+> CustomModule6	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Deals
+
+> Deals	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Documents
+
+> Documents	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Vendors
+
+> Vendors	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Immigration Forms Linked
+
+> LinkingModule11	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Meetings
+
+> Meetings	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Identifiers
+
+> CustomModule4	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Invoices
+
+> Invoices	1Teamspaces	
+
+> User Image
+
+> Jan 26, 2026
+
+> Contact-Business	LinkingModule7	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Appointments	Appointments	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Feeds	Feeds	No Teamspace	
+
+> User Image
+
+> Mar 5, 2026
+
+> Social
+
+> Social	No Teamspace	
+
+> User Image
+
+> Mar 5, 2026
+
+> Reports	Reports	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Services	Services	1Teamspaces	
+
+> User Image
+
+> Jan 30, 2026
+
+> Sales Orders	Sales Orders	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Campaigns	Campaigns	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Quotes	Quotes	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Purchase Orders	Purchase Orders	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Analytics	Analytics	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> SalesInbox	SalesInbox	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Price Books	PriceBooks	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Business Assosciates	LinkingModule8	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Solutions	Solutions	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Forecasts	Forecasts	No Teamspace	
+
+> User Image
+
+> Jan 30, 2026
+
+> Visits
+
+> Visits	No Teamspace	
+
+> User Image
+
+> Mar 5, 2026
+
+> Google Ads
+
+> Google AdWords	No Teamspace	
+
+> User Image
+
+> Mar 5, 2026
+
+> Deal Services
+
+> LinkingModule5	1Teamspaces	
+
+> User Image
+
 > Mar 5, 2026
 
 ### Assistant

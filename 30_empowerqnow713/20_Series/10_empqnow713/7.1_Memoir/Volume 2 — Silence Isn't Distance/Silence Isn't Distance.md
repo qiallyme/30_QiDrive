@@ -1,3 +1,26 @@
+---
+layout: page
+title: Silence Isn't Distance
+slug: silence-isnt-distance
+summary: ""
+status: active
+created_at: "2026-07-04T20:36:22-04:00"
+updated_at: "2026-07-16T06:49:35-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 21c1bd80bfde4b2d94fa09b083473586
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # CHAPTER 1 — The Wake-Up
 
 # From the moment my eyes open, the world feels wrong.

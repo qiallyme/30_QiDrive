@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Transgender identity journey - transitioning without medical intervention"
 slug: "transgender_identity_journey_transitioning_without_medical_intervention"
 summary: ""
 status: active
 created_at: "2023-05-01"
-updated_at: "2023-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 797b3387b9094939bb436da9786a84ff
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-05-01
 ---
+
 # Transgender identity journey - transitioning without medical intervention
 
 Category: Personal Milestone

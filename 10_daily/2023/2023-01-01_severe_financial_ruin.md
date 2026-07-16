@@ -3,7 +3,7 @@ layout: page
 title: "Severe Financial Ruin"
 slug: "severe_financial_ruin"
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 964f8859fc1945c083f6e672de592866
 canonical_ref: ""
 ---
 

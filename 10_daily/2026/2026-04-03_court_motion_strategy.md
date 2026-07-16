@@ -3,9 +3,9 @@ layout: page
 title: "Court Motion Strategy"
 slug: "court_motion_strategy"
 created_at: "2026-04-03 22:38:44"
-updated_at: "2026-04-03 22:38:44"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

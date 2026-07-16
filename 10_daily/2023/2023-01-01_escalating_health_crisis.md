@@ -3,7 +3,7 @@ layout: page
 title: "Escalating Health Crisis"
 slug: "escalating_health_crisis"
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["health"]
 category: "health"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 92a6cd9765134353a8eb9a0ad905b8cd
 canonical_ref: ""
 ---
 

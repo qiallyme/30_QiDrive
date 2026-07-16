@@ -3,9 +3,9 @@ layout: page
 title: "Supabase Module Placement"
 slug: "supabase_module_placement"
 created_at: "2026-06-13 13:42:40"
-updated_at: "2026-06-13 13:42:40"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -491,123 +491,240 @@ canonical_ref: ""
 > That’s the difference between “GitHub auto-updates production” and “GitHub auto-breaks production.”
 
 ### User
-> on adjustment i have this tree so far. what am i still missing and i want to start populating and migrating data. {
->   "name": "50_data",
->   "path": "c:\\QiLabs\\20_QiSystem\\50_data",
->   "type": "directory",
->   "children": [
->     {
->       "name": "supabase",
->       "type": "folder",
->       "children": [
->         {
->           "name": "50_database",
->           "type": "folder",
->           "children": [
->             {
->               "name": "functions",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "qivault-ingest",
->                   "type": "folder",
->                   "children": [
->                     {
->                       "name": "index.ts",
->                       "type": "file"
->                     }
->                   ]
->                 }
->               ]
->             },
->             {
->               "name": "migrations",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "001_ingestion_queue.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "002_semantic_profile_file_level.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20260401000000_qione_admin_invite.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20260404000001_qios_modular_mode_pivot.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20260507045840_add_daily_care_notes.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20260508112922_medication_hold_and_inventory_workflows.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "20260510090423_desktop_admin_admin_console_foundation.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qicase_schema.sql",
->                   "type": "file"
->                 },
->                 {
->                   "name": "qievidence.sql",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "policies",
->               "type": "folder"
->             },
->             {
->               "name": "schemas",
->               "type": "folder"
->             },
->             {
->               "name": "sql",
->               "type": "folder",
->               "children": [
->                 {
->                   "name": "is_admin.sql",
->                   "type": "file"
->                 }
->               ]
->             },
->             {
->               "name": "config.toml",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": ".env.example",
->           "type": "file"
->         },
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "connection-map.md",
->           "type": "file"
->         }
->       ]
->     }
->   ],
->   "metadata": {
->     "generated": "2026-06-13T19:04:22.145Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> on adjustment i have this tree so far. what am i still missing and i want to start populating and migrating data. {
+
+>   "name": "50_data",
+
+>   "path": "c:\\QiLabs\\20_QiSystem\\50_data",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "supabase",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "50_database",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "functions",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "qivault-ingest",
+
+>                   "type": "folder",
+
+>                   "children": [
+
+>                     {
+
+>                       "name": "index.ts",
+
+>                       "type": "file"
+
+>                     }
+
+>                   ]
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "migrations",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "001_ingestion_queue.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "002_semantic_profile_file_level.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20260401000000_qione_admin_invite.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20260404000001_qios_modular_mode_pivot.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20260507045840_add_daily_care_notes.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20260508112922_medication_hold_and_inventory_workflows.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "20260510090423_desktop_admin_admin_console_foundation.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qicase_schema.sql",
+
+>                   "type": "file"
+
+>                 },
+
+>                 {
+
+>                   "name": "qievidence.sql",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "policies",
+
+>               "type": "folder"
+
+>             },
+
+>             {
+
+>               "name": "schemas",
+
+>               "type": "folder"
+
+>             },
+
+>             {
+
+>               "name": "sql",
+
+>               "type": "folder",
+
+>               "children": [
+
+>                 {
+
+>                   "name": "is_admin.sql",
+
+>                   "type": "file"
+
+>                 }
+
+>               ]
+
+>             },
+
+>             {
+
+>               "name": "config.toml",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": ".env.example",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "connection-map.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-06-13T19:04:22.145Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant

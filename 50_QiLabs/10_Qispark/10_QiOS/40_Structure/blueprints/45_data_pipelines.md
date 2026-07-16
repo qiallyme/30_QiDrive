@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 45 Data Pipelines
-slug: ""
+slug: 45-data-pipelines
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 4df61d0aa60443b1b0785e9da00f7666
 canonical_ref: ""
 source_type: manual
 template_key: master-template

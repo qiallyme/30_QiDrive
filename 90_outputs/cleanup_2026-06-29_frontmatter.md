@@ -5,8 +5,8 @@ slug: cleanup-2026-06-29-frontmatter
 summary: Scripted and manual cleanup report for front matter normalization and key document formatting.
 status: active
 created_at: "2026-06-29"
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:42-04:00"
+tags: []
   - cleanup
   - vault-maintenance
 artifact_kind: report
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c75d12890fe648aebb8ab6baa68752f8
 canonical_ref: ""
 template_key: master-template
 ---

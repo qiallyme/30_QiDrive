@@ -3,9 +3,9 @@ layout: page
 title: "Reduce Azure DB Usage"
 slug: "reduce_azure_db_usage"
 created_at: "2023-07-15 19:00:07"
-updated_at: "2023-07-15 19:00:07"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

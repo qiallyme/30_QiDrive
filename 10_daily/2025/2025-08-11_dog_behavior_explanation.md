@@ -3,9 +3,9 @@ layout: page
 title: "Dog behavior explanation"
 slug: "dog_behavior_explanation"
 created_at: "2025-08-11 18:40:08"
-updated_at: "2025-08-11 18:40:08"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

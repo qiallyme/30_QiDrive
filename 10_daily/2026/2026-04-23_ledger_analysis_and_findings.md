@@ -3,9 +3,9 @@ layout: page
 title: "Ledger Analysis and Findings"
 slug: "ledger_analysis_and_findings"
 created_at: "2026-04-23 03:41:31"
-updated_at: "2026-04-23 03:41:31"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -88,47 +88,88 @@ canonical_ref: ""
 > The next highest-value move is to load the exact figures from the no-surplus / nunc-pro-tunc / order-to-pay-surplus papers into `Claims_Timeline` so the adjustment ledger shows each shift by date and account.
 
 ### User
-> Source Document	Date	Amount Stated	Statement Date	Category	Conflict Group	Conflicts With	Variance
-> Request for Admissions	2025-01-16	$190,685.22	2024-11-19	Principal	judgement001		
-> Request for Admissions	2025-01-16	$22,567.41	2024-11-19	Principal	judgement001		
-> Request for Admissions	2025-01-16	$23.14	2024-11-19	Per Diem	interest001		
-> Request for Admissions	2025-01-16	$4.31	2024-11-19	Per Diem	interest001		
-> Complaint		$0.00		Principal		Affidavit	$
-> Affidavit of Indebtedness		$0.00		Total Owed		Judgment	$
-> Default Judgment	2025-05-07	$194,410.76	2025-04-29	Principal		Sale Bid	$
-> Default Judgment	2025-05-07	$23,261.32	2025-04-29	Principal			
-> Default Judgment	2025-05-07	$3,000.00	2025-04-29	Attorney			
-> Default Judgment	2025-05-07	$191.01	2025-04-29	Court			
-> Default Judgment	2025-05-07	$220,863.09	2025-04-29	Total Judgement			
-> Sheriff Sale Bid	2025-07-17	$240,464.20		Bid Amount		Worksheet	$
-> Sheriff Sale Bid	2025-07-17	$220,863.09		Total Judgement			
-> Sheriff Sale Bid	2025-07-17	$7,600.81		Taxes			
-> Sheriff Sale Bid	2025-07-17	$10,725.27		Interest			
-> Sheriff Sale Bid	2025-07-17	$1,275.00		Attorney			
-> Sheriff Sale Bid	2025-07-17	$300.00		Sheriff			
-> Sheriff Sale Bid	2025-07-17	$1,094.35		Publication			
-> Sheriff Sale Bid	2025-07-17	$35.00		Clerk			
-> Sheriff Worksheet				Distribution		Judgment	$
-> Publication Invoice		$		Publication Cost		Claimed Cost	$
-> Attorney Fees Claimed	2025-05-07	$3,000.00		Fees		Itemized Invoice	$
-> Amended Default	2025-05-28	$194,410.76					
-> Amended Default	2025-05-28	$23,261.32					
-> Amended Default	2025-05-28	$3,000.00					
-> Amended Default	2025-05-28	$191.01					
-> Amended Default	2025-05-28	$220,863.09					
-> Clerk Return	2025-06-19	$240,464.20		PAID Judgement			
-> Clerk Return	2025-06-19	$284.28		Court and Record			
-> Clerk Return	2025-06-19	$38.00		Sheriff			
-> Clerk Return	2025-06-19	$300.00		Sheriff			
-> Clerk Return	2025-06-19	$0.00		Clerk			
-> Sheriff Worksheet	2025-08-06	$220,863.09		Judgement Amount			
-> Sheriff Worksheet	2025-08-06	$10,725.27		Add Sum Interest			
-> Sheriff Worksheet	2025-08-06	$8,875.81		Additional Costs			
-> Sheriff Worksheet	2025-08-06	$240,464.17		Total Judgement			
-> Sheriff Worksheet	2025-08-06	$300.00		Admin Fee			
-> Sheriff Worksheet	2025-08-06	$38.00		Sheriff Fee			
-> Sheriff Worksheet	2025-08-06	$284.28		Advertising Cost			
-> Sheriff Worksheet	2025-08-06	$241,086.45		Grand Total			
+> Source Document	Date	Amount Stated	Statement Date	Category	Conflict Group	Conflicts With	Variance
+
+> Request for Admissions	2025-01-16	$190,685.22	2024-11-19	Principal	judgement001		
+
+> Request for Admissions	2025-01-16	$22,567.41	2024-11-19	Principal	judgement001		
+
+> Request for Admissions	2025-01-16	$23.14	2024-11-19	Per Diem	interest001		
+
+> Request for Admissions	2025-01-16	$4.31	2024-11-19	Per Diem	interest001		
+
+> Complaint		$0.00		Principal		Affidavit	$
+
+> Affidavit of Indebtedness		$0.00		Total Owed		Judgment	$
+
+> Default Judgment	2025-05-07	$194,410.76	2025-04-29	Principal		Sale Bid	$
+
+> Default Judgment	2025-05-07	$23,261.32	2025-04-29	Principal			
+
+> Default Judgment	2025-05-07	$3,000.00	2025-04-29	Attorney			
+
+> Default Judgment	2025-05-07	$191.01	2025-04-29	Court			
+
+> Default Judgment	2025-05-07	$220,863.09	2025-04-29	Total Judgement			
+
+> Sheriff Sale Bid	2025-07-17	$240,464.20		Bid Amount		Worksheet	$
+
+> Sheriff Sale Bid	2025-07-17	$220,863.09		Total Judgement			
+
+> Sheriff Sale Bid	2025-07-17	$7,600.81		Taxes			
+
+> Sheriff Sale Bid	2025-07-17	$10,725.27		Interest			
+
+> Sheriff Sale Bid	2025-07-17	$1,275.00		Attorney			
+
+> Sheriff Sale Bid	2025-07-17	$300.00		Sheriff			
+
+> Sheriff Sale Bid	2025-07-17	$1,094.35		Publication			
+
+> Sheriff Sale Bid	2025-07-17	$35.00		Clerk			
+
+> Sheriff Worksheet				Distribution		Judgment	$
+
+> Publication Invoice		$		Publication Cost		Claimed Cost	$
+
+> Attorney Fees Claimed	2025-05-07	$3,000.00		Fees		Itemized Invoice	$
+
+> Amended Default	2025-05-28	$194,410.76					
+
+> Amended Default	2025-05-28	$23,261.32					
+
+> Amended Default	2025-05-28	$3,000.00					
+
+> Amended Default	2025-05-28	$191.01					
+
+> Amended Default	2025-05-28	$220,863.09					
+
+> Clerk Return	2025-06-19	$240,464.20		PAID Judgement			
+
+> Clerk Return	2025-06-19	$284.28		Court and Record			
+
+> Clerk Return	2025-06-19	$38.00		Sheriff			
+
+> Clerk Return	2025-06-19	$300.00		Sheriff			
+
+> Clerk Return	2025-06-19	$0.00		Clerk			
+
+> Sheriff Worksheet	2025-08-06	$220,863.09		Judgement Amount			
+
+> Sheriff Worksheet	2025-08-06	$10,725.27		Add Sum Interest			
+
+> Sheriff Worksheet	2025-08-06	$8,875.81		Additional Costs			
+
+> Sheriff Worksheet	2025-08-06	$240,464.17		Total Judgement			
+
+> Sheriff Worksheet	2025-08-06	$300.00		Admin Fee			
+
+> Sheriff Worksheet	2025-08-06	$38.00		Sheriff Fee			
+
+> Sheriff Worksheet	2025-08-06	$284.28		Advertising Cost			
+
+> Sheriff Worksheet	2025-08-06	$241,086.45		Grand Total			
+
 > Sheriff Worksheet	2025-08-06	$240,464.20		BID
 
 ### User
@@ -345,17 +386,28 @@ canonical_ref: ""
 
 ### User
 > {'asset_pointer': 'sediment://file_0000000054a871f5bfdce70ec37ae247', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 347, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 21059, 'width': 177}the exact number is 52.99
-> Scenario	1-Verifiable
-> Balance Due	$213,252.63
-> Interest	$7,384.05
-> Taxes	$7,600.81
-> Attorney	$3,000.00
-> Sherriff	$338.00
-> Publication	$1,094.35
-> Clerk	$35.00
-> Court	$185.00
-> Other	$0.00
-> 	$232,889.84
+> Scenario	1-Verifiable
+
+> Balance Due	$213,252.63
+
+> Interest	$7,384.05
+
+> Taxes	$7,600.81
+
+> Attorney	$3,000.00
+
+> Sherriff	$338.00
+
+> Publication	$1,094.35
+
+> Clerk	$35.00
+
+> Court	$185.00
+
+> Other	$0.00
+
+> 	$232,889.84
+
 > Surplus Calc	$7,574.36
 
 ### Assistant
@@ -774,27 +826,48 @@ canonical_ref: ""
 
 ### User
 > {'asset_pointer': 'sediment://file_00000000557071f8b8d7a4c434af76f8', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 538, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 33560, 'width': 433}i have finalized the final audit and its not 52.99 difference its way more. look. 
-> Scenario	Verifiable	Decree of Foreclosure	04/21 - Plantiffs	Diff	Notes
-> Balance Due 4/29/25
-> Confirmed Match	$217,672.08	$217,672.08	$217,672.08	$0.00	
-> Court Costs	$191.01	$191.01	$191.01	$0.00	
-> Attorney Fees	$3,000.00	$3,000.00	$3,000.00	$0.00	
-> Judgement Total	$220,863.09	$220,863.09	$220,863.09	$0.00	
-> Interest to date 
-> of judgement 
-> 04/29-05/58	$796.05	$796.05	$1,452.30	-$656.25	Interest through the sale date is in total and only 30 days were allowed. 
-> After Interest	$221,659.14	$221,659.14	$222,315.39	-$656.25	
-> Taxes	$7,600.81	$7,600.81	$7,600.81	$0.00	
-> After Taxes	$229,259.95	$229,259.95	$229,916.20	-$656.25	
-> Sherriff	$338.00	$338.00	$338.00	$0.00	
-> Advertisement	$284.28	$284.28	$284.28	$0.00	
-> Sherrif SubTotal	$622.28	$622.28	$622.28	$0.00	
-> After Sherrif	$229,882.23	$229,882.23	$230,538.48	-$656.25	
-> Publication	$1,094.35	$1,094.35	$1,094.35	$0.00	
-> Clerk	$35.00	$35.00	$35.00	$0.00	
-> After Pub-Clerk	$231,011.58	$231,011.58	$231,667.83	-$656.25	
-> Attorney	$1,275.00	$1,275.00	$1,275.00	$0.00	
-> 	$232,286.58	$232,286.58	$232,942.83	-$656.25	
+> Scenario	Verifiable	Decree of Foreclosure	04/21 - Plantiffs	Diff	Notes
+
+> Balance Due 4/29/25
+
+> Confirmed Match	$217,672.08	$217,672.08	$217,672.08	$0.00	
+
+> Court Costs	$191.01	$191.01	$191.01	$0.00	
+
+> Attorney Fees	$3,000.00	$3,000.00	$3,000.00	$0.00	
+
+> Judgement Total	$220,863.09	$220,863.09	$220,863.09	$0.00	
+
+> Interest to date 
+
+> of judgement 
+
+> 04/29-05/58	$796.05	$796.05	$1,452.30	-$656.25	Interest through the sale date is in total and only 30 days were allowed. 
+
+> After Interest	$221,659.14	$221,659.14	$222,315.39	-$656.25	
+
+> Taxes	$7,600.81	$7,600.81	$7,600.81	$0.00	
+
+> After Taxes	$229,259.95	$229,259.95	$229,916.20	-$656.25	
+
+> Sherriff	$338.00	$338.00	$338.00	$0.00	
+
+> Advertisement	$284.28	$284.28	$284.28	$0.00	
+
+> Sherrif SubTotal	$622.28	$622.28	$622.28	$0.00	
+
+> After Sherrif	$229,882.23	$229,882.23	$230,538.48	-$656.25	
+
+> Publication	$1,094.35	$1,094.35	$1,094.35	$0.00	
+
+> Clerk	$35.00	$35.00	$35.00	$0.00	
+
+> After Pub-Clerk	$231,011.58	$231,011.58	$231,667.83	-$656.25	
+
+> Attorney	$1,275.00	$1,275.00	$1,275.00	$0.00	
+
+> 	$232,286.58	$232,286.58	$232,942.83	-$656.25	
+
 > Surplus Calc	$8,177.62	$8,177.62	$7,521.37	$8,177.62
 
 ### Assistant
@@ -1380,26 +1453,46 @@ canonical_ref: ""
 
 ### User
 > yes, give it to me in canvas. and use this as the top part of the documents
-> STATE OF INDIANA
-> 
-> COUNTY OF MARION
-> )
-> )    SS: 
-> )
-> THE MARION SUPERIOR COURT 3
-> 
-> CAUSE NO: 49D03-2501-MF-002559
-> FINANCIAL CENTER FIRST CREDIT UNION,
-> )
-> )
->      Plaintiff,
-> )  
-> )
-> v.
-> )
-> CODY RICE-VELASQUEZ;
-> )
-> Defendant.
+> STATE OF INDIANA
+
+> 
+
+> COUNTY OF MARION
+
+> )
+
+> )    SS: 
+
+> )
+
+> THE MARION SUPERIOR COURT 3
+
+> 
+
+> CAUSE NO: 49D03-2501-MF-002559
+
+> FINANCIAL CENTER FIRST CREDIT UNION,
+
+> )
+
+> )
+
+>      Plaintiff,
+
+> )  
+
+> )
+
+> v.
+
+> )
+
+> CODY RICE-VELASQUEZ;
+
+> )
+
+> Defendant.
+
 > )
 
 ### Assistant

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Ai Policy Ingestion Vs Intelligence
-slug: ""
+slug: ai-policy-ingestion-vs-intelligence
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9487c36f0cc2437c8d98b2968345a904
 canonical_ref: ""
 source_type: manual
 template_key: master-template

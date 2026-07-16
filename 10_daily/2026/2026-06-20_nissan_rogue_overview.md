@@ -3,9 +3,9 @@ layout: page
 title: "Nissan Rogue Overview"
 slug: "nissan_rogue_overview"
 created_at: "2026-06-20 13:45:15"
-updated_at: "2026-06-20 13:45:15"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

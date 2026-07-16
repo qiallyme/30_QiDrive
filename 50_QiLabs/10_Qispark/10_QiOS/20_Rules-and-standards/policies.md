@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Policies
-slug: ""
+slug: policies
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 78167130f220424bab8a0c12270f7dcd
 canonical_ref: ""
 source_type: manual
 template_key: master-template

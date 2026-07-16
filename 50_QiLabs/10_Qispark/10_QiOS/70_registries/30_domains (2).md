@@ -1,14 +1,14 @@
 ---
-uid:
+uid: c50b7f3bc394412fa2b228fb2d9185ac
   cdddc4a1-c802-4c5f-b871-c5ce5d6b5f78 ...
   ...
 layout: page
 title: 30 Domains
-slug: ""
+slug: 30-domains
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []

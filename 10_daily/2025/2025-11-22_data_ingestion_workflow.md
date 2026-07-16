@@ -3,9 +3,9 @@ layout: page
 title: "Data ingestion workflow"
 slug: "data_ingestion_workflow"
 created_at: "2025-11-22 17:20:27"
-updated_at: "2025-11-22 17:20:27"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -337,187 +337,368 @@ canonical_ref: ""
 > If you want, next step I can spit out a Cursor prompt that generates this repo scaffold + the Gmail + chat connectors first, wired to your Supabase vector tables. But the workflow above is the real win. The rest is just typing and swearing at edge cases like every other software project on Earth.
 
 ### User
-> this is was gemeni said. This is a classic **ETL (Extract, Transform, Load)** project. To turn a stream of chat logs into a useful timeline, you cannot simply dump the text; you need to perform "Sessionization."
-> 
-> This process groups individual messages into **chunks** based on time gaps. If you stop talking for 30 minutes and come back, that should likely be a new "event" on your timeline.
-> 
-> Here is a robust architecture and Python solution to ingest your logs, chunk them by time windows, and store them in a generic SQLite database for timeline analysis.
-> 
-> -----
-> 
-> ### The Architecture
-> 
-> 1.  **Input:** JSON/CSV exports (ChatGPT, Discord, Slack, etc.).
-> 2.  **Processing:** Python script to parse timestamps and calculate `time_delta`.
-> 3.  **Logic:** If `time_delta` \> X minutes, create a new `Session_ID`.
-> 4.  **Storage:** SQLite (files-based, serverless, easy to query).
-> 5.  **Output:** A chronological timeline of "Activity Blocks."
-> 
-> [Image of data pipeline flow diagram]
-> 
-> -----
-> 
-> ### Phase 1: The Database Schema
-> 
-> We need a relational structure that separates the **Event** (the chunk/session) from the **Data** (the specific messages).
-> 
-> **SQL Schema strategy:**
-> 
->   * **`sessions`**: Contains the start time, end time, and summary of the activity block.
->   * **`messages`**: Contains the raw text, linked to a session via `session_id`.
-> 
-> -----
-> 
-> ### Phase 2: The Ingestion Script (Python)
-> 
-> This script assumes you can load your data into a list of dictionaries. It implements **dynamic chunking** based on a generic "Time Threshold" (set here to 60 minutes).
-> 
-> You will need: `pip install pandas`
-> 
-> ```python
-> import sqlite3
-> import json
-> from datetime import datetime, timedelta
-> 
-> # --- CONFIGURATION ---
-> DB_NAME = "activity_timeline.db"
-> TIME_THRESHOLD_MINUTES = 60  # New session if silence > 60 mins
-> # ---------------------
-> 
-> def init_db():
->     conn = sqlite3.connect(DB_NAME)
->     c = conn.cursor()
->     
->     # Create Sessions Table (The "Chunks")
->     c.execute('''CREATE TABLE IF NOT EXISTS sessions (
->                     id INTEGER PRIMARY KEY AUTOINCREMENT,
->                     start_time TEXT,
->                     end_time TEXT,
->                     message_count INTEGER,
->                     topic_preview TEXT
->                 )''')
-> 
->     # Create Messages Table (The "Raw Data")
->     c.execute('''CREATE TABLE IF NOT EXISTS messages (
->                     id INTEGER PRIMARY KEY AUTOINCREMENT,
->                     session_id INTEGER,
->                     timestamp TEXT,
->                     role TEXT,
->                     content TEXT,
->                     FOREIGN KEY(session_id) REFERENCES sessions(id)
->                 )''')
->     conn.commit()
->     return conn
-> 
-> def parse_and_chunk(raw_data, conn):
->     cursor = conn.cursor()
->     
->     # Sort data by time ensures our logic works
->     # Assuming raw_data is a list of dicts: {'timestamp': 'ISO_STR', 'role': 'user', 'content': 'text'}
->     raw_data.sort(key=lambda x: datetime.fromisoformat(x['timestamp']))
-> 
->     current_session_id = None
->     last_time = None
->     session_start_time = None
->     msg_buffer = []
-> 
->     print(f"Processing {len(raw_data)} messages...")
-> 
->     for msg in raw_data:
->         msg_time = datetime.fromisoformat(msg['timestamp'])
->         
->         # LOGIC: Determine if this is a new session
->         is_new_session = False
->         if last_time is None:
->             is_new_session = True
->         else:
->             delta = msg_time - last_time
->             if delta > timedelta(minutes=TIME_THRESHOLD_MINUTES):
->                 is_new_session = True
-> 
->         # If new session, finalize the old one (if exists) and start new
->         if is_new_session:
->             if current_session_id is not None:
->                 # Update the previous session with end_time and count
->                 cursor.execute('''UPDATE sessions SET end_time = ?, message_count = ? 
->                                   WHERE id = ?''', 
->                                   (last_time.isoformat(), len(msg_buffer), current_session_id))
->                 msg_buffer = []
-> 
->             # Create NEW session
->             preview = msg['content'][:50].replace('\n', ' ') + "..."
->             cursor.execute('INSERT INTO sessions (start_time, topic_preview) VALUES (?, ?)', 
->                            (msg_time.isoformat(), preview))
->             current_session_id = cursor.lastrowid
->             session_start_time = msg_time
->         
->         # Insert the message linked to current session
->         cursor.execute('INSERT INTO messages (session_id, timestamp, role, content) VALUES (?, ?, ?, ?)',
->                        (current_session_id, msg['timestamp'], msg['role'], msg['content']))
->         
->         last_time = msg_time
->         msg_buffer.append(msg)
-> 
->     # Finalize the very last session loop
->     if current_session_id:
->         cursor.execute('''UPDATE sessions SET end_time = ?, message_count = ? 
->                           WHERE id = ?''', 
->                           (last_time.isoformat(), len(msg_buffer), current_session_id))
-> 
->     conn.commit()
->     print("Ingestion Complete.")
-> 
-> # --- MOCK DATA LOADER (Replace this with your file open logic) ---
-> def load_your_json_file():
->     # Example structure you need to map your export to:
->     return [
->         {"timestamp": "2023-10-01T08:00:00", "role": "user", "content": "Good morning AI"},
->         {"timestamp": "2023-10-01T08:02:00", "role": "ai", "content": "Good morning!"},
->         # ... 4 hour gap ...
->         {"timestamp": "2023-10-01T12:30:00", "role": "user", "content": "How do I fix a python bug?"}
->     ]
-> 
-> if __name__ == "__main__":
->     conn = init_db()
->     data = load_your_json_file() # Replace with real file loader
->     parse_and_chunk(data, conn)
->     conn.close()
-> ```
-> 
-> -----
-> 
-> ### Phase 3: Visualizing the Timeline
-> 
-> Once the script runs, you don't want to look at raw rows. You want a high-level timeline view. You can run this query directly in your database (using DBeaver, TablePlus, or Python) to see your activity flow:
-> 
-> **The "Life Timeline" Query:**
-> 
-> ```sql
-> SELECT 
->     id AS Session_ID,
->     date(start_time) as Date,
->     time(start_time) as Start,
->     time(end_time) as End,
->     (julianday(end_time) - julianday(start_time)) * 24 * 60 as Duration_Mins,
->     message_count as Vol,
->     topic_preview
-> FROM sessions
-> ORDER BY start_time DESC;
-> ```
-> 
-> **Output Example:**
-> 
-> | Session\_ID | Date | Start | End | Duration\_Mins | Vol | Topic\_preview |
-> | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-> | 102 | 2023-10-01 | 12:30 | 13:15 | 45.0 | 20 | How do I fix a python bug?... |
-> | 101 | 2023-10-01 | 08:00 | 08:05 | 5.0 | 2 | Good morning AI... |
-> 
-> -----
-> 
-> ### Why this approach is better than Vector DBs (for now)
-> 
-> While Vector Databases (RAG) are great for *searching* specific info, they destroy the concept of **Time**. By using a relational DB with "Sessionization," you preserve the *context of when* you were working on specific projects.
-> 
+> this is was gemeni said. This is a classic **ETL (Extract, Transform, Load)** project. To turn a stream of chat logs into a useful timeline, you cannot simply dump the text; you need to perform "Sessionization."
+
+> 
+
+> This process groups individual messages into **chunks** based on time gaps. If you stop talking for 30 minutes and come back, that should likely be a new "event" on your timeline.
+
+> 
+
+> Here is a robust architecture and Python solution to ingest your logs, chunk them by time windows, and store them in a generic SQLite database for timeline analysis.
+
+> 
+
+> -----
+
+> 
+
+> ### The Architecture
+
+> 
+
+> 1.  **Input:** JSON/CSV exports (ChatGPT, Discord, Slack, etc.).
+
+> 2.  **Processing:** Python script to parse timestamps and calculate `time_delta`.
+
+> 3.  **Logic:** If `time_delta` \> X minutes, create a new `Session_ID`.
+
+> 4.  **Storage:** SQLite (files-based, serverless, easy to query).
+
+> 5.  **Output:** A chronological timeline of "Activity Blocks."
+
+> 
+
+> [Image of data pipeline flow diagram]
+
+> 
+
+> -----
+
+> 
+
+> ### Phase 1: The Database Schema
+
+> 
+
+> We need a relational structure that separates the **Event** (the chunk/session) from the **Data** (the specific messages).
+
+> 
+
+> **SQL Schema strategy:**
+
+> 
+
+>   * **`sessions`**: Contains the start time, end time, and summary of the activity block.
+
+>   * **`messages`**: Contains the raw text, linked to a session via `session_id`.
+
+> 
+
+> -----
+
+> 
+
+> ### Phase 2: The Ingestion Script (Python)
+
+> 
+
+> This script assumes you can load your data into a list of dictionaries. It implements **dynamic chunking** based on a generic "Time Threshold" (set here to 60 minutes).
+
+> 
+
+> You will need: `pip install pandas`
+
+> 
+
+> ```python
+
+> import sqlite3
+
+> import json
+
+> from datetime import datetime, timedelta
+
+> 
+
+> # --- CONFIGURATION ---
+
+> DB_NAME = "activity_timeline.db"
+
+> TIME_THRESHOLD_MINUTES = 60  # New session if silence > 60 mins
+
+> # ---------------------
+
+> 
+
+> def init_db():
+
+>     conn = sqlite3.connect(DB_NAME)
+
+>     c = conn.cursor()
+
+>     
+
+>     # Create Sessions Table (The "Chunks")
+
+>     c.execute('''CREATE TABLE IF NOT EXISTS sessions (
+
+>                     id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+>                     start_time TEXT,
+
+>                     end_time TEXT,
+
+>                     message_count INTEGER,
+
+>                     topic_preview TEXT
+
+>                 )''')
+
+> 
+
+>     # Create Messages Table (The "Raw Data")
+
+>     c.execute('''CREATE TABLE IF NOT EXISTS messages (
+
+>                     id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+>                     session_id INTEGER,
+
+>                     timestamp TEXT,
+
+>                     role TEXT,
+
+>                     content TEXT,
+
+>                     FOREIGN KEY(session_id) REFERENCES sessions(id)
+
+>                 )''')
+
+>     conn.commit()
+
+>     return conn
+
+> 
+
+> def parse_and_chunk(raw_data, conn):
+
+>     cursor = conn.cursor()
+
+>     
+
+>     # Sort data by time ensures our logic works
+
+>     # Assuming raw_data is a list of dicts: {'timestamp': 'ISO_STR', 'role': 'user', 'content': 'text'}
+
+>     raw_data.sort(key=lambda x: datetime.fromisoformat(x['timestamp']))
+
+> 
+
+>     current_session_id = None
+
+>     last_time = None
+
+>     session_start_time = None
+
+>     msg_buffer = []
+
+> 
+
+>     print(f"Processing {len(raw_data)} messages...")
+
+> 
+
+>     for msg in raw_data:
+
+>         msg_time = datetime.fromisoformat(msg['timestamp'])
+
+>         
+
+>         # LOGIC: Determine if this is a new session
+
+>         is_new_session = False
+
+>         if last_time is None:
+
+>             is_new_session = True
+
+>         else:
+
+>             delta = msg_time - last_time
+
+>             if delta > timedelta(minutes=TIME_THRESHOLD_MINUTES):
+
+>                 is_new_session = True
+
+> 
+
+>         # If new session, finalize the old one (if exists) and start new
+
+>         if is_new_session:
+
+>             if current_session_id is not None:
+
+>                 # Update the previous session with end_time and count
+
+>                 cursor.execute('''UPDATE sessions SET end_time = ?, message_count = ? 
+
+>                                   WHERE id = ?''', 
+
+>                                   (last_time.isoformat(), len(msg_buffer), current_session_id))
+
+>                 msg_buffer = []
+
+> 
+
+>             # Create NEW session
+
+>             preview = msg['content'][:50].replace('\n', ' ') + "..."
+
+>             cursor.execute('INSERT INTO sessions (start_time, topic_preview) VALUES (?, ?)', 
+
+>                            (msg_time.isoformat(), preview))
+
+>             current_session_id = cursor.lastrowid
+
+>             session_start_time = msg_time
+
+>         
+
+>         # Insert the message linked to current session
+
+>         cursor.execute('INSERT INTO messages (session_id, timestamp, role, content) VALUES (?, ?, ?, ?)',
+
+>                        (current_session_id, msg['timestamp'], msg['role'], msg['content']))
+
+>         
+
+>         last_time = msg_time
+
+>         msg_buffer.append(msg)
+
+> 
+
+>     # Finalize the very last session loop
+
+>     if current_session_id:
+
+>         cursor.execute('''UPDATE sessions SET end_time = ?, message_count = ? 
+
+>                           WHERE id = ?''', 
+
+>                           (last_time.isoformat(), len(msg_buffer), current_session_id))
+
+> 
+
+>     conn.commit()
+
+>     print("Ingestion Complete.")
+
+> 
+
+> # --- MOCK DATA LOADER (Replace this with your file open logic) ---
+
+> def load_your_json_file():
+
+>     # Example structure you need to map your export to:
+
+>     return [
+
+>         {"timestamp": "2023-10-01T08:00:00", "role": "user", "content": "Good morning AI"},
+
+>         {"timestamp": "2023-10-01T08:02:00", "role": "ai", "content": "Good morning!"},
+
+>         # ... 4 hour gap ...
+
+>         {"timestamp": "2023-10-01T12:30:00", "role": "user", "content": "How do I fix a python bug?"}
+
+>     ]
+
+> 
+
+> if __name__ == "__main__":
+
+>     conn = init_db()
+
+>     data = load_your_json_file() # Replace with real file loader
+
+>     parse_and_chunk(data, conn)
+
+>     conn.close()
+
+> ```
+
+> 
+
+> -----
+
+> 
+
+> ### Phase 3: Visualizing the Timeline
+
+> 
+
+> Once the script runs, you don't want to look at raw rows. You want a high-level timeline view. You can run this query directly in your database (using DBeaver, TablePlus, or Python) to see your activity flow:
+
+> 
+
+> **The "Life Timeline" Query:**
+
+> 
+
+> ```sql
+
+> SELECT 
+
+>     id AS Session_ID,
+
+>     date(start_time) as Date,
+
+>     time(start_time) as Start,
+
+>     time(end_time) as End,
+
+>     (julianday(end_time) - julianday(start_time)) * 24 * 60 as Duration_Mins,
+
+>     message_count as Vol,
+
+>     topic_preview
+
+> FROM sessions
+
+> ORDER BY start_time DESC;
+
+> ```
+
+> 
+
+> **Output Example:**
+
+> 
+
+> | Session\_ID | Date | Start | End | Duration\_Mins | Vol | Topic\_preview |
+
+> | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+
+> | 102 | 2023-10-01 | 12:30 | 13:15 | 45.0 | 20 | How do I fix a python bug?... |
+
+> | 101 | 2023-10-01 | 08:00 | 08:05 | 5.0 | 2 | Good morning AI... |
+
+> 
+
+> -----
+
+> 
+
+> ### Why this approach is better than Vector DBs (for now)
+
+> 
+
+> While Vector Databases (RAG) are great for *searching* specific info, they destroy the concept of **Time**. By using a relational DB with "Sessionization," you preserve the *context of when* you were working on specific projects.
+
+> 
+
 > **Would you like me to write a specific parser for a standard ChatGPT `conversations.json` export file to feed into this script?**
 
 ### Assistant
@@ -939,1084 +1120,2162 @@ canonical_ref: ""
 > One brain. Two ways to remember. Humans call that “integrated.” I call it “finally not doing the same work twice.”
 
 ### User
-> to be procise. QiOneMind -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE public.appliances (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   name text NOT NULL,
->   room text,
->   wattage numeric NOT NULL,
->   hours numeric NOT NULL,
->   category text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT appliances_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.applications (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   job_id uuid,
->   date_applied date,
->   method text,
->   status text,
->   resume_version text,
->   cover_letter text,
->   ai_match_score numeric,
->   next_action text,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT applications_pkey PRIMARY KEY (id),
->   CONSTRAINT applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobs(id)
-> );
-> CREATE TABLE public.bills (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   period_start date NOT NULL,
->   period_end date NOT NULL,
->   billed_kwh numeric NOT NULL,
->   billed_amount numeric NOT NULL,
->   estimated_kwh numeric,
->   estimated_amount numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   services_billed numeric,
->   taxes numeric,
->   late_fee numeric DEFAULT 0,
->   disconnect_fee numeric DEFAULT 0,
->   returned_payment_fee numeric DEFAULT 0,
->   other_charges numeric DEFAULT 0,
->   total_billed numeric,
->   payments numeric DEFAULT 0,
->   running_balance numeric DEFAULT 0,
->   avg_daily_kwh numeric,
->   period_days integer,
->   CONSTRAINT bills_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.bills_detailed (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   account_number text,
->   service_id text,
->   rate_id text,
->   meter_number text,
->   bill_issue_date date,
->   due_date date,
->   period_start date NOT NULL,
->   period_end date NOT NULL,
->   billing_days integer,
->   prev_meter_read numeric,
->   curr_meter_read numeric,
->   meter_difference numeric,
->   multiplier numeric,
->   usage_kwh numeric,
->   prev_balance numeric,
->   payments_received numeric,
->   new_charges numeric,
->   taxes_and_fees numeric,
->   total_amount_due numeric,
->   avg_daily_cost numeric,
->   usage_prev_year_kwh numeric,
->   usage_prev_period_kwh numeric,
->   usage_current_period_kwh numeric,
->   avg_daily_usage_kwh numeric,
->   avg_temp_last_year numeric,
->   avg_temp_prev_period numeric,
->   avg_temp_current_period numeric,
->   high_temp_current_period numeric,
->   low_temp_current_period numeric,
->   estimated_usage_kwh numeric,
->   estimated_amount numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT bills_detailed_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.companies (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   name text NOT NULL,
->   website text,
->   size text,
->   industry text,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT companies_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.daily_usage (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   usage_date date NOT NULL,
->   aes_kwh numeric NOT NULL,
->   outside_temp numeric,
->   tesla_kwh numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT daily_usage_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.document_templates (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   document_id text NOT NULL UNIQUE,
->   name text NOT NULL,
->   description text,
->   template_path text NOT NULL,
->   default_props jsonb DEFAULT '{}'::jsonb,
->   schema jsonb,
->   team_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   is_published boolean DEFAULT false,
->   CONSTRAINT document_templates_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.document_versions (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   document_id uuid,
->   version_number integer NOT NULL,
->   props jsonb NOT NULL,
->   pdf_data bytea,
->   html_data text,
->   created_at timestamp with time zone DEFAULT now(),
->   created_by text,
->   CONSTRAINT document_versions_pkey PRIMARY KEY (id),
->   CONSTRAINT document_versions_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.documents (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   application_id uuid,
->   doc_type text,
->   url text,
->   created_at timestamp with time zone DEFAULT now(),
->   document_id text NOT NULL UNIQUE,
->   title text NOT NULL DEFAULT ''::text,
->   template_path text NOT NULL DEFAULT ''::text,
->   props jsonb NOT NULL DEFAULT '{}'::jsonb,
->   CONSTRAINT documents_pkey PRIMARY KEY (id),
->   CONSTRAINT documents_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
-> );
-> CREATE TABLE public.energy_devices (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   name text NOT NULL,
->   room text,
->   category text,
->   wattage numeric,
->   owner text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT energy_devices_pkey PRIMARY KEY (id),
->   CONSTRAINT energy_devices_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.energy_logs (
->   id bigint NOT NULL DEFAULT nextval('energy_logs_id_seq'::regclass),
->   user_id uuid,
->   device_id uuid,
->   date date NOT NULL,
->   hours numeric,
->   kwh numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT energy_logs_pkey PRIMARY KEY (id),
->   CONSTRAINT energy_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
->   CONSTRAINT energy_logs_device_id_fkey FOREIGN KEY (device_id) REFERENCES public.energy_devices(id)
-> );
-> CREATE TABLE public.events (
->   id bigint NOT NULL DEFAULT nextval('events_id_seq'::regclass),
->   module text,
->   type text,
->   payload jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT events_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.gina_memory (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   user_id text DEFAULT 'cody'::text,
->   role text NOT NULL CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
->   content text NOT NULL,
->   app_context text,
->   tab_context text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT gina_memory_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.interviews (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   application_id uuid,
->   interview_date timestamp with time zone,
->   type text,
->   interviewer text,
->   feedback text,
->   ai_prep_questions jsonb,
->   follow_up_date date,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT interviews_pkey PRIMARY KEY (id),
->   CONSTRAINT interviews_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
-> );
-> CREATE TABLE public.jobhunter_applications (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   job_id uuid NOT NULL,
->   status text NOT NULL CHECK (status = ANY (ARRAY['interested'::text, 'applied'::text, 'interview'::text, 'offer'::text, 'rejected'::text])),
->   applied_at timestamp with time zone,
->   notes text,
->   ai_match_score numeric,
->   next_action text,
->   next_action_due timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobhunter_applications_pkey PRIMARY KEY (id),
->   CONSTRAINT jobhunter_applications_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
->   CONSTRAINT jobhunter_applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobhunter_jobs(id)
-> );
-> CREATE TABLE public.jobhunter_jobs (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   title text NOT NULL,
->   company text NOT NULL,
->   location text,
->   url text,
->   source text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobhunter_jobs_pkey PRIMARY KEY (id),
->   CONSTRAINT jobhunter_jobs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.jobs (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   title text NOT NULL,
->   company_id uuid,
->   url text,
->   salary_min numeric,
->   salary_max numeric,
->   job_description text,
->   job_requirements text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobs_pkey PRIMARY KEY (id),
->   CONSTRAINT jobs_company_id_fkey FOREIGN KEY (company_id) REFERENCES public.companies(id)
-> );
-> CREATE TABLE public.kb_embeddings (
->   id bigint NOT NULL DEFAULT nextval('kb_embeddings_id_seq'::regclass),
->   doc_path text NOT NULL,
->   chunk_index integer NOT NULL,
->   text text NOT NULL,
->   embedding USER-DEFINED,
->   meta jsonb DEFAULT '{}'::jsonb,
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   chunk_hash text NOT NULL,
->   CONSTRAINT kb_embeddings_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.lina_messages (
->   id bigint NOT NULL DEFAULT nextval('lina_messages_id_seq'::regclass),
->   session_id uuid,
->   role text CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
->   content text,
->   meta jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT lina_messages_pkey PRIMARY KEY (id),
->   CONSTRAINT lina_messages_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.lina_sessions(id)
-> );
-> CREATE TABLE public.lina_sessions (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   title text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT lina_sessions_pkey PRIMARY KEY (id),
->   CONSTRAINT lina_sessions_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.profiles (
->   id uuid NOT NULL,
->   display_name text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT profiles_pkey PRIMARY KEY (id),
->   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
-> );
-> CREATE TABLE public.qi_apps (
->   id text NOT NULL,
->   label text NOT NULL,
->   created_at timestamp with time zone DEFAULT now(),
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_apps_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.qi_chunks (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text NOT NULL,
->   chunk_index integer NOT NULL,
->   content text NOT NULL,
->   realm text NOT NULL,
->   orbit text NOT NULL,
->   system text NOT NULL,
->   workspace_id uuid,
->   embedding USER-DEFINED,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_chunks_pkey PRIMARY KEY (id),
->   CONSTRAINT qi_chunks_qid_fkey FOREIGN KEY (qid) REFERENCES public.qi_nodes(qid),
->   CONSTRAINT qi_chunks_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
-> );
-> CREATE TABLE public.qi_events (
->   id bigint NOT NULL DEFAULT nextval('qi_events_id_seq'::regclass),
->   created_at timestamp with time zone DEFAULT now(),
->   event_type text NOT NULL,
->   qid text,
->   app_id text,
->   payload jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_events_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.qi_nodes (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text NOT NULL UNIQUE,
->   realm text NOT NULL,
->   orbit text NOT NULL,
->   system text NOT NULL,
->   title text NOT NULL,
->   status text,
->   tags ARRAY DEFAULT '{}'::text[],
->   app_id text,
->   app_tags ARRAY DEFAULT '{}'::text[],
->   origin_qid text,
->   influence_qid text,
->   companion_qid text,
->   occurred_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   workspace_id uuid,
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id),
->   CONSTRAINT qi_nodes_app_id_fkey FOREIGN KEY (app_id) REFERENCES public.qi_apps(id),
->   CONSTRAINT qi_nodes_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
-> );
-> CREATE TABLE public.usage_breakdown (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   bill_id uuid,
->   ev_percentage numeric,
->   heating_percentage numeric,
->   water_heating_percentage numeric,
->   electronics_percentage numeric,
->   appliances_percentage numeric,
->   cooling_percentage numeric,
->   lighting_percentage numeric,
->   other_percentage numeric,
->   ev_kwh numeric,
->   heating_kwh numeric,
->   water_heating_kwh numeric,
->   electronics_kwh numeric,
->   appliances_kwh numeric,
->   cooling_kwh numeric,
->   lighting_kwh numeric,
->   other_kwh numeric,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT usage_breakdown_pkey PRIMARY KEY (id),
->   CONSTRAINT usage_breakdown_bill_id_fkey FOREIGN KEY (bill_id) REFERENCES public.bills_detailed(id)
-> );
-> CREATE TABLE public.usage_timeline (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   period_label text NOT NULL,
->   occupancy_summary text,
->   est_daily_kwh_low numeric,
->   est_daily_kwh_high numeric,
->   est_monthly_kwh_low numeric,
->   est_monthly_kwh_high numeric,
->   ev_monthly_kwh_low numeric,
->   ev_monthly_kwh_high numeric,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT usage_timeline_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.users (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   email text UNIQUE,
->   display_name text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT users_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.workspaces (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   owner_id uuid,
->   name text NOT NULL,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT workspaces_pkey PRIMARY KEY (id),
->   CONSTRAINT workspaces_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES public.profiles(id)
-> ); -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE public.appliances (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   name text NOT NULL,
->   room text,
->   wattage numeric NOT NULL,
->   hours numeric NOT NULL,
->   category text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT appliances_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.applications (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   job_id uuid,
->   date_applied date,
->   method text,
->   status text,
->   resume_version text,
->   cover_letter text,
->   ai_match_score numeric,
->   next_action text,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT applications_pkey PRIMARY KEY (id),
->   CONSTRAINT applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobs(id)
-> );
-> CREATE TABLE public.bills (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   period_start date NOT NULL,
->   period_end date NOT NULL,
->   billed_kwh numeric NOT NULL,
->   billed_amount numeric NOT NULL,
->   estimated_kwh numeric,
->   estimated_amount numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   services_billed numeric,
->   taxes numeric,
->   late_fee numeric DEFAULT 0,
->   disconnect_fee numeric DEFAULT 0,
->   returned_payment_fee numeric DEFAULT 0,
->   other_charges numeric DEFAULT 0,
->   total_billed numeric,
->   payments numeric DEFAULT 0,
->   running_balance numeric DEFAULT 0,
->   avg_daily_kwh numeric,
->   period_days integer,
->   CONSTRAINT bills_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.bills_detailed (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   account_number text,
->   service_id text,
->   rate_id text,
->   meter_number text,
->   bill_issue_date date,
->   due_date date,
->   period_start date NOT NULL,
->   period_end date NOT NULL,
->   billing_days integer,
->   prev_meter_read numeric,
->   curr_meter_read numeric,
->   meter_difference numeric,
->   multiplier numeric,
->   usage_kwh numeric,
->   prev_balance numeric,
->   payments_received numeric,
->   new_charges numeric,
->   taxes_and_fees numeric,
->   total_amount_due numeric,
->   avg_daily_cost numeric,
->   usage_prev_year_kwh numeric,
->   usage_prev_period_kwh numeric,
->   usage_current_period_kwh numeric,
->   avg_daily_usage_kwh numeric,
->   avg_temp_last_year numeric,
->   avg_temp_prev_period numeric,
->   avg_temp_current_period numeric,
->   high_temp_current_period numeric,
->   low_temp_current_period numeric,
->   estimated_usage_kwh numeric,
->   estimated_amount numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT bills_detailed_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.companies (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   name text NOT NULL,
->   website text,
->   size text,
->   industry text,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT companies_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.daily_usage (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   usage_date date NOT NULL,
->   aes_kwh numeric NOT NULL,
->   outside_temp numeric,
->   tesla_kwh numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT daily_usage_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.document_templates (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   document_id text NOT NULL UNIQUE,
->   name text NOT NULL,
->   description text,
->   template_path text NOT NULL,
->   default_props jsonb DEFAULT '{}'::jsonb,
->   schema jsonb,
->   team_id uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   is_published boolean DEFAULT false,
->   CONSTRAINT document_templates_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.document_versions (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   document_id uuid,
->   version_number integer NOT NULL,
->   props jsonb NOT NULL,
->   pdf_data bytea,
->   html_data text,
->   created_at timestamp with time zone DEFAULT now(),
->   created_by text,
->   CONSTRAINT document_versions_pkey PRIMARY KEY (id),
->   CONSTRAINT document_versions_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
-> );
-> CREATE TABLE public.documents (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   application_id uuid,
->   doc_type text,
->   url text,
->   created_at timestamp with time zone DEFAULT now(),
->   document_id text NOT NULL UNIQUE,
->   title text NOT NULL DEFAULT ''::text,
->   template_path text NOT NULL DEFAULT ''::text,
->   props jsonb NOT NULL DEFAULT '{}'::jsonb,
->   CONSTRAINT documents_pkey PRIMARY KEY (id),
->   CONSTRAINT documents_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
-> );
-> CREATE TABLE public.energy_devices (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   name text NOT NULL,
->   room text,
->   category text,
->   wattage numeric,
->   owner text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT energy_devices_pkey PRIMARY KEY (id),
->   CONSTRAINT energy_devices_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.energy_logs (
->   id bigint NOT NULL DEFAULT nextval('energy_logs_id_seq'::regclass),
->   user_id uuid,
->   device_id uuid,
->   date date NOT NULL,
->   hours numeric,
->   kwh numeric,
->   notes text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT energy_logs_pkey PRIMARY KEY (id),
->   CONSTRAINT energy_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
->   CONSTRAINT energy_logs_device_id_fkey FOREIGN KEY (device_id) REFERENCES public.energy_devices(id)
-> );
-> CREATE TABLE public.events (
->   id bigint NOT NULL DEFAULT nextval('events_id_seq'::regclass),
->   module text,
->   type text,
->   payload jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT events_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.gina_memory (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   user_id text DEFAULT 'cody'::text,
->   role text NOT NULL CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
->   content text NOT NULL,
->   app_context text,
->   tab_context text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT gina_memory_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.interviews (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   application_id uuid,
->   interview_date timestamp with time zone,
->   type text,
->   interviewer text,
->   feedback text,
->   ai_prep_questions jsonb,
->   follow_up_date date,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT interviews_pkey PRIMARY KEY (id),
->   CONSTRAINT interviews_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
-> );
-> CREATE TABLE public.jobhunter_applications (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   job_id uuid NOT NULL,
->   status text NOT NULL CHECK (status = ANY (ARRAY['interested'::text, 'applied'::text, 'interview'::text, 'offer'::text, 'rejected'::text])),
->   applied_at timestamp with time zone,
->   notes text,
->   ai_match_score numeric,
->   next_action text,
->   next_action_due timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobhunter_applications_pkey PRIMARY KEY (id),
->   CONSTRAINT jobhunter_applications_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
->   CONSTRAINT jobhunter_applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobhunter_jobs(id)
-> );
-> CREATE TABLE public.jobhunter_jobs (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   title text NOT NULL,
->   company text NOT NULL,
->   location text,
->   url text,
->   source text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobhunter_jobs_pkey PRIMARY KEY (id),
->   CONSTRAINT jobhunter_jobs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.jobs (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   title text NOT NULL,
->   company_id uuid,
->   url text,
->   salary_min numeric,
->   salary_max numeric,
->   job_description text,
->   job_requirements text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT jobs_pkey PRIMARY KEY (id),
->   CONSTRAINT jobs_company_id_fkey FOREIGN KEY (company_id) REFERENCES public.companies(id)
-> );
-> CREATE TABLE public.kb_embeddings (
->   id bigint NOT NULL DEFAULT nextval('kb_embeddings_id_seq'::regclass),
->   doc_path text NOT NULL,
->   chunk_index integer NOT NULL,
->   text text NOT NULL,
->   embedding USER-DEFINED,
->   meta jsonb DEFAULT '{}'::jsonb,
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   chunk_hash text NOT NULL,
->   CONSTRAINT kb_embeddings_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.lina_messages (
->   id bigint NOT NULL DEFAULT nextval('lina_messages_id_seq'::regclass),
->   session_id uuid,
->   role text CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
->   content text,
->   meta jsonb,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT lina_messages_pkey PRIMARY KEY (id),
->   CONSTRAINT lina_messages_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.lina_sessions(id)
-> );
-> CREATE TABLE public.lina_sessions (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   user_id uuid,
->   title text,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT lina_sessions_pkey PRIMARY KEY (id),
->   CONSTRAINT lina_sessions_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
-> );
-> CREATE TABLE public.profiles (
->   id uuid NOT NULL,
->   display_name text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT profiles_pkey PRIMARY KEY (id),
->   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
-> );
-> CREATE TABLE public.qi_apps (
->   id text NOT NULL,
->   label text NOT NULL,
->   created_at timestamp with time zone DEFAULT now(),
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_apps_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.qi_chunks (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text NOT NULL,
->   chunk_index integer NOT NULL,
->   content text NOT NULL,
->   realm text NOT NULL,
->   orbit text NOT NULL,
->   system text NOT NULL,
->   workspace_id uuid,
->   embedding USER-DEFINED,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_chunks_pkey PRIMARY KEY (id),
->   CONSTRAINT qi_chunks_qid_fkey FOREIGN KEY (qid) REFERENCES public.qi_nodes(qid),
->   CONSTRAINT qi_chunks_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
-> );
-> CREATE TABLE public.qi_events (
->   id bigint NOT NULL DEFAULT nextval('qi_events_id_seq'::regclass),
->   created_at timestamp with time zone DEFAULT now(),
->   event_type text NOT NULL,
->   qid text,
->   app_id text,
->   payload jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_events_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.qi_nodes (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text NOT NULL UNIQUE,
->   realm text NOT NULL,
->   orbit text NOT NULL,
->   system text NOT NULL,
->   title text NOT NULL,
->   status text,
->   tags ARRAY DEFAULT '{}'::text[],
->   app_id text,
->   app_tags ARRAY DEFAULT '{}'::text[],
->   origin_qid text,
->   influence_qid text,
->   companion_qid text,
->   occurred_at timestamp with time zone,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   workspace_id uuid,
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id),
->   CONSTRAINT qi_nodes_app_id_fkey FOREIGN KEY (app_id) REFERENCES public.qi_apps(id),
->   CONSTRAINT qi_nodes_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
-> );
-> CREATE TABLE public.usage_breakdown (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   bill_id uuid,
->   ev_percentage numeric,
->   heating_percentage numeric,
->   water_heating_percentage numeric,
->   electronics_percentage numeric,
->   appliances_percentage numeric,
->   cooling_percentage numeric,
->   lighting_percentage numeric,
->   other_percentage numeric,
->   ev_kwh numeric,
->   heating_kwh numeric,
->   water_heating_kwh numeric,
->   electronics_kwh numeric,
->   appliances_kwh numeric,
->   cooling_kwh numeric,
->   lighting_kwh numeric,
->   other_kwh numeric,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT usage_breakdown_pkey PRIMARY KEY (id),
->   CONSTRAINT usage_breakdown_bill_id_fkey FOREIGN KEY (bill_id) REFERENCES public.bills_detailed(id)
-> );
-> CREATE TABLE public.usage_timeline (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   period_label text NOT NULL,
->   occupancy_summary text,
->   est_daily_kwh_low numeric,
->   est_daily_kwh_high numeric,
->   est_monthly_kwh_low numeric,
->   est_monthly_kwh_high numeric,
->   ev_monthly_kwh_low numeric,
->   ev_monthly_kwh_high numeric,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT usage_timeline_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.users (
->   id uuid NOT NULL DEFAULT uuid_generate_v4(),
->   email text UNIQUE,
->   display_name text,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT users_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE public.workspaces (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   owner_id uuid,
->   name text NOT NULL,
->   created_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT workspaces_pkey PRIMARY KEY (id),
->   CONSTRAINT workspaces_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES public.profiles(id)
-> ); -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE qi_os.email_attachment (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   message_id uuid NOT NULL,
->   filename text,
->   mime_type text,
->   size_bytes bigint,
->   storage_bucket text,
->   storage_path text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT email_attachment_pkey PRIMARY KEY (id),
->   CONSTRAINT email_attachment_message_id_fkey FOREIGN KEY (message_id) REFERENCES qi_os.email_message(id)
-> );
-> CREATE TABLE qi_os.email_entity_link (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   message_id uuid NOT NULL,
->   entity_type text NOT NULL,
->   entity_id text NOT NULL,
->   confidence numeric DEFAULT 1.00,
->   context jsonb DEFAULT '{}'::jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT email_entity_link_pkey PRIMARY KEY (id),
->   CONSTRAINT email_entity_link_message_id_fkey FOREIGN KEY (message_id) REFERENCES qi_os.email_message(id)
-> );
-> CREATE TABLE qi_os.email_message (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   thread_id uuid,
->   qid text,
->   source USER-DEFINED NOT NULL DEFAULT 'zoho_mail'::qi_os.email_source,
->   external_id text NOT NULL,
->   message_id text,
->   in_reply_to text,
->   from_addr text NOT NULL,
->   from_name text,
->   to_addrs ARRAY DEFAULT '{}'::text[],
->   cc_addrs ARRAY DEFAULT '{}'::text[],
->   bcc_addrs ARRAY DEFAULT '{}'::text[],
->   subject text,
->   snippet text,
->   body_text text,
->   body_html text,
->   has_attachments boolean NOT NULL DEFAULT false,
->   is_read boolean NOT NULL DEFAULT false,
->   is_starred boolean NOT NULL DEFAULT false,
->   triage_status USER-DEFINED NOT NULL DEFAULT 'new'::qi_os.email_triage_status,
->   priority USER-DEFINED NOT NULL DEFAULT 'normal'::qi_os.email_priority,
->   folder text,
->   labels ARRAY DEFAULT '{}'::text[],
->   account text,
->   email_size bigint,
->   folder_id text,
->   tag_ids ARRAY DEFAULT '{}'::text[],
->   zuid text,
->   reply_to text,
->   sent_at timestamp with time zone,
->   received_at timestamp with time zone NOT NULL,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   raw jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT email_message_pkey PRIMARY KEY (id),
->   CONSTRAINT email_message_thread_id_fkey FOREIGN KEY (thread_id) REFERENCES qi_os.email_thread(id)
-> );
-> CREATE TABLE qi_os.email_thread (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text,
->   external_thread_id text,
->   subject text,
->   party_hash text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   last_message_at timestamp with time zone,
->   meta jsonb DEFAULT '{}'::jsonb,
->   CONSTRAINT email_thread_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE qi_os.qi_creative_projects (
->   id integer NOT NULL DEFAULT nextval('qi_os.qi_creative_projects_id_seq'::regclass),
->   title text NOT NULL,
->   type text NOT NULL CHECK (type = ANY (ARRAY['video'::text, 'image'::text, 'animation'::text, 'audio'::text, 'other'::text])),
->   summary text,
->   prompt text NOT NULL,
->   status text NOT NULL DEFAULT 'draft'::text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT qi_creative_projects_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE qi_os.qi_node_tags (
->   node_id uuid NOT NULL,
->   tag_id integer NOT NULL,
->   CONSTRAINT qi_node_tags_pkey PRIMARY KEY (node_id, tag_id),
->   CONSTRAINT qi_node_tags_node_id_fkey FOREIGN KEY (node_id) REFERENCES qi_os.qi_nodes(id),
->   CONSTRAINT qi_node_tags_tag_id_fkey FOREIGN KEY (tag_id) REFERENCES qi_os.qi_tags(id)
-> );
-> CREATE TABLE qi_os.qi_nodes (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   qid text NOT NULL UNIQUE CHECK (qid ~ '^qid-[0-9]{8}-[0-9A-Za-z_-]+$'::text),
->   qi_decimal text NOT NULL CHECK (qi_decimal ~ '^[0-9]{1,2}\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}$'::text),
->   file_name text NOT NULL,
->   rel_path text NOT NULL,
->   system text NOT NULL,
->   realm_slug text NOT NULL,
->   realm_tag text,
->   title text NOT NULL,
->   slug text NOT NULL,
->   file_doc_type text NOT NULL,
->   node_type text NOT NULL,
->   status text NOT NULL DEFAULT 'active'::text,
->   ai_visibility text NOT NULL DEFAULT 'internal'::text,
->   security_realm text NOT NULL DEFAULT 'system'::text,
->   summary text,
->   sort_order integer DEFAULT 0,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   last_indexed_at timestamp with time zone,
->   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE qi_os.qi_realms (
->   id integer NOT NULL DEFAULT nextval('qi_os.qi_realms_id_seq'::regclass),
->   realm_id integer NOT NULL,
->   realm_slug text NOT NULL UNIQUE,
->   realm_tag text NOT NULL UNIQUE,
->   name text NOT NULL,
->   essence text NOT NULL,
->   is_active boolean NOT NULL DEFAULT true,
->   sort_order integer NOT NULL DEFAULT 0,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT qi_realms_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE qi_os.qi_tag_classes (
->   id integer NOT NULL DEFAULT nextval('qi_os.qi_tag_classes_id_seq'::regclass),
->   key text NOT NULL UNIQUE,
->   label text NOT NULL,
->   description text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT qi_tag_classes_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE qi_os.qi_tags (
->   id integer NOT NULL DEFAULT nextval('qi_os.qi_tags_id_seq'::regclass),
->   slug text NOT NULL UNIQUE,
->   label text NOT NULL,
->   class_id integer,
->   realm_slug text,
->   description text,
->   is_active boolean NOT NULL DEFAULT true,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT qi_tags_pkey PRIMARY KEY (id),
->   CONSTRAINT qi_tags_class_id_fkey FOREIGN KEY (class_id) REFERENCES qi_os.qi_tag_classes(id)
-> ); -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE realtime.messages (
->   topic text NOT NULL,
->   extension text NOT NULL,
->   payload jsonb,
->   event text,
->   private boolean DEFAULT false,
->   updated_at timestamp without time zone NOT NULL DEFAULT now(),
->   inserted_at timestamp without time zone NOT NULL DEFAULT now(),
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   CONSTRAINT messages_pkey PRIMARY KEY (id, inserted_at)
-> );
-> CREATE TABLE realtime.schema_migrations (
->   version bigint NOT NULL,
->   inserted_at timestamp without time zone,
->   CONSTRAINT schema_migrations_pkey PRIMARY KEY (version)
-> );
-> CREATE TABLE realtime.subscription (
->   id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
->   subscription_id uuid NOT NULL,
->   entity regclass NOT NULL,
->   filters ARRAY NOT NULL DEFAULT '{}'::realtime.user_defined_filter[],
->   claims jsonb NOT NULL,
->   claims_role regrole NOT NULL DEFAULT realtime.to_regrole((claims ->> 'role'::text)),
->   created_at timestamp without time zone NOT NULL DEFAULT timezone('utc'::text, now()),
->   CONSTRAINT subscription_pkey PRIMARY KEY (id)
-> ); -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE storage.buckets (
->   id text NOT NULL,
->   name text NOT NULL,
->   owner uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   public boolean DEFAULT false,
->   avif_autodetection boolean DEFAULT false,
->   file_size_limit bigint,
->   allowed_mime_types ARRAY,
->   owner_id text,
->   type USER-DEFINED NOT NULL DEFAULT 'STANDARD'::storage.buckettype,
->   CONSTRAINT buckets_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE storage.buckets_analytics (
->   name text NOT NULL,
->   type USER-DEFINED NOT NULL DEFAULT 'ANALYTICS'::storage.buckettype,
->   format text NOT NULL DEFAULT 'ICEBERG'::text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   deleted_at timestamp with time zone,
->   CONSTRAINT buckets_analytics_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE storage.buckets_vectors (
->   id text NOT NULL,
->   type USER-DEFINED NOT NULL DEFAULT 'VECTOR'::storage.buckettype,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT buckets_vectors_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE storage.migrations (
->   id integer NOT NULL,
->   name character varying NOT NULL UNIQUE,
->   hash character varying NOT NULL,
->   executed_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
->   CONSTRAINT migrations_pkey PRIMARY KEY (id)
-> );
-> CREATE TABLE storage.objects (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   bucket_id text,
->   name text,
->   owner uuid,
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   last_accessed_at timestamp with time zone DEFAULT now(),
->   metadata jsonb,
->   path_tokens ARRAY DEFAULT string_to_array(name, '/'::text),
->   version text,
->   owner_id text,
->   user_metadata jsonb,
->   level integer,
->   CONSTRAINT objects_pkey PRIMARY KEY (id),
->   CONSTRAINT objects_bucketId_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
-> );
-> CREATE TABLE storage.prefixes (
->   bucket_id text NOT NULL,
->   name text NOT NULL,
->   level integer NOT NULL DEFAULT storage.get_level(name),
->   created_at timestamp with time zone DEFAULT now(),
->   updated_at timestamp with time zone DEFAULT now(),
->   CONSTRAINT prefixes_pkey PRIMARY KEY (bucket_id, level, name),
->   CONSTRAINT prefixes_bucketId_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
-> );
-> CREATE TABLE storage.s3_multipart_uploads (
->   id text NOT NULL,
->   in_progress_size bigint NOT NULL DEFAULT 0,
->   upload_signature text NOT NULL,
->   bucket_id text NOT NULL,
->   key text NOT NULL,
->   version text NOT NULL,
->   owner_id text,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   user_metadata jsonb,
->   CONSTRAINT s3_multipart_uploads_pkey PRIMARY KEY (id),
->   CONSTRAINT s3_multipart_uploads_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
-> );
-> CREATE TABLE storage.s3_multipart_uploads_parts (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   upload_id text NOT NULL,
->   size bigint NOT NULL DEFAULT 0,
->   part_number integer NOT NULL,
->   bucket_id text NOT NULL,
->   key text NOT NULL,
->   etag text NOT NULL,
->   owner_id text,
->   version text NOT NULL,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT s3_multipart_uploads_parts_pkey PRIMARY KEY (id),
->   CONSTRAINT s3_multipart_uploads_parts_upload_id_fkey FOREIGN KEY (upload_id) REFERENCES storage.s3_multipart_uploads(id),
->   CONSTRAINT s3_multipart_uploads_parts_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
-> );
-> CREATE TABLE storage.vector_indexes (
->   id text NOT NULL DEFAULT gen_random_uuid(),
->   name text NOT NULL,
->   bucket_id text NOT NULL,
->   data_type text NOT NULL,
->   dimension integer NOT NULL,
->   distance_metric text NOT NULL,
->   metadata_configuration jsonb,
->   created_at timestamp with time zone NOT NULL DEFAULT now(),
->   updated_at timestamp with time zone NOT NULL DEFAULT now(),
->   CONSTRAINT vector_indexes_pkey PRIMARY KEY (id),
->   CONSTRAINT vector_indexes_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets_vectors(id)
-> ); -- WARNING: This schema is for context only and is not meant to be run.
-> -- Table order and constraints may not be valid for execution.
-> 
-> CREATE TABLE vault.secrets (
->   id uuid NOT NULL DEFAULT gen_random_uuid(),
->   name text,
->   description text NOT NULL DEFAULT ''::text,
->   secret text NOT NULL,
->   key_id uuid,
->   nonce bytea DEFAULT vault._crypto_aead_det_noncegen(),
->   created_at timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
->   updated_at timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
->   CONSTRAINT secrets_pkey PRIMARY KEY (id)
+> to be procise. QiOneMind -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE public.appliances (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text NOT NULL,
+
+>   room text,
+
+>   wattage numeric NOT NULL,
+
+>   hours numeric NOT NULL,
+
+>   category text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT appliances_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.applications (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   job_id uuid,
+
+>   date_applied date,
+
+>   method text,
+
+>   status text,
+
+>   resume_version text,
+
+>   cover_letter text,
+
+>   ai_match_score numeric,
+
+>   next_action text,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT applications_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobs(id)
+
+> );
+
+> CREATE TABLE public.bills (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   period_start date NOT NULL,
+
+>   period_end date NOT NULL,
+
+>   billed_kwh numeric NOT NULL,
+
+>   billed_amount numeric NOT NULL,
+
+>   estimated_kwh numeric,
+
+>   estimated_amount numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   services_billed numeric,
+
+>   taxes numeric,
+
+>   late_fee numeric DEFAULT 0,
+
+>   disconnect_fee numeric DEFAULT 0,
+
+>   returned_payment_fee numeric DEFAULT 0,
+
+>   other_charges numeric DEFAULT 0,
+
+>   total_billed numeric,
+
+>   payments numeric DEFAULT 0,
+
+>   running_balance numeric DEFAULT 0,
+
+>   avg_daily_kwh numeric,
+
+>   period_days integer,
+
+>   CONSTRAINT bills_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.bills_detailed (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   account_number text,
+
+>   service_id text,
+
+>   rate_id text,
+
+>   meter_number text,
+
+>   bill_issue_date date,
+
+>   due_date date,
+
+>   period_start date NOT NULL,
+
+>   period_end date NOT NULL,
+
+>   billing_days integer,
+
+>   prev_meter_read numeric,
+
+>   curr_meter_read numeric,
+
+>   meter_difference numeric,
+
+>   multiplier numeric,
+
+>   usage_kwh numeric,
+
+>   prev_balance numeric,
+
+>   payments_received numeric,
+
+>   new_charges numeric,
+
+>   taxes_and_fees numeric,
+
+>   total_amount_due numeric,
+
+>   avg_daily_cost numeric,
+
+>   usage_prev_year_kwh numeric,
+
+>   usage_prev_period_kwh numeric,
+
+>   usage_current_period_kwh numeric,
+
+>   avg_daily_usage_kwh numeric,
+
+>   avg_temp_last_year numeric,
+
+>   avg_temp_prev_period numeric,
+
+>   avg_temp_current_period numeric,
+
+>   high_temp_current_period numeric,
+
+>   low_temp_current_period numeric,
+
+>   estimated_usage_kwh numeric,
+
+>   estimated_amount numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT bills_detailed_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.companies (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text NOT NULL,
+
+>   website text,
+
+>   size text,
+
+>   industry text,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT companies_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.daily_usage (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   usage_date date NOT NULL,
+
+>   aes_kwh numeric NOT NULL,
+
+>   outside_temp numeric,
+
+>   tesla_kwh numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT daily_usage_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.document_templates (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   document_id text NOT NULL UNIQUE,
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   template_path text NOT NULL,
+
+>   default_props jsonb DEFAULT '{}'::jsonb,
+
+>   schema jsonb,
+
+>   team_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   is_published boolean DEFAULT false,
+
+>   CONSTRAINT document_templates_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.document_versions (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   document_id uuid,
+
+>   version_number integer NOT NULL,
+
+>   props jsonb NOT NULL,
+
+>   pdf_data bytea,
+
+>   html_data text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   created_by text,
+
+>   CONSTRAINT document_versions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT document_versions_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.documents (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   application_id uuid,
+
+>   doc_type text,
+
+>   url text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   document_id text NOT NULL UNIQUE,
+
+>   title text NOT NULL DEFAULT ''::text,
+
+>   template_path text NOT NULL DEFAULT ''::text,
+
+>   props jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT documents_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT documents_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
+
+> );
+
+> CREATE TABLE public.energy_devices (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   name text NOT NULL,
+
+>   room text,
+
+>   category text,
+
+>   wattage numeric,
+
+>   owner text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT energy_devices_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT energy_devices_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.energy_logs (
+
+>   id bigint NOT NULL DEFAULT nextval('energy_logs_id_seq'::regclass),
+
+>   user_id uuid,
+
+>   device_id uuid,
+
+>   date date NOT NULL,
+
+>   hours numeric,
+
+>   kwh numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT energy_logs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT energy_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
+
+>   CONSTRAINT energy_logs_device_id_fkey FOREIGN KEY (device_id) REFERENCES public.energy_devices(id)
+
+> );
+
+> CREATE TABLE public.events (
+
+>   id bigint NOT NULL DEFAULT nextval('events_id_seq'::regclass),
+
+>   module text,
+
+>   type text,
+
+>   payload jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT events_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.gina_memory (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   user_id text DEFAULT 'cody'::text,
+
+>   role text NOT NULL CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
+
+>   content text NOT NULL,
+
+>   app_context text,
+
+>   tab_context text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT gina_memory_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.interviews (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   application_id uuid,
+
+>   interview_date timestamp with time zone,
+
+>   type text,
+
+>   interviewer text,
+
+>   feedback text,
+
+>   ai_prep_questions jsonb,
+
+>   follow_up_date date,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT interviews_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT interviews_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
+
+> );
+
+> CREATE TABLE public.jobhunter_applications (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   job_id uuid NOT NULL,
+
+>   status text NOT NULL CHECK (status = ANY (ARRAY['interested'::text, 'applied'::text, 'interview'::text, 'offer'::text, 'rejected'::text])),
+
+>   applied_at timestamp with time zone,
+
+>   notes text,
+
+>   ai_match_score numeric,
+
+>   next_action text,
+
+>   next_action_due timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobhunter_applications_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobhunter_applications_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
+
+>   CONSTRAINT jobhunter_applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobhunter_jobs(id)
+
+> );
+
+> CREATE TABLE public.jobhunter_jobs (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   title text NOT NULL,
+
+>   company text NOT NULL,
+
+>   location text,
+
+>   url text,
+
+>   source text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobhunter_jobs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobhunter_jobs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.jobs (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   title text NOT NULL,
+
+>   company_id uuid,
+
+>   url text,
+
+>   salary_min numeric,
+
+>   salary_max numeric,
+
+>   job_description text,
+
+>   job_requirements text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobs_company_id_fkey FOREIGN KEY (company_id) REFERENCES public.companies(id)
+
+> );
+
+> CREATE TABLE public.kb_embeddings (
+
+>   id bigint NOT NULL DEFAULT nextval('kb_embeddings_id_seq'::regclass),
+
+>   doc_path text NOT NULL,
+
+>   chunk_index integer NOT NULL,
+
+>   text text NOT NULL,
+
+>   embedding USER-DEFINED,
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   chunk_hash text NOT NULL,
+
+>   CONSTRAINT kb_embeddings_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.lina_messages (
+
+>   id bigint NOT NULL DEFAULT nextval('lina_messages_id_seq'::regclass),
+
+>   session_id uuid,
+
+>   role text CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
+
+>   content text,
+
+>   meta jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT lina_messages_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT lina_messages_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.lina_sessions(id)
+
+> );
+
+> CREATE TABLE public.lina_sessions (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   title text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT lina_sessions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT lina_sessions_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.profiles (
+
+>   id uuid NOT NULL,
+
+>   display_name text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT profiles_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
+
+> );
+
+> CREATE TABLE public.qi_apps (
+
+>   id text NOT NULL,
+
+>   label text NOT NULL,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_apps_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.qi_chunks (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text NOT NULL,
+
+>   chunk_index integer NOT NULL,
+
+>   content text NOT NULL,
+
+>   realm text NOT NULL,
+
+>   orbit text NOT NULL,
+
+>   system text NOT NULL,
+
+>   workspace_id uuid,
+
+>   embedding USER-DEFINED,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_chunks_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT qi_chunks_qid_fkey FOREIGN KEY (qid) REFERENCES public.qi_nodes(qid),
+
+>   CONSTRAINT qi_chunks_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
+
+> );
+
+> CREATE TABLE public.qi_events (
+
+>   id bigint NOT NULL DEFAULT nextval('qi_events_id_seq'::regclass),
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   event_type text NOT NULL,
+
+>   qid text,
+
+>   app_id text,
+
+>   payload jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_events_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.qi_nodes (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text NOT NULL UNIQUE,
+
+>   realm text NOT NULL,
+
+>   orbit text NOT NULL,
+
+>   system text NOT NULL,
+
+>   title text NOT NULL,
+
+>   status text,
+
+>   tags ARRAY DEFAULT '{}'::text[],
+
+>   app_id text,
+
+>   app_tags ARRAY DEFAULT '{}'::text[],
+
+>   origin_qid text,
+
+>   influence_qid text,
+
+>   companion_qid text,
+
+>   occurred_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   workspace_id uuid,
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT qi_nodes_app_id_fkey FOREIGN KEY (app_id) REFERENCES public.qi_apps(id),
+
+>   CONSTRAINT qi_nodes_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
+
+> );
+
+> CREATE TABLE public.usage_breakdown (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   bill_id uuid,
+
+>   ev_percentage numeric,
+
+>   heating_percentage numeric,
+
+>   water_heating_percentage numeric,
+
+>   electronics_percentage numeric,
+
+>   appliances_percentage numeric,
+
+>   cooling_percentage numeric,
+
+>   lighting_percentage numeric,
+
+>   other_percentage numeric,
+
+>   ev_kwh numeric,
+
+>   heating_kwh numeric,
+
+>   water_heating_kwh numeric,
+
+>   electronics_kwh numeric,
+
+>   appliances_kwh numeric,
+
+>   cooling_kwh numeric,
+
+>   lighting_kwh numeric,
+
+>   other_kwh numeric,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT usage_breakdown_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT usage_breakdown_bill_id_fkey FOREIGN KEY (bill_id) REFERENCES public.bills_detailed(id)
+
+> );
+
+> CREATE TABLE public.usage_timeline (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   period_label text NOT NULL,
+
+>   occupancy_summary text,
+
+>   est_daily_kwh_low numeric,
+
+>   est_daily_kwh_high numeric,
+
+>   est_monthly_kwh_low numeric,
+
+>   est_monthly_kwh_high numeric,
+
+>   ev_monthly_kwh_low numeric,
+
+>   ev_monthly_kwh_high numeric,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT usage_timeline_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.users (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   email text UNIQUE,
+
+>   display_name text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT users_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.workspaces (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   owner_id uuid,
+
+>   name text NOT NULL,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT workspaces_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT workspaces_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES public.profiles(id)
+
+> ); -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE public.appliances (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text NOT NULL,
+
+>   room text,
+
+>   wattage numeric NOT NULL,
+
+>   hours numeric NOT NULL,
+
+>   category text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT appliances_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.applications (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   job_id uuid,
+
+>   date_applied date,
+
+>   method text,
+
+>   status text,
+
+>   resume_version text,
+
+>   cover_letter text,
+
+>   ai_match_score numeric,
+
+>   next_action text,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT applications_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobs(id)
+
+> );
+
+> CREATE TABLE public.bills (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   period_start date NOT NULL,
+
+>   period_end date NOT NULL,
+
+>   billed_kwh numeric NOT NULL,
+
+>   billed_amount numeric NOT NULL,
+
+>   estimated_kwh numeric,
+
+>   estimated_amount numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   services_billed numeric,
+
+>   taxes numeric,
+
+>   late_fee numeric DEFAULT 0,
+
+>   disconnect_fee numeric DEFAULT 0,
+
+>   returned_payment_fee numeric DEFAULT 0,
+
+>   other_charges numeric DEFAULT 0,
+
+>   total_billed numeric,
+
+>   payments numeric DEFAULT 0,
+
+>   running_balance numeric DEFAULT 0,
+
+>   avg_daily_kwh numeric,
+
+>   period_days integer,
+
+>   CONSTRAINT bills_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.bills_detailed (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   account_number text,
+
+>   service_id text,
+
+>   rate_id text,
+
+>   meter_number text,
+
+>   bill_issue_date date,
+
+>   due_date date,
+
+>   period_start date NOT NULL,
+
+>   period_end date NOT NULL,
+
+>   billing_days integer,
+
+>   prev_meter_read numeric,
+
+>   curr_meter_read numeric,
+
+>   meter_difference numeric,
+
+>   multiplier numeric,
+
+>   usage_kwh numeric,
+
+>   prev_balance numeric,
+
+>   payments_received numeric,
+
+>   new_charges numeric,
+
+>   taxes_and_fees numeric,
+
+>   total_amount_due numeric,
+
+>   avg_daily_cost numeric,
+
+>   usage_prev_year_kwh numeric,
+
+>   usage_prev_period_kwh numeric,
+
+>   usage_current_period_kwh numeric,
+
+>   avg_daily_usage_kwh numeric,
+
+>   avg_temp_last_year numeric,
+
+>   avg_temp_prev_period numeric,
+
+>   avg_temp_current_period numeric,
+
+>   high_temp_current_period numeric,
+
+>   low_temp_current_period numeric,
+
+>   estimated_usage_kwh numeric,
+
+>   estimated_amount numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT bills_detailed_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.companies (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text NOT NULL,
+
+>   website text,
+
+>   size text,
+
+>   industry text,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT companies_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.daily_usage (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   usage_date date NOT NULL,
+
+>   aes_kwh numeric NOT NULL,
+
+>   outside_temp numeric,
+
+>   tesla_kwh numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT daily_usage_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.document_templates (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   document_id text NOT NULL UNIQUE,
+
+>   name text NOT NULL,
+
+>   description text,
+
+>   template_path text NOT NULL,
+
+>   default_props jsonb DEFAULT '{}'::jsonb,
+
+>   schema jsonb,
+
+>   team_id uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   is_published boolean DEFAULT false,
+
+>   CONSTRAINT document_templates_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.document_versions (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   document_id uuid,
+
+>   version_number integer NOT NULL,
+
+>   props jsonb NOT NULL,
+
+>   pdf_data bytea,
+
+>   html_data text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   created_by text,
+
+>   CONSTRAINT document_versions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT document_versions_document_id_fkey FOREIGN KEY (document_id) REFERENCES public.documents(id)
+
+> );
+
+> CREATE TABLE public.documents (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   application_id uuid,
+
+>   doc_type text,
+
+>   url text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   document_id text NOT NULL UNIQUE,
+
+>   title text NOT NULL DEFAULT ''::text,
+
+>   template_path text NOT NULL DEFAULT ''::text,
+
+>   props jsonb NOT NULL DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT documents_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT documents_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
+
+> );
+
+> CREATE TABLE public.energy_devices (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   name text NOT NULL,
+
+>   room text,
+
+>   category text,
+
+>   wattage numeric,
+
+>   owner text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT energy_devices_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT energy_devices_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.energy_logs (
+
+>   id bigint NOT NULL DEFAULT nextval('energy_logs_id_seq'::regclass),
+
+>   user_id uuid,
+
+>   device_id uuid,
+
+>   date date NOT NULL,
+
+>   hours numeric,
+
+>   kwh numeric,
+
+>   notes text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT energy_logs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT energy_logs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
+
+>   CONSTRAINT energy_logs_device_id_fkey FOREIGN KEY (device_id) REFERENCES public.energy_devices(id)
+
+> );
+
+> CREATE TABLE public.events (
+
+>   id bigint NOT NULL DEFAULT nextval('events_id_seq'::regclass),
+
+>   module text,
+
+>   type text,
+
+>   payload jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT events_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.gina_memory (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   user_id text DEFAULT 'cody'::text,
+
+>   role text NOT NULL CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
+
+>   content text NOT NULL,
+
+>   app_context text,
+
+>   tab_context text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT gina_memory_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.interviews (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   application_id uuid,
+
+>   interview_date timestamp with time zone,
+
+>   type text,
+
+>   interviewer text,
+
+>   feedback text,
+
+>   ai_prep_questions jsonb,
+
+>   follow_up_date date,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT interviews_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT interviews_application_id_fkey FOREIGN KEY (application_id) REFERENCES public.applications(id)
+
+> );
+
+> CREATE TABLE public.jobhunter_applications (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   job_id uuid NOT NULL,
+
+>   status text NOT NULL CHECK (status = ANY (ARRAY['interested'::text, 'applied'::text, 'interview'::text, 'offer'::text, 'rejected'::text])),
+
+>   applied_at timestamp with time zone,
+
+>   notes text,
+
+>   ai_match_score numeric,
+
+>   next_action text,
+
+>   next_action_due timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobhunter_applications_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobhunter_applications_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id),
+
+>   CONSTRAINT jobhunter_applications_job_id_fkey FOREIGN KEY (job_id) REFERENCES public.jobhunter_jobs(id)
+
+> );
+
+> CREATE TABLE public.jobhunter_jobs (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   title text NOT NULL,
+
+>   company text NOT NULL,
+
+>   location text,
+
+>   url text,
+
+>   source text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobhunter_jobs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobhunter_jobs_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.jobs (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   title text NOT NULL,
+
+>   company_id uuid,
+
+>   url text,
+
+>   salary_min numeric,
+
+>   salary_max numeric,
+
+>   job_description text,
+
+>   job_requirements text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT jobs_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT jobs_company_id_fkey FOREIGN KEY (company_id) REFERENCES public.companies(id)
+
+> );
+
+> CREATE TABLE public.kb_embeddings (
+
+>   id bigint NOT NULL DEFAULT nextval('kb_embeddings_id_seq'::regclass),
+
+>   doc_path text NOT NULL,
+
+>   chunk_index integer NOT NULL,
+
+>   text text NOT NULL,
+
+>   embedding USER-DEFINED,
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   chunk_hash text NOT NULL,
+
+>   CONSTRAINT kb_embeddings_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.lina_messages (
+
+>   id bigint NOT NULL DEFAULT nextval('lina_messages_id_seq'::regclass),
+
+>   session_id uuid,
+
+>   role text CHECK (role = ANY (ARRAY['user'::text, 'assistant'::text, 'system'::text])),
+
+>   content text,
+
+>   meta jsonb,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT lina_messages_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT lina_messages_session_id_fkey FOREIGN KEY (session_id) REFERENCES public.lina_sessions(id)
+
+> );
+
+> CREATE TABLE public.lina_sessions (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   user_id uuid,
+
+>   title text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT lina_sessions_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT lina_sessions_user_id_fkey FOREIGN KEY (user_id) REFERENCES public.users(id)
+
+> );
+
+> CREATE TABLE public.profiles (
+
+>   id uuid NOT NULL,
+
+>   display_name text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT profiles_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT profiles_id_fkey FOREIGN KEY (id) REFERENCES auth.users(id)
+
+> );
+
+> CREATE TABLE public.qi_apps (
+
+>   id text NOT NULL,
+
+>   label text NOT NULL,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_apps_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.qi_chunks (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text NOT NULL,
+
+>   chunk_index integer NOT NULL,
+
+>   content text NOT NULL,
+
+>   realm text NOT NULL,
+
+>   orbit text NOT NULL,
+
+>   system text NOT NULL,
+
+>   workspace_id uuid,
+
+>   embedding USER-DEFINED,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_chunks_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT qi_chunks_qid_fkey FOREIGN KEY (qid) REFERENCES public.qi_nodes(qid),
+
+>   CONSTRAINT qi_chunks_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
+
+> );
+
+> CREATE TABLE public.qi_events (
+
+>   id bigint NOT NULL DEFAULT nextval('qi_events_id_seq'::regclass),
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   event_type text NOT NULL,
+
+>   qid text,
+
+>   app_id text,
+
+>   payload jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_events_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.qi_nodes (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text NOT NULL UNIQUE,
+
+>   realm text NOT NULL,
+
+>   orbit text NOT NULL,
+
+>   system text NOT NULL,
+
+>   title text NOT NULL,
+
+>   status text,
+
+>   tags ARRAY DEFAULT '{}'::text[],
+
+>   app_id text,
+
+>   app_tags ARRAY DEFAULT '{}'::text[],
+
+>   origin_qid text,
+
+>   influence_qid text,
+
+>   companion_qid text,
+
+>   occurred_at timestamp with time zone,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   workspace_id uuid,
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT qi_nodes_app_id_fkey FOREIGN KEY (app_id) REFERENCES public.qi_apps(id),
+
+>   CONSTRAINT qi_nodes_workspace_id_fkey FOREIGN KEY (workspace_id) REFERENCES public.workspaces(id)
+
+> );
+
+> CREATE TABLE public.usage_breakdown (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   bill_id uuid,
+
+>   ev_percentage numeric,
+
+>   heating_percentage numeric,
+
+>   water_heating_percentage numeric,
+
+>   electronics_percentage numeric,
+
+>   appliances_percentage numeric,
+
+>   cooling_percentage numeric,
+
+>   lighting_percentage numeric,
+
+>   other_percentage numeric,
+
+>   ev_kwh numeric,
+
+>   heating_kwh numeric,
+
+>   water_heating_kwh numeric,
+
+>   electronics_kwh numeric,
+
+>   appliances_kwh numeric,
+
+>   cooling_kwh numeric,
+
+>   lighting_kwh numeric,
+
+>   other_kwh numeric,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT usage_breakdown_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT usage_breakdown_bill_id_fkey FOREIGN KEY (bill_id) REFERENCES public.bills_detailed(id)
+
+> );
+
+> CREATE TABLE public.usage_timeline (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   period_label text NOT NULL,
+
+>   occupancy_summary text,
+
+>   est_daily_kwh_low numeric,
+
+>   est_daily_kwh_high numeric,
+
+>   est_monthly_kwh_low numeric,
+
+>   est_monthly_kwh_high numeric,
+
+>   ev_monthly_kwh_low numeric,
+
+>   ev_monthly_kwh_high numeric,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT usage_timeline_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.users (
+
+>   id uuid NOT NULL DEFAULT uuid_generate_v4(),
+
+>   email text UNIQUE,
+
+>   display_name text,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT users_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE public.workspaces (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   owner_id uuid,
+
+>   name text NOT NULL,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT workspaces_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT workspaces_owner_id_fkey FOREIGN KEY (owner_id) REFERENCES public.profiles(id)
+
+> ); -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE qi_os.email_attachment (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   message_id uuid NOT NULL,
+
+>   filename text,
+
+>   mime_type text,
+
+>   size_bytes bigint,
+
+>   storage_bucket text,
+
+>   storage_path text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT email_attachment_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT email_attachment_message_id_fkey FOREIGN KEY (message_id) REFERENCES qi_os.email_message(id)
+
+> );
+
+> CREATE TABLE qi_os.email_entity_link (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   message_id uuid NOT NULL,
+
+>   entity_type text NOT NULL,
+
+>   entity_id text NOT NULL,
+
+>   confidence numeric DEFAULT 1.00,
+
+>   context jsonb DEFAULT '{}'::jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT email_entity_link_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT email_entity_link_message_id_fkey FOREIGN KEY (message_id) REFERENCES qi_os.email_message(id)
+
+> );
+
+> CREATE TABLE qi_os.email_message (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   thread_id uuid,
+
+>   qid text,
+
+>   source USER-DEFINED NOT NULL DEFAULT 'zoho_mail'::qi_os.email_source,
+
+>   external_id text NOT NULL,
+
+>   message_id text,
+
+>   in_reply_to text,
+
+>   from_addr text NOT NULL,
+
+>   from_name text,
+
+>   to_addrs ARRAY DEFAULT '{}'::text[],
+
+>   cc_addrs ARRAY DEFAULT '{}'::text[],
+
+>   bcc_addrs ARRAY DEFAULT '{}'::text[],
+
+>   subject text,
+
+>   snippet text,
+
+>   body_text text,
+
+>   body_html text,
+
+>   has_attachments boolean NOT NULL DEFAULT false,
+
+>   is_read boolean NOT NULL DEFAULT false,
+
+>   is_starred boolean NOT NULL DEFAULT false,
+
+>   triage_status USER-DEFINED NOT NULL DEFAULT 'new'::qi_os.email_triage_status,
+
+>   priority USER-DEFINED NOT NULL DEFAULT 'normal'::qi_os.email_priority,
+
+>   folder text,
+
+>   labels ARRAY DEFAULT '{}'::text[],
+
+>   account text,
+
+>   email_size bigint,
+
+>   folder_id text,
+
+>   tag_ids ARRAY DEFAULT '{}'::text[],
+
+>   zuid text,
+
+>   reply_to text,
+
+>   sent_at timestamp with time zone,
+
+>   received_at timestamp with time zone NOT NULL,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   raw jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT email_message_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT email_message_thread_id_fkey FOREIGN KEY (thread_id) REFERENCES qi_os.email_thread(id)
+
+> );
+
+> CREATE TABLE qi_os.email_thread (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text,
+
+>   external_thread_id text,
+
+>   subject text,
+
+>   party_hash text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   last_message_at timestamp with time zone,
+
+>   meta jsonb DEFAULT '{}'::jsonb,
+
+>   CONSTRAINT email_thread_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE qi_os.qi_creative_projects (
+
+>   id integer NOT NULL DEFAULT nextval('qi_os.qi_creative_projects_id_seq'::regclass),
+
+>   title text NOT NULL,
+
+>   type text NOT NULL CHECK (type = ANY (ARRAY['video'::text, 'image'::text, 'animation'::text, 'audio'::text, 'other'::text])),
+
+>   summary text,
+
+>   prompt text NOT NULL,
+
+>   status text NOT NULL DEFAULT 'draft'::text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT qi_creative_projects_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE qi_os.qi_node_tags (
+
+>   node_id uuid NOT NULL,
+
+>   tag_id integer NOT NULL,
+
+>   CONSTRAINT qi_node_tags_pkey PRIMARY KEY (node_id, tag_id),
+
+>   CONSTRAINT qi_node_tags_node_id_fkey FOREIGN KEY (node_id) REFERENCES qi_os.qi_nodes(id),
+
+>   CONSTRAINT qi_node_tags_tag_id_fkey FOREIGN KEY (tag_id) REFERENCES qi_os.qi_tags(id)
+
+> );
+
+> CREATE TABLE qi_os.qi_nodes (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   qid text NOT NULL UNIQUE CHECK (qid ~ '^qid-[0-9]{8}-[0-9A-Za-z_-]+$'::text),
+
+>   qi_decimal text NOT NULL CHECK (qi_decimal ~ '^[0-9]{1,2}\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}$'::text),
+
+>   file_name text NOT NULL,
+
+>   rel_path text NOT NULL,
+
+>   system text NOT NULL,
+
+>   realm_slug text NOT NULL,
+
+>   realm_tag text,
+
+>   title text NOT NULL,
+
+>   slug text NOT NULL,
+
+>   file_doc_type text NOT NULL,
+
+>   node_type text NOT NULL,
+
+>   status text NOT NULL DEFAULT 'active'::text,
+
+>   ai_visibility text NOT NULL DEFAULT 'internal'::text,
+
+>   security_realm text NOT NULL DEFAULT 'system'::text,
+
+>   summary text,
+
+>   sort_order integer DEFAULT 0,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   last_indexed_at timestamp with time zone,
+
+>   CONSTRAINT qi_nodes_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE qi_os.qi_realms (
+
+>   id integer NOT NULL DEFAULT nextval('qi_os.qi_realms_id_seq'::regclass),
+
+>   realm_id integer NOT NULL,
+
+>   realm_slug text NOT NULL UNIQUE,
+
+>   realm_tag text NOT NULL UNIQUE,
+
+>   name text NOT NULL,
+
+>   essence text NOT NULL,
+
+>   is_active boolean NOT NULL DEFAULT true,
+
+>   sort_order integer NOT NULL DEFAULT 0,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT qi_realms_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE qi_os.qi_tag_classes (
+
+>   id integer NOT NULL DEFAULT nextval('qi_os.qi_tag_classes_id_seq'::regclass),
+
+>   key text NOT NULL UNIQUE,
+
+>   label text NOT NULL,
+
+>   description text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT qi_tag_classes_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE qi_os.qi_tags (
+
+>   id integer NOT NULL DEFAULT nextval('qi_os.qi_tags_id_seq'::regclass),
+
+>   slug text NOT NULL UNIQUE,
+
+>   label text NOT NULL,
+
+>   class_id integer,
+
+>   realm_slug text,
+
+>   description text,
+
+>   is_active boolean NOT NULL DEFAULT true,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT qi_tags_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT qi_tags_class_id_fkey FOREIGN KEY (class_id) REFERENCES qi_os.qi_tag_classes(id)
+
+> ); -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE realtime.messages (
+
+>   topic text NOT NULL,
+
+>   extension text NOT NULL,
+
+>   payload jsonb,
+
+>   event text,
+
+>   private boolean DEFAULT false,
+
+>   updated_at timestamp without time zone NOT NULL DEFAULT now(),
+
+>   inserted_at timestamp without time zone NOT NULL DEFAULT now(),
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   CONSTRAINT messages_pkey PRIMARY KEY (id, inserted_at)
+
+> );
+
+> CREATE TABLE realtime.schema_migrations (
+
+>   version bigint NOT NULL,
+
+>   inserted_at timestamp without time zone,
+
+>   CONSTRAINT schema_migrations_pkey PRIMARY KEY (version)
+
+> );
+
+> CREATE TABLE realtime.subscription (
+
+>   id bigint GENERATED ALWAYS AS IDENTITY NOT NULL,
+
+>   subscription_id uuid NOT NULL,
+
+>   entity regclass NOT NULL,
+
+>   filters ARRAY NOT NULL DEFAULT '{}'::realtime.user_defined_filter[],
+
+>   claims jsonb NOT NULL,
+
+>   claims_role regrole NOT NULL DEFAULT realtime.to_regrole((claims ->> 'role'::text)),
+
+>   created_at timestamp without time zone NOT NULL DEFAULT timezone('utc'::text, now()),
+
+>   CONSTRAINT subscription_pkey PRIMARY KEY (id)
+
+> ); -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE storage.buckets (
+
+>   id text NOT NULL,
+
+>   name text NOT NULL,
+
+>   owner uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   public boolean DEFAULT false,
+
+>   avif_autodetection boolean DEFAULT false,
+
+>   file_size_limit bigint,
+
+>   allowed_mime_types ARRAY,
+
+>   owner_id text,
+
+>   type USER-DEFINED NOT NULL DEFAULT 'STANDARD'::storage.buckettype,
+
+>   CONSTRAINT buckets_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE storage.buckets_analytics (
+
+>   name text NOT NULL,
+
+>   type USER-DEFINED NOT NULL DEFAULT 'ANALYTICS'::storage.buckettype,
+
+>   format text NOT NULL DEFAULT 'ICEBERG'::text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   deleted_at timestamp with time zone,
+
+>   CONSTRAINT buckets_analytics_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE storage.buckets_vectors (
+
+>   id text NOT NULL,
+
+>   type USER-DEFINED NOT NULL DEFAULT 'VECTOR'::storage.buckettype,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT buckets_vectors_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE storage.migrations (
+
+>   id integer NOT NULL,
+
+>   name character varying NOT NULL UNIQUE,
+
+>   hash character varying NOT NULL,
+
+>   executed_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+
+>   CONSTRAINT migrations_pkey PRIMARY KEY (id)
+
+> );
+
+> CREATE TABLE storage.objects (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   bucket_id text,
+
+>   name text,
+
+>   owner uuid,
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   last_accessed_at timestamp with time zone DEFAULT now(),
+
+>   metadata jsonb,
+
+>   path_tokens ARRAY DEFAULT string_to_array(name, '/'::text),
+
+>   version text,
+
+>   owner_id text,
+
+>   user_metadata jsonb,
+
+>   level integer,
+
+>   CONSTRAINT objects_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT objects_bucketId_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
+
+> );
+
+> CREATE TABLE storage.prefixes (
+
+>   bucket_id text NOT NULL,
+
+>   name text NOT NULL,
+
+>   level integer NOT NULL DEFAULT storage.get_level(name),
+
+>   created_at timestamp with time zone DEFAULT now(),
+
+>   updated_at timestamp with time zone DEFAULT now(),
+
+>   CONSTRAINT prefixes_pkey PRIMARY KEY (bucket_id, level, name),
+
+>   CONSTRAINT prefixes_bucketId_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
+
+> );
+
+> CREATE TABLE storage.s3_multipart_uploads (
+
+>   id text NOT NULL,
+
+>   in_progress_size bigint NOT NULL DEFAULT 0,
+
+>   upload_signature text NOT NULL,
+
+>   bucket_id text NOT NULL,
+
+>   key text NOT NULL,
+
+>   version text NOT NULL,
+
+>   owner_id text,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   user_metadata jsonb,
+
+>   CONSTRAINT s3_multipart_uploads_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT s3_multipart_uploads_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
+
+> );
+
+> CREATE TABLE storage.s3_multipart_uploads_parts (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   upload_id text NOT NULL,
+
+>   size bigint NOT NULL DEFAULT 0,
+
+>   part_number integer NOT NULL,
+
+>   bucket_id text NOT NULL,
+
+>   key text NOT NULL,
+
+>   etag text NOT NULL,
+
+>   owner_id text,
+
+>   version text NOT NULL,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT s3_multipart_uploads_parts_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT s3_multipart_uploads_parts_upload_id_fkey FOREIGN KEY (upload_id) REFERENCES storage.s3_multipart_uploads(id),
+
+>   CONSTRAINT s3_multipart_uploads_parts_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets(id)
+
+> );
+
+> CREATE TABLE storage.vector_indexes (
+
+>   id text NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text NOT NULL,
+
+>   bucket_id text NOT NULL,
+
+>   data_type text NOT NULL,
+
+>   dimension integer NOT NULL,
+
+>   distance_metric text NOT NULL,
+
+>   metadata_configuration jsonb,
+
+>   created_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT now(),
+
+>   CONSTRAINT vector_indexes_pkey PRIMARY KEY (id),
+
+>   CONSTRAINT vector_indexes_bucket_id_fkey FOREIGN KEY (bucket_id) REFERENCES storage.buckets_vectors(id)
+
+> ); -- WARNING: This schema is for context only and is not meant to be run.
+
+> -- Table order and constraints may not be valid for execution.
+
+> 
+
+> CREATE TABLE vault.secrets (
+
+>   id uuid NOT NULL DEFAULT gen_random_uuid(),
+
+>   name text,
+
+>   description text NOT NULL DEFAULT ''::text,
+
+>   secret text NOT NULL,
+
+>   key_id uuid,
+
+>   nonce bytea DEFAULT vault._crypto_aead_det_noncegen(),
+
+>   created_at timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+>   updated_at timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+>   CONSTRAINT secrets_pkey PRIMARY KEY (id)
+
 > );
 
 ### Assistant

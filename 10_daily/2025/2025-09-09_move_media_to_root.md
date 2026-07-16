@@ -3,9 +3,9 @@ layout: page
 title: "Move media to root"
 slug: "move_media_to_root"
 created_at: "2025-09-09 20:35:45"
-updated_at: "2025-09-09 20:35:45"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

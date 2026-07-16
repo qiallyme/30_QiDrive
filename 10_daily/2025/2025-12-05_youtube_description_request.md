@@ -3,9 +3,9 @@ layout: page
 title: "Youtube description request"
 slug: "youtube_description_request"
 created_at: "2025-12-05 05:51:51"
-updated_at: "2025-12-05 05:51:51"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -73,238 +73,470 @@ canonical_ref: ""
 > - A thumbnail title list (3–6 options)
 
 ### User
-> for each of these videos, give me an updated title, full descriptins and keywords, all seo optimized. 
-> Filter
-> Video
-> Visibility
-> Restrictions
-> 
-> Date
-> 
-> Views
-> Comments
-> Likes (vs. dislikes)
-> Video thumbnail: The $20,000 Tax Swing Case
-> 7:07
-> The $20,000 Tax Swing Case
-> Most people don’t realize how fast they leak money at tax time. This real case study shows exactly how a client went from overpaying by nearly $20,000 to keeping their cash, lowering liability, and building a stronger financial position — all by correcting a few critical mistakes. In this video, we break down: 🔥 The hidden errors that triggered the $20K swing 🔥 The exact adjustments that flipped the outcome 🔥 How proper categorization, timing, and filings completely changed the bill 🔥 The s
-> Public
-> None
-> Dec 5, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: The QiAlly Way
-> 4:52
-> The QiAlly Way
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: The  Simple  Request
-> 1:44
-> The Simple Request
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: QiAlly Smart Tax Binder
-> 3:45
-> QiAlly Smart Tax Binder
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: Keeping It Real
-> 6:34
-> Keeping It Real
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: Extracting Data Right 2
-> 2:11
-> Extracting Data Right 2
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: Crew Time Tracker Guide
-> 6:47
-> Crew Time Tracker Guide
-> Add description
-> Draft
-> None
-> 
-> Edit draft
-> Video thumbnail: Lumara Community Shield
-> 5:23
-> Lumara Community Shield
-> Add description
-> Unlisted
-> None
-> Nov 19, 2025
-> Uploaded
-> 0
-> 0
-> –
-> Video thumbnail: Lumara  Profit & Impact
-> 5:58
-> Lumara Profit & Impact
-> Add description
-> Unlisted
-> None
-> Nov 19, 2025
-> Uploaded
-> 0
-> 0
-> –
-> Video thumbnail: Lumara  A National Safety Net
-> 6:04
-> Lumara A National Safety Net
-> Add description
-> Unlisted
-> None
-> Nov 19, 2025
-> Uploaded
-> 0
-> 0
-> –
-> Video thumbnail: Lumara  A Human Safety Net
-> 6:15
-> Lumara A Human Safety Net
-> Add description
-> Unlisted
-> None
-> Nov 19, 2025
-> Uploaded
-> 0
-> 0
-> –
-> Video thumbnail: Lumara  A Safety Net
-> 5:15
-> Lumara A Safety Net
-> Add description
-> Unlisted
-> None
-> Nov 19, 2025
-> Uploaded
-> 0
-> 0
-> –
-> Video thumbnail: QiNote: Unlock Your Mind’s Universe
-> 0:16
-> QiNote: Unlock Your Mind’s Universe
-> Step into QiNote, the platform that transforms your knowledge into an intelligent, interconnected universe. Gina AI remembers, organizes, and enhances everything you do—your tasks, ideas, notes, and projects—all in one seamless system. Explore the future of personal productivity and digital memory.
-> Public
-> None
-> Nov 17, 2025
-> Published
-> 3
-> 0
-> –
-> Video thumbnail: Extracting Data Right 2
-> 2:11
-> Extracting Data Right 2
-> Add description
-> Public
-> None
-> Nov 7, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: QiAlly Get Your Indiana License Explainer
-> 3:10
-> QiAlly Get Your Indiana License Explainer
-> Add description
-> Public
-> None
-> Nov 6, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: QiAlly Driver License Steps for Indiana
-> 3:10
-> QiAlly Driver License Steps for Indiana
-> Add description
-> Public
-> None
-> Nov 6, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: Visual  Leadership in action  3
-> 0:09
-> Visual Leadership in action 3
-> Add description
-> Public
-> None
-> Oct 8, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: QiAlly Smart Tax Binder
-> 3:45
-> QiAlly Smart Tax Binder
-> Add description
-> Public
-> None
-> Oct 8, 2025
-> Published
-> 2
-> 0
-> –
-> Video thumbnail: My Values & Why I Do This
-> 4:52
-> My Values & Why I Do This
-> Q explains that QiAlly was built on integrity, clarity, accountability, and empathy.
-> Public
-> None
-> Oct 8, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: Real talk before the paperwork.
-> 6:34
-> Real talk before the paperwork.
-> This is me — Q — breaking down what I do, what I don’t do, and what working together really means. I’m your fractional C-suite partner, not your “yes person.” I bring clarity, systems, and backbone — and I expect honesty, respect, and communication in return.
-> Public
-> None
-> Oct 8, 2025
-> Published
-> 0
-> 0
-> –
-> Video thumbnail: Proposal for Direct Hire Staffing Services
-> 2:58
-> Proposal for Direct Hire Staffing Services
-> Add description
-> Public
-> Copyright
-> Oct 5, 2025
-> Premiered
-> 2
-> 0
-> –
-> Video thumbnail: Solving Back Taxes  Case Study
-> 5:48
-> Solving Back Taxes Case Study
-> Public
-> None
-> Oct 3, 2025
-> Published
-> 3
+> for each of these videos, give me an updated title, full descriptins and keywords, all seo optimized. 
+
+> Filter
+
+> Video
+
+> Visibility
+
+> Restrictions
+
+> 
+
+> Date
+
+> 
+
+> Views
+
+> Comments
+
+> Likes (vs. dislikes)
+
+> Video thumbnail: The $20,000 Tax Swing Case
+
+> 7:07
+
+> The $20,000 Tax Swing Case
+
+> Most people don’t realize how fast they leak money at tax time. This real case study shows exactly how a client went from overpaying by nearly $20,000 to keeping their cash, lowering liability, and building a stronger financial position — all by correcting a few critical mistakes. In this video, we break down: 🔥 The hidden errors that triggered the $20K swing 🔥 The exact adjustments that flipped the outcome 🔥 How proper categorization, timing, and filings completely changed the bill 🔥 The s
+
+> Public
+
+> None
+
+> Dec 5, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: The QiAlly Way
+
+> 4:52
+
+> The QiAlly Way
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: The  Simple  Request
+
+> 1:44
+
+> The Simple Request
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: QiAlly Smart Tax Binder
+
+> 3:45
+
+> QiAlly Smart Tax Binder
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: Keeping It Real
+
+> 6:34
+
+> Keeping It Real
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: Extracting Data Right 2
+
+> 2:11
+
+> Extracting Data Right 2
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: Crew Time Tracker Guide
+
+> 6:47
+
+> Crew Time Tracker Guide
+
+> Add description
+
+> Draft
+
+> None
+
+> 
+
+> Edit draft
+
+> Video thumbnail: Lumara Community Shield
+
+> 5:23
+
+> Lumara Community Shield
+
+> Add description
+
+> Unlisted
+
+> None
+
+> Nov 19, 2025
+
+> Uploaded
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Lumara  Profit & Impact
+
+> 5:58
+
+> Lumara Profit & Impact
+
+> Add description
+
+> Unlisted
+
+> None
+
+> Nov 19, 2025
+
+> Uploaded
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Lumara  A National Safety Net
+
+> 6:04
+
+> Lumara A National Safety Net
+
+> Add description
+
+> Unlisted
+
+> None
+
+> Nov 19, 2025
+
+> Uploaded
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Lumara  A Human Safety Net
+
+> 6:15
+
+> Lumara A Human Safety Net
+
+> Add description
+
+> Unlisted
+
+> None
+
+> Nov 19, 2025
+
+> Uploaded
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Lumara  A Safety Net
+
+> 5:15
+
+> Lumara A Safety Net
+
+> Add description
+
+> Unlisted
+
+> None
+
+> Nov 19, 2025
+
+> Uploaded
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: QiNote: Unlock Your Mind’s Universe
+
+> 0:16
+
+> QiNote: Unlock Your Mind’s Universe
+
+> Step into QiNote, the platform that transforms your knowledge into an intelligent, interconnected universe. Gina AI remembers, organizes, and enhances everything you do—your tasks, ideas, notes, and projects—all in one seamless system. Explore the future of personal productivity and digital memory.
+
+> Public
+
+> None
+
+> Nov 17, 2025
+
+> Published
+
+> 3
+
+> 0
+
+> –
+
+> Video thumbnail: Extracting Data Right 2
+
+> 2:11
+
+> Extracting Data Right 2
+
+> Add description
+
+> Public
+
+> None
+
+> Nov 7, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: QiAlly Get Your Indiana License Explainer
+
+> 3:10
+
+> QiAlly Get Your Indiana License Explainer
+
+> Add description
+
+> Public
+
+> None
+
+> Nov 6, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: QiAlly Driver License Steps for Indiana
+
+> 3:10
+
+> QiAlly Driver License Steps for Indiana
+
+> Add description
+
+> Public
+
+> None
+
+> Nov 6, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Visual  Leadership in action  3
+
+> 0:09
+
+> Visual Leadership in action 3
+
+> Add description
+
+> Public
+
+> None
+
+> Oct 8, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: QiAlly Smart Tax Binder
+
+> 3:45
+
+> QiAlly Smart Tax Binder
+
+> Add description
+
+> Public
+
+> None
+
+> Oct 8, 2025
+
+> Published
+
+> 2
+
+> 0
+
+> –
+
+> Video thumbnail: My Values & Why I Do This
+
+> 4:52
+
+> My Values & Why I Do This
+
+> Q explains that QiAlly was built on integrity, clarity, accountability, and empathy.
+
+> Public
+
+> None
+
+> Oct 8, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Real talk before the paperwork.
+
+> 6:34
+
+> Real talk before the paperwork.
+
+> This is me — Q — breaking down what I do, what I don’t do, and what working together really means. I’m your fractional C-suite partner, not your “yes person.” I bring clarity, systems, and backbone — and I expect honesty, respect, and communication in return.
+
+> Public
+
+> None
+
+> Oct 8, 2025
+
+> Published
+
+> 0
+
+> 0
+
+> –
+
+> Video thumbnail: Proposal for Direct Hire Staffing Services
+
+> 2:58
+
+> Proposal for Direct Hire Staffing Services
+
+> Add description
+
+> Public
+
+> Copyright
+
+> Oct 5, 2025
+
+> Premiered
+
+> 2
+
+> 0
+
+> –
+
+> Video thumbnail: Solving Back Taxes  Case Study
+
+> 5:48
+
+> Solving Back Taxes Case Study
+
+> Public
+
+> None
+
+> Oct 3, 2025
+
+> Published
+
+> 3
+
 > 0
 
 ### Assistant
@@ -1978,10 +2210,14 @@ canonical_ref: ""
 > **“Build the full visual kit.”**
 
 ### User
-> redo this prompt. Create a minimal, modern circular logo for youtube channel for “QiAlly” Empower. Innovate. Grow.  with a premium, tech-forward aesthetic.
-> Use a glassmorphism style with subtle depth, soft glow, and clean geometric shapes.
-> Primary palette: icy whites, soft blues, and subtle reflections.
-> Center the stylized letters “Q” and “A” combined into one elegant symbol. humming bird
+> redo this prompt. Create a minimal, modern circular logo for youtube channel for “QiAlly” Empower. Innovate. Grow.  with a premium, tech-forward aesthetic.
+
+> Use a glassmorphism style with subtle depth, soft glow, and clean geometric shapes.
+
+> Primary palette: icy whites, soft blues, and subtle reflections.
+
+> Center the stylized letters “Q” and “A” combined into one elegant symbol. humming bird
+
 > No text outside the symbol. High contrast, crisp edges, ultra-polished, professional, scalable for small profile icons.
 
 ### Assistant

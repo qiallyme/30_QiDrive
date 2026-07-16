@@ -3,9 +3,9 @@ layout: page
 title: "Codex Cleanup Instructions"
 slug: "codex_cleanup_instructions"
 created_at: "2026-05-10 04:21:10"
-updated_at: "2026-05-10 04:21:10"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,71 +39,136 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> i have codex working on making this into something i can actually have my mom review finalize, sign and document, what should i tell codex # File Tree: QiLegacy
-> 
-> **Generated:** 5/10/2026, 4:20:37 AM
-> **Root Path:** `c:\QiLabs\apps\QiLegacy`
-> 
-> ```
-> ├── 00_Introduction_and_Disclaimer
-> │   ├── 00. Introduction_and_Disclaimer.html
-> │   ├── 00_Introduction_and_Disclaimer.html
-> │   ├── _00_Introduction_and_Disclaimer.md
-> │   └── index.md
-> ├── 01. Last Will and Testament
-> │   ├── 01_Last_Will_and_Testament.html
-> │   ├── 02_Living_Will_and_Health_Care_Power.html
-> │   ├── Wills.html
-> │   ├── _01. Last Will and Testament.md
-> │   └── index.md
-> ├── 02. Living Will (Advance Health-Care Directive)
-> │   ├── 03_Durable_Power_of_Attorney_Financial.html
-> │   ├── _02. Living Will (Advance Health-Care Directive).md
-> │   └── index.md
-> ├── 03. Durable Power of Attorney (Financial & Legal)
-> │   ├── 04_HIPAA_Authorization.html
-> │   ├── _03. Durable Power of Attorney (Financial & Legal).html
-> │   ├── _03. Durable Power of Attorney (Financial & Legal).md
-> │   └── index.md
-> ├── 04. Medical Power of Attorney (Health-Care Proxy)
-> │   ├── 05_Revocable_Living_Trust.html
-> │   ├── _04. Medical Power of Attorney (Health-Care Proxy).md
-> │   └── index.md
-> ├── 05. HIPAA Authorization and Release
-> │   ├── 06_Beneficiary_Designations.html
-> │   ├── _05. HIPAA Authorization and Release.md
-> │   └── index.md
-> ├── 06. Revocable Living Trust (Optional)
-> │   ├── 07_Final_Wishes_Addendum.html
-> │   ├── _06. Revocable Living Trust (Optional).html
-> │   ├── _06. Revocable Living Trust (Optional).md
-> │   └── index.md
-> ├── 07. Digital Estate Directive
-> │   ├── _07. Digital Estate Directive.html
-> │   ├── _07. Digital Estate Directive.md
-> │   └── index.md
-> ├── 08. Final Wishes & Personal Addendum
-> │   ├── _08. Final Wishes & Personal Addendum.html
-> │   ├── _08. Final Wishes & Personal Addendum.md
-> │   └── index.md
-> ├── 09. Reference & Resource Section
-> │   ├── _09. Reference & Resource Section.html
-> │   ├── _09. Reference & Resource Section.md
-> │   └── index.md
-> ├── 10. Closing Notes & Master Signature Record
-> │   ├── _10. Closing Notes & Master Signature Record.html
-> │   └── index.md
-> ├── site-lib
-> │   ├── index.md
-> │   ├── metadata.json
-> │   ├── rss.xml
-> │   └── search-index.json
-> ├── Complete_Legal_Estate_Package.md
-> ├── QiOne.html
-> └── _1.30.30.60.1_Estate_Package.html
-> ```
-> 
-> ---
+> i have codex working on making this into something i can actually have my mom review finalize, sign and document, what should i tell codex # File Tree: QiLegacy
+
+> 
+
+> **Generated:** 5/10/2026, 4:20:37 AM
+
+> **Root Path:** `c:\QiLabs\apps\QiLegacy`
+
+> 
+
+> ```
+
+> ├── 00_Introduction_and_Disclaimer
+
+> │   ├── 00. Introduction_and_Disclaimer.html
+
+> │   ├── 00_Introduction_and_Disclaimer.html
+
+> │   ├── _00_Introduction_and_Disclaimer.md
+
+> │   └── index.md
+
+> ├── 01. Last Will and Testament
+
+> │   ├── 01_Last_Will_and_Testament.html
+
+> │   ├── 02_Living_Will_and_Health_Care_Power.html
+
+> │   ├── Wills.html
+
+> │   ├── _01. Last Will and Testament.md
+
+> │   └── index.md
+
+> ├── 02. Living Will (Advance Health-Care Directive)
+
+> │   ├── 03_Durable_Power_of_Attorney_Financial.html
+
+> │   ├── _02. Living Will (Advance Health-Care Directive).md
+
+> │   └── index.md
+
+> ├── 03. Durable Power of Attorney (Financial & Legal)
+
+> │   ├── 04_HIPAA_Authorization.html
+
+> │   ├── _03. Durable Power of Attorney (Financial & Legal).html
+
+> │   ├── _03. Durable Power of Attorney (Financial & Legal).md
+
+> │   └── index.md
+
+> ├── 04. Medical Power of Attorney (Health-Care Proxy)
+
+> │   ├── 05_Revocable_Living_Trust.html
+
+> │   ├── _04. Medical Power of Attorney (Health-Care Proxy).md
+
+> │   └── index.md
+
+> ├── 05. HIPAA Authorization and Release
+
+> │   ├── 06_Beneficiary_Designations.html
+
+> │   ├── _05. HIPAA Authorization and Release.md
+
+> │   └── index.md
+
+> ├── 06. Revocable Living Trust (Optional)
+
+> │   ├── 07_Final_Wishes_Addendum.html
+
+> │   ├── _06. Revocable Living Trust (Optional).html
+
+> │   ├── _06. Revocable Living Trust (Optional).md
+
+> │   └── index.md
+
+> ├── 07. Digital Estate Directive
+
+> │   ├── _07. Digital Estate Directive.html
+
+> │   ├── _07. Digital Estate Directive.md
+
+> │   └── index.md
+
+> ├── 08. Final Wishes & Personal Addendum
+
+> │   ├── _08. Final Wishes & Personal Addendum.html
+
+> │   ├── _08. Final Wishes & Personal Addendum.md
+
+> │   └── index.md
+
+> ├── 09. Reference & Resource Section
+
+> │   ├── _09. Reference & Resource Section.html
+
+> │   ├── _09. Reference & Resource Section.md
+
+> │   └── index.md
+
+> ├── 10. Closing Notes & Master Signature Record
+
+> │   ├── _10. Closing Notes & Master Signature Record.html
+
+> │   └── index.md
+
+> ├── site-lib
+
+> │   ├── index.md
+
+> │   ├── metadata.json
+
+> │   ├── rss.xml
+
+> │   └── search-index.json
+
+> ├── Complete_Legal_Estate_Package.md
+
+> ├── QiOne.html
+
+> └── _1.30.30.60.1_Estate_Package.html
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension*
 
 ### Assistant

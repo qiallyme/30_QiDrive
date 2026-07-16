@@ -3,9 +3,9 @@ layout: page
 title: "HTML Receipt for Thermal Paper"
 slug: "html_receipt_for_thermal_paper"
 created_at: "2023-07-31 15:11:43"
-updated_at: "2023-07-31 15:11:43"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

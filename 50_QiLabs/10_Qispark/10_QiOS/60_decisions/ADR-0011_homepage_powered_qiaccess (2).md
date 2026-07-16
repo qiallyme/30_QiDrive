@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0011 Homepage Powered Qiaccess
-slug: ""
+slug: adr-0011-homepage-powered-qiaccess
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7eaaad3740d1469c8db923ad68dc51c7
 canonical_ref: ""
 source_type: manual
 template_key: master-template

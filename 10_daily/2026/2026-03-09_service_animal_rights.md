@@ -3,9 +3,9 @@ layout: page
 title: "Service animal rights"
 slug: "service_animal_rights"
 created_at: "2026-03-09 18:25:52"
-updated_at: "2026-03-09 18:25:52"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

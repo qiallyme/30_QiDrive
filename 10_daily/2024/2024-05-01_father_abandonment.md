@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Father abandonment"
 slug: "father_abandonment"
 summary: ""
 status: active
 created_at: "2024-05-01"
-updated_at: "2024-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0ec1e8f123fd447a9df4156decc4ed5c
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-05-01
 ---
+
 # Father abandonment
 
 Category: Challenge

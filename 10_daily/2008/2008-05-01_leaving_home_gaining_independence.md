@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Leaving home - gaining independence"
 slug: "leaving_home_gaining_independence"
 summary: ""
 status: active
 created_at: "2008-05-01"
-updated_at: "2008-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e99edc7bd7544771a367bb88b20438a0
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2008-05-01
 ---
+
 # Leaving home - gaining independence
 
 Category: Personal Milestone

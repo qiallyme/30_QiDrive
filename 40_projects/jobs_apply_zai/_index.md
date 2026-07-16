@@ -2,9 +2,29 @@
 title: "Zaitullah Job Launch Command Center"
 type: project
 status: active
-updated_at: 2026-07-16
+updated_at: "2026-07-16T06:49:37-04:00"
 tags: [jobs, applications, career, launch]
 cssclasses: [zai-job-launch]
+layout: page
+slug: zaitullah-job-launch-command-center
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: ab8a860970564eb1893b4da0ab08b368
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+project: ""
+priority: ""
+next_action: ""
+due_date: ""
 ---
 
 <div style="padding:42px 32px;border-radius:22px;background:linear-gradient(135deg,#081b33 0%,#123e68 55%,#0d9488 100%);color:white;text-align:center;box-shadow:0 14px 35px rgba(8,27,51,.28);margin-bottom:24px;">

@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Install Ingestion Worker
-slug: ""
+slug: install-ingestion-worker
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: cca627438a59437ebd4fc6b9b7ab96ac
 canonical_ref: ""
 source_type: manual
 template_key: master-template

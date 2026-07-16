@@ -1,14 +1,14 @@
 ---
-uid:
+uid: 671e7e35cd76421fa282030c3a0273f0
   5d79cdf1-075f-4fb9-8261-bb9aa725e047 ...
   ...
 layout: page
 title: Admin
-slug: ""
+slug: admin
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []

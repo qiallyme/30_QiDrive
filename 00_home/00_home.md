@@ -4,12 +4,12 @@ title: QiNotesSync Home
 slug: qinotessync-home
 summary: Primary navigation for the QiNotesSync vault.
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:25-04:00"
+tags: []
   - moc
   - home
 source_type: manual
-created_at: ""
+created_at: "2026-07-01T23:17:15-05:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 252a5e4e74c349cbad8b64f3b35854e6
 canonical_ref: ""
 template_key: master-template
 ---

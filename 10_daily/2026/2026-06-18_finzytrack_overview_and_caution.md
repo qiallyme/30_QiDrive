@@ -3,9 +3,9 @@ layout: page
 title: "Finzytrack Overview and Caution"
 slug: "finzytrack_overview_and_caution"
 created_at: "2026-06-18 17:42:14"
-updated_at: "2026-06-18 17:42:14"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

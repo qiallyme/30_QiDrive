@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Opened Indiana Discount Mall location - business growth begins"
 slug: "opened_indiana_discount_mall_location_business_growth_begins"
 summary: ""
 status: active
 created_at: "2019-05-01"
-updated_at: "2019-05-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c38aaf98eba64ebca380339b385a6dde
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2019-05-01
 ---
+
 # Opened Indiana Discount Mall location - business growth begins
 
 Category: Career

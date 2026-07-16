@@ -3,9 +3,9 @@ layout: page
 title: "Hertz Pickup Feedback"
 slug: "hertz_pickup_feedback"
 created_at: "2026-06-13 12:39:52"
-updated_at: "2026-06-13 12:39:52"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,47 +39,88 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> here we go, lets let them have it. Hertz wants to know about your pickup experience!
-> Inbox
-> 
-> Hertz <feedback@hertzlistens.com> Unsubscribe
-> Fri, Jun 12, 12:42 PM (23 hours ago)
-> to me
-> 
-> Our Company
->  
-> 
-> Hi Cody,
-> 
-> Thank you for partnering with Hertz.
-> 
-> We'd like to hear about your recent Hertz pick-up experience at Lyft Indianapolis on 2026-06-12. Please take a moment and share your feedback. We value your feedback to recognize our team members who provided excellent service and to help us identify areas to improve. 
-> 
-> 
-> Simply respond to the question below to get started.
-> 
->  
-> How satisfied or dissatisfied were you with your vehicle pickup experience?
-> 
-> Completely dissatisfied
-> Dissatisfied
-> Neither satisfied nor dissatisfied
-> Satisfied
-> Completely satisfied
->  
-> We greatly appreciate your time and input.
->  
-> 
-> Hertz Rental Car. Let’s Go!
-> 
-> 
->  
-> Click to take your survey.
-> 
-> To remove crice4485@gmail.com from future surveys, follow this LINK.
-> 
-> Hertz Global Holdings Inc.
-> 8501 Williams Road,
+> here we go, lets let them have it. Hertz wants to know about your pickup experience!
+
+> Inbox
+
+> 
+
+> Hertz <feedback@hertzlistens.com> Unsubscribe
+
+> Fri, Jun 12, 12:42 PM (23 hours ago)
+
+> to me
+
+> 
+
+> Our Company
+
+>  
+
+> 
+
+> Hi Cody,
+
+> 
+
+> Thank you for partnering with Hertz.
+
+> 
+
+> We'd like to hear about your recent Hertz pick-up experience at Lyft Indianapolis on 2026-06-12. Please take a moment and share your feedback. We value your feedback to recognize our team members who provided excellent service and to help us identify areas to improve. 
+
+> 
+
+> 
+
+> Simply respond to the question below to get started.
+
+> 
+
+>  
+
+> How satisfied or dissatisfied were you with your vehicle pickup experience?
+
+> 
+
+> Completely dissatisfied
+
+> Dissatisfied
+
+> Neither satisfied nor dissatisfied
+
+> Satisfied
+
+> Completely satisfied
+
+>  
+
+> We greatly appreciate your time and input.
+
+>  
+
+> 
+
+> Hertz Rental Car. Let’s Go!
+
+> 
+
+> 
+
+>  
+
+> Click to take your survey.
+
+> 
+
+> To remove crice4485@gmail.com from future surveys, follow this LINK.
+
+> 
+
+> Hertz Global Holdings Inc.
+
+> 8501 Williams Road,
+
 > Estero, FL 33928
 
 ### Assistant
@@ -559,45 +600,84 @@ canonical_ref: ""
 > This one has the whole spine **and** the simple ask. No corporate scavenger hunt, no emotional rambling, no missing juice.
 
 ### User
-> rewrite this one. Completely dissatisfied.
-> 
-> The initial pickup itself was mostly fine, except Hertz was nearly impossible to reach by phone. The real failure began when I was told to return on 2026-06-01 for the plate/sticker issue, and that issue was not finally resolved until 2026-06-12.
-> 
-> Because Hertz did not resolve the sticker issue promptly or communicate reliably, I was effectively stranded in Indianapolis. This was supposed to be a quick trip, so I did not bring clothes, toiletries, or anything needed for an extended stay. I paid for two hotel nights and had to sleep in the car on the other nights. I could not properly shower, bathe, brush my teeth, or maintain basic hygiene while waiting for Hertz to resolve a problem that should have been prioritized.
-> 
-> This became a serious safety issue. I was locked out of the vehicle because of the battery/key fob issue and lost most of a day in 84–95 degree weather. During this period, I experienced a serious medical episode with stroke-like symptoms while stuck in the vehicle situation. People were checking on me asking whether I had eaten, had anything to drink, or was even okay. This was not just inconvenient; it became unsafe.
-> 
-> This also directly affected my employment and income. I did not quit my other job before this happened. I had to quit because I was stranded in Indianapolis and could not return as expected. I rely on this Lyft rental to work, and Hertz’s delay left me unable to stabilize my income during an already serious family emergency while my mother was in the hospital.
-> 
-> There were also unresolved vehicle issues that were not properly addressed. I was locked out of the vehicle, the battery had issues, and the key fob had issues. I was also supposed to swap vehicles, but that still did not happen. When I finally received the sticker, the response was essentially just handing me the sticker and sending me away, even though the vehicle still needed maintenance attention, including the battery/key fob issue and the vehicle swap.
-> 
-> I was also scared to drive the vehicle because of the unresolved sticker/vehicle issues, but I was still dealing with the balance issue and felt pressured to drive/work in order to pay the balance, even though the vehicle situation did not feel properly resolved or safe. That put me in an impossible position: drive a vehicle I was concerned about, or fall further behind because Hertz had not fixed the problem.
-> 
-> To be fair, one gentleman I dealt with originally was consistently kind, considerate, and tried to be helpful. I could tell he was doing what he was allowed to do. My issue is not with him personally. The problem is that he clearly did not have enough authority to actually fix the situation, and management/location-level handling failed badly.
-> 
-> I was told that available swap vehicles could not be given to me because it was the weekend and they were dirty. That is unacceptable. I had already been stranded in Indianapolis waiting on Hertz, including sleeping in the car, and I should have been prioritized as soon as vehicles were available.
-> 
-> The manager’s handling of the situation was rude and dismissive. At no point did I feel that Hertz understood the seriousness of the situation, the unsafe conditions, or the financial impact their delay caused.
-> 
-> To resolve this, I am not asking for anything complicated. I am asking Hertz to make the rental workable and fair.
-> 
-> I am requesting:
-> 1. Escalation beyond the local counter level.
-> 
-> 1. An immediate swap into a reliable, safe, fully operational rental vehicle with no battery, key fob, lockout, sticker, registration, or maintenance issues.
-> 
-> 2. Preferably a Tesla or comparable EV, if available, because the lower charging cost and higher Lyft earning potential would help me recover from the income disruption caused by being stranded and unable to work normally.
-> 
-> 3. Full available protection/coverage applied going forward so I do not have to worry about being financially exposed after everything that happened.
-> 
-> 4. Refund or credit of the LDW charges already paid, because those charges were not clearly explained as optional recurring charges and the vehicle/support experience failed badly.
-> 
-> 5. Courtesy credit of the LDW/protection coverage moving forward, at least until I am placed into a reliable replacement vehicle and the account is stabilized.
-> 
-> 9. Review of management’s conduct and the location’s failure to prioritize my situation.
-> 
-> The issue was not simply the pickup. The issue was Hertz’s failure to communicate, failure to resolve the plate/sticker problem, failure to address vehicle maintenance problems, and failure to recognize the financial, employment, hygiene, medical, and safety impact caused by leaving me stranded.
-> 
+> rewrite this one. Completely dissatisfied.
+
+> 
+
+> The initial pickup itself was mostly fine, except Hertz was nearly impossible to reach by phone. The real failure began when I was told to return on 2026-06-01 for the plate/sticker issue, and that issue was not finally resolved until 2026-06-12.
+
+> 
+
+> Because Hertz did not resolve the sticker issue promptly or communicate reliably, I was effectively stranded in Indianapolis. This was supposed to be a quick trip, so I did not bring clothes, toiletries, or anything needed for an extended stay. I paid for two hotel nights and had to sleep in the car on the other nights. I could not properly shower, bathe, brush my teeth, or maintain basic hygiene while waiting for Hertz to resolve a problem that should have been prioritized.
+
+> 
+
+> This became a serious safety issue. I was locked out of the vehicle because of the battery/key fob issue and lost most of a day in 84–95 degree weather. During this period, I experienced a serious medical episode with stroke-like symptoms while stuck in the vehicle situation. People were checking on me asking whether I had eaten, had anything to drink, or was even okay. This was not just inconvenient; it became unsafe.
+
+> 
+
+> This also directly affected my employment and income. I did not quit my other job before this happened. I had to quit because I was stranded in Indianapolis and could not return as expected. I rely on this Lyft rental to work, and Hertz’s delay left me unable to stabilize my income during an already serious family emergency while my mother was in the hospital.
+
+> 
+
+> There were also unresolved vehicle issues that were not properly addressed. I was locked out of the vehicle, the battery had issues, and the key fob had issues. I was also supposed to swap vehicles, but that still did not happen. When I finally received the sticker, the response was essentially just handing me the sticker and sending me away, even though the vehicle still needed maintenance attention, including the battery/key fob issue and the vehicle swap.
+
+> 
+
+> I was also scared to drive the vehicle because of the unresolved sticker/vehicle issues, but I was still dealing with the balance issue and felt pressured to drive/work in order to pay the balance, even though the vehicle situation did not feel properly resolved or safe. That put me in an impossible position: drive a vehicle I was concerned about, or fall further behind because Hertz had not fixed the problem.
+
+> 
+
+> To be fair, one gentleman I dealt with originally was consistently kind, considerate, and tried to be helpful. I could tell he was doing what he was allowed to do. My issue is not with him personally. The problem is that he clearly did not have enough authority to actually fix the situation, and management/location-level handling failed badly.
+
+> 
+
+> I was told that available swap vehicles could not be given to me because it was the weekend and they were dirty. That is unacceptable. I had already been stranded in Indianapolis waiting on Hertz, including sleeping in the car, and I should have been prioritized as soon as vehicles were available.
+
+> 
+
+> The manager’s handling of the situation was rude and dismissive. At no point did I feel that Hertz understood the seriousness of the situation, the unsafe conditions, or the financial impact their delay caused.
+
+> 
+
+> To resolve this, I am not asking for anything complicated. I am asking Hertz to make the rental workable and fair.
+
+> 
+
+> I am requesting:
+
+> 1. Escalation beyond the local counter level.
+
+> 
+
+> 1. An immediate swap into a reliable, safe, fully operational rental vehicle with no battery, key fob, lockout, sticker, registration, or maintenance issues.
+
+> 
+
+> 2. Preferably a Tesla or comparable EV, if available, because the lower charging cost and higher Lyft earning potential would help me recover from the income disruption caused by being stranded and unable to work normally.
+
+> 
+
+> 3. Full available protection/coverage applied going forward so I do not have to worry about being financially exposed after everything that happened.
+
+> 
+
+> 4. Refund or credit of the LDW charges already paid, because those charges were not clearly explained as optional recurring charges and the vehicle/support experience failed badly.
+
+> 
+
+> 5. Courtesy credit of the LDW/protection coverage moving forward, at least until I am placed into a reliable replacement vehicle and the account is stabilized.
+
+> 
+
+> 9. Review of management’s conduct and the location’s failure to prioritize my situation.
+
+> 
+
+> The issue was not simply the pickup. The issue was Hertz’s failure to communicate, failure to resolve the plate/sticker problem, failure to address vehicle maintenance problems, and failure to recognize the financial, employment, hygiene, medical, and safety impact caused by leaving me stranded.
+
+> 
+
 > I believe this is a reasonable resolution: provide a reliable rental, preferably an EV/Tesla if available, remove the disputed LDW burden, credit the coverage moving forward, and allow me to get back to work.
 
 ### Assistant

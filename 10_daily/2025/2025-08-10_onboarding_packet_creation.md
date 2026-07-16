@@ -3,9 +3,9 @@ layout: page
 title: "Onboarding packet creation"
 slug: "onboarding_packet_creation"
 created_at: "2025-08-10 18:51:08"
-updated_at: "2025-08-10 18:51:08"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -288,15 +288,24 @@ canonical_ref: ""
 > Do you want me to go ahead and build that as one ready-to-print packet for MSIL + Super 8?
 
 ### User
-> it will be from this office. adn teh super 8 1903 N Greensburg Crossing, Greensburg, IN 47240
-> 
-> Contact Information
-> Amber Pack
-> 
-> Phone: (812) 222-0935
-> Email: amber.pack@ms-il.com
-> 
->   , Super 8 by Wyndham Shelbyville
+> it will be from this office. adn teh super 8 1903 N Greensburg Crossing, Greensburg, IN 47240
+
+> 
+
+> Contact Information
+
+> Amber Pack
+
+> 
+
+> Phone: (812) 222-0935
+
+> Email: amber.pack@ms-il.com
+
+> 
+
+>   , Super 8 by Wyndham Shelbyville
+
 > 20 W Rampart Rd, Shelbyville, IN 46176
 
 ### Assistant

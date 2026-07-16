@@ -3,9 +3,9 @@ layout: page
 title: "Translate to English"
 slug: "translate_to_english"
 created_at: "2023-08-12 16:05:54"
-updated_at: "2023-08-12 16:05:54"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Efficient Accounting with Power Automate"
 slug: "efficient_accounting_with_power_automate"
 created_at: "2023-07-02 05:35:41"
-updated_at: "2023-07-02 05:35:41"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

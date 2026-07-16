@@ -3,9 +3,9 @@ layout: page
 title: "COPD and Dyspnea Management"
 slug: "copd_and_dyspnea_management"
 created_at: "2026-05-20 17:30:15"
-updated_at: "2026-05-20 17:30:15"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

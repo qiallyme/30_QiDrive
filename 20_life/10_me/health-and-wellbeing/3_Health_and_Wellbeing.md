@@ -7,6 +7,23 @@ last_updated: 2025-11-02
 status: active
 qi_decimal: 1.20.3
 parent: 1.20_QiCode
+layout: page
+slug: category-3-health-and-wellbeing
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 9d1140b5fef343768b5b8dcb65a72954
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Category 3 — Health and Wellbeing

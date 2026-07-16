@@ -3,14 +3,14 @@ layout: page
 title: Event: Otis room/property access incident
 slug: otis-room-property-access-incident
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - third-party-access
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f01dd3881be14761b845c430e5e96323
 canonical_ref: ""
 template_key: master-template
 ---

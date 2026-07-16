@@ -3,14 +3,14 @@ layout: page
 title: Founding Principles
 slug: founding-principles
 status: publish
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
   - legacy-doctrine
   - source-material
 source_type: manual
 summary: Legacy technical doctrine retained as source material for QiSpark updates.
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: a8e11c8d2ba24d9d8b7d3eb8632a67f9
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Daily Threats Against Joel"
 slug: "luis_daily_threats_against_joel"
 created_at: "2024-10-01"
-updated_at: "2024-10-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 113c7e44519b429e9e4540bb63631be2
 canonical_ref: ""
 ---
 

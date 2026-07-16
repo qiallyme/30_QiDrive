@@ -3,12 +3,12 @@ layout: page
 title: Context Dock and Knowledge Model
 slug: context-dock-and-knowledge-model
 status: publish
-updated_at: "2026-06-29"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -17,7 +17,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 216d5787f2194a61a187838d672a5886
 canonical_ref: ""
 template_key: master-template
 ---

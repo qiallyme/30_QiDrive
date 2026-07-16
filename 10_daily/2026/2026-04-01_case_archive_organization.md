@@ -3,9 +3,9 @@ layout: page
 title: "Case Archive Organization"
 slug: "case_archive_organization"
 created_at: "2026-04-01 21:42:44"
-updated_at: "2026-04-01 21:42:44"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3030,88 +3030,170 @@ canonical_ref: ""
 > so you can paste them straight into all the models.
 
 ### User
-> i just saw this on redit, seems simple enough, 
-> CTR0
-> •
-> 2y ago
-> Systems & Synthetic Biologist
-> Now we just need to port this to a locally run LLM so it doesn't cost as much as a full time developer to make anything
-> 
-> 
-> Upvote
-> 7
-> 
-> Downvote
-> 
-> Award
-> 
-> Share
-> 
-> The_Homeless_Coder
-> •
-> 2y ago
-> Have you tried running it iteratively? I made a script that feeds the last response and appends a statement to it. So basically I start out like, build an app that does X,Y, and Z. Then it makes the shitty code but feeds back again and because I assume it’s going to be shitty, my prompt is like, “Look for errors and make this code better”, then it just snowballs. I almost always have to do like one or two things to get the final product working but it’s not bad.
-> 
-> 
-> 
-> Upvote
-> 2
-> 
-> Downvote
-> 
-> Award
-> 
-> Share
-> 
-> zvone187
-> OP
-> •
-> 2y ago
-> Awesome, yea, good idea. I haven't but I can imagine it would improve it. I think there are many mechanisms like what you mentioned that can improve the quality of the output. We fead it errros from the console in order to debug the issue and it works great.
-> 
-> 
-> 
-> Upvote
-> 1
-> 
-> Downvote
-> 
-> Award
-> 
-> Share
-> 
-> The_Homeless_Coder
-> •
-> 2y ago
-> Awesome. It probably helps a lot to feed the errors. Basically what I’m doing manually haha
-> 
-> 
-> Upvote
-> 1
-> 
-> Downvote
-> 
-> Award
-> 
-> Share
-> 
-> u/chase32 avatar
-> chase32
-> •
-> 2y ago
-> Very cool project. Kept getting stuck for me on things that would succeed running locally but obviously a ton of potential.
-> 
-> 2nd the idea to have a local llm option. This thing is thirsty!
-> 
-> 
-> 
-> Upvote
-> 1
-> 
-> Downvote
-> 
-> Award
-> 
+> i just saw this on redit, seems simple enough, 
+
+> CTR0
+
+> •
+
+> 2y ago
+
+> Systems & Synthetic Biologist
+
+> Now we just need to port this to a locally run LLM so it doesn't cost as much as a full time developer to make anything
+
+> 
+
+> 
+
+> Upvote
+
+> 7
+
+> 
+
+> Downvote
+
+> 
+
+> Award
+
+> 
+
+> Share
+
+> 
+
+> The_Homeless_Coder
+
+> •
+
+> 2y ago
+
+> Have you tried running it iteratively? I made a script that feeds the last response and appends a statement to it. So basically I start out like, build an app that does X,Y, and Z. Then it makes the shitty code but feeds back again and because I assume it’s going to be shitty, my prompt is like, “Look for errors and make this code better”, then it just snowballs. I almost always have to do like one or two things to get the final product working but it’s not bad.
+
+> 
+
+> 
+
+> 
+
+> Upvote
+
+> 2
+
+> 
+
+> Downvote
+
+> 
+
+> Award
+
+> 
+
+> Share
+
+> 
+
+> zvone187
+
+> OP
+
+> •
+
+> 2y ago
+
+> Awesome, yea, good idea. I haven't but I can imagine it would improve it. I think there are many mechanisms like what you mentioned that can improve the quality of the output. We fead it errros from the console in order to debug the issue and it works great.
+
+> 
+
+> 
+
+> 
+
+> Upvote
+
+> 1
+
+> 
+
+> Downvote
+
+> 
+
+> Award
+
+> 
+
+> Share
+
+> 
+
+> The_Homeless_Coder
+
+> •
+
+> 2y ago
+
+> Awesome. It probably helps a lot to feed the errors. Basically what I’m doing manually haha
+
+> 
+
+> 
+
+> Upvote
+
+> 1
+
+> 
+
+> Downvote
+
+> 
+
+> Award
+
+> 
+
+> Share
+
+> 
+
+> u/chase32 avatar
+
+> chase32
+
+> •
+
+> 2y ago
+
+> Very cool project. Kept getting stuck for me on things that would succeed running locally but obviously a ton of potential.
+
+> 
+
+> 2nd the idea to have a local llm option. This thing is thirsty!
+
+> 
+
+> 
+
+> 
+
+> Upvote
+
+> 1
+
+> 
+
+> Downvote
+
+> 
+
+> Award
+
+> 
+
 > Share
 
 ### Assistant
@@ -3258,30 +3340,54 @@ canonical_ref: ""
 > - one for extracting facts from markdown without drifting into fiction
 
 ### User
-> SQLite-based solutions now offer portable, unified engines that combine relational data, vector search, and graph relationships in a single file for on-device AI. Extensions like sqlite-vec and libSQL enable local-first RAG and knowledge graphs across mobile, desktop, and edge platforms. 
-> Less
-> Top Solutions for Portable AI & Graph-Vector Hybridization
-> The following projects and extensions specifically address the need for a portable, single-file database that handles both graph structures and vector embeddings for AI applications:
-> 1. Unified Graph & Vector Engines
-> These projects are designed to act as a "cognitive memory" for AI agents by combining multiple indexing methods:
-> LiteGraph: An AI-native, multi-dimensional database built on SQLite. It unifies graph relationships, relational queries, and vector embeddings into one layer, making it ideal for edge computing and knowledge persistence.
-> CortexaDB: Described as "SQLite for AI Agents," this Rust-powered engine provides hybrid vector, graph, and temporal indexing in a local-first, serverless package.
-> PardusDB: An embedded SQLite-like vector database that uses graph-based approximate nearest neighbor search for fast similarity retrieval in local RAG pipelines.
-> 2. Specialized SQLite Extensions
-> If you prefer to extend a standard SQLite installation, these modular extensions add AI capabilities:
-> sqlite-vec: A high-performance, C-based extension for vector search with no dependencies. It supports Matryoshka embedding slicing and binary quantization, allowing for massive storage savings on portable devices.
-> SQLite-Vector & SQLite-AI: A suite of tools that brings on-device LLM inference and vector search directly into the database, focusing on cross-platform portability (iOS, Android, Windows, macOS).
-> GraphQLite / sqlite-graph: These extensions add Cypher query support to SQLite, enabling graph traversals that can be combined with sqlite-vec for GraphRAG (Graph-based Retrieval-Augmented Generation).
-> 3. Portable Graph-Specific Solutions
-> For use cases focused primarily on the "Graph" aspect while maintaining SQLite’s portability:
-> Grafito: A serverless and lightweight SQLite-based graph database designed for easy distribution.
-> Simple-Graph: A straightforward implementation of a graph database within SQLite, useful for simple entity-relationship mapping without heavy infrastructure.
-> Comparison of Key Features
-> Feature	libSQL / Turso	sqlite-vec	LiteGraph
-> Primary Goal	SQLite replacement with native vectors	Modular vector extension	Unified Graph+Vector DB
-> Portability	Mobile, Web, Edge	Anywhere SQLite runs	Embedded or Standalone
-> Graph Support	Via schema design	No (Vector only)	Native Property Graph
-> AI Focus	Agentic workflows	On-device RAG	Knowledge persistence
+> SQLite-based solutions now offer portable, unified engines that combine relational data, vector search, and graph relationships in a single file for on-device AI. Extensions like sqlite-vec and libSQL enable local-first RAG and knowledge graphs across mobile, desktop, and edge platforms. 
+
+> Less
+
+> Top Solutions for Portable AI & Graph-Vector Hybridization
+
+> The following projects and extensions specifically address the need for a portable, single-file database that handles both graph structures and vector embeddings for AI applications:
+
+> 1. Unified Graph & Vector Engines
+
+> These projects are designed to act as a "cognitive memory" for AI agents by combining multiple indexing methods:
+
+> LiteGraph: An AI-native, multi-dimensional database built on SQLite. It unifies graph relationships, relational queries, and vector embeddings into one layer, making it ideal for edge computing and knowledge persistence.
+
+> CortexaDB: Described as "SQLite for AI Agents," this Rust-powered engine provides hybrid vector, graph, and temporal indexing in a local-first, serverless package.
+
+> PardusDB: An embedded SQLite-like vector database that uses graph-based approximate nearest neighbor search for fast similarity retrieval in local RAG pipelines.
+
+> 2. Specialized SQLite Extensions
+
+> If you prefer to extend a standard SQLite installation, these modular extensions add AI capabilities:
+
+> sqlite-vec: A high-performance, C-based extension for vector search with no dependencies. It supports Matryoshka embedding slicing and binary quantization, allowing for massive storage savings on portable devices.
+
+> SQLite-Vector & SQLite-AI: A suite of tools that brings on-device LLM inference and vector search directly into the database, focusing on cross-platform portability (iOS, Android, Windows, macOS).
+
+> GraphQLite / sqlite-graph: These extensions add Cypher query support to SQLite, enabling graph traversals that can be combined with sqlite-vec for GraphRAG (Graph-based Retrieval-Augmented Generation).
+
+> 3. Portable Graph-Specific Solutions
+
+> For use cases focused primarily on the "Graph" aspect while maintaining SQLite’s portability:
+
+> Grafito: A serverless and lightweight SQLite-based graph database designed for easy distribution.
+
+> Simple-Graph: A straightforward implementation of a graph database within SQLite, useful for simple entity-relationship mapping without heavy infrastructure.
+
+> Comparison of Key Features
+
+> Feature	libSQL / Turso	sqlite-vec	LiteGraph
+
+> Primary Goal	SQLite replacement with native vectors	Modular vector extension	Unified Graph+Vector DB
+
+> Portability	Mobile, Web, Edge	Anywhere SQLite runs	Embedded or Standalone
+
+> Graph Support	Via schema design	No (Vector only)	Native Property Graph
+
+> AI Focus	Agentic workflows	On-device RAG	Knowledge persistence
+
 > For developers building local-first AI agents, using libSQL or SQLite AI extensions allows you to keep the entire state layer—including semantic memory and knowledge graphs—in a single .db file, ensuring data ownership and offline functionality.
 
 ### Assistant

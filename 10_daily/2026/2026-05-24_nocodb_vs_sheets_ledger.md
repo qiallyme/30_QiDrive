@@ -3,9 +3,9 @@ layout: page
 title: "NocoDB vs Sheets Ledger"
 slug: "nocodb_vs_sheets_ledger"
 created_at: "2026-05-24 10:12:13"
-updated_at: "2026-05-24 10:12:13"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -925,27 +925,48 @@ canonical_ref: ""
 > Updated payment snapshot from the Cash App file plus the new cash note: Cody sent Mom/Lisa **$2,683.90**, Mom/Lisa sent Cody **$705.96** through Cash App, and Mom also gave Cody **$1,000 cash**, making total received from Mom **$1,705.96**. Net cash flow from Cody perspective is now **-$977.94** before counting labor/contribution credits. fileciteturn0file0
 
 ### User
-> when you break it down like this, description	SUM of amount
-> after pay	-$88.50
-> anything	-$655.15
-> apartment	-$873.00
-> bills	-$118.63
-> charge	$15.00
-> chase	-$112.00
-> cigs	$10.00
-> food	-$41.00
-> gas	$14.00
-> loan	$174.08
-> overdraft	$7.00
-> payment	-$502.62
-> Phone	$30.00
-> postage	$1.88
-> reimburse	-$97.00
-> rent and food	$340.00
-> ride	$17.00
-> taxes	$6.00
-> zillow	$35.00
-> cash	$1,000.00
+> when you break it down like this, description	SUM of amount
+
+> after pay	-$88.50
+
+> anything	-$655.15
+
+> apartment	-$873.00
+
+> bills	-$118.63
+
+> charge	$15.00
+
+> chase	-$112.00
+
+> cigs	$10.00
+
+> food	-$41.00
+
+> gas	$14.00
+
+> loan	$174.08
+
+> overdraft	$7.00
+
+> payment	-$502.62
+
+> Phone	$30.00
+
+> postage	$1.88
+
+> reimburse	-$97.00
+
+> rent and food	$340.00
+
+> ride	$17.00
+
+> taxes	$6.00
+
+> zillow	$35.00
+
+> cash	$1,000.00
+
 > 	-$837.94, you really see it and i owed her about 700 for the hotels, so really all i would owe her
 
 ### Assistant
@@ -1161,27 +1182,48 @@ canonical_ref: ""
 > Also, the transaction file supports the broader money-flow history between you and Mom/Lisa, not a one-sided “Mom paid everything” story. fileciteturn0file0
 
 ### User
-> girl you are messing up the math, take the full list description	SUM of amount
-> after pay	-$88.50
-> anything	-$655.15
-> apartment	-$873.00
-> bills	-$118.63
-> charge	$15.00
-> chase	-$112.00
-> cigs	$10.00
-> food	-$41.00
-> gas	$14.00
-> loan	$174.08
-> overdraft	$7.00
-> payment	-$502.62
-> Phone	$30.00
-> postage	$1.88
-> reimburse	-$97.00
-> rent and food	$340.00
-> ride	$17.00
-> taxes	$6.00
-> zillow	$35.00
-> cash	$1,000.00
+> girl you are messing up the math, take the full list description	SUM of amount
+
+> after pay	-$88.50
+
+> anything	-$655.15
+
+> apartment	-$873.00
+
+> bills	-$118.63
+
+> charge	$15.00
+
+> chase	-$112.00
+
+> cigs	$10.00
+
+> food	-$41.00
+
+> gas	$14.00
+
+> loan	$174.08
+
+> overdraft	$7.00
+
+> payment	-$502.62
+
+> Phone	$30.00
+
+> postage	$1.88
+
+> reimburse	-$97.00
+
+> rent and food	$340.00
+
+> ride	$17.00
+
+> taxes	$6.00
+
+> zillow	$35.00
+
+> cash	$1,000.00
+
 > 	-$837.94 remember i woed mom about 800 for after pay and the first two lines take care of that, leaving still the 837.94 left over if she didnt pay the loans thats not my fault, so once you take me and zais portion for rent and food, well we are basically even, then when you add the 80, 75, 75, 50m 50, 50, and we can leave it there to be fair, how much ahead are we, basically june is covered too right.
 
 ### Assistant

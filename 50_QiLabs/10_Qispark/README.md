@@ -4,12 +4,12 @@ title: QiSpark
 slug: qispark
 summary: System design, server, vault, app, and archive documentation for QiSpark/QiOS work.
 status: publish
-updated_at: "2026-06-28"
-tags:
+updated_at: "2026-07-16T06:49:38-04:00"
+tags: []
   - moc
   - qispark
 source_type: manual
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 576d724ab9544ababa48b1c272df1ffc
 canonical_ref: ""
 template_key: master-template
 ---

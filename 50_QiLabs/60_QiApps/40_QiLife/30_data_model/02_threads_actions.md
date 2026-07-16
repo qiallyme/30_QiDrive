@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 02 Threads Actions
-slug: ""
+slug: 02-threads-actions
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: cd3e1627e8524b9892980499c52d01a7
 canonical_ref: ""
 source_type: manual
 template_key: master-template

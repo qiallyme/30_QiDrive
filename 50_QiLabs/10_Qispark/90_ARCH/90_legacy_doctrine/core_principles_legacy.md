@@ -3,9 +3,9 @@ layout: page
 title: 1.01 Core Principles
 slug: 1-01-core-principles
 status: publish
-updated_at: "2026-06-30"
+updated_at: "2026-07-16T06:49:40-04:00"
 author: C. Rice-Velasquez
-tags:
+tags: []
   - qispark
   - legacy-doctrine
   - source-material
@@ -16,7 +16,7 @@ last_updated: 2025-11-08
 qi_decimal: 1.20.1.01
 parent: 1_Foundations
 summary: Legacy technical doctrine retained as source material for QiSpark updates.
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 owner: ""
 keywords: []
 aliases: []
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c835782320dc493aaa114ab7f8149e8f
 canonical_ref: ""
 template_key: master-template
 ---

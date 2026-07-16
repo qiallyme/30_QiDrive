@@ -3,9 +3,9 @@ layout: page
 title: "Account Conveyance Explanation"
 slug: "account_conveyance_explanation"
 created_at: "2026-03-25 04:09:31"
-updated_at: "2026-03-25 04:09:31"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,26 +39,46 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> what does this mean. Marion County, IN
-> 
-> 
-> Dear RICE-VELASQUEZ, CODY J
-> 
-> Our records indicate that your account has been conveyed. You will have online access to your previous invoices and payments, but will not receive future invoices for this account.
-> 
-> Please note that the account number has been changed to 6016506CV-03242026155019.
-> 
-> Account conveyance is usually due to an ownership change but can also happen due to a name change on the account. If the name on the account has been changed but you are still the account holder, you will need to re-register for the account under the new name to use the online billing and payment system.
-> 
-> If you feel that this account has been conveyed in error, please contact us as soon as possible at treasurer@indy.gov and include your account number, first name and last name on the account or you may call us directly at 317-327-4444.
-> 
-> Thank you,
-> Marion County, IN
-> 
-> 
-> Details
-> 
-> 	Account Number:	
+> what does this mean. Marion County, IN
+
+> 
+
+> 
+
+> Dear RICE-VELASQUEZ, CODY J
+
+> 
+
+> Our records indicate that your account has been conveyed. You will have online access to your previous invoices and payments, but will not receive future invoices for this account.
+
+> 
+
+> Please note that the account number has been changed to 6016506CV-03242026155019.
+
+> 
+
+> Account conveyance is usually due to an ownership change but can also happen due to a name change on the account. If the name on the account has been changed but you are still the account holder, you will need to re-register for the account under the new name to use the online billing and payment system.
+
+> 
+
+> If you feel that this account has been conveyed in error, please contact us as soon as possible at treasurer@indy.gov and include your account number, first name and last name on the account or you may call us directly at 317-327-4444.
+
+> 
+
+> Thank you,
+
+> Marion County, IN
+
+> 
+
+> 
+
+> Details
+
+> 
+
+> 	Account Number:	
+
 > 6016506CV-03242026155019
 
 ### Assistant

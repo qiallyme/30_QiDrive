@@ -3,16 +3,16 @@ layout: page
 title: 03_🔱 EmpowerQNow713 Mapped To Sacred Teachings
 slug: 03-empowerqnow713-mapped-to-sacred-teachings
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:36-04:00"
 owner: CRV
-tags:
+tags: []
   - empowerqnow713
 source_type: manual
 realm: 2_QsKb
 privacy: private
 qi_decimal: 2.99.00-01.SYS
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 3adb02c3f87c4a018fa82d5256fbc87f
 canonical_ref: ""
 template_key: master-template
 ---

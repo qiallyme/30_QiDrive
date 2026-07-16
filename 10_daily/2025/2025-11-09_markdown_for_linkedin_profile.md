@@ -3,9 +3,9 @@ layout: page
 title: "Markdown for LinkedIn Profile"
 slug: "markdown_for_linkedin_profile"
 created_at: "2025-11-09 10:35:50"
-updated_at: "2025-11-09 10:35:50"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -4,14 +4,14 @@ title: Case Analysis Media Index
 slug: case_analysis_media_index
 summary: Quick reference guide to audio, video, reports, and infographics in the case analysis capsule
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Index of all media files associated with the case analysis report
-tags:
+tags: []
   - meta
   - index
   - media
   - empowerqnow713
-keywords:
+keywords: []
   - media
   - index
   - case_analysis
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.4.2
 category: meta
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ebd6196f77a041b4ac484f15de059813
 canonical_ref: ""
 template_key: master-template
 ---

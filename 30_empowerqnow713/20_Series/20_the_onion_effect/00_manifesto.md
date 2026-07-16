@@ -4,7 +4,7 @@ title: The Onion Effect - Why the Little Things Aren't So Little
 series: The Onion Effect
 episode: 0
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - micro-frictions
   - exclusion
   - social dynamics
@@ -17,6 +17,23 @@ platforms:
   - NotebookLM
   - Qsays
   - YouTube
+layout: page
+slug: the-onion-effect-why-the-little-things-arent-so-little
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 7c73a3cf67dd4e64861e00b6afd85aa7
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # The Onion Effect

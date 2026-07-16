@@ -3,7 +3,7 @@ layout: page
 title: "Utility Crisis Begins"
 slug: "utility_crisis_begins"
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["financial"]
 category: "financial"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: ffeb30a23dfb40ce9a5191bb25e1d6c8
 canonical_ref: ""
 ---
 

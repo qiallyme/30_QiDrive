@@ -4,14 +4,14 @@ title: Trauma Capsule Template
 slug: trauma_capsule_template
 summary: Template for creating trauma capsules with full folder structure
 status: draft
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for creating trauma capsules in lived experience track
-tags:
+tags: []
   - template
   - trauma
   - capsule
   - empowerqnow713
-keywords:
+keywords: []
   - trauma
   - lived_experience
   - capsule
@@ -24,14 +24,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 1.2.1
 category: trauma
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: de34fde546a0458abeed92560461a2d1
 canonical_ref: ""
 template_key: master-template
 ---

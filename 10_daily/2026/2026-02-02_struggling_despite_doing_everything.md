@@ -3,9 +3,9 @@ layout: page
 title: "Struggling Despite Doing Everything"
 slug: "struggling_despite_doing_everything"
 created_at: "2026-02-02 15:49:59"
-updated_at: "2026-02-02 15:49:59"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

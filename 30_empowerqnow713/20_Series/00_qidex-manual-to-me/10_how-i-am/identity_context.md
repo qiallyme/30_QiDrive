@@ -13,7 +13,7 @@ related:
   - 20_personal/00_personal_context/personal_context_summary.md
   - 30_clinical/00_clinical_summary/clinical_summary_starter.md
   - 90_locked/00_my_eyes_only/intake_sensitive_material_review.md
-tags:
+tags: []
   - identity
   - privacy
   - intersectionality
@@ -21,6 +21,23 @@ source:
   - _intake/01 Who I Am Core Identity & Values 219f84a044028159987df8c7950346f4.md
   - _intake/10 1 Transgender 219f84a04402810cb8f6e70c5a540224.md
   - _intake/10 4 Person of Color 219f84a04402811eb893f617ab821fe0.md
+layout: page
+slug: identity-context
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 18dffee36c01441ebcacd6400ad91201
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Identity Context

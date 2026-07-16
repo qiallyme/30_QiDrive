@@ -3,9 +3,9 @@ layout: page
 title: "GINA Desktop Dev Docs"
 slug: "gina_desktop_dev_docs"
 created_at: "2025-12-06 01:53:22"
-updated_at: "2025-12-06 01:53:22"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Court Filing Strategy"
 slug: "court_filing_strategy"
 created_at: "2026-02-26 15:49:54"
-updated_at: "2026-02-26 15:49:54"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -417,10 +417,14 @@ canonical_ref: ""
 > If you want, I’ll rewrite the objection to include this section properly integrated so it stays lethal but professional.
 
 ### User
-> The defendant requested an audit and accounting of the surplus funds on the following specific dates:
-> December 16, 2025: The defendant filed an "Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds" with the court. This motion expressly required a sworn accounting of the sheriff's sale proceeds and clarity on the disposition of the surplus funds.
-> January 9, 2026: During a court hearing before Magistrate Hannah, the defendant explicitly requested an "audit" on the record, stating that he had reviewed the numbers and they did not calculate to the amounts claimed by the bank. The court denied the request for an audit at that time because the defendant did not have his supporting documentation with him at the hearing.
-> February 12, 2026: The defendant finalized and sent a formal "Surplus Accounting Demand Letter" directly to FCFCU. This document demanded a complete, itemized written accounting, including the payoff ledger as of the sale date, a breakdown of all post-judgment additions, and a timeline for the disbursement of the $11,627.30 calculated surplus.
+> The defendant requested an audit and accounting of the surplus funds on the following specific dates:
+
+> December 16, 2025: The defendant filed an "Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds" with the court. This motion expressly required a sworn accounting of the sheriff's sale proceeds and clarity on the disposition of the surplus funds.
+
+> January 9, 2026: During a court hearing before Magistrate Hannah, the defendant explicitly requested an "audit" on the record, stating that he had reviewed the numbers and they did not calculate to the amounts claimed by the bank. The court denied the request for an audit at that time because the defendant did not have his supporting documentation with him at the hearing.
+
+> February 12, 2026: The defendant finalized and sent a formal "Surplus Accounting Demand Letter" directly to FCFCU. This document demanded a complete, itemized written accounting, including the payoff ledger as of the sale date, a breakdown of all post-judgment additions, and a timeline for the disbursement of the $11,627.30 calculated surplus.
+
 > February 17, 2026: The defendant prepared and issued a "Final Good-Faith Attempt to Resolve Surplus Reconciliation" email to the plaintiff's counsel. This communication demanded contemporaneous accounting records, presented a conservative surplus recalculation, and set a firm deadline of February 23, 2026, for the bank to provide documentation or payment before facing regulatory escalation.
 
 ### Assistant
@@ -492,14 +496,22 @@ canonical_ref: ""
 > Take a breath. This is controlled escalation.
 
 ### User
-> Based on the provided records, Financial Center First Credit Union (FCFCU) responded to these requests for an audit and surplus accounting with formal denials, court arguments, and subsequent non-compliance.
-> Here is how FCFCU responded at each stage:
-> 1. Response to the December 16 Court Motion (Filed December 17, 2025) Exactly one day after the defendant filed the "Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds," FCFCU responded by filing a "Report to Sheriff's Sale and Report of No Excess Proceeds". With this filing, the bank formally asserted to the court that the surplus was $0.00, contradicting the mathematical difference between the judgment and the sale price.
-> 2. Response During the January 9, 2026 Hearing When the defendant verbally requested an audit during the hearing, FCFCU’s counsel, Scott Kainrath, actively argued against it. His responses on the record included:
-> Denying Excess: Counsel stated, "Finance center was the primary, I guess, lien holder on this house. So they bid exactly what was owed, no more... there is no excess". He claimed the bid covered the outstanding debt, back taxes, attorney fees, and administrative costs.
-> Deflecting Priority (The "Phantom" Liens): Counsel argued that even if there were excess funds, there were "two JP Morgan judgments that were probably next in line" that would get paid before the defendant. (The forensic audit later flagged this as a material misrepresentation, noting that JP Morgan and American Express held unsecured, charged-off credit card debt, not secured judgment liens).
-> 3. Response to Formal Direct Demands (January & February 2026) In response to the direct demands and notices of dispute sent to the bank's legal and compliance departments, FCFCU failed to provide the requested itemized accounting.
-> Evasive Replies: According to regulatory complaint drafts, FCFCU acknowledged the disputes by stating they were "working on the issue," but continued to publish the same inaccurate data without providing the requested ledgers.
+> Based on the provided records, Financial Center First Credit Union (FCFCU) responded to these requests for an audit and surplus accounting with formal denials, court arguments, and subsequent non-compliance.
+
+> Here is how FCFCU responded at each stage:
+
+> 1. Response to the December 16 Court Motion (Filed December 17, 2025) Exactly one day after the defendant filed the "Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds," FCFCU responded by filing a "Report to Sheriff's Sale and Report of No Excess Proceeds". With this filing, the bank formally asserted to the court that the surplus was $0.00, contradicting the mathematical difference between the judgment and the sale price.
+
+> 2. Response During the January 9, 2026 Hearing When the defendant verbally requested an audit during the hearing, FCFCU’s counsel, Scott Kainrath, actively argued against it. His responses on the record included:
+
+> Denying Excess: Counsel stated, "Finance center was the primary, I guess, lien holder on this house. So they bid exactly what was owed, no more... there is no excess". He claimed the bid covered the outstanding debt, back taxes, attorney fees, and administrative costs.
+
+> Deflecting Priority (The "Phantom" Liens): Counsel argued that even if there were excess funds, there were "two JP Morgan judgments that were probably next in line" that would get paid before the defendant. (The forensic audit later flagged this as a material misrepresentation, noting that JP Morgan and American Express held unsecured, charged-off credit card debt, not secured judgment liens).
+
+> 3. Response to Formal Direct Demands (January & February 2026) In response to the direct demands and notices of dispute sent to the bank's legal and compliance departments, FCFCU failed to provide the requested itemized accounting.
+
+> Evasive Replies: According to regulatory complaint drafts, FCFCU acknowledged the disputes by stating they were "working on the issue," but continued to publish the same inaccurate data without providing the requested ledgers.
+
 > Missed Deadlines: The 30-day statutory window for correction expired on February 17, 2026, with FCFCU failing to provide the itemized accounting, suppress the tradelines, or disburse the calculated $11,999 surplus. The defense strategy documents categorize this lack of substantive documentation as "willful non-compliance" that triggered the subsequent escalation to federal regulators (NCUA, CFPB, DOJ
 
 ### Assistant
@@ -843,65 +855,124 @@ canonical_ref: ""
 > Now breathe. This is solid.
 
 ### User
-> here ae some suggestions from the other ais, do you agree or no? You are absolutely right—discipline, control, and tone are everything when standing before a judge. This draft is incredibly strong for a *pro se* filing. By keeping the emotion out of it and focusing strictly on the timeline, the math, and the procedural record, you are presenting yourself as a credible, rational party.
-> 
-> As an AI, I am not an Indiana attorney and cannot give you formal legal advice. However, I can review this against general Indiana rules of civil procedure and standard legal drafting principles.
-> 
-> Here is my candid assessment of why this works, along with a few strategic suggestions to tighten it even further.
-> 
-> ### What Works In Your Draft
-> 
-> * **The Numbered Version:** Definitely use the second version with the numbered paragraphs. Indiana Trial Rules highly favor (and often require) numbered paragraphs because it allows the judge and opposing counsel to reference specific points easily.
-> * **The Nunc Pro Tunc Argument:** You have correctly identified the fundamental flaw in their motion. In Indiana, *nunc pro tunc* (which translates to "now for then") is strictly meant to correct the court's record to reflect something that *actually happened* but was recorded incorrectly (a clerical error). It is **not** a mechanism for a party to change a substantive decision or fix their own bad math after the fact.
-> * **The Timeline:** Laying out the dates of your requests and their "no excess" statements perfectly boxes them in.
-> 
-> ### Suggestions for Improvement
-> 
-> **1. Explicitly Attach Exhibits**
-> You mention sending a demand letter on February 12 and a final request on February 17. Judges love paper trails. If you have those letters, you should attach them to this filing.
-> 
-> * *Suggestion:* Update paragraphs 12 and 13 to say, "Attached hereto as **Exhibit A** is Defendant's formal written Surplus Accounting Demand Letter..." This transforms your claim from a "he-said/she-said" into undeniable documentary evidence.
-> 
-> **2. Tighten the Nunc Pro Tunc Standard**
-> You can make Paragraph 16 hit a little harder by aligning it perfectly with Indiana case law standards. Indiana courts generally require that a *nunc pro tunc* entry be supported by some contemporaneous written memorial or record from the time of the event.
-> 
-> * *Suggestion:* Revise Paragraph 16 to read: *"A nunc pro tunc entry is appropriate only to correct clerical errors based on a contemporaneous written record, ensuring the Court's docket accurately reflects what actually occurred. It is not a mechanism to retroactively alter substantive rights or correct a party's subsequent calculation errors."*
-> 
-> **3. Clarify the Certificate of Service**
-> Under Indiana Trial Rule 5, your Certificate of Service needs to be highly specific about *who* you served and *exactly how* you served them. Saying "via electronic filing and/or first-class mail" is a bit too vague.
-> 
-> * *Suggestion:* State exactly how it is going out. If you are using the Indiana E-Filing System (IEFS), state that. Also, name the attorney you are serving.
-> * *Example:* > I certify that a copy of the foregoing was served upon [Insert Opposing Counsel's Name], counsel for Plaintiff, at [Insert Counsel's Address], via [First-Class U.S. Mail / the Indiana E-Filing System (IEFS)] on this 26th day of February, 2026.
-> 
-> **4. Check the Filing Deadline**
-> Make sure you are filing this within the appropriate time limit. Usually, when a party files a motion, the opposing party has a set number of days to respond (often 15 to 20 days in Indiana, depending on the exact motion and local rules). Since they filed on February 24, filing this on February 26 puts you well ahead of any deadline, which is excellent.
-> 
-> ---
-> 
-> You have done the hard work of taking the emotion out of a highly stressful situation and turning it into a sharp, functional legal document.
-> 
-> Would you like me to rewrite the Certificate of Service block for you to fill in, or help you format an "Exhibit List" to attach to the end of this document? The filing is **well-structured**, professional, and largely aligns with Indiana law on mortgage foreclosure proceedings, surplus funds, and nunc pro tunc relief. It maintains a factual, non-argumentative tone focused on procedural deficiencies and evidentiary needs, which supports judicial consideration.
-> 
-> Key alignments with Indiana Code:
-> 
-> - **Surplus determination** — Indiana Code § 32-30-10-14 governs application of sheriff's sale proceeds and excess (surplus). Proceeds apply first to sale expenses, then principal/interest/costs, with any true surplus paid to the clerk for transfer to the mortgage debtor (you) or assignees. The court cannot properly declare "no surplus" without verified evidence reconciling the judgment, accruals, advances, and bid to the actual sale outcome. Your objection correctly emphasizes the absence of sworn accounting/ledger, preventing an informed ruling.
-> 
-> - **Nunc pro tunc entry** — Indiana courts limit nunc pro tunc to clerical errors correcting the record to reflect what actually occurred (not substantive changes). Here, retroactively reducing the recorded credit bid (from $240,464.20 to $230,562.40) months later, after prior representations that the bid was "exactly what was owed," impacts substantive rights (surplus calculation and potential deficiency exposure). This is not purely clerical absent evidentiary support (e.g., affidavit explaining the error and confirming original intent). Your sections IV and V appropriately challenge this without overreaching.
-> 
-> - **Procedural history** — Documenting your repeated accounting requests (motions, hearing statements, demand letters) strengthens the record, shows diligence, and contrasts with plaintiff's delayed filing after those efforts. This supports deferring any surplus ruling until evidence is produced.
-> 
-> **Suggestions for implementation (ready to use, minor enhancements for strength/productivity):**
-> 
-> 1. **Fill date** — Update Certificate of Service to "26th day of February, 2026" (matches current date).
-> 
-> 2. **Add specific citation** — In Section V (or II), insert after ¶20/21: "See Ind. Code § 32-30-10-14 (requiring application of proceeds and payment of surplus to clerk for debtor). Without verified reconciliation, the Court lacks basis to determine surplus under this statute."
-> 
-> 3. **Swear if possible** — If facts in your objection (e.g., hearing representations, your requests) are not already in the record via prior filings/transcripts, consider attaching a short affidavit verifying them to add weight.
-> 
-> 4. **File promptly** — Submit via e-filing today if not already done. Request expedited consideration or hearing due to ongoing surplus uncertainty affecting your financial position.
-> 
-> 5. **Follow up** — After filing, monitor docket for plaintiff's response. If no accounting provided, prepare to renew request for hearing/audit.
-> 
+> here ae some suggestions from the other ais, do you agree or no? You are absolutely right—discipline, control, and tone are everything when standing before a judge. This draft is incredibly strong for a *pro se* filing. By keeping the emotion out of it and focusing strictly on the timeline, the math, and the procedural record, you are presenting yourself as a credible, rational party.
+
+> 
+
+> As an AI, I am not an Indiana attorney and cannot give you formal legal advice. However, I can review this against general Indiana rules of civil procedure and standard legal drafting principles.
+
+> 
+
+> Here is my candid assessment of why this works, along with a few strategic suggestions to tighten it even further.
+
+> 
+
+> ### What Works In Your Draft
+
+> 
+
+> * **The Numbered Version:** Definitely use the second version with the numbered paragraphs. Indiana Trial Rules highly favor (and often require) numbered paragraphs because it allows the judge and opposing counsel to reference specific points easily.
+
+> * **The Nunc Pro Tunc Argument:** You have correctly identified the fundamental flaw in their motion. In Indiana, *nunc pro tunc* (which translates to "now for then") is strictly meant to correct the court's record to reflect something that *actually happened* but was recorded incorrectly (a clerical error). It is **not** a mechanism for a party to change a substantive decision or fix their own bad math after the fact.
+
+> * **The Timeline:** Laying out the dates of your requests and their "no excess" statements perfectly boxes them in.
+
+> 
+
+> ### Suggestions for Improvement
+
+> 
+
+> **1. Explicitly Attach Exhibits**
+
+> You mention sending a demand letter on February 12 and a final request on February 17. Judges love paper trails. If you have those letters, you should attach them to this filing.
+
+> 
+
+> * *Suggestion:* Update paragraphs 12 and 13 to say, "Attached hereto as **Exhibit A** is Defendant's formal written Surplus Accounting Demand Letter..." This transforms your claim from a "he-said/she-said" into undeniable documentary evidence.
+
+> 
+
+> **2. Tighten the Nunc Pro Tunc Standard**
+
+> You can make Paragraph 16 hit a little harder by aligning it perfectly with Indiana case law standards. Indiana courts generally require that a *nunc pro tunc* entry be supported by some contemporaneous written memorial or record from the time of the event.
+
+> 
+
+> * *Suggestion:* Revise Paragraph 16 to read: *"A nunc pro tunc entry is appropriate only to correct clerical errors based on a contemporaneous written record, ensuring the Court's docket accurately reflects what actually occurred. It is not a mechanism to retroactively alter substantive rights or correct a party's subsequent calculation errors."*
+
+> 
+
+> **3. Clarify the Certificate of Service**
+
+> Under Indiana Trial Rule 5, your Certificate of Service needs to be highly specific about *who* you served and *exactly how* you served them. Saying "via electronic filing and/or first-class mail" is a bit too vague.
+
+> 
+
+> * *Suggestion:* State exactly how it is going out. If you are using the Indiana E-Filing System (IEFS), state that. Also, name the attorney you are serving.
+
+> * *Example:* > I certify that a copy of the foregoing was served upon [Insert Opposing Counsel's Name], counsel for Plaintiff, at [Insert Counsel's Address], via [First-Class U.S. Mail / the Indiana E-Filing System (IEFS)] on this 26th day of February, 2026.
+
+> 
+
+> **4. Check the Filing Deadline**
+
+> Make sure you are filing this within the appropriate time limit. Usually, when a party files a motion, the opposing party has a set number of days to respond (often 15 to 20 days in Indiana, depending on the exact motion and local rules). Since they filed on February 24, filing this on February 26 puts you well ahead of any deadline, which is excellent.
+
+> 
+
+> ---
+
+> 
+
+> You have done the hard work of taking the emotion out of a highly stressful situation and turning it into a sharp, functional legal document.
+
+> 
+
+> Would you like me to rewrite the Certificate of Service block for you to fill in, or help you format an "Exhibit List" to attach to the end of this document? The filing is **well-structured**, professional, and largely aligns with Indiana law on mortgage foreclosure proceedings, surplus funds, and nunc pro tunc relief. It maintains a factual, non-argumentative tone focused on procedural deficiencies and evidentiary needs, which supports judicial consideration.
+
+> 
+
+> Key alignments with Indiana Code:
+
+> 
+
+> - **Surplus determination** — Indiana Code § 32-30-10-14 governs application of sheriff's sale proceeds and excess (surplus). Proceeds apply first to sale expenses, then principal/interest/costs, with any true surplus paid to the clerk for transfer to the mortgage debtor (you) or assignees. The court cannot properly declare "no surplus" without verified evidence reconciling the judgment, accruals, advances, and bid to the actual sale outcome. Your objection correctly emphasizes the absence of sworn accounting/ledger, preventing an informed ruling.
+
+> 
+
+> - **Nunc pro tunc entry** — Indiana courts limit nunc pro tunc to clerical errors correcting the record to reflect what actually occurred (not substantive changes). Here, retroactively reducing the recorded credit bid (from $240,464.20 to $230,562.40) months later, after prior representations that the bid was "exactly what was owed," impacts substantive rights (surplus calculation and potential deficiency exposure). This is not purely clerical absent evidentiary support (e.g., affidavit explaining the error and confirming original intent). Your sections IV and V appropriately challenge this without overreaching.
+
+> 
+
+> - **Procedural history** — Documenting your repeated accounting requests (motions, hearing statements, demand letters) strengthens the record, shows diligence, and contrasts with plaintiff's delayed filing after those efforts. This supports deferring any surplus ruling until evidence is produced.
+
+> 
+
+> **Suggestions for implementation (ready to use, minor enhancements for strength/productivity):**
+
+> 
+
+> 1. **Fill date** — Update Certificate of Service to "26th day of February, 2026" (matches current date).
+
+> 
+
+> 2. **Add specific citation** — In Section V (or II), insert after ¶20/21: "See Ind. Code § 32-30-10-14 (requiring application of proceeds and payment of surplus to clerk for debtor). Without verified reconciliation, the Court lacks basis to determine surplus under this statute."
+
+> 
+
+> 3. **Swear if possible** — If facts in your objection (e.g., hearing representations, your requests) are not already in the record via prior filings/transcripts, consider attaching a short affidavit verifying them to add weight.
+
+> 
+
+> 4. **File promptly** — Submit via e-filing today if not already done. Request expedited consideration or hearing due to ongoing surplus uncertainty affecting your financial position.
+
+> 
+
+> 5. **Follow up** — After filing, monitor docket for plaintiff's response. If no accounting provided, prepare to renew request for hearing/audit.
+
+> 
+
 > This version positions you for maximum leverage: forces production of records (improving transparency and potential surplus recovery) while avoiding escalation that could harm credibility. It enhances work-life balance by keeping focus narrow and evidence-based, potentially shortening litigation. If surplus exists, disciplined pursuit here directly supports financial recovery/sales potential from any equity. File as-is with the tweaks above.
 
 ### Assistant
@@ -2590,22 +2661,38 @@ canonical_ref: ""
 > Tell me exactly what the judge’s entry says. The wording matters.
 
 ### User
-> i gave you what was on record, 02/20/2026	
-> Petition Filed
-> Petition to Pay Surplus Funds to the Clerk of the Court
-> Filed By:Financial Center First Credit Union
-> File Stamp:02/20/2026
-> 02/24/2026	
-> Petition Filed
-> Petition Determining No Surplus Funds and Nunc Pro Tunc.pdf
-> Plaintiff's Bid.pdf
-> Petition for Disposition of Surplus and Motion for Nunc Pro Tunc
-> Filed By:Financial Center First Credit Union
-> File Stamp:02/24/2026
-> 02/26/2026	
-> Order Denying
-> Order Denying Petition for Nunc Pro Tunc
-> Judicial Officer:Hannah, Therese A - MAG
+> i gave you what was on record, 02/20/2026	
+
+> Petition Filed
+
+> Petition to Pay Surplus Funds to the Clerk of the Court
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:02/20/2026
+
+> 02/24/2026	
+
+> Petition Filed
+
+> Petition Determining No Surplus Funds and Nunc Pro Tunc.pdf
+
+> Plaintiff's Bid.pdf
+
+> Petition for Disposition of Surplus and Motion for Nunc Pro Tunc
+
+> Filed By:Financial Center First Credit Union
+
+> File Stamp:02/24/2026
+
+> 02/26/2026	
+
+> Order Denying
+
+> Order Denying Petition for Nunc Pro Tunc
+
+> Judicial Officer:Hannah, Therese A - MAG
+
 > Order Signed:02/26/2026
 
 ### Assistant

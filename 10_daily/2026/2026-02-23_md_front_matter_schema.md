@@ -3,9 +3,9 @@ layout: page
 title: "MD Front Matter Schema"
 slug: "md_front_matter_schema"
 created_at: "2026-02-23 22:40:14"
-updated_at: "2026-02-23 22:40:14"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -216,931 +216,1856 @@ canonical_ref: ""
 > Pick one and we tighten it.
 
 ### User
-> just to make sure we are aligned this is the tree, maybe this will help you gleen and universal metadata must haves ```markdown
-> . 📂 _QiOne_MonoRepo_Astro
-> ├── 📄 LICENSE
-> ├── 📄 MIGRATION_PLAN.md
-> ├── 📄 README.md
-> ├── 📄 TODO.md
-> └── 📂 apps/
-> │  └── 📂 api/
-> │  └── 📂 clients/
-> │    └── 📂 a_unified_portal/
-> │    └── 📂 builtbyrays-main/
-> │    └── 📂 zaitullah-wiki/
-> │  └── 📂 internal/
-> │    └── 📂 admin-dashboard/
-> │    └── 📂 care-portal/
-> │      ├── 📄 index.html
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 _redirects
-> │        └── 📂 assets/
-> │          ├── 📄 QiBPAppIcon.png
-> │          ├── 📄 introvideo.mp4
-> │        └── 📂 kb/
-> │          └── 📂 01_medical/
-> │            ├── 📄 index.html
-> │          └── 📂 02_legal/
-> │            ├── 📄 index.html
-> │          └── 📂 03_financial/
-> │            ├── 📄 index.html
-> │          └── 📂 04_housing/
-> │            ├── 📄 index.html
-> │          └── 📂 05_daily_care/
-> │            ├── 📄 index.html
-> │          └── 📂 06_contacts/
-> │            ├── 📄 index.html
-> │          └── 📂 07_vault/
-> │            ├── 📄 index.html
-> │          └── 📂 08_caregiver/
-> │            ├── 📄 index.html
-> │          └── 📂 binder/
-> │            └── 📂 01_emergency_protocol/
-> │              ├── 📄 index.html
-> │            └── 📂 02_healthcare_representative/
-> │              ├── 📄 index.html
-> │            └── 📂 03_hipaa_living_will/
-> │              ├── 📄 index.html
-> │            └── 📂 04_emergency_access/
-> │              ├── 📄 index.html
-> │            └── 📂 05_durable_poa_financial/
-> │              ├── 📄 index.html
-> │            └── 📂 06_estate_interim_authority/
-> │              ├── 📄 index.html
-> │            └── 📂 07_incident_log/
-> │              ├── 📄 index.html
-> │            └── 📂 08_execution_notary/
-> │              ├── 📄 index.html
-> │            └── 📂 09_labels/
-> │              ├── 📄 index.html
-> │            └── 📂 10_executed_docs/
-> │              ├── 📄 index.html
-> │            └── 📂 assets/
-> │              └── 📂 css/
-> │                ├── 📄 manual.css
-> │            ├── 📄 index.html
-> │          ├── 📄 index.html
-> │        ├── 📄 manifest.json
-> │      └── 📂 src/
-> │        ├── 📄 app.tsx
-> │        └── 📂 components/
-> │          ├── 📄 layout.tsx
-> │          ├── 📄 require_auth.tsx
-> │        ├── 📄 env.d.ts
-> │        ├── 📄 index.css
-> │        └── 📂 lib/
-> │          ├── 📄 access.ts
-> │          ├── 📄 api.ts
-> │          ├── 📄 money.ts
-> │          ├── 📄 supabase.ts
-> │        ├── 📄 main.tsx
-> │        └── 📂 modules/
-> │          └── 📂 qihome/
-> │            ├── 📄 index.tsx
-> │            └── 📂 pages/
-> │              ├── 📄 chores.tsx
-> │              ├── 📄 dashboard.tsx
-> │              ├── 📄 ledger.tsx
-> │          ├── 📄 registry.ts
-> │        └── 📂 routes/
-> │          ├── 📄 auth.tsx
-> │          ├── 📄 auth_confirm.tsx
-> │          ├── 📄 launcher.tsx
-> │          ├── 📄 module_router.tsx
-> │          ├── 📄 tenant_home.tsx
-> │          ├── 📄 tenant_select.tsx
-> │          ├── 📄 tenant_settings.tsx
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 vite.config.ts
-> │    └── 📂 family-wiki/
-> │    └── 📂 gina-ai/
-> │    └── 📂 qially-me/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 biome.json
-> │      ├── 📄 components.json
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 pnpm-lock.yaml
-> │      └── 📂 public/
-> │        ├── 📄 activity.svg
-> │        └── 📂 cards/
-> │          ├── 📄 fresh.png
-> │          ├── 📄 fresh.webp
-> │          ├── 📄 glass.png
-> │          ├── 📄 glass.webp
-> │          ├── 📄 mermaid.svg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 logo.png
-> │        ├── 📄 logo.webp
-> │        ├── 📄 og.webp
-> │        ├── 📄 placeholder.webp
-> │        ├── 📄 robots.txt
-> │        ├── 📄 rss.svg
-> │      └── 📂 scripts/
-> │        ├── 📄 build-pagefind-index.ts
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 creations.json
-> │          └── 📂 images/
-> │            ├── 📄 logo.webp
-> │        └── 📂 components/
-> │          ├── 📄 BaseHead.astro
-> │          ├── 📄 BetaBadge.astro
-> │          ├── 📄 Footer.astro
-> │          ├── 📄 FormattedDate.astro
-> │          ├── 📄 Header.astro
-> │          ├── 📄 HeaderLink.astro
-> │          ├── 📄 OptimizedImage.astro
-> │          ├── 📄 ProductCard.tsx
-> │          ├── 📄 ProductSection.astro
-> │          ├── 📄 ShareButtons.astro
-> │          ├── 📄 TagFilter.astro
-> │          └── 📂 blog/
-> │            ├── 📄 BlogCard.astro
-> │            ├── 📄 BlogsPage.astro
-> │          ├── 📄 copy-button.tsx
-> │          ├── 📄 image-viewer.tsx
-> │          └── 📂 knowledge-card/
-> │            ├── 📄 CardActions.astro
-> │            ├── 📄 CardBack.astro
-> │            ├── 📄 CardContainer.astro
-> │            ├── 📄 CardCover.astro
-> │            ├── 📄 CardFront.astro
-> │            ├── 📄 CardLink.astro
-> │            ├── 📄 CardsPage.astro
-> │            ├── 📄 KnowledgeCard.astro
-> │            ├── 📄 LinksModal.astro
-> │            ├── 📄 StructureDisplay.astro
-> │            ├── 📄 types.ts
-> │          └── 📂 landing-page/
-> │            ├── 📄 HeroSection.astro
-> │            ├── 📄 LatestSection.astro
-> │            ├── 📄 ScrollingTags.astro
-> │          └── 📂 navigation/
-> │            ├── 📄 ContentNavigation.astro
-> │          └── 📂 slide/
-> │            ├── 📄 SlideCard.astro
-> │            ├── 📄 SlidesPage.astro
-> │            ├── 📄 slide-viewer.tsx
-> │          └── 📂 ui/
-> │            ├── 📄 dialog.tsx
-> │            ├── 📄 sonner.tsx
-> │        ├── 📄 consts.ts
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 blogs/
-> │            └── 📂 2025-08/
-> │              ├── 📄 groq-code-cli-internal.md
-> │            └── 📂 2025-09/
-> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │              └── 📂 imgs/
-> │                ├── 📄 slides-01.png
-> │                ├── 📄 slides-02.png
-> │          └── 📂 cards/
-> │            └── 📂 2025-09/
-> │              ├── 📄 how-openai-uses-codex.md
-> │          └── 📂 doodles/
-> │            └── 📂 2025-09/
-> │              ├── 📄 monakit-released.md
-> │            └── 📂 2025-10/
-> │              └── 📂 imgs/
-> │                ├── 📄 doodle-list.png
-> │                ├── 📄 doodle.png
-> │              ├── 📄 mona-update-doodle-and-more.md
-> │          └── 📂 slides/
-> │            └── 📂 2025-09/
-> │              ├── 📄 agents-md-101.md
-> │              └── 📂 imgs/
-> │                ├── 📄 agents-md-ecosystem.png
-> │            └── 📂 2025-12/
-> │              ├── 📄 quadratic-101.md
-> │        ├── 📄 env.ts
-> │        └── 📂 layouts/
-> │          ├── 📄 ContentIndexLayout.astro
-> │          ├── 📄 MainLayout.astro
-> │        └── 📂 lib/
-> │          ├── 📄 navigation.ts
-> │          ├── 📄 pagination.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 pages/
-> │          ├── 📄 404.astro
-> │          └── 📂 blogs/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          └── 📂 cards/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 creations.astro
-> │          └── 📂 doodles/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 index.astro
-> │          ├── 📄 og-enhanced.ts
-> │          ├── 📄 rss.xml.ts
-> │          ├── 📄 search.astro
-> │          └── 📂 slides/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │        └── 📂 schemas/
-> │          ├── 📄 blog.ts
-> │          ├── 📄 card.ts
-> │          ├── 📄 doodle.ts
-> │          ├── 📄 slide.ts
-> │        └── 📂 styles/
-> │          ├── 📄 article.css
-> │          ├── 📄 card.css
-> │          ├── 📄 global.css
-> │          ├── 📄 scrolling-tags.css
-> │        └── 📂 themes/
-> │          ├── 📄 knowledge-card-themes.ts
-> │          ├── 📄 slide-card-themes.ts
-> │        └── 📂 types/
-> │          ├── 📄 product.ts
-> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 worker/
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 wrangler.toml
-> │  └── 📂 private/
-> │    └── 📂 qivault-docs/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 netlify.toml
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.svg
-> │        ├── 📄 hero-icon.svg
-> │        ├── 📄 sitepins-manifest.json
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 changelogs.svg
-> │          ├── 📄 code-block.svg
-> │          ├── 📄 code-image.png
-> │          ├── 📄 content.svg
-> │          ├── 📄 cta-bg.png
-> │          ├── 📄 darkmode-demo.png
-> │          ├── 📄 doc-bg.png
-> │          ├── 📄 element.svg
-> │          ├── 📄 hero-bg-dark.png
-> │          ├── 📄 hero-bg-light.png
-> │          ├── 📄 hero-star.svg
-> │          ├── 📄 houston.webp
-> │          ├── 📄 layouts.svg
-> │          ├── 📄 lightmode-demo.png
-> │          ├── 📄 logo-dark.svg
-> │          ├── 📄 logo-light.svg
-> │          ├── 📄 overview.png
-> │          ├── 📄 step-1.png
-> │          ├── 📄 step-2.png
-> │          ├── 📄 step-3.png
-> │        └── 📂 components/
-> │          ├── 📄 Accordion.astro
-> │          ├── 📄 AccordionContainer.astro
-> │          ├── 📄 Breadcrumb.astro
-> │          ├── 📄 CTA.astro
-> │          ├── 📄 HeroTabs.astro
-> │          ├── 📄 HeroTabsItem.astro
-> │          ├── 📄 ImageMod.astro
-> │          ├── 📄 LinkButton.astro
-> │          ├── 📄 Section.astro
-> │          ├── 📄 SidebarNav.astro
-> │          ├── 📄 ThemeDemo.astro
-> │          └── 📂 override-components/
-> │            ├── 📄 ContentPanel.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Head.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 Hero.astro
-> │            ├── 📄 MobileMenuToggle.astro
-> │            ├── 📄 MobileTableOfContents.astro
-> │            ├── 📄 PageFrame.astro
-> │            ├── 📄 PageSidebar.astro
-> │            ├── 📄 Pagination.astro
-> │            ├── 📄 Search.astro
-> │            ├── 📄 Sidebar.astro
-> │            ├── 📄 SidebarRestorePoint.astro
-> │            ├── 📄 SidebarSublist.astro
-> │            ├── 📄 SiteTitle.astro
-> │            └── 📂 TableOfContents/
-> │            ├── 📄 TableOfContents.astro
-> │              ├── 📄 TableOfContentsList.astro
-> │              ├── 📄 starlight-toc.ts
-> │            ├── 📄 ThemeSwitch.astro
-> │            ├── 📄 TwoColumnContent.astro
-> │          └── 📂 user-components/
-> │            ├── 📄 Button.astro
-> │            ├── 📄 Grid.astro
-> │            ├── 📄 ListCard.astro
-> │            ├── 📄 NewCard.astro
-> │        └── 📂 config/
-> │          ├── 📄 config.json
-> │          ├── 📄 locals.json
-> │          ├── 📄 menu.en.json
-> │          ├── 📄 menu.fr.json
-> │          ├── 📄 sidebar.json
-> │          ├── 📄 social.json
-> │          ├── 📄 theme.json
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 docs/
-> │            ├── 📄 404.md
-> │            ├── 📄 about.md
-> │            └── 📂 configurations/
-> │              ├── 📄 GitHub.md
-> │              ├── 📄 custom-css-js.md
-> │              ├── 📄 custom-domain.md
-> │            └── 📂 contents/
-> │              └── 📂 components/
-> │                └── 📂 Child Components/
-> │                  └── 📂 More Child/
-> │                    ├── 📄 button.md
-> │                  ├── 📄 new-card.md
-> │                ├── 📄 accordion.md
-> │                ├── 📄 grid.md
-> │                ├── 📄 list-card.md
-> │                ├── 📄 using-components.md
-> │              └── 📂 editing/
-> │                ├── 📄 add-new-doc.md
-> │            └── 📂 fr/
-> │              ├── 📄 about.md
-> │              └── 📂 configurations/
-> │                ├── 📄 custom-css-js.md
-> │                ├── 📄 custom-domain.md
-> │                ├── 📄 github.md
-> │              └── 📂 contents/
-> │                └── 📂 components/
-> │                  └── 📂 Child Components/
-> │                    └── 📂 More Child/
-> │                      ├── 📄 button.md
-> │                    ├── 📄 new-card.md
-> │                  ├── 📄 accordion.md
-> │                  ├── 📄 grid.md
-> │                  ├── 📄 list-card.md
-> │                  ├── 📄 using-components.md
-> │                └── 📂 editing/
-> │                  ├── 📄 add-new-doc.md
-> │              └── 📂 getting-started/
-> │                └── 📂 global-settings/
-> │                  ├── 📄 configuration.md
-> │                └── 📂 introduction/
-> │                  ├── 📄 Quickstart.md
-> │                  ├── 📄 overview.mdx
-> │                ├── 📄 navigation.md
-> │              ├── 📄 index.mdx
-> │              ├── 📄 privacy-policy.md
-> │              └── 📂 reference/
-> │                ├── 📄 configuration.mdx
-> │                ├── 📄 plugin.mdx
-> │              ├── 📄 terms-conditions.md
-> │            └── 📂 getting-started/
-> │              └── 📂 global-settings/
-> │                ├── 📄 configuration.md
-> │              └── 📂 introduction/
-> │                ├── 📄 Quickstart.md
-> │                ├── 📄 overview.mdx
-> │              ├── 📄 navigation.mdx
-> │            └── 📂 guides/
-> │              ├── 📄 example.md
-> │            ├── 📄 index.mdx
-> │            ├── 📄 privacy-policy.md
-> │            └── 📂 reference/
-> │              ├── 📄 configuration.mdx
-> │              ├── 📄 example.md
-> │              ├── 📄 plugin.mdx
-> │            ├── 📄 terms-conditions.md
-> │          └── 📂 i18n/
-> │            ├── 📄 en.json
-> │            ├── 📄 fr.json
-> │          └── 📂 sections/
-> │            ├── 📄 call-to-action.md
-> │            └── 📂 fr/
-> │              ├── 📄 call-to-action.md
-> │        └── 📂 lib/
-> │          └── 📂 utils/
-> │            ├── 📄 languagePerser.ts
-> │            ├── 📄 textConverter.ts
-> │        └── 📂 styles/
-> │          ├── 📄 base.css
-> │          ├── 📄 button.css
-> │          ├── 📄 components.css
-> │          ├── 📄 global.css
-> │          ├── 📄 navigation.css
-> │        └── 📂 tailwind-plugin/
-> │          ├── 📄 tw-bs-grid.js
-> │          ├── 📄 tw-theme.js
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 yarn.lock
-> │    └── 📂 qsjournal-cms/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      └── 📂 backend/
-> │        ├── 📄 LICENSE
-> │        ├── 📄 README.md
-> │        ├── 📄 app.js
-> │        ├── 📄 eslint.config.js
-> │        └── 📂 lib/
-> │          └── 📂 helpers/
-> │            ├── 📄 area-widgets.js
-> │            ├── 📄 color-options.js
-> │            ├── 📄 typography-options.js
-> │          └── 📂 schema-mixins/
-> │            ├── 📄 card-fields.js
-> │            ├── 📄 hero-fields.js
-> │            ├── 📄 link-fields.js
-> │            ├── 📄 slideshow-fields.js
-> │        └── 📂 modules/
-> │          └── 📂 @apostrophecms/
-> │            └── 📂 admin-bar/
-> │              ├── 📄 index.js
-> │            └── 📂 asset/
-> │              ├── 📄 index.js
-> │            └── 📂 attachment/
-> │              ├── 📄 index.js
-> │            └── 📂 express/
-> │              ├── 📄 index.js
-> │            └── 📂 global/
-> │              ├── 📄 index.js
-> │            └── 📂 home-page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 page.html
-> │            └── 📂 i18n/
-> │              ├── 📄 index.js
-> │            └── 📂 image-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 layout-column-widget/
-> │              ├── 📄 index.js
-> │            └── 📂 page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 notFound.html
-> │            └── 📂 rich-text-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 settings/
-> │              ├── 📄 index.js
-> │            └── 📂 user/
-> │              ├── 📄 index.js
-> │            └── 📂 video-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │          └── 📂 accordion-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 article/
-> │          └── 📂 article-page/
-> │            ├── 📄 index.js
-> │            ├── 📄 index.js
-> │          └── 📂 author/
-> │            ├── 📄 index.js
-> │          └── 📂 card-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 default-page/
-> │            ├── 📄 index.js
-> │          └── 📂 hero-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 link-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 slideshow-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          └── 📂 images/
-> │            ├── 📄 logo.png
-> │        └── 📂 scripts/
-> │          ├── 📄 load-starter-content
-> │          ├── 📄 update-starter-content
-> │        └── 📂 views/
-> │          ├── 📄 layout.html
-> │      └── 📂 frontend/
-> │        ├── 📄 Procfile
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package-lock.json
-> │        ├── 📄 package.json
-> │        ├── 📄 postcss.config.js
-> │        └── 📂 public/
-> │          ├── 📄 favicon.svg
-> │          └── 📂 fonts/
-> │            └── 📂 fontawesome/
-> │              ├── 📄 fa-brands-400.woff2
-> │              ├── 📄 fa-regular-400.woff2
-> │              ├── 📄 fa-solid-900.woff2
-> │              ├── 📄 fa-v4compatibility.woff2
-> │          └── 📂 images/
-> │            ├── 📄 image-widget-placeholder.jpg
-> │            ├── 📄 missing-icon.svg
-> │          └── 📂 scripts/
-> │            ├── 📄 VideoWidget.js
-> │            ├── 📄 dynamic-navbar-padding.js
-> │        └── 📂 src/
-> │          └── 📂 components/
-> │            ├── 📄 ArticlesFilter.astro
-> │            ├── 📄 Figure.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 ImageLink.astro
-> │            ├── 📄 Pagination.astro
-> │          ├── 📄 env.d.ts
-> │          └── 📂 layouts/
-> │            └── 📂 article-layouts/
-> │              ├── 📄 HeroGrid.astro
-> │              ├── 📄 ListAside.astro
-> │              ├── 📄 ShowFullWidth.astro
-> │              ├── 📄 ShowMagazine.astro
-> │              ├── 📄 ShowMinimal.astro
-> │              ├── 📄 Standard.astro
-> │          └── 📂 lib/
-> │            ├── 📄 attachments.js
-> │            ├── 📄 get-layout-areas.js
-> │            ├── 📄 homepage-defaults.js
-> │            ├── 📄 use-site-config.js
-> │          └── 📂 pages/
-> │            ├── 📄 [...slug].astro
-> │          └── 📂 styles/
-> │            ├── 📄 app.css
-> │            ├── 📄 main.scss
-> │          └── 📂 templates/
-> │            ├── 📄 ArticleIndexPage.astro
-> │            ├── 📄 ArticleShowPage.astro
-> │            ├── 📄 DefaultPage.astro
-> │            ├── 📄 HomePage.astro
-> │            ├── 📄 index.js
-> │          └── 📂 widgets/
-> │            ├── 📄 AccordionWidget.astro
-> │            ├── 📄 CardWidget.astro
-> │            ├── 📄 FileWidget.astro
-> │            ├── 📄 HeroWidget.astro
-> │            ├── 📄 ImageWidget.astro
-> │            ├── 📄 LinkWidget.astro
-> │            ├── 📄 RichTextWidget.astro
-> │            ├── 📄 SlideshowWidget.astro
-> │            ├── 📄 VideoWidget.astro
-> │            ├── 📄 index.js
-> │        ├── 📄 tsconfig.json
-> │      ├── 📄 package.json
-> │  └── 📂 public/
-> │    └── 📂 qially-main/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 src/
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 qsaysit_blog/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 scripts/
-> │        ├── 📄 legacy_build.py
-> │      └── 📂 src/
-> │        └── 📂 content/
-> │          ├── 📄 config.ts
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │          └── 📂 posts/
-> │            ├── 📄 [...id].astro
-> │      ├── 📄 tsconfig.json
-> │  └── 📂 tools/
-> │    └── 📂 playwrite/
-> │      ├── 📄 package.json
-> │      ├── 📄 playwright.config.ts
-> │      └── 📂 tests/
-> │        ├── 📄 example.spec.ts
-> │    └── 📂 qinode-engine/
-> │      ├── 📄 Cargo.lock
-> │      ├── 📄 Cargo.toml
-> │      ├── 📄 LICENSE
-> │      └── 📂 QiNode_Genesis_Root/
-> │        └── 📂 bin/
-> │          ├── 📄 logo.svg
-> │        ├── 📄 data.json
-> │        ├── 📄 index.md
-> │      ├── 📄 README.md
-> │      ├── 📄 seed.rs
-> │      ├── 📄 spark.bat
-> │      └── 📂 src/
-> │        ├── 📄 main.rs
-> │      └── 📂 target/
-> │        ├── 📄 CACHEDIR.TAG
-> │        └── 📂 debug/
-> │          └── 📂 deps/
-> │            ├── 📄 adler2-cca88367ea54e1d9.d
-> │            ├── 📄 autocfg-043b97bbbc0391af.d
-> │            ├── 📄 bit_field-c8de98fe41e295b5.d
-> │            ├── 📄 bitflags-c45b41ad3310550c.d
-> │            ├── 📄 bitflags-ea7ffdd03310bd72.d
-> │            ├── 📄 block_buffer-853b496c3e7d17bb.d
-> │            ├── 📄 bytemuck-17c3b3c1cd893898.d
-> │            ├── 📄 byteorder-49a32cd3f0429b08.d
-> │            ├── 📄 byteorder_lite-bf4a68a224c189d9.d
-> │            ├── 📄 bytes-6ad1259d4ed28c5b.d
-> │            ├── 📄 cfg_if-1b00309adfde8577.d
-> │            ├── 📄 chrono-a2c1f6a045515c90.d
-> │            ├── 📄 chrono-e89a06ae3ebc6697.d
-> │            ├── 📄 color_quant-4e96f747c6ef4a1e.d
-> │            ├── 📄 cpufeatures-54525fcd9dd47777.d
-> │            ├── 📄 crc32fast-3cbddfec85689105.d
-> │            ├── 📄 crossbeam_deque-076a317659a056d9.d
-> │            ├── 📄 crossbeam_epoch-043cd9cff795861b.d
-> │            ├── 📄 crossbeam_utils-d160c3ba17953aa6.d
-> │            ├── 📄 crypto_common-ecd2e548f42367e2.d
-> │            ├── 📄 digest-e50d3d528ae2fc38.d
-> │            ├── 📄 either-a2ff70278526f026.d
-> │            ├── 📄 exr-17f701a647afa83f.d
-> │            ├── 📄 fdeflate-431b319b9ca8e90a.d
-> │            ├── 📄 flate2-8942d0fb07090901.d
-> │            ├── 📄 float-46149dde4b0b505f.d
-> │            ├── 📄 generic_array-32530c6322d37094.d
-> │            ├── 📄 getrandom-764af6ecde2890e8.d
-> │            ├── 📄 gif-1cf752babd6135d8.d
-> │            ├── 📄 half-b30329b6bc637b74.d
-> │            ├── 📄 image-357c2177fd5f0f4f.d
-> │            ├── 📄 image-b4a26e86cb0befe6.d
-> │            ├── 📄 itertools-bbe43027166d5356.d
-> │            ├── 📄 itoa-c3a9ef678528d574.d
-> │            ├── 📄 jpeg_decoder-3b074ba196d29392.d
-> │            ├── 📄 lebe-b63cb46f3031b07e.d
-> │            ├── 📄 libadler2-cca88367ea54e1d9.rmeta
-> │            ├── 📄 libautocfg-043b97bbbc0391af.rlib
-> │            ├── 📄 libautocfg-043b97bbbc0391af.rmeta
-> │            ├── 📄 libbit_field-c8de98fe41e295b5.rmeta
-> │            ├── 📄 libbitflags-c45b41ad3310550c.rmeta
-> │            ├── 📄 libbitflags-ea7ffdd03310bd72.rmeta
-> │            ├── 📄 libblock_buffer-853b496c3e7d17bb.rmeta
-> │            ├── 📄 libbytemuck-17c3b3c1cd893898.rmeta
-> │            ├── 📄 libbyteorder-49a32cd3f0429b08.rmeta
-> │            ├── 📄 libbyteorder_lite-bf4a68a224c189d9.rmeta
-> │            ├── 📄 libbytes-6ad1259d4ed28c5b.rmeta
-> │            ├── 📄 libcfg_if-1b00309adfde8577.rmeta
-> │            ├── 📄 libchrono-a2c1f6a045515c90.rmeta
-> │            ├── 📄 libchrono-e89a06ae3ebc6697.rmeta
-> │            ├── 📄 libcolor_quant-4e96f747c6ef4a1e.rmeta
-> │            ├── 📄 libcpufeatures-54525fcd9dd47777.rmeta
-> │            ├── 📄 libcrc32fast-3cbddfec85689105.rmeta
-> │            ├── 📄 libcrossbeam_deque-076a317659a056d9.rmeta
-> │            ├── 📄 libcrossbeam_epoch-043cd9cff795861b.rmeta
-> │            ├── 📄 libcrossbeam_utils-d160c3ba17953aa6.rmeta
-> │            ├── 📄 libcrypto_common-ecd2e548f42367e2.rmeta
-> │            ├── 📄 libdigest-e50d3d528ae2fc38.rmeta
-> │            ├── 📄 libeither-a2ff70278526f026.rmeta
-> │            ├── 📄 libexr-17f701a647afa83f.rmeta
-> │            ├── 📄 libfdeflate-431b319b9ca8e90a.rmeta
-> │            ├── 📄 libflate2-8942d0fb07090901.rmeta
-> │            ├── 📄 libfloat-46149dde4b0b505f.rmeta
-> │            ├── 📄 libgeneric_array-32530c6322d37094.rmeta
-> │            ├── 📄 libgetrandom-764af6ecde2890e8.rmeta
-> │            ├── 📄 libgif-1cf752babd6135d8.rmeta
-> │            ├── 📄 libhalf-b30329b6bc637b74.rmeta
-> │            ├── 📄 libimage-357c2177fd5f0f4f.rmeta
-> │            ├── 📄 libimage-b4a26e86cb0befe6.rmeta
-> │            ├── 📄 libitertools-bbe43027166d5356.rmeta
-> │            ├── 📄 libitoa-c3a9ef678528d574.rmeta
-> │            ├── 📄 libjpeg_decoder-3b074ba196d29392.rmeta
-> │            ├── 📄 liblebe-b63cb46f3031b07e.rmeta
-> │            ├── 📄 liblibloading-f8d73e346f616310.rmeta
-> │            ├── 📄 libloading-f8d73e346f616310.d
-> │            ├── 📄 liblog-fb9d4e8d576f1c74.rmeta
-> │            ├── 📄 libmaybe_owned-0ce89cddb0ad2bdc.rmeta
-> │            ├── 📄 libmemchr-9aa8c489e860b9bb.rmeta
-> │            ├── 📄 libminiz_oxide-645f1510d73cf779.rmeta
-> │            ├── 📄 libmoxcms-264cf0bb6880ff3c.rmeta
-> │            ├── 📄 libnum_traits-1af9e8dd5d372322.rmeta
-> │            ├── 📄 libnum_traits-f3d1c18fbe1c686b.rmeta
-> │            ├── 📄 libonce_cell-9351f28e5ff3f061.rmeta
-> │            ├── 📄 libpdfium_render-b4a592345d3e42d6.rmeta
-> │            ├── 📄 libpng-f834dd9518c9a765.rmeta
-> │            ├── 📄 libproc_macro2-2a65e13910496264.rlib
-> │            ├── 📄 libproc_macro2-2a65e13910496264.rmeta
-> │            ├── 📄 libproc_macro2-7efe65f547c60b58.rlib
-> │            ├── 📄 libproc_macro2-7efe65f547c60b58.rmeta
-> │            ├── 📄 libpxfm-257f204e9b439f05.rmeta
-> │            ├── 📄 libqinode_engine-3057703d1961e68f.rmeta
-> │            ├── 📄 libqinode_engine-60533d6a8a31094c.rmeta
-> │            ├── 📄 libqinode_engine-64bd867cd10a029e.rmeta
-> │            ├── 📄 libqinode_engine-7f53ad84a0fac9c9.rmeta
-> │            ├── 📄 libqoi-72b47067828e0a54.rmeta
-> │            ├── 📄 libquote-292acd97b951ab58.rlib
-> │            ├── 📄 libquote-292acd97b951ab58.rmeta
-> │            ├── 📄 libquote-b8e9bfc4b3d68ed4.rlib
-> │            ├── 📄 libquote-b8e9bfc4b3d68ed4.rmeta
-> │            ├── 📄 librayon-061da9a104041803.rmeta
-> │            ├── 📄 librayon_core-ddb2a171fa9b862f.rmeta
-> │            ├── 📄 libserde-71c5087baa597b02.rmeta
-> │            ├── 📄 libserde-86735f4f7056b10b.rmeta
-> │            ├── 📄 libserde_core-1b25b54da287314d.rmeta
-> │            ├── 📄 libserde_derive-6f5ff11413a3e18c.dll.a
-> │            ├── 📄 libserde_derive-a766b343897fc73d.dll.a
-> │            ├── 📄 libserde_json-37ed460027afc25a.rmeta
-> │            ├── 📄 libsha2-f576d486dfa0983d.rmeta
-> │            ├── 📄 libsimd_adler32-46a701db88033147.rmeta
-> │            ├── 📄 libsmallvec-bb9ad433ea01cced.rmeta
-> │            ├── 📄 libsyn-243836a4800be948.rlib
-> │            ├── 📄 libsyn-243836a4800be948.rmeta
-> │            ├── 📄 libsyn-afc8d01f681fe2f9.rlib
-> │            ├── 📄 libsyn-afc8d01f681fe2f9.rmeta
-> │            ├── 📄 libtiff-aa4da30febff701b.rmeta
-> │            ├── 📄 libtypenum-5130f319450b4c90.rmeta
-> │            ├── 📄 libunicode_ident-c9d946d454f0f0db.rlib
-> │            ├── 📄 libunicode_ident-c9d946d454f0f0db.rmeta
-> │            ├── 📄 libutf16string-aba0d78c83355dcf.rmeta
-> │            ├── 📄 libuuid-5eb755b7d0fc4acb.rmeta
-> │            ├── 📄 libvecmath-64ead49efdbd917c.rmeta
-> │            ├── 📄 libversion_check-492a5dd62a9a55c2.rlib
-> │            ├── 📄 libversion_check-492a5dd62a9a55c2.rmeta
-> │            ├── 📄 libweezl-e61d502e9aebb1d9.rmeta
-> │            ├── 📄 libwindows_link-ecc2c57152393b79.rmeta
-> │            ├── 📄 libzerocopy-a051251832af04e2.rmeta
-> │            ├── 📄 libzerocopy_derive-27dc27988c6aa677.dll.a
-> │            ├── 📄 libzmij-444997d5d81fb439.rmeta
-> │            ├── 📄 libzune_core-7948380ee3bc8169.rmeta
-> │            ├── 📄 libzune_inflate-6aa35e5e25313848.rmeta
-> │            ├── 📄 libzune_jpeg-7fb246b341b43e94.rmeta
-> │            ├── 📄 log-fb9d4e8d576f1c74.d
-> │            ├── 📄 maybe_owned-0ce89cddb0ad2bdc.d
-> │            ├── 📄 memchr-9aa8c489e860b9bb.d
-> │            ├── 📄 miniz_oxide-645f1510d73cf779.d
-> │            ├── 📄 moxcms-264cf0bb6880ff3c.d
-> │            ├── 📄 num_traits-1af9e8dd5d372322.d
-> │            ├── 📄 num_traits-f3d1c18fbe1c686b.d
-> │            ├── 📄 once_cell-9351f28e5ff3f061.d
-> │            ├── 📄 pdfium_render-b4a592345d3e42d6.d
-> │            ├── 📄 png-f834dd9518c9a765.d
-> │            ├── 📄 proc_macro2-2a65e13910496264.d
-> │            ├── 📄 proc_macro2-7efe65f547c60b58.d
-> │            ├── 📄 pxfm-257f204e9b439f05.d
-> │            ├── 📄 qinode_engine-3057703d1961e68f.d
-> │            ├── 📄 qinode_engine-60533d6a8a31094c.d
-> │            ├── 📄 qinode_engine-64bd867cd10a029e.d
-> │            ├── 📄 qinode_engine-7f53ad84a0fac9c9.d
-> │            ├── 📄 qoi-72b47067828e0a54.d
-> │            ├── 📄 quote-292acd97b951ab58.d
-> │            ├── 📄 quote-b8e9bfc4b3d68ed4.d
-> │            ├── 📄 rayon-061da9a104041803.d
-> │            ├── 📄 rayon_core-ddb2a171fa9b862f.d
-> │            ├── 📄 serde-71c5087baa597b02.d
-> │            ├── 📄 serde-86735f4f7056b10b.d
-> │            ├── 📄 serde_core-1b25b54da287314d.d
-> │            ├── 📄 serde_derive-6f5ff11413a3e18c.d
-> │            ├── 📄 serde_derive-a766b343897fc73d.d
-> │            ├── 📄 serde_json-37ed460027afc25a.d
-> │            ├── 📄 sha2-f576d486dfa0983d.d
-> │            ├── 📄 simd_adler32-46a701db88033147.d
-> │            ├── 📄 smallvec-bb9ad433ea01cced.d
-> │            ├── 📄 syn-243836a4800be948.d
-> │            ├── 📄 syn-afc8d01f681fe2f9.d
-> │            ├── 📄 tiff-aa4da30febff701b.d
-> │            ├── 📄 typenum-5130f319450b4c90.d
-> │            ├── 📄 unicode_ident-c9d946d454f0f0db.d
-> │            ├── 📄 utf16string-aba0d78c83355dcf.d
-> │            ├── 📄 uuid-5eb755b7d0fc4acb.d
-> │            ├── 📄 vecmath-64ead49efdbd917c.d
-> │            ├── 📄 version_check-492a5dd62a9a55c2.d
-> │            ├── 📄 weezl-e61d502e9aebb1d9.d
-> │            ├── 📄 windows_link-ecc2c57152393b79.d
-> │            ├── 📄 zerocopy-a051251832af04e2.d
-> │            ├── 📄 zerocopy_derive-27dc27988c6aa677.d
-> │            ├── 📄 zmij-444997d5d81fb439.d
-> │            ├── 📄 zune_core-7948380ee3bc8169.d
-> │            ├── 📄 zune_inflate-6aa35e5e25313848.d
-> │            ├── 📄 zune_jpeg-7fb246b341b43e94.d
-> │          └── 📂 examples/
-> │          └── 📂 incremental/
-> │            └── 📂 qinode_engine-0nsz7xrl1yoc0/
-> │              └── 📂 s-hg278kgirg-151wdy1-24fvel0bxc4mqgh157watyqna/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg278kgirg-151wdy1.lock
-> │              └── 📂 s-hg35359y5x-0dt2rax-working/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 dep-graph.part.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg35359y5x-0dt2rax.lock
-> │            └── 📂 qinode_engine-0zfnjd988cnzd/
-> │              └── 📂 s-hg278kg65z-008w074-drvw20cqdmioak2w71f9z34tr/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg278kg65z-008w074.lock
-> │              └── 📂 s-hg35359wos-0ha6mow-working/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 dep-graph.part.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg35359wos-0ha6mow.lock
-> │            └── 📂 qinode_engine-1f7mzpvr7lmfd/
-> │              └── 📂 s-hg26yey3ax-0tq7bmq-3rtzrhzmlo2yfox0399ru914i/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg26yey3ax-0tq7bmq.lock
-> │              └── 📂 s-hg2750tqpy-0rtj835-3rtzrhzmlo2yfox0399ru914i/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg2750tqpy-0rtj835.lock
-> │            └── 📂 qinode_engine-1q2xtplelelia/
-> │              └── 📂 s-hg26yey7su-14l9lwc-62ntx74ojkd9d9ngs8frz10xc/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg26yey7su-14l9lwc.lock
-> │              └── 📂 s-hg2750u7v2-0su0u8q-62ntx74ojkd9d9ngs8frz10xc/
-> │                ├── 📄 dep-graph.bin
-> │                ├── 📄 query-cache.bin
-> │                ├── 📄 work-products.bin
-> │              ├── 📄 s-hg2750u7v2-0su0u8q.lock
-> │        └── 📂 flycheck0/
-> │          ├── 📄 stderr
-> │          ├── 📄 stdout
-> └── 📂 content/
-> │  └── 📂 Vault-Private/
-> │  └── 📂 Vault-Public/
-> │    └── 📂 QSaysIt-Blog/
-> │      └── 📂 2026/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │      ├── 📄 index.md
-> │    └── 📂 QSaysIt-Docs/
-> │      └── 📂 assets/
-> │        └── 📂 stylesheets/
-> │      ├── 📄 index.md
-> │  └── 📂 Vault-Qially-Docs/
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 auth/
-> │  └── 📂 config/
-> │  └── 📂 obsidian-engine/
-> │  └── 📂 schemas/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 supabase/
-> │    ├── 📄 bootstrap_tenant.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 00001_core_saas_setup.sql
-> │      ├── 📄 00002_vault_and_queues.sql
-> │      ├── 📄 00003_app_schemas.sql
-> │      ├── 📄 001_init_qione.sql
-> │      ├── 📄 002_qihome_mvp.sql
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │    └── 📂 templates/
-> │      ├── 📄 README.md
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │  └── 📂 ui/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> ├── 📄 pnpm-lock.yaml
-> ├── 📄 pnpm-workspace.yaml
-> └── 📂 scripts/
-> │  └── 📂 modules/
-> │    ├── 📄 create_app.py
-> │  └── 📂 sync/
-> │    ├── 📄 sync_dev_gdrive.py
-> └── 📄 turbo.json
+> just to make sure we are aligned this is the tree, maybe this will help you gleen and universal metadata must haves ```markdown
+
+> . 📂 _QiOne_MonoRepo_Astro
+
+> ├── 📄 LICENSE
+
+> ├── 📄 MIGRATION_PLAN.md
+
+> ├── 📄 README.md
+
+> ├── 📄 TODO.md
+
+> └── 📂 apps/
+
+> │  └── 📂 api/
+
+> │  └── 📂 clients/
+
+> │    └── 📂 a_unified_portal/
+
+> │    └── 📂 builtbyrays-main/
+
+> │    └── 📂 zaitullah-wiki/
+
+> │  └── 📂 internal/
+
+> │    └── 📂 admin-dashboard/
+
+> │    └── 📂 care-portal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 _redirects
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 QiBPAppIcon.png
+
+> │          ├── 📄 introvideo.mp4
+
+> │        └── 📂 kb/
+
+> │          └── 📂 01_medical/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 02_legal/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 03_financial/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 04_housing/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 05_daily_care/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 06_contacts/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 07_vault/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 08_caregiver/
+
+> │            ├── 📄 index.html
+
+> │          └── 📂 binder/
+
+> │            └── 📂 01_emergency_protocol/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 02_healthcare_representative/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 03_hipaa_living_will/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 04_emergency_access/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 05_durable_poa_financial/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 06_estate_interim_authority/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 07_incident_log/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 08_execution_notary/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 09_labels/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 10_executed_docs/
+
+> │              ├── 📄 index.html
+
+> │            └── 📂 assets/
+
+> │              └── 📂 css/
+
+> │                ├── 📄 manual.css
+
+> │            ├── 📄 index.html
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 manifest.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 app.tsx
+
+> │        └── 📂 components/
+
+> │          ├── 📄 layout.tsx
+
+> │          ├── 📄 require_auth.tsx
+
+> │        ├── 📄 env.d.ts
+
+> │        ├── 📄 index.css
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 access.ts
+
+> │          ├── 📄 api.ts
+
+> │          ├── 📄 money.ts
+
+> │          ├── 📄 supabase.ts
+
+> │        ├── 📄 main.tsx
+
+> │        └── 📂 modules/
+
+> │          └── 📂 qihome/
+
+> │            ├── 📄 index.tsx
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 chores.tsx
+
+> │              ├── 📄 dashboard.tsx
+
+> │              ├── 📄 ledger.tsx
+
+> │          ├── 📄 registry.ts
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 auth.tsx
+
+> │          ├── 📄 auth_confirm.tsx
+
+> │          ├── 📄 launcher.tsx
+
+> │          ├── 📄 module_router.tsx
+
+> │          ├── 📄 tenant_home.tsx
+
+> │          ├── 📄 tenant_select.tsx
+
+> │          ├── 📄 tenant_settings.tsx
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 vite.config.ts
+
+> │    └── 📂 family-wiki/
+
+> │    └── 📂 gina-ai/
+
+> │    └── 📂 qially-me/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 biome.json
+
+> │      ├── 📄 components.json
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 pnpm-lock.yaml
+
+> │      └── 📂 public/
+
+> │        ├── 📄 activity.svg
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 fresh.png
+
+> │          ├── 📄 fresh.webp
+
+> │          ├── 📄 glass.png
+
+> │          ├── 📄 glass.webp
+
+> │          ├── 📄 mermaid.svg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 logo.webp
+
+> │        ├── 📄 og.webp
+
+> │        ├── 📄 placeholder.webp
+
+> │        ├── 📄 robots.txt
+
+> │        ├── 📄 rss.svg
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 build-pagefind-index.ts
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 creations.json
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.webp
+
+> │        └── 📂 components/
+
+> │          ├── 📄 BaseHead.astro
+
+> │          ├── 📄 BetaBadge.astro
+
+> │          ├── 📄 Footer.astro
+
+> │          ├── 📄 FormattedDate.astro
+
+> │          ├── 📄 Header.astro
+
+> │          ├── 📄 HeaderLink.astro
+
+> │          ├── 📄 OptimizedImage.astro
+
+> │          ├── 📄 ProductCard.tsx
+
+> │          ├── 📄 ProductSection.astro
+
+> │          ├── 📄 ShareButtons.astro
+
+> │          ├── 📄 TagFilter.astro
+
+> │          └── 📂 blog/
+
+> │            ├── 📄 BlogCard.astro
+
+> │            ├── 📄 BlogsPage.astro
+
+> │          ├── 📄 copy-button.tsx
+
+> │          ├── 📄 image-viewer.tsx
+
+> │          └── 📂 knowledge-card/
+
+> │            ├── 📄 CardActions.astro
+
+> │            ├── 📄 CardBack.astro
+
+> │            ├── 📄 CardContainer.astro
+
+> │            ├── 📄 CardCover.astro
+
+> │            ├── 📄 CardFront.astro
+
+> │            ├── 📄 CardLink.astro
+
+> │            ├── 📄 CardsPage.astro
+
+> │            ├── 📄 KnowledgeCard.astro
+
+> │            ├── 📄 LinksModal.astro
+
+> │            ├── 📄 StructureDisplay.astro
+
+> │            ├── 📄 types.ts
+
+> │          └── 📂 landing-page/
+
+> │            ├── 📄 HeroSection.astro
+
+> │            ├── 📄 LatestSection.astro
+
+> │            ├── 📄 ScrollingTags.astro
+
+> │          └── 📂 navigation/
+
+> │            ├── 📄 ContentNavigation.astro
+
+> │          └── 📂 slide/
+
+> │            ├── 📄 SlideCard.astro
+
+> │            ├── 📄 SlidesPage.astro
+
+> │            ├── 📄 slide-viewer.tsx
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 dialog.tsx
+
+> │            ├── 📄 sonner.tsx
+
+> │        ├── 📄 consts.ts
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 blogs/
+
+> │            └── 📂 2025-08/
+
+> │              ├── 📄 groq-code-cli-internal.md
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 slides-01.png
+
+> │                ├── 📄 slides-02.png
+
+> │          └── 📂 cards/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 how-openai-uses-codex.md
+
+> │          └── 📂 doodles/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 monakit-released.md
+
+> │            └── 📂 2025-10/
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 doodle-list.png
+
+> │                ├── 📄 doodle.png
+
+> │              ├── 📄 mona-update-doodle-and-more.md
+
+> │          └── 📂 slides/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 agents-md-101.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 agents-md-ecosystem.png
+
+> │            └── 📂 2025-12/
+
+> │              ├── 📄 quadratic-101.md
+
+> │        ├── 📄 env.ts
+
+> │        └── 📂 layouts/
+
+> │          ├── 📄 ContentIndexLayout.astro
+
+> │          ├── 📄 MainLayout.astro
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 navigation.ts
+
+> │          ├── 📄 pagination.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 404.astro
+
+> │          └── 📂 blogs/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          └── 📂 cards/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 creations.astro
+
+> │          └── 📂 doodles/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 index.astro
+
+> │          ├── 📄 og-enhanced.ts
+
+> │          ├── 📄 rss.xml.ts
+
+> │          ├── 📄 search.astro
+
+> │          └── 📂 slides/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │        └── 📂 schemas/
+
+> │          ├── 📄 blog.ts
+
+> │          ├── 📄 card.ts
+
+> │          ├── 📄 doodle.ts
+
+> │          ├── 📄 slide.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 article.css
+
+> │          ├── 📄 card.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 scrolling-tags.css
+
+> │        └── 📂 themes/
+
+> │          ├── 📄 knowledge-card-themes.ts
+
+> │          ├── 📄 slide-card-themes.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 product.ts
+
+> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 worker/
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 wrangler.toml
+
+> │  └── 📂 private/
+
+> │    └── 📂 qivault-docs/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 netlify.toml
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.svg
+
+> │        ├── 📄 hero-icon.svg
+
+> │        ├── 📄 sitepins-manifest.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 changelogs.svg
+
+> │          ├── 📄 code-block.svg
+
+> │          ├── 📄 code-image.png
+
+> │          ├── 📄 content.svg
+
+> │          ├── 📄 cta-bg.png
+
+> │          ├── 📄 darkmode-demo.png
+
+> │          ├── 📄 doc-bg.png
+
+> │          ├── 📄 element.svg
+
+> │          ├── 📄 hero-bg-dark.png
+
+> │          ├── 📄 hero-bg-light.png
+
+> │          ├── 📄 hero-star.svg
+
+> │          ├── 📄 houston.webp
+
+> │          ├── 📄 layouts.svg
+
+> │          ├── 📄 lightmode-demo.png
+
+> │          ├── 📄 logo-dark.svg
+
+> │          ├── 📄 logo-light.svg
+
+> │          ├── 📄 overview.png
+
+> │          ├── 📄 step-1.png
+
+> │          ├── 📄 step-2.png
+
+> │          ├── 📄 step-3.png
+
+> │        └── 📂 components/
+
+> │          ├── 📄 Accordion.astro
+
+> │          ├── 📄 AccordionContainer.astro
+
+> │          ├── 📄 Breadcrumb.astro
+
+> │          ├── 📄 CTA.astro
+
+> │          ├── 📄 HeroTabs.astro
+
+> │          ├── 📄 HeroTabsItem.astro
+
+> │          ├── 📄 ImageMod.astro
+
+> │          ├── 📄 LinkButton.astro
+
+> │          ├── 📄 Section.astro
+
+> │          ├── 📄 SidebarNav.astro
+
+> │          ├── 📄 ThemeDemo.astro
+
+> │          └── 📂 override-components/
+
+> │            ├── 📄 ContentPanel.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Head.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 Hero.astro
+
+> │            ├── 📄 MobileMenuToggle.astro
+
+> │            ├── 📄 MobileTableOfContents.astro
+
+> │            ├── 📄 PageFrame.astro
+
+> │            ├── 📄 PageSidebar.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │            ├── 📄 Search.astro
+
+> │            ├── 📄 Sidebar.astro
+
+> │            ├── 📄 SidebarRestorePoint.astro
+
+> │            ├── 📄 SidebarSublist.astro
+
+> │            ├── 📄 SiteTitle.astro
+
+> │            └── 📂 TableOfContents/
+
+> │            ├── 📄 TableOfContents.astro
+
+> │              ├── 📄 TableOfContentsList.astro
+
+> │              ├── 📄 starlight-toc.ts
+
+> │            ├── 📄 ThemeSwitch.astro
+
+> │            ├── 📄 TwoColumnContent.astro
+
+> │          └── 📂 user-components/
+
+> │            ├── 📄 Button.astro
+
+> │            ├── 📄 Grid.astro
+
+> │            ├── 📄 ListCard.astro
+
+> │            ├── 📄 NewCard.astro
+
+> │        └── 📂 config/
+
+> │          ├── 📄 config.json
+
+> │          ├── 📄 locals.json
+
+> │          ├── 📄 menu.en.json
+
+> │          ├── 📄 menu.fr.json
+
+> │          ├── 📄 sidebar.json
+
+> │          ├── 📄 social.json
+
+> │          ├── 📄 theme.json
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 docs/
+
+> │            ├── 📄 404.md
+
+> │            ├── 📄 about.md
+
+> │            └── 📂 configurations/
+
+> │              ├── 📄 GitHub.md
+
+> │              ├── 📄 custom-css-js.md
+
+> │              ├── 📄 custom-domain.md
+
+> │            └── 📂 contents/
+
+> │              └── 📂 components/
+
+> │                └── 📂 Child Components/
+
+> │                  └── 📂 More Child/
+
+> │                    ├── 📄 button.md
+
+> │                  ├── 📄 new-card.md
+
+> │                ├── 📄 accordion.md
+
+> │                ├── 📄 grid.md
+
+> │                ├── 📄 list-card.md
+
+> │                ├── 📄 using-components.md
+
+> │              └── 📂 editing/
+
+> │                ├── 📄 add-new-doc.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 about.md
+
+> │              └── 📂 configurations/
+
+> │                ├── 📄 custom-css-js.md
+
+> │                ├── 📄 custom-domain.md
+
+> │                ├── 📄 github.md
+
+> │              └── 📂 contents/
+
+> │                └── 📂 components/
+
+> │                  └── 📂 Child Components/
+
+> │                    └── 📂 More Child/
+
+> │                      ├── 📄 button.md
+
+> │                    ├── 📄 new-card.md
+
+> │                  ├── 📄 accordion.md
+
+> │                  ├── 📄 grid.md
+
+> │                  ├── 📄 list-card.md
+
+> │                  ├── 📄 using-components.md
+
+> │                └── 📂 editing/
+
+> │                  ├── 📄 add-new-doc.md
+
+> │              └── 📂 getting-started/
+
+> │                └── 📂 global-settings/
+
+> │                  ├── 📄 configuration.md
+
+> │                └── 📂 introduction/
+
+> │                  ├── 📄 Quickstart.md
+
+> │                  ├── 📄 overview.mdx
+
+> │                ├── 📄 navigation.md
+
+> │              ├── 📄 index.mdx
+
+> │              ├── 📄 privacy-policy.md
+
+> │              └── 📂 reference/
+
+> │                ├── 📄 configuration.mdx
+
+> │                ├── 📄 plugin.mdx
+
+> │              ├── 📄 terms-conditions.md
+
+> │            └── 📂 getting-started/
+
+> │              └── 📂 global-settings/
+
+> │                ├── 📄 configuration.md
+
+> │              └── 📂 introduction/
+
+> │                ├── 📄 Quickstart.md
+
+> │                ├── 📄 overview.mdx
+
+> │              ├── 📄 navigation.mdx
+
+> │            └── 📂 guides/
+
+> │              ├── 📄 example.md
+
+> │            ├── 📄 index.mdx
+
+> │            ├── 📄 privacy-policy.md
+
+> │            └── 📂 reference/
+
+> │              ├── 📄 configuration.mdx
+
+> │              ├── 📄 example.md
+
+> │              ├── 📄 plugin.mdx
+
+> │            ├── 📄 terms-conditions.md
+
+> │          └── 📂 i18n/
+
+> │            ├── 📄 en.json
+
+> │            ├── 📄 fr.json
+
+> │          └── 📂 sections/
+
+> │            ├── 📄 call-to-action.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 call-to-action.md
+
+> │        └── 📂 lib/
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 languagePerser.ts
+
+> │            ├── 📄 textConverter.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 base.css
+
+> │          ├── 📄 button.css
+
+> │          ├── 📄 components.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 navigation.css
+
+> │        └── 📂 tailwind-plugin/
+
+> │          ├── 📄 tw-bs-grid.js
+
+> │          ├── 📄 tw-theme.js
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 yarn.lock
+
+> │    └── 📂 qsjournal-cms/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 backend/
+
+> │        ├── 📄 LICENSE
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 app.js
+
+> │        ├── 📄 eslint.config.js
+
+> │        └── 📂 lib/
+
+> │          └── 📂 helpers/
+
+> │            ├── 📄 area-widgets.js
+
+> │            ├── 📄 color-options.js
+
+> │            ├── 📄 typography-options.js
+
+> │          └── 📂 schema-mixins/
+
+> │            ├── 📄 card-fields.js
+
+> │            ├── 📄 hero-fields.js
+
+> │            ├── 📄 link-fields.js
+
+> │            ├── 📄 slideshow-fields.js
+
+> │        └── 📂 modules/
+
+> │          └── 📂 @apostrophecms/
+
+> │            └── 📂 admin-bar/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 asset/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 attachment/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 express/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 global/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 home-page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 page.html
+
+> │            └── 📂 i18n/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 image-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 layout-column-widget/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 notFound.html
+
+> │            └── 📂 rich-text-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 settings/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 user/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 video-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │          └── 📂 accordion-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 article/
+
+> │          └── 📂 article-page/
+
+> │            ├── 📄 index.js
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 author/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 card-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 default-page/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 hero-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 link-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 slideshow-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.png
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 load-starter-content
+
+> │          ├── 📄 update-starter-content
+
+> │        └── 📂 views/
+
+> │          ├── 📄 layout.html
+
+> │      └── 📂 frontend/
+
+> │        ├── 📄 Procfile
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package-lock.json
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 postcss.config.js
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.svg
+
+> │          └── 📂 fonts/
+
+> │            └── 📂 fontawesome/
+
+> │              ├── 📄 fa-brands-400.woff2
+
+> │              ├── 📄 fa-regular-400.woff2
+
+> │              ├── 📄 fa-solid-900.woff2
+
+> │              ├── 📄 fa-v4compatibility.woff2
+
+> │          └── 📂 images/
+
+> │            ├── 📄 image-widget-placeholder.jpg
+
+> │            ├── 📄 missing-icon.svg
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 VideoWidget.js
+
+> │            ├── 📄 dynamic-navbar-padding.js
+
+> │        └── 📂 src/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 ArticlesFilter.astro
+
+> │            ├── 📄 Figure.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 ImageLink.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │          ├── 📄 env.d.ts
+
+> │          └── 📂 layouts/
+
+> │            └── 📂 article-layouts/
+
+> │              ├── 📄 HeroGrid.astro
+
+> │              ├── 📄 ListAside.astro
+
+> │              ├── 📄 ShowFullWidth.astro
+
+> │              ├── 📄 ShowMagazine.astro
+
+> │              ├── 📄 ShowMinimal.astro
+
+> │              ├── 📄 Standard.astro
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 attachments.js
+
+> │            ├── 📄 get-layout-areas.js
+
+> │            ├── 📄 homepage-defaults.js
+
+> │            ├── 📄 use-site-config.js
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 [...slug].astro
+
+> │          └── 📂 styles/
+
+> │            ├── 📄 app.css
+
+> │            ├── 📄 main.scss
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 ArticleIndexPage.astro
+
+> │            ├── 📄 ArticleShowPage.astro
+
+> │            ├── 📄 DefaultPage.astro
+
+> │            ├── 📄 HomePage.astro
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 widgets/
+
+> │            ├── 📄 AccordionWidget.astro
+
+> │            ├── 📄 CardWidget.astro
+
+> │            ├── 📄 FileWidget.astro
+
+> │            ├── 📄 HeroWidget.astro
+
+> │            ├── 📄 ImageWidget.astro
+
+> │            ├── 📄 LinkWidget.astro
+
+> │            ├── 📄 RichTextWidget.astro
+
+> │            ├── 📄 SlideshowWidget.astro
+
+> │            ├── 📄 VideoWidget.astro
+
+> │            ├── 📄 index.js
+
+> │        ├── 📄 tsconfig.json
+
+> │      ├── 📄 package.json
+
+> │  └── 📂 public/
+
+> │    └── 📂 qially-main/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 src/
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 qsaysit_blog/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 legacy_build.py
+
+> │      └── 📂 src/
+
+> │        └── 📂 content/
+
+> │          ├── 📄 config.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │          └── 📂 posts/
+
+> │            ├── 📄 [...id].astro
+
+> │      ├── 📄 tsconfig.json
+
+> │  └── 📂 tools/
+
+> │    └── 📂 playwrite/
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 playwright.config.ts
+
+> │      └── 📂 tests/
+
+> │        ├── 📄 example.spec.ts
+
+> │    └── 📂 qinode-engine/
+
+> │      ├── 📄 Cargo.lock
+
+> │      ├── 📄 Cargo.toml
+
+> │      ├── 📄 LICENSE
+
+> │      └── 📂 QiNode_Genesis_Root/
+
+> │        └── 📂 bin/
+
+> │          ├── 📄 logo.svg
+
+> │        ├── 📄 data.json
+
+> │        ├── 📄 index.md
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 seed.rs
+
+> │      ├── 📄 spark.bat
+
+> │      └── 📂 src/
+
+> │        ├── 📄 main.rs
+
+> │      └── 📂 target/
+
+> │        ├── 📄 CACHEDIR.TAG
+
+> │        └── 📂 debug/
+
+> │          └── 📂 deps/
+
+> │            ├── 📄 adler2-cca88367ea54e1d9.d
+
+> │            ├── 📄 autocfg-043b97bbbc0391af.d
+
+> │            ├── 📄 bit_field-c8de98fe41e295b5.d
+
+> │            ├── 📄 bitflags-c45b41ad3310550c.d
+
+> │            ├── 📄 bitflags-ea7ffdd03310bd72.d
+
+> │            ├── 📄 block_buffer-853b496c3e7d17bb.d
+
+> │            ├── 📄 bytemuck-17c3b3c1cd893898.d
+
+> │            ├── 📄 byteorder-49a32cd3f0429b08.d
+
+> │            ├── 📄 byteorder_lite-bf4a68a224c189d9.d
+
+> │            ├── 📄 bytes-6ad1259d4ed28c5b.d
+
+> │            ├── 📄 cfg_if-1b00309adfde8577.d
+
+> │            ├── 📄 chrono-a2c1f6a045515c90.d
+
+> │            ├── 📄 chrono-e89a06ae3ebc6697.d
+
+> │            ├── 📄 color_quant-4e96f747c6ef4a1e.d
+
+> │            ├── 📄 cpufeatures-54525fcd9dd47777.d
+
+> │            ├── 📄 crc32fast-3cbddfec85689105.d
+
+> │            ├── 📄 crossbeam_deque-076a317659a056d9.d
+
+> │            ├── 📄 crossbeam_epoch-043cd9cff795861b.d
+
+> │            ├── 📄 crossbeam_utils-d160c3ba17953aa6.d
+
+> │            ├── 📄 crypto_common-ecd2e548f42367e2.d
+
+> │            ├── 📄 digest-e50d3d528ae2fc38.d
+
+> │            ├── 📄 either-a2ff70278526f026.d
+
+> │            ├── 📄 exr-17f701a647afa83f.d
+
+> │            ├── 📄 fdeflate-431b319b9ca8e90a.d
+
+> │            ├── 📄 flate2-8942d0fb07090901.d
+
+> │            ├── 📄 float-46149dde4b0b505f.d
+
+> │            ├── 📄 generic_array-32530c6322d37094.d
+
+> │            ├── 📄 getrandom-764af6ecde2890e8.d
+
+> │            ├── 📄 gif-1cf752babd6135d8.d
+
+> │            ├── 📄 half-b30329b6bc637b74.d
+
+> │            ├── 📄 image-357c2177fd5f0f4f.d
+
+> │            ├── 📄 image-b4a26e86cb0befe6.d
+
+> │            ├── 📄 itertools-bbe43027166d5356.d
+
+> │            ├── 📄 itoa-c3a9ef678528d574.d
+
+> │            ├── 📄 jpeg_decoder-3b074ba196d29392.d
+
+> │            ├── 📄 lebe-b63cb46f3031b07e.d
+
+> │            ├── 📄 libadler2-cca88367ea54e1d9.rmeta
+
+> │            ├── 📄 libautocfg-043b97bbbc0391af.rlib
+
+> │            ├── 📄 libautocfg-043b97bbbc0391af.rmeta
+
+> │            ├── 📄 libbit_field-c8de98fe41e295b5.rmeta
+
+> │            ├── 📄 libbitflags-c45b41ad3310550c.rmeta
+
+> │            ├── 📄 libbitflags-ea7ffdd03310bd72.rmeta
+
+> │            ├── 📄 libblock_buffer-853b496c3e7d17bb.rmeta
+
+> │            ├── 📄 libbytemuck-17c3b3c1cd893898.rmeta
+
+> │            ├── 📄 libbyteorder-49a32cd3f0429b08.rmeta
+
+> │            ├── 📄 libbyteorder_lite-bf4a68a224c189d9.rmeta
+
+> │            ├── 📄 libbytes-6ad1259d4ed28c5b.rmeta
+
+> │            ├── 📄 libcfg_if-1b00309adfde8577.rmeta
+
+> │            ├── 📄 libchrono-a2c1f6a045515c90.rmeta
+
+> │            ├── 📄 libchrono-e89a06ae3ebc6697.rmeta
+
+> │            ├── 📄 libcolor_quant-4e96f747c6ef4a1e.rmeta
+
+> │            ├── 📄 libcpufeatures-54525fcd9dd47777.rmeta
+
+> │            ├── 📄 libcrc32fast-3cbddfec85689105.rmeta
+
+> │            ├── 📄 libcrossbeam_deque-076a317659a056d9.rmeta
+
+> │            ├── 📄 libcrossbeam_epoch-043cd9cff795861b.rmeta
+
+> │            ├── 📄 libcrossbeam_utils-d160c3ba17953aa6.rmeta
+
+> │            ├── 📄 libcrypto_common-ecd2e548f42367e2.rmeta
+
+> │            ├── 📄 libdigest-e50d3d528ae2fc38.rmeta
+
+> │            ├── 📄 libeither-a2ff70278526f026.rmeta
+
+> │            ├── 📄 libexr-17f701a647afa83f.rmeta
+
+> │            ├── 📄 libfdeflate-431b319b9ca8e90a.rmeta
+
+> │            ├── 📄 libflate2-8942d0fb07090901.rmeta
+
+> │            ├── 📄 libfloat-46149dde4b0b505f.rmeta
+
+> │            ├── 📄 libgeneric_array-32530c6322d37094.rmeta
+
+> │            ├── 📄 libgetrandom-764af6ecde2890e8.rmeta
+
+> │            ├── 📄 libgif-1cf752babd6135d8.rmeta
+
+> │            ├── 📄 libhalf-b30329b6bc637b74.rmeta
+
+> │            ├── 📄 libimage-357c2177fd5f0f4f.rmeta
+
+> │            ├── 📄 libimage-b4a26e86cb0befe6.rmeta
+
+> │            ├── 📄 libitertools-bbe43027166d5356.rmeta
+
+> │            ├── 📄 libitoa-c3a9ef678528d574.rmeta
+
+> │            ├── 📄 libjpeg_decoder-3b074ba196d29392.rmeta
+
+> │            ├── 📄 liblebe-b63cb46f3031b07e.rmeta
+
+> │            ├── 📄 liblibloading-f8d73e346f616310.rmeta
+
+> │            ├── 📄 libloading-f8d73e346f616310.d
+
+> │            ├── 📄 liblog-fb9d4e8d576f1c74.rmeta
+
+> │            ├── 📄 libmaybe_owned-0ce89cddb0ad2bdc.rmeta
+
+> │            ├── 📄 libmemchr-9aa8c489e860b9bb.rmeta
+
+> │            ├── 📄 libminiz_oxide-645f1510d73cf779.rmeta
+
+> │            ├── 📄 libmoxcms-264cf0bb6880ff3c.rmeta
+
+> │            ├── 📄 libnum_traits-1af9e8dd5d372322.rmeta
+
+> │            ├── 📄 libnum_traits-f3d1c18fbe1c686b.rmeta
+
+> │            ├── 📄 libonce_cell-9351f28e5ff3f061.rmeta
+
+> │            ├── 📄 libpdfium_render-b4a592345d3e42d6.rmeta
+
+> │            ├── 📄 libpng-f834dd9518c9a765.rmeta
+
+> │            ├── 📄 libproc_macro2-2a65e13910496264.rlib
+
+> │            ├── 📄 libproc_macro2-2a65e13910496264.rmeta
+
+> │            ├── 📄 libproc_macro2-7efe65f547c60b58.rlib
+
+> │            ├── 📄 libproc_macro2-7efe65f547c60b58.rmeta
+
+> │            ├── 📄 libpxfm-257f204e9b439f05.rmeta
+
+> │            ├── 📄 libqinode_engine-3057703d1961e68f.rmeta
+
+> │            ├── 📄 libqinode_engine-60533d6a8a31094c.rmeta
+
+> │            ├── 📄 libqinode_engine-64bd867cd10a029e.rmeta
+
+> │            ├── 📄 libqinode_engine-7f53ad84a0fac9c9.rmeta
+
+> │            ├── 📄 libqoi-72b47067828e0a54.rmeta
+
+> │            ├── 📄 libquote-292acd97b951ab58.rlib
+
+> │            ├── 📄 libquote-292acd97b951ab58.rmeta
+
+> │            ├── 📄 libquote-b8e9bfc4b3d68ed4.rlib
+
+> │            ├── 📄 libquote-b8e9bfc4b3d68ed4.rmeta
+
+> │            ├── 📄 librayon-061da9a104041803.rmeta
+
+> │            ├── 📄 librayon_core-ddb2a171fa9b862f.rmeta
+
+> │            ├── 📄 libserde-71c5087baa597b02.rmeta
+
+> │            ├── 📄 libserde-86735f4f7056b10b.rmeta
+
+> │            ├── 📄 libserde_core-1b25b54da287314d.rmeta
+
+> │            ├── 📄 libserde_derive-6f5ff11413a3e18c.dll.a
+
+> │            ├── 📄 libserde_derive-a766b343897fc73d.dll.a
+
+> │            ├── 📄 libserde_json-37ed460027afc25a.rmeta
+
+> │            ├── 📄 libsha2-f576d486dfa0983d.rmeta
+
+> │            ├── 📄 libsimd_adler32-46a701db88033147.rmeta
+
+> │            ├── 📄 libsmallvec-bb9ad433ea01cced.rmeta
+
+> │            ├── 📄 libsyn-243836a4800be948.rlib
+
+> │            ├── 📄 libsyn-243836a4800be948.rmeta
+
+> │            ├── 📄 libsyn-afc8d01f681fe2f9.rlib
+
+> │            ├── 📄 libsyn-afc8d01f681fe2f9.rmeta
+
+> │            ├── 📄 libtiff-aa4da30febff701b.rmeta
+
+> │            ├── 📄 libtypenum-5130f319450b4c90.rmeta
+
+> │            ├── 📄 libunicode_ident-c9d946d454f0f0db.rlib
+
+> │            ├── 📄 libunicode_ident-c9d946d454f0f0db.rmeta
+
+> │            ├── 📄 libutf16string-aba0d78c83355dcf.rmeta
+
+> │            ├── 📄 libuuid-5eb755b7d0fc4acb.rmeta
+
+> │            ├── 📄 libvecmath-64ead49efdbd917c.rmeta
+
+> │            ├── 📄 libversion_check-492a5dd62a9a55c2.rlib
+
+> │            ├── 📄 libversion_check-492a5dd62a9a55c2.rmeta
+
+> │            ├── 📄 libweezl-e61d502e9aebb1d9.rmeta
+
+> │            ├── 📄 libwindows_link-ecc2c57152393b79.rmeta
+
+> │            ├── 📄 libzerocopy-a051251832af04e2.rmeta
+
+> │            ├── 📄 libzerocopy_derive-27dc27988c6aa677.dll.a
+
+> │            ├── 📄 libzmij-444997d5d81fb439.rmeta
+
+> │            ├── 📄 libzune_core-7948380ee3bc8169.rmeta
+
+> │            ├── 📄 libzune_inflate-6aa35e5e25313848.rmeta
+
+> │            ├── 📄 libzune_jpeg-7fb246b341b43e94.rmeta
+
+> │            ├── 📄 log-fb9d4e8d576f1c74.d
+
+> │            ├── 📄 maybe_owned-0ce89cddb0ad2bdc.d
+
+> │            ├── 📄 memchr-9aa8c489e860b9bb.d
+
+> │            ├── 📄 miniz_oxide-645f1510d73cf779.d
+
+> │            ├── 📄 moxcms-264cf0bb6880ff3c.d
+
+> │            ├── 📄 num_traits-1af9e8dd5d372322.d
+
+> │            ├── 📄 num_traits-f3d1c18fbe1c686b.d
+
+> │            ├── 📄 once_cell-9351f28e5ff3f061.d
+
+> │            ├── 📄 pdfium_render-b4a592345d3e42d6.d
+
+> │            ├── 📄 png-f834dd9518c9a765.d
+
+> │            ├── 📄 proc_macro2-2a65e13910496264.d
+
+> │            ├── 📄 proc_macro2-7efe65f547c60b58.d
+
+> │            ├── 📄 pxfm-257f204e9b439f05.d
+
+> │            ├── 📄 qinode_engine-3057703d1961e68f.d
+
+> │            ├── 📄 qinode_engine-60533d6a8a31094c.d
+
+> │            ├── 📄 qinode_engine-64bd867cd10a029e.d
+
+> │            ├── 📄 qinode_engine-7f53ad84a0fac9c9.d
+
+> │            ├── 📄 qoi-72b47067828e0a54.d
+
+> │            ├── 📄 quote-292acd97b951ab58.d
+
+> │            ├── 📄 quote-b8e9bfc4b3d68ed4.d
+
+> │            ├── 📄 rayon-061da9a104041803.d
+
+> │            ├── 📄 rayon_core-ddb2a171fa9b862f.d
+
+> │            ├── 📄 serde-71c5087baa597b02.d
+
+> │            ├── 📄 serde-86735f4f7056b10b.d
+
+> │            ├── 📄 serde_core-1b25b54da287314d.d
+
+> │            ├── 📄 serde_derive-6f5ff11413a3e18c.d
+
+> │            ├── 📄 serde_derive-a766b343897fc73d.d
+
+> │            ├── 📄 serde_json-37ed460027afc25a.d
+
+> │            ├── 📄 sha2-f576d486dfa0983d.d
+
+> │            ├── 📄 simd_adler32-46a701db88033147.d
+
+> │            ├── 📄 smallvec-bb9ad433ea01cced.d
+
+> │            ├── 📄 syn-243836a4800be948.d
+
+> │            ├── 📄 syn-afc8d01f681fe2f9.d
+
+> │            ├── 📄 tiff-aa4da30febff701b.d
+
+> │            ├── 📄 typenum-5130f319450b4c90.d
+
+> │            ├── 📄 unicode_ident-c9d946d454f0f0db.d
+
+> │            ├── 📄 utf16string-aba0d78c83355dcf.d
+
+> │            ├── 📄 uuid-5eb755b7d0fc4acb.d
+
+> │            ├── 📄 vecmath-64ead49efdbd917c.d
+
+> │            ├── 📄 version_check-492a5dd62a9a55c2.d
+
+> │            ├── 📄 weezl-e61d502e9aebb1d9.d
+
+> │            ├── 📄 windows_link-ecc2c57152393b79.d
+
+> │            ├── 📄 zerocopy-a051251832af04e2.d
+
+> │            ├── 📄 zerocopy_derive-27dc27988c6aa677.d
+
+> │            ├── 📄 zmij-444997d5d81fb439.d
+
+> │            ├── 📄 zune_core-7948380ee3bc8169.d
+
+> │            ├── 📄 zune_inflate-6aa35e5e25313848.d
+
+> │            ├── 📄 zune_jpeg-7fb246b341b43e94.d
+
+> │          └── 📂 examples/
+
+> │          └── 📂 incremental/
+
+> │            └── 📂 qinode_engine-0nsz7xrl1yoc0/
+
+> │              └── 📂 s-hg278kgirg-151wdy1-24fvel0bxc4mqgh157watyqna/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg278kgirg-151wdy1.lock
+
+> │              └── 📂 s-hg35359y5x-0dt2rax-working/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 dep-graph.part.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg35359y5x-0dt2rax.lock
+
+> │            └── 📂 qinode_engine-0zfnjd988cnzd/
+
+> │              └── 📂 s-hg278kg65z-008w074-drvw20cqdmioak2w71f9z34tr/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg278kg65z-008w074.lock
+
+> │              └── 📂 s-hg35359wos-0ha6mow-working/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 dep-graph.part.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg35359wos-0ha6mow.lock
+
+> │            └── 📂 qinode_engine-1f7mzpvr7lmfd/
+
+> │              └── 📂 s-hg26yey3ax-0tq7bmq-3rtzrhzmlo2yfox0399ru914i/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg26yey3ax-0tq7bmq.lock
+
+> │              └── 📂 s-hg2750tqpy-0rtj835-3rtzrhzmlo2yfox0399ru914i/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg2750tqpy-0rtj835.lock
+
+> │            └── 📂 qinode_engine-1q2xtplelelia/
+
+> │              └── 📂 s-hg26yey7su-14l9lwc-62ntx74ojkd9d9ngs8frz10xc/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg26yey7su-14l9lwc.lock
+
+> │              └── 📂 s-hg2750u7v2-0su0u8q-62ntx74ojkd9d9ngs8frz10xc/
+
+> │                ├── 📄 dep-graph.bin
+
+> │                ├── 📄 query-cache.bin
+
+> │                ├── 📄 work-products.bin
+
+> │              ├── 📄 s-hg2750u7v2-0su0u8q.lock
+
+> │        └── 📂 flycheck0/
+
+> │          ├── 📄 stderr
+
+> │          ├── 📄 stdout
+
+> └── 📂 content/
+
+> │  └── 📂 Vault-Private/
+
+> │  └── 📂 Vault-Public/
+
+> │    └── 📂 QSaysIt-Blog/
+
+> │      └── 📂 2026/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 QSaysIt-Docs/
+
+> │      └── 📂 assets/
+
+> │        └── 📂 stylesheets/
+
+> │      ├── 📄 index.md
+
+> │  └── 📂 Vault-Qially-Docs/
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 auth/
+
+> │  └── 📂 config/
+
+> │  └── 📂 obsidian-engine/
+
+> │  └── 📂 schemas/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 bootstrap_tenant.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 00001_core_saas_setup.sql
+
+> │      ├── 📄 00002_vault_and_queues.sql
+
+> │      ├── 📄 00003_app_schemas.sql
+
+> │      ├── 📄 001_init_qione.sql
+
+> │      ├── 📄 002_qihome_mvp.sql
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> ├── 📄 pnpm-lock.yaml
+
+> ├── 📄 pnpm-workspace.yaml
+
+> └── 📂 scripts/
+
+> │  └── 📂 modules/
+
+> │    ├── 📄 create_app.py
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> └── 📄 turbo.json
+
 > ```
 
 ### Assistant
@@ -3504,731 +4429,1456 @@ canonical_ref: ""
 > If you want the quickest course-correction: make “module registry + access control + toggles” the very next thing after INBOX ingestion, because that’s the spine of your portal. Everything else is just fancy rooms in the house.
 
 ### User
-> ok here is the current dierctory tree, what is ok what needs updated or moved, ect. ```markdown
-> . 📂 _QiOne_MonoRepo_Astro
-> ├── 📄 LICENSE
-> ├── 📄 MIGRATION_PLAN.md
-> ├── 📄 README.md
-> └── 📂 apps/
-> │  └── 📂 internal/
-> │    └── 📂 qially-me/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 biome.json
-> │      ├── 📄 components.json
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 pnpm-lock.yaml
-> │      └── 📂 public/
-> │        ├── 📄 activity.svg
-> │        └── 📂 cards/
-> │          ├── 📄 fresh.png
-> │          ├── 📄 fresh.webp
-> │          ├── 📄 glass.png
-> │          ├── 📄 glass.webp
-> │          ├── 📄 mermaid.svg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 logo.png
-> │        ├── 📄 logo.webp
-> │        ├── 📄 og.webp
-> │        ├── 📄 placeholder.webp
-> │        ├── 📄 robots.txt
-> │        ├── 📄 rss.svg
-> │      └── 📂 scripts/
-> │        ├── 📄 build-pagefind-index.ts
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 creations.json
-> │          └── 📂 images/
-> │            ├── 📄 logo.webp
-> │        └── 📂 components/
-> │          ├── 📄 BaseHead.astro
-> │          ├── 📄 BetaBadge.astro
-> │          ├── 📄 Footer.astro
-> │          ├── 📄 FormattedDate.astro
-> │          ├── 📄 Header.astro
-> │          ├── 📄 HeaderLink.astro
-> │          ├── 📄 OptimizedImage.astro
-> │          ├── 📄 ProductCard.tsx
-> │          ├── 📄 ProductSection.astro
-> │          ├── 📄 ShareButtons.astro
-> │          ├── 📄 TagFilter.astro
-> │          └── 📂 blog/
-> │            ├── 📄 BlogCard.astro
-> │            ├── 📄 BlogsPage.astro
-> │          ├── 📄 copy-button.tsx
-> │          ├── 📄 image-viewer.tsx
-> │          └── 📂 knowledge-card/
-> │            ├── 📄 CardActions.astro
-> │            ├── 📄 CardBack.astro
-> │            ├── 📄 CardContainer.astro
-> │            ├── 📄 CardCover.astro
-> │            ├── 📄 CardFront.astro
-> │            ├── 📄 CardLink.astro
-> │            ├── 📄 CardsPage.astro
-> │            ├── 📄 KnowledgeCard.astro
-> │            ├── 📄 LinksModal.astro
-> │            ├── 📄 StructureDisplay.astro
-> │            ├── 📄 types.ts
-> │          └── 📂 landing-page/
-> │            ├── 📄 HeroSection.astro
-> │            ├── 📄 LatestSection.astro
-> │            ├── 📄 ScrollingTags.astro
-> │          └── 📂 navigation/
-> │            ├── 📄 ContentNavigation.astro
-> │          └── 📂 slide/
-> │            ├── 📄 SlideCard.astro
-> │            ├── 📄 SlidesPage.astro
-> │            ├── 📄 slide-viewer.tsx
-> │          └── 📂 ui/
-> │            ├── 📄 dialog.tsx
-> │            ├── 📄 sonner.tsx
-> │        ├── 📄 consts.ts
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 blogs/
-> │            └── 📂 2025-08/
-> │              ├── 📄 groq-code-cli-internal.md
-> │            └── 📂 2025-09/
-> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │              └── 📂 imgs/
-> │                ├── 📄 slides-01.png
-> │                ├── 📄 slides-02.png
-> │          └── 📂 cards/
-> │            └── 📂 2025-09/
-> │              ├── 📄 how-openai-uses-codex.md
-> │          └── 📂 doodles/
-> │            └── 📂 2025-09/
-> │              ├── 📄 monakit-released.md
-> │            └── 📂 2025-10/
-> │              └── 📂 imgs/
-> │                ├── 📄 doodle-list.png
-> │                ├── 📄 doodle.png
-> │              ├── 📄 mona-update-doodle-and-more.md
-> │          └── 📂 slides/
-> │            └── 📂 2025-09/
-> │              ├── 📄 agents-md-101.md
-> │              └── 📂 imgs/
-> │                ├── 📄 agents-md-ecosystem.png
-> │            └── 📂 2025-12/
-> │              ├── 📄 quadratic-101.md
-> │        ├── 📄 env.ts
-> │        └── 📂 layouts/
-> │          ├── 📄 ContentIndexLayout.astro
-> │          ├── 📄 MainLayout.astro
-> │        └── 📂 lib/
-> │          ├── 📄 navigation.ts
-> │          ├── 📄 pagination.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 pages/
-> │          ├── 📄 404.astro
-> │          └── 📂 blogs/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          └── 📂 cards/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 creations.astro
-> │          └── 📂 doodles/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 index.astro
-> │          ├── 📄 og-enhanced.ts
-> │          ├── 📄 rss.xml.ts
-> │          ├── 📄 search.astro
-> │          └── 📂 slides/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │        └── 📂 schemas/
-> │          ├── 📄 blog.ts
-> │          ├── 📄 card.ts
-> │          ├── 📄 doodle.ts
-> │          ├── 📄 slide.ts
-> │        └── 📂 styles/
-> │          ├── 📄 article.css
-> │          ├── 📄 card.css
-> │          ├── 📄 global.css
-> │          ├── 📄 scrolling-tags.css
-> │        └── 📂 themes/
-> │          ├── 📄 knowledge-card-themes.ts
-> │          ├── 📄 slide-card-themes.ts
-> │        └── 📂 types/
-> │          ├── 📄 product.ts
-> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 worker/
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 wrangler.toml
-> │  └── 📂 private/
-> │    └── 📂 care-portal/
-> │      ├── 📄 index.html
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 app.tsx
-> │        └── 📂 components/
-> │          ├── 📄 layout.tsx
-> │          ├── 📄 require_auth.tsx
-> │        ├── 📄 env.d.ts
-> │        ├── 📄 index.css
-> │        └── 📂 lib/
-> │          ├── 📄 access.ts
-> │          ├── 📄 api.ts
-> │          ├── 📄 money.ts
-> │          ├── 📄 supabase.ts
-> │        ├── 📄 main.tsx
-> │        └── 📂 modules/
-> │          └── 📂 qihome/
-> │            ├── 📄 index.tsx
-> │            └── 📂 pages/
-> │              ├── 📄 chores.tsx
-> │              ├── 📄 dashboard.tsx
-> │              ├── 📄 ledger.tsx
-> │          ├── 📄 registry.ts
-> │        └── 📂 routes/
-> │          ├── 📄 auth.tsx
-> │          ├── 📄 auth_confirm.tsx
-> │          ├── 📄 launcher.tsx
-> │          ├── 📄 module_router.tsx
-> │          ├── 📄 tenant_home.tsx
-> │          ├── 📄 tenant_select.tsx
-> │          ├── 📄 tenant_settings.tsx
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 vite.config.ts
-> │    └── 📂 qivault-docs/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 netlify.toml
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.svg
-> │        ├── 📄 hero-icon.svg
-> │        ├── 📄 sitepins-manifest.json
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 changelogs.svg
-> │          ├── 📄 code-block.svg
-> │          ├── 📄 code-image.png
-> │          ├── 📄 content.svg
-> │          ├── 📄 cta-bg.png
-> │          ├── 📄 darkmode-demo.png
-> │          ├── 📄 doc-bg.png
-> │          ├── 📄 element.svg
-> │          ├── 📄 hero-bg-dark.png
-> │          ├── 📄 hero-bg-light.png
-> │          ├── 📄 hero-star.svg
-> │          ├── 📄 houston.webp
-> │          ├── 📄 layouts.svg
-> │          ├── 📄 lightmode-demo.png
-> │          ├── 📄 logo-dark.svg
-> │          ├── 📄 logo-light.svg
-> │          ├── 📄 overview.png
-> │          ├── 📄 step-1.png
-> │          ├── 📄 step-2.png
-> │          ├── 📄 step-3.png
-> │        └── 📂 components/
-> │          ├── 📄 Accordion.astro
-> │          ├── 📄 AccordionContainer.astro
-> │          ├── 📄 Breadcrumb.astro
-> │          ├── 📄 CTA.astro
-> │          ├── 📄 HeroTabs.astro
-> │          ├── 📄 HeroTabsItem.astro
-> │          ├── 📄 ImageMod.astro
-> │          ├── 📄 LinkButton.astro
-> │          ├── 📄 Section.astro
-> │          ├── 📄 SidebarNav.astro
-> │          ├── 📄 ThemeDemo.astro
-> │          └── 📂 override-components/
-> │            ├── 📄 ContentPanel.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Head.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 Hero.astro
-> │            ├── 📄 MobileMenuToggle.astro
-> │            ├── 📄 MobileTableOfContents.astro
-> │            ├── 📄 PageFrame.astro
-> │            ├── 📄 PageSidebar.astro
-> │            ├── 📄 Pagination.astro
-> │            ├── 📄 Search.astro
-> │            ├── 📄 Sidebar.astro
-> │            ├── 📄 SidebarRestorePoint.astro
-> │            ├── 📄 SidebarSublist.astro
-> │            ├── 📄 SiteTitle.astro
-> │            └── 📂 TableOfContents/
-> │            ├── 📄 TableOfContents.astro
-> │              ├── 📄 TableOfContentsList.astro
-> │              ├── 📄 starlight-toc.ts
-> │            ├── 📄 ThemeSwitch.astro
-> │            ├── 📄 TwoColumnContent.astro
-> │          └── 📂 user-components/
-> │            ├── 📄 Button.astro
-> │            ├── 📄 Grid.astro
-> │            ├── 📄 ListCard.astro
-> │            ├── 📄 NewCard.astro
-> │        └── 📂 config/
-> │          ├── 📄 config.json
-> │          ├── 📄 locals.json
-> │          ├── 📄 menu.en.json
-> │          ├── 📄 menu.fr.json
-> │          ├── 📄 sidebar.json
-> │          ├── 📄 social.json
-> │          ├── 📄 theme.json
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 docs/
-> │            ├── 📄 404.md
-> │            ├── 📄 about.md
-> │            └── 📂 configurations/
-> │              ├── 📄 GitHub.md
-> │              ├── 📄 custom-css-js.md
-> │              ├── 📄 custom-domain.md
-> │            └── 📂 contents/
-> │              └── 📂 components/
-> │                └── 📂 Child Components/
-> │                  └── 📂 More Child/
-> │                    ├── 📄 button.md
-> │                  ├── 📄 new-card.md
-> │                ├── 📄 accordion.md
-> │                ├── 📄 grid.md
-> │                ├── 📄 list-card.md
-> │                ├── 📄 using-components.md
-> │              └── 📂 editing/
-> │                ├── 📄 add-new-doc.md
-> │            └── 📂 fr/
-> │              ├── 📄 about.md
-> │              └── 📂 configurations/
-> │                ├── 📄 custom-css-js.md
-> │                ├── 📄 custom-domain.md
-> │                ├── 📄 github.md
-> │              └── 📂 contents/
-> │                └── 📂 components/
-> │                  └── 📂 Child Components/
-> │                    └── 📂 More Child/
-> │                      ├── 📄 button.md
-> │                    ├── 📄 new-card.md
-> │                  ├── 📄 accordion.md
-> │                  ├── 📄 grid.md
-> │                  ├── 📄 list-card.md
-> │                  ├── 📄 using-components.md
-> │                └── 📂 editing/
-> │                  ├── 📄 add-new-doc.md
-> │              └── 📂 getting-started/
-> │                └── 📂 global-settings/
-> │                  ├── 📄 configuration.md
-> │                └── 📂 introduction/
-> │                  ├── 📄 Quickstart.md
-> │                  ├── 📄 overview.mdx
-> │                ├── 📄 navigation.md
-> │              ├── 📄 index.mdx
-> │              ├── 📄 privacy-policy.md
-> │              └── 📂 reference/
-> │                ├── 📄 configuration.mdx
-> │                ├── 📄 plugin.mdx
-> │              ├── 📄 terms-conditions.md
-> │            └── 📂 getting-started/
-> │              └── 📂 global-settings/
-> │                ├── 📄 configuration.md
-> │              └── 📂 introduction/
-> │                ├── 📄 Quickstart.md
-> │                ├── 📄 overview.mdx
-> │              ├── 📄 navigation.mdx
-> │            └── 📂 guides/
-> │              ├── 📄 example.md
-> │            ├── 📄 index.mdx
-> │            ├── 📄 privacy-policy.md
-> │            └── 📂 reference/
-> │              ├── 📄 configuration.mdx
-> │              ├── 📄 example.md
-> │              ├── 📄 plugin.mdx
-> │            ├── 📄 terms-conditions.md
-> │          └── 📂 i18n/
-> │            ├── 📄 en.json
-> │            ├── 📄 fr.json
-> │          └── 📂 sections/
-> │            ├── 📄 call-to-action.md
-> │            └── 📂 fr/
-> │              ├── 📄 call-to-action.md
-> │        └── 📂 lib/
-> │          └── 📂 utils/
-> │            ├── 📄 languagePerser.ts
-> │            ├── 📄 textConverter.ts
-> │        └── 📂 styles/
-> │          ├── 📄 base.css
-> │          ├── 📄 button.css
-> │          ├── 📄 components.css
-> │          ├── 📄 global.css
-> │          ├── 📄 navigation.css
-> │        └── 📂 tailwind-plugin/
-> │          ├── 📄 tw-bs-grid.js
-> │          ├── 📄 tw-theme.js
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 yarn.lock
-> │    └── 📂 qsjournal-cms/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      └── 📂 backend/
-> │        ├── 📄 LICENSE
-> │        ├── 📄 README.md
-> │        ├── 📄 app.js
-> │        ├── 📄 eslint.config.js
-> │        └── 📂 lib/
-> │          └── 📂 helpers/
-> │            ├── 📄 area-widgets.js
-> │            ├── 📄 color-options.js
-> │            ├── 📄 typography-options.js
-> │          └── 📂 schema-mixins/
-> │            ├── 📄 card-fields.js
-> │            ├── 📄 hero-fields.js
-> │            ├── 📄 link-fields.js
-> │            ├── 📄 slideshow-fields.js
-> │        └── 📂 modules/
-> │          └── 📂 @apostrophecms/
-> │            └── 📂 admin-bar/
-> │              ├── 📄 index.js
-> │            └── 📂 asset/
-> │              ├── 📄 index.js
-> │            └── 📂 attachment/
-> │              ├── 📄 index.js
-> │            └── 📂 express/
-> │              ├── 📄 index.js
-> │            └── 📂 global/
-> │              ├── 📄 index.js
-> │            └── 📂 home-page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 page.html
-> │            └── 📂 i18n/
-> │              ├── 📄 index.js
-> │            └── 📂 image-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 layout-column-widget/
-> │              ├── 📄 index.js
-> │            └── 📂 page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 notFound.html
-> │            └── 📂 rich-text-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 settings/
-> │              ├── 📄 index.js
-> │            └── 📂 user/
-> │              ├── 📄 index.js
-> │            └── 📂 video-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │          └── 📂 accordion-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 article/
-> │          └── 📂 article-page/
-> │            ├── 📄 index.js
-> │            ├── 📄 index.js
-> │          └── 📂 author/
-> │            ├── 📄 index.js
-> │          └── 📂 card-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 default-page/
-> │            ├── 📄 index.js
-> │          └── 📂 hero-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 link-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 slideshow-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          └── 📂 images/
-> │            ├── 📄 logo.png
-> │        └── 📂 scripts/
-> │          ├── 📄 load-starter-content
-> │          ├── 📄 update-starter-content
-> │        └── 📂 views/
-> │          ├── 📄 layout.html
-> │      └── 📂 frontend/
-> │        ├── 📄 Procfile
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        ├── 📄 postcss.config.js
-> │        └── 📂 public/
-> │          ├── 📄 favicon.svg
-> │          └── 📂 fonts/
-> │            └── 📂 fontawesome/
-> │              ├── 📄 fa-brands-400.woff2
-> │              ├── 📄 fa-regular-400.woff2
-> │              ├── 📄 fa-solid-900.woff2
-> │              ├── 📄 fa-v4compatibility.woff2
-> │          └── 📂 images/
-> │            ├── 📄 image-widget-placeholder.jpg
-> │            ├── 📄 missing-icon.svg
-> │          └── 📂 scripts/
-> │            ├── 📄 VideoWidget.js
-> │            ├── 📄 dynamic-navbar-padding.js
-> │        └── 📂 src/
-> │          └── 📂 components/
-> │            ├── 📄 ArticlesFilter.astro
-> │            ├── 📄 Figure.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 ImageLink.astro
-> │            ├── 📄 Pagination.astro
-> │          ├── 📄 env.d.ts
-> │          └── 📂 layouts/
-> │            └── 📂 article-layouts/
-> │              ├── 📄 HeroGrid.astro
-> │              ├── 📄 ListAside.astro
-> │              ├── 📄 ShowFullWidth.astro
-> │              ├── 📄 ShowMagazine.astro
-> │              ├── 📄 ShowMinimal.astro
-> │              ├── 📄 Standard.astro
-> │          └── 📂 lib/
-> │            ├── 📄 attachments.js
-> │            ├── 📄 get-layout-areas.js
-> │            ├── 📄 homepage-defaults.js
-> │            ├── 📄 use-site-config.js
-> │          └── 📂 pages/
-> │            ├── 📄 [...slug].astro
-> │          └── 📂 styles/
-> │            ├── 📄 app.css
-> │            ├── 📄 main.scss
-> │          └── 📂 templates/
-> │            ├── 📄 ArticleIndexPage.astro
-> │            ├── 📄 ArticleShowPage.astro
-> │            ├── 📄 DefaultPage.astro
-> │            ├── 📄 HomePage.astro
-> │            ├── 📄 index.js
-> │          └── 📂 widgets/
-> │            ├── 📄 AccordionWidget.astro
-> │            ├── 📄 CardWidget.astro
-> │            ├── 📄 FileWidget.astro
-> │            ├── 📄 HeroWidget.astro
-> │            ├── 📄 ImageWidget.astro
-> │            ├── 📄 LinkWidget.astro
-> │            ├── 📄 RichTextWidget.astro
-> │            ├── 📄 SlideshowWidget.astro
-> │            ├── 📄 VideoWidget.astro
-> │            ├── 📄 index.js
-> │        ├── 📄 tsconfig.json
-> │      ├── 📄 package.json
-> │  └── 📂 public/
-> │    └── 📂 qially-main/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 src/
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 qsaysit_blog/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 qially-main/
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          ├── 📄 favicon.ico
-> │          ├── 📄 favicon.svg
-> │        └── 📂 src/
-> │          └── 📂 pages/
-> │            ├── 📄 index.astro
-> │        ├── 📄 tsconfig.json
-> │      └── 📂 src/
-> │        └── 📂 content/
-> │          ├── 📄 config.ts
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │  └── 📂 tools/
-> │    └── 📂 playwrite/
-> │      ├── 📄 package.json
-> │      ├── 📄 playwright.config.ts
-> │      └── 📂 tests/
-> │        ├── 📄 example.spec.ts
-> │    └── 📂 qitax-cli/
-> │      ├── 📄 README.md
-> │      └── 📂 qitax_cli/
-> │        ├── 📄 __init__.py
-> │        ├── 📄 __main__.py
-> │        ├── 📄 service.py
-> │        ├── 📄 storage.py
-> │      ├── 📄 requirements.txt
-> └── 📂 configs/
-> └── 📂 content/
-> │  └── 📂 QiVault/
-> │    └── 📂 0_eos/
-> │      ├── 📄 0.00.01.00_qinote_unified_protocol.md
-> │      ├── 📄 0.00.01.01_qidecimal_classification.md
-> │      ├── 📄 0.00.01.02_qivault_naming_rules.md
-> │      ├── 📄 0.00.01.03_qivault_title_slug_rules.md
-> │      ├── 📄 0.00.01.04_required_front_matter.md
-> │      ├── 📄 0.00.01.05_formatting_standards.md
-> │      ├── 📄 0.00.01.06_script_validation_rules.md
-> │      ├── 📄 0.00.01.07_atomicity_rule.md
-> │      ├── 📄 0.00.01.08_linking_rules.md
-> │      ├── 📄 0.00.01.09_document_types.md
-> │      ├── 📄 0.00.01.10_attachments_media.md
-> │      ├── 📄 0.00.01.11_safety_consistency.md
-> │      ├── 📄 0.00.01.12_qieos_integration.md
-> │      ├── 📄 0.00.01.13_ai_governance.md
-> │      ├── 📄 0.00.01.14_founding_principles.md
-> │      ├── 📄 0.00.02.00_qione_taxonomy_slug_registry.md
-> │      ├── 📄 0.00.02.01_qione_realms_registry.md
-> │      ├── 📄 0.00.02.02_qione_tag_registry.md
-> │      ├── 📄 0.00.02.03_tag_taxonomy.md
-> │      ├── 📄 0.00.02.04_qione_slug_registry.md
-> │      ├── 📄 0.00.02.05_qione_vocabulary_spec.md
-> │      ├── 📄 0.00.02.06_qione_namespace_rules.md
-> │      ├── 📄 0.00.02.07_qione_link_rules.md
-> │      ├── 📄 0.00.02.08_qimeta_spec.md
-> │      ├── 📄 0.00.02.09_qione_validation_pipeline.md
-> │      ├── 📄 0.00.03.00_qi_os_integrated_registry.md
-> │      ├── 📄 index.html
-> │    └── 📂 10_Cycles_and_Closure/
-> │      ├── 📄 10.01_Reflection_and_Release.md
-> │      ├── 📄 10.02_Transformation_and_Renewal.md
-> │      ├── 📄 10.03_Legacy_and_Design.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 11_Oneness_and_Integration/
-> │      ├── 📄 11.01_Alignment_and_Coherence.md
-> │      ├── 📄 11.02_Synthesis_and_Wisdom.md
-> │      ├── 📄 11.03_The_Mirror_Principle.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 1_Foundations/
-> │      ├── 📄 1.02_Identity_and_Purpose.md
-> │      ├── 📄 1.03_Values_and_Boundaries.md
-> │      ├── 📄 index.html
-> │    └── 📂 2_Spirit_and_Faith/
-> │      ├── 📄 2.01_Belief_and_Trust.md
-> │      ├── 📄 2.02_Presence_and_Awareness.md
-> │      ├── 📄 2.03_Prayer_and_Intention.md
-> │      ├── 📄 index.html
-> │    └── 📂 3_Health_and_Wellbeing/
-> │      ├── 📄 3.01_Physical_Health.md
-> │      ├── 📄 3.02_Mental_Clarity.md
-> │      ├── 📄 3.03_Emotional_Balance.md
-> │      ├── 📄 index.html
-> │    └── 📂 4_Learning_and_Development/
-> │      ├── 📄 4.01_Education_and_Skills.md
-> │      ├── 📄 4.02_Creativity_and_Curiosity.md
-> │      ├── 📄 4.03_Reflection_and_Growth.md
-> │      ├── 📄 index.html
-> │    └── 📂 5_Work_and_Creation/
-> │      ├── 📄 5.01_Purposeful_Work.md
-> │      ├── 📄 5.02_Craft_and_Design.md
-> │      ├── 📄 5.03_Entrepreneurship.md
-> │      ├── 📄 5.04_Target_Market.md
-> │      ├── 📄 5.05_Services.md
-> │      ├── 📄 5.06_Business_Model.md
-> │      ├── 📄 5.07_Business_Goals.md
-> │      ├── 📄 5.08_Organizational_Structure.md
-> │      ├── 📄 5.09_Client_OS.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 6_Relationships_and_Exchange/
-> │      ├── 📄 6.01_Communication.md
-> │      ├── 📄 6.02_Community_and_Service.md
-> │      ├── 📄 6.03_Leadership_and_Teamwork.md
-> │      ├── 📄 6.04_Social_Media_Guidelines.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 7_Technology_and_Innovation/
-> │      ├── 📄 01_SystemInfo.md
-> │      ├── 📄 02_CPU.md
-> │      ├── 📄 03_RAM.md
-> │      ├── 📄 04_GPU.md
-> │      ├── 📄 05_Disks.md
-> │      ├── 📄 06_Motherboard.md
-> │      ├── 📄 07_BIOS.md
-> │      ├── 📄 08_Network.md
-> │      ├── 📄 09_Battery.md
-> │      ├── 📄 10_SystemInfoCMD.md
-> │      ├── 📄 7.02_Automation_and_AI.md
-> │      ├── 📄 7.03_Integration_and_Systems.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 8_Finance_and_Stewardship/
-> │      ├── 📄 8.01_Money_Mindset.md
-> │      ├── 📄 8.02_Wealth_and_Sustainability.md
-> │      ├── 📄 8.03_Giving_and_Investment.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 9_Ethics_and_Evolution/
-> │      ├── 📄 9.01_Integrity_and_Accountability.md
-> │      ├── 📄 9.02_Justice_and_Balance.md
-> │      ├── 📄 9.03_Evolution_and_Future.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    ├── 📄 README.md
-> │    ├── 📄 frontmatter.md
-> │    ├── 📄 media_block.md
-> │  └── 📂 Vault-Public/
-> │    └── 📂 QSaysIt-Blog/
-> │      └── 📂 2026/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │      ├── 📄 index.md
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 supabase/
-> │    ├── 📄 bootstrap_tenant.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 001_init_qione.sql
-> │      ├── 📄 002_qihome_mvp.sql
-> │      ├── 📄 003_qitax_returns.sql
-> │      ├── 📄 003a_qitax_seed.sql
-> │    ├── 📄 package.json
-> │    └── 📂 templates/
-> │      ├── 📄 README.md
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │  └── 📂 ui/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 utils/
-> ├── 📄 pnpm-lock.yaml
-> ├── 📄 pnpm-workspace.yaml
-> └── 📂 tools/
-> │  └── 📂 sync/
-> │    ├── 📄 sync_dev_gdrive.py
-> └── 📄 turbo.json
+> ok here is the current dierctory tree, what is ok what needs updated or moved, ect. ```markdown
+
+> . 📂 _QiOne_MonoRepo_Astro
+
+> ├── 📄 LICENSE
+
+> ├── 📄 MIGRATION_PLAN.md
+
+> ├── 📄 README.md
+
+> └── 📂 apps/
+
+> │  └── 📂 internal/
+
+> │    └── 📂 qially-me/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 biome.json
+
+> │      ├── 📄 components.json
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 pnpm-lock.yaml
+
+> │      └── 📂 public/
+
+> │        ├── 📄 activity.svg
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 fresh.png
+
+> │          ├── 📄 fresh.webp
+
+> │          ├── 📄 glass.png
+
+> │          ├── 📄 glass.webp
+
+> │          ├── 📄 mermaid.svg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 logo.webp
+
+> │        ├── 📄 og.webp
+
+> │        ├── 📄 placeholder.webp
+
+> │        ├── 📄 robots.txt
+
+> │        ├── 📄 rss.svg
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 build-pagefind-index.ts
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 creations.json
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.webp
+
+> │        └── 📂 components/
+
+> │          ├── 📄 BaseHead.astro
+
+> │          ├── 📄 BetaBadge.astro
+
+> │          ├── 📄 Footer.astro
+
+> │          ├── 📄 FormattedDate.astro
+
+> │          ├── 📄 Header.astro
+
+> │          ├── 📄 HeaderLink.astro
+
+> │          ├── 📄 OptimizedImage.astro
+
+> │          ├── 📄 ProductCard.tsx
+
+> │          ├── 📄 ProductSection.astro
+
+> │          ├── 📄 ShareButtons.astro
+
+> │          ├── 📄 TagFilter.astro
+
+> │          └── 📂 blog/
+
+> │            ├── 📄 BlogCard.astro
+
+> │            ├── 📄 BlogsPage.astro
+
+> │          ├── 📄 copy-button.tsx
+
+> │          ├── 📄 image-viewer.tsx
+
+> │          └── 📂 knowledge-card/
+
+> │            ├── 📄 CardActions.astro
+
+> │            ├── 📄 CardBack.astro
+
+> │            ├── 📄 CardContainer.astro
+
+> │            ├── 📄 CardCover.astro
+
+> │            ├── 📄 CardFront.astro
+
+> │            ├── 📄 CardLink.astro
+
+> │            ├── 📄 CardsPage.astro
+
+> │            ├── 📄 KnowledgeCard.astro
+
+> │            ├── 📄 LinksModal.astro
+
+> │            ├── 📄 StructureDisplay.astro
+
+> │            ├── 📄 types.ts
+
+> │          └── 📂 landing-page/
+
+> │            ├── 📄 HeroSection.astro
+
+> │            ├── 📄 LatestSection.astro
+
+> │            ├── 📄 ScrollingTags.astro
+
+> │          └── 📂 navigation/
+
+> │            ├── 📄 ContentNavigation.astro
+
+> │          └── 📂 slide/
+
+> │            ├── 📄 SlideCard.astro
+
+> │            ├── 📄 SlidesPage.astro
+
+> │            ├── 📄 slide-viewer.tsx
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 dialog.tsx
+
+> │            ├── 📄 sonner.tsx
+
+> │        ├── 📄 consts.ts
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 blogs/
+
+> │            └── 📂 2025-08/
+
+> │              ├── 📄 groq-code-cli-internal.md
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 slides-01.png
+
+> │                ├── 📄 slides-02.png
+
+> │          └── 📂 cards/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 how-openai-uses-codex.md
+
+> │          └── 📂 doodles/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 monakit-released.md
+
+> │            └── 📂 2025-10/
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 doodle-list.png
+
+> │                ├── 📄 doodle.png
+
+> │              ├── 📄 mona-update-doodle-and-more.md
+
+> │          └── 📂 slides/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 agents-md-101.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 agents-md-ecosystem.png
+
+> │            └── 📂 2025-12/
+
+> │              ├── 📄 quadratic-101.md
+
+> │        ├── 📄 env.ts
+
+> │        └── 📂 layouts/
+
+> │          ├── 📄 ContentIndexLayout.astro
+
+> │          ├── 📄 MainLayout.astro
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 navigation.ts
+
+> │          ├── 📄 pagination.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 404.astro
+
+> │          └── 📂 blogs/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          └── 📂 cards/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 creations.astro
+
+> │          └── 📂 doodles/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 index.astro
+
+> │          ├── 📄 og-enhanced.ts
+
+> │          ├── 📄 rss.xml.ts
+
+> │          ├── 📄 search.astro
+
+> │          └── 📂 slides/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │        └── 📂 schemas/
+
+> │          ├── 📄 blog.ts
+
+> │          ├── 📄 card.ts
+
+> │          ├── 📄 doodle.ts
+
+> │          ├── 📄 slide.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 article.css
+
+> │          ├── 📄 card.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 scrolling-tags.css
+
+> │        └── 📂 themes/
+
+> │          ├── 📄 knowledge-card-themes.ts
+
+> │          ├── 📄 slide-card-themes.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 product.ts
+
+> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 worker/
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 wrangler.toml
+
+> │  └── 📂 private/
+
+> │    └── 📂 care-portal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 app.tsx
+
+> │        └── 📂 components/
+
+> │          ├── 📄 layout.tsx
+
+> │          ├── 📄 require_auth.tsx
+
+> │        ├── 📄 env.d.ts
+
+> │        ├── 📄 index.css
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 access.ts
+
+> │          ├── 📄 api.ts
+
+> │          ├── 📄 money.ts
+
+> │          ├── 📄 supabase.ts
+
+> │        ├── 📄 main.tsx
+
+> │        └── 📂 modules/
+
+> │          └── 📂 qihome/
+
+> │            ├── 📄 index.tsx
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 chores.tsx
+
+> │              ├── 📄 dashboard.tsx
+
+> │              ├── 📄 ledger.tsx
+
+> │          ├── 📄 registry.ts
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 auth.tsx
+
+> │          ├── 📄 auth_confirm.tsx
+
+> │          ├── 📄 launcher.tsx
+
+> │          ├── 📄 module_router.tsx
+
+> │          ├── 📄 tenant_home.tsx
+
+> │          ├── 📄 tenant_select.tsx
+
+> │          ├── 📄 tenant_settings.tsx
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 vite.config.ts
+
+> │    └── 📂 qivault-docs/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 netlify.toml
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.svg
+
+> │        ├── 📄 hero-icon.svg
+
+> │        ├── 📄 sitepins-manifest.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 changelogs.svg
+
+> │          ├── 📄 code-block.svg
+
+> │          ├── 📄 code-image.png
+
+> │          ├── 📄 content.svg
+
+> │          ├── 📄 cta-bg.png
+
+> │          ├── 📄 darkmode-demo.png
+
+> │          ├── 📄 doc-bg.png
+
+> │          ├── 📄 element.svg
+
+> │          ├── 📄 hero-bg-dark.png
+
+> │          ├── 📄 hero-bg-light.png
+
+> │          ├── 📄 hero-star.svg
+
+> │          ├── 📄 houston.webp
+
+> │          ├── 📄 layouts.svg
+
+> │          ├── 📄 lightmode-demo.png
+
+> │          ├── 📄 logo-dark.svg
+
+> │          ├── 📄 logo-light.svg
+
+> │          ├── 📄 overview.png
+
+> │          ├── 📄 step-1.png
+
+> │          ├── 📄 step-2.png
+
+> │          ├── 📄 step-3.png
+
+> │        └── 📂 components/
+
+> │          ├── 📄 Accordion.astro
+
+> │          ├── 📄 AccordionContainer.astro
+
+> │          ├── 📄 Breadcrumb.astro
+
+> │          ├── 📄 CTA.astro
+
+> │          ├── 📄 HeroTabs.astro
+
+> │          ├── 📄 HeroTabsItem.astro
+
+> │          ├── 📄 ImageMod.astro
+
+> │          ├── 📄 LinkButton.astro
+
+> │          ├── 📄 Section.astro
+
+> │          ├── 📄 SidebarNav.astro
+
+> │          ├── 📄 ThemeDemo.astro
+
+> │          └── 📂 override-components/
+
+> │            ├── 📄 ContentPanel.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Head.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 Hero.astro
+
+> │            ├── 📄 MobileMenuToggle.astro
+
+> │            ├── 📄 MobileTableOfContents.astro
+
+> │            ├── 📄 PageFrame.astro
+
+> │            ├── 📄 PageSidebar.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │            ├── 📄 Search.astro
+
+> │            ├── 📄 Sidebar.astro
+
+> │            ├── 📄 SidebarRestorePoint.astro
+
+> │            ├── 📄 SidebarSublist.astro
+
+> │            ├── 📄 SiteTitle.astro
+
+> │            └── 📂 TableOfContents/
+
+> │            ├── 📄 TableOfContents.astro
+
+> │              ├── 📄 TableOfContentsList.astro
+
+> │              ├── 📄 starlight-toc.ts
+
+> │            ├── 📄 ThemeSwitch.astro
+
+> │            ├── 📄 TwoColumnContent.astro
+
+> │          └── 📂 user-components/
+
+> │            ├── 📄 Button.astro
+
+> │            ├── 📄 Grid.astro
+
+> │            ├── 📄 ListCard.astro
+
+> │            ├── 📄 NewCard.astro
+
+> │        └── 📂 config/
+
+> │          ├── 📄 config.json
+
+> │          ├── 📄 locals.json
+
+> │          ├── 📄 menu.en.json
+
+> │          ├── 📄 menu.fr.json
+
+> │          ├── 📄 sidebar.json
+
+> │          ├── 📄 social.json
+
+> │          ├── 📄 theme.json
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 docs/
+
+> │            ├── 📄 404.md
+
+> │            ├── 📄 about.md
+
+> │            └── 📂 configurations/
+
+> │              ├── 📄 GitHub.md
+
+> │              ├── 📄 custom-css-js.md
+
+> │              ├── 📄 custom-domain.md
+
+> │            └── 📂 contents/
+
+> │              └── 📂 components/
+
+> │                └── 📂 Child Components/
+
+> │                  └── 📂 More Child/
+
+> │                    ├── 📄 button.md
+
+> │                  ├── 📄 new-card.md
+
+> │                ├── 📄 accordion.md
+
+> │                ├── 📄 grid.md
+
+> │                ├── 📄 list-card.md
+
+> │                ├── 📄 using-components.md
+
+> │              └── 📂 editing/
+
+> │                ├── 📄 add-new-doc.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 about.md
+
+> │              └── 📂 configurations/
+
+> │                ├── 📄 custom-css-js.md
+
+> │                ├── 📄 custom-domain.md
+
+> │                ├── 📄 github.md
+
+> │              └── 📂 contents/
+
+> │                └── 📂 components/
+
+> │                  └── 📂 Child Components/
+
+> │                    └── 📂 More Child/
+
+> │                      ├── 📄 button.md
+
+> │                    ├── 📄 new-card.md
+
+> │                  ├── 📄 accordion.md
+
+> │                  ├── 📄 grid.md
+
+> │                  ├── 📄 list-card.md
+
+> │                  ├── 📄 using-components.md
+
+> │                └── 📂 editing/
+
+> │                  ├── 📄 add-new-doc.md
+
+> │              └── 📂 getting-started/
+
+> │                └── 📂 global-settings/
+
+> │                  ├── 📄 configuration.md
+
+> │                └── 📂 introduction/
+
+> │                  ├── 📄 Quickstart.md
+
+> │                  ├── 📄 overview.mdx
+
+> │                ├── 📄 navigation.md
+
+> │              ├── 📄 index.mdx
+
+> │              ├── 📄 privacy-policy.md
+
+> │              └── 📂 reference/
+
+> │                ├── 📄 configuration.mdx
+
+> │                ├── 📄 plugin.mdx
+
+> │              ├── 📄 terms-conditions.md
+
+> │            └── 📂 getting-started/
+
+> │              └── 📂 global-settings/
+
+> │                ├── 📄 configuration.md
+
+> │              └── 📂 introduction/
+
+> │                ├── 📄 Quickstart.md
+
+> │                ├── 📄 overview.mdx
+
+> │              ├── 📄 navigation.mdx
+
+> │            └── 📂 guides/
+
+> │              ├── 📄 example.md
+
+> │            ├── 📄 index.mdx
+
+> │            ├── 📄 privacy-policy.md
+
+> │            └── 📂 reference/
+
+> │              ├── 📄 configuration.mdx
+
+> │              ├── 📄 example.md
+
+> │              ├── 📄 plugin.mdx
+
+> │            ├── 📄 terms-conditions.md
+
+> │          └── 📂 i18n/
+
+> │            ├── 📄 en.json
+
+> │            ├── 📄 fr.json
+
+> │          └── 📂 sections/
+
+> │            ├── 📄 call-to-action.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 call-to-action.md
+
+> │        └── 📂 lib/
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 languagePerser.ts
+
+> │            ├── 📄 textConverter.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 base.css
+
+> │          ├── 📄 button.css
+
+> │          ├── 📄 components.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 navigation.css
+
+> │        └── 📂 tailwind-plugin/
+
+> │          ├── 📄 tw-bs-grid.js
+
+> │          ├── 📄 tw-theme.js
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 yarn.lock
+
+> │    └── 📂 qsjournal-cms/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 backend/
+
+> │        ├── 📄 LICENSE
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 app.js
+
+> │        ├── 📄 eslint.config.js
+
+> │        └── 📂 lib/
+
+> │          └── 📂 helpers/
+
+> │            ├── 📄 area-widgets.js
+
+> │            ├── 📄 color-options.js
+
+> │            ├── 📄 typography-options.js
+
+> │          └── 📂 schema-mixins/
+
+> │            ├── 📄 card-fields.js
+
+> │            ├── 📄 hero-fields.js
+
+> │            ├── 📄 link-fields.js
+
+> │            ├── 📄 slideshow-fields.js
+
+> │        └── 📂 modules/
+
+> │          └── 📂 @apostrophecms/
+
+> │            └── 📂 admin-bar/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 asset/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 attachment/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 express/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 global/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 home-page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 page.html
+
+> │            └── 📂 i18n/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 image-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 layout-column-widget/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 notFound.html
+
+> │            └── 📂 rich-text-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 settings/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 user/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 video-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │          └── 📂 accordion-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 article/
+
+> │          └── 📂 article-page/
+
+> │            ├── 📄 index.js
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 author/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 card-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 default-page/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 hero-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 link-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 slideshow-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.png
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 load-starter-content
+
+> │          ├── 📄 update-starter-content
+
+> │        └── 📂 views/
+
+> │          ├── 📄 layout.html
+
+> │      └── 📂 frontend/
+
+> │        ├── 📄 Procfile
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 postcss.config.js
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.svg
+
+> │          └── 📂 fonts/
+
+> │            └── 📂 fontawesome/
+
+> │              ├── 📄 fa-brands-400.woff2
+
+> │              ├── 📄 fa-regular-400.woff2
+
+> │              ├── 📄 fa-solid-900.woff2
+
+> │              ├── 📄 fa-v4compatibility.woff2
+
+> │          └── 📂 images/
+
+> │            ├── 📄 image-widget-placeholder.jpg
+
+> │            ├── 📄 missing-icon.svg
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 VideoWidget.js
+
+> │            ├── 📄 dynamic-navbar-padding.js
+
+> │        └── 📂 src/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 ArticlesFilter.astro
+
+> │            ├── 📄 Figure.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 ImageLink.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │          ├── 📄 env.d.ts
+
+> │          └── 📂 layouts/
+
+> │            └── 📂 article-layouts/
+
+> │              ├── 📄 HeroGrid.astro
+
+> │              ├── 📄 ListAside.astro
+
+> │              ├── 📄 ShowFullWidth.astro
+
+> │              ├── 📄 ShowMagazine.astro
+
+> │              ├── 📄 ShowMinimal.astro
+
+> │              ├── 📄 Standard.astro
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 attachments.js
+
+> │            ├── 📄 get-layout-areas.js
+
+> │            ├── 📄 homepage-defaults.js
+
+> │            ├── 📄 use-site-config.js
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 [...slug].astro
+
+> │          └── 📂 styles/
+
+> │            ├── 📄 app.css
+
+> │            ├── 📄 main.scss
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 ArticleIndexPage.astro
+
+> │            ├── 📄 ArticleShowPage.astro
+
+> │            ├── 📄 DefaultPage.astro
+
+> │            ├── 📄 HomePage.astro
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 widgets/
+
+> │            ├── 📄 AccordionWidget.astro
+
+> │            ├── 📄 CardWidget.astro
+
+> │            ├── 📄 FileWidget.astro
+
+> │            ├── 📄 HeroWidget.astro
+
+> │            ├── 📄 ImageWidget.astro
+
+> │            ├── 📄 LinkWidget.astro
+
+> │            ├── 📄 RichTextWidget.astro
+
+> │            ├── 📄 SlideshowWidget.astro
+
+> │            ├── 📄 VideoWidget.astro
+
+> │            ├── 📄 index.js
+
+> │        ├── 📄 tsconfig.json
+
+> │      ├── 📄 package.json
+
+> │  └── 📂 public/
+
+> │    └── 📂 qially-main/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 src/
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 qsaysit_blog/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 qially-main/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.ico
+
+> │          ├── 📄 favicon.svg
+
+> │        └── 📂 src/
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 index.astro
+
+> │        ├── 📄 tsconfig.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 content/
+
+> │          ├── 📄 config.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │  └── 📂 tools/
+
+> │    └── 📂 playwrite/
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 playwright.config.ts
+
+> │      └── 📂 tests/
+
+> │        ├── 📄 example.spec.ts
+
+> │    └── 📂 qitax-cli/
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 qitax_cli/
+
+> │        ├── 📄 __init__.py
+
+> │        ├── 📄 __main__.py
+
+> │        ├── 📄 service.py
+
+> │        ├── 📄 storage.py
+
+> │      ├── 📄 requirements.txt
+
+> └── 📂 configs/
+
+> └── 📂 content/
+
+> │  └── 📂 QiVault/
+
+> │    └── 📂 0_eos/
+
+> │      ├── 📄 0.00.01.00_qinote_unified_protocol.md
+
+> │      ├── 📄 0.00.01.01_qidecimal_classification.md
+
+> │      ├── 📄 0.00.01.02_qivault_naming_rules.md
+
+> │      ├── 📄 0.00.01.03_qivault_title_slug_rules.md
+
+> │      ├── 📄 0.00.01.04_required_front_matter.md
+
+> │      ├── 📄 0.00.01.05_formatting_standards.md
+
+> │      ├── 📄 0.00.01.06_script_validation_rules.md
+
+> │      ├── 📄 0.00.01.07_atomicity_rule.md
+
+> │      ├── 📄 0.00.01.08_linking_rules.md
+
+> │      ├── 📄 0.00.01.09_document_types.md
+
+> │      ├── 📄 0.00.01.10_attachments_media.md
+
+> │      ├── 📄 0.00.01.11_safety_consistency.md
+
+> │      ├── 📄 0.00.01.12_qieos_integration.md
+
+> │      ├── 📄 0.00.01.13_ai_governance.md
+
+> │      ├── 📄 0.00.01.14_founding_principles.md
+
+> │      ├── 📄 0.00.02.00_qione_taxonomy_slug_registry.md
+
+> │      ├── 📄 0.00.02.01_qione_realms_registry.md
+
+> │      ├── 📄 0.00.02.02_qione_tag_registry.md
+
+> │      ├── 📄 0.00.02.03_tag_taxonomy.md
+
+> │      ├── 📄 0.00.02.04_qione_slug_registry.md
+
+> │      ├── 📄 0.00.02.05_qione_vocabulary_spec.md
+
+> │      ├── 📄 0.00.02.06_qione_namespace_rules.md
+
+> │      ├── 📄 0.00.02.07_qione_link_rules.md
+
+> │      ├── 📄 0.00.02.08_qimeta_spec.md
+
+> │      ├── 📄 0.00.02.09_qione_validation_pipeline.md
+
+> │      ├── 📄 0.00.03.00_qi_os_integrated_registry.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 10_Cycles_and_Closure/
+
+> │      ├── 📄 10.01_Reflection_and_Release.md
+
+> │      ├── 📄 10.02_Transformation_and_Renewal.md
+
+> │      ├── 📄 10.03_Legacy_and_Design.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 11_Oneness_and_Integration/
+
+> │      ├── 📄 11.01_Alignment_and_Coherence.md
+
+> │      ├── 📄 11.02_Synthesis_and_Wisdom.md
+
+> │      ├── 📄 11.03_The_Mirror_Principle.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 1_Foundations/
+
+> │      ├── 📄 1.02_Identity_and_Purpose.md
+
+> │      ├── 📄 1.03_Values_and_Boundaries.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 2_Spirit_and_Faith/
+
+> │      ├── 📄 2.01_Belief_and_Trust.md
+
+> │      ├── 📄 2.02_Presence_and_Awareness.md
+
+> │      ├── 📄 2.03_Prayer_and_Intention.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 3_Health_and_Wellbeing/
+
+> │      ├── 📄 3.01_Physical_Health.md
+
+> │      ├── 📄 3.02_Mental_Clarity.md
+
+> │      ├── 📄 3.03_Emotional_Balance.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 4_Learning_and_Development/
+
+> │      ├── 📄 4.01_Education_and_Skills.md
+
+> │      ├── 📄 4.02_Creativity_and_Curiosity.md
+
+> │      ├── 📄 4.03_Reflection_and_Growth.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 5_Work_and_Creation/
+
+> │      ├── 📄 5.01_Purposeful_Work.md
+
+> │      ├── 📄 5.02_Craft_and_Design.md
+
+> │      ├── 📄 5.03_Entrepreneurship.md
+
+> │      ├── 📄 5.04_Target_Market.md
+
+> │      ├── 📄 5.05_Services.md
+
+> │      ├── 📄 5.06_Business_Model.md
+
+> │      ├── 📄 5.07_Business_Goals.md
+
+> │      ├── 📄 5.08_Organizational_Structure.md
+
+> │      ├── 📄 5.09_Client_OS.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 6_Relationships_and_Exchange/
+
+> │      ├── 📄 6.01_Communication.md
+
+> │      ├── 📄 6.02_Community_and_Service.md
+
+> │      ├── 📄 6.03_Leadership_and_Teamwork.md
+
+> │      ├── 📄 6.04_Social_Media_Guidelines.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 7_Technology_and_Innovation/
+
+> │      ├── 📄 01_SystemInfo.md
+
+> │      ├── 📄 02_CPU.md
+
+> │      ├── 📄 03_RAM.md
+
+> │      ├── 📄 04_GPU.md
+
+> │      ├── 📄 05_Disks.md
+
+> │      ├── 📄 06_Motherboard.md
+
+> │      ├── 📄 07_BIOS.md
+
+> │      ├── 📄 08_Network.md
+
+> │      ├── 📄 09_Battery.md
+
+> │      ├── 📄 10_SystemInfoCMD.md
+
+> │      ├── 📄 7.02_Automation_and_AI.md
+
+> │      ├── 📄 7.03_Integration_and_Systems.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 8_Finance_and_Stewardship/
+
+> │      ├── 📄 8.01_Money_Mindset.md
+
+> │      ├── 📄 8.02_Wealth_and_Sustainability.md
+
+> │      ├── 📄 8.03_Giving_and_Investment.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 9_Ethics_and_Evolution/
+
+> │      ├── 📄 9.01_Integrity_and_Accountability.md
+
+> │      ├── 📄 9.02_Justice_and_Balance.md
+
+> │      ├── 📄 9.03_Evolution_and_Future.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 frontmatter.md
+
+> │    ├── 📄 media_block.md
+
+> │  └── 📂 Vault-Public/
+
+> │    └── 📂 QSaysIt-Blog/
+
+> │      └── 📂 2026/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 bootstrap_tenant.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 001_init_qione.sql
+
+> │      ├── 📄 002_qihome_mvp.sql
+
+> │      ├── 📄 003_qitax_returns.sql
+
+> │      ├── 📄 003a_qitax_seed.sql
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 utils/
+
+> ├── 📄 pnpm-lock.yaml
+
+> ├── 📄 pnpm-workspace.yaml
+
+> └── 📂 tools/
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> └── 📄 turbo.json
+
 > ```
 
 ### Assistant
@@ -6028,78 +7678,150 @@ canonical_ref: ""
 > Pick one. We’re in deep infrastructure mode now.
 
 ### User
-> give me the full code. import fs from "node:fs";
-> import path from "node:path";
-> import mime from "mime-types";
-> import { globSync } from "glob";
-> import { sha256File } from "../../packages/utils/src/hashing";
-> import { normalizeFilename } from "../../packages/utils/src/naming";
-> import { upsertObject } from "../../packages/utils/src/object_index";
-> import { loadRules } from "../../packages/config/src/rules";
-> import { processPdfPipeline} from "../../packages/utils/src/pdf_pipeline";
-> 
-> const repoRoot = process.cwd();
-> const rules = loadRules(repoRoot);
-> 
-> const INBOX_ROOT = path.join(repoRoot, rules.inbox.root);
-> const STAGING = path.join(INBOX_ROOT, rules.inbox.folders.staging);
-> const PROCESSED = path.join(INBOX_ROOT, rules.inbox.folders.processed);
-> const TRASH = path.join(INBOX_ROOT, rules.inbox.folders.trash);
-> 
-> const TENANT_ID = process.env.DEFAULT_TENANT_ID!;
-> 
-> async function main() {
->   const files = globSync("**/*.*", {
->     cwd: STAGING,
->     absolute: true,
->   });
-> 
->   console.log(`Found ${files.length} files in staging`);
-> 
->   for (const file of files) {
->     const stats = fs.statSync(file);
->     if (!stats.isFile()) continue;
-> 
->     const originalName = path.basename(file);
->     const normalized = normalizeFilename(
->       originalName,
->       rules.naming.files.max_filename_length
->     );
-> 
->     const normalizedPath = path.join(PROCESSED, normalized);
-> 
->     const hash = await sha256File(file);
->     const mimeType = mime.lookup(file) || "application/octet-stream";
-> 
->     const { dna_id, duplicate } = await upsertObject({
->       tenantId: TENANT_ID,
->       canonicalName: normalized.replace(/\.[^/.]+$/, ""),
->       currentPath: normalizedPath,
->       originalPath: file,
->       hash,
->       size: stats.size,
->       mimeType: mimeType.toString(),
->     });
-> 
->     if (duplicate) {
->       console.log(`Duplicate detected: ${originalName}`);
->       fs.renameSync(file, path.join(TRASH, originalName));
->       continue;
->     }
-> 
->     // PDF branch placeholder
->     if (normalized.endsWith(".pdf")) {
->       console.log(`PDF detected for processing: ${normalized}`);
->       // TODO: call processPdfPipeline(file, normalizedPath)
->       fs.renameSync(file, normalizedPath);
->     } else {
->       fs.renameSync(file, normalizedPath);
->     }
-> 
->     console.log(`Ingested ${normalized} -> ${dna_id}`);
->   }
-> }
-> 
+> give me the full code. import fs from "node:fs";
+
+> import path from "node:path";
+
+> import mime from "mime-types";
+
+> import { globSync } from "glob";
+
+> import { sha256File } from "../../packages/utils/src/hashing";
+
+> import { normalizeFilename } from "../../packages/utils/src/naming";
+
+> import { upsertObject } from "../../packages/utils/src/object_index";
+
+> import { loadRules } from "../../packages/config/src/rules";
+
+> import { processPdfPipeline} from "../../packages/utils/src/pdf_pipeline";
+
+> 
+
+> const repoRoot = process.cwd();
+
+> const rules = loadRules(repoRoot);
+
+> 
+
+> const INBOX_ROOT = path.join(repoRoot, rules.inbox.root);
+
+> const STAGING = path.join(INBOX_ROOT, rules.inbox.folders.staging);
+
+> const PROCESSED = path.join(INBOX_ROOT, rules.inbox.folders.processed);
+
+> const TRASH = path.join(INBOX_ROOT, rules.inbox.folders.trash);
+
+> 
+
+> const TENANT_ID = process.env.DEFAULT_TENANT_ID!;
+
+> 
+
+> async function main() {
+
+>   const files = globSync("**/*.*", {
+
+>     cwd: STAGING,
+
+>     absolute: true,
+
+>   });
+
+> 
+
+>   console.log(`Found ${files.length} files in staging`);
+
+> 
+
+>   for (const file of files) {
+
+>     const stats = fs.statSync(file);
+
+>     if (!stats.isFile()) continue;
+
+> 
+
+>     const originalName = path.basename(file);
+
+>     const normalized = normalizeFilename(
+
+>       originalName,
+
+>       rules.naming.files.max_filename_length
+
+>     );
+
+> 
+
+>     const normalizedPath = path.join(PROCESSED, normalized);
+
+> 
+
+>     const hash = await sha256File(file);
+
+>     const mimeType = mime.lookup(file) || "application/octet-stream";
+
+> 
+
+>     const { dna_id, duplicate } = await upsertObject({
+
+>       tenantId: TENANT_ID,
+
+>       canonicalName: normalized.replace(/\.[^/.]+$/, ""),
+
+>       currentPath: normalizedPath,
+
+>       originalPath: file,
+
+>       hash,
+
+>       size: stats.size,
+
+>       mimeType: mimeType.toString(),
+
+>     });
+
+> 
+
+>     if (duplicate) {
+
+>       console.log(`Duplicate detected: ${originalName}`);
+
+>       fs.renameSync(file, path.join(TRASH, originalName));
+
+>       continue;
+
+>     }
+
+> 
+
+>     // PDF branch placeholder
+
+>     if (normalized.endsWith(".pdf")) {
+
+>       console.log(`PDF detected for processing: ${normalized}`);
+
+>       // TODO: call processPdfPipeline(file, normalizedPath)
+
+>       fs.renameSync(file, normalizedPath);
+
+>     } else {
+
+>       fs.renameSync(file, normalizedPath);
+
+>     }
+
+> 
+
+>     console.log(`Ingested ${normalized} -> ${dna_id}`);
+
+>   }
+
+> }
+
+> 
+
 > main().catch(console.error);
 
 ### Assistant
@@ -6372,788 +8094,1570 @@ canonical_ref: ""
 > If you want “fail closed” mode (any error immediately moves the file to `_working` or `_staging/_error`), we can add that, but this is the safer default while you’re still wiring dependencies.
 
 ### User
-> now waht. ```markdown
-> . 📂 _QiOne_MonoRepo_Astro
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> └── 📂 apps/
-> │  └── 📂 legacy/
-> │    └── 📂 qivault-docs/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 netlify.toml
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.svg
-> │        ├── 📄 hero-icon.svg
-> │        ├── 📄 sitepins-manifest.json
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 changelogs.svg
-> │          ├── 📄 code-block.svg
-> │          ├── 📄 code-image.png
-> │          ├── 📄 content.svg
-> │          ├── 📄 cta-bg.png
-> │          ├── 📄 darkmode-demo.png
-> │          ├── 📄 doc-bg.png
-> │          ├── 📄 element.svg
-> │          ├── 📄 hero-bg-dark.png
-> │          ├── 📄 hero-bg-light.png
-> │          ├── 📄 hero-star.svg
-> │          ├── 📄 houston.webp
-> │          ├── 📄 layouts.svg
-> │          ├── 📄 lightmode-demo.png
-> │          ├── 📄 logo-dark.svg
-> │          ├── 📄 logo-light.svg
-> │          ├── 📄 overview.png
-> │          ├── 📄 step-1.png
-> │          ├── 📄 step-2.png
-> │          ├── 📄 step-3.png
-> │        └── 📂 components/
-> │          ├── 📄 Accordion.astro
-> │          ├── 📄 AccordionContainer.astro
-> │          ├── 📄 Breadcrumb.astro
-> │          ├── 📄 CTA.astro
-> │          ├── 📄 HeroTabs.astro
-> │          ├── 📄 HeroTabsItem.astro
-> │          ├── 📄 ImageMod.astro
-> │          ├── 📄 LinkButton.astro
-> │          ├── 📄 Section.astro
-> │          ├── 📄 SidebarNav.astro
-> │          ├── 📄 ThemeDemo.astro
-> │          └── 📂 override-components/
-> │            ├── 📄 ContentPanel.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Head.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 Hero.astro
-> │            ├── 📄 MobileMenuToggle.astro
-> │            ├── 📄 MobileTableOfContents.astro
-> │            ├── 📄 PageFrame.astro
-> │            ├── 📄 PageSidebar.astro
-> │            ├── 📄 Pagination.astro
-> │            ├── 📄 Search.astro
-> │            ├── 📄 Sidebar.astro
-> │            ├── 📄 SidebarRestorePoint.astro
-> │            ├── 📄 SidebarSublist.astro
-> │            ├── 📄 SiteTitle.astro
-> │            └── 📂 TableOfContents/
-> │            ├── 📄 TableOfContents.astro
-> │              ├── 📄 TableOfContentsList.astro
-> │              ├── 📄 starlight-toc.ts
-> │            ├── 📄 ThemeSwitch.astro
-> │            ├── 📄 TwoColumnContent.astro
-> │          └── 📂 user-components/
-> │            ├── 📄 Button.astro
-> │            ├── 📄 Grid.astro
-> │            ├── 📄 ListCard.astro
-> │            ├── 📄 NewCard.astro
-> │        └── 📂 config/
-> │          ├── 📄 config.json
-> │          ├── 📄 locals.json
-> │          ├── 📄 menu.en.json
-> │          ├── 📄 menu.fr.json
-> │          ├── 📄 sidebar.json
-> │          ├── 📄 social.json
-> │          ├── 📄 theme.json
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 docs/
-> │            ├── 📄 404.md
-> │            ├── 📄 about.md
-> │            └── 📂 configurations/
-> │              ├── 📄 GitHub.md
-> │              ├── 📄 custom-css-js.md
-> │              ├── 📄 custom-domain.md
-> │            └── 📂 contents/
-> │              └── 📂 components/
-> │                └── 📂 Child Components/
-> │                  └── 📂 More Child/
-> │                    ├── 📄 button.md
-> │                  ├── 📄 new-card.md
-> │                ├── 📄 accordion.md
-> │                ├── 📄 grid.md
-> │                ├── 📄 list-card.md
-> │                ├── 📄 using-components.md
-> │              └── 📂 editing/
-> │                ├── 📄 add-new-doc.md
-> │            └── 📂 fr/
-> │              ├── 📄 about.md
-> │              └── 📂 configurations/
-> │                ├── 📄 custom-css-js.md
-> │                ├── 📄 custom-domain.md
-> │                ├── 📄 github.md
-> │              └── 📂 contents/
-> │                └── 📂 components/
-> │                  └── 📂 Child Components/
-> │                    └── 📂 More Child/
-> │                      ├── 📄 button.md
-> │                    ├── 📄 new-card.md
-> │                  ├── 📄 accordion.md
-> │                  ├── 📄 grid.md
-> │                  ├── 📄 list-card.md
-> │                  ├── 📄 using-components.md
-> │                └── 📂 editing/
-> │                  ├── 📄 add-new-doc.md
-> │              └── 📂 getting-started/
-> │                └── 📂 global-settings/
-> │                  ├── 📄 configuration.md
-> │                └── 📂 introduction/
-> │                  ├── 📄 Quickstart.md
-> │                  ├── 📄 overview.mdx
-> │                ├── 📄 navigation.md
-> │              ├── 📄 index.mdx
-> │              ├── 📄 privacy-policy.md
-> │              └── 📂 reference/
-> │                ├── 📄 configuration.mdx
-> │                ├── 📄 plugin.mdx
-> │              ├── 📄 terms-conditions.md
-> │            └── 📂 getting-started/
-> │              └── 📂 global-settings/
-> │                ├── 📄 configuration.md
-> │              └── 📂 introduction/
-> │                ├── 📄 Quickstart.md
-> │                ├── 📄 overview.mdx
-> │              ├── 📄 navigation.mdx
-> │            └── 📂 guides/
-> │              ├── 📄 example.md
-> │            ├── 📄 index.mdx
-> │            ├── 📄 privacy-policy.md
-> │            └── 📂 reference/
-> │              ├── 📄 configuration.mdx
-> │              ├── 📄 example.md
-> │              ├── 📄 plugin.mdx
-> │            ├── 📄 terms-conditions.md
-> │          └── 📂 i18n/
-> │            ├── 📄 en.json
-> │            ├── 📄 fr.json
-> │          └── 📂 sections/
-> │            ├── 📄 call-to-action.md
-> │            └── 📂 fr/
-> │              ├── 📄 call-to-action.md
-> │        └── 📂 lib/
-> │          └── 📂 utils/
-> │            ├── 📄 languagePerser.ts
-> │            ├── 📄 textConverter.ts
-> │        └── 📂 styles/
-> │          ├── 📄 base.css
-> │          ├── 📄 button.css
-> │          ├── 📄 components.css
-> │          ├── 📄 global.css
-> │          ├── 📄 navigation.css
-> │        └── 📂 tailwind-plugin/
-> │          ├── 📄 tw-bs-grid.js
-> │          ├── 📄 tw-theme.js
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 yarn.lock
-> │    └── 📂 qsjournal-cms/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      └── 📂 backend/
-> │        ├── 📄 LICENSE
-> │        ├── 📄 README.md
-> │        ├── 📄 app.js
-> │        ├── 📄 eslint.config.js
-> │        └── 📂 lib/
-> │          └── 📂 helpers/
-> │            ├── 📄 area-widgets.js
-> │            ├── 📄 color-options.js
-> │            ├── 📄 typography-options.js
-> │          └── 📂 schema-mixins/
-> │            ├── 📄 card-fields.js
-> │            ├── 📄 hero-fields.js
-> │            ├── 📄 link-fields.js
-> │            ├── 📄 slideshow-fields.js
-> │        └── 📂 modules/
-> │          └── 📂 @apostrophecms/
-> │            └── 📂 admin-bar/
-> │              ├── 📄 index.js
-> │            └── 📂 asset/
-> │              ├── 📄 index.js
-> │            └── 📂 attachment/
-> │              ├── 📄 index.js
-> │            └── 📂 express/
-> │              ├── 📄 index.js
-> │            └── 📂 global/
-> │              ├── 📄 index.js
-> │            └── 📂 home-page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 page.html
-> │            └── 📂 i18n/
-> │              ├── 📄 index.js
-> │            └── 📂 image-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 layout-column-widget/
-> │              ├── 📄 index.js
-> │            └── 📂 page/
-> │              ├── 📄 index.js
-> │              └── 📂 views/
-> │                ├── 📄 notFound.html
-> │            └── 📂 rich-text-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │            └── 📂 settings/
-> │              ├── 📄 index.js
-> │            └── 📂 user/
-> │              ├── 📄 index.js
-> │            └── 📂 video-widget/
-> │              ├── 📄 index.js
-> │              └── 📂 public/
-> │                ├── 📄 preview.svg
-> │          └── 📂 accordion-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 article/
-> │          └── 📂 article-page/
-> │            ├── 📄 index.js
-> │            ├── 📄 index.js
-> │          └── 📂 author/
-> │            ├── 📄 index.js
-> │          └── 📂 card-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 default-page/
-> │            ├── 📄 index.js
-> │          └── 📂 hero-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 link-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │          └── 📂 slideshow-widget/
-> │            ├── 📄 index.js
-> │            └── 📂 public/
-> │              ├── 📄 preview.svg
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          └── 📂 images/
-> │            ├── 📄 logo.png
-> │        └── 📂 scripts/
-> │          ├── 📄 load-starter-content
-> │          ├── 📄 update-starter-content
-> │        └── 📂 views/
-> │          ├── 📄 layout.html
-> │      └── 📂 frontend/
-> │        ├── 📄 Procfile
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        ├── 📄 postcss.config.js
-> │        └── 📂 public/
-> │          ├── 📄 favicon.svg
-> │          └── 📂 fonts/
-> │            └── 📂 fontawesome/
-> │              ├── 📄 fa-brands-400.woff2
-> │              ├── 📄 fa-regular-400.woff2
-> │              ├── 📄 fa-solid-900.woff2
-> │              ├── 📄 fa-v4compatibility.woff2
-> │          └── 📂 images/
-> │            ├── 📄 image-widget-placeholder.jpg
-> │            ├── 📄 missing-icon.svg
-> │          └── 📂 scripts/
-> │            ├── 📄 VideoWidget.js
-> │            ├── 📄 dynamic-navbar-padding.js
-> │        └── 📂 src/
-> │          └── 📂 components/
-> │            ├── 📄 ArticlesFilter.astro
-> │            ├── 📄 Figure.astro
-> │            ├── 📄 Footer.astro
-> │            ├── 📄 Header.astro
-> │            ├── 📄 ImageLink.astro
-> │            ├── 📄 Pagination.astro
-> │          ├── 📄 env.d.ts
-> │          └── 📂 layouts/
-> │            └── 📂 article-layouts/
-> │              ├── 📄 HeroGrid.astro
-> │              ├── 📄 ListAside.astro
-> │              ├── 📄 ShowFullWidth.astro
-> │              ├── 📄 ShowMagazine.astro
-> │              ├── 📄 ShowMinimal.astro
-> │              ├── 📄 Standard.astro
-> │          └── 📂 lib/
-> │            ├── 📄 attachments.js
-> │            ├── 📄 get-layout-areas.js
-> │            ├── 📄 homepage-defaults.js
-> │            ├── 📄 use-site-config.js
-> │          └── 📂 pages/
-> │            ├── 📄 [...slug].astro
-> │          └── 📂 styles/
-> │            ├── 📄 app.css
-> │            ├── 📄 main.scss
-> │          └── 📂 templates/
-> │            ├── 📄 ArticleIndexPage.astro
-> │            ├── 📄 ArticleShowPage.astro
-> │            ├── 📄 DefaultPage.astro
-> │            ├── 📄 HomePage.astro
-> │            ├── 📄 index.js
-> │          └── 📂 widgets/
-> │            ├── 📄 AccordionWidget.astro
-> │            ├── 📄 CardWidget.astro
-> │            ├── 📄 FileWidget.astro
-> │            ├── 📄 HeroWidget.astro
-> │            ├── 📄 ImageWidget.astro
-> │            ├── 📄 LinkWidget.astro
-> │            ├── 📄 RichTextWidget.astro
-> │            ├── 📄 SlideshowWidget.astro
-> │            ├── 📄 VideoWidget.astro
-> │            ├── 📄 index.js
-> │        ├── 📄 tsconfig.json
-> │      ├── 📄 package.json
-> │  └── 📂 portal/
-> │    └── 📂 qione-portal/
-> │      ├── 📄 index.html
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 app.tsx
-> │        └── 📂 components/
-> │          ├── 📄 layout.tsx
-> │          ├── 📄 require_auth.tsx
-> │        ├── 📄 env.d.ts
-> │        ├── 📄 index.css
-> │        └── 📂 lib/
-> │          ├── 📄 access.ts
-> │          ├── 📄 api.ts
-> │          ├── 📄 money.ts
-> │          ├── 📄 supabase.ts
-> │        ├── 📄 main.tsx
-> │        └── 📂 modules/
-> │          └── 📂 _shared/
-> │            ├── 📄 module_layout.tsx
-> │            ├── 📄 types.ts
-> │          └── 📂 qihome/
-> │            ├── 📄 index.tsx
-> │            ├── 📄 module.manifest.ts
-> │            ├── 📄 module.ts
-> │            └── 📂 pages/
-> │              ├── 📄 chores.tsx
-> │              ├── 📄 dashboard.tsx
-> │              ├── 📄 ledger.tsx
-> │          └── 📂 qitax/
-> │            ├── 📄 module.manifest.ts
-> │            └── 📂 pages/
-> │              ├── 📄 dashboard.tsx
-> │          ├── 📄 registry.ts
-> │        └── 📂 routes/
-> │          ├── 📄 auth.tsx
-> │          ├── 📄 auth_confirm.tsx
-> │          ├── 📄 launcher.tsx
-> │          ├── 📄 module_router.tsx
-> │          ├── 📄 tenant_home.tsx
-> │          ├── 📄 tenant_select.tsx
-> │          ├── 📄 tenant_settings.tsx
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 vite.config.ts
-> │  └── 📂 services/
-> │    └── 📂 worker/
-> │      ├── 📄 package.json
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │      ├── 📄 tsconfig.json
-> │      ├── 📄 wrangler.toml
-> │  └── 📂 sites/
-> │    └── 📂 qially-main/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 src/
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 qially-me/
-> │      ├── 📄 LICENSE
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 biome.json
-> │      ├── 📄 components.json
-> │      ├── 📄 package-lock.json
-> │      ├── 📄 package.json
-> │      ├── 📄 pnpm-lock.yaml
-> │      └── 📂 public/
-> │        ├── 📄 activity.svg
-> │        └── 📂 cards/
-> │          ├── 📄 fresh.png
-> │          ├── 📄 fresh.webp
-> │          ├── 📄 glass.png
-> │          ├── 📄 glass.webp
-> │          ├── 📄 mermaid.svg
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 logo.png
-> │        ├── 📄 logo.webp
-> │        ├── 📄 og.webp
-> │        ├── 📄 placeholder.webp
-> │        ├── 📄 robots.txt
-> │        ├── 📄 rss.svg
-> │      └── 📂 scripts/
-> │        ├── 📄 build-pagefind-index.ts
-> │      └── 📂 src/
-> │        └── 📂 assets/
-> │          ├── 📄 creations.json
-> │          └── 📂 images/
-> │            ├── 📄 logo.webp
-> │        └── 📂 components/
-> │          ├── 📄 BaseHead.astro
-> │          ├── 📄 BetaBadge.astro
-> │          ├── 📄 Footer.astro
-> │          ├── 📄 FormattedDate.astro
-> │          ├── 📄 Header.astro
-> │          ├── 📄 HeaderLink.astro
-> │          ├── 📄 OptimizedImage.astro
-> │          ├── 📄 ProductCard.tsx
-> │          ├── 📄 ProductSection.astro
-> │          ├── 📄 ShareButtons.astro
-> │          ├── 📄 TagFilter.astro
-> │          └── 📂 blog/
-> │            ├── 📄 BlogCard.astro
-> │            ├── 📄 BlogsPage.astro
-> │          ├── 📄 copy-button.tsx
-> │          ├── 📄 image-viewer.tsx
-> │          └── 📂 knowledge-card/
-> │            ├── 📄 CardActions.astro
-> │            ├── 📄 CardBack.astro
-> │            ├── 📄 CardContainer.astro
-> │            ├── 📄 CardCover.astro
-> │            ├── 📄 CardFront.astro
-> │            ├── 📄 CardLink.astro
-> │            ├── 📄 CardsPage.astro
-> │            ├── 📄 KnowledgeCard.astro
-> │            ├── 📄 LinksModal.astro
-> │            ├── 📄 StructureDisplay.astro
-> │            ├── 📄 types.ts
-> │          └── 📂 landing-page/
-> │            ├── 📄 HeroSection.astro
-> │            ├── 📄 LatestSection.astro
-> │            ├── 📄 ScrollingTags.astro
-> │          └── 📂 navigation/
-> │            ├── 📄 ContentNavigation.astro
-> │          └── 📂 slide/
-> │            ├── 📄 SlideCard.astro
-> │            ├── 📄 SlidesPage.astro
-> │            ├── 📄 slide-viewer.tsx
-> │          └── 📂 ui/
-> │            ├── 📄 dialog.tsx
-> │            ├── 📄 sonner.tsx
-> │        ├── 📄 consts.ts
-> │        └── 📂 content/
-> │        ├── 📄 content.config.ts
-> │          └── 📂 blogs/
-> │            └── 📂 2025-08/
-> │              ├── 📄 groq-code-cli-internal.md
-> │            └── 📂 2025-09/
-> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
-> │              └── 📂 imgs/
-> │                ├── 📄 slides-01.png
-> │                ├── 📄 slides-02.png
-> │          └── 📂 cards/
-> │            └── 📂 2025-09/
-> │              ├── 📄 how-openai-uses-codex.md
-> │          └── 📂 doodles/
-> │            └── 📂 2025-09/
-> │              ├── 📄 monakit-released.md
-> │            └── 📂 2025-10/
-> │              └── 📂 imgs/
-> │                ├── 📄 doodle-list.png
-> │                ├── 📄 doodle.png
-> │              ├── 📄 mona-update-doodle-and-more.md
-> │          └── 📂 slides/
-> │            └── 📂 2025-09/
-> │              ├── 📄 agents-md-101.md
-> │              └── 📂 imgs/
-> │                ├── 📄 agents-md-ecosystem.png
-> │            └── 📂 2025-12/
-> │              ├── 📄 quadratic-101.md
-> │        ├── 📄 env.ts
-> │        └── 📂 layouts/
-> │          ├── 📄 ContentIndexLayout.astro
-> │          ├── 📄 MainLayout.astro
-> │        └── 📂 lib/
-> │          ├── 📄 navigation.ts
-> │          ├── 📄 pagination.ts
-> │          ├── 📄 utils.ts
-> │        └── 📂 pages/
-> │          ├── 📄 404.astro
-> │          └── 📂 blogs/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          └── 📂 cards/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 creations.astro
-> │          └── 📂 doodles/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │          ├── 📄 index.astro
-> │          ├── 📄 og-enhanced.ts
-> │          ├── 📄 rss.xml.ts
-> │          ├── 📄 search.astro
-> │          └── 📂 slides/
-> │            ├── 📄 [...slug].astro
-> │            ├── 📄 index.astro
-> │        └── 📂 schemas/
-> │          ├── 📄 blog.ts
-> │          ├── 📄 card.ts
-> │          ├── 📄 doodle.ts
-> │          ├── 📄 slide.ts
-> │        └── 📂 styles/
-> │          ├── 📄 article.css
-> │          ├── 📄 card.css
-> │          ├── 📄 global.css
-> │          ├── 📄 scrolling-tags.css
-> │        └── 📂 themes/
-> │          ├── 📄 knowledge-card-themes.ts
-> │          ├── 📄 slide-card-themes.ts
-> │        └── 📂 types/
-> │          ├── 📄 product.ts
-> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
-> │      ├── 📄 tsconfig.json
-> │    └── 📂 qsaysit_blog/
-> │      ├── 📄 README.md
-> │      ├── 📄 astro.config.mjs
-> │      ├── 📄 package.json
-> │      └── 📂 public/
-> │        ├── 📄 favicon.ico
-> │        ├── 📄 favicon.svg
-> │      └── 📂 qially-main/
-> │        ├── 📄 README.md
-> │        ├── 📄 astro.config.mjs
-> │        ├── 📄 package.json
-> │        └── 📂 public/
-> │          ├── 📄 favicon.ico
-> │          ├── 📄 favicon.svg
-> │        └── 📂 src/
-> │          └── 📂 pages/
-> │            ├── 📄 index.astro
-> │        ├── 📄 tsconfig.json
-> │      └── 📂 src/
-> │        └── 📂 content/
-> │          ├── 📄 config.ts
-> │        └── 📂 pages/
-> │          ├── 📄 index.astro
-> │      ├── 📄 tsconfig.json
-> │  └── 📂 tools/
-> └── 📂 configs/
-> │  ├── 📄 env.example
-> │  ├── 📄 module.defaults.json
-> │  ├── 📄 qione_rules.yaml
-> │  ├── 📄 repo.rules.json
-> └── 📂 content/
-> │  └── 📂 QiVault/
-> │    └── 📂 0_eos/
-> │      ├── 📄 0.00.01.00_qinote_unified_protocol.md
-> │      ├── 📄 0.00.01.01_qidecimal_classification.md
-> │      ├── 📄 0.00.01.02_qivault_naming_rules.md
-> │      ├── 📄 0.00.01.03_qivault_title_slug_rules.md
-> │      ├── 📄 0.00.01.04_required_front_matter.md
-> │      ├── 📄 0.00.01.05_formatting_standards.md
-> │      ├── 📄 0.00.01.06_script_validation_rules.md
-> │      ├── 📄 0.00.01.07_atomicity_rule.md
-> │      ├── 📄 0.00.01.08_linking_rules.md
-> │      ├── 📄 0.00.01.09_document_types.md
-> │      ├── 📄 0.00.01.10_attachments_media.md
-> │      ├── 📄 0.00.01.11_safety_consistency.md
-> │      ├── 📄 0.00.01.12_qieos_integration.md
-> │      ├── 📄 0.00.01.13_ai_governance.md
-> │      ├── 📄 0.00.01.14_founding_principles.md
-> │      ├── 📄 0.00.02.00_qione_taxonomy_slug_registry.md
-> │      ├── 📄 0.00.02.01_qione_realms_registry.md
-> │      ├── 📄 0.00.02.02_qione_tag_registry.md
-> │      ├── 📄 0.00.02.03_tag_taxonomy.md
-> │      ├── 📄 0.00.02.04_qione_slug_registry.md
-> │      ├── 📄 0.00.02.05_qione_vocabulary_spec.md
-> │      ├── 📄 0.00.02.06_qione_namespace_rules.md
-> │      ├── 📄 0.00.02.07_qione_link_rules.md
-> │      ├── 📄 0.00.02.08_qimeta_spec.md
-> │      ├── 📄 0.00.02.09_qione_validation_pipeline.md
-> │      ├── 📄 0.00.03.00_qi_os_integrated_registry.md
-> │      ├── 📄 index.html
-> │    └── 📂 10_Cycles_and_Closure/
-> │      ├── 📄 10.01_Reflection_and_Release.md
-> │      ├── 📄 10.02_Transformation_and_Renewal.md
-> │      ├── 📄 10.03_Legacy_and_Design.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 11_Oneness_and_Integration/
-> │      ├── 📄 11.01_Alignment_and_Coherence.md
-> │      ├── 📄 11.02_Synthesis_and_Wisdom.md
-> │      ├── 📄 11.03_The_Mirror_Principle.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 1_Foundations/
-> │      ├── 📄 1.02_Identity_and_Purpose.md
-> │      ├── 📄 1.03_Values_and_Boundaries.md
-> │      ├── 📄 index.html
-> │    └── 📂 2_Spirit_and_Faith/
-> │      ├── 📄 2.01_Belief_and_Trust.md
-> │      ├── 📄 2.02_Presence_and_Awareness.md
-> │      ├── 📄 2.03_Prayer_and_Intention.md
-> │      ├── 📄 index.html
-> │    └── 📂 3_Health_and_Wellbeing/
-> │      ├── 📄 3.01_Physical_Health.md
-> │      ├── 📄 3.02_Mental_Clarity.md
-> │      ├── 📄 3.03_Emotional_Balance.md
-> │      ├── 📄 index.html
-> │    └── 📂 4_Learning_and_Development/
-> │      ├── 📄 4.01_Education_and_Skills.md
-> │      ├── 📄 4.02_Creativity_and_Curiosity.md
-> │      ├── 📄 4.03_Reflection_and_Growth.md
-> │      ├── 📄 index.html
-> │    └── 📂 5_Work_and_Creation/
-> │      ├── 📄 5.01_Purposeful_Work.md
-> │      ├── 📄 5.02_Craft_and_Design.md
-> │      ├── 📄 5.03_Entrepreneurship.md
-> │      ├── 📄 5.04_Target_Market.md
-> │      ├── 📄 5.05_Services.md
-> │      ├── 📄 5.06_Business_Model.md
-> │      ├── 📄 5.07_Business_Goals.md
-> │      ├── 📄 5.08_Organizational_Structure.md
-> │      ├── 📄 5.09_Client_OS.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 6_Relationships_and_Exchange/
-> │      ├── 📄 6.01_Communication.md
-> │      ├── 📄 6.02_Community_and_Service.md
-> │      ├── 📄 6.03_Leadership_and_Teamwork.md
-> │      ├── 📄 6.04_Social_Media_Guidelines.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 7_Technology_and_Innovation/
-> │      ├── 📄 01_SystemInfo.md
-> │      ├── 📄 02_CPU.md
-> │      ├── 📄 03_RAM.md
-> │      ├── 📄 04_GPU.md
-> │      ├── 📄 05_Disks.md
-> │      ├── 📄 06_Motherboard.md
-> │      ├── 📄 07_BIOS.md
-> │      ├── 📄 08_Network.md
-> │      ├── 📄 09_Battery.md
-> │      ├── 📄 10_SystemInfoCMD.md
-> │      ├── 📄 7.02_Automation_and_AI.md
-> │      ├── 📄 7.03_Integration_and_Systems.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 8_Finance_and_Stewardship/
-> │      ├── 📄 8.01_Money_Mindset.md
-> │      ├── 📄 8.02_Wealth_and_Sustainability.md
-> │      ├── 📄 8.03_Giving_and_Investment.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    └── 📂 9_Ethics_and_Evolution/
-> │      ├── 📄 9.01_Integrity_and_Accountability.md
-> │      ├── 📄 9.02_Justice_and_Balance.md
-> │      ├── 📄 9.03_Evolution_and_Future.md
-> │      ├── 📄 index.html
-> │      ├── 📄 index.md
-> │    ├── 📄 README.md
-> │    ├── 📄 frontmatter.md
-> │    ├── 📄 media_block.md
-> │  └── 📂 Vault-Private/
-> │    └── 📂 Care/
-> │    └── 📂 Finance/
-> │    └── 📂 Legal/
-> │    └── 📂 Operations/
-> │  └── 📂 Vault-Public/
-> │    └── 📂 QSaysIt-Blog/
-> │      └── 📂 2026/
-> │        └── 📂 2026-02-19_post-title/
-> │          └── 📂 assets/
-> │            ├── 📄 brief.m4a
-> │            ├── 📄 critique.m4a
-> │            ├── 📄 debate.m4a
-> │            ├── 📄 deepdive.m4a
-> │            ├── 📄 explainer.mp4
-> │            ├── 📄 hero.jpg
-> │            ├── 📄 infographic.jpg
-> │          ├── 📄 index.md
-> │      ├── 📄 index.md
-> │  └── 📂 _INBOX/
-> │    └── 📂 _processed/
-> │    └── 📂 _reports/
-> │    └── 📂 _staging/
-> │    └── 📂 _trash/
-> │    └── 📂 _working/
-> └── 📂 docs/
-> │  ├── 📄 DATA_INDEX_AND_SEARCH.md
-> │  ├── 📄 INBOX_INGESTION_PIPELINE.md
-> │  ├── 📄 MIGRATION_PLAN.md
-> │  ├── 📄 MODULED_PORTAL_ARCHITECTURE.md
-> │  ├── 📄 REPO_RULES.md
-> ├── 📄 package.json
-> └── 📂 packages/
-> │  └── 📂 config/
-> │    └── 📂 src/
-> │      ├── 📄 rules.schema.ts
-> │      ├── 📄 rules.ts
-> │  └── 📂 modules/
-> │    └── 📂 manifest-types/
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │    └── 📂 registry/
-> │      └── 📂 src/
-> │        ├── 📄 index.ts
-> │  └── 📂 schemas/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │  └── 📂 supabase/
-> │    ├── 📄 bootstrap_tenant.sql
-> │    └── 📂 migrations/
-> │      ├── 📄 001_init_qione.sql
-> │      ├── 📄 002_qihome_mvp.sql
-> │      ├── 📄 003_qitax_returns.sql
-> │      ├── 📄 003a_qitax_seed.sql
-> │      ├── 📄 004_qione_objects_and_governance.sql
-> │    ├── 📄 package.json
-> │    └── 📂 templates/
-> │      ├── 📄 README.md
-> │      ├── 📄 invite.html
-> │      ├── 📄 magic_link.html
-> │      ├── 📄 otp.html
-> │  └── 📂 ui/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 index.ts
-> │  └── 📂 utils/
-> │    ├── 📄 package.json
-> │    └── 📂 src/
-> │      ├── 📄 hashing.ts
-> │      ├── 📄 naming.ts
-> │      ├── 📄 object_index.ts
-> │      ├── 📄 pdf_pipeline.ts
-> ├── 📄 pnpm-lock.yaml
-> ├── 📄 pnpm-workspace.yaml
-> └── 📂 scripts/
-> │  └── 📂 inbox/
-> │    ├── 📄 normalize_inbox.ts
-> │  └── 📂 rules/
-> │    ├── 📄 validate_repo.ts
-> │  ├── 📄 validate_repo.py
-> └── 📂 tools/
-> │  └── 📂 playwrite/
-> │    ├── 📄 package.json
-> │    ├── 📄 playwright.config.ts
-> │    └── 📂 tests/
-> │      ├── 📄 example.spec.ts
-> │  └── 📂 qitax-cli/
-> │    ├── 📄 README.md
-> │    └── 📂 qitax_cli/
-> │      ├── 📄 __init__.py
-> │      ├── 📄 __main__.py
-> │      ├── 📄 service.py
-> │      ├── 📄 storage.py
-> │    ├── 📄 requirements.txt
-> │  └── 📂 sync/
-> │    ├── 📄 sync_dev_gdrive.py
-> └── 📄 turbo.json
+> now waht. ```markdown
+
+> . 📂 _QiOne_MonoRepo_Astro
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> └── 📂 apps/
+
+> │  └── 📂 legacy/
+
+> │    └── 📂 qivault-docs/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 netlify.toml
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.svg
+
+> │        ├── 📄 hero-icon.svg
+
+> │        ├── 📄 sitepins-manifest.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 changelogs.svg
+
+> │          ├── 📄 code-block.svg
+
+> │          ├── 📄 code-image.png
+
+> │          ├── 📄 content.svg
+
+> │          ├── 📄 cta-bg.png
+
+> │          ├── 📄 darkmode-demo.png
+
+> │          ├── 📄 doc-bg.png
+
+> │          ├── 📄 element.svg
+
+> │          ├── 📄 hero-bg-dark.png
+
+> │          ├── 📄 hero-bg-light.png
+
+> │          ├── 📄 hero-star.svg
+
+> │          ├── 📄 houston.webp
+
+> │          ├── 📄 layouts.svg
+
+> │          ├── 📄 lightmode-demo.png
+
+> │          ├── 📄 logo-dark.svg
+
+> │          ├── 📄 logo-light.svg
+
+> │          ├── 📄 overview.png
+
+> │          ├── 📄 step-1.png
+
+> │          ├── 📄 step-2.png
+
+> │          ├── 📄 step-3.png
+
+> │        └── 📂 components/
+
+> │          ├── 📄 Accordion.astro
+
+> │          ├── 📄 AccordionContainer.astro
+
+> │          ├── 📄 Breadcrumb.astro
+
+> │          ├── 📄 CTA.astro
+
+> │          ├── 📄 HeroTabs.astro
+
+> │          ├── 📄 HeroTabsItem.astro
+
+> │          ├── 📄 ImageMod.astro
+
+> │          ├── 📄 LinkButton.astro
+
+> │          ├── 📄 Section.astro
+
+> │          ├── 📄 SidebarNav.astro
+
+> │          ├── 📄 ThemeDemo.astro
+
+> │          └── 📂 override-components/
+
+> │            ├── 📄 ContentPanel.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Head.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 Hero.astro
+
+> │            ├── 📄 MobileMenuToggle.astro
+
+> │            ├── 📄 MobileTableOfContents.astro
+
+> │            ├── 📄 PageFrame.astro
+
+> │            ├── 📄 PageSidebar.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │            ├── 📄 Search.astro
+
+> │            ├── 📄 Sidebar.astro
+
+> │            ├── 📄 SidebarRestorePoint.astro
+
+> │            ├── 📄 SidebarSublist.astro
+
+> │            ├── 📄 SiteTitle.astro
+
+> │            └── 📂 TableOfContents/
+
+> │            ├── 📄 TableOfContents.astro
+
+> │              ├── 📄 TableOfContentsList.astro
+
+> │              ├── 📄 starlight-toc.ts
+
+> │            ├── 📄 ThemeSwitch.astro
+
+> │            ├── 📄 TwoColumnContent.astro
+
+> │          └── 📂 user-components/
+
+> │            ├── 📄 Button.astro
+
+> │            ├── 📄 Grid.astro
+
+> │            ├── 📄 ListCard.astro
+
+> │            ├── 📄 NewCard.astro
+
+> │        └── 📂 config/
+
+> │          ├── 📄 config.json
+
+> │          ├── 📄 locals.json
+
+> │          ├── 📄 menu.en.json
+
+> │          ├── 📄 menu.fr.json
+
+> │          ├── 📄 sidebar.json
+
+> │          ├── 📄 social.json
+
+> │          ├── 📄 theme.json
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 docs/
+
+> │            ├── 📄 404.md
+
+> │            ├── 📄 about.md
+
+> │            └── 📂 configurations/
+
+> │              ├── 📄 GitHub.md
+
+> │              ├── 📄 custom-css-js.md
+
+> │              ├── 📄 custom-domain.md
+
+> │            └── 📂 contents/
+
+> │              └── 📂 components/
+
+> │                └── 📂 Child Components/
+
+> │                  └── 📂 More Child/
+
+> │                    ├── 📄 button.md
+
+> │                  ├── 📄 new-card.md
+
+> │                ├── 📄 accordion.md
+
+> │                ├── 📄 grid.md
+
+> │                ├── 📄 list-card.md
+
+> │                ├── 📄 using-components.md
+
+> │              └── 📂 editing/
+
+> │                ├── 📄 add-new-doc.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 about.md
+
+> │              └── 📂 configurations/
+
+> │                ├── 📄 custom-css-js.md
+
+> │                ├── 📄 custom-domain.md
+
+> │                ├── 📄 github.md
+
+> │              └── 📂 contents/
+
+> │                └── 📂 components/
+
+> │                  └── 📂 Child Components/
+
+> │                    └── 📂 More Child/
+
+> │                      ├── 📄 button.md
+
+> │                    ├── 📄 new-card.md
+
+> │                  ├── 📄 accordion.md
+
+> │                  ├── 📄 grid.md
+
+> │                  ├── 📄 list-card.md
+
+> │                  ├── 📄 using-components.md
+
+> │                └── 📂 editing/
+
+> │                  ├── 📄 add-new-doc.md
+
+> │              └── 📂 getting-started/
+
+> │                └── 📂 global-settings/
+
+> │                  ├── 📄 configuration.md
+
+> │                └── 📂 introduction/
+
+> │                  ├── 📄 Quickstart.md
+
+> │                  ├── 📄 overview.mdx
+
+> │                ├── 📄 navigation.md
+
+> │              ├── 📄 index.mdx
+
+> │              ├── 📄 privacy-policy.md
+
+> │              └── 📂 reference/
+
+> │                ├── 📄 configuration.mdx
+
+> │                ├── 📄 plugin.mdx
+
+> │              ├── 📄 terms-conditions.md
+
+> │            └── 📂 getting-started/
+
+> │              └── 📂 global-settings/
+
+> │                ├── 📄 configuration.md
+
+> │              └── 📂 introduction/
+
+> │                ├── 📄 Quickstart.md
+
+> │                ├── 📄 overview.mdx
+
+> │              ├── 📄 navigation.mdx
+
+> │            └── 📂 guides/
+
+> │              ├── 📄 example.md
+
+> │            ├── 📄 index.mdx
+
+> │            ├── 📄 privacy-policy.md
+
+> │            └── 📂 reference/
+
+> │              ├── 📄 configuration.mdx
+
+> │              ├── 📄 example.md
+
+> │              ├── 📄 plugin.mdx
+
+> │            ├── 📄 terms-conditions.md
+
+> │          └── 📂 i18n/
+
+> │            ├── 📄 en.json
+
+> │            ├── 📄 fr.json
+
+> │          └── 📂 sections/
+
+> │            ├── 📄 call-to-action.md
+
+> │            └── 📂 fr/
+
+> │              ├── 📄 call-to-action.md
+
+> │        └── 📂 lib/
+
+> │          └── 📂 utils/
+
+> │            ├── 📄 languagePerser.ts
+
+> │            ├── 📄 textConverter.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 base.css
+
+> │          ├── 📄 button.css
+
+> │          ├── 📄 components.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 navigation.css
+
+> │        └── 📂 tailwind-plugin/
+
+> │          ├── 📄 tw-bs-grid.js
+
+> │          ├── 📄 tw-theme.js
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 yarn.lock
+
+> │    └── 📂 qsjournal-cms/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      └── 📂 backend/
+
+> │        ├── 📄 LICENSE
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 app.js
+
+> │        ├── 📄 eslint.config.js
+
+> │        └── 📂 lib/
+
+> │          └── 📂 helpers/
+
+> │            ├── 📄 area-widgets.js
+
+> │            ├── 📄 color-options.js
+
+> │            ├── 📄 typography-options.js
+
+> │          └── 📂 schema-mixins/
+
+> │            ├── 📄 card-fields.js
+
+> │            ├── 📄 hero-fields.js
+
+> │            ├── 📄 link-fields.js
+
+> │            ├── 📄 slideshow-fields.js
+
+> │        └── 📂 modules/
+
+> │          └── 📂 @apostrophecms/
+
+> │            └── 📂 admin-bar/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 asset/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 attachment/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 express/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 global/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 home-page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 page.html
+
+> │            └── 📂 i18n/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 image-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 layout-column-widget/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 page/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 views/
+
+> │                ├── 📄 notFound.html
+
+> │            └── 📂 rich-text-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │            └── 📂 settings/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 user/
+
+> │              ├── 📄 index.js
+
+> │            └── 📂 video-widget/
+
+> │              ├── 📄 index.js
+
+> │              └── 📂 public/
+
+> │                ├── 📄 preview.svg
+
+> │          └── 📂 accordion-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 article/
+
+> │          └── 📂 article-page/
+
+> │            ├── 📄 index.js
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 author/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 card-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 default-page/
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 hero-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 link-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │          └── 📂 slideshow-widget/
+
+> │            ├── 📄 index.js
+
+> │            └── 📂 public/
+
+> │              ├── 📄 preview.svg
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.png
+
+> │        └── 📂 scripts/
+
+> │          ├── 📄 load-starter-content
+
+> │          ├── 📄 update-starter-content
+
+> │        └── 📂 views/
+
+> │          ├── 📄 layout.html
+
+> │      └── 📂 frontend/
+
+> │        ├── 📄 Procfile
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        ├── 📄 postcss.config.js
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.svg
+
+> │          └── 📂 fonts/
+
+> │            └── 📂 fontawesome/
+
+> │              ├── 📄 fa-brands-400.woff2
+
+> │              ├── 📄 fa-regular-400.woff2
+
+> │              ├── 📄 fa-solid-900.woff2
+
+> │              ├── 📄 fa-v4compatibility.woff2
+
+> │          └── 📂 images/
+
+> │            ├── 📄 image-widget-placeholder.jpg
+
+> │            ├── 📄 missing-icon.svg
+
+> │          └── 📂 scripts/
+
+> │            ├── 📄 VideoWidget.js
+
+> │            ├── 📄 dynamic-navbar-padding.js
+
+> │        └── 📂 src/
+
+> │          └── 📂 components/
+
+> │            ├── 📄 ArticlesFilter.astro
+
+> │            ├── 📄 Figure.astro
+
+> │            ├── 📄 Footer.astro
+
+> │            ├── 📄 Header.astro
+
+> │            ├── 📄 ImageLink.astro
+
+> │            ├── 📄 Pagination.astro
+
+> │          ├── 📄 env.d.ts
+
+> │          └── 📂 layouts/
+
+> │            └── 📂 article-layouts/
+
+> │              ├── 📄 HeroGrid.astro
+
+> │              ├── 📄 ListAside.astro
+
+> │              ├── 📄 ShowFullWidth.astro
+
+> │              ├── 📄 ShowMagazine.astro
+
+> │              ├── 📄 ShowMinimal.astro
+
+> │              ├── 📄 Standard.astro
+
+> │          └── 📂 lib/
+
+> │            ├── 📄 attachments.js
+
+> │            ├── 📄 get-layout-areas.js
+
+> │            ├── 📄 homepage-defaults.js
+
+> │            ├── 📄 use-site-config.js
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 [...slug].astro
+
+> │          └── 📂 styles/
+
+> │            ├── 📄 app.css
+
+> │            ├── 📄 main.scss
+
+> │          └── 📂 templates/
+
+> │            ├── 📄 ArticleIndexPage.astro
+
+> │            ├── 📄 ArticleShowPage.astro
+
+> │            ├── 📄 DefaultPage.astro
+
+> │            ├── 📄 HomePage.astro
+
+> │            ├── 📄 index.js
+
+> │          └── 📂 widgets/
+
+> │            ├── 📄 AccordionWidget.astro
+
+> │            ├── 📄 CardWidget.astro
+
+> │            ├── 📄 FileWidget.astro
+
+> │            ├── 📄 HeroWidget.astro
+
+> │            ├── 📄 ImageWidget.astro
+
+> │            ├── 📄 LinkWidget.astro
+
+> │            ├── 📄 RichTextWidget.astro
+
+> │            ├── 📄 SlideshowWidget.astro
+
+> │            ├── 📄 VideoWidget.astro
+
+> │            ├── 📄 index.js
+
+> │        ├── 📄 tsconfig.json
+
+> │      ├── 📄 package.json
+
+> │  └── 📂 portal/
+
+> │    └── 📂 qione-portal/
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 app.tsx
+
+> │        └── 📂 components/
+
+> │          ├── 📄 layout.tsx
+
+> │          ├── 📄 require_auth.tsx
+
+> │        ├── 📄 env.d.ts
+
+> │        ├── 📄 index.css
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 access.ts
+
+> │          ├── 📄 api.ts
+
+> │          ├── 📄 money.ts
+
+> │          ├── 📄 supabase.ts
+
+> │        ├── 📄 main.tsx
+
+> │        └── 📂 modules/
+
+> │          └── 📂 _shared/
+
+> │            ├── 📄 module_layout.tsx
+
+> │            ├── 📄 types.ts
+
+> │          └── 📂 qihome/
+
+> │            ├── 📄 index.tsx
+
+> │            ├── 📄 module.manifest.ts
+
+> │            ├── 📄 module.ts
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 chores.tsx
+
+> │              ├── 📄 dashboard.tsx
+
+> │              ├── 📄 ledger.tsx
+
+> │          └── 📂 qitax/
+
+> │            ├── 📄 module.manifest.ts
+
+> │            └── 📂 pages/
+
+> │              ├── 📄 dashboard.tsx
+
+> │          ├── 📄 registry.ts
+
+> │        └── 📂 routes/
+
+> │          ├── 📄 auth.tsx
+
+> │          ├── 📄 auth_confirm.tsx
+
+> │          ├── 📄 launcher.tsx
+
+> │          ├── 📄 module_router.tsx
+
+> │          ├── 📄 tenant_home.tsx
+
+> │          ├── 📄 tenant_select.tsx
+
+> │          ├── 📄 tenant_settings.tsx
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 vite.config.ts
+
+> │  └── 📂 services/
+
+> │    └── 📂 worker/
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │      ├── 📄 wrangler.toml
+
+> │  └── 📂 sites/
+
+> │    └── 📂 qially-main/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 src/
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 qially-me/
+
+> │      ├── 📄 LICENSE
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 biome.json
+
+> │      ├── 📄 components.json
+
+> │      ├── 📄 package-lock.json
+
+> │      ├── 📄 package.json
+
+> │      ├── 📄 pnpm-lock.yaml
+
+> │      └── 📂 public/
+
+> │        ├── 📄 activity.svg
+
+> │        └── 📂 cards/
+
+> │          ├── 📄 fresh.png
+
+> │          ├── 📄 fresh.webp
+
+> │          ├── 📄 glass.png
+
+> │          ├── 📄 glass.webp
+
+> │          ├── 📄 mermaid.svg
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 logo.png
+
+> │        ├── 📄 logo.webp
+
+> │        ├── 📄 og.webp
+
+> │        ├── 📄 placeholder.webp
+
+> │        ├── 📄 robots.txt
+
+> │        ├── 📄 rss.svg
+
+> │      └── 📂 scripts/
+
+> │        ├── 📄 build-pagefind-index.ts
+
+> │      └── 📂 src/
+
+> │        └── 📂 assets/
+
+> │          ├── 📄 creations.json
+
+> │          └── 📂 images/
+
+> │            ├── 📄 logo.webp
+
+> │        └── 📂 components/
+
+> │          ├── 📄 BaseHead.astro
+
+> │          ├── 📄 BetaBadge.astro
+
+> │          ├── 📄 Footer.astro
+
+> │          ├── 📄 FormattedDate.astro
+
+> │          ├── 📄 Header.astro
+
+> │          ├── 📄 HeaderLink.astro
+
+> │          ├── 📄 OptimizedImage.astro
+
+> │          ├── 📄 ProductCard.tsx
+
+> │          ├── 📄 ProductSection.astro
+
+> │          ├── 📄 ShareButtons.astro
+
+> │          ├── 📄 TagFilter.astro
+
+> │          └── 📂 blog/
+
+> │            ├── 📄 BlogCard.astro
+
+> │            ├── 📄 BlogsPage.astro
+
+> │          ├── 📄 copy-button.tsx
+
+> │          ├── 📄 image-viewer.tsx
+
+> │          └── 📂 knowledge-card/
+
+> │            ├── 📄 CardActions.astro
+
+> │            ├── 📄 CardBack.astro
+
+> │            ├── 📄 CardContainer.astro
+
+> │            ├── 📄 CardCover.astro
+
+> │            ├── 📄 CardFront.astro
+
+> │            ├── 📄 CardLink.astro
+
+> │            ├── 📄 CardsPage.astro
+
+> │            ├── 📄 KnowledgeCard.astro
+
+> │            ├── 📄 LinksModal.astro
+
+> │            ├── 📄 StructureDisplay.astro
+
+> │            ├── 📄 types.ts
+
+> │          └── 📂 landing-page/
+
+> │            ├── 📄 HeroSection.astro
+
+> │            ├── 📄 LatestSection.astro
+
+> │            ├── 📄 ScrollingTags.astro
+
+> │          └── 📂 navigation/
+
+> │            ├── 📄 ContentNavigation.astro
+
+> │          └── 📂 slide/
+
+> │            ├── 📄 SlideCard.astro
+
+> │            ├── 📄 SlidesPage.astro
+
+> │            ├── 📄 slide-viewer.tsx
+
+> │          └── 📂 ui/
+
+> │            ├── 📄 dialog.tsx
+
+> │            ├── 📄 sonner.tsx
+
+> │        ├── 📄 consts.ts
+
+> │        └── 📂 content/
+
+> │        ├── 📄 content.config.ts
+
+> │          └── 📂 blogs/
+
+> │            └── 📂 2025-08/
+
+> │              ├── 📄 groq-code-cli-internal.md
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 enhance-image-rendering-in-reveal.js-with-codex.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 slides-01.png
+
+> │                ├── 📄 slides-02.png
+
+> │          └── 📂 cards/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 how-openai-uses-codex.md
+
+> │          └── 📂 doodles/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 monakit-released.md
+
+> │            └── 📂 2025-10/
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 doodle-list.png
+
+> │                ├── 📄 doodle.png
+
+> │              ├── 📄 mona-update-doodle-and-more.md
+
+> │          └── 📂 slides/
+
+> │            └── 📂 2025-09/
+
+> │              ├── 📄 agents-md-101.md
+
+> │              └── 📂 imgs/
+
+> │                ├── 📄 agents-md-ecosystem.png
+
+> │            └── 📂 2025-12/
+
+> │              ├── 📄 quadratic-101.md
+
+> │        ├── 📄 env.ts
+
+> │        └── 📂 layouts/
+
+> │          ├── 📄 ContentIndexLayout.astro
+
+> │          ├── 📄 MainLayout.astro
+
+> │        └── 📂 lib/
+
+> │          ├── 📄 navigation.ts
+
+> │          ├── 📄 pagination.ts
+
+> │          ├── 📄 utils.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 404.astro
+
+> │          └── 📂 blogs/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          └── 📂 cards/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 creations.astro
+
+> │          └── 📂 doodles/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │          ├── 📄 index.astro
+
+> │          ├── 📄 og-enhanced.ts
+
+> │          ├── 📄 rss.xml.ts
+
+> │          ├── 📄 search.astro
+
+> │          └── 📂 slides/
+
+> │            ├── 📄 [...slug].astro
+
+> │            ├── 📄 index.astro
+
+> │        └── 📂 schemas/
+
+> │          ├── 📄 blog.ts
+
+> │          ├── 📄 card.ts
+
+> │          ├── 📄 doodle.ts
+
+> │          ├── 📄 slide.ts
+
+> │        └── 📂 styles/
+
+> │          ├── 📄 article.css
+
+> │          ├── 📄 card.css
+
+> │          ├── 📄 global.css
+
+> │          ├── 📄 scrolling-tags.css
+
+> │        └── 📂 themes/
+
+> │          ├── 📄 knowledge-card-themes.ts
+
+> │          ├── 📄 slide-card-themes.ts
+
+> │        └── 📂 types/
+
+> │          ├── 📄 product.ts
+
+> │          ├── 📄 reveal.js-mermaid-plugin.d.ts
+
+> │      ├── 📄 tsconfig.json
+
+> │    └── 📂 qsaysit_blog/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 astro.config.mjs
+
+> │      ├── 📄 package.json
+
+> │      └── 📂 public/
+
+> │        ├── 📄 favicon.ico
+
+> │        ├── 📄 favicon.svg
+
+> │      └── 📂 qially-main/
+
+> │        ├── 📄 README.md
+
+> │        ├── 📄 astro.config.mjs
+
+> │        ├── 📄 package.json
+
+> │        └── 📂 public/
+
+> │          ├── 📄 favicon.ico
+
+> │          ├── 📄 favicon.svg
+
+> │        └── 📂 src/
+
+> │          └── 📂 pages/
+
+> │            ├── 📄 index.astro
+
+> │        ├── 📄 tsconfig.json
+
+> │      └── 📂 src/
+
+> │        └── 📂 content/
+
+> │          ├── 📄 config.ts
+
+> │        └── 📂 pages/
+
+> │          ├── 📄 index.astro
+
+> │      ├── 📄 tsconfig.json
+
+> │  └── 📂 tools/
+
+> └── 📂 configs/
+
+> │  ├── 📄 env.example
+
+> │  ├── 📄 module.defaults.json
+
+> │  ├── 📄 qione_rules.yaml
+
+> │  ├── 📄 repo.rules.json
+
+> └── 📂 content/
+
+> │  └── 📂 QiVault/
+
+> │    └── 📂 0_eos/
+
+> │      ├── 📄 0.00.01.00_qinote_unified_protocol.md
+
+> │      ├── 📄 0.00.01.01_qidecimal_classification.md
+
+> │      ├── 📄 0.00.01.02_qivault_naming_rules.md
+
+> │      ├── 📄 0.00.01.03_qivault_title_slug_rules.md
+
+> │      ├── 📄 0.00.01.04_required_front_matter.md
+
+> │      ├── 📄 0.00.01.05_formatting_standards.md
+
+> │      ├── 📄 0.00.01.06_script_validation_rules.md
+
+> │      ├── 📄 0.00.01.07_atomicity_rule.md
+
+> │      ├── 📄 0.00.01.08_linking_rules.md
+
+> │      ├── 📄 0.00.01.09_document_types.md
+
+> │      ├── 📄 0.00.01.10_attachments_media.md
+
+> │      ├── 📄 0.00.01.11_safety_consistency.md
+
+> │      ├── 📄 0.00.01.12_qieos_integration.md
+
+> │      ├── 📄 0.00.01.13_ai_governance.md
+
+> │      ├── 📄 0.00.01.14_founding_principles.md
+
+> │      ├── 📄 0.00.02.00_qione_taxonomy_slug_registry.md
+
+> │      ├── 📄 0.00.02.01_qione_realms_registry.md
+
+> │      ├── 📄 0.00.02.02_qione_tag_registry.md
+
+> │      ├── 📄 0.00.02.03_tag_taxonomy.md
+
+> │      ├── 📄 0.00.02.04_qione_slug_registry.md
+
+> │      ├── 📄 0.00.02.05_qione_vocabulary_spec.md
+
+> │      ├── 📄 0.00.02.06_qione_namespace_rules.md
+
+> │      ├── 📄 0.00.02.07_qione_link_rules.md
+
+> │      ├── 📄 0.00.02.08_qimeta_spec.md
+
+> │      ├── 📄 0.00.02.09_qione_validation_pipeline.md
+
+> │      ├── 📄 0.00.03.00_qi_os_integrated_registry.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 10_Cycles_and_Closure/
+
+> │      ├── 📄 10.01_Reflection_and_Release.md
+
+> │      ├── 📄 10.02_Transformation_and_Renewal.md
+
+> │      ├── 📄 10.03_Legacy_and_Design.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 11_Oneness_and_Integration/
+
+> │      ├── 📄 11.01_Alignment_and_Coherence.md
+
+> │      ├── 📄 11.02_Synthesis_and_Wisdom.md
+
+> │      ├── 📄 11.03_The_Mirror_Principle.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 1_Foundations/
+
+> │      ├── 📄 1.02_Identity_and_Purpose.md
+
+> │      ├── 📄 1.03_Values_and_Boundaries.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 2_Spirit_and_Faith/
+
+> │      ├── 📄 2.01_Belief_and_Trust.md
+
+> │      ├── 📄 2.02_Presence_and_Awareness.md
+
+> │      ├── 📄 2.03_Prayer_and_Intention.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 3_Health_and_Wellbeing/
+
+> │      ├── 📄 3.01_Physical_Health.md
+
+> │      ├── 📄 3.02_Mental_Clarity.md
+
+> │      ├── 📄 3.03_Emotional_Balance.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 4_Learning_and_Development/
+
+> │      ├── 📄 4.01_Education_and_Skills.md
+
+> │      ├── 📄 4.02_Creativity_and_Curiosity.md
+
+> │      ├── 📄 4.03_Reflection_and_Growth.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 5_Work_and_Creation/
+
+> │      ├── 📄 5.01_Purposeful_Work.md
+
+> │      ├── 📄 5.02_Craft_and_Design.md
+
+> │      ├── 📄 5.03_Entrepreneurship.md
+
+> │      ├── 📄 5.04_Target_Market.md
+
+> │      ├── 📄 5.05_Services.md
+
+> │      ├── 📄 5.06_Business_Model.md
+
+> │      ├── 📄 5.07_Business_Goals.md
+
+> │      ├── 📄 5.08_Organizational_Structure.md
+
+> │      ├── 📄 5.09_Client_OS.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 6_Relationships_and_Exchange/
+
+> │      ├── 📄 6.01_Communication.md
+
+> │      ├── 📄 6.02_Community_and_Service.md
+
+> │      ├── 📄 6.03_Leadership_and_Teamwork.md
+
+> │      ├── 📄 6.04_Social_Media_Guidelines.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 7_Technology_and_Innovation/
+
+> │      ├── 📄 01_SystemInfo.md
+
+> │      ├── 📄 02_CPU.md
+
+> │      ├── 📄 03_RAM.md
+
+> │      ├── 📄 04_GPU.md
+
+> │      ├── 📄 05_Disks.md
+
+> │      ├── 📄 06_Motherboard.md
+
+> │      ├── 📄 07_BIOS.md
+
+> │      ├── 📄 08_Network.md
+
+> │      ├── 📄 09_Battery.md
+
+> │      ├── 📄 10_SystemInfoCMD.md
+
+> │      ├── 📄 7.02_Automation_and_AI.md
+
+> │      ├── 📄 7.03_Integration_and_Systems.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 8_Finance_and_Stewardship/
+
+> │      ├── 📄 8.01_Money_Mindset.md
+
+> │      ├── 📄 8.02_Wealth_and_Sustainability.md
+
+> │      ├── 📄 8.03_Giving_and_Investment.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    └── 📂 9_Ethics_and_Evolution/
+
+> │      ├── 📄 9.01_Integrity_and_Accountability.md
+
+> │      ├── 📄 9.02_Justice_and_Balance.md
+
+> │      ├── 📄 9.03_Evolution_and_Future.md
+
+> │      ├── 📄 index.html
+
+> │      ├── 📄 index.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 frontmatter.md
+
+> │    ├── 📄 media_block.md
+
+> │  └── 📂 Vault-Private/
+
+> │    └── 📂 Care/
+
+> │    └── 📂 Finance/
+
+> │    └── 📂 Legal/
+
+> │    └── 📂 Operations/
+
+> │  └── 📂 Vault-Public/
+
+> │    └── 📂 QSaysIt-Blog/
+
+> │      └── 📂 2026/
+
+> │        └── 📂 2026-02-19_post-title/
+
+> │          └── 📂 assets/
+
+> │            ├── 📄 brief.m4a
+
+> │            ├── 📄 critique.m4a
+
+> │            ├── 📄 debate.m4a
+
+> │            ├── 📄 deepdive.m4a
+
+> │            ├── 📄 explainer.mp4
+
+> │            ├── 📄 hero.jpg
+
+> │            ├── 📄 infographic.jpg
+
+> │          ├── 📄 index.md
+
+> │      ├── 📄 index.md
+
+> │  └── 📂 _INBOX/
+
+> │    └── 📂 _processed/
+
+> │    └── 📂 _reports/
+
+> │    └── 📂 _staging/
+
+> │    └── 📂 _trash/
+
+> │    └── 📂 _working/
+
+> └── 📂 docs/
+
+> │  ├── 📄 DATA_INDEX_AND_SEARCH.md
+
+> │  ├── 📄 INBOX_INGESTION_PIPELINE.md
+
+> │  ├── 📄 MIGRATION_PLAN.md
+
+> │  ├── 📄 MODULED_PORTAL_ARCHITECTURE.md
+
+> │  ├── 📄 REPO_RULES.md
+
+> ├── 📄 package.json
+
+> └── 📂 packages/
+
+> │  └── 📂 config/
+
+> │    └── 📂 src/
+
+> │      ├── 📄 rules.schema.ts
+
+> │      ├── 📄 rules.ts
+
+> │  └── 📂 modules/
+
+> │    └── 📂 manifest-types/
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │    └── 📂 registry/
+
+> │      └── 📂 src/
+
+> │        ├── 📄 index.ts
+
+> │  └── 📂 schemas/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │  └── 📂 supabase/
+
+> │    ├── 📄 bootstrap_tenant.sql
+
+> │    └── 📂 migrations/
+
+> │      ├── 📄 001_init_qione.sql
+
+> │      ├── 📄 002_qihome_mvp.sql
+
+> │      ├── 📄 003_qitax_returns.sql
+
+> │      ├── 📄 003a_qitax_seed.sql
+
+> │      ├── 📄 004_qione_objects_and_governance.sql
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 templates/
+
+> │      ├── 📄 README.md
+
+> │      ├── 📄 invite.html
+
+> │      ├── 📄 magic_link.html
+
+> │      ├── 📄 otp.html
+
+> │  └── 📂 ui/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 index.ts
+
+> │  └── 📂 utils/
+
+> │    ├── 📄 package.json
+
+> │    └── 📂 src/
+
+> │      ├── 📄 hashing.ts
+
+> │      ├── 📄 naming.ts
+
+> │      ├── 📄 object_index.ts
+
+> │      ├── 📄 pdf_pipeline.ts
+
+> ├── 📄 pnpm-lock.yaml
+
+> ├── 📄 pnpm-workspace.yaml
+
+> └── 📂 scripts/
+
+> │  └── 📂 inbox/
+
+> │    ├── 📄 normalize_inbox.ts
+
+> │  └── 📂 rules/
+
+> │    ├── 📄 validate_repo.ts
+
+> │  ├── 📄 validate_repo.py
+
+> └── 📂 tools/
+
+> │  └── 📂 playwrite/
+
+> │    ├── 📄 package.json
+
+> │    ├── 📄 playwright.config.ts
+
+> │    └── 📂 tests/
+
+> │      ├── 📄 example.spec.ts
+
+> │  └── 📂 qitax-cli/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 qitax_cli/
+
+> │      ├── 📄 __init__.py
+
+> │      ├── 📄 __main__.py
+
+> │      ├── 📄 service.py
+
+> │      ├── 📄 storage.py
+
+> │    ├── 📄 requirements.txt
+
+> │  └── 📂 sync/
+
+> │    ├── 📄 sync_dev_gdrive.py
+
+> └── 📄 turbo.json
+
 > ```
 
 ### Assistant
@@ -7271,379 +9775,752 @@ canonical_ref: ""
 > If you want the next concrete deliverable: I’ll give you the exact SQL for `004_qione_objects_and_governance.sql` + the full `object_index.ts` implementation that matches your `upsertObject` call signature, so Commit 2 is done in one shot.
 
 ### User
-> you gave me a lot of info and i think i already hae that in supabase, but real quick this is the ui gemeni gabe me as a mock up i like it. import React, { useState } from 'react';
-> import { 
->   Briefcase, LayoutDashboard, HeartPulse, BookOpen, Bot, FileText, 
->   Settings, Search, Bell, ChevronDown, Users, Database, Activity, 
->   ArrowRight, CreditCard, LogOut, Command, Menu, X, Plus,
->   LucideIcon
-> } from 'lucide-react';
-> 
-> // --- Types ---
-> interface Tenant {
->   id: string;
->   name: string;
->   plan: string;
->   role: string;
-> }
-> 
-> interface AppModule {
->   id: string;
->   name: string;
->   icon: LucideIcon;
->   color: string;
->   bg: string;
->   border: string;
->   desc: string;
-> }
-> 
-> interface ActivityItem {
->   id: number;
->   app: string;
->   text: string;
->   time: string;
->   icon: LucideIcon;
->   color: string;
-> }
-> 
-> // --- Mock Data ---
-> const TENANTS: Tenant[] = [
->   { id: '1', name: 'Zaitullah Family', plan: 'Pro', role: 'Admin' },
->   { id: '2', name: 'QiOne Labs', plan: 'Enterprise', role: 'Owner' },
-> ];
-> 
-> const MODULES: AppModule[] = [
->   { id: 'care', name: 'Care Portal', icon: HeartPulse, color: 'text-rose-500', bg: 'bg-rose-500/10', border: 'border-rose-500/20', desc: 'Manage patients, appointments, and medical notes.' },
->   { id: 'wiki', name: 'QiWiki', icon: BookOpen, color: 'text-amber-500', bg: 'bg-amber-500/10', border: 'border-amber-500/20', desc: 'Shared family and team knowledge base.' },
->   { id: 'qially', name: 'Qially AI', icon: Bot, color: 'text-indigo-500', bg: 'bg-indigo-500/10', border: 'border-indigo-500/20', desc: 'AI agent configuration and prompt management.' },
->   { id: 'cms', name: 'QSaysIt CMS', icon: FileText, color: 'text-emerald-500', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20', desc: 'Manage blog posts, journal entries, and media.' },
-> ];
-> 
-> const RECENT_ACTIVITY: ActivityItem[] = [
->   { id: 1, app: 'Care Portal', text: 'New appointment scheduled for tomorrow.', time: '2h ago', icon: HeartPulse, color: 'text-rose-500' },
->   { id: 2, app: 'Qially AI', text: 'Agent "SupportBot" updated to v2.1.', time: '4h ago', icon: Bot, color: 'text-indigo-500' },
->   { id: 3, app: 'QSaysIt CMS', text: 'Published new blog post: "Architecture 101".', time: 'Yesterday', icon: FileText, color: 'text-emerald-500' },
-> ];
-> 
-> export default function App() {
->   const [activeTenant, setActiveTenant] = useState<Tenant>(TENANTS[0]);
->   const [activeModule, setActiveModule] = useState<string>('hub'); // 'hub' or module id
->   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);
->   const [isTenantDropdownOpen, setIsTenantDropdownOpen] = useState<boolean>(false);
-> 
->   return (
->     <div className="flex h-screen bg-gray-50 text-gray-900 font-sans overflow-hidden">
->       
->       {/* --- Sidebar --- */}
->       <aside className={`fixed lg:static inset-y-0 left-0 z-50 w-72 bg-white border-r border-gray-200 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'} flex flex-col`}>
->         
->         {/* Tenant Switcher */}
->         <div className="p-4 border-b border-gray-200 relative">
->           <button 
->             onClick={() => setIsTenantDropdownOpen(!isTenantDropdownOpen)}
->             className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors border border-gray-200/50 shadow-sm"
->           >
->             <div className="flex items-center gap-3">
->               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold shadow-inner">
->                 {activeTenant.name.charAt(0)}
->               </div>
->               <div className="text-left">
->                 <p className="text-sm font-semibold text-gray-900 truncate w-32">{activeTenant.name}</p>
->                 <p className="text-xs text-gray-500 font-medium">{activeTenant.plan} • {activeTenant.role}</p>
->               </div>
->             </div>
->             <ChevronDown className="w-4 h-4 text-gray-400" />
->           </button>
-> 
->           {/* Tenant Dropdown (Absolute) */}
->           {isTenantDropdownOpen && (
->             <div className="absolute top-[80px] left-4 right-4 bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden">
->               {TENANTS.map(t => (
->                 <button 
->                   key={t.id}
->                   onClick={() => { setActiveTenant(t); setIsTenantDropdownOpen(false); }}
->                   className={`w-full text-left px-4 py-3 hover:bg-gray-50 flex items-center justify-between ${activeTenant.id === t.id ? 'bg-indigo-50/50' : ''}`}
->                 >
->                   <span className={`text-sm ${activeTenant.id === t.id ? 'font-semibold text-indigo-700' : 'text-gray-700'}`}>{t.name}</span>
->                   {activeTenant.id === t.id && <div className="w-2 h-2 rounded-full bg-indigo-500" />}
->                 </button>
->               ))}
->               <div className="border-t border-gray-100 p-2">
->                 <button className="w-full text-left px-2 py-2 text-sm text-gray-600 hover:text-gray-900 flex items-center gap-2 rounded-lg hover:bg-gray-50">
->                   <Plus className="w-4 h-4" /> Create Workspace
->                 </button>
->               </div>
->             </div>
->           )}
->         </div>
-> 
->         {/* Navigation */}
->         <div className="flex-1 overflow-y-auto p-4 space-y-6">
->           
->           {/* Core */}
->           <div>
->             <p className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Platform</p>
->             <nav className="space-y-1">
->               <button 
->                 onClick={() => setActiveModule('hub')}
->                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${activeModule === 'hub' ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
->               >
->                 <LayoutDashboard className="w-5 h-5" />
->                 Workspace Hub
->               </button>
->               <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
->                 <Users className="w-5 h-5" />
->                 Members & Roles
->               </button>
->               <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
->                 <Database className="w-5 h-5" />
->                 Shared Storage
->               </button>
->             </nav>
->           </div>
-> 
->           {/* Sub-Apps */}
->           <div>
->             <div className="flex items-center justify-between px-3 mb-2">
->               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Installed Modules</p>
->               <button className="text-gray-400 hover:text-indigo-600"><Plus className="w-4 h-4" /></button>
->             </div>
->             <nav className="space-y-1">
->               {MODULES.map(mod => (
->                 <button 
->                   key={mod.id}
->                   onClick={() => setActiveModule(mod.id)}
->                   className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors group ${activeModule === mod.id ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
->                 >
->                   <div className="flex items-center gap-3">
->                     <mod.icon className={`w-5 h-5 ${activeModule === mod.id ? 'text-white' : mod.color}`} />
->                     {mod.name}
->                   </div>
->                   {activeModule !== mod.id && <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-gray-400" />}
->                 </button>
->               ))}
->             </nav>
->           </div>
->         </div>
-> 
->         {/* User / Settings Footer */}
->         <div className="p-4 border-t border-gray-200">
->           <nav className="space-y-1 mb-4">
->             <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors">
->               <Settings className="w-5 h-5" /> Workspace Settings
->             </button>
->             <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors">
->               <CreditCard className="w-5 h-5" /> Billing & Usage
->             </button>
->           </nav>
->           <div className="flex items-center gap-3 px-3 py-2">
->             <img src="https://ui-avatars.com/api/?name=Admin+User&background=f3f4f6&color=374151" alt="User" className="w-9 h-9 rounded-full ring-2 ring-white shadow-sm" />
->             <div className="flex-1 min-w-0">
->               <p className="text-sm font-medium text-gray-900 truncate">Ray Zaitullah</p>
->               <p className="text-xs text-gray-500 truncate">ray@qione.com</p>
->             </div>
->             <button className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors">
->               <LogOut className="w-4 h-4" />
->             </button>
->           </div>
->         </div>
->       </aside>
-> 
->       {/* --- Main Content Area --- */}
->       <main className="flex-1 flex flex-col min-w-0 bg-white lg:bg-gray-50/50">
->         
->         {/* Top Header */}
->         <header className="h-16 border-b border-gray-200 bg-white px-4 sm:px-8 flex items-center justify-between shrink-0">
->           <div className="flex items-center gap-4">
->             <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="lg:hidden p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
->               <Menu className="w-5 h-5" />
->             </button>
->             
->             {/* Breadcrumb / Context */}
->             <div className="hidden sm:flex items-center gap-2 text-sm">
->               <span className="text-gray-500">{activeTenant.name}</span>
->               <span className="text-gray-300">/</span>
->               <span className="font-semibold text-gray-900">
->                 {activeModule === 'hub' ? 'Workspace Hub' : MODULES.find(m => m.id === activeModule)?.name}
->               </span>
->             </div>
->           </div>
-> 
->           <div className="flex items-center gap-3 sm:gap-6">
->             {/* Omnibar Search */}
->             <div className="hidden md:flex items-center relative">
->               <Search className="w-4 h-4 text-gray-400 absolute left-3" />
->               <input 
->                 type="text" 
->                 placeholder="Search across all modules..." 
->                 className="pl-9 pr-12 py-2 bg-gray-100 border-transparent rounded-lg text-sm focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all w-64 lg:w-96"
->               />
->               <div className="absolute right-2 flex items-center gap-1">
->                 <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-medium text-gray-500 bg-white border border-gray-200 rounded shadow-sm">⌘</kbd>
->                 <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-medium text-gray-500 bg-white border border-gray-200 rounded shadow-sm">K</kbd>
->               </div>
->             </div>
->             
->             <button className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full relative">
->               <Bell className="w-5 h-5" />
->               <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-white"></span>
->             </button>
->           </div>
->         </header>
-> 
->         {/* Scrollable Canvas */}
->         <div className="flex-1 overflow-auto p-4 sm:p-8">
->           
->           {/* --- VIEW: WORKSPACE HUB --- */}
->           {activeModule === 'hub' && (
->             <div className="max-w-6xl mx-auto space-y-8">
->               
->               {/* Welcome Banner */}
->               <div className="bg-gradient-to-r from-gray-900 to-indigo-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
->                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
->                 <div className="relative z-10">
->                   <h1 className="text-3xl font-bold mb-2">Welcome to {activeTenant.name}</h1>
->                   <p className="text-indigo-100 max-w-xl">Your central operating system. Manage resources, access modules, and monitor activity across your entire digital workspace.</p>
->                 </div>
->               </div>
-> 
->               {/* Shared Resources / Stats Row */}
->               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
->                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
->                   <div className="p-3 bg-blue-50 text-blue-600 rounded-xl"><Users className="w-6 h-6" /></div>
->                   <div>
->                     <p className="text-sm font-medium text-gray-500">Team Members</p>
->                     <p className="text-2xl font-bold text-gray-900">4 <span className="text-sm font-normal text-gray-400">/ 10 seats</span></p>
->                   </div>
->                 </div>
->                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
->                   <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl"><Database className="w-6 h-6" /></div>
->                   <div>
->                     <p className="text-sm font-medium text-gray-500">Shared Storage</p>
->                     <p className="text-2xl font-bold text-gray-900">12.4 GB <span className="text-sm font-normal text-gray-400">/ 50 GB</span></p>
->                   </div>
->                 </div>
->                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
->                   <div className="p-3 bg-purple-50 text-purple-600 rounded-xl"><Activity className="w-6 h-6" /></div>
->                   <div>
->                     <p className="text-sm font-medium text-gray-500">API Executions (AI)</p>
->                     <p className="text-2xl font-bold text-gray-900">8,402 <span className="text-sm font-normal text-gray-400">this month</span></p>
->                   </div>
->                 </div>
->               </div>
-> 
->               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
->                 
->                 {/* Module Launcher Grid */}
->                 <div className="lg:col-span-2">
->                   <div className="flex items-center justify-between mb-4">
->                     <h2 className="text-lg font-bold text-gray-900">Your Modules</h2>
->                     <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1">
->                       Module Store <ArrowRight className="w-4 h-4" />
->                     </button>
->                   </div>
->                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
->                     {MODULES.map(mod => (
->                       <button 
->                         key={mod.id}
->                         onClick={() => setActiveModule(mod.id)}
->                         className="group bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all text-left flex flex-col h-full"
->                       >
->                         <div className={`w-12 h-12 rounded-xl ${mod.bg} ${mod.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
->                           <mod.icon className="w-6 h-6" />
->                         </div>
->                         <h3 className="text-base font-bold text-gray-900 mb-1">{mod.name}</h3>
->                         <p className="text-sm text-gray-500 flex-1">{mod.desc}</p>
->                         <div className="mt-4 flex items-center text-sm font-medium text-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity">
->                           Launch Module <ArrowRight className="w-4 h-4 ml-1" />
->                         </div>
->                       </button>
->                     ))}
->                     
->                     {/* Add Module Card */}
->                     <button className="bg-gray-50/50 border-2 border-dashed border-gray-200 rounded-2xl p-6 flex flex-col items-center justify-center text-gray-400 hover:text-indigo-600 hover:border-indigo-300 hover:bg-indigo-50/30 transition-colors min-h-[200px]">
->                       <Plus className="w-8 h-8 mb-2" />
->                       <span className="font-medium">Install new module</span>
->                     </button>
->                   </div>
->                 </div>
-> 
->                 {/* Cross-App Activity Feed */}
->                 <div>
->                   <h2 className="text-lg font-bold text-gray-900 mb-4">Cross-App Activity</h2>
->                   <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-1">
->                     {RECENT_ACTIVITY.map((activity, idx) => (
->                       <div key={activity.id} className={`p-4 flex gap-4 ${idx !== RECENT_ACTIVITY.length - 1 ? 'border-b border-gray-100' : ''}`}>
->                         <div className={`mt-0.5 ${activity.color}`}>
->                           <activity.icon className="w-5 h-5" />
->                         </div>
->                         <div>
->                           <p className="text-sm font-medium text-gray-900 mb-0.5 leading-snug">{activity.text}</p>
->                           <div className="flex items-center gap-2 text-xs text-gray-500">
->                             <span className="font-medium">{activity.app}</span>
->                             <span>•</span>
->                             <span>{activity.time}</span>
->                           </div>
->                         </div>
->                       </div>
->                     ))}
->                     <button className="w-full p-3 text-sm font-medium text-indigo-600 hover:bg-gray-50 rounded-b-xl transition-colors border-t border-gray-100">
->                       View all activity
->                     </button>
->                   </div>
->                 </div>
-> 
->               </div>
->             </div>
->           )}
-> 
->           {/* --- VIEW: SUB-APP RENDERER (Placeholder) --- */}
->           {activeModule !== 'hub' && (
->             <div className="h-full flex flex-col items-center justify-center text-center max-w-md mx-auto animate-in fade-in zoom-in duration-300">
->               {(() => {
->                 const mod = MODULES.find(m => m.id === activeModule);
->                 if (!mod) return null;
->                 return (
->                   <>
->                     <div className={`w-24 h-24 rounded-3xl ${mod.bg} ${mod.color} flex items-center justify-center mb-6 shadow-inner`}>
->                       <mod.icon className="w-12 h-12" />
->                     </div>
->                     <h2 className="text-3xl font-bold text-gray-900 mb-2">{mod.name}</h2>
->                     <p className="text-gray-500 mb-8">{mod.desc} This module is currently isolated within the <b>{activeTenant.name}</b> workspace scope.</p>
->                     
->                     <div className="w-full bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
->                        <p className="text-sm font-mono text-gray-400 mb-4">// Simulated App Loading Area</p>
->                        <div className="space-y-3">
->                          <div className="h-4 bg-gray-100 rounded animate-pulse w-3/4"></div>
->                          <div className="h-4 bg-gray-100 rounded animate-pulse w-full"></div>
->                          <div className="h-4 bg-gray-100 rounded animate-pulse w-5/6"></div>
->                        </div>
->                     </div>
-> 
->                     <button 
->                       onClick={() => setActiveModule('hub')}
->                       className="mt-8 text-sm font-medium text-gray-500 hover:text-gray-900 flex items-center gap-2 transition-colors"
->                     >
->                       <ArrowRight className="w-4 h-4 rotate-180" /> Back to Hub
->                     </button>
->                   </>
->                 )
->               })()}
->             </div>
->           )}
-> 
->         </div>
->       </main>
->       
->       {/* Mobile Overlay */}
->       {isSidebarOpen && (
->         <div 
->           className="fixed inset-0 bg-gray-900/50 z-40 lg:hidden backdrop-blur-sm"
->           onClick={() => setIsSidebarOpen(false)}
->         />
->       )}
->     </div>
->   );
+> you gave me a lot of info and i think i already hae that in supabase, but real quick this is the ui gemeni gabe me as a mock up i like it. import React, { useState } from 'react';
+
+> import { 
+
+>   Briefcase, LayoutDashboard, HeartPulse, BookOpen, Bot, FileText, 
+
+>   Settings, Search, Bell, ChevronDown, Users, Database, Activity, 
+
+>   ArrowRight, CreditCard, LogOut, Command, Menu, X, Plus,
+
+>   LucideIcon
+
+> } from 'lucide-react';
+
+> 
+
+> // --- Types ---
+
+> interface Tenant {
+
+>   id: string;
+
+>   name: string;
+
+>   plan: string;
+
+>   role: string;
+
+> }
+
+> 
+
+> interface AppModule {
+
+>   id: string;
+
+>   name: string;
+
+>   icon: LucideIcon;
+
+>   color: string;
+
+>   bg: string;
+
+>   border: string;
+
+>   desc: string;
+
+> }
+
+> 
+
+> interface ActivityItem {
+
+>   id: number;
+
+>   app: string;
+
+>   text: string;
+
+>   time: string;
+
+>   icon: LucideIcon;
+
+>   color: string;
+
+> }
+
+> 
+
+> // --- Mock Data ---
+
+> const TENANTS: Tenant[] = [
+
+>   { id: '1', name: 'Zaitullah Family', plan: 'Pro', role: 'Admin' },
+
+>   { id: '2', name: 'QiOne Labs', plan: 'Enterprise', role: 'Owner' },
+
+> ];
+
+> 
+
+> const MODULES: AppModule[] = [
+
+>   { id: 'care', name: 'Care Portal', icon: HeartPulse, color: 'text-rose-500', bg: 'bg-rose-500/10', border: 'border-rose-500/20', desc: 'Manage patients, appointments, and medical notes.' },
+
+>   { id: 'wiki', name: 'QiWiki', icon: BookOpen, color: 'text-amber-500', bg: 'bg-amber-500/10', border: 'border-amber-500/20', desc: 'Shared family and team knowledge base.' },
+
+>   { id: 'qially', name: 'Qially AI', icon: Bot, color: 'text-indigo-500', bg: 'bg-indigo-500/10', border: 'border-indigo-500/20', desc: 'AI agent configuration and prompt management.' },
+
+>   { id: 'cms', name: 'QSaysIt CMS', icon: FileText, color: 'text-emerald-500', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20', desc: 'Manage blog posts, journal entries, and media.' },
+
+> ];
+
+> 
+
+> const RECENT_ACTIVITY: ActivityItem[] = [
+
+>   { id: 1, app: 'Care Portal', text: 'New appointment scheduled for tomorrow.', time: '2h ago', icon: HeartPulse, color: 'text-rose-500' },
+
+>   { id: 2, app: 'Qially AI', text: 'Agent "SupportBot" updated to v2.1.', time: '4h ago', icon: Bot, color: 'text-indigo-500' },
+
+>   { id: 3, app: 'QSaysIt CMS', text: 'Published new blog post: "Architecture 101".', time: 'Yesterday', icon: FileText, color: 'text-emerald-500' },
+
+> ];
+
+> 
+
+> export default function App() {
+
+>   const [activeTenant, setActiveTenant] = useState<Tenant>(TENANTS[0]);
+
+>   const [activeModule, setActiveModule] = useState<string>('hub'); // 'hub' or module id
+
+>   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true);
+
+>   const [isTenantDropdownOpen, setIsTenantDropdownOpen] = useState<boolean>(false);
+
+> 
+
+>   return (
+
+>     <div className="flex h-screen bg-gray-50 text-gray-900 font-sans overflow-hidden">
+
+>       
+
+>       {/* --- Sidebar --- */}
+
+>       <aside className={`fixed lg:static inset-y-0 left-0 z-50 w-72 bg-white border-r border-gray-200 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'} flex flex-col`}>
+
+>         
+
+>         {/* Tenant Switcher */}
+
+>         <div className="p-4 border-b border-gray-200 relative">
+
+>           <button 
+
+>             onClick={() => setIsTenantDropdownOpen(!isTenantDropdownOpen)}
+
+>             className="w-full flex items-center justify-between p-3 bg-gray-50 hover:bg-gray-100 rounded-xl transition-colors border border-gray-200/50 shadow-sm"
+
+>           >
+
+>             <div className="flex items-center gap-3">
+
+>               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold shadow-inner">
+
+>                 {activeTenant.name.charAt(0)}
+
+>               </div>
+
+>               <div className="text-left">
+
+>                 <p className="text-sm font-semibold text-gray-900 truncate w-32">{activeTenant.name}</p>
+
+>                 <p className="text-xs text-gray-500 font-medium">{activeTenant.plan} • {activeTenant.role}</p>
+
+>               </div>
+
+>             </div>
+
+>             <ChevronDown className="w-4 h-4 text-gray-400" />
+
+>           </button>
+
+> 
+
+>           {/* Tenant Dropdown (Absolute) */}
+
+>           {isTenantDropdownOpen && (
+
+>             <div className="absolute top-[80px] left-4 right-4 bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden">
+
+>               {TENANTS.map(t => (
+
+>                 <button 
+
+>                   key={t.id}
+
+>                   onClick={() => { setActiveTenant(t); setIsTenantDropdownOpen(false); }}
+
+>                   className={`w-full text-left px-4 py-3 hover:bg-gray-50 flex items-center justify-between ${activeTenant.id === t.id ? 'bg-indigo-50/50' : ''}`}
+
+>                 >
+
+>                   <span className={`text-sm ${activeTenant.id === t.id ? 'font-semibold text-indigo-700' : 'text-gray-700'}`}>{t.name}</span>
+
+>                   {activeTenant.id === t.id && <div className="w-2 h-2 rounded-full bg-indigo-500" />}
+
+>                 </button>
+
+>               ))}
+
+>               <div className="border-t border-gray-100 p-2">
+
+>                 <button className="w-full text-left px-2 py-2 text-sm text-gray-600 hover:text-gray-900 flex items-center gap-2 rounded-lg hover:bg-gray-50">
+
+>                   <Plus className="w-4 h-4" /> Create Workspace
+
+>                 </button>
+
+>               </div>
+
+>             </div>
+
+>           )}
+
+>         </div>
+
+> 
+
+>         {/* Navigation */}
+
+>         <div className="flex-1 overflow-y-auto p-4 space-y-6">
+
+>           
+
+>           {/* Core */}
+
+>           <div>
+
+>             <p className="px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Platform</p>
+
+>             <nav className="space-y-1">
+
+>               <button 
+
+>                 onClick={() => setActiveModule('hub')}
+
+>                 className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${activeModule === 'hub' ? 'bg-indigo-50 text-indigo-700' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
+
+>               >
+
+>                 <LayoutDashboard className="w-5 h-5" />
+
+>                 Workspace Hub
+
+>               </button>
+
+>               <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+
+>                 <Users className="w-5 h-5" />
+
+>                 Members & Roles
+
+>               </button>
+
+>               <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+
+>                 <Database className="w-5 h-5" />
+
+>                 Shared Storage
+
+>               </button>
+
+>             </nav>
+
+>           </div>
+
+> 
+
+>           {/* Sub-Apps */}
+
+>           <div>
+
+>             <div className="flex items-center justify-between px-3 mb-2">
+
+>               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Installed Modules</p>
+
+>               <button className="text-gray-400 hover:text-indigo-600"><Plus className="w-4 h-4" /></button>
+
+>             </div>
+
+>             <nav className="space-y-1">
+
+>               {MODULES.map(mod => (
+
+>                 <button 
+
+>                   key={mod.id}
+
+>                   onClick={() => setActiveModule(mod.id)}
+
+>                   className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium transition-colors group ${activeModule === mod.id ? 'bg-gray-900 text-white' : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'}`}
+
+>                 >
+
+>                   <div className="flex items-center gap-3">
+
+>                     <mod.icon className={`w-5 h-5 ${activeModule === mod.id ? 'text-white' : mod.color}`} />
+
+>                     {mod.name}
+
+>                   </div>
+
+>                   {activeModule !== mod.id && <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity text-gray-400" />}
+
+>                 </button>
+
+>               ))}
+
+>             </nav>
+
+>           </div>
+
+>         </div>
+
+> 
+
+>         {/* User / Settings Footer */}
+
+>         <div className="p-4 border-t border-gray-200">
+
+>           <nav className="space-y-1 mb-4">
+
+>             <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors">
+
+>               <Settings className="w-5 h-5" /> Workspace Settings
+
+>             </button>
+
+>             <button className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors">
+
+>               <CreditCard className="w-5 h-5" /> Billing & Usage
+
+>             </button>
+
+>           </nav>
+
+>           <div className="flex items-center gap-3 px-3 py-2">
+
+>             <img src="https://ui-avatars.com/api/?name=Admin+User&background=f3f4f6&color=374151" alt="User" className="w-9 h-9 rounded-full ring-2 ring-white shadow-sm" />
+
+>             <div className="flex-1 min-w-0">
+
+>               <p className="text-sm font-medium text-gray-900 truncate">Ray Zaitullah</p>
+
+>               <p className="text-xs text-gray-500 truncate">ray@qione.com</p>
+
+>             </div>
+
+>             <button className="p-1.5 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors">
+
+>               <LogOut className="w-4 h-4" />
+
+>             </button>
+
+>           </div>
+
+>         </div>
+
+>       </aside>
+
+> 
+
+>       {/* --- Main Content Area --- */}
+
+>       <main className="flex-1 flex flex-col min-w-0 bg-white lg:bg-gray-50/50">
+
+>         
+
+>         {/* Top Header */}
+
+>         <header className="h-16 border-b border-gray-200 bg-white px-4 sm:px-8 flex items-center justify-between shrink-0">
+
+>           <div className="flex items-center gap-4">
+
+>             <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="lg:hidden p-2 text-gray-500 hover:bg-gray-100 rounded-lg">
+
+>               <Menu className="w-5 h-5" />
+
+>             </button>
+
+>             
+
+>             {/* Breadcrumb / Context */}
+
+>             <div className="hidden sm:flex items-center gap-2 text-sm">
+
+>               <span className="text-gray-500">{activeTenant.name}</span>
+
+>               <span className="text-gray-300">/</span>
+
+>               <span className="font-semibold text-gray-900">
+
+>                 {activeModule === 'hub' ? 'Workspace Hub' : MODULES.find(m => m.id === activeModule)?.name}
+
+>               </span>
+
+>             </div>
+
+>           </div>
+
+> 
+
+>           <div className="flex items-center gap-3 sm:gap-6">
+
+>             {/* Omnibar Search */}
+
+>             <div className="hidden md:flex items-center relative">
+
+>               <Search className="w-4 h-4 text-gray-400 absolute left-3" />
+
+>               <input 
+
+>                 type="text" 
+
+>                 placeholder="Search across all modules..." 
+
+>                 className="pl-9 pr-12 py-2 bg-gray-100 border-transparent rounded-lg text-sm focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all w-64 lg:w-96"
+
+>               />
+
+>               <div className="absolute right-2 flex items-center gap-1">
+
+>                 <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-medium text-gray-500 bg-white border border-gray-200 rounded shadow-sm">⌘</kbd>
+
+>                 <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-medium text-gray-500 bg-white border border-gray-200 rounded shadow-sm">K</kbd>
+
+>               </div>
+
+>             </div>
+
+>             
+
+>             <button className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full relative">
+
+>               <Bell className="w-5 h-5" />
+
+>               <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-rose-500 rounded-full border-2 border-white"></span>
+
+>             </button>
+
+>           </div>
+
+>         </header>
+
+> 
+
+>         {/* Scrollable Canvas */}
+
+>         <div className="flex-1 overflow-auto p-4 sm:p-8">
+
+>           
+
+>           {/* --- VIEW: WORKSPACE HUB --- */}
+
+>           {activeModule === 'hub' && (
+
+>             <div className="max-w-6xl mx-auto space-y-8">
+
+>               
+
+>               {/* Welcome Banner */}
+
+>               <div className="bg-gradient-to-r from-gray-900 to-indigo-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+
+>                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+
+>                 <div className="relative z-10">
+
+>                   <h1 className="text-3xl font-bold mb-2">Welcome to {activeTenant.name}</h1>
+
+>                   <p className="text-indigo-100 max-w-xl">Your central operating system. Manage resources, access modules, and monitor activity across your entire digital workspace.</p>
+
+>                 </div>
+
+>               </div>
+
+> 
+
+>               {/* Shared Resources / Stats Row */}
+
+>               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+>                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
+
+>                   <div className="p-3 bg-blue-50 text-blue-600 rounded-xl"><Users className="w-6 h-6" /></div>
+
+>                   <div>
+
+>                     <p className="text-sm font-medium text-gray-500">Team Members</p>
+
+>                     <p className="text-2xl font-bold text-gray-900">4 <span className="text-sm font-normal text-gray-400">/ 10 seats</span></p>
+
+>                   </div>
+
+>                 </div>
+
+>                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
+
+>                   <div className="p-3 bg-emerald-50 text-emerald-600 rounded-xl"><Database className="w-6 h-6" /></div>
+
+>                   <div>
+
+>                     <p className="text-sm font-medium text-gray-500">Shared Storage</p>
+
+>                     <p className="text-2xl font-bold text-gray-900">12.4 GB <span className="text-sm font-normal text-gray-400">/ 50 GB</span></p>
+
+>                   </div>
+
+>                 </div>
+
+>                 <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center gap-4">
+
+>                   <div className="p-3 bg-purple-50 text-purple-600 rounded-xl"><Activity className="w-6 h-6" /></div>
+
+>                   <div>
+
+>                     <p className="text-sm font-medium text-gray-500">API Executions (AI)</p>
+
+>                     <p className="text-2xl font-bold text-gray-900">8,402 <span className="text-sm font-normal text-gray-400">this month</span></p>
+
+>                   </div>
+
+>                 </div>
+
+>               </div>
+
+> 
+
+>               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+>                 
+
+>                 {/* Module Launcher Grid */}
+
+>                 <div className="lg:col-span-2">
+
+>                   <div className="flex items-center justify-between mb-4">
+
+>                     <h2 className="text-lg font-bold text-gray-900">Your Modules</h2>
+
+>                     <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700 flex items-center gap-1">
+
+>                       Module Store <ArrowRight className="w-4 h-4" />
+
+>                     </button>
+
+>                   </div>
+
+>                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+>                     {MODULES.map(mod => (
+
+>                       <button 
+
+>                         key={mod.id}
+
+>                         onClick={() => setActiveModule(mod.id)}
+
+>                         className="group bg-white p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md hover:border-indigo-200 transition-all text-left flex flex-col h-full"
+
+>                       >
+
+>                         <div className={`w-12 h-12 rounded-xl ${mod.bg} ${mod.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
+
+>                           <mod.icon className="w-6 h-6" />
+
+>                         </div>
+
+>                         <h3 className="text-base font-bold text-gray-900 mb-1">{mod.name}</h3>
+
+>                         <p className="text-sm text-gray-500 flex-1">{mod.desc}</p>
+
+>                         <div className="mt-4 flex items-center text-sm font-medium text-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity">
+
+>                           Launch Module <ArrowRight className="w-4 h-4 ml-1" />
+
+>                         </div>
+
+>                       </button>
+
+>                     ))}
+
+>                     
+
+>                     {/* Add Module Card */}
+
+>                     <button className="bg-gray-50/50 border-2 border-dashed border-gray-200 rounded-2xl p-6 flex flex-col items-center justify-center text-gray-400 hover:text-indigo-600 hover:border-indigo-300 hover:bg-indigo-50/30 transition-colors min-h-[200px]">
+
+>                       <Plus className="w-8 h-8 mb-2" />
+
+>                       <span className="font-medium">Install new module</span>
+
+>                     </button>
+
+>                   </div>
+
+>                 </div>
+
+> 
+
+>                 {/* Cross-App Activity Feed */}
+
+>                 <div>
+
+>                   <h2 className="text-lg font-bold text-gray-900 mb-4">Cross-App Activity</h2>
+
+>                   <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-1">
+
+>                     {RECENT_ACTIVITY.map((activity, idx) => (
+
+>                       <div key={activity.id} className={`p-4 flex gap-4 ${idx !== RECENT_ACTIVITY.length - 1 ? 'border-b border-gray-100' : ''}`}>
+
+>                         <div className={`mt-0.5 ${activity.color}`}>
+
+>                           <activity.icon className="w-5 h-5" />
+
+>                         </div>
+
+>                         <div>
+
+>                           <p className="text-sm font-medium text-gray-900 mb-0.5 leading-snug">{activity.text}</p>
+
+>                           <div className="flex items-center gap-2 text-xs text-gray-500">
+
+>                             <span className="font-medium">{activity.app}</span>
+
+>                             <span>•</span>
+
+>                             <span>{activity.time}</span>
+
+>                           </div>
+
+>                         </div>
+
+>                       </div>
+
+>                     ))}
+
+>                     <button className="w-full p-3 text-sm font-medium text-indigo-600 hover:bg-gray-50 rounded-b-xl transition-colors border-t border-gray-100">
+
+>                       View all activity
+
+>                     </button>
+
+>                   </div>
+
+>                 </div>
+
+> 
+
+>               </div>
+
+>             </div>
+
+>           )}
+
+> 
+
+>           {/* --- VIEW: SUB-APP RENDERER (Placeholder) --- */}
+
+>           {activeModule !== 'hub' && (
+
+>             <div className="h-full flex flex-col items-center justify-center text-center max-w-md mx-auto animate-in fade-in zoom-in duration-300">
+
+>               {(() => {
+
+>                 const mod = MODULES.find(m => m.id === activeModule);
+
+>                 if (!mod) return null;
+
+>                 return (
+
+>                   <>
+
+>                     <div className={`w-24 h-24 rounded-3xl ${mod.bg} ${mod.color} flex items-center justify-center mb-6 shadow-inner`}>
+
+>                       <mod.icon className="w-12 h-12" />
+
+>                     </div>
+
+>                     <h2 className="text-3xl font-bold text-gray-900 mb-2">{mod.name}</h2>
+
+>                     <p className="text-gray-500 mb-8">{mod.desc} This module is currently isolated within the <b>{activeTenant.name}</b> workspace scope.</p>
+
+>                     
+
+>                     <div className="w-full bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+
+>                        <p className="text-sm font-mono text-gray-400 mb-4">// Simulated App Loading Area</p>
+
+>                        <div className="space-y-3">
+
+>                          <div className="h-4 bg-gray-100 rounded animate-pulse w-3/4"></div>
+
+>                          <div className="h-4 bg-gray-100 rounded animate-pulse w-full"></div>
+
+>                          <div className="h-4 bg-gray-100 rounded animate-pulse w-5/6"></div>
+
+>                        </div>
+
+>                     </div>
+
+> 
+
+>                     <button 
+
+>                       onClick={() => setActiveModule('hub')}
+
+>                       className="mt-8 text-sm font-medium text-gray-500 hover:text-gray-900 flex items-center gap-2 transition-colors"
+
+>                     >
+
+>                       <ArrowRight className="w-4 h-4 rotate-180" /> Back to Hub
+
+>                     </button>
+
+>                   </>
+
+>                 )
+
+>               })()}
+
+>             </div>
+
+>           )}
+
+> 
+
+>         </div>
+
+>       </main>
+
+>       
+
+>       {/* Mobile Overlay */}
+
+>       {isSidebarOpen && (
+
+>         <div 
+
+>           className="fixed inset-0 bg-gray-900/50 z-40 lg:hidden backdrop-blur-sm"
+
+>           onClick={() => setIsSidebarOpen(false)}
+
+>         />
+
+>       )}
+
+>     </div>
+
+>   );
+
 > }
 
 ### Assistant

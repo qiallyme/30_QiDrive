@@ -3,9 +3,9 @@ layout: page
 title: "Firefly Transactions Architecture"
 slug: "firefly_transactions_architecture"
 created_at: "2026-06-14 15:10:39"
-updated_at: "2026-06-14 15:10:39"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

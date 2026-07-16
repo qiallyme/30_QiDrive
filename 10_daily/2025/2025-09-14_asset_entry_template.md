@@ -3,9 +3,9 @@ layout: page
 title: "Asset entry template"
 slug: "asset_entry_template"
 created_at: "2025-09-14 14:03:07"
-updated_at: "2025-09-14 14:03:07"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1191,31 +1191,56 @@ canonical_ref: ""
 > Would you like me to spin up a **starter Google Sheet template** with the formulas pre-built (including your bonus tracker) so you can drop in numbers right away? That way it’s plug-and-play instead of manually building columns.
 
 ### User
-> So make sure I'm calculating this correctly. So basically, I need to enter it in for the year that I captured the savings, right? So for, you know, these four, these five assets, the depreciation for that year, and then a percentage. So first I show them the savings, and then I take a percentage of their savings, right? I think, I think it was 20% for direct savings. So that means essentially for like that period, for that year, I would, I would put that over the whole year of payments. And then essentially, because I'm, I'm keeping track of the total savings and the total savings payments to make sure they're balancing out, correct? And my other question is, so then the following year, when we do depreciation, I would add that again, add that again, add that again. So should I just have a sheet for each year and just do it that way? Give me your opinion, please. Thank you.Asset	Basis	Annual Depreciation	Remaining Life (Years)	Tax%	Annual Tax Savings (Est.)	Accum Saving	Status	Notes	Depreciation Year	Accumulated Depreciation	Direct %	Direct Savings Payment	DSaving Accum
-> GMC Savana Van	$16,730	$3,346	5	32%	$1,071	$1,071	Active	239,355 mi as of 09/2025	2021	$3,346	20%	$214.14	$214.14
-> GMC Savana Van	$16,730	$3,346	4	32%	$1,071	$2,141	Active	239,355 mi as of 09/2025	2022	$6,692	20%	$214.14	$428.29
-> GMC Savana Van	$16,730	$3,346	3	32%	$1,071	$3,212	Active	239,355 mi as of 09/2025	2023	$10,038	20%	$214.14	$642.43
-> Infiniti QX56	$12,000	$2,400	5	32%	$768	$3,980	Active	133,972 mi as of 09/2025	2024	$12,438	20%	$153.60	$796.03
-> Flatbed Truck	$25,000	$5,000	5	32%	$1,600	$5,580	Active	239,355 mi	2024	$17,438	20%	$320.00	$1,116.03
-> Small Trailer	$3,000	$600	5	32%	$192	$5,772	Active	Utility trailer	2024	$18,038	20%	$38.40	$1,154.43
-> Dump Trailer	$7,000	$1,400	5	32%	$448	$6,220	Active	Big Tex 14'	2024	$19,438	20%	$89.60	$1,244.03
-> GMC Savana Van	$16,730	$3,346	2	32%	$1,071	$7,291	Active	239,355 mi as of 09/2025	2024	$22,784	20%	$214.14	$1,458.18
-> Infiniti QX56	$12,000	$2,400	4	32%	$768	$8,059	Active	133,972 mi as of 09/2025	2025	$25,184	20%	$153.60	$1,611.78
-> Flatbed Truck	$25,000	$5,000	4	32%	$1,600	$9,659	Active	239,355 mi	2025	$30,184	20%	$320.00	$1,931.78
-> Small Trailer	$3,000	$600	4	32%	$192	$9,851	Active	Utility trailer	2025	$30,784	20%	$38.40	$1,970.18
-> Dump Trailer	$7,000	$1,400	4	32%	$448	$10,299	Active	Big Tex 14'	2025	$32,184	20%	$89.60	$2,059.78
-> GMC Savana Van	$16,730	$3,346	1	32%	$1,071	$11,370	Active	239,355 mi as of 09/2025	2026	$35,530	20%	$214.14	$2,273.92
-> Infiniti QX56	$12,000	$2,400	3	32%	$768	$12,138	Active	133,972 mi as of 09/2025	2026	$37,930	20%	$153.60	$2,427.52
-> Flatbed Truck	$25,000	$5,000	3	32%	$1,600	$13,738	Active	239,355 mi	2026	$42,930	20%	$320.00	$2,747.52
-> Small Trailer	$3,000	$600	3	32%	$192	$13,930	Active	Utility trailer	2026	$43,530	20%	$38.40	$2,785.92
-> Dump Trailer	$7,000	$1,400	3	32%	$448	$14,378	Active	Big Tex 14'	2026	$44,930	20%	$89.60	$2,875.52
-> Infiniti QX56	$12,000	$2,400	2	32%	$768	$15,146	Active	133,972 mi as of 09/2025	2027	$47,330	20%	$153.60	$3,029.12
-> Flatbed Truck	$25,000	$5,000	2	32%	$1,600	$16,746	Active	239,355 mi	2027	$52,330	20%	$320.00	$3,349.12
-> Small Trailer	$3,000	$600	2	32%	$192	$16,938	Active	Utility trailer	2027	$52,930	20%	$38.40	$3,387.52
-> Dump Trailer	$7,000	$1,400	2	32%	$448	$17,386	Active	Big Tex 14'	2027	$54,330	20%	$89.60	$3,477.12
-> Infiniti QX56	$12,000	$2,400	1	32%	$768	$18,154	Active	133,972 mi as of 09/2025	2028	$56,730	20%	$153.60	$3,630.72
-> Flatbed Truck	$25,000	$5,000	1	32%	$1,600	$19,754	Active	239,355 mi	2028	$61,730	20%	$320.00	$3,950.72
-> Small Trailer	$3,000	$600	1	32%	$192	$19,946	Active	Utility trailer	2028	$62,330	20%	$38.40	$3,989.12
+> So make sure I'm calculating this correctly. So basically, I need to enter it in for the year that I captured the savings, right? So for, you know, these four, these five assets, the depreciation for that year, and then a percentage. So first I show them the savings, and then I take a percentage of their savings, right? I think, I think it was 20% for direct savings. So that means essentially for like that period, for that year, I would, I would put that over the whole year of payments. And then essentially, because I'm, I'm keeping track of the total savings and the total savings payments to make sure they're balancing out, correct? And my other question is, so then the following year, when we do depreciation, I would add that again, add that again, add that again. So should I just have a sheet for each year and just do it that way? Give me your opinion, please. Thank you.Asset	Basis	Annual Depreciation	Remaining Life (Years)	Tax%	Annual Tax Savings (Est.)	Accum Saving	Status	Notes	Depreciation Year	Accumulated Depreciation	Direct %	Direct Savings Payment	DSaving Accum
+
+> GMC Savana Van	$16,730	$3,346	5	32%	$1,071	$1,071	Active	239,355 mi as of 09/2025	2021	$3,346	20%	$214.14	$214.14
+
+> GMC Savana Van	$16,730	$3,346	4	32%	$1,071	$2,141	Active	239,355 mi as of 09/2025	2022	$6,692	20%	$214.14	$428.29
+
+> GMC Savana Van	$16,730	$3,346	3	32%	$1,071	$3,212	Active	239,355 mi as of 09/2025	2023	$10,038	20%	$214.14	$642.43
+
+> Infiniti QX56	$12,000	$2,400	5	32%	$768	$3,980	Active	133,972 mi as of 09/2025	2024	$12,438	20%	$153.60	$796.03
+
+> Flatbed Truck	$25,000	$5,000	5	32%	$1,600	$5,580	Active	239,355 mi	2024	$17,438	20%	$320.00	$1,116.03
+
+> Small Trailer	$3,000	$600	5	32%	$192	$5,772	Active	Utility trailer	2024	$18,038	20%	$38.40	$1,154.43
+
+> Dump Trailer	$7,000	$1,400	5	32%	$448	$6,220	Active	Big Tex 14'	2024	$19,438	20%	$89.60	$1,244.03
+
+> GMC Savana Van	$16,730	$3,346	2	32%	$1,071	$7,291	Active	239,355 mi as of 09/2025	2024	$22,784	20%	$214.14	$1,458.18
+
+> Infiniti QX56	$12,000	$2,400	4	32%	$768	$8,059	Active	133,972 mi as of 09/2025	2025	$25,184	20%	$153.60	$1,611.78
+
+> Flatbed Truck	$25,000	$5,000	4	32%	$1,600	$9,659	Active	239,355 mi	2025	$30,184	20%	$320.00	$1,931.78
+
+> Small Trailer	$3,000	$600	4	32%	$192	$9,851	Active	Utility trailer	2025	$30,784	20%	$38.40	$1,970.18
+
+> Dump Trailer	$7,000	$1,400	4	32%	$448	$10,299	Active	Big Tex 14'	2025	$32,184	20%	$89.60	$2,059.78
+
+> GMC Savana Van	$16,730	$3,346	1	32%	$1,071	$11,370	Active	239,355 mi as of 09/2025	2026	$35,530	20%	$214.14	$2,273.92
+
+> Infiniti QX56	$12,000	$2,400	3	32%	$768	$12,138	Active	133,972 mi as of 09/2025	2026	$37,930	20%	$153.60	$2,427.52
+
+> Flatbed Truck	$25,000	$5,000	3	32%	$1,600	$13,738	Active	239,355 mi	2026	$42,930	20%	$320.00	$2,747.52
+
+> Small Trailer	$3,000	$600	3	32%	$192	$13,930	Active	Utility trailer	2026	$43,530	20%	$38.40	$2,785.92
+
+> Dump Trailer	$7,000	$1,400	3	32%	$448	$14,378	Active	Big Tex 14'	2026	$44,930	20%	$89.60	$2,875.52
+
+> Infiniti QX56	$12,000	$2,400	2	32%	$768	$15,146	Active	133,972 mi as of 09/2025	2027	$47,330	20%	$153.60	$3,029.12
+
+> Flatbed Truck	$25,000	$5,000	2	32%	$1,600	$16,746	Active	239,355 mi	2027	$52,330	20%	$320.00	$3,349.12
+
+> Small Trailer	$3,000	$600	2	32%	$192	$16,938	Active	Utility trailer	2027	$52,930	20%	$38.40	$3,387.52
+
+> Dump Trailer	$7,000	$1,400	2	32%	$448	$17,386	Active	Big Tex 14'	2027	$54,330	20%	$89.60	$3,477.12
+
+> Infiniti QX56	$12,000	$2,400	1	32%	$768	$18,154	Active	133,972 mi as of 09/2025	2028	$56,730	20%	$153.60	$3,630.72
+
+> Flatbed Truck	$25,000	$5,000	1	32%	$1,600	$19,754	Active	239,355 mi	2028	$61,730	20%	$320.00	$3,950.72
+
+> Small Trailer	$3,000	$600	1	32%	$192	$19,946	Active	Utility trailer	2028	$62,330	20%	$38.40	$3,989.12
+
 > Dump Trailer	$7,000	$1,400	1	32%	$448	$20,394	Active	Big Tex 14'	2028	$63,730	20%	$89.60	$4,078.72
 
 ### Assistant
@@ -1278,540 +1303,1074 @@ canonical_ref: ""
 > Want me to generate a **Google Sheets template** with this exact structure (master sheet + first-year tab + formulas preloaded)? That way you can just copy it forward each year and plug in new assets without rebuilding formulas.
 
 ### User
-> Can you take a look at these and see which ones are similar? They don't have to be exact duplicates, but if they're similar, maybe like 85% matching, 89%, will you identify those for me to merge them, please? Thank you. 21st Amendment
-> 3 Brothers Grocery
-> 38th Buffet
-> __checks
-> AAA
-> AB Landscaping
-> Abacu Garcia
-> ABC Supply Co. Inc.
-> ABuelo's
-> Advance Auto
-> AES
-> Agile Premium
-> Airbnb
-> Alejandro Barragan
-> Alfonso Rodriguez Valverde
-> Amazon
-> American Airlines
-> Amoco
-> Anakeesta Parking Ckcd
-> Andres Villalobos
-> Andy Mohr
-> Another Broken Egg Cafe
-> Antojitos Domis
-> Antonio Granito
-> Apple.com
-> Applebee's
-> Aramark
-> Arby's
-> Arco
-> Asadito
-> Asbury In Chev, LLC
-> AT&T
-> Atheletes Foot
-> ATM Withdrawal
-> Auto Plus Auto Parts
-> AutoZone
-> Bamboo Garden
-> Bank of America
-> Bath & Body Works
-> Batteries
-> Beacon Building
-> Belmont Food Mart
-> Bernardo Avila Carbajal
-> Best Buy
-> Birdies
-> Birrieria Ocotlan LLC
-> BLANCA VALVERDE
-> Blast Painting LLC
-> Bob Evans
-> Bob's Food Mart
-> Boost Mobile
-> Boot Barn
-> BP
-> Branch Electric
-> Brandon Wikes
-> Brobarn Liquors LLC
-> Brothers Granite & Marble LLC
-> Buckle Ckcd
-> Buffalo Wild Wings
-> Buick
-> Builders
-> Builders Firstsource, Inc.
-> Burger King
-> Burlington
-> C-Store & Kitchen
-> Caldwell Do It
-> Capital One
-> Cardgran
-> Cardtronics
-> Cardwell Do It
-> Carlos Almond
-> Carniceria el Ranchito
-> Carniceria Guanajuato
-> Carniceria y Taqueria
-> Casey's
-> Cash Depot Vend
-> CashApp
-> Castleton Square
-> Cellular Necessities
-> Celso Efrain Guilien
-> Century Oil
-> Century Theaters
-> Cessar Tacos
-> Champs
-> Champs Sports
-> chang fu
-> Charleys Philly Steaks
-> Check Smart 208
-> Chick-Fil-A
-> China Buffet
-> China One
-> Chipotle
-> Chuck E. Cheese
-> Church's
-> Cinco De Mayo
-> Circle K
-> Cirino Zapata
-> Citgo
-> Citizens Energy
-> Citizens Energy Group
-> CJ Rice & Companies LLC
-> CLARA LEAL-HUESCA
-> Cline Tolls
-> Coach
-> Cocina Latina
-> Comfort Inn
-> Community Spirits
-> Conoco
-> Conquistador Concrete
-> Costco Gas
-> Cracker Barrel
-> Crew Carwash
-> Crown Liquors
-> CSC Services
-> Curtis Motor Sale
-> D&B Ecommerce
-> Dairy Barn
-> Dairy Queen
-> De Leon, Miguel
-> Delicias Jalisco
-> Denison Parking
-> Denny's
-> Dick's Sporting Goods
-> Disney+
-> Dollar General Store
-> Dominos Pizza
-> Donatos
-> Door Dash
-> Doordash
-> Downtown 66
-> Dreyer & Reinbold BMW
-> Dumpster Budget
-> Dunkin Donuts
-> Eagle Creek Liquor
-> Eagle Creek Park
-> East Side Wireless Inc.
-> East Street
-> eBay
-> Eddy Arismendy
-> Edible
-> El Brody's Tire Shop
-> El Camino Tire Shop Inc
-> El Corcel 2
-> El Fandangos
-> El Fix It
-> El Fogon De Indy
-> El Gigante Taqueria LLC
-> El Kiosco
-> El Meson
-> El Pollo Tapati
-> El Potro Mexican
-> El Puerto
-> El Puerto De San
-> El Rancho Grande LLC
-> El Rey Carniceria LLC
-> El Tejano Restuarant
-> El Toro Bravo
-> Electrico Conf
-> ELS
-> Emerson Mart
-> Emporium 40
-> Eric Smith
-> Estefany Hernandez Esponda
-> Eusebio Morales Cruz
-> Everydaybaby.com
-> Excavating
-> Exxon
-> EZ Way Rental
-> Ezpawn
-> Family Dollar
-> Famous Dave's
-> Farmhouse Brunchery
-> Fast Tacos
-> Fausto Salvador Lopez
-> Fax.com
-> Fazoli's
-> FBV
-> Fernando Rafael Sanchez
-> Finish Line
-> Flamin Chicken
-> Flavor of Mexico
-> Flavors of India
-> Floor and Decor
-> Floors to your home
-> Flor And Decor
-> Flor Inc
-> Flores Balloons
-> Flying J
-> Food Center
-> Food Mart
-> Fordes Place LLC
-> Forest Commodities Inc.
-> Formosa Seafood
-> Fountain Pantry
-> Franklin Food
-> Fredis Armando Herrera Frojes
-> Fredy Valverde
-> Fresh Market
-> Furniture Factory
-> Gabriel De vega
-> Gabriel Molinares
-> Garrity Stone Inc.
-> Gas Lamp Insurance
-> Gaston
-> Geico
-> GetGo
-> Gilberto Gutierrez
-> Gill's Mart
-> Girls School
-> Glendale Town Center
-> Gofundme
-> Golden Corral
-> Golo Express Mart
-> Gonzales Auto Parts
-> Google
-> Gorda
-> Greenfield Transfer Station
-> Greenway Dumpster
-> Gustavo Hichos
-> Hacienda
-> Hampton Inn
-> Hardee's
-> Hector Miranda Caballero
-> Hector R
-> Hilton
-> Hobby Lobby
-> Holiday Inn
-> Home Depot
-> Home Depot Credit Card CitiBank
-> Homewood Suites
-> Hoosier Gasway
-> Hoosier Hauler LLC
-> Hoosier Mart
-> Hooters
-> Hot Cakes Emporium
-> Ice Cream World LLC
-> IHOP
-> IKEA
-> IMC tires & Mufflers inc
-> IMI
-> IN BMV
-> Indiana Department of Revenue
-> Indiana Mulch
-> Indiana State Fairgrounds
-> Indy Fuds LLC
-> Indy Fuel Mart
-> Indy Zoo
-> Internal Revenue Service (IRS)
-> IPL
-> J's Lobster
-> Jack's Liquor
-> Jack's Place
-> JBG
-> JD Sports
-> Jeff Smeltzer
-> Jensen Pawn Greenfield
-> Jimenez Mr Discount Flooring
-> Jiminez
-> Jimmy Johns
-> Jireh Barber Shop & Salon
-> JM Mechanic Services
-> Joao Martinez
-> Job Site Supply
-> Joe's Junction
-> Joel Velasquez
-> Joes Junkyard
-> Jonathon Santos
-> Jorge Ruiz
-> Jose F Roman (Cheche)
-> Jose Lara Coreas
-> Jose Miguel Sarate Vidrious
-> JSS English
-> Juan Manuel Garcia Hermenejildo
-> Juan Quintero
-> Juan Traila
-> Juan Villatoro
-> Julio Salinas
-> Julio Zamora F
-> K Town Korean BBQ
-> Kayla
-> Kenjo Market
-> KFC
-> Kids Foot Locker
-> King Ribs Bar-B-Q
-> King's Wok
-> Kohl's
-> Kopetsky's Full Service Carwash
-> Kroger
-> Kroger Fuel
-> Kwik Mart
-> La Cuanquita
-> La Escollera Mexican
-> La Furia
-> La Guanaquita Restaurante
-> La Hacienda Mexican
-> La Mexicana
-> La Mexicana restaurant
-> La Michoacana
-> La Parada
-> La Posada
-> Lauritas Carnaval
-> LC Drywall LLC
-> Le Peep
-> Legend Oil
-> Leonardo's Mexican Food
-> LGW Restoration
-> lincoln square
-> Lions of Punja
-> LiquorLand
-> Little Caesars
-> Llantera El Pacifico
-> Loco Mexican Restuarant
-> Los 3 hermanos
-> Los Chilaquiles
-> Los Dos Hermanos
-> Los Malcajetes 2
-> Los Rancheros
-> Lowes
-> Lucianas
-> Lucky
-> Luis Guerrero
-> LUZ LANDEROS
-> Macario Roman
-> Mach 1 Food Shop
-> Macy's
-> Maki Japan
-> Mama Ines
-> Marathon
-> Marathon 38 str
-> Marbella Taboada
-> Marco Guzman
-> Marco's Pizza
-> Maria Garcia
-> Maricela
-> Marriot
-> Marshall's
-> Maruti Nandan
-> Mattress Firm
-> Mayra
-> Mcclure oil
-> McDonald's
-> Mega Furniture
-> Meijer
-> Menards
-> Mexicanas Supermarket
-> Mi Barrio Supreme
-> Mi Hacienda Mexican
-> Michael Blair
-> Michael Luvia
-> Michigan Quick
-> Microsoft
-> Midday Deli
-> Midland
-> Miguel Perez JR
-> Milton Uriel Siles Zeledon
-> Ming Jiang
-> Mini Food & Market
-> MLK Marathon
-> Mobile Food Mart
-> Modern Building Supply INC
-> Monte De Dios
-> Morelos
-> Mower Outlet LLC
-> My Gas Station
-> Myhelo
-> Nada
-> Napa Auto Parts
-> NATALIA MARTINEZ
-> Netflix
-> Neveria Y Tamales Alpha
-> New Taste Buffet
-> Neyrot Isidro Brito Ramirez
-> Northwest Radiology
-> Northwood Liquor
-> Oaxaca Restaurant
-> Olive Garden
-> Oliver Family
-> onstart
-> Oreilly Auto Parts
-> original pancake
-> Orthoindy
-> Oscar Lara
-> Osman Olvera Meza
-> Our Store
-> Outback
-> Pacer's Athletic
-> Pagoda
-> Panera Bread
-> Papa John's
-> Parm Foodmart
-> Pasteleria Gresil
-> Pastora
-> Patriotic Fireworks
-> Patry Chche
-> Payless Liquors Inc
-> Pep Boys
-> Philadelphia Steak & Fries
-> Phillips 66
-> Pico De Gallo
-> Pike Food Mart
-> Pilot
-> Pizza Hut
-> PNC
-> Pollo Michoacano 2 LLC
-> Popeye's
-> Post Mart
-> Prime Video
-> pro tax and accounting
-> ProBuild
-> Prospect Food
-> Qdoba
-> QiAlly LLC
-> Quick Stop
-> QuickBooks Payments
-> QuikTrip
-> R and M Finisher Drywall LLC
-> Ramiro Hernandez
-> Raul
-> Raymond St
-> red habanero
-> Red Lobster
-> Red Wing
-> Reese Central Wholesale
-> Rene Bautista
-> Rickers
-> Ricks Cafe
-> Riley Garage
-> Ritter Frozen
-> RODRIGO ROMAN FLORES
-> Roger & Holland Jewery
-> Roger Bolender
-> Rolando
-> Roller City
-> Roman Valverde
-> Roses Store
-> Rufus Sa
-> Safeway
-> Saida Boyzo
-> Sams Club
-> Sandman Brothers, Inc.
-> Santana Guzman Infante
-> Saul Goode Industries
-> Sergio Vasquez
-> Servicios Rice-Velasquez
-> Shell
-> Sherwin williams
-> Shopfund.com
-> Singhs Foods
-> Sloomoo Institute
-> Smiley Entertainment
-> South Side Landfill, INC
-> Southwest Airlines
-> Sparkling Image
-> Speedway
-> Square Inc
-> SRM Concrete Ky
-> St Jude
-> Staples
-> Starbuck's
-> Steak 'n Shake
-> Steak City
-> Subway
-> Sun Mart
-> Sunoco
-> Sunrise Petroleum
-> Sunshine Breakfast and Grill
-> Super China Buffet
-> Super Morelos
-> Supermart El Torrito
-> Taco Bell
-> Tacopolis
-> Tacos Mobil el Guero
-> Take 5 Oil
-> Taqueria 3 Brothers
-> Taqueria El Hermano
-> Taqueria El Mague
-> Taqueria La Chela
-> Taqueria Veracruz LLC
-> Target
-> Tavern
-> TBA & Oil Warehouse
-> Tell Total Wine
-> Temple Rents, Inc
-> Tex Mex Supermarket
-> TGI Friday's
-> The Home Depot
-> The Mower Outlet
-> Thortons
-> Tienda Mexican El
-> Tiffany Lawn & Garden
-> TJ Maxx
-> Todo De Piel
-> Tomas Garcia Valentin
-> Tommys Drywall
-> Tortas El Guero
-> Tortas Futbol
-> Tractor Supply
-> U-Haul
-> Uber
-> Ulises Ramirez
-> Uncle Bills Pets
-> Valverde, Ramon
-> Venmo
-> Venus Beauty Salon
-> Verde Flavors
-> Verna Compa
-> Victor Bro
-> Victor Lara
-> Victoria Secret
-> Vidal Santiago Luciano
-> Village Liquor
-> Village Pantry
-> Village Pub
-> Villiarrubia Rosenburger
-> Waffle House
-> Walgreens
-> Walmart
-> Walmart Plus
-> Wendy's
-> Westside Loan Co.
-> White Castle
-> White River Recycling and Transfer Station
-> Wof Foods Kansas
-> Wonder Wu
-> Wood Grill Buffet
-> Woodland Bowl Inc
-> Xpress Mart
-> Yolk
-> Yong's Audio
-> Yoselin Flores
-> Yoya Frozen Yogurt
-> Yummy Crab
-> Zales
-> Zaxby's Restaurant
+> Can you take a look at these and see which ones are similar? They don't have to be exact duplicates, but if they're similar, maybe like 85% matching, 89%, will you identify those for me to merge them, please? Thank you. 21st Amendment
+
+> 3 Brothers Grocery
+
+> 38th Buffet
+
+> __checks
+
+> AAA
+
+> AB Landscaping
+
+> Abacu Garcia
+
+> ABC Supply Co. Inc.
+
+> ABuelo's
+
+> Advance Auto
+
+> AES
+
+> Agile Premium
+
+> Airbnb
+
+> Alejandro Barragan
+
+> Alfonso Rodriguez Valverde
+
+> Amazon
+
+> American Airlines
+
+> Amoco
+
+> Anakeesta Parking Ckcd
+
+> Andres Villalobos
+
+> Andy Mohr
+
+> Another Broken Egg Cafe
+
+> Antojitos Domis
+
+> Antonio Granito
+
+> Apple.com
+
+> Applebee's
+
+> Aramark
+
+> Arby's
+
+> Arco
+
+> Asadito
+
+> Asbury In Chev, LLC
+
+> AT&T
+
+> Atheletes Foot
+
+> ATM Withdrawal
+
+> Auto Plus Auto Parts
+
+> AutoZone
+
+> Bamboo Garden
+
+> Bank of America
+
+> Bath & Body Works
+
+> Batteries
+
+> Beacon Building
+
+> Belmont Food Mart
+
+> Bernardo Avila Carbajal
+
+> Best Buy
+
+> Birdies
+
+> Birrieria Ocotlan LLC
+
+> BLANCA VALVERDE
+
+> Blast Painting LLC
+
+> Bob Evans
+
+> Bob's Food Mart
+
+> Boost Mobile
+
+> Boot Barn
+
+> BP
+
+> Branch Electric
+
+> Brandon Wikes
+
+> Brobarn Liquors LLC
+
+> Brothers Granite & Marble LLC
+
+> Buckle Ckcd
+
+> Buffalo Wild Wings
+
+> Buick
+
+> Builders
+
+> Builders Firstsource, Inc.
+
+> Burger King
+
+> Burlington
+
+> C-Store & Kitchen
+
+> Caldwell Do It
+
+> Capital One
+
+> Cardgran
+
+> Cardtronics
+
+> Cardwell Do It
+
+> Carlos Almond
+
+> Carniceria el Ranchito
+
+> Carniceria Guanajuato
+
+> Carniceria y Taqueria
+
+> Casey's
+
+> Cash Depot Vend
+
+> CashApp
+
+> Castleton Square
+
+> Cellular Necessities
+
+> Celso Efrain Guilien
+
+> Century Oil
+
+> Century Theaters
+
+> Cessar Tacos
+
+> Champs
+
+> Champs Sports
+
+> chang fu
+
+> Charleys Philly Steaks
+
+> Check Smart 208
+
+> Chick-Fil-A
+
+> China Buffet
+
+> China One
+
+> Chipotle
+
+> Chuck E. Cheese
+
+> Church's
+
+> Cinco De Mayo
+
+> Circle K
+
+> Cirino Zapata
+
+> Citgo
+
+> Citizens Energy
+
+> Citizens Energy Group
+
+> CJ Rice & Companies LLC
+
+> CLARA LEAL-HUESCA
+
+> Cline Tolls
+
+> Coach
+
+> Cocina Latina
+
+> Comfort Inn
+
+> Community Spirits
+
+> Conoco
+
+> Conquistador Concrete
+
+> Costco Gas
+
+> Cracker Barrel
+
+> Crew Carwash
+
+> Crown Liquors
+
+> CSC Services
+
+> Curtis Motor Sale
+
+> D&B Ecommerce
+
+> Dairy Barn
+
+> Dairy Queen
+
+> De Leon, Miguel
+
+> Delicias Jalisco
+
+> Denison Parking
+
+> Denny's
+
+> Dick's Sporting Goods
+
+> Disney+
+
+> Dollar General Store
+
+> Dominos Pizza
+
+> Donatos
+
+> Door Dash
+
+> Doordash
+
+> Downtown 66
+
+> Dreyer & Reinbold BMW
+
+> Dumpster Budget
+
+> Dunkin Donuts
+
+> Eagle Creek Liquor
+
+> Eagle Creek Park
+
+> East Side Wireless Inc.
+
+> East Street
+
+> eBay
+
+> Eddy Arismendy
+
+> Edible
+
+> El Brody's Tire Shop
+
+> El Camino Tire Shop Inc
+
+> El Corcel 2
+
+> El Fandangos
+
+> El Fix It
+
+> El Fogon De Indy
+
+> El Gigante Taqueria LLC
+
+> El Kiosco
+
+> El Meson
+
+> El Pollo Tapati
+
+> El Potro Mexican
+
+> El Puerto
+
+> El Puerto De San
+
+> El Rancho Grande LLC
+
+> El Rey Carniceria LLC
+
+> El Tejano Restuarant
+
+> El Toro Bravo
+
+> Electrico Conf
+
+> ELS
+
+> Emerson Mart
+
+> Emporium 40
+
+> Eric Smith
+
+> Estefany Hernandez Esponda
+
+> Eusebio Morales Cruz
+
+> Everydaybaby.com
+
+> Excavating
+
+> Exxon
+
+> EZ Way Rental
+
+> Ezpawn
+
+> Family Dollar
+
+> Famous Dave's
+
+> Farmhouse Brunchery
+
+> Fast Tacos
+
+> Fausto Salvador Lopez
+
+> Fax.com
+
+> Fazoli's
+
+> FBV
+
+> Fernando Rafael Sanchez
+
+> Finish Line
+
+> Flamin Chicken
+
+> Flavor of Mexico
+
+> Flavors of India
+
+> Floor and Decor
+
+> Floors to your home
+
+> Flor And Decor
+
+> Flor Inc
+
+> Flores Balloons
+
+> Flying J
+
+> Food Center
+
+> Food Mart
+
+> Fordes Place LLC
+
+> Forest Commodities Inc.
+
+> Formosa Seafood
+
+> Fountain Pantry
+
+> Franklin Food
+
+> Fredis Armando Herrera Frojes
+
+> Fredy Valverde
+
+> Fresh Market
+
+> Furniture Factory
+
+> Gabriel De vega
+
+> Gabriel Molinares
+
+> Garrity Stone Inc.
+
+> Gas Lamp Insurance
+
+> Gaston
+
+> Geico
+
+> GetGo
+
+> Gilberto Gutierrez
+
+> Gill's Mart
+
+> Girls School
+
+> Glendale Town Center
+
+> Gofundme
+
+> Golden Corral
+
+> Golo Express Mart
+
+> Gonzales Auto Parts
+
+> Google
+
+> Gorda
+
+> Greenfield Transfer Station
+
+> Greenway Dumpster
+
+> Gustavo Hichos
+
+> Hacienda
+
+> Hampton Inn
+
+> Hardee's
+
+> Hector Miranda Caballero
+
+> Hector R
+
+> Hilton
+
+> Hobby Lobby
+
+> Holiday Inn
+
+> Home Depot
+
+> Home Depot Credit Card CitiBank
+
+> Homewood Suites
+
+> Hoosier Gasway
+
+> Hoosier Hauler LLC
+
+> Hoosier Mart
+
+> Hooters
+
+> Hot Cakes Emporium
+
+> Ice Cream World LLC
+
+> IHOP
+
+> IKEA
+
+> IMC tires & Mufflers inc
+
+> IMI
+
+> IN BMV
+
+> Indiana Department of Revenue
+
+> Indiana Mulch
+
+> Indiana State Fairgrounds
+
+> Indy Fuds LLC
+
+> Indy Fuel Mart
+
+> Indy Zoo
+
+> Internal Revenue Service (IRS)
+
+> IPL
+
+> J's Lobster
+
+> Jack's Liquor
+
+> Jack's Place
+
+> JBG
+
+> JD Sports
+
+> Jeff Smeltzer
+
+> Jensen Pawn Greenfield
+
+> Jimenez Mr Discount Flooring
+
+> Jiminez
+
+> Jimmy Johns
+
+> Jireh Barber Shop & Salon
+
+> JM Mechanic Services
+
+> Joao Martinez
+
+> Job Site Supply
+
+> Joe's Junction
+
+> Joel Velasquez
+
+> Joes Junkyard
+
+> Jonathon Santos
+
+> Jorge Ruiz
+
+> Jose F Roman (Cheche)
+
+> Jose Lara Coreas
+
+> Jose Miguel Sarate Vidrious
+
+> JSS English
+
+> Juan Manuel Garcia Hermenejildo
+
+> Juan Quintero
+
+> Juan Traila
+
+> Juan Villatoro
+
+> Julio Salinas
+
+> Julio Zamora F
+
+> K Town Korean BBQ
+
+> Kayla
+
+> Kenjo Market
+
+> KFC
+
+> Kids Foot Locker
+
+> King Ribs Bar-B-Q
+
+> King's Wok
+
+> Kohl's
+
+> Kopetsky's Full Service Carwash
+
+> Kroger
+
+> Kroger Fuel
+
+> Kwik Mart
+
+> La Cuanquita
+
+> La Escollera Mexican
+
+> La Furia
+
+> La Guanaquita Restaurante
+
+> La Hacienda Mexican
+
+> La Mexicana
+
+> La Mexicana restaurant
+
+> La Michoacana
+
+> La Parada
+
+> La Posada
+
+> Lauritas Carnaval
+
+> LC Drywall LLC
+
+> Le Peep
+
+> Legend Oil
+
+> Leonardo's Mexican Food
+
+> LGW Restoration
+
+> lincoln square
+
+> Lions of Punja
+
+> LiquorLand
+
+> Little Caesars
+
+> Llantera El Pacifico
+
+> Loco Mexican Restuarant
+
+> Los 3 hermanos
+
+> Los Chilaquiles
+
+> Los Dos Hermanos
+
+> Los Malcajetes 2
+
+> Los Rancheros
+
+> Lowes
+
+> Lucianas
+
+> Lucky
+
+> Luis Guerrero
+
+> LUZ LANDEROS
+
+> Macario Roman
+
+> Mach 1 Food Shop
+
+> Macy's
+
+> Maki Japan
+
+> Mama Ines
+
+> Marathon
+
+> Marathon 38 str
+
+> Marbella Taboada
+
+> Marco Guzman
+
+> Marco's Pizza
+
+> Maria Garcia
+
+> Maricela
+
+> Marriot
+
+> Marshall's
+
+> Maruti Nandan
+
+> Mattress Firm
+
+> Mayra
+
+> Mcclure oil
+
+> McDonald's
+
+> Mega Furniture
+
+> Meijer
+
+> Menards
+
+> Mexicanas Supermarket
+
+> Mi Barrio Supreme
+
+> Mi Hacienda Mexican
+
+> Michael Blair
+
+> Michael Luvia
+
+> Michigan Quick
+
+> Microsoft
+
+> Midday Deli
+
+> Midland
+
+> Miguel Perez JR
+
+> Milton Uriel Siles Zeledon
+
+> Ming Jiang
+
+> Mini Food & Market
+
+> MLK Marathon
+
+> Mobile Food Mart
+
+> Modern Building Supply INC
+
+> Monte De Dios
+
+> Morelos
+
+> Mower Outlet LLC
+
+> My Gas Station
+
+> Myhelo
+
+> Nada
+
+> Napa Auto Parts
+
+> NATALIA MARTINEZ
+
+> Netflix
+
+> Neveria Y Tamales Alpha
+
+> New Taste Buffet
+
+> Neyrot Isidro Brito Ramirez
+
+> Northwest Radiology
+
+> Northwood Liquor
+
+> Oaxaca Restaurant
+
+> Olive Garden
+
+> Oliver Family
+
+> onstart
+
+> Oreilly Auto Parts
+
+> original pancake
+
+> Orthoindy
+
+> Oscar Lara
+
+> Osman Olvera Meza
+
+> Our Store
+
+> Outback
+
+> Pacer's Athletic
+
+> Pagoda
+
+> Panera Bread
+
+> Papa John's
+
+> Parm Foodmart
+
+> Pasteleria Gresil
+
+> Pastora
+
+> Patriotic Fireworks
+
+> Patry Chche
+
+> Payless Liquors Inc
+
+> Pep Boys
+
+> Philadelphia Steak & Fries
+
+> Phillips 66
+
+> Pico De Gallo
+
+> Pike Food Mart
+
+> Pilot
+
+> Pizza Hut
+
+> PNC
+
+> Pollo Michoacano 2 LLC
+
+> Popeye's
+
+> Post Mart
+
+> Prime Video
+
+> pro tax and accounting
+
+> ProBuild
+
+> Prospect Food
+
+> Qdoba
+
+> QiAlly LLC
+
+> Quick Stop
+
+> QuickBooks Payments
+
+> QuikTrip
+
+> R and M Finisher Drywall LLC
+
+> Ramiro Hernandez
+
+> Raul
+
+> Raymond St
+
+> red habanero
+
+> Red Lobster
+
+> Red Wing
+
+> Reese Central Wholesale
+
+> Rene Bautista
+
+> Rickers
+
+> Ricks Cafe
+
+> Riley Garage
+
+> Ritter Frozen
+
+> RODRIGO ROMAN FLORES
+
+> Roger & Holland Jewery
+
+> Roger Bolender
+
+> Rolando
+
+> Roller City
+
+> Roman Valverde
+
+> Roses Store
+
+> Rufus Sa
+
+> Safeway
+
+> Saida Boyzo
+
+> Sams Club
+
+> Sandman Brothers, Inc.
+
+> Santana Guzman Infante
+
+> Saul Goode Industries
+
+> Sergio Vasquez
+
+> Servicios Rice-Velasquez
+
+> Shell
+
+> Sherwin williams
+
+> Shopfund.com
+
+> Singhs Foods
+
+> Sloomoo Institute
+
+> Smiley Entertainment
+
+> South Side Landfill, INC
+
+> Southwest Airlines
+
+> Sparkling Image
+
+> Speedway
+
+> Square Inc
+
+> SRM Concrete Ky
+
+> St Jude
+
+> Staples
+
+> Starbuck's
+
+> Steak 'n Shake
+
+> Steak City
+
+> Subway
+
+> Sun Mart
+
+> Sunoco
+
+> Sunrise Petroleum
+
+> Sunshine Breakfast and Grill
+
+> Super China Buffet
+
+> Super Morelos
+
+> Supermart El Torrito
+
+> Taco Bell
+
+> Tacopolis
+
+> Tacos Mobil el Guero
+
+> Take 5 Oil
+
+> Taqueria 3 Brothers
+
+> Taqueria El Hermano
+
+> Taqueria El Mague
+
+> Taqueria La Chela
+
+> Taqueria Veracruz LLC
+
+> Target
+
+> Tavern
+
+> TBA & Oil Warehouse
+
+> Tell Total Wine
+
+> Temple Rents, Inc
+
+> Tex Mex Supermarket
+
+> TGI Friday's
+
+> The Home Depot
+
+> The Mower Outlet
+
+> Thortons
+
+> Tienda Mexican El
+
+> Tiffany Lawn & Garden
+
+> TJ Maxx
+
+> Todo De Piel
+
+> Tomas Garcia Valentin
+
+> Tommys Drywall
+
+> Tortas El Guero
+
+> Tortas Futbol
+
+> Tractor Supply
+
+> U-Haul
+
+> Uber
+
+> Ulises Ramirez
+
+> Uncle Bills Pets
+
+> Valverde, Ramon
+
+> Venmo
+
+> Venus Beauty Salon
+
+> Verde Flavors
+
+> Verna Compa
+
+> Victor Bro
+
+> Victor Lara
+
+> Victoria Secret
+
+> Vidal Santiago Luciano
+
+> Village Liquor
+
+> Village Pantry
+
+> Village Pub
+
+> Villiarrubia Rosenburger
+
+> Waffle House
+
+> Walgreens
+
+> Walmart
+
+> Walmart Plus
+
+> Wendy's
+
+> Westside Loan Co.
+
+> White Castle
+
+> White River Recycling and Transfer Station
+
+> Wof Foods Kansas
+
+> Wonder Wu
+
+> Wood Grill Buffet
+
+> Woodland Bowl Inc
+
+> Xpress Mart
+
+> Yolk
+
+> Yong's Audio
+
+> Yoselin Flores
+
+> Yoya Frozen Yogurt
+
+> Yummy Crab
+
+> Zales
+
+> Zaxby's Restaurant
+
 > Zumiez
 
 ### Assistant

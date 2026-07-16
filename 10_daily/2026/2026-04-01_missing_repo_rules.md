@@ -3,9 +3,9 @@ layout: page
 title: "Missing Repo Rules"
 slug: "missing_repo_rules"
 created_at: "2026-04-01 16:34:18"
-updated_at: "2026-04-01 16:34:18"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,13 +39,20 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> what rules are we missing here. rules:
->   - id: RR-001
->     name: Single Source of Truth
->     description: This repo is the single canonical source of truth for architecture.
-> 
->   - id: RR-002
->     name: YAML Constraints
+> what rules are we missing here. rules:
+
+>   - id: RR-001
+
+>     name: Single Source of Truth
+
+>     description: This repo is the single canonical source of truth for architecture.
+
+> 
+
+>   - id: RR-002
+
+>     name: YAML Constraints
+
 >     description: Machine-readable constraints must go in standards/ or registry/.
 
 ### Assistant
@@ -319,126 +326,246 @@ canonical_ref: ""
 ### User
 > {'asset_pointer': 'sediment://file_000000008b2471fba907c74194ebbd6c', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 930, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 45387, 'width': 360}so should my master blueprint actually just be inside docs/*
 > 
-> ```markdown
-> . 📂 _qios_master_blueprint
-> └── 📂 00_genesis/
-> └── 📂 01_governance/
-> │  ├── 📄 agent_rules.md
-> │  ├── 📄 decisions.md
-> │  ├── 📄 index.md
-> │  ├── 📄 policies.md
-> │  ├── 📄 principles.md
-> │  ├── 📄 registry.md
-> │  ├── 📄 standards.md
-> └── 📂 02_architecture/
-> │  ├── 📄 component_map.md
-> │  ├── 📄 data_flow.md
-> │  ├── 📄 device_model.md
-> │  ├── 📄 identity.md
-> │  ├── 📄 index.md
-> │  ├── 📄 runtime_zones.md
-> │  ├── 📄 service_boundaries.md
-> │  ├── 📄 system_model.md
-> └── 📂 03_structure/
-> │  ├── 📄 bands.md
-> │  ├── 📄 directory_tree.md
-> │  ├── 📄 domains.md
-> │  ├── 📄 index.md
-> │  ├── 📄 namespace_registry.md
-> │  ├── 📄 object_model.md
-> │  ├── 📄 placement_rules.md
-> │  ├── 📄 subdomains.md
-> └── 📂 04_data/
-> │  ├── 📄 exports.md
-> │  ├── 📄 index.md
-> │  ├── 📄 metadata.md
-> │  ├── 📄 objects.md
-> │  ├── 📄 qievidence.md
-> │  ├── 📄 schema.md
-> │  ├── 📄 storage.md
-> └── 📂 05_compute/
-> │  ├── 📄 apis.md
-> │  ├── 📄 index.md
-> │  ├── 📄 integrations.md
-> │  ├── 📄 pipelines.md
-> │  ├── 📄 runtime.md
-> │  ├── 📄 tech_stack.md
-> │  ├── 📄 workers.md
-> └── 📂 06_applications/
-> │  └── 📂 01_web/
-> │  ├── 📄 admin.md
-> │  ├── 📄 index.md
-> │  ├── 📄 interfaces.md
-> │  ├── 📄 portal.md
-> │  ├── 📄 tools.md
-> │  ├── 📄 web.md
-> └── 📂 07_operations/
-> │  ├── 📄 cases.md
-> │  ├── 📄 clients.md
-> │  ├── 📄 finance.md
-> │  ├── 📄 index.md
-> │  ├── 📄 products.md
-> │  ├── 📄 templates.md
-> └── 📂 adr/
-> │  ├── 📄 ADR-0000_template.md
-> │  ├── 📄 ADR-0001-blueprint-scope.md
-> │  ├── 📄 ADR-0001_blueprint_scope.md
-> │  ├── 📄 ADR-0002-single-domain-rule.md
-> │  ├── 📄 ADR-0002_single_domain_rule.md
-> │  ├── 📄 ADR-0003-band-model.md
-> │  ├── 📄 ADR-0003_band_model.md
-> │  ├── 📄 ADR-0004-qilabs-root.md
-> │  ├── 📄 ADR-0004_qilabs_root.md
-> │  ├── 📄 ADR-0005-hosted-fleet-orchestration.md
-> │  ├── 📄 ADR-0005_fleet_orchestration.md
-> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
-> │  ├── 📄 update-adr.md
-> └── 📂 appendices/
-> │  ├── 📄 changelog.md
-> │  ├── 📄 glossary.md
-> │  ├── 📄 legacy_csv_inventory.json
-> │  ├── 📄 legacy_csv_migration_plan.md
-> │  ├── 📄 legacy_salvage.md
-> │  ├── 📄 migration_notes.md
-> └── 📂 assets/
-> │  ├── 📄 _QiOS_Master_Document.jpg
-> │  └── 📂 diagrams/
-> │  └── 📂 tables/
-> ├── 📄 index.md
-> └── 📂 logs/
-> ├── 📄 main.py
-> ├── 📄 markmind.html
-> ├── 📄 mkdocs.yml
-> └── 📂 overrides/
-> │  ├── 📄 home.html
-> └── 📂 registry/
-> │  ├── 📄 band_registry.yaml
-> │  ├── 📄 deprecation_registry.yaml
-> │  ├── 📄 domain_registry.yaml
-> │  ├── 📄 folder_registry.yaml
-> │  ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │  ├── 📄 qios_05_Cursor_and_naming.canvas
-> │  ├── 📄 realms_registry.yaml
-> │  ├── 📄 sensitivity_classification.yaml
-> │  ├── 📄 subdomain_registry.yaml
-> │  ├── 📄 workspace_realms.yaml
-> └── 📂 schemas/
-> │  ├── 📄 band_registry.schema.json
-> │  ├── 📄 qievidence.sql
-> └── 📂 scripts/
-> │  ├── 📄 enforce_structure.py
-> └── 📂 standards/
-> │  ├── 📄 content_metadata_profile.yaml
-> │  ├── 📄 metadata_rules.yaml
-> │  ├── 📄 naming_rules.yaml
-> │  ├── 📄 pdf_standards.yaml
-> │  ├── 📄 repo_rules.yaml
-> └── 📂 stylesheets/
-> │  ├── 📄 extra.css
-> └── 📂 templates/
-> │  ├── 📄 README.md
-> │  ├── 📄 artifact_template.md
-> │  └── 📄 note_template.md
+> ```markdown
+
+> . 📂 _qios_master_blueprint
+
+> └── 📂 00_genesis/
+
+> └── 📂 01_governance/
+
+> │  ├── 📄 agent_rules.md
+
+> │  ├── 📄 decisions.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 policies.md
+
+> │  ├── 📄 principles.md
+
+> │  ├── 📄 registry.md
+
+> │  ├── 📄 standards.md
+
+> └── 📂 02_architecture/
+
+> │  ├── 📄 component_map.md
+
+> │  ├── 📄 data_flow.md
+
+> │  ├── 📄 device_model.md
+
+> │  ├── 📄 identity.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 runtime_zones.md
+
+> │  ├── 📄 service_boundaries.md
+
+> │  ├── 📄 system_model.md
+
+> └── 📂 03_structure/
+
+> │  ├── 📄 bands.md
+
+> │  ├── 📄 directory_tree.md
+
+> │  ├── 📄 domains.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 namespace_registry.md
+
+> │  ├── 📄 object_model.md
+
+> │  ├── 📄 placement_rules.md
+
+> │  ├── 📄 subdomains.md
+
+> └── 📂 04_data/
+
+> │  ├── 📄 exports.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 metadata.md
+
+> │  ├── 📄 objects.md
+
+> │  ├── 📄 qievidence.md
+
+> │  ├── 📄 schema.md
+
+> │  ├── 📄 storage.md
+
+> └── 📂 05_compute/
+
+> │  ├── 📄 apis.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 integrations.md
+
+> │  ├── 📄 pipelines.md
+
+> │  ├── 📄 runtime.md
+
+> │  ├── 📄 tech_stack.md
+
+> │  ├── 📄 workers.md
+
+> └── 📂 06_applications/
+
+> │  └── 📂 01_web/
+
+> │  ├── 📄 admin.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 interfaces.md
+
+> │  ├── 📄 portal.md
+
+> │  ├── 📄 tools.md
+
+> │  ├── 📄 web.md
+
+> └── 📂 07_operations/
+
+> │  ├── 📄 cases.md
+
+> │  ├── 📄 clients.md
+
+> │  ├── 📄 finance.md
+
+> │  ├── 📄 index.md
+
+> │  ├── 📄 products.md
+
+> │  ├── 📄 templates.md
+
+> └── 📂 adr/
+
+> │  ├── 📄 ADR-0000_template.md
+
+> │  ├── 📄 ADR-0001-blueprint-scope.md
+
+> │  ├── 📄 ADR-0001_blueprint_scope.md
+
+> │  ├── 📄 ADR-0002-single-domain-rule.md
+
+> │  ├── 📄 ADR-0002_single_domain_rule.md
+
+> │  ├── 📄 ADR-0003-band-model.md
+
+> │  ├── 📄 ADR-0003_band_model.md
+
+> │  ├── 📄 ADR-0004-qilabs-root.md
+
+> │  ├── 📄 ADR-0004_qilabs_root.md
+
+> │  ├── 📄 ADR-0005-hosted-fleet-orchestration.md
+
+> │  ├── 📄 ADR-0005_fleet_orchestration.md
+
+> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
+
+> │  ├── 📄 update-adr.md
+
+> └── 📂 appendices/
+
+> │  ├── 📄 changelog.md
+
+> │  ├── 📄 glossary.md
+
+> │  ├── 📄 legacy_csv_inventory.json
+
+> │  ├── 📄 legacy_csv_migration_plan.md
+
+> │  ├── 📄 legacy_salvage.md
+
+> │  ├── 📄 migration_notes.md
+
+> └── 📂 assets/
+
+> │  ├── 📄 _QiOS_Master_Document.jpg
+
+> │  └── 📂 diagrams/
+
+> │  └── 📂 tables/
+
+> ├── 📄 index.md
+
+> └── 📂 logs/
+
+> ├── 📄 main.py
+
+> ├── 📄 markmind.html
+
+> ├── 📄 mkdocs.yml
+
+> └── 📂 overrides/
+
+> │  ├── 📄 home.html
+
+> └── 📂 registry/
+
+> │  ├── 📄 band_registry.yaml
+
+> │  ├── 📄 deprecation_registry.yaml
+
+> │  ├── 📄 domain_registry.yaml
+
+> │  ├── 📄 folder_registry.yaml
+
+> │  ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │  ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │  ├── 📄 realms_registry.yaml
+
+> │  ├── 📄 sensitivity_classification.yaml
+
+> │  ├── 📄 subdomain_registry.yaml
+
+> │  ├── 📄 workspace_realms.yaml
+
+> └── 📂 schemas/
+
+> │  ├── 📄 band_registry.schema.json
+
+> │  ├── 📄 qievidence.sql
+
+> └── 📂 scripts/
+
+> │  ├── 📄 enforce_structure.py
+
+> └── 📂 standards/
+
+> │  ├── 📄 content_metadata_profile.yaml
+
+> │  ├── 📄 metadata_rules.yaml
+
+> │  ├── 📄 naming_rules.yaml
+
+> │  ├── 📄 pdf_standards.yaml
+
+> │  ├── 📄 repo_rules.yaml
+
+> └── 📂 stylesheets/
+
+> │  ├── 📄 extra.css
+
+> └── 📂 templates/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 artifact_template.md
+
+> │  └── 📄 note_template.md
+
 > ```
 > 
 > so lets do a quick alignment with the new subfolders etc.
@@ -1557,97 +1684,186 @@ canonical_ref: ""
 > - `docs/01_governance/metadata_policy.md`
 
 ### User
-> ok to confirm, there nothing in these file we should keep either i can remove them? prop_name,type,options,required,default,description
-> title,string,,true,,Human-readable title of the node.
-> slug,string,lowercase_underscored,true,,"Unique filename-safe identifier (lowercase, underscores)."
-> realm,string,"QiPersonal|QiBusiness|QiClients|QiVault|QiPlayground|QiResearch|QiTemp|Archives|QiPublish|QiLegal",true,,Meaning universe this node belongs to.
-> realm_slug,string,,false,,"Specific realm instance (e.g., inh, punchpro, qios, genesis)."
-> qi_decimal,string,##.##.##-TYPE,false,,Sorting + categorical identity code.
-> qid,string,,false,,"Autopopulated immutable node ID claimed from qid_counter via Layer 5 worker."
-> type,string,"doc|asset|schema|workflow|worker|rule|site|project",true,doc,Object class in QiOS ontology.
-> node,string,"concept|file|asset|rule|task|entity",true,concept,Graph classification.
-> keywords,array[string],,false,[],Search and retrieval descriptors.
-> tags,array[string],,false,[],Organizational tags for grouping/filtering.
-> context,string,,false,,Short semantic context for routing/RAG.
-> aliases,array[string],,false,[],Alternative names for lookup/backlinks.
-> created,datetime,,true,,Creation timestamp (system-generated).
-> updated,datetime,,true,,Last modification timestamp.
-> version,string,semver,false,0.0.0,Semantic version number.
-> status,string,"draft|active|canonical|archived",false,draft,Lifecycle state.
-> system,string,"qinote|qios|qiclient|qipersonal|realm-local",false,realm-local,Logical subsystem grouping label.
-> naming_strategy,string,"slug_only|qidecimal_slug",false,slug_only,Filename generation strategy.
-> sort,number,,false,0,Manual sorting override for tables/lists.
-> related,array[string],,false,[],QIDs of related nodes.
-> parents,array[string],,false,[],Parent nodes in graph.
-> children,array[string],,false,[],Child nodes in graph.
-> siblings,array[string],,false,[],Peer nodes in graph.
-> references,array[string],,false,[],External references or citations.
-> graph_weight,number,1-10,false,1,Importance weighting in QiGraph.
-> orbit,string,"core|inner|mid|outer",false,mid,Conceptual influence layer.
-> entangled,array[string],,false,[],Nodes with intrinsically linked identity.
-> summary,string,auto-generated,false,,"Auto-generated semantic summary (never manually edited)."
-> sensitivity,string,"public|internal|confidential|restricted|secret",false,,Visibility/privacy level for access/redaction.
+> ok to confirm, there nothing in these file we should keep either i can remove them? prop_name,type,options,required,default,description
+
+> title,string,,true,,Human-readable title of the node.
+
+> slug,string,lowercase_underscored,true,,"Unique filename-safe identifier (lowercase, underscores)."
+
+> realm,string,"QiPersonal|QiBusiness|QiClients|QiVault|QiPlayground|QiResearch|QiTemp|Archives|QiPublish|QiLegal",true,,Meaning universe this node belongs to.
+
+> realm_slug,string,,false,,"Specific realm instance (e.g., inh, punchpro, qios, genesis)."
+
+> qi_decimal,string,##.##.##-TYPE,false,,Sorting + categorical identity code.
+
+> qid,string,,false,,"Autopopulated immutable node ID claimed from qid_counter via Layer 5 worker."
+
+> type,string,"doc|asset|schema|workflow|worker|rule|site|project",true,doc,Object class in QiOS ontology.
+
+> node,string,"concept|file|asset|rule|task|entity",true,concept,Graph classification.
+
+> keywords,array[string],,false,[],Search and retrieval descriptors.
+
+> tags,array[string],,false,[],Organizational tags for grouping/filtering.
+
+> context,string,,false,,Short semantic context for routing/RAG.
+
+> aliases,array[string],,false,[],Alternative names for lookup/backlinks.
+
+> created,datetime,,true,,Creation timestamp (system-generated).
+
+> updated,datetime,,true,,Last modification timestamp.
+
+> version,string,semver,false,0.0.0,Semantic version number.
+
+> status,string,"draft|active|canonical|archived",false,draft,Lifecycle state.
+
+> system,string,"qinote|qios|qiclient|qipersonal|realm-local",false,realm-local,Logical subsystem grouping label.
+
+> naming_strategy,string,"slug_only|qidecimal_slug",false,slug_only,Filename generation strategy.
+
+> sort,number,,false,0,Manual sorting override for tables/lists.
+
+> related,array[string],,false,[],QIDs of related nodes.
+
+> parents,array[string],,false,[],Parent nodes in graph.
+
+> children,array[string],,false,[],Child nodes in graph.
+
+> siblings,array[string],,false,[],Peer nodes in graph.
+
+> references,array[string],,false,[],External references or citations.
+
+> graph_weight,number,1-10,false,1,Importance weighting in QiGraph.
+
+> orbit,string,"core|inner|mid|outer",false,mid,Conceptual influence layer.
+
+> entangled,array[string],,false,[],Nodes with intrinsically linked identity.
+
+> summary,string,auto-generated,false,,"Auto-generated semantic summary (never manually edited)."
+
+> sensitivity,string,"public|internal|confidential|restricted|secret",false,,Visibility/privacy level for access/redaction.
+
 > classification,string,"personal_health|personal_finance|legal|immigration|client_confidential|business_internal|marketing_public|system_darkmatter|other",false,,Domain classification for routing boosts and safe views.  
 > 
-> and this is something tied to the new blueprint any changes to make here, # Content Metadata Profile (Front Matter Schema)
-> #
-> # DOCTRINE:
-> # Content front matter is SUPPORTIVE METADATA, not the system of record.
-> # Canonical identity, schema placement, and routing truth ALWAYS come from 
-> # the database (QiArchive, qisys, qione, etc.). This profile normalizes the
-> # structure for flat files, notes, and assets.
-> 
-> profile: content_front_matter
-> version: 1.0.0
-> description: "Standardized front matter properties for content assets and notes."
-> 
-> fields:
->   title:
->     type: string
->     description: "Human readable title"
->     required: false
->   slug:
->     type: string
->     description: "URL-friendly string. Does not override canonical Q-ID routing."
->     required: false
->   aliases:
->     type: array
->     items: string
->     description: "Alternative titles or natural language handles."
->     required: false
->   tags:
->     type: array
->     items: string
->     description: "Semantic markers for discovery."
->     required: false
->   keywords:
->     type: array
->     items: string
->     description: "SEO or deep search keywords."
->     required: false
->   context:
->     type: string
->     description: "Brief reasoning or context statement."
->     required: false
->   status:
->     type: string
->     description: "Content draft/review state. Does NOT override canonical pipeline status."
->     required: false
->   sensitivity:
->     type: string
->     description: "Must map to registry/sensitivity_classification.yaml"
->     required: false
->   classification:
->     type: string
->     description: "Must map to registry/sensitivity_classification.yaml"
->     required: false
->   summary:
->     type: string
->     description: "AI or human-generated summary. Explicitly non-canonical."
->     required: false
->   realm_label:
->     type: string
->     description: "UI/Workspace categorizer. Does not dictate band or physical domain placement."
+> and this is something tied to the new blueprint any changes to make here, # Content Metadata Profile (Front Matter Schema)
+
+> #
+
+> # DOCTRINE:
+
+> # Content front matter is SUPPORTIVE METADATA, not the system of record.
+
+> # Canonical identity, schema placement, and routing truth ALWAYS come from 
+
+> # the database (QiArchive, qisys, qione, etc.). This profile normalizes the
+
+> # structure for flat files, notes, and assets.
+
+> 
+
+> profile: content_front_matter
+
+> version: 1.0.0
+
+> description: "Standardized front matter properties for content assets and notes."
+
+> 
+
+> fields:
+
+>   title:
+
+>     type: string
+
+>     description: "Human readable title"
+
+>     required: false
+
+>   slug:
+
+>     type: string
+
+>     description: "URL-friendly string. Does not override canonical Q-ID routing."
+
+>     required: false
+
+>   aliases:
+
+>     type: array
+
+>     items: string
+
+>     description: "Alternative titles or natural language handles."
+
+>     required: false
+
+>   tags:
+
+>     type: array
+
+>     items: string
+
+>     description: "Semantic markers for discovery."
+
+>     required: false
+
+>   keywords:
+
+>     type: array
+
+>     items: string
+
+>     description: "SEO or deep search keywords."
+
+>     required: false
+
+>   context:
+
+>     type: string
+
+>     description: "Brief reasoning or context statement."
+
+>     required: false
+
+>   status:
+
+>     type: string
+
+>     description: "Content draft/review state. Does NOT override canonical pipeline status."
+
+>     required: false
+
+>   sensitivity:
+
+>     type: string
+
+>     description: "Must map to registry/sensitivity_classification.yaml"
+
+>     required: false
+
+>   classification:
+
+>     type: string
+
+>     description: "Must map to registry/sensitivity_classification.yaml"
+
+>     required: false
+
+>   summary:
+
+>     type: string
+
+>     description: "AI or human-generated summary. Explicitly non-canonical."
+
+>     required: false
+
+>   realm_label:
+
+>     type: string
+
+>     description: "UI/Workspace categorizer. Does not dictate band or physical domain placement."
+
 >     required: false
 
 ### Assistant
@@ -3510,176 +3726,346 @@ canonical_ref: ""
 > After you export the updated tree, send it and I’ll do a hard alignment pass.
 
 ### User
-> first just hte tree. ```markdown
-> . 📂 _qios_master_blueprint
-> ├── 📄 README.md
-> └── 📂 adr/
-> │  ├── 📄 ADR-0000_template.md
-> │  ├── 📄 ADR-0001_blueprint_scope.md
-> │  ├── 📄 ADR-0002_single_domain_rule.md
-> │  ├── 📄 ADR-0003_band_model.md
-> │  ├── 📄 ADR-0004_qilabs_root.md
-> │  ├── 📄 ADR-0005_fleet_orchestration.md
-> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
-> │  ├── 📄 ADR-0007-unified-front-matter-and-progressive-doc-topology.md
-> │  ├── 📄 update-adr.md
-> └── 📂 docs/
-> │  └── 📂 00_genesis/
-> │    ├── 📄 index.md
-> │  └── 📂 01_governance/
-> │    └── 📂 10_foundation/
-> │      ├── 📄 principles.md
-> │    └── 📂 20_policy/
-> │      ├── 📄 agent_rules.md
-> │      ├── 📄 policies.md
-> │    └── 📂 30_standards/
-> │      ├── 📄 metadata_policy.md
-> │      ├── 📄 standards.md
-> │      ├── 📄 templates_policy.md
-> │    └── 📂 40_registry/
-> │      ├── 📄 registry.md
-> │    └── 📂 50_decisions/
-> │      ├── 📄 decisions.md
-> │    ├── 📄 index.md
-> │  └── 📂 02_architecture/
-> │    └── 📂 10_identity/
-> │      ├── 📄 identity.md
-> │    └── 📂 20_system/
-> │      ├── 📄 component_map.md
-> │      ├── 📄 system_model.md
-> │    └── 📂 30_runtime/
-> │      ├── 📄 device_model.md
-> │      ├── 📄 runtime_zones.md
-> │      ├── 📄 service_boundaries.md
-> │    └── 📂 40_flows/
-> │      ├── 📄 data_flow.md
-> │    ├── 📄 index.md
-> │  └── 📂 03_structure/
-> │    └── 📂 10_bands/
-> │      ├── 📄 bands.md
-> │    └── 📂 20_domains/
-> │      ├── 📄 domains.md
-> │    └── 📂 30_namespaces/
-> │      ├── 📄 namespace_registry.md
-> │      ├── 📄 subdomains.md
-> │    └── 📂 40_objects/
-> │      ├── 📄 directory_tree.md
-> │      ├── 📄 object_model.md
-> │      ├── 📄 placement_rules.md
-> │    ├── 📄 index.md
-> │  └── 📂 04_data/
-> │    └── 📂 10_schema/
-> │      ├── 📄 front_matter.md
-> │      ├── 📄 objects.md
-> │      ├── 📄 schema.md
-> │    └── 📂 20_metadata/
-> │      ├── 📄 metadata.md
-> │    └── 📂 30_storage/
-> │      ├── 📄 exports.md
-> │      ├── 📄 storage.md
-> │    └── 📂 40_domain_addenda/
-> │      ├── 📄 qievidence.md
-> │    ├── 📄 index.md
-> │  └── 📂 05_compute/
-> │    └── 📂 10_apis/
-> │      ├── 📄 apis.md
-> │    └── 📂 20_workers/
-> │      ├── 📄 workers.md
-> │    └── 📂 30_pipelines/
-> │      ├── 📄 pipelines.md
-> │    └── 📂 40_runtime/
-> │      ├── 📄 runtime.md
-> │    └── 📂 50_integrations/
-> │      ├── 📄 integrations.md
-> │    ├── 📄 index.md
-> │  └── 📂 06_applications/
-> │    └── 📂 10_web/
-> │      ├── 📄 web.md
-> │    └── 📂 20_portal/
-> │      ├── 📄 portal.md
-> │    └── 📂 30_admin/
-> │      ├── 📄 admin.md
-> │    └── 📂 40_tools/
-> │      ├── 📄 tools.md
-> │    └── 📂 50_interfaces/
-> │      ├── 📄 interfaces.md
-> │    ├── 📄 index.md
-> │  └── 📂 07_operations/
-> │    └── 📂 10_clients/
-> │      ├── 📄 clients.md
-> │    └── 📂 20_cases/
-> │      ├── 📄 cases.md
-> │    └── 📂 30_finance/
-> │      ├── 📄 finance.md
-> │    └── 📂 40_services/
-> │      ├── 📄 products.md
-> │    └── 📂 50_templates/
-> │      ├── 📄 templates.md
-> │    ├── 📄 index.md
-> │  └── 📂 08_appendices/
-> │    └── 📂 10_reference/
-> │      ├── 📄 glossary.md
-> │      ├── 📄 templates_catalog.md
-> │    └── 📂 20_legacy/
-> │      ├── 📄 legacy_csv_migration_plan.md
-> │      ├── 📄 legacy_salvage.md
-> │      ├── 📄 migration_notes.md
-> │    └── 📂 30_tech_stack/
-> │      ├── 📄 tech_stack.md
-> │    └── 📂 40_labs/
-> │  └── 📂 assets/
-> │    └── 📂 diagrams/
-> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
-> │      ├── 📄 qios_05_Cursor_and_naming.canvas
-> │    └── 📂 images/
-> │      ├── 📄 _QiOS_Master_Document.jpg
-> │    └── 📂 tables/
-> │  ├── 📄 index.md
-> └── 📂 logs/
-> │  ├── 📄 changelog.md
-> ├── 📄 main.py
-> ├── 📄 markmind.html
-> ├── 📄 mkdocs.yml
-> └── 📂 overrides/
-> │  ├── 📄 home.html
-> └── 📂 registry/
-> │  ├── 📄 band_registry.yaml
-> │  ├── 📄 deprecation_registry.yaml
-> │  ├── 📄 domain_registry.yaml
-> │  ├── 📄 folder_registry.yaml
-> │  ├── 📄 realms_registry.yaml
-> │  ├── 📄 sensitivity_classification.yaml
-> │  ├── 📄 subdomain_registry.yaml
-> │  ├── 📄 workspace_realms.yaml
-> └── 📂 schemas/
-> │  ├── 📄 band_registry.schema.json
-> └── 📂 scripts/
-> │  ├── 📄 enforce_structure.py
-> └── 📂 standards/
-> │  ├── 📄 content_metadata_profile.yaml
-> │  ├── 📄 metadata_rules.yaml
-> │  ├── 📄 naming_rules.yaml
-> │  ├── 📄 pdf_standards.yaml
-> │  ├── 📄 repo_rules.yaml
-> └── 📂 stylesheets/
-> │  ├── 📄 extra.css
-> └── 📂 templates/
-> │  ├── 📄 README.md
-> │  ├── 📄 tmp_adr_template.md
-> │  ├── 📄 tmp_appendix_template.md
-> │  ├── 📄 tmp_artifact_template.md
-> │  ├── 📄 tmp_note_template.md
-> │  ├── 📄 tmp_operational_template.md
-> │  ├── 📄 tmp_page_template.md
-> │  ├── 📄 tmp_registry_reference_template.md
-> │  └── 📂 tmp_section_folder/
-> │    └── 📂 10_overview/
-> │    └── 📂 20_models/
-> │    └── 📂 30_rules/
-> │    └── 📂 40_reference/
-> │    ├── 📄 index.md
-> │  ├── 📄 tmp_section_index_template.md
-> │  └── 📄 tmp_standard_template.md
+> first just hte tree. ```markdown
+
+> . 📂 _qios_master_blueprint
+
+> ├── 📄 README.md
+
+> └── 📂 adr/
+
+> │  ├── 📄 ADR-0000_template.md
+
+> │  ├── 📄 ADR-0001_blueprint_scope.md
+
+> │  ├── 📄 ADR-0002_single_domain_rule.md
+
+> │  ├── 📄 ADR-0003_band_model.md
+
+> │  ├── 📄 ADR-0004_qilabs_root.md
+
+> │  ├── 📄 ADR-0005_fleet_orchestration.md
+
+> │  ├── 📄 ADR-0006_narrative_and_knowledge_consolidation.md
+
+> │  ├── 📄 ADR-0007-unified-front-matter-and-progressive-doc-topology.md
+
+> │  ├── 📄 update-adr.md
+
+> └── 📂 docs/
+
+> │  └── 📂 00_genesis/
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 01_governance/
+
+> │    └── 📂 10_foundation/
+
+> │      ├── 📄 principles.md
+
+> │    └── 📂 20_policy/
+
+> │      ├── 📄 agent_rules.md
+
+> │      ├── 📄 policies.md
+
+> │    └── 📂 30_standards/
+
+> │      ├── 📄 metadata_policy.md
+
+> │      ├── 📄 standards.md
+
+> │      ├── 📄 templates_policy.md
+
+> │    └── 📂 40_registry/
+
+> │      ├── 📄 registry.md
+
+> │    └── 📂 50_decisions/
+
+> │      ├── 📄 decisions.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 02_architecture/
+
+> │    └── 📂 10_identity/
+
+> │      ├── 📄 identity.md
+
+> │    └── 📂 20_system/
+
+> │      ├── 📄 component_map.md
+
+> │      ├── 📄 system_model.md
+
+> │    └── 📂 30_runtime/
+
+> │      ├── 📄 device_model.md
+
+> │      ├── 📄 runtime_zones.md
+
+> │      ├── 📄 service_boundaries.md
+
+> │    └── 📂 40_flows/
+
+> │      ├── 📄 data_flow.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 03_structure/
+
+> │    └── 📂 10_bands/
+
+> │      ├── 📄 bands.md
+
+> │    └── 📂 20_domains/
+
+> │      ├── 📄 domains.md
+
+> │    └── 📂 30_namespaces/
+
+> │      ├── 📄 namespace_registry.md
+
+> │      ├── 📄 subdomains.md
+
+> │    └── 📂 40_objects/
+
+> │      ├── 📄 directory_tree.md
+
+> │      ├── 📄 object_model.md
+
+> │      ├── 📄 placement_rules.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 04_data/
+
+> │    └── 📂 10_schema/
+
+> │      ├── 📄 front_matter.md
+
+> │      ├── 📄 objects.md
+
+> │      ├── 📄 schema.md
+
+> │    └── 📂 20_metadata/
+
+> │      ├── 📄 metadata.md
+
+> │    └── 📂 30_storage/
+
+> │      ├── 📄 exports.md
+
+> │      ├── 📄 storage.md
+
+> │    └── 📂 40_domain_addenda/
+
+> │      ├── 📄 qievidence.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 05_compute/
+
+> │    └── 📂 10_apis/
+
+> │      ├── 📄 apis.md
+
+> │    └── 📂 20_workers/
+
+> │      ├── 📄 workers.md
+
+> │    └── 📂 30_pipelines/
+
+> │      ├── 📄 pipelines.md
+
+> │    └── 📂 40_runtime/
+
+> │      ├── 📄 runtime.md
+
+> │    └── 📂 50_integrations/
+
+> │      ├── 📄 integrations.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 06_applications/
+
+> │    └── 📂 10_web/
+
+> │      ├── 📄 web.md
+
+> │    └── 📂 20_portal/
+
+> │      ├── 📄 portal.md
+
+> │    └── 📂 30_admin/
+
+> │      ├── 📄 admin.md
+
+> │    └── 📂 40_tools/
+
+> │      ├── 📄 tools.md
+
+> │    └── 📂 50_interfaces/
+
+> │      ├── 📄 interfaces.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 07_operations/
+
+> │    └── 📂 10_clients/
+
+> │      ├── 📄 clients.md
+
+> │    └── 📂 20_cases/
+
+> │      ├── 📄 cases.md
+
+> │    └── 📂 30_finance/
+
+> │      ├── 📄 finance.md
+
+> │    └── 📂 40_services/
+
+> │      ├── 📄 products.md
+
+> │    └── 📂 50_templates/
+
+> │      ├── 📄 templates.md
+
+> │    ├── 📄 index.md
+
+> │  └── 📂 08_appendices/
+
+> │    └── 📂 10_reference/
+
+> │      ├── 📄 glossary.md
+
+> │      ├── 📄 templates_catalog.md
+
+> │    └── 📂 20_legacy/
+
+> │      ├── 📄 legacy_csv_migration_plan.md
+
+> │      ├── 📄 legacy_salvage.md
+
+> │      ├── 📄 migration_notes.md
+
+> │    └── 📂 30_tech_stack/
+
+> │      ├── 📄 tech_stack.md
+
+> │    └── 📂 40_labs/
+
+> │  └── 📂 assets/
+
+> │    └── 📂 diagrams/
+
+> │      ├── 📄 qios_04_rules_and_readmes.canvas.canvas
+
+> │      ├── 📄 qios_05_Cursor_and_naming.canvas
+
+> │    └── 📂 images/
+
+> │      ├── 📄 _QiOS_Master_Document.jpg
+
+> │    └── 📂 tables/
+
+> │  ├── 📄 index.md
+
+> └── 📂 logs/
+
+> │  ├── 📄 changelog.md
+
+> ├── 📄 main.py
+
+> ├── 📄 markmind.html
+
+> ├── 📄 mkdocs.yml
+
+> └── 📂 overrides/
+
+> │  ├── 📄 home.html
+
+> └── 📂 registry/
+
+> │  ├── 📄 band_registry.yaml
+
+> │  ├── 📄 deprecation_registry.yaml
+
+> │  ├── 📄 domain_registry.yaml
+
+> │  ├── 📄 folder_registry.yaml
+
+> │  ├── 📄 realms_registry.yaml
+
+> │  ├── 📄 sensitivity_classification.yaml
+
+> │  ├── 📄 subdomain_registry.yaml
+
+> │  ├── 📄 workspace_realms.yaml
+
+> └── 📂 schemas/
+
+> │  ├── 📄 band_registry.schema.json
+
+> └── 📂 scripts/
+
+> │  ├── 📄 enforce_structure.py
+
+> └── 📂 standards/
+
+> │  ├── 📄 content_metadata_profile.yaml
+
+> │  ├── 📄 metadata_rules.yaml
+
+> │  ├── 📄 naming_rules.yaml
+
+> │  ├── 📄 pdf_standards.yaml
+
+> │  ├── 📄 repo_rules.yaml
+
+> └── 📂 stylesheets/
+
+> │  ├── 📄 extra.css
+
+> └── 📂 templates/
+
+> │  ├── 📄 README.md
+
+> │  ├── 📄 tmp_adr_template.md
+
+> │  ├── 📄 tmp_appendix_template.md
+
+> │  ├── 📄 tmp_artifact_template.md
+
+> │  ├── 📄 tmp_note_template.md
+
+> │  ├── 📄 tmp_operational_template.md
+
+> │  ├── 📄 tmp_page_template.md
+
+> │  ├── 📄 tmp_registry_reference_template.md
+
+> │  └── 📂 tmp_section_folder/
+
+> │    └── 📂 10_overview/
+
+> │    └── 📂 20_models/
+
+> │    └── 📂 30_rules/
+
+> │    └── 📂 40_reference/
+
+> │    ├── 📄 index.md
+
+> │  ├── 📄 tmp_section_index_template.md
+
+> │  └── 📄 tmp_standard_template.md
+
 > ```
 
 ### Assistant
@@ -4220,72 +4606,138 @@ canonical_ref: ""
 > Send the README and the rebuilt tree export after you make the next pass, and I’ll do the double-check.
 
 ### User
-> # 🌌 QiOS Master Blueprint
-> 
-> > **The Constitutional Source of Truth for the QiLabs Ecosystem.**
-> 
-> This repository serves as the definitive, machine-enforceable blueprint for the **QiOS** architecture. It governs the relationship between Core, Platform, and Domain bands, ensuring strict tenant isolation, data integrity, and a unified narrative ontology across all projects.
-> 
-> ---
-> 
-> ## 🏗️ Canonical Layers
-> 
-> The blueprint is organized into specialized layers of authority:
-> 
-> - **[`docs/`](docs/)**: The rendered doctrine. Human-readable architectural guides, policies, and system models.
-> - **[`adr/`](adr/)**: **Architecture Decision Records**. The historical log of "Why" decisions were made, superseding or informing current states.
-> - **[`standards/`](standards/)**: Technical specifications and mandatory constraints (e.g., Metadata Profile, Naming Rules).
-> - **[`registry/`](registry/)**: The system's flat-file "Database of Truth" for domains, bands, and workspace realms.
-> - **[`schemas/`](schemas/)**: JSON/YAML schemas used to validate the registry and structure.
-> 
-> ---
-> 
-> ## ⚡ Automation & Enforcement
-> 
-> The blueprint is not just documentation; it is **actively enforced** through a suite of Python-based utilities:
-> 
-> - **[`rebuild.bat`](rebuild.bat)**: The primary entry point. Runs normalization, structural enforcement, and site builds in sequence.
-> - **`scripts/normalize_front_matter.py`**: Ensures all Markdown files adhere to the [Universal Metadata Profile](standards/content_metadata_profile.yaml).
-> - **`scripts/enforce_structure.py`**: Validates the physical file tree against the `registry/` and `schemas/`.
-> - **`scripts/generate_markmind.py`**: Automatically updates the visual `markmind.html` map based on the current navigation.
-> 
-> ---
-> 
-> ## 🛠️ Development & Publishing
-> 
-> ### Prerequisites
-> - Python 3.10+
-> - MKDocs with the Material theme (`pip install mkdocs-material`)
-> 
-> ### The Rebuild Loop
-> 1. **Modify**: Update docs, standards, or registry files.
-> 2. **Execute**: Run `rebuild.bat` from the root.
-> 3. **Verify**: Check the terminal output for validation errors.
-> 4. **View**: Launch `mkdocs serve` to preview the modern, Apple-slick documentation site locally.
-> 
-> ---
-> 
-> ## 🧭 Navigation Reference
-> 
-> | Section | Description |
-> | :--- | :--- |
-> | **01 Governance** | Constitutional laws, policy, and human-AI interaction rules. |
-> | **02 Architecture** | Identity models, system components, and runtime zones. |
-> | **03 Structure** | The 3-Band model, Domain rules, and Namespace/Object registries. |
-> | **04 Data** | Schema definitions, Storage doctrine, and Metadata standards. |
-> | **05 Compute** | Worker logic, API patterns, and Ingestion pipelines. |
-> | **06 Applications** | Portal, Admin, and Tooling interfaces. |
-> | **07 Operations** | Client management, Case workflows, and Financial services. |
-> 
-> ---
-> 
-> ## ⚠️ Troubleshooting
-> 
-> - **Validation Fails**: If `enforce_structure.py` errors, check that your new files are registered in the appropriate `registry/*.yaml` file.
-> - **Front Matter Drift**: Run the normalization script with the `--check` flag to identify files violating the metadata standard.
-> - **Theme Issues**: Custom CSS is located in `stylesheets/extra.css`. Ensure `mkdocs.yml` hasn't been corrupted.
-> 
-> ---
+> # 🌌 QiOS Master Blueprint
+
+> 
+
+> > **The Constitutional Source of Truth for the QiLabs Ecosystem.**
+
+> 
+
+> This repository serves as the definitive, machine-enforceable blueprint for the **QiOS** architecture. It governs the relationship between Core, Platform, and Domain bands, ensuring strict tenant isolation, data integrity, and a unified narrative ontology across all projects.
+
+> 
+
+> ---
+
+> 
+
+> ## 🏗️ Canonical Layers
+
+> 
+
+> The blueprint is organized into specialized layers of authority:
+
+> 
+
+> - **[`docs/`](docs/)**: The rendered doctrine. Human-readable architectural guides, policies, and system models.
+
+> - **[`adr/`](adr/)**: **Architecture Decision Records**. The historical log of "Why" decisions were made, superseding or informing current states.
+
+> - **[`standards/`](standards/)**: Technical specifications and mandatory constraints (e.g., Metadata Profile, Naming Rules).
+
+> - **[`registry/`](registry/)**: The system's flat-file "Database of Truth" for domains, bands, and workspace realms.
+
+> - **[`schemas/`](schemas/)**: JSON/YAML schemas used to validate the registry and structure.
+
+> 
+
+> ---
+
+> 
+
+> ## ⚡ Automation & Enforcement
+
+> 
+
+> The blueprint is not just documentation; it is **actively enforced** through a suite of Python-based utilities:
+
+> 
+
+> - **[`rebuild.bat`](rebuild.bat)**: The primary entry point. Runs normalization, structural enforcement, and site builds in sequence.
+
+> - **`scripts/normalize_front_matter.py`**: Ensures all Markdown files adhere to the [Universal Metadata Profile](standards/content_metadata_profile.yaml).
+
+> - **`scripts/enforce_structure.py`**: Validates the physical file tree against the `registry/` and `schemas/`.
+
+> - **`scripts/generate_markmind.py`**: Automatically updates the visual `markmind.html` map based on the current navigation.
+
+> 
+
+> ---
+
+> 
+
+> ## 🛠️ Development & Publishing
+
+> 
+
+> ### Prerequisites
+
+> - Python 3.10+
+
+> - MKDocs with the Material theme (`pip install mkdocs-material`)
+
+> 
+
+> ### The Rebuild Loop
+
+> 1. **Modify**: Update docs, standards, or registry files.
+
+> 2. **Execute**: Run `rebuild.bat` from the root.
+
+> 3. **Verify**: Check the terminal output for validation errors.
+
+> 4. **View**: Launch `mkdocs serve` to preview the modern, Apple-slick documentation site locally.
+
+> 
+
+> ---
+
+> 
+
+> ## 🧭 Navigation Reference
+
+> 
+
+> | Section | Description |
+
+> | :--- | :--- |
+
+> | **01 Governance** | Constitutional laws, policy, and human-AI interaction rules. |
+
+> | **02 Architecture** | Identity models, system components, and runtime zones. |
+
+> | **03 Structure** | The 3-Band model, Domain rules, and Namespace/Object registries. |
+
+> | **04 Data** | Schema definitions, Storage doctrine, and Metadata standards. |
+
+> | **05 Compute** | Worker logic, API patterns, and Ingestion pipelines. |
+
+> | **06 Applications** | Portal, Admin, and Tooling interfaces. |
+
+> | **07 Operations** | Client management, Case workflows, and Financial services. |
+
+> 
+
+> ---
+
+> 
+
+> ## ⚠️ Troubleshooting
+
+> 
+
+> - **Validation Fails**: If `enforce_structure.py` errors, check that your new files are registered in the appropriate `registry/*.yaml` file.
+
+> - **Front Matter Drift**: Run the normalization script with the `--check` flag to identify files violating the metadata standard.
+
+> - **Theme Issues**: Custom CSS is located in `stylesheets/extra.css`. Ensure `mkdocs.yml` hasn't been corrupted.
+
+> 
+
+> ---
+
 > *© 2026 QiLabs. All rights reserved. Internal Use Only.*
 
 ### Assistant

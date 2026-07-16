@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 01 Ai Service Contracts
-slug: ""
+slug: 01-ai-service-contracts
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: d928f7ea2df24998b64be9a9d8b5494d
 canonical_ref: ""
 source_type: manual
 template_key: master-template

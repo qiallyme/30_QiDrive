@@ -3,14 +3,14 @@ layout: page
 title: Event: Cody seeks urgent care-support escalation language
 slug: cody-seeks-urgent-care-support-escalation-language
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - system-failure-care-coordination
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 2b8950edf1934e95adc09c94eeff2379
 canonical_ref: ""
 template_key: master-template
 ---

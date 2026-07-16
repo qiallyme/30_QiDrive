@@ -4,9 +4,9 @@ title: Dr. Martha Beck - This Weird Trick Reduces Anxiety & Fixed My Childhood T
 slug: dr-martha-beck-anxiety-trauma-interview
 summary: Interview transcript with Dr. Martha Beck discussing anxiety reduction techniques, brain science, trauma recovery, and finding purpose. Includes practical exercises and the CAT (Calm, Art, Transcendence) process.
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 owner: q
-tags:
+tags: []
   - realm-kb
   - interview
   - psychology
@@ -20,7 +20,7 @@ tags:
   - martha-beck
   - diary-of-a-ceo
   - empowerqnow713
-keywords:
+keywords: []
   - intake
 source_type: manual
 realm: knowledge
@@ -40,14 +40,14 @@ file_doc_type: interview
 node_type: kb
 file_name: dr-martha-beck-anxiety-trauma-interview
 parent: 0
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 aliases: []
 context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 47ce87e066cf4ad0bc08bb0ed8eaa874
 canonical_ref: ""
 template_key: master-template
 ---

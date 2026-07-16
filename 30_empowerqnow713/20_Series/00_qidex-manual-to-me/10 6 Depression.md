@@ -1,3 +1,26 @@
+---
+layout: page
+title: 10 6 Depression
+slug: 10-6-depression
+summary: ""
+status: active
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: bfc61b465cef4bd0b57d8ab340d4e65d
+canonical_ref: ""
+source_type: manual
+template_key: master-template
+---
+
 # 10.6 Depression
 
 <aside>

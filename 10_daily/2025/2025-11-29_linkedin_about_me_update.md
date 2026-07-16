@@ -3,9 +3,9 @@ layout: page
 title: "LinkedIn About Me update"
 slug: "linkedin_about_me_update"
 created_at: "2025-11-29 00:15:16"
-updated_at: "2025-11-29 00:15:16"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Mini book creation"
 slug: "mini_book_creation"
 created_at: "2025-09-09 01:36:35"
-updated_at: "2025-09-09 01:36:35"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

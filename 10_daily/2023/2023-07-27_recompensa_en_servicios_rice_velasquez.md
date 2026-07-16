@@ -3,9 +3,9 @@ layout: page
 title: "Recompensa en Servicios Rice-Velasquez"
 slug: "recompensa_en_servicios_rice_velasquez"
 created_at: "2023-07-27 19:28:21"
-updated_at: "2023-07-27 19:28:21"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

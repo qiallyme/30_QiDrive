@@ -4,7 +4,7 @@ title: Masking Fatigue at Work - The Professional Price of "Showing Up Right"
 series: The Onion Effect
 episode: 4
 category: Personal Essay / Social Commentary
-keywords:
+keywords: []
   - workplace masking
   - professional performance
   - burnout
@@ -16,6 +16,23 @@ platforms:
   - NotebookLM
   - Qsays
   - YouTube
+layout: page
+slug: masking-fatigue-at-work-the-professional-price-of-showing-up-right
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: e39088f6e4d243f18e34f999f86c24e4
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # The Onion Effect – Episode 4

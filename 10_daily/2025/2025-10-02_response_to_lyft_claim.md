@@ -3,9 +3,9 @@ layout: page
 title: "Response to Lyft claim"
 slug: "response_to_lyft_claim"
 created_at: "2025-10-02 22:15:08"
-updated_at: "2025-10-02 22:15:08"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,40 +39,74 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> zai received this email from lyft, [Lyft] Re: Follow-up from Lyft
-> Inbox
-> 
-> Lyft
-> 7:15 PM (3 hours ago)
-> to me
-> 
-> ##- Please type your reply above this line -##
-> Your request (231426828) has been updated. To add additional comments, reply to this email.
-> You are receiving this email because you submitted a support request. If you did not submit a request for help, no further action is required.
-> 
-> 	
-> Leah (Lyft)
-> 
-> Oct 2, 2025, 4:14 PM PDT
-> 
-> Hi Zaitullah,
-> 
-> Please read and reply to this email to help us resolve your case as quickly as possible.
-> 
-> I’m following up on some feedback we received about one of your recent rides. The report alleges that you made a discriminations comment toward a group of people during the ride..
-> 
-> When feedback like this comes through, it’s our policy to keep your account on hold until we hear back from you. I know this takes you off the road and my goal is to support you as we come to a resolution.
-> 
-> As a reminder, Lyft is an inclusive community. Discriminatory comments toward a member of the community are a violation of our Terms of Service. To help us keep Lyft welcoming for everyone, please be respectful of others when you drive or ride.
-> 
-> To help us resolve your case as quickly as possible, please reply to this email with the following text, “I’ve read and understood Lyft’s Community Guidelines and discrimination policies.” If there’s anything you'd like to share to help us better understand the matter, please send that as well.
-> 
-> Best,
-> 
-> Leah
-> Lyft Support  
-> help.lyft.com
->  
+> zai received this email from lyft, [Lyft] Re: Follow-up from Lyft
+
+> Inbox
+
+> 
+
+> Lyft
+
+> 7:15 PM (3 hours ago)
+
+> to me
+
+> 
+
+> ##- Please type your reply above this line -##
+
+> Your request (231426828) has been updated. To add additional comments, reply to this email.
+
+> You are receiving this email because you submitted a support request. If you did not submit a request for help, no further action is required.
+
+> 
+
+> 	
+
+> Leah (Lyft)
+
+> 
+
+> Oct 2, 2025, 4:14 PM PDT
+
+> 
+
+> Hi Zaitullah,
+
+> 
+
+> Please read and reply to this email to help us resolve your case as quickly as possible.
+
+> 
+
+> I’m following up on some feedback we received about one of your recent rides. The report alleges that you made a discriminations comment toward a group of people during the ride..
+
+> 
+
+> When feedback like this comes through, it’s our policy to keep your account on hold until we hear back from you. I know this takes you off the road and my goal is to support you as we come to a resolution.
+
+> 
+
+> As a reminder, Lyft is an inclusive community. Discriminatory comments toward a member of the community are a violation of our Terms of Service. To help us keep Lyft welcoming for everyone, please be respectful of others when you drive or ride.
+
+> 
+
+> To help us resolve your case as quickly as possible, please reply to this email with the following text, “I’ve read and understood Lyft’s Community Guidelines and discrimination policies.” If there’s anything you'd like to share to help us better understand the matter, please send that as well.
+
+> 
+
+> Best,
+
+> 
+
+> Leah
+
+> Lyft Support  
+
+> help.lyft.com
+
+>  
+
 >  , I need a response completely and demonstrivly deny the claims, his english is barely basica level, hte most he says is hello, how are you, good, bye, thank you and me no english or me no understand and sorry he just picked them up as normal and dropped them off if they preceived anythign in a different way then number 1 lyft should be specific so we can identify the misunderstanding and take steps to educate or mitigate future misunderstanding otherwise this person either was mistaken or is purposly filing a false or misleading claim for other gains at the detriment of zaitullah.
 
 ### Assistant

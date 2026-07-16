@@ -3,9 +3,9 @@ layout: page
 title: "Server vs PC for Apps"
 slug: "server_vs_pc_for_apps"
 created_at: "2026-05-23 19:16:11"
-updated_at: "2026-05-23 19:16:11"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -3463,207 +3463,408 @@ canonical_ref: ""
 > Right now we need a flashlight, not a hammer.
 
 ### User
-> while it does that we need to updat the agent strict rules in the ide. # strict-compliance
-> 
-> # QIOS_GLOBAL_ENFORCEMENT_MODE
-> 
-> You are operating inside the QiOS architecture. This is not a normal codebase. It is a governed system with constitutional doctrine.
-> 
-> Before ANY planning, code generation, schema design, refactor, or architectural suggestion, you MUST perform a doctrine alignment step.
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> MANDATORY DOCTRINE REVIEW
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> You MUST review the following blueprint files before taking action:
-> 
-> CORE GOVERNANCE (REQUIRED EVERY TIME):
-> - ./__QiOS_Master_Blueprint_v0.4/docs/01_governance/policies.md
-> - ./__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md
-> - ./__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md
-> - ./__QiOS_Master_Blueprint_v0.4/docs/04_data/schema.md
-> 
-> CONTEXTUAL DOCTRINE (LOAD BASED ON TASK TYPE):
-> 
-> If task involves STRUCTURE / OBJECTS:
-> - docs/03_structure/object_model.md
-> - docs/04_data/objects.md
-> 
-> If task involves DATA / STORAGE:
-> - docs/04_data/storage.md
-> - docs/04_data/metadata.md
-> 
-> If task involves PIPELINES / INGESTION / AUTOMATION:
-> - docs/05_compute/pipelines.md
-> - docs/05_compute/integrations.md
-> - docs/05_compute/workers.md
-> 
-> If task involves SYSTEM DESIGN / CROSS-DOMAIN:
-> - docs/02_architecture/*
-> - docs/01_governance/decisions.md
-> 
-> If task affects HISTORY OR RULES:
-> - docs/appendices/changelog.md
-> - docs/adr/
-> 
-> You may NOT proceed without grounding in these.
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> NON-NEGOTIABLE QIOS LAWS
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> You MUST enforce these at all times:
-> 
-> 1. 3-BAND MODEL
->    - Core → Platform → Domain only
->    - No reverse dependency
->    - No band leakage
-> 
-> 2. SINGLE DOMAIN RULE
->    - Every object has ONE canonical home
->    - If unclear → STOP and escalate
-> 
-> 3. NO DOMAIN LOGIC IN public SCHEMA
->    - public = auth-adjacent / global only
->    - NEVER place domain tables here
-> 
-> 4. TENANT ISOLATION IS MANDATORY
->    - Every domain table MUST include tenant_id
->    - RLS is NOT optional
-> 
-> 5. SPINE-FIRST INGESTION
->    - NOTHING becomes canonical without QiArchive registration
->    - No direct writes to final tables from UI or integrations
-> 
-> 6. DERIVED ≠ TRUTH
->    - AI, vector, graph, exports are downstream ONLY
->    - They NEVER define canonical state
-> 
-> 7. NO PARALLEL SYSTEMS
->    - No duplicate schemas
->    - No shadow pipelines
->    - No second source of truth
-> 
-> 8. SCHEMA AUTHORITY
->    - Supabase migrations are canonical
->    - Docs describe — migrations define truth
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> PRE-ACTION VALIDATION (REQUIRED)
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> Before proposing ANY solution, you MUST answer internally:
-> 
-> - What band does this belong to?
-> - What schema owns this object’s lifecycle?
-> - Does this require archive_id?
-> - Does this require tenant_id?
-> - Is this canonical or derived?
-> - Does this violate Spine flow?
-> 
-> If ANY answer is unclear → STOP.
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> OUT-OF-BOUNDS PROTOCOL (HARD STOP)
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> If your solution violates ANY QiOS law:
-> 
-> DO NOT CONTINUE.
-> 
-> Return:
-> 
-> ## 🚨 Out-of-Bounds Alert
-> 
-> 1. Deviation
->    What exact rule is being broken
-> 
-> 2. Ripple-Check
->    Impact on:
->    - RLS
->    - Spine
->    - Band model
->    - Schema ownership
->    - Workers / pipelines
-> 
-> 3. Pros & Cons
->    Brutally honest tradeoff analysis
-> 
-> 4. Approval Request
->    Ask user to confirm and run `/update-adr`
-> 
-> NO CODE. NO PARTIAL WORK.
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> ALLOWED OUTPUT MODES
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> Depending on task, respond in ONE of these modes:
-> 
-> ### MODE 1 — Doctrine Patch
-> Used for blueprint updates
-> 
-> - Compliance Review
-> - Patch Plan
-> - Exact Markdown Changes
-> - Consistency Check
-> - Rejected Alternatives
-> 
-> ### MODE 2 — Implementation Plan
-> Used for features
-> 
-> - Domain Placement
-> - Data Model (schema-aligned)
-> - Pipeline Flow (Spine-compliant)
-> - API / Worker Contracts
-> - Risks
-> 
-> ### MODE 3 — Code Generation
-> ONLY after validation
-> 
-> - Must reference schema + band
-> - Must respect ingestion flow
-> - Must NOT invent structure
-> 
-> ### MODE 4 — Audit / Review
-> - Violations found
-> - Drift detected
-> - Fix recommendations
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> REPO-AWARE VALIDATION
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> Before writing anything, inspect relevant areas:
-> 
-> - /packages/database/src/migrations/
-> - /packages/database/src/schemas/
-> - /python_local/
-> - /workers/
-> - /apps/
-> - /packages/
-> 
-> Use repo state for alignment, but:
-> 
-> 🚫 NEVER let implementation override doctrine
-> ✅ Blueprint is ALWAYS the authority
-> 
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> SUCCESS CRITERIA
-> ━━━━━━━━━━━━━━━━━━━━━━━
-> 
-> A valid response MUST:
-> 
-> - Preserve single source of truth
-> - Maintain strict domain ownership
-> - Respect tenant isolation
-> - Follow Spine ingestion rules
-> - Keep derived layers downstream
-> - Avoid schema drift
-> - Remain composable across the system
-> 
-> If it “feels clever” but breaks structure → it is wrong.
-> 
+> while it does that we need to updat the agent strict rules in the ide. # strict-compliance
+
+> 
+
+> # QIOS_GLOBAL_ENFORCEMENT_MODE
+
+> 
+
+> You are operating inside the QiOS architecture. This is not a normal codebase. It is a governed system with constitutional doctrine.
+
+> 
+
+> Before ANY planning, code generation, schema design, refactor, or architectural suggestion, you MUST perform a doctrine alignment step.
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> MANDATORY DOCTRINE REVIEW
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> You MUST review the following blueprint files before taking action:
+
+> 
+
+> CORE GOVERNANCE (REQUIRED EVERY TIME):
+
+> - ./__QiOS_Master_Blueprint_v0.4/docs/01_governance/policies.md
+
+> - ./__QiOS_Master_Blueprint_v0.4/docs/01_governance/standards.md
+
+> - ./__QiOS_Master_Blueprint_v0.4/docs/03_structure/placement_rules.md
+
+> - ./__QiOS_Master_Blueprint_v0.4/docs/04_data/schema.md
+
+> 
+
+> CONTEXTUAL DOCTRINE (LOAD BASED ON TASK TYPE):
+
+> 
+
+> If task involves STRUCTURE / OBJECTS:
+
+> - docs/03_structure/object_model.md
+
+> - docs/04_data/objects.md
+
+> 
+
+> If task involves DATA / STORAGE:
+
+> - docs/04_data/storage.md
+
+> - docs/04_data/metadata.md
+
+> 
+
+> If task involves PIPELINES / INGESTION / AUTOMATION:
+
+> - docs/05_compute/pipelines.md
+
+> - docs/05_compute/integrations.md
+
+> - docs/05_compute/workers.md
+
+> 
+
+> If task involves SYSTEM DESIGN / CROSS-DOMAIN:
+
+> - docs/02_architecture/*
+
+> - docs/01_governance/decisions.md
+
+> 
+
+> If task affects HISTORY OR RULES:
+
+> - docs/appendices/changelog.md
+
+> - docs/adr/
+
+> 
+
+> You may NOT proceed without grounding in these.
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> NON-NEGOTIABLE QIOS LAWS
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> You MUST enforce these at all times:
+
+> 
+
+> 1. 3-BAND MODEL
+
+>    - Core → Platform → Domain only
+
+>    - No reverse dependency
+
+>    - No band leakage
+
+> 
+
+> 2. SINGLE DOMAIN RULE
+
+>    - Every object has ONE canonical home
+
+>    - If unclear → STOP and escalate
+
+> 
+
+> 3. NO DOMAIN LOGIC IN public SCHEMA
+
+>    - public = auth-adjacent / global only
+
+>    - NEVER place domain tables here
+
+> 
+
+> 4. TENANT ISOLATION IS MANDATORY
+
+>    - Every domain table MUST include tenant_id
+
+>    - RLS is NOT optional
+
+> 
+
+> 5. SPINE-FIRST INGESTION
+
+>    - NOTHING becomes canonical without QiArchive registration
+
+>    - No direct writes to final tables from UI or integrations
+
+> 
+
+> 6. DERIVED ≠ TRUTH
+
+>    - AI, vector, graph, exports are downstream ONLY
+
+>    - They NEVER define canonical state
+
+> 
+
+> 7. NO PARALLEL SYSTEMS
+
+>    - No duplicate schemas
+
+>    - No shadow pipelines
+
+>    - No second source of truth
+
+> 
+
+> 8. SCHEMA AUTHORITY
+
+>    - Supabase migrations are canonical
+
+>    - Docs describe — migrations define truth
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> PRE-ACTION VALIDATION (REQUIRED)
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> Before proposing ANY solution, you MUST answer internally:
+
+> 
+
+> - What band does this belong to?
+
+> - What schema owns this object’s lifecycle?
+
+> - Does this require archive_id?
+
+> - Does this require tenant_id?
+
+> - Is this canonical or derived?
+
+> - Does this violate Spine flow?
+
+> 
+
+> If ANY answer is unclear → STOP.
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> OUT-OF-BOUNDS PROTOCOL (HARD STOP)
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> If your solution violates ANY QiOS law:
+
+> 
+
+> DO NOT CONTINUE.
+
+> 
+
+> Return:
+
+> 
+
+> ## 🚨 Out-of-Bounds Alert
+
+> 
+
+> 1. Deviation
+
+>    What exact rule is being broken
+
+> 
+
+> 2. Ripple-Check
+
+>    Impact on:
+
+>    - RLS
+
+>    - Spine
+
+>    - Band model
+
+>    - Schema ownership
+
+>    - Workers / pipelines
+
+> 
+
+> 3. Pros & Cons
+
+>    Brutally honest tradeoff analysis
+
+> 
+
+> 4. Approval Request
+
+>    Ask user to confirm and run `/update-adr`
+
+> 
+
+> NO CODE. NO PARTIAL WORK.
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> ALLOWED OUTPUT MODES
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> Depending on task, respond in ONE of these modes:
+
+> 
+
+> ### MODE 1 — Doctrine Patch
+
+> Used for blueprint updates
+
+> 
+
+> - Compliance Review
+
+> - Patch Plan
+
+> - Exact Markdown Changes
+
+> - Consistency Check
+
+> - Rejected Alternatives
+
+> 
+
+> ### MODE 2 — Implementation Plan
+
+> Used for features
+
+> 
+
+> - Domain Placement
+
+> - Data Model (schema-aligned)
+
+> - Pipeline Flow (Spine-compliant)
+
+> - API / Worker Contracts
+
+> - Risks
+
+> 
+
+> ### MODE 3 — Code Generation
+
+> ONLY after validation
+
+> 
+
+> - Must reference schema + band
+
+> - Must respect ingestion flow
+
+> - Must NOT invent structure
+
+> 
+
+> ### MODE 4 — Audit / Review
+
+> - Violations found
+
+> - Drift detected
+
+> - Fix recommendations
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> REPO-AWARE VALIDATION
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> Before writing anything, inspect relevant areas:
+
+> 
+
+> - /packages/database/src/migrations/
+
+> - /packages/database/src/schemas/
+
+> - /python_local/
+
+> - /workers/
+
+> - /apps/
+
+> - /packages/
+
+> 
+
+> Use repo state for alignment, but:
+
+> 
+
+> 🚫 NEVER let implementation override doctrine
+
+> ✅ Blueprint is ALWAYS the authority
+
+> 
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> SUCCESS CRITERIA
+
+> ━━━━━━━━━━━━━━━━━━━━━━━
+
+> 
+
+> A valid response MUST:
+
+> 
+
+> - Preserve single source of truth
+
+> - Maintain strict domain ownership
+
+> - Respect tenant isolation
+
+> - Follow Spine ingestion rules
+
+> - Keep derived layers downstream
+
+> - Avoid schema drift
+
+> - Remain composable across the system
+
+> 
+
+> If it “feels clever” but breaks structure → it is wrong.
+
+> 
+
 > Prioritize coherence over creativity.
 
 ### Assistant
@@ -6692,303 +6893,600 @@ canonical_ref: ""
 > Tiny but important note for the agent: **don’t let it turn this into a giant writing project.** The goal is to establish the map, not write the encyclopedia today. The win is: correct buckets, correct boundaries, correct nav, correct ADR/changelog.
 
 ### User
-> oh and the ide finally got back to us. # QiAccess Directory Intelligence Report
-> 
-> **Date of Audit:** May 23, 2026  
-> **Auditor:** Cody / Antigravity AI  
-> **Project Root:** `c:\QiLabs\_QiAccess_Start`  
-> **Verdict:** 🟠 **Cluttered**
-> 
-> ---
-> 
-> ## 1. Executive Summary
-> 
-> The `_QiAccess_Start` repository is currently in a transitional, mixed state. While it serves as the operational "front door" portal for the personal QiAccess ecosystem, it has collected significant architectural clutter, duplicate components, and stale developer artifacts. Specifically, the repository holds three different landing dashboard implementations (the new Vite/React app in `src/`, a legacy static HTML layout in `web/`, and a cloned Next.js dashboard app in `local/`), along with a Cloudflare Worker bookmark API and a static Markdown documentation vault. Additionally, git hygiene is severely degraded due to build outputs (`.vitepress-dist/`) and IDE config folders (`docs/.obsidian-qidocs/`) being committed directly to Git, leading to over 500 "ghost file" deletions showing up in standard working trees.
-> 
-> ### Verdict: Cluttered
-> The repository is fundamentally healthy in terms of source code execution (Vite React app and Cloudflare Worker compile cleanly), but it is heavily **cluttered** with redundant projects, stale scripts, duplicate configurations, and Git tracking issues.
-> 
-> ### Top 5 Problems
-> 1. **Ghost Files in Git Index:** A large number of files in `.vitepress-dist/`, `docs-site/`, and `docs/.obsidian-qidocs/` are tracked in Git but have been deleted locally, creating a massive dirty `git status` output.
-> 2. **Dashboard Stack Triplication:** The project has three concurrent dashboard architectures: the active Vite/React app (`src/` & root `index.html`), a gethomepage Next.js dashboard (`local/`), and a legacy static HTML interface (`web/`).
-> 3. **Stale/Broken Tooling:** The validation script `scripts/enforce_structure.py` is hardcoded to check for the old QiOS band folders (e.g. `01_governance`, `02_architecture`) and fails because the docs directory has been restructured to `10_core`, `20_qinexus`, etc. It also references a missing `registry/` folder.
-> 4. **Committed Build Directories:** Build output for VitePress (`.vitepress-dist/`) was checked into the repository instead of being ignored, causing configuration and output drift.
-> 5. **Tailwind/PostCSS Configuration Redundancy:** The root folder contains `tailwind.config.ts` alongside compile-emitted artifacts `tailwind.config.js` and `tailwind.config.d.ts` (emitted by `tsconfig` composite), alongside root and subdirectory `postcss.config` variations.
-> 
-> ### Top 5 Safe Cleanup Moves
-> 1. **Stage Git Deletions (Stop Tracking):** Run `git rm -r --cached .vitepress-dist docs-site docs/.obsidian-qidocs` to remove these deleted files from the Git index while keeping local disk state clean.
-> 2. **Update Root `.gitignore`:** Append `.vitepress-dist/`, `docs-site/`, `docs/.obsidian/`, and `docs/.obsidian-qidocs/` to the root `.gitignore` to prevent future commits.
-> 3. **Archive Legacy Frontend:** Move the static `web/` prototype directory to `_archive/web/`.
-> 4. **Archive Local Homepage Next.js App:** Move the `local/` Next.js directory to `_archive/local/`.
-> 5. **Restructure Scripts and Audits:** Rehome loose status and alignment files into `_audit/` and `_archive/`, and adjust scripts like `enforce_structure.py` to target the active docs structure.
-> 
-> ---
-> 
-> ## 2. Repository Identity
-> 
-> This folder is a **Mixed Project** that serves as a multi-purpose repository combining:
-> - **Vite/React Portal App:** The active front door interface (Vite config `vite.config.ts` and React source code under `src/` and root `index.html`).
-> - **Cloudflare Worker Backend:** An API route located under `worker/` (`wrangler.jsonc`, `worker/src/index.ts`, `worker/schema.sql`) for D1-backed bookmark storage.
-> - **Next.js Local Utility Dashboard:** A full clone of the gethomepage/homepage project under `local/` (uses Next.js page routing and local configs).
-> - **VitePress & Markdown Docs Vault:** The system blueprint documentation located under `docs/` (`10_core`, `20_qinexus`, etc.), compiled via VitePress scripts.
-> - **Obsidian Vault:** The `docs` folder is designed to double as an Obsidian documentation vault.
-> 
-> ### File Evidence of Identity:
-> - **Vite/React portal:** [package.json](file:///c:/QiLabs/_QiAccess_Start/package.json) containing React 19 dependencies, [vite.config.ts](file:///c:/QiLabs/_QiAccess_Start/vite.config.ts), and [index.html](file:///c:/QiLabs/_QiAccess_Start/index.html).
-> - **Cloudflare Worker:** [worker/wrangler.jsonc](file:///c:/QiLabs/_QiAccess_Start/worker/wrangler.jsonc) and [worker/src/index.ts](file:///c:/QiLabs/_QiAccess_Start/worker/src/index.ts).
-> - **Next.js app:** [local/package.json](file:///c:/QiLabs/_QiAccess_Start/local/package.json) (Homepage dependencies) and [local/next.config.js](file:///c:/QiLabs/_QiAccess_Start/local/next.config.js).
-> - **VitePress docs:** [docs/_index.md](file:///c:/QiLabs/_QiAccess_Start/docs/_index.md) and [scripts/prepare-docs.mjs](file:///c:/QiLabs/_QiAccess_Start/scripts/prepare-docs.mjs).
-> 
-> ---
-> 
-> ## 3. Root Directory Inventory
-> 
-> | Path | Type | Purpose | Recommendation | Confidence |
-> |---|---|---|---|---|
-> | `.git` | config/meta | Git repository version control metadata | Keep | High |
-> | `.gitignore` | config | Specifies files and folders for Git to ignore | Keep (Add `.vitepress-dist`, `docs-site`, etc.) | High |
-> | `.node-version` | config | Specifies Node.js v22 environment requirement | Keep | High |
-> | `.npm-cache` | generated | Ignored cache directory for npm packages | Keep (Remains ignored) | High |
-> | `.nvmrc` | config | Node version specification | Keep | High |
-> | `.runtime` | generated | MkDocs runs, staging builds, and execution logs | Keep (Remains ignored) | High |
-> | `README.md` | docs | Core entrypoint documentation for QiAccess Start | Keep | High |
-> | `dist` | generated | Vite production compile build output for React app | Keep (Remains ignored) | High |
-> | `docs` | docs/source | Primary Markdown documentation vault | Keep | High |
-> | `index.html` | source | Vite React application mount page | Keep | High |
-> | `local` | source/dep | Clone of gethomepage/homepage Next.js application | Move to `_archive/local/` | High |
-> | `node_modules` | dependency | Root node modules packages | Keep (Remains ignored) | High |
-> | `package-lock.json` | config | Locked dependency versions | Keep | High |
-> | `package.json` | config | Root package scripts, workspace dependencies | Keep | High |
-> | `postcss.config.cjs` | config | PostCSS build configurations | Keep | High |
-> | `run_copy.bat` | script | Script to copy server-specific configuration files | Move to `scripts/` or `_archive/` | High |
-> | `scripts` | source | Build scripts for documentation, ERDs, indices | Keep (Clean stale scripts) | High |
-> | `src` | source | Active Vite/React portal application source | Keep | High |
-> | `tailwind.config.d.ts` | generated | Typescript definitions for tailwind config (ignored) | Keep (Remains ignored) | High |
-> | `tailwind.config.js` | generated | Emitted tailwind Javascript configuration (ignored) | Keep (Remains ignored) | High |
-> | `tailwind.config.ts` | source | Active Tailwind CSS v3 configuration | Keep | High |
-> | `tools` | source | Python utilities for doc audits and outline export | Keep | High |
-> | `tsconfig.app.json` | config | TypeScript config for React app compilation | Keep | High |
-> | `tsconfig.app.tsbuildinfo` | generated | Incremental TS build cache | Keep (Remains ignored) | High |
-> | `tsconfig.json` | config | Root TypeScript configuration project references | Keep | High |
-> | `tsconfig.node.json` | config | TypeScript configuration for Node scripts | Keep | High |
-> | `tsconfig.node.tsbuildinfo`| generated | Incremental TS build cache for Node compilation | Keep (Remains ignored) | High |
-> | `vite.config.ts` | config | Vite bundler plugin and chunk configuration | Keep | High |
-> | `web` | source | Legacy static dashboard prototype | Move to `_archive/web/` | High |
-> | `worker` | source | Cloudflare Worker bookmark manager API project | Keep | High |
-> 
-> ---
-> 
-> ## 4. Build Output Detection
-> 
-> Multiple build processes and outputs are active:
-> - **`dist/`:** Vite React application build. Located at root; generated from `src/`. It should be **gitignored** (which it is) and never committed.
-> - **`.vitepress-dist/`:** VitePress static documentation output directory. Generated from the `docs` directory using `docs-site` configuration. Currently, its assets (JS chunks, `.lean.js` files, and `.html` files) are tracked in the Git index but deleted locally on disk. It should be removed from Git index tracking, moved to `_dist/docs`, and **gitignored**.
-> - **`.runtime/mkdocs/`:** Temporary local execution workspace for MkDocs generation runs. Created by `scripts/sync_docs_site.py`. It should remain **gitignored** and not committed.
-> - **`tailwind.config.js` & `tailwind.config.d.ts`:** Root level generated outputs of `tailwind.config.ts` compilation. Gitignored (correct) but cluttering the root project.
-> 
-> ---
-> 
-> ## 5. Source Documentation Detection
-> 
-> The source Markdown files that produced the generated static HTML previously in `.vitepress-dist` are located in [docs/](file:///c:/QiLabs/_QiAccess_Start/docs).
-> The folders match the generated outputs precisely:
-> - `docs/10_core/` (Governance, structures)
-> - `docs/20_qinexus/` (Workspace reference)
-> - `docs/30_qiarchive/` (Retrieval systems)
-> - `docs/40_system/` (Logs, health checks)
-> 
-> **Verdict on missing sources:** All corresponding source Markdown documents are **present** on disk in the [docs/](file:///c:/QiLabs/_QiAccess_Start/docs) directory (e.g. [docs/30_qiarchive/70_memory/20_durable_facts/_index.md](file:///c:/QiLabs/_QiAccess_Start/docs/30_qiarchive/70_memory/20_durable_facts/_index.md) exists and matches the deleted `.vitepress-dist/assets/30_qiarchive_70_memory_20_durable_facts__index.md.BOfIFxeH.js` reference).
-> 
-> ---
-> 
-> ## 6. Audit File Detection
-> 
-> The following non-runtime files containing audit/report-like keywords are detected in the repository:
-> 
-> | Path | File Type | Likely Purpose | Date | Status | Recommended Destination |
-> |---|---|---|---|---|---|
-> | `tools/audit_docs_alignment.py` | Python Script | Scans documentation files for legacy platform vocabulary | N/A | Active | Keep in `tools/` or `scripts/audit/` |
-> | `docs/10_core/50_operations/40_dev_testing/qiaccessstart/2026-05-17_qiaccess_start_qa_checklist.md` | Markdown | App startup and UI page checklist for QiAccess Start | 2026-05-17 | Latest Draft | Move to `_audit/2026-05-17_qiaccess_start_qa_checklist.md` |
-> | `docs/10_core/50_operations/40_dev_testing/momscare/2026-05-17_momcare_app_qa_checklist.md` | Markdown | Startup and UI page checklist for MomsCare app | 2026-05-17 | Stale/Unrelated | Move to MomsCare repository or `_archive/momscare/` |
-> | `docs/10_core/60_knowledge/70_repo_sync_status_20260516.md` | Markdown | Historical log of repo sync status and build fixes | 2026-05-16 | Stale/Log | Move to `_audit/logs/` or `_archive/status/` |
-> 
-> ---
-> 
-> ## 7. Duplicate and Near-Duplicate Detection
-> 
-> 1. **Tailwind Configurations:**
->    - [tailwind.config.ts](file:///c:/QiLabs/_QiAccess_Start/tailwind.config.ts) (source of truth)
->    - `tailwind.config.js` (compiled output, ignored but present)
->    - `tailwind.config.d.ts` (compiled types output, ignored but present)
-> 2. **PostCSS Configurations:**
->    - [postcss.config.cjs](file:///c:/QiLabs/_QiAccess_Start/postcss.config.cjs) (Vite/React config)
->    - [local/postcss.config.js](file:///c:/QiLabs/_QiAccess_Start/local/postcss.config.js) (Next.js config)
-> 3. **HTML Main Index Pages:**
->    - [index.html](file:///c:/QiLabs/_QiAccess_Start/index.html) (Active Vite entry point)
->    - [web/index.html](file:///c:/QiLabs/_QiAccess_Start/web/index.html) (Legacy static dashboard prototype page)
->    - `dist/index.html` (Compiled Vite build output)
-> 4. **VitePress JS/Lean.js Asset Pairs:**
->    - Example: `.vitepress-dist/assets/30_qiarchive__index.md.Bzu0xkdq.js` and `.vitepress-dist/assets/30_qiarchive__index.md.Bzu0xkdq.lean.js` are created for each Markdown page in the build output.
-> 5. **Placement File Redundancies (`index.md` vs `_index.md`):**
->    - The docs directories use `_index.md` (e.g. `docs/10_core/_index.md`) as standard landers.
->    - Running `scripts/update_indexes.py` generates `index.md` files (e.g. `index.md Overview Index`), creating near-duplicate placeholder files in the same folder.
-> 6. **MkDocs Runs HTML Duplicates:**
->    - `.runtime/mkdocs/runs/...` stores copies of the entire documentation vault compiled into HTML files (e.g., `obsidian_qidocs.html` matching `obsidian_qidocs.md`).
-> 
-> ---
-> 
-> ## 8. Obsidian Contamination Check
-> 
-> - **Vault Intent:** The project root is **not** an Obsidian vault on disk, but the `docs/` folder was designed to double as an Obsidian vault.
-> - **Settings/Plugins Present:** The git index shows that `docs/.obsidian-qidocs/` contained custom editor configurations (`app.json`, `appearance.json`, `core-plugins.json`, and `graph.json`). However, these configuration files have been deleted locally on disk.
-> - **Risk/Confusion:** Having local configuration files tracked in the Git repository causes persistent discrepancies in `git status` when developers open the folder with different editor preferences. Tracking custom named folders like `.obsidian-qidocs` in git should be avoided.
-> - **Recommendation:** Un-track `.obsidian-qidocs/` entirely using `git rm -r --cached` and append it to `.gitignore`.
-> 
-> ---
-> 
-> ## 9. Local Access Architecture Check
-> 
-> The frontend client is an in-browser React app that has **no direct file system access** due to web security sandboxing.
-> - **Durable Notes/History Persistence:** Handled via Supabase backend tables. Note capture routes call `createQuickNote` or `createDevHistoryRecord` to save data to database schemas in Supabase ([quickNotesApi.ts:L5](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/quickNotesApi.ts#L5) and [devHistoryApi.ts:L38](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/devHistoryApi.ts#L38)).
-> - **Intake/Draft Persistence:** Draft text is cached locally in the browser's `localStorage` via `captureDraftStore.ts` (using `localStorage.getItem` and `setItem`).
-> - **External Local Launching:** Hardcoded `file:///` URLs are embedded in system modules (e.g. [launcherApps.ts:L46](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts#L46)). Because browsers block direct launch of `file:///` URLs from HTTP/HTTPS origins, the current strategy relies on the user copying the path or invoking a custom local helper/protocol handler.
-> - **Node.js File Access:** Used strictly by local compilation/audit scripts (`sync_docs_site.py`, `doc_markmind_exporter.py`, and `update_indexes.py`) and Next.js backend api service configurations (`local/src/pages/api/config/[path].js` which loads CSS/JS from filesystem).
-> 
-> ---
-> 
-> ## 10. Notes Feature Audit
-> 
-> The notes feature in the Vite app is not a filesystem browser or direct vault sync tool. It serves as a **Controlled Gateway / Intake Scratchpad** that accepts input, saves it locally in the browser's `localStorage`, and assists in formatting and routing it to target destinations.
-> 
-> ### Relevant Files:
-> - [src/features/03_capture/CapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/CapturePage.tsx) | Full triage dashboard UI which maps out recommended destinations (Inbox, Paperless, Knowledge, system storage).
-> - [src/features/03_capture/quick_notes/QuickCapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/QuickCapturePage.tsx) | Simple scratchpad for general text/markdown.
-> - [src/features/03_capture/quick_notes/quickNotesApi.ts](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/quickNotesApi.ts) | Sends captured notes to Supabase `quick_notes` table.
-> - [src/features/03_capture/dev_session/DevSessionCapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/DevSessionCapturePage.tsx) | Detailed form for dev logs.
-> - [src/features/03_capture/dev_session/devHistoryApi.ts](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/devHistoryApi.ts) | Sends dev logs to Supabase `dev_history` table.
-> 
-> ### Behavior & Problems:
-> - **Locked Vault Support:** It does not support a locked vault model; the Supabase data is stored in the cloud under standard authenticated sessions, and the draft data resides in the browser's unencrypted local storage.
-> - **Identity Answer:** The notes feature is a **controlled gateway / intake scratchpad**. It does not browse local folders or edit raw markdown files on disk. It serves to queue up drafts to be manually copied or routed to Supabase, Paperless, or Wiki.js.
-> 
-> ---
-> 
-> ## 11. Hardcoded Path Audit
-> 
-> | File Path | Line | Hardcoded Value | Risk | Recommendation |
-> |---|---|---|---|---|
-> | [tools/audit_docs_alignment.py](file:///c:/QiLabs/_QiAccess_Start/tools/audit_docs_alignment.py) | 28 | `REPO_ROOT = Path(r"C:\QiLabs\_QiAccess_Start")` | **Medium**. Python script will fail on other machines or Linux CI runners due to absolute pathing. | Use relative resolve: `Path(__file__).resolve().parent.parent` |
-> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 46 | `localUrl: "file:///C:/QiLabs/toolbox/dist/QiOne_Tools/QiOne_Tools.exe"` | **Low**. Refers to user physical workstation tool path, will fail if file path changes. | Keep, but document local workstation environment expectations. |
-> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 53 | `C:\\\\QiLabs\\\\toolbox\\\\dist\\\\QiOne_Tools\\\\QiOne_Tools.exe` | **None**. Text description. | No change needed. |
-> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 201 | `/srv/qios/stacks/_qiaccess_start/config/services.yaml` | **None**. Text description. | No change needed. |
-> | [run_copy.bat](file:///c:/QiLabs/_QiAccess_Start/run_copy.bat) | 8 | `set REMOTE_PATH=/srv/qios/stacks/_qiaccess_start/config` | **Low**. Bat helper config script is target-locked to standard QiOS server directory. | Keep. |
-> 
-> ---
-> 
-> ## 12. Git Hygiene Audit
-> 
-> ### What should be added to `.gitignore`:
-> - `.vitepress-dist/`
-> - `docs-site/` (if it is a purely generated VitePress config setup)
-> - `docs/.obsidian/`
-> - `docs/.obsidian-qidocs/`
-> - `local/.next/`
-> - `local/out/`
-> 
-> ### What should never be committed:
-> - Compiled static site assets (`.vitepress-dist/*`)
-> - Active local YAML credentials/configs (e.g. `local/config/settings.yaml`, `services.yaml`)
-> - Personal workspace settings (`workspace.json`, `workspace-mobile.json`)
-> 
-> ### What should be kept:
-> - Source directories (`src/`, `worker/src/`, `docs/**/*.md`, `tools/`, `scripts/`)
-> - Example config skeletons (`local/src/skeleton/*`)
-> 
-> ---
-> 
-> ## 13. Missing Expected Structure
-> 
-> Compared to a standard QiOS QiAccess project, the following structures are missing:
-> - **`public/` (Root level):** Standard Vite apps keep assets, icons, and manifests in a root-level `public/` directory. Here, assets are scattered under the legacy `web/` folder, and there is no root-level `public/` folder.
-> - **`_audit/`:** Directory for quality reviews, test logs, and check reports.
-> - **`_archive/`:** Location for deprecated frontend prototypes or local workspace mockups.
-> - **`_dist/`:** Rehomed production bundle output folder (separating Vite app build and VitePress doc builds).
-> - **`.env.example` (Root level):** Missing sample environment file showing Supabase connection parameters (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`).
-> 
-> ---
-> 
-> ## 14. Recommended Future Structure
-> 
-> Propose the following cleaned structure for `c:\QiLabs\_QiAccess_Start`:
-> 
-> ```text
-> _QiAccess_Start/
->   src/                      # React application source code
->   public/                   # Static assets for React application (favicon, manifest, images)
->   worker/                   # Cloudflare Worker source code
->   docs/                     # Markdown documentation vault (Obsidian-compatible)
->   scripts/                  # Shared utility scripts (erd, indexes, prepare docs)
->   config/                   # Configuration files / templates
->   _audit/                   # Quality audits, checklists, and reports
->   _archive/                 # Archived legacy assets (web/, local/, etc.)
->   _dist/                    # Output directory for builds (Vite and VitePress)
->   README.md                 # Main project README
->   package.json              # Main project dependencies and build scripts
-> ```
-> 
-> ---
-> 
-> ## 15. Cleanup Plan
-> 
-> ### Phase 1: Safe Archive Only
-> - **Action:** Move the legacy static web files folder `web/` to `_archive/web/`.
-> - **Action:** Move the Next.js `local/` folder to `_archive/local/`.
-> - **Risk Level:** **Low**. The React app in `src/` does not reference or import from these subfolders.
-> - **Rollback Method:** Move files back to root.
-> 
-> ### Phase 2: Stage Generated/IDE Deletions in Git
-> - **Action:** Remove deleted folders from Git tracking index.
->   - Run: `git rm -r --cached .vitepress-dist docs-site docs/.obsidian-qidocs`
-> - **Action:** Update `.gitignore` to include `.vitepress-dist/`, `docs-site/`, `docs/.obsidian/`, and `docs/.obsidian-qidocs/`.
-> - **Risk Level:** **Low**. Resolves phantom git deletions in working directory.
-> - **Rollback Method:** Run `git add` to re-track directories if needed.
-> 
-> ### Phase 3: Documentation and Setup Alignments
-> - **Action:** Clarify notes routing doc references to align with the active Supabase/localStorage scratchpad model.
-> - **Risk Level:** **None** (documentation only).
-> - **Rollback Method:** Git revert documentation changes.
-> 
-> ### Phase 4: Root Restructuring and Guardrails
-> - **Action:** Create the root [public/](file:///c:/QiLabs/_QiAccess_Start/public) folder and place the app favicon and manifest.
-> - **Action:** Create root `.env.example` specifying Supabase env variables.
-> - **Action:** Remove generated `tailwind.config.js` and `tailwind.config.d.ts` from root disk.
-> - **Action:** Adjust `scripts/enforce_structure.py` to search for active docs directories (`10_core`, etc.) instead of failing on old QiOS blueprints.
-> - **Risk Level:** **Low**.
-> - **Rollback Method:** Delete new files and revert changes.
-> 
-> ### Phase 5: Optional Post-Verification Deletion
-> - **Action:** Once Vite React app is fully verified in preview mode, permanently delete the `_archive/` files to reclaim drive space.
-> - **Risk Level:** **Low** (files remain restorable via git history).
-> - **Rollback Method:** Restore files from previous git commits.
-> 
-> ---
-> 
-> ## 16. Do-Not-Touch List
-> 
-> - **`src/`:** Do not modify any portal UI code.
-> - **`worker/`:** Do not modify wrangler configurations or fetch logic.
-> - **`docs/`:** Do not delete, move, or rename documentation subdirectories (`10_core`, `20_qinexus`, `30_qiarchive`, `40_system`).
-> - **`package.json` & `package-lock.json`:** Do not modify package dependencies.
-> 
-> ---
-> 
-> ## 17. Final Verdict
-> 
-> - **Fluff:** The Next.js dashboard project `local/` and the legacy static prototype directory `web/` are dead weight.
-> - **Old:** `scripts/enforce_structure.py` is stale and checks for directories that do not exist.
-> - **Duplicated:** Multiple `tailwind.config` files at root; multiple index files (`index.md` vs `_index.md`) in `docs/` subfolders; duplicate landing files (`index.html`).
-> - **Missing:** Root level `public/` directory for static assets, `.env.example` file, and `_audit/`/`_archive/` directory structure.
-> - **Dangerous:** Tracking `.vitepress-dist` build outputs and `.obsidian-qidocs` configuration directories in Git, resulting in dirty status states.
+> oh and the ide finally got back to us. # QiAccess Directory Intelligence Report
+
+> 
+
+> **Date of Audit:** May 23, 2026  
+
+> **Auditor:** Cody / Antigravity AI  
+
+> **Project Root:** `c:\QiLabs\_QiAccess_Start`  
+
+> **Verdict:** 🟠 **Cluttered**
+
+> 
+
+> ---
+
+> 
+
+> ## 1. Executive Summary
+
+> 
+
+> The `_QiAccess_Start` repository is currently in a transitional, mixed state. While it serves as the operational "front door" portal for the personal QiAccess ecosystem, it has collected significant architectural clutter, duplicate components, and stale developer artifacts. Specifically, the repository holds three different landing dashboard implementations (the new Vite/React app in `src/`, a legacy static HTML layout in `web/`, and a cloned Next.js dashboard app in `local/`), along with a Cloudflare Worker bookmark API and a static Markdown documentation vault. Additionally, git hygiene is severely degraded due to build outputs (`.vitepress-dist/`) and IDE config folders (`docs/.obsidian-qidocs/`) being committed directly to Git, leading to over 500 "ghost file" deletions showing up in standard working trees.
+
+> 
+
+> ### Verdict: Cluttered
+
+> The repository is fundamentally healthy in terms of source code execution (Vite React app and Cloudflare Worker compile cleanly), but it is heavily **cluttered** with redundant projects, stale scripts, duplicate configurations, and Git tracking issues.
+
+> 
+
+> ### Top 5 Problems
+
+> 1. **Ghost Files in Git Index:** A large number of files in `.vitepress-dist/`, `docs-site/`, and `docs/.obsidian-qidocs/` are tracked in Git but have been deleted locally, creating a massive dirty `git status` output.
+
+> 2. **Dashboard Stack Triplication:** The project has three concurrent dashboard architectures: the active Vite/React app (`src/` & root `index.html`), a gethomepage Next.js dashboard (`local/`), and a legacy static HTML interface (`web/`).
+
+> 3. **Stale/Broken Tooling:** The validation script `scripts/enforce_structure.py` is hardcoded to check for the old QiOS band folders (e.g. `01_governance`, `02_architecture`) and fails because the docs directory has been restructured to `10_core`, `20_qinexus`, etc. It also references a missing `registry/` folder.
+
+> 4. **Committed Build Directories:** Build output for VitePress (`.vitepress-dist/`) was checked into the repository instead of being ignored, causing configuration and output drift.
+
+> 5. **Tailwind/PostCSS Configuration Redundancy:** The root folder contains `tailwind.config.ts` alongside compile-emitted artifacts `tailwind.config.js` and `tailwind.config.d.ts` (emitted by `tsconfig` composite), alongside root and subdirectory `postcss.config` variations.
+
+> 
+
+> ### Top 5 Safe Cleanup Moves
+
+> 1. **Stage Git Deletions (Stop Tracking):** Run `git rm -r --cached .vitepress-dist docs-site docs/.obsidian-qidocs` to remove these deleted files from the Git index while keeping local disk state clean.
+
+> 2. **Update Root `.gitignore`:** Append `.vitepress-dist/`, `docs-site/`, `docs/.obsidian/`, and `docs/.obsidian-qidocs/` to the root `.gitignore` to prevent future commits.
+
+> 3. **Archive Legacy Frontend:** Move the static `web/` prototype directory to `_archive/web/`.
+
+> 4. **Archive Local Homepage Next.js App:** Move the `local/` Next.js directory to `_archive/local/`.
+
+> 5. **Restructure Scripts and Audits:** Rehome loose status and alignment files into `_audit/` and `_archive/`, and adjust scripts like `enforce_structure.py` to target the active docs structure.
+
+> 
+
+> ---
+
+> 
+
+> ## 2. Repository Identity
+
+> 
+
+> This folder is a **Mixed Project** that serves as a multi-purpose repository combining:
+
+> - **Vite/React Portal App:** The active front door interface (Vite config `vite.config.ts` and React source code under `src/` and root `index.html`).
+
+> - **Cloudflare Worker Backend:** An API route located under `worker/` (`wrangler.jsonc`, `worker/src/index.ts`, `worker/schema.sql`) for D1-backed bookmark storage.
+
+> - **Next.js Local Utility Dashboard:** A full clone of the gethomepage/homepage project under `local/` (uses Next.js page routing and local configs).
+
+> - **VitePress & Markdown Docs Vault:** The system blueprint documentation located under `docs/` (`10_core`, `20_qinexus`, etc.), compiled via VitePress scripts.
+
+> - **Obsidian Vault:** The `docs` folder is designed to double as an Obsidian documentation vault.
+
+> 
+
+> ### File Evidence of Identity:
+
+> - **Vite/React portal:** [package.json](file:///c:/QiLabs/_QiAccess_Start/package.json) containing React 19 dependencies, [vite.config.ts](file:///c:/QiLabs/_QiAccess_Start/vite.config.ts), and [index.html](file:///c:/QiLabs/_QiAccess_Start/index.html).
+
+> - **Cloudflare Worker:** [worker/wrangler.jsonc](file:///c:/QiLabs/_QiAccess_Start/worker/wrangler.jsonc) and [worker/src/index.ts](file:///c:/QiLabs/_QiAccess_Start/worker/src/index.ts).
+
+> - **Next.js app:** [local/package.json](file:///c:/QiLabs/_QiAccess_Start/local/package.json) (Homepage dependencies) and [local/next.config.js](file:///c:/QiLabs/_QiAccess_Start/local/next.config.js).
+
+> - **VitePress docs:** [docs/_index.md](file:///c:/QiLabs/_QiAccess_Start/docs/_index.md) and [scripts/prepare-docs.mjs](file:///c:/QiLabs/_QiAccess_Start/scripts/prepare-docs.mjs).
+
+> 
+
+> ---
+
+> 
+
+> ## 3. Root Directory Inventory
+
+> 
+
+> | Path | Type | Purpose | Recommendation | Confidence |
+
+> |---|---|---|---|---|
+
+> | `.git` | config/meta | Git repository version control metadata | Keep | High |
+
+> | `.gitignore` | config | Specifies files and folders for Git to ignore | Keep (Add `.vitepress-dist`, `docs-site`, etc.) | High |
+
+> | `.node-version` | config | Specifies Node.js v22 environment requirement | Keep | High |
+
+> | `.npm-cache` | generated | Ignored cache directory for npm packages | Keep (Remains ignored) | High |
+
+> | `.nvmrc` | config | Node version specification | Keep | High |
+
+> | `.runtime` | generated | MkDocs runs, staging builds, and execution logs | Keep (Remains ignored) | High |
+
+> | `README.md` | docs | Core entrypoint documentation for QiAccess Start | Keep | High |
+
+> | `dist` | generated | Vite production compile build output for React app | Keep (Remains ignored) | High |
+
+> | `docs` | docs/source | Primary Markdown documentation vault | Keep | High |
+
+> | `index.html` | source | Vite React application mount page | Keep | High |
+
+> | `local` | source/dep | Clone of gethomepage/homepage Next.js application | Move to `_archive/local/` | High |
+
+> | `node_modules` | dependency | Root node modules packages | Keep (Remains ignored) | High |
+
+> | `package-lock.json` | config | Locked dependency versions | Keep | High |
+
+> | `package.json` | config | Root package scripts, workspace dependencies | Keep | High |
+
+> | `postcss.config.cjs` | config | PostCSS build configurations | Keep | High |
+
+> | `run_copy.bat` | script | Script to copy server-specific configuration files | Move to `scripts/` or `_archive/` | High |
+
+> | `scripts` | source | Build scripts for documentation, ERDs, indices | Keep (Clean stale scripts) | High |
+
+> | `src` | source | Active Vite/React portal application source | Keep | High |
+
+> | `tailwind.config.d.ts` | generated | Typescript definitions for tailwind config (ignored) | Keep (Remains ignored) | High |
+
+> | `tailwind.config.js` | generated | Emitted tailwind Javascript configuration (ignored) | Keep (Remains ignored) | High |
+
+> | `tailwind.config.ts` | source | Active Tailwind CSS v3 configuration | Keep | High |
+
+> | `tools` | source | Python utilities for doc audits and outline export | Keep | High |
+
+> | `tsconfig.app.json` | config | TypeScript config for React app compilation | Keep | High |
+
+> | `tsconfig.app.tsbuildinfo` | generated | Incremental TS build cache | Keep (Remains ignored) | High |
+
+> | `tsconfig.json` | config | Root TypeScript configuration project references | Keep | High |
+
+> | `tsconfig.node.json` | config | TypeScript configuration for Node scripts | Keep | High |
+
+> | `tsconfig.node.tsbuildinfo`| generated | Incremental TS build cache for Node compilation | Keep (Remains ignored) | High |
+
+> | `vite.config.ts` | config | Vite bundler plugin and chunk configuration | Keep | High |
+
+> | `web` | source | Legacy static dashboard prototype | Move to `_archive/web/` | High |
+
+> | `worker` | source | Cloudflare Worker bookmark manager API project | Keep | High |
+
+> 
+
+> ---
+
+> 
+
+> ## 4. Build Output Detection
+
+> 
+
+> Multiple build processes and outputs are active:
+
+> - **`dist/`:** Vite React application build. Located at root; generated from `src/`. It should be **gitignored** (which it is) and never committed.
+
+> - **`.vitepress-dist/`:** VitePress static documentation output directory. Generated from the `docs` directory using `docs-site` configuration. Currently, its assets (JS chunks, `.lean.js` files, and `.html` files) are tracked in the Git index but deleted locally on disk. It should be removed from Git index tracking, moved to `_dist/docs`, and **gitignored**.
+
+> - **`.runtime/mkdocs/`:** Temporary local execution workspace for MkDocs generation runs. Created by `scripts/sync_docs_site.py`. It should remain **gitignored** and not committed.
+
+> - **`tailwind.config.js` & `tailwind.config.d.ts`:** Root level generated outputs of `tailwind.config.ts` compilation. Gitignored (correct) but cluttering the root project.
+
+> 
+
+> ---
+
+> 
+
+> ## 5. Source Documentation Detection
+
+> 
+
+> The source Markdown files that produced the generated static HTML previously in `.vitepress-dist` are located in [docs/](file:///c:/QiLabs/_QiAccess_Start/docs).
+
+> The folders match the generated outputs precisely:
+
+> - `docs/10_core/` (Governance, structures)
+
+> - `docs/20_qinexus/` (Workspace reference)
+
+> - `docs/30_qiarchive/` (Retrieval systems)
+
+> - `docs/40_system/` (Logs, health checks)
+
+> 
+
+> **Verdict on missing sources:** All corresponding source Markdown documents are **present** on disk in the [docs/](file:///c:/QiLabs/_QiAccess_Start/docs) directory (e.g. [docs/30_qiarchive/70_memory/20_durable_facts/_index.md](file:///c:/QiLabs/_QiAccess_Start/docs/30_qiarchive/70_memory/20_durable_facts/_index.md) exists and matches the deleted `.vitepress-dist/assets/30_qiarchive_70_memory_20_durable_facts__index.md.BOfIFxeH.js` reference).
+
+> 
+
+> ---
+
+> 
+
+> ## 6. Audit File Detection
+
+> 
+
+> The following non-runtime files containing audit/report-like keywords are detected in the repository:
+
+> 
+
+> | Path | File Type | Likely Purpose | Date | Status | Recommended Destination |
+
+> |---|---|---|---|---|---|
+
+> | `tools/audit_docs_alignment.py` | Python Script | Scans documentation files for legacy platform vocabulary | N/A | Active | Keep in `tools/` or `scripts/audit/` |
+
+> | `docs/10_core/50_operations/40_dev_testing/qiaccessstart/2026-05-17_qiaccess_start_qa_checklist.md` | Markdown | App startup and UI page checklist for QiAccess Start | 2026-05-17 | Latest Draft | Move to `_audit/2026-05-17_qiaccess_start_qa_checklist.md` |
+
+> | `docs/10_core/50_operations/40_dev_testing/momscare/2026-05-17_momcare_app_qa_checklist.md` | Markdown | Startup and UI page checklist for MomsCare app | 2026-05-17 | Stale/Unrelated | Move to MomsCare repository or `_archive/momscare/` |
+
+> | `docs/10_core/60_knowledge/70_repo_sync_status_20260516.md` | Markdown | Historical log of repo sync status and build fixes | 2026-05-16 | Stale/Log | Move to `_audit/logs/` or `_archive/status/` |
+
+> 
+
+> ---
+
+> 
+
+> ## 7. Duplicate and Near-Duplicate Detection
+
+> 
+
+> 1. **Tailwind Configurations:**
+
+>    - [tailwind.config.ts](file:///c:/QiLabs/_QiAccess_Start/tailwind.config.ts) (source of truth)
+
+>    - `tailwind.config.js` (compiled output, ignored but present)
+
+>    - `tailwind.config.d.ts` (compiled types output, ignored but present)
+
+> 2. **PostCSS Configurations:**
+
+>    - [postcss.config.cjs](file:///c:/QiLabs/_QiAccess_Start/postcss.config.cjs) (Vite/React config)
+
+>    - [local/postcss.config.js](file:///c:/QiLabs/_QiAccess_Start/local/postcss.config.js) (Next.js config)
+
+> 3. **HTML Main Index Pages:**
+
+>    - [index.html](file:///c:/QiLabs/_QiAccess_Start/index.html) (Active Vite entry point)
+
+>    - [web/index.html](file:///c:/QiLabs/_QiAccess_Start/web/index.html) (Legacy static dashboard prototype page)
+
+>    - `dist/index.html` (Compiled Vite build output)
+
+> 4. **VitePress JS/Lean.js Asset Pairs:**
+
+>    - Example: `.vitepress-dist/assets/30_qiarchive__index.md.Bzu0xkdq.js` and `.vitepress-dist/assets/30_qiarchive__index.md.Bzu0xkdq.lean.js` are created for each Markdown page in the build output.
+
+> 5. **Placement File Redundancies (`index.md` vs `_index.md`):**
+
+>    - The docs directories use `_index.md` (e.g. `docs/10_core/_index.md`) as standard landers.
+
+>    - Running `scripts/update_indexes.py` generates `index.md` files (e.g. `index.md Overview Index`), creating near-duplicate placeholder files in the same folder.
+
+> 6. **MkDocs Runs HTML Duplicates:**
+
+>    - `.runtime/mkdocs/runs/...` stores copies of the entire documentation vault compiled into HTML files (e.g., `obsidian_qidocs.html` matching `obsidian_qidocs.md`).
+
+> 
+
+> ---
+
+> 
+
+> ## 8. Obsidian Contamination Check
+
+> 
+
+> - **Vault Intent:** The project root is **not** an Obsidian vault on disk, but the `docs/` folder was designed to double as an Obsidian vault.
+
+> - **Settings/Plugins Present:** The git index shows that `docs/.obsidian-qidocs/` contained custom editor configurations (`app.json`, `appearance.json`, `core-plugins.json`, and `graph.json`). However, these configuration files have been deleted locally on disk.
+
+> - **Risk/Confusion:** Having local configuration files tracked in the Git repository causes persistent discrepancies in `git status` when developers open the folder with different editor preferences. Tracking custom named folders like `.obsidian-qidocs` in git should be avoided.
+
+> - **Recommendation:** Un-track `.obsidian-qidocs/` entirely using `git rm -r --cached` and append it to `.gitignore`.
+
+> 
+
+> ---
+
+> 
+
+> ## 9. Local Access Architecture Check
+
+> 
+
+> The frontend client is an in-browser React app that has **no direct file system access** due to web security sandboxing.
+
+> - **Durable Notes/History Persistence:** Handled via Supabase backend tables. Note capture routes call `createQuickNote` or `createDevHistoryRecord` to save data to database schemas in Supabase ([quickNotesApi.ts:L5](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/quickNotesApi.ts#L5) and [devHistoryApi.ts:L38](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/devHistoryApi.ts#L38)).
+
+> - **Intake/Draft Persistence:** Draft text is cached locally in the browser's `localStorage` via `captureDraftStore.ts` (using `localStorage.getItem` and `setItem`).
+
+> - **External Local Launching:** Hardcoded `file:///` URLs are embedded in system modules (e.g. [launcherApps.ts:L46](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts#L46)). Because browsers block direct launch of `file:///` URLs from HTTP/HTTPS origins, the current strategy relies on the user copying the path or invoking a custom local helper/protocol handler.
+
+> - **Node.js File Access:** Used strictly by local compilation/audit scripts (`sync_docs_site.py`, `doc_markmind_exporter.py`, and `update_indexes.py`) and Next.js backend api service configurations (`local/src/pages/api/config/[path].js` which loads CSS/JS from filesystem).
+
+> 
+
+> ---
+
+> 
+
+> ## 10. Notes Feature Audit
+
+> 
+
+> The notes feature in the Vite app is not a filesystem browser or direct vault sync tool. It serves as a **Controlled Gateway / Intake Scratchpad** that accepts input, saves it locally in the browser's `localStorage`, and assists in formatting and routing it to target destinations.
+
+> 
+
+> ### Relevant Files:
+
+> - [src/features/03_capture/CapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/CapturePage.tsx) | Full triage dashboard UI which maps out recommended destinations (Inbox, Paperless, Knowledge, system storage).
+
+> - [src/features/03_capture/quick_notes/QuickCapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/QuickCapturePage.tsx) | Simple scratchpad for general text/markdown.
+
+> - [src/features/03_capture/quick_notes/quickNotesApi.ts](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/quick_notes/quickNotesApi.ts) | Sends captured notes to Supabase `quick_notes` table.
+
+> - [src/features/03_capture/dev_session/DevSessionCapturePage.tsx](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/DevSessionCapturePage.tsx) | Detailed form for dev logs.
+
+> - [src/features/03_capture/dev_session/devHistoryApi.ts](file:///c:/QiLabs/_QiAccess_Start/src/features/03_capture/dev_session/devHistoryApi.ts) | Sends dev logs to Supabase `dev_history` table.
+
+> 
+
+> ### Behavior & Problems:
+
+> - **Locked Vault Support:** It does not support a locked vault model; the Supabase data is stored in the cloud under standard authenticated sessions, and the draft data resides in the browser's unencrypted local storage.
+
+> - **Identity Answer:** The notes feature is a **controlled gateway / intake scratchpad**. It does not browse local folders or edit raw markdown files on disk. It serves to queue up drafts to be manually copied or routed to Supabase, Paperless, or Wiki.js.
+
+> 
+
+> ---
+
+> 
+
+> ## 11. Hardcoded Path Audit
+
+> 
+
+> | File Path | Line | Hardcoded Value | Risk | Recommendation |
+
+> |---|---|---|---|---|
+
+> | [tools/audit_docs_alignment.py](file:///c:/QiLabs/_QiAccess_Start/tools/audit_docs_alignment.py) | 28 | `REPO_ROOT = Path(r"C:\QiLabs\_QiAccess_Start")` | **Medium**. Python script will fail on other machines or Linux CI runners due to absolute pathing. | Use relative resolve: `Path(__file__).resolve().parent.parent` |
+
+> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 46 | `localUrl: "file:///C:/QiLabs/toolbox/dist/QiOne_Tools/QiOne_Tools.exe"` | **Low**. Refers to user physical workstation tool path, will fail if file path changes. | Keep, but document local workstation environment expectations. |
+
+> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 53 | `C:\\\\QiLabs\\\\toolbox\\\\dist\\\\QiOne_Tools\\\\QiOne_Tools.exe` | **None**. Text description. | No change needed. |
+
+> | [src/data/launcherApps.ts](file:///c:/QiLabs/_QiAccess_Start/src/data/launcherApps.ts) | 201 | `/srv/qios/stacks/_qiaccess_start/config/services.yaml` | **None**. Text description. | No change needed. |
+
+> | [run_copy.bat](file:///c:/QiLabs/_QiAccess_Start/run_copy.bat) | 8 | `set REMOTE_PATH=/srv/qios/stacks/_qiaccess_start/config` | **Low**. Bat helper config script is target-locked to standard QiOS server directory. | Keep. |
+
+> 
+
+> ---
+
+> 
+
+> ## 12. Git Hygiene Audit
+
+> 
+
+> ### What should be added to `.gitignore`:
+
+> - `.vitepress-dist/`
+
+> - `docs-site/` (if it is a purely generated VitePress config setup)
+
+> - `docs/.obsidian/`
+
+> - `docs/.obsidian-qidocs/`
+
+> - `local/.next/`
+
+> - `local/out/`
+
+> 
+
+> ### What should never be committed:
+
+> - Compiled static site assets (`.vitepress-dist/*`)
+
+> - Active local YAML credentials/configs (e.g. `local/config/settings.yaml`, `services.yaml`)
+
+> - Personal workspace settings (`workspace.json`, `workspace-mobile.json`)
+
+> 
+
+> ### What should be kept:
+
+> - Source directories (`src/`, `worker/src/`, `docs/**/*.md`, `tools/`, `scripts/`)
+
+> - Example config skeletons (`local/src/skeleton/*`)
+
+> 
+
+> ---
+
+> 
+
+> ## 13. Missing Expected Structure
+
+> 
+
+> Compared to a standard QiOS QiAccess project, the following structures are missing:
+
+> - **`public/` (Root level):** Standard Vite apps keep assets, icons, and manifests in a root-level `public/` directory. Here, assets are scattered under the legacy `web/` folder, and there is no root-level `public/` folder.
+
+> - **`_audit/`:** Directory for quality reviews, test logs, and check reports.
+
+> - **`_archive/`:** Location for deprecated frontend prototypes or local workspace mockups.
+
+> - **`_dist/`:** Rehomed production bundle output folder (separating Vite app build and VitePress doc builds).
+
+> - **`.env.example` (Root level):** Missing sample environment file showing Supabase connection parameters (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`).
+
+> 
+
+> ---
+
+> 
+
+> ## 14. Recommended Future Structure
+
+> 
+
+> Propose the following cleaned structure for `c:\QiLabs\_QiAccess_Start`:
+
+> 
+
+> ```text
+
+> _QiAccess_Start/
+
+>   src/                      # React application source code
+
+>   public/                   # Static assets for React application (favicon, manifest, images)
+
+>   worker/                   # Cloudflare Worker source code
+
+>   docs/                     # Markdown documentation vault (Obsidian-compatible)
+
+>   scripts/                  # Shared utility scripts (erd, indexes, prepare docs)
+
+>   config/                   # Configuration files / templates
+
+>   _audit/                   # Quality audits, checklists, and reports
+
+>   _archive/                 # Archived legacy assets (web/, local/, etc.)
+
+>   _dist/                    # Output directory for builds (Vite and VitePress)
+
+>   README.md                 # Main project README
+
+>   package.json              # Main project dependencies and build scripts
+
+> ```
+
+> 
+
+> ---
+
+> 
+
+> ## 15. Cleanup Plan
+
+> 
+
+> ### Phase 1: Safe Archive Only
+
+> - **Action:** Move the legacy static web files folder `web/` to `_archive/web/`.
+
+> - **Action:** Move the Next.js `local/` folder to `_archive/local/`.
+
+> - **Risk Level:** **Low**. The React app in `src/` does not reference or import from these subfolders.
+
+> - **Rollback Method:** Move files back to root.
+
+> 
+
+> ### Phase 2: Stage Generated/IDE Deletions in Git
+
+> - **Action:** Remove deleted folders from Git tracking index.
+
+>   - Run: `git rm -r --cached .vitepress-dist docs-site docs/.obsidian-qidocs`
+
+> - **Action:** Update `.gitignore` to include `.vitepress-dist/`, `docs-site/`, `docs/.obsidian/`, and `docs/.obsidian-qidocs/`.
+
+> - **Risk Level:** **Low**. Resolves phantom git deletions in working directory.
+
+> - **Rollback Method:** Run `git add` to re-track directories if needed.
+
+> 
+
+> ### Phase 3: Documentation and Setup Alignments
+
+> - **Action:** Clarify notes routing doc references to align with the active Supabase/localStorage scratchpad model.
+
+> - **Risk Level:** **None** (documentation only).
+
+> - **Rollback Method:** Git revert documentation changes.
+
+> 
+
+> ### Phase 4: Root Restructuring and Guardrails
+
+> - **Action:** Create the root [public/](file:///c:/QiLabs/_QiAccess_Start/public) folder and place the app favicon and manifest.
+
+> - **Action:** Create root `.env.example` specifying Supabase env variables.
+
+> - **Action:** Remove generated `tailwind.config.js` and `tailwind.config.d.ts` from root disk.
+
+> - **Action:** Adjust `scripts/enforce_structure.py` to search for active docs directories (`10_core`, etc.) instead of failing on old QiOS blueprints.
+
+> - **Risk Level:** **Low**.
+
+> - **Rollback Method:** Delete new files and revert changes.
+
+> 
+
+> ### Phase 5: Optional Post-Verification Deletion
+
+> - **Action:** Once Vite React app is fully verified in preview mode, permanently delete the `_archive/` files to reclaim drive space.
+
+> - **Risk Level:** **Low** (files remain restorable via git history).
+
+> - **Rollback Method:** Restore files from previous git commits.
+
+> 
+
+> ---
+
+> 
+
+> ## 16. Do-Not-Touch List
+
+> 
+
+> - **`src/`:** Do not modify any portal UI code.
+
+> - **`worker/`:** Do not modify wrangler configurations or fetch logic.
+
+> - **`docs/`:** Do not delete, move, or rename documentation subdirectories (`10_core`, `20_qinexus`, `30_qiarchive`, `40_system`).
+
+> - **`package.json` & `package-lock.json`:** Do not modify package dependencies.
+
+> 
+
+> ---
+
+> 
+
+> ## 17. Final Verdict
+
+> 
+
+> - **Fluff:** The Next.js dashboard project `local/` and the legacy static prototype directory `web/` are dead weight.
+
+> - **Old:** `scripts/enforce_structure.py` is stale and checks for directories that do not exist.
+
+> - **Duplicated:** Multiple `tailwind.config` files at root; multiple index files (`index.md` vs `_index.md`) in `docs/` subfolders; duplicate landing files (`index.html`).
+
+> - **Missing:** Root level `public/` directory for static assets, `.env.example` file, and `_audit/`/`_archive/` directory structure.
+
+> - **Dangerous:** Tracking `.vitepress-dist` build outputs and `.obsidian-qidocs` configuration directories in Git, resulting in dirty status states.
+
 > - **Fix First:** Run `git rm --cached` on `.vitepress-dist`, `docs-site`, and `docs/.obsidian-qidocs` to restore Git directory sanity.
 
 ### Assistant
@@ -7353,33 +7851,60 @@ canonical_ref: ""
 > No hero deletions. No “cleaning” the real docs yet. That’s how people blow up the only copy of the map.
 
 ### User
-> oh, that web ui was the one i really likes, i mean really just the shadow gradients and such the current ui works the best, um what can we salvage from it. # File Tree: web
-> 
-> **Generated:** 5/23/2026, 8:09:08 PM
-> **Root Path:** `c:\QiLabs\_QiAccess_Start\web`
-> 
-> ```
-> ├── css
-> │   └── style.css
-> ├── js
-> │   └── main.js
-> ├── add.html
-> ├── android-chrome-192x192.png
-> ├── android-chrome-512x512.png
-> ├── apple-touch-icon.png
-> ├── favicon-16x16.png
-> ├── favicon-32x32.png
-> ├── favicon.ico
-> ├── index.html
-> ├── mstile-144x144.png
-> ├── mstile-150x150.png
-> ├── mstile-310x150.png
-> ├── mstile-310x310.png
-> ├── mstile-70x70.png
-> └── site.webmanifest
-> ```
-> 
-> ---
+> oh, that web ui was the one i really likes, i mean really just the shadow gradients and such the current ui works the best, um what can we salvage from it. # File Tree: web
+
+> 
+
+> **Generated:** 5/23/2026, 8:09:08 PM
+
+> **Root Path:** `c:\QiLabs\_QiAccess_Start\web`
+
+> 
+
+> ```
+
+> ├── css
+
+> │   └── style.css
+
+> ├── js
+
+> │   └── main.js
+
+> ├── add.html
+
+> ├── android-chrome-192x192.png
+
+> ├── android-chrome-512x512.png
+
+> ├── apple-touch-icon.png
+
+> ├── favicon-16x16.png
+
+> ├── favicon-32x32.png
+
+> ├── favicon.ico
+
+> ├── index.html
+
+> ├── mstile-144x144.png
+
+> ├── mstile-150x150.png
+
+> ├── mstile-310x150.png
+
+> ├── mstile-310x310.png
+
+> ├── mstile-70x70.png
+
+> └── site.webmanifest
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension* oh i know the assets from local and web. are we sure those are dead.
 
 ### Assistant
@@ -10981,31 +11506,56 @@ canonical_ref: ""
 > We can implement it on the server once the structure works and the config is clean.
 
 ### User
-> • Updated Plan
->   └ The QiAccess deployment layer, documentation, and audit artifacts are in place and spot-checked. No
->     deployment or destructive cleanup was performed.
->     ✔ Audit current workspace and classify root vs legacy vs deployable config surfaces
->     ✔ Create QiAccess deployment layout under qiaccess/ with Homepage config and compose
->     ✔ Add local documentation, ADR note, and conversion audit report
->     ✔ Run targeted validation on created YAML/compose/docs artifacts
-> 
-> ────────────────────────────────────────────────────────────────────────────────────────────────────────
-> 
-> • The workspace is now set up as a Homepage-rooted QiAccess stack with a separate active deployment
->   layer under qiaccess/README.md:1. I created qiaccess/docker-compose.yml:1 plus the full Homepage
->   config set in qiaccess/config/, branded it as QiAccess, added the requested service groups, bookmarks,
->   recovery section, and kept widget integrations as TODO comments only where this clone actually
->   supports them.
-> 
->   I also rewrote the local README.md:1 to state the new doctrine, added the local ADR at docs/notes/ADR-
->   0011_homepage_powered_qiaccess.md:1, and wrote the audit/report at _audit/2026-05-
->   24_qiaccess_homepage_conversion_report.md:1. The report calls out the main unresolved truth
->   point: .legacy/_QiAccess_Start currently contains runtime/cache/audit material, but the older local/
->   and web/ trees are still only visible as git-tracked deletions, not as physical moved folders
->   inside .legacy.
-> 
->   I did not deploy anything, did not delete anything, and did not run the Homepage app or tests.
->   Verification was limited to inspecting the workspace and spot-checking the created YAML/compose/docs
+> • Updated Plan
+
+>   └ The QiAccess deployment layer, documentation, and audit artifacts are in place and spot-checked. No
+
+>     deployment or destructive cleanup was performed.
+
+>     ✔ Audit current workspace and classify root vs legacy vs deployable config surfaces
+
+>     ✔ Create QiAccess deployment layout under qiaccess/ with Homepage config and compose
+
+>     ✔ Add local documentation, ADR note, and conversion audit report
+
+>     ✔ Run targeted validation on created YAML/compose/docs artifacts
+
+> 
+
+> ────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+> 
+
+> • The workspace is now set up as a Homepage-rooted QiAccess stack with a separate active deployment
+
+>   layer under qiaccess/README.md:1. I created qiaccess/docker-compose.yml:1 plus the full Homepage
+
+>   config set in qiaccess/config/, branded it as QiAccess, added the requested service groups, bookmarks,
+
+>   recovery section, and kept widget integrations as TODO comments only where this clone actually
+
+>   supports them.
+
+> 
+
+>   I also rewrote the local README.md:1 to state the new doctrine, added the local ADR at docs/notes/ADR-
+
+>   0011_homepage_powered_qiaccess.md:1, and wrote the audit/report at _audit/2026-05-
+
+>   24_qiaccess_homepage_conversion_report.md:1. The report calls out the main unresolved truth
+
+>   point: .legacy/_QiAccess_Start currently contains runtime/cache/audit material, but the older local/
+
+>   and web/ trees are still only visible as git-tracked deletions, not as physical moved folders
+
+>   inside .legacy.
+
+> 
+
+>   I did not deploy anything, did not delete anything, and did not run the Homepage app or tests.
+
+>   Verification was limited to inspecting the workspace and spot-checking the created YAML/compose/docs
+
 >   files.
 
 ### Assistant
@@ -11448,116 +11998,226 @@ canonical_ref: ""
 > So: audit it, then likely migrate it into `qiserver/nodes/`, with QiConnect documenting how those nodes attach to the network.
 
 ### User
-> infra/
-> ├── bootstrap
-> │   ├── config
-> │   │   ├── global
-> │   │   │   ├── device_policy.yaml
-> │   │   │   ├── metadata_rules.yaml
-> │   │   │   ├── naming_rules.yaml
-> │   │   │   ├── repo_rules.yaml
-> │   │   │   ├── runtime_rules.yaml
-> │   │   │   └── watcher_rules.yaml
-> │   │   ├── local
-> │   │   ├── secrets
-> │   │   └── README.md
-> │   ├── templates
-> │   │   ├── local-agent.env.template
-> │   │   ├── qilabs.env.template
-> │   │   └── watcher_paths.template.yaml
-> │   ├── enroll_device.ps1
-> │   ├── enroll_device.sh
-> │   ├── install_local_agent.ps1
-> │   ├── install_local_agent.sh
-> │   ├── install_qilabs.ps1
-> │   ├── install_qilabs.sh
-> │   ├── README.md
-> │   ├── validate_machine.ps1
-> │   └── validate_machine.sh
-> ├── docker
-> │   ├── ai-api.Dockerfile
-> │   ├── app-api.Dockerfile
-> │   ├── compose.dev.yml
-> │   ├── local-agent.Dockerfile
-> │   └── worker-orchestrator.Dockerfile
-> ├── neo4j
-> │   └── README.md
-> ├── redis
-> │   └── README.md
-> ├── supabase
-> │   ├── functions
-> │   │   ├── archive_register.sql
-> │   │   ├── device_heartbeat.sql
-> │   │   └── enqueue_fleet_job.sql
-> │   ├── migrations
-> │   │   ├── 0001_init.sql
-> │   │   ├── 0002_qione_core.sql
-> │   │   ├── 0003_qiarchive_core.sql
-> │   │   ├── 0004_qisys_jobs.sql
-> │   │   ├── 0005_qivault.sql
-> │   │   ├── 0006_qiknowledge.sql
-> │   │   ├── 0007_qicase.sql
-> │   │   ├── 0008_device_registry.sql
-> │   │   └── 0009_watch_assignments.sql
-> │   ├── config.toml
-> │   └── seed.sql
-> ├── tailscale
-> │   ├── acl.example.json
-> │   ├── node-enrollment.md
-> │   └── README.md
-> ├── tests
-> │   ├── e2e
-> │   │   ├── admin-device-registry.spec.ts
-> │   │   ├── archive-dropzone.spec.ts
-> │   │   └── portal-auth.spec.ts
-> │   ├── fixtures
-> │   │   ├── sample_email.eml
-> │   │   ├── sample_metadata.json
-> │   │   └── sample.pdf
-> │   ├── integration
-> │   │   ├── test_archive_registration.py
-> │   │   ├── test_device_enrollment.py
-> │   │   ├── test_fleet_job_dispatch.py
-> │   │   └── test_watch_assignment.py
-> │   └── README.md
-> └── README.md
-> ```
-> # QiAccess Homepage Stack
-> 
-> This folder is now the canonical Homepage-powered QiAccess workspace.
-> 
-> QiAccess is no longer the custom React portal. The live operational dashboard is Homepage, branded as QiAccess, with runtime owned by QiServer and edge routing owned by Cloudflare.
-> 
-> ## Current Model
-> 
-> - Repo root contains the cloned `gethomepage/homepage` source tree and upstream docs.
-> - Active QiAccess deployment config lives in [`qiaccess/`](C:/QiLabs/_QiAccess_Start/qiaccess).
-> - Legacy QiAccess/Homepage material is retained under [`.legacy/`](C:/QiLabs/_QiAccess_Start/.legacy) for reference only.
-> - Do not mix legacy code or generated output back into the active deployment unless a specific asset or config is intentionally salvaged and documented.
-> 
-> ## Runtime Doctrine
-> 
-> - **Homepage** owns the live dashboard UI.
-> - **QiServer** owns runtime and container execution.
-> - **Cloudflare** routes `access.qially.com` to the live dashboard when QiServer is reachable.
-> - **Cloudflare** should serve a static offline/recovery page when QiServer is unavailable.
-> - **Terminal**, **Cockpit**, and **Portainer** own actual control actions.
-> 
-> ## Active Deployment Layer
-> 
-> Use the files under [`qiaccess/`](C:/QiLabs/_QiAccess_Start/qiaccess):
-> 
-> - [`qiaccess/docker-compose.yml`](C:/QiLabs/_QiAccess_Start/qiaccess/docker-compose.yml)
-> - [`qiaccess/config/settings.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/settings.yaml)
-> - [`qiaccess/config/services.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/services.yaml)
-> - [`qiaccess/config/bookmarks.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/bookmarks.yaml)
-> - [`qiaccess/config/widgets.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/widgets.yaml)
-> - [`qiaccess/config/docker.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/docker.yaml)
-> - [`qiaccess/config/custom.css`](C:/QiLabs/_QiAccess_Start/qiaccess/config/custom.css)
-> - [`qiaccess/config/custom.js`](C:/QiLabs/_QiAccess_Start/qiaccess/config/custom.js)
-> 
-> ## Legacy Rule
-> 
+> infra/
+
+> ├── bootstrap
+
+> │   ├── config
+
+> │   │   ├── global
+
+> │   │   │   ├── device_policy.yaml
+
+> │   │   │   ├── metadata_rules.yaml
+
+> │   │   │   ├── naming_rules.yaml
+
+> │   │   │   ├── repo_rules.yaml
+
+> │   │   │   ├── runtime_rules.yaml
+
+> │   │   │   └── watcher_rules.yaml
+
+> │   │   ├── local
+
+> │   │   ├── secrets
+
+> │   │   └── README.md
+
+> │   ├── templates
+
+> │   │   ├── local-agent.env.template
+
+> │   │   ├── qilabs.env.template
+
+> │   │   └── watcher_paths.template.yaml
+
+> │   ├── enroll_device.ps1
+
+> │   ├── enroll_device.sh
+
+> │   ├── install_local_agent.ps1
+
+> │   ├── install_local_agent.sh
+
+> │   ├── install_qilabs.ps1
+
+> │   ├── install_qilabs.sh
+
+> │   ├── README.md
+
+> │   ├── validate_machine.ps1
+
+> │   └── validate_machine.sh
+
+> ├── docker
+
+> │   ├── ai-api.Dockerfile
+
+> │   ├── app-api.Dockerfile
+
+> │   ├── compose.dev.yml
+
+> │   ├── local-agent.Dockerfile
+
+> │   └── worker-orchestrator.Dockerfile
+
+> ├── neo4j
+
+> │   └── README.md
+
+> ├── redis
+
+> │   └── README.md
+
+> ├── supabase
+
+> │   ├── functions
+
+> │   │   ├── archive_register.sql
+
+> │   │   ├── device_heartbeat.sql
+
+> │   │   └── enqueue_fleet_job.sql
+
+> │   ├── migrations
+
+> │   │   ├── 0001_init.sql
+
+> │   │   ├── 0002_qione_core.sql
+
+> │   │   ├── 0003_qiarchive_core.sql
+
+> │   │   ├── 0004_qisys_jobs.sql
+
+> │   │   ├── 0005_qivault.sql
+
+> │   │   ├── 0006_qiknowledge.sql
+
+> │   │   ├── 0007_qicase.sql
+
+> │   │   ├── 0008_device_registry.sql
+
+> │   │   └── 0009_watch_assignments.sql
+
+> │   ├── config.toml
+
+> │   └── seed.sql
+
+> ├── tailscale
+
+> │   ├── acl.example.json
+
+> │   ├── node-enrollment.md
+
+> │   └── README.md
+
+> ├── tests
+
+> │   ├── e2e
+
+> │   │   ├── admin-device-registry.spec.ts
+
+> │   │   ├── archive-dropzone.spec.ts
+
+> │   │   └── portal-auth.spec.ts
+
+> │   ├── fixtures
+
+> │   │   ├── sample_email.eml
+
+> │   │   ├── sample_metadata.json
+
+> │   │   └── sample.pdf
+
+> │   ├── integration
+
+> │   │   ├── test_archive_registration.py
+
+> │   │   ├── test_device_enrollment.py
+
+> │   │   ├── test_fleet_job_dispatch.py
+
+> │   │   └── test_watch_assignment.py
+
+> │   └── README.md
+
+> └── README.md
+
+> ```
+
+> # QiAccess Homepage Stack
+
+> 
+
+> This folder is now the canonical Homepage-powered QiAccess workspace.
+
+> 
+
+> QiAccess is no longer the custom React portal. The live operational dashboard is Homepage, branded as QiAccess, with runtime owned by QiServer and edge routing owned by Cloudflare.
+
+> 
+
+> ## Current Model
+
+> 
+
+> - Repo root contains the cloned `gethomepage/homepage` source tree and upstream docs.
+
+> - Active QiAccess deployment config lives in [`qiaccess/`](C:/QiLabs/_QiAccess_Start/qiaccess).
+
+> - Legacy QiAccess/Homepage material is retained under [`.legacy/`](C:/QiLabs/_QiAccess_Start/.legacy) for reference only.
+
+> - Do not mix legacy code or generated output back into the active deployment unless a specific asset or config is intentionally salvaged and documented.
+
+> 
+
+> ## Runtime Doctrine
+
+> 
+
+> - **Homepage** owns the live dashboard UI.
+
+> - **QiServer** owns runtime and container execution.
+
+> - **Cloudflare** routes `access.qially.com` to the live dashboard when QiServer is reachable.
+
+> - **Cloudflare** should serve a static offline/recovery page when QiServer is unavailable.
+
+> - **Terminal**, **Cockpit**, and **Portainer** own actual control actions.
+
+> 
+
+> ## Active Deployment Layer
+
+> 
+
+> Use the files under [`qiaccess/`](C:/QiLabs/_QiAccess_Start/qiaccess):
+
+> 
+
+> - [`qiaccess/docker-compose.yml`](C:/QiLabs/_QiAccess_Start/qiaccess/docker-compose.yml)
+
+> - [`qiaccess/config/settings.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/settings.yaml)
+
+> - [`qiaccess/config/services.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/services.yaml)
+
+> - [`qiaccess/config/bookmarks.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/bookmarks.yaml)
+
+> - [`qiaccess/config/widgets.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/widgets.yaml)
+
+> - [`qiaccess/config/docker.yaml`](C:/QiLabs/_QiAccess_Start/qiaccess/config/docker.yaml)
+
+> - [`qiaccess/config/custom.css`](C:/QiLabs/_QiAccess_Start/qiaccess/config/custom.css)
+
+> - [`qiaccess/config/custom.js`](C:/QiLabs/_QiAccess_Start/qiaccess/config/custom.js)
+
+> 
+
+> ## Legacy Rule
+
+> 
+
 > Legacy material is retained for reference only. Do not delete it, do not redeploy it, and do not treat it as the active QiAccess implementation.
 
 ### Assistant
@@ -12401,65 +13061,124 @@ canonical_ref: ""
 > Everything else gets audited, tagged, and likely moved to `_qi_library` until it earns its way back into active architecture.
 
 ### User
-> The repo now validates as a Homepage-powered QiAccess repo locally.
-> 
->   I finished the safe cleanup, promoted the real Homepage root files into place, moved the old Vite
->   portal package files into .legacy/_QiAccess_Start/root_pre_homepage, added .env:1 so plain local
->   commands use qiaccess/config, and fixed the minimal resolver issue in jsconfig.json:1 and
->   tsconfig.json:1. I also removed generated validation artifacts like root .next/, root config/,
->   duplicate  (2) public files, and temp build caches.
-> 
->   Validation result:
-> 
->   - pnpm install succeeded
->   - plain npm run build succeeded
->   - npm run dev reached a ready state, with .env loaded
->   - qiaccess/config/*.yaml parsed cleanly
->   - report written to _audit/2026-05-24_qiaccess_homepage_local_validation_report.md:1
-> 
->   Remaining issues are warnings, not blockers:
-> 
->   - Next warns about the workspace rootLocal validation is complete. The repo now builds cleanly as
->     Homepage, uses qiaccess/config by default via .env:1, and the old root Vite package files were moved
->     into .legacy/_QiAccess_Start/root_pre_homepage. I also cleaned duplicate assets and generated build
->     artifacts, then wrote the results to _audit/2026-05-
->     24_qiaccess_homepage_local_validation_report.md:1.
-> 
->   What changed to make it boot:
-> 
->   - Promoted the real Homepage root files into place: package.json:1 and tailwind.config.js:1.
->   - Fixed jsconfig.json:1 and converted tsconfig.json:1 into a Next-compatible root config so utils/...
->     imports resolve.
->   - Verified qiaccess/config YAML parses cleanly and kept Homepage’s generated qiaccess/config/
->     kubernetes.yaml:1 because the app expects it.
-> 
->   Validation result:
-> 
->   - pnpm install succeeded.
->   - Plain npm run build succeeded from the repo root.
->   - npm run dev reached a ready state, but during validation it auto-shifted ports because local 3000
->     was already occupied and one earlier repo-local Next dev instance had already taken 3001. The repo-
->     local dev processes were stopped afterward.
->   - Remaining warnings are non-blocking: Next workspace-root inference and the upstream middleware
->     deprecation notice.
-> 
->   Repo status:
-> 
->   - Ready to push from a local validation standpoint.
->   - Not ready for server deployment yet, by design.
-> 
->   If you want, the next step is just your lane now:
-> 
->   git status
->   git add -A
->   git commit -m "Convert QiAccess to Homepage-powered dashboard"
->   git push
-> 
-> ─ Worked for 28m 02s ───────────────────────────────────────────────────────────────────────────────────
-> 
-> 
-> › Write tests for @filename
-> 
+> The repo now validates as a Homepage-powered QiAccess repo locally.
+
+> 
+
+>   I finished the safe cleanup, promoted the real Homepage root files into place, moved the old Vite
+
+>   portal package files into .legacy/_QiAccess_Start/root_pre_homepage, added .env:1 so plain local
+
+>   commands use qiaccess/config, and fixed the minimal resolver issue in jsconfig.json:1 and
+
+>   tsconfig.json:1. I also removed generated validation artifacts like root .next/, root config/,
+
+>   duplicate  (2) public files, and temp build caches.
+
+> 
+
+>   Validation result:
+
+> 
+
+>   - pnpm install succeeded
+
+>   - plain npm run build succeeded
+
+>   - npm run dev reached a ready state, with .env loaded
+
+>   - qiaccess/config/*.yaml parsed cleanly
+
+>   - report written to _audit/2026-05-24_qiaccess_homepage_local_validation_report.md:1
+
+> 
+
+>   Remaining issues are warnings, not blockers:
+
+> 
+
+>   - Next warns about the workspace rootLocal validation is complete. The repo now builds cleanly as
+
+>     Homepage, uses qiaccess/config by default via .env:1, and the old root Vite package files were moved
+
+>     into .legacy/_QiAccess_Start/root_pre_homepage. I also cleaned duplicate assets and generated build
+
+>     artifacts, then wrote the results to _audit/2026-05-
+
+>     24_qiaccess_homepage_local_validation_report.md:1.
+
+> 
+
+>   What changed to make it boot:
+
+> 
+
+>   - Promoted the real Homepage root files into place: package.json:1 and tailwind.config.js:1.
+
+>   - Fixed jsconfig.json:1 and converted tsconfig.json:1 into a Next-compatible root config so utils/...
+
+>     imports resolve.
+
+>   - Verified qiaccess/config YAML parses cleanly and kept Homepage’s generated qiaccess/config/
+
+>     kubernetes.yaml:1 because the app expects it.
+
+> 
+
+>   Validation result:
+
+> 
+
+>   - pnpm install succeeded.
+
+>   - Plain npm run build succeeded from the repo root.
+
+>   - npm run dev reached a ready state, but during validation it auto-shifted ports because local 3000
+
+>     was already occupied and one earlier repo-local Next dev instance had already taken 3001. The repo-
+
+>     local dev processes were stopped afterward.
+
+>   - Remaining warnings are non-blocking: Next workspace-root inference and the upstream middleware
+
+>     deprecation notice.
+
+> 
+
+>   Repo status:
+
+> 
+
+>   - Ready to push from a local validation standpoint.
+
+>   - Not ready for server deployment yet, by design.
+
+> 
+
+>   If you want, the next step is just your lane now:
+
+> 
+
+>   git status
+
+>   git add -A
+
+>   git commit -m "Convert QiAccess to Homepage-powered dashboard"
+
+>   git push
+
+> 
+
+> ─ Worked for 28m 02s ───────────────────────────────────────────────────────────────────────────────────
+
+> 
+
+> 
+
+> › Write tests for @filename
+
+> 
+
 >   gpt-5.4 high fast · C:\QiLabs\_QiAccess_Start
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Service Agreement Update"
 slug: "service_agreement_update"
 created_at: "2023-07-20 17:03:21"
-updated_at: "2023-07-20 17:03:21"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Employee theft - over $11,000 lost to check fraud"
 slug: "employee_theft_over_11000_lost_to_check_fraud"
 summary: ""
 status: active
 created_at: "2023-01-01"
-updated_at: "2023-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: af110dae1a7f433aaffc6885f26a680f
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2023-01-01
 ---
+
 # Employee theft - over $11,000 lost to check fraud
 
 Category: Challenge

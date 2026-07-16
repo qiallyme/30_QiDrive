@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Single Patient Clinical Reality Ai Build Spec
-slug: ""
+slug: single-patient-clinical-reality-ai-build-spec
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0b74351bb0644743938ae4a6d50cc845
 canonical_ref: ""
 source_type: manual
 template_key: master-template

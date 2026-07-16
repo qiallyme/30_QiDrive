@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0009 Backup Server Control Plane And Public Edge Pattern
-slug: ""
+slug: adr-0009-backup-server-control-plane-and-public-edge-pattern
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: bc681c0a99e0412fb7fad22e84a3cb8c
 canonical_ref: ""
 source_type: manual
 template_key: master-template

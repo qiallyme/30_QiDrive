@@ -5,7 +5,7 @@ slug: formative_friendships_that_shaped_identity
 summary: ""
 status: active
 created_at: 2005-01-01
-updated_at: 2005-01-01
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 1101c998dc904906909d754628587385
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2005-01-01
 ---
+
 # Formative friendships that shaped identity
 
 Category: [[relationships]]

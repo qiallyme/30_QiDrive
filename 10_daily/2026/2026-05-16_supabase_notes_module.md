@@ -3,9 +3,9 @@ layout: page
 title: "Supabase Notes Module"
 slug: "supabase_notes_module"
 created_at: "2026-05-16 23:00:28"
-updated_at: "2026-05-16 23:00:28"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -415,449 +415,892 @@ canonical_ref: ""
 > That’s enough to make the feature real without turning QiAccess Start into Notion’s haunted cousin.
 
 ### User
-> here is the current src folder fyi. {
->   "name": "src",
->   "path": "c:\\QiLabs\\_QiAccess_Start\\src",
->   "type": "directory",
->   "children": [
->     {
->       "name": "app",
->       "type": "folder",
->       "children": [
->         {
->           "name": "App.tsx",
->           "type": "file"
->         },
->         {
->           "name": "routes.tsx",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "components",
->       "type": "folder",
->       "children": [
->         {
->           "name": "cards",
->           "type": "folder",
->           "children": [
->             {
->               "name": "LaunchCard.tsx",
->               "type": "file"
->             },
->             {
->               "name": "ResourceCard.tsx",
->               "type": "file"
->             },
->             {
->               "name": "ResourceEditorDrawer.tsx",
->               "type": "file"
->             },
->             {
->               "name": "StatusCard.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "command",
->           "type": "folder",
->           "children": [
->             {
->               "name": "CommandBar.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "docs",
->           "type": "folder",
->           "children": [
->             {
->               "name": "DocLayout.tsx",
->               "type": "file"
->             },
->             {
->               "name": "KnowledgeDocArticle.tsx",
->               "type": "file"
->             },
->             {
->               "name": "MDXProvider.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "feedback",
->           "type": "folder",
->           "children": [
->             {
->               "name": "FeedbackProvider.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "graph",
->           "type": "folder",
->           "children": [
->             {
->               "name": "ResourceDetailPanel.tsx",
->               "type": "file"
->             },
->             {
->               "name": "ResourceNode.tsx",
->               "type": "file"
->             },
->             {
->               "name": "StackMapCanvas.tsx",
->               "type": "file"
->             },
->             {
->               "name": "StackPreview.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "icons",
->           "type": "folder",
->           "children": [
->             {
->               "name": "qi-icons.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "layout",
->           "type": "folder",
->           "children": [
->             {
->               "name": "AppShell.tsx",
->               "type": "file"
->             },
->             {
->               "name": "AuthBoundary.tsx",
->               "type": "file"
->             },
->             {
->               "name": "Sidebar.tsx",
->               "type": "file"
->             },
->             {
->               "name": "Topbar.tsx",
->               "type": "file"
->             },
->             {
->               "name": "TreeMenu.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "ui",
->           "type": "folder",
->           "children": [
->             {
->               "name": "InfoTip.tsx",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "data",
->       "type": "folder",
->       "children": [
->         {
->           "name": "blueprintSections.ts",
->           "type": "file"
->         },
->         {
->           "name": "captureModes.ts",
->           "type": "file"
->         },
->         {
->           "name": "knowledgeDocs.ts",
->           "type": "file"
->         },
->         {
->           "name": "knowledgeLinks.ts",
->           "type": "file"
->         },
->         {
->           "name": "launcherApps.ts",
->           "type": "file"
->         },
->         {
->           "name": "patientArchive.ts",
->           "type": "file"
->         },
->         {
->           "name": "resources.ts",
->           "type": "file"
->         },
->         {
->           "name": "roadmapPhases.ts",
->           "type": "file"
->         },
->         {
->           "name": "serviceLinks.ts",
->           "type": "file"
->         },
->         {
->           "name": "storageBuckets.ts",
->           "type": "file"
->         },
->         {
->           "name": "systemModules.ts",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "features",
->       "type": "folder",
->       "children": [
->         {
->           "name": "00_home",
->           "type": "folder",
->           "children": [
->             {
->               "name": "HomePage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "01_start",
->           "type": "folder",
->           "children": [
->             {
->               "name": "StartPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "02_server",
->           "type": "folder",
->           "children": [
->             {
->               "name": "ServerPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "03_capture",
->           "type": "folder",
->           "children": [
->             {
->               "name": "CapturePage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "QuickCapturePage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "captureDraftStore.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "04_knowledge",
->           "type": "folder",
->           "children": [
->             {
->               "name": "KnowledgePage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "PatientArchivePage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "docs-routes.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "05_memory",
->           "type": "folder",
->           "children": [
->             {
->               "name": "MemoryPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "06_insights",
->           "type": "folder",
->           "children": [
->             {
->               "name": "InsightsPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "07_system",
->           "type": "folder",
->           "children": [
->             {
->               "name": "SystemAccessPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemBlueprintPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemDiagnosticsPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemIntegrationsPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemLayout.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemOverviewPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemRoadmapPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemSectionPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemSecurityPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemServerPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemSettingsPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "SystemStoragePage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "08_sections",
->           "type": "folder",
->           "children": [
->             {
->               "name": "SectionPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "dashboard",
->           "type": "folder",
->           "children": [
->             {
->               "name": "DashboardPage.tsx",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "resources",
->           "type": "folder",
->           "children": [
->             {
->               "name": "ResourcesPage.tsx",
->               "type": "file"
->             },
->             {
->               "name": "registry-store.tsx",
->               "type": "file"
->             }
->           ]
->         }
->       ]
->     },
->     {
->       "name": "lib",
->       "type": "folder",
->       "children": [
->         {
->           "name": "status",
->           "type": "folder",
->           "children": [
->             {
->               "name": "resource-status.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "supabase",
->           "type": "folder",
->           "children": [
->             {
->               "name": "client.ts",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "navigation.ts",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "types",
->       "type": "folder",
->       "children": [
->         {
->           "name": "resource.ts",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "index.css",
->       "type": "file"
->     },
->     {
->       "name": "main.tsx",
->       "type": "file"
->     },
->     {
->       "name": "vite-env.d.ts",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-05-17T04:26:59.156Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> here is the current src folder fyi. {
+
+>   "name": "src",
+
+>   "path": "c:\\QiLabs\\_QiAccess_Start\\src",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "app",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "App.tsx",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "routes.tsx",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "components",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "cards",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "LaunchCard.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ResourceCard.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ResourceEditorDrawer.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "StatusCard.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "command",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "CommandBar.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "docs",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "DocLayout.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "KnowledgeDocArticle.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "MDXProvider.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "feedback",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "FeedbackProvider.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "graph",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "ResourceDetailPanel.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ResourceNode.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "StackMapCanvas.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "StackPreview.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "icons",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "qi-icons.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "layout",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "AppShell.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "AuthBoundary.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Sidebar.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "Topbar.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "TreeMenu.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "ui",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "InfoTip.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "data",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "blueprintSections.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "captureModes.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "knowledgeDocs.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "knowledgeLinks.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "launcherApps.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "patientArchive.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "resources.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "roadmapPhases.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "serviceLinks.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "storageBuckets.ts",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "systemModules.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "features",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "00_home",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "HomePage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "01_start",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "StartPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "02_server",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "ServerPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "03_capture",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "CapturePage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "QuickCapturePage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "captureDraftStore.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "04_knowledge",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "KnowledgePage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "PatientArchivePage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "docs-routes.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "05_memory",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "MemoryPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "06_insights",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "InsightsPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "07_system",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "SystemAccessPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemBlueprintPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemDiagnosticsPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemIntegrationsPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemLayout.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemOverviewPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemRoadmapPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemSectionPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemSecurityPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemServerPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemSettingsPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "SystemStoragePage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "08_sections",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "SectionPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "dashboard",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "DashboardPage.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "resources",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "ResourcesPage.tsx",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "registry-store.tsx",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "lib",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "status",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "resource-status.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "supabase",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "client.ts",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "navigation.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "types",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "resource.ts",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "index.css",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "main.tsx",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "vite-env.d.ts",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-05-17T04:26:59.156Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -1742,81 +2185,156 @@ canonical_ref: ""
 > That gives you the future pipeline without overbuilding the first version.
 
 ### User
-> capture mode exists export type CaptureTargetId = "qinexus-inbox" | "paperless" | "knowledge" | "system-storage";
-> 
-> export type CaptureModeId =
->   | "quick-note"
->   | "task-reminder"
->   | "care-observation"
->   | "legal-finance"
->   | "link-save";
-> 
-> export type CaptureMode = {
->   id: CaptureModeId;
->   title: string;
->   description: string;
->   draftPlaceholder: string;
->   coaching: string;
->   bucketId: string;
->   bucketReason: string;
->   recommendedTargets: CaptureTargetId[];
-> };
-> 
-> export const captureModes: CaptureMode[] = [
->   {
->     id: "quick-note",
->     title: "Quick note",
->     description: "Dump a thought before it disappears.",
->     draftPlaceholder: "Write the thought in one or two sentences while it is still fresh...",
->     coaching: "Capture first. Sort later.",
->     bucketId: "qinexus-inbox",
->     bucketReason: "Unsorted ideas belong in the inbox until you know where they actually go.",
->     recommendedTargets: ["qinexus-inbox", "knowledge"],
->   },
->   {
->     id: "task-reminder",
->     title: "Task / reminder",
->     description: "Capture a next action or follow-up.",
->     draftPlaceholder: "Write the task, who it belongs to, and the trigger or deadline...",
->     coaching: "Include the action, owner, and trigger.",
->     bucketId: "projects",
->     bucketReason: "Work-shaped reminders should land near active project material after the first capture.",
->     recommendedTargets: ["qinexus-inbox", "system-storage"],
->   },
->   {
->     id: "care-observation",
->     title: "Care observation",
->     description: "Log a real-world care note or follow-up.",
->     draftPlaceholder: "Note what happened, when it happened, and what needs follow-up...",
->     coaching: "Keep the observation factual and time-bound.",
->     bucketId: "people",
->     bucketReason: "Care and household context belongs with people-centered records and timelines.",
->     recommendedTargets: ["qinexus-inbox", "paperless"],
->   },
->   {
->     id: "legal-finance",
->     title: "Legal / finance note",
->     description: "Save a sensitive note that should not get lost.",
->     draftPlaceholder: "Capture names, dates, amounts, documents, and the exact next step...",
->     coaching: "Preserve the exact details while they are fresh.",
->     bucketId: "finance",
->     bucketReason: "Sensitive legal and finance material should be routed toward the finance bucket once triaged.",
->     recommendedTargets: ["qinexus-inbox", "system-storage"],
->   },
->   {
->     id: "link-save",
->     title: "Link save",
->     description: "Stash a URL for later classification.",
->     draftPlaceholder: "Paste the link and why it matters so it does not become an orphaned bookmark...",
->     coaching: "Always save the why, not just the URL.",
->     bucketId: "tech",
->     bucketReason: "Reference links usually become technical or knowledge material after capture.",
->     recommendedTargets: ["knowledge", "qinexus-inbox"],
->   },
-> ];
-> 
-> export function resolveCaptureMode(modeId: string | null | undefined) {
->   return captureModes.find((mode) => mode.id === modeId) ?? captureModes[0];
+> capture mode exists export type CaptureTargetId = "qinexus-inbox" | "paperless" | "knowledge" | "system-storage";
+
+> 
+
+> export type CaptureModeId =
+
+>   | "quick-note"
+
+>   | "task-reminder"
+
+>   | "care-observation"
+
+>   | "legal-finance"
+
+>   | "link-save";
+
+> 
+
+> export type CaptureMode = {
+
+>   id: CaptureModeId;
+
+>   title: string;
+
+>   description: string;
+
+>   draftPlaceholder: string;
+
+>   coaching: string;
+
+>   bucketId: string;
+
+>   bucketReason: string;
+
+>   recommendedTargets: CaptureTargetId[];
+
+> };
+
+> 
+
+> export const captureModes: CaptureMode[] = [
+
+>   {
+
+>     id: "quick-note",
+
+>     title: "Quick note",
+
+>     description: "Dump a thought before it disappears.",
+
+>     draftPlaceholder: "Write the thought in one or two sentences while it is still fresh...",
+
+>     coaching: "Capture first. Sort later.",
+
+>     bucketId: "qinexus-inbox",
+
+>     bucketReason: "Unsorted ideas belong in the inbox until you know where they actually go.",
+
+>     recommendedTargets: ["qinexus-inbox", "knowledge"],
+
+>   },
+
+>   {
+
+>     id: "task-reminder",
+
+>     title: "Task / reminder",
+
+>     description: "Capture a next action or follow-up.",
+
+>     draftPlaceholder: "Write the task, who it belongs to, and the trigger or deadline...",
+
+>     coaching: "Include the action, owner, and trigger.",
+
+>     bucketId: "projects",
+
+>     bucketReason: "Work-shaped reminders should land near active project material after the first capture.",
+
+>     recommendedTargets: ["qinexus-inbox", "system-storage"],
+
+>   },
+
+>   {
+
+>     id: "care-observation",
+
+>     title: "Care observation",
+
+>     description: "Log a real-world care note or follow-up.",
+
+>     draftPlaceholder: "Note what happened, when it happened, and what needs follow-up...",
+
+>     coaching: "Keep the observation factual and time-bound.",
+
+>     bucketId: "people",
+
+>     bucketReason: "Care and household context belongs with people-centered records and timelines.",
+
+>     recommendedTargets: ["qinexus-inbox", "paperless"],
+
+>   },
+
+>   {
+
+>     id: "legal-finance",
+
+>     title: "Legal / finance note",
+
+>     description: "Save a sensitive note that should not get lost.",
+
+>     draftPlaceholder: "Capture names, dates, amounts, documents, and the exact next step...",
+
+>     coaching: "Preserve the exact details while they are fresh.",
+
+>     bucketId: "finance",
+
+>     bucketReason: "Sensitive legal and finance material should be routed toward the finance bucket once triaged.",
+
+>     recommendedTargets: ["qinexus-inbox", "system-storage"],
+
+>   },
+
+>   {
+
+>     id: "link-save",
+
+>     title: "Link save",
+
+>     description: "Stash a URL for later classification.",
+
+>     draftPlaceholder: "Paste the link and why it matters so it does not become an orphaned bookmark...",
+
+>     coaching: "Always save the why, not just the URL.",
+
+>     bucketId: "tech",
+
+>     bucketReason: "Reference links usually become technical or knowledge material after capture.",
+
+>     recommendedTargets: ["knowledge", "qinexus-inbox"],
+
+>   },
+
+> ];
+
+> 
+
+> export function resolveCaptureMode(modeId: string | null | undefined) {
+
+>   return captureModes.find((mode) => mode.id === modeId) ?? captureModes[0];
+
 > }
 
 ### Assistant
@@ -2884,197 +3402,388 @@ canonical_ref: ""
 > This gives you the exact utility you need without turning it into a bloated app. First version: generate the map. Later version can add checkboxes, drag/drop, compare snapshots, and auto-open the Markdown.
 
 ### User
-> the main script should follow this example # file: rule_tester.py
-> # purpose: Toolbox tool module for Rule Tester in the dev bucket. Provides RuleTesterTool for the QiOne Desktop Tools UI.
-> # usage: Loaded by the QiOne toolbox build system and launched from main_ui.py.
-> # inputs: User-selected target directory and tool-specific UI options.
-> # outputs: Tool-specific logs, generated files, or file operations depending on selected mode.
-> # safety: Supports scan/dry-run vs live execution through the QiOne toolbox shell when implemented by the tool.
-> # owner: QiLabs
-> 
-> # tools/rule_tester.py
-> import os
-> import tkinter as tk
-> from tkinter import ttk
-> from rapidfuzz import fuzz
-> 
-> from core.base_tool import BaseTool
-> 
-> 
-> class RuleTesterTool(BaseTool):
->     def __init__(self):
->         self.cancel_requested = False
->         self.default_rules = (
->             "tax, w2, 1099 = Finances/Taxes\n"
->             "invoice, receipt = Finances/Invoices\n"
->             ".mp4, .mov, video = Media/Videos\n"
->             "bbr4821 = Clients/BBR4821\n"
->             ".exe, .msi = System/Installers\n"
->             "* = Unsorted_Review_Needed\n"
->         )
->         self.fuzzy_threshold = 70
-> 
->     def get_name(self):
->         return "🧪 Rule Tester"
-> 
->     def build_ui(self, parent):
->         ttk.Label(
->             parent,
->             text="Routing Rules:",
->             background="#0f0f11",
->             foreground="white"
->         ).pack(anchor="w", pady=(0, 5))
-> 
->         self.rules_text = tk.Text(
->             parent,
->             bg="#1c1c1e",
->             fg="#32d74b",
->             font=("Consolas", 10),
->             height=10,
->             relief="flat",
->             padx=10,
->             pady=10
->         )
->         self.rules_text.pack(fill="x", pady=(0, 8))
->         self.rules_text.insert("1.0", self.default_rules)
-> 
->     def parse_rules(self):
->         raw = self.rules_text.get("1.0", tk.END).strip()
->         rules = {}
-> 
->         for line in raw.splitlines():
->             line = line.strip()
->             if not line or line.startswith("#") or "=" not in line:
->                 continue
-> 
->             left, right = line.split("=", 1)
->             dest = right.strip().strip("/\\")
-> 
->             for key in left.split(","):
->                 key = key.strip().lower()
->                 if key:
->                     rules[key] = dest
-> 
->         return rules
-> 
->     def execute(self, target_path, is_live, log, prog):
->         rules = self.parse_rules()
-> 
->         files = [
->             f for f in os.listdir(target_path)
->             if os.path.isfile(os.path.join(target_path, f))
->         ]
-> 
->         if not files:
->             log("❌ No files found.")
->             return
-> 
->         total = len(files)
->         log("🧪 RULE TESTER")
->         log("-" * 40)
-> 
->         for i, file in enumerate(files, start=1):
->             if self.cancel_requested:
->                 log("🛑 Cancelled by user.")
->                 break
-> 
->             name = file.lower()
->             _, ext = os.path.splitext(name)
-> 
->             matched_key = None
->             matched_dest = None
->             confidence = 100
->             method = "none"
-> 
->             if ext in rules:
->                 matched_key = ext
->                 matched_dest = rules[ext]
->                 method = "extension"
->             else:
->                 for key, dest in rules.items():
->                     if key != "*" and not key.startswith(".") and key in name:
->                         matched_key = key
->                         matched_dest = dest
->                         method = "keyword"
->                         break
-> 
->             if not matched_dest:
->                 best_score = 0
->                 best_key = None
->                 best_dest = None
-> 
->                 for key, dest in rules.items():
->                     if key == "*" or key.startswith("."):
->                         continue
-> 
->                     score = fuzz.partial_ratio(key, name)
->                     if score > best_score:
->                         best_score = score
->                         best_key = key
->                         best_dest = dest
-> 
->                 if best_score >= self.fuzzy_threshold:
->                     matched_key = best_key
->                     matched_dest = best_dest
->                     confidence = best_score
->                     method = "fuzzy"
-> 
->             if not matched_dest and "*" in rules:
->                 matched_key = "*"
->                 matched_dest = rules["*"]
->                 confidence = 0
->                 method = "fallback"
-> 
->             log(f"{file}")
->             log(f"   method: {method}")
->             log(f"   rule: {matched_key}")
->             log(f"   confidence: {confidence}%")
->             log(f"   destination: {matched_dest}")
->             log("")
-> 
->             prog((i / total) * 100)
-> 
->         log("-" * 40)
->         log("✅ Rule testing complete.") and this example manifest. id: toolbox.dev.rule_tester
-> name: Rule Tester
-> type: toolbox_tool
-> language: python
-> status: active
-> owner: QiLabs
-> 
-> module:
->   package: tools.dev.rule_tester
->   file: rule_tester.py
->   class_name: RuleTesterTool
->   entrypoint: RuleTesterTool
-> 
-> toolbox:
->   ui_enabled: true
->   bucket: dev
->   category: dev
->   launch_surface:
->     - QiOne Desktop Tools
->   requires_target_directory: true
-> 
-> runtime:
->   requires_network: false
->   requires_secrets: false
-> 
-> safety:
->   supports_dry_run: true
->   supports_live_run: true
->   deletes_files: unknown
->   moves_files: unknown
->   modifies_files: unknown
->   review_before_live: true
-> 
-> paths:
->   source: tools/dev/rule_tester/rule_tester.py
->   readme: tools/dev/rule_tester/README.md
-> 
-> tags:
->   - toolbox
->   - dev
+> the main script should follow this example # file: rule_tester.py
+
+> # purpose: Toolbox tool module for Rule Tester in the dev bucket. Provides RuleTesterTool for the QiOne Desktop Tools UI.
+
+> # usage: Loaded by the QiOne toolbox build system and launched from main_ui.py.
+
+> # inputs: User-selected target directory and tool-specific UI options.
+
+> # outputs: Tool-specific logs, generated files, or file operations depending on selected mode.
+
+> # safety: Supports scan/dry-run vs live execution through the QiOne toolbox shell when implemented by the tool.
+
+> # owner: QiLabs
+
+> 
+
+> # tools/rule_tester.py
+
+> import os
+
+> import tkinter as tk
+
+> from tkinter import ttk
+
+> from rapidfuzz import fuzz
+
+> 
+
+> from core.base_tool import BaseTool
+
+> 
+
+> 
+
+> class RuleTesterTool(BaseTool):
+
+>     def __init__(self):
+
+>         self.cancel_requested = False
+
+>         self.default_rules = (
+
+>             "tax, w2, 1099 = Finances/Taxes\n"
+
+>             "invoice, receipt = Finances/Invoices\n"
+
+>             ".mp4, .mov, video = Media/Videos\n"
+
+>             "bbr4821 = Clients/BBR4821\n"
+
+>             ".exe, .msi = System/Installers\n"
+
+>             "* = Unsorted_Review_Needed\n"
+
+>         )
+
+>         self.fuzzy_threshold = 70
+
+> 
+
+>     def get_name(self):
+
+>         return "🧪 Rule Tester"
+
+> 
+
+>     def build_ui(self, parent):
+
+>         ttk.Label(
+
+>             parent,
+
+>             text="Routing Rules:",
+
+>             background="#0f0f11",
+
+>             foreground="white"
+
+>         ).pack(anchor="w", pady=(0, 5))
+
+> 
+
+>         self.rules_text = tk.Text(
+
+>             parent,
+
+>             bg="#1c1c1e",
+
+>             fg="#32d74b",
+
+>             font=("Consolas", 10),
+
+>             height=10,
+
+>             relief="flat",
+
+>             padx=10,
+
+>             pady=10
+
+>         )
+
+>         self.rules_text.pack(fill="x", pady=(0, 8))
+
+>         self.rules_text.insert("1.0", self.default_rules)
+
+> 
+
+>     def parse_rules(self):
+
+>         raw = self.rules_text.get("1.0", tk.END).strip()
+
+>         rules = {}
+
+> 
+
+>         for line in raw.splitlines():
+
+>             line = line.strip()
+
+>             if not line or line.startswith("#") or "=" not in line:
+
+>                 continue
+
+> 
+
+>             left, right = line.split("=", 1)
+
+>             dest = right.strip().strip("/\\")
+
+> 
+
+>             for key in left.split(","):
+
+>                 key = key.strip().lower()
+
+>                 if key:
+
+>                     rules[key] = dest
+
+> 
+
+>         return rules
+
+> 
+
+>     def execute(self, target_path, is_live, log, prog):
+
+>         rules = self.parse_rules()
+
+> 
+
+>         files = [
+
+>             f for f in os.listdir(target_path)
+
+>             if os.path.isfile(os.path.join(target_path, f))
+
+>         ]
+
+> 
+
+>         if not files:
+
+>             log("❌ No files found.")
+
+>             return
+
+> 
+
+>         total = len(files)
+
+>         log("🧪 RULE TESTER")
+
+>         log("-" * 40)
+
+> 
+
+>         for i, file in enumerate(files, start=1):
+
+>             if self.cancel_requested:
+
+>                 log("🛑 Cancelled by user.")
+
+>                 break
+
+> 
+
+>             name = file.lower()
+
+>             _, ext = os.path.splitext(name)
+
+> 
+
+>             matched_key = None
+
+>             matched_dest = None
+
+>             confidence = 100
+
+>             method = "none"
+
+> 
+
+>             if ext in rules:
+
+>                 matched_key = ext
+
+>                 matched_dest = rules[ext]
+
+>                 method = "extension"
+
+>             else:
+
+>                 for key, dest in rules.items():
+
+>                     if key != "*" and not key.startswith(".") and key in name:
+
+>                         matched_key = key
+
+>                         matched_dest = dest
+
+>                         method = "keyword"
+
+>                         break
+
+> 
+
+>             if not matched_dest:
+
+>                 best_score = 0
+
+>                 best_key = None
+
+>                 best_dest = None
+
+> 
+
+>                 for key, dest in rules.items():
+
+>                     if key == "*" or key.startswith("."):
+
+>                         continue
+
+> 
+
+>                     score = fuzz.partial_ratio(key, name)
+
+>                     if score > best_score:
+
+>                         best_score = score
+
+>                         best_key = key
+
+>                         best_dest = dest
+
+> 
+
+>                 if best_score >= self.fuzzy_threshold:
+
+>                     matched_key = best_key
+
+>                     matched_dest = best_dest
+
+>                     confidence = best_score
+
+>                     method = "fuzzy"
+
+> 
+
+>             if not matched_dest and "*" in rules:
+
+>                 matched_key = "*"
+
+>                 matched_dest = rules["*"]
+
+>                 confidence = 0
+
+>                 method = "fallback"
+
+> 
+
+>             log(f"{file}")
+
+>             log(f"   method: {method}")
+
+>             log(f"   rule: {matched_key}")
+
+>             log(f"   confidence: {confidence}%")
+
+>             log(f"   destination: {matched_dest}")
+
+>             log("")
+
+> 
+
+>             prog((i / total) * 100)
+
+> 
+
+>         log("-" * 40)
+
+>         log("✅ Rule testing complete.") and this example manifest. id: toolbox.dev.rule_tester
+
+> name: Rule Tester
+
+> type: toolbox_tool
+
+> language: python
+
+> status: active
+
+> owner: QiLabs
+
+> 
+
+> module:
+
+>   package: tools.dev.rule_tester
+
+>   file: rule_tester.py
+
+>   class_name: RuleTesterTool
+
+>   entrypoint: RuleTesterTool
+
+> 
+
+> toolbox:
+
+>   ui_enabled: true
+
+>   bucket: dev
+
+>   category: dev
+
+>   launch_surface:
+
+>     - QiOne Desktop Tools
+
+>   requires_target_directory: true
+
+> 
+
+> runtime:
+
+>   requires_network: false
+
+>   requires_secrets: false
+
+> 
+
+> safety:
+
+>   supports_dry_run: true
+
+>   supports_live_run: true
+
+>   deletes_files: unknown
+
+>   moves_files: unknown
+
+>   modifies_files: unknown
+
+>   review_before_live: true
+
+> 
+
+> paths:
+
+>   source: tools/dev/rule_tester/rule_tester.py
+
+>   readme: tools/dev/rule_tester/README.md
+
+> 
+
+> tags:
+
+>   - toolbox
+
+>   - dev
+
 >   - qione
 
 ### Assistant
@@ -4831,7 +5540,8 @@ canonical_ref: ""
 > That is scalable without turning the first version into a spaceship.
 
 ### User
-> ofr youFailed to run sql query: ERROR:  23502: null value in column "owner_id" of relation "dev_history" violates not-null constraint
+> ofr youFailed to run sql query: ERROR:  23502: null value in column "owner_id" of relation "dev_history" violates not-null constraint
+
 > DETAIL:  Failing row contains (1b0bdcf1-d546-4011-9737-6414d8d4f3d8, null, DEV-20260516-directory-markmind-mapper, dev_session, 1.0, 2026-05-17, Directory Markmind Mapper Toolbox Tool, QiOne Toolbox / QiAccess Start, c:\QiLabs\toolbox, null, sys_directory_markmind_mapper, tool_build, planned, Planned a QiOne toolbox utility that walks a selected directory ..., Create a reusable system documentation utility for mapping repo ..., null, null, We were building a QiOne toolbox tool called Directory Markmind ..., [{"reason": "Matches existing BaseTool architecture", "status": ..., [], [], [], [], [], [], [], [], [{"notes": "Use the finalized Codex prompt", "owner": "Cody", "a..., null, {toolbox,sys,qione,directory-map,markmind}, {tools/sys/directory_markmind_mapper/directory_markmind_mapper.p..., {dev_history}, {"QiOne Desktop Tools"}, {}, {}, qiaccess_capture, null, {}, 2026-05-17 04:54:12.439222+00, 2026-05-17 04:54:12.439222+00).
 
 ### Assistant
@@ -5116,10 +5826,14 @@ canonical_ref: ""
 > That’s the clean split. The MD is the receipt. Supabase is the ledger. The template is the form.
 
 ### User
-> Traceback (most recent call last):
->   File "main_ui.py", line 23, in <module>
->   File "pyimod02_importers.py", line 457, in exec_module
->   File "tools\system\sys_directory_markmind_mapper\__init__.py", line 3, in <module>
+> Traceback (most recent call last):
+
+>   File "main_ui.py", line 23, in <module>
+
+>   File "pyimod02_importers.py", line 457, in exec_module
+
+>   File "tools\system\sys_directory_markmind_mapper\__init__.py", line 3, in <module>
+
 > ModuleNotFoundError: No module named 'tools.system.sys_directory_markmind_mapper.SysDirectoryMarkmindMapperTool'
 
 ### Assistant

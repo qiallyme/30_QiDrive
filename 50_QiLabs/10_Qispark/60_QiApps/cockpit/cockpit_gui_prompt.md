@@ -4,17 +4,17 @@ title: QiOS Cockpit GUI Development Prompt
 slug: cockpit_gui_prompt
 summary: Development prompt for building QiOS Cockpit GUI - a local-first status dashboard for the QiOS worker ecosystem
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:40-04:00"
 sensitivity: internal
 classification: system_darkmatter
 context: Cursor project prompt for building QiOS Cockpit GUI dashboard
-tags:
+tags: []
   - prompt
   - cursor
   - development
   - ui
   - qispark
-keywords:
+keywords: []
   - prompt
   - cursor
   - GUI
@@ -35,12 +35,12 @@ naming_strategy: slug_only
 sort: 0
 graph_weight: 5
 orbit: inner
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 realm_label: ""
-uid: ""
+uid: aa3fe27dbfb8403fa1289a49d048ee62
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Download Family Wall Example"
 slug: "download_family_wall_example"
 created_at: "2026-05-27 15:19:34"
-updated_at: "2026-05-27 15:19:34"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -669,10 +669,14 @@ canonical_ref: ""
 > That gives me enough to understand the stack, routing, structure, dependencies, and whether this is a clean example app or a cursed spaghetti monster wearing a dashboard costume.
 
 ### User
-> qiadmin@qiserver:/srv/qios/apps$ cd /srv/qios/apps
-> git clone git@github.com-qidocs:qiallyme/HomeHubExample.git
-> fatal: destination path 'HomeHubExample' already exists and is not an empty directory.
-> qiadmin@qiserver:/srv/qios/apps$ ^C
+> qiadmin@qiserver:/srv/qios/apps$ cd /srv/qios/apps
+
+> git clone git@github.com-qidocs:qiallyme/HomeHubExample.git
+
+> fatal: destination path 'HomeHubExample' already exists and is not an empty directory.
+
+> qiadmin@qiserver:/srv/qios/apps$ ^C
+
 > qiadmin@qiserver:/srv/qios/apps$
 
 ### Assistant

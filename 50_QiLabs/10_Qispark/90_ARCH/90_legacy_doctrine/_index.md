@@ -4,12 +4,12 @@ title: QiSpark Legacy Doctrine Sources
 slug: qispark-legacy-doctrine-sources
 summary: Older technical doctrine retained as reference material for future QiSpark updates.
 status: legacy-reference
-updated_at: "2026-06-30"
-tags:
+updated_at: "2026-07-16T06:49:40-04:00"
+tags: []
   - qispark
   - legacy-doctrine
 source_type: manual
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 12378644550f478584e625b2711a199c
 canonical_ref: ""
 template_key: master-template
 ---

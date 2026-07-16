@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "Developed 'Manual to Me' - personal user guide for self-advocacy"
 slug: "developed_manual_to_me_personal_user_guide_for_self_advocacy"
 summary: ""
 status: active
 created_at: "2024-01-01"
-updated_at: "2024-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 7211403f97a54055ae3770d55e7a6ff0
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-01-01
 ---
+
 # Developed 'Manual to Me' - personal user guide for self-advocacy
 
 Category: Personal Milestone

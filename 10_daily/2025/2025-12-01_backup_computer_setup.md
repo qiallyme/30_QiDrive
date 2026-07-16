@@ -3,9 +3,9 @@ layout: page
 title: "Backup computer setup"
 slug: "backup_computer_setup"
 created_at: "2025-12-01 07:19:09"
-updated_at: "2025-12-01 07:19:09"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -603,10 +603,14 @@ canonical_ref: ""
 > No guessing. No slogging. Just fixing.
 
 ### User
-> C:\Users\codyr>curl -v https://qigate2.cerberus-sirius.ts.net
-> * Host qigate2.cerberus-sirius.ts.net:443 was resolved.
-> * IPv6: (none)
-> * IPv4: 100.93.140.115
+> C:\Users\codyr>curl -v https://qigate2.cerberus-sirius.ts.net
+
+> * Host qigate2.cerberus-sirius.ts.net:443 was resolved.
+
+> * IPv6: (none)
+
+> * IPv4: 100.93.140.115
+
 > *   Trying 100.93.140.115:443...
 
 ### Assistant
@@ -717,12 +721,18 @@ canonical_ref: ""
 > No guessing. No BS. Just the fix.
 
 ### User
-> C:\Users\codyr>tailscale funnel status
-> 
-> # Funnel on:
-> 
-> No serve config
-> 
+> C:\Users\codyr>tailscale funnel status
+
+> 
+
+> # Funnel on:
+
+> 
+
+> No serve config
+
+> 
+
 > C:\Users\codyr>
 
 ### Assistant
@@ -907,10 +917,14 @@ canonical_ref: ""
 > If that doesn’t work after those exact steps, then the problem is deeper (permissions, user context, or Tailscale version), but this is the correct wiring.
 
 ### User
-> C:\Users\codyr>netstat -ano | findstr 7130
->   TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
->   TCP    [::]:7130              [::]:0                 LISTENING       4188
-> 
+> C:\Users\codyr>netstat -ano | findstr 7130
+
+>   TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
+
+>   TCP    [::]:7130              [::]:0                 LISTENING       4188
+
+> 
+
 > C:\Users\codyr>
 
 ### Assistant
@@ -1027,32 +1041,58 @@ canonical_ref: ""
 > after running the commands — and I’ll confirm if the wiring is clean.
 
 ### User
-> TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
->   TCP    [::]:7130              [::]:0                 LISTENING       4188
-> 
-> C:\Users\codyr>tailscale serve https / http://localhost:7130
-> Error: the CLI for serve and funnel has changed. You can run the following command instead:
->         - tailscale serve --bg http://localhost:7130
-> 
-> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
-> try `tailscale serve --help` for usage info
-> 
-> C:\Users\codyr>tailscale serve --bg http://localhost:7130
-> foreground already exists under this port
-> 
-> C:\Users\codyr>tailscale serve https / http://localhost:7130
-> Error: the CLI for serve and funnel has changed. You can run the following command instead:
->         - tailscale serve --bg http://localhost:7130
-> 
-> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
-> try `tailscale serve --help` for usage info
-> 
-> C:\Users\codyr>tailscale serve status
-> 
-> # Funnel on:
-> 
-> No serve config
-> 
+> TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
+
+>   TCP    [::]:7130              [::]:0                 LISTENING       4188
+
+> 
+
+> C:\Users\codyr>tailscale serve https / http://localhost:7130
+
+> Error: the CLI for serve and funnel has changed. You can run the following command instead:
+
+>         - tailscale serve --bg http://localhost:7130
+
+> 
+
+> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
+
+> try `tailscale serve --help` for usage info
+
+> 
+
+> C:\Users\codyr>tailscale serve --bg http://localhost:7130
+
+> foreground already exists under this port
+
+> 
+
+> C:\Users\codyr>tailscale serve https / http://localhost:7130
+
+> Error: the CLI for serve and funnel has changed. You can run the following command instead:
+
+>         - tailscale serve --bg http://localhost:7130
+
+> 
+
+> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
+
+> try `tailscale serve --help` for usage info
+
+> 
+
+> C:\Users\codyr>tailscale serve status
+
+> 
+
+> # Funnel on:
+
+> 
+
+> No serve config
+
+> 
+
 > C:\Users\codyr>
 
 ### Assistant
@@ -1230,91 +1270,176 @@ canonical_ref: ""
 > Now we’re just forcing Tailscale into a sane config despite its “the CLI has changed” tantrum.
 
 ### User
-> Microsoft Windows [Version 10.0.26120.5733]
-> (c) Microsoft Corporation. All rights reserved.
-> 
-> C:\Users\codyr>netstat -ano | findstr 7130
->   TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
->   TCP    [::]:7130              [::]:0                 LISTENING       4188
-> 
-> C:\Users\codyr>tailscale serve https / http://localhost:7130
-> Error: the CLI for serve and funnel has changed. You can run the following command instead:
->         - tailscale serve --bg http://localhost:7130
-> 
-> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
-> try `tailscale serve --help` for usage info
-> 
-> C:\Users\codyr>tailscale serve --bg http://localhost:7130
-> foreground already exists under this port
-> 
-> C:\Users\codyr>tailscale serve https / http://localhost:7130
-> Error: the CLI for serve and funnel has changed. You can run the following command instead:
->         - tailscale serve --bg http://localhost:7130
-> 
-> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
-> try `tailscale serve --help` for usage info
-> 
-> C:\Users\codyr>tailscale serve status
-> 
-> # Funnel on:
-> 
-> No serve config
-> 
-> C:\Users\codyr>tailscale serve --help
-> Serve content and local servers on your tailnet
-> 
-> USAGE
->   tailscale serve <target>
->   tailscale serve status [--json]
->   tailscale serve reset
-> 
-> Tailscale Serve enables you to share a local server securely within your tailnet.
-> 
-> To share a local server on the internet, use `tailscale funnel`
-> 
-> <target> can be a file, directory, text, or most commonly the location to a service running on the
-> local machine. The location to the location service can be expressed as a port number (e.g., 3000),
-> a partial URL (e.g., localhost:3000), or a full URL including a path (e.g., http://localhost:3000/foo).
-> 
-> EXAMPLES
->   - Expose an HTTP server running at 127.0.0.1:3000 in the foreground:
->     $ tailscale serve 3000
-> 
->   - Expose an HTTP server running at 127.0.0.1:3000 in the background:
->     $ tailscale serve --bg 3000
-> 
->   - Expose an HTTPS server with invalid or self-signed certificates at https://localhost:8443
->     $ tailscale serve https+insecure://localhost:8443
-> 
-> For more examples and use cases visit our docs site https://tailscale.com/kb/1247/funnel-serve-use-cases
-> 
-> SUBCOMMANDS
->   status     View current serve configuration
->   reset      Reset current serve config
->   drain      Drain a service from the current node
->   clear      Remove all config for a service
->   advertise  Advertise this node as a service proxy to the tailnet
-> 
-> FLAGS
->   --bg, --bg=false
->         Run the command as a background process (default false, when --service is set defaults to true).
->   --http value
->         Expose an HTTP server at the specified port
->   --https value
->         Expose an HTTPS server at the specified port (default mode)
->   --service value
->         Serve for a service with distinct virtual IP instead on node itself.
->   --set-path value
->         Appends the specified path to the base URL for accessing the underlying service
->   --tcp value
->         Expose a TCP forwarder to forward raw TCP packets at the specified port
->   --tls-terminated-tcp value
->         Expose a TCP forwarder to forward TLS-terminated TCP packets at the specified port
->   --tun, --tun=false
->         Forward all traffic to the local machine (default false), only supported for services. Refer to docs for more information.
->   --yes, --yes=false
->         Update without interactive prompts (default false)
-> 
+> Microsoft Windows [Version 10.0.26120.5733]
+
+> (c) Microsoft Corporation. All rights reserved.
+
+> 
+
+> C:\Users\codyr>netstat -ano | findstr 7130
+
+>   TCP    0.0.0.0:7130           0.0.0.0:0              LISTENING       4188
+
+>   TCP    [::]:7130              [::]:0                 LISTENING       4188
+
+> 
+
+> C:\Users\codyr>tailscale serve https / http://localhost:7130
+
+> Error: the CLI for serve and funnel has changed. You can run the following command instead:
+
+>         - tailscale serve --bg http://localhost:7130
+
+> 
+
+> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
+
+> try `tailscale serve --help` for usage info
+
+> 
+
+> C:\Users\codyr>tailscale serve --bg http://localhost:7130
+
+> foreground already exists under this port
+
+> 
+
+> C:\Users\codyr>tailscale serve https / http://localhost:7130
+
+> Error: the CLI for serve and funnel has changed. You can run the following command instead:
+
+>         - tailscale serve --bg http://localhost:7130
+
+> 
+
+> Please see https://tailscale.com/kb/1242/tailscale-serve for more information.
+
+> try `tailscale serve --help` for usage info
+
+> 
+
+> C:\Users\codyr>tailscale serve status
+
+> 
+
+> # Funnel on:
+
+> 
+
+> No serve config
+
+> 
+
+> C:\Users\codyr>tailscale serve --help
+
+> Serve content and local servers on your tailnet
+
+> 
+
+> USAGE
+
+>   tailscale serve <target>
+
+>   tailscale serve status [--json]
+
+>   tailscale serve reset
+
+> 
+
+> Tailscale Serve enables you to share a local server securely within your tailnet.
+
+> 
+
+> To share a local server on the internet, use `tailscale funnel`
+
+> 
+
+> <target> can be a file, directory, text, or most commonly the location to a service running on the
+
+> local machine. The location to the location service can be expressed as a port number (e.g., 3000),
+
+> a partial URL (e.g., localhost:3000), or a full URL including a path (e.g., http://localhost:3000/foo).
+
+> 
+
+> EXAMPLES
+
+>   - Expose an HTTP server running at 127.0.0.1:3000 in the foreground:
+
+>     $ tailscale serve 3000
+
+> 
+
+>   - Expose an HTTP server running at 127.0.0.1:3000 in the background:
+
+>     $ tailscale serve --bg 3000
+
+> 
+
+>   - Expose an HTTPS server with invalid or self-signed certificates at https://localhost:8443
+
+>     $ tailscale serve https+insecure://localhost:8443
+
+> 
+
+> For more examples and use cases visit our docs site https://tailscale.com/kb/1247/funnel-serve-use-cases
+
+> 
+
+> SUBCOMMANDS
+
+>   status     View current serve configuration
+
+>   reset      Reset current serve config
+
+>   drain      Drain a service from the current node
+
+>   clear      Remove all config for a service
+
+>   advertise  Advertise this node as a service proxy to the tailnet
+
+> 
+
+> FLAGS
+
+>   --bg, --bg=false
+
+>         Run the command as a background process (default false, when --service is set defaults to true).
+
+>   --http value
+
+>         Expose an HTTP server at the specified port
+
+>   --https value
+
+>         Expose an HTTPS server at the specified port (default mode)
+
+>   --service value
+
+>         Serve for a service with distinct virtual IP instead on node itself.
+
+>   --set-path value
+
+>         Appends the specified path to the base URL for accessing the underlying service
+
+>   --tcp value
+
+>         Expose a TCP forwarder to forward raw TCP packets at the specified port
+
+>   --tls-terminated-tcp value
+
+>         Expose a TCP forwarder to forward TLS-terminated TCP packets at the specified port
+
+>   --tun, --tun=false
+
+>         Forward all traffic to the local machine (default false), only supported for services. Refer to docs for more information.
+
+>   --yes, --yes=false
+
+>         Update without interactive prompts (default false)
+
+> 
+
 > C:\Users\codyr
 
 ### Assistant

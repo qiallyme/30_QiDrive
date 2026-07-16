@@ -3,9 +3,9 @@ layout: page
 title: "Mindset vs Support Balance"
 slug: "mindset_vs_support_balance"
 created_at: "2026-05-11 17:03:14"
-updated_at: "2026-05-11 17:03:14"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

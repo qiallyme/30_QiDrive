@@ -1,14 +1,14 @@
 ---
-uid:
+uid: d9f8dce3e14b492c98fbd9e46b437a76
   49fa3aba-6764-49f2-ba0b-05995fe4d24b ...
   ...
 layout: page
 title: Adr 0002 Single Domain Rule
-slug: ""
+slug: adr-0002-single-domain-rule
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []

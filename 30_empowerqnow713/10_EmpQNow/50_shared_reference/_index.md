@@ -8,7 +8,7 @@ visibility: internal
 publish_target: none
 publish_url: /50 Tarot Raw
 created_at: "2026-07-08 03:55:46"
-updated_at: "2026-07-08 03:55:46"
+updated_at: "2026-07-16T06:49:34-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: "50 Tarot Raw"
@@ -18,16 +18,16 @@ nav_hidden: false
 is_index: true
 parent_ref: ""
 sensitivity: internal
-classification:
+classification: business_internal
   - blog-post
-realm_label:
+realm_label: ""
   - empowerqnow
-tags:
+tags: []
   - EmpowerQNow
 keywords: []
 aliases: []
 context: ""
-uid: ""
+uid: bd75ca1cbe10490fa865b29073838f77
 canonical_ref: ""
 source_type: manual
 template_key: master-template

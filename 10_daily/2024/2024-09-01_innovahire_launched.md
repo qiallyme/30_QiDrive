@@ -1,11 +1,11 @@
-﻿---
+---
 layout: page
 title: "InnovaHire launched"
 slug: "innovahire_launched"
 summary: ""
 status: active
 created_at: "2024-09-01"
-updated_at: "2024-09-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,12 +15,13 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5453a39fbe45414489aadbe39ea32072
 canonical_ref: ""
 source_type: manual
 template_key: master-template
 date: 2024-09-01
 ---
+
 # InnovaHire launched
 
 Category: Career

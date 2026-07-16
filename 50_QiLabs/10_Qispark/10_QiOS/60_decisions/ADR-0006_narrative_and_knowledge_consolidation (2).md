@@ -1,16 +1,16 @@
 ---
 title: 'ADR-0006: Narrative and Knowledge Layer Consolidation'
-status:
+status: active
   publish
   ...
 
 created_at: '2026-03-30'
-updated_at: '2026-03-30'
-author:
+updated_at: "2026-07-16T06:49:38-04:00"
+author: ""
   Antigravity ...
   ...
 
-source_type:
+source_type: manual
   manual ...
   ...
 
@@ -30,7 +30,7 @@ context_domain:
   core ...
   ...
 layout: page
-slug: ""
+slug: adr-0006-narrative-and-knowledge-layer-consolidation
 summary: ""
 owner: ""
 tags: []
@@ -40,7 +40,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: a26de83c197a489590d8232501eeaf2d
 canonical_ref: ""
 template_key: master-template
 ---

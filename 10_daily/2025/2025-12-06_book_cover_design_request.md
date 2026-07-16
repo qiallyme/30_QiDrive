@@ -3,9 +3,9 @@ layout: page
 title: "Book cover design request"
 slug: "book_cover_design_request"
 created_at: "2025-12-06 12:32:37"
-updated_at: "2025-12-06 12:32:37"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,14 +39,22 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> create a best selling book cover for this; 
-> 
-> Silence Isn’t Distance
-> 
-> The Inner World of People Who Feel Deeply, Think Too Much, and Shut Down to Cope
-> 
-> 
-> 
+> create a best selling book cover for this; 
+
+> 
+
+> Silence Isn’t Distance
+
+> 
+
+> The Inner World of People Who Feel Deeply, Think Too Much, and Shut Down to Cope
+
+> 
+
+> 
+
+> 
+
 > For the minds that run too fast, the hearts that feel too hard, and the people who disappear not to abandon others—but to survive themselves.
 
 ### User

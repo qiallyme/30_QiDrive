@@ -7,12 +7,12 @@ qi_decimal: 0.00.01-DOC
 qid:
 type: doc
 node: file
-keywords:
+keywords: []
   - markdownlint
   - linting
   - genesis
   - documentation
-tags:
+tags: []
   - linting
   - quality
   - documentation
@@ -36,13 +36,13 @@ summary: Analysis of markdownlint errors in 0.00.00-qios_genesis.md with QiOS co
 sensitivity: internal
 classification: business_internal
 layout: page
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 realm_label: ""
-uid: ""
+uid: 058ef2d7f13045c78e73313c1254b76a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

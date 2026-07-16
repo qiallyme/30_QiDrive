@@ -4,14 +4,14 @@ title: Strategy Template
 slug: strategy_template
 summary: Template for describing strategies to navigate clinical challenges
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting navigation strategies in clinical track
-tags:
+tags: []
   - template
   - strategy
   - clinical
   - empowerqnow713
-keywords:
+keywords: []
   - strategy
   - navigation
   - clinical
@@ -25,14 +25,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 2.5.0
 category: navigation_strategy
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 17991dec362645149294c093685b1857
 canonical_ref: ""
 template_key: master-template
 ---

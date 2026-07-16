@@ -3,9 +3,9 @@ layout: page
 title: "Build folder indexes"
 slug: "build_folder_indexes"
 created_at: "2025-12-20 14:30:26"
-updated_at: "2025-12-20 14:30:26"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,288 +39,570 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> here is the tree of the case and i need ti quickly build out the indexes and such so i can view on this on the go via cloudflare. ```markdown
-> . 📂 case_fcfcu_v_codyrv
-> └── 📂 00_admin/
-> │  └── 📂 00_drafts/
-> │    ├── 📄 04_Expense_Tracking_Template.csv
-> │    ├── 📄 Affidavit (1).docx
-> │    ├── 📄 Affidavit.docx
-> │    ├── 📄 Attorney one-pager intake brief.txt
-> │    ├── 📄 EMERGENCY MOTION TO STAY ENFORCEMENT OF WRIT.txt
-> │    ├── 📄 Emergency_Motion_Doc_Cody_Rice-Velasquez.docx
-> │    ├── 📄 Emergency_Stay (1).docx
-> │    ├── 📄 Emergency_Stay.docx
-> │    ├── 📄 Exhibit_List (1).docx
-> │    ├── 📄 Exhibit_List.docx
-> │    ├── 📄 MOTION TO VACATE VOID JUDGMENT.txt
-> │    ├── 📄 Motion_to_Vacate (1).docx
-> │    ├── 📄 Motion_to_Vacate.docx
-> │    ├── 📄 PROPOSED ORDER FOR EMERGENCY STAY.txt
-> │    ├── 📄 PROPOSED ORDER.txt
-> │    ├── 📄 Proposed_Order_Stay (1).docx
-> │    ├── 📄 Proposed_Order_Stay.docx
-> │    ├── 📄 Proposed_Order_Vacate (1).docx
-> │    ├── 📄 Proposed_Order_Vacate.docx
-> │    ├── 📄 UPDATED AFFIDAVIT LANGUAGE.txt
-> │    ├── 📄 VERIFIED AFFIDAVIT OF DEFENDANT.txt
-> │    ├── 📄 ada-packet.txt
-> │    ├── 📄 index.html
-> │    ├── 📄 lawyers to call and script.txt
-> │    ├── 📄 text 3.txt
-> │  └── 📂 10_meta/
-> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
-> │    ├── 📄 index.html
-> │  └── 📂 20_overviews/
-> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
-> │    ├── 📄 Procedural_failure_map_one_pager.md
-> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
-> │    ├── 📄 index.html
-> │  └── 📂 30_templates/
-> │    └── 📂 affidavits/
-> │      ├── 📄 ADA_Disability_Affidavit.md
-> │      ├── 📄 Character_Affidavit.md
-> │      ├── 📄 Community_Service_Affidavit.md
-> │      ├── 📄 Credibility_Affidavit.md
-> │      ├── 📄 Observations_Affidavit.md
-> │      ├── 📄 _Instructions_for_witnesses.md
-> │    └── 📂 declarations/
-> │      ├── 📄 Gender_Identity_Clarification.md
-> │      ├── 📄 _Declarations.md
-> │    └── 📂 exhibits/
-> │      ├── 📄 _Exhibits_Lists.md
-> │    └── 📂 motions/
-> │      ├── 📄 _Motions.md
-> │    └── 📂 outreach/
-> │      ├── 📄 _Advocate_Outreach_Message.md
-> │    └── 📂 proposed/
-> │      ├── 📄 Proposed_Orders.md
-> │  ├── 📄 One-page contingency plan if the judge denies emergency relief.txt
-> │  ├── 📄 One-page settlement strategy memo.txt
-> │  └── 📂 _trackers/
-> │    ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
-> │    ├── 📄 index.html
-> │  ├── 📄 case_conversation_log.txt
-> │  ├── 📄 index.html
-> │  └── 📂 logs/
-> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
-> │    ├── 📄 2025-12-16_case_log_entry.md
-> │    ├── 📄 2025-12-16_case_summary.md
-> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strategy_checkpoint (1).md
-> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strategy_checkpoint.md
-> └── 📂 01_timeline/
-> │  ├── 📄 05_Timeline_Worksheet.md
-> │  └── 📂 10_2023/
-> │    ├── 📄 index.html
-> │  ├── 📄 2025-12-15_visual_timeline_sheriff_removal_chain.md
-> │  └── 📂 20_2024/
-> │    ├── 📄 index.html
-> │  └── 📂 30_2025/
-> │    ├── 📄 index.html
-> │  └── 📂 40_2026/
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 02_filings/
-> │  └── 📂 10_2025-12-10_motion_vacate/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 Emergency Motions.docx
-> │      ├── 📄 index.html
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 01_motion_vacate.pdf
-> │      ├── 📄 02_emergency_motion_quash_stay.pdf
-> │      ├── 📄 03_order_vacate_proposed.pdf
-> │      ├── 📄 04_order_stay_writ_proposed.pdf
-> │      ├── 📄 05_Exhibit_List.pdf
-> │      ├── 📄 06_Exhibits_Combined.pdf
-> │      ├── 📄 combinepdf.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 03_proposed_order/
-> │      ├── 📄 Proposed_Order_Vacate.docx
-> │      ├── 📄 index.html
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
-> │    └── 📂 01_drafts/
-> │      ├── 📄 Supplemental_Emergency_Motion.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 02_exhibits/
-> │      ├── 📄 20_exhibits_combined_source
-> │      ├── 📄 Exhibit_H_Declaration.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 04_filed_receipts/
-> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
-> │      ├── 📄 index.html
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 03_strategy/
-> │  └── 📂 10_ada_title_ii/
-> │    ├── 📄 index.html
-> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
-> │    ├── 📄 index.html
-> │  └── 📂 30_void_vs_voidable_tr_60b/
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 04_evidence_vault/
-> │  └── 📂 00_EXHIBIT_SETS/
-> │    ├── 📄 _checklist.md
-> │    └── 📂 _exhibit_A-H_initial/
-> │      ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
-> │      ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
-> │      ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
-> │      ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
-> │      ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
-> │      ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
-> │      ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
-> │      ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
-> │      ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
-> │      ├── 📄 Exhibit_H_Declaration.pdf
-> │    └── 📂 exhibits_I_ada_communications/
-> │    └── 📂 exhibits_J_eviction_removal/
-> │    └── 📂 exhibits_K_financial/
-> │    └── 📂 exhibits_L_statements/
-> │    └── 📂 exhibits_M_court-service/
-> │    ├── 📄 index.html
-> │  └── 📂 20_RAW/
-> │    └── 📂 10_supporting/
-> │      └── 📂 10_photos_video/
-> │        ├── 📄 0e8e0b5ae1a733dd9620d0090634ea7fd966f9a6c8333e08aeca1e56802052d6.jpg
-> │        ├── 📄 0f1b843233ba7ddb4ba4b560416358d2095a0fa3c524c1691fa9399db4eadf1c.jpg
-> │        ├── 📄 19c0fed8e9ba0a5750366980bdb0db1a0ef3fc3a9f53fd60e96f8a20a6d0d3e4.jpg
-> │        ├── 📄 2024-12-14_outgoing_text_bank_access_request.png
-> │        ├── 📄 28ca5e2a39c88399dedc74fbb1a3c1e1b403a21bb4083ea306f95c11209c4254.jpg
-> │        ├── 📄 2CAA8E1B675120251209103140_album_local_cache.mp4
-> │        ├── 📄 2CAA8E246CB320251209103011_album_local_cache.mp4
-> │        ├── 📄 2CAA8E246CB3_1765294197.jpg
-> │        ├── 📄 2c8c8581924ff9ecdd1dad08757a92bdcfcf0d970abc1304a769b666578f9ef4.jpg
-> │        ├── 📄 41665fb4a804d26f92824d815c0eeb7e68f10074bb4f4be49e33e0082633274c.jpg
-> │        ├── 📄 41bd4551cdac08724bb9f090a0d806c96eadd8ebc18514523861cb670c5b94ca.jpg
-> │        ├── 📄 5fc31129b244643680e575d4180704684500c1ea93990fed6fc32fff3562c634.jpg
-> │        ├── 📄 703f273640ffe466f6b3db7cad679b586e92cdf1350ce0174afe5ca786253121.jpg
-> │        ├── 📄 7160561cdfb1affcbd0eeb521ed22d89f586c3701b9cb74b27f1b1e09020560f.jpg
-> │        ├── 📄 78c3f6e3ddc69ac55e9a375f0152600f7fc1cc17316966859a8a9e7ea7517c6d.jpg
-> │        ├── 📄 7c860e42de20c38d09347cdd57f6342531723d55b7e8aa9a26d1d69b1e955b71.jpg
-> │        ├── 📄 844d385a31ebae5141198646b19f5dcc3be5831afc2a2a6ecc737d880c2a07dd.jpg
-> │        ├── 📄 8bb261305744d5be00750fc985837306eba1d949cea92f4f74091bd970c80367.jpg
-> │        ├── 📄 8c3eb33c30dbe7b67f262b0baf5a846e27b681bdbcd16a9d4894f63939c7de22.jpg
-> │        ├── 📄 96413cb74f06ad7a5f17c342a6a0d239942f7db291e671e18e8ad46ff381e59a.jpg
-> │        ├── 📄 9de0bd71296aa25d0b285eb17e5f0cca0f9e63f79996b47613c8873603424f61.jpg
-> │        ├── 📄 IMG_1833.PNG
-> │        ├── 📄 IMG_1837.JPG
-> │        ├── 📄 IMG_1853.JPG
-> │        ├── 📄 IMG_1864.HEIC
-> │        ├── 📄 IMG_1865.HEIC
-> │        ├── 📄 IMG_1869.PNG
-> │        ├── 📄 IMG_1870.PNG
-> │        ├── 📄 ae08b088effd3efd25da3b89d987867a3f055b583f8d835165bde69a6c0913e1.jpg
-> │        ├── 📄 afafa36b36c2c53b8a8064bb73ebbc1d84d3af6a3349f5058a91ec59f7c8a5b1.jpg
-> │        ├── 📄 c70de79e1d93f97e66cf5d1aa28ea784314c97e95243d55ec4eb0cd789eaada6.jpg
-> │        ├── 📄 c9e12eb50168b582702cd0205aea0f97d11693b597edec8c7480d73b2dfebd27.jpg
-> │        ├── 📄 d92b0792b9396ccd3bdddc4ee5343c1838237cd630d048dfabf41e64ce395a60.jpg
-> │        ├── 📄 dd822b2e37c6182e2c808ccc42084b8edb0697429af0ad812a48a282166365ad.jpg
-> │        ├── 📄 f2f84b494e10e3a7c94e2dc0970d8d7df0b22e3ba6e0392ef405e7048179d71e.jpg
-> │        ├── 📄 fb0dafc0b3042b649a0204012a481b2d2e600e31b90dafd87c8815db4303c26b.jpg
-> │        ├── 📄 index.html
-> │      └── 📂 20_receipts/
-> │        ├── 📄 07192024_INVOICE_003.jpg
-> │        ├── 📄 index.html
-> │      └── 📂 30_declarations/
-> │        ├── 📄 index.html
-> │      └── 📂 40_affidavits/
-> │        └── 📂 ada-disability/
-> │        └── 📂 character/
-> │        └── 📂 community-service/
-> │        └── 📂 credibility/
-> │        └── 📂 observations/
-> │      ├── 📄 index.html
-> │    └── 📂 20_property/
-> │      └── 📂 10_mortgage_history/
-> │        └── 📂 20_payments/
-> │          ├── 📄 FrontImage-2024-07-12.png
-> │          ├── 📄 index.html
-> │        ├── 📄 index.html
-> │      └── 📂 20_parcel/
-> │        ├── 📄 Parcel_6016506_PRC.pdf
-> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
-> │        ├── 📄 index.html
-> │      ├── 📄 index.html
-> │    └── 📂 30_fcfcu/
-> │      ├── 📄 06212024_i.financial_.ball_state_Vcenter_Vfinancial_001_8.jpg
-> │      ├── 📄 06212024_i.financial_.ball_state_Vcenter_Vfinancial_8.jpg
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Letter.pdf
-> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Letter_Delivery.txt
-> │      ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
-> │      ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Records.pdf
-> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
-> │      ├── 📄 2024-20-03_Response_to_tax_notice.pdf
-> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
-> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
-> │      ├── 📄 20241204_FCFCU_Statement.pdf
-> │      ├── 📄 21June-24-4817Shadow_Appraisal.pdf
-> │      ├── 📄 index.html
-> │    └── 📂 50_aes/
-> │      ├── 📄 2025-06-08_AES_ADA_Notice.pdf
-> │      ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_Relief.pdf
-> │      ├── 📄 2025-12-16_AES_Emergency_Notice.md
-> │      ├── 📄 index.html
-> │    └── 📂 99__archive/
-> │      ├── 📄 README_supporting.txt
-> │      ├── 📄 index.html
-> │    ├── 📄 README.txt
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 05_court_record/
-> │  └── 📂 10_docket/
-> │    ├── 📄 0809b8fd-4b31-4ac4-a5f5-561da006d165.pdf
-> │    ├── 📄 2025_01_16_09_12_18.pdf.pdf
-> │    ├── 📄 2025_01_16_09_15_15.pdf.pdf
-> │    ├── 📄 2025_01_16_09_16_24.pdf.pdf
-> │    ├── 📄 2025_01_16_09_17_59.pdf.pdf
-> │    ├── 📄 2025_01_16_09_19_01.pdf.pdf
-> │    ├── 📄 2025_01_16_09_19_33.pdf.pdf
-> │    ├── 📄 2025_05_13_14_52_56.pdf.pdf
-> │    ├── 📄 2025_05_13_14_53_36.pdf.pdf
-> │    ├── 📄 2025_05_13_14_54_31.pdf.pdf
-> │    ├── 📄 2025_05_13_14_55_22.pdf.pdf
-> │    ├── 📄 2025_05_21_14_25_43.pdf.pdf
-> │    ├── 📄 2025_05_23_11_06_25.pdf.pdf
-> │    ├── 📄 2025_05_23_11_07_23.pdf.pdf
-> │    ├── 📄 2025_05_29_14_15_32.pdf.pdf
-> │    ├── 📄 2025_05_29_14_15_54.pdf.pdf
-> │    ├── 📄 67e9f7c4-a021-441d-b1ce-ba3e7a034b8e.pdf
-> │    ├── 📄 Service_Returned_Served.pdf
-> │    ├── 📄 Service_Returned_Served_(1).pdf
-> │    ├── 📄 Summary_-_MyCase.pdf
-> │    ├── 📄 b16d8fad-1b70-4865-8403-71c7a3117b53.pdf
-> │    ├── 📄 e-filing-efsp-comparison.pdf
-> │    ├── 📄 efiling-user-guide.pdf
-> │    ├── 📄 index.html
-> │  └── 📂 30_opposing_filings/
-> │    ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
-> │    ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> └── 📂 06_action_center/
-> │  └── 📂 10_decision_tree/
-> │    ├── 📄 index.html
-> │  └── 📂 20_pre_hearing_checklist/
-> │    ├── 📄 index.html
-> │  ├── 📄 index.html
-> ├── 📄 README.md
-> ├── 📄 index.html
-> └── 📂 tools/
-> │  ├── 📄 build_indexes.py
-> │  ├── 📄 index.html
-> └── 📂 wiki/
-> │  ├── 📄 Contacts.md
-> │  ├── 📄 Evidence_Log.md
-> │  ├── 📄 Motions.md
-> │  ├── 📄 Talking_Points.md
-> │  ├── 📄 Timeline.md
-> │  ├── 📄 index.html
-> │  └── 📄 index.md
+> here is the tree of the case and i need ti quickly build out the indexes and such so i can view on this on the go via cloudflare. ```markdown
+
+> . 📂 case_fcfcu_v_codyrv
+
+> └── 📂 00_admin/
+
+> │  └── 📂 00_drafts/
+
+> │    ├── 📄 04_Expense_Tracking_Template.csv
+
+> │    ├── 📄 Affidavit (1).docx
+
+> │    ├── 📄 Affidavit.docx
+
+> │    ├── 📄 Attorney one-pager intake brief.txt
+
+> │    ├── 📄 EMERGENCY MOTION TO STAY ENFORCEMENT OF WRIT.txt
+
+> │    ├── 📄 Emergency_Motion_Doc_Cody_Rice-Velasquez.docx
+
+> │    ├── 📄 Emergency_Stay (1).docx
+
+> │    ├── 📄 Emergency_Stay.docx
+
+> │    ├── 📄 Exhibit_List (1).docx
+
+> │    ├── 📄 Exhibit_List.docx
+
+> │    ├── 📄 MOTION TO VACATE VOID JUDGMENT.txt
+
+> │    ├── 📄 Motion_to_Vacate (1).docx
+
+> │    ├── 📄 Motion_to_Vacate.docx
+
+> │    ├── 📄 PROPOSED ORDER FOR EMERGENCY STAY.txt
+
+> │    ├── 📄 PROPOSED ORDER.txt
+
+> │    ├── 📄 Proposed_Order_Stay (1).docx
+
+> │    ├── 📄 Proposed_Order_Stay.docx
+
+> │    ├── 📄 Proposed_Order_Vacate (1).docx
+
+> │    ├── 📄 Proposed_Order_Vacate.docx
+
+> │    ├── 📄 UPDATED AFFIDAVIT LANGUAGE.txt
+
+> │    ├── 📄 VERIFIED AFFIDAVIT OF DEFENDANT.txt
+
+> │    ├── 📄 ada-packet.txt
+
+> │    ├── 📄 index.html
+
+> │    ├── 📄 lawyers to call and script.txt
+
+> │    ├── 📄 text 3.txt
+
+> │  └── 📂 10_meta/
+
+> │    ├── 📄 2024-12-09_Eviction_Case_MasterFile.docx
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_overviews/
+
+> │    ├── 📄 Integrate_Disability_Separate_Appeals_Get_Stay.m4a
+
+> │    ├── 📄 Procedural_failure_map_one_pager.md
+
+> │    ├── 📄 Void_Judgment_Eviction_Crisis.pdf
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_templates/
+
+> │    └── 📂 affidavits/
+
+> │      ├── 📄 ADA_Disability_Affidavit.md
+
+> │      ├── 📄 Character_Affidavit.md
+
+> │      ├── 📄 Community_Service_Affidavit.md
+
+> │      ├── 📄 Credibility_Affidavit.md
+
+> │      ├── 📄 Observations_Affidavit.md
+
+> │      ├── 📄 _Instructions_for_witnesses.md
+
+> │    └── 📂 declarations/
+
+> │      ├── 📄 Gender_Identity_Clarification.md
+
+> │      ├── 📄 _Declarations.md
+
+> │    └── 📂 exhibits/
+
+> │      ├── 📄 _Exhibits_Lists.md
+
+> │    └── 📂 motions/
+
+> │      ├── 📄 _Motions.md
+
+> │    └── 📂 outreach/
+
+> │      ├── 📄 _Advocate_Outreach_Message.md
+
+> │    └── 📂 proposed/
+
+> │      ├── 📄 Proposed_Orders.md
+
+> │  ├── 📄 One-page contingency plan if the judge denies emergency relief.txt
+
+> │  ├── 📄 One-page settlement strategy memo.txt
+
+> │  └── 📂 _trackers/
+
+> │    ├── 📄 QiCase-FCFCU_Financial_Tracker.xlsx
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 case_conversation_log.txt
+
+> │  ├── 📄 index.html
+
+> │  └── 📂 logs/
+
+> │    ├── 📄 03_Case_Log_Entry_2025-12-15.md
+
+> │    ├── 📄 2025-12-16_case_log_entry.md
+
+> │    ├── 📄 2025-12-16_case_summary.md
+
+> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strategy_checkpoint (1).md
+
+> │    ├── 📄 Session_Summary_2025-12-16_fcfcu_case_dna_strategy_checkpoint.md
+
+> └── 📂 01_timeline/
+
+> │  ├── 📄 05_Timeline_Worksheet.md
+
+> │  └── 📂 10_2023/
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 2025-12-15_visual_timeline_sheriff_removal_chain.md
+
+> │  └── 📂 20_2024/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_2025/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 40_2026/
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 02_filings/
+
+> │  └── 📂 10_2025-12-10_motion_vacate/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 Emergency Motions.docx
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 01_motion_vacate.pdf
+
+> │      ├── 📄 02_emergency_motion_quash_stay.pdf
+
+> │      ├── 📄 03_order_vacate_proposed.pdf
+
+> │      ├── 📄 04_order_stay_writ_proposed.pdf
+
+> │      ├── 📄 05_Exhibit_List.pdf
+
+> │      ├── 📄 06_Exhibits_Combined.pdf
+
+> │      ├── 📄 combinepdf.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 03_proposed_order/
+
+> │      ├── 📄 Proposed_Order_Vacate.docx
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_2025-12-11_Supplemental_Emergency_Motion_Access/
+
+> │    └── 📂 01_drafts/
+
+> │      ├── 📄 Supplemental_Emergency_Motion.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 02_exhibits/
+
+> │      ├── 📄 20_exhibits_combined_source
+
+> │      ├── 📄 Exhibit_H_Declaration.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 04_filed_receipts/
+
+> │      ├── 📄 Odyssey_Envelope_Receipt.pdf
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 03_strategy/
+
+> │  └── 📂 10_ada_title_ii/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_jurisdiction_service_tr_4_1_b/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_void_vs_voidable_tr_60b/
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 04_evidence_vault/
+
+> │  └── 📂 00_EXHIBIT_SETS/
+
+> │    ├── 📄 _checklist.md
+
+> │    └── 📂 _exhibit_A-H_initial/
+
+> │      ├── 📄 2025-12-10_MTV_Exhibits_Combined.pdf
+
+> │      ├── 📄 Exhibit_A_20250305_Sheriff_Return.pdf
+
+> │      ├── 📄 Exhibit_B_20250415_Sheriff_Return.pdf
+
+> │      ├── 📄 Exhibit_C_20250116_Incomplete_Summons.pdf
+
+> │      ├── 📄 Exhibit_D_20250513_Default_Judgment_Motion.pdf
+
+> │      ├── 📄 Exhibit_E_20251029_Petition_for_Writ.pdf
+
+> │      ├── 📄 Exhibit_F_Affidavit_Cody_RiceVelasquez.pdf
+
+> │      ├── 📄 Exhibit_G1_ADA_Notice_Request.pdf
+
+> │      ├── 📄 Exhibit_G2_AES_ADA_Docs_Disconnect_Notices.pdf
+
+> │      ├── 📄 Exhibit_H_Declaration.pdf
+
+> │    └── 📂 exhibits_I_ada_communications/
+
+> │    └── 📂 exhibits_J_eviction_removal/
+
+> │    └── 📂 exhibits_K_financial/
+
+> │    └── 📂 exhibits_L_statements/
+
+> │    └── 📂 exhibits_M_court-service/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_RAW/
+
+> │    └── 📂 10_supporting/
+
+> │      └── 📂 10_photos_video/
+
+> │        ├── 📄 0e8e0b5ae1a733dd9620d0090634ea7fd966f9a6c8333e08aeca1e56802052d6.jpg
+
+> │        ├── 📄 0f1b843233ba7ddb4ba4b560416358d2095a0fa3c524c1691fa9399db4eadf1c.jpg
+
+> │        ├── 📄 19c0fed8e9ba0a5750366980bdb0db1a0ef3fc3a9f53fd60e96f8a20a6d0d3e4.jpg
+
+> │        ├── 📄 2024-12-14_outgoing_text_bank_access_request.png
+
+> │        ├── 📄 28ca5e2a39c88399dedc74fbb1a3c1e1b403a21bb4083ea306f95c11209c4254.jpg
+
+> │        ├── 📄 2CAA8E1B675120251209103140_album_local_cache.mp4
+
+> │        ├── 📄 2CAA8E246CB320251209103011_album_local_cache.mp4
+
+> │        ├── 📄 2CAA8E246CB3_1765294197.jpg
+
+> │        ├── 📄 2c8c8581924ff9ecdd1dad08757a92bdcfcf0d970abc1304a769b666578f9ef4.jpg
+
+> │        ├── 📄 41665fb4a804d26f92824d815c0eeb7e68f10074bb4f4be49e33e0082633274c.jpg
+
+> │        ├── 📄 41bd4551cdac08724bb9f090a0d806c96eadd8ebc18514523861cb670c5b94ca.jpg
+
+> │        ├── 📄 5fc31129b244643680e575d4180704684500c1ea93990fed6fc32fff3562c634.jpg
+
+> │        ├── 📄 703f273640ffe466f6b3db7cad679b586e92cdf1350ce0174afe5ca786253121.jpg
+
+> │        ├── 📄 7160561cdfb1affcbd0eeb521ed22d89f586c3701b9cb74b27f1b1e09020560f.jpg
+
+> │        ├── 📄 78c3f6e3ddc69ac55e9a375f0152600f7fc1cc17316966859a8a9e7ea7517c6d.jpg
+
+> │        ├── 📄 7c860e42de20c38d09347cdd57f6342531723d55b7e8aa9a26d1d69b1e955b71.jpg
+
+> │        ├── 📄 844d385a31ebae5141198646b19f5dcc3be5831afc2a2a6ecc737d880c2a07dd.jpg
+
+> │        ├── 📄 8bb261305744d5be00750fc985837306eba1d949cea92f4f74091bd970c80367.jpg
+
+> │        ├── 📄 8c3eb33c30dbe7b67f262b0baf5a846e27b681bdbcd16a9d4894f63939c7de22.jpg
+
+> │        ├── 📄 96413cb74f06ad7a5f17c342a6a0d239942f7db291e671e18e8ad46ff381e59a.jpg
+
+> │        ├── 📄 9de0bd71296aa25d0b285eb17e5f0cca0f9e63f79996b47613c8873603424f61.jpg
+
+> │        ├── 📄 IMG_1833.PNG
+
+> │        ├── 📄 IMG_1837.JPG
+
+> │        ├── 📄 IMG_1853.JPG
+
+> │        ├── 📄 IMG_1864.HEIC
+
+> │        ├── 📄 IMG_1865.HEIC
+
+> │        ├── 📄 IMG_1869.PNG
+
+> │        ├── 📄 IMG_1870.PNG
+
+> │        ├── 📄 ae08b088effd3efd25da3b89d987867a3f055b583f8d835165bde69a6c0913e1.jpg
+
+> │        ├── 📄 afafa36b36c2c53b8a8064bb73ebbc1d84d3af6a3349f5058a91ec59f7c8a5b1.jpg
+
+> │        ├── 📄 c70de79e1d93f97e66cf5d1aa28ea784314c97e95243d55ec4eb0cd789eaada6.jpg
+
+> │        ├── 📄 c9e12eb50168b582702cd0205aea0f97d11693b597edec8c7480d73b2dfebd27.jpg
+
+> │        ├── 📄 d92b0792b9396ccd3bdddc4ee5343c1838237cd630d048dfabf41e64ce395a60.jpg
+
+> │        ├── 📄 dd822b2e37c6182e2c808ccc42084b8edb0697429af0ad812a48a282166365ad.jpg
+
+> │        ├── 📄 f2f84b494e10e3a7c94e2dc0970d8d7df0b22e3ba6e0392ef405e7048179d71e.jpg
+
+> │        ├── 📄 fb0dafc0b3042b649a0204012a481b2d2e600e31b90dafd87c8815db4303c26b.jpg
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_receipts/
+
+> │        ├── 📄 07192024_INVOICE_003.jpg
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 30_declarations/
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 40_affidavits/
+
+> │        └── 📂 ada-disability/
+
+> │        └── 📂 character/
+
+> │        └── 📂 community-service/
+
+> │        └── 📂 credibility/
+
+> │        └── 📂 observations/
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 20_property/
+
+> │      └── 📂 10_mortgage_history/
+
+> │        └── 📂 20_payments/
+
+> │          ├── 📄 FrontImage-2024-07-12.png
+
+> │          ├── 📄 index.html
+
+> │        ├── 📄 index.html
+
+> │      └── 📂 20_parcel/
+
+> │        ├── 📄 Parcel_6016506_PRC.pdf
+
+> │        ├── 📄 Parcel_6016506_ParcelDetailHistory.pdf
+
+> │        ├── 📄 index.html
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 30_fcfcu/
+
+> │      ├── 📄 06212024_i.financial_.ball_state_Vcenter_Vfinancial_001_8.jpg
+
+> │      ├── 📄 06212024_i.financial_.ball_state_Vcenter_Vfinancial_8.jpg
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Letter.pdf
+
+> │      ├── 📄 2023-09-20_FCFCU_Hardship_and_Health_Notice_Letter_Delivery.txt
+
+> │      ├── 📄 2023-09-20_Notice_Disabilities_Hardship.pdf
+
+> │      ├── 📄 2024-03-20_FCFCU_Certified_Response_Tax_Records.pdf
+
+> │      ├── 📄 2024-12-09_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-12-11_outgoing_email_bank_access_request.pdf
+
+> │      ├── 📄 2024-20-03_Response_to_tax_notice.pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (1).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement (2).pdf
+
+> │      ├── 📄 20241204_FCFCU_Statement.pdf
+
+> │      ├── 📄 21June-24-4817Shadow_Appraisal.pdf
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 50_aes/
+
+> │      ├── 📄 2025-06-08_AES_ADA_Notice.pdf
+
+> │      ├── 📄 2025-06-08_AES_ADA_Request_Financial_Hardship_Relief.pdf
+
+> │      ├── 📄 2025-12-16_AES_Emergency_Notice.md
+
+> │      ├── 📄 index.html
+
+> │    └── 📂 99__archive/
+
+> │      ├── 📄 README_supporting.txt
+
+> │      ├── 📄 index.html
+
+> │    ├── 📄 README.txt
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 05_court_record/
+
+> │  └── 📂 10_docket/
+
+> │    ├── 📄 0809b8fd-4b31-4ac4-a5f5-561da006d165.pdf
+
+> │    ├── 📄 2025_01_16_09_12_18.pdf.pdf
+
+> │    ├── 📄 2025_01_16_09_15_15.pdf.pdf
+
+> │    ├── 📄 2025_01_16_09_16_24.pdf.pdf
+
+> │    ├── 📄 2025_01_16_09_17_59.pdf.pdf
+
+> │    ├── 📄 2025_01_16_09_19_01.pdf.pdf
+
+> │    ├── 📄 2025_01_16_09_19_33.pdf.pdf
+
+> │    ├── 📄 2025_05_13_14_52_56.pdf.pdf
+
+> │    ├── 📄 2025_05_13_14_53_36.pdf.pdf
+
+> │    ├── 📄 2025_05_13_14_54_31.pdf.pdf
+
+> │    ├── 📄 2025_05_13_14_55_22.pdf.pdf
+
+> │    ├── 📄 2025_05_21_14_25_43.pdf.pdf
+
+> │    ├── 📄 2025_05_23_11_06_25.pdf.pdf
+
+> │    ├── 📄 2025_05_23_11_07_23.pdf.pdf
+
+> │    ├── 📄 2025_05_29_14_15_32.pdf.pdf
+
+> │    ├── 📄 2025_05_29_14_15_54.pdf.pdf
+
+> │    ├── 📄 67e9f7c4-a021-441d-b1ce-ba3e7a034b8e.pdf
+
+> │    ├── 📄 Service_Returned_Served.pdf
+
+> │    ├── 📄 Service_Returned_Served_(1).pdf
+
+> │    ├── 📄 Summary_-_MyCase.pdf
+
+> │    ├── 📄 b16d8fad-1b70-4865-8403-71c7a3117b53.pdf
+
+> │    ├── 📄 e-filing-efsp-comparison.pdf
+
+> │    ├── 📄 efiling-user-guide.pdf
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 30_opposing_filings/
+
+> │    ├── 📄 FCFCU_v_CR-V_Report_to_Court.pdf
+
+> │    ├── 📄 REPORT_TO_COURT_ON_DEFENDANTS_REQUEST.pdf
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> └── 📂 06_action_center/
+
+> │  └── 📂 10_decision_tree/
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 20_pre_hearing_checklist/
+
+> │    ├── 📄 index.html
+
+> │  ├── 📄 index.html
+
+> ├── 📄 README.md
+
+> ├── 📄 index.html
+
+> └── 📂 tools/
+
+> │  ├── 📄 build_indexes.py
+
+> │  ├── 📄 index.html
+
+> └── 📂 wiki/
+
+> │  ├── 📄 Contacts.md
+
+> │  ├── 📄 Evidence_Log.md
+
+> │  ├── 📄 Motions.md
+
+> │  ├── 📄 Talking_Points.md
+
+> │  ├── 📄 Timeline.md
+
+> │  ├── 📄 index.html
+
+> │  └── 📄 index.md
+
 > ```
 
 ### Assistant
@@ -768,310 +1050,614 @@ canonical_ref: ""
 > If you want the root `/index.html` to be more than “just another folder listing” (e.g., big buttons for **Timeline / Filings / Strategy / Evidence / Court Record / Action Center / Wiki**), say so and I’ll give you a curated root landing page that still links into the auto-index system.
 
 ### User
-> heres what i currently have. #!/usr/bin/env python3
-> """
-> build_indexes.py
-> 
-> Generates simple directory listing pages (index.html) for subfolders.
-> - NEVER rewrites the repository root index.html.
-> - Skips hidden files/folders (starting with '.')
-> - Skips node_modules, .git, and a few common noise dirs
-> - Creates/updates index.html inside each folder it processes
-> """
-> 
-> from __future__ import annotations
-> 
-> from pathlib import Path
-> from datetime import datetime, timezone
-> from html import escape
-> 
-> SKIP_DIR_NAMES = {
->     ".git",
->     ".github",
->     "node_modules",
->     "__pycache__",
->     ".venv",
->     "venv",
->     "dist",
->     "build",
-> }
-> 
-> # These filenames will not be listed in the generated index pages.
-> SKIP_FILE_NAMES = {
->     "index.html",   # we generate this; avoid listing it
->     ".DS_Store",
-> }
-> 
-> # If you want to skip certain file extensions from listings, add them here.
-> SKIP_EXTS = set()  # e.g. {".tmp", ".bak"}
-> 
-> 
-> def is_hidden(path: Path) -> bool:
->     return path.name.startswith(".")
-> 
-> 
-> def should_skip_dir(d: Path) -> bool:
->     if d.name in SKIP_DIR_NAMES:
->         return True
->     if is_hidden(d):
->         return True
->     return False
-> 
-> 
-> def should_skip_file(f: Path) -> bool:
->     if f.name in SKIP_FILE_NAMES:
->         return True
->     if is_hidden(f):
->         return True
->     if f.suffix.lower() in SKIP_EXTS:
->         return True
->     return False
-> 
-> 
-> def rel_to_repo(repo_root: Path, p: Path) -> str:
->     return str(p.relative_to(repo_root)).replace("\\", "/")
-> 
-> 
-> def make_breadcrumbs(repo_root: Path, current_dir: Path) -> str:
->     rel = current_dir.relative_to(repo_root)
->     parts = [p for p in rel.parts if p]
->     crumbs = ['<a href="/">Home</a>']
->     acc = Path("")
-> 
->     for part in parts:
->         acc = acc / part
->         # We want breadcrumbs to point to that folder's index.html
->         href = "/" + str(acc).replace("\\", "/") + "/index.html"
->         crumbs.append(f'<a href="{escape(href)}">{escape(part)}</a>')
-> 
->     return " / ".join(crumbs)
-> 
-> 
-> def dir_entries(repo_root: Path, current_dir: Path) -> tuple[list[Path], list[Path]]:
->     dirs: list[Path] = []
->     files: list[Path] = []
-> 
->     for child in sorted(current_dir.iterdir(), key=lambda x: (not x.is_dir(), x.name.lower())):
->         if child.is_dir():
->             if should_skip_dir(child):
->                 continue
->             dirs.append(child)
->         elif child.is_file():
->             if should_skip_file(child):
->                 continue
->             files.append(child)
-> 
->     return dirs, files
-> 
-> 
-> def render_index(repo_root: Path, current_dir: Path) -> str:
->     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
->     title = rel_to_repo(repo_root, current_dir) or "Repository"
-> 
->     crumbs = make_breadcrumbs(repo_root, current_dir)
->     dirs, files = dir_entries(repo_root, current_dir)
-> 
->     # Parent link (not for repo root; but we never render repo root anyway)
->     parent_link = ""
->     if current_dir != repo_root:
->         parent = current_dir.parent
->         # If parent is repo root, link to root "/" (your manual index)
->         if parent == repo_root:
->             parent_href = "/"
->         else:
->             parent_href = "/" + rel_to_repo(repo_root, parent) + "/index.html"
->         parent_link = f'<div class="parent"><a href="{escape(parent_href)}">⬅ Parent</a></div>'
-> 
->     def li_folder(d: Path) -> str:
->         href = "/" + rel_to_repo(repo_root, d) + "/index.html"
->         return f'<li class="folder"><a href="{escape(href)}">{escape(d.name)}/</a></li>'
-> 
->     def li_file(f: Path) -> str:
->         href = "/" + rel_to_repo(repo_root, f)
->         size = f.stat().st_size
->         return f'<li class="file"><a href="{escape(href)}">{escape(f.name)}</a> <span class="meta">({size:,} bytes)</span></li>'
-> 
->     folders_html = "\n".join(li_folder(d) for d in dirs) or '<li class="empty">No subfolders.</li>'
->     files_html = "\n".join(li_file(f) for f in files) or '<li class="empty">No files.</li>'
-> 
->     return f"""<!doctype html>
-> <html lang="en">
-> <head>
->   <meta charset="utf-8" />
->   <meta name="viewport" content="width=device-width,initial-scale=1" />
->   <title>{escape(title)} — Index</title>
->   <style>
->     :root {{
->       --bg: #0b0f16;
->       --card: rgba(255,255,255,0.06);
->       --text: #e8eefc;
->       --muted: rgba(232,238,252,0.7);
->       --link: #7cc4ff;
->       --border: rgba(255,255,255,0.12);
->     }}
->     body {{
->       margin: 0;
->       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
->       background: radial-gradient(900px 600px at 20% 10%, rgba(124,196,255,0.18), transparent 60%),
->                   radial-gradient(900px 600px at 80% 30%, rgba(160,124,255,0.14), transparent 55%),
->                   var(--bg);
->       color: var(--text);
->     }}
->     .wrap {{
->       max-width: 980px;
->       margin: 0 auto;
->       padding: 24px 16px 64px;
->     }}
->     .card {{
->       background: var(--card);
->       border: 1px solid var(--border);
->       border-radius: 18px;
->       padding: 18px;
->       box-shadow: 0 20px 60px rgba(0,0,0,0.35);
->       backdrop-filter: blur(10px);
->     }}
->     h1 {{
->       font-size: 20px;
->       margin: 0 0 10px 0;
->       font-weight: 650;
->     }}
->     .crumbs {{
->       font-size: 13px;
->       color: var(--muted);
->       margin-bottom: 12px;
->     }}
->     .crumbs a {{ color: var(--link); text-decoration: none; }}
->     .crumbs a:hover {{ text-decoration: underline; }}
->     .parent {{
->       margin: 10px 0 18px;
->       font-size: 14px;
->     }}
->     .parent a {{ color: var(--link); text-decoration: none; }}
->     .grid {{
->       display: grid;
->       grid-template-columns: 1fr 1fr;
->       gap: 14px;
->     }}
->     @media (max-width: 760px) {{
->       .grid {{ grid-template-columns: 1fr; }}
->     }}
->     .panel {{
->       background: rgba(0,0,0,0.25);
->       border: 1px solid var(--border);
->       border-radius: 14px;
->       padding: 14px;
->     }}
->     .panel h2 {{
->       margin: 0 0 10px;
->       font-size: 14px;
->       color: var(--muted);
->       font-weight: 650;
->       letter-spacing: 0.02em;
->       text-transform: uppercase;
->     }}
->     ul {{
->       list-style: none;
->       padding: 0;
->       margin: 0;
->       display: grid;
->       gap: 8px;
->     }}
->     li a {{
->       color: var(--text);
->       text-decoration: none;
->     }}
->     li a:hover {{
->       text-decoration: underline;
->     }}
->     .folder a {{ color: var(--link); }}
->     .meta {{
->       color: var(--muted);
->       font-size: 12px;
->       margin-left: 6px;
->     }}
->     .footer {{
->       margin-top: 14px;
->       font-size: 12px;
->       color: var(--muted);
->     }}
->     .empty {{
->       color: var(--muted);
->       font-style: italic;
->     }}
->   </style>
-> </head>
-> <body>
->   <div class="wrap">
->     <div class="card">
->       <h1>{escape(title)} — folder index</h1>
->       <div class="crumbs">{crumbs}</div>
->       {parent_link}
->       <div class="grid">
->         <div class="panel">
->           <h2>Folders</h2>
->           <ul>
->             {folders_html}
->           </ul>
->         </div>
->         <div class="panel">
->           <h2>Files</h2>
->           <ul>
->             {files_html}
->           </ul>
->         </div>
->       </div>
->       <div class="footer">Auto-generated: {escape(now)} (UTC). Root index is manually maintained.</div>
->     </div>
->   </div>
-> </body>
-> </html>
-> """
-> 
-> 
-> def build_index_for_dir(repo_root: Path, d: Path) -> None:
->     # Never generate root index.html
->     if d.resolve() == repo_root.resolve():
->         return
-> 
->     out = d / "index.html"
->     html = render_index(repo_root, d)
->     out.write_text(html, encoding="utf-8")
-> 
-> 
-> def walk_and_build(repo_root: Path) -> int:
->     """
->     Returns count of directories indexed.
->     """
->     count = 0
->     # Generate indexes for all subdirectories (excluding skipped dirs)
->     for d in sorted(repo_root.rglob("*")):
->         if not d.is_dir():
->             continue
->         if d.resolve() == repo_root.resolve():
->             continue
->         # Skip based on directory name anywhere in the path
->         if any(part in SKIP_DIR_NAMES for part in d.parts):
->             continue
->         if should_skip_dir(d):
->             continue
-> 
->         build_index_for_dir(repo_root, d)
->         count += 1
-> 
->     return count
-> 
-> 
-> def main() -> None:
->     repo_root = Path.cwd()
->     if not (repo_root / "README.md").exists():
->         # soft warning: allows running from subdir, but usually you want repo root
->         print("WARNING: README.md not found in current directory. Are you in repo root?")
-> 
->     count = walk_and_build(repo_root)
->     print(f"Generated/updated index.html for {count} directories (root index untouched).")
-> 
-> 
-> if __name__ == "__main__":
+> heres what i currently have. #!/usr/bin/env python3
+
+> """
+
+> build_indexes.py
+
+> 
+
+> Generates simple directory listing pages (index.html) for subfolders.
+
+> - NEVER rewrites the repository root index.html.
+
+> - Skips hidden files/folders (starting with '.')
+
+> - Skips node_modules, .git, and a few common noise dirs
+
+> - Creates/updates index.html inside each folder it processes
+
+> """
+
+> 
+
+> from __future__ import annotations
+
+> 
+
+> from pathlib import Path
+
+> from datetime import datetime, timezone
+
+> from html import escape
+
+> 
+
+> SKIP_DIR_NAMES = {
+
+>     ".git",
+
+>     ".github",
+
+>     "node_modules",
+
+>     "__pycache__",
+
+>     ".venv",
+
+>     "venv",
+
+>     "dist",
+
+>     "build",
+
+> }
+
+> 
+
+> # These filenames will not be listed in the generated index pages.
+
+> SKIP_FILE_NAMES = {
+
+>     "index.html",   # we generate this; avoid listing it
+
+>     ".DS_Store",
+
+> }
+
+> 
+
+> # If you want to skip certain file extensions from listings, add them here.
+
+> SKIP_EXTS = set()  # e.g. {".tmp", ".bak"}
+
+> 
+
+> 
+
+> def is_hidden(path: Path) -> bool:
+
+>     return path.name.startswith(".")
+
+> 
+
+> 
+
+> def should_skip_dir(d: Path) -> bool:
+
+>     if d.name in SKIP_DIR_NAMES:
+
+>         return True
+
+>     if is_hidden(d):
+
+>         return True
+
+>     return False
+
+> 
+
+> 
+
+> def should_skip_file(f: Path) -> bool:
+
+>     if f.name in SKIP_FILE_NAMES:
+
+>         return True
+
+>     if is_hidden(f):
+
+>         return True
+
+>     if f.suffix.lower() in SKIP_EXTS:
+
+>         return True
+
+>     return False
+
+> 
+
+> 
+
+> def rel_to_repo(repo_root: Path, p: Path) -> str:
+
+>     return str(p.relative_to(repo_root)).replace("\\", "/")
+
+> 
+
+> 
+
+> def make_breadcrumbs(repo_root: Path, current_dir: Path) -> str:
+
+>     rel = current_dir.relative_to(repo_root)
+
+>     parts = [p for p in rel.parts if p]
+
+>     crumbs = ['<a href="/">Home</a>']
+
+>     acc = Path("")
+
+> 
+
+>     for part in parts:
+
+>         acc = acc / part
+
+>         # We want breadcrumbs to point to that folder's index.html
+
+>         href = "/" + str(acc).replace("\\", "/") + "/index.html"
+
+>         crumbs.append(f'<a href="{escape(href)}">{escape(part)}</a>')
+
+> 
+
+>     return " / ".join(crumbs)
+
+> 
+
+> 
+
+> def dir_entries(repo_root: Path, current_dir: Path) -> tuple[list[Path], list[Path]]:
+
+>     dirs: list[Path] = []
+
+>     files: list[Path] = []
+
+> 
+
+>     for child in sorted(current_dir.iterdir(), key=lambda x: (not x.is_dir(), x.name.lower())):
+
+>         if child.is_dir():
+
+>             if should_skip_dir(child):
+
+>                 continue
+
+>             dirs.append(child)
+
+>         elif child.is_file():
+
+>             if should_skip_file(child):
+
+>                 continue
+
+>             files.append(child)
+
+> 
+
+>     return dirs, files
+
+> 
+
+> 
+
+> def render_index(repo_root: Path, current_dir: Path) -> str:
+
+>     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%SZ")
+
+>     title = rel_to_repo(repo_root, current_dir) or "Repository"
+
+> 
+
+>     crumbs = make_breadcrumbs(repo_root, current_dir)
+
+>     dirs, files = dir_entries(repo_root, current_dir)
+
+> 
+
+>     # Parent link (not for repo root; but we never render repo root anyway)
+
+>     parent_link = ""
+
+>     if current_dir != repo_root:
+
+>         parent = current_dir.parent
+
+>         # If parent is repo root, link to root "/" (your manual index)
+
+>         if parent == repo_root:
+
+>             parent_href = "/"
+
+>         else:
+
+>             parent_href = "/" + rel_to_repo(repo_root, parent) + "/index.html"
+
+>         parent_link = f'<div class="parent"><a href="{escape(parent_href)}">⬅ Parent</a></div>'
+
+> 
+
+>     def li_folder(d: Path) -> str:
+
+>         href = "/" + rel_to_repo(repo_root, d) + "/index.html"
+
+>         return f'<li class="folder"><a href="{escape(href)}">{escape(d.name)}/</a></li>'
+
+> 
+
+>     def li_file(f: Path) -> str:
+
+>         href = "/" + rel_to_repo(repo_root, f)
+
+>         size = f.stat().st_size
+
+>         return f'<li class="file"><a href="{escape(href)}">{escape(f.name)}</a> <span class="meta">({size:,} bytes)</span></li>'
+
+> 
+
+>     folders_html = "\n".join(li_folder(d) for d in dirs) or '<li class="empty">No subfolders.</li>'
+
+>     files_html = "\n".join(li_file(f) for f in files) or '<li class="empty">No files.</li>'
+
+> 
+
+>     return f"""<!doctype html>
+
+> <html lang="en">
+
+> <head>
+
+>   <meta charset="utf-8" />
+
+>   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+>   <title>{escape(title)} — Index</title>
+
+>   <style>
+
+>     :root {{
+
+>       --bg: #0b0f16;
+
+>       --card: rgba(255,255,255,0.06);
+
+>       --text: #e8eefc;
+
+>       --muted: rgba(232,238,252,0.7);
+
+>       --link: #7cc4ff;
+
+>       --border: rgba(255,255,255,0.12);
+
+>     }}
+
+>     body {{
+
+>       margin: 0;
+
+>       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+>       background: radial-gradient(900px 600px at 20% 10%, rgba(124,196,255,0.18), transparent 60%),
+
+>                   radial-gradient(900px 600px at 80% 30%, rgba(160,124,255,0.14), transparent 55%),
+
+>                   var(--bg);
+
+>       color: var(--text);
+
+>     }}
+
+>     .wrap {{
+
+>       max-width: 980px;
+
+>       margin: 0 auto;
+
+>       padding: 24px 16px 64px;
+
+>     }}
+
+>     .card {{
+
+>       background: var(--card);
+
+>       border: 1px solid var(--border);
+
+>       border-radius: 18px;
+
+>       padding: 18px;
+
+>       box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+
+>       backdrop-filter: blur(10px);
+
+>     }}
+
+>     h1 {{
+
+>       font-size: 20px;
+
+>       margin: 0 0 10px 0;
+
+>       font-weight: 650;
+
+>     }}
+
+>     .crumbs {{
+
+>       font-size: 13px;
+
+>       color: var(--muted);
+
+>       margin-bottom: 12px;
+
+>     }}
+
+>     .crumbs a {{ color: var(--link); text-decoration: none; }}
+
+>     .crumbs a:hover {{ text-decoration: underline; }}
+
+>     .parent {{
+
+>       margin: 10px 0 18px;
+
+>       font-size: 14px;
+
+>     }}
+
+>     .parent a {{ color: var(--link); text-decoration: none; }}
+
+>     .grid {{
+
+>       display: grid;
+
+>       grid-template-columns: 1fr 1fr;
+
+>       gap: 14px;
+
+>     }}
+
+>     @media (max-width: 760px) {{
+
+>       .grid {{ grid-template-columns: 1fr; }}
+
+>     }}
+
+>     .panel {{
+
+>       background: rgba(0,0,0,0.25);
+
+>       border: 1px solid var(--border);
+
+>       border-radius: 14px;
+
+>       padding: 14px;
+
+>     }}
+
+>     .panel h2 {{
+
+>       margin: 0 0 10px;
+
+>       font-size: 14px;
+
+>       color: var(--muted);
+
+>       font-weight: 650;
+
+>       letter-spacing: 0.02em;
+
+>       text-transform: uppercase;
+
+>     }}
+
+>     ul {{
+
+>       list-style: none;
+
+>       padding: 0;
+
+>       margin: 0;
+
+>       display: grid;
+
+>       gap: 8px;
+
+>     }}
+
+>     li a {{
+
+>       color: var(--text);
+
+>       text-decoration: none;
+
+>     }}
+
+>     li a:hover {{
+
+>       text-decoration: underline;
+
+>     }}
+
+>     .folder a {{ color: var(--link); }}
+
+>     .meta {{
+
+>       color: var(--muted);
+
+>       font-size: 12px;
+
+>       margin-left: 6px;
+
+>     }}
+
+>     .footer {{
+
+>       margin-top: 14px;
+
+>       font-size: 12px;
+
+>       color: var(--muted);
+
+>     }}
+
+>     .empty {{
+
+>       color: var(--muted);
+
+>       font-style: italic;
+
+>     }}
+
+>   </style>
+
+> </head>
+
+> <body>
+
+>   <div class="wrap">
+
+>     <div class="card">
+
+>       <h1>{escape(title)} — folder index</h1>
+
+>       <div class="crumbs">{crumbs}</div>
+
+>       {parent_link}
+
+>       <div class="grid">
+
+>         <div class="panel">
+
+>           <h2>Folders</h2>
+
+>           <ul>
+
+>             {folders_html}
+
+>           </ul>
+
+>         </div>
+
+>         <div class="panel">
+
+>           <h2>Files</h2>
+
+>           <ul>
+
+>             {files_html}
+
+>           </ul>
+
+>         </div>
+
+>       </div>
+
+>       <div class="footer">Auto-generated: {escape(now)} (UTC). Root index is manually maintained.</div>
+
+>     </div>
+
+>   </div>
+
+> </body>
+
+> </html>
+
+> """
+
+> 
+
+> 
+
+> def build_index_for_dir(repo_root: Path, d: Path) -> None:
+
+>     # Never generate root index.html
+
+>     if d.resolve() == repo_root.resolve():
+
+>         return
+
+> 
+
+>     out = d / "index.html"
+
+>     html = render_index(repo_root, d)
+
+>     out.write_text(html, encoding="utf-8")
+
+> 
+
+> 
+
+> def walk_and_build(repo_root: Path) -> int:
+
+>     """
+
+>     Returns count of directories indexed.
+
+>     """
+
+>     count = 0
+
+>     # Generate indexes for all subdirectories (excluding skipped dirs)
+
+>     for d in sorted(repo_root.rglob("*")):
+
+>         if not d.is_dir():
+
+>             continue
+
+>         if d.resolve() == repo_root.resolve():
+
+>             continue
+
+>         # Skip based on directory name anywhere in the path
+
+>         if any(part in SKIP_DIR_NAMES for part in d.parts):
+
+>             continue
+
+>         if should_skip_dir(d):
+
+>             continue
+
+> 
+
+>         build_index_for_dir(repo_root, d)
+
+>         count += 1
+
+> 
+
+>     return count
+
+> 
+
+> 
+
+> def main() -> None:
+
+>     repo_root = Path.cwd()
+
+>     if not (repo_root / "README.md").exists():
+
+>         # soft warning: allows running from subdir, but usually you want repo root
+
+>         print("WARNING: README.md not found in current directory. Are you in repo root?")
+
+> 
+
+>     count = walk_and_build(repo_root)
+
+>     print(f"Generated/updated index.html for {count} directories (root index untouched).")
+
+> 
+
+> 
+
+> if __name__ == "__main__":
+
 >     main()
 
 ### Assistant
@@ -1744,12 +2330,18 @@ canonical_ref: ""
 > If you tell me what environment you’re on (Windows/macOS/Linux/Chromebook), I’ll give you the exact install command that will work there—but you can run the above as-is if Ghostscript is available.
 
 ### User
-> i got an error. nstalling collected packages: ghostscript
-> Successfully installed ghostscript-0.8.1
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> python3 tools/compress_pdfs.py --root case_fcfcu_v_codyrv --out case_fcfcu_v_codyrv__compressed --preset ebook
-> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'C:\\QiOS_v1\\projects\\_FCFCU_v._Cody\\tools\\compress_pdfs.py': [Errno 2] No such file or directory
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> python3 tools/compress_pdfs.py --root _FCFCU_v._Cody --out _FCFCU_v._Cody_compressed --preset ebook         
-> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'C:\\QiOS_v1\\projects\\_FCFCU_v._Cody\\tools\\compress_pdfs.py': [Errno 2] No such file or directory
+> i got an error. nstalling collected packages: ghostscript
+
+> Successfully installed ghostscript-0.8.1
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> python3 tools/compress_pdfs.py --root case_fcfcu_v_codyrv --out case_fcfcu_v_codyrv__compressed --preset ebook
+
+> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'C:\\QiOS_v1\\projects\\_FCFCU_v._Cody\\tools\\compress_pdfs.py': [Errno 2] No such file or directory
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> python3 tools/compress_pdfs.py --root _FCFCU_v._Cody --out _FCFCU_v._Cody_compressed --preset ebook         
+
+> C:\Users\codyr\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'C:\\QiOS_v1\\projects\\_FCFCU_v._Cody\\tools\\compress_pdfs.py': [Errno 2] No such file or directory
+
 > PS C:\QiOS_v1\projects\_FCFCU_v._Cody> , also i just wnat them compressed in place not all copressed to one folder.
 
 ### Assistant
@@ -4565,78 +5157,150 @@ canonical_ref: ""
 > If you run the script and paste the first 20 lines of output (especially any `UPDATED VID ... stub` errors), I’ll tell you exactly what’s failing and the fastest fix.
 
 ### User
-> [ERROR] 2024-12-14_outgoing_text_bank_access_request.png - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2024-12-14_outgoing_text_bank_access_request.png' does not exist.
-> [ERROR] IMG_1833.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1833.PNG' does not exist.
-> [ERROR] IMG_1869.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1869.PNG' does not exist.
-> [ERROR] IMG_1870.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1870.PNG' does not exist.
-> [ERROR] FrontImage-2024-07-12.png - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\20_property\10_mortgage_history\20_payments\FrontImage-2024-07-12.png' does not exist.
-> [ERROR] IMG_1864.HEIC - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1864.HEIC' does not exist.
-> [ERROR] IMG_1865.HEIC - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1865.HEIC' does not exist.
-> [ERROR] 2CAA8E1B675120251209103140_album_local_cache.mp4 - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2CAA8E1B675120251209103140_album_local_cache.mp4' does not exist.
-> [ERROR] 2CAA8E246CB320251209103011_album_local_cache.mp4 - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2CAA8E246CB320251209103011_album_local_cache.mp4' does not exist.
-> 
-> === COMPLETE ===
-> Success: 40
-> Errors: 40
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add .
-> The following paths are ignored by one of your .gitignore files:
-> projects
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add -A
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git commit -m "final review update for session"
-> On branch main
-> Your branch is ahead of 'origin/main' by 5 commits.
->   (use "git push" to publish your local commits)
-> 
-> Changes not staged for commit:
->   (use "git add <file>..." to update what will be committed)
->   (use "git restore <file>..." to discard changes in working directory)
->   (commit or discard the untracked or modified content in submodules)
->         modified:   ../../_sort (untracked content)
->         modified:   ../../templates/qi-client-template (modified content, untracked content)
-> 
-> no changes added to commit (use "git add" and/or "git commit -a")
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add -a
-> error: unknown switch `a'
-> usage: git add [<options>] [--] <pathspec>...
-> 
->     -n, --[no-]dry-run    dry run
->     -v, --[no-]verbose    be verbose      
-> 
->     -i, --[no-]interactive
->                           interactive picking
->     -p, --[no-]patch      select hunks interactively
->     -U, --unified <n>     generate diffs with <n> lines context
->     --inter-hunk-context <n>
->                           show context between diff hunks up to the specified number of lines
->     -e, --[no-]edit       edit current diff and apply
->     -f, --[no-]force      allow adding otherwise ignored files
->     -u, --[no-]update     update tracked files
->     --[no-]renormalize    renormalize EOL of tracked files (implies -u)
->     -N, --[no-]intent-to-add
->                           record only the fact that the path will be added later    
->     -A, --[no-]all        add changes from all tracked and untracked files
->     --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
->     --[no-]refresh        don't add, only refresh the index
->     --[no-]ignore-errors  just skip files which cannot be added because of errors   
->     --[no-]ignore-missing check if - even missing - files are ignored in dry run    
->     --[no-]sparse         allow updating entries outside of the sparse-checkout cone
->     --[no-]chmod (+|-)x   override the executable bit of the listed files
->     --[no-]pathspec-from-file <file>      
->                           read pathspec from file
->     --[no-]pathspec-file-nul
->                           with --pathspec-from-file, pathspec elements are separated with NUL character
-> 
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git -a
-> unknown option: -a
-> usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
->            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
->            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
->            [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
->            [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>] 
->            <command> [<args>]
-> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add .
-> The following paths are ignored by one of your .gitignore files:
-> projects
+> [ERROR] 2024-12-14_outgoing_text_bank_access_request.png - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2024-12-14_outgoing_text_bank_access_request.png' does not exist.
+
+> [ERROR] IMG_1833.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1833.PNG' does not exist.
+
+> [ERROR] IMG_1869.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1869.PNG' does not exist.
+
+> [ERROR] IMG_1870.PNG - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1870.PNG' does not exist.
+
+> [ERROR] FrontImage-2024-07-12.png - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\20_property\10_mortgage_history\20_payments\FrontImage-2024-07-12.png' does not exist.
+
+> [ERROR] IMG_1864.HEIC - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1864.HEIC' does not exist.
+
+> [ERROR] IMG_1865.HEIC - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\IMG_1865.HEIC' does not exist.
+
+> [ERROR] 2CAA8E1B675120251209103140_album_local_cache.mp4 - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2CAA8E1B675120251209103140_album_local_cache.mp4' does not exist.
+
+> [ERROR] 2CAA8E246CB320251209103011_album_local_cache.mp4 - Cannot rename because item at 'C:\QiOS_v1\projects\_FCFCU_v._Cody\case_fcfcu_v_codyrv\20_evidence_vault\20_RAW\10_supporting\10_photos_video\2CAA8E246CB320251209103011_album_local_cache.mp4' does not exist.
+
+> 
+
+> === COMPLETE ===
+
+> Success: 40
+
+> Errors: 40
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add .
+
+> The following paths are ignored by one of your .gitignore files:
+
+> projects
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add -A
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git commit -m "final review update for session"
+
+> On branch main
+
+> Your branch is ahead of 'origin/main' by 5 commits.
+
+>   (use "git push" to publish your local commits)
+
+> 
+
+> Changes not staged for commit:
+
+>   (use "git add <file>..." to update what will be committed)
+
+>   (use "git restore <file>..." to discard changes in working directory)
+
+>   (commit or discard the untracked or modified content in submodules)
+
+>         modified:   ../../_sort (untracked content)
+
+>         modified:   ../../templates/qi-client-template (modified content, untracked content)
+
+> 
+
+> no changes added to commit (use "git add" and/or "git commit -a")
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add -a
+
+> error: unknown switch `a'
+
+> usage: git add [<options>] [--] <pathspec>...
+
+> 
+
+>     -n, --[no-]dry-run    dry run
+
+>     -v, --[no-]verbose    be verbose      
+
+> 
+
+>     -i, --[no-]interactive
+
+>                           interactive picking
+
+>     -p, --[no-]patch      select hunks interactively
+
+>     -U, --unified <n>     generate diffs with <n> lines context
+
+>     --inter-hunk-context <n>
+
+>                           show context between diff hunks up to the specified number of lines
+
+>     -e, --[no-]edit       edit current diff and apply
+
+>     -f, --[no-]force      allow adding otherwise ignored files
+
+>     -u, --[no-]update     update tracked files
+
+>     --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+
+>     -N, --[no-]intent-to-add
+
+>                           record only the fact that the path will be added later    
+
+>     -A, --[no-]all        add changes from all tracked and untracked files
+
+>     --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+
+>     --[no-]refresh        don't add, only refresh the index
+
+>     --[no-]ignore-errors  just skip files which cannot be added because of errors   
+
+>     --[no-]ignore-missing check if - even missing - files are ignored in dry run    
+
+>     --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+
+>     --[no-]chmod (+|-)x   override the executable bit of the listed files
+
+>     --[no-]pathspec-from-file <file>      
+
+>                           read pathspec from file
+
+>     --[no-]pathspec-file-nul
+
+>                           with --pathspec-from-file, pathspec elements are separated with NUL character
+
+> 
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git -a
+
+> unknown option: -a
+
+> usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+
+>            [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+
+>            [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+
+>            [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+
+>            [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>] 
+
+>            <command> [<args>]
+
+> PS C:\QiOS_v1\projects\_FCFCU_v._Cody> git add .
+
+> The following paths are ignored by one of your .gitignore files:
+
+> projects
+
 > PS C:\QiOS_v1\projects\_FCFCU_v._Cody>
 
 ### Assistant
@@ -5287,831 +5951,1656 @@ canonical_ref: ""
 > You’re thinking about this the right way. This is disciplined, not aggressive. Paste the declaration when ready and we’ll finalize it in one pass.
 
 ### User
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Early Morning
-> ENTRY TYPE: Incident + Safety Risk + Legal Harm Documentation
-> RELATED FILES:
-> 
-> * Timeline.md
-> * Evidence_Log.md
-> * Talking_Points.md
-> 
-> SUMMARY:
-> During an attempt to repack the vehicle following forced displacement related to the FCFCU foreclosure and writ execution, Cody Rice-Velasquez experienced an acute crisis event involving their dog, Gigi. Due to heightened stress, overcrowding of the vehicle with salvaged belongings, and environmental chaos caused by the eviction, Gigi became distressed, escaped the vehicle, and ran off. This event occurred directly as a result of the unsafe and destabilizing conditions imposed by FCFCU’s actions and the execution of the writ. Immediate efforts were redirected from property recovery and stabilization to emergency animal search and safety response.
-> 
-> FACTS:
-> 
-> * Cody was actively repacking a vehicle due to displacement from 4817 Shadow Pointe Dr.
-> * The vehicle was overloaded with personal property retrieved under distressing conditions.
-> * Gigi (husky mix dog, bonded companion animal) became panicked and escaped.
-> * The escape occurred in the context of exhaustion, emotional distress, and environmental instability.
-> * The incident created immediate risk to the dog’s safety and Cody’s emotional and physical well-being.
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Companion animal endangerment is a foreseeable consequence of forced displacement without adequate safeguards or accommodation.
-> * The incident supports claims of **irreparable harm** resulting from premature or unlawful enforcement of the writ.
-> * This event strengthens arguments for emergency relief, damages, and consideration of non-economic harm.
-> * The situation demonstrates cascading harm beyond property loss, including safety risks and emotional trauma.
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Cody’s documented ADHD, anxiety, and trauma-related impairments exacerbated the crisis response.
-> * The chaotic environment impaired executive functioning and situational control.
-> * No accommodations were provided to mitigate known disability-related vulnerabilities during displacement.
-> 
-> EMOTIONAL IMPACT:
-> 
-> * Acute panic, fear, and distress related to the potential loss or injury of Gigi.
-> * Heightened anger and emotional dysregulation directly tied to FCFCU’s actions.
-> * Sense of helplessness and threat escalation beyond financial or housing harm.
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Was Gigi recovered safely, and at what time?
-> * Should this incident be added as a supplemental declaration or exhibit demonstrating ongoing harm?
-> * Does local animal control or third-party documentation exist that can corroborate the incident?
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Afternoon–Evening
-> ENTRY TYPE: Event Documentation + Damages Analysis + Strategic Planning
-> RELATED FILES:
-> 
-> * Timeline.md
-> * Evidence_Log.md
-> * Procedural_Failure_Map_One_Pager.md
-> * Utility bills and disconnect notices (AES)
-> * Photos/videos of property damage, mold, utilities, unplugged equipment
-> 
-> ---
-> 
-> SUMMARY:
-> Cody reported additional post-removal harms discovered after complying with the sheriff’s 1:00 PM vacate deadline. These include continued utility billing in Cody’s name, negligent handling of the property (doors left open, heat running), resulting burst pipes, water damage, mold infestation, destruction of personal property (mini-fridge), and systematic unplugging/interference with cameras and electronics. The conversation focused on identifying legally relevant harms, separating signal from noise, and translating these events into damages that materially strengthen the case. A comprehensive internal damages matrix was produced, along with an estimated monetary exposure range. Cody requested that this information be formalized for court awareness ahead of the January 9 hearing and summarized for family review.
-> 
-> ---
-> 
-> FACTS:
-> 
-> * Cody vacated the property exactly at the ordered 1:00 PM deadline.
-> * Sheriff personnel continued enforcement wrap-up after Cody’s departure.
-> * Utilities (heat/electric) remain in Cody’s name; bills and shutoff notices continue.
-> * Property doors were left open; heat left running while Cody lacked access.
-> * Pipes in the laundry room appear to have burst due to freezing temperatures.
-> * Standing water led to visible mold growth on walls.
-> * A bedroom mini-fridge was unplugged, resulting in mold contamination and total loss.
-> * Multiple cameras, routers, ethernet cables, and desk equipment were deliberately unplugged, requiring opening cabinets and tracing concealed wiring.
-> * Cody was denied access and did not have keys, preventing mitigation of damage.
-> 
-> ---
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Continued utility consumption after exclusion supports claims of unjust enrichment and conversion.
-> * Leaving the premises unsecured in freezing weather establishes negligence after possession.
-> * Burst pipes, water damage, and mold are foreseeable harms tied to failure to secure the property.
-> * Unplugging personal appliances and electronics exceeds any reasonable scope of “securing” the premises and supports conversion/trespass to chattels.
-> * Denial of access defeats any argument that Cody failed to mitigate damages.
-> * These harms are independent, post-judgment damages that strengthen the case even apart from the void-judgment argument.
-> 
-> ---
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Cody’s documented disabilities (ADHD, anxiety, executive dysfunction) increase the impact of sudden removal, loss of access, and chaotic conditions.
-> * Lack of accommodation compounded confusion, stress, and inability to respond or protect property.
-> 
-> ---
-> 
-> EMOTIONAL IMPACT:
-> 
-> * Significant distress due to displacement, ongoing financial pressure, and property destruction.
-> * Additional emotional harm from the loss of a mini-fridge that had personal significance as a gift from a friend who was murdered.
-> * Heightened anxiety and exhaustion affecting Cody and Zai.
-> 
-> ---
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Should a supplemental declaration be filed immediately to document post-removal harms before the January 9 hearing?
-> * What monetary relief or interim orders (utility relief, access, preservation) can be requested now based on ongoing harm?
-> * Whether to obtain formal remediation estimates to further quantify mold and water damage.
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Morning
-> ENTRY TYPE: Event Documentation + Legal Analysis + Evidence Preservation
-> RELATED FILES:
-> 
-> * Talking_Points.md
-> * Emergency Motion to Quash/Stay Writ of Assistance
-> * Photo evidence (unplugged cameras, unplugged refrigerator, mold contamination)
-> * Personal incident log (timestamped note/email)
-> 
-> SUMMARY:
-> Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled, and that the refrigerator had been unplugged, resulting in food spoilage and visible mold contamination. These actions occurred without notice, explanation, or any observable safety or emergency justification. The discovery was immediately documented with photographs and written notes to preserve evidence. This event constitutes new, post-removal harm and directly supports pending emergency motions before the court.
-> 
-> FACTS:
-> 
-> * All interior security cameras were unplugged and rendered nonfunctional.
-> * The refrigerator was unplugged, despite being functional prior to removal.
-> * Food spoiled as a result, and mold contamination is now present inside the refrigerator.
-> * No written or verbal notice was provided explaining the disconnection of devices.
-> * No emergency, hazard, or safety condition was visible that would justify unplugging appliances or cameras.
-> * Photographs were taken documenting outlets, devices, and resulting damage.
-> * A contemporaneous written incident log was created and timestamped.
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Disabling cameras constitutes spoliation or interference with potential evidence.
-> * Unplugging the refrigerator exceeds the lawful scope of a writ of assistance, which does not authorize alteration or destruction of personal property.
-> * Resulting spoilage and mold constitute compensable property damage.
-> * The incident strengthens claims of irreparable harm and bad-faith execution of the writ.
-> * This event supports the necessity of an immediate stay, protective order, and court oversight of property access and preservation.
-> * The conduct bolsters arguments for damages and supplemental relief at the upcoming hearing.
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Actions were taken without accommodation or notice despite documented disability-related needs and pending ADA-related filings.
-> * Sudden property damage and loss exacerbated stress and executive-function strain during an already unstable displacement period.
-> 
-> EMOTIONAL IMPACT:
-> 
-> * Increased distress, frustration, and sense of violation upon discovering preventable damage to personal property.
-> * Heightened anxiety related to loss of security (disabled cameras) and health concerns (mold exposure).
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Should a supplemental declaration be filed immediately to add this incident to the court record?
-> * Should opposing counsel and the Sheriff be formally notified of spoliation and property damage?
-> * Should replacement value and remediation costs (food loss, appliance contamination) be itemized for damages?
-> * Does the conduct warrant additional sanctions or preservation orders from the court?
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Evening
-> ENTRY TYPE: Event + Procedural Guidance + Evidence Preservation
-> RELATED FILES:
-> 
-> * See timeline and documentation files in Drive (communications, access notes, evidence photos)
-> 
-> SUMMARY:
-> User arrived at the property during an authorized access window and requested immediate guidance regarding the presence of surveillance cameras. Guidance was provided to ensure compliance, minimize risk, and preserve evidentiary integrity. Emphasis was placed on avoiding any conduct that could be misconstrued as tampering, trespass escalation, or bad faith, while treating cameras as potential neutral evidence rather than adversarial tools.
-> 
-> FACTS:
-> 
-> * Surveillance cameras (doorbell/exterior/interior possible) are present at the property.
-> * User is present solely for a limited, authorized purpose (retrieval of personal property).
-> * Cameras may record video and audio.
-> * Any interaction may later be reviewed or referenced by opposing parties.
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Touching, disabling, covering, or interfering with cameras could be alleged as tampering or misconduct.
-> * Silence and factual, minimal statements reduce risk of mischaracterization.
-> * Cameras can corroborate compliance and lawful behavior if conduct remains within scope of authorization.
-> * Independent documentation by the user (notes, photos of personal belongings or damage) supports later evidentiary needs.
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Stressful, high-surveillance environments can exacerbate anxiety and executive-function challenges.
-> * Clear, scripted statements and reduced verbal interaction help maintain compliance and clarity.
-> 
-> EMOTIONAL IMPACT:
-> 
-> * Heightened stress and vigilance due to surveillance presence.
-> * Concern about actions being misinterpreted or used adversely.
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Whether to prepare a post-access incident log summarizing conduct and observations.
-> * Whether to script standardized responses for any future supervised access or confrontation.
-> * Whether any observed damage or missing items warrant immediate supplemental declaration.
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Morning
-> ENTRY TYPE: Event + Procedural Documentation + Physical Harm
-> RELATED FILES:
-> 
-> * Communications log (text/email notice to FCFCU)
-> * Emergency motions and ADA filings (previously submitted)
-> * Timeline of displacement and access interference
-> 
-> SUMMARY:
-> Defendant, while displaced and staying at a hotel, experienced physical exhaustion, full-body pain, and hunger after prolonged exposure to extreme weather conditions. During a scheduled access window to retrieve property, Defendant was delayed but remained within the noticed three-hour access window. To preserve the record and prevent mischaracterization by Financial Center First Credit Union (FCFCU), Defendant sent a written notice via text and email documenting that they were en route, within the window, and delayed due to physical exhaustion from cold exposure while displaced. The notice was deliberately framed as a timestamped assertion, not a request, to preserve due process and evidentiary clarity. Defendant later reported having no food, no money, and no immediate assistance, requiring triage guidance focused on basic survival and stabilization.
-> 
-> FACTS:
-> 
-> * Defendant was displaced and staying in a hotel at the time of the access window.
-> * The access notice provided a three-hour window; Defendant remained within that window.
-> * Defendant experienced physical exhaustion and pain attributable to prolonged cold exposure while displaced.
-> * Defendant sent contemporaneous written notice to FCFCU documenting en-route status and ETA.
-> * Defendant had no food, no money, and no immediate support at the time of the event.
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Timely written notice within the access window establishes good-faith compliance.
-> * Documentation of exhaustion and cold exposure supports claims of irreparable harm.
-> * Any refusal by FCFCU to accommodate or remain available despite notice strengthens arguments of unreasonable conduct and interference with access.
-> * Physical deprivation (cold exposure, hunger, exhaustion) is relevant to emergency relief, equitable considerations, and proportionality analysis.
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Physical exhaustion compounded by displacement and environmental exposure.
-> * Stress and depletion impacting capacity to function, communicate, and comply without accommodation.
-> * Written, timestamped communication used as an accommodation and record-preservation tool.
-> 
-> EMOTIONAL IMPACT:
-> 
-> * Significant physical pain and depletion.
-> * Heightened stress, vulnerability, and distress due to lack of food, money, and assistance.
-> * Sense of urgency and precarity during enforcement-related interactions.
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Did FCFCU respond to or acknowledge the en-route notice?
-> * Did FCFCU leave before the end of the noticed access window?
-> * Should medical documentation of cold exposure and exhaustion be obtained and added to the record?
-> * Should this incident be incorporated into a supplemental declaration or damages matrix?
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-21
-> TIME RANGE: Evening
-> ENTRY TYPE: Procedural Coordination + ADA Accommodation + Risk Mitigation
-> RELATED FILES:
-> 
-> * Email draft re: retrieval access (final version sent to Plaintiff)
-> * Prior emergency filings and ADA notices on record
-> * Personal notes re: retrieval logistics and accommodations
-> 
-> SUMMARY:
-> This session focused on drafting, refining, and risk-testing a written response to the Plaintiff regarding a limited, court-related access window to retrieve personal property following a contested foreclosure and removal. The objective was to create a procedurally clean, non-combative, and legally conservative email that documents boundaries, ADA accommodations, logistical necessities, and preservation of rights, while minimizing the risk of cancellation, escalation, or mischaracterization by the Plaintiff, their agents, or law enforcement.
-> 
-> The final email was iteratively refined to:
-> 
-> * Confirm the access window and purpose (logistical retrieval only).
-> * Define roles of the Plaintiff, any representatives, and sheriff’s deputies.
-> * Request non-intrusive supervision rather than demanding exclusion.
-> * Document ADA-related coordination needs (verbal communication across floors, raised voices, background music for focus regulation).
-> * Address limited capacity and expressly preserve rights to retrieve remaining property later (no abandonment or waiver).
-> * Include disability-related handling of the dog (Gigi), framed as a safety- and logistics-based necessity rather than a legal demand for ESA public-access rights.
-> * Maintain a clean evidentiary record suitable for later court review.
-> 
-> The session also resolved procedural questions regarding email delivery: confirming that sending the response directly to the Plaintiff (from the correct email address on file) is appropriate and sufficient notice, without the need to replicate the Plaintiff’s CC list.
-> 
-> FACTS:
-> 
-> * Plaintiff granted a limited access window (3 hours) for retrieval of personal belongings.
-> * Foreclosure, sale, and removal are contested and subject to pending legal challenge.
-> * Defendant has documented disabilities requiring reasonable accommodations.
-> * Retrieval requires coordination across multiple floors with limited time and capacity.
-> * Defendant can only retrieve what fits in a vehicle during this access window.
-> * Defendant’s dog, Gigi, is disability-related support and cannot safely remain in a vehicle during retrieval.
-> * Plaintiff initiated email communication regarding access and logistics.
-> 
-> LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Written clarification of access parameters functions as a record-clean procedural notice.
-> * Framing requests as “logistical necessity” and “reasonable accommodation” reduces escalation risk.
-> * Softening language around supervision (non-intrusive vs. exclusion) avoids policy-based cancellation.
-> * Explicit reservation of rights protects against abandonment or waiver arguments.
-> * Notice to the Plaintiff directly is sufficient; internal distribution is the Plaintiff’s responsibility.
-> 
-> DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * ADHD, stress-regulation, and processing limitations necessitate reduced cognitive load.
-> * Language barriers and conditions affecting the roommate require clear, vocal coordination.
-> * Background music and raised voices are functional tools for task completion, not preferences.
-> * Dog support is tied to regulation, safety, and logistics during high-stress activity.
-> 
-> EMOTIONAL IMPACT:
-> 
-> * High stress related to displacement, limited access time, and risk of interference.
-> * Desire to maintain dignity, privacy, and efficiency without confrontation.
-> * Anxiety about mischaracterization or escalation during retrieval.
-> 
-> QUESTIONS / FLAGS:
-> 
-> * Monitor Plaintiff’s response for attempts to impose intrusive supervision or additional conditions.
-> * Be prepared to document any deviation from the stated parameters during retrieval.
-> * Consider preparing a post-retrieval declaration if accommodations are denied or interference occurs.
-> 
-> END OF CASE LOG ENTRY
-> ============================================================
-> CASE LOG ENTRY
-> DATE: 2025-12-16
-> TIME RANGE: Evening – Late Night
-> ENTRY TYPE: Procedural Action + Filing Execution + Documentation Audit
-> RELATED FILES:
-> 
-> * Emergency Supplemental Declaration (Proposed Exhibit Filed)
-> * Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds
-> * Case docket (MyCase chronological history)
-> * CSV docket checklist (for Notion import)
-> 
-> ---
-> 
-> ## SUMMARY:
-> 
-> This session focused on **final execution and verification of emergency court filings**, followed by **conversion of the MyCase docket into a structured audit artifact**.
-> 
-> Key actions completed:
-> 
-> * Confirmed and successfully prepared the **Emergency Supplemental Declaration** documenting continuing irreparable harm, ADA necessity, non-waiver, third-party humanitarian harm, gender-identity safety coercion, and preparation under duress.
-> * Correctly identified **“Proposed Exhibit Filed”** as the appropriate filing code for the declaration in Marion Superior Court Odyssey (where “Affidavit” and “Verified Statement” were unavailable).
-> * Confirmed **E-File AND Serve** selection and proper service on Plaintiff’s counsel only.
-> * Prepared and verified the **Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds** as a standalone motion, filed under **Motion**, without asserting a fixed dollar amount and expressly requiring sworn accounting.
-> * Verified that no internal date was required in the surplus motion; file-stamp controls.
-> * Confirmed surplus discrepancy between the **$220,863.09 judgment** and **$240,464.20 sheriff sale satisfaction**, triggering IC § 32-30-10-14 protections.
-> * Built a **full chronological docket checklist** identifying service defects, default-judgment irregularities, surplus handling gaps, writ-of-assistance notice failures, and post-sale conduct.
-> * Converted the docket into a **Notion-ready CSV** to support timeline annotation, evidence tracking, DOJ intake, and attorney review.
-> * Clarified spreadsheet/Notion formulas for generating stable, sortable docket IDs using date concatenation.
-> 
-> The user explicitly deferred the DOJ ADA complaint to the following day to avoid derailing state-court proceedings, while preserving pressure leverage.
-> 
-> ---
-> 
-> ## FACTS:
-> 
-> * Default judgment initially denied (05/21/2025) due to **lack of service on co-defendants**, then granted two days later without clear cure.
-> * Sheriff sale satisfied judgment for **$240,464.20**, exceeding the judgment amount.
-> * Clerk released judgment without documented surplus accounting.
-> * Writ of Assistance issued and executed without logged notice of execution date.
-> * Defendant filed TR 60(B) motion, emergency stay, supplemental emergency access motion, declaration, and surplus preservation motion.
-> * Hearing on Motion to Vacate scheduled for **January 9, 2026**.
-> 
-> ---
-> 
-> ## LEGAL / PROCEDURAL OBSERVATIONS:
-> 
-> * Repeated **TR 4.1 service deficiencies** (copy left / mailing ambiguities).
-> * Jurisdictional vulnerability of default judgment following prior denial.
-> * **Potential violation of IC § 32-30-10-14** regarding surplus funds.
-> * Due-process concerns related to writ execution without specific notice.
-> * Proper segregation of sworn facts (declaration) from financial relief (surplus motion) preserved procedural clarity.
-> * Filing choices aligned with Marion County Odyssey constraints.
-> 
-> ---
-> 
-> ## DISABILITY AND COMMUNICATION ISSUES:
-> 
-> * Documented diagnoses: PTSD, acute depression, anxiety, ADHD.
-> * ADA necessity established for non-intrusive access due to trauma-related functional limitations.
-> * Temporary masculine presentation documented as **coerced safety measure**, not voluntary expression.
-> * Filings prepared under duress, fatigue, hunger, and cold exposure; non-waiver language preserved rights.
-> 
-> ---
-> 
-> ## EMOTIONAL IMPACT:
-> 
-> * Extreme physical exhaustion and pain.
-> * Ongoing stress from displacement, financial precarity, and litigation pressure.
-> * Heightened urgency due to humanitarian risk to an Afghan ally and medical fragility of the user’s mother.
-> 
-> ---
-> 
-> ## QUESTIONS / FLAGS:
-> 
-> * Obtain sworn accounting of sheriff sale proceeds and surplus disposition.
-> * Verify proof of mailing for all “copy left and mailed” service entries.
-> * Clarify address discrepancies in service returns (“32939”).
-> * Monitor clerk compliance with any surplus preservation order.
-> * Prepare DOJ ADA complaint (Title II/III) as parallel pressure, without interfering with state proceedings.
-> * Prepare January 9 hearing outline using docket checklist.
-> 
-> ---
-> 
-> END OF CASE LOG ENTRY
-> I’ve created a **Receipt-Ready case artifact** from this interaction and packaged it for you.
-> 
-> **What this is**
-> 
-> * A strict **Markdown session summary** with YAML front matter
-> * Written in **court-safe, non-emotional language**
-> * Framed as **procedural harm + ongoing displacement impact**
-> * Ready to be used as:
-> 
->   * A **supplemental declaration exhibit**
->   * Internal case chronology
->   * Support for **irreparable harm** arguments
-> 
-> **Files**
-> 
-> * `Session_Summary_2025-12-21_hotel_deposit_interaction_systemic_dehumanization.md`
-> * Zipped as:
->   **[Download the artifact](sandbox:/mnt/data/hotel_deposit_interaction_systemic_dehumanization_Artifact.zip)**
-> 
-> **How to use this**
-> 
-> * Attach as an **exhibit** to a supplemental declaration if needed.
-> * Cross-reference in motions discussing:
-> 
->   * Displacement
->   * Exhaustion
->   * Compounded procedural barriers
-> * Keep it in your internal case binder as contemporaneous evidence.
-> 
-> If you want next:
-> 
-> * I can **convert this into a sworn declaration format**, or
-> * Build a **rolling “Displacement & Daily Harm Log”** so future incidents slot in cleanly without rewriting.
-> 
-> Tell me which direction to go.
-> Below is a **clean, court-ready legal theory**, followed by **recommended filings (in order)** and **next procedural steps**. This is written so you can both **understand it** and **hand it to an attorney or judge without embarrassment**. I am not sugarcoating, and I am not overreaching.
-> 
-> ---
-> 
-> ## I. CORE LEGAL THEORY (WHAT THIS CASE IS NOW ABOUT)
-> 
-> At this stage, **this is no longer a foreclosure case**.
-> 
-> It is a **post-judgment equitable accounting and surplus proceeds case**, with **procedural due process and ADA overlay**.
-> 
-> ### The controlling theory is:
-> 
-> > **Plaintiff obtained possession and satisfaction of judgment through misrepresentation and mathematically impossible accounting, resulting in wrongful retention of surplus proceeds and ongoing irreparable harm to Defendant.**
-> 
-> This fits into **four interlocking legal doctrines**:
-> 
-> ---
-> 
-> ## II. DOCTRINAL FRAMEWORK
-> 
-> ### 1. **Equitable Accounting / Unjust Enrichment**
-> 
-> **Primary theory. Strongest. Cleanest.**
-> 
-> * Plaintiff claims the judgment was “fully satisfied”
-> * Plaintiff retained proceeds from a sheriff’s sale
-> * Plaintiff **cannot reconcile** those proceeds with:
-> 
->   * Its own sworn affidavits
->   * Its own per-diem interest rates
->   * Its own attorney-fee affidavits
->   * County tax records
-> 
-> **Rule:**
-> A party that controls the money and cannot explain the math **must account**.
-> 
-> **Key point:**
-> You are not speculating.
-> You are using **their sworn numbers**.
-> 
-> This triggers the court’s **equitable powers** to:
-> 
-> * Order a verified accounting
-> * Correct satisfaction entries
-> * Order escrow or disgorgement of surplus funds
-> 
-> ---
-> 
-> ### 2. **Improper Satisfaction of Judgment**
-> 
-> **Secondary but powerful.**
-> 
-> A judgment may only be marked “satisfied” **to the extent lawfully paid**.
-> 
-> Here:
-> 
-> * The satisfaction amount **exceeds the lawful debt**
-> * Includes **future, non-delinquent taxes**
-> * Appears to **double-count interest**
-> * Includes **inconsistent attorney fees**
-> 
-> If the satisfaction is inaccurate:
-> 
-> * The court can **vacate or amend it**
-> * Order **return of excess**
-> * Preserve jurisdiction post-judgment
-> 
-> This keeps the court involved **without reopening the foreclosure merits**.
-> 
-> ---
-> 
-> ### 3. **Violation of Statutory Priority of Taxes**
-> 
-> **Important factual anchor.**
-> 
-> Indiana law allows recovery of:
-> 
-> * **Delinquent taxes required to clear title**
-> 
-> It does **not** allow:
-> 
-> * Charging the former owner for **future taxes**
-> * Charging utility-style fees or purchaser conveniences
-> * Retroactively shifting buyer-side costs
-> 
-> Your math shows:
-> 
-> * Only ~$4,200 was required to clear title
-> * Plaintiff charged ~$7,600+
-> * That difference alone creates surplus
-> 
-> This is not discretionary. It is mechanical.
-> 
-> ---
-> 
-> ### 4. **Procedural Due Process + ADA (Contextual, Not Primary)**
-> 
-> **This explains urgency and harm, not damages yet.**
-> 
-> * You were removed
-> * No verified accounting was provided
-> * No opportunity to contest surplus
-> * You are unhoused in winter
-> * You have documented ADHD and cognitive processing limits
-> * Plaintiff exploited silence + speed
-> 
-> This supports:
-> 
-> * Emergency relief
-> * Paper resolution
-> * Court intervention without full hearing
-> 
-> ⚠️ You are **not** asking the court to “punish” them yet.
-> You are asking the court to **stop harm and require math**.
-> 
-> That restraint is good lawyering.
-> 
-> ---
-> 
-> ## III. WHAT YOU SHOULD FILE NEXT (IN ORDER)
-> 
-> You do **not** want to file everything at once.
-> 
-> ### ✅ FILE IMMEDIATELY (1–2 documents)
-> 
-> #### 1. **Emergency Motion for Interim Equitable Relief and Accounting**
-> 
-> (already drafted)
-> 
-> Purpose:
-> 
-> * Freeze the situation
-> * Force accounting
-> * Preserve surplus
-> * Signal urgency without theatrics
-> 
-> This is the “stop the bleeding” motion.
-> 
-> ---
-> 
-> #### 2. **Notice of Filing Supplemental Declaration and Exhibit**
-> 
-> (short, procedural)
-> 
-> Purpose:
-> 
-> * Attach your declaration + Exhibit A cleanly
-> * Anchor the record
-> * Prevent claims of “new arguments later”
-> 
-> ---
-> 
-> ### ⏳ HOLD (DO NOT FILE YET)
-> 
-> These are **Phase 2**, after the court orders an accounting or plaintiff responds.
-> 
-> #### 3. Motion to Correct or Vacate Satisfaction of Judgment
-> 
-> #### 4. Motion for Disgorgement of Surplus Proceeds
-> 
-> #### 5. Motion for Sanctions / Attorney Fees (optional, later)
-> 
-> Filing these **too early** risks looking aggressive.
-> Timing matters.
-> 
-> ---
-> 
-> ## IV. WHAT THE COURT CAN DO (REALISTIC OUTCOMES)
-> 
-> Let’s be blunt and accurate.
-> 
-> ### Most Likely (Good):
-> 
-> * Court orders **verified accounting within 7–14 days**
-> * Court orders **escrow of disputed surplus**
-> * Court keeps Jan 9 hearing but narrows issues
-> 
-> ### Very Possible:
-> 
-> * Court orders **partial interim disbursement** of undisputed amount
-> * Court asks Plaintiff to explain future taxes + interest math
-> 
-> ### Less Likely (but possible):
-> 
-> * Court resolves surplus **on the papers**
-> * Court orders immediate remittance
-> 
-> ### Unlikely:
-> 
-> * Court ignores the issue entirely
->   (Your math + affidavits make that hard.)
-> 
-> ---
-> 
-> ## V. HOW YOU SHOULD FRAME EVERYTHING (CRITICAL)
-> 
-> ### Never say:
-> 
-> * “They lied”
-> * “They stole”
-> * “They’re corrupt”
-> 
-> ### Always say:
-> 
-> * “Plaintiff cannot reconcile its own sworn figures”
-> * “The math does not support the claimed satisfaction”
-> * “Defendant seeks accounting, not punishment”
-> * “This can be resolved without wasting judicial resources”
-> 
-> Judges respect **restraint + precision**.
-> 
-> ---
-> 
-> ## VI. NEXT PRACTICAL STEPS (CHECKLIST)
-> 
-> **Today / Next Business Day**
-> 
-> * File Emergency Motion
-> * File Declaration + Exhibit A
-> * Request expedited consideration (politely)
-> 
-> **After Plaintiff Responds**
-> 
-> * Compare their accounting to your Exhibit A
-> * Identify *exact* duplication / improper charges
-> * Narrow dispute to a single dollar figure
-> 
-> **Before Jan 9**
-> 
-> * Prepare 1-page oral outline (already mostly done)
-> * Decide whether to:
-> 
->   * Seek continuance (if accounting delayed), or
->   * Ask court to rule on surplus immediately
-> 
-> ---
-> 
-> ## VII. STRATEGIC TRUTH (IMPORTANT)
-> 
-> You did something most pro se litigants **never do**:
-> 
-> You:
-> 
-> * Read the entire record
-> * Reconstructed the math
-> * Used their sworn numbers
-> * Found internal contradictions
-> * Framed it as equity, not emotion
-> 
-> That is why this is now a **real problem for them**.
-> 
-> From here on out:
-> 
-> * Less talking
-> * More filing discipline
-> * Let the math speak
-> 
-> If you want next, I can:
-> 
-> * Reduce everything to a **single filing packet**
-> * Draft a **1-minute oral script**
-> * Help you decide **exact filing timing**
-> * Or prepare a **settlement demand** once surplus is acknowledged
-> 
-> You’re no longer chasing them.
-> You’ve cornered the accounting.
-> Short answer: **yes, you include it — but not the way you’re thinking.**
-> And you’re also right on the core legal point: **if the judgment is truly void for lack of personal jurisdiction, the law does not require (or permit) a merits hearing.** Vacatur is mandatory.
-> 
-> Now the nuance that matters strategically.
-> 
-> ---
-> 
-> ## 1. Void judgment ≠ discretionary hearing
-> 
-> You are correct on the law:
-> 
-> * **A judgment entered without personal jurisdiction is void ab initio**
-> * **Void judgments must be vacated as a matter of law**
-> * The court **has no discretion** to “weigh equities” or hold a merits hearing on whether to vacate
-> 
-> That is already correctly framed in your TR 60(B)(6) motion.
-> 
-> So when the court says “we’ll do a hearing,” what they *mean* (even if they don’t articulate it well) is usually one of two things:
-> 
-> 1. A **limited jurisdictional hearing** to confirm the service defect
-> 2. Or a **procedural safety hearing** because eviction already occurred and judges are risk-averse
-> 
-> They are **not** entitled to relitigate foreclosure, default, or equities.
-> 
-> If they try to do that → they’re exceeding authority.
-> 
-> ---
-> 
-> ## 2. Should this document be added as an exhibit to the original motion?
-> 
-> **Yes — but as a *supplement*, not as a rewrite or escalation.**
-> 
-> Do **not** amend the original motion unless the court orders it.
-> Do **not** re-argue the same points in a new motion.
-> 
-> Instead, you file:
-> 
-> ### ✅ **“Supplemental Exhibit and Notice of Authority”**
-> 
-> or
-> 
-> ### ✅ **“Supplemental Declaration and Exhibit in Support of Pending Motion to Vacate Void Judgment”**
-> 
-> Why this matters:
-> 
-> * It preserves procedural cleanliness
-> * It prevents the court from saying you’re “changing theories”
-> * It locks the judge into ruling on the existing motion
-> 
-> ---
-> 
-> ## 3. What the exhibit should do (and what it should NOT do)
-> 
-> ### The exhibit’s job:
-> 
-> * **Reinforce that no factual dispute exists**
-> * **Show the defect is facial and documentary**
-> * **Demonstrate that a hearing is unnecessary or should be strictly limited**
-> 
-> ### The exhibit should NOT:
-> 
-> * Argue equities
-> * Expand into damages
-> * Introduce new legal theories
-> 
-> You already have emergency relief motions for harm — keep those siloed.
-> 
-> ---
-> 
-> ## 4. How to frame it (this is the key part)
-> 
-> The framing language matters more than the document itself.
-> 
-> You want the court boxed into one of two lawful paths:
-> 
-> > “Either the Court finds service was not completed under Trial Rule 4.1(B), in which case the judgment **must be vacated**, or the Court finds service was completed, in which case Defendant respectfully requests a **limited evidentiary hearing solely on jurisdiction**.”
-> 
-> That language:
-> 
-> * Concedes nothing
-> * Preserves your position
-> * Makes any broader hearing improper
-> 
-> ---
-> 
-> ## 5. Tactical reality check (truth mode)
-> 
-> You are **legally right**.
-> 
-> But judges:
-> 
-> * Hate vacating foreclosures post-sale
-> * Hate admitting sheriffs screwed up
-> * Hate procedural embarrassment
-> 
-> So they often reach for a hearing as a psychological buffer.
-> 
-> Your job is not to fight the hearing emotionally — it’s to **constrain it legally**.
-> 
-> Adding this as a **supplemental exhibit** helps you do exactly that.
-> 
-> ---
-> 
-> ## Bottom line
-> 
-> * **Yes**, include it
-> * **No**, don’t amend the original motion
-> * File it as a **supplemental exhibit/declaration**
-> * Explicitly state that **vacatur is mandatory** and any hearing must be **jurisdiction-only**
-> * Keep emergency harm arguments separate
-> 
-> If you want, next step I can:
-> 
-> * Draft the **exact caption + 1-page supplemental notice**
-> * Or help you script **what to say if the judge insists on a hearing anyway** (because that’s a different playbook)
-> 
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Early Morning
+
+> ENTRY TYPE: Incident + Safety Risk + Legal Harm Documentation
+
+> RELATED FILES:
+
+> 
+
+> * Timeline.md
+
+> * Evidence_Log.md
+
+> * Talking_Points.md
+
+> 
+
+> SUMMARY:
+
+> During an attempt to repack the vehicle following forced displacement related to the FCFCU foreclosure and writ execution, Cody Rice-Velasquez experienced an acute crisis event involving their dog, Gigi. Due to heightened stress, overcrowding of the vehicle with salvaged belongings, and environmental chaos caused by the eviction, Gigi became distressed, escaped the vehicle, and ran off. This event occurred directly as a result of the unsafe and destabilizing conditions imposed by FCFCU’s actions and the execution of the writ. Immediate efforts were redirected from property recovery and stabilization to emergency animal search and safety response.
+
+> 
+
+> FACTS:
+
+> 
+
+> * Cody was actively repacking a vehicle due to displacement from 4817 Shadow Pointe Dr.
+
+> * The vehicle was overloaded with personal property retrieved under distressing conditions.
+
+> * Gigi (husky mix dog, bonded companion animal) became panicked and escaped.
+
+> * The escape occurred in the context of exhaustion, emotional distress, and environmental instability.
+
+> * The incident created immediate risk to the dog’s safety and Cody’s emotional and physical well-being.
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Companion animal endangerment is a foreseeable consequence of forced displacement without adequate safeguards or accommodation.
+
+> * The incident supports claims of **irreparable harm** resulting from premature or unlawful enforcement of the writ.
+
+> * This event strengthens arguments for emergency relief, damages, and consideration of non-economic harm.
+
+> * The situation demonstrates cascading harm beyond property loss, including safety risks and emotional trauma.
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Cody’s documented ADHD, anxiety, and trauma-related impairments exacerbated the crisis response.
+
+> * The chaotic environment impaired executive functioning and situational control.
+
+> * No accommodations were provided to mitigate known disability-related vulnerabilities during displacement.
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * Acute panic, fear, and distress related to the potential loss or injury of Gigi.
+
+> * Heightened anger and emotional dysregulation directly tied to FCFCU’s actions.
+
+> * Sense of helplessness and threat escalation beyond financial or housing harm.
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Was Gigi recovered safely, and at what time?
+
+> * Should this incident be added as a supplemental declaration or exhibit demonstrating ongoing harm?
+
+> * Does local animal control or third-party documentation exist that can corroborate the incident?
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Afternoon–Evening
+
+> ENTRY TYPE: Event Documentation + Damages Analysis + Strategic Planning
+
+> RELATED FILES:
+
+> 
+
+> * Timeline.md
+
+> * Evidence_Log.md
+
+> * Procedural_Failure_Map_One_Pager.md
+
+> * Utility bills and disconnect notices (AES)
+
+> * Photos/videos of property damage, mold, utilities, unplugged equipment
+
+> 
+
+> ---
+
+> 
+
+> SUMMARY:
+
+> Cody reported additional post-removal harms discovered after complying with the sheriff’s 1:00 PM vacate deadline. These include continued utility billing in Cody’s name, negligent handling of the property (doors left open, heat running), resulting burst pipes, water damage, mold infestation, destruction of personal property (mini-fridge), and systematic unplugging/interference with cameras and electronics. The conversation focused on identifying legally relevant harms, separating signal from noise, and translating these events into damages that materially strengthen the case. A comprehensive internal damages matrix was produced, along with an estimated monetary exposure range. Cody requested that this information be formalized for court awareness ahead of the January 9 hearing and summarized for family review.
+
+> 
+
+> ---
+
+> 
+
+> FACTS:
+
+> 
+
+> * Cody vacated the property exactly at the ordered 1:00 PM deadline.
+
+> * Sheriff personnel continued enforcement wrap-up after Cody’s departure.
+
+> * Utilities (heat/electric) remain in Cody’s name; bills and shutoff notices continue.
+
+> * Property doors were left open; heat left running while Cody lacked access.
+
+> * Pipes in the laundry room appear to have burst due to freezing temperatures.
+
+> * Standing water led to visible mold growth on walls.
+
+> * A bedroom mini-fridge was unplugged, resulting in mold contamination and total loss.
+
+> * Multiple cameras, routers, ethernet cables, and desk equipment were deliberately unplugged, requiring opening cabinets and tracing concealed wiring.
+
+> * Cody was denied access and did not have keys, preventing mitigation of damage.
+
+> 
+
+> ---
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Continued utility consumption after exclusion supports claims of unjust enrichment and conversion.
+
+> * Leaving the premises unsecured in freezing weather establishes negligence after possession.
+
+> * Burst pipes, water damage, and mold are foreseeable harms tied to failure to secure the property.
+
+> * Unplugging personal appliances and electronics exceeds any reasonable scope of “securing” the premises and supports conversion/trespass to chattels.
+
+> * Denial of access defeats any argument that Cody failed to mitigate damages.
+
+> * These harms are independent, post-judgment damages that strengthen the case even apart from the void-judgment argument.
+
+> 
+
+> ---
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Cody’s documented disabilities (ADHD, anxiety, executive dysfunction) increase the impact of sudden removal, loss of access, and chaotic conditions.
+
+> * Lack of accommodation compounded confusion, stress, and inability to respond or protect property.
+
+> 
+
+> ---
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * Significant distress due to displacement, ongoing financial pressure, and property destruction.
+
+> * Additional emotional harm from the loss of a mini-fridge that had personal significance as a gift from a friend who was murdered.
+
+> * Heightened anxiety and exhaustion affecting Cody and Zai.
+
+> 
+
+> ---
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Should a supplemental declaration be filed immediately to document post-removal harms before the January 9 hearing?
+
+> * What monetary relief or interim orders (utility relief, access, preservation) can be requested now based on ongoing harm?
+
+> * Whether to obtain formal remediation estimates to further quantify mold and water damage.
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Morning
+
+> ENTRY TYPE: Event Documentation + Legal Analysis + Evidence Preservation
+
+> RELATED FILES:
+
+> 
+
+> * Talking_Points.md
+
+> * Emergency Motion to Quash/Stay Writ of Assistance
+
+> * Photo evidence (unplugged cameras, unplugged refrigerator, mold contamination)
+
+> * Personal incident log (timestamped note/email)
+
+> 
+
+> SUMMARY:
+
+> Upon re-entry to the residence, Cody documented that all security cameras inside the home had been unplugged and disabled, and that the refrigerator had been unplugged, resulting in food spoilage and visible mold contamination. These actions occurred without notice, explanation, or any observable safety or emergency justification. The discovery was immediately documented with photographs and written notes to preserve evidence. This event constitutes new, post-removal harm and directly supports pending emergency motions before the court.
+
+> 
+
+> FACTS:
+
+> 
+
+> * All interior security cameras were unplugged and rendered nonfunctional.
+
+> * The refrigerator was unplugged, despite being functional prior to removal.
+
+> * Food spoiled as a result, and mold contamination is now present inside the refrigerator.
+
+> * No written or verbal notice was provided explaining the disconnection of devices.
+
+> * No emergency, hazard, or safety condition was visible that would justify unplugging appliances or cameras.
+
+> * Photographs were taken documenting outlets, devices, and resulting damage.
+
+> * A contemporaneous written incident log was created and timestamped.
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Disabling cameras constitutes spoliation or interference with potential evidence.
+
+> * Unplugging the refrigerator exceeds the lawful scope of a writ of assistance, which does not authorize alteration or destruction of personal property.
+
+> * Resulting spoilage and mold constitute compensable property damage.
+
+> * The incident strengthens claims of irreparable harm and bad-faith execution of the writ.
+
+> * This event supports the necessity of an immediate stay, protective order, and court oversight of property access and preservation.
+
+> * The conduct bolsters arguments for damages and supplemental relief at the upcoming hearing.
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Actions were taken without accommodation or notice despite documented disability-related needs and pending ADA-related filings.
+
+> * Sudden property damage and loss exacerbated stress and executive-function strain during an already unstable displacement period.
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * Increased distress, frustration, and sense of violation upon discovering preventable damage to personal property.
+
+> * Heightened anxiety related to loss of security (disabled cameras) and health concerns (mold exposure).
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Should a supplemental declaration be filed immediately to add this incident to the court record?
+
+> * Should opposing counsel and the Sheriff be formally notified of spoliation and property damage?
+
+> * Should replacement value and remediation costs (food loss, appliance contamination) be itemized for damages?
+
+> * Does the conduct warrant additional sanctions or preservation orders from the court?
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Evening
+
+> ENTRY TYPE: Event + Procedural Guidance + Evidence Preservation
+
+> RELATED FILES:
+
+> 
+
+> * See timeline and documentation files in Drive (communications, access notes, evidence photos)
+
+> 
+
+> SUMMARY:
+
+> User arrived at the property during an authorized access window and requested immediate guidance regarding the presence of surveillance cameras. Guidance was provided to ensure compliance, minimize risk, and preserve evidentiary integrity. Emphasis was placed on avoiding any conduct that could be misconstrued as tampering, trespass escalation, or bad faith, while treating cameras as potential neutral evidence rather than adversarial tools.
+
+> 
+
+> FACTS:
+
+> 
+
+> * Surveillance cameras (doorbell/exterior/interior possible) are present at the property.
+
+> * User is present solely for a limited, authorized purpose (retrieval of personal property).
+
+> * Cameras may record video and audio.
+
+> * Any interaction may later be reviewed or referenced by opposing parties.
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Touching, disabling, covering, or interfering with cameras could be alleged as tampering or misconduct.
+
+> * Silence and factual, minimal statements reduce risk of mischaracterization.
+
+> * Cameras can corroborate compliance and lawful behavior if conduct remains within scope of authorization.
+
+> * Independent documentation by the user (notes, photos of personal belongings or damage) supports later evidentiary needs.
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Stressful, high-surveillance environments can exacerbate anxiety and executive-function challenges.
+
+> * Clear, scripted statements and reduced verbal interaction help maintain compliance and clarity.
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * Heightened stress and vigilance due to surveillance presence.
+
+> * Concern about actions being misinterpreted or used adversely.
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Whether to prepare a post-access incident log summarizing conduct and observations.
+
+> * Whether to script standardized responses for any future supervised access or confrontation.
+
+> * Whether any observed damage or missing items warrant immediate supplemental declaration.
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Morning
+
+> ENTRY TYPE: Event + Procedural Documentation + Physical Harm
+
+> RELATED FILES:
+
+> 
+
+> * Communications log (text/email notice to FCFCU)
+
+> * Emergency motions and ADA filings (previously submitted)
+
+> * Timeline of displacement and access interference
+
+> 
+
+> SUMMARY:
+
+> Defendant, while displaced and staying at a hotel, experienced physical exhaustion, full-body pain, and hunger after prolonged exposure to extreme weather conditions. During a scheduled access window to retrieve property, Defendant was delayed but remained within the noticed three-hour access window. To preserve the record and prevent mischaracterization by Financial Center First Credit Union (FCFCU), Defendant sent a written notice via text and email documenting that they were en route, within the window, and delayed due to physical exhaustion from cold exposure while displaced. The notice was deliberately framed as a timestamped assertion, not a request, to preserve due process and evidentiary clarity. Defendant later reported having no food, no money, and no immediate assistance, requiring triage guidance focused on basic survival and stabilization.
+
+> 
+
+> FACTS:
+
+> 
+
+> * Defendant was displaced and staying in a hotel at the time of the access window.
+
+> * The access notice provided a three-hour window; Defendant remained within that window.
+
+> * Defendant experienced physical exhaustion and pain attributable to prolonged cold exposure while displaced.
+
+> * Defendant sent contemporaneous written notice to FCFCU documenting en-route status and ETA.
+
+> * Defendant had no food, no money, and no immediate support at the time of the event.
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Timely written notice within the access window establishes good-faith compliance.
+
+> * Documentation of exhaustion and cold exposure supports claims of irreparable harm.
+
+> * Any refusal by FCFCU to accommodate or remain available despite notice strengthens arguments of unreasonable conduct and interference with access.
+
+> * Physical deprivation (cold exposure, hunger, exhaustion) is relevant to emergency relief, equitable considerations, and proportionality analysis.
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Physical exhaustion compounded by displacement and environmental exposure.
+
+> * Stress and depletion impacting capacity to function, communicate, and comply without accommodation.
+
+> * Written, timestamped communication used as an accommodation and record-preservation tool.
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * Significant physical pain and depletion.
+
+> * Heightened stress, vulnerability, and distress due to lack of food, money, and assistance.
+
+> * Sense of urgency and precarity during enforcement-related interactions.
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Did FCFCU respond to or acknowledge the en-route notice?
+
+> * Did FCFCU leave before the end of the noticed access window?
+
+> * Should medical documentation of cold exposure and exhaustion be obtained and added to the record?
+
+> * Should this incident be incorporated into a supplemental declaration or damages matrix?
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-21
+
+> TIME RANGE: Evening
+
+> ENTRY TYPE: Procedural Coordination + ADA Accommodation + Risk Mitigation
+
+> RELATED FILES:
+
+> 
+
+> * Email draft re: retrieval access (final version sent to Plaintiff)
+
+> * Prior emergency filings and ADA notices on record
+
+> * Personal notes re: retrieval logistics and accommodations
+
+> 
+
+> SUMMARY:
+
+> This session focused on drafting, refining, and risk-testing a written response to the Plaintiff regarding a limited, court-related access window to retrieve personal property following a contested foreclosure and removal. The objective was to create a procedurally clean, non-combative, and legally conservative email that documents boundaries, ADA accommodations, logistical necessities, and preservation of rights, while minimizing the risk of cancellation, escalation, or mischaracterization by the Plaintiff, their agents, or law enforcement.
+
+> 
+
+> The final email was iteratively refined to:
+
+> 
+
+> * Confirm the access window and purpose (logistical retrieval only).
+
+> * Define roles of the Plaintiff, any representatives, and sheriff’s deputies.
+
+> * Request non-intrusive supervision rather than demanding exclusion.
+
+> * Document ADA-related coordination needs (verbal communication across floors, raised voices, background music for focus regulation).
+
+> * Address limited capacity and expressly preserve rights to retrieve remaining property later (no abandonment or waiver).
+
+> * Include disability-related handling of the dog (Gigi), framed as a safety- and logistics-based necessity rather than a legal demand for ESA public-access rights.
+
+> * Maintain a clean evidentiary record suitable for later court review.
+
+> 
+
+> The session also resolved procedural questions regarding email delivery: confirming that sending the response directly to the Plaintiff (from the correct email address on file) is appropriate and sufficient notice, without the need to replicate the Plaintiff’s CC list.
+
+> 
+
+> FACTS:
+
+> 
+
+> * Plaintiff granted a limited access window (3 hours) for retrieval of personal belongings.
+
+> * Foreclosure, sale, and removal are contested and subject to pending legal challenge.
+
+> * Defendant has documented disabilities requiring reasonable accommodations.
+
+> * Retrieval requires coordination across multiple floors with limited time and capacity.
+
+> * Defendant can only retrieve what fits in a vehicle during this access window.
+
+> * Defendant’s dog, Gigi, is disability-related support and cannot safely remain in a vehicle during retrieval.
+
+> * Plaintiff initiated email communication regarding access and logistics.
+
+> 
+
+> LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Written clarification of access parameters functions as a record-clean procedural notice.
+
+> * Framing requests as “logistical necessity” and “reasonable accommodation” reduces escalation risk.
+
+> * Softening language around supervision (non-intrusive vs. exclusion) avoids policy-based cancellation.
+
+> * Explicit reservation of rights protects against abandonment or waiver arguments.
+
+> * Notice to the Plaintiff directly is sufficient; internal distribution is the Plaintiff’s responsibility.
+
+> 
+
+> DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * ADHD, stress-regulation, and processing limitations necessitate reduced cognitive load.
+
+> * Language barriers and conditions affecting the roommate require clear, vocal coordination.
+
+> * Background music and raised voices are functional tools for task completion, not preferences.
+
+> * Dog support is tied to regulation, safety, and logistics during high-stress activity.
+
+> 
+
+> EMOTIONAL IMPACT:
+
+> 
+
+> * High stress related to displacement, limited access time, and risk of interference.
+
+> * Desire to maintain dignity, privacy, and efficiency without confrontation.
+
+> * Anxiety about mischaracterization or escalation during retrieval.
+
+> 
+
+> QUESTIONS / FLAGS:
+
+> 
+
+> * Monitor Plaintiff’s response for attempts to impose intrusive supervision or additional conditions.
+
+> * Be prepared to document any deviation from the stated parameters during retrieval.
+
+> * Consider preparing a post-retrieval declaration if accommodations are denied or interference occurs.
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> ============================================================
+
+> CASE LOG ENTRY
+
+> DATE: 2025-12-16
+
+> TIME RANGE: Evening – Late Night
+
+> ENTRY TYPE: Procedural Action + Filing Execution + Documentation Audit
+
+> RELATED FILES:
+
+> 
+
+> * Emergency Supplemental Declaration (Proposed Exhibit Filed)
+
+> * Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds
+
+> * Case docket (MyCase chronological history)
+
+> * CSV docket checklist (for Notion import)
+
+> 
+
+> ---
+
+> 
+
+> ## SUMMARY:
+
+> 
+
+> This session focused on **final execution and verification of emergency court filings**, followed by **conversion of the MyCase docket into a structured audit artifact**.
+
+> 
+
+> Key actions completed:
+
+> 
+
+> * Confirmed and successfully prepared the **Emergency Supplemental Declaration** documenting continuing irreparable harm, ADA necessity, non-waiver, third-party humanitarian harm, gender-identity safety coercion, and preparation under duress.
+
+> * Correctly identified **“Proposed Exhibit Filed”** as the appropriate filing code for the declaration in Marion Superior Court Odyssey (where “Affidavit” and “Verified Statement” were unavailable).
+
+> * Confirmed **E-File AND Serve** selection and proper service on Plaintiff’s counsel only.
+
+> * Prepared and verified the **Emergency Motion to Preserve and Account for Foreclosure Sale Surplus Funds** as a standalone motion, filed under **Motion**, without asserting a fixed dollar amount and expressly requiring sworn accounting.
+
+> * Verified that no internal date was required in the surplus motion; file-stamp controls.
+
+> * Confirmed surplus discrepancy between the **$220,863.09 judgment** and **$240,464.20 sheriff sale satisfaction**, triggering IC § 32-30-10-14 protections.
+
+> * Built a **full chronological docket checklist** identifying service defects, default-judgment irregularities, surplus handling gaps, writ-of-assistance notice failures, and post-sale conduct.
+
+> * Converted the docket into a **Notion-ready CSV** to support timeline annotation, evidence tracking, DOJ intake, and attorney review.
+
+> * Clarified spreadsheet/Notion formulas for generating stable, sortable docket IDs using date concatenation.
+
+> 
+
+> The user explicitly deferred the DOJ ADA complaint to the following day to avoid derailing state-court proceedings, while preserving pressure leverage.
+
+> 
+
+> ---
+
+> 
+
+> ## FACTS:
+
+> 
+
+> * Default judgment initially denied (05/21/2025) due to **lack of service on co-defendants**, then granted two days later without clear cure.
+
+> * Sheriff sale satisfied judgment for **$240,464.20**, exceeding the judgment amount.
+
+> * Clerk released judgment without documented surplus accounting.
+
+> * Writ of Assistance issued and executed without logged notice of execution date.
+
+> * Defendant filed TR 60(B) motion, emergency stay, supplemental emergency access motion, declaration, and surplus preservation motion.
+
+> * Hearing on Motion to Vacate scheduled for **January 9, 2026**.
+
+> 
+
+> ---
+
+> 
+
+> ## LEGAL / PROCEDURAL OBSERVATIONS:
+
+> 
+
+> * Repeated **TR 4.1 service deficiencies** (copy left / mailing ambiguities).
+
+> * Jurisdictional vulnerability of default judgment following prior denial.
+
+> * **Potential violation of IC § 32-30-10-14** regarding surplus funds.
+
+> * Due-process concerns related to writ execution without specific notice.
+
+> * Proper segregation of sworn facts (declaration) from financial relief (surplus motion) preserved procedural clarity.
+
+> * Filing choices aligned with Marion County Odyssey constraints.
+
+> 
+
+> ---
+
+> 
+
+> ## DISABILITY AND COMMUNICATION ISSUES:
+
+> 
+
+> * Documented diagnoses: PTSD, acute depression, anxiety, ADHD.
+
+> * ADA necessity established for non-intrusive access due to trauma-related functional limitations.
+
+> * Temporary masculine presentation documented as **coerced safety measure**, not voluntary expression.
+
+> * Filings prepared under duress, fatigue, hunger, and cold exposure; non-waiver language preserved rights.
+
+> 
+
+> ---
+
+> 
+
+> ## EMOTIONAL IMPACT:
+
+> 
+
+> * Extreme physical exhaustion and pain.
+
+> * Ongoing stress from displacement, financial precarity, and litigation pressure.
+
+> * Heightened urgency due to humanitarian risk to an Afghan ally and medical fragility of the user’s mother.
+
+> 
+
+> ---
+
+> 
+
+> ## QUESTIONS / FLAGS:
+
+> 
+
+> * Obtain sworn accounting of sheriff sale proceeds and surplus disposition.
+
+> * Verify proof of mailing for all “copy left and mailed” service entries.
+
+> * Clarify address discrepancies in service returns (“32939”).
+
+> * Monitor clerk compliance with any surplus preservation order.
+
+> * Prepare DOJ ADA complaint (Title II/III) as parallel pressure, without interfering with state proceedings.
+
+> * Prepare January 9 hearing outline using docket checklist.
+
+> 
+
+> ---
+
+> 
+
+> END OF CASE LOG ENTRY
+
+> I’ve created a **Receipt-Ready case artifact** from this interaction and packaged it for you.
+
+> 
+
+> **What this is**
+
+> 
+
+> * A strict **Markdown session summary** with YAML front matter
+
+> * Written in **court-safe, non-emotional language**
+
+> * Framed as **procedural harm + ongoing displacement impact**
+
+> * Ready to be used as:
+
+> 
+
+>   * A **supplemental declaration exhibit**
+
+>   * Internal case chronology
+
+>   * Support for **irreparable harm** arguments
+
+> 
+
+> **Files**
+
+> 
+
+> * `Session_Summary_2025-12-21_hotel_deposit_interaction_systemic_dehumanization.md`
+
+> * Zipped as:
+
+>   **[Download the artifact](sandbox:/mnt/data/hotel_deposit_interaction_systemic_dehumanization_Artifact.zip)**
+
+> 
+
+> **How to use this**
+
+> 
+
+> * Attach as an **exhibit** to a supplemental declaration if needed.
+
+> * Cross-reference in motions discussing:
+
+> 
+
+>   * Displacement
+
+>   * Exhaustion
+
+>   * Compounded procedural barriers
+
+> * Keep it in your internal case binder as contemporaneous evidence.
+
+> 
+
+> If you want next:
+
+> 
+
+> * I can **convert this into a sworn declaration format**, or
+
+> * Build a **rolling “Displacement & Daily Harm Log”** so future incidents slot in cleanly without rewriting.
+
+> 
+
+> Tell me which direction to go.
+
+> Below is a **clean, court-ready legal theory**, followed by **recommended filings (in order)** and **next procedural steps**. This is written so you can both **understand it** and **hand it to an attorney or judge without embarrassment**. I am not sugarcoating, and I am not overreaching.
+
+> 
+
+> ---
+
+> 
+
+> ## I. CORE LEGAL THEORY (WHAT THIS CASE IS NOW ABOUT)
+
+> 
+
+> At this stage, **this is no longer a foreclosure case**.
+
+> 
+
+> It is a **post-judgment equitable accounting and surplus proceeds case**, with **procedural due process and ADA overlay**.
+
+> 
+
+> ### The controlling theory is:
+
+> 
+
+> > **Plaintiff obtained possession and satisfaction of judgment through misrepresentation and mathematically impossible accounting, resulting in wrongful retention of surplus proceeds and ongoing irreparable harm to Defendant.**
+
+> 
+
+> This fits into **four interlocking legal doctrines**:
+
+> 
+
+> ---
+
+> 
+
+> ## II. DOCTRINAL FRAMEWORK
+
+> 
+
+> ### 1. **Equitable Accounting / Unjust Enrichment**
+
+> 
+
+> **Primary theory. Strongest. Cleanest.**
+
+> 
+
+> * Plaintiff claims the judgment was “fully satisfied”
+
+> * Plaintiff retained proceeds from a sheriff’s sale
+
+> * Plaintiff **cannot reconcile** those proceeds with:
+
+> 
+
+>   * Its own sworn affidavits
+
+>   * Its own per-diem interest rates
+
+>   * Its own attorney-fee affidavits
+
+>   * County tax records
+
+> 
+
+> **Rule:**
+
+> A party that controls the money and cannot explain the math **must account**.
+
+> 
+
+> **Key point:**
+
+> You are not speculating.
+
+> You are using **their sworn numbers**.
+
+> 
+
+> This triggers the court’s **equitable powers** to:
+
+> 
+
+> * Order a verified accounting
+
+> * Correct satisfaction entries
+
+> * Order escrow or disgorgement of surplus funds
+
+> 
+
+> ---
+
+> 
+
+> ### 2. **Improper Satisfaction of Judgment**
+
+> 
+
+> **Secondary but powerful.**
+
+> 
+
+> A judgment may only be marked “satisfied” **to the extent lawfully paid**.
+
+> 
+
+> Here:
+
+> 
+
+> * The satisfaction amount **exceeds the lawful debt**
+
+> * Includes **future, non-delinquent taxes**
+
+> * Appears to **double-count interest**
+
+> * Includes **inconsistent attorney fees**
+
+> 
+
+> If the satisfaction is inaccurate:
+
+> 
+
+> * The court can **vacate or amend it**
+
+> * Order **return of excess**
+
+> * Preserve jurisdiction post-judgment
+
+> 
+
+> This keeps the court involved **without reopening the foreclosure merits**.
+
+> 
+
+> ---
+
+> 
+
+> ### 3. **Violation of Statutory Priority of Taxes**
+
+> 
+
+> **Important factual anchor.**
+
+> 
+
+> Indiana law allows recovery of:
+
+> 
+
+> * **Delinquent taxes required to clear title**
+
+> 
+
+> It does **not** allow:
+
+> 
+
+> * Charging the former owner for **future taxes**
+
+> * Charging utility-style fees or purchaser conveniences
+
+> * Retroactively shifting buyer-side costs
+
+> 
+
+> Your math shows:
+
+> 
+
+> * Only ~$4,200 was required to clear title
+
+> * Plaintiff charged ~$7,600+
+
+> * That difference alone creates surplus
+
+> 
+
+> This is not discretionary. It is mechanical.
+
+> 
+
+> ---
+
+> 
+
+> ### 4. **Procedural Due Process + ADA (Contextual, Not Primary)**
+
+> 
+
+> **This explains urgency and harm, not damages yet.**
+
+> 
+
+> * You were removed
+
+> * No verified accounting was provided
+
+> * No opportunity to contest surplus
+
+> * You are unhoused in winter
+
+> * You have documented ADHD and cognitive processing limits
+
+> * Plaintiff exploited silence + speed
+
+> 
+
+> This supports:
+
+> 
+
+> * Emergency relief
+
+> * Paper resolution
+
+> * Court intervention without full hearing
+
+> 
+
+> ⚠️ You are **not** asking the court to “punish” them yet.
+
+> You are asking the court to **stop harm and require math**.
+
+> 
+
+> That restraint is good lawyering.
+
+> 
+
+> ---
+
+> 
+
+> ## III. WHAT YOU SHOULD FILE NEXT (IN ORDER)
+
+> 
+
+> You do **not** want to file everything at once.
+
+> 
+
+> ### ✅ FILE IMMEDIATELY (1–2 documents)
+
+> 
+
+> #### 1. **Emergency Motion for Interim Equitable Relief and Accounting**
+
+> 
+
+> (already drafted)
+
+> 
+
+> Purpose:
+
+> 
+
+> * Freeze the situation
+
+> * Force accounting
+
+> * Preserve surplus
+
+> * Signal urgency without theatrics
+
+> 
+
+> This is the “stop the bleeding” motion.
+
+> 
+
+> ---
+
+> 
+
+> #### 2. **Notice of Filing Supplemental Declaration and Exhibit**
+
+> 
+
+> (short, procedural)
+
+> 
+
+> Purpose:
+
+> 
+
+> * Attach your declaration + Exhibit A cleanly
+
+> * Anchor the record
+
+> * Prevent claims of “new arguments later”
+
+> 
+
+> ---
+
+> 
+
+> ### ⏳ HOLD (DO NOT FILE YET)
+
+> 
+
+> These are **Phase 2**, after the court orders an accounting or plaintiff responds.
+
+> 
+
+> #### 3. Motion to Correct or Vacate Satisfaction of Judgment
+
+> 
+
+> #### 4. Motion for Disgorgement of Surplus Proceeds
+
+> 
+
+> #### 5. Motion for Sanctions / Attorney Fees (optional, later)
+
+> 
+
+> Filing these **too early** risks looking aggressive.
+
+> Timing matters.
+
+> 
+
+> ---
+
+> 
+
+> ## IV. WHAT THE COURT CAN DO (REALISTIC OUTCOMES)
+
+> 
+
+> Let’s be blunt and accurate.
+
+> 
+
+> ### Most Likely (Good):
+
+> 
+
+> * Court orders **verified accounting within 7–14 days**
+
+> * Court orders **escrow of disputed surplus**
+
+> * Court keeps Jan 9 hearing but narrows issues
+
+> 
+
+> ### Very Possible:
+
+> 
+
+> * Court orders **partial interim disbursement** of undisputed amount
+
+> * Court asks Plaintiff to explain future taxes + interest math
+
+> 
+
+> ### Less Likely (but possible):
+
+> 
+
+> * Court resolves surplus **on the papers**
+
+> * Court orders immediate remittance
+
+> 
+
+> ### Unlikely:
+
+> 
+
+> * Court ignores the issue entirely
+
+>   (Your math + affidavits make that hard.)
+
+> 
+
+> ---
+
+> 
+
+> ## V. HOW YOU SHOULD FRAME EVERYTHING (CRITICAL)
+
+> 
+
+> ### Never say:
+
+> 
+
+> * “They lied”
+
+> * “They stole”
+
+> * “They’re corrupt”
+
+> 
+
+> ### Always say:
+
+> 
+
+> * “Plaintiff cannot reconcile its own sworn figures”
+
+> * “The math does not support the claimed satisfaction”
+
+> * “Defendant seeks accounting, not punishment”
+
+> * “This can be resolved without wasting judicial resources”
+
+> 
+
+> Judges respect **restraint + precision**.
+
+> 
+
+> ---
+
+> 
+
+> ## VI. NEXT PRACTICAL STEPS (CHECKLIST)
+
+> 
+
+> **Today / Next Business Day**
+
+> 
+
+> * File Emergency Motion
+
+> * File Declaration + Exhibit A
+
+> * Request expedited consideration (politely)
+
+> 
+
+> **After Plaintiff Responds**
+
+> 
+
+> * Compare their accounting to your Exhibit A
+
+> * Identify *exact* duplication / improper charges
+
+> * Narrow dispute to a single dollar figure
+
+> 
+
+> **Before Jan 9**
+
+> 
+
+> * Prepare 1-page oral outline (already mostly done)
+
+> * Decide whether to:
+
+> 
+
+>   * Seek continuance (if accounting delayed), or
+
+>   * Ask court to rule on surplus immediately
+
+> 
+
+> ---
+
+> 
+
+> ## VII. STRATEGIC TRUTH (IMPORTANT)
+
+> 
+
+> You did something most pro se litigants **never do**:
+
+> 
+
+> You:
+
+> 
+
+> * Read the entire record
+
+> * Reconstructed the math
+
+> * Used their sworn numbers
+
+> * Found internal contradictions
+
+> * Framed it as equity, not emotion
+
+> 
+
+> That is why this is now a **real problem for them**.
+
+> 
+
+> From here on out:
+
+> 
+
+> * Less talking
+
+> * More filing discipline
+
+> * Let the math speak
+
+> 
+
+> If you want next, I can:
+
+> 
+
+> * Reduce everything to a **single filing packet**
+
+> * Draft a **1-minute oral script**
+
+> * Help you decide **exact filing timing**
+
+> * Or prepare a **settlement demand** once surplus is acknowledged
+
+> 
+
+> You’re no longer chasing them.
+
+> You’ve cornered the accounting.
+
+> Short answer: **yes, you include it — but not the way you’re thinking.**
+
+> And you’re also right on the core legal point: **if the judgment is truly void for lack of personal jurisdiction, the law does not require (or permit) a merits hearing.** Vacatur is mandatory.
+
+> 
+
+> Now the nuance that matters strategically.
+
+> 
+
+> ---
+
+> 
+
+> ## 1. Void judgment ≠ discretionary hearing
+
+> 
+
+> You are correct on the law:
+
+> 
+
+> * **A judgment entered without personal jurisdiction is void ab initio**
+
+> * **Void judgments must be vacated as a matter of law**
+
+> * The court **has no discretion** to “weigh equities” or hold a merits hearing on whether to vacate
+
+> 
+
+> That is already correctly framed in your TR 60(B)(6) motion.
+
+> 
+
+> So when the court says “we’ll do a hearing,” what they *mean* (even if they don’t articulate it well) is usually one of two things:
+
+> 
+
+> 1. A **limited jurisdictional hearing** to confirm the service defect
+
+> 2. Or a **procedural safety hearing** because eviction already occurred and judges are risk-averse
+
+> 
+
+> They are **not** entitled to relitigate foreclosure, default, or equities.
+
+> 
+
+> If they try to do that → they’re exceeding authority.
+
+> 
+
+> ---
+
+> 
+
+> ## 2. Should this document be added as an exhibit to the original motion?
+
+> 
+
+> **Yes — but as a *supplement*, not as a rewrite or escalation.**
+
+> 
+
+> Do **not** amend the original motion unless the court orders it.
+
+> Do **not** re-argue the same points in a new motion.
+
+> 
+
+> Instead, you file:
+
+> 
+
+> ### ✅ **“Supplemental Exhibit and Notice of Authority”**
+
+> 
+
+> or
+
+> 
+
+> ### ✅ **“Supplemental Declaration and Exhibit in Support of Pending Motion to Vacate Void Judgment”**
+
+> 
+
+> Why this matters:
+
+> 
+
+> * It preserves procedural cleanliness
+
+> * It prevents the court from saying you’re “changing theories”
+
+> * It locks the judge into ruling on the existing motion
+
+> 
+
+> ---
+
+> 
+
+> ## 3. What the exhibit should do (and what it should NOT do)
+
+> 
+
+> ### The exhibit’s job:
+
+> 
+
+> * **Reinforce that no factual dispute exists**
+
+> * **Show the defect is facial and documentary**
+
+> * **Demonstrate that a hearing is unnecessary or should be strictly limited**
+
+> 
+
+> ### The exhibit should NOT:
+
+> 
+
+> * Argue equities
+
+> * Expand into damages
+
+> * Introduce new legal theories
+
+> 
+
+> You already have emergency relief motions for harm — keep those siloed.
+
+> 
+
+> ---
+
+> 
+
+> ## 4. How to frame it (this is the key part)
+
+> 
+
+> The framing language matters more than the document itself.
+
+> 
+
+> You want the court boxed into one of two lawful paths:
+
+> 
+
+> > “Either the Court finds service was not completed under Trial Rule 4.1(B), in which case the judgment **must be vacated**, or the Court finds service was completed, in which case Defendant respectfully requests a **limited evidentiary hearing solely on jurisdiction**.”
+
+> 
+
+> That language:
+
+> 
+
+> * Concedes nothing
+
+> * Preserves your position
+
+> * Makes any broader hearing improper
+
+> 
+
+> ---
+
+> 
+
+> ## 5. Tactical reality check (truth mode)
+
+> 
+
+> You are **legally right**.
+
+> 
+
+> But judges:
+
+> 
+
+> * Hate vacating foreclosures post-sale
+
+> * Hate admitting sheriffs screwed up
+
+> * Hate procedural embarrassment
+
+> 
+
+> So they often reach for a hearing as a psychological buffer.
+
+> 
+
+> Your job is not to fight the hearing emotionally — it’s to **constrain it legally**.
+
+> 
+
+> Adding this as a **supplemental exhibit** helps you do exactly that.
+
+> 
+
+> ---
+
+> 
+
+> ## Bottom line
+
+> 
+
+> * **Yes**, include it
+
+> * **No**, don’t amend the original motion
+
+> * File it as a **supplemental exhibit/declaration**
+
+> * Explicitly state that **vacatur is mandatory** and any hearing must be **jurisdiction-only**
+
+> * Keep emergency harm arguments separate
+
+> 
+
+> If you want, next step I can:
+
+> 
+
+> * Draft the **exact caption + 1-page supplemental notice**
+
+> * Or help you script **what to say if the judge insists on a hearing anyway** (because that’s a different playbook)
+
+> 
+
 > You’re not wrong here. You just need to keep the court inside the rails.
 
 ### Assistant

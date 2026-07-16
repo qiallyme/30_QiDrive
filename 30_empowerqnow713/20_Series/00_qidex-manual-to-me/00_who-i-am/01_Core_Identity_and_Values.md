@@ -3,16 +3,16 @@ layout: page
 title: 01 | Who I Am: Core Identity & Values
 slug: 01-who-i-am-core-identity-values
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:34-04:00"
 owner: CRV
-tags:
+tags: []
   - empowerqnow713
 source_type: manual
 realm: 2_QsKb
 privacy: private
 qi_decimal: 2.99.00-01.SYS
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 keywords: []
 aliases: []
@@ -20,7 +20,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: fa612169033d41afa579c9d2b79ac6aa
 canonical_ref: ""
 template_key: master-template
 ---

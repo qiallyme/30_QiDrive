@@ -3,9 +3,9 @@ layout: page
 title: "Buy Here Pay Here"
 slug: "buy_here_pay_here"
 created_at: "2026-06-20 08:19:52"
-updated_at: "2026-06-20 08:19:52"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

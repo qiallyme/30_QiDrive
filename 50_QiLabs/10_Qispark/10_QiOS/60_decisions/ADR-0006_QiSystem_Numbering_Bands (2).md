@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Adr 0006 Qisystem Numbering Bands
-slug: ""
+slug: adr-0006-qisystem-numbering-bands
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 15fcc4541294493d8d5e1ba333b27563
 canonical_ref: ""
 source_type: manual
 template_key: master-template

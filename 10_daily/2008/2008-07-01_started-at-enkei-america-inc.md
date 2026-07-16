@@ -3,7 +3,7 @@ layout: page
 title: "Started at Enkei America, Inc"
 slug: "started-at-enkei-america-inc"
 created_at: "2008-07-01"
-updated_at: "2008-07-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["career"]
 category: "career"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 65d530db9b9e4740858a5724dffbf1f3
 canonical_ref: ""
 ---
 

@@ -3,9 +3,9 @@ layout: page
 title: "Next steps explanation"
 slug: "next_steps_explanation"
 created_at: "2025-12-10 19:30:55"
-updated_at: "2025-12-10 19:30:55"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

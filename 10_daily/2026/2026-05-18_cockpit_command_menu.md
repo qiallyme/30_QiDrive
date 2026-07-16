@@ -3,9 +3,9 @@ layout: page
 title: "Cockpit Command Menu"
 slug: "cockpit_command_menu"
 created_at: "2026-05-18 13:50:08"
-updated_at: "2026-05-18 13:50:08"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -721,27 +721,48 @@ canonical_ref: ""
 > That’s the clean stack.
 
 ### User
-> so it looks like a shit ton is missing something so its reacheabl efrom the web with tailscale Choose an option: 1
-> 
-> NAMES                        STATUS                          PORTS
-> paperless                    Up 5 hours (healthy)            127.0.0.1:8010->8000/tcp
-> wikijs                       Up 5 seconds                    
-> wikijs-db                    Up 5 seconds                    5432/tcp
-> qitranscribe-whisper-webui   Restarting (1) 14 seconds ago   
-> solidtime                    Up 5 hours (healthy)            80/tcp, 443/tcp, 2019/tcp, 443/udp, 127.0.0.1:8095->8000/tcp
-> solidtime-db                 Up 5 hours (healthy)            5432/tcp
-> qdrant                       Up 5 hours                      127.0.0.1:6333-6334->6333-6334/tcp
-> uptime-kuma                  Up 5 hours (healthy)            127.0.0.1:3005->3001/tcp
-> n8n                          Up 5 hours                      127.0.0.1:5678->5678/tcp
-> portainer                    Up 5 hours                      8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
-> homepage                     Up 5 hours (healthy)            127.0.0.1:3001->3000/tcp
-> paperless-postgres           Up 5 hours                      5432/tcp
-> paperless-redis              Up 5 hours                      6379/tcp
-> nocodb                       Up 5 hours                      127.0.0.1:8088->8080/tcp
-> nocodb-db                    Up 5 hours (healthy)            5432/tcp
-> nocodb-redis                 Up 5 hours                      6379/tcp
-> cloudflared                  Up 5 hours                      
-> open-webui                   Up 5 hours (healthy)            127.0.0.1:3000->8080/tcp
+> so it looks like a shit ton is missing something so its reacheabl efrom the web with tailscale Choose an option: 1
+
+> 
+
+> NAMES                        STATUS                          PORTS
+
+> paperless                    Up 5 hours (healthy)            127.0.0.1:8010->8000/tcp
+
+> wikijs                       Up 5 seconds                    
+
+> wikijs-db                    Up 5 seconds                    5432/tcp
+
+> qitranscribe-whisper-webui   Restarting (1) 14 seconds ago   
+
+> solidtime                    Up 5 hours (healthy)            80/tcp, 443/tcp, 2019/tcp, 443/udp, 127.0.0.1:8095->8000/tcp
+
+> solidtime-db                 Up 5 hours (healthy)            5432/tcp
+
+> qdrant                       Up 5 hours                      127.0.0.1:6333-6334->6333-6334/tcp
+
+> uptime-kuma                  Up 5 hours (healthy)            127.0.0.1:3005->3001/tcp
+
+> n8n                          Up 5 hours                      127.0.0.1:5678->5678/tcp
+
+> portainer                    Up 5 hours                      8000/tcp, 9000/tcp, 127.0.0.1:9443->9443/tcp
+
+> homepage                     Up 5 hours (healthy)            127.0.0.1:3001->3000/tcp
+
+> paperless-postgres           Up 5 hours                      5432/tcp
+
+> paperless-redis              Up 5 hours                      6379/tcp
+
+> nocodb                       Up 5 hours                      127.0.0.1:8088->8080/tcp
+
+> nocodb-db                    Up 5 hours (healthy)            5432/tcp
+
+> nocodb-redis                 Up 5 hours                      6379/tcp
+
+> cloudflared                  Up 5 hours                      
+
+> open-webui                   Up 5 hours (healthy)            127.0.0.1:3000->8080/tcp
+
 > neo4j                        Up 5 hours                      127.0.0.1:7474->7474/tcp, 7473/tcp, 127.0.0.1:7687->7687/tcp
 
 ### Assistant
@@ -1017,158 +1038,310 @@ canonical_ref: ""
 > The uncomfortable truth: the services aren’t “missing.” Your **access layer is incomplete**. Containers are alive; the doors are inconsistent. We fix that with one service map and explicit Tailscale Serve entries.
 
 ### User
-> ====================================
->         QiServer Ops Menu
-> ====================================
-> 
-> 1) Show running containers
-> 2) Show all containers
-> 3) Show system health
-> 4) Check listening ports
-> 
-> 5) Restart Wiki.js
-> 6) Restart Paperless
-> 7) Restart NocoDB
-> 8) Restart Cloudflare tunnel
-> 9) Restart Portainer
-> 10) Restart Uptime Kuma
-> 11) Restart n8n
-> 12) Restart Qdrant
-> 13) Restart Neo4j
-> 14) Restart Open WebUI
-> 
-> 15) Show logs for container
-> 16) Restart container by name
-> 
-> 17) Restart Docker service
-> 18) Restart Cockpit service
-> 19) Reboot server
-> 
-> 0) Exit
-> 
-> Choose an option: 0
-> 
-> qiadmin@qiserver:/$ tailscale serve status
-> https://qiserver-1.cerberus-sirius.ts.net:9448 (tailnet only)
-> |-- / proxy http://127.0.0.1:3002
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9449 (tailnet only)
-> |-- / proxy https://127.0.0.1:9443
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
-> |-- / proxy http://127.0.0.1:5678
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
-> |-- / proxy http://127.0.0.1:3005
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
-> |-- / proxy http://127.0.0.1:8088
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
-> |-- / proxy http://127.0.0.1:3000
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
-> |-- / proxy http://127.0.0.1:8010
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9452 (tailnet only)
-> |-- / proxy http://127.0.0.1:6333
-> 
-> https://qiserver-1.cerberus-sirius.ts.net:9453 (tailnet only)
-> |-- / proxy http://127.0.0.1:8095
-> 
-> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
-> |-- / proxy http://127.0.0.1:3001
-> 
-> qiadmin@qiserver:/$ tailscale status
-> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                                                            
-> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 6d ago                                    
-> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 38d ago                                   
-> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                                                            
-> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.4.31:41641, tx 238487064 rx 19054432  
-> qiadmin@qiserver:/$ hostname -I
-> 192.168.4.22 100.121.111.106 172.28.0.1 172.19.0.1 172.21.0.1 172.29.0.1 172.18.0.1 172.26.0.1 172.17.0.1 172.25.0.1 172.27.0.1 172.23.0.1 172.24.0.1 172.30.0.1 172.20.0.1 172.22.0.1 fd7a:115c:a1e0::8532:6f6a 
-> qiadmin@qiserver:/$ docker inspect wikijs --format '{{json .NetworkSettings.Ports}}'
-> {}
-> qiadmin@qiserver:/$ cd /srv/qios/stacks/wikijs
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ 
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ ls
-> docker-compose.yml  docker-compose.yml.bak.20260516_151706
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ 
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ cat docker-compose.yml
-> 
-> services:
-> 
->   wikijs-db:
-> 
->     image: postgres:15-alpine
-> 
->     container_name: wikijs-db
-> 
->     restart: unless-stopped
-> 
->     environment:
-> 
->       POSTGRES_DB: ${POSTGRES_DB}
-> 
->       POSTGRES_USER: ${POSTGRES_USER}
-> 
->       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-> 
->     volumes:
-> 
->       - wikijs-db-data:/var/lib/postgresql/data
-> 
-> 
-> 
->   wikijs:
-> 
->     image: requarks/wiki:2
-> 
->     container_name: wikijs
-> 
->     restart: unless-stopped
-> 
->     depends_on:
-> 
->       - wikijs-db
-> 
->     environment:
-> 
->       DB_TYPE: postgres
-> 
->       DB_HOST: wikijs-db
-> 
->       DB_PORT: 5432
-> 
->       DB_USER: ${POSTGRES_USER}
-> 
->       DB_PASS: ${POSTGRES_PASSWORD}
-> 
->       DB_NAME: ${POSTGRES_DB}
-> 
->     ports:
-> 
->       - "100.121.111.106:3002:3000"
-> 
->     volumes:
-> 
->       - /srv/qios/wiki-import/QiDocs:/wiki-import:ro
-> 
->       - /srv/qios/wiki-export/current:/wiki-export
-> 
-> 
-> 
-> volumes:
-> 
->   wikijs-db-data:
-> 
-> qiadmin@qiserver:/srv/qios/stacks/wikijs$ ls -la
-> total 20
-> drwxr-xr-x  2 qiadmin qiadmin 4096 May 16 15:17 .
-> drwxrwxr-x 14 qiadmin qiadmin 4096 May 18 11:47 ..
-> -rw-rw-r--  1 qiadmin qiadmin  844 May 16 15:17 docker-compose.yml
-> -rw-rw-r--  1 qiadmin qiadmin  914 May 16 15:17 docker-compose.yml.bak.20260516_151706
-> -rw-rw-r--  1 qiadmin qiadmin   68 May  8 09:55 .env
+> ====================================
+
+>         QiServer Ops Menu
+
+> ====================================
+
+> 
+
+> 1) Show running containers
+
+> 2) Show all containers
+
+> 3) Show system health
+
+> 4) Check listening ports
+
+> 
+
+> 5) Restart Wiki.js
+
+> 6) Restart Paperless
+
+> 7) Restart NocoDB
+
+> 8) Restart Cloudflare tunnel
+
+> 9) Restart Portainer
+
+> 10) Restart Uptime Kuma
+
+> 11) Restart n8n
+
+> 12) Restart Qdrant
+
+> 13) Restart Neo4j
+
+> 14) Restart Open WebUI
+
+> 
+
+> 15) Show logs for container
+
+> 16) Restart container by name
+
+> 
+
+> 17) Restart Docker service
+
+> 18) Restart Cockpit service
+
+> 19) Reboot server
+
+> 
+
+> 0) Exit
+
+> 
+
+> Choose an option: 0
+
+> 
+
+> qiadmin@qiserver:/$ tailscale serve status
+
+> https://qiserver-1.cerberus-sirius.ts.net:9448 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3002
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9449 (tailnet only)
+
+> |-- / proxy https://127.0.0.1:9443
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9450 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:5678
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9451 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3005
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:8443 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8088
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9446 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3000
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9447 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8010
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9452 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:6333
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net:9453 (tailnet only)
+
+> |-- / proxy http://127.0.0.1:8095
+
+> 
+
+> https://qiserver-1.cerberus-sirius.ts.net (tailnet only)
+
+> |-- / proxy http://127.0.0.1:3001
+
+> 
+
+> qiadmin@qiserver:/$ tailscale status
+
+> 100.121.111.106  qiserver-1            qiserver-1.cerberus-sirius.ts.net  linux    -                                                            
+
+> 100.66.216.97    iphone-13-pro-max-1   crice4485@                         iOS      offline, last seen 6d ago                                    
+
+> 100.93.140.115   qigate2               crice4485@                         windows  offline, last seen 38d ago                                   
+
+> 100.67.25.114    qione-docker-desktop  crice4485@                         linux    -                                                            
+
+> 100.115.240.56   qione                 crice4485@                         windows  active; direct 192.168.4.31:41641, tx 238487064 rx 19054432  
+
+> qiadmin@qiserver:/$ hostname -I
+
+> 192.168.4.22 100.121.111.106 172.28.0.1 172.19.0.1 172.21.0.1 172.29.0.1 172.18.0.1 172.26.0.1 172.17.0.1 172.25.0.1 172.27.0.1 172.23.0.1 172.24.0.1 172.30.0.1 172.20.0.1 172.22.0.1 fd7a:115c:a1e0::8532:6f6a 
+
+> qiadmin@qiserver:/$ docker inspect wikijs --format '{{json .NetworkSettings.Ports}}'
+
+> {}
+
+> qiadmin@qiserver:/$ cd /srv/qios/stacks/wikijs
+
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ ls
+
+> docker-compose.yml  docker-compose.yml.bak.20260516_151706
+
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ 
+
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ cat docker-compose.yml
+
+> 
+
+> services:
+
+> 
+
+>   wikijs-db:
+
+> 
+
+>     image: postgres:15-alpine
+
+> 
+
+>     container_name: wikijs-db
+
+> 
+
+>     restart: unless-stopped
+
+> 
+
+>     environment:
+
+> 
+
+>       POSTGRES_DB: ${POSTGRES_DB}
+
+> 
+
+>       POSTGRES_USER: ${POSTGRES_USER}
+
+> 
+
+>       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+
+> 
+
+>     volumes:
+
+> 
+
+>       - wikijs-db-data:/var/lib/postgresql/data
+
+> 
+
+> 
+
+> 
+
+>   wikijs:
+
+> 
+
+>     image: requarks/wiki:2
+
+> 
+
+>     container_name: wikijs
+
+> 
+
+>     restart: unless-stopped
+
+> 
+
+>     depends_on:
+
+> 
+
+>       - wikijs-db
+
+> 
+
+>     environment:
+
+> 
+
+>       DB_TYPE: postgres
+
+> 
+
+>       DB_HOST: wikijs-db
+
+> 
+
+>       DB_PORT: 5432
+
+> 
+
+>       DB_USER: ${POSTGRES_USER}
+
+> 
+
+>       DB_PASS: ${POSTGRES_PASSWORD}
+
+> 
+
+>       DB_NAME: ${POSTGRES_DB}
+
+> 
+
+>     ports:
+
+> 
+
+>       - "100.121.111.106:3002:3000"
+
+> 
+
+>     volumes:
+
+> 
+
+>       - /srv/qios/wiki-import/QiDocs:/wiki-import:ro
+
+> 
+
+>       - /srv/qios/wiki-export/current:/wiki-export
+
+> 
+
+> 
+
+> 
+
+> volumes:
+
+> 
+
+>   wikijs-db-data:
+
+> 
+
+> qiadmin@qiserver:/srv/qios/stacks/wikijs$ ls -la
+
+> total 20
+
+> drwxr-xr-x  2 qiadmin qiadmin 4096 May 16 15:17 .
+
+> drwxrwxr-x 14 qiadmin qiadmin 4096 May 18 11:47 ..
+
+> -rw-rw-r--  1 qiadmin qiadmin  844 May 16 15:17 docker-compose.yml
+
+> -rw-rw-r--  1 qiadmin qiadmin  914 May 16 15:17 docker-compose.yml.bak.20260516_151706
+
+> -rw-rw-r--  1 qiadmin qiadmin   68 May  8 09:55 .env
+
 > qiadmin@qiserver:/srv/qios/stacks/wikijs$
 
 ### Assistant
@@ -1857,8 +2030,10 @@ canonical_ref: ""
 > Once you paste me the result, I’ll give you the exact import command with the real path.
 
 ### User
-> /srv/qios/repos/_QiAccess_Start/.git
-> /srv/qios/wiki-import/QiDocs/.git
+> /srv/qios/repos/_QiAccess_Start/.git
+
+> /srv/qios/wiki-import/QiDocs/.git
+
 > qiadmin@qiserver:/srv/qios/stacks/wikijs
 
 ### Assistant
@@ -2383,40 +2558,74 @@ canonical_ref: ""
 > Wiki.js remains your living/self-hosted KB. VitePress becomes your reliable published backup that deploys with the repo.
 
 ### User
-> heres the current package.json. {
->   "name": "qiaccess",
->   "private": true,
->   "version": "0.1.0",
->   "type": "module",
->   "scripts": {
->     "dev": "vite",
->     "build": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
->     "preview": "vite preview",
->     "docs:sync": "python scripts/sync_docs_site.py sync",
->     "docs:build": "python scripts/sync_docs_site.py build",
->     "docs:serve": "python scripts/sync_docs_site.py serve"
->   },
->   "dependencies": {
->     "@mdx-js/react": "^3.1.1",
->     "@supabase/supabase-js": "^2.105.4",
->     "@xyflow/react": "^12.8.2",
->     "react": "^19.2.0",
->     "react-dom": "^19.2.0",
->     "react-router-dom": "^6.30.0"
->   },
->   "devDependencies": {
->     "@mdx-js/rollup": "^3.1.1",
->     "@tailwindcss/typography": "^0.5.19",
->     "@types/react": "^19.2.1",
->     "@types/react-dom": "^19.2.1",
->     "@vitejs/plugin-react": "^5.0.4",
->     "autoprefixer": "^10.4.21",
->     "postcss": "^8.5.6",
->     "remark-gfm": "^4.0.1",
->     "tailwindcss": "^3.4.17",
->     "typescript": "^5.8.3",
->     "vite": "^7.0.5"
->   }
+> heres the current package.json. {
+
+>   "name": "qiaccess",
+
+>   "private": true,
+
+>   "version": "0.1.0",
+
+>   "type": "module",
+
+>   "scripts": {
+
+>     "dev": "vite",
+
+>     "build": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
+
+>     "preview": "vite preview",
+
+>     "docs:sync": "python scripts/sync_docs_site.py sync",
+
+>     "docs:build": "python scripts/sync_docs_site.py build",
+
+>     "docs:serve": "python scripts/sync_docs_site.py serve"
+
+>   },
+
+>   "dependencies": {
+
+>     "@mdx-js/react": "^3.1.1",
+
+>     "@supabase/supabase-js": "^2.105.4",
+
+>     "@xyflow/react": "^12.8.2",
+
+>     "react": "^19.2.0",
+
+>     "react-dom": "^19.2.0",
+
+>     "react-router-dom": "^6.30.0"
+
+>   },
+
+>   "devDependencies": {
+
+>     "@mdx-js/rollup": "^3.1.1",
+
+>     "@tailwindcss/typography": "^0.5.19",
+
+>     "@types/react": "^19.2.1",
+
+>     "@types/react-dom": "^19.2.1",
+
+>     "@vitejs/plugin-react": "^5.0.4",
+
+>     "autoprefixer": "^10.4.21",
+
+>     "postcss": "^8.5.6",
+
+>     "remark-gfm": "^4.0.1",
+
+>     "tailwindcss": "^3.4.17",
+
+>     "typescript": "^5.8.3",
+
+>     "vite": "^7.0.5"
+
+>   }
+
 > }
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Plaintiff Retroactive Adjustments"
 slug: "plaintiff_retroactive_adjustments"
 created_at: "2026-03-08 05:08:01"
-updated_at: "2026-03-08 05:08:01"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -186,28 +186,50 @@ canonical_ref: ""
 > (It’s buried in the interest calculation.)
 
 ### User
-> The record shows that Financial Center First Credit Union (FCFCU) and their counsel formally relied on the $240,464.20 bid amount—and the specific inflated costs within it—at least six separate times over a span of seven months.
-> They defended these exact numbers as perfectly accurate when they thought it resulted in a $0 surplus, and only claimed it was a "scrivener's error" after you forced them to concede the math actually resulted in an $8,378.42 surplus.
-> Here is the exact timeline of how many times they relied on those numbers before trying to change the record:
-> 1. July 17, 2025: The Official Signed Bid Form FCFCU submitted their official "Plaintiff's Bid" signed by Kimberly Flowers, VP of Member Solutions
-> . On this document, they affirmatively set the bid at $240,464.20 and explicitly itemized the $10,725.27 in interest—the exact line item they later tried to claim was an "error"
-> .
-> 2. September 9, 2025: The Clerk's Return The bank allowed the Decree of Foreclosure to be returned and recorded as "Fully Satisfied" based on that exact $240,464.20 total paid at the Sheriff's Sale
-> .
-> 3. December 17, 2025: The "Report of No Excess Proceeds" After you filed your first emergency motion for the surplus, FCFCU responded the very next day by filing a formal report to the court. In it, they relied on the $240,464.20 bid amount to calculate and claim that the surplus was exactly $0.00
-> .
-> 4. January 9, 2026: Sworn Statements at the Court Hearing During the hearing before Magistrate Hannah, FCFCU's counsel, Scott Kainrath, aggressively defended the $240,464.20 bid. He stated on the record that the credit union "bid exactly what was owed, no more"
-> . He explicitly argued that the numbers were accurate and covered the outstanding debt, back taxes, attorney fees, and administrative costs, emphatically telling the judge "there is no excess"
-> .
-> 5. February 16, 2026: Direct Email Denial After you sent your formal Surplus Demand with your forensic math, Attorney Kainrath replied via email on February 16, relying on their previous calculations to state: "There was no surplus from the Sheriff Sale"
-> .
-> 6. February 20, 2026: Petition to Pay Surplus After reviewing your math, FCFCU filed a "Petition to Pay Surplus Funds" to the court. In this filing, they explicitly represented that they were "in agreement with the surplus fund amount" of $8,378.42
-> . This agreement was mathematically anchored to their original $240,464.20 bid.
-> The Reversal (February 24, 2026): It was only after all of this—after defending the math in court, filing reports, and formally agreeing to the $8k surplus—that the bank filed their Nunc Pro Tunc motion
-> . They suddenly claimed that the $10,725.27 interest calculation on their own bid sheet was a "scrivener's error" and asked the court to retroactively rewrite history by dropping the winning bid to $230,562.40 to make the surplus disappear
-> .
-> Your objection successfully pointed out this hypocrisy: modifying a bid amount to erase an $8,000 surplus after repeatedly defending it is a substantive alteration of financial rights, not a simple "clerical error"
-> . The court agreed with you and denied their attempt to rewrite the record
+> The record shows that Financial Center First Credit Union (FCFCU) and their counsel formally relied on the $240,464.20 bid amount—and the specific inflated costs within it—at least six separate times over a span of seven months.
+
+> They defended these exact numbers as perfectly accurate when they thought it resulted in a $0 surplus, and only claimed it was a "scrivener's error" after you forced them to concede the math actually resulted in an $8,378.42 surplus.
+
+> Here is the exact timeline of how many times they relied on those numbers before trying to change the record:
+
+> 1. July 17, 2025: The Official Signed Bid Form FCFCU submitted their official "Plaintiff's Bid" signed by Kimberly Flowers, VP of Member Solutions
+
+> . On this document, they affirmatively set the bid at $240,464.20 and explicitly itemized the $10,725.27 in interest—the exact line item they later tried to claim was an "error"
+
+> .
+
+> 2. September 9, 2025: The Clerk's Return The bank allowed the Decree of Foreclosure to be returned and recorded as "Fully Satisfied" based on that exact $240,464.20 total paid at the Sheriff's Sale
+
+> .
+
+> 3. December 17, 2025: The "Report of No Excess Proceeds" After you filed your first emergency motion for the surplus, FCFCU responded the very next day by filing a formal report to the court. In it, they relied on the $240,464.20 bid amount to calculate and claim that the surplus was exactly $0.00
+
+> .
+
+> 4. January 9, 2026: Sworn Statements at the Court Hearing During the hearing before Magistrate Hannah, FCFCU's counsel, Scott Kainrath, aggressively defended the $240,464.20 bid. He stated on the record that the credit union "bid exactly what was owed, no more"
+
+> . He explicitly argued that the numbers were accurate and covered the outstanding debt, back taxes, attorney fees, and administrative costs, emphatically telling the judge "there is no excess"
+
+> .
+
+> 5. February 16, 2026: Direct Email Denial After you sent your formal Surplus Demand with your forensic math, Attorney Kainrath replied via email on February 16, relying on their previous calculations to state: "There was no surplus from the Sheriff Sale"
+
+> .
+
+> 6. February 20, 2026: Petition to Pay Surplus After reviewing your math, FCFCU filed a "Petition to Pay Surplus Funds" to the court. In this filing, they explicitly represented that they were "in agreement with the surplus fund amount" of $8,378.42
+
+> . This agreement was mathematically anchored to their original $240,464.20 bid.
+
+> The Reversal (February 24, 2026): It was only after all of this—after defending the math in court, filing reports, and formally agreeing to the $8k surplus—that the bank filed their Nunc Pro Tunc motion
+
+> . They suddenly claimed that the $10,725.27 interest calculation on their own bid sheet was a "scrivener's error" and asked the court to retroactively rewrite history by dropping the winning bid to $230,562.40 to make the surplus disappear
+
+> .
+
+> Your objection successfully pointed out this hypocrisy: modifying a bid amount to erase an $8,000 surplus after repeatedly defending it is a substantive alteration of financial rights, not a simple "clerical error"
+
+> . The court agreed with you and denied their attempt to rewrite the record
+
 > .
 
 ### Assistant
@@ -1240,270 +1262,534 @@ canonical_ref: ""
 > If you want, I can also show you **one extremely important weakness in their newest hearing request that actually makes your position stronger** — and it’s hiding right in paragraph 4 of their filing.
 
 ### User
-> AND DONT FORGET I SENT THIS ON FEB 17 Re: Financial Center First Credit Union v. Rice-Velasquez 
-> 
-> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
-> 
->  	
->  
->  
->  	
-> Final Good-Faith Attempt to Resolve Surplus Reconciliation
->  	
->  
->  
->  	
-> Scott,
-> 
-> I am making a final good-faith effort to resolve the surplus reconciliation issue directly before pursuing further remedies.
-> 
-> Your representation that the issue of excess proceeds was “settled in court” is not accurate. The court ruled based on the information presented by your client. I placed on record that the figures did not reconcile. A ruling does not relieve your client of the obligation to accurately apply sale proceeds or return surplus funds if generated.
-> 
-> A Notice of Appeal has been filed.
-> 
-> The Sheriff’s Sale generated a bid of $240,464.20.
-> The Judgment fixed the indebtedness at $220,863.09 as of April 29, 2025, with a per diem interest of $27.45.
-> The sale occurred on August 15, 2025.
-> 
-> The $10,725.27 interest figure reflected in the bid and subsequent worksheet does not reconcile to the established per diem over the relevant accrual period. Additional cost figures reflected across the sale documentation are inconsistent and lack clear itemization.
-> 
-> To narrow the dispute and eliminate uncontested items, I recalculated the payoff using only amounts that are verified or reasonably attributable to the sale.
-> 
-> Using 108 days of post-judgment interest (April 30 through August 15, 2025), interest totals $2,964.60.
-> 
-> Including:
-> 
-> Real estate taxes: $7,600.81
-> 
-> Sheriff/Admin fees: $338.00
-> 
-> Clerk/recording: $35.00
-> 
-> Publication: $284.28
-> 
-> The reconciled payoff equals $232,085.78.
-> 
-> With a bid of $240,464.20, the resulting surplus equals $8,378.42.
-> 
-> This calculation excludes the unitemized $8,875.81 “additional costs” figure and the $10,725.27 interest amount, both of which remain unsupported and do not reconcile to the per diem established in sworn filings.
-> 
-> I am not seeking anything beyond accurate application of sale proceeds and return of equity generated by the bid.
-> 
-> If your client wishes to resolve this matter without further accounting review, tendering $8,378.42 to the Clerk for distribution will resolve the surplus reconciliation.
-> 
-> If that is not your client’s position, contemporaneous accounting documentation substantiating the alternative figures must be produced.
-> 
-> This surplus and accounting issue has been raised on the record since December and addressed at the January hearing. Your client has therefore been on notice of the reconciliation dispute for several months.
-> 
-> If I do not receive confirmation of surplus payment or the requested accounting documentation no later than close of business on Monday, the 23rd, I will proceed with formal regulatory escalation and pursue all available remedies.
-> 
-> Nothing in this correspondence shall be construed as a waiver of any rights, claims, defenses, or remedies available to me, all of which are expressly reserved.
-> 
-> Cody Rice-Velasquez
-> 
->  	
->  
->  
->  	
-> NOTICE: This communication is transmitted for purposes of formal notice and record documentation. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, all of which are expressly reserved.
-> 
-> SERVICE: Sent via electronic mail consistent with prior communication in this matter.
-> 
-> COMMUNICATION ACCOMMODATION: Consistent with previously submitted accommodation requests, all responsive materials must be provided in writing.  AND HIS REPLY, 7 of 46
-> Surplus Demand – Sheriff Sale August 15, 2025
-> Inbox
-> AI Overview
-> Cody sent formal notice of a surplus demand regarding an August 15, 2025 Sheriff's Sale and requested confirmation of receipt.
-> Scott responded that there was no surplus, citing a prior court order from January 9th.
-> Cody disputed the lack of surplus, provided a detailed calculation showing an $8,378.42 surplus, and requested payment or documentation by Monday, the 23rd.
-> Scott acknowledged the interest calculation issue and stated they would review calculations with their client and respond with an agreement by early/mid next week.
-> By Gemini; there may be mistakes. Learn more
-> 
-> Cody Rice-Velasquez <crice4485@gmail.com>
-> Attachments
-> Thu, Feb 12, 3:15 PM
-> to Scott, Susan, kflowers, compliance@fcfcu.com
-> 
-> Re: Financial Center First Credit Union v. Rice-Velasquez 
-> 
-> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
-> 
->  	
->  
->  
->  	
-> TIME-SENSITIVE NOTICE | Service by Email Confirmed on Record
->  	
->  
->  
->  	
-> Formal Notice of Surplus Demand 
->  	
-> Scott,
-> 
-> Attached please find my Formal Surplus Demand regarding the August 15, 2025 Sheriff’s Sale in Cause No. 49D03-2501-MF-002559.
-> 
-> This correspondence is provided for review by Financial Center First Credit Union and counsel. As stated in the letter, a written response is requested within fourteen (14) calendar days of receipt.
-> 
-> Please confirm receipt.
-> 
-> Sincerely,
-> Cody Rice-Velasquez
-> 
->  	
->  
->  
->  	
-> Sent via email pursuant to Court-confirmed service method
-> 
->  	
->  
->  
->  	
-> NOTICE: This message and any attachments are transmitted for purposes of formal notice, documentation, and preservation of the record. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, whether at law or in equity, unless expressly set forth in a signed written agreement.
-> 
-> 
-> SERVICE: Sent via electronic mail consistent with the communication method confirmed on the record in this matter.
-> 
-> 
-> ROUTING: If this communication has been received by an individual or department not responsible for addressing the subject matter herein, the recipient is directed to promptly forward it to the appropriate party. Internal routing or delegation does not alter or extend any deadlines stated.
-> 
-> 
-> PRESERVATION: Recipients and their agents are directed to preserve all potentially relevant documents and electronically stored information (ESI), including but not limited to emails, internal communications, loan servicing records, accounting ledgers, metadata, audit trails, system logs, backups, and recordings. Any routine deletion, overwrite, or auto-purge functions applicable to such materials must be suspended.
-> 
-> 
-> COMMUNICATION ACCOMMODATION: Consistent with previously submitted disability-related accommodation requests, all communications and responsive materials must be provided in writing and stated clearly and unambiguously to ensure accurate review and record preservation.
-> 
-> 
-> ------------------------------------------------------------------------- END OF EMAIL ------------------------------------------------------------------------
-> 
->  	
->  
->  
->  	
->  2 Attachments
->   •  Scanned by Gmail
-> 
-> skainrath@gfwlawyers.com
-> Mon, Feb 16, 12:20 AM
-> Cody, There was no surplus from the Sheriff Sale. As you are aware the Court already ruled on this in its January 9th Order. Thanks, Scott A. Kainrath GRAHAM, F
-> 
-> Cody Rice-Velasquez <crice4485@gmail.com>
-> Tue, Feb 17, 8:00 AM
-> to Susan, compliance@fcfcu.com, kflowers, skainrath
-> 
-> Re: Financial Center First Credit Union v. Rice-Velasquez 
-> 
-> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
-> 
->  	
->  
->  
->  	
-> Final Good-Faith Attempt to Resolve Surplus Reconciliation
->  	
->  
->  
->  	
-> Scott,
-> 
-> I am making a final good-faith effort to resolve the surplus reconciliation issue directly before pursuing further remedies.
-> 
-> Your representation that the issue of excess proceeds was “settled in court” is not accurate. The court ruled based on the information presented by your client. I placed on record that the figures did not reconcile. A ruling does not relieve your client of the obligation to accurately apply sale proceeds or return surplus funds if generated.
-> 
-> A Notice of Appeal has been filed.
-> 
-> The Sheriff’s Sale generated a bid of $240,464.20.
-> The Judgment fixed the indebtedness at $220,863.09 as of April 29, 2025, with a per diem interest of $27.45.
-> The sale occurred on August 15, 2025.
-> 
-> The $10,725.27 interest figure reflected in the bid and subsequent worksheet does not reconcile to the established per diem over the relevant accrual period. Additional cost figures reflected across the sale documentation are inconsistent and lack clear itemization.
-> 
-> To narrow the dispute and eliminate uncontested items, I recalculated the payoff using only amounts that are verified or reasonably attributable to the sale.
-> 
-> Using 108 days of post-judgment interest (April 30 through August 15, 2025), interest totals $2,964.60.
-> 
-> Including:
-> 
-> Real estate taxes: $7,600.81
-> 
-> Sheriff/Admin fees: $338.00
-> 
-> Clerk/recording: $35.00
-> 
-> Publication: $284.28
-> 
-> The reconciled payoff equals $232,085.78.
-> 
-> With a bid of $240,464.20, the resulting surplus equals $8,378.42.
-> 
-> This calculation excludes the unitemized $8,875.81 “additional costs” figure and the $10,725.27 interest amount, both of which remain unsupported and do not reconcile to the per diem established in sworn filings.
-> 
-> I am not seeking anything beyond accurate application of sale proceeds and return of equity generated by the bid.
-> 
-> If your client wishes to resolve this matter without further accounting review, tendering $8,378.42 to the Clerk for distribution will resolve the surplus reconciliation.
-> 
-> If that is not your client’s position, contemporaneous accounting documentation substantiating the alternative figures must be produced.
-> 
-> This surplus and accounting issue has been raised on the record since December and addressed at the January hearing. Your client has therefore been on notice of the reconciliation dispute for several months.
-> 
-> If I do not receive confirmation of surplus payment or the requested accounting documentation no later than close of business on Monday, the 23rd, I will proceed with formal regulatory escalation and pursue all available remedies.
-> 
-> Nothing in this correspondence shall be construed as a waiver of any rights, claims, defenses, or remedies available to me, all of which are expressly reserved.
-> 
-> Cody Rice-Velasquez
-> 
->  	
->  
->  
->  	
-> NOTICE: This communication is transmitted for purposes of formal notice and record documentation. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, all of which are expressly reserved.
-> 
-> SERVICE: Sent via electronic mail consistent with prior communication in this matter.
-> 
-> COMMUNICATION ACCOMMODATION: Consistent with previously submitted accommodation requests, all responsive materials must be provided in writing.
-> 
->  	
->  
->  
->  	
-> 
-> skainrath@gfwlawyers.com <skainrath@inlawemail.com>
-> Thu, Feb 19, 12:53 PM
-> to me, skainrath
-> 
-> Cody,
-> 
->  
-> 
-> I understand what you are saying about the interest.  Let me go through the calculations with my client and if they are incorrect, I will get back with you on an Agreement by early/mid next week.
-> 
->  
-> 
-> Thanks,
-> 
->  
-> 
-> Scott A. Kainrath
-> 
-> GRAHAM, FARRER & WILSON, P.C
-> 
-> 1601 S. Anderson Street
-> 
-> Elwood, IN 46036
-> 
-> P 765-552-9878, F 765-552-5496
-> 
->  
-> 
->  
-> 
-> CONFIDENTIALITY NOTICE
-> 
-> This transmission (including any attachments) may contain information which is confidential, attorney work product and/or subject to the attorney-client privilege, and is intended solely for the recipient(s)named above.  If you are not a named recipient, any interception, copying, distribution, disclosure or use of this transmission or any information contained in it is strictly prohibited, and may be subject to criminal and civil penalties.  If you have received this transmission in error, please immediately call us at (752) 552-9878, delete the transmission from all forms of electronic or other storage, and destroy all hard copies.  Do NOT forward this transmission.  Thank you.
-> 
->  
-> 
+> AND DONT FORGET I SENT THIS ON FEB 17 Re: Financial Center First Credit Union v. Rice-Velasquez 
+
+> 
+
+> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Final Good-Faith Attempt to Resolve Surplus Reconciliation
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Scott,
+
+> 
+
+> I am making a final good-faith effort to resolve the surplus reconciliation issue directly before pursuing further remedies.
+
+> 
+
+> Your representation that the issue of excess proceeds was “settled in court” is not accurate. The court ruled based on the information presented by your client. I placed on record that the figures did not reconcile. A ruling does not relieve your client of the obligation to accurately apply sale proceeds or return surplus funds if generated.
+
+> 
+
+> A Notice of Appeal has been filed.
+
+> 
+
+> The Sheriff’s Sale generated a bid of $240,464.20.
+
+> The Judgment fixed the indebtedness at $220,863.09 as of April 29, 2025, with a per diem interest of $27.45.
+
+> The sale occurred on August 15, 2025.
+
+> 
+
+> The $10,725.27 interest figure reflected in the bid and subsequent worksheet does not reconcile to the established per diem over the relevant accrual period. Additional cost figures reflected across the sale documentation are inconsistent and lack clear itemization.
+
+> 
+
+> To narrow the dispute and eliminate uncontested items, I recalculated the payoff using only amounts that are verified or reasonably attributable to the sale.
+
+> 
+
+> Using 108 days of post-judgment interest (April 30 through August 15, 2025), interest totals $2,964.60.
+
+> 
+
+> Including:
+
+> 
+
+> Real estate taxes: $7,600.81
+
+> 
+
+> Sheriff/Admin fees: $338.00
+
+> 
+
+> Clerk/recording: $35.00
+
+> 
+
+> Publication: $284.28
+
+> 
+
+> The reconciled payoff equals $232,085.78.
+
+> 
+
+> With a bid of $240,464.20, the resulting surplus equals $8,378.42.
+
+> 
+
+> This calculation excludes the unitemized $8,875.81 “additional costs” figure and the $10,725.27 interest amount, both of which remain unsupported and do not reconcile to the per diem established in sworn filings.
+
+> 
+
+> I am not seeking anything beyond accurate application of sale proceeds and return of equity generated by the bid.
+
+> 
+
+> If your client wishes to resolve this matter without further accounting review, tendering $8,378.42 to the Clerk for distribution will resolve the surplus reconciliation.
+
+> 
+
+> If that is not your client’s position, contemporaneous accounting documentation substantiating the alternative figures must be produced.
+
+> 
+
+> This surplus and accounting issue has been raised on the record since December and addressed at the January hearing. Your client has therefore been on notice of the reconciliation dispute for several months.
+
+> 
+
+> If I do not receive confirmation of surplus payment or the requested accounting documentation no later than close of business on Monday, the 23rd, I will proceed with formal regulatory escalation and pursue all available remedies.
+
+> 
+
+> Nothing in this correspondence shall be construed as a waiver of any rights, claims, defenses, or remedies available to me, all of which are expressly reserved.
+
+> 
+
+> Cody Rice-Velasquez
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> NOTICE: This communication is transmitted for purposes of formal notice and record documentation. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, all of which are expressly reserved.
+
+> 
+
+> SERVICE: Sent via electronic mail consistent with prior communication in this matter.
+
+> 
+
+> COMMUNICATION ACCOMMODATION: Consistent with previously submitted accommodation requests, all responsive materials must be provided in writing.  AND HIS REPLY, 7 of 46
+
+> Surplus Demand – Sheriff Sale August 15, 2025
+
+> Inbox
+
+> AI Overview
+
+> Cody sent formal notice of a surplus demand regarding an August 15, 2025 Sheriff's Sale and requested confirmation of receipt.
+
+> Scott responded that there was no surplus, citing a prior court order from January 9th.
+
+> Cody disputed the lack of surplus, provided a detailed calculation showing an $8,378.42 surplus, and requested payment or documentation by Monday, the 23rd.
+
+> Scott acknowledged the interest calculation issue and stated they would review calculations with their client and respond with an agreement by early/mid next week.
+
+> By Gemini; there may be mistakes. Learn more
+
+> 
+
+> Cody Rice-Velasquez <crice4485@gmail.com>
+
+> Attachments
+
+> Thu, Feb 12, 3:15 PM
+
+> to Scott, Susan, kflowers, compliance@fcfcu.com
+
+> 
+
+> Re: Financial Center First Credit Union v. Rice-Velasquez 
+
+> 
+
+> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> TIME-SENSITIVE NOTICE | Service by Email Confirmed on Record
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Formal Notice of Surplus Demand 
+
+>  	
+
+> Scott,
+
+> 
+
+> Attached please find my Formal Surplus Demand regarding the August 15, 2025 Sheriff’s Sale in Cause No. 49D03-2501-MF-002559.
+
+> 
+
+> This correspondence is provided for review by Financial Center First Credit Union and counsel. As stated in the letter, a written response is requested within fourteen (14) calendar days of receipt.
+
+> 
+
+> Please confirm receipt.
+
+> 
+
+> Sincerely,
+
+> Cody Rice-Velasquez
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Sent via email pursuant to Court-confirmed service method
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> NOTICE: This message and any attachments are transmitted for purposes of formal notice, documentation, and preservation of the record. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, whether at law or in equity, unless expressly set forth in a signed written agreement.
+
+> 
+
+> 
+
+> SERVICE: Sent via electronic mail consistent with the communication method confirmed on the record in this matter.
+
+> 
+
+> 
+
+> ROUTING: If this communication has been received by an individual or department not responsible for addressing the subject matter herein, the recipient is directed to promptly forward it to the appropriate party. Internal routing or delegation does not alter or extend any deadlines stated.
+
+> 
+
+> 
+
+> PRESERVATION: Recipients and their agents are directed to preserve all potentially relevant documents and electronically stored information (ESI), including but not limited to emails, internal communications, loan servicing records, accounting ledgers, metadata, audit trails, system logs, backups, and recordings. Any routine deletion, overwrite, or auto-purge functions applicable to such materials must be suspended.
+
+> 
+
+> 
+
+> COMMUNICATION ACCOMMODATION: Consistent with previously submitted disability-related accommodation requests, all communications and responsive materials must be provided in writing and stated clearly and unambiguously to ensure accurate review and record preservation.
+
+> 
+
+> 
+
+> ------------------------------------------------------------------------- END OF EMAIL ------------------------------------------------------------------------
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+>  2 Attachments
+
+>   •  Scanned by Gmail
+
+> 
+
+> skainrath@gfwlawyers.com
+
+> Mon, Feb 16, 12:20 AM
+
+> Cody, There was no surplus from the Sheriff Sale. As you are aware the Court already ruled on this in its January 9th Order. Thanks, Scott A. Kainrath GRAHAM, F
+
+> 
+
+> Cody Rice-Velasquez <crice4485@gmail.com>
+
+> Tue, Feb 17, 8:00 AM
+
+> to Susan, compliance@fcfcu.com, kflowers, skainrath
+
+> 
+
+> Re: Financial Center First Credit Union v. Rice-Velasquez 
+
+> 
+
+> Marion County Superior Court | Cause No. [49D03-2501-MF-002559]
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Final Good-Faith Attempt to Resolve Surplus Reconciliation
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> Scott,
+
+> 
+
+> I am making a final good-faith effort to resolve the surplus reconciliation issue directly before pursuing further remedies.
+
+> 
+
+> Your representation that the issue of excess proceeds was “settled in court” is not accurate. The court ruled based on the information presented by your client. I placed on record that the figures did not reconcile. A ruling does not relieve your client of the obligation to accurately apply sale proceeds or return surplus funds if generated.
+
+> 
+
+> A Notice of Appeal has been filed.
+
+> 
+
+> The Sheriff’s Sale generated a bid of $240,464.20.
+
+> The Judgment fixed the indebtedness at $220,863.09 as of April 29, 2025, with a per diem interest of $27.45.
+
+> The sale occurred on August 15, 2025.
+
+> 
+
+> The $10,725.27 interest figure reflected in the bid and subsequent worksheet does not reconcile to the established per diem over the relevant accrual period. Additional cost figures reflected across the sale documentation are inconsistent and lack clear itemization.
+
+> 
+
+> To narrow the dispute and eliminate uncontested items, I recalculated the payoff using only amounts that are verified or reasonably attributable to the sale.
+
+> 
+
+> Using 108 days of post-judgment interest (April 30 through August 15, 2025), interest totals $2,964.60.
+
+> 
+
+> Including:
+
+> 
+
+> Real estate taxes: $7,600.81
+
+> 
+
+> Sheriff/Admin fees: $338.00
+
+> 
+
+> Clerk/recording: $35.00
+
+> 
+
+> Publication: $284.28
+
+> 
+
+> The reconciled payoff equals $232,085.78.
+
+> 
+
+> With a bid of $240,464.20, the resulting surplus equals $8,378.42.
+
+> 
+
+> This calculation excludes the unitemized $8,875.81 “additional costs” figure and the $10,725.27 interest amount, both of which remain unsupported and do not reconcile to the per diem established in sworn filings.
+
+> 
+
+> I am not seeking anything beyond accurate application of sale proceeds and return of equity generated by the bid.
+
+> 
+
+> If your client wishes to resolve this matter without further accounting review, tendering $8,378.42 to the Clerk for distribution will resolve the surplus reconciliation.
+
+> 
+
+> If that is not your client’s position, contemporaneous accounting documentation substantiating the alternative figures must be produced.
+
+> 
+
+> This surplus and accounting issue has been raised on the record since December and addressed at the January hearing. Your client has therefore been on notice of the reconciliation dispute for several months.
+
+> 
+
+> If I do not receive confirmation of surplus payment or the requested accounting documentation no later than close of business on Monday, the 23rd, I will proceed with formal regulatory escalation and pursue all available remedies.
+
+> 
+
+> Nothing in this correspondence shall be construed as a waiver of any rights, claims, defenses, or remedies available to me, all of which are expressly reserved.
+
+> 
+
+> Cody Rice-Velasquez
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> NOTICE: This communication is transmitted for purposes of formal notice and record documentation. Nothing herein constitutes a waiver of any rights, claims, defenses, or remedies, all of which are expressly reserved.
+
+> 
+
+> SERVICE: Sent via electronic mail consistent with prior communication in this matter.
+
+> 
+
+> COMMUNICATION ACCOMMODATION: Consistent with previously submitted accommodation requests, all responsive materials must be provided in writing.
+
+> 
+
+>  	
+
+>  
+
+>  
+
+>  	
+
+> 
+
+> skainrath@gfwlawyers.com <skainrath@inlawemail.com>
+
+> Thu, Feb 19, 12:53 PM
+
+> to me, skainrath
+
+> 
+
+> Cody,
+
+> 
+
+>  
+
+> 
+
+> I understand what you are saying about the interest.  Let me go through the calculations with my client and if they are incorrect, I will get back with you on an Agreement by early/mid next week.
+
+> 
+
+>  
+
+> 
+
+> Thanks,
+
+> 
+
+>  
+
+> 
+
+> Scott A. Kainrath
+
+> 
+
+> GRAHAM, FARRER & WILSON, P.C
+
+> 
+
+> 1601 S. Anderson Street
+
+> 
+
+> Elwood, IN 46036
+
+> 
+
+> P 765-552-9878, F 765-552-5496
+
+> 
+
+>  
+
+> 
+
+>  
+
+> 
+
+> CONFIDENTIALITY NOTICE
+
+> 
+
+> This transmission (including any attachments) may contain information which is confidential, attorney work product and/or subject to the attorney-client privilege, and is intended solely for the recipient(s)named above.  If you are not a named recipient, any interception, copying, distribution, disclosure or use of this transmission or any information contained in it is strictly prohibited, and may be subject to criminal and civil penalties.  If you have received this transmission in error, please immediately call us at (752) 552-9878, delete the transmission from all forms of electronic or other storage, and destroy all hard copies.  Do NOT forward this transmission.  Thank you.
+
+> 
+
+>  
+
+> 
+
 > ,
 
 ### Assistant
@@ -1678,14 +1964,21 @@ canonical_ref: ""
 > If you want, I can also show you the **single biggest legal problem in their new hearing request** (and it’s the kind of thing that makes judges immediately skeptical of a foreclosure plaintiff).
 
 ### User
-> {'asset_pointer': 'sediment://file_000000002c7471f5aa4f7615660e5021', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 397, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 71470, 'width': 1836}I THINK WE CAN PROVE THEY MADE UP TEH NUMBERS JUST VIBE WITH ME FOR A SECOND, LOOK AT THIS TABLE AND LOOK WHEN YOU ADD THEN UP THE SEPERATELY, YOU SEE NO ITS OFF BY 5 SENSE AND MY INTUITION OR THE MATCH IM DOING IN MY HEAD SHOWS THAT ONLY HAPPENS IF YOU MISTAK THE 6 FOR A 9 I THINK FOR THE 7 FOR A 4, I THINK, HELP ME LOL Sheriff Worksheet	2025-08-06	$220,863.09		Judgement Amount
-> Sheriff Worksheet	2025-08-06	$10,725.27		Add Sum Interest
-> Sheriff Worksheet	2025-08-06	$8,875.81		Additional Costs
+> {'asset_pointer': 'sediment://file_000000002c7471f5aa4f7615660e5021', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 397, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 71470, 'width': 1836}I THINK WE CAN PROVE THEY MADE UP TEH NUMBERS JUST VIBE WITH ME FOR A SECOND, LOOK AT THIS TABLE AND LOOK WHEN YOU ADD THEN UP THE SEPERATELY, YOU SEE NO ITS OFF BY 5 SENSE AND MY INTUITION OR THE MATCH IM DOING IN MY HEAD SHOWS THAT ONLY HAPPENS IF YOU MISTAK THE 6 FOR A 9 I THINK FOR THE 7 FOR A 4, I THINK, HELP ME LOL Sheriff Worksheet	2025-08-06	$220,863.09		Judgement Amount
+
+> Sheriff Worksheet	2025-08-06	$10,725.27		Add Sum Interest
+
+> Sheriff Worksheet	2025-08-06	$8,875.81		Additional Costs
+
 > Sheriff Worksheet	2025-08-06	$240,464.17		Total Judgement  --  
-> Sheriff Worksheet	2025-08-06	$300.00		Admin Fee
-> Sheriff Worksheet	2025-08-06	$38.00		Sheriff Fee
-> Sheriff Worksheet	2025-08-06	$284.28		Advertising Cost
-> Sheriff Worksheet	2025-08-06	$241,086.45		Grand Total
+> Sheriff Worksheet	2025-08-06	$300.00		Admin Fee
+
+> Sheriff Worksheet	2025-08-06	$38.00		Sheriff Fee
+
+> Sheriff Worksheet	2025-08-06	$284.28		Advertising Cost
+
+> Sheriff Worksheet	2025-08-06	$241,086.45		Grand Total
+
 > Sheriff Worksheet	2025-08-06	$240,464.20		BID
 
 ### Assistant
@@ -2410,91 +2703,176 @@ canonical_ref: ""
 > I added comments and suggestions directly to the document to help improve the writing quality, clarity, and organization.
 
 ### User
-> from gemini, As an AI, I can provide a structural, logical, and procedural analysis of your draft based on general legal principles and Indiana Rules of Trial Procedure, but I cannot offer formal legal advice.
-> 
-> This is a strongly drafted, highly detailed motion. It lays out a clear, chronological narrative of the opposing party's shifting numbers. You are applying a "Receipt-Ready" approach here, which is exactly what a judge needs when untangling accounting discrepancies.
-> 
-> To ensure this filing is as airtight and strategically sound as possible before you file it in Marion Superior Court, here is a two-tier review of the structural soundness and legal considerations.
-> 
-> ### Tier 1: Procedural Soundness & Formatting
-> 
-> * **Exhibits and "Receipts":** While your narrative is clear, a court needs the actual receipts attached. Every time you mention a specific document (the $240,464.20 bid, the Plaintiff’s worksheet showing $0 surplus, the petition acknowledging the $8,378.42 surplus, the Court's denial of the *nunc pro tunc*), you should attach it as an exhibit.
-> * *Adjustment:* Add "(See Exhibit A)", "(See Exhibit B)", etc., at the end of the corresponding sentences, and attach those documents to your filing.
-> 
-> 
-> * **Motion to Strike Constraints:** Under Indiana Trial Rule 12(F), a "Motion to Strike" is generally reserved for removing "redundant, immaterial, impertinent, or scandalous matter" from a *pleading* (like a complaint or an answer). Using a Motion to Strike against another *motion* (their request for a hearing) is often procedurally frowned upon by judges.
-> * *Adjustment:* You can keep the title, but legally, your "Objection and Motion to Deny/Vacate" is the actual procedural vehicle doing the heavy lifting here. The judge will likely just deny their hearing rather than officially "strike" their request.
-> 
-> 
-> * **Certificate of Service:** As a Pro Se defendant, ensure you append a standard Certificate of Service at the very end (below your signature block) swearing that you provided a copy of this exact document to the Plaintiff's counsel, stating the date and the method (e.g., e-filing, first-class mail).
-> 
-> ### Tier 2: Legal Considerations & Strategic Focus (Snap & Steer)
-> 
-> * **Indiana Foreclosure Surplus Law:** Your demand in the "Wherefore" clause to remit funds to the Clerk is legally anchored. Under Indiana Code § 32-29-7-9, any surplus from a sheriff's sale must be paid to the clerk of the court, who then notifies the property owner. Highlighting this statutory duty reinforces that the Plaintiff cannot simply hold onto or arbitrarily recalculate surplus funds without court oversight.
-> * **Trial Rule 11 Sanctions:** You correctly cite Indiana Trial Rule 11. However, be aware that courts are notoriously hesitant to grant sanctions unless the conduct is flagrantly malicious. The judge may view the Plaintiff's actions as sloppy bookkeeping rather than sanctionable bad faith.
-> * *Consideration:* Keep the request for sanctions—it applies appropriate pressure and highlights the absurdity of their shifting math—but manage your expectations on the Court actually awarding them.
-> 
-> 
-> * **The "Ripple-Check" on Sections VIII and IX:** These sections introduce a broader narrative about pre-foreclosure servicing irregularities and credit reporting issues. While entirely valid to your experience, judges handling post-sale surplus disputes are highly focused on the immediate math. If you introduce pre-foreclosure grievances, the Plaintiff will likely argue you are attempting to improperly relitigate the original foreclosure judgment.
-> * *Adjustment:* Consider tightening or removing Section IX. Keep the Court’s attention ruthlessly focused on the current, undeniable issue: the Plaintiff's inability to reconcile their own post-sale ledger. The strongest anchor you have is their shifting surplus numbers; do not give them an opening to distract the judge with arguments about pre-foreclosure loan servicing.
-> 
-> 
-> 
-> Overall, the core argument is highly logical: the Court already ruled on the numbers, the Plaintiff has repeatedly failed to justify their math, and another hearing is a waste of judicial resources.
-> 
-> Would you like me to help draft the standard Indiana Certificate of Service to append to the end of this document, or help refine Sections VIII and IX to tighten the focus strictly onto the surplus dispute? from grok, ### Soundness of the Motion
-> Your proposed motion appears logically structured and fact-based, drawing on a clear chronology of events to argue that the plaintiff's request for a hearing is unnecessary, duplicative, and potentially sanctionable. Here's a breakdown:
-> 
-> - **Strengths**:
->   - **Clear Factual Timeline**: Sections I through VII and the overall timeline in VI effectively outline the sequence of events, including the sheriff's sale, initial zero-surplus claims, the abandoned nunc pro tunc motion, and the court's prior denial. This demonstrates a pattern of shifting positions by the plaintiff, which supports your claims of inconsistencies and bad faith. Courts appreciate motions that are organized and evidence-based, as this aligns with Indiana Trial Rule 7(B), which requires motions to state grounds and relief sought.
->   - **Relevant Legal Arguments**: You cite Indiana Trial Rule 11 appropriately for sanctions, emphasizing that the plaintiff's filings lack a reasonable basis in fact or law and multiply proceedings unnecessarily. From Indiana court resources, Rule 11 allows sanctions (e.g., fees, striking filings) for willful violations, such as frivolous or dilatory tactics, and courts have discretion in imposing them if bad faith is shown.
->   - **Requests for Relief**: The "WHEREFORE" clause is specific and ties directly to your arguments (e.g., denying the hearing, striking the filing, remitting surplus, producing documents, and sanctions). This is sound under Trial Rule 12(F) for striking redundant matter and general motion practice.
->   - **Broader Context**: Mentioning ongoing harm (e.g., credit reporting issues) and a pattern of irregularities adds weight without relitigating the foreclosure, which you explicitly avoid. This shows restraint and focuses on the sheriff's sale accounting.
-> 
-> - **Potential Weaknesses**:
->   - **Lack of Supporting Evidence**: While you reference worksheets, bids, and court denials, the motion doesn't attach exhibits (e.g., copies of prior filings, worksheets, or transcripts from the January 9 hearing). Indiana Trial Rule 56 (for summary judgments, but analogous here) and general practice suggest attaching affidavits or documents to substantiate claims, especially for sanctions. Without them, the court might view parts as unsubstantiated assertions.
->   - **Tone and Objectivity**: Phrases like "this pattern demonstrates" and accusations of "repeatedly altered its accounting" are assertive, which is fine for advocacy, but could come across as overly adversarial. Pro se filings are held to the same standards as attorney-drafted ones (per Indiana case law, e.g., no special leniency for form if substance is clear), but judges may scrutinize for inflammatory language under Rule 11's "scandalous matter" provision.
->   - **Internal Consistency**: You note a $0.03 discrepancy in the bid ($240,464.17 vs. $240,464.20), which is minor and might dilute stronger points. Focus on material inconsistencies to avoid nitpicking.
->   - **Res Judicata/Issue Preclusion**: You imply the issue is resolved (e.g., court denied nunc pro tunc), but don't explicitly cite doctrines like res judicata. Strengthening this with references to Indiana case law (e.g., prior rulings binding unless appealed) could bolster it.
-> 
-> Overall, the motion is sound if the facts are accurate—it presents a coherent case for why further hearings are unwarranted. However, it could be strengthened with attachments and more precise legal citations.
-> 
-> ### Legality of Filing the Motion
-> Filing this motion is entirely legal as a pro se defendant in an ongoing civil case under Indiana law. Key points:
-> 
-> - **Authority to File**: Indiana Trial Rule 7 allows written motions for court orders, including objections, motions to strike (under Rule 12(F) for immaterial or redundant matter), and sanctions (under Rule 11). As a party, you have the right to respond to the plaintiff's filing, especially if it's a request for hearing that could affect your interests.
-> - **Pro Se Representation**: Indiana courts permit self-representation in civil matters (e.g., foreclosure defenses). Resources like the Indiana Judicial Branch's pro se handbook emphasize that pro se litigants must follow the same rules as attorneys, but no special restrictions apply here. Marion County Superior Court local rules (effective Nov. 1, 2024) confirm that Trial Rules govern pleadings and motions in civil cases.
-> - **Sanctions Request**: Rule 11 explicitly authorizes sanctions for filings without reasonable factual or legal basis, including "unnecessary multiplication of proceedings." Courts have upheld sanctions in similar scenarios (e.g., repeated frivolous motions), but they are mandatory only if a violation is found, with the amount discretionary. Note: Filing a baseless sanctions request could itself lead to counter-sanctions, so ensure your claims are well-grounded.
-> - **No Prohibited Content**: The motion doesn't involve relitigating settled issues (you acknowledge the foreclosure judgment) or improper requests. It's within bounds for post-judgment proceedings in a mortgage foreclosure (MF) case.
-> 
-> If the facts (e.g., timeline, inconsistencies) are verifiable from the docket, this filing complies with ethical and procedural standards.
-> 
-> ### Considerations for Filing
-> Before filing, weigh these practical and strategic factors, based on Indiana and Marion County rules:
-> 
-> - **Timing and Deadlines**:
->   - Indiana Trial Rule 6(D) requires responses to motions within 20 days of service (replies within 14 days). If the plaintiff's "Request for Hearing" was served recently, file promptly to avoid waiver. For hearings, notice must be served at least 5 days in advance unless ex parte.
->   - Marion County local rules emphasize filing motions in writing with detailed reasons; for non-continuance motions like this, general Trial Rules apply. Check the case docket via mycase.in.gov for any scheduling orders.
-> 
-> - **Filing Process**:
->   - **Where and How**: File the original with the Marion Superior Court Clerk (49D03 division). As pro se, you can file in person, by mail, or electronically via Indiana's e-filing system (if registered). No filing fee for motions in ongoing cases, but confirm with the clerk.
->   - **Service**: Indiana Trial Rule 5 requires serving the plaintiff (or their counsel) via mail, email (if agreed), or e-service. Your draft lacks a Certificate of Service—add one at the end, stating how/when you served it (e.g., "I certify that on [date], I served a copy on [plaintiff's counsel] via [method]"). Failure to include this could lead to rejection.
->   - **Format**: Complies with Trial Rule 10 (e.g., captions, sections). Use 8.5x11 paper, sign it, include your address/phone. Marion rules require random assignment if needed, but this is in an existing case.
-> 
-> - **Potential Risks and Outcomes**:
->   - **Backfire Potential**: If the court views your motion as frivolous (e.g., if the plaintiff's request has merit you overlooked), you could face sanctions under Rule 11, including costs or fees. Courts warn against using sanctions motions lightly.
->   - **Court's Discretion**: Judges in Marion Superior (Civil Division) handle high volumes; they may deny without hearing if unpersuasive. If granted, it could lead to document production or surplus remittance, but expect pushback from the plaintiff.
->   - **Ongoing Harm**: Your points on credit reporting and hardship are relevant for equity but may not sway a strict legal ruling. Consider if this escalates conflict or delays resolution.
->   - **Alternatives**: Before filing, attempt informal resolution (as you note in XI), or request mediation via court. If surplus is key, a separate motion for distribution might be cleaner.
->   - **Location Factor**: You're in Evansville (per IP), but the case is in Indianapolis—travel for hearings could be burdensome. Request remote appearances if available under local rules.
->   - **Professional Advice**: While pro se is allowed, consulting an attorney (e.g., via Indiana Legal Services for low-income) could refine this and avoid pitfalls. Courts don't provide legal advice.
-> 
-> - **Next Steps**:
->   1. Verify facts against the docket (search mycase.in.gov with cause number).
->   2. Add exhibits, certificate of service, and any proposed order (per Trial Rule 7(B)).
->   3. File and serve promptly.
->   4. Prepare for a response or hearing.
-> 
+> from gemini, As an AI, I can provide a structural, logical, and procedural analysis of your draft based on general legal principles and Indiana Rules of Trial Procedure, but I cannot offer formal legal advice.
+
+> 
+
+> This is a strongly drafted, highly detailed motion. It lays out a clear, chronological narrative of the opposing party's shifting numbers. You are applying a "Receipt-Ready" approach here, which is exactly what a judge needs when untangling accounting discrepancies.
+
+> 
+
+> To ensure this filing is as airtight and strategically sound as possible before you file it in Marion Superior Court, here is a two-tier review of the structural soundness and legal considerations.
+
+> 
+
+> ### Tier 1: Procedural Soundness & Formatting
+
+> 
+
+> * **Exhibits and "Receipts":** While your narrative is clear, a court needs the actual receipts attached. Every time you mention a specific document (the $240,464.20 bid, the Plaintiff’s worksheet showing $0 surplus, the petition acknowledging the $8,378.42 surplus, the Court's denial of the *nunc pro tunc*), you should attach it as an exhibit.
+
+> * *Adjustment:* Add "(See Exhibit A)", "(See Exhibit B)", etc., at the end of the corresponding sentences, and attach those documents to your filing.
+
+> 
+
+> 
+
+> * **Motion to Strike Constraints:** Under Indiana Trial Rule 12(F), a "Motion to Strike" is generally reserved for removing "redundant, immaterial, impertinent, or scandalous matter" from a *pleading* (like a complaint or an answer). Using a Motion to Strike against another *motion* (their request for a hearing) is often procedurally frowned upon by judges.
+
+> * *Adjustment:* You can keep the title, but legally, your "Objection and Motion to Deny/Vacate" is the actual procedural vehicle doing the heavy lifting here. The judge will likely just deny their hearing rather than officially "strike" their request.
+
+> 
+
+> 
+
+> * **Certificate of Service:** As a Pro Se defendant, ensure you append a standard Certificate of Service at the very end (below your signature block) swearing that you provided a copy of this exact document to the Plaintiff's counsel, stating the date and the method (e.g., e-filing, first-class mail).
+
+> 
+
+> ### Tier 2: Legal Considerations & Strategic Focus (Snap & Steer)
+
+> 
+
+> * **Indiana Foreclosure Surplus Law:** Your demand in the "Wherefore" clause to remit funds to the Clerk is legally anchored. Under Indiana Code § 32-29-7-9, any surplus from a sheriff's sale must be paid to the clerk of the court, who then notifies the property owner. Highlighting this statutory duty reinforces that the Plaintiff cannot simply hold onto or arbitrarily recalculate surplus funds without court oversight.
+
+> * **Trial Rule 11 Sanctions:** You correctly cite Indiana Trial Rule 11. However, be aware that courts are notoriously hesitant to grant sanctions unless the conduct is flagrantly malicious. The judge may view the Plaintiff's actions as sloppy bookkeeping rather than sanctionable bad faith.
+
+> * *Consideration:* Keep the request for sanctions—it applies appropriate pressure and highlights the absurdity of their shifting math—but manage your expectations on the Court actually awarding them.
+
+> 
+
+> 
+
+> * **The "Ripple-Check" on Sections VIII and IX:** These sections introduce a broader narrative about pre-foreclosure servicing irregularities and credit reporting issues. While entirely valid to your experience, judges handling post-sale surplus disputes are highly focused on the immediate math. If you introduce pre-foreclosure grievances, the Plaintiff will likely argue you are attempting to improperly relitigate the original foreclosure judgment.
+
+> * *Adjustment:* Consider tightening or removing Section IX. Keep the Court’s attention ruthlessly focused on the current, undeniable issue: the Plaintiff's inability to reconcile their own post-sale ledger. The strongest anchor you have is their shifting surplus numbers; do not give them an opening to distract the judge with arguments about pre-foreclosure loan servicing.
+
+> 
+
+> 
+
+> 
+
+> Overall, the core argument is highly logical: the Court already ruled on the numbers, the Plaintiff has repeatedly failed to justify their math, and another hearing is a waste of judicial resources.
+
+> 
+
+> Would you like me to help draft the standard Indiana Certificate of Service to append to the end of this document, or help refine Sections VIII and IX to tighten the focus strictly onto the surplus dispute? from grok, ### Soundness of the Motion
+
+> Your proposed motion appears logically structured and fact-based, drawing on a clear chronology of events to argue that the plaintiff's request for a hearing is unnecessary, duplicative, and potentially sanctionable. Here's a breakdown:
+
+> 
+
+> - **Strengths**:
+
+>   - **Clear Factual Timeline**: Sections I through VII and the overall timeline in VI effectively outline the sequence of events, including the sheriff's sale, initial zero-surplus claims, the abandoned nunc pro tunc motion, and the court's prior denial. This demonstrates a pattern of shifting positions by the plaintiff, which supports your claims of inconsistencies and bad faith. Courts appreciate motions that are organized and evidence-based, as this aligns with Indiana Trial Rule 7(B), which requires motions to state grounds and relief sought.
+
+>   - **Relevant Legal Arguments**: You cite Indiana Trial Rule 11 appropriately for sanctions, emphasizing that the plaintiff's filings lack a reasonable basis in fact or law and multiply proceedings unnecessarily. From Indiana court resources, Rule 11 allows sanctions (e.g., fees, striking filings) for willful violations, such as frivolous or dilatory tactics, and courts have discretion in imposing them if bad faith is shown.
+
+>   - **Requests for Relief**: The "WHEREFORE" clause is specific and ties directly to your arguments (e.g., denying the hearing, striking the filing, remitting surplus, producing documents, and sanctions). This is sound under Trial Rule 12(F) for striking redundant matter and general motion practice.
+
+>   - **Broader Context**: Mentioning ongoing harm (e.g., credit reporting issues) and a pattern of irregularities adds weight without relitigating the foreclosure, which you explicitly avoid. This shows restraint and focuses on the sheriff's sale accounting.
+
+> 
+
+> - **Potential Weaknesses**:
+
+>   - **Lack of Supporting Evidence**: While you reference worksheets, bids, and court denials, the motion doesn't attach exhibits (e.g., copies of prior filings, worksheets, or transcripts from the January 9 hearing). Indiana Trial Rule 56 (for summary judgments, but analogous here) and general practice suggest attaching affidavits or documents to substantiate claims, especially for sanctions. Without them, the court might view parts as unsubstantiated assertions.
+
+>   - **Tone and Objectivity**: Phrases like "this pattern demonstrates" and accusations of "repeatedly altered its accounting" are assertive, which is fine for advocacy, but could come across as overly adversarial. Pro se filings are held to the same standards as attorney-drafted ones (per Indiana case law, e.g., no special leniency for form if substance is clear), but judges may scrutinize for inflammatory language under Rule 11's "scandalous matter" provision.
+
+>   - **Internal Consistency**: You note a $0.03 discrepancy in the bid ($240,464.17 vs. $240,464.20), which is minor and might dilute stronger points. Focus on material inconsistencies to avoid nitpicking.
+
+>   - **Res Judicata/Issue Preclusion**: You imply the issue is resolved (e.g., court denied nunc pro tunc), but don't explicitly cite doctrines like res judicata. Strengthening this with references to Indiana case law (e.g., prior rulings binding unless appealed) could bolster it.
+
+> 
+
+> Overall, the motion is sound if the facts are accurate—it presents a coherent case for why further hearings are unwarranted. However, it could be strengthened with attachments and more precise legal citations.
+
+> 
+
+> ### Legality of Filing the Motion
+
+> Filing this motion is entirely legal as a pro se defendant in an ongoing civil case under Indiana law. Key points:
+
+> 
+
+> - **Authority to File**: Indiana Trial Rule 7 allows written motions for court orders, including objections, motions to strike (under Rule 12(F) for immaterial or redundant matter), and sanctions (under Rule 11). As a party, you have the right to respond to the plaintiff's filing, especially if it's a request for hearing that could affect your interests.
+
+> - **Pro Se Representation**: Indiana courts permit self-representation in civil matters (e.g., foreclosure defenses). Resources like the Indiana Judicial Branch's pro se handbook emphasize that pro se litigants must follow the same rules as attorneys, but no special restrictions apply here. Marion County Superior Court local rules (effective Nov. 1, 2024) confirm that Trial Rules govern pleadings and motions in civil cases.
+
+> - **Sanctions Request**: Rule 11 explicitly authorizes sanctions for filings without reasonable factual or legal basis, including "unnecessary multiplication of proceedings." Courts have upheld sanctions in similar scenarios (e.g., repeated frivolous motions), but they are mandatory only if a violation is found, with the amount discretionary. Note: Filing a baseless sanctions request could itself lead to counter-sanctions, so ensure your claims are well-grounded.
+
+> - **No Prohibited Content**: The motion doesn't involve relitigating settled issues (you acknowledge the foreclosure judgment) or improper requests. It's within bounds for post-judgment proceedings in a mortgage foreclosure (MF) case.
+
+> 
+
+> If the facts (e.g., timeline, inconsistencies) are verifiable from the docket, this filing complies with ethical and procedural standards.
+
+> 
+
+> ### Considerations for Filing
+
+> Before filing, weigh these practical and strategic factors, based on Indiana and Marion County rules:
+
+> 
+
+> - **Timing and Deadlines**:
+
+>   - Indiana Trial Rule 6(D) requires responses to motions within 20 days of service (replies within 14 days). If the plaintiff's "Request for Hearing" was served recently, file promptly to avoid waiver. For hearings, notice must be served at least 5 days in advance unless ex parte.
+
+>   - Marion County local rules emphasize filing motions in writing with detailed reasons; for non-continuance motions like this, general Trial Rules apply. Check the case docket via mycase.in.gov for any scheduling orders.
+
+> 
+
+> - **Filing Process**:
+
+>   - **Where and How**: File the original with the Marion Superior Court Clerk (49D03 division). As pro se, you can file in person, by mail, or electronically via Indiana's e-filing system (if registered). No filing fee for motions in ongoing cases, but confirm with the clerk.
+
+>   - **Service**: Indiana Trial Rule 5 requires serving the plaintiff (or their counsel) via mail, email (if agreed), or e-service. Your draft lacks a Certificate of Service—add one at the end, stating how/when you served it (e.g., "I certify that on [date], I served a copy on [plaintiff's counsel] via [method]"). Failure to include this could lead to rejection.
+
+>   - **Format**: Complies with Trial Rule 10 (e.g., captions, sections). Use 8.5x11 paper, sign it, include your address/phone. Marion rules require random assignment if needed, but this is in an existing case.
+
+> 
+
+> - **Potential Risks and Outcomes**:
+
+>   - **Backfire Potential**: If the court views your motion as frivolous (e.g., if the plaintiff's request has merit you overlooked), you could face sanctions under Rule 11, including costs or fees. Courts warn against using sanctions motions lightly.
+
+>   - **Court's Discretion**: Judges in Marion Superior (Civil Division) handle high volumes; they may deny without hearing if unpersuasive. If granted, it could lead to document production or surplus remittance, but expect pushback from the plaintiff.
+
+>   - **Ongoing Harm**: Your points on credit reporting and hardship are relevant for equity but may not sway a strict legal ruling. Consider if this escalates conflict or delays resolution.
+
+>   - **Alternatives**: Before filing, attempt informal resolution (as you note in XI), or request mediation via court. If surplus is key, a separate motion for distribution might be cleaner.
+
+>   - **Location Factor**: You're in Evansville (per IP), but the case is in Indianapolis—travel for hearings could be burdensome. Request remote appearances if available under local rules.
+
+>   - **Professional Advice**: While pro se is allowed, consulting an attorney (e.g., via Indiana Legal Services for low-income) could refine this and avoid pitfalls. Courts don't provide legal advice.
+
+> 
+
+> - **Next Steps**:
+
+>   1. Verify facts against the docket (search mycase.in.gov with cause number).
+
+>   2. Add exhibits, certificate of service, and any proposed order (per Trial Rule 7(B)).
+
+>   3. File and serve promptly.
+
+>   4. Prepare for a response or hearing.
+
+> 
+
 > This motion has merit if supported, but success depends on the judge's view of the record. If the case has advanced since 2025, check status first.
 
 ### Assistant
@@ -3143,86 +3521,166 @@ canonical_ref: ""
 > I added some final polish and checked the document for grammar, consistency, and flow. The sentence in the opening section was corrected so it now reads more smoothly and formally. The document structure, headings, and legal tone remain consistent and professional.
 
 ### User
-> This revised version of your motion is a clear improvement over the prior draft. It is more concise in places, better organized, and strengthened with statutory references (e.g., IC § 32-29-7-9 and § 32-29-7-10 for surplus handling), explicit citations to Trial Rules, and an appendix summarizing key authorities. The addition of a **Certificate of Service** (with a blank date) and placeholders for exhibits (A–F) make it procedurally compliant and more persuasive.
-> 
-> ### Soundness of the Motion
-> The motion remains logically sound and well-argued as a pro se filing:
-> 
-> - **Strengths**:
->   - Strong emphasis on the pattern of shifting positions (zero surplus → acknowledged $8,378.42 surplus → nunc pro tunc attempt denied → new hearing request) creates a compelling narrative of inconsistency and potential abuse of process.
->   - Section IV deepens the analysis of inconsistencies (e.g., $0.03 discrepancy, lack of verifiable ledger), framing it as undermining the reliability of the credit bid in foreclosure context—relevant since the bid determines surplus existence.
->   - Statutory integration (IC §§ 32-29-7-9 and -10) correctly supports arguments that surplus must go to the clerk for court-controlled distribution, not remain with the plaintiff amid disputed accounting. This bolsters requests to remit funds and produce documentation.
->   - The sanctions request under **Trial Rule 11** is appropriately tied to "unnecessary multiplication of proceedings" and lack of reasonable basis, given the prior denial and pattern.
->   - Tone is professional and focused on facts/record integrity, avoiding over-adversarial language while highlighting ongoing harm (credit reporting issues) for equitable consideration.
->   - Conclusion and WHEREFORE clause are tight and specific.
-> 
-> - **Potential Weaknesses**:
->   - While exhibits are referenced (A–F), ensure they are actually attached and properly labeled (e.g., copies of filings, worksheets, court orders). Without them, claims could appear conclusory.
->   - The $0.03 bid discrepancy is highlighted but described as not "merely minor"—courts might view tiny arithmetic differences as immaterial unless tied to larger issues (e.g., ledger absence). Frame it as symptomatic of ad hoc assembly rather than isolated error.
->   - No explicit request for a hearing on your motion (though not always required), and Marion local rules (effective Nov. 1, 2024, and likely similar in 2026) often require parties to request hearings on motions. Consider adding: "Defendant requests a hearing if the Court deems one necessary."
->   - Sanctions under Rule 11 are discretionary and require clear bad faith or frivolity; courts hesitate to impose them lightly, especially against represented parties. Your pattern argument helps, but success depends on the judge viewing the plaintiff's request as duplicative post-denial.
-> 
-> Overall, this is a solid, defensible motion if facts/exhibits align with the docket.
-> 
-> ### Legality of Filing
-> Fully legal and appropriate:
-> 
-> - **Procedural Compliance**: Aligns with **Trial Rule 7(B)** (grounds and relief particularized), **Rule 11** (sanctions basis), **Rule 12(F)** (strike immaterial matter, implied in objection/denial request). The surplus remittance request tracks **IC § 32-29-7-9** (surplus to clerk if exceeds judgment/costs) and **§ 32-29-7-10** (court determines distribution).
-> - **Post-Sale Context**: Indiana law treats sheriff's sale bids as final representations of debt owed at sale; no routine post-sale revision absent fraud/error proven. Prior nunc pro tunc denial supports arguing the issue is resolved—no new hearing needed to "clarify" what the court already addressed.
-> - **Pro Se Rights**: No barriers; Marion Superior Court handles many pro se MF cases.
-> - **No Prohibited Elements**: Avoids relitigating foreclosure judgment; focuses on surplus accounting integrity.
-> 
-> ### Key Considerations
-> - **Timing**: File promptly after plaintiff's request (within response deadlines, often 20 days under Rule 6(D), or per any scheduling order). Check mycase.in.gov for the cause number to confirm status/docket.
-> - **Filing Logistics**:
->   - Submit to Marion Superior Court 3 Clerk (Indianapolis); e-file via Indiana system if possible (recommended for pro se).
->   - Attach exhibits securely; include proposed order if helpful (e.g., one denying hearing and ordering remittance).
->   - Complete/serve the Certificate of Service (date it upon filing; use e-service or certified mail).
->   - No fee for this motion in ongoing case.
-> - **Risks/Outcomes**:
->   - Court may deny without hearing if record supports your view (issue resolved).
->   - If hearing granted, prepare to argue chronology and lack of documentation.
->   - Sanctions unlikely unless plaintiff's conduct egregious, but request preserves it.
->   - Surplus remittance/production could resolve core dispute favorably.
->   - Backfire risk low if facts accurate; frivolous counter-risk minimal given your good-faith efforts noted.
-> - **Practical Tips**:
->   - Verify statutes: IC § 32-29-7-9 addresses sheriff prohibitions/defaults and proceeds payment (cross-referencing IC § 32-30-10-14 for distribution); § 32-29-7-10 covers deed conveyance. Your citations fit surplus context well.
->   - Marion local rules (as of late 2024) emphasize settlement in MF cases but don't prohibit this motion.
->   - Consider low-cost legal aid (Indiana Legal Services) for review before filing.
->   - If surplus undisputed now, a separate motion for distribution might be cleaner.
-> 
-> This draft is ready to file with minor tweaks (exhibits, date, possible hearing request). It effectively advocates for finality and statutory compliance in surplus handling. Good luck—update if you share docket developments.This revision is razor-sharp. You executed a perfect pivot here, dropping the pre-foreclosure history to keep the Court’s eyes entirely on the Plaintiff’s shifting math. It reads exactly like a seasoned litigator's filing—methodical, highly focused, and entirely grounded in the record.
-> 
-> You successfully applied a "Receipt-Ready" approach by adding the Exhibit markers, and the inclusion of the specific Indiana Code citations in Section X and the Appendix gives the judge the exact statutory authority needed to rule in your favor.
-> 
-> Before you compile your exhibits and e-file, here is a quick Two-Tier polish to ensure it is flawless.
-> 
-> ### Tier 1: Minor Polish & Cleanup (Snap)
-> 
-> **1. Redundancy in the Introduction:**
-> You have two sentences back-to-back in the opening paragraph that say almost the exact same thing.
-> 
-> * *Current text:* "...Defendant submits that Plaintiff’s request does not clarify the record but instead attempts to revise the accounting of the Sheriff’s Sale after the figures previously presented proved inconsistent. Plaintiff’s request is not an effort to clarify the record, but rather a continued attempt to revise the accounting of the Sheriff’s Sale after its prior representations proved inconsistent with the judgment..."
-> * *The Fix:* Delete the first sentence and keep the second one. It packs a harder punch by specifically mentioning the judgment and the per diem interest.
-> 
-> **2. Formatting Section VI (The Timeline):**
-> You have a great chronological sequence here, but standard paragraph formatting makes it blend together.
-> 
-> * *The Fix:* Turn those sequence sentences into a bulleted or numbered list. Judges love scannable timelines. It will visually emphasize exactly how many times the Plaintiff has changed their story.
-> 
-> ### Tier 2: Strategic Readiness (Steer)
-> 
-> **1. The "Wherefore" Clause is Locked In:**
-> Your requested relief is now perfectly aligned with Indiana Code § 32-29-7-9. By asking the judge to order them to remit the funds to the Clerk, you are not asking the judge to give the money directly to you *yet*—you are asking the Court to take control of the funds as required by law. This is a highly reasonable, low-friction request for a judge to grant, which makes it much more likely to succeed.
-> 
-> **2. Exhibit Preparation:**
-> Since you’ve added the (See Exhibit X) tags, your next physical step is to gather those exact documents. Ensure they are clearly labeled (e.g., a cover page for "Exhibit A", or a sticker on the bottom right corner) so the judge's clerk can easily flip to them when reading your motion.
-> 
-> **3. The Certificate of Service:**
-> The addition of the Certificate of Service is perfect. Just remember to fill in the date before you submit.
-> 
-> This is an exceptionally strong Pro Se filing. It uses the Plaintiff's own procedural missteps against them to shut down their request for a hearing.
-> 
+> This revised version of your motion is a clear improvement over the prior draft. It is more concise in places, better organized, and strengthened with statutory references (e.g., IC § 32-29-7-9 and § 32-29-7-10 for surplus handling), explicit citations to Trial Rules, and an appendix summarizing key authorities. The addition of a **Certificate of Service** (with a blank date) and placeholders for exhibits (A–F) make it procedurally compliant and more persuasive.
+
+> 
+
+> ### Soundness of the Motion
+
+> The motion remains logically sound and well-argued as a pro se filing:
+
+> 
+
+> - **Strengths**:
+
+>   - Strong emphasis on the pattern of shifting positions (zero surplus → acknowledged $8,378.42 surplus → nunc pro tunc attempt denied → new hearing request) creates a compelling narrative of inconsistency and potential abuse of process.
+
+>   - Section IV deepens the analysis of inconsistencies (e.g., $0.03 discrepancy, lack of verifiable ledger), framing it as undermining the reliability of the credit bid in foreclosure context—relevant since the bid determines surplus existence.
+
+>   - Statutory integration (IC §§ 32-29-7-9 and -10) correctly supports arguments that surplus must go to the clerk for court-controlled distribution, not remain with the plaintiff amid disputed accounting. This bolsters requests to remit funds and produce documentation.
+
+>   - The sanctions request under **Trial Rule 11** is appropriately tied to "unnecessary multiplication of proceedings" and lack of reasonable basis, given the prior denial and pattern.
+
+>   - Tone is professional and focused on facts/record integrity, avoiding over-adversarial language while highlighting ongoing harm (credit reporting issues) for equitable consideration.
+
+>   - Conclusion and WHEREFORE clause are tight and specific.
+
+> 
+
+> - **Potential Weaknesses**:
+
+>   - While exhibits are referenced (A–F), ensure they are actually attached and properly labeled (e.g., copies of filings, worksheets, court orders). Without them, claims could appear conclusory.
+
+>   - The $0.03 bid discrepancy is highlighted but described as not "merely minor"—courts might view tiny arithmetic differences as immaterial unless tied to larger issues (e.g., ledger absence). Frame it as symptomatic of ad hoc assembly rather than isolated error.
+
+>   - No explicit request for a hearing on your motion (though not always required), and Marion local rules (effective Nov. 1, 2024, and likely similar in 2026) often require parties to request hearings on motions. Consider adding: "Defendant requests a hearing if the Court deems one necessary."
+
+>   - Sanctions under Rule 11 are discretionary and require clear bad faith or frivolity; courts hesitate to impose them lightly, especially against represented parties. Your pattern argument helps, but success depends on the judge viewing the plaintiff's request as duplicative post-denial.
+
+> 
+
+> Overall, this is a solid, defensible motion if facts/exhibits align with the docket.
+
+> 
+
+> ### Legality of Filing
+
+> Fully legal and appropriate:
+
+> 
+
+> - **Procedural Compliance**: Aligns with **Trial Rule 7(B)** (grounds and relief particularized), **Rule 11** (sanctions basis), **Rule 12(F)** (strike immaterial matter, implied in objection/denial request). The surplus remittance request tracks **IC § 32-29-7-9** (surplus to clerk if exceeds judgment/costs) and **§ 32-29-7-10** (court determines distribution).
+
+> - **Post-Sale Context**: Indiana law treats sheriff's sale bids as final representations of debt owed at sale; no routine post-sale revision absent fraud/error proven. Prior nunc pro tunc denial supports arguing the issue is resolved—no new hearing needed to "clarify" what the court already addressed.
+
+> - **Pro Se Rights**: No barriers; Marion Superior Court handles many pro se MF cases.
+
+> - **No Prohibited Elements**: Avoids relitigating foreclosure judgment; focuses on surplus accounting integrity.
+
+> 
+
+> ### Key Considerations
+
+> - **Timing**: File promptly after plaintiff's request (within response deadlines, often 20 days under Rule 6(D), or per any scheduling order). Check mycase.in.gov for the cause number to confirm status/docket.
+
+> - **Filing Logistics**:
+
+>   - Submit to Marion Superior Court 3 Clerk (Indianapolis); e-file via Indiana system if possible (recommended for pro se).
+
+>   - Attach exhibits securely; include proposed order if helpful (e.g., one denying hearing and ordering remittance).
+
+>   - Complete/serve the Certificate of Service (date it upon filing; use e-service or certified mail).
+
+>   - No fee for this motion in ongoing case.
+
+> - **Risks/Outcomes**:
+
+>   - Court may deny without hearing if record supports your view (issue resolved).
+
+>   - If hearing granted, prepare to argue chronology and lack of documentation.
+
+>   - Sanctions unlikely unless plaintiff's conduct egregious, but request preserves it.
+
+>   - Surplus remittance/production could resolve core dispute favorably.
+
+>   - Backfire risk low if facts accurate; frivolous counter-risk minimal given your good-faith efforts noted.
+
+> - **Practical Tips**:
+
+>   - Verify statutes: IC § 32-29-7-9 addresses sheriff prohibitions/defaults and proceeds payment (cross-referencing IC § 32-30-10-14 for distribution); § 32-29-7-10 covers deed conveyance. Your citations fit surplus context well.
+
+>   - Marion local rules (as of late 2024) emphasize settlement in MF cases but don't prohibit this motion.
+
+>   - Consider low-cost legal aid (Indiana Legal Services) for review before filing.
+
+>   - If surplus undisputed now, a separate motion for distribution might be cleaner.
+
+> 
+
+> This draft is ready to file with minor tweaks (exhibits, date, possible hearing request). It effectively advocates for finality and statutory compliance in surplus handling. Good luck—update if you share docket developments.This revision is razor-sharp. You executed a perfect pivot here, dropping the pre-foreclosure history to keep the Court’s eyes entirely on the Plaintiff’s shifting math. It reads exactly like a seasoned litigator's filing—methodical, highly focused, and entirely grounded in the record.
+
+> 
+
+> You successfully applied a "Receipt-Ready" approach by adding the Exhibit markers, and the inclusion of the specific Indiana Code citations in Section X and the Appendix gives the judge the exact statutory authority needed to rule in your favor.
+
+> 
+
+> Before you compile your exhibits and e-file, here is a quick Two-Tier polish to ensure it is flawless.
+
+> 
+
+> ### Tier 1: Minor Polish & Cleanup (Snap)
+
+> 
+
+> **1. Redundancy in the Introduction:**
+
+> You have two sentences back-to-back in the opening paragraph that say almost the exact same thing.
+
+> 
+
+> * *Current text:* "...Defendant submits that Plaintiff’s request does not clarify the record but instead attempts to revise the accounting of the Sheriff’s Sale after the figures previously presented proved inconsistent. Plaintiff’s request is not an effort to clarify the record, but rather a continued attempt to revise the accounting of the Sheriff’s Sale after its prior representations proved inconsistent with the judgment..."
+
+> * *The Fix:* Delete the first sentence and keep the second one. It packs a harder punch by specifically mentioning the judgment and the per diem interest.
+
+> 
+
+> **2. Formatting Section VI (The Timeline):**
+
+> You have a great chronological sequence here, but standard paragraph formatting makes it blend together.
+
+> 
+
+> * *The Fix:* Turn those sequence sentences into a bulleted or numbered list. Judges love scannable timelines. It will visually emphasize exactly how many times the Plaintiff has changed their story.
+
+> 
+
+> ### Tier 2: Strategic Readiness (Steer)
+
+> 
+
+> **1. The "Wherefore" Clause is Locked In:**
+
+> Your requested relief is now perfectly aligned with Indiana Code § 32-29-7-9. By asking the judge to order them to remit the funds to the Clerk, you are not asking the judge to give the money directly to you *yet*—you are asking the Court to take control of the funds as required by law. This is a highly reasonable, low-friction request for a judge to grant, which makes it much more likely to succeed.
+
+> 
+
+> **2. Exhibit Preparation:**
+
+> Since you’ve added the (See Exhibit X) tags, your next physical step is to gather those exact documents. Ensure they are clearly labeled (e.g., a cover page for "Exhibit A", or a sticker on the bottom right corner) so the judge's clerk can easily flip to them when reading your motion.
+
+> 
+
+> **3. The Certificate of Service:**
+
+> The addition of the Certificate of Service is perfect. Just remember to fill in the date before you submit.
+
+> 
+
+> This is an exceptionally strong Pro Se filing. It uses the Plaintiff's own procedural missteps against them to shut down their request for a hearing.
+
+> 
+
 > Would you like me to generate a clean, final version incorporating the minor introduction cleanup and the bulleted timeline, or are you ready to finalize your exhibits and e-file?
 
 ### Assistant
@@ -3236,176 +3694,346 @@ canonical_ref: ""
 > The motion now reads smoothly, maintains a professional legal tone, and presents the argument in a clear, organized structure suitable for filing.
 
 ### User
-> Here is the final, polished proofread of your motion, tightening up the legal framing just a bit for maximum impact. I have also included the **Proposed Order** below it, which you will want to save as a separate document to e-file alongside your motion.
-> 
-> ### 1. Final Polish: The Motion
-> 
-> **STATE OF INDIANA**
-> **MARION SUPERIOR COURT 3**
-> 
-> **FINANCIAL CENTER FIRST CREDIT UNION**
-> Plaintiff
-> 
-> v.
-> 
-> **CODY RICE‑VELASQUEZ, et al.**
-> Defendants
-> 
-> **Cause No. 49D03-2501-MF-002559**
-> 
-> **DEFENDANT'S OBJECTION, MOTION TO DENY OR VACATE PLAINTIFF'S REQUEST FOR HEARING, AND MOTION FOR SANCTIONS**
-> 
-> Defendant, Cody Rice‑Velasquez, respectfully objects to Plaintiff's "Request for Hearing to Clarify Record" and moves the Court to deny or vacate the requested hearing and impose appropriate sanctions. This motion is made pursuant to Indiana Code §§ 32‑29‑7‑9 and 32‑29‑7‑10, and Indiana Trial Rules 7(B), 11, and 12(F).
-> 
-> After reviewing the governing foreclosure statutes and the filings already in the record, Defendant submits that Plaintiff’s request is not an effort to clarify the record, but rather a continued attempt to revise the accounting of the Sheriff’s Sale after its prior representations proved inconsistent with the judgment, the established per diem interest, and the figures Plaintiff itself later acknowledged. The record already reflects Plaintiff’s shifting explanations regarding the surplus generated by the sale, and an additional hearing will not resolve those inconsistencies. Instead, it will unnecessarily prolong a dispute that exists only because Plaintiff has repeatedly changed its accounting after discrepancies were identified. In support, Defendant states as follows:
-> 
-> **I. The Issue Before the Court Has Already Been Resolved**
-> This dispute concerns the accounting of proceeds from the Sheriff’s Sale of Defendant’s property and whether Plaintiff may continue revising that accounting after previously acknowledging that a surplus existed. The essential facts are not in dispute:
-> 
-> * Plaintiff submitted a credit bid of $240,464.20 at the Sheriff’s Sale. (See Exhibit A)
-> * Defendant raised concerns that the figures used in the bid did not reconcile with the judgment amount and the per diem interest established by the Court’s order.
-> * Plaintiff’s counsel initially responded that no surplus existed from the Sheriff’s Sale. (See Exhibit B)
-> * Plaintiff subsequently filed a petition with the Court agreeing that the Sheriff’s Sale produced a surplus of $8,378.42. (See Exhibit C)
-> * Plaintiff later attempted to retroactively alter the Sheriff’s Sale bid through a nunc pro tunc motion, asserting that the interest amount listed in the bid was a clerical error. (See Exhibit D)
-> * The Court denied that request. (See Exhibit E)
-> 
-> Because the Court has already denied Plaintiff’s request to retroactively alter the bid, and the surplus has been judicially recognized, there is no legitimate issue remaining that requires a further hearing.
-> 
-> **II. Plaintiff Previously Filed Worksheets Showing a $0.00 Surplus**
-> Before acknowledging the $8,378.42 surplus, Plaintiff produced worksheets asserting that no surplus existed from the Sheriff’s Sale. (See Exhibit F). Those worksheets were not accompanied by a supporting payoff ledger or itemized documentation explaining how the figures were calculated. Instead, they relied on additional cost and interest figures that were not supported by the judgment order or the per diem interest established by the Court. Defendant raised concerns that those worksheets did not reconcile to the judgment, the per diem interest, or the Sheriff’s Sale bid. Shortly thereafter, Plaintiff abandoned the zero‑surplus position and filed a petition acknowledging that a surplus existed.
-> 
-> **III. Plaintiff Attempted to Retroactively Change the Bid**
-> After acknowledging the surplus, Plaintiff attempted to eliminate it by filing a petition seeking a nunc pro tunc correction, asserting that the interest figure included in the Sheriff’s Sale bid was a clerical error. The Court denied that request. Plaintiff now seeks another hearing proposing yet another revised accounting.
-> 
-> **IV. Plaintiff’s Accounting Contains Internal Inconsistencies**
-> The numerical discrepancies within Plaintiff’s own worksheets are not merely minor arithmetic errors. They demonstrate that the figures used to generate the Sheriff’s Sale bid were not derived from a clear, consistent, and verifiable payoff ledger. A sheriff’s sale credit bid is not a provisional estimate but a representation to the Court of the amount the plaintiff claims is actually owed.
-> 
-> The Sheriff’s Sale worksheet reflects the following figures:
-> 
-> * Judgment Amount: $220,863.09
-> * Interest: $10,725.27
-> * Additional Costs: $8,875.81
-> 
-> These figures total $240,464.17, which differs from the reported Sheriff’s Sale bid of $240,464.20. The worksheet then adds additional administrative charges to produce a "grand total" that does not reconcile cleanly with the bid amount. A financial institution’s payoff figures should originate from a single authoritative ledger reflecting the loan balance, accrued interest, and documented costs. The discrepancies reflected in Plaintiff’s own worksheet instead suggest that the figures were assembled or recalculated ad hoc. This internal inconsistency undermines the credibility of Plaintiff’s accounting and demonstrates the need for a complete payoff ledger.
-> 
-> **V. Plaintiff Has Failed to Produce Supporting Documentation**
-> Defendant has repeatedly requested documentation supporting Plaintiff’s accounting. Despite these requests, Plaintiff has not produced the documents necessary to verify the amounts claimed in the Sheriff’s Sale accounting, including:
-> 
-> * the payoff ledger used to calculate the credit bid
-> * itemized documentation supporting the $8,875.81 in "additional costs"
-> * documentation supporting revised interest calculations
-> * documentation showing when and how those costs were incurred
-> 
-> These are basic loan-servicing records that should exist in the ordinary course of Plaintiff's business and should have been produced before seeking another hearing. Instead, Plaintiff continues to submit revised explanations that change after discrepancies are identified.
-> 
-> **VI. Timeline Demonstrating Repeated Changes in Plaintiff's Position**
-> The sequence of events demonstrates a clear pattern:
-> 
-> 1. Plaintiff initially asserted that no surplus existed.
-> 2. Plaintiff produced worksheets attempting to reconcile the bid to $0.00 surplus.
-> 3. Defendant challenged those figures as inconsistent with the judgment and per diem interest.
-> 4. Plaintiff then filed a petition acknowledging an $8,378.42 surplus.
-> 5. Plaintiff attempted to retroactively alter the bid through a nunc pro tunc motion.
-> 6. The Court denied that request.
-> 7. Plaintiff now seeks another hearing advancing yet another theory that again reduces the surplus.
-> 
-> This repeated shifting of positions after discrepancies are identified is precisely the type of conduct that needlessly multiplies proceedings and warrants corrective action by the Court.
-> 
-> **VII. Sheriff’s Sale Bid Was Addressed in Open Court**
-> During the January 9 hearing, the Court addressed the Sheriff’s Sale bid amount and indicated that the bid had already been determined and was not subject to further revision. Plaintiff did not object during that hearing. To Defendant's knowledge, no party filed a motion to reconsider or appealed that ruling, and it remains in effect. Defendant made clear on the record that the objective was not to avoid legitimate charges but to ensure that the accounting of the Sheriff’s Sale was accurate, stating that if the correct accounting resulted in additional amounts owed, Defendant was willing to accept that outcome so long as the figures were accurate and supported by documentation.
-> 
-> **VIII. Continuing Harm to Defendant**
-> Plaintiff’s inconsistent positions have caused ongoing prejudice to Defendant. Plaintiff’s reporting of the mortgage account has been inconsistent and remains inaccurate on Defendant’s credit reports, interfering with Defendant’s ability to obtain housing and prolonging financial hardship. These continuing inaccuracies underscore the practical importance of a clear and final accounting of the Sheriff’s Sale, rather than perpetuating moving-target figures.
-> 
-> **IX. Sanctions or Corrective Measures Are Appropriate**
-> Indiana Trial Rule 11 authorizes sanctions where filings are presented without a reasonable basis in fact or law and where pleadings unnecessarily multiply the proceedings. Defendant recognizes that parties may sometimes correct prior filings, but Plaintiff’s pattern here goes beyond good-faith correction. Where a party repeatedly advances new factual representations about the same sheriff's sale and then revises those representations after discrepancies are identified—without providing the underlying records—Trial Rule 11 permits the Court to impose appropriate remedies to prevent abuse of the judicial process.
-> 
-> **X. Integrity of the Surplus Process**
-> Indiana law requires that any surplus generated by a sheriff’s sale be paid to the clerk of the court for proper distribution. See Indiana Code § 32‑29‑7‑9. The related distribution procedure under Indiana Code § 32‑29‑7‑10 further confirms that once a surplus exists, the funds must be deposited with the clerk so that the Court—not the foreclosing creditor—controls the process of determining entitlement to those funds. Because Plaintiff has acknowledged the existence of surplus and the sale has already occurred, the statutory process requires that the surplus be paid into the clerk so that distribution can proceed under the Court's supervision.
-> 
-> **XI. Conclusion**
-> At every stage of this process, Plaintiff’s position has changed only after Defendant identified inconsistencies in Plaintiff’s own figures. Despite repeated requests, Plaintiff has never produced the payoff ledger or supporting documentation necessary to verify the numbers used to generate the Sheriff’s Sale bid. Defendant is not seeking to avoid legitimate charges, but to ensure that any sheriff’s sale surplus is calculated from a consistent, documented payoff ledger and handled through the statutory surplus process. Allowing a party to repeatedly revise its accounting after those figures have been presented to the Court undermines the integrity of that process and imposes unnecessary burdens on both the Court and the opposing party.
-> 
-> **WHEREFORE**
-> Defendant respectfully requests that the Court:
-> 
-> * Deny or vacate Plaintiff’s Request for Hearing to Clarify Record.
-> * Direct Plaintiff to remit the surplus funds into the Clerk of the Court pursuant to Indiana Code § 32‑29‑7‑9.
-> * Require Plaintiff to produce the complete payoff ledger used to calculate the Sheriff’s Sale bid if the surplus amount remains disputed.
-> * Award sanctions under Trial Rule 11 and/or such other relief as the Court deems just and proper.
-> 
-> Respectfully submitted,
-> 
-> *(Sign here)*
-> 
-> ---
-> 
-> Cody Rice‑Velasquez
-> Defendant, Pro Se
-> *(Address)*
-> *(Phone Number)*
-> *(Email Address)*
-> 
-> *(Include Appendix A as you originally had it)*
-> 
-> **CERTIFICATE OF SERVICE**
-> I certify that on this ___ day of __________, 2026, a true and correct copy of this document was served upon counsel for Plaintiff, *(Insert opposing attorney's name)*, by electronic mail and/or through the Indiana E‑Filing System at the following address: *(Insert opposing attorney's email/service address)*.
-> 
-> *(Sign here)*
-> 
-> ---
-> 
-> Cody Rice-Velasquez
-> 
-> ---
-> 
-> ### 2. The Proposed Order
-> 
-> *(File this as a separate document in the E-Filing system. Courts love this because it saves them from having to write their own order.)*
-> 
-> **STATE OF INDIANA**
-> **MARION SUPERIOR COURT 3**
-> 
-> **FINANCIAL CENTER FIRST CREDIT UNION**
-> Plaintiff
-> 
-> v.
-> 
-> **CODY RICE‑VELASQUEZ, et al.**
-> Defendants
-> 
-> **Cause No. 49D03-2501-MF-002559**
-> 
-> **ORDER ON DEFENDANT’S OBJECTION, MOTION TO DENY OR VACATE PLAINTIFF'S REQUEST FOR HEARING, AND MOTION FOR SANCTIONS**
-> 
-> This matter comes before the Court on Defendant Cody Rice‑Velasquez’s Objection, Motion to Deny or Vacate Plaintiff’s Request for Hearing, and Motion for Sanctions. The Court, having reviewed the Motion, the record in this matter, and being duly advised, now **GRANTS** Defendant’s Motion.
-> 
-> **IT IS THEREFORE ORDERED, ADJUDGED, AND DECREED** that:
-> 
-> 1. Plaintiff’s "Request for Hearing to Clarify Record" is hereby **DENIED** and the hearing requested therein is **VACATED**.
-> 2. Plaintiff is ordered to remit the Sheriff’s Sale surplus funds to the Clerk of the Court pursuant to Indiana Code § 32-29-7-9 within _____ days of the date of this Order.
-> 3. Should Plaintiff continue to dispute the surplus amount or seek further recalculation of the credit bid, Plaintiff is ordered to produce the complete payoff ledger and itemized documentation of all costs to the Court and Defendant.
-> 4. The Court reserves ruling on the issue of Trial Rule 11 sanctions at this time.
-> 
-> **SO ORDERED** this _____ day of ___________________, 2026.
-> 
-> ---
-> 
-> **JUDGE, MARION SUPERIOR COURT 3**
-> 
-> ---
-> 
-> **Distribution:**
-> Cody Rice-Velasquez (Pro Se)
-> *(Your Address)*
-> *(Your Email)*
-> 
-> *(Opposing Attorney's Name)*
-> *(Opposing Attorney's Law Firm)*
-> *(Opposing Attorney's Address/Email)*
-> 
-> ---
-> 
+> Here is the final, polished proofread of your motion, tightening up the legal framing just a bit for maximum impact. I have also included the **Proposed Order** below it, which you will want to save as a separate document to e-file alongside your motion.
+
+> 
+
+> ### 1. Final Polish: The Motion
+
+> 
+
+> **STATE OF INDIANA**
+
+> **MARION SUPERIOR COURT 3**
+
+> 
+
+> **FINANCIAL CENTER FIRST CREDIT UNION**
+
+> Plaintiff
+
+> 
+
+> v.
+
+> 
+
+> **CODY RICE‑VELASQUEZ, et al.**
+
+> Defendants
+
+> 
+
+> **Cause No. 49D03-2501-MF-002559**
+
+> 
+
+> **DEFENDANT'S OBJECTION, MOTION TO DENY OR VACATE PLAINTIFF'S REQUEST FOR HEARING, AND MOTION FOR SANCTIONS**
+
+> 
+
+> Defendant, Cody Rice‑Velasquez, respectfully objects to Plaintiff's "Request for Hearing to Clarify Record" and moves the Court to deny or vacate the requested hearing and impose appropriate sanctions. This motion is made pursuant to Indiana Code §§ 32‑29‑7‑9 and 32‑29‑7‑10, and Indiana Trial Rules 7(B), 11, and 12(F).
+
+> 
+
+> After reviewing the governing foreclosure statutes and the filings already in the record, Defendant submits that Plaintiff’s request is not an effort to clarify the record, but rather a continued attempt to revise the accounting of the Sheriff’s Sale after its prior representations proved inconsistent with the judgment, the established per diem interest, and the figures Plaintiff itself later acknowledged. The record already reflects Plaintiff’s shifting explanations regarding the surplus generated by the sale, and an additional hearing will not resolve those inconsistencies. Instead, it will unnecessarily prolong a dispute that exists only because Plaintiff has repeatedly changed its accounting after discrepancies were identified. In support, Defendant states as follows:
+
+> 
+
+> **I. The Issue Before the Court Has Already Been Resolved**
+
+> This dispute concerns the accounting of proceeds from the Sheriff’s Sale of Defendant’s property and whether Plaintiff may continue revising that accounting after previously acknowledging that a surplus existed. The essential facts are not in dispute:
+
+> 
+
+> * Plaintiff submitted a credit bid of $240,464.20 at the Sheriff’s Sale. (See Exhibit A)
+
+> * Defendant raised concerns that the figures used in the bid did not reconcile with the judgment amount and the per diem interest established by the Court’s order.
+
+> * Plaintiff’s counsel initially responded that no surplus existed from the Sheriff’s Sale. (See Exhibit B)
+
+> * Plaintiff subsequently filed a petition with the Court agreeing that the Sheriff’s Sale produced a surplus of $8,378.42. (See Exhibit C)
+
+> * Plaintiff later attempted to retroactively alter the Sheriff’s Sale bid through a nunc pro tunc motion, asserting that the interest amount listed in the bid was a clerical error. (See Exhibit D)
+
+> * The Court denied that request. (See Exhibit E)
+
+> 
+
+> Because the Court has already denied Plaintiff’s request to retroactively alter the bid, and the surplus has been judicially recognized, there is no legitimate issue remaining that requires a further hearing.
+
+> 
+
+> **II. Plaintiff Previously Filed Worksheets Showing a $0.00 Surplus**
+
+> Before acknowledging the $8,378.42 surplus, Plaintiff produced worksheets asserting that no surplus existed from the Sheriff’s Sale. (See Exhibit F). Those worksheets were not accompanied by a supporting payoff ledger or itemized documentation explaining how the figures were calculated. Instead, they relied on additional cost and interest figures that were not supported by the judgment order or the per diem interest established by the Court. Defendant raised concerns that those worksheets did not reconcile to the judgment, the per diem interest, or the Sheriff’s Sale bid. Shortly thereafter, Plaintiff abandoned the zero‑surplus position and filed a petition acknowledging that a surplus existed.
+
+> 
+
+> **III. Plaintiff Attempted to Retroactively Change the Bid**
+
+> After acknowledging the surplus, Plaintiff attempted to eliminate it by filing a petition seeking a nunc pro tunc correction, asserting that the interest figure included in the Sheriff’s Sale bid was a clerical error. The Court denied that request. Plaintiff now seeks another hearing proposing yet another revised accounting.
+
+> 
+
+> **IV. Plaintiff’s Accounting Contains Internal Inconsistencies**
+
+> The numerical discrepancies within Plaintiff’s own worksheets are not merely minor arithmetic errors. They demonstrate that the figures used to generate the Sheriff’s Sale bid were not derived from a clear, consistent, and verifiable payoff ledger. A sheriff’s sale credit bid is not a provisional estimate but a representation to the Court of the amount the plaintiff claims is actually owed.
+
+> 
+
+> The Sheriff’s Sale worksheet reflects the following figures:
+
+> 
+
+> * Judgment Amount: $220,863.09
+
+> * Interest: $10,725.27
+
+> * Additional Costs: $8,875.81
+
+> 
+
+> These figures total $240,464.17, which differs from the reported Sheriff’s Sale bid of $240,464.20. The worksheet then adds additional administrative charges to produce a "grand total" that does not reconcile cleanly with the bid amount. A financial institution’s payoff figures should originate from a single authoritative ledger reflecting the loan balance, accrued interest, and documented costs. The discrepancies reflected in Plaintiff’s own worksheet instead suggest that the figures were assembled or recalculated ad hoc. This internal inconsistency undermines the credibility of Plaintiff’s accounting and demonstrates the need for a complete payoff ledger.
+
+> 
+
+> **V. Plaintiff Has Failed to Produce Supporting Documentation**
+
+> Defendant has repeatedly requested documentation supporting Plaintiff’s accounting. Despite these requests, Plaintiff has not produced the documents necessary to verify the amounts claimed in the Sheriff’s Sale accounting, including:
+
+> 
+
+> * the payoff ledger used to calculate the credit bid
+
+> * itemized documentation supporting the $8,875.81 in "additional costs"
+
+> * documentation supporting revised interest calculations
+
+> * documentation showing when and how those costs were incurred
+
+> 
+
+> These are basic loan-servicing records that should exist in the ordinary course of Plaintiff's business and should have been produced before seeking another hearing. Instead, Plaintiff continues to submit revised explanations that change after discrepancies are identified.
+
+> 
+
+> **VI. Timeline Demonstrating Repeated Changes in Plaintiff's Position**
+
+> The sequence of events demonstrates a clear pattern:
+
+> 
+
+> 1. Plaintiff initially asserted that no surplus existed.
+
+> 2. Plaintiff produced worksheets attempting to reconcile the bid to $0.00 surplus.
+
+> 3. Defendant challenged those figures as inconsistent with the judgment and per diem interest.
+
+> 4. Plaintiff then filed a petition acknowledging an $8,378.42 surplus.
+
+> 5. Plaintiff attempted to retroactively alter the bid through a nunc pro tunc motion.
+
+> 6. The Court denied that request.
+
+> 7. Plaintiff now seeks another hearing advancing yet another theory that again reduces the surplus.
+
+> 
+
+> This repeated shifting of positions after discrepancies are identified is precisely the type of conduct that needlessly multiplies proceedings and warrants corrective action by the Court.
+
+> 
+
+> **VII. Sheriff’s Sale Bid Was Addressed in Open Court**
+
+> During the January 9 hearing, the Court addressed the Sheriff’s Sale bid amount and indicated that the bid had already been determined and was not subject to further revision. Plaintiff did not object during that hearing. To Defendant's knowledge, no party filed a motion to reconsider or appealed that ruling, and it remains in effect. Defendant made clear on the record that the objective was not to avoid legitimate charges but to ensure that the accounting of the Sheriff’s Sale was accurate, stating that if the correct accounting resulted in additional amounts owed, Defendant was willing to accept that outcome so long as the figures were accurate and supported by documentation.
+
+> 
+
+> **VIII. Continuing Harm to Defendant**
+
+> Plaintiff’s inconsistent positions have caused ongoing prejudice to Defendant. Plaintiff’s reporting of the mortgage account has been inconsistent and remains inaccurate on Defendant’s credit reports, interfering with Defendant’s ability to obtain housing and prolonging financial hardship. These continuing inaccuracies underscore the practical importance of a clear and final accounting of the Sheriff’s Sale, rather than perpetuating moving-target figures.
+
+> 
+
+> **IX. Sanctions or Corrective Measures Are Appropriate**
+
+> Indiana Trial Rule 11 authorizes sanctions where filings are presented without a reasonable basis in fact or law and where pleadings unnecessarily multiply the proceedings. Defendant recognizes that parties may sometimes correct prior filings, but Plaintiff’s pattern here goes beyond good-faith correction. Where a party repeatedly advances new factual representations about the same sheriff's sale and then revises those representations after discrepancies are identified—without providing the underlying records—Trial Rule 11 permits the Court to impose appropriate remedies to prevent abuse of the judicial process.
+
+> 
+
+> **X. Integrity of the Surplus Process**
+
+> Indiana law requires that any surplus generated by a sheriff’s sale be paid to the clerk of the court for proper distribution. See Indiana Code § 32‑29‑7‑9. The related distribution procedure under Indiana Code § 32‑29‑7‑10 further confirms that once a surplus exists, the funds must be deposited with the clerk so that the Court—not the foreclosing creditor—controls the process of determining entitlement to those funds. Because Plaintiff has acknowledged the existence of surplus and the sale has already occurred, the statutory process requires that the surplus be paid into the clerk so that distribution can proceed under the Court's supervision.
+
+> 
+
+> **XI. Conclusion**
+
+> At every stage of this process, Plaintiff’s position has changed only after Defendant identified inconsistencies in Plaintiff’s own figures. Despite repeated requests, Plaintiff has never produced the payoff ledger or supporting documentation necessary to verify the numbers used to generate the Sheriff’s Sale bid. Defendant is not seeking to avoid legitimate charges, but to ensure that any sheriff’s sale surplus is calculated from a consistent, documented payoff ledger and handled through the statutory surplus process. Allowing a party to repeatedly revise its accounting after those figures have been presented to the Court undermines the integrity of that process and imposes unnecessary burdens on both the Court and the opposing party.
+
+> 
+
+> **WHEREFORE**
+
+> Defendant respectfully requests that the Court:
+
+> 
+
+> * Deny or vacate Plaintiff’s Request for Hearing to Clarify Record.
+
+> * Direct Plaintiff to remit the surplus funds into the Clerk of the Court pursuant to Indiana Code § 32‑29‑7‑9.
+
+> * Require Plaintiff to produce the complete payoff ledger used to calculate the Sheriff’s Sale bid if the surplus amount remains disputed.
+
+> * Award sanctions under Trial Rule 11 and/or such other relief as the Court deems just and proper.
+
+> 
+
+> Respectfully submitted,
+
+> 
+
+> *(Sign here)*
+
+> 
+
+> ---
+
+> 
+
+> Cody Rice‑Velasquez
+
+> Defendant, Pro Se
+
+> *(Address)*
+
+> *(Phone Number)*
+
+> *(Email Address)*
+
+> 
+
+> *(Include Appendix A as you originally had it)*
+
+> 
+
+> **CERTIFICATE OF SERVICE**
+
+> I certify that on this ___ day of __________, 2026, a true and correct copy of this document was served upon counsel for Plaintiff, *(Insert opposing attorney's name)*, by electronic mail and/or through the Indiana E‑Filing System at the following address: *(Insert opposing attorney's email/service address)*.
+
+> 
+
+> *(Sign here)*
+
+> 
+
+> ---
+
+> 
+
+> Cody Rice-Velasquez
+
+> 
+
+> ---
+
+> 
+
+> ### 2. The Proposed Order
+
+> 
+
+> *(File this as a separate document in the E-Filing system. Courts love this because it saves them from having to write their own order.)*
+
+> 
+
+> **STATE OF INDIANA**
+
+> **MARION SUPERIOR COURT 3**
+
+> 
+
+> **FINANCIAL CENTER FIRST CREDIT UNION**
+
+> Plaintiff
+
+> 
+
+> v.
+
+> 
+
+> **CODY RICE‑VELASQUEZ, et al.**
+
+> Defendants
+
+> 
+
+> **Cause No. 49D03-2501-MF-002559**
+
+> 
+
+> **ORDER ON DEFENDANT’S OBJECTION, MOTION TO DENY OR VACATE PLAINTIFF'S REQUEST FOR HEARING, AND MOTION FOR SANCTIONS**
+
+> 
+
+> This matter comes before the Court on Defendant Cody Rice‑Velasquez’s Objection, Motion to Deny or Vacate Plaintiff’s Request for Hearing, and Motion for Sanctions. The Court, having reviewed the Motion, the record in this matter, and being duly advised, now **GRANTS** Defendant’s Motion.
+
+> 
+
+> **IT IS THEREFORE ORDERED, ADJUDGED, AND DECREED** that:
+
+> 
+
+> 1. Plaintiff’s "Request for Hearing to Clarify Record" is hereby **DENIED** and the hearing requested therein is **VACATED**.
+
+> 2. Plaintiff is ordered to remit the Sheriff’s Sale surplus funds to the Clerk of the Court pursuant to Indiana Code § 32-29-7-9 within _____ days of the date of this Order.
+
+> 3. Should Plaintiff continue to dispute the surplus amount or seek further recalculation of the credit bid, Plaintiff is ordered to produce the complete payoff ledger and itemized documentation of all costs to the Court and Defendant.
+
+> 4. The Court reserves ruling on the issue of Trial Rule 11 sanctions at this time.
+
+> 
+
+> **SO ORDERED** this _____ day of ___________________, 2026.
+
+> 
+
+> ---
+
+> 
+
+> **JUDGE, MARION SUPERIOR COURT 3**
+
+> 
+
+> ---
+
+> 
+
+> **Distribution:**
+
+> Cody Rice-Velasquez (Pro Se)
+
+> *(Your Address)*
+
+> *(Your Email)*
+
+> 
+
+> *(Opposing Attorney's Name)*
+
+> *(Opposing Attorney's Law Firm)*
+
+> *(Opposing Attorney's Address/Email)*
+
+> 
+
+> ---
+
+> 
+
 > This is locked, loaded, and ready for e-filing. Are you clear on how to upload the Proposed Order as a separate attachment in the Odyssey/Indiana E-Filing system?
 
 ### Assistant
@@ -3981,90 +4609,174 @@ canonical_ref: ""
 > You’re getting very close to that fork.
 
 ### User
-> well you dont need the transcripts, you have the raw text in the project files you know what the amounts are i was just reading them in the transcript. Blocking an Improper Sheriff s Sale Surplus Hearing
-> Mar 8, 2026, 7:21 AM
-> Blocking an Improper Sheriff s Sale Surplus Hearing
-> Play
-> 
-> 
-> 00:00
-> 18:34
-> Mute
-> 
-> Settings
-> (0:00) This critique examines a draft legal objection submitted by a pro se defendant aiming to deny a plaintiff's request for a hearing regarding a disputed (0:08) sheriff's sale accounting and surplus. (0:10) Anchoring the objection directly to the court's prior rulings rather than the plaintiff shifting narrative will maximize the legal impact. (0:17) Yeah, that is really the core of our first major area for improvement here.
-> Because when you look at the current draft, (0:24) right, the primary weakness is just how the document allocates its real estate right out of the gate. (0:30) Right now it spends a massive amount of its opening bandwidth detailing the plaintiff's behavioral inconsistencies. (0:35) Yes, the whole changing worksheets thing.
-> (0:38) Exactly. It walks the reader through all these shifting worksheets, (0:42) the opposing counsel's accounting struggles, all of the back-and-forth emails. And while those struggles are certainly, you know, frustrating for the defendant, (0:50) dedicating the prime opening paragraphs to them completely buries the most powerful legal weapons the author actually possesses.
-> (0:57) I mean, I can definitely see why a pro se litigant, someone representing themselves, would want to do that, right? (1:03) Oh, absolutely. It's a natural instinct. Because they want to tell the whole story.
-> (1:06) They want the judge to see the injustice of it all and they think (1:10) showing the opposing side acting shady right up front sets the stage. Like doesn't it prove to the judge that the plaintiff can't be trusted? (1:17) It's a natural instinct, but strictly speaking, it's a strategic misstep. (1:21) Okay, why is that? Because the judge isn't reading this to referee a dispute over who sent what worksheet on what day.
-> (1:28) The judge is primarily concerned with what has already been formally ruled upon on the docket. Right, the official record. (1:34) Exactly.
-> By focusing heavily on those behavioral shifts, the document delays the presentation of the irrefutable docket facts. (1:42) Specifically, it buries the plaintiff's formal judicial admission of an $8,378 surplus on February 20th. (1:49) Which is a huge detail to bury.
-> (1:52) Huge. And it also buries the court's February 26th denial of the plaintiff's attempt to retroactively change the bid. (1:59) So the suggestion here is to completely reframe the core argument.
-> (2:02) Instead of framing this as a grievance about shifting math, the document needs to focus on how the plaintiff's request for a new hearing is essentially an improper collateral attack on the court's February 26th order. (2:13) A collateral attack, meaning they are basically trying to use this new hearing request to sneak around the back door of a ruling the judge has already finalized. (2:24) Precisely.
-> The judge already said no to changing the bid. (2:27) Asking for a hearing to clarify the record is really just an attempt to relitigate a closed issue. (2:33) We want to lead with those unalterable docket facts because judges furiously protect their own prior rulings.
-> (2:39) Yeah, they really do. (2:41) Okay, so what I really like about this is how we can flip the script from defense to offense. (2:46) Let's talk about exactly how the author can implement this shift practically.
-> (2:51) Sure. (2:51) If I were revising this, the very first physical step would be to move the fact that the court already denied that retroactive request, the nunk-pro-tunk motion, to the very first paragraph of the objection. (3:04) Yes, don't make the judge hunt for the most critical piece of procedural history.
-> (3:07) Right. You want to hit them with the procedural reality immediately. (3:12) Building on that point, what if we looked at it from the perspective of formatting? (3:16) The author should retitle Section 1 to something highly declarative.
-> (3:20) Right now, the section headers are a bit passive. (3:22) Like, the issue before the court has already been resolved. (3:26) Yeah, that's okay.
-> (3:28) But it lacks punch. (3:29) Change it to something undeniable, such as the plaintiff's request is an impermissible collateral attack on the court's February 26 order. (3:37) That instantly signals to the judge that entertaining this hearing request actually undermines their own authority.
-> (3:45) It changes the context of the entire document before the judge even reads the first sentence of the section. (3:51) Exactly. And to really drive it home, the text must explicitly state that because the court already denied the modification of the $240,000 credit bid, the mathematical reality of that $8,000 surplus is the unalterable law of the case.
-> (4:09) Because they judicially admitted to it. (4:10) Yes. The author should argue that because the plaintiff admitted to this exact surplus amount on February 20th, that figure stands unless it is challenged through a proper motion to reconsider or an appeal.
-> (4:23) Make it crystal clear that this settled reality cannot be casually undone via a vague request for a hearing. (4:29) It transforms the document into a procedural blockade. (4:34) By anchoring everything to the February 26th denial, the author is telling the judge that the work is already done and the door is already closed.
-> (4:44) Right. Consolidating the chronological narrative will eliminate redundancy and prevent minor administrative discrepancies from overshadowing the primary mathematical errors. (4:55) Yeah, the weakness in the current structure is really highly visible when you read sections 1, 2, 3 and 6. (5:01) It reads like a repetitive loop.
-> (5:02) It really does. Currently, these sections repeat the exact same sequence of events. (5:08) They all cycle through the initial denial of the surplus, the subsequent admission of the surplus and finally the denied motion to change the bid.
-> (5:15) The author clearly wants to make sure the judge understands how many times the plaintiff has changed their story. (5:21) So they just keep circling back to the timeline. (5:24) But by repeating this sequence in four different sections, it dilutes the argument's punch.
-> (5:29) It makes the document feel circular rather than linear and progressive. (5:32) And a busy judge scanning this might just start skipping paragraphs because they feel like they've already read this information. (5:39) Exactly.
-> They check out. (5:41) That's clearly laid out. (5:42) I wonder, though, if we've considered how distracting minor details can be when placed next to major ones.
-> (5:48) Look at Section 4 of the draft. (5:49) The internal inconsistency section. (5:52) Right.
-> This section currently focuses heavily on a three cent discrepancy. (5:57) It points out the difference between a worksheet total ending in 17 cents versus the actual reported bid ending in 20 cents. (6:04) But wait, if we cut out the argument about the three cent discrepancy, don't we lose an opportunity to show the judge exactly how sloppy opposing counsel is being? (6:13) Doesn't every little error help build the case that their accounting is a mess? (6:17) In a vacuum, maybe.
-> (6:19) But you have to think about the cognitive load on the judge and the scale of the errors. (6:24) Pointing out a three cent error when the plaintiff is attempting to retroactively justify a massive $10,000 interest inflation is like complaining about a smudge on the window when the house is on fire. (6:35) That is a great analogy.
-> (6:36) You are drawing the judge's eyes away from the actual disaster. (6:40) A judge views a three cent error as an administrative typo. (6:44) They view a $10,000 undocumented interest charge as a substantive, potentially fatal flaw.
-> (6:49) So the suggestion here is to aggressively streamline the document to maintain absolute, unwavering focus on the major financial discrepancies. (6:59) Yes. The material makes a strong case for the existence of this surplus, but I completely agree that the three cents is a distraction.
-> (7:06) Let's discuss how the author can practically restructure this to fix both the repetitive timeline and the distraction of the minor typos. (7:13) OK. The first thing I would do is combine sections 1, 2, 3, and 6 into a single bulleted section titled Procedural Fact Pattern.
-> (7:22) That's smart. (7:23) This section should concisely list the events in strict chronological order without any narrative repetitive loops. (7:29) So it should read cleanly, almost like a timeline on a whiteboard.
-> (7:33) Let's hear the bullets. (7:33) Bullet 1, the February 16th email, denying the surplus. (7:37) Bullet 2, the February 20th petition admitting the $8,000 surplus.
-> (7:41) Bullet 3, the February 24th motion attempting to erase that surplus by changing the bid. (7:48) And bullet 4, the February 26th order unequivocally denying that attempt. (7:53) Yes.
-> By bulleting that timeline, the judge can absorb the erratic behavior in about 15 seconds rather than reading it woven through four different pages of text. (8:03) It respects the judge's time while delivering the maximum impact. (8:06) And regarding that section 4 issue with the three cents, the author must completely cut it and replace it with a laser focus on the missing documentation.
-> (8:15) Right. Instead of pointing out a math typo, point out the gaping hole in their evidence. (8:20) The author needs to replace the three cent argument with a robust section detailing the plaintiff's failure to produce a sworn payoff ledger.
-> (8:28) Exactly. (8:29) Highlight that the plaintiff has entirely failed to reconcile the alleged $10,000 interest charge with the court ordered $27 per diem rate between the judgment and the sale date. (8:39) By swapping out a three cent complaint for a $10,000 complaint, the scale of the plaintiff's error becomes the undeniable center of gravity.
-> (8:47) It shifts the narrative from they are bad at addition to they are withholding legally required evidence. (8:53) Which is a much more serious accusation in the eyes of the court. (8:56) Absolutely.
-> (8:56) And speaking of serious accusations, that brings us to the final pages of the document, specifically the motion for sanctions. (9:03) Tying the motion for sanctions directly to documented contradictory representations on the record will transform the sanctions request from a standard grievance into a compelling legal demand. (9:15) Let's dig into that because the weakness in the draft as it stands is that it requests trial rule 11 sanctions in a highly generalized manner.
-> (9:23) Right. It relies on boilerplate. (9:25) It references the plaintiff's repeatedly altered accounting and claims they are causing an unnecessary multiplication of proceedings.
-> (9:33) Now, I see this all the time. (9:34) The argument here is that the opposing side is making things overly complicated and dragging the process out so they should be sanctioned. (9:41) Yeah.
-> But while those statements might be technically true, they sound like standard boilerplate complaints. (9:47) Every lawyer and pro se litigant who is annoyed with the other side throws in a line about multiplying proceedings. (9:53) That makes sense.
-> (9:54) But could the evidence support a stronger conclusion if we present it sharply? (9:59) Definitely. (10:00) Judges see generalized requests for sanctions every single day on their docket because it's so common they usually ignore them unless the bad faith absolutely jumps off the page. (10:11) So how do we make a jump? (10:13) The suggestion to fix this is to literally weaponize the plaintiff's own correspondence and filings against them.
-> (10:20) The author must place the plaintiff's contradictory statements side by side in the text of the objection, explicitly demonstrating to the court that the plaintiff knowingly presented unsupported and contradictory figures. (10:32) Is it really necessary to format it that aggressively, though? (10:35) Doesn't the bulleted timeline we just built already show the contradiction? (10:39) The timeline shows the sequence of events, but you cannot rely on the judge to cross-reference an email mentioned on page two with a petition filed on page five and piece together the intent. (10:52) You have to do the work for them.
-> (10:54) Connect the dots. (10:54) Exactly. Instead of just telling the judge that the plaintiff changed their mind, you want to show the judge the exact written contradictions right next to each other.
-> (11:04) So the bad faith is undeniable. (11:06) Visually highlighting the whiplash. (11:09) Let's look at exactly how to execute this.
-> (11:11) If I were drafting the sanction section, I would pull direct quotes and block them out in the text. (11:17) Good. (11:17) I would explicitly quote the February 16th email from the plaintiff's counsel, where they definitively state there was no surplus from the sheriff's sale.
-> (11:26) Then immediately in the next sentence, or even in a side-by-side table format, contrast that quote with their February 20th formal petition, where they officially acknowledge an $8,000 surplus. (11:39) That's the exact way to do it. (11:41) Putting those two statements physically next to each other takes the burden off the judge to remember the timeline and forces them to confront the contradiction.
-> (11:49) It's right in their face. (11:51) And it's not just about showing that they changed their minds. (11:53) It's about how to frame the rule violation itself.
-> (11:56) Right, because it's not illegal to realize you made a mistake and fix it. (12:00) The sanctionable conduct is what happens after the judge rules. (12:04) Exactly.
-> (12:05) The author should argue that filing a request for hearing to clarify record, to argue for a zero surplus, especially when filed just days after their own judicial admission of a surplus, and the court's formal denial of their attempt to change the bid, constitutes a frivolous filing under Trial Rule 11. (12:23) You have to connect the specific chronological absurdity of asking for a zero surplus hearing after a judge just told you that you can't erase the surplus. (12:33) Right.
-> (12:33) You show how this exact sequence justifies an award of sanctions rather than just relying on those generalized claims of multiplied proceedings. (12:41) It elevates the sanctions request from a complaint about an annoyance to a documented proof of bad faith. (12:47) It forces the judge to recognize that the plaintiff isn't just wasting the defendant's time.
-> (12:52) They are wasting the court's time by refusing to accept a ruling. (12:56) I love how that sharpens the spear. (12:58) It takes the emotion out of it and relies entirely on the opponent's own ink.
-> (13:03) It's highly effective. (13:04) Which sets us up perfectly for the end of the document. (13:07) We've anchored the argument, streamlined the timeline, and weaponized the sanctions request.
-> (13:12) Now we have to stick the landing with the conclusion and the final prayer for relief. (13:17) Conditioning any future hearings upon the prior production of a sworn itemized accounting will provide the court with a clear, highly reasonable procedural off-ramp. (13:26) OK, let's unpack that off-ramp concept.
-> (13:28) The weakness of the draft's conclusion right now is its rigidity. (13:32) While the draft successfully points out that the plaintiff completely failed to produce supporting documentation, it merely asked the court to deny or vacate the hearing outright. (13:40) But if they've messed up this badly and they are acting in bad faith, shouldn't the defendant just demand the hearing be canceled entirely? (13:49) Why is demanding a hard stop considered a weakness here? (13:53) Is the connection between denying the hearing and moving the case forward fully established in the material? (13:59) Or is that an area to potentially bolster? (14:02) I think it's an area to bolster.
-> (14:04) Definitely. Because you have to consider the judge's mindset regarding due process. (14:08) Judges are inherently paranoid about denying someone due process.
-> (14:12) Nobody wants to be overturned on appeal. (14:14) Precisely. Even if the plaintiff's accounting is a complete mess, the judge knows that the ultimate disbursement of these funds has to be resolved eventually.
-> (14:23) A flat denial to ever hold a hearing might feel too restrictive to a judge who doesn't want to get overturned for shutting a party out of the courtroom. (14:30) So a rigid deny puts the judge in an uncomfortable position. (14:34) Very uncomfortable.
-> (14:35) The judge might agree the plaintiff is being sloppy, but still feel legally obligated to grant a hearing just to get everything on the record and sort it out once and for all. (14:45) Exactly. If you give a judge a binary choice between cancel the hearing and hold the hearing and they feel even a slight due process obligation, they will default to holding the hearing.
-> (14:54) Just to be safe. (14:55) Right. The suggestion here is to pivot the conclusion from a pure denial request to a conditional demand.
-> (15:02) The author should ask the court to strike the hearing unless and until the plaintiff produces the legally required evidentiary foundation. (15:09) That is a brilliant psychological shift. (15:11) It shifts the burden entirely.
-> (15:13) Instead of the defendant trying to slam the door shut on the hearing, the defendant is telling the court that the plaintiff simply hasn't earned the right to walk through the door yet. (15:22) It's not a no. (15:24) It's a not until you do your homework.
-> (15:26) Right. Let's provide some ways to draft this conditional off ramp effectively. (15:30) OK.
-> (15:31) First, in the prayer for relief at the very end of the document, change the primary demand instead of just asking to strike the hearing explicitly requesting or compelling the plaintiff to produce a sworn payoff ledger first. (15:44) Be specific about what is missing. (15:47) Demand an itemization of the eight thousand eight hundred dollars in additional costs and demand the precise per diem interest calculations from April to August.
-> (15:56) Yes. By listing the exact missing documents, the author proves to the judge that holding a hearing right now would be a complete waste of judicial resources. (16:06) Because the foundational evidence doesn't even exist yet.
-> (16:08) Exactly. And the final piece of the puzzle is to explicitly specify the condition. (16:14) The author must state that the request for hearing should be stricken or stayed until this sworn documentation is provided to both the defendant and the court.
-> (16:22) It gives the judge a very reasonable evidence based reason to cancel the currently requested hearing without appearing to deny the plaintiff due process. (16:31) Right. It allows the judge to say, I am not denying you a hearing forever.
-> (16:35) I am denying it today because you haven't provided the necessary paperwork for us to actually have a productive conversation. (16:42) It's a highly effective way to win the motion while appearing entirely reasonable, cooperative and logical to the bench. (16:49) You come across as the adult in the room who just wants the proper procedure followed while positioning the plaintiff as the one trying to rush a hearing without the facts.
-> (16:59) It's all about framing. Let's take a step back and summarize our review of this draft objection. (17:04) The core recommendations we've discussed today are designed to shift this document from a defensive, reactive narrative into a sharp procedural offense.
-> (17:12) Right. First, the author needs to lead with the court's February 26th denial as the definitive anchor of the argument. (17:18) Move it to the very first paragraph and reframe the plaintiff's actions, not just as shifting math, but as an impermissible collateral attack on a finalized order.
-> (17:29) Set the tone immediately. (17:31) Second, consolidate the repetitive timeline scattered across the document into a single bulleted chronological section. (17:37) While doing that, completely drop the minor administrative distractions like the three cent discrepancy and keep the judge focused entirely on the massive missing documentation and the large scale financial delta.
-> (17:47) Don't complain about the smudge when the house is on fire. (17:50) Exactly. Third, when it comes to the motion for sanctions, move away from generalized complaints about multiplying proceedings.
-> (17:57) Visually weaponize the plaintiff's direct quotes side by side to definitively prove undeniable bad faith. (18:03) Make the contradiction impossible for the judge to ignore. (18:06) Use their own words against them.
-> (18:08) And finally, offer the judge a clear, safe procedural off ramp instead of demanding a rigid cancellation of the hearing condition. (18:17) Any future hearings on the actual production of a sworn itemized accounting give the judge the power to say not yet instead of never. (18:25) It's a much easier ruling for them to make.
+> well you dont need the transcripts, you have the raw text in the project files you know what the amounts are i was just reading them in the transcript. Blocking an Improper Sheriff s Sale Surplus Hearing
+
+> Mar 8, 2026, 7:21 AM
+
+> Blocking an Improper Sheriff s Sale Surplus Hearing
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 18:34
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) This critique examines a draft legal objection submitted by a pro se defendant aiming to deny a plaintiff's request for a hearing regarding a disputed (0:08) sheriff's sale accounting and surplus. (0:10) Anchoring the objection directly to the court's prior rulings rather than the plaintiff shifting narrative will maximize the legal impact. (0:17) Yeah, that is really the core of our first major area for improvement here.
+
+> Because when you look at the current draft, (0:24) right, the primary weakness is just how the document allocates its real estate right out of the gate. (0:30) Right now it spends a massive amount of its opening bandwidth detailing the plaintiff's behavioral inconsistencies. (0:35) Yes, the whole changing worksheets thing.
+
+> (0:38) Exactly. It walks the reader through all these shifting worksheets, (0:42) the opposing counsel's accounting struggles, all of the back-and-forth emails. And while those struggles are certainly, you know, frustrating for the defendant, (0:50) dedicating the prime opening paragraphs to them completely buries the most powerful legal weapons the author actually possesses.
+
+> (0:57) I mean, I can definitely see why a pro se litigant, someone representing themselves, would want to do that, right? (1:03) Oh, absolutely. It's a natural instinct. Because they want to tell the whole story.
+
+> (1:06) They want the judge to see the injustice of it all and they think (1:10) showing the opposing side acting shady right up front sets the stage. Like doesn't it prove to the judge that the plaintiff can't be trusted? (1:17) It's a natural instinct, but strictly speaking, it's a strategic misstep. (1:21) Okay, why is that? Because the judge isn't reading this to referee a dispute over who sent what worksheet on what day.
+
+> (1:28) The judge is primarily concerned with what has already been formally ruled upon on the docket. Right, the official record. (1:34) Exactly.
+
+> By focusing heavily on those behavioral shifts, the document delays the presentation of the irrefutable docket facts. (1:42) Specifically, it buries the plaintiff's formal judicial admission of an $8,378 surplus on February 20th. (1:49) Which is a huge detail to bury.
+
+> (1:52) Huge. And it also buries the court's February 26th denial of the plaintiff's attempt to retroactively change the bid. (1:59) So the suggestion here is to completely reframe the core argument.
+
+> (2:02) Instead of framing this as a grievance about shifting math, the document needs to focus on how the plaintiff's request for a new hearing is essentially an improper collateral attack on the court's February 26th order. (2:13) A collateral attack, meaning they are basically trying to use this new hearing request to sneak around the back door of a ruling the judge has already finalized. (2:24) Precisely.
+
+> The judge already said no to changing the bid. (2:27) Asking for a hearing to clarify the record is really just an attempt to relitigate a closed issue. (2:33) We want to lead with those unalterable docket facts because judges furiously protect their own prior rulings.
+
+> (2:39) Yeah, they really do. (2:41) Okay, so what I really like about this is how we can flip the script from defense to offense. (2:46) Let's talk about exactly how the author can implement this shift practically.
+
+> (2:51) Sure. (2:51) If I were revising this, the very first physical step would be to move the fact that the court already denied that retroactive request, the nunk-pro-tunk motion, to the very first paragraph of the objection. (3:04) Yes, don't make the judge hunt for the most critical piece of procedural history.
+
+> (3:07) Right. You want to hit them with the procedural reality immediately. (3:12) Building on that point, what if we looked at it from the perspective of formatting? (3:16) The author should retitle Section 1 to something highly declarative.
+
+> (3:20) Right now, the section headers are a bit passive. (3:22) Like, the issue before the court has already been resolved. (3:26) Yeah, that's okay.
+
+> (3:28) But it lacks punch. (3:29) Change it to something undeniable, such as the plaintiff's request is an impermissible collateral attack on the court's February 26 order. (3:37) That instantly signals to the judge that entertaining this hearing request actually undermines their own authority.
+
+> (3:45) It changes the context of the entire document before the judge even reads the first sentence of the section. (3:51) Exactly. And to really drive it home, the text must explicitly state that because the court already denied the modification of the $240,000 credit bid, the mathematical reality of that $8,000 surplus is the unalterable law of the case.
+
+> (4:09) Because they judicially admitted to it. (4:10) Yes. The author should argue that because the plaintiff admitted to this exact surplus amount on February 20th, that figure stands unless it is challenged through a proper motion to reconsider or an appeal.
+
+> (4:23) Make it crystal clear that this settled reality cannot be casually undone via a vague request for a hearing. (4:29) It transforms the document into a procedural blockade. (4:34) By anchoring everything to the February 26th denial, the author is telling the judge that the work is already done and the door is already closed.
+
+> (4:44) Right. Consolidating the chronological narrative will eliminate redundancy and prevent minor administrative discrepancies from overshadowing the primary mathematical errors. (4:55) Yeah, the weakness in the current structure is really highly visible when you read sections 1, 2, 3 and 6. (5:01) It reads like a repetitive loop.
+
+> (5:02) It really does. Currently, these sections repeat the exact same sequence of events. (5:08) They all cycle through the initial denial of the surplus, the subsequent admission of the surplus and finally the denied motion to change the bid.
+
+> (5:15) The author clearly wants to make sure the judge understands how many times the plaintiff has changed their story. (5:21) So they just keep circling back to the timeline. (5:24) But by repeating this sequence in four different sections, it dilutes the argument's punch.
+
+> (5:29) It makes the document feel circular rather than linear and progressive. (5:32) And a busy judge scanning this might just start skipping paragraphs because they feel like they've already read this information. (5:39) Exactly.
+
+> They check out. (5:41) That's clearly laid out. (5:42) I wonder, though, if we've considered how distracting minor details can be when placed next to major ones.
+
+> (5:48) Look at Section 4 of the draft. (5:49) The internal inconsistency section. (5:52) Right.
+
+> This section currently focuses heavily on a three cent discrepancy. (5:57) It points out the difference between a worksheet total ending in 17 cents versus the actual reported bid ending in 20 cents. (6:04) But wait, if we cut out the argument about the three cent discrepancy, don't we lose an opportunity to show the judge exactly how sloppy opposing counsel is being? (6:13) Doesn't every little error help build the case that their accounting is a mess? (6:17) In a vacuum, maybe.
+
+> (6:19) But you have to think about the cognitive load on the judge and the scale of the errors. (6:24) Pointing out a three cent error when the plaintiff is attempting to retroactively justify a massive $10,000 interest inflation is like complaining about a smudge on the window when the house is on fire. (6:35) That is a great analogy.
+
+> (6:36) You are drawing the judge's eyes away from the actual disaster. (6:40) A judge views a three cent error as an administrative typo. (6:44) They view a $10,000 undocumented interest charge as a substantive, potentially fatal flaw.
+
+> (6:49) So the suggestion here is to aggressively streamline the document to maintain absolute, unwavering focus on the major financial discrepancies. (6:59) Yes. The material makes a strong case for the existence of this surplus, but I completely agree that the three cents is a distraction.
+
+> (7:06) Let's discuss how the author can practically restructure this to fix both the repetitive timeline and the distraction of the minor typos. (7:13) OK. The first thing I would do is combine sections 1, 2, 3, and 6 into a single bulleted section titled Procedural Fact Pattern.
+
+> (7:22) That's smart. (7:23) This section should concisely list the events in strict chronological order without any narrative repetitive loops. (7:29) So it should read cleanly, almost like a timeline on a whiteboard.
+
+> (7:33) Let's hear the bullets. (7:33) Bullet 1, the February 16th email, denying the surplus. (7:37) Bullet 2, the February 20th petition admitting the $8,000 surplus.
+
+> (7:41) Bullet 3, the February 24th motion attempting to erase that surplus by changing the bid. (7:48) And bullet 4, the February 26th order unequivocally denying that attempt. (7:53) Yes.
+
+> By bulleting that timeline, the judge can absorb the erratic behavior in about 15 seconds rather than reading it woven through four different pages of text. (8:03) It respects the judge's time while delivering the maximum impact. (8:06) And regarding that section 4 issue with the three cents, the author must completely cut it and replace it with a laser focus on the missing documentation.
+
+> (8:15) Right. Instead of pointing out a math typo, point out the gaping hole in their evidence. (8:20) The author needs to replace the three cent argument with a robust section detailing the plaintiff's failure to produce a sworn payoff ledger.
+
+> (8:28) Exactly. (8:29) Highlight that the plaintiff has entirely failed to reconcile the alleged $10,000 interest charge with the court ordered $27 per diem rate between the judgment and the sale date. (8:39) By swapping out a three cent complaint for a $10,000 complaint, the scale of the plaintiff's error becomes the undeniable center of gravity.
+
+> (8:47) It shifts the narrative from they are bad at addition to they are withholding legally required evidence. (8:53) Which is a much more serious accusation in the eyes of the court. (8:56) Absolutely.
+
+> (8:56) And speaking of serious accusations, that brings us to the final pages of the document, specifically the motion for sanctions. (9:03) Tying the motion for sanctions directly to documented contradictory representations on the record will transform the sanctions request from a standard grievance into a compelling legal demand. (9:15) Let's dig into that because the weakness in the draft as it stands is that it requests trial rule 11 sanctions in a highly generalized manner.
+
+> (9:23) Right. It relies on boilerplate. (9:25) It references the plaintiff's repeatedly altered accounting and claims they are causing an unnecessary multiplication of proceedings.
+
+> (9:33) Now, I see this all the time. (9:34) The argument here is that the opposing side is making things overly complicated and dragging the process out so they should be sanctioned. (9:41) Yeah.
+
+> But while those statements might be technically true, they sound like standard boilerplate complaints. (9:47) Every lawyer and pro se litigant who is annoyed with the other side throws in a line about multiplying proceedings. (9:53) That makes sense.
+
+> (9:54) But could the evidence support a stronger conclusion if we present it sharply? (9:59) Definitely. (10:00) Judges see generalized requests for sanctions every single day on their docket because it's so common they usually ignore them unless the bad faith absolutely jumps off the page. (10:11) So how do we make a jump? (10:13) The suggestion to fix this is to literally weaponize the plaintiff's own correspondence and filings against them.
+
+> (10:20) The author must place the plaintiff's contradictory statements side by side in the text of the objection, explicitly demonstrating to the court that the plaintiff knowingly presented unsupported and contradictory figures. (10:32) Is it really necessary to format it that aggressively, though? (10:35) Doesn't the bulleted timeline we just built already show the contradiction? (10:39) The timeline shows the sequence of events, but you cannot rely on the judge to cross-reference an email mentioned on page two with a petition filed on page five and piece together the intent. (10:52) You have to do the work for them.
+
+> (10:54) Connect the dots. (10:54) Exactly. Instead of just telling the judge that the plaintiff changed their mind, you want to show the judge the exact written contradictions right next to each other.
+
+> (11:04) So the bad faith is undeniable. (11:06) Visually highlighting the whiplash. (11:09) Let's look at exactly how to execute this.
+
+> (11:11) If I were drafting the sanction section, I would pull direct quotes and block them out in the text. (11:17) Good. (11:17) I would explicitly quote the February 16th email from the plaintiff's counsel, where they definitively state there was no surplus from the sheriff's sale.
+
+> (11:26) Then immediately in the next sentence, or even in a side-by-side table format, contrast that quote with their February 20th formal petition, where they officially acknowledge an $8,000 surplus. (11:39) That's the exact way to do it. (11:41) Putting those two statements physically next to each other takes the burden off the judge to remember the timeline and forces them to confront the contradiction.
+
+> (11:49) It's right in their face. (11:51) And it's not just about showing that they changed their minds. (11:53) It's about how to frame the rule violation itself.
+
+> (11:56) Right, because it's not illegal to realize you made a mistake and fix it. (12:00) The sanctionable conduct is what happens after the judge rules. (12:04) Exactly.
+
+> (12:05) The author should argue that filing a request for hearing to clarify record, to argue for a zero surplus, especially when filed just days after their own judicial admission of a surplus, and the court's formal denial of their attempt to change the bid, constitutes a frivolous filing under Trial Rule 11. (12:23) You have to connect the specific chronological absurdity of asking for a zero surplus hearing after a judge just told you that you can't erase the surplus. (12:33) Right.
+
+> (12:33) You show how this exact sequence justifies an award of sanctions rather than just relying on those generalized claims of multiplied proceedings. (12:41) It elevates the sanctions request from a complaint about an annoyance to a documented proof of bad faith. (12:47) It forces the judge to recognize that the plaintiff isn't just wasting the defendant's time.
+
+> (12:52) They are wasting the court's time by refusing to accept a ruling. (12:56) I love how that sharpens the spear. (12:58) It takes the emotion out of it and relies entirely on the opponent's own ink.
+
+> (13:03) It's highly effective. (13:04) Which sets us up perfectly for the end of the document. (13:07) We've anchored the argument, streamlined the timeline, and weaponized the sanctions request.
+
+> (13:12) Now we have to stick the landing with the conclusion and the final prayer for relief. (13:17) Conditioning any future hearings upon the prior production of a sworn itemized accounting will provide the court with a clear, highly reasonable procedural off-ramp. (13:26) OK, let's unpack that off-ramp concept.
+
+> (13:28) The weakness of the draft's conclusion right now is its rigidity. (13:32) While the draft successfully points out that the plaintiff completely failed to produce supporting documentation, it merely asked the court to deny or vacate the hearing outright. (13:40) But if they've messed up this badly and they are acting in bad faith, shouldn't the defendant just demand the hearing be canceled entirely? (13:49) Why is demanding a hard stop considered a weakness here? (13:53) Is the connection between denying the hearing and moving the case forward fully established in the material? (13:59) Or is that an area to potentially bolster? (14:02) I think it's an area to bolster.
+
+> (14:04) Definitely. Because you have to consider the judge's mindset regarding due process. (14:08) Judges are inherently paranoid about denying someone due process.
+
+> (14:12) Nobody wants to be overturned on appeal. (14:14) Precisely. Even if the plaintiff's accounting is a complete mess, the judge knows that the ultimate disbursement of these funds has to be resolved eventually.
+
+> (14:23) A flat denial to ever hold a hearing might feel too restrictive to a judge who doesn't want to get overturned for shutting a party out of the courtroom. (14:30) So a rigid deny puts the judge in an uncomfortable position. (14:34) Very uncomfortable.
+
+> (14:35) The judge might agree the plaintiff is being sloppy, but still feel legally obligated to grant a hearing just to get everything on the record and sort it out once and for all. (14:45) Exactly. If you give a judge a binary choice between cancel the hearing and hold the hearing and they feel even a slight due process obligation, they will default to holding the hearing.
+
+> (14:54) Just to be safe. (14:55) Right. The suggestion here is to pivot the conclusion from a pure denial request to a conditional demand.
+
+> (15:02) The author should ask the court to strike the hearing unless and until the plaintiff produces the legally required evidentiary foundation. (15:09) That is a brilliant psychological shift. (15:11) It shifts the burden entirely.
+
+> (15:13) Instead of the defendant trying to slam the door shut on the hearing, the defendant is telling the court that the plaintiff simply hasn't earned the right to walk through the door yet. (15:22) It's not a no. (15:24) It's a not until you do your homework.
+
+> (15:26) Right. Let's provide some ways to draft this conditional off ramp effectively. (15:30) OK.
+
+> (15:31) First, in the prayer for relief at the very end of the document, change the primary demand instead of just asking to strike the hearing explicitly requesting or compelling the plaintiff to produce a sworn payoff ledger first. (15:44) Be specific about what is missing. (15:47) Demand an itemization of the eight thousand eight hundred dollars in additional costs and demand the precise per diem interest calculations from April to August.
+
+> (15:56) Yes. By listing the exact missing documents, the author proves to the judge that holding a hearing right now would be a complete waste of judicial resources. (16:06) Because the foundational evidence doesn't even exist yet.
+
+> (16:08) Exactly. And the final piece of the puzzle is to explicitly specify the condition. (16:14) The author must state that the request for hearing should be stricken or stayed until this sworn documentation is provided to both the defendant and the court.
+
+> (16:22) It gives the judge a very reasonable evidence based reason to cancel the currently requested hearing without appearing to deny the plaintiff due process. (16:31) Right. It allows the judge to say, I am not denying you a hearing forever.
+
+> (16:35) I am denying it today because you haven't provided the necessary paperwork for us to actually have a productive conversation. (16:42) It's a highly effective way to win the motion while appearing entirely reasonable, cooperative and logical to the bench. (16:49) You come across as the adult in the room who just wants the proper procedure followed while positioning the plaintiff as the one trying to rush a hearing without the facts.
+
+> (16:59) It's all about framing. Let's take a step back and summarize our review of this draft objection. (17:04) The core recommendations we've discussed today are designed to shift this document from a defensive, reactive narrative into a sharp procedural offense.
+
+> (17:12) Right. First, the author needs to lead with the court's February 26th denial as the definitive anchor of the argument. (17:18) Move it to the very first paragraph and reframe the plaintiff's actions, not just as shifting math, but as an impermissible collateral attack on a finalized order.
+
+> (17:29) Set the tone immediately. (17:31) Second, consolidate the repetitive timeline scattered across the document into a single bulleted chronological section. (17:37) While doing that, completely drop the minor administrative distractions like the three cent discrepancy and keep the judge focused entirely on the massive missing documentation and the large scale financial delta.
+
+> (17:47) Don't complain about the smudge when the house is on fire. (17:50) Exactly. Third, when it comes to the motion for sanctions, move away from generalized complaints about multiplying proceedings.
+
+> (17:57) Visually weaponize the plaintiff's direct quotes side by side to definitively prove undeniable bad faith. (18:03) Make the contradiction impossible for the judge to ignore. (18:06) Use their own words against them.
+
+> (18:08) And finally, offer the judge a clear, safe procedural off ramp instead of demanding a rigid cancellation of the hearing condition. (18:17) Any future hearings on the actual production of a sworn itemized accounting give the judge the power to say not yet instead of never. (18:25) It's a much easier ruling for them to make.
+
 > (18:27) We invite the listener to implement these structural and strategic edits and submit the revised objection back to us for another critique.
 
 ### Assistant
@@ -4171,16 +4883,26 @@ canonical_ref: ""
 > If you want, I’ll turn your current canvas draft into the **harder version** based on this exact framing.
 
 ### User
-> i updated the scenario table to add this new one, that is conventienly not addressign the other attorneys fees, publication costs nor the other 9k of charges they never addressed if any of that was strue then i might owe them money but they have negleted to respond with any ligetiment and approproaiate financial documentation consistent with a bank of this size and stature and their posture during these proceeding as the authroty. Scenario	1-Verifiable	2-Taxes	2-Taxes+Attorney	3-Taxes Attorney and Sheriff	3-Banks	Mar-Bank	Diff Average
-> Balance Due	$213,252.63	$213,252.63	$213,252.63	$213,252.63	$220,636.08	$220,863.09	$5,861.36
-> Interest	$7,384.05	$7,384.05	$7,384.05	$7,384.05	$10,725.27	$823.50	$4,653.33
-> Taxes	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$0.00
-> Attorney	$3,000.00	$3,000.00	$4,275.00	$4,275.00	$1,275.00	$0.00	-$1,635.00
-> Sherriff	$338.00	$300.00	$300.00	$338.00	$338.00	$0.00	$82.80
-> Publication	$0.00	$0.00	$0.00	$0.00	$1,094.35	$0.00	$1,094.35
-> Clerk	$35.00	$35.00	$35.00	$35.00	$35.00	$0.00	$7.00
-> Court	$185.00	$185.00	$185.00	$185.00	$284.28	$284.28	$79.42
-> Other	$0.00	$0.00	$0.00	$0.00	$191.01	$191.01	$152.81
+> i updated the scenario table to add this new one, that is conventienly not addressign the other attorneys fees, publication costs nor the other 9k of charges they never addressed if any of that was strue then i might owe them money but they have negleted to respond with any ligetiment and approproaiate financial documentation consistent with a bank of this size and stature and their posture during these proceeding as the authroty. Scenario	1-Verifiable	2-Taxes	2-Taxes+Attorney	3-Taxes Attorney and Sheriff	3-Banks	Mar-Bank	Diff Average
+
+> Balance Due	$213,252.63	$213,252.63	$213,252.63	$213,252.63	$220,636.08	$220,863.09	$5,861.36
+
+> Interest	$7,384.05	$7,384.05	$7,384.05	$7,384.05	$10,725.27	$823.50	$4,653.33
+
+> Taxes	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$0.00
+
+> Attorney	$3,000.00	$3,000.00	$4,275.00	$4,275.00	$1,275.00	$0.00	-$1,635.00
+
+> Sherriff	$338.00	$300.00	$300.00	$338.00	$338.00	$0.00	$82.80
+
+> Publication	$0.00	$0.00	$0.00	$0.00	$1,094.35	$0.00	$1,094.35
+
+> Clerk	$35.00	$35.00	$35.00	$35.00	$35.00	$0.00	$7.00
+
+> Court	$185.00	$185.00	$185.00	$185.00	$284.28	$284.28	$79.42
+
+> Other	$0.00	$0.00	$0.00	$0.00	$191.01	$191.01	$152.81
+
 > 	$231,795.49	$231,757.49	$231,757.49	$233,070.49	$242,179.80	$229,762.69	$10,296.07
 
 ### Assistant
@@ -4554,17 +5276,28 @@ canonical_ref: ""
 > If you want, I can also show you something that could **dramatically increase the leverage of that 66 number** if the dispute notices were structured a certain way. It’s a trick consumer attorneys use when building FCRA cases.
 
 ### User
-> Scenario	1-Verifiable	2-Taxes	2-Taxes+Attorney	3-Taxes Attorney and Sheriff	3-Banks	Mar-Bank	Diff Average
-> Balance Due	$213,252.63	$213,252.63	$213,252.63	$213,252.63	$220,636.08	$220,863.09	$5,861.36
-> Interest	$7,384.05	$7,384.05	$7,384.05	$7,384.05	$10,725.27	$823.50	$4,653.33
-> Taxes	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$0.00
-> Attorney	$3,000.00	$3,000.00	$4,275.00	$4,275.00	$1,275.00	$0.00	-$1,635.00
-> Sherriff	$338.00	$300.00	$300.00	$338.00	$338.00	$0.00	$82.80
-> Publication	$0.00	$0.00	$0.00	$0.00	$1,094.35	$0.00	$1,094.35
-> Clerk	$35.00	$35.00	$35.00	$35.00	$35.00	$0.00	$7.00
-> Court	$185.00	$185.00	$185.00	$185.00	$284.28	$284.28	$79.42
-> Other	$0.00	$0.00	$0.00	$0.00	$191.01	$191.01	$152.81
-> 	$231,795.49	$231,757.49	$231,757.49	$233,070.49	$242,179.80	$229,762.69	$10,296.07
+> Scenario	1-Verifiable	2-Taxes	2-Taxes+Attorney	3-Taxes Attorney and Sheriff	3-Banks	Mar-Bank	Diff Average
+
+> Balance Due	$213,252.63	$213,252.63	$213,252.63	$213,252.63	$220,636.08	$220,863.09	$5,861.36
+
+> Interest	$7,384.05	$7,384.05	$7,384.05	$7,384.05	$10,725.27	$823.50	$4,653.33
+
+> Taxes	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$7,600.81	$0.00
+
+> Attorney	$3,000.00	$3,000.00	$4,275.00	$4,275.00	$1,275.00	$0.00	-$1,635.00
+
+> Sherriff	$338.00	$300.00	$300.00	$338.00	$338.00	$0.00	$82.80
+
+> Publication	$0.00	$0.00	$0.00	$0.00	$1,094.35	$0.00	$1,094.35
+
+> Clerk	$35.00	$35.00	$35.00	$35.00	$35.00	$0.00	$7.00
+
+> Court	$185.00	$185.00	$185.00	$185.00	$284.28	$284.28	$79.42
+
+> Other	$0.00	$0.00	$0.00	$0.00	$191.01	$191.01	$152.81
+
+> 	$231,795.49	$231,757.49	$231,757.49	$233,070.49	$242,179.80	$229,762.69	$10,296.07
+
 > Surplus Calc	$8,668.71	$8,706.71	$8,706.71	$7,393.71	-$1,715.60	$10,701.51	$7,076.96
 
 ### Assistant
@@ -6441,80 +7174,154 @@ canonical_ref: ""
 > If you want, I can also show you something **extremely interesting about their nunc pro tunc motion** that banks almost always mess up procedurally — and if they did here, it quietly strengthens your position even more.
 
 ### User
-> Let me appropriate this thing. are their alleged clerical error. That is my position that it's not clerical, it's strategic. But yet, they, while at the same time having for over, I don't know if you wanna say months, years, at least months since they've been notified, erroneous information on my credit report, preventing me from getting housing. Maybe that'll help with the sanctions or the erasure, because I want it erased.Win foreclosure surplus and fix credit tradelines
-> Mar 8, 2026, 10:39 AM
-> Win foreclosure surplus and fix credit tradelines
-> Play
-> 
-> 
-> 00:00
-> 15:00
-> Mute
-> 
-> Settings
-> (0:00) This critique examines a pro se defendant's formal objection and motion for sanctions (0:06) against a credit union's request for a post-foreclosure hearing (0:09) focusing on accounting discrepancies and surplus funds. (0:14) Right. (0:14) We want to establish right up front that the submitted draft is exceptionally strong, (0:20) professional, and firm but has a few key structural opportunities to maximize its impact in court.
-> (0:26) Yeah, let's dive into those. (0:28) A critical objective identified in the initial strategy addressing the (0:32) inaccurate credit reporting trade lines is entirely absent from the body of this draft. (0:37) It really is, and it's a fascinating omission when you consider the (0:41) upfront strategy notes that came with the submission.
-> (0:44) Right, those notes were very clear. (0:46) Exactly. They explicitly state that the goal here is to request the correction (0:50) or deletion of those inaccurate trade lines.
-> (0:53) Which is a huge deal. (0:54) Oh, it's everything. (0:56) Just to ground this in the real world for a second, (0:59) a trade line is simply the actual account entry sitting on this person's Equifax, (1:04) Experian, or TransUnion credit report.
-> (1:07) The data point telling everyone else if they're reliable. (1:10) Precisely. It's their financial reputation.
-> (1:14) But then, when you actually read sections I, II, and III of the current text provided, (1:20) those sections focus purely on blocking the hearing and exposing the credit union's accounting flaws. (1:27) The material makes a very strong case for the opponent's lack of accounting integrity, though. (1:31) Oh, it does.
-> (1:32) It highlights their inability to produce basic loan records. (1:35) It lists out the missing documents perfectly. (1:38) You know, the loan servicing payoff ledger, (1:41) the itemized documentation, the revised interest calculations.
-> (1:44) Right, the setup is flawless. (1:46) But it completely drops the ball on the credit reporting aspect. (1:50) By omitting that, the draft fails to leverage the opponent's massive (1:54) accounting failures to secure relief from the ongoing credit harm.
-> (1:58) Exactly. It leaves a massive piece of the strategy unexecuted. (2:02) Think about what's actually happening in this text.
-> (2:04) The heavy lifting, you mean? (2:06) Yeah. The author is doing all this incredible heavy lifting to expose the fact that the (2:11) plaintiff, a sophisticated financial institution, does not have a verified ledger. (2:15) They can't prove their math to a judge.
-> (2:18) Right. But the author isn't cashing in a procedural victory to solve the real-world harm. (2:23) I mean, winning a motion to deny a hearing is great for the docket, sure.
-> (2:26) But if your credit score is still being unlawfully tanked every single month... (2:30) By a bank that can't even balance its own books, you haven't really won the war, have you? (2:35) No, you definitely haven't. So how do we fix it? (2:38) We need to build a bridge between the courtroom victory and the credit report victory. (2:43) The suggestion here is to integrate a distinct section, (2:47) or expand the prayer for relief, to explicitly tie the opponent's shifting, (2:52) unverified accounting to the impossibility of accurate credit reporting.
-> (2:56) Okay. Walk me through that argument. (2:58) The argument should be that if the plaintiff cannot produce a stable, (3:03) verified ledger for the court, which this draft already beautifully proves they cannot, (3:08) they inherently cannot legally meet the standard for furnishing accurate data to credit bureaus.
-> (3:13) Oh, that is a highly effective way to use the existing factual groundwork. (3:18) You just use their procedural failing inside the courtroom as the (3:21) indisputable proof of their compliance failing outside the courtroom. (3:25) Right.
-> And to give some concrete examples, (3:28) keeping in mind that these are just a few out of many possible ways to solve the problem... (3:33) Sure. (3:33) You could add a brief section IV. You might title it something like, (3:37) Plaintiff's Inability to Verify Balances Renders Continued Credit Reporting Unlawful.
-> (3:43) I like that. It gives the trade line issue its own structural weight. (3:46) And it forces the judge to look at it without needing pages of new, dense exposition.
-> (3:51) True. But let me play devil's advocate for a second. (3:54) Go ahead.
-> (3:55) Is there a risk that focusing heavily on credit reporting in a state foreclosure docket (4:00) might backfire? Judges are protective of their dockets. It could sound like the defendant is (4:05) trying to launch a massive Federal Fair Credit Reporting Act lawsuit right in the (4:09) middle of a straightforward motion to deny hearing. (4:11) That's a valid point.
-> And that is exactly why the execution has to be surgically precise. (4:18) Right. (4:18) You aren't litigating a massive federal case.
-> You're just asking for equitable relief based (4:23) on the facts already in front of the judge. So another concrete route you could take, (4:27) again, just one option among many, is to skip the new section entirely. (4:32) And just put it in the prayer for relief? (4:34) Exactly.
-> Explicitly request an order compelling the plaintiff to suppress (4:38) or delete the derogatory trade lines until a reliable, sworn accounting is produced. (4:43) Oh, I love that approach. You don't need to argue federal credit law.
-> You just (4:47) connect the dots for the judge. (4:49) It keeps the focus entirely on the opponent's failure to verify their own numbers. (4:53) If they don't know the numbers, they can't report the numbers.
-> (4:55) It perfectly maintains that professional but firm tone they've established throughout the draft, too. (5:00) And what I really like about this part is that it achieves the trade line goal (5:04) without needing to expose any of the listeners' internal spreadsheets or reconciliation analyses. (5:09) Which was critical.
-> The strategy notes explicitly said (5:13) they didn't include those because they didn't want to show their hand. (5:16) Brilliant restraint. By structuring the demand this way, you keep your cards close to your chest, (5:21) you force the burden of proof back onto the credit union, (5:24) and you still demand the real-world relief.
-> (5:26) That is a huge win. Let's shift gears, though, from the credit bureaus to the courtroom itself. (5:32) Specifically, how this draft handles penalizing the opposing counsel.
-> (5:36) The demand for Trial Rule 11 sanctions is introduced in the opening paragraph, (5:41) but lacks a dedicated structural pillar in the body of the motion (5:44) to establish the necessary legal foundation. (5:46) This is such a common structural disconnect, especially in pro se filings, (5:51) where people are representing themselves. The weakness here is entirely about posture.
-> (5:56) Right, because the introduction clearly and boldly asks the court to impose sanctions (6:00) under Indiana Trial Rule 11. And just for context, that's the rule (6:04) allowing a judge to financially penalize a lawyer or a party for filing frivolous, (6:09) bad faith, or deliberately misleading documents. (6:11) But then when you read the subsequent sections, (6:14) they read primarily as a defensive argument against holding another hearing.
-> (6:18) Exactly. To win sanctions, a party generally must demonstrate that the opponent's filings (6:23) were deliberate manipulation of the record or recklessly frivolous. (6:28) Pointing out material inconsistencies in Section 3 is good.
-> (6:31) But it doesn't quite bridge the gap to proving sanctionable conduct. (6:35) No. It leaves the judge without a clear roadmap to grant the Rule 11 request.
-> (6:40) You've told the judge you want sanctions at the beginning, but by the end, (6:44) you haven't given them the affirmative, structured argument they need. (6:48) Let's look closely at that section discussing the material inconsistencies. (6:52) The draft points out that the bank's worksheet included $10,725.27 in interest.
-> (6:59) Right. (6:59) And then later they magically asserted that the correct interest figure was $823.50. (7:04) That is a massive discrepancy. But the text just presents it as an inconsistency.
-> (7:11) Just saying they made a math mistake isn't enough, because judges see bad math all day long. (7:16) Being bad at math isn't typically sanctionable. (7:19) No.
-> But being recklessly negligent in a way that drains judicial resources absolutely is. (7:25) So a key theme here seems to be elevating the (7:28) framing from a defensive posture to an offensive one. (7:32) Precisely.
-> The suggestion is to deliberately escalate the narrative in the final body (7:36) paragraphs. Transform that material inconsistency section into an affirmative (7:41) case for why the plaintiff's behavior crosses the line into sanctionable territory. (7:46) Frame the shifting numbers not just as mathematical errors.
-> (7:49) Right. But as a deliberate, bad-faith drain on the court's time. (7:53) It isn't just that they are wrong.
-> It's that they are repeatedly, (7:56) recklessly wrong in a way that forces everyone to waste time. (7:59) Let's explore some specific ways to implement this, (8:03) noting again that these are just a few options. (8:05) One concrete approach is simply retitling Section 3. (8:08) To something more forceful.
-> (8:09) Yes. Instead of the passive plaintiff's accounting contains material inconsistencies, (8:15) you could use plaintiff's shifting explanations and unverified filings warrant Rule 11 sanctions. (8:21) I like that.
-> That structural signposting immediately signals to the judge that (8:26) this section is the substantive anchor for the demand made in the intro. (8:30) Right. But does just changing the title do the heavy lifting? (8:33) Focusing solely on the broad concept of shifting explanations (8:36) might overlook the specific evidence in those bullet points.
-> (8:40) That leads right into another tactical option for the body text itself. (8:44) You have to specifically frame that massive interest flip (8:47) from nearly $11,000 down to $800. Don't just present it as an inconsistency.
-> (8:53) It's way more than an inconsistency. (8:55) When a sophisticated financial institution drops an interest claim by nearly $10,000 (9:00) only after being formally challenged by a pro se defendant, that isn't a typo. (9:05) No.
-> It's incredibly reckless. (9:07) It's like hiring a contractor who quotes you $20,000 for a bathroom remodel. (9:12) And when you ask for the lumber receipts, they say, (9:14) oh, actually, the materials are $2,000.
-> (9:17) Exactly. You frame it as hard evidence that the plaintiff is filing (9:20) unverified, legally unsupported numbers with the court. (9:24) It's a reckless filing practice demanding judicial intervention.
-> (9:28) And to really tie a bow on that rule 11 argument, you should explicitly state (9:33) that forcing the defendant to repeatedly object to these moving target accounting theories (9:38) constitutes an unnecessary multiplication of proceedings. (9:41) Unnecessary multiplication of proceedings. That is the magic language.
-> (9:45) It absolutely is. It shifts the focus from the bad math to the bad behavior. (9:51) By restructuring the body to support the intro and using that language, (9:56) you give the judge the exact legal justification they need to grant the financial relief.
-> (10:02) Which transitions us perfectly to the final major issue. (10:05) The current structure leaves the crucial demand to force the acknowledged surplus to the clerk (10:10) buried in the introductory block rather than positioned as an actionable immediate remedy. (10:15) And that brings us to the ultimate prize.
-> (10:17) Beyond stopping a hearing, beyond getting sanctions, there is actual cash on the table. (10:24) The surplus funds. (10:25) Right.
-> One of the primary goals here is to force that $8,378.42 surplus to the clerk. (10:34) The relevant Indiana Code sections are accurately cited right at the top of the document. (10:39) Yes, sections 32-29-79 and 32-29-7-10.
-> But the weakness is that the body of the text (10:48) becomes so heavily focused on why the hearing shouldn't happen that it entirely forgets to (10:53) build the affirmative argument for why the funds must be deposited immediately. (10:57) The draft just ends abruptly on those inconsistencies we just talked about. (11:01) Exactly.
-> It loses the momentum needed to prompt the judge to sign an order moving the money. (11:07) It's like successfully arguing why your opponent shouldn't be allowed to speak again (11:11) but forgetting to ask the judge for your prize. (11:14) The judge might just agree with you, cancel the hearing, and move on to their next case.
-> (11:18) Leaving the money sitting in limbo with the credit union. (11:21) We have to transition the document's energy at the very end to ensure that prize is awarded. (11:26) So the suggestion here is to pivot the momentum at the end of the document from a defensive (11:32) posture, deny the hearing, into an offensive posture, order the deposit now.
-> (11:37) Right. (11:37) And the perfect fulcrum for this pivot is the fact that the court (11:40) already denied the plaintiff's nunk-pro-tunk attempt. (11:44) Let's quickly define that for anyone listening.
-> (11:46) Nunk-pro-tunk translates to now for then. (11:49) It's a mechanism used to retroactively correct a clerical error in the court record. (11:54) And the bank tried to use that to retroactively change their sheriff's sale bid.
-> (11:58) Claiming their initial interest figure was just a clerical error. (12:02) But as the draft brilliantly points out, (12:04) the court already looked at that and said, no, the request was denied. (12:08) So you use that denial as your sword.
-> (12:11) You use it as the ultimate justification that the surplus amount is legally locked in, (12:15) and therefore the funds must be distributed according to statute. (12:19) The math is done, the court has ruled on the corrections, and the money must move. (12:25) Let's talk about how to actually write that ending.
-> (12:28) Remembering again that these are simply a few ways to implement the fix. (12:33) You could add a concluding substantive section stating that (12:36) because the nunk-pro-tunk request was denied, (12:39) and the plaintiff previously admitted on the record to an $8,378.42 surplus, (12:46) there's absolutely no legal basis left to withhold the funds. (12:50) There's nothing left to debate.
-> (12:52) Exactly. (12:53) I would actually take it a step further to make it hyper-actionable for the judge. (12:56) How so? (12:58) Draft a standalone paragraph at the very end demanding that, in lieu of a hearing, (13:04) the court simply enforce the statutory mechanism (13:06) of depositing the funds with the clerk within a specific rigid time frame.
-> (13:10) Like 14 days? (13:12) Yes. Don't leave it open-ended. (13:15) Tell the court exactly what operational step needs to happen next.
-> (13:19) If you just say deny the hearing, the case sits there. (13:22) The judge checks a box, and nothing happens in the real world. (13:25) But if you say deny the hearing and order the deposit in 14 days… (13:30) You've created an actionable, definitive path forward (13:33) for the judge to clear this case entirely off their docket.
-> (13:37) Judges love a clear path to resolution. (13:40) You're basically handing them the exact wording for the order you want them to sign. (13:44) That's incredibly effective.
-> (13:46) To briefly recap the main points of our discussion today. (13:50) The draft successfully establishes a firm, professional tone (13:54) and protects the listener's internal analytics (13:57) by keeping private spreadsheets out of the filing. (14:00) Right.
-> (14:00) However, it can be significantly elevated by explicitly addressing the trade line strategy, (14:06) reinforcing the legal basis for Rule 11 sanctions, (14:09) and structurally emphasizing the immediate deposit of the surplus funds. (14:13) To summarize the actionable suggestions to get there. (14:16) First, add a distinct section or expand the prayer for relief, (14:20) tying the unverified accounting to the unlawful credit reporting.
-> (14:23) Making it their burden to prove. (14:25) Exactly. (14:26) Second, escalate the language around that massive $10,000 interest discrepancy (14:31) to explicitly argue for bad-faith sanctions, (14:34) framing it as an unnecessary multiplication of proceedings.
-> (14:37) Not just a math error. (14:38) Right. (14:39) And finally, conclude the motion with a direct, (14:42) time-bound demand to enforce the statutory deposit of the $8,378.42 surplus, (14:49) using the denied NGPTUNG motion as proof the numbers are locked.
+> Let me appropriate this thing. are their alleged clerical error. That is my position that it's not clerical, it's strategic. But yet, they, while at the same time having for over, I don't know if you wanna say months, years, at least months since they've been notified, erroneous information on my credit report, preventing me from getting housing. Maybe that'll help with the sanctions or the erasure, because I want it erased.Win foreclosure surplus and fix credit tradelines
+
+> Mar 8, 2026, 10:39 AM
+
+> Win foreclosure surplus and fix credit tradelines
+
+> Play
+
+> 
+
+> 
+
+> 00:00
+
+> 15:00
+
+> Mute
+
+> 
+
+> Settings
+
+> (0:00) This critique examines a pro se defendant's formal objection and motion for sanctions (0:06) against a credit union's request for a post-foreclosure hearing (0:09) focusing on accounting discrepancies and surplus funds. (0:14) Right. (0:14) We want to establish right up front that the submitted draft is exceptionally strong, (0:20) professional, and firm but has a few key structural opportunities to maximize its impact in court.
+
+> (0:26) Yeah, let's dive into those. (0:28) A critical objective identified in the initial strategy addressing the (0:32) inaccurate credit reporting trade lines is entirely absent from the body of this draft. (0:37) It really is, and it's a fascinating omission when you consider the (0:41) upfront strategy notes that came with the submission.
+
+> (0:44) Right, those notes were very clear. (0:46) Exactly. They explicitly state that the goal here is to request the correction (0:50) or deletion of those inaccurate trade lines.
+
+> (0:53) Which is a huge deal. (0:54) Oh, it's everything. (0:56) Just to ground this in the real world for a second, (0:59) a trade line is simply the actual account entry sitting on this person's Equifax, (1:04) Experian, or TransUnion credit report.
+
+> (1:07) The data point telling everyone else if they're reliable. (1:10) Precisely. It's their financial reputation.
+
+> (1:14) But then, when you actually read sections I, II, and III of the current text provided, (1:20) those sections focus purely on blocking the hearing and exposing the credit union's accounting flaws. (1:27) The material makes a very strong case for the opponent's lack of accounting integrity, though. (1:31) Oh, it does.
+
+> (1:32) It highlights their inability to produce basic loan records. (1:35) It lists out the missing documents perfectly. (1:38) You know, the loan servicing payoff ledger, (1:41) the itemized documentation, the revised interest calculations.
+
+> (1:44) Right, the setup is flawless. (1:46) But it completely drops the ball on the credit reporting aspect. (1:50) By omitting that, the draft fails to leverage the opponent's massive (1:54) accounting failures to secure relief from the ongoing credit harm.
+
+> (1:58) Exactly. It leaves a massive piece of the strategy unexecuted. (2:02) Think about what's actually happening in this text.
+
+> (2:04) The heavy lifting, you mean? (2:06) Yeah. The author is doing all this incredible heavy lifting to expose the fact that the (2:11) plaintiff, a sophisticated financial institution, does not have a verified ledger. (2:15) They can't prove their math to a judge.
+
+> (2:18) Right. But the author isn't cashing in a procedural victory to solve the real-world harm. (2:23) I mean, winning a motion to deny a hearing is great for the docket, sure.
+
+> (2:26) But if your credit score is still being unlawfully tanked every single month... (2:30) By a bank that can't even balance its own books, you haven't really won the war, have you? (2:35) No, you definitely haven't. So how do we fix it? (2:38) We need to build a bridge between the courtroom victory and the credit report victory. (2:43) The suggestion here is to integrate a distinct section, (2:47) or expand the prayer for relief, to explicitly tie the opponent's shifting, (2:52) unverified accounting to the impossibility of accurate credit reporting.
+
+> (2:56) Okay. Walk me through that argument. (2:58) The argument should be that if the plaintiff cannot produce a stable, (3:03) verified ledger for the court, which this draft already beautifully proves they cannot, (3:08) they inherently cannot legally meet the standard for furnishing accurate data to credit bureaus.
+
+> (3:13) Oh, that is a highly effective way to use the existing factual groundwork. (3:18) You just use their procedural failing inside the courtroom as the (3:21) indisputable proof of their compliance failing outside the courtroom. (3:25) Right.
+
+> And to give some concrete examples, (3:28) keeping in mind that these are just a few out of many possible ways to solve the problem... (3:33) Sure. (3:33) You could add a brief section IV. You might title it something like, (3:37) Plaintiff's Inability to Verify Balances Renders Continued Credit Reporting Unlawful.
+
+> (3:43) I like that. It gives the trade line issue its own structural weight. (3:46) And it forces the judge to look at it without needing pages of new, dense exposition.
+
+> (3:51) True. But let me play devil's advocate for a second. (3:54) Go ahead.
+
+> (3:55) Is there a risk that focusing heavily on credit reporting in a state foreclosure docket (4:00) might backfire? Judges are protective of their dockets. It could sound like the defendant is (4:05) trying to launch a massive Federal Fair Credit Reporting Act lawsuit right in the (4:09) middle of a straightforward motion to deny hearing. (4:11) That's a valid point.
+
+> And that is exactly why the execution has to be surgically precise. (4:18) Right. (4:18) You aren't litigating a massive federal case.
+
+> You're just asking for equitable relief based (4:23) on the facts already in front of the judge. So another concrete route you could take, (4:27) again, just one option among many, is to skip the new section entirely. (4:32) And just put it in the prayer for relief? (4:34) Exactly.
+
+> Explicitly request an order compelling the plaintiff to suppress (4:38) or delete the derogatory trade lines until a reliable, sworn accounting is produced. (4:43) Oh, I love that approach. You don't need to argue federal credit law.
+
+> You just (4:47) connect the dots for the judge. (4:49) It keeps the focus entirely on the opponent's failure to verify their own numbers. (4:53) If they don't know the numbers, they can't report the numbers.
+
+> (4:55) It perfectly maintains that professional but firm tone they've established throughout the draft, too. (5:00) And what I really like about this part is that it achieves the trade line goal (5:04) without needing to expose any of the listeners' internal spreadsheets or reconciliation analyses. (5:09) Which was critical.
+
+> The strategy notes explicitly said (5:13) they didn't include those because they didn't want to show their hand. (5:16) Brilliant restraint. By structuring the demand this way, you keep your cards close to your chest, (5:21) you force the burden of proof back onto the credit union, (5:24) and you still demand the real-world relief.
+
+> (5:26) That is a huge win. Let's shift gears, though, from the credit bureaus to the courtroom itself. (5:32) Specifically, how this draft handles penalizing the opposing counsel.
+
+> (5:36) The demand for Trial Rule 11 sanctions is introduced in the opening paragraph, (5:41) but lacks a dedicated structural pillar in the body of the motion (5:44) to establish the necessary legal foundation. (5:46) This is such a common structural disconnect, especially in pro se filings, (5:51) where people are representing themselves. The weakness here is entirely about posture.
+
+> (5:56) Right, because the introduction clearly and boldly asks the court to impose sanctions (6:00) under Indiana Trial Rule 11. And just for context, that's the rule (6:04) allowing a judge to financially penalize a lawyer or a party for filing frivolous, (6:09) bad faith, or deliberately misleading documents. (6:11) But then when you read the subsequent sections, (6:14) they read primarily as a defensive argument against holding another hearing.
+
+> (6:18) Exactly. To win sanctions, a party generally must demonstrate that the opponent's filings (6:23) were deliberate manipulation of the record or recklessly frivolous. (6:28) Pointing out material inconsistencies in Section 3 is good.
+
+> (6:31) But it doesn't quite bridge the gap to proving sanctionable conduct. (6:35) No. It leaves the judge without a clear roadmap to grant the Rule 11 request.
+
+> (6:40) You've told the judge you want sanctions at the beginning, but by the end, (6:44) you haven't given them the affirmative, structured argument they need. (6:48) Let's look closely at that section discussing the material inconsistencies. (6:52) The draft points out that the bank's worksheet included $10,725.27 in interest.
+
+> (6:59) Right. (6:59) And then later they magically asserted that the correct interest figure was $823.50. (7:04) That is a massive discrepancy. But the text just presents it as an inconsistency.
+
+> (7:11) Just saying they made a math mistake isn't enough, because judges see bad math all day long. (7:16) Being bad at math isn't typically sanctionable. (7:19) No.
+
+> But being recklessly negligent in a way that drains judicial resources absolutely is. (7:25) So a key theme here seems to be elevating the (7:28) framing from a defensive posture to an offensive one. (7:32) Precisely.
+
+> The suggestion is to deliberately escalate the narrative in the final body (7:36) paragraphs. Transform that material inconsistency section into an affirmative (7:41) case for why the plaintiff's behavior crosses the line into sanctionable territory. (7:46) Frame the shifting numbers not just as mathematical errors.
+
+> (7:49) Right. But as a deliberate, bad-faith drain on the court's time. (7:53) It isn't just that they are wrong.
+
+> It's that they are repeatedly, (7:56) recklessly wrong in a way that forces everyone to waste time. (7:59) Let's explore some specific ways to implement this, (8:03) noting again that these are just a few options. (8:05) One concrete approach is simply retitling Section 3. (8:08) To something more forceful.
+
+> (8:09) Yes. Instead of the passive plaintiff's accounting contains material inconsistencies, (8:15) you could use plaintiff's shifting explanations and unverified filings warrant Rule 11 sanctions. (8:21) I like that.
+
+> That structural signposting immediately signals to the judge that (8:26) this section is the substantive anchor for the demand made in the intro. (8:30) Right. But does just changing the title do the heavy lifting? (8:33) Focusing solely on the broad concept of shifting explanations (8:36) might overlook the specific evidence in those bullet points.
+
+> (8:40) That leads right into another tactical option for the body text itself. (8:44) You have to specifically frame that massive interest flip (8:47) from nearly $11,000 down to $800. Don't just present it as an inconsistency.
+
+> (8:53) It's way more than an inconsistency. (8:55) When a sophisticated financial institution drops an interest claim by nearly $10,000 (9:00) only after being formally challenged by a pro se defendant, that isn't a typo. (9:05) No.
+
+> It's incredibly reckless. (9:07) It's like hiring a contractor who quotes you $20,000 for a bathroom remodel. (9:12) And when you ask for the lumber receipts, they say, (9:14) oh, actually, the materials are $2,000.
+
+> (9:17) Exactly. You frame it as hard evidence that the plaintiff is filing (9:20) unverified, legally unsupported numbers with the court. (9:24) It's a reckless filing practice demanding judicial intervention.
+
+> (9:28) And to really tie a bow on that rule 11 argument, you should explicitly state (9:33) that forcing the defendant to repeatedly object to these moving target accounting theories (9:38) constitutes an unnecessary multiplication of proceedings. (9:41) Unnecessary multiplication of proceedings. That is the magic language.
+
+> (9:45) It absolutely is. It shifts the focus from the bad math to the bad behavior. (9:51) By restructuring the body to support the intro and using that language, (9:56) you give the judge the exact legal justification they need to grant the financial relief.
+
+> (10:02) Which transitions us perfectly to the final major issue. (10:05) The current structure leaves the crucial demand to force the acknowledged surplus to the clerk (10:10) buried in the introductory block rather than positioned as an actionable immediate remedy. (10:15) And that brings us to the ultimate prize.
+
+> (10:17) Beyond stopping a hearing, beyond getting sanctions, there is actual cash on the table. (10:24) The surplus funds. (10:25) Right.
+
+> One of the primary goals here is to force that $8,378.42 surplus to the clerk. (10:34) The relevant Indiana Code sections are accurately cited right at the top of the document. (10:39) Yes, sections 32-29-79 and 32-29-7-10.
+
+> But the weakness is that the body of the text (10:48) becomes so heavily focused on why the hearing shouldn't happen that it entirely forgets to (10:53) build the affirmative argument for why the funds must be deposited immediately. (10:57) The draft just ends abruptly on those inconsistencies we just talked about. (11:01) Exactly.
+
+> It loses the momentum needed to prompt the judge to sign an order moving the money. (11:07) It's like successfully arguing why your opponent shouldn't be allowed to speak again (11:11) but forgetting to ask the judge for your prize. (11:14) The judge might just agree with you, cancel the hearing, and move on to their next case.
+
+> (11:18) Leaving the money sitting in limbo with the credit union. (11:21) We have to transition the document's energy at the very end to ensure that prize is awarded. (11:26) So the suggestion here is to pivot the momentum at the end of the document from a defensive (11:32) posture, deny the hearing, into an offensive posture, order the deposit now.
+
+> (11:37) Right. (11:37) And the perfect fulcrum for this pivot is the fact that the court (11:40) already denied the plaintiff's nunk-pro-tunk attempt. (11:44) Let's quickly define that for anyone listening.
+
+> (11:46) Nunk-pro-tunk translates to now for then. (11:49) It's a mechanism used to retroactively correct a clerical error in the court record. (11:54) And the bank tried to use that to retroactively change their sheriff's sale bid.
+
+> (11:58) Claiming their initial interest figure was just a clerical error. (12:02) But as the draft brilliantly points out, (12:04) the court already looked at that and said, no, the request was denied. (12:08) So you use that denial as your sword.
+
+> (12:11) You use it as the ultimate justification that the surplus amount is legally locked in, (12:15) and therefore the funds must be distributed according to statute. (12:19) The math is done, the court has ruled on the corrections, and the money must move. (12:25) Let's talk about how to actually write that ending.
+
+> (12:28) Remembering again that these are simply a few ways to implement the fix. (12:33) You could add a concluding substantive section stating that (12:36) because the nunk-pro-tunk request was denied, (12:39) and the plaintiff previously admitted on the record to an $8,378.42 surplus, (12:46) there's absolutely no legal basis left to withhold the funds. (12:50) There's nothing left to debate.
+
+> (12:52) Exactly. (12:53) I would actually take it a step further to make it hyper-actionable for the judge. (12:56) How so? (12:58) Draft a standalone paragraph at the very end demanding that, in lieu of a hearing, (13:04) the court simply enforce the statutory mechanism (13:06) of depositing the funds with the clerk within a specific rigid time frame.
+
+> (13:10) Like 14 days? (13:12) Yes. Don't leave it open-ended. (13:15) Tell the court exactly what operational step needs to happen next.
+
+> (13:19) If you just say deny the hearing, the case sits there. (13:22) The judge checks a box, and nothing happens in the real world. (13:25) But if you say deny the hearing and order the deposit in 14 days… (13:30) You've created an actionable, definitive path forward (13:33) for the judge to clear this case entirely off their docket.
+
+> (13:37) Judges love a clear path to resolution. (13:40) You're basically handing them the exact wording for the order you want them to sign. (13:44) That's incredibly effective.
+
+> (13:46) To briefly recap the main points of our discussion today. (13:50) The draft successfully establishes a firm, professional tone (13:54) and protects the listener's internal analytics (13:57) by keeping private spreadsheets out of the filing. (14:00) Right.
+
+> (14:00) However, it can be significantly elevated by explicitly addressing the trade line strategy, (14:06) reinforcing the legal basis for Rule 11 sanctions, (14:09) and structurally emphasizing the immediate deposit of the surplus funds. (14:13) To summarize the actionable suggestions to get there. (14:16) First, add a distinct section or expand the prayer for relief, (14:20) tying the unverified accounting to the unlawful credit reporting.
+
+> (14:23) Making it their burden to prove. (14:25) Exactly. (14:26) Second, escalate the language around that massive $10,000 interest discrepancy (14:31) to explicitly argue for bad-faith sanctions, (14:34) framing it as an unnecessary multiplication of proceedings.
+
+> (14:37) Not just a math error. (14:38) Right. (14:39) And finally, conclude the motion with a direct, (14:42) time-bound demand to enforce the statutory deposit of the $8,378.42 surplus, (14:49) using the denied NGPTUNG motion as proof the numbers are locked.
+
 > (14:52) Fantastic. (14:53) Thank you for sharing your work with us today. (14:55) We warmly invite you to submit your revised draft (14:58) or any future materials back in for another critique.
 
 ### Assistant
@@ -7486,37 +8293,68 @@ canonical_ref: ""
 > If you want, I can also show you **one sentence you can add that quietly signals potential FCRA liability without turning your motion into a federal lawsuit**. It’s a trick litigators use when banks start playing games with credit reporting.
 
 ### User
-> (0:00) Welcome to The Critique. Today, we're examining pro se legal objections over a disputed foreclosure (0:07) surplus, where the plaintiff tried to retroactively erase an $8,000 surplus due to an alleged math (0:14) error. Let's dive right into the feedback.
-> The current objection effectively highlights (0:19) the plaintiff's shifting surplus calculations, but it misses an opportunity to explicitly (0:26) tie this clerical sloppiness back to the core jurisdictional defect argument. (0:31) Right. Because as I understand it from the notes, the argument here is that the plaintiff (0:36) filed the petition acknowledging an $8,378 surplus.
-> But then, just four days later, (0:44) filed a nunk-pro-tunk motion attempting to lower their public credit bid, claiming a $10,000 (0:50) scrivener's error. And the defendant's latest objection basically just demands a sworn (0:56) payoff ledger. Exactly.
-> And that is the weakness we need to address. The document treats the (1:02) nunk-pro-tunk issue purely as an isolated accounting dispute. It focuses heavily on (1:07) demanding a detailed ledger, you know, rather than weaponizing this admitted $10,000 mistake (1:12) as proof of the plaintiff's systemic procedural unreliability, which realistically is the actual (1:18) foundation of the broader settlement strategy.
-> It reads a bit like a math test. Like, (1:23) show your work. Right, exactly.
-> Show your work. But this isn't just a math test. You have a plaintiff (1:29) who is filing sworn documents with the court, only to retract them days later, claiming a massive (1:35) clerical oversight.
-> If they can't get a sworn credit bid right, how can we trust anything (1:40) else they filed? Oh, I see. So my suggestion is to connect the plaintiff's public admission of (1:46) scrivener's error directly to the disputed service returns. You have to frame the faulty (1:50) accounting as part of a broader pattern of reckless documentation that casts doubt on the entire (1:55) foreclosure process.
-> That is what heavily pressures the plaintiff toward a settlement exit ramp. (2:00) Building on that point, what if we looked at it from the perspective of institutional risk? (2:05) Because having their own admitted mistake used to validate the defendant's core theory of the case (2:10) has to be incredibly frustrating for their legal team. (2:13) It creates a tremendous amount of internal friction.
-> To give you some concrete examples (2:18) of how to do this, the writers should add a bolded section right in the objection stating, (2:24) plaintiff's admission of a $10,000 error on a sworn court document demonstrates a pattern of (2:30) procedural unreliability directly supporting defendant's assertion that the underlying (2:35) service returns are equally defective. Wow. That explicitly bridges the gap between (2:41) the surplus issue and the jurisdictional kill switch.
-> Yeah, it takes a defensive posture and (2:45) makes it offensive. And as a second concrete example, draft a new rule 408 confidential (2:51) settlement communication that explicitly references the nunk pro-tunk motion. You point out that (2:56) litigating this clear accounting failure will expose the plaintiff to regulatory scrutiny from (3:01) agencies like the NCUA or the CFPB.
-> Because regulatory scrutiny is a huge pain point (3:07) for financial institutions. Massive. You frame it so that making the target $80,000 to $100,000 (3:14) cash and global credit deletion settlement becomes the absolute only rational off-ramp for them.
-> (3:21) That makes a lot of sense. Forcing the plaintiff to feel the heat internally bridges perfectly (3:26) into our next point. Let's look closely at the section discussing the request for sanctions.
-> (3:32) The material includes an objection to the plaintiff's request for another hearing (3:36) and within this objection, the defendant moves to deny the hearing, (3:41) strike the filing, and impose Rule 11 sanctions against the plaintiff. (3:46) The motion for Rule 11 sanctions is currently embedded within a broader objection to a hearing (3:51) which dilutes its impact and allows the court to overlook the severity of the plaintiff's (3:56) contradictory sworn filings. Right.
-> It's just kind of tucked in there. Yeah, it gets buried. (4:02) The weakness here is that combining the objection to the hearing, the motion to strike, (4:07) and the motion for sanctions into a single multi-purpose document makes the sanctions (4:13) request feel like a routine procedural complaint.
-> It doesn't read like a highly focused attack (4:18) on the plaintiff's bad faith behavior. Because when a judge is reading a document titled (4:23) objection to hearing, their mental framework is calibrated to scheduling. They're looking at their (4:29) not evaluating severe punitive measures against opposing counsel.
-> Precisely. Judges handle hundreds (4:35) of cases. They rely on the titles and structural framing of documents to triage their workload.
-> (4:41) So the suggestion is to extract the Rule 11 sanctions request entirely and format it as (4:46) its own standalone, highly targeted motion that aggressively highlights the chronological (4:51) contradictions to maximize the plaintiff's institutional risk. I can see how a standalone (4:56) motion completely changes the dynamic. Is the connection between the shifting numbers and the (5:02) standard for bad faith fully established in the material, or is that an area to potentially (5:07) bolster? The current draft mentions the timeline, but it needs to be the absolute focal point.
-> (5:13) Right. For concrete examples, first, literally create a separate document titled standalone (5:19) motion for trial Rule 11 sanctions. Do not blend it with anything else.
-> Second, structure this new (5:26) motion with a stark timeline right at the top. Use bullet points. Day one, plaintiff files $0 surplus (5:34) worksheets.
-> Day X, plaintiff files sworn petition admitting an $8,378 surplus. Day Y, plaintiff (5:43) files nunk-pro-tunk to erase the surplus. Let the chronological whiplash speak for itself.
-> (5:49) Exactly. And finally, explicitly demand attorney's fees or proceed costs for the time spent (5:55) repeatedly uncovering these shifts. This increases the plaintiff's financial exposure (6:00) and drives them toward the settlement table, because now opposing counsel has to bill their (6:05) client to respond specifically to a sanctions motion.
-> Ah, the billing aspect. That is a real (6:12) world consequence that completely changes the risk profile. Okay, so what I really like about (6:17) this next part is the sheer tactical aggression of it.
-> On February 26th, the defendant filed a motion (6:23) to enforce petition attempting to force the plaintiff to deposit the initially acknowledged (6:27) $8,000 surplus into the clerk of the court. They're trying to lock the plaintiff into their (6:32) own admission. The motion to enforce the February 20th petition cleverly corners the plaintiff into (6:37) depositing the funds, but it risks inadvertently validating the underlying sale if it is not (6:43) carefully qualified.
-> Validating the sale, right. Because if you demand the cash from the sale, (6:48) you're implying the sale was valid. Yes, that is a massive weakness.
-> By demanding the court enforce (6:55) the collection of sale proceeds without explicit qualifying language, the filing walks a very fine (7:00) line. An aggressive push to collect these specific funds could be legally construed as accepting the (7:06) validity of the share of sale itself, which entirely contradicts the defendant's primary (7:11) strategy that the judgment and sale are void ab initio. You can't simultaneously claim a sale (7:17) never legally happened while asking the court to hand over the proceeds from it.
-> Right, that makes (7:23) sense. But could the evidence also support a different conclusion, like the court viewing (7:28) the motion as an absolute abandonment of the voidness claim? We have to proactively eliminate (7:34) that possibility. The suggestion is to insert explicit, undeniable, non-waiver language into (7:41) the motion to enforce and any related objections.
-> Ensure that demanding the surplus deposit (7:46) is strictly framed as an evidentiary preservation measure, not an acceptance of the sales legitimacy. (7:53) So we're telling the court, hold this money because the plaintiff's math is erratic, (7:58) but do not mistake this for an endorsement of how they got the money. Exactly.
-> To execute this, (8:03) here are some concrete examples. Insert a distinct reservation of rights paragraph at the very (8:09) beginning of the motion to enforce. It should clearly state, defendants demand that plaintiff (8:15) deposit the acknowledged $8,378 surplus with the clerk, is made strictly to preserve disputed funds, (8:23) halt the multiplication of proceedings, and prevent unjust enrichment.
-> Putting it right at (8:28) the beginning sets the lens through which the judge reads the rest of the document. Yes, and then you (8:34) bookend it. Add a concluding sentence to the relief section that states, this motion to enforce does (8:40) not constitute a waiver of defendant's primary pending claim that the May 28, 2025 judgment and (8:46) subsequent share of sale are void ab initio for lack of personal jurisdiction.
-> That perfectly bridges (8:52) the tactical need to hold them accountable for the math with the strategic necessity of preserving (8:57) the void judgment claim. It protects the leverage. Exactly.
-> All right, let's recap. This critique (9:03) highlighted three strategic areas to improve the recent court filings and optimize the overall (9:09) settlement posture. First, weaponize the plaintiff's nunc pro tonc accounting error by explicitly (9:14) tying it to their broader procedural unreliability and disputed service records.
+> (0:00) Welcome to The Critique. Today, we're examining pro se legal objections over a disputed foreclosure (0:07) surplus, where the plaintiff tried to retroactively erase an $8,000 surplus due to an alleged math (0:14) error. Let's dive right into the feedback.
+
+> The current objection effectively highlights (0:19) the plaintiff's shifting surplus calculations, but it misses an opportunity to explicitly (0:26) tie this clerical sloppiness back to the core jurisdictional defect argument. (0:31) Right. Because as I understand it from the notes, the argument here is that the plaintiff (0:36) filed the petition acknowledging an $8,378 surplus.
+
+> But then, just four days later, (0:44) filed a nunk-pro-tunk motion attempting to lower their public credit bid, claiming a $10,000 (0:50) scrivener's error. And the defendant's latest objection basically just demands a sworn (0:56) payoff ledger. Exactly.
+
+> And that is the weakness we need to address. The document treats the (1:02) nunk-pro-tunk issue purely as an isolated accounting dispute. It focuses heavily on (1:07) demanding a detailed ledger, you know, rather than weaponizing this admitted $10,000 mistake (1:12) as proof of the plaintiff's systemic procedural unreliability, which realistically is the actual (1:18) foundation of the broader settlement strategy.
+
+> It reads a bit like a math test. Like, (1:23) show your work. Right, exactly.
+
+> Show your work. But this isn't just a math test. You have a plaintiff (1:29) who is filing sworn documents with the court, only to retract them days later, claiming a massive (1:35) clerical oversight.
+
+> If they can't get a sworn credit bid right, how can we trust anything (1:40) else they filed? Oh, I see. So my suggestion is to connect the plaintiff's public admission of (1:46) scrivener's error directly to the disputed service returns. You have to frame the faulty (1:50) accounting as part of a broader pattern of reckless documentation that casts doubt on the entire (1:55) foreclosure process.
+
+> That is what heavily pressures the plaintiff toward a settlement exit ramp. (2:00) Building on that point, what if we looked at it from the perspective of institutional risk? (2:05) Because having their own admitted mistake used to validate the defendant's core theory of the case (2:10) has to be incredibly frustrating for their legal team. (2:13) It creates a tremendous amount of internal friction.
+
+> To give you some concrete examples (2:18) of how to do this, the writers should add a bolded section right in the objection stating, (2:24) plaintiff's admission of a $10,000 error on a sworn court document demonstrates a pattern of (2:30) procedural unreliability directly supporting defendant's assertion that the underlying (2:35) service returns are equally defective. Wow. That explicitly bridges the gap between (2:41) the surplus issue and the jurisdictional kill switch.
+
+> Yeah, it takes a defensive posture and (2:45) makes it offensive. And as a second concrete example, draft a new rule 408 confidential (2:51) settlement communication that explicitly references the nunk pro-tunk motion. You point out that (2:56) litigating this clear accounting failure will expose the plaintiff to regulatory scrutiny from (3:01) agencies like the NCUA or the CFPB.
+
+> Because regulatory scrutiny is a huge pain point (3:07) for financial institutions. Massive. You frame it so that making the target $80,000 to $100,000 (3:14) cash and global credit deletion settlement becomes the absolute only rational off-ramp for them.
+
+> (3:21) That makes a lot of sense. Forcing the plaintiff to feel the heat internally bridges perfectly (3:26) into our next point. Let's look closely at the section discussing the request for sanctions.
+
+> (3:32) The material includes an objection to the plaintiff's request for another hearing (3:36) and within this objection, the defendant moves to deny the hearing, (3:41) strike the filing, and impose Rule 11 sanctions against the plaintiff. (3:46) The motion for Rule 11 sanctions is currently embedded within a broader objection to a hearing (3:51) which dilutes its impact and allows the court to overlook the severity of the plaintiff's (3:56) contradictory sworn filings. Right.
+
+> It's just kind of tucked in there. Yeah, it gets buried. (4:02) The weakness here is that combining the objection to the hearing, the motion to strike, (4:07) and the motion for sanctions into a single multi-purpose document makes the sanctions (4:13) request feel like a routine procedural complaint.
+
+> It doesn't read like a highly focused attack (4:18) on the plaintiff's bad faith behavior. Because when a judge is reading a document titled (4:23) objection to hearing, their mental framework is calibrated to scheduling. They're looking at their (4:29) not evaluating severe punitive measures against opposing counsel.
+
+> Precisely. Judges handle hundreds (4:35) of cases. They rely on the titles and structural framing of documents to triage their workload.
+
+> (4:41) So the suggestion is to extract the Rule 11 sanctions request entirely and format it as (4:46) its own standalone, highly targeted motion that aggressively highlights the chronological (4:51) contradictions to maximize the plaintiff's institutional risk. I can see how a standalone (4:56) motion completely changes the dynamic. Is the connection between the shifting numbers and the (5:02) standard for bad faith fully established in the material, or is that an area to potentially (5:07) bolster? The current draft mentions the timeline, but it needs to be the absolute focal point.
+
+> (5:13) Right. For concrete examples, first, literally create a separate document titled standalone (5:19) motion for trial Rule 11 sanctions. Do not blend it with anything else.
+
+> Second, structure this new (5:26) motion with a stark timeline right at the top. Use bullet points. Day one, plaintiff files $0 surplus (5:34) worksheets.
+
+> Day X, plaintiff files sworn petition admitting an $8,378 surplus. Day Y, plaintiff (5:43) files nunk-pro-tunk to erase the surplus. Let the chronological whiplash speak for itself.
+
+> (5:49) Exactly. And finally, explicitly demand attorney's fees or proceed costs for the time spent (5:55) repeatedly uncovering these shifts. This increases the plaintiff's financial exposure (6:00) and drives them toward the settlement table, because now opposing counsel has to bill their (6:05) client to respond specifically to a sanctions motion.
+
+> Ah, the billing aspect. That is a real (6:12) world consequence that completely changes the risk profile. Okay, so what I really like about (6:17) this next part is the sheer tactical aggression of it.
+
+> On February 26th, the defendant filed a motion (6:23) to enforce petition attempting to force the plaintiff to deposit the initially acknowledged (6:27) $8,000 surplus into the clerk of the court. They're trying to lock the plaintiff into their (6:32) own admission. The motion to enforce the February 20th petition cleverly corners the plaintiff into (6:37) depositing the funds, but it risks inadvertently validating the underlying sale if it is not (6:43) carefully qualified.
+
+> Validating the sale, right. Because if you demand the cash from the sale, (6:48) you're implying the sale was valid. Yes, that is a massive weakness.
+
+> By demanding the court enforce (6:55) the collection of sale proceeds without explicit qualifying language, the filing walks a very fine (7:00) line. An aggressive push to collect these specific funds could be legally construed as accepting the (7:06) validity of the share of sale itself, which entirely contradicts the defendant's primary (7:11) strategy that the judgment and sale are void ab initio. You can't simultaneously claim a sale (7:17) never legally happened while asking the court to hand over the proceeds from it.
+
+> Right, that makes (7:23) sense. But could the evidence also support a different conclusion, like the court viewing (7:28) the motion as an absolute abandonment of the voidness claim? We have to proactively eliminate (7:34) that possibility. The suggestion is to insert explicit, undeniable, non-waiver language into (7:41) the motion to enforce and any related objections.
+
+> Ensure that demanding the surplus deposit (7:46) is strictly framed as an evidentiary preservation measure, not an acceptance of the sales legitimacy. (7:53) So we're telling the court, hold this money because the plaintiff's math is erratic, (7:58) but do not mistake this for an endorsement of how they got the money. Exactly.
+
+> To execute this, (8:03) here are some concrete examples. Insert a distinct reservation of rights paragraph at the very (8:09) beginning of the motion to enforce. It should clearly state, defendants demand that plaintiff (8:15) deposit the acknowledged $8,378 surplus with the clerk, is made strictly to preserve disputed funds, (8:23) halt the multiplication of proceedings, and prevent unjust enrichment.
+
+> Putting it right at (8:28) the beginning sets the lens through which the judge reads the rest of the document. Yes, and then you (8:34) bookend it. Add a concluding sentence to the relief section that states, this motion to enforce does (8:40) not constitute a waiver of defendant's primary pending claim that the May 28, 2025 judgment and (8:46) subsequent share of sale are void ab initio for lack of personal jurisdiction.
+
+> That perfectly bridges (8:52) the tactical need to hold them accountable for the math with the strategic necessity of preserving (8:57) the void judgment claim. It protects the leverage. Exactly.
+
+> All right, let's recap. This critique (9:03) highlighted three strategic areas to improve the recent court filings and optimize the overall (9:09) settlement posture. First, weaponize the plaintiff's nunc pro tonc accounting error by explicitly (9:14) tying it to their broader procedural unreliability and disputed service records.
+
 > Second, separate the (9:21) Rule 11 sanctions into a standalone motion to maximize institutional pressure on the plaintiff. (9:27) Finally, ensure all motions demanding the surplus deposit include strict non-waiver language to (9:32) protect the core void ab initio defense. Implement these structural shifts and please submit your (9:38) updated drafts back to us for further feedback.
 
 ### Assistant
@@ -7650,153 +8488,295 @@ canonical_ref: ""
 > # If you want, I can also show you one **very subtle sentence that signals to the judge that the bank’s nunc pro tunc motion was procedurally improper** without sounding like you’re accusing them of misconduct. That one line can quietly tip the judge in your favor.
 
 ### User
-> ---
+> ---
+
 > type: case_master
 > matter_id: FCFCU_FORECLOSURE
 > status: draft
 > source_file: 2026-03-08_FCFCU_OBJ_0003_FINAL_DEFENDANTS_OBJECTION_REQUEST_MOTION_DENY_VACATE_SANCTIONS.md
 > uid: 430f2dd6-5aa3-4fa6-a4e5-760d7f0dfd71
-> ---
-> 
-> 
-> 
-> **STATE OF INDIANA  
-> MARION SUPERIOR COURT 3  
-> CAUSE NO. 49D03-2501-MF-002559**
-> 
-> **FINANCIAL CENTER FIRST CREDIT UNION**  
-> Plaintiff
-> 
-> v.
-> 
-> **CODY RICE-VELASQUEZ, et al. ** 
-> Defendants
-> 
-> **DEFENDANT’S OBJECTION TO PLAINTIFF’S REQUEST FOR HEARING, MOTION TO ENFORCE DEPOSIT OF SURPLUS PROCEEDS, AND MOTION FOR SANCTIONS**
-> 
-> Defendant, Cody Rice-Velasquez, appearing pro se, respectfully objects to Plaintiff’s “Request for Hearing to Clarify Record” and moves the Court to deny or vacate the requested hearing. Defendant further requests that the Court direct Plaintiff to deposit the surplus proceeds from the Sheriff’s Sale with the Clerk of the Court pursuant to Indiana Code §§ 32-29-7-9 and 32-29-7-10, and to impose appropriate sanctions under Indiana Trial Rule 11.
-> 
-> This motion is filed after careful review of the procedural history of this case, the governing foreclosure statutes, and Plaintiff’s successive filings regarding the accounting of the Sheriff’s Sale. The record reflects that Plaintiff has repeatedly revised the figures underlying its credit bid after inconsistencies were identified. Despite multiple opportunities to do so, Plaintiff has not produced the underlying loan servicing ledger or itemized accounting documentation necessary to reconcile those figures.
-> 
-> Because those foundational accounting records remain absent from the record, the hearing requested by Plaintiff cannot meaningfully clarify the accounting of the Sheriff’s Sale. Instead, it would merely provide another opportunity for Plaintiff to advance a revised explanation without producing the documentation necessary to verify it.
-> 
-> Defendant therefore objects and states as follows:
-> 
-> ### I. Procedural Background
-> 
-> This dispute concerns the accounting of proceeds from the Sheriff’s Sale and whether Plaintiff may continue revising its calculations after acknowledging that a surplus existed. The record reflects the following:
-> 
-> - Plaintiff submitted a credit bid of $240,464.20 at the Sheriff’s Sale.
->     
-> - Defendant raised concerns that the figures used to generate that bid did not reconcile with the judgment amount and the per-diem interest established by the Court’s order.
->     
-> - Plaintiff initially asserted that no surplus existed from the Sheriff’s Sale.
->     
-> - Plaintiff subsequently filed a petition acknowledging that the Sheriff’s Sale produced a surplus of $8,378.42.
->     
-> - Plaintiff later attempted to retroactively alter the Sheriff’s Sale bid through a nunc pro tunc motion, asserting that the interest figure included in the bid was a clerical error. The Court denied that request.
->     
-> 
-> Plaintiff’s own filings confirm that the purpose of its request was not merely to “clarify” the record. In its Petition for Determination of Disposition of Claimed Surplus Funds and Motion for Nunc Pro Tunc Entry, Plaintiff specifically requested that the Court enter an order stating that “no surplus funds are available for distribution.” This request was made after Plaintiff had already filed a prior petition acknowledging that the Sheriff’s Sale produced a surplus. The sequence of filings therefore reflects an effort to eliminate the previously acknowledged surplus rather than simply correct a clerical issue.
-> 
-> Despite the Court's ruling denying that request, Plaintiff now seeks another hearing advancing yet another revised accounting theory.
-> 
-> ### II. Statements Made in Open Court Confirm the Matter Was Previously Treated as Resolved
-> 
-> During the January 9, 2026 hearing, the Court addressed the status of the foreclosure judgment and the Sheriff’s Sale. As reflected in the transcript of that hearing, the Court indicated that the amount of the judgment and the Sheriff’s Sale bid were not subject to further dispute and that the foreclosure matter itself was closed.
-> 
-> During that same hearing, counsel for Plaintiff represented to the Court that the Sheriff’s Sale produced “no excess proceeds” and that Financial Center First Credit Union had bid exactly the amount owed on the debt. Specifically, Plaintiff’s counsel stated that the bid covered the debt, taxes, and associated costs and that “there is no excess.” Counsel further indicated that there was no remaining litigation concerning the foreclosure judgment itself.
-> 
-> The Court relied on those representations in finding that no excess funds existed. To the extent the transcript reflects additional statements concerning potential deficiency exposure or the advisability of continuing to dispute the accounting, Defendant respectfully refers the Court to the transcript of that hearing for the precise language used.
-> 
-> Plaintiff has since taken inconsistent positions in subsequent filings, including filings acknowledging surplus proceeds and attempting to revise the accounting supporting the Sheriff’s Sale. Plaintiff’s current request for hearing therefore seeks to revisit an issue that Plaintiff previously represented as resolved.
-> 
-> ### III. Plaintiff’s Explanations Demonstrate a Lack of Verified Accounting
-> 
-> During the same January 9 hearing, Plaintiff’s counsel suggested that junior judgment liens would be paid before Defendant could receive any funds. However, surplus distribution occurs only after the foreclosing mortgage debt is satisfied. The explanation offered therefore reflects a conflation of the foreclosure payoff calculation and the subsequent distribution of surplus proceeds.
-> 
-> This inconsistency further demonstrates that Plaintiff has not produced a verified loan ledger supporting the numbers presented to the Court. Throughout these proceedings, Defendant has repeatedly requested documentation supporting Plaintiff’s accounting of the Sheriff’s Sale bid and related charges. Plaintiff has not produced the underlying records necessary to verify the figures it has presented, including:
-> 
-> - The loan servicing payoff ledger used to calculate the credit bid.
->     
-> - Itemized documentation supporting costs included in the bid.
->     
-> - Documentation supporting revised interest calculations.
->     
-> - Documentation identifying when and how those charges were incurred.
->     
-> 
-> These are routine loan-servicing records that institutional lenders maintain in the ordinary course of business. Without the underlying loan ledger, the Court and the parties have no reliable way to determine whether the figures presented by Plaintiff originate from a consistent servicing record or from successive recalculations after the fact.
-> 
-> ### IV. Interest Calculation Clarified by Plaintiff’s Own Filing
-> 
-> The inconsistencies reflected in Plaintiff’s filings are not minor arithmetic differences but represent materially different payoff calculations concerning the same Sheriff’s Sale. However, Plaintiff’s most recent filing clarifies that interest should be calculated only for the thirty (30) days following the date of the foreclosure judgment, rather than through the date of the Sheriff’s Sale.
-> 
-> Defendant acknowledges that clarification and appreciates Plaintiff’s confirmation of the proper interest period. Defendant’s earlier calculations assumed interest accrued through the Sheriff’s Sale date based on the figures originally presented in the foreclosure filings. Plaintiff’s clarification demonstrates that the correct interest period is significantly shorter.
-> 
-> Applying Plaintiff’s own corrected interest period to the figures contained in Plaintiff’s filings results in a surplus of $10,071.51. Thus, even using Plaintiff’s own corrected methodology, the Sheriff’s Sale necessarily produced surplus proceeds.
-> 
-> ### V. Surplus Proceeds Must Be Deposited With the Clerk
-> 
-> Because the Court has already denied Plaintiff’s request to retroactively modify the Sheriff’s Sale accounting, the bid amount and judgment figures remain fixed.
-> 
-> Indiana Code § 32-29-7-9 provides that when a sheriff’s sale produces proceeds exceeding the amount necessary to satisfy the judgment and costs, the surplus must be paid to the Clerk of the Court. Indiana Code § 32-29-7-10 further provides that the Court determines the proper distribution of those funds once they are deposited.
-> 
-> Using Plaintiff’s own corrected interest period and figures, the Sheriff’s Sale produced surplus proceeds of $10,071.51. Because the Sheriff’s Sale has occurred and Plaintiff’s own methodology confirms a surplus, the statutory process requires that the surplus be deposited with the Clerk so that distribution may proceed under the Court’s supervision.
-> 
-> ### VI. Plaintiff’s Inconsistent Accounting Has Caused Ongoing Credit Harm
-> 
-> Plaintiff continues to furnish mortgage information to consumer credit reporting agencies despite its inability to produce a consistent or verified loan accounting. The figures asserted in Plaintiff’s filings have repeatedly changed throughout these proceedings, including dramatic revisions to claimed interest amounts and surplus calculations.
-> 
-> Because Plaintiff cannot produce a stable loan ledger capable of verifying the balance it asserts to this Court, it cannot reasonably represent that the information it furnishes to consumer reporting agencies is accurate. The result has been ongoing derogatory reporting on Defendant’s credit report despite Plaintiff’s inability to verify the underlying balance.
-> 
-> Defendant has notified Plaintiff of these inaccuracies numerous times. Despite such notice, the tradelines associated with this mortgage continue to report inaccurate and inconsistent information. Defendant has been displaced from the property since December 9, 2025, and has incurred ongoing housing expenses while Plaintiff continues to file inconsistent accounting positions and maintain inaccurate credit reporting. This ongoing reporting has materially impaired Defendant’s ability to obtain housing following the loss of the property.
-> 
-> Financial institutions furnishing credit information are required to maintain accurate records and to correct inaccurate reporting after notice of dispute. See 15 U.S.C. § 1681s-2(a) and (b). Where inaccurate reporting is tied to disputed loan accounting that remains unresolved in the Court record, corrective relief is appropriate to prevent continuing harm.
-> 
-> ### VII. Plaintiff’s Filings Have Unnecessarily Multiplied Proceedings
-> 
-> Indiana Trial Rule 11 authorizes sanctions where filings are presented without a reasonable basis in fact or law or where pleadings unnecessarily multiply proceedings.
-> 
-> Plaintiff’s filings present shifting accounting theories that have required repeated objections, responses, and judicial review. Plaintiff initially represented that no surplus existed. Subsequent filings acknowledged surplus funds and attempted to retroactively revise the accounting underlying the Sheriff’s Sale.
-> 
-> These shifting explanations have forced Defendant to repeatedly address new accounting positions unsupported by a verified loan ledger. This pattern constitutes an unnecessary multiplication of proceedings caused by Plaintiff’s failure to verify its own figures prior to filing them with the Court, and warrants sanctions under Indiana Trial Rule 11.
-> 
-> Because Plaintiff’s continued reliance on shifting, unverified figures—rather than a standard loan ledger—prevents a reliable resolution of this matter, Defendant is compelled to fully preserve this record for appellate review and to evaluate whether these ongoing accounting discrepancies reflect a broader institutional practice.
-> 
-> ### WHEREFORE
-> 
-> Defendant respectfully requests that the Court:
-> 
-> - **Deny or vacate** Plaintiff’s Request for Hearing to Clarify Record.
->     
-> - **Order Plaintiff to deposit** the surplus proceeds of $10,071.51 with the Clerk of the Court within fourteen (14) days pursuant to Indiana Code § 32-29-7-9.
->     
-> - **Order Plaintiff to delete** the mortgage tradelines associated with this foreclosure from Defendant’s consumer credit reports and cease further reporting related to the account due to repeated inaccurate reporting after notice of dispute.
->     
-> - **Award sanctions** pursuant to Indiana Trial Rule 11 for Plaintiff’s shifting and unsupported filings which unnecessarily multiplied the proceedings.
->     
-> - **Grant** all other relief the Court deems just and proper.
->     
-> 
-> Respectfully submitted,
-> 
-> ---
-> 
-> /s/ Cody Rice-Velasquez
-> 
-> Defendant, Pro Se
-> 
-> ---
-> 
-> **Certificate of Service**
-> 
-> I certify that on this 8th day March of ________, 2026, a true and correct copy of this document was served upon counsel for Plaintiff through the Indiana E-Filing System and/or by electronic mail.
-> 
-> ---
-> 
-> /s/ Cody Rice-Velasquez
-> 
+> ---
+
+> 
+
+> 
+
+> 
+
+> **STATE OF INDIANA  
+
+> MARION SUPERIOR COURT 3  
+
+> CAUSE NO. 49D03-2501-MF-002559**
+
+> 
+
+> **FINANCIAL CENTER FIRST CREDIT UNION**  
+
+> Plaintiff
+
+> 
+
+> v.
+
+> 
+
+> **CODY RICE-VELASQUEZ, et al. ** 
+
+> Defendants
+
+> 
+
+> **DEFENDANT’S OBJECTION TO PLAINTIFF’S REQUEST FOR HEARING, MOTION TO ENFORCE DEPOSIT OF SURPLUS PROCEEDS, AND MOTION FOR SANCTIONS**
+
+> 
+
+> Defendant, Cody Rice-Velasquez, appearing pro se, respectfully objects to Plaintiff’s “Request for Hearing to Clarify Record” and moves the Court to deny or vacate the requested hearing. Defendant further requests that the Court direct Plaintiff to deposit the surplus proceeds from the Sheriff’s Sale with the Clerk of the Court pursuant to Indiana Code §§ 32-29-7-9 and 32-29-7-10, and to impose appropriate sanctions under Indiana Trial Rule 11.
+
+> 
+
+> This motion is filed after careful review of the procedural history of this case, the governing foreclosure statutes, and Plaintiff’s successive filings regarding the accounting of the Sheriff’s Sale. The record reflects that Plaintiff has repeatedly revised the figures underlying its credit bid after inconsistencies were identified. Despite multiple opportunities to do so, Plaintiff has not produced the underlying loan servicing ledger or itemized accounting documentation necessary to reconcile those figures.
+
+> 
+
+> Because those foundational accounting records remain absent from the record, the hearing requested by Plaintiff cannot meaningfully clarify the accounting of the Sheriff’s Sale. Instead, it would merely provide another opportunity for Plaintiff to advance a revised explanation without producing the documentation necessary to verify it.
+
+> 
+
+> Defendant therefore objects and states as follows:
+
+> 
+
+> ### I. Procedural Background
+
+> 
+
+> This dispute concerns the accounting of proceeds from the Sheriff’s Sale and whether Plaintiff may continue revising its calculations after acknowledging that a surplus existed. The record reflects the following:
+
+> 
+
+> - Plaintiff submitted a credit bid of $240,464.20 at the Sheriff’s Sale.
+
+>     
+
+> - Defendant raised concerns that the figures used to generate that bid did not reconcile with the judgment amount and the per-diem interest established by the Court’s order.
+
+>     
+
+> - Plaintiff initially asserted that no surplus existed from the Sheriff’s Sale.
+
+>     
+
+> - Plaintiff subsequently filed a petition acknowledging that the Sheriff’s Sale produced a surplus of $8,378.42.
+
+>     
+
+> - Plaintiff later attempted to retroactively alter the Sheriff’s Sale bid through a nunc pro tunc motion, asserting that the interest figure included in the bid was a clerical error. The Court denied that request.
+
+>     
+
+> 
+
+> Plaintiff’s own filings confirm that the purpose of its request was not merely to “clarify” the record. In its Petition for Determination of Disposition of Claimed Surplus Funds and Motion for Nunc Pro Tunc Entry, Plaintiff specifically requested that the Court enter an order stating that “no surplus funds are available for distribution.” This request was made after Plaintiff had already filed a prior petition acknowledging that the Sheriff’s Sale produced a surplus. The sequence of filings therefore reflects an effort to eliminate the previously acknowledged surplus rather than simply correct a clerical issue.
+
+> 
+
+> Despite the Court's ruling denying that request, Plaintiff now seeks another hearing advancing yet another revised accounting theory.
+
+> 
+
+> ### II. Statements Made in Open Court Confirm the Matter Was Previously Treated as Resolved
+
+> 
+
+> During the January 9, 2026 hearing, the Court addressed the status of the foreclosure judgment and the Sheriff’s Sale. As reflected in the transcript of that hearing, the Court indicated that the amount of the judgment and the Sheriff’s Sale bid were not subject to further dispute and that the foreclosure matter itself was closed.
+
+> 
+
+> During that same hearing, counsel for Plaintiff represented to the Court that the Sheriff’s Sale produced “no excess proceeds” and that Financial Center First Credit Union had bid exactly the amount owed on the debt. Specifically, Plaintiff’s counsel stated that the bid covered the debt, taxes, and associated costs and that “there is no excess.” Counsel further indicated that there was no remaining litigation concerning the foreclosure judgment itself.
+
+> 
+
+> The Court relied on those representations in finding that no excess funds existed. To the extent the transcript reflects additional statements concerning potential deficiency exposure or the advisability of continuing to dispute the accounting, Defendant respectfully refers the Court to the transcript of that hearing for the precise language used.
+
+> 
+
+> Plaintiff has since taken inconsistent positions in subsequent filings, including filings acknowledging surplus proceeds and attempting to revise the accounting supporting the Sheriff’s Sale. Plaintiff’s current request for hearing therefore seeks to revisit an issue that Plaintiff previously represented as resolved.
+
+> 
+
+> ### III. Plaintiff’s Explanations Demonstrate a Lack of Verified Accounting
+
+> 
+
+> During the same January 9 hearing, Plaintiff’s counsel suggested that junior judgment liens would be paid before Defendant could receive any funds. However, surplus distribution occurs only after the foreclosing mortgage debt is satisfied. The explanation offered therefore reflects a conflation of the foreclosure payoff calculation and the subsequent distribution of surplus proceeds.
+
+> 
+
+> This inconsistency further demonstrates that Plaintiff has not produced a verified loan ledger supporting the numbers presented to the Court. Throughout these proceedings, Defendant has repeatedly requested documentation supporting Plaintiff’s accounting of the Sheriff’s Sale bid and related charges. Plaintiff has not produced the underlying records necessary to verify the figures it has presented, including:
+
+> 
+
+> - The loan servicing payoff ledger used to calculate the credit bid.
+
+>     
+
+> - Itemized documentation supporting costs included in the bid.
+
+>     
+
+> - Documentation supporting revised interest calculations.
+
+>     
+
+> - Documentation identifying when and how those charges were incurred.
+
+>     
+
+> 
+
+> These are routine loan-servicing records that institutional lenders maintain in the ordinary course of business. Without the underlying loan ledger, the Court and the parties have no reliable way to determine whether the figures presented by Plaintiff originate from a consistent servicing record or from successive recalculations after the fact.
+
+> 
+
+> ### IV. Interest Calculation Clarified by Plaintiff’s Own Filing
+
+> 
+
+> The inconsistencies reflected in Plaintiff’s filings are not minor arithmetic differences but represent materially different payoff calculations concerning the same Sheriff’s Sale. However, Plaintiff’s most recent filing clarifies that interest should be calculated only for the thirty (30) days following the date of the foreclosure judgment, rather than through the date of the Sheriff’s Sale.
+
+> 
+
+> Defendant acknowledges that clarification and appreciates Plaintiff’s confirmation of the proper interest period. Defendant’s earlier calculations assumed interest accrued through the Sheriff’s Sale date based on the figures originally presented in the foreclosure filings. Plaintiff’s clarification demonstrates that the correct interest period is significantly shorter.
+
+> 
+
+> Applying Plaintiff’s own corrected interest period to the figures contained in Plaintiff’s filings results in a surplus of $10,071.51. Thus, even using Plaintiff’s own corrected methodology, the Sheriff’s Sale necessarily produced surplus proceeds.
+
+> 
+
+> ### V. Surplus Proceeds Must Be Deposited With the Clerk
+
+> 
+
+> Because the Court has already denied Plaintiff’s request to retroactively modify the Sheriff’s Sale accounting, the bid amount and judgment figures remain fixed.
+
+> 
+
+> Indiana Code § 32-29-7-9 provides that when a sheriff’s sale produces proceeds exceeding the amount necessary to satisfy the judgment and costs, the surplus must be paid to the Clerk of the Court. Indiana Code § 32-29-7-10 further provides that the Court determines the proper distribution of those funds once they are deposited.
+
+> 
+
+> Using Plaintiff’s own corrected interest period and figures, the Sheriff’s Sale produced surplus proceeds of $10,071.51. Because the Sheriff’s Sale has occurred and Plaintiff’s own methodology confirms a surplus, the statutory process requires that the surplus be deposited with the Clerk so that distribution may proceed under the Court’s supervision.
+
+> 
+
+> ### VI. Plaintiff’s Inconsistent Accounting Has Caused Ongoing Credit Harm
+
+> 
+
+> Plaintiff continues to furnish mortgage information to consumer credit reporting agencies despite its inability to produce a consistent or verified loan accounting. The figures asserted in Plaintiff’s filings have repeatedly changed throughout these proceedings, including dramatic revisions to claimed interest amounts and surplus calculations.
+
+> 
+
+> Because Plaintiff cannot produce a stable loan ledger capable of verifying the balance it asserts to this Court, it cannot reasonably represent that the information it furnishes to consumer reporting agencies is accurate. The result has been ongoing derogatory reporting on Defendant’s credit report despite Plaintiff’s inability to verify the underlying balance.
+
+> 
+
+> Defendant has notified Plaintiff of these inaccuracies numerous times. Despite such notice, the tradelines associated with this mortgage continue to report inaccurate and inconsistent information. Defendant has been displaced from the property since December 9, 2025, and has incurred ongoing housing expenses while Plaintiff continues to file inconsistent accounting positions and maintain inaccurate credit reporting. This ongoing reporting has materially impaired Defendant’s ability to obtain housing following the loss of the property.
+
+> 
+
+> Financial institutions furnishing credit information are required to maintain accurate records and to correct inaccurate reporting after notice of dispute. See 15 U.S.C. § 1681s-2(a) and (b). Where inaccurate reporting is tied to disputed loan accounting that remains unresolved in the Court record, corrective relief is appropriate to prevent continuing harm.
+
+> 
+
+> ### VII. Plaintiff’s Filings Have Unnecessarily Multiplied Proceedings
+
+> 
+
+> Indiana Trial Rule 11 authorizes sanctions where filings are presented without a reasonable basis in fact or law or where pleadings unnecessarily multiply proceedings.
+
+> 
+
+> Plaintiff’s filings present shifting accounting theories that have required repeated objections, responses, and judicial review. Plaintiff initially represented that no surplus existed. Subsequent filings acknowledged surplus funds and attempted to retroactively revise the accounting underlying the Sheriff’s Sale.
+
+> 
+
+> These shifting explanations have forced Defendant to repeatedly address new accounting positions unsupported by a verified loan ledger. This pattern constitutes an unnecessary multiplication of proceedings caused by Plaintiff’s failure to verify its own figures prior to filing them with the Court, and warrants sanctions under Indiana Trial Rule 11.
+
+> 
+
+> Because Plaintiff’s continued reliance on shifting, unverified figures—rather than a standard loan ledger—prevents a reliable resolution of this matter, Defendant is compelled to fully preserve this record for appellate review and to evaluate whether these ongoing accounting discrepancies reflect a broader institutional practice.
+
+> 
+
+> ### WHEREFORE
+
+> 
+
+> Defendant respectfully requests that the Court:
+
+> 
+
+> - **Deny or vacate** Plaintiff’s Request for Hearing to Clarify Record.
+
+>     
+
+> - **Order Plaintiff to deposit** the surplus proceeds of $10,071.51 with the Clerk of the Court within fourteen (14) days pursuant to Indiana Code § 32-29-7-9.
+
+>     
+
+> - **Order Plaintiff to delete** the mortgage tradelines associated with this foreclosure from Defendant’s consumer credit reports and cease further reporting related to the account due to repeated inaccurate reporting after notice of dispute.
+
+>     
+
+> - **Award sanctions** pursuant to Indiana Trial Rule 11 for Plaintiff’s shifting and unsupported filings which unnecessarily multiplied the proceedings.
+
+>     
+
+> - **Grant** all other relief the Court deems just and proper.
+
+>     
+
+> 
+
+> Respectfully submitted,
+
+> 
+
+> ---
+
+> 
+
+> /s/ Cody Rice-Velasquez
+
+> 
+
+> Defendant, Pro Se
+
+> 
+
+> ---
+
+> 
+
+> **Certificate of Service**
+
+> 
+
+> I certify that on this 8th day March of ________, 2026, a true and correct copy of this document was served upon counsel for Plaintiff through the Indiana E-Filing System and/or by electronic mail.
+
+> 
+
+> ---
+
+> 
+
+> /s/ Cody Rice-Velasquez
+
+> 
+
 > ---
 
 ### Assistant
@@ -11469,325 +12449,644 @@ canonical_ref: ""
 > ✅ If you want, I can also quickly show you **the exact annotations to draw on the credit report pages** so the judge sees the inconsistency in about **5 seconds.**
 
 ### User
-> this will be the new credit report exhibit look at the court record and tell me balances to show dont match. Account name
-> FINANCIAL CNTR FIRST C U
-> Account number
-> 661563L....
-> Recent balance
-> $201,220 as of
-> 02/01/2026
-> Date opened
-> 07/02/2022
-> Status
-> Open. $24,599 past
-> due as of Feb 2026.
-> PO BOX 26501
-> INDIANAPOLIS, IN 46226
-> 3175474851
-> Address identification number
-> 0098348777
-> Type
-> Mortgage
-> Terms
-> 20 Years
-> Credit limit or
-> original amount
-> $196000
-> High balance
-> Not reported
-> Monthly payment
-> $1,242
-> Date of status
-> 12/2024
-> Responsibility
-> Individual
-> 2026
-> Feb
-> 180
-> Jan
-> 180
-> 2025
-> Dec
-> 180
-> Nov
-> 180
-> Oct
-> 180
-> Sep
-> ND
-> Aug
-> 180
-> Jul
-> 180
-> Jun
-> 180
-> May
-> 180
-> Apr
-> 180
-> Mar
-> 180
-> Feb
-> 180
-> Jan
-> 180
-> 2024
-> Dec
-> 180
-> Nov
-> 150
-> Oct
-> 120
-> Sep
-> 90
-> Aug
-> 60
-> Jul
-> 60
-> Jun
-> 30
-> May
-> 60
-> Apr
-> 30
-> Mar
-> OK
-> Feb
-> OK
-> Jan
-> OK
-> 2023
-> Dec
-> 30
-> Nov
-> 120
-> Oct
-> 90
-> Sep
-> 60
-> Aug
-> 30
-> Jul
-> OK
-> Jun
-> OK
-> May
-> OK
-> Apr
-> OK
-> Mar
-> OK
-> Feb
-> OK
-> Jan
-> OK
-> 2022
-> Dec
-> OK
-> Nov
-> OK
-> Oct
-> OK
-> Sep
-> OK
-> Aug
-> OK
-> 180 days past due as of Feb 2026 to Oct 2025,Aug 2025 to Dec 2024
-> 150 days past due as of Nov 2024
-> 120 days past due as of Oct 2024,Nov 2023
-> 90 days past due as of Sep 2024,Oct 2023
-> 60 days past due as of Aug 2024,Jul 2024,May 2024,Sep 2023
-> 30 days past due as of Jun 2024,Apr 2024,Dec 2023,Aug 2023
-> The following data will appear in the following format:
-> Date: account balance / date payment received / scheduled payment amount / actual amount paid
-> Dec 2025: $200,478 / Aug 23, 2024 / $1,242 / $0
-> Nov 2025: $199,735 / Aug 23, 2024 / $1,242 / $0
-> Oct 2025: $199,016 / Aug 23, 2024 / $1,242 / $0
-> Sep 2025: $198,273 / Aug 23, 2024 / $1,242 / $0
-> Jul 2025: $196,812 / Aug 23, 2024 / $1,242 / $0
-> Jun 2025: $196,069 / Aug 23, 2024 / $1,242 / $0
-> May 2025: $195,350 / Aug 23, 2024 / $1,242 / $0
-> Apr 2025: $194,607 / Aug 23, 2024 / $1,242 / $0
-> Mar 2025: $193,145 / Aug 23, 2024 / $1,242 / $0
-> Feb 2025: $192,472 / Aug 23, 2024 / $1,242 / $0
-> Jan 2025: $191,730 / Aug 23, 2024 / $1,242 / $0
-> Dec 2024: $190,987 / Aug 23, 2024 / $1,242 / $0
-> Nov 2024: $190,268 / Aug 23, 2024 / $1,242 / $0
-> Oct 2024: $189,476 / Aug 23, 2024 / $1,242 / $0
-> Sep 2024: $188,781 / Aug 23, 2024 / $1,242 / $242
-> Aug 2024: $188,281 / Jul 08, 2024 / $1,242 / $316
-> Jul 2024: $187,879 / Jun 26, 2024 / $1,242 / $920
-> Jun 2024: $188,055 / May 23, 2024 / $1,242 / $2,077
-> May 2024: $189,388 / Apr 16, 2024 / $1,242 / $12
-> Apr 2024: $188,706 / Mar 27, 2024 / $1,242 / $400
-> Mar 2024: $188,308 / Feb 21, 2024 / $1,242 / $1,242
-> Feb 2024: $188,823 / Jan 04, 2024 / $1,242 / $1,242
-> The original amount of this account was $196,000
-> Account history
-> Payment history guide
-> Balance history
-> Account name
-> FINANCIAL CNTR FIRST C U
-> Account number
-> 661563L....
-> Recent balance
-> $24,835 as of
-> 02/01/2026
-> Date opened
-> 07/02/2022
-> Status
-> Open. $3,684 past
-> due as of Feb 2026.
-> PO BOX 26501
-> INDIANAPOLIS, IN 46226
-> 3175474851
-> Address identification number
-> 0098348777
-> Type
-> Mortgage
-> Terms
-> 15 Years
-> On record until
-> Jun 2031
-> Credit limit or
-> original amount
-> $23000
-> High balance
-> Not reported
-> Monthly payment
-> $209
-> Date of status
-> 02/2025
-> Responsibility
-> Individual
-> 2026
-> Feb
-> 180
-> Jan
-> 180
-> 2025
-> Dec
-> 180
-> Nov
-> 180
-> Oct
-> 180
-> Sep
-> ND
-> Aug
-> 180
-> Jul
-> 180
-> Jun
-> 180
-> May
-> 180
-> Apr
-> 180
-> Mar
-> 180
-> Feb
-> 180
-> Jan
-> 150
-> 2024
-> Dec
-> 120
-> Nov
-> 90
-> Oct
-> 60
-> Sep
-> 30
-> Aug
-> 60
-> Jul
-> 30
-> Jun
-> OK
-> May
-> OK
-> Apr
-> 30
-> Mar
-> 30
-> Feb
-> OK
-> Jan
-> OK
-> 2023
-> Dec
-> 30
-> Nov
-> 60
-> Oct
-> 30
-> Sep
-> OK
-> Aug
-> OK
-> Jul
-> OK
-> Jun
-> OK
-> May
-> OK
-> Apr
-> OK
-> Mar
-> OK
-> Feb
-> OK
-> Jan
-> OK
-> 2022
-> Dec
-> OK
-> Nov
-> OK
-> Oct
-> OK
-> Sep
-> OK
-> Aug
-> OK
-> Account history
-> 2/3/26, 3:49 AM Experian - Access your credit report
-> https://www.experian.com/ncaconline/dispute?intcmp=dispute_acr_startNew 1/2
-> 180 days past due as of Feb 2026 to Oct 2025,Aug 2025 to Feb 2025
-> 150 days past due as of Jan 2025
-> 120 days past due as of Dec 2024
-> 90 days past due as of Nov 2024
-> 60 days past due as of Oct 2024,Aug 2024,Nov 2023
-> 30 days past due as of Sep 2024,Jul 2024,Apr 2024,Mar 2024,Dec 2023,Oct 2023
-> The following data will appear in the following format:
-> Date: account balance / date payment received / scheduled payment amount / actual amount paid
-> Dec 2025: $24,676 / Aug 13, 2024 / $209 / $0
-> Nov 2025: $24,517 / Aug 13, 2024 / $209 / $0
-> Oct 2025: $24,363 / Aug 13, 2024 / $209 / $0
-> Sep 2025: $24,204 / Aug 13, 2024 / $209 / $0
-> Jul 2025: $23,891 / Aug 13, 2024 / $209 / $0
-> Jun 2025: $23,733 / Aug 13, 2024 / $209 / $0
-> May 2025: $23,578 / Aug 13, 2024 / $209 / $0
-> Apr 2025: $23,420 / Aug 13, 2024 / $209 / $0
-> Mar 2025: $23,107 / Aug 13, 2024 / $209 / $0
-> Feb 2025: $22,961 / Aug 13, 2024 / $209 / $0
-> Jan 2025: $22,802 / Aug 13, 2024 / $209 / $0
-> Dec 2024: $22,644 / Aug 13, 2024 / $209 / $0
-> Nov 2024: $22,489 / Aug 13, 2024 / $209 / $0
-> Oct 2024: $22,281 / Aug 13, 2024 / $209 / $0
-> Sep 2024: $22,151 / Aug 13, 2024 / $209 / $500
-> Aug 2024: $22,414 / Apr 22, 2024 / $209 / $0
-> Jul 2024: $22,251 / Apr 22, 2024 / $209 / $0
-> Jun 2024: $22,094 / Apr 22, 2024 / $209 / $0
-> May 2024: $21,932 / Apr 22, 2024 / $209 / $627
-> Apr 2024: $22,429 / Mar 27, 2024 / $209 / $209
-> Mar 2024: $22,424 / Feb 22, 2024 / $209 / $209
-> Feb 2024: $22,268 / Jan 26, 2024 / $209 / $209
-> The original amount of this account was $23,000
-> Payment history guide
-> Balance history
-> 2/3/26, 3:49 AM Experian - Access your credit report
+> this will be the new credit report exhibit look at the court record and tell me balances to show dont match. Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> Account number
+
+> 661563L....
+
+> Recent balance
+
+> $201,220 as of
+
+> 02/01/2026
+
+> Date opened
+
+> 07/02/2022
+
+> Status
+
+> Open. $24,599 past
+
+> due as of Feb 2026.
+
+> PO BOX 26501
+
+> INDIANAPOLIS, IN 46226
+
+> 3175474851
+
+> Address identification number
+
+> 0098348777
+
+> Type
+
+> Mortgage
+
+> Terms
+
+> 20 Years
+
+> Credit limit or
+
+> original amount
+
+> $196000
+
+> High balance
+
+> Not reported
+
+> Monthly payment
+
+> $1,242
+
+> Date of status
+
+> 12/2024
+
+> Responsibility
+
+> Individual
+
+> 2026
+
+> Feb
+
+> 180
+
+> Jan
+
+> 180
+
+> 2025
+
+> Dec
+
+> 180
+
+> Nov
+
+> 180
+
+> Oct
+
+> 180
+
+> Sep
+
+> ND
+
+> Aug
+
+> 180
+
+> Jul
+
+> 180
+
+> Jun
+
+> 180
+
+> May
+
+> 180
+
+> Apr
+
+> 180
+
+> Mar
+
+> 180
+
+> Feb
+
+> 180
+
+> Jan
+
+> 180
+
+> 2024
+
+> Dec
+
+> 180
+
+> Nov
+
+> 150
+
+> Oct
+
+> 120
+
+> Sep
+
+> 90
+
+> Aug
+
+> 60
+
+> Jul
+
+> 60
+
+> Jun
+
+> 30
+
+> May
+
+> 60
+
+> Apr
+
+> 30
+
+> Mar
+
+> OK
+
+> Feb
+
+> OK
+
+> Jan
+
+> OK
+
+> 2023
+
+> Dec
+
+> 30
+
+> Nov
+
+> 120
+
+> Oct
+
+> 90
+
+> Sep
+
+> 60
+
+> Aug
+
+> 30
+
+> Jul
+
+> OK
+
+> Jun
+
+> OK
+
+> May
+
+> OK
+
+> Apr
+
+> OK
+
+> Mar
+
+> OK
+
+> Feb
+
+> OK
+
+> Jan
+
+> OK
+
+> 2022
+
+> Dec
+
+> OK
+
+> Nov
+
+> OK
+
+> Oct
+
+> OK
+
+> Sep
+
+> OK
+
+> Aug
+
+> OK
+
+> 180 days past due as of Feb 2026 to Oct 2025,Aug 2025 to Dec 2024
+
+> 150 days past due as of Nov 2024
+
+> 120 days past due as of Oct 2024,Nov 2023
+
+> 90 days past due as of Sep 2024,Oct 2023
+
+> 60 days past due as of Aug 2024,Jul 2024,May 2024,Sep 2023
+
+> 30 days past due as of Jun 2024,Apr 2024,Dec 2023,Aug 2023
+
+> The following data will appear in the following format:
+
+> Date: account balance / date payment received / scheduled payment amount / actual amount paid
+
+> Dec 2025: $200,478 / Aug 23, 2024 / $1,242 / $0
+
+> Nov 2025: $199,735 / Aug 23, 2024 / $1,242 / $0
+
+> Oct 2025: $199,016 / Aug 23, 2024 / $1,242 / $0
+
+> Sep 2025: $198,273 / Aug 23, 2024 / $1,242 / $0
+
+> Jul 2025: $196,812 / Aug 23, 2024 / $1,242 / $0
+
+> Jun 2025: $196,069 / Aug 23, 2024 / $1,242 / $0
+
+> May 2025: $195,350 / Aug 23, 2024 / $1,242 / $0
+
+> Apr 2025: $194,607 / Aug 23, 2024 / $1,242 / $0
+
+> Mar 2025: $193,145 / Aug 23, 2024 / $1,242 / $0
+
+> Feb 2025: $192,472 / Aug 23, 2024 / $1,242 / $0
+
+> Jan 2025: $191,730 / Aug 23, 2024 / $1,242 / $0
+
+> Dec 2024: $190,987 / Aug 23, 2024 / $1,242 / $0
+
+> Nov 2024: $190,268 / Aug 23, 2024 / $1,242 / $0
+
+> Oct 2024: $189,476 / Aug 23, 2024 / $1,242 / $0
+
+> Sep 2024: $188,781 / Aug 23, 2024 / $1,242 / $242
+
+> Aug 2024: $188,281 / Jul 08, 2024 / $1,242 / $316
+
+> Jul 2024: $187,879 / Jun 26, 2024 / $1,242 / $920
+
+> Jun 2024: $188,055 / May 23, 2024 / $1,242 / $2,077
+
+> May 2024: $189,388 / Apr 16, 2024 / $1,242 / $12
+
+> Apr 2024: $188,706 / Mar 27, 2024 / $1,242 / $400
+
+> Mar 2024: $188,308 / Feb 21, 2024 / $1,242 / $1,242
+
+> Feb 2024: $188,823 / Jan 04, 2024 / $1,242 / $1,242
+
+> The original amount of this account was $196,000
+
+> Account history
+
+> Payment history guide
+
+> Balance history
+
+> Account name
+
+> FINANCIAL CNTR FIRST C U
+
+> Account number
+
+> 661563L....
+
+> Recent balance
+
+> $24,835 as of
+
+> 02/01/2026
+
+> Date opened
+
+> 07/02/2022
+
+> Status
+
+> Open. $3,684 past
+
+> due as of Feb 2026.
+
+> PO BOX 26501
+
+> INDIANAPOLIS, IN 46226
+
+> 3175474851
+
+> Address identification number
+
+> 0098348777
+
+> Type
+
+> Mortgage
+
+> Terms
+
+> 15 Years
+
+> On record until
+
+> Jun 2031
+
+> Credit limit or
+
+> original amount
+
+> $23000
+
+> High balance
+
+> Not reported
+
+> Monthly payment
+
+> $209
+
+> Date of status
+
+> 02/2025
+
+> Responsibility
+
+> Individual
+
+> 2026
+
+> Feb
+
+> 180
+
+> Jan
+
+> 180
+
+> 2025
+
+> Dec
+
+> 180
+
+> Nov
+
+> 180
+
+> Oct
+
+> 180
+
+> Sep
+
+> ND
+
+> Aug
+
+> 180
+
+> Jul
+
+> 180
+
+> Jun
+
+> 180
+
+> May
+
+> 180
+
+> Apr
+
+> 180
+
+> Mar
+
+> 180
+
+> Feb
+
+> 180
+
+> Jan
+
+> 150
+
+> 2024
+
+> Dec
+
+> 120
+
+> Nov
+
+> 90
+
+> Oct
+
+> 60
+
+> Sep
+
+> 30
+
+> Aug
+
+> 60
+
+> Jul
+
+> 30
+
+> Jun
+
+> OK
+
+> May
+
+> OK
+
+> Apr
+
+> 30
+
+> Mar
+
+> 30
+
+> Feb
+
+> OK
+
+> Jan
+
+> OK
+
+> 2023
+
+> Dec
+
+> 30
+
+> Nov
+
+> 60
+
+> Oct
+
+> 30
+
+> Sep
+
+> OK
+
+> Aug
+
+> OK
+
+> Jul
+
+> OK
+
+> Jun
+
+> OK
+
+> May
+
+> OK
+
+> Apr
+
+> OK
+
+> Mar
+
+> OK
+
+> Feb
+
+> OK
+
+> Jan
+
+> OK
+
+> 2022
+
+> Dec
+
+> OK
+
+> Nov
+
+> OK
+
+> Oct
+
+> OK
+
+> Sep
+
+> OK
+
+> Aug
+
+> OK
+
+> Account history
+
+> 2/3/26, 3:49 AM Experian - Access your credit report
+
+> https://www.experian.com/ncaconline/dispute?intcmp=dispute_acr_startNew 1/2
+
+> 180 days past due as of Feb 2026 to Oct 2025,Aug 2025 to Feb 2025
+
+> 150 days past due as of Jan 2025
+
+> 120 days past due as of Dec 2024
+
+> 90 days past due as of Nov 2024
+
+> 60 days past due as of Oct 2024,Aug 2024,Nov 2023
+
+> 30 days past due as of Sep 2024,Jul 2024,Apr 2024,Mar 2024,Dec 2023,Oct 2023
+
+> The following data will appear in the following format:
+
+> Date: account balance / date payment received / scheduled payment amount / actual amount paid
+
+> Dec 2025: $24,676 / Aug 13, 2024 / $209 / $0
+
+> Nov 2025: $24,517 / Aug 13, 2024 / $209 / $0
+
+> Oct 2025: $24,363 / Aug 13, 2024 / $209 / $0
+
+> Sep 2025: $24,204 / Aug 13, 2024 / $209 / $0
+
+> Jul 2025: $23,891 / Aug 13, 2024 / $209 / $0
+
+> Jun 2025: $23,733 / Aug 13, 2024 / $209 / $0
+
+> May 2025: $23,578 / Aug 13, 2024 / $209 / $0
+
+> Apr 2025: $23,420 / Aug 13, 2024 / $209 / $0
+
+> Mar 2025: $23,107 / Aug 13, 2024 / $209 / $0
+
+> Feb 2025: $22,961 / Aug 13, 2024 / $209 / $0
+
+> Jan 2025: $22,802 / Aug 13, 2024 / $209 / $0
+
+> Dec 2024: $22,644 / Aug 13, 2024 / $209 / $0
+
+> Nov 2024: $22,489 / Aug 13, 2024 / $209 / $0
+
+> Oct 2024: $22,281 / Aug 13, 2024 / $209 / $0
+
+> Sep 2024: $22,151 / Aug 13, 2024 / $209 / $500
+
+> Aug 2024: $22,414 / Apr 22, 2024 / $209 / $0
+
+> Jul 2024: $22,251 / Apr 22, 2024 / $209 / $0
+
+> Jun 2024: $22,094 / Apr 22, 2024 / $209 / $0
+
+> May 2024: $21,932 / Apr 22, 2024 / $209 / $627
+
+> Apr 2024: $22,429 / Mar 27, 2024 / $209 / $209
+
+> Mar 2024: $22,424 / Feb 22, 2024 / $209 / $209
+
+> Feb 2024: $22,268 / Jan 26, 2024 / $209 / $209
+
+> The original amount of this account was $23,000
+
+> Payment history guide
+
+> Balance history
+
+> 2/3/26, 3:49 AM Experian - Access your credit report
+
 > https://www.experian.com/ncaconline/dispute?intcmp=dispute_acr_startNew 2/2
 
 ### Assistant
@@ -12754,67 +14053,128 @@ canonical_ref: ""
 > And honestly, asking **$1,750 when the math says $1,760** makes you look even more reasonable.
 
 ### User
-> ok final check DEFENDANT’S MOTION FOR SANCTIONS PURSUANT TO INDIANA TRIAL RULE 11
-> STATE OF INDIANA
-> MARION SUPERIOR COURT 3
-> CAUSE NO. 49D03-2501-MF-002559
-> FINANCIAL CENTER FIRST CREDIT UNION
->  Plaintiff
-> v.
-> CODY RICE-VELASQUEZ, et al.
->  Defendants
-> 
-> Defendant, Cody Rice-Velasquez, appearing pro se, respectfully moves the Court for sanctions pursuant to Indiana Trial Rule 11 based on Plaintiff’s repeated filing of materially inconsistent sworn accounting statements concerning the Sheriff’s Sale proceeds, which have unnecessarily multiplied proceedings and required repeated responses from the Defendant.
-> 
-> I. Chronology of Contradictory Filings
-> The procedural record reflects a series of filings by Plaintiff presenting inconsistent accounting positions regarding the Sheriff’s Sale proceeds.
-> Specifically:
-> Plaintiff initially filed Sheriff’s Sale worksheets asserting that no surplus proceeds existed.
-> Plaintiff later filed a Petition to Pay Surplus Funds to the Clerk, acknowledging that the Sheriff’s Sale produced approximately $8,378 in surplus proceeds.
-> Plaintiff subsequently filed a Motion for Nunc Pro Tunc Order, asserting that the Sheriff’s Sale accounting contained a clerical interest error exceeding $10,000, and requesting retroactive modification of the accounting.
-> The Court denied Plaintiff’s request to retroactively alter the accounting.
-> These filings present materially different sworn explanations of the same Sheriff’s Sale proceeds.
-> 
-> II. Plaintiff’s Conduct Has Multiplied Proceedings
-> As a result of Plaintiff’s shifting accounting positions, Defendant has been required to repeatedly respond to new explanations concerning the same Sheriff’s Sale proceeds.
-> This pattern has required additional filings and review by the Court that would not have been necessary had Plaintiff presented a consistent and verified accounting in the first instance, thereby unnecessarily increasing the burden on both the Court and the Defendant.
-> Plaintiff’s repeated submission of inconsistent accounting statements concerning the same Sheriff’s Sale proceeds has required both the Court and the Defendant to repeatedly revisit issues that should have been resolved through accurate and verified accounting in the first instance. Trial Rule 11 exists in part to protect the integrity of the Court’s docket by discouraging filings that require the Court and opposing parties to repeatedly address shifting factual representations. Defendant therefore respectfully brings this motion not only to recover the reasonable costs incurred responding to these filings, but also to assist the Court in ensuring that future filings concerning the Sheriff’s Sale proceeds are supported by consistent and verified accounting.
-> 
-> III. Violation of Indiana Trial Rule 11
-> Indiana Trial Rule 11 provides that each filing with the Court constitutes a certification that the pleading or motion is well-grounded in fact after reasonable inquiry and is not presented for the purpose of causing unnecessary delay or needlessly increasing the cost of litigation.
-> Plaintiff’s repeated presentation of materially inconsistent sworn accounting positions concerning the same Sheriff’s Sale proceeds demonstrates that the representations presented to the Court cannot all  simultaneously be accurate and were not supported by a reasonable factual inquiry at the time they were filed.
-> 
-> IV. Costs Incurred by Defendant
-> Defendant has been required to spend substantial time reviewing Plaintiff’s filings, analyzing conflicting accounting statements, preparing responses, assembling exhibits, and addressing multiple revised positions concerning the Sheriff’s Sale proceeds.
-> Defendant has previously notified the Court of a documented disability, which requires additional time to carefully review financial records and verify accounting discrepancies.
-> In addition, Defendant’s displacement following the foreclosure proceedings has significantly disrupted Defendant’s professional accounting and consulting work that normally billed at rates of $69 hourly or higher. As a result, Defendant’s primary current income source has been rideshare driving, which averages approximately $32 per hour.
-> Defendant reasonably estimates that responding to Plaintiff’s contradictory filings and related proceedings has required approximately 55 hours of work.
-> Using Defendant’s current average hourly earnings of $32 per hour, the time required to respond to Plaintiff’s shifting accounting positions represents approximately $1,760.00 in reasonable costs:
-> Estimated Time: 55 hours  
-> Reasonable Hourly Rate: $32/hour  
-> Estimated Costs: $1,760.00~
-> Defendant does not seek punitive sanctions, but only reasonable compensation for the time required to respond to filings that presented materially inconsistent sworn accounting statements and unnecessarily expanded the proceedings before the Court.
-> Defendant respectfully requests that the Court consider these costs when determining appropriate sanctions pursuant to Indiana Trial Rule 11.
-> V. Sanctions Requested
-> WHEREFORE, Defendant respectfully requests that the Court:
-> Determine that Plaintiff’s contradictory sworn accounting filings violate Indiana Trial Rule 11;
-> Impose appropriate sanctions sufficient to deter further inconsistent filings;
-> Award Defendant reasonable costs in an amount the Court deems appropriate.
-> Alternatively, enter any other sanction or corrective order the Court finds appropriate under Trial Rule 11; and
-> Grant all other relief the Court deems just and proper.
-> 
-> Respectfully submitted,
-> /s/ Cody Rice-Velasquez
->  Cody Rice-Velasquez
->  Defendant, Pro Se
-> 
-> —
-> CERTIFICATE OF SERVICE
-> I certify that on this 9th day of March, 2026, a copy of the foregoing Motion for Sanctions Pursuant to Indiana Trial Rule 11 was served upon all parties of record through the Indiana E-Filing System.
-> 
-> Respectfully submitted,
-> /s/ Cody Rice-Velasquez
-> Cody Rice-Velasquez
+> ok final check DEFENDANT’S MOTION FOR SANCTIONS PURSUANT TO INDIANA TRIAL RULE 11
+
+> STATE OF INDIANA
+
+> MARION SUPERIOR COURT 3
+
+> CAUSE NO. 49D03-2501-MF-002559
+
+> FINANCIAL CENTER FIRST CREDIT UNION
+
+>  Plaintiff
+
+> v.
+
+> CODY RICE-VELASQUEZ, et al.
+
+>  Defendants
+
+> 
+
+> Defendant, Cody Rice-Velasquez, appearing pro se, respectfully moves the Court for sanctions pursuant to Indiana Trial Rule 11 based on Plaintiff’s repeated filing of materially inconsistent sworn accounting statements concerning the Sheriff’s Sale proceeds, which have unnecessarily multiplied proceedings and required repeated responses from the Defendant.
+
+> 
+
+> I. Chronology of Contradictory Filings
+
+> The procedural record reflects a series of filings by Plaintiff presenting inconsistent accounting positions regarding the Sheriff’s Sale proceeds.
+
+> Specifically:
+
+> Plaintiff initially filed Sheriff’s Sale worksheets asserting that no surplus proceeds existed.
+
+> Plaintiff later filed a Petition to Pay Surplus Funds to the Clerk, acknowledging that the Sheriff’s Sale produced approximately $8,378 in surplus proceeds.
+
+> Plaintiff subsequently filed a Motion for Nunc Pro Tunc Order, asserting that the Sheriff’s Sale accounting contained a clerical interest error exceeding $10,000, and requesting retroactive modification of the accounting.
+
+> The Court denied Plaintiff’s request to retroactively alter the accounting.
+
+> These filings present materially different sworn explanations of the same Sheriff’s Sale proceeds.
+
+> 
+
+> II. Plaintiff’s Conduct Has Multiplied Proceedings
+
+> As a result of Plaintiff’s shifting accounting positions, Defendant has been required to repeatedly respond to new explanations concerning the same Sheriff’s Sale proceeds.
+
+> This pattern has required additional filings and review by the Court that would not have been necessary had Plaintiff presented a consistent and verified accounting in the first instance, thereby unnecessarily increasing the burden on both the Court and the Defendant.
+
+> Plaintiff’s repeated submission of inconsistent accounting statements concerning the same Sheriff’s Sale proceeds has required both the Court and the Defendant to repeatedly revisit issues that should have been resolved through accurate and verified accounting in the first instance. Trial Rule 11 exists in part to protect the integrity of the Court’s docket by discouraging filings that require the Court and opposing parties to repeatedly address shifting factual representations. Defendant therefore respectfully brings this motion not only to recover the reasonable costs incurred responding to these filings, but also to assist the Court in ensuring that future filings concerning the Sheriff’s Sale proceeds are supported by consistent and verified accounting.
+
+> 
+
+> III. Violation of Indiana Trial Rule 11
+
+> Indiana Trial Rule 11 provides that each filing with the Court constitutes a certification that the pleading or motion is well-grounded in fact after reasonable inquiry and is not presented for the purpose of causing unnecessary delay or needlessly increasing the cost of litigation.
+
+> Plaintiff’s repeated presentation of materially inconsistent sworn accounting positions concerning the same Sheriff’s Sale proceeds demonstrates that the representations presented to the Court cannot all  simultaneously be accurate and were not supported by a reasonable factual inquiry at the time they were filed.
+
+> 
+
+> IV. Costs Incurred by Defendant
+
+> Defendant has been required to spend substantial time reviewing Plaintiff’s filings, analyzing conflicting accounting statements, preparing responses, assembling exhibits, and addressing multiple revised positions concerning the Sheriff’s Sale proceeds.
+
+> Defendant has previously notified the Court of a documented disability, which requires additional time to carefully review financial records and verify accounting discrepancies.
+
+> In addition, Defendant’s displacement following the foreclosure proceedings has significantly disrupted Defendant’s professional accounting and consulting work that normally billed at rates of $69 hourly or higher. As a result, Defendant’s primary current income source has been rideshare driving, which averages approximately $32 per hour.
+
+> Defendant reasonably estimates that responding to Plaintiff’s contradictory filings and related proceedings has required approximately 55 hours of work.
+
+> Using Defendant’s current average hourly earnings of $32 per hour, the time required to respond to Plaintiff’s shifting accounting positions represents approximately $1,760.00 in reasonable costs:
+
+> Estimated Time: 55 hours  
+
+> Reasonable Hourly Rate: $32/hour  
+
+> Estimated Costs: $1,760.00~
+
+> Defendant does not seek punitive sanctions, but only reasonable compensation for the time required to respond to filings that presented materially inconsistent sworn accounting statements and unnecessarily expanded the proceedings before the Court.
+
+> Defendant respectfully requests that the Court consider these costs when determining appropriate sanctions pursuant to Indiana Trial Rule 11.
+
+> V. Sanctions Requested
+
+> WHEREFORE, Defendant respectfully requests that the Court:
+
+> Determine that Plaintiff’s contradictory sworn accounting filings violate Indiana Trial Rule 11;
+
+> Impose appropriate sanctions sufficient to deter further inconsistent filings;
+
+> Award Defendant reasonable costs in an amount the Court deems appropriate.
+
+> Alternatively, enter any other sanction or corrective order the Court finds appropriate under Trial Rule 11; and
+
+> Grant all other relief the Court deems just and proper.
+
+> 
+
+> Respectfully submitted,
+
+> /s/ Cody Rice-Velasquez
+
+>  Cody Rice-Velasquez
+
+>  Defendant, Pro Se
+
+> 
+
+> —
+
+> CERTIFICATE OF SERVICE
+
+> I certify that on this 9th day of March, 2026, a copy of the foregoing Motion for Sanctions Pursuant to Indiana Trial Rule 11 was served upon all parties of record through the Indiana E-Filing System.
+
+> 
+
+> Respectfully submitted,
+
+> /s/ Cody Rice-Velasquez
+
+> Cody Rice-Velasquez
+
 > Defendant, Pro Se
 
 ### Assistant
@@ -13014,101 +14374,196 @@ canonical_ref: ""
 > If you want, I can also give you the **one-sentence docket description** that makes clerks categorize it correctly.
 
 ### User
-> check it 
-> Draft # 881335 - Case # 49D03-2501-MF-002559 - Judge Miller, Gary L - Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
-> 
-> check_circle
-> Case Information
-> 
-> check_circle
-> Parties
-> 
-> check_circle
-> Filings
-> 
-> check_circle
-> Service
-> 
-> check_circle
-> Fees
-> 
-> 6
-> Summary
-> Submission Agreements
-> 
-> Each “lead document” I uploaded matches the filing code I selected for it.
-> 
-> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
-> 
-> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
-> 
-> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
-> Case Information
-> Court Location
-> Marion Superior Court 3
-> Case Type
-> MF - Mortgage Foreclosure
-> Case Category
-> Civil
-> Judge
-> Miller, Gary L
-> Parties
-> Party Type
-> Party Name
-> Lead Attorney
-> Plaintiff
-> Financial Center First Credit Union
-> Scott Andrew Kainrath,Felix O'Neill Rippy,Michael E. Farrer
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> Defendant
-> American Express National Bank, N.A.
-> Defendant
-> Cody Rice-Velasquez
-> Filings
-> Filing Code
-> Filing Type
-> Filing Description
-> Client Ref #
-> Motion
-> eFile and Serve
-> Defendant’s Objection to Plaintiff’s Request for Hearing and Motion to Enforce Deposit of Surplus Proceeds
-> 
-> Motion
-> eFile and Serve
-> Defendant’s Motion for Sanctions Pursuant to Indiana Trial Rule 11
-> 
-> Service Contacts
-> Party Type
-> Party Name
-> Service Contacts
-> Plaintiff
-> Financial Center First Credit Union
-> person
-> 2
-> 
-> Defendant
-> JP Morgan Chase Bank, N.A.
-> person
-> 0
-> Defendant
-> American Express National Bank, N.A.
-> person
-> 0
-> Defendant
-> Cody Rice-Velasquez
-> person
-> 0
-> Other Service Contacts
-> person
-> 0
-> Fees
-> Payment account
-> card
-> Party responsible for envelope fees
-> Cody Rice-Velasquez
-> Total
-> $0.00
+> check it 
+
+> Draft # 881335 - Case # 49D03-2501-MF-002559 - Judge Miller, Gary L - Financial Center First Credit Union v.Cody Rice-Velasquez,American Express National Bank, N.A.,JP Morgan Chase Bank, N.A.
+
+> 
+
+> check_circle
+
+> Case Information
+
+> 
+
+> check_circle
+
+> Parties
+
+> 
+
+> check_circle
+
+> Filings
+
+> 
+
+> check_circle
+
+> Service
+
+> 
+
+> check_circle
+
+> Fees
+
+> 
+
+> 6
+
+> Summary
+
+> Submission Agreements
+
+> 
+
+> Each “lead document” I uploaded matches the filing code I selected for it.
+
+> 
+
+> If I filed a proposed order, I submitted it as a “lead document” with the filing code, “Proposed Order Filed.”
+
+> 
+
+> If I filed any documents considered confidential under Rules on Access to Court Records, I set the document security to confidential, and, if applicable, submitted a Notice of Exclusion.
+
+> 
+
+> I understand that a document marked as a public document, whether e-filed or conventionally filed, may be posted on the Internet.
+
+> Case Information
+
+> Court Location
+
+> Marion Superior Court 3
+
+> Case Type
+
+> MF - Mortgage Foreclosure
+
+> Case Category
+
+> Civil
+
+> Judge
+
+> Miller, Gary L
+
+> Parties
+
+> Party Type
+
+> Party Name
+
+> Lead Attorney
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> Scott Andrew Kainrath,Felix O'Neill Rippy,Michael E. Farrer
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> Filings
+
+> Filing Code
+
+> Filing Type
+
+> Filing Description
+
+> Client Ref #
+
+> Motion
+
+> eFile and Serve
+
+> Defendant’s Objection to Plaintiff’s Request for Hearing and Motion to Enforce Deposit of Surplus Proceeds
+
+> 
+
+> Motion
+
+> eFile and Serve
+
+> Defendant’s Motion for Sanctions Pursuant to Indiana Trial Rule 11
+
+> 
+
+> Service Contacts
+
+> Party Type
+
+> Party Name
+
+> Service Contacts
+
+> Plaintiff
+
+> Financial Center First Credit Union
+
+> person
+
+> 2
+
+> 
+
+> Defendant
+
+> JP Morgan Chase Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> American Express National Bank, N.A.
+
+> person
+
+> 0
+
+> Defendant
+
+> Cody Rice-Velasquez
+
+> person
+
+> 0
+
+> Other Service Contacts
+
+> person
+
+> 0
+
+> Fees
+
+> Payment account
+
+> card
+
+> Party responsible for envelope fees
+
+> Cody Rice-Velasquez
+
+> Total
+
+> $0.00
+
 > Grand Total
 
 ### Assistant

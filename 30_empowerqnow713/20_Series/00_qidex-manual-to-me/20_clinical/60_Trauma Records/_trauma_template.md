@@ -4,13 +4,13 @@ title: Trauma Template
 slug: trauma_template
 summary: Template for recording trauma with impact and clinical connections
 status: draft
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Template for documenting trauma events in lived experience track
-tags:
+tags: []
   - template
   - trauma
   - empowerqnow713
-keywords:
+keywords: []
   - trauma
   - lived_experience
   - timeline
@@ -23,14 +23,14 @@ updated: 2025-01-15T00:00:00Z
 qi_decimal: 1.2.0
 category: trauma
 system: qios
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 85b5396e5d884aeab3adc1d56ebf241e
 canonical_ref: ""
 template_key: master-template
 ---

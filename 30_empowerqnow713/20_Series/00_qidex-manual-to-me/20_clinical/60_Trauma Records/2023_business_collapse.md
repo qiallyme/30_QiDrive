@@ -4,16 +4,16 @@ title: Business Betrayal and Collapse Trauma
 slug: 2023_business_collapse
 summary: Business partnership exploitation leading to complete business collapse, loss of health insurance, and financial devastation
 status: active
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Trauma record documenting the business betrayal and collapse that triggered the vulnerability cascade
-tags:
+tags: []
   - trauma
   - financial
   - professional
   - relational
   - betrayal
   - empowerqnow713
-keywords:
+keywords: []
   - business_collapse
   - betrayal
   - financial_trauma
@@ -28,14 +28,14 @@ qi_decimal: 2.2.2
 category: trauma_record
 system: qios
 severity: 5
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9bf595db35264436b261d5669cddd8c9
 canonical_ref: ""
 template_key: master-template
 ---

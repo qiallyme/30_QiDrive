@@ -3,9 +3,9 @@ layout: page
 title: "Foreclosure Policy Critique"
 slug: "foreclosure_policy_critique"
 created_at: "2026-04-04 17:44:30"
-updated_at: "2026-04-04 17:44:30"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -257,20 +257,34 @@ canonical_ref: ""
 > I can turn this into a **cold internal memo section for your settlement / attorney packet** next.
 
 ### User
-> {'asset_pointer': 'sediment://file_000000005ee071f69d658d37ad009bfa', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 414, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 66968, 'width': 695}from the hud report. While foreclosure filing data does not tell us why each
-> foreclosure occurred, there are some common factors that
-> explain why households fall behind on their payments and
-> experience foreclosure filings, such as job loss, divorce or
-> death in the family, or health incidents. With the rapid
-> increase in housing prices since the start of the pandemic,
-> some homebuyers may have over-extended their budgets
-> to try to buy a home. They may have taken out a loan with
-> a higher interest rate, hoping to refinance later when the
-> rates dropped, but ended up stuck with their high rate. They
-> may have had an affordable monthly payment at the start,
-> but unexpected increases in property taxes and
-> homeowners insurance have created a new financial
-> struggle.
+> {'asset_pointer': 'sediment://file_000000005ee071f69d658d37ad009bfa', 'content_type': 'image_asset_pointer', 'fovea': None, 'height': 414, 'metadata': {'asset_pointer_link': None, 'container_pixel_height': None, 'container_pixel_width': None, 'dalle': None, 'emu_omit_glimpse_image': None, 'emu_patches_override': None, 'generation': None, 'gizmo': None, 'is_no_auth_placeholder': None, 'lpe_delta_encoding_channel': None, 'lpe_keep_patch_ijhw': None, 'sanitized': True, 'watermarked_asset_pointer': None}, 'size_bytes': 66968, 'width': 695}from the hud report. While foreclosure filing data does not tell us why each
+
+> foreclosure occurred, there are some common factors that
+
+> explain why households fall behind on their payments and
+
+> experience foreclosure filings, such as job loss, divorce or
+
+> death in the family, or health incidents. With the rapid
+
+> increase in housing prices since the start of the pandemic,
+
+> some homebuyers may have over-extended their budgets
+
+> to try to buy a home. They may have taken out a loan with
+
+> a higher interest rate, hoping to refinance later when the
+
+> rates dropped, but ended up stuck with their high rate. They
+
+> may have had an affordable monthly payment at the start,
+
+> but unexpected increases in property taxes and
+
+> homeowners insurance have created a new financial
+
+> struggle.
+
 > A homebuyer may also have overpaid on their home t, check, check, check x3m checkm check, + disability, i was probably the most vulnarble member at that time and the steam rolled me, judged me, and place me in life threatening danger, over a 250000 house that they are likely going ot take a loss on just because ..... meh who knows.
 
 ### Assistant
@@ -428,123 +442,240 @@ canonical_ref: ""
 > Send me the HUD excerpt text or report title and I’ll turn it into a **tight court-usable paragraph with footnote-ready language**.
 
 ### User
-> im sorry but the dates on this report, the timing of how they compressed timelines and when the new CEO started is starting to paint a picture that they wanted to have a pristen report and my home would have put them over 300k in forclosed assets. FINANCIAL CENTER FIRST CREDIT UNION
-> STATEMENT OF FINANCIAL CONDITION
-> 
-> Quarter Ended	:	2025-12-31
-> Updated	:	2026-02-03
-> 
-> (USD)
-> 
-> 
-> 2025-12-31
-> Have you adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL)? Select yes or no.	Yes
-> 
-> ASSETS	
-> CASH AND DEPOSITS:	
-> Cash on Hand	
-> 
-> Coin and Currency	4,857,271
-> 
-> Cash Items in Process of Collection	1,183,453
-> 
-> Total Cash on Hand	6,040,724
-> Cash on Deposit (Amounts Deposited in Financial Institutions)	
-> 
-> Cash on Deposit in Corporate Credit Unions	1,451,548
-> 
-> Cash on Deposit in a Federal Reserve Bank	27,370,864
-> 
-> Cash on Deposit in Other Financial Institutions	253,437
-> 
-> Total Cash on Deposit (Amounts Deposited in Financial Institutions)	29,075,849
-> Time deposits in commercial banks, S&Ls, savings banks, natural person credit unions, or corporate credit unions	2,198,401
-> All other deposits	(18,263)
-> TOTAL CASH AND OTHER DEPOSITS	37,296,711
-> 
-> INVESTMENT SECURITIES:	
-> Equity Securities	0
-> Trading Debt Securities	0
-> Available-for-Sale Debt Securities, at fair value	215,872,484
-> 
-> (Allowance for Credit Losses on Available-for-Sale Debt Securities)	0
-> Held-to-Maturity Debt Securities	0
-> Allowance for Credit Losses on Held-toMaturity Debt Securities	0
-> TOTAL INVESTMENT SECURITIES	215,872,484
-> 
-> OTHER INVESTMENTS:	
-> Other Investments	
-> 
-> Nonperpetual Capital Account	0
-> 
-> Perpetual Contributed Capital	746,015
-> 
-> All other investments	2,925,000
-> TOTAL OTHER INVESTMENTS	3,671,015
-> 
-> LOANS HELD FOR SALE:	
-> Loans Held for Sale	0
-> 
-> LOANS AND LEASES:	
-> TOTAL LOANS & LEASES (Number of Loans)	25,020
-> TOTAL LOANS & LEASES (Amount)	641,201,612
-> Less: Allowance for Loan & Lease Losses - Skip to Next Line if you have adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL).	0
-> Less: Allowance for Credit Losses on Loans & Leases - Enter an amount if you have adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL)	7,580,839
-> 
-> OTHER ASSETS:	
-> Foreclosed and Repossessed Assets	
-> 
-> Commercial	0
-> 
-> Consumer Real Estate	0
-> 
-> Consumer Vehicle	165,250
-> 
-> Consumer Other	0
-> 
-> Total Foreclosed and Repossessed Assets	165,250
-> Land and Building	8,146,377
-> Other Fixed Assets	4,280,536
-> NCUA Share Insurance Capitalization Deposit	7,313,835
-> Other Assets	
-> 
-> Goodwill	786,131
-> 
-> Mortgage servicing assets	0
-> 
-> Other Intangible Assets	1,088,239
-> 
-> Accrued Interest on Loans & Leases	2,301,221
-> 
-> Accrued Interest on Investments	954,205
-> 
-> All Other Assets	36,702,029
-> 
-> Total Other Assets	41,831,825
-> TOTAL ASSETS	952,198,806
-> 
-> LIABILITIES:	
-> Accounts Payable, Accrued Interest on Borrowings, and Other Liabilities	5,041,042
-> Accrued Dividends & Interest Payable on Shares & Deposits	0
-> Allowance for Credit Losses on Off-Balance Sheet Credit Exposures	112,408
-> Borrowings - If your credit union reports borrowings, complete Schedule C, Sections 4 and 5	32,500,000
-> 
-> Member Shares of All Types	807,724,590
-> Nonmember Deposits	744,000
-> Total Shares and Deposits	808,468,590
-> TOTAL LIABILITIES	846,122,040
-> 
-> EQUITY:	
-> Undivided Earnings	86,498,804
-> Other Reserves (Appropriations of Undivided Earnings)	0
-> Appropriation for Non-Conforming Investments (State Credit Unions ONLY)	0
-> Equity acquired in merger	18,940,000
-> Noncontrolling Interest in Consolidated Subsidiaries	0
-> Accumulated Unrealized Net Gains (Losses) on Cash Flow Hedges	(128,017)
-> Accumulated Unrealized Losses for OTTI (Due to Other Factors) on Held to Maturity Debt Securities - Skip this line if you have adopted ASC Topic 326 Financial Instruments - Credit Losses (CECL)	0
-> Accumulated Unrealized Gains (Losses) on Available for Sale Debt Securities	765,979
-> Other Comprehensive Income	0
-> Net Income (unless this amount is already included in Retained Earnings)	0
+> im sorry but the dates on this report, the timing of how they compressed timelines and when the new CEO started is starting to paint a picture that they wanted to have a pristen report and my home would have put them over 300k in forclosed assets. FINANCIAL CENTER FIRST CREDIT UNION
+
+> STATEMENT OF FINANCIAL CONDITION
+
+> 
+
+> Quarter Ended	:	2025-12-31
+
+> Updated	:	2026-02-03
+
+> 
+
+> (USD)
+
+> 
+
+> 
+
+> 2025-12-31
+
+> Have you adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL)? Select yes or no.	Yes
+
+> 
+
+> ASSETS	
+
+> CASH AND DEPOSITS:	
+
+> Cash on Hand	
+
+> 
+
+> Coin and Currency	4,857,271
+
+> 
+
+> Cash Items in Process of Collection	1,183,453
+
+> 
+
+> Total Cash on Hand	6,040,724
+
+> Cash on Deposit (Amounts Deposited in Financial Institutions)	
+
+> 
+
+> Cash on Deposit in Corporate Credit Unions	1,451,548
+
+> 
+
+> Cash on Deposit in a Federal Reserve Bank	27,370,864
+
+> 
+
+> Cash on Deposit in Other Financial Institutions	253,437
+
+> 
+
+> Total Cash on Deposit (Amounts Deposited in Financial Institutions)	29,075,849
+
+> Time deposits in commercial banks, S&Ls, savings banks, natural person credit unions, or corporate credit unions	2,198,401
+
+> All other deposits	(18,263)
+
+> TOTAL CASH AND OTHER DEPOSITS	37,296,711
+
+> 
+
+> INVESTMENT SECURITIES:	
+
+> Equity Securities	0
+
+> Trading Debt Securities	0
+
+> Available-for-Sale Debt Securities, at fair value	215,872,484
+
+> 
+
+> (Allowance for Credit Losses on Available-for-Sale Debt Securities)	0
+
+> Held-to-Maturity Debt Securities	0
+
+> Allowance for Credit Losses on Held-toMaturity Debt Securities	0
+
+> TOTAL INVESTMENT SECURITIES	215,872,484
+
+> 
+
+> OTHER INVESTMENTS:	
+
+> Other Investments	
+
+> 
+
+> Nonperpetual Capital Account	0
+
+> 
+
+> Perpetual Contributed Capital	746,015
+
+> 
+
+> All other investments	2,925,000
+
+> TOTAL OTHER INVESTMENTS	3,671,015
+
+> 
+
+> LOANS HELD FOR SALE:	
+
+> Loans Held for Sale	0
+
+> 
+
+> LOANS AND LEASES:	
+
+> TOTAL LOANS & LEASES (Number of Loans)	25,020
+
+> TOTAL LOANS & LEASES (Amount)	641,201,612
+
+> Less: Allowance for Loan & Lease Losses - Skip to Next Line if you have adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL).	0
+
+> Less: Allowance for Credit Losses on Loans & Leases - Enter an amount if you have adopted ASC Topic 326: Financial Instruments - Credit Losses (CECL)	7,580,839
+
+> 
+
+> OTHER ASSETS:	
+
+> Foreclosed and Repossessed Assets	
+
+> 
+
+> Commercial	0
+
+> 
+
+> Consumer Real Estate	0
+
+> 
+
+> Consumer Vehicle	165,250
+
+> 
+
+> Consumer Other	0
+
+> 
+
+> Total Foreclosed and Repossessed Assets	165,250
+
+> Land and Building	8,146,377
+
+> Other Fixed Assets	4,280,536
+
+> NCUA Share Insurance Capitalization Deposit	7,313,835
+
+> Other Assets	
+
+> 
+
+> Goodwill	786,131
+
+> 
+
+> Mortgage servicing assets	0
+
+> 
+
+> Other Intangible Assets	1,088,239
+
+> 
+
+> Accrued Interest on Loans & Leases	2,301,221
+
+> 
+
+> Accrued Interest on Investments	954,205
+
+> 
+
+> All Other Assets	36,702,029
+
+> 
+
+> Total Other Assets	41,831,825
+
+> TOTAL ASSETS	952,198,806
+
+> 
+
+> LIABILITIES:	
+
+> Accounts Payable, Accrued Interest on Borrowings, and Other Liabilities	5,041,042
+
+> Accrued Dividends & Interest Payable on Shares & Deposits	0
+
+> Allowance for Credit Losses on Off-Balance Sheet Credit Exposures	112,408
+
+> Borrowings - If your credit union reports borrowings, complete Schedule C, Sections 4 and 5	32,500,000
+
+> 
+
+> Member Shares of All Types	807,724,590
+
+> Nonmember Deposits	744,000
+
+> Total Shares and Deposits	808,468,590
+
+> TOTAL LIABILITIES	846,122,040
+
+> 
+
+> EQUITY:	
+
+> Undivided Earnings	86,498,804
+
+> Other Reserves (Appropriations of Undivided Earnings)	0
+
+> Appropriation for Non-Conforming Investments (State Credit Unions ONLY)	0
+
+> Equity acquired in merger	18,940,000
+
+> Noncontrolling Interest in Consolidated Subsidiaries	0
+
+> Accumulated Unrealized Net Gains (Losses) on Cash Flow Hedges	(128,017)
+
+> Accumulated Unrealized Losses for OTTI (Due to Other Factors) on Held to Maturity Debt Securities - Skip this line if you have adopted ASC Topic 326 Financial Instruments - Credit Losses (CECL)	0
+
+> Accumulated Unrealized Gains (Losses) on Available for Sale Debt Securities	765,979
+
+> Other Comprehensive Income	0
+
+> Net Income (unless this amount is already included in Retained Earnings)	0
+
 > TOTAL LIABILITIES, SHARES, AND EQUITY	952,198,806
 
 ### Assistant

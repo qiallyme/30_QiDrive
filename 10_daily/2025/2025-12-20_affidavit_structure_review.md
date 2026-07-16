@@ -3,9 +3,9 @@ layout: page
 title: "Affidavit structure review"
 slug: "affidavit_structure_review"
 created_at: "2025-12-20 14:16:55"
-updated_at: "2025-12-20 14:16:55"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

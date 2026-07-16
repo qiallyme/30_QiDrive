@@ -5,10 +5,10 @@ status: active
 generated_by: qilabs-housekeeping
 generated_at: "20260701-200047"
 layout: page
-slug: ""
+slug: i-am-that-we-are
 summary: ""
-created_at: ""
-updated_at: ""
+created_at: "2026-07-01T21:06:50-04:00"
+updated_at: "2026-07-16T06:49:35-04:00"
 author: ""
 owner: ""
 tags: []
@@ -18,7 +18,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: e33653939b874804bbe5a905a23553c1
 canonical_ref: ""
 source_type: manual
 template_key: master-template

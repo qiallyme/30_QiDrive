@@ -3,9 +3,9 @@ layout: page
 title: "Folder structure review"
 slug: "folder_structure_review"
 created_at: "2025-12-06 00:07:32"
-updated_at: "2025-12-06 00:07:32"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,310 +39,614 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> im working on finalizing this structure for the clients folder, it will basically mimic qios but with some nuances for the client this is what i have so far, recommendations corrections suggestions let me know. ```markdown
-> . 📂 c.bbr
-> ├── 📄 LICENSE
-> ├── 📄 README.md
-> └── 📂 _assets/
-> │  ├── 📄 familyphoto.jpg
-> │  ├── 📄 favicon.png
-> │  ├── 📄 file-4zYJAJB7JJrkgF8h9PtYN6-DJI_20250911_202708_760.JPG
-> │  ├── 📄 file-7insGsjzNq93fNr6He9Rjw-IMG_0511.PNG
-> │  ├── 📄 file-91yW2FUHWWCYrjueTUrGD5-IMG_0509.jpg
-> │  ├── 📄 file-Ai7MWuf9T2tEdeDWbQDosR-DJI_20250911_202316_260.JPG
-> │  ├── 📄 file-BzLD23JwAy4m6RtPHAZy5L-IMG_0514.jpg
-> │  ├── 📄 file-HHcteYMBp4Jby5wWPjYVcA-DJI_20250911_202435_604.JPG
-> │  ├── 📄 file-K5ACsbXZzAMjQQkC98hUPk-DJI_20250911_202245_541.JPG
-> │  ├── 📄 file-QAmyeKgAhuDt5xqh45Ndnc-DJI_20250911_202424_237.JPG
-> │  ├── 📄 file-QWZJ7r91wSnYNozHNeaL7H-DJI_20250911_202424_237.JPG
-> │  ├── 📄 file-Vuhpin827hMxucUVPkJW6N-DJI_20250911_202435_604.JPG
-> │  ├── 📄 file-Y71Hezp1ZF5nGazAPAeYFF-DJI_20250911_202751_719.JPG
-> ├── 📄 _index.md
-> └── 📂 _intake/
-> └── 📂 apps/
-> ├── 📄 builtbyrays.html
-> └── 📂 components/
-> └── 📂 data/
-> └── 📂 docs/
-> ├── 📄 env.example
-> └── 📂 kb_vault/
-> │  └── 📂 _start/
-> │    ├── 📄 00.10.10_Welcome.md
-> │    ├── 📄 10_Welcome.md
-> │    ├── 📄 20_About_QiAlly.md
-> │    ├── 📄 20_onboarding.md
-> │    ├── 📄 30_Value_and_Scope.md
-> │    ├── 📄 40_Policies_and_Procedures.md
-> │    ├── 📄 50_Onboarding.md
-> │    ├── 📄 60_How_To.md
-> │    ├── 📄 70_FAQ_and_Glossary.md
-> │    ├── 📄 About_QiAlly.md
-> │    ├── 📄 FAQ_and_Glossary.md
-> │    ├── 📄 Onboarding_Guide.md
-> │    ├── 📄 Policies_and_Procedures.md
-> │    ├── 📄 Using_This_System.md
-> │    ├── 📄 Value_and_Scope.md
-> │    ├── 📄 _00_Start.md
-> │    ├── 📄 _01_EOS.md
-> │    ├── 📄 _index.md
-> │    └── 📂 about/
-> │      ├── 📄 10_about-qially.md
-> │      ├── 📄 20_about-qisuite.md
-> │      ├── 📄 _30_About.md
-> │      ├── 📄 _index.md
-> │    └── 📂 engagements/
-> │      └── 📂 Contracts_and_Agreements/
-> │        ├── 📄 Drafts_and_Templates.md
-> │        ├── 📄 Signed_Contracts.md
-> │        ├── 📄 _Contracts_and_Agreements.md
-> │      ├── 📄 Project_Notes.md
-> │      └── 📂 Proposals_and_Offers/
-> │        ├── 📄 Active_Proposals.md
-> │        ├── 📄 Archived_Proposals.md
-> │        ├── 📄 _Proposals_and_Offers.md
-> │      └── 📂 Work_Summaries/
-> │        ├── 📄 Deliverables_and_Results.md
-> │        ├── 📄 Monthly_Summary.md
-> │        ├── 📄 _Work_Summaries.md
-> │      ├── 📄 _02_Engagements.md
-> │    └── 📂 investment/
-> │      ├── 📄 10_pricing.md
-> │      ├── 📄 20_proposal.md
-> │      ├── 📄 _50_Investment.md
-> │      ├── 📄 _index.md
-> │    └── 📂 onboarding/
-> │      ├── 📄 10_onboarding.md
-> │      ├── 📄 20_checklist.md
-> │      ├── 📄 30_data-request.md
-> │      ├── 📄 40_access-credentials.md
-> │      ├── 📄 50_kickoff.md
-> │      ├── 📄 _60_Onboarding.md
-> │      ├── 📄 _index.md
-> │    └── 📂 scope/
-> │      ├── 📄 10_services.md
-> │      ├── 📄 20_scope.md
-> │      ├── 📄 30_policies.md
-> │      ├── 📄 40_expectations.md
-> │      ├── 📄 50_agreements.md
-> │      ├── 📄 _40_Scope.md
-> │      ├── 📄 _index.md
-> │  └── 📂 brand/
-> │    ├── 📄 _10_Brand-Assets.md
-> │    ├── 📄 _index.md
-> │  └── 📂 business/
-> │  └── 📂 compliance/
-> │    ├── 📄 _Compliance_and_Regulations.md
-> │  └── 📂 finance/
-> │    ├── 📄 Finance_Notes.md
-> │    ├── 📄 _index.md
-> │    └── 📂 assets/
-> │      ├── 📄 MNT_OS - 2. Mileage & Vehicle Info.pdf
-> │      ├── 📄 _40_Assets.md
-> │      ├── 📄 _index.md
-> │    └── 📂 auths/
-> │      ├── 📄 10_info-release-template.md
-> │      └── 📂 20_Consent-Forms/
-> │        ├── 📄 _20_Consent-Forms.md
-> │        ├── 📄 _index.md
-> │      ├── 📄 Document Authorization to Represent General Liability Audit has been completed.pdf
-> │      ├── 📄 _40_Authorizations.md
-> │      ├── 📄 _index.md
-> │    └── 📂 banking/
-> │      ├── 📄 _70_Banking.md
-> │      ├── 📄 _Banking_and_Credit.md
-> │      ├── 📄 _index.md
-> │      └── 📂 check-images/
-> │        ├── 📄 _check-images.md
-> │        ├── 📄 _index.md
-> │    └── 📂 compliance/
-> │      ├── 📄 _50_Compliance.md
-> │      ├── 📄 _index.md
-> │    └── 📂 contracts/
-> │      ├── 📄 10_msa.md
-> │      ├── 📄 _20_contracts.md
-> │      ├── 📄 _index.md
-> │    └── 📂 expense/
-> │      ├── 📄 Parcel_8008931_Detail_History.pdf
-> │      ├── 📄 Parcel_8008931_PRC.pdf
-> │      ├── 📄 Parcel_8008931_PRC_Page1.png
-> │      ├── 📄 Parcel_8008931_PRC_Page2.png
-> │      ├── 📄 Parcel_8008931_PRC_Page3.png
-> │      ├── 📄 _30_Expenses.md
-> │      ├── 📄 _index.md
-> │    └── 📂 immigration/
-> │      └── 📂 00_Drafts_and_Strategy/
-> │        ├── 📄 2025-09-01_QiAlly_Leg_Strat_v01_final.pdf
-> │        ├── 📄 2025-09-05_QiAlly_Leg_Timeline_v01_final.pdf
-> │        ├── 📄 2025-09-10_QiAlly_Leg_Draft_v01_Aff_draft.pdf
-> │        ├── 📄 2025-09-15_QiAlly_Leg_Timeline_v01_review_final.pdf
-> │        ├── 📄 _00_Drafts_and_Strategy.md
-> │      └── 📂 10_Bio_and_IDs/
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_BC.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_ID.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_MC.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_PC.pdf
-> │        ├── 📄 _10_Bio_and_IDs.md
-> │      ├── 📄 10_case-overview.md
-> │      └── 📂 20_Employment/
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_OL.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_PS.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_W2.pdf
-> │        ├── 📄 _20_Employment.md
-> │      └── 📂 30_Financial/
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_BS.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_EIS.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_Tax.pdf
-> │        ├── 📄 _30_Financial.md
-> │      └── 📂 40_Other_Evidence/
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_LOS.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_PR.pdf
-> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_UB.pdf
-> │        ├── 📄 _40_Other_Evidence.md
-> │      └── 📂 50_Form_Filings/
-> │        └── 📂 10_I-589 (Asylum)/
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_Aff_v01_draft.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_CL_v01_final.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_EOS.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_SD.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_form.pdf
-> │          ├── 📄 _10_I-589 (Asylum).md
-> │        └── 📂 20_I-360 (Special Immigrant)/
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_CL_v01_final.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_EOSvc.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_PS_v01_final.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_form.pdf
-> │          ├── 📄 _20_I-360 (Special Immigrant).md
-> │        └── 📂 30_I-130 (Family Sponsorship)/
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_CL_v01_final.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_EOR_v01_final.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_SP.pdf
-> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_form.pdf
-> │          ├── 📄 _30_I-130 (Family Sponsorship).md
-> │        ├── 📄 _50_Form_Filings.md
-> │      ├── 📄 _60_Immigration.md
-> │      ├── 📄 _Immigration.md
-> │      ├── 📄 _index.md
-> │    └── 📂 income/
-> │      └── 📂 10_Invoices/
-> │        ├── 📄 _10_Invoices.md
-> │        ├── 📄 _index.md
-> │        ├── 📄 sample-invoice.json
-> │      ├── 📄 _20_Income.md
-> │      ├── 📄 _index.md
-> │    └── 📂 liabilities/
-> │      ├── 📄 _50_Liabilities.md
-> │      ├── 📄 _index.md
-> │    └── 📂 policies/
-> │      ├── 📄 _Contracts_and_Policies.md
-> │    └── 📂 receipts/
-> │      ├── 📄 _Receipts_and_Invoices.md
-> │      ├── 📄 rays_construction_billing_statement_single_file_html.html
-> │    └── 📂 reports/
-> │      └── 📂 10_budgets-forecasts/
-> │        ├── 📄 10_2025-q4-budget.md
-> │        ├── 📄 _10_budgets-forecasts.md
-> │        ├── 📄 _index.md
-> │      ├── 📄 Rays Construction LLC_Account List.xlsx
-> │      ├── 📄 _90_Reports.md
-> │      ├── 📄 _Reports_and_Statements.md
-> │      ├── 📄 _index.md
-> │    └── 📂 tax/
-> │      ├── 📄 10_1040_federal_return.md
-> │      ├── 📄 20_schedule_c.md
-> │      ├── 📄 Blanca_Refund_Forecast.pdf
-> │      ├── 📄 Rays Construction LLC_Profit and Loss by Month.csv
-> │      ├── 📄 _10_Tax-Returns.md
-> │      ├── 📄 _Tax_Returns.md
-> │      ├── 📄 _index.md
-> │      ├── 📄 _tax.md
-> │      ├── 📄 sch C.pdf
-> │  └── 📂 hr/
-> │    ├── 📄 _40_Human-Resources.md
-> │    ├── 📄 _index.md
-> │  ├── 📄 marketing.md
-> │  └── 📂 personal/
-> │    └── 📂 Education_and_Certificates/
-> │      ├── 📄 _Education_and_Certificates.md
-> │    └── 📂 Health_and_Wellness/
-> │      ├── 📄 _Health_and_Wellness.md
-> │    └── 📂 IDs_and_Documents/
-> │      ├── 📄 _IDs_and_Documents.md
-> │    └── 📂 Immigration_and_Travel/
-> │      ├── 📄 _Immigration_and_Travel.md
-> │    ├── 📄 Personal_Notes.md
-> │    ├── 📄 _Personal.md
-> │  └── 📂 resources/
-> │    ├── 📄 _60_Resources.md
-> │    ├── 📄 _Resources.md
-> │    ├── 📄 _index.md
-> │    └── 📂 guides/
-> │      └── 📂 10_Onboarding_Guides/
-> │        ├── 📄 _10_Onboarding_Guides.md
-> │        ├── 📄 _index.md
-> │      └── 📂 20_Training_Resources/
-> │        ├── 📄 _20_Training_Resources.md
-> │        ├── 📄 _index.md
-> │      └── 📂 30_System_Documentation/
-> │        ├── 📄 _30_System_Documentation.md
-> │        ├── 📄 _index.md
-> │      ├── 📄 _Checklists_and_Guides.md
-> │      ├── 📄 _Guides.md
-> │      ├── 📄 _index.md
-> │    └── 📂 legal/
-> │      ├── 📄 _10_Legal_Resources.md
-> │      ├── 📄 _index.md
-> │    └── 📂 marketing/
-> │      ├── 📄 _20_Marketing_Assets.md
-> │      ├── 📄 _index.md
-> │    └── 📂 media/
-> │      ├── 📄 _Media_and_Visuals.md
-> │    └── 📂 misc/
-> │      ├── 📄 _Misc_References.md
-> │    └── 📂 sample/
-> │      └── 📂 10_Client_Samples/
-> │        ├── 📄 _10_Client_Samples.md
-> │        ├── 📄 _index.md
-> │      └── 📂 20_Project_Samples/
-> │        ├── 📄 _20_Project_Samples.md
-> │        ├── 📄 _index.md
-> │      ├── 📄 _Samples.md
-> │      ├── 📄 _index.md
-> │    └── 📂 sops/
-> │      ├── 📄 10_incident-001.md
-> │      ├── 📄 20_release.md
-> │      ├── 📄 _60_Processes.md
-> │      ├── 📄 _Procedures_and_SOPs.md
-> │      ├── 📄 _index.md
-> │  └── 📂 tech/
-> │    ├── 📄 _50_Technology.md
-> │    ├── 📄 _index.md
-> └── 📂 logs/
-> ├── 📄 package-lock.json
-> ├── 📄 package.json
-> └── 📂 projects/
-> ├── 📄 qios_agent.py
-> └── 📂 sites/
-> └── 📂 templates/
-> │  └── 📂 10_Document_Templates/
-> │    ├── 📄 _10_Document_Templates.md
-> │    ├── 📄 _index.md
-> │  └── 📂 20_Form_Templates/
-> │    ├── 📄 _20_Form_Templates.md
-> │    ├── 📄 _index.md
-> │  └── 📂 30_Email_Templates/
-> │    ├── 📄 _30_Email_Templates.md
-> │    ├── 📄 _index.md
-> │  └── 📂 50_Process_Templates/
-> │    ├── 📄 _50_Process_Templates.md
-> │    ├── 📄 _index.md
-> │  ├── 📄 _Templates.md
-> │  ├── 📄 _Templates_and_Forms.md
-> │  ├── 📄 _Templates_and_Guides.md
-> │  ├── 📄 _index.md
-> └── 📂 tools/
-> │  ├── 📄 _scripts.md
-> │  ├── 📄 sync-kb-to-starlight.mjs
-> └── 📂 workers/
+> im working on finalizing this structure for the clients folder, it will basically mimic qios but with some nuances for the client this is what i have so far, recommendations corrections suggestions let me know. ```markdown
+
+> . 📂 c.bbr
+
+> ├── 📄 LICENSE
+
+> ├── 📄 README.md
+
+> └── 📂 _assets/
+
+> │  ├── 📄 familyphoto.jpg
+
+> │  ├── 📄 favicon.png
+
+> │  ├── 📄 file-4zYJAJB7JJrkgF8h9PtYN6-DJI_20250911_202708_760.JPG
+
+> │  ├── 📄 file-7insGsjzNq93fNr6He9Rjw-IMG_0511.PNG
+
+> │  ├── 📄 file-91yW2FUHWWCYrjueTUrGD5-IMG_0509.jpg
+
+> │  ├── 📄 file-Ai7MWuf9T2tEdeDWbQDosR-DJI_20250911_202316_260.JPG
+
+> │  ├── 📄 file-BzLD23JwAy4m6RtPHAZy5L-IMG_0514.jpg
+
+> │  ├── 📄 file-HHcteYMBp4Jby5wWPjYVcA-DJI_20250911_202435_604.JPG
+
+> │  ├── 📄 file-K5ACsbXZzAMjQQkC98hUPk-DJI_20250911_202245_541.JPG
+
+> │  ├── 📄 file-QAmyeKgAhuDt5xqh45Ndnc-DJI_20250911_202424_237.JPG
+
+> │  ├── 📄 file-QWZJ7r91wSnYNozHNeaL7H-DJI_20250911_202424_237.JPG
+
+> │  ├── 📄 file-Vuhpin827hMxucUVPkJW6N-DJI_20250911_202435_604.JPG
+
+> │  ├── 📄 file-Y71Hezp1ZF5nGazAPAeYFF-DJI_20250911_202751_719.JPG
+
+> ├── 📄 _index.md
+
+> └── 📂 _intake/
+
+> └── 📂 apps/
+
+> ├── 📄 builtbyrays.html
+
+> └── 📂 components/
+
+> └── 📂 data/
+
+> └── 📂 docs/
+
+> ├── 📄 env.example
+
+> └── 📂 kb_vault/
+
+> │  └── 📂 _start/
+
+> │    ├── 📄 00.10.10_Welcome.md
+
+> │    ├── 📄 10_Welcome.md
+
+> │    ├── 📄 20_About_QiAlly.md
+
+> │    ├── 📄 20_onboarding.md
+
+> │    ├── 📄 30_Value_and_Scope.md
+
+> │    ├── 📄 40_Policies_and_Procedures.md
+
+> │    ├── 📄 50_Onboarding.md
+
+> │    ├── 📄 60_How_To.md
+
+> │    ├── 📄 70_FAQ_and_Glossary.md
+
+> │    ├── 📄 About_QiAlly.md
+
+> │    ├── 📄 FAQ_and_Glossary.md
+
+> │    ├── 📄 Onboarding_Guide.md
+
+> │    ├── 📄 Policies_and_Procedures.md
+
+> │    ├── 📄 Using_This_System.md
+
+> │    ├── 📄 Value_and_Scope.md
+
+> │    ├── 📄 _00_Start.md
+
+> │    ├── 📄 _01_EOS.md
+
+> │    ├── 📄 _index.md
+
+> │    └── 📂 about/
+
+> │      ├── 📄 10_about-qially.md
+
+> │      ├── 📄 20_about-qisuite.md
+
+> │      ├── 📄 _30_About.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 engagements/
+
+> │      └── 📂 Contracts_and_Agreements/
+
+> │        ├── 📄 Drafts_and_Templates.md
+
+> │        ├── 📄 Signed_Contracts.md
+
+> │        ├── 📄 _Contracts_and_Agreements.md
+
+> │      ├── 📄 Project_Notes.md
+
+> │      └── 📂 Proposals_and_Offers/
+
+> │        ├── 📄 Active_Proposals.md
+
+> │        ├── 📄 Archived_Proposals.md
+
+> │        ├── 📄 _Proposals_and_Offers.md
+
+> │      └── 📂 Work_Summaries/
+
+> │        ├── 📄 Deliverables_and_Results.md
+
+> │        ├── 📄 Monthly_Summary.md
+
+> │        ├── 📄 _Work_Summaries.md
+
+> │      ├── 📄 _02_Engagements.md
+
+> │    └── 📂 investment/
+
+> │      ├── 📄 10_pricing.md
+
+> │      ├── 📄 20_proposal.md
+
+> │      ├── 📄 _50_Investment.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 onboarding/
+
+> │      ├── 📄 10_onboarding.md
+
+> │      ├── 📄 20_checklist.md
+
+> │      ├── 📄 30_data-request.md
+
+> │      ├── 📄 40_access-credentials.md
+
+> │      ├── 📄 50_kickoff.md
+
+> │      ├── 📄 _60_Onboarding.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 scope/
+
+> │      ├── 📄 10_services.md
+
+> │      ├── 📄 20_scope.md
+
+> │      ├── 📄 30_policies.md
+
+> │      ├── 📄 40_expectations.md
+
+> │      ├── 📄 50_agreements.md
+
+> │      ├── 📄 _40_Scope.md
+
+> │      ├── 📄 _index.md
+
+> │  └── 📂 brand/
+
+> │    ├── 📄 _10_Brand-Assets.md
+
+> │    ├── 📄 _index.md
+
+> │  └── 📂 business/
+
+> │  └── 📂 compliance/
+
+> │    ├── 📄 _Compliance_and_Regulations.md
+
+> │  └── 📂 finance/
+
+> │    ├── 📄 Finance_Notes.md
+
+> │    ├── 📄 _index.md
+
+> │    └── 📂 assets/
+
+> │      ├── 📄 MNT_OS - 2. Mileage & Vehicle Info.pdf
+
+> │      ├── 📄 _40_Assets.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 auths/
+
+> │      ├── 📄 10_info-release-template.md
+
+> │      └── 📂 20_Consent-Forms/
+
+> │        ├── 📄 _20_Consent-Forms.md
+
+> │        ├── 📄 _index.md
+
+> │      ├── 📄 Document Authorization to Represent General Liability Audit has been completed.pdf
+
+> │      ├── 📄 _40_Authorizations.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 banking/
+
+> │      ├── 📄 _70_Banking.md
+
+> │      ├── 📄 _Banking_and_Credit.md
+
+> │      ├── 📄 _index.md
+
+> │      └── 📂 check-images/
+
+> │        ├── 📄 _check-images.md
+
+> │        ├── 📄 _index.md
+
+> │    └── 📂 compliance/
+
+> │      ├── 📄 _50_Compliance.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 contracts/
+
+> │      ├── 📄 10_msa.md
+
+> │      ├── 📄 _20_contracts.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 expense/
+
+> │      ├── 📄 Parcel_8008931_Detail_History.pdf
+
+> │      ├── 📄 Parcel_8008931_PRC.pdf
+
+> │      ├── 📄 Parcel_8008931_PRC_Page1.png
+
+> │      ├── 📄 Parcel_8008931_PRC_Page2.png
+
+> │      ├── 📄 Parcel_8008931_PRC_Page3.png
+
+> │      ├── 📄 _30_Expenses.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 immigration/
+
+> │      └── 📂 00_Drafts_and_Strategy/
+
+> │        ├── 📄 2025-09-01_QiAlly_Leg_Strat_v01_final.pdf
+
+> │        ├── 📄 2025-09-05_QiAlly_Leg_Timeline_v01_final.pdf
+
+> │        ├── 📄 2025-09-10_QiAlly_Leg_Draft_v01_Aff_draft.pdf
+
+> │        ├── 📄 2025-09-15_QiAlly_Leg_Timeline_v01_review_final.pdf
+
+> │        ├── 📄 _00_Drafts_and_Strategy.md
+
+> │      └── 📂 10_Bio_and_IDs/
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_BC.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_ID.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_MC.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Bio_PC.pdf
+
+> │        ├── 📄 _10_Bio_and_IDs.md
+
+> │      ├── 📄 10_case-overview.md
+
+> │      └── 📂 20_Employment/
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_OL.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_PS.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Emp_W2.pdf
+
+> │        ├── 📄 _20_Employment.md
+
+> │      └── 📂 30_Financial/
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_BS.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_EIS.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Fin_Tax.pdf
+
+> │        ├── 📄 _30_Financial.md
+
+> │      └── 📂 40_Other_Evidence/
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_LOS.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_PR.pdf
+
+> │        ├── 📄 2025-09-28_QiAlly_Leg_Other_UB.pdf
+
+> │        ├── 📄 _40_Other_Evidence.md
+
+> │      └── 📂 50_Form_Filings/
+
+> │        └── 📂 10_I-589 (Asylum)/
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_Aff_v01_draft.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_CL_v01_final.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_EOS.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_SD.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i589_form.pdf
+
+> │          ├── 📄 _10_I-589 (Asylum).md
+
+> │        └── 📂 20_I-360 (Special Immigrant)/
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_CL_v01_final.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_EOSvc.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_PS_v01_final.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i360_form.pdf
+
+> │          ├── 📄 _20_I-360 (Special Immigrant).md
+
+> │        └── 📂 30_I-130 (Family Sponsorship)/
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_CL_v01_final.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_EOR_v01_final.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_SP.pdf
+
+> │          ├── 📄 2025-09-28_QiAlly_Leg_i130_form.pdf
+
+> │          ├── 📄 _30_I-130 (Family Sponsorship).md
+
+> │        ├── 📄 _50_Form_Filings.md
+
+> │      ├── 📄 _60_Immigration.md
+
+> │      ├── 📄 _Immigration.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 income/
+
+> │      └── 📂 10_Invoices/
+
+> │        ├── 📄 _10_Invoices.md
+
+> │        ├── 📄 _index.md
+
+> │        ├── 📄 sample-invoice.json
+
+> │      ├── 📄 _20_Income.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 liabilities/
+
+> │      ├── 📄 _50_Liabilities.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 policies/
+
+> │      ├── 📄 _Contracts_and_Policies.md
+
+> │    └── 📂 receipts/
+
+> │      ├── 📄 _Receipts_and_Invoices.md
+
+> │      ├── 📄 rays_construction_billing_statement_single_file_html.html
+
+> │    └── 📂 reports/
+
+> │      └── 📂 10_budgets-forecasts/
+
+> │        ├── 📄 10_2025-q4-budget.md
+
+> │        ├── 📄 _10_budgets-forecasts.md
+
+> │        ├── 📄 _index.md
+
+> │      ├── 📄 Rays Construction LLC_Account List.xlsx
+
+> │      ├── 📄 _90_Reports.md
+
+> │      ├── 📄 _Reports_and_Statements.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 tax/
+
+> │      ├── 📄 10_1040_federal_return.md
+
+> │      ├── 📄 20_schedule_c.md
+
+> │      ├── 📄 Blanca_Refund_Forecast.pdf
+
+> │      ├── 📄 Rays Construction LLC_Profit and Loss by Month.csv
+
+> │      ├── 📄 _10_Tax-Returns.md
+
+> │      ├── 📄 _Tax_Returns.md
+
+> │      ├── 📄 _index.md
+
+> │      ├── 📄 _tax.md
+
+> │      ├── 📄 sch C.pdf
+
+> │  └── 📂 hr/
+
+> │    ├── 📄 _40_Human-Resources.md
+
+> │    ├── 📄 _index.md
+
+> │  ├── 📄 marketing.md
+
+> │  └── 📂 personal/
+
+> │    └── 📂 Education_and_Certificates/
+
+> │      ├── 📄 _Education_and_Certificates.md
+
+> │    └── 📂 Health_and_Wellness/
+
+> │      ├── 📄 _Health_and_Wellness.md
+
+> │    └── 📂 IDs_and_Documents/
+
+> │      ├── 📄 _IDs_and_Documents.md
+
+> │    └── 📂 Immigration_and_Travel/
+
+> │      ├── 📄 _Immigration_and_Travel.md
+
+> │    ├── 📄 Personal_Notes.md
+
+> │    ├── 📄 _Personal.md
+
+> │  └── 📂 resources/
+
+> │    ├── 📄 _60_Resources.md
+
+> │    ├── 📄 _Resources.md
+
+> │    ├── 📄 _index.md
+
+> │    └── 📂 guides/
+
+> │      └── 📂 10_Onboarding_Guides/
+
+> │        ├── 📄 _10_Onboarding_Guides.md
+
+> │        ├── 📄 _index.md
+
+> │      └── 📂 20_Training_Resources/
+
+> │        ├── 📄 _20_Training_Resources.md
+
+> │        ├── 📄 _index.md
+
+> │      └── 📂 30_System_Documentation/
+
+> │        ├── 📄 _30_System_Documentation.md
+
+> │        ├── 📄 _index.md
+
+> │      ├── 📄 _Checklists_and_Guides.md
+
+> │      ├── 📄 _Guides.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 legal/
+
+> │      ├── 📄 _10_Legal_Resources.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 marketing/
+
+> │      ├── 📄 _20_Marketing_Assets.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 media/
+
+> │      ├── 📄 _Media_and_Visuals.md
+
+> │    └── 📂 misc/
+
+> │      ├── 📄 _Misc_References.md
+
+> │    └── 📂 sample/
+
+> │      └── 📂 10_Client_Samples/
+
+> │        ├── 📄 _10_Client_Samples.md
+
+> │        ├── 📄 _index.md
+
+> │      └── 📂 20_Project_Samples/
+
+> │        ├── 📄 _20_Project_Samples.md
+
+> │        ├── 📄 _index.md
+
+> │      ├── 📄 _Samples.md
+
+> │      ├── 📄 _index.md
+
+> │    └── 📂 sops/
+
+> │      ├── 📄 10_incident-001.md
+
+> │      ├── 📄 20_release.md
+
+> │      ├── 📄 _60_Processes.md
+
+> │      ├── 📄 _Procedures_and_SOPs.md
+
+> │      ├── 📄 _index.md
+
+> │  └── 📂 tech/
+
+> │    ├── 📄 _50_Technology.md
+
+> │    ├── 📄 _index.md
+
+> └── 📂 logs/
+
+> ├── 📄 package-lock.json
+
+> ├── 📄 package.json
+
+> └── 📂 projects/
+
+> ├── 📄 qios_agent.py
+
+> └── 📂 sites/
+
+> └── 📂 templates/
+
+> │  └── 📂 10_Document_Templates/
+
+> │    ├── 📄 _10_Document_Templates.md
+
+> │    ├── 📄 _index.md
+
+> │  └── 📂 20_Form_Templates/
+
+> │    ├── 📄 _20_Form_Templates.md
+
+> │    ├── 📄 _index.md
+
+> │  └── 📂 30_Email_Templates/
+
+> │    ├── 📄 _30_Email_Templates.md
+
+> │    ├── 📄 _index.md
+
+> │  └── 📂 50_Process_Templates/
+
+> │    ├── 📄 _50_Process_Templates.md
+
+> │    ├── 📄 _index.md
+
+> │  ├── 📄 _Templates.md
+
+> │  ├── 📄 _Templates_and_Forms.md
+
+> │  ├── 📄 _Templates_and_Guides.md
+
+> │  ├── 📄 _index.md
+
+> └── 📂 tools/
+
+> │  ├── 📄 _scripts.md
+
+> │  ├── 📄 sync-kb-to-starlight.mjs
+
+> └── 📂 workers/
+
 > ```
 
 ### Assistant
@@ -7899,45 +8203,84 @@ canonical_ref: ""
 > - Give you **patch-level edits** instead of more theory.
 
 ### User
-> ```markdown
-> . 📂 qi-client-template
-> ├── 📄 Client_Spawner_MVP_Requirements.md
-> ├── 📄 README.md
-> ├── 📄 REQUIREMENTS_VERIFICATION.md
-> ├── 📄 STATUS.md
-> ├── 📄 TEMPLATE_STRUCTURE_VERIFICATION.md
-> ├── 📄 client_spawner.py
-> ├── 📄 qi_client_registry.json
-> ├── 📄 start.bat
-> ├── 📄 start.sh
-> └── 📂 templates/
-> │  └── 📂 client_agent/
-> │    ├── 📄 client_agent.py
-> │  └── 📂 kb_site/
-> │    ├── 📄 README.md
-> │    └── 📂 css/
-> │      ├── 📄 style.css
-> │      ├── 📄 style.css.tpl
-> │    ├── 📄 index.html
-> │  └── 📂 kb_vault_seed/
-> │    ├── 📄 00_welcome.md
-> │    ├── 📄 10_getting_started.md
-> │    ├── 📄 README.md
-> │  └── 📂 portal_shell/
-> │    └── 📂 css/
-> │      ├── 📄 style.css
-> │      ├── 📄 style.css.tpl
-> │    └── 📂 data/
-> │    ├── 📄 index.html
-> │    └── 📂 js/
-> │      ├── 📄 chat.js
-> │      ├── 📄 search.js
-> │  └── 📂 system_templates/
-> │    ├── 📄 00_sample_sop.md
-> │    ├── 📄 10_sample_email_template.md
-> │    ├── 📄 README.md
-> │    ├── 📄 document_proposal_template.md
-> │    └── 📄 email_onboarding_welcome.md
+> ```markdown
+
+> . 📂 qi-client-template
+
+> ├── 📄 Client_Spawner_MVP_Requirements.md
+
+> ├── 📄 README.md
+
+> ├── 📄 REQUIREMENTS_VERIFICATION.md
+
+> ├── 📄 STATUS.md
+
+> ├── 📄 TEMPLATE_STRUCTURE_VERIFICATION.md
+
+> ├── 📄 client_spawner.py
+
+> ├── 📄 qi_client_registry.json
+
+> ├── 📄 start.bat
+
+> ├── 📄 start.sh
+
+> └── 📂 templates/
+
+> │  └── 📂 client_agent/
+
+> │    ├── 📄 client_agent.py
+
+> │  └── 📂 kb_site/
+
+> │    ├── 📄 README.md
+
+> │    └── 📂 css/
+
+> │      ├── 📄 style.css
+
+> │      ├── 📄 style.css.tpl
+
+> │    ├── 📄 index.html
+
+> │  └── 📂 kb_vault_seed/
+
+> │    ├── 📄 00_welcome.md
+
+> │    ├── 📄 10_getting_started.md
+
+> │    ├── 📄 README.md
+
+> │  └── 📂 portal_shell/
+
+> │    └── 📂 css/
+
+> │      ├── 📄 style.css
+
+> │      ├── 📄 style.css.tpl
+
+> │    └── 📂 data/
+
+> │    ├── 📄 index.html
+
+> │    └── 📂 js/
+
+> │      ├── 📄 chat.js
+
+> │      ├── 📄 search.js
+
+> │  └── 📂 system_templates/
+
+> │    ├── 📄 00_sample_sop.md
+
+> │    ├── 📄 10_sample_email_template.md
+
+> │    ├── 📄 README.md
+
+> │    ├── 📄 document_proposal_template.md
+
+> │    └── 📄 email_onboarding_welcome.md
+
 > ```
 
 ### Assistant

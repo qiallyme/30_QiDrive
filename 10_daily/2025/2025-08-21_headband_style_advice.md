@@ -3,9 +3,9 @@ layout: page
 title: "Headband style advice"
 slug: "headband_style_advice"
 created_at: "2025-08-21 21:31:23"
-updated_at: "2025-08-21 21:31:23"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

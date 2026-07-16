@@ -4,11 +4,11 @@ author: "QiAlly LegalEase"
 category: "Legal Documentation"
 tags: ["estate-planning", "complete-package", "legal-documents"]
 layout: page
-slug: ""
+slug: complete-legal-estate-package
 summary: ""
 status: active
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 owner: ""
 keywords: []
 aliases: []
@@ -16,7 +16,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 0732b627e99540d189a6938cb263524a
 canonical_ref: ""
 source_type: manual
 template_key: master-template

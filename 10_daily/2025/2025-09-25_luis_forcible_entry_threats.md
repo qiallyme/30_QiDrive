@@ -3,7 +3,7 @@ layout: page
 title: "Luis - Forcible Entry & Threats"
 slug: "luis_forcible_entry_threats"
 created_at: "2025-09-25"
-updated_at: "2025-09-25"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
 tags: ["trauma"]
 category: "trauma"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 24cb503aa7bf41ac952e1bcc34ecb81c
 canonical_ref: ""
 ---
 

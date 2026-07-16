@@ -3,9 +3,9 @@ layout: page
 title: "Over-explaining and Miscommunication"
 slug: "over_explaining_and_miscommunication"
 created_at: "2026-05-02 05:12:07"
-updated_at: "2026-05-02 05:12:07"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

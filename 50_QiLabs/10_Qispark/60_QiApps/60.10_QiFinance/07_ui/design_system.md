@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Design System
-slug: ""
+slug: design-system
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 6eb3ff7ba2424f1e9135eee3f2020b49
 canonical_ref: ""
 source_type: manual
 template_key: master-template

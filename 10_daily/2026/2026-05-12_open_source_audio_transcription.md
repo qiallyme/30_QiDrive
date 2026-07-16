@@ -3,9 +3,9 @@ layout: page
 title: "Open Source Audio Transcription"
 slug: "open_source_audio_transcription"
 created_at: "2026-05-12 00:20:18"
-updated_at: "2026-05-12 00:20:18"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -763,663 +763,1320 @@ canonical_ref: ""
 > You’re early enough to avoid enterprise taxonomy hell.
 
 ### User
-> ok, here is the full tree now what should the tree actually be. {
->   "name": "10_blueprint",
->   "path": "c:\\QiLabs\\_QiAccess_Start\\docs\\10_blueprint",
->   "type": "directory",
->   "children": [
->     {
->       "name": "10_governance",
->       "type": "folder",
->       "children": [
->         {
->           "name": "01_principles.md",
->           "type": "file"
->         },
->         {
->           "name": "02_agent_rules.md",
->           "type": "file"
->         },
->         {
->           "name": "03_standards.md",
->           "type": "file"
->         },
->         {
->           "name": "04_registry.md",
->           "type": "file"
->         },
->         {
->           "name": "05_policies.md",
->           "type": "file"
->         },
->         {
->           "name": "06_decisions.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "20_architecture",
->       "type": "folder",
->       "children": [
->         {
->           "name": "01_identity.md",
->           "type": "file"
->         },
->         {
->           "name": "02_component_map.md",
->           "type": "file"
->         },
->         {
->           "name": "03_system_model.md",
->           "type": "file"
->         },
->         {
->           "name": "04_device_model.md",
->           "type": "file"
->         },
->         {
->           "name": "05_runtime_zones.md",
->           "type": "file"
->         },
->         {
->           "name": "06_service_boundaries.md",
->           "type": "file"
->         },
->         {
->           "name": "07_data_flow.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "30_data",
->       "type": "folder",
->       "children": [
->         {
->           "name": "01_infrastructure_layout.md",
->           "type": "file"
->         },
->         {
->           "name": "02_bands.md",
->           "type": "file"
->         },
->         {
->           "name": "03_domains.md",
->           "type": "file"
->         },
->         {
->           "name": "04_subdomains.md",
->           "type": "file"
->         },
->         {
->           "name": "05_namespace_registry.md",
->           "type": "file"
->         },
->         {
->           "name": "06_directory_tree.md",
->           "type": "file"
->         },
->         {
->           "name": "07_object_model.md",
->           "type": "file"
->         },
->         {
->           "name": "08_objects.md",
->           "type": "file"
->         },
->         {
->           "name": "09_placement_rules.md",
->           "type": "file"
->         },
->         {
->           "name": "10_schema.md",
->           "type": "file"
->         },
->         {
->           "name": "11_front_matter.md",
->           "type": "file"
->         },
->         {
->           "name": "12_metadata.md",
->           "type": "file"
->         },
->         {
->           "name": "13_storage.md",
->           "type": "file"
->         },
->         {
->           "name": "14_exports.md",
->           "type": "file"
->         },
->         {
->           "name": "15_qievidence.md",
->           "type": "file"
->         },
->         {
->           "name": "16_structure.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "40_compute",
->       "type": "folder",
->       "children": [
->         {
->           "name": "07_tech_stack",
->           "type": "folder",
->           "children": [
->             {
->               "name": "_index.md",
->               "type": "file"
->             },
->             {
->               "name": "activitywatch.md",
->               "type": "file"
->             },
->             {
->               "name": "aider.md",
->               "type": "file"
->             },
->             {
->               "name": "cloudflare.md",
->               "type": "file"
->             },
->             {
->               "name": "cockpit.md",
->               "type": "file"
->             },
->             {
->               "name": "docker_compose.md",
->               "type": "file"
->             },
->             {
->               "name": "gethomepage.md",
->               "type": "file"
->             },
->             {
->               "name": "n8n.md",
->               "type": "file"
->             },
->             {
->               "name": "neo4j.md",
->               "type": "file"
->             },
->             {
->               "name": "nocodb.md",
->               "type": "file"
->             },
->             {
->               "name": "ollama.md",
->               "type": "file"
->             },
->             {
->               "name": "open_webui.md",
->               "type": "file"
->             },
->             {
->               "name": "paperless.md",
->               "type": "file"
->             },
->             {
->               "name": "portainer.md",
->               "type": "file"
->             },
->             {
->               "name": "qdrant.md",
->               "type": "file"
->             },
->             {
->               "name": "solidtime.md",
->               "type": "file"
->             },
->             {
->               "name": "tailscale.md",
->               "type": "file"
->             },
->             {
->               "name": "uptime_kuma.md",
->               "type": "file"
->             },
->             {
->               "name": "wikijs.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "01_apis.md",
->           "type": "file"
->         },
->         {
->           "name": "02_workers.md",
->           "type": "file"
->         },
->         {
->           "name": "03_pipelines.md",
->           "type": "file"
->         },
->         {
->           "name": "04_integrations.md",
->           "type": "file"
->         },
->         {
->           "name": "05_runtime.md",
->           "type": "file"
->         },
->         {
->           "name": "06_qiserver_runtime_profile.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "50_applications",
->       "type": "folder",
->       "children": [
->         {
->           "name": "01_portal.md",
->           "type": "file"
->         },
->         {
->           "name": "02_admin.md",
->           "type": "file"
->         },
->         {
->           "name": "03_tools.md",
->           "type": "file"
->         },
->         {
->           "name": "04_interfaces.md",
->           "type": "file"
->         },
->         {
->           "name": "05_obsidian_qidocs.md",
->           "type": "file"
->         },
->         {
->           "name": "06_qiledger.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "60_operations",
->       "type": "folder",
->       "children": [
->         {
->           "name": "01_cases.md",
->           "type": "file"
->         },
->         {
->           "name": "02_templates.md",
->           "type": "file"
->         },
->         {
->           "name": "03_qiserver_setup_runbook.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "70_appendices",
->       "type": "folder",
->       "children": [
->         {
->           "name": "07_superseded_sources",
->           "type": "folder",
->           "children": [
->             {
->               "name": "QiAccess_Start_Blueprint.md",
->               "type": "file"
->             },
->             {
->               "name": "README.md",
->               "type": "file"
->             },
->             {
->               "name": "qi_os_home_blueprint.md",
->               "type": "file"
->             },
->             {
->               "name": "tech_stack_markmind.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "01_changelog.md",
->           "type": "file"
->         },
->         {
->           "name": "02_glossary.md",
->           "type": "file"
->         },
->         {
->           "name": "03_migration_notes.md",
->           "type": "file"
->         },
->         {
->           "name": "04_legacy_csv_migration_plan.md",
->           "type": "file"
->         },
->         {
->           "name": "05_legacy_salvage.md",
->           "type": "file"
->         },
->         {
->           "name": "06_qiaccess_start_legacy_quarantine.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "adr",
->       "type": "folder",
->       "children": [
->         {
->           "name": "ADR-0000_template.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0001_blueprint_scope.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0002_single_domain_rule.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0003_band_model.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0004_single_account_modular_mode.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0005_fleet_orchestration.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0008_qilabs_root.md",
->           "type": "file"
->         },
->         {
->           "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
->           "type": "file"
->         },
->         {
->           "name": "adr.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "assets",
->       "type": "folder",
->       "children": [
->         {
->           "name": "diagrams",
->           "type": "folder",
->           "children": [
->             {
->               "name": "blueprint_map.md",
->               "type": "file"
->             },
->             {
->               "name": "diagrams.md",
->               "type": "file"
->             },
->             {
->               "name": "markmind-data.json",
->               "type": "file"
->             },
->             {
->               "name": "markmind.html",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "images",
->           "type": "folder",
->           "children": [
->             {
->               "name": "_QiOS_Master_Document.jpg",
->               "type": "file"
->             },
->             {
->               "name": "images.md",
->               "type": "file"
->             }
->           ]
->         },
->         {
->           "name": "assets.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "registry",
->       "type": "folder",
->       "children": [
->         {
->           "name": "band_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "deprecation_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "domain_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "folder_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "infrastructure_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "realms_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "sensitivity_classification.yaml",
->           "type": "file"
->         },
->         {
->           "name": "subdomain_registry.yaml",
->           "type": "file"
->         },
->         {
->           "name": "workspace_realms.yaml",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "schemas",
->       "type": "folder",
->       "children": [
->         {
->           "name": "band_registry.schema.json",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "scripts",
->       "type": "folder",
->       "children": [
->         {
->           "name": "enforce_structure.py",
->           "type": "file"
->         },
->         {
->           "name": "generate_markmind.py",
->           "type": "file"
->         },
->         {
->           "name": "normalize_front_matter.bat",
->           "type": "file"
->         },
->         {
->           "name": "normalize_front_matter.py",
->           "type": "file"
->         },
->         {
->           "name": "update_indexes.py",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "standards",
->       "type": "folder",
->       "children": [
->         {
->           "name": "content_metadata_profile.yaml",
->           "type": "file"
->         },
->         {
->           "name": "metadata_rules.yaml",
->           "type": "file"
->         },
->         {
->           "name": "naming_rules.yaml",
->           "type": "file"
->         },
->         {
->           "name": "pdf_standards.yaml",
->           "type": "file"
->         },
->         {
->           "name": "repo_rules.yaml",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "templates",
->       "type": "folder",
->       "children": [
->         {
->           "name": "README.md",
->           "type": "file"
->         },
->         {
->           "name": "_index.md",
->           "type": "file"
->         },
->         {
->           "name": "adr_template.md",
->           "type": "file"
->         },
->         {
->           "name": "appendix_template.md",
->           "type": "file"
->         },
->         {
->           "name": "artifact_template.md",
->           "type": "file"
->         },
->         {
->           "name": "note_template.md",
->           "type": "file"
->         },
->         {
->           "name": "operational_template.md",
->           "type": "file"
->         },
->         {
->           "name": "page_template.md",
->           "type": "file"
->         },
->         {
->           "name": "registry_reference_template.md",
->           "type": "file"
->         },
->         {
->           "name": "section_index_template.md",
->           "type": "file"
->         },
->         {
->           "name": "standard_template.md",
->           "type": "file"
->         },
->         {
->           "name": "templates.md",
->           "type": "file"
->         }
->       ]
->     },
->     {
->       "name": "README.md",
->       "type": "file"
->     },
->     {
->       "name": "_index.md",
->       "type": "file"
->     },
->     {
->       "name": "file-index.json",
->       "type": "file"
->     },
->     {
->       "name": "rebuild.bat",
->       "type": "file"
->     },
->     {
->       "name": "vizvibe.mmd",
->       "type": "file"
->     }
->   ],
->   "metadata": {
->     "generated": "2026-05-12T19:50:12.850Z",
->     "generator": "FileTree Pro Extension",
->     "version": "0.2.0",
->     "showIcons": false,
->     "maxDepth": 10
->   }
+> ok, here is the full tree now what should the tree actually be. {
+
+>   "name": "10_blueprint",
+
+>   "path": "c:\\QiLabs\\_QiAccess_Start\\docs\\10_blueprint",
+
+>   "type": "directory",
+
+>   "children": [
+
+>     {
+
+>       "name": "10_governance",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "01_principles.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_agent_rules.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_standards.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_registry.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_policies.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_decisions.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "20_architecture",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "01_identity.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_component_map.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_system_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_device_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_runtime_zones.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_service_boundaries.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "07_data_flow.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "30_data",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "01_infrastructure_layout.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_bands.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_domains.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_subdomains.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_namespace_registry.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_directory_tree.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "07_object_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "08_objects.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "09_placement_rules.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "10_schema.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "11_front_matter.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "12_metadata.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "13_storage.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "14_exports.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "15_qievidence.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "16_structure.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "40_compute",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "07_tech_stack",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "_index.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "activitywatch.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "aider.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "cloudflare.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "cockpit.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "docker_compose.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "gethomepage.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "n8n.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "neo4j.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "nocodb.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "ollama.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "open_webui.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "paperless.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "portainer.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qdrant.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "solidtime.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tailscale.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "uptime_kuma.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "wikijs.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "01_apis.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_workers.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_pipelines.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_integrations.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_runtime.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_qiserver_runtime_profile.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "50_applications",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "01_portal.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_admin.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_tools.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_interfaces.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_obsidian_qidocs.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_qiledger.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "60_operations",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "01_cases.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_templates.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_qiserver_setup_runbook.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "70_appendices",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "07_superseded_sources",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "QiAccess_Start_Blueprint.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "README.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "qi_os_home_blueprint.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "tech_stack_markmind.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "01_changelog.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "02_glossary.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "03_migration_notes.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "04_legacy_csv_migration_plan.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "05_legacy_salvage.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "06_qiaccess_start_legacy_quarantine.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "adr",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "ADR-0000_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0001_blueprint_scope.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0002_single_domain_rule.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0003_band_model.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0004_single_account_modular_mode.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0005_fleet_orchestration.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0006_narrative_and_knowledge_consolidation.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0007_unified_front_matter_and_progressive_doc_topology.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0008_qilabs_root.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "ADR-0009_backup_server_control_plane_and_public_edge_pattern.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "adr.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "assets",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "diagrams",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "blueprint_map.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "diagrams.md",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markmind-data.json",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "markmind.html",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "images",
+
+>           "type": "folder",
+
+>           "children": [
+
+>             {
+
+>               "name": "_QiOS_Master_Document.jpg",
+
+>               "type": "file"
+
+>             },
+
+>             {
+
+>               "name": "images.md",
+
+>               "type": "file"
+
+>             }
+
+>           ]
+
+>         },
+
+>         {
+
+>           "name": "assets.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "registry",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "band_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "deprecation_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "domain_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "folder_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "infrastructure_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "realms_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "sensitivity_classification.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "subdomain_registry.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "workspace_realms.yaml",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "schemas",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "band_registry.schema.json",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "scripts",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "enforce_structure.py",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "generate_markmind.py",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "normalize_front_matter.bat",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "normalize_front_matter.py",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "update_indexes.py",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "standards",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "content_metadata_profile.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "metadata_rules.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "naming_rules.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "pdf_standards.yaml",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "repo_rules.yaml",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "templates",
+
+>       "type": "folder",
+
+>       "children": [
+
+>         {
+
+>           "name": "README.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "_index.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "adr_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "appendix_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "artifact_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "note_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "operational_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "page_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "registry_reference_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "section_index_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "standard_template.md",
+
+>           "type": "file"
+
+>         },
+
+>         {
+
+>           "name": "templates.md",
+
+>           "type": "file"
+
+>         }
+
+>       ]
+
+>     },
+
+>     {
+
+>       "name": "README.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "_index.md",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "file-index.json",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "rebuild.bat",
+
+>       "type": "file"
+
+>     },
+
+>     {
+
+>       "name": "vizvibe.mmd",
+
+>       "type": "file"
+
+>     }
+
+>   ],
+
+>   "metadata": {
+
+>     "generated": "2026-05-12T19:50:12.850Z",
+
+>     "generator": "FileTree Pro Extension",
+
+>     "version": "0.2.0",
+
+>     "showIcons": false,
+
+>     "maxDepth": 10
+
+>   }
+
 > }
 
 ### Assistant
@@ -2519,28 +3176,50 @@ canonical_ref: ""
 > But don’t trust memory there — reset it cleanly.
 
 ### User
-> qiadmin@qiserver:~$ sudo docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
-> [sudo] password for qiadmin: 
-> NAMES                        IMAGE                                        STATUS
-> paperless                    ghcr.io/paperless-ngx/paperless-ngx:latest   Up 2 days (healthy)
-> qitranscribe-whisper-webui   jhj0517/whisper-webui:latest                 Restarting (1) 29 seconds ago
-> solidtime                    solidtime/solidtime:latest                   Up 2 days (healthy)
-> solidtime-db                 postgres:16                                  Up 2 days (healthy)
-> qdrant                       qdrant/qdrant:latest                         Up 2 days
-> uptime-kuma                  louislam/uptime-kuma:2                       Up 2 days (healthy)
-> n8n                          docker.n8n.io/n8nio/n8n:latest               Up 2 days
-> portainer                    portainer/portainer-ce:sts                   Up 3 days
-> wikijs                       requarks/wiki:2                              Up 3 days
-> wikijs-db                    postgres:15-alpine                           Up 3 days
-> homepage                     ghcr.io/gethomepage/homepage:latest          Up 2 days (healthy)
-> paperless-postgres           postgres:16                                  Up 4 days
-> paperless-redis              redis:7                                      Up 4 days
-> nocodb                       nocodb/nocodb:latest                         Up 4 days
-> nocodb-db                    postgres:16                                  Up 4 days (healthy)
-> nocodb-redis                 redis:7-alpine                               Up 4 days
-> cloudflared                  cloudflare/cloudflared:latest                Up 5 days
-> open-webui                   ghcr.io/open-webui/open-webui:main           Up 5 days (healthy)
-> neo4j                        neo4j:latest                                 Up 5 days
+> qiadmin@qiserver:~$ sudo docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}"
+
+> [sudo] password for qiadmin: 
+
+> NAMES                        IMAGE                                        STATUS
+
+> paperless                    ghcr.io/paperless-ngx/paperless-ngx:latest   Up 2 days (healthy)
+
+> qitranscribe-whisper-webui   jhj0517/whisper-webui:latest                 Restarting (1) 29 seconds ago
+
+> solidtime                    solidtime/solidtime:latest                   Up 2 days (healthy)
+
+> solidtime-db                 postgres:16                                  Up 2 days (healthy)
+
+> qdrant                       qdrant/qdrant:latest                         Up 2 days
+
+> uptime-kuma                  louislam/uptime-kuma:2                       Up 2 days (healthy)
+
+> n8n                          docker.n8n.io/n8nio/n8n:latest               Up 2 days
+
+> portainer                    portainer/portainer-ce:sts                   Up 3 days
+
+> wikijs                       requarks/wiki:2                              Up 3 days
+
+> wikijs-db                    postgres:15-alpine                           Up 3 days
+
+> homepage                     ghcr.io/gethomepage/homepage:latest          Up 2 days (healthy)
+
+> paperless-postgres           postgres:16                                  Up 4 days
+
+> paperless-redis              redis:7                                      Up 4 days
+
+> nocodb                       nocodb/nocodb:latest                         Up 4 days
+
+> nocodb-db                    postgres:16                                  Up 4 days (healthy)
+
+> nocodb-redis                 redis:7-alpine                               Up 4 days
+
+> cloudflared                  cloudflare/cloudflared:latest                Up 5 days
+
+> open-webui                   ghcr.io/open-webui/open-webui:main           Up 5 days (healthy)
+
+> neo4j                        neo4j:latest                                 Up 5 days
+
 > qiadmin@qiserver:~$
 
 ### Assistant

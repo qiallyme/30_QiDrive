@@ -3,9 +3,9 @@ layout: page
 title: "Website Structure for Cloudflare"
 slug: "website_structure_for_cloudflare"
 created_at: "2026-03-09 14:08:11"
-updated_at: "2026-03-09 14:08:11"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -662,144 +662,282 @@ canonical_ref: ""
 > If you want, I’ll map your exact current `assets/modules/src` setup into a corrected folder tree with zero guesswork.
 
 ### User
-> ok so what happened is we made the mono repo but he site current has this setup. This XML file does not appear to have any style information associated with it. The document tree is shown below.
-> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-> <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-> <url>
-> <loc>https://qially.com/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>1.00</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/tax-prep-2025-intake</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.80</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.80</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/portfolio/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.80</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/services/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/hr-ops/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/it-ai/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/business_tools/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/resources/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/showcases/videos</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/privacy/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/msa/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/simple-w2</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/head-of-household</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/self-employed</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/complex</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/itin</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/business</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.64</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/wisp-core</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/risk-assessment</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/data-inventory</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/incident-response</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/internal/training-logs/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
-> <url>
-> <loc>https://qially.com/pages/compliance/internal/provider-agreements/</loc>
-> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
-> <priority>0.51</priority>
-> </url>
+> ok so what happened is we made the mono repo but he site current has this setup. This XML file does not appear to have any style information associated with it. The document tree is shown below.
+
+> <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+> <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+
+> <url>
+
+> <loc>https://qially.com/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>1.00</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/tax-prep-2025-intake</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.80</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.80</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/portfolio/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.80</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/services/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/hr-ops/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/it-ai/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/business_tools/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/resources/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/showcases/videos</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/privacy/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/msa/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/simple-w2</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/head-of-household</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/self-employed</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/complex</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/itin</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/modules/taxes/tax-prep-2025/next-steps/business</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.64</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/wisp-core</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/risk-assessment</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/data-inventory</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/incident-response</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/internal/training-logs/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
+> <url>
+
+> <loc>https://qially.com/pages/compliance/internal/provider-agreements/</loc>
+
+> <lastmod>2026-03-09T19:18:19+00:00</lastmod>
+
+> <priority>0.51</priority>
+
+> </url>
+
 > </urlset>
 
 ### Assistant
@@ -1581,282 +1719,558 @@ canonical_ref: ""
 > That part is actually where your site can become **really powerful** instead of just informational.
 
 ### User
-> im confused, here is my tree i think i message it up # File Tree: qially-web
-> 
-> **Generated:** 3/9/2026, 2:32:35 PM
-> **Root Path:** `c:\_QiOne_MonoRepo_v2\apps\qially-web`
-> 
-> ```
-> ├── 📁 .legacy
-> │   ├── 📁 assets
-> │   │   ├── 📁 css
-> │   │   │   └── 🎨 styles.css
-> │   │   ├── 📁 files
-> │   │   │   ├── 📁 forms
-> │   │   │   │   └── 📁 uscis
-> │   │   │   │       ├── 📕 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
-> │   │   │   │       ├── 📕 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
-> │   │   │   │       ├── 📕 Form-I-485.pdf
-> │   │   │   │       └── 📕 Form-I-693.pdf
-> │   │   │   ├── 📄 balance-sheet-template.xlsx
-> │   │   │   ├── 🌐 emailsignature.html
-> │   │   │   ├── 📄 income-statement-template.xlsx
-> │   │   │   ├── 📝 index.md
-> │   │   │   ├── 📕 payroll-calendar-2026.pdf
-> │   │   │   ├── 📕 resume.pdf
-> │   │   │   └── 📕 tax-prep-checklist.pdf
-> │   │   ├── 📁 imgs
-> │   │   │   ├── 📁 business_tools
-> │   │   │   │   ├── 🖼️ balance_sheet.svg
-> │   │   │   │   ├── 🖼️ calendar.svg
-> │   │   │   │   ├── 🖼️ capital.svg
-> │   │   │   │   ├── 🖼️ checklist.svg
-> │   │   │   │   ├── 🖼️ funding.svg
-> │   │   │   │   ├── 🖼️ income.svg
-> │   │   │   │   ├── 🖼️ inventory.svg
-> │   │   │   │   ├── 🖼️ invoice.svg
-> │   │   │   │   ├── 🖼️ payroll.svg
-> │   │   │   │   └── 🖼️ sku.svg
-> │   │   │   ├── 🖼️ allegaracasa.jpg
-> │   │   │   ├── 🖼️ astrotext.png
-> │   │   │   ├── 🖼️ business-performance-wins.png
-> │   │   │   ├── 🖼️ cover.jpg
-> │   │   │   ├── 📄 favicon.ico
-> │   │   │   ├── 🖼️ favicon.png
-> │   │   │   ├── 🖼️ favicon.webp
-> │   │   │   ├── 🖼️ llegaracasa.jpg
-> │   │   │   ├── 🖼️ logo.png
-> │   │   │   ├── 🖼️ profile.jpg
-> │   │   │   └── 🖼️ profile.png
-> │   │   ├── 📁 js
-> │   │   │   ├── 📄 i18n.js
-> │   │   │   └── 📄 main.js
-> │   │   └── 📁 vids
-> │   │       └── 🎬 video-logo.mp4
-> │   ├── 📁 cody
-> │   │   └── 🌐 index.html
-> │   ├── 📁 flows
-> │   │   ├── 📝 README.md
-> │   │   ├── 🌐 index.html
-> │   │   ├── 🌐 privacy.html
-> │   │   └── 🌐 terms.html
-> │   ├── 📁 functions
-> │   │   └── 📄 [[path]].js
-> │   ├── 📁 helpcody
-> │   │   ├── 📝 README.md
-> │   │   ├── 📄 data.csv
-> │   │   └── 🌐 index.html
-> │   ├── 📁 kb
-> │   │   ├── 📁 accounting-cleanup
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 getting-started
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 irs-notices
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 tax-resolution
-> │   │   │   └── 🌐 index.html
-> │   │   └── 🌐 index.html
-> │   ├── 📁 modules
-> │   │   ├── 📁 hr-ops
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 it-ai
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 qisuite
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 taxes
-> │   │   │   ├── 📁 tax-prep-2025
-> │   │   │   │   ├── 📁 email-templates
-> │   │   │   │   │   ├── 🌐 email-01-simple-w2.html
-> │   │   │   │   │   ├── 🌐 email-02-self-employed.html
-> │   │   │   │   │   ├── 🌐 email-03-complex.html
-> │   │   │   │   │   ├── 🌐 email-04-itin.html
-> │   │   │   │   │   ├── 🌐 email-05-business.html
-> │   │   │   │   │   ├── 🌐 email-06-confirmation-docs.html
-> │   │   │   │   │   ├── 🌐 email-generic-next-steps.html
-> │   │   │   │   │   └── 🌐 email-intake-received.html
-> │   │   │   │   ├── 📁 forms
-> │   │   │   │   │   ├── 🌐 business.html
-> │   │   │   │   │   ├── 🌐 complex.html
-> │   │   │   │   │   ├── 🌐 head-of-household.html
-> │   │   │   │   │   ├── 🌐 itin.html
-> │   │   │   │   │   ├── 🌐 self-employed.html
-> │   │   │   │   │   └── 🌐 simple-w2.html
-> │   │   │   │   ├── 📁 next-steps
-> │   │   │   │   │   ├── 🌐 business.html
-> │   │   │   │   │   ├── 🌐 complex.html
-> │   │   │   │   │   ├── 🌐 head-of-household.html
-> │   │   │   │   │   ├── 🌐 index.html
-> │   │   │   │   │   ├── 🌐 itin.html
-> │   │   │   │   │   ├── 🌐 self-employed.html
-> │   │   │   │   │   └── 🌐 simple-w2.html
-> │   │   │   │   ├── 🖼️ FormsQRCode.png
-> │   │   │   │   ├── 🖼️ bookingQRCode.png
-> │   │   │   │   ├── 🌐 index.html
-> │   │   │   │   ├── 📝 prompts.md
-> │   │   │   │   ├── 🌐 qr-code.html
-> │   │   │   │   ├── 🌐 tax-prep-2025-booking.html
-> │   │   │   │   ├── 🌐 tax-prep-2025-intake.html
-> │   │   │   │   └── 🖼️ taxprepqially.jpg
-> │   │   │   ├── 📁 year-end-process
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   └── 🌐 index.html
-> │   │   └── 🌐 index.html
-> │   ├── 📁 pages
-> │   │   ├── 📁 budgets
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 business_tools
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 chat
-> │   │   │   ├── 🌐 index.html
-> │   │   │   └── 🖼️ sales-iq-landing-page-qr-code.png
-> │   │   ├── 📁 compliance
-> │   │   │   ├── 📁 internal
-> │   │   │   │   ├── 📁 provider-agreements
-> │   │   │   │   │   └── 🌐 index.html
-> │   │   │   │   └── 📁 training-logs
-> │   │   │   │       └── 🌐 index.html
-> │   │   │   ├── 📁 service_animal_gigi
-> │   │   │   │   ├── 📁 assets
-> │   │   │   │   │   └── 🖼️ gigi_service_dog_hero.png
-> │   │   │   │   ├── 🌐 Gigi_Certification_Statement.html
-> │   │   │   │   ├── 📝 Gigi_Documentation_Pack.md
-> │   │   │   │   ├── 🌐 Gigi_Documentation_Pack_Print.html
-> │   │   │   │   ├── 📝 Gigi_Service_Dog_Training_Manual.md
-> │   │   │   │   ├── 🌐 Gigi_Services_Dog_Training_Manual_Print.html
-> │   │   │   │   ├── 🌐 Notice_Service_Animal_Status.html
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   ├── 🌐 data-inventory.html
-> │   │   │   ├── 🌐 incident-response.html
-> │   │   │   ├── 🌐 index.html
-> │   │   │   ├── 🌐 risk-assessment.html
-> │   │   │   └── 🌐 wisp-core.html
-> │   │   ├── 📁 ecard
-> │   │   │   ├── 📄 cody.vcf
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 estate-planning
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 letters
-> │   │   │   ├── 📁 client.wiletvaldo_calderon-ramirez
-> │   │   │   │   ├── 🌐 index.html
-> │   │   │   │   ├── 🖼️ infographic.png
-> │   │   │   │   └── 📄 review_audio.m4a
-> │   │   │   ├── 📁 engagement
-> │   │   │   │   ├── 🖼️ SignForm_URL_QR.png
-> │   │   │   │   ├── 🌐 engagement_standard.html
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   └── 📁 evansville_inn
-> │   │   │       └── 🌐 Notice_Room_Conditions.html
-> │   │   ├── 📁 msa
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 portfolio
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 privacy
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 referral
-> │   │   │   ├── 📁 cashapp
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   ├── 📁 quickbooks
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   ├── 📁 zoho
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 resources
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 review
-> │   │   │   ├── 🌐 index.html
-> │   │   │   └── 🖼️ qrcode_www.google.com.png
-> │   │   ├── 📁 services
-> │   │   │   └── 🌐 index.html
-> │   │   ├── 📁 showcases
-> │   │   │   ├── 📁 20000-swing
-> │   │   │   │   └── 🌐 index.html
-> │   │   │   └── 🌐 videos.html
-> │   │   └── 📁 terms
-> │   │       └── 🌐 index.html
-> │   ├── 📁 taxes
-> │   │   └── 📁 tax99
-> │   │       ├── 📁 steps
-> │   │       │   └── 🌐 index.html
-> │   │       ├── 📁 templates
-> │   │       │   ├── 🌐 email-template-client.html
-> │   │       │   ├── 🌐 email-template-internal.html
-> │   │       │   └── 🌐 index.html
-> │   │       ├── 📝 README.md
-> │   │       ├── 🌐 index.html
-> │   │       ├── 📄 worker.js
-> │   │       └── ⚙️ wrangler.toml
-> │   ├── 📝 README.md
-> │   ├── ⚙️ contact.json
-> │   ├── 🐍 orchestrate_clarity.py
-> │   └── 📄 vizvibe.mmd
-> ├── 📁 about
-> ├── 📁 contact
-> ├── 📁 faq
-> ├── 📁 legal
-> │   ├── 📁 accessibiity
-> │   ├── 📁 msa
-> │   ├── 📁 privacy
-> │   └── 📁 terms
-> ├── 📁 portfolio
-> ├── 📁 resources
-> │   ├── 📁 bookkeeping-basics
-> │   ├── 📁 compliance
-> │   │   ├── 📁 data-inventory
-> │   │   ├── 📁 incident-response
-> │   │   ├── 📁 provider-agreements
-> │   │   ├── 📁 risk-assessment
-> │   │   ├── 📁 training-logs
-> │   │   └── 📁 wisp
-> │   ├── 📁 guides
-> │   ├── 📁 small-business-tax-guide
-> │   ├── 📁 tax-prep-checklist
-> │   └── 📁 tools
-> │       ├── 📁 business-readiness-check
-> │       ├── 📁 expense-tracker
-> │       ├── 📁 receipt-organizer
-> │       └── 📁 tax-checklist
-> ├── 📁 services
-> │   ├── 📁 automation-ai
-> │   ├── 📁 bookkeeping
-> │   ├── 📁 business-formation
-> │   ├── 📁 client-portals
-> │   ├── 📁 compliance
-> │   ├── 📁 document-preperation
-> │   ├── 📁 hr-operations
-> │   ├── 📁 immigration-forms
-> │   ├── 📁 marketing
-> │   ├── 📁 tax-preparation
-> │   │   ├── 📁 intake
-> │   │   ├── 📁 next-steps
-> │   │   │   ├── 📁 business-return
-> │   │   │   ├── 📁 complex-return
-> │   │   │   ├── 📁 head-of-household
-> │   │   │   ├── 📁 itin
-> │   │   │   ├── 📁 self-employed
-> │   │   │   └── 📁 simple-w2
-> │   │   └── 📁 overview
-> │   └── 📁 translations
-> ├── 📁 start
-> │   ├── 📁 business-intake
-> │   ├── 📁 consultation
-> │   └── 📁 tax-intake
-> ├── ⚙️ .gitignore
-> ├── 🌐 404.html
-> ├── 📄 LICENSE
-> ├── 📄 _redirects
-> ├── 🌐 footer.html
-> ├── 🌐 header.html
-> ├── 📄 humans.txt
-> ├── 🌐 index.html
-> ├── 📄 main.js
-> ├── 📄 manifest.webmanifest
-> ├── 📄 robots.txt
-> ├── 📄 service-worker.js
-> ├── ⚙️ services-full.json
-> └── ⚙️ sitemap.xml
-> ```
-> 
-> ---
+> im confused, here is my tree i think i message it up # File Tree: qially-web
+
+> 
+
+> **Generated:** 3/9/2026, 2:32:35 PM
+
+> **Root Path:** `c:\_QiOne_MonoRepo_v2\apps\qially-web`
+
+> 
+
+> ```
+
+> ├── 📁 .legacy
+
+> │   ├── 📁 assets
+
+> │   │   ├── 📁 css
+
+> │   │   │   └── 🎨 styles.css
+
+> │   │   ├── 📁 files
+
+> │   │   │   ├── 📁 forms
+
+> │   │   │   │   └── 📁 uscis
+
+> │   │   │   │       ├── 📕 Form I-485, Application to Register Permanent Residence or Adjust Status.pdf
+
+> │   │   │   │       ├── 📕 Form I-693, Report of Immigration Medical Examination and Vaccination Record.pdf
+
+> │   │   │   │       ├── 📕 Form-I-485.pdf
+
+> │   │   │   │       └── 📕 Form-I-693.pdf
+
+> │   │   │   ├── 📄 balance-sheet-template.xlsx
+
+> │   │   │   ├── 🌐 emailsignature.html
+
+> │   │   │   ├── 📄 income-statement-template.xlsx
+
+> │   │   │   ├── 📝 index.md
+
+> │   │   │   ├── 📕 payroll-calendar-2026.pdf
+
+> │   │   │   ├── 📕 resume.pdf
+
+> │   │   │   └── 📕 tax-prep-checklist.pdf
+
+> │   │   ├── 📁 imgs
+
+> │   │   │   ├── 📁 business_tools
+
+> │   │   │   │   ├── 🖼️ balance_sheet.svg
+
+> │   │   │   │   ├── 🖼️ calendar.svg
+
+> │   │   │   │   ├── 🖼️ capital.svg
+
+> │   │   │   │   ├── 🖼️ checklist.svg
+
+> │   │   │   │   ├── 🖼️ funding.svg
+
+> │   │   │   │   ├── 🖼️ income.svg
+
+> │   │   │   │   ├── 🖼️ inventory.svg
+
+> │   │   │   │   ├── 🖼️ invoice.svg
+
+> │   │   │   │   ├── 🖼️ payroll.svg
+
+> │   │   │   │   └── 🖼️ sku.svg
+
+> │   │   │   ├── 🖼️ allegaracasa.jpg
+
+> │   │   │   ├── 🖼️ astrotext.png
+
+> │   │   │   ├── 🖼️ business-performance-wins.png
+
+> │   │   │   ├── 🖼️ cover.jpg
+
+> │   │   │   ├── 📄 favicon.ico
+
+> │   │   │   ├── 🖼️ favicon.png
+
+> │   │   │   ├── 🖼️ favicon.webp
+
+> │   │   │   ├── 🖼️ llegaracasa.jpg
+
+> │   │   │   ├── 🖼️ logo.png
+
+> │   │   │   ├── 🖼️ profile.jpg
+
+> │   │   │   └── 🖼️ profile.png
+
+> │   │   ├── 📁 js
+
+> │   │   │   ├── 📄 i18n.js
+
+> │   │   │   └── 📄 main.js
+
+> │   │   └── 📁 vids
+
+> │   │       └── 🎬 video-logo.mp4
+
+> │   ├── 📁 cody
+
+> │   │   └── 🌐 index.html
+
+> │   ├── 📁 flows
+
+> │   │   ├── 📝 README.md
+
+> │   │   ├── 🌐 index.html
+
+> │   │   ├── 🌐 privacy.html
+
+> │   │   └── 🌐 terms.html
+
+> │   ├── 📁 functions
+
+> │   │   └── 📄 [[path]].js
+
+> │   ├── 📁 helpcody
+
+> │   │   ├── 📝 README.md
+
+> │   │   ├── 📄 data.csv
+
+> │   │   └── 🌐 index.html
+
+> │   ├── 📁 kb
+
+> │   │   ├── 📁 accounting-cleanup
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 getting-started
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 irs-notices
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 tax-resolution
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   └── 🌐 index.html
+
+> │   ├── 📁 modules
+
+> │   │   ├── 📁 hr-ops
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 it-ai
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 qisuite
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 taxes
+
+> │   │   │   ├── 📁 tax-prep-2025
+
+> │   │   │   │   ├── 📁 email-templates
+
+> │   │   │   │   │   ├── 🌐 email-01-simple-w2.html
+
+> │   │   │   │   │   ├── 🌐 email-02-self-employed.html
+
+> │   │   │   │   │   ├── 🌐 email-03-complex.html
+
+> │   │   │   │   │   ├── 🌐 email-04-itin.html
+
+> │   │   │   │   │   ├── 🌐 email-05-business.html
+
+> │   │   │   │   │   ├── 🌐 email-06-confirmation-docs.html
+
+> │   │   │   │   │   ├── 🌐 email-generic-next-steps.html
+
+> │   │   │   │   │   └── 🌐 email-intake-received.html
+
+> │   │   │   │   ├── 📁 forms
+
+> │   │   │   │   │   ├── 🌐 business.html
+
+> │   │   │   │   │   ├── 🌐 complex.html
+
+> │   │   │   │   │   ├── 🌐 head-of-household.html
+
+> │   │   │   │   │   ├── 🌐 itin.html
+
+> │   │   │   │   │   ├── 🌐 self-employed.html
+
+> │   │   │   │   │   └── 🌐 simple-w2.html
+
+> │   │   │   │   ├── 📁 next-steps
+
+> │   │   │   │   │   ├── 🌐 business.html
+
+> │   │   │   │   │   ├── 🌐 complex.html
+
+> │   │   │   │   │   ├── 🌐 head-of-household.html
+
+> │   │   │   │   │   ├── 🌐 index.html
+
+> │   │   │   │   │   ├── 🌐 itin.html
+
+> │   │   │   │   │   ├── 🌐 self-employed.html
+
+> │   │   │   │   │   └── 🌐 simple-w2.html
+
+> │   │   │   │   ├── 🖼️ FormsQRCode.png
+
+> │   │   │   │   ├── 🖼️ bookingQRCode.png
+
+> │   │   │   │   ├── 🌐 index.html
+
+> │   │   │   │   ├── 📝 prompts.md
+
+> │   │   │   │   ├── 🌐 qr-code.html
+
+> │   │   │   │   ├── 🌐 tax-prep-2025-booking.html
+
+> │   │   │   │   ├── 🌐 tax-prep-2025-intake.html
+
+> │   │   │   │   └── 🖼️ taxprepqially.jpg
+
+> │   │   │   ├── 📁 year-end-process
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   └── 🌐 index.html
+
+> │   ├── 📁 pages
+
+> │   │   ├── 📁 budgets
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 business_tools
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 chat
+
+> │   │   │   ├── 🌐 index.html
+
+> │   │   │   └── 🖼️ sales-iq-landing-page-qr-code.png
+
+> │   │   ├── 📁 compliance
+
+> │   │   │   ├── 📁 internal
+
+> │   │   │   │   ├── 📁 provider-agreements
+
+> │   │   │   │   │   └── 🌐 index.html
+
+> │   │   │   │   └── 📁 training-logs
+
+> │   │   │   │       └── 🌐 index.html
+
+> │   │   │   ├── 📁 service_animal_gigi
+
+> │   │   │   │   ├── 📁 assets
+
+> │   │   │   │   │   └── 🖼️ gigi_service_dog_hero.png
+
+> │   │   │   │   ├── 🌐 Gigi_Certification_Statement.html
+
+> │   │   │   │   ├── 📝 Gigi_Documentation_Pack.md
+
+> │   │   │   │   ├── 🌐 Gigi_Documentation_Pack_Print.html
+
+> │   │   │   │   ├── 📝 Gigi_Service_Dog_Training_Manual.md
+
+> │   │   │   │   ├── 🌐 Gigi_Services_Dog_Training_Manual_Print.html
+
+> │   │   │   │   ├── 🌐 Notice_Service_Animal_Status.html
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   ├── 🌐 data-inventory.html
+
+> │   │   │   ├── 🌐 incident-response.html
+
+> │   │   │   ├── 🌐 index.html
+
+> │   │   │   ├── 🌐 risk-assessment.html
+
+> │   │   │   └── 🌐 wisp-core.html
+
+> │   │   ├── 📁 ecard
+
+> │   │   │   ├── 📄 cody.vcf
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 estate-planning
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 letters
+
+> │   │   │   ├── 📁 client.wiletvaldo_calderon-ramirez
+
+> │   │   │   │   ├── 🌐 index.html
+
+> │   │   │   │   ├── 🖼️ infographic.png
+
+> │   │   │   │   └── 📄 review_audio.m4a
+
+> │   │   │   ├── 📁 engagement
+
+> │   │   │   │   ├── 🖼️ SignForm_URL_QR.png
+
+> │   │   │   │   ├── 🌐 engagement_standard.html
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   └── 📁 evansville_inn
+
+> │   │   │       └── 🌐 Notice_Room_Conditions.html
+
+> │   │   ├── 📁 msa
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 portfolio
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 privacy
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 referral
+
+> │   │   │   ├── 📁 cashapp
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   ├── 📁 quickbooks
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   ├── 📁 zoho
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 resources
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 review
+
+> │   │   │   ├── 🌐 index.html
+
+> │   │   │   └── 🖼️ qrcode_www.google.com.png
+
+> │   │   ├── 📁 services
+
+> │   │   │   └── 🌐 index.html
+
+> │   │   ├── 📁 showcases
+
+> │   │   │   ├── 📁 20000-swing
+
+> │   │   │   │   └── 🌐 index.html
+
+> │   │   │   └── 🌐 videos.html
+
+> │   │   └── 📁 terms
+
+> │   │       └── 🌐 index.html
+
+> │   ├── 📁 taxes
+
+> │   │   └── 📁 tax99
+
+> │   │       ├── 📁 steps
+
+> │   │       │   └── 🌐 index.html
+
+> │   │       ├── 📁 templates
+
+> │   │       │   ├── 🌐 email-template-client.html
+
+> │   │       │   ├── 🌐 email-template-internal.html
+
+> │   │       │   └── 🌐 index.html
+
+> │   │       ├── 📝 README.md
+
+> │   │       ├── 🌐 index.html
+
+> │   │       ├── 📄 worker.js
+
+> │   │       └── ⚙️ wrangler.toml
+
+> │   ├── 📝 README.md
+
+> │   ├── ⚙️ contact.json
+
+> │   ├── 🐍 orchestrate_clarity.py
+
+> │   └── 📄 vizvibe.mmd
+
+> ├── 📁 about
+
+> ├── 📁 contact
+
+> ├── 📁 faq
+
+> ├── 📁 legal
+
+> │   ├── 📁 accessibiity
+
+> │   ├── 📁 msa
+
+> │   ├── 📁 privacy
+
+> │   └── 📁 terms
+
+> ├── 📁 portfolio
+
+> ├── 📁 resources
+
+> │   ├── 📁 bookkeeping-basics
+
+> │   ├── 📁 compliance
+
+> │   │   ├── 📁 data-inventory
+
+> │   │   ├── 📁 incident-response
+
+> │   │   ├── 📁 provider-agreements
+
+> │   │   ├── 📁 risk-assessment
+
+> │   │   ├── 📁 training-logs
+
+> │   │   └── 📁 wisp
+
+> │   ├── 📁 guides
+
+> │   ├── 📁 small-business-tax-guide
+
+> │   ├── 📁 tax-prep-checklist
+
+> │   └── 📁 tools
+
+> │       ├── 📁 business-readiness-check
+
+> │       ├── 📁 expense-tracker
+
+> │       ├── 📁 receipt-organizer
+
+> │       └── 📁 tax-checklist
+
+> ├── 📁 services
+
+> │   ├── 📁 automation-ai
+
+> │   ├── 📁 bookkeeping
+
+> │   ├── 📁 business-formation
+
+> │   ├── 📁 client-portals
+
+> │   ├── 📁 compliance
+
+> │   ├── 📁 document-preperation
+
+> │   ├── 📁 hr-operations
+
+> │   ├── 📁 immigration-forms
+
+> │   ├── 📁 marketing
+
+> │   ├── 📁 tax-preparation
+
+> │   │   ├── 📁 intake
+
+> │   │   ├── 📁 next-steps
+
+> │   │   │   ├── 📁 business-return
+
+> │   │   │   ├── 📁 complex-return
+
+> │   │   │   ├── 📁 head-of-household
+
+> │   │   │   ├── 📁 itin
+
+> │   │   │   ├── 📁 self-employed
+
+> │   │   │   └── 📁 simple-w2
+
+> │   │   └── 📁 overview
+
+> │   └── 📁 translations
+
+> ├── 📁 start
+
+> │   ├── 📁 business-intake
+
+> │   ├── 📁 consultation
+
+> │   └── 📁 tax-intake
+
+> ├── ⚙️ .gitignore
+
+> ├── 🌐 404.html
+
+> ├── 📄 LICENSE
+
+> ├── 📄 _redirects
+
+> ├── 🌐 footer.html
+
+> ├── 🌐 header.html
+
+> ├── 📄 humans.txt
+
+> ├── 🌐 index.html
+
+> ├── 📄 main.js
+
+> ├── 📄 manifest.webmanifest
+
+> ├── 📄 robots.txt
+
+> ├── 📄 service-worker.js
+
+> ├── ⚙️ services-full.json
+
+> └── ⚙️ sitemap.xml
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension*
 
 ### Assistant

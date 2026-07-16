@@ -3,9 +3,9 @@ layout: page
 title: "Using Directus 101"
 slug: "using_directus_101"
 created_at: "2026-06-18 17:29:18"
-updated_at: "2026-06-18 17:29:18"
+updated_at: "2026-07-16T06:49:33-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

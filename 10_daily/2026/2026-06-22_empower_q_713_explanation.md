@@ -3,9 +3,9 @@ layout: page
 title: "Empower Q 713 Explanation"
 slug: "empower_q_713_explanation"
 created_at: "2026-06-22 22:25:38"
-updated_at: "2026-06-22 22:25:38"
+updated_at: "2026-07-16T06:49:34-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

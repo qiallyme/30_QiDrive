@@ -4,15 +4,15 @@ title: Neurodivergence, Anxiety, and Misinterpreted Truthfulness
 slug: neurodivergence_truth_misreadings
 summary: Documents how honest communication is misinterpreted as deceptive due to neurodivergent traits, anxiety, and Othello Error phenomena
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:35-04:00"
 context: Clinical documentation of how neurodivergent communication traits are misinterpreted as deception
-tags:
+tags: []
   - manifestation
   - clinical
   - neurodivergence
   - communication
   - empowerqnow713
-keywords:
+keywords: []
   - ADHD
   - anxiety
   - othello_error
@@ -31,14 +31,14 @@ qi_decimal: 2.2.1
 category: clinical_manifestation
 system: qios
 project_context: Manual to Me / Behavioral Navigation Module
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 aliases: []
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: be681a7c1c4b43d69de257d459767d61
 canonical_ref: ""
 template_key: master-template
 ---

@@ -3,9 +3,9 @@ layout: page
 title: "Delusions vs Truth"
 slug: "delusions_vs_truth"
 created_at: "2026-05-08 02:01:32"
-updated_at: "2026-05-08 02:01:32"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

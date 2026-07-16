@@ -3,9 +3,9 @@ layout: page
 title: "Service animal legalities"
 slug: "service_animal_legalities"
 created_at: "2026-01-31 08:57:24"
-updated_at: "2026-01-31 08:57:24"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -802,434 +802,862 @@ canonical_ref: ""
 > ```
 
 ### User
-> update this <!DOCTYPE html>
-> <html lang="en">
-> <head>
->   <meta charset="UTF-8" />
->   <meta name="viewport" content="width=device-width,initial-scale=1" />
->   <title>Service Animal Certification Statement - Cody Rice-Velasquez</title>
->   <style>
->     :root{
->       --bg:#0b1220;
->       --paper:#ffffff;
->       --ink:#0f172a;
->       --muted:#475569;
->       --line:#e2e8f0;
->       --accent:#2563eb;
->       --accent2:#7c3aed;
->       --chip:#f1f5f9;
->       --warn:#b91c1c;
->     }
->     *{box-sizing:border-box}
->     body{
->       margin:0;
->       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
->       color: var(--ink);
->       background:
->         radial-gradient(1200px 600px at 20% 10%, rgba(37,99,235,.22), transparent 55%),
->         radial-gradient(900px 500px at 80% 20%, rgba(124,58,237,.18), transparent 50%),
->         linear-gradient(180deg, #0b1220 0%, #0b1220 40%, #0f172a 100%);
->       padding: 28px 16px;
->     }
->     .wrap{
->       max-width: 980px;
->       margin: 0 auto;
->     }
->     .topbar{
->       display:flex;
->       align-items:flex-start;
->       justify-content:space-between;
->       gap:12px;
->       margin-bottom: 14px;
->       color:#cbd5e1;
->     }
->     .brand{
->       display:flex;
->       flex-direction:column;
->       gap:4px;
->       line-height:1.1;
->     }
->     .brand .kicker{
->       font-weight:700;
->       letter-spacing:.08em;
->       text-transform:uppercase;
->       font-size:12px;
->       color:#a5b4fc;
->     }
->     .brand .title{
->       font-weight:800;
->       font-size:20px;
->       color:#e2e8f0;
->     }
->     .actions{
->       display:flex;
->       gap:10px;
->       align-items:center;
->       flex-wrap:wrap;
->       justify-content:flex-end;
->     }
->     .pill{
->       background: rgba(148,163,184,.12);
->       border:1px solid rgba(148,163,184,.25);
->       color:#e2e8f0;
->       padding:8px 10px;
->       border-radius:999px;
->       font-size:12px;
->       white-space:nowrap;
->     }
->     .paper{
->       background: var(--paper);
->       border-radius: 18px;
->       box-shadow:
->         0 20px 70px rgba(0,0,0,.45),
->         0 2px 10px rgba(0,0,0,.18);
->       overflow:hidden;
->       border: 1px solid rgba(226,232,240,.9);
->     }
->     header{
->       padding: 22px 22px 18px;
->       border-bottom: 1px solid var(--line);
->       position: relative;
->     }
->     header:before{
->       content:"";
->       position:absolute;
->       inset:0;
->       background:
->         radial-gradient(600px 180px at 20% 0%, rgba(37,99,235,.10), transparent 70%),
->         radial-gradient(520px 180px at 85% 20%, rgba(124,58,237,.08), transparent 65%);
->       pointer-events:none;
->     }
->     header .h1{
->       margin:0;
->       font-size: 22px;
->       font-weight: 850;
->       letter-spacing:-.02em;
->       position:relative;
->     }
->     header .sub{
->       margin:8px 0 0;
->       color: var(--muted);
->       font-size: 13px;
->       line-height:1.5;
->       position:relative;
->     }
->     .grid{
->       display:grid;
->       grid-template-columns: 1fr 1fr;
->       gap: 14px;
->       padding: 18px 22px 8px;
->     }
->     .card{
->       border: 1px solid var(--line);
->       border-radius: 14px;
->       padding: 14px 14px 12px;
->       background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
->     }
->     .label{
->       font-size: 12px;
->       letter-spacing:.06em;
->       text-transform: uppercase;
->       color: var(--muted);
->       margin-bottom: 6px;
->       font-weight: 700;
->     }
->     .value{
->       font-size: 14px;
->       font-weight: 750;
->       color: var(--ink);
->     }
->     .value .muted{
->       font-weight: 650;
->       color: var(--muted);
->     }
->     .chips{
->       display:flex;
->       gap:8px;
->       flex-wrap:wrap;
->       margin-top:10px;
->     }
->     .chip{
->       background: var(--chip);
->       border:1px solid var(--line);
->       color: var(--ink);
->       padding: 6px 10px;
->       border-radius: 999px;
->       font-size: 12px;
->       font-weight: 650;
->     }
-> 
->     main{
->       padding: 4px 22px 22px;
->     }
->     h2{
->       margin: 18px 0 10px;
->       font-size: 14px;
->       letter-spacing:.06em;
->       text-transform: uppercase;
->       color: var(--accent);
->     }
->     p{
->       margin: 10px 0;
->       line-height:1.6;
->       color: var(--ink);
->       font-size: 14px;
->     }
->     ul{
->       margin: 10px 0 10px 18px;
->       padding:0;
->       color: var(--ink);
->       font-size: 14px;
->       line-height:1.7;
->     }
->     li{ margin: 6px 0; }
->     .cite{
->       color: var(--muted);
->       font-weight: 650;
->       white-space:nowrap;
->     }
->     .callout{
->       margin-top: 14px;
->       border: 1px solid rgba(37,99,235,.22);
->       background: rgba(37,99,235,.06);
->       border-radius: 14px;
->       padding: 12px 14px;
->     }
->     .callout strong{ color: var(--accent); }
->     .legal{
->       border-top: 1px solid var(--line);
->       margin-top: 18px;
->       padding-top: 14px;
->     }
->     .legal .row{
->       display:flex;
->       gap:12px;
->       flex-wrap:wrap;
->       align-items:flex-start;
->       justify-content:space-between;
->     }
->     .legal .box{
->       flex:1 1 420px;
->       border:1px solid var(--line);
->       border-radius: 14px;
->       padding: 12px 14px;
->       background:#fff;
->     }
->     .box h3{
->       margin: 0 0 8px;
->       font-size: 13px;
->       color: var(--ink);
->       letter-spacing:.04em;
->       text-transform: uppercase;
->     }
->     .box p{ margin: 8px 0; color: var(--muted); font-size: 13px; }
->     .sig{
->       margin-top: 16px;
->       border: 1px dashed #cbd5e1;
->       border-radius: 14px;
->       padding: 14px;
->       background: #fbfdff;
->     }
->     .siggrid{
->       display:grid;
->       grid-template-columns: 1fr 1fr;
->       gap: 12px;
->       margin-top: 8px;
->     }
->     .line{
->       border-bottom: 2px solid #0f172a;
->       height: 28px;
->     }
->     .siglabel{
->       margin-top: 6px;
->       color: var(--muted);
->       font-size: 12px;
->       letter-spacing:.04em;
->       text-transform: uppercase;
->       font-weight: 650;
->     }
->     footer{
->       padding: 16px 22px 20px;
->       border-top: 1px solid var(--line);
->       background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
->     }
->     .fineprint{
->       font-size: 12px;
->       line-height:1.6;
->       color: var(--muted);
->     }
-> 
->     /* Print */
->     @media print{
->       body{ background:#fff; padding:0; }
->       .topbar{ display:none; }
->       .paper{
->         box-shadow:none;
->         border:none;
->         border-radius:0;
->       }
->       header:before{ display:none; }
->       .chip{ border: 1px solid #cbd5e1; }
->       a{ color:inherit; text-decoration:none; }
->     }
-> 
->     /* Small screens */
->     @media (max-width: 760px){
->       .grid{ grid-template-columns: 1fr; }
->       .siggrid{ grid-template-columns: 1fr; }
->       .actions{ justify-content:flex-start; }
->     }
->   </style>
-> </head>
-> <body>
->   <div class="wrap">
->     <div class="topbar">
->       <div class="brand">
->         <div class="kicker">verification statement</div>
->         <div class="title">Service Animal Certification Statement</div>
->       </div>
->     </div>
-> 
->     <div class="paper">
->       <header>
->         <h1 class="h1">SERVICE ANIMAL CERTIFICATION STATEMENT</h1>
->         <p class="sub">
->           This document is provided as a factual verification statement by the handler. It is intended for housing providers
->           and/or other parties who require confirmation that an animal is a service/assistance animal under applicable federal law.
->         </p>
->       </header>
-> 
->       <section class="grid" aria-label="Identity and animal details">
->         <div class="card">
->           <div class="label">Owner / Handler</div>
->           <div class="value">Cody Rice-Velasquez / Zaitullah Khebarkhil</div>
->           <div class="chips">
->           </div>
->         </div>
-> 
->         <div class="card">
->           <div class="label">Service Animal</div>
->           <div class="value">Gigi <span class="muted">(dog, medium-sized)</span></div>
->           <div class="chips">
->             <span class="chip">House-trained</span>
->             <span class="chip">Non-aggressive</span>
->             <span class="chip">Under handler control</span>
->           </div>
->         </div>
->       </section>
-> 
->       <main>
->         <h2>Statement of Certification</h2>
->         <p>
->           I, <strong>Cody Rice-Velasquez</strong>, certify that the following statements are true and correct:
->         </p>
-> 
->         <ul>
->           <li>
->             I am an individual with a disability as defined under applicable federal law.
->             <span class="cite">§ FHA: 42 U.S.C. § 3602(h)</span>
->           </li>
->           <li>
->             <strong>Gigi</strong> is my <strong>service/assistance animal</strong> and has been <strong>individually trained</strong>, including through handler-directed training,
->             to perform tasks and services that assist me with my disability.
->             <span class="cite">§ ADA (service animal definition): 28 C.F.R. § 36.104</span>
->           </li>
->           <li>
->             The tasks and services performed mitigate the effects of my disability. I am not required to disclose the nature of my disability,
->             and I elect not to disclose medical details in this statement.
->             <span class="cite">§ FHA protections: 42 U.S.C. § 3604(f)</span>
->           </li>
->           <li>
->             Gigi is under my control through voice, signal, or physical guidance and is appropriately behaved in residential settings.
->           </li>
->           <li>
->             Gigi is not a pet and is not subject to pet fees, pet deposits, pet rent, breed restrictions, or weight limits.
->             <span class="cite">§ FHA (reasonable accommodation): 42 U.S.C. § 3604(f)(3)(B)</span>
->           </li>
->         </ul>
-> 
->         <div class="callout">
->           <p style="margin:0;">
->             <strong>Important:</strong> In housing contexts, service/assistance animals are evaluated under federal fair housing standards and related guidance.
->             A centralized registry, certification program, or paid “service animal card” is not required by federal law.
->             <span class="cite">§ HUD Guidance: FHEO-2020-01</span>
->           </p>
->         </div>
-> 
->         <div class="legal">
->           <h2>Legal Basis</h2>
-> 
->           <div class="row">
->             <div class="box">
->               <h3>Fair Housing Act (Housing)</h3>
->               <p>
->                 The <strong>Fair Housing Act</strong> prohibits discrimination on the basis of disability and requires housing providers to permit reasonable accommodations
->                 when necessary for equal opportunity to use and enjoy a dwelling.
->                 <span class="cite">§ 42 U.S.C. § 3604(f)(1)–(3)</span>
->               </p>
->               <p>
->                 This includes permitting service/assistance animals as a reasonable accommodation, and not imposing pet-related charges for such animals.
->                 <span class="cite">§ 42 U.S.C. § 3604(f)(3)(B)</span>
->               </p>
->             </div>
-> 
->             <div class="box">
->               <h3>HUD Assistance Animal Guidance (Housing)</h3>
->               <p>
->                 HUD guidance addresses how housing providers may evaluate assistance animal requests and clarifies that providers should not require
->                 documentation beyond what is permitted, and that “certifications” or registries are not determinative.
->                 <span class="cite">§ HUD: FHEO-2020-01</span>
->               </p>
->             </div>
-> 
->             <div class="box">
->               <h3>Americans with Disabilities Act (Public Contexts, as applicable)</h3>
->               <p>
->                 In public accommodations, the ADA defines service animals and limits the scope of inquiries that may be made.
->                 This document is primarily intended for housing use, but may be used as a general verification statement if needed.
->                 <span class="cite">§ 28 C.F.R. § 36.302(c)</span>
->               </p>
->             </div>
-> 
->             <div class="box">
->               <h3>Limitations of Inquiry</h3>
->               <p>
->                 This statement is provided voluntarily as a courtesy. No additional medical records, detailed diagnoses, or disclosures are provided
->                 or required in this document for the purpose of verifying the existence of a disability-related need for an assistance animal in housing.
->                 <span class="cite">§ FHA: 42 U.S.C. § 3604(f)</span>
->               </p>
->             </div>
->           </div>
->         </div>
-> 
->         <div class="sig" aria-label="Signature block">
->           <h2 style="margin-top:0;">Certification</h2>
->           <p style="margin:0 0 10px;">
->             I declare under penalty of perjury that the statements in this document are true and correct to the best of my knowledge.
->           </p>
-> 
->           <div class="siggrid">
->             <div>
->               <div class="line">s/ Cody Rice-Velasquez</div>
->               <div class="siglabel">Signature (Cody Rice-Velasquez)</div>
->             </div>
->             <div>
->               <div class="line">01-31-2026</div>
->               <div class="siglabel">Date</div>
->             </div>
->           </div>
->         </div>
->       </main>
-> 
->       <footer>
->         <div class="fineprint">
->           <strong>Note:</strong> If a housing provider has specific, lawful verification procedures consistent with federal standards, this document may be supplemented
->           by additional non-medical information as appropriate. This statement does not grant permission to request medical records or impose pet-related fees.
->         </div>
->       </footer>
->     </div>
->   </div>
-> </body>
+> update this <!DOCTYPE html>
+
+> <html lang="en">
+
+> <head>
+
+>   <meta charset="UTF-8" />
+
+>   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+>   <title>Service Animal Certification Statement - Cody Rice-Velasquez</title>
+
+>   <style>
+
+>     :root{
+
+>       --bg:#0b1220;
+
+>       --paper:#ffffff;
+
+>       --ink:#0f172a;
+
+>       --muted:#475569;
+
+>       --line:#e2e8f0;
+
+>       --accent:#2563eb;
+
+>       --accent2:#7c3aed;
+
+>       --chip:#f1f5f9;
+
+>       --warn:#b91c1c;
+
+>     }
+
+>     *{box-sizing:border-box}
+
+>     body{
+
+>       margin:0;
+
+>       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+
+>       color: var(--ink);
+
+>       background:
+
+>         radial-gradient(1200px 600px at 20% 10%, rgba(37,99,235,.22), transparent 55%),
+
+>         radial-gradient(900px 500px at 80% 20%, rgba(124,58,237,.18), transparent 50%),
+
+>         linear-gradient(180deg, #0b1220 0%, #0b1220 40%, #0f172a 100%);
+
+>       padding: 28px 16px;
+
+>     }
+
+>     .wrap{
+
+>       max-width: 980px;
+
+>       margin: 0 auto;
+
+>     }
+
+>     .topbar{
+
+>       display:flex;
+
+>       align-items:flex-start;
+
+>       justify-content:space-between;
+
+>       gap:12px;
+
+>       margin-bottom: 14px;
+
+>       color:#cbd5e1;
+
+>     }
+
+>     .brand{
+
+>       display:flex;
+
+>       flex-direction:column;
+
+>       gap:4px;
+
+>       line-height:1.1;
+
+>     }
+
+>     .brand .kicker{
+
+>       font-weight:700;
+
+>       letter-spacing:.08em;
+
+>       text-transform:uppercase;
+
+>       font-size:12px;
+
+>       color:#a5b4fc;
+
+>     }
+
+>     .brand .title{
+
+>       font-weight:800;
+
+>       font-size:20px;
+
+>       color:#e2e8f0;
+
+>     }
+
+>     .actions{
+
+>       display:flex;
+
+>       gap:10px;
+
+>       align-items:center;
+
+>       flex-wrap:wrap;
+
+>       justify-content:flex-end;
+
+>     }
+
+>     .pill{
+
+>       background: rgba(148,163,184,.12);
+
+>       border:1px solid rgba(148,163,184,.25);
+
+>       color:#e2e8f0;
+
+>       padding:8px 10px;
+
+>       border-radius:999px;
+
+>       font-size:12px;
+
+>       white-space:nowrap;
+
+>     }
+
+>     .paper{
+
+>       background: var(--paper);
+
+>       border-radius: 18px;
+
+>       box-shadow:
+
+>         0 20px 70px rgba(0,0,0,.45),
+
+>         0 2px 10px rgba(0,0,0,.18);
+
+>       overflow:hidden;
+
+>       border: 1px solid rgba(226,232,240,.9);
+
+>     }
+
+>     header{
+
+>       padding: 22px 22px 18px;
+
+>       border-bottom: 1px solid var(--line);
+
+>       position: relative;
+
+>     }
+
+>     header:before{
+
+>       content:"";
+
+>       position:absolute;
+
+>       inset:0;
+
+>       background:
+
+>         radial-gradient(600px 180px at 20% 0%, rgba(37,99,235,.10), transparent 70%),
+
+>         radial-gradient(520px 180px at 85% 20%, rgba(124,58,237,.08), transparent 65%);
+
+>       pointer-events:none;
+
+>     }
+
+>     header .h1{
+
+>       margin:0;
+
+>       font-size: 22px;
+
+>       font-weight: 850;
+
+>       letter-spacing:-.02em;
+
+>       position:relative;
+
+>     }
+
+>     header .sub{
+
+>       margin:8px 0 0;
+
+>       color: var(--muted);
+
+>       font-size: 13px;
+
+>       line-height:1.5;
+
+>       position:relative;
+
+>     }
+
+>     .grid{
+
+>       display:grid;
+
+>       grid-template-columns: 1fr 1fr;
+
+>       gap: 14px;
+
+>       padding: 18px 22px 8px;
+
+>     }
+
+>     .card{
+
+>       border: 1px solid var(--line);
+
+>       border-radius: 14px;
+
+>       padding: 14px 14px 12px;
+
+>       background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+
+>     }
+
+>     .label{
+
+>       font-size: 12px;
+
+>       letter-spacing:.06em;
+
+>       text-transform: uppercase;
+
+>       color: var(--muted);
+
+>       margin-bottom: 6px;
+
+>       font-weight: 700;
+
+>     }
+
+>     .value{
+
+>       font-size: 14px;
+
+>       font-weight: 750;
+
+>       color: var(--ink);
+
+>     }
+
+>     .value .muted{
+
+>       font-weight: 650;
+
+>       color: var(--muted);
+
+>     }
+
+>     .chips{
+
+>       display:flex;
+
+>       gap:8px;
+
+>       flex-wrap:wrap;
+
+>       margin-top:10px;
+
+>     }
+
+>     .chip{
+
+>       background: var(--chip);
+
+>       border:1px solid var(--line);
+
+>       color: var(--ink);
+
+>       padding: 6px 10px;
+
+>       border-radius: 999px;
+
+>       font-size: 12px;
+
+>       font-weight: 650;
+
+>     }
+
+> 
+
+>     main{
+
+>       padding: 4px 22px 22px;
+
+>     }
+
+>     h2{
+
+>       margin: 18px 0 10px;
+
+>       font-size: 14px;
+
+>       letter-spacing:.06em;
+
+>       text-transform: uppercase;
+
+>       color: var(--accent);
+
+>     }
+
+>     p{
+
+>       margin: 10px 0;
+
+>       line-height:1.6;
+
+>       color: var(--ink);
+
+>       font-size: 14px;
+
+>     }
+
+>     ul{
+
+>       margin: 10px 0 10px 18px;
+
+>       padding:0;
+
+>       color: var(--ink);
+
+>       font-size: 14px;
+
+>       line-height:1.7;
+
+>     }
+
+>     li{ margin: 6px 0; }
+
+>     .cite{
+
+>       color: var(--muted);
+
+>       font-weight: 650;
+
+>       white-space:nowrap;
+
+>     }
+
+>     .callout{
+
+>       margin-top: 14px;
+
+>       border: 1px solid rgba(37,99,235,.22);
+
+>       background: rgba(37,99,235,.06);
+
+>       border-radius: 14px;
+
+>       padding: 12px 14px;
+
+>     }
+
+>     .callout strong{ color: var(--accent); }
+
+>     .legal{
+
+>       border-top: 1px solid var(--line);
+
+>       margin-top: 18px;
+
+>       padding-top: 14px;
+
+>     }
+
+>     .legal .row{
+
+>       display:flex;
+
+>       gap:12px;
+
+>       flex-wrap:wrap;
+
+>       align-items:flex-start;
+
+>       justify-content:space-between;
+
+>     }
+
+>     .legal .box{
+
+>       flex:1 1 420px;
+
+>       border:1px solid var(--line);
+
+>       border-radius: 14px;
+
+>       padding: 12px 14px;
+
+>       background:#fff;
+
+>     }
+
+>     .box h3{
+
+>       margin: 0 0 8px;
+
+>       font-size: 13px;
+
+>       color: var(--ink);
+
+>       letter-spacing:.04em;
+
+>       text-transform: uppercase;
+
+>     }
+
+>     .box p{ margin: 8px 0; color: var(--muted); font-size: 13px; }
+
+>     .sig{
+
+>       margin-top: 16px;
+
+>       border: 1px dashed #cbd5e1;
+
+>       border-radius: 14px;
+
+>       padding: 14px;
+
+>       background: #fbfdff;
+
+>     }
+
+>     .siggrid{
+
+>       display:grid;
+
+>       grid-template-columns: 1fr 1fr;
+
+>       gap: 12px;
+
+>       margin-top: 8px;
+
+>     }
+
+>     .line{
+
+>       border-bottom: 2px solid #0f172a;
+
+>       height: 28px;
+
+>     }
+
+>     .siglabel{
+
+>       margin-top: 6px;
+
+>       color: var(--muted);
+
+>       font-size: 12px;
+
+>       letter-spacing:.04em;
+
+>       text-transform: uppercase;
+
+>       font-weight: 650;
+
+>     }
+
+>     footer{
+
+>       padding: 16px 22px 20px;
+
+>       border-top: 1px solid var(--line);
+
+>       background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+
+>     }
+
+>     .fineprint{
+
+>       font-size: 12px;
+
+>       line-height:1.6;
+
+>       color: var(--muted);
+
+>     }
+
+> 
+
+>     /* Print */
+
+>     @media print{
+
+>       body{ background:#fff; padding:0; }
+
+>       .topbar{ display:none; }
+
+>       .paper{
+
+>         box-shadow:none;
+
+>         border:none;
+
+>         border-radius:0;
+
+>       }
+
+>       header:before{ display:none; }
+
+>       .chip{ border: 1px solid #cbd5e1; }
+
+>       a{ color:inherit; text-decoration:none; }
+
+>     }
+
+> 
+
+>     /* Small screens */
+
+>     @media (max-width: 760px){
+
+>       .grid{ grid-template-columns: 1fr; }
+
+>       .siggrid{ grid-template-columns: 1fr; }
+
+>       .actions{ justify-content:flex-start; }
+
+>     }
+
+>   </style>
+
+> </head>
+
+> <body>
+
+>   <div class="wrap">
+
+>     <div class="topbar">
+
+>       <div class="brand">
+
+>         <div class="kicker">verification statement</div>
+
+>         <div class="title">Service Animal Certification Statement</div>
+
+>       </div>
+
+>     </div>
+
+> 
+
+>     <div class="paper">
+
+>       <header>
+
+>         <h1 class="h1">SERVICE ANIMAL CERTIFICATION STATEMENT</h1>
+
+>         <p class="sub">
+
+>           This document is provided as a factual verification statement by the handler. It is intended for housing providers
+
+>           and/or other parties who require confirmation that an animal is a service/assistance animal under applicable federal law.
+
+>         </p>
+
+>       </header>
+
+> 
+
+>       <section class="grid" aria-label="Identity and animal details">
+
+>         <div class="card">
+
+>           <div class="label">Owner / Handler</div>
+
+>           <div class="value">Cody Rice-Velasquez / Zaitullah Khebarkhil</div>
+
+>           <div class="chips">
+
+>           </div>
+
+>         </div>
+
+> 
+
+>         <div class="card">
+
+>           <div class="label">Service Animal</div>
+
+>           <div class="value">Gigi <span class="muted">(dog, medium-sized)</span></div>
+
+>           <div class="chips">
+
+>             <span class="chip">House-trained</span>
+
+>             <span class="chip">Non-aggressive</span>
+
+>             <span class="chip">Under handler control</span>
+
+>           </div>
+
+>         </div>
+
+>       </section>
+
+> 
+
+>       <main>
+
+>         <h2>Statement of Certification</h2>
+
+>         <p>
+
+>           I, <strong>Cody Rice-Velasquez</strong>, certify that the following statements are true and correct:
+
+>         </p>
+
+> 
+
+>         <ul>
+
+>           <li>
+
+>             I am an individual with a disability as defined under applicable federal law.
+
+>             <span class="cite">§ FHA: 42 U.S.C. § 3602(h)</span>
+
+>           </li>
+
+>           <li>
+
+>             <strong>Gigi</strong> is my <strong>service/assistance animal</strong> and has been <strong>individually trained</strong>, including through handler-directed training,
+
+>             to perform tasks and services that assist me with my disability.
+
+>             <span class="cite">§ ADA (service animal definition): 28 C.F.R. § 36.104</span>
+
+>           </li>
+
+>           <li>
+
+>             The tasks and services performed mitigate the effects of my disability. I am not required to disclose the nature of my disability,
+
+>             and I elect not to disclose medical details in this statement.
+
+>             <span class="cite">§ FHA protections: 42 U.S.C. § 3604(f)</span>
+
+>           </li>
+
+>           <li>
+
+>             Gigi is under my control through voice, signal, or physical guidance and is appropriately behaved in residential settings.
+
+>           </li>
+
+>           <li>
+
+>             Gigi is not a pet and is not subject to pet fees, pet deposits, pet rent, breed restrictions, or weight limits.
+
+>             <span class="cite">§ FHA (reasonable accommodation): 42 U.S.C. § 3604(f)(3)(B)</span>
+
+>           </li>
+
+>         </ul>
+
+> 
+
+>         <div class="callout">
+
+>           <p style="margin:0;">
+
+>             <strong>Important:</strong> In housing contexts, service/assistance animals are evaluated under federal fair housing standards and related guidance.
+
+>             A centralized registry, certification program, or paid “service animal card” is not required by federal law.
+
+>             <span class="cite">§ HUD Guidance: FHEO-2020-01</span>
+
+>           </p>
+
+>         </div>
+
+> 
+
+>         <div class="legal">
+
+>           <h2>Legal Basis</h2>
+
+> 
+
+>           <div class="row">
+
+>             <div class="box">
+
+>               <h3>Fair Housing Act (Housing)</h3>
+
+>               <p>
+
+>                 The <strong>Fair Housing Act</strong> prohibits discrimination on the basis of disability and requires housing providers to permit reasonable accommodations
+
+>                 when necessary for equal opportunity to use and enjoy a dwelling.
+
+>                 <span class="cite">§ 42 U.S.C. § 3604(f)(1)–(3)</span>
+
+>               </p>
+
+>               <p>
+
+>                 This includes permitting service/assistance animals as a reasonable accommodation, and not imposing pet-related charges for such animals.
+
+>                 <span class="cite">§ 42 U.S.C. § 3604(f)(3)(B)</span>
+
+>               </p>
+
+>             </div>
+
+> 
+
+>             <div class="box">
+
+>               <h3>HUD Assistance Animal Guidance (Housing)</h3>
+
+>               <p>
+
+>                 HUD guidance addresses how housing providers may evaluate assistance animal requests and clarifies that providers should not require
+
+>                 documentation beyond what is permitted, and that “certifications” or registries are not determinative.
+
+>                 <span class="cite">§ HUD: FHEO-2020-01</span>
+
+>               </p>
+
+>             </div>
+
+> 
+
+>             <div class="box">
+
+>               <h3>Americans with Disabilities Act (Public Contexts, as applicable)</h3>
+
+>               <p>
+
+>                 In public accommodations, the ADA defines service animals and limits the scope of inquiries that may be made.
+
+>                 This document is primarily intended for housing use, but may be used as a general verification statement if needed.
+
+>                 <span class="cite">§ 28 C.F.R. § 36.302(c)</span>
+
+>               </p>
+
+>             </div>
+
+> 
+
+>             <div class="box">
+
+>               <h3>Limitations of Inquiry</h3>
+
+>               <p>
+
+>                 This statement is provided voluntarily as a courtesy. No additional medical records, detailed diagnoses, or disclosures are provided
+
+>                 or required in this document for the purpose of verifying the existence of a disability-related need for an assistance animal in housing.
+
+>                 <span class="cite">§ FHA: 42 U.S.C. § 3604(f)</span>
+
+>               </p>
+
+>             </div>
+
+>           </div>
+
+>         </div>
+
+> 
+
+>         <div class="sig" aria-label="Signature block">
+
+>           <h2 style="margin-top:0;">Certification</h2>
+
+>           <p style="margin:0 0 10px;">
+
+>             I declare under penalty of perjury that the statements in this document are true and correct to the best of my knowledge.
+
+>           </p>
+
+> 
+
+>           <div class="siggrid">
+
+>             <div>
+
+>               <div class="line">s/ Cody Rice-Velasquez</div>
+
+>               <div class="siglabel">Signature (Cody Rice-Velasquez)</div>
+
+>             </div>
+
+>             <div>
+
+>               <div class="line">01-31-2026</div>
+
+>               <div class="siglabel">Date</div>
+
+>             </div>
+
+>           </div>
+
+>         </div>
+
+>       </main>
+
+> 
+
+>       <footer>
+
+>         <div class="fineprint">
+
+>           <strong>Note:</strong> If a housing provider has specific, lawful verification procedures consistent with federal standards, this document may be supplemented
+
+>           by additional non-medical information as appropriate. This statement does not grant permission to request medical records or impose pet-related fees.
+
+>         </div>
+
+>       </footer>
+
+>     </div>
+
+>   </div>
+
+> </body>
+
 > </html> , i added zaituallah as one of the handlers as he primarily trained her.
 
 ### Assistant

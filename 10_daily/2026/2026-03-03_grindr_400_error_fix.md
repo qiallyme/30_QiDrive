@@ -3,9 +3,9 @@ layout: page
 title: "Grindr 400 Error Fix"
 slug: "grindr_400_error_fix"
 created_at: "2026-03-03 05:56:11"
-updated_at: "2026-03-03 05:56:11"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,81 +39,156 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> why am i getting this error on grinder. equest URL
-> https://web.grindr.com/api/v4/users/reset-password
-> Request Method
-> POST
-> Status Code
-> 400 Bad Request
-> Remote Address
-> 104.16.235.5:443
-> Referrer Policy
-> strict-origin-when-cross-origin
-> access-control-allow-credentials
-> true
-> access-control-allow-origin
-> https://web.grindr.com
-> cf-cache-status
-> DYNAMIC
-> cf-ray
-> 9d68738afc245e0c-ORD
-> content-encoding
-> gzip
-> content-length
-> 72
-> content-type
-> application/json
-> date
-> Tue, 03 Mar 2026 11:55:17 GMT
-> server
-> cloudflare
-> set-cookie
-> __cf_bm=MT5EkmkEACcXmAcslWwtUqPwaVkDjqoH6ndlX4jdtEg-1772538917-1.0.1.1-ss8wZ_EcIA5wA6ptWkB4tNQqmJIwZaje39a7d9mJVj.9mTH6ScRrrA2Y64sT6icoPZzoXOcb13lQo_TM2_4qC4YMlx.6yV5hbb1AzUj3l68; path=/; expires=Tue, 03-Mar-26 12:25:17 GMT; domain=.grindr.com; HttpOnly; Secure; SameSite=None
-> strict-transport-security
-> max-age=300; includeSubDomains
-> vary
-> accept-encoding,Origin
-> :authority
-> web.grindr.com
-> :method
-> POST
-> :path
-> /api/v4/users/reset-password
-> :scheme
-> https
-> accept
-> */*
-> accept-encoding
-> gzip, deflate, br, zstd
-> accept-language
-> en-US
-> content-length
-> 2440
-> content-type
-> application/json
-> country-code
-> US
-> l-locale
-> en_US
-> origin
-> https://web.grindr.com
-> priority
-> u=1, i
-> referer
-> https://web.grindr.com/reset-password?resetToken=7JJFS1PZeYhiSszMwO4LJR3bWfVh7qpX8oi1skrzBj1xeVOY30vNKyhZonSxONI4b6tBEaxEcL8jpFlyg6Hquwhg7JTYcKY3MsOEIpNNH4t41dFfRNtzUHagU5WCvIqz&email=cdangelalopez%40gmail.com
-> sec-ch-ua
-> "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
-> sec-ch-ua-mobile
-> ?0
-> sec-ch-ua-platform
-> "Windows"
-> sec-fetch-dest
-> empty
-> sec-fetch-mode
-> cors
-> sec-fetch-site
-> same-origin
-> user-agent
+> why am i getting this error on grinder. equest URL
+
+> https://web.grindr.com/api/v4/users/reset-password
+
+> Request Method
+
+> POST
+
+> Status Code
+
+> 400 Bad Request
+
+> Remote Address
+
+> 104.16.235.5:443
+
+> Referrer Policy
+
+> strict-origin-when-cross-origin
+
+> access-control-allow-credentials
+
+> true
+
+> access-control-allow-origin
+
+> https://web.grindr.com
+
+> cf-cache-status
+
+> DYNAMIC
+
+> cf-ray
+
+> 9d68738afc245e0c-ORD
+
+> content-encoding
+
+> gzip
+
+> content-length
+
+> 72
+
+> content-type
+
+> application/json
+
+> date
+
+> Tue, 03 Mar 2026 11:55:17 GMT
+
+> server
+
+> cloudflare
+
+> set-cookie
+
+> __cf_bm=MT5EkmkEACcXmAcslWwtUqPwaVkDjqoH6ndlX4jdtEg-1772538917-1.0.1.1-ss8wZ_EcIA5wA6ptWkB4tNQqmJIwZaje39a7d9mJVj.9mTH6ScRrrA2Y64sT6icoPZzoXOcb13lQo_TM2_4qC4YMlx.6yV5hbb1AzUj3l68; path=/; expires=Tue, 03-Mar-26 12:25:17 GMT; domain=.grindr.com; HttpOnly; Secure; SameSite=None
+
+> strict-transport-security
+
+> max-age=300; includeSubDomains
+
+> vary
+
+> accept-encoding,Origin
+
+> :authority
+
+> web.grindr.com
+
+> :method
+
+> POST
+
+> :path
+
+> /api/v4/users/reset-password
+
+> :scheme
+
+> https
+
+> accept
+
+> */*
+
+> accept-encoding
+
+> gzip, deflate, br, zstd
+
+> accept-language
+
+> en-US
+
+> content-length
+
+> 2440
+
+> content-type
+
+> application/json
+
+> country-code
+
+> US
+
+> l-locale
+
+> en_US
+
+> origin
+
+> https://web.grindr.com
+
+> priority
+
+> u=1, i
+
+> referer
+
+> https://web.grindr.com/reset-password?resetToken=7JJFS1PZeYhiSszMwO4LJR3bWfVh7qpX8oi1skrzBj1xeVOY30vNKyhZonSxONI4b6tBEaxEcL8jpFlyg6Hquwhg7JTYcKY3MsOEIpNNH4t41dFfRNtzUHagU5WCvIqz&email=cdangelalopez%40gmail.com
+
+> sec-ch-ua
+
+> "Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"
+
+> sec-ch-ua-mobile
+
+> ?0
+
+> sec-ch-ua-platform
+
+> "Windows"
+
+> sec-fetch-dest
+
+> empty
+
+> sec-fetch-mode
+
+> cors
+
+> sec-fetch-site
+
+> same-origin
+
+> user-agent
+
 > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Emotional Absence and Expectations"
 slug: "emotional_absence_and_expectations"
 created_at: "2026-06-05 09:26:54"
-updated_at: "2026-06-05 09:26:54"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -17077,193 +17077,380 @@ canonical_ref: ""
 > Now we stabilize 👍
 
 ### User
-> You are acting as a capture processor for QiCapture.
-> 
-> Cody will paste raw input (thoughts, events, messages, ideas).
-> 
-> Your job is to:
-> 
-> 1. Determine the type:
-> - journal → reflections, emotions, events
-> - people → specific person-related content
-> - creative → ideas, stories, systems
-> - outbound → messages to send
-> 
-> 2. Choose the correct folder:
-> - journal/
-> - people/[name]/
-> - creative/
-> - outbound/
-> 
-> 3. Create a markdown file:
-> 
-> Format:
-> YYYY-MM-DD_short-title.md
-> 
-> 4. Add metadata at the top:
-> 
-> date: 
-> type: 
-> tags: []
-> people: []
-> 
-> 5. Then structure the content:
-> 
-> ## Summary
-> Short 1–2 sentence summary
-> 
-> ## Content
-> Cleaned, readable version of the input
-> 
-> 6. Keep it simple:
-> - no overthinking
-> - no unnecessary questions
-> - just organize and save
-> 
-> 7. After saving, respond with:
-> 
-> - file name
-> - location
-> - tags used
-> 
-> Do not redesign anything.
-> Do not delay.
-> Just process and store.
-> 
-> Wait for input.# Codex Capture Instructions
-> 
-> When Cody pastes raw input:
-> 
-> 1. Determine type:
-> 
-> * emotional/reflection -> journal
-> * person-specific -> people/[name]
-> * idea/project -> creative
-> * message draft -> outbound
-> 
-> 2. Create a markdown file using format:
-> 
-> `YYYY-MM-DD_short-title.md`
-> 
-> 3. Add metadata at top:
-> 
-> * date
-> * type
-> * tags
-> * people
-> 
-> 4. Write:
-> 
-> * short summary
-> * clean formatted content
-> 
-> 5. Place file in correct folder
-> 6. Do NOT overcomplicate
-> 7. Do NOT ask unnecessary questions
-> 8. Always prioritize speed and clarity
-> 9. After processing:
-> 
-> Confirm what was created and where it was saved.
-> 
-> INPUT:
-> $'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'
-> EOF#!/bin/bash
-> 
-> INPUT="$'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'"
-> 
-> cd ~/qi_workspace/40_QiCapture
-> 
-> codex << EOF
-> You are acting as a capture processor for QiCapture.
-> 
-> Cody will paste raw input (thoughts, events, messages, ideas).
-> 
-> Your job is to:
-> 
-> 1. Determine the type:
-> - journal → reflections, emotions, events
-> - people → specific person-related content
-> - creative → ideas, stories, systems
-> - outbound → messages to send
-> 
-> 2. Choose the correct folder:
-> - journal/
-> - people/[name]/
-> - creative/
-> - outbound/
-> 
-> 3. Create a markdown file:
-> 
-> Format:
-> YYYY-MM-DD_short-title.md
-> 
-> 4. Add metadata at the top:
-> 
-> date: 
-> type: 
-> tags: []
-> people: []
-> 
-> 5. Then structure the content:
-> 
-> ## Summary
-> Short 1–2 sentence summary
-> 
-> ## Content
-> Cleaned, readable version of the input
-> 
-> 6. Keep it simple:
-> - no overthinking
-> - no unnecessary questions
-> - just organize and save
-> 
-> 7. After saving, respond with:
-> 
-> - file name
-> - location
-> - tags used
-> 
-> Do not redesign anything.
-> Do not delay.
-> Just process and store.
-> 
-> Wait for input.# Codex Capture Instructions
-> 
-> When Cody pastes raw input:
-> 
-> 1. Determine type:
-> 
-> * emotional/reflection -> journal
-> * person-specific -> people/[name]
-> * idea/project -> creative
-> * message draft -> outbound
-> 
-> 2. Create a markdown file using format:
-> 
-> `YYYY-MM-DD_short-title.md`
-> 
-> 3. Add metadata at top:
-> 
-> * date
-> * type
-> * tags
-> * people
-> 
-> 4. Write:
-> 
-> * short summary
-> * clean formatted content
-> 
-> 5. Place file in correct folder
-> 6. Do NOT overcomplicate
-> 7. Do NOT ask unnecessary questions
-> 8. Always prioritize speed and clarity
-> 9. After processing:
-> 
-> Confirm what was created and where it was saved.
-> 
-> INPUT:
-> $'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'
+> You are acting as a capture processor for QiCapture.
+
+> 
+
+> Cody will paste raw input (thoughts, events, messages, ideas).
+
+> 
+
+> Your job is to:
+
+> 
+
+> 1. Determine the type:
+
+> - journal → reflections, emotions, events
+
+> - people → specific person-related content
+
+> - creative → ideas, stories, systems
+
+> - outbound → messages to send
+
+> 
+
+> 2. Choose the correct folder:
+
+> - journal/
+
+> - people/[name]/
+
+> - creative/
+
+> - outbound/
+
+> 
+
+> 3. Create a markdown file:
+
+> 
+
+> Format:
+
+> YYYY-MM-DD_short-title.md
+
+> 
+
+> 4. Add metadata at the top:
+
+> 
+
+> date: 
+
+> type: 
+
+> tags: []
+
+> people: []
+
+> 
+
+> 5. Then structure the content:
+
+> 
+
+> ## Summary
+
+> Short 1–2 sentence summary
+
+> 
+
+> ## Content
+
+> Cleaned, readable version of the input
+
+> 
+
+> 6. Keep it simple:
+
+> - no overthinking
+
+> - no unnecessary questions
+
+> - just organize and save
+
+> 
+
+> 7. After saving, respond with:
+
+> 
+
+> - file name
+
+> - location
+
+> - tags used
+
+> 
+
+> Do not redesign anything.
+
+> Do not delay.
+
+> Just process and store.
+
+> 
+
+> Wait for input.# Codex Capture Instructions
+
+> 
+
+> When Cody pastes raw input:
+
+> 
+
+> 1. Determine type:
+
+> 
+
+> * emotional/reflection -> journal
+
+> * person-specific -> people/[name]
+
+> * idea/project -> creative
+
+> * message draft -> outbound
+
+> 
+
+> 2. Create a markdown file using format:
+
+> 
+
+> `YYYY-MM-DD_short-title.md`
+
+> 
+
+> 3. Add metadata at top:
+
+> 
+
+> * date
+
+> * type
+
+> * tags
+
+> * people
+
+> 
+
+> 4. Write:
+
+> 
+
+> * short summary
+
+> * clean formatted content
+
+> 
+
+> 5. Place file in correct folder
+
+> 6. Do NOT overcomplicate
+
+> 7. Do NOT ask unnecessary questions
+
+> 8. Always prioritize speed and clarity
+
+> 9. After processing:
+
+> 
+
+> Confirm what was created and where it was saved.
+
+> 
+
+> INPUT:
+
+> $'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'
+
+> EOF#!/bin/bash
+
+> 
+
+> INPUT="$'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'"
+
+> 
+
+> cd ~/qi_workspace/40_QiCapture
+
+> 
+
+> codex << EOF
+
+> You are acting as a capture processor for QiCapture.
+
+> 
+
+> Cody will paste raw input (thoughts, events, messages, ideas).
+
+> 
+
+> Your job is to:
+
+> 
+
+> 1. Determine the type:
+
+> - journal → reflections, emotions, events
+
+> - people → specific person-related content
+
+> - creative → ideas, stories, systems
+
+> - outbound → messages to send
+
+> 
+
+> 2. Choose the correct folder:
+
+> - journal/
+
+> - people/[name]/
+
+> - creative/
+
+> - outbound/
+
+> 
+
+> 3. Create a markdown file:
+
+> 
+
+> Format:
+
+> YYYY-MM-DD_short-title.md
+
+> 
+
+> 4. Add metadata at the top:
+
+> 
+
+> date: 
+
+> type: 
+
+> tags: []
+
+> people: []
+
+> 
+
+> 5. Then structure the content:
+
+> 
+
+> ## Summary
+
+> Short 1–2 sentence summary
+
+> 
+
+> ## Content
+
+> Cleaned, readable version of the input
+
+> 
+
+> 6. Keep it simple:
+
+> - no overthinking
+
+> - no unnecessary questions
+
+> - just organize and save
+
+> 
+
+> 7. After saving, respond with:
+
+> 
+
+> - file name
+
+> - location
+
+> - tags used
+
+> 
+
+> Do not redesign anything.
+
+> Do not delay.
+
+> Just process and store.
+
+> 
+
+> Wait for input.# Codex Capture Instructions
+
+> 
+
+> When Cody pastes raw input:
+
+> 
+
+> 1. Determine type:
+
+> 
+
+> * emotional/reflection -> journal
+
+> * person-specific -> people/[name]
+
+> * idea/project -> creative
+
+> * message draft -> outbound
+
+> 
+
+> 2. Create a markdown file using format:
+
+> 
+
+> `YYYY-MM-DD_short-title.md`
+
+> 
+
+> 3. Add metadata at top:
+
+> 
+
+> * date
+
+> * type
+
+> * tags
+
+> * people
+
+> 
+
+> 4. Write:
+
+> 
+
+> * short summary
+
+> * clean formatted content
+
+> 
+
+> 5. Place file in correct folder
+
+> 6. Do NOT overcomplicate
+
+> 7. Do NOT ask unnecessary questions
+
+> 8. Always prioritize speed and clarity
+
+> 9. After processing:
+
+> 
+
+> Confirm what was created and where it was saved.
+
+> 
+
+> INPUT:
+
+> $'---\ntype: voice_note\ncreated: Jun 5, 2026 at 1:15 PM\n---\n\nThis is a test thank you\n\n---\n'
+
 > bash: line 1: codex: command not found
 
 ### Assistant

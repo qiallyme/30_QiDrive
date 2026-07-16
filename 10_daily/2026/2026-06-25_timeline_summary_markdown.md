@@ -3,9 +3,9 @@ layout: page
 title: "Timeline Summary Markdown"
 slug: "timeline_summary_markdown"
 created_at: "2026-06-25 23:23:01"
-updated_at: "2026-06-25 23:23:01"
+updated_at: "2026-07-16T06:49:34-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -1064,35 +1064,64 @@ canonical_ref: ""
 > Start with the `events` table. Timeline is not a new table. Timeline is a **view of events**.
 
 ### User
-> girl the only table i see in there is records that are in qilife. create table qilife.records (
->   id uuid not null default gen_random_uuid (),
->   entity_key text not null,
->   title text not null,
->   status text null,
->   priority text null,
->   due_date date null,
->   data jsonb not null default '{}'::jsonb,
->   source text not null default 'qilife'::text,
->   created_at timestamp with time zone not null default now(),
->   updated_at timestamp with time zone not null default now(),
->   archived_at timestamp with time zone null,
->   owner_id uuid null default auth.uid (),
->   constraint records_pkey primary key (id),
->   constraint records_owner_id_fkey foreign KEY (owner_id) references auth.users (id)
-> ) TABLESPACE pg_default;
-> 
-> create index IF not exists idx_qilife_records_entity_key on qilife.records using btree (entity_key) TABLESPACE pg_default;
-> 
-> create index IF not exists idx_qilife_records_status on qilife.records using btree (status) TABLESPACE pg_default;
-> 
-> create index IF not exists idx_qilife_records_priority on qilife.records using btree (priority) TABLESPACE pg_default;
-> 
-> create index IF not exists idx_qilife_records_due_date on qilife.records using btree (due_date) TABLESPACE pg_default;
-> 
-> create index IF not exists idx_qilife_records_data_gin on qilife.records using gin (data) TABLESPACE pg_default;
-> 
-> create trigger trg_qilife_records_updated_at BEFORE
-> update on qilife.records for EACH row
+> girl the only table i see in there is records that are in qilife. create table qilife.records (
+
+>   id uuid not null default gen_random_uuid (),
+
+>   entity_key text not null,
+
+>   title text not null,
+
+>   status text null,
+
+>   priority text null,
+
+>   due_date date null,
+
+>   data jsonb not null default '{}'::jsonb,
+
+>   source text not null default 'qilife'::text,
+
+>   created_at timestamp with time zone not null default now(),
+
+>   updated_at timestamp with time zone not null default now(),
+
+>   archived_at timestamp with time zone null,
+
+>   owner_id uuid null default auth.uid (),
+
+>   constraint records_pkey primary key (id),
+
+>   constraint records_owner_id_fkey foreign KEY (owner_id) references auth.users (id)
+
+> ) TABLESPACE pg_default;
+
+> 
+
+> create index IF not exists idx_qilife_records_entity_key on qilife.records using btree (entity_key) TABLESPACE pg_default;
+
+> 
+
+> create index IF not exists idx_qilife_records_status on qilife.records using btree (status) TABLESPACE pg_default;
+
+> 
+
+> create index IF not exists idx_qilife_records_priority on qilife.records using btree (priority) TABLESPACE pg_default;
+
+> 
+
+> create index IF not exists idx_qilife_records_due_date on qilife.records using btree (due_date) TABLESPACE pg_default;
+
+> 
+
+> create index IF not exists idx_qilife_records_data_gin on qilife.records using gin (data) TABLESPACE pg_default;
+
+> 
+
+> create trigger trg_qilife_records_updated_at BEFORE
+
+> update on qilife.records for EACH row
+
 > execute FUNCTION qilife.set_updated_at ();
 
 ### Assistant

@@ -3,9 +3,9 @@ layout: page
 title: "Find duplicates game"
 slug: "find_duplicates_game"
 created_at: "2025-09-12 00:01:49"
-updated_at: "2025-09-12 00:01:49"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -71,350 +71,694 @@ canonical_ref: ""
 > Want me to build you a **clean excerpt template** (with source citation, page numbers, and a note about full availability) so you can drop in the key pages from each report and have a tidy, consistent look for the filing?
 
 ### User
-> mamm lets play a game called can you find the duplicates before cursor. ## EX-01 | Identity-Entry-Status
-> 
-> | #        | Date       | File                                                                     |
-> | -------- | ---------- | ------------------------------------------------------------------------ |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9114-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9115-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9116-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9117-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9122-ID-EX-001-afghan-passport.jpg               |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9123-ID-EX-002-afghan-passport-copy.jpg          |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9124-ID-EX-003-passport-photo.jpg                |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9125-ID-EX-004-ssn-card.jpg                      |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9126-ID-EX-005-ssn-card-back.jpg                 |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9127-ID-EX-006-ssn-stub.jpg                      |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9129-ID-Bio-Data-Sheet-001.jpg                   |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9130-ID-Bio-Data-Sheet-002.jpg                   |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9131-ID-Bio-Data-Sheet-003.jpg                   |
-> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9132-ID-Bio-Data-Sheet-004.jpg                   |
-> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9133-ID-Drivers-License-20220524-TX-001.jpg      |
-> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9134-ID-Drivers-License-20220524-TX-002.jpg      |
-> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9135-ID-Drivers-License-20220524-TX-Notice-0.jpg |
-> | EX-01.01 | 2022-11-02 | EX-01.01_20221102_EX-ID-9136-ID-Drivers-License-20221102-001.jpg         |
-> | EX-01.01 | 2022-11-02 | EX-01.01_20221102_EX-ID-9137-ID-Drivers-License-20221102-002.jpg         |
-> | EX-01.01 | 2023-10-19 | EX-01.01_20231019_EX-ID-9138-ID-Drivers-License-20231019-001.jpg         |
-> | EX-01.01 | 2023-10-19 | EX-01.01_20231019_EX-ID-9139-ID-Drivers-License-20231019-002.jpg         |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9103-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9104-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9105-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9106-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9107-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9108-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9109-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9110-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9111-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9112-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
-> | EX-01.01 | 2025-08-26 | EX-01.01_20250826_EX-ID-9143-ID-Pasted-image-20250826171614-20250826.png |
-> | EX-01.01 | 2025-08-26 | EX-01.01_20250826_EX-ID-9144-ID-Pasted-image-20250826172007-20250826.png |
-> | EX-01.01 | 2025-08-28 | EX-01.01_20250828_EX-ID-9145-ID-Pasted-image-20250828221506-20250828.png |
-> | EX-01.01 | 2025-08-28 | EX-01.01_20250828_EX-ID-9146-ID-Pasted-image-20250828221917-20250828.png |
-> | EX-01.01 | 3043-22-02 | EX-01.01_30432202_EX-ID-9119-ID-CHAPMAN-BCP-LOS304322020021706220000.jpg |
-> | EX-01.01 | 3043-22-02 | EX-01.01_30432202_EX-ID-9120-ID-CHAPMAN-BCP-LOS304322020021706220000.jpg |
-> | EX-01.01 | 6007-79-88 | EX-01.01_60077988_EX-ID-9101-ID-EAD-IOE6007798848-20231208-001-60077.jpg |
-> | EX-01.01 | 6007-79-88 | EX-01.01_60077988_EX-ID-9102-ID-EAD-IOE6007798848-20231208-002-60077.jpg |
-> | EX-01.01 | 8250-81-94 | EX-01.01_82508194_EX-ID-9140-ID-EAD-IOE8250819425-20210930-BACK-8250.jpg |
-> | EX-01.01 | 8250-81-94 | EX-01.01_82508194_EX-ID-9141-ID-EAD-IOE8250819425-20210930-FRONT-825.jpg |
-> | EX-01.06 | 2021-08-31 | EX-01.06_20210831_EX-TRV-9401-TRV-EX-001-i94-arrival-record-20210831.jpg |
-> | EX-01.06 | 2021-11-05 | EX-01.06_20211105_EX-TRV-9402-TRV-EX-002-i94-arrival-record-20211105.jpg |
-> | EX-01.06 | 2022-09-08 | EX-01.06_20220908_EX-TRV-9403-TRV-EX-003-i94-arrival-record-20220908.jpg |
-> 
-> ## EX-02 | Persecution-Threats-Conditions
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 2021-09-01 | B100-014-US-State-Dept-Report-Copy | EX-01.01_20210901_B100-014-US-State-Dept-Report-Copy.pdf |
-> | EX-01.01 | 2021-09-01 | B100-015-UNAMA-Detainee-Report-Copy | EX-01.01_20210901_B100-015-UNAMA-Detainee-Report-Copy.pdf |
-> | EX-01.01 | 2021-09-01 | B101-007-UN-News-Revenge-Killings-Copy | EX-01.01_20210901_B101-007-UN-News-Revenge-Killings-Copy.pdf |
-> | EX-01.01 | 2021-09-01 | B101-008-HRW-LGBT-Targeting-Copy | EX-01.01_20210901_B101-008-HRW-LGBT-Targeting-Copy.pdf |
-> | EX-01.01 | 2021-09-01 | B101-009-Hasht-e-Subh-Family-Targeting-Copy | EX-01.01_20210901_B101-009-Hasht-e-Subh-Family-Targeting-Copy.pdf |
-> | EX-01.01 | 2021-09-01 | B102-Affidavit-Zaitullah-Jan | EX-01.01_20210901_B102-Affidavit-Zaitullah-Jan.pdf |
-> | EX-01.01 | 2021-09-01 | B103-Personal-Statement-April-2022 | EX-01.01_20210901_B103-Personal-Statement-April-2022.pdf |
-> | EX-01.01 | 2021-09-01 | B105-UN-News-Revenge-Killings | EX-01.01_20210901_B105-UN-News-Revenge-Killings.pdf |
-> | EX-01.01 | 2021-09-01 | B106-HRW-Executions-Disappearances | EX-01.01_20210901_B106-HRW-Executions-Disappearances.pdf |
-> | EX-01.01 | 2021-09-01 | B107-Hasht-e-Subh-Family-Targeting | EX-01.01_20210901_B107-Hasht-e-Subh-Family-Targeting.pdf |
-> | EX-01.01 | 2021-09-01 | B108-ANDSF-Detention | EX-01.01_20210901_B108-ANDSF-Detention.pdf |
-> | EX-01.01 | 2021-09-01 | B109-HRW-LGBT-Targeting | EX-01.01_20210901_B109-HRW-LGBT-Targeting.pdf |
-> | EX-01.01 | 2021-09-01 | B110-JURIST-LGBTQ-Atrocities | EX-01.01_20210901_B110-JURIST-LGBTQ-Atrocities.pdf |
-> | EX-01.01 | 2021-09-01 | B111-Amnesty-Government-Collapse | EX-01.01_20210901_B111-Amnesty-Government-Collapse.pdf |
-> | EX-01.01 | 2021-09-01 | B112-US-State-Dept-Report | EX-01.01_20210901_B112-US-State-Dept-Report.pdf |
-> | EX-01.01 | 2021-09-01 | B113-UNAMA-Detainee-Report | EX-01.01_20210901_B113-UNAMA-Detainee-Report.pdf |
-> | EX-01.01 | 2021-09-01 | B114-Former-Soldiers-Fear-Return | EX-01.01_20210901_B114-Former-Soldiers-Fear-Return.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-003-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-003-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-004-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-004-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-005-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-005-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-006-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-006-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-007-Afghanistan-Taliban-Target-LGBT-Afghans-H | EX-01.01_20210901_EX-B-007-Afghanistan-Taliban-Target-LGBT-Afghans-H.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-008-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-008-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-008-Endless-Retribution-Taliban-Interrogates- | EX-01.01_20210901_EX-B-008-Endless-Retribution-Taliban-Interrogates-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-B-010-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-010-Afghanistan-s-Taliban-responsible-for-rev.pdf |
-> | EX-01.01 | 2021-09-01 | EX-THR-9301-THR-EX-001-affidavit-of-zaitullah-jan | EX-01.01_20210901_EX-THR-9301-THR-EX-001-affidavit-of-zaitullah-jan.pdf |
-> | EX-01.01 | 2021-09-01 | EX-THR-9302-THR-EX-002-letter-from-zaitullah-jan | EX-01.01_20210901_EX-THR-9302-THR-EX-002-letter-from-zaitullah-jan.pdf |
-> | EX-01.01 | 2021-09-01 | EX-THR-9304-THR-EX-004-affidavit-zaitullah-jan-khe | EX-01.01_20210901_EX-THR-9304-THR-EX-004-affidavit-zaitullah-jan-khe.pdf |
-> | EX-01.01 | 2022-08-14 | EX-THR-9303-THR-EX-003-letter-from-applicant-20220 | EX-01.01_20220814_EX-THR-9303-THR-EX-003-letter-from-applicant-20220.pdf |
-> 
-> ## EX-03 | Government-Actions-Notices
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 0101-19-97 | 01011997-Anyinformationinthistransmissionpertainin | EX-01.01_01011997_01011997-Anyinformationinthistransmissionpertainin.pdf |
-> | EX-01.01 | 0101-19-97 | 01011997-FonwardedmessageFrom-ZaitullahJanKhebarkh | EX-01.01_01011997_01011997-FonwardedmessageFrom-ZaitullahJanKhebarkh.pdf |
-> | EX-01.01 | 0101-19-97 | 01011997-Gmail | EX-01.01_01011997_01011997-Gmail.pdf |
-> | EX-01.01 | 0101-19-97 | 01011997-MarshallISpecialInimiytantVisaUnitDepaitm | EX-01.01_01011997_01011997-MarshallISpecialInimiytantVisaUnitDepaitm.pdf |
-> | EX-01.01 | 0101-19-97 | 01011997-YourChiefofMissionCOMcasenumberisNVCSIV20 | EX-01.01_01011997_01011997-YourChiefofMissionCOMcasenumberisNVCSIV20.pdf |
-> | EX-01.01 | 0101-19-97 | EX-G-003-01011997-Zaitullah-SIV-Case-One-Page-Brie | EX-01.01_01011997_EX-G-003-01011997-Zaitullah-SIV-Case-One-Page-Brie.pdf |
-> | EX-01.01 | 0531-20-25 | EX-G-001-EX-G-001-05312025-View-Travel-History | EX-01.01_05312025_EX-G-001-EX-G-001-05312025-View-Travel-History.pdf |
-> | EX-01.01 | 0710-20-24 | EX-G-009-07102024-7-10-2024-Denial-of-Chief-of-Mis | EX-01.01_07102024_EX-G-009-07102024-7-10-2024-Denial-of-Chief-of-Mis.pdf |
-> | EX-01.01 | 0801-20-25 | EX-G-001-08012025-FOIA-SUBMISSION | EX-01.01_08012025_EX-G-001-08012025-FOIA-SUBMISSION.pdf |
-> | EX-01.01 | 0905-20-24 | EX-B-004-09052024-miomoz | EX-01.01_09052024_EX-B-004-09052024-miomoz.pdf |
-> | EX-01.01 | 0905-20-25 | 09052025-USCitizenshipandImmigrationServicesChicag | EX-01.01_09052025_09052025-USCitizenshipandImmigrationServicesChicag.pdf |
-> | EX-01.01 | 0905-20-25 | 09052025-imageOOlpng342K | EX-01.01_09052025_09052025-imageOOlpng342K.pdf |
-> | EX-01.01 | 0905-20-25 | 09052025-jlGmail | EX-01.01_09052025_09052025-jlGmail.pdf |
-> | EX-01.01 | 0905-20-25 | EX-G-002-09052025-Gmail | EX-01.01_09052025_EX-G-002-09052025-Gmail.pdf |
-> | EX-01.01 | 0905-20-25 | EX-G-004-09052025-Fwd-NVCSIV2022250581-Rainbow-CRM | EX-01.01_09052025_EX-G-004-09052025-Fwd-NVCSIV2022250581-Rainbow-CRM.pdf |
-> | EX-01.01 | 0906-20-25 | 09062025-USCitizenshipandImmigrationServicesChicag | EX-01.01_09062025_09062025-USCitizenshipandImmigrationServicesChicag.pdf |
-> | EX-01.01 | 2021-08-31 | EX-G-010-EX-G-010-TRV-4014-Arrival-TravelHistory-i | EX-01.01_20210831_EX-G-010-EX-G-010-TRV-4014-Arrival-TravelHistory-i.jpg |
-> | EX-01.01 | 2021-08-31 | EX-G-010-TRV-4014-Arrival-TravelHistory-i94-202108 | EX-01.01_20210831_EX-G-010-TRV-4014-Arrival-TravelHistory-i94-202108.jpg |
-> | EX-01.01 | 2021-09-01 | EX-G-007-NTC-6009-Receipts-Notices-USCIS-Notice-Ty | EX-01.01_20210901_EX-G-007-NTC-6009-Receipts-Notices-USCIS-Notice-Ty.jpg |
-> | EX-01.01 | 2021-09-01 | EX-G-008-NTC-6009-Receipts-Notices-USCIS-Notice-Ty | EX-01.01_20210901_EX-G-008-NTC-6009-Receipts-Notices-USCIS-Notice-Ty.jpg |
-> | EX-01.01 | 2021-11-05 | EX-G-007-EX-G-007-TRV-4013-Arrival-TravelArrival-i | EX-01.01_20211105_EX-G-007-EX-G-007-TRV-4013-Arrival-TravelArrival-i.jpg |
-> | EX-01.01 | 2022-09-08 | EX-G-004-EX-G-004-TRV-4012-Arrival-TravelArrival-i | EX-01.01_20220908_EX-G-004-EX-G-004-TRV-4012-Arrival-TravelArrival-i.jpg |
-> | EX-01.01 | 2022-09-08 | EX-G-008-EX-G-004-TRV-4012-Arrival-TravelArrival-i | EX-01.01_20220908_EX-G-008-EX-G-004-TRV-4012-Arrival-TravelArrival-i.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-003-EX-G-003-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-003-EX-G-003-NTC-6008-Receipts-Notices-USCIS-.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-003-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-003-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-004-EX-G-004-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-004-EX-G-004-NTC-6008-Receipts-Notices-USCIS-.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-004-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-004-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-006-EX-G-003-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-006-EX-G-003-NTC-6008-Receipts-Notices-USCIS-.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-007-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-007-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-008-EX-G-004-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-008-EX-G-004-NTC-6008-Receipts-Notices-USCIS-.jpg |
-> | EX-01.01 | 2024-07-10 | EX-G-008-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-008-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
-> | EX-01.01 | 2024-07-10 | EX-GOV-9801-GOV-EX-002-uscis-denial-united-states- | EX-01.01_20240710_EX-GOV-9801-GOV-EX-002-uscis-denial-united-states-.pdf |
-> | EX-01.01 | 2025-05-14 | EX-GOV-9803-GOV-EX-004-form-i765-receipt-notice-c1 | EX-01.01_20250514_EX-GOV-9803-GOV-EX-004-form-i765-receipt-notice-c1.pdf |
-> | EX-01.01 | 2025-05-14 | EX-GOV-9804-GOV-EX-005-form-i765-receipt-notice-c1 | EX-01.01_20250514_EX-GOV-9804-GOV-EX-005-form-i765-receipt-notice-c1.pdf |
-> | EX-01.01 | 2025-08-26 | EX-GOV-9802-GOV-EX-003-i765-rfe-20250826 | EX-01.01_20250826_EX-GOV-9802-GOV-EX-003-i765-rfe-20250826.pdf |
-> 
-> ## EX-04 | Employment-Assistance
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 0905-20-25 | EX-C-001-09052025-Assistance-Request-for-Zaitullah | EX-01.01_09052025_EX-C-001-09052025-Assistance-Request-for-Zaitullah.pdf |
-> | EX-01.01 | 0905-20-25 | EX-C-001-09052025-Employment-Services | EX-01.01_09052025_EX-C-001-09052025-Employment-Services.pdf |
-> | EX-01.01 | 0905-20-25 | EX-C-001-EX-C-001-09052025-Employment-Services | EX-01.01_09052025_EX-C-001-EX-C-001-09052025-Employment-Services.pdf |
-> | EX-01.01 | 0905-20-25 | EX-C-002-09052025-Catholic-Charities | EX-01.01_09052025_EX-C-002-09052025-Catholic-Charities.pdf |
-> | EX-01.01 | 2021-09-01 | EX-EMP-9205-EMP-EX-001-chapman-bcp-id-front | EX-01.01_20210901_EX-EMP-9205-EMP-EX-001-chapman-bcp-id-front.jpg |
-> | EX-01.01 | 2021-09-01 | EX-EMP-9206-EMP-EX-002-chapman-bcp-id-back | EX-01.01_20210901_EX-EMP-9206-EMP-EX-002-chapman-bcp-id-back.jpg |
-> | EX-01.01 | 2021-09-01 | EX-EMP-9210-EMP-Letter-United-Slates-001 | EX-01.01_20210901_EX-EMP-9210-EMP-Letter-United-Slates-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-EMP-9211-EMP-Page-Emhansy-Urtiied-Slates-001 | EX-01.01_20210901_EX-EMP-9211-EMP-Page-Emhansy-Urtiied-Slates-001.jpg |
-> | EX-01.01 | 2021-10-25 | EX-EMP-9201-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9201-EMP-20211025-AGCO-Employment-Agreement.jpg |
-> | EX-01.01 | 2021-10-25 | EX-EMP-9202-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9202-EMP-20211025-AGCO-Employment-Agreement.jpg |
-> | EX-01.01 | 2021-10-25 | EX-EMP-9203-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9203-EMP-20211025-AGCO-Employment-Agreement.jpg |
-> | EX-01.01 | 2021-10-25 | EX-EMP-9204-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9204-EMP-20211025-AGCO-Employment-Agreement.jpg |
-> 
-> ## EX-05 | Community-Residence-Integration
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 0805-20-25 | EX-AFF-9958-AFF-Affidavits-from-Friends-Rice-Velas | EX-01.01_08052025_EX-AFF-9958-AFF-Affidavits-from-Friends-Rice-Velas.jpg |
-> | EX-01.01 | 0805-20-25 | EX-AFF-9959-AFF-Affidavits-from-Friends-Rice-Velas | EX-01.01_08052025_EX-AFF-9959-AFF-Affidavits-from-Friends-Rice-Velas.jpg |
-> | EX-01.01 | 0827-20-25 | EX-AFF-9951-AFF-08272025-AFFIDAVIT-OF-ZAITULLAH-JA | EX-01.01_08272025_EX-AFF-9951-AFF-08272025-AFFIDAVIT-OF-ZAITULLAH-JA.pdf |
-> | EX-01.01 | 2021-09-01 | EX-AFF-9956-AFF-Letter-Zaituiiah-Jan-001 | EX-01.01_20210901_EX-AFF-9956-AFF-Letter-Zaituiiah-Jan-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-AFF-9957-AFF-Letter-Zaitullah-Jan-001 | EX-01.01_20210901_EX-AFF-9957-AFF-Letter-Zaitullah-Jan-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10000-MSC-HB-124489-Office-of-Refugee-Reset | EX-01.01_20210901_EX-MSC-10000-MSC-HB-124489-Office-of-Refugee-Reset.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10001-MSC-HB-124489-Office-of-Refugee-Reset | EX-01.01_20210901_EX-MSC-10001-MSC-HB-124489-Office-of-Refugee-Reset.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10002-MSC-HB-124489-Placement-Notification- | EX-01.01_20210901_EX-MSC-10002-MSC-HB-124489-Placement-Notification-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10003-MSC-HB-124489-State-Map-Translated-00 | EX-01.01_20210901_EX-MSC-10003-MSC-HB-124489-State-Map-Translated-00.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10004-MSC-HB-124489-United-States-Departmen | EX-01.01_20210901_EX-MSC-10004-MSC-HB-124489-United-States-Departmen.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10005-MSC-HB-124489-Relocation-Notice-and-F | EX-01.01_20210901_EX-MSC-10005-MSC-HB-124489-Relocation-Notice-and-F.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10007-MSC-Indiana-Map-001 | EX-01.01_20210901_EX-MSC-10007-MSC-Indiana-Map-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10008-MSC-IOM-LostLuggageNoticepdf-001 | EX-01.01_20210901_EX-MSC-10008-MSC-IOM-LostLuggageNoticepdf-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10009-MSC-IOM-USRAP-Disclaimers-InfoSheetpd | EX-01.01_20210901_EX-MSC-10009-MSC-IOM-USRAP-Disclaimers-InfoSheetpd.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10010-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10010-MSC-Rescue-Packet-Know-your-rights-an.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10011-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10011-MSC-Rescue-Packet-Know-your-rights-an.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10012-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10012-MSC-Rescue-Packet-Know-your-rights-an.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10013-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10013-MSC-Rescue-Packet-Know-your-rights-an.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10014-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10014-MSC-Resettlement-Instructions-Pashto-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10015-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10015-MSC-Resettlement-Instructions-Pashto-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10016-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10016-MSC-Resettlement-Instructions-Pashto-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10017-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10017-MSC-Resettlement-Instructions-Pashto-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-10018-MSC-Resettlement-ID-Info-001 | EX-01.01_20210901_EX-MSC-10018-MSC-Resettlement-ID-Info-001.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9991-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9991-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9992-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9992-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9993-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9993-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9994-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9994-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9995-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9995-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9996-MSC-HB-124489-Employment-Authorization | EX-01.01_20210901_EX-MSC-9996-MSC-HB-124489-Employment-Authorization.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9997-MSC-HB-124489-Health-Coverage-After-Re | EX-01.01_20210901_EX-MSC-9997-MSC-HB-124489-Health-Coverage-After-Re.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9998-MSC-HB-124489-Health-Coverage-After-Re | EX-01.01_20210901_EX-MSC-9998-MSC-HB-124489-Health-Coverage-After-Re.jpg |
-> | EX-01.01 | 2021-09-01 | EX-MSC-9999-MSC-HB-124489-Insert-OAW-EAD-Card-Corr | EX-01.01_20210901_EX-MSC-9999-MSC-HB-124489-Insert-OAW-EAD-Card-Corr.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9902-PIX-EX-001-chapman-photo-1 | EX-01.01_20210901_EX-PIX-9902-PIX-EX-001-chapman-photo-1.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9903-PIX-EX-002-chapman-photo-2 | EX-01.01_20210901_EX-PIX-9903-PIX-EX-002-chapman-photo-2.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9904-PIX-EX-003-chapman-photo-3 | EX-01.01_20210901_EX-PIX-9904-PIX-EX-003-chapman-photo-3.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9905-PIX-EX-004-chapman-photo-4 | EX-01.01_20210901_EX-PIX-9905-PIX-EX-004-chapman-photo-4.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9906-PIX-EX-005-chapman-photo-5 | EX-01.01_20210901_EX-PIX-9906-PIX-EX-005-chapman-photo-5.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9907-PIX-EX-006-chapman-photo-6 | EX-01.01_20210901_EX-PIX-9907-PIX-EX-006-chapman-photo-6.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9908-PIX-EX-007-chapman-photo-7 | EX-01.01_20210901_EX-PIX-9908-PIX-EX-007-chapman-photo-7.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9909-PIX-EX-008-chapman-photo-8 | EX-01.01_20210901_EX-PIX-9909-PIX-EX-008-chapman-photo-8.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9910-PIX-EX-009-chapman-photo-9 | EX-01.01_20210901_EX-PIX-9910-PIX-EX-009-chapman-photo-9.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9911-PIX-EX-010-chapman-photo-10 | EX-01.01_20210901_EX-PIX-9911-PIX-EX-010-chapman-photo-10.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9912-PIX-EX-011-chapman-photo-11 | EX-01.01_20210901_EX-PIX-9912-PIX-EX-011-chapman-photo-11.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9913-PIX-EX-012-chapman-photo-12 | EX-01.01_20210901_EX-PIX-9913-PIX-EX-012-chapman-photo-12.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9914-PIX-EX-013-chapman-photo-13 | EX-01.01_20210901_EX-PIX-9914-PIX-EX-013-chapman-photo-13.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9915-PIX-EX-014-chapman-photo-14 | EX-01.01_20210901_EX-PIX-9915-PIX-EX-014-chapman-photo-14.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9916-PIX-EX-015-chapman-photo-15 | EX-01.01_20210901_EX-PIX-9916-PIX-EX-015-chapman-photo-15.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9917-PIX-EX-016-chapman-photo-16 | EX-01.01_20210901_EX-PIX-9917-PIX-EX-016-chapman-photo-16.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9918-PIX-EX-017-chapman-photo-17 | EX-01.01_20210901_EX-PIX-9918-PIX-EX-017-chapman-photo-17.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9919-PIX-EX-018-chapman-photo-18 | EX-01.01_20210901_EX-PIX-9919-PIX-EX-018-chapman-photo-18.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9920-PIX-EX-019-chapman-photo-19 | EX-01.01_20210901_EX-PIX-9920-PIX-EX-019-chapman-photo-19.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9921-PIX-EX-020-chapman-photo-20 | EX-01.01_20210901_EX-PIX-9921-PIX-EX-020-chapman-photo-20.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9922-PIX-EX-021-chapman-photo-21 | EX-01.01_20210901_EX-PIX-9922-PIX-EX-021-chapman-photo-21.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9923-PIX-EX-022-chapman-photo-22 | EX-01.01_20210901_EX-PIX-9923-PIX-EX-022-chapman-photo-22.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9924-PIX-EX-023-chapman-photo-23 | EX-01.01_20210901_EX-PIX-9924-PIX-EX-023-chapman-photo-23.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9925-PIX-EX-024-chapman-photo-24 | EX-01.01_20210901_EX-PIX-9925-PIX-EX-024-chapman-photo-24.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9926-PIX-EX-025-chapman-photo-25 | EX-01.01_20210901_EX-PIX-9926-PIX-EX-025-chapman-photo-25.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9927-PIX-EX-026-chapman-photo-26 | EX-01.01_20210901_EX-PIX-9927-PIX-EX-026-chapman-photo-26.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9928-PIX-EX-027-chapman-photo-27 | EX-01.01_20210901_EX-PIX-9928-PIX-EX-027-chapman-photo-27.jpg |
-> | EX-01.01 | 2021-09-01 | EX-PIX-9929-PIX-EX-028-chapman-photo-28 | EX-01.01_20210901_EX-PIX-9929-PIX-EX-028-chapman-photo-28.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9501-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9501-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9502-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9502-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9503-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9503-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9504-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9504-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9505-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9505-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9506-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9506-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9507-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9507-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9508-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9508-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9509-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9509-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9510-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9510-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9511-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9511-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9512-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9512-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9513-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9513-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9514-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9514-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9515-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9515-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9516-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9516-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9517-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9517-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9518-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9518-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9519-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9519-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9520-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9520-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9521-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9521-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9522-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9522-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9523-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9523-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9524-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9524-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9525-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9525-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9526-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9526-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9527-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9527-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9528-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9528-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9529-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9529-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9530-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9530-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9531-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9531-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9532-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9532-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9533-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9533-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2021-09-01 | EX-RES-9534-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9534-RES-Cultural-Orientation-Catholic-Char.jpg |
-> | EX-01.01 | 2022-08-14 | EX-AFF-9955-AFF-Letter-Applicant-20220814-001 | EX-01.01_20220814_EX-AFF-9955-AFF-Letter-Applicant-20220814-001.jpg |
-> | EX-01.01 | 2025-06-11 | EX-AFF-9952-AFF-Affidavit-ZaitullahJanKhebarkhil-P | EX-01.01_20250611_EX-AFF-9952-AFF-Affidavit-ZaitullahJanKhebarkhil-P.jpg |
-> | EX-01.01 | 2025-06-11 | EX-AFF-9953-AFF-Affidavit-ZaitullahJanKhebarkhil-P | EX-01.01_20250611_EX-AFF-9953-AFF-Affidavit-ZaitullahJanKhebarkhil-P.jpg |
-> | EX-01.01 | 2025-08-25 | EX-AFF-9961-AFF-EX-GOV-006-friend-support-letter-2 | EX-01.01_20250825_EX-AFF-9961-AFF-EX-GOV-006-friend-support-letter-2.jpg |
-> | EX-01.01 | 2025-08-25 | EX-AFF-9962-AFF-Friend-Support-Letter-20250825 | EX-01.01_20250825_EX-AFF-9962-AFF-Friend-Support-Letter-20250825.jpg |
-> | EX-01.01 | 2025-08-25 | EX-AFF-9963-AFF-Friend-Support-Letter-20250825-001 | EX-01.01_20250825_EX-AFF-9963-AFF-Friend-Support-Letter-20250825-001.jpg |
-> 
-> ## EX-06 | Medical-Physical-Vulnerability
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 0225-20-22 | 02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSESSEMENT | EX-01.01_02252022_02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSESSEMENT.pdf |
-> | EX-01.01 | 0225-20-22 | EX-E-001-02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSE | EX-01.01_02252022_EX-E-001-02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSE.pdf |
-> | EX-01.01 | 0826-20-25 | EX-E-009-EX-E-009-NTC-6003-Receipts-Notices-I765-R | EX-01.01_08262025_EX-E-009-EX-E-009-NTC-6003-Receipts-Notices-I765-R.jpg |
-> | EX-01.01 | 0826-20-25 | EX-E-009-NTC-6003-Receipts-Notices-I765-REQUEST-FO | EX-01.01_08262025_EX-E-009-NTC-6003-Receipts-Notices-I765-REQUEST-FO.jpg |
-> | EX-01.01 | 0905-20-25 | EX-E-003-09052025-Friday-142-93-mmHg | EX-01.01_09052025_EX-E-003-09052025-Friday-142-93-mmHg.pdf |
-> | EX-01.01 | 0905-20-25 | EX-E-09052025-Part10VaccinationRecord-001 | EX-01.01_09052025_EX-E-09052025-Part10VaccinationRecord-001.jpg |
-> | EX-01.01 | 0905-20-25 | EX-E-09052025-Part10VaccinationRecord | EX-01.01_09052025_EX-E-09052025-Part10VaccinationRecord.jpg |
-> | EX-01.01 | 2021-09-01 | COVID19-VACCINATIONCARD | EX-01.01_20210901_COVID19-VACCINATIONCARD.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-002-COVID19-VACCINATION-CARD | EX-01.01_20210901_EX-E-002-COVID19-VACCINATION-CARD.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-003-EX-E-003-MAS-0502-Internal-Drafts-Convers | EX-01.01_20210901_EX-E-003-EX-E-003-MAS-0502-Internal-Drafts-Convers.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-003-MAS-0502-Internal-Drafts-Conversational-Q | EX-01.01_20210901_EX-E-003-MAS-0502-Internal-Drafts-Conversational-Q.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-006-Afghan-Frequently-Asked-Questions | EX-01.01_20210901_EX-E-006-Afghan-Frequently-Asked-Questions.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-006-EX-E-003-MAS-0502-Internal-Drafts-Convers | EX-01.01_20210901_EX-E-006-EX-E-003-MAS-0502-Internal-Drafts-Convers.pdf |
-> | EX-01.01 | 2021-09-01 | EX-E-006-EX-E-006-Afghan-Frequently-Asked-Question | EX-01.01_20210901_EX-E-006-EX-E-006-Afghan-Frequently-Asked-Question.pdf |
-> | EX-01.01 | 2021-09-01 | EX-MED-9601-MED-I693-MedicalExam-Page12-Vaccinatio | EX-01.01_20210901_EX-MED-9601-MED-I693-MedicalExam-Page12-Vaccinatio.jpg |
-> | EX-01.01 | 2022-02-25 | EX-MED-9603-MED-Indiana-Medicad-Eligibility-Report | EX-01.01_20220225_EX-MED-9603-MED-Indiana-Medicad-Eligibility-Report.jpg |
-> 
-> ## EX-07 | Financial-Tax-Compliance
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> | EX-01.01 | 2021-09-01 | EX-F-001-EX-FIN-9701-FIN-EX-002-2020-irs-account | EX-01.01_20210901_EX-F-001-EX-FIN-9701-FIN-EX-002-2020-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-002-EX-FIN-9702-FIN-EX-003-2021-irs-account | EX-01.01_20210901_EX-F-002-EX-FIN-9702-FIN-EX-003-2021-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-003-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs- | EX-01.01_20210901_EX-F-003-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-003-EX-FIN-9703-FIN-EX-006-2022-irs-account | EX-01.01_20210901_EX-F-003-EX-FIN-9703-FIN-EX-006-2022-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip | EX-01.01_20210901_EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-004-EX-FIN-9704-FIN-EX-009-2023-irs-account | EX-01.01_20210901_EX-F-004-EX-FIN-9704-FIN-EX-009-2023-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-005-EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign- | EX-01.01_20210901_EX-F-005-EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-006-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs- | EX-01.01_20210901_EX-F-006-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-006-EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs- | EX-01.01_20210901_EX-F-006-EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-006-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip | EX-01.01_20210901_EX-F-006-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip | EX-01.01_20210901_EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-007-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip | EX-01.01_20210901_EX-F-007-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-008-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip | EX-01.01_20210901_EX-F-008-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-009-EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs- | EX-01.01_20210901_EX-F-009-EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip | EX-01.01_20210901_EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-009-EX-FIN-9714-FIN-EX-012-2024-irs-transcrip | EX-01.01_20210901_EX-F-009-EX-FIN-9714-FIN-EX-012-2024-irs-transcrip.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-010-EX-FIN-9731-FIN-EX-005-2021-irs-wage-and- | EX-01.01_20210901_EX-F-010-EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-011-EX-FIN-9732-FIN-EX-008-2022-irs-wage-and- | EX-01.01_20210901_EX-F-011-EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-012-EX-FIN-9733-FIN-EX-011-2023-irs-wage-and- | EX-01.01_20210901_EX-F-012-EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-F-013-EX-FIN-9734-FIN-EX-013-2024-irs-wage-and- | EX-01.01_20210901_EX-F-013-EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9701-FIN-EX-002-2020-irs-account | EX-01.01_20210901_EX-FIN-9701-FIN-EX-002-2020-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9702-FIN-EX-003-2021-irs-account | EX-01.01_20210901_EX-FIN-9702-FIN-EX-003-2021-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9703-FIN-EX-006-2022-irs-account | EX-01.01_20210901_EX-FIN-9703-FIN-EX-006-2022-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9704-FIN-EX-009-2023-irs-account | EX-01.01_20210901_EX-FIN-9704-FIN-EX-009-2023-irs-account.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9705-FIN-ZJK-IRS-Tax-Records-2020-Account-0 | EX-01.01_20210901_EX-FIN-9705-FIN-ZJK-IRS-Tax-Records-2020-Account-0.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9706-FIN-ZJK-IRS-Tax-Records-2021-Account-0 | EX-01.01_20210901_EX-FIN-9706-FIN-ZJK-IRS-Tax-Records-2021-Account-0.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9707-FIN-ZJK-IRS-Tax-Records-2022-Account-0 | EX-01.01_20210901_EX-FIN-9707-FIN-ZJK-IRS-Tax-Records-2022-Account-0.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9708-FIN-ZJK-IRS-Tax-Records-2023-Account-0 | EX-01.01_20210901_EX-FIN-9708-FIN-ZJK-IRS-Tax-Records-2023-Account-0.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-status | EX-01.01_20210901_EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-status.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9710-FIN-IRS-W8BEN-Zaitullah-ForeignStatus- | EX-01.01_20210901_EX-FIN-9710-FIN-IRS-W8BEN-Zaitullah-ForeignStatus-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9711-FIN-EX-004-2021-irs-transcript | EX-01.01_20210901_EX-FIN-9711-FIN-EX-004-2021-irs-transcript.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9712-FIN-EX-007-2022-irs-transcript | EX-01.01_20210901_EX-FIN-9712-FIN-EX-007-2022-irs-transcript.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9713-FIN-EX-010-2023-irs-transcript | EX-01.01_20210901_EX-FIN-9713-FIN-EX-010-2023-irs-transcript.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9714-FIN-EX-012-2024-irs-transcript | EX-01.01_20210901_EX-FIN-9714-FIN-EX-012-2024-irs-transcript.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9715-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9715-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9716-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9716-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9717-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9717-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9718-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9718-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9719-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9719-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9720-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9720-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9721-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9721-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9722-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9722-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9723-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9723-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9724-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9724-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9725-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9725-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9726-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9726-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9727-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9727-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9728-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9728-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9729-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9729-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9730-FIN-ZJK-IRS-Tax-Records-2024-Transcrip | EX-01.01_20210901_EX-FIN-9730-FIN-ZJK-IRS-Tax-Records-2024-Transcrip.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-income.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-income.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-income.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-income.pdf |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9735-FIN-ZJK-IRS-Tax-Records-2021-Wage-and- | EX-01.01_20210901_EX-FIN-9735-FIN-ZJK-IRS-Tax-Records-2021-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9736-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9736-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9737-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9737-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9738-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9738-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9739-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9739-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9740-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9740-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9741-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9741-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9742-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9742-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9743-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9743-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9744-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9744-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
-> | EX-01.01 | 2021-09-01 | EX-FIN-9745-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9745-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
-> 
-> ## EX-08 | Communications-Logs
-> 
-> | # | Date | Title | File |
-> |---|---|---|---|
-> 
-> ## EX-09 | Affidavits-Expert-Support
-> 
-> | # | Date | Title | File |
+> mamm lets play a game called can you find the duplicates before cursor. ## EX-01 | Identity-Entry-Status
+
+> 
+
+> | #        | Date       | File                                                                     |
+
+> | -------- | ---------- | ------------------------------------------------------------------------ |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9114-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9115-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9116-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9117-ID-Tazkira-Birth-Certificate-with-Trans.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9122-ID-EX-001-afghan-passport.jpg               |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9123-ID-EX-002-afghan-passport-copy.jpg          |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9124-ID-EX-003-passport-photo.jpg                |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9125-ID-EX-004-ssn-card.jpg                      |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9126-ID-EX-005-ssn-card-back.jpg                 |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9127-ID-EX-006-ssn-stub.jpg                      |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9129-ID-Bio-Data-Sheet-001.jpg                   |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9130-ID-Bio-Data-Sheet-002.jpg                   |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9131-ID-Bio-Data-Sheet-003.jpg                   |
+
+> | EX-01.01 | 2021-09-01 | EX-01.01_20210901_EX-ID-9132-ID-Bio-Data-Sheet-004.jpg                   |
+
+> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9133-ID-Drivers-License-20220524-TX-001.jpg      |
+
+> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9134-ID-Drivers-License-20220524-TX-002.jpg      |
+
+> | EX-01.01 | 2022-05-24 | EX-01.01_20220524_EX-ID-9135-ID-Drivers-License-20220524-TX-Notice-0.jpg |
+
+> | EX-01.01 | 2022-11-02 | EX-01.01_20221102_EX-ID-9136-ID-Drivers-License-20221102-001.jpg         |
+
+> | EX-01.01 | 2022-11-02 | EX-01.01_20221102_EX-ID-9137-ID-Drivers-License-20221102-002.jpg         |
+
+> | EX-01.01 | 2023-10-19 | EX-01.01_20231019_EX-ID-9138-ID-Drivers-License-20231019-001.jpg         |
+
+> | EX-01.01 | 2023-10-19 | EX-01.01_20231019_EX-ID-9139-ID-Drivers-License-20231019-002.jpg         |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9103-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9104-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9105-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9106-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9107-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9108-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9109-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9110-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9111-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-05-14 | EX-01.01_20250514_EX-ID-9112-ID-FormI765-EAD-Application-Zaitullah-2.jpg |
+
+> | EX-01.01 | 2025-08-26 | EX-01.01_20250826_EX-ID-9143-ID-Pasted-image-20250826171614-20250826.png |
+
+> | EX-01.01 | 2025-08-26 | EX-01.01_20250826_EX-ID-9144-ID-Pasted-image-20250826172007-20250826.png |
+
+> | EX-01.01 | 2025-08-28 | EX-01.01_20250828_EX-ID-9145-ID-Pasted-image-20250828221506-20250828.png |
+
+> | EX-01.01 | 2025-08-28 | EX-01.01_20250828_EX-ID-9146-ID-Pasted-image-20250828221917-20250828.png |
+
+> | EX-01.01 | 3043-22-02 | EX-01.01_30432202_EX-ID-9119-ID-CHAPMAN-BCP-LOS304322020021706220000.jpg |
+
+> | EX-01.01 | 3043-22-02 | EX-01.01_30432202_EX-ID-9120-ID-CHAPMAN-BCP-LOS304322020021706220000.jpg |
+
+> | EX-01.01 | 6007-79-88 | EX-01.01_60077988_EX-ID-9101-ID-EAD-IOE6007798848-20231208-001-60077.jpg |
+
+> | EX-01.01 | 6007-79-88 | EX-01.01_60077988_EX-ID-9102-ID-EAD-IOE6007798848-20231208-002-60077.jpg |
+
+> | EX-01.01 | 8250-81-94 | EX-01.01_82508194_EX-ID-9140-ID-EAD-IOE8250819425-20210930-BACK-8250.jpg |
+
+> | EX-01.01 | 8250-81-94 | EX-01.01_82508194_EX-ID-9141-ID-EAD-IOE8250819425-20210930-FRONT-825.jpg |
+
+> | EX-01.06 | 2021-08-31 | EX-01.06_20210831_EX-TRV-9401-TRV-EX-001-i94-arrival-record-20210831.jpg |
+
+> | EX-01.06 | 2021-11-05 | EX-01.06_20211105_EX-TRV-9402-TRV-EX-002-i94-arrival-record-20211105.jpg |
+
+> | EX-01.06 | 2022-09-08 | EX-01.06_20220908_EX-TRV-9403-TRV-EX-003-i94-arrival-record-20220908.jpg |
+
+> 
+
+> ## EX-02 | Persecution-Threats-Conditions
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 2021-09-01 | B100-014-US-State-Dept-Report-Copy | EX-01.01_20210901_B100-014-US-State-Dept-Report-Copy.pdf |
+
+> | EX-01.01 | 2021-09-01 | B100-015-UNAMA-Detainee-Report-Copy | EX-01.01_20210901_B100-015-UNAMA-Detainee-Report-Copy.pdf |
+
+> | EX-01.01 | 2021-09-01 | B101-007-UN-News-Revenge-Killings-Copy | EX-01.01_20210901_B101-007-UN-News-Revenge-Killings-Copy.pdf |
+
+> | EX-01.01 | 2021-09-01 | B101-008-HRW-LGBT-Targeting-Copy | EX-01.01_20210901_B101-008-HRW-LGBT-Targeting-Copy.pdf |
+
+> | EX-01.01 | 2021-09-01 | B101-009-Hasht-e-Subh-Family-Targeting-Copy | EX-01.01_20210901_B101-009-Hasht-e-Subh-Family-Targeting-Copy.pdf |
+
+> | EX-01.01 | 2021-09-01 | B102-Affidavit-Zaitullah-Jan | EX-01.01_20210901_B102-Affidavit-Zaitullah-Jan.pdf |
+
+> | EX-01.01 | 2021-09-01 | B103-Personal-Statement-April-2022 | EX-01.01_20210901_B103-Personal-Statement-April-2022.pdf |
+
+> | EX-01.01 | 2021-09-01 | B105-UN-News-Revenge-Killings | EX-01.01_20210901_B105-UN-News-Revenge-Killings.pdf |
+
+> | EX-01.01 | 2021-09-01 | B106-HRW-Executions-Disappearances | EX-01.01_20210901_B106-HRW-Executions-Disappearances.pdf |
+
+> | EX-01.01 | 2021-09-01 | B107-Hasht-e-Subh-Family-Targeting | EX-01.01_20210901_B107-Hasht-e-Subh-Family-Targeting.pdf |
+
+> | EX-01.01 | 2021-09-01 | B108-ANDSF-Detention | EX-01.01_20210901_B108-ANDSF-Detention.pdf |
+
+> | EX-01.01 | 2021-09-01 | B109-HRW-LGBT-Targeting | EX-01.01_20210901_B109-HRW-LGBT-Targeting.pdf |
+
+> | EX-01.01 | 2021-09-01 | B110-JURIST-LGBTQ-Atrocities | EX-01.01_20210901_B110-JURIST-LGBTQ-Atrocities.pdf |
+
+> | EX-01.01 | 2021-09-01 | B111-Amnesty-Government-Collapse | EX-01.01_20210901_B111-Amnesty-Government-Collapse.pdf |
+
+> | EX-01.01 | 2021-09-01 | B112-US-State-Dept-Report | EX-01.01_20210901_B112-US-State-Dept-Report.pdf |
+
+> | EX-01.01 | 2021-09-01 | B113-UNAMA-Detainee-Report | EX-01.01_20210901_B113-UNAMA-Detainee-Report.pdf |
+
+> | EX-01.01 | 2021-09-01 | B114-Former-Soldiers-Fear-Return | EX-01.01_20210901_B114-Former-Soldiers-Fear-Return.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-003-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-003-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-004-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-004-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-005-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-005-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-006-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-006-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-007-Afghanistan-Taliban-Target-LGBT-Afghans-H | EX-01.01_20210901_EX-B-007-Afghanistan-Taliban-Target-LGBT-Afghans-H.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-008-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-008-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-008-Endless-Retribution-Taliban-Interrogates- | EX-01.01_20210901_EX-B-008-Endless-Retribution-Taliban-Interrogates-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-B-010-Afghanistan-s-Taliban-responsible-for-rev | EX-01.01_20210901_EX-B-010-Afghanistan-s-Taliban-responsible-for-rev.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-THR-9301-THR-EX-001-affidavit-of-zaitullah-jan | EX-01.01_20210901_EX-THR-9301-THR-EX-001-affidavit-of-zaitullah-jan.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-THR-9302-THR-EX-002-letter-from-zaitullah-jan | EX-01.01_20210901_EX-THR-9302-THR-EX-002-letter-from-zaitullah-jan.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-THR-9304-THR-EX-004-affidavit-zaitullah-jan-khe | EX-01.01_20210901_EX-THR-9304-THR-EX-004-affidavit-zaitullah-jan-khe.pdf |
+
+> | EX-01.01 | 2022-08-14 | EX-THR-9303-THR-EX-003-letter-from-applicant-20220 | EX-01.01_20220814_EX-THR-9303-THR-EX-003-letter-from-applicant-20220.pdf |
+
+> 
+
+> ## EX-03 | Government-Actions-Notices
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 0101-19-97 | 01011997-Anyinformationinthistransmissionpertainin | EX-01.01_01011997_01011997-Anyinformationinthistransmissionpertainin.pdf |
+
+> | EX-01.01 | 0101-19-97 | 01011997-FonwardedmessageFrom-ZaitullahJanKhebarkh | EX-01.01_01011997_01011997-FonwardedmessageFrom-ZaitullahJanKhebarkh.pdf |
+
+> | EX-01.01 | 0101-19-97 | 01011997-Gmail | EX-01.01_01011997_01011997-Gmail.pdf |
+
+> | EX-01.01 | 0101-19-97 | 01011997-MarshallISpecialInimiytantVisaUnitDepaitm | EX-01.01_01011997_01011997-MarshallISpecialInimiytantVisaUnitDepaitm.pdf |
+
+> | EX-01.01 | 0101-19-97 | 01011997-YourChiefofMissionCOMcasenumberisNVCSIV20 | EX-01.01_01011997_01011997-YourChiefofMissionCOMcasenumberisNVCSIV20.pdf |
+
+> | EX-01.01 | 0101-19-97 | EX-G-003-01011997-Zaitullah-SIV-Case-One-Page-Brie | EX-01.01_01011997_EX-G-003-01011997-Zaitullah-SIV-Case-One-Page-Brie.pdf |
+
+> | EX-01.01 | 0531-20-25 | EX-G-001-EX-G-001-05312025-View-Travel-History | EX-01.01_05312025_EX-G-001-EX-G-001-05312025-View-Travel-History.pdf |
+
+> | EX-01.01 | 0710-20-24 | EX-G-009-07102024-7-10-2024-Denial-of-Chief-of-Mis | EX-01.01_07102024_EX-G-009-07102024-7-10-2024-Denial-of-Chief-of-Mis.pdf |
+
+> | EX-01.01 | 0801-20-25 | EX-G-001-08012025-FOIA-SUBMISSION | EX-01.01_08012025_EX-G-001-08012025-FOIA-SUBMISSION.pdf |
+
+> | EX-01.01 | 0905-20-24 | EX-B-004-09052024-miomoz | EX-01.01_09052024_EX-B-004-09052024-miomoz.pdf |
+
+> | EX-01.01 | 0905-20-25 | 09052025-USCitizenshipandImmigrationServicesChicag | EX-01.01_09052025_09052025-USCitizenshipandImmigrationServicesChicag.pdf |
+
+> | EX-01.01 | 0905-20-25 | 09052025-imageOOlpng342K | EX-01.01_09052025_09052025-imageOOlpng342K.pdf |
+
+> | EX-01.01 | 0905-20-25 | 09052025-jlGmail | EX-01.01_09052025_09052025-jlGmail.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-G-002-09052025-Gmail | EX-01.01_09052025_EX-G-002-09052025-Gmail.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-G-004-09052025-Fwd-NVCSIV2022250581-Rainbow-CRM | EX-01.01_09052025_EX-G-004-09052025-Fwd-NVCSIV2022250581-Rainbow-CRM.pdf |
+
+> | EX-01.01 | 0906-20-25 | 09062025-USCitizenshipandImmigrationServicesChicag | EX-01.01_09062025_09062025-USCitizenshipandImmigrationServicesChicag.pdf |
+
+> | EX-01.01 | 2021-08-31 | EX-G-010-EX-G-010-TRV-4014-Arrival-TravelHistory-i | EX-01.01_20210831_EX-G-010-EX-G-010-TRV-4014-Arrival-TravelHistory-i.jpg |
+
+> | EX-01.01 | 2021-08-31 | EX-G-010-TRV-4014-Arrival-TravelHistory-i94-202108 | EX-01.01_20210831_EX-G-010-TRV-4014-Arrival-TravelHistory-i94-202108.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-G-007-NTC-6009-Receipts-Notices-USCIS-Notice-Ty | EX-01.01_20210901_EX-G-007-NTC-6009-Receipts-Notices-USCIS-Notice-Ty.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-G-008-NTC-6009-Receipts-Notices-USCIS-Notice-Ty | EX-01.01_20210901_EX-G-008-NTC-6009-Receipts-Notices-USCIS-Notice-Ty.jpg |
+
+> | EX-01.01 | 2021-11-05 | EX-G-007-EX-G-007-TRV-4013-Arrival-TravelArrival-i | EX-01.01_20211105_EX-G-007-EX-G-007-TRV-4013-Arrival-TravelArrival-i.jpg |
+
+> | EX-01.01 | 2022-09-08 | EX-G-004-EX-G-004-TRV-4012-Arrival-TravelArrival-i | EX-01.01_20220908_EX-G-004-EX-G-004-TRV-4012-Arrival-TravelArrival-i.jpg |
+
+> | EX-01.01 | 2022-09-08 | EX-G-008-EX-G-004-TRV-4012-Arrival-TravelArrival-i | EX-01.01_20220908_EX-G-008-EX-G-004-TRV-4012-Arrival-TravelArrival-i.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-003-EX-G-003-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-003-EX-G-003-NTC-6008-Receipts-Notices-USCIS-.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-003-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-003-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-004-EX-G-004-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-004-EX-G-004-NTC-6008-Receipts-Notices-USCIS-.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-004-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-004-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-006-EX-G-003-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-006-EX-G-003-NTC-6008-Receipts-Notices-USCIS-.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-007-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-007-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-008-EX-G-004-NTC-6008-Receipts-Notices-USCIS- | EX-01.01_20240710_EX-G-008-EX-G-004-NTC-6008-Receipts-Notices-USCIS-.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-G-008-NTC-6008-Receipts-Notices-USCIS-Denial-Un | EX-01.01_20240710_EX-G-008-NTC-6008-Receipts-Notices-USCIS-Denial-Un.jpg |
+
+> | EX-01.01 | 2024-07-10 | EX-GOV-9801-GOV-EX-002-uscis-denial-united-states- | EX-01.01_20240710_EX-GOV-9801-GOV-EX-002-uscis-denial-united-states-.pdf |
+
+> | EX-01.01 | 2025-05-14 | EX-GOV-9803-GOV-EX-004-form-i765-receipt-notice-c1 | EX-01.01_20250514_EX-GOV-9803-GOV-EX-004-form-i765-receipt-notice-c1.pdf |
+
+> | EX-01.01 | 2025-05-14 | EX-GOV-9804-GOV-EX-005-form-i765-receipt-notice-c1 | EX-01.01_20250514_EX-GOV-9804-GOV-EX-005-form-i765-receipt-notice-c1.pdf |
+
+> | EX-01.01 | 2025-08-26 | EX-GOV-9802-GOV-EX-003-i765-rfe-20250826 | EX-01.01_20250826_EX-GOV-9802-GOV-EX-003-i765-rfe-20250826.pdf |
+
+> 
+
+> ## EX-04 | Employment-Assistance
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 0905-20-25 | EX-C-001-09052025-Assistance-Request-for-Zaitullah | EX-01.01_09052025_EX-C-001-09052025-Assistance-Request-for-Zaitullah.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-C-001-09052025-Employment-Services | EX-01.01_09052025_EX-C-001-09052025-Employment-Services.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-C-001-EX-C-001-09052025-Employment-Services | EX-01.01_09052025_EX-C-001-EX-C-001-09052025-Employment-Services.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-C-002-09052025-Catholic-Charities | EX-01.01_09052025_EX-C-002-09052025-Catholic-Charities.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-EMP-9205-EMP-EX-001-chapman-bcp-id-front | EX-01.01_20210901_EX-EMP-9205-EMP-EX-001-chapman-bcp-id-front.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-EMP-9206-EMP-EX-002-chapman-bcp-id-back | EX-01.01_20210901_EX-EMP-9206-EMP-EX-002-chapman-bcp-id-back.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-EMP-9210-EMP-Letter-United-Slates-001 | EX-01.01_20210901_EX-EMP-9210-EMP-Letter-United-Slates-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-EMP-9211-EMP-Page-Emhansy-Urtiied-Slates-001 | EX-01.01_20210901_EX-EMP-9211-EMP-Page-Emhansy-Urtiied-Slates-001.jpg |
+
+> | EX-01.01 | 2021-10-25 | EX-EMP-9201-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9201-EMP-20211025-AGCO-Employment-Agreement.jpg |
+
+> | EX-01.01 | 2021-10-25 | EX-EMP-9202-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9202-EMP-20211025-AGCO-Employment-Agreement.jpg |
+
+> | EX-01.01 | 2021-10-25 | EX-EMP-9203-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9203-EMP-20211025-AGCO-Employment-Agreement.jpg |
+
+> | EX-01.01 | 2021-10-25 | EX-EMP-9204-EMP-20211025-AGCO-Employment-Agreement | EX-01.01_20211025_EX-EMP-9204-EMP-20211025-AGCO-Employment-Agreement.jpg |
+
+> 
+
+> ## EX-05 | Community-Residence-Integration
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 0805-20-25 | EX-AFF-9958-AFF-Affidavits-from-Friends-Rice-Velas | EX-01.01_08052025_EX-AFF-9958-AFF-Affidavits-from-Friends-Rice-Velas.jpg |
+
+> | EX-01.01 | 0805-20-25 | EX-AFF-9959-AFF-Affidavits-from-Friends-Rice-Velas | EX-01.01_08052025_EX-AFF-9959-AFF-Affidavits-from-Friends-Rice-Velas.jpg |
+
+> | EX-01.01 | 0827-20-25 | EX-AFF-9951-AFF-08272025-AFFIDAVIT-OF-ZAITULLAH-JA | EX-01.01_08272025_EX-AFF-9951-AFF-08272025-AFFIDAVIT-OF-ZAITULLAH-JA.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-AFF-9956-AFF-Letter-Zaituiiah-Jan-001 | EX-01.01_20210901_EX-AFF-9956-AFF-Letter-Zaituiiah-Jan-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-AFF-9957-AFF-Letter-Zaitullah-Jan-001 | EX-01.01_20210901_EX-AFF-9957-AFF-Letter-Zaitullah-Jan-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10000-MSC-HB-124489-Office-of-Refugee-Reset | EX-01.01_20210901_EX-MSC-10000-MSC-HB-124489-Office-of-Refugee-Reset.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10001-MSC-HB-124489-Office-of-Refugee-Reset | EX-01.01_20210901_EX-MSC-10001-MSC-HB-124489-Office-of-Refugee-Reset.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10002-MSC-HB-124489-Placement-Notification- | EX-01.01_20210901_EX-MSC-10002-MSC-HB-124489-Placement-Notification-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10003-MSC-HB-124489-State-Map-Translated-00 | EX-01.01_20210901_EX-MSC-10003-MSC-HB-124489-State-Map-Translated-00.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10004-MSC-HB-124489-United-States-Departmen | EX-01.01_20210901_EX-MSC-10004-MSC-HB-124489-United-States-Departmen.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10005-MSC-HB-124489-Relocation-Notice-and-F | EX-01.01_20210901_EX-MSC-10005-MSC-HB-124489-Relocation-Notice-and-F.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10007-MSC-Indiana-Map-001 | EX-01.01_20210901_EX-MSC-10007-MSC-Indiana-Map-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10008-MSC-IOM-LostLuggageNoticepdf-001 | EX-01.01_20210901_EX-MSC-10008-MSC-IOM-LostLuggageNoticepdf-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10009-MSC-IOM-USRAP-Disclaimers-InfoSheetpd | EX-01.01_20210901_EX-MSC-10009-MSC-IOM-USRAP-Disclaimers-InfoSheetpd.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10010-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10010-MSC-Rescue-Packet-Know-your-rights-an.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10011-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10011-MSC-Rescue-Packet-Know-your-rights-an.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10012-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10012-MSC-Rescue-Packet-Know-your-rights-an.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10013-MSC-Rescue-Packet-Know-your-rights-an | EX-01.01_20210901_EX-MSC-10013-MSC-Rescue-Packet-Know-your-rights-an.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10014-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10014-MSC-Resettlement-Instructions-Pashto-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10015-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10015-MSC-Resettlement-Instructions-Pashto-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10016-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10016-MSC-Resettlement-Instructions-Pashto-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10017-MSC-Resettlement-Instructions-Pashto- | EX-01.01_20210901_EX-MSC-10017-MSC-Resettlement-Instructions-Pashto-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-10018-MSC-Resettlement-ID-Info-001 | EX-01.01_20210901_EX-MSC-10018-MSC-Resettlement-ID-Info-001.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9991-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9991-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9992-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9992-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9993-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9993-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9994-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9994-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9995-MSC-HB-124489-Asylum-Case-Status-Resou | EX-01.01_20210901_EX-MSC-9995-MSC-HB-124489-Asylum-Case-Status-Resou.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9996-MSC-HB-124489-Employment-Authorization | EX-01.01_20210901_EX-MSC-9996-MSC-HB-124489-Employment-Authorization.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9997-MSC-HB-124489-Health-Coverage-After-Re | EX-01.01_20210901_EX-MSC-9997-MSC-HB-124489-Health-Coverage-After-Re.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9998-MSC-HB-124489-Health-Coverage-After-Re | EX-01.01_20210901_EX-MSC-9998-MSC-HB-124489-Health-Coverage-After-Re.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-MSC-9999-MSC-HB-124489-Insert-OAW-EAD-Card-Corr | EX-01.01_20210901_EX-MSC-9999-MSC-HB-124489-Insert-OAW-EAD-Card-Corr.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9902-PIX-EX-001-chapman-photo-1 | EX-01.01_20210901_EX-PIX-9902-PIX-EX-001-chapman-photo-1.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9903-PIX-EX-002-chapman-photo-2 | EX-01.01_20210901_EX-PIX-9903-PIX-EX-002-chapman-photo-2.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9904-PIX-EX-003-chapman-photo-3 | EX-01.01_20210901_EX-PIX-9904-PIX-EX-003-chapman-photo-3.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9905-PIX-EX-004-chapman-photo-4 | EX-01.01_20210901_EX-PIX-9905-PIX-EX-004-chapman-photo-4.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9906-PIX-EX-005-chapman-photo-5 | EX-01.01_20210901_EX-PIX-9906-PIX-EX-005-chapman-photo-5.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9907-PIX-EX-006-chapman-photo-6 | EX-01.01_20210901_EX-PIX-9907-PIX-EX-006-chapman-photo-6.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9908-PIX-EX-007-chapman-photo-7 | EX-01.01_20210901_EX-PIX-9908-PIX-EX-007-chapman-photo-7.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9909-PIX-EX-008-chapman-photo-8 | EX-01.01_20210901_EX-PIX-9909-PIX-EX-008-chapman-photo-8.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9910-PIX-EX-009-chapman-photo-9 | EX-01.01_20210901_EX-PIX-9910-PIX-EX-009-chapman-photo-9.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9911-PIX-EX-010-chapman-photo-10 | EX-01.01_20210901_EX-PIX-9911-PIX-EX-010-chapman-photo-10.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9912-PIX-EX-011-chapman-photo-11 | EX-01.01_20210901_EX-PIX-9912-PIX-EX-011-chapman-photo-11.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9913-PIX-EX-012-chapman-photo-12 | EX-01.01_20210901_EX-PIX-9913-PIX-EX-012-chapman-photo-12.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9914-PIX-EX-013-chapman-photo-13 | EX-01.01_20210901_EX-PIX-9914-PIX-EX-013-chapman-photo-13.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9915-PIX-EX-014-chapman-photo-14 | EX-01.01_20210901_EX-PIX-9915-PIX-EX-014-chapman-photo-14.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9916-PIX-EX-015-chapman-photo-15 | EX-01.01_20210901_EX-PIX-9916-PIX-EX-015-chapman-photo-15.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9917-PIX-EX-016-chapman-photo-16 | EX-01.01_20210901_EX-PIX-9917-PIX-EX-016-chapman-photo-16.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9918-PIX-EX-017-chapman-photo-17 | EX-01.01_20210901_EX-PIX-9918-PIX-EX-017-chapman-photo-17.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9919-PIX-EX-018-chapman-photo-18 | EX-01.01_20210901_EX-PIX-9919-PIX-EX-018-chapman-photo-18.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9920-PIX-EX-019-chapman-photo-19 | EX-01.01_20210901_EX-PIX-9920-PIX-EX-019-chapman-photo-19.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9921-PIX-EX-020-chapman-photo-20 | EX-01.01_20210901_EX-PIX-9921-PIX-EX-020-chapman-photo-20.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9922-PIX-EX-021-chapman-photo-21 | EX-01.01_20210901_EX-PIX-9922-PIX-EX-021-chapman-photo-21.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9923-PIX-EX-022-chapman-photo-22 | EX-01.01_20210901_EX-PIX-9923-PIX-EX-022-chapman-photo-22.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9924-PIX-EX-023-chapman-photo-23 | EX-01.01_20210901_EX-PIX-9924-PIX-EX-023-chapman-photo-23.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9925-PIX-EX-024-chapman-photo-24 | EX-01.01_20210901_EX-PIX-9925-PIX-EX-024-chapman-photo-24.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9926-PIX-EX-025-chapman-photo-25 | EX-01.01_20210901_EX-PIX-9926-PIX-EX-025-chapman-photo-25.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9927-PIX-EX-026-chapman-photo-26 | EX-01.01_20210901_EX-PIX-9927-PIX-EX-026-chapman-photo-26.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9928-PIX-EX-027-chapman-photo-27 | EX-01.01_20210901_EX-PIX-9928-PIX-EX-027-chapman-photo-27.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-PIX-9929-PIX-EX-028-chapman-photo-28 | EX-01.01_20210901_EX-PIX-9929-PIX-EX-028-chapman-photo-28.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9501-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9501-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9502-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9502-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9503-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9503-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9504-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9504-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9505-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9505-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9506-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9506-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9507-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9507-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9508-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9508-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9509-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9509-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9510-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9510-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9511-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9511-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9512-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9512-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9513-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9513-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9514-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9514-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9515-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9515-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9516-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9516-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9517-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9517-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9518-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9518-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9519-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9519-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9520-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9520-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9521-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9521-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9522-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9522-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9523-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9523-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9524-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9524-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9525-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9525-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9526-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9526-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9527-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9527-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9528-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9528-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9529-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9529-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9530-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9530-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9531-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9531-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9532-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9532-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9533-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9533-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-RES-9534-RES-Cultural-Orientation-Catholic-Char | EX-01.01_20210901_EX-RES-9534-RES-Cultural-Orientation-Catholic-Char.jpg |
+
+> | EX-01.01 | 2022-08-14 | EX-AFF-9955-AFF-Letter-Applicant-20220814-001 | EX-01.01_20220814_EX-AFF-9955-AFF-Letter-Applicant-20220814-001.jpg |
+
+> | EX-01.01 | 2025-06-11 | EX-AFF-9952-AFF-Affidavit-ZaitullahJanKhebarkhil-P | EX-01.01_20250611_EX-AFF-9952-AFF-Affidavit-ZaitullahJanKhebarkhil-P.jpg |
+
+> | EX-01.01 | 2025-06-11 | EX-AFF-9953-AFF-Affidavit-ZaitullahJanKhebarkhil-P | EX-01.01_20250611_EX-AFF-9953-AFF-Affidavit-ZaitullahJanKhebarkhil-P.jpg |
+
+> | EX-01.01 | 2025-08-25 | EX-AFF-9961-AFF-EX-GOV-006-friend-support-letter-2 | EX-01.01_20250825_EX-AFF-9961-AFF-EX-GOV-006-friend-support-letter-2.jpg |
+
+> | EX-01.01 | 2025-08-25 | EX-AFF-9962-AFF-Friend-Support-Letter-20250825 | EX-01.01_20250825_EX-AFF-9962-AFF-Friend-Support-Letter-20250825.jpg |
+
+> | EX-01.01 | 2025-08-25 | EX-AFF-9963-AFF-Friend-Support-Letter-20250825-001 | EX-01.01_20250825_EX-AFF-9963-AFF-Friend-Support-Letter-20250825-001.jpg |
+
+> 
+
+> ## EX-06 | Medical-Physical-Vulnerability
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 0225-20-22 | 02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSESSEMENT | EX-01.01_02252022_02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSESSEMENT.pdf |
+
+> | EX-01.01 | 0225-20-22 | EX-E-001-02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSE | EX-01.01_02252022_EX-E-001-02252022-MARION-COUNTY-PUBLIC-HEALTH-ASSE.pdf |
+
+> | EX-01.01 | 0826-20-25 | EX-E-009-EX-E-009-NTC-6003-Receipts-Notices-I765-R | EX-01.01_08262025_EX-E-009-EX-E-009-NTC-6003-Receipts-Notices-I765-R.jpg |
+
+> | EX-01.01 | 0826-20-25 | EX-E-009-NTC-6003-Receipts-Notices-I765-REQUEST-FO | EX-01.01_08262025_EX-E-009-NTC-6003-Receipts-Notices-I765-REQUEST-FO.jpg |
+
+> | EX-01.01 | 0905-20-25 | EX-E-003-09052025-Friday-142-93-mmHg | EX-01.01_09052025_EX-E-003-09052025-Friday-142-93-mmHg.pdf |
+
+> | EX-01.01 | 0905-20-25 | EX-E-09052025-Part10VaccinationRecord-001 | EX-01.01_09052025_EX-E-09052025-Part10VaccinationRecord-001.jpg |
+
+> | EX-01.01 | 0905-20-25 | EX-E-09052025-Part10VaccinationRecord | EX-01.01_09052025_EX-E-09052025-Part10VaccinationRecord.jpg |
+
+> | EX-01.01 | 2021-09-01 | COVID19-VACCINATIONCARD | EX-01.01_20210901_COVID19-VACCINATIONCARD.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-002-COVID19-VACCINATION-CARD | EX-01.01_20210901_EX-E-002-COVID19-VACCINATION-CARD.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-003-EX-E-003-MAS-0502-Internal-Drafts-Convers | EX-01.01_20210901_EX-E-003-EX-E-003-MAS-0502-Internal-Drafts-Convers.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-003-MAS-0502-Internal-Drafts-Conversational-Q | EX-01.01_20210901_EX-E-003-MAS-0502-Internal-Drafts-Conversational-Q.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-006-Afghan-Frequently-Asked-Questions | EX-01.01_20210901_EX-E-006-Afghan-Frequently-Asked-Questions.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-006-EX-E-003-MAS-0502-Internal-Drafts-Convers | EX-01.01_20210901_EX-E-006-EX-E-003-MAS-0502-Internal-Drafts-Convers.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-E-006-EX-E-006-Afghan-Frequently-Asked-Question | EX-01.01_20210901_EX-E-006-EX-E-006-Afghan-Frequently-Asked-Question.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-MED-9601-MED-I693-MedicalExam-Page12-Vaccinatio | EX-01.01_20210901_EX-MED-9601-MED-I693-MedicalExam-Page12-Vaccinatio.jpg |
+
+> | EX-01.01 | 2022-02-25 | EX-MED-9603-MED-Indiana-Medicad-Eligibility-Report | EX-01.01_20220225_EX-MED-9603-MED-Indiana-Medicad-Eligibility-Report.jpg |
+
+> 
+
+> ## EX-07 | Financial-Tax-Compliance
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> | EX-01.01 | 2021-09-01 | EX-F-001-EX-FIN-9701-FIN-EX-002-2020-irs-account | EX-01.01_20210901_EX-F-001-EX-FIN-9701-FIN-EX-002-2020-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-002-EX-FIN-9702-FIN-EX-003-2021-irs-account | EX-01.01_20210901_EX-F-002-EX-FIN-9702-FIN-EX-003-2021-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-003-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs- | EX-01.01_20210901_EX-F-003-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-003-EX-FIN-9703-FIN-EX-006-2022-irs-account | EX-01.01_20210901_EX-F-003-EX-FIN-9703-FIN-EX-006-2022-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip | EX-01.01_20210901_EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-004-EX-FIN-9704-FIN-EX-009-2023-irs-account | EX-01.01_20210901_EX-F-004-EX-FIN-9704-FIN-EX-009-2023-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-005-EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign- | EX-01.01_20210901_EX-F-005-EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-006-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs- | EX-01.01_20210901_EX-F-006-EX-F-003-EX-FIN-9711-FIN-EX-004-2021-irs-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-006-EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs- | EX-01.01_20210901_EX-F-006-EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-006-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip | EX-01.01_20210901_EX-F-006-EX-FIN-9711-FIN-EX-004-2021-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip | EX-01.01_20210901_EX-F-006-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-007-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip | EX-01.01_20210901_EX-F-007-EX-FIN-9712-FIN-EX-007-2022-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-008-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip | EX-01.01_20210901_EX-F-008-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-009-EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs- | EX-01.01_20210901_EX-F-009-EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip | EX-01.01_20210901_EX-F-009-EX-FIN-9713-FIN-EX-010-2023-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-009-EX-FIN-9714-FIN-EX-012-2024-irs-transcrip | EX-01.01_20210901_EX-F-009-EX-FIN-9714-FIN-EX-012-2024-irs-transcrip.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-010-EX-FIN-9731-FIN-EX-005-2021-irs-wage-and- | EX-01.01_20210901_EX-F-010-EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-011-EX-FIN-9732-FIN-EX-008-2022-irs-wage-and- | EX-01.01_20210901_EX-F-011-EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-012-EX-FIN-9733-FIN-EX-011-2023-irs-wage-and- | EX-01.01_20210901_EX-F-012-EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-F-013-EX-FIN-9734-FIN-EX-013-2024-irs-wage-and- | EX-01.01_20210901_EX-F-013-EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9701-FIN-EX-002-2020-irs-account | EX-01.01_20210901_EX-FIN-9701-FIN-EX-002-2020-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9702-FIN-EX-003-2021-irs-account | EX-01.01_20210901_EX-FIN-9702-FIN-EX-003-2021-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9703-FIN-EX-006-2022-irs-account | EX-01.01_20210901_EX-FIN-9703-FIN-EX-006-2022-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9704-FIN-EX-009-2023-irs-account | EX-01.01_20210901_EX-FIN-9704-FIN-EX-009-2023-irs-account.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9705-FIN-ZJK-IRS-Tax-Records-2020-Account-0 | EX-01.01_20210901_EX-FIN-9705-FIN-ZJK-IRS-Tax-Records-2020-Account-0.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9706-FIN-ZJK-IRS-Tax-Records-2021-Account-0 | EX-01.01_20210901_EX-FIN-9706-FIN-ZJK-IRS-Tax-Records-2021-Account-0.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9707-FIN-ZJK-IRS-Tax-Records-2022-Account-0 | EX-01.01_20210901_EX-FIN-9707-FIN-ZJK-IRS-Tax-Records-2022-Account-0.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9708-FIN-ZJK-IRS-Tax-Records-2023-Account-0 | EX-01.01_20210901_EX-FIN-9708-FIN-ZJK-IRS-Tax-Records-2023-Account-0.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-status | EX-01.01_20210901_EX-FIN-9709-FIN-EX-001-irs-w8ben-foreign-status.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9710-FIN-IRS-W8BEN-Zaitullah-ForeignStatus- | EX-01.01_20210901_EX-FIN-9710-FIN-IRS-W8BEN-Zaitullah-ForeignStatus-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9711-FIN-EX-004-2021-irs-transcript | EX-01.01_20210901_EX-FIN-9711-FIN-EX-004-2021-irs-transcript.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9712-FIN-EX-007-2022-irs-transcript | EX-01.01_20210901_EX-FIN-9712-FIN-EX-007-2022-irs-transcript.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9713-FIN-EX-010-2023-irs-transcript | EX-01.01_20210901_EX-FIN-9713-FIN-EX-010-2023-irs-transcript.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9714-FIN-EX-012-2024-irs-transcript | EX-01.01_20210901_EX-FIN-9714-FIN-EX-012-2024-irs-transcript.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9715-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9715-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9716-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9716-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9717-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9717-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9718-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9718-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9719-FIN-ZJK-IRS-Tax-Records-2021-Transcrip | EX-01.01_20210901_EX-FIN-9719-FIN-ZJK-IRS-Tax-Records-2021-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9720-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9720-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9721-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9721-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9722-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9722-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9723-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9723-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9724-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9724-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9725-FIN-ZJK-IRS-Tax-Records-2022-Transcrip | EX-01.01_20210901_EX-FIN-9725-FIN-ZJK-IRS-Tax-Records-2022-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9726-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9726-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9727-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9727-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9728-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9728-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9729-FIN-ZJK-IRS-Tax-Records-2023-Transcrip | EX-01.01_20210901_EX-FIN-9729-FIN-ZJK-IRS-Tax-Records-2023-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9730-FIN-ZJK-IRS-Tax-Records-2024-Transcrip | EX-01.01_20210901_EX-FIN-9730-FIN-ZJK-IRS-Tax-Records-2024-Transcrip.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9731-FIN-EX-005-2021-irs-wage-and-income.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9732-FIN-EX-008-2022-irs-wage-and-income.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9733-FIN-EX-011-2023-irs-wage-and-income.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-income | EX-01.01_20210901_EX-FIN-9734-FIN-EX-013-2024-irs-wage-and-income.pdf |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9735-FIN-ZJK-IRS-Tax-Records-2021-Wage-and- | EX-01.01_20210901_EX-FIN-9735-FIN-ZJK-IRS-Tax-Records-2021-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9736-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9736-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9737-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9737-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9738-FIN-ZJK-IRS-Tax-Records-2022-Wage-and- | EX-01.01_20210901_EX-FIN-9738-FIN-ZJK-IRS-Tax-Records-2022-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9739-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9739-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9740-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9740-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9741-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9741-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9742-FIN-ZJK-IRS-Tax-Records-2023-Wage-and- | EX-01.01_20210901_EX-FIN-9742-FIN-ZJK-IRS-Tax-Records-2023-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9743-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9743-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9744-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9744-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
+
+> | EX-01.01 | 2021-09-01 | EX-FIN-9745-FIN-ZJK-IRS-Tax-Records-2024-Wage-and- | EX-01.01_20210901_EX-FIN-9745-FIN-ZJK-IRS-Tax-Records-2024-Wage-and-.jpg |
+
+> 
+
+> ## EX-08 | Communications-Logs
+
+> 
+
+> | # | Date | Title | File |
+
+> |---|---|---|---|
+
+> 
+
+> ## EX-09 | Affidavits-Expert-Support
+
+> 
+
+> | # | Date | Title | File |
+
 > |---|---|---|---|
 
 ### Assistant

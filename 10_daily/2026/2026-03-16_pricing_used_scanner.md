@@ -3,9 +3,9 @@ layout: page
 title: "Pricing used scanner"
 slug: "pricing_used_scanner"
 created_at: "2026-03-16 17:48:21"
-updated_at: "2026-03-16 17:48:21"
+updated_at: "2026-07-16T06:49:30-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -617,154 +617,302 @@ canonical_ref: ""
 > Because option **B** would honestly be a *game changer* for your vault workflow.
 
 ### User
-> import os
-> import shutil
-> import tkinter as tk
-> from tkinter import ttk, filedialog
-> from send2trash import send2trash
-> from core.base_tool import BaseTool
-> 
-> class VaultRouterTool(BaseTool):
->     def __init__(self):
->         self.cancel_requested = False
->         self.default_rules = (
->             "# Routing Configuration\n"
->             "# Format: keyword1, keyword2, .extension = Folder/Subfolder\n"
->             "# Use an asterisk (*) as a catch-all for unmatched files.\n\n"
->             "tax, w2, 1099 = Finances/Taxes\n"
->             "invoice, receipt = Finances/Invoices\n"
->             ".mp4, .mov, video = Media/Videos\n"
->             "bbr4821 = Clients/BBR4821\n"
->             ".exe, .msi = System/Installers\n"
->             "* = Unsorted_Review_Needed"  # <--- The new Fallback Rule
->         )
-> 
->     def get_name(self):
->         return "📥 Vault Auto-Router"
-> 
->     def build_ui(self, parent):
->         # Vault Root Destination
->         ttk.Label(parent, text="Vault Root Directory (Destination):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
->         
->         vault_frame = tk.Frame(parent, bg="#0f0f11")
->         vault_frame.pack(fill='x', pady=(0, 15))
->         
->         self.vault_var = tk.StringVar()
->         tk.Entry(vault_frame, textvariable=self.vault_var, bg="#1c1c1e", fg="white", insertbackground="white", relief="flat").pack(side='left', fill='x', expand=True, ipady=5)
->         tk.Button(vault_frame, text="BROWSE", command=self.browse_vault, bg="#2c2c2e", fg="white", relief="flat", padx=10).pack(side='right', padx=(10, 0))
-> 
->         # Routing Rules Configuration
->         ttk.Label(parent, text="Routing Rules (Keyword/Ext = Vault Subfolder):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
->         self.rules_text = tk.Text(parent, bg="#1c1c1e", fg="#32d74b", font=("Consolas", 10), height=8, relief="flat", padx=10, pady=10)
->         self.rules_text.pack(fill='x', pady=(0, 5))
->         self.rules_text.insert("1.0", self.default_rules)
-> 
->     def browse_vault(self):
->         p = filedialog.askdirectory()
->         if p: self.vault_var.set(p)
-> 
->     def parse_rules(self):
->         """Converts the text area into a usable dictionary of {keyword: destination_folder}."""
->         raw_text = self.rules_text.get("1.0", tk.END).strip()
->         rules = {}
->         for line in raw_text.split('\n'):
->             line = line.strip()
->             if not line or line.startswith('#') or '=' not in line:
->                 continue
->             
->             keys_part, dest_part = line.split('=', 1)
->             dest = dest_part.strip().strip('/\\')
->             
->             for key in keys_part.split(','):
->                 clean_key = key.strip().lower()
->                 if clean_key:
->                     rules[clean_key] = dest
->         return rules
-> 
->     def find_best_route(self, filename, rules):
->         """Checks the filename against the rules to find the closest match."""
->         name_lower = filename.lower()
->         
->         # 1. Check for exact extension matches first (e.g., '.pdf')
->         _, ext = os.path.splitext(name_lower)
->         if ext in rules:
->             return rules[ext]
->             
->         # 2. Check for keyword matches in the filename
->         for key, dest in rules.items():
->             # Skip the fallback asterisk during the normal keyword search
->             if key != '*' and key in name_lower and not key.startswith('.'):
->                 return dest
->                 
->         # 3. If no matches are found, trigger the fallback route (if it exists)
->         if '*' in rules:
->             return rules['*']
->             
->         return None # No route found and no fallback defined
->         
->         if not vault_root or not os.path.isdir(vault_root):
->             log("❌ ERROR: You must select a valid Vault Root Directory.")
->             return
->             
->         rules = self.parse_rules()
->         if not rules:
->             log("❌ ERROR: No valid routing rules found in configuration.")
->             return
-> 
->         log(f"🚀 [VAULT ROUTER] STARTING {'LIVE' if is_live else 'DRY RUN'}\n" + "-"*40)
->         log(f"📥 Source (Downloads): {target_path}")
->         log(f"🛡️ Target (Vault): {vault_root}\n")
-> 
->         # Gather files (top level only, we don't want to dig into subfolders of Downloads usually)
->         files_to_route = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
->         total = len(files_to_route)
->         
->         if total == 0:
->             log("✅ Source directory is empty. Nothing to route.")
->             return
-> 
->         for i, file in enumerate(files_to_route):
->             if self.cancel_requested:
->                 log("\n🛑 ROUTING ABORTED BY USER.")
->                 break
-> 
->             src_path = os.path.join(target_path, file)
->             route_subfolder = self.find_best_route(file, rules)
-> 
->             if route_subfolder:
->                 dst_dir = os.path.join(vault_root, route_subfolder)
->                 dst_path = os.path.join(dst_dir, file)
->                 
->                 if is_live:
->                     try:
->                         # 1. Ensure target vault subfolder exists
->                         os.makedirs(dst_dir, exist_ok=True)
->                         
->                         # Prevent overwriting existing files in the vault
->                         if os.path.exists(dst_path):
->                             log(f"⚠️ SKIPPED: '{file}' already exists in {route_subfolder}.")
->                             continue
-> 
->                         # 2. Safe Copy
->                         shutil.copy2(src_path, dst_path)
->                         
->                         # 3. Verify copy success before trashing original
->                         if os.path.exists(dst_path) and os.path.getsize(src_path) == os.path.getsize(dst_path):
->                             send2trash(src_path)
->                             log(f"✅ ROUTED: {file}  ->  {route_subfolder}/")
->                         else:
->                             log(f"❌ ERROR: Copy verification failed for {file}.")
->                             
->                     except Exception as e:
->                         log(f"❌ ERROR moving {file}: {e}")
->                 else:
->                     log(f"🔎 PREVIEW: {file}  ->  {route_subfolder}/")
->             else:
->                 log(f"⏭️ IGNORED: {file} (No matching rules)")
-> 
->             prog(((i + 1) / total) * 100)
-> 
->         if not self.cancel_requested:
+> import os
+
+> import shutil
+
+> import tkinter as tk
+
+> from tkinter import ttk, filedialog
+
+> from send2trash import send2trash
+
+> from core.base_tool import BaseTool
+
+> 
+
+> class VaultRouterTool(BaseTool):
+
+>     def __init__(self):
+
+>         self.cancel_requested = False
+
+>         self.default_rules = (
+
+>             "# Routing Configuration\n"
+
+>             "# Format: keyword1, keyword2, .extension = Folder/Subfolder\n"
+
+>             "# Use an asterisk (*) as a catch-all for unmatched files.\n\n"
+
+>             "tax, w2, 1099 = Finances/Taxes\n"
+
+>             "invoice, receipt = Finances/Invoices\n"
+
+>             ".mp4, .mov, video = Media/Videos\n"
+
+>             "bbr4821 = Clients/BBR4821\n"
+
+>             ".exe, .msi = System/Installers\n"
+
+>             "* = Unsorted_Review_Needed"  # <--- The new Fallback Rule
+
+>         )
+
+> 
+
+>     def get_name(self):
+
+>         return "📥 Vault Auto-Router"
+
+> 
+
+>     def build_ui(self, parent):
+
+>         # Vault Root Destination
+
+>         ttk.Label(parent, text="Vault Root Directory (Destination):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
+
+>         
+
+>         vault_frame = tk.Frame(parent, bg="#0f0f11")
+
+>         vault_frame.pack(fill='x', pady=(0, 15))
+
+>         
+
+>         self.vault_var = tk.StringVar()
+
+>         tk.Entry(vault_frame, textvariable=self.vault_var, bg="#1c1c1e", fg="white", insertbackground="white", relief="flat").pack(side='left', fill='x', expand=True, ipady=5)
+
+>         tk.Button(vault_frame, text="BROWSE", command=self.browse_vault, bg="#2c2c2e", fg="white", relief="flat", padx=10).pack(side='right', padx=(10, 0))
+
+> 
+
+>         # Routing Rules Configuration
+
+>         ttk.Label(parent, text="Routing Rules (Keyword/Ext = Vault Subfolder):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
+
+>         self.rules_text = tk.Text(parent, bg="#1c1c1e", fg="#32d74b", font=("Consolas", 10), height=8, relief="flat", padx=10, pady=10)
+
+>         self.rules_text.pack(fill='x', pady=(0, 5))
+
+>         self.rules_text.insert("1.0", self.default_rules)
+
+> 
+
+>     def browse_vault(self):
+
+>         p = filedialog.askdirectory()
+
+>         if p: self.vault_var.set(p)
+
+> 
+
+>     def parse_rules(self):
+
+>         """Converts the text area into a usable dictionary of {keyword: destination_folder}."""
+
+>         raw_text = self.rules_text.get("1.0", tk.END).strip()
+
+>         rules = {}
+
+>         for line in raw_text.split('\n'):
+
+>             line = line.strip()
+
+>             if not line or line.startswith('#') or '=' not in line:
+
+>                 continue
+
+>             
+
+>             keys_part, dest_part = line.split('=', 1)
+
+>             dest = dest_part.strip().strip('/\\')
+
+>             
+
+>             for key in keys_part.split(','):
+
+>                 clean_key = key.strip().lower()
+
+>                 if clean_key:
+
+>                     rules[clean_key] = dest
+
+>         return rules
+
+> 
+
+>     def find_best_route(self, filename, rules):
+
+>         """Checks the filename against the rules to find the closest match."""
+
+>         name_lower = filename.lower()
+
+>         
+
+>         # 1. Check for exact extension matches first (e.g., '.pdf')
+
+>         _, ext = os.path.splitext(name_lower)
+
+>         if ext in rules:
+
+>             return rules[ext]
+
+>             
+
+>         # 2. Check for keyword matches in the filename
+
+>         for key, dest in rules.items():
+
+>             # Skip the fallback asterisk during the normal keyword search
+
+>             if key != '*' and key in name_lower and not key.startswith('.'):
+
+>                 return dest
+
+>                 
+
+>         # 3. If no matches are found, trigger the fallback route (if it exists)
+
+>         if '*' in rules:
+
+>             return rules['*']
+
+>             
+
+>         return None # No route found and no fallback defined
+
+>         
+
+>         if not vault_root or not os.path.isdir(vault_root):
+
+>             log("❌ ERROR: You must select a valid Vault Root Directory.")
+
+>             return
+
+>             
+
+>         rules = self.parse_rules()
+
+>         if not rules:
+
+>             log("❌ ERROR: No valid routing rules found in configuration.")
+
+>             return
+
+> 
+
+>         log(f"🚀 [VAULT ROUTER] STARTING {'LIVE' if is_live else 'DRY RUN'}\n" + "-"*40)
+
+>         log(f"📥 Source (Downloads): {target_path}")
+
+>         log(f"🛡️ Target (Vault): {vault_root}\n")
+
+> 
+
+>         # Gather files (top level only, we don't want to dig into subfolders of Downloads usually)
+
+>         files_to_route = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
+
+>         total = len(files_to_route)
+
+>         
+
+>         if total == 0:
+
+>             log("✅ Source directory is empty. Nothing to route.")
+
+>             return
+
+> 
+
+>         for i, file in enumerate(files_to_route):
+
+>             if self.cancel_requested:
+
+>                 log("\n🛑 ROUTING ABORTED BY USER.")
+
+>                 break
+
+> 
+
+>             src_path = os.path.join(target_path, file)
+
+>             route_subfolder = self.find_best_route(file, rules)
+
+> 
+
+>             if route_subfolder:
+
+>                 dst_dir = os.path.join(vault_root, route_subfolder)
+
+>                 dst_path = os.path.join(dst_dir, file)
+
+>                 
+
+>                 if is_live:
+
+>                     try:
+
+>                         # 1. Ensure target vault subfolder exists
+
+>                         os.makedirs(dst_dir, exist_ok=True)
+
+>                         
+
+>                         # Prevent overwriting existing files in the vault
+
+>                         if os.path.exists(dst_path):
+
+>                             log(f"⚠️ SKIPPED: '{file}' already exists in {route_subfolder}.")
+
+>                             continue
+
+> 
+
+>                         # 2. Safe Copy
+
+>                         shutil.copy2(src_path, dst_path)
+
+>                         
+
+>                         # 3. Verify copy success before trashing original
+
+>                         if os.path.exists(dst_path) and os.path.getsize(src_path) == os.path.getsize(dst_path):
+
+>                             send2trash(src_path)
+
+>                             log(f"✅ ROUTED: {file}  ->  {route_subfolder}/")
+
+>                         else:
+
+>                             log(f"❌ ERROR: Copy verification failed for {file}.")
+
+>                             
+
+>                     except Exception as e:
+
+>                         log(f"❌ ERROR moving {file}: {e}")
+
+>                 else:
+
+>                     log(f"🔎 PREVIEW: {file}  ->  {route_subfolder}/")
+
+>             else:
+
+>                 log(f"⏭️ IGNORED: {file} (No matching rules)")
+
+> 
+
+>             prog(((i + 1) / total) * 100)
+
+> 
+
+>         if not self.cancel_requested:
+
 >             log("-" * 40 + "\n✅ VAULT ROUTING COMPLETE.\n")
 
 ### Assistant
@@ -981,152 +1129,298 @@ canonical_ref: ""
 > Because if that **$279 lands tonight**, that removes a lot of pressure for you.
 
 ### User
-> can you update this, the full code and also rememer this is a module in out tool launcher, import os
-> import shutil
-> import tkinter as tk
-> from tkinter import ttk, filedialog
-> from send2trash import send2trash
-> from core.base_tool import BaseTool
-> 
-> class VaultRouterTool(BaseTool):
->     def __init__(self):
->         self.cancel_requested = False
->         self.default_rules = (
->             "# Routing Configuration\n"
->             "# Format: keyword1, keyword2, .extension = Folder/Subfolder\n"
->             "# Use an asterisk (*) as a catch-all for unmatched files.\n\n"
->             "tax, w2, 1099 = Finances/Taxes\n"
->             "invoice, receipt = Finances/Invoices\n"
->             ".mp4, .mov, video = Media/Videos\n"
->             "bbr4821 = Clients/BBR4821\n"
->             ".exe, .msi = System/Installers\n"
->             "* = Unsorted_Review_Needed"  # <--- The new Fallback Rule
->         )
-> 
->     def get_name(self):
->         return "📥 Vault Auto-Router"
-> 
->     def build_ui(self, parent):
->         # Vault Root Destination
->         ttk.Label(parent, text="Vault Root Directory (Destination):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
->         
->         vault_frame = tk.Frame(parent, bg="#0f0f11")
->         vault_frame.pack(fill='x', pady=(0, 15))
->         
->         self.vault_var = tk.StringVar()
->         tk.Entry(vault_frame, textvariable=self.vault_var, bg="#1c1c1e", fg="white", insertbackground="white", relief="flat").pack(side='left', fill='x', expand=True, ipady=5)
->         tk.Button(vault_frame, text="BROWSE", command=self.browse_vault, bg="#2c2c2e", fg="white", relief="flat", padx=10).pack(side='right', padx=(10, 0))
-> 
->         # Routing Rules Configuration
->         ttk.Label(parent, text="Routing Rules (Keyword/Ext = Vault Subfolder):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
->         self.rules_text = tk.Text(parent, bg="#1c1c1e", fg="#32d74b", font=("Consolas", 10), height=8, relief="flat", padx=10, pady=10)
->         self.rules_text.pack(fill='x', pady=(0, 5))
->         self.rules_text.insert("1.0", self.default_rules)
-> 
->     def browse_vault(self):
->         p = filedialog.askdirectory()
->         if p: self.vault_var.set(p)
-> 
->     def parse_rules(self):
->         """Converts the text area into a usable dictionary of {keyword: destination_folder}."""
->         raw_text = self.rules_text.get("1.0", tk.END).strip()
->         rules = {}
->         for line in raw_text.split('\n'):
->             line = line.strip()
->             if not line or line.startswith('#') or '=' not in line:
->                 continue
->             
->             keys_part, dest_part = line.split('=', 1)
->             dest = dest_part.strip().strip('/\\')
->             
->             for key in keys_part.split(','):
->                 clean_key = key.strip().lower()
->                 if clean_key:
->                     rules[clean_key] = dest
->         return rules
-> 
->     def find_best_route(self, filename, rules):
->     name_lower = filename.lower()
-> 
->     # Extension match
->     _, ext = os.path.splitext(name_lower)
->     if ext in rules:
->         return rules[ext]
-> 
->     # Keyword match
->     for key, dest in rules.items():
->         if key != '*' and key in name_lower and not key.startswith('.'):
->             return dest
-> 
->     # Fallback rule
->     if '*' in rules:
->         return rules['*']
-> 
->     return None
->         
->         if not vault_root or not os.path.isdir(vault_root):
->             log("❌ ERROR: You must select a valid Vault Root Directory.")
->             return
->             
->         rules = self.parse_rules()
->         if not rules:
->             log("❌ ERROR: No valid routing rules found in configuration.")
->             return
-> 
->         log(f"🚀 [VAULT ROUTER] STARTING {'LIVE' if is_live else 'DRY RUN'}\n" + "-"*40)
->         log(f"📥 Source (Downloads): {target_path}")
->         log(f"🛡️ Target (Vault): {vault_root}\n")
-> 
->         # Gather files (top level only, we don't want to dig into subfolders of Downloads usually)
->         files_to_route = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
->         total = len(files_to_route)
->         
->         if total == 0:
->             log("✅ Source directory is empty. Nothing to route.")
->             return
-> 
->         for i, file in enumerate(files_to_route):
->             if self.cancel_requested:
->                 log("\n🛑 ROUTING ABORTED BY USER.")
->                 break
-> 
->             src_path = os.path.join(target_path, file)
->             route_subfolder = self.find_best_route(file, rules)
-> 
->             if route_subfolder:
->                 dst_dir = os.path.join(vault_root, route_subfolder)
->                 dst_path = os.path.join(dst_dir, file)
->                 
->                 if is_live:
->                     try:
->                         # 1. Ensure target vault subfolder exists
->                         os.makedirs(dst_dir, exist_ok=True)
->                         
->                         # Prevent overwriting existing files in the vault
->                         if os.path.exists(dst_path):
->                             log(f"⚠️ SKIPPED: '{file}' already exists in {route_subfolder}.")
->                             continue
-> 
->                         # 2. Safe Copy
->                         shutil.copy2(src_path, dst_path)
->                         
->                         # 3. Verify copy success before trashing original
->                         if os.path.exists(dst_path) and os.path.getsize(src_path) == os.path.getsize(dst_path):
->                             send2trash(src_path)
->                             log(f"✅ ROUTED: {file}  ->  {route_subfolder}/")
->                         else:
->                             log(f"❌ ERROR: Copy verification failed for {file}.")
->                             
->                     except Exception as e:
->                         log(f"❌ ERROR moving {file}: {e}")
->                 else:
->                     log(f"🔎 PREVIEW: {file}  ->  {route_subfolder}/")
->             else:
->                 log(f"⏭️ IGNORED: {file} (No matching rules)")
-> 
->             prog(((i + 1) / total) * 100)
-> 
->         if not self.cancel_requested:
+> can you update this, the full code and also rememer this is a module in out tool launcher, import os
+
+> import shutil
+
+> import tkinter as tk
+
+> from tkinter import ttk, filedialog
+
+> from send2trash import send2trash
+
+> from core.base_tool import BaseTool
+
+> 
+
+> class VaultRouterTool(BaseTool):
+
+>     def __init__(self):
+
+>         self.cancel_requested = False
+
+>         self.default_rules = (
+
+>             "# Routing Configuration\n"
+
+>             "# Format: keyword1, keyword2, .extension = Folder/Subfolder\n"
+
+>             "# Use an asterisk (*) as a catch-all for unmatched files.\n\n"
+
+>             "tax, w2, 1099 = Finances/Taxes\n"
+
+>             "invoice, receipt = Finances/Invoices\n"
+
+>             ".mp4, .mov, video = Media/Videos\n"
+
+>             "bbr4821 = Clients/BBR4821\n"
+
+>             ".exe, .msi = System/Installers\n"
+
+>             "* = Unsorted_Review_Needed"  # <--- The new Fallback Rule
+
+>         )
+
+> 
+
+>     def get_name(self):
+
+>         return "📥 Vault Auto-Router"
+
+> 
+
+>     def build_ui(self, parent):
+
+>         # Vault Root Destination
+
+>         ttk.Label(parent, text="Vault Root Directory (Destination):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
+
+>         
+
+>         vault_frame = tk.Frame(parent, bg="#0f0f11")
+
+>         vault_frame.pack(fill='x', pady=(0, 15))
+
+>         
+
+>         self.vault_var = tk.StringVar()
+
+>         tk.Entry(vault_frame, textvariable=self.vault_var, bg="#1c1c1e", fg="white", insertbackground="white", relief="flat").pack(side='left', fill='x', expand=True, ipady=5)
+
+>         tk.Button(vault_frame, text="BROWSE", command=self.browse_vault, bg="#2c2c2e", fg="white", relief="flat", padx=10).pack(side='right', padx=(10, 0))
+
+> 
+
+>         # Routing Rules Configuration
+
+>         ttk.Label(parent, text="Routing Rules (Keyword/Ext = Vault Subfolder):", background="#0f0f11", foreground="white").pack(anchor='w', pady=(0, 5))
+
+>         self.rules_text = tk.Text(parent, bg="#1c1c1e", fg="#32d74b", font=("Consolas", 10), height=8, relief="flat", padx=10, pady=10)
+
+>         self.rules_text.pack(fill='x', pady=(0, 5))
+
+>         self.rules_text.insert("1.0", self.default_rules)
+
+> 
+
+>     def browse_vault(self):
+
+>         p = filedialog.askdirectory()
+
+>         if p: self.vault_var.set(p)
+
+> 
+
+>     def parse_rules(self):
+
+>         """Converts the text area into a usable dictionary of {keyword: destination_folder}."""
+
+>         raw_text = self.rules_text.get("1.0", tk.END).strip()
+
+>         rules = {}
+
+>         for line in raw_text.split('\n'):
+
+>             line = line.strip()
+
+>             if not line or line.startswith('#') or '=' not in line:
+
+>                 continue
+
+>             
+
+>             keys_part, dest_part = line.split('=', 1)
+
+>             dest = dest_part.strip().strip('/\\')
+
+>             
+
+>             for key in keys_part.split(','):
+
+>                 clean_key = key.strip().lower()
+
+>                 if clean_key:
+
+>                     rules[clean_key] = dest
+
+>         return rules
+
+> 
+
+>     def find_best_route(self, filename, rules):
+
+>     name_lower = filename.lower()
+
+> 
+
+>     # Extension match
+
+>     _, ext = os.path.splitext(name_lower)
+
+>     if ext in rules:
+
+>         return rules[ext]
+
+> 
+
+>     # Keyword match
+
+>     for key, dest in rules.items():
+
+>         if key != '*' and key in name_lower and not key.startswith('.'):
+
+>             return dest
+
+> 
+
+>     # Fallback rule
+
+>     if '*' in rules:
+
+>         return rules['*']
+
+> 
+
+>     return None
+
+>         
+
+>         if not vault_root or not os.path.isdir(vault_root):
+
+>             log("❌ ERROR: You must select a valid Vault Root Directory.")
+
+>             return
+
+>             
+
+>         rules = self.parse_rules()
+
+>         if not rules:
+
+>             log("❌ ERROR: No valid routing rules found in configuration.")
+
+>             return
+
+> 
+
+>         log(f"🚀 [VAULT ROUTER] STARTING {'LIVE' if is_live else 'DRY RUN'}\n" + "-"*40)
+
+>         log(f"📥 Source (Downloads): {target_path}")
+
+>         log(f"🛡️ Target (Vault): {vault_root}\n")
+
+> 
+
+>         # Gather files (top level only, we don't want to dig into subfolders of Downloads usually)
+
+>         files_to_route = [f for f in os.listdir(target_path) if os.path.isfile(os.path.join(target_path, f))]
+
+>         total = len(files_to_route)
+
+>         
+
+>         if total == 0:
+
+>             log("✅ Source directory is empty. Nothing to route.")
+
+>             return
+
+> 
+
+>         for i, file in enumerate(files_to_route):
+
+>             if self.cancel_requested:
+
+>                 log("\n🛑 ROUTING ABORTED BY USER.")
+
+>                 break
+
+> 
+
+>             src_path = os.path.join(target_path, file)
+
+>             route_subfolder = self.find_best_route(file, rules)
+
+> 
+
+>             if route_subfolder:
+
+>                 dst_dir = os.path.join(vault_root, route_subfolder)
+
+>                 dst_path = os.path.join(dst_dir, file)
+
+>                 
+
+>                 if is_live:
+
+>                     try:
+
+>                         # 1. Ensure target vault subfolder exists
+
+>                         os.makedirs(dst_dir, exist_ok=True)
+
+>                         
+
+>                         # Prevent overwriting existing files in the vault
+
+>                         if os.path.exists(dst_path):
+
+>                             log(f"⚠️ SKIPPED: '{file}' already exists in {route_subfolder}.")
+
+>                             continue
+
+> 
+
+>                         # 2. Safe Copy
+
+>                         shutil.copy2(src_path, dst_path)
+
+>                         
+
+>                         # 3. Verify copy success before trashing original
+
+>                         if os.path.exists(dst_path) and os.path.getsize(src_path) == os.path.getsize(dst_path):
+
+>                             send2trash(src_path)
+
+>                             log(f"✅ ROUTED: {file}  ->  {route_subfolder}/")
+
+>                         else:
+
+>                             log(f"❌ ERROR: Copy verification failed for {file}.")
+
+>                             
+
+>                     except Exception as e:
+
+>                         log(f"❌ ERROR moving {file}: {e}")
+
+>                 else:
+
+>                     log(f"🔎 PREVIEW: {file}  ->  {route_subfolder}/")
+
+>             else:
+
+>                 log(f"⏭️ IGNORED: {file} (No matching rules)")
+
+> 
+
+>             prog(((i + 1) / total) * 100)
+
+> 
+
+>         if not self.cancel_requested:
+
 >             log("-" * 40 + "\n✅ VAULT ROUTING COMPLETE.\n")
 
 ### Assistant
@@ -3581,84 +3875,162 @@ canonical_ref: ""
 > **B)** still working inside the router code?
 
 ### User
-> # File Tree: Downloads
-> 
-> **Generated:** 3/16/2026, 7:38:19 PM
-> **Root Path:** `c:\Users\Lisa\Downloads`
-> 
-> ```
-> ├── 2024-08-07_134 Notice of Disposition of Pro.pdf
-> ├── 2024-08-07_Appearance.pdf
-> ├── 2024-08-07_Complaint.pdf
-> ├── 2024-08-07_Military Affidavit.pdf
-> ├── 2024-08-13_24085296_Affidavit of Debt.pdf.pdf
-> ├── 2024-08-13_24085296_Motion for Entry of Def.pdf
-> ├── 2024-08-13_24085296_Non-Military Affidavit.pdf
-> ├── 2024-08-13_Return Of Service.pdf
-> ├── 2024-08-13_Summons by Private Process Serve.pdf
-> ├── 2024-10-04_Order Issued.pdf
-> ├── ArticleImportSample.csv
-> ├── Defendant_Objection_and_Motion_Enforce_Surplus.pdf
-> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu (1).png
-> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu.png
-> ├── Nines - Household Management App.pdf
-> ├── ORDER ON MOTION TO ENFORCE PETIT.pdf
-> ├── a0306c73-9116-4006-a9f5-4879d4356350_All_State_Insurance_Settlement.pdf
-> ├── combinepdf.pdf
-> ├── family.jpg
-> ├── familywide.jpg
-> ├── happy-woman-portrait-business-planner-600nw-2701001307.webp
-> ├── qionelogoanimated.mp4
-> ├── qioneportallogo.jpg
-> ├── qiportal3.jpg
-> ├── qiportalbanner.jpg
-> ├── qiportalqring.jpg
-> ├── qslifeoslogo.jpg
-> ├── scanpsnapdeal.jpg
-> ├── scanpsnapdeal.pdf
-> └── scansnapdeal.jpg
-> ```
-> 
-> ---
-> *Generated by FileTree Pro Extension*# File Tree: Downloads
-> 
-> **Generated:** 3/16/2026, 7:38:19 PM
-> **Root Path:** `c:\Users\Lisa\Downloads`
-> 
-> ```
-> ├── 2024-08-07_134 Notice of Disposition of Pro.pdf
-> ├── 2024-08-07_Appearance.pdf
-> ├── 2024-08-07_Complaint.pdf
-> ├── 2024-08-07_Military Affidavit.pdf
-> ├── 2024-08-13_24085296_Affidavit of Debt.pdf.pdf
-> ├── 2024-08-13_24085296_Motion for Entry of Def.pdf
-> ├── 2024-08-13_24085296_Non-Military Affidavit.pdf
-> ├── 2024-08-13_Return Of Service.pdf
-> ├── 2024-08-13_Summons by Private Process Serve.pdf
-> ├── 2024-10-04_Order Issued.pdf
-> ├── ArticleImportSample.csv
-> ├── Defendant_Objection_and_Motion_Enforce_Surplus.pdf
-> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu (1).png
-> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu.png
-> ├── Nines - Household Management App.pdf
-> ├── ORDER ON MOTION TO ENFORCE PETIT.pdf
-> ├── a0306c73-9116-4006-a9f5-4879d4356350_All_State_Insurance_Settlement.pdf
-> ├── combinepdf.pdf
-> ├── family.jpg
-> ├── familywide.jpg
-> ├── happy-woman-portrait-business-planner-600nw-2701001307.webp
-> ├── qionelogoanimated.mp4
-> ├── qioneportallogo.jpg
-> ├── qiportal3.jpg
-> ├── qiportalbanner.jpg
-> ├── qiportalqring.jpg
-> ├── qslifeoslogo.jpg
-> ├── scanpsnapdeal.jpg
-> ├── scanpsnapdeal.pdf
-> └── scansnapdeal.jpg
-> ```
-> 
-> ---
+> # File Tree: Downloads
+
+> 
+
+> **Generated:** 3/16/2026, 7:38:19 PM
+
+> **Root Path:** `c:\Users\Lisa\Downloads`
+
+> 
+
+> ```
+
+> ├── 2024-08-07_134 Notice of Disposition of Pro.pdf
+
+> ├── 2024-08-07_Appearance.pdf
+
+> ├── 2024-08-07_Complaint.pdf
+
+> ├── 2024-08-07_Military Affidavit.pdf
+
+> ├── 2024-08-13_24085296_Affidavit of Debt.pdf.pdf
+
+> ├── 2024-08-13_24085296_Motion for Entry of Def.pdf
+
+> ├── 2024-08-13_24085296_Non-Military Affidavit.pdf
+
+> ├── 2024-08-13_Return Of Service.pdf
+
+> ├── 2024-08-13_Summons by Private Process Serve.pdf
+
+> ├── 2024-10-04_Order Issued.pdf
+
+> ├── ArticleImportSample.csv
+
+> ├── Defendant_Objection_and_Motion_Enforce_Surplus.pdf
+
+> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu (1).png
+
+> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu.png
+
+> ├── Nines - Household Management App.pdf
+
+> ├── ORDER ON MOTION TO ENFORCE PETIT.pdf
+
+> ├── a0306c73-9116-4006-a9f5-4879d4356350_All_State_Insurance_Settlement.pdf
+
+> ├── combinepdf.pdf
+
+> ├── family.jpg
+
+> ├── familywide.jpg
+
+> ├── happy-woman-portrait-business-planner-600nw-2701001307.webp
+
+> ├── qionelogoanimated.mp4
+
+> ├── qioneportallogo.jpg
+
+> ├── qiportal3.jpg
+
+> ├── qiportalbanner.jpg
+
+> ├── qiportalqring.jpg
+
+> ├── qslifeoslogo.jpg
+
+> ├── scanpsnapdeal.jpg
+
+> ├── scanpsnapdeal.pdf
+
+> └── scansnapdeal.jpg
+
+> ```
+
+> 
+
+> ---
+
+> *Generated by FileTree Pro Extension*# File Tree: Downloads
+
+> 
+
+> **Generated:** 3/16/2026, 7:38:19 PM
+
+> **Root Path:** `c:\Users\Lisa\Downloads`
+
+> 
+
+> ```
+
+> ├── 2024-08-07_134 Notice of Disposition of Pro.pdf
+
+> ├── 2024-08-07_Appearance.pdf
+
+> ├── 2024-08-07_Complaint.pdf
+
+> ├── 2024-08-07_Military Affidavit.pdf
+
+> ├── 2024-08-13_24085296_Affidavit of Debt.pdf.pdf
+
+> ├── 2024-08-13_24085296_Motion for Entry of Def.pdf
+
+> ├── 2024-08-13_24085296_Non-Military Affidavit.pdf
+
+> ├── 2024-08-13_Return Of Service.pdf
+
+> ├── 2024-08-13_Summons by Private Process Serve.pdf
+
+> ├── 2024-10-04_Order Issued.pdf
+
+> ├── ArticleImportSample.csv
+
+> ├── Defendant_Objection_and_Motion_Enforce_Surplus.pdf
+
+> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu (1).png
+
+> ├── Gemini_Generated_Image_o1qu0mo1qu0mo1qu.png
+
+> ├── Nines - Household Management App.pdf
+
+> ├── ORDER ON MOTION TO ENFORCE PETIT.pdf
+
+> ├── a0306c73-9116-4006-a9f5-4879d4356350_All_State_Insurance_Settlement.pdf
+
+> ├── combinepdf.pdf
+
+> ├── family.jpg
+
+> ├── familywide.jpg
+
+> ├── happy-woman-portrait-business-planner-600nw-2701001307.webp
+
+> ├── qionelogoanimated.mp4
+
+> ├── qioneportallogo.jpg
+
+> ├── qiportal3.jpg
+
+> ├── qiportalbanner.jpg
+
+> ├── qiportalqring.jpg
+
+> ├── qslifeoslogo.jpg
+
+> ├── scanpsnapdeal.jpg
+
+> ├── scanpsnapdeal.pdf
+
+> └── scansnapdeal.jpg
+
+> ```
+
+> 
+
+> ---
+
 > *Generated by FileTree Pro Extension*Yeah, you're lagging pretty bad. Um, anyways, so I wanna send you this first.
 
 ### Assistant

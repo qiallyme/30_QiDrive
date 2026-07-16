@@ -3,9 +3,9 @@ layout: page
 title: "Oxygen tank inventory help"
 slug: "oxygen_tank_inventory_help"
 created_at: "2026-05-16 15:56:37"
-updated_at: "2026-05-16 15:56:37"
+updated_at: "2026-07-16T06:49:32-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,62 +39,118 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> i forgot how to fill this out. id
-> uuid
-> Default: gen_random_uuid()
-> patient_id
-> uuid
-> c5c16555-10b9-45f3-a5a3-d7528600cd47
-> Has a foreign key relation tocare.patients.id
-> 
-> metadata_json
-> jsonb
-> Default: '{}'::jsonb
-> created_at
-> timestamptz
-> 
-> 05/16/2026 03:56:01 PM
-> Default: now()
-> 
-> Your local timezone will be automatically applied (-0500)
-> 
-> 
-> updated_at
-> timestamptz
-> 
-> 05/16/2026 03:56:04 PM
-> Default: now()
-> 
-> Your local timezone will be automatically applied (-0500)
-> 
-> 
-> Optional Fields
-> These are columns that do not need any value
-> 
-> tank_label
-> text
-> D
-> tank_type
-> text
-> Default: NULL
-> capacity_liters
-> numeric
-> NULL
-> current_status
-> text
-> Default: NULL
-> last_pressure_psi
-> numeric
-> NULL
-> last_checked_at
-> timestamptz
-> 
-> mm/dd/yyyy --:--:-- --
-> Your local timezone will be automatically applied (-0500)
-> 
-> 
-> notes
-> text
+> i forgot how to fill this out. id
+
+> uuid
+
+> Default: gen_random_uuid()
+
+> patient_id
+
+> uuid
+
+> c5c16555-10b9-45f3-a5a3-d7528600cd47
+
+> Has a foreign key relation tocare.patients.id
+
+> 
+
+> metadata_json
+
+> jsonb
+
+> Default: '{}'::jsonb
+
+> created_at
+
+> timestamptz
+
+> 
+
+> 05/16/2026 03:56:01 PM
+
+> Default: now()
+
+> 
+
+> Your local timezone will be automatically applied (-0500)
+
+> 
+
+> 
+
+> updated_at
+
+> timestamptz
+
+> 
+
+> 05/16/2026 03:56:04 PM
+
+> Default: now()
+
+> 
+
+> Your local timezone will be automatically applied (-0500)
+
+> 
+
+> 
+
+> Optional Fields
+
+> These are columns that do not need any value
+
+> 
+
+> tank_label
+
+> text
+
+> D
+
+> tank_type
+
+> text
+
+> Default: NULL
+
+> capacity_liters
+
+> numeric
+
+> NULL
+
+> current_status
+
+> text
+
+> Default: NULL
+
+> last_pressure_psi
+
+> numeric
+
+> NULL
+
+> last_checked_at
+
+> timestamptz
+
+> 
+
+> mm/dd/yyyy --:--:-- --
+
+> Your local timezone will be automatically applied (-0500)
+
+> 
+
+> 
+
+> notes
+
+> text
+
 > Default: NULL
 
 ### Assistant

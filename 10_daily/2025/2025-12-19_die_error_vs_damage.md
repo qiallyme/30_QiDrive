@@ -3,9 +3,9 @@ layout: page
 title: "Die error vs damage"
 slug: "die_error_vs_damage"
 created_at: "2025-12-19 20:28:29"
-updated_at: "2025-12-19 20:28:29"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

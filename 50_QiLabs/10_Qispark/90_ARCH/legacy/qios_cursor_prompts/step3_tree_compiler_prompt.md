@@ -4,20 +4,20 @@ title: Step 3 Directory Tree Compiler Prompt
 slug: step3_tree_compiler_prompt
 summary: Cursor prompt for building the Directory Tree Compiler that generates QiOS_v1 folder structure from registries.
 status: publish
-updated_at: "2026-06-29"
+updated_at: "2026-07-16T06:49:40-04:00"
 sensitivity: internal
 classification: system_darkmatter
 context: Cursor prompt for implementing QiOS Directory Tree Compiler (Step 3). Local-first Python script that reads registries and generates canonical folder tree.
-aliases:
+aliases: []
   - tree_compiler_prompt
   - step3_compiler
-tags:
+tags: []
   - prompt
   - cursor
   - automation
   - tooling
   - qispark
-keywords:
+keywords: []
   - tree
   - compiler
   - directory
@@ -38,11 +38,11 @@ graph_weight: 1
 orbit: mid
 created: 2025-01-27T00:00:00Z
 updated: 2025-01-27T00:00:00Z
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 realm_label: ""
-uid: ""
+uid: e39c4c32262149a0a83329699e96ace7
 canonical_ref: ""
 template_key: master-template
 ---

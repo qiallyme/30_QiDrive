@@ -3,7 +3,7 @@ layout: page
 title: "Founded QiAlly LLC & IssiTax LLC"
 slug: "founded-qially-llc-issitax-llc"
 created_at: "2025-01-01"
-updated_at: "2025-01-01"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
 tags: ["personal"]
 category: "personal"
@@ -24,7 +24,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: c3211e2457324990ba65637573679d02
 canonical_ref: ""
 ---
 

@@ -3,9 +3,9 @@ layout: page
 title: "Stomach Pain Acid Reflux Alternatives"
 slug: "stomach_pain_acid_reflux_alternatives"
 created_at: "2026-02-12 17:22:06"
-updated_at: "2026-02-12 17:22:06"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

@@ -3,9 +3,9 @@ layout: page
 title: "Database Schema Optimization"
 slug: "database_schema_optimization"
 created_at: "2026-06-25 22:10:24"
-updated_at: "2026-06-25 22:10:24"
+updated_at: "2026-07-16T06:49:34-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -39,16 +39,26 @@ canonical_ref: ""
 ## Chat History
 
 ### User
-> i think we have too many columns, Name,Chapter,Chapter Code,Decimal ID,Last Updated,Level,Notes,Parent Code,Parent item,Path,QiCode,Related Sections,Section,Section Code,Sort Key,Status,Sub-item,Tags,Title,Title Number,Type,Version
-> 1. 🎯 Core Principles,qi_doctrine_principles,,,"June 25, 2026 8:33 PM",,Merged into existing draft chapter without changing chapter name.,,Title 01 — Doctrine & Principles (Title%2001%20%E2%80%94%20Doctrine%20&%20Principles%208480e028937a46569ca6431ffe585bd7.csv),,,,Core Principles,,,draft,,,.legacy,,Section,
-> SECTION 1: VISION & ARCHITECTURE,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.001,,Vision & Architecture,,,draft,,,.legacy,,Section,
-> SECTION 2: FOUNDATIONS & ENVIRONMENT,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.002,,Foundations & Environment,,,draft,,,.legacy,,Section,
-> SECTION 3: CORE MODULES,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.003,,Core Modules,,,draft,,,.legacy,,Section,
-> SECTION 4: UI & INTERACTION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.004,,UI & Interaction,,,draft,,,.legacy,,Section,
-> SECTION 5: WORKFLOWS & AUTOMATION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.005,,Workflows & Automation,,,draft,,,.legacy,,Workflow,
-> SECTION 6: EXPANSION & COLLAB,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.006,,Expansion & Collab,,,draft,,,.legacy,,Section,
-> SECTION 7: DNA & DOCUMENTATION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.007,,DNA & Documentation,,,draft,,,.legacy,,Section,
-> 📘 QiCodex — Unified Decimal Registry,scope_definitions_numbering,,,"June 25, 2026 8:32 PM",,Merged into existing draft chapter without changing chapter name.,,Title 00 — General Provisions (Title%2000%20%E2%80%94%20General%20Provisions%20fca8e718a53d46afad20fe1b13fb4caf.csv),,§ 00.01.005,,QiCodex Unified Decimal Registry,,,draft,,,.legacy,,Reference,
+> i think we have too many columns, Name,Chapter,Chapter Code,Decimal ID,Last Updated,Level,Notes,Parent Code,Parent item,Path,QiCode,Related Sections,Section,Section Code,Sort Key,Status,Sub-item,Tags,Title,Title Number,Type,Version
+
+> 1. 🎯 Core Principles,qi_doctrine_principles,,,"June 25, 2026 8:33 PM",,Merged into existing draft chapter without changing chapter name.,,Title 01 — Doctrine & Principles (Title%2001%20%E2%80%94%20Doctrine%20&%20Principles%208480e028937a46569ca6431ffe585bd7.csv),,,,Core Principles,,,draft,,,.legacy,,Section,
+
+> SECTION 1: VISION & ARCHITECTURE,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.001,,Vision & Architecture,,,draft,,,.legacy,,Section,
+
+> SECTION 2: FOUNDATIONS & ENVIRONMENT,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.002,,Foundations & Environment,,,draft,,,.legacy,,Section,
+
+> SECTION 3: CORE MODULES,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.003,,Core Modules,,,draft,,,.legacy,,Section,
+
+> SECTION 4: UI & INTERACTION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.004,,UI & Interaction,,,draft,,,.legacy,,Section,
+
+> SECTION 5: WORKFLOWS & AUTOMATION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.005,,Workflows & Automation,,,draft,,,.legacy,,Workflow,
+
+> SECTION 6: EXPANSION & COLLAB,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.006,,Expansion & Collab,,,draft,,,.legacy,,Section,
+
+> SECTION 7: DNA & DOCUMENTATION,qiapps_projects_integrations,,,"June 25, 2026 8:37 PM",,Merged into existing draft chapter without changing chapter name.,,Title 07 — Security & Access (Title%2007%20%E2%80%94%20Security%20&%20Access%208fbdb5a7433844f48ad0b371ccbee59b.csv),,§ 07.02.007,,DNA & Documentation,,,draft,,,.legacy,,Section,
+
+> 📘 QiCodex — Unified Decimal Registry,scope_definitions_numbering,,,"June 25, 2026 8:32 PM",,Merged into existing draft chapter without changing chapter name.,,Title 00 — General Provisions (Title%2000%20%E2%80%94%20General%20Provisions%20fca8e718a53d46afad20fe1b13fb4caf.csv),,§ 00.01.005,,QiCodex Unified Decimal Registry,,,draft,,,.legacy,,Reference,
+
 > 1.21.2_Principle_of_Presence.md,qi_doctrine_principles,,,"June 25, 2026 8:33 PM",,Merged into existing draft chapter without changing chapter name.,,Title 01 — Doctrine & Principles (Title%2001%20%E2%80%94%20Doctrine%20&%20Principles%
 
 ### Assistant

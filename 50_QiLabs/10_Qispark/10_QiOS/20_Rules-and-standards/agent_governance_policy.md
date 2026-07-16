@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Agent Governance Policy
-slug: ""
+slug: agent-governance-policy
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: a0d287e4db7a4c2c9769ffcd7a341e5b
 canonical_ref: ""
 source_type: manual
 template_key: master-template

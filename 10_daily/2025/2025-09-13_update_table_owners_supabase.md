@@ -3,9 +3,9 @@ layout: page
 title: "Update table owners Supabase"
 slug: "update_table_owners_supabase"
 created_at: "2025-09-13 19:22:16"
-updated_at: "2025-09-13 19:22:16"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
@@ -72,66 +72,126 @@ canonical_ref: ""
 > Which of these do you mean — reassigning *row ownership* (who can access a record), or changing the actual Postgres role that owns the table itself? The first is the usual case in Supabase apps.
 
 ### User
-> profiles
-> 
-> Disable RLS
-> 
-> Create policy
-> 
-> Name	Command	Applied to	Actions
-> 
-> No direct profile creation
-> INSERT	
-> authenticated
-> 
-> 
-> No direct profile deletion
-> DELETE	
-> authenticated
-> 
-> 
-> profiles_insert_own
-> INSERT	
-> authenticated
-> 
-> 
-> profiles_select_admin
-> SELECT	
-> public
-> 
-> 
-> profiles_select_own
-> SELECT	
-> authenticated
-> 
-> 
-> profiles_select_self
-> SELECT	
-> public
-> 
-> 
-> profiles_update_admin
-> UPDATE	
-> public
-> 
-> 
-> profiles_update_own
-> UPDATE	
-> authenticated
-> 
-> 
-> profiles_update_self
-> UPDATE	
-> public
-> 
-> 
-> Users can update their own profile
-> UPDATE	
-> authenticated
-> 
-> 
-> Users can view their own profile
-> SELECT	
+> profiles
+
+> 
+
+> Disable RLS
+
+> 
+
+> Create policy
+
+> 
+
+> Name	Command	Applied to	Actions
+
+> 
+
+> No direct profile creation
+
+> INSERT	
+
+> authenticated
+
+> 
+
+> 
+
+> No direct profile deletion
+
+> DELETE	
+
+> authenticated
+
+> 
+
+> 
+
+> profiles_insert_own
+
+> INSERT	
+
+> authenticated
+
+> 
+
+> 
+
+> profiles_select_admin
+
+> SELECT	
+
+> public
+
+> 
+
+> 
+
+> profiles_select_own
+
+> SELECT	
+
+> authenticated
+
+> 
+
+> 
+
+> profiles_select_self
+
+> SELECT	
+
+> public
+
+> 
+
+> 
+
+> profiles_update_admin
+
+> UPDATE	
+
+> public
+
+> 
+
+> 
+
+> profiles_update_own
+
+> UPDATE	
+
+> authenticated
+
+> 
+
+> 
+
+> profiles_update_self
+
+> UPDATE	
+
+> public
+
+> 
+
+> 
+
+> Users can update their own profile
+
+> UPDATE	
+
+> authenticated
+
+> 
+
+> 
+
+> Users can view their own profile
+
+> SELECT	
+
 > authenticated
 
 ### Assistant
@@ -501,73 +561,140 @@ canonical_ref: ""
 > Basically, just grab that UUID, do a quick SQL update, and you’ll be out of that permission spiral in no time. Then it’s all smooth sailing from there!{'asset_pointer': 'sediment://file_000000006f30622f8de647108462dbb6', 'content_type': 'audio_asset_pointer', 'expiry_datetime': '2026-03-13T01:45:19.745237+00:00', 'format': 'wav', 'metadata': {'end': 26.6, 'end_timestamp': None, 'interruptions': None, 'original_audio_source': None, 'pretokenized_vq': None, 'start': 0.0, 'start_timestamp': None, 'transcription': None, 'word_transcription': None}, 'size_bytes': 1276878, 'tool_audio_direction': None}
 
 ### User
-> what do i say. I'll list tables in the public schema now.
-> 
-> list_tables
-> Checklist — what I'll do
-> 
-> Explain why you cannot make a DB "owner" via RLS and what we can do instead.
-> Provide safe SQL that creates RLS policies giving your UID full access (SELECT/INSERT/UPDATE/DELETE) on all public tables.
-> Ask for confirmation before I render/deploy the SQL.
-> Short answer
-> 
-> You cannot change the actual PostgreSQL object owner (the database owner role) using RLS — ownership is a database-level attribute and is different from RLS policies.
-> What I can do is create Row Level Security policies on each RLS-enabled table that effectively allow your user (the provided UID) full read/write/delete/insert access to rows. That makes your account the only authenticated user permitted to access those tables via the Supabase Auth flow (but it does not change technical DB ownership).
-> Important security note
-> 
-> These policies will allow the specified UID to access rows via the authenticated role. The Supabase service_role key and DB superusers still bypass RLS.
-> Granting full access via policies is powerful — verify you want this before applying.
-> Proposed SQL
-> 
-> For each table I found in public (rls_enabled = true) I will create four policies: SELECT, INSERT, UPDATE, DELETE.
-> Policy patterns follow Supabase best practices:
-> Use (SELECT auth.uid()) to compare to your UUID.
-> Use USING for SELECT and DELETE.
-> Use WITH CHECK for INSERT and UPDATE (and also USING for UPDATE).
-> Concise policy names.
-> Replace the placeholder UUID below with the one you provided: 20bf85ed-760e-4a24-bc51-ab7e9bf5b637
-> Example SQL block (non-destructive: only CREATE POLICY statements)
-> 
-> I'll create policies for these public tables: profiles, clients, client_memberships, documents, orgs, org_memberships, kb_spaces, kb_articles, kb_files, client_updates.
-> SQL (ready to run as-is):
-> 
-> CREATE POLICY "owner_select" ON public.profiles FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.profiles FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.profiles FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.profiles FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.clients FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.clients FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.clients FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.clients FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.client_memberships FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.client_memberships FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.client_memberships FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.client_memberships FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.documents FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.documents FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.documents FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.documents FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.orgs FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.orgs FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.orgs FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.orgs FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.org_memberships FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.org_memberships FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.org_memberships FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.org_memberships FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.kb_spaces FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_spaces FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_spaces FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_spaces FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.kb_articles FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_articles FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_articles FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_articles FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.kb_files FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_files FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_files FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_files FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> CREATE POLICY "owner_select" ON public.client_updates FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.client_updates FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.client_updates FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.client_updates FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
-> 
-> Notes
-> 
-> I used the same policy names per table (owner_select/owner_insert/owner_update/owner_delete). If you prefer unique names per table, I can add table suffixes.
-> These policies assume you want your UID as the only authenticated user with access. If you also want other roles/users to retain access, we must update the TO clause or add additional policies.
-> Indexes
-> 
-> For any table where policies reference a user_id/created_by column (not in these generic policies), add an index on that column to improve performance. Example:
-> CREATE INDEX idx_profiles_id ON public.profiles(id);
-> Testing
-> 
-> After applying policies, test using:
-> An authenticated JWT for your user — queries should succeed.
-> Another authenticated user — queries should fail.
-> Unauthenticated requests — should fail.
-> Next step
-> 
-> Confirm you want me to create these policies exactly as written. If yes, I will render them for execution (I can call display_query to present the SQL so you can run it).
+> what do i say. I'll list tables in the public schema now.
+
+> 
+
+> list_tables
+
+> Checklist — what I'll do
+
+> 
+
+> Explain why you cannot make a DB "owner" via RLS and what we can do instead.
+
+> Provide safe SQL that creates RLS policies giving your UID full access (SELECT/INSERT/UPDATE/DELETE) on all public tables.
+
+> Ask for confirmation before I render/deploy the SQL.
+
+> Short answer
+
+> 
+
+> You cannot change the actual PostgreSQL object owner (the database owner role) using RLS — ownership is a database-level attribute and is different from RLS policies.
+
+> What I can do is create Row Level Security policies on each RLS-enabled table that effectively allow your user (the provided UID) full read/write/delete/insert access to rows. That makes your account the only authenticated user permitted to access those tables via the Supabase Auth flow (but it does not change technical DB ownership).
+
+> Important security note
+
+> 
+
+> These policies will allow the specified UID to access rows via the authenticated role. The Supabase service_role key and DB superusers still bypass RLS.
+
+> Granting full access via policies is powerful — verify you want this before applying.
+
+> Proposed SQL
+
+> 
+
+> For each table I found in public (rls_enabled = true) I will create four policies: SELECT, INSERT, UPDATE, DELETE.
+
+> Policy patterns follow Supabase best practices:
+
+> Use (SELECT auth.uid()) to compare to your UUID.
+
+> Use USING for SELECT and DELETE.
+
+> Use WITH CHECK for INSERT and UPDATE (and also USING for UPDATE).
+
+> Concise policy names.
+
+> Replace the placeholder UUID below with the one you provided: 20bf85ed-760e-4a24-bc51-ab7e9bf5b637
+
+> Example SQL block (non-destructive: only CREATE POLICY statements)
+
+> 
+
+> I'll create policies for these public tables: profiles, clients, client_memberships, documents, orgs, org_memberships, kb_spaces, kb_articles, kb_files, client_updates.
+
+> SQL (ready to run as-is):
+
+> 
+
+> CREATE POLICY "owner_select" ON public.profiles FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.profiles FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.profiles FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.profiles FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.clients FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.clients FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.clients FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.clients FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.client_memberships FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.client_memberships FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.client_memberships FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.client_memberships FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.documents FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.documents FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.documents FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.documents FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.orgs FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.orgs FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.orgs FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.orgs FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.org_memberships FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.org_memberships FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.org_memberships FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.org_memberships FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.kb_spaces FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_spaces FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_spaces FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_spaces FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.kb_articles FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_articles FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_articles FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_articles FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.kb_files FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.kb_files FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.kb_files FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.kb_files FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> CREATE POLICY "owner_select" ON public.client_updates FOR SELECT TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_insert" ON public.client_updates FOR INSERT TO authenticated WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_update" ON public.client_updates FOR UPDATE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid) WITH CHECK ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid); CREATE POLICY "owner_delete" ON public.client_updates FOR DELETE TO authenticated USING ((SELECT auth.uid()) = '20bf85ed-760e-4a24-bc51-ab7e9bf5b637'::uuid);
+
+> 
+
+> Notes
+
+> 
+
+> I used the same policy names per table (owner_select/owner_insert/owner_update/owner_delete). If you prefer unique names per table, I can add table suffixes.
+
+> These policies assume you want your UID as the only authenticated user with access. If you also want other roles/users to retain access, we must update the TO clause or add additional policies.
+
+> Indexes
+
+> 
+
+> For any table where policies reference a user_id/created_by column (not in these generic policies), add an index on that column to improve performance. Example:
+
+> CREATE INDEX idx_profiles_id ON public.profiles(id);
+
+> Testing
+
+> 
+
+> After applying policies, test using:
+
+> An authenticated JWT for your user — queries should succeed.
+
+> Another authenticated user — queries should fail.
+
+> Unauthenticated requests — should fail.
+
+> Next step
+
+> 
+
+> Confirm you want me to create these policies exactly as written. If yes, I will render them for execution (I can call display_query to present the SQL so you can run it).
+
 > If you want actual DB ownership changed (chown), tell me — I will explain why that is separate and show the ALTER TABLE ... OWNER TO ... commands (note: those require a role that exists and appropriate permissions).
 
 ### Assistant
@@ -868,7 +995,8 @@ canonical_ref: ""
 > Would you like me to generate a ready-to-run SQL block that applies this to **every public table** (select/insert/update/delete) so your UID bypasses all RLS checks?
 
 ### User
-> ERROR:  42601: syntax error at or near "not"
+> ERROR:  42601: syntax error at or near "not"
+
 > LINE 1: create policy if not exists allow_q_select_users
 
 ### Assistant

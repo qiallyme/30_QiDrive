@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Lifecycle Policy
-slug: ""
+slug: lifecycle-policy
 summary: ""
 status: publish
-created_at: ""
-updated_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 tags: []
@@ -15,7 +15,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 9f8daf363f8d4485a39b12a8a155d966
 canonical_ref: ""
 source_type: manual
 template_key: master-template

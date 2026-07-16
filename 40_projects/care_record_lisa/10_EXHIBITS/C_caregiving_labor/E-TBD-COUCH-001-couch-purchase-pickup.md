@@ -3,14 +3,14 @@ layout: page
 title: Event: Couch purchase / pickup / household reset
 slug: couch-purchase-pickup-household-reset
 status: Needs date/source
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:36-04:00"
+tags: []
   - projects
   - lisa-care-record
   - household-labor-financial-ledger
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: f4b00a60a1e24b88a3161ced366cffbf
 canonical_ref: ""
 template_key: master-template
 ---

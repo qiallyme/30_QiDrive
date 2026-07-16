@@ -7,6 +7,25 @@ submitted_at: ""
 source_url: ""
 confirmation_number: ""
 next_follow_up: ""
+layout: page
+title: Submission Template
+slug: submission-template
+summary: ""
+created_at: "2026-07-16T06:19:39-04:00"
+updated_at: "2026-07-16T06:19:39-04:00"
+author: ""
+owner: ""
+tags: []
+keywords: []
+aliases: []
+context: ""
+sensitivity: internal
+classification: business_internal
+realm_label: ""
+uid: 3dfa47222ba54738b8c9d48652931228
+canonical_ref: ""
+source_type: manual
+template_key: master-template
 ---
 
 # Application submission — [Company] — [Role]

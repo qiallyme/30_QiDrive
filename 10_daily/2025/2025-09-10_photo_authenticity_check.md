@@ -3,9 +3,9 @@ layout: page
 title: "Photo authenticity check"
 slug: "photo_authenticity_check"
 created_at: "2025-09-10 06:45:57"
-updated_at: "2025-09-10 06:45:57"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

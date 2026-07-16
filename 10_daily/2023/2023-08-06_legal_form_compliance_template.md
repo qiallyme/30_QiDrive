@@ -3,9 +3,9 @@ layout: page
 title: "Legal Form Compliance Template"
 slug: "legal_form_compliance_template"
 created_at: "2023-08-06 15:16:47"
-updated_at: "2023-08-06 15:16:47"
+updated_at: "2026-07-16T06:49:27-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

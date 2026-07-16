@@ -3,14 +3,14 @@ layout: page
 title: Event: Lisa messages about Frank not getting in / social workers / access
 slug: lisa-messages-about-frank-not-getting-in-social-workers-access
 status: publish
-updated_at: 2026-07-02
-tags:
+updated_at: "2026-07-16T06:49:37-04:00"
+tags: []
   - projects
   - lisa-care-record
   - housing-access
 source_type: manual
 summary: ""
-created_at: ""
+created_at: "2026-07-16T06:19:39-04:00"
 author: ""
 owner: ""
 keywords: []
@@ -19,7 +19,7 @@ context: ""
 sensitivity: internal
 classification: business_internal
 realm_label: ""
-uid: ""
+uid: 5daae903fe494168b20fff04a2b3fa93
 canonical_ref: ""
 template_key: master-template
 ---

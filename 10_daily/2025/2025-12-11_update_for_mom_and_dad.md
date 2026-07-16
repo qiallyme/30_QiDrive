@@ -3,9 +3,9 @@ layout: page
 title: "Update for mom and dad"
 slug: "update_for_mom_and_dad"
 created_at: "2025-12-11 08:09:32"
-updated_at: "2025-12-11 08:09:32"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

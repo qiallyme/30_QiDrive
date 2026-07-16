@@ -3,9 +3,9 @@ layout: page
 title: "Bedside Tracker Draft"
 slug: "bedside_tracker_draft"
 created_at: "2026-04-10 06:51:34"
-updated_at: "2026-04-10 06:51:34"
+updated_at: "2026-07-16T06:49:31-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

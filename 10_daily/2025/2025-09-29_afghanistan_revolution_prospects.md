@@ -3,9 +3,9 @@ layout: page
 title: "Afghanistan revolution prospects"
 slug: "afghanistan_revolution_prospects"
 created_at: "2025-09-29 21:38:25"
-updated_at: "2025-09-29 21:38:25"
+updated_at: "2026-07-16T06:49:28-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""

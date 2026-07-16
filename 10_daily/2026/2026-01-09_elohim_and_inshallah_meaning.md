@@ -3,9 +3,9 @@ layout: page
 title: "Elohim and Inshallah Meaning"
 slug: "elohim_and_inshallah_meaning"
 created_at: "2026-01-09 14:08:57"
-updated_at: "2026-01-09 14:08:57"
+updated_at: "2026-07-16T06:49:29-04:00"
 status: active
-tags:
+tags: []
   - chat-log
 category: "chat-log"
 location: ""
