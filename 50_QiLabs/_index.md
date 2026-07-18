@@ -9,7 +9,7 @@ visibility: internal
 publish_target: none
 publish_url: ""
 created_at: "2026-07-16"
-updated_at: "2026-07-16"
+updated_at: "2026-07-18T11:03:20-04:00"
 author: Cody J. Rice-Velasquez
 owner: Cody
 nav_title: QiLabs
@@ -25,7 +25,7 @@ tags: [moc, qilabs]
 keywords: []
 aliases: []
 context: ""
-uid: ""
+uid: 2242b5f5687844b58d1685593f34f38c
 canonical_ref: ""
 source_type: manual
 template_key: master-template
@@ -37,3 +37,8 @@ generated_at: "2026-07-16"
 # QiLabs
 
 This is the vault-facing entry point for QiLabs architecture, product knowledge, decisions, and status. The folder is ready for curated links as material is promoted into it.
+
+## Architecture & Technical Guidelines
+
+* [[qiingest_life_feed_reference_architecture|QiIngest and Life Feed Reference Architecture]]
+
