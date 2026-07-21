@@ -1,4 +1,4 @@
-﻿---
+---
 layout: section
 title: Title 11. QiLabs Workspace
 slug: qicode-title-11-qilabs-workspace
@@ -34,6 +34,7 @@ source_type: manual
 - [[article_04_config-and-manifests|Article 4. Config and Manifests]]
 - [[article_05_codex-and-agent-instructions|Article 5. Codex and Agent Instructions]]
 - [[article_06_logs-reports-and-plans|Article 6. Logs, Reports, and Plans]]
+- [[article_07_qinotion-project-workspace|Article 7. QiNotion Project Workspace]]
 
 ## Cross References
 
